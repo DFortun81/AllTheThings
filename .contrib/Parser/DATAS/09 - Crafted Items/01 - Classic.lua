@@ -2525,7 +2525,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(5958),	-- Fine Leather Pants
 				i(4243),	-- Fine Leather Tunic
 				i(4262),	-- Gem-Studded Leather Belt
-				applyclassicphase(PHASE_ONE_DIREMAUL, i(18504, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}})),	-- Girdle of Insight
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227882, {	-- Girdle of Arcane Insight
+					["timeline"] = { "added 1.15.3" },
+				})),
+				-- #endif
+				applyclassicphase(PHASE_ONE_DIREMAUL, i(18504, {	-- Girdle of Insight
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3,
+						ADDED_10_1_5,
+						-- #endif
+					}
+				})),
 				i(17721),	-- Gloves of the Greatfather
 				applyclassicphase(PHASE_THREE, i(19058)),	-- Golden Mantle of the Dawn
 				i(4255),	-- Green Leather Armor

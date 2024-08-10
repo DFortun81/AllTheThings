@@ -2614,9 +2614,23 @@ profession(LEATHERWORKING, {
 					["name"] = "Gem-studded Leather Belt",
 					["recipeID"] = 3778,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Girdle of Arcane Insight",
+					["timeline"] = { "added 1.15.3" },
+					["recipeID"] = 461754,
+				}),
+				-- #endif
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Girdle of Insight",
-					["timeline"] = { REMOVED_4_0_3 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3,
+						ADDED_10_1_5,
+						-- #endif
+					},
 					["recipeID"] = 22921,
 				}),
 				{

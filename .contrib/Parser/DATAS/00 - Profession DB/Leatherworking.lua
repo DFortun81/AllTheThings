@@ -164,6 +164,7 @@ i(2406, 2158);		-- Fine Leather Boots
 i(2408, 2164);		-- Fine Leather Gloves
 i(5972, 7133);		-- Fine Leather Pants
 i(14635, 3778);		-- Gem-studded Leather Belt
+i(228319, 461754);	-- Girdle of Arcane Insight
 i(18514, 22921);	-- Girdle of Insight
 i(17722, 21943);	-- Gloves of the Greatfather
 i(19329, 23706);	-- Golden Mantle of the Dawn

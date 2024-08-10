@@ -957,6 +957,7 @@ for spellID,learnedAt in pairs({
 	[19097] = 300,	-- Devilsaur Leggings
 	[24703] = 300,	-- Dreamscale Breastplate
 	[19104] = 300,	-- Frostsaber Tunic
+	[461754] = 300,	-- Girdle of Arcane Insight
 	[22921] = 300,	-- Girdle of Insight
 	[23706] = 300,	-- Golden Mantle of the Dawn
 	[19100] = 300,	-- Heavy Scorpid Shoulders

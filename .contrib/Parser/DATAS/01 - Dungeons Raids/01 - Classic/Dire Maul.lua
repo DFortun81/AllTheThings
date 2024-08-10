@@ -1765,7 +1765,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18517),	-- Pattern: Chromatic Cloak (RECIPE!)
 							i(18418),	-- Pattern: Cloak of Warding (RECIPE!)
 							i(18415),	-- Pattern: Felcloth Gloves (RECIPE!)
-							i(18514),	-- Pattern: Girdle of Insight (RECIPE!)
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228319, {	-- Pattern: Girdle of Arcane Insight (RECIPE!)
+								["timeline"] = { "added 1.15.3" },
+							})),
+							-- #endif
+							i(18514, {	-- Pattern: Girdle of Insight (RECIPE!)
+								-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { "removed 1.15.3" },
+								-- #endif
+							}),
 							i(18518),	-- Pattern: Hide of the Wild (RECIPE!)
 							i(18416),	-- Pattern: Inferno Gloves (RECIPE!)
 							i(18515),	-- Pattern: Mongoose Boots (RECIPE!)
