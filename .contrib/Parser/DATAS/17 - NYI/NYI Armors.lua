@@ -39,6 +39,13 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			i(12106),	-- Boulderskin Breastplate
 			i(21587),	-- Wristguards of Castigation
 		}),
+		filter(TABARDS, {
+			i(746),	-- Lord Brandon's Tabard (Test)
+			i(3557),	-- Unused Tabard of Chow
+			i(7725),	-- Tabard of the Scarlet Crusade DEPRECATED
+			i(11364),	-- Tabard of Stormwind
+			i(23710),	-- Upperdeck Tabard #3
+		}),
 		filter(NECK_F, {
 			i(18023),	-- Blood Ruby Pendant
 			i(7427),	-- Cerulean Talisman

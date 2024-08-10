@@ -59,11 +59,11 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 	}),
 	i(20651, {	-- Murki (PET!)
 		["description"] = "Reward from a Korean Promotional Event (Korea Only)",
-		["timeline"] = { ADDED_2_1_0 },
+		["timeline"] = { "created 1.13.0", ADDED_2_1_0 },
 	}),
 	i(22114, {	-- Gurky (PET!)
 		["description"] = "Offered as a fan website gift around Christmas 2006, in Europe. (EU Only)",
-		["timeline"] = { ADDED_2_0_3 },
+		["timeline"] = { "created 1.13.0", ADDED_2_0_3 },
 	}),
 	ach(12454, {	-- Salute to Starcraft
 		["timeline"] = { ADDED_7_3_5 },

@@ -20,7 +20,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 		["u"] = TCG,
 		-- #endif
 	}, {
-	["timeline"] = { ADDED_2_0_1 },
+	["timeline"] = { "created 1.13.0", ADDED_2_0_1 },
 	["groups"] = {
 		filter(BATTLE_PETS, {
 			i(50301, {	-- Landro's Pet Box [TODO: SYMLINK]
@@ -62,7 +62,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_5_2_0 },
 			}),
 			i(23713, {	-- Hippogryph Hatchling (PET!)
-				["timeline"] = { ADDED_2_0_1 },
+				["timeline"] = { "created 1.13.0", ADDED_2_0_1 },
 			}),
 			i(68840, {	-- Landro's Lichling (PET!)
 				["timeline"] = { ADDED_4_1_0 },
@@ -170,7 +170,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_3_2_0 },
 			}),
 			i(23720, {	-- Riding Turtle (MOUNT!)
-				["timeline"] = { ADDED_2_0_1 },
+				["timeline"] = { "created 1.13.0", ADDED_2_0_1 },
 			}),
 			i(69228, {	-- Savage Raptor (MOUNT!)
 				["timeline"] = { ADDED_4_1_0 },
@@ -210,10 +210,10 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_2_4_3 },
 			}),
 			i(23705, {	-- Tabard of Flame
-				["timeline"] = { ADDED_2_0_1 },
+				["timeline"] = { "created 1.13.0", ADDED_2_0_1 },
 			}),
 			i(23709, {	-- Tabard of Frost
-				["timeline"] = { ADDED_2_0_1 },
+				["timeline"] = { "created 1.13.0", ADDED_2_0_1 },
 			}),
 			i(38313, {	-- Tabard of Fury
 				["timeline"] = { ADDED_2_4_3 },
@@ -233,7 +233,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 		}),
 		filter(TOYS, {
 			i(23716, {	-- Carved Ogre Idol
-				["timeline"] = { ADDED_2_2_3 },
+				["timeline"] = { "created 1.13.0", ADDED_2_2_3 },
 			}),
 			i(49704, {	-- Carved Ogre Idol (TOY!)
 				["timeline"] = { ADDED_3_2_2 },
@@ -309,7 +309,7 @@ root(ROOTS.Promotions, n(TRADING_CARD_GAME,
 				["timeline"] = { ADDED_2_3_0 },
 			}),
 			i(23714, {	-- Perpetual Purple Firework
-				["timeline"] = { ADDED_2_2_3 },
+				["timeline"] = { "created 1.13.0", ADDED_2_2_3 },
 			}),
 			i(49703, {	-- Perpetual Purple Firework (TOY!)
 				["timeline"] = { ADDED_3_2_2 },
