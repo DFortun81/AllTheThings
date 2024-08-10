@@ -69,6 +69,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["icon"] = "Interface\\Icons\\Spell_frost_summonwaterelemental",
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
+					-- #if SEASON_OF_DISCOVERY
+					["maps"] = { SEARING_GORGE },
+					-- #endif
 				}),
 			}),
 			n(QUESTS, {
