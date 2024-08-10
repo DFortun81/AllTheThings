@@ -2793,10 +2793,6 @@ profession(BLACKSMITHING, {
 					["name"] = "Solid Iron Maul",
 					["recipeID"] = 3494,
 				},
-				{
-					["name"] = "Sulfuron Hammer",
-					["recipeID"] = 21161,
-				},
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, {
 					["name"] = "Sulfuron Hammer",

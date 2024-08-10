@@ -227,6 +227,7 @@ i(2882, 3330);		-- Silvered Bronze Shoulders
 i(10858, 3494);		-- Solid Iron Maul
 i(6046, 7224);		-- Steel Weapon Chain
 i(18592, 21161);	-- Sulfuron Hammer
+i(227727, 460460);	-- Sulfuron Hammer
 i(22222, 27587);	-- Thick Obsidian Breastplate
 i(12682, 16642);	-- Thorium Armor
 i(12683, 16643);	-- Thorium Belt
