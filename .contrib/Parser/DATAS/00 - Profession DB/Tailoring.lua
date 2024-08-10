@@ -128,6 +128,7 @@ i("Core Felcloth Bag", 21371, 26087);
 i("Soul Pouch", 21358, 26085);
 i("Enchanted Mageweave Pouch", 22307, 27658);
 
+i("Embroidered Belt of the Archmage", 228477, 462282);
 i("Belt of the Archmage", 18414, 22866);
 i("Felcloth Gloves", 18415, 22867);
 i("Inferno Gloves", 18416, 22868);

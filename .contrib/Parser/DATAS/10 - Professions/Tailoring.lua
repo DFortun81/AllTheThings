@@ -1551,6 +1551,9 @@ profession(TAILORING, {
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Belt of the Archmage",
 					["recipeID"] = 22866,
+					-- #if SEASON_OF_DISCOVERY
+					["timeline"] = { "removed 1.15.3" },
+					-- #endif
 				}),
 				{
 					["name"] = "Crimson Silk Belt",
@@ -1560,6 +1563,13 @@ profession(TAILORING, {
 					["name"] = "Earthen Silk Belt",
 					["recipeID"] = 8797
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Embroidered Belt of the Archmage",
+					["recipeID"] = 462282,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
 				{
 					["name"] = "Ghostweave Belt",
 					["recipeID"] = 18410

@@ -3491,10 +3491,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		category(238, {	-- Belts
 			i(7052),	-- Azure Silk Belt
 			applyclassicphase(PHASE_ONE_DIREMAUL, i(18405, {	-- Belt of the Archmage
-				["timeline"] = { REMOVED_4_0_3, ADDED_8_1_5 },
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"removed 1.15.3",
+					-- #else
+					REMOVED_4_0_3, ADDED_8_1_5,
+					-- #endif
+				},
 			})),
 			i(7055),	-- Crimson Silk Belt
 			i(7061),	-- Earthen Silk Belt
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(228476, {	-- Embroidered Belt of the Archmage
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(14143),	-- Ghostweave Belt
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_ONE, i(215366, {	-- Invoker's Cord

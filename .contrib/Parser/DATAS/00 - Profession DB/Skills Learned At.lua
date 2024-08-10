@@ -1222,6 +1222,7 @@ for spellID,learnedAt in pairs({
 	[18444] = 295,	-- Runecloth Headband
 	[23665] = 300,	-- Argent Shoulders
 	[22866] = 300,	-- Belt of the Archmage
+	[462282] = 300,	-- Embroidered Belt of the Archmage
 	[27660] = 300,	-- Big Bag of Enchantment
 	[24093] = 300,	-- Bloodvine Boots
 	[24092] = 300,	-- Bloodvine Leggings
