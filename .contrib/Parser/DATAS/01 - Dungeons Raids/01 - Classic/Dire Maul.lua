@@ -1771,7 +1771,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18515),	-- Pattern: Mongoose Boots (RECIPE!)
 							i(18417),	-- Pattern: Mooncloth Gloves (RECIPE!)
 							i(18519),	-- Pattern: Shifting Cloak (RECIPE!)
-							i(18516),	-- Pattern: Swift Flight Bracers (RECIPE!)
+							i(18516, {	-- Pattern: Swift Flight Bracers (RECIPE!)
+								-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { "removed 1.15.3" },
+								-- #endif
+							}),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228301, {	-- Pattern: Swift Flight Vambraces (RECIPE!)
+								["timeline"] = { "added 1.15.3" },
+							})),
+							-- #endif
 						},
 					})),
 					o(179499, {	-- Ogre Tannin Basket

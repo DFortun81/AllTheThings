@@ -2804,7 +2804,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_FOUR, i(20481)),	-- Spitfire Bracers
 				applyclassicphase(PHASE_FOUR, i(20479)),	-- Spitfire Breastplate
 				applyclassicphase(PHASE_FOUR, i(20480)),	-- Spitfire Gauntlets
-				applyclassicphase(PHASE_ONE_DIREMAUL, i(18508, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}})),	-- Swift Flight Bracers
+				applyclassicphase(PHASE_ONE_DIREMAUL, i(18508, {	-- Swift Flight Bracers
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3, ADDED_10_1_5,
+						-- #endif
+					},
+				})),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227883, {	-- Swift Flight Vambraces
+					["timeline"] = { "added 1.15.3" },
+				})),
+				-- #endif
 				i(8209, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Tough Scorpid Boots
 				i(8205, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Tough Scorpid Bracers
 				i(8203, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Tough Scorpid Breastplate

@@ -220,6 +220,7 @@ i(20508, 24848);	-- Spitfire Breastplate
 i(20507, 24847);	-- Spitfire Gauntlets
 i(7453, 9208);		-- Swift Boots
 i(18516, 22923);	-- Swift Flight Bracers
+i(228301, 461706);	-- Swift Flight Vambraces
 i(5788, 6704);		-- Thick Murloc Armor
 i(19327, 23704);	-- Timbermaw Brawlers
 i(8399, 10554);		-- Tough Scorpid Boots [REMOVED: 4.0.3, See new version]

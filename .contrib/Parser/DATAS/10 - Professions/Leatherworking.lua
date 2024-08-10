@@ -2340,9 +2340,22 @@ profession(LEATHERWORKING, {
 				},
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Swift Flight Bracers",
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3, ADDED_10_1_5,
+						-- #endif
+					},
 					["recipeID"] = 22923,
 				}),
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Swift Flight Vambraces",
+					["timeline"] = { "added 1.15.3" },
+					["recipeID"] = 461706,
+				}),
+				-- #endif
 				{
 					["name"] = "Tough Scorpid Bracers",
 					["recipeID"] = 10533,

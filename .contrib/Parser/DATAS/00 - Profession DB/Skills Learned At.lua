@@ -989,6 +989,7 @@ for spellID,learnedAt in pairs({
 	[24847] = 300,	-- Spitfire Gauntlets
 	[26279] = 300,	-- Stormshroud Gloves
 	[22923] = 300,	-- Swift Flight Bracers
+	[461706] = 300,	-- Swift Flight Vambraces
 	[23704] = 300,	-- Timbermaw Brawlers
 	[19101] = 300,	-- Volcanic Shoulders
 	[461663] = 300,	-- Masterwork Volcanic Shoulders
