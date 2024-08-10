@@ -14,7 +14,7 @@ SOURCELESS = createHeader({
 		en = "This Category contains Things that probably exist in the game but no known source.",
 	},
 });
-root(ROOTS.Unsorted, n(SOURCELESS, {
+root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 	expansion(EXPANSION.BFA, {
 		-------------------------------------------
 		-- DO NOT TOUCH THIS PART OR I KNIFE YOU --
@@ -564,4 +564,4 @@ root(ROOTS.Unsorted, n(SOURCELESS, {
 		q(79126),	--
 		q(79353),	--
 	}),
-}));
+})));
