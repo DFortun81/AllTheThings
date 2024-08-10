@@ -1963,6 +1963,7 @@ i(220296);	-- Thickly Webbed Foot
 i(228481);	-- Tiny Fathomclam
 i(220223);	-- Torn Gossamer Scrap
 i(220272);	-- Torn Manuscript Page
+i(220300);	-- Translucent Wing
 i(220282);	-- Tuft of Whiskers
 i(213266);	-- Twitching Snack
 i(223893);	-- Uncharged Feather

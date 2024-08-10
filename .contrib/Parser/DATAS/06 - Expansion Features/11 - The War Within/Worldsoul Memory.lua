@@ -40,7 +40,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(225237),	-- Echoing Fragment: Azj-Kahet (CI!)
 					},
 				}),
-				q(82321),	-- Worldsoul Memory: Ancient Explorers
+				q(82321, {	-- Worldsoul Memory: Ancient Explorers
+					["coord"] = { 55.6, 77.7, ISLE_OF_DORN },
+					["g"] = {
+						n(222733),	-- Stormlord Kao'dor
+						n(222723),	-- Conqueror Or'sosh
+						n(222659),	-- Toaka the Explorer
+						n(222728),	-- Wavecrusher Jurvak
+					},
+				}),
 				q(82207, {	-- Worldsoul Memory: Descendants of Distant Waters
 					["coord"] = { 46.8, 23.4, HALLOWFALL },
 					["g"] = {
@@ -94,7 +102,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(225218),	-- Echoing Fragment: Hallowfall (CI!)
 					},
 				}),
-				q(81985),	-- Worldsoul Memory: The Worldcarvers
+				q(81985, {	-- Worldsoul Memory: The Worldcarvers
+					["coord"] = { 51.2, 29.2, ISLE_OF_DORN },
+					["g"] = {
+						n(221970),	-- First Blade Grimskarn
+						n(221972),	-- Talinhet
+						n(221973),	-- Temaya
+					},
+				}),
 			}),
 		},
 	}),

@@ -1006,7 +1006,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- Side quests
 	q(82652),	-- 'Stay a while and listen' - Brennok, in the end of whole speach during questID 80682 (One Last Story)
 	-- ?
-	--q(82957),	-- 'Thanks for the Wax' accepted every time when you fly in zone
+	q(82957, {["repeatable"]=true,}),	-- 'Thanks for the Wax' accepted every time when you fly in zone
 	q(83475),	-- [DNT] Repair Console (spellID 455981) Water Console (o: 226624) @ 45.3, 46.4, THE_RINGING_DEEPS)
 	q(83482),	-- [DNT] Repair Console (spellID 456005) Lost Console (o: 226641 @ 56.4, 22.5, THE_RINGING_DEEPS)
 	--q(82991),	-- when bind hearthstone location to Camp Murroch tavern

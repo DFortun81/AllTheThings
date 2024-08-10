@@ -164,7 +164,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["questID"] = 81901,
 			}),
 			n(221126, {	-- Tephratennae
-				["description"] = "Walking around in the area.",
+				["description"] = "Flying around in the area.",
 				["coord"] = { 74.6, 36.7, ISLE_OF_DORN },
 				["questID"] = 81923,
 			}),
@@ -217,6 +217,7 @@ root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 		q(84032),	-- Extra HQT: Shallowshell the Clacker
 		q(84038),	-- Extra HQT: Sweetspark the Oozeful
 		q(84030),	-- Extra HQT: Tempest Lord Incarnus
+		q(84037),	-- Extra HQT: Tephratennae
 		q(84033),	-- Extra HQT: Twice-Stinger the Wretched
 	}),
 }));

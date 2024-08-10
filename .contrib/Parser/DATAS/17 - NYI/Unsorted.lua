@@ -773,7 +773,6 @@ root(ROOTS.Unsorted, {
 				i(225897),	-- Brute Force Idol
 				i(225898),	-- Idol of the Earthmother
 				i(225901),	-- Streamlined Relic \\ Power Idol
-				i(225903),	-- Amorphous Relic \\ Relic Page
 				i(225907),	-- Relic of Sentience
 				i(225908),	-- Relicblood of Zekvir
 			}),
@@ -1397,7 +1396,6 @@ root(ROOTS.Unsorted, {
 				i(220285),	-- Moldy Rucksack
 				i(220286),	-- Tarnished Medallion
 				i(220298),	-- Melted Candle Stump
-				i(220300),	-- Translucent Wing
 				i(220303),	-- Decayed Flesh
 
 
@@ -1428,9 +1426,6 @@ root(ROOTS.Unsorted, {
 				i(217970),	-- Dormant Runestone
 				i(217984),	-- Miner's Rune of Decyphering
 				i(217986),	-- "Delicious" Egg Parts
-				i(217999),	-- Tasty Mussel
-				i(218000),	-- Sack of Spices
-				i(218002),	-- Priceless Pumpkin
 				i(218123),	-- Glowing Shard
 				i(218122),	-- Stolen Relic \\ Stolen Shard
 				i(218340),	-- Chest of Playtest Equipment
@@ -1796,8 +1791,6 @@ root(ROOTS.Unsorted, {
 				i(226115),	-- Contaminating Cleaver
 				i(219783),	-- Arachnophobic Spelunker's Bow
 				i(219797),	-- Cured Terracotta Pummeler
-				i(227692),	-- Arathi Sword
-				i(227693),	-- Expeditionary Blade
 				i(228363),	-- Shinda's Spare Greataxe
 				i(228364),	-- Endiri's Chipped Boot Knife
 				i(228366),	-- Child's Former Fishing Rod
@@ -2001,8 +1994,6 @@ root(ROOTS.Unsorted, {
 				i(223458),	-- [PH] 11.0 - Belt
 				i(223461),	-- Algari Warden's Helm
 
-				i(223464),	-- Algari Heavy Gauntlets
-
 				i(223472),	-- Drape of the Lamplighter
 				i(220118),	-- Arathi Demolition Charge
 
@@ -2022,7 +2013,6 @@ root(ROOTS.Unsorted, {
 				i(228375),	-- Belt of Kix'arak's Bane
 				i(228376),	-- Boots of Kix'arak's Bane
 				i(228377),	-- Gauntlets of Kix'arak's Bane
-				i(228380),	-- Earthmender's Signet
 				i(228435),	-- Wine-Dyed Leggings
 				i(228436),	-- United Arathi's Jerkin
 				i(228437),	-- Salamanther-Scale Greaves
@@ -2047,7 +2037,6 @@ root(ROOTS.Unsorted, {
 
 			}),
 			filter(MISC, {
-				i(224592),	-- Spinner's Hoop \\ [PH] The Fallen Queen's Band
 				i(224594),	-- Spinner's Amulet \\ [PH] Element-Attuned Pendant
 
 				i(224639),	-- Expeditionary Chopper \\ [PH] Algari Hatchet

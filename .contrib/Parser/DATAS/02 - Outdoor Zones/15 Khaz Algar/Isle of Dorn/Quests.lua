@@ -679,6 +679,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					},
 					["provider"] = { "n", 214921 },	-- Harmot
 					["coord"] = { 69.1, 48.0, ISLE_OF_DORN },
+					["g"] = {
+						i(228380),	-- Earthmender's Signet
+					},
 				}),
 			}),
 			header(HEADERS.AchCriteria, 20595.07, {	-- A Titanic Expedition
@@ -918,7 +921,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["provider"] = { "n", 222363 },	-- Peacekeeper Leif
 					["coord"] = { 65.9, 23.8, ISLE_OF_DORN },
 					["g"] = {
-						--crit ' in the Skolzgal Wood'
+						i(223464),	-- Algari Heavy Gauntlets
 					},
 				}),
 			}),

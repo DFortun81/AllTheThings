@@ -203,6 +203,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 	}, {
 		q(82746),	-- Delves: Breaking Tough to Loot Stuff
 		q(82707),	-- Delves: Earthen Defense
+		q(82710),	-- Delves: Empire-ical Exploration
 		q(82706),	-- Delves: Khaz Algar Research
 		q(82711, {	-- Delves: Lost and Found
 			["g"] = {
@@ -211,6 +212,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(224158),	-- Brann's Letter Opener
 			},
 		}),
+		q(82708),	-- Delves: Nerubian Menace
 		q(82709, {	-- Delves: Percussive Archaeology
 			["g"] = {
 				i(224146),	-- Khaz Algar Archaeological Fragments (QI!)
@@ -324,6 +326,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				--	["coord"] = { 62.3, 52.9, 2250 },
 				--	["questID"] = 83698,
 				--}),
+				o(455511, {	-- Sturdy Chest
+					["coord"] = { 69.9, 85.1, 2250 },
+					["questID"] = 83666,
+				}),
 				o(455489, {	-- Sturdy Chest
 					["coord"] = { 74.3, 70.2, 2250 },
 					["questID"] = 83683,
@@ -338,6 +344,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 	m(2312, {	-- Mycomancer Cavern
 		["coord"] = { 71.1, 31.1, HALLOWFALL },
 		["g"] = {
+			i(217999),	-- Tasty Mussel
+			i(218000),	-- Sack of Spices
+			i(218002),	-- Priceless Pumpkin
+			i(217387),	-- Princess Pumpkin
 			n(ACHIEVEMENTS, {
 				ach(40808),	-- Mycomancer Cavern Discoveries
 				ach(40531),	-- Mycomancer Cavern Stories (automated)
@@ -660,6 +670,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 	}),
 	n(REWARDS, {
 		-- Curio
+		i(225903),	-- Amorphous Relic
 		i(228560),	-- Ancient Curio (QI!/QS!)
 		i(228581),	-- Ancient Curio (QI!/QS!)
 		i(225902),	-- Idol of Final Will
@@ -1182,8 +1193,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 
 root(ROOTS.HiddenQuestTriggers, {
 	q(82772),	-- First Time per day? (Got Unflagged at reset)
-	q(82944),	-- after Tier 5 run in Earthcrawl Mines / Bountiful Coffer?
+	q(84670),	-- after turn in weekly delve quest (was 82746 - Delves: Breaking Tough to Loot Stuff - for this one)
+	q(82944),	-- after Tier 5 run in Earthcrawl Mines / Bountiful Coffer? / further difficulty unlock?
+	q(82941),	-- after Tier 6 run in Kriegval's Rest / Bountiful Coffer? / further difficulty unlock?
+	q(82940),	-- after Tier 7 run in Mycomancer Cavern / Bountiful Coffer? / further difficulty unlock?
 	q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
-	
+	--
 	q(83235),	-- Season 1: 1/10 reward progress (spellID 454473 - Airship: Wings 05 - Lantern Wing)
 });

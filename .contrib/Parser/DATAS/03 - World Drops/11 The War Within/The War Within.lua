@@ -58,6 +58,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 			i(224595),	-- Deep-Dweller's Slippers
 			i(224591),	-- Deep-Dweller's Wraps
 		}),
+		filter(FINGER_F, {
+			i(224592),	-- Spinner's Hoop
+		}),
 		filter(LEATHER, {
 			i(224605),	-- Underscout's Bracers
 			i(224602),	-- Underscout's Cap
@@ -96,11 +99,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 		i(224629),	-- Arathi Hatchet
 		i(224633),	-- Arathi Greataxe
 		i(224634),	-- Arathi Mace
+		i(227692),	-- Arathi Sword
 		i(224630),	-- Deep-Dweller's Battleaxe
 		i(224631),	-- Deep-Dweller's Cudgel
 		i(224636),	-- Deep-Dweller's Dirk
 		i(224637),	-- Deep-Dweller's Orb
 		i(224626),	-- Deep-Dweller's Staff
+		i(227693),	-- Expeditionary Blade
 		i(224635),	-- Expeditionary Bulwark
 		--i(224639),	-- Expeditionary Chopper \\ [PH] Algari Hatchet
 		i(224625),	-- Expeditionary Spear

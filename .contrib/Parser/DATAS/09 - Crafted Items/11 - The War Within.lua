@@ -2308,7 +2308,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80362, 439718);	-- Weeping Bismuth
 			-- Ironclaw
 			FirstCraft(80352, 439708);	-- Ironclaw
-			--FirstCraft(XXXXX, 439714);	-- Ironclaw Seam
+			FirstCraft(80358, 439714);	-- Ironclaw Seam
 			--FirstCraft(XXXXX, 439726);	-- Camouflaged Ironclaw
 			FirstCraft(80361, 439717);	-- Crystallized Ironclaw
 			FirstCraft(80367, 439723);	-- EZ-Mine Ironclaw
