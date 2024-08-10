@@ -431,7 +431,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["g"] = {
 						i(200086),	-- Khaz'gorite-Infused Resin
 						i(200218, {	-- Charred Fishing Pole
-							["collectible"] = true,  -- Changed flag from false to true so that it can be collected.  Was able to collect with SS June 21, 2024
+							--["collectible"] = true,  -- Changed flag from false to true so that it can be collected.  Was able to collect with SS June 21, 2024
 							--if someone able to cache it - add description, please
 						}),
 					},
