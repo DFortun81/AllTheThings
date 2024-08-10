@@ -1762,7 +1762,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						["groups"] = {
 							i(18240),	-- Ogre Tannin
 							i(18414),	-- Pattern: Belt of the Archmage (RECIPE!)
-							i(18517),	-- Pattern: Chromatic Cloak (RECIPE!)
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(227910, {	-- Pattern: Brilliant Chromatic Cloak (RECIPE!)
+								["timeline"] = { "added 1.15.3" },
+							})),
+							-- #endif
+							i(18517, {	-- Pattern: Chromatic Cloak (RECIPE!)
+								-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { "removed 1.15.3" },
+								-- #endif
+							}),
 							i(18418),	-- Pattern: Cloak of Warding (RECIPE!)
 							i(18415),	-- Pattern: Felcloth Gloves (RECIPE!)
 							-- #if SEASON_OF_DISCOVERY

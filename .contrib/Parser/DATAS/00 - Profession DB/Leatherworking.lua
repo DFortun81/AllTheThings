@@ -258,6 +258,7 @@ i(15781, 19107, nil, DRAGONSCALE);	-- Black Dragonscale Leggings
 i(15770, 19094, nil, DRAGONSCALE);	-- Black Dragonscale Shoulders
 i(15751, 19077, nil, DRAGONSCALE);	-- Blue Dragonscale Breastplate [REMOVED: 4.0.3]
 i(15763, 19089, nil, DRAGONSCALE);	-- Blue Dragonscale Shoulders [REMOVED: 4.0.3, ADDED: 10.1.7]
+i(227910, 461653, nil, DRAGONSCALE);	-- Brilliant Chromatic Cloak
 i(18517, 22926, nil, DRAGONSCALE);	-- Chromatic Cloak
 i(19331, 23708, nil, DRAGONSCALE);	-- Chromatic Gauntlets
 i(20382, 24703, nil, DRAGONSCALE);	-- Dreamscale Breastplate

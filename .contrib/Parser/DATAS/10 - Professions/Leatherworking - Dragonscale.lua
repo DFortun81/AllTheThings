@@ -230,11 +230,26 @@ profession(LEATHERWORKING, {
 				["name"] = "Cloaks",
 				["categoryID"] = 259,
 				["groups"] = {
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Brilliant Chromatic Cloak",
+						["recipeID"] = 461653,
+						["requireSkill"] = 10656,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					-- #endif
 					applyclassicphase(PHASE_ONE_DIREMAUL, {
 						["name"] = "Chromatic Cloak",
-						["timeline"] = { REMOVED_4_0_3 },
 						["recipeID"] = 22926,
 						["requireSkill"] = 10656,
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3"
+							-- #else
+							REMOVED_4_0_3,
+							ADDED_10_1_5,
+							-- #endif
+						},
 					}),
 				}
 			},

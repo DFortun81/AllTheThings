@@ -3026,10 +3026,24 @@ profession(LEATHERWORKING, {
 					["recipeID"] = 9070,
 				},
 				-- #if AFTER TBC
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Brilliant Chromatic Cloak",
+					["recipeID"] = 461653,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Chromatic Cloak",
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
 					["recipeID"] = 22926,
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3"
+						-- #else
+						REMOVED_4_0_3,
+						ADDED_10_1_5,
+						-- #endif
+					},
 				}),
 				-- #endif
 				{

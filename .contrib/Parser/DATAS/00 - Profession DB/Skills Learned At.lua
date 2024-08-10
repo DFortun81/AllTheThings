@@ -950,6 +950,7 @@ for spellID,learnedAt in pairs({
 	[28474] = 300,	-- Bramblewood Belt
 	[28473] = 300,	-- Bramblewood Boots
 	[28472] = 300,	-- Bramblewood Helm
+	[461653] = 300,	-- Brilliant Chromatic Cloak
 	[22926] = 300,	-- Chromatic Cloak
 	[23708] = 300,	-- Chromatic Gauntlets
 	[22727] = 300,	-- Core Armor Kit
