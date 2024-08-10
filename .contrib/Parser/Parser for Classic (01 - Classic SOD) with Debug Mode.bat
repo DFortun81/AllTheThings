@@ -1,0 +1,1 @@
+"Parser.exe" debug baseconfig=parser.classic.sod.config config=parser.classic.debug.config

@@ -13,6 +13,8 @@ root(ROOTS.NeverImplemented, {
 				i(19868),	-- Mandokir's Sting DEPRECATED
 				i(19966),	-- Thrice Strung Longbow DEPRECATED
 				i(20488),	-- Rhok'delar, Longbow of the Ancient Keepers DEP
+				i(5290),	-- Monster - Bow, Black Bow White Grip
+				i(21550),	-- Monster - Bow, Kaldorei
 			}),
 			expansion(EXPANSION.DF, {
 				expansion(EXPANSION.DF, 0.01, {
@@ -35,6 +37,10 @@ root(ROOTS.NeverImplemented, {
 			expansion(EXPANSION.CLASSIC, {
 				i(24071),	-- Bland Dagger
 				i(17142),	-- Shard of the Defiler
+				i(21122),	-- Monster - Dagger, Korean A01 Black
+				i(21551),	-- Monster - Dagger, Alliance PvP
+				i(22215),	-- Monster - Dagger, Bonescraper
+				i(23369),	-- Monster - Dagger, Claw of Chromaggus
 			}),
 			expansion(EXPANSION.DF, {
 				expansion(EXPANSION.DF, 0.01, {
@@ -60,6 +66,10 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(FIST_WEAPONS, {
+			expansion(EXPANSION.CLASSIC, {
+				i(19226),	-- Fast Test Fist
+				i(22210),	-- Monster - Knuckle, B01 Red
+			}),
 			expansion(EXPANSION.DF, {
 				expansion(EXPANSION.DF, 0.01, {
 					i(189699),	-- 10.0 Dungeon Template - FistWeapon - Weapon
@@ -70,6 +80,10 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(GUNS, {
+			expansion(EXPANSION.CLASSIC, {
+				i(21554),	-- Monster - Gun, PvP Horde
+				i(21564),	-- Monster - Gun, Kaldorei PVP Alliance
+			}),
 			expansion(EXPANSION.DF, {
 				expansion(EXPANSION.DF, 0.01, {
 					i(189675),	-- 10.0 Dungeon Template - Guns - RangedRight
@@ -84,6 +98,8 @@ root(ROOTS.NeverImplemented, {
 		filter(HELD_IN_OFF_HAND, {
 			expansion(EXPANSION.CLASSIC, {
 				i(19989),	-- Tome of Devouring Shadows
+				i(20337),	-- Gnome Head on a Stick
+				i(22211),	-- Monster - Knuckle, B01 Red Offhand
 			}),
 			expansion(EXPANSION.DF, {
 				expansion(EXPANSION.DF, 0.01, {
@@ -101,6 +117,11 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(ONE_HANDED_AXES, {
+			expansion(EXPANSION.CLASSIC, {
+				i(21129),	-- Monster - Axe, Doctor Weavil
+				i(21465),	-- Monster - Axe, Insano
+				i(23582),	-- Monster - Lady Blameux
+			}),
 			expansion(EXPANSION.DF, {
 				expansion(EXPANSION.DF, 0.01, {
 					i(189348),	-- 10.0 Zone Uncommon Template <Descriptor> Axe
@@ -136,6 +157,16 @@ root(ROOTS.NeverImplemented, {
 			expansion(EXPANSION.CLASSIC, {
 				i(17733),	-- Fist of Stone
 				i(16792),	-- Giant Club
+				i(20738),	-- Monster - Mace, Scepter of the Shifting Sands
+				i(22213),	-- Monster - Mace, Hand of Edward the Odd
+				i(22341),	-- Monster - Mace, Horde A04 Pale - Bone Wrench
+				i(22724),	-- Monster - Mace1H, Korth'azz
+				i(23583),	-- Monster - Sir Zeliek
+				-- #if SEASON_OF_DISCOVERY
+				i(215444),	-- Monster - Mace - Broken Pipes
+				i(217336),	-- Monster - Incubus Whip Mace1H
+				i(227802),	-- Monster - Torch
+				-- #endif
 			}),
 			expansion(EXPANSION.DF, {
 				expansion(EXPANSION.DF, 0.01, {
@@ -164,6 +195,9 @@ root(ROOTS.NeverImplemented, {
 				i(18582),	-- The Twin Blades of Azzinoth
 				i(18583),	-- Warglaive of Azzinoth (Right)
 				i(18584),	-- Warglaive of Azzinoth (Left)
+				i(21573),	-- Monster - Sword, 1H Alliance PvP
+				i(22738),	-- Monster - Sword, 1H Uber Demon Blade
+				i(23743),	-- Monster - Sword 1H - Widow's Remorse
 			}),
 			expansion(EXPANSION.SL, {
 				expansion(EXPANSION.SL, 1.5, {
@@ -188,6 +222,12 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(POLEARMS, {
+			expansion(EXPANSION.CLASSIC, {
+				i(12986),	-- Monster - Spear, Broad Notched
+				-- #if SEASON_OF_DISCOVERY
+				i(204910),	-- Monster - Trident, Naga (Gold)
+				-- #endif
+			}),
 			expansion(EXPANSION.DF, {
 				expansion(EXPANSION.DF, 0.01, {
 					i(189703),	-- 10.0 Dungeon Template - Polearms - Agi - 2 Hand
@@ -208,6 +248,9 @@ root(ROOTS.NeverImplemented, {
 				i(7748),	-- Forcestone Buckler
 				i(20502),	-- Ironbark Shield [NPC Shield]
 				i(18342),	-- Quel'dorei Guard [NPC Shield I believe]
+				i(21549),	-- Monster - Shield, Shieldguard
+				i(21572),	-- Monster - Shield, Alliance PVP
+				i(23356),	-- Monster - Shield, Skullflame
 			}),
 			expansion(EXPANSION.DF, {
 				expansion(EXPANSION.DF, 0.01, {
@@ -223,6 +266,9 @@ root(ROOTS.NeverImplemented, {
 			expansion(EXPANSION.CLASSIC, {
 				i(3738),	-- Brewing Rod
 				i(20522),	-- Feral Staff
+				i(20718),	-- Monster - Staff, Jeweled Yellow Staff w/Low Purple Glow
+				i(20719),	-- Monster - Staff, Jeweled D01/B02 Yellow w/Low Red Flame
+				i(21795),	-- Monster - Staff, Ahn'Qiraj
 			}),
 			expansion(EXPANSION.DF, {
 				expansion(EXPANSION.DF, 0.01, {
@@ -246,6 +292,12 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(TWO_HANDED_AXES, {
+			expansion(EXPANSION.CLASSIC, {
+				i(21192),	-- Monster - Axe, 2H UBER Blackwing
+				i(21286),	-- Monster - Axe, 2H Large Double Bladed, Gold
+				i(21580),	-- Monster - 2H Axe, Horde PvP
+				i(22199),	-- Monster - Axe, 2H Arcanite Reaper
+			}),
 			expansion(EXPANSION.DF, {
 				expansion(EXPANSION.DF, 0.01, {
 					i(189697),	-- 10.0 Dungeon Template - Axe2H - Str - 2 Hand
@@ -255,6 +307,13 @@ root(ROOTS.NeverImplemented, {
 			}),
 		}),
 		filter(TWO_HANDED_MACES, {
+			expansion(EXPANSION.CLASSIC, {
+				i(21555),	-- Monster - Mace2H, Alliance PvP
+				i(22346),	-- Monster - Mace2H, Unstoppable Force
+				-- #if SEASON_OF_DISCOVERY
+				i(228214),	-- Monster - Mace2H, Unstoppable Force
+				-- #endif
+			}),
 			expansion(EXPANSION.DF, {
 				expansion(EXPANSION.DF, 0.01, {
 					i(189700),	-- 10.0 Dungeon Template - Mace2H - Int - 2 Hand
@@ -274,6 +333,16 @@ root(ROOTS.NeverImplemented, {
 				i(13262),	-- Ashbringer
 				i(913),		-- Huge Ogre Sword
 				i(12469),	-- Mutilator
+				i(21553),	-- Monster - Sword2H, Alliance PvP
+				i(21794),	-- Monster - Sword2H, Ahn'Qiraj
+				i(22596),	-- Monster - Sword2H, Horde A02
+				i(22709),	-- Monster - Sword2H, Corrupted Ashbringer
+				i(23328),	-- Monster - Sword2H, Instructor Razuvious
+				-- #if SEASON_OF_DISCOVERY
+				i(209526),	-- TEST Darkwater Talwar
+				i(215235),	-- 2hander Animation as 1hander test copy
+				i(228607),	-- Monster - Sword2H, Basic
+				-- #endif
 			}),
 			expansion(EXPANSION.DF, {
 				expansion(EXPANSION.DF, 0.01, {

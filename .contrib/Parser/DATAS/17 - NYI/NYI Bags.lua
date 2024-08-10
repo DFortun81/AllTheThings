@@ -11,6 +11,7 @@ root(ROOTS.NeverImplemented, filter(BAGS, {
 			i(21313),	-- D'Sak's Small bag
 			i(21857),	-- Test Herb Bag
 			i(22233),	-- Zigris' Footlocker
+			i(23162),	-- A Very Large Bag
 		}),
 	}),
 	expansion(EXPANSION.TBC, {
