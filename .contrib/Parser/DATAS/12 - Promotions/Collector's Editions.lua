@@ -625,22 +625,12 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 							["coord"] = { 75.2, 55.0, THE_WAKING_SHORES },
 							["sourceQuest"] = 77813,	-- Lightning Strikes
 							["g"] = {
-								i(209417, {	-- Ensemble: Thundering Stormrider's Attire
-									["questID"] = 78049,
-									["g"] = {
-										i(210021),	-- Thundering Stormrider's Breastplate
-										i(209335),	-- Thundering Stormrider's Buckle
-										i(209334),	-- Thundering Stormrider's Epaulettes
-										i(210020),	-- Thundering Stormrider's Grips
-										i(209333),	-- Thundering Stormrider's Helmet
-									},
-								}),
+								iensemble(209417),	-- Ensemble: Thundering Stormrider's Attire
 							},
 						}),
 						q(81993, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- The Stormrider's Bond [Dragon Isle Version]
-							["description"] = "You might Only get one of these version per account?",
-							--["provider"] = { "n", XXXXXX },	-- Kurdran Wildhammer
-							--["coord"] = { X, Y, VALDRAKKEN },
+							["provider"] = { "n", 222277 },	-- Kurdran Wildhammer
+							["coord"] = { 38.3, 94.9, VALDRAKKEN },
 							["g"] = {
 								i(220737),	-- Storm Spirit (QI!)
 								i(220710),	-- Champion Stormrider's Boots
@@ -673,48 +663,18 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 							},
 						})),
 						q(83024, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- The Stormrider's Bond [Khaz Algar Version]
-							["description"] = "You might Only get one of these version per account?",
-							--["provider"] = { "n", XXXXXX },	-- Kurdran Wildhammer
-							--["coord"] = { X, Y, VALDRAKKEN },
-							["g"] = {
-								i(220737),	-- Storm Spirit (QI!)
-								i(220710),	-- Champion Stormrider's Boots
-								i(220709),	-- Champion Stormrider's Breastplate
-								i(220716),	-- Champion Stormrider's Buckle
-								i(220711),	-- Champion Stormrider's Cape
-								i(220715),	-- Champion Stormrider's Epaulets
-								i(220712),	-- Champion Stormrider's Grips
-								i(220713),	-- Champion Stormrider's Helmet
-								i(220714),	-- Champion Stormrider's Pants
-								i(220717),	-- Champion Stormrider's Wristguards
-								i(220696),	-- Deep Stormrider's Boots
-								i(220695),	-- Deep Stormrider's Breastplate
-								i(220702),	-- Deep Stormrider's Buckle
-								i(220697),	-- Deep Stormrider's Cape
-								i(220701),	-- Deep Stormrider's Epaulets
-								i(220698),	-- Deep Stormrider's Grips
-								i(220699),	-- Deep Stormrider's Helmet
-								i(220700),	-- Deep Stormrider's Pants
-								i(220703),	-- Deep Stormrider's Wristguards
-								i(220719),	-- Shining Stormrider's Boots
-								i(220718),	-- Shining Stormrider's Breastplate
-								i(220725),	-- Shining Stormrider's Buckle
-								i(220720),	-- Shining Stormrider's Cape
-								i(220724),	-- Shining Stormrider's Epaulets
-								i(220721),	-- Shining Stormrider's Grips
-								i(220722),	-- Shining Stormrider's Helmet
-								i(220723),	-- Shining Stormrider's Pants
-								i(220726),	-- Shining Stormrider's Wristguards
-							},
+							-- ["provider"] = { "n", XXXXXX },	-- ???
+							-- ["coord"] = { X, Y, KHAZ_ALGAR },
+							["sym"] = {{"select","questID",81993},{"pop"}},	-- The Stormrider's Bond [Dragon Isle Version]
 						})),
-						--q(X, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- A Sacred Connection
-							--["sourceQuests"] = {
-								--81993,	-- The Stormrider's Bond [Dragon Isle Version]
-								--83024,	-- The Stormrider's Bond [Khaz Algar Version]
-							--},
-							--["provider"] = { "n", XXXXXX },	-- Kurdran Wildhammer
-							--["coord"] = { X, Y, VALDRAKKEN },
-							--["g"] = {
+						q(81994, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- A Sacred Connection [Dragon Isles Version]
+							["sourceQuests"] = {
+								81993,	-- The Stormrider's Bond [Dragon Isle Version]
+								83024,	-- The Stormrider's Bond [Khaz Algar Version]
+							},
+							["provider"] = { "n", 222277 },	-- Kurdran Wildhammer
+							["coord"] = { 38.3, 94.9, VALDRAKKEN },
+							["g"] = {
 								i(220708),	-- Frenzied Stormrider's Breastplate
 								i(220706),	-- Frenzied Stormrider's Buckle
 								i(220705),	-- Frenzied Stormrider's Epaulets
@@ -730,8 +690,13 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 								i(220728),	-- Sparking Stormrider's Epaulets
 								i(220730),	-- Sparking Stormrider's Grips
 								i(220727),	-- Sparking Stormrider's Helmet
-							--},
-						--})),
+							},
+						})),
+						q(83025, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- A Sacred Connection [Khaz Algar Version]
+							-- ["provider"] = { "n", XXXXXX },	-- ???
+							-- ["coord"] = { X, Y, KHAZ_ALGAR },
+							["sym"] = {{"select","questID",81994},{"pop"}},	-- A Sacred Connection [Dragon Isle Version]
+						})),
 						dragonridingrace(77793, {	-- Crystal Circuit - Storm Gryphon
 							["provider"] = { "n", 202524 },	-- Bronze Timekeeper
 							["coord"] = { 38.6, 60.6, ZARALEK_CAVERN },
@@ -882,3 +847,13 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 		},
 	})),
 })));
+
+root(ROOTS.HiddenQuestTriggers, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_BALANCE }, {
+	n(THE_WAR_WITHIN_TEMPORARY, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+		n(HEROIC_EDITION, {
+			q(81991),	-- triggered when completing "The Stormrider's Bond" (81993)
+			q(81992),	-- triggered when completing "A Sacred Connection" (81994)
+			q(84824),	-- triggered when accepting "The Stormrider's Bond" (81993)
+		}),
+	})),
+})))
