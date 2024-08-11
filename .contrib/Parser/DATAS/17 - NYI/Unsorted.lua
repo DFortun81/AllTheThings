@@ -214,7 +214,6 @@ root(ROOTS.Unsorted, {
 				i(222970),	-- Fuzzy (PET!)
 				i(221195),	-- Illskitter (PET!)
 				i(221492),	-- Moss Skipper (PET!)
-				i(225935),	-- Rak-Ush Battleshell (PET!)
 				i(221759),	-- Sceaduthax (PET!)
 				i(221819),	-- Shadowbog Hopper (PET!)
 				i(221495),	-- Waddles (PET!)
@@ -1279,13 +1278,11 @@ root(ROOTS.Unsorted, {
 				i(226134),	-- Mourning Baron's Shoulderpads
 				i(226137),	-- Inquisitive Sister's Cinch
 				i(226138),	-- Vow-Taker's Boots
-				i(226141),	-- Airship Captain's Lost Pendant
 				i(226173),	-- Boots of the First Embrace
 				i(226174),	-- Famished Bride's Clasp
 				i(226175),	-- Traditional Nuptial Shoulderpads
 				i(226521),	-- Reinforced-Wax Plating
 				i(226539),	-- Scroll of Momentum
-				i(226672),	-- Band of Elemental Chaos
 				i(226695),	-- Cunning Advisor's Favor
 				i(226696),	-- Mighty Advisor's Favor
 			}),
@@ -1422,8 +1419,6 @@ root(ROOTS.Unsorted, {
 				i(223806),	-- Bag Test B
 				i(223869),	-- DO NOT USE Prismatic Codex
 				i(223897),	-- Ruptured Engine \\ Ruptered Engine
-				i(223898),	-- Loose Bolts
-				i(223900),	-- Bottled Darkness
 
 				i(224183),	-- Bleak Chum
 				i(224266),	-- Ivory Tinderbox
@@ -1718,11 +1713,7 @@ root(ROOTS.Unsorted, {
 				i(224486),	-- Uncle's Eye
 				i(224545),	-- Plowhead
 				i(224548),	-- Nerubian Device
-				i(224773),	-- Knicknack's Red Candle
-				i(224774),	-- Knicknack's Potion Bottle
-				i(224775),	-- Knicknack's Definitely Rubies
 				i(224777),	-- Sureki Shadecaster
-				i(224778),	-- Knicknack's Enbiggener
 				i(224810),	-- Woodworm Elixir
 				i(225336),	-- A Lost Shoe
 
@@ -1868,7 +1859,6 @@ root(ROOTS.Unsorted, {
 				i(221209),	-- Flame Trader's Gloves
 				i(221210),	-- Grips of the Earth
 				i(221214),	-- Chitin Chain Headpiece
-				i(221218),	-- Reinforced Construct's Greaves
 				i(221222),	-- Water-Imbued Spaulders
 				i(221223),	-- Bog Beast Mantle
 				i(221224),	-- Bouldershell Waistguard

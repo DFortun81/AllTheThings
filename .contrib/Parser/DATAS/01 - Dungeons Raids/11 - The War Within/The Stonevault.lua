@@ -53,7 +53,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2582, {	-- Void Speaker Eirich
-					["crs"] = { 219440 },	-- High Speaker Eirich
+					["crs"] = { 213119 },	-- High Speaker Eirich
 					["g"] = {
 						ach(40643),	-- The Stonevault
 						i(221091),	-- Cutting-Edge Sermon
@@ -68,7 +68,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2582, {	-- Void Speaker Eirich
-					["crs"] = { 219440 },	-- High Speaker Eirich
+					["crs"] = { 213119 },	-- High Speaker Eirich
 					["g"] = {
 						ach(40644),	-- Heroic: The Stonevault
 					},
@@ -76,7 +76,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2582, {	-- Void Speaker Eirich
-					["crs"] = { 219440 },	-- High Speaker Eirich
+					["crs"] = { 213119 },	-- High Speaker Eirich
 					["g"] = {
 						ach(40648),	-- Mythic: The Stonevault
 						i(226683),	-- Malfunctioning Mechsuit (QS!)

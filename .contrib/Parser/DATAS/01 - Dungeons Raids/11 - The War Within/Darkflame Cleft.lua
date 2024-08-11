@@ -12,11 +12,17 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					--["sourceQuests"] = { x },	-- ?
 					["provider"] = { "n", 225555 },	-- Knicknack
 					["coord"] = { 46.5, 30.3, THE_RINGING_DEEPS },
+					["g"] = {
+						i(224775),	-- Knicknack's Definitely Rubies (QI!)
+						i(224778),	-- Knicknack's Enbiggener (QI!)
+						i(224774),	-- Knicknack's Potion Bottle (QI!)
+						i(224773),	-- Knicknack's Red Candle (QI!)
+					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2569, {	-- Ol' Waxbeard
-					["crs"] = { 210149 },	-- Ol' Waxbeard
+					["crs"] = { 210153 },	-- Ol' Waxbeard
 					["g"] = {
 						i(221097),	-- Arcane Scuttle
 						i(219304),	-- Conductor's Wax Whistle
@@ -37,7 +43,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2560, {	-- The Candle King
-					["crs"] = { 222096 },	-- The Candle King
+					["crs"] = { 208745 },	-- The Candle King
 					["g"] = {
 						i(219306),	-- Burin of the Candle King
 						i(221109),	-- Candlebearer's Shroud
@@ -48,7 +54,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2561, {	-- The Darkness
-					["crs"] = { 210797 },	-- The Darkness
+					["crs"] = { 208747 },	-- The Darkness
 					["g"] = {
 						ach(40427),	-- Darkflame Cleft
 						i(221112),	-- Caliginous Claspers
@@ -63,7 +69,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2561, {	-- The Darkness
-					["crs"] = { 210797 },	-- The Darkness
+					["crs"] = { 208747 },	-- The Darkness
 					["g"] = {
 						ach(40428),	-- Heroic: Darkflame Cleft
 					},
@@ -71,7 +77,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2561, {	-- The Darkness
-					["crs"] = { 210797 },	-- The Darkness
+					["crs"] = { 208747 },	-- The Darkness
 					["g"] = {
 						ach(40429),	-- Mythic: Darkflame Cleft
 						i(225548),	-- Wick's Lead (MOUNT!)

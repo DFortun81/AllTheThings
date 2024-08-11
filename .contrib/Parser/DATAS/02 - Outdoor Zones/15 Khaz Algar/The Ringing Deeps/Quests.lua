@@ -891,6 +891,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["sourceQuests"] = { 79194 },	-- To the Source
 					["provider"] = { "n", 223000 },	-- Keldaz
 					["coord"] = { 55.3, 11.1, THE_RINGING_DEEPS },
+					["g"] = {
+						i(226672),	-- Band of Elemental Chaos
+					},
 				}),
 				q(79327, {	-- The Glittering Shard
 					["sourceQuests"] = { 79194 },	-- To the Source (TODO: need to clarify it, not sure)
@@ -1124,6 +1127,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- During questing
 	q(83613),	-- [DNT] Zone 2 Bread Crumb Completed Organically (spellID 456929), after turn in questID 80434 (Into the Deeps)
 	q(79635),	-- [DNT] The Assembly of the Deeps Renown Unlock (spellID 448654)
+	q(84699),	-- 'Stay a while and listen' - Moira Thaurissan (n: 213763 @ 47.0, 20.7), after questID 78760 (Dark Iron from Above). Probably.
 	-- Side quests
 	q(82652),	-- 'Stay a while and listen' - Brennok, in the end of whole speach during questID 80682 (One Last Story)
 	-- 80510 or 80509

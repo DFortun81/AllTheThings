@@ -1822,6 +1822,7 @@ i(213254);	-- Big Gold Nugget
 i(220291);	-- Bioluminescent Thorax
 i(225543);	-- Bloodied Idol
 i(228455);	-- Bolt of Bouldercloth
+i(223900);	-- Bottled Darkness
 i(228456);	-- Bouldercloth
 i(228458);	-- Bouldercloth Bag
 i(225801);	-- Braided Seaweed Bangle
@@ -1892,6 +1893,7 @@ i(220238);	-- Keen Fang
 i(225812);	-- Kobyss Teeth-Sharpener
 i(220234);	-- Leaden Vial
 i(225849);	-- Long-Forgotten Glove
+i(223898);	-- Loose Bolts
 i(228483);	-- Lovingly Carved Ramolith
 i(225820);	-- Lovingly Worn Chisel
 i(225803);	-- Lynx Tag Collar

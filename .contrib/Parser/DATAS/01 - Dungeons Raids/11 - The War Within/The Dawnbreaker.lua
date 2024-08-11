@@ -8,9 +8,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 		["g"] = {
 			n(QUESTS, {
 				q(83322, {	-- The Dawnbreaker: The Christening
-				-- ["sourceQuests"] = { xx },	-- TODO: figure out when they become available
-				["provider"] = { "n", 215335 },	-- General Steelstrike
-				["coord"] = { 40.5, 50.8, HALLOWFALL },
+					-- ["sourceQuests"] = { xx },	-- TODO: figure out when they become available
+					["provider"] = { "n", 215335 },	-- General Steelstrike
+					["coord"] = { 40.5, 50.8, HALLOWFALL },
+					["g"] = {
+						i(226141),	-- Airship Captain's Lost Pendant
+					}
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
@@ -39,7 +42,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2593, {	-- Rasha'nan
-					["crs"] = { 224552 },	-- Rasha'nan
+					["crs"] = { 213937 },	-- Rasha'nan
 					["g"] = {
 						ach(40599),	-- The Dawnbreaker
 						i(223115),	-- Formula: Enchant Ring - Radiant Critical Strike (RECIPE!)
@@ -61,7 +64,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
 				e(2593, {	-- Rasha'nan
-					["crs"] = { 224552 },	-- Rasha'nan
+					["crs"] = { 213937 },	-- Rasha'nan
 					["g"] = {
 						ach(40601),	-- Heroic: The Dawnbreaker
 					},
@@ -69,7 +72,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				e(2593, {	-- Rasha'nan
-					["crs"] = { 224552 },	-- Rasha'nan
+					["crs"] = { 213937 },	-- Rasha'nan
 					["g"] = {
 						ach(40604),	-- Mythic: The Dawnbreaker
 					},

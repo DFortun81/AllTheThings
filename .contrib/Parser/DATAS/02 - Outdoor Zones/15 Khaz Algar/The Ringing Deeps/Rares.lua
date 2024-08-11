@@ -21,6 +21,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			n(220265, {	-- Automaxor
 				["coord"] = { 52.6, 19.9, THE_RINGING_DEEPS },
 				["questID"] = 81674,
+				["g"] = {
+					i(221218),	-- Reinforced Construct's Greaves
+				},
 			}),
 			n(220276, {	-- Candleflyer Captain
 				["description"] = "Flying around and pretty high",
