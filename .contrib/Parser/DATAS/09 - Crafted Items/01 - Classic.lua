@@ -466,7 +466,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						})),
 						-- #endif
 						i(12796),	-- Hammer of the Titans
-						i(12794, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_5}}),	-- Masterwork Stormhammer
+						i(12794, {	-- Masterwork Stormhammer
+							["timeline"] = {
+								REMOVED_6_0_2,
+								ADDED_10_1_5,
+							},
+						}),
 						applyclassicphase(PHASE_FIVE_RECIPES, i(22384)),	-- Persuader
 						i(12781, {	-- Serenity
 							-- #if SEASON_OF_DISCOVERY
@@ -474,6 +479,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 							-- #endif
 						}),
 						-- #if SEASON_OF_DISCOVERY
+						applyclassicphase(SOD_PHASE_FOUR, i(227886, {	-- Skyrider's Masterwork Stormhammer
+							["timeline"] = { "added 1.15.3" },
+						})),
 						applyclassicphase(SOD_PHASE_FOUR, i(227881, {	-- Tranquility
 							["timeline"] = { "added 1.15.3" },
 						})),
@@ -989,6 +997,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(7961, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Phantom Blade
 			applyclassicphase(PHASE_FIVE_RECIPES, i(22383)),	-- Sageblade
 			i(12781),	-- Serenity
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227886, {	-- Skyrider's Masterwork Stormhammer
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(7954, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}}),	-- The Shatterer
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_FOUR, i(227881, {	-- Tranquility

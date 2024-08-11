@@ -377,6 +377,7 @@ for spellID,learnedAt in pairs({
 	[27588] = 300,	-- Light Obsidian Belt
 	[16729] = 300,	-- Lionheart Helm
 	[16993] = 300,	-- Masterwork Stormhammer
+	[461647] = 300,	-- Skyrider's Masterwork Stormhammer
 	[23653] = 300,	-- Nightfall
 	[27590] = 300,	-- Obsidian Mail Tunic
 	[27830] = 300,	-- Persuader

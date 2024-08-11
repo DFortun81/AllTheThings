@@ -2796,6 +2796,13 @@ profession(BLACKSMITHING, {
 					["name"] = "Shadow Crescent Axe",
 					["recipeID"] = 3500,
 				},
+				-- #if AFTER TBC
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Skyrider's Masterwork Stormhammer",
+					["recipeID"] = 461647,
+					["timeline"] = { "added 1.15.3" },
+				}),
+				-- #endif
 				{
 					["name"] = "Solid Iron Maul",
 					["recipeID"] = 3494,

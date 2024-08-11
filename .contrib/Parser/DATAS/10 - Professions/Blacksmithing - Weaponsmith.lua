@@ -196,6 +196,12 @@ profession(BLACKSMITHING, {
 					},
 					-- #if SEASON_OF_DISCOVERY
 					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Skyrider's Masterwork Stormhammer",
+						["recipeID"] = 461647,
+						["requireSkill"] = 17040,
+						["timeline"] = { "added 1.15.3" },
+					}),
+					applyclassicphase(SOD_PHASE_FOUR, {
 						["name"] = "Tranquility",
 						["recipeID"] = 461718,
 						["requireSkill"] = 17040,

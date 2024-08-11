@@ -3634,6 +3634,11 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(5578),	-- Plans: Silvered Bronze Breastplate (RECIPE!)
 			i(10424),	-- Plans: Silvered Bronze Leggings (RECIPE!)
 			i(2882),	-- Plans: Silvered Bronze Shoulders (RECIPE!)
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227905, {	-- Plans: Skyrider's Masterwork Stormhammer (RECIPE!)
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(6046),	-- Plans: Steel Weapon Chain (RECIPE!)
 			i(12703),	-- Plans: Storm Gauntlets (RECIPE!)
 			i(12703, {	-- Plans: Storm Gauntlets (RECIPE!)
