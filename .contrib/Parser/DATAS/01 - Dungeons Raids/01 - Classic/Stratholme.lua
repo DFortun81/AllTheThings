@@ -242,7 +242,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["lvl"] = 52,
 					["groups"] = {
 						objective(1, {	-- 0/1 Symbol of Lost Honor
-							["provider"] = { "i", 14625 },	-- Symbol of Lost Honor
+							["providers"] = {
+								{ "i",  14625 },	-- Symbol of Lost Honor
+								{ "o", 177264 },	-- Symbol of Lost Honor
+							},
 							["coord"] = { 71.3, 33.9, EASTERN_PLAGUELANDS },
 						}),
 					},
