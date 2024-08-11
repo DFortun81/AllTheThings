@@ -1853,6 +1853,7 @@ i(220255);	-- Darkened Residue
 i(225813);	-- Darkened Ritual Stone
 i(220280);	-- Dense Five-Pound Stone
 i(225795);	-- Dented Pocketwatch
+i(228452);	-- Deepest, Darkest Black Ink
 i(228509);	-- Diaphanous Webbing
 i(220229);	-- Dormant Core
 i(220271);	-- Downy Clump
@@ -1943,7 +1944,9 @@ i(220237);	-- Shining Amethyst Cluster
 i(220231);	-- Skiatic Vessel
 i(220299);	-- Sleek Beak
 i(220226);	-- Slime-Coated Membrane
+i(228711);	-- Small Candle
 i(228488);	-- Small Glass Vase
+i(225832);	-- Smelly Backscratcher
 i(225810);	-- Smoked Visor
 i(220241);	-- Softly Glowing Shard
 i(228493);	-- Sour Topaz Bites
@@ -1997,6 +2000,7 @@ i(227326);	-- Chalcocite Lava Cake
 i(217896);	-- Cinderbrew Mead
 i(227314);	-- Coffee, Light Ice
 i(227301);	-- Crystal Tots
+i(224762);	-- Delver's Waterskin
 i(227316);	-- Eggnog
 i(227333);	-- Glimmering Delicacy
 i(227302);	-- Granite Salad

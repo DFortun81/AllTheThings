@@ -15,8 +15,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 63.7, 95.0, THE_RINGING_DEEPS },
 			}),
 			ach(40675, {	-- Skyriding Glyphs: Chittering Den
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 69.5, 34.5, THE_RINGING_DEEPS },
 			}),
 			ach(40672, {	-- Skyriding Glyphs: Gundargaz
 				["coord"] = { 49.0, 31.5, THE_RINGING_DEEPS },
@@ -31,8 +30,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 57.3, 31.5, THE_RINGING_DEEPS },
 			}),
 			ach(40673, {	-- Skyriding Glyphs: The Stonevault Exterior
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 46.9, 10.1, THE_RINGING_DEEPS },
 			}),
 			ach(40676, {	-- Skyriding Glyphs: The Rumbling Wastes
 				["coord"] = { 56.2, 56.2, THE_RINGING_DEEPS },

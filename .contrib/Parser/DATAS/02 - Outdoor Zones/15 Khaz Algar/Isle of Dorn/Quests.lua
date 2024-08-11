@@ -966,6 +966,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["sourceQuests"] = { 82800 },	--A Sedimental Moment
 					["provider"] = { "n", 224708 },	-- Cenderragg
 					["coord"] = { 48.6, 60.9, ISLE_OF_DORN },
+					["g"] = {
+						i(228377),	-- Gauntlets of Kix'arak's Bane
+					},
 				}),
 			}),
 			header(HEADERS.Item, 228217, {	-- Design: Solid Amber
@@ -1064,6 +1067,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 44.9, 20.6, ISLE_OF_DORN },
 				["g"] = {
 					i(225888),	-- Titan Emitter (QI!)
+					i(228369),	-- Reconstructed Ledger
 				},
 			}),
 			------ Birdman ------

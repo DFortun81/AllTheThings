@@ -6,6 +6,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 		header(HEADERS.Quest, 83240, bubbleDownSelf({ ["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 3 } }, {	-- The Theater Troupe
 			["icon"] = 132288,
 			["coord"] = { 56.4, 51.4, ISLE_OF_DORN },
+			["maps"] = { 2328 },	-- The Proscenium
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(40860),	-- A Star of Dorn (automated)

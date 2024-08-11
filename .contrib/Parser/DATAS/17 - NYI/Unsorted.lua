@@ -20,7 +20,6 @@ root(ROOTS.Unsorted, {
 				i(228631),	-- Satchel of Drake's Awakened Crests
 				i(228632),	-- Clutch of Wyrm's Awakened Crests
 				i(228633),	-- Large Pouch of Whelpling's Awakened Crests
-				i(228711),	-- Small Candle
 				i(228720),	-- Nascent Gemstone
 				i(228742),	-- Unidentifiable Cloth
 				i(228743),	-- Damp Weavercloth
@@ -35,18 +34,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(QUEST_ITEMS, {
 				i(228623),	-- Blue's Request
-			}),
-			n(ARMOR, {
-				-- Probably from Quests
-				i(228654),	-- Scrit's Handmade Shoes
-				i(228655),	-- Scrit's Handmade Gloves
-				i(228656),	-- Scrit's Handmade Shoulders
-				i(228657),	-- Scrit's Handmade Girdle
-
-				i(228668),	-- Compiler's Handwraps
-				i(228671),	-- Compiler's Shoulderguards
-				i(228673),	-- Compiler's Chain Clasp
-				i(228674),	-- Compiler's Greaves
 			}),
 			filter(BATTLE_PETS, {
 				i(228765),	-- Gummi (PET!) [Promotion?]
@@ -212,7 +199,6 @@ root(ROOTS.Unsorted, {
 			i(229193),	-- Queen's Pheromone
 			i(229194),	-- Queen's Pheromone
 			i(229195),	-- Queen's Pheromone
-			i(229353),	-- Rage-Filled Idol
 			i(229354),	-- Algari Adventurer's Cache
 			i(229370),	-- Companion Experience
 			i(229371),	-- Companion Experience
@@ -769,11 +755,9 @@ root(ROOTS.Unsorted, {
 				i(225684),	-- Relicblood of Zekvir
 				i(225685),	-- Relic of Sentience
 				i(225692),	-- Glowglow Cap
-				i(225719),	-- Light's Mantle
 				i(225897),	-- Brute Force Idol
 				i(225898),	-- Idol of the Earthmother
 				i(225901),	-- Streamlined Relic \\ Power Idol
-				i(225907),	-- Relic of Sentience
 				i(225908),	-- Relicblood of Zekvir
 			}),
 			filter(COSMETIC, {
@@ -789,7 +773,6 @@ root(ROOTS.Unsorted, {
 				i(212168),	-- Cinderbee Wax Candle Hat \\ Cultlight Kobold Helm [PH]
 				i(212169),	-- Mint-Scented Candle Hat \\ Candelabra Kobold Helm [PH]
 				i(212170),	-- Bronzebeard's Spare Hat \\ Bronzebeard Hat [PH]
-				i(212173),	-- Rulk'Nerub Raptorial Spine \\ Rulk'Nerub Backpiece [PH]
 
 
 
@@ -890,7 +873,6 @@ root(ROOTS.Unsorted, {
 				i(226014),	-- Plunderlord's Radiant Cuffs
 				i(226016),	-- Darkened Tabard of the Arathi
 				i(226017),	-- Ensemble: Plunderlord's Radiant Finery
-				i(226018),	-- Darkened Arathi Cape
 				i(226019),	-- Darkened Arathi Shoulderguards
 				i(226105),	-- Emerald Scale Treads \\ Jade Scale Treads
 				i(226106),	-- Amber Scale Treads
@@ -1452,7 +1434,6 @@ root(ROOTS.Unsorted, {
 				i(224274),	-- Sturdy Locket
 				i(224292),	-- Radiant Fuel Shard
 				i(224464),	-- Demonic Healthstone
-				i(224762),	-- Delver's Waterskin
 				i(224767),	-- Giant Candle Parts
 				i(224786),	-- Skeleton King Outfit
 				i(224791),	-- Golden Lord Outfit \\ Golden Ruler Outfit
@@ -1501,7 +1482,6 @@ root(ROOTS.Unsorted, {
 				i(225825),	-- Ground Snacking Stone
 				i(225826),	-- Broken Elevator Cog
 				i(225831),	-- Glittering Rock
-				i(225832),	-- Smelly Backscratcher
 				i(225833),	-- Weathered Skipping Stone
 				i(225834),	-- Pilfered Matchbook
 				i(225835),	-- Battered Lantern
@@ -1563,24 +1543,17 @@ root(ROOTS.Unsorted, {
 				i(227680),	-- Satchel of Jewelcrafting Surplus
 				i(227713),	-- Artisan's Consortium Payout [Common]
 				i(227769),	-- Bountiful Bolts
-				i(227770),	-- Assorted Whirligigs
-				i(227771),	-- Blinker Fluid
-				i(227772),	-- Cataclysmic Converter
-				i(227773),	-- Pummel-Proof Plating
-				i(227774),	-- Pummel Permit
 				i(227778),	-- Delver's Bounty
 				i(227779),	-- Delver's Bounty
 				i(227780),	-- Delver's Bounty
 				i(227781),	-- Delver's Bounty
 				i(227782),	-- Delver's Bounty
 				i(227783),	-- Delver's Bounty
-				i(227784),	-- Delver's Bounty
 				i(227890),	-- Unrecognizable Prototype
 				i(228192),	-- Cracked Fel Focus
 				i(228193),	-- Chipped Demon's Blade
 				i(228194),	-- Fully Scrapped Scrap
 				i(228195),	-- Tattered Goblin Cap
-				i(228369),	-- Reconstructed Ledger
 				i(228388),	-- Damp Doll
 				i(228390),	-- Left Boot
 				i(228391),	-- Right Boot
@@ -1599,7 +1572,6 @@ root(ROOTS.Unsorted, {
 				i(228449),	-- Tasty Iron Bar
 				i(228450),	-- Edible Copper Nuggets
 				i(228451),	-- Scrumptious Gold Bar
-				i(228452),	-- Deepest, Darkest Black Ink
 				i(228453),	-- Extra Large Bag of Popped Pebbles
 				i(228454),	-- Collector's Commemorative Proscenium Playbill
 			}),
@@ -1694,7 +1666,6 @@ root(ROOTS.Unsorted, {
 				i(219384),	-- Tenir and the Order of Night
 				i(219388),	-- Sacred Flame Torch
 				i(219400),	-- Faerin's Torch of Holy Flame
-				i(219469),	-- Fog Beast Tracker
 				i(219522),	-- Radiant Fuel Crystal
 				i(219804),	-- [DNT] Antiparalytic Serum
 				i(219939),	-- Alleria's Crystal
@@ -1703,10 +1674,8 @@ root(ROOTS.Unsorted, {
 				i(220130),	-- Pure Fire Honey
 				i(220212),	-- Aelric's Corrupted Tinderbox
 				i(220215),	-- Unidentified Tinderbox
-				i(220218),	-- Sticky Wax
 				i(220359),	-- Aelric's Corrupted Tinderbox
 				i(220483),	-- Tuning Wand
-				i(220485),	-- Candlefly Luminescence \\ Candlefly Luminesence
 				i(221751),	-- DO NOT USE Prismatic Codex
 				i(222899),	-- [UNUSED] Faerin's Shield
 				i(222951),	-- Eagle Fillet \\ Eagle Breast
@@ -1754,7 +1723,6 @@ root(ROOTS.Unsorted, {
 				i(224775),	-- Knicknack's Definitely Rubies
 				i(224777),	-- Sureki Shadecaster
 				i(224778),	-- Knicknack's Enbiggener
-				i(224779),	-- Alhainr's Skull
 				i(224810),	-- Woodworm Elixir
 				i(225336),	-- A Lost Shoe
 
@@ -2012,7 +1980,6 @@ root(ROOTS.Unsorted, {
 				i(228374),	-- Shoulders of Kix'arak's Bane
 				i(228375),	-- Belt of Kix'arak's Bane
 				i(228376),	-- Boots of Kix'arak's Bane
-				i(228377),	-- Gauntlets of Kix'arak's Bane
 				i(228435),	-- Wine-Dyed Leggings
 				i(228436),	-- United Arathi's Jerkin
 				i(228437),	-- Salamanther-Scale Greaves
@@ -2038,11 +2005,7 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MISC, {
 				i(224594),	-- Spinner's Amulet \\ [PH] Element-Attuned Pendant
-
-				i(224639),	-- Expeditionary Chopper \\ [PH] Algari Hatchet
-
 				-- Snuffling
-				i(224642),	-- Firelight Ruby
 				i(224650),	-- Wax-Sealed Pouch
 				i(228210),	-- Firelight Ruby Chip
 				i(228220),	-- Waxy Bundle

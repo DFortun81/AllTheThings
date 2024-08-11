@@ -107,7 +107,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 		i(224626),	-- Deep-Dweller's Staff
 		i(227693),	-- Expeditionary Blade
 		i(224635),	-- Expeditionary Bulwark
-		--i(224639),	-- Expeditionary Chopper \\ [PH] Algari Hatchet
+		i(224639),	-- Expeditionary Chopper
 		i(224625),	-- Expeditionary Spear
 		i(224632),	-- Underscout's Kukri
 		i(224638),	-- Underscout's Glaive

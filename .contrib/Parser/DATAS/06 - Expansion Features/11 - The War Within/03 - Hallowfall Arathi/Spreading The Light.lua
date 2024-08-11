@@ -292,6 +292,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
 				}),
 				n(TREASURES, {
+					--o(xxx, {	-- was crabber crate or something like that
+					--	["coord"] = { 62.4, 16.2, HALLOWFALL },
+					--	["questID"] = 84342,
+					--	["g"] = {
+							i(226018),	-- Darkened Arathi Cape (COSMETIC!)
+					--	},
+					--}),
+					o(435008, {	-- Farmhand Stash
+						["description"] = "Require weekly quest with controlling Harvestbot Remy to git it up",
+						["coord"] = { 61.6, 32.6, HALLOWFALL },
+						["questID"] = 80590,
+					}),
 					o(441795, {	-- Hallowfall Sparkfly
 						["coord"] = { 66.8, 25.3, HALLOWFALL },
 						--["questID"] = ,
@@ -414,7 +426,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	-- Keyflames
+	-- Hidden stuff in area
+	q(83211),	-- Herb with Sparkbug Jar buff @ 67.1, 23.3
+	q(83208),	-- Harb with Sparkbug Jar buff @ 66.3, 23.6
+	q(83033),	-- Ore (Ironclaw ) with Sparkbug Jar buff @ 67.6, 23.8
+	q(80548),	-- Radiant Remnant from ground during qID 76338 (A Better Cabbage Smacker) @ 64.8, 28.9
+	q(80583),	-- Radiant Remnant from ground during qID 78590 (Cutting Edge) @ 64.0, 31.7
+	q(80337),	-- Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 66.1, 16.6
+	q(80347),	-- Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 65.7, 16.5
+	q(80342),	-- Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 65.4, 16.7
+	q(80344),	-- Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 64.2, 16.4
+	q(80339),	-- Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 66.4, 15.0
+	q(80535),	-- Radiant Remnant from ground with Sparkbug Jar buff @ 66.8, 23.1
+	-- Small Keyflames
 	q(80005),	-- Empty Crab Cage - Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
 	q(78472),	-- Attica Whiskervale - Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7
 	q(79295),	-- Taerry Bligestone - Hose 'Em Down - Activate, after flare up lesser keyflame @ 65.8, 24.4
@@ -423,9 +447,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	q(79383),	-- Erol Ellimoore - Web of Manipulation - Activate, after flare up lesser keyflame @ 63.3, 29.4
 	q(78466),	-- Chef Dinaire - Shadows of Flavor - Activate, after flare up lesser keyflame @ 64.4, 30.9
 	q(78458),	-- Seraphine Seedheart - Harvest Havoc - Activator, after flare up lesser keyflame @ 63.6, 33.6
-	--
+	-- Quests?
 	q(83281),	-- Completed Spreading The Light But I also got a Spark of Omens? / Fractured Spark of Omens
-	--
+	--	Rares
 	q(84052),	-- Extra HQT: Crazed Cabbage Smacker
 	q(84054),	-- Extra HQT: Croakit
 	q(84053),	-- Extra HQT: Deathpetal
@@ -437,6 +461,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	q(84056),	-- Extra HQT: Toadstomper
 	---
 	q(79177),	-- Snuffling in Hallowfall?
-	--
+	-- Vendor
 	q(83341),	-- after turn in 78933 (The Sweet Eclipse), unlock ability to buy Sweet Eclipse from vendor
 }));

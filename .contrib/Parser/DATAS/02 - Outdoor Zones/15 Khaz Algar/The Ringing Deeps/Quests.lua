@@ -454,7 +454,70 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					},
 				}),
 			}),
-			header(HEADERS.AchCriteria, 40799.04, {	-- Dead in the Den
+			header(HEADERS.AchCriteria, 40799.04, {	-- Dread in the Den
+				q(80508, {	-- Dread in the Den
+					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["provider"] = { "n", 222234 },	-- Scrit
+					["coord"] = { 62.6, 45.6, THE_RINGING_DEEPS },
+				}),
+				q(80509, {	-- A Suit of Slime
+					["sourceQuests"] = { 80508 },	-- Dread in the Den
+					["provider"] = { "n", 222234 },	-- Scrit
+					["coord"] = { 69.6, 41.1, THE_RINGING_DEEPS },
+					["g"] = {
+						i(220218),	-- Sticky Wax (QI!)
+					},
+				}),
+				q(80510, {	-- Healing the Headwaters
+					["sourceQuests"] = { 80508 },	-- Dread in the Den
+					["provider"] = { "n", 222234 },	-- Scrit
+					["coord"] = { 69.6, 41.1, THE_RINGING_DEEPS },
+				}),
+				q(80511, {	-- Casing the Camp
+					["sourceQuests"] = {
+						80509,	-- A Suit of Slime
+						80510,	-- Healing the Headwaters
+					},
+					["provider"] = { "n", 222234 },	-- Scrit
+					["coord"] = { 69.6, 41.1, THE_RINGING_DEEPS },
+				}),
+				q(80512, {	-- Beat the Best
+					["sourceQuests"] = { 80511 },	-- Casing the Camp
+					["provider"] = { "n", 222239 },	-- Scrit
+					--["coord"] = { x, y, THE_RINGING_DEEPS }, -- follow player
+				}),
+				q(80513, {	-- Snouty Sabotage
+					["sourceQuests"] = { 80511 },	-- Casing the Camp
+					["provider"] = { "n", 222239 },	-- Scrit
+					--["coord"] = { x, y, THE_RINGING_DEEPS }, -- follow player
+				}),
+				q(80514, {	-- Break out Berrund!
+					["sourceQuests"] = {
+						80512,	-- Beat the Best
+						80513,	-- Snouty Sabotage
+					},
+					["provider"] = { "n", 222239 },	-- Scrit
+					--["coord"] = { x, y, THE_RINGING_DEEPS }, -- follow player
+				}),
+				q(80515, {	-- Put the Shine On
+					["sourceQuests"] = { 80514 },	-- Break out Berrund!
+					["provider"] = { "n", 222234 },	-- Scrit
+					["coord"] = { 69.6, 41.1, THE_RINGING_DEEPS },
+					["g"] = {
+						i(220485),	-- Candlefly Luminescence (QI!)
+					},
+				}),
+				q(80516, {	-- Bump off the Boss
+					["sourceQuests"] = { 80515 },	-- Put the Shine On
+					["provider"] = { "n", 220220 },	-- Berrund the Gleaming
+					["coord"] = { 69.6, 40.9, THE_RINGING_DEEPS },
+					["g"] = {
+						i(228657),	-- Scrit's Handmade Girdle
+						i(228655),	-- Scrit's Handmade Gloves
+						i(228654),	-- Scrit's Handmade Shoes
+						i(228656),	-- Scrit's Handmade Shoulders
+					},
+				}),
 			}),
 			header(HEADERS.AchCriteria, 40799.05, {	-- Envenomed Invasion
 				q(79367, {	-- A Nebb in Need
@@ -581,6 +644,32 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40799.07, {	-- Into the Fog
+				q(81556, {	-- Foreign Fog
+					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["provider"] = { "n", 221043 },	-- Noli Marlen
+					["coord"] = { 58.4, 62.3, THE_RINGING_DEEPS },
+				}),
+				q(81557, {	-- Fog Tags
+					["sourceQuests"] = { 81556 },	-- Foreign Fog
+					["provider"] = { "n", 221043 },	-- Noli Marlen
+					["coord"] = { 58.4, 62.3, THE_RINGING_DEEPS },
+					["g"] = {
+						i(219469),	-- Fog Beast Tracker (QI!)
+					},
+				}),
+				q(81558, {	-- Unnatural Predators
+					["sourceQuests"] = { 81556 },	-- Foreign Fog
+					["provider"] = { "n", 221043 },	-- Noli Marlen
+					["coord"] = { 58.4, 62.3, THE_RINGING_DEEPS },
+				}),
+				q(81559, {	-- Fog Follower
+					["sourceQuests"] = {
+						81557,	-- Fog Tags
+						81558,	-- Unnatural Predators
+					},
+					["provider"] = { "n", 221043 },	-- Noli Marlen
+					["coord"] = { 58.4, 62.3, THE_RINGING_DEEPS },
+				}),
 			}),
 			header(HEADERS.AchCriteria, 40799.08, {	-- Magma-nificence
 				-- TODO: CHECK THIS QUESTLINE AGAIN...
@@ -810,6 +899,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40799.13, {	-- Abysmal Extraction
+				q(83155, {	-- Tired of Tripping
+					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["provider"] = { "n", 225608 },	-- Prospera Cogwall
+					["coord"] = { 63.7, 79.2, THE_RINGING_DEEPS },
+				}),
+				q(83159, {	-- A Little Off the Top
+					["sourceQuests"] = { 83155 },	-- Tired of Tripping
+					["provider"] = { "n", 225608 },	-- Prospera Cogwall
+					["coord"] = { 63.7, 79.2, THE_RINGING_DEEPS },
+					["g"] = {
+						i(224779),	-- Alhainr's Skull (QI!)
+					},
+				}),
+				q(83162, {	-- Put it Back, Put it Back!
+					["sourceQuests"] = { 83159 },	-- A Little Off the Top
+					["provider"] = { "n", 226336 },	-- Prospera Cogwall
+					["coord"] = { 63.7, 79.2, THE_RINGING_DEEPS },
+				}),
 			}),
 			header(HEADERS.AchCriteria, 40799.14, {	-- Revenge in the Rumbling Wastes
 				q(81655, {	-- Juicy Krolusk Meat
@@ -864,8 +971,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 						i(224008),	-- Mislaid Tool (QI!)
 					},
 				}),
+				q(82224, {	-- Check on the Compiler
+					-- TODO: I'm unsure if it is specific case for this one or they changed chain
+					-- Specific - I was doing only quests above without pickup next quest that probably still available as was previously
+					-- but just in case - I change requirement
+					["sourceQuests"] = { 80577 },	-- Readying the Recitation
+					["provider"] = { "n", 220600 },	-- Haimaz
+					["coord"] = { 62.0, 45.5, THE_RINGING_DEEPS },
+				}),
 				q(80578, {	-- The Common Costume
-					["sourceQuests"] = { 81613 },	-- Let's Not Worry Her
+					["sourceQuests"] = { 82224 },	-- Check on the Compiler
 					["provider"] = { "n", 220597 },	-- Brennok
 					["coord"] = { 61.9, 45.5, THE_RINGING_DEEPS },
 					["g"] = {
@@ -893,6 +1008,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["sourceQuests"] = { 80682 },	-- One Last Story
 					["provider"] = { "n", 220600 },	-- Haimaz
 					["coord"] = { 57.4, 43.1, THE_RINGING_DEEPS },
+					["g"] = {
+						i(228673),	-- Compiler's Chain Clasp
+						i(228674),	-- Compiler's Greaves
+						i(228668),	-- Compiler's Handwraps
+						i(228671),	-- Compiler's Shoulderguards
+					},
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40799.16, {	-- Frolicking in the Fetid Grotto
@@ -1005,8 +1126,9 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(79635),	-- [DNT] The Assembly of the Deeps Renown Unlock (spellID 448654)
 	-- Side quests
 	q(82652),	-- 'Stay a while and listen' - Brennok, in the end of whole speach during questID 80682 (One Last Story)
+	-- 80510 or 80509
+	q(81927),	-- interact a things from table (left-ish one), during of this 2 quests (not sure which one exactly)
 	-- ?
-	q(82957, {["repeatable"]=true,}),	-- 'Thanks for the Wax' accepted every time when you fly in zone
 	q(83475),	-- [DNT] Repair Console (spellID 455981) Water Console (o: 226624) @ 45.3, 46.4, THE_RINGING_DEEPS)
 	q(83482),	-- [DNT] Repair Console (spellID 456005) Lost Console (o: 226641 @ 56.4, 22.5, THE_RINGING_DEEPS)
 	--q(82991),	-- when bind hearthstone location to Camp Murroch tavern

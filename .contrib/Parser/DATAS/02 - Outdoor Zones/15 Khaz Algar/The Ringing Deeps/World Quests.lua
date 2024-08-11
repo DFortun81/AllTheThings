@@ -16,6 +16,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["provider"] = { "n", 222535 },	-- Haywire Servobot
 					["coord"] = { 66.9, 58.1, THE_RINGING_DEEPS },
 				})),
+				pvp(q(80208, {	-- Digging into Trouble
+					["coord"] = { 61.7, 82.0, THE_RINGING_DEEPS },
+				})),
 				pvp(q(80323, {	-- Foggy Faceoff
 					["coord"] = { 64.9, 51.2, THE_RINGING_DEEPS },
 				})),
@@ -40,8 +43,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				q(83930, {	-- Deworming Solution
 					["coord"] = { 57.4, 39.5, THE_RINGING_DEEPS },
 				}),
-				q(83538, {	-- Excavation Liberation (TODO: probably pvp?)
+				q(83538, {	-- Excavation Liberation
 					["coord"] = { 62.0, 84.9, THE_RINGING_DEEPS },
+				}),
+				q(83537, {	-- Geothermal Gem Treatment
+					["coord"] = { 41.5, 20.3, THE_RINGING_DEEPS },
 				}),
 				q(83079, {	-- Mineral Buildup
 					["coord"] = { 45.8, 42.8, THE_RINGING_DEEPS },

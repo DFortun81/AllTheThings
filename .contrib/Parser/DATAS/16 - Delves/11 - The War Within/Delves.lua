@@ -412,6 +412,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 	m(2310, {	-- Skittering Breach
 		["coord"] = { 65.5, 61.5, HALLOWFALL },
 		["g"] = {
+			i(225719),	-- Light's Mantle
 			n(ACHIEVEMENTS, {
 				ach(40810),	-- Skittering Breach Discoveries
 				ach(40533),	-- Skittering Breach Stories (automated)
@@ -678,6 +679,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		i(225900),	-- Light-Touched Idol
 		i(225905),	-- Olden Seeker Relic
 		i(218129),	-- Porcelain Arrowhead Idol
+		i(229353),	-- Rage-Filled Idol
+		i(225907),	-- Relic of Sentience
 		i(225904),	-- Time Lost Relic
 		i(225899),	-- Unbreakable Iron Idol
 		filter(BATTLE_PETS, {
@@ -699,6 +702,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(224181),	-- Companion Experience (Tier 1-2)
 			i(224411),	-- Companion Experience (Tier 3)
 			i(224412),	-- Companion Experience (every tier)
+			i(227784, {["timeline"]={ REMOVED_11_1_0 }}),	-- Delver's Bounty
 			i(222922),	-- Expeditionary Spoils (Tier 1)
 			i(222923),	-- Expeditionary Spoils (Tier 2)
 			i(225178),	-- Expeditionary Spoils (Tier 3)
@@ -741,6 +745,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		filter(COSMETIC, {
 			i(212172),	-- Ajul'Nerub Raptorial Spine
+			i(212173),	-- Rulk'Nerub Raptorial Spine
 			i(212163),	-- Soporific Shroom Cap
 			i(225066),	-- Trailblazer's Haversack
 		}),
@@ -1194,10 +1199,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 root(ROOTS.HiddenQuestTriggers, {
 	q(82772),	-- First Time per day? (Got Unflagged at reset)
 	q(84670),	-- after turn in weekly delve quest (was 82746 - Delves: Breaking Tough to Loot Stuff - for this one)
-	q(82944),	-- after Tier 5 run in Earthcrawl Mines / Bountiful Coffer? / further difficulty unlock?
-	q(82941),	-- after Tier 6 run in Kriegval's Rest / Bountiful Coffer? / further difficulty unlock?
-	q(82940),	-- after Tier 7 run in Mycomancer Cavern / Bountiful Coffer? / further difficulty unlock?
 	q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
+	-- Bountiful Delve runs
+	q(82944),	-- after Earthcrawl Mines
+	q(82941),	-- after Kriegval's Rest
+	q(82940),	-- after Mycomancer Cavern
+	q(78508),	-- after Skittering Breach
 	--
 	q(83235),	-- Season 1: 1/10 reward progress (spellID 454473 - Airship: Wings 05 - Lantern Wing)
 });

@@ -906,6 +906,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			q(79222, {	-- Shadow-Hardened Mainspring
 				["provider"] = { "i", 212330 },	-- Shadow-Hardened Mainspring
 			}),
+			q(79221, {	-- The Unusual Bug
+				["provider"] = { "i", 212331 },	-- The Unusual Bug (QI!)
+				["coord"] = { 67.2, 19.2, HALLOWFALL },
+			}),
 			q(82894, {	-- The Price of Hope
 				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 				["provider"] = { "n", 215335 },	-- General Steelstrike
@@ -958,16 +962,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					},
 				}),
 			}),
-			------ Alex have to Check ------
-			--[[
-			q(xx, {	-- Radiant-Twisted Mycelium
-				["provider"] = { "n", 214905 },	-- Radiant-Twisted Mycelium
-				["coord"] = { 62.6, 19.7, HALLOWFALL },	-- ~~
-				["g"] = {
-					i(),	-- Shadowed Essence
-				},
-			}),
-			--]]
 		}),
 	}),
 })));
@@ -1005,16 +999,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	--
 	q(82749),	-- triggered after turn in questID 80678 (Time Lost) (spellID 452551 - Flag Timer)
 	q(83748),	-- triggered after turn in questID 79168 (Light's Gambit) (spellID 457904 - [DNT] Have Played Light's Gambit)
-	-- Some dude with question, which require you to loot something in world?
-	--q(80068),	-- [DNT] Infirmary Tracker, fire near Caesper (n: 225948 @ 41.8, 58.3) and Ryfus Sacredpyr (n: 221630  @ 40.0, 51.1)
-	-- Radiant Remnants
-	q(80337),	-- pop after I grab Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 66.1, 16.6
-	q(80347),	-- pop after I grab Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 65.7, 16.5
-	q(80342),	-- pop after I grab Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 65.4, 16.7
-	q(80344),	-- pop after I grab Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 64.2, 16.4
-	q(80339),	-- pop after I grab Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 66.4, 15.0
-	q(80548),	-- pop after I grab Radiant Remnant from ground during qID 76338 (A Better Cabbage Smacker) @ 64.8, 28.9
-	q(80583),	-- pop after I grab Radiant Remnant from ground during qID 78590 (Cutting Edge) @ 64.0, 31.7
+	q(79941, {["isDaily"]=true,}),	-- <I wish to visit Veneration Groundkeeper> - Justicia Baercennan (n: 225942 @ 41.8, 54.3), nothing happen & reset on daily (spellID 454635)
 	q(79212),	-- not sure why it pop near Defender of the Flame quest chain @ 65.5, 32.2, when I fly here first time
 	-- Special Assignment unclocks tracker
 	q(82158),	-- Special Assignment: Lynx Rescue

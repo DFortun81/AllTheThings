@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				q(82505),	-- Worldsoul: The Stonevault [M]
 				q(82512),	-- Worldsoul: World Boss
 				q(82452),	-- Worldsoul: World Quests
-				--[[ Also Fired
+				--[[ Also Fired / Alex: can confirm 82484, 82513, 82514, 82515 too; 82039 seems like related to caches or sparks?
 				q(82484),	--
 				q(82513),	--
 				q(82514),	--

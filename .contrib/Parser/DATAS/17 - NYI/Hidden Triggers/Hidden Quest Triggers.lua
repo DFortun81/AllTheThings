@@ -2072,6 +2072,15 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(78204),	-- First Week Trigger (spellID 423861)
 	}),
 
+	------------------
+	--     TWW      --
+	------------------
+	expansion(EXPANSION.TWW, {
+		-- PVP
+		q(80415, {["isDaily"]=true}),	-- after looting War Supply chest, first time per day
+		q(80416, {["isDaily"]=true}),	-- after looting War Supply chest, first time per day
+	}),
+
 	--------------------
 	--   NYI QUESTS   --
 	--------------------
@@ -2288,7 +2297,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(40595),	-- FLAG - Dalaran - Timothy Jones - (UNUSED)
 		q(47495),	-- Insatiable Appetite [UNUSED]
 		q(39044),	-- Unused
-		q(50690),	-- Unused
+		--q(50690),	-- Unused - Alex: TWW quest in Hallowfall
 		q(54781),	-- UNUSED
 		q(37812),	-- UNUSED: Test Race: 1 Marker
 		q(38845),	-- Unused

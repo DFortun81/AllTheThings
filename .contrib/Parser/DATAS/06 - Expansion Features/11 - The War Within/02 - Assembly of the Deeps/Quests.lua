@@ -37,7 +37,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
 				}),
 			}, {	-- RENOWN 8 --
+				q(82371, {	-- A Flickering Candle
+					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
+					["g"] = {
+						i(226146),	-- Handful of Humming Shinies
+					},
+				}),
 			}, {	-- RENOWN 9 --
+				q(82370, {	-- Take Candle!
+					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
+				}),
 			}, {	-- RENOWN 10 --
 				q(82372, {	-- Deeps Unifier
 					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>

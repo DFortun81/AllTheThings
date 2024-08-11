@@ -172,6 +172,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 57.2, 22.3, ISLE_OF_DORN },
 				["questID"] = 81904,
 				["g"] = {
+					i(221506),	-- Arachnid's Web-Sown Guise
 					i(221219),	-- Silkwing Trousers
 				},
 			}),

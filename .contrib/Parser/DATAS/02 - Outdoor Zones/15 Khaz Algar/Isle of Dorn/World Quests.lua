@@ -16,8 +16,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["provider"] = { "n", 223407 },	-- Awakened Custodian
 					["coord"] = { 48.2, 32.0, ISLE_OF_DORN },
 				})),
+				pvp(q(80394, {	-- Along for the Ride
+					["coord"] = { 61.6, 21.4, ISLE_OF_DORN },
+				})),
 				q(82234, {	-- A Floral Flair for Every Ram
 					["coord"] = { 40.2, 80.4, ISLE_OF_DORN },
+				}),
+				q(81465, {	-- Artifacts Galore
+					["coord"] = { 78.4, 26.7, ISLE_OF_DORN },
+					["g"] = {
+						i(218454),	-- Titan Artifact (QI!)
+					},
 				}),
 				q(82448, {	-- Book It to the Library
 					["coord"] = { 25.5, 59.1, ISLE_OF_DORN },

@@ -27,6 +27,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(212980),	-- Waxy Excretion (QI!)
 					},
 				}),
+				q(82957, {	-- Thanks for the Wax
+					["repeatable"] = true,
+					["g"] = {
+						i(224642),	-- Firelight Ruby
+					},
+				}),
 			}),
 			n(TREASURES, {
 				i(223133),	-- Formula: Illusory Adornment: Crystal (RECIPE!)
