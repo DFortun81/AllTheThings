@@ -488,17 +488,17 @@ CREATED_10_2_7 = "created 10.2.7.54577";				-- Dragonflight 10.2.7 Launch on May
 ADDED_10_2_7 = "added 10.2.7.54577";					-- Dragonflight 10.2.7 Launch on May 7th, 2024
 REMOVED_10_2_7 = "removed 10.2.7.54577";				-- Dragonflight 10.2.7 Launch on May 7th, 2024
 ADDED_MOP_REMIX = "added 10.2.7.54736";				    -- Dragonflight 10.2.7 MoP Remix Launch on May 16th, 2024
+REMOVED_MOP_REMIX_END = "removed 11.0.2.99999";			-- Remix ends on 19th August, shortly after The War Within 11.0.2 Launch on August 12th, 2024
 
 -- PLACEHOLDERS STATION!
-REMOVED_MOP_REMIX_END = "removed 11.0.2";				-- PlaceHolder Until we know
 REMOVED_SEASON_AWAKENED = "removed 11.0.2";				-- Placeholder
-REMOVED_SEASON_PVP = "removed 11.0.2";					-- Placeholder
+REMOVED_SEASON_PVP = "removed 11.0.0";					-- Placeholder
 REMOVED_SEASON_MYTHIC = "removed 11.0.2";				-- Placeholder
 -- Extra Placeholders Until Blizzard knows.............
 CREATED_11_0_1 = "created 11.0.1";						-- The War Within 11.0.1
 ADDED_11_0_1 = "added 11.0.1";							-- The War Within 11.0.1
 REMOVED_11_0_1 = "removed 11.0.1";						-- The War Within 11.0.1
-CREATED_11_0_2 = "created 11.0.2";						-- The War Within 11.0.2 Launch on
+CREATED_11_0_2 = "created 11.0.2";						-- The War Within 11.0.2 Launch on August 12th, 2024
 ADDED_11_0_2 = "added 11.0.2";							-- The War Within 11.0.2 Launch on
 REMOVED_11_0_2 = "removed 11.0.2";						-- The War Within 11.0.2 Launch on
 
