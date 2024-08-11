@@ -4888,6 +4888,12 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							applyclassicphase(PHASE_THREE, i(19447)),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
 							i(19217),	-- Pattern: Argent Shoulders
 							applyclassicphase(PHASE_THREE, i(19329)),	-- Pattern: Golden Mantle of the Dawn (RECIPE!)
+							-- #if SEASON_OF_DISCOVERY
+							-- CRIEVE NOTE: With SOD phase 4, they put this recipe directly on the vendor. Interesting.
+							applyclassicphase(SOD_PHASE_FOUR, i(12698, {	-- Plans: Dawnbringer Shoulders (RECIPE!)
+								["timeline"] = { "added 1.15.3" },
+							})),
+							-- #endif
 							applyclassicphase(PHASE_THREE, i(19205)),	-- Plans: Gloves of the Dawn (RECIPE!)
 							i(13810),	-- Blessed Sunfruit
 							i(13813),	-- Blessed Sunfruit Juice
