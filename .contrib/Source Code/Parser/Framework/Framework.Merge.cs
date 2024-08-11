@@ -119,6 +119,25 @@ namespace ATT
                                     }
                                 }
                             }
+                            else if (pair.Value is Dictionary<decimal, object> modItemDB)
+                            {
+                                foreach (var itemValuePair in modItemDB)
+                                {
+                                    if (itemValuePair.Value is IDictionary<string, object> item)
+                                    {
+                                        item["itemID"] = itemValuePair.Key;
+                                        Objects.MergeFromDB("itemID", item);
+                                        ConditionalItemData.Add(item);
+                                    }
+                                    else
+                                    {
+                                        LogError("ItemDB not in the correct format!");
+                                        Log(CurrentFileName);
+                                        Log(ToJSON(itemValuePair.Value));
+                                        Console.ReadLine();
+                                    }
+                                }
+                            }
                             else if (pair.Value is List<object> items)
                             {
                                 foreach (var o in items)
