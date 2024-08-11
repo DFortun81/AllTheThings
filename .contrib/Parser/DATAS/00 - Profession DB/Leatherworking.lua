@@ -53,6 +53,7 @@ i(217271, 439118);	-- Turtle Scale Gloves
 i(0, 446186);		-- Cacophonous Chain Shoulderguards
 i(0, 446192);		-- Membrane of Dark Neurosis
 i(0, 446183);		-- Paranoia Mantle
+i(0, 451706);		-- Screaming Chain Pauldrons
 i(0, 446189);		-- Shoulderpads of Obsession
 i(0, 446185);		-- Shrieking Spaulders
 i(0, 446190);		-- Wailing Chain Mantle

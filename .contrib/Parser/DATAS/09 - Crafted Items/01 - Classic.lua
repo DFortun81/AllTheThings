@@ -2931,6 +2931,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_FOUR, i(20476)),	-- Sandstalker Bracers
 				applyclassicphase(PHASE_FOUR, i(20478)),	-- Sandstalker Breastplate
 				applyclassicphase(PHASE_FOUR, i(20477)),	-- Sandstalker Gauntlets
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, i(220741, {	-- Screaming Chain Pauldrons
+					["timeline"] = { "added 1.15.2" },
+				})),
+				-- #endif
 				i(132548, {["timeline"] = {ADDED_7_0_3}}),	-- Shamanic Treads
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, i(220742, {	-- Shrieking Spaulders
@@ -3379,10 +3384,18 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(4314),	-- Double-stitched Woolen Shoulders
 			i(14112),	-- Felcloth Shoulders
 			i(16980),	-- Flarecore Mantle
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_THREE, i(220750, {	-- Fractured Mind Pauldrons
+				["timeline"] = { "added 1.15.2" },
+			})),
+			-- #endif
 			i(7057),	-- Green Silken Shoulders
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_ONE, i(215365, {	-- Invoker's Mantle
 				["timeline"] = { "added 1.15.0" },
+			})),
+			applyclassicphase(SOD_PHASE_THREE, i(220749, {	-- Mantle of Insanity
+				["timeline"] = { "added 1.15.2" },
 			})),
 			-- #endif
 			applyclassicphase(PHASE_THREE, i(19050)),	-- Mantle of the Timbermaw
@@ -3391,6 +3404,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(4315),	-- Reinforced Woolen Shoulders
 			i(13867),	-- Runecloth Shoulders
 			i(10028),	-- Shadoweave Shoulders
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_THREE, i(220751, {	-- Shoulderpads of the Deranged
+				["timeline"] = { "added 1.15.2" },
+			})),
+			-- #endif
 			applyclassicphase(PHASE_FIVE_CATCH_UP, i(22758)),	-- Sylvan Shoulders
 		}),
 		category(236, {	-- Robes & Tunics

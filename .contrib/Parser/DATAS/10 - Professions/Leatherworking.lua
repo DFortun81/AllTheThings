@@ -1880,6 +1880,11 @@ profession(LEATHERWORKING, {
 					["recipeID"] = 19089,
 				},
 				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, recipe(446186, {	-- Cacophonous Chain Shoulderguards
+					["timeline"] = { "added 1.15.2" },
+				})),
+				-- #endif
 				{
 					["name"] = "Chain Pauldrons",
 					["timeline"] = { ADDED_7_0_3 },
@@ -1932,18 +1937,40 @@ profession(LEATHERWORKING, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_FOUR, {
 					["name"] = "Masterwork Volcanic Shoulders",
+					["timeline"] = { "added 1.15.3" },
 					["recipeID"] = 461663,
 				}),
 				-- #endif
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, recipe(446192, {	-- Membrane of Dark Neurosis
+					["timeline"] = { "added 1.15.2" },
+				})),
 				-- #endif
 				{
 					["name"] = "Nightscape Shoulders",
 					["recipeID"] = 10516,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, recipe(446183, {	-- Paranoia Mantle
+					["timeline"] = { "added 1.15.2" },
+				})),
+				-- #endif
 				{
 					["name"] = "Runic Leather Shoulders",
 					["recipeID"] = 19103,
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, recipe(451706, {	-- Screaming Chain Pauldrons
+					["timeline"] = { "added 1.15.2" },
+				})),
+				applyclassicphase(SOD_PHASE_THREE, recipe(446189, {	-- Shoulderpads of Obsession
+					["timeline"] = { "added 1.15.2" },
+				})),
+				applyclassicphase(SOD_PHASE_THREE, recipe(446185, {	-- Shrieking Spaulders
+					["timeline"] = { "added 1.15.2" },
+				})),
+				-- #endif
 				{
 					["name"] = "Spritescale Epaulets",
 					["timeline"] = { ADDED_7_0_3 },
@@ -1968,6 +1995,11 @@ profession(LEATHERWORKING, {
 					["timeline"] = { "removed 1.15.3" },
 					-- #endif
 				},
+				-- #endif
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_THREE, recipe(446190, {	-- Wailing Chain Mantle
+					["timeline"] = { "added 1.15.2" },
+				})),
 				-- #endif
 				{
 					["name"] = "Wild Leather Shoulders",

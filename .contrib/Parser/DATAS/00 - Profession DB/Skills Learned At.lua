@@ -83,6 +83,9 @@ for spellID,learnedAt in pairs({
 	[11476] = 250,	-- Elixir of Shadow Power
 	[3175] = 250,	-- Limited Invulnerability Potion
 	[17551] = 250,	-- Stonescale Oil
+	[446226] = 250,	-- Flask of Everlasting Nightmares
+	[446851] = 250,	-- Flask of Nightmarish Mojo
+	[448085] = 250,	-- Flask of Restless Dreams
 	[17552] = 255,	-- Mighty Rage Potion
 	[17553] = 260,	-- Superior Mana Potion
 	[17554] = 265,	-- Elixir of Superior Defense
@@ -280,6 +283,9 @@ for spellID,learnedAt in pairs({
 	[16640] = 250,	-- Dense Weightstone
 	[16642] = 250,	-- Thorium Armor
 	[16643] = 250,	-- Thorium Belt
+	[446191] = 250,	-- Baleful Pauldrons
+	[446188] = 250,	-- Fearmonger's Shoulderguards
+	[446179] = 250,	-- Shoulderplates of Dread
 	[10013] = 255,	-- Ebon Shiv
 	[16644] = 255,	-- Thorium Bracers
 	[16645] = 260,	-- Radiant Belt
@@ -695,6 +701,9 @@ for spellID,learnedAt in pairs({
 	[19567] = 250,	-- Salt Shaker
 	[23507] = 250,	-- Snake Burst Firework
 	[26011] = 250,	-- Tranquil Mechanical Yeti
+	[446236] = 250,	-- Void-Powered Invoker's Vambraces
+	[446238] = 250,	-- Void-Powered Protector's Vambraces
+	[446237] = 250,	-- Void-Powered Slayer's Vambraces
 	[23077] = 260,	-- Gyrofreeze Ice Reflector
 	[19790] = 260,	-- Thorium Grenade
 	[19792] = 260,	-- Thorium Rifle
@@ -893,6 +902,13 @@ for spellID,learnedAt in pairs({
 	[10570] = 250,	-- Tough Scorpid Helm
 	[10574] = 250,	-- Wild Leather Cloak
 	[10572] = 250,	-- Wild Leather Leggings
+	[446186] = 250,	-- Cacophonous Chain Shoulderguards
+	[446192] = 250,	-- Membrane of Dark Neurosis
+	[446183] = 250,	-- Paranoia Mantle
+	[451706] = 250,	-- Screaming Chain Pauldrons
+	[446189] = 250,	-- Shoulderpads of Obsession
+	[446185] = 250,	-- Shrieking Spaulders
+	[446190] = 250,	-- Wailing Chain Mantle
 	[10650] = 255,	-- Dragonscale Breastplate
 	[19048] = 255,	-- Heavy Scorpid Bracers
 	[19050] = 260,	-- Green Dragonscale Breastplate

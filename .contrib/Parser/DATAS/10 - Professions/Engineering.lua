@@ -2154,16 +2154,19 @@ profession(ENGINEERING, {
 			["name"] = "Bracers",
 			["categoryID"] = 222,
 			["groups"] = {
-				applyclassicphase(SOD_PHASE_TWO, {
+				applyclassicphase(SOD_PHASE_THREE, {
 					["name"] = "Void-Powered Invoker's Vambraces",
+					["timeline"] = { "added 1.15.2" },
 					["recipeID"] = 446236,
 				}),
-				applyclassicphase(SOD_PHASE_TWO, {
+				applyclassicphase(SOD_PHASE_THREE, {
 					["name"] = "Void-Powered Protector's Vambraces",
+					["timeline"] = { "added 1.15.2" },
 					["recipeID"] = 446238,
 				}),
-				applyclassicphase(SOD_PHASE_TWO, {
+				applyclassicphase(SOD_PHASE_THREE, {
 					["name"] = "Void-Powered Slayer's Vambraces",
+					["timeline"] = { "added 1.15.2" },
 					["recipeID"] = 446237,
 				}),
 			},

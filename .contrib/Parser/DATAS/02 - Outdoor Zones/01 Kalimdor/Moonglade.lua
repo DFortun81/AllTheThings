@@ -719,6 +719,36 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["lvl"] = 54,
 				}),
 			}),
+			-- #if SEASON_OF_DISCOVERY
+			n(PROFESSIONS, {
+				applyclassicphase(SOD_PHASE_THREE, n(222188, {	-- Shadowy Figure
+					["sourceQuest"] = 81986,	-- Waking the Nightmare
+					["description"] = "She will only offer to teach you the recipes after you have collected an Inert Mantle of Nightmares once already by completing the Waking the Nightmare quest from ST.",
+					["timeline"] = { "added 1.15.2" },
+					["lvl"] = 50,
+					["groups"] = {
+						recipe(446191),	-- Baleful Pauldrons
+						recipe(446186),	-- Cacophonous Chain Shoulderguards
+						recipe(446188),	-- Fearmonger's Shoulderguards
+						recipe(446226),	-- Flask of Everlasting Nightmares
+						recipe(448085),	-- Flask of Restless Dreams
+						recipe(446193),	-- Fractured Mind Pauldrons
+						recipe(446194),	-- Mantle of Insanity
+						recipe(446192),	-- Membrane of Dark Neurosis
+						recipe(446183),	-- Paranoia Mantle
+						recipe(451706),	-- Screaming Chain Pauldrons
+						recipe(446189),	-- Shoulderpads of Obsession
+						recipe(446195),	-- Shoulderpads of the Deranged
+						recipe(446179),	-- Shoulderplates of Dread
+						recipe(446185),	-- Shrieking Spaulders
+						recipe(446236),	-- Void-Powered Invoker's Vambraces
+						recipe(446238),	-- Void-Powered Protector's Vambraces
+						recipe(446237),	-- Void-Powered Slayer's Vambraces
+						recipe(446190),	-- Wailing Chain Mantle
+					},
+				})),
+			}),
+			-- #endif
 			n(VENDORS, {
 				n(7940, {	-- Darnall <Tailoring Supplies>
 					["coord"] = { 51.6, 33.2, MOONGLADE },

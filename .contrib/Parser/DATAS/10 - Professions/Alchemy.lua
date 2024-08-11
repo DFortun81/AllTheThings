@@ -1677,10 +1677,12 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, {
 					["name"] = "Flask of Everlasting Nightmares",
+					["timeline"] = { "added 1.15.2" },
 					["recipeID"] = 446226,
 				}),
 				applyclassicphase(SOD_PHASE_THREE, {
 					["name"] = "Flask of Nightmarish Mojo",
+					["timeline"] = { "added 1.15.2" },
 					["recipeID"] = 446851,
 				}),
 				-- #endif
@@ -1693,6 +1695,7 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_THREE, {
 					["name"] = "Flask of Restless Dreams",
+					["timeline"] = { "added 1.15.2" },
 					["recipeID"] = 448085,
 				}),
 				-- #endif
