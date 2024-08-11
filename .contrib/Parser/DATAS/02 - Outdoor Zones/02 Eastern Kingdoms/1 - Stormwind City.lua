@@ -2939,10 +2939,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(136586),	-- Stormwind Vanguard Splitter
 						i(138766),	-- Stormwind Vanguard Stave
 						i(138764),	-- Stormwind Vanguard Waraxe
-						i(139389, {	-- Charred Locket
-							["description"] = "In order to get this you must do the scenario 'Battle for Broken Shore' and on Stage 6 search for a pile of ash titled 'Ashes of a Fallen Crusader' to retrieve the item.  You will then go to 85, 67 in Elywnn Forest located at the Eastvale Logging Camp.  From there you will go to the bedroom on the second floor to talk to Alaina.  After talking to her leave (log or swap zones) and then come back to her to retrieve the item.",
+						o(240215, {	-- Ashes of a Fallen Crusader
+							["coord"] = { 42, 42, BROKEN_ISLES},
 							["groups"] = {
-								i(139391),	-- Alaina's Bonnet
+								i(139389, {	-- Charred Locket
+									["description"] = "In order to get this you must do the scenario 'Battle for Broken Shore' and on Stage 6 search for a pile of ash titled 'Ashes of a Fallen Crusader' to retrieve the item.  You will then go to 85, 69 in Elywnn Forest located at the Eastvale Logging Camp.  From there you will go to the bedroom on the second floor to talk to Alaina.  After talking to her leave (log or swap zones) and then come back to her to retrieve the item.",
+									["groups"] = {
+										o(252069, {	-- Alaina's Belongings
+											["coord"] = { 85.6, 69.7, ELWYNN_FOREST },
+											["groups"] = {
+												i(139391),	-- Alaina's Bonnet (COSMETIC!)
+											},
+										}),
+									},
+								}),
 							},
 						}),
 					},
