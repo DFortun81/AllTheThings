@@ -177,7 +177,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["cost"] = {{"i", 221504, 1}},	-- 1x Elemental Pearl
 				["g"] = {
 					o(444215, {	-- Mysterious Orb
-						["questID"] = 83224,
+						["questID"] = 83244,
 						["g"] = {
 							i(224373),	-- Waterlord's Iridescent Gem
 						},
