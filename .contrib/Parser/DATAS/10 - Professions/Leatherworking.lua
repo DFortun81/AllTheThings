@@ -3086,6 +3086,15 @@ profession(LEATHERWORKING, {
 					["name"] = "Hillman's Cloak",
 					["recipeID"] = 3760,
 				},
+				-- #if AFTER TBC
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Mastercrafted Shifting Cloak",
+					["timeline"] = { "added 1.15.3" },
+					["recipeID"] = 461690,
+				}),
+				-- #endif
+				-- #endif
 				{
 					["name"] = "Nightscape Cloak",
 					["timeline"] = { CREATED_1_12_1 },
@@ -3098,7 +3107,13 @@ profession(LEATHERWORKING, {
 				-- #if AFTER TBC
 				applyclassicphase(PHASE_ONE_DIREMAUL, {
 					["name"] = "Shifting Cloak",
-					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3, ADDED_10_1_5,
+						-- #endif
+					},
 					["recipeID"] = 22928,
 				}),
 				-- #endif

@@ -218,9 +218,23 @@ profession(LEATHERWORKING, {
 				["name"] = "Cloaks",
 				["categoryID"] = 259,
 				["groups"] = {
+					-- #if SEASON_OF_DISCOVERY
+					applyclassicphase(SOD_PHASE_FOUR, {
+						["name"] = "Mastercrafted Shifting Cloak",
+						["timeline"] = { "added 1.15.3" },
+						["recipeID"] = 461690,
+						["requireSkill"] = 10658,
+					}),
+					-- #endif
 					applyclassicphase(PHASE_ONE_DIREMAUL, {
 						["name"] = "Shifting Cloak",
-						["timeline"] = { REMOVED_4_0_3, ADDED_10_1_5 },
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"removed 1.15.3",
+							-- #else
+							REMOVED_4_0_3, ADDED_10_1_5,
+							-- #endif
+						},
 						["recipeID"] = 22928,
 						["requireSkill"] = 10658,
 					}),

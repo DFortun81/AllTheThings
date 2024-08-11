@@ -986,6 +986,7 @@ for spellID,learnedAt in pairs({
 	[24851] = 300,	-- Sandstalker Breastplate
 	[24850] = 300,	-- Sandstalker Gauntlets
 	[22928] = 300,	-- Shifting Cloak
+	[461690] = 300,	-- Mastercrafted Shifting Cloak
 	[24846] = 300,	-- Spitfire Bracers
 	[24848] = 300,	-- Spitfire Breastplate
 	[24847] = 300,	-- Spitfire Gauntlets

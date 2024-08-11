@@ -1797,7 +1797,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18416),	-- Pattern: Inferno Gloves (RECIPE!)
 							i(18515),	-- Pattern: Mongoose Boots (RECIPE!)
 							i(18417),	-- Pattern: Mooncloth Gloves (RECIPE!)
-							i(18519),	-- Pattern: Shifting Cloak (RECIPE!)
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(228276, {	-- Pattern: Mastercrafted Shifting Cloak (RECIPE!)
+								["timeline"] = { "added 1.15.3" },
+							})),
+							-- #endif
+							i(18519, {	-- Pattern: Shifting Cloak (RECIPE!)
+								-- #if SEASON_OF_DISCOVERY
+								["timeline"] = { "removed 1.15.3" },
+								-- #endif
+							}),
 							i(18516, {	-- Pattern: Swift Flight Bracers (RECIPE!)
 								-- #if SEASON_OF_DISCOVERY
 								["timeline"] = { "removed 1.15.3" },

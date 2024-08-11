@@ -2450,6 +2450,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				}),
 				i(15061),	-- Living Shoulders
 				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, i(227854, {	-- Mastercrafted Shifting Cloak
+					["timeline"] = { "added 1.15.3" },
+				})),
 				applyclassicphase(SOD_PHASE_FOUR, i(227868, {	-- Masterwork Volcanic Breastplate
 					["timeline"] = { "added 1.15.3" },
 				})),
@@ -2464,8 +2467,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(16983),	-- Molten Helm
 				applyclassicphase(PHASE_ONE_DIREMAUL, i(18511, {	-- Shifting Cloak
 					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
 						REMOVED_4_0_3,
 						ADDED_10_1_5,
+						-- #endif
 					}
 				})),
 				i(15056, {	-- Stormshroud Armor
@@ -2554,7 +2561,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { "added 1.15.3" },
 				})),
 				-- #endif
-				applyclassicphase(PHASE_ONE_DIREMAUL, i(18509, {
+				applyclassicphase(PHASE_ONE_DIREMAUL, i(18509, {	-- Chromatic Cloak
 					["timeline"] = {
 						-- #if SEASON_OF_DISCOVERY
 						"removed 1.15.3"
@@ -2563,9 +2570,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						ADDED_10_1_5,
 						-- #endif
 					}
-				})),	-- Chromatic Cloak
-				applyclassicphase(PHASE_ONE_DIREMAUL, i(18510, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}})),	-- Hide of the Wild
-				applyclassicphase(PHASE_ONE_DIREMAUL, i(18511, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}})),	-- Shifting Cloak
+				})),
+				applyclassicphase(PHASE_ONE_DIREMAUL, i(18510, {	-- Hide of the Wild
+					["timeline"] = {
+						REMOVED_4_0_3, ADDED_10_1_5
+					},
+				})),
+				applyclassicphase(PHASE_ONE_DIREMAUL, i(18511, {	-- Shifting Cloak
+					["timeline"] = {
+						-- #if SEASON_OF_DISCOVERY
+						"removed 1.15.3",
+						-- #else
+						REMOVED_4_0_3,
+						ADDED_10_1_5,
+						-- #endif
+					}
+				})),
 				-- #endif
 			}),
 			filter(LEATHER, {

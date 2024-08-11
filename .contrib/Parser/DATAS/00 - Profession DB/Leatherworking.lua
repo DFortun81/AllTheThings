@@ -294,6 +294,7 @@ i(0, 10632, nil, ELEMENTAL);	-- Helm of Fire
 i(15771, 19095, nil, ELEMENTAL);	-- Living Breastplate [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(15752, 19078, nil, ELEMENTAL);	-- Living Leggings [REMOVED: 4.0.3, ADDED: 10.1.7]
 i(15734, 19061, nil, ELEMENTAL);	-- Living Shoulders
+i(228276, 461690, nil, ELEMENTAL);	-- Mastercrafted Shifting Cloak
 i(227906, 461661, nil, ELEMENTAL);	-- Masterwork Volcanic Breastplate
 i(227908, 461665, nil, ELEMENTAL);	-- Masterwork Volcanic Leggings
 i(227907, 461663, nil, ELEMENTAL);	-- Masterwork Volcanic Shoulders
