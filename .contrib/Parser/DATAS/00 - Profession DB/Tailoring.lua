@@ -74,6 +74,7 @@ i("Shadoweave Mask", 10463, 12086);
 i("Black Swashbuckler's Shirt", 10728, 3873);
 i("Frostweave Tunic", 14466, 18403);
 i("Frostweave Robe", 14467, 18404);
+i("Leather-Reinforced Runecloth Bag", 228121, 461727);
 i("Runecloth Bag", 14468, 18405);
 i("Runecloth Robe", 14469, 18406);
 i("Runecloth Tunic", 14470, 18407);

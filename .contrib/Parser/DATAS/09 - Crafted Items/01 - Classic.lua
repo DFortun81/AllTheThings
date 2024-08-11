@@ -3295,6 +3295,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(21341),	-- Felcloth Bag
 			i(5764),	-- Green Silk Pack
 			i(4241),	-- Green Woolen Bag
+			-- #if SEASON_OF_DISCOVERY
+			applyclassicphase(SOD_PHASE_FOUR, i(227844, {	-- Leather-Reinforced Runecloth Bag
+				["timeline"] = { "added 1.15.3" },
+			})),
+			-- #endif
 			i(4238),	-- Linen Bag
 			i(10050),	-- Mageweave Bag
 			i(14155),	-- Mooncloth Bag

@@ -1035,6 +1035,13 @@ profession(TAILORING, {
 					["name"] = "Green Woolen Bag",
 					["recipeID"] = 3758
 				},
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_FOUR, {
+					["name"] = "Leather-Reinforced Runecloth Bag",
+					["timeline"] = { "added 1.15.3" },
+					["recipeID"] = 461727
+				}),
+				-- #endif
 				{
 					["name"] = "Linen Bag",
 					["recipeID"] = 3755

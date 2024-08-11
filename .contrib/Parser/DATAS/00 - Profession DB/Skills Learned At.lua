@@ -1247,6 +1247,7 @@ for spellID,learnedAt in pairs({
 	[18454] = 300,	-- Gloves of Spell Mastery
 	[461708] = 300,	-- Incandescent Mooncloth Robe
 	[22868] = 300,	-- Inferno Gloves
+	[461727] = 300,	-- Leather-Reinforced Runecloth Bag
 	[23663] = 300,	-- Mantle of the Timbermaw
 	[18445] = 300,	-- Mooncloth Bag
 	[18452] = 300,	-- Mooncloth Circlet
