@@ -560,7 +560,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_FOUR, i(19693, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Darksoul Breastplate
 			applyclassicphase(PHASE_FOUR, i(19694, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Darksoul Leggings
 			applyclassicphase(PHASE_FOUR, i(19695, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Darksoul Shoulders
-			applyclassicphase(TBC_PHASE_ONE, i(12625, {["timeline"] = {ADDED_2_0_5}})),	-- Dawnbringer Shoulders
+			i(12625, {	-- Dawnbringer Shoulders
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"added 1.15.3"
+					-- #else
+					CREATED_1_12_1, ADDED_2_0_1,
+					-- #endif
+				},
+			}),
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_THREE, i(220740, {	-- Fearmonger's Shoulderguards
 				["timeline"] = { "added 1.15.2" },

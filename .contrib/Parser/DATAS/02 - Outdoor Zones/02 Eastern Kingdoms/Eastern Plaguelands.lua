@@ -4765,6 +4765,84 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["timeline"] = { REMOVED_4_0_3 },
 								["cost"] = { { "g", 1500000 } },	-- 150g
 							}),
+							
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(227813, {	-- Drinkable Stratholme Holy Water
+								["timeline"] = { "added 1.15.3" },
+								["cost"] = {{ "i", 13180, 1 }},	-- Stratholme Holy Water
+							})),
+							-- EPIC CRAFTED ITEMS UPGRADES
+							applyclassicphase(SOD_PHASE_FOUR, i(227816, {	-- Argent Elite Boots
+								["timeline"] = { "added 1.15.3" },
+								["requireSkill"] = TAILORING,
+								["learnedAt"] = 290,
+								["cost"] = {
+									{ "i", 19056, 1 },	-- Argent Boots
+									{ "i", 12843, 2 },	-- Corruptor's Scourgestone
+									{ "i", 12753, 2 },	-- Skin of Shadow
+								},
+							})),
+							applyclassicphase(SOD_PHASE_FOUR, i(227888, {	-- Argent Elite Shoulders
+								["timeline"] = { "added 1.15.3" },
+								["requireSkill"] = TAILORING,
+								["learnedAt"] = 290,
+								["cost"] = {
+									{ "i", 19059, 1 },	-- Argent Shoulders
+									{ "i", 12843, 4 },	-- Corruptor's Scourgestone
+									{ "i", 12753, 3 },	-- Skin of Shadow
+								},
+							})),
+							applyclassicphase(SOD_PHASE_FOUR, i(227815, {	-- Fine Dawn Treaders
+								["timeline"] = { "added 1.15.3" },
+								["requireSkill"] = LEATHERWORKING,
+								["learnedAt"] = 290,
+								["cost"] = {
+									{ "i", 19052, 1 },	-- Dawn Treaders
+									{ "i", 12843, 3 },	-- Corruptor's Scourgestone
+									{ "i", 12753, 2 },	-- Skin of Shadow
+								},
+							})),
+							applyclassicphase(SOD_PHASE_FOUR, i(227818, {	-- Glowing Mantle of the Dawn
+								["timeline"] = { "added 1.15.3" },
+								["requireSkill"] = LEATHERWORKING,
+								["learnedAt"] = 290,
+								["cost"] = {
+									{ "i", 19058, 1 },	-- Golden Mantle of the Dawn
+									{ "i", 12843, 4 },	-- Corruptor's Scourgestone
+									{ "i", 12753, 3 },	-- Skin of Shadow
+								},
+							})),
+							applyclassicphase(SOD_PHASE_FOUR, i(227814, {	-- Radiant Girdle of the Dawn
+								["timeline"] = { "added 1.15.3" },
+								["requireSkill"] = BLACKSMITHING,
+								["learnedAt"] = 290,
+								["cost"] = {
+									{ "i", 19051, 1 },	-- Girdle of the Dawn
+									{ "i", 12843, 2 },	-- Corruptor's Scourgestone
+									{ "i", 12735, 2 },	-- Frayed Abomination Stitching
+								},
+							})),
+							applyclassicphase(SOD_PHASE_FOUR, i(227817, {	-- Radiant Gloves of the Dawn
+								["timeline"] = { "added 1.15.3" },
+								["requireSkill"] = BLACKSMITHING,
+								["learnedAt"] = 290,
+								["cost"] = {
+									{ "i", 19057, 1 },	-- Gloves of the Dawn
+									{ "i", 12843, 3 },	-- Corruptor's Scourgestone
+									{ "i", 12735, 2 },	-- Frayed Abomination Stitching
+								},
+							})),
+							applyclassicphase(SOD_PHASE_FOUR, i(227859, {	-- Shimmering Dawnbringer Shoulders
+								["timeline"] = { "added 1.15.3" },
+								["requireSkill"] = BLACKSMITHING,
+								["learnedAt"] = 290,
+								["cost"] = {
+									{ "i", 12625, 1 },	-- Dawnbringer Shoulders
+									{ "i", 12843, 4 },	-- Corruptor's Scourgestone
+									{ "i", 12735, 3 },	-- Frayed Abomination Stitching
+								},
+							})),
+							-- #endif
 						},
 						{	-- Revered
 							i(18171, {	-- Arcane Mantle of the Dawn
@@ -4823,6 +4901,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									5524,	-- Chromatic Mantle of the Dawn
 								},
 							}),
+							-- #if SEASON_OF_DISCOVERY
+							applyclassicphase(SOD_PHASE_FOUR, i(227819, {	-- Blessed Flame Mantle of the Dawn
+								["description"] = "You must have first completed 'Chromatic Mantle of the Dawn' in order to purchase this.",
+								["sourceQuests"] = {
+									5517,	-- Chromatic Mantle of the Dawn
+									5521,	-- Chromatic Mantle of the Dawn
+									5524,	-- Chromatic Mantle of the Dawn
+								},
+								["timeline"] = { "added 1.15.3" },
+							})),
+							-- #endif
 						},
 					}),
 				}),

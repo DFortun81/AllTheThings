@@ -140,11 +140,18 @@ profession(BLACKSMITHING, {
 				["name"] = "Shoulders",
 				["categoryID"] = 219,
 				["groups"] = {
-					applyclassicphase(TBC_PHASE_ONE, {
+					{
 						["name"] = "Dawnbringer Shoulders",
 						["recipeID"] = 16660,
 						["requireSkill"] = 9788,
-					}),
+						["timeline"] = {
+							-- #if SEASON_OF_DISCOVERY
+							"added 1.15.3"
+							-- #else
+							CREATED_1_12_1, ADDED_2_0_1,
+							-- #endif
+						},
+					},
 					{
 						["name"] = "Fiery Chain Shoulders",
 						["recipeID"] = 20873,

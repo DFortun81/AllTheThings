@@ -3545,7 +3545,13 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(7992),	-- Plans: Blue Glittering Axe (RECIPE!)
 			i(3609),	-- Plans: Copper Chain Vest (RECIPE!)
 			i(12698, {	-- Plans: Dawnbringer Shoulders (RECIPE!)
-				["timeline"]={ CREATED_1_12_1, ADDED_2_0_1 },
+				["timeline"] = {
+					-- #if SEASON_OF_DISCOVERY
+					"added 1.15.3"
+					-- #else
+					CREATED_1_12_1, ADDED_2_0_1,
+					-- #endif
+				},
 			}),
 			i(7993),	-- Plans: Dazzling Mithril Rapier (RECIPE!)
 			i(2883),	-- Plans: Deadly Bronze Poniard (RECIPE!)
