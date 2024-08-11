@@ -6407,6 +6407,7 @@ _.ObjectNames = {
 	[433774] = "Buried Treasure",
 	[433776] = "Buried Treasure",
 	[434527] = "Thimble's Cache",
+	[435008] = "Farmhand Stash",
 	[437058] = "Forgotten Memorial",
 	[437191] = "Forgotten Memorial",
 	[437211] = "Illuminated Footlocker",

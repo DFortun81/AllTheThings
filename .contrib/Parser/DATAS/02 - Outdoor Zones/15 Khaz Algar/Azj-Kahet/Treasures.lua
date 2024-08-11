@@ -95,7 +95,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			o(446404, {	-- Memory Cache
 				["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 5x Unseeming Shift debuff to see npc near cache, kill it to obtain key for cache",
 				["coord"] = { 62.7, 88.7, AZJ_KAHET_LOWER },
-				["questID"] = 82520,	-- previous 82723?
+				["questID"] = 82724,	-- previous 82723 / 82520?
 				["g"] = {
 					i(223870),	-- Cache Key
 					--
@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			}),
 			o(446423, {	-- Nest Egg
 				["coord"] = { 50.6, 48.1, AZJ_KAHET },
-				["questID"] = 82726,
+				["questID"] = 82529,
 				["g"] = {
 					i(221760),	-- Bonedrinker (PET!)
 				},
@@ -164,7 +164,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			}),
 			o(446421, {	-- Trapped Trove
 				["coord"] = { 67.4, 74.4, NERUBAR },
-				["questID"] = 82727,
+				["questID"] = 82528,
 				["g"] = {
 					i(222966),	-- Spinner (PET!)
 				},
@@ -251,7 +251,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			}),
 			o(446420, {	-- "Weaving Supplies"
 				["provider"] = { "o", 452708 },	-- "Weaving Supplies" // probably need to be switched
-				--["questID"] = xx,
+				["questID"] = 82527,
 				["coord"] = { 77.3, 39.0, AZJ_KAHET },
 				["g"] = {
 					-- didn't find a way to open
