@@ -164,9 +164,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			}),
 			o(446421, {	-- Trapped Trove
 				["coord"] = { 67.4, 74.4, NERUBAR },
-				["questID"] = 82528,
+				-- INFO: This is the HQT that triggers ingame when you loot it (Confirmed by Braghe, 2024-08-10)
+				["questID"] = 82727,
+				-- INFO: This is the HQT that Blizzard currently has in the DB2 file, but it doesn't match what triggers when you loot it
+				-- ["questID"] = 82528,
 				["g"] = {
 					i(222966),	-- Spinner (PET!)
+					crit(69644, {	-- Trapped Trove (INFO: manually added because linked HQT above is wrong, remove when Blizzard fixes it)
+						["achievementID"] = 40828,	-- Treasures of Azj-Kahet
+						["_noautomation"] = true,
+					}),
 				},
 			}),
 			-- The Weaver Treasures, didn't fire questID - repeatable?
