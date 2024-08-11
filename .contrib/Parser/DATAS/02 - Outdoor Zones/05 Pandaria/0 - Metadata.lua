@@ -77,6 +77,155 @@ root(ROOTS.Zones, {
 					["description"] = "This will be mailed to you upon completion of What is Worth Fighting For achievement.",
 				}),
 			}),
+			n(TREASURES, {
+				o(213460, { -- A Most Famous Bill of Sale
+					["coord"] = { 55.0, 47.3, VALLEY_OF_THE_FOUR_WINDS },
+				}),
+				o(213414, {	-- Always Remember
+					["coords"] = {
+						{ 53.0, 68.3, VALE_OF_ETERNAL_BLOSSOMS },
+						-- #if AFTER BFA
+						{ 53.0, 68.3, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- BFA alternate zone
+						-- #endif
+					},
+				}),
+				o(213418, {	-- Dominance
+					["coord"] = { 65.5, 50.0, TOWNLONG_STEPPES },
+				}),
+				o(215785, {	-- Embracing the Passions
+					["coord"] = { 83.22, 21.16, VALLEY_OF_THE_FOUR_WINDS },
+				}),
+				o(211993, {	-- Hozen Maturity
+					["coord"] = { 52.4, 87.6, KRASARANG_WILDS },
+				}),
+				o(211990, {	-- Hozen Speech
+					["coord"] = { 26.5, 28.3, THE_JADE_FOREST },
+				}),
+				o(215782, {	-- Origins
+					["coord"] = { 30.6, 38.5, KRASARANG_WILDS },
+				}),
+				o(213413, {	-- Pandaren Fighting Tactics
+					["coord"] = { 18.8, 31.8, VALLEY_OF_THE_FOUR_WINDS },
+				}),
+				o(213407, {	-- Quan Tou Kuo the Two Fisted
+					["coord"] = { 81.4, 11.4, KRASARANG_WILDS },
+				}),
+				o(213438, {	-- Ren Yun the Blind
+					["coord"] = { 44.7, 52.5, KUN_LAI_SUMMIT },
+				}),
+				o(215783, {	-- Role Call
+					["coord"] = { 74.5, 83.5, KUN_LAI_SUMMIT },
+				}),
+				o(213333, {	-- Spirit Binders
+					["coord"] = { 42.2, 17.4, THE_JADE_FOREST },
+				}),
+				o(213459, {	-- The Birthplace of Liu Lang
+					["coord"] = { 20.3, 55.9, VALLEY_OF_THE_FOUR_WINDS },
+				}),
+				o(213328, {	-- The Defiant
+					["description"] = "At the north end of the circular room at the back of the cave.",
+					["coords"] = {
+						{ 73.2, 94.6, KUN_LAI_SUMMIT },	-- entrance
+						{ 54.9, 16.9, 434 },	-- actual object
+					},
+				}),
+				o(213329, {	-- The Deserters
+					["coord"] = { 67.4, 60.8, DREAD_WASTES },
+				}),
+				o(215799, {	-- The Emperor's Burden - Part 1
+					["coord"] = { 47.0, 45.1, THE_JADE_FOREST },
+				}),
+				o(215797, {	-- The Emperor's Burden - Part 2
+					["coord"] = { 43.8, 51.2, KUN_LAI_SUMMIT },
+				}),
+				o(213421, {	-- The Emperor's Burden - Part 3
+					["coord"] = { 55.8, 56.8, THE_JADE_FOREST },
+				}),
+				o(213422, {	-- The Emperor's Burden - Part 4
+					["coord"] = { 40.4, 56.6, KRASARANG_WILDS },
+				}),
+				o(213445, {	-- The Emperor's Burden - Part 5
+					["coord"] = { 37.7, 62.9, TOWNLONG_STEPPES },
+				}),
+				o(213443, {	-- The Emperor's Burden - Part 6
+					["coord"] = { 67.7, 48.3, KUN_LAI_SUMMIT },
+				}),
+				o(213455, {	-- The Emperor's Burden - Part 7
+					["coord"] = { 40.9, 42.3, KUN_LAI_SUMMIT },
+				}),
+				o(213456, {	-- The Emperor's Burden - Part 8
+					-- #if AFTER BFA
+					["description"] = "This can only be found in the non-N'zoth phase. Speak to Zidormi atop the Seat of Knowledge to travel to the past.",
+					-- #endif
+					["coord"] = { 67.7, 44.2, VALE_OF_ETERNAL_BLOSSOMS },
+				}),
+				o(213415, {	-- The First Monks
+					["coord"] = { 35.7, 30.5, THE_JADE_FOREST },
+				}),
+				o(211994, {	-- The Hozen Ravage
+					["coord"] = { 45.7, 61.9, KUN_LAI_SUMMIT },
+				}),
+				o(213330, {	-- The Last Stand
+					["coord"] = { 33.3, 25.0, KRASARANG_WILDS },
+				}),
+				o(213332, {	-- The Lost Dynasty
+					["coords"] = {
+						-- not sure correctness of these based on phasing maybe?
+						{ 50.90, 31.67, KRASARANG_WILDS },
+						{ 52.96, 27.42, KRASARANG_WILDS },
+					},
+				}),
+				o(213327, {	-- The Saurok
+					["coord"] = { 67.7, 29.3, THE_JADE_FOREST },
+				}),
+				o(213334, {	-- The Thunder King
+					["coords"] = {
+						{ 40.1, 75.6, VALE_OF_ETERNAL_BLOSSOMS },
+						-- #if AFTER BFA
+						{ 40.1, 75.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- BFA alternate zone
+						-- #endif
+					},
+				}),
+				o(213461, {	-- The Wandering Widow
+					["coord"] = { 34.6, 64.0, VALLEY_OF_THE_FOUR_WINDS },
+				}),
+				o(213416, {	-- Together, We Are Strong
+					["coords"] = {
+						{ 26.6, 20.8, VALE_OF_ETERNAL_BLOSSOMS },
+						-- #if AFTER BFA
+						{ 26.6, 20.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },	-- BFA alternate zone
+						-- #endif
+					},
+				}),
+				o(213420, {	-- Trapped in a Strange Land
+					["coord"] = { 84.1, 72.8, TOWNLONG_STEPPES },
+				}),
+				o(213331, {	-- Valley of the Emperors (Kun-Lai Summit)
+					["coord"] = { 53.0, 46.58, KUN_LAI_SUMMIT },
+					["description"] = "The scroll is in the first big room."
+				}),
+				o(213511, {	-- Victory in Kun-Lai
+					["coord"] = { 63.1, 40.8, KUN_LAI_SUMMIT },
+				}),
+				o(215765, {	-- Waiting for the Turtle
+					["coord"] = { 72.2, 31.1, KRASARANG_WILDS },
+				}),
+				o(215779, {	-- Watersmithing
+					["coord"] = { 66.0, 87.5, THE_JADE_FOREST },
+				}),
+				o(215780, {	-- Waterspeakers
+					["coord"] = { 61.52, 34.88, VALLEY_OF_THE_FOUR_WINDS },
+				}),
+				o(213512, {	-- Xin Wo Yin the Broken Hearted
+					["coord"] = { 37.5, 30.1, THE_JADE_FOREST },
+				}),
+				o(213417, {	-- Yaungol Tactics
+					["coord"] = { 50.5, 79.3, KUN_LAI_SUMMIT },
+				}),
+				o(215798, {	-- Yaungoil
+					["coord"] = { 71.7, 63.0, KUN_LAI_SUMMIT },
+				}),
+			}),
 			n(ZONE_DROPS, {
 				["maps"] = {
 					DREAD_WASTES,

@@ -53,31 +53,7 @@ root(ROOTS.Zones, {
 					}),
 					ach(8120),	-- Direhorn in a China Shop
 					ach(8117),	-- For the Ward!
-					{	-- Gods and Monsters
-						["achievementID"] = 8051,
-						["groups"] = {
-							{
-								["provider"] = {"o",218435},	-- Agents of Order
-								["criteriaID"] = 22717,
-								["coord"] = { 35.8, 54.7, ISLE_OF_THUNDER },
-							},
-							{
-								["provider"] = {"o",218436},	-- Shadow, Storm, and Stone
-								["criteriaID"] = 22718,
-								["coord"] = { 59.3, 26.3, ISLE_OF_THUNDER },
-							},
-							{
-								["provider"] = {"o",218437},	-- The Curse and the Silence
-								["criteriaID"] = 22719,
-								["coord"] = { 49.9, 20.4, ISLE_OF_THUNDER },
-							},
-							{
-								["provider"] = {"o",218438},	-- Age of a Hundred Kings
-								["criteriaID"] = 22720,
-								["coord"] = { 62.5, 37.8, ISLE_OF_THUNDER },
-							},
-						},
-					},
+					ach(8051),	-- Gods and Monsters (automated)
 					ach(8099, {		-- Isle of Thunder
 						["sym"] = {{ "achievement_criteria" }},
 					}),
@@ -99,51 +75,9 @@ root(ROOTS.Zones, {
 					ach(8100),	-- Pay to Slay
 					ach(8114),	-- Platform Hero
 					ach(8107),	-- Ready for RAAAAIIIIDDD?!?ing
-					ach(8050, {	-- Rumbles of Thunder
-						{
-							["provider"] = {"o",218431},	-- Lei Shen
-							["criteriaID"] = 22713,
-							["coord"] = { 40.2, 40.7, ISLE_OF_THUNDER },
-						},
-						{
-							["provider"] = {"o",218432},	-- The Sacred Mount
-							["criteriaID"] = 22714,
-							["coord"] = { 47.1, 59.9, ISLE_OF_THUNDER },
-						},
-						{
-							["provider"] = {"o",218433},	-- Unity at a Price
-							["criteriaID"] = 22715,
-							["coord"] = { 34.9, 65.6, ISLE_OF_THUNDER },
-						},
-						{
-							["provider"] = {"o",218434},	-- The Pandaren Problem
-							["criteriaID"] = 22716,
-							["coord"] = { 60.7, 68.8, ISLE_OF_THUNDER },
-						},
-					}),
+					ach(8050),	-- Rumbles of Thunder (automated)
 					ach(8115),	-- Speed Metal
-					ach(8049, {	-- The Zandalari Prophecy
-						{
-							["provider"] = {"o",218427},	-- Coming of Age
-							["criteriaID"] = 22708,
-							["coord"] = { 35.4, 70.2, ISLE_OF_THUNDER },
-						},
-						{
-							["provider"] = {"o",218428},	-- For Council and King
-							["criteriaID"] = 22709,
-							["coord"] = { 66.0, 44.7, ISLE_OF_THUNDER },
-						},
-						{
-							["provider"] = {"o",218429},	-- Shadows of the Loa
-							["criteriaID"] = 22710,
-							["coord"] = { 36.3, 70.1, ISLE_OF_THUNDER },
-						},
-						{
-							["provider"] = {"o",218430},	-- The Dark Prophet Zul
-							["criteriaID"] = 22711,
-							["coord"] = { 52.6, 41.4, ISLE_OF_THUNDER },
-						},
-					}),
+					ach(8049),	-- The Zandalari Prophecy (automated)
 					ach(8110, {	-- These Mogu Have Gotta Go-gu
 						ach(8109),	-- The Mogu Below-gu
 						crit(22836, {	-- Haqin of the Hundred Spears slain
@@ -1068,6 +1002,44 @@ root(ROOTS.Zones, {
 						},
 					}),
 				})),
+				n(TREASURES, {
+					o(218438, {	-- Age of a Hundred Kings
+						["coord"] = { 62.5, 37.8, ISLE_OF_THUNDER },
+					}),
+					o(218435, {	-- Agents of Order
+						["coord"] = { 35.8, 54.7, ISLE_OF_THUNDER },
+					}),
+					o(218427, {	-- Coming of Age
+						["coord"] = { 35.4, 70.2, ISLE_OF_THUNDER },
+					}),
+					o(218428, {	-- For Council and King
+						["coord"] = { 66.0, 44.7, ISLE_OF_THUNDER },
+					}),
+					o(218431, {	-- Lei Shen
+						["coord"] = { 40.2, 40.7, ISLE_OF_THUNDER },
+					}),
+					o(218429, {	-- Shadows of the Loa
+						["coord"] = { 36.3, 70.1, ISLE_OF_THUNDER },
+					}),
+					o(218436, {	-- Shadow, Storm, and Stone
+						["coord"] = { 59.3, 26.3, ISLE_OF_THUNDER },
+					}),
+					o(218437, {	-- The Curse and the Silence
+						["coord"] = { 49.9, 20.4, ISLE_OF_THUNDER },
+					}),
+					o(218430, {	-- The Dark Prophet Zul
+						["coord"] = { 52.6, 41.4, ISLE_OF_THUNDER },
+					}),
+					o(218434, {	-- The Pandaren Problem
+						["coord"] = { 60.7, 68.8, ISLE_OF_THUNDER },
+					}),
+					o(218432, {	-- The Sacred Mount
+						["coord"] = { 47.1, 59.9, ISLE_OF_THUNDER },
+					}),
+					o(218433, {	-- Unity at a Price
+						["coord"] = { 34.9, 65.6, ISLE_OF_THUNDER },
+					}),
+				}),
 				n(VENDORS, {
 					n(70535, {	-- Teng of the Flying Daggers <Shado-Pan Assault Quartermaster>
 						["coord"] = { 51.6, 46.6, ISLE_OF_THUNDER },

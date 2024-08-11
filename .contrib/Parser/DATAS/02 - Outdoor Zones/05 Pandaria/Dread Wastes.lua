@@ -16,12 +16,7 @@ root(ROOTS.Zones, {
 						["sym"] = {{ "achievement_criteria" }},
 					}),
 					explorationAch(6978),	-- Explore Dread Wastes
-					ach(6857, {	-- Heart of the Mantid Swarm (Dread Wastes)
-						crit(19797),	-- Cycle of the Mantid (Dread Wastes)
-						crit(19798),	-- Mantid Society (Dread Wastes)
-						crit(19799),	-- Amber (Dread Wastes)
-						crit(19800),	-- The Empress (Dread Wastes)
-					}),
+					ach(6857),	-- Heart of the Mantid Swarm (automated)
 					ach(7316, {	-- Over Their Heads
 						crit(20511, {		-- Garalon
 							["crs"] = { 63667 },
@@ -1618,6 +1613,20 @@ root(ROOTS.Zones, {
 						["g"] = {
 							i(94229),	-- Slate Primordial Direhorn (MOUNT!)
 						},
+					}),
+				}),
+				n(TREASURES, {
+					o(213411, {	-- Amber
+						["coord"] = { 52.5, 10.1, DREAD_WASTES },
+					}),
+					o(213409, {	-- Cycle of the Mantid
+						["coord"] = { 48.5, 32.8, DREAD_WASTES },
+					}),
+					o(213410, {	-- Mantid Society
+						["coord"] = { 59.9, 55.0, DREAD_WASTES },
+					}),
+					o(213412, {	-- The Empress
+						["coord"] = { 29.1, 62.1, DREAD_WASTES },
 					}),
 				}),
 				n(VENDORS, {
