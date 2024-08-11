@@ -492,7 +492,7 @@ REMOVED_MOP_REMIX_END = "removed 11.0.2.99999";			-- Remix ends on 19th August, 
 
 -- PLACEHOLDERS STATION!
 REMOVED_SEASON_AWAKENED = "removed 11.0.2";				-- Placeholder
-REMOVED_SEASON_PVP = "removed 11.0.0";					-- Placeholder
+REMOVED_SEASON_PVP = "removed 11.0.2";					-- Placeholder
 REMOVED_SEASON_MYTHIC = "removed 11.0.2";				-- Placeholder
 -- Extra Placeholders Until Blizzard knows.............
 CREATED_11_0_1 = "created 11.0.1";						-- The War Within 11.0.1
