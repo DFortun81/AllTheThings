@@ -43,7 +43,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16970,
 						["requireSkill"] = 17041,
 					},
-					applyclassicphase(PHASE_THREE, {
+					applyclassicphase(PHASE_THREE_RECIPES, {
 						["name"] = "Nightfall",
 						["recipeID"] = 23653,
 						["requireSkill"] = 17041,
@@ -141,7 +141,7 @@ profession(BLACKSMITHING, {
 				["description"] = "These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",
 				["groups"] = {
 					-- #if BEFORE TBC
-					applyclassicphase(PHASE_THREE, {
+					applyclassicphase(PHASE_THREE_RECIPES, {
 						["name"] = "Ebon Hand",
 						["recipeID"] = 23650,
 						["requireSkill"] = 17040,
@@ -297,7 +297,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16990,
 						["requireSkill"] = 17039,
 					},
-					applyclassicphase(PHASE_THREE, {
+					applyclassicphase(PHASE_THREE_RECIPES, {
 						["name"] = "Blackguard",
 						["recipeID"] = 23652,
 						["requireSkill"] = 17039,
@@ -431,12 +431,12 @@ profession(BLACKSMITHING, {
 				["categoryID"] = 227,
 				["groups"] = {
 					-- #if BEFORE TBC
-					applyclassicphase(PHASE_THREE, {
+					applyclassicphase(PHASE_THREE_RECIPES, {
 						["name"] = "Black Amnesty",
 						["recipeID"] = 23638,
 						["requireSkill"] = 9787,
 					}),
-					applyclassicphase(PHASE_THREE, {
+					applyclassicphase(PHASE_THREE_RECIPES, {
 						["name"] = "Blackfury",
 						["recipeID"] = 23639,
 						["requireSkill"] = 9787,

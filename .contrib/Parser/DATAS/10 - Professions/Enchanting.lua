@@ -976,14 +976,14 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 		}),
 		cat(691, {	-- Bracer Enchantments
 			-- #if AFTER LEGION
-			applyclassicphase(PHASE_THREE, r(23801)),	-- Argent Versatility / CLASSIC: Mana Regeneration
+			applyclassicphase(PHASE_THREE_RECIPES, r(23801)),	-- Argent Versatility / CLASSIC: Mana Regeneration
 			-- #endif
 			r(13931),	-- Dodge
 			r(20008),	-- Greater Intellect
 			r(13945),	-- Greater Stamina
 			r(13939),	-- Greater Strength
 			r(13846),	-- Greater Versatility / CLASSIC: Greater Spirit
-			applyclassicphase(PHASE_THREE, r(23802)),	-- Healing Power
+			applyclassicphase(PHASE_THREE_RECIPES, r(23802)),	-- Healing Power
 			r(13822),	-- Intellect
 			r(13646),	-- Lesser Dodge / CLASSIC: Lesser Deflection
 			r(13622),	-- Lesser Intellect
@@ -991,7 +991,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(13536),	-- Lesser Strength
 			r(7859),	-- Lesser Versatility / CLASSIC: Lesser Spirit
 			-- #if BEFORE LEGION
-			applyclassicphase(PHASE_THREE, r(23801)),	-- CLASSIC: Mana Regeneration / Argent Versatility
+			applyclassicphase(PHASE_THREE_RECIPES, r(23801)),	-- CLASSIC: Mana Regeneration / Argent Versatility
 			-- #endif
 			r(7779),	-- Minor Agility
 			r(7428),	-- Minor Dodge / CLASSIC: Minor Deflection
@@ -1131,7 +1131,7 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(14809),	-- Lesser Mystic Wand
 		}),
 		cat(695, {	-- Weapon Enchantments
-			applyclassicphase(PHASE_THREE, r(23800)),	-- Agility (1H)
+			applyclassicphase(PHASE_THREE_RECIPES, r(23800)),	-- Agility (1H)
 			applyclassicphase(PHASE_FIVE, r(27837)),	-- Agility (2H)
 			r(20034),	-- Crusader
 			r(13915),	-- Demonslaying
@@ -1150,13 +1150,13 @@ profession(ENCHANTING, sharedData({["sourceIgnored"]=true},{
 			r(20032, {["timeline"]={REMOVED_4_0_3, ADDED_10_1_5 }}),	-- Lifestealing
 			r(20036),	-- Major Intellect
 			r(20035),	-- Major Versatility / CLASSIC: Major Spirit
-			applyclassicphase(PHASE_THREE, r(23804)),	-- Mighty Intellect
-			applyclassicphase(PHASE_THREE, r(23803)),	-- Mighty Versatility / CLASSIC: Mighty Spirit
+			applyclassicphase(PHASE_THREE_RECIPES, r(23804)),	-- Mighty Intellect
+			applyclassicphase(PHASE_THREE_RECIPES, r(23803)),	-- Mighty Versatility / CLASSIC: Mighty Spirit
 			r(7786),	-- Minor Beastslayer
 			r(7745),	-- Minor Impact
 			r(7788),	-- Minor Striking
 			r(22749),	-- Spellpower
-			applyclassicphase(PHASE_THREE, r(23799)),	-- Strength
+			applyclassicphase(PHASE_THREE_RECIPES, r(23799)),	-- Strength
 			r(13693),	-- Striking
 			r(20030, {["timeline"]={REMOVED_6_0_2}}),	-- Superior Impact
 			r(20031),	-- Superior Striking
@@ -1909,12 +1909,12 @@ itemrecipe("Formula: Enchant 2H Weapon - Major Spirit", 16255, 20035);
 itemrecipe("Formula: Enchant Weapon - Spell Power", 18259, 22749);
 itemrecipe("Formula: Enchant Weapon - Healing Power", 18260, 22750);
 
-itemrecipe("Formula: Enchant Weapon - Strength", 19444, 23799, PHASE_THREE);
-itemrecipe("Formula: Enchant Weapon - Agility", 19445, 23800, PHASE_THREE);
-itemrecipe("Formula: Enchant Bracer - Mana Regeneration", 19446, 23801, PHASE_THREE);
-itemrecipe("Formula: Enchant Bracer - Healing", 19447, 23802, PHASE_THREE);
-itemrecipe("Formula: Enchant Weapon - Mighty Spirit", 19448, 23803, PHASE_THREE);
-itemrecipe("Formula: Enchant Weapon - Mighty Intellect", 19449, 23804, PHASE_THREE);
+itemrecipe("Formula: Enchant Weapon - Strength", 19444, 23799, PHASE_THREE_RECIPES);
+itemrecipe("Formula: Enchant Weapon - Agility", 19445, 23800, PHASE_THREE_RECIPES);
+itemrecipe("Formula: Enchant Bracer - Mana Regeneration", 19446, 23801, PHASE_THREE_RECIPES);
+itemrecipe("Formula: Enchant Bracer - Healing", 19447, 23802, PHASE_THREE_RECIPES);
+itemrecipe("Formula: Enchant Weapon - Mighty Spirit", 19448, 23803, PHASE_THREE_RECIPES);
+itemrecipe("Formula: Enchant Weapon - Mighty Intellect", 19449, 23804, PHASE_THREE_RECIPES);
 
 itemrecipe("Formula: Enchant Gloves - Threat", 20726, 25072, PHASE_FIVE);
 itemrecipe("Formula: Enchant Gloves - Shadow Power", 20727, 25073, PHASE_FIVE);

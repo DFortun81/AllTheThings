@@ -1169,7 +1169,7 @@ profession(TAILORING, {
 			["name"] = "Shoulders",
 			["categoryID"] = 235,
 			["groups"] = {
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Argent Shoulders",
 					["recipeID"] = 23665,
 				}),
@@ -1228,7 +1228,7 @@ profession(TAILORING, {
 					["timeline"] = { "added 1.15.2" },
 				})),
 				-- #endif
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Mantle of the Timbermaw",
 					["recipeID"] = 23663,
 				}),
@@ -1374,7 +1374,7 @@ profession(TAILORING, {
 					["name"] = "Festival Suit",
 					["recipeID"] = 26407,
 				}),
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Flarecore Robe",
 					["recipeID"] = 23666
 				}),
@@ -1620,7 +1620,7 @@ profession(TAILORING, {
 					["name"] = "Star Belt",
 					["recipeID"] = 3864
 				},
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Wisdom of the Timbermaw",
 					["recipeID"] = 23662,
 				}),
@@ -1783,7 +1783,7 @@ profession(TAILORING, {
 					["name"] = "Felcloth Pants",
 					["recipeID"] = 18419
 				},
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Flarecore Leggings",
 					["recipeID"] = 23667
 				}),
@@ -1854,7 +1854,7 @@ profession(TAILORING, {
 			["name"] = "Boots",
 			["categoryID"] = 241,
 			["groups"] = {
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Argent Boots",
 					["recipeID"] = 23664,
 				}),
@@ -6378,12 +6378,12 @@ itemrecipe("Pattern: Mooncloth Gloves", 18417, 22869, PHASE_ONE_DIREMAUL);
 itemrecipe("Pattern: Cloak of Warding", 18418, 22870, PHASE_ONE_DIREMAUL);
 itemrecipe("Pattern: Mooncloth Robe", 18487, 22902, PHASE_ONE_DIREMAUL);
 
-itemrecipe("Pattern: Wisdom of the Timbermaw", 19215, 23662, PHASE_THREE);
-itemrecipe("Pattern: Argent Boots", 19216, 23664, PHASE_THREE);
-itemrecipe("Pattern: Argent Shoulders", 19217, 23665, PHASE_THREE);
-itemrecipe("Pattern: Mantle of the Timbermaw", 19218, 23663, PHASE_THREE);
-itemrecipe("Pattern: Flarecore Robe", 19219, 23666, PHASE_THREE);
-itemrecipe("Pattern: Flarecore Leggings", 19220, 23667, PHASE_THREE);
+itemrecipe("Pattern: Wisdom of the Timbermaw", 19215, 23662, PHASE_THREE_RECIPES);
+itemrecipe("Pattern: Argent Boots", 19216, 23664, PHASE_THREE_RECIPES);
+itemrecipe("Pattern: Argent Shoulders", 19217, 23665, PHASE_THREE_RECIPES);
+itemrecipe("Pattern: Mantle of the Timbermaw", 19218, 23663, PHASE_THREE_RECIPES);
+itemrecipe("Pattern: Flarecore Robe", 19219, 23666, PHASE_THREE_RECIPES);
+itemrecipe("Pattern: Flarecore Leggings", 19220, 23667, PHASE_THREE_RECIPES);
 
 itemrecipe("Pattern: Bloodvine Vest", 19764, 24091, PHASE_FOUR);
 itemrecipe("Pattern: Bloodvine Leggings", 19765, 24092, PHASE_FOUR);

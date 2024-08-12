@@ -148,7 +148,7 @@ profession(LEATHERWORKING, {
 				["name"] = "Belts",
 				["categoryID"] = 256,
 				["groups"] = {
-					applyclassicphase(PHASE_THREE, {
+					applyclassicphase(PHASE_THREE_RECIPES, {
 						["name"] = "Corehound Belt",
 						["recipeID"] = 23709,
 						["requireSkill"] = 10660,

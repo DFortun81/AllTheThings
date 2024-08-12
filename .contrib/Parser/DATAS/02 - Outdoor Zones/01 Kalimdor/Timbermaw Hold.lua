@@ -478,16 +478,16 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							
 						},
 						{	-- Friendly
-							applyclassicphase(PHASE_THREE, i(22392)),	-- Formula: Enchant 2H Weapon - Agility (RECIPE!)
+							applyclassicphase(PHASE_THREE_RECIPES, i(22392)),	-- Formula: Enchant 2H Weapon - Agility (RECIPE!)
 							i(20253),	-- Pattern: Warbear Harness (RECIPE!)
 							i(20254),	-- Pattern: Warbear Woolies (RECIPE!)
 							i(13484),	-- Recipe: Transmute Earth to Water (RECIPE!)
 						},
 						{	-- Honored
-							applyclassicphase(PHASE_THREE, i(19445)),	-- Formula: Enchant Weapon - Agility (RECIPE!)
-							applyclassicphase(PHASE_THREE, i(19202)),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
-							applyclassicphase(PHASE_THREE, i(19326)),	-- Pattern: Might of the Timbermaw (RECIPE!)
-							applyclassicphase(PHASE_THREE, i(19215)),	-- Pattern: Wisdom of the Timbermaw
+							applyclassicphase(PHASE_THREE_RECIPES, i(19445)),	-- Formula: Enchant Weapon - Agility (RECIPE!)
+							applyclassicphase(PHASE_THREE_RECIPES, i(19202)),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
+							applyclassicphase(PHASE_THREE_RECIPES, i(19326)),	-- Pattern: Might of the Timbermaw (RECIPE!)
+							applyclassicphase(PHASE_THREE_RECIPES, i(19215)),	-- Pattern: Wisdom of the Timbermaw
 							
 							-- #if SEASON_OF_DISCOVERY
 							-- EPIC CRAFTED ITEMS UPGRADES
@@ -589,9 +589,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["timeline"] = { "added 1.15.3" },
 							})),
 							-- #endif
-							applyclassicphase(PHASE_THREE, i(19218)),	-- Pattern: Mantle of the Timbermaw
-							applyclassicphase(PHASE_THREE, i(19204)),	-- Plans: Heavy Timbermaw Boots (RECIPE!)
-							applyclassicphase(PHASE_THREE, i(19327)),	-- Pattern: Timbermaw Brawlers (RECIPE!)
+							applyclassicphase(PHASE_THREE_RECIPES, i(19218)),	-- Pattern: Mantle of the Timbermaw
+							applyclassicphase(PHASE_THREE_RECIPES, i(19204)),	-- Plans: Heavy Timbermaw Boots (RECIPE!)
+							applyclassicphase(PHASE_THREE_RECIPES, i(19327)),	-- Pattern: Timbermaw Brawlers (RECIPE!)
 						},
 						{	-- Exalted
 							i(66888, {	-- Stave of Fur and Claw Toy (TOY!)

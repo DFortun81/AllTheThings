@@ -165,7 +165,7 @@ profession(LEATHERWORKING, {
 				["name"] = "Gloves",
 				["categoryID"] = 255,
 				["groups"] = {
-					applyclassicphase(PHASE_THREE, {
+					applyclassicphase(PHASE_THREE_RECIPES, {
 						["name"] = "Chromatic Gauntlets",
 						["recipeID"] = 23708,
 						["requireSkill"] = 10656,

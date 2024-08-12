@@ -5,6 +5,7 @@ PHASE_ONE_DIREMAUL = 1101;
 PHASE_TWO = 12;
 PHASE_THREE = 13;
 PHASE_THREE_DMF_CARDS = PHASE_THREE;
+PHASE_THREE_RECIPES = PHASE_THREE;
 PHASE_THREE_SILITHUS_EXPEDITION_QUESTS = PHASE_THREE;
 PHASE_FOUR = 14;
 PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS = 14;
@@ -33,6 +34,7 @@ SOD_PHASE_EIGHT = 1612;
 -- #if SEASON_OF_DISCOVERY
 PHASE_ONE_DIREMAUL = SOD_PHASE_FOUR;	-- Dire Maul actually came out with Phase 4 of SOD.
 PHASE_TWO = SOD_PHASE_FOUR;	-- Azuregos, Lord Kazzak, and PVP Battlegrounds were immediately available with Phase 4 of SOD.
+PHASE_THREE_RECIPES = SOD_PHASE_FOUR;	-- A number of these actually came out with Phase 4 of SOD.
 PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS = SOD_PHASE_THREE;	-- Sunken Temple Class Quests came out with Phase 3 of SOD.
 PHASE_FIVE_RECIPES = SOD_PHASE_FOUR;	-- A number of these actually came out with Phase 4 of SOD.
 PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS = SOD_PHASE_FOUR;	-- T0.5 Sets actually came out with Phase 4 of SOD.

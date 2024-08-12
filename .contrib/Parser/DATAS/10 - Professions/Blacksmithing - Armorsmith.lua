@@ -96,12 +96,12 @@ profession(BLACKSMITHING, {
 				["name"] = "Helms",
 				["categoryID"] = 218,
 				["groups"] = {
-					applyclassicphase(PHASE_THREE, {
+					applyclassicphase(PHASE_THREE_RECIPES, {
 						["name"] = "Dark Iron Helm",
 						["recipeID"] = 23636,
 						["requireSkill"] = 9788,
 					}),
-					applyclassicphase(PHASE_THREE, {
+					applyclassicphase(PHASE_THREE_RECIPES, {
 						["name"] = "Enchanted Thorium Helm",
 						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 16742,
@@ -175,7 +175,7 @@ profession(BLACKSMITHING, {
 				["name"] = "Gauntlets",
 				["categoryID"] = 221,
 				["groups"] = {
-					applyclassicphase(PHASE_THREE, {
+					applyclassicphase(PHASE_THREE_RECIPES, {
 						["name"] = "Dark Iron Gauntlets",
 						["recipeID"] = 23637,
 						["requireSkill"] = 9788,
@@ -248,7 +248,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 16667,
 						["requireSkill"] = 9788,
 					},
-					applyclassicphase(PHASE_THREE, {
+					applyclassicphase(PHASE_THREE_RECIPES, {
 						["name"] = "Enchanted Thorium Breastplate",
 						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 16745,
@@ -312,7 +312,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 20876,
 						["requireSkill"] = 9788,
 					},
-					applyclassicphase(PHASE_THREE, {
+					applyclassicphase(PHASE_THREE_RECIPES, {
 						["name"] = "Enchanted Thorium Leggings",
 						["timeline"] = { REMOVED_4_0_1 },
 						["recipeID"] = 16744,

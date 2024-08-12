@@ -2329,7 +2329,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					},
 					{	-- Friendly
-						applyclassicphase(PHASE_THREE, i(19444)),	-- Formula: Enchant Weapon - Strength (RECIPE!)
+						applyclassicphase(PHASE_THREE_RECIPES, i(19444)),	-- Formula: Enchant Weapon - Strength (RECIPE!)
 						i(17022),	-- Pattern: Corehound Boots (RECIPE!)
 						i(17018),	-- Pattern: Flarecore Gloves
 						i(17023),	-- Pattern: Molten Helm (RECIPE!)
@@ -2348,13 +2348,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { "added 1.15.3" },
 						})),
 						-- #endif
-						applyclassicphase(PHASE_THREE, i(19448)),	-- Formula: Enchant Weapon - Mighty Versatility / CLASSIC: Formula: Enchant Weapon - Mighty Spirit (RECIPE!)
+						applyclassicphase(PHASE_THREE_RECIPES, i(19448)),	-- Formula: Enchant Weapon - Mighty Versatility / CLASSIC: Formula: Enchant Weapon - Mighty Spirit (RECIPE!)
 						i(17025),	-- Pattern: Black Dragonscale Boots (RECIPE!)
 						i(17017),	-- Pattern: Flarecore Mantle
-						applyclassicphase(PHASE_THREE, i(19219)),	-- Pattern: Flarecore Robe
-						applyclassicphase(PHASE_THREE, i(19330)),	-- Pattern: Lava Belt (RECIPE!)
+						applyclassicphase(PHASE_THREE_RECIPES, i(19219)),	-- Pattern: Flarecore Robe
+						applyclassicphase(PHASE_THREE_RECIPES, i(19330)),	-- Pattern: Lava Belt (RECIPE!)
 						i(17060),	-- Plans: Dark Iron Destroyer (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19206)),	-- Plans: Dark Iron Helm (RECIPE!)
+						applyclassicphase(PHASE_THREE_RECIPES, i(19206)),	-- Plans: Dark Iron Helm (RECIPE!)
 						i(17059),	-- Plans: Dark Iron Reaver (RECIPE!)
 						i(17049),	-- Plans: Fiery Chain Girdle (RECIPE!)
 						
@@ -2595,22 +2595,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					},
 					{	-- Revered
-						applyclassicphase(PHASE_THREE, i(19449)),	-- Formula: Enchant Weapon - Mighty Intellect (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19331)),	-- Pattern: Chromatic Gauntlets (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19332)),	-- Pattern: Corehound Belt (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19220)),	-- Pattern: Flarecore Leggings
-						applyclassicphase(PHASE_THREE, i(19333)),	-- Pattern: Molten Belt (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19208)),	-- Plans: Black Amnesty (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19209)),	-- Plans: Blackfury (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19207)),	-- Plans: Dark Iron Gauntlets (RECIPE!)
+						applyclassicphase(PHASE_THREE_RECIPES, i(19449)),	-- Formula: Enchant Weapon - Mighty Intellect (RECIPE!)
+						applyclassicphase(PHASE_THREE_RECIPES, i(19331)),	-- Pattern: Chromatic Gauntlets (RECIPE!)
+						applyclassicphase(PHASE_THREE_RECIPES, i(19332)),	-- Pattern: Corehound Belt (RECIPE!)
+						applyclassicphase(PHASE_THREE_RECIPES, i(19220)),	-- Pattern: Flarecore Leggings
+						applyclassicphase(PHASE_THREE_RECIPES, i(19333)),	-- Pattern: Molten Belt (RECIPE!)
+						applyclassicphase(PHASE_THREE_RECIPES, i(19208)),	-- Plans: Black Amnesty (RECIPE!)
+						applyclassicphase(PHASE_THREE_RECIPES, i(19209)),	-- Plans: Blackfury (RECIPE!)
+						applyclassicphase(PHASE_THREE_RECIPES, i(19207)),	-- Plans: Dark Iron Gauntlets (RECIPE!)
 						i(17052),	-- Plans: Dark Iron Leggings (RECIPE!)
 						i(17053),	-- Plans: Fiery Chain Shoulders (RECIPE!)
 					},
 					{	-- Exalted
-						applyclassicphase(PHASE_THREE, i(19211)),	-- Plans: Blackguard (RECIPE!)
+						applyclassicphase(PHASE_THREE_RECIPES, i(19211)),	-- Plans: Blackguard (RECIPE!)
 						applyclassicphase(PHASE_FOUR,  i(20040)),	-- Plans: Dark Iron Boots (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19210)),	-- Plans: Ebon Hand (RECIPE!)
-						applyclassicphase(PHASE_THREE, i(19212, {	-- Plans: Nightfall (RECIPE!)
+						applyclassicphase(PHASE_THREE_RECIPES, i(19210)),	-- Plans: Ebon Hand (RECIPE!)
+						applyclassicphase(PHASE_THREE_RECIPES, i(19212, {	-- Plans: Nightfall (RECIPE!)
 							-- #if SEASON_OF_DISCOVERY
 							["timeline"] = { "removed 1.15.0" },
 							-- #endif

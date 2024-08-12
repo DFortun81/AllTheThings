@@ -1595,7 +1595,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 9814,
 				},
 				-- #if AFTER TBC
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Dark Iron Helm",
 					["recipeID"] = 23636,
 				}),
@@ -1605,7 +1605,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 24913,
 				}),
 				-- #if AFTER TBC
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Enchanted Thorium Helm",
 					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 16742,
@@ -1859,7 +1859,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 24138,
 				}),
 				-- #if AFTER TBC
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Dark Iron Gauntlets",
 					["recipeID"] = 23637,
 				}),
@@ -1892,7 +1892,7 @@ profession(BLACKSMITHING, {
 					["name"] = "Gemmed Copper Gauntlets",
 					["recipeID"] = 3325,
 				},
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Gloves of the Dawn",
 					["recipeID"] = 23633,
 				}),
@@ -2035,7 +2035,7 @@ profession(BLACKSMITHING, {
 					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 16667,
 				},
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Enchanted Thorium Breastplate",
 					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 16745,
@@ -2183,7 +2183,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 20872,
 				},
 				-- #endif
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Girdle of the Dawn",
 					["recipeID"] = 23632,
 				}),
@@ -2191,7 +2191,7 @@ profession(BLACKSMITHING, {
 					["name"] = "Heavy Obsidian Belt",
 					["recipeID"] = 27585,
 				}),
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Heavy Timbermaw Belt",
 					["recipeID"] = 23628,
 				}),
@@ -2241,7 +2241,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 24140,
 				}),
 				-- #if AFTER TBC
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Enchanted Thorium Leggings",
 					["timeline"] = { REMOVED_4_0_1 },
 					["recipeID"] = 16744,
@@ -2360,7 +2360,7 @@ profession(BLACKSMITHING, {
 					["name"] = "Heavy Mithril Boots",
 					["recipeID"] = 9968,
 				},
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Heavy Timbermaw Boots",
 					["recipeID"] = 23629,
 				}),
@@ -2440,15 +2440,15 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 3491,
 				},
 				-- #if AFTER TBC
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Black Amnesty",
 					["recipeID"] = 23638,
 				}),
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Blackfury",
 					["recipeID"] = 23639,
 				}),
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Blackguard",
 					["recipeID"] = 23652,
 				}),
@@ -2587,7 +2587,7 @@ profession(BLACKSMITHING, {
 					["timeline"] = { "removed 1.15.3" },
 				}),
 				-- #endif
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Ebon Hand",
 					["recipeID"] = 23650,
 				}),
@@ -2740,7 +2740,7 @@ profession(BLACKSMITHING, {
 				}),
 				-- #endif
 				-- #if AFTER TBC
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Nightfall",
 					["recipeID"] = 23653,
 					-- #if SEASON_OF_DISCOVERY
@@ -4619,23 +4619,23 @@ itemrecipe("Plans: Dark Iron Leggings", 17052, 20876);
 itemrecipe("Plans: Fiery Chain Shoulders", 17053, 20873);
 itemrecipe("Plans: Dark Iron Reaver", 17059, 20890);
 itemrecipe("Plans: Dark Iron Destroyer", 17060, 20897);
-itemrecipe("Plans: Enchanted Thorium Helm", 12725, 16742, PHASE_THREE);
-itemrecipe("Plans: Enchanted Thorium Leggings", 12726, 16744, PHASE_THREE);
-itemrecipe("Plans: Enchanted Thorium Breastplate", 12727, 16745, PHASE_THREE);
+itemrecipe("Plans: Enchanted Thorium Helm", 12725, 16742, PHASE_THREE_RECIPES);
+itemrecipe("Plans: Enchanted Thorium Leggings", 12726, 16744, PHASE_THREE_RECIPES);
+itemrecipe("Plans: Enchanted Thorium Breastplate", 12727, 16745, PHASE_THREE_RECIPES);
 applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Plans: Edge of Winter", 17706, 21913));
 itemrecipe("Plans: Elemental Sharpening Stone", 18264, 22757);
 itemrecipe("Plans: Sulfuron Hammer", 18592, 21161);
-itemrecipe("Plans: Heavy Timbermaw Belt", 19202, 23628, PHASE_THREE);
-itemrecipe("Plans: Girdle of the Dawn", 19203, 23632, PHASE_THREE);
-itemrecipe("Plans: Heavy Timbermaw Boots", 19204, 23629, PHASE_THREE);
-itemrecipe("Plans: Gloves of the Dawn", 19205, 23633, PHASE_THREE);
-itemrecipe("Plans: Dark Iron Helm", 19206, 23636, PHASE_THREE);
-itemrecipe("Plans: Dark Iron Gauntlets", 19207, 23637, PHASE_THREE);
-itemrecipe("Plans: Black Amnesty", 19208, 23638, PHASE_THREE);
-itemrecipe("Plans: Blackfury", 19209, 23639, PHASE_THREE);
-itemrecipe("Plans: Ebon Hand", 19210, 23650, PHASE_THREE);
-itemrecipe("Plans: Blackguard", 19211, 23652, PHASE_THREE);
-itemrecipe("Plans: Nightfall", 19212, 23653, PHASE_THREE);
+itemrecipe("Plans: Heavy Timbermaw Belt", 19202, 23628, PHASE_THREE_RECIPES);
+itemrecipe("Plans: Girdle of the Dawn", 19203, 23632, PHASE_THREE_RECIPES);
+itemrecipe("Plans: Heavy Timbermaw Boots", 19204, 23629, PHASE_THREE_RECIPES);
+itemrecipe("Plans: Gloves of the Dawn", 19205, 23633, PHASE_THREE_RECIPES);
+itemrecipe("Plans: Dark Iron Helm", 19206, 23636, PHASE_THREE_RECIPES);
+itemrecipe("Plans: Dark Iron Gauntlets", 19207, 23637, PHASE_THREE_RECIPES);
+itemrecipe("Plans: Black Amnesty", 19208, 23638, PHASE_THREE_RECIPES);
+itemrecipe("Plans: Blackfury", 19209, 23639, PHASE_THREE_RECIPES);
+itemrecipe("Plans: Ebon Hand", 19210, 23650, PHASE_THREE_RECIPES);
+itemrecipe("Plans: Blackguard", 19211, 23652, PHASE_THREE_RECIPES);
+itemrecipe("Plans: Nightfall", 19212, 23653, PHASE_THREE_RECIPES);
 itemrecipe("Plans: Bloodsoul Breastplate", 19776, 24136, PHASE_FOUR);
 itemrecipe("Plans: Bloodsoul Shoulders", 19777, 24137, PHASE_FOUR);
 itemrecipe("Plans: Bloodsoul Gauntlets", 19778, 24138, PHASE_FOUR);

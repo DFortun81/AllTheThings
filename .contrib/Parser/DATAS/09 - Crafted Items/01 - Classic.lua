@@ -348,8 +348,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			["groups"] = {
 				applyclassicphase(PHASE_FOUR, i(20039)),	-- Dark Iron Boots
 				i(17014),	-- Dark Iron Bracers
-				applyclassicphase(PHASE_THREE, i(19164)),	-- Dark Iron Gauntlets
-				applyclassicphase(PHASE_THREE, i(19148)),	-- Dark Iron Helm
+				applyclassicphase(PHASE_THREE_RECIPES, i(19164)),	-- Dark Iron Gauntlets
+				applyclassicphase(PHASE_THREE_RECIPES, i(19148)),	-- Dark Iron Helm
 				i(17013),	-- Dark Iron Leggings
 				i(11604, {	-- Dark Iron Plate
 					-- #if SEASON_OF_DISCOVERY
@@ -357,9 +357,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					-- #endif
 				}),
 				i(12628, {["timeline"] = {REMOVED_4_0_3}}),	-- Demon Forged Breastplate
-				applyclassicphase(PHASE_THREE, i(12618, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Breastplate
-				applyclassicphase(PHASE_THREE, i(12620, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Helm
-				applyclassicphase(PHASE_THREE, i(12619, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Leggings
+				applyclassicphase(PHASE_THREE_RECIPES, i(12618, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Breastplate
+				applyclassicphase(PHASE_THREE_RECIPES, i(12620, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Helm
+				applyclassicphase(PHASE_THREE_RECIPES, i(12619, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Leggings
 				i(12631, {	-- Fiery Plate Gauntlets
 					["timeline"] = {
 						-- #if SEASON_OF_DISCOVERY
@@ -434,7 +434,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						i(12784),	-- Arcanite Reaper
 						i(17016),	-- Dark Iron Destroyer
 						i(12774, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Dawn's Edge
-						applyclassicphase(PHASE_THREE, i(19169, {	-- Nightfall
+						applyclassicphase(PHASE_THREE_RECIPES, i(19169, {	-- Nightfall
 							-- #if SEASON_OF_DISCOVERY
 							["timeline"] = { "removed 1.15.0" },
 							-- #endif
@@ -450,7 +450,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				prof(17040, {	-- Master Hammersmith
 					["description"] = "These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",
 					["groups"] = {
-						applyclassicphase(PHASE_THREE, i(19170)),	-- Ebon Hand
+						applyclassicphase(PHASE_THREE_RECIPES, i(19170)),	-- Ebon Hand
 						i(12776, {	-- Enchanted Battlehammer
 							["timeline"] = {
 								-- #if SEASON_OF_DISCOVERY
@@ -492,7 +492,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					["description"] = "These items can only be crafted by Master Swordsmith specialized Weaponsmiths.",
 					["groups"] = {
 						i(12790, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Arcanite Champion
-						applyclassicphase(PHASE_THREE, i(19168)),	-- Blackguard
+						applyclassicphase(PHASE_THREE_RECIPES, i(19168)),	-- Blackguard
 						i(12777, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Blazing Rapier
 						i(12782, {	-- Corruption
 							-- #if SEASON_OF_DISCOVERY
@@ -512,8 +512,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				n(WEAPONS, {
 					["description"] = "These can be crafted by any Weaponsmith.",
 					["groups"] = {
-						applyclassicphase(PHASE_THREE, i(19166)),	-- Black Amnesty
-						applyclassicphase(PHASE_THREE, i(19167)),	-- Blackfury
+						applyclassicphase(PHASE_THREE_RECIPES, i(19166)),	-- Black Amnesty
+						applyclassicphase(PHASE_THREE_RECIPES, i(19167)),	-- Blackfury
 						i(7959, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Blight
 						i(11608),	-- Dark Iron Pulverizer
 						i(11607),	-- Dark Iron Sunderer
@@ -584,8 +584,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #endif
 			i(206508, {["timeline"] = {ADDED_10_1_5}}),	-- Gauntlets of the Unrelenting
 			i(3474),	-- Gemmed Copper Gauntlets
-			applyclassicphase(PHASE_THREE, i(19051)),	-- Girdle of the Dawn
-			applyclassicphase(PHASE_THREE, i(19057)),	-- Gloves of the Dawn
+			applyclassicphase(PHASE_THREE_RECIPES, i(19051)),	-- Girdle of the Dawn
+			applyclassicphase(PHASE_THREE_RECIPES, i(19057)),	-- Gloves of the Dawn
 			-- #if SEASON_OF_DISCOVERY
 			applyclassicphase(SOD_PHASE_TWO, i(217275, {	-- Golden Scale Boots
 				["timeline"] = { "added 1.15.1" },
@@ -650,8 +650,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(7921),	-- Heavy Mithril Pants
 			i(7918),	-- Heavy Mithril Shoulder
 			applyclassicphase(PHASE_FIVE, i(22197)),	-- Heavy Obsidian Belt
-			applyclassicphase(PHASE_THREE, i(19043)),	-- Heavy Timbermaw Belt
-			applyclassicphase(PHASE_THREE, i(19048)),	-- Heavy Timbermaw Boots
+			applyclassicphase(PHASE_THREE_RECIPES, i(19043)),	-- Heavy Timbermaw Belt
+			applyclassicphase(PHASE_THREE_RECIPES, i(19048)),	-- Heavy Timbermaw Boots
 			applyclassicphase(PHASE_SIX, i(22671, {["timeline"] = {REMOVED_3_0_2, ADDED_10_1_5}})),	-- Icebane Bracers
 			applyclassicphase(PHASE_SIX, i(22669, {["timeline"] = {REMOVED_3_0_2, ADDED_10_1_5}})),	-- Icebane Breastplate
 			i(206444, {["timeline"] = {ADDED_10_1_5}}),	-- Icebane Coif
@@ -730,8 +730,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER TBC
 			applyclassicphase(PHASE_FOUR, i(20039)),	-- Dark Iron Boots
 			i(17014),	-- Dark Iron Bracers
-			applyclassicphase(PHASE_THREE, i(19164)),	-- Dark Iron Gauntlets
-			applyclassicphase(PHASE_THREE, i(19148)),	-- Dark Iron Helm
+			applyclassicphase(PHASE_THREE_RECIPES, i(19164)),	-- Dark Iron Gauntlets
+			applyclassicphase(PHASE_THREE_RECIPES, i(19148)),	-- Dark Iron Helm
 			i(17013),	-- Dark Iron Leggings
 			i(11604, {	-- Dark Iron Plate
 				-- #if SEASON_OF_DISCOVERY
@@ -739,9 +739,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			}),
 			i(12628, {["timeline"] = {REMOVED_4_0_3}}),	-- Demon Forged Breastplate
-			applyclassicphase(PHASE_THREE, i(12618, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Breastplate
-			applyclassicphase(PHASE_THREE, i(12620, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Helm
-			applyclassicphase(PHASE_THREE, i(12619, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Leggings
+			applyclassicphase(PHASE_THREE_RECIPES, i(12618, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Breastplate
+			applyclassicphase(PHASE_THREE_RECIPES, i(12620, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Helm
+			applyclassicphase(PHASE_THREE_RECIPES, i(12619, {["timeline"] = {REMOVED_4_0_3}})),	-- Enchanted Thorium Leggings
 			i(12631, {	-- Fiery Plate Gauntlets
 				["timeline"] = {
 					-- #if SEASON_OF_DISCOVERY
@@ -959,9 +959,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(12798),	-- Annihilator
 			i(12790, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Arcanite Champion
 			i(12784),	-- Arcanite Reaper
-			applyclassicphase(PHASE_THREE, i(19166)),	-- Black Amnesty
-			applyclassicphase(PHASE_THREE, i(19167)),	-- Blackfury
-			applyclassicphase(PHASE_THREE, i(19168)),	-- Blackguard
+			applyclassicphase(PHASE_THREE_RECIPES, i(19166)),	-- Black Amnesty
+			applyclassicphase(PHASE_THREE_RECIPES, i(19167)),	-- Blackfury
+			applyclassicphase(PHASE_THREE_RECIPES, i(19168)),	-- Blackguard
 			i(12777, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Blazing Rapier
 			i(7959, {["timeline"] = {REMOVED_4_0_3, ADDED_7_1_5}}),	-- Blight
 			i(12782, {	-- Corruption
@@ -982,7 +982,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { "added 1.15.3" },
 			})),
 			-- #endif
-			applyclassicphase(PHASE_THREE, i(19170)),	-- Ebon Hand
+			applyclassicphase(PHASE_THREE_RECIPES, i(19170)),	-- Ebon Hand
 			i(12776, {["timeline"] = {REMOVED_4_0_3}}),	-- Enchanted Battlehammer
 			i(12797),	-- Frostguard
 			i(12796),	-- Hammer of the Titans
@@ -992,7 +992,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 			}),
 			i(12794, {["timeline"] = {REMOVED_6_0_2, ADDED_10_1_5}}),	-- Masterwork Stormhammer
-			applyclassicphase(PHASE_THREE, i(19169)),	-- Nightfall
+			applyclassicphase(PHASE_THREE_RECIPES, i(19169)),	-- Nightfall
 			applyclassicphase(PHASE_FIVE_RECIPES, i(22384)),	-- Persuader
 			i(7961, {["timeline"] = {REMOVED_4_0_3, ADDED_4_3_0}}),	-- Phantom Blade
 			applyclassicphase(PHASE_FIVE_RECIPES, i(22383)),	-- Sageblade
@@ -2400,7 +2400,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					}
 				})),
-				applyclassicphase(PHASE_THREE, i(19157)),	-- Chromatic Gauntlets
+				applyclassicphase(PHASE_THREE_RECIPES, i(19157)),	-- Chromatic Gauntlets
 				i(8367),	-- Dragonscale Breastplate
 				i(8347, {	-- Dragonscale Gauntlets
 					["timeline"] = {
@@ -2476,7 +2476,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { "added 1.15.3" },
 				})),
 				-- #endif
-				applyclassicphase(PHASE_THREE, i(19163)),	-- Molten Belt
+				applyclassicphase(PHASE_THREE_RECIPES, i(19163)),	-- Molten Belt
 				i(16983),	-- Molten Helm
 				applyclassicphase(PHASE_ONE_DIREMAUL, i(18511, {	-- Shifting Cloak
 					["timeline"] = {
@@ -2535,7 +2535,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(15074, {["timeline"] = {REMOVED_4_0_3}}),	-- Chimeric Gloves
 				i(15072),	-- Chimeric Leggings
 				i(15075),	-- Chimeric Vest
-				applyclassicphase(PHASE_THREE, i(19162)),	-- Corehound Belt
+				applyclassicphase(PHASE_THREE_RECIPES, i(19162)),	-- Corehound Belt
 				i(16982),	-- Corehound Boots
 				i(15063),	-- Devilsaur Gauntlets
 				i(15062),	-- Devilsaur Leggings
@@ -2636,7 +2636,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(5961),	-- Dark Leather Pants
 				i(4252),	-- Dark Leather Shoulders
 				i(2317),	-- Dark Leather Tunic
-				applyclassicphase(PHASE_THREE, i(19052)),	-- Dawn Treaders
+				applyclassicphase(PHASE_THREE_RECIPES, i(19052)),	-- Dawn Treaders
 				i(6468, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}}),	-- Deviate Scale Belt
 				i(6467, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}}),	-- Deviate Scale Gloves
 				i(206509, {["timeline"] = {ADDED_10_1_5}}),	-- Displacement Boots
@@ -2672,7 +2672,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					}
 				})),
 				i(17721),	-- Gloves of the Greatfather
-				applyclassicphase(PHASE_THREE, i(19058)),	-- Golden Mantle of the Dawn
+				applyclassicphase(PHASE_THREE_RECIPES, i(19058)),	-- Golden Mantle of the Dawn
 				i(4255),	-- Green Leather Armor
 				i(4257),	-- Green Leather Belt
 				i(4259),	-- Green Leather Bracers
@@ -2709,7 +2709,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(4247),	-- Hillman's Leather Gloves
 				i(4244),	-- Hillman's Leather Vest
 				i(4251),	-- Hillman's Shoulders
-				applyclassicphase(PHASE_THREE, i(19149)),	-- Lava Belt
+				applyclassicphase(PHASE_THREE_RECIPES, i(19149)),	-- Lava Belt
 				i(7281),	-- Light Leather Bracers
 				i(7282),	-- Light Leather Pants
 				i(206514, {["timeline"] = {ADDED_10_1_5}}),	-- Lucien's Lost Soles
@@ -2718,7 +2718,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { "added 1.15.2" },
 				})),
 				-- #endif
-				applyclassicphase(PHASE_THREE, i(19044)),	-- Might of the Timbermaw
+				applyclassicphase(PHASE_THREE_RECIPES, i(19044)),	-- Might of the Timbermaw
 				applyclassicphase(PHASE_ONE_DIREMAUL, i(18506, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_5}})),	-- Mongoose Boots
 				i(6709),	-- Moonglow Vest
 				i(5780),	-- Murloc Scale Belt
@@ -2771,7 +2771,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				i(7391),	-- Swift Boots
 				i(5782),	-- Thick Murloc Armor
-				applyclassicphase(PHASE_THREE, i(19049)),	-- Timbermaw Brawlers
+				applyclassicphase(PHASE_THREE_RECIPES, i(19049)),	-- Timbermaw Brawlers
 				i(2314),	-- Toughened Leather Armor
 				i(4253),	-- Toughened Leather Gloves
 				-- #if SEASON_OF_DISCOVERY
@@ -2803,7 +2803,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(15074, {["timeline"] = {REMOVED_4_0_3}}),	-- Chimeric Gloves
 				i(15072),	-- Chimeric Leggings
 				i(15075),	-- Chimeric Vest
-				applyclassicphase(PHASE_THREE, i(19162)),	-- Corehound Belt
+				applyclassicphase(PHASE_THREE_RECIPES, i(19162)),	-- Corehound Belt
 				i(16982),	-- Corehound Boots
 				i(15063),	-- Devilsaur Gauntlets
 				i(15062),	-- Devilsaur Leggings
@@ -2834,7 +2834,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 					["timeline"] = { "added 1.15.3" },
 				})),
 				-- #endif
-				applyclassicphase(PHASE_THREE, i(19163)),	-- Molten Belt
+				applyclassicphase(PHASE_THREE_RECIPES, i(19163)),	-- Molten Belt
 				i(16983),	-- Molten Helm
 				i(15056, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Stormshroud Armor
 				i(21278, {["timeline"] = {REMOVED_4_0_3, ADDED_9_1_0}}),	-- Stormshroud Gloves
@@ -3004,7 +3004,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				i(15048, {["timeline"] = {REMOVED_4_0_3}}),	-- Blue Dragonscale Breastplate
 				i(20295),	-- Blue Dragonscale Leggings
 				i(15049, {["timeline"] = {REMOVED_4_0_3, ADDED_10_1_7}}),	-- Blue Dragonscale Shoulders
-				applyclassicphase(PHASE_THREE, i(19157)),	-- Chromatic Gauntlets
+				applyclassicphase(PHASE_THREE_RECIPES, i(19157)),	-- Chromatic Gauntlets
 				i(8367),	-- Dragonscale Breastplate
 				applyclassicphase(PHASE_FOUR, i(20380, {	-- Dreamscale Breastplate
 					-- #if AFTER 4.0.3
@@ -3368,7 +3368,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(14130),	-- Wizardweave Turban
 		}),
 		category(235, {	-- Shoulders
-			applyclassicphase(PHASE_THREE, i(19059)),	-- Argent Shoulders
+			applyclassicphase(PHASE_THREE_RECIPES, i(19059)),	-- Argent Shoulders
 			i(7060),	-- Azure Shoulders
 			i(10027),	-- Black Mageweave Shoulders
 			-- #if SEASON_OF_DISCOVERY
@@ -3398,7 +3398,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				["timeline"] = { "added 1.15.2" },
 			})),
 			-- #endif
-			applyclassicphase(PHASE_THREE, i(19050)),	-- Mantle of the Timbermaw
+			applyclassicphase(PHASE_THREE_RECIPES, i(19050)),	-- Mantle of the Timbermaw
 			i(14139),	-- Mooncloth Shoulders
 			i(10029),	-- Red Mageweave Shoulders
 			i(4315),	-- Reinforced Woolen Shoulders
@@ -3581,7 +3581,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			applyclassicphase(PHASE_THREE_SILITHUS_EXPEDITION_QUESTS, i(20539)),	-- Runed Stygian Belt
 			i(4328),	-- Spider Belt
 			i(4329),	-- Star Belt
-			applyclassicphase(PHASE_THREE, i(19047)),	-- Wisdom of the Timbermaw
+			applyclassicphase(PHASE_THREE_RECIPES, i(19047)),	-- Wisdom of the Timbermaw
 		}),
 		category(240, {	-- Pants
 			i(7046),	-- Azure Silk Pants
@@ -3623,7 +3623,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(14132),	-- Wizardweave Leggings
 		}),
 		category(241, {	-- Boots
-			applyclassicphase(PHASE_THREE, i(19056)),	-- Argent Boots
+			applyclassicphase(PHASE_THREE_RECIPES, i(19056)),	-- Argent Boots
 			i(10026),	-- Black Mageweave Boots
 			applyclassicphase(PHASE_FOUR, i(19684, {["timeline"] = {REMOVED_4_0_3, ADDED_10_0_7}})),	-- Bloodvine Boots
 			-- #if SEASON_OF_DISCOVERY

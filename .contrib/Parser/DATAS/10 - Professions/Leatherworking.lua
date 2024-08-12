@@ -1898,7 +1898,7 @@ profession(LEATHERWORKING, {
 					["name"] = "Earthen Leather Shoulders",
 					["recipeID"] = 9147,
 				},
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Golden Mantle of the Dawn",
 					["recipeID"] = 23706,
 				}),
@@ -2421,7 +2421,7 @@ profession(LEATHERWORKING, {
 					["timeline"] = { REMOVED_4_0_3 },
 					["recipeID"] = 19053,
 				},
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Chromatic Gauntlets",
 					["recipeID"] = 23708,
 				}),
@@ -2570,7 +2570,7 @@ profession(LEATHERWORKING, {
 					["recipeID"] = 26279,
 				},
 				-- #endif
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Timbermaw Brawlers",
 					["recipeID"] = 23704,
 				}),
@@ -2620,7 +2620,7 @@ profession(LEATHERWORKING, {
 					["recipeID"] = 226119,
 				},
 				-- #if AFTER TBC
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Corehound Belt",
 					["recipeID"] = 23709,
 				}),
@@ -2690,7 +2690,7 @@ profession(LEATHERWORKING, {
 					["name"] = "Hillman's Belt",
 					["recipeID"] = 3767,
 				},
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Lava Belt",
 					["recipeID"] = 23707,
 				}),
@@ -2699,12 +2699,12 @@ profession(LEATHERWORKING, {
 					["timeline"] = { ADDED_7_0_3 },
 					["recipeID"] = 226107,
 				},
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Might of the Timbermaw",
 					["recipeID"] = 23703,
 				}),
 				-- #if AFTER TBC
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Molten Belt",
 					["recipeID"] = 23710,
 				}),
@@ -2969,7 +2969,7 @@ profession(LEATHERWORKING, {
 					["name"] = "Dark Leather Boots",
 					["recipeID"] = 2167,
 				},
-				applyclassicphase(PHASE_THREE, {
+				applyclassicphase(PHASE_THREE_RECIPES, {
 					["name"] = "Dawn Treaders",
 					["recipeID"] = 23705,
 				}),
@@ -9559,14 +9559,14 @@ itemrecipe("Pattern: Chromatic Cloak", 18517, 22926, PHASE_ONE_DIREMAUL);
 itemrecipe("Pattern: Hide of the Wild", 18518, 22927, PHASE_ONE_DIREMAUL);
 itemrecipe("Pattern: Shifting Cloak", 18519, 22928, PHASE_ONE_DIREMAUL);
 
-itemrecipe("Pattern: Might of the Timbermaw", 19326, 23703, PHASE_THREE);
-itemrecipe("Pattern: Timbermaw Brawlers", 19327, 23704, PHASE_THREE);
-itemrecipe("Pattern: Dawn Treaders", 19328, 23705, PHASE_THREE);
-itemrecipe("Pattern: Golden Mantle of the Dawn", 19329, 23706, PHASE_THREE);
-itemrecipe("Pattern: Lava Belt", 19330, 23707, PHASE_THREE);
-itemrecipe("Pattern: Chromatic Gauntlets", 19331, 23708, PHASE_THREE);
-itemrecipe("Pattern: Corehound Belt", 19332, 23709, PHASE_THREE);
-itemrecipe("Pattern: Molten Belt", 19333, 23710, PHASE_THREE);
+itemrecipe("Pattern: Might of the Timbermaw", 19326, 23703, PHASE_THREE_RECIPES);
+itemrecipe("Pattern: Timbermaw Brawlers", 19327, 23704, PHASE_THREE_RECIPES);
+itemrecipe("Pattern: Dawn Treaders", 19328, 23705, PHASE_THREE_RECIPES);
+itemrecipe("Pattern: Golden Mantle of the Dawn", 19329, 23706, PHASE_THREE_RECIPES);
+itemrecipe("Pattern: Lava Belt", 19330, 23707, PHASE_THREE_RECIPES);
+itemrecipe("Pattern: Chromatic Gauntlets", 19331, 23708, PHASE_THREE_RECIPES);
+itemrecipe("Pattern: Corehound Belt", 19332, 23709, PHASE_THREE_RECIPES);
+itemrecipe("Pattern: Molten Belt", 19333, 23710, PHASE_THREE_RECIPES);
 
 itemrecipe("Pattern: Primal Batskin Jerkin", 19769, 24121, PHASE_FOUR);
 itemrecipe("Pattern: Primal Batskin Gloves", 19770, 24122, PHASE_FOUR);
