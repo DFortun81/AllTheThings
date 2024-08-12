@@ -478,13 +478,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							
 						},
 						{	-- Friendly
-							applyclassicphase(PHASE_THREE_RECIPES, i(22392)),	-- Formula: Enchant 2H Weapon - Agility (RECIPE!)
+							applyclassicphase(PHASE_THREE_ENCHANTS, i(22392)),	-- Formula: Enchant 2H Weapon - Agility (RECIPE!)
 							i(20253),	-- Pattern: Warbear Harness (RECIPE!)
 							i(20254),	-- Pattern: Warbear Woolies (RECIPE!)
 							i(13484),	-- Recipe: Transmute Earth to Water (RECIPE!)
 						},
 						{	-- Honored
-							applyclassicphase(PHASE_THREE_RECIPES, i(19445)),	-- Formula: Enchant Weapon - Agility (RECIPE!)
+							applyclassicphase(PHASE_THREE_ENCHANTS, i(19445)),	-- Formula: Enchant Weapon - Agility (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19202)),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19326)),	-- Pattern: Might of the Timbermaw (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19215)),	-- Pattern: Wisdom of the Timbermaw

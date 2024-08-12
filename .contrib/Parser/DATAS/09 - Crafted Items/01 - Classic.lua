@@ -346,7 +346,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		prof(9788, {	-- Armorsmith
 			["description"] = "These items can only be crafted by Blacksmiths who have completed the Art of the Armorsmith quest chain.",
 			["groups"] = {
-				applyclassicphase(PHASE_FOUR, i(20039)),	-- Dark Iron Boots
+				applyclassicphase(PHASE_FOUR_DARKIRON_RECIPES, i(20039)),	-- Dark Iron Boots
 				i(17014),	-- Dark Iron Bracers
 				applyclassicphase(PHASE_THREE_RECIPES, i(19164)),	-- Dark Iron Gauntlets
 				applyclassicphase(PHASE_THREE_RECIPES, i(19148)),	-- Dark Iron Helm
@@ -728,7 +728,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(12410),	-- Thorium Helm
 			i(12414),	-- Thorium Leggings
 			-- #if AFTER TBC
-			applyclassicphase(PHASE_FOUR, i(20039)),	-- Dark Iron Boots
+			applyclassicphase(PHASE_FOUR_DARKIRON_RECIPES, i(20039)),	-- Dark Iron Boots
 			i(17014),	-- Dark Iron Bracers
 			applyclassicphase(PHASE_THREE_RECIPES, i(19164)),	-- Dark Iron Gauntlets
 			applyclassicphase(PHASE_THREE_RECIPES, i(19148)),	-- Dark Iron Helm

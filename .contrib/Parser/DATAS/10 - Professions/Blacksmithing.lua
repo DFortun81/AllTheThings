@@ -2333,7 +2333,7 @@ profession(BLACKSMITHING, {
 					["recipeID"] = 3319,
 				},
 				-- #if AFTER TBC
-				applyclassicphase(PHASE_FOUR, {
+				applyclassicphase(PHASE_FOUR_DARKIRON_RECIPES, {
 					["name"] = "Dark Iron Boots",
 					["recipeID"] = 24399,
 				}),
@@ -4642,7 +4642,7 @@ itemrecipe("Plans: Bloodsoul Gauntlets", 19778, 24138, PHASE_FOUR);
 itemrecipe("Plans: Darksoul Breastplate", 19779, 24139, PHASE_FOUR);
 itemrecipe("Plans: Darksoul Leggings", 19780, 24140, PHASE_FOUR);
 itemrecipe("Plans: Darksoul Shoulders", 19781, 24141, PHASE_FOUR);
-itemrecipe("Plans: Dark Iron Boots", 20040, 24399, PHASE_FOUR);
+itemrecipe("Plans: Dark Iron Boots", 20040, 24399, PHASE_FOUR_DARKIRON_RECIPES);
 itemrecipe("Plans: Darkrune Gauntlets", 20553, 24912, PHASE_FOUR);
 itemrecipe("Plans: Darkrune Breastplate", 20554, 24914, PHASE_FOUR);
 itemrecipe("Plans: Darkrune Helm", 20555, 24913, PHASE_FOUR);

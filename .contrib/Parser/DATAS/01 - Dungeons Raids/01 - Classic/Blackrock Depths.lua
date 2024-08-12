@@ -2329,7 +2329,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					},
 					{	-- Friendly
-						applyclassicphase(PHASE_THREE_RECIPES, i(19444)),	-- Formula: Enchant Weapon - Strength (RECIPE!)
+						applyclassicphase(PHASE_THREE_ENCHANTS, i(19444)),	-- Formula: Enchant Weapon - Strength (RECIPE!)
 						i(17022),	-- Pattern: Corehound Boots (RECIPE!)
 						i(17018),	-- Pattern: Flarecore Gloves
 						i(17023),	-- Pattern: Molten Helm (RECIPE!)
@@ -2348,7 +2348,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["timeline"] = { "added 1.15.3" },
 						})),
 						-- #endif
-						applyclassicphase(PHASE_THREE_RECIPES, i(19448)),	-- Formula: Enchant Weapon - Mighty Versatility / CLASSIC: Formula: Enchant Weapon - Mighty Spirit (RECIPE!)
+						applyclassicphase(PHASE_THREE_ENCHANTS, i(19448)),	-- Formula: Enchant Weapon - Mighty Versatility / CLASSIC: Formula: Enchant Weapon - Mighty Spirit (RECIPE!)
 						i(17025),	-- Pattern: Black Dragonscale Boots (RECIPE!)
 						i(17017),	-- Pattern: Flarecore Mantle
 						applyclassicphase(PHASE_THREE_RECIPES, i(19219)),	-- Pattern: Flarecore Robe
@@ -2595,7 +2595,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #endif
 					},
 					{	-- Revered
-						applyclassicphase(PHASE_THREE_RECIPES, i(19449)),	-- Formula: Enchant Weapon - Mighty Intellect (RECIPE!)
+						applyclassicphase(PHASE_THREE_ENCHANTS, i(19449)),	-- Formula: Enchant Weapon - Mighty Intellect (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19331)),	-- Pattern: Chromatic Gauntlets (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19332)),	-- Pattern: Corehound Belt (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19220)),	-- Pattern: Flarecore Leggings
@@ -2608,7 +2608,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					},
 					{	-- Exalted
 						applyclassicphase(PHASE_THREE_RECIPES, i(19211)),	-- Plans: Blackguard (RECIPE!)
-						applyclassicphase(PHASE_FOUR,  i(20040)),	-- Plans: Dark Iron Boots (RECIPE!)
+						applyclassicphase(PHASE_FOUR_DARKIRON_RECIPES,  i(20040)),	-- Plans: Dark Iron Boots (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19210)),	-- Plans: Ebon Hand (RECIPE!)
 						applyclassicphase(PHASE_THREE_RECIPES, i(19212, {	-- Plans: Nightfall (RECIPE!)
 							-- #if SEASON_OF_DISCOVERY

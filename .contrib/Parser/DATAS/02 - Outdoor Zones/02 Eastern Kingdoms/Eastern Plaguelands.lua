@@ -4755,7 +4755,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							i(13724),	-- Enriched Manna Biscuit
 						},
 						{	-- Honored
-							applyclassicphase(PHASE_THREE_RECIPES, i(19446)),	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
+							applyclassicphase(PHASE_THREE_ENCHANTS, i(19446)),	-- Formula: Enchant Bracer - Argent Versatility / CLASSIC: Formula: Enchant Bracer - Mana Regeneration (RECIPE!)
 							i(19216),	-- Pattern: Argent Boots
 							applyclassicphase(PHASE_THREE_RECIPES, i(19328)),	-- Pattern: Dawn Treaders (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19203)),	-- Plans: Girdle of the Dawn (RECIPE!)
@@ -4885,7 +4885,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 									5513,	-- Mantles of the Dawn
 								},
 							}),
-							applyclassicphase(PHASE_THREE_RECIPES, i(19447)),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
+							applyclassicphase(PHASE_THREE_ENCHANTS, i(19447)),	-- Formula: Enchant Bracer - Healing Power (RECIPE!)
 							i(19217),	-- Pattern: Argent Shoulders
 							applyclassicphase(PHASE_THREE_RECIPES, i(19329)),	-- Pattern: Golden Mantle of the Dawn (RECIPE!)
 							-- #if SEASON_OF_DISCOVERY

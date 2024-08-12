@@ -329,7 +329,7 @@ profession(BLACKSMITHING, {
 				["name"] = "Boots",
 				["categoryID"] = 225,
 				["groups"] = {
-					applyclassicphase(PHASE_FOUR, {
+					applyclassicphase(PHASE_FOUR_DARKIRON_RECIPES, {
 						["name"] = "Dark Iron Boots",
 						["recipeID"] = 24399,
 						["requireSkill"] = 9788,
