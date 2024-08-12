@@ -51,6 +51,7 @@ CreateDatabaseContainer = function(name, noSubMeta)
 				for k,v in pairs(value) do
 					o[k] = v;
 				end
+			else print("WARN: Ignoring DB value! Can only assign Table values",key,"=>",value)
 			end
 		end,
 	});
