@@ -1375,7 +1375,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							i(18305),	-- Breakwater Legguards
 							i(18307),	-- Riptide Shoes
 							i(18322),	-- Waterspout Boots
-							applyclassicphase(PHASE_THREE, i(19268)),	-- Ace of Elementals
+							applyclassicphase(PHASE_THREE_DMF_CARDS, i(19268)),	-- Ace of Elementals
 						},
 					}),
 					e(402, {	-- Zevrim Thornhoof
@@ -1931,7 +1931,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							}),
 							i(18521),	-- Grimy Metal Boots
 							i(18522),	-- Band of the Ogre King
-							applyclassicphase(PHASE_THREE, i(19258)),	-- Ace of Warlords
+							applyclassicphase(PHASE_THREE_DMF_CARDS, i(19258)),	-- Ace of Warlords
 							i(18780, {	-- Top Half of Advanced Armorsmithing: Volume I
 								["timeline"] = { DELETED_4_0_3 },
 							}),

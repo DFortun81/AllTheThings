@@ -3012,7 +3012,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							-- #endif
 							["timeline"] = { REMOVED_2_0_1, ADDED_10_1_7 },	-- 07.09.2023 ATT DISCORD
 						}),
-						applyclassicphase(PHASE_THREE, i(19268)),	-- Ace of Elementals
+						applyclassicphase(PHASE_THREE_DMF_CARDS, i(19268)),	-- Ace of Elementals
 					},
 				}),
 				e(376, {	-- Fineous Darkvire <Chief Architect>

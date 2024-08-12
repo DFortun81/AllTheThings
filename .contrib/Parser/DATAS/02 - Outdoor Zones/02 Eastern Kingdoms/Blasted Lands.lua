@@ -1688,7 +1688,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 59.8, 46.4, BLASTED_LANDS },
 					},
 					["groups"] = {
-						applyclassicphase(PHASE_THREE, i(19260)),	-- Three of Warlords
+						applyclassicphase(PHASE_THREE_DMF_CARDS, i(19260)),	-- Three of Warlords
 					},
 					-- #endif
 				}),

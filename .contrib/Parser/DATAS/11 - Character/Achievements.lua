@@ -293,7 +293,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 	applyclassicphase(WRATH_PHASE_ONE, ach(558, {		-- Greedy
 		["timeline"] = { ADDED_3_0_2, REMOVED_8_0_1 },
 	})),
-	applyclassicphase(PHASE_THREE, ach(2336, {	-- Insane in the Membrane
+	applyclassicphase(PHASE_THREE_DMF_CARDS, ach(2336, {	-- Insane in the Membrane
 		-- #if ANYCLASSIC
 		["OnInit"] = INSANE_IN_THE_MEMBRANE_OnInit,
 		["OnTooltip"] = INSANE_IN_THE_MEMBRANE_OnTooltip,

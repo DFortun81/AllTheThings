@@ -2056,7 +2056,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
 						-- #if BEFORE 4.0.3
-						applyclassicphase(PHASE_THREE, i(19268)),	-- Ace of Elementals
+						applyclassicphase(PHASE_THREE_DMF_CARDS, i(19268)),	-- Ace of Elementals
 						-- #endif
 					},
 				}),

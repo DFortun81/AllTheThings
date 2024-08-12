@@ -2896,7 +2896,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 							},
 						})),
 						-- #if BEFORE 6.0.2
-						applyclassicphase(PHASE_THREE, i(19227)),	-- Ace of Beasts
+						applyclassicphase(PHASE_THREE_DMF_CARDS, i(19227)),	-- Ace of Beasts
 						-- #endif
 						prof(SKINNING, {
 							-- #if BEFORE TBC

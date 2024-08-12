@@ -1963,7 +1963,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 				-- #endif
 			})),
 			-- #if BEFORE 5.0.4
-			applyclassicphase(PHASE_THREE, i(19276)),	-- Ace of Portals
+			applyclassicphase(PHASE_THREE_DMF_CARDS, i(19276)),	-- Ace of Portals
 			-- #endif
 		},
 	}),

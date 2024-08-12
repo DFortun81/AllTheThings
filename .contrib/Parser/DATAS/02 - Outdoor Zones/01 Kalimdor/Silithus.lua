@@ -2562,7 +2562,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(21548, {	-- Pattern: Stormshroud Gloves (RECIPE!)
 							["timeline"] = { REMOVED_4_0_3 },
 						}),
-						applyclassicphase(PHASE_THREE, i(19268)),	-- Ace of Elementals
+						applyclassicphase(PHASE_THREE_DMF_CARDS, i(19268)),	-- Ace of Elementals
 					},
 				}),
 				n(51004, {	-- Toxx

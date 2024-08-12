@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 47.6, 62.0, BLACKROCK_MOUNTAIN_LEVEL3 },
 					},
 					["groups"] = {
-						applyclassicphase(PHASE_THREE, i(19259)),	-- Two of Warlords
+						applyclassicphase(PHASE_THREE_DMF_CARDS, i(19259)),	-- Two of Warlords
 						i(11603),	-- Vilerend Slicer
 					},
 				}),

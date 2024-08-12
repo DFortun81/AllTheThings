@@ -1349,7 +1349,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					TATTERED_DARKMOON_PRIZE_TICKET,
 				},
 			}),
-			applyclassicphase(PHASE_THREE, q(7907, {	-- Darkmoon Beast Deck
+			applyclassicphase(PHASE_THREE_DMF_CARDS, q(7907, {	-- Darkmoon Beast Deck
 				["providers"] = {
 					{ "i", 19228 },	-- Beasts Deck
 					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
@@ -1467,7 +1467,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(62048),	-- Darkmoon Card: Earthquake
 				},
 			})),
-			applyclassicphase(PHASE_THREE, q(7929, {	-- Darkmoon Elementals Deck
+			applyclassicphase(PHASE_THREE_DMF_CARDS, q(7929, {	-- Darkmoon Elementals Deck
 				["providers"] = {
 					{ "i", 19267 },	-- Elementals Deck
 					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
@@ -1658,7 +1658,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			-- #endif
-			applyclassicphase(PHASE_THREE, q(7927, {	-- Darkmoon Portals Deck
+			applyclassicphase(PHASE_THREE_DMF_CARDS, q(7927, {	-- Darkmoon Portals Deck
 				["providers"] = {
 					{ "i", 19277 },	-- Portals Deck
 					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
@@ -1803,7 +1803,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(62047),	-- Darkmoon Card: Volcano
 				},
 			})),
-			applyclassicphase(PHASE_THREE, q(7928, {	-- Darkmoon Warlords Deck
+			applyclassicphase(PHASE_THREE_DMF_CARDS, q(7928, {	-- Darkmoon Warlords Deck
 				["providers"] = {
 					{ "i", 19257 },	-- Warlords Deck
 					{ "n", 14847 },	-- Professor Thaddeus Paleo <Darkmoon Cards>
@@ -4307,7 +4307,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			}),
 		}),
 		category(3, {	-- Tarot Decks
-			applyclassicphase(PHASE_THREE, i(19228, {	-- Beasts Deck
+			applyclassicphase(PHASE_THREE_DMF_CARDS, i(19228, {	-- Beasts Deck
 				["cost"] = {
 					{ "i", 19227, 1 },	-- Ace of Beasts
 					{ "i", 19230, 1 },	-- Two of Beasts
@@ -4395,7 +4395,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i", 62003, 1 },	-- Eight of Stones
 				},
 			})),
-			applyclassicphase(PHASE_THREE, i(19267, {	-- Elementals Deck
+			applyclassicphase(PHASE_THREE_DMF_CARDS, i(19267, {	-- Elementals Deck
 				["cost"] = {
 					{ "i", 19268, 1 },	-- Ace of Elementals
 					{ "i", 19269, 1 },	-- Two of Elementals
@@ -4510,7 +4510,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 				},
 			})),
 			-- #endif
-			applyclassicphase(PHASE_THREE, i(19277, {	-- Portals Deck
+			applyclassicphase(PHASE_THREE_DMF_CARDS, i(19277, {	-- Portals Deck
 				["cost"] = {
 					{ "i", 19276, 1 },	-- Ace of Portals
 					{ "i", 19278, 1 },	-- Two of Portals
@@ -4630,7 +4630,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					{ "i", 61995, 1 },	-- Eight of Embers
 				},
 			})),
-			applyclassicphase(PHASE_THREE, i(19257, {	-- Warlords Deck
+			applyclassicphase(PHASE_THREE_DMF_CARDS, i(19257, {	-- Warlords Deck
 				["cost"] = {
 					{ "i", 19258, 1 },	-- Ace of Warlords
 					{ "i", 19259, 1 },	-- Two of Warlords

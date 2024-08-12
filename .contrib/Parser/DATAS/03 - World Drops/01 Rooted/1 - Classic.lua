@@ -3412,7 +3412,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		})),
 		-- #endif
 	}),
-	category(106, applyclassicphase(PHASE_THREE, {	-- Tarot Cards
+	category(106, applyclassicphase(PHASE_THREE_DMF_CARDS, {	-- Tarot Cards
 		i(19230),	-- Two of Beasts
 		i(19231),	-- Three of Beasts
 		i(19232),	-- Four of Beasts
