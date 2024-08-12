@@ -467,7 +467,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(190960),	-- Duck Tail Feathers
 			i(191104),	-- Durgun's Paw
 			i(193049),	-- Earth Key [DNT/UNUSED]
-			i(194687),	-- Echo of Duty
 			i(192454),	-- Elemental Essence
 			i(192478),	-- Elemental Focus
 			i(194428),	-- Elemental Soul Cage NYI
