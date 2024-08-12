@@ -3,6 +3,7 @@ using ATT.DB.Types;
 using NLua;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 
 namespace ATT
@@ -29,24 +30,8 @@ namespace ATT
                 {
                     case "IllusionDB":
                         {
-                            // The format of the Illusions DB is a list of generic objects.
-                            // This means that it becomes really easy to merge into the database.
-                            if (pair.Value is List<object> illusionDB)
-                            {
-                                foreach (var o in illusionDB)
-                                {
-                                    if (o is IDictionary<string, object> illusion)
-                                    {
-                                        ConditionalItemData.Add(illusion);
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                LogError("IllusionDB not in the correct format!");
-                                Log(CurrentFileName);
-                                Console.ReadLine();
-                            }
+                            LogError("IllusionDB not supported. Please use 'ItemDBConditional' and parser.config to assign Illusion objects.");
+                            Log(CurrentFileName);
                             break;
                         }
                     case "ItemDB":
@@ -57,18 +42,14 @@ namespace ATT
                             {
                                 foreach (var itemValuePair in itemDB)
                                 {
-                                    if (itemValuePair.Value is IDictionary<string, object> item)
-                                    {
-                                        item["itemID"] = itemValuePair.Key;
-                                        Items.MergeFromDB(item);
-                                    }
-                                    else
-                                    {
-                                        LogError("ItemDB not in the correct format!");
-                                        Log(CurrentFileName);
-                                        Log(ToJSON(itemValuePair.Value));
-                                        Console.ReadLine();
-                                    }
+                                    MergeKvpToItemDB(itemValuePair);
+                                }
+                            }
+                            else if (pair.Value is Dictionary<decimal, object> modItemDB)
+                            {
+                                foreach (var itemValuePair in modItemDB)
+                                {
+                                    MergeKvpToItemDB(itemValuePair);
                                 }
                             }
                             else if (pair.Value is List<object> items)
@@ -81,18 +62,13 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        LogError("ItemDB not in the correct format!");
-                                        Log(CurrentFileName);
-                                        Log(ToJSON(o));
-                                        Console.ReadLine();
+                                        ThrowBadFormatDB("ItemDB", o);
                                     }
                                 }
                             }
                             else
                             {
-                                LogError("ItemDB not in the correct format!");
-                                Log(CurrentFileName);
-                                Console.ReadLine();
+                                ThrowBadFormatDB("ItemDB");
                             }
                         }
                         break;
@@ -104,38 +80,14 @@ namespace ATT
                             {
                                 foreach (var itemValuePair in itemDB)
                                 {
-                                    if (itemValuePair.Value is IDictionary<string, object> item)
-                                    {
-                                        item["itemID"] = itemValuePair.Key;
-                                        Objects.MergeFromDB("itemID", item);
-                                        ConditionalItemData.Add(item);
-                                    }
-                                    else
-                                    {
-                                        LogError("ItemDB not in the correct format!");
-                                        Log(CurrentFileName);
-                                        Log(ToJSON(itemValuePair.Value));
-                                        Console.ReadLine();
-                                    }
+                                    MergeKvpToConditionalData(itemValuePair);
                                 }
                             }
                             else if (pair.Value is Dictionary<decimal, object> modItemDB)
                             {
                                 foreach (var itemValuePair in modItemDB)
                                 {
-                                    if (itemValuePair.Value is IDictionary<string, object> item)
-                                    {
-                                        item["itemID"] = itemValuePair.Key;
-                                        Objects.MergeFromDB("itemID", item);
-                                        ConditionalItemData.Add(item);
-                                    }
-                                    else
-                                    {
-                                        LogError("ItemDB not in the correct format!");
-                                        Log(CurrentFileName);
-                                        Log(ToJSON(itemValuePair.Value));
-                                        Console.ReadLine();
-                                    }
+                                    MergeKvpToConditionalData(itemValuePair);
                                 }
                             }
                             else if (pair.Value is List<object> items)
@@ -149,18 +101,13 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        LogError("ItemDB not in the correct format!");
-                                        Log(CurrentFileName);
-                                        Log(ToJSON(o));
-                                        Console.ReadLine();
+                                        ThrowBadFormatDB("ItemDBConditional", o);
                                     }
                                 }
                             }
                             else
                             {
-                                LogError("ItemDB not in the correct format!");
-                                Log(CurrentFileName);
-                                Console.ReadLine();
+                                ThrowBadFormatDB("ItemDBConditional");
                             }
                         }
                         break;
@@ -177,9 +124,7 @@ namespace ATT
                             }
                             else
                             {
-                                LogError($"{pair.Key} not in the correct format!");
-                                Log(CurrentFileName);
-                                Console.ReadLine();
+                                ThrowBadFormatDB(pair.Key, pair);
                             }
                         }
                         break;
@@ -191,31 +136,8 @@ namespace ATT
                         break;
                     case "ItemMountDB":
                         {
-                            // The format of the Item Mount DB is a dictionary of item ID -> Spell ID.
-                            // This is slightly more annoying to parse, but it works okay.
-                            if (pair.Value is Dictionary<long, object> itemMountDB)
-                            {
-                                foreach (var itemValuePair in itemMountDB)
-                                {
-                                    if (itemValuePair.Value is object o)
-                                    {
-                                        Items.SetMountSpellID(itemValuePair.Key, Convert.ToInt64(o));
-                                    }
-                                    else
-                                    {
-                                        LogError("ItemMountDB not in the correct format!");
-                                        Log(CurrentFileName);
-                                        Log(ToJSON(itemValuePair.Value));
-                                        Console.ReadLine();
-                                    }
-                                }
-                            }
-                            else
-                            {
-                                LogError("ItemMountDB not in the correct format!");
-                                Log(CurrentFileName);
-                                Console.ReadLine();
-                            }
+                            LogError("ItemMountDB not supported. Please use 'ItemDBConditional' to assign Mount objects.");
+                            Log(CurrentFileName);
                             break;
                         }
                     case "ItemSpeciesDB":
@@ -233,18 +155,13 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        LogError("ItemSpeciesDB not in the correct format!");
-                                        Log(CurrentFileName);
-                                        Log(ToJSON(itemValuePair.Value));
-                                        Console.ReadLine();
+                                        ThrowBadFormatDB("ItemSpeciesDB", itemValuePair);
                                     }
                                 }
                             }
                             else
                             {
-                                LogError("ItemSpeciesDB not in the correct format!");
-                                Log(CurrentFileName);
-                                Console.ReadLine();
+                                ThrowBadFormatDB("ItemSpeciesDB");
                             }
                             break;
                         }
@@ -252,7 +169,6 @@ namespace ATT
                         {
                             LogError("ItemToyDB not supported. Please use 'ItemDBConditional' and parser.config to assign Toy objects.");
                             Log(CurrentFileName);
-                            Console.ReadLine();
                             break;
                         }
                     case "Artifacts":
@@ -340,17 +256,13 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        LogError($"CategoryDB {keyValuePair.Key} not in the correct format!");
-                                        Log(CurrentFileName);
-                                        Console.ReadLine();
+                                        ThrowBadFormatDB("CategoryDB", keyValuePair);
                                     }
                                 }
                             }
                             else
                             {
-                                LogError("CategoryDB not in the correct format!");
-                                Log(CurrentFileName);
-                                Console.ReadLine();
+                                ThrowBadFormatDB("CategoryDB");
                             }
                             break;
                         }
@@ -471,17 +383,13 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        LogError($"FilterDB {keyValuePair.Key} not in the correct format!");
-                                        Log(CurrentFileName);
-                                        Console.ReadLine();
+                                        ThrowBadFormatDB("FilterDB", keyValuePair);
                                     }
                                 }
                             }
                             else
                             {
-                                LogError("FilterDB not in the correct format!");
-                                Log(CurrentFileName);
-                                Console.ReadLine();
+                                ThrowBadFormatDB("FilterDB");
                             }
                             break;
                         }
@@ -531,17 +439,13 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        LogError($"FlightPathDB {keyValuePair.Key} not in the correct format!");
-                                        Log(CurrentFileName);
-                                        Console.ReadLine();
+                                        ThrowBadFormatDB("FlightPathDB", keyValuePair);
                                     }
                                 }
                             }
                             else
                             {
-                                LogError("FlightPathDB not in the correct format!");
-                                Log(CurrentFileName);
-                                Console.ReadLine();
+                                ThrowBadFormatDB("FlightPathDB");
                             }
                             break;
                         }
@@ -591,17 +495,13 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        LogError($"ObjectDB {keyValuePair.Key} not in the correct format!");
-                                        Log(CurrentFileName);
-                                        Console.ReadLine();
+                                        ThrowBadFormatDB("ObjectDB", keyValuePair);
                                     }
                                 }
                             }
                             else
                             {
-                                LogError("ObjectDB not in the correct format!");
-                                Log(CurrentFileName);
-                                Console.ReadLine();
+                                ThrowBadFormatDB("ObjectDB");
                             }
                             break;
                         }
@@ -774,6 +674,38 @@ namespace ATT
                             break;
                         }
                 }
+            }
+        }
+
+        private static void ThrowBadFormatDB(string name, object obj = null)
+        {
+            throw new InvalidDataException($"{CurrentFileName}{Environment.NewLine}{name} not in the correct format! ==> {ToJSON(obj)}");
+        }
+
+        private static void MergeKvpToConditionalData<TKey>(KeyValuePair<TKey, object> itemValuePair)
+        {
+            if (itemValuePair.Value is IDictionary<string, object> item)
+            {
+                item["itemID"] = itemValuePair.Key;
+                Objects.MergeFromDB("itemID", item);
+                ConditionalItemData.Add(item);
+            }
+            else
+            {
+                ThrowBadFormatDB("ItemConditionalDB", itemValuePair);
+            }
+        }
+
+        private static void MergeKvpToItemDB<TKey>(KeyValuePair<TKey, object> itemValuePair)
+        {
+            if (itemValuePair.Value is IDictionary<string, object> item)
+            {
+                item["itemID"] = itemValuePair.Key;
+                Items.MergeFromDB(item);
+            }
+            else
+            {
+                ThrowBadFormatDB("ItemDB", itemValuePair);
             }
         }
 
@@ -1035,7 +967,7 @@ namespace ATT
             var dataList = Objects.CompressToList<object>(data);
             if (dataList == null)
             {
-                LogError("Failed to Parse AchievementDB");
+                ThrowBadFormatDB("AchievementDB");
             }
             else
             {
@@ -1091,8 +1023,7 @@ namespace ATT
             }
             else
             {
-                LogError($"DB:{CurrentFileName} not in the correct format!");
-                Console.ReadLine();
+                ThrowBadFormatDB("AchievementDB", rawDb);
             }
         }
 
@@ -1107,8 +1038,7 @@ namespace ATT
                 }
                 else
                 {
-                    LogError($"DB:{CurrentFileName} not in the correct format!", dbEntry.Value);
-                    Console.ReadLine();
+                    ThrowBadFormatDB("AchievementDB", dbEntry);
                 }
             }
         }
@@ -1127,8 +1057,7 @@ namespace ATT
                 }
                 else
                 {
-                    LogError($"DB:{CurrentFileName} not in the correct format!", o);
-                    Console.ReadLine();
+                    ThrowBadFormatDB("AchievementDB", o);
                 }
             }
         }

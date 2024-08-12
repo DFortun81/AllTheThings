@@ -1034,7 +1034,7 @@ namespace ATT
                 var filename = Path.Combine(directory, "Categories.lua");
                 var content = ATT.Export.ExportCompressedLuaCategories(AllContainerClones).ToString().Replace("\r\n", "\n").Trim();
                 if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end \n{content}";
-                if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8).Replace("\r\n", "\n").Trim() != content) File.WriteAllText(filename, content, Encoding.UTF8);
+                WriteIfDifferent(filename, content);
             }
 
             public static void ExportAutoLocale(string filename)
@@ -1066,7 +1066,7 @@ end");
 
                     string content = locale.ToString();
                     if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end \n{content}";
-                    if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8) != content) File.WriteAllText(filename, content, Encoding.UTF8);
+                    WriteIfDifferent(filename, content);
                 }
             }
 
@@ -1093,7 +1093,7 @@ end");
 
                     string content = data.ToString();
                     if (!string.IsNullOrEmpty(DATA_REQUIREMENTS)) content = $"if not ({DATA_REQUIREMENTS}) then return; end \n{content}";
-                    if (!File.Exists(filename) || File.ReadAllText(filename, Encoding.UTF8) != content) File.WriteAllText(filename, content, Encoding.UTF8);
+                    WriteIfDifferent(filename, content);
                 }
             }
             #endregion
