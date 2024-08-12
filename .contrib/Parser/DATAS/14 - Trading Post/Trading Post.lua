@@ -2353,9 +2353,6 @@ root(ROOTS.NeverImplemented, {
 			i(190173, {	-- Lil' Maka'jin (PET!)
 				["cost"] = {{"c", TRADERS_TENDER, 750}},
 			}),
-			i(190609, {	-- Watcher of the Huntress (PET!)
-				["cost"] = {{"c", TRADERS_TENDER, 750}},
-			}),
 		}),
 		filter(COSMETIC, {
 			-- 10.0.0

@@ -1275,9 +1275,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(190173, {	-- Lil' Maka'jin (PET!)
 				["displayID"] = 83638,
 			}),
-			i(190609, {	-- Watcher of the Huntress (PET!)
-				["displayID"] = 105429,
-			}),
 		})),
 
 		-- 10.0.7
