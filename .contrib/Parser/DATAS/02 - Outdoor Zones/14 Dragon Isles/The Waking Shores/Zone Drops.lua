@@ -56,7 +56,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					195448,	-- Blazing Firesquall
 					189581,	-- Lava Fledgling
 					187923,	-- Lava Hatchling
-					204110,	-- Lava Phoenix
+					191637,	-- Lava Phoenix (Waking Shores)
+					204110,	-- Lava Phoenix (Zaralek)
 					199829,	-- Magma Phoenix
 					189247,	-- Tamed Phoenix (Neltharus)
 				},
