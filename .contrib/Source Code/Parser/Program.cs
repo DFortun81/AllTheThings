@@ -163,6 +163,13 @@ namespace ATT
                     }
                     Framework.ALL_RACES = set.ToList();
 
+                    set.Clear();
+                    foreach (var race in lua.GetTable("ALL_CLASSES").Values.AsTypedEnumerable<long>())
+                    {
+                        set.Add(race);
+                    }
+                    Framework.ALL_CLASSES = set.ToList();
+
                     Framework.ALLIANCE_ONLY.Sort();
                     Framework.HORDE_ONLY.Sort();
                     Framework.ALL_RACES.Sort();

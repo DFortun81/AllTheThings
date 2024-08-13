@@ -898,6 +898,7 @@ namespace ATT
             Consolidate_General(data);
 
             Consolidate_lvl(data);
+            Consolidate_c(data);
             Consolidate_providers(data);
             Consolidate_sourceQuests(data);
             Consolidate_altQuests(data);
@@ -1049,6 +1050,17 @@ namespace ATT
             CaptureDebugDBData(data);
 
             return true;
+        }
+
+        private static void Consolidate_c(IDictionary<string, object> data)
+        {
+            if (!data.TryGetValue("c", out List<object> c)) return;
+
+            if (c.Matches(ALL_CLASSES))
+            {
+                data.Remove("c");
+                LogDebug("INFO: Removed 'c' which is equivalent to ALL_CLASSES", data);
+            }
         }
 
         private static void EnsembleCleanup(IDictionary<string, object> data)

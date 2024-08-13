@@ -135,6 +135,7 @@ namespace ATT
         public static List<object> ALLIANCE_ONLY;
         public static List<object> HORDE_ONLY;
         public static List<object> ALL_RACES;
+        public static List<object> ALL_CLASSES;
 
         private static readonly Dictionary<string, Dictionary<long, bool>> REFERENCED =
             new Dictionary<string, Dictionary<long, bool>>
