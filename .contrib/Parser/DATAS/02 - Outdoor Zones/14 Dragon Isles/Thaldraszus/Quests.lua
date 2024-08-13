@@ -1192,6 +1192,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 192543 },	-- Archivist Arenial
 				["coord"] = { 60.3, 81.9, THALDRASZUS },
 				["g"] = {
+					i(194687),	-- Echo of Duty (QI!)
 					i(195218),	-- Highfather's Burden
 					i(195215),	-- Highfather's Cover
 					i(195216),	-- Highfather's Guard
