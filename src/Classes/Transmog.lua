@@ -664,7 +664,7 @@ do
 		[33] = true,	-- Crossbows
 		[34] = true,	-- Fist Weapons
 	};
-	
+
 	-- An appearance must be associated with an item since the Item link is displayed in Transmog UI
 	local createItemWithAppearance = app.ExtendClass("Item", "ItemWithAppearance", "sourceID", {
 		collectible = function(t)
@@ -1092,8 +1092,8 @@ if app.IsRetail then
 			-- app.PrintDebug("Non-bound SourceID",sourceID,link)
 			return
 		end
-		if item.nmc or item.nmr then
-			-- app.PrintDebug("Wrong class/race SourceID",sourceID,link)
+		if item.nmr then
+			-- app.PrintDebug("Wrong race SourceID",sourceID,link)
 			return
 		end
 
