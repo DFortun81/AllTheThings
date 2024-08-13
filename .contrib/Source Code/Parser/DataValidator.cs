@@ -82,7 +82,7 @@ namespace ATT
                     {
                         if (!validation.IsValid(val))
                         {
-                            Framework.LogError($"Validation Failure for field '{validation.Key}':", data);
+                            Framework.LogError($"Validation Failure for field '{validation.Key}' ({validation.Reason}):", data);
                         }
                     }
                 }
@@ -163,6 +163,10 @@ namespace ATT
             {
                 AddValidation(fieldName, new Validation_match<string>(fieldName, set));
             }
+            else if (firstValue is bool _)
+            {
+                AddValidation(fieldName, new Validation_match<bool>(fieldName, set));
+            }
             else
             {
                 throw new ArgumentException($"Unhandled Validation Type:{firstValue.GetType().Name}");
@@ -183,6 +187,7 @@ namespace ATT
     internal interface IValidation
     {
         string Key { get; }
+        string Reason { get; }
         bool IsValid(object value);
         void Clean(IDictionary<string, object> data);
     }
@@ -191,12 +196,16 @@ namespace ATT
     {
         public string Key { get; private set; }
 
+        public string Reason { get; private set; }
+
         internal HashSet<T> Values { get; set; }
 
         internal Validation_match(string key, IEnumerable<object> values)
         {
             Key = key;
-            Values = new HashSet<T>(values.AsTypedEnumerable<T>());
+            var valList = values.AsTypedEnumerable<T>().ToList();
+            Values = new HashSet<T>(valList);
+            Reason = "Allowed Values: " + Framework.ToJSON(valList);
         }
 
         public bool IsValid(object value)
@@ -227,6 +236,10 @@ namespace ATT
                 {
                     return false;
                 }
+            }
+            else
+            {
+                return false;
             }
 
             return true;
@@ -282,6 +295,8 @@ namespace ATT
     {
         public string Key { get; private set; }
 
+        public string Reason { get; private set; }
+
         internal long Min { get; set; }
 
         internal long Max { get; set; }
@@ -291,6 +306,7 @@ namespace ATT
             Key = key;
             Min = values.ElementAt(0);
             Max = values.ElementAt(1);
+            Reason = $"Value Range: {Min} -> {Max}";
         }
 
         public bool IsValid(object value)
@@ -321,6 +337,10 @@ namespace ATT
                 {
                     return false;
                 }
+            }
+            else
+            {
+                return false;
             }
 
             return true;
