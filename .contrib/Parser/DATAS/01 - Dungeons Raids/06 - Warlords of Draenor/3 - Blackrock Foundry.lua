@@ -728,6 +728,144 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 							37031,	-- Sigil of the Black Hand (Mythic)
 						},
 					}),
+					q(37553, {	-- Essence of the Iron Conqueror
+						["provider"] = { "i", 120277 },	-- Essence of the Iron Conqueror
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["g"] = {
+							i(120215, {	-- Helm of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_HELM, 3),
+							}),
+							i(120216, {	-- Shoulders of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_SHLDR, 3),
+							}),
+							i(120212, {	-- Chest of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_CHEST, 3),
+							}),
+							i(120213, {	-- Gauntlets of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_GLOVE, 3),
+							}),
+							i(120214, {	-- Leggings of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_LEGS, 3),
+							}),
+						},
+					}),
+					q(37540, {	-- Essence of the Iron Conqueror
+						["provider"] = { "i", 119310 },	-- ITEM
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["g"] = {
+							i(120215, {	-- Helm of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_HELM, 3),
+							}),
+							i(120216, {	-- Shoulders of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_SHLDR, 3),
+							}),
+							i(120212, {	-- Chest of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_CHEST, 3),
+							}),
+							i(120213, {	-- Gauntlets of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_GLOVE, 3),
+							}),
+							i(120214, {	-- Leggings of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_LEGS, 3),
+							}),
+						},
+					}),
+					q(37555, {	-- Essence of the Iron Protector
+						["provider"] = { "i", 120279 },	-- Essence of the Iron Protector
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["g"] = {
+							i(120225, {	-- Helm of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_HELM, 3),
+							}),
+							i(120226, {	-- Shoulders of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_SHLDR, 3),
+							}),
+							i(120222, {	-- Chest of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_CHEST, 3),
+							}),
+							i(120223, {	-- Gauntlets of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_GLOVE, 3),
+							}),
+							i(120224, {	-- Leggings of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_LEGS, 3),
+							}),
+						},
+					}),
+					q(37543, {	-- Essence of the Iron Protector
+						["provider"] = { "i", 119323 },	-- Essence of the Iron Protector
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["g"] = {
+							i(120225, {	-- Helm of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_HELM, 3),
+							}),
+							i(120226, {	-- Shoulders of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_SHLDR, 3),
+							}),
+							i(120222, {	-- Chest of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_CHEST, 3),
+							}),
+							i(120223, {	-- Gauntlets of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_GLOVE, 3),
+							}),
+							i(120224, {	-- Leggings of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_LEGS, 3),
+							}),
+						},
+					}),
+					q(37554, {	-- Essence of the Iron Vanquisher
+						["provider"] = { "i", 120278 },	-- Essence of the Iron Vanquisher
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["g"] = {
+							i(120218, {	-- Helm of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_HELM, 3),
+							}),
+							i(120220, {	-- Shoulders of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_SHLDR, 3),
+							}),
+							i(120221, {	-- Chest of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_CHEST, 3),
+							}),
+							i(120217, {	-- Gauntlets of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_GLOVE, 3),
+							}),
+							i(120219, {	-- Leggings of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_LEGS, 3),
+							}),
+						},
+					}),
+					q(37541, {	-- Essence of the Iron Vanquisher
+						["provider"] = { "i", 119316 },	-- Essence of the Iron Vanquisher
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["g"] = {
+							i(120218, {	-- Helm of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_HELM, 3),
+							}),
+							i(120220, {	-- Shoulders of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_SHLDR, 3),
+							}),
+							i(120221, {	-- Chest of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_CHEST, 3),
+							}),
+							i(120217, {	-- Gauntlets of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_GLOVE, 3),
+							}),
+							i(120219, {	-- Leggings of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_LEGS, 3),
+							}),
+						},
+					}),
 				}),
 				ZoneDrops(),
 				Boss(OREGORGER),
@@ -739,152 +877,28 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 				Boss(BEASTLORD_DARMAC),
 				Boss(OPERATOR_THOGAR),
 				Boss(IRON_MAIDENS),
-				Boss(BLACKHAND, {	-- Blackhand
+				Boss(BLACKHAND, sharedData({
+					["ignoreBonus"] = true,	-- in-game this drops with no modID
+				},{
 					i(120277, {	-- Essence of the Iron Conqueror
-						["questID"] = 37553,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
 						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["g"] = {
-							i(120215, {	-- Helm of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_HELM, 3),
-							}),
-							i(120216, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_SHLDR, 3),
-							}),
-							i(120212, {	-- Chest of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_CHEST, 3),
-							}),
-							i(120213, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_GLOVE, 3),
-							}),
-							i(120214, {	-- Leggings of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_LEGS, 3),
-							}),
-						},
 					}),
 					i(119310, {	-- Essence of the Iron Conqueror
-						["questID"] = 37540,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
 						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["g"] = {
-							i(120215, {	-- Helm of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_HELM, 3),
-							}),
-							i(120216, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_SHLDR, 3),
-							}),
-							i(120212, {	-- Chest of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_CHEST, 3),
-							}),
-							i(120213, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_GLOVE, 3),
-							}),
-							i(120214, {	-- Leggings of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_LEGS, 3),
-							}),
-						},
 					}),
 					i(120279, {	-- Essence of the Iron Protector
-						["questID"] = 37555,
 						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
-							i(120225, {	-- Helm of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_HELM, 3),
-							}),
-							i(120226, {	-- Shoulders of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_SHLDR, 3),
-							}),
-							i(120222, {	-- Chest of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_CHEST, 3),
-							}),
-							i(120223, {	-- Gauntlets of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_GLOVE, 3),
-							}),
-							i(120224, {	-- Leggings of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_LEGS, 3),
-							}),
-						},
 					}),
 					i(119323, {	-- Essence of the Iron Protector
-						["questID"] = 37543,
 						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
-							i(120225, {	-- Helm of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_HELM, 3),
-							}),
-							i(120226, {	-- Shoulders of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_SHLDR, 3),
-							}),
-							i(120222, {	-- Chest of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_CHEST, 3),
-							}),
-							i(120223, {	-- Gauntlets of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_GLOVE, 3),
-							}),
-							i(120224, {	-- Leggings of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_LEGS, 3),
-							}),
-						},
 					}),
 					i(120278, {	-- Essence of the Iron Vanquisher
-						["questID"] = 37554,
 						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
-							i(120218, {	-- Helm of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_HELM, 3),
-							}),
-							i(120220, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_SHLDR, 3),
-							}),
-							i(120221, {	-- Chest of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_CHEST, 3),
-							}),
-							i(120217, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_GLOVE, 3),
-							}),
-							i(120219, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_LEGS, 3),
-							}),
-						},
 					}),
 					i(119316, {	-- Essence of the Iron Vanquisher
-						["questID"] = 37541,
 						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
-							i(120218, {	-- Helm of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_HELM, 3),
-							}),
-							i(120220, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_SHLDR, 3),
-							}),
-							i(120221, {	-- Chest of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_CHEST, 3),
-							}),
-							i(120217, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_GLOVE, 3),
-							}),
-							i(120219, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_LEGS, 3),
-							}),
-						},
 					}),
-				}),
+				})),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				n(QUESTS, {
@@ -892,6 +906,144 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Heroic difficulty each week.\n\n|cfffd1818This quest becomes unobtainable if you complete the Mythic version first.|r\n",
 						["altQuests"] = { 37031 },	-- Sigil of the Black Hand (Mythic)
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
+					}),
+					q(37557, {	-- Essence of the Iron Conqueror
+						["provider"] = { "i", 120280 },	-- Essence of the Iron Conqueror
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["g"] = {
+							i(120230, {	-- Helm of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_HELM, 5),
+							}),
+							i(120231, {	-- Shoulders of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_SHLDR, 5),
+							}),
+							i(120227, {	-- Chest of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_CHEST, 5),
+							}),
+							i(120228, {	-- Gauntlets of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_GLOVE, 5),
+							}),
+							i(120229, {	-- Leggings of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_LEGS, 5),
+							}),
+						},
+					}),
+					q(37551, {	-- Essence of the Iron Conqueror
+						["provider"] = { "i", 120206 },	-- Essence of the Iron Conqueror
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["g"] = {
+							i(120230, {	-- Helm of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_HELM, 5),
+							}),
+							i(120231, {	-- Shoulders of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_SHLDR, 5),
+							}),
+							i(120227, {	-- Chest of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_CHEST, 5),
+							}),
+							i(120228, {	-- Gauntlets of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_GLOVE, 5),
+							}),
+							i(120229, {	-- Leggings of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_LEGS, 5),
+							}),
+						},
+					}),
+					q(37559, {	-- Essence of the Iron Protector
+						["provider"] = { "i", 120281 },	-- Essence of the Iron Protector
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["g"] = {
+							i(120240, {	-- Helm of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_HELM, 5),
+							}),
+							i(120241, {	-- Shoulders of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_SHLDR, 5),
+							}),
+							i(120237, {	-- Chest of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_CHEST, 5),
+							}),
+							i(120238, {	-- Gauntlets of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_GLOVE, 5),
+							}),
+							i(120239, {	-- Leggings of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_LEGS, 5),
+							}),
+						},
+					}),
+					q(37547, {	-- Essence of the Iron Protector
+						["provider"] = { "i", 120207 },	-- Essence of the Iron Protector
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["g"] = {
+							i(120240, {	-- Helm of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_HELM, 5),
+							}),
+							i(120241, {	-- Shoulders of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_SHLDR, 5),
+							}),
+							i(120237, {	-- Chest of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_CHEST, 5),
+							}),
+							i(120238, {	-- Gauntlets of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_GLOVE, 5),
+							}),
+							i(120239, {	-- Leggings of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_LEGS, 5),
+							}),
+						},
+					}),
+					q(37558, {	-- Essence of the Iron Vanquisher
+						["provider"] = { "i", 120282 },	-- Essence of the Iron Vanquisher
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["g"] = {
+							i(120233, {	-- Helm of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_HELM, 5),
+							}),
+							i(120235, {	-- Shoulders of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_SHLDR, 5),
+							}),
+							i(120236, {	-- Chest of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_CHEST, 5),
+							}),
+							i(120232, {	-- Gauntlets of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_GLOVE, 5),
+							}),
+							i(120234, {	-- Leggings of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_LEGS, 5),
+							}),
+						},
+					}),
+					q(37549, {	-- Essence of the Iron Vanquisher
+						["provider"] = { "i", 120208 },	-- Essence of the Iron Vanquisher
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["g"] = {
+							i(120233, {	-- Helm of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_HELM, 5),
+							}),
+							i(120235, {	-- Shoulders of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_SHLDR, 5),
+							}),
+							i(120236, {	-- Chest of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_CHEST, 5),
+							}),
+							i(120232, {	-- Gauntlets of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_GLOVE, 5),
+							}),
+							i(120234, {	-- Leggings of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_LEGS, 5),
+							}),
+						},
 					}),
 				}),
 				ZoneDrops(),
@@ -908,157 +1060,173 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 					ach(9444, {	-- Ahead of the Curve: Blackhand's Crucible
 						["u"] = REMOVED_FROM_GAME,
 					}),
+				}),
+				Boss(BLACKHAND, sharedData({
+					["ignoreBonus"] = true,	-- in-game this drops with no modID
+				},{
 					i(120280, {	-- Essence of the Iron Conqueror
-						["questID"] = 37557,
 						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
-							i(120230, {	-- Helm of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_HELM, 5),
-							}),
-							i(120231, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_SHLDR, 5),
-							}),
-							i(120227, {	-- Chest of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_CHEST, 5),
-							}),
-							i(120228, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_GLOVE, 5),
-							}),
-							i(120229, {	-- Leggings of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_LEGS, 5),
-							}),
-						},
 					}),
 					i(120206, {	-- Essence of the Iron Conqueror
-						["questID"] = 37551,
 						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
-							i(120230, {	-- Helm of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_HELM, 5),
-							}),
-							i(120231, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_SHLDR, 5),
-							}),
-							i(120227, {	-- Chest of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_CHEST, 5),
-							}),
-							i(120228, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_GLOVE, 5),
-							}),
-							i(120229, {	-- Leggings of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_LEGS, 5),
-							}),
-						},
 					}),
 					i(120281, {	-- Essence of the Iron Protector
-						["questID"] = 37559,
 						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
-							i(120240, {	-- Helm of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_HELM, 5),
-							}),
-							i(120241, {	-- Shoulders of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_SHLDR, 5),
-							}),
-							i(120237, {	-- Chest of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_CHEST, 5),
-							}),
-							i(120238, {	-- Gauntlets of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_GLOVE, 5),
-							}),
-							i(120239, {	-- Leggings of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_LEGS, 5),
-							}),
-						},
 					}),
 					i(120207, {	-- Essence of the Iron Protector
-						["questID"] = 37547,
 						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
-							i(120240, {	-- Helm of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_HELM, 5),
-							}),
-							i(120241, {	-- Shoulders of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_SHLDR, 5),
-							}),
-							i(120237, {	-- Chest of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_CHEST, 5),
-							}),
-							i(120238, {	-- Gauntlets of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_GLOVE, 5),
-							}),
-							i(120239, {	-- Leggings of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_LEGS, 5),
-							}),
-						},
 					}),
 					i(120282, {	-- Essence of the Iron Vanquisher
-						["questID"] = 37558,
 						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
-							i(120233, {	-- Helm of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_HELM, 5),
-							}),
-							i(120235, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_SHLDR, 5),
-							}),
-							i(120236, {	-- Chest of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_CHEST, 5),
-							}),
-							i(120232, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_GLOVE, 5),
-							}),
-							i(120234, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_LEGS, 5),
-							}),
-						},
 					}),
 					i(120208, {	-- Essence of the Iron Vanquisher
-						["questID"] = 37549,
 						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
-							i(120233, {	-- Helm of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_HELM, 5),
-							}),
-							i(120235, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_SHLDR, 5),
-							}),
-							i(120236, {	-- Chest of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_CHEST, 5),
-							}),
-							i(120232, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_GLOVE, 5),
-							}),
-							i(120234, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_LEGS, 5),
-							}),
-						},
 					}),
-				}),
+				})),
 			}),
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				n(QUESTS, {
 					q(37031, {	-- Sigil of the Black Hand (Mythic)
 						["provider"] = { "n", 87225 },	-- Goraluk Anvilcrack
 						["description"] = "The questgiver is hidden behind a load of boxes and crates to the right of the Iron Maidens.\n\nFinishing this quest will grant you immediate access to Blackhand on Mythic difficulty each week.",
+					}),
+					q(37560, {	-- Essence of the Iron Conqueror
+						["provider"] = { "i", 120283 },	-- Essence of the Iron Conqueror
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["g"] = {
+							i(120245, {	-- Helm of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_HELM, 6),
+							}),
+							i(120246, {	-- Shoulders of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_SHLDR, 6),
+							}),
+							i(120242, {	-- Chest of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_CHEST, 6),
+							}),
+							i(120243, {	-- Gauntlets of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_GLOVE, 6),
+							}),
+							i(120244, {	-- Leggings of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_LEGS, 6),
+							}),
+						},
+					}),
+					q(37552, {	-- Essence of the Iron Conqueror
+						["provider"] = { "i", 120209 },	-- Essence of the Iron Conqueror
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["g"] = {
+							i(120245, {	-- Helm of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_HELM, 6),
+							}),
+							i(120246, {	-- Shoulders of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_SHLDR, 6),
+							}),
+							i(120242, {	-- Chest of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_CHEST, 6),
+							}),
+							i(120243, {	-- Gauntlets of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_GLOVE, 6),
+							}),
+							i(120244, {	-- Leggings of the Iron Conqueror
+								["sym"] = SymModID(SYM_CONQ_LEGS, 6),
+							}),
+						},
+					}),
+                    q(37562, {	-- Essence of the Iron Protector
+						["provider"] = { "i", 120284 },	-- Essence of the Iron Protector
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["g"] = {
+							i(120255, {	-- Helm of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_HELM, 6),
+							}),
+							i(120256, {	-- Shoulders of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_SHLDR, 6),
+							}),
+							i(120252, {	-- Chest of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_CHEST, 6),
+							}),
+							i(120253, {	-- Gauntlets of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_GLOVE, 6),
+							}),
+							i(120254, {	-- Leggings of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_LEGS, 6),
+							}),
+						},
+					}),
+					q(37548, {	-- Essence of the Iron Protector
+						["provider"] = { "i", 120210 },	-- Essence of the Iron Protector
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["g"] = {
+							i(120255, {	-- Helm of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_HELM, 6),
+							}),
+							i(120256, {	-- Shoulders of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_SHLDR, 6),
+							}),
+							i(120252, {	-- Chest of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_CHEST, 6),
+							}),
+							i(120253, {	-- Gauntlets of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_GLOVE, 6),
+							}),
+							i(120254, {	-- Leggings of the Iron Protector
+								["sym"] = SymModID(SYM_PROT_LEGS, 6),
+							}),
+						},
+					}),
+					q(37561, {	-- Essence of the Iron Vanquisher
+						["provider"] = { "i", 120285 },	-- Essence of the Iron Vanquisher
+						["races"] = ALLIANCE_ONLY,
+						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["g"] = {
+							i(120248, {	-- Helm of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_HELM, 6),
+							}),
+							i(120250, {	-- Shoulders of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_SHLDR, 6),
+							}),
+							i(120251, {	-- Chest of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_CHEST, 6),
+							}),
+							i(120247, {	-- Gauntlets of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_GLOVE, 6),
+							}),
+							i(120249, {	-- Leggings of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_LEGS, 6),
+							}),
+						},
+					}),
+					q(37550, {	-- Essence of the Iron Vanquisher
+						["provider"] = { "i", 120211 },	-- Essence of the Iron Vanquisher
+						["races"] = HORDE_ONLY,
+						["repeatable"] = true,
+						["_drop"] = { "g" },	-- API lists all 3 token types
+						["g"] = {
+							i(120248, {	-- Helm of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_HELM, 6),
+							}),
+							i(120250, {	-- Shoulders of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_SHLDR, 6),
+							}),
+							i(120251, {	-- Chest of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_CHEST, 6),
+							}),
+							i(120247, {	-- Gauntlets of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_GLOVE, 6),
+							}),
+							i(120249, {	-- Leggings of the Iron Vanquisher
+								["sym"] = SymModID(SYM_VANQ_LEGS, 6),
+							}),
+						},
 					}),
 				}),
 				ZoneDrops(),
@@ -1103,152 +1271,30 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						title(301),	-- Ironbane
 					}),
 					ach(9421),	-- Mythic: Warlord Blackhand Guild Run
-					i(120283, {	-- Essence of the Iron Conqueror
-						["questID"] = 37560,	-- Essence of the Iron Conqueror
-						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
-							i(120245, {	-- Helm of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_HELM, 6),
-							}),
-							i(120246, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_SHLDR, 6),
-							}),
-							i(120242, {	-- Chest of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_CHEST, 6),
-							}),
-							i(120243, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_GLOVE, 6),
-							}),
-							i(120244, {	-- Leggings of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_LEGS, 6),
-							}),
-						},
-					}),
-					i(120209, {	-- Essence of the Iron Conqueror
-						["questID"] = 37552,	-- Essence of the Iron Conqueror
-						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
-							i(120245, {	-- Helm of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_HELM, 6),
-							}),
-							i(120246, {	-- Shoulders of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_SHLDR, 6),
-							}),
-							i(120242, {	-- Chest of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_CHEST, 6),
-							}),
-							i(120243, {	-- Gauntlets of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_GLOVE, 6),
-							}),
-							i(120244, {	-- Leggings of the Iron Conqueror
-								["sym"] = SymModID(SYM_CONQ_LEGS, 6),
-							}),
-						},
-					}),
-                    i(120284, {	-- Essence of the Iron Protector
-						["questID"] = 37562,	-- Essence of the Iron Protector
-						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
-							i(120255, {	-- Helm of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_HELM, 6),
-							}),
-							i(120256, {	-- Shoulders of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_SHLDR, 6),
-							}),
-							i(120252, {	-- Chest of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_CHEST, 6),
-							}),
-							i(120253, {	-- Gauntlets of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_GLOVE, 6),
-							}),
-							i(120254, {	-- Leggings of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_LEGS, 6),
-							}),
-						},
-					}),
-					i(120210, {	-- Essence of the Iron Protector
-						["questID"] = 37548,	-- Essence of the Iron Protector
-						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
-							i(120255, {	-- Helm of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_HELM, 6),
-							}),
-							i(120256, {	-- Shoulders of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_SHLDR, 6),
-							}),
-							i(120252, {	-- Chest of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_CHEST, 6),
-							}),
-							i(120253, {	-- Gauntlets of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_GLOVE, 6),
-							}),
-							i(120254, {	-- Leggings of the Iron Protector
-								["sym"] = SymModID(SYM_PROT_LEGS, 6),
-							}),
-						},
-					}),
-					i(120285, {	-- Essence of the Iron Vanquisher
-						["questID"] = 37561,	-- Essence of the Iron Vanquisher
-						["races"] = ALLIANCE_ONLY,
-						["repeatable"] = true,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
-							i(120248, {	-- Helm of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_HELM, 6),
-							}),
-							i(120250, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_SHLDR, 6),
-							}),
-							i(120251, {	-- Chest of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_CHEST, 6),
-							}),
-							i(120247, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_GLOVE, 6),
-							}),
-							i(120249, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_LEGS, 6),
-							}),
-						},
-					}),
-					i(120211, {	-- Essence of the Iron Vanquisher
-						["questID"] = 37550,	-- Essence of the Iron Vanquisher
-						["races"] = HORDE_ONLY,
-						["repeatable"] = true,
-						["modID"] = 0,	-- in-game this drops with no modID
-						["_drop"] = { "g" },	-- API lists all 3 token types
-						["g"] = {
-							i(120248, {	-- Helm of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_HELM, 6),
-							}),
-							i(120250, {	-- Shoulders of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_SHLDR, 6),
-							}),
-							i(120251, {	-- Chest of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_CHEST, 6),
-							}),
-							i(120247, {	-- Gauntlets of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_GLOVE, 6),
-							}),
-							i(120249, {	-- Leggings of the Iron Vanquisher
-								["sym"] = SymModID(SYM_VANQ_LEGS, 6),
-							}),
-						},
-					}),
 					i(116660),	-- Ironhoof Destroyer (MOUNT!)
 				}),
+				Boss(BLACKHAND, sharedData({
+					["ignoreBonus"] = true,	-- in-game this drops with no modID
+				},{
+					i(120283, {	-- Essence of the Iron Conqueror
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(120209, {	-- Essence of the Iron Conqueror
+						["races"] = HORDE_ONLY,
+					}),
+                    i(120284, {	-- Essence of the Iron Protector
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(120210, {	-- Essence of the Iron Protector
+						["races"] = HORDE_ONLY,
+					}),
+					i(120285, {	-- Essence of the Iron Vanquisher
+						["races"] = ALLIANCE_ONLY,
+					}),
+					i(120211, {	-- Essence of the Iron Vanquisher
+						["races"] = HORDE_ONLY,
+					}),
+				})),
 			})
 		},
 	}),
