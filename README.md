@@ -36,7 +36,7 @@ If you just updated and are getting tons of errors, completely close your game a
 
 - [Discord](https://discord.gg/allthethings)
 - [Issues](https://github.com/DFortun81/AllTheThings/issues)
-- [FAQ](https://wow.curseforge.com/projects/all-the-things/pages/f-a-q)
+- [FAQ](https://legacy.curseforge.com/wow/addons/all-the-things/pages/f-a-q)
 - [WAGO.io](https://addons.wago.io/addons/allthethings)
 
 ## Contributors
