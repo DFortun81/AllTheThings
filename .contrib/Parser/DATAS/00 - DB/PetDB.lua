@@ -3822,7 +3822,6 @@ i(190607, 3252);	-- Garrlok
 i(193855, 3334);	-- Time-Lost Vorquin Foal
 --- NYI ---
 i(190173, 3242);	-- Lil' Maka'jin
-i(190609, 3254);	-- Watcher of the Huntress
 
 ------------------
 -- PATCH 10.0.7 --
@@ -4145,6 +4144,7 @@ i(221848, 4463);	-- Tiberius
 i(221849, 4465);	-- Vanilla
 i(221761, 4511);	-- Venomwing
 i(225337, 4506);	-- Violet Sporbit
+i(190609, 3254);	-- Watcher of the Huntress
 i(221821, 4517);	-- Waxwick
 i(224760, 4597);	-- Wobbles
 i(221496, 4496);	-- Wriggle
