@@ -48,6 +48,9 @@ root(ROOTS.Promotions, {
 					ADDED_10_0_2_LAUNCH,
 					REMOVED_10_0_2_LAUNCH,
 				},
+				-- #if BEFORE 10.0.2
+				["u"] = BLIZZARD_BALANCE,
+				-- #endif
 			}),
 			i(70099, {	-- Cenarion Hatchling (PET!)
 				["description"] = "Obtained through watching the Race to World First streams with Drops enabled for at least 4 hours between December 9th, 12:00 a.m. & December 13th, 02:59 p.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
