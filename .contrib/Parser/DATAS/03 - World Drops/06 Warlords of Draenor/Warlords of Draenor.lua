@@ -571,6 +571,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { AD
 			i(116716),	-- Shadowsage Ring
 			i(116710),	-- Soulkeeper Ring
 			i(116713),	-- Sunsworn Ring
+			i(118869),	-- Unbreakable Band of Zoronos
 			i(116707),	-- Zangarra Ring
 		}),
 		filter(TRINKET_F, {
