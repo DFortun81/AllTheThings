@@ -7132,21 +7132,12 @@ local function CalculateRowIndent(data)
 	end
 end
 local function AdjustRowIndent(row, indentAdjust)
-	if row.Indicator then
-		local _, _, _, x = row.Indicator:GetPoint(2);
-		row.Indicator:SetPoint("LEFT", row, "LEFT", x - indentAdjust, 0);
-	end
-	if row.Texture then
-		-- only ever LEFT point set
-		local _, _, _, x = row.Texture:GetPoint(2);
-		-- print("row texture at",x)
-		row.Texture:SetPoint("LEFT", row, "LEFT", x - indentAdjust, 0);
-	else
-		-- only ever LEFT point set
-		local _, _, _, x = row.Label:GetPoint(1);
-		-- print("row label at",x)
-		row.Label:SetPoint("LEFT", row, "LEFT", x - indentAdjust, 0);
-	end
+	-- only ever LEFT point set
+	if not row.Texture:IsShown() then return end
+	local _, _, _, x = row.Texture:GetPointByName("LEFT")
+	local offset = x - indentAdjust
+	-- app.PrintDebug("row texture at",x,indentAdjust,offset)
+	row.Texture:SetPoint("LEFT", row, "LEFT", offset, 0);
 end
 local IconPortraitTooltipExtraSettings = {
 	questID = "IconPortraitsForQuests",
@@ -7220,7 +7211,7 @@ local function SetRowData(self, row, data)
 			text = RETRIEVING_DATA;
 			self.processingLinks = true;
 		end
-		local leftmost, relative, iconSize, rowPad = row, "LEFT", 16, 8;
+		local leftmost, relative, rowPad = row, "LEFT", 8;
 		local x = CalculateRowIndent(data) * rowPad + rowPad;
 		row.indent = x;
 		local back = CalculateRowBack(data);
@@ -7229,22 +7220,22 @@ local function SetRowData(self, row, data)
 			row.Background:SetAlpha(back or 0.2);
 			row.Background:Show();
 		end
-		local rowIndicator = row.Indicator;
-		if SetIndicatorIcon(rowIndicator, data) then
-			rowIndicator:SetPoint("LEFT", leftmost, relative, x - iconSize, 0);
-			rowIndicator:Show();
-			-- row.indent = row.indent - iconSize;
-		end
 		local rowTexture = row.Texture;
+		-- this will always be true due to question mark fallback
 		if SetPortraitIcon(rowTexture, data) then
 			rowTexture.Background:SetPoint("TOPLEFT", rowTexture);
 			rowTexture.Border:SetPoint("TOPLEFT", rowTexture);
 			rowTexture:SetPoint("LEFT", leftmost, relative, x, 0);
-			rowTexture:SetWidth(rowTexture:GetHeight());
 			rowTexture:Show();
 			leftmost = rowTexture;
 			relative = "RIGHT";
-			x = rowPad / 2;
+			x = rowPad / 4;
+		end
+		local rowIndicator = row.Indicator;
+		-- indicator is always attached to the Texture
+		if SetIndicatorIcon(rowIndicator, data) then
+			rowIndicator:SetPoint("RIGHT", rowTexture, "LEFT")
+			rowIndicator:Show();
 		end
 		local summary = GetProgressTextForRow(data) or "---";
 		-- local iconAdjust = summary and summary:find("|T") and -1 or 0;
@@ -7266,15 +7257,12 @@ local function SetRowData(self, row, data)
 		-- 2022-03-15 It seems as of recently that text with textures now render properly without the need for a manual adjustment. Will leave the logic in here until confirmed for others as well
 		-- 2023-07-25 The issue is caused due to ATT list scaling. With scaling other than 1 applied, the icons within the text shift relative to the number of icons
 		-- rowSummary:SetPoint("RIGHT", iconAdjust, 0);
-		rowSummary:SetPoint("RIGHT");
 		rowSummary:Show();
-		rowLabel:SetPoint("LEFT", leftmost, relative, x, 0);
-		if rowSummary and rowSummary:IsShown() then
-			rowLabel:SetPoint("RIGHT", rowSummary, "LEFT", 0, 0);
-		else
-			rowLabel:SetPoint("RIGHT");
-		end
 		rowLabel:SetText(TryColorizeName(data, text));
+		rowLabel:SetPoint("LEFT", leftmost, relative, x, 0);
+		rowLabel:SetPoint("RIGHT");
+		rowLabel:Show();
+		rowLabel:SetPoint("RIGHT", rowSummary, "LEFT");
 		if data.font then
 			rowLabel:SetFontObject(data.font);
 			rowSummary:SetFontObject(data.font);
@@ -7282,8 +7270,6 @@ local function SetRowData(self, row, data)
 			rowLabel:SetFontObject("GameFontNormal");
 			rowSummary:SetFontObject("GameFontNormal");
 		end
-		row:SetHeight(select(2, rowLabel:GetFont()) + 4);
-		rowLabel:Show();
 		row:Show();
 	else
 		row:Hide();
@@ -7387,7 +7373,7 @@ local function Refresh(self)
 		-- self.ScrollBar:Show();
 		totalRowCount = totalRowCount + 1;
 		self.ScrollBar:SetMinMaxValues(1, totalRowCount - rowCount);
-		self.ScrollBar:SetStepsPerPage(rowCount - 1);
+		self.ScrollBar:SetStepsPerPage(rowCount - 2);
 	end
 
 	-- If this window has an UpdateDone method which should process after the Refresh is complete
@@ -8877,6 +8863,7 @@ CreateRow = function(self)
 	---@class ATTRowButtonClass: Button
 	local row = CreateFrame("Button", nil, self);
 	row.index = #self.rows;
+	self.rows[row.index + 1] = row
 	if row.index == 0 then
 		-- This means relative to the parent.
 		row:SetPoint("TOPLEFT");
@@ -8886,7 +8873,6 @@ CreateRow = function(self)
 		row:SetPoint("TOPLEFT", self.rows[row.index], "BOTTOMLEFT");
 		row:SetPoint("TOPRIGHT", self.rows[row.index], "BOTTOMRIGHT");
 	end
-	tinsert(self.rows, row);
 
 	-- Setup highlighting and event handling
 	row:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight", "ADD");
@@ -8902,6 +8888,7 @@ CreateRow = function(self)
 	row.Label:SetPoint("BOTTOM");
 	row.Label:SetPoint("TOP");
 	row:SetHeight(select(2, row.Label:GetFont()) + 4);
+	local rowHeight = row:GetHeight()
 
 	-- Summary is the completion summary information. (percentage text)
 	row.Summary = row:CreateFontString(nil, "ARTWORK", "GameFontNormal");
@@ -8912,32 +8899,30 @@ CreateRow = function(self)
 
 	-- Background is used by the Map Highlight functionality.
 	row.Background = row:CreateTexture(nil, "BACKGROUND");
+	row.Background:SetAllPoints();
 	row.Background:SetPoint("LEFT", 4, 0);
-	row.Background:SetPoint("BOTTOM");
-	row.Background:SetPoint("RIGHT");
-	row.Background:SetPoint("TOP");
 	row.Background:SetTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight");
 
 	-- Indicator is used by the Instance Saves functionality.
 	row.Indicator = row:CreateTexture(nil, "ARTWORK");
 	row.Indicator:SetPoint("BOTTOM");
 	row.Indicator:SetPoint("TOP");
-	row.Indicator:SetWidth(row:GetHeight());
+	row.Indicator:SetWidth(rowHeight);
 
 	-- Texture is the icon.
 	---@class ATTRowButtonTextureClass: Texture
 	row.Texture = row:CreateTexture(nil, "ARTWORK");
 	row.Texture:SetPoint("BOTTOM");
 	row.Texture:SetPoint("TOP");
-	row.Texture:SetWidth(row:GetHeight());
+	row.Texture:SetWidth(rowHeight);
 	row.Texture.Background = row:CreateTexture(nil, "BACKGROUND");
 	row.Texture.Background:SetPoint("BOTTOM");
 	row.Texture.Background:SetPoint("TOP");
-	row.Texture.Background:SetWidth(row:GetHeight());
+	row.Texture.Background:SetWidth(rowHeight);
 	row.Texture.Border = row:CreateTexture(nil, "BORDER");
 	row.Texture.Border:SetPoint("BOTTOM");
 	row.Texture.Border:SetPoint("TOP");
-	row.Texture.Border:SetWidth(row:GetHeight());
+	row.Texture.Border:SetWidth(rowHeight);
 
 	-- Forced/External Update of a Tooltip produced by an ATT row to use the same function which created it
 	row.UpdateTooltip = RowOnEnter;
