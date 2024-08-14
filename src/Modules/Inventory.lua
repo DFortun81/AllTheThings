@@ -44,7 +44,7 @@ local function RunHandlerWhenLinkAvailable(bag, slot)
 	local itemCache = ContainerCache[bag][slot]
 	local positionRetries = itemCache.Retries or 0
 	if positionRetries > 5 then
-		app.PrintDebug("Retry limit",bag,slot,iteminfo.hyperlink)
+		-- app.PrintDebug("Retry limit",bag,slot,iteminfo and iteminfo.hyperlink or "NO LINK")
 		return
 	end
 
