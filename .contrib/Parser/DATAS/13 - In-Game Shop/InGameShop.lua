@@ -58,12 +58,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(190636, {	-- Armored Siege Kodo (MOUNT!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
-		i(190231, {	-- Ash'adar, Harbinger of Dawn (MOUNT!)
-			["timeline"] = { ADDED_10_2_5 },	-- 1st March until 1st April 2024
-		--	["u"] = REMOVED_FROM_GAME,
-		}),
 		mount(418286, {	-- Auspicious Arborwyrm (MOUNT!)
 			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(219450, {	-- Charming Courier (MOUNT!)
+			["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
 		}),
 		i(109013, {	-- Dread Raven (MOUNT!)
 			["timeline"] = { ADDED_5_4_7, REMOVED_8_3_0, ADDED_10_1_0 },
@@ -152,6 +151,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(95341, {	-- Armored Bloodwing (MOUNT!)
 			["timeline"] = { ADDED_5_2_0, REMOVED_8_3_0 },
 		}),
+		i(190231, {	-- Ash'adar, Harbinger of Dawn (MOUNT!)
+			["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 },	-- 1st March until 1st April 2024
+		}),
 		i(54811, {	-- Celestial Steed (MOUNT!)
 			["timeline"] = { ADDED_3_3_3, REMOVED_10_0_2_LAUNCH },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
 		}),
@@ -223,11 +225,11 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(109014, {	-- Dread Hatchling (PET!)
 			["timeline"] = { ADDED_5_4_7, REMOVED_8_3_0, ADDED_10_1_0 },
 		}),
-		i(190586, {	-- Lil' Ursoc (PET!)
-			["timeline"] = { ADDED_9_2_5 },
-		}),
 		i(68385, {	-- Lil' Ragnaros (PET!)
 			["timeline"] = { ADDED_4_0_3 },
+		}),
+		i(190586, {	-- Lil' Ursoc (PET!)
+			["timeline"] = { ADDED_9_2_5 },
 		}),
 		i(85871, {	-- Lucky Quilen Cub (PET!)
 			["timeline"] = { ADDED_8_3_0 },
@@ -249,7 +251,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		}),
 	}),
 	filter(BATTLE_PETS, bubbleDown({ ["u"] = REMOVED_FROM_GAME, }, {	-- REMOVED --
-		pet(156, {	-- Bananas
+		pet(156, {	-- Bananas (PET!)
 			["timeline"] = { ADDED_9_0_5, REMOVED_9_1_5 },
 		}),
 		i(160588, {	-- Cap'n Crackers (PET!)
@@ -316,39 +318,17 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 	})),
 	-- #if AFTER 5.4.0.17227
 	filter(COSMETIC, {
-		i(95475, {	-- Crown of Eternal Winter
-			["timeline"] = { ADDED_5_4_0, REMOVED_8_3_0 },
-		}),
-		i(97213, {	-- Hood of Hungering Darkness
-			["timeline"] = { ADDED_5_4_0, REMOVED_8_3_0 },
-		}),
-		i(95474, {	-- Jewel of the Firelord
-			["timeline"] = { ADDED_5_4_0, REMOVED_8_3_0 },
-		}),
-		i(172378, {	-- Sprite Darter's Bangle
-			["timeline"] = { ADDED_8_3_0 },
-		}),
-		i(172373, {	-- Sprite Darter's Flutterers
-			["timeline"] = { ADDED_8_3_0 },
-		}),
-		i(172376, {	-- Sprite Darter's Galoshes
-			["timeline"] = { ADDED_8_3_0 },
-		}),
-		i(172379, {	-- Sprite Darter's Glovelettes
-			["timeline"] = { ADDED_8_3_0 },
-		}),
-		i(172375, {	-- Sprite Darter's Mask
-			["timeline"] = { ADDED_8_3_0 },
-		}),
-		i(172377, {	-- Sprite Darter's Sash
-			["timeline"] = { ADDED_8_3_0 },
-		}),
-		i(172374, {	-- Sprite Darter's Shawl
-			["timeline"] = { ADDED_8_3_0 },
-		}),
-		i(172380, {	-- Sprite Darter's Trousers
-			["timeline"] = { ADDED_8_3_0 },
-		}),
+		------ Cosmic Weapons Set ------
+		i(208943,	-- Arsenal: Cosmic Weapons Cache
+			bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+			i(208939),	-- Gorridar, Darkblade of the Sunderer
+			i(208941),	-- M’thorus, Dagger of the Grand Design
+			i(208962),	-- Seetheras, Broadsword of the Sunderer
+			i(208959),	-- Taesavir, Sword of the Grand Design
+			i(208940),	-- Voidsong, Stave of the Harbinger
+		})),
+
+		------ Celestial Observer Set ------
 		i(184832, {	-- Celestial Observer's Astral Walkers
 			["timeline"] = { ADDED_9_1_5 },
 		}),
@@ -376,15 +356,36 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(184834, {	-- Celestial Observer's Wristwrap
 			["timeline"] = { ADDED_9_1_5 },
 		}),
-		i(188135, {	-- Frrgl's Shaking Shell
-			["timeline"] = { ADDED_9_1_5 },
-		}),
-		i(184828, {	-- Grrgl's Spotted Shell
-			["timeline"] = { ADDED_9_1_5 },
-		}),
-		i(188136, {	-- Mrrgl's Shiny Shell
-			["timeline"] = { ADDED_9_1_5 },
-		}),
+
+		------ Dreadlord's Shadowsbane Set ------
+		i(212218,	-- Ensemble: Dreadlord's Shadowsbane Regalia
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+			i(212184),	-- Dreadlord's Shadowsbane Breeches
+			i(212180),	-- Dreadlord's Shadowsbane Wings
+			i(212182),	-- Dreadlord's Shadowsbane Grips
+			i(212183),	-- Dreadlord's Shadowsbane Helm
+			i(212181),	-- Dreadlord's Shadowsbane Sabatons
+			i(212186),	-- Dreadlord's Shadowsbane Sash
+			i(212185),	-- Dreadlord's Shadowsbane Shoulderpads
+			i(212179),	-- Dreadlord's Shadowsbane Tunic
+			i(212187),	-- Dreadlord's Shadowsbane Wristbands
+		})),
+
+		------ Dreadlord's Venombane Set ------
+		i(212219,	-- Ensemble: Dreadlord's Venombane Regalia
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+			i(212193),	-- Dreadlord's Venombane Breeches
+			i(212189),	-- Dreadlord's Venombane Wings
+			i(212191),	-- Dreadlord's Venombane Grips
+			i(212192),	-- Dreadlord's Venombane Helm
+			i(212190),	-- Dreadlord's Venombane Sabatons
+			i(212195),	-- Dreadlord's Venombane Sash
+			i(212194),	-- Dreadlord's Venombane Shoulderpads
+			i(212188),	-- Dreadlord's Venombane Tunic
+			i(212196),	-- Dreadlord's Venombane Wristbands
+		})),
+
+		------ Fireplume Set ------
 		i(191616, {	-- Fireplume Crest
 			["timeline"] = { ADDED_10_0_2_LAUNCH },
 		}),
@@ -424,17 +425,32 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(191779, {	-- Fireplume Halter
 			["timeline"] = { ADDED_10_0_2_LAUNCH },
 		}),
-		i(204888,	-- Ensemble: Waveborne Diplomat's Regalia
-			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
-			i(204882),	-- Waveborne Diplomat's Belt
-			i(204881),	-- Waveborne Diplomat's Cape
-			i(204874),	-- Waveborne Diplomat's Cavalier Hat
-			i(204878),	-- Waveborne Diplomat's Frilled Gloves
-			i(204880),	-- Waveborne Diplomat's Pantaloons
-			i(204875),	-- Waveborne Diplomat's Puffed Pauldrons
-			i(204876),	-- Waveborne Diplomat's Vestment
-			i(204879),	-- Waveborne Diplomat's Waders
+
+		------ Gladiator's Ragged Armor Set ------
+		i(217029,	-- Ensemble: Gladiator's Ragged Armor
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6 } }, {
+			i(217028),	-- Gladiator's Ragged Belt
+			i(217021),	-- Gladiator's Ragged Chest
+			i(217023),	-- Gladiator's Ragged Grips
+			i(217024),	-- Gladiator's Ragged Headband
+			i(217026),	-- Gladiator's Ragged Leggings
+			i(217027),	-- Gladiator's Ragged Shoulderpads
+			i(217022),	-- Gladiator's Ragged Treads
 		})),
+
+		------ Green Snugglefin Murloc Romper Set ------
+		i(223485,	-- Ensemble: Green Snugglefin Murloc Romper
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {
+			i(221006),	-- Angry Green Snugglefin Murloc Hood
+			i(221002),	-- Green Snugglefin Murloc Pullover
+			i(221003),	-- Green Snugglefin Murloc Slippers
+			i(221004),	-- Green Snugglefin Murloc Mittens
+			i(221005),	-- Green Snugglefin Murloc Sweatpants
+			i(221478),	-- Green Snugglefin Murloc Backpack
+			i(221007),	-- Happy Green Snugglefin Murloc Hood
+		})),
+
+		------ Guardian Set ------
 		i(190216, {	-- Feathered Cowl of the Guardian
 			["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 },	-- Removed from store May 31
 		}),
@@ -444,6 +460,41 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(190220, {	-- Standard of the Guardian
 			["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 },	-- Removed from store May 31
 		}),
+
+		------ High Scholar's Arcana Set ------
+		i(208412,	-- High Scholar's Arcana
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_1_7 } }, {	-- Removed Oct 31st, 2023
+			i(208406),	-- High Scholar's Circlet
+			i(208613),	-- High Scholar's Drape
+			i(208410),	-- High Scholar's Gloves
+			i(208411),	-- High Scholar's Gown
+			i(208407),	-- High Scholar's Mantle
+			i(208408),	-- High Scholar's Sash
+			i(208409),	-- High Scholar's Slippers
+		})),
+
+		------ Murloc Shells Set ------
+		i(188135, {	-- Frrgl's Shaking Shell
+			["timeline"] = { ADDED_9_1_5 },
+		}),
+		i(184828, {	-- Grrgl's Spotted Shell
+			["timeline"] = { ADDED_9_1_5 },
+		}),
+		i(188136, {	-- Mrrgl's Shiny Shell
+			["timeline"] = { ADDED_9_1_5 },
+		}),
+
+		------ Sky-Captain's Masquerade Attire Set ------
+		i(210079, -- Sky-Captain's Masquerade Attire
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 } }, {	-- Removed Jan 1st, 2024
+			i(210073),	-- Sky-Captain's Masquerade Boots
+			i(210076),	-- Sky-Captain's Masquerade Cape
+			i(210074),	-- Sky-Captain's Masquerade Coat
+			i(210072),	-- Sky-Captain's Masquerade Hat
+			i(210075),	-- Sky-Captain's Masquerade Pants
+		})),
+
+		------ Sprite Darter Set ------
 		i(200925,	-- Ensemble: Solemn Watchman's Garb
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_1_7 } }, {
 			i(190091),	-- Fanciful Corsage
@@ -456,24 +507,34 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			i(190896),	-- Solemn Watchman's Spaulders
 			i(190845),	-- Solemn Watchman's Trousers
 		})),
-		i(208412,	-- High Scholar's Arcana
-			bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_1_7 } }, {	-- Removed Oct 31st, 2023
-			i(208406),	-- High Scholar's Circlet
-			i(208613),	-- High Scholar's Drape
-			i(208410),	-- High Scholar's Gloves
-			i(208411),	-- High Scholar's Gown
-			i(208407),	-- High Scholar's Mantle
-			i(208408),	-- High Scholar's Sash
-			i(208409),	-- High Scholar's Slippers
-		})),
-		i(210079, -- Sky-Captain's Masquerade Attire
-			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0 } }, {	-- Removed Jan 1st, 2024
-			i(210073),	-- Sky-Captain's Masquerade Boots
-			i(210076),	-- Sky-Captain's Masquerade Cape
-			i(210074),	-- Sky-Captain's Masquerade Coat
-			i(210072),	-- Sky-Captain's Masquerade Hat
-			i(210075),	-- Sky-Captain's Masquerade Pants
-		})),
+
+		------ Sprite Darter Set ------
+		i(172378, {	-- Sprite Darter's Bangle
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		i(172373, {	-- Sprite Darter's Flutterers
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		i(172376, {	-- Sprite Darter's Galoshes
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		i(172379, {	-- Sprite Darter's Glovelettes
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		i(172375, {	-- Sprite Darter's Mask
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		i(172377, {	-- Sprite Darter's Sash
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		i(172374, {	-- Sprite Darter's Shawl
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+		i(172380, {	-- Sprite Darter's Trousers
+			["timeline"] = { ADDED_8_3_0 },
+		}),
+
+		------ Twilight Witch's Attire Set ------
 		i(212222,	-- Ensemble: Twilight Witch's Attire
 			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5, REMOVED_10_2_5 } }, {	-- Removed Feb 29th, 2024
 			i(212211),	-- Twilight Witch's Blouse
@@ -484,58 +545,48 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			i(212216),	-- Twilight Witch's Shoulders
 			i(212215),	-- Twilight Witch's Skirt
 		})),
-		i(212219,	-- Ensemble: Dreadlord's Venombane Regalia
-			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
-			i(212193),	-- Dreadlord's Venombane Breeches
-			i(212189),	-- Dreadlord's Venombane Wings
-			i(212191),	-- Dreadlord's Venombane Grips
-			i(212192),	-- Dreadlord's Venombane Helm
-			i(212190),	-- Dreadlord's Venombane Sabatons
-			i(212195),	-- Dreadlord's Venombane Sash
-			i(212194),	-- Dreadlord's Venombane Shoulderpads
-			i(212188),	-- Dreadlord's Venombane Tunic
-			i(212196),	-- Dreadlord's Venombane Wristbands
+
+		------ Waveborne Diplomat's Regalia Set ------
+		i(204888,	-- Ensemble: Waveborne Diplomat's Regalia
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+			i(204882),	-- Waveborne Diplomat's Belt
+			i(204881),	-- Waveborne Diplomat's Cape
+			i(204874),	-- Waveborne Diplomat's Cavalier Hat
+			i(204878),	-- Waveborne Diplomat's Frilled Gloves
+			i(204880),	-- Waveborne Diplomat's Pantaloons
+			i(204875),	-- Waveborne Diplomat's Puffed Pauldrons
+			i(204876),	-- Waveborne Diplomat's Vestment
+			i(204879),	-- Waveborne Diplomat's Waders
 		})),
-		i(212218,	-- Ensemble: Dreadlord's Shadowsbane Regalia
-			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
-			i(212184),	-- Dreadlord's Shadowsbane Breeches
-			i(212180),	-- Dreadlord's Shadowsbane Wings
-			i(212182),	-- Dreadlord's Shadowsbane Grips
-			i(212183),	-- Dreadlord's Shadowsbane Helm
-			i(212181),	-- Dreadlord's Shadowsbane Sabatons
-			i(212186),	-- Dreadlord's Shadowsbane Sash
-			i(212185),	-- Dreadlord's Shadowsbane Shoulderpads
-			i(212179),	-- Dreadlord's Shadowsbane Tunic
-			i(212187),	-- Dreadlord's Shadowsbane Wristbands
-		})),
-		i(217029,	-- Ensemble: Gladiator's Ragged Armor
-			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6 } }, {
-			i(217028),	-- Gladiator's Ragged Belt
-			i(217021),	-- Gladiator's Ragged Chest
-			i(217023),	-- Gladiator's Ragged Grips
-			i(217024),	-- Gladiator's Ragged Headband
-			i(217026),	-- Gladiator's Ragged Leggings
-			i(217027),	-- Gladiator's Ragged Shoulderpads
-			i(217022),	-- Gladiator's Ragged Treads
-		})),
-		i(223485,	-- Ensemble: Green Snugglefin Murloc Romper
-			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {
-			i(221006),	-- Angry Green Snugglefin Murloc Hood
-			i(221002),	-- Green Snugglefin Murloc Pullover
-			i(221003),	-- Green Snugglefin Murloc Slippers
-			i(221004),	-- Green Snugglefin Murloc Mittens
-			i(221005),	-- Green Snugglefin Murloc Sweatpants
-			i(221478),	-- Green Snugglefin Murloc Backpack
-			i(221007),	-- Happy Green Snugglefin Murloc Hood
-		})),
-		i(208943,	-- Arsenal: Cosmic Weapons Cache
-			bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0, REMOVED_11_PH_LAUNCH } }, {
-			i(208939),	-- Gorridar, Darkblade of the Sunderer
-			i(208941),	-- M’thorus, Dagger of the Grand Design
-			i(208962),	-- Seetheras, Broadsword of the Sunderer
-			i(208959),	-- Taesavir, Sword of the Grand Design
-			i(208940),	-- Voidsong, Stave of the Harbinger
-		})),
+
+		------ Single Pieces ------
+		i(188257, {	-- Azure Wings of Awakening
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(188258, {	-- Bronze Wings of Awakening
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(95475, {	-- Crown of Eternal Winter
+			["timeline"] = { ADDED_5_4_0, REMOVED_8_3_0 },
+		}),
+		i(193610, {	-- Diadem of the Spell-Keeper
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(188259, {	-- Emerald Wings of Awakening
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(97213, {	-- Hood of Hungering Darkness
+			["timeline"] = { ADDED_5_4_0, REMOVED_8_3_0 },
+		}),
+		i(95474, {	-- Jewel of the Firelord
+			["timeline"] = { ADDED_5_4_0, REMOVED_8_3_0 },
+		}),
+		i(188260, {	-- Ruby Wings of Awakening
+			["timeline"] = { ADDED_10_2_0 },
+		}),
+		i(188256, {	-- Obsidian Wings of Awakening
+			["timeline"] = { ADDED_10_2_0 },
+		}),
 	}),
 	-- #endif
 	-- #if AFTER 8.1.5.29737
