@@ -1930,7 +1930,7 @@ root(ROOTS.Unsorted, {
 
 
 				i(223436),	-- Light Boots of the Ringing Deeps
-				i(223437),	-- Handwraps of the Weaver
+
 				i(223438),	-- Algari Warden's Vestment
 				i(223439),	-- Mereldar Scholar's Leggings
 				i(223444),	-- Arathi Defender's Breeches
@@ -1943,7 +1943,7 @@ root(ROOTS.Unsorted, {
 				i(223452),	-- Grips of the Ringing Deeps
 
 				i(223454),	-- Algari Warden's Greaves
-				i(223455),	-- Shoulderguards of the Weaver
+
 				i(223456),	-- [PH] 11.0 - Cinch
 
 				i(223458),	-- [PH] 11.0 - Belt

@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(DORNOGAL, {
 		n(QUESTS, {
 			header(HEADERS.Achievement, 20597, {	-- The War Within
@@ -66,73 +66,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 					["provider"] = { "n", 214917 },	-- Moira Thaurissan
 					["coord"] = { 31.8, 59.4, DORNOGAL },
 				}),
-			}),
-			q(79224, {	-- Gathering Intel
-				["sourceQuests"] = { 79157 },	-- Titanic Failsafe
-				["provider"] = { "n", 223944 },	-- Alleria Windrunner
-				["coord"] = { 31.6, 59.6, DORNOGAL },
-			}),
-			q(79227, {	-- A Spider's-Eye View
-				["sourceQuests"] = { 79224 },	-- Gathering Intel
-				["provider"] = { "n", 207471 },	-- Window Arak'nal
-				["coord"] = { 56.2, 48.2, AZJ_KAHET },
-			}),
-			q(79230, {	-- Creeping Through Corridors
-				["sourceQuests"] = { 79227 },	-- A Spider's-Eye View
-				["provider"] = { "n", 215626 },	-- Lilian Voss
-				["coord"] = { 69.5, 71.7, NERUBAR },
-			}),
-			q(79233, {	-- Lab Access
-				["sourceQuests"] = { 79227 },	-- A Spider's-Eye View
-				["provider"] = { "n", 215637 },	-- Y'tekhi
-				["coord"] = { 69.5, 72.2, NERUBAR },
-				["g"] = {
-					i(215457),	-- Loyalist Secretions (QI!)
-				},
-			}),
-			q(79237, {	-- Making of a Monster
-				["sourceQuests"] = {
-					79230,	-- Creeping Through Corridors
-					79233,	-- Lab Access
-				},
-				["provider"] = { "n", 215628 },	-- Lilian Voss
-				["coord"] = { 56.7, 90.6, NERUBAR },
-				["g"] = {
-					i(223431),	-- The Fallen Queen's Band
-				},
-			}),
-			q(79239, {	-- The Queen's Chains
-				["sourceQuests"] = { 79237 },	-- Making of a Monster
-				["provider"] = { "n", 215659 },	-- Y'tekhi
-				["coord"] = { 57.1, 91.0, NERUBAR },
-			}),
-			q(79240, {	-- Rogue Agent
-				["sourceQuests"] = { 79239 },	-- The Queen's Chains
-				["provider"] = { "n", 215661 },	-- Lilian Voss
-				["coord"] = { 78.8, 57.3, NERUBAR },
-			}),
-			q(79241, {	-- Go Loud
-				["sourceQuests"] = { 79240 },	-- Rogue Agent
-				["provider"] = { "n", 215662 },	-- Lilian Voss
-				["coord"] = { 78.6, 39.6, NERUBAR },
-			}),
-			q(79243, {	-- Manufactured Mutiny
-				["sourceQuests"] = { 79240 },	-- Rogue Agent
-				["provider"] = { "n", 215662 },	-- Lilian Voss
-				["coord"] = { 78.6, 39.6, NERUBAR },
-			}),
-			q(79244, {	-- News From Below
-				["sourceQuests"] = {
-					79241,	-- Go Loud
-					79243,	-- Manufactured Mutiny
-				},
-				["provider"] = { "n", 215625 },	-- Lilian Voss
-				["coord"] = { 56.3, 48.5, AZJ_KAHET },
-				["g"] = {
-					--crit 'News from Below'
-					i(223466),	-- Mantle of the Weaver
-					i(223445),	-- Sash of the Weaver
-				},
 			}),
 			q(79022, {	-- A Mysterious Signal
 				["sourceQuests"] = { 79244 },	-- News From Below
