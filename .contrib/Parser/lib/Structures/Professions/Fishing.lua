@@ -138,7 +138,7 @@ DF_FISHING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED
 	r(393062),	-- Temporal Dragonhead School
 	r(393059),	-- Thousandbite Pirahna Swarm
 }));
-TWW_FISHING = bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+TWW_FISHING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423336),	-- Khaz Algar Fishing
 	r(271990),	-- Fishing Journal
 	r(7738),	-- Fishing Poles

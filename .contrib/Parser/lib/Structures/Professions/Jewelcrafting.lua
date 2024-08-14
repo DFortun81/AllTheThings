@@ -698,7 +698,7 @@ DF_JEWELCRAFTING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		r(374475),	-- Shimmering Clasp
 	}),
 }));
-TWW_JEWELCRAFTING = bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+TWW_JEWELCRAFTING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423339),	-- Khaz Algar Jewelcrafting
 	r(434018),	-- Algari Prospecting
 	n(ARMOR, {

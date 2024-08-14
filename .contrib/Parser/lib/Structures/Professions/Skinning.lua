@@ -10,7 +10,7 @@ DF_SKINNING = bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	r(396173),	-- Saturated Bone
 	r(392445),	-- Scale Skinning
 });
-TWW_SKINNING = bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+TWW_SKINNING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423342),	-- Khaz Algar Skinning
 	r(442566),	-- Gloom Chitin
 	r(442567),	-- Stormcharged Leather

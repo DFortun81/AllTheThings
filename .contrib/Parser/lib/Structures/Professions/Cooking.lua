@@ -291,7 +291,7 @@ DF_COOKING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED
 	r(381365),	-- Twice-Baked Potato
 	r(381381),	-- Zesty Water
 }));
-TWW_COOKING = bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+TWW_COOKING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423333),	-- Khaz Algar Cooking
 	r(818),		-- Cooking Fire
 	r(445107),	-- Angler's Delight

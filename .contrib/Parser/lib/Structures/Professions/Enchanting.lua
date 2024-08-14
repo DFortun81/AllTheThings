@@ -748,7 +748,7 @@ DF_ENCHANTING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { AD
 		r(389546),	-- Wafting Writ
 	}),
 }));
-TWW_ENCHANTING = bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+TWW_ENCHANTING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423334),	-- Khaz Algar Enchanting
 	r(455970, {["collectible"] = false}),	-- Disenchant
 	r(425138),	-- Recraft Equipment

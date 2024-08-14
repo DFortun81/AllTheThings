@@ -343,7 +343,7 @@ DF_INSCRIPTION = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { A
 		r(383544),	-- Pioneer's Writhebark Stave
 	}),
 }));
-TWW_INSCRIPTION = bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+TWW_INSCRIPTION = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423338),	-- Khaz Algar Inscription
 	r(444181),	-- Khaz Algar Milling
 	r(425140),	-- Recraft Equipment

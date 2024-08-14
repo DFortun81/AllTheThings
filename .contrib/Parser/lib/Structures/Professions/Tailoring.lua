@@ -187,7 +187,7 @@ DF_TAILORING = applyclassicphase(DF_PHASE_ONE, sharedData({ ["timeline"] = { ADD
 		r(376555),	-- Wildercloth Bolt
 	}),
 }));
-TWW_TAILORING = bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+TWW_TAILORING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423343),	-- Khaz Algar Tailoring
 	r(446926),	-- Unraveling
 	r(425143),	-- Recraft Equipment

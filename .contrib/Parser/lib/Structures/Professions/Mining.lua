@@ -181,7 +181,7 @@ DF_MINING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { ADDED_
 	r(396162),	-- Khaz'gorite
 	r(384692),	-- Serevite Deposit
 }));
-TWW_MINING = bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+TWW_MINING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423341),	-- Khaz Algar Mining
 	r(2656),	-- Mining Journal \ Smelting
 	r(439705),	-- Bismuth
