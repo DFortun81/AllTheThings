@@ -1018,7 +1018,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						n(3977, {	-- High Inquisitor Whitemane
 							-- NOTE: The boss herself was not removed, only redesigned with a new loot table.
 							i(7721, {	-- Hand of Righteousness
-								["timeline"] = { REMOVED_5_0_4 },
+								["timeline"] = { REMOVED_5_0_4, "added 11.0.2" },
 							}),
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_TWO, i(217301)),	-- Triune Amulet
@@ -1031,10 +1031,10 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 							-- #else
 							i(7722, {	-- Triune Amulet
-								["timeline"] = { REMOVED_5_0_4 },
+								["timeline"] = { REMOVED_5_0_4, "added 11.0.2" },
 							}),
 							i(7720, {	-- Whitemane's Chapeau
-								["timeline"] = { REMOVED_5_0_4 },
+								["timeline"] = { REMOVED_5_0_4, "added 11.0.2" },
 							}),
 							-- #endif
 						}),
