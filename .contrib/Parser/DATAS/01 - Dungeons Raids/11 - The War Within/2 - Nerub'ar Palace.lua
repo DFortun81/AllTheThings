@@ -260,7 +260,7 @@ InstanceHelper.UpgradeMapping = {
 	[DIFFICULTY.RAID.HEROIC] = 6,
 };
 
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	inst(1273, {	-- Nerub'ar Palace
 		["isRaid"] = true,
 		["coord"] = { 35.6, 71.6, AZJ_KAHET },
@@ -428,7 +428,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				}),
 				CommonBossDrops({
 					currency(WEATHERED_HARBINGER_CREST, {
-						["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
+						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 				}),
 				header(HEADERS.Achievement, 40247, {	-- The Skittering Battlements
@@ -480,7 +480,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(CARVED_HARBINGER_CREST, {
-						["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
+						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -510,13 +510,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				BossOnly(KYVEZA),
 				BossOnly(SILKEN_COURT),
 				BossOnly(ANSUREK, {
-					ach(40253, {["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 }}),	-- Ahead of the Curve: Queen Ansurek
+					ach(40253, {["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 }}),	-- Ahead of the Curve: Queen Ansurek
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroupsWithUpgrades({
 				CommonBossDrops({
 					currency(RUNED_HARBINGER_CREST, {
-						["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
+						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -540,7 +540,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				CommonBossDrops({
 					currency(GILDED_HARBINGER_CREST, {
-						["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
+						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 					}),
 				}),
 				n(QUESTS, {
@@ -572,8 +572,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					ach(40243, {	-- Mythic: Queen Ansurek
 						title(556),	-- Queenslayer <Name>
 					}),
-					ach(40254, {["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 }}),	-- Cutting Edge: Queen Ansurek
-					ach(40259, bubbleDownSelf({["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 } }, {	-- Hall of Fame: Queen Ansurek
+					ach(40254, {["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 }}),	-- Cutting Edge: Queen Ansurek
+					ach(40259, bubbleDownSelf({["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 } }, {	-- Hall of Fame: Queen Ansurek
 						title(561),	-- <Name>, Famed Slayer of Ansurek
 					})),
 					ach(40258),	-- Mythic: Queen Ansurek Guild Run
