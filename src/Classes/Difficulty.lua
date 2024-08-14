@@ -250,8 +250,13 @@ app.AddEventHandler("OnLoad", function()
 		end,
 	});
 end);
+local CurrentDifficultyRemapper ={
+	[205] = 1,	-- Follower Dungeon -> Normal Dungeon
+}
 app.GetCurrentDifficultyID = function()
-	return IsInInstance() and select(3, GetInstanceInfo()) or 0;
+	if not IsInInstance() then return 0 end
+	local diff = select(3, GetInstanceInfo()) or 0
+	return CurrentDifficultyRemapper[diff] or diff
 end
 app.GetRelativeDifficultyIcon = function(t)
 	return DifficultyIcons[GetRelativeValue(t, "difficultyID") or 1];
