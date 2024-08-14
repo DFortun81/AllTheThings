@@ -494,6 +494,7 @@ REMOVED_MOP_REMIX_END = "removed 11.0.2.99999";			-- Remix ends on 19th August, 
 REMOVED_SEASON_AWAKENED = "removed 11.0.2";				-- Placeholder
 REMOVED_SEASON_PVP = "removed 11.0.2";					-- Placeholder
 REMOVED_SEASON_MYTHIC = "removed 11.0.2";				-- Placeholder
+REMOVED_PREPATCH_END = "removed 11.0.5";				-- Placeholder
 -- Extra Placeholders Until Blizzard knows.............
 CREATED_11_0_1 = "created 11.0.1";						-- The War Within 11.0.1
 ADDED_11_0_1 = "added 11.0.1";							-- The War Within 11.0.1
@@ -508,9 +509,8 @@ REMOVED_11_0_2 = "removed 11.0.2";						-- The War Within 11.0.2 Launch on
 CREATED_11_0_0 = "created 11.0.0.55818";				-- The War Within 11.0.0/Pre-Patch Launch on July 23rd, 2024
 ADDED_11_0_0 = "added 11.0.0.55818";					-- The War Within 11.0.0/Pre-Patch Launch on July 23rd, 2024
 REMOVED_11_0_0 = "removed 11.0.0.55818";				-- The War Within 11.0.0/Pre-Patch Launch on July 23rd, 2024
-CREATED_11_PH_LAUNCH = "created 11.0.0.99999";			-- The War Within Launch on August 22nd, 2024
+
 ADDED_11_PH_LAUNCH = "added 11.0.0.99999";				-- The War Within Launch on August 22nd, 2024
-REMOVED_11_PH_LAUNCH = "removed 11.0.0.99999";			-- The War Within Launch on August 22nd, 2024
 CREATED_11_0_5 = "created 11.0.5";						-- The War Within 11.0.5 Launch on
 ADDED_11_0_5 = "added 11.0.5";							-- The War Within 11.0.5 Launch on
 REMOVED_11_0_5 = "removed 11.0.5";						-- The War Within 11.0.5 Launch on
