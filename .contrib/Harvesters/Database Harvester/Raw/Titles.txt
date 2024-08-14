@@ -761,3 +761,6 @@
 575@@@%s the Bountiful
 11.0.2.55959
 576@@@Echochaser %s
+11.0.2.56110
+548@@@%s the Tempered Hero
+579@@@%s the Tempered

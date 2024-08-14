@@ -21957,3 +21957,5 @@
 216479@@@Magni Bronzebeard
 216480@@@Dagran Thaurissan II
 231171@@@Sound Stalker - 11.0 Scenario - Theater Troupe - Audience
+11.0.2.56110
+231546@@@Xal'atath

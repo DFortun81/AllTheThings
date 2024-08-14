@@ -202,6 +202,13 @@ root(ROOTS.Unsorted, {
 			i(229354),	-- Algari Adventurer's Cache
 			i(229370),	-- Companion Experience
 			i(229371),	-- Companion Experience
+			---
+			i(230202),	-- Add Keystone Affix: Xal'atath's Bargain: Ascendant
+			i(230204),	-- Add Keystone Affix: Xal'atath's Bargain: Voidbound
+			i(230205),	-- Add Keystone Affix: Xal'atath's Bargain: Oblivion
+			i(230206),	-- Add Keystone Affix: Xal'atath's Bargain: Devour
+			i(230208),	-- Add Keystone Affix: Xal'atath's Guile
+			i(230209),	-- Add Keystone Affix: Challenger's Peril
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			filter(BATTLE_PETS, {

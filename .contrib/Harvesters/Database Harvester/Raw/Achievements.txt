@@ -15330,3 +15330,9 @@
 40895@@@Don't Call Me Junior (DNT) (Character Specific Hidden Copy)
 40896@@@Don't Call Me Junior (DNT) (Character specific hidden copy)
 40899@@@Allied Races: Earthen (copy)
+11.0.2.56110
+20589@@@Tempered Hero: The War Within Season 1
+40904@@@Cornerstone of Dornogal
+40905@@@From Many, One
+40906@@@The Flame Burns Within
+40907@@@We Rise Anew
