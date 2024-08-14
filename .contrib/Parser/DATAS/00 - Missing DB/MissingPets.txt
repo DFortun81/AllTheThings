@@ -1,5 +1,4 @@
 11.0.0.54311
-pet(4455),	-- Rak-Ush Threadling
 pet(4478),	-- Caustic Oozeling
 pet(4485),	-- Mossy Snail
 pet(4493),	-- Redthroat Skipling
@@ -10,7 +9,6 @@ pet(4505),	-- Sporbit
 pet(4507),	-- Sporbit
 pet(4508),	-- Sporbit
 pet(4509),	-- Sporbit
-pet(4513),	-- Pillarnest Bonedrinker
 pet(4528),	-- Cobalt Mosswool
 pet(4583),	-- Green Stagshell
 pet(4584),	-- Tan Stagshell
@@ -21,7 +19,6 @@ pet(4584),	-- Tan Stagshell
 Missing in PetDB.lua
 
 11.0.0.54311
-pet(4455),	-- Rak-Ush Threadling
 pet(4478),	-- Caustic Oozeling
 pet(4485),	-- Mossy Snail
 pet(4493),	-- Redthroat Skipling
@@ -32,7 +29,6 @@ pet(4505),	-- Sporbit
 pet(4507),	-- Sporbit
 pet(4508),	-- Sporbit
 pet(4509),	-- Sporbit
-pet(4513),	-- Pillarnest Bonedrinker
 pet(4528),	-- Cobalt Mosswool
 pet(4583),	-- Green Stagshell
 pet(4584),	-- Tan Stagshell

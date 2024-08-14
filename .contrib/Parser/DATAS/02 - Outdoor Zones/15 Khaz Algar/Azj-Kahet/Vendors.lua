@@ -321,7 +321,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				-- not sure if he always was here or locked behind some quest in area
 				["coord"] = { 74.7, 81.2, AZJ_KAHET },
 				["g"] = {
-					i(221486, {	-- Baleclaw (PET!)
+					i(221486, {	-- Rak-Ush Threadling (PET!)
 						["cost"] = {{"c", KEJ, 2250}},
 					}),
 				},

@@ -4100,6 +4100,19 @@ i(223499, 4569);	-- Lil' Manny
 i(218245, 4451);	-- Remembered Construct
 i(218086, 4450);	-- Remembered Riverpaw
 i(218246, 4452);	-- Remembered Spawn
+--- UNSORTED ---
+i(222969, 4474);	-- Anub'Rekyute
+i(221851, 4466);	-- Argos
+i(221764, 4519);	-- Burntram
+i(226104, 4602);	-- Claudius
+i(222979, 4545);	-- Clay Stonecharger
+i(221762, 4484);	-- Frenzied Bloodtick
+i(222970, 4490);	-- Fuzzy
+i(221195, 4458);	-- Illskitter
+i(221492, 4459);	-- Moss Skipper
+i(221759, 4512);	-- Sceaduthax
+i(221495, 4497);	-- Waddles
+i(222967, 4475);	-- Webbers
 
 ------------------
 -- PATCH 11.0.2 --
@@ -4129,9 +4142,13 @@ i(222965, 4530);	-- Loamy
 i(225544, 4599);	-- Mind Slurp
 i(221546, 4534);	-- Nightfarm Growthling
 i(224439, 4470);	-- Oop'lajax
+i(221760, 4513);	-- Pillarnest Bonedrinker
 i(223802, 4581);	-- Purple Stagshell
+i(225935, 4582);	-- Rak-Ush Battleshell
+i(221486, 4455);	-- Rak-Ush Threadling
 i(222978, 4546);	-- Sandstone Ramolith
 i(224579, 3362);	-- Sapphire Crab
+i(221819, 4472);	-- Shadowbog Hopper
 i(222974, 4543);	-- Sir Shady Mrrgglton Junior
 i(221494, 4495);	-- Skippy
 i(222980, 4542);	-- Slim
@@ -4200,28 +4217,6 @@ i(0, 4553);			-- Takey-Take
 i(0, 4556);			-- Tickler
 i(0, 4549);			-- Tiny Cragling
 i(0, 4560);			-- Zaedu
-
-------------------
--- PATCH 11.0.0 --
-------------------
 --- UNSORTED ---
-i(222969, 4474);	-- Anub'Rekyute
-i(221851, 4466);	-- Argos
-i(221764, 4519);	-- Burntram
-i(226104, 4602);	-- Claudius
-i(222979, 4545);	-- Clay Stonecharger
-i(221762, 4484);	-- Frenzied Bloodtick
-i(222970, 4490);	-- Fuzzy
-i(221195, 4458);	-- Illskitter
-i(221492, 4459);	-- Moss Skipper
-i(225935, 4582);	-- Rak-Ush Battleshell
-i(221759, 4512);	-- Sceaduthax
-i(221819, 4472);	-- Shadowbog Hopper
-i(221495, 4497);	-- Waddles
-i(222967, 4475);	-- Webbers
-
-------------------
--- PATCH 11.0.2 --
-------------------
 i(228765, 4616);	-- Gummi
 i(228758, 4615);	-- Parrlok

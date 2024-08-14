@@ -119,7 +119,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 50.6, 48.1, AZJ_KAHET },
 				["questID"] = 82529,
 				["g"] = {
-					i(221760),	-- Bonedrinker (PET!)
+					i(221760),	-- Pillarnest Bonedrinker (PET!)
 				},
 			}),
 			o(446135, {	-- Niffen Stash

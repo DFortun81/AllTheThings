@@ -71,6 +71,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						},
 					}),
 				})),
+				prof(FISHING, {
+					i(221819, {	-- Shadowbog Hopper (PET!)
+						["description"] = "Stillstone Pond",
+					}),
+				}),
 				n(QUESTS, {
 					-- TODO: Expand this /maybe SpeciaL?
 					q(82007, {	-- Tale of Tails

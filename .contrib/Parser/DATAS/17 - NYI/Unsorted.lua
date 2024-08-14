@@ -211,6 +211,14 @@ root(ROOTS.Unsorted, {
 			i(230209),	-- Add Keystone Affix: Challenger's Peril
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+			filter(TITLES, {
+				title(560),	-- <Name> Ascension Breaker
+				title(564),	-- Machine Whisperer <Name>
+				title(565),	-- Honorary Councilmember <Name>
+				title(566),	-- Lamplighter <Name>
+				title(567),	-- Thread-Spinner <Name>
+				title(568),	-- <Name>, Machine-Warden
+			}),
 			filter(BATTLE_PETS, {
 				i(222969),	-- Anub'Rekyute (PET!)
 				i(221851),	-- Argos (PET!)
@@ -222,14 +230,10 @@ root(ROOTS.Unsorted, {
 				i(221195),	-- Illskitter (PET!)
 				i(221492),	-- Moss Skipper (PET!)
 				i(221759),	-- Sceaduthax (PET!)
-				i(221819),	-- Shadowbog Hopper (PET!)
 				i(221495),	-- Waddles (PET!)
 				i(222967),	-- Webbers (PET!)
-				------------
-				i(221760),	-- Bonedrinker (PET!) (Pillarnest Bonedrinker) [The Item is sourced but keeping here since the item and pet name dont match...]
 				------ Have no source and Naming Weird.. ------
 				i(221493),	-- Admiral (PET!) (Redthroat Skipling)
-				i(221486),	-- Baleclaw (PET!) (Rak-Ush Threadling)
 				i(223803),	-- Blue Stagshell (PET!) (Rak-Ush Battleshell)
 				i(221022),	-- Cowboy Bee[DNT] (PET!) (Bop???)
 				i(223626),	-- Embersting (PET!) (Cinderhoney Emberstinger)
@@ -1763,10 +1767,11 @@ root(ROOTS.Unsorted, {
 				i(228367),	-- Arathi Scout's Walking Stick
 			}),
 			filter(TOYS, {
-				i(218310),	-- Box of Puntables (TOY!)
+				i(218310),	-- Box of Puntables (TOY!) [Winter Veil]
 				i(224809),	-- Earthen Plumber's Pipe (TOY!)
 				i(225347),	-- Web-Vandal's Spinning Wheel (TOY!)
-				---
+				i(216887),	-- Unknown (TOY!)
+				-- Should Maybe get a Toy Tag... Lets see later...
 				i(215146),	-- JC Gemcutting Toy
 				i(228412),	-- Scouting Map: The Skies of the Dragon Isles
 			}),

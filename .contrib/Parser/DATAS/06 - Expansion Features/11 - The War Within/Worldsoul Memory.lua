@@ -15,7 +15,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			n(ACHIEVEMENTS, {
 				ach(40252),	-- A Series of Echoes (automated)
 				ach(40222, {	-- Echoes of Danger (automated)
-					title(258),	-- Echochaser <Name>
+					title(576),	-- Echochaser <Name>
         		}),
 				ach(40314, {	-- Fragments of Memories (automated)
 					i(224251),	-- Memory Chord (TOY!)

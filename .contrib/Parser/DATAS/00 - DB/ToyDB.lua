@@ -23,6 +23,9 @@ i(198647);	-- Fishspeaker's Lucky Lure
 i(38506);	-- Don Carlos' Famous Hat -- With ICC Patch of Wrath Classic, they made the hat (the original removed version) into a Toy. Whether it also functions as a transmog still is not known.
 -- #endif
 
+-- Cata Classic
+i(216893);	-- Goblin Town-in-a-Box
+
 -----------------
 --   CLASSIC   --
 -----------------
@@ -273,11 +276,6 @@ i(72233);	-- Art Template Plate Wrist - Plate_PVPWarrior_D_01 - Orange
 -- PATCH 4.3.2 --
 -----------------
 i(79769);	-- Demon Hunter's Aspect
-
------------------
--- PATCH 4.4.0 --
------------------
-i(216893);	-- Goblin Town-in-a-Box
 
 -----------------
 -- PATCH 5.0.4 --
@@ -1347,12 +1345,18 @@ i(220692);	-- X-treme Water Blaster Display
 i(204405);	-- Stuffed Bear
 -- #endif
 i(212174);	-- The Warband Map to Everywhere All At Once
+--- UNSORTED ---
+i(218310);	-- Box of Puntables
+i(224809);	-- Earthen Plumber's Pipe
+i(225347);	-- Web-Vandal's Spinning Wheel
+i(216887);	-- Unknown
 
 ------------------
 -- PATCH 11.0.2 --
 ------------------
 i(211931);	-- Abyss Caller Horn
 i(225556);	-- Ancient Construct
+i(228914);	-- Arachnophile Spectacles
 i(228705);	-- Arachnoserum
 i(225659);	-- Arathi Book Collection
 i(219387);	-- Barrel of Fireworks
@@ -1384,17 +1388,3 @@ i(227539);	-- Unbound Strategist's Pennant
 i(216665);	-- Warband Bank Distance Inhibitor
 i(226191);	-- Web Pet Leash
 i(221966);	-- Wormhole Generator: Khaz Algar
-
-------------------
--- PATCH 11.0.0 --
-------------------
--- UNSORTED --
-i(218310);	-- Box of Puntables
-i(224809);	-- Earthen Plumber's Pipe
-i(225347);	-- Web-Vandal's Spinning Wheel
-
-------------------
--- PATCH 11.0.2 --
-------------------
--- UNSORTED --
-i(228914);	-- Arachnophile Spectacles
