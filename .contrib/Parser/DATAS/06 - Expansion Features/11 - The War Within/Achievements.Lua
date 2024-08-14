@@ -3,18 +3,19 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
-        ach(40107, {	-- Harbinger of the Carved
-            -- TODO
-            -- ["timeline"] = { removed_when },
-        }),
-        ach(40115, {	-- Harbinger of the Runed
-            -- TODO
-            -- ["timeline"] = { removed_when },
-        }),
-        ach(40118, {	-- Harbinger of the Gilded
-            -- TODO
-            -- ["timeline"] = { removed_when },
-        }),
+        -- TODO: Determine if these are FoS or should go into HAT or NYI
+        -- ach(40107, {	-- Harbinger of the Carved
+        --     -- TODO
+        --     -- ["timeline"] = { removed_when },
+        -- }),
+        -- ach(40115, {	-- Harbinger of the Runed
+        --     -- TODO
+        --     -- ["timeline"] = { removed_when },
+        -- }),
+        -- ach(40118, {	-- Harbinger of the Gilded
+        --     -- TODO
+        --     -- ["timeline"] = { removed_when },
+        -- }),
         ach(40591, {	-- Khaz Algar Diplomat
             ["sym"] = {{ "achievement_criteria" }},
             ["g"] = {
