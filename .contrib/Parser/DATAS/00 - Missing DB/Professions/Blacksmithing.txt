@@ -91,23 +91,12 @@ r(453727),	-- Everburning Ignition
 
 Missing in Blacksmithing.lua
 
-1.15.3.55112
-r(460460),	-- Sulfuron Hammer
 1.15.3.55348
-r(461647),	-- Skyrider's Masterwork Stormhammer
-r(461651),	-- Fiery Plate Gauntlets of the Hidden Technique
-r(461667),	-- Tempered Dark Iron Plate
 r(461669),	-- Refined Arcanite Champion
 r(461671),	-- Stronger-hold Gauntlets
 r(461675),	-- Refined Arcanite Reaper
 r(461712),	-- Refined Hammer of the Titans
-r(461714),	-- Desecration
-r(461716),	-- Deadly Heartseeker
-r(461718),	-- Tranquility
 r(461730),	-- Hardened Frostguard
-r(461733),	-- Finely-Enchanted Battlehammer
-r(461737),	-- Tempest Gauntlets
-r(461739),	-- Warcrest of the Great Chief
 r(461743),	-- Sageblade of the Archmagus
 11.0.0.54311
 r(425136),	-- Recraft Equipment

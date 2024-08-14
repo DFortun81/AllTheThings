@@ -19,3 +19,5 @@ fp(2972),	-- Jeff the Flightmaster
 fp(2984),	-- The Ascending Reach
 11.0.2.55665
 fp(2987),	-- The Congealing Pool (One-way)
+11.0.2.56110
+fp(3003),	-- The Crown of Shadows

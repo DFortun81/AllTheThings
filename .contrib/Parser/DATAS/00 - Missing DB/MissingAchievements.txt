@@ -1,7 +1,28 @@
 3.4.3.55417
 ach(40821),	-- Successfully Stress Test CN Realms
 ach(40841),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy)
+11.0.0.54311
+ach(40107),	-- Harbinger of the Carved (TODO: Fix Icon)
+ach(40115),	-- Harbinger of the Runed (TODO: Fix Icon)
+ach(40118),	-- Harbinger of the Gilded (TODO: Fix Icon)
+ach(40145),	-- So Much Sharing
+11.0.0.54675
+ach(40509),	-- Awakening The Machine: Wave 10
+11.0.0.54774
+ach(40586),	-- Awakening The Machine: Wave 20
+ach(40587),	-- Awakening The Machine: Wave 30
+ach(40588),	-- Awakening The Machine: Wave 40
+ach(40589),	-- Awakening The Machine: Wave 50
 11.0.0.55818
 ach(40888),	-- Heroic: Awakened Storms (DNT) (Character specific hidden copy)
 ach(40892),	-- Heroic: Awakened Shadows (DNT) (Character specific copy)
 ach(40893),	-- Heroic: Awakened Flames (DNT) (Character specific hidden copy)
+11.0.2.55959
+ach(40895),	-- Don't Call Me Junior (DNT) (Character Specific Hidden Copy)
+ach(40896),	-- Don't Call Me Junior (DNT) (Character specific hidden copy)
+ach(40899),	-- Allied Races: Earthen (copy)
+11.0.2.56110
+ach(40904),	-- Cornerstone of Dornogal
+ach(40905),	-- From Many, One
+ach(40906),	-- The Flame Burns Within
+ach(40907),	-- We Rise Anew
