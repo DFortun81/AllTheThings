@@ -2164,7 +2164,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 11.0.0.55846", "removed 11.0.0.99999" } }, {
+		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 11.0.0.55846", "removed 11.0.2.99999" } }, {
 			n(MONTHLY_REWARD, {
 				i(223409),	-- The Coward's Violet Target
 			}),
