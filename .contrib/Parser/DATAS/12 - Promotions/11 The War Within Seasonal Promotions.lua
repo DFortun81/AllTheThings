@@ -32,11 +32,11 @@ root(ROOTS.Promotions, {
 			})),
 			i(93671, {	-- Ghastly Charger's Skull (MOUNT!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 26th, 03:00 p.m. & September 19th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { ADDED_11_PH_LAUNCH, },
+				["timeline"] = { ADDED_11_0_2, },
 			}),
 			i(190609, {	-- Watcher of the Huntress (PET!)
 				["description"] = "Obtained by gifting an eligible creator's channel two Twitch subscriptions between August 26th, 03:00 p.m. & September 26th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { ADDED_11_PH_LAUNCH, },
+				["timeline"] = { ADDED_11_0_2, },
 				["u"] = BLIZZARD_BALANCE,
 			}),
 		},

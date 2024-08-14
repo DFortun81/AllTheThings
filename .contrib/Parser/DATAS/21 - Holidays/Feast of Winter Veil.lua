@@ -622,10 +622,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 			["timeline"] = { ADDED_10_2_0 },
 		}),
 		ach(20511, {	-- Gotta Punt em' All (2024)
-			["timeline"] = { ADDED_11_PH_LAUNCH },
+			["timeline"] = { ADDED_11_0_2 },
 		}),
 		ach(20510, {	-- What Could it be? (2024)
-			["timeline"] = { ADDED_11_PH_LAUNCH },
+			["timeline"] = { ADDED_11_0_2 },
 		}),
 	}),
 	-- #if AFTER 7.3.0.24727

@@ -123,7 +123,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			}),
 		},
 	}),
-	race(EARTHEN_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH }, ["races"] = ALLIANCE_ONLY, }, {
+	race(EARTHEN_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }, ["races"] = ALLIANCE_ONLY, }, {
 		ach(40307),	-- Allied Races: Earthen (automated),
 		-- Starting area questline
 		["g"] = {
@@ -284,7 +284,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			}),
 		},
 	})),
-	race(EARTHEN_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH }, ["races"] = HORDE_ONLY, }, {
+	race(EARTHEN_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }, ["races"] = HORDE_ONLY, }, {
 		ach(40307),	-- Allied Races: Earthen (automated),
 		["g"] = {
 			q(81888, {	-- For the Horde [H]

@@ -6,7 +6,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		------ Epic ------
 		ach(40147, {	-- War Within Epic
 			["sym"] = {{"achievement_criteria"}},
-			["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_12_PH_LAUNCH },
+			["timeline"] = { ADDED_11_0_2, REMOVED_12_PH_LAUNCH },
 		}),
 		ach(18977, {	-- Draconically Epic
 			["sym"] = {{"achievement_criteria"}},
@@ -39,7 +39,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		------ Superior ------
 		ach(40146, {	-- War Within Superior
 			["sym"] = {{"achievement_criteria"}},
-			["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_12_PH_LAUNCH },
+			["timeline"] = { ADDED_11_0_2, REMOVED_12_PH_LAUNCH },
 		}),
 		ach(18976, {	-- Draconically Superior
 			["sym"] = {{"achievement_criteria"}},
@@ -75,7 +75,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["rank"] = 5,
 		})),
 		ach(19489, {	-- Class Connoisseur
-			["timeline"] = { ADDED_11_PH_LAUNCH },
+			["timeline"] = { ADDED_11_0_2 },
 			["g"] = {
 				crit(55223),	-- Druid
 				crit(55224),	-- Hunter
@@ -167,7 +167,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["timeline"] = { ADDED_2_0_1 },
 			["rank"] = 3,
 		})),
-		ach(19459, {["timeline"] = { ADDED_11_PH_LAUNCH }}),	-- Level 80
+		ach(19459, {["timeline"] = { ADDED_11_0_2 }}),	-- Level 80
 		ach(15805, {["timeline"] = { ADDED_10_0_2_LAUNCH }}),	-- Level 70
 		ach(14783, {["timeline"] = { ADDED_9_0_1 }}),	-- Level 60
 		ach(14782, {["timeline"] = { ADDED_9_0_1 }}),	-- Level 50
@@ -664,7 +664,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["description"] = "|cFF40bf40Received on reaching Level 10 as a Earthen Paladin.|r",
 				["races"] = { EARTHEN_ALLIANCE, EARTHEN_HORDE },
 				["classes"] = { PALADIN },
-				["timeline"] = { ADDED_11_PH_LAUNCH }
+				["timeline"] = { ADDED_11_0_2 }
 			}),
 			mount(270564, {	-- Dawnforge Ram (MOUNT!)
 				["description"] = "|cFF40bf40Received on reaching Level 10 as a Dwarf Paladin.|r", -- Possibly as D.I.D too

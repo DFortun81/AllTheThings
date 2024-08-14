@@ -6,14 +6,14 @@ BOUNTIFUL = createHeader({
 	},
 });
 local UNDERCOIN = 2803;
-root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(ACHIEVEMENTS, {
 		ach(40817),		-- A Delver's Bounty
 		ach(40538, {	-- Brann Development
-			["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
+			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 		}),
 		ach(40635, {	-- Branntastic
-			["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
+			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 			["sym"] = {{ "achievement_criteria" }},
 		}),
 		ach(40461),	-- Buddy System VI
@@ -101,13 +101,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			},
 		}),
 		ach(40523, {	-- On Brand
-			["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
+			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 			["sym"] = {{ "achievement_criteria" }},
 		}),
 		ach(40863),	-- Perplexing Puzzle
 		ach(40864),	-- Plentiful Perplexing Puzzles
 		ach(40820, {	-- Raisin' Brann
-			["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 },
+			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 		}),
 		ach(40458),	-- Rare Finding
 		ach(40819),	-- Ready to Turn
@@ -648,10 +648,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 	m(2348, {	-- Zekvir's Lair
 		["coord"] = { 46.3, 48.5, THE_RINGING_DEEPS },
 		["g"] = {
-			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH, REMOVED_11_1_0 } }, {
-				ach(40431, {	-- Hunting the Hunter
-					i(225547),	-- Toxic Victory (TOY!)
-				}),
+			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 } }, {
+				ach(40431),	-- Hunting the Hunter
 				ach(40433, {	-- Hunting the Hunter (Solo)
 					i(225542),	-- Delver's Dirigible Schematic: Void (DM!)
 				}),
@@ -670,13 +668,34 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	n(REWARDS, {
+		--
+
 		-- Curio
 		i(225903),	-- Amorphous Relic
 		i(228560),	-- Ancient Curio (QI!/QS!)
 		i(228581),	-- Ancient Curio (QI!/QS!)
 		i(225902),	-- Idol of Final Will
 		i(225906),	-- Lifeless Necrotic Relic
-		i(225900),	-- Light-Touched Idol
+		i(225900, {	-- Light-Touched Idol
+			["bonusID"] = 11250,
+			--["type"] = "characterUnlockSpellID",
+			["spellID"] = 439674,
+		}),
+		i(225900, {	-- Light-Touched Idol
+			["bonusID"] = 11251,
+			--["type"] = "characterUnlockSpellID",
+			["spellID"] = 458968,
+		}),
+		i(225900, {	-- Light-Touched Idol
+			["bonusID"] = 11252,
+			--["type"] = "characterUnlockSpellID",
+			["spellID"] = 458971,
+		}),
+		i(225900, {	-- Light-Touched Idol
+			["bonusID"] = 11253,
+			--["type"] = "characterUnlockSpellID",
+			["spellID"] = 458974,
+		}),
 		i(225905),	-- Olden Seeker Relic
 		i(218129),	-- Porcelain Arrowhead Idol
 		i(229353),	-- Rage-Filled Idol
