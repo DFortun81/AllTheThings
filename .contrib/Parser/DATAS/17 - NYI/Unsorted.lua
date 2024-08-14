@@ -1929,18 +1929,17 @@ root(ROOTS.Unsorted, {
 				i(223424),	-- Algari-Weave Cord
 
 
-				i(223436),	-- Light Boots of the Ringing Deeps
 
 				i(223438),	-- Algari Warden's Vestment
 				i(223439),	-- Mereldar Scholar's Leggings
 				i(223444),	-- Arathi Defender's Breeches
 				i(223450),	-- Honored Soldier's Chainmail
-				i(223440),	-- Saboteur's Shoulderpads
+
 				i(223441),	-- Algari Scouting Boots
 				i(223443),	-- Algari Warden's Hood
 
-				i(223451),	-- Saboteur's Striders
-				i(223452),	-- Grips of the Ringing Deeps
+
+
 
 				i(223454),	-- Algari Warden's Greaves
 
