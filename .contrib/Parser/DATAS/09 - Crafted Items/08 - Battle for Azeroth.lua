@@ -1317,6 +1317,56 @@ root(ROOTS.Craftables, expansion(EXPANSION.BFA, applyclassicphase(BFA_PHASE_ONE,
 		i(161085),	-- Tattered Map
 	}),
 	prof(TAILORING, {
+		n(DISCOVERY, {
+			{	-- Embroidered Deep Sea Breeches
+				["spellID"] = 257122,	-- Embroidered Deep Sea Breeches
+				["groups"] = {
+					i(162509),	-- Pattern: Imbued Deep Sea Breeches
+				},
+			},
+			{	-- Embroidered Deep Sea Gloves
+				["spellID"] = 257118,	-- Embroidered Deep Sea Gloves
+				["groups"] = {
+					i(162507),	-- Pattern: Imbued Deep Sea Gloves
+				},
+			},
+			{	-- Enhanced Deep Sea Breeches
+				["spellID"] = 285077,	-- Enhanced Deep Sea Breeches
+				["groups"] = {
+					i(165655),	-- Pattern: Fortified Deep Sea Breeches
+				},
+			},
+			{	-- Enhanced Deep Sea Gloves
+				["spellID"] = 285078,	-- Enhanced Deep Sea Gloves
+				["groups"] = {
+					i(165652),	-- Pattern: Fortified Deep Sea Gloves
+				},
+			},
+			{	-- Fortified Deep Sea Breeches
+				["spellID"] = 285085,	-- Fortified Deep Sea Breeches
+				["groups"] = {
+					i(165654),	-- Pattern: Tempered Deep Sea Breeches
+				},
+			},
+			{	-- Fortified Deep Sea Gloves
+				["spellID"] = 285086,	-- Fortified Deep Sea Gloves
+				["groups"] = {
+					i(165653),	-- Pattern: Tempered Deep Sea Gloves
+				},
+			},
+			{	-- Imbued Deep Sea Breeches
+				["spellID"] = 257123,	-- Imbued Deep Sea Breeches
+				["groups"] = {
+					i(162510),	-- Pattern: Emblazoned Deep Sea Breeches
+				},
+			},
+			{	-- Imbued Deep Sea Gloves
+				["spellID"] = 257120,	-- Imbued Deep Sea Gloves
+				["groups"] = {
+					i(162508),	-- Pattern: Emblazoned Deep Sea Gloves
+				},
+			},
+		}),
 		filter(MOUNT_EQUIPMENT, {
 			i(165739),	-- Rough-hooked Tidespray Linen
 			i(168427),	-- Saddlechute
