@@ -6548,7 +6548,12 @@ local fields = {
 		return t.spellID ~= 2366 and GetSpellName(t.spellID) or C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID);
 	end,
 	["icon"] = function(t)
-		return GetSpellIcon(t.spellID) or C_TradeSkillUI.GetTradeSkillTexture(t.professionID);
+		local icon
+		local spellID = t.spellID
+		if spellID then
+			icon = GetSpellIcon(spellID)
+		end
+		return icon or C_TradeSkillUI.GetTradeSkillTexture(t.professionID);
 	end,
 	["spellID"] = function(t)
 		return app.SkillIDToSpellID[t.professionID];
