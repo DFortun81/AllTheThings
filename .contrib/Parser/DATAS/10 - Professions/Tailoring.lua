@@ -823,7 +823,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		})),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
 			["g"] = sharedData({ ["cost"] = {{ "c", TWW_TAILORING_KNOWLEDGE, 1 }} }, {

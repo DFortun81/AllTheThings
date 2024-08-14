@@ -1091,7 +1091,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			}),
 		})),
 	})),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(ACHIEVEMENTS, {
 			-- INFO: Flask of Rampant Toxicity criteria currently not working correctly, recipe needs to be added to "crafted items" section.
 			-- INFO: No need to manually add criteria on these, automation is doing the heavy lifting.

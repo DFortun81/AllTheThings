@@ -9,10 +9,10 @@ CRAFTING_ORDERS = createHeader({
 	},
 });
 root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
-	ach(19410, sharedDataSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {	-- Algari Master of All
+	ach(19410, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2 } }, {	-- Algari Master of All
 		["sym"] = {{ "achievement_criteria" }},
 	})),
-	ach(19515, sharedDataSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {	-- Algari Master of Many
+	ach(19515, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2 } }, {	-- Algari Master of Many
 		iensemble(219125),	-- Formed Artisan's Talent
 	})),
 	ach(16630, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {	-- Draconic Master of All
@@ -169,7 +169,7 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 		crit(40060),	-- Classic Tailoring
 	})),
 	ach(19409, {	-- Working Underground
-		["timeline"] = { ADDED_11_PH_LAUNCH },
+		["timeline"] = { ADDED_11_0_2 },
 	}),
 	ach(16626, {	-- Working with Wyrms
 		["timeline"] = { ADDED_10_0_2_LAUNCH },
@@ -207,7 +207,7 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 		["timeline"] = { ADDED_10_1_7 },
 	}),
 	ach(19408, {	-- Professional Algari Master
-		["timeline"] = { ADDED_11_PH_LAUNCH },
+		["timeline"] = { ADDED_11_0_2 },
 	}),
 	ach(16627, {	-- Professional Draconic Master
 		["timeline"] = { ADDED_10_0_2_LAUNCH },
@@ -374,11 +374,13 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, bubbleDownSelf({ ["timeline"] = { ADD
 	ach(16799, {	-- Personal Crafter
 		title(486),	-- Personal Crafter <Name>
 	}),
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+	--[[
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		i(223113),	-- Formula: Enchant Boots - Cavalry's March (RECIPE!)
 		i(223104),	-- Pattern: Defender's Armor Kit (RECIPE!)
 		i(223037),	-- Plans: Charged Facesmasher (RECIPE!)
 	})),
+	-]]
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

@@ -21,7 +21,7 @@ local function FirstSkin(questID, creatureID, added, group)
 	return t;
 end
 
-root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	i(ARTISANS_ACUITY),
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
