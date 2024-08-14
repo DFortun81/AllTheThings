@@ -8,7 +8,7 @@ WORLDSOUL_MEMORY = createHeader({
 		en = WOWAPI_GetSpellName(445256),
 	},
 });
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(WORLDSOUL_MEMORY, {
 		["provider"] = { "n", 222165 },	-- Worldsoul Memory
 		["g"] = {

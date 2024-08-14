@@ -8,7 +8,7 @@ AWAKENING_THE_MACHINE = createHeader({
 		en = "Awakening The Machine",
 	},
 });
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(THE_ASSEMBLY_OF_THE_DEEPS, {
 		n(AWAKENING_THE_MACHINE, {
 			["crs"] = { 217128 },	-- Speaker Kuldas <Awakening the Machine>

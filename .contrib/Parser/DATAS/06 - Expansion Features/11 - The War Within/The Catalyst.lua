@@ -85,7 +85,7 @@ local NERUBAR_PALACE_TIER = {
 local SymRaidNerubar = function(ClassID, DiffID)
 	return {{"sub","instance_tier",1273,DiffID,ClassID}}
 end
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	o(456208, {	-- The Catalyst
 		["description"] = "Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",
 		["coord"] = { 50.0, 54.2, DORNOGAL },

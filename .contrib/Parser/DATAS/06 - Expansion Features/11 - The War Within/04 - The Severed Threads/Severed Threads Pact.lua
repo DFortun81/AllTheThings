@@ -8,7 +8,7 @@ SEVERED_THREADS_PACT = createHeader({
 		en = "Severed Threads Pact",
 	},
 });
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(THE_SEVERED_THREADS, {
 		n(SEVERED_THREADS_PACT, bubbleDownSelf({ ["minReputation"] = { FACTION_THE_SEVERED_THREADS, 3 } }, {
 			n(ACHIEVEMENTS, {
