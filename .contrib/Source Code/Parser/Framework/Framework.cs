@@ -1,6 +1,7 @@
 ﻿using ATT.DB;
 using ATT.FieldTypes;
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
@@ -488,8 +489,8 @@ namespace ATT
         /// A Dictionary of key-ID types and the respective objects which contain the specified key which will be captured and output during Debug runs</para>
         /// NOTE: Each key name/value may contain multiple sets of data due to duplication of individual listings
         /// </summary>
-        public static Dictionary<string, SortedDictionary<decimal, IDictionary<string, object>>> DebugDBs { get; }
-                = new Dictionary<string, SortedDictionary<decimal, IDictionary<string, object>>>();
+        public static ConcurrentDictionary<string, ConcurrentDictionary<decimal, IDictionary<string, object>>> DebugDBs { get; }
+                = new ConcurrentDictionary<string, ConcurrentDictionary<decimal, IDictionary<string, object>>>();
 
         /// <summary>
         /// A collection of named format strings for logging messages
@@ -653,7 +654,7 @@ namespace ATT
             {
                 foreach (string key in configDebugDBs)
                 {
-                    DebugDBs[key] = new SortedDictionary<decimal, IDictionary<string, object>>();
+                    DebugDBs[key] = new ConcurrentDictionary<decimal, IDictionary<string, object>>();
                 }
             }
             ImportConfiguredObjectTypes(Config["ObjectTypes"]);
@@ -1700,9 +1701,10 @@ namespace ATT
                         // Export custom Debug DB data to the Debugging folder. (as JSON for simplicity)
                         var culture = Thread.CurrentThread.CurrentCulture;
                         Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
-                        foreach (KeyValuePair<string, SortedDictionary<decimal, IDictionary<string, object>>> dbKeyDatas in DebugDBs)
+                        foreach (KeyValuePair<string, ConcurrentDictionary<decimal, IDictionary<string, object>>> dbKeyDatas in DebugDBs)
                         {
-                            File.WriteAllText(Path.Combine(debugFolder.FullName, dbKeyDatas.Key + "_DebugDB.json"), ToJSON(dbKeyDatas.Value), Encoding.UTF8);
+                            File.WriteAllText(Path.Combine(debugFolder.FullName, dbKeyDatas.Key + "_DebugDB.json"),
+                                ToJSON(new SortedDictionary<decimal, IDictionary<string, object>>(dbKeyDatas.Value)), Encoding.UTF8);
                         }
                         Thread.CurrentThread.CurrentCulture = culture;
 
