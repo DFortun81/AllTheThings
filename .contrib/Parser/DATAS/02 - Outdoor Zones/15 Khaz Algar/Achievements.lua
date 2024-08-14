@@ -17,7 +17,7 @@ local ZIRIAK = {
 	["crs"] = { 223443 },
 	--["coord"] = { X, Y, MAP },
 };
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(ACHIEVEMENTS, {
 		petbattle(ach(40154, {	-- Aquatic Battler of Khaz Algar
 			crit(67139, -- Collector Dyna

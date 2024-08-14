@@ -5,7 +5,7 @@ local function bo(questID, isDaily)
     return { ["questID"] = questID, ["isDaily"] = isDaily };
 end
 
-root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH } }, {
+root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(AZJ_KAHET, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(216031, {	-- Abyssal Devourer
