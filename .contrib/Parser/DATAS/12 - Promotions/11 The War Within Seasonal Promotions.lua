@@ -16,10 +16,20 @@ root(ROOTS.Promotions, {
 		["timeline"] = { ADDED_11_0_0 },
 		["groups"] = {
 			-- "Pre Season"
-			i(229128, {	-- Harmonious Salutations Bear (MOUNT!)
+			--[[ Seems a bit confusing to have NYI showing for EU Realms... Ask Darkal/Runaway? // Braghe
+			chinaONLY(i(190231, {	-- Ash'adar, Harbinger of Dawn (MOUNT!)
 				["description"] = "Rewarded for returning to World of Warcraft. China Only.",
 				["timeline"] = { ADDED_11_0_0 },
-			}),
+			})),
+			chinaONLY(i(210409, {	-- Aura (PET!)
+				["description"] = "Rewarded for returning to World of Warcraft. China Only.",
+				["timeline"] = { ADDED_11_0_0 },
+			})),
+			--]]
+			chinaONLY(i(229128, {	-- Harmonious Salutations Bear (MOUNT!)
+				["description"] = "Rewarded for returning to World of Warcraft. China Only.",
+				["timeline"] = { ADDED_11_0_0 },
+			})),
 			i(93671, {	-- Ghastly Charger's Skull (MOUNT!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 26th, 03:00 p.m. & September 19th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_PH_LAUNCH, },
