@@ -324,7 +324,7 @@ i(0, 421244);		-- Living Serevite Deposit
 i(0, 422809);		-- Overload Living Deposit
 
 ------------------
--- PATCH ADDED_11_PH_LAUNCH --
+-- PATCH 11.0.2 --
 ------------------
 i(0, 423341);		-- Khaz Algar Mining
 i(0, 439705);		-- Bismuth

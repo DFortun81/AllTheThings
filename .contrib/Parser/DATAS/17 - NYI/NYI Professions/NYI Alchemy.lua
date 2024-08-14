@@ -80,8 +80,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 			}),
 			expansion(EXPANSION.TWW, {
-				-- CREATED_11_PH_LAUNCH
-				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
+				-- 11.0.0
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					i(212775),	-- zzOldFleeting Flask of Tempered Aggression
 					i(212776),	-- zzOldFleeting Flask of Tempered Aggression
 					i(212777),	-- zzOldFleeting Flask of Tempered Aggression

@@ -1167,7 +1167,7 @@ i(210241, 415628);	-- Dreamwalker's Healing Potion
 i(0, 415810);		-- Potion of Withering Dreams
 
 ------------------
--- PATCH ADDED_11_PH_LAUNCH --
+-- PATCH 11.0.2 --
 ------------------
 --- TRAINER ---
 i(0, 423321);		-- Khaz Algar Alchemy

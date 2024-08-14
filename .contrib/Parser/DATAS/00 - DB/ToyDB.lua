@@ -1349,7 +1349,7 @@ i(204405);	-- Stuffed Bear
 i(212174);	-- The Warband Map to Everywhere All At Once
 
 ------------------
--- PATCH ADDED_11_PH_LAUNCH --
+-- PATCH 11.0.2 --
 ------------------
 i(211931);	-- Abyss Caller Horn
 i(225556);	-- Ancient Construct

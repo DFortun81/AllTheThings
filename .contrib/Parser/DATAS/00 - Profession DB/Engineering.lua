@@ -1281,7 +1281,7 @@ i(211618, 430095);	-- Draconic Combatant's Mail Goggles
 i(211619, 430096);	-- Draconic Combatant's Plate Goggles
 
 ------------------
--- PATCH ADDED_11_PH_LAUNCH --
+-- PATCH 11.0.2 --
 ------------------
 --- TRAINER ---
 i(0, 423335);		-- Khaz Algar Engineering

@@ -532,7 +532,7 @@ i(211588, 430055);	-- Draconic Combatant's Jeweled Amulet
 i(211589, 430056);	-- Draconic Combatant's Jeweled Signet
 
 ------------------
--- PATCH ADDED_11_PH_LAUNCH --
+-- PATCH 11.0.2 --
 ------------------
 --- TRAINER ---
 i(0, 423339);		-- Khaz Algar Jewelcrafting

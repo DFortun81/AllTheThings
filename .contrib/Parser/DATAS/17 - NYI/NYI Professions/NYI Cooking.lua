@@ -64,8 +64,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 			}),
 			expansion(EXPANSION.TWW, {
-				-- CREATED_11_PH_LAUNCH
-				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
+				-- 11.0.0
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					i(220415),	-- Angler's Delight
 					i(222283),	-- Angler's Delight
 					i(220430),	-- Blessing Blossom Tea
@@ -400,8 +400,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 			}),
 			expansion(EXPANSION.TWW, {
-				-- CREATED_11_PH_LAUNCH
-				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
+				-- 11.0.0
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					r(445478),	-- Blessing Blossom Tea
 					r(445477),	-- Luminous Lemonade
 					r(445114),	-- Village Potluck

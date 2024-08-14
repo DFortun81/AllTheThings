@@ -849,7 +849,7 @@ i(210242, 416001);	-- Slumbering Peacebloom Tea
 i(210496, 0);		-- Slumbering Peacebloom Tea
 
 ------------------
--- PATCH ADDED_11_PH_LAUNCH --
+-- PATCH 11.0.2 --
 ------------------
 --- TRAINER ---
 i(0, 423333);		-- Khaz Algar Cooking

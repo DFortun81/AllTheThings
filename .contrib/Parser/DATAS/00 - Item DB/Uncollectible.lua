@@ -1812,7 +1812,7 @@ i(225416);	-- Green Hills of Stranglethorn - Page 26
 i(225419);	-- Green Hills of Stranglethorn - Page 27
 
 ------------------
--- PATCH ADDED_11_PH_LAUNCH --
+-- PATCH 11.0.2 --
 ------------------
 i(220287);	-- Acid-Filled Sack
 i(228398);	-- Angry Rock

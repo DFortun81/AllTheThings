@@ -1590,7 +1590,7 @@ i(211610, 430091);	-- Draconic Combatant's Insignia of Alacrity
 i(211609, 430090);	-- Draconic Combatant's Medallion
 
 ------------------
--- PATCH ADDED_11_PH_LAUNCH --
+-- PATCH 11.0.2 --
 ------------------
 --- TRAINER ---
 i(0, 423338);		-- Khaz Algar Inscription

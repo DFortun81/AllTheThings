@@ -11,8 +11,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 			}),
 			expansion(EXPANSION.TWW, {
-				-- CREATED_11_PH_LAUNCH
-				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
+				-- 11.0.0
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					i(219676),	-- Common Fish A
 					i(219677),	-- Common Fish B
 					i(219678),	-- Common Fish C

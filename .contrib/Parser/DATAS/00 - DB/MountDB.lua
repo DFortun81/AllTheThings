@@ -1813,7 +1813,7 @@ i(217985, 441324);	-- Remembered Golden Gryphon
 i(217987, 441325);	-- Remembered Wind Rider
 
 ------------------
--- PATCH ADDED_11_PH_LAUNCH --
+-- PATCH 11.0.2 --
 ------------------
 i(223270, 447213);	-- Alunira
 i(223264, 447185);	-- Aquamarine Swarmite

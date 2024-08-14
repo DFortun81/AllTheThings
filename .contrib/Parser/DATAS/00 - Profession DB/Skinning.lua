@@ -39,7 +39,7 @@ i(0, 377988);	-- Heart in a Bottle
 i(0, 382587);	-- Opening
 
 ------------------
--- PATCH ADDED_11_PH_LAUNCH --
+-- PATCH 11.0.2 --
 ------------------
 --- TRAINER ---
 i(0, 423342);	-- Khaz Algar Skinning

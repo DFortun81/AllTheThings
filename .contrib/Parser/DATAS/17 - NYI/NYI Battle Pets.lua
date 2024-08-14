@@ -34,7 +34,7 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(13343, {	-- Pet Stone (PET!)
 			-- ["displayID"] = ,
 			}),
-			
+
 			-- #if BEFORE 7.0.3
 			i(23712),	-- White Tiger Cub (PET!) - Crieve NOTE: This became Ash'ana in Val'sharah with Legion.
 			-- #endif
@@ -1447,8 +1447,8 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			}),
 		})),
 
-		-- CREATED_11_PH_LAUNCH
-		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
+		-- 11.0.2
+		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
 			-- Trainer Pets --
 			pet(4561),	-- Awakened Custodian (PET!)
 			pet(4554),	-- Bubs (PET!)

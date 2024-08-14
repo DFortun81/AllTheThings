@@ -1473,7 +1473,7 @@ i(211578, 430075);	-- Draconic Combatant's Wildercloth Treads
 i(211579, 430074);	-- Draconic Combatant's Wildercloth Tunic
 
 ------------------
--- PATCH ADDED_11_PH_LAUNCH --
+-- PATCH 11.0.2 --
 ------------------
 --- TRAINER ---
 i(0, 423343);		-- Khaz Algar Tailoring

@@ -117,7 +117,7 @@ i(0, 393062);		-- Temporal Dragonhead School
 i(0, 393059);		-- Thousandbite Pirahna Swarm
 
 ------------------
--- PATCH ADDED_11_PH_LAUNCH --
+-- PATCH 11.0.2 --
 ------------------
 --- TRAINER ---
 i(0, 423336);		-- Khaz Algar Fishing

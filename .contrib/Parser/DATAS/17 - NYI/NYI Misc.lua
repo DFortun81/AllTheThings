@@ -1559,8 +1559,8 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		})),
 	}),
 	expansion(EXPANSION.TWW, {
-		-- CREATED_11_PH_LAUNCH
-		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
+		-- 11.0.0
+		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			i(219741), -- Algari Mineral
 			i(219742), -- Algari Spices
 			i(224030), -- Bottomless Bag of Khaz Algar Alchemy Goods

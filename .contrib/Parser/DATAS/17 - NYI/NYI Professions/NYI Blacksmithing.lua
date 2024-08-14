@@ -380,8 +380,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 			}),
 			expansion(EXPANSION.TWW, {
-				-- CREATED_11_PH_LAUNCH
-				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
+				-- 11.0.0
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					i(222057), -- Artisan Blacksmith's Hammer
 					i(222058), -- Artisan Blacksmith's Toolbox
 					i(222055), -- Artisan Leatherworker's Knife
@@ -894,8 +894,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 			}),
 			expansion(EXPANSION.TWW, {
-				-- CREATED_11_PH_LAUNCH
-				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_PH_LAUNCH } }, {
+				-- 11.0.0
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					i(223026), -- Plans: Artisan Leatherworker's Knife
 					i(223027), -- Plans: Artisan Leatherworker's Toolset
 					i(223025), -- Plans: Artisan Needle Set

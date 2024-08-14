@@ -2218,7 +2218,7 @@ i(211585, 430088);	-- Draconic Combatant's Draconium Sabatons
 i(211587, 430089);	-- Draconic Combatant's Draconium Waistguard
 
 ------------------
--- PATCH ADDED_11_PH_LAUNCH --
+-- PATCH 11.0.2 --
 ------------------
 --- TRAINER ---
 i(0, 423332);		-- Khaz Algar Blacksmithing
