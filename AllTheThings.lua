@@ -811,12 +811,12 @@ app.SourceSpecificFields = {
 	end,
 -- Returns the 'most obtainable' unobtainable value from the provided set of unobtainable values
 	["u"] = function(...)
-		-- print("GetMostObtainableValue:")
+		-- app.PrintDebug("GetMostObtainableValue:")
 		local max, check, new = -1, nil, nil;
-		-- app.PrintTable(vals)
 		local conditions = L.AVAILABILITY_CONDITIONS;
 		local condition, u;
 		local vals = select("#", ...);
+		-- app.PrintDebug(...)
 		for i=1,vals do
 			u = select(i, ...);
 			-- missing u value means NOT unobtainable
@@ -833,9 +833,11 @@ app.SourceSpecificFields = {
 			if check > max then
 				new = u;
 				max = check;
+			elseif u > new then
+				new = u
 			end
 		end
-			-- print("new:",new)
+		-- app.PrintDebug("new:",new)
 		return new;
 	end,
 -- Returns the 'highest' Removed with Patch value from the provided set of `rwp` values

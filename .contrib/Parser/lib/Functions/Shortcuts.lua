@@ -1492,10 +1492,10 @@ un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable w
 
 -- Region Specific Filters
 regionExclusive = function(region, t)
-	if t.OnInit then
+	if t.OnInit or t.OnSourceInit then
 		error("ERROR: You already have an OnInit assigned for this object.");
 	end
-	t.OnInit = [[function(t)
+	t.OnSourceInit = [[function(t)
 	if GetCVar("portal") ~= "]] .. region .. [[" then
 		t.u = 1;
 	end
@@ -1504,10 +1504,10 @@ end]];
 	return t;
 end
 regionUnavailable = function(region, t)
-	if t.OnInit then
+	if t.OnInit or t.OnSourceInit then
 		error("ERROR: You already have an OnInit assigned for this object.");
 	end
-	t.OnInit = [[function(t)
+	t.OnSourceInit = [[function(t)
 	if GetCVar("portal") == "]] .. region .. [[" then
 		t.u = 1;
 	end

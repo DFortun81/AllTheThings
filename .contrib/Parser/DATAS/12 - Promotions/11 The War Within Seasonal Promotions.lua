@@ -16,18 +16,18 @@ root(ROOTS.Promotions, {
 		["timeline"] = { ADDED_11_0_0 },
 		["groups"] = {
 			-- "Pre Season"
-			--[[ Seems a bit confusing to have NYI showing for EU Realms... Ask Darkal/Runaway? // Braghe
+			-- Seems a bit confusing to have NYI showing for EU Realms... Ask Darkal/Runaway? // Braghe
 			chinaONLY(i(190231, {	-- Ash'adar, Harbinger of Dawn (MOUNT!)
-				["description"] = "Rewarded for returning to World of Warcraft. China Only.",
+				-- ["description"] = "Rewarded for returning to World of Warcraft. China Only.",
 				["timeline"] = { ADDED_11_0_0 },
 			})),
 			chinaONLY(i(210409, {	-- Aura (PET!)
-				["description"] = "Rewarded for returning to World of Warcraft. China Only.",
+				-- ["description"] = "Rewarded for returning to World of Warcraft. China Only.",
 				["timeline"] = { ADDED_11_0_0 },
 			})),
 			--]]
 			chinaONLY(i(229128, {	-- Harmonious Salutations Bear (MOUNT!)
-				["description"] = "Rewarded for returning to World of Warcraft. China Only.",
+				-- ["description"] = "Rewarded for returning to World of Warcraft. China Only.",
 				["timeline"] = { ADDED_11_0_0 },
 			})),
 			i(93671, {	-- Ghastly Charger's Skull (MOUNT!)

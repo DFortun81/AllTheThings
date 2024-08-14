@@ -474,6 +474,7 @@ local fieldConverters = {
 	end,
 	["mapID"] = cacheMapID,
 	["mountID"] = function(group, value)
+		CacheField(group, "mountID", value);
 		CacheField(group, "spellID", value);
 	end,
 	["npcID"] = cacheCreatureID,

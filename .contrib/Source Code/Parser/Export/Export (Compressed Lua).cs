@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace ATT
 {
@@ -15,6 +16,18 @@ namespace ATT
         /// Default: false
         /// </summary>
         public static bool AddTableNewLines { get; set; } = false;
+
+        private static List<string[]> RegexFunctionReplacements = new List<string[]>
+        {
+            new [] { @";[\s]*", @";" },
+            new [] { @",[\s]*", @"," },
+            new [] { @"[\s]+=[\s]+", @"=" },
+            new [] { @"[\s]+>=[\s]+", @">=" },
+            new [] { @"[\s]+<=[\s]+", @"<=" },
+            new [] { @"[\s]+>[\s]+", @">" },
+            new [] { @"[\s]+<[\s]+", @"<" },
+            new [] { @"\t[\t]+", "\t" },
+        };
 
         /// <summary>
         /// Export the data to the builder in a compressed, minified format.
@@ -157,10 +170,11 @@ namespace ATT
             fields.Sort(Framework.Compare);
 
             // Check if the body has OnInit, if so, rip it out and append it before the constructor
-            var hasOnInit = data.TryGetValue("OnInit", out object OnInitRef);
+            var hasOnInit = data.TryGetValue("OnInit", out object OnInitRef) || data.TryGetValue("OnSourceInit", out OnInitRef);
             if (hasOnInit)
             {
                 fields.Remove("OnInit");
+                fields.Remove("OnSourceInit");
                 var onInitBody = SimplifyFunctionBody(OnInitRef);
                 if (!onInitBody.Contains("return"))
                 {
@@ -467,7 +481,11 @@ namespace ATT
             int functionBodyLength = functionBody.Length;
             while (true)
             {
-                string shortenedFunctionBody = functionBody.Replace("\t\t", "\t");
+                string shortenedFunctionBody = null;
+                foreach (string[] replacements in RegexFunctionReplacements)
+                {
+                    shortenedFunctionBody = Regex.Replace(shortenedFunctionBody ?? functionBody, replacements[0], replacements[1]);
+                }
                 int shortLength = shortenedFunctionBody.Length;
                 if (shortLength < functionBodyLength)
                 {
