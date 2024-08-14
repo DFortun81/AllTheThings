@@ -1888,15 +1888,12 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(223386),	-- Vilewing Crown
-				i(223387),	-- Vilewing Chain Helm
-				i(223390),	-- Leggings of Dark Hunger
-				i(223391),	-- Legguards of Dark Hunger
 
 
-				i(223406),	-- Slippers of the Nerubian Twins
-				i(223407),	-- Sabatons of the Nerubian Twins
-				i(223408),	-- Treads of the Nerubian Twins
+
+
+
+
 				i(223915),	-- Nerubian Orator's Stiletto
 				i(223916),	-- Nerubian Cutthroat's Reach
 				i(223917),	-- Nerubian Covert's Cloak

@@ -12,6 +12,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["coord"] = { 47.4, 43.7, AZJ_KAHET },
 				["questID"] = 81695,
 				["g"] = {
+					i(223390),	-- Leggings of Dark Hunger
+					i(223391),	-- Legguards of Dark Hunger
 					i(223389),	-- Legplates of Dark Hunger
 					i(223392),	-- Trousers of Dark Hunger
 				},
@@ -105,22 +107,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["questID"] = 81694,
 				["g"] = {
 					i(223378),	-- Footguards of the Nerubian Twins
+					i(223407),	-- Sabatons of the Nerubian Twins
+					i(223406),	-- Slippers of the Nerubian Twins
 					i(223408),	-- Treads of the Nerubian Twins
 				},
 			}),
 			n(216038, {	-- The Groundskeeper
 				["coord"] = { 30.6, 55.5, NERUBAR },
 				["questID"] = 81634,
-				["g"] = {
-					--
-				},
 			}),
-			n(216047, {	-- The One Left
+			n(216047, {	-- The One Left [This is the only Weird Rare....]
 				["questID"] = 82290,
 				["coord"] = { 63.5, 95.2, AZJ_KAHET },
-				["g"] = {
-					-- 
-				},
 			}),
 			n(216049, {	-- The Oozekhan
 				["questID"] = 82035,
@@ -146,10 +144,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 				["questID"] = 81700,
 				["g"] = {
 					i(223388),	-- Vilewing Cap
+					i(223387),	-- Vilewing Chain Helm
+					i(223386),	-- Vilewing Crown
 					i(223405),	-- Vilewing Visor
 				},
 			}),
-			n(216041, {	-- Webspeaker Grik'ik (vignette - Kaheti Webspeaker)
+			n(216041, {	-- Webspeaker Grik'ik
 				["coord"] = { 61.3, 33.0, AZJ_KAHET },
 				["questID"] = 81699,
 				["g"] = {
@@ -167,9 +167,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_PH_LAUNCH
 			n(216034, {	-- XT-Minecrusher 8700
 				["coord"] = { 75.4, 61.0, AZJ_KAHET },
 				["questID"] = 81703,
-				["g"] = {
-					--
-				},
 			}),
 		})),
 	}),
