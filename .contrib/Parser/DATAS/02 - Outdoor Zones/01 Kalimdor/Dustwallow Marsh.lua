@@ -208,6 +208,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 					}),
 				}),
+				prof(FISHING, {
+					o(207724),	-- Shipwreck Debris
+					o(180685),	-- Waterlogged Wreckage
+				}),
 			}),
 			n(QUESTS, {
 				q(1258, {	-- ... and Bugs
@@ -3460,10 +3464,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-			}),
-			prof(FISHING, {
-				o(207724),	-- Shipwreck Debris
-				-- Somebody made an Error Report the Debris only in Tol Bard, so I put it here too, idk.
 			}),
 			n(RARES, {
 				n(50784, {	-- Anith

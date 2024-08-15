@@ -154,6 +154,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["g"] = ALL_GNOMISH_ENGINEERING,
 					}),
 				}),
+				prof(FISHING, {
+					o(180901),	-- Bloodsail Wreckage
+				}),
 			}),
 			n(QUESTS, {
 				q(610, {	-- "Pretty Boy" Duncan

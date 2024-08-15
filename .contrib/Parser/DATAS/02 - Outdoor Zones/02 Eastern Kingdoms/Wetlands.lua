@@ -251,9 +251,28 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
-			prof(MINING, {
-				i(3340, {	-- Incendicite Ore
-					["provider"] = { "o", 1610 },	-- Incendicite Mineral Vein
+			n(PROFESSIONS, {
+				prof(FISHING, {
+					o(180662),	-- Schooner Wreckage
+				}),
+				prof(MINING, {
+					i(3340, {	-- Incendicite Ore
+						["provider"] = { "o", 1610 },	-- Incendicite Mineral Vein
+					}),
+				}),
+				prof(SKINNING, {
+					-- #if AFTER 4.0.3
+					i(7286, {	-- Black Whelp Scale
+						["cr"] = 42042,	-- Ebon Whelp
+					}),
+					-- #else
+					i(7287, {	-- Red Whelp Scale
+						["crs"] = {
+							1069,	-- Crimson Whelp
+							1044,	-- Flamesnorting Whelp
+						},
+					}),
+					-- #endif
 				}),
 			}),
 			n(QUESTS, {
@@ -2048,20 +2067,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					["timeline"] = { ADDED_4_0_1 },
 				}),
-			}),
-			prof(SKINNING, {
-				-- #if AFTER 4.0.3
-				i(7286, {	-- Black Whelp Scale
-					["cr"] = 42042,	-- Ebon Whelp
-				}),
-				-- #else
-				i(7287, {	-- Red Whelp Scale
-					["crs"] = {
-						1069,	-- Crimson Whelp
-						1044,	-- Flamesnorting Whelp
-					},
-				}),
-				-- #endif
 			}),
 			-- #if SEASON_OF_DISCOVERY
 			n(TREASURES, {

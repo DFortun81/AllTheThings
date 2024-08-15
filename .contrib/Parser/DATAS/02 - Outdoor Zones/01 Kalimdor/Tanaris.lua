@@ -2949,16 +2949,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
-			prof(ENGINEERING, {
-				n(8736, {	-- Buzzek Bracketswing <Engineering Trainer>
-					["coord"] = { 51.6, 30.2, TANARIS },
-					-- #if BEFORE 2.1.0
-					["g"] = EXPERT_ARTISAN_ENGINEERING,
-					-- #endif
+			n(PROFESSIONS, {
+				prof(ENGINEERING, {
+					n(8736, {	-- Buzzek Bracketswing <Engineering Trainer>
+						["coord"] = { 51.6, 30.2, TANARIS },
+						-- #if BEFORE 2.1.0
+						["g"] = EXPERT_ARTISAN_ENGINEERING,
+						-- #endif
+					}),
+					n(8126, {	-- Nixx Sprocketspring <Goblin Engineering Trainer>
+						["coord"] = { 52.2, 28.2, TANARIS },
+						["g"] = ALL_GOBLIN_ENGINEERING,
+					}),
 				}),
-				n(8126, {	-- Nixx Sprocketspring <Goblin Engineering Trainer>
-					["coord"] = { 52.2, 28.2, TANARIS },
-					["g"] = ALL_GOBLIN_ENGINEERING,
+				prof(FISHING, {
+					o(180751),	-- Floating Wreckage
 				}),
 			}),
 			n(QUESTS, {

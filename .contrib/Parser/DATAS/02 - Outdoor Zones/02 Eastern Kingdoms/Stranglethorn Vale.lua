@@ -312,6 +312,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["g"] = ALL_GNOMISH_ENGINEERING,
 					}),
 				}),
+				-- #if BEFORE CATA
+				prof(FISHING, {
+					o(180685),	-- Waterlogged Wreckage
+				}),
+				-- #endif
+				prof(FISHING, {
+					o(180901),	-- Bloodsail Wreckage
+				}),
 				prof(LEATHERWORKING, {
 					n(7871, {	-- Se'Jib <Master Tribal Leatherworker>
 						["coord"] = { 36.6, 34.2, STRANGLETHORN_VALE },
@@ -3144,10 +3152,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							real(50, i(226767)),	-- Legplates of Valor
 							real(25, i(226764)),	-- Boots of Valor
 						}),
-						
+
 						-- Toys
 						real(25, i(228189)),	-- Gift of Gob (TOY!)
-						
+
 						-- Weapons
 						real(50, i(228185)),	-- Broken Bottle of Goblino Noir
 						real(50, i(228168)),	-- Goblin Gear Grinder
@@ -3157,21 +3165,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						real(50, i(220597)),	-- Drakestone of the Dream Harbinger
 						real(50, i(220598)),	-- Drakestone of the Nightmare Harbinger
 						real(50, i(228187)),	-- Stick of the South Sea
-						
+
 						-- Armor
 						real(25, i(228184)),	-- Goblin Clothesline
-						
+
 						-- Rings
 						real(25, i(228186)),	-- Abandoned Wedding Band
 						real(50, i(227284)),	-- Band of the Beast
 						real(50, i(227280)),	-- Craft of the Shadows
 						real(50, i(227279)),	-- Loop of the Magister
 						real(50, i(227282)),	-- Ring of the Dreaded Mist
-						
+
 						-- Trinkets
 						real(50, i(227990)),	-- Hand of Injustice
 						real(50, i(228432)),	-- Whistle of the Beast
-						
+
 						-- Librams
 						real(15, i(228182)),	-- Idol of Exsanguination (Bear)
 						real(15, i(228181)),	-- Idol of Exsanguination (Cat)
@@ -3184,10 +3192,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						real(15, i(228177)),	-- Totem of Raging Fire
 						real(15, i(228179)),	-- Totem of the Plains
 						real(15, i(228176)),	-- Totem of Thunder
-						
+
 						-- Bags
 						real(25, i(228171)),	-- Kezan Cash Carrier
-						
+
 						-- Recipes
 						real(50, i(228121)),	-- Pattern: Leather-Reinforced Runecloth Bag
 						real(50, i(13522)),	-- Recipe: Flask of Chromatic Resistance
@@ -3195,7 +3203,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						real(50, i(13518)),	-- Recipe: Flask of Petrification
 						real(50, i(13521)),	-- Recipe: Flask of Supreme Power
 						real(50, i(13519)),	-- Recipe: Flask of the Titans
-						
+
 						-- Reagents
 						real(5, i(226405, {	-- Damaged Undermine Supply Crate
 							["description"] = "Contains random max level crafting materials.",

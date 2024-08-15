@@ -128,6 +128,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			-- #if AFTER CATA
+			n(PROFESSIONS, {
+				prof(FISHING, {
+					o(180751),	-- Floating Wreckage
+				}),
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(26172, {	-- A Bloodmage's Gotta Eat Too (A)
 					["qg"] = 42298,	-- Kasim Sharim

@@ -140,6 +140,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					}),
 				}),
+				-- #if AFTER CATA
+				prof(FISHING, {
+					o(180751),	-- Floating Wreckage
+				}),
+				-- #endif
 			}),
 			n(QUESTS, {
 				q(2801, {	-- A Tale of Sorrow

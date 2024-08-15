@@ -221,6 +221,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			-- #endif
+			n(PROFESSIONS, {
+				prof(FISHING, {
+					o(180662),	-- Schooner Wreckage
+				}),
+			}),
 			n(QUESTS, {
 				q(1071, {	-- A Gnome's Respite
 					["qg"] = 4077,	-- Gaxim Rustfizzle

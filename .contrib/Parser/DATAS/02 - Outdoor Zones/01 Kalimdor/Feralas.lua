@@ -181,14 +181,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
-			-- #if ANYCLASSIC
-			prof(FISHING, {
-				i(16967, {	-- Feralas Ahi
-					["coord"] = { 62.0, 52.0, FERALAS },
-					["description"] = "Best fished at 62.0 52.0",
-				}),
-			}),
-			-- #endif
 			n(PROFESSIONS, {
 				prof(ALCHEMY, {
 					n(7948, {	-- Kylanna Windwhisper <Alchemy Trainer>
@@ -198,6 +190,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["g"] = EXPERT_ARTISAN_ALCHEMY,
 						-- #endif
 					}),
+				}),
+				prof(FISHING, {
+					-- #if ANYCLASSIC
+					i(16967, {	-- Feralas Ahi
+						["coord"] = { 62.0, 52.0, FERALAS },
+						["description"] = "Best fished at 62.0 52.0",
+					}),
+					-- #endif
+					-- #if BEFORE CATA
+					o(180751),	-- Floating Wreckage
+					-- #endif
+					-- #if AFTER CATA
+					o(180685),	-- Waterlogged Wreckage
+					-- #endif
 				}),
 				prof(LEATHERWORKING, {
 					n(7870, {	-- Caryssia Moonhunter <Tribal Leatherworking Trainer>

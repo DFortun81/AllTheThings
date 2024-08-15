@@ -175,6 +175,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					}),
 				}),
+				-- #if BEFORE CATA
+				prof(FISHING, {
+					o(180685),	-- Waterlogged Wreckage
+				}),
+				-- #endif
+				-- #if AFTER CATA
+				prof(FISHING, {
+					o(180662),	-- Schooner Wreckage
+				}),
+				-- #endif
 				prof(LEATHERWORKING, {
 					n(7869, {	-- Brumn Winterhoof <Master Elemental Leatherworker>
 						["coord"] = { 28.2, 45.0, ARATHI_HIGHLANDS },

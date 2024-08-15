@@ -201,6 +201,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #endif
 			}),
 			n(PROFESSIONS, {
+				-- #if BEFORE CATA
+				prof(FISHING, {
+					o(180751),	-- Floating Wreckage
+				}),
+				-- #endif
 				prof(LEATHERWORKING, {
 					n(7866, {	-- Peter Galen <Master Dragonscale Leatherworker>
 						["coord"] = { 37.6, 65.4, AZSHARA },

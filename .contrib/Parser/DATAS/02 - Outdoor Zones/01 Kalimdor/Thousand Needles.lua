@@ -137,6 +137,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			-- #if AFTER CATA
+			n(PROFESSIONS, {
+				prof(FISHING, {
+					o(180751),	-- Floating Wreckage
+				}),
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(1175, {	-- A Bump in the Road
 					["qg"] = 4629,	-- Trackmaster Zherin

@@ -229,6 +229,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
+			n(PROFESSIONS, {
+				prof(FISHING, {
+					o(180662),	-- Schooner Wreckage
+				}),
+			}),
 			n(QUESTS, {
 				q(28345, {	-- *Gurgle* HELP! *Gurgle*
 					["qg"] = 48218,	-- Kingslayer Orkus <Red Like My Rage>

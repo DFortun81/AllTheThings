@@ -954,6 +954,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 			}),
+			-- #if AFTER CATA
+			n(PROFESSIONS, {
+				prof(FISHING, {
+					o(180751),	-- Floating Wreckage
+				}),
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(27463, {	-- A Boyhood Dream
 					["qg"] = 45431,	-- Gidwin Goldbraids
@@ -4765,7 +4772,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								["timeline"] = { REMOVED_4_0_3 },
 								["cost"] = { { "g", 1500000 } },	-- 150g
 							}),
-							
+
 							-- #if SEASON_OF_DISCOVERY
 							applyclassicphase(SOD_PHASE_FOUR, i(227813, {	-- Drinkable Stratholme Holy Water
 								["timeline"] = { "added 1.15.3" },

@@ -355,6 +355,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 			})),
 			-- #endif
+			-- #if AFTER CATA
+			n(PROFESSIONS, {
+				prof(FISHING, {
+					o(180662),	-- Schooner Wreckage
+				}),
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(26453, {	-- A Helping Hand
 					["qg"] = 17106,	-- Vindicator Palanaar

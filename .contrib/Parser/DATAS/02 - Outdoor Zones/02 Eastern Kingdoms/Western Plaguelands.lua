@@ -172,6 +172,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				-- #endif
 			}),
+			-- #if AFTER CATA
+			n(PROFESSIONS, {
+				prof(FISHING, {
+					o(180685),	-- Waterlogged Wreckage
+				}),
+			}),
+			-- #endif
 			n(QUESTS, {
 				q(5066, {	-- A Call to Arms: The Plaguelands! [Stormwind City]
 					["qg"] = 2198,	-- Crier Goodman

@@ -48,6 +48,29 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["maxReputation"] = { 70, NEUTRAL },	-- Syndicate, Neutral.
 				}),
 			}),
+			n(PROFESSIONS, {
+				-- #if SEASON_OF_DISCOVERY
+				applyclassicphase(SOD_PHASE_ONE, n(214212, {	-- Shadowy Figure
+					["providers"] = {
+						--{ "o",  },	-- Shard of Pure Light
+						{ "i", 211421 },	-- The Box
+					},
+					["coord"] = { 88.6, 73.6, ALTERAC_MOUNTAINS },
+					["groups"] = {
+						recipe(429351),	-- Extraplanar Spidersilk Boots
+						recipe(429348),	-- Shifting Silver Breastplate
+						recipe(429869),	-- Void-Touched Leather Gauntlets
+						recipe(429354),	-- Void-Touched Leather Gloves
+						i(211422),	-- Shard of the Void
+					},
+				})),
+				-- #endif
+				-- #if BEFORE CATA
+				prof(FISHING, {
+					o(180685),	-- Waterlogged Wreckage
+				}),
+				-- #endif
+			}),
 			n(QUESTS, {
 				applyclassicphase(PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS, q(8233, {	-- A Simple Request
 					["allianceQuestData"] = {
@@ -769,24 +792,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 			}),
-			-- #if SEASON_OF_DISCOVERY
-			n(PROFESSIONS, {
-				applyclassicphase(SOD_PHASE_ONE, n(214212, {	-- Shadowy Figure
-					["providers"] = {
-						--{ "o",  },	-- Shard of Pure Light
-						{ "i", 211421 },	-- The Box
-					},
-					["coord"] = { 88.6, 73.6, ALTERAC_MOUNTAINS },
-					["groups"] = {
-						recipe(429351),	-- Extraplanar Spidersilk Boots
-						recipe(429348),	-- Shifting Silver Breastplate
-						recipe(429869),	-- Void-Touched Leather Gauntlets
-						recipe(429354),	-- Void-Touched Leather Gloves
-						i(211422),	-- Shard of the Void
-					},
-				})),
-			}),
-			-- #endif
 			n(RARES, {
 				n(14222, {	-- Araga
 					["coords"] = {
