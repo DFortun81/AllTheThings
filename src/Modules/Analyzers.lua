@@ -36,6 +36,7 @@ local OnUpdate_CheckSymlinks = function(self, force)
 			self:BuildData()
 			self:Update(true)
 
+			app.SetDGUDelay(0)
 			app.FillGroups(data)
 		end
 

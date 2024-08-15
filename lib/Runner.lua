@@ -314,9 +314,3 @@ app.CreateRunner = function(name)
 end
 app.Runners = {}
 app.FunctionRunner = CreateRunner("default");
-
-app.RunnerStats = function()
-	for name,runner in pairs(app.Runners) do
-		runner.Stats()
-	end
-end
