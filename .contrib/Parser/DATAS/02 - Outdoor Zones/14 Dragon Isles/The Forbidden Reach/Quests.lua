@@ -123,7 +123,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["sourceQuests"] = {
 					75050,	-- An Eclectic Accord
 					74769,	-- Stemming the Irontide
-					73157,	--  Wings of Mercy
+					73157,	-- Wings of Mercy
 				},
 				["provider"] = { "n", 200559 },	-- Treysh
 				["coord"] = { 35.6, 59.5, THE_FORBIDDEN_REACH },
@@ -172,7 +172,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			-- Envoy
 			-- Dragonscale
 			q(74908, {	-- New Adventures
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+				["sourceQuests"] = {
+					-- #IF AFTER 11.0.2
+					75050,	-- An Eclectic Accord
+					74769,	-- Stemming the Irontide
+					73157,	-- Wings of Mercy
+					-- #ELSE
+					74381,	-- Hidden Legacies
+					-- #ENDIF
+				},
 				["coord"] = { 34.2, 59.9, THE_FORBIDDEN_REACH },
 			}),
 			q(74389, {	-- Filming the Caldera
@@ -195,7 +203,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			-- Iskaara
 			q(74909, {	-- New Catches
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+				["sourceQuests"] = {
+					-- #IF AFTER 11.0.2
+					75050,	-- An Eclectic Accord
+					74769,	-- Stemming the Irontide
+					73157,	-- Wings of Mercy
+					-- #ELSE
+					74381,	-- Hidden Legacies
+					-- #ENDIF
+				},
 				["coord"] = { 34.2, 59.9, THE_FORBIDDEN_REACH },
 			}),
 			q(74119, {	-- Angler's Challenge
@@ -217,7 +233,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			-- Maruuk
 			q(74910, {	-- New Foes
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+				["sourceQuests"] = {
+					-- #IF AFTER 11.0.2
+					75050,	-- An Eclectic Accord
+					74769,	-- Stemming the Irontide
+					73157,	-- Wings of Mercy
+					-- #ELSE
+					74381,	-- Hidden Legacies
+					-- #ENDIF
+				},
 				["coord"] = { 34.2, 59.9, THE_FORBIDDEN_REACH },
 			}),
 			q(74390, {	-- Brutal Prey
@@ -236,7 +260,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 			}),
 			-- Valdrakken
 			q(74911, {	-- New Horizons
-				["sourceQuests"] = { 74381 },	-- Hidden Legacies
+				["sourceQuests"] = {
+					-- #IF AFTER 11.0.2
+					75050,	-- An Eclectic Accord
+					74769,	-- Stemming the Irontide
+					73157,	-- Wings of Mercy
+					-- #ELSE
+					74381,	-- Hidden Legacies
+					-- #ENDIF
+				},
 				["coord"] = { 34.2, 59.9, THE_FORBIDDEN_REACH },
 			}),
 			q(75261, {	-- Reach Center
@@ -286,7 +318,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["coord"] = { 37.4, 81.7, THE_FORBIDDEN_REACH },
 			}),
 		}),
-		n(QUESTS, sharedData({ ["isWeekly"] = true, ["sourceQuests"] = { 74381 } }, {
+		n(QUESTS, sharedData({
+				["isWeekly"] = true,
+				["sourceQuests"] = {
+					-- #IF AFTER 11.0.2
+					75050,	-- An Eclectic Accord
+					74769,	-- Stemming the Irontide
+					73157,	-- Wings of Mercy
+					-- #ELSE
+					74381,	-- Hidden Legacies
+					-- #ENDIF
+				},}, {
 			q(75025, {	-- A Good Day for Rolling
 				["provider"] = { "n", 201291 },	-- Cataloger Coralie
 				["coord"] = { 34.4, 59.3, THE_FORBIDDEN_REACH },

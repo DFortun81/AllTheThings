@@ -64,7 +64,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 				}),
 				q(72953, {	-- Zskera Vault: Az
-					["sourceQuests"] = { 74381 },	-- Hidden Legacies
+					["sourceQuests"] = {
+						-- #IF AFTER 11.0.2
+						73159,	-- Exploring Our Past
+						-- #ELSE
+						74381,	-- Hidden Legacies
+						-- #ENDIF
+					},
 					["provider"] = { "n", 200040 },	-- Pathfinder Jeb
 					["coord"] = { 25.8, 47.9, THE_FORBIDDEN_REACH },
 				}),
@@ -95,7 +101,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 				}),
 				q(73089, {	-- What's Behind The Next Door
-					["sourceQuests"] = { 74381 },	-- Hidden Legacies
+					["sourceQuests"] = { 74294 },	-- The Keys You Need
 					["provider"] = { "n", 200041 },	-- Pathfinder Tacha
 					["coord"] = { 25.8, 47.9, THE_FORBIDDEN_REACH },
 				}),
@@ -226,6 +232,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					},
 				}),
 				q(73155, {	-- The Forgotten Ring
+					["sourceQuests"] = { 72953 },	-- Zskera Vault: Az
 					["provider"] = { "o", 385952 },	-- Unusual Ring
 					["coord"] = { 29.7, 57.2, THE_FORBIDDEN_REACH },
 					["g"] = {
