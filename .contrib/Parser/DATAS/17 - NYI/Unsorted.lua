@@ -2343,6 +2343,12 @@ root(ROOTS.Unsorted, {
 			i(223056),	-- Plans: Webbed Fishing Line
 			i(223948),	-- Stubborn Wolf's Greathelm
 			i(225256),	-- PH_2
+			--
+			-- Orphaned due to removal of "Awakening the Machine: Wave <x>" achievements
+			i(226220),	-- Machine-Warden's Tabard
+			i(226221),	-- Machine-Warden's Pauldrons
+			title(568),	-- <Name>, Machine-Warden
+			i(226218),	-- Machine-Warden's Cloak
 		})),
 	}),
 	expansion(EXPANSION.DF, {

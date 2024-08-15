@@ -653,6 +653,14 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(40505),	-- Fate of the Kirin Tor
 			ach(40510),	-- One Ping Only
 			ach(40511),	-- Rare Within
+
+			--11.0.0.54675
+			ach(40509),	-- Awakening The Machine: Wave 10
+			--11.0.0.54774
+			ach(40586),	-- Awakening The Machine: Wave 20
+			ach(40587),	-- Awakening The Machine: Wave 30
+			ach(40588),	-- Awakening The Machine: Wave 40
+			ach(40589),	-- Awakening The Machine: Wave 50
 		})),
 	}),
 }));

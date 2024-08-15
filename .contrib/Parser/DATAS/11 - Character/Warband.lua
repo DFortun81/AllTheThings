@@ -16,8 +16,6 @@ root(ROOTS.Character, n(WARBAND, {
 		ach(19476),	-- Four Warband Mentors: The War Within
 		ach(19477),	-- Five Warband Mentors: The War Within
 		ach(40142),	-- Learning to Share
-		-- TODO: Achievement below (so much sharing) still loads ingame, but is removed from Blizzard interface / doesn't seem to trigger for people. Determine where this should be moved to.
-		--ach(40145),	-- So Much Sharing
 		achraw(40725, bubbleDownSelf({ ["timeline"] = { REMOVED_11_1_0 }, }, {	-- War Within Delves: Endgame
 			ach(40514),		-- War Within Delves: Tier 3
 			crit(68716),	-- Complete the Khaz Algar main story campaign

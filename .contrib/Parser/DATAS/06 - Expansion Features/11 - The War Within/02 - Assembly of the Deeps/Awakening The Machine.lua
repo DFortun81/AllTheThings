@@ -15,19 +15,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			["coord"] = { 47.5, 31.9, THE_RINGING_DEEPS },
 			["g"] = {
 				n(ACHIEVEMENTS, {
-					-- TODO: These seem to have been removed during some 11.0.2 build. Leaving them in comments since unsure if intended. To be moved to NYI is we never see these again.
-					-- ach(40509),	-- Awakening The Machine: Wave 10
-					-- ach(40586),	-- Awakening The Machine: Wave 20
-					-- ach(40587, {	-- Awakening The Machine: Wave 30
-					-- 	i(226220),	-- Machine-Warden's Tabard
-					-- }),
-					-- ach(40588, {	-- Awakening The Machine: Wave 40
-					-- 	i(226221),	-- Machine-Warden's Pauldrons
-					-- }),
-					-- ach(40589, {	-- Awakening The Machine: Wave 50
-					-- 	title(568),	-- <Name>, Machine-Warden
-					-- 	i(226218),	-- Machine-Warden's Cloak
-					-- }),
 					ach(40662, {	-- It's Not Much, But It's Honest Work
 						i(223269),	-- Machine Defense Unit 1-11 (MOUNT!)
 					}),

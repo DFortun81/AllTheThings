@@ -3469,6 +3469,10 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(20490),	-- Carved Harbinger Crests earned
 			ach(20491),	-- Runed Harbinger Crests earned
 			ach(20492),	-- Gilded Harbinger Crests earned
+			ach(40107),	-- Harbinger of the Carved (TODO: Fix Icon)
+			ach(40115),	-- Harbinger of the Runed (TODO: Fix Icon)
+			ach(40118),	-- Harbinger of the Gilded (TODO: Fix Icon)
+			ach(40145),	-- So Much Sharing
 
 			-- 11.0.0.54361
 			ach(40305),	-- Allied Races: Earthen (Hidden Character Achievement)
@@ -3572,6 +3576,11 @@ root(ROOTS.HiddenAchievementTriggers, {
 
 			-- 11.0.0.55288
 			ach(40839),	-- Delve PTR Cheat
+
+			-- 11.0.0.55818
+			ach(40888),	-- Heroic: Awakened Storms (DNT) (Character specific hidden copy)
+			ach(40892),	-- Heroic: Awakened Shadows (DNT) (Character specific copy)
+			ach(40893),	-- Heroic: Awakened Flames (DNT) (Character specific hidden copy)
 		})),
 
 		-- 11.0.2
@@ -3582,6 +3591,11 @@ root(ROOTS.HiddenAchievementTriggers, {
 
 			-- 11.0.2.55522
 			ach(40865),	-- Puzzles completed
+
+			-- 11.0.2.55959
+			ach(40895),	-- Don't Call Me Junior (DNT) (Character Specific Hidden Copy)
+			ach(40896),	-- Don't Call Me Junior (DNT) (Character specific hidden copy)
+			ach(40899),	-- Allied Races: Earthen (copy)
 		})),
 	}),
 });
