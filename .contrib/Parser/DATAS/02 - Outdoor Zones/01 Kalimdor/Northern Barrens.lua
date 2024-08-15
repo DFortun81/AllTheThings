@@ -177,10 +177,13 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			prof(FISHING, {
-				i(6651, {	-- Broken Wine Bottle
-					["description"] = "Drops from fishing in the Sludge Fen.",
-					["coord"] = { 57, 17, NORTHERN_BARRENS },
+			n(PROFESSIONS, {
+				prof(FISHING, {
+					i(6651, {	-- Broken Wine Bottle
+						["description"] = "Drops from fishing in the Sludge Fen.",
+						["coord"] = { 57, 17, NORTHERN_BARRENS },
+					}),
+					o(180658),	-- School of Deviate Fish
 				}),
 			}),
 			n(QUESTS, {

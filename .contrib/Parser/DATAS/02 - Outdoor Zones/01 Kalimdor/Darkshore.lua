@@ -140,6 +140,54 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
+			n(PROFESSIONS, {
+				prof(FISHING, {
+					o(180682, {
+						["maps"]= {
+							DARKSHORE,
+							AZSHARA,
+							SWAMP_OF_SORROWS,
+							WETLANDS,
+							TANARIS,
+							BLASTED_LANDS,
+							WESTFALL,
+							DUSTWALLOW_MARSH,
+							FERALAS,
+							HILLSBRAD_FOOTHILLS,
+							DESOLACE,
+							NORTHERN_BARRENS,
+							THE_HINTERLANDS,
+							ASHENVALE,
+							THOUSAND_NEEDLES,
+							ARATHI_HIGHLANDS,
+							SILVERPINE_FOREST,
+							SOUTHERN_BARRENS,
+						},
+					}),
+					o(180712, {	-- Firefin Snapper School
+						["maps"] = {
+							DARKSHORE,
+							AZSHARA,
+							SWAMP_OF_SORROWS,
+							WETLANDS,
+							TANARIS,
+							BLASTED_LANDS,
+							WESTFALL,
+							DUSTWALLOW_MARSH,
+							FERALAS,
+							HILLSBRAD_FOOTHILLS,
+							DESOLACE,
+							NORTHERN_BARRENS,
+							THE_HINTERLANDS,
+							ASHENVALE,
+							THOUSAND_NEEDLES,
+							ARATHI_HIGHLANDS,
+							SILVERPINE_FOREST,
+							SOUTHERN_BARRENS,
+						},
+					})
+				}),
+			}),
 			n(QUESTS, {
 				q(13554, {	-- A Cure In The Dark
 					["provider"] = { "o", 194122 },	-- Buzzbox 723

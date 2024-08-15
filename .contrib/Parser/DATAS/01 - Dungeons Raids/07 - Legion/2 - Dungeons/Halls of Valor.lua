@@ -42,7 +42,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(137717),	-- Schematic: Double-Barreled Cranial Cannon [Rank 3] (RECIPE!)
 				}),
 				cr(94960, e(1485, {	-- Hymdall
-					i(201997),	-- Key to the Halls
+					i(201997,  {	-- Key to the Halls
 						["timeline"] = { ADDED_11_0_2 },
 					}),
 				})),
@@ -58,7 +58,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 				})),
 				cr(99868, e(1487, {	-- Fenryr
-					i(201998),	-- Fenryr's Bloodstained Fang
+					i(201998,  {	-- Fenryr's Bloodstained Fang
 						["timeline"] = { ADDED_11_0_2 },
 					}),
 				})),

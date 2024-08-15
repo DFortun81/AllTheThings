@@ -274,6 +274,7 @@ HeaderAssignments = {
 	["Notorious Gladiator: Battle for Azeroth Season 3"] = -1000927,
 	["November"] = -1000159,
 	["N'zoth Assaults"] = -1000922,
+	["Object"] = -1001004,
 	["Obsidian Gladiator: Dragonflight Season 2"] = -1000915,
 	["October"] = -1000158,
 	["Operation: Gnomeregan"] = -1000233,
@@ -507,4 +508,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001002;
+NextHeaderID = -1001005;

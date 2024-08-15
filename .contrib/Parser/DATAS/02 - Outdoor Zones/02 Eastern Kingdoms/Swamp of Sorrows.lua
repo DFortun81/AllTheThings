@@ -140,11 +140,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					}),
 				}),
-				-- #if AFTER CATA
 				prof(FISHING, {
+					-- #if AFTER CATA
 					o(180751),	-- Floating Wreckage
+					-- #endif
+					o(180712, {	-- Stonescale Eel Swarm
+						["maps"] ={
+							SWAMP_OF_SORROWS,
+							TANARIS,
+							BLASTED_LANDS,
+							THOUSAND_NEEDLES,
+						},
+					}),
 				}),
-				-- #endif
 			}),
 			n(QUESTS, {
 				q(2801, {	-- A Tale of Sorrow
