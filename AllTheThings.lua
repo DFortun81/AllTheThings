@@ -6612,6 +6612,10 @@ local function SetGroupVisibility(parent, group)
 		visible = not group.saved;
 		forceShowParent = visible;
 	end
+	-- Custom Visibility
+	if not visible and group.OnSetVisibility then
+		visible = group:OnSetVisibility()
+	end
 	-- Apply the visibility to the group
 	if visible then
 		group.visible = true;
@@ -6657,6 +6661,10 @@ local function SetThingVisibility(parent, group)
 		visible = not group.saved;
 		forceShowParent = visible;
 		-- if debug then print("trackable",visible) end
+	end
+	-- Custom Visibility
+	if not visible and group.OnSetVisibility then
+		visible = group:OnSetVisibility()
 	end
 	-- Loot Mode
 	if not visible then
