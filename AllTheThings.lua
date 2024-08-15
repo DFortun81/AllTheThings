@@ -3368,76 +3368,54 @@ local function DetermineCraftedGroups(group, FillData)
 	local itemRecipes = app.ReagentsDB[itemID];
 	if not itemRecipes then return; end
 
-	-- check if the item is BoP and needs skill filtering for current character, or debug mode
-	-- TODO: further review... this causes population of a list to be different based on settings, such that
-	-- changing settings after 'filling' does not properly adjust the list
-	local filterSkill = not app.MODE_DEBUG_OR_ACCOUNT and (app.IsBoP(group) or select(14, GetItemInfo(itemID)) == 1);
 	local craftableItemIDs = {}
 	-- track crafted items which are filled across the entire fill sequence
 	local craftedItems = FillData.CraftedItems
 	-- if we're filling a window (level 2) then we will allow showing the same crafted item multiple times
 	-- so that different reagents can all be visible for the same purpose
 	local skipLevel = FillData.SkipLevel or 0
+	local craftedItemID, recipe, skillID
 
-	-- item is BoP
-	-- if filterSkill then
-	local craftedItemID, recipe, skillID, recraftItems;
-	local GetRecraftItems = C_TradeSkillUI.GetRecraftItems;
 	-- If needing to filter by skill due to BoP reagent, then check via recipe cache instead of by crafted item
 	-- If the reagent itself is BOP, then only show things you can make.
+	-- 2024-08-15: Revised: instead of changing what is filled (affected by filtering) instead always fill everything possible
+	-- and include necessary filtering information for each output, i.e. the skillID on outputs
+	-- this should filter properly based on ignoring filters on BoE items & using Debug/Account mode without having to refill
+
 	-- find recipe(s) which creates this item
 	for recipeID,info in pairs(itemRecipes) do
 		craftedItemID = info[1];
 		-- app.PrintDebug(itemID,"x",info[2],"=>",craftedItemID,"via",recipeID,skipLevel);
-		-- TODO: review how this can be nil
 		if craftedItemID and not craftableItemIDs[craftedItemID] and (skipLevel > 1 or not craftedItems[craftedItemID]) then
 			-- app.PrintDebug("recipeID",recipeID);
-			-- item is BoP
-			if filterSkill then
-				-- TODO: think this needs to be 'recipeID'
-				recipe = SearchForObject("spellID",recipeID,"key");
-				if recipe then
-					-- Recipe can be recrafted, i.e. can be used in Crafting Order to another player with the Profession
-					-- TODO: maybe there's another way to check that a Recipe can be used in a crafting order because
-					-- not all Craft Order Recipes can actually be recrafted, so it's missing some possible outputs
-					recraftItems = GetRecraftItems(recipeID);
-					if #recraftItems > 0 then
-						-- app.PrintDebug(recipeID,"can recraft");
-						craftableItemIDs[craftedItemID] = true;
-					else
-						skillID = GetRelativeValue(recipe, "skillID");
-						-- app.PrintDebug(recipeID,"requires",skillID,"and known:",skillID and knownSkills[skillID]);
-
-						-- ensure this character can craft the recipe
-						if skillID then
-							if knownSkills and knownSkills[skillID] then
-								craftableItemIDs[craftedItemID] = true;
-							end
-						else
-						-- recipe without any skill requirement? weird...
-							craftableItemIDs[craftedItemID] = true;
-						end
-					end
-				end
-			-- item is BoE
+			recipe = SearchForObject("recipeID",recipeID,"key");
+			if recipe then
+				-- crafted items should be considered unique per recipe
+				craftableItemIDs[craftedItemID + (recipeID / 1000000)] = recipe;
 			else
+				-- app.PrintDebug("Unsourced recipeID",recipe);
+				-- we don't have the Recipe sourced, so just include the crafted item anyway
 				craftableItemIDs[craftedItemID] = true;
 			end
+		-- else app.PrintDebug("Skipped, already listed")
 		end
 	end
 
 	local groups = {};
-	local search;
-	for craftedItemID,_ in pairs(craftableItemIDs) do
+	local search
+	for craftedItemID,recipe in pairs(craftableItemIDs) do
+		craftedItemID = math_floor(craftedItemID)
 		craftedItems[craftedItemID] = true
+		skillID = recipe ~= true and GetRelativeValue(recipe, "skillID") or nil
 		-- Searches for a filter-matched crafted Item
 		search = SearchForObject("itemID",craftedItemID,"field");
-		if search then
-			search = CreateObject(search);
-		end
-		-- could do logic here to tack on the profession's spellID icon
-		tinsert(groups, search or app.CreateItem(craftedItemID));
+		search = (search and CreateObject(search)) or app.CreateItem(craftedItemID)
+		-- link the respective crafted item object to the skill required by the crafting recipe
+		search.requireSkill = skillID
+		-- app.PrintDebug("craftedItemID",craftedItemID,"via skill",skillID)
+		groups[#groups + 1] = search
 	end
+
 	-- app.PrintDebug("DetermineCraftedGroups",group.hash,groups and #groups);
 	if #groups > 0 then
 		group.filledReagent = true;
