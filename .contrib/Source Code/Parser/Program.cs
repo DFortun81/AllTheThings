@@ -249,6 +249,19 @@ namespace ATT
                     }
                 }
                 while (true);
+
+                // finally load in any Global Databases which were part of prior parsed files so that we only have to load & parse them one time
+                try
+                {
+                    Framework.Merge(lua.GetTable("GlobalDBs"));
+                }
+                catch (Exception e)
+                {
+                    Framework.LogException(e);
+                    Trace.WriteLine("Press Enter once you have resolved the issue.");
+                    Console.ReadLine();
+                }
+
                 lua.Close();
 
                 // Now that all of the data and items have been loaded into the Database, let's Process it!

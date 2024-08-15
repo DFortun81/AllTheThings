@@ -35,18 +35,15 @@ local backingTableMetaNoSubMeta = {
 		return o;
 	end,
 };
+GlobalDBs = {}
 CreateDatabaseContainer = function(name, noSubMeta)
 	local backingTable = setmetatable({}, (noSubMeta and type(noSubMeta) == "table" and noSubMeta or backingTableMetaNoSubMeta) or backingTableMeta);
 	local db = setmetatable({}, {
 		__index = function(t, key)
-			-- captured by Parser (AllTheThings table)
-			_[name] = backingTable;
 			return backingTable[key];
 		end,
 		__newindex = function(t, key, value)
 			if value and type(value) == "table" then
-				-- captured by Parser (AllTheThings table)
-				_[name] = backingTable;
 				local o = backingTable[key];
 				for k,v in pairs(value) do
 					o[k] = v;
@@ -55,10 +52,8 @@ CreateDatabaseContainer = function(name, noSubMeta)
 			end
 		end,
 	});
-	-- maintained across parsing
-	_G[name] = db;
-	-- captured by Parser (AllTheThings table)
-	-- _[name] = backingTable; -- not sure why we can't just set this once here... doesn't get captured in parser
+	-- Parsed separately as a batch to prevent duplicate parsed content
+	GlobalDBs[name] = backingTable
 	return db;
 end
 end
