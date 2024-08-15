@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH 
 					["races"] = ALLIANCE_ONLY,
 					["g"] = appendGroups(BFA_INSCRIPTION, {
 						r(264508),	-- Kul Tiran Inscription
-						n(MISC, {
+						f(MISC, {
 							r(284292, {	-- Contract: 7th Legion [Rank 1]
 								["timeline"] = { ADDED_8_1_0 },
 							}),

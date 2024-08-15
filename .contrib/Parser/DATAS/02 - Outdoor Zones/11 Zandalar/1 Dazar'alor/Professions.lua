@@ -82,7 +82,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 					["races"] = HORDE_ONLY,
 					["g"] = appendGroups(BFA_INSCRIPTION, {
 						r(265809),	-- Zandalari Inscription
-						n(MISC, {
+						f(MISC, {
 							r(256287),	-- Contract: Talanji's Expedition [Rank 1]
 							r(284295, {	-- Contract: The Honorbound [Rank 1]
 								["timeline"] = { ADDED_8_1_0 },

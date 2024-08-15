@@ -1306,7 +1306,7 @@ root(ROOTS.Unsorted, {
 				i(225873),	-- Forged Gladiator's Sword
 
 			}),
-			n(MISC, {
+			f(MISC, {
 				i(206134),	-- Potion of Healing
 				i(206581),	-- Harvester Core
 				i(208670),	-- Arachnophobia Mode
@@ -1503,7 +1503,6 @@ root(ROOTS.Unsorted, {
 				i(225875),	-- Pitted Armor Plating
 				i(225878),	-- The Fifty Rules of Commerce, Fourth Edition
 				i(225879),	-- The Fifty Rules of Commerce, Fourth Edition
-				i(225881),	-- Big Bag of Barter Boulders
 				i(225883),	-- Prepared Ghoulfish
 				i(225896),	-- Void-Touched Valorstone
 				i(225930),	-- Glimmering Crystal
@@ -1581,7 +1580,7 @@ root(ROOTS.Unsorted, {
 				i(228453),	-- Extra Large Bag of Popped Pebbles
 				i(228454),	-- Collector's Commemorative Proscenium Playbill
 			}),
-			n(QUEST_ITEMS, {
+			f(QUEST_ITEMS, {
 				i(206348),	-- Fragmented Flame
 				i(206349),	-- Fragmented Reagent
 

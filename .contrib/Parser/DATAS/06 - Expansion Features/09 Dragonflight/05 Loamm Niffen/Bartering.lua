@@ -212,6 +212,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							["isWeekly"] = true,
 							["cost"] = BarterCost(3, 1),
 						}),
+						i(225881, {	-- Big Bag of Barter Boulders
+							["cost"] = {{"i",225798,1}},	-- Intricately Carved Barter Boulder
+							["timeline"] = {ADDED_11_0_2}
+						}),
 						i(203308, {	-- Winding Slitherdrake: Hairy Brow (DM!)
 							["cost"] = BarterCost(55, 30),
 						}),
