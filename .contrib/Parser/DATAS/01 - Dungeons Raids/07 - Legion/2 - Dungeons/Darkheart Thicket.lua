@@ -33,6 +33,11 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				cr(96512, e(1654, {	-- Archdruid Glaidalis
 					i(140653),	-- Pure Drop of Shaladrassil's Sap (druid appearance)
 				})),
+				cr(103344, e(1655, {	-- Oakheart
+					i(211473, {	-- Corrupted Knot
+						["timeline"] = { ADDED_11_0_2 },
+					}),
+				})),
 				cr(99192, e(1657, {	-- Shade of Xavius
 					ach(10783),	-- Darkheart Thicket
 					i(128595),	-- Formula: Enchant Neck - Mark of the Hidden Satyr [Rank 2] (RECIPE!)

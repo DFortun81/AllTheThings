@@ -41,12 +41,27 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				n(ZONE_DROPS, {
 					i(137717),	-- Schematic: Double-Barreled Cranial Cannon [Rank 3] (RECIPE!)
 				}),
+				cr(94960, e(1485, {	-- Hymdall
+					i(201997),	-- Key to the Halls
+						["timeline"] = { ADDED_11_0_2 },
+					}),
+				})),
 				e(1486, {	-- Hyrja
 					["creatureID"] = 95833,	-- Hyrja
 					["g"] = {
 						i(140657),	-- Crest of the Lightborn [Priest Hidden Artifact Appearance]
 					},
 				}),
+				cr(95675, e(1488, {	-- God-King Skovald
+					i(201999, {	-- Skovald's Resolve
+						["timeline"] = { ADDED_11_0_2 },
+					}),
+				})),
+				cr(99868, e(1487, {	-- Fenryr
+					i(201998),	-- Fenryr's Bloodstained Fang
+						["timeline"] = { ADDED_11_0_2 },
+					}),
+				})),
 				e(1489, {	-- Odyn
 					["creatureID"] = 95676,	-- Odyn
 					["g"] = {

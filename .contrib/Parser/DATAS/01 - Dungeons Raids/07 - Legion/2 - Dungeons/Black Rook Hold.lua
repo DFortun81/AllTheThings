@@ -54,6 +54,22 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
+				e(1518, {	-- Amalgam of Souls
+					["creatureID"] = 98542,	-- Amalgam of Souls
+					["g"] = {
+						i(211513, {	-- Howling Echoes
+							["timeline"] = { ADDED_11_0_2 },
+						}),
+					},
+				}),
+				e(1653, {	-- Illysanna Ravencrest
+					["creatureID"] = 98696,	-- Illysanna Ravencrest
+					["g"] = {
+						i(211470, {	-- Ravencrest's Wrath
+							["timeline"] = { ADDED_11_0_2 },
+						}),
+					},
+				}),
 				e(1672, {	-- Lord Kur'talos Ravencrest
 					["crs"] = {
 						98970,	-- Dantalionax
