@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(PROFESSIONS, {
 				prof(FISHING, {
-					o(180682, {
+					o(180682, { 	-- Oily Blackmouth School
 						["maps"]= {
 							DARKSHORE,
 							AZSHARA,
