@@ -94,7 +94,7 @@ if not GetSpellInfo then
 	end;
 	lib.GetSpellIcon = C_Spell.GetSpellTexture;
 	--lib.GetSpellLink = C_Spell.GetSpellLink;
-	
+
 	local C_Spell_GetSpellCooldown = C_Spell.GetSpellCooldown;
 	lib.GetSpellCooldown = function(spellID)
 		local t = C_Spell_GetSpellCooldown(spellID);
@@ -119,6 +119,13 @@ else
 	lib.IsQuestFlaggedCompletedOnAccount = function(id)
 		return app.IsAccountCached("Quests",id)
 	end
+end
+
+-- C_TradeSkillUI
+if C_TradeSkillUI then
+	lib.GetTradeSkillTexture = C_TradeSkillUI.GetTradeSkillTexture
+else
+	lib.GetTradeSkillTexture = function() return end
 end
 
 if not GetSpellLink then

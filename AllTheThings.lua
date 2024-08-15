@@ -60,6 +60,7 @@ local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 local GetSpellLink = app.WOWAPI.GetSpellLink;
+local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture;
 
 local C_TradeSkillUI = C_TradeSkillUI;
 local C_TradeSkillUI_GetCategories, C_TradeSkillUI_GetCategoryInfo, C_TradeSkillUI_GetRecipeInfo, C_TradeSkillUI_GetRecipeSchematic, C_TradeSkillUI_GetTradeSkillLineForRecipe
@@ -558,8 +559,10 @@ end
 app.AddEventHandler("OnStartup", RefreshTradeSkillCache)
 app.AddEventHandler("OnStartup", function()
 	local conversions = app.Settings.InformationTypeConversionMethods;
-	conversions.professionName = function(spellID)
-		return GetSpellName(app.SkillIDToSpellID[spellID] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(spellID) or RETRIEVING_DATA;
+	conversions.professionName = function(skillID)
+		local texture = GetTradeSkillTexture(skillID or 0)
+		local name = GetSpellName(app.SkillIDToSpellID[skillID] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(skillID) or RETRIEVING_DATA
+		return texture and "|T"..texture..":0|t "..name or name
 	end;
 end);
 app.AddEventRegistration("SKILL_LINES_CHANGED", function()
@@ -6542,7 +6545,7 @@ local fields = {
 	["icon"] = function(t)
 		if app.GetSpecializationBaseTradeSkill(t.professionID) then return GetSpellIcon(t.professionID); end
 		if t.professionID == 129 then return GetSpellIcon(t.spellID); end
-		return C_TradeSkillUI.GetTradeSkillTexture(t.professionID);
+		return GetTradeSkillTexture(t.professionID);
 	end,
 	]]--
 	["name"] = function(t)
@@ -6554,7 +6557,7 @@ local fields = {
 		if spellID then
 			icon = GetSpellIcon(spellID)
 		end
-		return icon or C_TradeSkillUI.GetTradeSkillTexture(t.professionID);
+		return icon or GetTradeSkillTexture(t.professionID);
 	end,
 	["spellID"] = function(t)
 		return app.SkillIDToSpellID[t.professionID];
@@ -7215,7 +7218,7 @@ local function BuildDataSummary(data)
 	local summary = {}
 	local requireSkill = data.requireSkill
 	if requireSkill then
-		local profIcon = C_TradeSkillUI.GetTradeSkillTexture(requireSkill)
+		local profIcon = GetTradeSkillTexture(requireSkill)
 		if profIcon then
 			summary[#summary + 1] = "|T"..profIcon..":0|t "
 		end
@@ -13717,7 +13720,7 @@ app.LoadDebugger = function()
 					end
 					local info = {
 						["professionID"] = tradeSkillID,
-						["icon"] = C_TradeSkillUI.GetTradeSkillTexture(tradeSkillID),
+						["icon"] = GetTradeSkillTexture(tradeSkillID),
 						["name"] = C_TradeSkillUI.GetTradeSkillDisplayName(tradeSkillID),
 						["g"] = rawGroups
 					};
