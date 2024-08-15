@@ -63,8 +63,6 @@ local CreateDataCache = function(name, skipMapCaching)
 	end
 	setmetatable(cache, fieldMeta);
 	cache.npcID = cache.creatureID;	-- identical cache as creatureID (probably deprecate npcID use eventually)
-	-- cache.mountID = cache.spellID;	-- identical cache as spellID
-	cache.recipeID = cache.spellID;	-- identical cache as spellID
 	--cache.requireSkill = cache.professionID;	-- identical cache as professionID (in Retail)
 	return cache;
 end
@@ -486,6 +484,7 @@ local fieldConverters = {
 	["questIDA"] = cacheQuestID,
 	["questIDH"] = cacheQuestID,
 	["recipeID"] = function(group, value)
+		CacheField(group, "recipeID", value);
 		CacheField(group, "spellID", value);
 	end,
 	["requireSkill"] = function(group, value)

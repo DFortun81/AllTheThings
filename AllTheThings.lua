@@ -7211,6 +7211,28 @@ local function SetIndicatorIcon(self, data)
 		return true;
 	end
 end
+local function BuildDataSummary(data)
+	local summary = {}
+	local requireSkill = data.requireSkill
+	if requireSkill then
+		local profIcon = C_TradeSkillUI.GetTradeSkillTexture(requireSkill)
+		if profIcon then
+			summary[#summary + 1] = "|T"..profIcon..":0|t "
+		end
+	end
+	-- TODO: races
+	local specs = data.specs;
+	if specs and #specs > 0 then
+		summary[#summary + 1] = GetSpecsString(specs, false, false)
+	else
+		local classes = data.c
+		if classes and #classes > 0 then
+			summary[#summary + 1] = GetClassesString(classes, false, false)
+		end
+	end
+	summary[#summary + 1] = GetProgressTextForRow(data) or "---"
+	return app.TableConcat(summary, nil, "", "")
+end
 local function SetRowData(self, row, data)
 	ClearRowData(row);
 	if data then
@@ -7245,22 +7267,9 @@ local function SetRowData(self, row, data)
 			rowIndicator:SetPoint("RIGHT", rowTexture, "LEFT")
 			rowIndicator:Show();
 		end
-		local summary = GetProgressTextForRow(data) or "---";
-		-- local iconAdjust = summary and summary:find("|T") and -1 or 0;
-		local specs = data.specs;
-		if specs and #specs > 0 then
-			summary = GetSpecsString(specs, false, false) .. summary;
-			-- iconAdjust = iconAdjust - #specs;
-		else
-			local classes = data.c
-			if classes and #classes > 0 then
-				summary = GetClassesString(classes, false, false) .. summary;
-				-- iconAdjust = iconAdjust - #classes;
-			end
-		end
 		local rowSummary = row.Summary;
 		local rowLabel = row.Label;
-		rowSummary:SetText(summary);
+		rowSummary:SetText(BuildDataSummary(data));
 		-- for whatever reason, the Client does not properly align the Points when textures are used within the 'text' of the object, with each texture added causing a 1px offset on alignment
 		-- 2022-03-15 It seems as of recently that text with textures now render properly without the need for a manual adjustment. Will leave the logic in here until confirmed for others as well
 		-- 2023-07-25 The issue is caused due to ATT list scaling. With scaling other than 1 applied, the icons within the text shift relative to the number of icons
