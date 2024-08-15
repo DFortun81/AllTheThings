@@ -4,68 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(ACHIEVEMENTS, {	-- Achievements (Achievements that don't really fit into a specific Location which are specific to BFA)
-		ach(13036, {	-- A Loa of a Tale
-			crit(41564, {	-- Tales of de Loa: Akunda
-				["itemID"] = 162628,	-- Tales of de Loa: Akunda
-				["coord"] = { 42.2, 62.1, VOLDUN },
-			}),
-			crit(41565,  {	-- Tales of de Loa: Bwonsamdi
-				["itemID"] = 163330,	-- Tales of de Loa: Bwonsamdi
-				["coord"] = { 39.1, 38.6, NAZMIR },
-			}),
-			crit(41566,  {	-- Tales of de Loa: Gonk
-				["itemID"] = 162657,	-- Tales of de Loa: Gonk
-				["coord"] = { 51.7, 28.3, ZULDAZAR },
-			}),
-			crit(41567,  {	-- Tales of de Loa: Gral
-				["itemID"] = 163170,	-- Tales of de Loa: Gral
-				["coord"] = { 75.5, 67.6, ZULDAZAR },
-			}),
-			crit(41568,  {	-- Tales of de Loa: Hir'eek
-				["itemID"] = 163199,	-- Tales of de Loa: Hir'eek
-				["coord"] = { 39.5, 54.6, NAZMIR },
-			}),
-			crit(41569,  {	-- Tales of de Loa: Jani
-				["itemID"] = 162656,	-- Tales of de Loa: Jani
-				["coord"] = { 48.5, 54.6, ZULDAZAR },
-			}),
-			crit(41570, {	-- Tales of de Loa: Kimbul
-				["itemID"] = 163198,	-- Tales of de Loa: Kimbul
-				["coord"] = { 27.7, 62.1, VOLDUN },
-			}),
-			crit(41571,  {	-- Tales of de Loa: Krag'wa
-				["itemID"] = 163331,	-- Tales of de Loa: Krag'wa
-				["coord"] = { 58.9, 48.6, NAZMIR },
-			}),
-			crit(41572,  {	-- Tales of de Loa: Pa'ku
-				["itemID"] = 162658,	-- Tales of de Loa: Pa'ku
-				["coord"] = { 49.0, 41.3, ZULDAZAR },
-			}),
-			crit(41573, {	-- Tales of de Loa: Rezan
-				["itemID"] = 163332,	-- Tales of de Loa: Rezan
-				["coord"] = { 43.8, 76.7, ZULDAZAR },
-			}),
-			crit(41574, {	-- Tales of de Loa: Sethraliss
-				["itemID"] = 163333,	-- Tales of de Loa: Sethraliss
-				["coord"] = { 49.5, 24.4, VOLDUN },
-			}),
-			crit(41576, {	-- Tales of de Loa: Shadra
-				["itemID"] = 163221,	-- Tales of de Loa: Shadra
-				["coord"] = { 47.7, 28.9, ZULDAZAR },
-			}),
-			crit(41577, {	-- Tales of de Loa: Torcali
-				["itemID"] = 163739,	-- Tales of de Loa: Torcali
-				["coord"] = { 67.3, 17.6, ZULDAZAR },
-			}),
-			crit(41579, {	-- Tales of de Loa: Torga
-				["itemID"] = 163197,	-- Tales of de Loa: Torga
-				["coord"] = { 72.8, 7.60, NAZMIR },
-			}),
-			crit(41581, {	-- Tales of de Loa: Zandalar
-				["itemID"] = 163682,	-- Tales of de Loa: Zandalar
-				["coord"] = { 53.2, 9.3, DAZARALOR },
-			}),
-		}),
+		ach(13036),		-- A Loa of a Tale
 		pvp(ach(12573, {	-- Band of Brothers
 			crit(41008),		-- Honorable Kill
 			crit(41009),		-- Loot Player Bounty
@@ -493,4 +432,96 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		}),
 		pvp(ach(12572)),	-- War Supplied
 	}),
+	n(TREASURES, {	-- Treasures that belong to the above achievements
+		o(297495, {	-- Tales of de Loa: Akunda
+			["coord"] = { 42.2, 62.1, VOLDUN },
+			["g"] = {
+				i(162628),	-- Tales of de Loa: Akunda
+			},
+		}),
+		o(297491,  {	-- Tales of de Loa: Bwonsamdi
+			["coord"] = { 39.1, 38.6, NAZMIR },
+			["g"] = {
+				i(163330),	-- Tales of de Loa: Bwonsamdi
+			},
+		}),
+		o(297521,  {	-- Tales of de Loa: Gonk
+			["coord"] = { 51.7, 28.3, ZULDAZAR },
+			["g"] = {
+				i(162657),	-- Tales of de Loa: Gonk
+			},
+		}),
+		o(297074,  {	-- Tales of de Loa: Gral
+			["coord"] = { 75.5, 67.6, ZULDAZAR },
+			["g"] = {
+				i(163170),	-- Tales of de Loa: Gral
+			},
+		}),
+		o(297522,  {	-- Tales of de Loa: Hir'eek
+			["coord"] = { 39.5, 54.6, NAZMIR },
+			["g"] = {
+				i(163199),	-- Tales of de Loa: Hir'eek
+			},
+		}),
+		o(297528,  {	-- Tales of de Loa: Jani
+			["coord"] = { 48.5, 54.6, ZULDAZAR },
+			["g"] = {
+				i(162656),	-- Tales of de Loa: Jani
+			},
+		}),
+		o(297494, {	-- Tales of de Loa: Kimbul
+			["coord"] = { 27.7, 62.1, VOLDUN },
+			["g"] = {
+				i(163198),	-- Tales of de Loa: Kimbul
+			},
+		}),
+		o(297489,  {	-- Tales of de Loa: Krag'wa
+			["coord"] = { 58.9, 48.6, NAZMIR },
+			["g"] = {
+				i(163331),	-- Tales of de Loa: Krag'wa
+			},
+		}),
+		o(297524,  {	-- Tales of de Loa: Pa'ku
+			["coord"] = { 49.0, 41.3, ZULDAZAR },
+			["g"] = {
+				i(162658),	-- Tales of de Loa: Pa'ku
+			},
+		}),
+		o(297490, {	-- Tales of de Loa: Rezan
+			["coord"] = { 43.8, 76.7, ZULDAZAR },
+			["g"] = {
+				i(163332),	-- Tales of de Loa: Rezan
+			},
+		}),
+		o(297485, {	-- Tales of de Loa: Sethraliss
+			["coord"] = { 49.5, 24.4, VOLDUN },
+			["g"] = {
+				i(163333),	-- Tales of de Loa: Sethraliss
+			},
+		}),
+		o(297493, {	-- Tales of de Loa: Shadra
+			["coord"] = { 47.7, 28.9, ZULDAZAR },
+			["g"] = {
+				i(163221),	-- Tales of de Loa: Shadra
+			},
+		}),
+		o(297885, {	-- Tales of de Loa: Torcali
+			["coord"] = { 67.3, 17.6, ZULDAZAR },
+			["g"] = {
+				i(163739),	-- Tales of de Loa: Torcali
+			},
+		}),
+		o(297523, {	-- Tales of de Loa: Torga
+			["coord"] = { 72.8, 7.60, NAZMIR },
+			["g"] = {
+				i(163197),	-- Tales of de Loa: Torga
+			},
+		}),
+		o(297700, {	-- Tales of de Loa: Zandalar
+			["coord"] = { 53.2, 9.3, DAZARALOR },
+			["g"] = {
+				i(163682),	-- Tales of de Loa: Zandalar
+			},
+		}),
+	})
 }));

@@ -264,18 +264,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 			m(450, {	-- Unga Ingoo
 				n(ACHIEVEMENTS, {
 					ach(7239),	-- Monkey in the Middle
-					ach(7248, {	-- Monkey See, Monkey Kill
-						crit(20696),	-- Captain Ook
-						crit(19858),	-- Ba-Bam
-						crit(19823),	-- Ookie
-						crit(19857),	-- Chihozen Binono
-						crit(19822),	-- Grooka Grooka
-						crit(19821),	-- Rik Rik
-						crit(20585),	-- Protected King Unga Keg
-					}),
+					ach(7248),	-- Monkey See, Monkey Kill (automated)
 					ach(7231),	-- Spill No Evil
 					ach(7232),	-- The Keg Runner
 					ach(7249),	-- Unga Ingoo
+				}),
+				n(TREASURES, {
+					o(212278), -- Protected Unga Keg
 				}),
 			}),
 			n(SCENARIO_COMPLETION, {
