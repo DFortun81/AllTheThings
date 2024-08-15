@@ -2601,7 +2601,7 @@ namespace ATT
                         {
                             // remove the creatures which are not sourced from being reported as failed to merge
                             data.TryGetValue("achID", out long achID);
-                            LogDebugWarn($"Criteria {achID}:{criteriaID} not nested to Unsourced Object {objectID}. Consider Sourcing Object");
+                            LogWarn($"Criteria {achID}:{criteriaID} not nested to Unsourced Object {objectID}. Consider Sourcing Object");
                             Objects.TrackPostProcessMergeKey("objectID", objectID);
                             objs.Add(objectID);
                         }
