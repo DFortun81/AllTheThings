@@ -350,15 +350,11 @@ root(ROOTS.Zones, {
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
-					ach(1225, {	-- Outland Angler
-						["provider"] = { "o", 182959 },	-- Bluefish School
-						["criteriaID"] = 3624,	-- Bluefish School
+					o(182959, {	-- Bluefish School
 						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 					}),
-					ach(1225, {	-- Outland Angler
-						["provider"] = { "o", 182958 },	-- Mudfish School
-						["criteriaID"] = 3625,	-- Mudfish School
+					o(182958, {	-- Mudfish School
 						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 					}),
@@ -771,7 +767,7 @@ root(ROOTS.Zones, {
 									{ "o", 182501 },	-- Warmaul Prison
 									{ "o", 182502 },	-- Warmaul Prison
 									{ "o", 182503 },	-- Warmaul Prison
-									{ "o", 182504 },	-- Warmaul Prison	
+									{ "o", 182504 },	-- Warmaul Prison
 								},
 								["crs"] = {
 									18037,	-- Warmaul Warlock

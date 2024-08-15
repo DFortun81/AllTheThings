@@ -202,7 +202,18 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			ach(1225, {	-- Outland Angler
 				["maps"] = { NAGRAND, TEROKKAR_FOREST, ZANGARMARSH },
 				["timeline"] = { ADDED_3_0_2 },
+				-- #if ANYCLASSIC
 				["sym"] = {{ "achievement_criteria" }},
+				-- #else
+				["g"] = {
+					crit(3623),	-- Brackish Mixed School
+					crit(3624),	-- Bluefish School
+					crit(3625),	-- Mudfish School
+					crit(3626),	-- School of Darter
+					crit(3627),	-- Highland Mixed School
+					crit(3628),	-- Sporefish School
+				},
+				-- #endif
 			}),
 		},
 	}),

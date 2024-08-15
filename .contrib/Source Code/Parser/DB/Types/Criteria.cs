@@ -74,7 +74,7 @@ namespace ATT.DB.Types
             Type == 0 && Asset > 0 ? Asset : 0;
 
         public long GetProviderObject() =>
-            Type == 68 ? Asset : 0;
+            Type == 68 || Type == 72 ? Asset : 0;
 
         public long GetRequiredAchievement() =>
             Type == 8 ? Asset : 0;

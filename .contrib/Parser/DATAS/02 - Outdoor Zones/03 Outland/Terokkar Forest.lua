@@ -348,9 +348,7 @@ root(ROOTS.Zones, {
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
-					ach(1225, {	-- Outland Angler
-						["provider"] = { "o", 182957 },	-- Highland Mixed School
-						["criteriaID"] = 3627,	-- Highland Mixed School
+					o(182957, {	-- Highland Mixed School
 						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 					}),
@@ -376,9 +374,7 @@ root(ROOTS.Zones, {
 						["requireSkill"] = FISHING,
 					}),
 					-- #else
-					ach(1225, {	-- Outland Angler
-						["provider"] = { "o", 182956 },	-- School of Darter
-						["criteriaID"] = 3628,	-- School of Darter
+					o(182956, {	-- School of Darter
 						["timeline"] = { ADDED_3_0_2 },
 						["requireSkill"] = FISHING,
 					}),
