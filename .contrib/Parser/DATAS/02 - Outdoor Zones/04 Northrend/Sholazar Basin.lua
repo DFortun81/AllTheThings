@@ -18,7 +18,7 @@ local OnTooltipForFrenzyheart = [[function(t, tooltipInfo)
 			t.chicken = chicken;
 		end
 		local chickenRep = _.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo, " %s", chicken, 250);
-		
+
 		local rejek = t.rejek;
 		if not rejek then
 			rejek = {};
@@ -67,7 +67,7 @@ local OnTooltipForOracles = [[function(t, tooltipInfo)
 			t.appeasing = appeasing;
 		end
 		local appeasingRep = _.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo, " %s", appeasing, 250);
-		
+
 		local soodow = t.soodow;
 		if not soodow then
 			soodow = {};
@@ -82,7 +82,7 @@ local OnTooltipForOracles = [[function(t, tooltipInfo)
 		end
 		local AddQuestsWithReputation = _.Modules.FactionData.AddQuestsTooltipWithReputation;
 		local soodowRep = AddQuestsWithReputation(tooltipInfo, "Complete 1 of 3 quests offered by Oracle Soo-dow:", soodow, 350);
-		
+
 		local soonee = t.soonee;
 		if not soonee then
 			soonee = {};
@@ -279,9 +279,7 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				prof(FISHING, {
-					ach(1517, {	-- Northrend Angler
-						["provider"] = { "o", 192057 },	-- Nettlefish School
-						["criteriaID"] = 5287,	-- Nettlefish School
+					o(192057, {	-- Nettlefish School
 						["requireSkill"] = FISHING,
 					}),
 					i(45902, {	-- Phantom Ghostfish

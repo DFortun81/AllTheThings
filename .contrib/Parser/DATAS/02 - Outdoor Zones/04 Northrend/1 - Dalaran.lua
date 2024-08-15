@@ -1120,7 +1120,7 @@ root(ROOTS.Zones, {
 						-- #endif
 						["requireSkill"] = COOKING,
 					}),
-					ach(1956, {	-- Higher Learning
+					ach(1956, {	-- Higher Learning (automated)
 						["description"] = "The Schools of Arcane Magic books share a spawn location with generic books. Read the books in each location to start the respawn timer, which seems to be 3-4 hours.\n\nThe best time to hunt books is right after a server restart.",
 						["groups"] = {
 							i(44738, {	-- Kirin Tor Familiar (PET!)

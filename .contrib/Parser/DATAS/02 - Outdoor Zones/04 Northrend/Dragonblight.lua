@@ -11,19 +11,19 @@ local OnTooltipForTheKaluak = [[function(t, tooltipInfo)
 		end
 		local AddQuestTooltipWithReputation = _.Modules.FactionData.AddQuestTooltipWithReputation;
 		local preparingRep = AddQuestTooltipWithReputation(tooltipInfo, "%s (" .. _.GetMapName(]] .. BOREAN_TUNDRA .. [[) .. ")", t.preparing, 500);
-		
+
 		if not t.puppy then
 			local f = _.SearchForField("questID", 11960);
 			if f and #f > 0 then t.puppy = f[1]; end
 		end
 		local puppyRep = AddQuestTooltipWithReputation(tooltipInfo, "%s (" .. _.GetMapName(]] .. DRAGONBLIGHT .. [[) .. ")", t.puppy, 500);
-		
+
 		if not t.heart then
 			local f = _.SearchForField("questID", 11472);
 			if f and #f > 0 then t.heart = f[1]; end
 		end
 		local heartRep = AddQuestTooltipWithReputation(tooltipInfo, "%s (" .. _.GetMapName(]] .. HOWLING_FJORD .. [[) .. ")", t.heart, 500);
-		
+
 		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", preparingRep + puppyRep + heartRep, 42000);
 	end
 end]];
@@ -264,24 +264,16 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				prof(FISHING, {
-					ach(1517, {	-- Northrend Angler
-						["provider"] = { "o", 192053 },	-- Deep Sea Monsterbelly School
-						["criteriaID"] = 5279,	-- Deep Sea Monsterbelly School
+					o(192053, {	-- Deep Sea Monsterbelly School
 						["requireSkill"] = FISHING,
 					}),
-					ach(1517, {	-- Northrend Angler
-						["provider"] = { "o", 192048 },	-- Dragonfin Angelfish School
-						["criteriaID"] = 5280,	-- Dragonfin Angelfish School
+					o(192048, {	-- Dragonfin Angelfish School
 						["requireSkill"] = FISHING,
 					}),
-					ach(1517, {	-- Northrend Angler
-						["provider"] = { "o", 192052 },	-- Imperial Manta Ray School
-						["criteriaID"] = 5284,	-- Imperial Manta Ray School
+					o(192052, {	-- Imperial Manta Ray School
 						["requireSkill"] = FISHING,
 					}),
-					ach(1517, {	-- Northrend Angler
-						["provider"] = { "o", 192054 },	-- Moonglow Cuttlefish School
-						["criteriaID"] = 5285,	-- Moonglow Cuttlefish School
+					o(192054, {	-- Moonglow Cuttlefish School
 						["requireSkill"] = FISHING,
 					}),
 				}),

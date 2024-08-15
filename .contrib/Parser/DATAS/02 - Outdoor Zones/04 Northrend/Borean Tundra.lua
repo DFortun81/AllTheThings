@@ -324,29 +324,19 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 194479 },	-- Pool of Blood
 						["description"] = "Kill an animal and then swim in a body of water to create a pool to fish from.",
 					}),
-					ach(1517, {	-- Northrend Angler
-						["provider"] = { "o", 192051 },	-- Borean Man O' War School
-						["criteriaID"] = 5278,	-- Borean Man O' War School
+					o(192051, {	-- Borean Man O' War School
 						["requireSkill"] = FISHING,
 					}),
-					ach(1517, {	-- Northrend Angler
-						["provider"] = { "o", 192053 },	-- Deep Sea Monsterbelly School
-						["criteriaID"] = 5279,	-- Deep Sea Monsterbelly School
+					o(192053, {	-- Deep Sea Monsterbelly School
 						["requireSkill"] = FISHING,
 					}),
-					ach(1517, {	-- Northrend Angler
-						["provider"] = { "o", 192052 },	-- Imperial Manta Ray School
-						["criteriaID"] = 5284,	-- Imperial Manta Ray School
+					o(192052, {	-- Imperial Manta Ray School
 						["requireSkill"] = FISHING,
 					}),
-					ach(1517, {	-- Northrend Angler
-						["provider"] = { "o", 192054 },	-- Moonglow Cuttlefish School
-						["criteriaID"] = 5285,	-- Moonglow Cuttlefish School
+					o(192054, {	-- Moonglow Cuttlefish School
 						["requireSkill"] = FISHING,
 					}),
-					ach(1517, {	-- Northrend Angler
-						["provider"] = { "o", 192046 },	-- Musselback Sculpin School
-						["criteriaID"] = 5286,	-- Musselback Sculpin School
+					o(192046, {	-- Musselback Sculpin School
 						["requireSkill"] = FISHING,
 					}),
 				}),

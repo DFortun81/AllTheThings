@@ -303,24 +303,16 @@ root(ROOTS.Zones, {
 					i(44703, {	-- Dark Herring
 						["provider"] = { "o", 192049 },	-- Fangtooth Herring School
 					}),
-					ach(1517, {	-- Northrend Angler
-						["provider"] = { "o", 192053 },	-- Deep Sea Monsterbelly School
-						["criteriaID"] = 5279,	-- Deep Sea Monsterbelly School
+					o(192053, {	-- Deep Sea Monsterbelly School
 						["requireSkill"] = FISHING,
 					}),
-					ach(1517, {	-- Northrend Angler
-						["provider"] = { "o", 192049 },	-- Fangtooth Herring School
-						["criteriaID"] = 5281,	-- Fangtooth Herring School
+					o(192049, {	-- Fangtooth Herring School
 						["requireSkill"] = FISHING,
 					}),
-					ach(1517, {	-- Northrend Angler
-						["provider"] = { "o", 192052 },	-- Imperial Manta Ray School
-						["criteriaID"] = 5284,	-- Imperial Manta Ray School
+					o(192052, {	-- Northrend Angler
 						["requireSkill"] = FISHING,
 					}),
-					ach(1517, {	-- Northrend Angler
-						["provider"] = { "o", 192054 },	-- Moonglow Cuttlefish School
-						["criteriaID"] = 5285,	-- Moonglow Cuttlefish School
+					o(192054, {	-- Moonglow Cuttlefish School
 						["requireSkill"] = FISHING,
 					}),
 				}),

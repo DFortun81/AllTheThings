@@ -211,14 +211,10 @@ root(ROOTS.Zones, {
 					exploration(4209),	-- Zeb'Halak
 				}),
 				prof(FISHING, {
-					ach(1517, {	-- Northrend Angler
-						["provider"] = { "o", 192050 },	-- Glacial Salmon School
-						["criteriaID"] = 5282,	-- Glacial Salmon School
+					o(192050, {	-- Glacial Salmon School
 						["requireSkill"] = FISHING,
 					}),
-					ach(1517, {	-- Northrend Angler
-						["provider"] = { "o", 192052 },	-- Imperial Manta Ray School
-						["criteriaID"] = 5284,	-- Imperial Manta Ray School
+					o(192052, {	-- Imperial Manta Ray School
 						["requireSkill"] = FISHING,
 					}),
 				}),

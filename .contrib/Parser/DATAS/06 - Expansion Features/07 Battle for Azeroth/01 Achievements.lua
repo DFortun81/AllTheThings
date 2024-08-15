@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(ACHIEVEMENTS, {	-- Achievements (Achievements that don't really fit into a specific Location which are specific to BFA)
-		ach(13036),		-- A Loa of a Tale
+		ach(13036),		-- A Loa of a Tale (automated)
 		pvp(ach(12573, {	-- Band of Brothers
 			crit(41008),		-- Honorable Kill
 			crit(41009),		-- Loot Player Bounty

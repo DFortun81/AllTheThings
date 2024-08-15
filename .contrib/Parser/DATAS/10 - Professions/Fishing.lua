@@ -226,6 +226,18 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 		}),
 		ach(1517, {	-- Northrend Angler
 			["maps"] = { BOREAN_TUNDRA, DRAGONBLIGHT, HOWLING_FJORD, GRIZZLY_HILLS, CRYSTALSONG_FOREST, SHOLAZAR_BASIN },
+			["g"] = {
+				crit(5278),	-- Borean Man O' War School
+				crit(5279),	-- Deep Sea Monsterbelly School
+				crit(5280),	-- Dragonfin Angelfish School
+				crit(5281),	-- Fangtooth Herring School
+				crit(5282),	-- Glacial Salmon School
+				crit(5283),	-- Glassfin Minnow School
+				crit(5284),	-- Imperial Manta Ray School
+				crit(5285),	-- Moonglow Cuttlefish School
+				crit(5286),	-- Musselback Sculpin School
+				crit(5287),	-- Nettlefish School
+			}
 		}),
 	}))),
 	expansion(EXPANSION.CATA, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
