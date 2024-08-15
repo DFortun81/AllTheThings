@@ -303,6 +303,28 @@ root(ROOTS.Zones, {
 					i(44703, {	-- Dark Herring
 						["provider"] = { "o", 192049 },	-- Fangtooth Herring School
 					}),
+					-- #if ANYCLASSIC
+					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192053 },	-- Deep Sea Monsterbelly School
+						["criteriaID"] = 5279,	-- Deep Sea Monsterbelly School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192049 },	-- Fangtooth Herring School
+						["criteriaID"] = 5281,	-- Fangtooth Herring School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192052 },	-- Imperial Manta Ray School
+						["criteriaID"] = 5284,	-- Imperial Manta Ray School
+						["requireSkill"] = FISHING,
+					}),
+					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192054 },	-- Moonglow Cuttlefish School
+						["criteriaID"] = 5285,	-- Moonglow Cuttlefish School
+						["requireSkill"] = FISHING,
+					}),
+					-- #else
 					o(192053, {	-- Deep Sea Monsterbelly School
 						["requireSkill"] = FISHING,
 					}),
@@ -315,6 +337,7 @@ root(ROOTS.Zones, {
 					o(192054, {	-- Moonglow Cuttlefish School
 						["requireSkill"] = FISHING,
 					}),
+					-- #endif
 				}),
 				n(FLIGHT_PATHS, {
 					fp(248, {	-- Apothecary Camp

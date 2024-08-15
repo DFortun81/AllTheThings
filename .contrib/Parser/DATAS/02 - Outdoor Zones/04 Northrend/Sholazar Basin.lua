@@ -279,9 +279,17 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				prof(FISHING, {
+					-- #if ANYCLASSIC
+					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192057 },	-- Nettlefish School
+						["criteriaID"] = 5287,	-- Nettlefish School
+						["requireSkill"] = FISHING,
+					}),
+					-- #else
 					o(192057, {	-- Nettlefish School
 						["requireSkill"] = FISHING,
 					}),
+					-- #endif
 					i(45902, {	-- Phantom Ghostfish
 						["description"] = "Eat this before it despawns!",
 					}),

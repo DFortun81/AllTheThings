@@ -86,6 +86,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 		}),
 		ach(153, {	-- The Old Gnome and the Sea
 			["timeline"] = { ADDED_3_0_2 },
+			["_noautomation"] = true,
 		}),
 		ach(1257, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, }, {	-- The Scavenger
 			crit(3873, {	-- Bloodsail Wreckage

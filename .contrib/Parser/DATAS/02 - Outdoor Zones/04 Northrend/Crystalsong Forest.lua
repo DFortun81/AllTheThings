@@ -35,9 +35,17 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				prof(FISHING, {
+					-- #if ANYCLASSIC
+					ach(1517, {	-- Northrend Angler
+						["provider"] = { "o", 192059 },	-- Glassfin Minnow School
+						["criteriaID"] = 5283,	-- Glassfin Minnow School
+						["requireSkill"] = FISHING,
+					}),
+					-- #else
 					o(192059, {	-- Glassfin Minnow School
 						["requireSkill"] = FISHING,
 					}),
+					-- #endif
 				}),
 				n(FLIGHT_PATHS, {
 					fp(337, {	-- Sunreaver's Command
