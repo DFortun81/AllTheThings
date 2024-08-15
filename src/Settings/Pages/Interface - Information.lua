@@ -536,7 +536,7 @@ local InformationTypes = {
 	}),
 	CreateInformationType("description", { text = L.DESCRIPTIONS, priority = 2.5,
 		Process = function(t, reference, tooltipInfo)
-			local description = reference.description;
+			local description = reference.description or GetRelativeValue(reference, "sharedDescription")
 			if description then
 				tinsert(tooltipInfo, {
 					left = description,

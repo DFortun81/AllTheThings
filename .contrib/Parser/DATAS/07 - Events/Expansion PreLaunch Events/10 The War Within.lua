@@ -17,7 +17,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				{"where","headerID",WEAPONS},
 			},
 			["g"] = bubbleDownFiltered({
-				["description"] = "These items only drop if your character is below Level 70 and on the correct armor/weapon type.\nExample: A Rogue will receive leather items and 1-handed weapons, but not bows.",
+				["sharedDescription"] = "These items only drop if your character is below Level 70 and on the correct armor/weapon type.\nExample: A Rogue will receive leather items and 1-handed weapons, but not bows.",
 			},FILTERFUNC_itemID,{
 				n(FACTION_HEADER_ALLIANCE, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY },{
 					n(ARMOR, {

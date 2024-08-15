@@ -1589,6 +1589,7 @@ end");
                     case "name":
                     case "type":
                     case "description":
+                    case "sharedDescription":
                     case "title":
                     case "order":
                     case "SortType":

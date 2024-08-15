@@ -774,6 +774,7 @@ app.MergeSkipFields = {
 	upgradeTotal = true,
 	iconPath = true,
 	hash = true,
+	sharedDescription = true,
 	-- fields added to a group from GetSearchResults
 	tooltipInfo = true,
 	working = true,

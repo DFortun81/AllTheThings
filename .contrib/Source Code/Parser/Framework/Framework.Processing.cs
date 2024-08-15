@@ -3192,7 +3192,7 @@ namespace ATT
                     }
                     switch (fieldAdjustment.Value)
                     {
-                        // remove from groups and add to parent
+                        // remove from groups and add to parent (Consolidation)
                         case -1:
                             parentGroup[field] = val;
                             foreach (object group in groups)
@@ -3203,7 +3203,7 @@ namespace ATT
                                 }
                             }
                             break;
-                        // only add to parent
+                        // only add to parent (Propagation)
                         case 1:
                             parentGroup[field] = val;
                             break;
