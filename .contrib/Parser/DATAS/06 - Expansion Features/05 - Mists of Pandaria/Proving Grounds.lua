@@ -103,7 +103,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"]
 		},
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
 	n(PROVING_GROUNDS, {
 		q(37212),	-- FLAG - Proving Grounds - Damage Bronze
 		q(37214),	-- FLAG - Proving Grounds - Damage Gold
@@ -115,4 +115,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MOP, bubbleDown({ ["timeline
 		q(37217),	-- FLAG - Proving Grounds - Tank Gold
 		q(37216),	-- FLAG - Proving Grounds - Tank Silver
 	}),
-})))
+}))

@@ -2807,14 +2807,16 @@ local function GetSearchResults(method, paramA, paramB, ...)
 
 	-- Create clones of the search results
 	if not group.g then
-		-- Clone all the groups so that things don't get modified in the Source
+		-- Clone all the non-ignored groups so that things don't get modified in the Source
 		local cloned = {};
-		local clearSourceParent = #group > 1;
 		for _,o in ipairs(group) do
-			tinsert(cloned, CreateObject(o));
+			if not GetRelativeValue(o, "sourceIgnored") then
+				cloned[#cloned + 1] = CreateObject(o)
+			end
 		end
 		-- replace the Source references with the cloned references
 		group = cloned;
+		local clearSourceParent = #group > 1;
 		-- Find or Create the root group for the search results, and capture the results which need to be nested instead
 		local root, filtered
 		local nested = {};
