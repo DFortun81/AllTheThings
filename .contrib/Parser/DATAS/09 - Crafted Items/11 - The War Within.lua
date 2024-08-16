@@ -23,6 +23,17 @@ end
 
 root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	i(ARTISANS_ACUITY),
+	i(213610),	-- Crystalline Powder
+	i(211297),	-- Fractured Spark of Omens
+	i(228414),	-- Frayed Wiring
+	i(228956),	-- Junk Bucket
+	i(213613),	-- Leyline Residue
+	i(213197),	-- Null Lotus
+	i(221758),	-- Profaned Tinderbox
+	i(228338),	-- Soul Sigil I
+	i(211296),	-- Spark of Omens
+	i(213612),	-- Viridescent Spores
+	i(213611),	-- Writhing Sample
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
 			spell(430345, {	-- Meticulous Experimentation
@@ -450,6 +461,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222417),	-- Core Alloy+
 			i(222418),	-- Core Alloy++
 			i(222419),	-- Core Alloy+++
+			i(226202),	-- Echoing Flux
 			i(222499),	-- Forged Framework+
 			i(222500),	-- Forged Framework++
 			i(222501),	-- Forged Framework+++
@@ -595,9 +607,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(222714),	-- Zesty Nibblers
 		filter(REAGENTS, {
 			i(222737),	-- Chopped Mycobloom
+			i(222701),	-- Clumped Flour
+			i(222697),	-- Coreway Dust
+			i(222696),	-- Crunchy Peppers
 			i(222741),	-- Fresh Fillet
+			i(222700),	-- Granulated Spices
+			i(222699),	-- Khaz Algar Tomato
 			i(222738),	-- Portioned Steak
 			i(222739),	-- Spiced Meat Stock
+			i(222695),	-- Twined Herbs
 		}),
 	}),
 	prof(ENCHANTING, {
@@ -1254,6 +1272,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(221915),	-- Overclocked Cogwheel++
 			i(221916),	-- Overclocked Cogwheel+++
 			i(221949),	-- Pausing Pylon
+			i(219150),	-- Pile of Rusted Scrap
 			i(221935),	-- Pouch of Pocket Grenades+
 			i(221936),	-- Pouch of Pocket Grenades++
 			i(221937),	-- Pouch of Pocket Grenades+++
@@ -1375,27 +1394,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	}),
 	prof(HERBALISM, {
 		spell(2366, {	-- Herb Gathering
-			i(210808),	-- Arathor's Spear+
-			i(210809),	-- Arathor's Spear++
-			i(210810),	-- Arathor's Spear+++
-			i(210805),	-- Blessing Blossom+
-			i(210806),	-- Blessing Blossom++
-			i(210807),	-- Blessing Blossom+++
 			i(224264),	-- Deepgrove Petal
+			i(224835),	-- Deepgrove Roots
 			i(224265),	-- Deepgrove Rose
 			i(219196),	-- Empowered Mulch
 			i(219195),	-- Imbued Mulch
-			i(210799),	-- Luredrop+
-			i(210800),	-- Luredrop++
-			i(210801),	-- Luredrop+++
 			i(219194),	-- Magical Mulch
-			i(210796),	-- Mycobloom+
-			i(210797),	-- Mycobloom++
-			i(210798),	-- Mycobloom+++
-			i(213197),	-- Null Lotus
-			i(210802),	-- Orbinid+
-			i(210803),	-- Orbinid++
-			i(210804),	-- Orbinid+++
 			i(214561),	-- Verdant Seed
 		}),
 		n(DISCOVERY, {
@@ -1489,6 +1493,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 438955);	-- Overload Irradiated Herb
 			--FirstCraft(XXXXX, 438961);	-- Overload Sporefused Herb
 		})),
+		i(210808),	-- Arathor's Spear+
+		i(210809),	-- Arathor's Spear++
+		i(210810),	-- Arathor's Spear+++
+		i(210805),	-- Blessing Blossom+
+		i(210806),	-- Blessing Blossom++
+		i(210807),	-- Blessing Blossom+++
+		i(210799),	-- Luredrop+
+		i(210800),	-- Luredrop++
+		i(210801),	-- Luredrop+++
+		i(210796),	-- Mycobloom+
+		i(210797),	-- Mycobloom++
+		i(210798),	-- Mycobloom+++
+		i(210802),	-- Orbinid+
+		i(210803),	-- Orbinid++
+		i(210804),	-- Orbinid+++
 	}),
 	prof(INSCRIPTION, {
 		spell(444181, {	-- Khaz Algar Milling
@@ -2481,6 +2500,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222844),	-- Weavercloth Tailor's Coat
 		}),
 		filter(REAGENTS, {
+			i(228930),	-- Adorning Ribbon
 			i(222801),	-- Dawnweave Bolt+
 			i(222802),	-- Dawnweave Bolt++
 			i(222803),	-- Dawnweave Bolt+++
@@ -2490,6 +2510,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(224832),	-- Exquisite Weavercloth Bolt+
 			i(224833),	-- Exquisite Weavercloth Bolt++
 			i(224834),	-- Exquisite Weavercloth Bolt+++
+			i(224764),	-- Mosswool Thread
 			i(222792),	-- Spool of Dawnthread+
 			i(222793),	-- Spool of Dawnthread++
 			i(222794),	-- Spool of Dawnthread+++

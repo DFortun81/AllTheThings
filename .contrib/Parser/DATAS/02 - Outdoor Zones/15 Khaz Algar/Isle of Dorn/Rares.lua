@@ -220,5 +220,6 @@ root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 		q(84030),	-- Extra HQT: Tempest Lord Incarnus
 		q(84037),	-- Extra HQT: Tephratennae
 		q(84033),	-- Extra HQT: Twice-Stinger the Wretched
+		q(85159),	-- Extra HQT: Zovex
 	}),
 }));

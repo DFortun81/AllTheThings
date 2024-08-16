@@ -646,7 +646,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	m(2348, {	-- Zekvir's Lair
-		["coord"] = { 46.3, 48.5, THE_RINGING_DEEPS },
+		["coord"] = { 6.7, 33.9, NERUBAR },	-- old coords - 46.3, 48.5, THE_RINGING_DEEPS?
 		["g"] = {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 } }, {
 				ach(40431),	-- Hunting the Hunter

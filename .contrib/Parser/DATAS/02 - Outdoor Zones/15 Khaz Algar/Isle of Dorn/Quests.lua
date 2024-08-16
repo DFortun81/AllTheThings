@@ -8,7 +8,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			-- Using Questauren These gets completed (Probably Inbetween Bronzebeard Family and Violet Impact)
 			q(82199),	--
 			q(81966),	-- Slept like a Rock
-			q(83543),	-- could be some pre-patch/xpac quest intro quest chain for phase?
 			--
 			header(HEADERS.Achievement, 20118, {	-- The Isle of Dorn
 				------ Chapter 1 ------

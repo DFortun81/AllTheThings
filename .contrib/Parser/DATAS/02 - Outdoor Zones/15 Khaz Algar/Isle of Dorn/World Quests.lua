@@ -22,6 +22,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82234, {	-- A Floral Flair for Every Ram
 					["coord"] = { 40.2, 80.4, ISLE_OF_DORN },
 				}),
+				q(82470, {	-- Arcane Riddles
+					["coord"] = { 30.8, 52.2, ISLE_OF_DORN },
+					["g"] = {
+						i(218454),	-- Titan Artifact (QI!)
+					},
+				}),
 				q(81465, {	-- Artifacts Galore
 					["coord"] = { 78.4, 26.7, ISLE_OF_DORN },
 					["g"] = {
@@ -60,6 +66,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(82451, {	-- Preserving Plush Pals
 					["coord"] = { 32.5, 53.3, ISLE_OF_DORN },
+				}),
+				q(81512, {	-- Props and Incense
+					["coord"] = { 66.2, 58.5, ISLE_OF_DORN },
+					["g"] = {
+						i(218740),	-- Ashenfold (QI!)
+						i(218739),	-- Pristine Horn (QI!)
+					},
 				}),
 				q(82237, {	-- Rising the Falls
 					["coord"] = { 56.8, 42.5, ISLE_OF_DORN },

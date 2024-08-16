@@ -287,27 +287,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(RADIANT_REMNANT),
 					i(226264),	-- Radiant Cache
 					i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
+					i(220756),	-- Flickering Torch
 					i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
 					i(228741, {	-- Lamplighter Supply Satchel
-						i(229155),	-- Lamplighter's Greataxe
-						--probably all Lamplighter's stuff from it?
+						--probably all this sets is from here?
 						i(229085),	-- Aevery's Spare Bracers
+						i(229155),	-- Lamplighter's Greataxe
+						i(229061),	-- Nisa's Spare Belt
 					}),
 					i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
 					i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
 				}),
 				n(TREASURES, {
-					--o(xxx, {	-- was crabber crate or something like that
-					--	["coord"] = { 62.4, 16.2, HALLOWFALL },
-					--	["questID"] = 84342,
-					--	["g"] = {
+					o(428472, {	-- Captain Lancekat's Discretionary Funds
+						["description"] = "Require any source of light for area (e.g. torch) that reveal this treasure",
+						["coord"] = { 66.5, 15.1, HALLOWFALL },
+						["questID"] = 81612,
+						--["isWeekly"] = true,
+					}),
+					o(457271, {	-- Crabber Supplies
+						["coord"] = { 62.4, 16.2, HALLOWFALL },
+						["questID"] = 84342,
+						["isWeekly"] = true,
+						["g"] = {
 							i(226018),	-- Darkened Arathi Cape (COSMETIC!)
-					--	},
-					--}),
+						},
+					}),
 					o(435008, {	-- Farmhand Stash
 						["description"] = "Require weekly quest with controlling Harvestbot Remy to git it up",
 						["coord"] = { 61.6, 32.6, HALLOWFALL },
 						["questID"] = 80590,
+						--["isWeekly"] = true,
 					}),
 					o(441795, {	-- Hallowfall Sparkfly
 						["coord"] = { 66.8, 25.3, HALLOWFALL },
@@ -323,7 +333,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["g"] = {
 							i(221546),	-- Nightfarm Growthling (PET!)
 						},
-					})
+					}),
+					o(453186, {	-- Nightfarm Growthling
+						--["coord"] = { 66.8, 25.3, HALLOWFALL },
+						--["questID"] = ,
+						["g"] = {
+							i(221546),	-- Nightfarm Growthling (PET!)
+						},
+					}),
 				}),
 				n(VENDORS, {
 					n(212419, {	-- Attica Whiskervale
@@ -431,18 +448,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	-- Hidden stuff in area
-	q(83211),	-- Herb with Sparkbug Jar buff @ 67.1, 23.3
-	q(83208),	-- Harb with Sparkbug Jar buff @ 66.3, 23.6
-	q(83033),	-- Ore (Ironclaw ) with Sparkbug Jar buff @ 67.6, 23.8
-	q(80548),	-- Radiant Remnant from ground during qID 76338 (A Better Cabbage Smacker) @ 64.8, 28.9
-	q(80583),	-- Radiant Remnant from ground during qID 78590 (Cutting Edge) @ 64.0, 31.7
-	q(80337),	-- Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 66.1, 16.6
-	q(80347),	-- Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 65.7, 16.5
-	q(80342),	-- Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 65.4, 16.7
-	q(80344),	-- Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 64.2, 16.4
-	q(80339),	-- Radiant Remnant from ground in cave during qID 76169 (Glow in the Dark) @ 66.4, 15.0
-	q(80535),	-- Radiant Remnant from ground with Sparkbug Jar buff @ 66.8, 23.1
+	-- Hidden stuff in area, that require different light buffs
+	-- could be weekly, idk
+	q(83211),	-- Herb @ 67.1, 23.3
+	q(83208),	-- Harb @ 66.3, 23.6
+	q(83223),	-- Herb @ 62.1, 13.0
+	q(81843),	-- Herb @ 63.5, 19.6
+	q(83222),	-- Herb @ 61.5, 16.5
+	q(83033),	-- Ore @ 67.6, 23.8
+	q(81847),	-- Ore @ 66.3, 14.9
+	q(81846),	-- Ore @ 65.3, 16.6
+	q(83047),	-- Ore @ 66.1, 17.0
+	q(83039),	-- Ore @ 66.3, 17.5
+	q(80548),	-- Radiant Remnant @ 64.8, 28.9
+	q(80583),	-- Radiant Remnant @ 64.0, 31.7
+	q(80337),	-- Radiant Remnant @ 66.1, 16.6
+	q(80347),	-- Radiant Remnant @ 65.7, 16.5
+	q(80342),	-- Radiant Remnant @ 65.4, 16.7
+	q(80344),	-- Radiant Remnant @ 64.2, 16.4
+	q(80339),	-- Radiant Remnant @ 66.4, 15.0
+	q(80535),	-- Radiant Remnant @ 66.8, 23.1
+	q(80338),	-- Radiant Remnant @ 63.6, 20.8
+	q(80345),	-- Radiant Remnant @ 66.1, 17.9
 	-- Small Keyflames
 	q(80005),	-- Empty Crab Cage - Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
 	q(78472),	-- Attica Whiskervale - Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7
@@ -467,5 +494,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	---
 	q(79177),	-- Snuffling in Hallowfall?
 	-- Vendor
+	q(76996),	-- after buy and use itemID 210826 (Harvestbot Repair Kit)
 	q(83341),	-- after turn in 78933 (The Sweet Eclipse), unlock ability to buy Sweet Eclipse from vendor
 }));

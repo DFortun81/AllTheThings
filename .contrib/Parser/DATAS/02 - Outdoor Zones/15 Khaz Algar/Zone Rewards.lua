@@ -49,6 +49,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		}),
 		filter(NECK_F, {
 			i(224665),	-- Gem-Studded Pendant
+			i(224594),	-- Spinner's Amulet
 		}),
 		filter(PLATE, {
 			i(224697),	-- Sedimentary Armplates
@@ -61,9 +62,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			i(224691),	-- Sedimentary Sabatons
 		}),
 		filter(TRINKET_F, {
+			i(225657),	-- Detachable Fang
+			i(225651),	-- Kaheti Shadeweaver's Emblem
 			i(225649),	-- Quickwick Candlestick
-			i(225647),	-- Shining Arathor Insignia
 			i(225654),	-- Rapid Evolution Serum
+			i(226539),	-- Scroll of Momentum
+			i(225647),	-- Shining Arathor Insignia
+			i(225638),	-- Spelunker's Waning Candle
 		}),
 		n(WEAPONS, {
 			i(224702),	-- Ancient Forged Blade
@@ -84,6 +89,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			i(224706),	-- Ancient Forged Warhammer
 		}),
 		--
+		i(229354),	-- Algari Adventurer's Cache
 		i(224784, {	-- Pinnacle Cache
 			--I'm currently placing it here since it can be obtained in different zone
 			--On first opening I recieve:

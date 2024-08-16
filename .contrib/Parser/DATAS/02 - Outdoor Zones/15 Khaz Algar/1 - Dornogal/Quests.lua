@@ -89,12 +89,49 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["sourceQuests"] = { 82042 },	-- The Better Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
+				["g"] = {
+					i(221269),	-- Crimson Valorstone
+				},
 			}),
 			q(82059, {	-- Transmutation Station
 				["sourceQuests"] = { 82050 },	-- The Hardbringer of Crests
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
+				["g"] = {
+					i(221269),	-- Crimson Valorstone
+				},
 			}),
+			------ Alts ------
+			q(83543, {	-- Adventuring in Khaz Algar
+				--["sourceQuests"] = { 83621 },	-- HQT (I'm not sure if there any other way to get it)
+				["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+				["coord"] = { 47.4, 44.4, DORNOGAL },
+			}),
+			q(83552, {	-- Azj-Kahet
+				--["sourceQuests"] = { 83621 },
+				["provider"] = { "n", 227038 },	-- Scouting Map
+				["coord"] = { 48.2, 43.7, DORNOGAL },
+				--["isBreadcrumb"] = true,	-- ?
+			}),
+			q(83551, {	-- Hallowfall
+				--["sourceQuests"] = { 83621 },
+				["provider"] = { "n", 227038 },	-- Scouting Map
+				["coord"] = { 48.2, 43.7, DORNOGAL },
+				--["isBreadcrumb"] = true,	-- ?
+			}),
+			q(83548, {	-- Isle of Dorn
+				--["sourceQuests"] = { 83621 },
+				["provider"] = { "n", 227038 },	-- Scouting Map
+				["coord"] = { 48.2, 43.7, DORNOGAL },
+				--["isBreadcrumb"] = true,	-- ?
+			}),
+			q(83550, {	-- The Ringing Deeps
+				--["sourceQuests"] = { 83621 },
+				["provider"] = { "n", 227038 },	-- Scouting Map
+				["coord"] = { 48.2, 43.7, DORNOGAL },
+				--["isBreadcrumb"] = true,	-- ?
+			}),
+
 			------ Stay awhile and listen ------
 			q(84335, {	-- Stay awhile and listen: Alleria Windrunner
 				["name"] = "Stay awhile and listen: Alleria Windrunner",
@@ -192,11 +229,16 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(80538),	-- after turn in questID 79525 (Report to the Councilward), Tracking Quest [DNT] (spellID 441842)
 
 	q(79573, {["name"] = "The War Within Campaign Completed [Account]"}),	-- triggered after completing 'Surface Bound' (questID 79197)
-
+	-- Archives
 	q(82039),	-- after turn in questID 82678 (Archives: The First Disk) & 82679 (Archives: Seeking History)
-	q(83450),	-- Play Scene (spellID 455916), after turn in after 82678 (Archives: The First Disk) but nothing happen on beta
-	q(84736),	-- last one in this chain after turn in, no idea
-	q(84669),	-- after accept questID 82679 (Archives: Seeking History)
+	q(83450),	-- Play Scene (spellID 455916), after finished Archives weekly (1st week) / unlocked new log entry
+	q(83460),	-- Play Scene (spellID 455918), after finished Archives weekly (2nd week) / unlocked new log entry
+	q(83462),	-- Play Scene (spellID 455920), after finished Archives weekly (3rd week) / unlocked new log entry
+	q(84736),	-- last one in this chain after turn in (1st weekly), no idea
+	q(84669),	-- after accept questID 82679 (Archives: Seeking History) (2nd week)
 	q(84671),	-- after accept questID 82679 (Archives: Seeking History) / also after 82746 (Delves: Breaking Tough to Loot Stuff)
-	q(83460),	-- Play Scene (spellID 455918), after turn in questID 82679 (Archives: Seeking History) but nothing happening on beta
+	-- Alt skip
+	q(83621),	-- can be used right after turn in 81930 or 78713 (The War Within)
+	-- 82059 (Transmutation Station)
+	--q(65440),	-- provided 15x Carved Harbinger Crest for quest? (currently in NYI)
 });

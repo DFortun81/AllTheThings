@@ -29,6 +29,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["sourceQuests"] = { 81990 },	-- The Light's Call
 					["provider"] = { "n", 215527 },	-- Keyrra Flamestonge
 					["coord"] = { 65.5, 32.2, HALLOWFALL },
+					["isWeekly"] = true,
 				}),
 				q(79232, {	-- Those that Fell
 					["sourceQuests"] = { 81990 },	-- The Light's Call
@@ -70,13 +71,49 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(82394, {	-- A Cache of Crests
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
 					["coords"] = {
-						{ 41.2, 53.0, HALLOWFALL },
+						{ 41.2, 53.0, HALLOWFALL },	-- TODO: probably no longer accurtate and was moved
 						{ 42.4, 55.0, HALLOWFALL },
 					},
 				}),
 			}, {	-- RENOWN 10 --
-				i(218352),	-- Expeditionary Tabard
+				q(82395, {	-- Flame-touched Tabard
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
+					["coord"] = { 42.4, 55.0, HALLOWFALL },
+					["g"] = {
+						i(218352),	-- Expeditionary Tabard (COSMETIC!)
+					},
+				}),
 			}, {	-- RENOWN 11 --
+				q(81692, {	-- The Flame Within
+					["provider"] = { "n", 214380 },	-- Raen Dawncavalyr
+					["coord"] = { 43.3, 56.4, HALLOWFALL },
+				}),
+				q(81869, {	-- Can Catch More Fires with Honey
+					["sourceQuests"] = { 81692 },	-- The Flame Within
+					["provider"] = { "n", 217128 },	-- Speaker Kuldas
+					["coord"] = { 47.5, 32.0, THE_RINGING_DEEPS },
+					["g"] = {
+						i(219960),	-- Honey Drone Vac (QI!)
+						i(220130),	-- Pure Fire Honey (QI!)
+					},
+				}),
+				q(81751, {	-- Fire and Gemstone
+					["sourceQuests"] = { 81692 },	-- The Flame Within
+					["provider"] = { "n", 217128 },	-- Speaker Kuldas
+					["coord"] = { 47.5, 32.0, THE_RINGING_DEEPS },
+					["g"] = {
+						i(219806),	-- Awakened Cog (QI!)
+						i(219807),	-- Ringing Gemstone (QI!)
+					},
+				}),
+				--q(, {	-- 
+				--	["sourceQuests"] = {
+				--		81869,	-- Can Catch More Fires with Honey
+				--		81751,	-- Fire and Gemstone
+				--	},
+				--	["provider"] = { "n", 217128 },	-- Speaker Kuldas
+				--	["coord"] = { 47.5, 32.0, THE_RINGING_DEEPS },
+				--}),
 			}, {	-- RENOWN 12 --
 			}, {	-- RENOWN 13 --
 			}, {	-- RENOWN 14 --

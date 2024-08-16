@@ -10,7 +10,10 @@ WORLDSOUL_MEMORY = createHeader({
 });
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(WORLDSOUL_MEMORY, {
-		["provider"] = { "n", 222165 },	-- Worldsoul Memory
+		["providers"] = {
+			{ "i", 220520 },	-- Radiant Echo
+			{ "n", 222165 },	-- Worldsoul Memory
+		},
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40252),	-- A Series of Echoes (automated)

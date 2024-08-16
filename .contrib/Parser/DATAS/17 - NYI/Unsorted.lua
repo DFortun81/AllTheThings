@@ -40,9 +40,6 @@ root(ROOTS.Unsorted, {
 				i(228758),	-- Parrlok (PET!) [Trading Post?]
 			}),
 			n(PROFESSIONS, {
-				prof(TAILORING, {
-					i(228930),	-- Adorning Ribbon
-				}),
 				-- Profession Knowledge Notes
 				i(224817),	-- Algari Herbalist's Notes
 				i(224818),	-- Algari Miner's Notes
@@ -98,7 +95,6 @@ root(ROOTS.Unsorted, {
 			--
 			i(225892),	-- Recipe: Rockslide Shake
 			i(228751),	-- Gigantic Grrloc
-			i(229061),	-- Nisa's Spare Belt
 			i(229062),	-- Nisa's Spare Coronet
 			i(229063),	-- Nisa's Spare Wristguards
 			i(229064),	-- Nisa's Spare Shoes
@@ -199,7 +195,6 @@ root(ROOTS.Unsorted, {
 			i(229193),	-- Queen's Pheromone
 			i(229194),	-- Queen's Pheromone
 			i(229195),	-- Queen's Pheromone
-			i(229354),	-- Algari Adventurer's Cache
 			i(229370),	-- Companion Experience
 			i(229371),	-- Companion Experience
 			---
@@ -294,17 +289,9 @@ root(ROOTS.Unsorted, {
 				i(224416),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
 			}),
 			n(PROFESSIONS, {
-				i(211296),	-- Spark of Omens
-				i(211297),	-- Fractured Spark of Omens
-				i(213610),	-- Crystalline Powder
-				i(213611),	-- Writhing Sample
-				i(213612),	-- Viridescent Spores
-				i(213613),	-- Leyline Residue
 				i(221754),	-- Ringing Deeps Ingot
 				i(221757),	-- Gloomfathom Hide
-				i(221758),	-- Profaned Tinderbox
 				i(221763),	-- Viridian Charmcap
-				i(224764),	-- Mosswool Thread
 				i(211494),	-- Spark of Beginnings
 
 				i(225772),	-- Artisan's Consortium Advertisement
@@ -320,7 +307,6 @@ root(ROOTS.Unsorted, {
 				i(200047),	-- Enchant Tool - Draconic Ingenuity
 				i(200599),	-- Technique: Draconic Missive of Ingenuity
 				i(228224),	-- Spark of Legacies
-				i(228338),	-- Soul Sigil I
 				i(228339),	-- Soul Sigil II
 				i(228368),	-- Relic of the Past VI
 				-- NYI Profession --
@@ -540,21 +526,13 @@ root(ROOTS.Unsorted, {
 				}),
 				prof(COOKING, {
 					-- Needs Sources
-					i(222695),	-- Twined Herbs
-					i(222696),	-- Crunchy Peppers
-					i(222697),	-- Coreway Dust
 					i(222698),	-- Surface Olive
-					i(222699),	-- Khaz Algar Tomato
-					i(222700),	-- Granulated Spices
-					i(222701),	-- Clumped Flour
 					i(223977),	-- Coagulated Yolk
 					-- Missing Recipe Item to attach to?
 					r(445481),	-- Tasty Pocket Tart
 				}),
 				prof(ENGINEERING, {
 					i(221968),	-- Legibly Scribbled Notes
-					-- Crafting material
-					i(219150),	-- Pile of Rusted Scrap
 				}),
 				prof(HERBALISM, {
 					i(217105),	-- Refine Khaz Algar Herbs
@@ -615,7 +593,6 @@ root(ROOTS.Unsorted, {
 				i(224807),	-- Algari Skinner's Notes
 				-- Prof Knowledge
 				i(224782),	-- Razor Talon
-				i(224835),	-- Deepgrove Roots
 				i(225220),	-- Chitin Needle
 				i(225221),	-- Spool of Webweave
 
@@ -1277,11 +1254,8 @@ root(ROOTS.Unsorted, {
 				i(220157),	-- Empowered Tinderbox
 				i(220158),	-- Darkened Tinderbox
 				-- Armor Generator
-				i(225638),	-- Spelunker's Waning Candle
 				i(225648),	-- Candle Confidant
-				i(225651),	-- Kaheti Shadeweaver's Emblem
 				i(225656),	-- Goldenglow Censer
-				i(225657),	-- Detachable Fang
 				i(225661),	-- Burning Binding
 				i(225668),	-- Unstable Power Suit Core
 				i(225891),	-- Vile Vial of Kaheti Bile
@@ -1293,7 +1267,6 @@ root(ROOTS.Unsorted, {
 				i(226174),	-- Famished Bride's Clasp
 				i(226175),	-- Traditional Nuptial Shoulderpads
 				i(226521),	-- Reinforced-Wax Plating
-				i(226539),	-- Scroll of Momentum
 				i(226695),	-- Cunning Advisor's Favor
 				i(226696),	-- Mighty Advisor's Favor
 			}),
@@ -1408,10 +1381,8 @@ root(ROOTS.Unsorted, {
 
 				i(220486),	-- Collection of Shiny Shells
 				i(220491),	-- Wicked Blade Shard
-				i(220756),	-- Flickering Torch \\ Fading Torch
 				i(220770),	-- Void-Scarred Stormhammer
 				i(220776),	-- Glorious Cluster of Gilded Harbinger Crests \\ Glorious Cluster of Gilded Harbinger Crests (TODO: Fix Icon)
-				i(221269),	-- Crimson Valorstone \\ Crimson Valorstone (TODO: Fix Icon) (Maybe fix name too?)
 				i(217965),	-- Repair Kit
 				i(217970),	-- Dormant Runestone
 				i(217984),	-- Miner's Rune of Decyphering
@@ -1432,9 +1403,6 @@ root(ROOTS.Unsorted, {
 				i(223897),	-- Ruptured Engine \\ Ruptered Engine
 
 				i(224183),	-- Bleak Chum
-				i(224266),	-- Ivory Tinderbox
-				i(224267),	-- Dented Spearhead
-				i(224268),	-- Filigreed Cleric
 				i(224269),	-- [DNT] 11.0 Food/Drink Template - Food Only - Level 75 - Required Level 70
 				i(224273),	-- Wooden Figure
 				i(224274),	-- Sturdy Locket
@@ -1464,7 +1432,6 @@ root(ROOTS.Unsorted, {
 
 
 				i(225570),	-- Algari Fowlfeather
-				i(225555),	-- Periapt of Pure Flame
 				i(225640),	-- Abyssal Lure
 				i(225786),	-- Chitin Stress Ball
 				i(225788),	-- Congratulatory Ascension Silk
@@ -1522,7 +1489,6 @@ root(ROOTS.Unsorted, {
 				i(226154),	-- Wax-Sealed Crafty Crest
 				i(226155),	-- Big Candle
 				i(226156),	-- Really Big Candle
-				i(226202),	-- Echoing Flux
 				i(226204),	-- Fresh Parchment
 				i(226205),	-- Distilled Algari Freshwater
 				i(226257),	-- Delver's Pouch of Valorstones
@@ -1567,7 +1533,6 @@ root(ROOTS.Unsorted, {
 				i(228394),	-- Lost Note
 				i(228395),	-- Mud Clump
 				i(228396),	-- Dead Fish
-				i(228414),	-- Frayed Wiring
 				i(228415),	-- Adelgonn's Journal
 				i(228416),	-- Steelvein's Manifesto
 				i(228417),	-- Emergency Healthstone
@@ -1674,19 +1639,14 @@ root(ROOTS.Unsorted, {
 				i(219522),	-- Radiant Fuel Crystal
 				i(219804),	-- [DNT] Antiparalytic Serum
 				i(219939),	-- Alleria's Crystal
-				i(219960),	-- Honey Drone Vac
 				i(220116),	-- Completed Market Audit
-				i(220130),	-- Pure Fire Honey
 				i(220212),	-- Aelric's Corrupted Tinderbox
 				i(220215),	-- Unidentified Tinderbox
 				i(220359),	-- Aelric's Corrupted Tinderbox
 				i(220483),	-- Tuning Wand
 				i(221751),	-- DO NOT USE Prismatic Codex
 				i(222899),	-- [UNUSED] Faerin's Shield
-				i(222951),	-- Eagle Fillet \\ Eagle Breast
-				i(222953),	-- Light-Bathed Lotus Cuttings
 				i(222963),	-- Lava Globs
-				i(222976),	-- Flame-Tempered Harpoon
 				i(223079),	-- Slagshell Egg \\ Recipe: Shadow-Infused Gumbo
 				i(223220),	-- Kaheti All-Purpose Cleanser
 				i(223638),	-- Arathi Trade Goods
@@ -1698,15 +1658,9 @@ root(ROOTS.Unsorted, {
 				i(224014),	-- Signet of the Skeinspiner
 				i(224015),	-- Signet of the Skeinspiner
 				i(224016),	-- Signet of the Skeinspiner
-				i(224179),	-- Swamplogged Letter
 				i(224180),	-- Worn Journal
 				i(224182),	-- Webbed Ingots
 
-				i(224184),	-- Crusty Spyglass
-				i(224186),	-- Hymns of the Flame
-				i(224187),	-- Dented Spearhead
-				i(224188),	-- Filigreed Cleric \\ Gambit Piece
-				i(224189),	-- Ivory Tinderbox
 				i(224238),	-- Worn Coin
 				i(224239),	-- Pile of Leather String
 				i(224250),	-- Toy Fish
@@ -1745,7 +1699,6 @@ root(ROOTS.Unsorted, {
 				i(216906),	-- Ol' Faithful
 				i(219381),	-- Fate Weaver
 				i(218125),	-- Reactive Webbed Escutcheon
-				i(218126),	-- Befouler's Syringe
 				i(219382),	-- Fateweaved Needle
 				i(219780),	-- 11.0 Leveling Quest Template - Axe2H - Str
 				i(219781),	-- 11.0 Leveling Quest Template - FistWeapon - Agi
@@ -1893,7 +1846,6 @@ root(ROOTS.Unsorted, {
 				i(221264),	-- Fungarian Mystic's Cluster
 				i(221265),	-- Charm of the Underground Beast
 				i(221505),	-- [DNT] Rare Cloth - Robe
-				i(221506),	-- Arachnid's Web-Sown Guise
 
 				i(223005),	-- String of Fungal Fruits
 
@@ -1989,19 +1941,8 @@ root(ROOTS.Unsorted, {
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(223510),	-- Delver's Dirigible Schematic: Template
-
-
-
-
-
-
-
-
-
-
 			}),
 			filter(MISC, {
-				i(224594),	-- Spinner's Amulet \\ [PH] Element-Attuned Pendant
 				-- Snuffling
 				i(224650),	-- Wax-Sealed Pouch
 				i(228210),	-- Firelight Ruby Chip
@@ -2335,7 +2276,6 @@ root(ROOTS.Unsorted, {
 			i(219017),	-- Silver Armor Clasps
 			i(216665),	-- Warband Bank Distance Inhibitor
 			i(225431),	-- Design: Vicious Jeweler's Setting
-			i(225759),	-- Coreway Engineer's Forceps
 			--
 			i(223032),	-- Technique: Lexicon of Mysteries
 			i(223033),	-- Technique: Patient Alchemist's Mixing Rod

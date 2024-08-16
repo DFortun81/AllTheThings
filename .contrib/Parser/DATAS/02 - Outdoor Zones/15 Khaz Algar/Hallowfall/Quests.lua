@@ -470,13 +470,44 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(223890),	-- Tough Ivy Rope (QI!)
 					},
 				}),
-				q(82219),	-- Spice Up Your Life
-				q(82223, {	-- A Home Cooked Meal
-					i(225894),	-- Recipe: Beledar's Bounty (RECIPE!)
+				q(82219, {	-- Spice Up Your Life
+					--["sourceQuests"] = { ? },	-- TODO: suddenly become available with next reset/new build/renown level/item from Time Lost/Found?
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike
+					["coord"] = { 42.3, 55.0, HALLOWFALL },
+					["g"] = {
+						i(222953),	-- Light-Bathed Lotus Cuttings (QI!)
+					},
 				}),
-				q(82220),	-- Eagle Eye, Eagle Die
-				q(82221),	-- Full Dress
-				q(82222),	-- Cooking With Style
+				q(82220, {	-- Eagle Eye, Eagle Die
+					--["sourceQuests"] = { ? },	-- TODO: suddenly become available with next reset/new build/renown level/item from Time Lost/Found?
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike
+					["coord"] = { 42.3, 55.0, HALLOWFALL },
+					["g"] = {
+						i(222951),	-- Eagle Fillet (QI!)
+						i(222976),	-- Flame-Tempered Harpoon (QI!)
+					},
+				}),
+				q(82221, {	-- Full Dress
+					["sourceQuests"] = {
+						82220,	-- Eagle Eye, Eagle Die
+						82219,	-- Spice Up Your Life
+					},
+					["provider"] = { "n", 223267 },	-- Auralia Steelstrike
+					["coord"] = { 44.5, 50.8, HALLOWFALL },
+				}),
+				q(82222, {	-- Cooking With Style
+					["sourceQuests"] = { 82221 },	-- Full Dress
+					["provider"] = { "n", 223268 },	-- General Steelstrike
+					["coord"] = { 44.6, 50.7, HALLOWFALL },
+				}),
+				q(82223, {	-- A Home Cooked Meal
+					["sourceQuests"] = { 82222 },	-- Cooking With Style
+					["provider"] = { "n", 224154 },	-- General Steelstrike
+					["coord"] = { 43.9, 49.7, HALLOWFALL },
+					["g"] = {
+						i(225894),	-- Recipe: Beledar's Bounty (RECIPE!)
+					},
+				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.04, {	-- Lost in the Darkness
 				q(80382, {	-- Eggs In One Basket
@@ -692,9 +723,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.10, {	-- Rest at Last
-				q(83497),	-- A Concerned Friend
-				q(79165, {	-- A Moment To Rest
+				q(83497, {	-- A Concerned Friend
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["provider"] = { "n", 226708 },	-- Val Thalvassa
+					["coord"] = { 51.6, 54.2, DORNOGAL },
+					["isBreadcrumb"] = true,
+				}),
+				q(79165, {	-- A Moment To Rest
+					["sourceQuests"] = { 83497 },	-- A Concerned Friend
 					["provider"] = { "n", 215341 },	-- Great Kyron
 					["coord"] = { 43.2, 52.4, HALLOWFALL },
 				}),
@@ -898,8 +934,33 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(219524),	-- Tarnished Compass
 					},
 				}),
-				q(82810),	-- Time Found
-				q(82813),	-- Time Borrowed
+				q(82810, {	-- Time Found
+					["description"] = "Become available on next week, after Time Lost was finished",
+					["sourceQuests"] = { 80678 },	-- Time Lost
+					["provider"] = { "n", 220718 },	-- Maera Ashyld
+					["coord"] = { 60.5, 60.2, HALLOWFALL },
+					["g"] = {
+						i(224184),	-- Crusty Spyglass (QI!)
+						i(224187),	-- Dented Spearhead (QI!)
+						i(224188),	-- Filigreed Cleric (QI!)
+						i(224186),	-- Hymns of the Flame (QI!)
+						i(224189),	-- Ivory Tinderbox (QI!
+						i(224179),	-- Swamplogged Letter (QI!)
+						--
+						i(224267),	-- Dented Spearhead
+						i(224268),	-- Filigreed Cleric
+						i(224266),	-- Ivory Tinderbox
+					},
+				}),
+				q(82813, {	-- Time Borrowed
+					["description"] = "Become available on next week, after Time Found was finished",
+					["sourceQuests"] = { 82810 },	-- Time Found
+					["provider"] = { "n", 220718 },	-- Maera Ashyld
+					["coord"] = { 60.5, 60.2, HALLOWFALL },
+					["g"] = {
+						--
+					},
+				}),
 			}),
 			------ Miscellaneous ------
 			q(81651),	-- Delver's Guide to Delves [Might be NYI??]
@@ -918,6 +979,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(216687),	-- Cobbled Together Bandage (QI!)
 				},
 			}),
+			-- Items turn in quests?
+			q(82846, {	-- Dented Spearhead
+				["sourceQuests"] = { 82810 },	-- Time Found
+				["provider"] = { "n", 213145 },	-- Auralia Steelstrike
+				["coord"] = { 42.3, 55.0, HALLOWFALL },
+				["cost"] = {{"i", 224267, 1}},	-- 1x Dented Spearhead
+			}),
+			q(82849, {	-- Filigreed Cleric
+				["sourceQuests"] = { 82810 },	-- Time Found
+				["provider"] = { "n", 217813 },	-- Kiera Horth
+				["coord"] = { 44.0, 49.7, HALLOWFALL },
+				["cost"] = {{"i", 224268, 1}},	-- 1x Filigreed Cleric
+			}),
+			--
 			q(82025, {	-- Talk with Sky-Captain Aerthin
 				["name"] = "Talk with Sky-Captain Aerthin",
 				["description"] = "This NPC is Patrolling",
@@ -994,10 +1069,12 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(82733),	-- 5 page / 4 node (If you...)
 	q(82737),	-- 5 page / 4 node (If you...)
 	--
+	q(82674),	-- trigger after interact with Cooking Pot and choose 'Good enought' option, during questID 82222 (Cooking With Style)
+	--
 	q(82218),	-- 'Break [DNT]' triggered during questID 82217 (Underground Economics) when you click 'Alliance' dialog option on Andee Seabraid
 	--q(xxxxx),	-- '?' triggered during questID 82217 (Underground Economics) when you click 'Horde' dialog option on Andee Seabraid
 	--
-	q(82749),	-- triggered after turn in questID 80678 (Time Lost) (spellID 452551 - Flag Timer)
+	q(82749),	-- Flag for next quest after weekly reset for Time Lost & Time Found (spellID 452551 - Flag Timer)
 	q(83748),	-- triggered after turn in questID 79168 (Light's Gambit) (spellID 457904 - [DNT] Have Played Light's Gambit)
 	q(79941, {["isDaily"]=true,}),	-- <I wish to visit Veneration Groundkeeper> - Justicia Baercennan (n: 225942 @ 41.8, 54.3), nothing happen & reset on daily (spellID 454635)
 	q(79212),	-- not sure why it pop near Defender of the Flame quest chain @ 65.5, 32.2, when I fly here first time

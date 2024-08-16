@@ -55,6 +55,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
 					["g"] = {
 						i(218343),	-- Tabard of the Assembly
+						i(226146),	-- Handful of Humming Shinies
 					},
 				}),
 			}, {	-- RENOWN 11 --

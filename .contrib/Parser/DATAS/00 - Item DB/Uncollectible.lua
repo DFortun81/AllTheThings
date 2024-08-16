@@ -1888,7 +1888,6 @@ i(225830);	-- Irreparably Bent Spoon
 i(225791);	-- Jar of Alchemical Solvent
 i(225785);	-- Jar of Pickled Insects
 i(220264);	-- Jaw with Barbed Teeth
-i(228956);	-- Junk Bucket
 i(220238);	-- Keen Fang
 i(225812);	-- Kobyss Teeth-Sharpener
 i(220234);	-- Leaden Vial

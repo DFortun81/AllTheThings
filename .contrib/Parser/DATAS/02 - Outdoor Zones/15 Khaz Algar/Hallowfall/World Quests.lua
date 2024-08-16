@@ -43,6 +43,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82583, {	-- Igniting the Fire Within
 					["coord"] = { 55.2, 32.7, HALLOWFALL },
 				}),
+				q(82206, {	-- Into Shadows
+					["coord"] = { 67.7, 44.4, HALLOWFALL },
+				}),
 				q(82088, {	-- Kobyss Kibosh
 					["coord"] = { 35.4, 54.7, HALLOWFALL },
 				}),
@@ -83,10 +86,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					-- normal - 80257 / advanced - 80266 / reversed - 80272
 					["coord"] = { 59.2, 68.9, HALLOWFALL },
 				}),
-				q(82588, {	-- Spore Ender
+				q(82586, {	-- Spore Ender (previous questID 82588?)
 					["coord"] = { 60.2, 62.2, HALLOWFALL },
 					["g"] = {
 						i(225655),	-- Fragrant Mirespores (QI!)
+					},
+				}),
+				q(82585, {	-- With Great Pyre
+					["coord"] = { 68.2, 35.0, HALLOWFALL },
+					["g"] = {
+						i(225555),	-- Periapt of Pure Flame (QI!)
 					},
 				}),
 				q(82288, {	-- Work Hard, Play Hard

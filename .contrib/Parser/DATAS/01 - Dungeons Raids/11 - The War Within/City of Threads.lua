@@ -15,6 +15,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					["coord"] = { 56.7, 46.7, AZJ_KAHET },
 				}),
 			}),
+			n(ZONE_DROPS, {
+				-- NOTE: it was looted in follower dungeon, from mobs after Fangs of the Queen boss
+				i(218126),	-- Befouler's Syringe
+			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
 				e(2594, {	-- Orator Krix'vizk
 					["crs"] = { 216619 },	-- Orator Krix'vizk <The Fifth Strand>

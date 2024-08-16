@@ -26,6 +26,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["isWeekly"] = true,
 						["g"] = {
 							i(226273),	-- Awakened Mechanical Cache
+							--i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength (RECIPE!) from cache
 						},
 					}),
 				}),
@@ -33,6 +34,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength (RECIPE!)
 					i(224426),	-- Pattern: Ignition Satchel (RECIPE!)
 					i(223040),	-- Plans: Charged Crusher (RECIPE!)
+				}),
+				n(TREASURES, {
+					-- weekly?
+					o(465243, {	-- Awakened Cache
+						["coord"] = { 47.4, 31.9, THE_RINGING_DEEPS },
+						["questID"] = 84642,
+						--["isWeekly"] = true,
+					}),
+					o(465242, {	-- Awakened Cache
+						["coord"] = { 47.5, 32.0, THE_RINGING_DEEPS },
+						["questID"] = 84644,
+						--["isWeekly"] = true,
+					}),
+					o(465241, {	-- Awakened Cache
+						["coord"] = { 47.5, 31.9, THE_RINGING_DEEPS },
+						["questID"] = 84646,
+						--["isWeekly"] = true,
+					}),
+					o(464938, {	-- Awakened Cache
+						["coord"] = { 47.5, 31.9, THE_RINGING_DEEPS },
+						["questID"] = 84647,
+						--["isWeekly"] = true,
+					}),
 				}),
 				n(VENDORS, {
 					n(225189, {	-- R-K-MEDES <Awakening The Machine>
@@ -104,3 +128,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
+	q(84631),	-- Wave 5
+	q(84632),	-- Wave 10
+	q(84633),	-- Wave 15
+	q(84634),	-- Wave 20
+}));
