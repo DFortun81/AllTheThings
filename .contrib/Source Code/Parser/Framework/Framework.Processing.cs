@@ -686,10 +686,11 @@ namespace ATT
                 //LogDebug($"INFO: Applied inherited modID {NestedModID} for item {data.GetString("itemID")}");
                 data["modID"] = NestedModID;
             }
-            else if (data.ContainsKey("ignoreBonus"))
+            if (data.ContainsKey("ignoreBonus"))
             {
                 // will be removed later
-                data["modID"] = 0;
+                data.Remove("modID");
+                data.Remove("bonusID");
                 //Log("Removed ignoreBonus modID", data.GetString("itemID"));
             }
 
