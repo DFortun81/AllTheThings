@@ -136,12 +136,34 @@ end
 local alliance = 1
 local horde = 2
 
--- Assign RaceID factions based on A/H lists
-for _,race in ipairs(ALLIANCE_ONLY) do
-	RaceIDs[race].faction = alliance
-end
-for _,race in ipairs(HORDE_ONLY) do
-	RaceIDs[race].faction = horde
-end
+-- Assign RaceID factions directly
+RaceIDs[WORGEN].faction = alliance
+RaceIDs[VOIDELF].faction = alliance
+RaceIDs[LIGHTFORGED].faction = alliance
+RaceIDs[KULTIRAN].faction = alliance
+RaceIDs[DARKIRON].faction = alliance
+RaceIDs[MECHAGNOME].faction = alliance
+RaceIDs[PANDAREN_ALLIANCE].faction = alliance
+RaceIDs[PANDAREN_HORDE].faction = horde
+RaceIDs[DRACTHYR_ALLIANCE].faction = alliance
+RaceIDs[DRACTHYR_HORDE].faction = horde
+RaceIDs[EARTHEN_ALLIANCE].faction = alliance
+RaceIDs[EARTHEN_HORDE].faction = horde
+RaceIDs[NIGHTBORNE].faction = horde
+RaceIDs[HIGHMOUNTAIN_TAUREN].faction = horde
+RaceIDs[ZANDALARI].faction = horde
+RaceIDs[VULPERA].faction = horde
+RaceIDs[MAGHAR].faction = horde
+RaceIDs[HUMAN].faction = alliance
+RaceIDs[DWARF].faction = alliance
+RaceIDs[NIGHTELF].faction = alliance
+RaceIDs[GNOME].faction = alliance
+RaceIDs[DRAENEI].faction = alliance
+RaceIDs[ORC].faction = horde
+RaceIDs[UNDEAD].faction = horde
+RaceIDs[TAUREN].faction = horde
+RaceIDs[TROLL].faction = horde
+RaceIDs[GOBLIN].faction = horde
+RaceIDs[BLOODELF].faction = horde
 
 end
