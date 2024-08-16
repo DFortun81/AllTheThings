@@ -3041,7 +3041,7 @@ root(ROOTS.Zones, {
 							},
 						}),
 						o(233505, {	-- Unknown Petrified Egg
-							["description"] = "Inside the cave with Pale and Spiders.",
+							["description"] = "Inside The Forgotten Caves with Pale and Spiders. Entrance at 51.40, 77.60.",
 							["questID"] = 36713,
 							["coord"] = { 53.0, 79.0, GORGROND },
 							["g"] = {
@@ -3088,6 +3088,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(236169, {	-- Harvestable Precious Crystal
+						["description"] = "Inside Glut's burrow. Entrance at 44.50, 50.75.",
 						["questID"] = 36651,
 						["coord"] = { 46.1, 50.0, GORGROND },
 						["g"] = {
@@ -3106,6 +3107,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(233149, {	-- Laughing Skull Cache
+						["description"] = "On a tree branch above these coordinates.",
 						["questID"] = 35709,
 						["coord"] = { 44.2, 74.3, GORGROND },
 						["g"] = {
@@ -3150,6 +3152,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(236149, {	-- Sasha's Secret Stash
+						["description"] = "Hanging at the ledge of a beam. Can be accessed from the top of the tower or by precise flying.",
 						["questID"] = 36631,
 						["coord"] = { 39.0, 68.1, GORGROND },
 						["sym"] = COMMON_TREASURE_SYM,
@@ -3162,12 +3165,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(236092, {	-- Stashed Emergency Rucksack
+						["description"] = "Tied to a rope. Jumping around required to access the platform.",
 						["questID"] = 36604,
 						["coord"] = { 48.1, 93.4, GORGROND },
 						["sym"] = COMMON_TREASURE_SYM,
 					}),
 					o(231069, {	-- Strange Looking Dagger
-						["description"] = "Inside the cave with Pale and Spiders",
+						["description"] = "Inside The Forgotten Caves with Pale and Spiders. Entrance at 51.40, 77.60.",
 						["questID"] = 34940,
 						["coord"] = { 53.0, 80.0, GORGROND },
 						["g"] = {
