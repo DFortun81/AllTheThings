@@ -2,35 +2,34 @@
 select(2, ...).RaceDB=
 {
 	["Vulpera"] = 35,
-	["KulTiran"] = 32,
-	["Dwarf"] = 3,
-	["Gnome"] = 7,
-	["DarkIronDwarf"] = 34,
-	["Worgen"] = 22,
-	["Orc"] = 2,
+	["Undead"] = 5,
 	["Pandaren"] = {
 		["Neutral"] = 24,
-		["Alliance"] = 25,
 		["Horde"] = 26,
+		["Alliance"] = 25,
 	},
 	["Lightforged Draenei"] = 30,
+	["Kul Tiran"] = 32,
+	["NightElf"] = 4,
+	["Orc"] = 2,
+	["LightforgedDraenei"] = 30,
+	["Dark Iron Dwarf"] = 34,
+	["Blood Elf"] = 10,
+	["Highmountain Tauren"] = 28,
 	["Mechagnome"] = 37,
-	["Zandalari Troll"] = 31,
-	["Draenei"] = 11,
-	["Night Elf"] = 4,
-	["Dracthyr"] = {
-		["Alliance"] = 52,
-		["Horde"] = 70,
-	},
-	["HighmountainTauren"] = 28,
 	["Kul'Tiran"] = 32,
+	["HighmountainTauren"] = 28,
+	["MagharOrc"] = 36,
+	["Dracthyr"] = {
+		["Horde"] = 70,
+		["Alliance"] = 52,
+	},
 	["ID"] = {
 		[32] = {
 			["faction"] = 1,
 			["icon"] = "Interface\\Icons\\Achievement_alliedrace_kultiranhuman",
 		},
 		[1] = {
-			["faction"] = 1,
 			["gender"] = {
 				[2] = {
 					["icon"] = "Interface\\Icons\\achievement_character_human_male",
@@ -39,6 +38,7 @@ select(2, ...).RaceDB=
 					["icon"] = "Interface\\Icons\\achievement_character_human_female",
 				},
 			},
+			["faction"] = 1,
 		},
 		[34] = {
 			["faction"] = 1,
@@ -61,7 +61,6 @@ select(2, ...).RaceDB=
 			["icon"] = "Interface\\Icons\\Ui_dracthyr",
 		},
 		[7] = {
-			["faction"] = 1,
 			["gender"] = {
 				[2] = {
 					["icon"] = "Interface\\Icons\\achievement_character_gnome_male",
@@ -70,9 +69,9 @@ select(2, ...).RaceDB=
 					["icon"] = "Interface\\Icons\\achievement_character_gnome_female",
 				},
 			},
+			["faction"] = 1,
 		},
 		[8] = {
-			["faction"] = 2,
 			["gender"] = {
 				[2] = {
 					["icon"] = "Interface\\Icons\\achievement_character_troll_male",
@@ -81,9 +80,9 @@ select(2, ...).RaceDB=
 					["icon"] = "Interface\\Icons\\achievement_character_troll_female",
 				},
 			},
+			["faction"] = 2,
 		},
 		[9] = {
-			["faction"] = 2,
 			["gender"] = {
 				[2] = {
 					["icon"] = "Interface\\Icons\\achievement_goblinhead",
@@ -92,9 +91,9 @@ select(2, ...).RaceDB=
 					["icon"] = "Interface\\Icons\\achievement_femalegoblinhead",
 				},
 			},
+			["faction"] = 2,
 		},
 		[10] = {
-			["faction"] = 2,
 			["gender"] = {
 				[2] = {
 					["icon"] = "Interface\\Icons\\achievement_character_bloodelf_male",
@@ -103,9 +102,9 @@ select(2, ...).RaceDB=
 					["icon"] = "Interface\\Icons\\achievement_character_bloodelf_female",
 				},
 			},
+			["faction"] = 2,
 		},
 		[11] = {
-			["faction"] = 1,
 			["gender"] = {
 				[2] = {
 					["icon"] = "Interface\\Icons\\achievement_character_draenei_male",
@@ -114,9 +113,9 @@ select(2, ...).RaceDB=
 					["icon"] = "Interface\\Icons\\achievement_character_draenei_female",
 				},
 			},
+			["faction"] = 1,
 		},
 		[6] = {
-			["faction"] = 2,
 			["gender"] = {
 				[2] = {
 					["icon"] = "Interface\\Icons\\achievement_character_tauren_male",
@@ -125,9 +124,9 @@ select(2, ...).RaceDB=
 					["icon"] = "Interface\\Icons\\achievement_character_tauren_female",
 				},
 			},
+			["faction"] = 2,
 		},
 		[5] = {
-			["faction"] = 2,
 			["gender"] = {
 				[2] = {
 					["icon"] = "Interface\\Icons\\achievement_character_undead_male",
@@ -136,9 +135,9 @@ select(2, ...).RaceDB=
 					["icon"] = "Interface\\Icons\\achievement_character_undead_female",
 				},
 			},
+			["faction"] = 2,
 		},
 		[2] = {
-			["faction"] = 2,
 			["gender"] = {
 				[2] = {
 					["icon"] = "Interface\\Icons\\achievement_character_orc_male",
@@ -147,9 +146,9 @@ select(2, ...).RaceDB=
 					["icon"] = "Interface\\Icons\\achievement_character_orc_female",
 				},
 			},
+			["faction"] = 2,
 		},
 		[4] = {
-			["faction"] = 1,
 			["gender"] = {
 				[2] = {
 					["icon"] = "Interface\\Icons\\achievement_character_nightelf_male",
@@ -158,9 +157,9 @@ select(2, ...).RaceDB=
 					["icon"] = "Interface\\Icons\\achievement_character_nightelf_female",
 				},
 			},
+			["faction"] = 1,
 		},
 		[3] = {
-			["faction"] = 1,
 			["gender"] = {
 				[2] = {
 					["icon"] = "Interface\\Icons\\achievement_character_dwarf_male",
@@ -169,6 +168,7 @@ select(2, ...).RaceDB=
 					["icon"] = "Interface\\Icons\\achievement_character_dwarf_female",
 				},
 			},
+			["faction"] = 1,
 		},
 		[52] = {
 			["faction"] = 1,
@@ -218,28 +218,28 @@ select(2, ...).RaceDB=
 			["icon"] = "Interface\\Icons\\Achievement_alliedrace_zandalaritroll",
 		},
 	},
-	["Human"] = 1,
-	["Undead"] = 5,
-	["Scourge"] = 5,
-	["LightforgedDraenei"] = 30,
-	["Goblin"] = 9,
-	["ZandalariTroll"] = 31,
-	["MagharOrc"] = 36,
-	["Kul Tiran"] = 32,
-	["BloodElf"] = 10,
-	["Troll"] = 8,
-	["Blood Elf"] = 10,
-	["Nightborne"] = 27,
-	["Tauren"] = 6,
 	["Void Elf"] = 29,
-	["Dark Iron Dwarf"] = 34,
-	["NightElf"] = 4,
-	["VoidElf"] = 29,
-	["Highmountain Tauren"] = 28,
-	["Mag'har Orc"] = 36,
+	["Nightborne"] = 27,
+	["Dwarf"] = 3,
+	["BloodElf"] = 10,
+	["Scourge"] = 5,
 	["Earthen"] = {
-		["Alliance"] = 85,
 		["Horde"] = 84,
+		["Alliance"] = 85,
 	},
+	["DarkIronDwarf"] = 34,
+	["KulTiran"] = 32,
+	["Gnome"] = 7,
+	["Goblin"] = 9,
+	["Human"] = 1,
+	["Troll"] = 8,
+	["Draenei"] = 11,
+	["ZandalariTroll"] = 31,
+	["Zandalari Troll"] = 31,
+	["VoidElf"] = 29,
+	["Mag'har Orc"] = 36,
+	["Worgen"] = 22,
 	["Mag har Orc"] = 36,
+	["Tauren"] = 6,
+	["Night Elf"] = 4,
 }
