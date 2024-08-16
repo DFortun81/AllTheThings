@@ -197,15 +197,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(36825),	-- Fate of the Horde - triggered when turning in "Audience with the Warchief" as a demon hunter (questID 40976)
 
 		--	DUNGEONS & RAIDS
-		q(37212),	-- FLAG - Proving Grounds - Damage Bronze
-		q(37214),	-- FLAG - Proving Grounds - Damage Gold
-		q(37213),	-- FLAG - Proving Grounds - Damage Silver
-		q(37218),	-- FLAG - Proving Grounds - Healer Bronze
-		q(37220),	-- FLAG - Proving Grounds - Healer Gold
-		q(37219),	-- FLAG - Proving Grounds - Healer Silver
-		q(37215),	-- FLAG - Proving Grounds - Tank Bronze
-		q(37217),	-- FLAG - Proving Grounds - Tank Gold
-		q(37216),	-- FLAG - Proving Grounds - Tank Silver
 		q(37501),	-- Draenor Challenge Mode - Bronze Addition (1st)
 		q(37502),	-- Draenor Challenge Mode - Consolation (1st)
 		q(37503),	-- Draenor Challenge Mode - Gold Addition (1st)
