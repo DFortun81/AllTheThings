@@ -242,7 +242,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						i(128179),	-- Talon-Link Loop
 						i(128146),	-- Ensnared Orb of the Sky
 						ig(127749),	-- Corrupted Nest Guardian (PET!)
-						i(127771, {	-- Gemcutter Module: Critical Strike
+						ig(127771, {	-- Gemcutter Module: Critical Strike
 							["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 							["requireSkill"] = JEWELCRAFTING,
 							["f"] = MISC,
@@ -391,7 +391,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WOD, bubbleDown({ ["timeline"] = { ADD
 						["description"] = "Pull the boss and burn him before he transitions. As long as no one touched the Eye of Anzu, you will earn the achievement.",
 					}),
 					ig(127749),	-- Corrupted Nest Guardian (PET!)
-					i(127771, {	-- Gemcutter Module: Critical Strike
+					ig(127771, {	-- Gemcutter Module: Critical Strike
 						["description"] = "Take this recipe to the \"Apexis Gemcutter\" in Tanaan Jungle to learn.  If you have this recipe already you will need to revisit the vendor to cache the recipe.",
 						["requireSkill"] = JEWELCRAFTING,
 						["f"] = MISC,
