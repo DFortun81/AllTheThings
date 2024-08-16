@@ -326,7 +326,10 @@ root(ROOTS.Zones, {
 						["description"] = "In order to learn these recipes, you have to take the appropriate gemcutter module to this NPC and then right-click to learn how to craft it.",
 						["coord"] = { 25.8, 39.7, TANAAN_JUNGLE },
 						["requireSkill"] = JEWELCRAFTING,
-						["g"] = {
+						["g"] = sharedData({
+							-- These Recipes should only cached when learned and not disabled via NPC interact
+							["isEnableTypeRecipe"] = true,
+						},{
 							recipe(187634, {	-- Immaculate Critical Strike Taladite
 								["cost"] = { { "i", 127771, 1 } },	-- Gemcutter Module: Critical Strike
 							}),
@@ -340,10 +343,7 @@ root(ROOTS.Zones, {
 							recipe(187640, {	-- Immaculate Stamina Taladite
 								["cost"] = { { "i", 127775, 1 } },	-- Gemcutter Module: Stamina
 							}),
-							-- recipe(187639, {	-- Immaculate Versatility Taladite
-							-- 	["cost"] = { { "i", 123123123123, 1 } },
-							-- }),
-						},
+						}),
 					}),
 				}),
 				n(QUESTS, {
@@ -515,7 +515,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 17.5, 45.1, TANAAN_JUNGLE },
 						["sourceQuest"] = 39176,	-- Mastery of Taladite
 						["g"] = {
-							recipe(187639),	-- Immaculate Versatility Taladite
+							recipe(187639, {	-- Immaculate Versatility Taladite
+								["isEnableTypeRecipe"] = true,
+							}),
 						},
 					}),
 					q(39565, {	-- Rumble in the Jungle

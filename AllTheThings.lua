@@ -12613,6 +12613,7 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 					-- app.PrintDebug("Recipe",recipeIDs[i])
 					if spellRecipeInfo then
 						recipeID = spellRecipeInfo.recipeID;
+						local cachedRecipe = SearchForObject("recipeID",recipeID,"key")
 						currentCategoryID = spellRecipeInfo.categoryID;
 						if not categories[currentCategoryID] then
 							C_TradeSkillUI_GetCategoryInfo(currentCategoryID, categoryData);
@@ -12633,17 +12634,40 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 						end
 						-- recipe is learned, so cache that it's learned regardless of being craftable
 						if spellRecipeInfo and spellRecipeInfo.learned then
-							charSpells[recipeID] = 1;
-							if not acctSpells[recipeID] then
-								acctSpells[recipeID] = 1;
-								tinsert(learned, recipeID);
+							if spellRecipeInfo.disabled then
+								-- disabled recipes shouldn't be marked as known by the character (they require an 'unlock' typically to become usable)
+								if charSpells[recipeID] then
+									charSpells[recipeID] = nil;
+									-- local link = app:Linkify(recipeID, app.Colors.ChatLink, "search:recipeID:"..recipeID);
+									-- app.PrintDebug("Unlearned Disabled Recipe", link);
+								end
+							else
+								charSpells[recipeID] = 1;
+								if not acctSpells[recipeID] then
+									acctSpells[recipeID] = 1;
+									tinsert(learned, recipeID);
+								end
 							end
 						else
-							-- unlearned recipes shouldn't be marked as known by the character
-							if charSpells[recipeID] then
-								charSpells[recipeID] = nil;
-								-- local link = app:Linkify(recipeID, app.Colors.ChatLink, "search:spellID:"..recipeID);
-								-- app.PrintDebug("Unlearned Recipe", link);
+							if spellRecipeInfo.disabled then
+								-- disabled & unlearned recipes shouldn't be marked as known by the character
+								if charSpells[recipeID] then
+									charSpells[recipeID] = nil;
+									-- local link = app:Linkify(recipeID, app.Colors.ChatLink, "search:spellID:"..recipeID);
+									-- app.PrintDebug("Unlearned Disabled Recipe", link);
+								end
+							else
+								if cachedRecipe and cachedRecipe.isEnableTypeRecipe then
+									-- local link = app:Linkify(recipeID, app.Colors.ChatLink, "search:recipeID:"..recipeID);
+									-- app.PrintDebug("Unlearned Enable-Type Recipe", link);
+								else
+									-- non-disabled, unlearned recipes shouldn't be marked as known by the character
+									if charSpells[recipeID] then
+										charSpells[recipeID] = nil;
+										-- local link = app:Linkify(recipeID, app.Colors.ChatLink, "search:spellID:"..recipeID);
+										-- app.PrintDebug("Unlearned Recipe", link);
+									end
+								end
 							end
 						end
 

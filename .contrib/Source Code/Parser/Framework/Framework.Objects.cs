@@ -1547,6 +1547,7 @@ end");
                     case "isLimited":
                     case "isGuild":
                     case "isDaily":
+                    case "isEnableTypeRecipe":
                     case "isWeekly":
                     case "isMonthly":
                     case "isYearly":
