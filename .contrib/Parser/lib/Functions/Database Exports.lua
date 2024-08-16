@@ -133,4 +133,15 @@ for _,race in ipairs(ALL_RACES) do
 	end
 end
 
+local alliance = 1
+local horde = 2
+
+-- Assign RaceID factions based on A/H lists
+for _,race in ipairs(ALLIANCE_ONLY) do
+	RaceIDs[race].faction = alliance
+end
+for _,race in ipairs(HORDE_ONLY) do
+	RaceIDs[race].faction = horde
+end
+
 end

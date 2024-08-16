@@ -17,40 +17,14 @@ local _, app = ...;
 -- Access via AllTheThings.Modules.FactionData
 local api = {};
 app.Modules.FactionData = api;
-api.FACTION_RACES = {
-	[1] = {
-		1,	-- Human
-		3,	-- Dwarf
-		4,	-- Night Elf
-		7,	-- Gnome
-		11,	-- Draenei
-		22,	-- Worgen
-		25,	-- Pandaren [Alliance]
-		29,	-- Void Elf
-		30,	-- Lightforged
-		32,	-- Kul Tiran
-		34,	-- Dark Iron
-		37,	-- Mechagnome
-		52, -- Dracthyr [Alliance]
-		85,	-- Earthen [Alliance]
-	},
-	[2] = {
-		2,	-- Orc
-		5,	-- Undead
-		6,	-- Tauren
-		8,	-- Troll
-		9,	-- Goblin
-		10,	-- Blood Elf
-		26,	-- Pandaren [Horde]
-		27,	-- Nightborne
-		28,	-- Highmountain
-		31,	-- Zandalari
-		35,	-- Vulpera
-		36,	-- Mag'har
-		70, -- Dracthyr [Horde]
-		84,	-- Earthen [Horde]
-	}
-};
+local FACTION_RACES = {}
+for id,raceInfo in pairs(app.RaceDB.ID) do
+	if raceInfo.faction then
+		FACTION_RACES[raceInfo.faction] = id
+	end
+end
+
+api.FACTION_RACES = FACTION_RACES
 
 local isHuman, remainingTurnIns, totalTurnIns = app.RaceIndex == 1, nil, nil;
 api.AddReputationTooltipInfo = function(tooltipInfo, reputation, text, repPerTurnIn, maxReputation)
