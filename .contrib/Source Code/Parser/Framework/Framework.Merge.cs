@@ -28,6 +28,21 @@ namespace ATT
             {
                 switch (pair.Key)
                 {
+                    case "Exports":
+                        {
+                            if (pair.Value is IDictionary<string, object> exportDB)
+                            {
+                                foreach(var kvp in exportDB)
+                                {
+                                    Exports[kvp.Key] = kvp.Value;
+                                }
+                            }
+                            else
+                            {
+                                ThrowBadFormatDB(pair.Key);
+                            }
+                            break;
+                        }
                     case "IllusionDB":
                         {
                             LogError("IllusionDB not supported. Please use 'ItemDBConditional' and parser.config to assign Illusion objects.");

@@ -81,6 +81,7 @@
     <Compile Include="DB\Types\TypeFlags.cs" />
     <Compile Include="DB\Types\ModifierTree.cs" />
     <Compile Include="Export\Export %28Compressed Lua%29.cs" />
+    <Compile Include="Export\Export %28Pure Lua%29.cs" />
     <Compile Include="Export\Export %28Raw Lua%29.cs" />
     <Compile Include="Export\Export %28Shortcuts%29.cs" />
     <Compile Include="Export\Export %28Structures%29.cs" />
