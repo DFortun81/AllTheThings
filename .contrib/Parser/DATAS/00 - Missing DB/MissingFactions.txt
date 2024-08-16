@@ -7,7 +7,6 @@ faction(2661),	-- Hydraxian (The Molten Core Adds)
 faction(2569),	-- The War Within \\ (11.0 Header) The War Within
 faction(2579),	-- zzOldDelves: Season 1 \\ Delves: Season 1
 faction(2580),	-- Test Faction Alpha
-faction(2594),	-- The Assembly of the Deeps
 faction(2595),	-- Order of Night
 faction(2596),	-- The Severed Threads (Paragon)
 faction(2602),	-- Umbral Bazaar

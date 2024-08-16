@@ -11,27 +11,28 @@ SEVERED_THREADS_PACT = createHeader({
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(THE_SEVERED_THREADS, {
 		n(SEVERED_THREADS_PACT, bubbleDownSelf({ ["minReputation"] = { FACTION_THE_SEVERED_THREADS, 3 } }, {
-			n(ACHIEVEMENTS, {
-				ach(40874, sharedDataSelf({	-- The Grand Tapestry
-					["minReputation"] = { FACTION_THE_WEAVER, 9 },
-				}, {
-					title(572),	-- Silksinger <Name>
-				})),
-				ach(40875, sharedDataSelf({	-- True Strength
-					["minReputation"] = { FACTION_THE_GENERAL, 9 },
-				}, {
-					title(573),	-- Anub'<Name>
-				})),
-				ach(40876, sharedDataSelf({	-- Vox Arachnid
-					["minReputation"] = { FACTION_THE_VIZIER, 9 },
-				}, {
-					title(574),	-- <Name>, Hand of the Vizier
-				})),
-			}),
 			n(FACTIONS, {
-				faction(FACTION_THE_GENERAL),
-				faction(FACTION_THE_VIZIER),
-				faction(FACTION_THE_WEAVER),
+				faction(FACTION_THE_GENERAL, {
+					ach(40875, sharedDataSelf({	-- True Strength
+						["minReputation"] = { FACTION_THE_GENERAL, 9 },
+					}, {
+						title(573),	-- Anub'<Name>
+					})),
+				}),
+				faction(FACTION_THE_VIZIER, {
+					ach(40876, sharedDataSelf({	-- Vox Arachnid
+						["minReputation"] = { FACTION_THE_VIZIER, 9 },
+					}, {
+						title(574),	-- <Name>, Hand of the Vizier
+					})),
+				}),
+				faction(FACTION_THE_WEAVER, {
+					ach(40874, sharedDataSelf({	-- The Grand Tapestry
+						["minReputation"] = { FACTION_THE_WEAVER, 9 },
+					}, {
+						title(572),	-- Silksinger <Name>
+					})),
+				}),
 			}),
 			n(QUESTS, {
 				q(84022, {	-- Uniting Severed Threads
