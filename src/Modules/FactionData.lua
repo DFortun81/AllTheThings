@@ -18,9 +18,12 @@ local _, app = ...;
 local api = {};
 app.Modules.FactionData = api;
 local FACTION_RACES = {}
+local races
 for id,raceInfo in pairs(app.RaceDB.ID) do
 	if raceInfo.faction then
-		FACTION_RACES[raceInfo.faction] = id
+		races = FACTION_RACES[raceInfo.faction]
+		if not races then FACTION_RACES[raceInfo.faction] = {id}
+		else races[#races + 1] = id end
 	end
 end
 
