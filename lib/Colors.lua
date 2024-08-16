@@ -5,7 +5,7 @@ local _, app = ...;
 -- Encapsulates the raw Color strings used throughout ATT
 
 -- Color |cAARRGGBB values used throughout ATT
-app.Colors = {
+app.DefaultColors = {
 	ATT = "ffb4b4ff",
 	Raid = "ffFF7D01",	-- Raid chat color
 	SourceIgnored = "ffd15517",
@@ -39,8 +39,14 @@ app.Colors = {
 	White = "ffFFFFFF",
 };
 
+app.SetCustomColors = function(colorTable)
+	app.Colors = setmetatable(colorTable or {}, {__index = app.DefaultColors})
+end
+
+app.SetCustomColors()
+
 app.ccColors = {};
-for k,v in pairs (app.Colors) do
+for k,v in pairs (app.DefaultColors) do
 	app.ccColors[k] = "|c"..v;
 end;
 

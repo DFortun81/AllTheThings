@@ -235,9 +235,8 @@ settings.Initialize = function(self)
 	local colors = settings:Get("Window:CustomColors") or {}
 	-- make sure the table reference is actually assigned back to be saved
 	settings:Set("Window:CustomColors",colors)
-	setmetatable(colors, { __index = app.Colors });
-	-- replace the direct table with a metatable of the original colors
-	app.Colors = colors;
+	-- replace the direct table with a metatable of the user's colors & Default fallbacks
+	app.SetCustomColors(colors)
 
 	-- Assign the preset filters for your character class as the default states
 	if not AllTheThingsSettingsPerCharacter then AllTheThingsSettingsPerCharacter = {} end
