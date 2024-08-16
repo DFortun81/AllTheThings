@@ -1053,6 +1053,8 @@ local function CreateObject(t, rootOnly)
 		-- Non-Thing groups
 		elseif t.classID then
 			t = app.CreateCharacterClass(t.classID, t);
+		elseif t.raceID then
+			t = app.CreateRace(t.raceID, t);
 		elseif t.headerID then
 			t = app.CreateNPC(t.headerID, t);
 		elseif t.expansionID then
