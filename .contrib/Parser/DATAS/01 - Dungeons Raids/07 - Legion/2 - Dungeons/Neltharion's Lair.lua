@@ -76,15 +76,30 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
+				cr(91003, e(1662, {	-- Rokmora
+					i(205973, {	-- Rod of Crystalline Energies
+						["timeline"] = { ADDED_11_0_2 },
+					}),
+				})),
+				cr(91004, e(1665, {	-- Ularogg Cragshaper
+				})),
+				cr(91005, e(1673, {	-- Naraxas
+					i(205974, {	-- Monstrous Gluttony
+						["timeline"] = { ADDED_11_0_2 },
+					}),
+				})),
 				cr(91007, e(1687, {	-- Dargrul
 					ach(10795),	-- Neltharion's Lair
 					i(139466),	-- Bindings of the Windlord (rogue artifact appearance)
 					i(137912),	-- Pattern: Battlebound Treads [Rank 3] (RECIPE!)
+					i(205975, {	-- Hate-Sculpted Magma
+						["timeline"] = { ADDED_11_0_2 },
+					}),
 				})),
 			}),
 			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
 				i(205975),	-- Hate-Sculpted Magma
-				i(205974),	-- Monstrous GLuttony
+				i(205974),	-- Monstrous Gluttony
 				i(205973),	-- Rod of Crystalline Energies
 			})),
 			d(DIFFICULTY.DUNGEON.NORMAL, {

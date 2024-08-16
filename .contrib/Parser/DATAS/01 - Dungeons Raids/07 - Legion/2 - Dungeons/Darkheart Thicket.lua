@@ -34,6 +34,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(140653),	-- Pure Drop of Shaladrassil's Sap (druid appearance)
 				})),
 				cr(103344, e(1655, {	-- Oakheart
+					i(137307),	-- Corrupted Knot
 					i(211473, {	-- Corrupted Knot
 						["timeline"] = { ADDED_11_0_2 },
 					}),
@@ -80,7 +81,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(121319),	-- Vilescale Helm
 					i(121280),	-- Wracksoul Legplates
 					i(137308),	-- Clotted Sap of the Grove
-					i(137307),	-- Corrupted Knot
 				})),
 				cr(99200, e(1656, {	-- Dresaron
 					i(139082),	-- Bramblemail Greaves
@@ -144,7 +144,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(121319),	-- Vilescale Helm
 						i(121280),	-- Wracksoul Legplates
 						i(137308),	-- Clotted Sap of the Grove
-						i(137307),	-- Corrupted Knot
 					})),
 					cr(99200, e(1656, {	-- Dresaron
 						i(139082),	-- Bramblemail Greaves
@@ -209,7 +208,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						i(121319),	-- Vilescale Helm
 						i(121280),	-- Wracksoul Legplates
 						i(137308),	-- Clotted Sap of the Grove
-						i(137307),	-- Corrupted Knot
 					})),
 					cr(99200, e(1656, {	-- Dresaron
 						ach(10766, {	-- Egg-cellent!

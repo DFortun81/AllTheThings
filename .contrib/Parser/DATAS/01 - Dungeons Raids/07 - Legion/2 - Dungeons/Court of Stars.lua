@@ -29,11 +29,24 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
+				cr(104215, e(1718, {	-- Patrol Captain Gerdo
+				})),
+				cr(104217, e(1719, {	-- Talixae Flamewreath
+					i(201994, {	-- Felsworn Covenant Crossbow
+						["timeline"] = { ADDED_11_0_2 },
+					}),
+				})),
 				cr(104218, e(1720, {	-- Advisor Melandrus
 					i(137856),	-- Design: Righteous Dawnlight Medallion [Rank 3] (RECIPE!)
 					i(128594),	-- Formula: Enchant Neck - Mark of the Distant Army [Rank 2] (RECIPE!)
 					i(137929),	-- Pattern: Gravenscale Grips [Rank 3] (RECIPE!)
 					i(127926),	-- Recipe: Potion of Deadly Grace [Rank 2] (RECIPE!)
+					i(201995, {	-- Crux of Blind Faith
+						["timeline"] = { ADDED_11_0_2 },
+					}),
+					i(201996, {	-- Edge of the First Blade
+						["timeline"] = { ADDED_11_0_2 },
+					}),
 				})),
 			}),
 			n(MYTHIC_PLUS, sharedDataSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
