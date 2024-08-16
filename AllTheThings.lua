@@ -6335,6 +6335,7 @@ local HeaderTypeAbbreviations = {
 	["c"] = "classID",
 	["m"] = "mapID",
 	["i"] = "itemID",
+	["r"] = "raceID",
 	["q"] = "questID",
 	["s"] = "spellID",
 };
