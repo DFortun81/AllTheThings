@@ -6665,7 +6665,12 @@ _.ObjectNames = {
 	[456208] = "The Catalyst",
 	[456927] = "Treatise on Forms: Lords",
 	[456928] = "Treatise on Forms: Ascended",
+	[457271] = "Crabber Supplies",
 	[463979] = "Lightspark Sky Academy Gradebook",
+	[464938] = "Awakened Cache",
+	[465241] = "Awakened Cache",
+	[465242] = "Awakened Cache",
+	[465243] = "Awakened Cache",
 	[9000000] = "Wind Sculpted Stone",
 	[9000001] = "Ancient Incense Brazier",
 	[9000002] = "Ancient Incense Brazier",
@@ -11623,7 +11628,12 @@ _.ObjectModels = {
 	[456008] = 929389,
 	[456019] = 1310395,
 	[456020] = 1240452,
+	[457271] = 2123117,
 	[463979] = 5387320,
+	[464938] = 5128194,
+	[465241] = 4323481,
+	[465242] = 4323481,
+	[465243] = 4323481,
 }
 
 -- Supported Locales
