@@ -260,10 +260,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 			ach(40089),	-- Spoiled Goods
 			ach(40090),	-- Spoiled Goods
 			ach(40087),	-- Unbound Battle (automated)
-			ach(40465, {	-- Unbound Bounty
-				-- TODO: Check criteria work when this isn't pointing to DF zones anymore
-				["sym"] = {{ "achievement_criteria" }},
-			}),
+			ach(40465),	-- Unbound Bounty (automated)
 			ach(40466),	-- Unbound Glory
 			ach(40467),	-- Unbound Glory
 			ach(40468),	-- Unbound Glory
