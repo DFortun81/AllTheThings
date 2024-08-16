@@ -1093,10 +1093,9 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(ACHIEVEMENTS, {
-			-- INFO: Flask of Rampant Toxicity criteria currently not working correctly, recipe needs to be added to "crafted items" section.
-			-- INFO: No need to manually add criteria on these, automation is doing the heavy lifting.
-			ach(19704),	-- Overflowing Algari Flasks
-			ach(19716),	-- Plentiful Algari Potions
+			-- TODO: Flask of Rampant Toxicity criteria currently not working correctly, recipe needs to be added to "crafted items" section.
+			ach(19704),	-- Overflowing Algari Flasks (automated)
+			ach(19716),	-- Plentiful Algari Potions (automated)
 		}),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",

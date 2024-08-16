@@ -126,6 +126,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 	race(EARTHEN_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }, ["races"] = ALLIANCE_ONLY, }, {
 		-- TODO: Make this automated again when we can
 		achraw(40307, {	-- Allied Races: Earthen
+			-- TODO: missing questid 83503, currently not sourced
 			crit(66993), -- The War Within campaign
 			crit(68162, { -- Mourning Rise
 				["_quests"] = {
@@ -305,6 +306,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 	race(EARTHEN_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }, ["races"] = HORDE_ONLY, }, {
 		-- TODO: Make this automated again when we can
 		achraw(40307, {	-- Allied Races: Earthen
+			-- TODO: missing questid 83503, currently not sourced
 			crit(66993), -- The War Within campaign
 			crit(68162, { -- Mourning Rise
 				["_quests"] = {
