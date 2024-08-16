@@ -124,7 +124,25 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	}),
 	race(EARTHEN_ALLIANCE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }, ["races"] = ALLIANCE_ONLY, }, {
-		ach(40307),	-- Allied Races: Earthen (automated),
+		-- TODO: Make this automated again when we can
+		achraw(40307, {	-- Allied Races: Earthen
+			crit(66993), -- The War Within campaign
+			crit(68162, { -- Mourning Rise
+				["_quests"] = {
+					82895, -- Mourning Rise
+				},
+			}),
+			crit(67728, { -- Broken Tools
+				["_quests"] = {
+					78564, -- Broken Tools
+				},
+			}),
+			crit(67055, { -- Merrix and Steelvein
+				["_quests"] = {
+					79530, -- Merrix and Steelvein
+				},
+			}),
+		}),
 		-- Starting area questline
 		["g"] = {
 			q(79200, {	-- Who am I?
@@ -285,7 +303,25 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 		},
 	})),
 	race(EARTHEN_HORDE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }, ["races"] = HORDE_ONLY, }, {
-		ach(40307),	-- Allied Races: Earthen (automated),
+		-- TODO: Make this automated again when we can
+		achraw(40307, {	-- Allied Races: Earthen
+			crit(66993), -- The War Within campaign
+			crit(68162, { -- Mourning Rise
+				["_quests"] = {
+					82895, -- Mourning Rise
+				},
+			}),
+			crit(67728, { -- Broken Tools
+				["_quests"] = {
+					78564, -- Broken Tools
+				},
+			}),
+			crit(67055, { -- Merrix and Steelvein
+				["_quests"] = {
+					79530, -- Merrix and Steelvein
+				},
+			}),
+		}),
 		["g"] = {
 			q(81888, {	-- For the Horde [H]
 				["sourceQuests"] = { 79204 },	-- Whoever You Want to Be
