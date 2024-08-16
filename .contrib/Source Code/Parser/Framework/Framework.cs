@@ -3151,7 +3151,6 @@ namespace ATT
                         .Insert(0, $"select(2, ...).{exportDB.Key}=\n")).ToString();
                     WriteIfDifferent(exportFilename, exportContent);
                 }
-                IncludePureNewlines = true;
 
                 CurrentParseStage = ParseStage.ExportAddonData;
                 IncludeRawNewlines = false;

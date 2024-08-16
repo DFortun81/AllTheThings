@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace ATT
 {
@@ -79,14 +78,17 @@ namespace ATT
             if (IncludePureNewlines)
                 builder.AppendLine();
 
+            // ensure sorted output
+            SortedDictionary<KEY, VALUE> sortedData = new SortedDictionary<KEY, VALUE>(data);
+
             // Export Fields
             int fieldCount = 0;
-            foreach (var key in data.Keys)
+            foreach (var key in sortedData.Keys)
             {
                 // If this is NOT the first field, move to the next line
                 if (fieldCount++ > 0 && IncludePureNewlines) builder.AppendLine();
 
-                ExportPureLuaKeyValue(builder, key, data[key], subindent);
+                ExportPureLuaKeyValue(builder, key, sortedData[key], subindent);
 
                 // Always follow each piece of data with a comma for consistency
                 builder.Append(',');
