@@ -1618,4 +1618,9 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 		["coord"] = { 13.2, 66.8, ZULDRAK },
 		["description"] = "Gutretch's pets are level 25 of the following consecutive pet classes:\n1. Beast - use Mechanical (powerful) or Flying (tanky) pet.\n2. Beast - see above.\n3. Critter - use Beast (powerful) or Humanoid (tanky) pet.\n\nFor credit towards 'An Awfully Big Adventure', battle with a composition of Elekk Plushie and two strong pets.",
 	}),
+	-- Lvl 25 tamers around the old world added during Legion
+	n(115307, {	-- Algalon the Observer <Celestial Pet Tamer>
+		["coord"] = { 41.5, 24.4, THE_STORM_PEAKS },
+		["description"] = "Algalon's pets are level 25 and exceptionally powerful of the following consecutive pet classes:\n1. Dragonkin - use Humanoid (powerful) or Undead (tanky) pet.\n2. Magic - use Dragonkin (powerful) or Mechanical (tanky) pet.\n3. Magic - see above.",
+	}),
 })));
