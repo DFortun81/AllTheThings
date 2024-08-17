@@ -1468,6 +1468,7 @@ root(ROOTS.Zones, {
 					}),
 					n(92977, {	-- The Iron Houndmaster
 						["description"] = "Capture Strongpoint (West) to make him spawn.",
+						["crs"] = { 92969 },	-- Strongpoint
 						["questID"] = 38751,
 						["isDaily"] = true,
 						["coord"] = { 13.1, 57.0, TANAAN_JUNGLE },
