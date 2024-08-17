@@ -3094,7 +3094,7 @@ root(ROOTS.Zones, {
 						["description"] = "Inside Glut's burrow.",
 						["questID"] = 36651,
 						["coords"] = {
-							{ 46.1, 50.0, GORGROND }, -- Crystal
+							{ 46.1, 50.0, GORGROND },  -- Crystal
 							{ 44.5, 50.75, GORGROND }, -- Glut's Burrow Entrance
 						},
 						["g"] = {
@@ -3179,7 +3179,7 @@ root(ROOTS.Zones, {
 					o(231069, {	-- Strange Looking Dagger
 						["description"] = "Inside The Forgotten Caves with Pale and Spiders.",
 						["questID"] = 34940,
-						["coord"] = {
+						["coords"] = {
 							{ 53.0, 80.0, GORGROND }, -- Dagger Location
 							{ 51.4, 77.6, GORGROND }, -- Cave Entrance
 						},
