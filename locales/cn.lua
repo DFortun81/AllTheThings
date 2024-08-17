@@ -460,8 +460,6 @@ end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Garrisons
-		[-152] = "要塞战役",											-- Garrison Campaign
 	-- Class Trial
 		[-155] = string.format(SPELLBOOK_AVAILABLE_AT, 50).." ".."（直升）",	-- Level 50 (Boost)
 	-- PvP

@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["races"] = { DARKIRON },
 		["isRaid"] = true,
 		["groups"] = {
-			n(143925, {	-- Dark Iron Mole Machine
+			header(HEADERS.NPC, 143925, {	-- Dark Iron Mole Machine
 				["icon"] = "Interface\\Icons\\ability_racial_molemachine",
 				["coord"] = { 61.44, 24.35, 1186 },	-- Shadowforge City
 				["groups"] = {

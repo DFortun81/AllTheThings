@@ -187,6 +187,7 @@ HeaderAssignments = {
 	["Free T-Shirt Day"] = -1000216,
 	["Furious Gladiator"] = -1000133,
 	["Fyrakk Assaults"] = -1000945,
+	["Garrison Campaign"] = -1001006,
 	["Garrison Invasions"] = -1000315,
 	["Garrisons"] = -1000092,
 	["Gathering"] = -1000281,
@@ -508,4 +509,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001005;
+NextHeaderID = -1001007;

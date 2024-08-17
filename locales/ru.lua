@@ -442,8 +442,6 @@ do a[key] = value; end
 if app.IsRetail then
 local a = L.HEADER_NAMES;
 for key,value in pairs({
-	-- Garrison
-		[-152] = "Гарнизонная кампания",							-- Garrison Campaign
 	-- PvP
 		[-242] = "Нерейтинговые",									-- Unrated
 	-- Outposts in Draenor

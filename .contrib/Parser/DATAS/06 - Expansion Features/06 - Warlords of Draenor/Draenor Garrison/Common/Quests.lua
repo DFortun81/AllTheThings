@@ -1,11 +1,21 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+local GARRISON_CAMPAIGN = createHeader({
+	readable = "Garrison Campaign",
+	icon = "Interface\\Icons\\achievement_zone_draenor_01",
+	text = {
+		en = "Garrison Campaign",
+		cn = "要塞战役",
+		de = "Garnisonskampagne",
+		ru = "Гарнизонная кампания",
+	},
+})
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 	n(GARRISONS, sharedData({["maps"] = { LUNARFALL, FROSTWALL } },	{
 		n(QUESTS, {
-			n(-152,  {	-- Garrison Campaign
+			n(GARRISON_CAMPAIGN,  {	-- Garrison Campaign
 			-- A Stolen Heart
 				q(36160, {	-- Garrison Campaign: Every Rose Has Its Thorn
 					["provider"] = { "n", 77209 },	-- Baros Alexston
