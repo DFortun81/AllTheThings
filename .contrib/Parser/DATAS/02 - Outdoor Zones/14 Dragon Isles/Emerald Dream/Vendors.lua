@@ -24,7 +24,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				["coord"] = { 36.7, 33.3, EMERALD_DREAM },
 				["g"] = bubbleDownFiltered({
 					["cost"] = {{ "i", 210944, 1 }},	-- Emerald Mark of Mastery
-					["modID"] = 8,
+					["bonusID"] = 7532,
 				},FILTERFUNC_itemID,{
 					cl(DEATHKNIGHT, {
 						i(207203),	-- Casket of the Risen Nightmare
