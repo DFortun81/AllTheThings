@@ -395,6 +395,7 @@ i(207771, 77142);	-- Grotto Netherwing Drake: Short Horns
 i(207763, 77134);	-- Grotto Netherwing Drake: Single Horned Crest
 i(207758, 77129);	-- Grotto Netherwing Drake: Spiked Back
 i(207773, 77144);	-- Grotto Netherwing Drake: Spiked Jaw
+i(207775, 77146);	-- Grotto Netherwing Drake: Teal Scales
 i(207767, 77138);	-- Grotto Netherwing Drake: Tempestuous Pattern
 i(207766, 77137);	-- Grotto Netherwing Drake: Triple Spiked Crest
 i(207768, 77139);	-- Grotto Netherwing Drake: Volatile Pattern
@@ -425,7 +426,6 @@ i(203354, 73845);	-- Winding Slitherdrake: White Scales
 --- NYI ---
 i(210478, 78399);	-- Flourishing Whimsydrake: Gold and Pink Armor
 i(207757, 77128);	-- Grotto Netherwing Drake: Purple and Silver Armor
-i(207775, 77146);	-- Grotto Netherwing Drake: Teal Scales
 i(211381, 78878);	-- Grotto Netherwing Drake: Violet Scales
 i(207777, 77148);	-- Grotto Netherwing Drake: Yellow Scales
 

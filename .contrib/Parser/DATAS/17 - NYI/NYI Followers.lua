@@ -135,7 +135,6 @@ root(ROOTS.NeverImplemented, n(FOLLOWERS, {
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
 		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
-			follower(1208),	-- Nadjia the Mistblade
 			follower(1211),	-- Eli the Brazen
 			follower(1212),	-- Anjali
 			follower(1224),	-- M'Phy

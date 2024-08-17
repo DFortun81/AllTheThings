@@ -671,9 +671,12 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(97075),	-- Spiderweb Tabi
 			}),
 			-- #endif
+			-- #if BEFORE 10.2.7
+			-- All was added into MoP: Remix Throne of Thunder Ensembles
 			expansion(EXPANSION.MOP, 4.0, {
 				i(104986),	-- Unrepentant Heels
 			}),
+			-- #endif
 		}),
 		filter(MAIL, {
 			expansion(EXPANSION.MOP, 0.1, {
@@ -1103,61 +1106,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(109326),	-- 7.0 QA Combat Test Plate Shoulders 2
 				i(109332),	-- 7.0 QA Combat Test Plate Shoulders 3
 				i(109338),	-- 7.0 QA Combat Test Plate Shoulders 4
-				i(107992),	-- Draenic Steel Chestplate
-				i(108000),	-- Draenic Steel Chestplate
-				i(108008),	-- Draenic Steel Chestplate
-				i(108016),	-- Draenic Steel Chestplate
-				i(108024),	-- Draenic Steel Chestplate
-				i(108032),	-- Draenic Steel Chestplate
-				i(107986),	-- Draenic Steel Gauntlets
-				i(107994),	-- Draenic Steel Gauntlets
-				i(108002),	-- Draenic Steel Gauntlets
-				i(108010),	-- Draenic Steel Gauntlets
-				i(108018),	-- Draenic Steel Gauntlets
-				i(108026),	-- Draenic Steel Gauntlets
-				i(108034),	-- Draenic Steel Gauntlets
-				i(107990),	-- Draenic Steel Girdle
-				i(107998),	-- Draenic Steel Girdle
-				i(108006),	-- Draenic Steel Girdle
-				i(108014),	-- Draenic Steel Girdle
-				i(108022),	-- Draenic Steel Girdle
-				i(108030),	-- Draenic Steel Girdle
-				i(108038),	-- Draenic Steel Girdle
-				i(107987),	-- Draenic Steel Helm
-				i(107995),	-- Draenic Steel Helm
-				i(108003),	-- Draenic Steel Helm
-				i(108011),	-- Draenic Steel Helm
-				i(108019),	-- Draenic Steel Helm
-				i(108027),	-- Draenic Steel Helm
-				i(108035),	-- Draenic Steel Helm
-				i(107988),	-- Draenic Steel Legguards
-				i(107996),	-- Draenic Steel Legguards
-				i(108004),	-- Draenic Steel Legguards
-				i(108012),	-- Draenic Steel Legguards
-				i(108020),	-- Draenic Steel Legguards
-				i(108028),	-- Draenic Steel Legguards
-				i(108036),	-- Draenic Steel Legguards
-				i(107989),	-- Draenic Steel Shoulders
-				i(107997),	-- Draenic Steel Shoulders
-				i(108005),	-- Draenic Steel Shoulders
-				i(108013),	-- Draenic Steel Shoulders
-				i(108021),	-- Draenic Steel Shoulders
-				i(108029),	-- Draenic Steel Shoulders
-				i(108037),	-- Draenic Steel Shoulders
-				i(107985),	-- Draenic Steel Warboots
-				i(107993),	-- Draenic Steel Warboots
-				i(108001),	-- Draenic Steel Warboots
-				i(108009),	-- Draenic Steel Warboots
-				i(108017),	-- Draenic Steel Warboots
-				i(108025),	-- Draenic Steel Warboots
-				i(108033),	-- Draenic Steel Warboots
-				i(107991),	-- Draenic Steel Wristwraps
-				i(107999),	-- Draenic Steel Wristwraps
-				i(108007),	-- Draenic Steel Wristwraps
-				i(108015),	-- Draenic Steel Wristwraps
-				i(108023),	-- Draenic Steel Wristwraps
-				i(108031),	-- Draenic Steel Wristwraps
-				i(108039),	-- Draenic Steel Wristwraps
 			}),
 			expansion(EXPANSION.WOD, 0.2, {
 				i(116232),	-- 6.0 LFR - Highmaul Raid - UNUSED - Plate Versatile Belt 1
@@ -1432,7 +1380,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(150448),	-- Pauldrons of Abyssal Fury
 				i(150461),	-- Praetorian's Legguards
 				i(150465),	-- Myrmidon's Treads
-				i(150472),	-- Grips of Silent Justice
 				i(150449),	-- Wraps of Precise Flight
 				i(150457),	-- Bands of the Coming Storm
 				i(150502),	-- Touch of Inspiration
@@ -1446,7 +1393,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			expansion(EXPANSION.BFA, 0.1, {
 				i(153397),	-- Salt Starched Shawl
 				i(154968),	-- Drape of the Golden City
-				i(155091),	-- Thovas-Explorer's Cape
 				i(155384),	-- Singed Skycaller Drape
 				i(156755),	-- Drape of Revengeance
 				i(158500),	-- Salt Starched Shawl
@@ -2893,24 +2839,6 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 						i(207143, { ["bonusID"] = 8107 }),	-- Twisted Flamecuffs [Elite]
 					}),
 				}),
-			})),
-
-			-- 10.2.5
-			expansion(EXPANSION.DF, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
-				i(210285),	-- Jade Guardian's Belt
-				i(210289),	-- Jade Guardian's Bracers
-				i(210271),	-- Jade Guardian's Gauntlets
-				i(210273),	-- Jade Guardian's Helm
-				i(210282),	-- Jade Guardian's Monnion
-				i(210621),	-- Reedstalker Wristguards
-				i(210914),	-- Timerunner's Bands
-				i(210910),	-- Timerunner's Chain
-				i(210892),	-- Timerunner's Chestguard
-				i(210898),	-- Timerunner's Coif
-				i(210896),	-- Timerunner's Grips
-				i(210902),	-- Timerunner's Legguards
-				i(210907),	-- Timerunner's Monnion
-				i(210894),	-- Timerunner's Sabatons
 			})),
 		}),
 		filter(PLATE, {

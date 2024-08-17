@@ -43,7 +43,6 @@ root(ROOTS.NeverImplemented, n(DRAKEWATCHER_MANUSCRIPTS, {
 		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			i(210478),	-- Flourishing Whimsydrake: Gold and Pink Armor (DM!)
 			i(207757),	-- Grotto Netherwing Drake: Purple and Silver Armor (DM!)
-			i(207775),	-- Grotto Netherwing Drake: Teal Scales (DM!)
 			i(211381),	-- Grotto Netherwing Drake: Violet Scales (DM!)
 			i(207777),	-- Grotto Netherwing Drake: Yellow Scales (DM!)
 		})),

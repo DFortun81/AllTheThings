@@ -27,6 +27,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.MOP, {
 				-- 5.0.4
+				-- #if BEFORE 10.2.7
+				-- All was added into MoP: Remix Ensembles
 				expansion(EXPANSION.MOP, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 					i(82918),	-- Lightsteel Belt
 					i(82917),	-- Lightsteel Boots
@@ -51,9 +53,10 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(82899),	-- Spiritguard Legplates
 					i(82896),	-- Spiritguard Shoulders
 				})),
+				-- #endif
 
 				-- 5.2.0
-				expansion(EXPANSION.MOP, 0.4, bubbleDownSelf({ ["timeline"] = { CREATED_5_2_0 } }, {
+				expansion(EXPANSION.MOP, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_2_0 } }, {
 					i(93441),	-- Crafted Dreadful Gladiator's Barrier - UNUSED
 					i(93483),	-- Crafted Dreadful Gladiator's Redoubt
 					i(93614),	-- Crafted Dreadful Gladiator's Shield Wall
@@ -65,25 +68,133 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(108422),	-- Blackrock Crucible
 					i(107968),	-- Draenic Steel Chestplate
 					i(107976),	-- Draenic Steel Chestplate
+					i(107984),	-- Draenic Steel Chestplate / UNUSED
+					i(107992),	-- Draenic Steel Chestplate
+					i(108000),	-- Draenic Steel Chestplate
+					i(108008),	-- Draenic Steel Chestplate
+					i(108016),	-- Draenic Steel Chestplate
+					i(108024),	-- Draenic Steel Chestplate
+					i(108032),	-- Draenic Steel Chestplate
 					i(107971),	-- Draenic Steel Helm
 					i(107979),	-- Draenic Steel Helm
+					i(107987),	-- Draenic Steel Helm
+					i(107995),	-- Draenic Steel Helm
+					i(108003),	-- Draenic Steel Helm
+					i(108011),	-- Draenic Steel Helm
+					i(108019),	-- Draenic Steel Helm
+					i(108027),	-- Draenic Steel Helm
+					i(108035),	-- Draenic Steel Helm
 					i(107970),	-- Draenic Steel Guantlets
 					i(107978),	-- Draenic Steel Guantlets
+					i(107986),	-- Draenic Steel Gauntlets
+					i(107994),	-- Draenic Steel Gauntlets
+					i(108002),	-- Draenic Steel Gauntlets
+					i(108010),	-- Draenic Steel Gauntlets
+					i(108018),	-- Draenic Steel Gauntlets
+					i(108026),	-- Draenic Steel Gauntlets
+					i(108034),	-- Draenic Steel Gauntlets
 					i(107974),	-- Draenic Steel Girdle
 					i(107982),	-- Draenic Steel Girdle
+					i(107990),	-- Draenic Steel Girdle
+					i(107998),	-- Draenic Steel Girdle
+					i(108006),	-- Draenic Steel Girdle
+					i(108014),	-- Draenic Steel Girdle
+					i(108022),	-- Draenic Steel Girdle
+					i(108030),	-- Draenic Steel Girdle
+					i(108038),	-- Draenic Steel Girdle
 					i(107972),	-- Draenic Steel Legguards
 					i(107980),	-- Draenic Steel Legguards
+					i(107988),	-- Draenic Steel Legguards
+					i(107996),	-- Draenic Steel Legguards
+					i(108004),	-- Draenic Steel Legguards
+					i(108012),	-- Draenic Steel Legguards
+					i(108020),	-- Draenic Steel Legguards
+					i(108028),	-- Draenic Steel Legguards
+					i(108036),	-- Draenic Steel Legguards
 					i(107973),	-- Draenic Steel Shoulders
 					i(107981),	-- Draenic Steel Shoulders
+					i(107989),	-- Draenic Steel Shoulders
+					i(107997),	-- Draenic Steel Shoulders
+					i(108005),	-- Draenic Steel Shoulders
+					i(108013),	-- Draenic Steel Shoulders
+					i(108021),	-- Draenic Steel Shoulders
+					i(108029),	-- Draenic Steel Shoulders
+					i(108037),	-- Draenic Steel Shoulders
 					i(107969),	-- Draenic Steel Warboots
 					i(107977),	-- Draenic Steel Warboots
+					i(107985),	-- Draenic Steel Warboots
+					i(107993),	-- Draenic Steel Warboots
+					i(108001),	-- Draenic Steel Warboots
+					i(108009),	-- Draenic Steel Warboots
+					i(108017),	-- Draenic Steel Warboots
+					i(108025),	-- Draenic Steel Warboots
+					i(108033),	-- Draenic Steel Warboots
 					i(107975),	-- Draenic Steel Wristwraps
 					i(107983),	-- Draenic Steel Wristwraps
+					i(107991),	-- Draenic Steel Wristwraps
+					i(107999),	-- Draenic Steel Wristwraps
+					i(108007),	-- Draenic Steel Wristwraps
+					i(108015),	-- Draenic Steel Wristwraps
+					i(108023),	-- Draenic Steel Wristwraps
+					i(108031),	-- Draenic Steel Wristwraps
+					i(108039),	-- Draenic Steel Wristwraps
 					i(116653),	-- Unstable Greater Steelforged Essence
 					i(116650),	-- Unstable Greater Truesteel Essence
+
+					-- #if BEFORE 10.1.5
+					-- All was added into Dawn of the Infinite dungeon [Quantum Chestpiece]
+					i(108078),	-- Hardened Draenic Steel Chestplate
+					-- #endif
+					-- #if BEFORE 10.1.5
+					-- All was added into Dawn of the Infinite dungeon [Quantum Gloves]
+					i(108080),	-- Hardened Draenic Steel Guantlets
+					-- #endif
+					-- #if BEFORE 10.2.7
+					-- All was added into MoP: Remix [Ensemble: Shan'ze Warplate]
 					i(108084),	-- Hardened Draenic Steel Girdle
+					-- #endif
+					-- #if BEFORE 10.1.5
+					-- All was added into Dawn of the Infinite dungeon [Quantum Headpiece]
+					i(108081),	-- Hardened Draenic Steel Helm
+					-- #endif
+					-- #if BEFORE 10.1.5
+					-- All was added into Dawn of the Infinite dungeon [Quantum Legs]
+					i(108082),	-- Hardened Draenic Steel Legguards
+					-- #endif
+					-- #if BEFORE 10.1.5
+					-- All was added into Dawn of the Infinite dungeon [Quantum Shoulders]
+					i(108083),	-- Hardened Draenic Steel Shoulders
+					-- #endif
+					-- #if BEFORE 10.2.7
+					-- All was added into MoP: Remix [Ensemble: Shan'ze Warplate]
 					i(108079),	-- Hardened Draenic Steel Warboots
+					-- #endif
+					-- #if BEFORE 10.2.7
+					-- All was added into MoP: Remix [Ensemble: Shan'ze Warplate]
 					i(108085),	-- Hardened Draenic Steel Wristwraps
+					-- #endif
+					-- #if BEFORE 10.1.5
+					-- All was added into Dawn of the Infinite dungeon [Quantum Chestpiece]
+					i(108162),	-- Peerless Draenic Steel Chestplate
+					i(108178),	-- Peerless Draenic Steel Chestplate
+					i(108186),	-- Peerless Draenic Steel Chestplate
+					i(108194),	-- Peerless Draenic Steel Chestplate
+					i(108202),	-- Peerless Draenic Steel Chestplate
+					i(108210),	-- Peerless Draenic Steel Chestplate
+					i(108218),	-- Peerless Draenic Steel Chestplate
+					-- #endif
+					-- #if BEFORE 10.1.5
+					-- All was added into Dawn of the Infinite dungeon [Quantum Gloves]
+					i(108164),	-- Peerless Draenic Steel Guantlets
+					i(108180),	-- Peerless Draenic Steel Guantlets
+					i(108188),	-- Peerless Draenic Steel Guantlets
+					i(108196),	-- Peerless Draenic Steel Guantlets
+					i(108204),	-- Peerless Draenic Steel Guantlets
+					i(108212),	-- Peerless Draenic Steel Guantlets
+					i(108220),	-- Peerless Draenic Steel Guantlets
+					-- #endif
+					-- #if BEFORE 10.2.7
+					-- All was added into MoP: Remix [Ensemble: Shan'ze Warplate]
 					i(108168),	-- Peerless Draenic Steel Girdle
 					i(108184),	-- Peerless Draenic Steel Girdle
 					i(108192),	-- Peerless Draenic Steel Girdle
@@ -91,6 +202,39 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(108208),	-- Peerless Draenic Steel Girdle
 					i(108216),	-- Peerless Draenic Steel Girdle
 					i(108224),	-- Peerless Draenic Steel Girdle
+					-- #endif
+					-- #if BEFORE 10.1.5
+					-- All was added into Dawn of the Infinite dungeon [Quantum Headpiece]
+					i(108165),	-- Peerless Draenic Steel Helm
+					i(108181),	-- Peerless Draenic Steel Helm
+					i(108189),	-- Peerless Draenic Steel Helm
+					i(108197),	-- Peerless Draenic Steel Helm
+					i(108205),	-- Peerless Draenic Steel Helm
+					i(108213),	-- Peerless Draenic Steel Helm
+					i(108221),	-- Peerless Draenic Steel Helm
+					-- #endif
+					-- #if BEFORE 10.1.5
+					-- All was added into Dawn of the Infinite dungeon [Quantum Legs]
+					ig(108166),	-- Peerless Draenic Steel Legguards
+					ig(108182),	-- Peerless Draenic Steel Legguards
+					ig(108190),	-- Peerless Draenic Steel Legguards
+					ig(108198),	-- Peerless Draenic Steel Legguards
+					ig(108206),	-- Peerless Draenic Steel Legguards
+					ig(108214),	-- Peerless Draenic Steel Legguards
+					ig(108222),	-- Peerless Draenic Steel Legguards
+					-- #endif
+					-- #if BEFORE 10.1.5
+					-- All was added into Dawn of the Infinite dungeon [Quantum Shoulders]
+					i(108167),	-- Peerless Draenic Steel Shoulders
+					i(108183),	-- Peerless Draenic Steel Shoulders
+					i(108191),	-- Peerless Draenic Steel Shoulders
+					i(108199),	-- Peerless Draenic Steel Shoulders
+					i(108207),	-- Peerless Draenic Steel Shoulders
+					i(108215),	-- Peerless Draenic Steel Shoulders
+					i(108223),	-- Peerless Draenic Steel Shoulders
+					-- #endif
+					-- #if BEFORE 10.2.7
+					-- All was added into MoP: Remix [Ensemble: Shan'ze Warplate]
 					i(108163),	-- Peerless Draenic Steel Warboots
 					i(108179),	-- Peerless Draenic Steel Warboots
 					i(108187),	-- Peerless Draenic Steel Warboots
@@ -98,6 +242,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(108203),	-- Peerless Draenic Steel Warboots
 					i(108211),	-- Peerless Draenic Steel Warboots
 					i(108219),	-- Peerless Draenic Steel Warboots
+					-- #endif
+					-- #if BEFORE 10.2.7
+					-- All was added into MoP: Remix [Ensemble: Shan'ze Warplate]
 					i(108169),	-- Peerless Draenic Steel Wristwraps
 					i(108185),	-- Peerless Draenic Steel Wristwraps
 					i(108193),	-- Peerless Draenic Steel Wristwraps
@@ -105,6 +252,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(108209),	-- Peerless Draenic Steel Wristwraps
 					i(108217),	-- Peerless Draenic Steel Wristwraps
 					i(108225),	-- Peerless Draenic Steel Wristwraps
+					-- #endif
 					i(122538),	-- Unstable Powerful Steelforged Essence
 					i(122539),	-- Unstable Powerful Truesteel Essence
 				})),

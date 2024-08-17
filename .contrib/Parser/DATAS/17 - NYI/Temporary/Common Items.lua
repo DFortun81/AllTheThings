@@ -329,11 +329,6 @@ root(ROOTS.NeverImplemented, {
 						i(49534),	-- Goblin Primitive's Belt
 					}),
 				}),
-				filter(MAIL, {
-					n(WRIST, {
-						i(57533),	-- Dwarven Iron Bracer
-					}),
-				}),
 				filter(PLATE, {
 					n(WAIST, {
 						i(53357),	-- Bellower's Belt
@@ -495,7 +490,6 @@ root(ROOTS.NeverImplemented, {
 				filter(MAIL, {
 					n(WRIST, {
 						i(131848),	-- Beast Tracker's Bracers
-						i(131203),	-- Chain Link Winter Bracers
 						i(131256),	-- Fur Lined Chain Bracers
 					}),
 					n(HANDS, {
@@ -543,7 +537,6 @@ root(ROOTS.NeverImplemented, {
 				filter(MISC, {
 					i(140209),	-- 'Imported' Blacksmith Hammer
 					i(140208),	-- 'Imported' Mining Pick
-					i(136350),	-- Brumdysla, Hammer of Vrorsk
 				}),
 				filter(ONE_HANDED_SWORDS, {
 					i(132470),	-- 7.0 Weapon - Sword_1h_LordRavencrest_B_01 - Purple

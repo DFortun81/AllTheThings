@@ -515,6 +515,9 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["provider"] = { "n", 92242 },	-- Barm Stonebreaker
 			["coord"] = { 55.2, 84.2, HIGHMOUNTAIN },
 			["maps"] = { 706, 707, 708 },	-- Maw of Souls
+			["g"] = {
+				i(136350),	-- Brumdysla, Hammer of Vrorsk
+			},
 		}),
 		q(38559, {	-- Worthy of the Stone
 			["sourceQuests"] = {

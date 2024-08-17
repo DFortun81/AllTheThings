@@ -424,30 +424,40 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 		}),
 	}),
 	n(ARMOR, bubbleDownSelf({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
-		-- PvP (probably from some Ensemble)
-		i(127103),	-- Gladiator's Plate Shoulders	-- I collected it somehow -Darkal
+		-- PvP (probably from some Ensemble/Arsenal)
+		i(127103),	-- Gladiator's Plate Shoulders
 
 		-- Other
+		i(57533),	-- Dwarven Iron Bracer
+		i(113710),	-- Ravaged Leather Leggings
+		i(131203),	-- Chain Link Winter Bracers
+		i(150472),	-- Grips of Silent Justice
+		i(155091),	-- Thovas-Explorer's Cape
 		i(163255, {	-- 7th Legionnaire's Treads
 			-- CRIEVE NOTE: Keep this here until we get solid proof and an accurate source.
 			["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.\n\n - Crieve",
 			["modID"] = 5,
 		}),
-		i(113710),	-- Ravaged Leather Leggings	-- I collected it somehow -Darkal
+	})),
+	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDownSelf({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+		i(207775),	-- Grotto Netherwing Drake: Teal Scales (DM!)
+	})),
+	n(FOLLOWERS, bubbleDownSelf({ ["description"] = "If you obtain this follower, please provide as much information as you can about how and where you got it.", }, {
+		follower(1208),	-- Nadjia the Mistblade
 	})),
 	n(WEAPONS, bubbleDownSelf({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
 		-- Quests / Rares ?
 		i(108905),	-- Jagged Turtleshell Blade
-		i(118186),	-- Frostwolf Wisdom Stick	-- rewarded by some WoD quest
-		i(107644),	-- Napmaster's Sleep Mask	-- I collected it somehow -Darkal
+		i(118186),	-- Frostwolf Wisdom Stick
+		i(107644),	-- Napmaster's Sleep Mask
 
-		-- PvP (probably from some Ensemble)
-		i(42214),	-- Savage Gladiator's Waraxe	-- I collected it somehow -Darkal
-		i(91498),	-- Malevolent Gladiator's Heavy Crossbow	-- I collected it somehow -Darkal
-		i(91496),	-- Malevolent Gladiator's Touch of Defeat	-- I collected it somehow -Darkal
-		i(91755),	-- Malevolent Gladiator's Baton of Light	-- I collected it somehow -Darkal
-		i(169725),	-- Notorious Gladiator's Bonegrinder (A)	-- I collected it somehow -Darkal
-		i(169724),	-- Notorious Gladiator's Bonegrinder (H)	-- I collected it somehow -Darkal
+		-- PvP (probably from some Ensemble/Arsenal)
+		i(42214),	-- Savage Gladiator's Waraxe
+		i(91498),	-- Malevolent Gladiator's Heavy Crossbow
+		i(91496),	-- Malevolent Gladiator's Touch of Defeat
+		i(91755),	-- Malevolent Gladiator's Baton of Light
+		i(169725),	-- Notorious Gladiator's Bonegrinder (A)
+		i(169724),	-- Notorious Gladiator's Bonegrinder (H)
 	})),
 	n(QUESTS, {	-- These are/were completable
 		-- 4.0.3
