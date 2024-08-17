@@ -3041,9 +3041,12 @@ root(ROOTS.Zones, {
 							},
 						}),
 						o(233505, {	-- Unknown Petrified Egg
-							["description"] = "Inside The Forgotten Caves with Pale and Spiders. Entrance at 51.40, 77.60.",
+							["description"] = "Inside The Forgotten Caves with Pale and Spiders.",
 							["questID"] = 36713,
-							["coord"] = { 53.0, 79.0, GORGROND },
+							["coords"] = {
+								{ 53.0, 79.0, GORGROND }, -- Egg Location
+								{ 51.4, 77.6, GORGROND }, -- Cave Entrance
+							},
 							["g"] = {
 								currency(824),	-- Garrison Resources
 							},
@@ -3088,9 +3091,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(236169, {	-- Harvestable Precious Crystal
-						["description"] = "Inside Glut's burrow. Entrance at 44.50, 50.75.",
+						["description"] = "Inside Glut's burrow.",
 						["questID"] = 36651,
-						["coord"] = { 46.1, 50.0, GORGROND },
+						["coords"] = {
+							{ 46.1, 50.0, GORGROND },  -- Crystal
+							{ 44.5, 50.75, GORGROND }, -- Glut's Burrow Entrance
+						},
 						["g"] = {
 							currency(824),	-- Garrison Resources
 						},
@@ -3171,9 +3177,12 @@ root(ROOTS.Zones, {
 						["sym"] = COMMON_TREASURE_SYM,
 					}),
 					o(231069, {	-- Strange Looking Dagger
-						["description"] = "Inside The Forgotten Caves with Pale and Spiders. Entrance at 51.40, 77.60.",
+						["description"] = "Inside The Forgotten Caves with Pale and Spiders.",
 						["questID"] = 34940,
-						["coord"] = { 53.0, 80.0, GORGROND },
+						["coords"] = {
+							{ 53.0, 80.0, GORGROND }, -- Dagger Location
+							{ 51.4, 77.6, GORGROND }, -- Cave Entrance
+						},
 						["g"] = {
 							i(118718),	-- Pale Bloodthief Dagger
 						},
