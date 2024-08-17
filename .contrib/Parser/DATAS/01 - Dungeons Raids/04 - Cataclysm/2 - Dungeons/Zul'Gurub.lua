@@ -831,9 +831,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							i(69636), -- Thekal's Claws
 						}),
 						n(52269, {	-- Renataki
-							i(69638, { -- Arlokk's Claws
-								["f"] = FIST_WEAPONS,
-							}),
+							i(69638), -- Arlokk's Claws
 							i(69639), -- Renataki's Soul Slicer
 						}),
 						n(52286, {	-- Wushoolay
@@ -876,9 +874,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(69625), 	-- Mandokir's Tribute
 						i(69629), 	-- Shield of the Blood God
 						i(69622), 	-- The Hexxer's Mask
-						i(69620, {	-- Twinblade of the Hakkari
-							["f"] = DAGGERS,
-						}),
+						i(69620),	-- Twinblade of the Hakkari
 						i(69621), 	-- Twinblade of the Hakkari
 						i(69623), 	-- Vestments of the Soulflayer
 						i(69627), 	-- Zulian Ward

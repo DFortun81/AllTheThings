@@ -20,6 +20,7 @@
 -- #IMPORT: 00 - Item DB\\BindOnAccountItems.lua
 -- #IMPORT: 00 - Item DB\\Blueprints.lua
 -- #IMPORT: 00 - Item DB\\CharacterItemDB.lua
+-- #IMPORT: 00 - Item DB\\Classic Item Filter Overrides.lua
 -- #IMPORT: 00 - Item DB\\Conduits.lua
 -- #IMPORT: 00 - Item DB\\Garrison Buildings.lua
 -- #IMPORT: 00 - Item DB\\Grand Commendations.lua
