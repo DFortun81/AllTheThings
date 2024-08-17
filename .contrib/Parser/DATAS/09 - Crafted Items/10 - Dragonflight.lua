@@ -1067,9 +1067,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(199962),	-- Enchant Tool - Draconic Finesse+
 			i(200004),	-- Enchant Tool - Draconic Finesse++
 			i(200046),	-- Enchant Tool - Draconic Finesse+++
-			i(199963),	-- Enchant Tool - Draconic Inspiration+
-			i(200005),	-- Enchant Tool - Draconic Inspiration++
-			i(200047),	-- Enchant Tool - Draconic Inspiration+++
+			i(199963),	-- Enchant Tool - Draconic Ingenuity+
+			i(200005),	-- Enchant Tool - Draconic Ingenuity++
+			i(200047),	-- Enchant Tool - Draconic Ingenuity+++
 			i(199964),	-- Enchant Tool - Draconic Perception+
 			i(200006),	-- Enchant Tool - Draconic Perception++
 			i(200048),	-- Enchant Tool - Draconic Perception+++
@@ -2035,9 +2035,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(194576),	-- Draconic Missive of the Harmonious+
 			i(194577),	-- Draconic Missive of the Harmonious++
 			i(194575),	-- Draconic Missive of the Harmonious+++
-			i(198534),	-- Draconic Missive of Inspiration+
-			i(198535),	-- Draconic Missive of Inspiration++
-			i(198536),	-- Draconic Missive of Inspiration+++
+			i(198534),	-- Draconic Missive of Ingenuity+
+			i(198535),	-- Draconic Missive of Ingenuity++
+			i(198536),	-- Draconic Missive of Ingenuity+++
 			i(200568),	-- Draconic Missive of Multicraft+
 			i(200569),	-- Draconic Missive of Multicraft++
 			i(200570),	-- Draconic Missive of Multicraft+++

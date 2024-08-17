@@ -299,13 +299,6 @@ root(ROOTS.Unsorted, {
 				i(225671),	-- Stack of Pentagold Reviews
 				i(225672),	-- Unraveled Instructions
 				i(225673),	-- Artisan's Consortium Seal of Approval
-				i(198534),	-- Draconic Missive of Ingenuity
-				i(198535),	-- Draconic Missive of Ingenuity
-				i(198536),	-- Draconic Missive of Ingenuity
-				i(199963),	-- Enchant Tool - Draconic Ingenuity
-				i(200005),	-- Enchant Tool - Draconic Ingenuity
-				i(200047),	-- Enchant Tool - Draconic Ingenuity
-				i(200599),	-- Technique: Draconic Missive of Ingenuity
 				i(228224),	-- Spark of Legacies
 				i(228339),	-- Soul Sigil II
 				i(228368),	-- Relic of the Past VI
@@ -1259,7 +1252,6 @@ root(ROOTS.Unsorted, {
 				i(225661),	-- Burning Binding
 				i(225668),	-- Unstable Power Suit Core
 				i(225891),	-- Vile Vial of Kaheti Bile
-				i(216696),	-- Hidden Pants
 				i(226134),	-- Mourning Baron's Shoulderpads
 				i(226137),	-- Inquisitive Sister's Cinch
 				i(226138),	-- Vow-Taker's Boots

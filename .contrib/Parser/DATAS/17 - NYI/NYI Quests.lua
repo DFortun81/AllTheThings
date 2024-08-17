@@ -182,7 +182,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(8489, { ["name"] = "An Intact Converter", }),
 			q(8478, { ["name"] = "Choose Your Weapon", }),
 			q(8230, { ["name"] = "Collin's Test Quest", }),
-			q(934, { ["name"] = "Crown of the Earth", }),
 			q(6843, { ["name"] = "Da Foo", }),
 			q(7906, { ["name"] = "Darkmoon Cards - Beast", }),
 			q(5674, { ["name"] = "Elune's Grace", }),
@@ -1772,7 +1771,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(39362, { ["name"] = "Equipment Blueprint: Q-43 Noisemaker Mines", }),	-- Equipment Blueprint: Q-43 Noisemaker Mines
 			q(39361, { ["name"] = "Equipment Blueprint: Sonic Amplification Field", }),	-- Equipment Blueprint: Sonic Amplification Field
 			q(39461, { ["name"] = "NOT USED", }),	-- NOT USED
-			q(39497, { ["name"] = "Ogre Waygate", }),	-- Ogre Waygate
 			q(39002, { ["name"] = "Ogres of the Deep", }),	-- Ogres of the Deep
 			q(38214, { ["name"] = "REUSE", }),	-- REUSE
 			q(38222, { ["name"] = "REUSE", }),	-- REUSE
@@ -2831,7 +2829,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		-- 7.2.0
 		expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
 			q(45022, { ["name"] = "3+ Targets Chosen", }),	-- 3+ Targets Chosen
-			q(46955, { ["name"] = "Akazamzarak Silenced", }),	-- Akazamzarak Silenced
 			q(45054, { ["name"] = "Ancient Elven War Orders", }),	-- Ancient Elven War Orders
 			q(44854, { ["name"] = "AoE Chosen", }),	-- AoE Chosen
 			q(46040, { ["name"] = "Battlegear of Iron Wrath", }),	-- Battlegear of Iron Wrath
@@ -2924,7 +2921,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(47178, { ["name"] = "Tier 2 Mob Daily Bonus", }),	-- Tier 2 Mob Daily Bonus
 			q(47179, { ["name"] = "Tier 3 Mob Weekly Bonus", }),	-- Tier 3 Mob Weekly Bonus
 			q(46753, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(47215, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
 			q(45332, { ["name"] = "Tracking Quest - Zirux", }),	-- Tracking Quest - Zirux
 			q(45095, { ["name"] = "Treasure 001 - Crashed Horde Ship", }),	-- Treasure 001 - Crashed Horde Ship
 			q(45096, { ["name"] = "Treasure 002 - Fel Cave", }),	-- Treasure 002 - Fel Cave
@@ -4883,11 +4879,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(54957, {
 				["description"] = "Area: |cFFf09f26Trueshot Lodge|r",
 				["lvl"] = 50,
-			}),
-			q(55023, {
-				["description"] = "Category: |cFFf09f26Brawler's Guild|r",
-				["lvl"] = 60,
-				["races"] = ALLIANCE_ONLY,
 			}),
 			q(55667, {
 				["lvl"] = 50,

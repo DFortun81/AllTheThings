@@ -428,6 +428,7 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 		i(127103),	-- Gladiator's Plate Shoulders
 
 		-- Other
+		i(57529),	-- Fur-Lined Slippers
 		i(57533),	-- Dwarven Iron Bracer
 		i(113710),	-- Ravaged Leather Leggings
 		i(131203),	-- Chain Link Winter Bracers
@@ -456,11 +457,10 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 		i(91498),	-- Malevolent Gladiator's Heavy Crossbow
 		i(91496),	-- Malevolent Gladiator's Touch of Defeat
 		i(91755),	-- Malevolent Gladiator's Baton of Light
-		i(169725),	-- Notorious Gladiator's Bonegrinder (A)
-		i(169724),	-- Notorious Gladiator's Bonegrinder (H)
 	})),
 	n(QUESTS, {	-- These are/were completable
-		-- 4.0.3
+		-- 1.x.x
+		q(934),	-- Crown of the Earth
 		-- 5.0.1
 		q(30549),	-- [DNT] Rearm, Reuse, Recycle TRACKER
 		q(30982),	-- Animal Control
@@ -474,6 +474,11 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 		}),
 		-- 6.1.0
 		q(37805),	-- Goblin Looted
+		-- 6.2.0
+		q(39497),	-- Ogre Waygate
+		-- 7.2.0
+		q(46955),	-- Akazamzarak Silenced
+		q(47215),	-- Tracking Quest
 		-- 7.3.0
 		q(48546),	-- Tracking Quest
 		q(49006),	--
@@ -512,6 +517,11 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 		q(54446),	--
 		q(54860),	--
 		-- 8.1.5
+		q(55023, {	-- Bizmo's Brawlpub Awaits!
+			["description"] = "Category: |cFFf09f26Brawler's Guild|r",
+			["lvl"] = 60,
+			["races"] = ALLIANCE_ONLY,
+		}),
 		q(55238),	--
 		-- 8.2.0
 		q(55660, { ["name"] = "Time Trials", ["_drop"] = { "g" }, }),	-- Time Trials (Tournament Realm Quest)

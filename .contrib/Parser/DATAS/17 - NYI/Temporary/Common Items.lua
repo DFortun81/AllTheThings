@@ -307,9 +307,6 @@ root(ROOTS.NeverImplemented, {
 						i(49509),	-- Goblin Apprentice's Belt
 						i(49513),	-- Goblin Neophyte's Belt
 					}),
-					n(FEET, {
-						i(57529),	-- Fur-Lined Slippers
-					}),
 				}),
 				filter(LEATHER, {
 					n(SHOULDER, {

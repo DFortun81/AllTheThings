@@ -1141,8 +1141,6 @@ root(ROOTS.NeverImplemented, {
 			n(SEASON_NOTORIOUS, {
 				i(167522),	-- Notorious Aspirant's Shield Wall (A)
 				i(167521),	-- Notorious Aspirant's Shield Wall (H)
-				--i(169725),	-- Notorious Gladiator's Bonegrinder (A)	-- in NYI Sourceless
-				--i(169724),	-- Notorious Gladiator's Bonegrinder (H)	-- in NYI Sourceless
 			}),
 			n(WAR_EFFORT, {
 				n(WEAPONS, {

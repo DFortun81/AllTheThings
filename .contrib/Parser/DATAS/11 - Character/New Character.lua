@@ -1639,6 +1639,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		i(134111, {["timeline"] = {ADDED_7_0_3}}),	-- Hidden Cloak
 		i(158329, {["timeline"] = {ADDED_8_0_1}}),	-- Hidden Gloves
 		i(134110, {["timeline"] = {ADDED_7_0_3}}),	-- Hidden Helm
+		i(216696, {["timeline"] = {ADDED_11_0_0}}),	-- Hidden Pants
 		i(142503, {["timeline"] = {ADDED_7_1_0}}),	-- Hidden Shirt
 		i(134112, {["timeline"] = {ADDED_7_0_3}}),	-- Hidden Shoulder
 		i(142504, {["timeline"] = {ADDED_7_1_0}}),	-- Hidden Tabard

@@ -1454,7 +1454,7 @@ i(198941, 383590);	-- Contract: Valdrakken Accord
 i(200602, 390850);	-- Draconic Missive of Crafting Speed
 i(200605, 390853);	-- Draconic Missive of Deftness
 i(200603, 390851);	-- Draconic Missive of Finesse
-i(200599, 390847);	-- Draconic Missive of Inspiration
+i(200599, 390847);	-- Draconic Missive of Ingenuity
 i(200601, 390849);	-- Draconic Missive of Multicraft
 i(200604, 390852);	-- Draconic Missive of Perception
 i(200600, 390848);	-- Draconic Missive of Resourcefulness
