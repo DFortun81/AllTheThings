@@ -1194,18 +1194,9 @@ namespace ATT
 
             public static void MarkItemAsReferenced(IDictionary<string, object> data)
             {
-                // Mark this item as having a reference since it exists in a processed container
-                if (data.TryGetValue("itemID", out decimal itemID))
-                {
-                    MarkItemAsReferenced(itemID);
-                    MarkItemAsReferenced((long)itemID);
-
-                    // ensure marking the 'modItemID' as well (maybe someday that will be directly supported in itemID)
-                    if (data.TryGetValue("_modItemID", out itemID))
-                    {
-                        MarkItemAsReferenced(itemID);
-                    }
-                }
+                decimal itemID = GetSpecificItemID(data);
+                MarkItemAsReferenced(itemID);
+                MarkItemAsReferenced((long)itemID);
             }
 
             /// <summary>
