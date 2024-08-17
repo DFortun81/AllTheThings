@@ -18,6 +18,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72279, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
@@ -65,6 +66,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72385, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
@@ -82,6 +84,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72386, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
@@ -102,6 +105,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 72387 },	-- Dragon Isles Supplies [Renown 6]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
@@ -120,6 +124,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72387, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
@@ -140,6 +145,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72388, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
@@ -151,6 +157,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 72390 },	-- Dragon Isles Supplies [Renown 9]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
@@ -168,6 +175,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72390, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
@@ -176,6 +184,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72391, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
@@ -293,6 +302,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- #IF BEFORE 10.2.7
 						["lockCriteria"] = { 1, "questID", 72393 },	-- Dragon Isles Supplies [Renown 12]
 						["DisablePartySync"] = true,
+						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
 						-- #ENDIF
 						["g"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
@@ -309,6 +319,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72393 , {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
@@ -326,6 +337,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72394 , {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198866),	-- Small Iskaaran Supply Pack
 						},
@@ -388,6 +400,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72280, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
@@ -406,6 +419,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72395, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
@@ -424,6 +438,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 						["lockCriteria"] = { 1, "questID", 70967 },	-- Fishy Entertainment [Renown 17]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
@@ -438,6 +453,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							"questID", 72634,	-- Dragon Isles Supplies [Renown 19]
 						},
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
@@ -462,6 +478,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 13.1, 49.3, THE_AZURE_SPAN },
 						["altQuests"] = { 70956 },	-- Of Azure Scales [Renown 19]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
@@ -473,6 +490,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 70968 },	-- Of the Cloth, of the Community [Renown 21]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
@@ -491,6 +509,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 70964 },	-- Shrug it On! [Renown 22]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
@@ -508,6 +527,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72637, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
@@ -571,6 +591,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72638, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
@@ -587,6 +608,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72639, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198867),	-- Large Iskaaran Supply Pack
 						},
@@ -603,6 +625,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72281, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(199473),	-- Overflowing Iskaaran Supply Pack
 						},
@@ -611,6 +634,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72640, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(199473),	-- Overflowing Iskaaran Supply Pack
 						},
@@ -629,6 +653,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72641, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(199473),	-- Overflowing Iskaaran Supply Pack
 						},
@@ -649,6 +674,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72642, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 193006 },	-- Murik
 						["coord"] = { 13.1, 49.1, THE_AZURE_SPAN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(199473),	-- Overflowing Iskaaran Supply Pack
 						},
