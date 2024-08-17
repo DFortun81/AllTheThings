@@ -460,19 +460,22 @@ end
 function ATTcheckawquests()
 
 	local isaw = C_QuestLog.IsAccountQuest
-	local aw, max = {}, 85000
+	local dc = app.CallbackHandlers.DelayedCallback
+	local aw, cur, step = {}, 1, 250
+	local lim = step
 	AllTheThingsHarvestItems.AccountWideQuestsDB = aw
 	local awdb = app.AccountWideQuestsDB
 	local function scan()
-		for i=1,max,1 do
-			if isaw(i) and not awdb[i] then
+		for i=cur,lim do
+			if not awdb[i] and isaw(i) then
 				aw[i] = true
 			end
-			if i % 100 == 0 then
-				coroutine.yield()
-			end
 		end
+		app.PrintDebug("scanned thru",lim)
+		cur = lim + 1
+		lim = lim + step
+		if lim > 86000 then return end
+		dc(scan, 1)
 	end
-	app.StartCoroutine(scan)
-	app.PrintDebug("done scanning AW quests thru",max)
+	scan()
 end
