@@ -229,8 +229,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 				["providers"] = {
 					{ "o", 180901 },	-- Bloodsail Wreckage
 					{ "o", 216761 },	-- Mixed Ocean School
-					--{ "o", 216764 },	-- Sagefish School 		Ere - no longer ingame???
-					{ "o", 180663 },	-- Sagefish School
+					{ "o", 216764 },	-- Sagefish School
 				},
 				["g"] = {
 					i(19803),	-- Brownell's Blue Striped Racer
