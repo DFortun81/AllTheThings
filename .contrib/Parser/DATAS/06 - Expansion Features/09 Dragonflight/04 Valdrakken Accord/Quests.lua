@@ -21,6 +21,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72282, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
@@ -70,6 +71,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72669, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
@@ -78,6 +80,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70882, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
 						["g"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
@@ -91,6 +94,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72671, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
@@ -117,6 +121,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72672, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
@@ -130,6 +135,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72673, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
@@ -138,6 +144,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(70885, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
 						["g"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
@@ -164,6 +171,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72682, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
@@ -183,6 +191,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72685, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
@@ -194,6 +203,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["DisablePartySync"] = true,
 						 -- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 72688 },	-- Renown Supplies [Renown 12]
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
@@ -475,6 +485,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72688, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
 						["g"] = {
 							i(198868),	-- Small Valdrakken Accord Supply Pack
 						},
@@ -494,6 +505,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72694, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
@@ -550,6 +562,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72690, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
 						["g"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
@@ -574,6 +587,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72283, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
@@ -598,6 +612,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72691, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
@@ -614,6 +629,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72692, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
@@ -785,6 +801,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72693, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
 						["g"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
@@ -804,6 +821,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72689, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
@@ -824,6 +842,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72695, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
@@ -852,6 +871,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72696, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
@@ -911,6 +931,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						 -- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 72698 },	-- Renown Supplies [Renown 25]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
@@ -933,6 +954,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72698, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198869),	-- Large Valdrakken Accord Supply Pack
 						},
@@ -966,6 +988,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72284, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 						},
@@ -985,6 +1008,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72701, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 						},
@@ -1011,6 +1035,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72702, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 						},
@@ -1042,6 +1067,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72703, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 						},
@@ -1059,6 +1085,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72704, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(199475),	-- Overflowing Valdrakken Accord Supply Pack
 						},
