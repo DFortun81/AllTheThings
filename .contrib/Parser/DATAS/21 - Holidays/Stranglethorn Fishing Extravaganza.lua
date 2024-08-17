@@ -223,6 +223,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 			}),
 		}),
 		prof(FISHING, {
+			-- #if AFTER 5.1.0
+			n(SPECIAL, {
+				["description"] = "Tastyfish and the other special event fish can be fished up from any pool within Stranglethorn for two hours once the event has started, even if winners have been found.",
+				["providers"] = {
+					{ "o", 180901 },	-- Bloodsail Wreckage
+					{ "o", 216761 },	-- Mixed Ocean School
+					--{ "o", 216764 },	-- Sagefish School 		Ere - no longer ingame???
+					{ "o", 180663 },	-- Sagefish School
+				},
+				["g"] = {
+					i(19803),	-- Brownell's Blue Striped Racer
+					i(19806),	-- Dezian Queenfish
+					i(19805),	-- Keefer's Angelfish
+					i(19808),	-- Rockhide Strongfish
+					i(19807),	-- Speckled Tastyfish
+				}
+			}),
+			-- #else
 			o(180248, {	-- School of Tastyfish
 				i(19803),	-- Brownell's Blue Striped Racer
 				i(19806),	-- Dezian Queenfish
@@ -230,6 +248,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 				i(19808),	-- Rockhide Strongfish
 				i(19807),	-- Speckled Tastyfish
 			}),
+			-- #endif
 		}),
 	},
 })));
