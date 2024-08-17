@@ -5000,7 +5000,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(62264),	-- Grunts Chain Leggings
 						i(62265),	-- Grunts Chain Vest
 						i(62253),	-- Grunts Plate Armor
-						i(62255),	-- Grunts Plate Belt
+						i(62254),	-- Grunts Plate Belt
 						i(62255),	-- Grunts Plate Boots
 						i(62256),	-- Grunts Plate Bracers
 						i(62257),	-- Grunts Plate Gloves
