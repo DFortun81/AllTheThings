@@ -17,6 +17,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 72117 },	-- Cultural Exchange [Renown 3]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(189765),	-- Maruuk Centaur Supply Satchel
 						},
@@ -87,6 +88,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["lockCriteria"] = { 1, "questID", 71229 },	-- Call of the Plains [Renown 4]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(189765),	-- Maruuk Centaur Supply Satchel
 						},
@@ -111,6 +113,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["lockCriteria"] = { 1, "questID", 71231 },	-- Call of the Hunt [Renown 5]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(189765),	-- Maruuk Centaur Supply Satchel
 						},
@@ -161,6 +164,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 71066 },	-- A Useful Curiosity [Renown 10]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(189765),	-- Maruuk Centaur Supply Satchel
 						},
@@ -176,6 +180,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 71066 },	-- A Useful Curiosity [Renown 10]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(189765),	-- Maruuk Centaur Supply Satchel
 						},
@@ -191,6 +196,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 71066 },	-- A Useful Curiosity [Renown 10]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(189765),	-- Maruuk Centaur Supply Satchel
 						},
@@ -218,6 +224,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 71073 },	-- Mantle of Friendship [Renown 13]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(189765),	-- Maruuk Centaur Supply Satchel
 						},
@@ -249,6 +256,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["lockCriteria"] = { 1, "questID", 71074 },	-- Befriending Wings and Wind [Renown 14]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(189765),	-- Maruuk Centaur Supply Satchel
 						},
@@ -320,6 +328,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 71079 },	-- Getting to the Point [Renown 17]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198864),	-- Large Maruuk Centaur Supply Satchel
 						},
@@ -339,6 +348,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 71083 },	-- An Expected Unexpected Gift [Renown 19]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198864),	-- Large Maruuk Centaur Supply Satchel
 						},
@@ -367,6 +377,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 71085 },	-- Representation Matters [Renown 21]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198864),	-- Large Maruuk Centaur Supply Satchel
 						},
@@ -393,6 +404,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 71089 },	-- Get on the Horn [Renown 23]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198864),	-- Large Maruuk Centaur Supply Satchel
 						},
