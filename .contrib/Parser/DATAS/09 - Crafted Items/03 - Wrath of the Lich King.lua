@@ -517,7 +517,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(42550),	-- Weakness Spectralizers
 		}),
 		filter(MISC, {
-			i(40893),	-- Bladed Pickaxe
+			i(40893, {	-- Bladed Pickaxe
+				-- #if AFTER 10.0
+				["description"] = "This item was made redundant with Dragonflight and cannot be equipped as a profession tool. Thus its gathering skill bonus is no longer recognised and have no uses but leveling up Northrend Engineering.",
+				-- #endif
+			}),
 			i(44951, {	-- Box of Bombs
 				i(41119),	-- Saronite Bomb
 			}),
@@ -525,7 +529,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			i(40536),	-- Explosive Decoy
 			i(40772),	-- Gnomish Army Knife
 			i(47828, {["timeline"] = {ADDED_3_2_0}}),	-- Goblin Beam Welder
-			i(40892),	-- Hammer Pick
+			i(40892, {	-- Hammer Pick
+				-- #if AFTER 10.0
+				["description"] = "This item was made redundant with Dragonflight and cannot be equipped as a profession tool, despite being recognised as a blacksmith hammer. Its mining skill bonus is no longer recognised.",
+				-- #endif
+			}),
 			i(37567),	-- Healing Injector Kit
 			-- #if NOT ANYCLASSIC
 			i(49040, {	-- Jeeves
