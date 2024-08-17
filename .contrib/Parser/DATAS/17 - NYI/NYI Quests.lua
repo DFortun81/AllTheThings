@@ -8335,6 +8335,8 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(72906),	-- [DNT] Storm Pet Battle
 			q(74955, { ["_drop"] = { "g" }, }),	-- An Egg-centric Discovery
 			q(75065),	-- Campaign Testing - Dummy Quest
+			q(73696),	-- Dragonscale Expedition Flag - Flag at 24.4, 55.6, THE_FORBIDDEN_REACH
+			q(73702),	-- Dragonscale Expedition Flag - Flag at 80.5, 48.1, THE_FORBIDDEN_REACH
 			q(74363),	-- Ensemble: Cloudburst Regalia
 			q(74365),	-- Ensemble: Cyclonic Battlegear
 			q(74364),	-- Ensemble: Dust Devil Armor

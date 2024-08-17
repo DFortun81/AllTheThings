@@ -146,10 +146,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					["coord"] = { 36.9, 37.9, THE_FORBIDDEN_REACH },
 					["timeline"] = ADDED_10_0_7,
 				}),
-
-				-- PTR only? NYI probably
-				qNYI(73696),	-- Flag at 24.4, 55.6, THE_FORBIDDEN_REACH
-				qNYI(73702),	-- Flag at 80.5, 48.1, THE_FORBIDDEN_REACH
 			}),
 		})),
 	}),

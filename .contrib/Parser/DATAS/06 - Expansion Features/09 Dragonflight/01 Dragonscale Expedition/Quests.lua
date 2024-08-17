@@ -127,6 +127,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72023, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
@@ -193,6 +194,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72024, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
@@ -212,6 +214,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72025, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
@@ -232,6 +235,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72026, {	-- Dragonscale Expedition Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
@@ -240,6 +244,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72032, {	-- Dragonscale Expedition Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
@@ -257,6 +262,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72033, {	-- Dragonscale Expedition Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
@@ -265,6 +271,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72034, {	-- Dragonscale Expedition Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
@@ -301,6 +308,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 72037 },	-- Dragon Isles Supplies [Renown 11]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
@@ -312,6 +320,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 72037 },	-- Dragon Isles Supplies [Renown 11]
 						["DisablePartySync"] = true,
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
@@ -328,6 +337,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72037, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
@@ -437,6 +447,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72038, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
 						["g"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
@@ -503,6 +514,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72039, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198863),	-- Small Dragon Expedition Supply Pack
 						},
@@ -529,6 +541,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72040, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
@@ -544,6 +557,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72041, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
@@ -561,6 +575,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72042, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
@@ -581,6 +596,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72044, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
@@ -596,6 +612,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72045, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
@@ -611,6 +628,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72046, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
@@ -635,6 +653,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72047, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
@@ -691,6 +710,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72043, {	-- Dragon Isles Supplies [Might be Renown 18?]
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
@@ -762,6 +782,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72048, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						--["timeline"] = { REMOVED_11_0_0 },	-- This one was not removed probably
 						["g"] = {
 							i(198865),	-- Large Dragon Expedition Supply Pack
 						},
@@ -791,6 +812,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72049, {	-- Dragon Isles Supplies
 						["provider"] = { "n", 189226 },	-- Cataloger Jakes
 						["coord"] = { 47.1, 82.6, THE_WAKING_SHORES },
+						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
 							i(199472),	-- Overflowing Dragon Expedition Supply Pack
 						},
