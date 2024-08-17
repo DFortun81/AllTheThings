@@ -3474,9 +3474,6 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(40118),	-- Harbinger of the Gilded (TODO: Fix Icon)
 			ach(40145),	-- So Much Sharing
 
-			-- 11.0.0.54361
-			ach(40305),	-- Allied Races: Earthen (Hidden Character Achievement)
-
 			-- 11.0.0.54774
 			ach(40543),	-- <DNT> Patient 1 - Mereldar Infirmary
 			ach(40544),	-- <DNT> Patient 2 - Mereldar Infirmary
@@ -3539,7 +3536,6 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(40747),	-- Zekvir's Lair clears
 			ach(40748),	-- Total deaths in delves
 			ach(40749),	-- Restored Coffer Keys obtained
-			ach(40750),	-- Treasure Trove Keys obtained
 			ach(40751),	-- The War Within delve completed the most
 			ach(40757),	-- The War Within total delves completed
 			ach(40758),	-- The War Within companion levels obtained

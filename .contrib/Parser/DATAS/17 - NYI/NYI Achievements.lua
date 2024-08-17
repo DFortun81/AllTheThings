@@ -654,8 +654,15 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(40510),	-- One Ping Only
 			ach(40511),	-- Rare Within
 
+			-- 11.0.0.54361
+			ach(40305),	-- Allied Races: Earthen (Hidden Character Achievement)
+
+			-- 11.0.0.55000
+			ach(40750),	-- Treasure Trove Keys obtained
+
 			--11.0.0.54675
 			ach(40509),	-- Awakening The Machine: Wave 10
+
 			--11.0.0.54774
 			ach(40586),	-- Awakening The Machine: Wave 20
 			ach(40587),	-- Awakening The Machine: Wave 30
