@@ -308,7 +308,6 @@ root(ROOTS.Zones, {
 						}),
 						crit(23976, {	-- Cranegnasher
 							["_quests"] = { 32967 },
-							["_noautomation"] = true,	-- blizz dat aputs this for NPC 73854 which must be fake...
 						}),
 						crit(23977, {	-- Rattleskew
 							["_npcs"] = { 72048 },
@@ -1557,7 +1556,8 @@ root(ROOTS.Zones, {
 							i(104261),	-- Glowing Blue Ash
 						},
 					}),
-					n(72049,  {	-- Cranegnasher
+					-- INFO: Old ID was possibly 72049, but since 7.3.5 (as far back as Wago.tools goes) it has always been 73854. Can't really timeline when we don't know when the change look place.
+					n(73854,  {	-- Cranegnasher
 						["description"] = "Locate the bloodied red crane corpse, Fishgorged Crane at ~44, 70. If it's not present, then the rare can't be spawned yet.\n\nIf the corpse is there, head south and aggro one of the Fishgorged Cranes by the ocean at ~45, 84. Kite it back to the corpse, and Cranegnasher should appear and attack!",
 						["questID"] = 32967,
 						["isDaily"] = true,
