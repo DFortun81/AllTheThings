@@ -1852,6 +1852,7 @@ i(217167);	-- Crusty Chalice
 i(220301);	-- Crystallized Honey
 i(220255);	-- Darkened Residue
 i(225813);	-- Darkened Ritual Stone
+i(224464);	-- Demonic Healthstone
 i(220280);	-- Dense Five-Pound Stone
 i(225795);	-- Dented Pocketwatch
 i(228452);	-- Deepest, Darkest Black Ink

@@ -1399,7 +1399,6 @@ root(ROOTS.Unsorted, {
 				i(224273),	-- Wooden Figure
 				i(224274),	-- Sturdy Locket
 				i(224292),	-- Radiant Fuel Shard
-				i(224464),	-- Demonic Healthstone
 				i(224767),	-- Giant Candle Parts
 				i(224786),	-- Skeleton King Outfit
 				i(224791),	-- Golden Lord Outfit \\ Golden Ruler Outfit
