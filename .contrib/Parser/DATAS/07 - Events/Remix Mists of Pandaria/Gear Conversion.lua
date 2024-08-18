@@ -1,11 +1,11 @@
 -------------------------------------------
 --    C H A R A C T E R   M O D U L E    --
 -------------------------------------------
-GEAR_UPDATE = createHeader({
-	readable = "Gear Update",
+GEAR_CONVERSION = createHeader({
+	readable = "Gear Conversion",
 	icon = "Interface\\Icons\\ability_bossmagistrix_timewarp1",
 	text = {
-		en = "Gear Update",
+		en = "Gear Conversion",
 	},
 });
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
@@ -187,8 +187,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(153779),	-- Springrain Idol of Wisdom
 				i(153782),	-- Springrain Stone of Wisdom
 			}),
-		}),
-		--[[	TODO
+		}),	TODO
 		cl(EVOKER, {
 			cl(EVOKER, AUGMENTATION, {
 
@@ -200,7 +199,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 
 			}),
 		}),
-		]]--
 		cl(HUNTER, {
 			i(205877, {	-- Adventurer's Footlocker
 				i(170638),	-- Trailseeker Shotgun
