@@ -1398,6 +1398,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(50883, {	-- Pathrunner
+						["description"] = "Pathrunner has a respawn timer between 5-16 hours. Mount drop rate is 100% for all participants.",
 						["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
 							{ 45.8, 68.2, DRAENOR_SHADOWMOON_VALLEY },
 							{ 56.8, 52.2, DRAENOR_SHADOWMOON_VALLEY },

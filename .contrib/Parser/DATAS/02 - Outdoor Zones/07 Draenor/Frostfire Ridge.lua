@@ -1448,9 +1448,13 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(50992, {	-- Gorok
+						["description"] = "Gorok has a respawn timer between 5-16 hours. Mount drop rate is 100% for all participants.",
 						["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
 							{ 64.6, 52.0, FROSTFIRE_RIDGE },
 							{ 63.4, 79.6, FROSTFIRE_RIDGE },
+							{ 58.4, 19.2, FROSTFIRE_RIDGE },
+							{ 52.2, 50.4, FROSTFIRE_RIDGE },
+							{ 23.1, 65.6, FROSTFIRE_RIDGE },
 						},
 						["g"] = {
 							i(116674),	-- Great Greytusk (MOUNT!)

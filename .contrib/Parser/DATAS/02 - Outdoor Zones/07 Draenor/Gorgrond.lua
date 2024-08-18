@@ -2606,6 +2606,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(50985, {	-- Poundfist
+						["description"] = "Poundfist has a respawn timer between 48-142 hours. Mount drop rate is 100% for all participants.",
 						["coords"] = {
 							{ 42.0, 25.0, GORGROND },
 							{ 51.4, 43.1, GORGROND },
