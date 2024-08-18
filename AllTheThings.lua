@@ -52,7 +52,6 @@ local GetTimePreciseSec = GetTimePreciseSec
 
 -- WoW API Cache
 local GetFactionName = app.WOWAPI.GetFactionName;
-local GetFactionBonusReputation = app.WOWAPI.GetFactionBonusReputation;
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemID = app.WOWAPI.GetItemID;
 local GetItemIcon = app.WOWAPI.GetItemIcon;
@@ -3315,8 +3314,6 @@ end	-- Search results Lib
 
 -- Auto-Expansion logic
 do
-local knownSkills;
-
 -- Determines searches required for upgrades using this group
 local function DetermineUpgradeGroups(group, FillData)
 	local nextUpgrade = group.nextUpgrade;
@@ -3634,8 +3631,6 @@ app.FillGroups = function(group)
 		SkipLevel = app.GetSkipLevel(),
 		Root = group
 	};
-	-- Get tradeskill cache
-	knownSkills = app.CurrentCharacter.Professions;
 
 	-- app.PrintDebug("FillGroups",app:SearchLink(group),group.__type,"window?",groupWindow)
 
