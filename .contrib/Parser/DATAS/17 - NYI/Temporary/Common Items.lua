@@ -319,7 +319,6 @@ root(ROOTS.NeverImplemented, {
 						i(53356),	-- Beast Tracker's Bracers
 					}),
 					n(HANDS, {
-						i(53376),	-- Lockpicker's Glovelettes
 						i(53385),	-- Rockbitten Gloves
 					}),
 					n(WAIST, {

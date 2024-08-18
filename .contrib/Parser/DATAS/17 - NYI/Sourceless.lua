@@ -428,6 +428,7 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 		i(127103),	-- Gladiator's Plate Shoulders
 
 		-- Other
+		i(53376),	-- Lockpicker's Glovelettes
 		i(57529),	-- Fur-Lined Slippers
 		i(57533),	-- Dwarven Iron Bracer
 		i(113710),	-- Ravaged Leather Leggings
@@ -439,6 +440,9 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 			["description"] = "There's been a lot of discussion about this item and whether or not it exists. If this drops for you, please provide as much information as you can about how and where you got it. It does not commonly drop like the other items in Arathi and it is suspected not to be available from the Warfront Victory or Warfront Victory Quest Crate either.\n\n - Crieve",
 			["modID"] = 5,
 		}),
+		i(179659),	-- Conservator's Silken Tunic
+		i(179660),	-- Winterborn Tunic
+		i(179775),	-- Conservator's Leather Tunic
 	})),
 	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDownSelf({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
 		i(207775),	-- Grotto Netherwing Drake: Teal Scales (DM!)
@@ -461,6 +465,8 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 	n(QUESTS, {	-- These are/were completable
 		-- 1.x.x
 		q(934),	-- Crown of the Earth
+		-- 4.x.x
+		q(26459),	-- Researching the Corruption
 		-- 5.0.1
 		q(30549),	-- [DNT] Rearm, Reuse, Recycle TRACKER
 		q(30982),	-- Animal Control
@@ -476,6 +482,10 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 		q(37805),	-- Goblin Looted
 		-- 6.2.0
 		q(39497),	-- Ogre Waygate
+		-- 7.0.3
+		q(39842),	-- One Mage's Trash
+		q(39843),	-- The Muck Stops Here
+		q(42480),	-- Assn Rogue - Flavor Event 02 (Alliance)
 		-- 7.2.0
 		q(46955),	-- Akazamzarak Silenced
 		q(47215),	-- Tracking Quest
@@ -494,6 +504,7 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 		q(49815),	--
 		q(50312),	--
 		-- 8.0.1
+		q(50554),	--
 		q(50668, {
 			["description"] = "Area: |cFFf09f26Orgrimmar|r",
 			["lvl"] = 10,
@@ -501,6 +512,7 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 		}),
 		q(50768),	--
 		q(51692),	--
+		q(53550),	-- A Change in Leadership
 		q(53650),	--
 		-- 8.1.0
 		q(53723),	--
@@ -515,6 +527,7 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 		q(54223),	--
 		q(54445),	--
 		q(54446),	--
+		q(54774),	--
 		q(54860),	--
 		-- 8.1.5
 		q(55023, {	-- Bizmo's Brawlpub Awaits!

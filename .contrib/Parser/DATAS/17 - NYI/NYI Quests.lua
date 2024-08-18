@@ -663,7 +663,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		q(28601),	-- Old Puttery
 		q(25435),	-- Pressure is Mounting
 		q(25384),	-- Raw Materials
-		q(26459),	-- Researching the Corruption
 		q(26704),	-- REUSE
 		q(28270),	-- Riding Shotgun
 		q(29572),	-- Safety is Job One
@@ -2590,7 +2589,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(40825, { ["name"] = "Arcano-Plasm", }),	-- Arcano-Plasm
 			q(40725, { ["name"] = "Arganax", }),	-- Arganax
 			q(42456, { ["name"] = "Assn Rogue - Flavor Event 01 (Horde)", }),	-- Assn Rogue - Flavor Event 01 (Horde)
-			q(42480, { ["name"] = "Assn Rogue - Flavor Event 02 (Alliance)", }),	-- Assn Rogue - Flavor Event 02 (Alliance)
 			q(42482, { ["name"] = "Assn Rogue - Flavor Event 03", }),	-- Assn Rogue - Flavor Event 03
 			q(42507, { ["name"] = "Assn Rogue - Flavor Event 04", }),	-- Assn Rogue - Flavor Event 04
 			q(43584, { ["name"] = "Battlelord of the Valarjar", }),	-- Battlelord of the Valarjar
@@ -3208,7 +3206,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(40674, { ["name"] = "Jars for Jandvik", }),	-- Jars for Jandvik
 			q(41000, { ["name"] = "King Forgalash's Burden", }),	-- King Forgalash's Burden
 			q(44200, { ["name"] = "Mathias Visit Not Active 05", }),	-- Mathias Visit Not Active 05
-			q(39842, { ["name"] = "One Mage's Trash", }),	-- One Mage's Trash
 			q(40346, { ["name"] = "Pilfered Provisions", }),	-- Pilfered Provisions
 			q(41846, { ["name"] = "Power in a Vessel", }),	-- Power in a Vessel
 			q(44482, { ["name"] = "Recruiting Ebon Knights", }),	-- Recruiting Ebon Knights
@@ -3219,7 +3216,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(42143, { ["name"] = "The Champion's Call [WIP]", }),	-- The Champion's Call [WIP]
 			q(40742, { ["name"] = "The Elusive Three", }),	-- The Elusive Three
 			q(45043, { ["name"] = "The Glowing Bloodthistle Petal", }),	-- The Glowing Bloodthistle Petal
-			q(39843, { ["name"] = "The Muck Stops Here", }),	-- The Muck Stops Here
 			q(41684, { ["name"] = "The Necrodark", }),	-- The Necrodark
 			q(48394, { ["name"] = "The Necrodark", }),	-- The Necrodark
 			q(41104, { ["name"] = "The New Jarl", }),	-- The New Jarl
@@ -3236,7 +3232,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
 		expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
-			q(53550),	-- A Change in Leadership
 			q(50882,{ ["_drop"] = { "g" },}),	-- All to Ash
 			q(52220),	-- Dragon Attack
 			q(53339),	-- LFG - BFA - Island Expedition - Heroic Win - Nth
@@ -4497,7 +4492,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(50487),	--
 			q(50523),	--
 			q(50532),	--
-			q(50554),	--
 			q(50555),	--
 			q(50556),	--
 			q(50557),	--
@@ -4833,7 +4827,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			-- 8.1.0.28202
 			q(54713),	--
 			q(54772),	--
-			q(54774),	--
 			q(54785),	--
 			-- 8.1.0.28294
 			-- 8.1.0.28366
