@@ -191,6 +191,7 @@ HeaderAssignments = {
 	["Garrison Invasions"] = -1000315,
 	["Garrisons"] = -1000092,
 	["Gathering"] = -1000281,
+	["Gear Conversion"] = -1001008,
 	["Gear Update"] = -1000363,
 	["Gladiator"] = -1000127,
 	["Gladiator Gear"] = -1000141,
@@ -509,4 +510,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001007;
+NextHeaderID = -1001009;
