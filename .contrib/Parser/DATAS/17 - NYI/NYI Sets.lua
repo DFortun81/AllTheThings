@@ -6092,22 +6092,6 @@ root(ROOTS.NeverImplemented, n(SETS, {
 				i(187658),	-- Evoker Armbands
 				i(187650),	-- Staff of Draconic Energies
 				--
-				i(194522),	-- Blue Winglord's Staff
-				i(194523),	-- Blue Winglord's Chain
-				i(194524),	-- Blue Winglord's Boots
-				i(194525),	-- Blue Winglord's Bracers
-				i(194526),	-- Blue Winglord's Hauberk
-				i(194527),	-- Blue Winglord's Grips
-				i(194528),	-- Blue Winglord's Coif
-				i(194529),	-- Blue Winglord's Greaves
-				i(194530),	-- Blue Winglord's Shoulders
-				i(194531),	-- Claw-Carved Figurine
-				i(194532),	-- Blue Winglord's Insignia
-				i(194533),	-- Blue Winglord's Ring
-				i(194534),	-- Blue Winglord's Loop
-				i(194535),	-- Cobalt Winglord's Cloak
-				i(194536),	-- Blue Winglord's Amulet
-				--
 				i(188818),	-- Emerald Winglord's Shoulderss
 				i(188825),	-- Emerald Winglord's Chain
 				i(188826),	-- Emerald Winglord's Staff
