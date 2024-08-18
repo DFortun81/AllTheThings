@@ -28,6 +28,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 	["description"] = "The Stranglethorn Fishing Extravaganza is a weekly fishing event held every Sunday in Stranglethorn Vale. There is a highly competitive fishing contest and a more casual rare fish turn-in for this event.",
 	["maps"] = {
 		-- #if AFTER CATA
+		NORTHERN_STRANGLETHORN,
 		THE_CAPE_OF_STRANGLETHORN,
 		-- #else
 		STRANGLETHORN_VALE,
