@@ -19,7 +19,7 @@ root(ROOTS.NeverImplemented, n(OBJECT, {
 			o(180657),	-- (DEPRECATED) Sparse Firefin Snapper School
 			o(180664),	-- (DEPRECATED) Sparse Oily Blackmouth School
 			o(180656),	-- Lesser Sagefish School
-			--o(180663),	-- Sagefish School (commented out because it causes conflicts with the currently existing Sagefish School)
+			o(180663),	-- Sagefish School
 			o(180750),	-- (DEPRECATED) Teeming Oily Blackmouth School
 			o(180902),	-- (DEPRECATED) Abundant Firefin Snapper School
 			o(180900),	-- (DEPRECATED) Abundant Oily Blackmouth School
