@@ -124,7 +124,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					pet(397),	-- Skunk (PET!)
 					pet(400, {	-- Widow Spiderling (PET!)
 						-- #if BEFORE 5.1.0
-						["description"] = "Spawns during the night between 6:30pm to 6:30am realm time, but can be found as a secondary pet all day long."
+						["description"] = "Spawns during the night between 6:30pm to 6:30am realm time, but can be found as a secondary pet all day long.",
 						-- #else
 						["description"] = "Spawns during the night between 6:30pm to 6:30am PST(US)/CEST(EU)/AEST(OCE), but can be found as a secondary pet all day long.",
 						-- #endif

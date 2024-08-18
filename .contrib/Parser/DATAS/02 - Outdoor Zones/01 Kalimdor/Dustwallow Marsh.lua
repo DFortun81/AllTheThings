@@ -1256,9 +1256,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 55.4, 26.2, DUSTWALLOW_MARSH },
 					["timeline"] = {
 						-- #if SEASON_OF_DISCOVERY
-						REMOVED_1_15_0
+						REMOVED_1_15_0,
 						-- #else
-						REMOVED_4_0_3
+						REMOVED_4_0_3,
 						-- #endif
 					},
 					-- #if BEFORE TBC

@@ -3547,7 +3547,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			i(12698, {	-- Plans: Dawnbringer Shoulders (RECIPE!)
 				["timeline"] = {
 					-- #if SEASON_OF_DISCOVERY
-					"added 1.15.3"
+					"added 1.15.3",
 					-- #else
 					CREATED_1_12_1, ADDED_2_0_1,
 					-- #endif
