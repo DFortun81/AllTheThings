@@ -442,6 +442,7 @@ local QUANTUM_GROUP = sharedData({
 		i(55853, {	-- Thundercall							(Removed)
 			["modID"] = 1,
 		}),
+		ig(56376),	-- Thundercall							(Removed)
 	}),
 	i(208125, {	-- Quantum Focus
 		q(77609, {	-- when you learn everything from Quantum Focus (Off-hand)

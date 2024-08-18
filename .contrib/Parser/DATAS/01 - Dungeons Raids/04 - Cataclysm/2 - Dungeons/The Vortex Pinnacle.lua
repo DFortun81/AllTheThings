@@ -222,7 +222,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							i(56374),	-- Lunar Halo
 							i(56373),	-- Ring of Frozen Rain
 							i(56371),	-- Shadow of Perfect Bliss
-							i(56376),	-- Thundercall
+							i(56376, {	-- Thundercall
+								["timeline"] = { REMOVED_7_3_5 },
+							}),
 						},
 					}),
 				},
