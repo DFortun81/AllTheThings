@@ -54,6 +54,7 @@ end
 
 local GetBestObjectIDForName;
 if app.IsRetail then
+	local InGame = app.Modules.Filter.Filters.InGame
 	GetBestObjectIDForName = function(name)
 		-- Uses a provided 'name' and scans the ObjectDB to find potentially matching ObjectID's,
 		-- then correlate those search results by closest distance to the player's current position
@@ -73,45 +74,47 @@ if app.IsRetail then
 				if searchResults and #searchResults > 0 then
 					-- app.PrintDebug("Checking results",#searchResults,objectID)
 					for j,searchResult in ipairs(searchResults) do
-						searchCoord = searchResult.coord;
-						if searchCoord then
-							if searchCoord[3] == mapID then
-								dist = distance(px, py, searchCoord[1], searchCoord[2]);
-								if dist and dist < closestDistance then
-									closestDistance = dist;
-									closestObjectID = objectID;
-								end
-							end
-						elseif searchResult.coords then
-							for k,coord in ipairs(searchResult.coords) do
-								if coord[3] == mapID then
-									dist = distance(px, py, coord[1], coord[2]);
+						if InGame(searchResult) then
+							searchCoord = searchResult.coord;
+							if searchCoord then
+								if searchCoord[3] == mapID then
+									dist = distance(px, py, searchCoord[1], searchCoord[2]);
 									if dist and dist < closestDistance then
 										closestDistance = dist;
 										closestObjectID = objectID;
 									end
 								end
-							end
-						end
-						-- if we haven't found any object by coord-distance, we can check the hierarchy for matching Location-based mapID
-						if not closestObjectID then
-							-- check the parent hierarchy for a map or maps
-							local hierarchyMapID = app.GetRelativeValue(searchResult, "mapID")
-							-- app.PrintDebug("Check hierarchy map",app:SearchLink(searchResult),hierarchyMapID)
-							if hierarchyMapID == mapID then
-								-- app.PrintDebug("Object by hierarchy map",app:SearchLink(searchResult),hierarchyMapID)
-								mappedObjectID = objectID
-							else
-								local hierarchyMaps = app.GetRelativeValue(searchResult, "maps")
-								-- app.PrintDebug("Check hierarchy maps",app:SearchLink(searchResult),hierarchyMaps and #hierarchyMaps)
-								if hierarchyMaps and app.contains(hierarchyMaps, mapID) then
-									-- app.PrintDebug("Object by hierarchy maps",app:SearchLink(searchResult),hierarchyMapID)
-									mappedObjectID = objectID
+							elseif searchResult.coords then
+								for k,coord in ipairs(searchResult.coords) do
+									if coord[3] == mapID then
+										dist = distance(px, py, coord[1], coord[2]);
+										if dist and dist < closestDistance then
+											closestDistance = dist;
+											closestObjectID = objectID;
+										end
+									end
 								end
 							end
-							-- if we also haven't found any map-based object, then this object is unmapped
-							if not mappedObjectID then
-								unmappedObjectID = objectID
+							-- if we haven't found any object by coord-distance, we can check the hierarchy for matching Location-based mapID
+							if not closestObjectID then
+								-- check the parent hierarchy for a map or maps
+								local hierarchyMapID = app.GetRelativeValue(searchResult, "mapID")
+								-- app.PrintDebug("Check hierarchy map",app:SearchLink(searchResult),hierarchyMapID)
+								if hierarchyMapID == mapID then
+									-- app.PrintDebug("Object by hierarchy map",app:SearchLink(searchResult),hierarchyMapID)
+									mappedObjectID = objectID
+								else
+									local hierarchyMaps = app.GetRelativeValue(searchResult, "maps")
+									-- app.PrintDebug("Check hierarchy maps",app:SearchLink(searchResult),hierarchyMaps and #hierarchyMaps)
+									if hierarchyMaps and app.contains(hierarchyMaps, mapID) then
+										-- app.PrintDebug("Object by hierarchy maps",app:SearchLink(searchResult),hierarchyMapID)
+										mappedObjectID = objectID
+									end
+								end
+								-- if we also haven't found any map-based object, then this object is unmapped
+								if not mappedObjectID then
+									unmappedObjectID = objectID
+								end
 							end
 						end
 					end
