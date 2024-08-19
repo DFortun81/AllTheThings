@@ -452,7 +452,6 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 	})),
 	n(WEAPONS, bubbleDownSelf({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
 		-- Quests / Rares ?
-		i(108905),	-- Jagged Turtleshell Blade
 		i(118186),	-- Frostwolf Wisdom Stick
 		i(107644),	-- Napmaster's Sleep Mask
 

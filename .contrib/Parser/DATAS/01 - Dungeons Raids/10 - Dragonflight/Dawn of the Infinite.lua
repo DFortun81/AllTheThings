@@ -506,6 +506,8 @@ local QUANTUM_GROUP = sharedData({
 		i(187542, {	-- Jaithys, the Prison Blade		(Removed)
 			["modID"] = 6, -- Mythic raid
 		}),
+		-- This item is available outside of Quantum, but nobody knows where. Maybe in WoD Classic!
+		ig(108905),	-- Jagged Turtleshell Blade				(Removed)
 		ig(134606),	-- Scorching Greatsword					(Removed)
 	}),
 	i(208120, {	-- Quantum Knife
