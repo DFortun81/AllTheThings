@@ -571,7 +571,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			i(12625, {	-- Dawnbringer Shoulders
 				["timeline"] = {
 					-- #if SEASON_OF_DISCOVERY
-					"added 1.15.3"
+					"added 1.15.3",
 					-- #else
 					CREATED_1_12_1, ADDED_2_0_1,
 					-- #endif
@@ -2393,7 +2393,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_ONE_DIREMAUL, i(18509, {	-- Chromatic Cloak
 					["timeline"] = {
 						-- #if SEASON_OF_DISCOVERY
-						"removed 1.15.3"
+						"removed 1.15.3",
 						-- #else
 						REMOVED_4_0_3,
 						ADDED_10_1_5,
@@ -2577,7 +2577,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				applyclassicphase(PHASE_ONE_DIREMAUL, i(18509, {	-- Chromatic Cloak
 					["timeline"] = {
 						-- #if SEASON_OF_DISCOVERY
-						"removed 1.15.3"
+						"removed 1.15.3",
 						-- #else
 						REMOVED_4_0_3,
 						ADDED_10_1_5,
