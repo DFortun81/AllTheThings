@@ -1,6 +1,9 @@
 ---------------------------------------------------------------
 --     N E V E R    I M P L E M E N T E D    M O D U L E     --
 ---------------------------------------------------------------
+-- #if NOT ANYCLASSIC
+-- CRIEVE NOTE: Some of these are actually in the game
+-- Sagefish School being one of them.
 OBJECT = createHeader({
     readable = "Object",
     icon = "Interface\\Icons\\inv_misc_treasurechest04a",
@@ -26,3 +29,4 @@ root(ROOTS.NeverImplemented, n(OBJECT, {
 		}),
 	}),
 }));
+-- #endif
