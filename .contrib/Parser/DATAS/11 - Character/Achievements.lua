@@ -276,13 +276,14 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 			-- #endif
 		},
 		-- #endif
-		-- #if AFTER 3.1.0
-		["timeline"] = { ADDED_3_1_0, REMOVED_4_0_3 },
-		-- #else
-		["timeline"] = { REMOVED_4_0_3 },
-		-- #endif
+		["timeline"] = {
+			-- #if AFTER 3.1.0
+			ADDED_3_1_0, REMOVED_4_0_3,
+			-- #else
+			REMOVED_4_0_3,
+			-- #endif
+		},
 		["classes"] = { PALADIN },
-		["f"] = 100,
 	}),
 	applyclassicphase(WRATH_PHASE_ONE, ach(16, {		-- Did Somebody Order a Knuckle Sandwich?
 		["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
