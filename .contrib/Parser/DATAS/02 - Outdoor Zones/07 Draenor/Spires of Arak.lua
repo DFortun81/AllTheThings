@@ -1989,7 +1989,7 @@ root(ROOTS.Zones, {
 					}),
 					o(234744, {	-- Offering to the Raven Mother
 						["questID"] = 36403,
-						["coord"] = { 53.5, 55.6, SPIRES_OF_ARAK },
+						["coord"] = { 53.31, 55.51, SPIRES_OF_ARAK },
 						["g"] = {
 							i(118267),	-- Ravenmother Offering
 						},

@@ -1973,6 +1973,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					n(50981, {	-- Luk'hok
+						["description"] = "Luk'hok has a respawn timer between 12-28 hours. Mount drop rate is 100% for all participants.",
 						["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
 							{ 84.6, 64.0, DRAENOR_NAGRAND },
 							{ 79.6, 56.6, DRAENOR_NAGRAND },
@@ -1999,6 +2000,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(50990, {	-- Nakk the Thunderer
+						["description"] = "Nakk the Thunderer has a respawn timer between 12-28 hours. Mount drop rate is 100% for all participants.",
 						["coords"] = {
 							{ 62.8, 15.8, DRAENOR_NAGRAND },
 							{ 65.0, 20.2, DRAENOR_NAGRAND },

@@ -1033,6 +1033,7 @@ root(ROOTS.Zones, {
 					}),
 					q(34400, {	-- Frenzied Manafeeders
 						["provider"] = { "n", 78534 },	-- Ageilaa
+						["description"] = "Requires you to damage creatures below 35% health in order to soothe them with Dissipation Crystal.\nIf you are higher level than the creature, in order to avoid '1-shot-kill' scenario, use Soft Foam Sword toy which 'Mortally Wounds' them to 10% of their health.\nToy can be bought from Kazbala in Talador located at 45.2, 38.8 for 50 gold pieces.",
 						["coord"] = { 49.8, 56.1, TALADOR },
 					}),
 					q(34777, {	-- Gatekeepers of Auchindoun
@@ -2108,8 +2109,8 @@ root(ROOTS.Zones, {
 					n(78872, {	-- Klikixx
 						["questID"] = 34498,
 						["coords"] = {
-							{ 61.1, 83.9, TALADOR },	-- cave
-							{ 66.8, 85.6, TALADOR },	-- klikixx
+							{ 61.1, 83.9, TALADOR },	-- Deathweb Hollow Cave Entrance
+							{ 66.8, 85.6, TALADOR },	-- Klikixx
 						},
 						["g"] = {
 							i(116125),	-- Klikixx's Webspinnner (TOY!)
@@ -2179,7 +2180,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(87668, {	-- Orumo the Observer
-						["description"] = "Requires 5 players to summon. Have one person stand on each of the runes around Orumo to make him attackable.",
+						["description"] = "Requires 5 players standing on the runes in front of Orumo to release him from the Demonic Field and make him attackable.\nUltimately, you can summon him with 5 of your own characters.\nBy placing them in front of the runes and then logging onto each of your 5 characters, you will have just enough time from the first to the last to release him.",
 						["questID"] = 37344,
 						["isDaily"] = true,
 						["coord"] = { 31.4, 47.6, TALADOR },
@@ -2271,6 +2272,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(51015, {	-- Silthide
+						["description"] = "Silthide has a respawn timer between 12-28 hours. Mount drop rate is 100% for all participants.",
 						["coords"] = {	-- **Coords unconfirmed, relied on wowhead**
 							{ 62.0, 33.2, TALADOR },
 							{ 62.6, 46.0, TALADOR },
@@ -2290,7 +2292,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					n(77634, {	-- Taladorantula
-						["description"] = "Kill small spiders around the egg sacs until you see warnings. The third warning should spawn the mob.",
+						["description"] = "Kill small spiders around the egg sacs until you see warnings. The third warning should spawn the Taladorantula.",
 						["questID"] = 34171,
 						["coord"] = { 59.0, 87.4, TALADOR },
 						["g"] = {
@@ -2384,8 +2386,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(228024, {	-- Aruuna Mining Cart
+						["description"] = "Inside Aruuna Crystal Mine.",
 						["questID"] = 34260,
-						["coord"] = { 81.8, 34.9, TALADOR },
+						["coord"] = {
+							{ 78.1, 35.6, TALADOR }, -- Aruuna Crystal Mine Entrance
+							{ 81.8, 34.9, TALADOR }, -- Aruuna Mining Cart
+						},
 						["g"] = {
 							--i(109118),	-- Blackrock Ore
 						},
@@ -2405,6 +2411,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(229354, {	-- Bright Coin
+						["description"] = "Below the bridge.",
 						["questID"] = 34471,
 						["coord"] = { 73.5, 51.4, TALADOR },
 						["g"] = {
@@ -2427,7 +2434,10 @@ root(ROOTS.Zones, {
 					}),
 					o(227996, {	-- Curious Deathweb Egg
 						["questID"] = 34239,
-						["coord"] = { 66.5, 86.9, TALADOR },
+						["coords"] = {
+							{ 61.1, 83.9, TALADOR },	-- Deathweb Hollow Cave Entrance
+							{ 66.5, 86.9, TALADOR },	-- Curious Deathweb Egg
+						},
 						["g"] = {
 							i(117569),	-- Giant Deathweb Egg (TOY!)
 						},
@@ -2460,7 +2470,10 @@ root(ROOTS.Zones, {
 					o(236483, {	-- Gift of the Ancients
 						["description"] = "Turn each statue to face the center.",
 						["questID"] = 36829,
-						["coord"] = { 28.4, 74.2, TALADOR },
+						["coord"] = {
+							{ 27.8, 75.6, TALADOR },	-- Cave Entrance
+							{ 28.4, 74.2, TALADOR },	-- Gift of the Ancients
+						},
 						["g"] = {
 							i(118686),	-- Signet Ring of Gehs'taal
 						},
@@ -2489,13 +2502,18 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(227953, {	-- Jug of Aged Ironwine
+						["description"] = "Inside the cave at the base of Orunai Delta. Guarded by Murdor the Drunk.",
 						["questID"] = 34233,
-						["coord"] = { 65.5, 11.4, TALADOR },
+						["coord"] = {
+							{ 64.8, 9.2,  TALADOR },	-- Cave Entrance
+							{ 65.5, 11.4, TALADOR },	-- Jug of Aged Ironwine
+						},
 						["g"] = {
 							i(117568),	-- Jug of Ironwine
 						},
 					}),
 					o(228025, {	-- Keluu's Belongings
+						["description"] = "Below the bridge.",
 						["questID"] = 34261,
 						["coord"] = { 75.7, 41.4, TALADOR },
 					}),
@@ -2574,8 +2592,11 @@ root(ROOTS.Zones, {
 					}),
 					o(228483, {	-- Rusted Lockbox
 						["questID"] = 34276,
-						["description"] = "Swim down to the bottom of the cavern.",
-						["coord"] = { 66.0, 85.1, TALADOR },
+						["description"] = "Inside Deathweb Hollow. Swim down to the bottom of the cavern.",
+						["coords"] = {
+							{ 61.1, 83.9, TALADOR },	-- Deathweb Hollow Cave Entrance
+							{ 66.0, 85.1, TALADOR },	-- Rusted Lockbox
+						},
 						["sym"] = COMMON_TREASURE_SYM,
 					}),
 					o(228018, {	-- Soulbinder's Reliquary
@@ -2604,9 +2625,16 @@ root(ROOTS.Zones, {
 						},
 					}),
 					o(230643, {	-- Teroclaw Nest
-						["description"] = "Can be found at the base of trees near Aruuna, the Tomb of Lights and Vol'jin's Pride.",
+						["description"] = "Can be found at the base of trees near Aruuna, the Tomb of Lights and Vol'jin's Pride guarded by Teroclaw Chicks.\nCan be looted 1 time per character.",
 						["questID"] = 35162,
 						["modelScale"] = 2,
+						["coords"] = {
+							{ 72.76, 35.59, TALADOR },
+							{ 70.92, 35.61, TALADOR },
+							{ 72.33, 37.01, TALADOR },
+							{ 73.41, 30.68, TALADOR },
+							{ 70.75, 31.96, TALADOR },
+						},
 						["g"] = {
 							i(112699),	-- Teroclaw Hatchling (PET!)
 						},
@@ -2620,7 +2648,10 @@ root(ROOTS.Zones, {
 					}),
 					o(228019, {	-- Webbed Sac
 						["questID"] = 34255,
-						["coord"] = { 65.4, 88.6, TALADOR },
+						["coords"] = {
+							{ 61.1, 83.9, TALADOR },	-- Deathweb Hollow Cave Entrance
+							{ 65.4, 88.6, TALADOR },	-- Webbed Sac
+						},
 						["g"] = {
 							i(116129),	-- Desiccated Orc's Coin Pouch
 						},
