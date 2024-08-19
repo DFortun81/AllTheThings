@@ -1033,7 +1033,7 @@ root(ROOTS.Zones, {
 					}),
 					q(34400, {	-- Frenzied Manafeeders
 						["provider"] = { "n", 78534 },	-- Ageilaa
-						["description"] = "Requires you to damage creatures below 35% health in order to soothe them with Dissipation Crystal.\nIf you are higher level than the creature, in order to avoid '1-shot-kill' scenario, use Soft Foam Sword toy which 'Mortally Wounds' them to 10% of their health.\nToy can be bought from Kazbala in Talador located at 45.2, 38.8 for 50 gold pieces.",
+						["description"] = "Requires you to damage creatures below 35% health in order to soothe them with Dissipation Crystal.\nIf you are higher level than the creature, in order to avoid '1-shot-kill' scenario, use Soft Foam Sword toy which 'Mortally Wounds' them to 10% of their health.\nToy can be bought from Toy Vendors in major cities for 50 gold pieces.",
 						["coord"] = { 49.8, 56.1, TALADOR },
 					}),
 					q(34777, {	-- Gatekeepers of Auchindoun
