@@ -2936,9 +2936,9 @@ namespace ATT
             // Criteria groups need to know their associated Achievement
             if (data.TryGetValue("criteriaID", out decimal criteriaID))
             {
-                if (!data.ContainsKey("achID") && CurrentParentGroup.Value.Key != "achID")
+                if (!data.ContainsKey("achID"))
                 {
-                    LogError($"'criteriaID' {criteriaID} missing 'achID' under non-Achievement group [{CurrentParentGroup.Value.Key}:{CurrentParentGroup.Value.Value}]", data);
+                    LogError($"'criteriaID' {criteriaID} missing 'achID' [{CurrentParentGroup.Value.Key}:{CurrentParentGroup.Value.Value}]", data);
                 }
             }
         }
