@@ -1528,7 +1528,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(217415),	-- Depleted Ruby Flightstone
 			i(220206),	-- Gleaming Satchel of Drake's Dreaming Crests
 			i(220204),	-- Pouch of Whelpling's Dreaming Crests
-			i(220205),	-- Satchel of Drake's Dreaming Crests
 			i(220207),	-- Shimmering Clutch of Wyrm's Dreaming Crests
 			i(220208),	-- Viridescent Bouquet of Aspect's Dreaming Crests
 			--

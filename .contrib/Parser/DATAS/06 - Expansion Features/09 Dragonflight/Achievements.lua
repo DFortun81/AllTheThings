@@ -1182,7 +1182,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		}),
 		ach(17978),	-- Stones Can Fly!
 		ach(17977),	-- Stones Can Try To Fly!
-		ach(17830),	-- Stones Can't Fly!
+		ach(17830, {	-- Stones Can't Fly!
+			i(204195, {	-- Drake's Shadowflame Crest
+				["timeline"] = { "added 10.1.0", "removed 10.2.0" },
+			i(210770, {	-- Satchel of Drake's Dreaming Crests
+				["timeline"] = { "added 10.2.0", "removed 10.2.6" },
+			i(211952, {	-- Satchel of Drake's Awakened Crests
+				["timeline"] = { "added 10.2.6" },
+			}),	
+		}),	
 	}),
 })));
 
