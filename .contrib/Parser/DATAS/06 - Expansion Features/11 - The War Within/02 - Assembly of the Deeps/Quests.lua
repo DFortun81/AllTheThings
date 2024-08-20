@@ -59,6 +59,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 			}, {	-- RENOWN 11 --
+				q(82373, {	-- Crests and Rocks
+					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
+					["g"] = {
+						i(226147),	-- Bunch of Brave Rocks
+					},
+				}),
 			}, {	-- RENOWN 12 --
 			}, {	-- RENOWN 13 --
 			}, {	-- RENOWN 14 --

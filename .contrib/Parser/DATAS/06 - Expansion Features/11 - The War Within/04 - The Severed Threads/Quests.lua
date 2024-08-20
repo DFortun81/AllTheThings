@@ -47,7 +47,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 			}, {	-- RENOWN 13 --
+				q(82434, {	-- Unlock a Reward
+					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+				}),
 			}, {	-- RENOWN 14 --
+				q(82435, {	-- The Wealth of a Kingdom
+					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+				}),
 			}, {	-- RENOWN 15 --
 			}, {	-- RENOWN 16 --
 			}, {	-- RENOWN 17 --

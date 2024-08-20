@@ -37,6 +37,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81750, {	-- Cloud Farming
 					["coord"] = { 55.2, 71.3, THE_RINGING_DEEPS },
 				}),
+				q(84429, {	-- Construct Containment
+					["coord"] = { 57.9, 37.9, THE_RINGING_DEEPS },
+				}),
 				q(82580, {	-- Courier Mission: Ore Recovery
 					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
 				}),
@@ -62,15 +65,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 55.2, 50.8, THE_RINGING_DEEPS },
 				}),
 				q(81811, {	-- Skyrider Racing - Cataract River Cruise
-					-- normal - 80240 / advanced - 80247 / reversed - 80253
 					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
 				}),
 				q(81807, {	-- Skyrider Racing - Earthenworks Weave
-					-- normal - 80237 / advanced - 80244 / reversed - 80250
 					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
 				}),
+				q(81808, {	-- Skyrider Racing - Ringing Deeps Ramble
+					["coord"] = { 42.3, 27.4, THE_RINGING_DEEPS },
+				}),
 				q(81812, {	-- Skyrider Racing - Taelloch Twist
-					-- normal - 80242 / advanced - 80248 / reversed - 80254
 					["coord"] = { 66.6, 68.7, THE_RINGING_DEEPS },
 				}),
 				q(83080, {	-- Taelloch Cleanup

@@ -19,6 +19,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				pvp(q(80409, {	-- Polarized
 					["coord"] = { 80.2, 62.6, AZJ_KAHET },
 				})),
+				pvp(q(80457, {	-- Serving the Queen
+					["coord"] = { 48.0, 82.5, NERUBAR },
+				})),
 				q(82526, {	-- Bug Them
 					["coord"] = { 71.1, 31.6, NERUBAR },
 				}),
@@ -56,23 +59,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 61.6, 75.0, AZJ_KAHET },
 				}),
 				q(81824, {	-- Skyrider Racing - City of Threads Twist
-					-- normal - 80277 / advanced - 80283 / reverse - 80289
 					["coord"] = { 26.4, 7.2, NERUBAR },
 				}),
 				q(81825, {	-- Skyrider Racing - Maddening Deep Dip
-					-- normal - 80278 / advanced - 80284 / reverse - 80290
 					["coord"] = { 77.9, 79.6, AZJ_KAHET },
 				}),
 				q(81829, {	-- Skyrider Racing - Pit Plunge
-					-- normal - 80281 / advanced - 80287 / reverse - 80293
 					["coord"] = { 23.8, 48.4, AZJ_KAHET },
 				}),
 				q(81831, {	-- Skyrider Racing - Siegehold Scuttle
-					-- normal - 80282 / advanced - 80288 / reverse - 80294
-					["coord"] = { 42.0, 37.5, AZJ_KAHET },
+					["coord"] = { 40.2, 32.2, AZJ_KAHET },
 				}),
 				q(81827, {	-- Skyrider Racing - The Weaver's Wing
-					-- normal - 80279 / advanced - 80285 / reverse - 80291
 					["coord"] = { 53.7, 41.2, AZJ_KAHET },
 				}),
 				q(82387, {	-- Slay the Goo, Save the World
@@ -89,6 +87,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(82332, {	-- Unassuming Delivery Spider
 					["coord"] = { 62.6, 22.4, NERUBAR },
+				}),
+				q(83536, {	-- Undertide Undertaker
+					["coord"] = { 44.6, 40.9, AZJ_KAHET },
 				}),
 				q(79959, {	-- Wormcraft Rumble
 					["coord"] = { 73.0, 83.6, AZJ_KAHET },

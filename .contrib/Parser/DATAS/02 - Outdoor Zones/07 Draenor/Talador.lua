@@ -2388,7 +2388,7 @@ root(ROOTS.Zones, {
 					o(228024, {	-- Aruuna Mining Cart
 						["description"] = "Inside Aruuna Crystal Mine.",
 						["questID"] = 34260,
-						["coord"] = {
+						["coords"] = {
 							{ 78.1, 35.6, TALADOR }, -- Aruuna Crystal Mine Entrance
 							{ 81.8, 34.9, TALADOR }, -- Aruuna Mining Cart
 						},
@@ -2470,7 +2470,7 @@ root(ROOTS.Zones, {
 					o(236483, {	-- Gift of the Ancients
 						["description"] = "Turn each statue to face the center.",
 						["questID"] = 36829,
-						["coord"] = {
+						["coords"] = {
 							{ 27.8, 75.6, TALADOR },	-- Cave Entrance
 							{ 28.4, 74.2, TALADOR },	-- Gift of the Ancients
 						},
@@ -2504,7 +2504,7 @@ root(ROOTS.Zones, {
 					o(227953, {	-- Jug of Aged Ironwine
 						["description"] = "Inside the cave at the base of Orunai Delta. Guarded by Murdor the Drunk.",
 						["questID"] = 34233,
-						["coord"] = {
+						["coords"] = {
 							{ 64.8, 9.2,  TALADOR },	-- Cave Entrance
 							{ 65.5, 11.4, TALADOR },	-- Jug of Aged Ironwine
 						},

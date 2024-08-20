@@ -1471,7 +1471,6 @@ root(ROOTS.Unsorted, {
 				i(226108),	-- [DNT] Debug Profession Stats
 				i(226120),	-- Deployable Battle Supplies \\ Deployable Charge Station
 				i(226131),	-- Deployable Wind-Wrangling Spire \\ Deployable Wind-Wrangling Station
-				i(226147),	-- Bunch of Brave Rocks
 				i(226149),	-- Pile of Humming Shinies
 				i(226150),	-- Gem-Studded Candelabra
 				i(226151),	-- Wax-Coated Coffer Unlocker

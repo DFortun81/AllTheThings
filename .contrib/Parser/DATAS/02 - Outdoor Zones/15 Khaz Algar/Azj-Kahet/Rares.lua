@@ -184,6 +184,7 @@ root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 		q(84074),	-- Extra HQT: Monstrous Lasharoth
 		q(84082),	-- Extra HQT: Skrimisher Sa'zryk
 		q(84069),	-- Extra HQT: The Groundskeeper
+		q(85167),	-- Extra HQT: The One Left
 		q(84078),	-- Extra HQT: The Oozekhan
 		q(84080),	-- Extra HQT: Umbraclaw Matra
 		q(84072),	-- Extra HQT: XT-Minecrusher 8700

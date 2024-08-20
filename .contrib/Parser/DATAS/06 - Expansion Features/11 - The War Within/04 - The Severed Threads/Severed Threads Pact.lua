@@ -272,3 +272,63 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 		})),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
+	-- Pact weekly locking hqt
+	q(80545),	-- picked up 'The General'
+	q(80546),	-- picked up 'The Vizier'
+	q(80544),	-- picked up 'The Weaver'
+	-- Reps with zone dudes, probably gonna need to move into expansion feature?
+	q(81601),	-- [DNT] General - Level 1 Unlock (spellID 443677)
+	q(81602),	-- [DNT] General - Level 2 Unlock (spellID 443679)
+	q(81626),	-- [DNT] General - Level 2 Unlock (spellID 443679)
+	q(81603),	-- [DNT] General - Level 3 Unlock (spellID 443680)
+	q(81605),	-- [DNT] Vizier - Level 1 Unlock (spellID 443682) & [DNT] Vizier - Level 4 Unlock (spellID 443686) (???)
+	q(81606),	-- [DNT] Vizier - Level 2 Unlock (spellID 443683)
+	q(81607),	-- [DNT] Vizier - Level 3 Unlock (spellID 443684)
+	q(81597),	-- [DNT] Weaver - Level 1 Unlock (spellID 443033)
+	q(81598),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674)
+	q(81627),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674) (???)
+	q(81599),	-- [DNT] Weaver - Level 3 Unlock (spellID 443675)
+	q(81600),	-- [DNT] Weaver - Level 4 Unlock (spellID 443676)
+	q(84538),	-- [DNT] Weaver - Level 5 Unlock (spellID 462490)
+	q(84539),	-- [DNT] Weaver - Level 6 Unlock (spellID 462491)
+	q(84540),	-- [DNT] Weaver - Level 7 Unlock (spellID 462492)
+	--'Push quest', should be probably be weekly, since you can 'normaly' choose dude once per week (TODO: re-format it)
+	q(82645),	-- pop questIDs: 81491 (General), 81505 (Vizier), 81472 (Weaver)
+	q(82646),	-- pop questIDs: 81492 (General), 81499 (?), 81506 (?)
+	q(82644),	-- pop questIDs: 81477 (General), 81473 (?), 81481 (?)
+	q(82643),	-- pop questIDs: 81490 (General), 81498 (Vizier), 81471 (Weaver)
+	q(82616),	-- pop questIDs: 81476 (General), 81480 (Vizier), 80573 (Weaver)
+	q(82581),	-- pop questIDs: 81489 (General), 81497 (Vizier), 81470 (Weaver)
+	q(82640),	-- pop questIDs: 81475 (General), 81555 (?), 81496 (?)
+	q(82642),	-- pop questIDs: 81488 (General), 81500 (?), 81479 (?)
+	q(82641),	-- pop questIDs: 81487 (General), 81484 (?), 81495 (?)
+	q(82649),	-- pop questIDs: 81494 (General), 81502 (Vizier), 81504 (Weaver)
+	q(82647),	-- pop questIDs: 81478 (General), 81482 (Vizier), 81483 (Weaver)
+	q(82648),	-- pop questIDs: 81493 (General), 81503 (?), 81501 (?)
+	-- General
+	--q(82645),	-- 'Listen to the rumor' from Eirzay (n: 224171 @ 63.0, 38.1, 2216), start questID 81491 (Armaments: Arbalests)
+	--q(82646),	-- 'Listen to the rumor' from Eirzay (n: 224172 @ 48.4, 60.7), start questID 81492 (Armaments: Smithing Tools)
+	--q(82644),	-- 'Listen to the rumor' from Eirzay (n: 224170 @ 58.1, 39.3, 2216), start questID 81477 (Armaments: Weaponry)
+	--q(82643),	-- 'Listen to the rumor' from Eirzay (n: 224168 @ 48.6, 50.5, 2216), start questID 81490 (Bounty: Balaxir the Bully)
+	--q(82616),	-- 'Listen to the rumor' from Eirzay (n: 224166 @ 36.1, 50.2, 2213), start questID 81476 (Bounty: Goliath)
+	--q(82581),	-- 'Listen to the rumor' from Eirzay (n: 224167 @ 15.6, 45.9, 2213), start questID 81489 (Bounty: Zorikal the Patron)
+	--q(82640),	-- 'Listen to the rumor' from Eirzay (n: 224161 @ 43.0, 47.1, 2213), start questID 81475 (Breaking the Phalanx: Royal Appointments)
+	--q(82642),	-- 'Listen to the rumor' from Eirzay (n: 224163 @ 27.7, 57.8, 2213), start questID 81488 (Breaking the Phalanx: Sages)
+	--q(82641),	-- 'Listen to the rumor' from Eirzay (n: 224162 @ 30.6, 42.6, 2213), start questID 81487 (Breaking the Phalanx: Venomblades)
+	--q(82649),	-- 'Listen to the rumor' from Eirzay (n: 224176 @ 63.8, 26.3, 2216), start questID 81494 (Relics of War: Rak-Ahat)
+	--q(82647),	-- 'Listen to the rumor' from Eirzay (n: 224173 @ 39.5, 53.0), start questID 81478 (Relics of War: The Ruptired Lake)
+	--q(82648),	-- 'Listen to the rumor' from Eirzay (n: 224174 @ 63.8, 26.3, 2216), start questID 81493 (Relics of War: The Salien Gutter Conflict)
+	-- Weaver
+	q(79698),	-- after turn in questID 79627 (Wine and Die)
+	--q(82581),	-- 'Investiage the scene' from Ru'murh (n: 224194 @ 70.3, 31.8, 2213), start questID 81470 (Dropping Eaves: Thieving Weave)
+	--q(82643),	-- 'Investiage the scene' from Ru'murh (n: 224195 @ 73.3, 50.9, 2213), start questID 81471 (Dropping Eaves: Saving the Past)
+	--q(82645),	-- 'Consider the missive' from Ru'murh (n: 224197 @ 39.8, 26.6, 2213), start questID 81472 (Information Control: Ansurek's Truth)
+	--q(82647),	-- 'Consider the missive' from Ru'murh (n: 224199 @ 45.6, 51.0, 2216), start questID 81483 (Infiltration: Production Blocker)
+	--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224201 @ 76.2, 47.4), start questID 81504 (Infiltration: Hidden Figures)
+	-- Missing 5 more quest data/givers
+	-- Vizier
+	--q(82616),	-- 'Gather some reagent' from Ghos-opp (n: 224180 @ 48.4, 61.9), start questID 81480 (Wild Reagents: Maddening Deep)
+	-- Missing 11 total quest data/givers, 81505 81498 81497 81502 81482 (and 5 more)
+}));

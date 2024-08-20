@@ -48,7 +48,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 				e(2589, {	-- Goldie Baronbottom
-					["crs"] = { 218523 },	-- Goldie Baronbottom <BEE.E.O.>
+					["crs"] = { 214661 },	-- Goldie Baronbottom <BEE.E.O.>
 					["g"] = {
 						ach(40361),	-- Cinderbrew Meadery
 						i(223155),	-- Bop (PET!)

@@ -49,6 +49,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82088, {	-- Kobyss Kibosh
 					["coord"] = { 35.4, 54.7, HALLOWFALL },
 				}),
+				q(82584, {	-- Light's Gambit
+					["coord"] = { 48.6, 39.4, HALLOWFALL },
+				}),
 				q(82582, {	-- Mired in Shadow
 					["coord"] = { 74.8, 50.3, HALLOWFALL },
 				}),
@@ -71,19 +74,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				q(81815, {	-- Skyrider Racing - Dunelle's Detour
-					-- normal - 80256 / advanced - 80265 / reversed - 80271
 					["coord"] = { 72.8, 38.4, HALLOWFALL },
 				}),
+				q(81818, {	-- Skyrider Racing - Light's Redoubt Descent
+					["coord"] = { 41.4, 67.3, HALLOWFALL },
+				}),
 				q(81822, {	-- Skyrider Racing - Mereldar Meander
-					-- normal - 80260 / advanced - 80269 / reversed - 80275
 					["coord"] = { 39.0, 61.4, HALLOWFALL },
 				}),
 				q(81819, {	-- Skyrider Racing - Stillstone Slalom
-					-- normal - 80259 / advanced - 80268 / reversed - 80274
 					["coord"] = { 60.4, 26.0, HALLOWFALL },
 				}),
 				q(81816, {	-- Skyrider Racing - Tenir's Traversal
-					-- normal - 80257 / advanced - 80266 / reversed - 80272
 					["coord"] = { 59.2, 68.9, HALLOWFALL },
 				}),
 				q(82586, {	-- Spore Ender (previous questID 82588?)
