@@ -530,9 +530,9 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 			covInfo = covInfo .. "N/A";
 		end
 		if C_MajorFactions then
-			local DFmajorFactionIDs, majorFactionInfo, data = C_MajorFactions.GetMajorFactionIDs(9), {}, nil;
-			if DFmajorFactionIDs then
-				for _,factionID in ipairs(DFmajorFactionIDs) do
+			local MajorFactionIDs, majorFactionInfo, data = C_MajorFactions.GetMajorFactionIDs(10), {}, nil;
+			if MajorFactionIDs then
+				for _,factionID in ipairs(MajorFactionIDs) do
 					tinsert(majorFactionInfo, "|");
 					tinsert(majorFactionInfo, factionID);
 					data = C_MajorFactions.GetMajorFactionData(factionID);
