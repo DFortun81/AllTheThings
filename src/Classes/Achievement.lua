@@ -66,14 +66,6 @@ do
 	-- end
 	-- app.AddEventRegistration("RECEIVED_ACHIEVEMENT_LIST", DelayedOnUpdateWindows);
 	app.CreateAchievement, AchievementClass = app.CreateClass("Achievement", KEY, {
-		-- altAchID doesn't exist anymore anywhere
-		-- [KEY] = function(t)
-		-- 	local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
-		-- 	if achievementID then
-		-- 		t[KEY] = achievementID;
-		-- 		return achievementID;
-		-- 	end
-		-- end,
 		link = function(t)
 			return cache.GetCachedField(t, "link", CacheInfo);
 		end,
@@ -97,28 +89,6 @@ do
 			-- character collected
 			if app.IsCached(CACHE, id) then return 1; end
 		end,
-		-- collected = function(t)
-		-- 	if t.saved then return 1; end
-		-- 	if app.Settings.AccountWide.Achievements then
-		-- 		local id = t[KEY];
-		-- 		-- cached account-wide credit, or API account-wide credit
-		-- 		if ATTAccountWideData.Achievements[id] then return 2; end
-		-- 		local acctApiCredit = select(4, GetAchievementInfo(id));
-		-- 		if acctApiCredit then
-		-- 			return 2;
-		-- 		end
-		-- 	end
-		-- end,
-		-- saved = function(t)
-		-- 	local id = t[KEY];
-		-- 	if app.CurrentCharacter.Achievements[id] then return true; end
-		-- 	local earnedByMe = select(13, GetAchievementInfo(id));
-		-- 	if earnedByMe then
-		-- 		app.CurrentCharacter.Achievements[id] = 1;
-		-- 		ATTAccountWideData.Achievements[id] = 1;
-		-- 		return true;
-		-- 	end
-		-- end,
 		parentCategoryID = function(t)
 			return GetAchievementCategory(t[KEY]) or -1;
 		end,
@@ -189,32 +159,6 @@ do
 		app.SetCached(CACHE, id, state)
 		app.UpdateRawID(KEY, id);
 	end);
-	-- migrate this achievement refresh to proper handling within Achievement lib
-	-- local function CheckAchievementCollectionStatus(achievementID)
-	-- 	if ATTAccountWideData then
-	-- 		achievementID = tonumber(achievementID) or achievementID;
-	-- 		local _,_,_,acctCredit,_,_,_,_,_,_,_,isGuild,earnedByMe = GetAchievementInfo(achievementID);
-	-- 		if earnedByMe then
-	-- 			app.CurrentCharacter.Achievements[achievementID] = 1;
-	-- 			ATTAccountWideData.Achievements[achievementID] = 1;
-	-- 		elseif acctCredit and not isGuild then
-	-- 			ATTAccountWideData.Achievements[achievementID] = 1;
-	-- 		end
-	-- 	end
-	-- end
-	-- local function RefreshAchievementCollection()
-	-- 	if ATTAccountWideData then
-	-- 		local maxid, achID = 0, 0;
-	-- 		for achievementID,_ in pairs(SearchForFieldContainer(KEY)) do
-	-- 			achID = tonumber(achievementID) or achievementID;
-	-- 			if achID > maxid then maxid = achID; end
-	-- 		end
-	-- 		for achievementID=maxid,1,-1 do
-	-- 			CheckAchievementCollectionStatus(achievementID);
-	-- 		end
-	-- 	end
-	-- end
-	-- app.AddEventHandler("OnRefreshCollections", RefreshAchievementCollection)
 end
 
 -- Achievement Category Lib
@@ -273,11 +217,6 @@ do
 		-- then the Achievement's data field was nil
 		if t._cached then return end
 		local id = t.achID;
-		-- this is protected by parser now
-		-- if not id then
-		-- 	app.PrintDebug("Missing achievementID for criteria reference",t.hash)
-		-- 	return;
-		-- end
 		local achievement = QuickAchievementCache[id]
 		if achievement then
 			-- copy parent Achievement field re-mappings
@@ -361,19 +300,9 @@ do
 	local cache = app.CreateCache("hash")
 	local criteriaFields = {
 		achievementID = function(t)
-			-- altAchID doesn't exist
-			-- local achievementID = t.altAchID and app.FactionID == Enum.FlightPathFaction.Horde and t.altAchID or t.achID;
 			local achievementID = t.achID
 			t.achievementID = achievementID;
 			return achievementID;
-			-- this is enforced by parser, every crit contains achID
-			-- local sourceAch = t.sourceParent or t.parent;
-			-- achievementID = sourceAch and (sourceAch.achievementID or (sourceAch.parent and sourceAch.parent.achievementID));
-			-- if achievementID then
-			-- 	t.achievementID = achievementID;
-			-- 	app.PrintDebug("criteria used parent to find achievementID!",t.hash)
-			-- 	return achievementID;
-			-- end
 		end,
 		name = function(t)
 			return cache.GetCachedField(t, "name", default_name) or t.__questname
@@ -414,16 +343,6 @@ do
 			return cache.GetCachedField(t, key, GetParentAchievementInfo)
 		end
 	end
-	-- Don't think we need the special 'init' handling anymore since any 'achievement_criteria' is generated after
-	-- all caching is completed
-	-- app.CreateAchievementCriteria = function(id, t, init)
-	-- 	t = setmetatable(constructor(id, t, "criteriaID"), BaseAchievementCriteria);
-	-- 	if init then
-	-- 		GetParentAchievementInfo(t, "");
-	-- 		-- app.PrintDebug("CreateAchievementCriteria.Init",t.hash)
-	-- 	end
-	-- 	return t;
-	-- end
 	app.CreateAchievementCriteria = app.CreateClass("Criteria", "criteriaID", criteriaFields)
 	app.CreateGuildAchievementCriteria = function(id, t)
 		-- TODO: Proper Class Extension Maybe? I think the Achievement class doesn't use a Class Constructor yet, but when it does, do this too.
