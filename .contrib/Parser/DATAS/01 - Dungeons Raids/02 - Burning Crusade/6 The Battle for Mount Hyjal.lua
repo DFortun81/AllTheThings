@@ -606,7 +606,12 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 					}),
 					i(32309),	-- Design: Regal Seaspray Emerald [CATA+] / Design: Enduring Seaspray Emerald [TBC]
 					i(32292),	-- Design: Rigid Empyrean Sapphire [CATA+] / Design: Rigid Lionseye [TBC]
-					i(32299),	-- Design: Shifting Shadowsong Amethyst [CATA+] / Design: Balanced Shadowsong Amethyst [TBC]
+					i(32299, {	-- Design: Shifting Shadowsong Amethyst [CATA+] / Design: Balanced Shadowsong Amethyst [TBC]
+						["timeline"] = {
+							ADDED_2_1_0,
+							REMOVED_4_0_1, -- Renamed and available after Cata
+						},
+					}),
 					i(32291),	-- Design: Smooth Lionseye
 					i(32293, {	-- Design: Smooth Lionseye [CATA+] / Design: Gleaming Lionseye [TBC]
 						["timeline"] = {

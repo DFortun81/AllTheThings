@@ -15,5 +15,6 @@ root(ROOTS.Secrets, header(HEADERS.Item, 193373,	-- Phoenix Wishwing
 		["g"] = {
 			i(193373),	-- Phoenix Wishwing
 		},
+		-- ToDO: add mini guide: https://www.wowhead.com/news/new-secret-discovered-phoenix-wishwing-battle-pet-332187
 	}),
 })));
