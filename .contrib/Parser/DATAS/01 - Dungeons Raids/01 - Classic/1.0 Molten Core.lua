@@ -612,7 +612,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(16855),	-- Lawbringer Legplates (Paladin)
 					i(16867),	-- Legplates of Might (Warrior)
 					i(16822),	-- Nightslayer Pants (Rogue)
-					i(16814),	-- Pants of Prophecy (Priest)
+					i(16814, {	-- Pants of Prophecy (Priest)
+						-- #if after 4.4.0
+						["description"] = "For Blizzard to consider the Tier 1 Priest set as collected in the Transmog Preview, you need to loot these exact pants.",
+						-- #endif
+					}),	
 					i(18824),	-- Magma Tempered Boots
 					i(19144),	-- Sabatons of the Flamewalker
 					i(18821),	-- Quick Strike Ring
