@@ -701,7 +701,7 @@ app.CreateCache = function(idField)
 			-- set a default provided cache value if any default function was provided and evalutes to a value
 			v = _t[field];
 			if not v and default_function then
-				local defVal = default_function(t, field);
+				local defVal = default_function(t, field, _t);
 				if defVal then
 					v = defVal;
 					_t[field] = v;
