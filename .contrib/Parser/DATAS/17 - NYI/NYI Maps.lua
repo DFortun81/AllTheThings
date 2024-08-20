@@ -337,7 +337,6 @@ root(ROOTS.NeverImplemented, n(MAPS, {
 		-- 10.0.0
 		expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			-- 0 (World)
-			m(2099),	-- Algeth'ar Academy
 			m(2063),	-- Dragon Isles
 			m(2107),	-- The Forbidden Reach
 			m(2026),	-- The Forbidden Reach Deprecated

@@ -7,7 +7,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 		["maps"] = {
 			2097,	-- Algeth'ar Academy
 			2098,	-- The Pitch
-			2099,	-- Entrance? (Unsure)
+			2099,	-- Algeth'ar Academy
 		},
 		["g"] = {
 			n(QUESTS, {
