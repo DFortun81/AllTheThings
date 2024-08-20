@@ -13,7 +13,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		["description"] = "These items were obtained by characters created during the MoP Remix Event and were automatically transferred to Retail when the event ended.",
 		["groups"] = {
 			cl(DEATHKNIGHT, {
-				i(205877, {	-- Adventurer's Footlocker
+				i(218130, {	-- Adventurer's Footlocker
 					i(170591),	-- Heart-Lesion Blade
 					i(170604),	-- Heart-Lesion Runeblade
 				}),
@@ -87,7 +87,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(154743),	-- Demon Trophy
 			}),
 			cl(DRUID, {
-				i(205877, {	-- Adventurer's Footlocker
+				i(218130, {	-- Adventurer's Footlocker
 					i(170617), -- Springrain Spear
 					i(170611), -- Springrain Stave
 				}),
@@ -178,7 +178,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(194536),	-- Blue Winglord's Amulet
 			}),
 			cl(HUNTER, {
-				i(205877, {	-- Adventurer's Footlocker
+				i(218130, {	-- Adventurer's Footlocker
 					i(170638),	-- Trailseeker Shotgun
 					i(170639),	-- Trailseekeer Spear
 				}),
@@ -224,7 +224,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(153819),	-- Mountainsage Stone of Destruction
 			}),
 			cl(MONK, {
-				i(205877, {	-- Adventurer's Footlocker
+				i(218130, {	-- Adventurer's Footlocker
 					i(170651),	-- Mistdancer Spire
 					i(170659),	-- Mistdancer Staff
 					i(170660),	-- Mistdancer Sword
@@ -282,7 +282,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			cl(PALADIN, {
-				i(205877, {	-- Adventurer's Footlocker
+				i(218130, {	-- Adventurer's Footlocker
 					i(170676),	-- Sunsoul Bulwark
 					i(170673),	-- Sunsoul Scepter
 					i(170675),	-- Sunsoul Sword
@@ -397,7 +397,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			cl(ROGUE, {
-				i(205877, {	-- Adventurer's Footlocker
+				i(218130, {	-- Adventurer's Footlocker
 					i(170710),	-- Lightdrinker Dagger
 					i(170711),	-- Lightdrinker Shiv
 					i(170712),	-- Lightdrinker Sword
@@ -429,7 +429,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(153950),	-- Lightdrinker Stone of Rage
 			}),
 			cl(SHAMAN, {
-				i(205877, {	-- Adventurer's Footlocker
+				i(218130, {	-- Adventurer's Footlocker
 					i(170725),	-- Streamtalker Aegis
 					i(170724),	-- Streamtalker Claws
 					i(170726),	-- Streamtalker Talons
@@ -506,7 +506,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(154013),	-- Felsoul Stone of Destruction
 			}),
 			cl(WARRIOR, {
-				i(205877, {	-- Adventurer's Footlocker
+				i(218130, {	-- Adventurer's Footlocker
 					i(170745),	-- Oathsworn Axe
 					i(170744),	-- Oathsworn Headchopper
 					i(170743),	-- Oathsworn Greataxe
@@ -566,6 +566,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(154047),	-- Oathsworn Defender Stone
 				}),
 			}),
+			i(223953),	-- Timerunner's Parting Pack
 		},
 	}),
 }))));

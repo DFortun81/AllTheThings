@@ -1537,7 +1537,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 
 		-- 10.2.7
 		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
-			i(218130),	-- Adventurer's Footlocker
 			i(218120),	-- Arsenal: Exodar Peacekeeper's Armaments
 			i(210881),	-- Cunning Charm
 			i(213530),	-- Entropic Crystal
