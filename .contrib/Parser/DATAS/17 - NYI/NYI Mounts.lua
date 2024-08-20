@@ -839,9 +839,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(223460, {	-- [PH] Nightsaber Horde Mount White (MOUNT!)
 				["displayID"] = 119658,
 			}),
-			i(224574, {	-- Savage Ebony Battle Turtle (MOUNT!)
-				["displayID"] = 120280,
-			}),
 			i(223284, {	-- Underlight Shorestalker (MOUNT!)
 				["displayID"] = 119506,
 			}),

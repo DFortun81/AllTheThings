@@ -1439,9 +1439,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 		-- 10.2.7
 		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
 			-- With SpeciesID Attached
-			i(224576, {	-- Lil' Flameo (PET!)
-				["displayID"] = 111446,
-			}),
 			i(223499, {	-- Lil' Manny (PET!)
 				["displayID"] = 119700,
 			}),
