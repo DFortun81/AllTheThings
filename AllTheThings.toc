@@ -18,7 +18,11 @@ lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
 src\WoW API Wrappers.lua
+
+# Raw DBs
 db\RaceDB.lua
+db\ReagentsDB.lua
+db\AccountWideQuestsDB.lua
 
 # Libs (no dependencies, only app assignment)
 lib\Debugging.lua
@@ -74,8 +78,6 @@ db\Retail\ExplorationDB.lua
 db\Retail\LocalizationDB.lua
 db\Retail\en_auto.lua
 db\Presets.lua
-db\ReagentsDB.lua
-db\AccountWideQuestsDB.lua
 
 # Load object class templates
 src\Classes\base.lua
