@@ -2459,7 +2459,11 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 					},
 				}),
 				n(10509, {	-- Jed Runewatcher
+					-- #if SEASON_OF_DISCOVERY
+					-- Its always up in SoD
+					-- #else
 					["description"] = "This is a rare that is not always present.",
+					-- #endif
 					["timeline"] = { REMOVED_6_0_2 },
 					["groups"] = {
 						i(12605, {	-- Serpentine Skuller
