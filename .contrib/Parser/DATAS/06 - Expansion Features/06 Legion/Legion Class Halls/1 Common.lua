@@ -1093,18 +1093,34 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					un(REMOVED_FROM_GAME, i(139473)),	-- Vial of Poisoned Blood -> Darkheart Thicket: Into Darkheart Thicket -> Darkheart Thicket
 					un(REMOVED_FROM_GAME, i(139475)),	-- Waterlogged Letter -> Maw of Souls: Into the Maw of Souls -> Maw of Souls
 					-- Follower Equipments
+					i(139802),	-- Auspicious Fetish
 					i(139873),	-- Bottled Sanity
+					i(140582),	-- Bottomless Flask
+					i(139814),	-- Carrot on a Stick
 					i(139808),	-- Cuiro of Abundant Happiness
+					i(139877),	-- Death's Touch
+					i(139795),	-- Draught of Courage
 					i(139809),	-- Elixir of Plenty
 					i(152444),	-- Exalted Xenedar Hammer
 					i(139792),	-- Fruitful Bauble
 					i(139419),	-- Golden Banana
 					i(152447),	-- Lightburst Charge
+					i(139801),	-- Lucky Doodad
+					i(139811),	-- Necklace of Endless Memories
+					i(139799),	-- Pathfinder's Saddle
+					i(139812),	-- Potion of Triton
 					i(152929),	-- Pronged Ridgestalker Spear
+					i(139878),	-- Relic of the Ebon Blade
+					i(139876),	-- Rune of Reckoning
 					i(152441),	-- Satchel of Lucidity
 					i(139670),	-- Scream of the Dead
 					i(152933),	-- Shadowguard Void Effusion
+					i(147572),	-- Sigil of Ebon Frost
+					i(140581),	-- Sturdy Hiking Boots
 					i(143850),	-- Summon Grimtotem Warrior (maybe put in Shaman class hall only)
+					i(139813),	-- Swift Boots
+					i(139875),	-- Undead Token
+					i(140583),	-- Vial of Timeless Breath
 					i(152935),	-- Wakener's Bauble
 					i(147559),	-- Ward of Infinite Fury
 					i(139816),	-- Well-Worn Stone
