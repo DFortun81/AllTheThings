@@ -9389,9 +9389,7 @@ function app:GetDataCache()
 
 	-- Delves
 	if app.Categories.Delves then
-		tinsert(g, app.CreateNPC(app.HeaderConstants.DELVES, {
-			g = app.Categories.Delves,
-		}));
+		tinsert(g, app.CreateNPC(app.HeaderConstants.DELVES, app.Categories.Delves));
 	end
 
 	-- Zones
