@@ -5,6 +5,13 @@ BOUNTIFUL = createHeader({
 		en = WOWAPI_GetSpellName(430253),
 	},
 });
+CURIO = createHeader({
+	readable = "Curio",
+	icon = "Interface\\Icons\\inv_misc_curiouscoin",
+	text = {
+		en = WOWAPI_GetSpellName(456522),
+	},
+});
 local UNDERCOIN = 2803;
 root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(ACHIEVEMENTS, {
@@ -212,9 +219,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(82706),	-- Delves: Khaz Algar Research
 		q(82711, {	-- Delves: Lost and Found
 			["g"] = {
-				i(224159),	-- Brann's Compass
-				i(224160),	-- Brann's Hat
-				i(224158),	-- Brann's Letter Opener
+				i(224159),	-- Brann's Compass (QI!)
+				i(224160),	-- Brann's Hat (QI!)
+				i(224158),	-- Brann's Letter Opener (QI!)
 			},
 		}),
 		q(82708),	-- Delves: Nerubian Menace
@@ -232,7 +239,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		n(223541),	-- Stolen Loader
 		n(208728),	-- Treasure Wraith
 	}),
-	m(2269, {	-- Earthcrawl Mines
+	m(EARTHCRAWL_MINES, {
+		["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 38.6, 73.9, ISLE_OF_DORN },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -242,23 +250,23 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(TREASURES, {
 				-- Seems like two rare treasures in this dungeon? Can have different IDs
 				o(454090, {	-- Sturdy Chest
-					["coord"] = { 45.2, 14.7, 2269 },
+					["coord"] = { 45.2, 14.7, EARTHCRAWL_MINES },
 					["questID"] = 83440,
 				}),
 				o(454091, {	-- Sturdy Chest
-					["coord"] = { 43.5, 27.1, 2269 },
+					["coord"] = { 43.5, 27.1, EARTHCRAWL_MINES },
 					["questID"] = 83438,
 				}),
 				o(454094, {	-- Sturdy Chest
-					["coord"] = { 36.3, 33.1, 2269 },
+					["coord"] = { 36.3, 33.1, EARTHCRAWL_MINES },
 					["questID"] = 83441,
 				}),
 				o(454049, {	-- Sturdy Chest
-					["coord"] = { 32.8, 40.0, 2269 },
+					["coord"] = { 32.8, 40.0, EARTHCRAWL_MINES },
 					["questID"] = 83451,
 				}),
 				o(454092, {	-- Sturdy Chest
-					["coord"] = { 53.1, 82.1, 2269 },
+					["coord"] = { 53.1, 82.1, EARTHCRAWL_MINES },
 					["questID"] = 83439,
 				}),
 			}),
@@ -269,7 +277,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 		},
 	}),
-	m(2249, {	-- Fungal Folly
+	m(FUNGAL_FOLLY, {
+		["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 51.9, 65.5, ISLE_OF_DORN },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -287,29 +296,30 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(455516, {	-- Sturdy Chest
-					["coord"] = { 32.7, 74.2, 2249 },
+					["coord"] = { 32.7, 74.2, FUNGAL_FOLLY },
 					["questID"] = 83671,
 				}),
 				o(455495, {	-- Sturdy Chest
-					["coord"] = { 34.5, 65.8, 2249 },
+					["coord"] = { 34.5, 65.8, FUNGAL_FOLLY },
 					["questID"] = 83689,
 				}),
 				o(455527, {	-- Sturdy Chest
-					["coord"] = { 58.7, 46.8, 2249 },
+					["coord"] = { 58.7, 46.8, FUNGAL_FOLLY },
 					["questID"] = 83702,
 				}),
 				o(454093, {	-- Sturdy Chest
-					["coord"] = { 49.6, 35.7, 2249 },
+					["coord"] = { 49.6, 35.7, FUNGAL_FOLLY },
 					["questID"] = 83452,
 				}),
 				o(455496, {	-- Sturdy Chest
-					["coord"] = { 35.5, 20.1, 2249 },
+					["coord"] = { 35.5, 20.1, FUNGAL_FOLLY },
 					["questID"] = 83690,
 				}),
 			}),
 		},
 	}),
-	m(2250, {	-- Kriegval's Rest
+	m(KRIEGVALS_REST, {
+		["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 62.1, 42.7, ISLE_OF_DORN },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -324,19 +334,19 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(455510, {	-- Sturdy Chest
-					["coord"] = { 46.2, 19.8, 2250 },
+					["coord"] = { 46.2, 19.8, KRIEGVALS_REST },
 					["questID"] = 83665,
 				}),
 				--o(xx, {	-- Sturdy Chest
-				--	["coord"] = { 62.3, 52.9, 2250 },
+				--	["coord"] = { 62.3, 52.9, KRIEGVALS_REST },
 				--	["questID"] = 83698,
 				--}),
 				o(455511, {	-- Sturdy Chest
-					["coord"] = { 69.9, 85.1, 2250 },
+					["coord"] = { 69.9, 85.1, KRIEGVALS_REST },
 					["questID"] = 83666,
 				}),
 				o(455489, {	-- Sturdy Chest
-					["coord"] = { 74.3, 70.2, 2250 },
+					["coord"] = { 74.3, 70.2, KRIEGVALS_REST },
 					["questID"] = 83683,
 				}),
 			}),
@@ -346,7 +356,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 		},
 	}),
-	m(2312, {	-- Mycomancer Cavern
+	m(MYCOMANCER_CAVERN, {
+		["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 71.1, 31.1, HALLOWFALL },
 		["g"] = {
 			i(217999),	-- Tasty Mussel
@@ -365,25 +376,26 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(455497, {	-- Sturdy Chest
-					["coord"] = { 63.3, 45.3, 2312 },
+					["coord"] = { 63.3, 45.3, MYCOMANCER_CAVERN },
 					["questID"] = 83691,
 				}),
 				o(455534, {	-- Sturdy Chest
-					["coord"] = { 50.0, 21.5, 2312 },
+					["coord"] = { 50.0, 21.5, MYCOMANCER_CAVERN },
 					["questID"] = 83652,
 				}),
 				o(454202, {	-- Sturdy Chest
-					["coord"] = { 68.8, 40.6, 2312 },
+					["coord"] = { 68.8, 40.6, MYCOMANCER_CAVERN },
 					["questID"] = 83455,
 				}),
 				o(455517, {	-- Sturdy Chest
-					["coord"] = { 40.2, 62.1, 2312 },
+					["coord"] = { 40.2, 62.1, MYCOMANCER_CAVERN },
 					["questID"] = 83672,
 				}),
 			}),
 		},
 	}),
-	m(2277, {	-- Nightfall Sanctum
+	m(NIGHTFALL_SANCTUM, {
+		["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 34.6, 46.8, HALLOWFALL },
 		["g"] = {
 			i(216420),	-- Signal Flare (QI!)
@@ -400,21 +412,22 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(455494, {	-- Sturdy Chest
-					["coord"] = { 51.9, 57.0, 2277 },
+					["coord"] = { 51.9, 57.0, NIGHTFALL_SANCTUM },
 					["questID"] = 83688,
 				}),
 				o(454201, {	-- Sturdy Chest
-					["coord"] = { 39.2, 74.4, 2277 },
+					["coord"] = { 39.2, 74.4, NIGHTFALL_SANCTUM },
 					["questID"] = 83454,
 				}),
 				o(455526, {	-- Sturdy Chest
-					["coord"] = { 40.0, 36.7, 2277 },
+					["coord"] = { 40.0, 36.7, NIGHTFALL_SANCTUM },
 					["questID"] = 83701,
 				}),
 			}),
 		},
 	}),
-	m(2310, {	-- Skittering Breach
+	m(SKITTERING_BREACH, {
+		["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 65.5, 61.5, HALLOWFALL },
 		["g"] = {
 			i(225719),	-- Light's Mantle
@@ -430,25 +443,26 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(455914, {	-- Sturdy Chest
-					["coord"] = { 48.1, 61.8, 2310 },
+					["coord"] = { 48.1, 61.8, SKITTERING_BREACH },
 					["questID"] = 83679,
 				}),
 				o(455505, {	-- Sturdy Chest
-					["coord"] = { 27.4, 26.4, 2310 },
+					["coord"] = { 27.4, 26.4, SKITTERING_BREACH },
 					["questID"] = 83660,
 				}),
 				o(455522, {	-- Sturdy Chest
-					["coord"] = { 56.1, 24.1, 2310 },
+					["coord"] = { 56.1, 24.1, SKITTERING_BREACH },
 					["questID"] = 83696,
 				}),
 				o(455486, {	-- Sturdy Chest
-					["coord"] = { 66.7, 14.5, 2310 },
+					["coord"] = { 66.7, 14.5, SKITTERING_BREACH },
 					["questID"] = 83680,
 				}),
 			}),
 		},
 	}),
-	m(2259, {	-- Tak-Rethan Abyss
+	m(TAK_RETHAN_ABYSS, {
+		["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 55.5, 74.9, AZJ_KAHET },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -463,19 +477,19 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(455533, {	-- Sturdy Chest
-					["coord"] = { 57.5, 18.5, 2259 },
+					["coord"] = { 57.5, 18.5, TAK_RETHAN_ABYSS },
 					["questID"] = 83651,
 				}),
 				o(455514, {	-- Sturdy Chest
-					["coord"] = { 61.3, 39.2, 2259 },
+					["coord"] = { 61.3, 39.2, TAK_RETHAN_ABYSS },
 					["questID"] = 83669,
 				}),
 				o(455492, {	-- Sturdy Chest
-					["coord"] = { 44.3, 39.9, 2259 },
+					["coord"] = { 44.3, 39.9, TAK_RETHAN_ABYSS },
 					["questID"] = 83686,
 				}),
 				o(455493, {	-- Sturdy Chest
-					["coord"] = { 55.0, 62.7, 2259 },
+					["coord"] = { 55.0, 62.7, TAK_RETHAN_ABYSS },
 					["questID"] = 83687,
 				}),
 			}),
@@ -484,7 +498,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			})
 		},
 	}),
-	m(2302, {	-- The Dread Pit
+	m(THE_DREAD_PIT, {
+		["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 74.1, 37.7, THE_RINGING_DEEPS },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -499,25 +514,26 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(455482, {	-- Sturdy Chest
-					["coord"] = { 41.1, 45.5, 2302 },
+					["coord"] = { 41.1, 45.5, THE_DREAD_PIT },
 					["questID"] = 83677,
 				}),
 				o(455503, {	-- Sturdy Chest
-					["coord"] = { 57.5, 56.1, 2302 },
+					["coord"] = { 57.5, 56.1, THE_DREAD_PIT },
 					["questID"] = 83658,
 				}),
 				o(455484, {	-- Sturdy Chest
-					["coord"] = { 57.8, 27.7, 2302 },
+					["coord"] = { 57.8, 27.7, THE_DREAD_PIT },
 					["questID"] = 83678,
 				}),
 				o(455504, {	-- Sturdy Chest
-					["coord"] = { 36.3, 16.7, 2302 },
+					["coord"] = { 36.3, 16.7, THE_DREAD_PIT },
 					["questID"] = 83659,
 				}),
 			})
 		},
 	}),
-	m(2301, {	-- The Sinkhole
+	m(THE_SINKHOLE, {
+		["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 50.6, 53.2, HALLOWFALL },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -532,25 +548,26 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				--o(xx, {	-- Sturdy Chest // bugged/uninteractable?
-				--	["coord"] = { 49.8, 40.0, 2301 },
+				--	["coord"] = { 49.8, 40.0, THE_SINKHOLE },
 				--	["questID"] = x,
 				--}),
 				o(455513, {	-- Sturdy Chest
-					["coord"] = { 44.3, 69.9, 2301 },
+					["coord"] = { 44.3, 69.9, THE_SINKHOLE },
 					["questID"] = 83668,
 				}),
 				o(455525, {	-- Sturdy Chest
-					["coord"] = { 62.6, 70.3, 2301 },
+					["coord"] = { 62.6, 70.3, THE_SINKHOLE },
 					["questID"] = 83700,
 				}),
 				o(455491, {	-- Sturdy Chest
-					["coord"] = { 47.4, 75.4, 2301 },
+					["coord"] = { 47.4, 75.4, THE_SINKHOLE },
 					["questID"] = 83685,
 				}),
 			}),
 		},
 	}),
-	m(2347, {	-- The Spiral Weave
+	m(THE_SPIRAL_WEAVE, {
+		["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 46.6, 25.7, AZJ_KAHET },
 		["g"] = {
 			i(216772),	-- Whispering Explosives (QI!)
@@ -566,25 +583,26 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(455487, {	-- Sturdy Chest
-					["coord"] = { 46.0, 46.4, 2347 },
+					["coord"] = { 46.0, 46.4, THE_SPIRAL_WEAVE },
 					["questID"] = 83681,
 				}),
 				o(455531, {	-- Sturdy Chest
-					["coord"] = { 50.0, 46.2, 2347 },
+					["coord"] = { 50.0, 46.2, THE_SPIRAL_WEAVE },
 					["questID"] = 83649,
 				}),
 				o(455506, {	-- Sturdy Chest
-					["coord"] = { 36.3, 10.5, 2347 },
+					["coord"] = { 36.3, 10.5, THE_SPIRAL_WEAVE },
 					["questID"] = 83661,
 				}),
 				o(413590, {	-- Bountiful Coffer
-					["coord"] = { 48.2, 48.2, 2347 },
+					["coord"] = { 48.2, 48.2, THE_SPIRAL_WEAVE },
 					--["questID"] = 83320,
 				}),
 			}),
 		},
 	}),
-	m(2299, {	-- The Underkeep
+	m(THE_UNDERKEEP, {
+		["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 58.1, 65.8, 2213 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -599,21 +617,22 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(455509, {	-- Sturdy Chest
-					["coord"] = { 35.9, 34.6, 2299 },
+					["coord"] = { 35.9, 34.6, THE_UNDERKEEP },
 					["questID"] = 83664,
 				}),
 				--o(455488, {	-- Sturdy Chest
-				--	["coord"] = { x, y, 2299 },	-- after first room map is broken, there no mapID and coords after it
+				--	["coord"] = { x, y, THE_UNDERKEEP },	-- after first room map is broken, there no mapID and coords after it
 				--	["questID"] = 83682,
 				--}),
 				---o(, {	-- Sturdy Chest
-				---	["coord"] = { x, y, 2299 },
+				---	["coord"] = { x, y, THE_UNDERKEEP },
 				---	["questID"] = 83697,
 				---}),
 			}),
 		},
 	}),
-	m(2251, {	-- The Waterworks
+	m(THE_WATERWORKS, {
+		["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 46.3, 48.5, THE_RINGING_DEEPS },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -628,30 +647,31 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(455490, {	-- Sturdy Chest
-					["coord"] = { 48.0, 25.6, 2251 },
+					["coord"] = { 48.0, 25.6, THE_WATERWORKS },
 					["questID"] = 83684,
 				}),
 				o(455532, {	-- Sturdy Chest
-					["coord"] = { 42.2, 40.0, 2251 },
+					["coord"] = { 42.2, 40.0, THE_WATERWORKS },
 					["questID"] = 83650,
 				}),
 				o(455512, {	-- Sturdy Chest
-					["coord"] = { 48.5, 56.0, 2251 },
+					["coord"] = { 48.5, 56.0, THE_WATERWORKS },
 					["questID"] = 83667,
 				}),
 				o(454207, {	-- Sturdy Chest
-					["coord"] = { 47.7, 83.0, 2251 },
+					["coord"] = { 47.7, 83.0, THE_WATERWORKS },
 					["questID"] = 83456,
 				}),
 				o(413590, {	-- Bountiful Coffer
-					["coord"] = { 45.3, 95.3, 2251 },
+					["coord"] = { 45.3, 95.3, THE_WATERWORKS },
 					--["questID"] = 83319,
 				}),
 			}),
 		},
 	}),
-	m(2348, {	-- Zekvir's Lair
-		["coord"] = { 6.7, 33.9, NERUBAR },	-- old coords - 46.3, 48.5, THE_RINGING_DEEPS?
+	m(ZEKVIRS_LAIR, {
+		["icon"] = app.asset("Category_Delves"),
+		["coord"] = { 6.7, 33.9, NERUBAR },
 		["g"] = {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 } }, {
 				ach(40431),	-- Hunting the Hunter
@@ -673,34 +693,48 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	n(REWARDS, {
-		--
+		n(CURIO, {
+			n(RANK_ONE, {
+				i(225903, {	-- Amorphous Relic [Rank 1]
+					["bonusID"] = 11265
+				}),
+				i(225900, {	-- Light-Touched Idol [Rank 1]
+					["bonusID"] = 11250
+				}),
+			}),
+			n(RANK_ONE, {
+				i(225903, {	-- Amorphous Relic [Rank 2]
+					["bonusID"] = 11266
+				}),
+				i(225900, {	-- Light-Touched Idol [Rank 2]
+					["bonusID"] = 11251
+				}),
+			}),
+			n(RANK_ONE, {
+				i(225903, {	-- Amorphous Relic [Rank 3]
+					["bonusID"] = 11267
+				}),
+				i(225900, {	-- Light-Touched Idol [Rank 3]
+					["bonusID"] = 11252
+				}),
+			}),
+			n(RANK_ONE, {
+				i(225903, {	-- Amorphous Relic [Rank 4]
+					["bonusID"] = 11268
+				}),
+				i(225900, {	-- Light-Touched Idol [Rank 4]
+					["bonusID"] = 11253
+				}),
+			}),
+		}),
 
 		-- Curio
-		i(225903),	-- Amorphous Relic
+
 		i(228560),	-- Ancient Curio (QI!/QS!)
 		i(228581),	-- Ancient Curio (QI!/QS!)
 		i(225902),	-- Idol of Final Will
 		i(225906),	-- Lifeless Necrotic Relic
-		i(225900, {	-- Light-Touched Idol
-			["bonusID"] = 11250,
-			--["type"] = "characterUnlockSpellID",
-			["spellID"] = 439674,
-		}),
-		i(225900, {	-- Light-Touched Idol
-			["bonusID"] = 11251,
-			--["type"] = "characterUnlockSpellID",
-			["spellID"] = 458968,
-		}),
-		i(225900, {	-- Light-Touched Idol
-			["bonusID"] = 11252,
-			--["type"] = "characterUnlockSpellID",
-			["spellID"] = 458971,
-		}),
-		i(225900, {	-- Light-Touched Idol
-			["bonusID"] = 11253,
-			--["type"] = "characterUnlockSpellID",
-			["spellID"] = 458974,
-		}),
+
 		i(225905),	-- Olden Seeker Relic
 		i(218129),	-- Porcelain Arrowhead Idol
 		i(229353),	-- Rage-Filled Idol
@@ -712,6 +746,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(223624),	-- Sneef (PET!) [Kobold?]
 			i(225337),	-- Violet Sporbit (PET!) [Fungarian]
 			i(221496),	-- Wriggle (PET!) [Kobyss]
+		}),
+		n(CURIO, {
+
 		}),
 		filter(RECIPES, {
 			i(223085),	-- Design: Fractured Gemstone Locket (RECIPE!)
@@ -1231,9 +1268,9 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(78508),	-- after Skittering Breach
 	-- Restored Coffer Key
 	q(84736, {["isWeekly"]=true,}),	-- Pop from any weekly activity, orders (of activity) doesn't matter
-	q(84737, {["isWeekly"]=true,}),	-- 
-	q(84738, {["isWeekly"]=true,}),	-- 
-	q(84739, {["isWeekly"]=true,}),	-- 
+	q(84737, {["isWeekly"]=true,}),	--
+	q(84738, {["isWeekly"]=true,}),	--
+	q(84739, {["isWeekly"]=true,}),	--
 	-- Seasonal Rewards
 	q(83235),	-- Season 1: 1/10 reward progress (spellID 454473 - Airship: Wings 05 - Lantern Wing)
 });

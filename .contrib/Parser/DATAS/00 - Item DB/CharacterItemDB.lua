@@ -549,3 +549,13 @@ iq(224658, 83068);					-- Void-Lit Leatherworking Notes
 iq(224657, 83067);					-- Void-Lit Skinning Notes
 iq(228946, 84693);					-- Weaver's Lair Profession Table
 iq(224050, 82635);					-- Web Sparkles: Pretty and Powerful
+
+-- Curio
+is(modItemId(225903, nil, 11265), 459052);	-- Amorphous Relic [Rank 1]
+is(modItemId(225903, nil, 11266), 459056);	-- Amorphous Relic [Rank 2]
+is(modItemId(225903, nil, 11267), 459061);	-- Amorphous Relic [Rank 3]
+is(modItemId(225903, nil, 11268), 446835);	-- Amorphous Relic [Rank 4]
+is(modItemId(225000, nil, 11250), 439674);	-- Light-Touched Idol [Rank 1]
+is(modItemId(225000, nil, 11251), 458968);	-- Light-Touched Idol [Rank 2]
+is(modItemId(225000, nil, 11252), 458971);	-- Light-Touched Idol [Rank 3]
+is(modItemId(225000, nil, 11253), 458974);	-- Light-Touched Idol [Rank 4]

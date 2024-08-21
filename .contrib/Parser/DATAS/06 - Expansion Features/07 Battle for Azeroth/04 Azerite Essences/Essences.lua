@@ -1,47 +1,6 @@
 ---------------------------------------------
 --    E S S E N C E S      M O D U L E     --
 ---------------------------------------------
-AZERITE_ESSENCE_RANK_1 = createHeader({
-	readable = "Rank 1",
-	icon = "Interface\\Icons\\inv_smallazeritefragment",
-	text = {
-		en = [[~string.format(AZERITE_ESSENCE_RANK, 1)]],
-		de = "Rang 1",
-		fr = "Rang 1",
-		ru = "Ранг 1",
-	},
-});
-AZERITE_ESSENCE_RANK_2 = createHeader({
-	readable = "Rank 2",
-	icon = "Interface\\Icons\\inv_tinyazeritesplinter",
-	text = {
-		en = [[~string.format(AZERITE_ESSENCE_RANK, 2)]],
-		de = "Rang 2",
-		fr = "Rang 2",
-		ru = "Ранг 2",
-	},
-});
-AZERITE_ESSENCE_RANK_3 = createHeader({
-	readable = "Rank 3",
-	icon = "Interface\\Icons\\inv_smallazeriteshard",
-	text = {
-		en = [[~string.format(AZERITE_ESSENCE_RANK, 3)]],
-		de = "Rang 3",
-		fr = "Rang 3",
-		ru = "Ранг 3",
-	},
-});
-AZERITE_ESSENCE_RANK_4 = createHeader({
-	readable = "Rank 4",
-	icon = "Interface\\Icons\\inv_smallazeritecluster",
-	text = {
-		en = [[~string.format(AZERITE_ESSENCE_RANK, 4)]],
-		de = "Rang 4",
-		fr = "Rang 4",
-		ru = "Ранг 4",
-	},
-});
-
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	n(AZERITE_ESSENCES, {
 		["description"] = "The Heart of Azeroth, rewarded by Magni in the Heart of Chamber (Silithus), is required to learn Essences and maybe even to have them drop. Essences have two effects on them, one major and one minor power.\n\nPlayers may place an Essence in every unlocked Major or Minor slot in the Heart of Azeroth.\n\nThe major power will only be activated if the Essence is placed in the central Major slot.\n\nThe minor power will be activated if the Essence is placed in any Minor slot or the central Major slot.\n\nThe same Essence cannot be placed in multiple slots.",
@@ -57,7 +16,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				}),
 			}),
 			n(ALL_ROLES, {
-				n(AZERITE_ESSENCE_RANK_1, {
+				n(RANK_ONE, {
 					az(32, 1, {	-- Conflict and Strife (Rank 1)
 						["provider"] = { "i", 169902 },	-- Finger-Bone Trophy of Battle
 					}),
@@ -80,7 +39,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "i", 168615 },	-- Volatile Worldvein
 					}),
 				}),
-				n(AZERITE_ESSENCE_RANK_2, {
+				n(RANK_TWO, {
 					az(32, 2, {	-- Conflict and Strife (Rank 2)
 						["provider"] = { "i", 169901 },	-- Etched Bone Trophy of the Vanquished
 					}),
@@ -103,7 +62,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "i", 168616 },	-- Stalwart Worldvein
 					}),
 				}),
-				n(AZERITE_ESSENCE_RANK_3, {
+				n(RANK_THREE, {
 					az(32, 3, {	-- Conflict and Strife (Rank 3)
 						["provider"] = { "i", 169900 },	-- Rib-Bone Choker of Dominance
 					}),
@@ -126,7 +85,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "i", 168617 },	-- Fluctuating Worldvein
 					}),
 				}),
-				n(AZERITE_ESSENCE_RANK_4, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 } }, {
+				n(RANK_FOUR, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 } }, {
 					elitepvp(az(32, 4, {	-- Conflict and Strife (Rank 4)
 						["provider"] = { "i", 169899 },	-- Polished Skull Trophy
 					})),
@@ -151,7 +110,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				})),
 			}),
 			n(DPS_ROLE, {
-				n(AZERITE_ESSENCE_RANK_1, {
+				n(RANK_ONE, {
 					az(23, 1, {	-- Blood of the Enemy (Rank 1)
 						["provider"] = { "i", 168442 },	-- Roiling Blood of the Vanquished
 					}),
@@ -174,7 +133,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "i", 168863 },	-- Unbound Azerite Slivershards
 					}),
 				}),
-				n(AZERITE_ESSENCE_RANK_2, {
+				n(RANK_TWO, {
 					az(23, 2, {	-- Blood of the Enemy (Rank 2)
 						["provider"] = { "i", 168443 },	-- Agitated Blood of the Dominated
 					}),
@@ -197,7 +156,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "i", 168864 },	-- Sharpened Azerite Slivershards
 					}),
 				}),
-				n(AZERITE_ESSENCE_RANK_3, {
+				n(RANK_THREE, {
 					az(23, 3, {	-- Blood of the Enemy (Rank 3)
 						["provider"] = { "i", 168444 },	-- Churning Blood of the Conquered
 					}),
@@ -220,7 +179,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "i", 168865 },	-- Polazired Azerite Slivershards
 					}),
 				}),
-				n(AZERITE_ESSENCE_RANK_4, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 } }, {
+				n(RANK_FOUR, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 } }, {
 					az(23, 4, {	-- Blood of the Enemy (Rank 4)
 						["provider"] = { "i", 168814 },	-- Animated Blood of the Decimated
 					}),
@@ -247,7 +206,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			n(HEALER_ROLE, bubbleDownSelf({
 				["classes"] = HEALERS,
 			},{
-				n(AZERITE_ESSENCE_RANK_1, {
+				n(RANK_ONE, {
 					az(18, 1, {	-- Artifice of Time (Rank 1)
 						["provider"] = { "i", 168920 },	-- Azerite-Encrusted Timequartz
 					}),
@@ -270,7 +229,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "i", 168941 },	-- Vitality Redistribution Lattice
 					}),
 				}),
-				n(AZERITE_ESSENCE_RANK_2, {
+				n(RANK_TWO, {
 					az(18, 2, {	-- Artifice of Time (Rank 2)
 						["provider"] = { "i", 168921 },	-- Azerite-Infused Timequartz
 					}),
@@ -293,7 +252,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "i", 168942 },	-- Mesh of Expanding Vitality
 					}),
 				}),
-				n(AZERITE_ESSENCE_RANK_3, {
+				n(RANK_THREE, {
 					az(18, 3, {	-- Artifice of Time (Rank 3)
 						["provider"] = { "i", 168922 },	-- Azerite-Fueled Timequartz
 					}),
@@ -316,7 +275,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "i", 168943 },	-- Grid of Bursting Vitality
 					}),
 				}),
-				n(AZERITE_ESSENCE_RANK_4, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 } }, {
+				n(RANK_FOUR, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 } }, {
 					az(18, 4, {	-- Artifice of Time (Rank 4)
 						["provider"] = { "i", 168923 },	-- Unburdened Azerite Timequartz
 					}),
@@ -343,7 +302,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			n(TANK_ROLE, bubbleDownSelf({
 				["classes"] = TANKS,
 			},{
-				n(AZERITE_ESSENCE_RANK_1, {
+				n(RANK_ONE, {
 					az(25, 1, {	-- Aegis of the Deep (Rank 1)
 						["provider"] = { "i", 168837 },	-- Depth Forged Aegis
 					}),
@@ -366,7 +325,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "i", 168573 },	-- Death-Resistant Leaf
 					}),
 				}),
-				n(AZERITE_ESSENCE_RANK_2, {
+				n(RANK_TWO, {
 					az(25, 2, {	-- Aegis of the Deep (Rank 2)
 						["provider"] = { "i", 168838 },	-- Enduring Bulwark of the Depths
 					}),
@@ -389,7 +348,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "i", 168574 },	-- Petrified Living Bark
 					}),
 				}),
-				n(AZERITE_ESSENCE_RANK_3, {
+				n(RANK_THREE, {
 					az(25, 3, {	-- Aegis of the Deep (Rank 3)
 						["provider"] = { "i", 168839 },	-- Regenerating Barrier of the Depths
 					}),
@@ -412,7 +371,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 						["provider"] = { "i", 168575 },	-- Branch of Rejuvenating Rings
 					}),
 				}),
-				n(AZERITE_ESSENCE_RANK_4, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 } }, {
+				n(RANK_FOUR, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1, REMOVED_9_0_1 } }, {
 					az(25, 4, {	-- Aegis of the Deep (Rank 4)
 						["provider"] = { "i", 168840 },	-- Resplendent Bastion of the Depths
 					}),
