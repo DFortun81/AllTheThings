@@ -221,7 +221,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(226518, {	-- Phero-Escape
 							["cost"] = {{"c", KEJ, 25}},
 						}),
-						i(226520, {	-- Queen's Pheromone (CI!)
+						i(229193, {	-- Queen's Pheromone (CI!)	(old itemID 226520?)
 							["cost"] = {{"c", KEJ, 8888888}},
 						}),
 						i(223279, {	-- Royal Court Undercrawler (MOUNT!)
@@ -234,7 +234,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(228950, {	-- Rumor Map Bundle
 							["cost"] = {{"c", KEJ, 125}},
 						}),
-						i(228943, {	-- Spymaster's Severed Thread
+						i(228943, {	-- Spymaster's Severed Thread (CI!)
 							["cost"] = {{"c", KEJ, 250}},
 						}),
 						i(226512, {	-- Treasure Map: Forgotten Memorial
@@ -258,8 +258,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(226510, {	-- Weaver's Facade
 							["cost"] = {{"c", KEJ, 50}},
 						}),
-						i(228946, {	-- Weaver's Lair Profession Table
-							--["questID"] = 84693,	-- questID after using it
+						i(228946, {	-- Weaver's Lair Profession Table (CI!)
 							["cost"] = {{"c", KEJ, 500}},
 						}),
 						i(223276, {	-- Widow's Undercrawler (MOUNT!)
@@ -294,6 +293,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	q(84538),	-- [DNT] Weaver - Level 5 Unlock (spellID 462490)
 	q(84539),	-- [DNT] Weaver - Level 6 Unlock (spellID 462491)
 	q(84540),	-- [DNT] Weaver - Level 7 Unlock (spellID 462492)
+	q(84541),	-- [DNT] Weaver - Level 8 Unlock (spellID 462493)
 	--'Push quest', should be probably be weekly, since you can 'normaly' choose dude once per week (TODO: re-format it)
 	q(82645),	-- pop questIDs: 81491 (General), 81505 (Vizier), 81472 (Weaver)
 	q(82646),	-- pop questIDs: 81492 (General), 81499 (?), 81506 (?)

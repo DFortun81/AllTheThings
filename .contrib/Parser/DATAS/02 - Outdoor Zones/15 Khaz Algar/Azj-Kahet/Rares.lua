@@ -119,11 +119,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(216047, {	-- The One Left [This is the only Weird Rare....]
 				["questID"] = 82290,
 				["coord"] = { 63.5, 95.2, AZJ_KAHET },
+				["g"] = {
+					i(221265),	-- Charm of the Underground Beast
+				},
 			}),
 			n(216049, {	-- The Oozekhan
 				["questID"] = 82035,
 				["coord"] = { 61.7, 89.4, AZJ_KAHET_LOWER },
 				["g"] = {
+					i(223931),	-- Black Blood Cowl
 					i(223006),	-- Signet of Dark Horizons (alpha data)
 				},
 			}),
@@ -178,6 +182,7 @@ root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 		q(84081),	-- Extra HQT: Deepcrawler Tx'kesh
 		q(84076),	-- Extra HQT: Enduring Gutterface
 		q(84079),	-- Extra HQT: Harverster Qixt
+		q(84077),	-- Extra HQT: Jix'ak the Crazed
 		q(84071),	-- Extra HQT: Kaheti Silk Hauler
 		q(84070),	-- Extra HQT: Xishorr
 		q(84075),	-- Extra HQT: Maddened Siegebomber

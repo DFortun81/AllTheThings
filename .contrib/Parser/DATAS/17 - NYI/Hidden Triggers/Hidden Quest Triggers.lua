@@ -2067,9 +2067,14 @@ root(ROOTS.HiddenQuestTriggers, {
 	--     TWW      --
 	------------------
 	expansion(EXPANSION.TWW, {
+		-- Craftable / Sparks? (TODO: PH move to whatever place is better)
+		q(83280, {["isWeekly"]=true,}),	-- Fractured Spark of Omens
+		q(83281, {["isWeekly"]=true,}),	-- Fractured Spark of Omens
 		-- PVP
-		q(80415, {["isDaily"]=true}),	-- after looting War Supply chest, first time per day
-		q(80416, {["isDaily"]=true}),	-- after looting War Supply chest, first time per day
+		q(80415, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
+		q(80416, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
+		-- Special Assigment unlock tracker
+
 	}),
 
 	--------------------

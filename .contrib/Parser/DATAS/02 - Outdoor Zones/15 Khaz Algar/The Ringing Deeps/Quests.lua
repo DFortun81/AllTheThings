@@ -1230,4 +1230,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(83475),	-- [DNT] Repair Console (spellID 455981) Water Console (o: 226624) @ 45.3, 46.4, THE_RINGING_DEEPS)
 	q(83482),	-- [DNT] Repair Console (spellID 456005) Lost Console (o: 226641 @ 56.4, 22.5, THE_RINGING_DEEPS)
 	--q(82991),	-- when bind hearthstone location to Camp Murroch tavern
+	-- Special Assignment unlock tracker
+	q(82155),	-- Special Assignment: Shadows Below
 });

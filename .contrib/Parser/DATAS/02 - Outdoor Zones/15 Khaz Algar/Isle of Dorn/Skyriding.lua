@@ -107,8 +107,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(QUESTS, {
 				skyridingrace(80221, {	-- Basin Bypass
-					-- TODO
-					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
+					["provider"] = { "n", 219547 },	-- Bronze Timekeeper
 					["coord"] = { 53.5, 64.2, ISLE_OF_DORN },
 					["g"] = {
 						ach(20273),	-- Basin Bypass: Bronze
@@ -117,8 +116,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80227, {	-- Basin Bypass - Advanced
-					-- TODO
-					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
+					["provider"] = { "n", 219547 },	-- Bronze Timekeeper
 					["coord"] = { 53.5, 64.2, ISLE_OF_DORN },
 					["g"] = {
 						ach(20276),	-- Basin Bypass Advanced: Bronze
@@ -127,8 +125,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80233, {	-- Basin Bypass - Reverse
-					-- TODO
-					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
+					["provider"] = { "n", 219547 },	-- Bronze Timekeeper
 					["coord"] = { 53.5, 64.2, ISLE_OF_DORN },
 					["g"] = {
 						ach(20279),	-- Basin Bypass Reverse: Bronze

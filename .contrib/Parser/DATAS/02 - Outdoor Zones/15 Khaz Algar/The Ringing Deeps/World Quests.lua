@@ -34,6 +34,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82256, {	-- Capturing the Cataract's Creatures
 					["coord"] = { 52.9, 47.8, THE_RINGING_DEEPS },
 				}),
+				q(83715, {	-- Claimed Salvage
+					["coord"] = { 59.7, 80.6, THE_RINGING_DEEPS },
+					["g"] = {
+						i(226020),	-- Ancient Titan Salvage (QI!)
+					},
+				}),
 				q(81750, {	-- Cloud Farming
 					["coord"] = { 55.2, 71.3, THE_RINGING_DEEPS },
 				}),
@@ -67,6 +73,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81811, {	-- Skyrider Racing - Cataract River Cruise
 					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
 				}),
+				q(81810, {	-- Skyrider Racing - Chittering Concourse
+					["coord"] = { 67.8, 34.8, THE_RINGING_DEEPS },
+				}),
 				q(81807, {	-- Skyrider Racing - Earthenworks Weave
 					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
 				}),
@@ -89,6 +98,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 58.8, 24.9, THE_RINGING_DEEPS },
 				}),
 				--
+				q(81691, {	-- Special Assignment: Shadows Below
+					["coord"] = { 68.2, 48.4, THE_RINGING_DEEPS },
+				}),
 				q(83229, {	-- Special Assignment: When the Deeps Stir
 					["coord"] = { 52.9, 14.7, THE_RINGING_DEEPS },
 				}),

@@ -1229,6 +1229,11 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(82941),	-- after Kriegval's Rest
 	q(82940),	-- after Mycomancer Cavern
 	q(78508),	-- after Skittering Breach
-	--
+	-- Restored Coffer Key
+	q(84736, {["isWeekly"]=true,}),	-- Pop from any weekly activity, orders (of activity) doesn't matter
+	q(84737, {["isWeekly"]=true,}),	-- 
+	q(84738, {["isWeekly"]=true,}),	-- 
+	q(84739, {["isWeekly"]=true,}),	-- 
+	-- Seasonal Rewards
 	q(83235),	-- Season 1: 1/10 reward progress (spellID 454473 - Airship: Wings 05 - Lantern Wing)
 });

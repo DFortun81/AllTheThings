@@ -167,8 +167,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80260, {	-- Mereldar Meander
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219561 },	-- Bronze Timekeeper
 					["coord"] = { 39.0, 61.4, HALLOWFALL },
 					["g"] = {
 						ach(20399),	-- Mereldar Meander: Bronze
@@ -177,8 +176,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80269, {	-- Mereldar Meander - Advanced
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219561 },	-- Bronze Timekeeper
 					["coord"] = { 39.0, 61.4, HALLOWFALL },
 					["g"] = {
 						ach(20402),	-- Mereldar Meander Advanced: Bronze
@@ -187,8 +185,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80275, {	-- Mereldar Meander - Reverse
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219561 },	-- Bronze Timekeeper
 					["coord"] = { 39.0, 61.4, HALLOWFALL },
 					["g"] = {
 						ach(20405),	-- Mereldar Meander Reverse: Bronze

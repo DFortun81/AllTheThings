@@ -230,11 +230,10 @@ root(ROOTS.HiddenQuestTriggers, {
 
 	q(79573, {["name"] = "The War Within Campaign Completed [Account]"}),	-- triggered after completing 'Surface Bound' (questID 79197)
 	-- Archives
-	q(82039),	-- after turn in questID 82678 (Archives: The First Disk) & 82679 (Archives: Seeking History)
 	q(83450),	-- Play Scene (spellID 455916), after finished Archives weekly (1st week) / unlocked new log entry
 	q(83460),	-- Play Scene (spellID 455918), after finished Archives weekly (2nd week) / unlocked new log entry
 	q(83462),	-- Play Scene (spellID 455920), after finished Archives weekly (3rd week) / unlocked new log entry
-	q(84736),	-- last one in this chain after turn in (1st weekly), no idea
+	q(83463),	-- Play Scene (spellID 455921), after finished Archives weekly (4rd week) / unlocked new log entry
 	q(84669),	-- after accept questID 82679 (Archives: Seeking History) (2nd week)
 	q(84671),	-- after accept questID 82679 (Archives: Seeking History) / also after 82746 (Delves: Breaking Tough to Loot Stuff)
 	-- Alt skip

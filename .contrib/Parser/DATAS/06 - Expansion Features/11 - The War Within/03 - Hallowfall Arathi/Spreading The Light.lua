@@ -479,8 +479,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	q(79383),	-- Erol Ellimoore - Web of Manipulation - Activate, after flare up lesser keyflame @ 63.3, 29.4
 	q(78466),	-- Chef Dinaire - Shadows of Flavor - Activate, after flare up lesser keyflame @ 64.4, 30.9
 	q(78458),	-- Seraphine Seedheart - Harvest Havoc - Activator, after flare up lesser keyflame @ 63.6, 33.6
-	-- Quests?
-	q(83281),	-- Completed Spreading The Light But I also got a Spark of Omens? / Fractured Spark of Omens
 	--	Rares
 	q(84052),	-- Extra HQT: Crazed Cabbage Smacker
 	q(84054),	-- Extra HQT: Croakit

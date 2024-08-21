@@ -107,9 +107,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(QUESTS, {
 				skyridingrace(80277, {	-- City of Threads Twist
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, AZJ_KAHET },
+					["provider"] = { "n", 219564 },	-- Bronze Timekeeper
+					["coord"] = { 27.0, 8.0, NERUBAR },
 					["g"] = {
 						ach(20419),	-- City of Threads Twist: Bronze
 						ach(20420),	-- City of Threads Twist: Silver
@@ -117,9 +116,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80283, {	-- City of Threads Twist - Advanced
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, AZJ_KAHET },
+					["provider"] = { "n", 219564 },	-- Bronze Timekeeper
+					["coord"] = { 27.0, 8.0, NERUBAR },
 					["g"] = {
 						ach(20422),	-- City of Threads Twist Advanced: Bronze
 						ach(20423),	-- City of Threads Twist Advanced: Silver
@@ -127,9 +125,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80289, {	-- City of Threads Twist - Reverse
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, AZJ_KAHET },
+					["provider"] = { "n", 219564 },	-- Bronze Timekeeper
+					["coord"] = { 27.0, 8.0, NERUBAR },
 					["g"] = {
 						ach(20425),	-- City of Threads Twist Reverse: Bronze
 						ach(20426),	-- City of Threads Twist Reverse: Silver
@@ -197,9 +194,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80280, {	-- Rak-Ahat Rush
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, AZJ_KAHET },
+					["provider"] = { "n", 219568 },	-- Bronze Timekeeper
+					["coord"] = { 71.3, 36.4, AZJ_KAHET },
 					["g"] = {
 						ach(20448),	-- Rak-Ahat Rush: Bronze
 						ach(20449),	-- Rak-Ahat Rush: Silver
@@ -207,9 +203,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80286, {	-- Rak-Ahat Rush - Advanced
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, AZJ_KAHET },
+					["provider"] = { "n", 219568 },	-- Bronze Timekeeper
+					["coord"] = { 71.3, 36.4, AZJ_KAHET },
 					["g"] = {
 						ach(20451),	-- Rak-Ahat Rush Advanced: Bronze
 						ach(20452),	-- Rak-Ahat Rush Advanced: Silver
@@ -217,9 +212,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80292, {	-- Rak-Ahat Rush - Reverse
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, AZJ_KAHET },
+					["provider"] = { "n", 219568 },	-- Bronze Timekeeper
+					["coord"] = { 71.3, 36.4, AZJ_KAHET },
 					["g"] = {
 						ach(20454),	-- Rak-Ahat Rush Reverse: Bronze
 						ach(20455),	-- Rak-Ahat Rush Reverse: Silver

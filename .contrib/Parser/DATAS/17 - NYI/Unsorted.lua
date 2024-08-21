@@ -192,7 +192,7 @@ root(ROOTS.Unsorted, {
 			i(229161),	-- Lamplighter's Chopper
 			i(229162),	-- Lamplighter's Sword
 			i(229163),	-- Lamplighter's Blade
-			i(229193),	-- Queen's Pheromone
+			i(226520),	-- Queen's Pheromone
 			i(229194),	-- Queen's Pheromone
 			i(229195),	-- Queen's Pheromone
 			i(229370),	-- Companion Experience
@@ -819,7 +819,6 @@ root(ROOTS.Unsorted, {
 				i(225757),	-- Coreway Pickaxe
 
 				i(225760),	-- Dornogal Spear
-				i(225761),	-- Jeweler's Careful Crusher
 
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
 
@@ -872,7 +871,6 @@ root(ROOTS.Unsorted, {
 				i(226382),	-- Feathered Bow of the Fallen
 				i(226383),	-- Simple Ebony Wand
 				i(226384),	-- Wand of the Bright Shadow
-				i(226385),	-- Oxidized Wrench
 				i(226386),	-- Gentle Glow of the Naaru
 				i(226387),	-- Battle-tested Warhammer
 				i(226388),	-- Battle-tested Obsidian Warhammer
@@ -1396,8 +1394,6 @@ root(ROOTS.Unsorted, {
 
 				i(224183),	-- Bleak Chum
 				i(224269),	-- [DNT] 11.0 Food/Drink Template - Food Only - Level 75 - Required Level 70
-				i(224273),	-- Wooden Figure
-				i(224274),	-- Sturdy Locket
 				i(224292),	-- Radiant Fuel Shard
 				i(224767),	-- Giant Candle Parts
 				i(224786),	-- Skeleton King Outfit
@@ -1651,13 +1647,7 @@ root(ROOTS.Unsorted, {
 				i(224180),	-- Worn Journal
 				i(224182),	-- Webbed Ingots
 
-				i(224238),	-- Worn Coin
-				i(224239),	-- Pile of Leather String
-				i(224250),	-- Toy Fish
 				i(224252),	-- Calcified Journal
-				i(224254),	-- Wooden Figure
-				i(224257),	-- Sturdy Locket
-				i(224272),	-- Calcified Journal
 				i(224457),	-- Lil Piggy
 				i(224460),	-- The Lost Diary
 				i(224462),	-- The Ear
@@ -1675,11 +1665,6 @@ root(ROOTS.Unsorted, {
 				i(225887),	-- Titan Emitter \\ The Archaedas Conundrum
 				i(225738),	-- Kaheti Warblade
 				i(225927),	-- Emerald Necklace
-
-
-				i(226020),	-- Ancient Titan Salvage
-
-
 
 				i(228378),	-- Pristine Council's Seal
 				i(228409),	-- Valrin's Sweetrolls
@@ -1814,7 +1799,6 @@ root(ROOTS.Unsorted, {
 				i(221210),	-- Grips of the Earth
 				i(221214),	-- Chitin Chain Headpiece
 				i(221222),	-- Water-Imbued Spaulders
-				i(221223),	-- Bog Beast Mantle
 				i(221224),	-- Bouldershell Waistguard
 				i(221227),	-- Monstrous Fungal Cord
 				i(221230),	-- Storm Bindings
@@ -1834,7 +1818,6 @@ root(ROOTS.Unsorted, {
 				i(221254),	-- Earthshatter Lance
 				i(221263),	-- Nerubian Venom-Tipped Dart
 				i(221264),	-- Fungarian Mystic's Cluster
-				i(221265),	-- Charm of the Underground Beast
 				i(221505),	-- [DNT] Rare Cloth - Robe
 
 				i(223005),	-- String of Fungal Fruits
@@ -1861,7 +1844,6 @@ root(ROOTS.Unsorted, {
 				i(223927),	-- Vinewrapped Leather Tunic
 
 				i(223930),	-- Monstrous Chain Pincers
-				i(223931),	-- Black Blood Cowl
 				i(223932),	-- Scarab's Carapace Cap
 				i(223934),	-- Makrura's Foreboding Legplates
 				i(223935),	-- Cabbage Harvester's Pantaloons

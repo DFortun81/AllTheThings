@@ -14,8 +14,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				n(QUESTS, {
 					q(82781, {	-- Attention-Getter
-						--["provider"] = { "n",  },	--
-						--["coord"] = { 57.0, 53.8, ISLE_OF_DORN },
+						["provider"] = { "n", 217248 },	-- Elma
+						["coord"] = { 56.7, 52.4, ISLE_OF_DORN },
 						["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 8 }
 					}),
 					q(82782, {	-- Authenticity in Dress
@@ -65,5 +65,4 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 })));
 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	q(83280),	-- Not Sure if related to the Theater or Because I got a Spark of Omens / Fractured Spark of Omens drop/loot
 }));

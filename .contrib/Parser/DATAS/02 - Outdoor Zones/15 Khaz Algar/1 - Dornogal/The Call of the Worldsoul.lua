@@ -51,12 +51,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82505),	-- Worldsoul: The Stonevault [M]
 				q(82512),	-- Worldsoul: World Boss
 				q(82452),	-- Worldsoul: World Quests
-				--[[ Also Fired / Alex: can confirm 82484, 82513, 82514, 82515 too; 82039 seems like related to caches or sparks?
+				-- Also Fired / Alex: can confirm 82484, 82513, 82514, 82515 too;
 				q(82484),	--
 				q(82513),	--
 				q(82514),	--
 				q(82515),	--
-				q(82039),	--
+				-- only for low level alts
+				q(84668),	-- when pick up any Worldsoul quest on <80s character
+				--[[ 82039 seems like related to caches or sparks?
+				q(82039),	-- after turn in questID 82678 (Archives: The First Disk) & 82679 (Archives: Seeking History)
 				--]]
 			})),
 		}),

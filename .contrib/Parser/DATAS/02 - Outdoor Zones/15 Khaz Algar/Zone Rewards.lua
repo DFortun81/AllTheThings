@@ -91,11 +91,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		--
 		i(229354),	-- Algari Adventurer's Cache
 		i(224784, {	-- Pinnacle Cache
-			--I'm currently placing it here since it can be obtained in different zone
-			--On first opening I recieve:
 			i(224172),	-- Restored Coffer Key
-			--hqt - 83280, Fractured Spark of Omens
-			--hqt - 83281, possibly related to key but dunno (2nd cache (alpha), 1st Seasoned Adventurer's Cache on beta)
 		}),
 		i(228361),	-- Seasoned Adventurer's Cache
 		n(WEEKLY_PROFESSION_KNOWLEDGE, {

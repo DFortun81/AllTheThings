@@ -67,6 +67,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81829, {	-- Skyrider Racing - Pit Plunge
 					["coord"] = { 23.8, 48.4, AZJ_KAHET },
 				}),
+				q(81828, {	-- Skyrider Racing - Rak-Ahat Rush
+					["coord"] = { 71.2, 36.6, AZJ_KAHET },
+				}),
 				q(81831, {	-- Skyrider Racing - Siegehold Scuttle
 					["coord"] = { 40.2, 32.2, AZJ_KAHET },
 				}),

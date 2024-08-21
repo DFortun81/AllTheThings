@@ -1174,7 +1174,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- Special Assignment unlocks tracker
 	q(82157),	-- Special Assignment: Rise of the Colossals
 	q(82146),	-- Special Assignment: Cinderbree Surge
-	--q(83069),	-- Special Assignment: Titanic Resurgence (???)
+	q(83069),	-- Special Assignment: Titanic Resurgence (bugged)
 	q(83070),	-- Special Assignment: Titanic Resurgence
 
 

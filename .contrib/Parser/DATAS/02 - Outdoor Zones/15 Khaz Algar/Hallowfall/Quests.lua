@@ -958,7 +958,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 220718 },	-- Maera Ashyld
 					["coord"] = { 60.5, 60.2, HALLOWFALL },
 					["g"] = {
+						i(224187),	-- Dented Spearhead (QI!)
+						i(224239),	-- Pile of Leather String (QI!)
+						i(224257),	-- Sturdy Locket (QI!)
+						i(224250),	-- Toy Fish (QI!)
+						i(224254),	-- Wooden Figure (QI!)
+						i(224238),	-- Worn Coin (QI!)
 						--
+						i(224272),	-- Calcified Journal
+						i(224274),	-- Sturdy Locket
+						i(224273),	-- Wooden Figure
 					},
 				}),
 			}),
@@ -980,6 +989,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			-- Items turn in quests?
+			q(82835, {	-- Calcified Journal
+				["sourceQuests"] = { 82813 },	-- Time Borrowed
+				["provider"] = { "n", 222813 },	-- Lorel Ironglen
+				["coord"] = { 48.4, 38.9, HALLOWFALL },
+				["cost"] = {{"i", 224272, 1}},	-- 1x Calcified Journal
+			}),
 			q(82846, {	-- Dented Spearhead
 				["sourceQuests"] = { 82810 },	-- Time Found
 				["provider"] = { "n", 213145 },	-- Auralia Steelstrike
@@ -991,6 +1006,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 217813 },	-- Kiera Horth
 				["coord"] = { 44.0, 49.7, HALLOWFALL },
 				["cost"] = {{"i", 224268, 1}},	-- 1x Filigreed Cleric
+			}),
+			q(82815, {	-- Sturdy Locket
+				["sourceQuests"] = { 82813 },	-- Time Borrowed
+				["provider"] = { "n", 220859 },	-- Amy Lychenstone
+				["coord"] = { 43.1, 50.1, HALLOWFALL },
+				["cost"] = {{"i", 224274, 1}},	-- 1x Sturdy Locket
+			}),
+			q(82832, {	-- Wooden Figure
+				["sourceQuests"] = { 82813 },	-- Time Borrowed
+				["provider"] = { "n", 217609 },	-- Barahi Lynflayme
+				["coord"] = { 69.3, 43.8, HALLOWFALL },
+				["cost"] = {{"i", 224273, 1}},	-- 1x Wooden Figure
 			}),
 			--
 			q(82025, {	-- Talk with Sky-Captain Aerthin
@@ -1074,7 +1101,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(82218),	-- 'Break [DNT]' triggered during questID 82217 (Underground Economics) when you click 'Alliance' dialog option on Andee Seabraid
 	--q(xxxxx),	-- '?' triggered during questID 82217 (Underground Economics) when you click 'Horde' dialog option on Andee Seabraid
 	--
-	q(82749),	-- Flag for next quest after weekly reset for Time Lost & Time Found (spellID 452551 - Flag Timer)
+	q(82749),	-- Flag for next quest after weekly reset for Time Lost & Time Found & Time Borrowed (spellID 452551 - Flag Timer)
 	q(83748),	-- triggered after turn in questID 79168 (Light's Gambit) (spellID 457904 - [DNT] Have Played Light's Gambit)
 	q(79941, {["isDaily"]=true,}),	-- <I wish to visit Veneration Groundkeeper> - Justicia Baercennan (n: 225942 @ 41.8, 54.3), nothing happen & reset on daily (spellID 454635)
 	q(79212),	-- not sure why it pop near Defender of the Flame quest chain @ 65.5, 32.2, when I fly here first time

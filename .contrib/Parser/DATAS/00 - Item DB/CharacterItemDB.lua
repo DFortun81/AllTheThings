@@ -539,6 +539,7 @@ iq(227439, 84234);					-- Pristine Skinner's Notes
 iq(227432, 80873);					-- Pristine Tailor's Diagrams
 iq(226520, 84006);					-- Queen's Pheromone
 iq(224038, 82631);					-- Smithing After Saronite
+iq(228943, 84689);					-- Spymaster's Severed Thread
 iq(224024, 82633);					-- Theories of Bodily Transmutation, Chapter 8
 iq(224056, 82626);					-- Uses for Leftover Husks (After You Take Them Apart)
 iq(224007, 82596);					-- Uses for Leftover Husks (How to Take Them Apart)
@@ -546,4 +547,5 @@ iq(224656, 83066);					-- Void-Lit Herbalism Notes
 iq(224655, 83065);					-- Void-Lit Jewelcrafting Notes
 iq(224658, 83068);					-- Void-Lit Leatherworking Notes
 iq(224657, 83067);					-- Void-Lit Skinning Notes
+iq(228946, 84693);					-- Weaver's Lair Profession Table
 iq(224050, 82635);					-- Web Sparkles: Pretty and Powerful
