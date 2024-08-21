@@ -665,7 +665,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		q(25384),	-- Raw Materials
 		q(26704),	-- REUSE
 		q(28270),	-- Riding Shotgun
-		q(29572),	-- Safety is Job One
 		q(25117),	-- Scout's Dishonor
 		q(25506),	-- Sea-Food Chain
 		q(29168),	-- Secondary Targets
@@ -685,16 +684,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		q(24630),	-- The Crone of the Kraul
 		q(29601),	-- The Darkmoon Field Guide
 		q(26837),	-- The Explorers' League Digsite
-		q(29810),	-- The Faceless Ones
 		q(26282),	-- The Favor of Akil'darah
 		q(27634),	-- The God Hakkar
 		q(27018),	-- The Herald <NYI>
 		q(28606),	-- The Keys to the Hot Rod
 		q(29672),	-- The Opening of the Dark Portal
-		q(29683),	-- The Scryer's Scryer
 		q(26243),	-- The World Pillar
 		q(24568),	-- To the Walls!
-		q(28468),	-- Toxic Horrors
 		q(28481),	-- Troubled Spirits of Kel'Theril
 		q(28752),	-- Unstoppable Onslaught
 		q(29170),	-- UNUSED
@@ -1267,7 +1263,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(34677, { ["name"] = "NOT USED", }),	-- NOT USED
 			q(34025, { ["name"] = "Nuke Bastion Rise Tracking Flag", }),	-- Nuke Bastion Rise Tracking Flag
 			q(34738, { ["name"] = "Nullin' Void", }),	-- Nullin' Void
-			q(36903, { ["name"] = "Ogre Waygate", }),	-- Ogre Waygate
 			q(35721, { ["name"] = "Old Balance Treads", }),	-- Old Balance Treads
 			q(32784, { ["name"] = "On the Trail of Blood", }),	-- On the Trail of Blood
 			q(34684, { ["name"] = "One Step Ahead", }),	-- One Step Ahead
@@ -2191,7 +2186,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(39011, { ["name"] = "Black Rook Invasion", }),	-- Black Rook Invasion
 			q(38648, { ["name"] = "Black Rook Orders", }),	-- Black Rook Orders
 			q(38321, { ["name"] = "Blackbeak Overlook", }),	-- Blackbeak Overlook
-			q(42167, { ["name"] = "Blood Gather Bit", }),	-- Blood Gather Bit
 			q(39819, { ["name"] = "Bloodhunt Highland Treasure", }),	-- Bloodhunt Highland Treasure
 			q(39820, { ["name"] = "Bloodhunt Highland Treasure", }),	-- Bloodhunt Highland Treasure
 			q(39821, { ["name"] = "Bloodhunt Highland Treasure", }),	-- Bloodhunt Highland Treasure
@@ -2774,9 +2768,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 
 		-- 7.1.0
 		expansion(EXPANSION.LEGION, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_1_0 } }, {
-			q(45184, { ["name"] = "7.1 Class Hall - Special - PVP - PVP Repeated - Arena - Tracking Quest", }),	-- 7.1 Class Hall - Special - PVP - PVP Repeated - Arena - Tracking Quest
-			q(45183, { ["name"] = "7.1 Class Hall - Special - PVP - PVP Repeated - Ashran - Tracking Quest", }),	-- 7.1 Class Hall - Special - PVP - PVP Repeated - Ashran - Tracking Quest
-			q(45181, { ["name"] = "7.1 Class Hall - Special - PVP - PVP Repeated - Battleground - Tracking Quest", }),	-- 7.1 Class Hall - Special - PVP - PVP Repeated - Battleground - Tracking Quest
 			q(44916, { ["name"] = "99.0 [reuse me]", }),	-- 99.0 [reuse me]
 			q(40243, { ["name"] = "Break Weapon Racks", }),	-- Break Weapon Racks
 			q(45508, { ["name"] = "Durguth", }),	-- Durguth
@@ -3113,7 +3104,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(49155),	--
 			q(49157),	--
 			q(49158),	--
-			q(49163),	--
 			q(49192),	--
 			-- 7.3.0.24730
 			-- 7.3.0.24738

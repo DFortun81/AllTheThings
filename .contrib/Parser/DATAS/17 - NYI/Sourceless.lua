@@ -466,6 +466,10 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 		q(934),	-- Crown of the Earth
 		-- 4.x.x
 		q(26459),	-- Researching the Corruption
+		q(28468),	-- Toxic Horrors
+		q(29572),	-- Safety is Job One
+		q(29683),	-- The Scryer's Scryer
+		q(29810),	-- The Faceless Ones
 		-- 5.0.1
 		q(30549),	-- [DNT] Rearm, Reuse, Recycle TRACKER
 		q(30982),	-- Animal Control
@@ -477,6 +481,7 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 			["description"] = "Area: |cFFf09f26Frostfire Ridge|r",
 			["lvl"] = 10,
 		}),
+		q(36903),	-- Ogre Waygate
 		-- 6.1.0
 		q(37805),	-- Goblin Looted
 		-- 6.2.0
@@ -484,13 +489,19 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 		-- 7.0.3
 		q(39842),	-- One Mage's Trash
 		q(39843),	-- The Muck Stops Here
+		q(42167),	-- Blood Gather Bit
 		q(42480),	-- Assn Rogue - Flavor Event 02 (Alliance)
+		-- 7.1.0
+		q(45184),	-- 7.1 Class Hall - Special - PVP - PVP Repeated - Arena - Tracking Quest
+		q(45183),	-- 7.1 Class Hall - Special - PVP - PVP Repeated - Ashran - Tracking Quest
+		q(45181),	-- 7.1 Class Hall - Special - PVP - PVP Repeated - Battleground - Tracking Quest
 		-- 7.2.0
 		q(46955),	-- Akazamzarak Silenced
 		q(47215),	-- Tracking Quest
 		-- 7.3.0
 		q(48546),	-- Tracking Quest
 		q(49006),	--
+		q(49163),	--
 		-- 7.3.2
 		q(49619),	--
 		q(49620),	-- completed some missions on the Legion Mission Board
