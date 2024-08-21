@@ -821,12 +821,10 @@ battlepettype = function(id, t)							-- Create a BATTLE PET TYPE Object
 	return struct("petTypeID", id, t);
 end
 bpt = battlepettype;									-- Create a BATTLE PET TYPE Object (alternative shortcut)
-cat = function(id, t)									-- Create a CATEGORY Object.
-	return struct("categoryID", id, t);
-end
 category = function(id, t)								-- Create a CATEGORY Object.
 	return struct("categoryID", id, t);
 end
+cat = category
 cl = function(id, specc, t)								-- Create a CHARACTER CLASS Object
 	-- specc is optional
 	if not t then
@@ -843,7 +841,7 @@ cl = function(id, specc, t)								-- Create a CHARACTER CLASS Object
 				specc = 73;
 			end
 		end
-		id = id + (specc / 1000 )
+		id = id + (specc / 1000)
 		t = togroups(t)
 	end;
 	return struct("classID", id, t);
