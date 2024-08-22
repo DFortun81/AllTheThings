@@ -192,7 +192,7 @@ do
 		-- prioritize the correct id
 		local critUID = t.uid or t.criteriaID
 		local critID = t.id or critUID
-		achievementID = achievementID or t.achID or t.achievementID
+		achievementID = achievementID or t.achievementID
 		local criteriaString, criteriaType, completed, quantity, reqQuantity, charName, flags, assetID, quantityString, criteriaID, eligible
 			= GetAchievementCriteriaInfoByID(achievementID, critUID)
 		if IsRetrieving(criteriaString) and critID <= GetAchievementNumCriteria(achievementID) then
@@ -204,6 +204,7 @@ do
 	end
 
 	local QuickAchievementCache = setmetatable({}, { __index = function(t,key)
+		if not key then return end
 		local achObj = SearchForObject("achievementID", key, "key")
 		t[key] = achObj
 		return achObj
@@ -216,7 +217,7 @@ do
 		-- if the Achievement data was already cached, but the criteria is still getting here
 		-- then the Achievement's data field was nil
 		if t._cached then return end
-		local id = t.achID;
+		local id = t.achievementID
 		local achievement = QuickAchievementCache[id]
 		if achievement then
 			-- copy parent Achievement field re-mappings
@@ -228,15 +229,10 @@ do
 		end
 		DelayedCallback(app.report, 1, "Missing Referenced Achievement!",id);
 	end
-	local function default_saved(t)
-		local saved = select(3, GetCriteriaInfo(t))
-		-- only cache true values
-		if saved then return saved end
-	end
 	local function default_name(t)
 		if t.link then return t.link; end
 		local name
-		local achievementID = t.achID;
+		local achievementID = t.achievementID
 		if achievementID then
 			local criteriaID = t.criteriaID;
 			if criteriaID then
@@ -247,24 +243,29 @@ do
 				-- app.PrintDebug("fallback crit name",achievementID,criteriaID,t.uid,t.id)
 				-- criteria nested under a parent of a known Thing
 				local parent = t.parent
-				if parent and parent.key and app.ThingKeys[parent.key] and parent.key ~= "achievementID" then
-					name = parent.name
-					if not IsRetrieving(name) and not name:find("Quest #") then return name; end
+				if parent then
+					local parentKey = parent.key
+					if parentKey and app.ThingKeys[parentKey] and parentKey ~= "achievementID" then
+						name = parent.name
+						if not IsRetrieving(name) and not name:find("Quest #") then return name; end
+					end
 				end
 
 				-- criteria with provider data
 				local providers = t.providers;
 				if providers then
+					local id
 					for k,v in ipairs(providers) do
-						if v[2] > 0 then
+						id = v[2]
+						if id > 0 then
 							if v[1] == "o" then
-								name = app.ObjectNames[v[2]];
+								name = app.ObjectNames[id];
 								break
 							elseif v[1] == "i" then
-								name = GetItemInfo(v[2]);
+								name = GetItemInfo(id);
 								break
 							elseif v[1] == "n" then
-								name = app.NPCNameFromID[v[2]];
+								name = app.NPCNameFromID[id];
 								break
 							end
 						end
@@ -297,7 +298,12 @@ do
 			return name or UNKNOWN
 		end
 	end
-	local cache = app.CreateCache("hash")
+	local cache = app.CreateCache("hash", "Criteria")
+	cache.DefaultFunctions.saved = function(t)
+		local saved = select(3, GetCriteriaInfo(t))
+		-- only cache true values
+		if saved then return saved end
+	end
 	local criteriaFields = {
 		achievementID = function(t)
 			local achievementID = t.achID
@@ -322,16 +328,16 @@ do
 		collected = function(t)
 			-- character saved
 			if t.saved then return 1 end
-			local id = t.achID
+			local id = t.achievementID
 			-- account-wide collected achievement
 			if app.IsAccountTracked("Achievements", id) then return 2 end
 		end,
 		trackable = app.ReturnTrue,
 		saved = function(t)
-			local id = t.achID
+			local id = t.achievementID
 			-- character collected achievement
 			if app.IsCached("Achievements", id) then return 1 end
-			return cache.GetCachedField(t, "saved", default_saved)
+			return cache.GetCachedField(t, "saved")
 		end,
 		index = function(t)
 			return 1;
