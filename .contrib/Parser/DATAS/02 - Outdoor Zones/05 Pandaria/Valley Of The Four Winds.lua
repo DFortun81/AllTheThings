@@ -1530,11 +1530,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 84.0, 21.1, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56110 },	-- Xiao
 					}),
-					q(30526, {	-- Lost and Lonely
-						["description"] = "Requires reputation level of 12,600 Revered with The Tillers to start",
-						["coord"] = { 42.4, 50.2, VALLEY_OF_THE_FOUR_WINDS },
-						["provider"] = { "n", 59533 },	-- Lost Dog
-					}),
 					q(29909, {	-- Low Turnip Turnout
 						["sourceQuests"] = {
 							29877,	-- A Poor Grasp of the Basics

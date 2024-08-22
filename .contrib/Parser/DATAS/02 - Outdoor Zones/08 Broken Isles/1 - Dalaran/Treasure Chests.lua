@@ -12,7 +12,7 @@ root(ROOTS.Zones, {
 					["classes"] = { ROGUE },
 				}),
 				o(269037, {	-- Loose Pebble
-					["description"] = "Need to move Dog from Garrison into Dalaran.",
+					["description"] = "Used to move Dog from your Garrison into Dalaran.",
 					["coords"] = {
 						{ 37.9, 29.0, LEGION_DALARAN },
 						{ 41.1, 54.3, LEGION_DALARAN },
