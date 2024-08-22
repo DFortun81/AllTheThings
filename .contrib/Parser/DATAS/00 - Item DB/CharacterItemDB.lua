@@ -559,3 +559,8 @@ is(modItemId(225000, nil, 11250), 439674);	-- Light-Touched Idol [Rank 1]
 is(modItemId(225000, nil, 11251), 458968);	-- Light-Touched Idol [Rank 2]
 is(modItemId(225000, nil, 11252), 458971);	-- Light-Touched Idol [Rank 3]
 is(modItemId(225000, nil, 11253), 458974);	-- Light-Touched Idol [Rank 4]
+
+is(modItemId(225906, nil, 11280), 455512);	-- Lifeless Necrotic Relic [Rank 4]
+is(modItemId(225906, nil, 11281), 459096);	-- Lifeless Necrotic Relic [Rank 4]
+is(modItemId(225906, nil, 11282), 459101);	-- Lifeless Necrotic Relic [Rank 4]
+is(modItemId(225906, nil, 11283), 459106);	-- Lifeless Necrotic Relic [Rank 4]

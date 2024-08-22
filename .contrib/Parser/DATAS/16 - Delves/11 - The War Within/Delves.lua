@@ -690,48 +690,28 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	n(REWARDS, {
-		n(CURIO, {
-			n(RANK_ONE, {
-				i(225903, {	-- Amorphous Relic [Rank 1]
-					["bonusID"] = 11265
-				}),
-				i(225900, {	-- Light-Touched Idol [Rank 1]
-					["bonusID"] = 11250
-				}),
-			}),
-			n(RANK_ONE, {
-				i(225903, {	-- Amorphous Relic [Rank 2]
-					["bonusID"] = 11266
-				}),
-				i(225900, {	-- Light-Touched Idol [Rank 2]
-					["bonusID"] = 11251
-				}),
-			}),
-			n(RANK_ONE, {
-				i(225903, {	-- Amorphous Relic [Rank 3]
-					["bonusID"] = 11267
-				}),
-				i(225900, {	-- Light-Touched Idol [Rank 3]
-					["bonusID"] = 11252
-				}),
-			}),
-			n(RANK_ONE, {
-				i(225903, {	-- Amorphous Relic [Rank 4]
-					["bonusID"] = 11268
-				}),
-				i(225900, {	-- Light-Touched Idol [Rank 4]
-					["bonusID"] = 11253
-				}),
-			}),
-		}),
+
 
 		-- Curio
 
 		i(228560),	-- Ancient Curio (QI!/QS!)
 		i(228581),	-- Ancient Curio (QI!/QS!)
-		i(225902),	-- Idol of Final Will
-		i(225906),	-- Lifeless Necrotic Relic
 
+
+
+
+
+
+
+		i(225906, {	-- Lifeless Necrotic Relic
+		["bonusID"] = 11280,
+	}),
+	i(225906, {	-- Lifeless Necrotic Relic
+	["bonusID"] = 11281,
+}),
+i(225906, {	-- Lifeless Necrotic Relic
+					["bonusID"] = 11282,
+				}),
 		i(225905),	-- Olden Seeker Relic
 		i(218129),	-- Porcelain Arrowhead Idol
 		i(229353),	-- Rage-Filled Idol
@@ -745,7 +725,62 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(221496),	-- Wriggle (PET!) [Kobyss]
 		}),
 		n(CURIO, {
-
+			n(RANK_ONE, {
+				i(225903, {	-- Amorphous Relic [Rank 1]
+					["bonusID"] = 11265,
+				}),
+				i(225902, {	-- Idol of Final Will
+					["bonusID"] = 11260,
+				}),
+				i(225906, {	-- Lifeless Necrotic Relic
+					["bonusID"] = 11280,
+				}),
+				i(225900, {	-- Light-Touched Idol [Rank 1]
+					["bonusID"] = 11250,
+				}),
+			}),
+			n(RANK_TWO, {
+				i(225903, {	-- Amorphous Relic [Rank 2]
+					["bonusID"] = 11266,
+				}),
+				i(225902, {	-- Idol of Final Will
+					["bonusID"] = 11261,
+				}),
+				i(225906, {	-- Lifeless Necrotic Relic
+					["bonusID"] = 11281,
+				}),
+				i(225900, {	-- Light-Touched Idol [Rank 2]
+					["bonusID"] = 11251,
+				}),
+			}),
+			n(RANK_THREE, {
+				i(225903, {	-- Amorphous Relic [Rank 3]
+					["bonusID"] = 11267,
+				}),
+				i(225902, {	-- Idol of Final Will
+					["bonusID"] = 11262,
+				}),
+				i(225906, {	-- Lifeless Necrotic Relic
+					["bonusID"] = 11282,
+				}),
+				i(225900, {	-- Light-Touched Idol [Rank 3]
+					["bonusID"] = 11252,
+				}),
+			}),
+			n(RANK_FOUR, {
+				i(225903, {	-- Amorphous Relic [Rank 4]
+					["bonusID"] = 11268,
+				}),
+				i(225902, {	-- Idol of Final Will
+					["bonusID"] = 11263,
+				}),
+				i(225906, {	-- Lifeless Necrotic Relic
+					["bonusID"] = 11283,
+				}),
+				i(225900, {	-- Light-Touched Idol [Rank 4]
+					["bonusID"] = 11253,
+				}),
+			}),
 		}),
 		filter(RECIPES, {
 			i(223085),	-- Design: Fractured Gemstone Locket (RECIPE!)
