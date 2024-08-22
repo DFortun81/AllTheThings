@@ -7,9 +7,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		n(QUESTS, {
 			-- Using Questauren These gets completed (Probably Inbetween Bronzebeard Family and Violet Impact)
 			q(82199),	--
-			q(81966),	-- Slept like a Rock
 			--
 			header(HEADERS.Achievement, 20118, {	-- The Isle of Dorn
+				q(81966, {	-- Slept like a Rock
+					["maps"] = { LEGION_DALARAN },
+				}),
+				q(78717, {	-- A Mysterious Warning
+					["qg"] = 213624,	-- Magni Bronzebeard
+					["coord"] = { 45.3, 57.4, LEGION_DALARAN },
+					["sourceQuests"] = { 81966 },	-- Slept like a Rock
+				}),
 				------ Chapter 1 ------
 				q(78529, {	-- Violet Impact
 					["sourceQuests"] = { 80500 },	-- The Bronzebeard Family
