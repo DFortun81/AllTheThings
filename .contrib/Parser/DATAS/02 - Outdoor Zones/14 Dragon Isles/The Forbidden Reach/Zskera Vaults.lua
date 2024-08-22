@@ -863,9 +863,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 								i(204443),	-- Blacksteel Hammer
 							},
 						}),
-						o(390559, {	-- Box of Rocks
-							i(199216),	-- A Box of Rocks
-						}),
 						o(392570, {	-- Chain-Bound Primordial Cache
 							["coord"] = { 28.2, 56.6, THE_FORBIDDEN_REACH },
 							["questID"] = 75176,
@@ -1032,7 +1029,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 								i(193908),	-- Kobaldt (PET!)
 							},
 						}),
-						o(390559, {	-- Box of Rocks
+						o(390559, {	-- Box of Rocks (confirmed)
 							["coord"] = { 28.2, 57.6, THE_FORBIDDEN_REACH },
 							["questID"] = 75152,
 							["g"] = {
