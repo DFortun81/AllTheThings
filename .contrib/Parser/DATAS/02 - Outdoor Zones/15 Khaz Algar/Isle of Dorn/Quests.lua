@@ -47,6 +47,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78718,	-- Strengthen the Wards
 					 },
 				}),
+				q(79105, {	-- Breach
+					["qg"] = 214908,	-- Alleria Windrunner
+					["coord"] = { 50.4, 50.4, 2305 },	-- Quest Dalaran
+					["sourceQuests"] = { 78722 },	-- To Khaz Algar!
+				}),
 				------ Chapter 1 ------
 				q(78529, {	-- Violet Impact
 					["sourceQuests"] = { 80500 },	-- The Bronzebeard Family
