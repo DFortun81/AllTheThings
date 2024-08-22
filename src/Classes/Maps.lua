@@ -612,7 +612,7 @@ local function HarvestExploration(simplify)
 							-- Make sure the exploration header has all the objects
 							for _,areaID in ipairs(areaIDs) do
 								if not byExplorationID[areaID] then
-									o = app.CreateExploration(areaID);
+									local o = app.CreateExploration(areaID);
 									o.mapID = mapID;
 									o.parent = explorationHeader;
 									tinsert(explorationHeader.g, o);
