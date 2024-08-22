@@ -31,6 +31,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82533, {	-- Dye! Dye Dye!
 					["coord"] = { 73.2, 41.2, AZJ_KAHET },
 				}),
+				q(83718, {	-- Eggstraction
+					["coord"] = { 79.0, 78.5, AZJ_KAHET },
+				}),
 				q(82481, {	-- Enforcer Extermination
 					["coord"] = { 56.1, 58.4, AZJ_KAHET },
 				}),
@@ -94,6 +97,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(83536, {	-- Undertide Undertaker
 					["coord"] = { 44.6, 40.9, AZJ_KAHET },
 				}),
+				q(79958, {	-- Worm Sign, Sealed, Delivered
+					["coord"] = { 72.6, 77.1, AZJ_KAHET },
+				}),
 				q(79959, {	-- Wormcraft Rumble
 					["coord"] = { 73.0, 83.6, AZJ_KAHET },
 				}),
@@ -101,6 +107,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82414, {	-- Special Assignment: A Pound of Cure
 					["coord"] = { 63.9, 17.3, AZJ_KAHET },
 				}),
+				--q(82531, {	-- Special Assignment: Bombs from Behind
+				--	["coord"] = { x, y, AZJ_KAHET },
+				--}),
 			}),
 		}),
 	}),

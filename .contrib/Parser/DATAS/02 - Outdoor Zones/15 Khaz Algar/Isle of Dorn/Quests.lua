@@ -1171,12 +1171,5 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(82541),	-- 'Stay awhile and listen' - Merrix (n: 214916), after turn in 79157 (or after accept 79224)
 	-- Side quests
 	q(81571),	-- Keep Ending Scene Active [DNT] (spellID 442907), rp after turn in questID 78999 (Heart of a Hero)
-	-- Special Assignment unlocks tracker
-	q(82157),	-- Special Assignment: Rise of the Colossals
-	q(82146),	-- Special Assignment: Cinderbree Surge
-	q(83069),	-- Special Assignment: Titanic Resurgence (bugged)
-	q(83070),	-- Special Assignment: Titanic Resurgence
-
-
 	q(80539),	-- Completing The Machine Speakeasy (79546)
 });

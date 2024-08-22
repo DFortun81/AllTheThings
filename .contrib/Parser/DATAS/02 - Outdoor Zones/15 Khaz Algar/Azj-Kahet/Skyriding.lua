@@ -134,9 +134,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80278, {	-- Maddening Deep Dip
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 76.6, 81.0, AZJ_KAHET },
+					["provider"] = { "n", 219565 },	-- Bronze Timekeeper
+					["coord"] = { 77.9, 79.6, AZJ_KAHET },
 					["g"] = {
 						ach(20429),	-- Maddening Deep Dip: Bronze
 						ach(20430),	-- Maddening Deep Dip: Silver
@@ -144,9 +143,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80284, {	-- Maddening Deep Dip - Advanced
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 76.6, 81.0, AZJ_KAHET },
+					["provider"] = { "n", 219565 },	-- Bronze Timekeeper
+					["coord"] = { 77.9, 79.6, AZJ_KAHET },
 					["g"] = {
 						ach(20432),	-- Maddening Deep Dip Advanced: Bronze
 						ach(20433),	-- Maddening Deep Dip Advanced: Silver
@@ -154,9 +152,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80290, {	-- Maddening Deep Dip - Reverse
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 76.6, 81.0, AZJ_KAHET },
+					["provider"] = { "n", 219565 },	-- Bronze Timekeeper
+					["coord"] = { 77.9, 79.6, AZJ_KAHET },
 					["g"] = {
 						ach(20435),	-- Maddening Deep Dip Reverse: Bronze
 						ach(20436),	-- Maddening Deep Dip Reverse: Silver

@@ -1,6 +1,7 @@
 -------------------------------------------------------------------
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
+local FIRELIGHT_RUBY = 224642;
 SNUFFLING = createHeader({
 	readable = "Snuffling",
 	--icon = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",
@@ -38,6 +39,44 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				i(223133),	-- Formula: Illusory Adornment: Crystal (RECIPE!)
 			}),
 			n(VENDORS, {
+				n(216164, {	-- Gnawbles
+					["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
+					["g"] = {
+						i(224726, {	-- Waxy Box of Rocks
+							["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+						}),
+						i(224724, {	-- Waxy Bundle of Dust
+							["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+						}),
+						i(224725, {	-- Waxy Bundle of Herbs
+							["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+						}),
+						i(224723, {	-- Waxy Bundle of Leather
+							["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+						}),
+						i(224722, {	-- Waxy Bundle of Resonant Crystals
+							["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+						}),
+						i(224646, {	-- Coppers (PET!)
+							["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+						}),
+						i(224643, {	-- Pet-Sized Candle (TOY!)
+							["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+						}),
+						i(224761, {	-- Quickwick Candle Kit
+							["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+						}),
+						i(224649, {	-- Wax Arsenal
+							["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+						}),
+						i(224721, {	-- Wax-Sealed Box
+							["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+						}),
+						i(224760, {	-- Wobbles (PET!)
+							["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
+						}),
+					},
+				}),
 			}),
 		}),
 	}),

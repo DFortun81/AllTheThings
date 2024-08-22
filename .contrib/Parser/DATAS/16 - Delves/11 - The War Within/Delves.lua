@@ -240,7 +240,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		n(208728),	-- Treasure Wraith
 	}),
 	m(EARTHCRAWL_MINES, {
-		["icon"] = app.asset("Category_Delves"),
+		--["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 38.6, 73.9, ISLE_OF_DORN },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -278,7 +278,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	m(FUNGAL_FOLLY, {
-		["icon"] = app.asset("Category_Delves"),
+		--["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 51.9, 65.5, ISLE_OF_DORN },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -319,7 +319,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	m(KRIEGVALS_REST, {
-		["icon"] = app.asset("Category_Delves"),
+		--["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 62.1, 42.7, ISLE_OF_DORN },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -357,7 +357,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	m(MYCOMANCER_CAVERN, {
-		["icon"] = app.asset("Category_Delves"),
+		--["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 71.1, 31.1, HALLOWFALL },
 		["g"] = {
 			i(217999),	-- Tasty Mussel
@@ -395,7 +395,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	m(NIGHTFALL_SANCTUM, {
-		["icon"] = app.asset("Category_Delves"),
+		--["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 34.6, 46.8, HALLOWFALL },
 		["g"] = {
 			i(216420),	-- Signal Flare (QI!)
@@ -427,7 +427,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	m(SKITTERING_BREACH, {
-		["icon"] = app.asset("Category_Delves"),
+		--["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 65.5, 61.5, HALLOWFALL },
 		["g"] = {
 			i(225719),	-- Light's Mantle
@@ -462,7 +462,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	m(TAK_RETHAN_ABYSS, {
-		["icon"] = app.asset("Category_Delves"),
+		--["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 55.5, 74.9, AZJ_KAHET },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -499,7 +499,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	m(THE_DREAD_PIT, {
-		["icon"] = app.asset("Category_Delves"),
+		--["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 74.1, 37.7, THE_RINGING_DEEPS },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -533,7 +533,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	m(THE_SINKHOLE, {
-		["icon"] = app.asset("Category_Delves"),
+		--["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 50.6, 53.2, HALLOWFALL },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -567,7 +567,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	m(THE_SPIRAL_WEAVE, {
-		["icon"] = app.asset("Category_Delves"),
+		--["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 46.6, 25.7, AZJ_KAHET },
 		["g"] = {
 			i(216772),	-- Whispering Explosives (QI!)
@@ -602,7 +602,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	m(THE_UNDERKEEP, {
-		["icon"] = app.asset("Category_Delves"),
+		--["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 58.1, 65.8, 2213 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -632,7 +632,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	m(THE_WATERWORKS, {
-		["icon"] = app.asset("Category_Delves"),
+		--["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 46.3, 48.5, THE_RINGING_DEEPS },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -670,7 +670,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	m(ZEKVIRS_LAIR, {
-		["icon"] = app.asset("Category_Delves"),
+		--["icon"] = app.asset("Category_Delves"),
 		["coord"] = { 6.7, 33.9, NERUBAR },
 		["g"] = {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 } }, {

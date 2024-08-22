@@ -2059,6 +2059,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(72819),	-- Shadowlands (60) E
 		-- PVP
 		q(79332, {["repeatable"]=true}),	-- Triggers after winning a Brawl: Battleground Blitz (possibly only when theres an elistment bonus?)
+		q(80413, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
+		q(80414, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
 		-- Timewalking - Master of Timeways Triggers
 		q(78204),	-- First Week Trigger (spellID 423861)
 	}),
@@ -2067,6 +2069,11 @@ root(ROOTS.HiddenQuestTriggers, {
 	--     TWW      --
 	------------------
 	expansion(EXPANSION.TWW, {
+		-- Craftable / Contracts
+		q(84482),	-- Contract: Assembly of the Deeps (spellID 454936)
+		q(84473),	-- Contract: Council of Dornogal (spellID 454931)
+		q(84479),	-- Contract: Hallowfall Arathi (spellID 454937)
+		q(84478),	-- Contract: The Severed Threads (spellID 454940)
 		-- Craftable / Sparks? (TODO: PH move to whatever place is better)
 		q(83280, {["isWeekly"]=true,}),	-- Fractured Spark of Omens
 		q(83281, {["isWeekly"]=true,}),	-- Fractured Spark of Omens
@@ -2074,7 +2081,16 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(80415, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
 		q(80416, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
 		-- Special Assigment unlock tracker
-
+		q(82159, {["repeatable"]=true,}),	-- Special Assignment: A Pound of Cure (but it is Bombs from Behind?)
+		q(82161, {["repeatable"]=true,}),	-- Special Assignment: Bombs from Behind
+		q(82146, {["repeatable"]=true,}),	-- Special Assignment: Cinderbree Surge
+		q(82158, {["repeatable"]=true,}),	-- Special Assignment: Lynx Rescue
+		q(82157, {["repeatable"]=true,}),	-- Special Assignment: Rise of the Colossals
+		q(82155, {["repeatable"]=true,}),	-- Special Assignment: Shadows Below
+		q(82154, {["repeatable"]=true,}),	-- Special Assignment: Titanic Resurgence
+		q(83069, {["repeatable"]=true,}),	-- Special Assignment: Titanic Resurgence (bugged)
+		q(83070, {["repeatable"]=true,}),	-- Special Assignment: Titanic Resurgence
+		q(82156, {["repeatable"]=true,}),	-- Special Assignment: When the Deeps Stir
 	}),
 
 	--------------------

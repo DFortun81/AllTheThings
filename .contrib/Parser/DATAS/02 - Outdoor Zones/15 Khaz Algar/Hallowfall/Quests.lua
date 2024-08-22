@@ -1105,7 +1105,4 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(83748),	-- triggered after turn in questID 79168 (Light's Gambit) (spellID 457904 - [DNT] Have Played Light's Gambit)
 	q(79941, {["isDaily"]=true,}),	-- <I wish to visit Veneration Groundkeeper> - Justicia Baercennan (n: 225942 @ 41.8, 54.3), nothing happen & reset on daily (spellID 454635)
 	q(79212),	-- not sure why it pop near Defender of the Flame quest chain @ 65.5, 32.2, when I fly here first time
-	-- Special Assignment unclocks tracker
-	q(82158),	-- Special Assignment: Lynx Rescue
-	q(82161),	-- Special Assignment: Bombs from Behind
 });

@@ -103,6 +103,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82288, {	-- Work Hard, Play Hard
 					["coord"] = { 41.8, 55.3, HALLOWFALL },
 				}),
+				--
+				--q(82852, {	-- Special Assignment: Lynx Rescue
+				--	["coord"] = { x, y, HALLOWFALL },
+				--}),
+				--q(82787, {	-- Special Assignment: Rise of the Colossals
+				--	["coord"] = { x, y, HALLOWFALL },
+				--	["g"] = {
+				--		i(224183),	-- Bleak Chum (QI!)
+				--	},
+				--}),
 			}),
 		}),
 	}),

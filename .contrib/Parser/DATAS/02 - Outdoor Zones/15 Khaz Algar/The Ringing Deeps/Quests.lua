@@ -1170,6 +1170,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 213875 },	-- Speaker Jurlax
 				["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
 			}),
+			q(83165, {	-- Badly Behaved Bot
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "n", 223759 },	-- Sinruna
+				["coord"] = { 60.2, 57.0, THE_RINGING_DEEPS },
+			}),
 			------ Miscellaneous ------
 			q(78918, {	-- Brax's Brass Knuckles
 				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
@@ -1230,6 +1235,4 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(83475),	-- [DNT] Repair Console (spellID 455981) Water Console (o: 226624) @ 45.3, 46.4, THE_RINGING_DEEPS)
 	q(83482),	-- [DNT] Repair Console (spellID 456005) Lost Console (o: 226641 @ 56.4, 22.5, THE_RINGING_DEEPS)
 	--q(82991),	-- when bind hearthstone location to Camp Murroch tavern
-	-- Special Assignment unlock tracker
-	q(82155),	-- Special Assignment: Shadows Below
 });

@@ -81,7 +81,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					q(82007, {	-- Tale of Tails
 						i(220782),	-- Thunder (PET!)
 					}),
-
+					-- unsure if this is only related to this EF or can be looted outside of it
+					q(79225, {	-- The Lost Flame
+						["provider"] = { "i", 212333 },	-- Expedition Tinderbox
+						["coord"] = { 61.1, 9.6, HALLOWFALL },
+						["g"] = {
+							i(212333),	-- Expedition Tinderbox (QS!/QI!)
+						},
+					}),
 				}),
 				n(QUESTS, sharedData({ ["isWeekly"] = true }, {
 					q(79346, {	-- Chew On That
@@ -305,12 +312,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["questID"] = 81612,
 						--["isWeekly"] = true,
 					}),
+					o(437112, {	-- Claimmer's Kit
+						--when you loot it - other treasure which require this item vanish, so cannot be looted on same week?
+						["coord"] = { 61.9, 6.0, HALLOWFALL },
+						["questID"] = 80687,
+						--["isWeekly"] = true,
+						["g"] = {
+							i(218354),	-- Clammer's Pry Bar
+						},
+					}),
 					o(457271, {	-- Crabber Supplies
 						["coord"] = { 62.4, 16.2, HALLOWFALL },
 						["questID"] = 84342,
 						["isWeekly"] = true,
 						["g"] = {
 							i(226018),	-- Darkened Arathi Cape (COSMETIC!)
+						},
+					}),
+					o(419714, {	-- Expedition Pack
+						["coord"] = { 61.1, 9.6, HALLOWFALL },
+						["g"] = {
+							i(212333),	-- Expedition Tinderbox (QS!/QI!)
 						},
 					}),
 					o(435008, {	-- Farmhand Stash
@@ -325,13 +347,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["cost"] = {{"i", 218107, 1}},	-- 1x Sparkbug Jar
 						["g"] = {
 							i(220771),	-- Hallowed Glowfly (PET!)
-						},
-					}),
-					o(453186, {	-- Nightfarm Growthling
-						--["coord"] = { 66.8, 25.3, HALLOWFALL },
-						--["questID"] = ,
-						["g"] = {
-							i(221546),	-- Nightfarm Growthling (PET!)
 						},
 					}),
 					o(453186, {	-- Nightfarm Growthling
@@ -451,7 +466,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	-- Hidden stuff in area, that require different light buffs
 	-- could be weekly, idk
 	q(83211),	-- Herb @ 67.1, 23.3
-	q(83208),	-- Harb @ 66.3, 23.6
+	q(83208),	-- Herb @ 66.3, 23.6
 	q(83223),	-- Herb @ 62.1, 13.0
 	q(81843),	-- Herb @ 63.5, 19.6
 	q(83222),	-- Herb @ 61.5, 16.5

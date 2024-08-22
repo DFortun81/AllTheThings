@@ -1131,6 +1131,4 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- Dialogs
 	q(81946),	-- 'Stay awhile and listen' - Anduin Wrynn - druing questID 78231 (Like a Spider on the Wall)
 	q(82033),	-- 'Stay awhile and listen' - Alleria Windrunner - during questID 78248 (What We Still Have)
-	-- Special Assignment unlocks tracker
-	q(82159),	-- Special Assignment: A Pound of Cure (but it is Bombs from Behind?)
 });

@@ -1380,7 +1380,6 @@ root(ROOTS.Unsorted, {
 				i(218123),	-- Glowing Shard
 				i(218122),	-- Stolen Relic \\ Stolen Shard
 				i(218340),	-- Chest of Playtest Equipment
-				i(218354),	-- Clammer's Pry Bar
 
 				i(219255),	-- Puntable Rotten Little Helper
 				i(219286),	-- Puntable Globe Yeti
@@ -1392,9 +1391,7 @@ root(ROOTS.Unsorted, {
 				i(223869),	-- DO NOT USE Prismatic Codex
 				i(223897),	-- Ruptured Engine \\ Ruptered Engine
 
-				i(224183),	-- Bleak Chum
 				i(224269),	-- [DNT] 11.0 Food/Drink Template - Food Only - Level 75 - Required Level 70
-				i(224292),	-- Radiant Fuel Shard
 				i(224767),	-- Giant Candle Parts
 				i(224786),	-- Skeleton King Outfit
 				i(224791),	-- Golden Lord Outfit \\ Golden Ruler Outfit
@@ -1565,7 +1562,6 @@ root(ROOTS.Unsorted, {
 				i(212223),	-- Elemental Essence
 				i(212224),	-- Titan Relics
 				i(212331),	-- The Unusual Bug
-				i(212333),	-- Expedition Tinderbox
 				i(212339),	-- A Small Bag of Seeds
 				i(212349),	-- Sizzling Spring Water [DNT][UNUSED]
 				i(212344),	-- Chest Key
@@ -1622,7 +1618,6 @@ root(ROOTS.Unsorted, {
 				i(219384),	-- Tenir and the Order of Night
 				i(219388),	-- Sacred Flame Torch
 				i(219400),	-- Faerin's Torch of Holy Flame
-				i(219522),	-- Radiant Fuel Crystal
 				i(219804),	-- [DNT] Antiparalytic Serum
 				i(219939),	-- Alleria's Crystal
 				i(220116),	-- Completed Market Audit

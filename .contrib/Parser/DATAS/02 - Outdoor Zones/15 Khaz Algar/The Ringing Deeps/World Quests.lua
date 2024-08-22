@@ -67,6 +67,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(219468),	-- Mining Tools (QI!)
 					},
 				}),
+				q(82518, {	-- Pipe Patcher
+					["coord"] = { 51.1, 33.9, THE_RINGING_DEEPS },
+				}),
 				q(83101, {	-- Reaching for Resources
 					["coord"] = { 55.2, 50.8, THE_RINGING_DEEPS },
 				}),
@@ -100,11 +103,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				--
 				q(81691, {	-- Special Assignment: Shadows Below
 					["coord"] = { 68.2, 48.4, THE_RINGING_DEEPS },
+					["g"] = {
+						i(219522),	-- Radiant Fuel Crystal
+						i(224292),	-- Radiant Fuel Shard
+					},
 				}),
 				q(83229, {	-- Special Assignment: When the Deeps Stir
-					["coord"] = { 52.9, 14.7, THE_RINGING_DEEPS },
-				}),
-				q(82156, {	-- Special Assignment: When the Deeps Stir
 					["coord"] = { 52.9, 14.7, THE_RINGING_DEEPS },
 				}),
 			}),
