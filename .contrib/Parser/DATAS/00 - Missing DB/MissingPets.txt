@@ -1,3 +1,5 @@
+5.0.3.15882
+pet(199),	-- Kirin Tor Familiar
 11.0.0.54311
 pet(4478),	-- Caustic Oozeling
 pet(4485),	-- Mossy Snail

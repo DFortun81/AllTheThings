@@ -358,7 +358,6 @@ i(1708),	-- t Nectar \\ Sweet Nectar
 i(1711),	-- ll of Stamina II \\ Scroll of Stamina II
 i(1712),	-- Scroll of Versatility II \\ ll of Versatility II \\ Scroll of Spirit II
 i(1724),	-- Deprecated Jungle Trail Pack
-i(1725),	-- e Knapsack \\ Large Knapsack
 i(1819),	-- ing Pick \\ Gouging Pick
 i(1851),	-- Cleansing Water
 i(1877),	-- Book of Rejuvenation III
@@ -5526,6 +5525,7 @@ i(228699),	-- Ring of Demonic Guile
 i(228722),	-- Hand of Justice
 1.15.3.55515
 i(228749),	-- Splinter of Nordrassil
+i(228759),	-- Eskhandar's Collar
 i(228797),	-- Grimoire of Fel Armor
 1.15.3.55563
 i(228746),	-- Fluorescent Green Mechanostrider
@@ -10546,6 +10546,7 @@ i(43721),	-- van's Copper Coin \\ Stalvan's Copper Coin
 i(43722),	-- Vareesa's Copper Coin \\ esa's Copper Coin \\ Vereesa's Copper Coin
 i(43723),	-- oth's Copper Coin \\ Vargoth's Copper Coin
 i(43739),	-- dnaught Battleplate \\ Dreadnaught Battleplate
+i(43824),	-- Schools of Arcane Magic - Mastery \\ The Schools of Arcane Magic - Mastery
 i(43825),	-- Charred Glyph \\ red Glyph \\ Glyph of Rune Tap
 i(43826),	-- Charred Glyph \\ red Glyph \\ Glyph of Blood Boil \\ Glyph of Blood Strike
 i(43827),	-- Charred Glyph \\ red Glyph \\ Glyph of Death Strike
@@ -10682,6 +10683,7 @@ i(44720),	-- Test Defense Rating Ring +3320
 i(44728),	-- Endless Rejuvenation Potion
 i(44729),	-- frost Powder \\ Everfrost Powder
 i(44730),	-- Socket Test Helm
+i(44738),	-- n Tor Familiar \\ Kirin Tor Familiar
 i(44743),	-- ist Acolyte's Hood \\ Cultist Acolyte's Hood \\ Cultist Acolyte's Hood Target
 i(44749),	-- ed Yeti Cheese \\ Salted Yeti Cheese
 i(44750),	-- tain Water \\ Mountain Water
@@ -14340,7 +14342,6 @@ i(62245),	-- er Inlaid Leaf \\ Silver Inlaid Leaf
 i(62248),	-- Elementium Axe \\ The Elementium Axe
 i(62251),	-- scroll of Fortitude II \\ Runescroll of Fortitude II
 i(62252),	-- DEM's Armor Test
-i(62254),	-- t's Plate Belt \\ Grunt's Plate Belt
 i(62268),	-- led Flipper \\ Mangled Flipper
 i(62269),	-- nse Jaws \\ Immense Jaws
 i(62270),	-- ved Fang \\ Grooved Fang
@@ -24623,15 +24624,7 @@ i(139783),	-- Weathered Relic \\ hered Relic
 i(139785),	-- Tales of the Broken Isles \\ s of the Broken Isles
 i(139787),	-- Eon Winder \\ Winder
 i(139788),	-- Containment Crystal \\ ainment Crystal
-i(139795),	-- Draught of Courage \\ ght of Courage
-i(139799),	-- Pathfinder's Saddle \\ finder's Saddle
-i(139801),	-- Lucky Doodad \\ y Doodad
-i(139802),	-- Auspicious Fetish \\ icious Fetish
 i(139804),	-- Glacial Fang \\ ial Fang
-i(139811),	-- Necklace of Endless Memories \\ lace of Endless Memories
-i(139812),	-- Potion of Triton \\ on of Triton
-i(139813),	-- Swift Boots \\ t Boots
-i(139814),	-- Carrot on a Stick \\ ot on a Stick
 i(139819),	-- Embers of the Firelands \\ rs of the Firelands
 i(139821),	-- Omen's Bidding \\ 's Bidding
 i(139822),	-- Dust of Azeroth \\ of Azeroth
@@ -24686,10 +24679,6 @@ i(139870),	-- Silver Hand Ornament \\ er Hand Ornament
 i(139871),	-- Holy Figurine \\ Figurine
 i(139872),	-- Light's Command \\ t's Command
 i(139874),	-- Sanity Edge \\ ty Edge
-i(139875),	-- Undead Token \\ ad Token
-i(139876),	-- Rune of Reckoning \\ of Reckoning
-i(139877),	-- Death's Touch \\ h's Touch
-i(139878),	-- Relic of the Ebon Blade \\ c of the Ebon Blade
 i(139880),	-- Old Fillmaff's Scribbled Notes \\ Fillmaff's Scribbled Notes
 i(139882),	-- Vial of Hippogryph Pheromones \\ of Hippogryph Pheromones
 i(139884),	-- Ancient Mana Fragments \\ ent Mana Fragments
@@ -25020,9 +25009,6 @@ i(140571),	-- Potion of Energy \\ on of Energy
 i(140572),	-- Hasty Pocketwatch \\ y Pocketwatch
 i(140573),	-- Elixir of Overwhelming Focus \\ ir of Overwhelming Focus
 i(140574),	-- Mysterious Lightbound Object \\ erious Lightbound Object
-i(140581),	-- Sturdy Hiking Boots \\ dy Hiking Boots
-i(140582),	-- Bottomless Flask \\ omless Flask
-i(140583),	-- Vial of Timeless Breath \\ of Timeless Breath
 i(140584),	-- Player Experience \\ er Experience
 i(140588),	-- Survivalist Bahn \\ ivalist Bahn
 i(140589),	-- Archivist Melinda \\ ivist Melinda
@@ -26090,12 +26076,9 @@ i(147549),	-- Hero's Trophy \\ 's Trophy
 i(147550),	-- Adventurer's Trophy \\ nturer's Trophy
 i(147551),	-- Pathfinder's Trophy \\ finder's Trophy
 i(147552),	-- Embers of the Firelands \\ rs of the Firelands
-i(147553),	-- Shard of Twisting Nether \\ d of Twisting Nether
-i(147554),	-- Harpy Feather \\ y Feather
 i(147555),	-- Vial of Sight \\ of Sight
 i(147556),	-- Cloak of Concealment \\ k of Concealment
 i(147557),	-- Fel Imp Tooth \\ Imp Tooth
-i(147558),	-- Pouch of Wonder \\ h of Wonder
 i(147560),	-- Horn of Rage \\ of Rage
 i(147561),	-- Relic of Demonic Influence \\ c of Demonic Influence
 i(147563),	-- Stone Totem \\ e Totem
@@ -26107,7 +26090,6 @@ i(147568),	-- Essence of Nether \\ nce of Nether
 i(147569),	-- Arcane Trap \\ ne Trap
 i(147570),	-- Dreamgrove Leaf \\ mgrove Leaf
 i(147571),	-- Demonic Standard \\ nic Standard
-i(147572),	-- Sigil of Ebon Frost \\ l of Ebon Frost
 i(147579),	-- Tome of the Legionfall Magi \\ of the Legionfall Magi
 i(147581),	-- Depleted Azsharan Seal \\ eted Azsharan Seal
 i(147619),	-- [QA] Big Stack Test \\ Big Stack Test
@@ -30104,56 +30086,18 @@ i(188187),	-- Quickfinger Pocketlifters
 i(188188),	-- Worldbinder Tricorne
 i(188189),	-- Shadowwrap Leggings
 i(188190),	-- Shoulderpads of the Primordial
+10.2.0.51297
+i(210768),	-- Viridescent Bouquet of Aspect's Dreaming Crests \\ Bouquet of Aspect's Dreaming Crests
+10.2.0.51425
+i(210923),	-- Clutch of Wyrm's Dreaming Crests
+10.2.6.53840
+i(220205),	-- Satchel of Drake's Dreaming Crests
 11.0.0.54311
 i(214616),	-- Engraved Dagger
-i(219407),	-- Earthen Chestpiece
-i(219408),	-- Earthen Striders
-i(219409),	-- Earthen Handguards
-i(219410),	-- Earthen Coif
-i(219411),	-- Earthen Greaves
-i(219412),	-- Earthen Belt
-i(219416),	-- Earthen Helm
-i(219417),	-- Earthen Breastplate
-i(219418),	-- Earthen Sabatons
-i(219419),	-- Earthen Gauntlets
-i(219420),	-- Earthen Legguards
-i(219421),	-- Earthen Mantle
-i(219422),	-- Earthen Girdle
-i(219423),	-- Earthen Vestment
-i(219424),	-- Earthen Sandals
-i(219425),	-- Earthen Handbraces
-i(219426),	-- Earthen Hood
-i(219427),	-- Earthen Kilt
-i(219430),	-- Earthen Collar
-i(219431),	-- Earthen Slippers
-i(219432),	-- Earthen Gloves
-i(219433),	-- Earthen Waistcoat
-i(219434),	-- Earthen Toolbelt
-i(219435),	-- Earthen Cogwheel
-i(219436),	-- Earthen Chestguard
-i(219437),	-- Earthen Footguards
-i(219438),	-- Earthen Handwraps
-i(219439),	-- Earthen Mining Hat
-i(219440),	-- Earthen Leggings
-i(219441),	-- Earthen Cord
 i(219456),	-- Earthen Traveler's Scepter
+i(219934),	-- Spark of War
 i(220693),	-- Coffer Key Shard \\ Delve Key Fragment
-i(222982),	-- Earthen Satchel
-i(222990),	-- Earthen Spire
-i(222992),	-- Earthen Handaxe \\ Earthen Gavel
-i(222993),	-- Earthen Shiv
-i(222994),	-- Earthen Staff
-i(222995),	-- Earthen Bulwark
-i(222998),	-- Earthen Blade \\ Earthen Handaxe
-i(222999),	-- Earthen Cleaver
-i(223000),	-- Earthen Blunderbuss
-i(223001),	-- Earthen Shillelagh \\ Earthen Pummel
-i(224166),	-- Awakened Tabard \\ Awakening Tabard \\ Copper Earthen Tabard \\ [PH] Earthen Tabard
+i(224183),	-- Bleak Chum
 11.0.0.54935
 i(226103),	-- The Weaver's Trove
 i(226165),	-- Unseemly Agate Choker
-i(226218),	-- Machine-Warden's Cloak
-i(226220),	-- Machine-Warden's Tabard
-i(226221),	-- Machine-Warden's Pauldrons
-11.0.0.55000
-i(226800),	-- Earthen Backpack
