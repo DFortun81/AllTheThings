@@ -1104,17 +1104,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					i(152444),	-- Exalted Xenedar Hammer
 					i(139792),	-- Fruitful Bauble
 					i(139419),	-- Golden Banana
+					i(147554),	-- Harpy Feather
 					i(152447),	-- Lightburst Charge
 					i(139801),	-- Lucky Doodad
 					i(139811),	-- Necklace of Endless Memories
 					i(139799),	-- Pathfinder's Saddle
 					i(139812),	-- Potion of Triton
+					i(147558),	-- Pouch of Wonder
 					i(152929),	-- Pronged Ridgestalker Spear
 					i(139878),	-- Relic of the Ebon Blade
 					i(139876),	-- Rune of Reckoning
 					i(152441),	-- Satchel of Lucidity
 					i(139670),	-- Scream of the Dead
 					i(152933),	-- Shadowguard Void Effusion
+					i(147553),	-- Shard of Twisting Nether
 					i(147572),	-- Sigil of Ebon Frost
 					i(140581),	-- Sturdy Hiking Boots
 					i(143850),	-- Summon Grimtotem Warrior (maybe put in Shaman class hall only)
