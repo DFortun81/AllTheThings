@@ -38,6 +38,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(220483),	-- Tuning Wand
 					},
 				}),
+				q(78722, {	-- To Khaz Algar!
+					["qg"] = 213627,	-- Archmage Khadgar
+					["coord"] = { 41.2, 62.3, LEGION_DALARAN },
+					["sourceQuests"] = {
+						78719,	-- Citizens of Dalaran
+						78721,	-- Meet the Team
+						78718,	-- Strengthen the Wards
+					 },
+				}),
 				------ Chapter 1 ------
 				q(78529, {	-- Violet Impact
 					["sourceQuests"] = { 80500 },	-- The Bronzebeard Family
