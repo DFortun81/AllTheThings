@@ -15,9 +15,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			["coord"] = { 47.5, 31.9, THE_RINGING_DEEPS },
 			["g"] = {
 				n(ACHIEVEMENTS, {
-					ach(40662, {	-- It's Not Much, But It's Honest Work
-						i(223269),	-- Machine Defense Unit 1-11 (MOUNT!)
-					}),
+					ach(40662),		-- It's Not Much, But It's Honest Work
 				}),
 				n(QUESTS, {
 					q(83333, {	-- Gearing Up for Trouble
@@ -36,26 +34,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(223040),	-- Plans: Charged Crusher (RECIPE!)
 				}),
 				n(TREASURES, {
-					-- weekly?
-					o(465243, {	-- Awakened Cache
-						["coord"] = { 47.4, 31.9, THE_RINGING_DEEPS },
-						["questID"] = 84642,
-						--["isWeekly"] = true,
-					}),
-					o(465242, {	-- Awakened Cache
-						["coord"] = { 47.5, 32.0, THE_RINGING_DEEPS },
-						["questID"] = 84644,
-						--["isWeekly"] = true,
-					}),
-					o(465241, {	-- Awakened Cache
-						["coord"] = { 47.5, 31.9, THE_RINGING_DEEPS },
-						["questID"] = 84646,
-						--["isWeekly"] = true,
-					}),
-					o(464938, {	-- Awakened Cache
-						["coord"] = { 47.5, 31.9, THE_RINGING_DEEPS },
-						["questID"] = 84647,
-						--["isWeekly"] = true,
+					o_repeated({
+						i(223269),	-- Machine Defense Unit 1-11 (MOUNT!)
+						-- weekly?
+						o(465243, {	-- Awakened Cache
+							["coord"] = { 47.4, 31.9, THE_RINGING_DEEPS },
+							["questID"] = 84642,
+							--["isWeekly"] = true,
+						}),
+						o(465242, {	-- Awakened Cache
+							["coord"] = { 47.5, 32.0, THE_RINGING_DEEPS },
+							["questID"] = 84644,
+							--["isWeekly"] = true,
+						}),
+						o(465241, {	-- Awakened Cache
+							["coord"] = { 47.5, 31.9, THE_RINGING_DEEPS },
+							["questID"] = 84646,
+							--["isWeekly"] = true,
+						}),
+						o(464938, {	-- Awakened Cache
+							["coord"] = { 47.5, 31.9, THE_RINGING_DEEPS },
+							["questID"] = 84647,
+							--["isWeekly"] = true,
+						}),
 					}),
 				}),
 				n(VENDORS, {
