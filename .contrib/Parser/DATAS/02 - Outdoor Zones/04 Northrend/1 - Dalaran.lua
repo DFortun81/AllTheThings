@@ -1122,8 +1122,8 @@ root(ROOTS.Zones, {
 					}),
 					ach(1956, {	-- Higher Learning
 						["description"] = "The Schools of Arcane Magic books share a spawn location with generic books. Read the books in each location to start the respawn timer, which seems to be 3-4 hours.\n\nThe best time to hunt books is right after a server restart.",
-						-- #if ANYCLASSIC
 						["groups"] = {
+							-- #if ANYCLASSIC
 							crit(7237, {	-- The Schools of Arcane Magic - Abjuration
 								["provider"] = { "o", 192709 },	-- The Schools of Arcane Magic - Abjuration
 								["description"] = "The floor of the Dalaran Visitors Center next to a small book covered table.",
@@ -1164,6 +1164,7 @@ root(ROOTS.Zones, {
 								["description"] = "First floor of the Legerdemain Lounge in the bookcase nearest the stove.",
 								["coord"] = { 46.8, 40.0, NORTHREND_DALARAN },
 							}),
+							-- #endif
 							i(44738, {	-- Kirin Tor Familiar (PET!)
 								["timeline"] = { ADDED_3_0_3 },
 							}),
@@ -1172,7 +1173,6 @@ root(ROOTS.Zones, {
 								["cr"] = 16128,	-- Rhonin <Leader of the Kirin Tor>
 							}),
 						},
-						-- #endif
 					}),
 					achWithReps(1010, { 1106, 1090, 1098, 1091 }, {	-- Northrend Vanguard
 						["maps"] = {
