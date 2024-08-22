@@ -68,9 +68,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				40452,	-- Just Keep Swimming
 				40453,	-- Spider Senses
 				40454,	-- Daystormer
-				-- TODO: fix when Blizzard fixes duplication
-				--40506,	-- Leave No Treasure Unfound
 				40103,	-- Nemesis
+				40538,	-- Brann Development
 			}},
 			["g"] = {
 				i(224415),	-- Ivory Goliathus (MOUNT!)

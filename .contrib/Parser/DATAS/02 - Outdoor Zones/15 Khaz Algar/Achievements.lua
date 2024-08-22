@@ -228,6 +228,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				20598,	-- Hallowfall
 				19559,	-- Azj-Kahet
 				20595,	-- Sojourner of Isle of Dorn
+				40799,	-- Sojourner of The Ringing Deeps
+				40844,	-- Sojourner of Hallowfall
+				40636,	-- Sojourner of Azj-Kahet
 			}},
 			["g"] = {
 				iensemble(219132),	-- Crimson Cartographer's Orientation
