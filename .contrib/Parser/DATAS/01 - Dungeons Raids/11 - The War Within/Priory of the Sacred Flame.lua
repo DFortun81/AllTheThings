@@ -49,7 +49,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 						i(221127),	-- Emberbrand Zweihander
 						i(221200),	-- Radiant Necromancer's Band
 						i(221203),	-- Reanimator's Pyreforged Shoulders
-						i(221130),	-- Seraphic Legwraps of the Ordained
+						i(221130),	-- Seraphic Wraps of the Ordained
 						i(221128),	-- Starforged Seraph's Mace
 					},
 				}),
