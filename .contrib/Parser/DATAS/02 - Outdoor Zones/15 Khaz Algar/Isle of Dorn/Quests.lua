@@ -20,6 +20,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 45.3, 57.4, LEGION_DALARAN },
 					["sourceQuests"] = { 81966 },	-- Slept like a Rock
 				}),
+				q(78719, {	-- Citizens of Dalaran
+					["qg"] = 213627,	-- Archmage Khadgar
+					["coord"] = { 41.2, 62.3, LEGION_DALARAN },
+					["sourceQuests"] = { 78717 },	-- A Mysterious Warning
+				}),
+				q(78721, {	-- Meet the Team
+					["qg"] = 214669,	-- Brann Bronzebeard
+					["coord"] = { 47.0, 49.1, LEGION_DALARAN },
+					["sourceQuests"] = { 78717 },	-- A Mysterious Warning
+				}),
+				q(78718, {	-- Strengthen the Wards
+					["qg"] = 214665,	-- Archmage Drenden
+					["coord"] = { 56.4, 33.2, LEGION_DALARAN },
+					["sourceQuests"] = { 78717 },	-- A Mysterious Warning
+					["g"] = {
+						i(220483),	-- Tuning Wand
+					},
+				}),
 				------ Chapter 1 ------
 				q(78529, {	-- Violet Impact
 					["sourceQuests"] = { 80500 },	-- The Bronzebeard Family

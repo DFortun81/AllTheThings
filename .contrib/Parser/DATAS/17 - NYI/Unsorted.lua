@@ -1626,7 +1626,6 @@ root(ROOTS.Unsorted, {
 				i(220212),	-- Aelric's Corrupted Tinderbox
 				i(220215),	-- Unidentified Tinderbox
 				i(220359),	-- Aelric's Corrupted Tinderbox
-				i(220483),	-- Tuning Wand
 				i(221751),	-- DO NOT USE Prismatic Codex
 				i(222899),	-- [UNUSED] Faerin's Shield
 				i(222963),	-- Lava Globs
