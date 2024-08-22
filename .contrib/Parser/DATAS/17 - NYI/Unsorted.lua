@@ -1683,7 +1683,7 @@ root(ROOTS.Unsorted, {
 				i(226111),	-- Arakkoan Ritual Staff
 				i(226113),	-- Kereke's Flourishing Sabre
 				i(226115),	-- Contaminating Cleaver
-				i(219783),	-- Arachnophobic Spelunker's Bow
+				i(219783),	-- Arachnophobic Spelunker's Crossbow
 				i(219797),	-- Cured Terracotta Pummeler
 				i(228363),	-- Shinda's Spare Greataxe
 				i(228364),	-- Endiri's Chipped Boot Knife

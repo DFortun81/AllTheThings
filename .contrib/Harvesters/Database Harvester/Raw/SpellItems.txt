@@ -12290,3 +12290,7 @@
 7534@@@+$k1 Intellect & +$k2 Stamina |A:Professions-ChatIcon-Quality-Tier3:20:20|a
 7536@@@+$k1 Intellect |A:Professions-ChatIcon-Quality-Tier2:20:20|a
 7537@@@+$k1 Intellect |A:Professions-ChatIcon-Quality-Tier3:20:20|a
+11.0.2.56263
+7529@@@+$k1 Intellect & +$457615s1% Mana |A:Professions-ChatIcon-Quality-Tier1:20:20|a
+7530@@@+$k1 Intellect & +$457616s1% Mana |A:Professions-ChatIcon-Quality-Tier2:20:20|a
+7531@@@+$k1 Intellect & +$457617s1% Mana |A:Professions-ChatIcon-Quality-Tier3:20:20|a
