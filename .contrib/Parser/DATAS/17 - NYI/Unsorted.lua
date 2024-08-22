@@ -737,8 +737,8 @@ root(ROOTS.Unsorted, {
 				i(225684),	-- Relicblood of Zekvir
 				i(225685),	-- Relic of Sentience
 				i(225692),	-- Glowglow Cap
-				i(225897),	-- Brute Force Idol
-				i(225898),	-- Idol of the Earthmother
+
+
 				i(225901),	-- Streamlined Relic \\ Power Idol
 				i(225908),	-- Relicblood of Zekvir
 			}),
