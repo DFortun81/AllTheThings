@@ -21959,3 +21959,5 @@
 231171@@@Sound Stalker - 11.0 Scenario - Theater Troupe - Audience
 11.0.2.56110
 231546@@@Xal'atath
+11.0.2.56162
+220254@@@Rescued Citizen
