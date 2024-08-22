@@ -654,6 +654,7 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(40505),	-- Fate of the Kirin Tor
 			ach(40510),	-- One Ping Only
 			ach(40511),	-- Rare Within
+			ach(40619),	-- Mine Poppin'
 
 			-- 11.0.0.54361
 			ach(40305),	-- Allied Races: Earthen (Hidden Character Achievement)
