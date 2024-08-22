@@ -122,11 +122,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40445),	-- Sporesweeper
 		ach(40885),	-- The Key to Madness
 		ach(40100),	-- Undying Caver
-		achraw(40725, bubbleDownSelf({ ["timeline"] = { REMOVED_11_1_0 }, }, {	-- War Within Delves: Endgame
-			ach(40514),		-- War Within Delves: Tier 3
-			crit(5212),		-- Reach level 80
-			crit(69865),	-- Complete the Khaz Algar main story campaign
-		})),
+		ach(40725, {	-- War Within Delves: Endgame (automated)
+			["timeline"] = { REMOVED_11_1_0 },
+		}),
 		ach(40631),	-- War Within Delves: Tier 1
 		ach(40512),	-- War Within Delves: Tier 2
 		ach(40514),	-- War Within Delves: Tier 3
