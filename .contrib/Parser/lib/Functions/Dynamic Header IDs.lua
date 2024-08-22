@@ -164,6 +164,7 @@ HeaderAssignments = {
 	["Event Completion"] = -1000851,
 	["Exploration"] = -1000019,
 	["Factions"] = -1000020,
+	["Faithful Dog Secret"] = -1001017,
 	["Fearless Gladiator: Legion Season 2"] = -1000990,
 	["Feast of Winter Veil"] = -1000215,
 	["February"] = -1000150,
@@ -512,4 +513,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001015;
+NextHeaderID = -1001018;

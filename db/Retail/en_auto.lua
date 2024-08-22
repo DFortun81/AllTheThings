@@ -2568,6 +2568,7 @@ local keys = {
 [46824]="Shadowstrike and Thunderstrike Anniversary",
 [46826]="Battleplate of the Silver Hand",
 [46831]="Broken Village",
+[46952]="|cFFFFFFFFStep 2|r: Show the Pebble to Dog",
 [46996]="reuse me",
 [47002]="The Crown of the Triumvirate",
 [47178]="Tier 2 Mob Daily Bonus",

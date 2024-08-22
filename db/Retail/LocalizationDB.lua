@@ -644,6 +644,7 @@ localize(L.HEADER_NAMES, {
 	[-1001014] = C_Spell.GetSpellName(456522),
 	[-1001015] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
 	[-1001016] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-1001017] = "Faithful Dog Secret",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -1170,6 +1171,7 @@ localize(L.HEADER_ICONS, {
 	[-1001008] = "Interface/Icons/ability_bossmagistrix_timewarp1",
 	[-1001011] = "133015",
 	[-1001014] = "Interface/Icons/inv_misc_curiouscoin",
+	[-1001017] = "Interface/Icons/Inv_holiday_tow_spicebowl",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
