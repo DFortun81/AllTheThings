@@ -194,7 +194,9 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 		i(14563),	-- Prospector's Cloak
 		i(14791),	-- Protector Cape
 		i(15382),	-- Rageclaw Cloak
-		i(1372),	-- Ragged Cloak
+		i(1372, {	-- Ragged Cloak
+			["timeline"] = { REMOVED_4_0_3 },	-- estimated removal time
+		}),
 		i(9786),	-- Raider's Cloak
 		i(14188),	-- Raincaller Cloak
 		i(7483),	-- Ranger Cloak
