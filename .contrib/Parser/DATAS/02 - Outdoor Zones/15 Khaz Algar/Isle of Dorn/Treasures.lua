@@ -90,6 +90,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(223104, {	-- Lionel
+				["description"] = "After you kick Lionel back into water, find 5 |cff888888Plump Snapcrabs|r on the shore and feed him.",
 				["crs"] = { 223104 },	-- Lionel (223143)
 				["coord"] = { 40.6, 59.9, ISLE_OF_DORN },
 				["questID"] = 82212,	-- Weak Lionfish
@@ -127,7 +128,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(444894, {	-- Shimmering Opal Lily
-				["description"] = "In pit of this shaft",
+				["description"] = "At the bottom of the cave.\nDespawns after being looted by someone. You may need to wait for it to respawn.",
 				["coord"] = { 48.9, 60.9, ISLE_OF_DORN },
 				["questID"] = 82326,
 			}),
@@ -154,7 +155,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 82045,
 			}),
 			n(222894, {	-- U'llort the Self-Exiled
-				["coord"] = { 55.0, 65.6, ISLE_OF_DORN },
+				["description"] = "Talk to U'llort then bring it |cff888888Boskroot Cap|r from the woods nearby. Treasure appears with some delay.",
+				["coords"] = {
+					{ 55.0, 65.6, ISLE_OF_DORN },	-- U'llort the Self-Exiled
+					{ 52.6, 67.1, ISLE_OF_DORN },	-- Boskroot Cap
 				["questID"] = 82142,
 				["cost"] = {{"i", 221550, 1}},	-- 1x Boskroot Cap
 				["g"] = {
