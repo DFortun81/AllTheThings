@@ -1370,8 +1370,33 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = FISHING,
 		},{
+			--FirstCraft(xxxxx, 456154),	-- Anglerthread
+			--FirstCraft(xxxxx, 444795),	-- Arathor Hammerfish
+			--FirstCraft(xxxxx, 444803),	-- Awoken Coelacanth
+			--FirstCraft(xxxxx, 456591),	-- Azj-Kahet
 			FirstCraft(82899, 444787),	-- Bismuth Bitterling
+			--FirstCraft(xxxxx, 444785),	-- Bloody Perch
+			--FirstCraft(xxxxx, 444786),	-- Crystalline Sturgeon
+			FirstCraft(82914, 444802),	-- Cursed Ghoulfish
+			FirstCraft(82896, 444792),	-- Dilly-Dally Dace
+			FirstCraft(82905, 444793),	-- Dornish Pike
+			--FirstCraft(xxxxx, 454442),	-- Fishing Skill and You
+			FirstCraft(82902, 444790),	-- Goldengill Trout
+			--FirstCraft(xxxxx, 456590),	-- Hallowfall
+			--FirstCraft(xxxxx, 444797),	-- Kaheti Slum Shark
+			--FirstCraft(xxxxx, 456180),	-- Mereldar Fishing Derby
+			FirstCraft(82900, 444788),	-- Nibbling Minnow
+			FirstCraft(82910, 444798),	-- Pale Huskfish
+			--FirstCraft(xxxxx, 444801),	-- Queen's Lurefish
+			FirstCraft(82904, 454443),	-- Quiet River Bass
+			--FirstCraft(xxxxx, 444796),	-- Regal Dottyback
+			--FirstCraft(xxxxx, 444794),	-- Roaring Anglerseeker
+			--FirstCraft(xxxxx, 444799),	-- Sanguine Dogfish
+			--FirstCraft(xxxxx, 456152),	-- Seekerthread
+			--FirstCraft(xxxxx, 444791),	-- Specular Rainbowfish
 			FirstCraft(82912, 444800),	-- Spiked Sea Raven
+			--FirstCraft(xxxxx, 456589),	-- The Ringing Deeps
+			FirstCraft(82901, 444789),	-- Whispering Stargazer
 		})),
 		i(225770),	-- Algari Anglerthread
 		i(225771),	-- Algari Seekerthread
