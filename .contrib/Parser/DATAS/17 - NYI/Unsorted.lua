@@ -196,7 +196,6 @@ root(ROOTS.Unsorted, {
 			i(229194),	-- Queen's Pheromone
 			i(229195),	-- Queen's Pheromone
 			i(229370),	-- Companion Experience
-			i(229371),	-- Companion Experience
 			---
 			i(230202),	-- Add Keystone Affix: Xal'atath's Bargain: Ascendant
 			i(230204),	-- Add Keystone Affix: Xal'atath's Bargain: Voidbound
@@ -1081,7 +1080,6 @@ root(ROOTS.Unsorted, {
 				i(215171),	-- Fungal Friend Flute
 				i(215172),	-- Silken Chain Weaver
 				i(215173),	-- Serum of Unconstrained Senses
-				i(215174),	-- Concoction: Kiss of Death
 				i(215175),	-- Belt of Vials
 				i(215178),	-- Shadow-Binding Ritual Knife
 				i(216657),	-- Test Item C

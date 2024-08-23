@@ -183,6 +183,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(225897, {	-- Brute Force Idol [Rank 1]
 					["bonusID"] = 11235
 				}),
+				i(229371),	-- Companion Experience
 			},
 		}),
 		q(84520, {	-- Ancient Curiosity: Utility
@@ -791,6 +792,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(211031),	-- Secret-Dredger's Sabatons
 			}),
 			filter(TRINKET_F, {
+				i(215174),	-- Concoction: Kiss of Death
 				i(225653),	-- Siphoning Lightbrand
 			}),
 		}),
