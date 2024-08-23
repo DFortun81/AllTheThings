@@ -985,6 +985,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 65.9, 23.8, ISLE_OF_DORN },
 					["g"] = {
 						i(223464),	-- Algari Heavy Gauntlets
+						i(223424),	-- Algari-Weave Cord
 					},
 				}),
 			}),
