@@ -19,7 +19,8 @@ local ZIRIAK = {
 };
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(ACHIEVEMENTS, {
-		petbattle(ach(40154, {	-- Aquatic Battler of Khaz Algar
+		-- TODO: Achraw here is a bandaid, to be fixed properly in the future
+		petbattle(achraw(40154, {	-- Aquatic Battler of Khaz Algar
 			crit(67139, -- Collector Dyna
 				COLLECTOR_DYNA
 			),
@@ -59,7 +60,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["_quests"] = { 82295 },
 			}),
 		})),
-		petbattle(ach(40155, {	-- Beast Battler of Khaz Algar
+		petbattle(achraw(40155, {	-- Beast Battler of Khaz Algar
 			crit(67143, -- Collector Dyna
 				COLLECTOR_DYNA
 			),
@@ -73,7 +74,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				ZIRIAK
 			),
 		})),
-		petbattle(ach(40156, {	-- Critter Battler of Khaz Algar
+		petbattle(achraw(40156, {	-- Critter Battler of Khaz Algar
 			crit(67147, -- Collector Dyna
 				COLLECTOR_DYNA
 			),
@@ -87,7 +88,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				ZIRIAK
 			),
 		})),
-		petbattle(ach(40157, {	-- Dragonkin Battler of Khaz Algar
+		petbattle(achraw(40157, {	-- Dragonkin Battler of Khaz Algar
 			crit(67151, -- Collector Dyna
 				COLLECTOR_DYNA
 			),
@@ -101,7 +102,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				ZIRIAK
 			),
 		})),
-		petbattle(ach(40158, {	-- Elemental Battler of Khaz Algar
+		petbattle(achraw(40158, {	-- Elemental Battler of Khaz Algar
 			crit(67155, -- Collector Dyna
 				COLLECTOR_DYNA
 			),
@@ -115,7 +116,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				ZIRIAK
 			),
 		})),
-		petbattle(ach(40161, {	-- Flying Battler of Khaz Algar
+		petbattle(achraw(40161, {	-- Flying Battler of Khaz Algar
 			crit(67159, -- Collector Dyna
 				COLLECTOR_DYNA
 			),
@@ -129,7 +130,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				ZIRIAK
 			),
 		})),
-		petbattle(ach(40162, {	-- Humanoid Battler of Khaz Algar
+		petbattle(achraw(40162, {	-- Humanoid Battler of Khaz Algar
 			crit(67163, -- Collector Dyna
 				COLLECTOR_DYNA
 			),
@@ -217,7 +218,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}
 		}),
 		ach(40762),		-- Khaz Algar Lore Hunter (automated)
-		petbattle(ach(40194, {	-- Khaz Algar Safari (automated)
+		petbattle(achraw(40194, {	-- Khaz Algar Safari (automated)
 			i(221821),	-- Waxwick (PET!)
 		})),
 		ach(20596, {	-- Loremaster of Khaz Algar
@@ -236,7 +237,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				iensemble(219132),	-- Crimson Cartographer's Orientation
 			},
 		}),
-		petbattle(ach(40163, {	-- Magic Battler of Khaz Algar
+		petbattle(achraw(40163, {	-- Magic Battler of Khaz Algar
 			crit(67166, -- Collector Dyna
 				COLLECTOR_DYNA
 			),
@@ -250,7 +251,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				ZIRIAK
 			),
 		})),
-		petbattle(ach(40164, {	-- Mechanical Battler of Khaz Algar
+		petbattle(achraw(40164, {	-- Mechanical Battler of Khaz Algar
 			crit(67170, -- Collector Dyna
 				COLLECTOR_DYNA
 			),
@@ -276,7 +277,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				19560,	-- The Ringing Deeps
 			}},
 		}),
-		petbattle(ach(40165, {	-- Undead Battler of Khaz Algar
+		petbattle(achraw(40165, {	-- Undead Battler of Khaz Algar
 			crit(67174, -- Collector Dyna
 				COLLECTOR_DYNA
 			),
