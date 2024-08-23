@@ -357,10 +357,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 46.2, 19.8, KRIEGVALS_REST },
 					["questID"] = 83665,
 				}),
-				--o(xx, {	-- Sturdy Chest
-				--	["coord"] = { 62.3, 52.9, KRIEGVALS_REST },
-				--	["questID"] = 83698,
-				--}),
+				o(455524, {	-- Sturdy Chest
+					["coord"] = { 62.3, 52.9, KRIEGVALS_REST },
+					["questID"] = 83698,
+				}),
 				o(455511, {	-- Sturdy Chest
 					["coord"] = { 69.9, 85.1, KRIEGVALS_REST },
 					["questID"] = 83666,
