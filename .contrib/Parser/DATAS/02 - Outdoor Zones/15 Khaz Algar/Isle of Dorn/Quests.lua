@@ -984,8 +984,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 222363 },	-- Peacekeeper Leif
 					["coord"] = { 65.9, 23.8, ISLE_OF_DORN },
 					["g"] = {
-						i(223464),	-- Algari Heavy Gauntlets
 						i(223424),	-- Algari-Weave Cord
+						i(223464),	-- Algari Heavy Gauntlets
 					},
 				}),
 			}),
@@ -1031,10 +1031,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 224708 },	-- Cenderragg
 					["coord"] = { 48.6, 60.9, ISLE_OF_DORN },
 					["g"] = {
-						i(228374),	-- Shoulders of Kix'arak's Bane
 						i(228375),	-- Belt of Kix'arak's Bane
 						i(228376),	-- Boots of Kix'arak's Bane
 						i(228377),	-- Gauntlets of Kix'arak's Bane
+						i(228374),	-- Shoulders of Kix'arak's Bane
 					},
 				}),
 			}),
