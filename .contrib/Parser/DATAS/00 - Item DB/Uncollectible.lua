@@ -1991,6 +1991,7 @@ i(220263);	-- Wax Miner's Sack
 i(225802);	-- Well-Worn Darning Needle
 i(217163);	-- Well Worn Doll
 i(220232);	-- Worm-Eaten Burlap Robe
+i(228911);	-- Xalatath's Rusty Coin
 -- spider stuff
 i(222693);	-- Hearty Food
 i(222740);	-- Hearty Meals

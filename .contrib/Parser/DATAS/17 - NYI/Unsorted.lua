@@ -203,8 +203,6 @@ root(ROOTS.Unsorted, {
 			i(230206),	-- Add Keystone Affix: Xal'atath's Bargain: Devour
 			i(230208),	-- Add Keystone Affix: Xal'atath's Guile
 			i(230209),	-- Add Keystone Affix: Challenger's Peril
-			--
-			i(228911),	-- Xalatath's Rusty Coin
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			filter(TITLES, {

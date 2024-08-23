@@ -1227,6 +1227,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
+	-- Dalaran intro
+	q(84698),	-- Fishing up Xalatath's Rusty Coin
 	-- During questing
 	q(83622),	-- [DNT] Zone 1 Bread Crumb Completed Organically (spellID 456955), when you break free out of rocks during questID 78529 (Violet Impact)
 	q(79629),	-- [DNT] Council of Dornogal Renown Unlock (spellID 446910)
