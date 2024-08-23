@@ -260,6 +260,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				-- Seems like two rare treasures in this dungeon? Can have different IDs
+				o(455914, {	-- Mislaid Curiosity
+					--["coord"] = { X, Y, EARTHCRAWL_MINES }, -- Seem to spawn at many locations in the delve + in other delves also? => Find a better home for this
+					-- Contains: Chunk of companion expereince (228072)
+				}),
 				o(454090, {	-- Sturdy Chest
 					["coord"] = { 45.2, 14.7, EARTHCRAWL_MINES },
 					["questID"] = 83440,
@@ -464,10 +468,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(TREASURES, {
-				o(455914, {	-- Sturdy Chest
-					["coord"] = { 48.1, 61.8, SKITTERING_BREACH },
-					["questID"] = 83679,
-				}),
 				o(455505, {	-- Sturdy Chest
 					["coord"] = { 27.4, 26.4, SKITTERING_BREACH },
 					["questID"] = 83660,

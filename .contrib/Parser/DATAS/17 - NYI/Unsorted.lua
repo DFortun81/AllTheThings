@@ -1319,7 +1319,6 @@ root(ROOTS.Unsorted, {
 				i(222928),	-- Coin Coffer
 				i(222929),	-- Carved Coin Coffer \\ Large Coin Coffer
 				i(222954),	-- Runed Coin Coffer \\ Coin Coffer
-				i(222955),	-- Player Experience
 				i(222956),	-- Player Experience
 				i(222977),	-- Scorched Junk
 				i(223316),	-- Trusty Hat

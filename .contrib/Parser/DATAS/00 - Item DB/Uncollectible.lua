@@ -1926,6 +1926,7 @@ i(220244);	-- Oversized Claw
 i(220251);	-- Pale Gills
 i(225787);	-- Pheromone-Covered Missive
 i(220283);	-- Pileus Puff
+i(222955);	-- Player Experience
 i(220247);	-- Polishing Powder
 i(228491);	-- Ramolith Bedding Material
 i(220258);	-- Rotting Bones

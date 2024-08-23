@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(212928, {	-- Dalaran Sewer Turtle
 				["coord"] = { 38.0, 79.5, ISLE_OF_DORN },
-				--["questID"] = ,
+				["questID"] = 79586,
 				["cost"] = {
 					{"i", 220143, 5},	-- 5x Dornish Pike
 					{"i", 222533, 1},	-- 1x Goldengill Trout
@@ -200,5 +200,6 @@ root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 		q(82227),	-- Extra HQT: Magical Treasure Chest
 		q(82253),	-- Extra HQT: Mushroom Cap
 		q(82251),	-- Extra HQT: Mosswool Flower
+		q(79585),	-- Dalaran Sewer Turtle: Needs more time
 	}),
 }));
