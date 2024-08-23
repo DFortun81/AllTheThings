@@ -1367,6 +1367,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			r(456589),	-- The Ringing Deeps
 			r(444789),	-- Whispering Stargazer
 		}),
+		n(FIRST_CRAFTS_HEADER, sharedData({
+			["requireSkill"] = FISHING,
+		},{
+			FirstCraft(82899, 444787),	-- Bismuth Bitterling
+		})),
 		i(225770),	-- Algari Anglerthread
 		i(225771),	-- Algari Seekerthread
 		i(220145),	-- Arathor Hammerfish

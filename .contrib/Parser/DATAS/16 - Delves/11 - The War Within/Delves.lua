@@ -183,7 +183,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(225897, {	-- Brute Force Idol [Rank 1]
 					["bonusID"] = 11235
 				}),
-				i(229371),	-- Companion Experience
 			},
 		}),
 		q(84520, {	-- Ancient Curiosity: Utility
@@ -690,19 +689,19 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(455490, {	-- Sturdy Chest
-					["coord"] = { 48.0, 25.6, THE_WATERWORKS },
+					["coord"] = { 49.9, 24.6, THE_WATERWORKS },
 					["questID"] = 83684,
 				}),
 				o(455532, {	-- Sturdy Chest
-					["coord"] = { 42.2, 40.0, THE_WATERWORKS },
+					["coord"] = { 44.3, 38.2, THE_WATERWORKS },
 					["questID"] = 83650,
 				}),
 				o(455512, {	-- Sturdy Chest
-					["coord"] = { 48.5, 56.0, THE_WATERWORKS },
+					["coord"] = { 47.9, 53.5, THE_WATERWORKS },
 					["questID"] = 83667,
 				}),
 				o(454207, {	-- Sturdy Chest
-					["coord"] = { 47.7, 83.0, THE_WATERWORKS },
+					["coord"] = { 49.5, 79.1, THE_WATERWORKS },
 					["questID"] = 83456,
 				}),
 				o(413590, {	-- Bountiful Coffer

@@ -139,6 +139,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 228493 },	-- Alleria Windrunner
 				["coord"] = { 32.0, 60.5, DORNOGAL },
 			}),
+			hqt(84815, {	-- Stay awhile and listen: Merrix <Councilward>
+				["name"] = "Stay awhile and listen: Merrix <Councilward>",
+				["sourceQuests"] = { 78546 },	-- Recompense
+				["provider"] = { "n", 217880 },	-- Merrix <Councilward>
+				["coord"] = { 32.0, 59.6, DORNOGAL },
+			}),
 			hqt(84009, {	-- Stay awhile and listen: Alleria Windrunner
 				["name"] = "Stay awhile and listen: Alleria Windrunner",
 				["sourceQuests"] = {
@@ -167,12 +173,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 36.2, 95.0, DORNOGAL },
 			}),
 			hqt(82459, {	-- <Stay a while and Listen>
-			["name"] = "Stay awhile and listen: Anduin Wrynn",
+				["name"] = "Stay awhile and listen: Anduin Wrynn",
 				["qg"] = 222558,	-- Anduin Wrynn
 				["coord"] = { 44.7, 44.6, DORNOGAL },
 			}),
 			hqt(82460, {	-- <Stay a while and Listen>
-			["name"] = "Stay awhile and listen: Magni Bronzebeard",
+				["name"] = "Stay awhile and listen: Magni Bronzebeard",
 				["qg"] = 222557,	-- Magni Bronzebeard
 				["coord"] = { 44.5, 44.5, DORNOGAL },
 			}),
