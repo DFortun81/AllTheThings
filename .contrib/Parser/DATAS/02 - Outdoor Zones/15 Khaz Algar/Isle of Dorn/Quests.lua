@@ -65,7 +65,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["g"] = {
 						-- Cloth
 						-- Leather
-						i(220379),	-- City Guard's Chainmail
+						i(220379),	-- City Guard's Chainmail (doesn't load ingame?)
+						-- Mail
+						i(224455),	-- City Guard's Chainmail
 						-- Plate
 					},
 				}),

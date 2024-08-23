@@ -1885,7 +1885,6 @@ root(ROOTS.Unsorted, {
 				i(223877),	-- Algari Hatchet
 				i(224453),	-- City Guard's Coronet \\ Dalaran Cowl
 				i(224454),	-- City Guard's Mask \\ Dalaran Hood
-				i(224455),	-- City Guard's Chainmail \\ Dalaran Chestguard
 				i(224456),	-- City Guard's Greaves \\ Dalaran Greaves
 				i(228374),	-- Shoulders of Kix'arak's Bane
 				i(228375),	-- Belt of Kix'arak's Bane
