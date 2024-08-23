@@ -1439,7 +1439,6 @@ root(ROOTS.Unsorted, {
 				i(225825),	-- Ground Snacking Stone
 				i(225826),	-- Broken Elevator Cog
 				i(225831),	-- Glittering Rock
-				i(225833),	-- Weathered Skipping Stone
 				i(225834),	-- Pilfered Matchbook
 				i(225835),	-- Battered Lantern
 				i(225841),	-- Ever-Frozen Ice
@@ -1509,12 +1508,8 @@ root(ROOTS.Unsorted, {
 				i(228194),	-- Fully Scrapped Scrap
 				i(228195),	-- Tattered Goblin Cap
 				i(228388),	-- Damp Doll
-				i(228390),	-- Left Boot
 				i(228391),	-- Right Boot
-				i(228392),	-- Corroded Pocket Watch
-				i(228393),	-- Shattered Lantern
 				i(228394),	-- Lost Note
-				i(228395),	-- Mud Clump
 				i(228396),	-- Dead Fish
 				i(228415),	-- Adelgonn's Journal
 				i(228416),	-- Steelvein's Manifesto
