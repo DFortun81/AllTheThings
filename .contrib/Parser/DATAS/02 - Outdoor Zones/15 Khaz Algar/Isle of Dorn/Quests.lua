@@ -35,7 +35,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 56.4, 33.2, LEGION_DALARAN },
 					["sourceQuests"] = { 78717 },	-- A Mysterious Warning
 					["g"] = {
-						i(220483),	-- Tuning Wand
+						i(220483),	-- Tuning Wand (QI!)
 					},
 				}),
 				q(78722, {	-- To Khaz Algar!
@@ -45,7 +45,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78719,	-- Citizens of Dalaran
 						78721,	-- Meet the Team
 						78718,	-- Strengthen the Wards
-					 },
+					},
 				}),
 				q(79105, {	-- Breach
 					["qg"] = 214908,	-- Alleria Windrunner
@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["qg"] = 214908,	-- Alleria Windrunner
 					["coord"] = { 35.7, 71.3, 2305 },	-- Quest Dalaran
 					["sourceQuests"] = { 79105 },	-- Breach
-					["maps"] = { 2307 },	-- Dalaran
+					["maps"] = { 2307, 2306, },	-- Dalaran
 				}),
 				q(80321, {	-- Departure
 					["qg"] = 219885,	-- Anduin Wrynn
@@ -69,6 +69,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						-- Mail
 						i(224455),	-- City Guard's Chainmail
 						-- Plate
+						i(224456),	-- City Guard's Greaves
 					},
 				}),
 				------ Chapter 1 ------

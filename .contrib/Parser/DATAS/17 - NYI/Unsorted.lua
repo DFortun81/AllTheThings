@@ -1500,7 +1500,6 @@ root(ROOTS.Unsorted, {
 				i(227781),	-- Delver's Bounty
 				i(227782),	-- Delver's Bounty
 				i(227783),	-- Delver's Bounty
-				i(227890),	-- Unrecognizable Prototype
 				i(228192),	-- Cracked Fel Focus
 				i(228193),	-- Chipped Demon's Blade
 				i(228194),	-- Fully Scrapped Scrap
@@ -1674,7 +1673,6 @@ root(ROOTS.Unsorted, {
 				i(226113),	-- Kereke's Flourishing Sabre
 				i(226115),	-- Contaminating Cleaver
 				i(219783),	-- Arachnophobic Spelunker's Crossbow
-				i(219797),	-- Cured Terracotta Pummeler
 				i(228363),	-- Shinda's Spare Greataxe
 				i(228364),	-- Endiri's Chipped Boot Knife
 				i(228366),	-- Child's Former Fishing Rod
@@ -1883,7 +1881,6 @@ root(ROOTS.Unsorted, {
 				i(223877),	-- Algari Hatchet
 				i(224453),	-- City Guard's Coronet \\ Dalaran Cowl
 				i(224454),	-- City Guard's Mask \\ Dalaran Hood
-				i(224456),	-- City Guard's Greaves \\ Dalaran Greaves
 				i(228374),	-- Shoulders of Kix'arak's Bane
 				i(228375),	-- Belt of Kix'arak's Bane
 				i(228376),	-- Boots of Kix'arak's Bane
