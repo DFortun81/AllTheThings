@@ -11,9 +11,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 		}),
 		n(RARES, {
-			n(SPECIAL, {
+			header(HEADERS.Achievement, 15392, {	-- Dune Dominance
 				["description"] = "Upon defeat of any other Rare creature in ZM, there is a small chance that one of these 'special' rares will begin to activate.\nIt is not currently known whether there is a minimum cooldown between spawns, though it's been reported as quick as 50 min.",
-				["group"] = {
+				["g"] = bubbleDownFiltered({["isDaily"]=true},FILTERFUNC_questID,{
 					n(COMMON_BOSS_DROPS, {
 						["crs"] = {
 							182155,	-- High Reaver Damaris
@@ -32,7 +32,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						["crs"] = { 182156 },	-- Edra, the Will Grazer
 						["coord"] = { 63.8, 27, ZERETH_MORTIS },
 						["questID"] = 65586,
-						["isDaily"] = true,
 						["g"] = {
 							i(190106),	-- Approaching Terror's Torch
 							i(190105),	-- Chilling Domination Mace
@@ -43,12 +42,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 					n(182114, {	-- Iska, Outrider of Ruin
 						["coord"] = { 63.8, 27, ZERETH_MORTIS },
 						["questID"] = 65585,
-						["isDaily"] = true,
 						["g"] = {
 							n(182120, {	-- Rhuv, Gorger of Ruin
 								["coord"] = { 63.8, 27, ZERETH_MORTIS },
 								["questID"] = 65706,
-								["isDaily"] = true,
 								["g"] = {
 									i(190765),	-- Colossal Plaguespew Mawrat (MOUNT!)
 								},
@@ -63,7 +60,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 						["crs"] = { 182161 },	-- Phalangax, the Final Grasp
 						["coord"] = { 63.8, 27, ZERETH_MORTIS },
 						["questID"] = 65587,
-						["isDaily"] = true,
 						["g"] = {
 							i(190108),	-- Aegis of Laughing Souls
 							i(190109),	-- Cudgel of Mortality's Chains
@@ -71,7 +67,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 							i(190461),	-- Reanimator's Beguiling Baton
 						},
 					}),
-				},
+				}),
 			}),
 		}),
 		n(RARES, sharedData({ ["isDaily"] = true }, {
