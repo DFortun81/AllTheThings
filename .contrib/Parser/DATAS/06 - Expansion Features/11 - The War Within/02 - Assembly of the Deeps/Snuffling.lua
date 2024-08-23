@@ -35,6 +35,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 			}),
+			n(REWARDS, {
+				i(228210),	-- Firelight Ruby Chip -- this might not belong here idk
+			}),
 			n(TREASURES, {
 				i(223133),	-- Formula: Illusory Adornment: Crystal (RECIPE!)
 			}),
@@ -75,9 +78,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(224760, {	-- Wobbles (PET!)
 							["cost"] = {{"i", FIRELIGHT_RUBY, 1}},
 						}),
+						i(228220, {	-- Waxy Bundle
+							["cost"] = {{"i", 228210, 1}},	-- Firelight Ruby Chip
+						}),
 					},
 				}),
 			}),
 		}),
 	}),
 })));
+
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	n(THE_ASSEMBLY_OF_THE_DEEPS, {
+		n(SNUFFLING, {
+			q(84433),	-- Show wax to Gnawbles for 79343 'Everyday I'm Snufflin'
+			q(84434),	-- Buy 'Waxy Bundle' from Gnawbles during 79343 'Everyday I'm Snufflin'
+		}),
+	}),
+})))

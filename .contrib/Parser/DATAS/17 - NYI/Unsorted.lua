@@ -1866,7 +1866,6 @@ root(ROOTS.Unsorted, {
 				i(223461),	-- Algari Warden's Helm
 
 				i(223472),	-- Drape of the Lamplighter
-				i(220118),	-- Arathi Demolition Charge
 
 				i(223548),	-- Algari Rifle
 

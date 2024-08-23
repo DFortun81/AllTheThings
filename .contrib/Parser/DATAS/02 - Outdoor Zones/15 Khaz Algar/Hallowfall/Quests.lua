@@ -61,6 +61,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 57.5, 64.4, HALLOWFALL },
 					["g"] = {
 						i(213630),	-- Keg of Black Powder (QI!)
+						i(220118),	-- Arathi Demolition Charge
 					},
 				}),
 				q(78669, {	-- For Their Eyes Only

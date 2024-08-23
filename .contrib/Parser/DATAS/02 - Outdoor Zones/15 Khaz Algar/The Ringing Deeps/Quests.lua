@@ -1244,7 +1244,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(79635),	-- [DNT] The Assembly of the Deeps Renown Unlock (spellID 448654)
 	-- Side quests
 	q(82652),	-- 'Stay a while and listen' - Brennok, in the end of whole speach during questID 80682 (One Last Story)
-	q(84433),	-- Show wax to Gnawbles for 79343 'Everyday I'm Snufflin'
 	-- 80510 or 80509
 	q(81927),	-- interact a things from table (left-ish one), during of this 2 quests (not sure which one exactly)
 	-- ?

@@ -95,6 +95,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(224575),	-- Lightbearer's Pendant
 				},
 			}),
+			-- o(???, {	-- Sky-Captain Lancekat's Curse
+			-- 	["questID"] = 84289,
+			-- 	["coord"] = { 42.6, 53.7, HALLOWFALL },
+			-- 	["g"] = {
+			-- 		i(225213),	-- Sky-Captain Lancekat's Curse
+			-- 	}
+			-- }),
 			o(453283, {	-- Smuggler's Treasure
 				["description"] = "Fly down to dead body and loot key",
 				["coord"] = { 55.1, 51.9, HALLOWFALL },
