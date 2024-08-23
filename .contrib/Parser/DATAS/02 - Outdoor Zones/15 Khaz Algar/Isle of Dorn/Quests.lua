@@ -52,9 +52,28 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 50.4, 50.4, 2305 },	-- Quest Dalaran
 					["sourceQuests"] = { 78722 },	-- To Khaz Algar!
 				}),
+				q(79106, {	-- Rupture
+					["qg"] = 214908,	-- Alleria Windrunner
+					["coord"] = { 35.7, 71.3, 2305 },	-- Quest Dalaran
+					["sourceQuests"] = { 79105 },	-- Breach
+					["maps"] = { 2307 },	-- Dalaran
+				}),
+				q(80321, {	-- Departure
+					["qg"] = 219885,	-- Anduin Wrynn
+					["coord"] = { 72.6, 57.7, 2307 },	-- Quest Dalaran
+					["sourceQuests"] = { 79106 },	-- Rupture
+					["g"] = {
+						-- Cloth
+						-- Leather
+						i(220379),	-- City Guard's Chainmail
+						-- Plate
+					},
+				}),
 				------ Chapter 1 ------
-				q(78529, {	-- Violet Impact
-					["sourceQuests"] = { 80500 },	-- The Bronzebeard Family
+				q(78529, {	-- Violent Impact
+					["qg"] = 217930,	-- Pile of Rubble
+					["coord"] = { 28.8, 54.5, ISLE_OF_DORN },
+					["sourceQuests"] = { 80321 },	-- Departure
 				}),
 				q(78530, {	-- Slay the Saboteurs
 					["sourceQuests"] = { 78529 },	-- Violet Impact
