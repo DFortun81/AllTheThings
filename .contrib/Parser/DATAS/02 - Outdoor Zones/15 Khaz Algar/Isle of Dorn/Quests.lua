@@ -1030,6 +1030,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 224708 },	-- Cenderragg
 					["coord"] = { 48.6, 60.9, ISLE_OF_DORN },
 					["g"] = {
+						i(228374),	-- Shoulders of Kix'arak's Bane
+						i(228375),	-- Belt of Kix'arak's Bane
+						i(228376),	-- Boots of Kix'arak's Bane
 						i(228377),	-- Gauntlets of Kix'arak's Bane
 					},
 				}),
