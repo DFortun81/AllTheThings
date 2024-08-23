@@ -1233,4 +1233,12 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- Side quests
 	q(81571),	-- Keep Ending Scene Active [DNT] (spellID 442907), rp after turn in questID 78999 (Heart of a Hero)
 	q(80539),	-- Completing The Machine Speakeasy (79546)
+	hqt(82459, {	-- <Stay a while and Listen>
+		["qg"] = 222558,	-- Anduin Wrynn
+		["coord"] = { 44.7, 44.6, DORNOGAL },
+	}),
+	hqt(82460, {	-- <Stay a while and Listen>
+		["qg"] = 222557,	-- Magni Bronzebeard
+		["coord"] = { 44.5, 44.5, DORNOGAL },
+	}),
 });
