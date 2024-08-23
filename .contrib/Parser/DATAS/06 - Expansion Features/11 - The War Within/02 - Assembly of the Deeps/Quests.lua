@@ -91,3 +91,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 		})),
 	}),
 })));
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	n(THE_ASSEMBLY_OF_THE_DEEPS, {
+		q(84622),	-- Renown 4
+		q(84623),	-- Renown 4
+	}),
+})))

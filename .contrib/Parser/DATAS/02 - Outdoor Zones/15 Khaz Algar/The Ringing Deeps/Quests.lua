@@ -158,7 +158,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(212575),	-- The Candle Keys (QI!)
 						i(219466),	-- Earthen Traveler's Chopper
 						i(219462),	-- Earthen Traveler's Claymore
+						i(219467),	-- Earthen Traveler's Fist
 						i(219461),	-- Earthen Traveler's Gavel
+						i(219460),	-- Earthen Traveler's Handaxe
 						i(219463),	-- Earthen Traveler's Javelin
 						i(219457),	-- Earthen Traveler's Saber
 						i(219459),	-- Earthen Traveler's Staff
@@ -284,7 +286,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { 78760 },	-- Dark Iron from Above
 					["provider"] = { "n", 213796 },	-- Moira Thaurissan
 					["coord"] = { 46.7, 10.3, THE_RINGING_DEEPS },
-					--["maps"] = { x },	-- probably will be scenario mapID but it is not here on alpha
+					["maps"] = { 2368 },	-- Hall of Awakening
 					["g"] = {
 						i(219018),	-- Esteemed Earthen Emblem
 					},
@@ -1218,6 +1220,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 70.7, 39.8, THE_RINGING_DEEPS },
 				}),
 			}),
+
+			-- Stay a while
+			hqt(84620, {	-- Stay awhile and listen: Magni Bronzebeard
+				["name"] = "Stay awhile and listen: Magni Bronzebeard",
+				["sourceQuests"] = { 78696 },	-- We Don't Go to Taelloch
+				["provider"] = { "n", 213633 },	-- Magni Bronzebeard
+				["coord"] = { 62.3, 58.0, THE_RINGING_DEEPS },
+			}),
+			hqt(84699, {	-- Stay awhile and listen: Moira Thaurissan
+				["name"] = "Stay awhile and listen: Moira Thaurissan",
+				["sourceQuests"] = { 78738 },	-- Absent Speaker
+				["provider"] = { "n", 213763 },	-- Moira Thaurissan
+				["coord"] = { 47.0, 20.7, THE_RINGING_DEEPS },
+			}),
 		}),
 	}),
 })));
@@ -1226,9 +1242,9 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- During questing
 	q(83613),	-- [DNT] Zone 2 Bread Crumb Completed Organically (spellID 456929), after turn in questID 80434 (Into the Deeps)
 	q(79635),	-- [DNT] The Assembly of the Deeps Renown Unlock (spellID 448654)
-	q(84699),	-- 'Stay a while and listen' - Moira Thaurissan (n: 213763 @ 47.0, 20.7), after questID 78760 (Dark Iron from Above). Probably.
 	-- Side quests
 	q(82652),	-- 'Stay a while and listen' - Brennok, in the end of whole speach during questID 80682 (One Last Story)
+	q(84433),	-- Show wax to Gnawbles for 79343 'Everyday I'm Snufflin'
 	-- 80510 or 80509
 	q(81927),	-- interact a things from table (left-ish one), during of this 2 quests (not sure which one exactly)
 	-- ?

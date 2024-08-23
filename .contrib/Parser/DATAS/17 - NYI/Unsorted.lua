@@ -25,7 +25,6 @@ root(ROOTS.Unsorted, {
 				i(228743),	-- Damp Weavercloth
 				i(228744),	-- Golbin Twist-Rag
 				i(228745),	-- Aurora Strand
-				i(228756),	-- Bonus Snuffling Experience
 				-- Have QuestID attached
 				i(228947),	-- Weaver's Lair Profession Table
 				---
@@ -1698,10 +1697,8 @@ root(ROOTS.Unsorted, {
 				i(219398),	-- Earthen Chain
 				i(219428),	-- Earthen Waistguard
 				i(219458),	-- Earthen Traveler's Dagger
-				i(219460),	-- Earthen Traveler's Handaxe
 				i(219464),	-- Earthen Traveler's Boomstick
 				i(219465),	-- Earthen Traveler's Crossbow
-				i(219467),	-- Earthen Traveler's Fist \\ Earthen Traveler's Fist Weapon
 				-- Earthen stuff again? Maybe erm.. Heritage?
 				i(224195),	-- Earthen Shoulders
 				i(224196),	-- Earthen Trousers

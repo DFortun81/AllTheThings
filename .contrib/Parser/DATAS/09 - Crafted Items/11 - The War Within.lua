@@ -1371,6 +1371,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			["requireSkill"] = FISHING,
 		},{
 			FirstCraft(82899, 444787),	-- Bismuth Bitterling
+			FirstCraft(82912, 444800),	-- Spiked Sea Raven
 		})),
 		i(225770),	-- Algari Anglerthread
 		i(225771),	-- Algari Seekerthread
