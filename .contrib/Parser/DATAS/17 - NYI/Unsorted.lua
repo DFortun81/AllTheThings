@@ -1842,10 +1842,6 @@ root(ROOTS.Unsorted, {
 				i(224467),	-- Forgotten Axe
 			}),
 			n(REWARDS, {
-				i(223424),	-- Algari-Weave Cord
-
-
-
 				i(223438),	-- Algari Warden's Vestment
 				i(223439),	-- Mereldar Scholar's Leggings
 				i(223444),	-- Arathi Defender's Breeches
