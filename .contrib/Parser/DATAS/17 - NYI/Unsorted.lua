@@ -1506,7 +1506,6 @@ root(ROOTS.Unsorted, {
 				i(228396),	-- Dead Fish
 				i(228415),	-- Adelgonn's Journal
 				i(228416),	-- Steelvein's Manifesto
-				i(228417),	-- Emergency Healthstone
 				i(228429),	-- Reflective Rock
 				i(228431),	-- Rock Buddy
 
@@ -1841,7 +1840,6 @@ root(ROOTS.Unsorted, {
 				i(223874),	-- Algari Dagger
 				i(223876),	-- Algari Warglaive
 				i(223877),	-- Algari Hatchet
-				i(224453),	-- City Guard's Coronet \\ Dalaran Cowl
 				i(224454),	-- City Guard's Mask \\ Dalaran Hood
 				i(228435),	-- Wine-Dyed Leggings
 				i(228436),	-- United Arathi's Jerkin

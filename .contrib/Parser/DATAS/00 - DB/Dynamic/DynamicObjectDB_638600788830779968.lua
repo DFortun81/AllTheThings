@@ -1,0 +1,63 @@
+﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	[423854] = {
+		readable = "Soulwell",
+		model = 2174093,
+		text = {
+			en = "Soulwell",
+			es = "Pozo de alma",
+			de = "Seelenbrunnen",
+			fr = "Puits des âmes",
+			it = "Pozzo dell'Anima",
+			pt = "Poço das Almas",
+			ru = "Источник душ",
+			ko = "영혼의 샘",
+			cn = "灵魂之井",
+		},
+	},
+	[441795] = {
+		readable = "Hallowfall Sparkfly",
+		model = 5197114,
+		text = {
+			en = "Hallowfall Sparkfly",
+			es = "[Hallowfall Sparkfly]",
+			de = "[Hallowfall Sparkfly]",
+			fr = "[Hallowfall Sparkfly]",
+			it = "[Hallowfall Sparkfly]",
+			pt = "[Hallowfall Sparkfly]",
+			ru = "[Hallowfall Sparkfly]",
+			ko = "[Hallowfall Sparkfly]",
+			cn = "[Hallowfall Sparkfly]",
+		},
+	},
+	[446420] = {
+		readable = "\"Weaving Supplies\"",
+		model = 5545988,
+		text = {
+			en = "\"Weaving Supplies\"",
+			es = "\"Weaving Supplies\"",
+			de = "\"Weaving Supplies\"",
+			fr = "\"Weaving Supplies\"",
+			it = "\"Weaving Supplies\"",
+			pt = "\"Weaving Supplies\"",
+			ru = "\"Weaving Supplies\"",
+			ko = "\"Weaving Supplies\"",
+			cn = "\"Weaving Supplies\"",
+		},
+	},
+	[455524] = {
+		readable = "<span style=\"color: #1EFF00\">Sturdy Chest</span>",
+		model = 5128194,
+		text = {
+			en = "<span style=\"color: #1EFF00\">Sturdy Chest</span>",
+			es = "<span style=\"color: #1EFF00\">Cofre robusto</span>",
+			de = "Robuste Truhe",
+			fr = "Coffre solide",
+			it = "<span style=\"color: #1EFF00\">Cassa Resistente</span>",
+			pt = "Baú Resistente",
+			ru = "Прочный сундук",
+			ko = "Sturdy Chest",
+			cn = "Sturdy Chest",
+		},
+	},
+})
+do ObjectDB[objectID] = objectData; end

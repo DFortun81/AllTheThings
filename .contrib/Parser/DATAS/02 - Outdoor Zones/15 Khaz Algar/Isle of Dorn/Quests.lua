@@ -64,6 +64,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { 79106 },	-- Rupture
 					["g"] = {
 						-- Cloth
+						i(224453),	-- City Guard's Coronet
 						-- Leather
 						i(220379),	-- City Guard's Chainmail (doesn't load ingame?)
 						-- Mail

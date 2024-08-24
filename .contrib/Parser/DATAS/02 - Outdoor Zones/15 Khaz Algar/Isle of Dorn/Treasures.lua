@@ -132,6 +132,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 48.9, 60.9, ISLE_OF_DORN },
 				["questID"] = 82326,
 			}),
+			o(423854, {	-- Soulwell
+				["coord"] = { 31.5, 54.2, ISLE_OF_DORN },
+				["questID"] = 84494,
+				["groups"] = {
+					i(228417),	-- Emergency Healthstone
+				},
+			}),
 			o(441223, {	-- Stone of The Unbound
 				["coord"] = { 44.1, 30.1, ISLE_OF_DORN },
 				["questID"] = 82046,
