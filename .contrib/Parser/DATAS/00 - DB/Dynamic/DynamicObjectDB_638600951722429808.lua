@@ -1,0 +1,63 @@
+﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	[419729] = {
+		readable = "Strange Eggs",
+		model = 4871099,
+		text = {
+			en = "Strange Eggs",
+			es = "Strange Eggs",
+			de = "Strange Eggs",
+			fr = "Œufs étranges",
+			it = "Strange Eggs",
+			pt = "Ovos Estranhos",
+			ru = "Strange Eggs",
+			ko = "Strange Eggs",
+			cn = "Strange Eggs",
+		},
+	},
+	[434929] = {
+		readable = "Radiant Remnant",
+		model = 5869303,
+		text = {
+			en = "Radiant Remnant",
+			es = "[Radiant Remnant]",
+			de = "[Radiant Remnant]",
+			fr = "[Radiant Remnant]",
+			it = "[Radiant Remnant]",
+			pt = "[Radiant Remnant]",
+			ru = "[Radiant Remnant]",
+			ko = "[Radiant Remnant]",
+			cn = "[Radiant Remnant]",
+		},
+	},
+	[451967] = {
+		readable = "Hillhelm Lunchbox",
+		model = 197617,
+		text = {
+			en = "Hillhelm Lunchbox",
+			es = "Hillhelm Lunchbox",
+			de = "Hillhelm Lunchbox",
+			fr = "Boîte à repas de Heaume-Colline",
+			it = "Hillhelm Lunchbox",
+			pt = "Lancheira de Montelmo",
+			ru = "Hillhelm Lunchbox",
+			ko = "Hillhelm Lunchbox",
+			cn = "Hillhelm Lunchbox",
+		},
+	},
+	[451993] = {
+		readable = "Nerubian Device",
+		model = 5128439,
+		text = {
+			en = "Nerubian Device",
+			es = "[Nerubian Device]",
+			de = "[Nerubian Device]",
+			fr = "[Nerubian Device]",
+			it = "[Nerubian Device]",
+			pt = "[Nerubian Device]",
+			ru = "[Nerubian Device]",
+			ko = "[Nerubian Device]",
+			cn = "[Nerubian Device]",
+		},
+	},
+})
+do ObjectDB[objectID] = objectData; end

@@ -89,6 +89,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(212333),	-- Expedition Tinderbox (QS!/QI!)
 						},
 					}),
+					q(79234, {	-- A Small Bag of Seeds
+						["provider"] = { "i", 212339 },	-- Expedition Tinderbox
+					}),
+					q(78589, {	-- Invasive Cuisine
+						["provider"] = { "i", 211861 },	-- Umbral Eggplant
+					}),
 				}),
 				n(QUESTS, sharedData({ ["isWeekly"] = true }, {
 					q(79346, {	-- Chew On That
@@ -277,14 +283,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					n(206203, {	-- Moth'ethk
 						["coord"] = { 63.5, 28.5, HALLOWFALL },
 						["questID"] = 82557,
+						["g"] = {
+							i(223924),	-- Chitin-Inscribed Vest
+						},
 					}),
 					n(220771, {	-- Murkspike
 						["coord"] = { 62.4, 13.3, HALLOWFALL },
 						["questID"] = 82565,
 					}),
 					n(206977, {	-- Parasidious
+						["description"] = "Pull many Shadowroot Vines until eventually the Rare is spawned.",
 						["coord"] = { 61.8, 32.5, HALLOWFALL },
 						["questID"] = 82563,
+						["crs"] = {
+							206870,	-- Shadowrooted Vine
+							206978,	-- Disturbed Dirt
+							206980,	-- Fungus Growth
+							206981,	-- Fungus Mound
+							206993,	-- Fungal Mass
+						},
 						["g"] = {
 							i(223940),	-- Deranged Fungarian's Epaulets
 						},
@@ -318,6 +335,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
 				}),
 				n(TREASURES, {
+					o(417381, {	-- A Small Bag of Seeds
+						["coord"] = { 65.3, 27.2, HALLOWFALL },
+						["g"] = {
+							i(212339),	-- A Small Bag of Seeds
+						},
+					}),
 					o(428472, {	-- Captain Lancekat's Discretionary Funds
 						["description"] = "Require any source of light for area (e.g. torch) that reveal this treasure",
 						["coord"] = { 66.5, 15.1, HALLOWFALL },
@@ -383,6 +406,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					o(434929, {	-- Radiant Remnant
 						["coord"] = { 62.1, 31.7, HALLOWFALL },
 						["questID"] = 80586,
+					}),
+					o(434561, {	-- Radiant Remnant
+						["coord"] = { 65.6, 27.0, HALLOWFALL },
+						["questID"] = 80550,
+					}),
+					o(434554, {	-- Radiant Remnant
+						["coord"] = { 64.8, 28.9, HALLOWFALL },
+						["questID"] = 80548,
+					}),
+					o(435009, {	-- Radiant Remnant
+						["coord"] = { 61.3, 31.8, HALLOWFALL },
+						["questID"] = 80591,
+					}),
+					o(434564, {	-- Radiant Remnant
+						["coord"] = { 65.0, 30.2, HALLOWFALL },
+						["questID"] = 80552,
+					}),
+					n(206870, {	-- Shadowrooted Vine
+						["provider"] = { "i", 206670 },	-- Darkroot Grips
+						["g"] = {
+							i(211861),	-- Umbral Eggplant
+						},
 					}),
 				}),
 				n(VENDORS, {
@@ -503,7 +548,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	q(81846),	-- Ore @ 65.3, 16.6
 	q(83047),	-- Ore @ 66.1, 17.0
 	q(83039),	-- Ore @ 66.3, 17.5
-	q(80548),	-- Radiant Remnant @ 64.8, 28.9
 	q(80583),	-- Radiant Remnant @ 64.0, 31.7
 	q(80337),	-- Radiant Remnant @ 66.1, 16.6
 	q(80347),	-- Radiant Remnant @ 65.7, 16.5

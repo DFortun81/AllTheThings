@@ -986,7 +986,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			q(79221, {	-- The Unusual Bug
 				["provider"] = { "i", 212331 },	-- The Unusual Bug (QI!)
-				["coord"] = { 67.2, 19.2, HALLOWFALL },
+				["maps"] = { AZJ_KAHET },
+			}),
+			q(81640, {	-- Tenir and the Order of Night
+				["provider"] = { "i", 219384 },	-- Umbral Eggplant (QI!)
+				["maps"] = { ISLE_OF_DORN },
 			}),
 			q(82894, {	-- The Price of Hope
 				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },

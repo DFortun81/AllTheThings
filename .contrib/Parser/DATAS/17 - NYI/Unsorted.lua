@@ -1523,7 +1523,6 @@ root(ROOTS.Unsorted, {
 
 				i(211481),	-- Stomping Shoes \\ Stompin' Shoes
 				i(211797),	-- Expedition Map
-				i(211861),	-- Umbral Eggplant
 				i(211929),	-- Ichor Coated Debris
 				i(211930),	-- Damaged Framework
 				i(211960),	-- Game Piece
@@ -1539,7 +1538,6 @@ root(ROOTS.Unsorted, {
 
 				i(212223),	-- Elemental Essence
 				i(212224),	-- Titan Relics
-				i(212339),	-- A Small Bag of Seeds
 				i(212349),	-- Sizzling Spring Water [DNT][UNUSED]
 				i(212344),	-- Chest Key
 				i(212520),	-- Shadow-Tainted Tinderbox
@@ -1788,7 +1786,6 @@ root(ROOTS.Unsorted, {
 				i(223921),	-- Ever-Oozing Signet
 				i(223922),	-- Cinder Pollen Cloak
 				i(223923),	-- Gilded Cryptlord's Sabatons
-				i(223924),	-- Chitin-Inscribed Vest
 				i(223926),	-- Earthgorger's Chain Bib
 				i(223927),	-- Vinewrapped Leather Tunic
 				i(223930),	-- Monstrous Chain Pincers
