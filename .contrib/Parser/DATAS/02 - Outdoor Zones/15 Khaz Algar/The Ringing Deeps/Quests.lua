@@ -813,7 +813,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(79683, {	-- Home is Where the Candle Is
 					["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// but could be renown?
-					["provider"] = { "n", 222803 },	-- Skitter
+					["providers"] = {
+						{ "n", 222803 },	-- Skitter
+						{ "n", 213152 },	-- Skitter
+					},
 					["coord"] = { 47.1, 33.3, THE_RINGING_DEEPS },
 					["g"] = {
 						i(223625),	-- Cinderwold Sizzlestinger (PET!)
