@@ -13,6 +13,9 @@ struct = function(field, id, t)
 	if not id then
 		print("Missing ID for",field,"group");
 	end
+	if t[field] and t[field] ~= id then
+		print("ERROR: Don't reuse tables within constructed objects! Fix Group: "..field..":"..id)
+	end
 	t[field] = id;
 	return t;
 end

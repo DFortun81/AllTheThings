@@ -1390,6 +1390,8 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, m(KALIMDOR, m(BLOODMYST_ISLE, {
-	q(9750),	-- UNUSED Urgent Delivery
-})));
+root(ROOTS.HiddenQuestTriggers, m(KALIMDOR, {
+	m(BLOODMYST_ISLE, {
+		q(9750),	-- UNUSED Urgent Delivery
+	}),
+}))
