@@ -177,67 +177,52 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			-- Achievements
 			o(455269, {	-- Notes On The Machine Speakers: Fragment I
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 45.0, 28.8, THE_RINGING_DEEPS },
 			}),
 			o(455274, {	-- Notes On The Machine Speakers: Fragment II
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 48.9, 25.9, THE_RINGING_DEEPS },
 			}),
 			o(455275, {	-- Notes On The Machine Speakers: Fragment III
 				["coord"] = { 51.1, 14.5, THE_RINGING_DEEPS },
 			}),
 			o(455276, {	-- Notes On The Machine Speakers: Fragment IV
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 39.9, 21.0, THE_RINGING_DEEPS },
 			}),
 			o(455277, {	-- Notes On The Machine Speakers: Fragment V
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 63.7, 58.8, THE_RINGING_DEEPS },
 			}),
 			o(455278, {	-- Notes On The Machine Speakers: Fragment VI
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 65.1, 79.6, THE_RINGING_DEEPS },
 			}),
 			o(454416, {	-- Alfritha's Plaque
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 48.5, 70.7, THE_RINGING_DEEPS },
 			}),
 			o(454405, {	-- Attwogaz's Plaque
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 62.9, 36.4, THE_RINGING_DEEPS },
 			}),
 			o(454417, {	-- Gundrig's Plaque
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 65.4, 83.8, THE_RINGING_DEEPS },
 			}),
 			o(454404, {	-- Hathlaz's Plaque
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 44.4, 13.5, THE_RINGING_DEEPS },
 			}),
 			o(454406, {	-- Krattdaz's Plaque
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 43.2, 40.9, THE_RINGING_DEEPS },
 			}),
 			o(454412, {	-- Merunth's Plaque
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 59.2, 93.7, THE_RINGING_DEEPS },
 			}),
 			o(454418, {	-- Sathilga's Plaque
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 64.1, 55.7, THE_RINGING_DEEPS },
 			}),
 			o(454407, {	-- Uisgaz's Plaque
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 55.0, 30.2, THE_RINGING_DEEPS },
 			}),
 			o(454414, {	-- Varerko's Plaque
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 49.4, 49.0, THE_RINGING_DEEPS },
 			}),
 			o(454408, {	-- Venedaz's Plaque
-				-- TODO
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["coord"] = { 48.6, 31.8, THE_RINGING_DEEPS },
 			}),
 		}),
 	}),
