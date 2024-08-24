@@ -22,9 +22,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 54.0, 26.4, HALLOWFALL },
 			}),
 			i(212491),	-- Sweet Eclipse
-			i(212331, {	-- The Unusual Bug (QI!)
-				-- o: 419729 | Strange Eggs
-			}),
 			i(212492),	-- Twilight-Spiced Grouper
 			i(212330),	-- Shadow-Hardened Mainspring (QI!)
 		}),

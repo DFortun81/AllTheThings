@@ -152,6 +152,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 
 root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
+		q(84055),	-- Extra HQT: Toadstomper
 		q(84061),	-- Extra HQT: Murkshade
 		q(84061),	-- Extra HQT: The Taskmaker
 		q(84062),	-- Extra HQT: Sloshmuck

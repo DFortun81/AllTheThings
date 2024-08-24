@@ -198,6 +198,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(225212),	-- The Big Book of Arathi Idioms [book]
 				},
 			}),
+			o(419729, {	-- Unusual Eggs
+				["coord"] = { 67.1, 21.8, HALLOWFALL },
+				["questID"] = 83032,
+				["g"] = {
+					i(212331),	-- The Unusual Bug
+				},
+			}),
 			o(441611, {	-- Windswept Satchel
 				["coord"] = { 30.2, 38.8, HALLOWFALL },
 				["questID"] = 81972,

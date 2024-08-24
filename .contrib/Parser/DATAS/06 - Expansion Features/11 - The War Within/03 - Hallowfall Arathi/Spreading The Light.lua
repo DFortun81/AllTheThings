@@ -146,6 +146,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(211872),	-- Patrol Torch (QI!)
 						},
 					}),
+					q(76600, {	-- RIght Between the Gyro-Optics
+						["sourceQuests"] = { 76599 },	-- Right Between the Gyro-Optics - Activate
+						["provider"] = { "n", 208019 },	-- Auebry Irongear
+						["coord"] = { 64.6, 30.7, HALLOWFALL },
+						["g"] = {
+							i(207084),	-- Auebry's Marker Pistol
+						},
+					}),
 					q(76394, {	-- Shadows of Flavor
 						["sourceQuests"] = { 78466 },	-- Keyflame: Chef Dinaire
 						["provider"] = { "n", 206533 },	-- Chef Dinaire
@@ -275,8 +283,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["questID"] = 82565,
 					}),
 					n(206977, {	-- Parasidious
-						--["coord"] = { X, Y, HALLOWFALL },
+						["coord"] = { 61.8, 32.5, HALLOWFALL },
 						["questID"] = 82563,
+						["g"] = {
+							i(223940),	-- Deranged Fungarian's Epaulets
+						},
 					}),
 					n(207826, {	-- Ravageant
 						["coord"] = { 59.8, 21.4, HALLOWFALL },
@@ -299,6 +310,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(228741, {	-- Lamplighter Supply Satchel
 						--probably all this sets is from here?
 						i(229085),	-- Aevery's Spare Bracers
+						i(229081),	-- Aevery's Spare Cowl
 						i(229155),	-- Lamplighter's Greataxe
 						i(229061),	-- Nisa's Spare Belt
 					}),
@@ -343,18 +355,34 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					o(441795, {	-- Hallowfall Sparkfly
 						["coord"] = { 66.8, 25.3, HALLOWFALL },
+						["description"] = "Requires level 80",
 						--["questID"] = ,
-						["cost"] = {{"i", 218107, 1}},	-- 1x Sparkbug Jar
+						["provider"] = {"i", 218107},	-- Sparkbug Jar
 						["g"] = {
 							i(220771),	-- Hallowed Glowfly (PET!)
 						},
 					}),
+					o(451967, {	-- Hallowfall Lunchbox
+						["coord"] = { 62.0, 31.7, HALLOWFALL },
+						["questID"] = 82996,
+						["provider"] = {"i", 218107},	-- Sparkbug Jar
+					}),
 					o(453186, {	-- Nightfarm Growthling
-						--["coord"] = { 66.8, 25.3, HALLOWFALL },
-						--["questID"] = ,
+						["coord"] = { 61.3, 31.8, HALLOWFALL },
+						["questID"] = 83272,
 						["g"] = {
 							i(221546),	-- Nightfarm Growthling (PET!)
 						},
+					}),
+					o(451993, {	-- Nerubian Device
+						["coord"] = { 62.3, 31.7, HALLOWFALL },
+						["g"] = {
+							i(224548),	-- Nerubian Device
+						},
+					}),
+					o(434929, {	-- Radiant Remnant
+						["coord"] = { 62.1, 31.7, HALLOWFALL },
+						["questID"] = 80586,
 					}),
 				}),
 				n(VENDORS, {
@@ -499,6 +527,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	q(84054),	-- Extra HQT: Croakit
 	q(84053),	-- Extra HQT: Deathpetal
 	q(84056),	-- Extra HQT: Duskshadow
+	q(84057),	-- Extra HQT: Parasidious
 	q(84059),	-- Extra HQT: Finclaw Bloodtide
 	q(84051),	-- Extra HQT: Moth'ethk
 	q(84060),	-- Extra HQT: Murkspike

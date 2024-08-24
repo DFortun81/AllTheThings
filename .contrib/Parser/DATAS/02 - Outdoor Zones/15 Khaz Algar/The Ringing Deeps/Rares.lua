@@ -124,6 +124,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81652,
 				["g"] = {
 					i(223942),	-- Spore-Encrusted Ribbon
+					i(223919),	-- Abducted Lawman's Gavel
 				},
 			}),
 			n(220271, {	-- Terror of the Forge

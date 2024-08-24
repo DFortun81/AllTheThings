@@ -112,7 +112,6 @@ root(ROOTS.Unsorted, {
 			i(229078),	-- Aevery's Spare Brigandine
 			i(229079),	-- Aevery's Spare Boots
 			i(229080),	-- Aevery's Spare Gauntlets
-			i(229081),	-- Aevery's Spare Cowl
 			i(229082),	-- Aevery's Spare Chausses
 			i(229083),	-- Aevery's Spare Shoulderguards
 			i(229084),	-- Aevery's Spare Belt
@@ -1512,7 +1511,6 @@ root(ROOTS.Unsorted, {
 				i(206348),	-- Fragmented Flame
 				i(206349),	-- Fragmented Reagent
 
-				i(207084),	-- Auebry's Marker Pistol
 				i(208948),	-- [DNT] Club Chest Key \\ Club Chest Key
 				i(208957),	-- Conduit of the Southern Storm
 				i(209857),	-- Unusual Seeds
@@ -1541,7 +1539,6 @@ root(ROOTS.Unsorted, {
 
 				i(212223),	-- Elemental Essence
 				i(212224),	-- Titan Relics
-				i(212331),	-- The Unusual Bug
 				i(212339),	-- A Small Bag of Seeds
 				i(212349),	-- Sizzling Spring Water [DNT][UNUSED]
 				i(212344),	-- Chest Key
@@ -1630,7 +1627,6 @@ root(ROOTS.Unsorted, {
 				i(224466),	-- Wilber The Chicken \\ The Chicken
 				i(224486),	-- Uncle's Eye
 				i(224545),	-- Plowhead
-				i(224548),	-- Nerubian Device
 				i(224777),	-- Sureki Shadecaster
 				i(224810),	-- Woodworm Elixir
 				i(225336),	-- A Lost Shoe
@@ -1778,7 +1774,6 @@ root(ROOTS.Unsorted, {
 				i(221242),	-- Forgeborn Helm
 				i(221246),	-- Fierce Beast Staff
 				i(221251),	-- Bestial Underground Cleaver
-				i(221252),	-- Nerubian Slayer's Claymore
 				i(221253),	-- Cultivator's Plant Puncher
 				i(221254),	-- Earthshatter Lance
 				i(221263),	-- Nerubian Venom-Tipped Dart
@@ -1789,7 +1784,6 @@ root(ROOTS.Unsorted, {
 				i(223916),	-- Nerubian Cutthroat's Reach
 				i(223917),	-- Nerubian Covert's Cloak
 				i(223918),	-- Specter Stalker's Shotgun
-				i(223919),	-- Abducted Lawman's Gavel
 				i(223920),	-- Slime Deflecting Stopper
 				i(223921),	-- Ever-Oozing Signet
 				i(223922),	-- Cinder Pollen Cloak
@@ -1805,7 +1799,6 @@ root(ROOTS.Unsorted, {
 				i(223937),	-- Honey Deliverer's Leggings
 				i(223938),	-- Marsh Hopper's Spaulders
 				i(223939),	-- Esteemed Nerubian's Mantle
-				i(223940),	-- Deranged Fungarian's Epaulets
 				i(223943),	-- Cord of the Earthbreaker
 				i(223944),	-- [PH] Infested Fungal Wristwraps
 				i(223945),	-- [PH] Perchfather's Cuffs

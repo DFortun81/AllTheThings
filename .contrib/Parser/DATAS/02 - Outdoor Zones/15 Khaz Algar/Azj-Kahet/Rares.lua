@@ -83,6 +83,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81706,
 				["g"] = {
 					i(221217),	-- Nerubian Bomber's Leggings
+					i(221252),	-- Nerubian Slayer's Claymore
 				},
 			}),
 			n(216043, {	-- Monstrous Lasharoth
