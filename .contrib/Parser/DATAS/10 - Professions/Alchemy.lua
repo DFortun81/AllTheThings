@@ -1097,6 +1097,18 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			ach(19704),	-- Overflowing Algari Flasks (automated)
 			ach(19716),	-- Plentiful Algari Potions (automated)
 		}),
+		n(QUESTS, sharedData({
+			["isWeekly"] = true,
+			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
+			["g"] = {
+				i(228773),	-- Algari Alchemist's Notebook
+			},
+		},{
+			q(84133, {	-- Alchemy Services Requested
+				["provider"] = { "n", 228177 },	-- Kala Clayhoof
+				["coord"] = { 59.2, 55.2, DORNOGAL },
+			}),
+		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
 			["g"] = sharedData({ ["cost"] = {{ "c", TWW_ALCHEMY_KNOWLEDGE, 1 }} }, {
@@ -1162,6 +1174,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				currency(TWW_ALCHEMY_KNOWLEDGE),
 			},
 		 }, {
+			i(228773),	-- Algari Alchemist's Notebook
 			q(83725, {	-- Inscription Order: Alchemy
 				["name"] = "Inscription Order: Alchemy",
 				["description"] = "Requires a crafting order from Inscription.",
