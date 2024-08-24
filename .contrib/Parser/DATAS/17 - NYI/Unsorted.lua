@@ -609,7 +609,6 @@ root(ROOTS.Unsorted, {
 				i(226281),	-- Radiant Tongs
 				i(226282),	-- Nerubian Smith's Kit
 				i(226283),	-- Spiderling's Wire Brush
-				i(226284),	-- Grinded Earthen Gem
 
 				i(226292),	-- Rock Engineer's Wrench
 				i(226293),	-- Dornogal Spectacles

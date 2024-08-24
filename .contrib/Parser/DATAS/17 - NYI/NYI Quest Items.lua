@@ -645,7 +645,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(210583),	-- Kuros's Memory Stone
 			i(210587),	-- Nemuraan's Memory Stone
 			i(221266),	-- Precious Belonging [DNT]
-			i(220737),	-- Storm Spirit
 			i(213173),	-- Thread of Power
 			i(210591),	-- Tishamaat Memory Stones
 		})),

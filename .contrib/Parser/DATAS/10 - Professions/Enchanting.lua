@@ -859,6 +859,13 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 					i(226288),	-- Essence of Holy Fire
 				},
 			}),
+			o(456009, {	-- Grinded Earthen Gem
+				["coord"] = { 57.6, 61.5, ISLE_OF_DORN },
+				["questID"] = 83856,
+				["g"] = {
+					i(226284),	-- Grinded Earthen Gem
+				},
+			}),
 			o(456008, {	-- Silver Dornogal Rod
 				["coord"] = { 59.4, 66.5, DORNOGAL },
 				["questID"] = 83859,

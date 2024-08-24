@@ -662,9 +662,12 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 								i(220726),	-- Shining Stormrider's Wristguards
 							},
 						})),
+						q(84908, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- The Stormrider's Honors [Khaz Algar Version]
+						-- Pops on login directs you to quest 83024
+						})),
 						q(83024, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- The Stormrider's Bond [Khaz Algar Version]
-							-- ["provider"] = { "n", XXXXXX },	-- ???
-							-- ["coord"] = { X, Y, KHAZ_ALGAR },
+							["provider"] = { "n", 225347 },	-- Stormrider Bruelda
+							["coord"] = { 35.3, 38.2, DORNOGAL },
 							["sym"] = {{"select","questID",81993},{"pop"}},	-- The Stormrider's Bond [Dragon Isle Version]
 						})),
 						q(81994, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- A Sacred Connection [Dragon Isles Version]
