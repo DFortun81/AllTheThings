@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(78530, {	-- Slay the Saboteurs
 					["sourceQuests"] = { 78529 },	-- Violet Impact
-					["provider"] = { "n", 211944 },	-- Lady Jaina Proudmoore
+					["provider"] = { "n", 211994 },	-- Lady Jaina Proudmoore
 					["coord"] = { 24.4, 57.1, ISLE_OF_DORN },
 				}),
 				q(78531, {	-- Urgent Recovery
