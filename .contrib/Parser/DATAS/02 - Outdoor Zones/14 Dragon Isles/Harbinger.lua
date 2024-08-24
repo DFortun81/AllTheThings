@@ -5,6 +5,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }
 	header(HEADERS.Quest, 79009, {	-- The Harbinger
 		q(79009, {	-- The Harbinger
 			-- Auto accepted when logging in
+			["provider"] = { "n", 221491 },	-- Khadgar's Summons
+			["coords"] = {
+				-- { X, Y, STORMWIND_CITY },
+				{ 41.4, 75.5, ORGRIMMAR },
+			},
 			["groups"] = {
 				i(223988),  -- Dalaran Hearthstone (QI!)
 			},
