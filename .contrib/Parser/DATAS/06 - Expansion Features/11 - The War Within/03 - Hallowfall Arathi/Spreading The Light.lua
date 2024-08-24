@@ -401,6 +401,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 62.3, 31.7, HALLOWFALL },
 						["g"] = {
 							i(224548),	-- Nerubian Device
+							-- put this on the quest once known
+							-- ["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 16 },
 						},
 					}),
 					o(434929, {	-- Radiant Remnant
