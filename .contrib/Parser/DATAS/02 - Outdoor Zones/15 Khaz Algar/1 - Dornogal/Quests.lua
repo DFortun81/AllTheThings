@@ -11,6 +11,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 219252 },	-- Alleria Windrunner
 					["coord"] = { 56.2, 48.5, AZJ_KAHET },
 				}),
+				q(84446, {	-- Renown of Khaz Algar
+					["sourceQuests"] = { 79197 },	-- Surface Bound
+					["provider"] = { "n", 216149 },	-- Moira Thaurissan
+					["coord"] = { 36.1, 80.3, DORNOGAL },
+				}),
 				q(79333, {	-- The Fleet Arrives
 					["sourceQuests"] = { 79197 },	-- Surface Bound
 					["provider"] = { "n", 216149 },	-- Moira Thaurissan
@@ -47,7 +52,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						82153,	-- Embassies and Envoys [A]
 						79328,	-- Embassies and Envoys [H]
 					},
-					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 214917 },	-- Moira Thaurissan
 					["coord"] = { 31.8, 59.4, DORNOGAL },
 				}),
