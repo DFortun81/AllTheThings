@@ -601,9 +601,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.06, {	-- Crushing Depths
-				q(81797),	-- Targeted Recon
-				q(80312, {	-- Gasping Plea
+				q(81797, {	-- Targeted Recon
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["provider"] = { "n", 218508 },	-- Joseph Brayvemarc
+					["coord"] = { 42.6, 55.3, HALLOWFALL },
+					["isBreadcrumb"] = true,
+				}),
+				q(80312, {	-- Gasping Plea
+					["sourceQuests"] = { 81797 },	-- Targeted Recon
 					["provider"] = { "i", 217352 },	-- Gasping Fish (QI!)
 				}),
 				q(80313, {	-- Tidal Charms
