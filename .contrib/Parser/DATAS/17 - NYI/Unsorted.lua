@@ -1250,9 +1250,7 @@ root(ROOTS.Unsorted, {
 				i(226134),	-- Mourning Baron's Shoulderpads
 				i(226137),	-- Inquisitive Sister's Cinch
 				i(226138),	-- Vow-Taker's Boots
-				i(226173),	-- Boots of the First Embrace
 				i(226174),	-- Famished Bride's Clasp
-				i(226175),	-- Traditional Nuptial Shoulderpads
 				i(226521),	-- Reinforced-Wax Plating
 				i(226695),	-- Cunning Advisor's Favor
 				i(226696),	-- Mighty Advisor's Favor
