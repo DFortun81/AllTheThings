@@ -423,6 +423,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["maps"] = { 2308, 2309 },	-- Priory of the Sacred Flame
 					["g"] = {
 						i(226139),	-- Arathi Officer's Gauntlets
+						i(226134),	-- Mourning Baron's Shoulderpads
 					},
 				}),
 			}),
@@ -1100,6 +1101,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["sourceQuests"] = { 78626 },	-- Spar Day
 				["provider"] = { "n", 213108 },	-- General Steelstrike
 				["coord"] = { 41.2, 52.9, HALLOWFALL },
+			}),
+			hqt(82538, {	-- Stay awhile and listen: General Steelstrike
+				["name"] = "Stay awhile and listen: General Steelstrike",
+				--["sourceQuests"] = main campaign or piory sidequest?
+				["provider"] = { "n", 213108 },	-- General Steelstrike #could be wrong here
+				["coord"] = { 42.3, 55, HALLOWFALL },
 			}),
 			hqt(81631, {	-- Stay awhile and listen: Faerin Lothar
 				["name"] = "Stay awhile and listen: Faerin Lothar",

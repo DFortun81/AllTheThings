@@ -1221,7 +1221,6 @@ root(ROOTS.Unsorted, {
 
 				i(225539),	-- [PH] Armor Epaulets
 
-
 				i(219942),	-- 11.0 Stalwart's Sandals
 				i(220157),	-- Empowered Tinderbox
 				i(220158),	-- Darkened Tinderbox
@@ -1230,7 +1229,6 @@ root(ROOTS.Unsorted, {
 				i(225656),	-- Goldenglow Censer
 				i(225661),	-- Burning Binding
 				i(225891),	-- Vile Vial of Kaheti Bile
-				i(226134),	-- Mourning Baron's Shoulderpads
 				i(226137),	-- Inquisitive Sister's Cinch
 				i(226138),	-- Vow-Taker's Boots
 				i(226174),	-- Famished Bride's Clasp
@@ -1592,7 +1590,6 @@ root(ROOTS.Unsorted, {
 				i(223079),	-- Slagshell Egg \\ Recipe: Shadow-Infused Gumbo
 				i(223220),	-- Kaheti All-Purpose Cleanser
 				i(223638),	-- Arathi Trade Goods
-				i(223889),	-- Flame Touched Weaponry
 				i(223952),	-- Singed Plush
 				i(224011),	-- Signet of the Thousand Scars
 				i(224012),	-- Signet of the Thousand Scars

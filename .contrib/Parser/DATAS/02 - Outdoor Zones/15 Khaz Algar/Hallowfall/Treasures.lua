@@ -122,7 +122,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(454797, {	-- From the Depths They Come
-				["coord"] = { 57.8, 84.2, HALLOWFALL },
+				["coord"] = { 57.8, 51.7, HALLOWFALL },
 				--["questID"] = ,
 				["g"] = {
 					i(225208),	-- From the Depths They Come [book]
