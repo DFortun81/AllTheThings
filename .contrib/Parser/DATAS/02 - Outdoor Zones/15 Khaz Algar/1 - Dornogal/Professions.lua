@@ -9,8 +9,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 219108 },	-- Roldira
 					["coord"] = { 59.1, 55.8, DORNOGAL },
 					["g"] = {
+						i(228931),	-- Algari Enchanter's Satchel
+						i(228932),	-- Algari Engineer's Satchel ?
 						i(228933),	-- Algari Leatherworker's Satchel
 						i(228916),	-- Algari Tailor's Satchel
+						i(228919),	-- Satchel of Algari Herbs
+						i(228920),	-- Satchel of Chitin
+						i(228918),	-- Satchel of Leather
 						i(228917),	-- Satchel of Ore
 					},
 				}),

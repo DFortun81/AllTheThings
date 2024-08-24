@@ -30,6 +30,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	i(213613),	-- Leyline Residue
 	i(213197),	-- Null Lotus
 	i(221758),	-- Profaned Tinderbox
+	i(221754),	-- Ringing Deeps Ingot
 	i(228338),	-- Soul Sigil I
 	i(211296),	-- Spark of Omens
 	i(213612),	-- Viridescent Spores
@@ -1371,29 +1372,29 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			["requireSkill"] = FISHING,
 		},{
 			--FirstCraft(xxxxx, 456154),	-- Anglerthread
-			--FirstCraft(xxxxx, 444795),	-- Arathor Hammerfish
+			FirstCraft(82907, 444795),	-- Arathor Hammerfish
 			--FirstCraft(xxxxx, 444803),	-- Awoken Coelacanth
 			--FirstCraft(xxxxx, 456591),	-- Azj-Kahet
 			FirstCraft(82899, 444787),	-- Bismuth Bitterling
-			--FirstCraft(xxxxx, 444785),	-- Bloody Perch
-			--FirstCraft(xxxxx, 444786),	-- Crystalline Sturgeon
+			FirstCraft(82897, 444785),	-- Bloody Perch
+			FirstCraft(82898, 444786),	-- Crystalline Sturgeon
 			FirstCraft(82914, 444802),	-- Cursed Ghoulfish
 			FirstCraft(82896, 444792),	-- Dilly-Dally Dace
 			FirstCraft(82905, 444793),	-- Dornish Pike
 			--FirstCraft(xxxxx, 454442),	-- Fishing Skill and You
 			FirstCraft(82902, 444790),	-- Goldengill Trout
 			--FirstCraft(xxxxx, 456590),	-- Hallowfall
-			--FirstCraft(xxxxx, 444797),	-- Kaheti Slum Shark
+			FirstCraft(82909, 444797),	-- Kaheti Slum Shark
 			--FirstCraft(xxxxx, 456180),	-- Mereldar Fishing Derby
 			FirstCraft(82900, 444788),	-- Nibbling Minnow
 			FirstCraft(82910, 444798),	-- Pale Huskfish
-			--FirstCraft(xxxxx, 444801),	-- Queen's Lurefish
+			FirstCraft(82913, 444801),	-- Queen's Lurefish
 			FirstCraft(82904, 454443),	-- Quiet River Bass
-			--FirstCraft(xxxxx, 444796),	-- Regal Dottyback
+			FirstCraft(82908, 444796),	-- Regal Dottyback
 			--FirstCraft(xxxxx, 444794),	-- Roaring Anglerseeker
-			--FirstCraft(xxxxx, 444799),	-- Sanguine Dogfish
+			FirstCraft(82911, 444799),	-- Sanguine Dogfish
 			--FirstCraft(xxxxx, 456152),	-- Seekerthread
-			--FirstCraft(xxxxx, 444791),	-- Specular Rainbowfish
+			FirstCraft(82903, 444791),	-- Specular Rainbowfish
 			FirstCraft(82912, 444800),	-- Spiked Sea Raven
 			--FirstCraft(xxxxx, 456589),	-- The Ringing Deeps
 			FirstCraft(82901, 444789),	-- Whispering Stargazer
@@ -2393,6 +2394,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(81453, 219271),	-- Skinning Twice-Stinger the Wretched
 			FirstSkin(81449, 219263),	-- Skinning Warphorn
 			FirstSkin(83412, 216039),	-- Skinning Xishorr
+			FirstSkin(81457, 220270),	-- Skinning Zilthara
 		})),
 		spell(423342, {	-- Khaz Algar Skinning
 			i(224781),	-- Abyssal Fur
@@ -2423,6 +2425,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(219009),	-- Crystalline Creature Lure
 		i(219004),	-- Dornish Pike Lure
 		i(219007),	-- Elusive Creature Lure
+		i(228959),	-- Pile of Unidentified Meat
 		i(219003),	-- Quiet River Bass Lure
 		i(219006),	-- Roaring Anglerseeker Lure
 		i(219002),	-- Specular Rainbowfish Lure
@@ -2558,6 +2561,80 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = TAILORING,
 		},{
+			--FirstCraft(XXXXX, 438892);	-- Algari Competitor's Cloth Bands
+			--FirstCraft(XXXXX, 438897);	-- Algari Competitor's Cloth Cloak
+			--FirstCraft(XXXXX, 438894);	-- Algari Competitor's Cloth Gloves
+			--FirstCraft(XXXXX, 438893);	-- Algari Competitor's Cloth Hood
+			--FirstCraft(XXXXX, 438889);	-- Algari Competitor's Cloth Leggings
+			--FirstCraft(XXXXX, 438896);	-- Algari Competitor's Cloth Sash
+			--FirstCraft(XXXXX, 438890);	-- Algari Competitor's Cloth Shoulderpads
+			--FirstCraft(XXXXX, 438891);	-- Algari Competitor's Cloth Treads
+			--FirstCraft(XXXXX, 438895);	-- Algari Competitor's Cloth Tunic
+			--FirstCraft(XXXXX, 446973);	-- Artisan Alchemist's Robe
+			--FirstCraft(XXXXX, 446974);	-- Artisan Chef's Hat
+			--FirstCraft(XXXXX, 446972);	-- Artisan Enchanter's Hat
+			--FirstCraft(XXXXX, 446971);	-- Artisan Fishing Cap
+			--FirstCraft(XXXXX, 446970);	-- Artisan Gardening Hat
+			--FirstCraft(XXXXX, 446975);	-- Artisan Tailor's Coat
+			--FirstCraft(XXXXX, 446996);	-- Bright Polishing Cloth
+			--FirstCraft(XXXXX, 446982);	-- Concoctor's Clutch
+			--FirstCraft(XXXXX, 446940);	-- Consecrated Cloak
+			--FirstCraft(XXXXX, 446939);	-- Consecrated Cord
+			--FirstCraft(XXXXX, 446938);	-- Consecrated Cuffs
+			--FirstCraft(XXXXX, 446945);	-- Consecrated Gloves
+			--FirstCraft(XXXXX, 446941);	-- Consecrated Hood
+			--FirstCraft(XXXXX, 446943);	-- Consecrated Leggings
+			--FirstCraft(XXXXX, 446944);	-- Consecrated Mantle
+			--FirstCraft(XXXXX, 446942);	-- Consecrated Robe
+			--FirstCraft(XXXXX, 446937);	-- Consecrated Slippers
+			--FirstCraft(XXXXX, 446935);	-- Cool Sunset Bracers
+			--FirstCraft(XXXXX, 446987);	-- Darkmoon Duffle
+			--FirstCraft(XXXXX, 446991);	-- Dawnthread Lining
+			--FirstCraft(XXXXX, 446928);	-- Dawnweave Bolt
+			--FirstCraft(XXXXX, 446977);	-- Dawnweave Reagent Bag
+			--FirstCraft(XXXXX, 447001);	-- Daybreak Spellthread
+			--FirstCraft(XXXXX, 446992);	-- Duskthread Lining
+			--FirstCraft(XXXXX, 446979);	-- Duskweave Bag
+			--FirstCraft(XXXXX, 446927);	-- Duskweave Bolt
+			--FirstCraft(XXXXX, 446989);	-- Excavator's Haversack
+			FirstCraft(80867, 454397);	-- Exquisite Weavercloth Bolt
+			--FirstCraft(XXXXX, 446988);	-- Gardener's Seed Satchel
+			--FirstCraft(XXXXX, 446932);	-- Gloves of the Woven Dusk
+			--FirstCraft(XXXXX, 446930);	-- Grips of the Woven Dawn
+			--FirstCraft(XXXXX, 446998);	-- Gritty Polishing Cloth
+			--FirstCraft(XXXXX, 447888);	-- Hideseeker's Tote
+			--FirstCraft(XXXXX, 446984);	-- Hideshaper's Workbag
+			--FirstCraft(XXXXX, 446983);	-- Ignition Satchel
+			--FirstCraft(XXXXX, 446990);	-- Jeweler's Purse
+			--FirstCraft(XXXXX, 446985);	-- Magically "Infinite" Messenger
+			FirstCraft(80822, 446958);	-- Pioneer's Cloth Cloak
+			FirstCraft(80821, 446957);	-- Pioneer's Cloth Cord
+			FirstCraft(80820, 446956);	-- Pioneer's Cloth Cuffs
+			FirstCraft(80823, 446959);	-- Pioneer's Cloth Hood
+			FirstCraft(80824, 446960);	-- Pioneer's Cloth Robe
+			FirstCraft(80819, 446955);	-- Pioneer's Cloth Slippers
+			FirstCraft(80827, 446963);	-- Pioneer's Perfected Gloves
+			FirstCraft(80825, 446961);	-- Pioneer's Perfected Leggings
+			FirstCraft(80826, 446962);	-- Pioneer's Perfected Mantle
+			--FirstCraft(XXXXX, 446995);	-- Preserving Embroidery Thread
+			--FirstCraft(XXXXX, 446986);	-- Prodigy's Toolbox
+			--FirstCraft(XXXXX, 446933);	-- Slippers of the Woven Dusk
+			--FirstCraft(XXXXX, 447000);	-- Sunset Spellthread
+			--FirstCraft(XXXXX, 454431);	-- The Severed Satchel
+			--FirstCraft(XXXXX, 446931);	-- Treads of the Woven Dawn
+			--FirstCraft(XXXXX, 446934);	-- Warm Sunrise Bracers
+			--FirstCraft(XXXXX, 446968);	-- Weavercloth Alchemist's Robe
+			--FirstCraft(XXXXX, 446976);	-- Weavercloth Bag
+			FirstCraft(80866, 447002);	-- Weavercloth Bandage
+			--FirstCraft(XXXXX, 446929);	-- Weavercloth Bolt
+			FirstCraft(80833, 446969);	-- Weavercloth Chef's Hat
+			FirstCraft(80830, 446966);	-- Weavercloth Enchanter's Hat
+			--FirstCraft(XXXXX, 446965);	-- Weavercloth Fishing Cap
+			--FirstCraft(XXXXX, 446964);	-- Weavercloth Gardening Hat
+			--FirstCraft(XXXXX, 446978);	-- Weavercloth Reagent Bag
+			--FirstCraft(XXXXX, 446999);	-- Weavercloth Spellthread
+			FirstCraft(80831, 446967);	-- Weavercloth Tailor's Coat
+			--FirstCraft(XXXXX, 446997);	-- Weavercloth Embroidery Thread
 		})),
 	}),
 })));

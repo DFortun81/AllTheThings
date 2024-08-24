@@ -795,6 +795,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			filter(TRINKET_F, {
 				i(215174),	-- Concoction: Kiss of Death
 				i(225653),	-- Siphoning Lightbrand
+				i(215178),	-- Shadow-Binding Ritual Knife
+				i(225668),	-- Unstable Power Suit Core
 			}),
 		}),
 		n(BOUNTIFUL, bubbleDownFiltered({
@@ -878,6 +880,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(219210),	-- Sanctifier's Startierce
 			}),
 		})),
+		filter(CONSUMABLES, {
+			i(226120),	-- Deployable Battle Supplies
+			i(226131),	-- Deployable Wind-Wrangling Spire
+		}),
 		filter(COSMETIC, {
 			i(212172),	-- Ajul'Nerub Raptorial Spine
 			i(212173),	-- Rulk'Nerub Raptorial Spine

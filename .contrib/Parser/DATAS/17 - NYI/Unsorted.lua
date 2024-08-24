@@ -67,14 +67,7 @@ root(ROOTS.Unsorted, {
 				i(228737),	-- Glimmer of Leatherworking Knowledge
 				i(228738),	-- Flicker of Tailoring Knowledge
 				i(228739),	-- Glimmer of Tailoring Knowledge
-
 				-- Same with these
-				i(228918),	-- Satchel of Leather
-				i(228919),	-- Satchel of Algari Herbs
-				i(228920),	-- Satchel of Chitin
-				i(228931),	-- Algari Enchanter's Satchel
-				i(228932),	-- Algari Engineer's Satchel
-
 				i(228610),	-- Artisan's Consortium Payout [Uncommon]
 				i(228611),	-- Artisan's Consortium Payout [Rare]
 				i(228612),	-- Artisan's Consortium Payout [Epic]
@@ -86,7 +79,6 @@ root(ROOTS.Unsorted, {
 				i(228764),	-- Classic Sunny Tabard
 			}),
 			--
-			i(228959),	-- Pile of Unidentified Meat
 			i(228984),	-- Unbreakable Iron Idol
 			i(229000),	-- Machine-Warden's Cog
 			i(229005),	-- Cache of Earthen Treasures
@@ -285,7 +277,6 @@ root(ROOTS.Unsorted, {
 				i(224416),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
 			}),
 			n(PROFESSIONS, {
-				i(221754),	-- Ringing Deeps Ingot
 				i(221757),	-- Gloomfathom Hide
 				i(221763),	-- Viridian Charmcap
 				i(211494),	-- Spark of Beginnings
@@ -1072,7 +1063,6 @@ root(ROOTS.Unsorted, {
 				i(215172),	-- Silken Chain Weaver
 				i(215173),	-- Serum of Unconstrained Senses
 				i(215175),	-- Belt of Vials
-				i(215178),	-- Shadow-Binding Ritual Knife
 				i(216657),	-- Test Item C
 
 				i(218132),	-- 11.0 Zone Uncommon Template - Vestment
@@ -1239,7 +1229,6 @@ root(ROOTS.Unsorted, {
 				i(225648),	-- Candle Confidant
 				i(225656),	-- Goldenglow Censer
 				i(225661),	-- Burning Binding
-				i(225668),	-- Unstable Power Suit Core
 				i(225891),	-- Vile Vial of Kaheti Bile
 				i(226134),	-- Mourning Baron's Shoulderpads
 				i(226137),	-- Inquisitive Sister's Cinch
@@ -1447,8 +1436,6 @@ root(ROOTS.Unsorted, {
 				i(226045),	-- The General's Trove
 				i(226100),	-- The Vizier's Trove
 				i(226108),	-- [DNT] Debug Profession Stats
-				i(226120),	-- Deployable Battle Supplies \\ Deployable Charge Station
-				i(226131),	-- Deployable Wind-Wrangling Spire \\ Deployable Wind-Wrangling Station
 				i(226149),	-- Pile of Humming Shinies
 				i(226150),	-- Gem-Studded Candelabra
 				i(226151),	-- Wax-Coated Coffer Unlocker
@@ -1758,7 +1745,6 @@ root(ROOTS.Unsorted, {
 				i(221214),	-- Chitin Chain Headpiece
 				i(221222),	-- Water-Imbued Spaulders
 				i(221224),	-- Bouldershell Waistguard
-				i(221227),	-- Monstrous Fungal Cord
 				i(221230),	-- Storm Bindings
 				i(221231),	-- Steam-Powered Wristwatch
 				i(221232),	-- Polished Goblin Bling
@@ -1773,7 +1759,6 @@ root(ROOTS.Unsorted, {
 				i(221251),	-- Bestial Underground Cleaver
 				i(221253),	-- Cultivator's Plant Puncher
 				i(221254),	-- Earthshatter Lance
-				i(221263),	-- Nerubian Venom-Tipped Dart
 				i(221264),	-- Fungarian Mystic's Cluster
 				i(221505),	-- [DNT] Rare Cloth - Robe
 				i(223005),	-- String of Fungal Fruits

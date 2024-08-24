@@ -91,6 +91,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81705,
 				["g"] = {
 					i(221250),	-- Creeping Lasher Machete
+					i(221227),	-- Monstrous Fungal Cord
 				},
 			}),
 			n(216052, {	-- Skrimisher Sa'zryk
@@ -136,6 +137,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 82289,
 				["coord"] = { 62.8, 66.7, AZJ_KAHET },
 				["g"] = {
+					i(221263),	-- Nerubian Venom-Tipped Dart
 					i(225952),	-- Vial of Tka'ktath's Blood (QS!)
 				},
 			}),
@@ -193,6 +195,7 @@ root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 		q(84069),	-- Extra HQT: The Groundskeeper
 		q(85167),	-- Extra HQT: The One Left
 		q(84078),	-- Extra HQT: The Oozekhan
+		q(85166),	-- Extra HQT: Tka'ktath
 		q(84080),	-- Extra HQT: Umbraclaw Matra
 		q(84072),	-- Extra HQT: XT-Minecrusher 8700
 	}),
