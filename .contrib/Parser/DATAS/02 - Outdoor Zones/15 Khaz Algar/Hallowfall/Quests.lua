@@ -41,10 +41,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 70.1, 61.0, HALLOWFALL },
 					["g"] = {
 						i(213191),	-- Arathi Tinderbox (QI!)
-						i(220109),	-- Chainmail of Sina's Stalwarts
 						i(220112),	-- Cowl of Sina's Stalwarts
 						i(220110),	-- Greaves of Sina's Stalwarts
 						i(220108),	-- Helm of Sina's Stalwarts
+						i(220126),	-- Lamplighter's Cinch
 					},
 				}),
 				q(78668, {	-- Rally on the Dawnbreaker
@@ -162,7 +162,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 221733 },	-- Faerin Lothar
 					["coord"] = { 55.8, 43.4, HALLOWFALL },
 					["g"] = {
-						i(220126),	-- Lamplighter's Cinch
+						i(220109),	-- Chainmail of Sina's Stalwarts
 						i(220125),	-- Lamplighter's Epaulets
 						i(220119),	-- Lamplighter's Handwraps
 						i(220127),	-- Lamplighter's Sabatons
@@ -908,8 +908,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 68.1, 44.2, HALLOWFALL },
 					["g"] = {
 						i(225179),	-- Salamanther Heart (QI!)
-						--
 						i(228438),	-- Derill's Unused Visor
+						i(228435),	-- Wine-Dyed Leggings
 					},
 				}),
 				q(83279),	-- Prove One's Mettle

@@ -181,7 +181,6 @@ root(ROOTS.Unsorted, {
 			i(229161),	-- Lamplighter's Chopper
 			i(229162),	-- Lamplighter's Sword
 			i(229163),	-- Lamplighter's Blade
-			i(226520),	-- Queen's Pheromone
 			i(229194),	-- Queen's Pheromone
 			i(229195),	-- Queen's Pheromone
 			i(229370),	-- Companion Experience
@@ -1805,7 +1804,6 @@ root(ROOTS.Unsorted, {
 				i(223876),	-- Algari Warglaive
 				i(223877),	-- Algari Hatchet
 				i(224454),	-- City Guard's Mask \\ Dalaran Hood
-				i(228435),	-- Wine-Dyed Leggings
 				i(228436),	-- United Arathi's Jerkin
 				i(228437),	-- Salamanther-Scale Greaves
 				i(228439),	-- Mitts of Menial Tasks

@@ -724,9 +724,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 211409 },	-- Faerin Lothar
 					["coord"] = { 59.6, 25.7, AZJ_KAHET },
+					["isBreadcrumb"] = true,
 				}),
 				q(83628, {	-- Tense Recovery
-					["sourceQuests"] = { 83716 },	-- Beneath the Roots
+					--["sourceQuests"] = { 83716 },	-- Beneath the Roots
 					["provider"] = { "n", 227222 },	-- Ysabel Gleamgaard
 					["coord"] = { 26.8, 55.9, AZJ_KAHET },
 				}),

@@ -224,7 +224,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(226518, {	-- Phero-Escape
 							["cost"] = {{"c", KEJ, 25}},
 						}),
-						i(229193, {	-- Queen's Pheromone (CI!)	(old itemID 226520?)
+						i(226520, {	-- Queen's Pheromone (CI!)
 							["cost"] = {{"c", KEJ, 8888888}},
 						}),
 						i(223279, {	-- Royal Court Undercrawler (MOUNT!)
