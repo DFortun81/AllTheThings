@@ -127,8 +127,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 212991 },	-- Skitter
 					["coord"] = { 61.5, 32.0, THE_RINGING_DEEPS },
 					["g"] = {
-						i(217015),	-- Unstable Cinderbrew Barrel (QI!)
-						i(212177),	-- Useful Looking Scrap (QI!)
+						o(428699, {	-- Sizzling Barrel
+							i(217015),	-- Unstable Cinderbrew Barrel (QI!)
+						}),
+						o_repeated({
+							i(212177),	-- Useful Looking Scrap (QI!)
+							o(417136),	-- Intriguing Scrap
+							o(417137),	-- Intriguing Scrap
+							o(417138),	-- Intriguing Scrap
+							o(411878),	-- Intriguing Scrap
+						}),
 					},
 				}),
 				q(78641, {	-- Tackling Torchsnarl
@@ -479,9 +487,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 212695 },	-- Machinist Kittrin
 					["coord"] = { 48.2, 33.4, THE_RINGING_DEEPS },
 					["g"] = {
-						i(210732),	-- Machinist's Calipers (QI!)
-						i(210733),	-- Machinist's Gauge (QI!)
-						i(210734),	-- Machinist's Wrench (QI!)
+						o(411622, {	-- Machinist Plinth
+							i(210732),	-- Machinist's Calipers (QI!)
+						}),
+						o(411623, {	-- Machinist Plinth
+							i(210733),	-- Machinist's Gauge (QI!)
+						}),
+						o(411624, {	-- Machinist Plinth
+							i(210734),	-- Machinist's Wrench (QI!)
+						}),
 					},
 				}),
 				q(78563, {	-- The Weight of a World
@@ -913,9 +927,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 216438 },	-- Granny Scribbles
 					["coord"] = { 48.0, 35.7, THE_RINGING_DEEPS },
+					-- Instance ID 2601
 					--["maps"] = { x },	-- could be scenario mapID but it is not here?
 					["g"] = {
-						i(217997),	-- Shiny Rock (QI!)
+						o(421525, {	-- Shinies
+							i(217997),	-- Shiny Rock (QI!)
+						}),
 						i(217998),	-- Sweetmeat (QI!)
 					},
 				}),
@@ -923,34 +940,50 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { 79504 },	-- Dripsy Forgot Her Candle
 					["provider"] = { "n", 216438 },	-- Granny Scribbles
 					["coord"] = { 48.0, 35.7, THE_RINGING_DEEPS },
+					-- Instance ID 2601
 					--["maps"] = { x },	-- could be scenario mapID
 				}),
 				q(79507, {	-- The Day the Stoneheads Came
 					["sourceQuests"] = { 79505 },	-- Chomps and the Cave-In
 					["provider"] = { "n", 216438 },	-- Granny Scribbles
 					["coord"] = { 48.0, 35.7, THE_RINGING_DEEPS },
+					-- Instance ID 2601
 					--["maps"] = { x },	-- could be scenario mapID
 					["g"] = {
-						i(224403),	-- Heirloom Wax (QI!)
-						i(224402),	-- Krafting Tools (QI!)
-						i(224401),	-- Run Far Food (QI!)
-						i(224400),	-- See Where Running Candles (QI!)
-						i(218249),	-- Softsnout's Favorite Shovel (QI!)
+						o(421597, {	-- Village Center
+							i(224403),	-- Heirloom Wax (QI!)
+						}),
+						o(421599, {	-- Local Industry
+							i(224402),	-- Krafting Tools (QI!)
+						}),
+						o(421594, {	-- Gainful Employment
+							i(224401),	-- Run Far Food (QI!)
+						}),
+						o(421592, {	-- Life Savings
+							i(224400),	-- See Where Running Candles (QI!)
+						}),
+						o(436933, {	-- Softsnout's Favourite Shovel
+							i(218249),	-- Softsnout's Favorite Shovel (QI!)
+						}),
 					},
 				}),
 				q(79508, {	-- Mipsy Mole-Rider
 					["sourceQuests"] = { 79507 },	-- The Day the Stoneheads Came
 					["provider"] = { "n", 216438 },	-- Granny Scribbles
 					["coord"] = { 48.0, 35.7, THE_RINGING_DEEPS },
+					-- Instance ID 2601
 					--["maps"] = { x },	-- could be scenario mapID
 				}),
 				q(79510, {	-- The Wickless Candle
 					["sourceQuests"] = { 79508 },	-- Mipsy Mole-Rider
 					["provider"] = { "n", 216438 },	-- Granny Scribbles
 					["coord"] = { 48.0, 35.7, THE_RINGING_DEEPS },
+					-- Instance ID 2601
 					--["maps"] = { x },	-- could be scenario mapID
 					["g"] = {
-						i(219224),	-- Prooftelling Flower (QI!)
+						o(421735, {	-- Prooftelling Flower
+							i(219224),	-- Prooftelling Flower (QI!)
+						}),
 					},
 				}),
 			}),
