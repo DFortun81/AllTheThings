@@ -5,8 +5,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 	m(AZJ_KAHET, {
 		n(FLIGHT_PATHS, {
 			fp(2920, {	-- Faerin's Advance, Azj-Kahet
-				["coord"] = { 60.2, 25.2, AZJ_KAHET },
-				["cr"] = 212059,	-- Sofee Batalsworn
+				["coord"] = { 59.9, 18.7, AZJ_KAHET },
+				["cr"] = 216973,	-- Couruier Aidal
 			}),
 			fp(2921, {	-- Mmarl, Azj-Kahet
 				["coord"] = { 75.6, 67.1, AZJ_KAHET },

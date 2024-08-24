@@ -505,19 +505,21 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(455533, {	-- Sturdy Chest
-					["coord"] = { 57.5, 18.5, TAK_RETHAN_ABYSS },
+					["coord"] = { 59.7, 24.7, TAK_RETHAN_ABYSS },
 					["questID"] = 83651,
+					-- dropped i(226120)	-- Deployable Battle Supplies
+					-- maybe not unique to this chest
 				}),
 				o(455514, {	-- Sturdy Chest
-					["coord"] = { 61.3, 39.2, TAK_RETHAN_ABYSS },
+					["coord"] = { 35.1, 58.6, TAK_RETHAN_ABYSS },
 					["questID"] = 83669,
 				}),
 				o(455492, {	-- Sturdy Chest
-					["coord"] = { 44.3, 39.9, TAK_RETHAN_ABYSS },
+					["coord"] = { 64.7, 49.3, TAK_RETHAN_ABYSS },
 					["questID"] = 83686,
 				}),
 				o(455493, {	-- Sturdy Chest
-					["coord"] = { 55.0, 62.7, TAK_RETHAN_ABYSS },
+					["coord"] = { 44.7, 49.7, TAK_RETHAN_ABYSS },
 					["questID"] = 83687,
 				}),
 			}),
