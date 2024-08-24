@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(214151, {	-- Ahg'zagall
 				["coord"] = { 40.0, 47.3, AZJ_KAHET },
-				["questID"] = 81698,	-- 78905 on 80s 2nd character??
+				["questID"] = 81698,
 				["g"] = {
 					i(223375),	-- Clattering Chitin Necklace
 				},
@@ -179,6 +179,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 
 root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 	m(AZJ_KAHET, {
+		q(78905),	-- Extra HQT: Ahg'zagall
 		q(84073),	-- Extra HQT: Cha'tak
 		q(84081),	-- Extra HQT: Deepcrawler Tx'kesh
 		q(84076),	-- Extra HQT: Enduring Gutterface
