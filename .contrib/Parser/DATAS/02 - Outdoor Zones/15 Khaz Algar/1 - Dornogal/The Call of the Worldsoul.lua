@@ -57,7 +57,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82514),	--
 				q(82515),	--
 				-- only for low level alts
-				q(84668),	-- when pick up any Worldsoul quest on <80s character
+				q(84668),	-- when pick up any Worldsoul quest on <80s character // I got this on level 80 Char
 				--[[ 82039 seems like related to caches or sparks?
 				q(82039),	-- after turn in questID 82678 (Archives: The First Disk) & 82679 (Archives: Seeking History)
 				--]]

@@ -259,5 +259,5 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- Alt skip
 	q(83621),	-- can be used right after turn in 81930 or 78713 (The War Within)
 	-- 82059 (Transmutation Station)
-	--q(65440),	-- provided 15x Carved Harbinger Crest for quest? (currently in NYI)
+	--q(65440),	-- provided 15x Carved Harbinger Crest for quest? (currently in NYI) // Same for Braghe
 });
