@@ -1651,7 +1651,6 @@ root(ROOTS.Unsorted, {
 				i(225927),	-- Emerald Necklace
 
 				i(228378),	-- Pristine Council's Seal
-				i(228409),	-- Valrin's Sweetrolls
 			}),
 			n(WEAPONS, {
 				i(216905),	-- Brann Bronzebeard's Axe

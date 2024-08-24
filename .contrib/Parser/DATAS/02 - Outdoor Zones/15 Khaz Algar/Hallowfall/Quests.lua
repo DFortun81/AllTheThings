@@ -563,8 +563,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.05, {	-- The Sky's the Limit
-				q(79304, {	-- 	-- Care Package
+				q(79304, {	-- Care Package
 					["isBreadcrumb"] = true,	-- But I didn't find it
+					["g"] = {
+						i(228409),	-- Valrin's Sweetrolls (QI!)
+					},
 				}),
 				q(79300, {	-- The Notebook
 					["sourceQuests"] = { 79304 },	-- Care Package

@@ -159,6 +159,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coords"] = {
 					{ 55.0, 65.6, ISLE_OF_DORN },	-- U'llort the Self-Exiled
 					{ 52.6, 67.1, ISLE_OF_DORN },	-- Boskroot Cap
+				},
 				["questID"] = 82142,
 				["cost"] = {{"i", 221550, 1}},	-- 1x Boskroot Cap
 				["g"] = {
