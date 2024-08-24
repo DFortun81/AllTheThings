@@ -1107,7 +1107,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 213107 },	-- Faerin Lothar
 				["coord"] = { 33.5, 54.8, HALLOWFALL },
 			}),
-
+			hqt(81594, {	-- Stay awhile and listen: Faerin Lothar
+				["name"] = "Stay awhile and listen: Faerin Lothar",
+				["sourceQuests"] = {
+					78932,	-- Fickle Fiendish Fish
+					78929,	-- Tricks of the Dark
+				},
+				["provider"] = { "n", 214378 },	-- Faerin
+				["coord"] = { 53.9, 30.7, HALLOWFALL },
+			}),
 		}),
 	}),
 })));
@@ -1116,7 +1124,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	-- During questing
 	q(83614),	-- [DNT] Zone 3 Bread Crumb Completed Organically (spellID 456930), after turn in questID 78658 (The Hallowed Path)
 	q(79654),	-- [DNT] Hallowfall Arathi Renown Unlock (spellID 448657)
-	q(81594),	-- [DNT] Complete Tracking Quest (spellID 443002), after turn in questID 78932 (Fickle Fiendish Fish) (could be rp unlock for 'Stay a while and listen' Faerin during Blades of the Arathi? Activation of this dialog didn't fire any quest)
 	--q(82538),	-- Stay a while and listen - General Steelstrike, before turn in questID 78626 (Spar Day)
 	q(81635),	-- Stay a while and listen - Nalina Ironsong @ 42.7, 55.8, HALLOWFALL (n: 217642) (idk when become available)
 	-- questID 79303 (A Principled Principal) nodes
