@@ -696,8 +696,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 							},
 						})),
 						q(83025, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- A Sacred Connection [Khaz Algar Version]
-							-- ["provider"] = { "n", XXXXXX },	-- ???
-							-- ["coord"] = { X, Y, KHAZ_ALGAR },
+							["provider"] = { "n", 225347 },	-- Stormrider Bruelda
+							["coord"] = { 35.3, 38.2, DORNOGAL },
 							["sym"] = {{"select","questID",81994},{"pop"}},	-- A Sacred Connection [Dragon Isle Version]
 						})),
 						dragonridingrace(77793, {	-- Crystal Circuit - Storm Gryphon
