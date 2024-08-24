@@ -691,7 +691,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40636.08, {	-- The Second Front
 				q(79574, {	-- The Second Front
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78630 },	-- The Rise of the Reckoning
 					["provider"] = { "n", 217133 },	-- Kal Smoulderbrow
 					["coord"] = { 32.1, 46.1, AZJ_KAHET },
 					["isBreadcrumb"] = true,

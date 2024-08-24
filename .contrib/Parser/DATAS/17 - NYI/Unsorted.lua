@@ -1671,7 +1671,6 @@ root(ROOTS.Unsorted, {
 				i(226115),	-- Contaminating Cleaver
 				i(228363),	-- Shinda's Spare Greataxe
 				i(228364),	-- Endiri's Chipped Boot Knife
-				i(228366),	-- Child's Former Fishing Rod
 				i(228367),	-- Arathi Scout's Walking Stick
 			}),
 			filter(TOYS, {
