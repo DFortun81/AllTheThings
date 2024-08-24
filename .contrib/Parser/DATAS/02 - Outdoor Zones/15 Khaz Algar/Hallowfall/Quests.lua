@@ -564,7 +564,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40844.05, {	-- The Sky's the Limit
 				q(79304, {	-- Care Package
-					["isBreadcrumb"] = true,	-- But I didn't find it
+					["provider"] = { "n", 217609 },	-- Barahl Lynflayme
+					["coord"] = { 69.2, 43.8, HALLOWFALL },
+					["isBreadcrumb"] = true,
 					["g"] = {
 						i(228409),	-- Valrin's Sweetrolls (QI!)
 					},
@@ -685,7 +687,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["g"] = {
 						i(228366),	-- Child's Former Fishing Rod
 						i(228365),	-- Concerned Captain's Cudgel
-						i(228362),	-- Shinda's Spare Greataxe
+						i(228362),	-- Polished Arathi Rifle
+						i(228363),	-- Shinda's Spare Greataxe
 					},
 				}),
 				q(79162, {	-- Burnout

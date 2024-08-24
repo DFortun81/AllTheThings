@@ -1425,8 +1425,6 @@ root(ROOTS.Unsorted, {
 				i(225806),	-- Crystal Inkwell
 				i(225809),	-- Oiled Pigment Pouch
 				i(225811),	-- Gleaming Deep-Pearl
-				i(225816),	-- Profaned Pendant
-				i(225817),	-- Ominous Ceremonial Robe
 				i(225818),	-- Tainted Incense
 				i(225819),	-- Smudged Propaganda
 				i(225822),	-- Jar of Cinderbee Honey
@@ -1669,7 +1667,6 @@ root(ROOTS.Unsorted, {
 				i(226111),	-- Arakkoan Ritual Staff
 				i(226113),	-- Kereke's Flourishing Sabre
 				i(226115),	-- Contaminating Cleaver
-				i(228363),	-- Shinda's Spare Greataxe
 				i(228364),	-- Endiri's Chipped Boot Knife
 				i(228367),	-- Arathi Scout's Walking Stick
 			}),

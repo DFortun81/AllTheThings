@@ -1918,6 +1918,7 @@ i(210829);	-- Neutralize Concoctions
 i(224153);	-- Nibbled Shroomcap
 i(213258);	-- Odorant Oddity
 i(225845);	-- Old Explorer's Compass
+i(225817);	-- Ominous Ceremonial Robe
 i(223887);	-- Ominous Herbs
 i(223885);	-- Ominous Transmutation
 i(228608);	-- On the Application of Arathi Technology to Earthen Life
@@ -1928,6 +1929,7 @@ i(225787);	-- Pheromone-Covered Missive
 i(220283);	-- Pileus Puff
 i(222955);	-- Player Experience
 i(220247);	-- Polishing Powder
+i(225816);	-- Profaned Pendant
 i(228491);	-- Ramolith Bedding Material
 i(220258);	-- Rotting Bones
 i(225796);	-- Particularly Pungent Herbs
