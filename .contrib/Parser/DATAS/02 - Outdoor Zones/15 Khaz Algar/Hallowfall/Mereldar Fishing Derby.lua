@@ -36,15 +36,26 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							i(224727, {	-- Dasher's Trophy Fish
 								["cost"] = {{"c", DERBY_MARK, 250}}
 							}),
+							i(226376, {	-- Dasher's Violet Rucksack
+								["cost"] = {{"c", DERBY_MARK, 50}}
+							}),
 							iensemble(224717, {	-- Ensemble: Cerulean Dredger
 								["cost"] = {{"c", DERBY_MARK, 250}}
 							}),
 							i(225763, {	-- Fallen Dalaran Defender
 								["cost"] = {{"c", DERBY_MARK, 50}}
 							}),
-							i(217375),	-- Frenzied Hat of the Crimson Seas
+							i(217375, {	-- Frenzied Hat of the Crimson Seas
+								["cost"] = {{"c", DERBY_MARK, 100}}
+							}),
 							i(225758, {	-- Hallowfall Harvester's Pitchfork
 								["cost"] = {{"c", DERBY_MARK, 10}}
+							}),
+							i(226379, {	-- Keen-eye 'Noculars
+								["cost"] = {{"c", DERBY_MARK, 50}}
+							}),
+							i(226378, {	-- Mereldar Artisan's Shoulderbag
+								["cost"] = {{"c", DERBY_MARK, 50}}
 							}),
 							i(228422, {	-- Recipe: Ghoulfish Delight (RECIPE!)
 								["cost"] = {{"c", DERBY_MARK, 10}}
@@ -53,6 +64,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								["cost"] = {{"c", DERBY_MARK, 10}}
 							}),
 							i(228423, {	-- Recipe: Pep-In-Your-Step (RECIPE!)
+								["cost"] = {{"c", DERBY_MARK, 10}}
+							}),
+							i(225892, {	-- Recipe: Rockslide Shake (RECIPE!)
 								["cost"] = {{"c", DERBY_MARK, 10}}
 							}),
 							i(224752, {	-- Soaked Journal Entry

@@ -92,7 +92,6 @@ root(ROOTS.Unsorted, {
 			i(229005),	-- Cache of Earthen Treasures
 			i(229006),	-- Cache of Earthen Treasures
 			--
-			i(225892),	-- Recipe: Rockslide Shake
 			i(228751),	-- Gigantic Grrloc
 			i(229062),	-- Nisa's Spare Coronet
 			i(229063),	-- Nisa's Spare Wristguards
@@ -862,9 +861,6 @@ root(ROOTS.Unsorted, {
 				i(226368),	-- Ugly White Boots
 				i(226369),	-- Classic Faded Tabard
 				i(226370),	-- Ashen Executioner
-				i(226376),	-- Dasher's Violet Rucksack
-				i(226378),	-- Mereldar Artisan's Shoulderbag
-				i(226379),	-- Keen-eye 'Noculars
 				i(226381),	-- Feathered Bow of the Night
 				i(226382),	-- Feathered Bow of the Fallen
 				i(226383),	-- Simple Ebony Wand
