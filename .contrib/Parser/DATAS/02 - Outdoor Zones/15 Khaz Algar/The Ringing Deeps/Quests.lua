@@ -1168,15 +1168,58 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			-- ?
-			q(78877, {	-- Bless These Homes
-				--["sourceQuests"] = { x },	-- ?
-				["provider"] = { "n", 213875 },	-- Speaker Jurlax
-				["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
-			}),
+
 			q(83165, {	-- Badly Behaved Bot
 				--["sourceQuests"] = { x },	-- ?
 				["provider"] = { "n", 223759 },	-- Sinruna
 				["coord"] = { 60.2, 57.0, THE_RINGING_DEEPS },
+			}),
+			------ Class Specific ------
+			q(78895, {	-- A Shadow Over Gundargaz
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "n", 213869 },	-- Watcher Toki
+				["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
+				["classes"] = { DEMONHUNTER, WARLOCK },
+				["g"] = {
+					i(219919),	-- Blade of Hatred [Demon Hunter]
+					i(219923),	-- Blade of Hatred [Warlock]
+				},
+			}),
+			q(78877, {	-- Bless These Homes
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "n", 213875 },	-- Speaker Jurlax
+				["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
+				["classes"] = { PRIEST, PALADIN },
+			}),
+			q(78874, {	-- Conjured Help
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "n", 213840 },	-- Innkeeper Brax <Innkeeper>
+				["coord"] = { 48.0, 32.2, THE_RINGING_DEEPS },
+				["classes"] = { MAGE },
+			}),
+			q(78879, {	-- Evoking the Forge
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "n", 213841 },	-- Foreman Svart
+				["coord"] = { 47.4, 28.4, THE_RINGING_DEEPS },
+				["classes"] = { EVOKER },
+			}),
+			q(78879, {	-- Go Take Candle!
+				--["sourceQuests"] = { x },	-- ?
+				["provider"] = { "o", 413694 },	-- Suspicious Vent
+				["coord"] = { 48.1, 32.0, THE_RINGING_DEEPS },
+				["classes"] = { ROGUE },
+			}),
+			q(78860, {	-- More Candles!
+				["sourceQuests"] = { 78879 },	-- Go Take Candle!
+				["provider"] = { "o", 413694 },	-- Suspicious Vent
+				["coord"] = { 48.1, 32.0, THE_RINGING_DEEPS },
+				["classes"] = { ROGUE },
+			}),
+			q(83326, {	-- The Final Candle
+				["sourceQuests"] = { 78860 },	-- More Candles!
+				["provider"] = { "o", 413694 },	-- Suspicious Vent
+				["coord"] = { 48.1, 32.0, THE_RINGING_DEEPS },
+				["classes"] = { ROGUE },
 			}),
 			------ Miscellaneous ------
 			q(78918, {	-- Brax's Brass Knuckles
