@@ -1310,7 +1310,7 @@ root(ROOTS.Unsorted, {
 				i(220124),	-- Jar of Mucus
 				i(220156),	-- Bubbling Wax
 				i(220220),	-- Ornate Pipe
-				i(220221),	-- Void Pebble
+
 				i(220225),	-- Tattered Standard
 				i(220233),	-- Extinguished Icon
 				i(220235),	-- Electrified Teeth
