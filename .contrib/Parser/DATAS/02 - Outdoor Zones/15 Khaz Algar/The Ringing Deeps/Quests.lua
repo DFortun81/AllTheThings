@@ -18,7 +18,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 212592 },	-- Speaker Brinthe
 					["coord"] = { 42.1, 28.3, THE_RINGING_DEEPS },
 					["g"] = {
-						i(216720),	-- Valuable Parts (QI!)
+						o(425875, {	-- Priority Transport Crate
+							i(216720),	-- Valuable Parts (QI!)
+						}),
 					},
 				}),
 				q(78557, {	-- Getting Off Track

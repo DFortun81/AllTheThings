@@ -630,7 +630,6 @@ root(ROOTS.Unsorted, {
 
 				i(226348),	-- Dornogal Seam Ripper
 				i(226349),	-- Earthen Tape Measure
-				i(226350),	-- Runed Earthen Pins
 				i(226351),	-- Earthen Stitcher's Snips
 				i(226352),	-- Arathi Rotary Cutter
 				i(226353),	-- Royal Outfitter's Protractor
@@ -1410,7 +1409,6 @@ root(ROOTS.Unsorted, {
 				i(225824),	-- Sand Sculpting Comb
 				i(225825),	-- Ground Snacking Stone
 				i(225826),	-- Broken Elevator Cog
-				i(225831),	-- Glittering Rock
 				i(225834),	-- Pilfered Matchbook
 				i(225835),	-- Battered Lantern
 				i(225841),	-- Ever-Frozen Ice
