@@ -23,13 +23,13 @@ i(187603);	-- The Mad Duke's Tea
 i(195572);	-- Empty Elixir
 i(194742);	-- Worn Book
 -- TWW
-i(229371)	-- Companion Experience
-i(228392)	-- Corroded Pocket Watch [Fishing]
-i(228390)	-- Left Boot [Fishing]
-i(228395)	-- Mud Clump [Fishing]
-i(228393)	-- Shattered Lantern [Fishing]
-i(225833)	-- Weathered Skipping Stone [Enormous Pile of Refuse]
-i(228756)	-- Bonus Snuffling Experience [Wax Contribution]
+i(229371);	-- Companion Experience
+i(228392);	-- Corroded Pocket Watch [Fishing]
+i(228390);	-- Left Boot [Fishing]
+i(228395);	-- Mud Clump [Fishing]
+i(228393);	-- Shattered Lantern [Fishing]
+i(225833);	-- Weathered Skipping Stone [Enormous Pile of Refuse]
+i(228756);	-- Bonus Snuffling Experience [Wax Contribution]
 
 -------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
 
@@ -1990,6 +1990,7 @@ i(218453);	-- Unusable Fragment
 i(220289);	-- Venomous Stinger
 i(220293);	-- Very Soft Wool
 i(220270);	-- Vile Catalyst
+i(220221);	-- Void Pebble
 i(223884);	-- Volatile Transmutation
 i(220276);	-- Wax-Covered Helmet
 i(220263);	-- Wax Miner's Sack
