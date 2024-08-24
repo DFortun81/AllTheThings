@@ -22,6 +22,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 52.5, 65.7, ISLE_OF_DORN },
 					{ 52.8, 65.4, ISLE_OF_DORN },
 					{ 53.7, 66.9, ISLE_OF_DORN },
+					{ 52.6, 67.1, ISLE_OF_DORN },
 				},
 				["g"] = {
 					i(221550),	-- Boskroot Cap
@@ -163,10 +164,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(222894, {	-- U'llort the Self-Exiled
 				["description"] = "Talk to U'llort then bring it |cff888888Boskroot Cap|r from the woods nearby. Treasure appears with some delay.",
-				["coords"] = {
-					{ 55.0, 65.6, ISLE_OF_DORN },	-- U'llort the Self-Exiled
-					{ 52.6, 67.1, ISLE_OF_DORN },	-- Boskroot Cap
-				},
+				["coord"] = { 55.0, 65.6, ISLE_OF_DORN },
 				["questID"] = 82142,
 				["cost"] = {{"i", 221550, 1}},	-- 1x Boskroot Cap
 				["g"] = {

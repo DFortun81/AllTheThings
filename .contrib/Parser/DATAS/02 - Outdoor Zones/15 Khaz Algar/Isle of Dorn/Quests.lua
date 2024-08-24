@@ -195,7 +195,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 217881 },	-- Baelgrim
 					["coord"] = { 39.0, 78.2, DORNOGAL },
 					["g"] = {
-						i(211962),	-- Glittering Ore (QI!)
+						o_repeated({
+							i(211962),	-- Glittering Ore (QI!)
+							o(416950),	-- Unsorted Ore Pile
+							o(416954),	-- Ore Fragment
+						}),
 					},
 				}),
 				q(78462, {	-- Echoes of Compassion
@@ -218,8 +222,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(78470, {	-- The Proscenium
 					["sourceQuests"] = { 78462 },	-- Echoes of Compassion
-					["provider"] = { "n", 217879 },	-- Adelgonn
-					["coord"] = { 39.2, 78.2, ISLE_OF_DORN },
+					["provider"] = { "n", 217878 },	-- Moira Thaurissan
+					["coord"] = { 41.9, 72.7, ISLE_OF_DORN },
 				}),
 				q(79701, {	-- The Calvalry is Here
 					["sourceQuests"] = { 78470 },	-- The Proscenium
@@ -1176,8 +1180,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "o", 428135 },	-- Discarded Botanist Notes
 				["coord"] = { 31.9, 83.6, ISLE_OF_DORN },
 				["g"] = {
-					i(216882),	-- Log Entry 467-21-5 (QI!)
-					i(216888),	-- Log Entry 652-12-3 (QI!)
+					o(428167, {	-- Discarded Research Notes
+						i(216882),	-- Log Entry 467-21-5 (QI!)
+					}),
+					o(428199, {	-- Discarded Research Notes
+						i(216888),	-- Log Entry 652-12-3 (QI!)
+					}),
 					i(216889),	-- Log Entry 893-03-9 (QI!)
 				},
 			}),
