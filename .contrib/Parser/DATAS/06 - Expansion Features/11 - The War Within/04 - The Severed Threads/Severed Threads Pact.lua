@@ -99,6 +99,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81494, {	-- Relics of War: Rak-Ahat
 					["provider"] = { "n", 224176 },	-- Eirzay
 					["coord"] = { 63.8, 26.3, NERUBAR_LOWER },
+					["g"] = {
+						i(225738),	-- Kaheti Warblade (QI!)
+					},
 				}),
 				q(81478, {	-- Relics of War: The Ruptired Lake
 					["provider"] = { "n", 224173 },	-- Eirzay

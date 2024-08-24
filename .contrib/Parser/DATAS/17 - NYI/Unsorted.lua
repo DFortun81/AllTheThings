@@ -42,7 +42,7 @@ root(ROOTS.Unsorted, {
 				-- Profession Knowledge Notes
 				i(224817),	-- Algari Herbalist's Notes
 				i(224818),	-- Algari Miner's Notes
-				i(228773),	-- Algari Alchemist's Notebook
+
 				i(228774),	-- Algari Blacksmith's Journal
 				i(228775),	-- Algari Engineer's Notepad
 				i(228776),	-- Algari Scribe's Journal
@@ -1631,7 +1631,7 @@ root(ROOTS.Unsorted, {
 
 				i(225339),	-- Chicken Eggs
 				i(225887),	-- Titan Emitter \\ The Archaedas Conundrum
-				i(225738),	-- Kaheti Warblade
+
 				i(225927),	-- Emerald Necklace
 
 				i(228378),	-- Pristine Council's Seal
@@ -1647,8 +1647,7 @@ root(ROOTS.Unsorted, {
 				i(219782),	-- 11.0 Leveling Quest Template - Sword1H - Int
 				i(219791),	-- 11.0 Leveling Quest Template - Mace1H - Int
 				i(219793),	-- 11.0 Leveling Quest Template - Axe 1H - Agi
-				i(219919),	-- Blade of Hatred
-				i(219923),	-- Blade of Hatred
+
 				i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
 				i(226111),	-- Arakkoan Ritual Staff
 				i(226113),	-- Kereke's Flourishing Sabre
