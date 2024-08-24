@@ -728,7 +728,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["isBreadcrumb"] = true,
 				}),
 				q(83628, {	-- Tense Recovery
-					--["sourceQuests"] = { 83716 },	-- Beneath the Roots
+					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 227222 },	-- Ysabel Gleamgaard
 					["coord"] = { 26.8, 55.9, AZJ_KAHET },
 				}),

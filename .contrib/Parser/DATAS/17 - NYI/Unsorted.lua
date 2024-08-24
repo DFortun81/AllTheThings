@@ -1639,7 +1639,6 @@ root(ROOTS.Unsorted, {
 			filter(TOYS, {
 				i(218310),	-- Box of Puntables (TOY!) [Winter Veil]
 				i(224809),	-- Earthen Plumber's Pipe (TOY!)
-				i(225347),	-- Web-Vandal's Spinning Wheel (TOY!)
 				i(216887),	-- Unknown (TOY!)
 				-- Should Maybe get a Toy Tag... Lets see later...
 				i(215146),	-- JC Gemcutting Toy

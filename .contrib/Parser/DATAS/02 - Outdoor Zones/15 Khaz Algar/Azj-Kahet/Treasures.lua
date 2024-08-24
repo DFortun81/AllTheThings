@@ -258,73 +258,60 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					currency(3056),	-- Kej
 				},
 			}),
-			o(446420, {	-- "Weaving Supplies"
-				["provider"] = { "o", 452708 },	-- "Weaving Supplies" // probably need to be switched
+			o(452708, {	-- "Weaving Supplies"  //user claims 452708 is right ID		
+				--["provider"] = { "o", 452708 },	-- "Weaving Supplies" // probably need to be switched with 446420
 				["questID"] = 82527,
 				["coord"] = { 77.3, 39.0, AZJ_KAHET },
 				["g"] = {
-					-- didn't find a way to open
+					i(225347),	-- Web-Vandal's Spinning Wheel (TOY!)
 				},
 			}),
 			-- achievement
 			o(454335, {	-- Entomological Essay on Grubs, Volume 1
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 40.1, 39.8, AZJ_KAHET },
 			}),
 			o(454336, {	-- Entomological Essay on Grubs, Volume 2
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 39.8, 40.5, AZJ_KAHET },
 			}),
 			o(454338, {	-- Entomological Essay on Grubs, Volume 3
 				["coord"] = { 39.1, 42.6, AZJ_KAHET },
 			}),
 			o(454343, {	-- Ethos of War, Part 1
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 63.0, 31.2, AZJ_KAHET },
 			}),
 			o(454344, {	-- Ethos of War, Part 2
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 66.7, 31.3, AZJ_KAHET },
 			}),
 			o(454348, {	-- Ethos of War, Part 3
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 48.9, 24.0, AZJ_KAHET },
 			}),
 			o(454350, {	-- Ethos of War, Part 4
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 43.3, 25.6, AZJ_KAHET },
 			}),
 			o(454320, {	-- Queen Anub'izek
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 37.1, 32.8, AZJ_KAHET },
 			}),
 			o(454313, {	-- Queen Xekatha
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 38.3, 25.6, AZJ_KAHET },
 			}),
 			o(454316, {	-- Queen Zaltra
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 38.4, 32.3, AZJ_KAHET },
 			}),
 			o(454328, {	-- Strands of Memory
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 27.7, 54.6, AZJ_KAHET },
 			}),
 			o(456928, {	-- Treatise on Forms: Ascended
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 78.0, 41.0, AZJ_KAHET },
 			}),
 			o(456927, {	-- Treatise on Forms: Lords
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 23.6, 51.1, AZJ_KAHET },
 			}),
 			o(454332, {	-- Treatise on Forms: Sages
 				-- TODO
 				--["coord"] = { X, Y, AZJ_KAHET },
 			}),
 			o(454330, {	-- Treatise on Forms: Skitterlings
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 38.5, 37.7, AZJ_KAHET },
 			}),
 			n(222634, {	-- Forgotten Shadecaster
 				["coord"] = { 58.7, 90.1, AZJ_KAHET },
