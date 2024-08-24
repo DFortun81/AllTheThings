@@ -37,11 +37,20 @@ root(ROOTS.Secrets, n(FAITHFUL_DOG, {
 			},
 			["timeline"] = { ADDED_7_2_0 },
 		}),
-		o(452438, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {	-- Step 3: Half-Buried Dog Bowl		There probably be a HQT for this, we can then write it to quest form. //Braghe
-			["description"] = "Interacting with the bowl will send Dog running to you, interact with them for the pet.",
+		q(83093, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {	-- Step 3: Half-Buried Dog Bowl
+			["name"] = "|cFFFFFFFFStep 3|r: Interact with the Half-Buried Dog Bowl",
+			["description"] = "Interacting with the bowl near Dalaran's crash will send Dog running to you.",
 			["sourceQuests"] = { 46952 },
-			["crs"] = { 225486 },	-- Dog
+			["provider"] = { "o", 452438 },	-- Half-Buried Dog Bowl
 			["coord"] = { 31.4, 51.3, ISLE_OF_DORN },
+		})),
+		q(83094, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {	-- Step 4: Interact with Dog
+			["name"] = "|cFFFFFFFFStep 4|r: Interact with Dog",
+			["description"] = "Interact with Dog to get them as a pet.",
+			["sourceQuests"] = { 83093 },
+			["provider"] = { "n", 225486 },	-- Dog
+			["coord"] = { 31.4, 51.3, ISLE_OF_DORN },
+			["timeline"] = { ADDED_11_0_2 },
 			["g"] = {
 				i(224766),	-- Faithful Dog (PET!)
 			},
