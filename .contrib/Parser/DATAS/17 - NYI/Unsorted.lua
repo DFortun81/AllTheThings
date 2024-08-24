@@ -1670,7 +1670,6 @@ root(ROOTS.Unsorted, {
 				i(226111),	-- Arakkoan Ritual Staff
 				i(226113),	-- Kereke's Flourishing Sabre
 				i(226115),	-- Contaminating Cleaver
-				i(219783),	-- Arachnophobic Spelunker's Crossbow
 				i(228363),	-- Shinda's Spare Greataxe
 				i(228364),	-- Endiri's Chipped Boot Knife
 				i(228366),	-- Child's Former Fishing Rod
@@ -1865,7 +1864,6 @@ root(ROOTS.Unsorted, {
 			filter(MISC, {
 				-- Snuffling
 				i(224650),	-- Wax-Sealed Pouch
-				i(228210),	-- Firelight Ruby Chip
 			}),
 			n(ACHIEVEMENTS, {
 				i(225209),	-- Sacred Flame Prayers

@@ -172,6 +172,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["g"] = {
 						i(219785),	-- Arachnophobic Spelunker's Battleaxe
 						i(219784),	-- Arachnophobic Spelunker's Battlestaff
+						i(219783),	-- Arachnophobic Spelunker's Crossbow
 						i(219789),	-- Arachnophobic Spelunker's Greatmace
 						i(219788),	-- Arachnophobic Spelunker's Knife
 						i(219786),	-- Arachnophobic Spelunker's Saber
