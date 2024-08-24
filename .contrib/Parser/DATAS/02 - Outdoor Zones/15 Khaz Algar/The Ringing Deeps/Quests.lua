@@ -1241,14 +1241,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 47.4, 28.4, THE_RINGING_DEEPS },
 				["classes"] = { EVOKER },
 			}),
-			q(78879, {	-- Go Take Candle!
+			q(78827, {	-- Go Take Candle!
 				--["sourceQuests"] = { x },	-- ?
 				["provider"] = { "o", 413694 },	-- Suspicious Vent
 				["coord"] = { 48.1, 32.0, THE_RINGING_DEEPS },
 				["classes"] = { ROGUE },
 			}),
 			q(78860, {	-- More Candles!
-				["sourceQuests"] = { 78879 },	-- Go Take Candle!
+				["sourceQuests"] = { 78827 },	-- Go Take Candle!
 				["provider"] = { "o", 413694 },	-- Suspicious Vent
 				["coord"] = { 48.1, 32.0, THE_RINGING_DEEPS },
 				["classes"] = { ROGUE },
