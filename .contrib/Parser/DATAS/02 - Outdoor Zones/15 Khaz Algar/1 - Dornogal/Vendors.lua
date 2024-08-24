@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(219051, {	-- Lyrendal <Artisan's Consortium Quartermaster>
-				["coord"] = { 61.3, 65.8, DORNOGAL },
+				["coord"] = { 59.6, 56.2, DORNOGAL },
 				["g"] = {
 					i(228379, {	-- Design: Captured Starlight (RECIPE!)
 						["cost"] = {{"i", ARTISANS_ACUITY, 150}},
