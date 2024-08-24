@@ -495,14 +495,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 211409 },	-- Faerin Lothar
 					["coord"] = { 59.6, 25.7, AZJ_KAHET },
+					["isBreadcrumb"] = true,
 				}),
 				q(80564, {	-- Field Research
-					["sourceQuests"] = { 83306 },	-- Where the Wild Things Camp
+					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 220595 },	-- Orweyna
 					["coord"] = { 46.1, 68.9, AZJ_KAHET },
 				}),
 				q(80563, {	-- Tool of Attunement
-					["sourceQuests"] = { 83306 },	-- Where the Wild Things Camp // require Field Research in quest log
+					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 220595 },	-- Orweyna
 					["coord"] = { 46.1, 68.9, AZJ_KAHET },
 					["g"] = {

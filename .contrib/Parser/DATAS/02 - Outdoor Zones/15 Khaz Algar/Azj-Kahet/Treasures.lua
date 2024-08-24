@@ -276,8 +276,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				--["coord"] = { X, Y, AZJ_KAHET },
 			}),
 			o(454338, {	-- Entomological Essay on Grubs, Volume 3
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 39.1, 42.6, AZJ_KAHET },
 			}),
 			o(454343, {	-- Ethos of War, Part 1
 				-- TODO
@@ -336,7 +335,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 82069,
 			}),
 			n(222381, {	-- Mad Nerubian
-				["coord"] = { 54.8, 25.3, AZJ_KAHET },
+				["coord"] = { 54.1, 18.8, AZJ_KAHET },
 				["questID"] = 82067,
 			}),
 			n(222304, {	-- Neglected Shadecaster
