@@ -128,6 +128,7 @@ HeaderAssignments = {
 	["Diablo III"] = -1000252,
 	["Diablo III: Reaper of Souls"] = -1000253,
 	["Diablo IV"] = -1000254,
+	["Discord Promotion"] = -1001021,
 	["Discovery"] = -1000016,
 	["Divergent"] = -1000307,
 	["Dominant Gladiator: Legion Season 6"] = -1000994,
@@ -514,4 +515,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001019;
+NextHeaderID = -1001022;

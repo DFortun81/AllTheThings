@@ -36,7 +36,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(BATTLE_PETS, {
 				i(228765),	-- Gummi (PET!) [Promotion?]
-				i(228758),	-- Parrlok (PET!) [Trading Post?]
 			}),
 			n(PROFESSIONS, {
 				-- Profession Knowledge Notes

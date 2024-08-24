@@ -4142,6 +4142,7 @@ i(222965, 4530);	-- Loamy
 i(225544, 4599);	-- Mind Slurp
 i(221546, 4534);	-- Nightfarm Growthling
 i(224439, 4470);	-- Oop'lajax
+i(228758, 4615);	-- Parrlok
 i(221760, 4513);	-- Pillarnest Bonedrinker
 i(223802, 4581);	-- Purple Stagshell
 i(225935, 4582);	-- Rak-Ush Battleshell
@@ -4219,4 +4220,3 @@ i(0, 4549);			-- Tiny Cragling
 i(0, 4560);			-- Zaedu
 --- UNSORTED ---
 i(228765, 4616);	-- Gummi
-i(228758, 4615);	-- Parrlok
