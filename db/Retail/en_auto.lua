@@ -3312,6 +3312,7 @@ local keys = {
 [81462]="Weekly Skinning Knowledgepoint #4",
 [81463]="Weekly Skinning Knowledgepoint #5",
 [81464]="Weekly Skinning Knowledgepoint #6",
+[81594]="Stay awhile and listen: Faerin Lothar",
 [81631]="Stay awhile and listen: Faerin Lothar",
 [81636]="Stay awhile and listen: General Steelstrike",
 [81946]="Stay awhile and listen: Anduin Wrynn",
