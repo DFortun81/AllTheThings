@@ -200,6 +200,8 @@ root(ROOTS.Unsorted, {
 			i(231826),	-- Hook-Barbed Spaulders
 			i(231827),	-- Harpooner's Plate Cuirass
 			i(231830),	-- Kraken Shell Pauldrons
+			-- Fallout
+			i(229193),	-- Queen's Pheromone
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			filter(TITLES, {
@@ -2140,6 +2142,14 @@ root(ROOTS.Unsorted, {
 			i(226221),	-- Machine-Warden's Pauldrons
 			title(568),	-- <Name>, Machine-Warden
 			i(226218),	-- Machine-Warden's Cloak
+			-- Fallout
+			i(214616),	-- Engraved Dagger
+			i(219456),	-- Earthen Traveler's Scepter
+			i(219934),	-- Spark of War
+			i(220693),	-- Coffer Key Shard \\ Delve Key Fragment
+			i(224183),	-- Bleak Chum
+			i(226103),	-- The Weaver's Trove
+			i(226165),	-- Unseemly Agate Choker
 		})),
 	}),
 	expansion(EXPANSION.DF, {

@@ -1,5 +1,0 @@
-3.4.3.51126
-i(43824),	-- Schools of Arcane Magic - Mastery \\ The Schools of Arcane Magic - Mastery
-
-
-Nothing is Missing in ToyDB.lua! Good Work!
