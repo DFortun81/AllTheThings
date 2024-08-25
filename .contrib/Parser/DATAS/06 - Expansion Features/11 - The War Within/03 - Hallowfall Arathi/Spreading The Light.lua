@@ -73,6 +73,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						},
 					}),
 				})),
+				n(DROPS, {
+					i(229085),	-- Aevery's Spare Bracers
+					i(229082),	-- Aevery's Spare Chausses
+					i(229081),	-- Aevery's Spare Cowl
+					i(229155),	-- Lamplighter's Greataxe
+					i(229061),	-- Nisa's Spare Belt
+				}),
 				prof(FISHING, {
 					i(221819, {	-- Shadowbog Hopper (PET!)
 						["description"] = "Stillstone Pond",
@@ -338,8 +345,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(220756),	-- Flickering Torch
 					i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
 					i(228741, {	-- Lamplighter Supply Satchel
-						--probably all this sets is from here?
+						--probably all this sets is from here? /Not only from Supply Satchel but BoE Drops here.
 						i(229085),	-- Aevery's Spare Bracers
+						i(229082),	-- Aevery's Spare Chausses
 						i(229081),	-- Aevery's Spare Cowl
 						i(229155),	-- Lamplighter's Greataxe
 						i(229061),	-- Nisa's Spare Belt
