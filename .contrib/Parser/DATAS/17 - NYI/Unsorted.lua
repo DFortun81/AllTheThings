@@ -1767,7 +1767,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(REWARDS, {
 				i(223438),	-- Algari Warden's Vestment
-				i(223439),	-- Mereldar Scholar's Leggings
 				i(223444),	-- Arathi Defender's Breeches
 				i(223450),	-- Honored Soldier's Chainmail
 				i(223441),	-- Algari Scouting Boots

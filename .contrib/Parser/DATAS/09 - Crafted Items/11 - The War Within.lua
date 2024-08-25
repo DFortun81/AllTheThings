@@ -1022,11 +1022,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 					i(221963, { -- Prototype: Filmless Camera
 						r(447371),	-- Filmless Camera
 					}),
-					i(221965, { -- Prototype: Generate Wormhole
-						r(447372),	-- Generate Wormhole
+					i(221965, { -- Prototype: Wormhole Generator: Khaz Algar
+						r(447372),	-- Wormhole Generator: Khaz Algar
 					}),
 					i(221958, { -- Prototype: Summon Portable Profession Possibility Projector
-						r(447368),	-- Summon Portable Profession Possibility Projector
+						r(447368),	-- Portable Profession Possibility Projector
 					}),
 					i(221875, { -- Prototype: Potion Bomb of Recovery
 						r(447343),	-- Potion Bomb of Recovery
@@ -1153,23 +1153,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			["requireSkill"] = ENGINEERING,
 			},{
 				-- Miscellaneous
-				FirstCraft(81357, 447368),	-- Algari Repair Bot 11O Projector
-				FirstCraft(81353, 447364),	-- Blame Redirection Device
+				FirstCraft(81357, 447367),	-- Algari Repair Bot 11O Projector
+				FirstCraft(81353, 447358),	-- Blame Redirection Device
 				FirstCraft(81354, 447374),	-- Box o' Booms
-				FirstCraft(81339, 447350),	-- Complicated Fuse Box
-				FirstCraft(81363, 447374),	-- Concealed Chaos Module
-				FirstCraft(81333, 447344),	-- Energy Redistribution Beacon
-				FirstCraft(81331, 447342),	-- Invent
-				FirstCraft(81332, 447343),	-- Irresistible Red Button
+				FirstCraft(81339, 447360),	-- Complicated Fuse Box
+				FirstCraft(81363, 447362),	-- Concealed Chaos Module
+				FirstCraft(81355, 447366),	-- Convincingly Realistic Jumper Cables
+				FirstCraft(81333, 447363),	-- Energy Redistribution Beacon
+				FirstCraft(81331, 447312),	-- Invent
+				FirstCraft(81332, 447364),	-- Irresistible Red Button
 				FirstCraft(81356, 447365),	-- Pausing Pylon
-				FirstCraft(81340, 447351),	-- Potion Bomb of Power
-				FirstCraft(81301, 447312),	-- Potion Bomb of Recovery
-				FirstCraft(81347, 447358),	-- Potion Bomb of Speed
-				FirstCraft(81349, 447360),	-- Pouch of Pocket Grenades
+				FirstCraft(81340, 447344),	-- Potion Bomb of Power
+				FirstCraft(81301, 447343),	-- Potion Bomb of Recovery
+				FirstCraft(81347, 447342),	-- Potion Bomb of Speed
+				FirstCraft(81349, 447361),	-- Pouch of Pocket Grenades
 				FirstCraft(81346, 447357),	-- Recalibrated Safety Switch
-				FirstCraft(81351, 447362),	-- Summon Portable Profession Possibility
-				FirstCraft(81352, 447363),	-- Tinker: Earthen Delivery Drill
-				FirstCraft(81350, 447361),	-- Tinker: Heartseeking Health Injector
+				FirstCraft(81351, 447368),	-- Portable Profession Possibility
+				FirstCraft(81352, 447350),	-- Tinker: Earthen Delivery Drill
+				FirstCraft(81350, 447351),	-- Tinker: Heartseeking Health Injector
 				-- Reagents
 				FirstCraft(84019, 459299),	-- Bottled Brilliance
 				FirstCraft(81329, 447340),	-- Chaos Circuit
