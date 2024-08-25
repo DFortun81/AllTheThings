@@ -29,7 +29,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(212928, {	-- Dalaran Sewer Turtle
-				["coord"] = { 38.0, 79.5, ISLE_OF_DORN },
+				["description"] = "You will be able to loot the battle pet in Dornogal",
+				["coord"] = { 40.9, 73.8, ISLE_OF_DORN },
 				["questID"] = 79586,
 				["cost"] = {
 					{"i", 220143, 5},	-- 5x Dornish Pike
@@ -47,17 +48,38 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 48.6, 30.0, ISLE_OF_DORN },
 				["g"] = {
 					i(224185),	-- Crab-Guiding Branch
-					n(222941, {	-- Pearlescent Shellcrab
-						["coords"] = {
-							{ 50.7, 70.6, ISLE_OF_DORN },
-							{ 74.9, 49.4, ISLE_OF_DORN },
-							{ 70.8, 20.0, ISLE_OF_DORN },
-							{ 41.9, 27.0, ISLE_OF_DORN },
-							{ 19.7, 58.4, ISLE_OF_DORN },
-							{ 38.3, 42.0, ISLE_OF_DORN },
-						},
+					q(82751, {	-- First Crab
+						["name"] = "First Crab",
+						["provider"] = { "n", 222941 },	-- Pearlescent Shellcrab
+						["coord"] = { 50.7, 70.6, ISLE_OF_DORN },
+					}),
+					q(82752, {	-- Second Crab
+						["name"] = "Second Crab",
+						["provider"] = { "n", 222941 },	-- Pearlescent Shellcrab
+						["coord"] = { 74.9, 49.4, ISLE_OF_DORN },
+					}),
+					q(82753, {	-- Third Crab
+						["name"] = "Third Crab",
+						["provider"] = { "n", 222941 },	-- Pearlescent Shellcrab
+						["coord"] = { 70.8, 20.0, ISLE_OF_DORN },
+					}),
+					q(82754, {	-- Fourth Crab
+						["name"] = "Fourth Crab",
+						["provider"] = { "n", 222941 },	-- Pearlescent Shellcrab
+						["coord"] = { 41.9, 27.0, ISLE_OF_DORN },
+					}),
+					q(82755, {	-- Fifth Crab
+						["name"] = "Fifth Crab",
+						["provider"] = { "n", 222941 },	-- Pearlescent Shellcrab
+						["coord"] = { 19.7, 58.4, ISLE_OF_DORN },
+					}),
+					q(82756, {	-- Sixth Crab
+						["name"] = "Sixth Crab",
+						["provider"] = { "n", 222941 },	-- Pearlescent Shellcrab
+						["coord"] = { 38.3, 42.0, ISLE_OF_DORN },
 					}),
 					o(443318, {	-- Tree's Treasure
+						["sourceQuests"] = { 82751, 82752, 82753, 82754, 82755, 82756 },
 						["questID"] = 83242,
 						["g"] = {
 							i(224585),	-- Hanna's Locket (TOY!)
@@ -212,5 +234,6 @@ root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 		q(82251),	-- Extra HQT: Mosswool Flower
 		q(82252),	-- Completed with Quest 83244 (Mysterious Orb)
 		q(79585),	-- Dalaran Sewer Turtle: Needs more time
+		q(82160),	-- Gathered all the Pearlescent Shellcrab.
 	}),
 }));

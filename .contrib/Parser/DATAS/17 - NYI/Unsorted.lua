@@ -793,7 +793,7 @@ root(ROOTS.Unsorted, {
 				i(225752),	-- Dornogal Defender
 				i(225753),	-- Dornogal Guard's Splitter
 				i(225754),	-- Dornogal Guard's Hammer
-				i(225755),	-- Coreway Sledgehammer
+
 				i(225756),	-- Coreway Shovel
 				i(225757),	-- Coreway Pickaxe
 
@@ -2139,7 +2139,7 @@ root(ROOTS.Unsorted, {
 			i(223033),	-- Technique: Patient Alchemist's Mixing Rod
 			i(223034),	-- Technique: Inscribed Rolling Pin
 			i(223056),	-- Plans: Webbed Fishing Line
-			i(223948),	-- Stubborn Wolf's Greathelm
+
 			i(225256),	-- PH_2
 			--
 			-- Orphaned due to removal of "Awakening the Machine: Wave <x>" achievements

@@ -178,12 +178,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			hqt(82459, {	-- <Stay a while and Listen>
 				["name"] = "Stay awhile and listen: Anduin Wrynn",
-				["qg"] = 222558,	-- Anduin Wrynn
+				["sourceQuests"] = { 78536 },	-- Impossible Odds
+				["provider"] = { "n", 222558 },	-- Anduin Wrynn
 				["coord"] = { 44.7, 44.6, DORNOGAL },
 			}),
 			hqt(82460, {	-- <Stay a while and Listen>
 				["name"] = "Stay awhile and listen: Magni Bronzebeard",
-				["qg"] = 222557,	-- Magni Bronzebeard
+				["sourceQuests"] = { 78536 },	-- Impossible Odds
+				["provider"] = { "n", 222557 },	-- Magni Bronzebeard
 				["coord"] = { 44.5, 44.5, DORNOGAL },
 			}),
 

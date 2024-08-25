@@ -1210,9 +1210,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 				["name"] = "Bronze Dragon Whelp",
 				["displayID"] = 107461,
 			}),
-			pet(3361, {	-- Diamond Crab (PET!)
-				["displayID"] = 107825,
-			}),
 			pet(3341, {	-- Red Dragon Whelp (PET!)
 				["name"] = "Red Dragon Whelp",
 				["displayID"] = 107464,

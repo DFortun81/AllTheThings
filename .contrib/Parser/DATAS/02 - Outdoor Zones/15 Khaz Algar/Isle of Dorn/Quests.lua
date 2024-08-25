@@ -444,6 +444,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 212708 },	-- Frysworn Cruton
 					["coord"] = { 38.9, 76.6, ISLE_OF_DORN },
+					["isBreadcrumb"] = true,
 				}),
 				q(78571, {	-- Mycomayhem
 					["sourceQuests"] = { 78570 },	-- Frayed Legacy
@@ -1252,6 +1253,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(79669, {	-- I Take Candle!
 					["coord"] = { 62.8, 42.5, ISLE_OF_DORN },
+					["lockCriteria"] = { 1, "lvl", 74 },
 				}),
 				q(79667, {	-- It's Elementary
 					--["coord"] = { 62.8, 75.2, ISLE_OF_DORN },	-- need more accurate coords from popup
@@ -1266,7 +1268,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 
 root(ROOTS.HiddenQuestTriggers, {
 	-- Dalaran intro
-	q(84698),	-- Fishing up Xalatath's Rusty Coin
+	q(84698),	-- Fishing up Xalatath's Rusty Coin (Maybe should be collectible? //Braghe)
 	-- During questing
 	q(83622),	-- [DNT] Zone 1 Bread Crumb Completed Organically (spellID 456955), when you break free out of rocks during questID 78529 (Violet Impact)
 	q(79629),	-- [DNT] Council of Dornogal Renown Unlock (spellID 446910)
