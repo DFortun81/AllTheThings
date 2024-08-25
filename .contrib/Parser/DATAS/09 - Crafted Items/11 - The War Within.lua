@@ -1222,6 +1222,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				FirstCraft(81322, 447333),	-- Aqirite Fueled Samophlange
 				FirstCraft(81320, 447331),	-- Aqirite Miner's Headgear
 				FirstCraft(81313, 447324),	-- Bismuth Brainwave Projector
+				FirstCraft(81315, 447324),	-- Bismuth Fisherfriend
 				FirstCraft(81321, 447332),	-- Bismuth Fueled Samophlange
 				FirstCraft(81319, 447330),	-- Bismuth Miner's Headgear
 				FirstCraft(81318, 447329),	-- Lapidary's Aqirite Clamps
@@ -2644,6 +2645,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.TWW, {
+		q(84477),	-- Using Contract: The Severed Threads
 		prof(ALCHEMY, {
 			q(82473),	-- Transmutation 15/30
 			q(82474),	-- Transmutation 30/30

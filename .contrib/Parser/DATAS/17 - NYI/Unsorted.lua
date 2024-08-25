@@ -615,7 +615,7 @@ root(ROOTS.Unsorted, {
 
 
 				i(226320),	-- Arathi Sizing Gauges
-				i(226321),	-- Librarian's Magnifiers
+
 				i(226322),	-- Ritual Caster's Crystal
 				i(226323),	-- Nerubian Bench Blocks
 

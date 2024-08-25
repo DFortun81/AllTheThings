@@ -862,6 +862,13 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 					i(226319),	-- Jeweler's Delicate Drill
 				},
 			}),
+			o(455972, {	-- Librarian's Magnifiers
+				["coord"] = { 44.7, 50.9, THE_RINGING_DEEPS },
+				["questID"] = 83895,
+				["g"] = {
+					i(226321),	-- Librarian's Magnifiers
+				},
+			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,

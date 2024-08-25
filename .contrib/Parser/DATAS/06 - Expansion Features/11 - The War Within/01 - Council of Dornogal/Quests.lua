@@ -25,6 +25,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 39.1, 24.0, DORNOGAL },
 				}),
 			}, {	-- RENOWN 6 --
+				q(82349, {	-- Carved Crests
+					["provider"] = { "n", 223728 },	-- Auditor Balwurz <Keeper of Renown>
+					["coord"] = { 39.1, 24.0, DORNOGAL },
+				}),
 				q(82333, {	-- Weathered Quests
 					["provider"] = { "n", 223728 },	-- Auditor Balwurz <Keeper of Renown>
 					["coord"] = { 39.1, 24.0, DORNOGAL },
@@ -68,11 +72,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 24 --
 			}, {	-- RENOWN 25 --
 			},
-			-- Renown 6 or Earlier.
-			q(82349, {	-- Carved Crests
-				["provider"] = { "n", 223728 },	-- Auditor Balwurz <Keeper of Renown>
-				["coord"] = { 39.1, 24.0, DORNOGAL },
-			}),
 		})),
 	}),
 })));
