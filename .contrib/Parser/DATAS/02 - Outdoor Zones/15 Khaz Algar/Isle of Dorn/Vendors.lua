@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 74.4, 45.2, ISLE_OF_DORN },
 				["g"] = {
 					i(228424, {	-- Recipe: Cinder Nectar (RECIPE!)
-						["cost"] = {{"i", 225557, 500}},	-- 500x Sizzling Cinderpollen
+						["cost"] = 237500,	-- 23g, 75s
 					}),
 					i(223153, {	-- Soaring Meaderbee (MOUNT!)
 						["cost"] = {{"i", 225557, 900}},	-- 900x Sizzling Cinderpollen

@@ -24,6 +24,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81990, {	-- The Light's Call
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
 					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["isBreadcrumb"] = true,
 				}),
 				q(76588, {	-- Defender of the Flame
 					["sourceQuests"] = { 81990 },	-- The Light's Call

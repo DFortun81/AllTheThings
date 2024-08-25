@@ -782,8 +782,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40636.12, {	-- Subterfuge in Silk
 				q(81686, {	-- Subterfuge in Silk
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
-					["provider"] = { "n", 207471 },	-- Window Arak'nal
-					["coord"] = { 56.2, 48.2, AZJ_KAHET },
+					["provider"] = { "n", 207476 },	-- Kex
+					["coord"] = { 56.8, 38.8, AZJ_KAHET },
 					["isBreadcrumb"] = true,	-- unless it is now required for spawn next quests/npc
 				}),
 				q(83616, {	-- The Entrenched
@@ -986,6 +986,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					--["sourceQuests"] = { 79030 },	-- The Voice of the Speakers (?)
 					["provider"] = { "n", 230098 },	-- Spindle
 					["coord"] = { 46.1, 50.0, DORNOGAL },
+					["isBreadcrumb"] = true,
 				}),
 				q(83276, {	-- Saving Private Spindle
 					["sourceQuests"] = { 84700 },	-- Pacts Below (still unsure)

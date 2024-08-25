@@ -177,7 +177,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			-- Achievements
 			o(455269, {	-- Notes On The Machine Speakers: Fragment I
-				["coord"] = { 45.0, 28.8, THE_RINGING_DEEPS },
+				["coord"] = { 45.9, 28.8, THE_RINGING_DEEPS },
 			}),
 			o(455274, {	-- Notes On The Machine Speakers: Fragment II
 				["coord"] = { 48.9, 25.9, THE_RINGING_DEEPS },

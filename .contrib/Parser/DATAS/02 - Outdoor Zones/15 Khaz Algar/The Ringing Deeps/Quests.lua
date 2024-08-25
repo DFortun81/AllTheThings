@@ -166,8 +166,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["g"] = {
 						i(210882),	-- Candle Crown (QI!)
 						i(212575),	-- The Candle Keys (QI!)
+						i(219464),	-- Earthen Traveler's Boomstick
 						i(219466),	-- Earthen Traveler's Chopper
 						i(219462),	-- Earthen Traveler's Claymore
+						i(219465),	-- Earthen Traveler's Crossbow
 						i(219467),	-- Earthen Traveler's Fist
 						i(219461),	-- Earthen Traveler's Gavel
 						i(219460),	-- Earthen Traveler's Handaxe

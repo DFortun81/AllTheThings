@@ -1883,6 +1883,7 @@ i(225829);	-- Fractured Interface Crystal
 i(228490);	-- Fresh Grazing Rocks
 i(228487);	-- Freshly Fallen Sticks
 i(225677);	-- Gleaming Chaos
+i(225811);	-- Gleaming Deep-Pearl
 i(225831);	-- Glittering Rock
 i(220259);	-- Gob of Mucus
 i(220509);	-- Gossamer Web
@@ -1997,6 +1998,7 @@ i(220276);	-- Wax-Covered Helmet
 i(220263);	-- Wax Miner's Sack
 i(225802);	-- Well-Worn Darning Needle
 i(217163);	-- Well Worn Doll
+i(225842);	-- Whirling Sphere
 i(220232);	-- Worm-Eaten Burlap Robe
 i(228911);	-- Xalatath's Rusty Coin
 -- spider stuff

@@ -1396,7 +1396,6 @@ root(ROOTS.Unsorted, {
 				i(225805),	-- Ornate Box of Seasonings
 				i(225806),	-- Crystal Inkwell
 				i(225809),	-- Oiled Pigment Pouch
-				i(225811),	-- Gleaming Deep-Pearl
 				i(225818),	-- Tainted Incense
 				i(225819),	-- Smudged Propaganda
 				i(225822),	-- Jar of Cinderbee Honey
@@ -1407,7 +1406,6 @@ root(ROOTS.Unsorted, {
 				i(225834),	-- Pilfered Matchbook
 				i(225835),	-- Battered Lantern
 				i(225841),	-- Ever-Frozen Ice
-				i(225842),	-- Whirling Sphere
 				i(225843),	-- Ancient Bronze Hourglass
 				i(225844),	-- Damaged Radial Cog
 				i(225846),	-- Fractured Command Matrix
@@ -1650,8 +1648,6 @@ root(ROOTS.Unsorted, {
 				i(219398),	-- Earthen Chain
 				i(219428),	-- Earthen Waistguard
 				i(219458),	-- Earthen Traveler's Dagger
-				i(219464),	-- Earthen Traveler's Boomstick
-				i(219465),	-- Earthen Traveler's Crossbow
 				-- Earthen stuff again? Maybe erm.. Heritage?
 				i(224195),	-- Earthen Shoulders
 				i(224196),	-- Earthen Trousers
