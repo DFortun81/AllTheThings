@@ -413,6 +413,25 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["questID"] = 83672,
 				}),
 			}),
+			-- TODO: depending on prevalance of this sort of object/etc. throughout TWW, we may want to consolidate
+			-- providers of these 'light' emitting sources, and use a shortcut to wrap all necessary groups
+			n(TREASURES, sharedData({
+				["description"] = "Requires any 'light' emitting consumable item to be active.",
+			},{
+				-- requires any 'light' item
+				o(454037, {	-- Stolen Supplies
+					["coord"] = { 59.2, 72.6, MYCOMANCER_CAVERN },
+					["questID"] = 83378,
+				}),
+				o(454038, {	-- Stolen Supplies
+					["coord"] = { 60.7, 61.7, MYCOMANCER_CAVERN },
+					["questID"] = 83380,
+				}),
+				o(454039, {	-- Stolen Supplies
+					["coord"] = { 49.7, 21.1, MYCOMANCER_CAVERN },
+					["questID"] = 83381,
+				}),
+			})),
 		},
 	}),
 	m(NIGHTFALL_SANCTUM, {
