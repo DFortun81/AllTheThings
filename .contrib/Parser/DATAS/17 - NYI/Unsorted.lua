@@ -103,7 +103,7 @@ root(ROOTS.Unsorted, {
 			i(229078),	-- Aevery's Spare Brigandine
 			i(229079),	-- Aevery's Spare Boots
 			i(229080),	-- Aevery's Spare Gauntlets
-			i(229082),	-- Aevery's Spare Chausses
+
 			i(229083),	-- Aevery's Spare Shoulderguards
 			i(229084),	-- Aevery's Spare Belt
 			i(229086),	-- Kyros's Spare Helm
@@ -1044,7 +1044,7 @@ root(ROOTS.Unsorted, {
 				i(213099),	-- Test Warbound until equipped (DNT)
 				i(215170),	-- Abyssal Trap
 				i(215171),	-- Fungal Friend Flute
-				i(215172),	-- Silken Chain Weaver
+
 				i(215173),	-- Serum of Unconstrained Senses
 				i(215175),	-- Belt of Vials
 				i(216657),	-- Test Item C

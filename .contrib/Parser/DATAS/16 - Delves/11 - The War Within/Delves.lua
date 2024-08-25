@@ -837,6 +837,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(215174),	-- Concoction: Kiss of Death
 				i(225653),	-- Siphoning Lightbrand
 				i(215178),	-- Shadow-Binding Ritual Knife
+				i(215172),	-- Silken Chain Weaver
 				i(225668),	-- Unstable Power Suit Core
 			}),
 		}),
