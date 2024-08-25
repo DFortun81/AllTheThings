@@ -108,6 +108,7 @@ namespace ATT
                         ProcessObjects[parseType] = true;
                     }
                 }
+                Console.WriteLine();
             }
             else
             {
@@ -499,15 +500,20 @@ namespace ATT
             WaitForData = true;
             while (WaitForData || DataResults.Count > 0)
             {
-                if (DataResults.TryDequeue(out string data))
+                string[] dataToStore = new string[DataResults.Count];
+                int i = 0;
+                while (i < dataToStore.Length)
                 {
-                    File.AppendAllText(string.Format(RawDirectoryFormat, "DATA"), data + Environment.NewLine);
+                    // more data shows up while we dequeue, so that will process on next SaveFiles loop
+                    DataResults.TryDequeue(out var s);
+                    dataToStore[i++] = s;
                 }
-                else
-                {
-                    // wait for more data to show up
-                    Thread.Sleep(1000);
-                }
+                string rawStorage = string.Join(Environment.NewLine, dataToStore);
+                if (!string.IsNullOrEmpty(rawStorage))
+                    File.AppendAllText(string.Format(RawDirectoryFormat, "DATA"), rawStorage + Environment.NewLine);
+
+                // wait for more data to show up
+                Thread.Sleep(10000);
             }
         }
 
