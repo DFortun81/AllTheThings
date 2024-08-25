@@ -1188,7 +1188,6 @@ root(ROOTS.Unsorted, {
 				i(224170),	-- Wildercloth Fishing Cap
 				i(224171),	-- Master's Wildercloth Fishing Cap
 				-- Armor
-				i(224661),	-- Gem-Studded Signet
 
 
 				i(225509),	-- [PH] Armor Vestment
@@ -1774,7 +1773,6 @@ root(ROOTS.Unsorted, {
 				i(223945),	-- [PH] Perchfather's Cuffs
 				i(223946),	-- [PH] Storm Bindings
 				i(223947),	-- [PH] Steam-Powered Wristwatch
-				i(223949),	-- Dark Depth Stompers
 				i(224467),	-- Forgotten Axe
 			}),
 			n(REWARDS, {

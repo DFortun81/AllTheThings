@@ -85,6 +85,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(221199, {	-- Hungerer of the Deeps
 				["coord"] = { 66.3, 49.5, THE_RINGING_DEEPS },
 				["questID"] = 81648,
+				["g"] = {
+					i(223949),	-- Dark Depth Stompers
+				},
 			}),
 			n(220275, {	-- King Splash
 				["coord"] = { 42.8, 35.1, THE_RINGING_DEEPS },

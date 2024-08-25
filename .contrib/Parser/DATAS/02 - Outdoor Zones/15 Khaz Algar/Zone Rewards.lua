@@ -25,6 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		filter(FINGER_F, {
 			i(224660),	-- Gem-Studded Band
 			i(224662),	-- Gem-Studded Ring
+			i(224661),	-- Gem-Studded Signet
 			i(224593),	-- Spinner's Circlet
 		}),
 		filter(LEATHER, {

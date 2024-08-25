@@ -10,7 +10,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			--
 			header(HEADERS.Achievement, 20118, {	-- The Isle of Dorn
 				q(81966, {	-- Slept like a Rock
-					-- likely re-log after 80500 'The Bronzebeard Family' is completed?
+					["description"] = "Requires re-logging to be accepted",
+					["sourceQuests"] = { 80500 },	-- The Bronzebeard Family
 					["maps"] = { LEGION_DALARAN },
 					["isBreadcrumb"] = true,
 					["DisablePartySync"] = true,
