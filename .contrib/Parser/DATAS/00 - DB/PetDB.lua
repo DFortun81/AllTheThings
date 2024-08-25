@@ -3676,7 +3676,6 @@ i(0, 3175);			-- Murkastrasza
 i(0, 3339);			-- Black Dragon Whelp
 i(0, 3340);			-- Blue Dragon Whelp
 i(0, 3343);			-- Bronze Dragon Whelp
-i(0, 3361);			-- Diamond Crab
 i(0, 3341);			-- Red Dragon Whelp
 i(0, 3364);			-- Striped Snakebiter
 i(0, 3257);			-- Test Beetle
@@ -4178,6 +4177,7 @@ n(222071, 4457);	-- Chitin Burrower
 n(223698, 4577);	-- Cinderhoney Emberstinger
 n(223094, 4538);	-- Cobalt Ramolith
 n(222584, 4499);	-- Common Ploughworm
+n(192363, 3361);	-- Diamond Crab
 n(222582, 4498);	-- Ebon Ploughworm
 n(219267, 4514);	-- Fallowspark Glowfly
 n(222774, 4525);	-- Fragrant Stonelamb
@@ -4187,6 +4187,7 @@ n(222194, 4461);	-- Greenlands Chicken
 n(222535, 4488);	-- Haywire Servobot
 n(222713, 4518);	-- Magmashell Crawler
 n(222875, 4533);	-- Meek Bloodlasher
+n(222499, 4485);	-- Mossy Snail
 n(223706, 4571);	-- Pinkskin Burrower
 n(222775, 4526);	-- Sandstone Mosswool
 n(222351, 4480);	-- Shadowy Oozeling

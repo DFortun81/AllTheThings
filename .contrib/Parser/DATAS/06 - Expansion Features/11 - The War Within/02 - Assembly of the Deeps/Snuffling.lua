@@ -93,6 +93,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		n(SNUFFLING, {
 			q(84433),	-- Show wax to Gnawbles for 79343 'Everyday I'm Snufflin'
 			q(84434),	-- Buy 'Waxy Bundle' from Gnawbles during 79343 'Everyday I'm Snufflin'
+			q(84543),	-- "Disturbed Dirt" in Golgrin's Reach, Isle of Dorn. The mob "Waxen Bones" spawned. Quest trigger when clicking the dirt, not when killing the mob. // Discord
 		}),
 	}),
 })))

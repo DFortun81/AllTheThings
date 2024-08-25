@@ -12,8 +12,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				pet(4540, {	-- Alabaster Stonecharger (PET!)
 					["coord"] = { 47.0, 29.6, ISLE_OF_DORN },
 				}),
+				pet(4541, {	-- Bedrock Stonecharger (PET!)
+					["coord"] = { 27.3, 67.6, DORNOGAL },
+				}),
 				pet(4577, {	-- Cinderhoney Emberstinger (PET!)
 					["coord"] = { 74.1, 44.8, ISLE_OF_DORN },
+				}),
+				pet(3361, {	-- Diamond Crab (PET!)
+					-- ["coord"] = { X, Y, ISLE_OF_DORN },
 				}),
 				pet(4538, {	-- Cobalt Ramolith (PET!)
 					["coord"] = { 25.5, 62.0, ISLE_OF_DORN },
@@ -29,6 +35,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				pet(4539, {	-- Granite Ramolith (PET!)
 					["coord"] = { 24.2, 51.6, ISLE_OF_DORN },
+				}),
+				pet(4485, {	-- Mossy Snail (PET!)
+					-- ["coord"] = { X, Y, ISLE_OF_DORN },
 				}),
 				pet(4526, {	-- Sandstone Mosswool (PET!)
 					["coord"] = { 73.4, 40.0, ISLE_OF_DORN },

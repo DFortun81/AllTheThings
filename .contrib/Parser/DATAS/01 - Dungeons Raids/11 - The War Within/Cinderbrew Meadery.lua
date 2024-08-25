@@ -9,7 +9,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			n(QUESTS, {
 				q(83099, {	-- Mergers and Acquisitions
 					["provider"] = { "n", 226409 },	-- Wenbrandt
-					["coord"] = { 29.4, 43.4, ISLE_OF_DORN },
+					["coord"] = { 15.4, 75.4, ISLE_OF_DORN },
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {

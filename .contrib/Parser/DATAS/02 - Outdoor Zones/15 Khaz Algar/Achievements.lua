@@ -3,7 +3,7 @@
 ---------------------------------------------------
 local COLLECTOR_DYNA = {
 	["crs"] = { 223446 },
-	["coord"] = { 34.9, 85.6, ISLE_OF_DORN },
+	["coord"] = { 38.2, 78.8, ISLE_OF_DORN },
 };
 local FRIENDHAVER_GERM = {
 	["crs"] = { 223444 },

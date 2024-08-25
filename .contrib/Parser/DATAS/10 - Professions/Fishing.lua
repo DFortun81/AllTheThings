@@ -952,13 +952,15 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 		n(REWARDS, {
 			-- Floating Deep Treasure
 			i(225761),	-- Jeweler's Careful Crusher (COSMETIC!)
-			i(226385),	-- Oxidized Wrench] (COSMETIC!)
+			i(226385),	-- Oxidized Wrench	(COSMETIC!)
 			-- Shore Treasure
 			i(225768),	-- Crusty Darkmoon Card
 			i(225759),	-- Coreway Engineer's Forceps (COSMETIC!)
 			i(225762),	-- Coreway Engineer's Screwdriver (COSMETIC!)
 			-- Whispers of the Deep
 			i(226392),	-- Careless Dasher's Treasure
+			---
+			i(225755),	-- Coreway Sledgehammer
 		}),
 	})),
 })));
