@@ -1146,6 +1146,20 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 					i(226265),	-- Earthen Iron Powder
 				},
 			}),
+			o(456022, {	-- Engraved Stirring Rod
+				["coord"] = { 64.9, 61.8, THE_RINGING_DEEPS },
+				["questID"] = 83843,
+				["g"] = {
+					i(226268),	-- Engraved Stirring Rod
+				},
+			}),
+			o(456024, {	-- Metal Dornogal Frame
+				["coord"] = { 57.7, 61.8, ISLE_OF_DORN },
+				["questID"] = 83841,
+				["g"] = {
+					i(226266),	-- Metal Dornogal Frame
+				},
+			}),
 			o(456019, {	-- Nerubian Mixing Salts
 				["coord"] = { 45.4, 13.2, NERUBAR },
 				["questID"] = 83846,

@@ -319,6 +319,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					n(207826, {	-- Ravageant
 						["coord"] = { 59.8, 21.4, HALLOWFALL },
 						["questID"] = 82566,
+						["g"] = {
+							i(223932),	-- Scarab's Carapace Cap
+						},
 					}),
 					n(207803, {	-- Toadstomper
 						["coord"] = { 66.7, 24.1, HALLOWFALL },

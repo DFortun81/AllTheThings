@@ -48,6 +48,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 57.9, 38.2, THE_RINGING_DEEPS },
 				["questID"] = 81511,
 				["g"] = {
+					i(223006),	-- Signet of Dark Horizons
 					i(221226),	-- Voidtouched Waistguard
 				},
 			}),

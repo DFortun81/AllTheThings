@@ -873,6 +873,13 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 					i(226348),	-- Dornogal Seam Ripper
 				},
 			}),
+			o(455944, {	-- Earthen Tape Measure
+				["coord"] = { 56.2, 61.0, ISLE_OF_DORN },
+				["questID"] = 83923,
+				["g"] = {
+					i(226349),	-- Earthen Tape Measure
+				},
+			}),
 			o(455942, {	-- Eathen Sticher's Snips
 				["coord"] = { 64.2, 60.2, THE_RINGING_DEEPS },
 				["questID"] = 83925,
@@ -880,7 +887,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 					i(226351),	-- Earthen Stitcher's Snips
 				},
 			}),
-			o(455938, {	-- Eathen Sticher's Snips
+			o(455938, {	-- Nerubian's Pincushion
 				["coord"] = { 50.2, 16.7, NERUBAR },
 				["questID"] = 83929,
 				["g"] = {

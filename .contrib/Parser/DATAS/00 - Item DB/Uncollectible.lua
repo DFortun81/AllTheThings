@@ -2005,6 +2005,11 @@ i(228911);	-- Xalatath's Rusty Coin
 i(222693);	-- Hearty Food
 i(222740);	-- Hearty Meals
 i(228721);	-- Hearty Feast
+-- Fish
+i(228388);	-- Damp Doll
+i(228396);	-- Dead Fish
+i(228394);	-- Lost Note
+i(228431);	-- Rock Buddy
 -- ?
 i(216708);	-- Holy Candle
 i(225251);	-- Disassemble Invention

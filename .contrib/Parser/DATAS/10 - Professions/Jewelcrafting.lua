@@ -840,7 +840,29 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				r(434552),	-- Versatile Ruby
 			}),
 		}),
-
+		n(TREASURES, {
+			o(455975, {	-- Carved Stone File
+				["coord"] = { 48.5, 35.2, THE_RINGING_DEEPS },
+				["questID"] = 83892,
+				["g"] = {
+					i(226318),	-- Carved Stone File
+				},
+			}),
+			o(455976, {	-- Earth Gem Pliers
+				["coord"] = { 34.9, 52.3, DORNOGAL },
+				["questID"] = 83844,
+				["g"] = {
+					i(226317),	-- Earthen Gem Pliers
+				},
+			}),
+			o(455974, {	-- Jeweler's Delicate Drill
+				["coord"] = { 57.0, 54.6, THE_RINGING_DEEPS },
+				["questID"] = 83893,
+				["g"] = {
+					i(226319),	-- Jeweler's Delicate Drill
+				},
+			}),
+		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {

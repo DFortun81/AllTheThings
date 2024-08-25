@@ -2383,6 +2383,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(83411, 214151),	-- Skinning Ahg'zagall
 			FirstSkin(81450, 219264),	-- Skinning Bloodmaw
 			FirstSkin(83414, 216042),	-- Skinning Cha'tak
+			FirstSkin(83404, 218393),	-- Skinning Disturbed Earthgorger
 			FirstSkin(81451, 219265),	-- Skinning Emperor Pitfang
 			FirstSkin(83402, 221668),	-- Skinning Horror of the Shallows
 			FirstSkin(83413, 221327),	-- Skinning Kaheti Silk Hauler
@@ -2390,6 +2391,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(81458, 218452),	-- Skinning Murkshade
 			FirstSkin(81452, 219267),	-- Skinning Plaguehart
 			FirstSkin(83403, 221786),	-- Skinning Pride of Beledar
+			FirstSkin(83405, 221217),	-- Skinning Spore-infused Shalewing
+			FirstSkin(81456, 220271),	-- Skinning Terror of the Forge
 			FirstSkin(83401, 221648),	-- Skinning The Perchfather
 			FirstSkin(81453, 219271),	-- Skinning Twice-Stinger the Wretched
 			FirstSkin(81449, 219263),	-- Skinning Warphorn
@@ -2657,6 +2660,9 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(83111),	-- 10/40 Everburning Forge
 			q(83112),	-- 20/40 Everburning Forge
 			q(83131),	-- 30/40 Everburning Forge
+		}),
+		prof(FISHING, {
+			q(82767),	-- Extra HQT for Bloody Perch?
 		}),
 		prof(HERBALISM, {
 			q(81415),	-- 40/40 Overloading the Underground

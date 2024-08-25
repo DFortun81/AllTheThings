@@ -1564,60 +1564,60 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 		}),
 		n(TREASURES, {
-			o(456001, {	-- Rock Engineer's Wrench
-				["coord"] = { 61.3, 69.5, ISLE_OF_DORN },
-				--["questID"] = XXXXX,
-				["g"] = {
-					i(226292),	-- Rock Engineer's Wrench
-				},
-			}),
 			o(455996, {	-- Arathi Safety Gloves
 				["coord"] = { 41.5, 48.9, HALLOWFALL },
-				--["questID"] = XXXXX,
+				["questID"] = 83871,
 				["g"] = {
 					i(226297),	-- Arathi Safety Gloves
 				},
 			}),
 			o(456000, {	-- Dornogal Spectacles
-				["coord"] = { 49.3, 55.6, DORNOGAL },
-				--["questID"] = XXXXX,
+				["coord"] = { 64.7, 52.7, DORNOGAL },
+				["questID"] = 83867,
 				["g"] = {
 					i(226293),	-- Dornogal Spectacles
 				},
 			}),
 			o(455998, {	-- Earthen Construct Blueprints
 				["coord"] = { 64.5, 58.8, THE_RINGING_DEEPS },
-				--["questID"] = XXXXX,
+				["questID"] = 83869,
 				["g"] = {
 					i(226295),	-- Earthen Construct Blueprints
 				},
 			}),
 			o(455994, {	-- Emptied Venom Canister
-				["coord"] = { 61.1, 11.3, AZJ_KAHET },
-				--["questID"] = XXXXX,
+				["coord"] = { 63.1, 11.3, AZJ_KAHET },
+				["questID"] = 83873,
 				["g"] = {
 					i(226299),	-- Emptied Venom Canister
 				},
 			}),
 			o(455997, {	-- Holy Firework Dud
-				["coord"] = { 44.3, 61.4, HALLOWFALL },
-				--["questID"] = XXXXX,
+				["coord"] = { 46.3, 61.3, HALLOWFALL },
+				["questID"] = 83870,
 				["g"] = {
 					i(226296),	-- Holy Firework Dud
 				},
 			}),
 			o(455999, {	-- Inert Mining Bomb
 				["coord"] = { 42.6, 27.3, THE_RINGING_DEEPS },
-				--["questID"] = 83844,
+				["questID"] = 83868,
 				["g"] = {
 					i(226294),	-- Inert Mining Bomb
 				},
 			}),
 			o(455995, {	-- Puppeted Mechanical Spider
-				["coord"] = { 46.9, 38.6, AZJ_KAHET },
-				--["questID"] = 83844,
+				["coord"] = { 56.8, 38.6, AZJ_KAHET },
+				["questID"] = 83872,
 				["g"] = {
 					i(226298),	-- Puppeted Mechanical Spider
+				},
+			}),
+			o(456001, {	-- Rock Engineer's Wrench
+				["coord"] = { 61.3, 69.6, ISLE_OF_DORN },
+				["questID"] = 83866,
+				["g"] = {
+					i(226292),	-- Rock Engineer's Wrench
 				},
 			}),
 		}),

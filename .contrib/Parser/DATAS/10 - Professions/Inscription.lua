@@ -5379,6 +5379,15 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				r(444225),	-- Transcribe: Vivacity
 			}),
 		}),
+		n(TREASURES, {
+			o(455981, {	-- Informant's Fountain Pen
+				["coord"] = { 43.2, 58.9, HALLOWFALL },
+				["questID"] = 83886,
+				["g"] = {
+					i(226312),	-- Informant's Fountain Pen
+				},
+			}),
+		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {

@@ -1193,6 +1193,29 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+		n(TREASURES, {
+			o(456017, {	-- Ancient Earthen Anvil
+				["coord"] = { 59.8, 61.9, ISLE_OF_DORN },
+				["questID"] = 83848,
+				["g"] = {
+					i(226276),	-- Ancient Earthen Anvil
+				},
+			}),
+			o(456016, {	-- Dornogal Hammer
+				["coord"] = { 47.7, 26.5, DORNOGAL },
+				["questID"] = 83849,
+				["g"] = {
+					i(226277),	-- Dornogal Hammer
+				},
+			}),
+			o(456015, {	-- Ringing Hammer Vise
+				["coord"] = { 47.7, 33.2, THE_RINGING_DEEPS },
+				["questID"] = 83850,
+				["g"] = {
+					i(226278),	-- Ringing Hammer Vise
+				},
+			}),
+		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {

@@ -587,11 +587,11 @@ root(ROOTS.Unsorted, {
 
 
 
-				i(226266),	-- Metal Dornogal Frame
-				i(226268),	-- Engraved Stirring Rod
-				i(226276),	-- Ancient Earthen Anvil
-				i(226277),	-- Dornogal Hammer
-				i(226278),	-- Ringing Hammer Vise
+
+
+
+
+
 				i(226279),	-- Earthen Chisels
 				i(226280),	-- Holy Flame Forge
 				i(226281),	-- Radiant Tongs
@@ -610,24 +610,24 @@ root(ROOTS.Unsorted, {
 				i(226309),	-- Historian's Dip Pen
 				i(226310),	-- Runic Scroll
 				i(226311),	-- Blue Earthen Pigment
-				i(226312),	-- Informant's Fountain Pen
+
 				i(226313),	-- Calligrapher's Chiseled Marker
 				i(226314),	-- Nerubian Texts
 				i(226315),	-- Venomancer's Ink Well
 				i(226316),	-- Gentle Jewel Hammer
-				i(226317),	-- Earthen Gem Pliers
-				i(226318),	-- Carved Stone File
-				i(226319),	-- Jeweler's Delicate Drill
+
+
+
 				i(226320),	-- Arathi Sizing Gauges
 				i(226321),	-- Librarian's Magnifiers
 				i(226322),	-- Ritual Caster's Crystal
 				i(226323),	-- Nerubian Bench Blocks
 
-				i(226344),	-- Arathi Tanning Agent
+
 
 				i(226346),	-- Nerubian's Slicking Iron
 
-				i(226349),	-- Earthen Tape Measure
+
 				i(226352),	-- Arathi Rotary Cutter
 				i(226354),	-- Nerubian Quilt
 				i(226355),	-- Nerubian's Pincushion
@@ -1461,14 +1461,15 @@ root(ROOTS.Unsorted, {
 				i(228193),	-- Chipped Demon's Blade
 				i(228194),	-- Fully Scrapped Scrap
 				i(228195),	-- Tattered Goblin Cap
-				i(228388),	-- Damp Doll
+
 				i(228391),	-- Right Boot
-				i(228394),	-- Lost Note
-				i(228396),	-- Dead Fish
+
+
 				i(228415),	-- Adelgonn's Journal
 				i(228416),	-- Steelvein's Manifesto
 				i(228429),	-- Reflective Rock
-				i(228431),	-- Rock Buddy
+
+
 
 				i(228449),	-- Tasty Iron Bar
 				i(228450),	-- Edible Copper Nuggets
@@ -1744,7 +1745,7 @@ root(ROOTS.Unsorted, {
 				i(223926),	-- Earthgorger's Chain Bib
 
 				i(223930),	-- Monstrous Chain Pincers
-				i(223932),	-- Scarab's Carapace Cap
+
 
 				i(223935),	-- Cabbage Harvester's Pantaloons
 				i(223936),	-- Shadow Bog Trousers

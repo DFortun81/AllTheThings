@@ -137,7 +137,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 61.7, 89.4, AZJ_KAHET_LOWER },
 				["g"] = {
 					i(223931),	-- Black Blood Cowl
-					i(223006),	-- Signet of Dark Horizons (alpha data)
 				},
 			}),
 			n(216046, {	-- Tka'ktath
