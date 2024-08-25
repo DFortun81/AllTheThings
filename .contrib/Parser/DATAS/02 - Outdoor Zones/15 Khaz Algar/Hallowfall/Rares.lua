@@ -123,6 +123,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 79271,	-- in addition 84062
 				["g"] = {
 					i(221223),	-- Bog Beast Mantle
+					i(221264),	-- Fungarian Mystic's Cluster
 					i(221255),	-- Sharpened Scalepiercer
 				},
 			}),
@@ -155,15 +156,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 
 root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 	m(HALLOWFALL, {
-		q(84055),	-- Extra HQT: Toadstomper
-		q(84061),	-- Extra HQT: Murkshade
-		q(84061),	-- Extra HQT: The Taskmaker
-		q(84062),	-- Extra HQT: Sloshmuck
-		q(84063),	-- Extra HQT: Lytfang the Lost
-		q(84064),	-- Extra HQT: The Perchfather
-		q(84065),	-- Extra HQT: Horror of the Shallows
-		q(84067),	-- Extra HQT: Sir Alastair Purefire
-		q(84066),	-- Extra HQT: Strenght of Beledar
-		q(84068),	-- Extra HQT: Pride of Beledar
+		q(85165), -- Extra HQT: Deathtide
+		q(84055), -- Extra HQT: Toadstomper
+		q(84061), -- Extra HQT: Murkshade
+		q(84061), -- Extra HQT: The Taskmaker
+		q(84065), -- Extra HQT: Horror of the Shallows
+		q(84063), -- Extra HQT: Lytfang the Lost
+		q(84068), -- Extra HQT: Pride of Beledar
+		q(84062), -- Extra HQT: Sloshmuck
+		q(84067), -- Extra HQT: Sir Alastair Purefire
+		q(84066), -- Extra HQT: Strenght of Beledar
+		q(84064), -- Extra HQT: The Perchfather
 	}),
 }));

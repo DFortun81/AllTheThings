@@ -830,7 +830,6 @@ root(ROOTS.Unsorted, {
 				i(226019),	-- Darkened Arathi Shoulderguards
 				i(226105),	-- Emerald Scale Treads \\ Jade Scale Treads
 				i(226106),	-- Amber Scale Treads
-				i(226116),	-- Coagulating Phlegm Churner
 				i(226160),	-- Hillhelm Farmhand's Hoe
 				i(226161),	-- Hillhelm Farmhand's Watering Can
 				i(226363),	-- Earthen Backpack
@@ -1559,7 +1558,6 @@ root(ROOTS.Unsorted, {
 				i(219323),	-- Gelatinous Unguent
 				i(219324),	-- Roiling Elixir
 				i(219350),	-- Maddening Manifest
-				i(219384),	-- Tenir and the Order of Night
 				i(219388),	-- Sacred Flame Torch
 				i(219400),	-- Faerin's Torch of Holy Flame
 				i(219804),	-- [DNT] Antiparalytic Serum
@@ -1619,7 +1617,6 @@ root(ROOTS.Unsorted, {
 				i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
 				i(226111),	-- Arakkoan Ritual Staff
 				i(226113),	-- Kereke's Flourishing Sabre
-				i(226115),	-- Contaminating Cleaver
 				i(228364),	-- Endiri's Chipped Boot Knife
 				i(228367),	-- Arathi Scout's Walking Stick
 			}),
@@ -1720,7 +1717,6 @@ root(ROOTS.Unsorted, {
 				i(221093),	-- Deeply Corrupted Coil
 				i(221209),	-- Flame Trader's Gloves
 				i(221210),	-- Grips of the Earth
-				i(221214),	-- Chitin Chain Headpiece
 				i(221222),	-- Water-Imbued Spaulders
 
 				i(221230),	-- Storm Bindings
@@ -1728,12 +1724,10 @@ root(ROOTS.Unsorted, {
 				i(221232),	-- Polished Goblin Bling
 				i(221233),	-- Deephunter's Bloody Hook
 				i(221234),	-- Tidal Pendant
-				i(221235),	-- Dark Agent's Cloak \\ Fel Soldier's Cloak
 				i(221236),	-- Stormbreaker's Shield
 				i(221237),	-- Lamentable Vagrant's Lantern
 				i(221238),	-- Pillar of Constructs
 				i(221242),	-- Forgeborn Helm
-				i(221246),	-- Fierce Beast Staff
 				i(221251),	-- Bestial Underground Cleaver
 				i(221253),	-- Cultivator's Plant Puncher
 				i(221254),	-- Earthshatter Lance
@@ -1747,7 +1741,6 @@ root(ROOTS.Unsorted, {
 
 				i(223921),	-- Ever-Oozing Signet
 				i(223922),	-- Cinder Pollen Cloak
-				i(223923),	-- Gilded Cryptlord's Sabatons
 				i(223926),	-- Earthgorger's Chain Bib
 
 				i(223930),	-- Monstrous Chain Pincers
@@ -1758,7 +1751,6 @@ root(ROOTS.Unsorted, {
 				i(223937),	-- Honey Deliverer's Leggings
 				i(223938),	-- Marsh Hopper's Spaulders
 				i(223939),	-- Esteemed Nerubian's Mantle
-				i(223943),	-- Cord of the Earthbreaker
 				i(223944),	-- [PH] Infested Fungal Wristwraps
 				i(223945),	-- [PH] Perchfather's Cuffs
 				i(223946),	-- [PH] Storm Bindings

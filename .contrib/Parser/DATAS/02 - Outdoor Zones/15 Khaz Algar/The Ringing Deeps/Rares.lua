@@ -40,6 +40,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 41.3, 16.9, THE_RINGING_DEEPS },	-- old coord: 61.5, 26.8 or more than one spawn now?
 				["questID"] = 81562,
 				["g"] = {
+					i(221209),	-- Flame Trader's Gloves
 					i(221249),	-- Kobold Rodent Squasher
 				},
 			}),
@@ -81,6 +82,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(218393, {	-- Disturbed Earthgorger
 				["coord"] = { 67.1, 52.6, THE_RINGING_DEEPS },
 				["questID"] = 80003,
+				["g"] = {
+					i(223943),	-- Cord of the Earthbreaker
+				},
 			}),
 			n(221199, {	-- Hungerer of the Deeps
 				["coord"] = { 66.3, 49.5, THE_RINGING_DEEPS },
@@ -171,6 +175,7 @@ root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 		q(84050),	-- Extra HQT: Disturbed Earthgorger
 		q(84048),	-- Extra HQT: Hungerer of the Deeps
 		q(84047),	-- Extra HQT: Kelpmire
+		q(81455),	-- Extra HQT: King Splash
 		q(84049),	-- Extra HQT: Spore-Infused Shalewing
 		q(84040),	-- Extra HQT: Terror of Forge
 		q(84043),	-- Extra HQT: Trungal

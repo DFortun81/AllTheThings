@@ -52,6 +52,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 25.8, 45.1, ISLE_OF_DORN },
 				["questID"] = 81907,
 				["g"] = {
+					i(221235),	-- Dark Agent's Cloak
 					i(221208),	-- Unseen Cutthroat's Tunic
 				},
 			}),
@@ -111,6 +112,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 30.9, 52.3, ISLE_OF_DORN },
 				["questID"] = 82205,
 				["g"] = {
+					i(226116),	-- Coagulating Phlegm Churner
+					i(226115),	-- Contaminating Cleaver
 					i(226112),	-- Rotfist Flesh Carver
 				},
 			}),
@@ -222,6 +225,7 @@ root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 		q(84031),	-- Extra HQT: Kronolith, Might of the Mountain
 		q(84039),	-- Extra HQT: Matriarch Charfuria
 		q(84026),	-- Extra HQT: Plaguehart
+		q(85161),	-- Extra HQT: Rotfist
 		q(84032),	-- Extra HQT: Shallowshell the Clacker
 		q(84038),	-- Extra HQT: Sweetspark the Oozeful
 		q(84030),	-- Extra HQT: Tempest Lord Incarnus
