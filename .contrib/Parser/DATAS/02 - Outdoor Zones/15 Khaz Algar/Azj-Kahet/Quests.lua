@@ -498,12 +498,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["isBreadcrumb"] = true,
 				}),
 				q(80564, {	-- Field Research
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 83306 }, -- Where the Wild Things Camp
 					["provider"] = { "n", 220595 },	-- Orweyna
 					["coord"] = { 46.1, 68.9, AZJ_KAHET },
 				}),
 				q(80563, {	-- Tool of Attunement
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 83306 }, -- Where the Wild Things Camp
 					["provider"] = { "n", 220595 },	-- Orweyna
 					["coord"] = { 46.1, 68.9, AZJ_KAHET },
 					["g"] = {
@@ -728,7 +728,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["isBreadcrumb"] = true,
 				}),
 				q(83628, {	-- Tense Recovery
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 83716 }, -- Beneath the Roots
 					["provider"] = { "n", 227222 },	-- Ysabel Gleamgaard
 					["coord"] = { 26.8, 55.9, AZJ_KAHET },
 				}),
@@ -852,8 +852,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(81890, {	-- Unfulfilled Requests
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
-					--["provider"] = { "n", NNNNNN },
-					--["coord"] = { X, Y, AZJ_KAHET },
+					["provider"] = { "n", 208782 },	-- Executor Nizrek
+					["coord"] = { 52.9, 46.1, AZJ_KAHET },
 					["isBreadcrumb"] = true
 				}),
 				q(81928, {	-- The Voice of the People
