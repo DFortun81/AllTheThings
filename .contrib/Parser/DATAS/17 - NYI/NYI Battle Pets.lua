@@ -1343,8 +1343,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			pet(3573),	-- Swole (PET!)
 			pet(3567),	-- Talons (PET!)
 			pet(3569),	-- Tempe (PET!)
-
-			pet(3525),	-- Abyssal Lurker (PET!)
 			-- With SpeciesID Attached
 			i(205004, {	-- Azure Swoglet (PET!)
 				["displayID"] = 112144,

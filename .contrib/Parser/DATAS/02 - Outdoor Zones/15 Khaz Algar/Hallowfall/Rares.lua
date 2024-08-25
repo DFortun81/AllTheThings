@@ -25,8 +25,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 80486,
 			}),
 			n(221753, {	-- Deathtide <The Viscous Swell>
-				--["coord"] = { X, Y, HALLOWFALL },
+				["coord"] = { 44.8, 42.8, HALLOWFALL },
 				["questID"] = 81880,
+				["g"] = {
+					i(223920),	-- Slime Deflecting Stopper
+				},
 			}),
 			n(218458, {	-- Deepfiend Azellix
 				["coord"] = { 72.1, 64.3, HALLOWFALL },

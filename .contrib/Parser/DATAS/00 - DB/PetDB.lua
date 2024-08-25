@@ -3943,7 +3943,6 @@ i(0, 3573);			-- Swole
 i(0, 3567);			-- Talons
 i(0, 3569);			-- Tempe
 --- NYI ---
-i(0, 3525);			-- Abyssal Lurker
 i(205004, 3513);	-- Azure Swoglet
 i(205054, 3532);	-- Amador
 i(205011, 3517);	-- Bronze Swoglet
@@ -4167,6 +4166,7 @@ i(224760, 4597);	-- Wobbles
 i(221496, 4496);	-- Wriggle
 i(223487, 4482);	-- Writhing Transmutagen
 --- NPC ---
+n(204271, 3525);	-- Abyssal Lurker
 n(223092, 4540);	-- Alabaster Stonecharger
 n(222066, 4456);	-- Arachnoid Hatchling
 n(222195, 4460);	-- Arathi Chicken

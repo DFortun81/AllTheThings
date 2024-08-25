@@ -1748,15 +1748,15 @@ root(ROOTS.Unsorted, {
 				i(223916),	-- Nerubian Cutthroat's Reach
 				i(223917),	-- Nerubian Covert's Cloak
 				i(223918),	-- Specter Stalker's Shotgun
-				i(223920),	-- Slime Deflecting Stopper
+
 				i(223921),	-- Ever-Oozing Signet
 				i(223922),	-- Cinder Pollen Cloak
 				i(223923),	-- Gilded Cryptlord's Sabatons
 				i(223926),	-- Earthgorger's Chain Bib
-				i(223927),	-- Vinewrapped Leather Tunic
+
 				i(223930),	-- Monstrous Chain Pincers
 				i(223932),	-- Scarab's Carapace Cap
-				i(223934),	-- Makrura's Foreboding Legplates
+
 				i(223935),	-- Cabbage Harvester's Pantaloons
 				i(223936),	-- Shadow Bog Trousers
 				i(223937),	-- Honey Deliverer's Leggings

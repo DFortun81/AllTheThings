@@ -1034,11 +1034,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 44.0, 49.7, HALLOWFALL },
 				["cost"] = {{"i", 224268, 1}},	-- 1x Filigreed Cleric
 			}),
+			q(80679, {	-- Stuffed Lynx Toy
+				["sourceQuests"] = { 80678 },	-- Time Lost
+				["provider"] = { "n", 218486 },	-- Phillip Taversil <Leatherworking>
+				["coord"] = { 43.2, 55.4, HALLOWFALL },
+				["cost"] = {{"i", 219809, 1}},	-- 1x Plush Lynx
+			}),
 			q(82815, {	-- Sturdy Locket
 				["sourceQuests"] = { 82813 },	-- Time Borrowed
 				["provider"] = { "n", 220859 },	-- Amy Lychenstone
 				["coord"] = { 43.1, 50.1, HALLOWFALL },
 				["cost"] = {{"i", 224274, 1}},	-- 1x Sturdy Locket
+			}),
+			q(80679, {	-- Tarnished Compass
+				["sourceQuests"] = { 80678 },	-- Time Lost
+				["provider"] = { "o", 439890 },	-- Grave Offering Location
+				["coord"] = { 43.5, 51.7, HALLOWFALL },
+				["cost"] = {{"i", 219524, 1}},	-- 1x Tarnished Compass
 			}),
 			q(82832, {	-- Wooden Figure
 				["sourceQuests"] = { 82813 },	-- Time Borrowed
@@ -1049,7 +1061,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			--
 			q(82025, {	-- Talk with Sky-Captain Aerthin
 				["name"] = "Talk with Sky-Captain Aerthin",
-				["description"] = "This NPC is Patrolling",
+				["description"] = "This npc is on a patrolling airship",
 				["provider"] = { "n", 222323 },	-- Sky-Captain Aerthin
 				["coords"] = {
 					{ 33.0, 43.0, HALLOWFALL },
@@ -1058,7 +1070,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			q(82024, {	-- Talk with Sky-Captain Clairmonte
 				["name"] = "Talk with Sky-Captain Clairmonte",
-				["description"] = "This NPC is Patrolling",
+				["description"] = "This npc is on a patrolling airship",
 				["provider"] = { "n", 222311 },	-- Sky-Captain Clairmonte
 				["coords"] = {
 					{ 44.6, 45.8, HALLOWFALL },
@@ -1067,7 +1079,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			q(82012, {	-- Talk with Sky-Captain Dornald
 				["name"] = "Talk with Sky-Captain Dornald",
-				["description"] = "This NPC is Patrolling",
+				["description"] = "This npc is on a patrolling airship",
 				["provider"] = { "n", 222333 },	-- Sky-Captain Dornald
 				["coords"] = {
 					{ 45.4, 47.4, HALLOWFALL },
@@ -1076,7 +1088,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			q(82026, {	-- Talk with Sky-Captain Onaro
 				["name"] = "Talk with Sky-Captain Onaro",
-				["description"] = "This NPC is Patrolling",
+				["description"] = "This npc is on a patrolling airship",
 				["provider"] = { "n", 222337 },	-- Sky-Captain Onaro
 				["coords"] = {
 					{ 45.4, 47.4, HALLOWFALL },
@@ -1085,6 +1097,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(81568, {	-- Release the Beasts
+					["sourceQuests"] = { 78672 },	-- A Lamplighter's Duty
 					["coord"] = { 55.2, 26.8, HALLOWFALL },
 					["g"] = {
 						i(217352),	-- Gasping Fish (QI!)
@@ -1113,7 +1126,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			hqt(82538, {	-- Stay awhile and listen: General Steelstrike
 				["name"] = "Stay awhile and listen: General Steelstrike",
-				--["sourceQuests"] = main campaign or piory sidequest?
+				["sourceQuests"] = { 79650 },	-- Priory of the Sacred Flame: A Brother's Grief
 				["provider"] = { "n", 213108 },	-- General Steelstrike #could be wrong here
 				["coord"] = { 42.3, 55, HALLOWFALL },
 			}),

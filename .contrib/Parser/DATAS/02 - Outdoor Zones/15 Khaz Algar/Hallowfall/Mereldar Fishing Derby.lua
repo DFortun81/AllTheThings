@@ -22,6 +22,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							i(DERBY_MARK),
 						},
 					}),
+					q(83529, {	-- Mereldar Fishing Derby
+						["provider"] = { "n", 226846 },	--  Captain Oathmyt
+						["coord"] = { 44.2, 61.4, HALLOWFALL },
+						["g"] = {
+							i(DERBY_MARK),
+						},
+					}),
 				}),
 				n(VENDORS, {
 					n(226846, {	-- Captain Oathmyt
@@ -79,3 +86,26 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		}),
 	}),
 })));
+
+
+root(ROOTS.HiddenQuestTriggers, header(HEADERS.Quest, 82778, {	-- Mereldar Fishing Derby
+	--q(82907, 444795),	-- Arathor Hammerfish
+	q(82920),	-- Bismuth Bitterling
+	q(82918),	-- Bloody Perch
+	--q(82898, 444786),	-- Crystalline Sturgeon
+	q(82935),	-- Cursed Ghoulfish
+	--q(82896, 444792),	-- Dilly-Dally Dace
+	--q(82905, 444793),	-- Dornish Pike
+	q(82923),	-- Goldengill Trout
+	q(82930),	-- Kaheti Slum Shark
+	--q(82900, 444788),	-- Nibbling Minnow
+	--q(82910, 444798),	-- Pale Huskfish
+	q(82934),	-- Queen's Lurefish
+	--q(82904, 454443),	-- Quiet River Bass
+	q(82929),	-- Regal Dottyback
+	--q(82906, 444794),	-- Roaring Anglerseeker
+	--q(82911, 444799),	-- Sanguine Dogfish
+	--q(82903, 444791),	-- Specular Rainbowfish
+	--q(82912, 444800),	-- Spiked Sea Raven
+	--q(82901, 444789),	-- Whispering Stargazer
+}));

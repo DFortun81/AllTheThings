@@ -269,6 +269,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					n(206184, {	-- Deathpetal
 						["coord"] = { 63.8, 32.0, HALLOWFALL },
 						["questID"] = 82559,
+						["g"] = {
+							i(223927),	-- Vinewrapped Leather Tunic
+						},
 					}),
 					n(221179, {	-- Duskshadow
 						["coord"] = { 64.1, 19.5, HALLOWFALL },
@@ -292,6 +295,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					n(220771, {	-- Murkspike
 						["coord"] = { 62.4, 13.3, HALLOWFALL },
 						["questID"] = 82565,
+						["g"] = {
+							i(223934),	-- Makrura's Foreboding Legplates
+						},
 					}),
 					n(206977, {	-- Parasidious
 						["description"] = "Pull many Shadowroot Vines until eventually the Rare is spawned.",
@@ -371,6 +377,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["g"] = {
 							i(212333),	-- Expedition Tinderbox (QS!/QI!)
 						},
+					}),
+					o(423959, {	-- Faded Supply Chest
+						["coord"] = { 61.8, 17.5, HALLOWFALL },
+						["questID"] = 79964,
 					}),
 					o(435008, {	-- Farmhand Stash
 						["description"] = "Require weekly quest with controlling Harvestbot Remy to git it up",

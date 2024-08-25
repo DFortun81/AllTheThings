@@ -11,6 +11,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				4522,	-- Troglofrog (PET!)
 			}},
 			["g"] = {
+				pet(3525, {	-- Abyssal Lurker (PET!)
+					["description"] = "Rarespawn in the backline",
+					--["coord"] = { X, Y, HALLOWFALL },
+				}),
 				pet(4456, {	-- Arachnoid Hatchling (PET!)
 					--["coord"] = { X, Y, HALLOWFALL },
 				}),
