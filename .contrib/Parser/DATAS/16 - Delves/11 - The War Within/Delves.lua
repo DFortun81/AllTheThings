@@ -524,7 +524,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(221496),	-- Wriggle (PET!)
 			}),
 			filter(MISC, {
-				i(211776),	-- Damp Repair Kit (QI!)
+				o(415296, {	-- Repair Kit
+					i(211776),	-- Damp Repair Kit (QI!)
+				}),
 			}),
 			n(QUESTS, {
 				q(83771, {	-- Delver's Call: Tak-Rethan Abyss
@@ -626,11 +628,18 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["questID"] = 83685,
 				}),
 			}),
+			n(219713, {	-- Arathi Captive
+				["description"] = "Attempting to save this captive will spawn an assassin and not count towards any progress",
+			}),
+			n(219718, {	-- Arathi Captive
+				["description"] = "Save this captive",
+			}),
 		},
 	}),
 	m(THE_SPIRAL_WEAVE, {
 		["icon"] = [[~_.asset("Delves_Nerubian")]],
 		["coord"] = { 46.6, 25.7, AZJ_KAHET },
+		["maps"] = { 2313 },	-- The Spiral Weave
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(40814),	-- The Spiral Weave Discoveries
@@ -650,20 +659,23 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(455487, {	-- Sturdy Chest
-					["coord"] = { 46.0, 46.4, THE_SPIRAL_WEAVE },
+					["description"] = "Located ontop of pillar, accessible after killing last boss.",
+					["coord"] = { 46.0, 46.1, THE_SPIRAL_WEAVE },
 					["questID"] = 83681,
 				}),
 				o(455531, {	-- Sturdy Chest
-					["coord"] = { 50.0, 46.2, THE_SPIRAL_WEAVE },
+					["coord"] = { 50.5, 46.2, THE_SPIRAL_WEAVE },
 					["questID"] = 83649,
 				}),
 				o(455506, {	-- Sturdy Chest
+					["description"] = "Located on beam over your head.",
 					["coord"] = { 36.3, 10.5, THE_SPIRAL_WEAVE },
 					["questID"] = 83661,
 				}),
-				o(413590, {	-- Bountiful Coffer
-					["coord"] = { 48.2, 48.2, THE_SPIRAL_WEAVE },
-					--["questID"] = 83320,
+				o(455507, {	-- Sturdy Chest
+					["description"] = "Located on beam over your head, accessible after killing last boss",
+					["coord"] = { 42.5, 47.7, THE_SPIRAL_WEAVE },
+					["questID"] = 83662,
 				}),
 			}),
 		},
@@ -690,14 +702,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 35.9, 34.6, THE_UNDERKEEP },
 					["questID"] = 83664,
 				}),
-				--o(455488, {	-- Sturdy Chest
-				--	["coord"] = { x, y, THE_UNDERKEEP },	-- after first room map is broken, there no mapID and coords after it
-				--	["questID"] = 83682,
-				--}),
-				---o(, {	-- Sturdy Chest
-				---	["coord"] = { x, y, THE_UNDERKEEP },
-				---	["questID"] = 83697,
-				---}),
+				o(455488, {	-- Sturdy Chest
+					["coord"] = { 63.7, 32.4, THE_UNDERKEEP },
+					["questID"] = 83682,
+				}),
+				o(455523, {	-- Sturdy Chest
+					["coord"] = { 72, 88.8, THE_UNDERKEEP },
+					["questID"] = 83697,
+				}),
 			}),
 		},
 	}),

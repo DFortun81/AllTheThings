@@ -1241,7 +1241,6 @@ root(ROOTS.Unsorted, {
 				i(211349),	-- Mundane Potion
 
 				i(211529),	-- Test Big Bag (DNT)
-				i(211776),	-- Damp Repair Kit
 				i(212340),	-- Strange Jar
 				i(212385),	-- Moira's Healing Surge TO DEPRECATE
 				i(212527),	-- Spiderforged Emitter Key [REMOVED]
