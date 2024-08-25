@@ -34,12 +34,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(219230, {	-- Erani <Pet Charm Trader>
 				["coord"] = { 58.5, 64.9, DORNOGAL },
 				["g"] = {
-					-- TODO: Costs! Was not available in latest build
-					i(224101),	-- Brown Leafbug (PET!)
-					i(222978),	-- Sandstone Ramolith (PET!)
-					i(221494),	-- Skippy (PET!)
-					i(221811),	-- Starkstripe Hopper (PET!)
-					i(221761),	-- Venomwing (PET!)
+					i(224101, {	-- Brown Leafbug (PET!)
+						["cost"] = {{ "i", POLISHED_PET_CHARM, 50 }},
+					}),
+					i(222978, {	-- Sandstone Ramolith (PET!)
+						["cost"] = {{ "i", POLISHED_PET_CHARM, 50 }},
+					}),
+					i(221494, {	-- Skippy (PET!)
+						["cost"] = {{ "i", POLISHED_PET_CHARM, 50 }},
+					}),
+					i(221811, {	-- Starkstripe Hopper (PET!)
+						["cost"] = {{ "i", POLISHED_PET_CHARM, 50 }},
+					}),
+					i(221761, {	-- Venomwing (PET!)
+						["cost"] = {{ "i", POLISHED_PET_CHARM, 50 }},
+					}),
 				},
 			}),
 			n(219197, {	-- Griftah <Amazing Amulets>
@@ -62,6 +71,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 500}},
 					}),
 				},
+			}),
+			n(207496, {	-- Kargand <Stable Master>
+				["coord"] = { 55.4, 67.1, DORNOGAL },
+				["sym"] = {{"sub", "common_vendor", 219230}},	-- Erani <Pet Charm Trader>
 			}),
 			n(219051, {	-- Lyrendal <Artisan's Consortium Quartermaster>
 				["coord"] = { 59.8, 56.4, DORNOGAL },

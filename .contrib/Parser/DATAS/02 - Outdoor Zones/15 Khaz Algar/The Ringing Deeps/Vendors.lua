@@ -21,6 +21,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(227773),	-- Pummel-Proof Plating
 				},
 			}),
+			n(218416, {	-- Heissanik <Stable Master>
+				["coord"] = { 62.2, 46.0, THE_RINGING_DEEPS },
+				["sym"] = {{"sub", "common_vendor", 219230}},	-- Erani <Pet Charm Trader>
+			}),
+			n(225220, {	-- Wheat <Stable Master>
+				["coord"] = { 58.6, 65.4, THE_RINGING_DEEPS },
+				["sym"] = {{"sub", "common_vendor", 219230}},	-- Erani <Pet Charm Trader>
+			}),
 		}),
 	}),
 })));
