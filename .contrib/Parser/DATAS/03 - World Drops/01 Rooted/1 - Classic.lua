@@ -3536,7 +3536,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 4.0.3
 			i(9294, {	-- Recipe: Wildvine Potion (RECIPE!)
 				-- #if AFTER 10.1.7
-				["description"] = "Can drop from any troll in Arathi Highlands, Dun Morogh, Stranglethorn, Silithus, The Hinterlands & Zul Gurub. Inside Zul Gurub is a great spot.",
+				["description"] = "Can drop from any troll in zones such as Arathi Highlands, Dun Morogh, Stranglethorn, Silithus, The Hinterlands & Zul Gurub. Inside Zul Gurub is a great spot.",
 				["maps"] = { ARATHI_HIGHLANDS, DUN_MOROGH, NORTHERN_STRANGLETHORN, SILITHUS, THE_CAPE_OF_STRANGLETHORN, THE_HINTERLANDS, ZULGURUB },
 				-- #endif
 				["timeline"] = { REMOVED_4_0_1, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
