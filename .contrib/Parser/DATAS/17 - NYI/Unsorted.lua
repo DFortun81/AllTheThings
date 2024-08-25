@@ -791,13 +791,9 @@ root(ROOTS.Unsorted, {
 
 
 				i(225752),	-- Dornogal Defender
-				i(225753),	-- Dornogal Guard's Splitter
-				i(225754),	-- Dornogal Guard's Hammer
 
 				i(225756),	-- Coreway Shovel
 				i(225757),	-- Coreway Pickaxe
-
-				i(225760),	-- Dornogal Spear
 
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
 
