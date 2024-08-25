@@ -106,6 +106,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			------ Alts ------
+			q(84365, {	-- Something on the Horizon
+				--["sourceQuests"] = { 83621 },	-- HQT (I'm not sure if there any other way to get it)
+				["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+				["coord"] = { 47.4, 44.4, DORNOGAL },
+			}),
 			q(83543, {	-- Adventuring in Khaz Algar
 				--["sourceQuests"] = { 83621 },	-- HQT (I'm not sure if there any other way to get it)
 				["provider"] = { "n", 206017 },	-- Brann Bronzebeard
