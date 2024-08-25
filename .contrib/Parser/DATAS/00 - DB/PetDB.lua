@@ -3953,7 +3953,6 @@ i(205018, 3520);	-- Jade Skitterbug
 i(205116, 3534);	-- Jerrie
 i(205166, 3556);	-- Kromos
 i(205013, 3518);	-- Lettuce
-i(205153, 3547);	-- Mikah
 i(205149, 3543);	-- Ravenous Shalewing
 i(205122, 3539);	-- Roseshell
 i(205053, 3531);	-- Rusty
@@ -3965,6 +3964,7 @@ i(205148, 3542);	-- Soot-Stained Shalewing
 i(205157, 3550);	-- Undermoth
 i(205037, 3527);	-- Void Lurker
 i(205032, 0);		-- Bestial Lurker
+i(205153, 0);		-- Mikah
 
 ------------------
 -- PATCH 10.1.5 --
@@ -4187,6 +4187,7 @@ n(222194, 4461);	-- Greenlands Chicken
 n(222535, 4488);	-- Haywire Servobot
 n(222713, 4518);	-- Magmashell Crawler
 n(222875, 4533);	-- Meek Bloodlasher
+n(204354, 3547);	-- Mikah
 n(222499, 4485);	-- Mossy Snail
 n(223706, 4571);	-- Pinkskin Burrower
 n(222775, 4526);	-- Sandstone Mosswool

@@ -224,6 +224,28 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			o(454408, {	-- Venedaz's Plaque
 				["coord"] = { 48.6, 31.8, THE_RINGING_DEEPS },
 			}),
+			-- Achievement
+			n(226638, {	-- Abyssal Console
+				["coord"] = { 59.0, 93.4, THE_RINGING_DEEPS },
+			}),
+			n(226642, {	-- Earthen Console
+				["coord"] = { 46.2, 14.0, THE_RINGING_DEEPS },
+				["questID"] = 83483,
+			}),
+			n(226641, {	-- Lost Console
+				["coord"] = { 56., 22.6, THE_RINGING_DEEPS },
+				["questID"] = 83482,
+			}),
+			n(226640, {	-- Obsidian Console
+				["coord"] = { 69.0, 48.8, THE_RINGING_DEEPS },
+			}),
+			n(226639, {	-- Taelloch Console
+				["coord"] = { 63.6, 61.0, THE_RINGING_DEEPS },
+			}),
+			n(226624, {	-- Water Console
+				["coord"] = { 45.2, 46.4, THE_RINGING_DEEPS },
+				["questID"] = 83475,
+			}),
 		}),
 	}),
 })));

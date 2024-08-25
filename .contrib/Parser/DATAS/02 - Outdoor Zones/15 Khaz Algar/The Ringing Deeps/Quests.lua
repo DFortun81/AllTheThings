@@ -1305,6 +1305,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 54.6, 71.2, THE_RINGING_DEEPS },
 				}),
 				q(81981, {	-- What Army?
+					["sourceQuests"] = { 80514 },	-- Break out Berrund!
 					["coord"] = { 70.7, 39.8, THE_RINGING_DEEPS },
 				}),
 			}),
@@ -1332,10 +1333,10 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(79635),	-- [DNT] The Assembly of the Deeps Renown Unlock (spellID 448654)
 	-- Side quests
 	q(82652),	-- 'Stay a while and listen' - Brennok, in the end of whole speach during questID 80682 (One Last Story)
-	-- 80510 or 80509
-	q(81927),	-- interact a things from table (left-ish one), during of this 2 quests (not sure which one exactly)
+	-- A Suit of Slime (80509) Choices
+	q(81927),	-- interact a things from table (left-ish one)
+	q(81925),	-- Choosing Flappy Bits
+	q(81926),	-- Choosing Pokey Bits
 	-- ?
-	q(83475),	-- [DNT] Repair Console (spellID 455981) Water Console (o: 226624) @ 45.3, 46.4, THE_RINGING_DEEPS)
-	q(83482),	-- [DNT] Repair Console (spellID 456005) Lost Console (o: 226641 @ 56.4, 22.5, THE_RINGING_DEEPS)
-	--q(82991),	-- when bind hearthstone location to Camp Murroch tavern
+	q(82991),	-- Talking to Ferno (225018) inside Camp Murrock, When bind hearthstone location to Camp Murroch tavern
 });

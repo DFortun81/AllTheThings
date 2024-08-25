@@ -1373,9 +1373,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(205013, {	-- Lettuce (PET!)
 				["displayID"] = 112149,
 			}),
-			i(205153, {	-- Mikah (PET!)
-				["displayID"] = 112190,
-			}),
 			i(205149, {	-- Ravenous Shalewing (PET!)
 				["displayID"] = 112187,
 			}),
@@ -1409,6 +1406,9 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			-- Without SpeciesID Attached
 			i(205032, {	-- Bestial Lurker (PET!)
 				["displayID"] = 112162,
+			}),
+			i(205153, {	-- Mikah (PET!)
+				["displayID"] = 112190,
 			}),
 		})),
 

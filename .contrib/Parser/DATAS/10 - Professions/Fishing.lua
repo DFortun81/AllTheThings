@@ -961,6 +961,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(226392),	-- Careless Dasher's Treasure
 			---
 			i(225755),	-- Coreway Sledgehammer
+			i(225763),	-- Fallen Dalaran Defender
 		}),
 	})),
 })));

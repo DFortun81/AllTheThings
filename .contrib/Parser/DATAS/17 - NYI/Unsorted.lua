@@ -1742,7 +1742,7 @@ root(ROOTS.Unsorted, {
 				i(221251),	-- Bestial Underground Cleaver
 				i(221253),	-- Cultivator's Plant Puncher
 				i(221254),	-- Earthshatter Lance
-				i(221264),	-- Fungarian Mystic's Cluster
+
 				i(221505),	-- [DNT] Rare Cloth - Robe
 				i(223005),	-- String of Fungal Fruits
 				i(223915),	-- Nerubian Orator's Stiletto

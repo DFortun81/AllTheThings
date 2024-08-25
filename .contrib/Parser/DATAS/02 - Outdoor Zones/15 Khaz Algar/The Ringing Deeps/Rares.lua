@@ -103,6 +103,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 46.8, 46.8, THE_RINGING_DEEPS },
 				["questID"] = 81485,
 				["g"] = {
+					i(221264),	-- Fungarian Mystic's Cluster
 					i(221204),	-- Spore Giant's Stompers
 				},
 			}),
