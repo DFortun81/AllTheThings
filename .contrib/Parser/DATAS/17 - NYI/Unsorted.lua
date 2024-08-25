@@ -598,14 +598,10 @@ root(ROOTS.Unsorted, {
 				i(226282),	-- Nerubian Smith's Kit
 				i(226283),	-- Spiderling's Wire Brush
 
-				i(226292),	-- Rock Engineer's Wrench
-				i(226293),	-- Dornogal Spectacles
-				i(226294),	-- Inert Mining Bomb
-				i(226295),	-- Earthen Construct Blueprints
-				i(226296),	-- Holy Firework Dud
-				i(226297),	-- Arathi Safety Gloves
-				i(226298),	-- Puppeted Mechanical Spider
-				i(226299),	-- Emptied Venom Canister
+
+
+
+
 				i(226308),	-- Dornogal Scribe's Quill
 				i(226309),	-- Historian's Dip Pen
 				i(226310),	-- Runic Scroll
