@@ -551,10 +551,10 @@ iq(228946, 84693);					-- Weaver's Lair Profession Table
 iq(224050, 82635);					-- Web Sparkles: Pretty and Powerful
 
 -- Curio
-is(modItemId(225903, nil, 11265), 459052);	-- Amorphous Relic [Rank 1]
-is(modItemId(225903, nil, 11266), 459056);	-- Amorphous Relic [Rank 2]
-is(modItemId(225903, nil, 11267), 459061);	-- Amorphous Relic [Rank 3]
-is(modItemId(225903, nil, 11268), 446835);	-- Amorphous Relic [Rank 4]
+is(modItemId(225903, nil, 11265), 446835);	-- Amorphous Relic [Rank 1]
+is(modItemId(225903, nil, 11266), 459052);	-- Amorphous Relic [Rank 2]
+is(modItemId(225903, nil, 11267), 459056);	-- Amorphous Relic [Rank 3]
+is(modItemId(225903, nil, 11268), 459061);	-- Amorphous Relic [Rank 4]
 is(modItemId(225897, nil, 11235), 456498);	-- Brute Force Idol [Rank 1]
 is(modItemId(225897, nil, 11236), 458464);	-- Brute Force Idol [Rank 2]
 is(modItemId(225897, nil, 11237), 458469);	-- Brute Force Idol [Rank 3]
