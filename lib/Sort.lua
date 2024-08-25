@@ -193,7 +193,15 @@ app.SortDefaults = setmetatable({
 			-- neither a or b exists, equality returns false
 			return false;
 		end
-		local acomp, bcomp;
+		-- Items always prioritize above other Types
+		local acomp = a.itemID;
+		local bcomp = b.itemID;
+		if acomp then
+			if not bcomp then return true; end
+		elseif bcomp then
+			return false;
+		end
+		-- Otherwise order by container size
 		acomp = a.g
 		bcomp = b.g
 		return (acomp and #acomp or 0) < (bcomp and #bcomp or 0);

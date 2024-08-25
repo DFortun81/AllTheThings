@@ -3,8 +3,8 @@ local _, app = ...
 local L = app.L
 
 -- App locals
-local GetRawField
-	= app.GetRawField
+local GetRawField, contains
+	= app.GetRawField, app.contains
 local IsQuestFlaggedCompleted, IsQuestFlaggedCompletedForObject = app.IsQuestFlaggedCompleted, app.IsQuestFlaggedCompletedForObject;
 
 -- Global locals
@@ -156,6 +156,13 @@ local function GroupMatchesParams(group, key, value, ignoreModID)
 	elseif key == "npcID" or key == "creatureID" then
 		if group.creatureID == value then return true; end
 		if group.npcID == value then return true; end
+		-- treat encounters with this NPC as a match for the NPC
+		if group.encounterID then
+			local crs = group.crs
+			if crs and contains(crs, value) then
+				return true
+			end
+		end
 	-- Criteria contain identical achievementID field, so match by key when checking AchievementID
 	-- (currently not a way to directly search CriteriaID...)
 	elseif key == "achievementID" then
