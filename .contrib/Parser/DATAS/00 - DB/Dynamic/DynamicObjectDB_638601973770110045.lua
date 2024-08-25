@@ -1,0 +1,63 @@
+﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	[454037] = {
+		readable = "Stolen Supplies",
+		model = 5048188,
+		text = {
+			en = "Stolen Supplies",
+			es = "[Stolen Supplies]",
+			de = "[Stolen Supplies]",
+			fr = "[Stolen Supplies]",
+			it = "[Stolen Supplies]",
+			pt = "[Stolen Supplies]",
+			ru = "[Stolen Supplies]",
+			ko = "[Stolen Supplies]",
+			cn = "[Stolen Supplies]",
+		},
+	},
+	[454038] = {
+		readable = "Stolen Supplies",
+		model = 5048188,
+		text = {
+			en = "Stolen Supplies",
+			es = "[Stolen Supplies]",
+			de = "[Stolen Supplies]",
+			fr = "[Stolen Supplies]",
+			it = "[Stolen Supplies]",
+			pt = "[Stolen Supplies]",
+			ru = "[Stolen Supplies]",
+			ko = "[Stolen Supplies]",
+			cn = "[Stolen Supplies]",
+		},
+	},
+	[454039] = {
+		readable = "Stolen Supplies",
+		model = 5048188,
+		text = {
+			en = "Stolen Supplies",
+			es = "[Stolen Supplies]",
+			de = "[Stolen Supplies]",
+			fr = "[Stolen Supplies]",
+			it = "[Stolen Supplies]",
+			pt = "[Stolen Supplies]",
+			ru = "[Stolen Supplies]",
+			ko = "[Stolen Supplies]",
+			cn = "[Stolen Supplies]",
+		},
+	},
+	[455485] = {
+		readable = "<span style=\"color: #1EFF00\">Sturdy Chest</span>",
+		model = 5128194,
+		text = {
+			en = "<span style=\"color: #1EFF00\">Sturdy Chest</span>",
+			es = "Sturdy Chest",
+			de = "Sturdy Chest",
+			fr = "Sturdy Chest",
+			it = "Sturdy Chest",
+			pt = "Sturdy Chest",
+			ru = "Sturdy Chest",
+			ko = "Sturdy Chest",
+			cn = "Sturdy Chest",
+		},
+	},
+})
+do ObjectDB[objectID] = objectData; end

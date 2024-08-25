@@ -243,10 +243,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		n(208728),	-- Treasure Wraith
 	}),
 	n(TREASURES, {
-			-- Mislaid Curiosities can be found throughout all Delves, random coordinates
-			-- Contains: Chunk of Companion Experience (Item IDs: 228071, 228072, 228073)
-			o(455914, {	-- Mislaid Curiosity
-				["description"] = "Contains Chunk of Companion Experience tokens.",
+		-- Mislaid Curiosities can be found throughout all Delves, random coordinates
+		o(455914, {	-- Mislaid Curiosity
+			["description"] = "Contains Chunk of Companion Experience tokens.",
+			["g"] = {
+				i(228071),	-- Chunk of Companion Experience (Uncommon)
+				i(228072),	-- Chunk of Companion Experience (Rare)
+				i(228073),	-- Chunk of Companion Experience (Epic)
+			},
 		}),
 	}),
 	m(EARTHCRAWL_MINES, {
@@ -1105,9 +1109,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(222916),	-- Player Experience (Tier 1-2)
 			i(222917),	-- Player Experience (Tier 3)
 			i(222927),	-- Weathered Coin Coffer
-			i(228071),	-- Chunk of Companion Experience (Uncommon)
-			i(228072),	-- Chunk of Companion Experience (Rare)
-			i(228073),	-- Chunk of Companion Experience (Epic)
 			i(223287),	-- Atomized Salien Slime
 			i(227794),	-- Archaic Cipher Key (QI!/QS!)
 			i(218121),	-- Candle Light
