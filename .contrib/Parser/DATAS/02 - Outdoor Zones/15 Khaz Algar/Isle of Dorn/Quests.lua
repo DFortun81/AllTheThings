@@ -867,7 +867,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 57.7, 42.7, ISLE_OF_DORN },
 					["g"] = {
 						i(213002),	-- Charged Core (QI!)
-						i(213001),	-- Clump of Ore (QI!)
+						o(420730, {
+							i(213001),	-- Clump of Ore (QI!)
+						}),
 					},
 				}),
 				q(79336, {	-- The Forging of Memories
@@ -888,7 +890,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 213187 },	-- Urtago
 					["coord"] = { 57.8, 42.7, ISLE_OF_DORN },
 					["g"] = {
-						i(216677),	-- Korgran's Lantern (QI!)
+						o(424253, {	-- Korgran's Lantern
+							i(216677),	-- Korgran's Lantern (QI!)
+						}),
 					},
 				}),
 				q(79339, {	-- A Change of Tradition
@@ -901,7 +905,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 216173 },	-- Urtago
 					["coord"] = { 72.5, 59.2, ISLE_OF_DORN },
 					["g"] = {
-						i(213157),	-- Ashenfold (QI!)
+						o(420734, {	-- Ashenfold
+							i(213157),	-- Ashenfold (QI!)
+						}),
 					},
 				}),
 				q(79340, {	-- Tools of Declaration

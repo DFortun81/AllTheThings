@@ -44,6 +44,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(220125),	-- Lamplighter's Epaulets
 						i(220119),	-- Lamplighter's Handwraps
 						i(220127),	-- Lamplighter's Sabatons
+						o(421909, {	-- Fallen Defender
+							i(213191),	-- Arathi Tinderbox (QI!)
+						}),
 					},
 				}),
 				q(78668, {	-- Rally on the Dawnbreaker

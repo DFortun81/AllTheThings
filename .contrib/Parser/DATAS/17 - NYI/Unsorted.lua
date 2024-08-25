@@ -629,7 +629,6 @@ root(ROOTS.Unsorted, {
 
 				i(226349),	-- Earthen Tape Measure
 				i(226352),	-- Arathi Rotary Cutter
-				i(226353),	-- Royal Outfitter's Protractor
 				i(226354),	-- Nerubian Quilt
 				i(226355),	-- Nerubian's Pincushion
 				i(224780),	-- Toughened Tempest Pelt

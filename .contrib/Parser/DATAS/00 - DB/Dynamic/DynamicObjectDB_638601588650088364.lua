@@ -1,0 +1,63 @@
+﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	[420730] = {
+		readable = "Vein of Ore",
+		model = 969801,
+		text = {
+			en = "Vein of Ore",
+			es = "Filón de mena",
+			de = "Erzader",
+			fr = "Filon de minerai",
+			it = "Vena di Minerali",
+			pt = "Veio de Minério",
+			ru = "Рудная жила",
+			ko = "광맥",
+			cn = "矿脉",
+		},
+	},
+	[420734] = {
+		readable = "Ashenfold",
+		model = 1333857,
+		text = {
+			en = "Ashenfold",
+			es = "Cenizarruga",
+			de = "Aschenbruch",
+			fr = "Cendrepli",
+			it = "Cineride",
+			pt = "Redil Cinzento",
+			ru = "Пепельный рубеж",
+			ko = "잿빛무리",
+			cn = "烬褶花",
+		},
+	},
+	[424253] = {
+		readable = "Korgran's Lantern",
+		model = 4860713,
+		text = {
+			en = "Korgran's Lantern",
+			es = "Farol de Korgran",
+			de = "Korgrans Laterne",
+			fr = "Lanterne de Korgran",
+			it = "Lanterna di Korgran",
+			pt = "Lanterna de Korgran",
+			ru = "Фонарь Корграна",
+			ko = "코르그란의 등불",
+			cn = "寇尔甘的灯笼",
+		},
+	},
+	[455940] = {
+		readable = "Royal Outfitter's Protractor",
+		model = 5725602,
+		text = {
+			en = "Royal Outfitter's Protractor",
+			es = "Royal Outfitter's Protractor",
+			de = "Winkelmesser des königlichen Ausstatters",
+			fr = "Royal Outfitter's Protractor",
+			it = "Royal Outfitter's Protractor",
+			pt = "Royal Outfitter's Protractor",
+			ru = "Royal Outfitter's Protractor",
+			ko = "Royal Outfitter's Protractor",
+			cn = "Royal Outfitter's Protractor",
+		},
+	},
+})
+do ObjectDB[objectID] = objectData; end
