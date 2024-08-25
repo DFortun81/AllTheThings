@@ -10,7 +10,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		ach(18977, {	-- Draconically Epic
 			["sym"] = {{"achievement_criteria"}},
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2 },
+			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_5 },
 		}),
 		ach(18366, {	-- Draconically Epic - Replaced with new achievement number 18977
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_5 },
@@ -43,7 +43,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		ach(18976, {	-- Draconically Superior
 			["sym"] = {{"achievement_criteria"}},
-			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_2 },
+			["timeline"] = { ADDED_10_1_5, REMOVED_11_0_5 },
 		}),
 		ach(18365, {	-- Draconically Superior - Replaced with new achievement number 18976
 			["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_5 },

@@ -55,7 +55,80 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					40680,	-- Skyriding Glyphs: The Waterworks
 				}},
 			}),
-			ach(40475),	-- To All the Slimes I Love (automated)
+			ach(40475, {	-- To All the Slimes I Love
+				crit(68670, {	-- Spring Mole
+					["coord"] = { 57.48, 67.64, THE_RINGING_DEEPS },
+					["crs"] = { 226626 },
+				}),
+				crit(68675, {	-- Worms
+					["coord"] = { 60.31, 92.21, THE_RINGING_DEEPS },
+					["crs"] = { 219585 },
+				}),
+				crit(68673, {	-- Snake
+					["coord"] = { 51.28, 15.43, THE_RINGING_DEEPS },
+					["crs"] = { 217756 },
+				}),
+				crit(68674, {	-- Lightdarter
+					["coord"] = { 64.53, 32.38, THE_RINGING_DEEPS },
+					["crs"] = { 220173 },
+				}),
+				crit(68676, {	-- Tiny Sporbit
+					["coord"] = { 52.85, 54.73, THE_RINGING_DEEPS },
+					["crs"] = { 221146 },
+				}),
+				crit(68677, {	-- Dustcrawler Beetle
+					["coord"] = { 42.01, 16.38, THE_RINGING_DEEPS },
+					["crs"] = { 220369 },
+				}),
+				crit(68731, {	-- Grottoscale Hatchling
+					["coord"] = { 58.79, 68.61, THE_RINGING_DEEPS },
+					["crs"] = { 217461 },
+				}),
+				crit(68729, {	-- Crackcreeper
+					["coord"] = { 54.67, 29.92, THE_RINGING_DEEPS },
+					["crs"] = { 220177 },
+				}),
+				crit(68730, {	-- Lava Slug
+					["coord"] = { 48.50, 12.57, THE_RINGING_DEEPS },
+					["crs"] = { 214726 },
+				}),
+				crit(68732, {	-- Earthenwork Stoneskitterer
+					["coord"] = { 45.78, 13.52, THE_RINGING_DEEPS },
+					["crs"] = { 220370 },
+				}),
+				crit(68733, {	-- Cavern Skiplet
+					["coord"] = { 72.85, 39.65, THE_RINGING_DEEPS },
+					["crs"] = { 223663 },
+				}),
+				crit(68734, {	-- Moss Sludglet
+					["coord"] = { 57.30, 65.74, THE_RINGING_DEEPS },
+					["crs"] = { 217316 },
+				}),
+				crit(68747, {	-- Cavern Mote
+					["coord"] = { 42.01, 16.38, THE_RINGING_DEEPS },
+					["crs"] = { 219366 },
+				}),
+				crit(68748, {	-- Stumblegrub
+					["coord"] = { 61.96, 30.27, THE_RINGING_DEEPS },
+					["crs"] = { 220168 },
+				}),
+				crit(69805, {	-- Darkgrotto Hopper
+					["coord"] = { 54.41, 34.73, THE_RINGING_DEEPS },
+					["crs"] = { 219842 },
+				}),
+				crit(68749, {	-- Oozeling
+					["coord"] = { 67.01, 38.78, THE_RINGING_DEEPS },
+					["crs"] = { 220413 },
+				}),
+				crit(68750, {	-- Pebble Scarab
+					["coord"] = { 59.40, 45.92, THE_RINGING_DEEPS },
+					["crs"] = { 217559 },
+				}),
+				crit(68751, {	-- Rock Snail
+					["coord"] = { 42.42, 14.37, THE_RINGING_DEEPS },
+					["crs"] = { 216058 },
+				}),
+			}),
 			pvp(ach(40084)),	-- Tour of Duty: The Ringing Deeps
 			ach(40724),		-- Treasures of The Ringing Deeps (automated)
 		}),
