@@ -147,7 +147,7 @@ def add_latest_build(build: str) -> list[str]:
                 break
         if version.parse(build) > version.parse(build_lines[-1]):
             build_lines.append(build + "\n")
-            next_builds = list(build)
+            next_builds.append(build + "\n")
     with open("Builds.txt", "w") as build_list:
         build_list.writelines(build_lines)
     return next_builds
