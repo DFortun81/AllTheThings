@@ -242,6 +242,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		n(223541),	-- Stolen Loader
 		n(208728),	-- Treasure Wraith
 	}),
+	n(TREASURES, {
+			-- Mislaid Curiosities can be found throughout all Delves, random coordinates
+			-- Contains: Chunk of Companion Experience (Item IDs: 228071, 228072, 228073)
+			o(455914, {	-- Mislaid Curiosity
+				["description"] = "Contains Chunk of Companion Experience tokens.",
+		}),
+	}),
 	m(EARTHCRAWL_MINES, {
 		["icon"] = [[~_.asset("Delves_Kobold")]],
 		["coord"] = { 38.6, 73.9, ISLE_OF_DORN },
@@ -259,11 +266,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(226222),	-- Webbed Hookshot
 			}),
 			n(TREASURES, {
-				-- Seems like two rare treasures in this dungeon? Can have different IDs
-				o(455914, {	-- Mislaid Curiosity
-					--["coord"] = { X, Y, EARTHCRAWL_MINES }, -- Seem to spawn at many locations in the delve + in other delves also? => Find a better home for this
-					-- Contains: Chunk of companion expereince (228072)
-				}),
 				o(454090, {	-- Sturdy Chest
 					["coord"] = { 45.2, 14.7, EARTHCRAWL_MINES },
 					["questID"] = 83440,
