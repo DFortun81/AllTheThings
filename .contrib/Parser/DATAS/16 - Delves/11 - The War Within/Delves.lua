@@ -499,6 +499,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 66.7, 14.5, SKITTERING_BREACH },
 					["questID"] = 83680,
 				}),
+				o(455485, {	-- Sturdy Chest
+					["coord"] = { 51.1, 65.1, SKITTERING_BREACH },
+					["questID"] = 83679,
+				}),
 			}),
 		},
 	}),
