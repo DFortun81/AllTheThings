@@ -1441,6 +1441,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			},
 		}),
+		n(ZONE_DROPS, {
+			i(225692),	-- Glowglow Cap (sturdy chest)
+		}),
 	}),
 })));
 

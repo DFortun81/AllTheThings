@@ -1391,7 +1391,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(82913, 444801),	-- Queen's Lurefish
 			FirstCraft(82904, 454443),	-- Quiet River Bass
 			FirstCraft(82908, 444796),	-- Regal Dottyback
-			--FirstCraft(xxxxx, 444794),	-- Roaring Anglerseeker
+			FirstCraft(82906, 444794),	-- Roaring Anglerseeker
 			FirstCraft(82911, 444799),	-- Sanguine Dogfish
 			--FirstCraft(xxxxx, 456152),	-- Seekerthread
 			FirstCraft(82903, 444791),	-- Specular Rainbowfish

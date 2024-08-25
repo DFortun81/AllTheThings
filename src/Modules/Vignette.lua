@@ -56,7 +56,9 @@ local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 local ReportedVignettes = {};
 local Ignored = setmetatable({
 	npc = {
-
+		[223728] = true,	-- Auditor Balwurz [Renown Quartermaster - Council of Dornogal]
+		[221390] = true,	-- Waxmonger Squick [Renown Quartermaster - The Assembly of the Deeps]
+		[213145] = true,	-- Auralia Steelstrike [Renown Quartermaster - Hallowfall Arathi]
 	},
 	object = {
 

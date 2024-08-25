@@ -714,7 +714,6 @@ root(ROOTS.Unsorted, {
 				i(225683),	-- Grasping Necrotic Relic
 				i(225684),	-- Relicblood of Zekvir
 				i(225685),	-- Relic of Sentience
-				i(225692),	-- Glowglow Cap
 
 
 				i(225901),	-- Streamlined Relic \\ Power Idol

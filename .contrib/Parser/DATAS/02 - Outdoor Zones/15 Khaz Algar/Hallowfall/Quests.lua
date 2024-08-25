@@ -828,7 +828,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40844.12, {	-- The Mysterious Chef
 				q(84392, {	-- Hungry in Hollow
 					--["sourceQuests"] = { xx },	-- ?
-					["provider"] = { "n", 222323 },	-- Haelmut Aegisaxe
+					["provider"] = { "n", 222683 },	-- Haelmut Aegisaxe
 					["coord"] = { 48.4, 39.4, HALLOWFALL },
 					["isBreadcrumb"] = true,	-- TODO: need to re-confirm, just in case
 				}),
