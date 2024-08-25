@@ -252,7 +252,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					q(80562),	-- Blossoming Delight
 					]]
 				})),
-				n(RARES, {
+				n(RARES, sharedDataSelf({
+						["isDaily"] = true,
+				},{
 					n(206514, {	-- Crazed Cabbage Smacker
 						["coord"] = { 64.9, 29.4, HALLOWFALL },
 						["questID"] = 82558,
@@ -325,7 +327,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(223933),	-- Slime Goliath's Cap
 						},
 					}),
-				}),
+				})),
 				n(REWARDS, {
 					i(RADIANT_REMNANT),
 					i(226264),	-- Radiant Cache
@@ -402,19 +404,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["questID"] = 82996,
 						["provider"] = {"i", 218107},	-- Sparkbug Jar
 					}),
-					o(453186, {	-- Nightfarm Growthling
-						["coord"] = { 61.3, 31.8, HALLOWFALL },
-						["questID"] = 83272,
-						["g"] = {
-							i(221546),	-- Nightfarm Growthling (PET!)
-						},
-					}),
 					o(451993, {	-- Nerubian Device
 						["coord"] = { 62.3, 31.7, HALLOWFALL },
 						["g"] = {
 							i(224548),	-- Nerubian Device
 							-- put this on the quest once known
 							-- ["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 16 },
+						},
+					}),
+					n(206870, {	-- Shadowrooted Vine
+						["provider"] = { "i", 206670 },	-- Darkroot Grips
+						["g"] = {
+							i(211861),	-- Umbral Eggplant
+						},
+					}),
+				}),
+				-- Daily Treasures
+				n(TREASURES, sharedData({
+					["isDaily"] = true,
+				},{
+					o(453186, {	-- Nightfarm Growthling
+						["coord"] = { 61.3, 31.8, HALLOWFALL },
+						["questID"] = 83272,
+						["g"] = {
+							i(221546),	-- Nightfarm Growthling (PET!)
 						},
 					}),
 					o(434929, {	-- Radiant Remnant
@@ -437,13 +450,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 65.0, 30.2, HALLOWFALL },
 						["questID"] = 80552,
 					}),
-					n(206870, {	-- Shadowrooted Vine
-						["provider"] = { "i", 206670 },	-- Darkroot Grips
-						["g"] = {
-							i(211861),	-- Umbral Eggplant
-						},
+					o(434926, {	-- Radiant Remnant
+						["coord"] = { 64.0, 31.6, HALLOWFALL },
+						["questID"] = 80583,
 					}),
-				}),
+				})),
 				n(VENDORS, {
 					n(212419, {	-- Attica Whiskervale
 						["coord"] = { 64.5, 18.8, HALLOWFALL },
@@ -562,7 +573,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
 	q(81846),	-- Ore @ 65.3, 16.6
 	q(83047),	-- Ore @ 66.1, 17.0
 	q(83039),	-- Ore @ 66.3, 17.5
-	q(80583),	-- Radiant Remnant @ 64.0, 31.7
 	q(80337),	-- Radiant Remnant @ 66.1, 16.6
 	q(80347),	-- Radiant Remnant @ 65.7, 16.5
 	q(80342),	-- Radiant Remnant @ 65.4, 16.7
