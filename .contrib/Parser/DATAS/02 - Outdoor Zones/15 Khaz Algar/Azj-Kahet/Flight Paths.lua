@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["cr"] = 216973,	-- Couruier Aidal
 			}),
 			fp(2921, {	-- Mmarl, Azj-Kahet
-				["coord"] = { 75.6, 67.1, AZJ_KAHET },
+				["coord"] = { 76.8, 64.4, AZJ_KAHET },
 				["cr"] = 216979,	-- Roughrider Tany
 			}),
 			fp(2893, {	-- The Burrows, Azj-Kahet
@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["cr"] = 207470,	-- Wings of the Widow
 			}),
 			fp(2889, {	-- Wildcamp Or'lay, Azj-Kahet
-				["coord"] = { 26.4, 54.9, AZJ_KAHET },
+				["coord"] = { 23.1, 51.1, AZJ_KAHET },
 				["cr"] = 208384,	-- Courier Nailen
 			}),
 			fp(2919, {	-- Wildcamp Ul'ar, Azj-Kahet
