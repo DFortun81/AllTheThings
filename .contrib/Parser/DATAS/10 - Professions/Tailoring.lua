@@ -866,6 +866,13 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		})),
 		n(TREASURES, {
+			o(455945, {	-- Dornogal Seam Ripper
+				["coord"] = { 61.4, 18.6, DORNOGAL },
+				["questID"] = 83922,
+				["g"] = {
+					i(226348),	-- Dornogal Seam Ripper
+				},
+			}),
 			o(455942, {	-- Eathen Sticher's Snips
 				["coord"] = { 64.2, 60.2, THE_RINGING_DEEPS },
 				["questID"] = 83925,

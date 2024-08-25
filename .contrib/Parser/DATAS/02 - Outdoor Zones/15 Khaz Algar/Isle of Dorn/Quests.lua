@@ -492,9 +492,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
 					["coord"] = { 49.9, 49.3, DORNOGAL },
 					["g"] = {
-						i(217499),	-- Assorted Chisels (QI!)
-						i(217500),	-- High-Quality Coal (QI!)
-						i(217501),	-- Moleskin Apron (QI!)
+						o(432893, {	-- Shipment Crate
+							i(217499),	-- Assorted Chisels (QI!)
+						}),
+						o(429301, {	-- Shipment Crate
+							i(217500),	-- High-Quality Coal (QI!)
+						}),
+						o(432894, {	-- Shipment Crate
+							i(217501),	-- Moleskin Apron (QI!)
+						}),
 						i(217498),	-- Seized Shipment (QI!)
 					},
 				}),
@@ -508,10 +514,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 219394 },	-- Peacekeeper Kragad
 					["coord"] = { 49.9, 49.3, DORNOGAL },
 					["g"] = {
-						i(217505),	-- Bag of Glowing Shards (QI!)
-						i(217504),	-- Bundle of Receipts (QI!)
-						i(217502),	-- Infused Underclay (QI!)
-						i(217503),	-- Nerubian Silk Ropes (QI!)
+						o(433101, {	-- Bag of Glowing Shards
+							i(217505),	-- Bag of Glowing Shards (QI!)
+						}),
+						o(433102, {
+							i(217504),	-- Bundle of Receipts (QI!)
+						}),
+						o(433090, {	-- Infused Underclay
+							i(217502),	-- Infused Underclay (QI!)
+						}),
+						o(433109, {	-- Nerubian Silk Ropes
+							i(217503),	-- Nerubian Silk Ropes (QI!)
+						}),
 					},
 				}),
 				q(79525, {	-- Report to the Councilward
@@ -810,7 +824,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 213687 },	-- Urtago
 					["coord"] = { 62.8, 41.1, ISLE_OF_DORN },
 					["g"] = {
-						i(211428),	-- Earthen Belongings (QI!)
+						o(414199, {	-- Pile of Earthen Belongings
+							i(211428),	-- Earthen Belongings (QI!)
+						}),
 					},
 				}),
 				q(78746, {	-- Laws Apply to All

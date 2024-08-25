@@ -210,6 +210,7 @@ root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
 		q(82227),	-- Extra HQT: Magical Treasure Chest
 		q(82253),	-- Extra HQT: Mushroom Cap
 		q(82251),	-- Extra HQT: Mosswool Flower
+		q(82252),	-- Completed with Quest 83244 (Mysterious Orb)
 		q(79585),	-- Dalaran Sewer Turtle: Needs more time
 	}),
 }));

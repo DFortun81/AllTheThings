@@ -627,7 +627,6 @@ root(ROOTS.Unsorted, {
 
 				i(226346),	-- Nerubian's Slicking Iron
 
-				i(226348),	-- Dornogal Seam Ripper
 				i(226349),	-- Earthen Tape Measure
 				i(226352),	-- Arathi Rotary Cutter
 				i(226353),	-- Royal Outfitter's Protractor

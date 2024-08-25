@@ -848,7 +848,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 219674 },	-- Janky
 					["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
 					["g"] = {
-						i(216670),	-- Fire Bee Wax (QI!)
+						o(430215, {	-- Molten Wax
+							i(216670),	-- Fire Bee Wax (QI!)
+						}),
 					},
 				}),
 				q(79998, {	-- Mite Not Right
@@ -881,7 +883,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
 					["g"] = {
 						i(224262),	-- Begrudgingly Poured Cinderbrew (QI!)
-						i(224253),	-- Elementally Active Coal (QI!)
+						o(430551, {	-- Coal Shipment
+							i(224253),	-- Elementally Active Coal (QI!)
+						}),
 						i(217395),	-- Freshly Smithed Tools (QI!)
 						i(216681),	-- Merchant Stall Parts (QI!)
 						i(220163),	-- [PH] Cinder Bee (PET!) (TODO: placeholder)
