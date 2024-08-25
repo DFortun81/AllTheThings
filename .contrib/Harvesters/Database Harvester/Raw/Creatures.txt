@@ -21963,3 +21963,62 @@
 220254@@@Rescued Citizen
 11.0.2.56196
 231755@@@Faerin Lothar
+11.0.2.56311
+226259@@@Adelgonn
+226261@@@Moira Thaurissan
+226264@@@Ebona
+226266@@@Baelgrim
+228371@@@Faerin Lothar
+228383@@@Zarein
+228404@@@Dead Abductor
+228407@@@Moss-Draped Ramolith
+228408@@@Injured Earthen
+228410@@@Unbound Protector
+228454@@@Anduin Wrynn
+228455@@@Lady Jaina Proudmoore
+228456@@@Thrall
+228457@@@Alleria Windrunner
+228740@@@Provoked Burrowfiend
+228807@@@Swarming Threadling
+228809@@@Invading Depthlurker
+228812@@@Armored Subjugator
+228815@@@Oathsworn Peacekeeper
+228824@@@Coreway Worker
+228825@@@Baelgrim
+228826@@@Zarein
+228828@@@Stormrider Meirand
+228830@@@Meirand's Stormrook
+228958@@@Magni Bronzebeard
+228959@@@Moira Thaurissan
+228960@@@Dagran Thaurissan II
+229318@@@Queensguard Zirix
+229321@@@Thrall
+229323@@@Moira Thaurissan
+229324@@@Magni Bronzebeard
+229325@@@Lady Jaina Proudmoore
+229326@@@Dagran Thaurissan II
+229327@@@Anduin Wrynn
+229391@@@Baelgrim
+229392@@@Baelgrim
+229393@@@Rotatey Bug
+230055@@@Anduin Wrynn
+230057@@@Faerin Lothar
+230060@@@Aelric Leid
+230062@@@Alleria Windrunner
+230090@@@Arathi Stalwart
+230091@@@General Steelstrike
+230093@@@Faerin Lothar
+230094@@@Slain Kobyss
+230095@@@Aelric Leid
+230096@@@Invisible Stalker
+230101@@@Adelgonn
+230102@@@Baelgrim
+230103@@@Zarein
+230104@@@Swift Stormrook
+230105@@@Wenbrandt
+230106@@@Queensguard Zirix
+230403@@@Silver Covenant Spellcaster
+230404@@@Kirin Tor Conjuror
+230405@@@Sunreaver Battlemage
+230928@@@General Steelstrike
+231102@@@Faerin Lothar
