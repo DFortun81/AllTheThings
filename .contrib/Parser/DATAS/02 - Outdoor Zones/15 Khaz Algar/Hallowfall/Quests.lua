@@ -62,7 +62,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 224945 },	-- Faerin
 					["coord"] = { 57.5, 64.4, HALLOWFALL },
 					["g"] = {
-						i(213630),	-- Keg of Black Powder (QI!)
+						o(411930, {	-- Blackpowder Barrel
+							i(213630),	-- Keg of Black Powder (QI!)
+						}),
 						i(220118),	-- Arathi Demolition Charge
 					},
 				}),
@@ -190,9 +192,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 218182 },	-- Alleria Windrunner
 					["coord"] = { 42.8, 55.7, HALLOWFALL },
 					["g"] = {
-						i(217995),	-- Order of Night Propaganda (QI!)
-						i(217993),	-- Order of Night Propaganda (QI!)
-						i(217900),	-- Order of Night Propaganda (QI!)
+						o_repeated({
+							i(217995),	-- Order of Night Propaganda (QI!)
+							i(217993),	-- Order of Night Propaganda (QI!)
+							i(217900),	-- Order of Night Propaganda (QI!)
+							o(433907),	-- Order of Night Propaganda
+							o(424436),	-- Order of Night Propaganda
+						}),
 					},
 				}),
 				q(78626, {	-- Spar Day

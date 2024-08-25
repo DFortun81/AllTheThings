@@ -12,9 +12,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 211752 },	-- Alleria Windrunner
 					["coord"] = { 32.0, 47.1, AZJ_KAHET },
 					["g"] = {
-						i(211775),	-- Bleached Bones (QI!)
-						i(211774),	-- Crumpled Lion Gauntlet (QI!)
-						i(211783),	-- Scrap of Weathered Fabric (QI!)
+						o(411104, {	-- Well-Bleached Bones
+							i(211775),	-- Bleached Bones (QI!)
+						}),
+						o(411102, {	-- Airship Rubble
+							i(211774),	-- Crumpled Lion Gauntlet (QI!)
+						}),
+						o(411106, {	-- Weathered Cloth
+							i(211783),	-- Scrap of Weathered Fabric (QI!)
+						}),
 					},
 				}),
 				q(78350, {	-- Heroes Never Die
@@ -117,12 +123,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 					["coord"] = { 63.0, 32.9, AZJ_KAHET },
 					["g"] = {
-						i(211870),	-- Flynn's Blades (QI!)
-						i(221031, {	-- Nerubian Intelligence (QI!)
-							i(212158),	-- Broken Venom Flask (QI!)
-							i(211769),	-- Orders from Siegehold (QI!)
-							i(212159),	-- Vial of Stinky Pheromones (QI!)
+						o(441587, {	-- Crate of Emptied Vials
+							i(212159),	-- Vial of Used Pheromones (QI!)
 						}),
+						o(441586, {	-- Military Correspondence
+							i(211769),	-- Orders from Siegehold (QI!)
+						}),
+						o(441588, {	-- Confiscated Weapons
+							i(211870),	-- Flynn's Blades (QI!)
+						}),
+						o(441585, {	-- Burning Venom Flask
+							i(212158),	-- Burning Venom Flask (QI!)
+						}),
+						i(221031),	-- Nerubian Intelligence (QI!)
 						i(225364),	-- Kaheti Confiscated Blade
 						i(225349),	-- Kaheti Confiscated Borers
 						i(225358),	-- Kaheti Confiscated Buckler
@@ -166,7 +179,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 217330 },	-- Anub'azal
 					["coord"] = { 46.9, 26.2, AZJ_KAHET },
 					["g"] = {
-						i(217165),	-- Zev'kall's Attrition Log (QI!)
+						o(410395, {	-- Siegehold Records
+							i(217165),	-- Zev'kall's Attrition Log (QI!)
+						}),
 					},
 				}),
 				q(78249, {	-- Specific Personages
@@ -218,7 +233,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 215845 },	-- Monte Gazlowe
 					["coord"] = { 52.7, 31.6, AZJ_KAHET },
 					["g"] = {
-						i(217042),	-- Zev'kall's Pheromone Emitter (QI!)
+						o(428814, {	-- Inconspicuous Box
+							i(217042),	-- Zev'kall's Pheromone Emitter (QI!)
+						}),
 					},
 				}),
 				------ Chapter 3 ------
@@ -633,7 +650,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 214168 },	-- Skedgit Cinderbangs
 					["coord"] = { 42.5, 44.4, AZJ_KAHET },
 					["g"] = {
-						i(211415),	-- Sivstone Chunk (QI!)
+						o(414113, {	-- Sivstone Deposit
+							i(211415),	-- Sivstone Chunk (QI!)
+						}),
 					},
 				}),
 				q(79349, {	-- Entrepreneur Inc.

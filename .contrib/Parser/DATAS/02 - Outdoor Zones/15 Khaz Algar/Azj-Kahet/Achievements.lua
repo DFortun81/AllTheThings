@@ -54,10 +54,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			ach(40632),		-- No Harm Ever Came From Reading A Book
 			ach(40727),		-- Skittershaw Spin
 			ach(40691, {	-- Skyriding Glyphs: Arathi's End
-				["coord"] = { 63.4, 17.0, AZJ_KAHET },
+				["coord"] = { 63.4, 13.7, AZJ_KAHET },
 			}),
 			ach(40696, {	-- Skyriding Glyphs: Deepwalker Pass
-				["coord"] = { 58.6, 89.8, NERUBAR },
+				["coord"] = { 58.6, 89.8, AZJ_KAHET },
 			}),
 			ach(40694, {	-- Skyriding Glyphs: Eye of Ansurek
 				["coord"] = { 43.1, 57.0, AZJ_KAHET },

@@ -880,6 +880,13 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 					i(226351),	-- Earthen Stitcher's Snips
 				},
 			}),
+			o(455938, {	-- Eathen Sticher's Snips
+				["coord"] = { 50.2, 16.7, NERUBAR },
+				["questID"] = 83929,
+				["g"] = {
+					i(226355),	-- Nerubian's Pincushion
+				},
+			}),
 			o(455940, {	-- Royal Outfitter's Protractor
 				["coord"] = { 40.1, 68.1, HALLOWFALL },
 				["questID"] = 83927,
