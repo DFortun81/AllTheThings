@@ -1016,6 +1016,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			-- Items turn in quests?
+			q(80681, {	-- Broken Bracelet
+				["sourceQuests"] = { 80678 },	-- Time Lost
+				["provider"] = { "n", 215527 },	-- Keyrra Flamestonge <Expedition Scout>
+				["coord"] = { 65.4, 32.2, HALLOWFALL },
+				["cost"] = {{"i", 219810, 1}},	-- 1x Broken Bracelet
+			}),
 			q(82835, {	-- Calcified Journal
 				["sourceQuests"] = { 82813 },	-- Time Borrowed
 				["provider"] = { "n", 222813 },	-- Lorel Ironglen
