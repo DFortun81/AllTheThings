@@ -1515,7 +1515,6 @@ root(ROOTS.Unsorted, {
 				i(212349),	-- Sizzling Spring Water [DNT][UNUSED]
 				i(212344),	-- Chest Key
 				i(212520),	-- Shadow-Tainted Tinderbox
-				i(212755),	-- Remnant Satchel
 				i(212882),	-- Glittering Ore
 				i(212494),	-- Squishy Bits [DNT]
 				i(212519),	-- Nebb's Key

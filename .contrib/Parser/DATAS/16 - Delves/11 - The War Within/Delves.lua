@@ -609,20 +609,20 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(TREASURES, {
-				--o(xx, {	-- Sturdy Chest // bugged/uninteractable?
-				--	["coord"] = { 49.8, 40.0, THE_SINKHOLE },
-				--	["questID"] = x,
-				--}),
+				o(454200, {	-- Sturdy Chest
+					["coord"] = { 52.3, 13.7, THE_SINKHOLE },
+					["questID"] = 83453,
+				}),
 				o(455513, {	-- Sturdy Chest
-					["coord"] = { 44.3, 69.9, THE_SINKHOLE },
+					["coord"] = { 43.5, 60.8, THE_SINKHOLE },
 					["questID"] = 83668,
 				}),
 				o(455525, {	-- Sturdy Chest
-					["coord"] = { 62.6, 70.3, THE_SINKHOLE },
+					["coord"] = { 72.6, 61.8, THE_SINKHOLE },
 					["questID"] = 83700,
 				}),
 				o(455491, {	-- Sturdy Chest
-					["coord"] = { 47.4, 75.4, THE_SINKHOLE },
+					["coord"] = { 48.5, 69.3, THE_SINKHOLE },
 					["questID"] = 83685,
 				}),
 			}),

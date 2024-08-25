@@ -46,7 +46,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["description"] = "Light's Blooming Keyflame",
 						["coord"] = { 63.4, 28.5, HALLOWFALL },
 						["g"] = {
-							i(217755),	-- Remnant Satchel (QI!)
+							o(421070, {	-- Remnant Satchel
+								i(212755),	-- Remnant Satchel (QI!)
+							}),
 						},
 					}),
 					q(79469, {	-- Lurking Below
