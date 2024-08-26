@@ -289,29 +289,28 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 43.3, 25.6, AZJ_KAHET },
 			}),
 			o(454320, {	-- Queen Anub'izek
-				["coord"] = { 37.1, 32.8, AZJ_KAHET },
+				["coord"] = { 37.1, 32.8, NERUBAR },
 			}),
 			o(454313, {	-- Queen Xekatha
-				["coord"] = { 38.3, 25.6, AZJ_KAHET },
+				["coord"] = { 38.3, 25.6, NERUBAR },
 			}),
 			o(454316, {	-- Queen Zaltra
-				["coord"] = { 38.4, 32.3, AZJ_KAHET },
+				["coord"] = { 38.4, 32.3, NERUBAR },
 			}),
 			o(454328, {	-- Strands of Memory
-				["coord"] = { 27.7, 54.6, AZJ_KAHET },
+				["coord"] = { 27.7, 54.6, NERUBAR },
 			}),
 			o(456928, {	-- Treatise on Forms: Ascended
-				["coord"] = { 78.0, 41.0, AZJ_KAHET },
+				["coord"] = { 78.0, 41.0, NERUBAR },
 			}),
 			o(456927, {	-- Treatise on Forms: Lords
-				["coord"] = { 23.6, 51.1, AZJ_KAHET },
+				["coord"] = { 23.6, 51.1, NERUBAR },
 			}),
 			o(454332, {	-- Treatise on Forms: Sages
-				-- TODO
-				--["coord"] = { X, Y, AZJ_KAHET },
+				["coord"] = { 38.2, 39.1, NERUBAR },
 			}),
 			o(454330, {	-- Treatise on Forms: Skitterlings
-				["coord"] = { 38.5, 37.7, AZJ_KAHET },
+				["coord"] = { 38.5, 37.7, NERUBAR },
 			}),
 			n(222634, {	-- Forgotten Shadecaster
 				["coord"] = { 58.7, 90.1, AZJ_KAHET },
