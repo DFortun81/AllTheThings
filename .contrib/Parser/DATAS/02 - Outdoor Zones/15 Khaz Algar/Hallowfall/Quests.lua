@@ -1052,7 +1052,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 43.1, 50.1, HALLOWFALL },
 				["cost"] = {{"i", 224274, 1}},	-- 1x Sturdy Locket
 			}),
-			q(80679, {	-- Tarnished Compass
+			q(80680, {	-- Tarnished Compass
 				["sourceQuests"] = { 80678 },	-- Time Lost
 				["provider"] = { "o", 439890 },	-- Grave Offering Location
 				["coord"] = { 43.5, 51.7, HALLOWFALL },

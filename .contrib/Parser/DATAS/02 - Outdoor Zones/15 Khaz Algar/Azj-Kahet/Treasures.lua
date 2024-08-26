@@ -261,7 +261,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			o(452708, {	-- "Weaving Supplies"  //user claims 452708 is right ID		
 				--["provider"] = { "o", 452708 },	-- "Weaving Supplies" // probably need to be switched with 446420
 				["questID"] = 82527,
-				["coord"] = { 77.3, 39.0, AZJ_KAHET },
+				["coord"] = { 78.6, 33.2, AZJ_KAHET },
 				["g"] = {
 					i(225347),	-- Web-Vandal's Spinning Wheel (TOY!)
 				},
