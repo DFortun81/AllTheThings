@@ -553,6 +553,7 @@ for key, value in pairs({
 		["The Shadowlands"] = "SL",
 		["Shadowlands"] = "SL",
 		["Dragonflight"] = "DF",
+		["The War Within"] = "TWW",
 		-- Dungeon&Raids
 		["Player vs Player"] = "PvP",
 		["Raid Finder"] = "LFR",
@@ -588,6 +589,9 @@ for key, value in pairs({
 		["Il'gynoth, The Heart of Corruption"] = "Il'gynoth",
 		-- SL
 		["Tazavesh, the Veiled Market"] = "Tazavesh",
+		-- TWW
+		["Ara-Kara, City of Echoes"] = "Ara-Kara",
+		["Sikran, Captain of the Sureki"] = "Sikran",
 		-- Outdoor Zones
 		["Quartermaster Miranda Breechlock"] = "Quartermaster Miranda",
 		["Season "] = "S",
