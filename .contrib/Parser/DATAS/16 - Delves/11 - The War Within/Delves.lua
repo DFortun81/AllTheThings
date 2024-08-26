@@ -310,9 +310,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
 				}),
 			}),
-			filter(TOYS, {
-				i(225556),	-- Ancient Construct (TOY!) [Might be from Only QuestID 83452]
-			}),
 			n(TREASURES, {
 				o(455516, {	-- Sturdy Chest
 					["coord"] = { 32.7, 74.2, FUNGAL_FOLLY },
@@ -329,6 +326,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				o(454093, {	-- Sturdy Chest
 					["coord"] = { 49.6, 35.7, FUNGAL_FOLLY },
 					["questID"] = 83452,
+					["g"] = {
+						i(225556),	-- Ancient Construct (TOY!) -- confirmed 2/2
+					},
 				}),
 				o(455496, {	-- Sturdy Chest
 					["coord"] = { 35.5, 20.1, FUNGAL_FOLLY },
@@ -1494,6 +1494,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(82944),	-- after Earthcrawl Mines
 	q(82941),	-- after Kriegval's Rest
 	q(82940),	-- after Mycomancer Cavern
+	q(82939),	-- after Fungal Folly
 	q(78508),	-- after Skittering Breach
 	-- Restored Coffer Key
 	q(84736, {["isWeekly"]=true,}),	-- Pop from any weekly activity, orders (of activity) doesn't matter

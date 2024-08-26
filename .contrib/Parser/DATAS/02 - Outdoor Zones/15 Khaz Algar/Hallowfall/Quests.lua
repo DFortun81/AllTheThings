@@ -749,7 +749,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(83497, {	-- A Concerned Friend
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 226708 },	-- Val Thalvassa
-					["coord"] = { 51.6, 54.2, DORNOGAL },
+					["coord"] = { 51.1, 46.0, DORNOGAL },
 					["isBreadcrumb"] = true,
 				}),
 				q(79165, {	-- A Moment To Rest
