@@ -292,7 +292,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 37.1, 32.8, NERUBAR },
 			}),
 			o(454313, {	-- Queen Xekatha
-				["coord"] = { 38.3, 25.6, NERUBAR },
+				["coord"] = { 38.3, 35.4, NERUBAR },
 			}),
 			o(454316, {	-- Queen Zaltra
 				["coord"] = { 38.4, 32.3, NERUBAR },
