@@ -568,6 +568,7 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 		local acctUnlocks = {
 			IsQuestFlaggedCompleted(72366) and "DF_CA" or "N",	-- Dragonflight Campaign Complete
 			IsQuestFlaggedCompleted(75658) and "DF_ZC" or "N",	-- Dragonflight Zaralek Caverns Complete
+			IsQuestFlaggedCompleted(79573) and "WW_CA" or "N",	-- The War Within Campaign Complete
 		}
 		tinsert(info, "unlocks:"..app.TableConcat(acctUnlocks, nil, nil, "|"))
 	end
