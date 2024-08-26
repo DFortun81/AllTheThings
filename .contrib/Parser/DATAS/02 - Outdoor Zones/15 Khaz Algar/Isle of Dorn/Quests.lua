@@ -560,7 +560,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["g"] = {
 						i(219961),	-- Fresh Mug of Cinderbrew Mead (QI!)
 						i(220115),	-- Loldren's Market Audit (QI!)
-						i(211863),	-- Sizzling Magma Core (QI!)
+						o(415584, {	-- Sizzling Magma Core
+							i(211863),	-- Sizzling Magma Core (QI!)
+						}),
 					},
 				}),
 				q(79176, {	-- Opals and Runes
@@ -660,7 +662,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 211740 },	-- Rooktender Lufsela
 					["coord"] = { 62.5, 29.3, ISLE_OF_DORN },
 					["g"] = {
-						i(210489),	-- Lodestone (QI!)
+						o(410459, {	-- Highlands Lodestone
+							i(210489),	-- Lodestone (QI!)
+						}),
 						i(211459),	-- Energized Lodestone (QI!)
 					},
 				}),
@@ -988,7 +992,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(80215, {	-- Ungirthin' the Earthen
 					["sourceQuests"] = { 80214 },	-- A Time to Kill at the Lumber Mill
-					["provider"] = { "n", 222356 },	-- Lamplighter Kaerter
+					["provider"] = { "n", 222360 },	-- Lamplighter Kaerter
 					["coord"] = { 67.0, 31.1, ISLE_OF_DORN },
 				}),
 				q(80216, {	-- Concealed in the Weald

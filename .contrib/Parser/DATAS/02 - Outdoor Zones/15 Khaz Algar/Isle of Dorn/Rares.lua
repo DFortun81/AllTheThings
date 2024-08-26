@@ -73,6 +73,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81899,
 				["g"] = {
 					i(221248),	-- Deep Terror Carver
+					i(221222),	-- Water-Imbued Spaulders
 				},
 			}),
 			n(222378, {	-- Kereke

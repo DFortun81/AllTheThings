@@ -853,7 +853,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 224741 },	-- Dolena
 					["coord"] = { 69.9, 32.6, HALLOWFALL },
 					["g"] = {
-						i(224395),	-- Secret Garlic (QI!)
+						o(451442, {	-- Secret Garlic
+							i(224395),	-- Secret Garlic (QI!)
+						}),
 					},
 				}),
 				q(82848, {	-- Sous

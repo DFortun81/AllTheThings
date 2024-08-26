@@ -341,7 +341,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				n(REWARDS, {
 					i(RADIANT_REMNANT),
 					i(226264),	-- Radiant Cache
-					i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
 					i(220756),	-- Flickering Torch
 					i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
 					i(228741, {	-- Lamplighter Supply Satchel
@@ -349,6 +348,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229085),	-- Aevery's Spare Bracers
 						i(229082),	-- Aevery's Spare Chausses
 						i(229081),	-- Aevery's Spare Cowl
+						i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
 						i(229155),	-- Lamplighter's Greataxe
 						i(229061),	-- Nisa's Spare Belt
 					}),

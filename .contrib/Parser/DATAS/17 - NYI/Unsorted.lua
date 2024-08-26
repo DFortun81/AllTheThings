@@ -532,7 +532,6 @@ root(ROOTS.Unsorted, {
 				}),
 				prof(INSCRIPTION, {
 					i(225338),	-- Glyph of Jab
-
 					i(222545),	-- Milling \\ Khaz Algar Milling
 					i(222108),	-- Khaz Algar Milling
 					i(219599),	-- Fortuitous Essence
@@ -575,7 +574,6 @@ root(ROOTS.Unsorted, {
 					i(222788),	-- Khaz Algar Unraveling
 					--------
 					r(446975),	-- Artisan Tailor's Coat
-
 					r(447001),	-- Daybreak Spellthread
 					r(447000),	-- Sunset Spellthread
 				}),
@@ -585,7 +583,6 @@ root(ROOTS.Unsorted, {
 				i(224782),	-- Razor Talon
 				i(225220),	-- Chitin Needle
 				i(225221),	-- Spool of Webweave
-
 				i(225224),	-- Diaphanous Gem Shards
 				i(225225),	-- Deepstone Fragment
 				i(225226),	-- Striated Inkstone
@@ -593,50 +590,25 @@ root(ROOTS.Unsorted, {
 				i(225228),	-- Rust-Locked Mechanism
 				i(225229),	-- Earthen Induction Coil
 				i(225230),	-- Crystalline Repository
-
 				i(225232),	-- Coreway Billet
 				i(225233),	-- Dense Bladestone
-
-
-
-
-
-
-
-
 				i(226279),	-- Earthen Chisels
 				i(226280),	-- Holy Flame Forge
 				i(226281),	-- Radiant Tongs
 				i(226282),	-- Nerubian Smith's Kit
 				i(226283),	-- Spiderling's Wire Brush
-
-
-
-
-
 				i(226308),	-- Dornogal Scribe's Quill
 				i(226309),	-- Historian's Dip Pen
 				i(226310),	-- Runic Scroll
 				i(226311),	-- Blue Earthen Pigment
-
 				i(226313),	-- Calligrapher's Chiseled Marker
 				i(226314),	-- Nerubian Texts
 				i(226315),	-- Venomancer's Ink Well
 				i(226316),	-- Gentle Jewel Hammer
-
-
-
 				i(226320),	-- Arathi Sizing Gauges
-
 				i(226322),	-- Ritual Caster's Crystal
 				i(226323),	-- Nerubian Bench Blocks
-
-
-
 				i(226346),	-- Nerubian's Slicking Iron
-
-
-				i(226352),	-- Arathi Rotary Cutter
 				i(226354),	-- Nerubian Quilt
 				i(226355),	-- Nerubian's Pincushion
 				i(224780),	-- Toughened Tempest Pelt
@@ -646,9 +618,6 @@ root(ROOTS.Unsorted, {
 				i(227667),	-- Algari Enchanter's Folio
 			}),
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
-
-
-
 				--
 				i(212390),	-- 11.0 Raid Template - Guns - RangedRight
 				i(212393),	-- 11.0 Raid Template - Polearms - Int - 2 Hand
@@ -662,12 +631,7 @@ root(ROOTS.Unsorted, {
 				i(212412),	-- 11.0 Raid Template - Wand - RangedRight
 				i(212455),	-- 11.0 Raid Template - Physical DPS - Trinket
 				i(212457),	-- 11.0 Raid Template - INT - Trinket
-
-
-
-
 				i(225726),	-- 11.0 Raid Template - Plate - Waist
-
 				i(225736),	-- 11.0 Raid Template - Plate - Head
 				i(225737),	-- 11.0 Raid Template - Plate - Feet
 
@@ -722,8 +686,6 @@ root(ROOTS.Unsorted, {
 				i(225683),	-- Grasping Necrotic Relic
 				i(225684),	-- Relicblood of Zekvir
 				i(225685),	-- Relic of Sentience
-
-
 				i(225901),	-- Streamlined Relic \\ Power Idol
 				i(225908),	-- Relicblood of Zekvir
 			}),
@@ -740,12 +702,6 @@ root(ROOTS.Unsorted, {
 				i(212168),	-- Cinderbee Wax Candle Hat \\ Cultlight Kobold Helm [PH]
 				i(212169),	-- Mint-Scented Candle Hat \\ Candelabra Kobold Helm [PH]
 				i(212170),	-- Bronzebeard's Spare Hat \\ Bronzebeard Hat [PH]
-
-
-
-
-
-
 				i(218911),	-- [DNT] EarthenCivilian Robe Copper
 				i(218912),	-- [DNT] EarthenCivilian Robe Dark
 				i(218913),	-- [DNT] EarthenCivilian Robe Gold
@@ -788,23 +744,15 @@ root(ROOTS.Unsorted, {
 				i(219098),	-- [DNT] Ensemble: CivilianAdventurer
 				i(219099),	-- [DNT] Ensemble: CivilianAdventurer
 
-
-
-
 				-- Cosmetic
 				i(224165),	-- Dornogal Tabard \\ Gilded Earthen Tabard \\ [PH] Earthen Tabard
 				i(224167),	-- Gundargaz Tabard \\ Dark Earthen Tabard \\ [PH] Earthen Tabard
 				i(224168),	-- Stonebound Tabard \\ Silver Earthen Tabard \\ [PH] Earthen Tabard
 				i(224169),	-- Freywold Tabard \\ Sage Earthen Tabard \\ [PH] Earthen Tabard
-
-
 				i(225752),	-- Dornogal Defender
-
 				i(225756),	-- Coreway Shovel
 				i(225757),	-- Coreway Pickaxe
-
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
-
 				i(225974),	-- Swabbie's Cap \\ Teal Beanie
 				i(225975),	-- Alchemist's Bandolier
 				i(225976),	-- Fine Gloves of the Forest
@@ -819,7 +767,6 @@ root(ROOTS.Unsorted, {
 				i(225992),	-- Plunderlord's Radiant Neck-Severer
 				i(225993),	-- Cursed Copper Crossbow
 				i(225994),	-- Simple Copper Staff
-
 				i(225997),	-- Earthen Adventurer's Spaulders
 				i(225998),	-- Earthen Adventurer's Cloak
 				i(225999),	-- Earthen Adventurer's Tabard
@@ -895,7 +842,6 @@ root(ROOTS.Unsorted, {
 				i(226690),	-- Patched Harvest Golem's Head
 				i(226691),	-- Battered Harvest Golem's Head
 				i(226693),	-- Ragged Harvest Golem's Head
-
 				i(227287),	-- Skovald's Resolve
 				i(227294),	-- Ravencrest's Wrath
 				i(227795),	-- Homebrewer's Sampling Mantle
@@ -1190,32 +1136,22 @@ root(ROOTS.Unsorted, {
 				i(224170),	-- Wildercloth Fishing Cap
 				i(224171),	-- Master's Wildercloth Fishing Cap
 				-- Armor
-
-
 				i(225509),	-- [PH] Armor Vestment
 				i(225510),	-- [PH] Armor Sandals
 				i(225511),	-- [PH] Armor Handwraps
 				i(225512),	-- [PH] Armor Cowl
-
-
 				i(225517),	-- [PH] Armor Grips
 				i(225518),	-- [PH] Armor Helm
 				i(225519),	-- [PH] Armor Breeches
 				i(225522),	-- [PH] Armor Chainmail
-
-
 				i(225525),	-- [PH] Armor Coif
-
 				i(225527),	-- [PH] Armor Shoulderguards
 				i(225528),	-- [PH] Armor Cinch
-
 				i(225531),	-- [PH] Armor Breastplate
 				i(225532),	-- [PH] Armor Sabatons
 				i(225534),	-- [PH] Armor Legguards
 				i(225536),	-- [PH] Armor Girdle
-
 				i(225539),	-- [PH] Armor Epaulets
-
 				i(219942),	-- 11.0 Stalwart's Sandals
 				i(220157),	-- Empowered Tinderbox
 				i(220158),	-- Darkened Tinderbox
@@ -1251,7 +1187,6 @@ root(ROOTS.Unsorted, {
 				i(210697),	-- Luckstone
 				i(211348),	-- Awkward Potion
 				i(211349),	-- Mundane Potion
-
 				i(211529),	-- Test Big Bag (DNT)
 				i(212340),	-- Strange Jar
 				i(212385),	-- Moira's Healing Surge TO DEPRECATE
@@ -1302,7 +1237,6 @@ root(ROOTS.Unsorted, {
 				i(220124),	-- Jar of Mucus
 				i(220156),	-- Bubbling Wax
 				i(220220),	-- Ornate Pipe
-
 				i(220225),	-- Tattered Standard
 				i(220233),	-- Extinguished Icon
 				i(220235),	-- Electrified Teeth
@@ -1319,11 +1253,7 @@ root(ROOTS.Unsorted, {
 				i(220286),	-- Tarnished Medallion
 				i(220298),	-- Melted Candle Stump
 				i(220303),	-- Decayed Flesh
-
-
-
 				i(220340),	-- Meatball Cluster
-
 				i(220342),	-- Spiced Stock
 				i(220377),	-- Growing Void Mass
 				i(220438),	-- Root-Staff Splinter
@@ -1337,7 +1267,6 @@ root(ROOTS.Unsorted, {
 				i(220447),	-- Broken Trident Prong
 				i(220448),	-- Cerulean Orb
 				i(220484),	-- Bowl of Pulsing Goo
-
 				i(220486),	-- Collection of Shiny Shells
 				i(220491),	-- Wicked Blade Shard
 				i(220770),	-- Void-Scarred Stormhammer
@@ -1349,7 +1278,6 @@ root(ROOTS.Unsorted, {
 				i(218123),	-- Glowing Shard
 				i(218122),	-- Stolen Relic \\ Stolen Shard
 				i(218340),	-- Chest of Playtest Equipment
-
 				i(219255),	-- Puntable Rotten Little Helper
 				i(219286),	-- Puntable Globe Yeti
 				i(219289),	-- Puntable Tiny Snowman
@@ -1359,31 +1287,21 @@ root(ROOTS.Unsorted, {
 				i(223806),	-- Bag Test B
 				i(223869),	-- DO NOT USE Prismatic Codex
 				i(223897),	-- Ruptured Engine \\ Ruptered Engine
-
 				i(224269),	-- [DNT] 11.0 Food/Drink Template - Food Only - Level 75 - Required Level 70
 				i(224767),	-- Giant Candle Parts
 				i(224786),	-- Skeleton King Outfit
 				i(224791),	-- Golden Lord Outfit \\ Golden Ruler Outfit
 				i(224792),	-- Sanguine Aristocrat Outfit
-
 				i(224913),	-- Radiant Fuel Cache
 				i(224941),	-- Radiant Fuel Cache
 				i(225240),	-- PH_1
 				i(225239),	-- Overflowing Council of Dornogal Trove
-
-
 				i(225245),	-- Overflowing Trove of the Deeps
 				i(225246),	-- Overflowing Hallowfall Trove
 				i(225247),	-- Overflowing Severed Threads Trove
 				i(225365),	-- PH_3
 				i(225541),	-- PH_4
 				i(225553),	-- PH_5
-
-
-
-
-
-
 				i(225570),	-- Algari Fowlfeather
 				i(225640),	-- Abyssal Lure
 				i(225786),	-- Chitin Stress Ball
@@ -1468,16 +1386,10 @@ root(ROOTS.Unsorted, {
 				i(228193),	-- Chipped Demon's Blade
 				i(228194),	-- Fully Scrapped Scrap
 				i(228195),	-- Tattered Goblin Cap
-
 				i(228391),	-- Right Boot
-
-
 				i(228415),	-- Adelgonn's Journal
 				i(228416),	-- Steelvein's Manifesto
 				i(228429),	-- Reflective Rock
-
-
-
 				i(228449),	-- Tasty Iron Bar
 				i(228450),	-- Edible Copper Nuggets
 				i(228451),	-- Scrumptious Gold Bar
@@ -1487,7 +1399,6 @@ root(ROOTS.Unsorted, {
 			f(QUEST_ITEMS, {
 				i(206348),	-- Fragmented Flame
 				i(206349),	-- Fragmented Reagent
-
 				i(208948),	-- [DNT] Club Chest Key \\ Club Chest Key
 				i(208957),	-- Conduit of the Southern Storm
 				i(209857),	-- Unusual Seeds
@@ -1497,7 +1408,6 @@ root(ROOTS.Unsorted, {
 				i(211304),	-- Bone Key
 				i(211407),	-- The Book of Bob
 				i(211469),	-- Squash Hook
-
 				i(211481),	-- Stomping Shoes \\ Stompin' Shoes
 				i(211797),	-- Expedition Map
 				i(211929),	-- Ichor Coated Debris
@@ -1505,14 +1415,6 @@ root(ROOTS.Unsorted, {
 				i(211960),	-- Game Piece
 				i(211961),	-- Rocket-Powered Impact Wrench
 				i(211963),	-- Ceiling Sweeper
-
-
-
-
-
-
-
-
 				i(212223),	-- Elemental Essence
 				i(212224),	-- Titan Relics
 				i(212349),	-- Sizzling Spring Water [DNT][UNUSED]
@@ -1534,7 +1436,6 @@ root(ROOTS.Unsorted, {
 				i(213425),	-- Shredded Reins
 				i(213538),	-- Wood-Worm Tonic \\ Wood-Worm Liqueur \\ Necrotic Dart
 				i(213557),	-- Lost Journal Tablet
-
 				i(216605),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
 				i(216682),	-- The Vizier's Invitation
 				i(216683),	-- Earthen Rifle
@@ -1589,7 +1490,6 @@ root(ROOTS.Unsorted, {
 				i(224016),	-- Signet of the Skeinspiner
 				i(224180),	-- Worn Journal
 				i(224182),	-- Webbed Ingots
-
 				i(224252),	-- Calcified Journal
 				i(224457),	-- Lil Piggy
 				i(224460),	-- The Lost Diary
@@ -1602,12 +1502,9 @@ root(ROOTS.Unsorted, {
 				i(224777),	-- Sureki Shadecaster
 				i(224810),	-- Woodworm Elixir
 				i(225336),	-- A Lost Shoe
-
 				i(225339),	-- Chicken Eggs
 				i(225887),	-- Titan Emitter \\ The Archaedas Conundrum
-
 				i(225927),	-- Emerald Necklace
-
 				i(228378),	-- Pristine Council's Seal
 			}),
 			n(WEAPONS, {
@@ -1621,7 +1518,6 @@ root(ROOTS.Unsorted, {
 				i(219782),	-- 11.0 Leveling Quest Template - Sword1H - Int
 				i(219791),	-- 11.0 Leveling Quest Template - Mace1H - Int
 				i(219793),	-- 11.0 Leveling Quest Template - Axe 1H - Agi
-
 				i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
 				i(226111),	-- Arakkoan Ritual Staff
 				i(226113),	-- Kereke's Flourishing Sabre
@@ -1725,8 +1621,6 @@ root(ROOTS.Unsorted, {
 				i(221093),	-- Deeply Corrupted Coil
 				i(221209),	-- Flame Trader's Gloves
 				i(221210),	-- Grips of the Earth
-				i(221222),	-- Water-Imbued Spaulders
-
 				i(221230),	-- Storm Bindings
 				i(221231),	-- Steam-Powered Wristwatch
 				i(221232),	-- Polished Goblin Bling
@@ -1739,21 +1633,16 @@ root(ROOTS.Unsorted, {
 				i(221251),	-- Bestial Underground Cleaver
 				i(221253),	-- Cultivator's Plant Puncher
 				i(221254),	-- Earthshatter Lance
-
 				i(221505),	-- [DNT] Rare Cloth - Robe
 				i(223005),	-- String of Fungal Fruits
 				i(223915),	-- Nerubian Orator's Stiletto
 				i(223916),	-- Nerubian Cutthroat's Reach
 				i(223917),	-- Nerubian Covert's Cloak
 				i(223918),	-- Specter Stalker's Shotgun
-
 				i(223921),	-- Ever-Oozing Signet
 				i(223922),	-- Cinder Pollen Cloak
 				i(223926),	-- Earthgorger's Chain Bib
-
 				i(223930),	-- Monstrous Chain Pincers
-
-
 				i(223935),	-- Cabbage Harvester's Pantaloons
 				i(223936),	-- Shadow Bog Trousers
 				i(223937),	-- Honey Deliverer's Leggings
@@ -2132,7 +2021,6 @@ root(ROOTS.Unsorted, {
 			i(223033),	-- Technique: Patient Alchemist's Mixing Rod
 			i(223034),	-- Technique: Inscribed Rolling Pin
 			i(223056),	-- Plans: Webbed Fishing Line
-
 			i(225256),	-- PH_2
 			--
 			-- Orphaned due to removal of "Awakening the Machine: Wave <x>" achievements

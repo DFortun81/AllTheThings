@@ -866,6 +866,13 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			}),
 		})),
 		n(TREASURES, {
+			o(455941, {	-- Arathi Rotary Cutter
+				["coord"] = { 49.2, 62.3, HALLOWFALL },
+				["questID"] = 83926,
+				["g"] = {
+					i(226352),	-- Arathi Rotary Cutter
+				},
+			}),
 			o(455945, {	-- Dornogal Seam Ripper
 				["coord"] = { 61.4, 18.6, DORNOGAL },
 				["questID"] = 83922,

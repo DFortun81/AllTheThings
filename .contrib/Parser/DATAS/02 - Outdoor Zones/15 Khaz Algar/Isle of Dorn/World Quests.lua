@@ -31,7 +31,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81465, {	-- Artifacts Galore
 					["coord"] = { 78.4, 26.7, ISLE_OF_DORN },
 					["g"] = {
-						i(218454),	-- Titan Artifact (QI!)
+						o(437195, {	-- Titan Artifacts
+							i(218454),	-- Titan Artifact (QI!)
+						}),
 					},
 				}),
 				q(82448, {	-- Book It to the Library

@@ -1,0 +1,63 @@
+﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	[415584] = {
+		readable = "Sizzling Magma Core",
+		model = 4508235,
+		text = {
+			en = "Sizzling Magma Core",
+			es = "Núcleo de arrabio crepitante",
+			de = "Zischender Magmakern",
+			fr = "Cœur de magma crépitant",
+			it = "Nucleo di Magma Sfrigolante",
+			pt = "Núcleo de Magma Fervilhando",
+			ru = "Шипящее магматическое ядро",
+			ko = "지글거리는 용암 핵",
+			cn = "灼热的岩浆核心",
+		},
+	},
+	[437195] = {
+		readable = "Titan Artifacts",
+		model = 4609985,
+		text = {
+			en = "Titan Artifacts",
+			es = "[Titan Artifacts]",
+			de = "[Titan Artifacts]",
+			fr = "[Titan Artifacts]",
+			it = "[Titan Artifacts]",
+			pt = "[Titan Artifacts]",
+			ru = "[Titan Artifacts]",
+			ko = "[Titan Artifacts]",
+			cn = "[Titan Artifacts]",
+		},
+	},
+	[451442] = {
+		readable = "Secret Garlic",
+		model = 631725,
+		text = {
+			en = "Secret Garlic",
+			es = "Secret Garlic",
+			de = "Secret Garlic",
+			fr = "Ail secret",
+			it = "Secret Garlic",
+			pt = "Alho Secreto",
+			ru = "Secret Garlic",
+			ko = "Secret Garlic",
+			cn = "Secret Garlic",
+		},
+	},
+	[455941] = {
+		readable = "Arathi Rotary Cutter",
+		model = 5546875,
+		text = {
+			en = "Arathi Rotary Cutter",
+			es = "Arathi Rotary Cutter",
+			de = "Rollschneider der Arathi",
+			fr = "Arathi Rotary Cutter",
+			it = "Arathi Rotary Cutter",
+			pt = "Arathi Rotary Cutter",
+			ru = "Arathi Rotary Cutter",
+			ko = "Arathi Rotary Cutter",
+			cn = "Arathi Rotary Cutter",
+		},
+	},
+})
+do ObjectDB[objectID] = objectData; end
