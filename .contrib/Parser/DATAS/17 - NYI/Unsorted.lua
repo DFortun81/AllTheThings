@@ -1785,7 +1785,6 @@ root(ROOTS.Unsorted, {
 				i(223877),	-- Algari Hatchet
 				i(224454),	-- City Guard's Mask \\ Dalaran Hood
 				i(228436),	-- United Arathi's Jerkin
-				i(228437),	-- Salamanther-Scale Greaves
 				i(228439),	-- Mitts of Menial Tasks
 				i(228440),	-- Chitin-Laced Shoulderguards
 				i(228441),	-- Overseer's Oversized Clasp

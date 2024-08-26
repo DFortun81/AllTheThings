@@ -919,6 +919,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(225179),	-- Salamanther Heart (QI!)
 						i(228438),	-- Derill's Unused Visor
 						i(228435),	-- Wine-Dyed Leggings
+						i(228437),	-- Salamanther-Scale Greaves
 					},
 				}),
 				q(83279),	-- Prove One's Mettle

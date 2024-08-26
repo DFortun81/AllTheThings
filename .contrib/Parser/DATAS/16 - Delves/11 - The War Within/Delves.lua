@@ -1502,4 +1502,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(84739, {["isWeekly"]=true,}),	--
 	-- Seasonal Rewards
 	q(83235),	-- Season 1: 1/10 reward progress (spellID 454473 - Airship: Wings 05 - Lantern Wing)
+	-- Achievements
+	q(82943),	-- Delve Deep (40460) completed
 });
