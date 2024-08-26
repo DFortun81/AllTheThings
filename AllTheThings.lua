@@ -49,6 +49,7 @@ local GetAchievementInfo = _G.GetAchievementInfo;
 local GetAchievementLink = _G.GetAchievementLink;
 local InCombatLockdown = _G.InCombatLockdown;
 local GetTimePreciseSec = GetTimePreciseSec
+local IsInInstance = IsInInstance
 
 -- WoW API Cache
 local GetFactionName = app.WOWAPI.GetFactionName;
@@ -10469,7 +10470,6 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		self.initialized = true;
 		self.CurrentMaps = {};
 		self.mapID = -1;
-		local IsInInstance = IsInInstance
 		self.IsSameMapID = function(self)
 			return self.CurrentMaps[self.mapID];
 		end
@@ -10536,7 +10536,50 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 		};
 		-- Headers possible in a hierarchy that should just be ignored
 		local ignoredHeaders = app.HeaderData.IGNOREINMINILIST or app.EmptyTable;
-		-- self.Rebuild
+
+		local function BuildDiscordMapInfoTable(id, mapInfo)
+			-- Builds a table to be used in the SetupReportDialog to display text which is copied into Discord for player reports
+			mapInfo = mapInfo or C_Map_GetMapInfo(id)
+			local info = {
+				"### missing-map"..":"..id,
+				"```elixir",	-- discord fancy box start
+				"L:"..app.Level.." R:"..app.RaceID.." ("..app.Race..") C:"..app.ClassIndex.." ("..app.Class..")",
+				id and ("mapID:"..id.." ("..(mapInfo.name or ("Map ID #" .. id))..")") or "mapID:??",
+			};
+
+			local mapID = mapInfo.parentMapID
+			while mapID do
+				mapInfo = C_Map_GetMapInfo(mapID)
+				if mapInfo then
+					tinsert(info, "> parentMapID:"..mapID.." ("..(mapInfo.name or "??")..")")
+					mapID = mapInfo.parentMapID;
+				else break
+				end
+			end
+
+			local position, coord = id and C_Map.GetPlayerMapPosition(id, "player"), nil;
+			if position then
+				local x,y = position:GetXY();
+				coord = (math_floor(x * 1000) / 10) .. ", " .. (math_floor(y * 1000) / 10);
+			end
+			tinsert(info, coord and ("coord:"..coord) or "coord:??");
+
+			if app.GameBuildVersion >= 100000 then	-- Only include this after Dragonflight
+				local acctUnlocks = {
+					IsQuestFlaggedCompleted(72366) and "DF_CA" or "N",	-- Dragonflight Campaign Complete
+					IsQuestFlaggedCompleted(75658) and "DF_ZC" or "N",	-- Dragonflight Zaralek Caverns Complete
+					IsQuestFlaggedCompleted(79573) and "WW_CA" or "N",	-- The War Within Campaign Complete
+				}
+				tinsert(info, "unlocks:"..app.TableConcat(acctUnlocks, nil, nil, "/"))
+			end
+			tinsert(info, "lq:"..(app.TableConcat(app.MostRecentQuestTurnIns or app.EmptyTable, nil, nil, "<") or ""));
+
+			tinsert(info, "ver:"..app.Version);
+			tinsert(info, "build:"..app.GameBuildVersion);
+			tinsert(info, "```");	-- discord fancy box end
+			return info
+		end
+
 		(function()
 		local results, groups, nested, header, headerKeys, difficultyID, topHeader, nextParent, headerID, groupKey, typeHeaderID, isInInstance;
 		local rootGroups, mapGroups = {}, {};
@@ -10772,22 +10815,12 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 				self.CurrentMaps = {[mapID]=true};
 				local mapInfo = C_Map_GetMapInfo(mapID);
 				if mapInfo then
-					local mapPath = mapInfo.name or ("Map ID #" .. mapID);
-					mapID = mapInfo.parentMapID;
-					while mapID do
-						mapInfo = C_Map_GetMapInfo(mapID);
-						if mapInfo then
-							mapPath = (mapInfo.name or ("Map ID #" .. mapID)) .. " -> " .. mapPath;
-							mapID = mapInfo.parentMapID;
-						else
-							break;
-						end
-					end
 					-- only report for mapIDs which actually exist
 					mapID = self.mapID
-					print("No data found for this Location ", app.GetMapName(mapID), " [", mapID, "]");
-					print("Path: ", mapPath);
-					app.report();
+					-- Linkify the output
+					local popupID = "map-" .. mapID
+					app:SetupReportDialog(popupID, "Missing Map: " .. mapID, BuildDiscordMapInfoTable(mapID, mapInfo))
+					app.report(app:Linkify(app.Version.." (Click to Report) No data found for this Location!", app.Colors.ChatLinkError, "dialog:" .. popupID));
 				end
 				self:SetData(app.CreateMap(mapID, {
 					["text"] = L.MINI_LIST .. " [" .. mapID .. "]",
