@@ -227,6 +227,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			-- Achievement
 			n(226638, {	-- Abyssal Console
 				["coord"] = { 59.0, 93.4, THE_RINGING_DEEPS },
+				["questID"] = 83479,
 			}),
 			n(226642, {	-- Earthen Console
 				["coord"] = { 46.2, 14.0, THE_RINGING_DEEPS },
@@ -238,9 +239,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(226640, {	-- Obsidian Console
 				["coord"] = { 69.0, 48.8, THE_RINGING_DEEPS },
+				["questID"] = 83481,
 			}),
 			n(226639, {	-- Taelloch Console
 				["coord"] = { 63.6, 61.0, THE_RINGING_DEEPS },
+				["questID"] = 83480,
 			}),
 			n(226624, {	-- Water Console
 				["coord"] = { 45.2, 46.4, THE_RINGING_DEEPS },

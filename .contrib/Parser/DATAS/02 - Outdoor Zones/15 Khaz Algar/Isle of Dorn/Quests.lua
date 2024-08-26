@@ -442,8 +442,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 20595.01, {	-- Spores of Dread
 				q(78570, {	-- Frayed Legacy
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
-					["provider"] = { "n", 212708 },	-- Frysworn Cruton
-					["coord"] = { 38.9, 76.6, ISLE_OF_DORN },
+					["provider"] = { "n", 212708 },	-- Freysworn Cruton
+					["coord"] = { 41.6, 71.3, ISLE_OF_DORN },
 					["isBreadcrumb"] = true,
 				}),
 				q(78571, {	-- Mycomayhem

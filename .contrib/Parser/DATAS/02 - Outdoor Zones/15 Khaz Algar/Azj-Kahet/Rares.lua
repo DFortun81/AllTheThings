@@ -143,6 +143,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 82289,
 				["coord"] = { 62.8, 66.7, AZJ_KAHET },
 				["g"] = {
+					i(221252),	-- Nerubian Slayer's Claymore
 					i(221263),	-- Nerubian Venom-Tipped Dart
 					i(225952),	-- Vial of Tka'ktath's Blood (QS!)
 				},

@@ -285,6 +285,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					n(221179, {	-- Duskshadow
 						["coord"] = { 64.1, 19.5, HALLOWFALL },
 						["questID"] = 82562,
+						["g"] = {
+							i(223936),	-- Shadow Bog Trousers
+						},
 					}),
 					n(207780, {	-- Finclaw Bloodtide
 						["provider"] = { "n", 220492 },	-- Finclaw Bloodtide
@@ -334,6 +337,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 66.7, 24.1, HALLOWFALL },
 						["questID"] = 82561,
 						["g"] = {
+							i(223920),	-- Slime Deflecting Stopper
 							i(223933),	-- Slime Goliath's Cap
 						},
 					}),
@@ -351,6 +355,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
 						i(229155),	-- Lamplighter's Greataxe
 						i(229061),	-- Nisa's Spare Belt
+						i(229122),	-- Warstone's Gauntlets
 					}),
 					i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
 					i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
@@ -538,6 +543,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 65.8, 24.4, HALLOWFALL },
 						["g"] = {
 							i(218107, {	-- Sparkbug Jar
+								["description"] = "Use this then walk along the river near Stillstone Pond. With time Sparkbugs will appear next to you and randomly may be interactable, granting the pet.",
 								["cost"] = {{"i", RADIANT_REMNANT, 2}},
 							}),
 							i(218106, {	-- Stillstone Frog Trap

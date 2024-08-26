@@ -140,7 +140,6 @@ root(ROOTS.Unsorted, {
 			i(229119),	-- Flamestonge's Bracers
 			i(229120),	-- Warstone's Breastplate
 			i(229121),	-- Warstone's Sabatons
-			i(229122),	-- Warstone's Gauntlets
 			i(229123),	-- Warstone's Helm
 			i(229124),	-- Warstone's Legguards
 			i(229125),	-- Warstone's Mantle
@@ -1644,7 +1643,6 @@ root(ROOTS.Unsorted, {
 				i(223926),	-- Earthgorger's Chain Bib
 				i(223930),	-- Monstrous Chain Pincers
 				i(223935),	-- Cabbage Harvester's Pantaloons
-				i(223936),	-- Shadow Bog Trousers
 				i(223937),	-- Honey Deliverer's Leggings
 				i(223938),	-- Marsh Hopper's Spaulders
 				i(223939),	-- Esteemed Nerubian's Mantle
@@ -1692,7 +1690,6 @@ root(ROOTS.Unsorted, {
 				i(225209),	-- Sacred Flame Prayers
 				i(225210),	-- Priory Theses
 				i(225211),	-- Airship Operations Manual
-				i(225213),	-- Sky-Captain Lancekat's Curse
 				i(225214),	-- List of Activities
 			}),
 			cl(MAGE, {
