@@ -129,10 +129,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	q(84631),	-- Wave 5
-	q(84632),	-- Wave 10
-	q(84633),	-- Wave 15
-	q(84634),	-- Wave 20
-}));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	n(THE_ASSEMBLY_OF_THE_DEEPS, {
+		n(AWAKENING_THE_MACHINE, {
+			q(84631),	-- Wave 5
+			q(84632),	-- Wave 10
+			q(84633),	-- Wave 15
+			q(84634),	-- Wave 20
+		}),
+	}),
+})));

@@ -226,14 +226,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
-	m(ISLE_OF_DORN, {
-		q(82227),	-- Extra HQT: Magical Treasure Chest
-		q(82253),	-- Extra HQT: Mushroom Cap
-		q(82251),	-- Extra HQT: Mosswool Flower
-		q(82252),	-- Completed with Quest 83244 (Mysterious Orb)
-		q(79585),	-- Dalaran Sewer Turtle: Needs more time
-		q(82160),	-- Gathered all the Pearlescent Shellcrab.
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	m(KHAZ_ALGAR, {
+		m(ISLE_OF_DORN, {
+			q(82227),	-- Extra HQT: Magical Treasure Chest
+			q(82253),	-- Extra HQT: Mushroom Cap
+			q(82251),	-- Extra HQT: Mosswool Flower
+			q(82252),	-- Completed with Quest 83244 (Mysterious Orb)
+			q(79585),	-- Dalaran Sewer Turtle: Needs more time
+			q(82160),	-- Gathered all the Pearlescent Shellcrab.
+		}),
 	}),
-}));
+})));

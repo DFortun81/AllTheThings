@@ -2068,30 +2068,27 @@ root(ROOTS.HiddenQuestTriggers, {
 	------------------
 	--     TWW      --
 	------------------
-	expansion(EXPANSION.TWW, {
-		-- Craftable / Contracts
-		q(84482),	-- Contract: Assembly of the Deeps (spellID 454936)
-		q(84473),	-- Contract: Council of Dornogal (spellID 454931)
-		q(84479),	-- Contract: Hallowfall Arathi (spellID 454937)
-		q(84478),	-- Contract: The Severed Threads (spellID 454940)
-		-- Craftable / Sparks? (TODO: PH move to whatever place is better)
-		q(83280, {["isWeekly"]=true,}),	-- Fractured Spark of Omens
-		q(83281, {["isWeekly"]=true,}),	-- Fractured Spark of Omens
-		-- PVP
-		q(80415, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
-		q(80416, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
-		-- Special Assigment unlock tracker
-		q(82159, {["repeatable"]=true,}),	-- Special Assignment: A Pound of Cure (but it is Bombs from Behind?)
-		q(82161, {["repeatable"]=true,}),	-- Special Assignment: Bombs from Behind
-		q(82146, {["repeatable"]=true,}),	-- Special Assignment: Cinderbree Surge
-		q(82158, {["repeatable"]=true,}),	-- Special Assignment: Lynx Rescue
-		q(82157, {["repeatable"]=true,}),	-- Special Assignment: Rise of the Colossals
-		q(82155, {["repeatable"]=true,}),	-- Special Assignment: Shadows Below
-		q(82154, {["repeatable"]=true,}),	-- Special Assignment: Titanic Resurgence
-		q(83069, {["repeatable"]=true,}),	-- Special Assignment: Titanic Resurgence (bugged)
-		q(83070, {["repeatable"]=true,}),	-- Special Assignment: Titanic Resurgence
-		q(82156, {["repeatable"]=true,}),	-- Special Assignment: When the Deeps Stir
-	}),
+	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+		n(PVP, {
+			q(80415, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
+			q(80416, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
+		}),
+		m(KHAZ_ALGAR, {
+			-- Special Assigment unlock tracker
+			n(WORLD_QUESTS, {
+				q(82159, {["repeatable"]=true,}),	-- Special Assignment: A Pound of Cure (but it is Bombs from Behind?)
+				q(82161, {["repeatable"]=true,}),	-- Special Assignment: Bombs from Behind
+				q(82146, {["repeatable"]=true,}),	-- Special Assignment: Cinderbree Surge
+				q(82158, {["repeatable"]=true,}),	-- Special Assignment: Lynx Rescue
+				q(82157, {["repeatable"]=true,}),	-- Special Assignment: Rise of the Colossals
+				q(82155, {["repeatable"]=true,}),	-- Special Assignment: Shadows Below
+				q(82154, {["repeatable"]=true,}),	-- Special Assignment: Titanic Resurgence
+				q(83069, {["repeatable"]=true,}),	-- Special Assignment: Titanic Resurgence (bugged)
+				q(83070, {["repeatable"]=true,}),	-- Special Assignment: Titanic Resurgence
+				q(82156, {["repeatable"]=true,}),	-- Special Assignment: When the Deeps Stir
+			}),
+		}),
+	})),
 
 	--------------------
 	--   NYI QUESTS   --

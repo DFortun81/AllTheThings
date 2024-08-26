@@ -4,7 +4,6 @@
 local function bo(questID, isDaily)
     return { ["questID"] = questID, ["isDaily"] = isDaily };
 end
-
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(ISLE_OF_DORN, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
@@ -216,22 +215,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		})),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, m(KHAZ_ALGAR, {
-	m(ISLE_OF_DORN, {
-		q(84036),	-- Extra HQT: Clawbreaker K'zithix
-		q(84029),	-- Extra HQT: Escaped Cutthroat
-		q(84034),	-- Extra HQT: Flamekeeper Graz
-		q(84028),	-- Extra HQT: Gar'loc
-		q(84031),	-- Extra HQT: Kronolith, Might of the Mountain
-		q(84039),	-- Extra HQT: Matriarch Charfuria
-		q(84026),	-- Extra HQT: Plaguehart
-		q(85161),	-- Extra HQT: Rotfist
-		q(84032),	-- Extra HQT: Shallowshell the Clacker
-		q(84038),	-- Extra HQT: Sweetspark the Oozeful
-		q(84030),	-- Extra HQT: Tempest Lord Incarnus
-		q(84037),	-- Extra HQT: Tephratennae
-		q(84033),	-- Extra HQT: Twice-Stinger the Wretched
-		q(85159),	-- Extra HQT: Zovex
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	m(KHAZ_ALGAR, {
+		m(ISLE_OF_DORN, {
+			q(84036),	-- Extra HQT: Clawbreaker K'zithix
+			q(84029),	-- Extra HQT: Escaped Cutthroat
+			q(84034),	-- Extra HQT: Flamekeeper Graz
+			q(84028),	-- Extra HQT: Gar'loc
+			q(84031),	-- Extra HQT: Kronolith, Might of the Mountain
+			q(84039),	-- Extra HQT: Matriarch Charfuria
+			q(84026),	-- Extra HQT: Plaguehart
+			q(85161),	-- Extra HQT: Rotfist
+			q(84032),	-- Extra HQT: Shallowshell the Clacker
+			q(84038),	-- Extra HQT: Sweetspark the Oozeful
+			q(84030),	-- Extra HQT: Tempest Lord Incarnus
+			q(84037),	-- Extra HQT: Tephratennae
+			q(84033),	-- Extra HQT: Twice-Stinger the Wretched
+			q(85159),	-- Extra HQT: Zovex
+		}),
 	}),
-}));
+})));

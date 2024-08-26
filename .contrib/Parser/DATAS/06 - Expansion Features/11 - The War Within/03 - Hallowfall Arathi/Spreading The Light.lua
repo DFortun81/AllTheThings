@@ -576,51 +576,54 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 		})),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-	-- Hidden stuff in area, that require different light buffs
-	-- could be weekly, idk
-	q(83211),	-- Herb @ 67.1, 23.3
-	q(83208),	-- Herb @ 66.3, 23.6
-	q(83223),	-- Herb @ 62.1, 13.0
-	q(81843),	-- Herb @ 63.5, 19.6
-	q(83222),	-- Herb @ 61.5, 16.5
-	q(83033),	-- Ore @ 67.6, 23.8
-	q(81847),	-- Ore @ 66.3, 14.9
-	q(81846),	-- Ore @ 65.3, 16.6
-	q(83047),	-- Ore @ 66.1, 17.0
-	q(83039),	-- Ore @ 66.3, 17.5
-	q(80337),	-- Radiant Remnant @ 66.1, 16.6
-	q(80347),	-- Radiant Remnant @ 65.7, 16.5
-	q(80342),	-- Radiant Remnant @ 65.4, 16.7
-	q(80344),	-- Radiant Remnant @ 64.2, 16.4
-	q(80339),	-- Radiant Remnant @ 66.4, 15.0
-	q(80535),	-- Radiant Remnant @ 66.8, 23.1
-	q(80338),	-- Radiant Remnant @ 63.6, 20.8
-	q(80345),	-- Radiant Remnant @ 66.1, 17.9
-	-- Small Keyflames
-	q(80005),	-- Empty Crab Cage - Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
-	q(78472),	-- Attica Whiskervale - Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7
-	q(79295),	-- Taerry Bligestone - Hose 'Em Down - Activate, after flare up lesser keyflame @ 65.8, 24.4
-	q(76599),	-- Auebry Irongear - Right Between Gyro-Optics - Activate, after flare up lesser keyflame @ 65.4, 28.1
-	q(78452),	-- Yorvas Flintstrike - Reinforcements - Activate, after flare up lesser keyflame @ 64.6, 30.6
-	q(79383),	-- Erol Ellimoore - Web of Manipulation - Activate, after flare up lesser keyflame @ 63.3, 29.4
-	q(78466),	-- Chef Dinaire - Shadows of Flavor - Activate, after flare up lesser keyflame @ 64.4, 30.9
-	q(78458),	-- Seraphine Seedheart - Harvest Havoc - Activator, after flare up lesser keyflame @ 63.6, 33.6
-	--	Rares
-	q(84052),	-- Extra HQT: Crazed Cabbage Smacker
-	q(84054),	-- Extra HQT: Croakit
-	q(84053),	-- Extra HQT: Deathpetal
-	q(84056),	-- Extra HQT: Duskshadow
-	q(84057),	-- Extra HQT: Parasidious
-	q(84059),	-- Extra HQT: Finclaw Bloodtide
-	q(84051),	-- Extra HQT: Moth'ethk
-	q(84060),	-- Extra HQT: Murkspike
-	q(84058),	-- Extra HQT: Ravageant
-	q(84056),	-- Extra HQT: Toadstomper
-	---
-	q(79177),	-- Snuffling in Hallowfall?
-	-- Vendor
-	q(76996),	-- after buy and use itemID 210826 (Harvestbot Repair Kit)
-	q(83341),	-- after turn in 78933 (The Sweet Eclipse), unlock ability to buy Sweet Eclipse from vendor
-}));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	n(HALLOWFALL_ARATHI, {
+		header(HEADERS.Quest, 76586, {	-- Spreading The Light
+			-- Hidden stuff in area, that require different light buffs
+			-- could be weekly, idk
+			q(83211),	-- Herb @ 67.1, 23.3
+			q(83208),	-- Herb @ 66.3, 23.6
+			q(83223),	-- Herb @ 62.1, 13.0
+			q(81843),	-- Herb @ 63.5, 19.6
+			q(83222),	-- Herb @ 61.5, 16.5
+			q(83033),	-- Ore @ 67.6, 23.8
+			q(81847),	-- Ore @ 66.3, 14.9
+			q(81846),	-- Ore @ 65.3, 16.6
+			q(83047),	-- Ore @ 66.1, 17.0
+			q(83039),	-- Ore @ 66.3, 17.5
+			q(80337),	-- Radiant Remnant @ 66.1, 16.6
+			q(80347),	-- Radiant Remnant @ 65.7, 16.5
+			q(80342),	-- Radiant Remnant @ 65.4, 16.7
+			q(80344),	-- Radiant Remnant @ 64.2, 16.4
+			q(80339),	-- Radiant Remnant @ 66.4, 15.0
+			q(80535),	-- Radiant Remnant @ 66.8, 23.1
+			q(80338),	-- Radiant Remnant @ 63.6, 20.8
+			q(80345),	-- Radiant Remnant @ 66.1, 17.9
+			-- Small Keyflames
+			q(80005),	-- Empty Crab Cage - Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
+			q(78472),	-- Attica Whiskervale - Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7
+			q(79295),	-- Taerry Bligestone - Hose 'Em Down - Activate, after flare up lesser keyflame @ 65.8, 24.4
+			q(76599),	-- Auebry Irongear - Right Between Gyro-Optics - Activate, after flare up lesser keyflame @ 65.4, 28.1
+			q(78452),	-- Yorvas Flintstrike - Reinforcements - Activate, after flare up lesser keyflame @ 64.6, 30.6
+			q(79383),	-- Erol Ellimoore - Web of Manipulation - Activate, after flare up lesser keyflame @ 63.3, 29.4
+			q(78466),	-- Chef Dinaire - Shadows of Flavor - Activate, after flare up lesser keyflame @ 64.4, 30.9
+			q(78458),	-- Seraphine Seedheart - Harvest Havoc - Activator, after flare up lesser keyflame @ 63.6, 33.6
+			--	Rares
+			q(84052),	-- Extra HQT: Crazed Cabbage Smacker
+			q(84054),	-- Extra HQT: Croakit
+			q(84053),	-- Extra HQT: Deathpetal
+			q(84056),	-- Extra HQT: Duskshadow
+			q(84057),	-- Extra HQT: Parasidious
+			q(84059),	-- Extra HQT: Finclaw Bloodtide
+			q(84051),	-- Extra HQT: Moth'ethk
+			q(84060),	-- Extra HQT: Murkspike
+			q(84058),	-- Extra HQT: Ravageant
+			q(84056),	-- Extra HQT: Toadstomper
+			---
+			q(79177),	-- Snuffling in Hallowfall?
+			-- Vendor
+			q(76996),	-- after buy and use itemID 210826 (Harvestbot Repair Kit)
+			q(83341),	-- after turn in 78933 (The Sweet Eclipse), unlock ability to buy Sweet Eclipse from vendor
+		}),
+	}),
+})));

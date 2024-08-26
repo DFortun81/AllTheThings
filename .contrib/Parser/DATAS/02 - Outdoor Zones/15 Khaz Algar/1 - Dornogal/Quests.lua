@@ -249,22 +249,25 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		}),
 	}),
 })));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	m(KHAZ_ALGAR, {
+		m(DORNOGAL, {
+			--q(79326),	-- after turn in questID 82153 (Embassies and Envoys), [DNT] Push RP Event (spellID 362105)
+			--^ seems like currently fire as 79328 instead with name 'Embassies and Envoys', could be horde counter part?
+			q(80538),	-- after turn in questID 79525 (Report to the Councilward), Tracking Quest [DNT] (spellID 441842)
 
-root(ROOTS.HiddenQuestTriggers, {
-	--q(79326),	-- after turn in questID 82153 (Embassies and Envoys), [DNT] Push RP Event (spellID 362105)
-	--^ seems like currently fire as 79328 instead with name 'Embassies and Envoys', could be horde counter part?
-	q(80538),	-- after turn in questID 79525 (Report to the Councilward), Tracking Quest [DNT] (spellID 441842)
-
-	q(79573, {["name"] = "The War Within Campaign Completed [Account]"}),	-- triggered after completing 'Surface Bound' (questID 79197)
-	-- Archives
-	q(83450),	-- Play Scene (spellID 455916), after finished Archives weekly (1st week) / unlocked new log entry
-	q(83460),	-- Play Scene (spellID 455918), after finished Archives weekly (2nd week) / unlocked new log entry
-	q(83462),	-- Play Scene (spellID 455920), after finished Archives weekly (3rd week) / unlocked new log entry
-	q(83463),	-- Play Scene (spellID 455921), after finished Archives weekly (4rd week) / unlocked new log entry
-	q(84669),	-- after accept questID 82679 (Archives: Seeking History) (2nd week)
-	q(84671),	-- after accept questID 82679 (Archives: Seeking History) / also after 82746 (Delves: Breaking Tough to Loot Stuff)
-	-- Alt skip
-	q(83621),	-- can be used right after turn in 81930 or 78713 (The War Within)
-	-- 82059 (Transmutation Station)
-	--q(65440),	-- provided 15x Carved Harbinger Crest for quest? (currently in NYI) // Same for Braghe // Same report in discord
-});
+			q(79573, {["name"] = "The War Within Campaign Completed [Account]"}),	-- triggered after completing 'Surface Bound' (questID 79197)
+			-- Archives
+			q(83450),	-- Play Scene (spellID 455916), after finished Archives weekly (1st week) / unlocked new log entry
+			q(83460),	-- Play Scene (spellID 455918), after finished Archives weekly (2nd week) / unlocked new log entry
+			q(83462),	-- Play Scene (spellID 455920), after finished Archives weekly (3rd week) / unlocked new log entry
+			q(83463),	-- Play Scene (spellID 455921), after finished Archives weekly (4rd week) / unlocked new log entry
+			q(84669),	-- after accept questID 82679 (Archives: Seeking History) (2nd week)
+			q(84671),	-- after accept questID 82679 (Archives: Seeking History) / also after 82746 (Delves: Breaking Tough to Loot Stuff)
+			-- Alt skip
+			q(83621),	-- can be used right after turn in 81930 or 78713 (The War Within)
+			-- 82059 (Transmutation Station)
+			--q(65440),	-- provided 15x Carved Harbinger Crest for quest? (currently in NYI) // Same for Braghe // Same report in discord
+		}),
+	}),
+})));

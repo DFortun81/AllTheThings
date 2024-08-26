@@ -12,6 +12,7 @@ CURIO = createHeader({
 		en = WOWAPI_GetSpellName(456522),
 	},
 });
+
 local UNDERCOIN = 2803;
 root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(ACHIEVEMENTS, {
@@ -1485,24 +1486,26 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, {
-	q(82772),	-- First Time per day? (Got Unflagged at reset)
-	q(84670),	-- after turn in weekly delve quest (was 82746 - Delves: Breaking Tough to Loot Stuff - for this one)
-	q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
-	-- Bountiful Delve runs
-	q(82944),	-- after Earthcrawl Mines
-	q(82941),	-- after Kriegval's Rest
-	q(82940),	-- after Mycomancer Cavern
-	q(82939),	-- after Fungal Folly
-	q(78508),	-- after Skittering Breach
-	-- Restored Coffer Key
-	q(84736, {["isWeekly"]=true,}),	-- Pop from any weekly activity, orders (of activity) doesn't matter
-	q(84737, {["isWeekly"]=true,}),	--
-	q(84738, {["isWeekly"]=true,}),	--
-	q(84739, {["isWeekly"]=true,}),	--
-	-- Seasonal Rewards
-	q(83235),	-- Season 1: 1/10 reward progress (spellID 454473 - Airship: Wings 05 - Lantern Wing)
-	-- Achievements
-	q(82943),	-- Delve Deep (40460) completed
-});
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	--n(DELVES_HQTS, {
+	n(DELVES, {
+		q(82772),	-- First Time per day? (Got Unflagged at reset)
+		q(84670),	-- after turn in weekly delve quest (was 82746 - Delves: Breaking Tough to Loot Stuff - for this one)
+		q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
+		-- Bountiful Delve runs
+		q(82944),	-- after Earthcrawl Mines
+		q(82941),	-- after Kriegval's Rest
+		q(82940),	-- after Mycomancer Cavern
+		q(82939),	-- after Fungal Folly
+		q(78508),	-- after Skittering Breach
+		-- Restored Coffer Key
+		q(84736, {["isWeekly"]=true,}),	-- Pop from any weekly activity, orders (of activity) doesn't matter
+		q(84737, {["isWeekly"]=true,}),	--
+		q(84738, {["isWeekly"]=true,}),	--
+		q(84739, {["isWeekly"]=true,}),	--
+		-- Seasonal Rewards
+		q(83235),	-- Season 1: 1/10 reward progress (spellID 454473 - Airship: Wings 05 - Lantern Wing)
+		-- Achievements
+		q(82943),	-- Delve Deep (40460) completed
+	}),
+})));

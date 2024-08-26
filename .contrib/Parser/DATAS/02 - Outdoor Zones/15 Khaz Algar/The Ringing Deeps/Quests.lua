@@ -1326,17 +1326,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, {
-	-- During questing
-	q(83613),	-- [DNT] Zone 2 Bread Crumb Completed Organically (spellID 456929), after turn in questID 80434 (Into the Deeps)
-	q(79635),	-- [DNT] The Assembly of the Deeps Renown Unlock (spellID 448654)
-	-- Side quests
-	q(82652),	-- 'Stay a while and listen' - Brennok, in the end of whole speach during questID 80682 (One Last Story)
-	-- A Suit of Slime (80509) Choices
-	q(81927),	-- interact a things from table (left-ish one)
-	q(81925),	-- Choosing Flappy Bits
-	q(81926),	-- Choosing Pokey Bits
-	-- ?
-	q(82991),	-- Talking to Ferno (225018) inside Camp Murrock, When bind hearthstone location to Camp Murroch tavern
-});
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	m(KHAZ_ALGAR, {
+		m(THE_RINGING_DEEPS, {
+			-- During questing
+			q(83613),	-- [DNT] Zone 2 Bread Crumb Completed Organically (spellID 456929), after turn in questID 80434 (Into the Deeps)
+			q(79635),	-- [DNT] The Assembly of the Deeps Renown Unlock (spellID 448654)
+			-- Side quests
+			q(82652),	-- 'Stay a while and listen' - Brennok, in the end of whole speach during questID 80682 (One Last Story)
+			-- A Suit of Slime (80509) Choices
+			q(81927),	-- interact a things from table (left-ish one)
+			q(81925),	-- Choosing Flappy Bits
+			q(81926),	-- Choosing Pokey Bits
+			-- ?
+			q(82991),	-- Talking to Ferno (225018) inside Camp Murrock, When bind hearthstone location to Camp Murroch tavern
+		}),
+	}),
+})));
