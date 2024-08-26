@@ -12,7 +12,6 @@ CURIO = createHeader({
 		en = WOWAPI_GetSpellName(456522),
 	},
 });
-
 local UNDERCOIN = 2803;
 root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(ACHIEVEMENTS, {
@@ -1487,7 +1486,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
-	--n(DELVES_HQTS, {
 	n(DELVES, {
 		q(82772),	-- First Time per day? (Got Unflagged at reset)
 		q(84670),	-- after turn in weekly delve quest (was 82746 - Delves: Breaking Tough to Loot Stuff - for this one)
