@@ -570,7 +570,7 @@ local function BuildDiscordQuestInfoTable(id, infoText, questChange, questRef, c
 			IsQuestFlaggedCompleted(75658) and "DF_ZC" or "N",	-- Dragonflight Zaralek Caverns Complete
 			IsQuestFlaggedCompleted(79573) and "WW_CA" or "N",	-- The War Within Campaign Complete
 		}
-		tinsert(info, "unlocks:"..app.TableConcat(acctUnlocks, nil, nil, "|"))
+		tinsert(info, "unlocks:"..app.TableConcat(acctUnlocks, nil, nil, "/"))
 	end
 	tinsert(info, "sq:"..GenerateSourceQuestString(questRef or id));
 	tinsert(info, "lq:"..(app.TableConcat(MostRecentQuestTurnIns, nil, nil, "<") or ""));
@@ -1771,6 +1771,7 @@ app.AddEventRegistration("QUEST_TURNED_IN", function(questID)
 		LastQuestTurnedIn = questID;
 		if not MostRecentQuestTurnIns then
 			MostRecentQuestTurnIns = {questID}
+			app.MostRecentQuestTurnIns = MostRecentQuestTurnIns
 		else
 			tinsert(MostRecentQuestTurnIns, 1, questID);
 			if #MostRecentQuestTurnIns > 5 then
