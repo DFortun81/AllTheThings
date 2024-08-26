@@ -65,6 +65,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 	expansion(EXPANSION.BFA),
 	expansion(EXPANSION.SL),
 	expansion(EXPANSION.DF),
+	expansion(EXPANSION.TWW),
 });
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.CLASSIC),
@@ -77,4 +78,5 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.BFA),
 	expansion(EXPANSION.SL),
 	expansion(EXPANSION.DF),
+	expansion(EXPANSION.TWW),
 });
