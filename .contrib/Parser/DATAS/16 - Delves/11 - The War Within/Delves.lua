@@ -304,6 +304,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			filter(BATTLE_PETS, {
 				i(225337),	-- Violet Sporbit (PET!)
 			}),
+			filter(MISC, {
+				i(210017),	-- Fungal Fish
+			}),
 			n(QUESTS, {
 				q(83758, {	-- Delver's Call: Fungal Folly
 					["provider"] = { "o", 455716 },
@@ -690,6 +693,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			filter(BATTLE_PETS, {
 				i(222971),	-- Bouncer (PET!)
+			}),
+			filter(MISC, {
+				i(217895),	-- Pheromone Bottle
+				i(217897),	-- Volatile Pheromone
 			}),
 			n(QUESTS, {
 				q(83761, {	-- Delves: The Underkeep
@@ -1487,15 +1494,17 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(DELVES, {
-		q(82772),	-- First Time per day? (Got Unflagged at reset)
+		q(82772),	-- First Delve of the day
 		q(84670),	-- after turn in weekly delve quest (was 82746 - Delves: Breaking Tough to Loot Stuff - for this one)
 		q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
 		-- Bountiful Delve runs
-		q(82944),	-- after Earthcrawl Mines
-		q(82941),	-- after Kriegval's Rest
-		q(82940),	-- after Mycomancer Cavern
-		q(82939),	-- after Fungal Folly
-		q(78508),	-- after Skittering Breach
+		q(82938),	-- The Dread Pit
+		q(82939),	-- Fungal Folly
+		q(82940),	-- Mycomancer Cavern
+		q(82941),	-- Kriegval's Rest
+		q(82944),	-- Earthcrawl Mines
+		q(78508),	-- Skittering Breach
+		q(82942),	-- The Spiral Weave
 		-- Restored Coffer Key
 		q(84736, {["isWeekly"]=true,}),	-- Pop from any weekly activity, orders (of activity) doesn't matter
 		q(84737, {["isWeekly"]=true,}),	--
@@ -1505,5 +1514,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(83235),	-- Season 1: 1/10 reward progress (spellID 454473 - Airship: Wings 05 - Lantern Wing)
 		-- Achievements
 		q(82943),	-- Delve Deep (40460) completed
+		-- Unknown
+		--q(77731),	-- Earthcrawl Mines (Fiery Grounds story, Tier 1)
+		--q(77732),	-- The Waterworks (Stomping Some Sense story, Tier 1)
 	}),
 })));

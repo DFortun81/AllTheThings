@@ -1181,7 +1181,6 @@ root(ROOTS.Unsorted, {
 				i(208670),	-- Arachnophobia Mode
 				i(209431),	-- Fungal Scraper
 				i(209788),	-- Dispersion Crystal
-				i(210017),	-- Fungal Fish
 				i(210051),	-- Spark Feather
 				i(210697),	-- Luckstone
 				i(211348),	-- Awkward Potion
@@ -1215,8 +1214,6 @@ root(ROOTS.Unsorted, {
 				i(217404),	-- Time-Worn Armor Charm
 				i(217405),	-- Time-Worn Weapon Charm
 				i(217715),	-- Key Scroll
-				i(217895),	-- Pheromone Bottle
-				i(217897),	-- Volatile Pheromone
 				i(218308),	-- Winter Veil Cracker
 				i(218309),	-- Gently Shaken Gift
 				i(218311),	-- Winter Veil Gift
