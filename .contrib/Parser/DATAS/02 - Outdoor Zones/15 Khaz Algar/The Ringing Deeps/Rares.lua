@@ -77,6 +77,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 80536,
 				["g"] = {
 					i(221507),	-- Earth Golem's Wrap
+					i(225999),	-- Earthen Adventurer's Tabard
 				},
 			}),
 			n(218393, {	-- Disturbed Earthgorger

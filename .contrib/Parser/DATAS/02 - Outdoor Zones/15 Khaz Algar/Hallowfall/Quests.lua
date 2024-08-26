@@ -763,7 +763,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 40.7, 70.9, HALLOWFALL },
 					["g"] = {
 						i(214615),	-- Broken Trinket (QI!)
-						--i(214616),	-- Engraved Dagger (QI!) TODO: removed?
+						i(214616),	-- Engraved Dagger (QI!)
 						i(214609),	-- Game Piece (QI!)
 						i(211959),	-- Lost Belongings (QI!)
 					},

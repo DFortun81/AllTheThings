@@ -103,7 +103,6 @@ root(ROOTS.Unsorted, {
 			i(229078),	-- Aevery's Spare Brigandine
 			i(229079),	-- Aevery's Spare Boots
 			i(229080),	-- Aevery's Spare Gauntlets
-
 			i(229083),	-- Aevery's Spare Shoulderguards
 			i(229084),	-- Aevery's Spare Belt
 			i(229086),	-- Kyros's Spare Helm
@@ -112,10 +111,8 @@ root(ROOTS.Unsorted, {
 			i(229089),	-- Kyros's Spare Handguards
 			i(229090),	-- Kyros's Spare Faulds
 			i(229091),	-- Kyros's Spare Shoulder Plates
-			i(229092),	-- Kyros's Spare Girdle
 			i(229093),	-- Kyros's Spare Cuffs
 			i(229096),	-- The Cleansing Flame's Robes
-			i(229097),	-- The Cleansing Flame's Sandals
 			i(229098),	-- The Cleansing Flame's Handwraps
 			i(229099),	-- The Cleansing Flame's Cowl
 			i(229100),	-- The Cleansing Flame's Leggings
@@ -768,7 +765,6 @@ root(ROOTS.Unsorted, {
 				i(225994),	-- Simple Copper Staff
 				i(225997),	-- Earthen Adventurer's Spaulders
 				i(225998),	-- Earthen Adventurer's Cloak
-				i(225999),	-- Earthen Adventurer's Tabard
 				i(226000),	-- Ensemble: Earthen Adventurer's Copper Drapery
 				i(226006),	-- Plunderlord's Radiant Drapery
 				i(226007),	-- Plunderlord's Radiant Muckscrapers
@@ -1621,7 +1617,6 @@ root(ROOTS.Unsorted, {
 				i(221231),	-- Steam-Powered Wristwatch
 				i(221232),	-- Polished Goblin Bling
 				i(221233),	-- Deephunter's Bloody Hook
-				i(221234),	-- Tidal Pendant
 				i(221236),	-- Stormbreaker's Shield
 				i(221237),	-- Lamentable Vagrant's Lantern
 				i(221238),	-- Pillar of Constructs

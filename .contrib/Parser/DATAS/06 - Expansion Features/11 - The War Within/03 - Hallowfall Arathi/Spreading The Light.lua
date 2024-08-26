@@ -295,6 +295,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["questID"] = 82564,
 						["g"] = {
 							i(223925),	-- Blood Hungerer's Chestplate
+							i(221234),	-- Tidal Pendant
 						},
 					}),
 					n(206203, {	-- Moth'ethk
@@ -353,8 +354,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229082),	-- Aevery's Spare Chausses
 						i(229081),	-- Aevery's Spare Cowl
 						i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
+						i(229092),	-- Kyros's Spare Girdle
 						i(229155),	-- Lamplighter's Greataxe
 						i(229061),	-- Nisa's Spare Belt
+						i(229097),	-- The Cleansing Flame's Sandals
 						i(229122),	-- Warstone's Gauntlets
 					}),
 					i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
