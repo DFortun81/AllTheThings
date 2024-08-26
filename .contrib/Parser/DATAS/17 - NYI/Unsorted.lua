@@ -1659,7 +1659,6 @@ root(ROOTS.Unsorted, {
 				i(223441),	-- Algari Scouting Boots
 				i(223443),	-- Algari Warden's Hood
 				i(223454),	-- Algari Warden's Greaves
-				i(223456),	-- [PH] 11.0 - Cinch
 				i(223458),	-- [PH] 11.0 - Belt
 				i(223461),	-- Algari Warden's Helm
 				i(223472),	-- Drape of the Lamplighter

@@ -813,7 +813,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81661, {	-- To Mourning Rise
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 221355 },	-- Urtago
-					["coord"] = { 55.7, 58.4, ISLE_OF_DORN },
+					["coord"] = { 55.7, 56.0, ISLE_OF_DORN },
+					["isBreadcrumb"] = true,
 				}),
 				q(78743, {	-- Before I Depart
 					["sourceQuests"] = { 81661 },	-- To Mourning Rise
@@ -1018,6 +1019,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 222363 },	-- Peacekeeper Leif
 					["coord"] = { 65.9, 23.8, ISLE_OF_DORN },
 					["g"] = {
+						i(223456),	-- Algari Cinch
 						i(223424),	-- Algari-Weave Cord
 						i(223464),	-- Algari Heavy Gauntlets
 					},
