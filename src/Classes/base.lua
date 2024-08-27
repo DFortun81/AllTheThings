@@ -676,8 +676,9 @@ end
 
 -- Create a local cache table which can be used by a Type class of a Thing to easily store shared
 -- information based on a unique key field for any Thing object of that Type
-app.CreateCache = function(idField)
+app.CreateCache = function(idField, className)
 	local cache, _t, v = {}, nil, nil;
+	cache.DefaultFunctions = {}
 	cache.GetCached = function(t)
 		local id = t[idField];
 		if id then
@@ -700,14 +701,17 @@ app.CreateCache = function(idField)
 		if _t then
 			-- set a default provided cache value if any default function was provided and evalutes to a value
 			v = _t[field];
-			if not v and default_function then
-				local defVal = default_function(t, field);
-				if defVal then
-					v = defVal;
-					_t[field] = v;
-				end
+			if v ~= nil then return v end
+
+			default_function = default_function or cache.DefaultFunctions[field]
+			if not default_function then return end
+
+			local defVal = default_function(t, field, _t);
+			if defVal then
+				v = defVal;
+				_t[field] = v;
 			end
-			return v;
+			return v
 		end
 	end;
 	cache.SetCachedField = function(t, field, value)
@@ -722,6 +726,9 @@ app.CreateCache = function(idField)
 		_t = cache.GetCached(t);
 		if _t then _t[field] = value; end
 	end;
+	if app.__perf then
+		return app.__perf.AutoCaptureTable(cache, "ClassCache:"..(className or idField))
+	end
 	return cache;
 end
 
