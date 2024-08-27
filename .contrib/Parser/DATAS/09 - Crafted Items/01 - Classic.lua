@@ -3135,19 +3135,19 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 		spell(2656, {	-- Smelting
 			i(2841, {    -- Bronze Bar
-				ClassicCost({
+				["cost"] = ClassicCost({
 					{ "i", 2840, 1 },    -- Copper Bar
 					{ "i", 3576, 1 },    -- Tin Bar
 				}),
 			}),
 			i(2840, {    -- Copper Bar
-				ClassicCost({ { "i", 2770, 1 } }),    -- Copper Ore
+				["cost"] = ClassicCost({ { "i", 2770, 1 } }),    -- Copper Ore
 			}),
 			i(11371, {    -- Dark Iron Bar
-				ClassicCost({ { "i", 11370, 8 } }),    -- Dark Iron Ore
+				["cost"] = ClassicCost({ { "i", 11370, 8 } }),    -- Dark Iron Ore
 			}),
 			i(17771, {    -- Enchanted / Elementium Bar
-				ClassicCost({
+				["cost"] = ClassicCost({
 					{ "i", 18562, 1 },    -- Elementium Ore
 					{ "i", 12360, 10 },    -- Arcanite Bar
 					{ "i", 17010, 1 },    -- Fiery Core
@@ -3157,38 +3157,38 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			-- #if AFTER 3.3.0
 			i(12655, {    -- Enchanted Thorium Bar
 				["timeline"] = { ADDED_3_3_3 },
-				ClassicCost({
+				["cost"] = ClassicCost({
 					{ "i", 12359, 1 },    -- Thorium Bar
 					{ "i", 11176, 3 },    -- Dream Dust
 				}),
 			}),
 			-- #endif
 			i(3577, {    -- Gold Bar
-				ClassicCost({ { "i", 2776, 1 } }),    -- Gold Ore
+				["cost"] = ClassicCost({ { "i", 2776, 1 } }),    -- Gold Ore
 			}),
 			i(3575, {    -- Iron Bar
-				ClassicCost({ { "i", 2772, 1 } }),    -- Iron Ore
+				["cost"] = ClassicCost({ { "i", 2772, 1 } }),    -- Iron Ore
 			}),
 			i(3860, {    -- Mithril Bar
-				ClassicCost({ { "i", 3858, 1 } }),    -- Mithril Ore
+				["cost"] = ClassicCost({ { "i", 3858, 1 } }),    -- Mithril Ore
 			}),
 			i(2842, {    -- Silver Bar
-				ClassicCost({ { "i", 2775, 1 } }),    -- Silver Ore
+				["cost"] = ClassicCost({ { "i", 2775, 1 } }),    -- Silver Ore
 			}),
 			i(3859, {    -- Steel Bar
-				ClassicCost({
+				["cost"] = ClassicCost({
 					{ "i", 3575, 1 },    -- Iron Bar
 					{ "i", 3857, 1 },    -- Coal
 				}),
 			}),
 			i(12359, {    -- Thorium Bar
-				ClassicCost({ { "i", 10620, 1 } }),    -- Thorium Ore
+				["cost"] = ClassicCost({ { "i", 10620, 1 } }),    -- Thorium Ore
 			}),
 			i(3576, {    -- Tin Bar
-				ClassicCost({ { "i", 2771, 1 } }),    -- Tin Ore
+				["cost"] = ClassicCost({ { "i", 2771, 1 } }),    -- Tin Ore
 			}),
 			i(6037, {    -- Truesilver Bar
-				ClassicCost({ { "i", 7911, 1 } }),    -- Truesilver Ore
+				["cost"] = ClassicCost({ { "i", 7911, 1 } }),    -- Truesilver Ore
 			}),
 		}),
 	}),

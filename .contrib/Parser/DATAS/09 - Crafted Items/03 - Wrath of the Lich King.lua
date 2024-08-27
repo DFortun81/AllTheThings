@@ -789,7 +789,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 	prof(JEWELCRAFTING, {
 		category(168, {	-- Materials
 			applyclassicphase(WRATH_PHASE_THREE, i(46849, {	-- Titanium Powder
-				ClassicCost({{ "i", 36910, 5 }}),	-- Titanium Ore
+				["cost"] = ClassicCost({{ "i", 36910, 5 }}),	-- Titanium Ore
 			})),
 		}),
 		filter(NECK_F, {
@@ -1031,16 +1031,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 		spell(2656, {	-- Smelting
 			i(36916, {	-- Cobalt Bar
-				ClassicCost({ { "i", 36909, 1 } }),	-- Cobalt Ore
+				["cost"] = ClassicCost({ { "i", 36909, 1 } }),	-- Cobalt Ore
 			}),
 			i(36913, {	-- Saronite Bar
-				ClassicCost({ { "i", 36912, 2 } }),	-- Saronite Ore
+				["cost"] = ClassicCost({ { "i", 36912, 2 } }),	-- Saronite Ore
 			}),
 			i(41163, {	-- Titanium Bar
-				ClassicCost({ { "i", 36910, 2 } }),	-- Titanium Ore
+				["cost"] = ClassicCost({ { "i", 36910, 2 } }),	-- Titanium Ore
 			}),
 			i(37663, {	-- Titansteel Bar
-				ClassicCost({
+				["cost"] = ClassicCost({
 					{ "i", 41163, 3 },	-- Titanium Bar
 					{ "i", 35624, 1 },	-- Eternal Earth
 					{ "i", 36860, 1 },	-- Eternal Fire

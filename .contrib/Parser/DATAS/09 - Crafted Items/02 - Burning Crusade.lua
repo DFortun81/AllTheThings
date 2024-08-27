@@ -1063,32 +1063,32 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		}),
 		spell(2656, {	-- Smelting
 			i(23446, {    -- Adamantite Bar
-				ClassicCost({ { "i", 23425, 2 } }),    -- Adamantite Ore
+				["cost"] = ClassicCost({ { "i", 23425, 2 } }),    -- Adamantite Ore
 			}),
 			i(23447, {    -- Eternium Bar
-				ClassicCost({ { "i", 23427, 2 } }),    -- Eternium Ore
+				["cost"] = ClassicCost({ { "i", 23427, 2 } }),    -- Eternium Ore
 			}),
 			i(23445, {    -- Fel Iron Bar
-				ClassicCost({ { "i", 23424, 2 } }),    -- Fel Iron Ore
+				["cost"] = ClassicCost({ { "i", 23424, 2 } }),    -- Fel Iron Ore
 			}),
 			i(23448, {    -- Felsteel Bar
-				ClassicCost({
+				["cost"] = ClassicCost({
 					{ "i", 23445, 3 },	-- Fel Iron Bar
 					{ "i", 23447, 2 },	-- Eternium Bar
 				}),
 			}),
 			i(23573, {    -- Hardened Adamantite Bar
-				ClassicCost({ { "i", 23446, 10 } }),    -- Adamantite Bar
+				["cost"] = ClassicCost({ { "i", 23446, 10 } }),    -- Adamantite Bar
 			}),
 			applyclassicphase(TBC_PHASE_FIVE, i(35128, {    -- Hardened Khorium Bar
 				["timeline"] = {ADDED_2_4_0},
-				ClassicCost({
+				["cost"] = ClassicCost({
 					{ "i", 23449, 3 },    -- Khorium Bar
 					{ "i", 23573, 1 },    -- Hardened Adamantite Bar
 				}),
 			})),
 			i(23449, {    -- Khorium Bar
-				ClassicCost({ { "i", 23426, 2 } }),    -- Khorium Ore
+				["cost"] = ClassicCost({ { "i", 23426, 2 } }),    -- Khorium Ore
 			}),
 		}),
 	}),
