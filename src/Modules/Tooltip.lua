@@ -96,15 +96,16 @@ if app.IsRetail then
 								end
 							end
 							-- if we haven't found any object by coord-distance, we can check the hierarchy for matching Location-based mapID
-							if not closestObjectID then
+							if not closestObjectID and not mappedObjectID then
 								-- check the parent hierarchy for a map or maps
+								local hierarchyMaps
 								local hierarchyMapID = app.GetRelativeValue(searchResult, "mapID")
 								-- app.PrintDebug("Check hierarchy map",app:SearchLink(searchResult),hierarchyMapID)
 								if hierarchyMapID == mapID then
 									-- app.PrintDebug("Object by hierarchy map",app:SearchLink(searchResult),hierarchyMapID)
 									mappedObjectID = objectID
 								else
-									local hierarchyMaps = app.GetRelativeValue(searchResult, "maps")
+									hierarchyMaps = app.GetRelativeValue(searchResult, "maps")
 									-- app.PrintDebug("Check hierarchy maps",app:SearchLink(searchResult),hierarchyMaps and #hierarchyMaps)
 									if hierarchyMaps and app.contains(hierarchyMaps, mapID) then
 										-- app.PrintDebug("Object by hierarchy maps",app:SearchLink(searchResult),hierarchyMapID)
@@ -112,7 +113,8 @@ if app.IsRetail then
 									end
 								end
 								-- if we also haven't found any map-based object, then this object is unmapped
-								if not mappedObjectID then
+								-- but only save as unmapped if the checked object also has no known map relationship
+								if not hierarchyMaps and not hierarchyMapID then
 									unmappedObjectID = objectID
 								end
 							end
