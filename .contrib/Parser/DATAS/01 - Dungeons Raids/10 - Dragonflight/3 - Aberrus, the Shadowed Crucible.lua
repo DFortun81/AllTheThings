@@ -1496,15 +1496,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 		-- Heroic
 		-- None
 		-- Mythic
-		-- q(),	-- Kazzara
-		-- q(),	-- The Amalgamation Chamber
-		-- q(),	-- The Forgotten Experiments
-		-- q(),	-- Assault of the Zaqali
-		-- q(),	-- Rashok
-		-- q(),	-- The Vigilant Steward, Zskarn
-		-- q(),	-- Magmorax
-		-- q(),	-- Echo of Neltharion
-		-- q(),	-- Scalecommander Sarkareth
+		-- None
 
 		q(76087),	-- Sarkareth HC kill on Evoker; Legendary 'higher chance' lockout?
 		q(76088),	-- Normal Sarkareth Kill?
