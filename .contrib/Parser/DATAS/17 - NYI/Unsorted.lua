@@ -1630,7 +1630,6 @@ root(ROOTS.Unsorted, {
 			n(REWARDS, {
 				i(223438),	-- Algari Warden's Vestment
 				i(223444),	-- Arathi Defender's Breeches
-				i(223450),	-- Honored Soldier's Chainmail
 				i(223443),	-- Algari Warden's Hood
 				i(223454),	-- Algari Warden's Greaves
 				i(223458),	-- [PH] 11.0 - Belt

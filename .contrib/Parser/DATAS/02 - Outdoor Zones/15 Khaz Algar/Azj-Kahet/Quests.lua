@@ -1003,6 +1003,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["g"] = {
 						i(223515),	-- Breastplate and Tinderbox (QI!)
 						i(223462),	-- Honorable Arathi Breastplate
+						i(223450),	-- Honored Soldier's Chainmail
 						i(223439),	-- Mereldar Scholar's Leggings
 					},
 				}),
