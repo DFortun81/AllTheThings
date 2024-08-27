@@ -586,12 +586,6 @@ root(ROOTS.Unsorted, {
 				i(225230),	-- Crystalline Repository
 				i(225232),	-- Coreway Billet
 				i(225233),	-- Dense Bladestone
-				i(226316),	-- Gentle Jewel Hammer
-				i(226320),	-- Arathi Sizing Gauges
-				i(226322),	-- Ritual Caster's Crystal
-				i(226323),	-- Nerubian Bench Blocks
-				i(226354),	-- Nerubian Quilt
-				i(226355),	-- Nerubian's Pincushion
 				i(224780),	-- Toughened Tempest Pelt
 				i(227659),	-- Fleeting Arcane Manifestation
 				i(227661),	-- Gleaming Telluric Crystal

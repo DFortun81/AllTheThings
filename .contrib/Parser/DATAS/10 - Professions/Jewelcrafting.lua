@@ -841,6 +841,13 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			}),
 		}),
 		n(TREASURES, {
+			o(455973, {	-- Arathi Sizing Gauges
+				["coord"] = { 47.3, 60.6, HALLOWFALL },
+				["questID"] = 83894,
+				["g"] = {
+					i(226320),	-- Arathi Sizing Gauges
+				},
+			}),
 			o(455975, {	-- Carved Stone File
 				["coord"] = { 48.5, 35.2, THE_RINGING_DEEPS },
 				["questID"] = 83892,
@@ -855,6 +862,13 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 					i(226317),	-- Earthen Gem Pliers
 				},
 			}),
+			o(455977, {	-- Gentle Jewel Hammer
+				["coord"] = { 63.5, 66.8, ISLE_OF_DORN },
+				["questID"] = 83890,
+				["g"] = {
+					i(226316),	-- Gentle Jewel Hammer
+				},
+			}),
 			o(455974, {	-- Jeweler's Delicate Drill
 				["coord"] = { 57.0, 54.6, THE_RINGING_DEEPS },
 				["questID"] = 83893,
@@ -867,6 +881,20 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["questID"] = 83895,
 				["g"] = {
 					i(226321),	-- Librarian's Magnifiers
+				},
+			}),
+			o(455970, {	-- Nerubian Bench Blocks
+				["coord"] = { 56.1, 58.6, AZJ_KAHET },
+				["questID"] = 83897,
+				["g"] = {
+					i(226323),	-- Nerubian Bench Blocks
+				},
+			}),
+			o(455971, {	-- Ritual Caster's Crystal
+				["coord"] = { 47.7, 19.4, NERUBAR },
+				["questID"] = 83896,
+				["g"] = {
+					i(226322),	-- Ritual Caster's Crystal
 				},
 			}),
 		}),
