@@ -3366,6 +3366,7 @@ local keys = {
 [83734]="Inscription Order: Skinning",
 [83735]="Inscription Order: Tailoring",
 [84335]="Stay awhile and listen: Alleria Windrunner",
+[84345]="Stay awhile and listen: High Exarch Turalyon",
 [84620]="Stay awhile and listen: Magni Bronzebeard",
 [84699]="Stay awhile and listen: Moira Thaurissan",
 [84813]="Stay awhile and listen: Rooktender Lufsela",

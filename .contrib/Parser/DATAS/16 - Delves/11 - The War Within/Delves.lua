@@ -1515,7 +1515,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(82941),	-- Kriegval's Rest
 		q(82944),	-- Earthcrawl Mines
 		q(78508),	-- Skittering Breach
+		q(82776),	-- Tak-Rethan Abyss
+		q(82937),	-- The Sinkhole
 		q(82942),	-- The Spiral Weave
+		q(82945),	-- The Waterworks
 		-- Restored Coffer Key
 		q(84736, {["isWeekly"]=true,}),	-- Pop from any weekly activity, orders (of activity) doesn't matter
 		q(84737, {["isWeekly"]=true,}),	--
@@ -1526,7 +1529,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		-- Achievements
 		q(82943),	-- Delve Deep (40460) completed
 		-- Unknown
-		--q(77731),	-- Earthcrawl Mines (Fiery Grounds story, Tier 1)
-		--q(77732),	-- The Waterworks (Stomping Some Sense story, Tier 1)
+		--q(77731),	-- After the last boss - Earthcrawl Mines (Fiery Grounds story, Tier 1)
+		--q(77732),	-- After the last boss - The Waterworks (Stomping Some Sense story, Tier 1)
 	}),
 })));
