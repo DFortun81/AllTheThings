@@ -5804,6 +5804,7 @@ end
 local HeaderTypeAbbreviations = {
 	["a"] = "achievementID",
 	["c"] = "classID",
+	["cu"] = "currencyID",
 	["m"] = "mapID",
 	["i"] = "itemID",
 	["r"] = "raceID",

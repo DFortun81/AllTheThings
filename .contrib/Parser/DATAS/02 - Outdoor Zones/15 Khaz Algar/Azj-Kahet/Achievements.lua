@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					--["coord"] = { 1, 1, AZJ_KAHET },
 				}),
 				crit(68978, {	-- Scampering Weave-Rat
-					--["coord"] = { 1, 1, AZJ_KAHET },
+					["coord"] = { 49.6, 15.7, NERUBAR },
 				}),
 				crit(68979, {	-- General's Scouting Shadecaster
 					--["coord"] = { 1, 1, AZJ_KAHET },

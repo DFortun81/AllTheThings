@@ -786,8 +786,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 46.2, 48.0, THE_RINGING_DEEPS },
 				}),
 			}),
-			n(TREASURES, {
-			}),
 		},
 	}),
 	n(REWARDS, {
@@ -1519,11 +1517,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(82937),	-- The Sinkhole
 		q(82942),	-- The Spiral Weave
 		q(82945),	-- The Waterworks
-		-- Restored Coffer Key
-		q(84736, {["isWeekly"]=true,}),	-- Pop from any weekly activity, orders (of activity) doesn't matter
-		q(84737, {["isWeekly"]=true,}),	--
-		q(84738, {["isWeekly"]=true,}),	--
-		q(84739, {["isWeekly"]=true,}),	--
+		-- Restored Coffer Key (Pop from any weekly activity, orders (of activity) doesn't matter)
+		-- TODO: maybe eventually have a single 'weekly' spot for certain stuff? idk
+		q(84736, {["isWeekly"]=true,["type"]=HEADERS.Currency..":3028",}),	-- 1st
+		q(84737, {["isWeekly"]=true,["type"]=HEADERS.Currency..":3028",}),	-- 2nd
+		q(84738, {["isWeekly"]=true,["type"]=HEADERS.Currency..":3028",}),	-- 3rd
+		q(84739, {["isWeekly"]=true,["type"]=HEADERS.Currency..":3028",}),	-- 4th
 		-- Seasonal Rewards
 		q(83235),	-- Season 1: 1/10 reward progress (spellID 454473 - Airship: Wings 05 - Lantern Wing)
 		-- Achievements
