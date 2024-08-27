@@ -788,7 +788,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 215237 },	-- Alyza Bowblaze
 					["coord"] = { 41.8, 55.6, HALLOWFALL },
 					["g"] = {
-						i(216604),	-- "Much Loved" Teddy Bear (QI!)
+						o(423958, {	-- Arathi Chest
+							i(216604),	-- "Much Loved" Teddy Bear (QI!)
+						}),
 					},
 				}),
 				q(83182, {	-- A Bloody Inheritance
@@ -796,10 +798,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 218062 },	-- Alyza Bowblaze
 					["coord"] = { 52.4, 50.2, HALLOWFALL },
 					["g"] = {
-						i(215446),	-- Battered Helmet (QI!)
-						i(216525),	-- Dented Boots (QI!)
-						i(216526),	-- Resplendant Shield (QI!)
-						i(216524),	-- Salt-pitted Sword (QI!)
+						o(416310, {	-- Kobyss Chest
+							i(215446),	-- Battered Helmet (QI!)
+						}),
+						o(423977, {	-- Kobyss Chest
+							i(216525),	-- Dented Boots (QI!)
+						}),
+						o(423979, {	-- Kobyss Chest
+							i(216526),	-- Resplendant Shield (QI!)
+						}),
+						o(423978, {	-- Kobyss Chest
+							i(216524),	-- Salt-pitted Sword (QI!)
+						}),
 					},
 				}),
 				q(79152, {	-- Gutting the Pool
@@ -948,12 +958,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 220718 },	-- Maera Ashyld
 					["coord"] = { 60.5, 60.2, HALLOWFALL },
 					["g"] = {
-						i(219814),	-- Rusted Torch (QI!)
-						i(219813),	-- Tarnished Compass (QI!)
-						i(219811),	-- Broken Bracelet (QI!)
-						i(219816),	-- Knotted Aviator Scarf (QI!)
-						i(219812),	-- Plush Lynx (QI!)
-						i(219815),	-- Small Hilt (QI!)
+						o(437025, {	-- Sludge Pile
+							i(219814),	-- Rusted Torch (QI!)
+							i(219813),	-- Tarnished Compass (QI!)
+							i(219811),	-- Broken Bracelet (QI!)
+							i(219816),	-- Knotted Aviator Scarf (QI!)
+							i(219812),	-- Plush Lynx (QI!)
+							i(219815),	-- Small Hilt (QI!)
+						}),
 						--
 						i(219810),	-- Broken Bracelet
 						i(219809),	-- Plush Lynx
@@ -1015,7 +1027,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 215335 },	-- General Steelstrike
 				["coord"] = { 40.5, 50.8, HALLOWFALL },
 				["g"] = {
-					i(216687),	-- Cobbled Together Bandage (QI!)
+					o(424343, {	-- Medical Supplies
+						i(216687),	-- Cobbled Together Bandage (QI!)
+					}),
 				},
 			}),
 			-- Items turn in quests?
