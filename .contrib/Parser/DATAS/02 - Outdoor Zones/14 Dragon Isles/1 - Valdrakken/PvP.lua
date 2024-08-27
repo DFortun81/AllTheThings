@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(212538),	-- Greater Verdant Trophy of Conquest
 					},
 				})),
-				q(79074, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END } }, {	-- Summoning All Soldiers!
+				q(79074, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Summoning All Soldiers!
 					["provider"] = { "i", 211690 },	-- Artisan's Consortium Brochure (QI!)
 					["g"] = {
 						i(211685),	-- Draconic Trophy of Conquest
@@ -151,16 +151,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 
 						------ Season 4 ------
 						conquest(375, i(217018, {	-- Draconic Equipment Chest
-							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END },
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 						})),
 						conquest(875, i(211686, {	-- Greater Draconic Trophy of Conquest
-							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END },
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 						})),
 						conquest(700, i(211685, {	-- Draconic Trophy of Conquest
-							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END },
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 						})),
 						conquest(525, i(211684, {	-- Lesser Draconic Trophy of Conquest
-							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END },
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 						})),
 					},
 				}),
@@ -247,13 +247,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 
 								------ Season 4 ------
 								i(211690, {	-- Artisan's Consortium Brochure (QS!)
-									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END },
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 								}),
 								i(211770, {	-- Cracked Medal of Honor [A]
-									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END },
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 								}),
 								i(211771, {	-- Cracked Medal of Honor [H]
-									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END },
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 								}),
 							},
 						}),
@@ -324,16 +324,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 
 						------ Season 4 ------
 						honor(875, i(211689, {	-- Greater Draconic Crest of Honor
-							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END },
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 						})),
 						honor(700, i(211688, {	-- Draconic Crest of Honor
-							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END },
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 						})),
 						honor(525, i(211687, {	-- Lesser Draconic Crest of Honor
-							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END },
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 						})),
 						honor(2500, i(211772, {	-- Cracked Medal of Honor
-							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END },
+							["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 						})),
 					},
 				}),

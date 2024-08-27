@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(ACHIEVEMENTS, {
-		ach(19574, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END } }, {	-- Awakening the Dragonflight Raids
+		ach(19574, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Awakening the Dragonflight Raids
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				19570,	-- Awakened Flames
@@ -14,7 +14,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				i(217340),	-- Voyaging Wilderling (MOUNT!)
 			},
 		})),
-		ach(19575, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END } }, {	-- Heroic: Awakening the Dragonflight Raids
+		ach(19575, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Heroic: Awakening the Dragonflight Raids
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				19571,	-- Heroic: Awakened Flames
@@ -25,7 +25,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				title(557),	-- <Name>, Awakened Hero
 			},
 		})),
-		ach(19576, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END } }, {	-- Mythic: Awakening the Dragonflight Raids
+		ach(19576, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Mythic: Awakening the Dragonflight Raids
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				19572,	-- Mythic: Awakened Flames
