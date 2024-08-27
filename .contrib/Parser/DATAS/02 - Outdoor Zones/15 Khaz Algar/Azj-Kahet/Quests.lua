@@ -878,7 +878,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81890, {	-- Unfulfilled Requests
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 208782 },	-- Executor Nizrek
-					["coord"] = { 52.9, 46.1, AZJ_KAHET },
+					["coord"] = { 52.9, 46.1, NERUBAR },
 					["isBreadcrumb"] = true
 				}),
 				q(81928, {	-- The Voice of the People

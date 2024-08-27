@@ -2385,18 +2385,28 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(83411, 214151),	-- Skinning Ahg'zagall
 			FirstSkin(81450, 219264),	-- Skinning Bloodmaw
 			FirstSkin(83414, 216042),	-- Skinning Cha'tak
+			FirstSkin(85549, 214757),	-- Skinning Croakit
+			FirstSkin(83408, 220286),	-- Skinning Deepflayer Broodmother
 			FirstSkin(83404, 218393),	-- Skinning Disturbed Earthgorger
 			FirstSkin(81451, 219265),	-- Skinning Emperor Pitfang
 			FirstSkin(83402, 221668),	-- Skinning Horror of the Shallows
 			FirstSkin(83413, 221327),	-- Skinning Kaheti Silk Hauler
+			FirstSkin(83409, 220285),	-- Skinning Lurker of the Deeps
 			FirstSkin(83400, 221534),	-- Skinning Lytfang the Lost
+			FirstSkin(83416, 216044),	-- Skinning Maddened Siegebomber
+			FirstSkin(83406, 220890),	-- Skinning Matriarch Charfuria
 			FirstSkin(81458, 218452),	-- Skinning Murkshade
 			FirstSkin(81452, 219267),	-- Skinning Plaguehart
 			FirstSkin(83403, 221786),	-- Skinning Pride of Beledar
+			FirstSkin(85547, 207826),	-- Skinning Ravageant
+			FirstSkin(85550, 219278),	-- Skinning Shallowshell the Clacker
 			FirstSkin(83405, 221217),	-- Skinning Spore-infused Shalewing
+			FirstSkin(85551, 221690),	-- Skinning Strength of Beledar
+			FirstSkin(83407, 221126),	-- Skinning Tephratennae
 			FirstSkin(81456, 220271),	-- Skinning Terror of the Forge
 			FirstSkin(83401, 221648),	-- Skinning The Perchfather
 			FirstSkin(81453, 219271),	-- Skinning Twice-Stinger the Wretched
+			FirstSkin(83415, 216037),	-- Skinning Vilewing
 			FirstSkin(81449, 219263),	-- Skinning Warphorn
 			FirstSkin(83412, 216039),	-- Skinning Xishorr
 			FirstSkin(81457, 220270),	-- Skinning Zilthara

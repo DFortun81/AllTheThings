@@ -1408,7 +1408,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			o(455969, {	-- Earthen Lacing Tools
-				["coord"] = { 54.3, 59.6, DORNOGAL },
+				["coord"] = { 68.2, 23.3, DORNOGAL },
 				["questID"] = 83898,
 				["g"] = {
 					i(226324),	-- Earthen Lacing Tools

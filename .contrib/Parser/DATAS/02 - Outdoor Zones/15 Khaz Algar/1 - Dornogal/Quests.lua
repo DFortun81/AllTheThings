@@ -202,7 +202,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			hqt(82460, {	-- <Stay awhile and Listen> Magni Bronzebeard
 				["name"] = "Stay awhile and listen: Magni Bronzebeard",
-				["sourceQuests"] = { 78536 },	-- Impossible Odds
+				["sourceQuests"] = { 78457 },	-- Stones of Dornogal (available if quest is picked up and after turnin but not before)
 				["provider"] = { "n", 222557 },	-- Magni Bronzebeard
 				["coord"] = { 44.5, 44.5, DORNOGAL },
 			}),

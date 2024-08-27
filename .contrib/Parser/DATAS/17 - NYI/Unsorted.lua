@@ -762,7 +762,6 @@ root(ROOTS.Unsorted, {
 				i(225993),	-- Cursed Copper Crossbow
 				i(225994),	-- Simple Copper Staff
 				i(225997),	-- Earthen Adventurer's Spaulders
-				i(225998),	-- Earthen Adventurer's Cloak
 				i(226000),	-- Ensemble: Earthen Adventurer's Copper Drapery
 				i(226006),	-- Plunderlord's Radiant Drapery
 				i(226007),	-- Plunderlord's Radiant Muckscrapers
@@ -1429,7 +1428,6 @@ root(ROOTS.Unsorted, {
 				i(216684),	-- Earthen Sword
 				i(216685),	-- Earthen Shield
 				i(216686),	-- Earthen Axe
-				i(216689),	-- Albert's Head
 				i(217142),	-- Earthen Limb
 				i(217310),	-- The Foremans' First Scroll
 				i(217311),	-- The Foreman's Second Scroll
@@ -1608,7 +1606,6 @@ root(ROOTS.Unsorted, {
 				i(221237),	-- Lamentable Vagrant's Lantern
 				i(221238),	-- Pillar of Constructs
 				i(221242),	-- Forgeborn Helm
-				i(221251),	-- Bestial Underground Cleaver
 				i(221253),	-- Cultivator's Plant Puncher
 				i(221254),	-- Earthshatter Lance
 				i(221505),	-- [DNT] Rare Cloth - Robe
