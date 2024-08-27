@@ -279,6 +279,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 63.8, 32.0, HALLOWFALL },
 						["questID"] = 82559,
 						["g"] = {
+							i(223005),	-- String of Fungal Fruits
 							i(223927),	-- Vinewrapped Leather Tunic
 						},
 					}),

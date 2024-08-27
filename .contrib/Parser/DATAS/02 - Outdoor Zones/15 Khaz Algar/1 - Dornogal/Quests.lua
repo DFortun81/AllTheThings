@@ -184,7 +184,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			hqt(82541, {	-- Stay awhile and listen: Merrix <Councilward>
 				["name"] = "Stay awhile and listen: Merrix <Councilward>",
-				["sourceQuests"] = { 78546 },	-- Recompense
+				["sourceQuests"] = { 79344 },	-- Urban Odyssey
 				["provider"] = { "n", 214916 },	-- Merrix <Councilward>
 				["coord"] = { 29.7, 71.4, DORNOGAL },
 			}),

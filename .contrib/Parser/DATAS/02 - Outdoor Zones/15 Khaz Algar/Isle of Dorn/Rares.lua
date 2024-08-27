@@ -86,6 +86,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(219270, {	-- Kronolith, Might of the Mountain
 				["coord"] = { 48.1, 27.0, ISLE_OF_DORN },
 				["questID"] = 81902,
+				["g"] = {
+					i(221210),	-- Grips of the Earth
+				},
 			}),
 			n(220890, {	-- Matriarch Charfuria
 				["description"] = "Walking around in the area.",

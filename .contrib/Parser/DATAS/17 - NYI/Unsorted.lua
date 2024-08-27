@@ -745,7 +745,6 @@ root(ROOTS.Unsorted, {
 				i(224168),	-- Stonebound Tabard \\ Silver Earthen Tabard \\ [PH] Earthen Tabard
 				i(224169),	-- Freywold Tabard \\ Sage Earthen Tabard \\ [PH] Earthen Tabard
 				i(225752),	-- Dornogal Defender
-				i(225756),	-- Coreway Shovel
 				i(225757),	-- Coreway Pickaxe
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
 				i(225974),	-- Swabbie's Cap \\ Teal Beanie
@@ -1358,7 +1357,6 @@ root(ROOTS.Unsorted, {
 				i(227320),	-- Wicker Wisps
 				i(227328),	-- Wax Fondue
 				i(227329),	-- Still-Twitching Gumbo
-				i(223870),	-- Cache Key
 				i(227668),	-- Delver's Bounty
 				i(227677),	-- Satchel of Enchanting Surplus
 				i(227678),	-- Satchel of Engineering Surplus
@@ -1609,8 +1607,6 @@ root(ROOTS.Unsorted, {
 			n(RARES, {
 				i(221066),	-- Template - Accessory - Finger
 				i(221093),	-- Deeply Corrupted Coil
-				i(221209),	-- Flame Trader's Gloves
-				i(221210),	-- Grips of the Earth
 				i(221230),	-- Storm Bindings
 				i(221231),	-- Steam-Powered Wristwatch
 				i(221232),	-- Polished Goblin Bling
@@ -1622,7 +1618,6 @@ root(ROOTS.Unsorted, {
 				i(221253),	-- Cultivator's Plant Puncher
 				i(221254),	-- Earthshatter Lance
 				i(221505),	-- [DNT] Rare Cloth - Robe
-				i(223005),	-- String of Fungal Fruits
 				i(223915),	-- Nerubian Orator's Stiletto
 				i(223916),	-- Nerubian Cutthroat's Reach
 				i(223917),	-- Nerubian Covert's Cloak

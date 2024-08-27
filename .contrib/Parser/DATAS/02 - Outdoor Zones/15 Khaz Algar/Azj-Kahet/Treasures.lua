@@ -14,8 +14,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(225544),	-- Mind Slurp (PET!)
 				},
 			}),
-
-
 			o(446419, {	-- Concealed Contraband
 				["coord"] = { 36.3, 63.9, AZJ_KAHET },
 				["questID"] = 82525,
