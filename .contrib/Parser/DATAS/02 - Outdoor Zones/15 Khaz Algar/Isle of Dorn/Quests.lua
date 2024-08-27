@@ -5,9 +5,6 @@ local TEMPORARY_SOURCEQUEST = 78536;	-- Set to Completing First Chapter
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(ISLE_OF_DORN, {
 		n(QUESTS, {
-			-- Using Questauren These gets completed (Probably Inbetween Bronzebeard Family and Violet Impact)
-			q(82199),	--
-			--
 			header(HEADERS.Achievement, 20118, {	-- The Isle of Dorn
 				q(81966, {	-- Slept like a Rock
 					["description"] = "Requires re-logging to be accepted",

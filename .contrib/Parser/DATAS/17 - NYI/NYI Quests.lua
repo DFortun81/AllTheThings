@@ -8828,4 +8828,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(77907),	-- Shadow Spear
 		})),
 	}),
+	expansion(EXPANSION.TWW, {
+		-- 10.0.0
+		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+			q(82199),	-- TWW Alpha/Beta Questauren Isle of Dorn skip
+			q(82200),	-- TWW Alpha/Beta Questauren Ringing Deeps skip
+			q(82201),	-- TWW Alpha/Beta Questauren Hallowfall skip
+			q(82202),	-- TWW Alpha/Beta Questauren Azj-Kahet skip
+		})),
+	}),
 }));

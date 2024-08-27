@@ -1527,7 +1527,6 @@ root(ROOTS.Unsorted, {
 				i(219397),	-- Earthen Boots
 				i(219398),	-- Earthen Chain
 				i(219428),	-- Earthen Waistguard
-				i(219458),	-- Earthen Traveler's Dagger
 				-- Earthen stuff again? Maybe erm.. Heritage?
 				i(224195),	-- Earthen Shoulders
 				i(224196),	-- Earthen Trousers
@@ -1995,7 +1994,6 @@ root(ROOTS.Unsorted, {
 			title(568),	-- <Name>, Machine-Warden
 			i(226218),	-- Machine-Warden's Cloak
 			-- Fallout
-			i(219456),	-- Earthen Traveler's Scepter
 			i(219934),	-- Spark of War
 			i(220693),	-- Coffer Key Shard \\ Delve Key Fragment
 			i(224183),	-- Bleak Chum

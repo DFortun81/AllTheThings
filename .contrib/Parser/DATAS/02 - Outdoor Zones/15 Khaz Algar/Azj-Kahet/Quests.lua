@@ -1157,7 +1157,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 			}),
 
-			-- Stay a while
+			-- Stay awhile and listen
 			hqt(81946, {	-- Stay awhile and listen: Anduin Wrynn
 				["name"] = "Stay awhile and listen: Anduin Wrynn",
 				["sourceQuests"] = { 78228 },	-- Into a Skittering City

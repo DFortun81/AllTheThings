@@ -1304,7 +1304,7 @@ root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
 		q(75193),    -- Solicited Opinions question 1 answer 3
 		q(75192),    -- Solicited Opinions question 1 answer 2
 		q(75191),    -- Solicited Opinions question 1 answer 1
-		-- Stay awhile Listening
+		-- Stay awhile and listen
 		q(73960),	-- (spellID 406027)
 		-- 10.1.7
 		-- Nozdormu & Eternus

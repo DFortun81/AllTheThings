@@ -96,8 +96,8 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(80199),	-- Bow of the Ranger Captain
 		q(80450),	-- Arsenal: Voidtouched Weaponry
 		q(80198),	-- Triggered with completion of Quest 79016
-		q(80019),	-- Stay a while and listen - Magister Umbric (n: 217360)
-		q(80021),	-- Stay a while and listen - Archmage Khadgar (n: 214972), autoplay first time after turn in questID 79021 (Radiant Warnings)
+		q(80019),	-- Stay awhile and listen - Magister Umbric (n: 217360)
+		q(80021),	-- Stay awhile and listen - Archmage Khadgar (n: 214972), autoplay first time after turn in questID 79021 (Radiant Warnings)
 		q(80020, {	-- Stay awhile and listen: Locus-Walker
 			["name"] = "Stay awhile and listen: Locus-Walker",
 			["sourceQuests"] = { 79010 },	-- Door to the Ren'dorei
