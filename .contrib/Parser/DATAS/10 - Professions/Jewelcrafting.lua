@@ -848,9 +848,9 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 					i(226318),	-- Carved Stone File
 				},
 			}),
-			o(455976, {	-- Earth Gem Pliers
+			o(455976, {	-- Earthen Gem Pliers
 				["coord"] = { 34.9, 52.3, DORNOGAL },
-				["questID"] = 83844,
+				["questID"] = 83891,
 				["g"] = {
 					i(226317),	-- Earthen Gem Pliers
 				},

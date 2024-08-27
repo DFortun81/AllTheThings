@@ -5380,6 +5380,20 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 		}),
 		n(TREASURES, {
+			o(455985, {	-- Dornogal Scribe's Quill
+				["coord"] = { 57.1, 46.98, DORNOGAL },
+				["questID"] = 83882,
+				["g"] = {
+					i(226308),	-- Dornogal Scribe's Quill
+				},
+			}),
+			o(455984, {	-- Historian's Dip Pen
+				["coord"] = { 55.9, 60.0, ISLE_OF_DORN },
+				["questID"] = 83886,
+				["g"] = {
+					i(226309),	-- Historian's Dip Pen
+				},
+			}),
 			o(455981, {	-- Informant's Fountain Pen
 				["coord"] = { 43.2, 58.9, HALLOWFALL },
 				["questID"] = 83886,
