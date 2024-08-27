@@ -4,6 +4,17 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(EMERALD_DREAM, {
 		n(DRAGONRIDING_RACING, {
+			i(210549,	-- Dream Racer's Purse
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+				i(207765),	-- Grotto Netherwing Drake: Cluster Spiked Crest (DM!)
+				i(207778),	-- Grotto Netherwing Drake: Double Finned Tail (DM!)
+				i(207758),	-- Grotto Netherwing Drake: Spiked Back (DM!)
+				i(207768),	-- Grotto Netherwing Drake: Volatile Pattern (DM!)
+				i(203343),	-- Winding Slitherdrake: Hairy Jaw (DM!) (discord report from user dumbomb in #error)
+				i(203333),	-- Winding Slitherdrake: Short Horns (DM!) (discord report from user shinshiva in #general)
+				i(203360),	-- Winding Slitherdrake: Large Finned Tail (DM!) (discord report from user nohh in #error)
+				i(203337),	-- Winding Slitherdrake: Thorn Horns (DM!)
+			})),			
 			header(HEADERS.Achievement, 19120, {	-- Emerald Dream Racing Completionist: Gold
 				n(ACHIEVEMENTS, {
 					ach(19109, {	-- Emerald Dream: Bronze
@@ -502,6 +513,37 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 				}),
 			}),
+			n(WORLD_QUESTS, sharedData({
+				["sourceQuests"] = {
+					71232,	-- Renown of the Dragon Isles
+					DF_ACCOUNT_CAMPAIGN_QUEST,
+				},
+				["sourceQuestNumRequired"] = 1,
+				["maxReputation"] = { FACTION_VALDRAKKEN_ACCORD, 30 },
+				["isWorldQuest"] = true,
+				["timeline"] = { ADDED_10_2_0 },
+				["sym"] = {{"select","itemID",210549}},	-- Dream Racer's Purse
+			}, {
+				------ The Emerald Dream EMERALD_DREAM ------
+				q(78438, {	-- Dragonrider Racing - Canopy Concours
+					["coord"] = { 62.8, 88.1, EMERALD_DREAM },
+				}),
+				q(78439, {	-- Dragonrider Racing - Emerald Amble
+					["coord"] = { 32.4, 47.9, EMERALD_DREAM },
+				}),
+				q(78437, {	-- Dragonrider Racing - Shoreline Switchback
+					["coord"] = { 69.4, 52.8, EMERALD_DREAM },
+				}),
+				q(78435, {	-- Dragonrider Racing - Smoldering Sprint
+					["coord"] = { 37.3, 44.0, EMERALD_DREAM },
+				}),
+				q(78436, {	-- Dragonrider Racing - Viridescent Venture
+					["coord"] = { 35.2, 55.2, EMERALD_DREAM },
+				}),
+				q(78434, {	-- Dragonrider Racing - Ysera Invitationa
+					["coord"] = { 59.1, 29.1, EMERALD_DREAM },
+				}),
+			})),
 		}),
 	}),
 })));

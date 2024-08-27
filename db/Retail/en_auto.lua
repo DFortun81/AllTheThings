@@ -3345,6 +3345,7 @@ local keys = {
 [83134]="Increased Cliffside Wylderdrake: Midsummer Fire Festival Armor Droprate (Daily Accountwide)",
 [83253]="TWW: Alchemy Treasure #1",
 [83255]="TWW: Alchemy Treasure #2",
+[83257]="Blacksmithing Treasure #1",
 [83258]="TWW: Enchanting Treasure #1",
 [83267]="TWW: Leatherworking Treasure #1",
 [83268]="TWW: Leatherworking Treasure #2",
