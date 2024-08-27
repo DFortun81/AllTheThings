@@ -3368,6 +3368,7 @@ local keys = {
 [84335]="Stay awhile and listen: Alleria Windrunner",
 [84620]="Stay awhile and listen: Magni Bronzebeard",
 [84699]="Stay awhile and listen: Moira Thaurissan",
+[84813]="Stay awhile and listen: Rooktender Lufsela",
 [84814]="Stay awhile and listen: Dagran Thaurissan II",
 [84815]="Stay awhile and listen: Merrix <Councilward>"},
 ["SOURCE_NAMES"]={

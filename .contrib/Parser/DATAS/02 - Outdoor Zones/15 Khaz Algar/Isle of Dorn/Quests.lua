@@ -375,9 +375,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 33.3, 63.3, ISLE_OF_DORN },
 					["g"] = {
 						i(223875),	-- Algari Censer
+						i(223874),	-- Algari Dagger
+						i(223877),	-- Algari Hatchet
 						i(223871),	-- Algari Heavy Axe
 						i(223872),	-- Algari Mace
 						i(223873),	-- Algari Shield
+						i(223876),	-- Algari Warglaive
 					},
 				}),
 				q(81915, {	-- Home to Roost
@@ -1262,6 +1265,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81614, {	-- One Fin, Two Fin, Pearlfin, Dead Fin
 					["coord"] = { 50.5, 80.2, ISLE_OF_DORN },	-- need more accurate coords from popup
 				}),
+			}),
+
+			-- Stay awhile and listen
+			hqt(84813, {	-- Stay awhile and listen: Rooktender Lufsela
+				["name"] = "Stay awhile and listen: Rooktender Lufsela",
+				["sourceQuests"] = { 79146 },	-- Ground Pounders
+				["provider"] = { "n", 215039 },	-- Rooktender Lufsela
+				["coord"] = { 27.8, 60.8, ISLE_OF_DORN },
 			}),
 		}),
 	}),

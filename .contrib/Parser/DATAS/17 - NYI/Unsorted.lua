@@ -1642,9 +1642,6 @@ root(ROOTS.Unsorted, {
 				i(223548),	-- Algari Rifle
 				i(223585),	-- Algari Bladefist
 				i(223588),	-- Algari Fighting Knife
-				i(223874),	-- Algari Dagger
-				i(223876),	-- Algari Warglaive
-				i(223877),	-- Algari Hatchet
 				i(228436),	-- United Arathi's Jerkin
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
