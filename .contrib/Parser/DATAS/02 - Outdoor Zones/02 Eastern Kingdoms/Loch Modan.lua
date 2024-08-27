@@ -351,7 +351,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(26843, {	-- A Tiny, Clever Commander
 					["qg"] = 1343,	-- Mountaineer Stormpike
-					-- ["sourceQuest"] = 13636,	-- Stormpike's Orders [Not Required, Discord 2023-7-31]
+					["sourceQuest"] = 13636,	-- Stormpike's Orders
 					["coord"] = { 25.4, 17.9, LOCH_MODAN },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
