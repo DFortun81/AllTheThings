@@ -12,7 +12,7 @@ ZONE_REWARDS = createHeader({
 		cn = "区域奖励",
 	},
 	description = {
-		en = "These items can drop from many many sources and are usually not difficult to obtain either.\n\While not every source is possible in every Zone, here is a list of possible Sources:\nEmissary Quest (Legion&later)\nRare NPCs (MoP&later)\nRepeatable Treasure Chests (SL)\nTable missions (Legion&later)\nWish Crickets (SL)\nWorld Quests (Legion&later)\nZone Drops (MoP&later)",
+		en = "These items can drop from many many sources and are usually not difficult to obtain either.\n\nWhile not every source is possible in every Zone, here is a list of possible Sources:\nEmissary Quest (Legion&later)\nRare NPCs (MoP&later)\nRepeatable Treasure Chests (SL)\nTable missions (Legion&later)\nWish Crickets (SL)\nWorld Quests (Legion&later)\nZone Drops (MoP&later)",
 		--TODO: update other locales
 		fr = "Ces objets peuvent provenir de coffres au trésor répétitifs, Criquet à souhait, de quêtes mondiales ou des missions de la table de commandement.",
 		ru = "Эти предметы можно получить в награду из:\nЗадания эмиссара (Легион+)\nПовторяемые сокровища (ТЗ+)\nЗадания командирского стола (Легион+)\nЗаветные сверчки (ТЗ)\nЛокальные задания (Легион+)",
