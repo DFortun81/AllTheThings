@@ -1,6 +1,12 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
+local function ClassicCost(cost)
+	-- This data is provided by ReagentsDB in Retail
+	-- #IF ANYCLASSIC
+	return cost
+	-- #ENDIF
+end
 root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_5 } }, {
 	i(180055, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I
 	i(180057, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II
@@ -1057,32 +1063,32 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		}),
 		spell(2656, {	-- Smelting
 			i(23446, {    -- Adamantite Bar
-				["cost"] = { { "i", 23425, 2 } },    -- Adamantite Ore
+				ClassicCost({ { "i", 23425, 2 } }),    -- Adamantite Ore
 			}),
 			i(23447, {    -- Eternium Bar
-				["cost"] = { { "i", 23427, 2 } },    -- Eternium Ore
+				ClassicCost({ { "i", 23427, 2 } }),    -- Eternium Ore
 			}),
 			i(23445, {    -- Fel Iron Bar
-				["cost"] = { { "i", 23424, 2 } },    -- Fel Iron Ore
+				ClassicCost({ { "i", 23424, 2 } }),    -- Fel Iron Ore
 			}),
 			i(23448, {    -- Felsteel Bar
-				["cost"] = {
+				ClassicCost({
 					{ "i", 23445, 3 },	-- Fel Iron Bar
 					{ "i", 23447, 2 },	-- Eternium Bar
-				},
+				}),
 			}),
 			i(23573, {    -- Hardened Adamantite Bar
-				["cost"] = { { "i", 23446, 10 } },    -- Adamantite Bar
+				ClassicCost({ { "i", 23446, 10 } }),    -- Adamantite Bar
 			}),
 			applyclassicphase(TBC_PHASE_FIVE, i(35128, {    -- Hardened Khorium Bar
 				["timeline"] = {ADDED_2_4_0},
-				["cost"] = {
+				ClassicCost({
 					{ "i", 23449, 3 },    -- Khorium Bar
 					{ "i", 23573, 1 },    -- Hardened Adamantite Bar
-				},
+				}),
 			})),
 			i(23449, {    -- Khorium Bar
-				["cost"] = { { "i", 23426, 2 } },    -- Khorium Ore
+				ClassicCost({ { "i", 23426, 2 } }),    -- Khorium Ore
 			}),
 		}),
 	}),

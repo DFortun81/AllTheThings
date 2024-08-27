@@ -1,6 +1,12 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
+local function ClassicCost(cost)
+	-- This data is provided by ReagentsDB in Retail
+	-- #IF ANYCLASSIC
+	return cost
+	-- #ENDIF
+end
 root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_ONE, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3 } }, {
 	i(180055, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I
 	i(180057, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II
@@ -783,7 +789,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 	prof(JEWELCRAFTING, {
 		category(168, {	-- Materials
 			applyclassicphase(WRATH_PHASE_THREE, i(46849, {	-- Titanium Powder
-				["cost"] = {{ "i", 36910, 5 }},	-- Titanium Ore
+				ClassicCost({{ "i", 36910, 5 }}),	-- Titanium Ore
 			})),
 		}),
 		filter(NECK_F, {
@@ -1025,21 +1031,21 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 		}),
 		spell(2656, {	-- Smelting
 			i(36916, {	-- Cobalt Bar
-				["cost"] = { { "i", 36909, 1 } },	-- Cobalt Ore
+				ClassicCost({ { "i", 36909, 1 } }),	-- Cobalt Ore
 			}),
 			i(36913, {	-- Saronite Bar
-				["cost"] = { { "i", 36912, 2 } },	-- Saronite Ore
+				ClassicCost({ { "i", 36912, 2 } }),	-- Saronite Ore
 			}),
 			i(41163, {	-- Titanium Bar
-				["cost"] = { { "i", 36910, 2 } },	-- Titanium Ore
+				ClassicCost({ { "i", 36910, 2 } }),	-- Titanium Ore
 			}),
 			i(37663, {	-- Titansteel Bar
-				["cost"] = {
+				ClassicCost({
 					{ "i", 41163, 3 },	-- Titanium Bar
 					{ "i", 35624, 1 },	-- Eternal Earth
 					{ "i", 36860, 1 },	-- Eternal Fire
 					{ "i", 35627, 1 },	-- Eternal Shadow
-				},
+				}),
 				["OnTooltip"] = [[function(t, tooltipInfo)
 					if _.CurrentCharacter.Spells[55208] then
 						if ]] .. WOWAPI_GetSpellCooldown(55208) .. [[ > 0 then

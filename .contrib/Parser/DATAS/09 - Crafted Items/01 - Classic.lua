@@ -1,6 +1,12 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
+local function ClassicCost(cost)
+	-- This data is provided by ReagentsDB in Retail
+	-- #IF ANYCLASSIC
+	return cost
+	-- #ENDIF
+end
 root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 	i(180055, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past I
 	i(180057, {["timeline"] = {ADDED_9_0_1}}),	-- Relic of the Past II
@@ -3129,60 +3135,60 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 		}),
 		spell(2656, {	-- Smelting
 			i(2841, {    -- Bronze Bar
-				["cost"] = {
+				ClassicCost({
 					{ "i", 2840, 1 },    -- Copper Bar
 					{ "i", 3576, 1 },    -- Tin Bar
-				},
+				}),
 			}),
 			i(2840, {    -- Copper Bar
-				["cost"] = { { "i", 2770, 1 } },    -- Copper Ore
+				ClassicCost({ { "i", 2770, 1 } }),    -- Copper Ore
 			}),
 			i(11371, {    -- Dark Iron Bar
-				["cost"] = { { "i", 11370, 8 } },    -- Dark Iron Ore
+				ClassicCost({ { "i", 11370, 8 } }),    -- Dark Iron Ore
 			}),
 			i(17771, {    -- Enchanted / Elementium Bar
-				["cost"] = {
+				ClassicCost({
 					{ "i", 18562, 1 },    -- Elementium Ore
 					{ "i", 12360, 10 },    -- Arcanite Bar
 					{ "i", 17010, 1 },    -- Fiery Core
 					{ "i", 18567, 3 },    -- Elemental Flux
-				},
+				}),
 			}),
 			-- #if AFTER 3.3.0
 			i(12655, {    -- Enchanted Thorium Bar
 				["timeline"] = { ADDED_3_3_3 },
-				["cost"] = {
+				ClassicCost({
 					{ "i", 12359, 1 },    -- Thorium Bar
 					{ "i", 11176, 3 },    -- Dream Dust
-				},
+				}),
 			}),
 			-- #endif
 			i(3577, {    -- Gold Bar
-				["cost"] = { { "i", 2776, 1 } },    -- Gold Ore
+				ClassicCost({ { "i", 2776, 1 } }),    -- Gold Ore
 			}),
 			i(3575, {    -- Iron Bar
-				["cost"] = { { "i", 2772, 1 } },    -- Iron Ore
+				ClassicCost({ { "i", 2772, 1 } }),    -- Iron Ore
 			}),
 			i(3860, {    -- Mithril Bar
-				["cost"] = { { "i", 3858, 1 } },    -- Mithril Ore
+				ClassicCost({ { "i", 3858, 1 } }),    -- Mithril Ore
 			}),
 			i(2842, {    -- Silver Bar
-				["cost"] = { { "i", 2775, 1 } },    -- Silver Ore
+				ClassicCost({ { "i", 2775, 1 } }),    -- Silver Ore
 			}),
 			i(3859, {    -- Steel Bar
-				["cost"] = {
+				ClassicCost({
 					{ "i", 3575, 1 },    -- Iron Bar
 					{ "i", 3857, 1 },    -- Coal
-				},
+				}),
 			}),
 			i(12359, {    -- Thorium Bar
-				["cost"] = { { "i", 10620, 1 } },    -- Thorium Ore
+				ClassicCost({ { "i", 10620, 1 } }),    -- Thorium Ore
 			}),
 			i(3576, {    -- Tin Bar
-				["cost"] = { { "i", 2771, 1 } },    -- Tin Ore
+				ClassicCost({ { "i", 2771, 1 } }),    -- Tin Ore
 			}),
 			i(6037, {    -- Truesilver Bar
-				["cost"] = { { "i", 7911, 1 } },    -- Truesilver Ore
+				ClassicCost({ { "i", 7911, 1 } }),    -- Truesilver Ore
 			}),
 		}),
 	}),
