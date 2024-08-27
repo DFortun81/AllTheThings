@@ -1301,14 +1301,14 @@ end
 MergeObjects = function(g, g2, newCreate)
 	if not g or not g2 then return end
 	if #g2 > 25 then
-		local hashTable,t = {},nil;
+		local t, hash
+		local hashTable = {}
 		for i,o in ipairs(g) do
 			local hash = o.hash;
 			if hash then
 				hashTable[hash] = o;
 			end
 		end
-		local hash;
 		if newCreate then
 			for i,o in ipairs(g2) do
 				hash = o.hash;
@@ -3565,7 +3565,29 @@ local function FillGroupDirect(group, FillData, doDGU)
 	end
 end
 -- Iterates through all groups of the group, filling them with appropriate data, then recursively follows the next layer of groups
-local function FillGroupsRecursive(group, FillData)
+-- local function FillGroupsRecursive(group, FillData)
+-- 	if SkipFillingGroup(group, FillData) then
+-- 		-- if FillData.Debug then
+-- 		-- 	app.print(Colorize("FGR-SKIP",app.Colors.ChatLinkError),app:SearchLink(group))
+-- 		-- end
+-- 		-- app.PrintDebug(Colorize("FGR-SKIP",app.Colors.ChatLinkError),app:SearchLink(group))
+-- 		return;
+-- 	end
+-- 	-- app.PrintDebug("FGR",group.hash)
+
+-- 	FillGroupDirect(group, FillData)
+
+-- 	local g = group.g;
+-- 	if g then
+-- 		-- app.PrintDebug(".g",group.hash,#g)
+-- 		-- Then nest anything further
+-- 		for _,o in ipairs(g) do
+-- 			FillGroupsRecursive(o, FillData);
+-- 		end
+-- 	end
+-- end
+-- Fills the group and returns an array of the next layer of groups to fill
+local function FillGroupsLayered(group, FillData)
 	if SkipFillingGroup(group, FillData) then
 		-- if FillData.Debug then
 		-- 	app.print(Colorize("FGR-SKIP",app.Colors.ChatLinkError),app:SearchLink(group))
@@ -3577,14 +3599,7 @@ local function FillGroupsRecursive(group, FillData)
 
 	FillGroupDirect(group, FillData)
 
-	local g = group.g;
-	if g then
-		-- app.PrintDebug(".g",group.hash,#g)
-		-- Then nest anything further
-		for _,o in ipairs(g) do
-			FillGroupsRecursive(o, FillData);
-		end
-	end
+	return group.g
 end
 -- Iterates through all groups of the group, filling them with appropriate data, then queueing itself on the FillData.Runner to recursively follow the next layer of groups
 -- over multiple frames to reduce stutter
@@ -3646,7 +3661,23 @@ app.FillGroups = function(group)
 		Runner.Run(FillGroupsRecursiveAsync, group, FillData);
 	else
 		-- app.PrintDebug("FG",group.hash)
-		FillGroupsRecursive(group, FillData);
+		-- this performs depth-first filling which leads to usually one group having tons of nesting
+		-- and other top-level groups being skipped as they had some other means of being
+		-- filled in a deeper group
+		-- FillGroupsRecursive(group, FillData);
+
+		-- this logic performs fills across an entire logical layer of data via a breadth-first approach
+		-- which should ideally have less nesting in total
+		local FillLayer = {group}
+		local NextLayer = {}
+		while #FillLayer > 0 do
+			for _,fillGroup in ipairs(FillLayer) do
+				app.ArrayAppend(NextLayer, FillGroupsLayered(fillGroup, FillData))
+			end
+			FillLayer = NextLayer
+			NextLayer = {}
+		end
+
 		-- app.PrintDebugPrior("FG",group.hash)
 	end
 
