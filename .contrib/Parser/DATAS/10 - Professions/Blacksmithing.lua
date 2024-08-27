@@ -1256,7 +1256,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["g"] = {
 				currency(TWW_BLACKSMITHING_KNOWLEDGE),
 			},
-		 }, {
+		}, {
 			q(83726, {	-- Inscription Order: Blacksmithing
 				["name"] = "Inscription Order: Blacksmithing",
 				["description"] = "Requires a crafting order from Inscription.",

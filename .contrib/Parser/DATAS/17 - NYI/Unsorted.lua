@@ -586,11 +586,6 @@ root(ROOTS.Unsorted, {
 				i(225230),	-- Crystalline Repository
 				i(225232),	-- Coreway Billet
 				i(225233),	-- Dense Bladestone
-				i(226279),	-- Earthen Chisels
-				i(226280),	-- Holy Flame Forge
-				i(226281),	-- Radiant Tongs
-				i(226282),	-- Nerubian Smith's Kit
-				i(226283),	-- Spiderling's Wire Brush
 				i(226308),	-- Dornogal Scribe's Quill
 				i(226309),	-- Historian's Dip Pen
 				i(226310),	-- Runic Scroll
