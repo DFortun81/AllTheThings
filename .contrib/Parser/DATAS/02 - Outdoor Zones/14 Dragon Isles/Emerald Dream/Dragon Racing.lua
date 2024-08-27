@@ -3,18 +3,7 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(EMERALD_DREAM, {
-		n(DRAGONRIDING_RACING, {
-			i(210549,	-- Dream Racer's Purse
-			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
-				i(207765),	-- Grotto Netherwing Drake: Cluster Spiked Crest (DM!)
-				i(207778),	-- Grotto Netherwing Drake: Double Finned Tail (DM!)
-				i(207758),	-- Grotto Netherwing Drake: Spiked Back (DM!)
-				i(207768),	-- Grotto Netherwing Drake: Volatile Pattern (DM!)
-				i(203343),	-- Winding Slitherdrake: Hairy Jaw (DM!) (discord report from user dumbomb in #error)
-				i(203333),	-- Winding Slitherdrake: Short Horns (DM!) (discord report from user shinshiva in #general)
-				i(203360),	-- Winding Slitherdrake: Large Finned Tail (DM!) (discord report from user nohh in #error)
-				i(203337),	-- Winding Slitherdrake: Thorn Horns (DM!)
-			})),			
+		n(DRAGONRIDING_RACING, {			
 			header(HEADERS.Achievement, 19120, {	-- Emerald Dream Racing Completionist: Gold
 				n(ACHIEVEMENTS, {
 					ach(19109, {	-- Emerald Dream: Bronze
@@ -512,6 +501,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						},
 					}),
 				}),
+			}),
+			n(WORLD_QUESTS, {
+				i(210549,	-- Dream Racer's Purse
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+					i(207765),	-- Grotto Netherwing Drake: Cluster Spiked Crest (DM!)
+					i(207778),	-- Grotto Netherwing Drake: Double Finned Tail (DM!)
+					i(207758),	-- Grotto Netherwing Drake: Spiked Back (DM!)
+					i(207768),	-- Grotto Netherwing Drake: Volatile Pattern (DM!)
+					i(203343),	-- Winding Slitherdrake: Hairy Jaw (DM!) (discord report from user dumbomb in #error)
+					i(203333),	-- Winding Slitherdrake: Short Horns (DM!) (discord report from user shinshiva in #general)
+					i(203360),	-- Winding Slitherdrake: Large Finned Tail (DM!) (discord report from user nohh in #error)
+					i(203337),	-- Winding Slitherdrake: Thorn Horns (DM!)
+				})),
 			}),
 			n(WORLD_QUESTS, sharedData({
 				["sourceQuests"] = {

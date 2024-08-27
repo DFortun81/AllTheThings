@@ -4,17 +4,6 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		n(DRAGONRIDING_RACING, {
-			i(205226,	-- Cavern Racer's Purse
-				bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
-				i(196978),	-- Cliffside Wylderdrake: Small Head Spikes (DM!)
-				i(196997),	-- Cliffside Wylderdrake: Split Horns (DM!)
-				i(197104),	-- Highland Drake: Tapered Chin (DM!)
-				i(202280),	-- Renewed Proto-Drake: Pronged Tail (DM!)
-				i(203361),	-- Winding Slitherdrake: Finned Tip Tail (DM!)
-				i(203348),	-- Winding Slitherdrake: Pointed Nose (DM!)
-				i(203317),	-- Winding Slitherdrake: Small Finned Crest (DM!)
-				i(203342),	-- Winding Slitherdrake: Triple Jaw Horns (DM!)
-			})),
 			header(HEADERS.Achievement, 17494, {	-- Zaralek Cavern Racing Completionist: Gold
 				n(ACHIEVEMENTS, {
 					ach(17483, {	-- Zaralek Cavern: Bronze
@@ -480,6 +469,19 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 				}),
 			})),
+			n(WORLD_QUESTS, {
+				i(205226,	-- Cavern Racer's Purse
+					bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+					i(196978),	-- Cliffside Wylderdrake: Small Head Spikes (DM!)
+					i(196997),	-- Cliffside Wylderdrake: Split Horns (DM!)
+					i(197104),	-- Highland Drake: Tapered Chin (DM!)
+					i(202280),	-- Renewed Proto-Drake: Pronged Tail (DM!)
+					i(203361),	-- Winding Slitherdrake: Finned Tip Tail (DM!)
+					i(203348),	-- Winding Slitherdrake: Pointed Nose (DM!)
+					i(203317),	-- Winding Slitherdrake: Small Finned Crest (DM!)
+					i(203342),	-- Winding Slitherdrake: Triple Jaw Horns (DM!)
+				})),
+			}),
 			n(WORLD_QUESTS, sharedData({
 				["sourceQuests"] = {
 					71232,	-- Renown of the Dragon Isles

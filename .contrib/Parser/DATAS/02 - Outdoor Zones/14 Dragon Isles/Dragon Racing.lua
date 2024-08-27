@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DRAGONRIDING_RACING, {
-		n(REWARDS, {
+		n(WORLD_QUESTS, {
 			["maps"] = {
 				OHNAHRAN_PLAINS,
 				THALDRASZUS,

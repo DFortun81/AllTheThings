@@ -3,6 +3,9 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(DRAGONRIDING_RACING, {
-		i(191140),	-- Bronze Timepiece
+		n(WORLD_QUESTS, {
+			i(191140),	-- Bronze Timepiece
+			i(227450),	-- Sky Racer's Purse
+		}),
 	}),
 })));

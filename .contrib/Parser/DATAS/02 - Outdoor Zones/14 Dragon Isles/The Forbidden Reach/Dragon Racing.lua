@@ -4,13 +4,6 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		n(DRAGONRIDING_RACING, {
-			i(204359,	-- Reach Racer's Purse
-			bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
-				i(197002),	-- Cliffside Wylderdrake: Flared Cheek (DM!)
-				i(197124),	-- Highland Drake: Swept Horns (DM!)
-				i(202274),	-- Renewed Proto-Drake: Plated Brow (DM!)
-				i(197594),	-- Windborne Velocidrake: Small Ears (DM!)
-			})),
 			header(HEADERS.Achievement, 17298, {	-- Forbidden Reach Racing Completionist: Gold
 				n(ACHIEVEMENTS, {
 					ach(17279, {	-- Forbidden Reach: Bronze
@@ -489,6 +482,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					i(207776),	-- Grotto Netherwing Drake: Black Scales (DM!)
 				},
 			})),
+			n(WORLD_QUESTS, {
+				i(204359,	-- Reach Racer's Purse
+				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
+					i(197002),	-- Cliffside Wylderdrake: Flared Cheek (DM!)
+					i(197124),	-- Highland Drake: Swept Horns (DM!)
+					i(202274),	-- Renewed Proto-Drake: Plated Brow (DM!)
+					i(197594),	-- Windborne Velocidrake: Small Ears (DM!)
+				})),
+			}),
 			n(WORLD_QUESTS, sharedData({
 				["sourceQuests"] = {
 					71232,	-- Renown of the Dragon Isles
