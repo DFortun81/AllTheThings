@@ -3364,18 +3364,52 @@ local function DeterminePurchaseGroups(group, FillData)
 		return groups;
 	end
 end
+local function DetermineRecipeOutputGroups(group, FillData)
+	local recipeID = group.recipeID;
+	if not recipeID then return end
+	-- only fill root recipes or those marked as 'fillable'
+	if not group.fillable and FillData.Root ~= group then return end
+
+	-- this would be more efficient as a RecipeDB instead if that becomes a thing
+	local info
+	for reagent,recipes in pairs(app.ReagentsDB) do
+		info = recipes[recipeID]
+		if info then break end
+	end
+	if not info then return end
+
+	local skipLevel = FillData.SkipLevel or 0
+	-- track crafted items which are filled across the entire fill sequence
+	local craftedItems = FillData.CraftedItems
+
+	local recipeMod = recipeID / 1000000
+	local craftedItemID = info[1];
+	if craftedItemID and (skipLevel > 1 or not craftedItems[craftedItemID + recipeMod]) then
+		craftedItems[craftedItemID + recipeMod] = true
+		local search = SearchForObject("itemID",craftedItemID,"field")
+		search = (search and CreateObject(search)) or app.CreateItem(craftedItemID)
+		-- app.PrintDebug("DetermineRecipeOutput",app:SearchLink(group),"=>",app:SearchLink(search))
+		return {search}
+	end
+end
 local function DetermineCraftedGroups(group, FillData)
 	local itemID = group.itemID;
-	if not itemID then return; end
 	local itemRecipes = app.ReagentsDB[itemID];
-	if not itemRecipes then return; end
+	-- if we're filling a window (level 2) for a Reagent
+	-- then we will allow showing the same crafted item multiple times
+	-- so that different reagents can all be visible for the same purpose
+	local expandedNesting = (FillData.SkipLevel or 0) > 1 and FillData.FillRecipes
+	-- if not itemRecipes then return; end
+	if not itemRecipes then
+		if expandedNesting then
+			return DetermineRecipeOutputGroups(group, FillData)
+		end
+		return
+	end
 
 	local craftableItemIDs = {}
 	-- track crafted items which are filled across the entire fill sequence
 	local craftedItems = FillData.CraftedItems
-	-- if we're filling a window (level 2) then we will allow showing the same crafted item multiple times
-	-- so that different reagents can all be visible for the same purpose
-	local skipLevel = FillData.SkipLevel or 0
 	local craftedItemID, recipe, skillID
 
 	-- If needing to filter by skill due to BoP reagent, then check via recipe cache instead of by crafted item
@@ -3384,16 +3418,25 @@ local function DetermineCraftedGroups(group, FillData)
 	-- and include necessary filtering information for each output, i.e. the skillID on outputs
 	-- this should filter properly based on ignoring filters on BoE items & using Debug/Account mode without having to refill
 
+	local groups = {};
 	-- find recipe(s) which creates this item
 	for recipeID,info in pairs(itemRecipes) do
 		craftedItemID = info[1];
 		-- app.PrintDebug(itemID,"x",info[2],"=>",craftedItemID,"via",recipeID,skipLevel);
-		if craftedItemID and not craftableItemIDs[craftedItemID] and (skipLevel > 1 or not craftedItems[craftedItemID]) then
+		if craftedItemID and not craftableItemIDs[craftedItemID] and (expandedNesting or not craftedItems[craftedItemID]) then
 			-- app.PrintDebug("recipeID",recipeID);
 			recipe = SearchForObject("recipeID",recipeID,"key");
 			if recipe then
-				-- crafted items should be considered unique per recipe
-				craftableItemIDs[craftedItemID + (recipeID / 1000000)] = recipe;
+				if expandedNesting then
+					recipe = CreateObject(recipe)
+					recipe.collectible = false
+					recipe.fillable = true
+					recipe.nomerge = true
+					groups[#groups + 1] = recipe
+				else
+					-- crafted items should be considered unique per recipe
+					craftableItemIDs[craftedItemID + (recipeID / 1000000)] = recipe;
+				end
 			else
 				-- app.PrintDebug("Unsourced recipeID",recipe);
 				-- we don't have the Recipe sourced, so just include the crafted item anyway
@@ -3403,22 +3446,23 @@ local function DetermineCraftedGroups(group, FillData)
 		end
 	end
 
-	local groups = {};
-	local search
-	for craftedItemID,recipe in pairs(craftableItemIDs) do
-		craftedItemID = math_floor(craftedItemID)
-		craftedItems[craftedItemID] = true
-		skillID = recipe ~= true and GetRelativeValue(recipe, "skillID") or nil
-		-- Searches for a filter-matched crafted Item
-		search = SearchForObject("itemID",craftedItemID,"field");
-		search = (search and CreateObject(search)) or app.CreateItem(craftedItemID)
-		-- link the respective crafted item object to the skill required by the crafting recipe
-		search.requireSkill = skillID
-		-- app.PrintDebug("craftedItemID",craftedItemID,"via skill",skillID)
-		groups[#groups + 1] = search
+	if not expandedNesting then
+		local search
+		for craftedItemID,recipe in pairs(craftableItemIDs) do
+			craftedItemID = math_floor(craftedItemID)
+			craftedItems[craftedItemID] = true
+			skillID = recipe ~= true and GetRelativeValue(recipe, "skillID") or nil
+			-- Searches for a filter-matched crafted Item
+			search = SearchForObject("itemID",craftedItemID,"field");
+			search = (search and CreateObject(search)) or app.CreateItem(craftedItemID)
+			-- link the respective crafted item object to the skill required by the crafting recipe
+			search.requireSkill = skillID
+			-- app.PrintDebug("craftedItemID",craftedItemID,"via skill",skillID)
+			groups[#groups + 1] = search
+		end
 	end
 
-	-- app.PrintDebug("DetermineCraftedGroups",group.hash,groups and #groups);
+	-- app.PrintDebug("DetermineCraftedGroups",app:SearchLink(group),groups and #groups);
 	if #groups > 0 then
 		group.filledReagent = true;
 	end
@@ -3645,7 +3689,8 @@ app.FillGroups = function(group)
 		InWindow = groupWindow and true or nil,
 		NestNPCData = app.Settings:GetTooltipSetting("NPCData:Nested"),
 		SkipLevel = app.GetSkipLevel(),
-		Root = group
+		Root = group,
+		FillRecipes = group.recipeID or app.ReagentsDB[group.itemID or 0]
 	};
 
 	-- app.PrintDebug("FillGroups",app:SearchLink(group),group.__type,"window?",groupWindow)
