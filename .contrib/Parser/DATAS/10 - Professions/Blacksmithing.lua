@@ -1208,11 +1208,46 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 					i(226277),	-- Dornogal Hammer
 				},
 			}),
+			o(456014, {	-- Earthen Chisels
+				["coord"] = { 60.6, 53.8, THE_RINGING_DEEPS },
+				["questID"] = 83851,
+				["g"] = {
+					i(226279),	-- Earthen Chisels
+				},
+			}),
+			o(456013, {	-- Holy Flame Forge
+				["coord"] = { 47.6, 61.0, HALLOWFALL },
+				["questID"] = 83852,
+				["g"] = {
+					i(226280),	-- Holy Flame Forge
+				},
+			}),
+			o(456011, {	-- Nerubian Smith's Kit
+				["coord"] = { 46.6, 22.7, NERUBAR },
+				["questID"] = 83854,
+				["g"] = {
+					i(226282),	-- Nerubian Smith's Kit
+				},
+			}),
+			o(456012, {	-- Radiant Tongs
+				["coord"] = { 44.1, 55.6, HALLOWFALL },
+				["questID"] = 83853,
+				["g"] = {
+					i(226281),	-- Radiant Tongs
+				},
+			}),
 			o(456015, {	-- Ringing Hammer Vise
 				["coord"] = { 47.7, 33.2, THE_RINGING_DEEPS },
 				["questID"] = 83850,
 				["g"] = {
 					i(226278),	-- Ringing Hammer Vise
+				},
+			}),
+			o(456010, {	-- Spiderling's Wire Brush
+				["coord"] = { 53.0, 51.3, NERUBAR },
+				["questID"] = 83855,
+				["g"] = {
+					i(226283),	-- Spiderling's Wire Brush
 				},
 			}),
 		}),
