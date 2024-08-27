@@ -35,7 +35,7 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_0_2, },
 			}),
 			i(190609, {	-- Watcher of the Huntress (PET!)
-				["description"] = "Obtained by gifting an eligible creator's channel two Twitch subscriptions between August 26th, 03:00 p.m. & September 26th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["description"] = "Obtained by gifting an eligible creator's channel two Twitch subscriptions between August 26th, 03:00 p.m. & September 26th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.\n\nSpecial Note: If you buy a sub for yourself and gift one more, that also works!",
 				["timeline"] = { ADDED_11_0_2, },
 				["u"] = BLIZZARD_BALANCE,
 			}),
