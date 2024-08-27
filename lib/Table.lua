@@ -62,13 +62,12 @@ app.ArrayAppend = function(a1, ...)
 	local arrs = select("#", ...);
 	if arrs > 0 then
 		a1 = a1 or {};
-		local i, a = #a1 + 1, nil;
+		local a
 		for n=1,arrs do
 			a = select(n, ...);
 			if a then
 				for ai=1,#a do
-					a1[i] = a[ai];
-					i = i + 1;
+					a1[#a1 + 1] = a[ai];
 				end
 			end
 		end
