@@ -152,6 +152,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				--["coord"] = { X, Y, THE_RINGING_DEEPS },
 				--["questID"] = ,
 				["g"] = {
+					i(221233),	-- Deephunter's Bloody Hook
 					i(223501),	-- Ol' Mole Rufus (MOUNT!)
 				},
 			}),

@@ -169,6 +169,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 217859 },	-- Dagran Thaurissan II
 				["coord"] = { 29.8, 60.0, DORNOGAL },
 			}),
+			hqt(84814, {	-- Stay awhile and listen: Dagran Thaurissan II
+				["name"] = "Stay awhile and listen: Dagran Thaurissan II (Vault of Memory)",
+				["sourceQuests"] = { 83286 },	-- What's Hidden Beneath Dornogal
+				["provider"] = { "n", 217859 },	-- Dagran Thaurissan II
+				["coord"] = { 50.2, 62, VAULT_OF_MEMORY },
+			}),
 			hqt(82541, {	-- Stay awhile and listen: Merrix <Councilward>
 				["name"] = "Stay awhile and listen: Merrix <Councilward>",
 				["sourceQuests"] = { 78546 },	-- Recompense

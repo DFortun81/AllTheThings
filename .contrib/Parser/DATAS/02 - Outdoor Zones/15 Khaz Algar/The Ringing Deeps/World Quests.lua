@@ -64,7 +64,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81656, {	-- Nothing to Waste
 					["coord"] = { 59.2, 52.2, THE_RINGING_DEEPS },
 					["g"] = {
-						i(219468),	-- Mining Tools (QI!)
+						o(419657, {	-- Abandoned Tools
+							i(219468),	-- Mining Tools (QI!)
+						}),
 					},
 				}),
 				q(82518, {	-- Pipe Patcher
@@ -80,7 +82,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 67.8, 34.8, THE_RINGING_DEEPS },
 				}),
 				q(81807, {	-- Skyrider Racing - Earthenworks Weave
-					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
+					["coord"] = { 40.9, 11.3, THE_RINGING_DEEPS },
 				}),
 				q(81808, {	-- Skyrider Racing - Ringing Deeps Ramble
 					["coord"] = { 42.3, 27.4, THE_RINGING_DEEPS },

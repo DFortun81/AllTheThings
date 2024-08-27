@@ -333,9 +333,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(224294, {	-- Osidion <Ensemble Vendor>
+				["description"] = "Cost is based on if a Earth-Encrusted Gem is in your inventory. If none then the ensembles are available for Resonance Crystals.",
 				["coord"] = { 57.3, 60.8, DORNOGAL },
 				["g"] = sharedData({
-					["cost"] = {{"i", 223951, 1}},	-- 1x Earth-Encrusted Gem
+					["cost"] = {
+						{"i", 223951, 1},	-- 1x Earth-Encrusted Gem
+						{"c", RESONANCE_CRYSTALS, 9750},
+					},
 				}, {
 					iensemble(219116),	-- Arcane Peddler's Trinkets
 					iensemble(219100),	-- Cardinal Educator's Knowledge

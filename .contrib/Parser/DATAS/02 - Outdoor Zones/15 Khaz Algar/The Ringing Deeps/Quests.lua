@@ -1305,7 +1305,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 54.6, 71.2, THE_RINGING_DEEPS },
 				}),
 				q(81981, {	-- What Army?
-					["sourceQuests"] = { 80514 },	-- Break out Berrund!
+					["sourceQuests"] = {
+						80514,	-- Break out Berrund!
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 70.7, 39.8, THE_RINGING_DEEPS },
 				}),
 			}),

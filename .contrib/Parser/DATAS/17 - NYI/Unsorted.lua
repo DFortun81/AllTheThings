@@ -293,7 +293,6 @@ root(ROOTS.Unsorted, {
 				i(225672),	-- Unraveled Instructions
 				i(225673),	-- Artisan's Consortium Seal of Approval
 				i(228224),	-- Spark of Legacies
-				i(228339),	-- Soul Sigil II
 				i(228368),	-- Relic of the Past VI
 				-- NYI Profession --
 				i(219500),	-- Fang Adornments
@@ -1154,7 +1153,6 @@ root(ROOTS.Unsorted, {
 				i(225648),	-- Candle Confidant
 				i(225656),	-- Goldenglow Censer
 				i(225661),	-- Burning Binding
-				i(225891),	-- Vile Vial of Kaheti Bile
 				i(226137),	-- Inquisitive Sister's Cinch
 				i(226138),	-- Vow-Taker's Boots
 				i(226174),	-- Famished Bride's Clasp
@@ -1616,7 +1614,6 @@ root(ROOTS.Unsorted, {
 				i(221230),	-- Storm Bindings
 				i(221231),	-- Steam-Powered Wristwatch
 				i(221232),	-- Polished Goblin Bling
-				i(221233),	-- Deephunter's Bloody Hook
 				i(221236),	-- Stormbreaker's Shield
 				i(221237),	-- Lamentable Vagrant's Lantern
 				i(221238),	-- Pillar of Constructs

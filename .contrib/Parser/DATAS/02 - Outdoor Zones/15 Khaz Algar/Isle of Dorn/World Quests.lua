@@ -78,6 +78,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(82237, {	-- Rising the Falls
 					["coord"] = { 56.8, 42.5, ISLE_OF_DORN },
+					["g"] = {
+						i(228339),	-- Soul Sigil II
+					},
 				}),
 				q(80295, {	-- Rocks, Water and Elemental Fodder
 					--["coord"] = { 73.6, 55.1, ISLE_OF_DORN },	-- need proper coords from popup, cause wq area can be started @ 71.3, 46.4
