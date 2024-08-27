@@ -11,7 +11,7 @@ local FRIENDHAVER_GERM = {
 };
 local KYRIE = {
 	["crs"] = { 223442 },
-	["coord"] = { 57.4, 62.8, HALLOWFALL },
+	["coord"] = { 52.5, 62.8, HALLOWFALL },
 };
 local ZIRIAK = {
 	["crs"] = { 223443 },

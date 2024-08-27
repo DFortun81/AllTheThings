@@ -106,6 +106,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81882,
 				["g"] = {
 					i(221225),	-- Benevolent Hornstag Cinch
+					i(221246),	-- Fierce Beast Staff
 					i(223007),	-- Lance of Beledar's Pride
 				},
 			}),

@@ -149,9 +149,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(220285, {	-- Lurker of the Deeps <Displaced Sea Horror>
-				--["coord"] = { X, Y, THE_RINGING_DEEPS },
+				["description"] = "Interact with 5 levers located across the zone within 10 seconds to summon this rare.",
+				["coord"] = { 60.8, 76.6, THE_RINGING_DEEPS },
 				--["questID"] = ,
 				["g"] = {
+					i(221248),	-- Deep Terror Carver
 					i(221233),	-- Deephunter's Bloody Hook
 					i(223501),	-- Ol' Mole Rufus (MOUNT!)
 				},
@@ -174,6 +176,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(84045),	-- Extra HQT: Coalesced Monstrosity
 			q(84042),	-- Extra HQT: Cragmund
 			q(84044),	-- Extra HQT: Deathbound Husk
+			q(85162),	-- Extra HQT: Deepflayer Broodmother
 			q(84050),	-- Extra HQT: Disturbed Earthgorger
 			q(84048),	-- Extra HQT: Hungerer of the Deeps
 			q(84047),	-- Extra HQT: Kelpmire

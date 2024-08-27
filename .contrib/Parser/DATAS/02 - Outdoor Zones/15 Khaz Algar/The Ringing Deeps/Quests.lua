@@ -284,7 +284,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 47.1, 20.7, THE_RINGING_DEEPS },
 				}),
 				q(81798, {	-- Return to Moira
-					["sourceQuests"] = { 78741 },	-- Sympathetic Speaker
+					["sourceQuests"] = {
+						78741, -- Sympathetic Speaker
+						78742, -- Battle of the Earthenworks
+					},
 					["provider"] = { "n", 213672 },	-- Foreman Uzjax
 					["coord"] = { 49.0, 17.5, THE_RINGING_DEEPS },
 					["isBreadcrumb"] = true,

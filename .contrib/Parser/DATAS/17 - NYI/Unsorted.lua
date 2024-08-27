@@ -40,7 +40,6 @@ root(ROOTS.Unsorted, {
 			n(PROFESSIONS, {
 				-- Profession Knowledge Notes
 				i(224817),	-- Algari Herbalist's Notes
-				i(224818),	-- Algari Miner's Notes
 
 				i(228774),	-- Algari Blacksmith's Journal
 				i(228775),	-- Algari Engineer's Notepad
@@ -1601,7 +1600,6 @@ root(ROOTS.Unsorted, {
 			n(RARES, {
 				i(221066),	-- Template - Accessory - Finger
 				i(221093),	-- Deeply Corrupted Coil
-				i(221231),	-- Steam-Powered Wristwatch
 				i(221232),	-- Polished Goblin Bling
 				i(221237),	-- Lamentable Vagrant's Lantern
 				i(221238),	-- Pillar of Constructs

@@ -51,6 +51,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(224074),	-- Opal-Mining Tools (QI!)
 					}
 				}),
+				q(82225, {	-- Elemental Excavation
+					["coord"] = { 74.8, 55.1, ISLE_OF_DORN },
+				}),
 				q(82225, {	-- Excavation Extravaganza
 					["coord"] = { 61.9, 71.2, ISLE_OF_DORN },
 				}),
@@ -101,7 +104,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 62.0, 46.0, ISLE_OF_DORN },
 				}),
 				q(81805, {	-- Skyrider Racing - Thunderhead Trail
-					["coord"] = { 58.6, 21.1, ISLE_OF_DORN },
+					["coord"] = { 58.3, 24.9, ISLE_OF_DORN },
 				}),
 				q(81621, {	-- Tunnels Be Gone!
 					--["coord"] = { 63.9, 43.1, ISLE_OF_DORN },	-- could be wrong, all Isle of Dorn missing quest zone highlights

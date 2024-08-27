@@ -1270,7 +1270,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			-- Stay awhile and listen
 			hqt(84813, {	-- Stay awhile and listen: Rooktender Lufsela
 				["name"] = "Stay awhile and listen: Rooktender Lufsela",
-				["sourceQuests"] = { 79146 },	-- Ground Pounders
+				["sourceQuests"] = { 79129 },	-- Rook Rally
 				["provider"] = { "n", 215039 },	-- Rooktender Lufsela
 				["coord"] = { 27.8, 60.8, ISLE_OF_DORN },
 			}),
