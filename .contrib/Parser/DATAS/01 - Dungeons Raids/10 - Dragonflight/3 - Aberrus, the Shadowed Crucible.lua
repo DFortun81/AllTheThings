@@ -262,7 +262,7 @@ local EncounterToLoot = {
 		i(217408, {	-- Awakened Tempostone
 			["sym"] = GET_SYM_DF_S4_TIER_TOKENS(),
 			["up"] = IGNORED_VALUE,
-			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_AWAKENED },
+			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END },
 		}),
 	},
 };
@@ -494,7 +494,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["provider"] = { "i", 205684 },	-- Forbidden Flounder
 				}),
 				-- Awakened
-				ach(19567, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_AWAKENED } }, {	-- Awakened Shadows
+				ach(19567, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END } }, {	-- Awakened Shadows
 					crit(64957, {	-- Kazzara, the Hellforged
 						["_encounter"] = { 2522, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
@@ -523,7 +523,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["_encounter"] = { 2520, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 				})),
-				ach(19568, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_AWAKENED } }, {	-- Heroic: Awakened Shadows
+				ach(19568, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END } }, {	-- Heroic: Awakened Shadows
 					crit(64966, {	-- Kazzara, the Hellforged
 						["_encounter"] = { 2522, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
@@ -552,7 +552,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["_encounter"] = { 2520, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				})),
-				ach(19569, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_AWAKENED } }, {	-- Mythic: Awakened Shadows
+				ach(19569, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END } }, {	-- Mythic: Awakened Shadows
 					crit(64975, {	-- Kazzara, the Hellforged
 						["_encounter"] = { 2522, DIFFICULTY.RAID.MYTHIC },
 					}),

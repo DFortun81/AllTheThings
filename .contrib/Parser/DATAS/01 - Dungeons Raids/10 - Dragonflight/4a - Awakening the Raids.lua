@@ -196,7 +196,7 @@ local UpgradeMapping = {
 	-- #ENDIF
 }
 
-local BUBBLEDATA = { ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_AWAKENED } }
+local BUBBLEDATA = { ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END } }
 
 local TIER_SLOTS = {
 	"HEAD",

@@ -316,7 +316,7 @@ InstanceHelper.ExtraLoots = {
 					item.skipFill = true
 					item.up = IGNORED_VALUE
 					item.sym = {{"select","itemID",modItemId(item.itemID,symModID)},{"groupfill",true},{"pop"}}	-- Base Version & Fill
-					item.timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_AWAKENED }
+					item.timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END }
 					item.nomerge = true
 				end
 				encounter.groups = appendAllGroups(encounter.groups, g)
@@ -365,7 +365,7 @@ InstanceHelper.ExtraLoots = {
 				item.modID = TokenModID[difficulty]
 				item.up = IGNORED_VALUE
 				item.sym = GET_SYM_DF_S4_TIER_TOKENS(TokenSymModID[difficulty])
-				item.timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_AWAKENED }
+				item.timeline = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END }
 				encounter.groups = appendAllGroups(encounter.groups, {item});
 				return encounter
 			end
@@ -735,7 +735,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					},
 				}),
 				-- Awakened
-				ach(19570, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_AWAKENED } }, {	-- Awakened Flames
+				ach(19570, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END } }, {	-- Awakened Flames
 					crit(64986, {	-- Gnarlroot
 						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
@@ -764,7 +764,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MULTI.NORMAL_PLUS },
 					}),
 				})),
-				ach(19571, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_AWAKENED } }, {	-- Heroic: Awakened Flames
+				ach(19571, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END } }, {	-- Heroic: Awakened Flames
 					crit(64995, {	-- Gnarlroot
 						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
@@ -793,7 +793,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["_encounter"] = { FYRAKK, DIFFICULTY.RAID.MULTI.HEROIC_PLUS },
 					}),
 				})),
-				ach(19572, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_SEASON_AWAKENED } }, {	-- Mythic: Awakened Flames
+				ach(19572, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END } }, {	-- Mythic: Awakened Flames
 					crit(65004, {	-- Gnarlroot
 						["_encounter"] = { GNARLROOT, DIFFICULTY.RAID.MYTHIC },
 					}),
