@@ -428,6 +428,12 @@ local function GetQuestIndicator(t)
 		end
 	end
 end
+local NonQuestDataKeys = {
+	aqd = 1,
+	hqd = 1,
+	otherQuestData = 1,
+	g = 1,
+}
 local function ResolveQuestData(t)
 	local aqd, hqd = t.aqd, t.hqd;
 	if aqd and hqd then
@@ -451,24 +457,21 @@ local function ResolveQuestData(t)
 			end
 			questData.g = nil;
 		end
-		if otherQuestData.g then
-			for _,o in ipairs(otherQuestData.g) do
-				o.parent = otherQuestData;
-			end
-		end
+		app.AssignChildren(otherQuestData)
+		otherQuestData.parent = t.parent
 
 		-- Apply this quest's current data into the other faction's quest. (this is for tooltip caching and source quest resolution)
 		for key,value in pairs(t) do
-			if key ~= "g" then
+			if not NonQuestDataKeys[key] then
 				otherQuestData[key] = value;
 			end
 		end
 
 		-- Apply the faction specific quest data to this object.
 		for key,value in pairs(questData) do t[key] = value; end
-		aqd.r = ALLIANCE_FACTION_ID;
-		hqd.r = HORDE_FACTION_ID;
 		t.otherQuestData = otherQuestData;
+		t.aqd = nil
+		t.hqd = nil
 		otherQuestData.nmr = 1;
 	else
 		error("Missing AQD / HQD: " .. (aqd and true or false) .. " " .. (hqd and true or false));
