@@ -1390,7 +1390,6 @@ root(ROOTS.Unsorted, {
 				i(208948),	-- [DNT] Club Chest Key \\ Club Chest Key
 				i(208957),	-- Conduit of the Southern Storm
 				i(209857),	-- Unusual Seeds
-				i(211209),	-- Suspicious Candle
 				i(211210),	-- Blacksmith Boss' Head
 				i(211291),	-- Decorative Bones
 				i(211304),	-- Bone Key
@@ -1507,8 +1506,6 @@ root(ROOTS.Unsorted, {
 				i(219791),	-- 11.0 Leveling Quest Template - Mace1H - Int
 				i(219793),	-- 11.0 Leveling Quest Template - Axe 1H - Agi
 				i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
-				i(226111),	-- Arakkoan Ritual Staff
-				i(226113),	-- Kereke's Flourishing Sabre
 				i(228364),	-- Endiri's Chipped Boot Knife
 				i(228367),	-- Arathi Scout's Walking Stick
 			}),
@@ -1607,10 +1604,8 @@ root(ROOTS.Unsorted, {
 			n(RARES, {
 				i(221066),	-- Template - Accessory - Finger
 				i(221093),	-- Deeply Corrupted Coil
-				i(221230),	-- Storm Bindings
 				i(221231),	-- Steam-Powered Wristwatch
 				i(221232),	-- Polished Goblin Bling
-				i(221236),	-- Stormbreaker's Shield
 				i(221237),	-- Lamentable Vagrant's Lantern
 				i(221238),	-- Pillar of Constructs
 				i(221242),	-- Forgeborn Helm
@@ -1640,7 +1635,6 @@ root(ROOTS.Unsorted, {
 				i(223438),	-- Algari Warden's Vestment
 				i(223444),	-- Arathi Defender's Breeches
 				i(223450),	-- Honored Soldier's Chainmail
-				i(223441),	-- Algari Scouting Boots
 				i(223443),	-- Algari Warden's Hood
 				i(223454),	-- Algari Warden's Greaves
 				i(223458),	-- [PH] 11.0 - Belt
@@ -1652,14 +1646,7 @@ root(ROOTS.Unsorted, {
 				i(223874),	-- Algari Dagger
 				i(223876),	-- Algari Warglaive
 				i(223877),	-- Algari Hatchet
-				i(224454),	-- City Guard's Mask \\ Dalaran Hood
 				i(228436),	-- United Arathi's Jerkin
-				i(228439),	-- Mitts of Menial Tasks
-				i(228440),	-- Chitin-Laced Shoulderguards
-				i(228441),	-- Overseer's Oversized Clasp
-				i(228445),	-- Deceased Nerubian's Slippers
-				i(228446),	-- Albert's Last Gloves
-				i(228447),	-- Spider-Fang Epaulets
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(223510),	-- Delver's Dirigible Schematic: Template

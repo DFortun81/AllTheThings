@@ -6469,6 +6469,7 @@ _.ObjectNames = {
 	[428135] = "Discarded Botanist Notes",
 	[428167] = "Discarded Research Notes",
 	[428199] = "Discarded Research Notes",
+	[428472] = "Captain Lancekat's Discretionary Funds",
 	[428699] = "Sizzling Barrel",
 	[428814] = "Inconspicuous Box",
 	[429301] = "Shipment Crate",

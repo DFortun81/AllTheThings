@@ -354,6 +354,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			filter(MISC, {
 				i(210970),	-- Crumbled Keepsake (QI!)
 				i(210981),	-- Kriegval's Helm (QI!)
+				i(211209),	-- Suspicious Candle
 			}),
 			n(QUESTS, {
 				q(83759, {	-- Delver's Call: Kriegval's Rest

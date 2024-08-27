@@ -65,6 +65,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81905,
 				["g"] = {
 					i(221244),	-- Flamekeeper's Footpads
+					i(221249),	-- Kobold Rodent Squasher
 				},
 			}),
 			n(219268, {	-- Gar'loc
@@ -80,6 +81,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 30.9, 52.3, ISLE_OF_DORN },
 				["questID"] = 82204,
 				["g"] = {
+					i(226111),	-- Arakkoan Ritual Staff
+					i(226113),	-- Kereke's Flourishing Sabre
 					i(226114),	-- Windslicer's Lance
 				},
 			}),
@@ -175,6 +178,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(219269, {	-- Tempest Lord Incarnus
 				["coord"] = { 57.9, 16.5, ISLE_OF_DORN },
 				["questID"] = 81901,
+				["g"] = {
+					i(221230),	-- Storm Bindings
+					i(221236),	-- Stormbreaker's Shield
+				},
 			}),
 			n(221126, {	-- Tephratennae
 				["description"] = "Flying around in the area.",

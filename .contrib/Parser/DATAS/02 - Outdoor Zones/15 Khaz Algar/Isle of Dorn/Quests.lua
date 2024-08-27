@@ -64,14 +64,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 72.6, 57.7, 2307 },	-- Quest Dalaran
 					["sourceQuests"] = { 79106 },	-- Rupture
 					["g"] = {
-						-- Cloth
-						i(224453),	-- City Guard's Coronet
-						-- Leather
 						i(220379),	-- City Guard's Chainmail (doesn't load ingame?)
-						-- Mail
 						i(224455),	-- City Guard's Chainmail
-						-- Plate
+						i(224453),	-- City Guard's Coronet
 						i(224456),	-- City Guard's Greaves
+						i(224454),	-- City Guard's Mask
 					},
 				}),
 				------ Chapter 1 ------
@@ -1020,8 +1017,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 65.9, 23.8, ISLE_OF_DORN },
 					["g"] = {
 						i(223456),	-- Algari Cinch
-						i(223424),	-- Algari-Weave Cord
 						i(223464),	-- Algari Heavy Gauntlets
+						i(223441),	-- Algari Scouting Boots
+						i(223424),	-- Algari-Weave Cord
 					},
 				}),
 			}),

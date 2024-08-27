@@ -409,6 +409,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 214359 },	-- Kish'nal
 					["coord"] = { 74.0, 82.0, AZJ_KAHET },
 					["g"] = {
+						i(228440),	-- Chitin-Laced Shoulderguards
+						i(228439),	-- Mitts of Menial Tasks
+						i(228441),	-- Overseer's Oversized Clasp
 						i(228442),	-- Rak-Ush Rancher's Waders
 					},
 				}),
@@ -794,7 +797,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 68.7, 62.3, NERUBAR_LOWER },
 					["g"] = {
 						i(216689),	-- Albert's Head (QI!)
+						i(228446),	-- Albert's Last Gloves
+						i(228445),	-- Deceased Nerubian's Slippers
 						i(228448),	-- Long-Forgotten Girdle
+						i(228447),	-- Spider-Fang Epaulets
 					},
 				}),
 			}),
