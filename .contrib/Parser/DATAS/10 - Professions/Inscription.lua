@@ -5380,6 +5380,20 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 		}),
 		n(TREASURES, {
+			o(455982, {	-- Blue Earthen Pigment
+				["coord"] = { 62.4, 58.0, THE_RINGING_DEEPS },
+				["questID"] = 83885,
+				["g"] = {
+					i(226311),	-- Blue Earthen Pigment
+				},
+			}),
+			o(455980, {	-- Calligrapher's Chiseled Marker
+				["coord"] = { 42.8, 49.0, HALLOWFALL },
+				["questID"] = 83887,
+				["g"] = {
+					i(226313),	-- Calligrapher's Chiseled Marker
+				},
+			}),
 			o(455985, {	-- Dornogal Scribe's Quill
 				["coord"] = { 57.1, 46.98, DORNOGAL },
 				["questID"] = 83882,
@@ -5389,7 +5403,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			}),
 			o(455984, {	-- Historian's Dip Pen
 				["coord"] = { 55.9, 60.0, ISLE_OF_DORN },
-				["questID"] = 83886,
+				["questID"] = 83883,
 				["g"] = {
 					i(226309),	-- Historian's Dip Pen
 				},
@@ -5399,6 +5413,27 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["questID"] = 83886,
 				["g"] = {
 					i(226312),	-- Informant's Fountain Pen
+				},
+			}),
+			o(455979, {	-- Nerubian Texts
+				["coord"] = { 55.8, 43.9, AZJ_KAHET },
+				["questID"] = 83888,
+				["g"] = {
+					i(226314),	-- Nerubian Texts
+				},
+			}),
+			o(455983, {	-- Runic Scroll
+				["coord"] = { 48.5, 34.3, THE_RINGING_DEEPS },
+				["questID"] = 83884,
+				["g"] = {
+					i(226310),	-- Runic Scroll
+				},
+			}),
+			o(455978, {	-- Venomancer's Ink Well
+				["coord"] = { 50.1, 30.8, NERUBAR },
+				["questID"] = 83889,
+				["g"] = {
+					i(226315),	-- Venomancer's Ink Well
 				},
 			}),
 		}),

@@ -586,18 +586,10 @@ root(ROOTS.Unsorted, {
 				i(225230),	-- Crystalline Repository
 				i(225232),	-- Coreway Billet
 				i(225233),	-- Dense Bladestone
-				i(226308),	-- Dornogal Scribe's Quill
-				i(226309),	-- Historian's Dip Pen
-				i(226310),	-- Runic Scroll
-				i(226311),	-- Blue Earthen Pigment
-				i(226313),	-- Calligrapher's Chiseled Marker
-				i(226314),	-- Nerubian Texts
-				i(226315),	-- Venomancer's Ink Well
 				i(226316),	-- Gentle Jewel Hammer
 				i(226320),	-- Arathi Sizing Gauges
 				i(226322),	-- Ritual Caster's Crystal
 				i(226323),	-- Nerubian Bench Blocks
-				i(226346),	-- Nerubian's Slicking Iron
 				i(226354),	-- Nerubian Quilt
 				i(226355),	-- Nerubian's Pincushion
 				i(224780),	-- Toughened Tempest Pelt
