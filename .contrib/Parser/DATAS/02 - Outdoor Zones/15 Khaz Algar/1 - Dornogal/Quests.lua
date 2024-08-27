@@ -208,15 +208,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			hqt(84345, {	-- <Stay awhile and Listen> High Exarch Turalyon
 				["name"] = "Stay awhile and listen: High Exarch Turalyon",
-				["aqd"] = {
-					["sourceQuests"] = {
-						82153,	-- Embassies and Envoys [A]
-					},
-				},
-				["hqd"] = {
-					["sourceQuests"] = {
-						79328,	-- Embassies and Envoys [H]
-					},
+				["sourceQuests"] = {
+					82153,	-- Embassies and Envoys [A]
+					79328,	-- Embassies and Envoys [H]
 				},
 				["provider"] = { "n", 226650 },	-- High Exarch Turalyon
 				["coord"] = { 44.5, 44.5, DORNOGAL },
