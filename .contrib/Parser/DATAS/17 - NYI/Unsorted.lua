@@ -1652,7 +1652,6 @@ root(ROOTS.Unsorted, {
 				i(223461),	-- Algari Warden's Helm
 				i(223472),	-- Drape of the Lamplighter
 				i(223548),	-- Algari Rifle
-				i(223584),	-- Algari Scepter
 				i(223585),	-- Algari Bladefist
 				i(223588),	-- Algari Fighting Knife
 				i(223874),	-- Algari Dagger

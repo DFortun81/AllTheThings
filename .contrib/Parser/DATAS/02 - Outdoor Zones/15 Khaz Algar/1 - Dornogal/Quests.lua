@@ -29,6 +29,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["g"] = {
 						i(223549),	-- Algari Greatsword
 						i(223547),	-- Algari Heavy Staff
+						i(223584),	-- Algari Scepter
 						i(223564),	-- Algari Short Axe
 						i(223546),	-- Algari Spear
 						i(223569),	-- Algari Spellcleaver
@@ -42,6 +43,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["g"] = {
 						i(223549),	-- Algari Greatsword
 						i(223547),	-- Algari Heavy Staff
+						i(223584),	-- Algari Scepter
 						i(223564),	-- Algari Short Axe
 						i(223546),	-- Algari Spear
 						i(223569),	-- Algari Spellcleaver
@@ -156,12 +158,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			hqt(84009, {	-- Stay awhile and listen: Alleria Windrunner
 				["name"] = "Stay awhile and listen: Alleria Windrunner",
-				["sourceQuests"] = {
-					82153,	-- Embassies and Envoys [A]
-					79328,	-- Embassies and Envoys [H]
-				},
 				["provider"] = { "n", 216148 },	-- Alleria Windrunner
-				["coord"] = { 34.5, 93.5, DORNOGAL },
+				["sourceQuests"] = {
+					79333,	-- The Fleet Arrives
+				},
+				-- assuming she's in diff locations for horde/alliance?
+				["aqd"] = {
+					["coord"] = { 34.5, 93.5, DORNOGAL },
+				},
+				["hqd"] = {
+					["coord"] = { 35.9, 80.8, DORNOGAL },
+				},
 			}),
 			hqt(82461, {	-- Stay awhile and listen: Dagran Thaurissan II
 				["name"] = "Stay awhile and listen: Dagran Thaurissan II",
@@ -187,17 +194,38 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 215039 },	-- Rooktender Lufsela
 				["coord"] = { 36.2, 95.0, DORNOGAL },
 			}),
-			hqt(82459, {	-- <Stay a while and Listen>
+			hqt(82459, {	-- <Stay awhile and Listen> Anduin Wrynn
 				["name"] = "Stay awhile and listen: Anduin Wrynn",
 				["sourceQuests"] = { 78536 },	-- Impossible Odds
 				["provider"] = { "n", 222558 },	-- Anduin Wrynn
 				["coord"] = { 44.7, 44.6, DORNOGAL },
 			}),
-			hqt(82460, {	-- <Stay a while and Listen>
+			hqt(82460, {	-- <Stay awhile and Listen> Magni Bronzebeard
 				["name"] = "Stay awhile and listen: Magni Bronzebeard",
 				["sourceQuests"] = { 78536 },	-- Impossible Odds
 				["provider"] = { "n", 222557 },	-- Magni Bronzebeard
 				["coord"] = { 44.5, 44.5, DORNOGAL },
+			}),
+			hqt(84345, {	-- <Stay awhile and Listen> High Exarch Turalyon
+				["name"] = "Stay awhile and listen: High Exarch Turalyon",
+				["aqd"] = {
+					["sourceQuests"] = {
+						82153,	-- Embassies and Envoys [A]
+					},
+				},
+				["hqd"] = {
+					["sourceQuests"] = {
+						79328,	-- Embassies and Envoys [H]
+					},
+				},
+				["provider"] = { "n", 226650 },	-- High Exarch Turalyon
+				["coord"] = { 44.5, 44.5, DORNOGAL },
+			}),
+			hqt(84814, {	-- <Stay awhile and Listen> Dagran Thaurissan II
+				["name"] = "Stay awhile and listen: Dagran Thaurissan II",
+				["sourceQuests"] = { 83286 },	-- What's Hidden Beneath Dornogal
+				["provider"] = { "n", 226026 },	-- Dagran Thaurissan II
+				["coord"] = { 50.7, 61.5, VAULT_OF_MEMORY },
 			}),
 
 			n(QUESTS, sharedData({
