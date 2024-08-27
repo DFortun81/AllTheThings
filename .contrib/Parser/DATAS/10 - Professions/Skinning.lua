@@ -315,6 +315,13 @@ root(ROOTS.Professions, prof(SKINNING, {
 					i(226343), -- Fungarian's Rich Tannin
 				},
 			}),
+			o(455947, {	-- Nerubian's Slicking Iron
+				["coord"] = { 45.5, 49.3, NERUBAR },
+				["questID"] = 83920,
+				["g"] = {
+					i(226346), -- Fungarian's Rich Tannin
+				},
+			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
