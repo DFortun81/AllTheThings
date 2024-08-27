@@ -926,6 +926,7 @@ namespace ATT
                     case "conduitID":
                     case "customCollect":
                     case "type":
+                    case "_wipe":
                         data[field] = value;
                         break;
                     // Conditional merges
