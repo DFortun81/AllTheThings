@@ -479,3 +479,27 @@ function ATTcheckawquests()
 	end
 	scan()
 end
+
+
+function ATTtestsort()
+
+	local sort1 = app.SortDefaults.Global
+	local sort2 = app.SortDefaults.Accessibility
+
+	local rawdatasearch1 = app:BuildSearchResponse("u", 2)
+	local rawdatasearch2 = app:BuildSearchResponse("u", 2)
+
+	local function dosorts()
+		app.PrintDebug("doSorts")
+		coroutine.yield()
+		app.PrintDebug("sort1")
+		app.Sort(rawdatasearch1, sort1, true)
+		app.PrintDebugPrior("sort1.done")
+		coroutine.yield()
+		app.PrintDebug("sort2")
+		app.Sort(rawdatasearch2, sort2, true)
+		app.PrintDebugPrior("sort2.done")
+	end
+
+	app.StartCoroutine("dosorts",dosorts)
+end
