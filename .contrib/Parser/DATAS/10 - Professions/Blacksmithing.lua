@@ -1262,6 +1262,10 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222554 },	-- Algari Treatise on Blacksmithing
 			}),
+			q(83257, {	-- Weekly Blacksmithing Knowledgepoint #1
+				["name"] = "Blacksmithing Treasure #1",
+				["provider"] = { "i", 225232 },	-- Coreway Billet
+			}),
 		})),
 	})),
 })));
