@@ -15,6 +15,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					--
 				},
 			}),
+			n(225948, {	-- Caesper
+				["description"] = "Bring Caesper Meaty Haunch and follow him, he will dig up treasure for you",
+				["coord"] = { 41.8, 58.3, HALLOWFALL },	-- Caesper
+				["cost"] = {{ "i", 225238, 1 }},	-- Meaty Haunch
+				["g"] = {
+					o(453167, {	-- Disturbed Lyns Treasure
+						["questID"] = 83263,
+						["groups"] = {
+							i(225639),	-- Recipe: Exquisitely Eviscerated Muscle (RECIPE!)
+						},
+					}),
+				},
+			}),
 			o(444804, {	-- Concentrated Shadow
 				["description"] = "Spawn only when crystal in zone is purple",
 				["maps"] = { HALLOWFALL },
@@ -30,18 +43,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 83284,
 				["g"] = {
 					i(225693),	-- Shadowed Essence
-				},
-			}),
-			o(453167, {	-- Disturbed Lyns Treasure
-				["description"] = "Bring Caesper Meaty Haunch and follow him, he will dig up treasure for you",
-				["provider"] = { "n", 225948 },	-- Caesper
-				["coords"] = {
-					{ 41.8, 58.3, HALLOWFALL },	-- Caesper
-					{ 42.1, 59.0, HALLOWFALL },	-- Disturbed Lyns Treasure
-				},
-				["questID"] = 83263,
-				["g"] = {
-					i(225639),	-- Recipe: Exquisitely Eviscerated Muscle (RECIPE!)
 				},
 			}),
 			--[[

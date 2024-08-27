@@ -2014,7 +2014,6 @@ root(ROOTS.Unsorted, {
 			title(568),	-- <Name>, Machine-Warden
 			i(226218),	-- Machine-Warden's Cloak
 			-- Fallout
-			i(214616),	-- Engraved Dagger
 			i(219456),	-- Earthen Traveler's Scepter
 			i(219934),	-- Spark of War
 			i(220693),	-- Coffer Key Shard \\ Delve Key Fragment
