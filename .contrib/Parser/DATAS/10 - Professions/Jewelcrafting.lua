@@ -773,15 +773,15 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194703 },	-- Draconic Treatise on Jewelcrafting
 			}),
-			q(66388, {	-- Weekly DF Jewelcrafting Knowledgepoint #1
+			q(66388, {	-- DF Weekly Jewelcrafting Knowledgepoint #1
 				["name"] = "DF Jewelcrafting Treasure #1",
 				["provider"] = { "i", 193909 },		-- Ancient Gem Fragments
 			}),
-			q(66389, {	-- Weekly DF Jewelcrafting Knowledgepoint #2
+			q(66389, {	-- DF Weekly Jewelcrafting Knowledgepoint #2
 				["name"] = "DF Jewelcrafting Treasure #2",
 				["provider"] = { "i", 193907 },		-- Chipped Tyrstone
 			}),
-			q(70521, {	-- Weekly DF Jewelcrafting Knowledgepoint #3
+			q(70521, {	-- DF Weekly Jewelcrafting Knowledgepoint #3
 				["name"] = "DF Jewelcrafting Drop #1: Well Dressed",
 				["description"] = "Drops from any Well Dressed Humanoids & Dragonkins.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
@@ -796,7 +796,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 					{ 45.8 ,58.2, THALDRASZUS },
 				},
 			}),
-			q(70520, {	-- Weekly DF Jewelcrafting Knowledgepoint #4
+			q(70520, {	-- DF Weekly Jewelcrafting Knowledgepoint #4
 				["name"] = "DF Jewelcrafting Drop #2: Earth Elemental",
 				["description"] = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {

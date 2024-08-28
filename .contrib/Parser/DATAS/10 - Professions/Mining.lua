@@ -1251,27 +1251,27 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194708 },	-- Draconic Treatise on Mining
 			}),
-			q(72160, {	-- Weekly DF Mining Knowledgepoint #1
+			q(72160, {	-- DF Weekly Mining Knowledgepoint #1
 				["name"] = "DF Weekly Mining Knowledgepoint #1",
 				["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
 			}),
-			q(72161, {	-- Weekly DF Mining Knowledgepoint #2
+			q(72161, {	-- DF Weekly Mining Knowledgepoint #2
 				["name"] = "DF Weekly Mining Knowledgepoint #2",
 				["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
 			}),
-			q(72162, {	-- Weekly DF Mining Knowledgepoint #3
+			q(72162, {	-- DF Weekly Mining Knowledgepoint #3
 				["name"] = "DF Weekly Mining Knowledgepoint #3",
 				["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
 			}),
-			q(72163, {	-- Weekly DF Mining Knowledgepoint #4
+			q(72163, {	-- DF Weekly Mining Knowledgepoint #4
 				["name"] = "DF Weekly Mining Knowledgepoint #4",
 				["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
 			}),
-			q(72164, {	-- Weekly DF Mining Knowledgepoint #5
+			q(72164, {	-- DF Weekly Mining Knowledgepoint #5
 				["name"] = "DF Weekly Mining Knowledgepoint #5",
 				["provider"] = { "i", 201300 },	-- Iridescent Ore Fragments
 			}),
-			q(72165, {	-- Weekly DF Mining Knowledgepoint #6
+			q(72165, {	-- DF Weekly Mining Knowledgepoint #6
 				["name"] = "DF Weekly Mining Knowledgepoint #6",
 				["provider"] = { "i", 201301 },	-- Iridescent Ore
 			}),
@@ -1374,27 +1374,27 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222553 },	-- Algari Treatise on Mining
 			}),
-			q(83054, {	-- Weekly TWW Mining Knowledgepoint #1
+			q(83054, {	-- TWW Weekly Mining Knowledgepoint #1
 				["name"] = "TWW Weekly Mining Knowledgepoint #1",
 				["provider"] = { "i", 224583 },	-- Slab of Slate
 			}),
-			q(83053, {	-- Weekly TWW Mining Knowledgepoint #2
+			q(83053, {	-- TWW Weekly Mining Knowledgepoint #2
 				["name"] = "TWW Weekly Mining Knowledgepoint #2",
 				["provider"] = { "i", 224583 },	-- Slab of Slate
 			}),
-			q(83052, {	-- Weekly TWW Mining Knowledgepoint #3
+			q(83052, {	-- TWW Weekly Mining Knowledgepoint #3
 				["name"] = "TWW Weekly Mining Knowledgepoint #3",
 				["provider"] = { "i", 224583 },	-- Slab of Slate
 			}),
-			q(83051, {	-- Weekly TWW Mining Knowledgepoint #4
+			q(83051, {	-- TWW Weekly Mining Knowledgepoint #4
 				["name"] = "TWW Weekly Mining Knowledgepoint #4",
 				["provider"] = { "i", 224583 },	-- Slab of Slate
 			}),
-			q(83050, {	-- Weekly TWW Mining Knowledgepoint #5
+			q(83050, {	-- TWW Weekly Mining Knowledgepoint #5
 				["name"] = "TWW Weekly Mining Knowledgepoint #5",
 				["provider"] = { "i", 224583 },	-- Slab of Slate
 			}),
-			q(83049, {	-- Weekly TWW Mining Knowledgepoint #6
+			q(83049, {	-- TWW Weekly Mining Knowledgepoint #6
 				["name"] = "TWW Weekly Mining Knowledgepoint #6",
 				["provider"] = { "i", 224584 },	-- Erosion Polished Slate
 			}),

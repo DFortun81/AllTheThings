@@ -324,27 +324,27 @@ root(ROOTS.Professions, prof(SKINNING, {
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 201023 },	-- Draconic Treatise on Skinning
 			}),
-			q(70381, {	-- Weekly DF Skinning Knowledgepoint #1
+			q(70381, {	-- DF Weekly Skinning Knowledgepoint #1
 				["name"] = "DF Weekly Skinning Knowledgepoint #1",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 			}),
-			q(70383, {	-- Weekly DF Skinning Knowledgepoint #2
+			q(70383, {	-- DF Weekly Skinning Knowledgepoint #2
 				["name"] = "DF Weekly Skinning Knowledgepoint #2",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 			}),
-			q(70384, {	-- Weekly DF Skinning Knowledgepoint #3
+			q(70384, {	-- DF Weekly Skinning Knowledgepoint #3
 				["name"] = "DF Weekly Skinning Knowledgepoint #3",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 			}),
-			q(70385, {	-- Weekly DF Skinning Knowledgepoint #4
+			q(70385, {	-- DF Weekly Skinning Knowledgepoint #4
 				["name"] = "DF Weekly Skinning Knowledgepoint #4",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 			}),
-			q(70386, {	-- Weekly DF Skinning Knowledgepoint #5
+			q(70386, {	-- DF Weekly Skinning Knowledgepoint #5
 				["name"] = "DF Weekly Skinning Knowledgepoint #5",
 				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
 			}),
-			q(70389, {	-- Weekly DF Skinning Knowledgepoint #6
+			q(70389, {	-- DF Weekly Skinning Knowledgepoint #6
 				["name"] = "DF Weekly Skinning Knowledgepoint #6",
 				["provider"] = { "i", 198841 },	-- Large Sample of Curious Hide
 			}),
@@ -445,27 +445,27 @@ root(ROOTS.Professions, prof(SKINNING, {
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222649 },	-- Algari Treatise on Skinning
 			}),
-			q(81459, {	-- Weekly TWW Skinning Knowledgepoint #1
+			q(81459, {	-- TWW Weekly Skinning Knowledgepoint #1
 				["name"] = "TWW Weekly Skinning Knowledgepoint #1",
 				["provider"] = { "i", 224780 },	-- Toughened Thunderous Hide
 			}),
-			q(81460, {	-- Weekly TWW Skinning Knowledgepoint #2
+			q(81460, {	-- TWW Weekly Skinning Knowledgepoint #2
 				["name"] = "TWW Weekly Skinning Knowledgepoint #2",
 				["provider"] = { "i", 224780 },	-- Toughened Thunderous Hide
 			}),
-			q(81461, {	-- Weekly TWW Skinning Knowledgepoint #3
+			q(81461, {	-- TWW Weekly Skinning Knowledgepoint #3
 				["name"] = "TWW Weekly Skinning Knowledgepoint #3",
 				["provider"] = { "i", 224780 },	-- Toughened Thunderous Hide
 			}),
-			q(81462, {	-- Weekly TWW Skinning Knowledgepoint #4
+			q(81462, {	-- TWW Weekly Skinning Knowledgepoint #4
 				["name"] = "TWW Weekly Skinning Knowledgepoint #4",
 				["provider"] = { "i", 224780 },	-- Toughened Thunderous Hide
 			}),
-			q(81463, {	-- Weekly TWW Skinning Knowledgepoint #5
+			q(81463, {	-- TWW Weekly Skinning Knowledgepoint #5
 				["name"] = "TWW Weekly Skinning Knowledgepoint #5",
 				["provider"] = { "i", 224780 },	-- Toughened Thunderous Hide
 			}),
-			q(81464, {	-- Weekly TWW Skinning Knowledgepoint #6
+			q(81464, {	-- TWW Weekly Skinning Knowledgepoint #6
 				["name"] = "TWW Weekly Skinning Knowledgepoint #6",
 				["provider"] = { "i", 224781 },	-- Abyssal Fur
 			}),

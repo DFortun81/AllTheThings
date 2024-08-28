@@ -1067,22 +1067,22 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194697 },	-- Draconic Treatise on Alchemy
 			}),
-			q(66373, {	-- Weekly DF Alchemy Knowledgepoint #1
+			q(66373, {	-- DF Weekly Alchemy Knowledgepoint #1
 				["name"] = "DF Alchemy Treasure #1",
 				["provider"] = { "i", 193891 },		-- Experimental Substance
 			}),
-			q(66374, {	-- Weekly DF Alchemy Knowledgepoint #2
+			q(66374, {	-- DF Weekly Alchemy Knowledgepoint #2
 				["name"] = "DF Alchemy Treasure #2",
 				["provider"] = { "i", 193897 },		-- Reawakened Catalyst
 			}),
-			q(70504, {	-- Weekly DF Alchemy Knowledgepoint #3
+			q(70504, {	-- DF Weekly Alchemy Knowledgepoint #3
 				["name"] = "DF Alchemy Drop #1: Decayed",
 				["description"] = "Drops from any Decayed Mob.\nCoordinates link to the spot(s) we found best.",
 				["provider"] = { "i", 198963 },		-- Decaying Phlegm
 				["crs"] = { 186361 },	-- Rotting Treant
 				["coord"] = { 18.6, 38.4, THE_AZURE_SPAN },
 			}),
-			q(70511, {	-- Weekly DF Alchemy Knowledgepoint #4
+			q(70511, {	-- DF Weekly Alchemy Knowledgepoint #4
 				["name"] = "DF Alchemy Drop #2: Elemental",
 				["description"] = "Drops from any Elemental.\nCoordinates link to the spot(s) we found best.",
 				["provider"] = { "i", 198964 },		-- Elementious Splinter
@@ -1194,11 +1194,11 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222546 },	-- Algari Treatise on Alchemy
 			}),
-			q(83253, {	-- Weekly TWW Alchemy Knowledgepoint #1
+			q(83253, {	-- TWW Weekly Alchemy Knowledgepoint #1
 				["name"] = "TWW Alchemy Treasure #1",
 				["provider"] =  { "i", 225234 },	-- Alchemical Sediment
 			}),
-			q(83255, {	-- Weekly TWW Alchemy Knowledgepoint #2
+			q(83255, {	-- TWW Weekly Alchemy Knowledgepoint #2
 				["name"] = "TWW Alchemy Treasure #2",
 				["provider"] = { "i", 225235} ,		-- Deepstone Crucible
 			}),

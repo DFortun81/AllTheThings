@@ -1386,27 +1386,27 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194704 },	-- Draconic Treatise on Herbalism
 			}),
-			q(71857, {	-- Weekly DF Herbalism Knowledgepoint #1
+			q(71857, {	-- DF Weekly Herbalism Knowledgepoint #1
 				["name"] = "DF Weekly Herbalism Knowledgepoint #1",
 				["provider"] = { "i", 200677 },	-- Dreambloom Petal
 			}),
-			q(71858, {	-- Weekly DF Herbalism Knowledgepoint #2
+			q(71858, {	-- DF Weekly Herbalism Knowledgepoint #2
 				["name"] = "DF Weekly Herbalism Knowledgepoint #2",
 				["provider"] = { "i", 200677 },	-- Dreambloom Petal
 			}),
-			q(71859, {	-- Weekly DF Herbalism Knowledgepoint #3
+			q(71859, {	-- DF Weekly Herbalism Knowledgepoint #3
 				["name"] = "DF Weekly Herbalism Knowledgepoint #3",
 				["provider"] = { "i", 200677 },	-- Dreambloom Petal
 			}),
-			q(71860, {	-- Weekly DF Herbalism Knowledgepoint #4
+			q(71860, {	-- DF Weekly Herbalism Knowledgepoint #4
 				["name"] = "DF Weekly Herbalism Knowledgepoint #4",
 				["provider"] = { "i", 200677 },	-- Dreambloom Petal
 			}),
-			q(71861, {	-- Weekly DF Herbalism Knowledgepoint #5
+			q(71861, {	-- DF Weekly Herbalism Knowledgepoint #5
 				["name"] = "DF Weekly Herbalism Knowledgepoint #5",
 				["provider"] = { "i", 200677 },	-- Dreambloom Petal
 			}),
-			q(71864, {	-- Weekly DF Herbalism Knowledgepoint #6
+			q(71864, {	-- DF Weekly Herbalism Knowledgepoint #6
 				["name"] = "DF Weekly Herbalism Knowledgepoint #6",
 				["provider"] = { "i", 200678 },	-- Dreambloom
 			}),
@@ -1504,27 +1504,27 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222552 },	-- Algari Treatise on Herbalism
 			}),
-			q(81416, {	-- Weekly TWW Herbalism Knowledgepoint #1
+			q(81416, {	-- TWW Weekly Herbalism Knowledgepoint #1
 				["name"] = "TWW Weekly Herbalism Knowledgepoint #1",
 				["provider"] = { "i", 224264 },	-- Deepgrove Petal
 			}),
-			q(81417, {	-- Weekly TWW Herbalism Knowledgepoint #2
+			q(81417, {	-- TWW Weekly Herbalism Knowledgepoint #2
 				["name"] = "TWW Weekly Herbalism Knowledgepoint #2",
 				["provider"] = { "i", 224264 },	-- Deepgrove Petal
 			}),
-			q(81418, {	-- Weekly TWW Herbalism Knowledgepoint #3
+			q(81418, {	-- TWW Weekly Herbalism Knowledgepoint #3
 				["name"] = "TWW Weekly Herbalism Knowledgepoint #3",
 				["provider"] = { "i", 224264 },	-- Deepgrove Petal
 			}),
-			q(81419, {	-- Weekly TWW Herbalism Knowledgepoint #4
+			q(81419, {	-- TWW Weekly Herbalism Knowledgepoint #4
 				["name"] = "TWW Weekly Herbalism Knowledgepoint #4",
 				["provider"] = { "i", 224264 },	-- Deepgrove Petal
 			}),
-			q(81420, {	-- Weekly TWW Herbalism Knowledgepoint #5
+			q(81420, {	-- TWW Weekly Herbalism Knowledgepoint #5
 				["name"] = "TWW Weekly Herbalism Knowledgepoint #5",
 				["provider"] = { "i", 224264 },	-- Deepgrove Petal
 			}),
-			q(81421, {	-- Weekly TWW Herbalism Knowledgepoint #6
+			q(81421, {	-- TWW Weekly Herbalism Knowledgepoint #6
 				["name"] = "TWW Weekly Herbalism Knowledgepoint #6",
 				["provider"] = { "i", 224265 },	-- Deepgrove Rose
 			}),

@@ -5326,15 +5326,15 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["name"] = "DF Inscription Order: Inscription",
 				["provider"] = { "i", 194699 },	-- Draconic Treatise on Inscription
 			}),
-			q(66375, {	-- Weekly DF Inscription Knowledgepoint #1
+			q(66375, {	-- DF Weekly Inscription Knowledgepoint #1
 				["name"] = "DF Inscription Treasure #1",
 				["provider"] = { "i", 193904 },		-- Phoenix Feather Quill
 			}),
-			q(66376, {	-- Weekly DF Inscription Knowledgepoint #2
+			q(66376, {	-- DF Weekly Inscription Knowledgepoint #2
 				["name"] = "DF Inscription Treasure #2",
 				["provider"] = { "i", 193905 },		-- Iskaaran Trading Ledger
 			}),
-			q(70518, {	-- Weekly DF Inscription Knowledgepoint #3
+			q(70518, {	-- DF Weekly Inscription Knowledgepoint #3
 				["name"] = "DF Inscription Drop #1: Qalashi Djaradin",
 				["description"] = "Drops from any Qalashi Djaradin.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
@@ -5348,7 +5348,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 					{ 39.6, 51.4, THE_WAKING_SHORES },
 				},
 			}),
-			q(70519, {	-- Weekly DF Inscription Knowledgepoint #4
+			q(70519, {	-- DF Weekly Inscription Knowledgepoint #4
 				["name"] = "DF Inscription Drop #2: Dragon-kin/Proto Drakes",
 				["description"] = "Drops from any Dragon-kin/Proto Drake.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {

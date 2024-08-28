@@ -1514,22 +1514,22 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 198510 },	-- Draconic Treatise on Engineering
 			}),
-			q(66379, {	-- Weekly DF Engineering Knowledgepoint #1
+			q(66379, {	-- DF Weekly Engineering Knowledgepoint #1
 				["name"] = "DF Engineering Treasure #1",
 				["provider"] = { "i", 193902 },	-- Eroded Titan Gizmo
 			}),
-			q(66380, {	-- Weekly DF Engineering Knowledgepoint #2
+			q(66380, {	-- DF Weekly Engineering Knowledgepoint #2
 				["name"] = "DF Engineering Treasure #2",
 				["provider"] = { "i", 193903 },	-- Watcher Power Core
 			}),
-			q(70517, {	-- Weekly DF Engineering Knowledgepoint #3
+			q(70517, {	-- DF Weekly Engineering Knowledgepoint #3
 				["name"] = "DF Engineering Drop #1: Dragon-esque",
 				["description"] = "Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = { 194656 },	-- Reservoir Dapple
 				["provider"] = { "i", 198970 },		-- Infinitely Attachable Pair o' Docks
 				["coord"] = { 49.4, 62.6, THALDRASZUS },
 			}),
-			q(70516, {	-- Weekly DF Engineering Knowledgepoint #4
+			q(70516, {	-- DF Weekly Engineering Knowledgepoint #4
 				["name"] = "DF Engineering Drop #2: Tyrhold Ancient",
 				["description"] = "Drops from any Tyrhold-esque mob.\nCoordinates link to Tyrhold where almost any mob can drop it.",
 				["crs"] = { 193244 },	-- Titan Defense Matrix
@@ -1550,11 +1550,11 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222621 },	-- Algari Treatise on Engineering
 			}),
-			q(83260, {	-- Weekly TWW Engineering Knowledgepoint #1
+			q(83260, {	-- TWW Weekly Engineering Knowledgepoint #1
 				["name"] = "TWW Engineering Treasure #1",
 				["provider"] = { "i", 225228 },	-- Rust-Locked Mechanism
 			}),
-			q(83261, {	-- Weekly TWW Engineering Knowledgepoint #2
+			q(83261, {	-- TWW Weekly Engineering Knowledgepoint #2
 				["name"] = "TWW Engineering Treasure #2",
 				["provider"] = { "i", 225229 },	-- Earthen Induction Coil
 			}),
