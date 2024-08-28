@@ -1061,6 +1061,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 44.0, 49.7, HALLOWFALL },
 				["cost"] = {{"i", 224268, 1}},	-- 1x Filigreed Cleric
 			}),
+			q(82845, {	-- Ivory Tinderbox
+				["sourceQuests"] = { 82810 },	-- Time Found
+				["provider"] = { "n", 226051 },	-- Haverd Sunhart
+				["coord"] = { 41.6, 34.8, HALLOWFALL },
+				["cost"] = {{"i", 224266, 1}},	-- 1x Ivory Tinderbox
+			}),
 			q(80679, {	-- Stuffed Lynx Toy
 				["sourceQuests"] = { 80678 },	-- Time Lost
 				["provider"] = { "n", 218486 },	-- Phillip Taversil <Leatherworking>

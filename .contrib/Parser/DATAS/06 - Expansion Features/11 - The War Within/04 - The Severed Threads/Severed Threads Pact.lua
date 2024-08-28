@@ -351,6 +351,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(82647),	-- pop questIDs: 81478 (General), 81482 (Vizier), 81483 (Weaver)
 			q(82648),	-- pop questIDs: 81493 (General), 81503 (?), 81501 (?)
 			-- General
+			--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224191 @ 68.5, 51.1), start questID 81484 (Wet Work: Death of a Salesman)
 			--q(82645),	-- 'Listen to the rumor' from Eirzay (n: 224171 @ 63.0, 38.1, 2216), start questID 81491 (Armaments: Arbalests)
 			--q(82646),	-- 'Listen to the rumor' from Eirzay (n: 224172 @ 48.4, 60.7), start questID 81492 (Armaments: Smithing Tools)
 			--q(82644),	-- 'Listen to the rumor' from Eirzay (n: 224170 @ 58.1, 39.3, 2216), start questID 81477 (Armaments: Weaponry)

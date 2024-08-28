@@ -97,7 +97,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(80399, {	-- Rations and Revelations
 					["sourceQuests"] = { 78233 },	-- The Weaver's Gift
 					["provider"] = { "n", 211409 },	-- Faerin Lothar
-					["coord"] = { 59.6, 25.7, AZJ_KAHET },
+					["coord"] = { 59.3, 19.3, AZJ_KAHET },
 					["g"] = {
 						i(217614),	-- Arathi Rations (QI!)
 					},
@@ -105,7 +105,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78236, {	-- Scrappy Straggler
 					["sourceQuests"] = { 80399 },	-- Rations and Revelations
 					["provider"] = { "n", 211409 },	-- Faerin Lothar
-					["coord"] = { 59.6, 25.7, AZJ_KAHET },
+					["coord"] = { 59.3, 19.3, AZJ_KAHET },
 				}),
 				q(78234, {	-- Force Your Way
 					["sourceQuests"] = { 78236 },	-- Scrappy Straggler
@@ -514,7 +514,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(83306, {	-- Where the Wild Things Camp
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 211409 },	-- Faerin Lothar
-					["coord"] = { 59.6, 25.7, AZJ_KAHET },
+					["coord"] = { 59.3, 19.3, AZJ_KAHET },
 					["isBreadcrumb"] = true,
 				}),
 				q(80564, {	-- Field Research
@@ -746,7 +746,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(83716, {	-- Beneath the Roots
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 211409 },	-- Faerin Lothar
-					["coord"] = { 59.6, 25.7, AZJ_KAHET },
+					["coord"] = { 59.3, 19.3, AZJ_KAHET },
 					["isBreadcrumb"] = true,
 				}),
 				q(83628, {	-- Tense Recovery

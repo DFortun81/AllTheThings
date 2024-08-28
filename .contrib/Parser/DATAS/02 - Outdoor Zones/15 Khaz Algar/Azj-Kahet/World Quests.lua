@@ -58,6 +58,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82468, {	-- Let Them Win
 					["coord"] = { 30.4, 44.1, AZJ_KAHET },
 				}),
+				q(83266, {	-- One Hungry Worm
+					["coord"] = { 51.8, 29.8, AZJ_KAHET },
+				}),
 				q(82363, {	-- Opposing Forces
 					["coord"] = { 42.2, 23.4, AZJ_KAHET },
 				}),

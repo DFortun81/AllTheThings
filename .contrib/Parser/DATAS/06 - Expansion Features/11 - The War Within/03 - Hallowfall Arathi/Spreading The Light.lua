@@ -635,6 +635,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(84056),	-- Extra HQT: Toadstomper
 			---
 			q(79177),	-- Snuffling in Hallowfall?
+			--q(83342),	-- ??? "Popped when completing "Shadows of Flavour"
+			--q(79188),	-- ??? "After picking up Spider-Touched Bag treasure, during the keyflame event and turning in a quest"
 			-- Vendor
 			q(76996),	-- after buy and use itemID 210826 (Harvestbot Repair Kit)
 			q(83341),	-- after turn in 78933 (The Sweet Eclipse), unlock ability to buy Sweet Eclipse from vendor
