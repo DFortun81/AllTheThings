@@ -240,6 +240,116 @@ root(ROOTS.Professions, prof(SKINNING, {
 			recipe(257148),	-- Skinning Technique: Leather Gathering (Rank 3)
 		},
 	}),
+	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2 }, ["requireSkill"] = SKINNING }, {
+		n(QUESTS, {
+			q(70363, {	-- Dragon Isles Skinning
+				["description"] = "Do NOT skin any Dragon Isles creatures. This quest can only be picked up PRIOR to learning Dragon Isles Skinning.",
+				["sourceQuests"] = {
+					67700,	-- To the Dragon Isles! [A]
+					65444,	-- To the Dragon Isles! [H]
+				},
+				["provider"] = { "n", 192558 },	-- Toninaar
+				["coord"] = { 76.7, 34.8, THE_WAKING_SHORES },
+				["lockCriteria"] = { 1, "spellID", 366263},	-- Dragon Isles Skinning
+			}),
+			q(70034, {	-- Artisan's Supply: Salamanther Scale
+				["provider"] = { "n", 192558 },	-- Toninaar
+				["coord"] = { 76.6, 34.8, THE_WAKING_SHORES },
+				["cost"] = { { "i", 193252, 3 }, },	-- 3x Salamanther Scales
+				["_drop"] = { "g" },
+			}),
+			q(70259, {	-- Hidden Profession Master Skinning
+				["name"] = "Hidden Profession Master: Skinning",
+				["provider"] = { "n", 194844 },	-- Zenzi
+				["coord"] = { 73.3, 69.7, THE_WAKING_SHORES },
+			}),
+			q(70193, {	-- Specialized Secrets: Skinning
+				["sourceQuests"] = { 69979 },	-- A Worthy Hunt
+				["provider"] = { "n", 193110 },	-- Khadin
+				["coord"] = { 51.8, 33.0, OHNAHRAN_PLAINS },
+				["cost"] = { { "i", 191784, 1 }, },	-- Dragon Shard of Knowledge
+				["isRepeatable"] = true,
+				["g"] = {
+					i(190456),	-- Artisan's Mettle
+				},
+			}),
+		}),
+		n(QUESTS, sharedData({
+			["description"] = "Requires 25 Skill.",
+			["provider"] = { "n", 193846 },	-- Ralathor the Rugged
+			["coord"] = { 28.8, 60.4, VALDRAKKEN },
+			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
+			["isWeekly"] = true,
+			["g"] = {
+				i(199128),	-- Skinning Field Notes
+			},
+		},{
+			q(72158),	-- A Dense Delivery
+			q(70619),	-- A Study of Leather
+			q(72159),	-- Scaling Down
+			q(70620),	-- Scaling Up
+		})),
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = { { "c", SKINNING_KNOWLEDGE, 1 } }, }, {
+				r(383090),	-- Aileron Seamoth Lure
+				r(383128),	-- Bottled Pheromones
+				r(375787),	-- Cerulean Spinefish Lure
+				r(383132),	-- Elusive Creature Bait
+				r(385984),	-- Infusion: Decay
+				r(385982),	-- Infusion: Earth
+				r(385972),	-- Infusion: Frost
+				r(385985),	-- Infusion: Titan
+				r(383094),	-- Islefin Dorado Lure
+				r(375731),	-- Refine Hides++
+				r(375763),	-- Refine Hides+++
+				r(376611),	-- Refine Leather++
+				r(376612),	-- Refine Leather+++
+				r(376613),	-- Refine Scales++
+				r(376614),	-- Refine Scales+++
+				r(375773),	-- Scalebelly Mackerel Lure
+				r(375786),	-- Temporal Dragonhead Lure
+				r(375782),	-- Thousandbite Piranha Lure
+			}),
+		}),
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				currency(SKINNING_KNOWLEDGE),
+			},
+		},{
+			i(199128),	-- Skinning Field Notes
+			q(74114, {	-- DF Inscription Order: Skinning
+				["name"] = "DF Inscription Order: Skinning",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 201023 },	-- Draconic Treatise on Skinning
+			}),
+			q(70381, {	-- Weekly DF Skinning Knowledgepoint #1
+				["name"] = "DF Weekly Skinning Knowledgepoint #1",
+				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
+			}),
+			q(70383, {	-- Weekly DF Skinning Knowledgepoint #2
+				["name"] = "DF Weekly Skinning Knowledgepoint #2",
+				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
+			}),
+			q(70384, {	-- Weekly DF Skinning Knowledgepoint #3
+				["name"] = "DF Weekly Skinning Knowledgepoint #3",
+				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
+			}),
+			q(70385, {	-- Weekly DF Skinning Knowledgepoint #4
+				["name"] = "DF Weekly Skinning Knowledgepoint #4",
+				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
+			}),
+			q(70386, {	-- Weekly DF Skinning Knowledgepoint #5
+				["name"] = "DF Weekly Skinning Knowledgepoint #5",
+				["provider"] = { "i", 198837 },	-- Curious Hide Scraps
+			}),
+			q(70389, {	-- Weekly DF Skinning Knowledgepoint #6
+				["name"] = "DF Weekly Skinning Knowledgepoint #6",
+				["provider"] = { "i", 198841 },	-- Large Sample of Curious Hide
+			}),
+		})),
+	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }, ["requireSkill"] = SKINNING }, {
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
