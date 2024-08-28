@@ -291,7 +291,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
-			["g"] = sharedData({ ["cost"] = { { "c", SKINNING_KNOWLEDGE, 1 } }, }, {
+			["g"] = sharedData({ ["cost"] = { { "c", DF_SKINNING_KNOWLEDGE, 1 } }, }, {
 				r(383090),	-- Aileron Seamoth Lure
 				r(383128),	-- Bottled Pheromones
 				r(375787),	-- Cerulean Spinefish Lure
@@ -315,7 +315,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
 			["isWeekly"] = true,
 			["g"] = {
-				currency(SKINNING_KNOWLEDGE),
+				currency(DF_SKINNING_KNOWLEDGE),
 			},
 		},{
 			i(199128),	-- Skinning Field Notes
