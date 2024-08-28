@@ -258,9 +258,55 @@ SKILL_ID_CONVERSION_TABLE = {
 }
 
 -- Export skill data into DB for addon use
+-- TODO: revise how this can be cleaned up, lots of duplicated mappings and linkages that seem pretty pointless
 ExportDB.SkillDB = {
 	-- Mapping of Skill to Base Skill relationships
 	Conversion = SKILL_ID_CONVERSION_TABLE,
+	-- Mapping of Base Skill to known Spell
+	SkillToSpell = {
+		[171] = 2259,	-- Alchemy
+		[794] = 158762,	-- Arch
+		[261] = 5149,	-- Beast Training
+		[164] = 2018,	-- Blacksmithing
+		[185] = 2550,	-- Cooking
+		[333] = 7411,	-- Enchanting
+		[202] = 4036,	-- Engineering
+		[356] = 7620,	-- Fishing
+		[129] = 3273,	-- First Aid
+		[182] = 2366,	-- Herb Gathering
+		[773] = 45357,	-- Inscription
+		[755] = 25229,	-- Jewelcrafting
+		--[2720] = 2720,	-- Junkyard Tinkering [Does not have a spellID]
+		[165] = 2108,	-- Leatherworking
+		[186] = 2575,	-- Mining
+		[393] = 8613,	-- Skinning
+		[197] = 3908,	-- Tailoring
+		[960] = 53428,  -- Runeforging
+		[40] = 2842,	-- Poisons
+		[633] = 1809,	-- Lockpicking
+		[921] = 921,	-- Pickpocketing
+
+		-- Specializations
+		[20219] = 20219,	-- Gnomish Engineering
+		[20222] = 20222,	-- Goblin Engineering
+		[9788] = 9788,		-- Armorsmith
+		[9787] = 9787,		-- Weaponsmith
+		[17041] = 17041,	-- Master Axesmith
+		[17040] = 17040,	-- Master Hammersmith
+		[17039] = 17039,	-- Master Swordsmith
+		[10656] = 10656,	-- Dragonscale Leatherworking
+		[10658] = 10658,	-- Elemental Leatherworking
+		[10660] = 10660,	-- Tribal Leatherworking
+		[26801] = 26801,	-- Shadoweave Tailoring
+		[26797] = 26797,	-- Spellfire Tailoring
+		[26798] = 26798,	-- Mooncloth Tailoring
+		[125589] = 125589,	-- Way of the Brew
+		[124694] = 124694,	-- Way of the Grill
+		[125588] = 125588,	-- Way of the Oven
+		[125586] = 125586,	-- Way of the Pot
+		[125587] = 125587,	-- Way of the Steamer
+		[125584] = 125584,	-- Way of the Wok
+	},
 	-- Skills with possible Specializations
 	Specializations = {
 		[202] = {	-- Engineering
@@ -271,6 +317,28 @@ ExportDB.SkillDB = {
 			9788,	-- Armorsmith
 			9787,	-- Weaponsmith
 		}
+	},
+	-- Mapping of Specialization Spells to their Base Skill Spell equivalents
+	SpecializationSpells = {
+		[20219] = 4036,	-- Gnomish Engineering
+		[20222] = 4036,	-- Goblin Engineering
+		[9788] = 2018,	-- Armorsmith
+		[9787] = 2018,	-- Weaponsmith
+		[17041] = 2018,	-- Master Axesmith
+		[17040] = 2018,	-- Master Hammersmith
+		[17039] = 2018,	-- Master Swordsmith
+		[10656] = 2108,	-- Dragonscale Leatherworking
+		[10658] = 2108,	-- Elemental Leatherworking
+		[10660] = 2108,	-- Tribal Leatherworking
+		[26801] = 3908,	-- Shadoweave Tailoring
+		[26797] = 3908,	-- Spellfire Tailoring
+		[26798] = 3908,	-- Mooncloth Tailoring
+		[125589] = 2550,-- Way of the Brew
+		[124694] = 2550,-- Way of the Grill
+		[125588] = 2550,-- Way of the Oven
+		[125586] = 2550,-- Way of the Pot
+		[125587] = 2550,-- Way of the Steamer
+		[125584] = 2550,-- Way of the Wok
 	},
 	-- Base Skill known for an active Specialization Skill
 	BaseSkills = {
@@ -303,3 +371,10 @@ ExportDB.SkillDB = {
 		2886,	-- Supply Shipments
 	},
 }
+
+local spellToSkill = {}
+for skillID,spellID in pairs(ExportDB.SkillDB.SkillToSpell) do
+	spellToSkill[spellID] = skillID
+end
+
+ExportDB.SkillDB.SpellToSkill = spellToSkill

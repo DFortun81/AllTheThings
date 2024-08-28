@@ -361,7 +361,7 @@ app.AddEventHandler("OnStartup", function()
 	local conversions = app.Settings.InformationTypeConversionMethods;
 	conversions.professionName = function(skillID)
 		local texture = GetTradeSkillTexture(skillID or 0)
-		local name = GetSpellName(app.SkillIDToSpellID[skillID] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(skillID) or RETRIEVING_DATA
+		local name = GetSpellName(app.SkillDB.SkillToSpell[skillID] or 0) or C_TradeSkillUI.GetTradeSkillDisplayName(skillID) or RETRIEVING_DATA
 		return texture and "|T"..texture..":0|t "..name or name
 	end;
 end);
@@ -4898,28 +4898,7 @@ end)();
 
 -- Flight Path Lib
 do
-local FlightPathMapIDs = {
-	1209,	-- Kalimdor
-	1208,	-- Eastern Kingdoms
-	1467,	-- Outland
-	1384,	-- Northrend
-	1923,	-- Pandaria
-	1922,	-- Draenor
-	993,	-- Broken Isles
-	994,	-- Argus
-	1011,	-- Zandalar
-	1014,	-- Kul Tiras
-	1504,	-- Nazjatar
-	1647,	-- The Shadowlands
-	1409,	-- Exile's Reach
-	2046,	-- Zereth Mortis
-	2057,	-- Dragon Isles
-	2055,	-- Sepulcher of the First Ones (has FPs inside)
-	2149,	-- Ohn'ahran Plains [The Nokhud Offensive] (has FPs inside)
-	2175,	-- Zaralek Cavern
-	2241,	-- Emerald Dream
-	2276,	-- Khaz Algar
-};
+local FlightPathMapIDs = app.FlightPathDB.FlightPathMapIDs
 local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes, GetTaxiMapID
 	= C_TaxiMap.GetTaxiNodesForMap, C_TaxiMap.GetAllTaxiNodes, GetTaxiMapID;
 local localizedFlightPathNames;
@@ -5226,7 +5205,7 @@ app.CreateItemTooltipHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHa
 												spellName = spellName:trim();
 												local spellID = app.SpellNameToSpellID[spellName];
 												if spellID then
-													local skillID = app.SpellIDToSkillID[spellID];
+													local skillID = app.SkillDB.SpellToSkill[spellID];
 													if skillID then
 														t.info.requireSkill = skillID;
 													elseif spellName == "Pick Pocket" then
@@ -5714,76 +5693,7 @@ end)();
 
 -- Profession Lib
 (function()
-app.SkillIDToSpellID = {
-	[171] = 2259,	-- Alchemy
-	[794] = 158762,	-- Arch
-	[261] = 5149,	-- Beast Training
-	[164] = 2018,	-- Blacksmithing
-	[185] = 2550,	-- Cooking
-	[333] = 7411,	-- Enchanting
-	[202] = 4036,	-- Engineering
-	[356] = 7620,	-- Fishing
-	[129] = 3273,	-- First Aid
-	[182] = 2366,	-- Herb Gathering
-	[773] = 45357,	-- Inscription
-	[755] = 25229,	-- Jewelcrafting
-	--[2720] = 2720,	-- Junkyard Tinkering [Does not have a spellID]
-	[165] = 2108,	-- Leatherworking
-	[186] = 2575,	-- Mining
-	[393] = 8613,	-- Skinning
-	[197] = 3908,	-- Tailoring
-	[960] = 53428,  -- Runeforging
-	[40] = 2842,	-- Poisons
-	[633] = 1809,	-- Lockpicking
-	[921] = 921,	-- Pickpocketing
-
-	-- Specializations
-	[20219] = 20219,	-- Gnomish Engineering
-	[20222] = 20222,	-- Goblin Engineering
-	[9788] = 9788,		-- Armorsmith
-	[9787] = 9787,		-- Weaponsmith
-	[17041] = 17041,	-- Master Axesmith
-	[17040] = 17040,	-- Master Hammersmith
-	[17039] = 17039,	-- Master Swordsmith
-	[10656] = 10656,	-- Dragonscale Leatherworking
-	[10658] = 10658,	-- Elemental Leatherworking
-	[10660] = 10660,	-- Tribal Leatherworking
-	[26801] = 26801,	-- Shadoweave Tailoring
-	[26797] = 26797,	-- Spellfire Tailoring
-	[26798] = 26798,	-- Mooncloth Tailoring
-	[125589] = 125589,	-- Way of the Brew
-	[124694] = 124694,	-- Way of the Grill
-	[125588] = 125588,	-- Way of the Oven
-	[125586] = 125586,	-- Way of the Pot
-	[125587] = 125587,	-- Way of the Steamer
-	[125584] = 125584,	-- Way of the Wok
-};
-app.SpellIDToSkillID = {};
-for skillID,spellID in pairs(app.SkillIDToSpellID) do
-	app.SpellIDToSkillID[spellID] = skillID;
-end
-app.SpecializationSpellIDs = setmetatable({
-	[20219] = 4036,	-- Gnomish Engineering
-	[20222] = 4036,	-- Goblin Engineering
-	[9788] = 2018,	-- Armorsmith
-	[9787] = 2018,	-- Weaponsmith
-	[17041] = 2018,	-- Master Axesmith
-	[17040] = 2018,	-- Master Hammersmith
-	[17039] = 2018,	-- Master Swordsmith
-	[10656] = 2108,	-- Dragonscale Leatherworking
-	[10658] = 2108,	-- Elemental Leatherworking
-	[10660] = 2108,	-- Tribal Leatherworking
-	[26801] = 3908,	-- Shadoweave Tailoring
-	[26797] = 3908,	-- Spellfire Tailoring
-	[26798] = 3908,	-- Mooncloth Tailoring
-	[125589] = 2550,-- Way of the Brew
-	[124694] = 2550,-- Way of the Grill
-	[125588] = 2550,-- Way of the Oven
-	[125586] = 2550,-- Way of the Pot
-	[125587] = 2550,-- Way of the Steamer
-	[125584] = 2550,-- Way of the Wok
-}, {__index = function(t,k) return k; end})
-
+app.SpecializationSpellIDs = setmetatable(app.SkillDB.SpecializationSpells, {__index = function(t,k) return k; end})
 local fields = {
 	["key"] = function(t)
 		return "professionID";
@@ -5812,7 +5722,7 @@ local fields = {
 		return icon or GetTradeSkillTexture(t.professionID);
 	end,
 	["spellID"] = function(t)
-		return app.SkillIDToSpellID[t.professionID];
+		return app.SkillDB.SkillToSpell[t.professionID];
 	end,
 	["skillID"] = function(t)
 		return t.professionID;
@@ -9205,7 +9115,7 @@ local function AddSearchGroupsByFieldValue(groups, field, value)
 		for _,group in ipairs(groups) do
 			if not group.sourceIgnored then
 				v = group[field];
-				if v == value or (field == "requireSkill" and v and app.SpellIDToSkillID[app.SpecializationSpellIDs[v] or 0] == value) then
+				if v == value or (field == "requireSkill" and v and app.SkillDB.SpellToSkill[app.SpecializationSpellIDs[v] or 0] == value) then
 					tinsert(SearchGroups, group);
 				else
 					AddSearchGroupsByFieldValue(group.g, field, value);

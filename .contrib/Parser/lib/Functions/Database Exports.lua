@@ -166,4 +166,34 @@ RaceIDs[TROLL].faction = horde
 RaceIDs[GOBLIN].faction = horde
 RaceIDs[BLOODELF].faction = horde
 
+
+-- FlightPathDB --
+
+ExportDB.FlightPathDB = {
+	-- Represents the mapID used by the game to show FlightPaths at a Flight Master
+	-- Missing ones will be reported in chat by ATT when 'Debugging' is set
+	FlightPathMapIDs = {
+		1209,	-- Kalimdor
+		1208,	-- Eastern Kingdoms
+		1467,	-- Outland
+		1384,	-- Northrend
+		1923,	-- Pandaria
+		1922,	-- Draenor
+		993,	-- Broken Isles
+		994,	-- Argus
+		1011,	-- Zandalar
+		1014,	-- Kul Tiras
+		1504,	-- Nazjatar
+		1647,	-- The Shadowlands
+		1409,	-- Exile's Reach
+		2046,	-- Zereth Mortis
+		2057,	-- Dragon Isles
+		2055,	-- Sepulcher of the First Ones (has FPs inside)
+		2149,	-- Ohn'ahran Plains [The Nokhud Offensive] (has FPs inside)
+		2175,	-- Zaralek Cavern
+		2241,	-- Emerald Dream
+		2276,	-- Khaz Algar
+	}
+}
+
 end
