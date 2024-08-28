@@ -6469,8 +6469,8 @@ local function SetRowData(self, row, data)
 end
 local CreateRow;
 local function Refresh(self)
-	if not app.IsReady or not self:IsVisible() then return; end
-	-- app.PrintDebug("Refresh:",self.Suffix)
+	if not self:IsVisible() then return; end
+	-- app.PrintDebug(Colorize("Refresh:", app.Colors.TooltipDescription),self.Suffix)
 	local height = self:GetHeight();
 	if height > 80 then
 		self.ScrollBar:Show();
@@ -8147,6 +8147,7 @@ local function ProcessGroup(data, object)
 end
 local function UpdateWindow(self, force, got)
 	local data = self.data;
+	-- TODO: remove IsReady check when Windows have OnInit capability
 	if not data or not app.IsReady then return end
 	local visible = self:IsVisible();
 	-- either by Setting or by special windows apply ad-hoc logic
