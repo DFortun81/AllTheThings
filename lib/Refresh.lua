@@ -335,4 +335,10 @@ app.RefreshCollections = function()
 	IsRefreshing = true
 	app:StartATTCoroutine("RefreshingCollections", RefreshCollections)
 end
-app.AddEventHandler("OnInit", app.RefreshCollections)
+
+if app.IsRetail then
+	app.AddEventHandler("OnReady", app.RefreshCollections)
+else
+	-- TODO: test Classic with this as 'OnReady' and consolidate with Retail above
+	app.AddEventHandler("OnInit", app.RefreshCollections)
+end
