@@ -3619,6 +3619,8 @@ app.BuildTotalCost = function(group)
 	if group.window then
 		-- changing settings should refresh the Collector...
 		group.window:AddEventHandler("OnRecalculate_NewSettings", RefreshCollector)
+		-- force refresh should refresh collector...
+		group.window:AddEventHandler("OnRefreshCollections", RefreshCollector)
 	end
 
 	-- Add the cost group to the popout

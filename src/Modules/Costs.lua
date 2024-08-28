@@ -414,7 +414,7 @@ do
 		local text = group.text
 		Collector.__text = text
 		group.text = (text or "").."  "..BLIZZARD_STORE_PROCESSING
-		group.OnUpdate = app.AlwaysShowUpdate
+		group.OnSetVisibility = app.ReturnTrue
 		-- app.PrintDebug("StartUpdating",group.text)
 		app.DirectGroupUpdate(group)
 	end
@@ -459,7 +459,7 @@ do
 			app.Sort(costItems, app.SortDefaults.Total)
 			app.AssignChildren(group)
 		else
-			group.OnUpdate = nil
+			group.OnSetVisibility = nil
 		end
 		app.DirectGroupUpdate(group)
 		Collector.Reset()
