@@ -6,7 +6,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		n(ACHIEVEMENTS, {
 			ach(40837),		-- Adventurer of The Ringing Deeps (automated)
 			ach(40825),		-- Explore The Ringing Deeps (automated)
+			ach(40630),		-- For the Collective
 			ach(40507),		-- Hanging Tight
+			ach(40623),		-- I Only Need One Trip
 			ach(40628),		-- Notable Machines (automated)
 			ach(40473),		-- Not So Quick Fix (automated)
 			ach(40731),		-- Panhandled

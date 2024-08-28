@@ -6,8 +6,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		n(ACHIEVEMENTS, {
 			ach(40435),		-- Adventurer of the Isle of Dorn (automated)
 			ach(40831),		-- Explore the Isle of Dorn (automated)
-			ach(40630),		-- For the Collective
-			ach(40623),		-- I Only Need One Trip
 			ach(40166, {	-- Isle of Dorn Glyph Hunter
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",
