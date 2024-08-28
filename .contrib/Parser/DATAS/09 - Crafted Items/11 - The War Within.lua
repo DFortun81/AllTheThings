@@ -624,6 +624,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(219949),	-- Gleaming Shard+
 			i(219950),	-- Gleaming Shard++
 			i(219951),	-- Gleaming Shard+++
+			i(227661),	-- Gleaming Telluric Crystal
+			i(227659),	-- Fleeting Arcane Manifestation
 			i(219952),	-- Refulgent Crystal+
 			i(219954),	-- Refulgent Crystal++
 			i(219955),	-- Refulgent Crystal+++

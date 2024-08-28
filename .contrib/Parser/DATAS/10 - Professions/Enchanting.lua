@@ -903,13 +903,33 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				["name"] = "TWW Enchanting Treasure #1",
 				["provider"] =  { "i", 225231 },	-- Powdered Fulgurance
 			}),
-			q(84290, {	-- TWW Weekly Enchanting Knowledgepoint #2
+			q(83259, {	-- TWW Weekly Enchanting Knowledgepoint #2
 				["name"] = "TWW Enchanting Treasure #2",
+				["provider"] =  { "i", 225230 },	-- Crystalline Repository
+			}),
+			q(84290, {	-- TWW Weekly Enchanting Knowledgepoint #3
+				["name"] = "TWW Enchanting Treasure #3",
 				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
 			}),
-			q(83259, {	-- TWW Weekly Enchanting Knowledgepoint #3
-				["name"] = "TWW Enchanting Treasure #3",
-				["provider"] =  { "i", 225230 },	-- Crystalline Repository
+			q(84291, {	-- TWW Weekly Enchanting Knowledgepoint #4
+				["name"] = "TWW Enchanting Treasure #4",
+				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
+			}),
+			q(84292, {	-- TWW Weekly Enchanting Knowledgepoint #5
+				["name"] = "TWW Enchanting Treasure #5",
+				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
+			}),
+			q(84293, {	-- TWW Weekly Enchanting Knowledgepoint #6
+				["name"] = "TWW Enchanting Treasure #6",
+				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
+			}),
+			q(84294, {	-- TWW Weekly Enchanting Knowledgepoint #7
+				["name"] = "TWW Enchanting Treasure #7",
+				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
+			}),
+			q(84295, {	-- TWW Weekly Enchanting Knowledgepoint #8
+				["name"] = "TWW Enchanting Treasure #8",
+				["provider"] =  { "i", 227661 },	-- Fleeting Arcane Manifestation
 			}),
 		})),
 	})),

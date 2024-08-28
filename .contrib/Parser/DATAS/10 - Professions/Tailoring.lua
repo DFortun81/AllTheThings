@@ -864,6 +864,10 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222547 },	-- Algari Treatise on Tailoring
 			}),
+			q(83269, {	-- TWW Weekly Tailoring Knowledgepoint #1
+				["name"] = "TWW Tailoring Treasure #1",
+				["provider"] =  { "i", 225221 },	-- Spool of Webweave
+			}),
 		})),
 		n(TREASURES, {
 			o(455941, {	-- Arathi Rotary Cutter
