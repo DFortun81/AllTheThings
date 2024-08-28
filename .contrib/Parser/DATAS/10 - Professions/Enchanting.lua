@@ -766,23 +766,23 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194702 },	-- Draconic Treatise on Enchanting
 			}),
-			q(66377, {	-- Weekly Enchanting Knowledgepoint #1
-				["name"] = "Enchanting Treasure #1",
+			q(66377, {	-- Weekly DF Enchanting Knowledgepoint #1
+				["name"] = "DF Enchanting Treasure #1",
 				["provider"] = { "i", 193900 },	-- Prismatic Focusing Shard
 			}),
-			q(66378, {	-- Weekly Enchanting Knowledgepoint #2
-				["name"] = "Enchanting Treasure #2",
+			q(66378, {	-- Weekly DF Enchanting Knowledgepoint #2
+				["name"] = "DF Enchanting Treasure #2",
 				["provider"] = { "i", 193901 },	-- Primal Dust
 			}),
-			q(70515, {	-- Weekly Enchanting Knowledgepoint #3
-				["name"] = "Enchanting Drop #1: Primalist",
+			q(70515, {	-- Weekly DF Enchanting Knowledgepoint #3
+				["name"] = "DF Enchanting Drop #1: Primalist",
 				["description"] = "Drops from any mob with Primalist in the name.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = { 194656 },	-- Primalist Surgecrusher
 				["provider"] = { "i", 198968 },	-- Primalist Charm
 				["coord"] = { 53.4, 56.2, THALDRASZUS },
 			}),
-			q(70514, {	-- Weekly Enchanting Knowledgepoint #4
-				["name"] = "Enchanting Drop #2: Arcane Elemental",
+			q(70514, {	-- Weekly DF Enchanting Knowledgepoint #4
+				["name"] = "DF Enchanting Drop #2: Arcane Elemental",
 				["description"] = "Drops from any Arcane Elemental.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = { 181536 },	-- Destabilized Elemental
 				["provider"] = { "i", 198967 },	-- Primordial Aether
@@ -894,17 +894,17 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				currency(TWW_ENCHANTING_KNOWLEDGE),
 			},
 		},{
-			q(83727, {	-- Inscription Order: Enchanting
-				["name"] = "Inscription Order: Enchanting",
+			q(83727, {	-- TWW Inscription Order: Enchanting
+				["name"] = "TWW Inscription Order: Enchanting",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222550 },	-- Algari Treatise on Enchanting
 			}),
-			q(83258, {	-- Weekly Enchanting Knowledgepoint #1
-				["name"] = "TWW: Enchanting Treasure #1",
+			q(83258, {	-- Weekly TWW Enchanting Knowledgepoint #1
+				["name"] = "TWW Enchanting Treasure #1",
 				["provider"] =  { "i", 225231 },	-- Powdered Fulgurance
 			}),
-			q(84290, {	-- Weekly Enchanting Knowledgepoint #2
-				["name"] = "TWW: Enchanting Treasure #2",
+			q(84290, {	-- Weekly TWW Enchanting Knowledgepoint #2
+				["name"] = "TWW Enchanting Treasure #2",
 				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
 			}),
 		})),

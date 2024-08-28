@@ -788,16 +788,16 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194698 },	-- Draconic Treatise on Tailoring
 			}),
-			q(66386, {	-- Weekly Tailoring Knowledgepoint #1
-				["name"] = "Tailoring Treasure #1",
+			q(66386, {	-- Weekly DF Tailoring Knowledgepoint #1
+				["name"] = "DF Tailoring Treasure #1",
 				["provider"] = { "i", 193898 },	-- Umbral Bone Needle
 			}),
-			q(66387, {	-- Weekly Tailoring Knowledgepoint #2
-				["name"] = "Tailoring Treasure #2",
+			q(66387, {	-- Weekly DF Tailoring Knowledgepoint #2
+				["name"] = "DF Tailoring Treasure #2",
 				["provider"] = { "i", 193899 },	-- Primalweave Spindle
 			}),
-			q(70525, {	-- Weekly Tailoring Knowledgepoint #3
-				["name"] = "Tailoring Drop #1: Beast Humanoid",
+			q(70525, {	-- Weekly DF Tailoring Knowledgepoint #3
+				["name"] = "DF Tailoring Drop #1: Beast Humanoid",
 				["description"] = "Drops from any beastlike Humanoid.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
 					192500,	-- Fetid Slogger
@@ -809,8 +809,8 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 				["provider"] = { "i", 198978 },	-- Stupidly Effective Stitchery
 			}),
-			q(70524, {	-- Weekly Tailoring Knowledgepoint #4
-				["name"] = "Tailoring Drop #2: Ohn'ahran Humanoid",
+			q(70524, {	-- Weekly DF Tailoring Knowledgepoint #4
+				["name"] = "DF Tailoring Drop #2: Ohn'ahran Humanoid",
 				["description"] = "Drops from any Ohn'ahran Humanoid.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
 					193840,	-- Nokhud Raider
@@ -859,8 +859,8 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				currency(TWW_TAILORING_KNOWLEDGE),
 			},
 		},{
-			q(83735, {	-- Inscription Order: Tailoring
-				["name"] = "Inscription Order: Tailoring",
+			q(83735, {	-- TWW Inscription Order: Tailoring
+				["name"] = "TWW Inscription Order: Tailoring",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222547 },	-- Algari Treatise on Tailoring
 			}),

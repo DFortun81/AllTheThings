@@ -1514,23 +1514,23 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 198510 },	-- Draconic Treatise on Engineering
 			}),
-			q(66379, {	-- Weekly Engineering Knowledgepoint #1
-				["name"] = "Engineering Treasure #1",
+			q(66379, {	-- Weekly DF Engineering Knowledgepoint #1
+				["name"] = "DF Engineering Treasure #1",
 				["provider"] = { "i", 193902 },	-- Eroded Titan Gizmo
 			}),
-			q(66380, {	-- Weekly Engineering Knowledgepoint #2
-				["name"] = "Engineering Treasure #2",
+			q(66380, {	-- Weekly DF Engineering Knowledgepoint #2
+				["name"] = "DF Engineering Treasure #2",
 				["provider"] = { "i", 193903 },	-- Watcher Power Core
 			}),
-			q(70517, {	-- Weekly Engineering Knowledgepoint #3
-				["name"] = "Engineering Drop #1: Dragon-esque",
+			q(70517, {	-- Weekly DF Engineering Knowledgepoint #3
+				["name"] = "DF Engineering Drop #1: Dragon-esque",
 				["description"] = "Drops from any Dragon-kin/Proto Drakes/Dragonlike beasts.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = { 194656 },	-- Reservoir Dapple
 				["provider"] = { "i", 198970 },		-- Infinitely Attachable Pair o' Docks
 				["coord"] = { 49.4, 62.6, THALDRASZUS },
 			}),
-			q(70516, {	-- Weekly Engineering Knowledgepoint #4
-				["name"] = "Engineering Drop #2: Tyrhold Ancient",
+			q(70516, {	-- Weekly DF Engineering Knowledgepoint #4
+				["name"] = "DF Engineering Drop #2: Tyrhold Ancient",
 				["description"] = "Drops from any Tyrhold-esque mob.\nCoordinates link to Tyrhold where almost any mob can drop it.",
 				["crs"] = { 193244 },	-- Titan Defense Matrix
 				["provider"] = { "i", 198969 },		-- Keeper's Mark
@@ -1545,17 +1545,17 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				currency(TWW_ENGINEERING_KNOWLEDGE),
 			},
 		},{
-			q(83728, {	-- Inscription Order: Engineering
-				["name"] = "Inscription Order: Engineering",
+			q(83728, {	-- TWW Inscription Order: Engineering
+				["name"] = "TWW Inscription Order: Engineering",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222621 },	-- Algari Treatise on Engineering
 			}),
-			q(83260, {	-- Weekly Engineering Knowledgepoint #1
-				["name"] = "Engineering Treasure #1",
+			q(83260, {	-- Weekly TWW Engineering Knowledgepoint #1
+				["name"] = "TWW Engineering Treasure #1",
 				["provider"] = { "i", 225228 },	-- Rust-Locked Mechanism
 			}),
-			q(83261, {	-- Weekly Engineering Knowledgepoint #2
-				["name"] = "Engineering Treasure #2",
+			q(83261, {	-- Weekly TWW Engineering Knowledgepoint #2
+				["name"] = "TWW Engineering Treasure #2",
 				["provider"] = { "i", 225229 },	-- Earthen Induction Coil
 			}),
 		})),

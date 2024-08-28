@@ -1156,16 +1156,16 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 198454 },	-- Draconic Treatise on Blacksmith
 			}),
-			q(66381, {	-- Weekly Blacksmithing Knowledgepoint #1
-				["name"] = "Blacksmithing Treasure #1",
+			q(66381, {	-- Weekly DF Blacksmithing Knowledgepoint #1
+				["name"] = "DF Blacksmithing Treasure #1",
 				["provider"] = { "i", 192131 },	-- Valdrakken Weapon Chain
 			}),
-			q(66382, {	-- Weekly Blacksmithing Knowledgepoint #2
-				["name"] = "Blacksmithing Treasure #2",
+			q(66382, {	-- Weekly DF Blacksmithing Knowledgepoint #2
+				["name"] = "DF Blacksmithing Treasure #2",
 				["provider"] = { "i", 192132 },	-- Draconium Blade Sharpener
 			}),
-			q(70513, {	-- Weekly Blacksmithing Knowledgepoint #3
-				["name"] = "Blacksmithing Drop #1: Fire Elemental",
+			q(70513, {	-- Weekly DF Blacksmithing Knowledgepoint #3
+				["name"] = "DF Blacksmithing Drop #1: Fire Elemental",
 				["description"] = "Drops from any Fire Elemental.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
 					196168,	-- Springs Heater
@@ -1174,8 +1174,8 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["provider"] = { "i", 198966 },	-- Molten Globule
 				["coord"] = { 39.0, 48.8, THALDRASZUS },
 			}),
-			q(70512, {	-- Weekly Blacksmithing Knowledgepoint #4
-				["name"] = "Blacksmithing Drop #2: Earth Elemental",
+			q(70512, {	-- Weekly DF Blacksmithing Knowledgepoint #4
+				["name"] = "DF Blacksmithing Drop #2: Earth Elemental",
 				["description"] = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
 					194212,	-- Unleashed Rubble
@@ -1257,17 +1257,17 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				currency(TWW_BLACKSMITHING_KNOWLEDGE),
 			},
 		}, {
-			q(83726, {	-- DF Inscription Order: Blacksmithing
-				["name"] = "DF Inscription Order: Blacksmithing",
+			q(83726, {	-- TWW Inscription Order: Blacksmithing
+				["name"] = "TWW Inscription Order: Blacksmithing",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222554 },	-- Algari Treatise on Blacksmithing
 			}),
-			q(83257, {	-- Weekly Blacksmithing Knowledgepoint #1
-				["name"] = "Blacksmithing Treasure #1",
+			q(83257, {	-- Weekly TWW Blacksmithing Knowledgepoint #1
+				["name"] = "TWW Blacksmithing Treasure #1",
 				["provider"] = { "i", 225232 },	-- Coreway Billet
 			}),
-			q(83256, {	-- Weekly Blacksmithing Knowledgepoint #2
-				["name"] = "Blacksmithing Treasure #2",
+			q(83256, {	-- Weekly TWW Blacksmithing Knowledgepoint #2
+				["name"] = "TWW Blacksmithing Treasure #2",
 				["provider"] = { "i", 225233 },	-- Dense Bladestone
 			}),
 		})),

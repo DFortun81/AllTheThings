@@ -773,16 +773,16 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194703 },	-- Draconic Treatise on Jewelcrafting
 			}),
-			q(66388, {	-- Weekly Jewelcrafting Knowledgepoint #1
-				["name"] = "Jewelcrafting Treasure #1",
+			q(66388, {	-- Weekly DF Jewelcrafting Knowledgepoint #1
+				["name"] = "DF Jewelcrafting Treasure #1",
 				["provider"] = { "i", 193909 },		-- Ancient Gem Fragments
 			}),
-			q(66389, {	-- Weekly Jewelcrafting Knowledgepoint #2
-				["name"] = "Jewelcrafting Treasure #2",
+			q(66389, {	-- Weekly DF Jewelcrafting Knowledgepoint #2
+				["name"] = "DF Jewelcrafting Treasure #2",
 				["provider"] = { "i", 193907 },		-- Chipped Tyrstone
 			}),
-			q(70521, {	-- Weekly Jewelcrafting Knowledgepoint #3
-				["name"] = "Jewelcrafting Drop #1: Well Dressed",
+			q(70521, {	-- Weekly DF Jewelcrafting Knowledgepoint #3
+				["name"] = "DF Jewelcrafting Drop #1: Well Dressed",
 				["description"] = "Drops from any Well Dressed Humanoids & Dragonkins.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
 					195215,	-- Rebel Bruiser
@@ -796,8 +796,8 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 					{ 45.8 ,58.2, THALDRASZUS },
 				},
 			}),
-			q(70520, {	-- Weekly Jewelcrafting Knowledgepoint #4
-				["name"] = "Jewelcrafting Drop #2: Earth Elemental",
+			q(70520, {	-- Weekly DF Jewelcrafting Knowledgepoint #4
+				["name"] = "DF Jewelcrafting Drop #2: Earth Elemental",
 				["description"] = "Drops from any Earth Elemental.\nCoordinates link to the spot(s) we found best.",
 				["crs"] = {
 					194212,	-- Unleashed Rubble
@@ -904,8 +904,8 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				currency(TWW_JEWELCRAFTING_KNOWLEDGE),
 			},
 		},{
-			q(83731, {	-- Inscription Order: Jewelcrafting
-				["name"] = "Inscription Order: Jewelcrafting",
+			q(83731, {	-- TWW Inscription Order: Jewelcrafting
+				["name"] = "TWW Inscription Order: Jewelcrafting",
 				["provider"] = { "i", 222551 },	-- Algari Treatise on Jewelcrafting
 			}),
 		})),

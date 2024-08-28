@@ -330,33 +330,33 @@ root(ROOTS.Professions, prof(SKINNING, {
 			},
 		},{
 			--i(xx),	-- new skinning weekly item
-			q(83734, {	-- Inscription Order: Skinning
-				["name"] = "Inscription Order: Skinning",
+			q(83734, {	-- TWW Inscription Order: Skinning
+				["name"] = "TWW Inscription Order: Skinning",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222649 },	-- Algari Treatise on Skinning
 			}),
-			q(81459, {	-- Weekly Skinning Knowledgepoint #1
-				["name"] = "Weekly Skinning Knowledgepoint #1",
+			q(81459, {	-- Weekly TWW Skinning Knowledgepoint #1
+				["name"] = "TWW Weekly Skinning Knowledgepoint #1",
 				["provider"] = { "i", 224780 },	-- Toughened Thunderous Hide
 			}),
-			q(81460, {	-- Weekly Skinning Knowledgepoint #2
-				["name"] = "Weekly Skinning Knowledgepoint #2",
+			q(81460, {	-- Weekly TWW Skinning Knowledgepoint #2
+				["name"] = "TWW Weekly Skinning Knowledgepoint #2",
 				["provider"] = { "i", 224780 },	-- Toughened Thunderous Hide
 			}),
-			q(81461, {	-- Weekly Skinning Knowledgepoint #3
-				["name"] = "Weekly Skinning Knowledgepoint #3",
+			q(81461, {	-- Weekly TWW Skinning Knowledgepoint #3
+				["name"] = "TWW Weekly Skinning Knowledgepoint #3",
 				["provider"] = { "i", 224780 },	-- Toughened Thunderous Hide
 			}),
-			q(81462, {	-- Weekly Skinning Knowledgepoint #4
-				["name"] = "Weekly Skinning Knowledgepoint #4",
+			q(81462, {	-- Weekly TWW Skinning Knowledgepoint #4
+				["name"] = "TWW Weekly Skinning Knowledgepoint #4",
 				["provider"] = { "i", 224780 },	-- Toughened Thunderous Hide
 			}),
-			q(81463, {	-- Weekly Skinning Knowledgepoint #5
-				["name"] = "Weekly Skinning Knowledgepoint #5",
+			q(81463, {	-- Weekly TWW Skinning Knowledgepoint #5
+				["name"] = "TWW Weekly Skinning Knowledgepoint #5",
 				["provider"] = { "i", 224780 },	-- Toughened Thunderous Hide
 			}),
-			q(81464, {	-- Weekly Skinning Knowledgepoint #6
-				["name"] = "Weekly Skinning Knowledgepoint #6",
+			q(81464, {	-- Weekly TWW Skinning Knowledgepoint #6
+				["name"] = "TWW Weekly Skinning Knowledgepoint #6",
 				["provider"] = { "i", 224781 },	-- Abyssal Fur
 			}),
 		})),
