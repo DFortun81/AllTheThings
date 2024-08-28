@@ -256,3 +256,50 @@ SKILL_ID_CONVERSION_TABLE = {
 	[2886] = 2886,   -- Supply Shipments
 
 }
+
+-- Export skill data into DB for addon use
+ExportDB.SkillDB = {
+	-- Mapping of Skill to Base Skill relationships
+	Conversion = SKILL_ID_CONVERSION_TABLE,
+	-- Skills with possible Specializations
+	Specializations = {
+		[202] = {	-- Engineering
+			20219,    -- Gnomish Engineering
+			20222     -- Goblin Engineering
+		},
+		[164] = {	-- Blacksmithing
+			9788,	-- Armorsmith
+			9787,	-- Weaponsmith
+		}
+	},
+	-- Base Skill known for an active Specialization Skill
+	BaseSkills = {
+		-- Engineering Skills
+		[20219] = 202,  -- Gnomish Engineering
+		[20222] = 202,   -- Goblin Engineering
+		-- Blacksmithing Skills
+		[9788] = 9788,	-- Armorsmith
+		[9787] = 9787,	-- Weaponsmith
+		[17041] = 17041,	-- Master Axesmith
+		[17040] = 17040,	-- Master Hammersmith
+		[17039] = 17039,	-- Master Swordsmith
+		-- Leatherworking
+		[10656] = 10656,	-- Dragonscale Leatherworking
+		[10658] = 10658,	-- Elemental Leatherworking
+		[10660] = 10660,	-- Tribal Leatherworking
+		-- Tailoring
+		[26801] = 26801,	-- Shadoweave Tailoring
+		[26797] = 26797,	-- Spellfire Tailoring
+		[26798] = 26798,	-- Mooncloth Tailoring
+	},
+	-- Skills which any character can learn without conflict/limitation
+	AlwaysAvailable = {
+		2720,	-- Junkyard Tinkering
+		2787,	-- Abominable Stitching
+		2791,	-- Ascension Crafting
+		2811,	-- Stygia Crafting
+		2819,	-- Protoform Synthesis
+		2847,	-- Tuskarr Fishing Gear
+		2886,	-- Supply Shipments
+	},
+}
