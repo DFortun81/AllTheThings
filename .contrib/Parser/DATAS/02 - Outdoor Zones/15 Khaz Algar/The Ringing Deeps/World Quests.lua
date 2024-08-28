@@ -84,7 +84,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81807, {	-- Skyrider Racing - Earthenworks Weave
 					["coord"] = { 40.9, 11.3, THE_RINGING_DEEPS },
 				}),
-				q(81812, {	-- Skyrider Racing - Opportunity Point Amble
+				q(81813, {	-- Skyrider Racing - Opportunity Point Amble
 					["coord"] = { 63.3, 75.0, THE_RINGING_DEEPS },
 				}),
 				q(81808, {	-- Skyrider Racing - Ringing Deeps Ramble
