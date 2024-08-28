@@ -3226,11 +3226,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 		i(193895),	-- Temporal Dragonhead Lure
 		i(198807),	-- Titan-Infused Creature Bait
 		i(193894),	-- Thousandbite Piranha Lure
-		n(FIRST_CRAFTS_HEADER, sharedData({
-			["requireSkill"] = SKINNING,
-		},{
-		-- Listed under HQ until Quest Tracking Update
-		})),
+		-- n(FIRST_CRAFTS_HEADER, sharedData({
+		-- 	["requireSkill"] = SKINNING,
+		-- },{
+		-- -- Listed under HQ until Quest Tracking Update
+		-- })),
 	}),
 	prof(TAILORING, {
 		n(ARMOR, {

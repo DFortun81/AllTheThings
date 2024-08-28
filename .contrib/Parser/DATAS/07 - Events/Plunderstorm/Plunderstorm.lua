@@ -32,11 +32,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.PLUNDERSTORM, bubbleDown({ ["timeline"
 				ach(20508),	-- Plunder Wonder
 			}),
 			n(QUESTS, sharedData({
-				["repeatable"] = true,
-			},{
-			--	q(81679),	-- Daily Doubloons
-			})),
-			n(QUESTS, sharedData({
 				["isWorldQuest"] = true,
 			},{
 				q(79246),	-- Captain's Orders: Coffer Collector

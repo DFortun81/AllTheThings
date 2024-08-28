@@ -201,7 +201,7 @@ sharedData = function(data, t)
 	if not data then
 		print("sharedData: No Shared Data")
 	end
-	if not t then
+	if not t or (#t == 0 and not t.g and not t.groups) then
 		print("sharedData: No Source 't'")
 	end
 	if t then
@@ -228,8 +228,11 @@ sharedDataSelf = function(data, t)
 	t = togroups(t);
 	-- then apply the data to itself
 	applyData(data, t);
-	-- then apply regular sharedData on the group
-	return sharedData(data, t);
+	-- then apply regular sharedData on the group if it has content
+	if not (#t == 0 and not t.g and not t.groups) then
+		return sharedData(data, t);
+	end
+	return t
 end
 -- Applies a copy of the provided data into all sub-groups of the provided table/array
 bubbleDown = function(data, t)
