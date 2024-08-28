@@ -22,6 +22,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				pvp(q(80457, {	-- Serving the Queen
 					["coord"] = { 48.0, 82.5, NERUBAR },
 				})),
+				q(78974, {	-- Beetle-Minded
+					["coord"] = { 71.9, 79.8, AZJ_KAHET },
+				}),
 				q(82526, {	-- Bug Them
 					["coord"] = { 71.1, 31.6, NERUBAR },
 				}),

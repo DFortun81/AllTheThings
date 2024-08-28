@@ -57,14 +57,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 			}, {	-- RENOWN 15 --
+				-- TODO: check Renown Requirement!
+				q(82440, {	-- Crests and Kej
+					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+				}),
 			}, {	-- RENOWN 16 --
+				-- TODO: check Renown Requirement!
+				q(82442, {	-- Keep Up Appearances
+					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+				}),
 			}, {	-- RENOWN 17 --
+				-- TODO: check Renown Requirement!
+				q(82443, {	-- Tokens of Her Favor
+					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+				}),
 			}, {	-- RENOWN 18 --
 			}, {	-- RENOWN 19 --
 			}, {	-- RENOWN 20 --
 			}, {	-- RENOWN 21 --
 			}, {	-- RENOWN 22 --
 			}, {	-- RENOWN 23 --
+				q(82444, {	-- The Weaver's Cache
+					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+				}),
 			}, {	-- RENOWN 24 --
 			}, {	-- RENOWN 25 --
 			},

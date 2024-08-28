@@ -36,11 +36,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}),
 			n(QUESTS, {
 				q(84022, {	-- Uniting Severed Threads
-					["provider"] = { "n", 207471 },	-- Window Arak'nal
+					["provider"] = { "n", 207471 },	-- Widow Arak'nal
 					["coord"] = { 55.6, 43.8, AZJ_KAHET },
 				}),
 				q(84682, {	-- Of Pacts and Patrons
-					["provider"] = { "n", 207471 },	-- Window Arak'nal
+					["provider"] = { "n", 207471 },	-- Widow Arak'nal
 					["coord"] = { 55.6, 43.8, AZJ_KAHET },
 				}),
 				-- The General quest chain unlocked at 4/9 rep
@@ -58,8 +58,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 			}),
-			n(QUESTS, sharedData({ ["isDaily"] = true }, {
-				-- The General
+			-- The General
+			n(QUESTS, sharedData({
+				["isDaily"] = true,
+				["sourceQuests"] = { 80545 },	-- The General Weekly pickup
+			},{
 				q(81491, {	-- Armaments: Arbalests
 					["provider"] = { "n", 224171 },	-- Eirzay
 					["coord"] = { 63.0, 38.1, NERUBAR_LOWER },
@@ -117,8 +120,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(219429),	-- Ritual Kobyss Spear (QI!)
 					},
 				}),
-
-				-- The Vizier
+			})),
+			-- The Vizier
+			n(QUESTS, sharedData({
+				["isDaily"] = true,
+				["sourceQuests"] = { 80546 },	-- The Vizier Weekly pickup
+			},{
 				q(81480, {	-- Wild Reagents: Maddening Deep
 					["provider"] = { "n", 224180 },	-- Ghos'opp
 					["coord"] = { 48.4, 61.9, AZJ_KAHET },
@@ -126,8 +133,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(219228),	-- Fetid Slime Sac (QI!)
 					},
 				}),
-
-				-- The Weaver
+			})),
+			-- The Weaver
+			n(QUESTS, sharedData({
+				["isDaily"] = true,
+				["sourceQuests"] = { 80544 },	-- The Weaver Weekly pickup
+				["cost"] = {{"i",228949,1}},	-- Rumor Map
+			},{
 				q(81471, {	-- Dropping Eaves: Saving the Past
 					["provider"] = { "n", 224195 },	-- Ru'murh
 					["coord"] = { 73.3, 50.9, NERUBAR },
@@ -146,6 +158,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 224197 },	-- Ru'murh
 					["coord"] = { 39.8, 26.6, NERUBAR },
 				}),
+				q(81501, {	-- Testing Formulae: Roiling Elixir
+					["provider"] = { "n", 224188 },	-- Ghos'opp
+					["coord"] = { 47.8, 9.6, NERUBAR },
+					["g"] = {
+						i(219324),	-- Roiling Elixir (QI!)
+					},
+				}),
 				q(81504, {	-- Infiltration: Hidden Figures
 					["provider"] = { "n", 224201 },	-- Ru'murh
 					["coord"] = { 76.2, 47.4, AZJ_KAHET },
@@ -157,8 +176,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 224199 },	-- Ru'murh
 					["coord"] = { 45.6, 51.0, NERUBAR_LOWER },
 				}),
+				q(81484, {	-- Wet Work: Death of a Salesman
+					["sourceQuest"] = 82581,
+					["provider"] = { "n", 224201 },	-- Ru'murh
+					["coord"] = { 68.5, 51, NERUBAR },
+					["g"] = {
+						i(219292),	-- Perplexing Contraband (QI!)
+					},
+				}),
 			})),
 			n(QUESTS, sharedData({ ["isWeekly"] = true }, {
+				hqt(80545, name(HEADERS.Faction, FACTION_THE_GENERAL)),	-- picked up 'The General'
+				hqt(80546, name(HEADERS.Faction, FACTION_THE_VIZIER)),	-- picked up 'The Vizier'
+				hqt(80544, name(HEADERS.Faction, FACTION_THE_WEAVER)),	-- picked up 'The Weaver'
 
 				q(80592, {	-- Forge a Pact
 					["sourceQuests"] = { 84682 },	-- Of Pacts and Patrons
@@ -166,7 +196,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 55.6, 43.8, AZJ_KAHET },
 				}),
 				q(80671, {	-- Blade of the General
-					["sourceQuests"] = { 80592 },	-- Forge a Pact
+					["sourceQuests"] = {
+						84682,	-- Of Pacts and Patrons
+						80592,	-- Forge a Pact
+					},
+					["sourceQuestNumRequired"] = 1,
 					--["provider"] = { "n", xx },
 					["coord"] = { 57.7, 46.9, AZJ_KAHET },
 					["g"] = {
@@ -174,7 +208,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(80672, {	-- Hand of the Vizier
-					["sourceQuests"] = { 80592 },	-- Forge a Pact
+					["sourceQuests"] = {
+						84682,	-- Of Pacts and Patrons
+						80592,	-- Forge a Pact
+					},
+					["sourceQuestNumRequired"] = 1,
 					--["provider"] = { "n", xx },
 					["coord"] = { 57.7, 46.9, AZJ_KAHET },
 					["g"] = {
@@ -182,7 +220,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(80670, {	-- Eyes of the Weaver
-					["sourceQuests"] = { 80592 },	-- Forge a Pact
+					["sourceQuests"] = {
+						84682,	-- Of Pacts and Patrons
+						80592,	-- Forge a Pact
+					},
+					["sourceQuestNumRequired"] = 1,
 					--["provider"] = { "n", xx },
 					["coord"] = { 57.7, 46.9, AZJ_KAHET },
 					["g"] = {
@@ -278,10 +320,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(THE_SEVERED_THREADS, {
 		n(SEVERED_THREADS_PACT, {
-			-- Pact weekly locking hqt
-			q(80545),	-- picked up 'The General'
-			q(80546),	-- picked up 'The Vizier'
-			q(80544),	-- picked up 'The Weaver'
 			-- Reps with zone dudes, probably gonna need to move into expansion feature?
 			q(81601),	-- [DNT] General - Level 1 Unlock (spellID 443677)
 			q(81602),	-- [DNT] General - Level 2 Unlock (spellID 443679)
@@ -336,6 +374,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			-- Vizier
 			--q(82616),	-- 'Gather some reagent' from Ghos-opp (n: 224180 @ 48.4, 61.9), start questID 81480 (Wild Reagents: Maddening Deep)
 			-- Missing 11 total quest data/givers, 81505 81498 81497 81502 81482 (and 5 more)
+
+			-- q(80688), -- triggered after completing task for a 'Rumor' (re-capture and narrow down)
+
+			-- Weaver Rat Treasure Map
+			q(83778),	-- N-220568 @ 55.0, 68.7
+			q(80559),	-- opened weaver rat treasure after 83778
 		}),
 	}),
 })));

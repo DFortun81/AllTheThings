@@ -1418,11 +1418,9 @@ root(ROOTS.Unsorted, {
 				i(219197),	-- Black Blood Residue
 				i(219214),	-- Cooling Wax
 				i(219215),	-- Wax Puddle
-				i(219292),	-- Perplexing Contraband
 				i(219293),	-- Sureki Intelligence
 				i(219322),	-- Malodorous Philter
 				i(219323),	-- Gelatinous Unguent
-				i(219324),	-- Roiling Elixir
 				i(219350),	-- Maddening Manifest
 				i(219388),	-- Sacred Flame Torch
 				i(219400),	-- Faerin's Torch of Holy Flame
