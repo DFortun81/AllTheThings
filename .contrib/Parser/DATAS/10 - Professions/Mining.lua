@@ -1246,8 +1246,8 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 			},
 		},{
 			i(199122),	-- Mining Field Notes
-			q(74106, {		-- Inscription Order: Mining
-				["name"] = "Inscription Order: Mining",
+			q(74106, {		-- DF Inscription Order: Mining
+				["name"] = "DF Inscription Order: Mining",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194708 },	-- Draconic Treatise on Mining
 			}),

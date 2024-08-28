@@ -1509,8 +1509,8 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			},
 		},{
 			i(198611),	-- Engineering Details
-			q(74111, {	-- Inscription Order: Engineering
-				["name"] = "Inscription Order: Engineering",
+			q(74111, {	-- DF Inscription Order: Engineering
+				["name"] = "DF Inscription Order: Engineering",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 198510 },	-- Draconic Treatise on Engineering
 			}),

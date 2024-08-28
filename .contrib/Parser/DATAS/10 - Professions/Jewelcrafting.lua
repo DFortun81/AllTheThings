@@ -768,8 +768,8 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		},{
 			i(198612),	-- Jeweler's Cuts
-			q(74112, {	-- Inscription Order: Jewelcrafting
-				["name"] = "Inscription Order: Jewelcrafting",
+			q(74112, {	-- DF Inscription Order: Jewelcrafting
+				["name"] = "DF Inscription Order: Jewelcrafting",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194703 },	-- Draconic Treatise on Jewelcrafting
 			}),

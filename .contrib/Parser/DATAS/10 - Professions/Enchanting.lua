@@ -761,8 +761,8 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			},
 		},{
 			i(198610),	-- Enchanter's Script
-			q(74110, {	-- Inscription Order: Enchanting
-				["name"] = "Inscription Order: Enchanting",
+			q(74110, {	-- DF Inscription Order: Enchanting
+				["name"] = "DF Inscription Order: Enchanting",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194702 },	-- Draconic Treatise on Enchanting
 			}),

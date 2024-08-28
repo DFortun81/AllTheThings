@@ -1381,8 +1381,8 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 			},
 		},{
 			i(199115),	-- Herbalism Field Notes
-			q(74107, {	-- Inscription Order: Herbalism
-				["name"] = "Inscription Order: Herbalism",
+			q(74107, {	-- DF Inscription Order: Herbalism
+				["name"] = "DF Inscription Order: Herbalism",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194704 },	-- Draconic Treatise on Herbalism
 			}),

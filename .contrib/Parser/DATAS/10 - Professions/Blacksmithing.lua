@@ -1151,8 +1151,8 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			},
 		},{
 			i(198606),	-- Blacksmith's Writ
-			q(74109, {	-- Inscription Order: Blacksmith
-				["name"] = "Inscription Order: Blacksmith",
+			q(74109, {	-- DF Inscription Order: Blacksmith
+				["name"] = "DF Inscription Order: Blacksmith",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 198454 },	-- Draconic Treatise on Blacksmith
 			}),
@@ -1257,8 +1257,8 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				currency(TWW_BLACKSMITHING_KNOWLEDGE),
 			},
 		}, {
-			q(83726, {	-- Inscription Order: Blacksmithing
-				["name"] = "Inscription Order: Blacksmithing",
+			q(83726, {	-- DF Inscription Order: Blacksmithing
+				["name"] = "DF Inscription Order: Blacksmithing",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222554 },	-- Algari Treatise on Blacksmithing
 			}),

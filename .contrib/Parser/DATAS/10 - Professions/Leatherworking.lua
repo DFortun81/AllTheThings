@@ -1301,8 +1301,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			},
 		},{
 			i(198613),	-- Leatherworking Designs
-			q(74113, {	-- Inscription Order: Leatherworking
-				["name"] = "Inscription Order: Leatherworking",
+			q(74113, {	-- DF Inscription Order: Leatherworking
+				["name"] = "DF Inscription Order: Leatherworking",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194700 },	-- Draconic Treatise on Leatherworking
 			}),

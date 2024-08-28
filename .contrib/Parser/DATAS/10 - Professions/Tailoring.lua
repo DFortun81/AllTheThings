@@ -783,8 +783,8 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 			},
 		},{
 			i(198609),	-- Tailoring Examples
-			q(74115, {	-- Inscription Order: Tailoring
-				["name"] = "Inscription Order: Tailoring",
+			q(74115, {	-- DF Inscription Order: Tailoring
+				["name"] = "DF Inscription Order: Tailoring",
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 194698 },	-- Draconic Treatise on Tailoring
 			}),

@@ -5322,8 +5322,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			},
 		},{
 			i(198607),	-- Scribe's Glyphs
-			q(74105, {	-- Inscription Order: Inscription
-				["name"] = "Inscription Order: Inscription",
+			q(74105, {	-- DF Inscription Order: Inscription
+				["name"] = "DF Inscription Order: Inscription",
 				["provider"] = { "i", 194699 },	-- Draconic Treatise on Inscription
 			}),
 			q(66375, {	-- Weekly Inscription Knowledgepoint #1
