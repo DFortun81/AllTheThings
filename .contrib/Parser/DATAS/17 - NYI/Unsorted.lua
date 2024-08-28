@@ -1578,7 +1578,6 @@ root(ROOTS.Unsorted, {
 				i(221093),	-- Deeply Corrupted Coil
 				i(221237),	-- Lamentable Vagrant's Lantern
 				i(221238),	-- Pillar of Constructs
-				i(221242),	-- Forgeborn Helm
 				i(221253),	-- Cultivator's Plant Puncher
 				i(221254),	-- Earthshatter Lance
 				i(221505),	-- [DNT] Rare Cloth - Robe
@@ -1586,14 +1585,7 @@ root(ROOTS.Unsorted, {
 				i(223916),	-- Nerubian Cutthroat's Reach
 				i(223917),	-- Nerubian Covert's Cloak
 				i(223918),	-- Specter Stalker's Shotgun
-				i(223921),	-- Ever-Oozing Signet
-				i(223922),	-- Cinder Pollen Cloak
-				i(223926),	-- Earthgorger's Chain Bib
-				i(223930),	-- Monstrous Chain Pincers
-				i(223935),	-- Cabbage Harvester's Pantaloons
-				i(223937),	-- Honey Deliverer's Leggings
-				i(223938),	-- Marsh Hopper's Spaulders
-				i(223939),	-- Esteemed Nerubian's Mantle
+				i(223921),	-- Ever-Oozing Signet			
 				i(223944),	-- [PH] Infested Fungal Wristwraps
 				i(223945),	-- [PH] Perchfather's Cuffs
 				i(223946),	-- [PH] Storm Bindings

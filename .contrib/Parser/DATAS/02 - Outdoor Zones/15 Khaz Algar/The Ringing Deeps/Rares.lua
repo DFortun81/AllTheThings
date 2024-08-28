@@ -85,6 +85,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 80003,
 				["g"] = {
 					i(223943),	-- Cord of the Earthbreaker
+					i(223926),	-- Earthgorger's Chain Bib
 				},
 			}),
 			n(221199, {	-- Hungerer of the Deeps
@@ -139,6 +140,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(220271, {	-- Terror of the Forge
 				["coord"] = { 46.0, 12.0, THE_RINGING_DEEPS },
 				["questID"] = 80507,
+				["g"] = {
+					i(221242),	-- Forgeborn Helm
+				},
 			}),
 			n(220268, {	-- Trungal
 				["description"] = "Kill roots of trungal on way to him to make him jump out of terrain",

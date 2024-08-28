@@ -100,6 +100,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				--TODO: add more waypoint next time
 				["coord"] = { 61.3, 7.4, AZJ_KAHET },
 				["questID"] = 82078,
+				["g"] = {
+					i(223939),	-- Esteemed Nerubian's Mantle
+				},
 			}),
 			n(216032, {	-- Stronghold Scouts (Khak'ik npcID)
 				["crs"] = { 221032 },	-- Rhak'ik
@@ -152,6 +155,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(216051, {	-- Umbraclaw Matra
 				["coord"] = { 64.5, 3.4, AZJ_KAHET },
 				["questID"] = 82037,
+				["g"] = {
+					i(223930),	-- Monstrous Chain Pincers
+				},
 			}),
 			n(216037, {	-- Vilewing
 				["description"] = "Fly around",
@@ -183,8 +189,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 75.4, 61.0, AZJ_KAHET },
 				["questID"] = 81703,
 				["g"] = {
-					i(221231),	-- Steam-Powered Wristwatch
 					i(221232),	-- Polished Goblin Bling
+					i(221231),	-- Steam-Powered Wristwatch
 				},
 			}),
 		})),
