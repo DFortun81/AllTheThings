@@ -49,6 +49,8 @@ root(ROOTS.Unsorted, {
 				i(228779),	-- Algari Tailor's Notebook
 
 				-- I wonder if this has to do with Crafting Orders..
+					-- YES... Crafting Orders "Patron" rewards these
+					-- BRAGHE!
 				i(228724),	-- Flicker of Alchemy Knowledge
 				i(228725),	-- Glimmer of Alchemy Knowledge
 				i(228726),	-- Flicker of Blacksmithing Knowledge
@@ -66,9 +68,13 @@ root(ROOTS.Unsorted, {
 				i(228738),	-- Flicker of Tailoring Knowledge
 				i(228739),	-- Glimmer of Tailoring Knowledge
 				-- Same with these
+				i(227713),	-- Artisan's Consortium Payout [Common]
 				i(228610),	-- Artisan's Consortium Payout [Uncommon]
 				i(228611),	-- Artisan's Consortium Payout [Rare]
 				i(228612),	-- Artisan's Consortium Payout [Epic]
+				-- This was also a reward for completion -- they show before you accept the order
+				i(225670),	-- Apprentice's Crafting License
+				i(225671),	-- Stack of Pentagold Reviews
 			}),
 			filter(COSMETIC, {
 				i(228761),	-- Classic Brick Tabard
@@ -285,8 +291,6 @@ root(ROOTS.Unsorted, {
 				i(211494),	-- Spark of Beginnings
 
 				i(225772),	-- Artisan's Consortium Advertisement
-				i(225670),	-- Apprentice's Crafting License
-				i(225671),	-- Stack of Pentagold Reviews
 				i(225672),	-- Unraveled Instructions
 				i(225673),	-- Artisan's Consortium Seal of Approval
 				i(228224),	-- Spark of Legacies
@@ -1333,7 +1337,6 @@ root(ROOTS.Unsorted, {
 				i(227678),	-- Satchel of Engineering Surplus
 				i(227679),	-- Satchel of Inscription Surplus
 				i(227680),	-- Satchel of Jewelcrafting Surplus
-				i(227713),	-- Artisan's Consortium Payout [Common]
 				i(227769),	-- Bountiful Bolts
 				i(227778),	-- Delver's Bounty
 				i(227779),	-- Delver's Bounty
