@@ -1122,7 +1122,6 @@ root(ROOTS.Unsorted, {
 				i(220157),	-- Empowered Tinderbox
 				i(220158),	-- Darkened Tinderbox
 				-- Armor Generator
-				i(225648),	-- Candle Confidant
 				i(225656),	-- Goldenglow Censer
 				i(225661),	-- Burning Binding
 				i(226137),	-- Inquisitive Sister's Cinch
