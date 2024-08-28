@@ -2696,7 +2696,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(84477),	-- Contract: The Severed Threads [Rank 2] (spellID 454941)
 		q(84476),	-- Contract: The Severed Threads [Rank 3] (spellID 454942)
 		-- Craftable / Sparks
-		q(83280, {["isWeekly"]=true,}),	-- Fractured Spark of Omens
-		q(83281, {["isWeekly"]=true,}),	-- Fractured Spark of Omens
+		q(83280, name(HEADERS.Item,211297,{["isWeekly"]=true,})),	-- Fractured Spark of Omens
+		q(83281, name(HEADERS.Item,211297,{["isWeekly"]=true,})),	-- Fractured Spark of Omens
 	}),
 })));

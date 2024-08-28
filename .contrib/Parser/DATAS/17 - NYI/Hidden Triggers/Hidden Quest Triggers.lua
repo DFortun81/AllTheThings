@@ -2076,16 +2076,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		m(KHAZ_ALGAR, {
 			-- Special Assigment unlock tracker
 			n(WORLD_QUESTS, {
-				q(82159, {["repeatable"]=true,}),	-- Special Assignment: A Pound of Cure (but it is Bombs from Behind?)
-				q(82161, {["repeatable"]=true,}),	-- Special Assignment: Bombs from Behind
-				q(82146, {["repeatable"]=true,}),	-- Special Assignment: Cinderbree Surge
-				q(82158, {["repeatable"]=true,}),	-- Special Assignment: Lynx Rescue
-				q(82157, {["repeatable"]=true,}),	-- Special Assignment: Rise of the Colossals
-				q(82155, {["repeatable"]=true,}),	-- Special Assignment: Shadows Below
-				q(82154, {["repeatable"]=true,}),	-- Special Assignment: Titanic Resurgence
-				q(83069, {["repeatable"]=true,}),	-- Special Assignment: Titanic Resurgence (bugged)
-				q(83070, {["repeatable"]=true,}),	-- Special Assignment: Titanic Resurgence
-				q(82156, {["repeatable"]=true,}),	-- Special Assignment: When the Deeps Stir
 			}),
 		}),
 	})),

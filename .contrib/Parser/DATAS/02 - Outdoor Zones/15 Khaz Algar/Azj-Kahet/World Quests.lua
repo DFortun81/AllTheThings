@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				79197,	-- Surface Bound
 				TWW_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
+			["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 				petbattle(q(82297, {	-- One Hungry Worm
 					["provider"] = { "n", 223406 },	-- Zaedu
 					["coord"] = { 53.9, 37.0, AZJ_KAHET },
@@ -103,13 +103,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79959, {	-- Wormcraft Rumble
 					["coord"] = { 73.0, 83.6, AZJ_KAHET },
 				}),
-				--
-				q(82414, {	-- Special Assignment: A Pound of Cure
-					["coord"] = { 63.9, 17.3, AZJ_KAHET },
+				n(SPECIAL, {
+					q(82414, {	-- Special Assignment: A Pound of Cure
+						["coord"] = { 63.9, 17.3, AZJ_KAHET },
+					}),
+					q(82161),	-- Special Assignment: Bombs from Behind [Trigger]
+					q(82531, {	-- Special Assignment: Bombs from Behind
+						-- ["coord"] = { XX, YY, AZJ_KAHET }
+						["sourceQuests"] = { 82161 },	-- Special Assignment: Bombs from Behind [Trigger]
+						["g"] = {
+							i(228361, {["skipFill"]=true,["sym"]={{"groupfill"}}}),	-- Seasoned Adventurer's Cache
+						},
+					}),
 				}),
-				--q(82531, {	-- Special Assignment: Bombs from Behind
-				--	["coord"] = { x, y, AZJ_KAHET },
-				--}),
 			}),
 		}),
 	}),

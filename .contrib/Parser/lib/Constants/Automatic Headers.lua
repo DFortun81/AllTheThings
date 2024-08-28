@@ -3,6 +3,7 @@ HEADERS = {
 	Achievement = "a",
 	Class = "c",
 	Currency = "cu",
+	Faction = "fa",
 	Global = "_G",
 	Item = "i",
 	Map = "m",

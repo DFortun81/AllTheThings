@@ -1159,6 +1159,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 213107 },	-- Faerin Lothar
 				["coord"] = { 33.5, 54.8, HALLOWFALL },
 			}),
+			hqt(81635, {	-- Stay awhile and listen: Nalina Ironsong
+				["name"] = "Stay awhile and listen: Nalina Ironsong",
+				-- ["sourceQuests"] = { ??? },	-- ???
+				["provider"] = { "n", 217642 },	-- Nalina Ironsong
+				["coord"] = { 42.8, 55.8, HALLOWFALL },
+			}),
 			hqt(81594, {	-- Stay awhile and listen: Faerin Lothar
 				["name"] = "Stay awhile and listen: Faerin Lothar",
 				["sourceQuests"] = {
@@ -1178,7 +1184,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(83614),	-- [DNT] Zone 3 Bread Crumb Completed Organically (spellID 456930), after turn in questID 78658 (The Hallowed Path)
 			q(79654),	-- [DNT] Hallowfall Arathi Renown Unlock (spellID 448657)
 			--q(82538),	-- Stay awhile and listen - General Steelstrike, before turn in questID 78626 (Spar Day)
-			q(81635),	-- Stay awhile and listen - Nalina Ironsong @ 42.7, 55.8, HALLOWFALL (n: 217642) (idk when become available)
 			-- questID 79303 (A Principled Principal) nodes
 			q(83287),	-- should accept work
 			q(83288),	-- system become unfair

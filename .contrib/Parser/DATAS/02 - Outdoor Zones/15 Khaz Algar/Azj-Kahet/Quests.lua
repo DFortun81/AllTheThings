@@ -1018,7 +1018,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(83276, {	-- Saving Private Spindle
 					["sourceQuests"] = { 84700 },	-- Pacts Below (still unsure)
 					["provider"] = { "n", 207471 },	-- Window Arak'nal
-					["coord"] = { 56.2, 48.2, AZJ_KAHET },
+					["coord"] = { 55.6, 43.9, AZJ_KAHET },
 				}),
 				q(83277, {	-- Personal Pilfering
 					["sourceQuests"] = { 83276 },	-- Saving Private Spindle
@@ -1170,6 +1170,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["sourceQuests"] = { 78244 },	-- Kaheti Hospitality
 				["provider"] = { "n", 217385 },	-- Alleria Windrunner
 				["coord"] = { 60.6, 68.7, HALLOWFALL },
+			}),
+			hqt(81513, {	-- Stay awhile and listen: Faerin Lothar
+			["name"] = "Stay awhile and listen: Faerin Lothar",
+				---["sourceQuests"] = { ?????? },
+				["provider"] = { "n", 211409 },	-- Faerin Lothar
+				["coord"] = { 59.3, 19.3, AZJ_KAHET },
 			}),
 
 		}),

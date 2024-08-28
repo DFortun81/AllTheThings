@@ -1522,11 +1522,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(82942),	-- The Spiral Weave
 		q(82945),	-- The Waterworks
 		-- Restored Coffer Key (Pop from any weekly activity, orders (of activity) doesn't matter)
-		-- TODO: maybe eventually have a single 'weekly' spot for certain stuff? idk
-		q(84736, {["isWeekly"]=true,["type"]=HEADERS.Currency..":3028",}),	-- 1st
-		q(84737, {["isWeekly"]=true,["type"]=HEADERS.Currency..":3028",}),	-- 2nd
-		q(84738, {["isWeekly"]=true,["type"]=HEADERS.Currency..":3028",}),	-- 3rd
-		q(84739, {["isWeekly"]=true,["type"]=HEADERS.Currency..":3028",}),	-- 4th
+		q(84736, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 1st
+		q(84737, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 2nd
+		q(84738, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 3rd
+		q(84739, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 4th
 		-- Seasonal Rewards
 		q(83235),	-- Season 1: 1/10 reward progress (spellID 454473 - Airship: Wings 05 - Lantern Wing)
 		-- Achievements

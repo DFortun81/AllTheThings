@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			ach(40624, {	-- Itsy Bitsy Spider
 				-- TODO: Braghe please add spider coords, thanks
 				crit(68972, {	-- Webster
-					--["coord"] = { 1, 1, AZJ_KAHET },
+					["coord"] = { 30.4, 65.3, NERUBAR },
 				}),
 				crit(68973, {	-- Spindle
 					--["coord"] = { 1, 1, AZJ_KAHET },
@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					--["coord"] = { 1, 1, AZJ_KAHET },
 				}),
 				crit(68977, {	-- Thimble
-					--["coord"] = { 1, 1, AZJ_KAHET },
+					["coord"] = { 55.9, 32.4, NERUBAR },
 				}),
 				crit(68978, {	-- Scampering Weave-Rat
 					["coord"] = { 49.6, 15.7, NERUBAR },
