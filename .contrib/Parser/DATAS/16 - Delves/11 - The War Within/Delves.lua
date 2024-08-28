@@ -1511,15 +1511,17 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(84670),	-- after turn in weekly delve quest (was 82746 - Delves: Breaking Tough to Loot Stuff - for this one)
 		q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
 		-- Bountiful Delve runs
-		q(82938),	-- The Dread Pit
-		q(82939),	-- Fungal Folly
-		q(82940),	-- Mycomancer Cavern
-		q(82941),	-- Kriegval's Rest
 		q(82944),	-- Earthcrawl Mines
+		q(82939),	-- Fungal Folly
+		q(82941),	-- Kriegval's Rest
+		q(82940),	-- Mycomancer Cavern
+		q(82777),	-- Nightfall Sanctum
 		q(78508),	-- Skittering Breach
 		q(82776),	-- Tak-Rethan Abyss
+		q(82938),	-- The Dread Pit
 		q(82937),	-- The Sinkhole
 		q(82942),	-- The Spiral Weave
+		--q(TODO),	-- The Underkeep
 		q(82945),	-- The Waterworks
 		-- Restored Coffer Key (Pop from any weekly activity, orders (of activity) doesn't matter)
 		q(84736, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 1st
