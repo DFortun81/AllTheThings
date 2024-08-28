@@ -266,6 +266,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 64.9, 29.4, HALLOWFALL },
 						["questID"] = 82558,
 						["g"] = {
+							i(223935),	-- Cabbage Harvester's Pantaloons
 							i(223928),	-- Crop Cutter's Gauntlets
 						},
 					}),
@@ -274,6 +275,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 67.3, 23.5, HALLOWFALL },
 						["questID"] = 82560,
 						["cost"] = {{ "i", 211474, 10 }},	-- 10x Shadowblind Grouper
+						["g"] = {
+							i(223938),	-- Marsh Hopper's Spaulders
+						},
 					}),
 					n(206184, {	-- Deathpetal
 						["coord"] = { 63.8, 32.0, HALLOWFALL },

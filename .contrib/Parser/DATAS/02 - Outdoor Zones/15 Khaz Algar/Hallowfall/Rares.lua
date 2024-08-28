@@ -23,21 +23,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				--["coord"] = { X, Y, HALLOWFALL },
 				["questID"] = 80486,
 			}),
-			n(206514, {	-- Crazed Cabbage Smacker
-				["coord"] = { 65.8, 28.0, HALLOWFALL },
-				--["questID"] = 80486,
-				["g"] = {
-					i(223935),	-- Cabbage Harvester's Pantaloons
-				},
-			}),
-			n(214757, {	-- Croakit
-				["description"] = "Located in a cave. Requires 10 Shadowblind Grouper.",
-				["coord"] = { 67.2, 23.6, HALLOWFALL },
-				--["questID"] = 80486,
-				["g"] = {
-					i(223938),	-- Marsh Hopper's Spaulders
-				},
-			}),
 			n(221753, {	-- Deathtide <The Viscous Swell>
 				["coord"] = { 44.8, 42.8, HALLOWFALL },
 				["questID"] = 81880,
