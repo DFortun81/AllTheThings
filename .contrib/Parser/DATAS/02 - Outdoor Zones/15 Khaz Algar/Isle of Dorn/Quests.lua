@@ -1044,7 +1044,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 224708 },	-- Cenderragg
 					["coord"] = { 48.6, 60.9, ISLE_OF_DORN },
 					["g"] = {
-						i(224808),	-- Opal Ore (QI!)
+						o(454189, {	-- Opal Ore
+							i(224808),	-- Opal Ore (QI!)
+						}),
 					},
 				}),
 				q(82799, {	-- Web Beats Rock

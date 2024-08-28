@@ -726,9 +726,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 224378 },	-- Orren Masyn
 					["coord"] = { 47.3, 64.8, HALLOWFALL },
 					["g"] = {
-						i(224193),	-- Orren's Message	(QI!)
-						i(224098),	-- Crimson Charmer	(QI!)
-						i(224099),	-- Amber Bloom	(QI!)
+						o(446363, {	-- Amber Bloom
+							i(224099),	-- Amber Bloom (QI!)
+						}),
+						o(446362, {	-- Crimson Charmer
+							i(224098),	-- Crimson Charmer (QI!)
+						}),
+						i(224193),	-- Orren's Message (QI!)
 					},
 				}),
 				q(82479, {	-- The Sword is Mightier
