@@ -8295,161 +8295,163 @@ function app:GetWindow(suffix, parent, onUpdate)
 		ResetWindow(suffix);
 	end
 	local window = app.Windows[suffix];
-	if not window then
-		-- Create the window instance.
-		-- app.PrintDebug("GetWindow",suffix)
-		---@class ATTWindowFrameForRetail: BackdropTemplate, Frame
-		window = CreateFrame("Frame", appName .. "-Window-" .. suffix, parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
-		app.Windows[suffix] = window;
-		window.Suffix = suffix;
-		window.Toggle = Toggle;
-		local updateFunc = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
-		-- Update/Refresh functions can be called through callbacks, so they need to be distinct functions
-		window.BaseUpdate = function(...) UpdateWindow(...) end;
-		window.Update = function(...) updateFunc(...) end;
-		window.Refresh = function(...) Refresh(...) end;
-		window.SetVisible = SetVisible;
-		window.StorePosition = StoreWindowPosition;
-		window.SetData = SetData;
-		window.BuildData = BuildData;
-		window.GetRunner = GetRunner;
-		window.ToggleExtraFilters = ToggleExtraFilters
+	if window then return window end
 
-		window:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
-		window:SetScript("OnMouseDown", StartMovingOrSizing);
-		window:SetScript("OnMouseUp", StopMovingOrSizing);
-		window:SetScript("OnHide", StopMovingOrSizing);
-		window:SetBackdrop(backdrop);
-		window:SetBackdropBorderColor(1, 1, 1, 1);
-		window:SetBackdropColor(0, 0, 0, 1);
-		window:SetClampedToScreen(true);
-		window:SetToplevel(true);
-		window:EnableMouse(true);
-		window:SetMovable(true);
-		window:SetResizable(true);
-		window:SetPoint("CENTER");
-		window:SetResizeBounds(96, 32);
-		window:SetSize(300, 300);
+	-- Create the window instance.
+	-- app.PrintDebug("GetWindow",suffix)
+	---@class ATTWindowFrameForRetail: BackdropTemplate, Frame
+	window = CreateFrame("Frame", appName .. "-Window-" .. suffix, parent or UIParent, BackdropTemplateMixin and "BackdropTemplate");
+	app.Windows[suffix] = window;
+	window.Suffix = suffix;
+	window.Toggle = Toggle;
+	local updateFunc = onUpdate or app:CustomWindowUpdate(suffix) or UpdateWindow;
+	-- Update/Refresh functions can be called through callbacks, so they need to be distinct functions
+	window.BaseUpdate = function(...) UpdateWindow(...) end;
+	window.Update = function(...) updateFunc(...) end;
+	window.Refresh = function(...) Refresh(...) end;
+	window.SetVisible = SetVisible;
+	window.StorePosition = StoreWindowPosition;
+	window.SetData = SetData;
+	window.BuildData = BuildData;
+	window.GetRunner = GetRunner;
+	window.ToggleExtraFilters = ToggleExtraFilters
 
-		-- set the scaling for the new window if settings have been initialized
-		local scale = app.Settings and app.Settings._Initialize and (suffix == "Prime" and app.Settings:GetTooltipSetting("MainListScale") or app.Settings:GetTooltipSetting("MiniListScale")) or 1;
-		window:SetScale(scale);
+	window:SetScript("OnMouseWheel", OnScrollBarMouseWheel);
+	window:SetScript("OnMouseDown", StartMovingOrSizing);
+	window:SetScript("OnMouseUp", StopMovingOrSizing);
+	window:SetScript("OnHide", StopMovingOrSizing);
+	window:SetBackdrop(backdrop);
+	window:SetBackdropBorderColor(1, 1, 1, 1);
+	window:SetBackdropColor(0, 0, 0, 1);
+	window:SetClampedToScreen(true);
+	window:SetToplevel(true);
+	window:EnableMouse(true);
+	window:SetMovable(true);
+	window:SetResizable(true);
+	window:SetPoint("CENTER");
+	window:SetResizeBounds(96, 32);
+	window:SetSize(300, 300);
 
-		window:SetUserPlaced(true);
-		window.data = {
-			['text'] = suffix,
-			['icon'] = "Interface\\Icons\\Ability_Spy.blp",
-			['visible'] = true,
-			['g'] = {
-				{
-					['text'] = "No data linked to listing.",
-					['visible'] = true
-				}
+	-- set the scaling for the new window if settings have been initialized
+	local scale = app.Settings and app.Settings._Initialize and (suffix == "Prime" and app.Settings:GetTooltipSetting("MainListScale") or app.Settings:GetTooltipSetting("MiniListScale")) or 1;
+	window:SetScale(scale);
+
+	window:SetUserPlaced(true);
+	window.data = {
+		['text'] = suffix,
+		['icon'] = "Interface\\Icons\\Ability_Spy.blp",
+		['visible'] = true,
+		['g'] = {
+			{
+				['text'] = "No data linked to listing.",
+				['visible'] = true
 			}
-		};
+		}
+	};
 
-		-- set whether this window lock is persistable between sessions
-		if suffix == "Prime" or suffix == "CurrentInstance" or suffix == "RaidAssistant" or suffix == "WorldQuests" then
-			window.lockPersistable = true;
-		end
-
-		window:Hide();
-
-		-- The Close Button. It's assigned as a local variable so you can change how it behaves.
-		window.CloseButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
-		window.CloseButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", -1, -1);
-		window.CloseButton:SetSize(20, 20);
-		window.CloseButton:SetScript("OnClick", OnCloseButtonPressed);
-
-		-- The Scroll Bar.
-		---@class ATTWindowScrollBar: Slider
-		local scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
-		scrollbar:SetPoint("TOP", window.CloseButton, "BOTTOM", 0, -15);
-		scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 36);
-		scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
-		scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
-		scrollbar.back:SetColorTexture(0.1,0.1,0.1,1);
-		scrollbar.back:SetAllPoints(scrollbar);
-		scrollbar:SetMinMaxValues(1, 1);
-		scrollbar:SetValueStep(1);
-		scrollbar:SetValue(1);
-		scrollbar:SetObeyStepOnDrag(true);
-		scrollbar.CurrentValue = 1;
-		scrollbar:SetWidth(16);
-		scrollbar:EnableMouseWheel(true);
-		window:EnableMouseWheel(true);
-		window.ScrollBar = scrollbar;
-
-		-- The Corner Grip. (this isn't actually used, but it helps indicate to players that they can do something)
-		local grip = window:CreateTexture(nil, "ARTWORK");
-		grip:SetTexture(app.asset("grip"));
-		grip:SetSize(16, 16);
-		grip:SetTexCoord(0,1,0,1);
-		grip:SetPoint("BOTTOMRIGHT", -5, 5);
-		window.Grip = grip;
-
-		-- The Row Container. This contains all of the row frames.
-		---@class ATTWindowContainer: Frame
-		local container = CreateFrame("Frame", nil, window);
-		container:SetPoint("TOPLEFT", window, "TOPLEFT", 5, -5);
-		container:SetPoint("RIGHT", scrollbar, "LEFT", -1, 0);
-		container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
-		-- container:SetClipsChildren(true);
-		window.Container = container;
-		container.rows = {};
-		container:Show();
-
-		-- Allows the window to toggle whether it shows it is currently processing changes/updates
-		-- Currently will do this by changing the texture of the CloseButton
-		-- local closeTexture = window.CloseButton:GetNormalTexture():GetTexture();
-		-- app.PrintDebug(closeTexture, window.CloseButton:GetHighlightTexture(), window.CloseButton:GetPushedTexture(), window.CloseButton:GetDisabledTexture())
-		-- Textures are a bit funky, maybe not good to try using that... maybe will come up with another idea sometime...
-		window.StartProcessing = function()
-			-- app.PrintDebug("StartProcessing",suffix)
-			-- window.CloseButton:SetNormalTexture(134376);	-- Inv_misc_pocketwatch_01
-		end
-		window.StopProcessing = function()
-			-- app.PrintDebug("StopProcessing",suffix)
-			-- window.CloseButton:SetNormalTexture(closeTexture);
-		end
-
-		-- Setup the Event Handlers
-		-- TODO: review how necessary this actually is in Retail
-		local handlers = {};
-		window:SetScript("OnEvent", function(self, e, ...)
-			local handler = handlers[e];
-			if handler then
-				handler(self, ...);
-			else
-				app.PrintDebug("Unhandled Window Event",e,...)
-				self:Update();
-			end
-		end);
-		local refreshWindow = function() DelayedCallback(window.Refresh, 0.25, window) end;
-		handlers.ACHIEVEMENT_EARNED = refreshWindow;
-		handlers.QUEST_DATA_LOAD_RESULT = refreshWindow;
-		handlers.QUEST_ACCEPTED = refreshWindow;
-		handlers.QUEST_REMOVED = refreshWindow;
-		window:RegisterEvent("ACHIEVEMENT_EARNED");
-		window:RegisterEvent("QUEST_ACCEPTED");
-		window:RegisterEvent("QUEST_DATA_LOAD_RESULT");
-		window:RegisterEvent("QUEST_REMOVED");
-
-		window.AddEventHandler = AddEventHandler
-		window.RemoveEventHandlers = RemoveEventHandlers
-
-		-- Some Window functions should be triggered from ATT events
-		window:AddEventHandler("OnUpdateWindows", function(...)
-			window:Update(...)
-		end)
-		window:AddEventHandler("OnRefreshWindows", function(...)
-			window:Refresh(...)
-		end)
-
-		-- Ensure the window updates itself when opened for the first time
-		window.HasPendingUpdate = true;
-		window:Update();
+	-- set whether this window lock is persistable between sessions
+	if suffix == "Prime" or suffix == "CurrentInstance" or suffix == "RaidAssistant" or suffix == "WorldQuests" then
+		window.lockPersistable = true;
 	end
+
+	window:Hide();
+
+	-- The Close Button. It's assigned as a local variable so you can change how it behaves.
+	window.CloseButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
+	window.CloseButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", -1, -1);
+	window.CloseButton:SetSize(20, 20);
+	window.CloseButton:SetScript("OnClick", OnCloseButtonPressed);
+
+	-- The Scroll Bar.
+	---@class ATTWindowScrollBar: Slider
+	local scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
+	scrollbar:SetPoint("TOP", window.CloseButton, "BOTTOM", 0, -15);
+	scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 36);
+	scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
+	scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
+	scrollbar.back:SetColorTexture(0.1,0.1,0.1,1);
+	scrollbar.back:SetAllPoints(scrollbar);
+	scrollbar:SetMinMaxValues(1, 1);
+	scrollbar:SetValueStep(1);
+	scrollbar:SetValue(1);
+	scrollbar:SetObeyStepOnDrag(true);
+	scrollbar.CurrentValue = 1;
+	scrollbar:SetWidth(16);
+	scrollbar:EnableMouseWheel(true);
+	window:EnableMouseWheel(true);
+	window.ScrollBar = scrollbar;
+
+	-- The Corner Grip. (this isn't actually used, but it helps indicate to players that they can do something)
+	local grip = window:CreateTexture(nil, "ARTWORK");
+	grip:SetTexture(app.asset("grip"));
+	grip:SetSize(16, 16);
+	grip:SetTexCoord(0,1,0,1);
+	grip:SetPoint("BOTTOMRIGHT", -5, 5);
+	window.Grip = grip;
+
+	-- The Row Container. This contains all of the row frames.
+	---@class ATTWindowContainer: Frame
+	local container = CreateFrame("Frame", nil, window);
+	container:SetPoint("TOPLEFT", window, "TOPLEFT", 5, -5);
+	container:SetPoint("RIGHT", scrollbar, "LEFT", -1, 0);
+	container:SetPoint("BOTTOM", window, "BOTTOM", 0, 6);
+	-- container:SetClipsChildren(true);
+	window.Container = container;
+	container.rows = {};
+	container:Show();
+
+	-- Allows the window to toggle whether it shows it is currently processing changes/updates
+	-- Currently will do this by changing the texture of the CloseButton
+	-- local closeTexture = window.CloseButton:GetNormalTexture():GetTexture();
+	-- app.PrintDebug(closeTexture, window.CloseButton:GetHighlightTexture(), window.CloseButton:GetPushedTexture(), window.CloseButton:GetDisabledTexture())
+	-- Textures are a bit funky, maybe not good to try using that... maybe will come up with another idea sometime...
+	window.StartProcessing = function()
+		-- app.PrintDebug("StartProcessing",suffix)
+		-- window.CloseButton:SetNormalTexture(134376);	-- Inv_misc_pocketwatch_01
+	end
+	window.StopProcessing = function()
+		-- app.PrintDebug("StopProcessing",suffix)
+		-- window.CloseButton:SetNormalTexture(closeTexture);
+		window.data._fillcomplete = true
+	end
+
+	-- Setup the Event Handlers
+	-- TODO: review how necessary this actually is in Retail
+	local handlers = {};
+	window:SetScript("OnEvent", function(self, e, ...)
+		local handler = handlers[e];
+		if handler then
+			handler(self, ...);
+		else
+			app.PrintDebug("Unhandled Window Event",e,...)
+			self:Update();
+		end
+	end);
+	local refreshWindow = function() DelayedCallback(window.Refresh, 0.25, window) end;
+	handlers.ACHIEVEMENT_EARNED = refreshWindow;
+	handlers.QUEST_DATA_LOAD_RESULT = refreshWindow;
+	handlers.QUEST_ACCEPTED = refreshWindow;
+	handlers.QUEST_REMOVED = refreshWindow;
+	window:RegisterEvent("ACHIEVEMENT_EARNED");
+	window:RegisterEvent("QUEST_ACCEPTED");
+	window:RegisterEvent("QUEST_DATA_LOAD_RESULT");
+	window:RegisterEvent("QUEST_REMOVED");
+
+	window.AddEventHandler = AddEventHandler
+	window.RemoveEventHandlers = RemoveEventHandlers
+
+	-- Some Window functions should be triggered from ATT events
+	window:AddEventHandler("OnUpdateWindows", function(...)
+		window:Update(...)
+	end)
+	window:AddEventHandler("OnRefreshWindows", function(...)
+		window:Refresh(...)
+	end)
+
+	-- Ensure the window updates itself when opened for the first time
+	window.HasPendingUpdate = true;
+	-- TODO: eventually remove this when Windows are re-designed to have an OnInit/OnUpdate distinction for Retail
+	window:Update();
 	return window;
 end
 
