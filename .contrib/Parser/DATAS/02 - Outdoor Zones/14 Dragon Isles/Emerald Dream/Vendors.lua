@@ -19,6 +19,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					i(210766),	-- Silent Mark of the Umbraclaw
 				},
 			}),
+			-- #if BEFORE 10.2.7
+			-- #if AFTER 11.0.0
 			n(213285, bubbleDown({ ["timeline"] = { REMOVED_11_0_0 } }, {	-- Theozhaklos the Curious <Novice Explorer>
 				["coord"] = { 36.7, 33.3, EMERALD_DREAM },
 				["g"] = bubbleDownFiltered({
@@ -118,6 +120,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					}),
 				}),
 			})),
+			-- #endif
+			-- #endif
 			n(211328, {	-- Vaskarn <Dreaming Crest Exchange>
 				["coord"] = { 49.8, 62.9, EMERALD_DREAM },
 				-- #if BEFORE 10.2.6.54358
