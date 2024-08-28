@@ -40,8 +40,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					i(205936),	-- New Niffen No-Sniffin' Tonic (TOY!)
 				},
 			}),
-			-- #if BEFORE 10.2.0
-			-- #if AFTER 11.0.0
 			n(205676, bubbleDown({ ["timeline"] = { REMOVED_11_0_0 } }, {	-- Norzko the Proud
 				["coord"] = { 52.0, 25.6, ZARALEK_CAVERN },
 				["g"] = bubbleDownFiltered({
@@ -141,8 +139,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					}),
 				}),
 			})),
-			-- #endif
-			-- #endif
 			n(203615, {	-- Saccratros
 				["coord"] = { 55.9, 55.4, ZARALEK_CAVERN },
 				["g"] = {
