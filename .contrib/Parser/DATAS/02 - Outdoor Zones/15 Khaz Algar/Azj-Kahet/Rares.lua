@@ -184,6 +184,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81703,
 				["g"] = {
 					i(221231),	-- Steam-Powered Wristwatch
+					i(221232),	-- Polished Goblin Bling
 				},
 			}),
 		})),
