@@ -903,6 +903,10 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				["name"] = "TWW: Enchanting Treasure #1",
 				["provider"] =  { "i", 225231 },	-- Powdered Fulgurance
 			}),
+			q(84290, {	-- Weekly Enchanting Knowledgepoint #2
+				["name"] = "TWW: Enchanting Treasure #2",
+				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
+			}),
 		})),
 	})),
 })));

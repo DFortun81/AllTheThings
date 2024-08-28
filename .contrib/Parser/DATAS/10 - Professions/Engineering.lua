@@ -1550,6 +1550,14 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222621 },	-- Algari Treatise on Engineering
 			}),
+			q(83260, {	-- Weekly Engineering Knowledgepoint #1
+				["name"] = "Engineering Treasure #1",
+				["provider"] = { "i", 225228 },	-- Rust-Locked Mechanism
+			}),
+			q(83261, {	-- Weekly Engineering Knowledgepoint #2
+				["name"] = "Engineering Treasure #2",
+				["provider"] = { "i", 225229 },	-- Earthen Induction Coil
+			}),
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",

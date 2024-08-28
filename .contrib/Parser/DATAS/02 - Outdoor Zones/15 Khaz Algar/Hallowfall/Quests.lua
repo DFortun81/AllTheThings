@@ -1197,6 +1197,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(82737),	-- 5 page / 4 node (If you...)
 			--
 			q(82674),	-- trigger after interact with Cooking Pot and choose 'Good enought' option, during questID 82222 (Cooking With Style)
+			q(82675),	-- trigger after interact with Cooking Pot and choose 'Retry' or 'Cooking' option, during questID 82222 (Cooking With Style)
 			--
 			q(82218),	-- 'Break [DNT]' triggered during questID 82217 (Underground Economics) when you click 'Alliance' dialog option on Andee Seabraid
 			--q(xxxxx),	-- '?' triggered during questID 82217 (Underground Economics) when you click 'Horde' dialog option on Andee Seabraid

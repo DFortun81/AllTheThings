@@ -473,6 +473,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 40.0, 36.7, NIGHTFALL_SANCTUM },
 					["questID"] = 83701,
 				}),
+				--[[o(??????, {	-- Sturdy Chest
+					["coord"] = { 70.6, 44.6, NIGHTFALL_SANCTUM },
+					["questID"] = 83670,
+				}),]]--
 			}),
 		},
 	}),

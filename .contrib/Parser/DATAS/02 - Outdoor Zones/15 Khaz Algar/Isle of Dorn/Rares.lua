@@ -111,6 +111,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81897,
 				["g"] = {
 					i(221247),	-- Cavernous Critter Shooter
+					i(221246),	-- Fierce Beast Staff
 					i(221213),	-- Shawl of the Plagued
 				},
 			}),

@@ -29,6 +29,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["g"] = {
 						i(223549),	-- Algari Greatsword
 						i(223547),	-- Algari Heavy Staff
+						i(223548),	-- Algari Rifle
 						i(223584),	-- Algari Scepter
 						i(223564),	-- Algari Short Axe
 						i(223546),	-- Algari Spear
@@ -108,6 +109,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			------ Alts ------
+			q(84367, {	-- A Time to Come Together
+				--["sourceQuests"] = {  },	-- Auto-accepted after reaching 80 on an alt who has not done the leveling campaign?
+				["provider"] = { "n", 206017 },	-- Brann Bronzebeard
+				["coord"] = { 47.4, 44.4, DORNOGAL },
+			}),
 			q(84365, {	-- Something on the Horizon
 				--["sourceQuests"] = { 83621 },	-- HQT (I'm not sure if there any other way to get it)
 				["provider"] = { "n", 206017 },	-- Brann Bronzebeard
@@ -215,7 +221,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 226650 },	-- High Exarch Turalyon
 				["coord"] = { 44.5, 44.5, DORNOGAL },
 			}),
-			hqt(84814, {	-- <Stay awhile and Listen> Dagran Thaurissan II
+			hqt(84814, {	-- Stay awhile and Listen Dagran Thaurissan II
 				["name"] = "Stay awhile and listen: Dagran Thaurissan II",
 				["sourceQuests"] = { 83286 },	-- What's Hidden Beneath Dornogal
 				["provider"] = { "n", 226026 },	-- Dagran Thaurissan II

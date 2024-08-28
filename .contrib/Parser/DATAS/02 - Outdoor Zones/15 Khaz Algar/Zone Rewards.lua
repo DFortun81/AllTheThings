@@ -96,8 +96,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				-- Alchemy
 				i(225234),	-- Alchemical Sediment
 				i(225235),	-- Deepstone Crucible
+				-- Blacksmithing
+				i(225232),	-- Coreway Billet
+				i(225233),	-- Dense Bladestone
 				-- Enchanting
+				i(227659),	-- Fleeting Arcane Manifestation
 				i(225231),	-- Powdered Fulgurance
+				-- Engineering
+				i(225229),	-- Earthen Induction Coil
+				i(225228),	-- Rust-Locked Mechanism
 				-- Leatherworking
 				i(225222),	-- Stone-Leather Swatch
 				i(225223),	-- Sturdy Nerubian Carapace

@@ -581,13 +581,8 @@ root(ROOTS.Unsorted, {
 				i(225225),	-- Deepstone Fragment
 				i(225226),	-- Striated Inkstone
 				i(225227),	-- Wax-Sealed Records
-				i(225228),	-- Rust-Locked Mechanism
-				i(225229),	-- Earthen Induction Coil
 				i(225230),	-- Crystalline Repository
-				i(225232),	-- Coreway Billet
-				i(225233),	-- Dense Bladestone
 				i(224780),	-- Toughened Tempest Pelt
-				i(227659),	-- Fleeting Arcane Manifestation
 				i(227661),	-- Gleaming Telluric Crystal
 				i(227662),	-- Shimmering Dust
 				i(227667),	-- Algari Enchanter's Folio
@@ -1614,7 +1609,6 @@ root(ROOTS.Unsorted, {
 				i(223458),	-- [PH] 11.0 - Belt
 				i(223461),	-- Algari Warden's Helm
 				i(223472),	-- Drape of the Lamplighter
-				i(223548),	-- Algari Rifle
 				i(223585),	-- Algari Bladefist
 				i(223588),	-- Algari Fighting Knife
 				i(228436),	-- United Arathi's Jerkin

@@ -1517,7 +1517,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(79923, 435864);	-- Altered Orbinid
 			--FirstCraft(XXXXX, 435866);	-- Camouflaged Orbinid
 			FirstCraft(79922, 435862);	-- Crystallized Orbinid
-			--FirstCraft(XXXXX, 435865);	-- Irradiated Orbinid
+			FirstCraft(79924, 435865);	-- Irradiated Orbinid
 			FirstCraft(79921, 435830);	-- Lush Orbinid
 			FirstCraft(79926, 435867);	-- Sporefused Orbinid
 			-- Overload

@@ -1266,6 +1266,10 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["name"] = "Blacksmithing Treasure #1",
 				["provider"] = { "i", 225232 },	-- Coreway Billet
 			}),
+			q(83256, {	-- Weekly Blacksmithing Knowledgepoint #2
+				["name"] = "Blacksmithing Treasure #2",
+				["provider"] = { "i", 225233 },	-- Dense Bladestone
+			}),
 		})),
 	})),
 })));
