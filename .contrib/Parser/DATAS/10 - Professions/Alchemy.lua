@@ -1194,11 +1194,11 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["description"] = "Requires a crafting order from Inscription.",
 				["provider"] = { "i", 222546 },	-- Algari Treatise on Alchemy
 			}),
-			q(83253, {	-- Weekly DF Alchemy Knowledgepoint #1
+			q(83253, {	-- Weekly TWW Alchemy Knowledgepoint #1
 				["name"] = "TWW Alchemy Treasure #1",
 				["provider"] =  { "i", 225234 },	-- Alchemical Sediment
 			}),
-			q(83255, {	-- Weekly DF Alchemy Knowledgepoint #2
+			q(83255, {	-- Weekly TWW Alchemy Knowledgepoint #2
 				["name"] = "TWW Alchemy Treasure #2",
 				["provider"] = { "i", 225235} ,		-- Deepstone Crucible
 			}),
