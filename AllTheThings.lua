@@ -317,6 +317,8 @@ do -- TradeSkill Functionality
 local tradeSkillSpecializationMap = app.SkillDB.Specializations
 local specializationTradeSkillMap = app.SkillDB.BaseSkills
 local tradeSkillMap = app.SkillDB.Conversion
+-- this is still required by Shared Modules
+app.SkillIDToSpellID = app.SkillDB.SkillToSpell
 local function GetBaseTradeSkillID(skillID)
 	return tradeSkillMap[skillID] or skillID;
 end
