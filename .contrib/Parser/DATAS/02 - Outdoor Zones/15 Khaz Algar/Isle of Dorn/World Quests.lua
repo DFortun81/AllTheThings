@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				79197,	-- Surface Bound
 				TWW_ACCOUNT_CAMPAIGN_QUEST,
 			},
-			["g"] = sharedData({ ["isWorldQuest"] = true, }, {
+			["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 				petbattle(q(82292, {	-- Rock Collector
 					["coord"] = { 34.9, 85.6, ISLE_OF_DORN },
 				})),

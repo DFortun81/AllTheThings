@@ -1958,7 +1958,6 @@ root(ROOTS.Unsorted, {
 			-- Fallout
 			i(219934),	-- Spark of War
 			i(220693),	-- Coffer Key Shard \\ Delve Key Fragment
-			i(224183),	-- Bleak Chum
 			i(226103),	-- The Weaver's Trove
 			i(226165),	-- Unseemly Agate Choker
 		})),
