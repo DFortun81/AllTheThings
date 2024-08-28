@@ -102,6 +102,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				-- Enchanting
 				i(227659),	-- Fleeting Arcane Manifestation
 				i(225231),	-- Powdered Fulgurance
+				i(225230),	-- Crystalline Repository
 				-- Engineering
 				i(225229),	-- Earthen Induction Coil
 				i(225228),	-- Rust-Locked Mechanism

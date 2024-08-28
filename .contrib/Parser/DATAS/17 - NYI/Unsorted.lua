@@ -101,7 +101,6 @@ root(ROOTS.Unsorted, {
 			i(229077),	-- Azra's Spare Shoulderguards
 			i(229078),	-- Aevery's Spare Brigandine
 			i(229079),	-- Aevery's Spare Boots
-			i(229080),	-- Aevery's Spare Gauntlets
 			i(229083),	-- Aevery's Spare Shoulderguards
 			i(229084),	-- Aevery's Spare Belt
 			i(229086),	-- Kyros's Spare Helm
@@ -114,7 +113,6 @@ root(ROOTS.Unsorted, {
 			i(229096),	-- The Cleansing Flame's Robes
 			i(229098),	-- The Cleansing Flame's Handwraps
 			i(229099),	-- The Cleansing Flame's Cowl
-			i(229100),	-- The Cleansing Flame's Leggings
 			i(229101),	-- The Cleansing Flame's Shoulderpads
 			i(229102),	-- The Cleansing Flame's Cord
 			i(229103),	-- The Cleansing Flame's Cuffs
@@ -581,7 +579,6 @@ root(ROOTS.Unsorted, {
 				i(225225),	-- Deepstone Fragment
 				i(225226),	-- Striated Inkstone
 				i(225227),	-- Wax-Sealed Records
-				i(225230),	-- Crystalline Repository
 				i(224780),	-- Toughened Tempest Pelt
 				i(227661),	-- Gleaming Telluric Crystal
 				i(227662),	-- Shimmering Dust

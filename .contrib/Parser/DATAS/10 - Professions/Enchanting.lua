@@ -893,7 +893,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			["g"] = {
 				currency(TWW_ENCHANTING_KNOWLEDGE),
 			},
-		},{
+		},{i(225230),
 			q(83727, {	-- TWW Inscription Order: Enchanting
 				["name"] = "TWW Inscription Order: Enchanting",
 				["description"] = "Requires a crafting order from Inscription.",
@@ -906,6 +906,10 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			q(84290, {	-- TWW Weekly Enchanting Knowledgepoint #2
 				["name"] = "TWW Enchanting Treasure #2",
 				["provider"] =  { "i", 227659 },	-- Fleeting Arcane Manifestation
+			}),
+			q(83259, {	-- TWW Weekly Enchanting Knowledgepoint #3
+				["name"] = "TWW Enchanting Treasure #3",
+				["provider"] =  { "i", 225230 },	-- Crystalline Repository
 			}),
 		})),
 	})),

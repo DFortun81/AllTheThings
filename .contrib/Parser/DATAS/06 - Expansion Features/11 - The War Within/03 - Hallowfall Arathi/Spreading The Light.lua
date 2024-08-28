@@ -354,10 +354,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229085),	-- Aevery's Spare Bracers
 						i(229082),	-- Aevery's Spare Chausses
 						i(229081),	-- Aevery's Spare Cowl
+						i(229080),	-- Aevery's Spare Gauntlets
 						i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
 						i(229092),	-- Kyros's Spare Girdle
 						i(229155),	-- Lamplighter's Greataxe
 						i(229061),	-- Nisa's Spare Belt
+						i(229100),	-- The Cleansing Flame's Leggings
 						i(229097),	-- The Cleansing Flame's Sandals
 						i(229122),	-- Warstone's Gauntlets
 					}),
