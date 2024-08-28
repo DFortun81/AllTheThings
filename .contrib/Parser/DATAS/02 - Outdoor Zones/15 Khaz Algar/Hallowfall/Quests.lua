@@ -1154,7 +1154,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			hqt(82538, {	-- Stay awhile and listen: General Steelstrike
 				["name"] = "Stay awhile and listen: General Steelstrike",
 				["sourceQuests"] = { 79650 },	-- Priory of the Sacred Flame: A Brother's Grief
-				["provider"] = { "n", 213108 },	-- General Steelstrike #could be wrong here
+				["provider"] = { "n", 218289 },	-- General Steelstrike
 				["coord"] = { 42.3, 55, HALLOWFALL },
 			}),
 			hqt(81631, {	-- Stay awhile and listen: Faerin Lothar
