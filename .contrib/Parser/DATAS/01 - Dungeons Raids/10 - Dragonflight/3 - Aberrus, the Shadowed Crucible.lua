@@ -587,6 +587,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				ach(18178),	-- Heroic: Aberrus, the Shadowed Crucible Guild Run
 			}),
 			-- #if AFTER 10.2.0
+			-- #if BEFORE 11.0.0
 			n(VENDORS, {
 				n(205676, {	-- Norzko the Proud
 					["coord"] = { 52.0, 25.6, ZARALEK_CAVERN },
@@ -688,6 +689,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				}),
 			}),
+			-- #endif
 			-- #endif
 			CommonBossDrops({
 				i(204857),	-- Ancient Elementium Fragment

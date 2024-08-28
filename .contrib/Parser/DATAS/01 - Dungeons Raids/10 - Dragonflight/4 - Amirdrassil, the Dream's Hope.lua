@@ -846,6 +846,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 			}),
 			-- #if AFTER 10.2.7
+			-- #if BEFORE 11.0.0
 			n(VENDORS, {
 				n(213285, {	-- Theozhaklos the Curious <Novice Explorer>
 					["coord"] = { 36.7, 33.3, EMERALD_DREAM },
@@ -947,6 +948,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				}),
 			}),
+			-- #endif
 			-- #endif
 			Difficulty(DIFFICULTY.RAID.MULTI.ALL).AddGroups({
 				CommonBossDrops({

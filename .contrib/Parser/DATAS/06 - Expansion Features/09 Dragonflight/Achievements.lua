@@ -372,7 +372,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			},
 		}),
-		ach(18027, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Dragonflight Season 2 Master
+		ach(18027, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_11_0_0 } }, {	-- Dragonflight Season 2 Master
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				18161,	-- Heroic: Aberrus, the Shadowed Crucible
@@ -383,7 +383,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				i(204843),	-- Draconic Mark of Mastery
 			},
 		})),
-		ach(18380, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {	-- Dragonflight Season 2 Hero
+		ach(18380, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_11_0_0 } }, {	-- Dragonflight Season 2 Hero
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				18159,	-- Mythic: Scalecommander Sarkareth
@@ -713,7 +713,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			},
 		})),
-		ach(19396, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Dragonflight Season 3 Master
+		ach(19396, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_11_0_0 } }, {	-- Dragonflight Season 3 Master
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				19333,	-- Heroic: Amirdrassil, the Dream's Hope
@@ -724,7 +724,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				i(210944),	-- Emerald Mark of Mastery
 			},
 		})),
-		ach(19420, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {	-- Dragonflight Season 3 Hero
+		ach(19420, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_11_0_0 } }, {	-- Dragonflight Season 3 Hero
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				19343,	-- Mythic: Fyrakk the Blazing
@@ -1042,7 +1042,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			},
 		})),
-		ach(20481, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {	-- Dragonflight Season 4 Master
+		ach(20481, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Dragonflight Season 4 Master
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
 				19499,	-- Challenger II: Dragonflight Season 4
@@ -1184,15 +1184,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		ach(17977),	-- Stones Can Try To Fly!
 		ach(17830, {	-- Stones Can't Fly!
 			i(204195, {	-- Drake's Shadowflame Crest
-				["timeline"] = { "added 10.1.0", "removed 10.2.0" },
-			}),	
+				["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+			}),
 			i(210770, {	-- Satchel of Drake's Dreaming Crests
-				["timeline"] = { "added 10.2.0", "removed 10.2.6" },
-			}),	
+				["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+			}),
 			i(211952, {	-- Satchel of Drake's Awakened Crests
-				["timeline"] = { "added 10.2.6" },
-			}),	
-		}),	
+				["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+			}),
+		}),
 	}),
 })));
 
