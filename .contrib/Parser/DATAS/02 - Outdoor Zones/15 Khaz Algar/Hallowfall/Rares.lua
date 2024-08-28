@@ -27,6 +27,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 44.8, 42.8, HALLOWFALL },
 				["questID"] = 81880,
 				["g"] = {
+					i(223921),	-- Ever-Oozing Signet	
 					i(223920),	-- Slime Deflecting Stopper
 				},
 			}),
@@ -123,6 +124,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 79271,	-- in addition 84062
 				["g"] = {
 					i(221223),	-- Bog Beast Mantle
+					i(221253),	-- Cultivator's Plant Puncher
 					i(221264),	-- Fungarian Mystic's Cluster
 					i(221255),	-- Sharpened Scalepiercer
 				},

@@ -1574,16 +1574,7 @@ root(ROOTS.Unsorted, {
 			n(RARES, {
 				i(221066),	-- Template - Accessory - Finger
 				i(221093),	-- Deeply Corrupted Coil
-				i(221237),	-- Lamentable Vagrant's Lantern
-				i(221238),	-- Pillar of Constructs
-				i(221253),	-- Cultivator's Plant Puncher
-				i(221254),	-- Earthshatter Lance
-				i(221505),	-- [DNT] Rare Cloth - Robe
-				i(223915),	-- Nerubian Orator's Stiletto
-				i(223916),	-- Nerubian Cutthroat's Reach
-				i(223917),	-- Nerubian Covert's Cloak
-				i(223918),	-- Specter Stalker's Shotgun
-				i(223921),	-- Ever-Oozing Signet			
+				i(221505),	-- [DNT] Rare Cloth - Robe	
 				i(223944),	-- [PH] Infested Fungal Wristwraps
 				i(223945),	-- [PH] Perchfather's Cuffs
 				i(223946),	-- [PH] Storm Bindings

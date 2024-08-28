@@ -90,6 +90,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 48.1, 27.0, ISLE_OF_DORN },
 				["questID"] = 81902,
 				["g"] = {
+					i(221254),	-- Earthshatter Lance
 					i(221210),	-- Grips of the Earth
 				},
 			}),
@@ -173,6 +174,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 69.8, 38.4, ISLE_OF_DORN },
 				["questID"] = 81922,
 				["g"] = {
+					i(223921),	-- Ever-Oozing Signet
 					i(223929),	-- Honey Sweetener's Squeezers
 				},
 			}),

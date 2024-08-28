@@ -268,6 +268,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["g"] = {
 							i(223935),	-- Cabbage Harvester's Pantaloons
 							i(223928),	-- Crop Cutter's Gauntlets
+							i(221238),	-- Pillar of Constructs
 						},
 					}),
 					n(214757, {	-- Croakit
@@ -283,6 +284,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 63.8, 32.0, HALLOWFALL },
 						["questID"] = 82559,
 						["g"] = {
+							i(221253),	-- Cultivator's Plant Puncher
 							i(223005),	-- String of Fungal Fruits
 							i(223927),	-- Vinewrapped Leather Tunic
 						},
@@ -292,6 +294,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["questID"] = 82562,
 						["g"] = {
 							i(223936),	-- Shadow Bog Trousers
+							i(223918),	-- Specter Stalker's Shotgun
 						},
 					}),
 					n(207780, {	-- Finclaw Bloodtide
@@ -343,6 +346,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 66.7, 24.1, HALLOWFALL },
 						["questID"] = 82561,
 						["g"] = {
+							i(223921),	-- Ever-Oozing Signet	
 							i(223920),	-- Slime Deflecting Stopper
 							i(223933),	-- Slime Goliath's Cap
 						},

@@ -21,6 +21,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 52.6, 19.9, THE_RINGING_DEEPS },
 				["questID"] = 81674,
 				["g"] = {
+					i(221238),	-- Pillar of Constructs
 					i(221218),	-- Reinforced Construct's Greaves
 				},
 			}),
@@ -55,6 +56,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 51.0, 46.4, THE_RINGING_DEEPS },
 				["questID"] = 80560,
 				["g"] = {
+					i(221254),	-- Earthshatter Lance
 					i(221205),	-- Vest of the River
 				},
 			}),
@@ -78,6 +80,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["g"] = {
 					i(221507),	-- Earth Golem's Wrap
 					i(225999),	-- Earthen Adventurer's Tabard
+					i(221254),	-- Earthshatter Lance
 				},
 			}),
 			n(218393, {	-- Disturbed Earthgorger
@@ -86,6 +89,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["g"] = {
 					i(223943),	-- Cord of the Earthbreaker
 					i(223926),	-- Earthgorger's Chain Bib
+					i(221237),	-- Lamentable Vagrant's Lantern
 				},
 			}),
 			n(221199, {	-- Hungerer of the Deeps
@@ -109,6 +113,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 46.8, 46.8, THE_RINGING_DEEPS },
 				["questID"] = 81485,
 				["g"] = {
+					i(221253),	-- Cultivator's Plant Puncher
 					i(221264),	-- Fungarian Mystic's Cluster
 					i(221204),	-- Spore Giant's Stompers
 				},
@@ -133,8 +138,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 				["questID"] = 81652,
 				["g"] = {
-					i(223942),	-- Spore-Encrusted Ribbon
 					i(223919),	-- Abducted Lawman's Gavel
+					i(223918),	-- Specter Stalker's Shotgun
+					i(223942),	-- Spore-Encrusted Ribbon
 				},
 			}),
 			n(220271, {	-- Terror of the Forge
@@ -149,6 +155,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 71.8, 46.3, THE_RINGING_DEEPS },
 				["questID"] = 80574,
 				["g"] = {
+					i(221253),	-- Cultivator's Plant Puncher
 					i(221228),	-- Infested Fungal Wristwraps
 				},
 			}),
