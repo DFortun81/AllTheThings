@@ -188,12 +188,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 217859 },	-- Dagran Thaurissan II
 				["coord"] = { 50.2, 62, VAULT_OF_MEMORY },
 			}),
-			hqt(82541, {	-- Stay awhile and listen: Merrix <Councilward>
-				["name"] = "Stay awhile and listen: Merrix <Councilward>",
-				["sourceQuests"] = { 79344 },	-- Urban Odyssey
-				["provider"] = { "n", 214916 },	-- Merrix <Councilward>
-				["coord"] = { 31.8, 61.0, DORNOGAL },
-			}),
 			hqt(82542, {	-- Stay awhile and listen: Rooktender Lufsela
 				["name"] = "Stay awhile and listen: Rooktender Lufsela",
 				["sourceQuests"] = { 79107 },	-- After the Storm
@@ -226,6 +220,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["sourceQuests"] = { 83286 },	-- What's Hidden Beneath Dornogal
 				["provider"] = { "n", 226026 },	-- Dagran Thaurissan II
 				["coord"] = { 50.7, 61.5, VAULT_OF_MEMORY },
+			}),
+			hqt(82541, {	-- Stay awhile and listen: Merrix <Councilward>
+				["name"] = "Stay awhile and listen: Merrix <Councilward>",
+				["sourceQuests"] = { 79157 },	-- Titanic Failsafe
+				["provider"] = { "n", 214916 },	-- Merrix <Councilward>
+				["coord"] = { 31.8, 61.0, DORNOGAL },
 			}),
 
 			n(QUESTS, sharedData({

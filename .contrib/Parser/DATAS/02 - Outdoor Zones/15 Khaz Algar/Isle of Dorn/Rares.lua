@@ -239,6 +239,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(84029),	-- Extra HQT: Escaped Cutthroat
 			q(84034),	-- Extra HQT: Flamekeeper Graz
 			q(84028),	-- Extra HQT: Gar'loc
+			q(85160),	-- Extra HQT: Kereke
 			q(84031),	-- Extra HQT: Kronolith, Might of the Mountain
 			q(84039),	-- Extra HQT: Matriarch Charfuria
 			q(84026),	-- Extra HQT: Plaguehart

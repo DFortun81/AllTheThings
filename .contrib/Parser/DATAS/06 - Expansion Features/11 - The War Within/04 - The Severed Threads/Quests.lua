@@ -28,8 +28,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(82431, {	-- Unsevered Threads
 					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+				}),
+				q(85531, {	-- Earth-Encrusted Gem
+					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 					["g"] = {
 						i(223951),	-- Earth-Encrusted Gem
+					},
+				}),
+				q(85535, {	-- Kej
+					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+					["g"] = {
+						c(KEJ),
 					},
 				}),
 			}, {	-- RENOWN 10 --

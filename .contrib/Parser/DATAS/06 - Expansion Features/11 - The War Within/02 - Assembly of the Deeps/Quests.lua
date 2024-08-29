@@ -31,6 +31,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(226148),	-- Wax-sealed Weathered Crests
 					},
 				}),
+				q(85538, {	-- Shinies
+					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
+					["g"] = {
+						c(RESONANCE_CRYSTALS),
+					},
+				}),
 			}, {	-- RENOWN 7 --
 				q(84914, {	-- Valorstones
 					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
