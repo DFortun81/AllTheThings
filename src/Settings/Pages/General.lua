@@ -730,7 +730,7 @@ if app.GameBuildVersion >= 60000 then
 				:AlignAfter(accwideCheckboxRunecarvingPowers)
 
 			if app.GameBuildVersion >= 90000 then
-				-- Drakewatcher Manuscripts (Dragonflight+)
+				-- Skyriding Manuscripts (Dragonflight+)
 				local accwideCheckboxDrakewatcherManuscripts =
 				child:CreateForcedAccountWideCheckbox()
 					:AlignBelow(accwideCheckboxRunecarvingPowers)
