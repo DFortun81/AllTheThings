@@ -59,10 +59,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["cost"] = {{"c", KEJ, 565}},
 						}),
 					}, {	-- RENOWN 6 --
+					}, {	-- RENOWN 7 --
 						i(217894, {	-- Nerubian Pheromone Secreter
 							["cost"] = {{"c", KEJ, 450}},
 						}),
-					}, {	-- RENOWN 7 --
 					}, {	-- RENOWN 8 --
 					}, {	-- RENOWN 9 --
 					}, {	-- RENOWN 10 --

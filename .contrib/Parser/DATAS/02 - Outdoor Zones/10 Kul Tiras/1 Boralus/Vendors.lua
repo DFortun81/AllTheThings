@@ -406,6 +406,22 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(3025),	-- BKP 42 "Ultra"
 				},
 			}),
+			n(142169, {	-- Phil Gresham <Cobbler>
+				["coord"] = { 70.6, 19.6, BORALUS },
+				["races"] = ALLIANCE_ONLY,
+				["sym"] = {{"select","itemID",
+					2143,	-- Cuirboulli Boots
+					238, 	-- Cured Leather Boots
+					2438,	-- Embroidered Boots
+					792,	-- Knitted Sandals
+					2156, 	-- Padded Boots
+					2473,	-- Reinforced Leather Boots
+					843,	-- Tanned Leather Boots
+				}},
+				["g"] = {
+					i(20921),	-- Sun Cured Boots
+				},
+			}),
 			n(135808, {	-- Provisioner Fray <Proudmoore Admiralty Emissary>
 				["coord"] = { 67.5, 21.5, BORALUS },
 				["races"] = ALLIANCE_ONLY,
