@@ -25,13 +25,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			ach(40620),		-- Back to the Wall
 			ach(40629),		-- Bookworm (automated)
 			ach(40822),		-- Explore Azj-Kahet (automated)
-			ach(40614),		-- Gobblin' with Glublurp
 			ach(40624, {	-- Itsy Bitsy Spider
 				-- TODO: Braghe please add spider coords, thanks
 				crit(68972, {	-- Webster
 					["coord"] = { 39.4, 65.3, NERUBAR },
 				}),
-				crit(68973, {	-- Spindle
+				crit(68973, {	-- Spindle	//will have two sets of coords depending on completion of Saving Private Spindle?
 					--["coord"] = { 1, 1, AZJ_KAHET },
 				}),
 				crit(68974, {	-- Swift

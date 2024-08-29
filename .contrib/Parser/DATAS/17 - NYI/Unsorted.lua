@@ -39,15 +39,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(PROFESSIONS, {
 				-- Profession Knowledge Notes
-				i(224817),	-- Algari Herbalist's Notes
-
-				i(228774),	-- Algari Blacksmith's Journal
-				i(228775),	-- Algari Engineer's Notepad
-				i(228776),	-- Algari Scribe's Journal
-				i(228777),	-- Algari Jewelcrafter's Notebook
-				i(228778),	-- Algari Leatherworker's Journal
-				i(228779),	-- Algari Tailor's Notebook
-
 				-- I wonder if this has to do with Crafting Orders..
 					-- YES... Crafting Orders "Patron" rewards these
 					-- BRAGHE!
@@ -573,10 +564,8 @@ root(ROOTS.Unsorted, {
 					r(447000),	-- Sunset Spellthread
 				}),
 				--- Notes
-				i(224807),	-- Algari Skinner's Notes
 				-- Prof Knowledge
 				i(224782),	-- Razor Talon
-				i(225220),	-- Chitin Needle
 				i(225224),	-- Diaphanous Gem Shards
 				i(225225),	-- Deepstone Fragment
 				i(225226),	-- Striated Inkstone
@@ -1283,7 +1272,6 @@ root(ROOTS.Unsorted, {
 				i(225834),	-- Pilfered Matchbook
 				i(225835),	-- Battered Lantern
 				i(225841),	-- Ever-Frozen Ice
-				i(225843),	-- Ancient Bronze Hourglass
 				i(225844),	-- Damaged Radial Cog
 				i(225846),	-- Fractured Command Matrix
 				i(225847),	-- Inoperable Keystone

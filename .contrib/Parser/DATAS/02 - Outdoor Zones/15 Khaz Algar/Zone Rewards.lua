@@ -109,6 +109,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				i(225222),	-- Stone-Leather Swatch
 				i(225223),	-- Sturdy Nerubian Carapace
 				-- Tailoring
+				i(225220),	-- Chitin Needle
 				i(225221),	-- Spool of Webweave
 			},
 		}),

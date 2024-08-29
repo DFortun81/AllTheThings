@@ -840,6 +840,18 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				r(434552),	-- Versatile Ruby
 			}),
 		}),
+		n(QUESTS, sharedData({
+			["isWeekly"] = true,
+			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
+			["g"] = {
+				i(228777),	-- Algari Jewelcrafter's Notebook
+			},
+		},{
+			q(84130, {	-- Jewelcrafting Services Requested
+				["provider"] = { "n", 228177 },	-- Kala Clayhoof
+				["coord"] = { 59.2, 55.2, DORNOGAL },
+			}),
+		})),
 		n(TREASURES, {
 			o(455973, {	-- Arathi Sizing Gauges
 				["coord"] = { 47.3, 60.6, HALLOWFALL },

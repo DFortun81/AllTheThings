@@ -1371,6 +1371,18 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				r(441461),	-- Writhing Armor Banding
 			}),
 		}),
+		n(QUESTS, sharedData({
+			["isWeekly"] = true,
+			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
+			["g"] = {
+				i(228778),	-- Algari Leatherworker's Journal
+			},
+		},{
+			q(84131, {	-- Leatherworking Services Requested
+				["provider"] = { "n", 228177 },	-- Kala Clayhoof
+				["coord"] = { 59.2, 55.2, DORNOGAL },
+			}),
+		})),
 		n(TREASURES, {
 			o(455965, {	-- Arathi Beveler Set
 				["coord"] = { 47.5, 65.1, HALLOWFALL },

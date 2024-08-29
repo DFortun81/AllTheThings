@@ -153,6 +153,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = ZIRIAK.coord,
 			}),
 		})),
+		ach(40614),		-- Gobblin' with Glublurp
 		petbattle(ach(40162, {	-- Humanoid Battler of Khaz Algar
 			crit(67163, {	-- Collector Dyna
 				["crs"] = COLLECTOR_DYNA.crs,

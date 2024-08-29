@@ -375,6 +375,18 @@ root(ROOTS.Professions, prof(SKINNING, {
 				r(442655),	-- Supreme Beast Lure
 			}),
 		}),
+		n(QUESTS, sharedData({
+			["isWeekly"] = true,
+			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
+			["g"] = {
+				i(224807),	-- Algari Skinner's Notes
+			},
+		},{
+			q(83097, {	-- Cinder and Storm
+				["provider"] = { "n", 219083 },	-- Ginnad <Skinning Trainer>
+				["coord"] = { 54.5, 57.6, DORNOGAL },
+			}),
+		})),
 		n(TREASURES, {
 			o(455948, {	-- Arathi Craftsman's Spokeshave
 				["coord"] = { 42.2, 53.9, HALLOWFALL },

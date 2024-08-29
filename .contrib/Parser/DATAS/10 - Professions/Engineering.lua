@@ -1571,6 +1571,18 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				r(447353),	-- Serrated Cogwheel
 			}),
 		}),
+		n(QUESTS, sharedData({
+			["isWeekly"] = true,
+			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
+			["g"] = {
+				i(228775),	-- Algari Engineer's Notepad
+			},
+		},{
+			q(84128, {	-- Engineering Services Requested
+				["provider"] = { "n", 228177 },	-- Kala Clayhoof
+				["coord"] = { 59.2, 55.2, DORNOGAL },
+			}),
+		})),
 		n(TREASURES, {
 			o(455996, {	-- Arathi Safety Gloves
 				["coord"] = { 41.5, 48.9, HALLOWFALL },

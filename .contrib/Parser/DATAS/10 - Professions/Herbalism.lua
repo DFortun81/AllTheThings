@@ -1434,6 +1434,18 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 				r(438812),	-- Refine Herbs+++
 			}),
 		}),
+		n(QUESTS, sharedData({
+			["isWeekly"] = true,
+			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
+			["g"] = {
+				i(224817),	-- Algari Herbalist's Notes
+			},
+		},{
+			q(82965, {	-- Light and Shadow
+				["provider"] = { "n", 219101 },	-- Akdan <Herbalism Trainer>
+				["coord"] = { 44.8, 69.4, DORNOGAL },
+			}),
+		})),
 		n(TREASURES, {
 			o(455993, {	-- Ancient Flower
 				["coord"] = { 57.5, 61.5, ISLE_OF_DORN },

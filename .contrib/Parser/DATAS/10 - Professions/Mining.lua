@@ -1304,6 +1304,18 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				r(442333),	-- Refine Ironclaw Ore+++
 			}),
 		}),
+		n(QUESTS, sharedData({
+			["isWeekly"] = true,
+			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
+			["g"] = {
+				i(224818),	-- Algari Mining Notes
+			},
+		},{
+			q(83103, {	-- Acquiring Aqirite
+				["provider"] = { "n", 219097 },	-- Tarib <Mining Trainer>
+				["coord"] = { 52.6, 52.6, DORNOGAL },
+			}),
+		})),
 		n(TREASURES, {
 			o(455957, {	-- Arathi Precision Drill
 				["coord"] = { 46.1, 64.4, HALLOWFALL },
@@ -1368,7 +1380,6 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 				currency(TWW_MINING_KNOWLEDGE),
 			},
 		},{
-			i(224818),	-- Algari Mining Notes
 			q(83733, {		-- TWW Inscription Order: Mining
 				["name"] = "TWW Inscription Order: Mining",
 				["description"] = "Requires a crafting order from Inscription.",
