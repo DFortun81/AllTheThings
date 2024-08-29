@@ -77,12 +77,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(78392, {	-- The Tangled Web
 					["sourceQuests"] = { 78354 },	-- A Guiding Thread
-					["provider"] = { "n", 207471 },	-- Widow Arak'nal
+					["provider"] = { "n", 207471 },	-- Widow Arak'nai
 					["coord"] = { 56.2, 48.2, AZJ_KAHET },
 				}),
 				q(78393, {	-- A Seeming Respite
 					["sourceQuests"] = { 78354 },	-- A Guiding Thread
-					["provider"] = { "n", 207471 },	-- Widow Arak'nal
+					["provider"] = { "n", 207471 },	-- Widow Arak'nai
 					["coord"] = { 56.2, 48.2, AZJ_KAHET },
 				}),
 				------ Chapter 2 ------
@@ -91,7 +91,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78393,	-- A Seeming Respite
 						78352,	-- The Tangled Web
 					},
-					["provider"] = { "n", 207471 },	-- Widow Arak'nal
+					["provider"] = { "n", 207471 },	-- Widow Arak'nai
 					["coord"] = { 56.2, 48.2, AZJ_KAHET },
 				}),
 				q(80399, {	-- Rations and Revelations
@@ -241,7 +241,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				------ Chapter 3 ------
 				q(78226, {	-- A Most Intriguing Invitation
 					["sourceQuests"] = { 78256 },	-- The General's Consensus
-					["provider"] = { "n", 207471 },	-- Window Arak'nal
+					["provider"] = { "n", 207471 },	-- Widow Arak'nai
 					["coord"] = { 56.2, 48.2, AZJ_KAHET },
 					["g"] = {
 						i(212605),	-- The Vizier's Invitation (QI!)
@@ -297,7 +297,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(79227, {	-- A Spider's-Eye View
 					["sourceQuests"] = { 79224 },	-- Gathering Intel
-					["provider"] = { "n", 207471 },	-- Window Arak'nal
+					["provider"] = { "n", 207471 },	-- Widow Arak'nai
 					["coord"] = { 56.2, 48.2, AZJ_KAHET },
 				}),
 				q(79230, {	-- Creeping Through Corridors
@@ -806,7 +806,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40636.12, {	-- Subterfuge in Silk
 				q(81686, {	-- Subterfuge in Silk
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78244 },	-- Kaheti Hospitality
 					["provider"] = { "n", 207476 },	-- Kex
 					["coord"] = { 56.8, 38.8, AZJ_KAHET },
 					["isBreadcrumb"] = true,	-- unless it is now required for spawn next quests/npc
@@ -938,9 +938,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40636.15, {	-- All Good Things...
 				q(82248, {	-- Advance to Faerin
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
-					["provider"] = { "n", 207471 },	-- Window Arak'nal
+					["provider"] = { "n", 207471 },	-- Widow Arak'nai
 					["coord"] = { 55.6, 43.8, AZJ_KAHET },
-					["isBreadcrumb"] = true,	-- TODO: it look like it is
+					["isBreadcrumb"] = true,
 				}),
 				q(81929, {	-- Here's the Plan
 					["sourceQuests"] = { 82248 },	-- Advance to Faerin
@@ -1017,7 +1017,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(83276, {	-- Saving Private Spindle
 					["sourceQuests"] = { 84700 },	-- Pacts Below (still unsure)
-					["provider"] = { "n", 207471 },	-- Window Arak'nal
+					["provider"] = { "n", 207471 },	-- Widow Arak'nai
 					["coord"] = { 55.6, 43.9, AZJ_KAHET },
 				}),
 				q(83277, {	-- Personal Pilfering
@@ -1033,12 +1033,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(79532, {	-- Tinker, Tailor, Soldier, Spider
 					["sourceQuests"] = { 83277 },	-- Personal Pilfering (could be wrong, spawn some time afterwards)
-					["provider"] = { "n", 207471 },	-- Window Arak'nal
+					["provider"] = { "n", 207471 },	-- Widow Arak'nai
 					["coord"] = { 56.2, 48.2, AZJ_KAHET },
 				}),
 				q(79627, {	-- Wine and Die
 					["sourceQuests"] = { 79532 },	-- Tinker, Tailor, Soldier, Spider
-					["provider"] = { "n", 227428 },	-- Window Arak'nal
+					["provider"] = { "n", 227428 },	-- Widow Arak'nai
 					["coord"] = { 62.9, 12.1, NERUBAR_LOWER },
 				}),
 				q(79633, {	-- The Weaver's Legacy

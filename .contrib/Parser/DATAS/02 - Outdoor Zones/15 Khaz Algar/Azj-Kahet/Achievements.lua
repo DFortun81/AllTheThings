@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			ach(40624, {	-- Itsy Bitsy Spider
 				-- TODO: Braghe please add spider coords, thanks
 				crit(68972, {	-- Webster
-					["coord"] = { 30.4, 65.3, NERUBAR },
+					["coord"] = { 39.4, 65.3, NERUBAR },
 				}),
 				crit(68973, {	-- Spindle
 					--["coord"] = { 1, 1, AZJ_KAHET },

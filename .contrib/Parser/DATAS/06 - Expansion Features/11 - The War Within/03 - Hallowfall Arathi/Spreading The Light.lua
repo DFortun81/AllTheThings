@@ -99,10 +99,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						},
 					}),
 					q(79234, {	-- A Small Bag of Seeds
-						["provider"] = { "i", 212339 },	-- Expedition Tinderbox
+						["provider"] = { "i", 212339 },	-- A Small Bag of Seeds
+						["g"] = {
+							i(212339),	-- A Small Bag of Seeds (QS!/QI!)
+						},
+					}),					
+					q(82967, {	-- Hillhelm Family: The Ear
+						["provider"] = { "i", 224462 },	-- The Ear
+						["g"] = {
+							i(224462),	-- The Ear (QS!/QI!)
+						},
+					}),
+					q(82966, {	-- Hillhelm Family: Unusual Potato
+						["provider"] = { "i", 224465 },	-- Unusual Potato
+						["g"] = {
+							i(224465),	-- Unusual Potato (QS!/QI!)
+						},
 					}),
 					q(78589, {	-- Invasive Cuisine
 						["provider"] = { "i", 211861 },	-- Umbral Eggplant
+						["g"] = {
+							i(211861),	-- Umbral Eggplant (QS!/QI!)
+						},
 					}),
 				}),
 				n(QUESTS, sharedData({ ["isWeekly"] = true }, {
@@ -364,6 +382,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229081),	-- Aevery's Spare Cowl
 						i(229080),	-- Aevery's Spare Gauntlets
 						i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
+						i(229118),	-- Flamestonge's Belt
 						i(229092),	-- Kyros's Spare Girdle
 						i(229155),	-- Lamplighter's Greataxe
 						i(229061),	-- Nisa's Spare Belt
@@ -382,7 +401,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						},
 					}),
 					o(428472, {	-- Captain Lancekat's Discretionary Funds
-						["description"] = "Require any source of light for area (e.g. torch) that reveal this treasure",
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 66.5, 15.1, HALLOWFALL },
 						["questID"] = 81612,
 						--["isWeekly"] = true,
@@ -415,14 +434,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["questID"] = 79964,
 					}),
 					o(435008, {	-- Farmhand Stash
-						["description"] = "Require weekly quest with controlling Harvestbot Remy to git it up",
+						["description"] = "Requires weekly quest with controlling Harvestbot Remy to spawn.",
 						["coord"] = { 61.6, 32.6, HALLOWFALL },
 						["questID"] = 80590,
 						--["isWeekly"] = true,
 					}),
 					o(441795, {	-- Hallowfall Sparkfly
-						["coord"] = { 66.8, 25.3, HALLOWFALL },
 						["description"] = "Requires level 80",
+						["coord"] = { 66.8, 25.3, HALLOWFALL },
 						--["questID"] = ,
 						["provider"] = {"i", 218107},	-- Sparkbug Jar
 						["g"] = {
@@ -445,7 +464,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					n(206870, {	-- Shadowrooted Vine
 						["provider"] = { "i", 206670 },	-- Darkroot Grips
 						["g"] = {
+							i(224462),	-- The Ear
 							i(211861),	-- Umbral Eggplant
+							i(224465),	-- Unusual Potato
 						},
 					}),
 				}),
@@ -454,6 +475,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["isDaily"] = true,
 				},{
 					o(453186, {	-- Nightfarm Growthling
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure in any area of farmland.",
 						["coord"] = { 61.3, 31.8, HALLOWFALL },
 						["questID"] = 83272,
 						["g"] = {
@@ -635,6 +657,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(84056),	-- Extra HQT: Toadstomper
 			---
 			q(79177),	-- Snuffling in Hallowfall?
+			--q(85552),	-- ??? "Opened Lamplighter Supply Satchel"
 			--q(83342),	-- ??? "Popped when completing "Shadows of Flavour"
 			--q(79188),	-- ??? "After picking up Spider-Touched Bag treasure, during the keyflame event and turning in a quest"
 			-- Vendor

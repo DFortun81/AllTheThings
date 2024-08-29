@@ -71,10 +71,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 9 --
 				q(82394, {	-- A Cache of Crests
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coords"] = {
-						{ 41.2, 53.0, HALLOWFALL },	-- TODO: probably no longer accurtate and was moved
-						{ 42.4, 55.0, HALLOWFALL },
-					},
+					["coord"] = { 41.2, 53.0, HALLOWFALL },
 				}),
 			}, {	-- RENOWN 10 --
 				q(82395, {	-- Flame-touched Tabard
@@ -116,6 +113,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				--	["coord"] = { 47.5, 32.0, THE_RINGING_DEEPS },
 				--}),
 			}, {	-- RENOWN 12 --
+				q(82396, {	-- A Gift from Mereldar
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
+					["coord"] = { 41.2, 53.0, HALLOWFALL },
+				}),
 			}, {	-- RENOWN 13 --
 			}, {	-- RENOWN 14 --
 			}, {	-- RENOWN 15 --
