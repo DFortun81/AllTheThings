@@ -180,7 +180,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["maps"] = { ZARALEK_CAVERN },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
 						["g"] = {
 							spell(409471, {	-- Drake Helms
-								-- auto learns these Drakewatcher Manuscripts
+								-- auto learns these Skyriding Manuscripts
 								i(196990),	-- Cliffside Wylderdrake: Helm (DM!)
 								i(210476, {	-- Flourishing Whimsydrake: Helmet (DM!)
 									["timeline"] = { ADDED_10_2_0 },

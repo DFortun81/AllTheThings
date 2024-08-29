@@ -969,7 +969,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(197350),	-- Renewned Proto-Drake: Silver and Purple Armor (DM!)
 							i(197581),	-- Windborne Velocidrake: Silver and Purple Armor (DM!)
 
-							-- auto learns these Drakewatcher Manuscripts
+							-- auto learns these Skyriding Manuscripts
 							i(196961),	-- Cliffside Wylderdrake: Armor (DM!)
 							i(210471, {	-- Flourishing Whimsydrake: Body Armor (DM!)
 								["timeline"] = { ADDED_10_2_7 },	-- maybe since 10.2.0?

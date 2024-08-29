@@ -1,5 +1,5 @@
 DRAKEWATCHER_MANUSCRIPTS = createHeader({
-	readable = "Drakewatcher Manuscripts",
+	readable = "Skyriding Manuscripts",
 	icon = "Interface\\Icons\\ability_dragonriding_glyph01",
 	text = {
 		en = "Drakewatcher Manuscript",
