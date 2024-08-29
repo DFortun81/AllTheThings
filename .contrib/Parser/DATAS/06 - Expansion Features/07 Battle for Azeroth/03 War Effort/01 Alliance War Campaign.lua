@@ -9,7 +9,6 @@ root(ROOTS.ExpansionFeatures,
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					ach(12510, {	-- Ready for War
-						["collectible"] = false,
 						["races"] = ALLIANCE_ONLY,
 						["maps"] = { BORALUS },
 						["lvl"] = 110,
