@@ -1163,13 +1163,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["name"] = "Stay awhile and listen: Anduin Wrynn",
 				["sourceQuests"] = { 78228 },	-- Into a Skittering City
 				["provider"] = { "n", 211351 },	-- Anduin Wrynn
-				["coord"] = { 43.2, 56.2, HALLOWFALL },
+				["coord"] = { 67.0, 31.8, NERUBAR_LOWER },
 			}),
 			hqt(82033, {	-- Stay awhile and listen: Alleria Windrunner
 				["name"] = "Stay awhile and listen: Alleria Windrunner",
 				["sourceQuests"] = { 78244 },	-- Kaheti Hospitality
 				["provider"] = { "n", 217385 },	-- Alleria Windrunner
-				["coord"] = { 60.6, 68.7, HALLOWFALL },
+				["coord"] = { 60.6, 68.7, AZJ_KAHET },
 			}),
 			hqt(81513, {	-- Stay awhile and listen: Faerin Lothar
 			["name"] = "Stay awhile and listen: Faerin Lothar",

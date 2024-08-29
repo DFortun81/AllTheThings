@@ -1870,6 +1870,7 @@ i(220229);	-- Dormant Core
 i(220271);	-- Downy Clump
 i(225836);	-- Drained Elemental Mote
 i(228723);	-- Earthen Pet Rock
+i(220235);	-- Electrified Teeth
 i(225792);	-- Elegant Pedipalp Wrappings
 i(220262);	-- Elongated Proboscis
 i(220243);	-- Eloquent Tailfeather

@@ -161,9 +161,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80281, {	-- Pit Plunge
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 27.0, 52.3, AZJ_KAHET },
+					["provider"] = { "n", 219569 },	-- Bronze Timekeeper
+					["coord"] = { 23.8, 48.4, AZJ_KAHET },
 					["g"] = {
 						ach(20457),	-- Pit Plunge: Bronze
 						ach(20458),	-- Pit Plunge: Silver
@@ -171,9 +170,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80287, {	-- Pit Plunge - Advanced
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 27.0, 52.3, AZJ_KAHET },
+					["provider"] = { "n", 219569 },	-- Bronze Timekeeper
+					["coord"] = { 23.8, 48.4, AZJ_KAHET },
 					["g"] = {
 						ach(20460),	-- Pit Plunge Advanced: Bronze
 						ach(20461),	-- Pit Plunge Advanced: Silver
@@ -181,9 +179,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80293, {	-- Pit Plunge - Reverse
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					["coord"] = { 27.0, 52.3, AZJ_KAHET },
+					["provider"] = { "n", 219569 },	-- Bronze Timekeeper
+					["coord"] = { 23.8, 48.4, AZJ_KAHET },
 					["g"] = {
 						ach(20463),	-- Pit Plunge Reverse: Bronze
 						ach(20464),	-- Pit Plunge Reverse: Silver
@@ -219,7 +216,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				skyridingrace(80282, {	-- Siegehold Scuttle
 					["provider"] = { "n", 219570 },	-- Bronze Timekeeper
-					["coord"] = { 42.0, 32.2, AZJ_KAHET },
+					["coord"] = { 40.2, 32.2, AZJ_KAHET },
 					["g"] = {
 						ach(20466),	-- Siegehold Scuttle: Bronze
 						ach(20467),	-- Siegehold Scuttle: Silver
@@ -228,7 +225,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				skyridingrace(80288, {	-- Siegehold Scuttle - Advanced
 					["provider"] = { "n", 219570 },	-- Bronze Timekeeper
-					["coord"] = { 42.0, 32.2, AZJ_KAHET },
+					["coord"] = { 40.2, 32.2, AZJ_KAHET },
 					["g"] = {
 						ach(20469),	-- Siegehold Scuttle Advanced: Bronze
 						ach(20470),	-- Siegehold Scuttle Advanced: Silver
@@ -237,7 +234,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				skyridingrace(80294, {	-- Siegehold Scuttle - Reverse
 					["provider"] = { "n", 219570 },	-- Bronze Timekeeper
-					["coord"] = { 42.0, 32.2, AZJ_KAHET },
+					["coord"] = { 40.2, 32.2, AZJ_KAHET },
 					["g"] = {
 						ach(20472),	-- Siegehold Scuttle Reverse: Bronze
 						ach(20473),	-- Siegehold Scuttle Reverse: Silver

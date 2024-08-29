@@ -8,7 +8,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			ach(40622),		-- Biblo Archivist (automated)
 			ach(40150),		-- Children's Entertainer
 			ach(40826),		-- Explore Hallowfall (automated)
-			ach(20594),		-- Flamegard's Hope
+			ach(20594, {	-- Flamegard's Hope
+				["description"] = "Use healing spells, bandages or Algari Healing Potion to heal 20 patients.",
+				["coord"] = { 43.2, 51.8, HALLOWFALL },
+			}),		
 			ach(20598),		-- Hallowfall (automated)
 			ach(40704, {	-- Hallowfall Glyph Hunter
 				-- Meta Achievement

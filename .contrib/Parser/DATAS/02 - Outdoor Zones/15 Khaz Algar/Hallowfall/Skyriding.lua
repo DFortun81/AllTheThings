@@ -107,8 +107,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(QUESTS, {
 				skyridingrace(80256, {	-- Dunelle's Detour
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219557 },	-- Bronze Timekeeper
 					["coord"] = { 72.8, 38.4, HALLOWFALL },
 					["g"] = {
 						ach(20363),	-- Dunelle's Detour: Bronze
@@ -117,8 +116,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80265, {	-- Dunelle's Detour - Advanced
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219557 },	-- Bronze Timekeeper
 					["coord"] = { 72.8, 38.4, HALLOWFALL },
 					["g"] = {
 						ach(20366),	-- Dunelle's Detour Advanced: Bronze
@@ -127,8 +125,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80271, {	-- Dunelle's Detour - Reverse
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219557 },	-- Bronze Timekeeper
 					["coord"] = { 72.8, 38.4, HALLOWFALL },
 					["g"] = {
 						ach(20369),	-- Dunelle's Detour Reverse: Bronze
@@ -137,9 +134,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80258, {	-- Light's Redoubt Descent
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["provider"] = { "n", 219559 },	-- Bronze Timekeeper
+					["coord"] = { 41.4, 67.2, HALLOWFALL },
 					["g"] = {
 						ach(20381),	-- Light's Redoubt Descent: Bronze
 						ach(20382),	-- Light's Redoubt Descent: Silver
@@ -147,9 +143,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80267, {	-- Light's Redoubt Descent - Advanced
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["provider"] = { "n", 219559 },	-- Bronze Timekeeper
+					["coord"] = { 41.4, 67.2, HALLOWFALL },
 					["g"] = {
 						ach(20384),	-- Light's Redoubt Descent Advanced: Bronze
 						ach(20385),	-- Light's Redoubt Descent Advanced: Silver
@@ -157,9 +152,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80273, {	-- Light's Redoubt Descent - Reverse
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["provider"] = { "n", 219559 },	-- Bronze Timekeeper
+					["coord"] = { 41.4, 67.2, HALLOWFALL },
 					["g"] = {
 						ach(20387),	-- Light's Redoubt Descent Reverse: Bronze
 						ach(20388),	-- Light's Redoubt Descent Reverse: Silver
@@ -221,8 +215,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80257, {	-- Tenir's Traversal
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219558 },	-- Bronze Timekeeper
 					["coord"] = { 59.2, 68.9, HALLOWFALL },
 					["g"] = {
 						ach(20372),	-- Tenir's Traversal: Bronze
@@ -231,8 +224,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80266, {	-- Tenir's Traversal - Advanced
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219558 },	-- Bronze Timekeeper
 					["coord"] = { 59.2, 68.9, HALLOWFALL },
 					["g"] = {
 						ach(20375),	-- Tenir's Traversal Advanced: Bronze
@@ -241,8 +233,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80272, {	-- Tenir's Traversal - Reverse
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219558 },	-- Bronze Timekeeper
 					["coord"] = { 59.2, 68.9, HALLOWFALL },
 					["g"] = {
 						ach(20378),	-- Tenir's Traversal Reverse: Bronze
@@ -251,9 +242,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80261, {	-- Velhan's Venture
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["provider"] = { "n", 219562 },	-- Bronze Timekeeper
+					["coord"] = { 54.1, 17.4, HALLOWFALL },
 					["g"] = {
 						ach(20408),	-- Velhan's Venture: Bronze
 						ach(20409),	-- Velhan's Venture: Silver
@@ -261,9 +251,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80270, {	-- Velhan's Venture - Advanced
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["provider"] = { "n", 219562 },	-- Bronze Timekeeper
+					["coord"] = { 54.1, 17.4, HALLOWFALL },
 					["g"] = {
 						ach(20411),	-- Velhan's Venture Advanced: Bronze
 						ach(20412),	-- Velhan's Venture Advanced: Silver
@@ -271,9 +260,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80276, {	-- Velhan's Venture - Reverse
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
-					-- ["coord"] = { 32.9, 74.8, THE_RINGING_DEEPS },
+					["provider"] = { "n", 219562 },	-- Bronze Timekeeper
+					["coord"] = { 54.1, 17.4, HALLOWFALL },
 					["g"] = {
 						ach(20414),	-- Velhan's Venture Reverse: Bronze
 						ach(20415),	-- Velhan's Venture Reverse: Silver

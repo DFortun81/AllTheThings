@@ -161,8 +161,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80237, {	-- Earthenworks Weave
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219551 },	-- Bronze Timekeeper
 					["coord"] = { 40.9, 11.3, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20309),	-- Earthenworks Weave: Bronze
@@ -171,8 +170,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80244, {	-- Earthenworks Weave - Advanced
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219551 },	-- Bronze Timekeeper
 					["coord"] = { 40.9, 11.3, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20312),	-- Earthenworks Weave Advanced: Bronze
@@ -181,8 +179,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80250, {	-- Earthenworks Weave - Reverse
-					-- TODO
-					-- ["provider"] = { "n", X },	-- Bronze Timekeeper
+					["provider"] = { "n", 219551 },	-- Bronze Timekeeper
 					["coord"] = { 40.9, 11.3, THE_RINGING_DEEPS },
 					["g"] = {
 						ach(20315),	-- Earthenworks Weave Reverse: Bronze

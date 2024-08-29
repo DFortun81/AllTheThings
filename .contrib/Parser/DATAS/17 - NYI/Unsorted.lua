@@ -1198,7 +1198,6 @@ root(ROOTS.Unsorted, {
 				i(220220),	-- Ornate Pipe
 				i(220225),	-- Tattered Standard
 				i(220233),	-- Extinguished Icon
-				i(220235),	-- Electrified Teeth
 				i(220240),	-- Night's Litany
 				i(220245),	-- Charged Antennae
 				i(220250),	-- Filthy Handkerchief

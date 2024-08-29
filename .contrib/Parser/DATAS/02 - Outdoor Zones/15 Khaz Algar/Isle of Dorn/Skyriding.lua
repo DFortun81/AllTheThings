@@ -188,8 +188,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80220, {	-- Storm's Watch Survey
-					-- TODO
-					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
+					["provider"] = { "n", 219544 },	-- Bronze Timekeeper
 					["coord"] = { 38.6, 43.6, ISLE_OF_DORN },
 					["g"] = {
 						ach(20264),	-- Storm's Watch Survey: Bronze
@@ -198,8 +197,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80226, {	-- Storm's Watch Survey - Advanced
-					-- TODO
-					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
+					["provider"] = { "n", 219544 },	-- Bronze Timekeeper
 					["coord"] = { 38.6, 43.6, ISLE_OF_DORN },
 					["g"] = {
 						ach(20267),	-- Storm's Watch Survey Advanced: Bronze
@@ -208,8 +206,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				skyridingrace(80232, {	-- Storm's Watch Survey - Reverse
-					-- TODO
-					-- ["provider"] = { "n", 219550 },	-- Bronze Timekeeper
+					["provider"] = { "n", 219544 },	-- Bronze Timekeeper
 					["coord"] = { 38.6, 43.6, ISLE_OF_DORN },
 					["g"] = {
 						ach(20270),	-- Storm's Watch Survey Reverse: Bronze
@@ -246,7 +243,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				skyridingrace(80223, {	-- Thunderhead Trail
 					["provider"] = { "n", 219549 },	-- Bronze Timekeeper
-					["coord"] = { 58.6, 21.1, ISLE_OF_DORN },
+					["coord"] = { 58.3, 24.8, ISLE_OF_DORN },
 					["g"] = {
 						ach(20291),	-- Thunderhead Trail: Bronze
 						ach(20292),	-- Thunderhead Trail: Silver
@@ -255,7 +252,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				skyridingrace(80229, {	-- Thunderhead Trail - Advanced
 					["provider"] = { "n", 219549 },	-- Bronze Timekeeper
-					["coord"] = { 58.6, 21.1, ISLE_OF_DORN },
+					["coord"] = { 58.3, 24.8, ISLE_OF_DORN },
 					["g"] = {
 						ach(20294),	-- Thunderhead Trail Advanced: Bronze
 						ach(20295),	-- Thunderhead Trail Advanced: Silver
@@ -264,7 +261,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				skyridingrace(80235, {	-- Thunderhead Trail - Reverse
 					["provider"] = { "n", 219549 },	-- Bronze Timekeeper
-					["coord"] = { 58.6, 21.1, ISLE_OF_DORN },
+					["coord"] = { 58.3, 24.8, ISLE_OF_DORN },
 					["g"] = {
 						ach(20297),	-- Thunderhead Trail Reverse: Bronze
 						ach(20298),	-- Thunderhead Trail Reverse: Silver
