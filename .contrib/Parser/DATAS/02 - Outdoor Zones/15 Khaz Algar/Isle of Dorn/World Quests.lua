@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(224074),	-- Opal-Mining Tools (QI!)
 					}
 				}),
-				q(82225, {	-- Elemental Excavation
+				q(80395, {	-- Elemental Excavation
 					["coord"] = { 74.8, 55.1, ISLE_OF_DORN },
 				}),
 				q(82225, {	-- Excavation Extravaganza
