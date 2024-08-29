@@ -583,7 +583,6 @@ root(ROOTS.Unsorted, {
 				i(225227),	-- Wax-Sealed Records
 				i(224780),	-- Toughened Tempest Pelt
 				i(227662),	-- Shimmering Dust
-				i(227667),	-- Algari Enchanter's Folio
 			}),
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
 				--
