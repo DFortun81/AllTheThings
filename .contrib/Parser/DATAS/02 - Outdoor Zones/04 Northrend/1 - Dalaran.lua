@@ -1365,6 +1365,7 @@ root(ROOTS.Zones, {
 					}),
 					i(43659, {	-- Bloodied Prison Shank
 						["timeline"] = { ADDED_3_0_2 },
+						["description"] = "Can be fished up from the waters outside Violet Hold on WotLK Dalaran.",
 					}),
 					o(193402, {	-- Rusted Prisoner's Footlocker
 						["coord"] = { 64.5, 73.8, NORTHREND_DALARAN },
