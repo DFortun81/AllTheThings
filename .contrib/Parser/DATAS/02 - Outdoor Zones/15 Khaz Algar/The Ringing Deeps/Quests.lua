@@ -1119,17 +1119,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				q(82224, {	-- Check on the Compiler
-					-- TODO: I'm unsure if it is specific case for this one or they changed chain
-					-- Specific - I was doing only quests above without pickup next quest that probably still available as was previously
-					-- but just in case - I change requirement
 					["sourceQuests"] = { 80577 },	-- Readying the Recitation
 					["provider"] = { "n", 220600 },	-- Haimaz
 					["coord"] = { 62.0, 45.5, THE_RINGING_DEEPS },
+					["isBreadcrumb"] = true,
 				}),
 				q(80578, {	-- The Common Costume
-					["sourceQuests"] = { 82224 },	-- Check on the Compiler
+					["sourceQuests"] = { 
+						82224,	-- Check on the Compiler
+						81613,	-- Let's Not Worry Her
+					},	
 					["provider"] = { "n", 220597 },	-- Brennok
 					["coord"] = { 61.9, 45.5, THE_RINGING_DEEPS },
+					["sourceQuestNumRequired"] = 1,
 					["g"] = {
 						i(221472),	-- Miner's Clothes (QI!)
 					},
