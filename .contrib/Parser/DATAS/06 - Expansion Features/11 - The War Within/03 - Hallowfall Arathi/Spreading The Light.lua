@@ -103,7 +103,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["g"] = {
 							i(212339),	-- A Small Bag of Seeds (QS!/QI!)
 						},
-					}),					
+					}),
 					q(82967, {	-- Hillhelm Family: The Ear
 						["provider"] = { "i", 224462 },	-- The Ear
 						["g"] = {
@@ -364,7 +364,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 66.7, 24.1, HALLOWFALL },
 						["questID"] = 82561,
 						["g"] = {
-							i(223921),	-- Ever-Oozing Signet	
+							i(223921),	-- Ever-Oozing Signet
 							i(223920),	-- Slime Deflecting Stopper
 							i(223933),	-- Slime Goliath's Cap
 						},
@@ -663,6 +663,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			-- Vendor
 			q(76996),	-- after buy and use itemID 210826 (Harvestbot Repair Kit)
 			q(83341),	-- after turn in 78933 (The Sweet Eclipse), unlock ability to buy Sweet Eclipse from vendor
+			q(85552),	-- triggered on opening first Lamplighter Supply Satchel of the week (received blue)
 		}),
 	}),
 })));

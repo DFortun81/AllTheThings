@@ -1347,6 +1347,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(81926),	-- Choosing Pokey Bits
 			-- ?
 			q(82991),	-- Talking to Ferno (225018) inside Camp Murrock, When bind hearthstone location to Camp Murroch tavern
+			q(82116),	-- First option selected with ZZ-01-47 during 79023 'Small Friend, Big Plans' (2nd/3rd options have no HQT)
 		}),
 	}),
 })));
