@@ -131,12 +131,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				--["description"] = "Finishing questID 78383 (Strategic Edge) make it spawn",
 				["coord"] = { 67.0, 33.2, AZJ_KAHET },
 				["questID"] = 82719,
-				["g"] = {
-					i(222795),	-- Spool of Weaverthread+
-					i(222796),	-- Spool of Weaverthread++
-					i(222797),	-- Spool of Weaverthread+++
-					i(224441),	-- Weavercloth Bandage++
-				},
 			}),
 			o(444844, {	-- Stashed Loot
 				["coords"] = {
@@ -256,7 +250,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					currency(3056),	-- Kej
 				},
 			}),
-			o(452708, {	-- "Weaving Supplies"  //user claims 452708 is right ID		
+			o(452708, {	-- "Weaving Supplies"  //user claims 452708 is right ID
 				--["provider"] = { "o", 452708 },	-- "Weaving Supplies" // probably need to be switched with 446420
 				["questID"] = 82527,
 				["coord"] = { 78.6, 33.2, AZJ_KAHET },
