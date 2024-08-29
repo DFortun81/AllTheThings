@@ -48,6 +48,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(82580, {	-- Courier Mission: Ore Recovery
 					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
+					["g"] = {
+						ach(40623),	-- I Only Need One Trip
+					},
 				}),
 				q(83930, {	-- Deworming Solution
 					["coord"] = { 57.4, 39.5, THE_RINGING_DEEPS },
@@ -74,6 +77,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(83101, {	-- Reaching for Resources
 					["coord"] = { 55.2, 50.8, THE_RINGING_DEEPS },
+					["g"] = {
+						ach(40507),	-- Hanging Tight
+					},
 				}),
 				q(81811, {	-- Skyrider Racing - Cataract River Cruise
 					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },

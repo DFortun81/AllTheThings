@@ -1193,6 +1193,18 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+		n(QUESTS, sharedData({
+			["isWeekly"] = true,
+			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
+			["g"] = {
+				i(228774),	-- Algari Blacksmiths's Journal
+			},
+		},{
+			q(84127, {	-- Blacksmithing Services Requested
+				["provider"] = { "n", 228177 },	-- Kala Clayhoof
+				["coord"] = { 59.2, 55.2, DORNOGAL },
+			}),
+		})),
 		n(TREASURES, {
 			o(456017, {	-- Ancient Earthen Anvil
 				["coord"] = { 59.8, 61.9, ISLE_OF_DORN },

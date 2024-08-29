@@ -927,7 +927,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 47.3, 31.9, THE_RINGING_DEEPS },
 					["g"] = {
 						i(220162),	-- [PH] Toy, Pipe Toy (TOY!) (TODO: but not really, atm)
-						--c(2902),	-- The Assembly of the Deeps Commendation, one-time Warband bonus
+						--currency(2902),	-- The Assembly of the Deeps Commendation, one-time Warband bonus
 					},
 				}),
 			}),

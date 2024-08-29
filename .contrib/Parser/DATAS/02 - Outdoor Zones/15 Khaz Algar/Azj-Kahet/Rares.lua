@@ -199,7 +199,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(216034, {	-- XT-Minecrusher 8700
-				["coord"] = { 75.4, 61.0, AZJ_KAHET },
+				["coord"] = { 76.5, 57.7, AZJ_KAHET },
 				["questID"] = 81703,
 				["g"] = {
 					i(221232),	-- Polished Goblin Bling

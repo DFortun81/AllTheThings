@@ -40,7 +40,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 					["g"] = {
-						c(KEJ),
+						currency(KEJ),
 					},
 				}),
 			}, {	-- RENOWN 10 --

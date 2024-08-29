@@ -35,7 +35,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
 					["g"] = {
-						c(RESONANCE_CRYSTALS),
+						currency(RESONANCE_CRYSTALS),
 					},
 				}),
 			}, {	-- RENOWN 7 --
