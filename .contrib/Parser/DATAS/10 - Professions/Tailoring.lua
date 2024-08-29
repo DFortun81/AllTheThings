@@ -905,7 +905,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 					i(226355),	-- Nerubian's Pincushion
 				},
 			}),
-			o(45593, {	-- Nerubian Quilt
+			o(455939, {	-- Nerubian Quilt
 				["coord"] = { 53.2, 53.1, AZJ_KAHET },
 				["questID"] = 83928,
 				["g"] = {
