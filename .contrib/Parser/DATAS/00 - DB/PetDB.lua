@@ -4101,7 +4101,6 @@ i(218246, 4452);	-- Remembered Spawn
 i(222969, 4474);	-- Anub'Rekyute
 i(221851, 4466);	-- Argos
 i(221764, 4519);	-- Burntram
-i(226104, 4602);	-- Claudius
 i(222979, 4545);	-- Clay Stonecharger
 i(221762, 4484);	-- Frenzied Bloodtick
 i(222970, 4490);	-- Fuzzy
@@ -4122,6 +4121,7 @@ i(222971, 4489);	-- Bouncer
 i(224101, 4586);	-- Brown Leafbug
 i(221820, 4537);	-- Chester
 i(223625, 4570);	-- Cinderwold Sizzlestinger
+i(226104, 4602);	-- Claudius
 i(224646, 4598);	-- Coppers
 i(224549, 4594);	-- Dalaran Sewer Turtle
 i(224766, 4596);	-- Faithful Dog

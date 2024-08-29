@@ -205,7 +205,6 @@ root(ROOTS.Unsorted, {
 				i(222969),	-- Anub'Rekyute (PET!)
 				i(221851),	-- Argos (PET!)
 				i(221764),	-- Burntram (PET!)
-				i(226104),	-- Claudius (PET!) [Trading Post?]
 				i(222979),	-- Clay Stonecharger (PET!)
 				i(221762),	-- Frenzied Bloodtick (PET!)
 				i(222970),	-- Fuzzy (PET!)
@@ -228,8 +227,6 @@ root(ROOTS.Unsorted, {
 			filter(MOUNTS, {
 				i(223570),	-- Ebonhide Ramolith (MOUNT!)
 				i(226506),	-- Hand of Reshkigaal (MOUNT!) [Trading Post?]
-				i(226041),	-- Keg Leg's Radiant Crocolisk (MOUNT!) [Trading Post?]
-				i(226040),	-- Plunderlord's Golden Crocolisk (MOUNT!) [Trading Post?]
 				i(226042),	-- Plunderlord's Midnight Crocolisk (MOUNT!) [Trading Post?]
 				i(226044),	-- Plunderlord's Weathered Crocolisk (MOUNT!) [Trading Post?]
 				i(223572),	-- Slatestone Ramolith (MOUNT!)
@@ -708,36 +705,10 @@ root(ROOTS.Unsorted, {
 				i(225752),	-- Dornogal Defender
 				i(225757),	-- Coreway Pickaxe
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
-				i(225974),	-- Swabbie's Cap \\ Teal Beanie
-				i(225975),	-- Alchemist's Bandolier
-				i(225976),	-- Fine Gloves of the Forest
-				i(225977),	-- Classic Camo Tabard
-				i(225978),	-- Fel-Glade Warglaive \\ Emerald Warglaive
-				i(225979),	-- Jade Blade of the Forbade
-				i(225980),	-- High-Grade Blade of the Forbade
-				i(225982),	-- Plunderlord's Radiant Sigil \\ Plunderlord's Radiant Gilded Sigil
-				i(225983),	-- Plunderlord's Radiant Hand Cannon
-				i(225990),	-- Plunderlord's Radiant Cutlass
-				i(225991),	-- Plunderlord's Radiant Rapier
-				i(225992),	-- Plunderlord's Radiant Neck-Severer
-				i(225993),	-- Cursed Copper Crossbow
-				i(225994),	-- Simple Copper Staff
 				i(225997),	-- Earthen Adventurer's Spaulders
 				i(226000),	-- Ensemble: Earthen Adventurer's Copper Drapery
-				i(226006),	-- Plunderlord's Radiant Drapery
-				i(226007),	-- Plunderlord's Radiant Muckscrapers
-				i(226008),	-- Plunderlord's Radiant Pilferers
-				i(226009),	-- Plunderlord's Radiant Tricorne of Admiralty
-				i(226010),	-- Plunderlord's Radiant Trousers
-				i(226011),	-- Plunderlord's Radiant Waistcoat
-				i(226012),	-- Plunderlord's Radiant Tasseled Spaulders \\ Plunderlord's Radiant Tassled Spaulders
-				i(226013),	-- Plunderlord's Radiant Cinch
-				i(226014),	-- Plunderlord's Radiant Cuffs
 				i(226016),	-- Darkened Tabard of the Arathi
-				i(226017),	-- Ensemble: Plunderlord's Radiant Finery
 				i(226019),	-- Darkened Arathi Shoulderguards
-				i(226105),	-- Emerald Scale Treads \\ Jade Scale Treads
-				i(226106),	-- Amber Scale Treads
 				i(226160),	-- Hillhelm Farmhand's Hoe
 				i(226161),	-- Hillhelm Farmhand's Watering Can
 				i(226363),	-- Earthen Backpack

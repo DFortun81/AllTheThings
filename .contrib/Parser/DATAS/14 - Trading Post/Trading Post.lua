@@ -2303,6 +2303,125 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
+		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.0.55846", "removed 11.0.2.99999" } }, {
+			n(MONTHLY_REWARD, {
+				i(226040),	-- Plunderlord's Golden Crocolisk (MOUNT!)
+			}),
+			filter(BATTLE_PETS, {
+				i(226104, {	-- Claudius (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 330}},
+				}),
+			}),
+			filter(MOUNTS, {
+				i(226041, {	-- Keg Leg's Radiant Crocolisk (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 600}},
+				}),
+			}),
+			filter(COSMETIC, {
+				i(225975, {	-- Alchemist's Bandolier
+					["cost"] = {{"c", TRADERS_TENDER, 260}},
+				}),
+				i(226106, {	-- Amber Scale Treads
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(210867, {	-- Blademaster's Lively Stones
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(225977, {	-- Classic Camo Tabard
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(225993, {	-- Cursed Copper Crossbow
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(212622, {	-- Dueler's Camo Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(190068, {	-- Emerald Drape
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(226105, {	-- Emerald Scale Treads
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				iensemble(226017, {	-- Ensemble: Plunderlord's Radiant Finery
+					["cost"] = {{"c", TRADERS_TENDER, 750}},
+				}),
+				iensemble(190540, {	-- Ensemble: Trapper's Munitions
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+				iensemble(206330, {	-- Ensemble: Vagabond's Lively Threads
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(206341, {	-- Ensemble: Wanderer's Lively Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(225978, {	-- Fel-Glade Warglaive
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(225976, {	-- Fine Gloves of the Forest
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(217376, {	-- Frenzied Hat of the Murky Waters
+					["cost"] = {{"c", TRADERS_TENDER, 175}},
+				}),
+				i(209053, {	-- Green Brewfest Bulwark
+					["cost"] = {{"c", TRADERS_TENDER, 300}},
+				}),
+				i(190854, {	-- Heavily Stitched Wallet
+					["cost"] = {{"c", TRADERS_TENDER, 400}},
+				}),
+				i(225980, {	-- High-Grade Blade of the Forbade
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(208423, {	-- Homebrewer's Sampling Crest
+					["cost"] = {{"c", TRADERS_TENDER, 500}},
+				}),
+				i(190133, {	-- Honed Bastard Sword
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(225979, {	-- Jade Blade of the Forbade
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190833, {	-- Krokul Guisarme
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(208786, {	-- Luxurious Niffen Hat
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(190892, {	-- Orange-Sleeved Shirt
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(225990, {	-- Plunderlord's Radiant Cutlass
+					["cost"] = {{"c", TRADERS_TENDER, 175}},
+				}),
+				i(225983, {	-- Plunderlord's Radiant Hand Cannon
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(225992, {	-- Plunderlord's Radiant Neck-Severer
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(225991, {	-- Plunderlord's Radiant Rapier
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(225982, {	-- Plunderlord's Radiant Sigil
+					["cost"] = {{"c", TRADERS_TENDER, 160}},
+				}),
+				i(190205, {	-- Sharpened Shank
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(225994, {	-- Simple Copper Staff
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				iensemble(210078, {	-- Sky-Captain's Formal Attire
+					["cost"] = {{"c", TRADERS_TENDER, 800}},
+				}),
+				i(225974, {	-- Swabbie's Cap
+					["cost"] = {{"c", TRADERS_TENDER, 80}},
+				}),
+				i(210854, {	-- Trader's Camo Sarong
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+			}),
+		})),
 	}),
 }));
 
@@ -2420,7 +2539,6 @@ root(ROOTS.NeverImplemented, {
 				n(ARMOR, {
 					i(190672),	-- Deathguard Acolyte's Cloak
 					i(189869),	-- Distinguished Warcloak
-					i(190068),	-- Emerald Drape
 				}),
 				n(SETS, {
 					i(190575),	-- Ensemble: Chains of the Honored Valarjar
@@ -2596,9 +2714,7 @@ root(ROOTS.NeverImplemented, {
 			expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				n(ARMOR, {
 					i(211069),	-- Azure Treads of the Kalu'ak
-					i(210867),	-- Blademaster's Lively Stones
 					i(210849),	-- Trader's Azure Sarong
-					i(210854),	-- Trader's Camo Sarong
 					i(210856),	-- Trader's Faded Sarong
 					i(210851),	-- Trader's Grassy Sarong
 					i(210848),	-- Trader's Midnight Sarong
@@ -2619,7 +2735,6 @@ root(ROOTS.NeverImplemented, {
 					i(190847),	-- Deathmantle Assassin's Barb
 					i(190090),	-- Dessicated Bouquet
 					i(212627),	-- Dueler's Azure Shoulder Cape
-					i(212622),	-- Dueler's Camo Shoulder Cape
 					i(212617),	-- Dueler's Crimson Shoulder Cape
 					i(212620),	-- Dueler's Faded Shoulder Cape
 					i(212625),	-- Dueler's Grassy Shoulder Cape

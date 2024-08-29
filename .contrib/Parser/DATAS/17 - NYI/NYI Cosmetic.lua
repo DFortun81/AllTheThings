@@ -167,7 +167,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(ARMOR, {
 				i(190672),	-- Deathguard Acolyte's Cloak
 				i(189869),	-- Distinguished Warcloak
-				i(190068),	-- Emerald Drape
 			}),
 			n(SETS, {
 				i(190575),	-- Ensemble: Chains of the Honored Valarjar
@@ -335,18 +334,11 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			}),
 		})),
 
-		-- 10.1.7
-		expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
-			i(209053),	-- Green Brewfest Bulwark
-		})),
-
 		-- 10.2.0
 		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 				------ Trading Post ------
 			n(ARMOR, {
 				i(211069),	-- Azure Treads of the Kalu'ak
-				i(210867),	-- Blademaster's Lively Stones
-				i(210854),	-- Trader's Camo Sarong
 				i(210856),	-- Trader's Faded Sarong
 				i(210851),	-- Trader's Grassy Sarong
 				i(210848),	-- Trader's Midnight Sarong
@@ -370,7 +362,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190692),	-- Champion's Battle Standard
 				i(190847),	-- Deathmantle Assassin's Barb
 				i(190090),	-- Dessicated Bouquet
-				i(212622),	-- Dueler's Camo Shoulder Cape
 				i(212620),	-- Dueler's Faded Shoulder Cape
 				i(212625),	-- Dueler's Grassy Shoulder Cape
 				i(212618),	-- Dueler's Plum Shoulder Cape
@@ -473,7 +464,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 			------ Single Pieces ------
 			i(217373),	-- Frenzied Hat of the Dark Depths
-			i(217376),	-- Frenzied Hat of the Murky Waters
 			i(217374),	-- Frenzied Hat of the Shallows
 		})),
 
