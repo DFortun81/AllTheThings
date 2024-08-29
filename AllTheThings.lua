@@ -10648,6 +10648,14 @@ customWindowUpdates.Random = function(self)
 			self.initialized = true;
 			local searchCache = {}
 
+			local function ClearCache()
+				wipe(searchCache)
+			end
+
+			-- when changing settings, we need the random cache to be cleared since it's determined based on search
+			-- results with specific settings
+			self:AddEventHandler("OnRecalculate_NewSettings", ClearCache)
+
 			local function SearchRecursively(group, field, temp, func)
 				if group.visible and not (group.saved or group.collected) then
 					if group.g then
@@ -10847,6 +10855,7 @@ customWindowUpdates.Random = function(self)
 				[875] = 1,	-- Zandalar
 				[1550] = 1,	-- The Shadowlands
 				[1978] = 1,	-- Dragon Isles
+				[2274] = 1,	-- Khaz Algar
 			};
 			function self.SelectZone(rootData)
 				if searchCache.randomzone then
