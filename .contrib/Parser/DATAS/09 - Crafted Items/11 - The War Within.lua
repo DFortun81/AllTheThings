@@ -1486,14 +1486,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		},{
 			-- Arathor's Spear
 			FirstCraft(79933, 435826);	-- Arathor's Spear
-			--FirstCraft(XXXXX, 435879);	-- Camouflaged Arathor's Spear
+			FirstCraft(79937, 435879);	-- Camouflaged Arathor's Spear
 			FirstCraft(79935, 435877);	-- Crystallized Arathor's Spear
 			FirstCraft(79936, 435878);	-- Irradiated Arathor's Spear
 			FirstCraft(79934, 435836);	-- Lush Arathor's Spear
 			FirstCraft(79938, 435880);	-- Sporefused Arathor's Spear
 			-- Blessing Blossom
 			FirstCraft(79927, 435823);	-- Blessing Blossom
-			--FirstCraft(XXXXX, 435872);	-- Camouflaged Blessing Blossom
+			FirstCraft(79931, 435872);	-- Camouflaged Blessing Blossom
 			FirstCraft(79929, 435870);	-- Crystallized Blessing Blossom
 			FirstCraft(79930, 435871);	-- Irradiated Blessing Blossom
 			FirstCraft(79928, 435834);	-- Lush Blessing Blossom
@@ -1501,7 +1501,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Luredrop
 			FirstCraft(79913, 435821);	-- Luredrop
 			FirstCraft(79916, 435858);	-- Altered Luredrop
-			--FirstCraft(XXXXX, 435860);	-- Camouflaged Luredrop
+			FirstCraft(79918, 435860);	-- Camouflaged Luredrop
 			FirstCraft(79915, 435857);	-- Crystallized Luredrop
 			FirstCraft(79917, 435859);	-- Irradiated Luredrop
 			FirstCraft(79914, 435829);	-- Lush Luredrop
@@ -1509,7 +1509,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Mycobloom
 			FirstCraft(79906, 435811);	-- Mycobloom
 			FirstCraft(79909, 435840);	-- Altered Mycobloom
-			--FirstCraft(XXXXX, 435851);	-- Camouflaged Mycobloom
+			FirstCraft(79911, 435851);	-- Camouflaged Mycobloom
 			FirstCraft(79908, 435838);	-- Crystallized Mycobloom
 			FirstCraft(79910, 435843);	-- Irradiated Mycobloom
 			FirstCraft(79907, 435812);	-- Lush Mycobloom
@@ -1517,7 +1517,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Orbinid
 			FirstCraft(79920, 435822);	-- Orbinid
 			FirstCraft(79923, 435864);	-- Altered Orbinid
-			--FirstCraft(XXXXX, 435866);	-- Camouflaged Orbinid
+			FirstCraft(79925, 435866);	-- Camouflaged Orbinid
 			FirstCraft(79922, 435862);	-- Crystallized Orbinid
 			FirstCraft(79924, 435865);	-- Irradiated Orbinid
 			FirstCraft(79921, 435830);	-- Lush Orbinid
@@ -2344,9 +2344,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			["requireSkill"] = MINING,
 		},{
 			-- Aqirite
-			--FirstCraft(XXXXX, 439707);	-- Aqirite
+			--FirstCraft(XXXXX, 439707);	-- Aqirite //??how do we not have this yet?
 			FirstCraft(80357, 439713);	-- Aqirite Seam
-			--FirstCraft(XXXXX, 439725);	-- Camouflaged Aqirite
+			FirstCraft(80369, 439725);	-- Camouflaged Aqirite
 			FirstCraft(80360, 439716);	-- Crystallized Aqirite
 			FirstCraft(80366, 439722);	-- EZ-Mine Aqirite
 			FirstCraft(80354, 439710);	-- Rich Aqirite
@@ -2355,7 +2355,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Bismuth
 			FirstCraft(80350, 439705);	-- Bismuth
 			FirstCraft(80356, 439712);	-- Bismuth Seam
-			--FirstCraft(XXXXX, 439724);	-- Camouflaged Bismuth
+			FirstCraft(80368, 439724);	-- Camouflaged Bismuth
 			FirstCraft(80359, 439715);	-- Crystallized Bismuth
 			FirstCraft(80365, 439721);	-- EZ-Mine Bismuth
 			FirstCraft(80353, 439709);	-- Rich Bismuth
@@ -2364,7 +2364,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Ironclaw
 			FirstCraft(80352, 439708);	-- Ironclaw
 			FirstCraft(80358, 439714);	-- Ironclaw Seam
-			--FirstCraft(XXXXX, 439726);	-- Camouflaged Ironclaw
+			FirstCraft(80370, 439726);	-- Camouflaged Ironclaw
 			FirstCraft(80361, 439717);	-- Crystallized Ironclaw
 			FirstCraft(80367, 439723);	-- EZ-Mine Ironclaw
 			FirstCraft(80355, 439711);	-- Rich Ironclaw
