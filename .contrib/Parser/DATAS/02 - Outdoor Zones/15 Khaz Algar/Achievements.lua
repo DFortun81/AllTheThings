@@ -244,7 +244,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				i(223267),	-- Swarmite Skyhunter (MOUNT!)
 			}
 		}),
-		ach(40762),		-- Khaz Algar Lore Hunter (automated)
+		ach(40762, {	-- Khaz Algar Lore Hunter (automated)
+			-- TODO: Blizzard has temporarily disabled this achievement and said it would be readded in a "future patch". That means we likely can't expect a hotfix any time soon.
+			-- It no longer is accessible via the Blizzard UI. It still loads ingame with /att a:40762 as they aren't outright removing it. It's just in the naughty corner :)
+			-- I've timelined it out so it doesn't show to players and they don't waste their time trying to click the objects if they have alerts on for them.
+			-- Please leave the associated objects in place so we can easily re-enable it when Blizzard does.
+			-- Also added a description in case someone goes digging for it in debug mode!
+			["description"] = "This achievement is currently disabled by Blizzard and will be readded in a future patch.",
+			["timeline"] = { ADDED_11_0_2, "removed 11.0.2.56313" }
+		}),
 		petbattle(ach(40194, {	-- Khaz Algar Safari (automated)
 			i(221821),	-- Waxwick (PET!)
 		})),
