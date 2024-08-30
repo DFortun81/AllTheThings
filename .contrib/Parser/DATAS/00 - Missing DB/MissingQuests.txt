@@ -2138,7 +2138,6 @@ q(83075),	-- PTR:Tracking Quest
 q(83076),	-- PTR:Tracking Quest
 q(83077),	-- PTR:Tracking Quest
 10.2.7.54847
-q(82027),	--
 q(82031),	--
 11.0.0.54311
 q(76243),	--

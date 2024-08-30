@@ -2164,7 +2164,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 11.0.0.55846", "removed 11.0.2.99999" } }, {
+		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 11.0.0.55846", "removed 11.0.2.56313" } }, {
 			n(MONTHLY_REWARD, {
 				i(223409),	-- The Coward's Violet Target
 			}),
@@ -2303,7 +2303,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.0.55846", "removed 11.0.2.99999" } }, {
+		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.2.56313", "removed 11.0.2.99999" } }, {
 			n(MONTHLY_REWARD, {
 				i(226040),	-- Plunderlord's Golden Crocolisk (MOUNT!)
 			}),
@@ -2447,7 +2447,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(72070),	-- Ensemble: Glorious Dragonrider's Mail
 		q(72080),	-- Ensemble: Corrupted Runelord's Regalia
 		q(72081),	-- Ensemble: Val'sharah Protector's Battleplate
-		q(72082),	-- Ensemble: Sylvan Stalker's Leathers (same questID as Ensemble: Waveborne Diplomat's Regalia), good job Blizzard.
+		q(72082),	-- Ensemble: Sylvan Stalker's Leathers
 		q(72086),	-- Ensemble: Tidecaller's Chainmail
 		q(72087),	-- Ensemble: Void-Bound Raiment
 		q(72088),	-- Ensemble: Void-Bound Battlegear

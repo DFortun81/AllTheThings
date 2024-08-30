@@ -8295,7 +8295,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(66925),	-- [DNT] Boar-B-Q
 			q(72384),	-- Valdrakken Tour
 			q(72085),	--
-			q(72092),	--
 			q(72829),	--
 			q(72830),	--
 			q(74898),	--
@@ -8368,7 +8367,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75533),	--
 			q(74672),	--
 			q(74677),	--
-			q(75449),	--
 		})),
 
 		-- 10.1.0
@@ -8620,7 +8618,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(76455),	--
 			q(76511),	--
 			q(76553),	--
-			q(77569),	--
 			q(76210),	--
 			q(76211),	--
 			q(76408),	--
@@ -8719,7 +8716,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(78087),	--
 			q(78209),	--
 			q(78217),	--
-			q(78218),	--
 			q(78247),	--
 			q(78252),	--
 			q(78253),	--
@@ -8754,7 +8750,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(78906),	--
 			q(78928),	--
 			q(78955),	--
-			q(77952),	--
 			q(77837),	--
 			q(78048),	--
 			q(76383),	--

@@ -9892,6 +9892,20 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(43221),	-- Primal Gladiator's Scaled Armor (Paladin - Horde)
 		q(43222),	-- Primal Gladiator's Silk Armor (Mage - Alliance)
 		q(43223),	-- Primal Gladiator's Silk Armor (Mage - Horde)
+
+		-- PvP Arsenals
+		q(43235),	-- Arsenal: Primal Combatant's Weapons (Alliance)
+		q(43236),	-- Arsenal: Primal Combatant's Weapons (Horde)
+		q(43224),	-- Arsenal: Primal Gladiator's Weapons (Alliance)
+		q(43225),	-- Arsenal: Primal Gladiator's Weapons (Horde)
+		q(43231),	-- Arsenal: Warmongering Combatant's Weapons (Alliance)
+		q(43232),	-- Arsenal: Warmongering Combatant's Weapons (Horde)
+		q(43229),	-- Arsenal: Warmongering Gladiator's Weapons (Alliance)
+		q(43230),	-- Arsenal: Warmongering Gladiator's Weapons (Horde)
+		q(43233),	-- Arsenal: Wild Combatant's Weapons (Alliance)
+		q(43234),	-- Arsenal: Wild Combatant's Weapons (Horde)
+		q(43226),	-- Arsenal: Wild Gladiator's Weapons (Alliance)
+		q(43227),	-- Arsenal: Wild Gladiator's Weapons (Horde)
 	}),
 });
 -- #endif
