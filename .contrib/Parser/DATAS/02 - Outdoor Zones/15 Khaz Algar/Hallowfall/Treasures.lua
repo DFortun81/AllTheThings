@@ -104,7 +104,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}
 			}),
 			o(453283, {	-- Smuggler's Treasure
-				["description"] = "Fly down to dead body and loot key",
+				["description"] = "Fly down to the Dead Arathi body and loot key.",
 				["coord"] = { 55.1, 51.9, HALLOWFALL },
 				["questID"] = 83273,
 				["g"] = {
