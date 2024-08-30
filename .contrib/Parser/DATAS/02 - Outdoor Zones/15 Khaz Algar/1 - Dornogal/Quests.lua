@@ -227,60 +227,59 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 214916 },	-- Merrix <Councilward>
 				["coord"] = { 31.8, 61.0, DORNOGAL },
 			}),
-
-			n(QUESTS, sharedData({
-				["isWeekly"] = true,
-			}, {
-				q(83465, {	-- Ara-Kara, City of Echoes
-					["provider"] = { "n", 226623 },	-- Biergoth
-					["coord"] = { 46.6, 56.8, DORNOGAL },
-				}),
-				q(83436, {	-- Cinderbrew Meadery
-					["provider"] = { "n", 226623 },	-- Biergoth
-					["coord"] = { 46.6, 56.8, DORNOGAL },
-				}),
-				q(83469, {	-- City of Threads
-					["provider"] = { "n", 226623 },	-- Biergoth
-					["coord"] = { 46.6, 56.8, DORNOGAL },
-				}),
-				q(83443, {	-- Darkflame Cleft
-					["provider"] = { "n", 226623 },	-- Biergoth
-					["coord"] = { 46.6, 56.8, DORNOGAL },
-				}),
-				q(83458, {	-- Priory of the Sacred Flame
-					["provider"] = { "n", 226623 },	-- Biergoth
-					["coord"] = { 46.6, 56.8, DORNOGAL },
-				}),
-				q(83459, {	-- The Dawnbreaker
-					["provider"] = { "n", 226623 },	-- Biergoth
-					["coord"] = { 46.6, 56.8, DORNOGAL },
-				}),
-				q(83432, {	-- The Rookery
-					["provider"] = { "n", 226623 },	-- Biergoth
-					["coord"] = { 46.6, 56.8, DORNOGAL },
-				}),
-				q(83457, {	-- The Stonevault
-					["provider"] = { "n", 226623 },	-- Biergoth
-					["coord"] = { 46.6, 56.8, DORNOGAL },
-				}),
-				--
-				q(82678, {	-- Archives: The First Disk
-					["provider"] = { "n", 226511 },	-- High Speaker Brinthe
-					["coord"] = { 46.3, 49.3, DORNOGAL },
-					["g"] = {
-						i(225741),	-- Titan Disc Fragment (QI!)
-					},
-				}),
-				q(82679, {	-- Archives: Seeking History
-					--["sourceQuests"] = { 82678 },	-- Archives: The First Disk (TODO: or just rng weekly?)
-					["provider"] = { "n", 226511 },	-- High Speaker Brinthe
-					["coord"] = { 46.3, 49.3, DORNOGAL },
-					["g"] = {
-						i(225741),	-- Titan Disc Fragment (QI!)
-					},
-				}),
-			})),
 		}),
+		n(QUESTS, sharedData({
+			["isWeekly"] = true,
+		}, {
+			q(83465, {	-- Ara-Kara, City of Echoes
+				["provider"] = { "n", 226623 },	-- Biergoth
+				["coord"] = { 46.6, 56.8, DORNOGAL },
+			}),
+			q(83436, {	-- Cinderbrew Meadery
+				["provider"] = { "n", 226623 },	-- Biergoth
+				["coord"] = { 46.6, 56.8, DORNOGAL },
+			}),
+			q(83469, {	-- City of Threads
+				["provider"] = { "n", 226623 },	-- Biergoth
+				["coord"] = { 46.6, 56.8, DORNOGAL },
+			}),
+			q(83443, {	-- Darkflame Cleft
+				["provider"] = { "n", 226623 },	-- Biergoth
+				["coord"] = { 46.6, 56.8, DORNOGAL },
+			}),
+			q(83458, {	-- Priory of the Sacred Flame
+				["provider"] = { "n", 226623 },	-- Biergoth
+				["coord"] = { 46.6, 56.8, DORNOGAL },
+			}),
+			q(83459, {	-- The Dawnbreaker
+				["provider"] = { "n", 226623 },	-- Biergoth
+				["coord"] = { 46.6, 56.8, DORNOGAL },
+			}),
+			q(83432, {	-- The Rookery
+				["provider"] = { "n", 226623 },	-- Biergoth
+				["coord"] = { 46.6, 56.8, DORNOGAL },
+			}),
+			q(83457, {	-- The Stonevault
+				["provider"] = { "n", 226623 },	-- Biergoth
+				["coord"] = { 46.6, 56.8, DORNOGAL },
+			}),
+			--
+			q(82678, {	-- Archives: The First Disk
+				["provider"] = { "n", 226511 },	-- High Speaker Brinthe
+				["coord"] = { 46.3, 49.3, DORNOGAL },
+				["g"] = {
+					i(225741),	-- Titan Disc Fragment (QI!)
+				},
+			}),
+			q(82679, {	-- Archives: Seeking History
+				--["sourceQuests"] = { 82678 },	-- Archives: The First Disk (TODO: or just rng weekly?)
+				["provider"] = { "n", 226511 },	-- High Speaker Brinthe
+				["coord"] = { 46.3, 49.3, DORNOGAL },
+				["g"] = {
+					i(225741),	-- Titan Disc Fragment (QI!)
+				},
+			}),
+		})),
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
