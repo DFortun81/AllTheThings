@@ -2366,13 +2366,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80367, 439723);	-- EZ-Mine Ironclaw
 			FirstCraft(80355, 439711);	-- Rich Ironclaw
 			FirstCraft(80373, 439729);	-- Webbed Ironclaw
-			--FirstCraft(XXXXX, 439720);	-- Weeping Ironclaw
-			-- Overload
-			--FirstCraft(XXXXX, 439742);	-- Overload Crystallized
-			--FirstCraft(XXXXX, 423394);	-- Overload Empowered Deposit
-			--FirstCraft(XXXXX, 439744);	-- Overload Explosives
-			--FirstCraft(XXXXX, 439747);	-- Overload Webbed Deposits
-			--FirstCraft(XXXXX, 439743);	-- Overload Weeping
+			FirstCraft(80364, 439720);	-- Weeping Ironclaw
 		})),
 	}),
 	prof(SKINNING, {
