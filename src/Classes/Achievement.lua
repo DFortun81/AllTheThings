@@ -12,13 +12,12 @@ local GetItemInfo = app.WOWAPI.GetItemInfo
 
 -- Module
 local DelayedCallback = app.CallbackHandlers.DelayedCallback;
-local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
-local SearchForObject
-	= app.SearchForObject
+local SearchForObject = app.SearchForObject
 
 -- App
 
+local CollectionCache
 local CollectionCacheFunctions = {
 	MaxAchievementID = function()
 		local maxid, achID = 0, 0;
@@ -26,13 +25,28 @@ local CollectionCacheFunctions = {
 			achID = tonumber(id) or id
 			if achID > maxid then maxid = achID; end
 		end
-		return maxid
+		 -- go beyond ATT max known just in case we haven't sourced the highest achievementID
+		return maxid + 100
+	end,
+	RealAchievementIDs = function()
+		local achs = {}
+		local maxid = CollectionCache.MaxAchievementID
+		local exists
+		for id=1,maxid do
+			exists = GetAchievementInfo(id)
+			if exists then
+				achs[#achs + 1] = id
+			end
+		end
+		return achs
 	end
 }
-local CollectionCache = setmetatable({}, { __index = function(t, key)
+CollectionCache = setmetatable({}, { __index = function(t, key)
 	local func = CollectionCacheFunctions[key]
 	if func then
+		-- app.PrintDebug("Achievement.CollectionCache",key)
 		local val = func()
+		-- app.PrintDebugPrior("Achievement.CollectionCache.Done",val,val and type(val) == "table" and #val)
 		t[key] = val
 		return val
 	end
@@ -134,9 +148,9 @@ do
 
 	app.AddEventHandler("OnRefreshCollections", function()
 		local state
-		local maxid = CollectionCache.MaxAchievementID
+		-- app.PrintDebug("OnRefreshCollections.Achievement")
 		local saved, none = {}, {}
-		for id=1,maxid do
+		for _,id in ipairs(CollectionCache.RealAchievementIDs) do
 			state = select(13, GetAchievementInfo(id))
 			if state then
 				saved[id] = true
@@ -149,6 +163,7 @@ do
 		app.SetBatchCached(CACHE, none)
 		-- Account Cache (removals handled by Sync)
 		app.SetBatchAccountCached(CACHE, saved, 1)
+		-- app.PrintDebugPrior("OnRefreshCollections.Achievement")
 	end);
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 		if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
@@ -156,8 +171,12 @@ do
 	end);
 	app.AddEventRegistration("ACHIEVEMENT_EARNED", function(id)
 		local state = select(13, GetAchievementInfo(tonumber(id)))
-		app.SetCached(CACHE, id, state)
-		app.UpdateRawID(KEY, id);
+		app.print("ACHIEVEMENT_EARNED (Screenshot this chat for @Runawaynow on Discord if you see this!)",id,state)
+		if state then
+			app.SetCached(CACHE, id, 1)
+			app.SetAccountCached(CACHE, id, 1)
+			app.UpdateRawID(KEY, id);
+		end
 	end);
 end
 
