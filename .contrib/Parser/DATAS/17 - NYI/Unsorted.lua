@@ -74,7 +74,6 @@ root(ROOTS.Unsorted, {
 				i(228764),	-- Classic Sunny Tabard
 			}),
 			--
-			i(228984),	-- Unbreakable Iron Idol
 			i(229000),	-- Machine-Warden's Cog
 			i(229005),	-- Cache of Earthen Treasures
 			i(229006),	-- Cache of Earthen Treasures
@@ -1185,7 +1184,6 @@ root(ROOTS.Unsorted, {
 				i(220491),	-- Wicked Blade Shard
 				i(220770),	-- Void-Scarred Stormhammer
 				i(220776),	-- Glorious Cluster of Gilded Harbinger Crests \\ Glorious Cluster of Gilded Harbinger Crests (TODO: Fix Icon)
-				i(217965),	-- Repair Kit
 				i(217970),	-- Dormant Runestone
 				i(217984),	-- Miner's Rune of Decyphering
 				i(217986),	-- "Delicious" Egg Parts
@@ -1398,7 +1396,7 @@ root(ROOTS.Unsorted, {
 				i(224180),	-- Worn Journal
 				i(224182),	-- Webbed Ingots
 				i(224252),	-- Calcified Journal
-				
+
 				i(224460),	-- The Lost Diary
 				i(224463),	-- Lily's Locket
 				i(224466),	-- Wilber The Chicken \\ The Chicken
@@ -1521,7 +1519,7 @@ root(ROOTS.Unsorted, {
 			n(RARES, {
 				i(221066),	-- Template - Accessory - Finger
 				i(221093),	-- Deeply Corrupted Coil
-				i(221505),	-- [DNT] Rare Cloth - Robe	
+				i(221505),	-- [DNT] Rare Cloth - Robe
 				i(223944),	-- [PH] Infested Fungal Wristwraps
 				i(223945),	-- [PH] Perchfather's Cuffs
 				i(223946),	-- [PH] Storm Bindings

@@ -179,10 +179,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(84519, {	-- Ancient Curiosity: Combat
 			["provider"] = { "i", 228560 },	-- Ancient Curio (TODO: providers ids could be swapped) (TODO: MIGHT CHANGED ITEMID)
 			["g"] = {
-				i(228580),	-- Brute Force Idol
-				i(225897, {	-- Brute Force Idol [Rank 1]
-					["bonusID"] = 11235
-				}),
+				-- I don't think this is the curio everyone gets from this quest... is it RNG or only this one
+				-- that wowhead claims?
+				-- i(228580),	-- Brute Force Idol
+				-- i(225897, {	-- Brute Force Idol [Rank 1]
+				-- 	["bonusID"] = 11235
+				-- }),
+				i(228984),	-- Unbreakable Iron Idol
 			},
 		}),
 		q(84520, {	-- Ancient Curiosity: Utility
@@ -210,6 +213,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(77727),	-- Level 10
 		q(77728),	-- Level 11
 		q(77729),	-- Level 12
+		q(77730),	-- Level 13
+		q(77731),	-- Level 14
+		q(77732),	-- Level 15
 	}),
 	n(QUESTS, sharedData({
 		["provider"] = { "n", 206017 },	-- Brann Bronzebeard
@@ -473,10 +479,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["coord"] = { 40.0, 36.7, NIGHTFALL_SANCTUM },
 					["questID"] = 83701,
 				}),
-				--[[o(??????, {	-- Sturdy Chest
-					["coord"] = { 70.6, 44.6, NIGHTFALL_SANCTUM },
+				o(455515, {	-- Sturdy Chest
+					["description"] = "On mushroom",
+					["coord"] = { 70.9, 44.4, NIGHTFALL_SANCTUM },
 					["questID"] = 83670,
-				}),]]--
+				}),
 			}),
 		},
 	}),
@@ -575,10 +582,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			filter(BATTLE_PETS, {
 				i(222971),	-- Bouncer (PET!)
 			}),
+			filter(MISC, {
+				i(217965),	-- Repair Kit
+			}),
 			n(QUESTS, {
 				q(83766, {	-- Delver's Call: Dread Pit
-					["provider"] = { "n", 227477 },	-- Brann Bronzebeard
-					["coord"] = { 47.1, 31.9, THE_RINGING_DEEPS },
+					["provider"] = { "o", 455685 },	-- Delver's Call: Dread Pit
+					["coord"] = { 58.3, 64.2, THE_RINGING_DEEPS },
 				}),
 			}),
 			n(TREASURES, {
@@ -994,7 +1004,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					i(225899, {	-- Unbreakable Iron Idol [Rank 1]
 						["bonusID"] = 11245,
 					}),
-					-- i(228984),	-- Unbreakable Iron Idol [Rank 1] -- Eremeir on Discord
 				}),
 				n(RANK_TWO, {
 					i(225903, {	-- Amorphous Relic [Rank 2]
@@ -1533,7 +1542,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		-- Achievements
 		q(82943),	-- Delve Deep (40460) completed
 		-- Unknown
-		--q(77731),	-- After the last boss - Earthcrawl Mines (Fiery Grounds story, Tier 1)
-		--q(77732),	-- After the last boss - The Waterworks (Stomping Some Sense story, Tier 1)
 	}),
 })));
