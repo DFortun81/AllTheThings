@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 50.5, 53.5, THE_RINGING_DEEPS },
 				["questID"] = 80485,
 				["cost"] = {
-					{"i", 223880, 1},	-- Forgotten Key
+					{"i", 217960, 1},	-- Forgotten Key
 				},
 				["g"] = {
 					i(224783),	-- Sovereign's Finery Chest (TOY!)
