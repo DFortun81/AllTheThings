@@ -11,7 +11,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			ach(20594, {	-- Flamegard's Hope
 				["description"] = "Use healing spells, bandages or Algari Healing Potion to heal 20 patients.",
 				["coord"] = { 43.2, 51.8, HALLOWFALL },
-			}),		
+			}),
 			ach(20598),		-- Hallowfall (automated)
 			ach(40704, {	-- Hallowfall Glyph Hunter
 				-- Meta Achievement
@@ -69,7 +69,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			ach(40844),		-- Sojourner of Hallowfall (automated)
 			ach(40625, {	-- The Missing Lynx
-				-- TODO: Braghe please add coords for all the kitties :)
 				crit(68975, {	-- Magpie
 					["coord"] = { 60.4, 60.2, HALLOWFALL },
 				}),
