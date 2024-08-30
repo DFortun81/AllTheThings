@@ -171,7 +171,6 @@ do
 	end);
 	app.AddEventRegistration("ACHIEVEMENT_EARNED", function(id)
 		local state = select(13, GetAchievementInfo(tonumber(id)))
-		app.print("ACHIEVEMENT_EARNED (Screenshot this chat for @Runawaynow on Discord if you see this!)",id,state)
 		if state then
 			app.SetCached(CACHE, id, 1)
 			app.SetAccountCached(CACHE, id, 1)
