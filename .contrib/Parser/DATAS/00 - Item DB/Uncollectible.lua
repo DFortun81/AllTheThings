@@ -1887,6 +1887,7 @@ i(228487);	-- Freshly Fallen Sticks
 i(225677);	-- Gleaming Chaos
 i(225811);	-- Gleaming Deep-Pearl
 i(225831);	-- Glittering Rock
+i(221757);	-- Gloomfathom Hide
 i(220259);	-- Gob of Mucus
 i(220509);	-- Gossamer Web
 i(225790);	-- Half-Painted Pewter Spider

@@ -271,7 +271,6 @@ root(ROOTS.Unsorted, {
 				i(224416),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
 			}),
 			n(PROFESSIONS, {
-				i(221757),	-- Gloomfathom Hide
 				i(221763),	-- Viridian Charmcap
 				i(211494),	-- Spark of Beginnings
 
