@@ -77,13 +77,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(229085),	-- Aevery's Spare Bracers
 					i(229082),	-- Aevery's Spare Chausses
 					i(229081),	-- Aevery's Spare Cowl
+					i(216528, {
+						["crs"] = { 218024, } -- Drowned Arathi
+					}),
 					i(229155),	-- Lamplighter's Greataxe
 					i(229061),	-- Nisa's Spare Belt
-				}),
-				prof(FISHING, {
-					i(221819, {	-- Shadowbog Hopper (PET!)
-						["description"] = "Stillstone Pond",
-					}),
 				}),
 				n(QUESTS, {
 					-- TODO: Expand this /maybe SpeciaL?
@@ -94,33 +92,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					q(79225, {	-- The Lost Flame
 						["provider"] = { "i", 212333 },	-- Expedition Tinderbox
 						["coord"] = { 61.1, 9.6, HALLOWFALL },
-						["g"] = {
-							i(212333),	-- Expedition Tinderbox (QS!/QI!)
-						},
 					}),
 					q(79234, {	-- A Small Bag of Seeds
 						["provider"] = { "i", 212339 },	-- A Small Bag of Seeds
-						["g"] = {
-							i(212339),	-- A Small Bag of Seeds (QS!/QI!)
-						},
+					}),
+					q(82963, {	-- Hillhelm Family: Lil Piggy'
+						["provider"] = { "i", 224457 },	-- Lil Piggy
 					}),
 					q(82967, {	-- Hillhelm Family: The Ear
 						["provider"] = { "i", 224462 },	-- The Ear
-						["g"] = {
-							i(224462),	-- The Ear (QS!/QI!)
-						},
 					}),
 					q(82966, {	-- Hillhelm Family: Unusual Potato
 						["provider"] = { "i", 224465 },	-- Unusual Potato
-						["g"] = {
-							i(224465),	-- Unusual Potato (QS!/QI!)
-						},
 					}),
 					q(78589, {	-- Invasive Cuisine
 						["provider"] = { "i", 211861 },	-- Umbral Eggplant
-						["g"] = {
-							i(211861),	-- Umbral Eggplant (QS!/QI!)
-						},
 					}),
 				}),
 				n(QUESTS, sharedData({ ["isWeekly"] = true }, {
@@ -381,9 +367,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229082),	-- Aevery's Spare Chausses
 						i(229081),	-- Aevery's Spare Cowl
 						i(229080),	-- Aevery's Spare Gauntlets
+						i(229073),	-- Azra's Spare Trousers
 						i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
 						i(229118),	-- Flamestonge's Belt
 						i(229092),	-- Kyros's Spare Girdle
+						i(229145),	-- Lamplighter Elite's Shield
 						i(229155),	-- Lamplighter's Greataxe
 						i(229061),	-- Nisa's Spare Belt
 						i(229100),	-- The Cleansing Flame's Leggings
@@ -431,7 +419,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					o(423959, {	-- Faded Supply Chest
 						["coord"] = { 61.8, 17.5, HALLOWFALL },
+						["description"] = "The key drops rarely from Drowned Arathi nearby.",
 						["questID"] = 79964,
+						["cost"] = { { "i", 216528, 1 }, },	-- 1x Faded Supply Chest Key
 					}),
 					o(435008, {	-- Farmhand Stash
 						["description"] = "Requires weekly quest with controlling Harvestbot Remy to spawn.",
@@ -440,7 +430,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						--["isWeekly"] = true,
 					}),
 					o(441795, {	-- Hallowfall Sparkfly
-						["description"] = "Requires level 80",
+						["description"] = "Requires level 80. Use a light source item then walk along the river near Stillstone Pond. With time Sparkbugs will appear next to you and randomly may be interactable, granting the pet.",
 						["coord"] = { 66.8, 25.3, HALLOWFALL },
 						--["questID"] = ,
 						["provider"] = {"i", 218107},	-- Sparkbug Jar
@@ -452,6 +442,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 62.0, 31.7, HALLOWFALL },
 						["questID"] = 82996,
 						["provider"] = {"i", 218107},	-- Sparkbug Jar
+					}),
+					o(452005, {	-- Lil Piggy
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure somewhere in The Whirring Field.",
+						["coord"] = { 64.7, 26.5, HALLOWFALL },
+						--["questID"] = 82996,
+						["g"] = {
+							i(224457),	-- Lil Piggy (QS!/QI!)
+						},
 					}),
 					o(451993, {	-- Nerubian Device
 						["coord"] = { 62.3, 31.7, HALLOWFALL },
@@ -467,6 +465,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(224462),	-- The Ear
 							i(211861),	-- Umbral Eggplant
 							i(224465),	-- Unusual Potato
+							i(221819, {	-- Shadowbog Hopper (PET!)
+								["description"] = "Seems to only come from vines in Stillstone Pond",
+							}),
 						},
 					}),
 				}),
@@ -579,7 +580,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 65.8, 24.4, HALLOWFALL },
 						["g"] = {
 							i(218107, {	-- Sparkbug Jar
-								["description"] = "Use this then walk along the river near Stillstone Pond. With time Sparkbugs will appear next to you and randomly may be interactable, granting the pet.",
 								["cost"] = {{"i", RADIANT_REMNANT, 2}},
 							}),
 							i(218106, {	-- Stillstone Frog Trap

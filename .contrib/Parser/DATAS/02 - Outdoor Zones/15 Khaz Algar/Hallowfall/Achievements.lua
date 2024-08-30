@@ -89,15 +89,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 69.3, 43.6, HALLOWFALL },
 				}),
 				crit(69003, {	-- Nightclaw
-				    ["description"] = "Available when Lesser Keyflame is active",
+					["description"] = "Available when Lesser Keyflame is active",
 					["coord"] = { 63.2, 29.3, HALLOWFALL },
 				}),
 				crit(69004, {	-- Purrlock
-				    ["description"] = "Available when Light's Blooming Keyflame is active",
+					["description"] = "Available when Light's Blooming Keyflame is active",
 					["coord"] = { 63.8, 29.6, HALLOWFALL },
 				}),
 				crit(69005, {	-- Shadowpouncer
-				    ["description"] = "Available when Light's Blooming Keyflame is active",
+					["description"] = "Available when Light's Blooming Keyflame is active",
 					["coord"] = { 63.3, 28.1, HALLOWFALL },
 				}),
 				crit(69006, {	-- Miral Murder-Mittens

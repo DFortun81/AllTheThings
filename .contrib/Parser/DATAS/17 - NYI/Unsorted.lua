@@ -91,7 +91,6 @@ root(ROOTS.Unsorted, {
 			i(229070),	-- Azra's Spare Striders
 			i(229071),	-- Azra's Spare Gloves
 			i(229072),	-- Azra's Spare Mask
-			i(229073),	-- Azra's Spare Trousers
 			i(229074),	-- Azra's Spare Cord
 			i(229075),	-- Azra's Spare Bracers
 			i(229076),	-- Azra's Spare Chestguard
@@ -151,7 +150,6 @@ root(ROOTS.Unsorted, {
 			i(229142),	-- Lamplighter Elite's Staff
 			i(229143),	-- Lamplighter Elite's Spellstaff
 			i(229144),	-- Lamplighter Elite's Lightstone
-			i(229145),	-- Lamplighter Elite's Shield
 			i(229146),	-- Lamplighter Elite's Glaive
 			i(229147),	-- Lamplighter's Polearm
 			i(229148),	-- Lamplighter's Staff
@@ -1126,7 +1124,6 @@ root(ROOTS.Unsorted, {
 				i(215360),	-- Personalized Setting
 				i(215448),	-- Darkstem Stew \\ Darkstem Brew
 				i(215466),	-- Sanctified Supplies
-				i(216528),	-- Faded Supply Chest Key
 				i(216603),	-- Boots of the Light
 				i(216982),	-- Spy List
 				i(217040),	-- Kobold Earwax
@@ -1402,7 +1399,7 @@ root(ROOTS.Unsorted, {
 				i(224180),	-- Worn Journal
 				i(224182),	-- Webbed Ingots
 				i(224252),	-- Calcified Journal
-				i(224457),	-- Lil Piggy
+				
 				i(224460),	-- The Lost Diary
 				i(224463),	-- Lily's Locket
 				i(224466),	-- Wilber The Chicken \\ The Chicken

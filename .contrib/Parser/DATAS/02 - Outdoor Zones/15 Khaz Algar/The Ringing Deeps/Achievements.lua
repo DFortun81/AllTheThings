@@ -7,6 +7,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			ach(40837),		-- Adventurer of The Ringing Deeps (automated)
 			ach(40825),		-- Explore The Ringing Deeps (automated)
 			ach(40630),		-- For the Collective
+			ach(40614),		-- Gobblin' with Glublurp
 			ach(40628),		-- Notable Machines (automated)
 			ach(40473),		-- Not So Quick Fix (automated)
 			ach(40731),		-- Panhandled

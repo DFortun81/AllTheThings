@@ -1187,7 +1187,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["g"] = {
 				currency(TWW_ALCHEMY_KNOWLEDGE),
 			},
-		 }, {
+		}, {
 			i(228773),	-- Algari Alchemist's Notebook
 			q(83725, {	-- TWW Inscription Order: Alchemy
 				["name"] = "TWW Inscription Order: Alchemy",
