@@ -87,6 +87,7 @@ local BlockedDisplayID = {
 	[21072] = 0,	-- empty blue thing
 	[23767] = 0,	-- empty blue thing
 	[27823] = 0,	-- empty blue thing
+	[28016] = 0,	-- nothing
 	[52318] = 0,	-- generic bunny
 	[56187] = 0,	-- generic bunny
 	[64062] = 0,	-- generic bunny
@@ -98,7 +99,7 @@ local AllowedDisplayID = setmetatable({}, {
 		if key and BlockedDisplayID[key] then
 			return;
 		end
-		-- app.PrintDebug("DisplayID",key)
+		--app.PrintDebug("DisplayID",key)
 		return key;
 	end
 });
