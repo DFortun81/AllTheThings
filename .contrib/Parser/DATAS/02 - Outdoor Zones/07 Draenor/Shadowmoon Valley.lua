@@ -1521,9 +1521,6 @@ root(ROOTS.Zones, {
 					o(224756, {	-- Alchemist's Satchel
 						["questID"] = 35581,
 						["coord"] = { 54.9, 45.0, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
-							i(109124),	-- Frostweed
-						},
 					}),
 					o(232596, {	-- Ancestral Greataxe
 						["questID"] = 35584,
@@ -1619,9 +1616,6 @@ root(ROOTS.Zones, {
 					o(233241, {	-- Glowing Cave Mushroom
 						["questID"] = 35798,
 						["coord"] = { 48.7, 47.5, DRAENOR_SHADOWMOON_VALLEY },
-						["g"] = {
-							i(109127),	-- Starflower
-						},
 					}),
 					o(232588, {	-- Greka's Urn
 						["questID"] = 33614,
