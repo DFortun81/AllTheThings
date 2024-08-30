@@ -1851,6 +1851,7 @@ i(225815);	-- Chipped Opal Signet Ring
 i(217168);	-- Chocolate Coins
 i(217169);	-- Cloak of Beards
 i(220256);	-- Clump of Rotting Detritus
+i(228454);	-- Collector's Commemorative Proscenium Playbill
 i(220267);	-- Combustible Gland
 i(228482);	-- Cracked Iridescent Pearl
 i(228496);	-- Cracked Lantern
@@ -1878,6 +1879,7 @@ i(220243);	-- Eloquent Tailfeather
 i(213265);	-- Empty Antidote Vial
 i(220355);	-- Enlarged Ear
 i(220222);	-- Everburning Lump
+i(228453);	-- Extra Large Bag of Popped Pebbles
 i(228489);	-- Fashionable Flask
 i(225814);	-- Feather-on-a-Stick
 i(220302);	-- Fractured Casing

@@ -373,8 +373,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229118),	-- Flamestonge's Belt
 						i(229092),	-- Kyros's Spare Girdle
 						i(229145),	-- Lamplighter Elite's Shield
+						i(229152),	-- Lamplighter's Battleaxe
 						i(229155),	-- Lamplighter's Greataxe
 						i(229061),	-- Nisa's Spare Belt
+						i(229103),	-- The Cleansing Flame's Cuffs
 						i(229100),	-- The Cleansing Flame's Leggings
 						i(229097),	-- The Cleansing Flame's Sandals
 						i(229122),	-- Warstone's Gauntlets
@@ -394,6 +396,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 66.5, 15.1, HALLOWFALL },
 						["questID"] = 81612,
 						--["isWeekly"] = true,
+						["g"] = {
+							i(226016),	-- Darkened Tabard of the Arathi
+						},
 					}),
 					o(437112, {	-- Claimmer's Kit
 						--when you loot it - other treasure which require this item vanish, so cannot be looted on same week?
@@ -419,16 +424,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						},
 					}),
 					o(423959, {	-- Faded Supply Chest
-						["coord"] = { 61.8, 17.5, HALLOWFALL },
 						["description"] = "The key drops rarely from Drowned Arathi nearby.",
+						["coord"] = { 61.8, 17.5, HALLOWFALL },
 						["questID"] = 79964,
 						["cost"] = { { "i", 216528, 1 }, },	-- 1x Faded Supply Chest Key
+					}),
+					o(441723, {	-- Farm Satchel
+						["description"] = "Likely requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+						["coord"] = { 64.9, 25.7, HALLOWFALL },
+						--["questID"] = ,
+						["g"] = {
+							i(224466),	-- Wilber The Chicken (QS!)
+						},
 					}),
 					o(435008, {	-- Farmhand Stash
 						["description"] = "Requires weekly quest with controlling Harvestbot Remy to spawn.",
 						["coord"] = { 61.6, 32.6, HALLOWFALL },
 						["questID"] = 80590,
 						--["isWeekly"] = true,
+						["g"] = {
+							i(226016),	-- Darkened Tabard of the Arathi
+						},
 					}),
 					o(441795, {	-- Hallowfall Sparkfly
 						["description"] = "Requires level 80. Use a light source item then walk along the river near Stillstone Pond. With time Sparkbugs will appear next to you and randomly may be interactable, granting the pet.",
@@ -444,10 +460,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["questID"] = 82996,
 						["provider"] = {"i", 218107},	-- Sparkbug Jar
 					}),
+					o(433377, {	-- Harvest Box
+						["description"] = "Likely requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+						["coord"] = { 65.6, 29.4, HALLOWFALL },
+						["questID"] = 80420,
+					}),
 					o(452005, {	-- Lil Piggy
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure somewhere in The Whirring Field.",
 						["coord"] = { 64.7, 26.5, HALLOWFALL },
-						--["questID"] = 82996,
+						--["questID"] = ,
 						["g"] = {
 							i(224457),	-- Lil Piggy (QS!/QI!)
 						},
@@ -458,6 +479,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(224548),	-- Nerubian Device
 							-- put this on the quest once known
 							-- ["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 16 },
+						},
+					}),
+					o(457251, {	-- Old Rotting Crate
+						["description"] = "Likely requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+						["coord"] = { 64.5, 31.6, HALLOWFALL },
+						["questID"] = 84339,
+						["g"] = {
+							i(226016),	-- Darkened Tabard of the Arathi
 						},
 					}),
 					n(206870, {	-- Shadowrooted Vine
@@ -636,6 +665,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(80535),	-- Radiant Remnant @ 66.8, 23.1
 			q(80338),	-- Radiant Remnant @ 63.6, 20.8
 			q(80345),	-- Radiant Remnant @ 66.1, 17.9
+			--q(80554),	-- Radiant Remnant @ 66.4, 28.8	need objectid
+			--q(80556),	-- Radiant Remnant @ 63.7, 26.3 need objectid
 			-- Small Keyflames
 			q(80005),	-- Empty Crab Cage - Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
 			q(78472),	-- Attica Whiskervale - Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7
@@ -657,7 +688,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(84058),	-- Extra HQT: Ravageant
 			q(84056),	-- Extra HQT: Toadstomper
 			---
-			q(85552),	-- triggered on opening first Lamplighter Supply Satchel of the week - x2 reports
+			q(85552),	-- triggered on opening a Lamplighter Supply Satchel, first & second in week - x3 reports
 			q(79177),	-- Snuffling in Hallowfall?
 			--q(83342),	-- ??? "Popped when completing 76394 Shadows of Flavor"
 			--q(79179)	-- ??? "After looting Spider Touched Bag (211973)."

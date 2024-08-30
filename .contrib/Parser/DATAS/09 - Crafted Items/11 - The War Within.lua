@@ -2638,12 +2638,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80802, 446929);	-- Weavercloth Bolt
 			FirstCraft(80833, 446969);	-- Weavercloth Chef's Hat
 			FirstCraft(80830, 446966);	-- Weavercloth Enchanter's Hat
-			--FirstCraft(XXXXX, 446965);	-- Weavercloth Fishing Cap
+			FirstCraft(80829, 446965);	-- Weavercloth Fishing Cap
 			--FirstCraft(XXXXX, 446964);	-- Weavercloth Gardening Hat
 			FirstCraft(80842, 446978);	-- Weavercloth Reagent Bag
 			--FirstCraft(XXXXX, 446999);	-- Weavercloth Spellthread
 			FirstCraft(80831, 446967);	-- Weavercloth Tailor's Coat
-			--FirstCraft(XXXXX, 446997);	-- Weavercloth Embroidery Thread
+			FirstCraft(80861, 446997);	-- Weavercloth Embroidery Thread
 		})),
 	}),
 })));

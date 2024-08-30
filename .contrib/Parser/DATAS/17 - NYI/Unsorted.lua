@@ -110,7 +110,6 @@ root(ROOTS.Unsorted, {
 			i(229099),	-- The Cleansing Flame's Cowl
 			i(229101),	-- The Cleansing Flame's Shoulderpads
 			i(229102),	-- The Cleansing Flame's Cord
-			i(229103),	-- The Cleansing Flame's Cuffs
 			i(229104),	-- Ironstrike's Vest
 			i(229105),	-- Ironstrike's Waders
 			i(229106),	-- Ironstrike's Grips
@@ -155,7 +154,6 @@ root(ROOTS.Unsorted, {
 			i(229149),	-- Lamplighter's Rifle
 			i(229150),	-- Lamplighter's Splitter
 			i(229151),	-- Lamplighter's Hatchet
-			i(229152),	-- Lamplighter's Battleaxe
 			i(229153),	-- Lamplighter's Cudgel
 			i(229154),	-- Lamplighter's Edge
 			i(229156),	-- Lamplighter's Great Mallet
@@ -703,10 +701,7 @@ root(ROOTS.Unsorted, {
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
 				i(225997),	-- Earthen Adventurer's Spaulders
 				i(226000),	-- Ensemble: Earthen Adventurer's Copper Drapery
-				i(226016),	-- Darkened Tabard of the Arathi
 				i(226019),	-- Darkened Arathi Shoulderguards
-				i(226160),	-- Hillhelm Farmhand's Hoe
-				i(226161),	-- Hillhelm Farmhand's Watering Can
 				i(226363),	-- Earthen Backpack
 				i(226366),	-- Gloves of the Morning Mist
 				i(226367),	-- Ugly Black Boots
@@ -1076,7 +1071,6 @@ root(ROOTS.Unsorted, {
 				i(220157),	-- Empowered Tinderbox
 				i(220158),	-- Darkened Tinderbox
 				-- Armor Generator
-				i(225656),	-- Goldenglow Censer
 				i(225661),	-- Burning Binding
 				i(226137),	-- Inquisitive Sister's Cinch
 				i(226138),	-- Vow-Taker's Boots
@@ -1302,8 +1296,6 @@ root(ROOTS.Unsorted, {
 				i(228449),	-- Tasty Iron Bar
 				i(228450),	-- Edible Copper Nuggets
 				i(228451),	-- Scrumptious Gold Bar
-				i(228453),	-- Extra Large Bag of Popped Pebbles
-				i(228454),	-- Collector's Commemorative Proscenium Playbill
 			}),
 			f(QUEST_ITEMS, {
 				i(206348),	-- Fragmented Flame
@@ -1399,7 +1391,6 @@ root(ROOTS.Unsorted, {
 
 				i(224460),	-- The Lost Diary
 				i(224463),	-- Lily's Locket
-				i(224466),	-- Wilber The Chicken \\ The Chicken
 				i(224486),	-- Uncle's Eye
 				i(224545),	-- Plowhead
 				i(224777),	-- Sureki Shadecaster

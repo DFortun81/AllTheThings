@@ -1013,6 +1013,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 			}),
+			------ Life on the Farm (ACH) Quests ------ Should be moved into their own header but some quests require Spreading the Light and are sourced there. Automate?
+			q(82894, {	-- Hillhelm Family: The Chicken
+				["provider"] = { "i", 224466 },	-- Wilber The Chicken (QS!/QI!)
+				--["coord"] = { , , HALLOWFALL },
+			}),
 			------ Miscellaneous ------
 			q(81651),	-- Delver's Guide to Delves [Might be NYI??]
 			q(79222, {	-- Shadow-Hardened Mainspring

@@ -96,6 +96,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 			}, {	-- RENOWN 24 --
+				q(82446, {	-- For What Glimmers in Shadow
+					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+					["g"] = {
+						i(224072),	-- Enchanted Runed Harbinger Crest
+					}
+				}),
 			}, {	-- RENOWN 25 --
 			},
 		})),

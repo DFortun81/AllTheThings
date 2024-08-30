@@ -793,7 +793,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(QUESTS, {
 			q(84084, {	-- Just a Pinch
-				["provider"] = { "n", 219085 },	-- Nagad
+				["provider"] = { "n", 219085 },	-- Nagad <Enchanting Trainer>
 				["coord"] = { 52.7, 71.1, DORNOGAL },
 				["groups"] = {
 					i(227667),	-- Algari Enchanter's Folio
@@ -944,7 +944,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			q(84295, {	-- TWW Weekly Enchanting Knowledgepoint #8
 				["name"] = "TWW Enchanting Disenchant #6",
 				["description"] = "Rewarded when disenchanting items.",
-				["provider"] =  { "i", 227661 },	-- Fleeting Arcane Manifestation
+				["provider"] =  { "i", 227661 },	-- Gleaming Telluric Crystal
 			}),
 		})),
 	})),

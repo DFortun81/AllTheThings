@@ -58,7 +58,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			i(224691),	-- Sedimentary Sabatons
 		}),
 		filter(TRINKET_F, {
+			i(225648),	-- Candle Confidant
 			i(225657),	-- Detachable Fang
+			i(225656),	-- Goldenglow Censer
 			i(225651),	-- Kaheti Shadeweaver's Emblem
 			i(225649),	-- Quickwick Candlestick
 			i(225654),	-- Rapid Evolution Serum
@@ -101,7 +103,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				i(225233),	-- Dense Bladestone
 				-- Enchanting
 				i(225230),	-- Crystalline Repository
-				i(225231),	-- Powdered Fulgurance 
+				i(225231),	-- Powdered Fulgurance
 				-- Engineering
 				i(225229),	-- Earthen Induction Coil
 				i(225228),	-- Rust-Locked Mechanism

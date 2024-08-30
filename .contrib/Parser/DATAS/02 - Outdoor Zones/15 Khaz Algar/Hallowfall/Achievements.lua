@@ -30,7 +30,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			ach(40729),		-- Light's Gambit Champion
 			ach(40360, {	-- Life on the Farm (automated)
-				-- TODO: Add "Hillhelm Farmhand's Equipment" reward
+				["g"] = {
+					i(226160),	-- Hillhelm Farmhand's Hoe
+					i(226161),	-- Hillhelm Farmhand's Watering Can
+				},
 			}),
 			ach(40618, {	-- Lost and Found (automated)
 				iensemble(219105),	-- Sandy Quotidian Wear
