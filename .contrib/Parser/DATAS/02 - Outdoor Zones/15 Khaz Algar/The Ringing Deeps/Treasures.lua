@@ -106,6 +106,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["description"] = "Key to this chest can be found in nearest Buried Treasure",
 				["coord"] = { 50.5, 53.5, THE_RINGING_DEEPS },
 				["questID"] = 80485,
+				["cost"] = {
+					{"i", 223880, 1},	-- Forgotten Key
+				},
 				["g"] = {
 					i(224783),	-- Sovereign's Finery Chest (TOY!)
 				},
