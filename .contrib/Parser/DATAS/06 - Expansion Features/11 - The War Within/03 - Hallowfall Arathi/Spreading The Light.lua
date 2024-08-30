@@ -336,6 +336,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							206993,	-- Fungal Mass
 						},
 						["g"] = {
+							i(221250),	-- Creeping Lasher Machete
 							i(223940),	-- Deranged Fungarian's Epaulets
 						},
 					}),
@@ -656,14 +657,15 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(84058),	-- Extra HQT: Ravageant
 			q(84056),	-- Extra HQT: Toadstomper
 			---
+			q(85552),	-- triggered on opening first Lamplighter Supply Satchel of the week - x2 reports
 			q(79177),	-- Snuffling in Hallowfall?
-			--q(85552),	-- ??? "Opened Lamplighter Supply Satchel"
-			--q(83342),	-- ??? "Popped when completing "Shadows of Flavour"
-			--q(79188),	-- ??? "After picking up Spider-Touched Bag treasure, during the keyflame event and turning in a quest"
+			--q(83342),	-- ??? "Popped when completing 76394 Shadows of Flavor"
+			--q(79179)	-- ??? "After looting Spider Touched Bag (211973)."
+			--q(79188),	-- ??? "After picking up Spider-Touched Bag (211973), during the keyflame event and turning in 79173 Supply the Effort"
+						-- ??? "after turning in 79173 Supply the Effort and receiving a lamplighter supply satchel (first that week)"
 			-- Vendor
 			q(76996),	-- after buy and use itemID 210826 (Harvestbot Repair Kit)
 			q(83341),	-- after turn in 78933 (The Sweet Eclipse), unlock ability to buy Sweet Eclipse from vendor
-			q(85552),	-- triggered on opening first Lamplighter Supply Satchel of the week (received blue)
 		}),
 	}),
 })));
