@@ -8836,6 +8836,8 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(82201),	-- TWW Alpha/Beta Questauren Hallowfall skip
 			q(82202),	-- TWW Alpha/Beta Questauren Azj-Kahet skip
 			q(83023),	-- Short-Supply Reward
+			q(84085),	--
+			q(84086),	--
 		})),
 	}),
 }));
