@@ -3445,12 +3445,14 @@ for i,o in ipairs({
 	table.insert(BOSS_GROUPS, o);
 end
 
-root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
-	q(79143),	-- Completed alongside Love is in the Air (A)
-	q(79144),	-- Completed alongside Love is in the Air (H)
-	q(78734),	-- After choosing "a challenge" for The Gift of Self-Care
-	q(78735),	-- After choosing "something tasty" for The Gift of Self-Care
-	q(78736),	-- After choosing "a nap" for The Gift of Self-Care
-	q(78475),	-- Interacting with a bottle of perfume during I Smell Trouble (A)
-	q(78476),	-- Interacting with a box during I Smell Trouble (A)
-}));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
+	applyevent(EVENTS.LOVE_IS_IN_THE_AIR, n(LOVE_IS_IN_THE_AIR_HEADER, {
+		q(79143),	-- Completed alongside Love is in the Air (A)
+		q(79144),	-- Completed alongside Love is in the Air (H)
+		q(78734),	-- After choosing "a challenge" for The Gift of Self-Care
+		q(78735),	-- After choosing "something tasty" for The Gift of Self-Care
+		q(78736),	-- After choosing "a nap" for The Gift of Self-Care
+		q(78475),	-- Interacting with a bottle of perfume during I Smell Trouble (A)
+		q(78476),	-- Interacting with a box during I Smell Trouble (A)
+	})),
+})));

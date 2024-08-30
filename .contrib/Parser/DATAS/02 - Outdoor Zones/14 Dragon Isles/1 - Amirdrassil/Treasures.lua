@@ -150,24 +150,25 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }
 		}),
 	}),
 })));
-
 -- #if AFTER 10.2.6
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
-	m(AMIRDRASSIL, {
-		n(TREASURES, {
-			-- Old questIDs of treasures
-			q(79494, {["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 }}),	-- Kaldorei Backpack
-			q(79472, {["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 }}),	-- Kaldorei Bag
-			q(79493, {["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 }}),	-- Kaldorei Bag
-			q(79473, {["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 }}),	-- Kaldorei Bedroll
-			q(79496, {["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 }}),	-- Kaldorei Dagger
-			q(79498, {["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 }}),	-- Kaldorei Horn
-			q(79497, {["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 }}),	-- Kaldorei Horn
-			q(79520, {["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 }}),	-- Kaldorei Moon Bow
-			q(79499, {["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 }}),	-- Kaldorei Shield
-			q(79490, {["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 }}),	-- Kaldorei Spear
-			q(79500, {["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 }}),	-- Kaldorei Spyglass
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 } }, {
+	m(DRAGON_ISLES, {
+		m(AMIRDRASSIL, {
+			n(TREASURES, {
+				-- Old questIDs of treasures
+				q(79494),	-- Kaldorei Backpack
+				q(79472),	-- Kaldorei Bag
+				q(79493),	-- Kaldorei Bag
+				q(79473),	-- Kaldorei Bedroll
+				q(79496),	-- Kaldorei Dagger
+				q(79498),	-- Kaldorei Horn
+				q(79497),	-- Kaldorei Horn
+				q(79520),	-- Kaldorei Moon Bow
+				q(79499),	-- Kaldorei Shield
+				q(79490),	-- Kaldorei Spear
+				q(79500),	-- Kaldorei Spyglass
+			}),
 		}),
 	}),
-}));
+})));
 -- #endif

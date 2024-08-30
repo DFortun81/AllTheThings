@@ -4,7 +4,6 @@
 local function bo(questID, isDaily)
     return { ["questID"] = questID, ["isDaily"] = isDaily };
 end
-
 local ADAMANT_SCALES = 193214;
 local AWAKENED_FROST = 190329;
 local DRACONIUM_ORE = 188658;
@@ -352,8 +351,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		}),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
-	m(THE_AZURE_SPAN, {
-		q(72091),	-- triggers with 'Cobalt Enthusiast' (achievementID 16569) (spellID 392588)
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	m(DRAGON_ISLES, {
+		m(THE_AZURE_SPAN, {
+			n(ACHIEVEMENTS, {
+				q(72091),	-- triggers with 'Cobalt Enthusiast' (achievementID 16569) (spellID 392588)
+			}),
+		}),
 	}),
-}));
+})));

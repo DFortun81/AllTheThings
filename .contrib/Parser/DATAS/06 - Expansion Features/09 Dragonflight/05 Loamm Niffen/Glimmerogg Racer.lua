@@ -124,9 +124,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		})),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(LOAMM_NIFFEN, {
 		q(75710),	-- After turn in 'A Race To The Finish' (questID 75662) (spellID 409255)
 	}),
-}));
+})));

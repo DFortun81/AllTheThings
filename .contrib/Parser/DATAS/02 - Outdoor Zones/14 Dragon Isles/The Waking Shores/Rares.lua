@@ -4,7 +4,6 @@
 local function bo(questID, isDaily)
     return { ["questID"] = questID, ["isDaily"] = isDaily };
 end
-
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_WAKING_SHORES, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
@@ -186,11 +185,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		})),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
-	m(THE_WAKING_SHORES, {
-		q(74000),	-- Triggers when killing Harkyn Grymstone's group (Snee, Groth and Voll)
-		q(74033),	-- Triggers when killing Harkyn Grymstone's group (Snee, Groth and Voll)
-		q(74037),	-- Triggers when killing Harkyn Grymstone's group (Snee, Groth and Voll)
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	m(DRAGON_ISLES, {
+		m(THE_WAKING_SHORES, {
+			n(RARES, {
+				q(74000),	-- Triggers when killing Harkyn Grymstone's group (Snee, Groth and Voll)
+				q(74033),	-- Triggers when killing Harkyn Grymstone's group (Snee, Groth and Voll)
+				q(74037),	-- Triggers when killing Harkyn Grymstone's group (Snee, Groth and Voll)
+			}),
+		}),
 	}),
 })));

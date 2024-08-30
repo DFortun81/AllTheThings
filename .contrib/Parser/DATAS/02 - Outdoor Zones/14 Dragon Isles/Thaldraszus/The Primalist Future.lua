@@ -227,10 +227,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		})),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
-	m(THE_PRIMALIST_FUTURE, {
-		q(73162),	-- Killing Nimbulatus/Seismodor
-		q(74552),	-- flagged when 74378 "The Storm's Fury" unflagged first time
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_5} }, {
+	m(DRAGON_ISLES, {
+		m(THALDRASZUS, {
+			m(THE_PRIMALIST_FUTURE, {
+				q(73162),	-- Killing Nimbulatus/Seismodor
+				q(74552),	-- flagged when 74378 "The Storm's Fury" unflagged first time
+			}),
+		}),
 	}),
-}));
+})));

@@ -2544,15 +2544,15 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(64628, {	-- Triggered when learning the additional things for the Rockin' Rollin' Toy (spellID 358761)
 			["timeline"] = { ADDED_9_1_5 },
 		}),
-		q(78130, {	-- Looting Festive Trans-Dimensional Bird Whistle [209859]
-			["timeline"] = { ADDED_10_2_0 },
-		}),
-		q(78445, {	-- Looting Highland Drake: Winter Veil Armor [210432]
-			["timeline"] = { ADDED_10_2_0 },
-		}),
 	}),
 });
 -- #endif
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+	applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_VEIL_HEADER, {
+		q(78130),	-- Looting Festive Trans-Dimensional Bird Whistle [209859]
+		q(78445),	-- Looting Highland Drake: Winter Veil Armor [210432]
+	})),
+})));
 
 -- Remove the holiday flag.
 -- #if BEFORE 6.2.2.20395

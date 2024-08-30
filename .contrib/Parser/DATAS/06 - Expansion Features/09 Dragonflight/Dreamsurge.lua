@@ -369,10 +369,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		}),
 	})),
 })));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
-	n(DREAMSURGE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
+	n(DREAMSURGE, {
 		q(78276),	-- 1st kill day / weekly
 		q(77794),	-- after 'some' boss kills for 'Birth of Flames' event
-	})),
-}));
+	}),
+})));

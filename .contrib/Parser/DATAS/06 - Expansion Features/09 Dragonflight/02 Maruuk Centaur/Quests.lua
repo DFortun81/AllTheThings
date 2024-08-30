@@ -492,7 +492,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		i(200447),	-- Centaur Hunting Trophy [BoA]
 	}),
 })));
-
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(MARUUK_CENTAUR, {
 		q(72778),	-- triggered with 'Call of the Plains' (questID 71229) (spellID 397059)

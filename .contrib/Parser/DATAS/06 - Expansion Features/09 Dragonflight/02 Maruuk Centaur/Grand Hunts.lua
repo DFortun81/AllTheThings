@@ -428,26 +428,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		})),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
-	q(70004),	-- First time?
-	q(70003),	-- First time Epic Grand Hunt
-	q(70002),	-- First time Rare Grand Hunt
-	q(70001),	-- First time Uncommon Grand Hunt
-	q(70000),	-- First time Common Grand Hunt
-	q(69999),	-- 'Grand Hunter' achievement (start - end full hunt)
-	q(70908),	-- Maruuk Hunts // HQ to reward you with Reputation after each Stage
-	-- Each Unique Event can reward you with 1 trophy daily.
-	-- Upon killing a mob that dropped a trophy, the quest is triggered.
-	q(73913),	-- Thaldraszus South - Dismay Flies Event
-	q(73933),	-- Thaldraszus South - Scythe Raid Event
-	q(73913),	-- Thaldraszus South - Towering Fickleshells Event
-	q(70007),	-- Thaldraszus South - Killing Angen
-	q(70009),	-- Thaldraszuz North - Culling Wildlife
-	q(73941),	-- Thaldraszus South - Part 1 Towering Fickleshells
-	q(70005),	-- Azure Span East - Completing the Hunt
-	q(70006),	-- Azure Span South - Completing the Hunt
-	q(69998),	-- Waking Shores South - Completing the Hunt
-	q(73934),	-- 'Random' Hunt step trigger/Trophy loot
-	q(73937),	-- Possibly first Hunt step completion of the week
-}));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	n(MARUUK_CENTAUR, {
+		n(GRAND_HUNTS, {
+			q(70004),	-- First time?
+			q(70003),	-- First time Epic Grand Hunt
+			q(70002),	-- First time Rare Grand Hunt
+			q(70001),	-- First time Uncommon Grand Hunt
+			q(70000),	-- First time Common Grand Hunt
+			q(69999),	-- 'Grand Hunter' achievement (start - end full hunt)
+			q(70908),	-- Maruuk Hunts // HQ to reward you with Reputation after each Stage
+			-- Each Unique Event can reward you with 1 trophy daily.
+			-- Upon killing a mob that dropped a trophy, the quest is triggered.
+			q(73913),	-- Thaldraszus South - Dismay Flies Event
+			q(73933),	-- Thaldraszus South - Scythe Raid Event
+			q(73913),	-- Thaldraszus South - Towering Fickleshells Event
+			q(70007),	-- Thaldraszus South - Killing Angen
+			q(70009),	-- Thaldraszuz North - Culling Wildlife
+			q(73941),	-- Thaldraszus South - Part 1 Towering Fickleshells
+			q(70005),	-- Azure Span East - Completing the Hunt
+			q(70006),	-- Azure Span South - Completing the Hunt
+			q(69998),	-- Waking Shores South - Completing the Hunt
+			q(73934),	-- 'Random' Hunt step trigger/Trophy loot
+			q(73937),	-- Possibly first Hunt step completion of the week
+		}),
+	}),
+})));

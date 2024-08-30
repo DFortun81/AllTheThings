@@ -379,16 +379,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		})),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DRAGONSCALE_EXPEDITION, {
-		q(71183),	-- triggered together with 'Continued Waygate Exploration' (questID 70702) (spellID 390634)
-		q(71185),	-- triggered together with 'Continued Waygate Exploration' (questID 71146) (spellID 390645)
-		--q(71186),	-- triggered together with 'Continued Waygate Exploration' (questID ?) (spellID 390656)
-		q(71187),	-- triggered together with 'Continued Waygate Exploration' (questID 71148) (spellID 390658)
-		q(71188),	-- triggered together with 'Continued Waygate Exploration' (questID 71149) (spellID 390659)
-		q(71189),	-- triggered together with 'Continued Waygate Exploration' (questID 71150) (spellID 390665)
-		q(71190),	-- triggered together with 'Continued Waygate Exploration' (questID 71151) (spellID 390666)
-		q(72744),	-- triggered together with 'Continued Waygate Exploration' (questID 71151) (spellID 390666)
-		q(73864),	-- triggered when accepting 'Dormant Discovery' (questID 66595)
+		n(ANCIENT_WAYGATES, {
+			q(71183),	-- triggered together with 'Continued Waygate Exploration' (questID 70702) (spellID 390634)
+			q(71185),	-- triggered together with 'Continued Waygate Exploration' (questID 71146) (spellID 390645)
+			--q(71186),	-- triggered together with 'Continued Waygate Exploration' (questID ?) (spellID 390656)
+			q(71187),	-- triggered together with 'Continued Waygate Exploration' (questID 71148) (spellID 390658)
+			q(71188),	-- triggered together with 'Continued Waygate Exploration' (questID 71149) (spellID 390659)
+			q(71189),	-- triggered together with 'Continued Waygate Exploration' (questID 71150) (spellID 390665)
+			q(71190),	-- triggered together with 'Continued Waygate Exploration' (questID 71151) (spellID 390666)
+			q(72744),	-- triggered together with 'Continued Waygate Exploration' (questID 71151) (spellID 390666)
+			q(73864),	-- triggered when accepting 'Dormant Discovery' (questID 66595)
+		}),
 	}),
 })));

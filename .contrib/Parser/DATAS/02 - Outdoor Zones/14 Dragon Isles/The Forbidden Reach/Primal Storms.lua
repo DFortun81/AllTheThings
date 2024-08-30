@@ -56,14 +56,15 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
-	m(THE_FORBIDDEN_REACH, {
-		n(PRIMAL_STORMS, {
-			q(75399),	-- Water Storm Mini-Boss
-			q(75400),	-- Fire Storm Mini-Boss
-			q(75401),	-- Earth Storm Mini-Boss
-			q(75402),	-- Air Storm Mini-Boss
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
+	m(DRAGON_ISLES, {
+		m(THE_FORBIDDEN_REACH, {
+			n(PRIMAL_STORMS, {
+				q(75399),	-- Water Storm Mini-Boss
+				q(75400),	-- Fire Storm Mini-Boss
+				q(75401),	-- Earth Storm Mini-Boss
+				q(75402),	-- Air Storm Mini-Boss
+			}),
 		}),
 	}),
 })));

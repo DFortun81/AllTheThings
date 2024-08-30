@@ -85,26 +85,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
-	m(VALDRAKKEN, {
-		n(PROFESSIONS, {
-			q(74430),	-- Weekly Profession completed
-			q(77888, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77889 (A Fiery Proposal)
-			q(77909, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77912 (Unmodern Jewelry)
-			q(77913, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77914 (Burning Runes)
-			q(77915, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77892 (Pearls Of Great Value)
-			q(77917, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77932 (Warmth of Life)
-			q(77918, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77933 (Bubbling Discoveries)
-			q(77919, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77935 (A-Sword-ed Needs)
-			q(77920, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77936 (A Warm Harvest)
-			q(77921, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77947 (Primalist Fashion)
-			q(77923, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77949 (Fashion Feathers)
-			q(77924, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77945 (Boots on the Ground)
-			q(77927, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77891 (Fixing The Dream)
-			q(77929, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77938 (An Unlikely Engineer)
-			q(77930, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77910 (Enchanted Shrubbery)
-			q(77931, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77937 (Forbidden Sugar)
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	m(DRAGON_ISLES, {
+		m(VALDRAKKEN, {
+			n(PROFESSIONS, {
+				q(74430),	-- Weekly Profession completed
+				q(77888, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77889 (A Fiery Proposal)
+				q(77909, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77912 (Unmodern Jewelry)
+				q(77913, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77914 (Burning Runes)
+				q(77915, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77892 (Pearls Of Great Value)
+				q(77917, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77932 (Warmth of Life)
+				q(77918, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77933 (Bubbling Discoveries)
+				q(77919, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77935 (A-Sword-ed Needs)
+				q(77920, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77936 (A Warm Harvest)
+				q(77921, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77947 (Primalist Fashion)
+				q(77923, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77949 (Fashion Feathers)
+				q(77924, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77945 (Boots on the Ground)
+				q(77927, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77891 (Fixing The Dream)
+				q(77929, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77938 (An Unlikely Engineer)
+				q(77930, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77910 (Enchanted Shrubbery)
+				q(77931, {["timeline"] = {ADDED_10_2_0}}),	-- after turn in qID 77937 (Forbidden Sugar)
+			}),
 		}),
 	}),
 })));

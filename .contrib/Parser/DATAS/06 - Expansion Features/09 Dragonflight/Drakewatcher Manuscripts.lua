@@ -1033,15 +1033,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		})),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
 	m(DRAKEWATCHER_MANUSCRIPTS, {
 		-- Dragon Isles Drakes: Gilded Armor
-		i(196967, {["timeline"] = {ADDED_10_1_7}}),	-- Cliffside Wylderdrake: Gold and White Armor (DM!)
-		i(197095, {["timeline"] = {ADDED_10_1_7}}),	-- Highland Drake: Gold and White Armor (DM!)
-		i(197349, {["timeline"] = {ADDED_10_1_7}}),	-- Renewed Proto-Drake: Gold and White Armor (DM!)
-		i(197582, {["timeline"] = {ADDED_10_1_7}}),	-- Windborne Velocidrake: White and Pink Armor (DM!)
-		i(203298, {["timeline"] = {ADDED_10_1_7}}),	-- Winding Slitherdrake: White and Gold Armor (DM!)
+		i(196967),	-- Cliffside Wylderdrake: Gold and White Armor (DM!)
+		i(197095),	-- Highland Drake: Gold and White Armor (DM!)
+		i(197349),	-- Renewed Proto-Drake: Gold and White Armor (DM!)
+		i(197582),	-- Windborne Velocidrake: White and Pink Armor (DM!)
+		i(203298),	-- Winding Slitherdrake: White and Gold Armor (DM!)
 		-- Dragon Isles Drakes: White Scales
 		i(197014, {["timeline"] = {ADDED_10_2_0}}),	-- Cliffside Wylderdrake: White Scales (DM!)
 		i(197146, {["timeline"] = {ADDED_10_2_0}}),	-- Highland Drake: White Scales (DM!)

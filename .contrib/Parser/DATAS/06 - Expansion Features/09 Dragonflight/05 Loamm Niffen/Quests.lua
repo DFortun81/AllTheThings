@@ -226,12 +226,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	n(LOAMM_NIFFEN, {
 		q(76208),	-- Triggered at Renown 3
 		q(76209),	-- Triggered at Renown 3
 		q(76020),	-- Triggered at Renown 5
 		q(76019),	-- Triggered at Renown 13
 	}),
-}));
+})));

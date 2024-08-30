@@ -140,11 +140,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		}),
 	}),
 })));
-
-
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
-	m(THE_WAKING_SHORES, {
-		--q(66384),
-		q(74069),	-- Triggered after killing Zhurtan the Riverboiler during 'Boiling Over'
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	m(DRAGON_ISLES, {
+		m(THE_WAKING_SHORES, {
+			n(WORLD_QUESTS, {
+				q(74069),	-- Triggered after killing Zhurtan the Riverboiler during 'Boiling Over'
+			}),
+		}),
 	}),
-}));
+})));

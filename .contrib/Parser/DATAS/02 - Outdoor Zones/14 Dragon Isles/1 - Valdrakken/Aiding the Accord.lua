@@ -147,22 +147,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
-	m(VALDRAKKEN, {
-		q(71243),	-- Weekly Quest?
-		q(72892),	-- After "Aiding the Accord" series
-		q(75260),	-- After "Aiding the Accord" series
-		q(75862),	-- Aiding the Accord - Researchers - Quest Complete (spellID 410069)
-		q(75864),	-- Aiding the Accord - Suffusion - Quest Complete (spellID 410068)
-		q(75863),	-- Aiding the Accord - Cave - Quest Complete (spellID 410067)
-		q(77253),	-- Aiding the Accord - Time Rifts - Quest Complete (spellID 417862)
-		q(77979),	-- Aiding the Accord - Dreamsurge - Quest Complete (spellID 421947)
-		q(78450),	-- Aiding the Accord - Emerald Bounty - Quest Complete (spellID 426078)
-		q(78861),	-- Aiding the Accord - Emerald Bounty
-		q(78449),	-- Aiding the Accord - Superbloom - Quest Complete (spellID 426077)
-		
-		q(80389),	-- (probably) upon completion "Last Hurrah" series
-		q(79073),	-- Triggers with QuestID 80389 and the other "Last Hurrah" quests
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	m(DRAGON_ISLES, {
+		m(VALDRAKKEN, {
+			q(71243),	-- Weekly Quest?
+			q(72892),	-- After "Aiding the Accord" series
+			q(75260),	-- After "Aiding the Accord" series
+			q(75862, {["timeline"] = {ADDED_10_1_0}}),	-- Aiding the Accord - Researchers - Quest Complete (spellID 410069)
+			q(75864, {["timeline"] = {ADDED_10_1_0}}),	-- Aiding the Accord - Suffusion - Quest Complete (spellID 410068)
+			q(75863, {["timeline"] = {ADDED_10_1_0}}),	-- Aiding the Accord - Cave - Quest Complete (spellID 410067)
+			q(77253, {["timeline"] = {ADDED_10_1_5}}),	-- Aiding the Accord - Time Rifts - Quest Complete (spellID 417862)
+			q(77979, {["timeline"] = {ADDED_10_1_7}}),	-- Aiding the Accord - Dreamsurge - Quest Complete (spellID 421947)
+			q(78450, {["timeline"] = {ADDED_10_2_0}}),	-- Aiding the Accord - Emerald Bounty - Quest Complete (spellID 426078)
+			q(78861, {["timeline"] = {ADDED_10_2_0}}),	-- Aiding the Accord - Emerald Bounty
+			q(78449, {["timeline"] = {ADDED_10_2_0}}),	-- Aiding the Accord - Superbloom - Quest Complete (spellID 426077)
+			q(80389, {["timeline"] = {ADDED_10_2_6_SEASON_FOUR}}),	-- (probably) upon completion "Last Hurrah" series
+			q(79073, {["timeline"] = {ADDED_10_2_6_SEASON_FOUR}}),	-- Triggers with QuestID 80389 and the other "Last Hurrah" quests
+		}),
 	}),
-}));
+})));

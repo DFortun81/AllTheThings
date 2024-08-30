@@ -759,8 +759,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		}),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
-	m(VALDRAKKEN, {
-		q(78840),	-- After using Arsenal: Whispering Temple Blades (ID 211300)
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+	m(DRAGON_ISLES, {
+		m(VALDRAKKEN, {
+			q(78840),	-- Arsenal: Whispering Temple Blades
+		}),
 	}),
-}));
+})));

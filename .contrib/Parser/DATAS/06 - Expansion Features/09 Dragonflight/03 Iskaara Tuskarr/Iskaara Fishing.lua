@@ -278,7 +278,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						r(387375),	-- Serevite Harpoon Head
 					})),
 					-- These "Recipes" show as learned, but when you have learned them, they dissapear causing ATT to think you no longer have them learned.
-					-- Commented out spellID due to odd use case where players who completed the upgrades/crafting and could no longer open the crafting window can't re-cache. 
+					-- Commented out spellID due to odd use case where players who completed the upgrades/crafting and could no longer open the crafting window can't re-cache.
 					i(199847, {	-- Braided Seavine Harpoon Rope
 						--["spellID"] = 388251,	-- Braided Seavine Harpoon Rope
 						["questID"] = 70799,	-- Triggered after crafting 'Braided Seavine Harpoon Rope'
@@ -575,23 +575,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		})),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
-	m(THE_AZURE_SPAN, {
-		q(74370),	-- First weekly completion of 'Contribute Supplies: Battered Imbu-made Net'
-		q(74369),	-- First weekly completion of 'Contribute Supplies: Salinated Serevite'
-		q(74368),	-- First weekly completion of 'Contribute Supplies: Khaz'gorite-infused Resin'
-		q(74371),	-- First weekly completion of 'Contribute Supplies: Khaz'gorite Wire'
-		q(74372),	-- First weekly completion of 'Contribute Supplies: Strong Seavine'
-		q(74367),	-- First weekly completion of 'Contribute Supplies: Irontree Branch'
-		q(74373),	-- First weekly completion of 'Contribute Supplies: Draconium Nugget'
-		--
-		q(72828),	-- First weekly completion of 'Catch and Release: Scalebell Mackerel' (70199)
-		q(72827),	-- First weekly completion of 'Catch and Release: Thousandbite Piranha' (70200)
-		q(72826),	-- First weekly completion of 'Catch and Release: Aileron Seamoth' (70201)
-		q(72825),	-- First weekly completion of 'Catch and Release: Cerulean Spinefish' (70202)
-		q(72824),	-- First weekly completion of 'Catch and Release: Temporal Dragonhead' (70203)
-		q(72823),	-- First weekly completion of 'Catch and Release: Islefin Dorado' (70935)
-		q(67139),	-- Was tied to Flying Fish Charms but not the spellID causing issues for players
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	n(ISKAARA_TUSKARR, {
+		n(ISKAARA_FISHING, {
+			q(74370),	-- First weekly completion of 'Contribute Supplies: Battered Imbu-made Net'
+			q(74369),	-- First weekly completion of 'Contribute Supplies: Salinated Serevite'
+			q(74368),	-- First weekly completion of 'Contribute Supplies: Khaz'gorite-infused Resin'
+			q(74371),	-- First weekly completion of 'Contribute Supplies: Khaz'gorite Wire'
+			q(74372),	-- First weekly completion of 'Contribute Supplies: Strong Seavine'
+			q(74367),	-- First weekly completion of 'Contribute Supplies: Irontree Branch'
+			q(74373),	-- First weekly completion of 'Contribute Supplies: Draconium Nugget'
+			--
+			q(72828),	-- First weekly completion of 'Catch and Release: Scalebell Mackerel' (70199)
+			q(72827),	-- First weekly completion of 'Catch and Release: Thousandbite Piranha' (70200)
+			q(72826),	-- First weekly completion of 'Catch and Release: Aileron Seamoth' (70201)
+			q(72825),	-- First weekly completion of 'Catch and Release: Cerulean Spinefish' (70202)
+			q(72824),	-- First weekly completion of 'Catch and Release: Temporal Dragonhead' (70203)
+			q(72823),	-- First weekly completion of 'Catch and Release: Islefin Dorado' (70935)
+			q(67139),	-- Was tied to Flying Fish Charms but not the spellID causing issues for players
+		}),
 	}),
-}));
+})));

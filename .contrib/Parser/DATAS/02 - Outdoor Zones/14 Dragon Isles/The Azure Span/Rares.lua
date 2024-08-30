@@ -4,7 +4,6 @@
 local function bo(questID, isDaily)
     return { ["questID"] = questID, ["isDaily"] = isDaily };
 end
-
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(THE_AZURE_SPAN, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
@@ -225,12 +224,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		})),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, m(DRAGON_ISLES, {
-	m(THE_AZURE_SPAN, {
-		q(73886),	-- Killing both Mucklings for Mucka the Raker
-		q(71240),	-- Triggered on killing various rares, maybe first one-time Rare killed on a character
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	m(DRAGON_ISLES, {
+		m(THE_AZURE_SPAN, {
+			n(RARES, {
+				q(73886),	-- Killing both Mucklings for Mucka the Raker
+				q(71240),	-- Triggered on killing various rares, maybe first one-time Rare killed on a character
+			}),
+		}),
 	}),
-}));
-
-
+})));

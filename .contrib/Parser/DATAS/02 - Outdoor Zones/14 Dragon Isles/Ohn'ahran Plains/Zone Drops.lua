@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			i(201032, {	-- Nokhudon Wraps
 				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",
-			}),	
+			}),
 			-- Weps
 			i(201382, {	-- Centaur Warglaives
 				["description"] = "Drops from Nokhud Creatures or Clan Chests in Ohn'ahran Plains.",

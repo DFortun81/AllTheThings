@@ -106,24 +106,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		})),
 	}),
 })));
-
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(DRAGONSCALE_EXPEDITION, {
-		q(72560),	-- Triggered after completing Climb Every Mountain (questID 65421)
-		q(71997),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (66070)
-		q(71998),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (64768)
-		q(71999),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70652)
-		q(72001),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70655)
-		q(72002),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (???)
-		q(72003),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70658)
-		q(72005),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70654)
-		q(72006),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70661)
-		q(72007),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70656)
-		q(66478),	-- Rescuing the Marmot (188912) during Brightblade's Bones (66070) (requires Lost Banana 191951) (spellID 371687)
-		q(75208),	-- looted lost supplies while on climbing WQ 75060 (A Veritable Dumping Ground)
-		q(75207),	-- looted lost supplies while on climbing WQ 75061 (No Mushroom For Ever)
-		q(75210),	-- looted lost supplies while on climbing WQ 75062 (Crystalline Conundrum)
-		q(75206),	-- looted lost supplies while on climbing WQ 75058 (Spearheading Acquisitio)
-		q(77692),	-- looted lost supplies while on climbing WQ 77156 (Botanical Redistribution)
+		n(CLIMBING, {
+			q(72560),	-- Triggered after completing Climb Every Mountain (questID 65421)
+			q(71997),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (66070)
+			q(71998),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (64768)
+			q(71999),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70652)
+			q(72001),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70655)
+			q(72002),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (???)
+			q(72003),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70658)
+			q(72005),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70654)
+			q(72006),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70661)
+			q(72007),	-- looted bonus supplies (Enchanted Compass) while on climbing WQ (70656)
+			q(66478),	-- Rescuing the Marmot (188912) during Brightblade's Bones (66070) (requires Lost Banana 191951) (spellID 371687)
+			q(75208),	-- looted lost supplies while on climbing WQ 75060 (A Veritable Dumping Ground)
+			q(75207),	-- looted lost supplies while on climbing WQ 75061 (No Mushroom For Ever)
+			q(75210),	-- looted lost supplies while on climbing WQ 75062 (Crystalline Conundrum)
+			q(75206),	-- looted lost supplies while on climbing WQ 75058 (Spearheading Acquisitio)
+			q(77692),	-- looted lost supplies while on climbing WQ 77156 (Botanical Redistribution)
+		}),
 	}),
 })));

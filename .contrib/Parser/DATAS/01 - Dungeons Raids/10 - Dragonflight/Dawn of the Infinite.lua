@@ -1367,16 +1367,15 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 		},
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.DF, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_5 } }, {
+	inst(1209, {	-- Dawn of the Infinite
 		-- Ensembles
 		q(77850),	-- Ensemble: Infinite Acolyte's Regalia (spellID 419820)
 		q(77851),	-- Ensemble: Infinite Acolyte's Regalia (spellID 421485)
 		q(77852),	-- Ensemble: Infinite Acolyte's Regalia (spellID 421486)
 		q(77853),	-- Ensemble: Infinite Acolyte's Regalia (spellID 421487)
 	}),
-});
+})));
 
 -- History for items between 10.1.5 & 10.1.7
 --[[	i(208061, {	-- Quantum Headpiece

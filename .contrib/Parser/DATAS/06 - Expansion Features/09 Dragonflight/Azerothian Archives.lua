@@ -8,7 +8,6 @@ AZEROTHIAN_ARCHIVES = createHeader({
 		en = WOWAPI_GetSpellName(419242),
 	},
 });
-
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
 	n(AZEROTHIAN_ARCHIVES, {
 		["maps"] = {
@@ -630,9 +629,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		},
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
-	n(AZEROTHIAN_ARCHIVES, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
+	n(AZEROTHIAN_ARCHIVES, {
 		q(79992),	-- After completing 'Finally, An Archivist' (questID 79223) (spellID 436735) (WQ unlock - Riverbed, Concord Observatory, and Lost Anethenum Sites)
 		q(79996),	-- After completing 'The Hidden Hand' (questID 77415) (spellID 436777) (WQ unlock - Dragonskull Island, Forbidden Reach Site)
 		q(79995),	-- After completing 'A Taste of the Past' (questID 77154) (spellID 436768) (WQ unlock - Winglord's Perch, Forbidden Reach Site)
@@ -687,5 +685,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 		q(79613),	-- Winglord's Perch first completion
 		q(79612),	-- Winglord's Perch second completion
 		q(79611),	-- Winglord's Perch third completion
-	})),
-}));
+	}),
+})));
