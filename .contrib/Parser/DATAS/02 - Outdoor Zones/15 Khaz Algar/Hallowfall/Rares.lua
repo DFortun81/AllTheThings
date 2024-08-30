@@ -63,10 +63,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(221668, {	-- Horror of the Shallows
-				["description"] = "Swimming near coast on east -> north-east -> north of Hallowfall zone",
+				["description"] = "Swimming swims along the western coast of Hallowfall between the coords",
 				["coords"] = {
-					{ 28.3, 44.3, HALLOWFALL },
-					{ 25.4, 46.4, HALLOWFALL },
+					{ 20.6, 51.6, HALLOWFALL },
+					{ 31.2, 41.4, HALLOWFALL },
+					{ 32.6, 28.8, HALLOWFALL },
+					{ 42.8, 16.4, HALLOWFALL },
+					{ 46.6, 7.2, HALLOWFALL },
 				},
 				["questID"] = 81836,
 				["g"] = {
