@@ -93,9 +93,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["provider"] = { "i", 212333 },	-- Expedition Tinderbox
 						["coord"] = { 61.1, 9.6, HALLOWFALL },
 					}),
-					q(79234, {	-- A Small Bag of Seeds
-						["provider"] = { "i", 212339 },	-- A Small Bag of Seeds
-					}),
 					q(82963, {	-- Hillhelm Family: Lil Piggy'
 						["provider"] = { "i", 224457 },	-- Lil Piggy
 					}),
@@ -105,11 +102,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					q(82966, {	-- Hillhelm Family: Unusual Potato
 						["provider"] = { "i", 224465 },	-- Unusual Potato
 					}),
-					q(78589, {	-- Invasive Cuisine
-						["provider"] = { "i", 211861 },	-- Umbral Eggplant
-					}),
 				}),
 				n(QUESTS, sharedData({ ["isWeekly"] = true }, {
+					q(79234, {	-- A Small Bag of Seeds
+						["provider"] = { "i", 212339 },	-- A Small Bag of Seeds
+					}),
 					q(79346, {	-- Chew On That
 						["sourceQuests"] = { 79295 },	-- Keyflame: Taerry Bligestone
 						["provider"] = { "n", 215956 },	-- Taerry Bligestone
@@ -156,6 +153,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["g"] = {
 							i(211942),	-- Water Hose (QI!)
 						},
+					}),
+					q(78589, {	-- Invasive Cuisine
+						["provider"] = { "i", 211861 },	-- Umbral Eggplant
 					}),
 					q(76997, {	-- Lost in Shadows
 						["sourceQuests"] = { 78452 },	-- Keyflame: Yovas Flintstrike
