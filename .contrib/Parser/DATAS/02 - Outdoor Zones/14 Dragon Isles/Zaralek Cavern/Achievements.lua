@@ -142,204 +142,206 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 			}),
 			explorationAch(17766),	-- Explore Zaralek Cavern
-			petbattle(ach(17934, {	-- Family Battler of Zaralek Cavern
-				-- Meta Achievement
-				["sym"] = {{"meta_achievement",
-					17881,	-- Aquatic Battler of Zaralek Cavern
-					17882,	-- Beast Battler of Zaralek Cavern
-					17883,	-- Critter Battler of Zaralek Cavern
-					17890,	-- Dragonkin Battler of Zaralek Cavern
-					17904,	-- Elemental Battler of Zaralek Cavern
-					17905,	-- Flying Battler of Zaralek Cavern
-					17915,	-- Humanoid Battler of Zaralek Cavern
-					17916,	-- Magic Battler of Zaralek Cavern
-					17917,	-- Mechanical Battler of Zaralek Cavern
-					17918,	-- Undead Battler of Zaralek Cavern
-				}},
-				["g"] = {
-					i(193377),	-- Gerald (PET!)
-				},
-			})),
-			petbattle(ach(17881, {	-- Aquatic Battler of Zaralek Cavern
-				crit(59355, {	-- Explorer Bezzert
-					["crs"] = { 201004 },
-					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
-				}),
-				crit(59356, {	-- Shinmura
-					["crs"] = { 204792 },
-					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
-				}),
-				crit(59357, {	-- Delver Mardei
-					["crs"] = { 204926 },
-					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
-				}),
-				crit(59358, {	-- Trainer Orlogg
-					["crs"] = { 204934 },
-					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
-				}),
-			})),
-			petbattle(ach(17882, {	-- Beast Battler of Zaralek Cavern
-				crit(59359, {	-- Explorer Bezzert
-					["crs"] = { 201004 },
-					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
-				}),
-				crit(59360, {	-- Shinmura
-					["crs"] = { 204792 },
-					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
-				}),
-				crit(59361, {	-- Delver Mardei
-					["crs"] = { 204926 },
-					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
-				}),
-				crit(59362, {	-- Trainer Orlogg
-					["crs"] = { 204934 },
-					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
-				}),
-			})),
-			petbattle(ach(17883, {	-- Critter Battler of Zaralek Cavern
-				crit(59363, {	-- Explorer Bezzert
-					["crs"] = { 201004 },
-					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
-				}),
-				crit(59364, {	-- Shinmura
-					["crs"] = { 204792 },
-					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
-				}),
-				crit(59365, {	-- Delver Mardei
-					["crs"] = { 204926 },
-					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
-				}),
-				crit(59366, {	-- Trainer Orlogg
-					["crs"] = { 204934 },
-					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
-				}),
-			})),
-			petbattle(ach(17890, {	-- Dragonkin Battler of Zaralek Cavern
-				crit(59367, {	-- Explorer Bezzert
-					["crs"] = { 201004 },
-					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
-				}),
-				crit(59368, {	-- Shinmura
-					["crs"] = { 204792 },
-					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
-				}),
-				crit(59369, {	-- Delver Mardei
-					["crs"] = { 204926 },
-					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
-				}),
-				crit(59370, {	-- Trainer Orlogg
-					["crs"] = { 204934 },
-					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
-				}),
-			})),
-			petbattle(ach(17904, {	-- Elemental Battler of Zaralek Cavern
-				crit(59371, {	-- Explorer Bezzert
-					["crs"] = { 201004 },
-					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
-				}),
-				crit(59372, {	-- Shinmura
-					["crs"] = { 204792 },
-					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
-				}),
-				crit(59373, {	-- Delver Mardei
-					["crs"] = { 204926 },
-					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
-				}),
-				crit(59374, {	-- Trainer Orlogg
-					["crs"] = { 204934 },
-					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
-				}),
-			})),
-			petbattle(ach(17905, {	-- Flying Battler of Zaralek Cavern
-				crit(59375, {	-- Explorer Bezzert
-					["crs"] = { 201004 },
-					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
-				}),
-				crit(59376, {	-- Shinmura
-					["crs"] = { 204792 },
-					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
-				}),
-				crit(59377, {	-- Delver Mardei
-					["crs"] = { 204926 },
-					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
-				}),
-				crit(59378, {	-- Trainer Orlogg
-					["crs"] = { 204934 },
-					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
-				}),
-			})),
-			petbattle(ach(17915, {	-- Humanoid Battler of Zaralek Cavern
-				crit(59379, {	-- Explorer Bezzert
-					["crs"] = { 201004 },
-					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
-				}),
-				crit(59380, {	-- Shinmura
-					["crs"] = { 204792 },
-					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
-				}),
-				crit(59381, {	-- Delver Mardei
-					["crs"] = { 204926 },
-					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
-				}),
-				crit(59382, {	-- Trainer Orlogg
-					["crs"] = { 204934 },
-					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
-				}),
-			})),
-			petbattle(ach(17916, {	-- Magic Battler of Zaralek Cavern
-				crit(59383, {	-- Explorer Bezzert
-					["crs"] = { 201004 },
-					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
-				}),
-				crit(59384, {	-- Shinmura
-					["crs"] = { 204792 },
-					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
-				}),
-				crit(59385, {	-- Delver Mardei
-					["crs"] = { 204926 },
-					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
-				}),
-				crit(59386, {	-- Trainer Orlogg
-					["crs"] = { 204934 },
-					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
-				}),
-			})),
-			petbattle(ach(17917, {	-- Mechanical Battler of Zaralek Cavern
-				crit(59387, {	-- Explorer Bezzert
-					["crs"] = { 201004 },
-					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
-				}),
-				crit(59388, {	-- Shinmura
-					["crs"] = { 204792 },
-					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
-				}),
-				crit(59389, {	-- Delver Mardei
-					["crs"] = { 204926 },
-					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
-				}),
-				crit(59390, {	-- Trainer Orlogg
-					["crs"] = { 204934 },
-					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
-				}),
-			})),
-			petbattle(ach(17918, {	-- Undead Battler of Zaralek Caverm
-				crit(59391, {	-- Explorer Bezzert
-					["crs"] = { 201004 },
-					["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
-				}),
-				crit(59392, {	-- Shinmura
-					["crs"] = { 204792 },
-					["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
-				}),
-				crit(59393, {	-- Delver Mardei
-					["crs"] = { 204926 },
-					["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
-				}),
-				crit(59394, {	-- Trainer Orlogg
-					["crs"] = { 204934 },
-					["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
-				}),
-			})),
+			n(FAMILY_BATTLER, {
+				petbattle(ach(17934, {	-- Family Battler of Zaralek Cavern
+					-- Meta Achievement
+					["sym"] = {{"meta_achievement",
+						17881,	-- Aquatic Battler of Zaralek Cavern
+						17882,	-- Beast Battler of Zaralek Cavern
+						17883,	-- Critter Battler of Zaralek Cavern
+						17890,	-- Dragonkin Battler of Zaralek Cavern
+						17904,	-- Elemental Battler of Zaralek Cavern
+						17905,	-- Flying Battler of Zaralek Cavern
+						17915,	-- Humanoid Battler of Zaralek Cavern
+						17916,	-- Magic Battler of Zaralek Cavern
+						17917,	-- Mechanical Battler of Zaralek Cavern
+						17918,	-- Undead Battler of Zaralek Cavern
+					}},
+					["g"] = {
+						i(193377),	-- Gerald (PET!)
+					},
+				})),
+				petbattle(ach(17881, {	-- Aquatic Battler of Zaralek Cavern
+					crit(59355, {	-- Explorer Bezzert
+						["crs"] = { 201004 },
+						["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
+					}),
+					crit(59356, {	-- Shinmura
+						["crs"] = { 204792 },
+						["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
+					}),
+					crit(59357, {	-- Delver Mardei
+						["crs"] = { 204926 },
+						["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
+					}),
+					crit(59358, {	-- Trainer Orlogg
+						["crs"] = { 204934 },
+						["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
+					}),
+				})),
+				petbattle(ach(17882, {	-- Beast Battler of Zaralek Cavern
+					crit(59359, {	-- Explorer Bezzert
+						["crs"] = { 201004 },
+						["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
+					}),
+					crit(59360, {	-- Shinmura
+						["crs"] = { 204792 },
+						["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
+					}),
+					crit(59361, {	-- Delver Mardei
+						["crs"] = { 204926 },
+						["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
+					}),
+					crit(59362, {	-- Trainer Orlogg
+						["crs"] = { 204934 },
+						["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
+					}),
+				})),
+				petbattle(ach(17883, {	-- Critter Battler of Zaralek Cavern
+					crit(59363, {	-- Explorer Bezzert
+						["crs"] = { 201004 },
+						["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
+					}),
+					crit(59364, {	-- Shinmura
+						["crs"] = { 204792 },
+						["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
+					}),
+					crit(59365, {	-- Delver Mardei
+						["crs"] = { 204926 },
+						["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
+					}),
+					crit(59366, {	-- Trainer Orlogg
+						["crs"] = { 204934 },
+						["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
+					}),
+				})),
+				petbattle(ach(17890, {	-- Dragonkin Battler of Zaralek Cavern
+					crit(59367, {	-- Explorer Bezzert
+						["crs"] = { 201004 },
+						["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
+					}),
+					crit(59368, {	-- Shinmura
+						["crs"] = { 204792 },
+						["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
+					}),
+					crit(59369, {	-- Delver Mardei
+						["crs"] = { 204926 },
+						["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
+					}),
+					crit(59370, {	-- Trainer Orlogg
+						["crs"] = { 204934 },
+						["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
+					}),
+				})),
+				petbattle(ach(17904, {	-- Elemental Battler of Zaralek Cavern
+					crit(59371, {	-- Explorer Bezzert
+						["crs"] = { 201004 },
+						["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
+					}),
+					crit(59372, {	-- Shinmura
+						["crs"] = { 204792 },
+						["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
+					}),
+					crit(59373, {	-- Delver Mardei
+						["crs"] = { 204926 },
+						["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
+					}),
+					crit(59374, {	-- Trainer Orlogg
+						["crs"] = { 204934 },
+						["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
+					}),
+				})),
+				petbattle(ach(17905, {	-- Flying Battler of Zaralek Cavern
+					crit(59375, {	-- Explorer Bezzert
+						["crs"] = { 201004 },
+						["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
+					}),
+					crit(59376, {	-- Shinmura
+						["crs"] = { 204792 },
+						["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
+					}),
+					crit(59377, {	-- Delver Mardei
+						["crs"] = { 204926 },
+						["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
+					}),
+					crit(59378, {	-- Trainer Orlogg
+						["crs"] = { 204934 },
+						["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
+					}),
+				})),
+				petbattle(ach(17915, {	-- Humanoid Battler of Zaralek Cavern
+					crit(59379, {	-- Explorer Bezzert
+						["crs"] = { 201004 },
+						["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
+					}),
+					crit(59380, {	-- Shinmura
+						["crs"] = { 204792 },
+						["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
+					}),
+					crit(59381, {	-- Delver Mardei
+						["crs"] = { 204926 },
+						["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
+					}),
+					crit(59382, {	-- Trainer Orlogg
+						["crs"] = { 204934 },
+						["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
+					}),
+				})),
+				petbattle(ach(17916, {	-- Magic Battler of Zaralek Cavern
+					crit(59383, {	-- Explorer Bezzert
+						["crs"] = { 201004 },
+						["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
+					}),
+					crit(59384, {	-- Shinmura
+						["crs"] = { 204792 },
+						["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
+					}),
+					crit(59385, {	-- Delver Mardei
+						["crs"] = { 204926 },
+						["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
+					}),
+					crit(59386, {	-- Trainer Orlogg
+						["crs"] = { 204934 },
+						["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
+					}),
+				})),
+				petbattle(ach(17917, {	-- Mechanical Battler of Zaralek Cavern
+					crit(59387, {	-- Explorer Bezzert
+						["crs"] = { 201004 },
+						["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
+					}),
+					crit(59388, {	-- Shinmura
+						["crs"] = { 204792 },
+						["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
+					}),
+					crit(59389, {	-- Delver Mardei
+						["crs"] = { 204926 },
+						["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
+					}),
+					crit(59390, {	-- Trainer Orlogg
+						["crs"] = { 204934 },
+						["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
+					}),
+				})),
+				petbattle(ach(17918, {	-- Undead Battler of Zaralek Caverm
+					crit(59391, {	-- Explorer Bezzert
+						["crs"] = { 201004 },
+						["coord"] = { 52.41, 66.03, ZARALEK_CAVERN },
+					}),
+					crit(59392, {	-- Shinmura
+						["crs"] = { 204792 },
+						["coord"] = { 38.6, 50.2, ZARALEK_CAVERN },
+					}),
+					crit(59393, {	-- Delver Mardei
+						["crs"] = { 204926 },
+						["coord"] = { 65.4, 49.6, ZARALEK_CAVERN },
+					}),
+					crit(59394, {	-- Trainer Orlogg
+						["crs"] = { 204934 },
+						["coord"] = { 45.6, 81.6, ZARALEK_CAVERN },
+					}),
+				})),
+			}),
 			ach(17785, {	-- Que Zara(lek), Zara(lek)
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",

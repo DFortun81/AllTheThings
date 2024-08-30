@@ -86,494 +86,496 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			crit(33140),		-- Blind Rat (Dalaran)
 			crit(33141),		-- Stormstruck Beaver (Stormheim)
 		})),
-		petbattle(ach(9696, {	-- Family Familiar
-			-- Meta Achievement should symlink the contained Achievements from Source
-			["sym"] = {{"meta_achievement",
-				9686,	-- Aquatic Acquiescence
-				9687,	-- Best of the Beasts
-				9688,	-- Mousing Around
-				9689,	-- Dragons!
-				9690,	-- Ragnaros, Watch and Learn
-				9691,	-- Flock Together
-				9692,	-- Murlocs, Harpies, and Wolvar, Oh My!
-				9693,	-- Master of Magic
-				9694,	-- Roboteer
-				9695,	-- The Lil' Necromancer
-			}},
-			["groups"] = {
-				i(140761),	-- Nightmare Treant (PET!)
-			},
-		})),
-		petbattle(ach(9686, {	-- Aquatic Acquiescence
-			crit(32483, {	-- Nightwatcher Merayl (Azsuna)
-				["_quests"] = { 42159 },
-			}),
-			crit(32476, {	-- Bodhi Sunwayver (Dalaran)
-				["_quests"] = { 40299 },
-			}),
-			crit(32489, {	-- Tiffany Nelson (Dalaran)
-				["_quests"] = { 40277 },
-			}),
-			crit(32465, {	-- Amalia (Dalaran)
-				["_quests"] = { 42442 },
-			}),
-			crit(32485, {	-- Sir Galveston (Dalaran)
-				["_quests"] = { 40298 },
-			}),
-			crit(32477, {	-- Bredda Tenderhide (Highmountain)
-				["_quests"] = { 40280 },
-			}),
-			crit(32480, {	-- Grixis Tinypop (Highmountain)
-				["_quests"] = { 40282 },
-			}),
-			crit(32470, {	-- Odrogg (Highmountain)
-				["_quests"] = { 41687 },
-			}),
-			crit(32484, {	-- Robert Craig (Stormheim)
-				["_quests"] = { 40278 },
-			}),
-			crit(32490, {	-- Trapper Jarrun (Stormheim)
-				["_quests"] = { 41944 },
-			}),
-			crit(32466, {	-- Aulier (Suramar)
-				["_quests"] = { 41895 },
-			}),
-			crit(32492, {	-- Master Tamer Flummox (Suramar)
-				["_quests"] = { 40337 },
-			}),
-			crit(32472, {	-- Varenne (Suramar)
-				["_quests"] = { 41990 },
-			}),
-			crit(32478, {	-- Durian Strongfruit (Val'sharah)
-				["_quests"] = { 40279 },
-			}),
-			crit(32474, {	-- Xorvasc (Val'sharah)
-				["_quests"] = { 41860 },
-			}),
-		})),
-		petbattle(ach(9687, {	-- Best of the Beasts
-			crit(32541, {	-- Nightwatcher Merayl (Azsuna)
-				["_quests"] = { 42159 },
-			}),
-			crit(32550, {	-- Bodhi Sunwayver (Dalaran)
-				["_quests"] = { 40299 },
-			}),
-			crit(32559, {	-- Tiffany Nelson (Dalaran)
-				["_quests"] = { 40277 },
-			}),
-			crit(32568, {	-- Amalia (Dalaran)
-				["_quests"] = { 42442 },
-			}),
-			crit(32577, {	-- Sir Galveston (Dalaran)
-				["_quests"] = { 40298 },
-			}),
-			crit(32586, {	-- Bredda Tenderhide (Highmountain)
-				["_quests"] = { 40280 },
-			}),
-			crit(32595, {	-- Grixis Tinypop (Highmountain)
-				["_quests"] = { 40282 },
-			}),
-			crit(32604, {	-- Odrogg (Highmountain)
-				["_quests"] = { 41687 },
-			}),
-			crit(32613, {	-- Robert Craig (Stormheim)
-				["_quests"] = { 40278 },
-			}),
-			crit(32622, {	-- Trapper Jarrun (Stormheim)
-				["_quests"] = { 41944 },
-			}),
-			crit(32631, {	-- Aulier (Suramar)
-				["_quests"] = { 41895 },
-			}),
-			crit(32640, {	-- Master Tamer Flummox (Suramar)
-				["_quests"] = { 40337 },
-			}),
-			crit(32649, {	-- Varenne (Suramar)
-				["_quests"] = { 41990 },
-			}),
-			crit(32658, {	-- Durian Strongfruit (Val'sharah)
-				["_quests"] = { 40279 },
-			}),
-			crit(32667, {	-- Xorvasc (Val'sharah)
-				["_quests"] = { 41860 },
-			}),
-		})),
-		petbattle(ach(9688, {	-- Mousing Around
-			crit(32542, {	-- Nightwatcher Merayl (Azsuna)
-				["_quests"] = { 42159 },
-			}),
-			crit(32551, {	-- Bodhi Sunwayver (Dalaran)
-				["_quests"] = { 40299 },
-			}),
-			crit(32560, {	-- Tiffany Nelson (Dalaran)
-				["_quests"] = { 40277 },
-			}),
-			crit(32569, {	-- Amalia (Dalaran)
-				["_quests"] = { 42442 },
-			}),
-			crit(32578, {	-- Sir Galveston (Dalaran)
-				["_quests"] = { 40298 },
-			}),
-			crit(32587, {	-- Bredda Tenderhide (Highmountain)
-				["_quests"] = { 40280 },
-			}),
-			crit(32596, {	-- Grixis Tinypop (Highmountain)
-				["_quests"] = { 40282 },
-			}),
-			crit(32605, {	-- Odrogg (Highmountain)
-				["_quests"] = { 41687 },
-			}),
-			crit(32614, {	-- Robert Craig (Stormheim)
-				["_quests"] = { 40278 },
-			}),
-			crit(32623, {	-- Trapper Jarrun (Stormheim)
-				["_quests"] = { 41944 },
-			}),
-			crit(32632, {	-- Aulier (Suramar)
-				["_quests"] = { 41895 },
-			}),
-			crit(32641, {	-- Master Tamer Flummox (Suramar)
-				["_quests"] = { 40337 },
-			}),
-			crit(32650, {	-- Varenne (Suramar)
-				["_quests"] = { 41990 },
-			}),
-			crit(32659, {	-- Durian Strongfruit (Val'sharah)
-				["_quests"] = { 40279 },
-			}),
-			crit(32668, {	-- Xorvasc (Val'sharah)
-				["_quests"] = { 41860 },
-			}),
-		})),
-		petbattle(ach(9689, {	-- Dragons!
-			crit(32543, {	-- Nightwatcher Merayl (Azsuna)
-				["_quests"] = { 42159 },
-			}),
-			crit(32552, {	-- Bodhi Sunwayver (Dalaran)
-				["_quests"] = { 40299 },
-			}),
-			crit(32561, {	-- Tiffany Nelson (Dalaran)
-				["_quests"] = { 40277 },
-			}),
-			crit(32570, {	-- Amalia (Dalaran)
-				["_quests"] = { 42442 },
-			}),
-			crit(32579, {	-- Sir Galveston (Dalaran)
-				["_quests"] = { 40298 },
-			}),
-			crit(32588, {	-- Bredda Tenderhide (Highmountain)
-				["_quests"] = { 40280 },
-			}),
-			crit(32597, {	-- Grixis Tinypop (Highmountain)
-				["_quests"] = { 40282 },
-			}),
-			crit(32606, {	-- Odrogg (Highmountain)
-				["_quests"] = { 41687 },
-			}),
-			crit(32615, {	-- Robert Craig (Stormheim)
-				["_quests"] = { 40278 },
-			}),
-			crit(32624, {	-- Trapper Jarrun (Stormheim)
-				["_quests"] = { 41944 },
-			}),
-			crit(32633, {	-- Aulier (Suramar)
-				["_quests"] = { 41895 },
-			}),
-			crit(32642, {	-- Master Tamer Flummox (Suramar)
-				["_quests"] = { 40337 },
-			}),
-			crit(32651, {	-- Varenne (Suramar)
-				["_quests"] = { 41990 },
-			}),
-			crit(32660, {	-- Durian Strongfruit (Val'sharah)
-				["_quests"] = { 40279 },
-			}),
-			crit(32669, {	-- Xorvasc (Val'sharah)
-				["_quests"] = { 41860 },
-			}),
-		})),
-		petbattle(ach(9690, {	-- Ragnaros, Watch and Learn
-			crit(32544, {	-- Nightwatcher Merayl (Azsuna)
-				["_quests"] = { 42159 },
-			}),
-			crit(32553, {	-- Bodhi Sunwayver (Dalaran)
-				["_quests"] = { 40299 },
-			}),
-			crit(32562, {	-- Tiffany Nelson (Dalaran)
-				["_quests"] = { 40277 },
-			}),
-			crit(32571, {	-- Amalia (Dalaran)
-				["_quests"] = { 42442 },
-			}),
-			crit(32580, {	-- Sir Galveston (Dalaran)
-				["_quests"] = { 40298 },
-			}),
-			crit(32589, {	-- Bredda Tenderhide (Highmountain)
-				["_quests"] = { 40280 },
-			}),
-			crit(32598, {	-- Grixis Tinypop (Highmountain)
-				["_quests"] = { 40282 },
-			}),
-			crit(32607, {	-- Odrogg (Highmountain)
-				["_quests"] = { 41687 },
-			}),
-			crit(32616, {	-- Robert Craig (Stormheim)
-				["_quests"] = { 40278 },
-			}),
-			crit(32625, {	-- Trapper Jarrun (Stormheim)
-				["_quests"] = { 41944 },
-			}),
-			crit(32634, {	-- Aulier (Suramar)
-				["_quests"] = { 41895 },
-			}),
-			crit(32643, {	-- Master Tamer Flummox (Suramar)
-				["_quests"] = { 40337 },
-			}),
-			crit(32652, {	-- Varenne (Suramar)
-				["_quests"] = { 41990 },
-			}),
-			crit(32661, {	-- Durian Strongfruit (Val'sharah)
-				["_quests"] = { 40279 },
-			}),
-			crit(32670, {	-- Xorvasc (Val'sharah)
-				["_quests"] = { 41860 },
-			}),
-		})),
-		petbattle(ach(9691, {	-- Flock Together
-			crit(32545, {	-- Nightwatcher Merayl (Azsuna)
-				["_quests"] = { 42159 },
-			}),
-			crit(32554, {	-- Bodhi Sunwayver (Dalaran)
-				["_quests"] = { 40299 },
-			}),
-			crit(32563, {	-- Tiffany Nelson (Dalaran)
-				["_quests"] = { 40277 },
-			}),
-			crit(32572, {	-- Amalia (Dalaran)
-				["_quests"] = { 42442 },
-			}),
-			crit(32581, {	-- Sir Galveston (Dalaran)
-				["_quests"] = { 40298 },
-			}),
-			crit(32590, {	-- Bredda Tenderhide (Highmountain)
-				["_quests"] = { 40280 },
-			}),
-			crit(32599, {	-- Grixis Tinypop (Highmountain)
-				["_quests"] = { 40282 },
-			}),
-			crit(32608, {	-- Odrogg (Highmountain)
-				["_quests"] = { 41687 },
-			}),
-			crit(32617, {	-- Robert Craig (Stormheim)
-				["_quests"] = { 40278 },
-			}),
-			crit(32626, {	-- Trapper Jarrun (Stormheim)
-				["_quests"] = { 41944 },
-			}),
-			crit(32635, {	-- Aulier (Suramar)
-				["_quests"] = { 41895 },
-			}),
-			crit(32644, {	-- Master Tamer Flummox (Suramar)
-				["_quests"] = { 40337 },
-			}),
-			crit(32653, {	-- Varenne (Suramar)
-				["_quests"] = { 41990 },
-			}),
-			crit(32662, {	-- Durian Strongfruit (Val'sharah)
-				["_quests"] = { 40279 },
-			}),
-			crit(32671, {	-- Xorvasc (Val'sharah)
-				["_quests"] = { 41860 },
-			}),
-		})),
-		petbattle(ach(9692, {	-- Murlocs, Harpies, and Wolvar, Oh My!
-			crit(32549, {	-- Nightwatcher Merayl (Azsuna)
-				["_quests"] = { 42159 },
-			}),
-			crit(32555, {	-- Bodhi Sunwayver (Dalaran)
-				["_quests"] = { 40299 },
-			}),
-			crit(32564, {	-- Tiffany Nelson (Dalaran)
-				["_quests"] = { 40277 },
-			}),
-			crit(32573, {	-- Amalia (Dalaran)
-				["_quests"] = { 42442 },
-			}),
-			crit(32582, {	-- Sir Galveston (Dalaran)
-				["_quests"] = { 40298 },
-			}),
-			crit(32591, {	-- Bredda Tenderhide (Highmountain)
-				["_quests"] = { 40280 },
-			}),
-			crit(32600, {	-- Grixis Tinypop (Highmountain)
-				["_quests"] = { 40282 },
-			}),
-			crit(32609, {	-- Odrogg (Highmountain)
-				["_quests"] = { 41687 },
-			}),
-			crit(32618, {	-- Robert Craig (Stormheim)
-				["_quests"] = { 40278 },
-			}),
-			crit(32627, {	-- Trapper Jarrun (Stormheim)
-				["_quests"] = { 41944 },
-			}),
-			crit(32636, {	-- Aulier (Suramar)
-				["_quests"] = { 41895 },
-			}),
-			crit(32645, {	-- Master Tamer Flummox (Suramar)
-				["_quests"] = { 40337 },
-			}),
-			crit(32654, {	-- Varenne (Suramar)
-				["_quests"] = { 41990 },
-			}),
-			crit(32663, {	-- Durian Strongfruit (Val'sharah)
-				["_quests"] = { 40279 },
-			}),
-			crit(32672, {	-- Xorvasc (Val'sharah)
-				["_quests"] = { 41860 },
-			}),
-		})),
-		petbattle(ach(9693, {	-- Master of Magic
-			crit(32546, {	-- Nightwatcher Merayl (Azsuna)
-				["_quests"] = { 42159 },
-			}),
-			crit(32556, {	-- Bodhi Sunwayver (Dalaran)
-				["_quests"] = { 40299 },
-			}),
-			crit(32565, {	-- Tiffany Nelson (Dalaran)
-				["_quests"] = { 40277 },
-			}),
-			crit(32574, {	-- Amalia (Dalaran)
-				["_quests"] = { 42442 },
-			}),
-			crit(32583, {	-- Sir Galveston (Dalaran)
-				["_quests"] = { 40298 },
-			}),
-			crit(32592, {	-- Bredda Tenderhide (Highmountain)
-				["_quests"] = { 40280 },
-			}),
-			crit(32601, {	-- Grixis Tinypop (Highmountain)
-				["_quests"] = { 40282 },
-			}),
-			crit(32610, {	-- Odrogg (Highmountain)
-				["_quests"] = { 41687 },
-			}),
-			crit(32619, {	-- Robert Craig (Stormheim)
-				["_quests"] = { 40278 },
-			}),
-			crit(32628, {	-- Trapper Jarrun (Stormheim)
-				["_quests"] = { 41944 },
-			}),
-			crit(32637, {	-- Aulier (Suramar)
-				["_quests"] = { 41895 },
-			}),
-			crit(32646, {	-- Master Tamer Flummox (Suramar)
-				["_quests"] = { 40337 },
-			}),
-			crit(32655, {	-- Varenne (Suramar)
-				["_quests"] = { 41990 },
-			}),
-			crit(32664, {	-- Durian Strongfruit (Val'sharah)
-				["_quests"] = { 40279 },
-			}),
-			crit(32673, {	-- Xorvasc (Val'sharah)
-				["_quests"] = { 41860 },
-			}),
-		})),
-		petbattle(ach(9694, {	-- Roboteer
-			crit(32547, {	-- Nightwatcher Merayl (Azsuna)
-				["_quests"] = { 42159 },
-			}),
-			crit(32557, {	-- Bodhi Sunwayver (Dalaran)
-				["_quests"] = { 40299 },
-			}),
-			crit(32566, {	-- Tiffany Nelson (Dalaran)
-				["_quests"] = { 40277 },
-			}),
-			crit(32575, {	-- Amalia (Dalaran)
-				["_quests"] = { 42442 },
-			}),
-			crit(32584, {	-- Sir Galveston (Dalaran)
-				["_quests"] = { 40298 },
-			}),
-			crit(32593, {	-- Bredda Tenderhide (Highmountain)
-				["_quests"] = { 40280 },
-			}),
-			crit(32602, {	-- Grixis Tinypop (Highmountain)
-				["_quests"] = { 40282 },
-			}),
-			crit(32611, {	-- Odrogg (Highmountain)
-				["_quests"] = { 41687 },
-			}),
-			crit(32620, {	-- Robert Craig (Stormheim)
-				["_quests"] = { 40278 },
-			}),
-			crit(32629, {	-- Trapper Jarrun (Stormheim)
-				["_quests"] = { 41944 },
-			}),
-			crit(32638, {	-- Aulier (Suramar)
-				["_quests"] = { 41895 },
-			}),
-			crit(32647, {	-- Master Tamer Flummox (Suramar)
-				["_quests"] = { 40337 },
-			}),
-			crit(32656, {	-- Varenne (Suramar)
-				["_quests"] = { 41990 },
-			}),
-			crit(32665, {	-- Durian Strongfruit (Val'sharah)
-				["_quests"] = { 40279 },
-			}),
-			crit(32674, {	-- Xorvasc (Val'sharah)
-				["_quests"] = { 41860 },
-			}),
-		})),
-		petbattle(ach(9695, {	-- The Lil' Necromancer
-			crit(32548, {	-- Nightwatcher Merayl (Azsuna)
-				["_quests"] = { 42159 },
-			}),
-			crit(32558, {	-- Bodhi Sunwayver (Dalaran)
-				["_quests"] = { 40299 },
-			}),
-			crit(32567, {	-- Tiffany Nelson (Dalaran)
-				["_quests"] = { 40277 },
-			}),
-			crit(32576, {	-- Amalia (Dalaran)
-				["_quests"] = { 42442 },
-			}),
-			crit(32585, {	-- Sir Galveston (Dalaran)
-				["_quests"] = { 40298 },
-			}),
-			crit(32594, {	-- Bredda Tenderhide (Highmountain)
-				["_quests"] = { 40280 },
-			}),
-			crit(32603, {	-- Grixis Tinypop (Highmountain)
-				["_quests"] = { 40282 },
-			}),
-			crit(32612, {	-- Odrogg (Highmountain)
-				["_quests"] = { 41687 },
-			}),
-			crit(32621, {	-- Robert Craig (Stormheim)
-				["_quests"] = { 40278 },
-			}),
-			crit(32630, {	-- Trapper Jarrun (Stormheim)
-				["_quests"] = { 41944 },
-			}),
-			crit(32639, {	-- Aulier (Suramar)
-				["_quests"] = { 41895 },
-			}),
-			crit(32648, {	-- Master Tamer Flummox (Suramar)
-				["_quests"] = { 40337 },
-			}),
-			crit(32657, {	-- Varenne (Suramar)
-				["_quests"] = { 41990 },
-			}),
-			crit(32666, {	-- Durian Strongfruit (Val'sharah)
-				["_quests"] = { 40279 },
-			}),
-			crit(32675, {	-- Xorvasc (Val'sharah)
-				["_quests"] = { 41860 },
-			}),
-		})),
+		n(FAMILY_BATTLER, {
+			petbattle(ach(9696, {	-- Family Familiar
+				-- Meta Achievement should symlink the contained Achievements from Source
+				["sym"] = {{"meta_achievement",
+					9686,	-- Aquatic Acquiescence
+					9687,	-- Best of the Beasts
+					9688,	-- Mousing Around
+					9689,	-- Dragons!
+					9690,	-- Ragnaros, Watch and Learn
+					9691,	-- Flock Together
+					9692,	-- Murlocs, Harpies, and Wolvar, Oh My!
+					9693,	-- Master of Magic
+					9694,	-- Roboteer
+					9695,	-- The Lil' Necromancer
+				}},
+				["groups"] = {
+					i(140761),	-- Nightmare Treant (PET!)
+				},
+			})),
+			petbattle(ach(9686, {	-- Aquatic Acquiescence
+				crit(32483, {	-- Nightwatcher Merayl (Azsuna)
+					["_quests"] = { 42159 },
+				}),
+				crit(32476, {	-- Bodhi Sunwayver (Dalaran)
+					["_quests"] = { 40299 },
+				}),
+				crit(32489, {	-- Tiffany Nelson (Dalaran)
+					["_quests"] = { 40277 },
+				}),
+				crit(32465, {	-- Amalia (Dalaran)
+					["_quests"] = { 42442 },
+				}),
+				crit(32485, {	-- Sir Galveston (Dalaran)
+					["_quests"] = { 40298 },
+				}),
+				crit(32477, {	-- Bredda Tenderhide (Highmountain)
+					["_quests"] = { 40280 },
+				}),
+				crit(32480, {	-- Grixis Tinypop (Highmountain)
+					["_quests"] = { 40282 },
+				}),
+				crit(32470, {	-- Odrogg (Highmountain)
+					["_quests"] = { 41687 },
+				}),
+				crit(32484, {	-- Robert Craig (Stormheim)
+					["_quests"] = { 40278 },
+				}),
+				crit(32490, {	-- Trapper Jarrun (Stormheim)
+					["_quests"] = { 41944 },
+				}),
+				crit(32466, {	-- Aulier (Suramar)
+					["_quests"] = { 41895 },
+				}),
+				crit(32492, {	-- Master Tamer Flummox (Suramar)
+					["_quests"] = { 40337 },
+				}),
+				crit(32472, {	-- Varenne (Suramar)
+					["_quests"] = { 41990 },
+				}),
+				crit(32478, {	-- Durian Strongfruit (Val'sharah)
+					["_quests"] = { 40279 },
+				}),
+				crit(32474, {	-- Xorvasc (Val'sharah)
+					["_quests"] = { 41860 },
+				}),
+			})),
+			petbattle(ach(9687, {	-- Best of the Beasts
+				crit(32541, {	-- Nightwatcher Merayl (Azsuna)
+					["_quests"] = { 42159 },
+				}),
+				crit(32550, {	-- Bodhi Sunwayver (Dalaran)
+					["_quests"] = { 40299 },
+				}),
+				crit(32559, {	-- Tiffany Nelson (Dalaran)
+					["_quests"] = { 40277 },
+				}),
+				crit(32568, {	-- Amalia (Dalaran)
+					["_quests"] = { 42442 },
+				}),
+				crit(32577, {	-- Sir Galveston (Dalaran)
+					["_quests"] = { 40298 },
+				}),
+				crit(32586, {	-- Bredda Tenderhide (Highmountain)
+					["_quests"] = { 40280 },
+				}),
+				crit(32595, {	-- Grixis Tinypop (Highmountain)
+					["_quests"] = { 40282 },
+				}),
+				crit(32604, {	-- Odrogg (Highmountain)
+					["_quests"] = { 41687 },
+				}),
+				crit(32613, {	-- Robert Craig (Stormheim)
+					["_quests"] = { 40278 },
+				}),
+				crit(32622, {	-- Trapper Jarrun (Stormheim)
+					["_quests"] = { 41944 },
+				}),
+				crit(32631, {	-- Aulier (Suramar)
+					["_quests"] = { 41895 },
+				}),
+				crit(32640, {	-- Master Tamer Flummox (Suramar)
+					["_quests"] = { 40337 },
+				}),
+				crit(32649, {	-- Varenne (Suramar)
+					["_quests"] = { 41990 },
+				}),
+				crit(32658, {	-- Durian Strongfruit (Val'sharah)
+					["_quests"] = { 40279 },
+				}),
+				crit(32667, {	-- Xorvasc (Val'sharah)
+					["_quests"] = { 41860 },
+				}),
+			})),
+			petbattle(ach(9688, {	-- Mousing Around
+				crit(32542, {	-- Nightwatcher Merayl (Azsuna)
+					["_quests"] = { 42159 },
+				}),
+				crit(32551, {	-- Bodhi Sunwayver (Dalaran)
+					["_quests"] = { 40299 },
+				}),
+				crit(32560, {	-- Tiffany Nelson (Dalaran)
+					["_quests"] = { 40277 },
+				}),
+				crit(32569, {	-- Amalia (Dalaran)
+					["_quests"] = { 42442 },
+				}),
+				crit(32578, {	-- Sir Galveston (Dalaran)
+					["_quests"] = { 40298 },
+				}),
+				crit(32587, {	-- Bredda Tenderhide (Highmountain)
+					["_quests"] = { 40280 },
+				}),
+				crit(32596, {	-- Grixis Tinypop (Highmountain)
+					["_quests"] = { 40282 },
+				}),
+				crit(32605, {	-- Odrogg (Highmountain)
+					["_quests"] = { 41687 },
+				}),
+				crit(32614, {	-- Robert Craig (Stormheim)
+					["_quests"] = { 40278 },
+				}),
+				crit(32623, {	-- Trapper Jarrun (Stormheim)
+					["_quests"] = { 41944 },
+				}),
+				crit(32632, {	-- Aulier (Suramar)
+					["_quests"] = { 41895 },
+				}),
+				crit(32641, {	-- Master Tamer Flummox (Suramar)
+					["_quests"] = { 40337 },
+				}),
+				crit(32650, {	-- Varenne (Suramar)
+					["_quests"] = { 41990 },
+				}),
+				crit(32659, {	-- Durian Strongfruit (Val'sharah)
+					["_quests"] = { 40279 },
+				}),
+				crit(32668, {	-- Xorvasc (Val'sharah)
+					["_quests"] = { 41860 },
+				}),
+			})),
+			petbattle(ach(9689, {	-- Dragons!
+				crit(32543, {	-- Nightwatcher Merayl (Azsuna)
+					["_quests"] = { 42159 },
+				}),
+				crit(32552, {	-- Bodhi Sunwayver (Dalaran)
+					["_quests"] = { 40299 },
+				}),
+				crit(32561, {	-- Tiffany Nelson (Dalaran)
+					["_quests"] = { 40277 },
+				}),
+				crit(32570, {	-- Amalia (Dalaran)
+					["_quests"] = { 42442 },
+				}),
+				crit(32579, {	-- Sir Galveston (Dalaran)
+					["_quests"] = { 40298 },
+				}),
+				crit(32588, {	-- Bredda Tenderhide (Highmountain)
+					["_quests"] = { 40280 },
+				}),
+				crit(32597, {	-- Grixis Tinypop (Highmountain)
+					["_quests"] = { 40282 },
+				}),
+				crit(32606, {	-- Odrogg (Highmountain)
+					["_quests"] = { 41687 },
+				}),
+				crit(32615, {	-- Robert Craig (Stormheim)
+					["_quests"] = { 40278 },
+				}),
+				crit(32624, {	-- Trapper Jarrun (Stormheim)
+					["_quests"] = { 41944 },
+				}),
+				crit(32633, {	-- Aulier (Suramar)
+					["_quests"] = { 41895 },
+				}),
+				crit(32642, {	-- Master Tamer Flummox (Suramar)
+					["_quests"] = { 40337 },
+				}),
+				crit(32651, {	-- Varenne (Suramar)
+					["_quests"] = { 41990 },
+				}),
+				crit(32660, {	-- Durian Strongfruit (Val'sharah)
+					["_quests"] = { 40279 },
+				}),
+				crit(32669, {	-- Xorvasc (Val'sharah)
+					["_quests"] = { 41860 },
+				}),
+			})),
+			petbattle(ach(9690, {	-- Ragnaros, Watch and Learn
+				crit(32544, {	-- Nightwatcher Merayl (Azsuna)
+					["_quests"] = { 42159 },
+				}),
+				crit(32553, {	-- Bodhi Sunwayver (Dalaran)
+					["_quests"] = { 40299 },
+				}),
+				crit(32562, {	-- Tiffany Nelson (Dalaran)
+					["_quests"] = { 40277 },
+				}),
+				crit(32571, {	-- Amalia (Dalaran)
+					["_quests"] = { 42442 },
+				}),
+				crit(32580, {	-- Sir Galveston (Dalaran)
+					["_quests"] = { 40298 },
+				}),
+				crit(32589, {	-- Bredda Tenderhide (Highmountain)
+					["_quests"] = { 40280 },
+				}),
+				crit(32598, {	-- Grixis Tinypop (Highmountain)
+					["_quests"] = { 40282 },
+				}),
+				crit(32607, {	-- Odrogg (Highmountain)
+					["_quests"] = { 41687 },
+				}),
+				crit(32616, {	-- Robert Craig (Stormheim)
+					["_quests"] = { 40278 },
+				}),
+				crit(32625, {	-- Trapper Jarrun (Stormheim)
+					["_quests"] = { 41944 },
+				}),
+				crit(32634, {	-- Aulier (Suramar)
+					["_quests"] = { 41895 },
+				}),
+				crit(32643, {	-- Master Tamer Flummox (Suramar)
+					["_quests"] = { 40337 },
+				}),
+				crit(32652, {	-- Varenne (Suramar)
+					["_quests"] = { 41990 },
+				}),
+				crit(32661, {	-- Durian Strongfruit (Val'sharah)
+					["_quests"] = { 40279 },
+				}),
+				crit(32670, {	-- Xorvasc (Val'sharah)
+					["_quests"] = { 41860 },
+				}),
+			})),
+			petbattle(ach(9691, {	-- Flock Together
+				crit(32545, {	-- Nightwatcher Merayl (Azsuna)
+					["_quests"] = { 42159 },
+				}),
+				crit(32554, {	-- Bodhi Sunwayver (Dalaran)
+					["_quests"] = { 40299 },
+				}),
+				crit(32563, {	-- Tiffany Nelson (Dalaran)
+					["_quests"] = { 40277 },
+				}),
+				crit(32572, {	-- Amalia (Dalaran)
+					["_quests"] = { 42442 },
+				}),
+				crit(32581, {	-- Sir Galveston (Dalaran)
+					["_quests"] = { 40298 },
+				}),
+				crit(32590, {	-- Bredda Tenderhide (Highmountain)
+					["_quests"] = { 40280 },
+				}),
+				crit(32599, {	-- Grixis Tinypop (Highmountain)
+					["_quests"] = { 40282 },
+				}),
+				crit(32608, {	-- Odrogg (Highmountain)
+					["_quests"] = { 41687 },
+				}),
+				crit(32617, {	-- Robert Craig (Stormheim)
+					["_quests"] = { 40278 },
+				}),
+				crit(32626, {	-- Trapper Jarrun (Stormheim)
+					["_quests"] = { 41944 },
+				}),
+				crit(32635, {	-- Aulier (Suramar)
+					["_quests"] = { 41895 },
+				}),
+				crit(32644, {	-- Master Tamer Flummox (Suramar)
+					["_quests"] = { 40337 },
+				}),
+				crit(32653, {	-- Varenne (Suramar)
+					["_quests"] = { 41990 },
+				}),
+				crit(32662, {	-- Durian Strongfruit (Val'sharah)
+					["_quests"] = { 40279 },
+				}),
+				crit(32671, {	-- Xorvasc (Val'sharah)
+					["_quests"] = { 41860 },
+				}),
+			})),
+			petbattle(ach(9692, {	-- Murlocs, Harpies, and Wolvar, Oh My!
+				crit(32549, {	-- Nightwatcher Merayl (Azsuna)
+					["_quests"] = { 42159 },
+				}),
+				crit(32555, {	-- Bodhi Sunwayver (Dalaran)
+					["_quests"] = { 40299 },
+				}),
+				crit(32564, {	-- Tiffany Nelson (Dalaran)
+					["_quests"] = { 40277 },
+				}),
+				crit(32573, {	-- Amalia (Dalaran)
+					["_quests"] = { 42442 },
+				}),
+				crit(32582, {	-- Sir Galveston (Dalaran)
+					["_quests"] = { 40298 },
+				}),
+				crit(32591, {	-- Bredda Tenderhide (Highmountain)
+					["_quests"] = { 40280 },
+				}),
+				crit(32600, {	-- Grixis Tinypop (Highmountain)
+					["_quests"] = { 40282 },
+				}),
+				crit(32609, {	-- Odrogg (Highmountain)
+					["_quests"] = { 41687 },
+				}),
+				crit(32618, {	-- Robert Craig (Stormheim)
+					["_quests"] = { 40278 },
+				}),
+				crit(32627, {	-- Trapper Jarrun (Stormheim)
+					["_quests"] = { 41944 },
+				}),
+				crit(32636, {	-- Aulier (Suramar)
+					["_quests"] = { 41895 },
+				}),
+				crit(32645, {	-- Master Tamer Flummox (Suramar)
+					["_quests"] = { 40337 },
+				}),
+				crit(32654, {	-- Varenne (Suramar)
+					["_quests"] = { 41990 },
+				}),
+				crit(32663, {	-- Durian Strongfruit (Val'sharah)
+					["_quests"] = { 40279 },
+				}),
+				crit(32672, {	-- Xorvasc (Val'sharah)
+					["_quests"] = { 41860 },
+				}),
+			})),
+			petbattle(ach(9693, {	-- Master of Magic
+				crit(32546, {	-- Nightwatcher Merayl (Azsuna)
+					["_quests"] = { 42159 },
+				}),
+				crit(32556, {	-- Bodhi Sunwayver (Dalaran)
+					["_quests"] = { 40299 },
+				}),
+				crit(32565, {	-- Tiffany Nelson (Dalaran)
+					["_quests"] = { 40277 },
+				}),
+				crit(32574, {	-- Amalia (Dalaran)
+					["_quests"] = { 42442 },
+				}),
+				crit(32583, {	-- Sir Galveston (Dalaran)
+					["_quests"] = { 40298 },
+				}),
+				crit(32592, {	-- Bredda Tenderhide (Highmountain)
+					["_quests"] = { 40280 },
+				}),
+				crit(32601, {	-- Grixis Tinypop (Highmountain)
+					["_quests"] = { 40282 },
+				}),
+				crit(32610, {	-- Odrogg (Highmountain)
+					["_quests"] = { 41687 },
+				}),
+				crit(32619, {	-- Robert Craig (Stormheim)
+					["_quests"] = { 40278 },
+				}),
+				crit(32628, {	-- Trapper Jarrun (Stormheim)
+					["_quests"] = { 41944 },
+				}),
+				crit(32637, {	-- Aulier (Suramar)
+					["_quests"] = { 41895 },
+				}),
+				crit(32646, {	-- Master Tamer Flummox (Suramar)
+					["_quests"] = { 40337 },
+				}),
+				crit(32655, {	-- Varenne (Suramar)
+					["_quests"] = { 41990 },
+				}),
+				crit(32664, {	-- Durian Strongfruit (Val'sharah)
+					["_quests"] = { 40279 },
+				}),
+				crit(32673, {	-- Xorvasc (Val'sharah)
+					["_quests"] = { 41860 },
+				}),
+			})),
+			petbattle(ach(9694, {	-- Roboteer
+				crit(32547, {	-- Nightwatcher Merayl (Azsuna)
+					["_quests"] = { 42159 },
+				}),
+				crit(32557, {	-- Bodhi Sunwayver (Dalaran)
+					["_quests"] = { 40299 },
+				}),
+				crit(32566, {	-- Tiffany Nelson (Dalaran)
+					["_quests"] = { 40277 },
+				}),
+				crit(32575, {	-- Amalia (Dalaran)
+					["_quests"] = { 42442 },
+				}),
+				crit(32584, {	-- Sir Galveston (Dalaran)
+					["_quests"] = { 40298 },
+				}),
+				crit(32593, {	-- Bredda Tenderhide (Highmountain)
+					["_quests"] = { 40280 },
+				}),
+				crit(32602, {	-- Grixis Tinypop (Highmountain)
+					["_quests"] = { 40282 },
+				}),
+				crit(32611, {	-- Odrogg (Highmountain)
+					["_quests"] = { 41687 },
+				}),
+				crit(32620, {	-- Robert Craig (Stormheim)
+					["_quests"] = { 40278 },
+				}),
+				crit(32629, {	-- Trapper Jarrun (Stormheim)
+					["_quests"] = { 41944 },
+				}),
+				crit(32638, {	-- Aulier (Suramar)
+					["_quests"] = { 41895 },
+				}),
+				crit(32647, {	-- Master Tamer Flummox (Suramar)
+					["_quests"] = { 40337 },
+				}),
+				crit(32656, {	-- Varenne (Suramar)
+					["_quests"] = { 41990 },
+				}),
+				crit(32665, {	-- Durian Strongfruit (Val'sharah)
+					["_quests"] = { 40279 },
+				}),
+				crit(32674, {	-- Xorvasc (Val'sharah)
+					["_quests"] = { 41860 },
+				}),
+			})),
+			petbattle(ach(9695, {	-- The Lil' Necromancer
+				crit(32548, {	-- Nightwatcher Merayl (Azsuna)
+					["_quests"] = { 42159 },
+				}),
+				crit(32558, {	-- Bodhi Sunwayver (Dalaran)
+					["_quests"] = { 40299 },
+				}),
+				crit(32567, {	-- Tiffany Nelson (Dalaran)
+					["_quests"] = { 40277 },
+				}),
+				crit(32576, {	-- Amalia (Dalaran)
+					["_quests"] = { 42442 },
+				}),
+				crit(32585, {	-- Sir Galveston (Dalaran)
+					["_quests"] = { 40298 },
+				}),
+				crit(32594, {	-- Bredda Tenderhide (Highmountain)
+					["_quests"] = { 40280 },
+				}),
+				crit(32603, {	-- Grixis Tinypop (Highmountain)
+					["_quests"] = { 40282 },
+				}),
+				crit(32612, {	-- Odrogg (Highmountain)
+					["_quests"] = { 41687 },
+				}),
+				crit(32621, {	-- Robert Craig (Stormheim)
+					["_quests"] = { 40278 },
+				}),
+				crit(32630, {	-- Trapper Jarrun (Stormheim)
+					["_quests"] = { 41944 },
+				}),
+				crit(32639, {	-- Aulier (Suramar)
+					["_quests"] = { 41895 },
+				}),
+				crit(32648, {	-- Master Tamer Flummox (Suramar)
+					["_quests"] = { 40337 },
+				}),
+				crit(32657, {	-- Varenne (Suramar)
+					["_quests"] = { 41990 },
+				}),
+				crit(32666, {	-- Durian Strongfruit (Val'sharah)
+					["_quests"] = { 40279 },
+				}),
+				crit(32675, {	-- Xorvasc (Val'sharah)
+					["_quests"] = { 41860 },
+				}),
+			})),
+		}),
 		ach(11474, {	-- Free For All, More For Me
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
