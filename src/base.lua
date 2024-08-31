@@ -75,10 +75,12 @@ local function CloneArray(arr)
 	end
 	return clone;
 end
-local function CloneDictionary(data)
-	local clone = {};
+local function CloneDictionary(data, clone)
+	local clone = clone or {};
 	for key,value in pairs(data) do
-		clone[key] = value;
+		if clone[key] == nil then
+			clone[key] = value;
+		end
 	end
 	return clone;
 end
