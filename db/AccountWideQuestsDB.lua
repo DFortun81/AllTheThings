@@ -1409,4 +1409,9 @@ select(2, ...).AccountWideQuestsDB = {
 	[84117] = true,
 	[84118] = true,
 	[84119] = true,
+	[82778] = true, 	-- Hallowfall Fishing Derby
+	[83529] = true, 	-- Hallowfall Fishing Derby
+	[83530] = true, 	-- Hallowfall Fishing Derby
+	[83531] = true, 	-- Hallowfall Fishing Derby
+	[83532] = true, 	-- Hallowfall Fishing Derby
 }
