@@ -4,7 +4,7 @@
 local DERBY_MARK = 3055;
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(HALLOWFALL, {
-		header(HEADERS.Quest, 82778, {	-- Mereldar Fishing Derby
+		header(HEADERS.Quest, 82778, {	-- Hallowfall Fishing Derby
 			["description"] = "This event is available every Saturday.",
 			["icon"] = "Interface\\Icons\\inv_11_0_misc_darkmoonfaresigil_color5",
 			["requireSkill"] = FISHING,
@@ -15,14 +15,40 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 				}),
 				n(QUESTS, {
-					q(82778, {	-- Mereldar Fishing Derby
+					q(82778, {	-- Hallowfall Fishing Derby
+						["description"] = "Nibbling Minnow, Arathor Hammerfish, Queen's Lureback",
 						["provider"] = { "n", 226846 },	--  Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["g"] = {
 							i(DERBY_MARK),
 						},
 					}),
-					q(83529, {	-- Mereldar Fishing Derby
+					q(83529, {	-- Hallowfall Fishing Derby
+						["description"] = "Bismuth Bitterling, Whispering Stargazer, Regal Dottyback",
+						["provider"] = { "n", 226846 },	--  Captain Oathmyt
+						["coord"] = { 44.2, 61.4, HALLOWFALL },
+						["g"] = {
+							i(DERBY_MARK),
+						},
+					}),
+					q(83530, {	-- Hallowfall Fishing Derby
+						["description"] = "Bloody Perch, Roaring Anglerseeker, Spiked Sea Raven",
+						["provider"] = { "n", 226846 },	--  Captain Oathmyt
+						["coord"] = { 44.2, 61.4, HALLOWFALL },
+						["g"] = {
+							i(DERBY_MARK),
+						},
+					}),
+					q(83531, {	-- Hallowfall Fishing Derby
+						["description"] = "Dilly-Dally Dace, Dornish Pike, Azj-Kahet Slum Shark",
+						["provider"] = { "n", 226846 },	--  Captain Oathmyt
+						["coord"] = { 44.2, 61.4, HALLOWFALL },
+						["g"] = {
+							i(DERBY_MARK),
+						},
+					}),
+					q(83532, {	-- Hallowfall Fishing Derby
+						["description"] = "Crystalline Sturgeon, Specular Rainbowfish, Sanguine Dogfish",
 						["provider"] = { "n", 226846 },	--  Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["g"] = {
@@ -89,7 +115,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(KHAZ_ALGAR, {
 		m(HALLOWFALL, {
-			header(HEADERS.Quest, 82778, {	-- Mereldar Fishing Derby
+			header(HEADERS.Quest, 82778, {	-- Hallowfall Fishing Derby
 				q(82928),	-- Arathor Hammerfish
 				q(82920),	-- Bismuth Bitterling
 				q(82918),	-- Bloody Perch

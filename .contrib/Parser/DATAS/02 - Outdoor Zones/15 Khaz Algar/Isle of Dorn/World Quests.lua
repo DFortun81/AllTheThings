@@ -97,6 +97,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81799, {	-- Skyrider Racing - Dornogal Drift
 					["coord"] = { 43.5, 11.7, DORNOGAL },	-- probably gonna need to move out of here
 				}),
+				q(81806, {	-- Skyrider Racing - Orecreg's Doglegs
+					["coord"] = { 32.9, 74.6, ISLE_OF_DORN },
+				}),
 				q(81802, {	-- Skyrider Racing - Storm's Watch Survey
 					["coord"] = { 38.6, 43.6, ISLE_OF_DORN },
 				}),

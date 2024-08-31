@@ -671,7 +671,6 @@ root(ROOTS.Unsorted, {
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
 				i(225997),	-- Earthen Adventurer's Spaulders
 				i(226000),	-- Ensemble: Earthen Adventurer's Copper Drapery
-				i(226019),	-- Darkened Arathi Shoulderguards
 				i(226363),	-- Earthen Backpack
 				i(226366),	-- Gloves of the Morning Mist
 				i(226367),	-- Ugly Black Boots
@@ -1358,11 +1357,7 @@ root(ROOTS.Unsorted, {
 				i(224180),	-- Worn Journal
 				i(224182),	-- Webbed Ingots
 				i(224252),	-- Calcified Journal
-
 				i(224460),	-- The Lost Diary
-				i(224463),	-- Lily's Locket
-				i(224486),	-- Uncle's Eye
-				i(224545),	-- Plowhead
 				i(224777),	-- Sureki Shadecaster
 				i(224810),	-- Woodworm Elixir
 				i(225336),	-- A Lost Shoe

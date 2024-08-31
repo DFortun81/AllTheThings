@@ -8,6 +8,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["maps"] = { HALLOWFALL },
 				--["questID"] = xx,
 				["g"] = {
+					i(224463),	-- Lily's Locket (QS!)
 					i(224466),	-- Wilber The Chicken (QS!)
 				},
 			}),

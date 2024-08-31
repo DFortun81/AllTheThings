@@ -151,10 +151,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(220268, {	-- Trungal
-				["description"] = "Kill roots of trungal on way to him to make him jump out of terrain",
+				["description"] = "Kill roots of Trungal on way to him to make him jump out of terrain",
 				["coord"] = { 71.8, 46.3, THE_RINGING_DEEPS },
 				["questID"] = 80574,
 				["g"] = {
+					i(221250),	-- Creeping Lasher Machete
 					i(221253),	-- Cultivator's Plant Puncher
 					i(221228),	-- Infested Fungal Wristwraps
 				},

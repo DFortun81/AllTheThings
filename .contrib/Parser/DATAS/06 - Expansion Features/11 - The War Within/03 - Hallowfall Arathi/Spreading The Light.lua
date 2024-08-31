@@ -82,25 +82,52 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					i(229155),	-- Lamplighter's Greataxe
 					i(229061),	-- Nisa's Spare Belt
+					i(224545, {	-- Plowhead
+						["crs"] = { 206067, } -- Dark-Crazed Harvester
+					}),
+					i(212330, {	-- Shadow-Hardened Mainspring
+						["crs"] = { 206067, } -- Dark-Crazed Harvester
+					}),
+					i(224486, {	-- Uncle's Eye
+						["crs"] = { 206194, } -- Invasive Lashroom
+					}),
 				}),
 				n(QUESTS, {
-					-- TODO: Expand this /maybe SpeciaL?
+					q(82006, {	-- Speak to Attica Whiskervale
+						["name"] = "Speak to Attica Whiskervale",
+						["description"] = "Speak to Attica Whiskervale about Captain Lancekat. If Attica is not there, relight the nearby lesser keyflame.",
+						["sourceQuests"] = { 78472 },	-- Keyflame: Attica Whiskervale
+						["provider"] = { "n", 212419 },	-- Attica Whiskervale
+						["coord"] = { 64.5, 18.8, HALLOWFALL },
+					}),
 					q(82007, {	-- Tale of Tails
-						i(220782),	-- Thunder (PET!)
+						["sourceQuests"] = { 82006 },	-- Step 1: Speak to Attica Whiskervale
+						["g"] = {
+							i(220782),	-- Thunder (PET!)
+						},
 					}),
 					-- unsure if this is only related to this EF or can be looted outside of it
 					q(79225, {	-- The Lost Flame
-						["provider"] = { "i", 212333 },	-- Expedition Tinderbox
+						["provider"] = { "i", 212333 },	-- Expedition Tinderbox (QS!/QI!)
 						["coord"] = { 61.1, 9.6, HALLOWFALL },
 					}),
-					q(82963, {	-- Hillhelm Family: Lil Piggy'
-						["provider"] = { "i", 224457 },	-- Lil Piggy
+					q(79222, {	-- Shadow-Hardened Mainspring
+						["provider"] = { "i", 212330 },	-- Shadow-Hardened Mainspring (QS!/QI!)
+					}),
+					q(82963, {	-- Hillhelm Family: Lil Piggy
+						["provider"] = { "i", 224457 },	-- Lil Piggy (QS!/QI!)
 					}),
 					q(82967, {	-- Hillhelm Family: The Ear
-						["provider"] = { "i", 224462 },	-- The Ear
+						["provider"] = { "i", 224462 },	-- The Ear (QS!/QI!)
+					}),
+					q(82968, {	-- Hillhelm Family: The Plowhead
+						["provider"] = { "i", 224545 },	-- The Plowhead (QS!/QI!)
+					}),
+					q(82964, {	-- Hillhelm Family: Uncle's Eye
+						["provider"] = { "i", 224486 },	-- Uncle's Eye (QS!/QI!)
 					}),
 					q(82966, {	-- Hillhelm Family: Unusual Potato
-						["provider"] = { "i", 224465 },	-- Unusual Potato
+						["provider"] = { "i", 224465 },	-- Unusual Potato (QS!/QI!)
 					}),
 				}),
 				n(QUESTS, sharedData({ ["isWeekly"] = true }, {
@@ -398,6 +425,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						--["isWeekly"] = true,
 						["g"] = {
 							i(226016),	-- Darkened Tabard of the Arathi
+							i(224466),	-- Wilber The Chicken (QS!)
 						},
 					}),
 					o(437112, {	-- Claimmer's Kit
@@ -407,6 +435,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						--["isWeekly"] = true,
 						["g"] = {
 							i(218354),	-- Clammer's Pry Bar
+						},
+					}),
+					o(423971, {	-- Coral-Fused Clam
+						["coord"] = { 64.0, 6.2, HALLOWFALL },
+						--["questID"] = ,
+						--["isWeekly"] = true,
+						["cost"] = { { "i", 218354, 1 }, },	-- 1x Clammer's Pry Bar
+						["g"] = {
+							i(226019),	-- Darkened Arathi Shoulderguards
 						},
 					}),
 					o(457271, {	-- Crabber Supplies
@@ -430,10 +467,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["cost"] = { { "i", 216528, 1 }, },	-- 1x Faded Supply Chest Key
 					}),
 					o(441723, {	-- Farm Satchel
-						["description"] = "Likely requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 64.9, 25.7, HALLOWFALL },
 						--["questID"] = ,
 						["g"] = {
+							i(226019),	-- Darkened Arathi Shoulderguards
 							i(224466),	-- Wilber The Chicken (QS!)
 						},
 					}),
@@ -441,12 +479,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["description"] = "Requires weekly quest with controlling Harvestbot Remy to spawn.",
 						["coord"] = { 61.6, 32.6, HALLOWFALL },
 						["questID"] = 80590,
-						--["isWeekly"] = true,
 						["g"] = {
 							i(226016),	-- Darkened Tabard of the Arathi
 						},
 					}),
-					o(441795, {	-- Hallowfall Sparkfly
+					o(457246, {	-- Fieldhand Stash
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+						["coord"] = { 64.5, 28.8, HALLOWFALL },
+						--["questID"] = ,
+						["g"] = {
+							i(226019),	-- Darkened Arathi Shoulderguards
+						},
+					}),
+						o(441795, {	-- Hallowfall Sparkfly
 						["description"] = "Requires level 80. Use a light source item then walk along the river near Stillstone Pond. With time Sparkbugs will appear next to you and randomly may be interactable, granting the pet.",
 						["coord"] = { 66.8, 25.3, HALLOWFALL },
 						--["questID"] = ,
@@ -455,15 +500,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(220771),	-- Hallowed Glowfly (PET!)
 						},
 					}),
-					o(451967, {	-- Hallowfall Lunchbox
+					o(451967, {	-- Hillhelm Lunchbox
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 62.0, 31.7, HALLOWFALL },
 						["questID"] = 82996,
-						["provider"] = {"i", 218107},	-- Sparkbug Jar
+						["g"] = {
+							i(226019),	-- Darkened Arathi Shoulderguards
+						},
 					}),
 					o(433377, {	-- Harvest Box
-						["description"] = "Likely requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 65.6, 29.4, HALLOWFALL },
 						["questID"] = 80420,
+						["g"] = {
+							i(226019),	-- Darkened Arathi Shoulderguards
+						},
 					}),
 					o(452005, {	-- Lil Piggy
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure somewhere in The Whirring Field.",
@@ -481,8 +532,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							-- ["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 16 },
 						},
 					}),
+					o(453186, {	-- Nightfarm Growthling
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure in any area of farmland.",
+						["coord"] = { 61.3, 31.8, HALLOWFALL },
+						["questID"] = 83272,
+						["g"] = {
+							i(221546),	-- Nightfarm Growthling (PET!)
+						},
+					}),
 					o(457251, {	-- Old Rotting Crate
-						["description"] = "Likely requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 64.5, 31.6, HALLOWFALL },
 						["questID"] = 84339,
 						["g"] = {
@@ -500,19 +559,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							}),
 						},
 					}),
+					o(457270, {	-- Surveyor's Box
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+						["coord"] = { 63.8, 26.8, HALLOWFALL },
+						["questID"] = 84341,
+						["g"] = {
+							i(226019),	-- Darkened Arathi Shoulderguards
+						},
+					}),
 				}),
 				-- Daily Treasures
 				n(TREASURES, sharedData({
 					["isDaily"] = true,
 				},{
-					o(453186, {	-- Nightfarm Growthling
-						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure in any area of farmland.",
-						["coord"] = { 61.3, 31.8, HALLOWFALL },
-						["questID"] = 83272,
-						["g"] = {
-							i(221546),	-- Nightfarm Growthling (PET!)
-						},
-					}),
 					o(434929, {	-- Radiant Remnant
 						["coord"] = { 62.1, 31.7, HALLOWFALL },
 						["questID"] = 80586,
@@ -690,7 +749,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			---
 			q(85552),	-- triggered on opening a Lamplighter Supply Satchel, first & second in week - x3 reports
 			q(79177),	-- Snuffling in Hallowfall?
-			--q(83342),	-- ??? "Popped when completing 76394 Shadows of Flavor"
+			q(83342),	-- ??? "Popped when completing 76394 Shadows of Flavor" x2 reports
 			--q(79179)	-- ??? "After looting Spider Touched Bag (211973)."
 			--q(79188),	-- ??? "After picking up Spider-Touched Bag (211973), during the keyflame event and turning in 79173 Supply the Effort"
 						-- ??? "after turning in 79173 Supply the Effort and receiving a lamplighter supply satchel (first that week)"

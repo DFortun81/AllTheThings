@@ -3306,6 +3306,7 @@ local keys = {
 [81635]="Stay awhile and listen: Nalina Ironsong",
 [81636]="Stay awhile and listen: General Steelstrike",
 [81946]="Stay awhile and listen: Anduin Wrynn",
+[82006]="Speak to Attica Whiskervale",
 [82012]="Talk with Sky-Captain Dornald",
 [82024]="Talk with Sky-Captain Clairmonte",
 [82025]="Talk with Sky-Captain Aerthin",

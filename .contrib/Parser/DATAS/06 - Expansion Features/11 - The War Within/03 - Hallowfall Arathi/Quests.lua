@@ -104,7 +104,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(219807),	-- Ringing Gemstone (QI!)
 					},
 				}),
-				--q(, {	-- 
+				--q(, {	--
 				--	["sourceQuests"] = {
 				--		81869,	-- Can Catch More Fires with Honey
 				--		81751,	-- Fire and Gemstone
@@ -118,7 +118,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 41.2, 53.0, HALLOWFALL },
 				}),
 			}, {	-- RENOWN 13 --
+				q(84559, {	-- Carved Crests
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
+					["coord"] = { 41.2, 53.0, HALLOWFALL },
+				}),
 			}, {	-- RENOWN 14 --
+				q(82398, {	-- Another Rare Key
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
+					["coord"] = { 41.2, 53.0, HALLOWFALL },
+				}),
 			}, {	-- RENOWN 15 --
 			}, {	-- RENOWN 16 --
 			}, {	-- RENOWN 17 --
