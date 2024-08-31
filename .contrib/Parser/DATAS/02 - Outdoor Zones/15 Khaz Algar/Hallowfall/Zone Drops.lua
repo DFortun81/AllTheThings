@@ -4,7 +4,17 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(HALLOWFALL, {
 		n(ZONE_DROPS, {
-			i(217352),	-- Gasping Fish (QI!)
+			i(217388, {
+				["crs"] = {
+					219910,	-- Darkwater Tidecrusher
+					219861,	-- Kobyss Carver
+					219870,	-- Kobyss Despoiler
+					219864,	-- Kobyss Ravager
+					219862,	-- Kobyss Shadewalker
+				},
+				["coord"] = { 29.2, 52.4, HALLOWFALL },
+			}),
+			i(217352),	-- Gasping Fish (QS!)
 			i(225559, {	-- Hungering Shimmerfin
 				["crs"] = { 215243 },	-- Hungering Shimmerfin
 				["coord"] = { 51.8, 48.8, HALLOWFALL },

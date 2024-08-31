@@ -237,9 +237,7 @@ root(ROOTS.Unsorted, {
 			}),
 			n(PROFESSIONS, {
 				i(211494),	-- Spark of Beginnings
-
 				i(225772),	-- Artisan's Consortium Advertisement
-				i(225672),	-- Unraveled Instructions
 				i(225673),	-- Artisan's Consortium Seal of Approval
 				i(228224),	-- Spark of Legacies
 				-- NYI Profession --

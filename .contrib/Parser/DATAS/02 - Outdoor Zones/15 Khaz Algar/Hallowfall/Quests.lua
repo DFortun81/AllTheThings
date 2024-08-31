@@ -1025,12 +1025,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			------ Miscellaneous ------
 			q(81651),	-- Delver's Guide to Delves [Might be NYI??]
+			q(81640, {	-- Holy Hydrocarbons
+				["provider"] = { "i", 217388 },	-- Crate of Devotional Candles (QS!/QI!)
+			}),
 			q(79221, {	-- The Unusual Bug
-				["provider"] = { "i", 212331 },	-- The Unusual Bug (QI!)
+				["provider"] = { "i", 212331 },	-- The Unusual Bug (QS!/QI!)
 				["maps"] = { AZJ_KAHET },
 			}),
 			q(81640, {	-- Tenir and the Order of Night
-				["provider"] = { "i", 219384 },	-- Umbral Eggplant (QI!)
+				["provider"] = { "i", 219384 },	-- Umbral Eggplant (QS!/QI!)
 				["maps"] = { ISLE_OF_DORN },
 			}),
 			q(82894, {	-- The Price of Hope

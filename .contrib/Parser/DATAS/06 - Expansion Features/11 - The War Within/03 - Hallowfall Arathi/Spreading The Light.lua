@@ -101,7 +101,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 64.5, 18.8, HALLOWFALL },
 					}),
 					q(82007, {	-- Tale of Tails
-						["sourceQuests"] = { 82006 },	-- Step 1: Speak to Attica Whiskervale
+						["sourceQuests"] = { 82006 },	-- Speak to Attica Whiskervale
 						["g"] = {
 							i(220782),	-- Thunder (PET!)
 						},

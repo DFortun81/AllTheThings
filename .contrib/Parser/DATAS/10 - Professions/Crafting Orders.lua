@@ -48,6 +48,7 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, bubbleDownSelf({ ["timeline"] = { ADD
             i(228737), -- Glimmer of Leatherworking Knowledge
             i(228739), -- Glimmer of Tailoring Knowledge
             i(225671), -- Stack of Pentagold Reviews
+			i(225672), -- Unraveled Instructions
         }),
 	})),
 })));
