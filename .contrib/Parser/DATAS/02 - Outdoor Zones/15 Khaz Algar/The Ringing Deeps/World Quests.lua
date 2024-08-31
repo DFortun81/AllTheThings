@@ -130,8 +130,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(KHAZ_ALGAR, {
 		m(THE_RINGING_DEEPS, {
-			q(83501),	-- Triggeres with 'Hanging Tight' (achievementID 40507)
+			n(WORLD_QUESTS, {
+				q(83501),	-- Triggeres with 'Hanging Tight' (achievementID 40507)
+			}),
 		}),
 	}),
 })));
-

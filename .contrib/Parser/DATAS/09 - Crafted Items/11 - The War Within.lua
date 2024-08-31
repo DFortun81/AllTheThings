@@ -2676,21 +2676,23 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		prof(MINING, {
 			q(82317),	-- 45/45 Mastering the Mysterious
 		}),
-		-- Using Contracts
-		q(84484),	-- Contract: Assembly of the Deeps [Rank 1] (spellID 454934)
-		q(84483),	-- Contract: Assembly of the Deeps [Rank 2] (spellID 454935)
-		q(84482),	-- Contract: Assembly of the Deeps [Rank 3] (spellID 454936)
-		q(84473),	-- Contract: Council of Dornogal [Rank 1] (spellID 454931)
-		q(84474),	-- Contract: Council of Dornogal [Rank 2] (spellID 454932)
-		q(84475),	-- Contract: Council of Dornogal [Rank 3] (spellID 454933)
-		q(84479),	-- Contract: Hallowfall Arathi [Rank 1] (spellID 454937)
-		q(84480),	-- Contract: Hallowfall Arathi [Rank 2] (spellID 454938)
-		q(84481),	-- Contract: Hallowfall Arathi [Rank 3] (spellID 454939)
-		q(84478),	-- Contract: The Severed Threads [Rank 1] (spellID 454940)
-		q(84477),	-- Contract: The Severed Threads [Rank 2] (spellID 454941)
-		q(84476),	-- Contract: The Severed Threads [Rank 3] (spellID 454942)
-		-- Craftable / Sparks
-		q(83280, name(HEADERS.Item,211297,{["isWeekly"]=true,})),	-- Fractured Spark of Omens
-		q(83281, name(HEADERS.Item,211297,{["isWeekly"]=true,})),	-- Fractured Spark of Omens
+		n(PROFESSIONS, {
+			-- Using Contracts
+			q(84484),	-- Contract: Assembly of the Deeps [Rank 1] (spellID 454934)
+			q(84483),	-- Contract: Assembly of the Deeps [Rank 2] (spellID 454935)
+			q(84482),	-- Contract: Assembly of the Deeps [Rank 3] (spellID 454936)
+			q(84473),	-- Contract: Council of Dornogal [Rank 1] (spellID 454931)
+			q(84474),	-- Contract: Council of Dornogal [Rank 2] (spellID 454932)
+			q(84475),	-- Contract: Council of Dornogal [Rank 3] (spellID 454933)
+			q(84479),	-- Contract: Hallowfall Arathi [Rank 1] (spellID 454937)
+			q(84480),	-- Contract: Hallowfall Arathi [Rank 2] (spellID 454938)
+			q(84481),	-- Contract: Hallowfall Arathi [Rank 3] (spellID 454939)
+			q(84478),	-- Contract: The Severed Threads [Rank 1] (spellID 454940)
+			q(84477),	-- Contract: The Severed Threads [Rank 2] (spellID 454941)
+			q(84476),	-- Contract: The Severed Threads [Rank 3] (spellID 454942)
+			-- Craftable / Sparks
+			q(83280, name(HEADERS.Item,211297,{["isWeekly"]=true,})),	-- Fractured Spark of Omens
+			q(83281, name(HEADERS.Item,211297,{["isWeekly"]=true,})),	-- Fractured Spark of Omens
+		}),
 	}),
 })));

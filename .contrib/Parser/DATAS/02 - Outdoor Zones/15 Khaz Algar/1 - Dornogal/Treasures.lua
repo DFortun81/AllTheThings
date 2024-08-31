@@ -20,7 +20,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(KHAZ_ALGAR, {
 		m(DORNOGAL, {
-			q(82255),	-- Turtle's Thanks spawned
+			n(TREASURES, {
+				q(82255),	-- Turtle's Thanks spawned
+			}),
 		}),
 	}),
 })));

@@ -2164,7 +2164,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 11.0.0.55846", "removed 11.0.2.56313" } }, {
+		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 11.0.0.55846", "removed 11.0.2.56421" } }, {
 			n(MONTHLY_REWARD, {
 				i(223409),	-- The Coward's Violet Target
 			}),
@@ -2303,7 +2303,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
-		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.2.56313", "removed 11.0.2.99999" } }, {
+		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.2.56421", "removed 11.0.2.99999" } }, {
 			n(MONTHLY_REWARD, {
 				i(226040),	-- Plunderlord's Golden Crocolisk (MOUNT!)
 			}),
