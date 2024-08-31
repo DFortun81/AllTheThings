@@ -1025,7 +1025,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			------ Miscellaneous ------
 			q(81651),	-- Delver's Guide to Delves [Might be NYI??]
-			q(81640, {	-- Holy Hydrocarbons
+			q(79554, {	-- Holy Hydrocarbons
 				["provider"] = { "i", 217388 },	-- Crate of Devotional Candles (QS!/QI!)
 			}),
 			q(79221, {	-- The Unusual Bug
