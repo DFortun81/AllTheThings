@@ -528,6 +528,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						},
 					}),
 					o(457260, {	-- Misplaced Supplies
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 68.2, 26.6, HALLOWFALL },
 						["questID"] = 84340,
 						["g"] = {
