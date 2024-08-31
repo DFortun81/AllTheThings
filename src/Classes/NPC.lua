@@ -192,6 +192,7 @@ do
 	local HeaderEventIDs = L.HEADER_EVENTS
 	local KEY = "headerID"
 	CreateHeader = app.CreateClass("Header", KEY, {
+		IsClassIsolated = true,
 		name = function(t)
 			return L.HEADER_NAMES[t[KEY]]
 		end,

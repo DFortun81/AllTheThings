@@ -101,7 +101,8 @@ end
 -- Automatic Type Header
 do
 	local KEY = "headerID"
-	app.CreateHeader = app.CreateClass("Header", KEY, {
+	app.CreateHeader = app.CreateClass("AutoHeader", KEY, {
+		IsClassIsolated = true,
 		headerCode = function(t)
 			if t.type then
 				return t.type..t.headerID;
