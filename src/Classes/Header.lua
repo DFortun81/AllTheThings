@@ -15,7 +15,10 @@ local IsRetrieving = app.Modules.RetrievingData.IsRetrieving
 
 -- App
 local SearchForObject = app.SearchForObject
-local CreateObject = app.__CreateObject
+local CreateObject
+app.AddEventHandler("OnLoad", function()
+	CreateObject = app.__CreateObject
+end)
 
 -- Automatic Headers
 local HeaderTypeAbbreviations = {
