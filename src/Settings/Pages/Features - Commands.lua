@@ -61,7 +61,7 @@ local function CreateText6(description)
 	textIndex6 = textIndex6 + 1
 	text:SetText("|cffC41E3A" .. description)
 end
-
+-- TODO: Localize this
 CreateText1(L.ACHIEVEMENT)
 CreateText1("Artifact")
 CreateText1("Battle Pet")

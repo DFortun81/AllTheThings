@@ -6816,6 +6816,7 @@ _.ObjectNames = {
 	[457062] = "Sky-Captain Lancekat's Curse",
 	[457246] = "Fieldhand Stash",
 	[457251] = "Old Rotting Crate",
+	[457260] = "Misplaced Supplies",
 	[457270] = "Surveyor's Box",
 	[457271] = "Crabber Supplies",
 	[463979] = "Lightspark Sky Academy Gradebook",
