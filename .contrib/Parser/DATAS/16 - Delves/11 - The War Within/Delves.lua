@@ -954,6 +954,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		filter(COSMETIC, {
 			i(212172),	-- Ajul'Nerub Raptorial Spine
+			i(212166),	-- Coral Nautic Helm
 			i(212173),	-- Rulk'Nerub Raptorial Spine
 			i(212163),	-- Soporific Shroom Cap
 			i(225066),	-- Trailblazer's Haversack

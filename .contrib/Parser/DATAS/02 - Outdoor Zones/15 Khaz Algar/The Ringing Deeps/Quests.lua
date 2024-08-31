@@ -828,7 +828,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(79343, {	-- Everyday I'm Snufflin'
 					["isDaily"] = true,
-					["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// renown 2?
+					["sourceQuests"] = { 80082 },	-- Back to Gundargaz
+					-- Alex: ^ pop error report with PreReq:false, probably also altskip hqt or CA unlock in addition?
 					["provider"] = { "n", 216164 },	-- Gnawbles
 					["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
 				}),

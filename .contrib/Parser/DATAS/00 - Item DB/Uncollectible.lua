@@ -1947,6 +1947,7 @@ i(220228);	-- Quartz Growth
 i(220288);	-- Quivering Tail
 i(220362);	-- Ragged Rope
 i(220242);	-- Razored Tail-Blade
+i(228391);	-- Right Boot
 i(228510);	-- Ripped Swarmite Wing
 i(220297);	-- Rock-Encrusted Plates
 i(228609);	-- Rock Roasting for Dummies

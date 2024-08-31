@@ -32,6 +32,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(40616),	-- Unexpected Arrivals
 				ach(40607),	-- Wandering in the Ravine
 			}),
+			n(QUESTS, {
+				q(82748),	-- Deephaul Ravine (auto-accepted when you first time on battleground)
+			}),
 		},
 	}),
 })));

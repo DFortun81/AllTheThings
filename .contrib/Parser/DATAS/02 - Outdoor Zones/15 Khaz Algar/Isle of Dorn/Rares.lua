@@ -201,6 +201,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["g"] = {
 					i(221506),	-- Arachnid's Web-Sown Guise
 					i(221219),	-- Silkwing Trousers
+					i(221239),	-- Spider Blasting Blunderbuss (dupe)
 				},
 			}),
 			n(219263, {	-- Warphorn

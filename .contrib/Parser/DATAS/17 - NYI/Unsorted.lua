@@ -61,7 +61,6 @@ root(ROOTS.Unsorted, {
 			i(229071),	-- Azra's Spare Gloves
 			i(229072),	-- Azra's Spare Mask
 			i(229074),	-- Azra's Spare Cord
-			i(229075),	-- Azra's Spare Bracers
 			i(229076),	-- Azra's Spare Chestguard
 			i(229077),	-- Azra's Spare Shoulderguards
 			i(229078),	-- Aevery's Spare Brigandine
@@ -82,7 +81,6 @@ root(ROOTS.Unsorted, {
 			i(229102),	-- The Cleansing Flame's Cord
 			i(229104),	-- Ironstrike's Vest
 			i(229105),	-- Ironstrike's Waders
-			i(229106),	-- Ironstrike's Grips
 			i(229107),	-- Ironstrike's Headgear
 			i(229108),	-- Ironstrike's Breeches
 			i(229109),	-- Ironstrike's Epaulets
@@ -612,7 +610,6 @@ root(ROOTS.Unsorted, {
 				i(212163),	-- Soporific Shroom Cap \\ Sleepy Fungarian Helm [PH]
 				i(212164),	-- Shallow Nautic Helm \\ Shallow Kobyss Helm [PH]
 				i(212165),	-- Deep Nautic Helm \\ Deep Kobyss Helm [PH]
-				i(212166),	-- Coral Nautic Helm \\ Coral Kobyss Helm [PH]
 				i(212167),	-- Taken Candle \\ Candle Kobold Helm [PH]
 				i(212168),	-- Cinderbee Wax Candle Hat \\ Cultlight Kobold Helm [PH]
 				i(212169),	-- Mint-Scented Candle Hat \\ Candelabra Kobold Helm [PH]
@@ -1244,7 +1241,6 @@ root(ROOTS.Unsorted, {
 				i(228193),	-- Chipped Demon's Blade
 				i(228194),	-- Fully Scrapped Scrap
 				i(228195),	-- Tattered Goblin Cap
-				i(228391),	-- Right Boot
 				i(228415),	-- Adelgonn's Journal
 				i(228416),	-- Steelvein's Manifesto
 				i(228429),	-- Reflective Rock

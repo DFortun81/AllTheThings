@@ -40,6 +40,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}),
 			n(TREASURES, {
 				i(223133),	-- Formula: Illusory Adornment: Crystal (RECIPE!)
+				--Alex: was looted from mobs during WQ 82580 (Courier Mission: Ore Recovery)
+				--could be just zone drop or mob specific type? e.g. deepflayers?
 			}),
 			n(VENDORS, {
 				n(216164, {	-- Gnawbles

@@ -324,6 +324,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 64.1, 19.5, HALLOWFALL },
 						["questID"] = 82562,
 						["g"] = {
+							i(223919),	-- Abducted Lawman's Gavel (dupe)
 							i(223936),	-- Shadow Bog Trousers
 							i(223918),	-- Specter Stalker's Shotgun
 						},
@@ -395,9 +396,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229082),	-- Aevery's Spare Chausses
 						i(229081),	-- Aevery's Spare Cowl
 						i(229080),	-- Aevery's Spare Gauntlets
+						i(229075),	-- Azra's Spare Bracers
 						i(229073),	-- Azra's Spare Trousers
 						i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
 						i(229118),	-- Flamestonge's Belt
+						i(229106),	-- Ironstrike's Grips
 						i(229092),	-- Kyros's Spare Girdle
 						i(229145),	-- Lamplighter Elite's Shield
 						i(229152),	-- Lamplighter's Battleaxe
