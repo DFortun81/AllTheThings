@@ -1,13 +1,6 @@
 -----------------------------------------------------
 --       P R O F E S S I O N S   M O D U L E       --
 -----------------------------------------------------
-CRAFTING_ORDERS = createHeader({
-	readable = "Crafting Orders",
-	icon = "Interface\\Icons\\inv_tabard_craftingorder_c_01",
-	text = {
-		en = "Crafting Orders",
-	},
-});
 root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 	ach(19410, sharedDataSelf({ ["timeline"] = { ADDED_11_0_2 } }, {	-- Algari Master of All
 		["sym"] = {{ "achievement_criteria" }},
@@ -365,22 +358,6 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 		["provider"] = { "i", 132518 },	-- Blingtron's Circuit Design Tutorial
 		["timeline"] = { ADDED_7_0_3 },
 	}),
-})));
-
-root(ROOTS.Professions, n(CRAFTING_ORDERS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
-	ach(16791, {	-- Merchant Artisan
-		title(485),	-- Merchant Artisan <Name>
-	}),
-	ach(16799, {	-- Personal Crafter
-		title(486),	-- Personal Crafter <Name>
-	}),
-	--[[
-	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		i(223113),	-- Formula: Enchant Boots - Cavalry's March (RECIPE!)
-		i(223104),	-- Pattern: Defender's Armor Kit (RECIPE!)
-		i(223037),	-- Plans: Charged Facesmasher (RECIPE!)
-	})),
-	-]]
 })));
 
 root(ROOTS.HiddenQuestTriggers, {

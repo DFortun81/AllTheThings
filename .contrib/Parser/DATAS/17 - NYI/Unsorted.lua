@@ -37,36 +37,6 @@ root(ROOTS.Unsorted, {
 			filter(BATTLE_PETS, {
 				i(228765),	-- Gummi (PET!) [Promotion?]
 			}),
-			n(PROFESSIONS, {
-				-- Profession Knowledge Notes
-				-- I wonder if this has to do with Crafting Orders..
-					-- YES... Crafting Orders "Patron" rewards these
-					-- BRAGHE!
-				i(228724),	-- Flicker of Alchemy Knowledge
-				i(228725),	-- Glimmer of Alchemy Knowledge
-				i(228726),	-- Flicker of Blacksmithing Knowledge
-				i(228727),	-- Glimmer of Blacksmithing Knowledge
-				i(228728),	-- Flicker of Enchanting Knowledge
-				i(228729),	-- Glimmer of Enchanting Knowledge
-				i(228730),	-- Flicker of Engineering Knowledge
-				i(228731),	-- Glimmer of Engineering Knowledge
-				i(228732),	-- Flicker of Inscription Knowledge
-				i(228733),	-- Glimmer of Inscription Knowledge
-				i(228734),	-- Flicker of Jewelcrafting Knowledge
-				i(228735),	-- Glimmer of Jewelcrafting Knowledge
-				i(228736),	-- Flicker of Leatherworking Knowledge
-				i(228737),	-- Glimmer of Leatherworking Knowledge
-				i(228738),	-- Flicker of Tailoring Knowledge
-				i(228739),	-- Glimmer of Tailoring Knowledge
-				-- Same with these
-				i(227713),	-- Artisan's Consortium Payout [Common]
-				i(228610),	-- Artisan's Consortium Payout [Uncommon]
-				i(228611),	-- Artisan's Consortium Payout [Rare]
-				i(228612),	-- Artisan's Consortium Payout [Epic]
-				-- This was also a reward for completion -- they show before you accept the order
-				i(225670),	-- Apprentice's Crafting License
-				i(225671),	-- Stack of Pentagold Reviews
-			}),
 			filter(COSMETIC, {
 				i(228761),	-- Classic Brick Tabard
 				i(228762),	-- Classic Lively Tabard

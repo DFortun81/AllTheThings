@@ -1,17 +1,17 @@
 ﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
 	[455515] = {
-		readable = "<span style=\"color: #1EFF00\">Sturdy Chest</span>",
+		readable = "|cff1EFF00Sturdy Chest",
 		model = 5128194,
 		text = {
-			en = "<span style=\"color: #1EFF00\">Sturdy Chest</span>",
-			es = "<span style=\"color: #1EFF00\">Cofre robusto</span>",
-			de = "<span style=\"color: #1EFF00\">Robuste Truhe</span>",
-			fr = "<span style=\"color: #1EFF00\">Coffre solide</span>",
-			it = "<span style=\"color: #1EFF00\">Cassa Resistente</span>",
-			pt = "<span style=\"color: #1EFF00\">Baú Resistente</span>",
-			ru = "<span style=\"color: #1EFF00\">Прочный сундук</span>",
-			ko = "Sturdy Chest",
-			cn = "Sturdy Chest",
+			en = "|cff1EFF00Sturdy Chest",
+			es = "|cff1EFF00Cofre robusto",
+			de = "|cff1EFF00Robuste Truhe",
+			fr = "|cff1EFF00Coffre solide",
+			it = "|cff1EFF00Cassa Resistente",
+			pt = "|cff1EFF00Baú Resistente",
+			ru = "|cff1EFF00Прочный сундук",
+			ko = "|cff1EFF00Sturdy Chest",
+			cn = "|cff1EFF00Sturdy Chest",
 		},
 	},
 })

@@ -299,6 +299,7 @@ HeaderAssignments = {
 	["Patch 7.x.x"] = -1000120,
 	["Patch 8.x.x"] = -1000121,
 	["Patch 9.x.x"] = -1000122,
+	["Patron Rewards"] = -1001024,
 	["Pet Battle"] = -1000029,
 	["Pet Battle Dungeons"] = -1000883,
 	["Pilgrim's Bounty"] = -1000225,
@@ -516,4 +517,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001023;
+NextHeaderID = -1001025;
