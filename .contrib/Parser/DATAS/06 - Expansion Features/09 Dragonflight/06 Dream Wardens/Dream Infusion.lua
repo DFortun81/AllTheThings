@@ -2,7 +2,7 @@
 --      E X P A N S I O N   F E A T U R E S    M O D U L E       --
 -------------------------------------------------------------------
 local CURRENCY_DREAM_INFUSION = 2777;
-local DREAM_INFUSION = createHeader({
+DREAM_INFUSION = createHeader({
 	readable = "Dream Infusion",
 	icon = "1394953",
 	text = {

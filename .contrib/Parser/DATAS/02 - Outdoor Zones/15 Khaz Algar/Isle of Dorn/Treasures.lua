@@ -50,32 +50,50 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(224185),	-- Crab-Guiding Branch
 					q(82751, {	-- First Crab
 						["name"] = "First Crab",
-						["provider"] = { "n", 222941 },	-- Pearlescent Shellcrab
+						["providers"] = {
+							{ "n", 224548 },	-- Pearlescent Shellcrab
+							{ "i", 224185 },	-- Crab-Guiding Branch
+						},
 						["coord"] = { 50.7, 70.6, ISLE_OF_DORN },
 					}),
 					q(82752, {	-- Second Crab
 						["name"] = "Second Crab",
-						["provider"] = { "n", 222941 },	-- Pearlescent Shellcrab
+						["providers"] = {
+							{ "n", 224548 },	-- Pearlescent Shellcrab
+							{ "i", 224185 },	-- Crab-Guiding Branch
+						},
 						["coord"] = { 74.9, 49.4, ISLE_OF_DORN },
 					}),
 					q(82753, {	-- Third Crab
 						["name"] = "Third Crab",
-						["provider"] = { "n", 222941 },	-- Pearlescent Shellcrab
+						["providers"] = {
+							{ "n", 224548 },	-- Pearlescent Shellcrab
+							{ "i", 224185 },	-- Crab-Guiding Branch
+						},
 						["coord"] = { 70.8, 20.0, ISLE_OF_DORN },
 					}),
 					q(82754, {	-- Fourth Crab
 						["name"] = "Fourth Crab",
-						["provider"] = { "n", 222941 },	-- Pearlescent Shellcrab
+						["providers"] = {
+							{ "n", 224548 },	-- Pearlescent Shellcrab
+							{ "i", 224185 },	-- Crab-Guiding Branch
+						},
 						["coord"] = { 41.9, 27.0, ISLE_OF_DORN },
 					}),
 					q(82755, {	-- Fifth Crab
 						["name"] = "Fifth Crab",
-						["provider"] = { "n", 222941 },	-- Pearlescent Shellcrab
+						["providers"] = {
+							{ "n", 224548 },	-- Pearlescent Shellcrab
+							{ "i", 224185 },	-- Crab-Guiding Branch
+						},
 						["coord"] = { 19.7, 58.4, ISLE_OF_DORN },
 					}),
 					q(82756, {	-- Sixth Crab
 						["name"] = "Sixth Crab",
-						["provider"] = { "n", 222941 },	-- Pearlescent Shellcrab
+						["providers"] = {
+							{ "n", 224548 },	-- Pearlescent Shellcrab
+							{ "i", 224185 },	-- Crab-Guiding Branch
+						},
 						["coord"] = { 38.3, 42.0, ISLE_OF_DORN },
 					}),
 					o(443318, {	-- Tree's Treasure
