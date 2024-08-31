@@ -17,7 +17,7 @@ local textIndex1 = 4
 local function CreateText1(description)
 	local text = child:CreateFontString("ARTWORK", nil, "GameFontNormal")
 	text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
-	text:SetPoint("TOPLEFT", child, "TOPLEFT", 0, textIndex1 * -20)
+	text:SetPoint("TOPLEFT", child, "TOPLEFT", 13, textIndex1 * -20)
 	textIndex1 = textIndex1 + 1
 	text:SetText("|cffFFFFFF" .. description)
 end
@@ -25,7 +25,7 @@ local textIndex2 = 4
 local function CreateText2(description)
 	local text = child:CreateFontString("ARTWORK", nil, "GameFontNormal")
 	text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
-	text:SetPoint("TOPLEFT", child, "TOPLEFT", 300, textIndex2 * -20)
+	text:SetPoint("TOPLEFT", child, "TOPLEFT", 313, textIndex2 * -20)
 	textIndex2 = textIndex2 + 1
 	text:SetText("|cffFFFFFF" .. description)
 end
@@ -33,7 +33,7 @@ local textIndex3 = 4
 local function CreateText3(description)
 	local text = child:CreateFontString("ARTWORK", nil, "GameFontNormal")
 	text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
-	text:SetPoint("TOPLEFT", child, "TOPLEFT", 100, textIndex3 * -20)
+	text:SetPoint("TOPLEFT", child, "TOPLEFT", 113, textIndex3 * -20)
 	textIndex3 = textIndex3 + 1
 	text:SetText("|cff00FF98" .. description)
 end
@@ -41,7 +41,7 @@ local textIndex4 = 4
 local function CreateText4(description)
 	local text = child:CreateFontString("ARTWORK", nil, "GameFontNormal")
 	text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
-	text:SetPoint("TOPLEFT", child, "TOPLEFT", 410, textIndex4 * -20)
+	text:SetPoint("TOPLEFT", child, "TOPLEFT", 423, textIndex4 * -20)
 	textIndex4 = textIndex4 + 1
 	text:SetText("|cff00FF98" .. description)
 end
@@ -49,7 +49,7 @@ local textIndex5 = 22
 local function CreateText5(description)
 	local text = child:CreateFontString("ARTWORK", nil, "GameFontNormal")
 	text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
-	text:SetPoint("TOPLEFT", child, "TOPLEFT", 0, textIndex5 * -20)
+	text:SetPoint("TOPLEFT", child, "TOPLEFT", 13, textIndex5 * -20)
 	textIndex5 = textIndex5 + 1
 	text:SetText("|cffFFFFFF" .. description)
 end
@@ -57,7 +57,7 @@ local textIndex6 = 22
 local function CreateText6(description)
 	local text = child:CreateFontString("ARTWORK", nil, "GameFontNormal")
 	text:SetFont("Fonts\\FRIZQT__.TTF", 12, "")
-	text:SetPoint("TOPLEFT", child, "TOPLEFT", 130, textIndex6 * -20)
+	text:SetPoint("TOPLEFT", child, "TOPLEFT", 143, textIndex6 * -20)
 	textIndex6 = textIndex6 + 1
 	text:SetText("|cffC41E3A" .. description)
 end
