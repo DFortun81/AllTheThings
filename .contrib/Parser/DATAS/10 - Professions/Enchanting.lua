@@ -876,7 +876,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				},
 			}),
 			o(456008, {	-- Silver Dornogal Rod
-				["coord"] = { 59.4, 66.5, DORNOGAL },
+				["coord"] = { 58.0, 56.9, DORNOGAL },
 				["questID"] = 83859,
 				["g"] = {
 					i(226285),	-- Silver Dornogal Rod
@@ -890,7 +890,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				},
 			}),
 			o(456002, {	-- Void Shard
-				["coord"] = { 57.4, 44.1, NERUBAR },
+				["coord"] = { 57.3, 44.0, AZJ_KAHET },
 				["questID"] = 83865,
 				["g"] = {
 					i(226291),	-- Void Shard
