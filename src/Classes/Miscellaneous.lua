@@ -250,9 +250,7 @@ app.CreateRawText = app.CreateClass("RawText", "text", {
 	name = function(t)
 		return t.text
 	end,
-	isHeader = function()
-		return true
-	end,
+	isHeader = app.ReturnTrue,
 })
 
 -- Allows creating an ATT object which can be expanded to trigger an async population of the dynamic data it should contain, based on provided data in 't'

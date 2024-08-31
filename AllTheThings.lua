@@ -9515,8 +9515,8 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 					-- Building the header chain for each mapped Thing
 					topHeader = nil;
 					while nextParent do
-						headerID = nextParent.headerID;
-						if headerID and headerID ~= true then
+						headerID = nextParent.headerID
+						if headerID then
 							-- This matches a top-level header, track that top-level header at the highest point
 							if topHeaders[headerID] then
 								-- already found a matching header, then nest it before switching
@@ -9528,6 +9528,9 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 								group = CreateHeaderData(group, nextParent);
 								nested = true;
 							end
+						elseif nextParent.isHeader then
+							group = CreateHeaderData(group, nextParent);
+							nested = true;
 						else
 							for _,hkey in ipairs(headerKeys) do
 								if nextParent[hkey] then

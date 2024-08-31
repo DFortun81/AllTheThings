@@ -280,6 +280,7 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 	["ignoreSourceLookup"] = function(t)
 		return true;
 	end,
+	isHeader = app.ReturnTrue,
 });
 
 -- External API
