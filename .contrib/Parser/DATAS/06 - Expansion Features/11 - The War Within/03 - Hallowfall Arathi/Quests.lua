@@ -104,14 +104,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(219807),	-- Ringing Gemstone (QI!)
 					},
 				}),
-				--q(, {	--
-				--	["sourceQuests"] = {
-				--		81869,	-- Can Catch More Fires with Honey
-				--		81751,	-- Fire and Gemstone
-				--	},
-				--	["provider"] = { "n", 217128 },	-- Speaker Kuldas
-				--	["coord"] = { 47.5, 32.0, THE_RINGING_DEEPS },
-				--}),
+				q(81896, {	-- New and Improved
+					["sourceQuests"] = {
+						81869,	-- Can Catch More Fires with Honey
+						81751,	-- Fire and Gemstone
+					},
+					["provider"] = { "n", 217128 },	-- Speaker Kuldas
+					["coord"] = { 47.5, 32.0, THE_RINGING_DEEPS },
+					["g"] = {
+						i(220157),	-- Empowered Tinderbox
+					},
+				}),
 			}, {	-- RENOWN 12 --
 				q(82396, {	-- A Gift from Mereldar
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>

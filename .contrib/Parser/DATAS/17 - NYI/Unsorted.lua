@@ -1030,7 +1030,6 @@ root(ROOTS.Unsorted, {
 				i(225536),	-- [PH] Armor Girdle
 				i(225539),	-- [PH] Armor Epaulets
 				i(219942),	-- 11.0 Stalwart's Sandals
-				i(220157),	-- Empowered Tinderbox
 				i(220158),	-- Darkened Tinderbox
 				-- Armor Generator
 				i(225661),	-- Burning Binding
