@@ -103,3 +103,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		}),
 	}),
 })));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	m(KHAZ_ALGAR, {
+		m(AZJ_KAHET, {
+			n(ACHIEVEMENTS, {
+				-- TODO: Maybe make this into trackable steps?
+				q(83741),	-- Step 1, click the book in the void cave for 'No Harm Ever Came From Reading A Book' (achievementID 40632)
+				-- These steps are probably in different order for everyone
+				q(83746),	-- Step 2, Found first copy for 'No Harm Ever Came From Reading A Book' (achievementID 40632)
+				q(83745),	-- Step 2, Found second copy for 'No Harm Ever Came From Reading A Book' (achievementID 40632)
+				q(83744),	-- Step 2, Found third copy for 'No Harm Ever Came From Reading A Book' (achievementID 40632)
+				q(83747),	-- Step 2, Found fourth copy for 'No Harm Ever Came From Reading A Book' (achievementID 40632)
+				-- Already attached to the achievement (probably due to automation?)
+				--q(83724),	-- Step 3, Talk with one of your copies back in the void cave for 'No Harm Ever Came From Reading A Book' (achievementID 40632)
+			}),
+		}),
+	}),
+})));
