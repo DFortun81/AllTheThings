@@ -2077,6 +2077,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(80415, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
 			q(80416, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
 		}),
+		--@Darkal: q(84255),	-- received item 212174 (The Warband Map to Everywhere All At Once)
 	})),
 
 	--------------------

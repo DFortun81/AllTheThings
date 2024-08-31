@@ -33,6 +33,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 	i(190456),	-- Artisan's Mettle
 	-- Optional
 	i(198046),	-- Concentrated Primal Infusion
+	i(228368, {["timeline"] = { ADDED_11_0_0 }}),	-- Relic of the Past VI
 	i(198048),	-- Titan Training Matrix I
 	i(198056),	-- Titan Training Matrix II
 	i(198058),	-- Titan Training Matrix III

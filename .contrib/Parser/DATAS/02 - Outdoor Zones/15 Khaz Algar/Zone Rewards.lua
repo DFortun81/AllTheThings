@@ -64,6 +64,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			i(225651),	-- Kaheti Shadeweaver's Emblem
 			i(225649),	-- Quickwick Candlestick
 			i(225654),	-- Rapid Evolution Serum
+			i(226521),	-- Reinforced-Wax Plating
 			i(226539),	-- Scroll of Momentum
 			i(225647),	-- Shining Arathor Insignia
 			i(225638),	-- Spelunker's Waning Candle

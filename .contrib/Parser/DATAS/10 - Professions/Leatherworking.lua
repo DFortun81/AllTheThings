@@ -1399,14 +1399,14 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			o(455962, {	-- Curved Nerubian Skinning Knife
-				["coord"] = { 60.2, 57.5, AZJ_KAHET },
+				["coord"] = { 59.9, 54.0, AZJ_KAHET },
 				["questID"] = 83905,
 				["g"] = {
 					i(226331),	-- Curved Nerubian Skinning Knife
 				},
 			}),
 			o(455968, {	-- Dornogal Craftsman's Flat Knife
-				["coord"] = { 47.3, 28.3, THE_RINGING_DEEPS },
+				["coord"] = { 58.6, 30.7, THE_RINGING_DEEPS },	-- TODO: re-check mapID, I think it was Dornogal?
 				["questID"] = 83899,
 				["g"] = {
 					i(226325),	-- Dornogal Craftsman's Flat Knife
@@ -1420,7 +1420,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			o(455969, {	-- Earthen Lacing Tools
-				["coord"] = { 68.2, 23.3, DORNOGAL },
+				["coord"] = { 68.2, 23.3, DORNOGAL },	-- TODO: re-check mapID
 				["questID"] = 83898,
 				["g"] = {
 					i(226324),	-- Earthen Lacing Tools

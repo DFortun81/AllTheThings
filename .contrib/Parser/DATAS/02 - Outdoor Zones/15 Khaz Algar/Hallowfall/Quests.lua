@@ -432,6 +432,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["maps"] = { 2308, 2309 },	-- Priory of the Sacred Flame
 					["g"] = {
 						i(226139),	-- Arathi Officer's Gauntlets
+						i(226137),	-- Inquisitive Sister's Cinch
 						i(226134),	-- Mourning Baron's Shoulderpads
 					},
 				}),
@@ -700,6 +701,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 215301 },	-- Shinda Creedpike
 					["coord"] = { 40.7, 50.6, HALLOWFALL },
 					["g"] = {
+						i(228367),	-- Arathi Scout's Walking Stick
 						i(228366),	-- Child's Former Fishing Rod
 						i(228365),	-- Concerned Captain's Cudgel
 						i(228362),	-- Polished Arathi Rifle
@@ -934,8 +936,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["g"] = {
 						i(225179),	-- Salamanther Heart (QI!)
 						i(228438),	-- Derill's Unused Visor
-						i(228435),	-- Wine-Dyed Leggings
 						i(228437),	-- Salamanther-Scale Greaves
+						i(228436),	-- United Arathi's Jerkin
+						i(228435),	-- Wine-Dyed Leggings
 					},
 				}),
 				q(83279),	-- Prove One's Mettle

@@ -376,16 +376,16 @@ root(ROOTS.Professions, prof(SKINNING, {
 			}),
 		}),
 		n(QUESTS, sharedData({
+			--["description"] = "Requires 50 Skill.",
+			["provider"] = { "n", 219083 },	-- Ginnad <Skinning Trainer>
+			["coord"] = { 54.5, 57.6, DORNOGAL },
 			["isWeekly"] = true,
 			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
 			["g"] = {
 				i(224807),	-- Algari Skinner's Notes
 			},
 		},{
-			q(83097, {	-- Cinder and Storm
-				["provider"] = { "n", 219083 },	-- Ginnad <Skinning Trainer>
-				["coord"] = { 54.5, 57.6, DORNOGAL },
-			}),
+			q(83097),	-- Cinder and Storm
 		})),
 		n(TREASURES, {
 			o(455948, {	-- Arathi Craftsman's Spokeshave
@@ -410,14 +410,14 @@ root(ROOTS.Professions, prof(SKINNING, {
 				},
 			}),
 			o(455946, {	-- Carapace Shiner
-				["coord"] = { 57.1, 58.7, AZJ_KAHET },
+				["coord"] = { 56.5, 55.2, AZJ_KAHET },
 				["questID"] = 83921,
 				["g"] = {
 					i(226347), -- Carapace Shiner
 				},
 			}),
 			o(455953, {	-- Dornogal Carving Knife
-				["coord"] = { 54.3, 57.3, DORNOGAL },
+				["coord"] = { 28.7, 51.7, DORNOGAL },
 				["questID"] = 83914,
 				["g"] = {
 					i(226340), -- Dornogal Carving Knife

@@ -1889,7 +1889,6 @@ i(228487);	-- Freshly Fallen Sticks
 i(225677);	-- Gleaming Chaos
 i(225811);	-- Gleaming Deep-Pearl
 i(225831);	-- Glittering Rock
-i(221757);	-- Gloomfathom Hide
 i(220259);	-- Gob of Mucus
 i(220509);	-- Gossamer Web
 i(225790);	-- Half-Painted Pewter Spider
@@ -2056,3 +2055,15 @@ i(227325);	-- Stone Soup
 i(227336);	-- Sugar Slurry
 i(227315);	-- Tarragon Soda
 i(227309);	-- Titanshake
+
+
+i(227312);	-- Afterglow
+i(227274);	-- Candle Rock Candy
+i(227311);	-- Digspresso
+i(227275);	-- Koboldatouille
+i(227319);	-- Koboldchino
+i(227304);	-- Mushroom Cake
+i(227329);	-- Still-Twitching Gumbo
+i(227328);	-- Wax Fondue
+i(227303);	-- Waxy Cheese Snack
+i(227320);	-- Wicker Wisps

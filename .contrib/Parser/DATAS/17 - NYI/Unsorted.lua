@@ -238,14 +238,12 @@ root(ROOTS.Unsorted, {
 				i(224416),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
 			}),
 			n(PROFESSIONS, {
-				i(221763),	-- Viridian Charmcap
 				i(211494),	-- Spark of Beginnings
 
 				i(225772),	-- Artisan's Consortium Advertisement
 				i(225672),	-- Unraveled Instructions
 				i(225673),	-- Artisan's Consortium Seal of Approval
 				i(228224),	-- Spark of Legacies
-				i(228368),	-- Relic of the Past VI
 				-- NYI Profession --
 				i(219500),	-- Fang Adornments
 				i(213097),	-- Test Warbound until equipped (DNT)
@@ -1041,10 +1039,8 @@ root(ROOTS.Unsorted, {
 				i(220158),	-- Darkened Tinderbox
 				-- Armor Generator
 				i(225661),	-- Burning Binding
-				i(226137),	-- Inquisitive Sister's Cinch
 				i(226138),	-- Vow-Taker's Boots
 				i(226174),	-- Famished Bride's Clasp
-				i(226521),	-- Reinforced-Wax Plating
 				i(226695),	-- Cunning Advisor's Favor
 				i(226696),	-- Mighty Advisor's Favor
 			}),
@@ -1232,16 +1228,6 @@ root(ROOTS.Unsorted, {
 				i(226430),	-- Navigations of The Soul
 				i(226524),	-- Partially-Charged Hologem
 				i(226681),	-- Sizzling Cinderpollen
-				i(227274),	-- Candle Rock Candy
-				i(227275),	-- Koboldatouille
-				i(227303),	-- Waxy Cheese Snack
-				i(227304),	-- Mushroom Cake
-				i(227311),	-- Digspresso
-				i(227312),	-- Afterglow
-				i(227319),	-- Koboldchino
-				i(227320),	-- Wicker Wisps
-				i(227328),	-- Wax Fondue
-				i(227329),	-- Still-Twitching Gumbo
 				i(227668),	-- Delver's Bounty
 				i(227677),	-- Satchel of Enchanting Surplus
 				i(227678),	-- Satchel of Engineering Surplus
@@ -1379,7 +1365,6 @@ root(ROOTS.Unsorted, {
 				i(219793),	-- 11.0 Leveling Quest Template - Axe 1H - Agi
 				i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
 				i(228364),	-- Endiri's Chipped Boot Knife
-				i(228367),	-- Arathi Scout's Walking Stick
 			}),
 			filter(TOYS, {
 				i(218310),	-- Box of Puntables (TOY!) [Winter Veil]
@@ -1492,7 +1477,6 @@ root(ROOTS.Unsorted, {
 				i(223472),	-- Drape of the Lamplighter
 				i(223585),	-- Algari Bladefist
 				i(223588),	-- Algari Fighting Knife
-				i(228436),	-- United Arathi's Jerkin
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(223510),	-- Delver's Dirigible Schematic: Template

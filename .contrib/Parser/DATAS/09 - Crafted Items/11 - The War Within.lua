@@ -26,14 +26,17 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	i(213610),	-- Crystalline Powder
 	i(211297),	-- Fractured Spark of Omens
 	i(228414),	-- Frayed Wiring
+	i(221757);	-- Gloomfathom Hide
 	i(228956),	-- Junk Bucket
 	i(213613),	-- Leyline Residue
 	i(213197),	-- Null Lotus
 	i(221758),	-- Profaned Tinderbox
 	i(221754),	-- Ringing Deeps Ingot
 	i(228338),	-- Soul Sigil I
+	i(228339),	-- Soul Sigil II
 	i(211296),	-- Spark of Omens
 	i(213612),	-- Viridescent Spores
+	i(221763),	-- Viridian Charmcap
 	i(213611),	-- Writhing Sample
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
@@ -2382,6 +2385,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(83408, 220286),	-- Skinning Deepflayer Broodmother
 			FirstSkin(83404, 218393),	-- Skinning Disturbed Earthgorger
 			FirstSkin(81451, 219265),	-- Skinning Emperor Pitfang
+			FirstSkin(85548, 220492),	-- Skinning Finclaw Bloodtide
 			FirstSkin(83402, 221668),	-- Skinning Horror of the Shallows
 			FirstSkin(83413, 221327),	-- Skinning Kaheti Silk Hauler
 			FirstSkin(83409, 220285),	-- Skinning Lurker of the Deeps
@@ -2691,6 +2695,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(84477),	-- Contract: The Severed Threads [Rank 2] (spellID 454941)
 			q(84476),	-- Contract: The Severed Threads [Rank 3] (spellID 454942)
 			-- Craftable / Sparks
+			q(82039),	-- first Fractured Spark of Omens
 			q(83280, name(HEADERS.Item,211297,{["isWeekly"]=true,})),	-- Fractured Spark of Omens
 			q(83281, name(HEADERS.Item,211297,{["isWeekly"]=true,})),	-- Fractured Spark of Omens
 		}),
