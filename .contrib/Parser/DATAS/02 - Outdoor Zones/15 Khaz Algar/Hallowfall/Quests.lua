@@ -312,7 +312,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 213613 },	-- Aemyra Acton
 					["coord"] = { 50.0, 20.8, HALLOWFALL },
 					["g"] = {
-						i(211948),	-- Kobyss Spear (QI!)
+						o(416401, {	-- Kobyss Spear
+							i(211948),	-- Kobyss Spear (QI!)
+						}),
 					},
 				}),
 				q(78694, {	-- Reclaiming Velhan's Claim
@@ -483,15 +485,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				q(82219, {	-- Spice Up Your Life
-					--["sourceQuests"] = { ? },	-- TODO: suddenly become available with next reset/new build/renown level/item from Time Lost/Found?
+					["description"] = "Becomes available after daily reset.",
+					["sourceQuests"] = { 82217 },	-- Underground Economics
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike
 					["coord"] = { 42.3, 55.0, HALLOWFALL },
 					["g"] = {
-						i(222953),	-- Light-Bathed Lotus Cuttings (QI!)
+						o_repeated({
+							i(222953),	-- Light-Bathed Lotus Cuttings (QI!)
+							o(444028),	-- Light-Bathed Lotus
+							o(444029),	-- Light-Bathed Lotus
+							o(444030),	-- Light-Bathed Lotus
+						}),
 					},
 				}),
 				q(82220, {	-- Eagle Eye, Eagle Die
-					--["sourceQuests"] = { ? },	-- TODO: suddenly become available with next reset/new build/renown level/item from Time Lost/Found?
+				["description"] = "Becomes available after daily reset.",
+					["sourceQuests"] = { 82217 },	-- Underground Economics
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike
 					["coord"] = { 42.3, 55.0, HALLOWFALL },
 					["g"] = {
@@ -895,7 +904,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 216063 },	-- Scout Wayshelm
 					["coord"] = { 75.4, 49.6, HALLOWFALL },
 					["g"] = {
-						i(213519),	-- Maevest's Compass (QI!)
+						o(422560, {	-- Maevest's Compass
+							i(213519),	-- Maevest's Compass (QI!)
+						}),
 					},
 				}),
 				q(79312, {	-- Mow the Masses
@@ -985,12 +996,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 220718 },	-- Maera Ashyld
 					["coord"] = { 60.5, 60.2, HALLOWFALL },
 					["g"] = {
-						i(224184),	-- Crusty Spyglass (QI!)
-						i(224187),	-- Dented Spearhead (QI!)
-						i(224188),	-- Filigreed Cleric (QI!)
-						i(224186),	-- Hymns of the Flame (QI!)
-						i(224189),	-- Ivory Tinderbox (QI!
-						i(224179),	-- Swamplogged Letter (QI!)
+						o(451538, {	-- Sludge Pile
+							i(224184),	-- Crusty Spyglass (QI!)
+							i(224187),	-- Dented Spearhead (QI!)
+							i(224188),	-- Filigreed Cleric (QI!)
+							i(224186),	-- Hymns of the Flame (QI!)
+							i(224189),	-- Ivory Tinderbox (QI!
+							i(224179),	-- Swamplogged Letter (QI!)
+						}),
 						--
 						i(224267),	-- Dented Spearhead
 						i(224268),	-- Filigreed Cleric
@@ -1224,6 +1237,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 				--
 				q(82674),	-- trigger after interact with Cooking Pot and choose 'Good enought' option, during questID 82222 (Cooking With Style)
 				q(82675),	-- trigger after interact with Cooking Pot and choose 'Retry' or 'Cooking' option, during questID 82222 (Cooking With Style)
+				q(83056),	-- Cooking With Style Tracker (completed with Q(82222) and was named by blizzard)
 				--
 				q(82218),	-- 'Break [DNT]' triggered during questID 82217 (Underground Economics) when you click 'Alliance' dialog option on Andee Seabraid
 				--q(xxxxx),	-- '?' triggered during questID 82217 (Underground Economics) when you click 'Horde' dialog option on Andee Seabraid
