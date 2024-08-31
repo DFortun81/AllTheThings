@@ -48,7 +48,7 @@ app.TableConcat = function(tbl, field, def, sep, i, j)
 		if field then
 			local tblvals = {};
 			for _,val in ipairs(tbl) do
-				tinsert(tblvals, val[field] or def);
+				tblvals[#tblvals + 1] = val[field] or def
 			end
 			return table_concat(tblvals, sep, i, j);
 		else
