@@ -116,7 +116,7 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 			if rawget(QuestNameFromServer, questID) == false then
 				QuestNameFromServer[questID] = nil
 				app.PrintDebug("Fresh Quest Name!",questID,QuestNameFromServer[questID])
-				app.HandleEvent("OnRefreshWindows")
+				app.CallbackEvent("OnRenderDirty")
 			end
 		else
 			-- this quest name cannot be populated by the server
