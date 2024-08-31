@@ -427,7 +427,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["questID"] = 81612,
 						--["isWeekly"] = true,
 						["g"] = {
-							i(226016),	-- Darkened Tabard of the Arathi
+							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
 							i(224466),	-- Wilber The Chicken (QS!)
 						},
 					}),
@@ -446,7 +446,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						--["isWeekly"] = true,
 						["cost"] = { { "i", 218354, 1 }, },	-- 1x Clammer's Pry Bar
 						["g"] = {
-							i(226019),	-- Darkened Arathi Shoulderguards
+							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 						},
 					}),
 					o(457271, {	-- Crabber Supplies
@@ -472,9 +472,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					o(441723, {	-- Farm Satchel
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 64.9, 25.7, HALLOWFALL },
-						--["questID"] = ,
+						["questID"] = 81988,
 						["g"] = {
-							i(226019),	-- Darkened Arathi Shoulderguards
+							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 							i(224466),	-- Wilber The Chicken (QS!)
 						},
 					}),
@@ -483,7 +483,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 61.6, 32.6, HALLOWFALL },
 						["questID"] = 80590,
 						["g"] = {
-							i(226016),	-- Darkened Tabard of the Arathi
+							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
 						},
 					}),
 					o(457246, {	-- Fieldhand Stash
@@ -491,7 +491,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 64.5, 28.8, HALLOWFALL },
 						--["questID"] = ,
 						["g"] = {
-							i(226019),	-- Darkened Arathi Shoulderguards
+							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 						},
 					}),
 						o(441795, {	-- Hallowfall Sparkfly
@@ -508,7 +508,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 62.0, 31.7, HALLOWFALL },
 						["questID"] = 82996,
 						["g"] = {
-							i(226019),	-- Darkened Arathi Shoulderguards
+							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 						},
 					}),
 					o(433377, {	-- Harvest Box
@@ -516,7 +516,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 65.6, 29.4, HALLOWFALL },
 						["questID"] = 80420,
 						["g"] = {
-							i(226019),	-- Darkened Arathi Shoulderguards
+							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 						},
 					}),
 					o(452005, {	-- Lil Piggy
@@ -525,6 +525,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						--["questID"] = ,
 						["g"] = {
 							i(224457),	-- Lil Piggy (QS!/QI!)
+						},
+					}),
+					o(457260, {	-- Misplaced Supplies
+						["coord"] = { 68.2, 26.6, HALLOWFALL },
+						["questID"] = 84340,
+						["g"] = {
+							i(226018),	-- Darkened Arathi Cape (COSMETIC!)
 						},
 					}),
 					o(451993, {	-- Nerubian Device
@@ -548,7 +555,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 64.5, 31.6, HALLOWFALL },
 						["questID"] = 84339,
 						["g"] = {
-							i(226016),	-- Darkened Tabard of the Arathi
+							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
 						},
 					}),
 					n(206870, {	-- Shadowrooted Vine
@@ -567,7 +574,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 63.8, 26.8, HALLOWFALL },
 						["questID"] = 84341,
 						["g"] = {
-							i(226019),	-- Darkened Arathi Shoulderguards
+							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 						},
 					}),
 				}),
