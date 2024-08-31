@@ -2668,7 +2668,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(83131),	-- 30/40 Everburning Forge
 		}),
 		prof(FISHING, {
-			q(82767),	-- Extra HQT for Bloody Perch?
+			q(82767),	-- Extra HQT for Bloody Perch
 		}),
 		prof(HERBALISM, {
 			q(81415),	-- 40/40 Overloading the Underground
