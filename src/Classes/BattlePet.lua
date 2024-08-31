@@ -41,8 +41,8 @@ do
 				if not t.itemID or not t.link then
 					_t.text = "|cff0070dd"..UNKNOWN.."|r";
 				end
-			if field then return _t[field]; end
 			end
+			if field then return _t[field]; end
 		end
 		local function default_link(t)
 			if t.itemID then
