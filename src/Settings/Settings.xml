@@ -14,6 +14,7 @@
 	<Script file="Pages/Features.lua"/>
 	<Script file="Pages/Features - Audio.lua"/>
 	<Script file="Pages/Features - Blacklist.lua"/>
+    <Script file="Pages/Features - Commands.lua"/>
 	<Script file="Pages/Features - Reporting.lua"/>
 	<Script file="Pages/Features - Sync.lua"/>
 	<Script file="Pages/Features - Windows.lua"/>
