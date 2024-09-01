@@ -229,6 +229,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					193674,	-- Voraazka
 					193680,	-- Zurgaz Corebreaker
 				},
+				["maps"] = {
+					OHNAHRAN_PLAINS,
+					THALDRASZUS,
+					THE_AZURE_SPAN,
+					THE_WAKING_SHORES,
+				},
 				["g"] = {
 					i(194641),	-- Design: Elemental Lariat (RECIPE!)
 					i(200199),	-- Elements' Burden
@@ -242,14 +248,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			n(HEIRLOOMS, {
-				i(199686, {	-- Unstable Elemental Confluence
-					["cost"] = {
-						{ "i", 199837, 1 },	-- 1x Dimmed Primeval Earth
-						{ "i", 199836, 1 },	-- 1x Dimmed Primeval Fire
-						{ "i", 199838, 1 },	-- 1x Dimmed Primeval Storm
-						{ "i", 199839, 1 },	-- 1x Dimmed Primeval Water
-					},
-				}),
+				["maps"] = {
+					OHNAHRAN_PLAINS,
+					THALDRASZUS,
+					THE_AZURE_SPAN,
+					THE_WAKING_SHORES,
+				},
+				["g"] = {
+					i(199686, {	-- Unstable Elemental Confluence
+						["cost"] = {
+							{ "i", 199837, 1 },	-- 1x Dimmed Primeval Earth
+							{ "i", 199836, 1 },	-- 1x Dimmed Primeval Fire
+							{ "i", 199838, 1 },	-- 1x Dimmed Primeval Storm
+							{ "i", 199839, 1 },	-- 1x Dimmed Primeval Water
+						},
+					}),
+				},
 			}),
 			petbattle(filter(BATTLE_PETS, {
 				pet(3384, {	-- Storm-Touched Bluefeather (PET!)
@@ -550,7 +564,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						currency(2118),	-- Elemental Overflow
 				},
 			}),
-			-- #if AFTER TWW 
+			--[[ technically primal storm mobs can also drop primal gear which can be upgraded to s1 tier set, but can farm them on forbidden reach. Way more rares & not time based. Uncommented Catalyst ~Goldenshacal 1st Sep 2024
 			o(382621, {	-- Revival Catalyst Console
 				["description"] = "The Revival Catalyst is a system that allows you convert Primalist Items from Primal Storm Events or a Normal Mode Non-set items from the Vault of the Incarnates Raid into your class' Normal Transmog Set.\n\nIf you upgrade your Primal Storm Item to 3/3 Upgrades, you will instead unlock your classes' Heroic Vault of the Incarnes Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 				["coord"] = { 60.6, 53.8, THALDRASZUS },
@@ -802,7 +816,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}),
 			}),
-			-- #endif
+			--]]
 			n(VENDORS, {
 				n(196516, {	-- Mythressa
 					["coord"] = { 38.1, 37.7, VALDRAKKEN },
