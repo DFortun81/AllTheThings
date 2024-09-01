@@ -25,6 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(221753, {	-- Deathtide <The Viscous Swell>
 				["coord"] = { 44.8, 42.8, HALLOWFALL },
+				["cost"] = { { "i", 220123, 1 } },	-- 1x Ominous Offering
 				["questID"] = 81880,
 				["g"] = {
 					i(225997),	-- Earthen Adventurer's Spaulders

@@ -1098,9 +1098,6 @@ root(ROOTS.Unsorted, {
 				i(223316),	-- Trusty Hat
 				i(219390),	-- Set Keystone Map: Grim Batol
 				i(219494),	-- Ritual Flame
-				i(220122),	-- Offering of Pure Water
-				i(220123),	-- Ominous Offering
-				i(220124),	-- Jar of Mucus
 				i(220156),	-- Bubbling Wax
 				i(220220),	-- Ornate Pipe
 				i(220225),	-- Tattered Standard

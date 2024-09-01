@@ -4,6 +4,9 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(HALLOWFALL, {
 		n(TREASURES, {
+			i(220123, {	-- Ominous Offering
+				["description"] = "Combine 'Offering of Pure Water' and 'Jar of Mucus' to get this item.\nUsed to summon 'Deathtide' rare",
+			}),
 			o(444798, {	-- Arathi Treasure Hoard
 				["maps"] = { HALLOWFALL },
 				--["questID"] = xx,
@@ -79,6 +82,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(224552),	-- Cave Spelunker's Torch (TOY!)
 				},
 			}),
+			o(440926, {	-- Jar of Mucus
+				["coords"] = {
+					{ 48.0, 16.7, HALLOWFALL },
+					{ 48.8, 50.2, HALLOWFALL },
+				},
+				["g"] = {
+					i(220124),	-- Jar of Mucus
+				},
+			}),
 			o(441606, {	-- Jewel of the Cliffs
 				["coord"] = { 55.8, 69.5, HALLOWFALL },
 				["questID"] = 81971,
@@ -147,6 +159,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 84497,
 				["g"] = {
 					i(228457),	-- Lightspark Grade Book [book]
+				},
+			}),
+			o(440914, {	-- Offering of Pure Water
+				["coords"] = {
+					{ 28.9, 51.2, HALLOWFALL },
+					{ 34.2, 57.9, HALLOWFALL },
+					{ 34.3, 53.6, HALLOWFALL },
+					{ 34.5, 53.6, HALLOWFALL },
+					{ 43.4, 14.1, HALLOWFALL },
+					{ 43.5, 14.1, HALLOWFALL },
+					{ 50.1, 49.7, HALLOWFALL },
+					{ 52.4, 50.2, HALLOWFALL },
+					{ 53.8, 19.1, HALLOWFALL },
+					{ 55.2, 23.4, HALLOWFALL },
+					{ 55.2, 23.5, HALLOWFALL },
+				},
+				["g"] = {
+					i(220122),	-- Offering of Pure Water
 				},
 			}),
 			o(455183, {	-- Shadow Curfew Journal
