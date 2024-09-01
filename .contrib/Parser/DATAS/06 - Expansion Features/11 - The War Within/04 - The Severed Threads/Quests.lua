@@ -104,8 +104,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}
 				}),
 			}, {	-- RENOWN 25 --
-				hqt(81604),	-- "HQT triggered on max renown"
 			},
 		})),
+	}),
+})));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	n(THE_SEVERED_THREADS, {
+		n(QUESTS, {
+			q(81604),	-- Triggered on renown 25"
+		}),
 	}),
 })));
