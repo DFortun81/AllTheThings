@@ -524,7 +524,6 @@ root(ROOTS.Unsorted, {
 				i(225225),	-- Deepstone Fragment
 				i(225226),	-- Striated Inkstone
 				i(225227),	-- Wax-Sealed Records
-				i(224780),	-- Toughened Tempest Pelt
 				i(227662),	-- Shimmering Dust
 			}),
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
