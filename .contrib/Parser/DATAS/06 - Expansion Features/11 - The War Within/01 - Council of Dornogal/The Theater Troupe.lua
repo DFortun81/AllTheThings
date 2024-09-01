@@ -63,6 +63,3 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 		})),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, {
-}));
