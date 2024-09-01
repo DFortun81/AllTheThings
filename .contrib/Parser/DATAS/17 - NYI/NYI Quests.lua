@@ -8831,6 +8831,8 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(82200),	-- TWW Alpha/Beta Questauren Ringing Deeps skip
 			q(82201),	-- TWW Alpha/Beta Questauren Hallowfall skip
 			q(82202),	-- TWW Alpha/Beta Questauren Azj-Kahet skip
+			q(82383),	-- (Bunch of Rocks i(226147 unsorted quests showing on item)
+			q(82385),	-- (Bunch of Rocks i(226147 unsorted quests showing on item)
 			q(83023),	-- Short-Supply Reward
 			q(84085),	--
 			q(84086),	--
