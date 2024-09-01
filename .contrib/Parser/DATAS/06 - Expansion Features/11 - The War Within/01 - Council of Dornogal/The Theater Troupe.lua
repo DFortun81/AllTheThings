@@ -16,7 +16,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					q(82781, {	-- Attention-Getter
 						["provider"] = { "n", 217248 },	-- Elma
 						["coord"] = { 56.7, 52.4, ISLE_OF_DORN },
-						["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 8 }
+						["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 10 }
 					}),
 					q(82782, {	-- Authenticity in Dress
 						--["provider"] = { "n",  },	--
