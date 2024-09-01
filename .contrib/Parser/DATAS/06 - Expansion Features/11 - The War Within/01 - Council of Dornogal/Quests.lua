@@ -7,7 +7,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			{		-- RENOWN 1 --
 			}, {	-- RENOWN 2 --
 			}, {	-- RENOWN 3 --
-				q(84404, {	-- A Small Bundle of Goods
+				q(82342, {	-- A Small Bundle of Goods
 					["provider"] = { "n", 223728 },	-- Auditor Balwurz <Keeper of Renown>
 					["coord"] = { 39.1, 24.0, DORNOGAL },
 				}),
@@ -20,7 +20,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 			}, {	-- RENOWN 5 --
-				q(82342, {	-- A Small Bundle of Goods
+				q(84404, {	-- A Small Bundle of Goods
 					["provider"] = { "n", 223728 },	-- Auditor Balwurz <Keeper of Renown>
 					["coord"] = { 39.1, 24.0, DORNOGAL },
 				}),
