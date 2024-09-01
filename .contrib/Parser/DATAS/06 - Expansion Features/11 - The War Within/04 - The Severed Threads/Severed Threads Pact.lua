@@ -377,7 +377,15 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			-- Missing 11 total quest data/givers, 81505 81498 81497 81502 81482 (and 5 more)
 
 			-- q(80688), -- triggered after completing task for a 'Rumor' (re-capture and narrow down)
-
+			-- Weaver's Lair Profession Table
+			q(84746),	-- Blacksmithing
+			q(84747),	-- Leatherworking
+			q(84748),	-- Tailoring
+			q(84749),	-- Enchanting
+			q(84750),	-- Inscription
+			q(84751),	-- Jewelcrafting
+			q(84752),	-- Engineering
+			q(84753),	-- Alchemy
 			-- Weaver Rat Treasure Map
 			q(83778),	-- N-220568 @ 55.0, 68.7
 			q(80559),	-- opened weaver rat treasure after 83778

@@ -75,7 +75,6 @@ root(ROOTS.Unsorted, {
 			i(229091),	-- Kyros's Spare Shoulder Plates
 			i(229093),	-- Kyros's Spare Cuffs
 			i(229096),	-- The Cleansing Flame's Robes
-			i(229098),	-- The Cleansing Flame's Handwraps
 			i(229099),	-- The Cleansing Flame's Cowl
 			i(229101),	-- The Cleansing Flame's Shoulderpads
 			i(229102),	-- The Cleansing Flame's Cord
@@ -521,7 +520,7 @@ root(ROOTS.Unsorted, {
 				--- Notes
 				-- Prof Knowledge
 				i(224782),	-- Razor Talon
-				i(225224),	-- Diaphanous Gem Shards
+
 				i(225225),	-- Deepstone Fragment
 				i(225226),	-- Striated Inkstone
 				i(225227),	-- Wax-Sealed Records

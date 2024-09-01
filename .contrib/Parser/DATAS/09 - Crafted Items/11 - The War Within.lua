@@ -2588,7 +2588,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 446972);	-- Artisan Enchanter's Hat
 			--FirstCraft(XXXXX, 446971);	-- Artisan Fishing Cap
 			--FirstCraft(XXXXX, 446970);	-- Artisan Gardening Hat
-			--FirstCraft(XXXXX, 446975);	-- Artisan Tailor's Coat
+			FirstCraft(80839, 446975);	-- Artisan Tailor's Coat
 			--FirstCraft(XXXXX, 446996);	-- Bright Polishing Cloth
 			--FirstCraft(XXXXX, 446982);	-- Concoctor's Clutch
 			--FirstCraft(XXXXX, 446940);	-- Consecrated Cloak
@@ -2611,7 +2611,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 446927);	-- Duskweave Bolt
 			--FirstCraft(XXXXX, 446989);	-- Excavator's Haversack
 			FirstCraft(80867, 454397);	-- Exquisite Weavercloth Bolt
-			--FirstCraft(XXXXX, 446988);	-- Gardener's Seed Satchel
+			FirstCraft(80852, 446988);	-- Gardener's Seed Satchel
 			--FirstCraft(XXXXX, 446932);	-- Gloves of the Woven Dusk
 			--FirstCraft(XXXXX, 446930);	-- Grips of the Woven Dawn
 			--FirstCraft(XXXXX, 446998);	-- Gritty Polishing Cloth

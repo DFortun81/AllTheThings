@@ -104,6 +104,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}
 				}),
 			}, {	-- RENOWN 25 --
+				hqt(81604),	-- "HQT triggered on max renown"
 			},
 		})),
 	}),

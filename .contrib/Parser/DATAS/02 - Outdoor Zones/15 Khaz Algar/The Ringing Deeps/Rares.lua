@@ -193,6 +193,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 				q(84050),	-- Extra HQT: Disturbed Earthgorger
 				q(84048),	-- Extra HQT: Hungerer of the Deeps
 				q(84047),	-- Extra HQT: Kelpmire
+				q(85163),	-- Extra HQT: Lurker of the Deeps
 				q(81455),	-- Extra HQT: King Splash
 				q(84049),	-- Extra HQT: Spore-Infused Shalewing
 				q(84040),	-- Extra HQT: Terror of Forge

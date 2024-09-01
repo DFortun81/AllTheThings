@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(78446, {	-- Aiding the Accord: Superbloom
 					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 				}),
-				q(80388, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {	-- Last Hurrah: Emerald Dream
+				q(80388, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Last Hurrah: Emerald Dream
 					i(217111),	-- Cache of Awakened Dreams
 					i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
 						["f"] = MISC,
@@ -59,7 +59,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					i(211515),	-- Splintered Spark of Awakening
 				})),
-				q(80386, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {	-- Last Hurrah: Zaralek Caverns and Time Rifts
+				q(80386, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Last Hurrah: Zaralek Caverns and Time Rifts
 					i(217110),	-- Cache of Awakened Embers
 					i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
 						["f"] = MISC,
@@ -71,7 +71,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					i(211515),	-- Splintered Spark of Awakening
 				})),
-				q(80385, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR } }, {	-- Last Hurrah: Dragon Isles
+				q(80385, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {	-- Last Hurrah: Dragon Isles
 					i(217109),	-- Cache of Awakened Storms
 					i(218269, {	-- Draconic Tome of Awakening (RECIPE!)
 						["f"] = MISC,

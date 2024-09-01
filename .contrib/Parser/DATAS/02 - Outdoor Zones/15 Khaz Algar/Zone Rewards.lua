@@ -108,6 +108,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				-- Engineering
 				i(225229),	-- Earthen Induction Coil
 				i(225228),	-- Rust-Locked Mechanism
+				-- Jewelcrafting
+				i(225224),	-- Diaphanous Gem Shards
 				-- Leatherworking
 				i(225222),	-- Stone-Leather Swatch
 				i(225223),	-- Sturdy Nerubian Carapace
