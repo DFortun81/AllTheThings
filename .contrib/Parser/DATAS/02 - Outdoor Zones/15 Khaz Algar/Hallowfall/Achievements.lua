@@ -129,9 +129,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			n(ACHIEVEMENTS, {
 				q(83624),	-- Choosing 'Novice Formation' difficulty for 'Light's Gambit Champion' (achievementID 40729)
 				q(83625),	-- Choosing 'Adept Formation' difficulty for 'Light's Gambit Champion' (achievementID 40729)
-				q(83626),	-- Choosing 'Master' difficulty for 'Light's Gambit Champion' (achievementID 40729)
+				q(83626),	-- Choosing 'Master Formation' difficulty for 'Light's Gambit Champion' (achievementID 40729)
 			}),
 		}),
 	}),
 })));
-

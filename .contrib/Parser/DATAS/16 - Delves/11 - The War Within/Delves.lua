@@ -1531,7 +1531,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(82938),	-- The Dread Pit
 		q(82937),	-- The Sinkhole
 		q(82942),	-- The Spiral Weave
-		--q(TODO),	-- The Underkeep
+		q(82943),	-- The Underkeep
 		q(82945),	-- The Waterworks
 		-- Restored Coffer Key (Pop from any weekly activity, orders (of activity) doesn't matter)
 		q(84736, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 1st
@@ -1540,8 +1540,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(84739, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 4th
 		-- Seasonal Rewards
 		q(83235),	-- Season 1: 1/10 reward progress (spellID 454473 - Airship: Wings 05 - Lantern Wing)
-		-- Achievements
-		q(82943),	-- Delve Deep (40460) completed
 		-- Unknown
 	}),
 })));
