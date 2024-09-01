@@ -1115,7 +1115,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["cost"] = {{"i", 224273, 1}},	-- 1x Wooden Figure
 			}),
 			--
-			q(82025, {	-- Talk with Sky-Captain Aerthin
+			hqt(82025, {	-- Talk with Sky-Captain Aerthin
 				["name"] = "Talk with Sky-Captain Aerthin",
 				["description"] = "This npc is on a patrolling airship",
 				["provider"] = { "n", 222323 },	-- Sky-Captain Aerthin
@@ -1124,7 +1124,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 34.2, 45.4, HALLOWFALL },
 				},
 			}),
-			q(82024, {	-- Talk with Sky-Captain Clairmonte
+			hqt(82024, {	-- Talk with Sky-Captain Clairmonte
 				["name"] = "Talk with Sky-Captain Clairmonte",
 				["description"] = "This npc is on a patrolling airship",
 				["provider"] = { "n", 222311 },	-- Sky-Captain Clairmonte
@@ -1133,7 +1133,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 34.2, 45.4, HALLOWFALL },
 				},
 			}),
-			q(82012, {	-- Talk with Sky-Captain Dornald
+			hqt(82012, {	-- Talk with Sky-Captain Dornald
 				["name"] = "Talk with Sky-Captain Dornald",
 				["description"] = "This npc is on a patrolling airship",
 				["provider"] = { "n", 222333 },	-- Sky-Captain Dornald
@@ -1142,7 +1142,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 58.0, 40.2, HALLOWFALL },
 				},
 			}),
-			q(82026, {	-- Talk with Sky-Captain Onaro
+			hqt(82026, {	-- Talk with Sky-Captain Onaro
 				["name"] = "Talk with Sky-Captain Onaro",
 				["description"] = "This npc is on a patrolling airship",
 				["provider"] = { "n", 222337 },	-- Sky-Captain Onaro
