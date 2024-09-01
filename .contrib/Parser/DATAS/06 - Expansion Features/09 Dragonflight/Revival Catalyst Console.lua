@@ -20,6 +20,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		["modelScale"] = 4,
 		["sourceQuests"] = { 72360 },	-- Reviving the Machine
 		["g"] = {
+			-- #if BEFORE TWW
 			header(HEADERS.LFGDungeon, VAULT_OF_THE_INCARNATES, {
 				d(DIFFICULTY.RAID.LFR, {
 					["description"] = "",
@@ -510,8 +511,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}),
 			}),
-			-- This data is listed in their respective Raid. Please let it stay uncommented here until DF Classic. ~Goldenshacal 1st Sep 2024
-			--[[header(HEADERS.LFGDungeon, ABERRUS_THE_SHADOWED_CRUCIBLE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+			-- #endif
+			-- #if BEFORE TWW
+			header(HEADERS.LFGDungeon, ABERRUS_THE_SHADOWED_CRUCIBLE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 				d(DIFFICULTY.RAID.LFR, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 4 }, {
@@ -1000,10 +1002,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}),
 				}),
-			})),--]]
-			
-			-- This data is listed in their respective Raid. Please let it stay uncommented here until DF Classic. ~Goldenshacal 1st Sep 2024
-			--[[header(HEADERS.LFGDungeon, ADMIRDRASSIL_THE_DREAMS_HOPE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+			})),
+			-- #endif
+			-- #if BEFORE TWW
+			header(HEADERS.LFGDungeon, ADMIRDRASSIL_THE_DREAMS_HOPE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 				d(DIFFICULTY.RAID.LFR, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 4 }, {
@@ -1492,8 +1494,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}),
 				}),
-			})),--]]
-			
+			})),
+			-- #endif
 			-- #if BEFORE 11.0.2
 			-- Temporary show in main list too when the season is active
 			header(HEADERS.Achievement, SEASON_DRACONIC_PVE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {
