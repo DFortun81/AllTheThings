@@ -2538,7 +2538,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					-- #endif
 				},
 				-- #endif
-				["description"] = "You need to throw down a Dark Iron Ale mug near her (hence why you need 2 of them) and wait for the jubling to come hopping to it, then she'll offer this quest.",
+				["description"] = "You need to throw down a Dark Iron Ale mug near Morja in Darkmoon Faire (hence why you need 2 of them), and wait for the jubling to come hopping to it. This might take a while. Then she'll offer this quest.",
 				["cost"] = { { "i", 11325, 2 } },	-- Dark Iron Ale Mug
 				["isMonthly"] = true,
 				["lvl"] = 10,
