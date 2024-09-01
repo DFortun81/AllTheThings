@@ -1275,11 +1275,11 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["provider"] = { "i", 222554 },	-- Algari Treatise on Blacksmithing
 			}),
 			q(83257, {	-- TWW Weekly Blacksmithing Knowledgepoint #1
-				["name"] = "TWW Blacksmithing Treasure #1",
+				["name"] = "TWW Weekly Blacksmithing Treasure #1",
 				["provider"] = { "i", 225232 },	-- Coreway Billet
 			}),
 			q(83256, {	-- TWW Weekly Blacksmithing Knowledgepoint #2
-				["name"] = "TWW Blacksmithing Treasure #2",
+				["name"] = "TWW Weekly Blacksmithing Treasure #2",
 				["provider"] = { "i", 225233 },	-- Dense Bladestone
 			}),
 		})),

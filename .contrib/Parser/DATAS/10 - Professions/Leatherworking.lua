@@ -1454,11 +1454,11 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				["provider"] = { "i", 222549 },	-- Algari Treatise on Leatherworking
 			}),
 			q(83267, {	-- TWW Weekly Leatherworking Knowledgepoint #1
-				["name"] = "TWW Leatherworking Treasure #1",
+				["name"] = "TWW Weekly Leatherworking Treasure #1",
 				["provider"] = { "i", 225223 },		-- Sturdy Nerubian Carapace
 			}),
 			q(83268, {	-- TWW Weekly Leatherworking Knowledgepoint #2
-				["name"] = "TWW Leatherworking Treasure #2",
+				["name"] = "TWW Weekly Leatherworking Treasure #2",
 				["provider"] = { "i", 225222 },		-- Studded Leather Band
 			}),
 		})),

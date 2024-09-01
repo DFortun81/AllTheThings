@@ -1195,11 +1195,11 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["provider"] = { "i", 222546 },	-- Algari Treatise on Alchemy
 			}),
 			q(83253, {	-- TWW Weekly Alchemy Knowledgepoint #1
-				["name"] = "TWW Alchemy Treasure #1",
+				["name"] = "TWW Weekly Alchemy Treasure #1",
 				["provider"] =  { "i", 225234 },	-- Alchemical Sediment
 			}),
 			q(83255, {	-- TWW Weekly Alchemy Knowledgepoint #2
-				["name"] = "TWW Alchemy Treasure #2",
+				["name"] = "TWW Weekly Alchemy Treasure #2",
 				["provider"] = { "i", 225235} ,		-- Deepstone Crucible
 			}),
 		})),

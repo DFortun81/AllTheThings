@@ -1551,11 +1551,11 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				["provider"] = { "i", 222621 },	-- Algari Treatise on Engineering
 			}),
 			q(83260, {	-- TWW Weekly Engineering Knowledgepoint #1
-				["name"] = "TWW Engineering Treasure #1",
+				["name"] = "TWW Weekly Engineering Treasure #1",
 				["provider"] = { "i", 225228 },	-- Rust-Locked Mechanism
 			}),
 			q(83261, {	-- TWW Weekly Engineering Knowledgepoint #2
-				["name"] = "TWW Engineering Treasure #2",
+				["name"] = "TWW Weekly Engineering Treasure #2",
 				["provider"] = { "i", 225229 },	-- Earthen Induction Coil
 			}),
 		})),
