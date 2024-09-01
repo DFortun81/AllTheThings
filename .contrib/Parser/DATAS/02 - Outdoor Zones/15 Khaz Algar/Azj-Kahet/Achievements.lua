@@ -50,7 +50,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 			}),
 			ach(40843),		-- Mine Poppin'
-			--ach(40632),		-- No Harm Ever Came From Reading A Book
 			header(HEADERS.Achievement, 40632, {	-- No Harm Ever Came From Reading A Book
 				q(83741, {	-- Step 1: Interact with the Fleshy Grimoire
 					["name"] = "|cFFFFFFFFStep 1|r: Interact with the Fleshy Grimoire",
@@ -102,6 +101,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coords"] = {
 						{ 56.7, 85.1, AZJ_KAHET }, -- Cave Entrance
 						{ 66.77, 56.26, NERUBAR_LOWER }, -- Void Hole
+					},
+					["g"] = {
+						ach(40632),		-- No Harm Ever Came From Reading A Book
 					},
 				}),
 			}),
