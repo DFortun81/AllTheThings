@@ -159,12 +159,3 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		}),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
-	m(KHAZ_ALGAR, {
-		m(AZJ_KAHET, {
-			n(ACHIEVEMENTS, {
-				--
-			}),
-		}),
-	}),
-})));
