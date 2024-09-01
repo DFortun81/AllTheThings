@@ -662,7 +662,6 @@ root(ROOTS.Unsorted, {
 				i(225752),	-- Dornogal Defender
 				i(225757),	-- Coreway Pickaxe
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
-				i(225997),	-- Earthen Adventurer's Spaulders
 				i(226000),	-- Ensemble: Earthen Adventurer's Copper Drapery
 				i(226363),	-- Earthen Backpack
 				i(226366),	-- Gloves of the Morning Mist

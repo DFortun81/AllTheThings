@@ -27,6 +27,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 44.8, 42.8, HALLOWFALL },
 				["questID"] = 81880,
 				["g"] = {
+					i(225997),	-- Earthen Adventurer's Spaulders
 					i(223921),	-- Ever-Oozing Signet
 					i(223920),	-- Slime Deflecting Stopper
 				},

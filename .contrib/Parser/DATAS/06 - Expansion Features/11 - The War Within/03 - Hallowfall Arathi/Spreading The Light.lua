@@ -760,7 +760,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			---
 			q(85552),	-- triggered on opening a Lamplighter Supply Satchel, first & second in week - x3 reports
 			q(79177),	-- Snuffling in Hallowfall?
-			q(83342),	-- ??? "Popped when completing 76394 Shadows of Flavor" x2 reports
+			q(83342),	-- When completing 76394 Shadows of Flavor x3 reports
 			--q(79179)	-- ??? "After looting Spider Touched Bag (211973)."
 			--q(79188),	-- ??? "After picking up Spider-Touched Bag (211973), during the keyflame event and turning in 79173 Supply the Effort"
 						-- ??? "after turning in 79173 Supply the Effort and receiving a lamplighter supply satchel (first that week)"
