@@ -610,11 +610,6 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(17325),	-- <DNT> Hearthfire Fellowship Rank 4
 		})),
 
-		-- 10.1.0
-		expansion(EXPANSION.DF, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
-			ach(18542),	-- Dragonflight Keystone Master: Season Two	-- shows as completed together with ach(17844), but this version is NYI
-		})),
-
 		-- 10.1.7
 		expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			ach(6313),	-- [DNT] UTILITY: Promotion - China (Cenarion Hatchling)

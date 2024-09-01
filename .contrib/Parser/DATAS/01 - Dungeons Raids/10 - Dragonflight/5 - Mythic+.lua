@@ -112,6 +112,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			ach(17844, {	-- Dragonflight Keystone Master: Season Two
 				i(204798),	-- Inferno Armoredon (MOUNT!)
 			}),
+			ach(18542),	-- Dragonflight Keystone Master: Season Two	-- this version is also rewarded
 			ach(17845),		-- Dragonflight Keystone Hero: Season Two
 			ach(17846, {	-- Smoldering Hero: Dragonflight Season 2
 				title(504),	-- <Name> the Smoldering Hero
