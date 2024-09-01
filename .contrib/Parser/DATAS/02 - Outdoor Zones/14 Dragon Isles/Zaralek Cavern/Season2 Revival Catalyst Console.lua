@@ -10,7 +10,7 @@ end
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
 	m(ZARALEK_CAVERN, {
 		o(382621, {	-- Revival Catalyst Console
-			["description"] = "The Revival Catalyst is a system that lets you convert Zaralek Cavern Items & LFR Mode Non-set items from the Aberrus Raid into your class' LFR Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+			["description"] = "The Revival Catalyst is a system that lets you convert Zaralek Cavern's Weekly Event Zone Items (Researchers & A Worthy Ally: Niffen) & LFR Mode Non-set items from the Aberrus Raid into your class' LFR Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 			["coord"] = { 60.6, 53.8, THALDRASZUS },
 			["modelScale"] = 4,
 			["g"] = bubbleDown({ ["modID"] = 4 }, {
