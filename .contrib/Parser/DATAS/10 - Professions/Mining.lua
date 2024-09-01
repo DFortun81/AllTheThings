@@ -777,6 +777,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						r(253337),	-- Storm Silver Deposit [Rank 2]
+						i(160974),	-- Sanctified Storm Silver Ingots (QI!)
 						i(161133),	-- Unsanctified Storm Silver Ingots (QI!)
 						i(160440),	-- Unsanctified Storm Silver Ore (QI!)
 					},
@@ -792,6 +793,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						r(253337),	-- Storm Silver Deposit [Rank 2]
+						i(160974),	-- Sanctified Storm Silver Ingots (QI!)
 						i(161133),	-- Unsanctified Storm Silver Ingots (QI!)
 						i(160440),	-- Unsanctified Storm Silver Ore (QI!)
 					},

@@ -332,6 +332,9 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["races"] = ALLIANCE_ONLY,
 				["maps"] = { 974, 975, 976, 977, 978, 979, 980 },	-- Tol Dagor
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(155648),	-- Jewel of the Tides (QI!)
+				},
 			}),
 			q(49582, {	-- Atal'Dazar: Not All That Glitters...
 				["sourceQuests"] = { 49587 },	-- The Shrine of Nature
@@ -341,6 +344,9 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["races"] = HORDE_ONLY,
 				["maps"] = { 934, 935 },	-- Atal'Dazar
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(155666),	-- Eye of Dazar (QI!)
+				},
 			}),
 			q(55590, {	-- Setting Things Right [A]
 				["sourceQuests"] = { 49575 },	-- Tol Dagor: Jewel of the Tides
@@ -379,6 +385,10 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["modelScale"] = 2,
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(155661),	-- Pristine Kubiline Shards (QI!)
+					i(155830),	-- Runic Core (QI!)
+				},
 			}),
 			q(49581, {	-- Sun-Speckled Dunes
 				["sourceQuests"] = { 49588 },	-- The Shrine of the Sands
@@ -387,6 +397,10 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["modelScale"] = 2,
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(155664),	-- Polished Fire Spinel (QI!)
+					i(155665),	-- Rough Fire Spinel (QI!)
+				},
 			}),
 			q(55586, {	-- Polished Up [A]
 				["sourceQuests"] = { 49576 },	-- High Prospects

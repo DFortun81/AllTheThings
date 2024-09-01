@@ -598,6 +598,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 60494 },	-- Your Friend, Dactylis
 										["provider"] = { "n", 168485 },	-- Apolon
 										["coord"] = { 27.8, 41.7, ARCHONS_RISE },
+										["g"] = {
+											i(181782),	-- Soul Mirror (QI!)
+										},
 									}),
 									q(61358, {	-- Alderyn and Myn'ir
 										["sourceQuests"] = { 60498 },	-- Overcoming the Trial
@@ -621,6 +624,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 62219 },	-- Fanciful Distractions
 										["provider"] = { "n", 173710 },	-- Nuuminuuru
 										["coord"] = { 51.4, 33.7, ARDENWEALD },
+										["g"] = {
+											i(182969),	-- Soul Mirror (QI!)
+										},
 									}),
 									q(61369, {	-- Craven Corinth
 										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
@@ -654,6 +660,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 61490 },	-- War of Information
 										["provider"] = { "n", 172515 },	-- Echthra
 										["coord"] = { 56.7, 11.6, MALDRAXXUS },
+										["g"] = {
+											i(181701),	-- Soul Mirror (QI!)
+										},
 									}),
 									q(60493, {	-- Humble Gatherer
 										["sourceQuests"] = { 60489 },	-- The Path of Ascension
@@ -673,6 +682,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 61369 },	-- Craven Corinth
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+										["g"] = {
+											i(182479),	-- Ashfallen Key (QI!)
+											i(182623),	-- Soul Mirror (QI!)
+										},
 									}),
 									q(61361, {	-- Nuuminuuru
 										["description"] = "Available after defeating Kalisthene, Echthra, and Aldryn & Myn'ir on 'Courage' difficulty.",
@@ -720,12 +733,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 61365 },	-- Splinterbark Nightmare
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+										["g"] = {
+											i(182467),	-- Soul Mirror (QI!)
+										},
 									}),
 									q(61360, {	-- The Hunt's Gratitude
 										-- Rewards: spell 339523 "Trial: Alderyn and Myn'ir"
 										["sourceQuests"] = { 61965 },	-- Piercing the Shell
 										["provider"] = { "n", 173403 },	-- Myn'ir
 										["coord"] = { 51.7, 78.8, ARDENWEALD },
+										["g"] = {
+											i(182580),	-- Soul Mirror (QI!)
+										},
 									}),
 									q(60489, {	-- The Path of Ascension
 										["provider"] = { "n", 167745 },	-- Haephus
@@ -842,11 +861,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["description"] = "Available after defeating Athanos, Mad Mortimer, and Thran'tiok on 'Courage' difficulty.",
 										["provider"] = { "n", 168430 },	-- Dactylis
 										["coord"] = { 29.9, 38.8, ARCHONS_RISE },
+										["g"] = {
+											i(181795),	-- Soul Mirror (QI!)
+										},
 									}),
 									q(61372, {	-- Back to Him
 										["sourceQuests"] = { 61478 },	-- Humble Beginnings
 										["provider"] = { "n", 175295 },	-- Forgelite Sophone
 										["coord"] = { 51.6, 80.9, BASTION },
+										["g"] = {
+											i(181472),	-- Soul Mirror (QI!)
+										},
 									}),
 									q(62052, {	-- Exiled by Paranoia
 										["sourceQuests"] = { 61367 },	-- Thran'tiok
@@ -865,6 +890,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 62053 },	-- Necromantic Power
 										["provider"] = { "n", 173495 },	-- Karaxi the Defector
 										["coord"] = { 59.7, 38.0, MALDRAXXUS },
+										["g"] = {
+											i(182965),	-- Soul Mirror (QI!)
+										},
 									}),
 									q(61478, {	-- Humble Beginnings
 										["sourceQuests"] = { 61371 },	-- Athanos
@@ -892,6 +920,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["sourceQuests"] = { 61436 },	-- Field Trip
 										["provider"] = { "n", 172141 },	-- Mad Mortimer
 										["coord"] = { 59.2, 71.9, MALDRAXXUS },
+										["g"] = {
+											i(181460),	-- Soul Mirror (QI!)
+										},
 									}),
 									q(63169, {	-- Path of Ascension: Alderyn and Myn'ir
 										-- ["sourceQuests"] = {  },	-- TODO: ?

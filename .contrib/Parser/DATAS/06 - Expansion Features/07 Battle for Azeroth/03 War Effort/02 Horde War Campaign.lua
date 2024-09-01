@@ -277,6 +277,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 138677 },	-- Rexxar
 							["coord"] = { 51.7, 29.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(160565),	-- Fading Umbral Wand (QI!)
+							},
 						}),
 						q(51675, {	-- Hunt Them Down
 							["sourceQuests"] = { 51587 },	-- Onward!
@@ -350,6 +353,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 137742 },	-- Shadow Hunter Ty'jin
 							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(160260),	-- Fogsail Cannonball (QI!)
+							},
 						}),
 						q(51440, {	-- A Change in Direction
 							["sourceQuests"] = {
@@ -368,6 +374,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 137742 },	-- Shadow Hunter Ty'jin
 							["coord"] = { 87.3, 50.0, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(160405),	-- Goblin-Engineered Hand Cannon (QI!)
+							},
 						}),
 						q(51442, {	-- I'm the Captain Now
 							["sourceQuests"] = {
@@ -467,6 +476,10 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 138285 },	-- Nathanos Blightcaller
 							["coord"] = { 72.0, 51.8, TIRAGARDE_SOUND },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(160511),	-- Length of Chain (QI!)
+								i(160512),	-- Sail Canvas (QI!)
+							},
 						}),
 						q(51593, {	-- Bridgeport Investigation
 							["sourceQuests"] = { 51591 },	-- Our Mountain Now
@@ -566,6 +579,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 139062 },	-- Lilian Voss
 							["coord"] = { 61.3, 51.1, DRUSTVAR },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(152480),	-- Gravebloom (QI!)
+							},
 						}),
 						q(51788, {	-- The Crypt Keeper
 							["sourceQuests"] = {

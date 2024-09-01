@@ -754,6 +754,9 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["coord"] = { 73.6, 8.6, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(156875),	-- Revlis Ore (QI!)
+				},
 			}),
 			q(50276, {	-- A Recipe For the Ages [H]
 				["description"] = "Requires 150 Zandalari Blacksmithing.",
@@ -761,6 +764,9 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["coord"] = { 43.6, 38.3, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(156875),	-- Revlis Ore (QI!)
+				},
 			}),
 			q(50114, {	-- Hammering Out Information [A]
 				["sourceQuests"] = { 50123 },	-- A Recipe For the Ages [A]
@@ -812,6 +818,10 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["coord"] = { 53.9, 50.0, DEEPHOLM },
 				["sourceQuestNumRequired"] = 1,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(157556),	-- Earthen Thumper (QI!)
+					i(156886),	-- Endurite (QI!)
+				},
 			}),
 			q(50274, {	-- Titanic Forging
 				["sourceQuests"] = {

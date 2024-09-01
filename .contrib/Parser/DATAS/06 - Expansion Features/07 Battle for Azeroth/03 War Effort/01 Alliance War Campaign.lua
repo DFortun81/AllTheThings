@@ -367,12 +367,18 @@ root(ROOTS.ExpansionFeatures,
 							["coord"] = { 39.0, 42.9, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51349 },	-- Honor Bound
+							["g"] = {
+								i(160044),	-- Prickly Pear Root (QI!)
+							},
 						}),
 						q(51351, {	-- Poisoned Barbs
 							["provider"] = { "n", 137337 },	-- Sergeant Ermey
 							["coord"] = { 39.0, 42.9, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 51349 },	-- Honor Bound
+							["g"] = {
+								i(159958),	-- Saltspine Barb (QI!)
+							},
 						}),
 						q(51366, {	-- Antidote Application
 							["provider"] = { "n", 137337 },	-- Sergeant Ermey
@@ -509,6 +515,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 137401 },	-- Anvil-Thane Thurgaden
 							["coord"] = { 40.7, 70.8, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(159910),	-- Firelands Slag (QI!)
+							},
 						}),
 						q(51359, {	-- Fragment of the Firelands
 							["provider"] = { "n", 137401 },	-- Anvil-Thane Thurgaden
@@ -595,6 +604,9 @@ root(ROOTS.ExpansionFeatures,
 							["coord"] = { 40.7, 47.8, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52028 },	-- Comb the Desert
+							["g"] = {
+								i(161086),	-- Reliquary Orders (QI!)
+							},
 						}),
 						q(52030, {	-- Keep Combing
 							["provider"] = { "n", 139705 },	-- Halford Wyrmbane
@@ -607,6 +619,9 @@ root(ROOTS.ExpansionFeatures,
 							["coord"] = { 44.9, 58.7, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52030 },	-- Keep Combing
+							["g"] = {
+								i(161087),	-- Reliquary Map: Vol'dun (QI!)
+							},
 						}),
 						q(52032, {	-- Never Stop Combing
 							["provider"] = { "n", 139705 },	-- Halford Wyrmbane
@@ -720,6 +735,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 140258 },	-- Shandris Feathermoon
 							["coord"] = { 51.2, 21.8, NAZMIR },
 							["races"] = ALLIANCE_ONLY,
+							["g"] = {
+								i(161332),	-- Horde Missive (QI!)
+							},
 						}),
 						q(52171, {	-- One Option: Fire
 							["provider"] = { "n", 139609 },	-- John J. Keeshan
@@ -747,6 +765,9 @@ root(ROOTS.ExpansionFeatures,
 								52170,	-- Ending Areiel
 								52171,	-- One Option: Fire
 								52172,	-- They Can't Stay Here
+							},
+							["g"] = {
+								i(163196),	-- Invisibility Flask (QI!)
 							},
 						}),
 						q(52219, {	-- Target: Blood Prince Dreven
@@ -791,12 +812,18 @@ root(ROOTS.ExpansionFeatures,
 							["coord"] = { 40.6, 70.7, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52173 },	-- The Void Elves Stand Ready
+							["g"] = {
+								i(161422),	-- Magister Umbric's Void Shard (QI!)
+							},
 						}),
 						q(52203, {	-- Find the Paper Trail
 							["provider"] = { "n", 140477 },	-- Magister Umbric
 							["coord"] = { 40.6, 70.7, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52173 },	-- The Void Elves Stand Ready
+							["g"] = {
+								i(161420),	-- Orders from Gallywix (QI!)
+							},
 						}),
 						q(52241, {	-- A Greedy Goblin's Paradise
 							["provider"] = { "n", 140477 },	-- Magister Umbric
@@ -944,6 +971,10 @@ root(ROOTS.ExpansionFeatures,
 							["coord"] = { 57.6, 87.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52281 },	-- Under the Cover of Swiftwing
+							["g"] = {
+								i(162264),	-- Kelsey's Jump Boots (QI!)
+								i(162253),	-- Naval Records (QI!)
+							},
 						}),
 						q(52283, {	-- Sabotaging the Pa'ku
 							["provider"] = { "n", 141289 },	-- John J. Keeshan
@@ -983,6 +1014,9 @@ root(ROOTS.ExpansionFeatures,
 							["coord"] = { 48.8, 68.5, ZULDAZAR },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52290 },	-- My Enemy's Enemy is My Disguise
+							["g"] = {
+								i(162450),	-- Portal Orb (QI!)
+							},
 						}),
 						q(52289, {	-- Victory is Assured
 							["provider"] = { "n", 141291 },	-- Shandris Feathermoon

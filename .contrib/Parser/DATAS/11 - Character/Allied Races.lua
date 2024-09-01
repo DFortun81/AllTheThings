@@ -78,6 +78,9 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["provider"] = { "n", 133197 },	-- Moira Thaurissan
 				["coord"] = { 52.0, 13.8, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(163693),	-- Fragment o' the Molten Core (QI!)
+				},
 			}),
 			q(53352, {	-- Firelands
 				["sourceQuests"] = { 53342 },	-- Molten Core

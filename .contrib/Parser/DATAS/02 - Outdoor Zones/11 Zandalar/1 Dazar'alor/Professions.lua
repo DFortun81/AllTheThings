@@ -140,6 +140,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						recipe(257154),	-- Skinning Technique: Bone Gathering (Rank 3)
+						i(161435),	-- Rezan's Bone Splinter (QI!)
 					},
 				}),
 				-- Leather Gathering
@@ -151,6 +152,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						recipe(257147),	-- Skinning Technique: Leather Gathering (Rank 2)
+						i(161430),	-- Rana's 'Ancient Artifact' (QI!)
 					},
 				}),
 				-- Scale Gathering
@@ -162,6 +164,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						recipe(257150),	-- Skinning Technique: Scale Gathering (Rank 2)
+						i(161432),	-- Pristine Crocolisk Skin (QI!)
 					},
 				}),
 				q(52215, {	-- A Thicker Thread

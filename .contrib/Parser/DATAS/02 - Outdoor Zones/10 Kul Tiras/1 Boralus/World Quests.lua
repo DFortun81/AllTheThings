@@ -38,11 +38,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 120,
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
+				["g"] = {
+					i(160480),	-- Marine Dog Tags (QI!)
+				},
 			}),
 			q(51577, {	-- Defending the Academy
 				["lvl"] = 120,
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
+				["g"] = {
+					i(160480),	-- Marine Dog Tags (QI!)
+				},
 			}),
 			q(50776, {	-- False Prophets
 				["lvl"] = 120,

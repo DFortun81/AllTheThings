@@ -66,8 +66,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51687, {	-- A Smelly Solution
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(160557),	-- Pungent Onion (QI!)
+				},
 			}),
-			q(51745),	-- A Smelly Solution
+			q(51745, {	-- A Smelly Solution
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(160557),	-- Pungent Onion (QI!)
+				},
+			}),
 			q(51576, {	-- Any Witch Way but Dead
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -197,12 +205,21 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53270, {	-- Flourishing Riverbud
 				["requireSkill"] = HERBALISM,
+				["g"] = {
+					i(163595),	-- Flourishing Riverbud (QI!)
+				},
 			}),
 			q(53266, {	-- Flourishing Sea Stalks
 				["requireSkill"] = HERBALISM,
+				["g"] = {
+					i(163588),	-- Flourishing Sea Stalk (QI!)
+				},
 			}),
 			q(51658, {	-- Fly the Coop!
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(157840),	-- Falconer's Key (QI!)
+				},
 			}),
 			q(54507, {	-- Fungal Infestation (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
@@ -213,6 +230,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51887),	-- Fungi Trio
 			q(53311, {	-- Gleaming Storm Silver
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163623),	-- Gleaming Storm Silver (QI!)
+				},
 			}),
 			q(51507),	-- Gorehorn
 			q(51874),	-- Gorged Boar
@@ -253,6 +273,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51972),	-- Lost Goat
 			q(53308, {	-- Luminous Monelite
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163609),	-- Luminous Monelite (QI!)
+				},
 			}),
 			q(54690, {	-- Maddok the Sniper (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
@@ -318,9 +341,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51897),	-- Rimestone
 			q(51710, {	-- Rise of the Yetis (A)
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(164309),	-- Lost Supplies (QI!)
+				},
 			}),
 			q(51739, {	-- Rise of the Yetis (H)
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(164309),	-- Lost Supplies (QI!)
+				},
 			}),
 			petbattle(q(52278, {	-- Rogue Azerite
 				["filterID"] = BATTLE_PETS,

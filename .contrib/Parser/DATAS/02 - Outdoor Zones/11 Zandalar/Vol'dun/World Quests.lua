@@ -165,6 +165,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(54649),	-- Flames of War (Faction Assault WQ)
 			q(53296, {	-- Flourishing Sea Stalks
 				["requireSkill"] = HERBALISM,
+				["g"] = {
+					i(163588),	-- Flourishing Sea Stalk (QI!)
+				},
 			}),
 			q(54645, {	-- Fury of the Earth (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
@@ -190,6 +193,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130443 },	-- Hivemother Kraxi
 			}),
 			q(51228, {	-- Instant Meat, Ready to Eat
+				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(159794),	-- Broiled Buzzard Meat (QI!)
 					i(159796),	-- Meatification Potion (QI!)
@@ -260,12 +264,20 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51124),	-- Relic Hunter Hazaak
-			q(51330),	-- Resilient Seeds
+			q(51330, {	-- Resilient Seeds
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(159909),	-- Resilient Seed (QI!)
+				},
+			}),
 			q(54127, {	-- Rocket Hop (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(53324, {	-- Rough Monelite
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163625),	-- Rough Monelite (QI!)
+				},
 			}),
 			q(51804),	-- Running Interference
 			q(54636, {	-- Sandbinder Sodir (Faction Assault WQ)
@@ -357,7 +369,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52864, {	-- What Do You Mean, Mind Controlling Plants?
 				["provider"] = { "n", 141969 },	-- Spineleaf
 			}),
-			q(51315),	-- Wild Flutterbies
+			q(51315, {	-- Wild Flutterbies
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(162585),	-- Flutterby Collector (QI!)
+				},
+			}),
 			q(51322, {	-- Wings and Stingers
 				["g"] = {
 					i(159925),	-- Buzzard Wing (QI!)

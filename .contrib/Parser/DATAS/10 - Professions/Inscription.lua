@@ -4968,6 +4968,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["maps"] = { 1407 }, -- Prison of Ink (Scenario Map)
 				["groups"] = {
 					r(292012),	-- Blood Contract: Bloodshed
+					i(156509),	-- Sanguine Ink (QI!)
 				},
 			})),
 			q(49876, {	-- Lines in the Sand [A]
@@ -5008,6 +5009,9 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["coord"] = { 27.6, 52.2, VOLDUN },
 				["groups"] = {
 					r(292320),	-- Blood Contract: Bloodguard
+					i(156598),	-- Pile of Fine Bone Dust (QI!)
+					i(156600),	-- Vial of Ossein Ink (QI!)
+					i(156601),	-- Zem'lan Pirate Bone (QI!)
 				},
 			})),
 			q(49881, {	-- The Final Verse

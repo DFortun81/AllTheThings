@@ -59,6 +59,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51385, {	-- A Supply of Stingers
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(153486),	-- Intact Venomous Barb (QI!)
+				},
 			}),
 			q(51610),	-- Adhara White
 			q(54295, {	-- Artillery Master Goodwin (Faction Assault WQ)
@@ -79,9 +82,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50296, {	-- Billy Goat Barber (A)
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(155681),	-- Goat Fur (QI!)
+					i(153596),	-- Goat Shears (QI!)
+				},
 			}),
 			q(51671, {	-- Billy Goat Barber (H)
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(155681),	-- Goat Fur (QI!)
+					i(153596),	-- Goat Shears (QI!)
+				},
 			}),
 			q(51669),	-- Black-Eyed Bart
 			q(51841),	-- Blackthorne
@@ -155,6 +166,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(53874),	-- End Their Vigil
 			q(51311, {	-- Energizing Extract
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(152849),	-- Pulsating Extract (QI!)
+				},
 			}),
 			q(53951, {	-- Explosive Relief (A, Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
@@ -176,9 +190,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53278, {	-- Flourishing Riverbud
 				["requireSkill"] = HERBALISM,
+				["g"] = {
+					i(163595),	-- Flourishing Riverbud (QI!)
+				},
 			}),
 			q(53277, {	-- Flourishing Sea Stalks
 				["requireSkill"] = HERBALISM,
+				["g"] = {
+					i(163588),	-- Flourishing Sea Stalk (QI!)
+				},
 			}),
 			q(53875, {	-- Fogsail for a Day (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
@@ -235,9 +255,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50295, {	-- Like Pulling Teeth (A)
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(161312),	-- Intact Wendigo Tooth (QI!)
+				},
 			}),
 			q(52805, {	-- Like Pulling Teeth (H)
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(161312),	-- Intact Wendigo Tooth (QI!)
+				},
 			}),
 			q(53759, {	-- Look Out Below! (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
@@ -279,8 +305,16 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50164, {	-- Polly Want A Cracker?
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(154878),	-- Rodrigo's Birdseed Biscuit (QI!)
+				},
 			}),
-			q(51646),	-- Polly Want A Cracker? (Possibly a horde equivalent? Why are these different?)
+			q(51646, {	-- Polly Want A Cracker?
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(154878),	-- Rodrigo's Birdseed Biscuit (QI!)
+				},
+			}),
 			q(51661),	-- Raging Swell
 			q(51890),	-- Ranja the Last Chillpaw
 			q(51566, {	-- Resurgence of the Beast
@@ -288,6 +322,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53313, {	-- Rough Monelite
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163625),	-- Rough Monelite (QI!)
+				},
 			}),
 			q(51656),	-- Saurolisk Tamer Mugg
 			q(52780),	-- Siege of Boralus: Breaking The Alliance
@@ -382,11 +419,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(51847),	-- Tort Jaw
-			q(53078, {	-- Treasure in the Tides (Horde)
+			q(53078, {	-- Treasure in the Tides (H)
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(163099),	-- Proudmoore Supply Crate (QI!)
+				},
 			}),
-			q(52155, {	-- Treasure in the Tides (Alliance)
+			q(52155, {	-- Treasure in the Tides (A)
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(163099),	-- Proudmoore Supply Crate (QI!)
+				},
 			}),
 			a(q(53346, {	-- Trogg Tromping
 				["g"] = {

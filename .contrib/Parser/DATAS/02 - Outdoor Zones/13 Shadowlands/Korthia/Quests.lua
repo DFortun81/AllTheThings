@@ -1092,6 +1092,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64506 },	-- What Must Be Found
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.7, 22.5, KORTHIA },
+				["g"] = {
+					i(187863),	-- Key of Ephemera (QI!)
+				},
 			}),
 			q(63924, {	-- Gorak Claw Fetish
 				["sourceQuests"] = { 64511 },	-- Missing Relics

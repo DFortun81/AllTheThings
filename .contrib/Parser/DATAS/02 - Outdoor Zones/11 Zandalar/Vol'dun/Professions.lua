@@ -14,6 +14,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 120,
+					["g"] = {
+						i(155664),	-- Polished Fire Spinel (QI!)
+						i(155665),	-- Rough Fire Spinel (QI!)
+					},
 				}),
 			}),
 		}),

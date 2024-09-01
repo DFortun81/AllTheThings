@@ -24,6 +24,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(52936, {	-- A New Era
+				["g"] = {
+					i(162627),	-- Plague Barrel Sack (QI!)
+				},
 			}),
 			q(51855, {	-- A Pirate's Life For Me
 				["races"] = ALLIANCE_ONLY,
@@ -157,6 +160,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52972, {	-- Favored Grandchild
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(159781),	-- Mountain Goat Milk (QI!)
+					i(162647),	-- Pristine Razorclaw Pelt (QI!)
+				},
 			}),
 			q(52011, {	-- Fiendish Fields (A)
 				["races"] = ALLIANCE_ONLY,
@@ -196,6 +203,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53316, {	-- Hardened Monelite
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163628),	-- Hardened Monelite (QI!)
+				},
 			}),
 			q(53717, {	-- Hold the Highland
 				["races"] = ALLIANCE_ONLY,
@@ -238,12 +248,23 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52794, {	-- Lizards and Ledgers
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(162540),	-- Lost Supplies (QI!)
+				},
 			}),
 			q(52230, {	-- Loose Change (A)
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(160668),	-- Lost Coin (QI!)
+					i(158226),	-- Magnetized Metal Collector (QI!)
+				},
 			}),
 			q(52239, {	-- Loose Change (H)
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(160668),	-- Lost Coin (QI!)
+					i(158226),	-- Magnetized Metal Collector (QI!)
+				},
 			}),
 			q(51633, {	-- Make Loh Go
 			}),
@@ -314,8 +335,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52142, {	-- Restocking
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(161216),	-- Handful of Scraps (QI!)
+					i(156583),	-- Salvaged Azerite Ammunition (QI!)
+				},
 			}),
 			q(52160, {	-- Restocking
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(161216),	-- Handful of Scraps (QI!)
+					i(156583),	-- Salvaged Azerite Ammunition (QI!)
+				},
 			}),
 			q(52979, {	-- Ritual Cleansing
 				["races"] = ALLIANCE_ONLY,
@@ -389,9 +419,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52174, {	-- Snakes in the Shallows
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(161313),	-- Energized Tidecore (QI!)
+				},
 			}),
 			q(50591, {	-- Son of a Bee
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(161220),	-- Rich Honey (QI!)
+				},
 			}),
 			q(52452, {	-- Song Mistress Dadalea
 			}),

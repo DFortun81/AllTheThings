@@ -668,8 +668,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						r(252423),	-- Sea Stalk [Rank 3]
-						i(160314),	-- Sailor's Necklace
-
+						i(160314),	-- Sailor's Necklace (QI!)
 					},
 				}),
 			},

@@ -15,6 +15,9 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				q(51453, {	-- Shrine of the Storm: Behold, Pure Water
 					["isWorldQuest"] = true,
 					["lvl"] = 120,
+					["g"] = {
+						i(160253),	-- Mote of Pure Water (QI!)
+					},
 				}),
 				q(51455, {	-- Shrine of the Storm: Cleansing Fonts
 					["isWorldQuest"] = true,

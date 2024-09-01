@@ -37,6 +37,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuest"] = 53200,	-- Rosaline's Letter (looted)
 				["coord"] = { 68.8, 65.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(163780),	-- Raimond's Secret Ingredient (QI!)
+				},
 			}),
 			q(53371, {	-- Let's Bee Friends
 				["sourceQuests"] = { 53347 },	-- Bumbles the Bee
@@ -50,6 +53,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					i(163776),	-- Bumbles (PET!)
+					i(163720),	-- Mildenhall Growth Formula (QI!)
+					i(156825),	-- Vial of Honey Slime (QI!)
 				},
 			}),
 		}),

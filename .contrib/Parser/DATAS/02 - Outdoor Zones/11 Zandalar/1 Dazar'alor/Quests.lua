@@ -94,6 +94,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
+										["g"] = {
+											i(162123),	-- Mission Report (QI!)
+										},
 									}),
 								},
 							}),
@@ -117,6 +120,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
+										["g"] = {
+											i(161484),	-- Mission Report (QI!)
+										},
 									}),
 								},
 							}),
@@ -134,6 +140,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
+										["g"] = {
+											i(163335),	-- Mission Report (QI!)
+										},
 									}),
 								},
 							}),
@@ -157,6 +166,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
+										["g"] = {
+											i(161386),	-- Mission Report (QI!)
+										},
 									}),
 								},
 							}),
@@ -174,6 +186,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
+										["g"] = {
+											i(163185),	-- Mission Report (QI!)
+										},
 									}),
 								},
 							}),
@@ -197,6 +212,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["races"] = HORDE_ONLY,
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
+										["g"] = {
+											i(162512),	-- Mission Report (QI!)
+										},
 									}),
 								},
 							}),
@@ -214,6 +232,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
+										["g"] = {
+											i(163191),	-- Mission Report (QI!)
+										},
 									}),
 								},
 							}),
@@ -254,6 +275,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["races"] = HORDE_ONLY,
 										["coord"] = { 51.59, 99.58, DAZARALOR },	-- The Banshee's Wail Location
+										["g"] = {
+											i(163194),	-- Mission Report (QI!)
+										},
 									}),
 								},
 							}),
@@ -277,6 +301,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
+										["g"] = {
+											i(161488),	-- Mission Report (QI!)
+										},
 									}),
 								},
 							}),
@@ -301,6 +328,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["provider"] = { "n", 138704 },		-- Mission Command Table
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
 										["races"] = HORDE_ONLY,
+										["g"] = {
+											i(161152),	-- Mission Report (QI!)
+										},
 									}),
 								},
 							}),
@@ -319,6 +349,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 										["provider"] = { "n", 138704 },	-- Mission Command Table
 										["races"] = HORDE_ONLY,
 										["coord"] = { 51.5, 99.5, DAZARALOR },	-- The Banshee's Wail Location
+										["g"] = {
+											i(163519),	-- Mission Report (QI!)
+										},
 									}),
 								},
 							}),
@@ -364,6 +397,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 132989 },	-- Blind Tra'wala
 				["coord"] = { 53.6, 9.4, DAZARALOR },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(156839),	-- Pack of Pterrordax Snacks (QI!)
+				},
 			}),
 			q(47437, {	-- Competitive Devotion
 				["sourceQuests"] = {
@@ -439,6 +475,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126560 },	-- Wardruid Loti
 				["coord"] = { 45.0, 23.9, DAZARALOR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(152627),	-- Loti's Totem (QI!)
+				},
 			}),
 			q(47439, {	-- Gonk, Lord of the Pack
 				["sourceQuests"] = { 47438 },	-- Picking a Side
@@ -597,6 +636,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 124629 },	-- Kaza'jin the Wavebinder
 				["coord"] = { 42.6, 21.4, DAZARALOR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(156923),	-- Fetish of Loti (QI!)
+				},
 			}),
 			q(47434, {	-- Restraining Order
 				["sourceQuests"] = { 47433 },	-- Offensively Defensive

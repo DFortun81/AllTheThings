@@ -651,6 +651,9 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["coord"] = { 74.2, 6.5, BORALUS },
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(156657),	-- Highlands Mauler Eye (QI!)
+				},
 			}),
 			q(50113, {	-- Ocular Extracts [H]
 				["sourceQuests"] = { 50112 },	-- Casting the First Stone [H]
@@ -658,6 +661,9 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				["coord"] = { 42.2, 38.0, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(156806),	-- Razorwing Eye (QI!)
+				},
 			}),
 			q(50124, {	-- Changing the Scenery [A]
 				["sourceQuests"] = { 50121 },	-- Casting the First Stone [A]

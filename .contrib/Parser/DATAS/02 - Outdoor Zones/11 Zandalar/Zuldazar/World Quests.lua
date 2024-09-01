@@ -31,7 +31,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 45,
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(50652),	-- Biting the Hand that Feeds Them
+			q(50652, {	-- Biting the Hand that Feeds Them
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(158184),	-- Fresh Meat (QI!)
+				},
+			}),
 			q(54523, {	-- Blinky Gizmospark (Faction Assault WQ)
 				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
@@ -76,6 +81,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52892),	-- Critters are Friends, Not Food
 			q(50651, {	-- Cut Off Potential
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(158185),	-- Poison Dart (QI!)
+				},
 			}),
 			q(50871),	-- Daggerjaw
 			q(51084),	-- Dark Chronicler
@@ -116,9 +124,17 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50969, {	-- Emergency Management
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(50548),	-- Enforcing the Will of the King
+			q(50548, {	-- Enforcing the Will of the King
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(157867),	-- Mindbreaker Chant (QI!)
+				},
+			}),
 			q(53301, {	-- Flourishing Sea Stalks
 				["requireSkill"] = HERBALISM,
+				["g"] = {
+					i(163588),	-- Flourishing Sea Stalk (QI!)
+				},
 			}),
 			q(50877),	-- Gahz'ralka
 			h(q(54505, {	-- Get on the Payload (Faction Assault WQ)
@@ -146,11 +162,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53327, {	-- Hardened Monelite
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163628),	-- Hardened Monelite (QI!)
+				},
 			}),
 			q(50846),	-- Headhunter Lee'za
 			q(51497, {	-- Hex Education
+				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(160307),	-- Raal's Hexing Stick
+					i(160307),	-- Raal's Hexing Stick (QI!)
 				},
 			}),
 			q(54132, {	-- Horde of Heroes (Faction Assault WQ)
@@ -199,7 +219,12 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
 			}),
-			q(50574),	-- Preservation Methods
+			q(50574, {	-- Preservation Methods
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(158067),	-- Potent Inoculation Dart (QI!)
+				},
+			}),
 			q(51816, {	-- Pterrible Ingredients
 				["races"] = ALLIANCE_ONLY,
 			}),
@@ -215,12 +240,21 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50540, {	-- Rally the Rastari
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(157858),	-- Rastari Skull Whistle (QI!)
+				},
 			}),
 			q(50636, {	-- Ravoracious
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(159755),	-- Ravasaur Stomach Lining (QI!)
+				},
 			}),
 			q(51814, {	-- Ravoracious
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(159755),	-- Ravasaur Stomach Lining (QI!)
+				},
 			}),
 			q(54532, {	-- Receding Treeline (Faction Assault WQ)
 				["lvl"] = 45,
@@ -270,6 +304,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50873),	-- Strange Egg
 			q(50756, {	-- Subterranean Evacuation
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(158652),	-- Mole Machine Remote Control (QI!)
+				},
 			}),
 			q(51081),	-- Syrawon the Dominus
 			q(50867),	-- Tambano

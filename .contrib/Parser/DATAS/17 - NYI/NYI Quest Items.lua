@@ -266,16 +266,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(171369),	-- Singing Wood
 			i(173894),	-- Sludge-Camouflaged Pants
 			i(173893),	-- Sludge-Covered Belt
-			i(181460),	-- Soul Mirror
-			i(182580),	-- Soul Mirror
-			i(181701),	-- Soul Mirror
-			i(181472),	-- Soul Mirror
-			i(181782),	-- Soul Mirror
-			i(182623),	-- Soul Mirror
-			i(182965),	-- Soul Mirror
-			i(181795),	-- Soul Mirror
-			i(182467),	-- Soul Mirror
-			i(182969),	-- Soul Mirror
 			i(175131),	-- Soulmending Patches
 			i(174329),	-- Soulshatter Arrow
 			i(173901),	-- Specialized Gutting Knife
@@ -347,7 +337,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(185736),	-- Brilliant Golden Feather
 			i(187002),	-- Delicious Pet Cookie
 			i(185727),	-- Draka's Battlehorn
-			i(187863),	-- Key of Ephemera
 			i(186733),	-- Lovely Pet Caller
 			i(185766),	-- Necrolite Focusing Crystal
 			i(187003),	-- Pet Plushy

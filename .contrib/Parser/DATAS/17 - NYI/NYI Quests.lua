@@ -3387,10 +3387,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["lvl"] = 10,
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(48023, {
+			q(48023, {	-- Orders Received
 				["description"] = "Area: |cFFf09f26Nazmir|r",
 				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(151928),	-- Explicit Orders (QI!)
+				},
 			}),
 			q(48086, {
 				["description"] = "Area: |cFFf09f26Nazmir|r",
@@ -3655,10 +3658,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
 			}),
-			q(49597, {
+			q(49597, {	-- REUSE ME
 				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
 				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(155830),	-- Runic Core (QI!)
+				},
 			}),
 			q(49598, {
 				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
@@ -3852,10 +3858,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
 			}),
-			q(51086, {
+			q(51086, {	-- Break's Over (QI!)
 				["description"] = "Category: |cFFf09f26Warfronts|r",
 				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(159744),	-- Overseer's Blackjack (QI!)
+				},
 			}),
 			q(51130, {
 				["lvl"] = 50,
@@ -4642,11 +4651,27 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(53215),	--
 			q(53271),	-- Blooming Star Moss
 			q(53281),	-- Winter's Kiss Cluster
-			q(53283),	-- Flourishing Sea Stalks
-			q(53284),	-- Flourishing Riverbud
-			q(53297),	-- Flourishing Riverbud
+			q(53283, {	-- Flourishing Sea Stalks
+				["g"] = {
+					i(163588),	-- Flourishing Sea Stalk (QI!)
+				},
+			}),
+			q(53284, {	-- Flourishing Riverbud
+				["g"] = {
+					i(163595),	-- Flourishing Riverbud (QI!)
+				},
+			}),
+			q(53297, {	-- Flourishing Riverbud
+				["g"] = {
+					i(163595),	-- Flourishing Riverbud (QI!)
+				},
+			}),
 			q(53299),	-- Blooming Siren's Sting
-			q(53302),	-- Flourishing Riverbud
+			q(53302, {	-- Flourishing Riverbud
+				["g"] = {
+					i(163595),	-- Flourishing Riverbud (QI!)
+				},
+			}),
 			q(53309),	--
 			-- 8.0.1.26629
 			-- 8.0.1.26637
@@ -4654,8 +4679,19 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			-- 8.0.1.26683
 			-- 8.0.1.26707
 			q(52048),	--
-			q(53319),	-- Our Sacred Forest
-			q(53320),	-- Ours For the Taking
+			q(53319, {	-- Our Sacred Forest
+				["races"] = ALLIANCE_ONLY,
+				["lvl"] = 10,
+				["g"] = {
+					i(163631),	--Sacred Timber (QI!)
+				},
+			}),
+			q(53320, {	-- Ours For the Taking
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(163631),	--Sacred Timber (QI!)
+				},
+			}),
 			q(53427),	--
 			q(53447),	--
 			q(53460),	--

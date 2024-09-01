@@ -19,6 +19,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 123586 },	-- Kiro
 				["coord"] = { 56.7, 50.5, VOLDUN },	-- Vulpera Hideaway
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(150759),	-- Restorative Balm (QI!)
+				},
 			}),
 			q(50817, {	-- A Charming Tail
 				["sourceQuests"] = { 50818 },	-- A Lost Flute
@@ -65,6 +68,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 125904 },	-- Norah
 				["coord"] = { 38.8, 77.4, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(159677),	-- Juicy Pineapple (QI!)
+				},
 			}),
 			q(47574, {	-- All Webbed Up
 				["sourceQuests"] = { 47965 },	-- The Ruined Temple
@@ -186,6 +192,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126576 },	-- Razgaji
 				["coord"] = { 43.3, 75.4, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(160515),	-- Sandworn Blade (QI!)
+				},
 			}),
 			q(48329, {	-- Beaten But Not Broken
 				["sourceQuests"] = { 50746 },	-- Crater Conquered
@@ -199,6 +208,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 58.5, 11.8, VOLDUN },
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(160657),	-- Ring of Tides (QI!)
 					i(155450),	-- Ring of Tides
 				},
 			}),
@@ -285,6 +295,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 128618 },	-- Dockmaster Herrington
 				["coord"] = { 44.6, 88.2, VOLDUN },
 				-- ["races"] = HORDE_ONLY,	-- via #errors 20201105-14:19
+				["g"] = {
+					i(151627),	-- Lumpy Crab Meat (QI!)
+				},
 			}),
 			q(50746, {	-- Crater Conquered
 				["sourceQuests"] = {
@@ -502,6 +515,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 47.1, 38.8, VOLDUN },	-- Rakjan's Peak
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(154893),	-- Faithless Trapper's Spear (QI!)
 					i(161166),	-- Faithless Skyrider's Focus
 					i(161167),	-- Faithless Skyrider's Shield
 				},
@@ -520,6 +534,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122583 },	-- Meerah
 				["coord"] = { 56.7, 50.5, VOLDUN },	-- Vulpera Hideaway
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(160448),	-- Pricklevine Juice (QI!)
+				},
 			}),
 			q(49262, {	-- Gang Bustin'
 				["description"] = "Must be wearing Ashvane Garb to pick up and turn in the quest.",
@@ -532,6 +549,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135179 },	-- Merd Archfeld
 				["coord"] = { 26.2, 73.6, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(158707),	-- Pile of Sand (QI!)
+				},
 			}),
 			q(47503, {	-- Gozda'kun the Slaver
 				["sourceQuests"] = {
@@ -562,12 +582,18 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 134098 },	-- Torka
 				["coord"] = { 61.9, 22.3, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(157866),	-- Invasion Plans (QI!)
+				},
 			}),
 			q(48315, {	-- Hollow, Empty Eyes
 				["sourceQuests"] = { 50539 },	-- The Secrets of Zul'Ahjin
 				["provider"] = { "o", 281639 },	-- Crumbling Statue
 				["coord"] = { 48.8, 74.4, VOLDUN },	-- Zul'Ahjin
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(157864),	-- Glittering Sapphire (QI!)
+				},
 			}),
 			q(48529, {	-- Hungry Mouths To Feed
 				["sourceQuests"] = { 51573 },	-- I've Got Your Back
@@ -682,6 +708,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 123586 },	-- Kiro
 				["coord"] = { 56.7, 50.5, VOLDUN },	-- Vulpera Hideaway
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(151273),	-- Knickknacks (QI!)
+					i(151278),	-- Roaring Idol (QI!)
+				},
 			}),
 			q(48896, {	-- Knowledge of the Past
 				["sourceQuests"] = { 47874 },	-- Clearing the Fog
@@ -703,6 +733,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 137981 },	-- Kiro
 				["coord"] = { 46.0, 33.2, VOLDUN },	-- Crater of Conquerors
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(158896),	-- Kiro's Torch (QI!)
+				},
 			}),
 			q(48846, {	-- Liquid Motivation
 				["sourceQuests"] = {
@@ -767,6 +800,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(158464),	-- Poda (PET!)
+					i(159729),	-- Sandstinger Remedy (QI!)
 				},
 			}),
 			q(51668, {	-- Mojambo
@@ -811,6 +845,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 136309 },	-- First Mate Jamboya
 				["coord"] = { 35.3, 83.1, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(159757),	-- First Mate Jamboya's Medallion (QI!)
+				},
 			}),
 			q(48531, {	-- Mystery Meat
 				["sourceQuests"] = { 48529 },	-- Hungry Mouths to Feed
@@ -899,6 +936,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 53.2, 90.2, VOLDUN },	-- Temple of Akunda
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(153029),	-- Rorgog's Antennae (QI!)
 					i(159979),	-- Rorgog's Antenna
 					i(155451),	-- Akunda Adherent's Cloak
 				},
@@ -924,17 +962,26 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 291143 },	-- Ranah's Wrench
 				["coord"] = { 50.7, 64.7, VOLDUN },	-- Atul'aman
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(160747),	-- Ranah's Wrench (QI!)
+				},
 			}),
 			q(48332, {	-- Ranishu Are Resources
 				["provider"] = { "n", 129451 },	-- Omi
 				["coord"] = { 45.3, 46.2, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(154713),	-- Ranishu Stomach (QI!)
+				},
 			}),
 			q(49665, {	-- Ready to Riot
 				["sourceQuests"] = { 49664 },	-- Allies in Anarchy
 				["provider"] = { "n", 135090 },	-- Nisha
 				["coord"] = { 46.1, 33.2, VOLDUN },	-- Crater of Conquerors
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(159470),	-- Faithless Scimitar (QI!)
+				},
 			}),
 			q(50752, {	-- Relics of Sethraliss
 				["sourceQuests"] = { 49003 },	-- Vengeance From Above
@@ -962,6 +1009,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 134148 },	-- Maaz
 				["coord"] = { 47.2, 72.8, VOLDUN },	-- Zul'Ahjin
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(152787),	-- Relic of the Keepers (QI!)
+				},
 			}),
 			q(47564, {	-- Restocking the Buffet
 				["sourceQuests"] = { 47638 },	-- Powerful Spirits
@@ -974,6 +1024,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 123586 },	-- Kiro
 				["coord"] = { 56.7, 50.5, VOLDUN },	-- Vulpera Hideaway
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(160441),	-- Sandstinger Venom Gland (QI!)
+				},
 			}),
 			q(47498, {	-- Rhan'ka's Lost Friend
 				["sourceQuests"] = { 47497 },	-- Meet the Goldtusk Gang
@@ -992,12 +1045,18 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122723 },	-- Rhan'ka
 				["coord"] = { 43.4, 60.2, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(159676),	-- Goldtusk Inn Coupon (QI!)
+				},
 			}),
 			q(48992, {	-- Sacred Remains
 				["sourceQuests"] = { 48895 },	-- The Perfect Offering
 				["provider"] = { "n", 127992 },	-- Akunda the Exalted
 				["races"] = HORDE_ONLY,
 				["coord"] = { 53.2, 90.2, VOLDUN },	-- Temple of Akunda
+				["g"] = {
+					i(153028),	-- Sacred Remains (QI!)
+				},
 			}),
 			q(50751, {	-- Sanctuary Under Siege
 				["sourceQuests"] = { 50550 },	-- The Fall of Emperor Korthek
@@ -1041,6 +1100,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122583 },	-- Meerah
 				["coord"] = { 56.7, 50.5, VOLDUN },	-- Vulpera Hideaway
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(151346),	-- Rakera's Journal Page (QI!)
+				},
 			}),
 			q(50794, {	-- Seeking Shelter
 				["sourceQuests"] = { 50561 },	-- Sulthis' Stone
@@ -1071,6 +1133,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129450 },	-- Tacha
 				["coord"] = { 45.3, 46.2, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(154051),	-- Salvaged Soulcatcher Totem (QI!)
+				},
 			}),
 			q(49335, {	-- Skycaller Slaughter
 				["provider"] = { "n", 128691 },	-- Izarn
@@ -1204,6 +1269,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 128261 },	-- First Mate Jamboya
 				["coord"] = { 35.4, 83.7, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(159747),	-- First Mate Jamboya's Medallion (QI!)
+				},
 			}),
 			q(47571, {	-- The Elder's Wisdom
 				["sourceQuests"] = {
@@ -1261,6 +1329,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 37.4, 51.1, VOLDUN },
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(151220),	-- Grenja's Skull (QI!)
+					i(151218),	-- Man'zul's Skull (QI!)
+					i(151219),	-- Volni's Skull (QI!)
 					i(161176),	-- Sunbeaten Oasis Band
 					i(161177),	-- Resilient Outcast's Handlers
 					i(161178),	-- Lastwind Handlers
@@ -1277,6 +1348,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 35.3, 83.1, VOLDUN },
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(153351),	-- Idol of Binding (QI!)
+					i(151021),	-- Idol of Immortality (QI!)
+					i(153352),	-- Idol of Sacrifice (QI!)
 					i(155456),	-- Zem'lan Crewman's Cloak
 					i(159976),	-- Liberated Idol of Binding
 				},
@@ -1333,6 +1407,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127691 },	-- Jorak
 				["coord"] = { 52.8, 89.2, VOLDUN },	-- Temple of Akunda
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(152894),	-- Jorak's Offering (QI!)
+				},
 			}),
 			q(47965, {	-- The Ruined Temple
 				["sourceQuests"] = { 47571 },	-- The Elder's Wisdom
@@ -1373,6 +1450,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129453 },	-- Kenzou
 				["coord"] = { 45.3, 46.2, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(153699),	-- Sandspinner Silk (QI!)
+				},
 			}),
 			q(51772, {	-- The Tortaka Tribe
 				["sourceQuests"] = { 51668 },	-- Mojambo
@@ -1409,9 +1489,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 43.3, 78.6, VOLDUN },
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(152647),	-- Saurolisk Egg (QI!)
+					i(159997),	-- Exiled Veteran's Vambraces
 					i(159978),	-- Junji's Egg Timer
 					i(159996),	-- Lastwind Cuffs
-					i(159997),	-- Exiled Veteran's Vambraces
 					i(159998),	-- Resilient Outcast's Bracers
 					i(159999),	-- Scorching Sands Bracers
 				},
@@ -1515,6 +1596,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 48531 },	-- Sezahjin
 				["coord"] = { 43.6, 76.7, VOLDUN },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(152571),	-- Roasted Buzzard (QI!)
+				},
 			}),
 			q(51164, {	-- WANTED: Cobra Excursion Participants
 				["provider"] = { "o", 287442 },	-- Wanted: Cobra Excursion Participants
@@ -1554,6 +1638,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126814 },	-- Ranah
 				["coord"] = { 53.8, 69.4, VOLDUN },	-- Withering Gulch
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(152630),	-- Ranah's Watering Can (QI!)
+				},
 			}),
 			q(47576, {	-- Wrath of the Tiger
 				["sourceQuests"] = { 47580 },	-- The Curse of Mepjila

@@ -71,9 +71,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(50813, {	-- Cargo Reclamation
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(158878),	-- Ransacked Supplies (QI!)
+				},
 			}),
 			q(50962, {	-- Cargo Reclamation
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(158878),	-- Ransacked Supplies (QI!)
+				},
 			}),
 			q(50568),	-- Chag's Challenge
 			q(54699, {	-- Classic Gnomish Engineering (Faction Assault WQ)
@@ -86,7 +92,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52779),	-- Crawg in the Bog
 			q(50492),	-- Cursed Chest
 			a(q(50899, {	-- Don't Stalk Me, Troll (A)
-				a(ach(13026)),	-- 7th Legion Spycatcher
+				["g"] = {
+					a(ach(13026)),	-- 7th Legion Spycatcher
+					i(158924),	-- Portable Revealing Occular (QI!)
+				},
 			})),
 			q(50717, {	-- Don't Stalk Me, Troll (H)
 				["races"] = HORDE_ONLY,
@@ -100,18 +109,37 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50443, {	-- Down to the Roots (H)
 				["races"] = HORDE_ONLY,
 			}),
-			q(52007),	-- Engines of War
+			q(52007, {	-- Engines of War
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(160988),	-- Goblin Incendiary Rocket Launcher
+				},
+			}),
 			q(53290, {	-- Flourishing Riverbud
 				["requireSkill"] = HERBALISM,
+				["g"] = {
+					i(163595),	-- Flourishing Riverbud (QI!)
+				},
 			}),
 			q(53289, {	-- Flourishing Sea Stalks
 				["requireSkill"] = HERBALISM,
+				["g"] = {
+					i(163588),	-- Flourishing Sea Stalk (QI!)
+				},
 			}),
 			q(51172, {	-- Forked Lightning (A)
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(157863),	-- Restored Skycaller Gem (QI!)
+					i(157861),	-- Skycaller Gem Chip (QI!)
+				},
 			}),
 			q(50545, {	-- Forked Lightning (H)
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(157863),	-- Restored Skycaller Gem (QI!)
+					i(157861),	-- Skycaller Gem Chip (QI!)
+				},
 			}),
 			a(q(51127, {	-- Getting Out of Hand (A)
 				ach(13023),	-- It's Really Getting Out of Hand
@@ -121,6 +149,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			})),
 			q(53322, {	-- Gleaming Storm Silver
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163623),	-- Gleaming Storm Silver (QI!)
+				},
 			}),
 			q(50496),	-- Glompmaw
 			q(50498),	-- Gutrip
@@ -140,6 +171,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50505),	-- Kal'draxa
 			q(50506),	-- King Kooba
 			q(50497, {	-- Krag'wa's Favor
+				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(151040),	-- Chunky Meat (QI!)
 					i(157841),	-- Prime Raptor Egg (QI!)
@@ -153,6 +185,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50566),	-- Lost Scroll
 			q(53321, {	-- Luminous Monelite
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163609),	-- Luminous Monelite (QI!)
+				},
 			}),
 			q(50517),	-- Mala'kili and Rohnkor
 			q(54136, {	-- March on the Marsh (Faction Assault WQ)
@@ -210,11 +245,22 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50961, {	-- Save Our Scrolls!
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(158176),	-- Intact Tortollan Scroll (QI!)
+				},
 			}),
 			q(50634, {	-- Save Our Scrolls!
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(158176),	-- Intact Tortollan Scroll (QI!)
+				},
 			}),
-			q(50521),	-- Scorched Earth
+			q(50521, {	-- Scorched Earth
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(157847),	-- Firestick (QI!)
+				},
+			}),
 			q(51109),	-- Scorched Earth
 			q(50512),	-- Scout Skrasniss
 			q(53886, {	-- Self Guided Tour (Faction Assault WQ)
@@ -286,9 +332,17 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(54700),	-- Thomas Vandergrief
 			q(50514),	-- Totem Maker Jash'ga
-			q(50577),	-- Unaccounted For
+			q(50577, {	-- Unaccounted For
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(159761),	-- Grappling Hook (QI!)
+				},
+			}),
 			q(51176, {	-- Unaccounted For
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(159761),	-- Grappling Hook (QI!)
+				},
 			}),
 			q(50483),	-- Underlord Xerxiz
 			q(54500, {	-- Untapped Potential (Faction Assault WQ)

@@ -1585,21 +1585,38 @@ root(ROOTS.ExpansionFeatures,
 								}),
 								q(47283, {	-- Chop, Chop
 									["races"] = HORDE_ONLY,
+									["g"] = {
+										i(156531),	-- Freshly-Chopped Wood (QI!)
+										i(156514),	-- Sturdy Axe (QI!)
+									},
 								}),
 								q(52118, {	-- Cutting Out the Competition
 									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										i(156531),	-- Freshly-Chopped Wood (QI!)
+										i(161130),	-- Sturdy Axe (QI!)
+									},
 								}),
 								q(53678, {	-- Establishing a Connection
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(53668, {	-- Flightgineer's Network
 									["races"] = HORDE_ONLY,
+									["g"] = {
+										i(164598),	-- Krazzle's Scribbled Note (QI!)
+									},
 								}),
 								q(52439, {	-- Iron Stores
 									["races"] = ALLIANCE_ONLY,
+									["g"] = {
+										i(159728),	-- Heavy Iron Key (QI!)
+									},
 								}),
 								q(51082, {	-- Iron Stores
 									["races"] = HORDE_ONLY,
+									["g"] = {
+										i(159728),	-- Heavy Iron Key (QI!)
+									},
 								}),
 								q(53672, {	-- Ready for Battle
 									["races"] = ALLIANCE_ONLY,
