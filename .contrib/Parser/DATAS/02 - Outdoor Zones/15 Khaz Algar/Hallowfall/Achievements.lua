@@ -123,3 +123,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		}),
 	}),
 })));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	m(KHAZ_ALGAR, {
+		m(HALLOWFALL, {
+			n(ACHIEVEMENTS, {
+				q(83624),	-- Choosing 'Novice Formation' difficulty for 'Light's Gambit Champion' (achievementID 40729)
+				q(83625),	-- Choosing 'Adept Formation' difficulty for 'Light's Gambit Champion' (achievementID 40729)
+				q(83626),	-- Choosing 'Master' difficulty for 'Light's Gambit Champion' (achievementID 40729)
+			}),
+		}),
+	}),
+})));
+
