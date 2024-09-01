@@ -9,9 +9,8 @@ end
 
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(EMERALD_DREAM, {
---[[ Uncomment me once DF Awakened is over
 		o(382621, {	-- Revival Catalyst Console
-			["description"] = "The Revival Catalyst is a system that lets you convert Emerald Dream Items & LFR Mode Non-set items from the Amirdrassil Raid into your class' LFR Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles. Make sure to equip your item first before converting it.",
+			["description"] = "The Revival Catalyst is a system that lets you convert Emerald Dream Items & LFR Mode Non-set items from the Amirdrassil Raid into your class' LFR Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 			["coord"] = { 60.6, 53.8, THALDRASZUS },
 			["modelScale"] = 4,
 			["g"] = bubbleDown({ ["modID"] = 4 }, {
@@ -133,6 +132,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					},
 				}),
 			}),
-		}),--]]
+		}),
 	}),
 })));
