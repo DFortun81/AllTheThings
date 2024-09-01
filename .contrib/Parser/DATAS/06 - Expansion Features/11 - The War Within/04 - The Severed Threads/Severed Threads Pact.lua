@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 SEVERED_THREADS_PACT = createHeader({
 	readable = "Severed Threads Pact",
-	--icon = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",
+	icon = "Interface\\Icons\\inv_axe_2h_nerubianraid_d_01",
 	text = {
 		en = "Severed Threads Pact",
 	},

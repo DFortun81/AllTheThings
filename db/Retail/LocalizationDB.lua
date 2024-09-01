@@ -1156,6 +1156,8 @@ localize(L.HEADER_ICONS, {
 	[-1000957] = "Interface/Icons/ui_majorfactions_flame",
 	[-1000958] = "Interface/Icons/ui_majorfactions_web",
 	[-1000960] = "Interface/Icons/inv_dwarvenmechboss_bronze",
+	[-1000963] = "Interface/Icons/inv_pet_mole",
+	[-1000966] = "Interface/Icons/inv_axe_2h_nerubianraid_d_01",
 	[-1000967] = "Interface/Icons/inv_tabard_craftingorder_c_01",
 	[-1000973] = "Interface/Icons/spell_azerite_essence08",
 	[-1000975] = "Interface/Icons/inv_10_blacksmithing_consumable_key_color2",

@@ -4,7 +4,7 @@
 local FIRELIGHT_RUBY = 224642;
 SNUFFLING = createHeader({
 	readable = "Snuffling",
-	--icon = "Interface\\Icons\\inv_cape_special_climbingpack_b_01",
+	icon = "Interface\\Icons\\inv_pet_mole",
 	text = {
 		en = "Snuffling",
 	},
