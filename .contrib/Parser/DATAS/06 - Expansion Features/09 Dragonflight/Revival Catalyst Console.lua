@@ -510,7 +510,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}),
 				}),
 			}),
-			header(HEADERS.LFGDungeon, ABERRUS_THE_SHADOWED_CRUCIBLE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+			-- This data is listed in their respective Raid. Please let it stay uncommented here until DF Classic. ~Goldenshacal 1st Sep 2024
+			--[[header(HEADERS.LFGDungeon, ABERRUS_THE_SHADOWED_CRUCIBLE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 				d(DIFFICULTY.RAID.LFR, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 4 }, {
@@ -999,8 +1000,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}),
 				}),
-			})),
-			header(HEADERS.LFGDungeon, ADMIRDRASSIL_THE_DREAMS_HOPE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+			})),--]]
+			
+			-- This data is listed in their respective Raid. Please let it stay uncommented here until DF Classic. ~Goldenshacal 1st Sep 2024
+			--[[header(HEADERS.LFGDungeon, ADMIRDRASSIL_THE_DREAMS_HOPE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 				d(DIFFICULTY.RAID.LFR, {
 					["description"] = "",
 					["g"] = bubbleDown({ ["modID"] = 4 }, {
@@ -1489,7 +1492,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}),
 				}),
-			})),
+			})),--]]
+			
 			-- #if BEFORE 11.0.2
 			-- Temporary show in main list too when the season is active
 			header(HEADERS.Achievement, SEASON_DRACONIC_PVE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH } }, {

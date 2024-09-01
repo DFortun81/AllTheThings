@@ -1057,7 +1057,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 					}),
 				}),
-				--[[ Uncomment me once DF Awakened is over
 				o(382621, {	-- Revival Catalyst Console	-- LFR	--
 					["description"] = "The Revival Catalyst is a system that lets you convert Emerald Dream Items & LFR Mode Non-set items from the Amirdrassil Raid into your class' LFR Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles. Make sure to equip your item first before converting it.",
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
@@ -1181,7 +1180,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 							},
 						}),
 					}),
-				}),--]]
+				}),
 				header(HEADERS.Achievement, 19344, {	-- Incarnate's Wake
 					Boss(GNARLROOT),
 					Boss(IGIRA),
@@ -1252,7 +1251,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						},
 					}),
 				}),
-				--[[ Uncomment me once DF Awakened is over
 				o(382621, {	-- Revival Catalyst Console	-- NORMAL	--
 					["description"] = "The Revival Catalyst is a system that lets you convert Normal Mode Non-set items from the Amirdrassil Raid into your class' Normal Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles. Make sure to equip your item first before converting it.",
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
@@ -1376,7 +1374,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 							},
 						}),
 					},
-				}),--]]
+				}),
 				ZoneDrops({
 				}),
 				Boss(GNARLROOT),
@@ -1430,7 +1428,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						},
 					}),
 				}),
-				--[[ Uncomment me once DF Awakened is over
 				o(382621, {	-- Revival Catalyst Console	-- HEROIC	--
 					["description"] = "The Revival Catalyst is a system that lets you convert Heroic Mode Non-set items from the Amirdrassil Raid into your class' Heroic Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles. Make sure to equip your item first before converting it.",
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
@@ -1554,7 +1551,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 							},
 						}),
 					}),
-				}),--]]
+				}),
 				ZoneDrops({
 				}),
 				Boss(GNARLROOT),
@@ -1586,7 +1583,6 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						},
 					}),
 				}),
-				--[[ Uncomment me once DF Awakened is over
 				o(382621, {	-- Revival Catalyst Console	-- MYTHIC	--
 					["description"] = "The Revival Catalyst is a system that lets you convert Mythic Mode Non-set items from the Amirdrassil Raid into your class' Mythic Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles. Make sure to equip your item first before converting it.",
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
@@ -1710,7 +1706,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 							},
 						}),
 					}),
-				}),--]]
+				}),
 				ZoneDrops({
 				}),
 				n(ZONE_DROPS, sharedData({	-- First 2 week BoP version drops
