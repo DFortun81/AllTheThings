@@ -253,7 +253,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 						n(153393, {	-- Barry
 							["coord"] = { 69.2, 64.2, STORMSONG_VALLEY },
 							["g"] = {
+								i(169109),	-- Beeholder's Goggles
 								i(169141),	-- Butterfly Net
+								i(169395),	-- Summit Zephyr
 							},
 						}),
 					}),

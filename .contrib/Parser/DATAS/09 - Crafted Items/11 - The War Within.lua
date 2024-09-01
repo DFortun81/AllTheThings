@@ -589,6 +589,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(222731),	-- Outsider's Provisions
 		i(222706),	-- Pan-Seared Mycobloom
 		i(222745),	-- Pep-In-Your-Step
+		i(225883),	-- Prepared Ghoulfish
 		i(223967),	-- Protein Slurp
 		i(222711),	-- Rib Stickers
 		i(222705),	-- Roasted Mycobloom
@@ -1528,6 +1529,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 423395);	-- Overload Empowered Herb
 			--FirstCraft(XXXXX, 438955);	-- Overload Irradiated Herb
 			--FirstCraft(XXXXX, 438961);	-- Overload Sporefused Herb
+			-- Other?
+			FirstCraft(84493, 462122);	-- Petal Powder
 		})),
 		i(210808),	-- Arathor's Spear+
 		i(210809),	-- Arathor's Spear++
@@ -1544,6 +1547,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(210802),	-- Orbinid+
 		i(210803),	-- Orbinid++
 		i(210804),	-- Orbinid+++
+		i(228404),	-- Petal Powder+
+		i(228405),	-- Petal Powder++
+		i(228406),	-- Petal Powder+++
 	}),
 	prof(INSCRIPTION, {
 		spell(444181, {	-- Khaz Algar Milling
@@ -1623,6 +1629,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80694, 444188);	-- Algari Treatise on Enchanting
 			FirstCraft(80731, 444223);	-- Algari Treatise on Engineering
 			FirstCraft(80696, 444182);	-- Algari Treatise on Herbalism
+			FirstCraft(80692, 447868);	-- Algari Treatise on Inscription
 			FirstCraft(80695, 444189);	-- Algari Treatise on Jewelcrafting
 			FirstCraft(80693, 444185);	-- Algari Treatise on Leatherworking
 			FirstCraft(80697, 444183);	-- Algari Treatise on Mining

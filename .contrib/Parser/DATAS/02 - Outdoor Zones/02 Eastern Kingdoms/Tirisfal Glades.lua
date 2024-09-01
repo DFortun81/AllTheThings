@@ -749,17 +749,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 36.8, 68.0, TIRISFAL_GLADES },
 							-- #endif
 						}),
-						i(3261, {	-- Webbed Cloak
-							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
-							["coords"] = {
-								{ 23.8, 58.4, TIRISFAL_GLADES },
-								{ 86.2, 53.4, TIRISFAL_GLADES },
-							},
-							["crs"] = {
-								1688,	-- Night Web Matriarch
-								1555,	-- Vicious Night Web Spiders
-							},
-						}),
 						i(3263, {	-- Webbed Pants
 							["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
 							["cr"] = 1505,	-- Night Web Spider
@@ -3099,6 +3088,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 36.6, 38.6, TIRISFAL_GLADES },
 						{ 34.8, 44.8, TIRISFAL_GLADES },
 						-- #endif
+					},
+				}),
+				i(3261, {	-- Webbed Cloak
+					["timeline"] = { REMOVED_4_0_3, ADDED_10_1_7 },	-- ATT Discord 05.09.2023
+					["coords"] = {
+						{ 23.8, 58.4, TIRISFAL_GLADES },
+						{ 86.2, 53.4, TIRISFAL_GLADES },
+					},
+					["crs"] = {
+						1688,	-- Night Web Matriarch
+						1555,	-- Vicious Night Web Spiders
 					},
 				}),
 			}),

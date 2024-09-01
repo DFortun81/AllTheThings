@@ -290,13 +290,9 @@ root(ROOTS.Unsorted, {
 				i(224729),	-- Slum Shark Tooth \\ [PH] Slum Shark Tooth
 				i(224730),	-- [PH] Derby Dashers
 				prof(ALCHEMY, {
-
 					i(228401),	-- Bubbling Mycobloom Culture
 					i(228402),	-- Bubbling Mycobloom Culture
 					i(228403),	-- Bubbling Mycobloom Culture
-					i(228404),	-- Petal Powder
-					i(228405),	-- Petal Powder
-					i(228406),	-- Petal Powder
 					i(224577),	-- Sphere of Infinite Transmutations (PTR Only)
 				}),
 				prof(BLACKSMITHING, {
@@ -1193,7 +1189,6 @@ root(ROOTS.Unsorted, {
 				i(225875),	-- Pitted Armor Plating
 				i(225878),	-- The Fifty Rules of Commerce, Fourth Edition
 				i(225879),	-- The Fifty Rules of Commerce, Fourth Edition
-				i(225883),	-- Prepared Ghoulfish
 				i(225896),	-- Void-Touched Valorstone
 				i(225930),	-- Glimmering Crystal
 				i(225948),	-- Harbinger's Equipment Chest

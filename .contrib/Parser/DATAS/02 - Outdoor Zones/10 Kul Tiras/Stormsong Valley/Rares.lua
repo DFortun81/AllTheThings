@@ -185,6 +185,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						},
 					}),
 					i(172493),	-- Crimson Skipper (PET!)
+					i(169110),	-- Jelly Magnet
 					i(172405),	-- Tome of Hex: Living Honey (CI!)
 				},
 			})),

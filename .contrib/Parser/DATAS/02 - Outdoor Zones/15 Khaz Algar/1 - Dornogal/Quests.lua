@@ -215,12 +215,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 226650 },	-- High Exarch Turalyon
 				["coord"] = { 31.6, 59.6, DORNOGAL },
 			}),
-			hqt(84814, {	-- Stay awhile and Listen Dagran Thaurissan II
-				["name"] = "Stay awhile and listen: Dagran Thaurissan II",
-				["sourceQuests"] = { 83286 },	-- What's Hidden Beneath Dornogal
-				["provider"] = { "n", 226026 },	-- Dagran Thaurissan II
-				["coord"] = { 50.7, 61.5, VAULT_OF_MEMORY },
-			}),
 			hqt(82541, {	-- Stay awhile and listen: Merrix <Councilward>
 				["name"] = "Stay awhile and listen: Merrix <Councilward>",
 				["sourceQuests"] = { 79157 },	-- Titanic Failsafe
