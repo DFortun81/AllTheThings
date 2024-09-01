@@ -66,6 +66,9 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.EXPANSION_DATA[8].lore = "决战艾泽拉斯是第七个资料片。艾泽拉斯为结束军团十字军的天启付出了惨重的代价，但即使世界上的创伤得到了修复，联盟和部落之间破碎的信任也可能是最难弥补的。在艾泽拉斯战役中，燃烧军团的垮台引发了一系列灾难性事件，重新引发了魔兽世界中心的冲突。随着一个新的战争时代的开始，艾泽拉斯的英雄们必须开始征募新的盟友，争夺世界上最强大的资源，并在多条战线上战斗，以确定部落或联盟是否会带领艾泽拉斯进入不确定的未来。";
 	L.EXPANSION_DATA[9].lore = "暗影国度是第八个资料片。你所知道的世界之外还有什么? 暗影国度。每一个世俗的人(无论是邪恶的还是邪恶的)都曾居住过的地方。";
 	L.EXPANSION_DATA[10].lore = "巨龙时代是第九个资料片。艾泽拉斯的巨龙军团已经回归，他们响应了召唤，前去保护自己世代相传的家园：巨龙群岛。巨龙群岛涌动着元素魔法和艾泽拉斯的生命能量，如今它已从睡梦中苏醒，原始的奇观和尘封已久的秘密正等待你去揭露。";
+	L.EXPANSION_DATA[11].lore = "地心之战是第十个资料片。也是世界之魂传说三部曲的开端。穿越前所未见的地下世界，那里充满了隐藏的奇迹和潜伏的危险，一直到蛛魔帝国的黑暗深处，那里邪恶的虚空先驱正在聚集蛛魔力量，试图让艾泽拉斯屈服。"
+	L.EXPANSION_DATA[12].lore = "至暗之夜是第十一个资料片。也是世界之魂传说的第二部份。"
+	L.EXPANSION_DATA[13].lore = "最后的泰坦是第十二个资料片。也是世界之魂传说三部曲终章。"
 	L.TITLES_DESC = "头衔会在你的战网中被追踪，但是，你的角色必须符合某些头衔的条件才能在该角色上使用。";
 	L.UPON_COMPLETION = "前置条件";
 	L.UPON_COMPLETION_DESC = "以上任务需要完成后才能够完成以下的事情。";
@@ -76,7 +79,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.TSM_WARNING_1 = "运行此命令可能会通过将物品重新分配到 ";
 	L.TSM_WARNING_2 = " 预设。\n\n我们建议你在使用此功能时使用不同的配置文件。\n\n你还想继续吗?";
 	L.PRESET_UPDATE_SUCCESS = "更新预设成功。";
-	L.SHOPPING_OP_MISSING_1 = "预设缺少'Shopping'操作分配。";
+	L.SHOPPING_OP_MISSING_1 = "预设缺少'购物'操作分配。";
 	L.SHOPPING_OP_MISSING_2 = "键入'/tsm operations'创建或者分配一个。";
 	L.AUCTIONATOR_GROUPS = "基于群组的搜索只支持使用 Auctionator。";
 	L.TSM4_ERROR = "TSM4 尚未与 ATT 兼容。如果你知道如何像我们以前在 TSM3 中那样创建预设，请在 Discord 上告诉我！";
@@ -448,6 +451,11 @@ for key,value in pairs({
 	[GROUP_FINDER] = "地下城和团本",	-- ["Dungeons & Raids"] = "D&R"
 	["尼奥罗萨，觉醒之城"] = "尼奥罗萨",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
 	["塔扎维什，帷纱集市"] = "塔扎维什",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
+	-- DF
+	["亚贝鲁斯，焰影熔炉"] = "亚贝鲁斯",	-- ["Aberrus, the Shadowed Crucible"] = "Aberrus"
+	["阿梅达希尔，梦境之愿"] = "阿梅达希尔",	-- ["Amirdrassil, the Dream's Hope"] = "Amirdrassil"
+	-- TWW
+	["艾拉-卡拉，回响之城"] = "回响之城",	-- ["Ara-Kara, City of Echoes"] = "Ara-Kara"
 })
 do a[key] = value; end
 if GetLocale() == "zhTW" then
@@ -551,6 +559,8 @@ for key,value in pairs({
 		MAIN_ONLY_TOOLTIP = "如果你还想让 ATT *假装*你赢得了所有未被其他种族或职业锁定的共享外观，请启用此设置。\n\n例如，如果你从冰冠堡垒收藏了一个仅限猎人使用的物品，并且在没有职业/种族限制的情况下，有一个来自副本的共享外观，那么 ATT 将*假装*你也获得了该外观来源。\n\n注意：以这种方式解锁时，切换到其他种族/职业将错误地报告你已经获得了尚未为新角色收藏的外观来源。";
 		ONLY_RWP = "仅‘随补丁移除’";
 		ONLY_RWP_TOOLTIP = "启用此选项仅跟踪将来会从游戏中删除的幻化。只有标记为“随补丁移除”的数据的物品才会计入此数据。如果您发现未标记但应标记的物品，请告诉我！\n\n您可以根据“过滤器”选项卡更改显示的战利品类型。";
+		ONLY_NOT_TRASH = "过滤垃圾物品";
+		ONLY_NOT_TRASH_TOOLTIP = "启用此选项可忽略白色/灰色物品。暴雪尚未在经典怀旧服中提供 API。";
 		UNOFFICIAL_SUPPORT_TOOLTIP = "注意：目前，WoW 的 API 不提供官方支持，但 ATT 可以跟踪物品或任务完成情况，以使其在插件中发挥作用。";
 
 	-- General Content
@@ -599,8 +609,8 @@ for key,value in pairs({
 		HEIRLOOMS_CHECKBOX_TOOLTIP = "启用此选项可追踪你是否已解锁传家宝及其各自的升级级别。\n\n具有相关外观的传家宝将通过外观过滤进行过滤。（关闭外观仍将显示传家宝本身）\n\n一些出现史诗品质的商品也有助于提升声望，可以通过声望过滤进行过滤。";
 		HEIRLOOMS_UPGRADES_CHECKBOX = "+升级";
 		HEIRLOOMS_UPGRADES_CHECKBOX_TOOLTIP = "启用此选项可专门追踪单个传家宝升级的收藏情况。\n\n我们都知道暴雪就是喜欢消耗你的金币和灵魂，所以用这个切换来追踪你的金币。";
-		ILLUSIONS_CHECKBOX = "幻化";
-		ILLUSIONS_CHECKBOX_TOOLTIP = "启用此选项以追踪幻化。\n\n这些看起来很酷的幻化效果，你可以应用到你的武器上！\n\n注意：你不是一个幻象，尽管所有的夜之子都这么认为。";
+		ILLUSIONS_CHECKBOX = "附魔幻象";
+		ILLUSIONS_CHECKBOX_TOOLTIP = "启用此选项以追踪附魔幻象。\n\n这些看起来很酷的幻化效果，你可以应用到你的武器上！\n\n注意：你不是一个幻象，尽管所有的夜之子都这么认为。";
 		--TODO: MOUNTS_CHECKBOX = MOUNTS;
 		MOUNTS_CHECKBOX_TOOLTIP = "启用此选项以追踪坐骑。\n\n你可以骑着它们去比跑步更快的地方。谁知道！";
 		--TODO: QUESTS_CHECKBOX = QUESTS_LABEL;
@@ -676,11 +686,11 @@ for key,value in pairs({
 		ENABLE_TOOLTIP_INFORMATION_CHECKBOX_TOOLTIP = "如果希望在鼠标提示中查看 ATT 提供的信息，请启用此选项。这包括其他玩家发送的物品链接，在拍卖行、在地下城助手、在你的包里、在世界、在 NPC 等等。\n\n如果你关闭了这个功能，就会严重降低你快速判断是否需要击杀首领或学习外观的能力。\n\n我们建议你保持此设置。";
 		DISPLAY_IN_COMBAT_CHECKBOX = "在战斗中";
 		DISPLAY_IN_COMBAT_CHECKBOX_TOOLTIP = "如果要在战斗中呈现鼠标提示信息，请启用此选项。\n\n如果你正在同你的公会进行史诗/大秘境活动，你可能应该关闭这个设置以尽可能节省性能。\n\n当你在单刷时它可以很有用，可以立即知道你需要从首领那里得到什么。";
-		TOOLTIP_MOD_LABEL = "修饰";
+		TOOLTIP_MOD_LABEL = "修饰键";
 		TOOLTIP_SHOW_LABEL = "显示信息";
 		SHOW_COLLECTION_PROGRESS_CHECKBOX = "收藏进度";
 		SHOW_COLLECTION_PROGRESS_CHECKBOX_TOOLTIP = "如果希望在鼠标提示的右上角看到收藏某个对象或完成某组对象的进度，请启用此选项。\n\n我们建议你保持此设置处于打开状态。";
-		ICON_ONLY_CHECKBOX = "只图标";
+		ICON_ONLY_CHECKBOX = "仅图标";
 		ICON_ONLY_CHECKBOX_TOOLTIP = "如果只想在右上角看到图标而不是图标和已收藏/未收藏的文本，请启用此选项。\n\n有些人喜欢更小的鼠标提示…";
 		KNOWN_BY_CHECKBOX = "已知";
 		KNOWN_BY_CHECKBOX_TOOLTIP = "如果你想在鼠标提示中查看所有服务器上已知此配方的完整角色列表，请启用此选项。";
@@ -777,6 +787,10 @@ for key,value in pairs({
 	-- Interface: Information Page
 		ACHIEVEMENT_ID = "成就 ID";
 		ACHIEVEMENT_CATEGORY_ID = "成就类别 ID";
+		ADDED_WITH_PATCH_CLASSIC_FORMAT = "该物品是随补丁 %s 添加的";
+		READDED_WITH_PATCH_CLASSIC_FORMAT = "该物品是随补丁 %s 重新添加的";
+		REMOVED_WITH_PATCH_CLASSIC_FORMAT = "该物品是随补丁 %s 移除的";
+		WAS_ADDED_WITH_PATCH_CLASSIC_FORMAT = "该物品曾是随补丁 %s 添加的";
 
 
 	-- Features Page
