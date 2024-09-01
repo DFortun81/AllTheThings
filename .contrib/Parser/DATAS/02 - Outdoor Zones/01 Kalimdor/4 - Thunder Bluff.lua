@@ -1326,7 +1326,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #endif
 						i(4496),	-- Small Brown Pouch
 						-- #if AFTER CATA
-						i(60335),	-- Thick Hide Pack
+						--i(60335),	-- Thick Hide Pack	// blacklisted as its a common vendor good since cata
 						-- #endif
 					},
 				}),

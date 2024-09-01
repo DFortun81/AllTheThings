@@ -344,6 +344,7 @@ i(60390);	-- Reticulated Tissue
 i(62528);	-- Sharp Crocolisk Tooth
 i(56055);	-- Small Parasitic Fish
 i(60405);	-- Stubby Bear Tail
+i(60335);	-- Thick Hide Pack
 i(56056);	-- Trophy Jaws
 i(62452);	-- Velvet Ear
 
