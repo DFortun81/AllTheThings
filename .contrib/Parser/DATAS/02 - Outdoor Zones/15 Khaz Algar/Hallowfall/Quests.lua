@@ -952,7 +952,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(228435),	-- Wine-Dyed Leggings
 					},
 				}),
-				q(83279),	-- Prove One's Mettle
+				q(83279, {	-- Prove One's Mettle
+					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["provider"] = { "n", 225879 },	-- Derill Fayn
+					["coord"] = { 68.1, 44.2, HALLOWFALL },
+				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.15, {	-- Memories of the Sky
 				q(80673, {	-- Runway Scare-a-way

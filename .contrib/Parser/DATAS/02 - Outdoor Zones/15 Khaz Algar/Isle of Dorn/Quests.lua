@@ -1078,17 +1078,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82441, {	-- For The Love of Gems
 					--["sourceQuests"] = { x },	-- ?
 					["provider"] = { "n", 223637 },	-- Natalia Pearce
-					["coord"] = { 40.6, 75.1, ISLE_OF_DORN },
+					["coord"] = { 43.0, 70.0, ISLE_OF_DORN },
 				}),
 				q(82465, {	-- Precious Gems
 					["sourceQuests"] = { 82441 },	-- For The Love of Gems
 					["provider"] = { "n", 223637 },	-- Natalia Pearce
-					["coord"] = { 40.6, 75.1, ISLE_OF_DORN },
+					["coord"] = { 43.0, 70.0, ISLE_OF_DORN },
 				}),
 				q(82466, {	-- What We Do For Gems
 					["sourceQuests"] = { 82465 },	-- Precious Gems
 					["provider"] = { "n", 223924 },	-- Natalia Pearce
-					["coord"] = { 29.6, 86.5, ISLE_OF_DORN },
+					["coord"] = { 33.9, 79.6, ISLE_OF_DORN },
 					["g"] = {
 						i(223891),	-- Igneous Core (QI!)
 					},
@@ -1096,7 +1096,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82467, {	-- Gems Are Forever
 					["sourceQuests"] = { 82466 },	-- What We Do For Gems
 					["provider"] = { "n", 223924 },	-- Natalia Pearce
-					["coord"] = { 29.6, 86.5, ISLE_OF_DORN },
+					["coord"] = { 33.9, 79.6, ISLE_OF_DORN },
 					["g"] = {
 						i(228217),	-- Design: Solid Amber (RECIPE!)
 					},

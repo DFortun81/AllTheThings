@@ -493,6 +493,7 @@ iq(224553, 82998);					-- Beledar's Attunement
 iq(224052, 82632);					-- Clocks, Gears, Sprockets, and Legs
 iq(225237, 83254);					-- Echoing Fragment: Azj-Kahet
 iq(225218, 83249);					-- Echoing Fragment: Hallowfall
+iq(225236, 83252);					-- Echoing Fragment: Isle of Dorn
 iq(225219, 83251);					-- Echoing Fragment: The Ringing Deeps
 iq(224053, 82636);					-- Eight Views on Defense against Hostile Runes
 iq(224054, 82637);					-- Emergent Crystals of the Surface-Dwellers

@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(223286),	-- Kah, Legend of the Deep (MOUNT!)
 					}),
 				}),
-				n(QUESTS, {
+				n(QUESTS, sharedData({ ["isWeekly"] = true }, {
 					q(82778, {	-- Hallowfall Fishing Derby
 						["description"] = "Nibbling Minnow, Arathor Hammerfish, Queen's Lureback",
 						["provider"] = { "n", 226846 },	--  Captain Oathmyt
@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							i(DERBY_MARK),
 						},
 					}),
-				}),
+				})),
 				n(VENDORS, {
 					n(226846, {	-- Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },

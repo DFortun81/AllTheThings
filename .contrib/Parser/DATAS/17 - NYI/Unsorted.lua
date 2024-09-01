@@ -1791,6 +1791,11 @@ root(ROOTS.Unsorted, {
 				exploration(14512),	-- RebornTree
 				exploration(14484),	-- 10.2 Devland
 			}),
+			n(QUESTS, {
+				q(83489, {
+					["_drop"] = {"g"},
+				}),
+			}),
 			--------
 			i(228495),	-- Well-Used Potter's Wheel
 			-- Fall out.... Resort

@@ -5,9 +5,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 	m(THE_RINGING_DEEPS, {
 		petbattle(filter(BATTLE_PETS, {
 			["sym"] = {{"select","speciesID",
+				4456,	-- Arachnoid Hatchling (PET!)
 				4471,	-- Aubergine Scootlefish (PET!)
+				4515,	-- Azure Flickerfly (PET!)
+				4457,	-- Chitin Burrower (PET!)
 				4499,	-- Common Ploughworm (PET!)
 				4533,	-- Meek Bloodlasher (PET!)
+				4477,	-- Verdant Scootlefish (PET!)
+				4516,	-- Vibrant Glowfly (PET!)
 				4510,	-- Winged Arachnoid (PET!)
 			}},
 			["g"] = {

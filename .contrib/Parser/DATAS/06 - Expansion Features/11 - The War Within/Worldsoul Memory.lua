@@ -50,6 +50,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						n(222723),	-- Conqueror Or'sosh
 						n(222659),	-- Toaka the Explorer
 						n(222728),	-- Wavecrusher Jurvak
+						i(225236),	-- Echoing Fragment: Isle of Dorn (CI!)
 					},
 				}),
 				q(82207, {	-- Worldsoul Memory: Descendants of Distant Waters
@@ -111,6 +112,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						n(221970),	-- First Blade Grimskarn
 						n(221972),	-- Talinhet
 						n(221973),	-- Temaya
+						i(225236),	-- Echoing Fragment: Isle of Dorn (CI!)
 					},
 				}),
 			}),

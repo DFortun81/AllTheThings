@@ -126,6 +126,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				["isDaily"] = true,
 				["sourceQuests"] = { 80546 },	-- The Vizier Weekly pickup
 			},{
+				q(81473, {	-- Information Control: The Right Side of History
+					["provider"] = { "n", 224196 },	-- Ru'murh
+					["coord"] = { 77.8, 53.9, NERUBAR },
+					["g"] = {
+						i(219228),	-- Fetid Slime Sac (QI!)
+					},
+				}),
+				q(81495, {	-- Requisitions: Brightblooms
+					["provider"] = { "n", 224178 },	-- Ghos'opp
+					["coord"] = { 64.2, 21.4, NERUBAR },
+					["g"] = {
+						i(219228),	-- Fetid Slime Sac (QI!)
+					},
+				}),
 				q(81480, {	-- Wild Reagents: Maddening Deep
 					["provider"] = { "n", 224180 },	-- Ghos'opp
 					["coord"] = { 48.4, 61.9, AZJ_KAHET },

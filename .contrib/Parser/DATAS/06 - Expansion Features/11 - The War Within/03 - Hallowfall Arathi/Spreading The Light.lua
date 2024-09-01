@@ -490,7 +490,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					o(457246, {	-- Fieldhand Stash
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 64.5, 28.8, HALLOWFALL },
-						--["questID"] = ,
+						["questID"] = 84337,
 						["g"] = {
 							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 						},
@@ -738,6 +738,13 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(80345),	-- Radiant Remnant @ 66.1, 17.9
 			--q(80554),	-- Radiant Remnant @ 66.4, 28.8	need objectid
 			--q(80556),	-- Radiant Remnant @ 63.7, 26.3 need objectid
+			q(80531),	-- Radiant Remnant @ 67.2, 26.6 need objectid
+			q(80587),	-- Radiant Remnant @ 62.4, 32.6	need objectid
+
+			q(83518),	-- Radiant Remnant @ 64.3, 28.2	need objectid
+			q(83520),	-- Radiant Remnant @ 66, 28.2	need objectid
+			q(80553),	-- Radiant Remnant @ 65.5, 29.6	need objectid
+			q(80530),	-- Radiant Remnant @ 65.5, 23.4	need objectid
 			-- Small Keyflames
 			q(80005),	-- Empty Crab Cage - Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
 			q(78472),	-- Attica Whiskervale - Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7
@@ -763,7 +770,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(79177),	-- Snuffling in Hallowfall?
 			q(83342),	-- When completing 76394 Shadows of Flavor x3 reports
 			--q(79179)	-- ??? "After looting Spider Touched Bag (211973)."
-			--q(79188),	-- ??? "After picking up Spider-Touched Bag (211973), during the keyflame event and turning in 79173 Supply the Effort"
+			--q(79188),	-- ??? "After picking up Spider-Touched Bag (211973), during the keyflame event and turning in 79173 Supply the Effort" //That last quest is what I turned in, Supply the Effort but it popped up a bit after turning in, First Bag this week
 						-- ??? "after turning in 79173 Supply the Effort and receiving a lamplighter supply satchel (first that week)"
 			-- Vendor
 			q(76996),	-- after buy and use itemID 210826 (Harvestbot Repair Kit)

@@ -2780,7 +2780,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["g"] = {
 				i(168948),	-- Dried Kelp (QI!)
 				i(169477),	-- Benthic Girdle
-				i(149478),	-- Benthic Bracers
+				i(169478),	-- Benthic Bracers
 				i(169481),	-- Benthic Cloak
 			},
 		}),
@@ -2795,7 +2795,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["g"] = {
 				i(168948),	-- Dried Kelp (QI!)
 				i(169477),	-- Benthic Girdle
-				i(149478),	-- Benthic Bracers
+				i(169478),	-- Benthic Bracers
 				i(169481),	-- Benthic Cloak
 			},
 		}),

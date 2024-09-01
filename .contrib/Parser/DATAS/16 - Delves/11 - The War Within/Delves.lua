@@ -340,7 +340,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					},
 				}),
 				o(455496, {	-- Sturdy Chest
-					["coord"] = { 35.5, 20.1, FUNGAL_FOLLY },
+					["description"] = "Jumping Mushroom close by",
+					["coord"] = { 53.5, 41.7, FUNGAL_FOLLY },
 					["questID"] = 83690,
 				}),
 			}),
