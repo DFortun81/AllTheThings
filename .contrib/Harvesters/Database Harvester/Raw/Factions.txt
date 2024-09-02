@@ -317,6 +317,10 @@
 1.15.3.55391
 2660@@@Elemental (The Molten Core Adds)
 2661@@@Hydraxian (The Molten Core Adds)
+1.15.4.56400
+2679@@@Order of the Silver Hand
+2686@@@S03 - Scourge Disguise
+2687@@@Hunter Quest Boss (Tamed Beast)
 2.0.0.6080
 911@@@Silvermoon City
 914@@@PLAYER, Blood Elf

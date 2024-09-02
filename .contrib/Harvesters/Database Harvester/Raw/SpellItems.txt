@@ -2550,6 +2550,36 @@
 1.15.3.55917
 7602@@@Conductive Shield Coating
 7603@@@Law of Nature
+1.15.4.56400
+6891@@@Damaged Rune
+6893@@@Damaged Rune
+7613@@@Stamina +20/Intellect +10/Healing Spells +24
+7614@@@Stamina +20/Hit +1%/Healing and Spell Damage +12
+7615@@@Stamina +20/Strength +10/Agility +10
+7616@@@Stamina +20/Strength +10/Defense +7
+7617@@@Stamina +20/Agility +10/Hit +1%
+7618@@@Stamina +20/Defense +7/Healing and Spell Damage +12
+7619@@@Stamina +20/Strength +10/Healing and Spell Damage +12
+7620@@@Stamina +20/Intellect +10/Healing Spells +22
+7621@@@Stamina +20/Intellect +10/Healing and Spell Damage +12
+7622@@@Stamina +20/Intellect +10/Healing Spells +22
+7623@@@Stamina +20/Intellect +10/Healing and Spell Damage +12
+7624@@@Stamina +20/Agility +10/Defense +7
+7625@@@Stamina +20/Agility +10/Hit +1%
+7626@@@Stamina +20/Strength +10/Healing and Spell Damage +12
+7627@@@Stamina +20/Hit +1%/Healing and Spell Damage +12
+7628@@@Stamina +20/Intellect +10/Healing Spells +22
+7629@@@Stamina +20/Defense +7/Block Chance +2%
+7630@@@Stamina +20/Hit +1%/Healing and Spell Damage +12
+7631@@@Stamina +20/Hit +1%/Defense +7
+7632@@@Stamina +20/Strength +10/Agility +10
+7633@@@Stamina +20/Defense +7/Block Value +15
+7634@@@Stamina +20/Intellect +10/Healing and Spell Damage +12
+7635@@@Stamina +20/Agility +10/Strength +10
+7636@@@Beast Mastery
+7637@@@Cobra Slayer
+7638@@@Healing Specialization
+7639@@@Meditation Specialization
 2.0.0.6080
 13@@@Sharpened (+3 Damage)
 14@@@Sharpened (+4 Damage)
