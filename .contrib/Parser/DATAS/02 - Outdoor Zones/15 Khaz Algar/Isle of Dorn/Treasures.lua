@@ -146,7 +146,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(443638, {	-- Mosswool Flower
-				["description"] = "Interact with Lost Mosswool 3 times to spawn this treasure. Treasure appears with some delay.",
+				["description"] = "Interact with Lost Mosswool 3 times to spawn this treasure.",
 				["questID"] = 83246,
 				["coord"] = { 59.7, 28.7, ISLE_OF_DORN },
 				["g"] = {
@@ -203,7 +203,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 82045,
 			}),
 			n(222894, {	-- U'llort the Self-Exiled
-				["description"] = "Talk to U'llort then bring it |cff888888Boskroot Cap|r from the woods nearby. Treasure appears with some delay.",
+				["description"] = "Talk to U'llort then bring it |cff888888Boskroot Cap|r from the woods nearby.",
 				["coord"] = { 55.0, 65.6, ISLE_OF_DORN },
 				["questID"] = 82142,
 				["cost"] = {{"i", 221550, 1}},	-- 1x Boskroot Cap
