@@ -431,7 +431,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 				},
 			}),
 			o(455950, {	-- Fungarian's Rich Tannin
-				["coord"] = { 65.7, 61.9, ISLE_OF_DORN },
+				["coord"] = { 65.7, 61.9, THE_RINGING_DEEPS },
 				["questID"] = 83917,
 				["g"] = {
 					i(226343), -- Fungarian's Rich Tannin
