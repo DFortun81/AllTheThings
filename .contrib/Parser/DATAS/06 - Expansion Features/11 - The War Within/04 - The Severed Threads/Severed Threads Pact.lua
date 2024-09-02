@@ -147,7 +147,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 224178 },	-- Ghos'opp
 					["coord"] = { 64.2, 21.4, NERUBAR },
 					["g"] = {
-						i(219225),	-- Crystalline Brightbloom (QI!)
+						o(437767, {	-- Crate of Hallowfall Herbs
+							i(219225),	-- Crystalline Brightbloom (QI!)
+						}),
 					},
 				}),
 				q(81480, {	-- Wild Reagents: Maddening Deep

@@ -30,77 +30,60 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			--TODO: probably better to move them towards Treads (wrathion like file) in future,
 			-- since for all of them active General is required
-			o(437058, {	-- Forgotten Memorial
-				["coord"] = { 68.5, 82.8, AZJ_KAHET },
-				--["questID"] = xx,
-				["g"] = {
-					-- bugged, interactable but didn't summon enemy
-				},
+			o(437060, {	-- Aspirant's Tribute
+				["provider"] = { "o", 437058 },	-- Forgotten Memorial
+				["coord"] = { 69.2, 81.6, AZJ_KAHET },
+				-- ["questID"] = xx,
 			}),
-			o(437194, {	-- Aspirant's Tribute
+			o(455435, {	-- Aspirant's Tribute
 				["provider"] = { "o", 437191 },	-- Forgotten Memorial
-				["coord"] = { 60.2, 83.5, AZJ_KAHET },
+				["coord"] = { 60.1, 82.5, AZJ_KAHET },
 				["questID"] = 81467,
-				["g"] = {
-					-- all items is from df as placeholder
-				},
 			}),
-			o(451595, {	-- Forgotten Memorial
-				["coord"] = { 36.1, 46.7, AZJ_KAHET },
-				--["questID"] = xx,
-				["g"] = {
-					-- bugged, uninteractable.
-				},
+			o(455436, {	-- Aspirant's Tribute
+				["provider"] = { "o", 437389 },	-- Forgotten Memorial
+				["coord"] = { 65.2, 49.0, AZJ_KAHET },
+				-- ["questID"] = xx,
 			}),
-			o(451596, {	-- Forgotten Memorial
-				["coord"] = { 41.2, 46.1, AZJ_KAHET },
-				--["questID"] = xx,
-				["g"] = {
-					-- bugged, uninteractable.
-				},
+			o(455437, {	-- Aspirant's Tribute
+				["provider"] = { "o", 451595 },	-- Forgotten Memorial
+				["coord"] = { 33.7, 42.1, AZJ_KAHET },
+				-- ["questID"] = xx,
 			}),
-			o(451597, {	-- Forgotten Memorial
-				["coord"] = { 63.1, 18.3, AZJ_KAHET },
-				--["questID"] = xx,
-				["g"] = {
-					-- bugged, uninteractable.
-				},
+			o(455439, {	-- Aspirant's Tribute
+				["provider"] = { "o", 451596 },	-- Forgotten Memorial
+				["coord"] = { 39.3, 41.6, AZJ_KAHET },
+				["questID"] = 82874,
 			}),
-			o(451599, {	-- Forgotten Memorial
-				["coord"] = { 75.1, 68.2, AZJ_KAHET },
-				--["questID"] = xx,
-				["g"] = {
-					-- bugged, uninteractable.
-				},
+			o(455440, {	-- Aspirant's Tribute
+				["provider"] = { "o", 451597 },	-- Forgotten Memorial
+				["coord"] = { 63.2, 11.3, AZJ_KAHET },
+				-- ["questID"] = xx,
 			}),
-			o(451600, {	-- Forgotten Memorial
-				["coord"] = { 74.7, 88.2, AZJ_KAHET },
-				--["questID"] = xx,
-				["g"] = {
-					-- bugged, uninteractable.
-				},
+			o(455442, {	-- Aspirant's Tribute
+				["provider"] = { "o", 451599 },	-- Forgotten Memorial
+				["coord"] = { 76.2, 65.7, AZJ_KAHET },
+				["questID"] = 82877,
 			}),
-			o(451601, {	-- Forgotten Memorial
-				["coord"] = { 49.6, 62.6, AZJ_KAHET },
-				--["questID"] = xx,
-				["g"] = {
-					-- bugged, uninteractable.
-				},
+			o(455443, {	-- Aspirant's Tribute
+				["provider"] = { "o", 451600 },	-- Forgotten Memorial
+				["coord"] = { 75.7, 86.9, AZJ_KAHET },
+				-- ["questID"] = xx,
 			}),
-			o(437391, {	-- Aspirant's Tribute
+			o(455444, {	-- Aspirant's Tribute
+				["provider"] = { "o", 451601 },	-- Forgotten Memorial
+				["coord"] = { 48.5, 59.5, AZJ_KAHET },
+				-- ["questID"] = xx,
+			}),
+			o(455445, {	-- Aspirant's Tribute
 				["provider"] = { "o", 451602 },	-- Forgotten Memorial
 				["coord"] = { 42.7, 34.6, AZJ_KAHET },
 				["questID"] = 81572,
-				["g"] = {
-					-- all items is from df as placeholder
-				},
 			}),
-			o(451603, {	-- Forgotten Memorial
-				["coord"] = { 7.8, 25.7, NERUBAR },
-				--["questID"] = xx,
-				["g"] = {
-					-- bugged, uninteractable.
-				},
+			o(455446, {	-- Aspirant's Tribute
+				["provider"] = { "o", 451603 },	-- Forgotten Memorial
+				["coord"] = { 7.5, 25.7, NERUBAR },
+				-- ["questID"] = xx,
 			}),
 			o(446140, {	-- Missing Scouts Pack
 				["coord"] = { 40.7, 42.1, AZJ_KAHET },
