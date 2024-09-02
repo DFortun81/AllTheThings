@@ -257,16 +257,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(222213),	-- Darkmoon Deck: Symbiosis
 					i(219675),	-- Darkmoon Deck: Vivacity
 					i(222231),	-- Darkmoon Deck: Vivacity
+					i(222561),	-- Darkmoon Sigil: Ascension
 					i(219555),	-- Darkmoon Sigil: Evolution
 					i(219556),	-- Darkmoon Sigil: Evolution
 					i(219557),	-- Darkmoon Sigil: Evolution
 					i(222124),	-- Darkmoon Sigil: Evolution
-					i(222561),	-- Darkmoon Sigil: Ascension
+					i(222562),	-- Darkmoon Sigil: Radiance
 					i(219558),	-- Darkmoon Sigil: Shine
 					i(219559),	-- Darkmoon Sigil: Shine
 					i(219560),	-- Darkmoon Sigil: Shine
 					i(222125),	-- Darkmoon Sigil: Shine
-					i(222562),	-- Darkmoon Sigil: Radiance
 					i(219561),	-- Darkmoon Sigil: Symbiosis
 					i(219562),	-- Darkmoon Sigil: Symbiosis
 					i(219563),	-- Darkmoon Sigil: Symbiosis
@@ -277,6 +277,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(219566),	-- Darkmoon Sigil: Vivacity
 					i(222127),	-- Darkmoon Sigil: Vivacity
 					i(222564),	-- Darkmoon Sigil: Vivacity
+					i(217971),	-- Deadly Cypher
+					i(217972),	-- Deadly Cypher
+					i(217973),	-- Deadly Cypher
 					i(222652),	-- DNT Colors of the Wind (Deprecated)
 					i(222650),	-- DNT Inquisitor's Greenwood Bow (Deprecated)
 					i(222651),	-- DNT Vagabond's Alacrity (Deprecated)
@@ -293,10 +296,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(222227),	-- Five of Shining
 					i(222218),	-- Five of Symbiosis
 					i(222236),	-- Five of Vivacity
+					i(219599),	-- Fortuitous Essence
+					i(222689),	-- Fortuitous Essence
 					i(222244),	-- Four of Evolution
 					i(222226),	-- Four of Shining
 					i(222217),	-- Four of Symbiosis
 					i(222235),	-- Four of Vivacity
+					i(225338),	-- Glyph of Jab
 					i(219602),	-- Hasty Alchemist's Mixing Rod
 					i(222138),	-- Hasty Alchemist's Mixing Rod
 					i(222133),	-- Inquisitor's Baton
@@ -307,14 +313,22 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(219616),	-- Inquisitor's Greenwood Bow
 					i(219604),	-- Inscribed Rolling Pin
 					i(222141),	-- Inscribed Rolling Pin
+					i(222108),	-- Khaz Algar Milling
 					i(219611),	-- Leveling Agility Stave
 					i(219613),	-- Lexicon of Mysteries
 					i(222134),	-- Lexicon of Mysteries
 					i(222571),	-- Lexicon of Mysteries
 					i(219601),	-- Lightweight Scribe's Quill
 					i(222136),	-- Lightweight Scribe's Quill
+					i(217977),	-- Masterful Cypher
+					i(217978),	-- Masterful Cypher
+					i(217979),	-- Masterful Cypher
+					i(222545),	-- Milling
 					i(219603),	-- Patient Alchemist's Mixing Rod
 					i(222139),	-- Patient Alchemist's Mixing Rod
+					i(217974),	-- Quick Cypher
+					i(217975),	-- Quick Cypher
+					i(217976),	-- Quick Cypher
 					i(219528),	-- Sable Ink
 					i(219529),	-- Sable Ink
 					i(219530),	-- Sable Ink
@@ -341,6 +355,10 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(222225),	-- Three of Shining
 					i(222216),	-- Three of Symbiosis
 					i(222234),	-- Three of Vivacity
+					i(222622),	-- Transcribe to Ascension
+					i(222625),	-- Transcribe to Radiance
+					i(222624),	-- Transcribe to Symbiosis
+					i(222623),	-- Transcribe to Vivacity
 					i(222242),	-- Two of Evolution
 					i(222224),	-- Two of Shining
 					i(222215),	-- Two of Symbiosis
@@ -359,6 +377,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(219633),	-- Vantus Rune: 11.0 Season 1 Raid
 					i(219634),	-- Vantus Rune: 11.0 Season 1 Raid
 					i(219635),	-- Vantus Rune: 11.0 Season 1 Raid
+					i(217980),	-- Versatile Cypher
+					i(217981),	-- Versatile Cypher
+					i(217982),	-- Versatile Cypher
 				})),
 			}),
 		}),
@@ -487,9 +508,16 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
 				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+					r(445068),	-- Inquisitor's Greenwood Bow
+					r(441318),	-- Miner's Rune of Decyphering
+					r(445069),	-- Vagabond's Alacrity
 					-- With SpellID attached
 					i(223072),	-- Technique: Colors of the Wind [DEPRECATED] (RECIPE!)
 					i(223059),	-- Technique: Lexicon of Mysteries (RECIPE!)
+					-- Without SpellID attached
+					i(223034),	-- Technique: Inscribed Rolling Pin
+					i(223032),	-- Technique: Lexicon of Mysteries
+					i(223033),	-- Technique: Patient Alchemist's Mixing Rod
 				})),
 			}),
 		}),

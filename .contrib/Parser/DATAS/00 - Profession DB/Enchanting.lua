@@ -1368,3 +1368,5 @@ i(0, 445318);		-- Oil of Beledar's Grace
 i(0, 445372);		-- Runed Ironclaw Rod
 i(0, 445355);		-- Scepter of Radiant Magics
 i(0, 445466);		-- Shatter Essence
+--- NYI ---
+i(0, 455488);		-- Glimmering Haste

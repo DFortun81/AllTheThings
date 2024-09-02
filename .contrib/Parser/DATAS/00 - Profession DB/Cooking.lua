@@ -849,6 +849,17 @@ i(210242, 416001);	-- Slumbering Peacebloom Tea
 i(210496, 0);		-- Slumbering Peacebloom Tea
 
 ------------------
+-- PATCH 11.0.0 --
+------------------
+--- NYI ---
+i(0, 445478);		-- Blessing Blossom Tea
+i(0, 445477);		-- Luminous Lemonade
+i(0, 445481);		-- Tasty Pocket Tart
+i(0, 445114);		-- Village Potluck
+i(224419, 0);		-- Recipe: Jester's Board
+i(223959, 0);		-- Recipe: Secret Sauce
+
+------------------
 -- PATCH 11.0.2 --
 ------------------
 --- TRAINER ---
@@ -909,11 +920,3 @@ i(223958, 447872);	-- Spongey Scramble
 i(226190, 445483);	-- Sticky Sweet Treat
 --- DISCOVERY ---
 i(0, 447873);		-- Secret Sauce
---- Unsorted ---
-i(0, 445481);		-- Tasty Pocket Tart
---- NYI ---
-i(0, 445478);		-- Blessing Blossom Tea
-i(0, 445477);		-- Luminous Lemonade
-i(0, 445114);		-- Village Potluck
-i(224419, 0);		-- Recipe: Jester's Board
-i(223959, 0);		-- Recipe: Secret Sauce

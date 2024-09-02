@@ -276,6 +276,12 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(211524),	-- Formula: Enchanted Wyrm's Awakened Crest
 				})),
 			}),
+			expansion(EXPANSION.TWW, {
+				-- 11.0.2
+				expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
+					r(455488),	-- Glimmering Haste
+				})),
+			}),
 		}),
 	}),
 }));

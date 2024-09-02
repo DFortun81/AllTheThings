@@ -23,13 +23,11 @@ end
 
 root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	i(ARTISANS_ACUITY),
-	i(211297),	-- Fractured Spark of Omens
-	i(228414),	-- Frayed Wiring
-	i(228956),	-- Junk Bucket
-	i(213613),	-- Leyline Residue
 	i(228338),	-- Soul Sigil I
 	i(228339),	-- Soul Sigil II
-	i(211296),	-- Spark of Omens
+	i(211296, {	-- Spark of Omens
+		["cost"] = {{"i", 211297, 2}},	-- Fractured Spark of Omens
+	}),
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
 			spell(430345, {	-- Meticulous Experimentation
@@ -530,6 +528,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(222728),	-- Beledar's Bounty
 		i(222736),	-- Chippy Tea
 		i(222744),	-- Cinder Nectar
+		i(223977),	-- Coagulated Yolk
 		i(222708),	-- Coreway Kabob
 		i(222718),	-- Deepfin Patty
 		i(222729),	-- Empress' Farewell
@@ -604,22 +603,15 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(222726),	-- Stuffed Cave Peppers
 		i(222712),	-- Sweet and Sour Meatballs
 		i(222719),	-- Sweet and Spicy Soup
-		i(222746),	-- Tasty Pocket Tart
 		i(222713),	-- Tender Twilight Jerky
 		i(222720),	-- The Sushi Special
 		i(222704),	-- Unseasoned Field Steak
 		i(222714),	-- Zesty Nibblers
 		filter(REAGENTS, {
 			i(222737),	-- Chopped Mycobloom
-			i(222701),	-- Clumped Flour
-			i(222697),	-- Coreway Dust
-			i(222696),	-- Crunchy Peppers
 			i(222741),	-- Fresh Fillet
-			i(222700),	-- Granulated Spices
-			i(222699),	-- Khaz Algar Tomato
 			i(222738),	-- Portioned Steak
 			i(222739),	-- Spiced Meat Stock
-			i(222695),	-- Twined Herbs
 		}),
 	}),
 	prof(ENCHANTING, {
@@ -1121,6 +1113,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				}),
 			}),
 		}),
+		spell(447311, {	-- Pilfer Through Parts
+			i(227769),	-- Bountiful Bolts
+		}),
 		n(ARMOR, {
 			i(225642),	-- Acolyte's Goggles
 			i(217155),	-- Algari Competitor's Cloth Bracers
@@ -1280,7 +1275,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(221915),	-- Overclocked Cogwheel++
 			i(221916),	-- Overclocked Cogwheel+++
 			i(221949),	-- Pausing Pylon
-			i(219150),	-- Pile of Rusted Scrap
 			i(221935),	-- Pouch of Pocket Grenades+
 			i(221936),	-- Pouch of Pocket Grenades++
 			i(221937),	-- Pouch of Pocket Grenades+++
@@ -1440,11 +1434,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210806),	-- Blessing Blossom++
 			i(210807),	-- Blessing Blossom+++
 			i(213610),	-- Crystalline Powder
+			i(214605),	-- Crystallized Verdant Seed
 			i(224264),	-- Deepgrove Petal
 			i(224835),	-- Deepgrove Roots
 			i(224265),	-- Deepgrove Rose
 			i(219196),	-- Empowered Mulch
 			i(219195),	-- Imbued Mulch
+			i(214597),	-- Irradiated Verdant Seed
+			i(213613),	-- Leyline Residue
 			i(210799),	-- Luredrop+
 			i(210800),	-- Luredrop++
 			i(210801),	-- Luredrop+++
@@ -1456,6 +1453,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210802),	-- Orbinid+
 			i(210803),	-- Orbinid++
 			i(210804),	-- Orbinid+++
+			i(214595),	-- Sporefused Verdant Seed
 			i(214561),	-- Verdant Seed
 			i(213612),	-- Viridescent Spores
 			i(213611),	-- Writhing Sample

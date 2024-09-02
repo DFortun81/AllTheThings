@@ -254,10 +254,12 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(222252),	-- Spiced Meat Stock
 					i(222692),	-- Spiced Meat Stock
 					i(220417),	-- Stuffed Cave Peppers
+					i(222698),	-- Surface Olive
 					i(220390),	-- Surface Olive
 					i(222258),	-- Surface Olive
 					i(220404),	-- Sweet and Sour Meatballs
 					i(222272),	-- Sweet and Sour Meatballs
+					i(222746),	-- Tasty Pocket Tart
 					i(220420),	-- The Breakfast Sampler
 					i(222288),	-- The Breakfast Sampler
 					i(220387),	-- Twined Herbs
@@ -404,6 +406,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					r(445478),	-- Blessing Blossom Tea
 					r(445477),	-- Luminous Lemonade
+					r(445481),	-- Tasty Pocket Tart
 					r(445114),	-- Village Potluck
 					-- Without SpellID attached
 					i(224419),	-- Recipe: Jester's Board (RECIPE!)

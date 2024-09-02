@@ -1590,6 +1590,19 @@ i(211610, 430091);	-- Draconic Combatant's Insignia of Alacrity
 i(211609, 430090);	-- Draconic Combatant's Medallion
 
 ------------------
+-- PATCH 11.0.0 --
+------------------
+--- NYI ---
+i(0, 445068);		-- Inquisitor's Greenwood Bow
+i(0, 441318);		-- Miner's Rune of Decyphering
+i(0, 445069);		-- Vagabond's Alacrity
+i(223072, 445070);	-- Colors of the Wind
+i(223059, 444202);	-- Lexicon of Mysteries
+i(223034, 0);		-- Technique: Inscribed Rolling Pin
+i(223032, 0);		-- Technique: Lexicon of Mysteries
+i(223033, 0);		-- Technique: Patient Alchemist's Mixing Rod
+
+------------------
 -- PATCH 11.0.2 --
 ------------------
 --- TRAINER ---
@@ -1659,16 +1672,3 @@ i(0, 444185);		-- Algari Treatise on Leatherworking
 i(0, 444183);		-- Algari Treatise on Mining
 i(0, 444236);		-- Algari Treatise on Skinning
 i(0, 444186);		-- Algari Treatise on Tailoring
-
-------------------
--- PATCH 11.0.0 --
-------------------
---- NYI ---
-i(0, 445068);		-- Inquisitor's Greenwood Bow
-i(0, 441318);		-- Miner's Rune of Decyphering
-i(0, 445069);		-- Vagabond's Alacrity
-i(223072, 445070);	-- Colors of the Wind
-i(223059, 444202);	-- Lexicon of Mysteries
-i(223034, 0);		-- Technique: Inscribed Rolling Pin
-i(223032, 0);		-- Technique: Lexicon of Mysteries
-i(223033, 0);		-- Technique: Patient Alchemist's Mixing Rod

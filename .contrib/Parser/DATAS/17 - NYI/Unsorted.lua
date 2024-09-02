@@ -247,44 +247,6 @@ root(ROOTS.Unsorted, {
 				-- NYI Profession --
 				i(219500),	-- Fang Adornments
 				i(213097),	-- Test Warbound until equipped (DNT)
-				-- Mereldar Fishing Contest?
-				i(222089),	-- Bloody Perch
-				i(222090),	-- Crystalline Sturgeon
-				i(222091),	-- Bismuth Bitterling
-				i(222092),	-- Dornish Pike
-				i(222093),	-- Quiet River Bass
-				i(222094),	-- Arathor Hammerfish
-				i(222095),	-- Azj-Kahet Slum Shark
-				i(222096),	-- Goldengill Trout
-				i(222097),	-- Nibbling Minnow
-				i(222098),	-- Pale Huskfish
-				i(222099),	-- Regal Dottyback
-				i(222100),	-- Roaring Anglerseeker
-				i(222101),	-- Specular Rainbowfish
-				i(222102),	-- Whispering Stargazer
-				i(222103),	-- Sanguine Dogfish
-				i(222104),	-- Spiked Sea Raven
-				i(222105),	-- Queen's Lurefish
-				i(222106),	-- Cursed Ghoulfish
-				i(222107),	-- Kah, King of the Deeps
-				i(222526),	-- Bloody Perch
-				i(222527),	-- Crystalline Sturgeon
-				i(222528),	-- Bismuth Bitterling
-				i(222529),	-- Dornish Pike
-				i(222530),	-- Quiet River Bass
-				i(222531),	-- Arathor Hammerfish
-				i(222532),	-- Azj-Kahet Slum Shark
-				i(222534),	-- Nibbling Minnow
-				i(222535),	-- Pale Huskfish
-				i(222536),	-- Regal Dottyback
-				i(222537),	-- Roaring Anglerseeker
-				i(222538),	-- Specular Rainbowfish
-				i(222539),	-- Whispering Stargazer
-				i(222540),	-- Sanguine Dogfish
-				i(222541),	-- Spiked Sea Raven
-				i(222542),	-- Queen's Lurefish
-				i(222543),	-- Cursed Ghoulfish
-				i(222544),	-- Kah, King of the Deeps
 				-- Misc/armor
 				i(224716),	-- [PH] Skewered Slum Shark
 				i(224718),	-- [PH] Surface Tipper's Toes
@@ -294,46 +256,7 @@ root(ROOTS.Unsorted, {
 				i(224728),	-- Rollin' Barrel \\ [PH] Rollin' Barrel
 				i(224729),	-- Slum Shark Tooth \\ [PH] Slum Shark Tooth
 				i(224730),	-- [PH] Derby Dashers
-				prof(COOKING, {
-					-- Needs Sources
-					i(222698),	-- Surface Olive
-					i(223977),	-- Coagulated Yolk
-					-- Missing Recipe Item to attach to?
-					r(445481),	-- Tasty Pocket Tart
-				}),
-				prof(ENGINEERING, {
-					i(221968),	-- Legibly Scribbled Notes
-				}),
-				prof(HERBALISM, {
-					i(217105),	-- Refine Khaz Algar Herbs
-					i(214595),	-- Sporefused Verdant Seed
-					i(214597),	-- Irradiated Verdant Seed
-					i(214605),	-- Crystallized Verdant Seed
-				}),
-				prof(INSCRIPTION, {
-					i(225338),	-- Glyph of Jab
-					i(222545),	-- Milling \\ Khaz Algar Milling
-					i(222108),	-- Khaz Algar Milling
-					i(219599),	-- Fortuitous Essence
-					i(219632),	-- Scribe Water
-					i(222622),	-- Transcribe to Ascension
-					i(222623),	-- Transcribe to Vivacity \\ Extraction: Vivacity
-					i(222624),	-- Transcribe to Symbiosis \\ Extraction: Symbiosis
-					i(222625),	-- Transcribe to Radiance \\ Extraction: Shine
-					i(222689),	-- Fortuitous Essence
-					i(217971),	-- Deadly Cypher
-					i(217972),	-- Deadly Cypher
-					i(217973),	-- Deadly Cypher
-					i(217974),	-- Quick Cypher
-					i(217975),	-- Quick Cypher
-					i(217976),	-- Quick Cypher
-					i(217977),	-- Masterful Cypher
-					i(217978),	-- Masterful Cypher
-					i(217979),	-- Masterful Cypher
-					i(217980),	-- Versatile Cypher
-					i(217981),	-- Versatile Cypher
-					i(217982),	-- Versatile Cypher
-				}),
+				i(219632),	-- Scribe Water
 				prof(JEWELCRAFTING, {
 					i(214043),	-- Glittering Gemdust
 				}),
@@ -1041,8 +964,6 @@ root(ROOTS.Unsorted, {
 				i(226154),	-- Wax-Sealed Crafty Crest
 				i(226155),	-- Big Candle
 				i(226156),	-- Really Big Candle
-				i(226204),	-- Fresh Parchment
-				i(226205),	-- Distilled Algari Freshwater
 				i(226257),	-- Delver's Pouch of Valorstones
 				i(226260),	-- Delver's Pouch of Gold
 				i(226430),	-- Navigations of The Soul
@@ -1053,7 +974,6 @@ root(ROOTS.Unsorted, {
 				i(227678),	-- Satchel of Engineering Surplus
 				i(227679),	-- Satchel of Inscription Surplus
 				i(227680),	-- Satchel of Jewelcrafting Surplus
-				i(227769),	-- Bountiful Bolts
 				i(227778),	-- Delver's Bounty
 				i(227779),	-- Delver's Bounty
 				i(227780),	-- Delver's Bounty

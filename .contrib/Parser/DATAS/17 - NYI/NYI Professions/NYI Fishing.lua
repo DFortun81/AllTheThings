@@ -13,21 +13,58 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
 				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+					i(222094),	-- Arathor Hammerfish
+					i(222531),	-- Arathor Hammerfish
+					i(222095),	-- Azj-Kahet Slum Shark
+					i(222532),	-- Azj-Kahet Slum Shark
+					i(222091),	-- Bismuth Bitterling
+					i(222528),	-- Bismuth Bitterling
+					i(222089),	-- Bloody Perch
+					i(222526),	-- Bloody Perch
 					i(219676),	-- Common Fish A
 					i(219677),	-- Common Fish B
 					i(219678),	-- Common Fish C
 					i(219679),	-- Common Fish D
+					i(222090),	-- Crystalline Sturgeon
+					i(222527),	-- Crystalline Sturgeon
+					i(222106),	-- Cursed Ghoulfish
+					i(222543),	-- Cursed Ghoulfish
+					i(222092),	-- Dornish Pike
+					i(222529),	-- Dornish Pike
+					i(220140),	-- Goldengill Trout
+					i(222096),	-- Goldengill Trout
+					i(222107),	-- Kah, King of the Deeps
+					i(222544),	-- Kah, King of the Deeps
+					i(222097),	-- Nibbling Minnow
+					i(222534),	-- Nibbling Minnow
+					i(222098),	-- Pale Huskfish
+					i(222535),	-- Pale Huskfish
+					i(222105),	-- Queen's Lurefish
+					i(222542),	-- Queen's Lurefish
+					i(222093),	-- Quiet River Bass
+					i(222530),	-- Quiet River Bass
 					i(219684),	-- Rare Fish A
 					i(219685),	-- Rare Fish B
 					i(219686),	-- Rare Fish C
 					i(219687),	-- Rare Fish D
 					i(219688),	-- Rare Fish E
 					i(219689),	-- Rare Fish F
-					i(220140),	-- Goldengill Trout
+					i(222099),	-- Regal Dottyback
+					i(222536),	-- Regal Dottyback
+					i(222100),	-- Roaring Anglerseeker
+					i(222537),	-- Roaring Anglerseeker
+					i(222103),	-- Sanguine Dogfish
+					i(222540),	-- Sanguine Dogfish
+					i(222101),	-- Specular Rainbowfish
+					i(222538),	-- Specular Rainbowfish
+					i(222104),	-- Spiked Sea Raven
+					i(222541),	-- Spiked Sea Raven
 					i(219680),	-- Uncommon Fish A
 					i(219681),	-- Uncommon Fish B
 					i(219682),	-- Uncommon Fish C
 					i(219683),	-- Uncoomon Fish D
+					i(222102),	-- Whispering Stargazer
+					i(222539),	-- Whispering Stargazer
 				})),
 			}),
 		}),

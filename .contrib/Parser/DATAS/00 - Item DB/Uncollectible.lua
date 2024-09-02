@@ -2032,7 +2032,6 @@ i(227326);	-- Chalcocite Lava Cake
 i(217896);	-- Cinderbrew Mead
 i(227314);	-- Coffee, Light Ice
 i(227301);	-- Crystal Tots
-i(224762);	-- Delver's Waterskin
 i(227311);	-- Digspresso
 i(227316);	-- Eggnog
 i(227333);	-- Glimmering Delicacy

@@ -22,6 +22,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 					i(108334),	-- Arthas' Tears Petal
 				})),
+
+				expansion(EXPANSION.TWW, {
+					-- 11.0.0
+					expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+						i(217105),	-- Refine Khaz Algar Herbs
+					})),
+				}),
 			}),
 		}),
 		filter(RECIPES, {
