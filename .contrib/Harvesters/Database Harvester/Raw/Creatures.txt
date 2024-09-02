@@ -22022,3 +22022,11 @@
 230405@@@Sunreaver Battlemage
 230928@@@General Steelstrike
 231102@@@Faerin Lothar
+11.0.2.56380
+229039@@@Rooktender Lufsela
+229040@@@Olbarig
+229041@@@Thrall
+229042@@@Shraubendre
+229043@@@Rampant Thunder Elemental
+229044@@@Stormrook
+229045@@@Pilgrim
