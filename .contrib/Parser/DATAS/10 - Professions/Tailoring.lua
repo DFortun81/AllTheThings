@@ -854,26 +854,6 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				r(446999),	-- Weavercloth Spellthread
 			}),
 		}),
-		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
-			["isWeekly"] = true,
-			["g"] = {
-				currency(TWW_TAILORING_KNOWLEDGE),
-			},
-		},{
-			q(83735, {	-- TWW Inscription Order: Tailoring
-				["name"] = "TWW Inscription Order: Tailoring",
-				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", 222547 },	-- Algari Treatise on Tailoring
-			}),
-			q(83270, {	-- TWW Weekly Tailoring Knowledgepoint #1
-				["name"] = "TWW Weekly Tailoring Treasure #1",
-				["provider"] =  { "i", 225220 },	-- Chitin Needle
-			}),
-			q(83269, {	-- TWW Weekly Tailoring Knowledgepoint #2
-				["name"] = "TWW Weekly Tailoring Treasure #2",
-				["provider"] =  { "i", 225221 },	-- Spool of Webweave
-			}),
-		})),
 		n(QUESTS, sharedData({
 			["isWeekly"] = true,
 			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
@@ -944,6 +924,26 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				},
 			}),
 		}),
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				currency(TWW_TAILORING_KNOWLEDGE),
+			},
+		},{
+			q(83735, {	-- TWW Inscription Order: Tailoring
+				["name"] = "TWW Inscription Order: Tailoring",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222547 },	-- Algari Treatise on Tailoring
+			}),
+			q(83270, {	-- TWW Weekly Tailoring Knowledgepoint #1
+				["name"] = "TWW Weekly Tailoring Treasure #1",
+				["provider"] =  { "i", 225220 },	-- Chitin Needle
+			}),
+			q(83269, {	-- TWW Weekly Tailoring Knowledgepoint #2
+				["name"] = "TWW Weekly Tailoring Treasure #2",
+				["provider"] =  { "i", 225221 },	-- Spool of Webweave
+			}),
+		})),
 	})),
 })));
 

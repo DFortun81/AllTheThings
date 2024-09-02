@@ -516,10 +516,7 @@ root(ROOTS.Unsorted, {
 				--- Notes
 				-- Prof Knowledge
 				i(224782),	-- Razor Talon
-
 				i(225225),	-- Deepstone Fragment
-				i(225226),	-- Striated Inkstone
-				i(225227),	-- Wax-Sealed Records
 				i(227662),	-- Shimmering Dust
 			}),
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
@@ -1150,10 +1147,6 @@ root(ROOTS.Unsorted, {
 				i(224913),	-- Radiant Fuel Cache
 				i(224941),	-- Radiant Fuel Cache
 				i(225240),	-- PH_1
-				i(225239),	-- Overflowing Council of Dornogal Trove
-				i(225245),	-- Overflowing Trove of the Deeps
-				i(225246),	-- Overflowing Hallowfall Trove
-				i(225247),	-- Overflowing Severed Threads Trove
 				i(225365),	-- PH_3
 				i(225541),	-- PH_4
 				i(225553),	-- PH_5
@@ -1315,7 +1308,6 @@ root(ROOTS.Unsorted, {
 				i(223079),	-- Slagshell Egg \\ Recipe: Shadow-Infused Gumbo
 				i(223220),	-- Kaheti All-Purpose Cleanser
 				i(223638),	-- Arathi Trade Goods
-				i(223952),	-- Singed Plush
 				i(224011),	-- Signet of the Thousand Scars
 				i(224012),	-- Signet of the Thousand Scars
 				i(224013),	-- Signet of the Thousand Scars

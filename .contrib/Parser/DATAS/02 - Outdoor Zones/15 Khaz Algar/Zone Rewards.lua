@@ -108,6 +108,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				-- Engineering
 				i(225229),	-- Earthen Induction Coil
 				i(225228),	-- Rust-Locked Mechanism
+				-- Inscription
+				i(225226),	-- Striated Inkstone
+				i(225227),	-- Wax-Sealed Records
 				-- Jewelcrafting
 				i(225224),	-- Diaphanous Gem Shards
 				-- Leatherworking

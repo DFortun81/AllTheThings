@@ -104,6 +104,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}
 				}),
 			}, {	-- RENOWN 25 --
+				------ Paragon ------
+				q(79196, {	-- Renowned with The Severed Threads
+					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+					["isRepeatable"] = true,
+					["g"] = {
+						i(225247),	-- Overflowing Severed Threads Trove
+					},
+				}),
 			},
 		})),
 	}),

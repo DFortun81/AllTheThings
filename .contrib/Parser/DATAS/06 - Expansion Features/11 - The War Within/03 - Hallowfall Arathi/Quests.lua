@@ -142,6 +142,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				i(224553),	-- Beledar's Attunement (CI!)
 			}, {	-- RENOWN 24 --
 			}, {	-- RENOWN 25 --
+					------ Paragon ------
+					q(79218, {	-- Renowned with the Hallowfall Arathi
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
+					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["isRepeatable"] = true,
+					["g"] = {
+						i(225246),	-- Overflowing Hallowfall Trove
+					},
+				}),
 			},
 		})),
 	}),

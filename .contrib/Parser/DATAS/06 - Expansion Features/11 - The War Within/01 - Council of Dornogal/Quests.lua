@@ -71,6 +71,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 23 --
 			}, {	-- RENOWN 24 --
 			}, {	-- RENOWN 25 --
+				------ Paragon ------
+				q(79219, {	-- Renowned with the Council of Dornogal
+					["provider"] = { "n", 223728 },	-- Auditor Balwurz <Keeper of Renown>
+					["coord"] = { 39.1, 24.0, DORNOGAL },
+					["isRepeatable"] = true,
+					["g"] = {
+						i(225239),	-- Overflowing Council of Dornogal Trove
+					},
+				}),
 			},
 		})),
 	}),

@@ -98,6 +98,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 23 --
 			}, {	-- RENOWN 24 --
 			}, {	-- RENOWN 25 --
+				------ Paragon ------
+				q(79220, {	-- Renowned with the Assembly of the Deeps
+					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
+					["isRepeatable"] = true,
+					["g"] = {
+						i(225245),	-- Overflowing Trove of the Deeps
+					},
+				}),
 			},
 		})),
 	}),

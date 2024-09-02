@@ -1539,26 +1539,6 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
-			["isWeekly"] = true,
-			["g"] = {
-				currency(TWW_ENGINEERING_KNOWLEDGE),
-			},
-		},{
-			q(83728, {	-- TWW Inscription Order: Engineering
-				["name"] = "TWW Inscription Order: Engineering",
-				["description"] = "Requires a crafting order from Inscription.",
-				["provider"] = { "i", 222621 },	-- Algari Treatise on Engineering
-			}),
-			q(83260, {	-- TWW Weekly Engineering Knowledgepoint #1
-				["name"] = "TWW Weekly Engineering Treasure #1",
-				["provider"] = { "i", 225228 },	-- Rust-Locked Mechanism
-			}),
-			q(83261, {	-- TWW Weekly Engineering Knowledgepoint #2
-				["name"] = "TWW Weekly Engineering Treasure #2",
-				["provider"] = { "i", 225229 },	-- Earthen Induction Coil
-			}),
-		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
 			["g"] = sharedData({ ["cost"] = {{ "c", TWW_ENGINEERING_KNOWLEDGE, 1 }} }, {
@@ -1641,6 +1621,26 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 		}),
+		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({
+			["isWeekly"] = true,
+			["g"] = {
+				currency(TWW_ENGINEERING_KNOWLEDGE),
+			},
+		},{
+			q(83728, {	-- TWW Inscription Order: Engineering
+				["name"] = "TWW Inscription Order: Engineering",
+				["description"] = "Requires a crafting order from Inscription.",
+				["provider"] = { "i", 222621 },	-- Algari Treatise on Engineering
+			}),
+			q(83260, {	-- TWW Weekly Engineering Knowledgepoint #1
+				["name"] = "TWW Weekly Engineering Treasure #1",
+				["provider"] = { "i", 225228 },	-- Rust-Locked Mechanism
+			}),
+			q(83261, {	-- TWW Weekly Engineering Knowledgepoint #2
+				["name"] = "TWW Weekly Engineering Treasure #2",
+				["provider"] = { "i", 225229 },	-- Earthen Induction Coil
+			}),
+		})),
 	})),
 })));
 

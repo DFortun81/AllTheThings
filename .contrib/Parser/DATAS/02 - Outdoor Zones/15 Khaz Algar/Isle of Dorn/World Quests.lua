@@ -71,6 +71,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(82451, {	-- Preserving Plush Pals
 					["coord"] = { 32.5, 53.3, ISLE_OF_DORN },
+					["g"] = {
+						i(223952),	-- Singed Plush (QI!)
+					},
 				}),
 				q(81512, {	-- Props and Incense
 					["coord"] = { 66.2, 58.5, ISLE_OF_DORN },
