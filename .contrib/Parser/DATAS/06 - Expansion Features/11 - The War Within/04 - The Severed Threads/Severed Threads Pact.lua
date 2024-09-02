@@ -161,7 +161,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(81482, {	-- Testing Formulae: Gelatinous Unguent
 					["provider"] = { "n", 224187 },	-- Ghos'opp
-					--["coord"] = { XX.X, YY.Y, NERUBAR }, TODO
+					["coord"] = { 50.6, 46.8, NERUBAR },
 					["g"] = {
 						i(219323),	-- Gelatinous Unguent (QI!)
 					},
