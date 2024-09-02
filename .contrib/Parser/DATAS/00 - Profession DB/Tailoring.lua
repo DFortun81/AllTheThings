@@ -1502,7 +1502,6 @@ i(0, 446966);		-- Weavercloth Enchanter's Hat
 i(0, 446965);		-- Weavercloth Fishing Cap
 i(0, 446964);		-- Weavercloth Gardening Hat
 i(0, 446978);		-- Weavercloth Reagent Bag
-i(0, 446999);		-- Weavercloth Spellthread
 i(0, 446967);		-- Weavercloth Tailor's Coat
 --- ITEM ---
 i(225437, 438892);	-- Algari Competitor's Cloth Bands
@@ -1556,6 +1555,7 @@ i(0, 454431);		-- The Severed Satchel
 i(0, 446931);		-- Treads of the Woven Dawn
 i(0, 446934);		-- Warm Sunrise Bracers
 i(0, 446997);		-- Weavercloth Embroidery Thread
+i(0, 446999);		-- Weavercloth Spellthread
 
 ------------------
 -- PATCH 11.0.0 --

@@ -851,6 +851,7 @@ root(ROOTS.Professions, prof(TAILORING, bubbleDownSelf({ ["requireSkill"] = TAIL
 				r(446931),	-- Treads of the Woven Dawn
 				r(446934),	-- Warm Sunrise Bracers
 				r(446997),	-- Weavercloth Embroidery Thread
+				r(446999),	-- Weavercloth Spellthread
 			}),
 		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, sharedData({

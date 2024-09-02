@@ -220,7 +220,6 @@ TWW_TAILORING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(446996),	-- Bright Polishing Cloth
 		r(446998),	-- Gritty Polishing Cloth
 		r(447002),	-- Weavercloth Bandage
-		r(446999),	-- Weavercloth Spellthread
 	}),
 	filter(REAGENTS, {
 		r(454397),	-- Exquisite Weavercloth Bolt
