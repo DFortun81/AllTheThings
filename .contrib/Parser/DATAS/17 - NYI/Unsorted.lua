@@ -1072,7 +1072,6 @@ root(ROOTS.Unsorted, {
 				i(224180),	-- Worn Journal
 				i(224182),	-- Webbed Ingots
 				i(224252),	-- Calcified Journal
-				i(224460),	-- The Lost Diary
 				i(224777),	-- Sureki Shadecaster
 				i(224810),	-- Woodworm Elixir
 				i(225336),	-- A Lost Shoe

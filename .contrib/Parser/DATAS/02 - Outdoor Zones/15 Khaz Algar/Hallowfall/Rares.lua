@@ -75,6 +75,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 				["questID"] = 81836,
 				["g"] = {
+					i(221248),	-- Deep Terror Carver
 					i(221211),	-- Grasp of the Shallows
 					i(221255),	-- Sharpened Scalepiercer
 				},

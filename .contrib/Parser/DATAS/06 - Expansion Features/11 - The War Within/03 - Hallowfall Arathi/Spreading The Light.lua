@@ -106,9 +106,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(220782),	-- Thunder (PET!)
 						},
 					}),
-					-- unsure if this is only related to this EF or can be looted outside of it
 					q(79225, {	-- The Lost Flame
-						["provider"] = { "i", 212333 },	-- Expedition Tinderbox (QS!/QI!)
+						["provider"] = { "i", 212333 },	-- Expedition Tinderbox (QS!/QI!) //also given by i(224460) but that is a bug
 						["coord"] = { 61.1, 9.6, HALLOWFALL },
 					}),
 					q(79222, {	-- Shadow-Hardened Mainspring
