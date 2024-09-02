@@ -244,14 +244,14 @@ profession(LEATHERWORKING, {
 						["requireSkill"] = 10656,
 						["timeline"] = {
 							-- #if SEASON_OF_DISCOVERY
-							"removed 1.15.3"
+							"removed 1.15.3",
 							-- #else
 							REMOVED_4_0_3,
 							ADDED_10_1_5,
 							-- #endif
 						},
 					}),
-				}
+				},
 			},
 			-- #endif
 		},

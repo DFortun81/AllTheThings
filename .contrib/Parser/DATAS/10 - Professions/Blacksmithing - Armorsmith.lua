@@ -146,7 +146,7 @@ profession(BLACKSMITHING, {
 						["requireSkill"] = 9788,
 						["timeline"] = {
 							-- #if SEASON_OF_DISCOVERY
-							"added 1.15.3"
+							"added 1.15.3",
 							-- #else
 							CREATED_1_12_1, ADDED_2_0_1,
 							-- #endif
@@ -334,7 +334,7 @@ profession(BLACKSMITHING, {
 						["recipeID"] = 24399,
 						["requireSkill"] = 9788,
 					}),
-				}
+				},
 			},
 			-- #endif
 		},
