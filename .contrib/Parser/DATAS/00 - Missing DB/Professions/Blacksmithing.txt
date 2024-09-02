@@ -17,74 +17,6 @@ r(461735),	-- Invincible Mail
 r(461737),	-- Tempest Gauntlets
 r(461739),	-- Warcrest of the Great Chief
 r(461743),	-- Sageblade of the Archmagus
-11.0.0.54311
-r(423332),	-- Khaz Algar Blacksmithing
-r(425136),	-- Recraft Equipment
-r(450216),	-- Core Alloy
-r(450217),	-- Charged Alloy
-r(450218),	-- Sanctified Alloy
-r(450219),	-- Ironclaw Alloy
-r(450220),	-- Everforged Sabatons
-r(450221),	-- Everforged Breastplate
-r(450222),	-- Everforged Greatbelt
-r(450223),	-- Everforged Defender
-r(450224),	-- Everforged Helm
-r(450225),	-- Everforged Legplates
-r(450226),	-- Everforged Vambraces
-r(450227),	-- Everforged Pauldrons
-r(450228),	-- Everforged Gauntlets
-r(450229),	-- Everforged Stabber \\ Everforged Shortblade
-r(450230),	-- Everforged Dagger \\ Everforged Spellblade
-r(450231),	-- Everforged Longsword
-r(450232),	-- Everforged Warglaive
-r(450233),	-- Everforged Mace
-r(450234),	-- Everforged Greataxe
-r(450235),	-- Charged Hexsword
-r(450238),	-- Charged Claymore
-r(450239),	-- Charged Halberd
-r(450241),	-- Charged Invoker
-r(450243),	-- Echoing Impact \\ Echoing Impact Seal
-r(450244),	-- Burning Binding \\ Arathor Armor Patch
-r(450247),	-- Echoing Truncheon
-r(450248),	-- Entangling Cutlass
-r(450249),	-- Haunting Void
-r(450251),	-- Ironclaw Stiletto
-r(450252),	-- Ironclaw Dirk
-r(450253),	-- Ironclaw Sword
-r(450254),	-- Ironclaw Knuckles
-r(450255),	-- Ironclaw Great Mace
-r(450256),	-- Ironclaw Axe
-r(450257),	-- Ironclaw Great Axe
-r(450258),	-- Dredger's Plate Sabatons \\ Ironclaw Sabatons
-r(450259),	-- Dredger's Plate Breastplate \\ Ironclaw Breastplate
-r(450260),	-- Dredger's Developed Greatbelt \\ Ironclaw Greatbelt
-r(450261),	-- Dredger's Developed Defender \\ Ironclaw Defender
-r(450262),	-- Dredger's Developed Helm \\ Ironclaw Helm
-r(450263),	-- Dredger's Developed Legplates \\ Ironclaw Legplates
-r(450264),	-- Dredger's Plate Vambraces \\ Ironclaw Vambraces
-r(450265),	-- Dredger's Developed Pauldrons \\ Ironclaw Pauldrons
-r(450266),	-- Dredger's Developed Gauntlets \\ Ironclaw Gauntlets
-r(450267),	-- Proficient Sickle
-r(450268),	-- Proficient Pickaxe
-r(450269),	-- Proficient Skinning Knife
-r(450270),	-- Proficient Needle Set
-r(450271),	-- Proficient Leatherworker's Knife
-r(450272),	-- Proficient Leatherworker's Toolset
-r(450273),	-- Proficient Blacksmith's Hammer
-r(450274),	-- Proficient Blacksmith's Toolbox
-r(450281),	-- Artisan Blacksmith's Hammer
-r(450282),	-- Artisan Blacksmith's Toolbox
-r(450283),	-- Earthen Master's Hammer \\ Earthen Master's Arsenal
-r(450284),	-- Forged Framework
-r(450285),	-- Ironclaw Whetstone \\ Ironclaw Weapon Stone
-r(450286),	-- Ironclaw Razorstone \\ Reinforced Handle
-r(450287),	-- Ironclaw Weightstone \\ Seasoned Skillet
-r(450288),	-- Adjustable Framework \\ Webbed Fishing Line
-r(450289),	-- Tempered Framework \\ Weighted Lure
-r(450290),	-- Core Framework \\ Earthen Master's Hammer
-r(450291),	-- Coreforged Repair Hammer
-11.0.0.54521
-r(453727),	-- Everburning Ignition
 
 
 
@@ -98,11 +30,3 @@ r(461675),	-- Refined Arcanite Reaper
 r(461712),	-- Refined Hammer of the Titans
 r(461730),	-- Hardened Frostguard
 r(461743),	-- Sageblade of the Archmagus
-11.0.0.54311
-r(425136),	-- Recraft Equipment
-r(450243),	-- Echoing Impact \\ Echoing Impact Seal
-r(450244),	-- Burning Binding \\ Arathor Armor Patch
-r(450247),	-- Echoing Truncheon
-r(450248),	-- Entangling Cutlass
-r(450249),	-- Haunting Void
-r(450290),	-- Core Framework \\ Earthen Master's Hammer
