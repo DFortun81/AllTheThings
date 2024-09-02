@@ -1215,6 +1215,36 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				["coord"] = { 59.2, 55.2, DORNOGAL },
 			}),
 		})),
+		filter(RECIPES, {
+			["description"] = "These are learned by specialization.",
+			["g"] = sharedData({ ["cost"] = {{ "c", TWW_BLACKSMITHING_KNOWLEDGE, 1 }} }, {
+				r(450281),	-- Artisan Blacksmith's Hammer
+				r(450282),	-- Artisan Blacksmith's Toolbox
+				r(450238),	-- Charged Claymore
+				r(450239),	-- Charged Halberd
+				r(450235),	-- Charged Hexsword
+				r(450241),	-- Charged Invoker
+				r(453727),	-- Everburning Ignition
+				r(450221),	-- Everforged Breastplate
+				r(450230),	-- Everforged Dagger
+				r(450223),	-- Everforged Defender
+				r(450228),	-- Everforged Gauntlets
+				r(450234),	-- Everforged Greataxe
+				r(450222),	-- Everforged Greatbelt
+				r(450224),	-- Everforged Helm
+				r(450225),	-- Everforged Legplates
+				r(450231),	-- Everforged Longsword
+				r(450233),	-- Everforged Mace
+				r(450227),	-- Everforged Pauldrons
+				r(450220),	-- Everforged Sabatons
+				r(450229),	-- Everforged Stabber
+				r(450226),	-- Everforged Vambraces
+				r(450232),	-- Everforged Warglaive
+				r(450286),	-- Ironclaw Razorstone
+				r(450285),	-- Ironclaw Whetstone
+				r(450289),	-- Tempered Framework
+			}),
+		}),
 		n(TREASURES, {
 			o(456017, {	-- Ancient Earthen Anvil
 				["coord"] = { 59.8, 61.9, ISLE_OF_DORN },

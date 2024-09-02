@@ -2218,6 +2218,86 @@ i(211585, 430088);	-- Draconic Combatant's Draconium Sabatons
 i(211587, 430089);	-- Draconic Combatant's Draconium Waistguard
 
 ------------------
+-- PATCH 11.0.0 --
+------------------
+--- NYI ---
+i(0, 450290);		-- Core Framework
+i(0, 450243);		-- Echoing Impact
+i(223045, 450244);	-- Burning Binding
+i(223018, 450247);	-- Echoing Truncheon
+i(223046, 450248);	-- Entangling Cutlass
+i(223047, 450249);	-- Haunting Void
+i(218102, 0);		-- Bloodstained Plans: <PVP Alloy>
+i(223026, 0);		-- Plans: Artisan Leatherworker's Knife
+i(223027, 0);		-- Plans: Artisan Leatherworker's Toolset
+i(223025, 0);		-- Plans: Artisan Needle Set
+i(223023, 0);		-- Plans: Artisan Pickaxe
+i(223022, 0);		-- Plans: Artisan Sickle
+i(223024, 0);		-- Plans: Artisan Skinning Knife
+i(223011, 0);		-- Plans: Charged Claymore
+i(223038, 0);		-- Plans: Charged Claymore
+i(223013, 0);		-- Plans: Charged Crusher
+i(223010, 0);		-- Plans: Charged Facesmasher
+i(223012, 0);		-- Plans: Charged Halberd
+i(223039, 0);		-- Plans: Charged Halberd
+i(223008, 0);		-- Plans: Charged Hexsword
+i(223035, 0);		-- Plans: Charged Hexsword
+i(223014, 0);		-- Plans: Charged Invoker
+i(223041, 0);		-- Plans: Charged Invoker
+i(223009, 0);		-- Plans: Charged Runeaxe
+i(223015, 0);		-- Plans: Charged Slicer
+i(223031, 0);		-- Plans: Coreforged Skeleton Key
+i(223016, 0);		-- Plans: Crystal Gazer's Gauntlets
+i(223019, 0);		-- Plans: Entangling Cutlass
+i(223020, 0);		-- Plans: Haunting Void
+i(217950, 0);		-- Plans: Hematic Alloy Blacksmith's Hammer
+i(217952, 0);		-- Plans: Hematic Alloy Blacksmith's Toolbox
+i(217947, 0);		-- Plans: Hematic Alloy Leatherworker's Knife
+i(217949, 0);		-- Plans: Hematic Alloy Leatherworker's Toolset
+i(217954, 0);		-- Plans: Hematic Alloy Needle Set
+i(217948, 0);		-- Plans: Hematic Alloy Pickaxe
+i(217953, 0);		-- Plans: Hematic Alloy Sickle
+i(217955, 0);		-- Plans: Hematic Alloy Skinning Knife
+i(223017, 0);		-- Plans: Lightwatcher's Visor
+i(223044, 0);		-- Plans: Lightwatcher's Visor
+i(217867, 0);		-- Plans: Polarized Alloy Claymore
+i(217879, 0);		-- Plans: Polarized Alloy Crusher
+i(217873, 0);		-- Plans: Polarized Alloy Halberd
+i(217870, 0);		-- Plans: Polarized Alloy Hexsword
+i(217869, 0);		-- Plans: Polarized Alloy Runeaxe
+i(217868, 0);		-- Plans: Polarized Alloy Slicer
+i(217887, 0);		-- Plans: Pressurized Alloy Breastplate
+i(217884, 0);		-- Plans: Pressurized Alloy Defender
+i(217882, 0);		-- Plans: Pressurized Alloy Gauntlets
+i(217880, 0);		-- Plans: Pressurized Alloy Greataxe
+i(217878, 0);		-- Plans: Pressurized Alloy Greatbelt
+i(217877, 0);		-- Plans: Pressurized Alloy Helm
+i(217876, 0);		-- Plans: Pressurized Alloy Legplates
+i(217886, 0);		-- Plans: Pressurized Alloy Longsword
+i(217865, 0);		-- Plans: Pressurized Alloy Mace
+i(217885, 0);		-- Plans: Pressurized Alloy Pauldrons
+i(217866, 0);		-- Plans: Pressurized Alloy Sabatons
+i(217875, 0);		-- Plans: Pressurized Alloy Shortblade
+i(217883, 0);		-- Plans: Pressurized Alloy Spellblade
+i(217881, 0);		-- Plans: Pressurized Alloy Vambraces
+i(217864, 0);		-- Plans: Pressurized Alloy Warglaive
+i(223028, 0);		-- Plans: Seasoned Skillet
+i(223055, 0);		-- Plans: Seasoned Skillet
+i(223021, 0);		-- Plans: Siphoning Stiletto
+i(217951, 0);		-- Plans: Sturdy Expedition Shovel
+i(223029, 0);		-- Plans: Webbed Fishing Line
+i(223030, 0);		-- Plans: Weighted Lure
+i(223057, 0);		-- Plans: Weighted Lure
+i(218103, 0);		-- Plans: <Endgame Alloy C>
+i(217946, 0);		-- Plans: <Epic Smithing Hammer>
+i(217871, 0);		-- Plans: <Insert Bespoke Cantrip Gear>
+i(217874, 0);		-- Plans: <Insert Bespoke Cantrip Gear>
+i(217888, 0);		-- Plans: <Insert Bespoke Cantrip Gear>
+i(217890, 0);		-- Plans: <Insert Bespoke Cantrip Gear>
+i(218100, 0);		-- Plans: <Optional Reagnt A>
+i(218101, 0);		-- Plans: <PVP Alloy>
+
+------------------
 -- PATCH 11.0.2 --
 ------------------
 --- TRAINER ---
@@ -2254,6 +2334,7 @@ i(0, 450270);		-- Proficient Needle Set
 i(0, 450268);		-- Proficient Pickaxe
 i(0, 450267);		-- Proficient Sickle
 i(0, 450269);		-- Proficient Skinning Knife
+i(0, 425136);		-- Recraft Equipment
 i(0, 450218);		-- Sanctified Alloy
 --- ITEM ---
 i(225486, 455001);	-- Algari Competitor's Axe

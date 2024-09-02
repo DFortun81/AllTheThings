@@ -126,9 +126,12 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 		i(224824),	-- Duskweave+
 		i(228233),	-- Duskweave++
 		i(228234),	-- Duskweave+++
+		i(221757),	-- Gloomfathom Hide
 		i(225912),	-- Hot Honeycomb
 		i(225565),	-- Massive Worm Flank
 		i(225564),	-- Meaty Muscle
+		i(221758),	-- Profaned Tinderbox
+		i(221754),	-- Ringing Deeps Ingot
 		i(225568),	-- Slum Shark Scrap
 		i(221756),	-- Vial of Kaheti Oils
 		i(221763),	-- Viridian Charmcap

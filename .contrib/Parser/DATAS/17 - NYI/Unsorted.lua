@@ -294,161 +294,6 @@ root(ROOTS.Unsorted, {
 				i(224728),	-- Rollin' Barrel \\ [PH] Rollin' Barrel
 				i(224729),	-- Slum Shark Tooth \\ [PH] Slum Shark Tooth
 				i(224730),	-- [PH] Derby Dashers
-				prof(BLACKSMITHING, {
-					--- Probably mostly NYI...
-					i(217847),	-- Everforged Hands
-					i(217848),	-- Everforged Wrists
-					i(217849),	-- Everforged Waist
-					i(217850),	-- Everforged Legs
-					i(217851),	-- Everforged Feet
-					i(217852),	-- Everforged Shoulders
-					i(217853),	-- <Insert Bespoke Cantrip Gear>
-					i(217854),	-- Everforged Chest
-					i(217855),	-- Everforged Helm
-					i(217856),	-- Pressurized Alloy Greatbelt
-					i(217857),	-- Charged Mace
-					i(217858),	-- Charged Shiv
-					i(217859),	-- Pressurized Alloy Breastplate
-					i(217860),	-- Pressurized Alloy Vambraces
-					i(217861),	-- Charged Glaive
-					i(217862),	-- Pressurized Alloy Gauntlets
-					i(217863),	-- <Insert Bespoke Cantrip Gear>
-					i(217864),	-- Plans: Pressurized Alloy Warglaive
-					i(217865),	-- Plans: Pressurized Alloy Mace
-					i(217866),	-- Plans: Pressurized Alloy Sabatons
-					i(217867),	-- Plans: Polarized Alloy Claymore
-					i(217868),	-- Plans: Polarized Alloy Slicer
-					i(217869),	-- Plans: Polarized Alloy Runeaxe
-					i(217870),	-- Plans: Polarized Alloy Hexsword
-					i(217871),	-- Plans: <Insert Bespoke Cantrip Gear>
-					i(217873),	-- Plans: Polarized Alloy Halberd
-					i(217874),	-- Plans: <Insert Bespoke Cantrip Gear>
-					i(217875),	-- Plans: Pressurized Alloy Shortblade
-					i(217876),	-- Plans: Pressurized Alloy Legplates
-					i(217877),	-- Plans: Pressurized Alloy Helm
-					i(217878),	-- Plans: Pressurized Alloy Greatbelt
-					i(217879),	-- Plans: Polarized Alloy Crusher
-					i(217880),	-- Plans: Pressurized Alloy Greataxe
-					i(217881),	-- Plans: Pressurized Alloy Vambraces
-					i(217882),	-- Plans: Pressurized Alloy Gauntlets
-					i(217883),	-- Plans: Pressurized Alloy Spellblade
-					i(217884),	-- Plans: Pressurized Alloy Defender
-					i(217885),	-- Plans: Pressurized Alloy Pauldrons
-					i(217886),	-- Plans: Pressurized Alloy Longsword
-					i(217887),	-- Plans: Pressurized Alloy Breastplate
-					i(217888),	-- Plans: <Insert Bespoke Cantrip Gear>
-					i(217890),	-- Plans: <Insert Bespoke Cantrip Gear>
-					i(217909),	-- Ironclaw Great Axe
-					i(217910),	-- Pressurized Alloy Defender
-					i(217911),	-- Coreway Excavator's  Greaves
-					i(217912),	-- Coreway Excavator's  Clasp
-					i(217913),	-- Ironclaw Great Mace
-					i(217914),	-- Ironclaw Knuckles
-					i(217915),	-- Ironclaw Stiletto
-					i(217916),	-- Ironclaw Sword
-					i(217917),	-- Coreway Excavator's  Spaulders
-					i(217918),	-- Pressurized Alloy Sword
-					i(217919),	-- Coreway Excavator's  Chestguard
-					i(217920),	-- Coreway Excavator's  Bracers
-					i(217921),	-- Coreway Excavator's  Gauntlets
-					i(217922),	-- Coreway Excavator's  Helm
-					i(217923),	-- Coreway Excavator's  Boots
-					i(217924),	-- Everforged Great Axe
-					i(217931),	-- Proficient Herbalist's Sickle
-					i(217932),	-- Artisan Tailor's Needle Set
-					i(217933),	-- Proficient Leatherworker's Scalpel
-					i(217934),	-- Proficient Smithing Hammer
-					i(217935),	-- Artisan Leatherworker's Scalpel
-					i(217936),	-- Artisan Smithing Toolbox
-					i(217937),	-- Proficient Tailor's Needle Set
-					i(217939),	-- Proficient Skinner's Knife
-					i(217940),	-- Artisan Miner's Pickaxe
-					i(217941),	-- Artisan Skinner's Knife
-					i(217942),	-- Artisan Smithing Hammer
-					i(217944),	-- Artisan Herbalist's Sickle
-					i(217945),	-- Proficient Miner's Pickaxe
-					i(217946),	-- Plans: <Epic Smithing Hammer>
-					i(217947),	-- Plans: Hematic Alloy Leatherworker's Knife
-					i(217948),	-- Plans: Hematic Alloy Pickaxe
-					i(217949),	-- Plans: Hematic Alloy Leatherworker's Toolset
-					i(217950),	-- Plans: Hematic Alloy Blacksmith's Hammer
-					i(217951),	-- Plans: Sturdy Expedition Shovel
-					i(217952),	-- Plans: Hematic Alloy Blacksmith's Toolbox
-					i(217953),	-- Plans: Hematic Alloy Sickle
-					i(217954),	-- Plans: Hematic Alloy Needle Set
-					i(217955),	-- Plans: Hematic Alloy Skinning Knife
-					---
-					i(218087),	-- <Pressurized Core Alloy>
-					i(218088),	-- <Pressurized Core Alloy>
-					i(218089),	-- <Endgame Alloy C>
-					i(218090),	-- <Endgame Alloy C>
-					i(218091),	-- <Pressurized Core Alloy>
-					i(218092),	-- <Endgame Alloy B>
-					i(218093),	-- <Vendor Reagent A>
-					i(218094),	-- <PVP Alloy>
-					i(218095),	-- <Endgame Alloy B>
-					i(218096),	-- <PVP Alloy>
-					i(218097),	-- <Endgame Alloy B>
-					i(218098),	-- <Endgame Alloy C>
-					i(218099),	-- <PVP Alloy>
-					i(218100),	-- Plans: <Optional Reagnt A>
-					i(218101),	-- Plans: <PVP Alloy>
-					i(218102),	-- Bloodstained Plans: <PVP Alloy>
-					i(218103),	-- Plans: <Endgame Alloy C>
-					---
-					i(220180),	-- Earthen Master's Arsenal
-					i(220181),	-- Earthen Master's Arsenal
-					i(220182),	-- Earthen Master's Arsenal
-					i(220195),	-- Echoing Impact Seal
-					i(220196),	-- Echoing Impact Seal
-					i(220197),	-- Echoing Impact Seal
-					---
-					i(220952),	-- Webbed Fishing Line
-					i(220953),	-- Webbed Fishing Line
-					i(220954),	-- Webbed Fishing Line
-					i(220957),	-- Echoing Tuncheon
-					i(220958),	-- Haunting Void
-					i(220959),	-- Entangling Cutlass
-					i(220961),	-- Arathor Armor Patch
-					i(220962),	-- Arathor Armor Patch
-					i(220963),	-- Arathor Armor Patch
-					---
-					i(222019),	-- Echoing Impact Seal
-					i(222020),	-- Arathor Armor Patch
-					i(222023),	-- Echoing Truncheon
-					i(222024),	-- Entangling Cutlass
-					i(222025),	-- Haunting Void
-					i(222059),	-- Earthen Master's Arsenal
-					i(222060),	-- Earthen Master's Arsenal
-					i(222061),	-- Earthen Master's Arsenal
-					i(222074),	-- Webbed Fishing Line
-					i(222075),	-- Webbed Fishing Line
-					i(222076),	-- Webbed Fishing Line
-					---
-					i(222452),	-- Echoing Impact Seal
-					i(222453),	-- Echoing Impact Seal
-					i(222454),	-- Echoing Impact Seal
-					i(222455),	-- Arathor Armor Patch
-					i(222456),	-- Arathor Armor Patch
-					i(222457),	-- Arathor Armor Patch
-					i(222460),	-- Echoing Truncheon
-					i(222461),	-- Entangling Cutlass
-					i(222462),	-- Haunting Void
-					i(222496),	-- Earthen Master's Arsenal
-					i(222497),	-- Earthen Master's Arsenal
-					i(222498),	-- Earthen Master's Arsenal
-					i(222517),	-- Core Framework \\ Earthen Master's Hammer
-					i(222518),	-- Core Framework \\ Earthen Master's Hammer
-					i(222519),	-- Core Framework \\ Earthen Master's Hammer
-					---
-					i(223018),	-- Plans: Echoing Truncheon
-					i(223019),	-- Plans: Entangling Cutlass
-					i(223020),	-- Plans: Haunting Void
-					i(223029),	-- Plans: Webbed Fishing Line
-					i(223045),	-- Plans: Burning Binding \\ Plans: Echoing Truncheon
-					i(223046),	-- Plans: Entangling Cutlass
-					i(223047),	-- Plans: Haunting Void
-				}),
 				prof(COOKING, {
 					-- Needs Sources
 					i(222698),	-- Surface Olive
@@ -1021,7 +866,7 @@ root(ROOTS.Unsorted, {
 				i(219942),	-- 11.0 Stalwart's Sandals
 				i(220158),	-- Darkened Tinderbox
 				-- Armor Generator
-				i(225661),	-- Burning Binding
+
 				i(226138),	-- Vow-Taker's Boots
 				i(226174),	-- Famished Bride's Clasp
 				i(226695),	-- Cunning Advisor's Favor
@@ -1785,7 +1630,7 @@ root(ROOTS.Unsorted, {
 			--------
 			i(228495),	-- Well-Used Potter's Wheel
 			-- Fall out.... Resort
-			i(219013),	-- Superb Beast Fang
+
 			i(219016),	-- Coated Steel Tips
 			i(219017),	-- Silver Armor Clasps
 			i(216665),	-- Warband Bank Distance Inhibitor

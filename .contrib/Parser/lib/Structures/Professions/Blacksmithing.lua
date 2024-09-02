@@ -1003,3 +1003,50 @@ DF_BLACKSMITHING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = {
 		r(367599),	-- Draconium Sword
 	}),
 }));
+TWW_BLACKSMITHING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	r(423332),	-- Khaz Algar Blacksmithing
+	n(ARMOR, {
+		r(450266),	-- Dredger's Developed Gauntlets
+		r(450260),	-- Dredger's Developed Greatbelt
+		r(450262),	-- Dredger's Developed Helm
+		r(450263),	-- Dredger's Developed Legplates
+		r(450265),	-- Dredger's Developed Pauldrons
+		r(450259),	-- Dredger's Plate Breastplate
+		r(450258),	-- Dredger's Plate Sabatons
+		r(450264),	-- Dredger's Plate Vambraces
+	}),
+	filter(MISC, {
+		r(450291),	-- Coreforged Repair Hammer
+		r(450283),	-- Earthen Master's Hammer
+		r(450287),	-- Ironclaw Weightstone
+		r(425136),	-- Recraft Equipment
+	}),
+	filter(PROFESSION_EQUIPMENT, {
+		r(450273),	-- Proficient Blacksmith's Hammer
+		r(450274),	-- Proficient Blacksmith's Toolbox
+		r(450271),	-- Proficient Leatherworker's Knife
+		r(450272),	-- Proficient Leatherworker's Toolset
+		r(450270),	-- Proficient Needle Set
+		r(450268),	-- Proficient Pickaxe
+		r(450267),	-- Proficient Sickle
+		r(450269),	-- Proficient Skinning Knife
+	}),
+	filter(REAGENTS, {
+		r(450288),	-- Adjustable Framework
+		r(450217),	-- Charged Alloy
+		r(450216),	-- Core Alloy
+		r(450284),	-- Forged Framework
+		r(450219),	-- Ironclaw Alloy
+		r(450218),	-- Sanctified Alloy
+	}),
+	n(WEAPONS, {
+		r(450261),	-- Dredger's Developed Defender
+		r(450256),	-- Ironclaw Axe
+		r(450252),	-- Ironclaw Dirk
+		r(450257),	-- Ironclaw Great Axe
+		r(450255),	-- Ironclaw Great Mace
+		r(450254),	-- Ironclaw Knuckles
+		r(450251),	-- Ironclaw Stiletto
+		r(450253),	-- Ironclaw Sword
+	}),
+});

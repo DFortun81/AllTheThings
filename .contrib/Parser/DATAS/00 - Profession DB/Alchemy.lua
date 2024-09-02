@@ -1167,6 +1167,19 @@ i(210241, 415628);	-- Dreamwalker's Healing Potion
 i(0, 415810);		-- Potion of Withering Dreams
 
 ------------------
+-- PATCH 11.0.0 --
+------------------
+--- NYI ---
+i(0, 430606);		-- Unknown
+i(0, 430613);		-- Unknown
+i(0, 433271);		-- Unknown
+i(0, 433604);		-- Unknown
+i(0, 433605);		-- Unknown
+i(0, 433606);		-- Unknown
+i(0, 433607);		-- Unknown
+i(0, 433608);		-- Unknown
+
+------------------
 -- PATCH 11.0.2 --
 ------------------
 --- TRAINER ---
@@ -1226,12 +1239,3 @@ i(0, 449573);		-- Mercurial Coalescence
 i(0, 449574);		-- Ominous Coalescence
 i(0, 430315);		-- Thaumaturgy
 i(0, 449575);		-- Volatile Coalescence
---- NYI ---
-i(0, 430606);		-- Unknown
-i(0, 430613);		-- Unknown
-i(0, 433271);		-- Unknown
-i(0, 433604);		-- Unknown
-i(0, 433605);		-- Unknown
-i(0, 433606);		-- Unknown
-i(0, 433607);		-- Unknown
-i(0, 433608);		-- Unknown

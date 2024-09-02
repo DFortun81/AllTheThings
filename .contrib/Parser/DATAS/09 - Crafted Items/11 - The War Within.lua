@@ -25,12 +25,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	i(ARTISANS_ACUITY),
 	i(211297),	-- Fractured Spark of Omens
 	i(228414),	-- Frayed Wiring
-	i(221757);	-- Gloomfathom Hide
 	i(228956),	-- Junk Bucket
 	i(213613),	-- Leyline Residue
-	i(213197),	-- Null Lotus
-	i(221758),	-- Profaned Tinderbox
-	i(221754),	-- Ringing Deeps Ingot
 	i(228338),	-- Soul Sigil I
 	i(228339),	-- Soul Sigil II
 	i(211296),	-- Spark of Omens
@@ -469,7 +465,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(222417),	-- Core Alloy+
 			i(222418),	-- Core Alloy++
 			i(222419),	-- Core Alloy+++
-			i(226202),	-- Echoing Flux
 			i(222499),	-- Forged Framework+
 			i(222500),	-- Forged Framework++
 			i(222501),	-- Forged Framework+++
@@ -1457,6 +1452,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210796),	-- Mycobloom+
 			i(210797),	-- Mycobloom++
 			i(210798),	-- Mycobloom+++
+			i(213197),	-- Null Lotus
 			i(210802),	-- Orbinid+
 			i(210803),	-- Orbinid++
 			i(210804),	-- Orbinid+++
@@ -2437,6 +2433,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(212674),	-- Sunless Carapace+
 			i(212675),	-- Sunless Carapace++
 			i(212676),	-- Sunless Carapace+++
+			i(219013),	-- Superb Beast Fang
 			i(212670),	-- Thunderous Hide+
 			i(212672),	-- Thunderous Hide++
 			i(212673),	-- Thunderous Hide+++

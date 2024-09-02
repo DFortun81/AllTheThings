@@ -81,6 +81,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 49.2, 63.6, DORNOGAL },
 					["g"] = TWW_BLACKSMITHING,
 				}),
+				n(223643, {	-- Borgos <Blacksmithing Supplies>
+					["coord"] = { 48.8, 62.6, DORNOGAL },
+					["g"] = {
+						i(226202),	-- Echoing Flux
+					},
+				}),
 			}),
 			prof(COOKING, {
 				n(219104, {	-- Athodas <Cooking Trainer>
