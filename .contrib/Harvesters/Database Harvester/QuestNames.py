@@ -48,6 +48,64 @@ def get_name(expansion: str, quest_id: str) -> str:
         name = "--"
     return name
 
+def get_available_expansions(patch: str) -> dict[str, str]:
+    """This Function return proper expansion data for the patch"""
+    expansion_dict: dict[str, str] = {}
+    if version.parse("1.15.0.0") < version.parse(patch) < version.parse("1.15.9.9"):
+        expansion_dict = {
+            "Retail": "",
+            "CLASSIC" : "classic",
+        }
+    elif version.parse(patch) < version.parse("2.0.0.0"):
+        expansion_dict = {
+            "Retail": "",
+            "CLASSIC": "classic",
+            "TBC": "tbc",
+            "WOTLK": "wotlk",
+            "CATA": "cata",
+        }
+        print("Classic :", patch)
+    elif version.parse(patch) < version.parse("3.0.0.0"):
+        expansion_dict = {
+            "Retail": "",
+            "TBC": "tbc",
+            "WOTLK": "wotlk",
+            "CATA": "cata",
+        }
+        print("TBC :", patch)
+    elif version.parse(patch) < version.parse("4.0.0.0"):
+        expansion_dict = {
+            "Retail": "",
+            "WOTLK": "wotlk",
+            "CATA": "cata",
+        }
+        print("Wotlk :", patch)
+    elif version.parse(patch) < version.parse("5.0.0.0"):
+        expansion_dict = {
+            "Retail": "",
+            "CATA": "cata",
+        }
+        print("Cata :", patch)
+    elif version.parse(patch) < version.parse("11.0.0.0"):
+        expansion_dict = {
+            "Retail": "",
+        }
+        print("MoP-DF :", patch)
+    elif version.parse(patch) < version.parse("11.0.2.99999"):
+        expansion_dict = {
+            "Retail": "",
+            "PTR": "ptr",
+            "PTR2": "ptr-2",
+            "BETA": "beta",
+        }
+        print("11.0.0-11.0.2 :", patch)
+    elif version.parse(patch) < version.parse("11.0.5.99999"):
+        expansion_dict = {
+            "PTR": "ptr",
+            "PTR2": "ptr-2",
+        }
+        print("11.0.5 :", patch)
+    return expansion_dict
 
 def get_quest_names() -> None:
     """This function gives questIDs names based on wowhead"""
@@ -58,6 +116,8 @@ def get_quest_names() -> None:
         "WOTLK": "wotlk",
         "CATA": "cata",
         "PTR": "ptr",
+        "PTR2": "ptr-2",
+        "BETA": "beta",
     }
     raw_path_dict: dict[str, Path] = {
         expansion: Path("Raw", "QuestNames", f"{expansion}.txt")
@@ -93,7 +153,7 @@ def get_quest_names() -> None:
                         continue
                 for expansion in name_dict:
                     if name_dict[expansion].strip() != "--":
-                        if expansion == "PTR" and "Retail" in expansion_dict.keys() and name_dict["Retail"] == name_dict["PTR"]:
+                        if (expansion == "PTR" or expansion == "PTR2" or expansion == "BETA") and "Retail" in expansion_dict.keys() and name_dict["Retail"] == name_dict["PTR"]:
                             quest_name = quest_name
                         elif expansion == "Retail":
                             quest_name = quest_name+f" {name_dict[expansion]}\t"
@@ -101,56 +161,6 @@ def get_quest_names() -> None:
                             quest_name = quest_name+f" {expansion}:{name_dict[expansion]}\t"
                 missing_lines[index] = f"{quest_name.rstrip()}\n"
             else:
-                if version.parse(missing_line) < version.parse("2.0.0.0"):
-                    expansion_dict = {
-                        "Retail": "",
-                        "CLASSIC": "classic",
-                        "TBC": "tbc",
-                        "WOTLK": "wotlk",
-                        "CATA": "cata",
-                    }
-                    print("Classic :", missing_line)
-                elif version.parse(missing_line) < version.parse("3.0.0.0"):
-                    expansion_dict = {
-                        "Retail": "",
-                        "TBC": "tbc",
-                        "WOTLK": "wotlk",
-                        "CATA": "cata",
-                    }
-                    print("TBC :", missing_line)
-                elif version.parse(missing_line) < version.parse("4.0.0.0"):
-                    expansion_dict = {
-                        "Retail": "",
-                        "WOTLK": "wotlk",
-                        "CATA": "cata",
-                    }
-                    print("Wotlk :", missing_line)
-                elif version.parse(missing_line) < version.parse("5.0.0.0"):
-                    expansion_dict = {
-                        "Retail": "",
-                        "CATA": "cata",
-                    }
-                    print("Cata :", missing_line)
-                elif version.parse(missing_line) < version.parse("10.0.0.0"):
-                    expansion_dict = {
-                        "Retail": "",
-                    }
-                    print("MoP-SL :", missing_line)
-                elif version.parse(missing_line) < version.parse("10.2.6.99999"):
-                    expansion_dict = {
-                        "Retail": "",
-                        "PTR": "ptr",
-                    }
-                    print("10.0.0-10.2.6 :", missing_line)
-                elif version.parse(missing_line) < version.parse("10.2.7.99999"):
-                    expansion_dict = {
-                        "PTR": "ptr",
-                    }
-                    print("10.2.7 :", missing_line)
-                elif version.parse(missing_line) > version.parse("10.2.8.0"):
-                    expansion_dict = {
-                        # "BETA": "beta",
-                    }
-                    print("11.0.0 :", missing_line)
+                expansion_dict = get_available_expansions(missing_line)
     with open(missing_path, "w") as missing_file:
         missing_file.writelines(missing_lines)
