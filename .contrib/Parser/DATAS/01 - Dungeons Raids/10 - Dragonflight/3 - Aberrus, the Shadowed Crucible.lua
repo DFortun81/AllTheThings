@@ -977,7 +977,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					}),
 				}),
 				-- #if AFTER TWW
-				o(382621, {	-- Revival Catalyst Console	-- NORMA --
+				o(382621, {	-- Revival Catalyst Console	-- NORMAL --
 					["description"] = "The Revival Catalyst is a system that lets you convert Normal Mode Non-set items from the Aberrus Raid into your class' Normal Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
 					["modelScale"] = 4,
