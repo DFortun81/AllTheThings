@@ -61,7 +61,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			-- The General
 			n(QUESTS, sharedData({
 				["isDaily"] = true,
-				["sourceQuests"] = { 80545 },	-- The General Weekly pickup
+				["sourceQuests"] = {
+					80545,	-- The General Weekly pickup
+					80546,	-- The Vizier Weekly pickup
+					80544,	-- The Weaver Weekly pickup
+				},
+				["sourceQuestNumRequired"] = 1,
 			},{
 				q(81491, {	-- Armaments: Arbalests
 					["provider"] = { "n", 224171 },	-- Eirzay
@@ -124,20 +129,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			-- The Vizier
 			n(QUESTS, sharedData({
 				["isDaily"] = true,
-				["sourceQuests"] = { 80546 },	-- The Vizier Weekly pickup
+				["sourceQuests"] = {
+					80545,	-- The General Weekly pickup
+					80546,	-- The Vizier Weekly pickup
+					80544,	-- The Weaver Weekly pickup
+				},
+				["sourceQuestNumRequired"] = 1,
 			},{
 				q(81473, {	-- Information Control: The Right Side of History
 					["provider"] = { "n", 224196 },	-- Ru'murh
 					["coord"] = { 77.8, 53.9, NERUBAR },
 					["g"] = {
-						i(219228),	-- Fetid Slime Sac (QI!)
+						--
 					},
 				}),
 				q(81495, {	-- Requisitions: Brightblooms
 					["provider"] = { "n", 224178 },	-- Ghos'opp
 					["coord"] = { 64.2, 21.4, NERUBAR },
 					["g"] = {
-						i(219228),	-- Fetid Slime Sac (QI!)
+						i(219225),	-- Crystalline Brightbloom (QI!)
 					},
 				}),
 				q(81480, {	-- Wild Reagents: Maddening Deep
@@ -147,11 +157,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(219228),	-- Fetid Slime Sac (QI!)
 					},
 				}),
+				q(81482, {	-- Testing Formulae: Gelatinous Unguent
+					["provider"] = { "n", 224187 },	-- Ghos'opp
+					--["coord"] = { XX.X, YY.Y, NERUBAR }, TODO
+					["g"] = {
+						i(219323),	-- Gelatinous Unguent (QI!)
+					},
+				}),
+				q(81497, {	-- Wild Reagents: Salien Gutters
+					["provider"] = { "n", 224181 },	-- Ghos'opp
+					["coord"] = { 61.1, 74.7, AZJ_KAHET },
+					["g"] = {
+						i(219227),	-- Swollen Kobyss Eye (QI!)
+					},
+				}),
 			})),
 			-- The Weaver
 			n(QUESTS, sharedData({
 				["isDaily"] = true,
-				["sourceQuests"] = { 80544 },	-- The Weaver Weekly pickup
+				["sourceQuests"] = {
+					80545,	-- The General Weekly pickup
+					80546,	-- The Vizier Weekly pickup
+					80544,	-- The Weaver Weekly pickup
+				},
+				["sourceQuestNumRequired"] = 1,
 				["cost"] = {{"i",228949,1}},	-- Rumor Map
 			},{
 				q(81471, {	-- Dropping Eaves: Saving the Past
