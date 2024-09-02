@@ -524,6 +524,8 @@ TWW_ALCHEMY = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(425137),	-- Recraft Equipment
 	}),
 	filter(REAGENTS, {
+		r(462121),	-- Bubbling Mycobloom Culture
 		r(427214),	-- Neutralize Concoctions
+		r(462122),	-- Petal Powder
 	}),
 });

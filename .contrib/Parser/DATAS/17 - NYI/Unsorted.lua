@@ -294,12 +294,6 @@ root(ROOTS.Unsorted, {
 				i(224728),	-- Rollin' Barrel \\ [PH] Rollin' Barrel
 				i(224729),	-- Slum Shark Tooth \\ [PH] Slum Shark Tooth
 				i(224730),	-- [PH] Derby Dashers
-				prof(ALCHEMY, {
-					i(228401),	-- Bubbling Mycobloom Culture
-					i(228402),	-- Bubbling Mycobloom Culture
-					i(228403),	-- Bubbling Mycobloom Culture
-					i(224577),	-- Sphere of Infinite Transmutations (PTR Only)
-				}),
 				prof(BLACKSMITHING, {
 					--- Probably mostly NYI...
 					i(217847),	-- Everforged Hands

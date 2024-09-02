@@ -23,7 +23,6 @@ end
 
 root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	i(ARTISANS_ACUITY),
-	i(213610),	-- Crystalline Powder
 	i(211297),	-- Fractured Spark of Omens
 	i(228414),	-- Frayed Wiring
 	i(221757);	-- Gloomfathom Hide
@@ -35,9 +34,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	i(228338),	-- Soul Sigil I
 	i(228339),	-- Soul Sigil II
 	i(211296),	-- Spark of Omens
-	i(213612),	-- Viridescent Spores
-	i(221763),	-- Viridian Charmcap
-	i(213611),	-- Writhing Sample
 	prof(ALCHEMY, {
 		n(DISCOVERY, {
 			spell(430345, {	-- Meticulous Experimentation
@@ -224,7 +220,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81090, 430315);	-- Thaumaturgy
 			--FirstCraft(QuestID, 427174);	-- Wild Experimentation
 			-- Reagents
+			--FirstCraft(XXXXX, 462121);	-- Bubbling Mycobloom Culture
 			FirstCraft(81129, 432204);	-- Harmonious Horticulture
+			FirstCraft(84493, 462122);	-- Petal Powder
 			-- Basic Concoctions
 			FirstCraft(81095, 430590);	-- Algari Healing Potion
 			FirstCraft(81096, 430591);	-- Algari Mana Potion
@@ -280,6 +278,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		}),
 		filter(REAGENTS, {
 			i(212514),	-- Blasphemite
+			i(228401),	-- Bubbling Mycobloom Culture+
+			i(228402),	-- Bubbling Mycobloom Culture++
+			i(228403),	-- Bubbling Mycobloom Culture+++
 			i(210815),	-- Coreway Catalyst
 			i(211805),	-- Gleaming Transmutagen
 			i(212563),	-- Harmonious Horticulture+
@@ -287,6 +288,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(212565),	-- Harmonious Horticulture+++
 			i(211803),	-- Mercurial Transmutagen
 			i(211802),	-- Ominous Transmutagen
+			i(228404),	-- Petal Powder+
+			i(228405),	-- Petal Powder++
+			i(228406),	-- Petal Powder+++
 			i(211804),	-- Volatile Transmutagen
 		}),
 		filter(TRINKET_F, {
@@ -1434,13 +1438,31 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 	}),
 	prof(HERBALISM, {
 		spell(2366, {	-- Herb Gathering
+			i(210808),	-- Arathor's Spear+
+			i(210809),	-- Arathor's Spear++
+			i(210810),	-- Arathor's Spear+++
+			i(210805),	-- Blessing Blossom+
+			i(210806),	-- Blessing Blossom++
+			i(210807),	-- Blessing Blossom+++
+			i(213610),	-- Crystalline Powder
 			i(224264),	-- Deepgrove Petal
 			i(224835),	-- Deepgrove Roots
 			i(224265),	-- Deepgrove Rose
 			i(219196),	-- Empowered Mulch
 			i(219195),	-- Imbued Mulch
+			i(210799),	-- Luredrop+
+			i(210800),	-- Luredrop++
+			i(210801),	-- Luredrop+++
 			i(219194),	-- Magical Mulch
+			i(210796),	-- Mycobloom+
+			i(210797),	-- Mycobloom++
+			i(210798),	-- Mycobloom+++
+			i(210802),	-- Orbinid+
+			i(210803),	-- Orbinid++
+			i(210804),	-- Orbinid+++
 			i(214561),	-- Verdant Seed
+			i(213612),	-- Viridescent Spores
+			i(213611),	-- Writhing Sample
 		}),
 		n(DISCOVERY, {
 			r(435858),	-- Altered Luredrop
@@ -1529,27 +1551,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 423395);	-- Overload Empowered Herb
 			--FirstCraft(XXXXX, 438955);	-- Overload Irradiated Herb
 			--FirstCraft(XXXXX, 438961);	-- Overload Sporefused Herb
-			-- Other?
-			FirstCraft(84493, 462122);	-- Petal Powder
 		})),
-		i(210808),	-- Arathor's Spear+
-		i(210809),	-- Arathor's Spear++
-		i(210810),	-- Arathor's Spear+++
-		i(210805),	-- Blessing Blossom+
-		i(210806),	-- Blessing Blossom++
-		i(210807),	-- Blessing Blossom+++
-		i(210799),	-- Luredrop+
-		i(210800),	-- Luredrop++
-		i(210801),	-- Luredrop+++
-		i(210796),	-- Mycobloom+
-		i(210797),	-- Mycobloom++
-		i(210798),	-- Mycobloom+++
-		i(210802),	-- Orbinid+
-		i(210803),	-- Orbinid++
-		i(210804),	-- Orbinid+++
-		i(228404),	-- Petal Powder+
-		i(228405),	-- Petal Powder++
-		i(228406),	-- Petal Powder+++
 	}),
 	prof(INSCRIPTION, {
 		spell(444181, {	-- Khaz Algar Milling
@@ -2308,6 +2310,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210930),	-- Bismuth+
 			i(210931),	-- Bismuth++
 			i(210932),	-- Bismuth+++
+			i(213610),	-- Crystalline Powder
 			i(217707),	-- Imperfect Null Stone
 			i(210936),	-- Ironclaw Ore+
 			i(210937),	-- Ironclaw Ore++
@@ -2316,6 +2319,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(210939),	-- Null Stone
 			i(224583),	-- Slab of Slate
 			i(224584),	-- Erosion Polished Slate
+			i(213611),	-- Writhing Sample
 		}),
 		n(DISCOVERY, {
 			r(439707),	-- Aqirite

@@ -131,6 +131,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 		i(225564),	-- Meaty Muscle
 		i(225568),	-- Slum Shark Scrap
 		i(221756),	-- Vial of Kaheti Oils
+		i(221763),	-- Viridian Charmcap
 		i(225566),	-- Warped Wing
 		i(224828),	-- Weavercloth+
 		i(228231),	-- Weavercloth++

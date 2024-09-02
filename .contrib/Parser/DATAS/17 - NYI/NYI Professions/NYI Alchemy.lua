@@ -96,6 +96,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(212325),	-- QA Potion of Unwavering Focus
 					i(212321),	-- QA Slumbering Soul Serum
 					i(212327),	-- QA Tempered Potion
+					i(224577),	-- Sphere of Infinite Transmutations (PTR Only)
 				})),
 			}),
 		}),
@@ -279,6 +280,19 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(191582),	-- Recipe: Transmute: Decay to Elements (RECIPE!)
 					i(191583),	-- Recipe: Transmute: Order to Elements (RECIPE!)
 					i(191592),	-- Recipe: Writhefire Oil (RECIPE!)
+				})),
+			}),
+			expansion(EXPANSION.TWW, {
+				-- 11.0.0
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+					r(430606),	-- Unknown
+					r(430613),	-- Unknown
+					r(433271),	-- Unknown
+					r(433604),	-- Unknown
+					r(433605),	-- Unknown
+					r(433606),	-- Unknown
+					r(433607),	-- Unknown
+					r(433608),	-- Unknown
 				})),
 			}),
 		}),
