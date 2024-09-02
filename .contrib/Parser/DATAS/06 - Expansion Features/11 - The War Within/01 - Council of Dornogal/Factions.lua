@@ -11,7 +11,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				ach(40904, {	-- Cornerstone of Dornogal
 					["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 25 },	-- Council of Dornogal Renown 25
 				}),
-				title(565)	-- Honorary Councilmember
+				title(565, {	-- Honorary Councilmember
+					["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 25 },	-- Council of Dornogal Renown 25
+				}),
 			}),
 		}),
 	}),

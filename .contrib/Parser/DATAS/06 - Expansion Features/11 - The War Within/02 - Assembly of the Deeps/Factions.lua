@@ -11,7 +11,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				ach(40905, {	-- From Many, One
 					["minReputation"] = { FACTION_THE_ASSEMBLY_OF_THE_DEEPS, 25 },	-- The Assembly of the Deeps Renown 25
 				}),
-				title(564)	-- Machine Whisperer
+				title(564, {	-- Machine Whisperer
+					["minReputation"] = { FACTION_THE_ASSEMBLY_OF_THE_DEEPS, 25 },	-- The Assembly of the Deeps Renown 25
+				}),
 			}),
 		}),
 	}),
