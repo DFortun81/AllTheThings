@@ -11,6 +11,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				ach(40906, {	-- The Flame Burns Within
 					["minReputation"] = { FACTION_HALLOWFALL_ARATHI , 25 },	-- Hallowfall Arathi Renown 25
 				}),
+				title(566)	-- Lamplighter
 			}),
 		}),
 	}),

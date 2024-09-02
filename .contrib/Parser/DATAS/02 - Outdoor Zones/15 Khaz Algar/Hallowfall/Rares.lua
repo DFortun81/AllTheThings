@@ -146,6 +146,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 44.0, 16.4, HALLOWFALL },
 				["questID"] = 81791,
 				["g"] = {
+					i(221246),	-- Fierce Beast Staff
 					i(221229),	-- Perchfather's Cuffs
 				},
 			}),

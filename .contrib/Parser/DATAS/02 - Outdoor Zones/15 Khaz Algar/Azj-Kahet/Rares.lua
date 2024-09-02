@@ -170,6 +170,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 82037,
 				["g"] = {
 					i(223930),	-- Monstrous Chain Pincers
+					i(221240),	-- Nerubian Stagshell Gouger
 				},
 			}),
 			n(216037, {	-- Vilewing

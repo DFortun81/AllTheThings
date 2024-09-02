@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			ach(40150),		-- Children's Entertainer
 			ach(40826),		-- Explore Hallowfall (automated)
 			ach(20594, {	-- Flamegard's Hope
-				["description"] = "Use healing spells, bandages or Algari Healing Potion to heal 20 patients.",
+				["description"] = "Use healing spells, bandages or Algari Healing Potion to heal 20 patients over 20 days, need not be consecutive.",
 				["coord"] = { 43.2, 51.8, HALLOWFALL },
 			}),
 			ach(20598),		-- Hallowfall (automated)

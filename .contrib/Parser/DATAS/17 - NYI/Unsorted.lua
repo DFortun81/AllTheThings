@@ -162,10 +162,6 @@ root(ROOTS.Unsorted, {
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			filter(TITLES, {
 				title(560),	-- <Name> Ascension Breaker
-				title(564),	-- Machine Whisperer <Name>
-				title(565),	-- Honorary Councilmember <Name>
-				title(566),	-- Lamplighter <Name>
-				title(567),	-- Thread-Spinner <Name>
 				title(568),	-- <Name>, Machine-Warden
 			}),
 			filter(BATTLE_PETS, {
@@ -417,8 +413,6 @@ root(ROOTS.Unsorted, {
 				i(224167),	-- Gundargaz Tabard \\ Dark Earthen Tabard \\ [PH] Earthen Tabard
 				i(224168),	-- Stonebound Tabard \\ Silver Earthen Tabard \\ [PH] Earthen Tabard
 				i(224169),	-- Freywold Tabard \\ Sage Earthen Tabard \\ [PH] Earthen Tabard
-				i(225752),	-- Dornogal Defender
-				i(225757),	-- Coreway Pickaxe
 				i(225884),	-- Extra Large Leek \\ Extra Large Leak
 				i(226000),	-- Ensemble: Earthen Adventurer's Copper Drapery
 				i(226363),	-- Earthen Backpack
@@ -1028,7 +1022,6 @@ root(ROOTS.Unsorted, {
 				i(213405),	-- Incriminating Focus
 				i(213424),	-- Keg of Cinderbrew Mead
 				i(213425),	-- Shredded Reins
-				i(213538),	-- Wood-Worm Tonic \\ Wood-Worm Liqueur \\ Necrotic Dart
 				i(213557),	-- Lost Journal Tablet
 				i(216605),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
 				i(216682),	-- The Vizier's Invitation
@@ -1045,7 +1038,6 @@ root(ROOTS.Unsorted, {
 				i(217996),	-- Sureki Tithe
 				i(218084),	-- Crumpled Note
 				i(218104),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
-				i(218124),	-- Element Extractor
 				i(218127),	-- Ever-Blossoming Fungi
 				i(218456),	-- Precious Gems
 				i(218457),	-- Special Silk
@@ -1567,7 +1559,6 @@ root(ROOTS.Unsorted, {
 			title(568),	-- <Name>, Machine-Warden
 			i(226218),	-- Machine-Warden's Cloak
 			-- Fallout
-			i(219934),	-- Spark of War
 			i(220693),	-- Coffer Key Shard \\ Delve Key Fragment
 			i(226103),	-- The Weaver's Trove
 			i(226165),	-- Unseemly Agate Choker

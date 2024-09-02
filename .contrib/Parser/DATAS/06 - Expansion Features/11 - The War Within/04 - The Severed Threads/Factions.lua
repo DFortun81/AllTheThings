@@ -11,6 +11,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				ach(40907, {	-- We Rise Anew
 					["minReputation"] = { FACTION_THE_SEVERED_THREADS , 25 },	-- The Severed Threads Renown 25
 				}),
+				title(567)	-- Thread-Spinner
 			}),
 		}),
 	}),

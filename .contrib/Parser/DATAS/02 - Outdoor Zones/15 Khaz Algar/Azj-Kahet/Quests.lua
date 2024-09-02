@@ -1040,6 +1040,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { 79532 },	-- Tinker, Tailor, Soldier, Spider
 					["provider"] = { "n", 227428 },	-- Widow Arak'nai
 					["coord"] = { 62.9, 12.1, NERUBAR_LOWER },
+					["g"] = {
+						i(213538),	-- Wood-Worm Tonic (QI!)
+					},
 				}),
 				q(79633, {	-- The Weaver's Legacy
 					["sourceQuests"] = { 79627 },	-- Wine and Die

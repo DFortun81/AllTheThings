@@ -2036,10 +2036,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			i(128216, {	-- Dented Ashmaul Strongbox A S3
 				["u"] = REMOVED_FROM_GAME,
 			}),
-			-- Class Spell Items
-			i(114846, {	-- Sigil of Death Grip
-				["classes"] = { DEATHKNIGHT }
-			}),
 		},
 	}),
 })));

@@ -53,6 +53,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(80395, {	-- Elemental Excavation
 					["coord"] = { 74.8, 55.1, ISLE_OF_DORN },
+					["g"] = {
+						i(218124),	-- Element Extractor
+					}
 				}),
 				q(82225, {	-- Excavation Extravaganza
 					["coord"] = { 61.9, 71.2, ISLE_OF_DORN },
