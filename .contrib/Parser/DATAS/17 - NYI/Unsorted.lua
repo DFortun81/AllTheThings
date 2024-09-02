@@ -153,6 +153,11 @@ root(ROOTS.Unsorted, {
 			i(231830),	-- Kraken Shell Pauldrons
 			-- Fallout
 			i(229193),	-- Queen's Pheromone
+			--
+			i(232045),	-- Chunk of Companion Experience
+			i(232046),	-- Chunk of Companion Experience
+			i(232047),	-- Chunk of Companion Experience
+			i(232049),	-- Companion Experience
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			filter(TITLES, {
