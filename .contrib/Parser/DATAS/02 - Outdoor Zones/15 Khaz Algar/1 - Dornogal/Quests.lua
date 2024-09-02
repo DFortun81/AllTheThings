@@ -44,6 +44,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["g"] = {
 						i(223549),	-- Algari Greatsword
 						i(223547),	-- Algari Heavy Staff
+						i(223548),	-- Algari Rifle
 						i(223584),	-- Algari Scepter
 						i(223564),	-- Algari Short Axe
 						i(223546),	-- Algari Spear

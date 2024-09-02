@@ -1057,8 +1057,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
 					}),
 				}),
-				-- #if AFTER TWW 
-				o(382621, {	-- Revival Catalyst Console	-- LFR	--
+				-- #if AFTER TWW
+				o(382621, {	-- Revival Catalyst Console	-- LFR --
 					["description"] = "The Revival Catalyst is a system that lets you convert Emerald Dream's Zone Weekly Event Items (Superbloom, Dreamseeds, A Worthy Ally: Dream) & LFR Mode Non-set items from the Amirdrassil Raid into your class' LFR Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
 					["modelScale"] = 4,
@@ -1253,8 +1253,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						},
 					}),
 				}),
-				-- #if AFTER TWW 
-				o(382621, {	-- Revival Catalyst Console	-- NORMAL	--
+				-- #if AFTER TWW
+				o(382621, {	-- Revival Catalyst Console	-- NORMAL --
 					["description"] = "The Revival Catalyst is a system that lets you convert Normal Mode Non-set items from the Amirdrassil Raid into your class' Normal Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
 					["modelScale"] = 4,
@@ -1432,8 +1432,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						},
 					}),
 				}),
-				-- #if AFTER TWW 
-				o(382621, {	-- Revival Catalyst Console	-- HEROIC	--
+				-- #if AFTER TWW
+				o(382621, {	-- Revival Catalyst Console	-- HEROIC --
 					["description"] = "The Revival Catalyst is a system that lets you convert Heroic Mode Non-set items from the Amirdrassil Raid into your class' Heroic Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
 					["modelScale"] = 4,
@@ -1589,8 +1589,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						},
 					}),
 				}),
-				-- #if AFTER TWW 
-				o(382621, {	-- Revival Catalyst Console	-- MYTHIC	--
+				-- #if AFTER TWW
+				o(382621, {	-- Revival Catalyst Console	-- MYTHIC --
 					["description"] = "The Revival Catalyst is a system that lets you convert Mythic Mode Non-set items from the Amirdrassil Raid into your class' Mythic Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
 					["modelScale"] = 4,
