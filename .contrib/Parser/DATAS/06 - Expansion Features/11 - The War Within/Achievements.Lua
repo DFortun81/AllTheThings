@@ -135,11 +135,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
                             i(212007),	-- Embrace of the Forgotten Reservoir
                             i(212008),	-- Wrappings of the Forgotten Reservoir
                             i(212009),	-- Concourse of the Forgotten Reservoir
-                            i(212010),	-- Sarong of the Forgotten Reservoir
+                            --i(212010),	-- Sarong of the Forgotten Reservoir [does not exist]
                             i(212011),	-- Noetic of the Forgotten Reservoir
                             i(212012),	-- Covenant of the Forgotten Reservoir
                             i(212013),	-- Shoes of the Forgotten Reservoir
-                            i(212014),	-- Vestments of the Forgotten Reservoir
+                            --i(212014),	-- Vestments of the Forgotten Reservoir [does not exist]
                         }),
                         cl(WARLOCK, {
                             i(212069),	-- Hexflame Coven's Shawl
@@ -280,11 +280,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
                             i(212007),	-- Embrace of the Forgotten Reservoir
                             i(212008),	-- Wrappings of the Forgotten Reservoir
                             i(212009),	-- Concourse of the Forgotten Reservoir
-                            i(212010),	-- Sarong of the Forgotten Reservoir
+                            --i(212010),	-- Sarong of the Forgotten Reservoir [does not exist]
                             i(212011),	-- Noetic of the Forgotten Reservoir
                             i(212012),	-- Covenant of the Forgotten Reservoir
                             i(212013),	-- Shoes of the Forgotten Reservoir
-                            i(212014),	-- Vestments of the Forgotten Reservoir
+                            --i(212014),	-- Vestments of the Forgotten Reservoir [does not exist]
                         }),
                         cl(WARLOCK, {
                             i(212069),	-- Hexflame Coven's Shawl
@@ -425,11 +425,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
                             i(212007),	-- Embrace of the Forgotten Reservoir
                             i(212008),	-- Wrappings of the Forgotten Reservoir
                             i(212009),	-- Concourse of the Forgotten Reservoir
-                            i(212010),	-- Sarong of the Forgotten Reservoir
+                            --i(212010),	-- Sarong of the Forgotten Reservoir [does not exist]
                             i(212011),	-- Noetic of the Forgotten Reservoir
                             i(212012),	-- Covenant of the Forgotten Reservoir
                             i(212013),	-- Shoes of the Forgotten Reservoir
-                            i(212014),	-- Vestments of the Forgotten Reservoir
+                            --i(212014),	-- Vestments of the Forgotten Reservoir [does not exist]
                         }),
                         cl(WARLOCK, {
                             i(212069),	-- Hexflame Coven's Shawl
@@ -570,11 +570,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
                             i(212007),	-- Embrace of the Forgotten Reservoir
                             i(212008),	-- Wrappings of the Forgotten Reservoir
                             i(212009),	-- Concourse of the Forgotten Reservoir
-                            i(212010),	-- Sarong of the Forgotten Reservoir
+                            --i(212010),	-- Sarong of the Forgotten Reservoir [does not exist]
                             i(212011),	-- Noetic of the Forgotten Reservoir
                             i(212012),	-- Covenant of the Forgotten Reservoir
                             i(212013),	-- Shoes of the Forgotten Reservoir
-                            i(212014),	-- Vestments of the Forgotten Reservoir
+                            --i(212014),	-- Vestments of the Forgotten Reservoir [does not exist]
                         }),
                         cl(WARLOCK, {
                             i(212069),	-- Hexflame Coven's Shawl
@@ -715,11 +715,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
                             i(212007),	-- Embrace of the Forgotten Reservoir
                             i(212008),	-- Wrappings of the Forgotten Reservoir
                             i(212009),	-- Concourse of the Forgotten Reservoir
-                            i(212010),	-- Sarong of the Forgotten Reservoir
+                            --i(212010),	-- Sarong of the Forgotten Reservoir [does not exist]
                             i(212011),	-- Noetic of the Forgotten Reservoir
                             i(212012),	-- Covenant of the Forgotten Reservoir
                             i(212013),	-- Shoes of the Forgotten Reservoir
-                            i(212014),	-- Vestments of the Forgotten Reservoir
+                            --i(212014),	-- Vestments of the Forgotten Reservoir [does not exist]
                         }),
                         cl(WARLOCK, {
                             i(212069),	-- Hexflame Coven's Shawl
@@ -860,11 +860,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
                             i(212007),	-- Embrace of the Forgotten Reservoir
                             i(212008),	-- Wrappings of the Forgotten Reservoir
                             i(212009),	-- Concourse of the Forgotten Reservoir
-                            i(212010),	-- Sarong of the Forgotten Reservoir
+                            --i(212010),	-- Sarong of the Forgotten Reservoir [does not exist]
                             i(212011),	-- Noetic of the Forgotten Reservoir
                             i(212012),	-- Covenant of the Forgotten Reservoir
                             i(212013),	-- Shoes of the Forgotten Reservoir
-                            i(212014),	-- Vestments of the Forgotten Reservoir
+                            --i(212014),	-- Vestments of the Forgotten Reservoir [does not exist]
                         }),
                         cl(WARLOCK, {
                             i(212069),	-- Hexflame Coven's Shawl
