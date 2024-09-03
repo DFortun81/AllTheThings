@@ -177,6 +177,7 @@ HeaderAssignments = {
 	["Ferocious Gladiator: Legion Season 4"] = -1000992,
 	["Fierce Gladiator: Legion Season 5"] = -1000993,
 	["Fifth Rock Mouse"] = -1000314,
+	["Filled Travelers Log"] = -1001027,
 	["Final Chest"] = -1000059,
 	["Finger"] = -1000064,
 	["Firebird's Challenge"] = -1000204,
@@ -517,4 +518,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001025;
+NextHeaderID = -1001028;

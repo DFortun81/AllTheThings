@@ -28,9 +28,10 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, bubbleDownSelf({ ["timeline"] = { ADD
 		n(PATRON_REWARDS, {
 			i(225670), -- Apprentice's Crafting License
 			i(227713), -- Artisan's Consortium Payout [Common]
-			i(228610), -- Artisan's Consortium Payout [Uncommon]
-			i(228611), -- Artisan's Consortium Payout [Rare]
-			i(228612), -- Artisan's Consortium Payout [Epic]
+		--	These 3 dont load ingame
+		--	i(228610), -- Artisan's Consortium Payout [Uncommon]
+		--	i(228611), -- Artisan's Consortium Payout [Rare]
+		--	i(228612), -- Artisan's Consortium Payout [Epic]
 			i(228724), -- Flicker of Alchemy Knowledge
 			i(228726), -- Flicker of Blacksmithing Knowledge
 			i(228728), -- Flicker of Enchanting Knowledge

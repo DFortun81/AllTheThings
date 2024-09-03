@@ -1561,6 +1561,9 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			i(219741), -- Algari Mineral
 			i(219742), -- Algari Spices
+			i(228610), -- Artisan's Consortium Payout [Uncommon]
+			i(228611), -- Artisan's Consortium Payout [Rare]
+			i(228612), -- Artisan's Consortium Payout [Epic]
 			i(224030), -- Bottomless Bag of Khaz Algar Alchemy Goods
 			i(224031), -- Bottomless Bag of Khaz Algar Blacksmithing Goods
 			i(224032), -- Bottomless Bag of Khaz Algar Enchanting Goods

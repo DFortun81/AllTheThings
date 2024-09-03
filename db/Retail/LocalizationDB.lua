@@ -527,7 +527,6 @@ localize(L.HEADER_NAMES, {
 	[-1000364] = "Diablo Events",
 	[-1000365] = "Diablo 20th Anniversary",
 	[-1000366] = "A Greedy Emissary",
-	[-1000367] = QUEST_REWARDS,
 	[-1000368] = GetDifficultyInfo(24),
 	[-1000369] = "Year 2024",
 	[-1000373] = "New Character",
@@ -647,6 +646,7 @@ localize(L.HEADER_NAMES, {
 	[-1001024] = "Patron Rewards",
 	[-1001025] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
 	[-1001026] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-1001027] = QUEST_REWARDS,
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -718,7 +718,6 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000334] = "This quest indicates if you have activated the Feralas Owlcat Stone.",
 	[-1000335] = "This quest indicates if you have activated the Hinterlands Owlcat Stone.",
 	[-1000362] = "Congrats on making it this far!  Now it's time to take your favorite li'l ghost on a world tour.",
-	[-1000367] = "This is rewarded for filling the Travel Points Progress Bar in the month.",
 	[-1000368] = "Timewalking difficulties needlessly create new Source IDs for items despite having the exact same name, appearance, and display in the Collections Tab.\n\nA plea to the Blizzard Devs: Please clean up the Source ID database and have your Timewalking / Titanforged item variants use the same Source ID as their base assuming the appearances and names are exactly the same. Not only will this make your database much cleaner, but it will also make Completionists excited for rather than dreading the introduction of more Timewalking content.\n\n - Crieve, the Very Bitter Account Completionist that had 99% Ulduar completion and now only has 64% because your team duplicated the Source IDs rather than reuse the existing one.",
 	[-1000380] = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below.",
 	[-1000381] = "Buy a Kukuru's Cache Key to open this. Has a very small chance of containing a Burden of Eternity and more frequently, the Bonkers pet.",
@@ -735,6 +734,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1001001] = "These promotions happened during the time The War Within.\n\nThey are listed in the order of their first appearance.",
 	[-1001011] = "Promotion for SteelSeries World of Warcraft Limited Edition Collection.",
 	[-1001021] = "Promotion for streaming World of Warcraft in Discord.",
+	[-1001027] = "This reward is given for filling the Travel Points Progress Bar during the month.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1077,7 +1077,6 @@ localize(L.HEADER_ICONS, {
 	[-1000364] = "Interface/Icons/DiabloAnniversary_HoradricCube",
 	[-1000365] = "Interface/Icons/diabloanniversary_achievement",
 	[-1000366] = "Interface/Icons/inv_misc_bag_horadricsatchel",
-	[-1000367] = _.asset("Interface_Rewards"),
 	[-1000368] = _.asset("Difficulty_Timewalking"),
 	[-1000369] = "Interface/Icons/inv_misc_missilesmall_green",
 	[-1000373] = "1530081",
@@ -1179,6 +1178,7 @@ localize(L.HEADER_ICONS, {
 	[-1001021] = "133014",
 	[-1001022] = "Interface/Icons/inv_pet_achievement_captureapetfromeachfamily",
 	[-1001024] = "Interface/Icons/inv_tabard_craftingorder_c_01",
+	[-1001027] = "4696085",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,

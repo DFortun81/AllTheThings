@@ -3372,6 +3372,7 @@ local keys = {
 [83745]="|cFFFFFFFFStep 2C|r: Find Another You in Faerin's Advance",
 [83746]="|cFFFFFFFFStep 2A|r: Find Another You in Mmarl",
 [83747]="|cFFFFFFFFStep 2B|r: Find Another You in The Weaver's Lair",
+[84009]="Stay awhile and listen: Alleria Windrunner",
 [84290]="TWW Weekly Enchanting Disenchant #1",
 [84291]="TWW Weekly Enchanting Disenchant #2",
 [84292]="TWW Weekly Enchanting Disenchant #3",

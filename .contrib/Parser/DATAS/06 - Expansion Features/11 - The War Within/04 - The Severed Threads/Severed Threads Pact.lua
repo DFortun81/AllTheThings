@@ -274,7 +274,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					--["provider"] = { "n", xx },
 					["coord"] = { 57.7, 46.9, AZJ_KAHET },
 					["g"] = {
-						i(225572),	-- The General's War Chest
+						i(225572, {	-- The General's War Chest
+							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
+							i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
+							i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
+						}),			
 					},
 				}),
 				q(80672, {	-- Hand of the Vizier
@@ -286,7 +290,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					--["provider"] = { "n", xx },
 					["coord"] = { 57.7, 46.9, AZJ_KAHET },
 					["g"] = {
-						i(225573),	-- The Vizier's Capital
+						i(225573, {	-- The Vizier's Capital
+							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
+							i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
+							i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
+						}),	
 					},
 				}),
 				q(80670, {	-- Eyes of the Weaver
@@ -298,15 +306,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					--["provider"] = { "n", xx },
 					["coord"] = { 57.7, 46.9, AZJ_KAHET },
 					["g"] = {
-						i(225571),	-- The Weaver's Gratuity
+						i(225571, {	-- The Weaver's Gratuity
+							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
+							i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
+							i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
+						}),	
 					},
 				}),
 			})),
-			n(REWARDS, {
-				i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
-				i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
-				i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
-			}),
 			n(VENDORS, {
 				n(228184, {	-- Yamas the Provider <Pact Information & Supplies>
 					["coord"] = { 55.4, 41.8, AZJ_KAHET },
