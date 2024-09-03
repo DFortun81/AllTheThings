@@ -1304,7 +1304,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 			q(75193, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 1 answer 3
 			q(75192, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 1 answer 2
 			q(75191, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 1 answer 1
-			-- Stay awhile and listen
+			------ Stay awhile and listen ------
 			hqt(73960),	-- Stay awhile and listen (spellID 406027)
 			-- 10.1.7
 			-- Nozdormu & Eternus

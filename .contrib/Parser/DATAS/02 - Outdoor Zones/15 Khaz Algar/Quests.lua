@@ -58,7 +58,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["provider"] = { "n", 216149 },	-- Moira Thaurissan
 					["coord"] = { 36.1, 80.3, DORNOGAL },
 				}),
-				-- Stay awhile and listen
+				------ Stay awhile and listen ------
 				hqt(84009, {	-- Stay awhile and listen: Alleria Windrunner
 					["name"] = "Stay awhile and listen: Alleria Windrunner",
 					["provider"] = { "n", 216148 },	-- Alleria Windrunner
@@ -101,7 +101,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					},
 				}),
 				------ Stay awhile and listen ------
-				hqt(84345, {	-- <Stay awhile and Listen> High Exarch Turalyon
+				hqt(84345, {	-- Stay awhile and Listen: High Exarch Turalyon
 					["name"] = "Stay awhile and listen: High Exarch Turalyon",
 					["sourceQuests"] = {
 						82153,	-- Embassies and Envoys [A]
@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 						i(223447),	-- Lightning-Scarred Vest
 					},
 				}),
-				-- Stay awhile and listen
+				------ Stay awhile and listen ------
 				hqt(84813, {	-- Stay awhile and listen: Rooktender Lufsela
 					["name"] = "Stay awhile and listen: Rooktender Lufsela",
 					["sourceQuests"] = { 79129 },	-- Rook Rally

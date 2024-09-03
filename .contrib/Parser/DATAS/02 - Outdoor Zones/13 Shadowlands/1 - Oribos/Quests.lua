@@ -902,14 +902,15 @@ root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADD
 		q(65756),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Echoing Resolve'
 		q(65757),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Fastidious Resolve'
 		q(66047),	-- Solo Shuffle Completion? /First win
-		q(65511),	-- Stay awhile and listen with Vareesa Windrunner (spellID 366650)
-		q(65618),	-- Stay awhile and listen with Bolvar (9.2.0) (spellID 367008)
-		q(65612),	-- Stay awhile and listen with Baine (spellID 366952)
-		q(65609),	-- Stay awhile and listen with Lor'themar (spellID 366932)
-		q(65607),	-- Stay awhile and listen with King Greymane (spellID 366925)
-		q(65614),	-- Stay awhile and listen with Arbiter Pelagos (spellID 366958)
-		q(66316),	-- Stay awhile and listen with Bolvar (9.2.5)
-		q(66313),	-- Stay awhile and listen with Proundmoore
 		q(70704),	-- Tracking quest for Vessel of Profound Possibilities (spellID 367898)
+		------ Stay awhile and listen ------
+		hqt(65511),	-- Stay awhile and listen with Vareesa Windrunner (spellID 366650)
+		hqt(65618),	-- Stay awhile and listen with Bolvar (9.2.0) (spellID 367008)
+		hqt(65612),	-- Stay awhile and listen with Baine (spellID 366952)
+		hqt(65609),	-- Stay awhile and listen with Lor'themar (spellID 366932)
+		hqt(65607),	-- Stay awhile and listen with King Greymane (spellID 366925)
+		hqt(65614),	-- Stay awhile and listen with Arbiter Pelagos (spellID 366958)
+		hqt(66316),	-- Stay awhile and listen with Bolvar (9.2.5)
+		hqt(66313),	-- Stay awhile and listen with Proundmoore
 	}),
 })));

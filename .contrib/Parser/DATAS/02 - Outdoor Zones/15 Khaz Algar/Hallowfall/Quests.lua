@@ -113,6 +113,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 214376 },	-- General Steelstrike
 					["coord"] = { 53.9, 31.5, HALLOWFALL },
 				}),
+				------ Stay awhile and listen ------
+				hqt(81594, {	-- Stay awhile and listen: Faerin Lothar
+					["name"] = "Stay awhile and listen: Faerin Lothar",
+					["sourceQuests"] = {
+						78932,	-- Fickle Fiendish Fish
+						78929,	-- Tricks of the Dark
+					},
+					["provider"] = { "n", 214378 },	-- Faerin
+					["coord"] = { 53.9, 30.7, HALLOWFALL },
+				}),
+				--
 				q(78934, {	-- Blades of the Arathi
 					["sourceQuests"] = {
 						78932,	-- Fickle Fiendish Fish
@@ -187,6 +198,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(217708),	-- A Round of Drinks (QI!)
 					},
 				}),
+				------ Stay awhile and listen ------
+				hqt(79706, {	-- Stay awhile and listen: Faerin Lothar
+					["name"] = "Stay awhile and listen: Faerin Lothar",
+					["sourceQuests"] = { 78613 },	-- The Bastion of Hallowfall
+					["provider"] = { "n", 220406 },	-- Faerin Lothar
+					["coord"] = { 43.2, 56.2, HALLOWFALL },
+				}),
+				hqt(79971, {	-- Stay awhile and listen: Alleria Windrunner
+					["name"] = "Stay awhile and listen: Alleria Windrunner",
+					["sourceQuests"] = { 78613 },	-- The Bastion of Hallowfall
+					["provider"] = { "n", 220402 },	-- Alleria Windrunner
+					["coord"] = { 41.7, 56.8, HALLOWFALL },
+				}),
+				--
 				q(79297, {	-- Nightwatch
 					["sourceQuests"] = { 78613 },	-- The Bastion of Hallowfall
 					["provider"] = { "n", 218182 },	-- Alleria Windrunner
@@ -206,6 +231,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 213108 },	-- General Steelstrike
 					["coord"] = { 41.3, 53.0, HALLOWFALL },
 				}),
+				------ Stay awhile and listen ------
+				hqt(81636, {	-- Stay awhile and listen: General Steelstrike
+					["name"] = "Stay awhile and listen: General Steelstrike",
+					["sourceQuests"] = { 78626 },	-- Spar Day
+					["provider"] = { "n", 213108 },	-- General Steelstrike
+					["coord"] = { 41.2, 52.9, HALLOWFALL },
+				}),
+				--
 				q(78614, {	-- Mereldar's Light
 					["sourceQuests"] = { 78626 },	-- Spar Day
 					["provider"] = { "n", 213108 },	-- General Steelstrike
@@ -237,6 +270,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(220133),	-- Flameguard's Band
 					},
 				}),
+				------ Stay awhile and listen ------
+				hqt(81631, {	-- Stay awhile and listen: Faerin Lothar
+					["name"] = "Stay awhile and listen: Faerin Lothar",
+					["sourceQuests"] = { 78624 },	-- A Candle in the Dark
+					["provider"] = { "n", 213107 },	-- Faerin Lothar
+					["coord"] = { 33.5, 54.8, HALLOWFALL },
+				}),
+				--
 				q(79089, {	-- Consecrated Cleanup
 					["sourceQuests"] = { 78624 },	-- A Candle in the Dark
 					["provider"] = { "n", 225188 },	-- General Steelstrike
@@ -438,6 +479,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(226134),	-- Mourning Baron's Shoulderpads
 						i(226138),	-- Vow-Taker's Boots
 					},
+				}),
+				------ Stay awhile and listen ------
+				hqt(82538, {	-- Stay awhile and listen: General Steelstrike
+					["name"] = "Stay awhile and listen: General Steelstrike",
+					["sourceQuests"] = { 79650 },	-- Priory of the Sacred Flame: A Brother's Grief
+					["provider"] = { "n", 218289 },	-- General Steelstrike
+					["coord"] = { 42.3, 55, HALLOWFALL },
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40844.03, {	-- Striking Steel
@@ -1166,51 +1214,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 			}),
 
-			-- Stay awhile and listen
-			hqt(79706, {	-- Stay awhile and listen: Faerin Lothar
-				["name"] = "Stay awhile and listen: Faerin Lothar",
-				["sourceQuests"] = { 78613 },	-- The Bastion of Hallowfall
-				["provider"] = { "n", 220406 },	-- Faerin Lothar
-				["coord"] = { 43.2, 56.2, HALLOWFALL },
-			}),
-			hqt(79971, {	-- Stay awhile and listen: Alleria Windrunner
-				["name"] = "Stay awhile and listen: Alleria Windrunner",
-				["sourceQuests"] = { 78613 },	-- The Bastion of Hallowfall
-				["provider"] = { "n", 220402 },	-- Alleria Windrunner
-				["coord"] = { 41.7, 56.8, HALLOWFALL },
-			}),
-			hqt(81636, {	-- Stay awhile and listen: General Steelstrike
-				["name"] = "Stay awhile and listen: General Steelstrike",
-				["sourceQuests"] = { 78626 },	-- Spar Day
-				["provider"] = { "n", 213108 },	-- General Steelstrike
-				["coord"] = { 41.2, 52.9, HALLOWFALL },
-			}),
-			hqt(82538, {	-- Stay awhile and listen: General Steelstrike
-				["name"] = "Stay awhile and listen: General Steelstrike",
-				["sourceQuests"] = { 79650 },	-- Priory of the Sacred Flame: A Brother's Grief
-				["provider"] = { "n", 218289 },	-- General Steelstrike
-				["coord"] = { 42.3, 55, HALLOWFALL },
-			}),
-			hqt(81631, {	-- Stay awhile and listen: Faerin Lothar
-				["name"] = "Stay awhile and listen: Faerin Lothar",
-				["sourceQuests"] = { 78624 },	-- A Candle in the Dark
-				["provider"] = { "n", 213107 },	-- Faerin Lothar
-				["coord"] = { 33.5, 54.8, HALLOWFALL },
-			}),
+			------ Stay awhile and listen ------
 			hqt(81635, {	-- Stay awhile and listen: Nalina Ironsong
 				["name"] = "Stay awhile and listen: Nalina Ironsong",
-				-- ["sourceQuests"] = { ??? },	-- ???
+				-- ["sourceQuests"] = { ??? },	-- TODO: Find a sourcequest and move this quest next to it in quests
 				["provider"] = { "n", 217642 },	-- Nalina Ironsong
 				["coord"] = { 42.8, 55.8, HALLOWFALL },
-			}),
-			hqt(81594, {	-- Stay awhile and listen: Faerin Lothar
-				["name"] = "Stay awhile and listen: Faerin Lothar",
-				["sourceQuests"] = {
-					78932,	-- Fickle Fiendish Fish
-					78929,	-- Tricks of the Dark
-				},
-				["provider"] = { "n", 214378 },	-- Faerin
-				["coord"] = { 53.9, 30.7, HALLOWFALL },
 			}),
 		}),
 	}),
@@ -1222,7 +1231,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 				-- During questing
 				q(83614),	-- [DNT] Zone 3 Bread Crumb Completed Organically (spellID 456930), after turn in questID 78658 (The Hallowed Path)
 				q(79654),	-- [DNT] Hallowfall Arathi Renown Unlock (spellID 448657)
-				--q(82538),	-- Stay awhile and listen - General Steelstrike, before turn in questID 78626 (Spar Day)
 				-- questID 79303 (A Principled Principal) nodes
 				q(83287),	-- should accept work
 				q(83288),	-- system become unfair

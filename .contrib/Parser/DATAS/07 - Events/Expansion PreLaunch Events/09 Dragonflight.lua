@@ -348,7 +348,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }, {
 	expansion(EXPANSION.DF, {
 		n(HIDDEN_QUESTS, {
-			q(72285, {	-- Stay awhile and listen: Scalecommander Azurathel
+			hqt(72285, {	-- Stay awhile and listen: Scalecommander Azurathel
 				["qg"] = 189078,	-- Scalecommander Azurathel
 				["sourceQuests"] = {
 					65101,	-- An Iconic, Draconic, Look [A]
@@ -358,7 +358,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["coord"] = { 25.4, 55.2, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(72286, {	-- Stay awhile and listen: Genn Greymane
+			hqt(72286, {	-- Stay awhile and listen: Genn Greymane
 				["qg"] = 194756,	-- Genn Greymane
 				["sourceQuests"] = {
 					65101,	-- An Iconic, Draconic, Look [A]
@@ -368,7 +368,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["coord"] = { 27.1, 53.8, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(72287, {	-- Stay awhile and listen: High Exarch Turalyon
+			hqt(72287, {	-- Stay awhile and listen: High Exarch Turalyon
 				["qg"] = 189600,	-- High Exarch Turalyon
 				["sourceQuests"] = {
 					65101,	-- An Iconic, Draconic, Look [A]
@@ -378,7 +378,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["coord"] = { 27.1, 53.8, STORMWIND_CITY },
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(72288, {	-- Stay awhile and listen: Baine and Mayla
+			hqt(72288, {	-- Stay awhile and listen: Baine and Mayla
 				["name"] = "Stay awhile and listen: Baine and Mayla",
 				["sourceQuests"] = {
 					72256,	-- The Dark Talons [H]
@@ -388,7 +388,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["coord"] = { 55.9, 12.1, DUROTAR },
 				["races"] = HORDE_ONLY,
 			}),
-			q(72289, {	-- Stay awhile and listen: Lor'themar and Thalyssra
+			hqt(72289, {	-- Stay awhile and listen: Lor'themar and Thalyssra
 				["name"] = "Stay awhile and listen: Lor'themar and Thalyssra",
 				["sourceQuests"] = {
 					72256,	-- The Dark Talons [H]
@@ -398,7 +398,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 				["coord"] = { 55.7, 12.2, DUROTAR },
 				["races"] = HORDE_ONLY,
 			}),
-			q(72290, {	-- Stay awhile and listen: Cindrethresh and Emberthal
+			hqt(72290, {	-- Stay awhile and listen: Cindrethresh and Emberthal
 				["name"] = "Stay awhile and listen: Cindrethresh and Emberthal",
 				["sourceQuests"] = {72256},	-- The Dark Talons [H]
 				["provider"] = { "n", 184858 },	-- Cindrethresh

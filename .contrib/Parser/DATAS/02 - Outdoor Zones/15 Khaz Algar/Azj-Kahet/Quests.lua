@@ -252,6 +252,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 211351 },	-- Anduin Wrynn
 					["coord"] = { 67.1, 31.5, NERUBAR_LOWER },
 				}),
+				------ Stay awhile and listen ------
+				hqt(81946, {	-- Stay awhile and listen: Anduin Wrynn
+					["name"] = "Stay awhile and listen: Anduin Wrynn",
+					["sourceQuests"] = { 78228 },	-- Into a Skittering City
+					["provider"] = { "n", 211351 },	-- Anduin Wrynn
+					["coord"] = { 67.0, 31.8, NERUBAR_LOWER },
+				}),
+				--
 				q(78232, {	-- Rewriting the Rewritten
 					["sourceQuests"] = { 78228 },	-- Into a Skittering City
 					["provider"] = { "n", 211499 },	-- Executor Nizrek
@@ -279,6 +287,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(225563),	-- Threadmaestro's Collar
 					},
 				}),
+				------ Stay awhile and listen ------
+				hqt(82033, {	-- Stay awhile and listen: Alleria Windrunner
+					["name"] = "Stay awhile and listen: Alleria Windrunner",
+					["sourceQuests"] = { 78244 },	-- Kaheti Hospitality
+					["provider"] = { "n", 217385 },	-- Alleria Windrunner
+					["coord"] = { 60.6, 68.7, AZJ_KAHET },
+				}),
+				--
 				q(78248, {	-- What We Still Have
 					["sourceQuests"] = { 78244 },	-- Kahet Hospitality
 					["provider"] = { "n", 217385 },	-- Alleria Windrunner
@@ -936,6 +952,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(223439),	-- Mereldar Scholar's Leggings
 					},
 				}),
+				------ Stay awhile and listen ------
+				hqt(81513, {	-- Stay awhile and listen: Faerin Lothar
+					["name"] = "Stay awhile and listen: Faerin Lothar",
+					["sourceQuests"] = { 82284 },	-- Remembrance for the Fallen
+					["provider"] = { "n", 211409 },	-- Faerin Lothar
+					["coord"] = { 59.3, 19.3, AZJ_KAHET },
+				}),
 			}),
 			header(HEADERS.Achievement, 40832, {	-- Leave it to Weaver
 				q(84700, {	-- Pacts Below
@@ -1089,27 +1112,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 72.8, 55.0, AZJ_KAHET },
 				}),
 			}),
-
-			-- Stay awhile and listen
-			hqt(81946, {	-- Stay awhile and listen: Anduin Wrynn
-				["name"] = "Stay awhile and listen: Anduin Wrynn",
-				["sourceQuests"] = { 78228 },	-- Into a Skittering City
-				["provider"] = { "n", 211351 },	-- Anduin Wrynn
-				["coord"] = { 67.0, 31.8, NERUBAR_LOWER },
-			}),
-			hqt(82033, {	-- Stay awhile and listen: Alleria Windrunner
-				["name"] = "Stay awhile and listen: Alleria Windrunner",
-				["sourceQuests"] = { 78244 },	-- Kaheti Hospitality
-				["provider"] = { "n", 217385 },	-- Alleria Windrunner
-				["coord"] = { 60.6, 68.7, AZJ_KAHET },
-			}),
-			hqt(81513, {	-- Stay awhile and listen: Faerin Lothar
-			["name"] = "Stay awhile and listen: Faerin Lothar",
-				["sourceQuests"] = { 82284 },	-- Remembrance for the Fallen
-				["provider"] = { "n", 211409 },	-- Faerin Lothar
-				["coord"] = { 59.3, 19.3, AZJ_KAHET },
-			}),
-
 		}),
 	}),
 })));

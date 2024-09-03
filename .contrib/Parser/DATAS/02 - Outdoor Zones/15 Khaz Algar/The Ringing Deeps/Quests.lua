@@ -207,6 +207,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(219373),	-- Earthen Traveler's Breastplate
 					},
 				}),
+				------ Stay awhile and listen ------
+				hqt(84620, {	-- Stay awhile and listen: Magni Bronzebeard
+					["name"] = "Stay awhile and listen: Magni Bronzebeard",
+					["sourceQuests"] = { 78696 },	-- We Don't Go to Taelloch
+					["provider"] = { "n", 213633 },	-- Magni Bronzebeard
+					["coord"] = { 62.3, 58.0, THE_RINGING_DEEPS },
+				}),
+				--
 				q(78697, {	-- Ghost of a Company Town
 					["sourceQuests"] = { 78696 },	-- We Don't Go to Taelloch
 					["provider"] = { "n", 213634 },	-- Dagran Thaurissan II
@@ -267,6 +275,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 212741 },	-- Speaker Brinthe
 					["coord"] = { 47.2, 34.2, THE_RINGING_DEEPS },
 				}),
+				------ Stay awhile and listen ------
+				hqt(84699, {	-- Stay awhile and listen: Moira Thaurissan
+					["name"] = "Stay awhile and listen: Moira Thaurissan",
+					["sourceQuests"] = { 78738 },	-- Absent Speaker
+					["provider"] = { "n", 213763 },	-- Moira Thaurissan
+					["coord"] = { 47.0, 20.7, THE_RINGING_DEEPS },
+				}),
+				--
 				q(78742, {	-- Battle of the Earthenworks
 					["sourceQuests"] = { 78738 },	-- Absent Speaker
 					["provider"] = { "n", 213763 },	-- Moira Thaurissan
@@ -1227,20 +1243,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 70.7, 39.8, THE_RINGING_DEEPS },
 				}),
-			}),
-
-			-- Stay awhile and listen
-			hqt(84620, {	-- Stay awhile and listen: Magni Bronzebeard
-				["name"] = "Stay awhile and listen: Magni Bronzebeard",
-				["sourceQuests"] = { 78696 },	-- We Don't Go to Taelloch
-				["provider"] = { "n", 213633 },	-- Magni Bronzebeard
-				["coord"] = { 62.3, 58.0, THE_RINGING_DEEPS },
-			}),
-			hqt(84699, {	-- Stay awhile and listen: Moira Thaurissan
-				["name"] = "Stay awhile and listen: Moira Thaurissan",
-				["sourceQuests"] = { 78738 },	-- Absent Speaker
-				["provider"] = { "n", 213763 },	-- Moira Thaurissan
-				["coord"] = { 47.0, 20.7, THE_RINGING_DEEPS },
 			}),
 		}),
 	}),

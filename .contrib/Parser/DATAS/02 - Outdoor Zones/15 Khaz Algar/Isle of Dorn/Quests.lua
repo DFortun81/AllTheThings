@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				------ Stay awhile and listen ------
-				hqt(82459, {	-- <Stay awhile and Listen> Anduin Wrynn
+				hqt(82459, {	-- Stay awhile and Listen: Anduin Wrynn
 					["name"] = "Stay awhile and listen: Anduin Wrynn",
 					["sourceQuests"] = { 78536 },	-- Impossible Odds
 					["provider"] = { "n", 222558 },	-- Anduin Wrynn
@@ -156,7 +156,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				------ Stay awhile and listen ------
-				hqt(82460, {	-- <Stay awhile and Listen> Magni Bronzebeard
+				hqt(82460, {	-- Stay awhile and Listen: Magni Bronzebeard
 					["name"] = "Stay awhile and listen: Magni Bronzebeard",
 					["sourceQuests"] = { 78457 },	-- Stones of Dornogal (available if quest is picked up and after turnin but not before)
 					["provider"] = { "n", 222557 },	-- Magni Bronzebeard
@@ -330,8 +330,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(219762),	-- Rubble-Salvaged Waistguard
 					},
 				}),
-
-				-- Stay awhile and listen
+				------ Stay awhile and listen ------
 				hqt(84335, {	-- Stay awhile and listen: Alleria Windrunner
 					["name"] = "Stay awhile and listen: Alleria Windrunner",
 					["sourceQuests"] = { 78546 },	-- Recompense
