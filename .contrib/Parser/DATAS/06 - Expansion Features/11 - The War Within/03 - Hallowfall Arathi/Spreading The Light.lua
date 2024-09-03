@@ -767,13 +767,13 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			---
 			q(85552),	-- triggered on opening a Lamplighter Supply Satchel, first & second in week - x3 reports
 			q(79177),	-- Snuffling in Hallowfall?
-			q(83342),	-- When completing 76394 Shadows of Flavor x3 reports
 			--q(79179)	-- ??? "After looting Spider Touched Bag (211973)."
 			--q(79188),	-- ??? "After picking up Spider-Touched Bag (211973), during the keyflame event and turning in 79173 Supply the Effort" //That last quest is what I turned in, Supply the Effort but it popped up a bit after turning in, First Bag this week
 						-- ??? "after turning in 79173 Supply the Effort and receiving a lamplighter supply satchel (first that week)"
 			-- Vendor
 			q(76996),	-- after buy and use itemID 210826 (Harvestbot Repair Kit)
 			q(83341),	-- after turn in 78933 (The Sweet Eclipse), unlock ability to buy Sweet Eclipse from vendor
+			q(83342),	-- after turn in 76394 (Shadows of Flavor), unlock ability to buy Twilight-Spiced Grouper from vendor
 		}),
 	}),
 })));
