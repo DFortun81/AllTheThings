@@ -870,7 +870,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40636.13, {	-- Silken Ward
 				q(83324, {	-- A Silken Thread
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78256 },	-- The General's Consensus
 					["provider"] = { "n", 223754 },	-- Linny Leadlinger
 					["coord"] = { 55.8, 43.6, AZJ_KAHET },
 					["isBreadcrumb"] = true
@@ -937,7 +937,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40636.15, {	-- All Good Things...
 				q(82248, {	-- Advance to Faerin
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78256 },	-- The General's Consensus
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
 					["coord"] = { 55.6, 43.8, AZJ_KAHET },
 					["isBreadcrumb"] = true,

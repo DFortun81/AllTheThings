@@ -1406,7 +1406,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			o(455968, {	-- Dornogal Craftsman's Flat Knife
-				["coord"] = { 58.6, 30.7, THE_RINGING_DEEPS },	-- TODO: re-check mapID, I think it was Dornogal?
+				["coord"] = { 58.6, 30.7, ISLE_OF_DORN },
 				["questID"] = 83899,
 				["g"] = {
 					i(226325),	-- Dornogal Craftsman's Flat Knife
