@@ -52,15 +52,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(225693),	-- Shadowed Essence
 				},
 			}),
-			--[[
-			o(xx, {	-- Faded Supply Chest
-				["coord"] = { 61.8, 17.4, HALLOWFALL },
-				["questID"] = xx,
-				["g"] = {
-					-- didn't find key for it and missing vignette
-				},
-			}),
-			--]]
 			o(437302, {	-- Fisherman's Pouch
 				["coord"] = { 56.1, 14.6, HALLOWFALL },
 				["questID"] = 81518,
@@ -134,6 +125,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(419695, {	-- Spore-Covered Coffer
+				["description"] = "Inside the Shadowmire cave.",
 				["coord"] = { 76.8, 53.8, HALLOWFALL },
 				["questID"] = 79275,
 				["g"] = {

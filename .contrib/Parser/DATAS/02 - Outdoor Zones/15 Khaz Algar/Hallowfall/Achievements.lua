@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 69.3, 43.6, HALLOWFALL },
 				}),
 				crit(69002, {	-- Iggy
-					["coord"] = { 69.3, 43.6, HALLOWFALL },
+					["coord"] = { 69.3, 43.7, HALLOWFALL },
 				}),
 				crit(69003, {	-- Nightclaw
 					["description"] = "Available when Lesser Keyflame is active",
