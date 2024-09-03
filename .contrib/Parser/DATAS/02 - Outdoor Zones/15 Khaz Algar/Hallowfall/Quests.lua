@@ -436,6 +436,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(226139),	-- Arathi Officer's Gauntlets
 						i(226137),	-- Inquisitive Sister's Cinch
 						i(226134),	-- Mourning Baron's Shoulderpads
+						i(226138),	-- Vow-Taker's Boots
 					},
 				}),
 			}),
