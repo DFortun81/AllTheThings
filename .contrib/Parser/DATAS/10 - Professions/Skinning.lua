@@ -802,10 +802,3 @@ profession(SKINNING, {
 	}),
 	-- #endif
 });
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
-	n(PROFESSIONS, {
-		prof(SKINNING, {
-			q(81440),	-- Refine Hides+++ (Triggered when learned via specialization)
-		}),
-	}),
-})));

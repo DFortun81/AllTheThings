@@ -2690,6 +2690,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		prof(MINING, {
 			q(82317),	-- 45/45 Mastering the Mysterious
 		}),
+		prof(SKINNING, {
+			q(81440),	-- Refine Hides+++ (Triggered when learned via specialization)
+		}),
 		n(PROFESSIONS, {
 			-- Using Contracts
 			q(84484),	-- Contract: Assembly of the Deeps [Rank 1] (spellID 454934)
