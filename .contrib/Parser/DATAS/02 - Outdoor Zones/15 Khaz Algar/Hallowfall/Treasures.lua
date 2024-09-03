@@ -271,41 +271,41 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["g"] = {
 					i(225659),	-- Arathi Book Collection (TOY!)
 					q(83300, {	-- Question 1
-						["name"] = "Get Palawltar's Codex of Dimensional Structure for right answer on 1st question",
+						["name"] = "Answer 1: That the Cosmos consisted of monopole elemental phase spaces.",
 						["sourceQuests"] = {
 							83309, -- Palawltar's Codex of Dimensional Structure
 						},
 					}),
 					q(83301, {	-- Question 2
-						["name"] = "Get Care and Feeding of the Imperial Lynx for right answer on 2nd question",
+						["name"] = "Answer 2: Patience and respect.",
 						["sourceQuests"] = {
 							83300, -- previous step
 							83310, -- Care and Feeding of the Imperial Lynx
 						},
 					}),
 					q(83302, {	-- Question 3
-						["name"] = "Get Shadow Curfew Guidelines for right answer on 3rd question",
+						["name"] = "Answer 3: Seek shelter and light. Have plans, have backup plans. Find joy while sheltering.",
 						["sourceQuests"] = {
 							83301, -- previous step
 							83311, -- Shadow Curfew Guidelines
 						},
 					}),
 					q(83303, {	-- Question 4
-						["name"] = "Get Beledar - The Emperor's Vision for right answer on 4th question",
+						["name"] = "Answer 4: The third fleet.",
 						["sourceQuests"] = {
 							83302, -- previous step
 							83312, -- Beledar- The Emperor's Vision
 						},
 					}),
 					q(83304, {	-- Question 5
-						["name"] = "Get The Song of Renilash for right answer on 5th question",
+						["name"] = "Answer 5: The Remains of gods.",
 						["sourceQuests"] = {
 							83303, -- previous step
 							83313, -- The Song of Renilash
 						},
 					}),
 					q(83305, {	-- Question 6
-						["name"] = "Get The Big Book of Arathi Idioms for right answer on 6th question",
+						["name"] = "Answer 6: From the letters of Mereldar.",
 						["sourceQuests"] = {
 							83304, -- previous step
 							83314, -- The Big Book of Arathi Idioms
