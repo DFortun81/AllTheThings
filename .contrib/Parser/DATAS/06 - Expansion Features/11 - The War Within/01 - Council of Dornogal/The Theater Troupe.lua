@@ -42,6 +42,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["provider"] = { "n", 214296 },	-- Stage Manager Huberta
 						["coord"] = { 56.5, 52.8, ISLE_OF_DORN },
 						["isWeekly"] = true,
+						["groups"] = {
+							i(226263, {	-- Theater Troupe's Trove
+								i(228320),	-- Design: Binding of Binding (RECIPE!)
+								i(228708),	-- Formula: Gleeful Glamour - Earthen (RECIPE!)
+								i(223126),	-- Formula: Enchant Chest - Stormrider's Agility (RECIPE!)
+								i(223095),	-- Pattern: Rook Feather Wristwraps (RECIPE!)
+								i(223036),	-- Plans: Charged Runeaxe (RECIPE!)
+							}),
+						},
 					}),
 					q(79150, {	-- Thespians at the Proscenium
 						["provider"] = { "n", 214296 },	-- Stage Manager Huberta
@@ -52,12 +61,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(217011),	-- Amateur Actor's Chest
 					i(217013),	-- Expert Actor's Chest
 					i(217012),	-- Novice Actor's Chest
-					i(226263),	-- Theater Troupe's Trove
-					i(228320),	-- Design: Binding of Binding (RECIPE!)
-					i(228708),	-- Formula: Gleeful Glamour - Earthen (RECIPE!)
-					i(223126),	-- Formula: Enchant Chest - Stormrider's Agility (RECIPE!)
-					i(223095),	-- Pattern: Rook Feather Wristwraps (RECIPE!)
-					i(223036),	-- Plans: Charged Runeaxe (RECIPE!)
 				}),
 			},
 		})),
