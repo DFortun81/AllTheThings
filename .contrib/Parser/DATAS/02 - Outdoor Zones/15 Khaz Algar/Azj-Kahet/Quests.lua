@@ -78,12 +78,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78392, {	-- The Tangled Web
 					["sourceQuests"] = { 78354 },	-- A Guiding Thread
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 56.2, 48.2, AZJ_KAHET },
+					["coord"] = { 55.6, 43.9, AZJ_KAHET },
 				}),
 				q(78393, {	-- A Seeming Respite
 					["sourceQuests"] = { 78354 },	-- A Guiding Thread
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 56.2, 48.2, AZJ_KAHET },
+					["coord"] = { 55.6, 43.9, AZJ_KAHET },
 				}),
 				------ Chapter 2 ------
 				q(78233, {	-- The Weaver's Gift
@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78352,	-- The Tangled Web
 					},
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 56.2, 48.2, AZJ_KAHET },
+					["coord"] = { 55.6, 43.9, AZJ_KAHET },
 				}),
 				q(80399, {	-- Rations and Revelations
 					["sourceQuests"] = { 78233 },	-- The Weaver's Gift
@@ -242,7 +242,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78226, {	-- A Most Intriguing Invitation
 					["sourceQuests"] = { 78256 },	-- The General's Consensus
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 56.2, 48.2, AZJ_KAHET },
+					["coord"] = { 55.6, 43.9, AZJ_KAHET },
 					["g"] = {
 						i(212605),	-- The Vizier's Invitation (QI!)
 					},
@@ -298,7 +298,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79227, {	-- A Spider's-Eye View
 					["sourceQuests"] = { 79224 },	-- Gathering Intel
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 56.2, 48.2, AZJ_KAHET },
+					["coord"] = { 55.6, 43.9, AZJ_KAHET },
 				}),
 				q(79230, {	-- Creeping Through Corridors
 					["sourceQuests"] = { 79227 },	-- A Spider's-Eye View
@@ -1034,7 +1034,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79532, {	-- Tinker, Tailor, Soldier, Spider
 					["sourceQuests"] = { 83277 },	-- Personal Pilfering (could be wrong, spawn some time afterwards)
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 56.2, 48.2, AZJ_KAHET },
+					["coord"] = { 55.6, 43.9, AZJ_KAHET },
 				}),
 				q(79627, {	-- Wine and Die
 					["sourceQuests"] = { 79532 },	-- Tinker, Tailor, Soldier, Spider
