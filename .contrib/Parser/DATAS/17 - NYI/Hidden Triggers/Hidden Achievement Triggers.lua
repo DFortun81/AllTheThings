@@ -589,7 +589,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		-- #endif
 		--3.4.3.55417
 		-- #if ANYCLASSIC
-		-- #if AFTER 3.4.3
+		-- #if AFTER 3.0.1
 		ach(40821),	-- Successfully Stress Test CN Realms
 		ach(40841),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy)
 		-- #endif
@@ -3592,6 +3592,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(40895),	-- Don't Call Me Junior (DNT) (Character Specific Hidden Copy)
 			ach(40896),	-- Don't Call Me Junior (DNT) (Character specific hidden copy)
 			ach(40899),	-- Allied Races: Earthen (copy)
+
+			-- 11.0.2.56313
+			ach(40974),	-- [DNT] <Hidden> Mythic+ Rating > 0 (The War Within, any season)
 		})),
 	}),
 });
