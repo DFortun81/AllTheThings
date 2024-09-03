@@ -2,14 +2,14 @@
 --     T R A D I N G   P O S T     --
 -------------------------------------
 local TRADERS_TENDER = 2032;
-MONTHLY_REWARD = createHeader({
-	readable = "Monthly Reward",
-	icon = [[~_.asset("Interface_Rewards")]],
+FILLED_TRAVELERS_LOG = createHeader({
+	readable = "Filled Travelers Log",
+	icon = 4696085,
 	text = {
 		en = [[~QUEST_REWARDS]],
 	},
 	description = {
-		en = "This is rewarded for filling the Travel Points Progress Bar in the month.",
+		en = "This reward is given for filling the Travel Points Progress Bar during the month.",
 	},
 });
 
@@ -123,7 +123,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	}),
 	n(YEAR2023, {
 		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_0_5 } }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(190231),	-- Ash'adar, Harbinger of Dawn (MOUNT!)
 			}),
 			filter(BATTLE_PETS, {
@@ -193,7 +193,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 		n(MARCH, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_0_5 } }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(190504, {	-- Ensemble: Darkmoon Harlequin's Bells
 					i(190492),	-- Darkmoon Harlequin's Belt
 					i(190491),	-- Darkmoon Harlequin's Gloves
@@ -280,7 +280,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 		n(APRIL, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_1_0 } }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(190164, {	-- Arsenal: Blades of Elune
 					i(190093),	-- Elune's Fury
 					i(190094),	-- Elune's Wrath
@@ -353,7 +353,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 		n(MAY, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_0 } }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(190613),	-- Savage Green Battle Turtle (MOUNT!)
 			}),
 			filter(BATTLE_PETS, {
@@ -439,7 +439,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 		n(JUNE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_1_5 } }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(190169),	-- Quawks (MOUNT!)
 			}),
 			filter(BATTLE_PETS, {
@@ -516,7 +516,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 		n(JULY, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_1_5 } }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(206156),	-- Grotto Netherwing Drake (MOUNT!)
 			}),
 			filter(BATTLE_PETS, {
@@ -599,7 +599,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 		n(AUGUST, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_1_7 } }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(190797, {	-- Ensemble: Bones of the Bloodhunter
 					i(190793),	-- Bloodhunter Footwraps
 					i(190790),	-- Bloodhunter Handguards
@@ -714,7 +714,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7, REMOVED_10_1_7 } }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(190168),	-- Crusty Crawler (MOUNT!)
 			}),
 			filter(BATTLE_PETS, {
@@ -839,7 +839,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 		n(OCTOBER, bubbleDownSelf({ ["timeline"] = { REMOVED_10_1_7, REMOVED_10_2_0 } }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(208598),	-- Eve's Ghastly Rider (MOUNT!)
 			}),
 			filter(BATTLE_PETS, {
@@ -977,7 +977,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 		n(NOVEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0} }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(208943, {	-- Arsenal: Cosmic Weapons Cache
 					i(208939),	-- Gorridar, Darkblade of the Sunderer
 					i(208941),	-- M’thorus, Dagger of the Grand Design
@@ -1124,7 +1124,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 		n(DECEMBER, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_0} }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(190925),	-- Buttercup (PET!)
 			}),
 			filter(BATTLE_PETS, {
@@ -1307,7 +1307,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 	}),
 	n(YEAR2024, {
 		n(JANUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_5} }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(211002),	-- Golden Mobile Timepiece
 			}),
 			filter(BATTLE_PETS, {
@@ -1423,7 +1423,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		})),
 		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5, REMOVED_10_2_5} }, {
 			-- removed 10.2.5.53495
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(212220, {	-- Ensemble: Love Witch's Attire
 					i(212197),	-- Love Witch's Blouse
 					i(212198),	-- Love Witch's Boots
@@ -1556,7 +1556,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 		n(MARCH, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 } }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(211432),	-- Teele (PET!)
 			}),
 			filter(BATTLE_PETS, {
@@ -1674,7 +1674,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 		n(APRIL, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6, REMOVED_10_2_6_SEASON_FOUR } }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(210409),	-- Aura (PET!)
 			}),
 			filter(BATTLE_PETS, {
@@ -1831,7 +1831,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 		n(MAY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_10_2_7 } }, { -- 10.2.7.54904
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(212613),	-- Wings of the Amber Monarch
 			}),
 			filter(BATTLE_PETS, {
@@ -1949,7 +1949,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 		n(JUNE, bubbleDownSelf({ ["timeline"] = { ADDED_MOP_REMIX, "removed 10.2.7.55261" } }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(220692),	-- X-treme Water Blaster Display (TOY!)
 			}),
 			filter(BATTLE_PETS, {
@@ -2061,7 +2061,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 		n(JULY, bubbleDownSelf({ ["timeline"] = { "added 10.2.7.55261", "removed 11.0.0.55846" } }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(223339),	-- Trishi (PET!)
 			}),
 			filter(BATTLE_PETS, {
@@ -2165,7 +2165,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 		n(AUGUST, bubbleDownSelf({ ["timeline"] = { "added 11.0.0.55846", "removed 11.0.2.56421" } }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(223409),	-- The Coward's Violet Target
 			}),
 			filter(BATTLE_PETS, {
@@ -2304,7 +2304,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			}),
 		})),
 		n(SEPTEMBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.2.56421", "removed 11.0.2.99999" } }, {
-			n(MONTHLY_REWARD, {
+			n(FILLED_TRAVELERS_LOG, {
 				i(226040),	-- Plunderlord's Golden Crocolisk (MOUNT!)
 			}),
 			filter(BATTLE_PETS, {
