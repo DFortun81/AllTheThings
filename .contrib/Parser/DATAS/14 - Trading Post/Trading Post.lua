@@ -120,6 +120,14 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			["isYearly"] = true,
 			["maps"] = { ORGRIMMAR, STORMWIND_CITY },
 		}),
+		q(81722, {	-- Report to the Trading Post -- ???
+			["timeline"] = { ADDED_11_0_2 },
+			["maps"] = { DORNOGAL },
+		}),
+		q(81723, {	-- Report to the Trading Post -- ???
+			["timeline"] = { ADDED_11_0_2 },
+			["maps"] = { DORNOGAL },
+		}),
 	}),
 	n(YEAR2023, {
 		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_0_5 } }, {
