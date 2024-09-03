@@ -168,14 +168,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 216148 },	-- Alleria Windrunner
 				["sourceQuests"] = {
 					79333,	-- The Fleet Arrives
+					-- But you have to have Embassies and Envoys Accepted for the ability to speak to her to pop.. so that shouldbe the sourcequest?
+					-- 82153,	-- Embassies and Envoys
 				},
-				-- assuming she's in diff locations for horde/alliance?
-				["aqd"] = {
-					["coord"] = { 34.5, 93.5, DORNOGAL },
-				},
-				["hqd"] = {
-					["coord"] = { 35.9, 80.8, DORNOGAL },
-				},
+				["coord"] = { 35.9, 80.8, DORNOGAL },
 			}),
 			hqt(82461, {	-- Stay awhile and listen: Dagran Thaurissan II
 				["name"] = "Stay awhile and listen: Dagran Thaurissan II",

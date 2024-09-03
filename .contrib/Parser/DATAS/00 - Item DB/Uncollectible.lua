@@ -1862,6 +1862,7 @@ i(217169);	-- Cloak of Beards
 i(220256);	-- Clump of Rotting Detritus
 i(228454);	-- Collector's Commemorative Proscenium Playbill
 i(220267);	-- Combustible Gland
+i(225848);	-- Cracked Etheric Power Core
 i(228482);	-- Cracked Iridescent Pearl
 i(228496);	-- Cracked Lantern
 i(225827);	-- Cracked Pickaxe
@@ -1874,6 +1875,7 @@ i(225789);	-- Curved Threadripper
 i(225844);	-- Damaged Radial Cog
 i(220255);	-- Darkened Residue
 i(225813);	-- Darkened Ritual Stone
+i(225799);	-- Dazzling Spanner
 i(224464);	-- Demonic Healthstone
 i(220280);	-- Dense Five-Pound Stone
 i(225795);	-- Dented Pocketwatch

@@ -897,11 +897,9 @@ root(ROOTS.Unsorted, {
 				i(225570),	-- Algari Fowlfeather
 				i(225640),	-- Abyssal Lure
 				i(225788),	-- Congratulatory Ascension Silk
-				i(225799),	-- Dazzling Spanner
 				i(225805),	-- Ornate Box of Seasonings
 				i(225806),	-- Crystal Inkwell
 				i(225824),	-- Sand Sculpting Comb
-				i(225848),	-- Cracked Etheric Power Core
 				i(225896),	-- Void-Touched Valorstone
 				i(225930),	-- Glimmering Crystal
 				i(225948),	-- Harbinger's Equipment Chest
