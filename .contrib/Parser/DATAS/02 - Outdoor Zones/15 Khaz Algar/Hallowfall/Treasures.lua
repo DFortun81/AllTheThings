@@ -8,6 +8,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["description"] = "Combine 'Offering of Pure Water' and 'Jar of Mucus' to get this item.\nUsed to summon 'Deathtide' rare",
 			}),
 			o(444798, {	-- Arathi Treasure Hoard
+				["description"] = "Spawns everywhere in Hallowfall",
 				["maps"] = { HALLOWFALL },
 				["g"] = {
 					i(224463),	-- Lily's Locket (QS!)
