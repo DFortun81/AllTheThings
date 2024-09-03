@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 	m(HALLOWFALL, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
 			n(207802, {	-- Beledar's Spawn
-				["description"] = "Can only spawn when Beledar is in its void phase.",
+				["description"] = "Spawns immediately somewhere in the zone the moment Beledar has shifted into its void phase.",
 				["coords"] = {
 					{ 48.9, 32.0, HALLOWFALL },
 					{ 58.0, 49.2, HALLOWFALL },

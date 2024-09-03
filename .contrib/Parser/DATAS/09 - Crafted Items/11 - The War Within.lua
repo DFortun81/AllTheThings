@@ -2629,7 +2629,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 446984);	-- Hideshaper's Workbag
 			--FirstCraft(XXXXX, 446983);	-- Ignition Satchel
 			--FirstCraft(XXXXX, 446990);	-- Jeweler's Purse
-			--FirstCraft(XXXXX, 446985);	-- Magically "Infinite" Messenger
+			FirstCraft(80849, 446985);	-- Magically "Infinite" Messenger
 			FirstCraft(80822, 446958);	-- Pioneer's Cloth Cloak
 			FirstCraft(80821, 446957);	-- Pioneer's Cloth Cord
 			FirstCraft(80820, 446956);	-- Pioneer's Cloth Cuffs

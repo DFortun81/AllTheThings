@@ -162,7 +162,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(220285, {	-- Lurker of the Deeps <Displaced Sea Horror>
 				["description"] = "Interact with 5 levers located across the zone within 10 seconds to summon this rare.",
-				["coord"] = { 60.8, 76.6, THE_RINGING_DEEPS },
+				["coords"] = {
+					{ 60.8, 76.6, THE_RINGING_DEEPS },	-- Lurker of the Deeps
+					{ 49.5, 8.8, THE_RINGING_DEEPS },	-- Lever 1
+					{ 53.9, 25.3, THE_RINGING_DEEPS },	-- Lever 2
+					{ 57.6, 23.6, THE_RINGING_DEEPS },	-- Lever 3
+					{ 62.8, 44.7, THE_RINGING_DEEPS },	-- Lever 4
+					{ 59.1, 92.3, THE_RINGING_DEEPS },	-- Lever 5
+				},
 				["questID"] = 81633,
 				["g"] = {
 					i(221248),	-- Deep Terror Carver

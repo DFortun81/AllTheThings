@@ -90,7 +90,6 @@ root(ROOTS.Unsorted, {
 			i(229116),	-- Flamestonge's Greaves
 			i(229117),	-- Flamestonge's Shoulderguards
 			i(229119),	-- Flamestonge's Bracers
-			i(229120),	-- Warstone's Breastplate
 			i(229121),	-- Warstone's Sabatons
 			i(229123),	-- Warstone's Helm
 			i(229124),	-- Warstone's Legguards
