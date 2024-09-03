@@ -186,7 +186,6 @@ root(ROOTS.Unsorted, {
 				i(226506),	-- Hand of Reshkigaal (MOUNT!) [Trading Post?]
 				i(226042),	-- Plunderlord's Midnight Crocolisk (MOUNT!) [Trading Post?]
 				i(226044),	-- Plunderlord's Weathered Crocolisk (MOUNT!) [Trading Post?]
-				i(223572),	-- Slatestone Ramolith (MOUNT!)
 				---
 				i(220786),	-- Delver's Dirigible (MOUNT!) (Double Up!?)
 				i(207104),	-- Morsel Sniffer Reins (MOUNT!) (couldnt find)
@@ -1153,8 +1152,6 @@ root(ROOTS.Unsorted, {
 				i(223443),	-- Algari Warden's Hood
 				i(223454),	-- Algari Warden's Greaves
 				i(223458),	-- [PH] 11.0 - Belt
-				i(223461),	-- Algari Warden's Helm
-				i(223472),	-- Drape of the Lamplighter
 				i(223585),	-- Algari Bladefist
 				i(223588),	-- Algari Fighting Knife
 			}),

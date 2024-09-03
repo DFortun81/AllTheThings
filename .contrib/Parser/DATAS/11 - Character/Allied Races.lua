@@ -146,6 +146,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 					79530, -- Merrix and Steelvein
 				},
 			}),
+			i(223572),	-- Slatestone Ramolith (MOUNT!)
 		}),
 		q(79200, {	-- Who am I?
 			--["sourceQuests"] = { xx },	-- probably some hqt or something like from adventure mode (if they didn't change requirement?)

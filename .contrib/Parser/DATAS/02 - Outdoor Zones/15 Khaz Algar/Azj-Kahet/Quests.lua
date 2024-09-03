@@ -309,10 +309,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 224729 },	-- Anub'okki
 					["coord"] = { 55.8, 42.1, AZJ_KAHET },
-					["isBreadcrumb"] = true,	-- TODO: need to confirm
+					["isBreadcrumb"] = true,
 				}),
 				q(79119, {	-- It's Rough to Be a Bug!
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 83325 },
 					["provider"] = { "n", 214359 },	-- Kish'nal
 					["coord"] = { 74.9, 83.5, AZJ_KAHET },
 				}),

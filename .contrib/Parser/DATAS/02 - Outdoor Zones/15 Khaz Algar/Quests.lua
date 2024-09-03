@@ -453,7 +453,63 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				}),
 			}),
 			header(HEADERS.AchCriteria, 20597.05, {	-- A Light in the Dark
-
+				q(78941, {	-- A Tide Needing Turned
+					["sourceQuests"] = { 79030 },	-- The Voice of the Speakers
+					["provider"] = { "n", 223944 },	-- Alleria Windrunner
+					["coord"] = { 31.7, 59.6, DORNOGAL },
+				}),
+				q(78942, {	-- The Might of Khaz Algar
+					["sourceQuests"] = { 78941 },	-- A Tide Needing Turned
+					["provider"] = { "n", 214271 },	-- General Steelstrike
+					["coord"] = { 71.6, 59.1, HALLOWFALL },
+				}),
+				q(78943, {	-- Steel and Flames
+					["sourceQuests"] = { 78941 },	-- A Tide Needing Turned
+					["provider"] = { "n", 214271 },	-- General Steelstrike
+					["coord"] = { 71.6, 59.1, HALLOWFALL },
+					["g"] = {
+						i(223461),	-- Algari Warden's Helm
+						i(217309),	-- Arathi Warhorn (QI!)
+					},
+				}),
+				q(78950, {	-- Cutting Off the Legs
+					["sourceQuests"] = { 78943 },	-- Steel and Flames
+					["provider"] = { "n", 214276 },	-- Lady Jaina Proudmoore
+					["coord"] = { 68.5, 64.1, HALLOWFALL },
+				}),
+				q(78948, {	-- A Light in the Dark
+					["sourceQuests"] = {
+						78942,	-- The Might of Khaz Algar
+						78950,	-- Cutting Off the Legs
+					},
+					["provider"] = { "n", 214273 },	-- Anduin Wrynn
+					["coord"] = { 64.5, 61.8, HALLOWFALL },
+					["maps"] = { 2330 },	-- Piory of the Sacred Flame (Scenario)
+					["g"] = {
+						i(223472),	-- Drape of the Lamplighter
+					},
+				}),
+				q(83503, {	-- Return to Dornogal
+					["sourceQuests"] = { 78948 },	-- A Light in the Dark
+					["provider"] = { "n", 220688 },	-- Alleria Windrunner
+					["coord"] = { 35.9, 35.4, HALLOWFALL },
+					["g"] = {
+						-- crit 'A Light in the Dark'
+					},
+				}),
+				------ Stay awhile and listen ------
+				hqt(84139, {	-- Stay awhile and listen: Anduin Wrynn
+					["name"] = "Stay awhile and listen: Anduin Wrynn",
+					["sourceQuests"] = { 83503 },	-- Return to Dornogal
+					["provider"] = { "n", 225897 },	-- Anduin Wrynn
+					["coord"] = { 25.3, 66.0, DORNOGAL },
+				}),
+				hqt(84754, {	-- Stay awhile and listen: Alleria Windrunner
+					["name"] = "Stay awhile and listen: Alleria Windrunner",
+					["sourceQuests"] = { 83503 },	-- Return to Dornogal
+					["provider"] = { "n", 227758 },	-- Alleria Windrunner
+					["coord"] = { 42.3, 26.9, DORNOGAL },
+				}),
 			}),
 		}),
 	}),

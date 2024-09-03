@@ -730,7 +730,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78743, {	-- Before I Depart
 					["sourceQuests"] = { 81661 },	-- To Mourning Rise
 					["provider"] = { "n", 213184 },	-- Korgran
-					["coord"] = { 27.8, 42.8, ISLE_OF_DORN },
+					["coord"] = { 57.4, 42.8, ISLE_OF_DORN },
 				}),
 				q(78744, {	-- Honor Their Memories
 					["sourceQuests"] = { 78743 },	-- Before I Depart
