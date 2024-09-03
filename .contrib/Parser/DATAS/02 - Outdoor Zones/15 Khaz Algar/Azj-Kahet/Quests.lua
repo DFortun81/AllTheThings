@@ -1176,7 +1176,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			hqt(81513, {	-- Stay awhile and listen: Faerin Lothar
 			["name"] = "Stay awhile and listen: Faerin Lothar",
-				---["sourceQuests"] = { ?????? },
+				["sourceQuests"] = { 82284 },	-- Remembrance for the Fallen
 				["provider"] = { "n", 211409 },	-- Faerin Lothar
 				["coord"] = { 59.3, 19.3, AZJ_KAHET },
 			}),

@@ -834,6 +834,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 					["provider"] = { "n", 216164 },	-- Gnawbles
 					["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
+					["sourceQuestNumRequired"] = 1,
 				}),
 				q(79683, {	-- Home is Where the Candle Is
 					["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// but could be renown?
