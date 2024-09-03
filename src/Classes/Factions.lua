@@ -153,6 +153,7 @@ app.CreateFaction = app.CreateClass("Faction", KEY, {
 	end,
 	trackable = app.ReturnTrue,
 	isHeader = app.ReturnTrue,
+	isMinilistHeader = app.ReturnTrue,
 	collectible = function(t)
 		if app.Settings.Collectibles[SETTING] then
 			-- If your reputation is higher than the maximum for a different faction, return partial completion.

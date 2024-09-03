@@ -281,6 +281,7 @@ app.CreateUnit = app.CreateClass("Unit", "unit", {
 		return true;
 	end,
 	isHeader = app.ReturnTrue,
+	isMinilistHeader = app.ReturnTrue,
 });
 
 -- External API

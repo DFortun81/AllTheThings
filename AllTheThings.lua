@@ -9528,7 +9528,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 								group = CreateHeaderData(group, nextParent);
 								nested = true;
 							end
-						elseif nextParent.isHeader then
+						elseif nextParent.isMinilistHeader then
 							group = CreateHeaderData(group, nextParent);
 							nested = true;
 						else

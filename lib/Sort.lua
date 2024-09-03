@@ -72,8 +72,8 @@ local function defaultComparison(a,b)
 		return false;
 	end
 	-- Headers/Filters/AchievementCategories (or other Types which are used as Headers)
-	acomp = a.headerID or a.filterID or a.achievementCategoryID or a.isHeader
-	bcomp = b.headerID or b.filterID or b.achievementCategoryID or b.isHeader
+	acomp = a.headerID or a.filterID or a.achievementCategoryID or a.isHeader or a.isMinilistHeader
+	bcomp = b.headerID or b.filterID or b.achievementCategoryID or b.isHeader or b.isMinilistHeader
 	if acomp then
 		if not bcomp then return true; end
 	elseif bcomp then
