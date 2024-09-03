@@ -393,4 +393,19 @@ q(79211),	-- Ensemble: Twilight Witch's Attire
 q(75449),	-- Ensemble: Waveborne Diplomat's Regalia
 q(77569),	-- High Scholar's Arcana
 q(78218),	-- Sky-Captain's Masquerade Attire
+
+------ Zul'Gurub (10.0.7) ------
+q(74720),	-- Ensemble: Zandalar Haruspec
+q(74721),	-- Ensemble: Zandalar Predator
+q(74722),	-- Ensemble: Zandalar Illusionist
+q(74723),	-- Ensemble: Zandalar Freethinker
+q(74724),	-- Ensemble: Zandalar Confessor
+q(74725),	-- Ensemble: Zandalar Madcap
+q(74726),	-- Ensemble: Zandalar Augur
+q(74727),	-- Ensemble: Zandalar Demoniac
+q(74728),	-- Ensemble: Zandalar Vindicator
+q(74730),	-- Ensemble: Bloodtinged Cloth
+q(74732),	-- Ensemble: Blooddrenched Leather
+q(74733),	-- Ensemble: Bloodstained Mail
+q(74734),	-- Ensemble: Bloodsoaked Plate
 --]]
