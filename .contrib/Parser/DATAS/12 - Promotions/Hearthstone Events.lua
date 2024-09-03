@@ -213,8 +213,8 @@ root(ROOTS.Promotions, {
 	}),
 });
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
-	n(HEARTHSTONE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
+	n(HEARTHSTONE, {
 		q(79451),	-- After first daily kill of Dr. Boom (maybe bag loot trigger?)
 		q(79452),	-- After first daily kill of Dr. Boom (maybe something else trigger?)
 		q(79441),	-- Looted Sarge (itemID 212606)
@@ -244,5 +244,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, {
 		q(79430),	-- Stolen Hearthstone Card will contain 'Forbidden Words' card
 		q(79431),	-- Stolen Hearthstone Card will contain 'Scarlet Crusader' card
 		q(79459),	-- Stolen Hearthstone Card will contain 'Cairne Bloodhoof' card
-	})),
-}));
+	}),
+})));

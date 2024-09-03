@@ -409,29 +409,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(PROFESSIONS, {
-		q(70846, {	-- Dragonscale Expedition: Help Needed!
-			["provider"] = { "n", 196448 },	-- Aspiring Goblin Enginner
-			["coord"] = { 40.8, 48.3, VALDRAKKEN },
-			-- existed in Beta, marked obsolete by Blizzard, pops on unlocking alt spark skip
-			["timeline"] = { ADDED_10_0_0 },
-			["isBreadcrumb"] = true,
+		n(PROFESSIONS, {	-- double header on purpose - Darkal
+			q(70846, {	-- Dragonscale Expedition: Help Needed!
+				--["provider"] = { "n", 196448 },	-- Aspiring Goblin Enginner
+				--["coord"] = { 40.8, 48.3, VALDRAKKEN },
+				-- existed in Beta, marked obsolete by Blizzard, pops on unlocking alt spark skip
+				--["isBreadcrumb"] = true,
+			}),
+			q(72340),	-- Triggered on unlocking alt spark skip
+			q(76124, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Deepflayer Dust' (questID 75363) (spellID 411875)
+			q(76125, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Fascinating Fungi' (questID 75371) (spellID 411876)
+			q(76126, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Blacksmith, Black Dragon' (questID 75569) (spellID 411878)
+			q(76127, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Ancient Techniques' (questID 75148) (spellID 411879)
+			q(76128, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Relic Rustler' (questID 75865) (spellID 411880)
+			q(76129, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Incandescence' (questID 75150) (spellID 411881)
+			q(76130, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Ballistae Bits' (questID 75575) (spellID 411882)
+			q(76131, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Titan Trash or Titan Treasure?' (questID 75608) (spellID 411883)
+			q(76132, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Proclamation Reclamation' (questID 75573) (spellID 411884)
+			q(76133, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Obsidian Essays' (questID 75149) (spellID 411885)
+			q(76134, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Cephalo-Crystalization' (questID 75362) (spellID 411886)
+			q(76135, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Chips off the Old Crystal Block' (questID 75602) (spellID 411887)
+			q(76136, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Mycelium Mastery' (quest ID 75354) (spellID 411888)
+			q(76137, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Stones and Scales' (questID 75368) (spellID 411889)
+			q(76138, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Silk Scavenging' (questID 75407) (spellID 411890)
+			q(76139, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Silk's Silk' (questID 75600) (spellID 411891)
 		}),
-		q(72340),	-- Triggered on unlocking alt spark skip
-		q(76124, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Deepflayer Dust' (questID 75363) (spellID 411875)
-		q(76125, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Fascinating Fungi' (questID 75371) (spellID 411876)
-		q(76126, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Blacksmith, Black Dragon' (questID 75569) (spellID 411878)
-		q(76127, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Ancient Techniques' (questID 75148) (spellID 411879)
-		q(76128, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Relic Rustler' (questID 75865) (spellID 411880)
-		q(76129, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Incandescence' (questID 75150) (spellID 411881)
-		q(76130, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Ballistae Bits' (questID 75575) (spellID 411882)
-		q(76131, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Titan Trash or Titan Treasure?' (questID 75608) (spellID 411883)
-		q(76132, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Proclamation Reclamation' (questID 75573) (spellID 411884)
-		q(76133, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Obsidian Essays' (questID 75149) (spellID 411885)
-		q(76134, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Cephalo-Crystalization' (questID 75362) (spellID 411886)
-		q(76135, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Chips off the Old Crystal Block' (questID 75602) (spellID 411887)
-		q(76136, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Mycelium Mastery' (quest ID 75354) (spellID 411888)
-		q(76137, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Stones and Scales' (questID 75368) (spellID 411889)
-		q(76138, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Silk Scavenging' (questID 75407) (spellID 411890)
-		q(76139, {["timeline"] = {ADDED_10_1_0}}),	-- After turn in 'Silk's Silk' (questID 75600) (spellID 411891)
 	}),
 })));

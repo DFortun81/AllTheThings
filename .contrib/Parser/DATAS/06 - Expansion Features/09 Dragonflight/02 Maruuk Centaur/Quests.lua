@@ -494,8 +494,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(MARUUK_CENTAUR, {
-		q(72778),	-- triggered with 'Call of the Plains' (questID 71229) (spellID 397059)
-		q(72737),	-- triggered with 'Call of the Hunt' (questID 71231) (spellID 396944)
-		q(73919),	-- triggered during 'License to Hunt' (questID 70501)
+		n(QUESTS, {
+			q(72778),	-- triggered with 'Call of the Plains' (questID 71229) (spellID 397059)
+			q(72737),	-- triggered with 'Call of the Hunt' (questID 71231) (spellID 396944)
+			q(73919),	-- triggered during 'License to Hunt' (questID 70501)
+		}),
 	}),
 })));

@@ -1111,29 +1111,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	n(VALDRAKKEN_ACCORD, {
-		q(72403),	-- triggered when reaching renown 12 with Valdrakken Accord
-		q(72404),	-- triggered when reaching renown 19 with Valdrakken Accord
-		q(72776),	-- triggered with 'Ally of Dragons' (questID 68794) (spellID 396628)
-		q(70974),	-- triggers right after 'Hard Lock Life' (questID 67079)
-		q(72757),	-- triggered with 'The Silver Purpose' (questID 67084) (spellID 397082)
-		q(72777),	-- triggered with 'Emerald Summons' (questID 66620) (spellID 396638)
-		q(72759),	-- triggered with 'And Yet So Far' (questID 66191) (spellID 397080)
-		q(72758),	-- triggered with 'Like Mother, Like Daughter' (questID 66402) (spellID 397081)
-		q(72439, {	-- triggered when you accept 'Silver Mettle' (questID 72440) (spellID 412509)
-			["timeline"] = { ADDED_10_1_0 },
-			["repeatable"] = true,
+		n(QUESTS, {
+			q(72403),	-- triggered when reaching renown 12 with Valdrakken Accord
+			q(72404),	-- triggered when reaching renown 19 with Valdrakken Accord
+			q(72776),	-- triggered with 'Ally of Dragons' (questID 68794) (spellID 396628)
+			q(70974),	-- triggers right after 'Hard Lock Life' (questID 67079)
+			q(72757),	-- triggered with 'The Silver Purpose' (questID 67084) (spellID 397082)
+			q(72777),	-- triggered with 'Emerald Summons' (questID 66620) (spellID 396638)
+			q(72759),	-- triggered with 'And Yet So Far' (questID 66191) (spellID 397080)
+			q(72758),	-- triggered with 'Like Mother, Like Daughter' (questID 66402) (spellID 397081)
+			q(72439, {	-- triggered when you accept 'Silver Mettle' (questID 72440) (spellID 412509)
+				["timeline"] = { ADDED_10_1_0 },
+				["repeatable"] = true,
+			}),
+
+			-- Ensembles
+			q(70755),	-- Ensemble: Crimson Valdrakken Clothing
+			q(70756),	-- Ensemble: Black Valdrakken Clothing
+			q(70757),	-- Ensemble: Azure Valdrakken Clothing
+			q(70758),	-- Ensemble: Bronze Valdrakken Clothing
+			q(70759),	-- Ensemble: Green Valdrakken Clothing
+
+			q(76177, {["timeline"] = {ADDED_10_1_7}}),	-- RP after finishing `Dislocated Disc Located`(questID 75638)
+			q(78141, {["timeline"] = {ADDED_10_1_7}}),	-- RP after finishing `Dislocated Disc Located`(questID 75638) (for whatever reason this one pop now?)
+			q(77819, {["timeline"] = {ADDED_10_2_0}}),	-- After questID 77344 Receiving Achievement?
+			q(77820, {["timeline"] = {ADDED_10_2_0}}),	-- After questID 77344 Receiving Title 516?
 		}),
-
-		-- Ensembles
-		q(70755),	-- Ensemble: Crimson Valdrakken Clothing
-		q(70756),	-- Ensemble: Black Valdrakken Clothing
-		q(70757),	-- Ensemble: Azure Valdrakken Clothing
-		q(70758),	-- Ensemble: Bronze Valdrakken Clothing
-		q(70759),	-- Ensemble: Green Valdrakken Clothing
-
-		q(76177, {["timeline"] = {ADDED_10_1_7}}),	-- RP after finishing `Dislocated Disc Located`(questID 75638)
-		q(78141, {["timeline"] = {ADDED_10_1_7}}),	-- RP after finishing `Dislocated Disc Located`(questID 75638) (for whatever reason this one pop now?)
-		q(77819, {["timeline"] = {ADDED_10_2_0}}),	-- After questID 77344 Receiving Achievement?
-		q(77820, {["timeline"] = {ADDED_10_2_0}}),	-- After questID 77344 Receiving Title 516?
 	}),
 })));

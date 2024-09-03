@@ -656,8 +656,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 			}),
 		})),
-		i(208200, {["timeline"] = {ADDED_10_1_7}}),	-- Dragon Isles Drakes: Gilded Armor (DM!)
-		i(208550, {["timeline"] = {ADDED_10_2_0}}),	-- Dragon Isles Drakes: White Scales (DM!)
+		i(208200,	-- Dragon Isles Drakes: Gilded Armor (DM!)
+		bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			i(196967),	-- Cliffside Wylderdrake: Gold and White Armor (DM!)
+			i(197095),	-- Highland Drake: Gold and White Armor (DM!)
+			i(197349),	-- Renewed Proto-Drake: Gold and White Armor (DM!)
+			i(197582),	-- Windborne Velocidrake: White and Pink Armor (DM!)
+			i(203298),	-- Winding Slitherdrake: White and Gold Armor (DM!)
+		})),
+		i(208550,	-- Dragon Isles Drakes: White Scales (DM!)
+			bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+			i(197014),	-- Cliffside Wylderdrake: White Scales (DM!)
+			i(197146),	-- Highland Drake: White Scales (DM!)
+			i(197393),	-- Renewed Proto-Drake: White Scales (DM!)
+			i(197616),	-- Windborne Velocidrake: White Scales (DM!)
+			i(203354),	-- Winding Slitherdrake: White Scales (DM!)
+		})),
 		header(HEADERS.Item, 194521, {	-- Cliffside Wylderdrake
 			i(196961),	-- Cliffside Wylderdrake: Armor (DM!)
 			i(196986),	-- Cliffside Wylderdrake: Black Hair (DM!)
@@ -1031,21 +1045,5 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			i(203304),	-- Winding Slitherdrake: Yellow and Silver Armor (DM!)
 			i(203355, {["timeline"] = {ADDED_10_1_7}}),	-- Winding Slitherdrake: Yellow Scales (DM!)
 		})),
-	}),
-})));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_7 } }, {
-	m(DRAKEWATCHER_MANUSCRIPTS, {
-		-- Dragon Isles Drakes: Gilded Armor
-		i(196967),	-- Cliffside Wylderdrake: Gold and White Armor (DM!)
-		i(197095),	-- Highland Drake: Gold and White Armor (DM!)
-		i(197349),	-- Renewed Proto-Drake: Gold and White Armor (DM!)
-		i(197582),	-- Windborne Velocidrake: White and Pink Armor (DM!)
-		i(203298),	-- Winding Slitherdrake: White and Gold Armor (DM!)
-		-- Dragon Isles Drakes: White Scales
-		i(197014, {["timeline"] = {ADDED_10_2_0}}),	-- Cliffside Wylderdrake: White Scales (DM!)
-		i(197146, {["timeline"] = {ADDED_10_2_0}}),	-- Highland Drake: White Scales (DM!)
-		i(197393, {["timeline"] = {ADDED_10_2_0}}),	-- Renewed Proto-Drake: White Scales (DM!)
-		i(197616, {["timeline"] = {ADDED_10_2_0}}),	-- Windborne Velocidrake: White Scales (DM!)
-		i(203354, {["timeline"] = {ADDED_10_2_0}}),	-- Winding Slitherdrake: White Scales (DM!)
 	}),
 })));

@@ -2693,7 +2693,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		prof(SKINNING, {
 			q(81440),	-- Refine Hides+++ (Triggered when learned via specialization)
 		}),
-		n(PROFESSIONS, {
+		n(PROFESSIONS, {	-- double header on purpose - Darkal
 			-- Using Contracts
 			q(84484),	-- Contract: Assembly of the Deeps [Rank 1] (spellID 454934)
 			q(84483),	-- Contract: Assembly of the Deeps [Rank 2] (spellID 454935)

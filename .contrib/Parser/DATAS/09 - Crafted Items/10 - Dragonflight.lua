@@ -3537,9 +3537,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	-- TODO: likely many of these to be added as actual tracking under ExpansionFeatures > DF > Professions
-	expansion(EXPANSION.DF, {
+	n(PROFESSIONS, {
 		prof(ALCHEMY, {
 			q(71948),	-- Maxxed Out Transmutation
 		}),
@@ -3562,7 +3562,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(66936),	-- Heated Ore Sample / Unyielding Stone Chunk
 		}),
 		prof(SKINNING, {
-			q(77792),	-- Dreamscale daily lockout for anniversary world boss (Emeriss, Lethon, Taerar, Ysondre)
+			q(77792, {["timeline"] = {ADDED_10_1_5}}),	-- Dreamscale daily lockout for anniversary world boss (Emeriss, Lethon, Taerar, Ysondre)
 		}),
 		prof(TAILORING, {
 			q(71946),	-- Timeweaving unlocked
@@ -3571,4 +3571,4 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(71294),	-- Azureweave Full maxed out
 		}),
 	}),
-});
+})));

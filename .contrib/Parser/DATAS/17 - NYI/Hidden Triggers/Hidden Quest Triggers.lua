@@ -2061,8 +2061,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		}),
 		n(PVP, {
 			q(79332, {["timeline"] = {ADDED_10_2_0}}, {["repeatable"]=true}),	-- Triggers after winning a Brawl: Battleground Blitz (possibly only when theres an elistment bonus?)
-			q(80413, {["timeline"] = {ADDED_10_2_7}}, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
-			q(80414, {["timeline"] = {ADDED_10_2_7}}, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
 		}),
 		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 			q(78204, {["timeline"] = {ADDED_10_1_7}}),	-- Master of Timeways - First Week Trigger (spellID 423861)
@@ -2073,10 +2071,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	--     TWW      --
 	------------------
 	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
-		n(PVP, {
-			q(80415, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
-			q(80416, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
-		}),
 		--@Darkal: q(84255),	-- received item 212174 (The Warband Map to Everywhere All At Once)
 	})),
 

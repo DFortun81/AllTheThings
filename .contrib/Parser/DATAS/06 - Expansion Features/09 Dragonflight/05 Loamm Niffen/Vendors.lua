@@ -238,9 +238,3 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 		}),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }, {
-	n(LOAMM_NIFFEN, {
-		-- Ensembles
-		q(75832),	-- Ensemble: Ornate Black Dragon Labwear
-	}),
-})));
