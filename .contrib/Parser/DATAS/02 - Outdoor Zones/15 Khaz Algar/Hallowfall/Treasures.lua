@@ -96,7 +96,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81971,
 				["g"] = {
 					i(224580, {	-- Massive Sapphire Chunk
-						i(212508),	-- Stunning Sapphire x3
+					--	i(212508),	-- Stunning Sapphire x3
 					}),
 				},
 			}),

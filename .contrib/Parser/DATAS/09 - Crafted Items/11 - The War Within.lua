@@ -1986,6 +1986,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(213515),	-- Solid Amber+
 			i(213516),	-- Solid Amber++
 			i(213517),	-- Solid Amber+++
+			i(212508),	-- Stunning Sapphire
 			i(213510),	-- Versatile Amber+
 			i(213511),	-- Versatile Amber++
 			i(213512),	-- Versatile Amber+++
