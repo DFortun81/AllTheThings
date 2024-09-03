@@ -259,33 +259,57 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 221630 },	-- Ryfus Sacredpyr
 				["coord"] = { 40.0, 51.1, HALLOWFALL },
 				["questID"] = 83298,
-				["cost"] = {
-					{ "i", 225216, 1 },	-- Palawltar's Codex of Dimensional Structure / Question 1
-					{ "i", 225207, 1 },	-- Care and Feeding of the Imperial Lynx / Question 2
-					{ "i", 225204, 1 },	-- Shadow Curfew Guidelines / Question 3
-					{ "i", 225203, 1 },	-- Beledar- The Emperor's Vision / Question 4
-					{ "i", 225215, 1 },	-- The Song of Renilash / Question 5
-					{ "i", 225212, 1 },	-- The Big Book of Arathi Idioms / Question 6
-				},
+				["sourceQuest"] = 83305,	-- Question 6
+				-- ["cost"] = {
+				-- 	{ "i", 225216, 1 },	-- Palawltar's Codex of Dimensional Structure / Question 1
+				-- 	{ "i", 225207, 1 },	-- Care and Feeding of the Imperial Lynx / Question 2
+				-- 	{ "i", 225204, 1 },	-- Shadow Curfew Guidelines / Question 3
+				-- 	{ "i", 225203, 1 },	-- Beledar- The Emperor's Vision / Question 4
+				-- 	{ "i", 225215, 1 },	-- The Song of Renilash / Question 5
+				-- 	{ "i", 225212, 1 },	-- The Big Book of Arathi Idioms / Question 6
+				-- },
 				["g"] = {
 					i(225659),	-- Arathi Book Collection (TOY!)
 					q(83300, {	-- Question 1
-						["name"] = "Get Palawltar's Codex of Dimensional Structure for right answer on 1st question"
+						["name"] = "Get Palawltar's Codex of Dimensional Structure for right answer on 1st question",
+						["sourceQuests"] = {
+							83309, -- Palawltar's Codex of Dimensional Structure
+						},
 					}),
 					q(83301, {	-- Question 2
-						["name"] = "Get Care and Feeding of the Imperial Lynx for right answer on 2nd question"
+						["name"] = "Get Care and Feeding of the Imperial Lynx for right answer on 2nd question",
+						["sourceQuests"] = {
+							83300, -- previous step
+							83310, -- Care and Feeding of the Imperial Lynx
+						},
 					}),
 					q(83302, {	-- Question 3
-						["name"] = "Get Shadow Curfew Guidelines for right answer on 3rd question"
+						["name"] = "Get Shadow Curfew Guidelines for right answer on 3rd question",
+						["sourceQuests"] = {
+							83301, -- previous step
+							83311, -- Shadow Curfew Guidelines
+						},
 					}),
 					q(83303, {	-- Question 4
-						["name"] = "Get Beledar - The Emperor's Vision for right answer on 4th question"
+						["name"] = "Get Beledar - The Emperor's Vision for right answer on 4th question",
+						["sourceQuests"] = {
+							83302, -- previous step
+							83312, -- Beledar- The Emperor's Vision
+						},
 					}),
 					q(83304, {	-- Question 5
-						["name"] = "Get The Song of Renilash for right answer on 5th question"
+						["name"] = "Get The Song of Renilash for right answer on 5th question",
+						["sourceQuests"] = {
+							83303, -- previous step
+							83313, -- The Song of Renilash
+						},
 					}),
 					q(83305, {	-- Question 6
-						["name"] = "Get The Big Book of Arathi Idioms for right answer on 6th question"
+						["name"] = "Get The Big Book of Arathi Idioms for right answer on 6th question",
+						["sourceQuests"] = {
+							83304, -- previous step
+							83314, -- The Big Book of Arathi Idioms
+						},
 					}),
 				},
 			}),
