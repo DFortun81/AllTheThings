@@ -964,6 +964,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(225754),	-- Dornogal Guard's Hammer (COSMETIC!)
 			i(225753),	-- Dornogal Guard's Splitter (COSMETIC!)
 			i(225760),	-- Dornogal Spear (COSMETIC!)
+			i(225884),	-- Extra Large Leek (COSMETIC!)
 			-- Whispers of the Deep
 			i(226392),	-- Careless Dasher's Treasure
 			---

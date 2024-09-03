@@ -150,8 +150,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(221883),	-- Prototype: Stasis Mine
 					i(221895),	-- Prototype: Tinker: Lightning Tether
 					i(221899),	-- Prototype: Tinker: Overclocked S.E.L.F.I.E. Camera
-					i(225241),	-- Refurbished Tinker: Alarm-O-Turret
-					i(225242),	-- Refurbished Tinker: Plane Displacer
 					i(225244),	-- Refurbished Tinker: Shadowflame Rockets
 					i(225243),	-- Refurbished Tinker: Supercollide-O-Tron
 					i(221884),	-- Stasis Mine

@@ -1137,6 +1137,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(225644),	-- Tracker's Goggles
 			i(221806),	-- Venting Vambraces
 			i(221807),	-- Whirring Wristwraps
+			-- Tinker
+			i(225241),	-- Refurbished Tinker: Alarm-O-Turret
+			i(225242),	-- Refurbished Tinker: Plane Displacer
 		}),
 		filter(CONSUMABLES, {
 			i(221880),	-- Potion Bomb of Power+

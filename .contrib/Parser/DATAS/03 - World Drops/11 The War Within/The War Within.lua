@@ -72,6 +72,7 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 			i(224603),	-- Underscout's Trousers
 		}),
 		filter(MAIL, {
+			i(229083),	-- Aevery's Spare Shoulderguards
 			i(224614),	-- Expeditionary Belt
 			i(224609),	-- Expeditionary Boots
 			i(224615),	-- Expeditionary Bracers
@@ -109,6 +110,10 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 		i(224635),	-- Expeditionary Bulwark
 		i(224639),	-- Expeditionary Chopper
 		i(224625),	-- Expeditionary Spear
+		i(229163),	-- Lamplighter's Blade
+		i(229154),	-- Lamplighter's Edge
+		i(229160),	-- Lamplighter's Glaive
+		i(229159),	-- Lamplighter's Lightstone
 		i(224632),	-- Underscout's Kukri
 		i(224638),	-- Underscout's Glaive
 	}),

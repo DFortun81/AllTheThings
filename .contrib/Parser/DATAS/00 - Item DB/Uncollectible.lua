@@ -1832,6 +1832,7 @@ i(225843);	-- Ancient Bronze Hourglass
 i(228398);	-- Angry Rock
 i(217170);	-- Backup Candles
 i(220290);	-- Barbed Pincers
+i(225835);	-- Battered Lantern
 i(213254);	-- Big Gold Nugget
 i(220291);	-- Bioluminescent Thorax
 i(225543);	-- Bloodied Idol
@@ -1845,13 +1846,17 @@ i(225709);	-- Brax's Left Shoe
 i(225710);	-- Brax's Other Hat
 i(225715);	-- Brax's To-Do List
 i(225718);	-- Brax's Toothpick
+i(225826);	-- Broken Elevator Cog
+i(225853);	-- Broken Stirrup
 i(217171);	-- CANDLE KING DIARY
 i(220277);	-- Carapace Fragment
 i(228485);	-- Carver's Spare Whittling Knife
+i(220245);	-- Charged Antennae
 i(220281);	-- Charged Fragments
 i(220249);	-- Chipped Mandible
 i(220254);	-- Chipped Molars
 i(225815);	-- Chipped Opal Signet Ring
+i(225786);	-- Chitin Stress Ball
 i(217168);	-- Chocolate Coins
 i(217169);	-- Cloak of Beards
 i(220256);	-- Clump of Rotting Detritus
@@ -1865,6 +1870,8 @@ i(225804);	-- Crumpled Patrol Assignment
 i(228494);	-- Crunchy Rock Candy
 i(217167);	-- Crusty Chalice
 i(220301);	-- Crystallized Honey
+i(225789);	-- Curved Threadripper
+i(225844);	-- Damaged Radial Cog
 i(220255);	-- Darkened Residue
 i(225813);	-- Darkened Ritual Stone
 i(224464);	-- Demonic Healthstone
@@ -1882,11 +1889,14 @@ i(220262);	-- Elongated Proboscis
 i(220243);	-- Eloquent Tailfeather
 i(213265);	-- Empty Antidote Vial
 i(220355);	-- Enlarged Ear
+i(225841);	-- Ever-Frozen Ice
 i(220222);	-- Everburning Lump
 i(228453);	-- Extra Large Bag of Popped Pebbles
 i(228489);	-- Fashionable Flask
 i(225814);	-- Feather-on-a-Stick
+i(220250);	-- Filthy Handkerchief
 i(220302);	-- Fractured Casing
+i(225846);	-- Fractured Command Matrix
 i(225829);	-- Fractured Interface Crystal
 i(228490);	-- Fresh Grazing Rocks
 i(228487);	-- Freshly Fallen Sticks
@@ -1895,6 +1905,7 @@ i(225811);	-- Gleaming Deep-Pearl
 i(225831);	-- Glittering Rock
 i(220259);	-- Gob of Mucus
 i(220509);	-- Gossamer Web
+i(225825);	-- Ground Snacking Stone
 i(225790);	-- Half-Painted Pewter Spider
 i(220279);	-- Handful of Polished Scales
 i(220252);	-- Handful of Smooth Pebbles
@@ -1902,10 +1913,14 @@ i(228400);	-- Happy Rock
 i(220246);	-- Humming Power Core
 i(220275);	-- Indigo Shard
 i(220253);	-- Inert Dust
+i(225847);	-- Inoperable Keystone
+i(225798);	-- Intricately Carved Barter Boulder
+i(220269);	-- Ionized Feather
 i(220224);	-- Iridescent Integument
 i(220380);	-- Immature Spiderling
 i(225830);	-- Irreparably Bent Spoon
 i(225791);	-- Jar of Alchemical Solvent
+i(225822);	-- Jar of Cinderbee Honey
 i(225785);	-- Jar of Pickled Insects
 i(220264);	-- Jaw with Barbed Teeth
 i(220238);	-- Keen Fang
@@ -1921,12 +1936,17 @@ i(225837);	-- Melted Globs of Glass
 i(223886);	-- Mercurial Herbs
 i(223883);	-- Mercurial Transmutation
 i(225850);	-- Moldy Rations
+i(220285);	-- Moldy Rucksack
 i(220219);	-- Mound of Night Soil
 i(228430);	-- Mucky Rock
+i(225854);	-- Muddied Amulet
+i(228720);	-- Nascent Gemstone
 i(217162);	-- Necklace of Kobold Teeth
 i(210829);	-- Neutralize Concoctions
 i(224153);	-- Nibbled Shroomcap
+i(220240);	-- Night's Litany
 i(213258);	-- Odorant Oddity
+i(225809);	-- Oiled Pigment Pouch
 i(225845);	-- Old Explorer's Compass
 i(225817);	-- Ominous Ceremonial Robe
 i(223887);	-- Ominous Herbs
@@ -1937,8 +1957,11 @@ i(220244);	-- Oversized Claw
 i(220251);	-- Pale Gills
 i(225787);	-- Pheromone-Covered Missive
 i(220283);	-- Pileus Puff
+i(225834);	-- Pilfered Matchbook
+i(225875);	-- Pitted Armor Plating
 i(222955);	-- Player Experience
 i(220247);	-- Polishing Powder
+i(225794);	-- Preserved Gold-Inlaid Chelicera
 i(225816);	-- Profaned Pendant
 i(228491);	-- Ramolith Bedding Material
 i(220258);	-- Rotting Bones
@@ -1951,12 +1974,15 @@ i(220228);	-- Quartz Growth
 i(220288);	-- Quivering Tail
 i(220362);	-- Ragged Rope
 i(220242);	-- Razored Tail-Blade
+i(228429);	-- Reflective Rock
 i(228391);	-- Right Boot
 i(228510);	-- Ripped Swarmite Wing
 i(220297);	-- Rock-Encrusted Plates
 i(228609);	-- Rock Roasting for Dummies
+i(220438);	-- Root-Staff Splinter
 i(217164);	-- Royal Nailpicker
 i(225807);	-- Rune-Carved Bone
+i(223897);	-- Ruptured Engine
 i(228497);	-- Rusted Airship Cog
 i(228399);	-- Sad Rock
 i(220236);	-- Sanguineous Sac
@@ -1966,6 +1992,7 @@ i(220266);	-- Sharpened Digging Claws
 i(220361);	-- Sharpened Steel Implement
 i(220273);	-- Shed Skin
 i(220237);	-- Shining Amethyst Cluster
+i(226681);	-- Sizzling Cinderpollen
 i(220231);	-- Skiatic Vessel
 i(220299);	-- Sleek Beak
 i(220226);	-- Slime-Coated Membrane
@@ -1973,19 +2000,26 @@ i(228711);	-- Small Candle
 i(228488);	-- Small Glass Vase
 i(225832);	-- Smelly Backscratcher
 i(225810);	-- Smoked Visor
+i(225819);	-- Smudged Propaganda
 i(220241);	-- Softly Glowing Shard
 i(228493);	-- Sour Topaz Bites
 i(228492);	-- Spicy Rubies
 i(220268);	-- Spiraled Horn
 i(226692);	-- Splintered Stone
+i(225823);	-- Split Bull-Horn
 i(213262);	-- Stained Glass Fragment
 i(225800);	-- Stone Singing Bowl
 i(220294);	-- Strangely Glowing Filament
 i(220363);	-- Straw-Stuffed Hat
 i(220292);	-- Stretched Wing
 i(228507);	-- Swarmite Eggsac
+i(225818);	-- Tainted Incense
+i(220225);	-- Tattered Standard
 i(225821);	-- Tattered Theater Hood
+i(225797);	-- The Fifty Rules of Commerce, Fourth Edition
 i(225877);	-- The Fifty Rules of Commerce, Fourth Edition
+i(225878);	-- The Fifty Rules of Commerce, Fourth Edition
+i(225879);	-- The Fifty Rules of Commerce, Fourth Edition
 i(225852);	-- The Foolhardy's Guide to Survival
 i(220296);	-- Thickly Webbed Foot
 i(228481);	-- Tiny Fathomclam
@@ -2007,7 +2041,9 @@ i(220276);	-- Wax-Covered Helmet
 i(220263);	-- Wax Miner's Sack
 i(225802);	-- Well-Worn Darning Needle
 i(217163);	-- Well Worn Doll
+i(220278);	-- Well-Worn Leather Sole
 i(225842);	-- Whirling Sphere
+i(220491);	-- Wicked Blade Shard
 i(220232);	-- Worm-Eaten Burlap Robe
 i(228911);	-- Xalatath's Rusty Coin
 -- spider stuff
