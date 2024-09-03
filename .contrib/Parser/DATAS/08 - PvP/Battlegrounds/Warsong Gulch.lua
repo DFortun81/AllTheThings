@@ -41,8 +41,15 @@ local OnTooltipForWarsongGulch = [[function(t, tooltipInfo)
 		addRepInfo(tooltipInfo, reputation, "Concerted Efforts", 100, 42000);
 -- #endif
 		local repPerFlagCapture = 35;
+-- #if AFTER 6.1.0
+		local repPerFlagCapture = 100;
+-- #endif
 		addRepInfo(tooltipInfo, reputation, "Flags Captured", repPerFlagCapture, 42000);
+-- #if BEFORE 6.0.2
 		tinsert(tooltipInfo, { left = " Each capture is worth " .. repPerFlagCapture .. " rep, +10 on WSG Weekend.", r = 1, g = 1, b = 1 });
+-- #else
+		tinsert(tooltipInfo, { left = " Each capture is worth " .. repPerFlagCapture .. " rep, +100 if you win or 35 if you lose 0-3.", r = 1, g = 1, b = 1 });
+-- #endif
 -- #if SEASON_OF_DISCOVERY
 		if reputation < ]] .. HONORED .. [[ then
 			tinsert(tooltipInfo, { left = " " });
