@@ -39,12 +39,14 @@ namespace ATT
                         {
                             if (Convert.ToInt32(spellIDRef) > 0)
                             {
-                                if (f == 100)   // Mounts
-                                {
-                                    WriteShortcut(builder, "mnt", "_.CreateMount");
-                                    ExportField(builder, data, fields, "spellID");
-                                    return;
-                                }
+                                // no, if we wanted it to be a Mount, we defined it in MountDB
+                                // can't trust Filter and SpellID
+                                //if (f == 100)   // Mounts
+                                //{
+                                //    WriteShortcut(builder, "mnt", "_.CreateMount");
+                                //    ExportField(builder, data, fields, "spellID");
+                                //    return;
+                                //}
                             }
                             else
                             {

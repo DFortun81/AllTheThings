@@ -460,13 +460,6 @@ namespace ATT
                 var item = Items.GetNull(pair.Key);
                 if (item != null) Items.MergeInto(pair.Key, pair.Value, item);
             }
-
-            // Go through and merge all of the mount data into the item containers.
-            foreach (var pair in Items.AllMounts)
-            {
-                var item = Items.GetNull(pair.Key);
-                if (item != null) Items.MergeInto(pair.Key, new Dictionary<string, object> { { "mountID", pair.Value } }, item);
-            }
         }
 
         /// <summary>

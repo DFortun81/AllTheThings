@@ -860,7 +860,7 @@ i(124089, 183889);	-- Vicious War Mechanostrider
 i(128282, 189044);	-- Warmongering Gladiator's Felblood Gronnling
 i(128281, 189043);	-- Wild Gladiator's Felblood Gronnling
 --- NYI ---
-i(128480, 190690);	-- Bristling Hellboar
+-- i(128480, 190690);	-- Bristling Hellboar
 
 -----------------
 -- PATCH 6.2.1 --
@@ -1527,7 +1527,7 @@ i(198821, 359408);	-- Divine Kiss of Ohn'ahra
 i(192804, 374263);	-- Restless Hornstrider
 i(198823, 385253);	-- [PH] Brown Wind Eagle
 i(192787, 351403);	-- [PH] Mammoth V2 Dark
-i(192789, 374172);	-- [PH] Mammoth V2 Gray
+-- i(192789, 374172);	-- [PH] Mammoth V2 Gray
 i(192771, 352927);	-- [PH] Water Salamander Blue
 i(192773, 374093);	-- [PH] Water Salamander Orange
 i(192748, 373913);	-- PH Moose Bull Brown
