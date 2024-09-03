@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				}),
 			}),
 			explorationAch(17766),	-- Explore Zaralek Cavern
-			n(FAMILY_BATTLER, {
+			header(HEADERS.Achievement, 17934, {	-- Family Battler of Zaralek Cavern
 				petbattle(ach(17934, {	-- Family Battler of Zaralek Cavern
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",

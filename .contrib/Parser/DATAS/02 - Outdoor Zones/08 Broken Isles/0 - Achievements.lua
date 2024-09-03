@@ -86,7 +86,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 			crit(33140),		-- Blind Rat (Dalaran)
 			crit(33141),		-- Stormstruck Beaver (Stormheim)
 		})),
-		n(FAMILY_BATTLER, {
+		header(HEADERS.Achievement, 9696, {	-- Family Familiar
 			petbattle(ach(9696, {	-- Family Familiar
 				-- Meta Achievement should symlink the contained Achievements from Source
 				["sym"] = {{"meta_achievement",

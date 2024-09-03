@@ -260,7 +260,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				title(523),	-- Isles Ace <Name>
 			}
 		})),
-		n(FAMILY_BATTLER, {
+		header(HEADERS.Achievement, 16512, {	-- Family Battler of the Dragon Isles
 			petbattle(ach(16512, {	-- Family Battler of the Dragon Isles
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",

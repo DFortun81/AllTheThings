@@ -129,7 +129,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 36.6, 31.8, BASTION },
 			}),
 		})),
-		n(FAMILY_BATTLER, {
+		header(HEADERS.Achievement, 14879, {	-- Family Exorcist
 			petbattle(ach(14879, {	-- Family Exorcist
 				-- Meta Achievement
 				["sym"] = {{"meta_achievement",

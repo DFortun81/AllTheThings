@@ -283,7 +283,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			}),
 		}),
 		explorationAch(12069),	-- Explore Argus
-		n(FAMILY_BATTLER, {
+		header(HEADERS.Achievement, 12100, {	-- Family Fighter
 			petbattle(ach(12100, {	-- Family Fighter
 				-- Meta Achievements
 				["sym"] = {{"meta_achievement",
