@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			o(446299, {	-- Silk-spun Supplies
 				--["description"] = "Finishing questID 78383 (Strategic Edge) make it spawn",
-				["coord"] = { 67.0, 33.2, AZJ_KAHET },
+				["coord"] = { 67.5, 27.6, AZJ_KAHET },
 				["questID"] = 82719,
 			}),
 			o(444844, {	-- Stashed Loot

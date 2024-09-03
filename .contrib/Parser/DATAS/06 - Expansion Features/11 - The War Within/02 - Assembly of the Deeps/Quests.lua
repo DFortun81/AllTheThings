@@ -82,7 +82,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
 					["g"] = {
-						i(226146),	-- Handful of Humming Shinies
+						i(226149),	-- Pile of Humming Shinies
 					},
 				}),
 			}, {	-- RENOWN 13 --

@@ -626,7 +626,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40636.06, {	-- The Wormlands
 				q(83321, {	-- Strange Bats
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = { 78233 },	-- The Weaver's Gift
 					["provider"] = { "n", 223754 },	-- Linny Leadlinger
 					["coord"] = { 56.3, 48.1, AZJ_KAHET },
 					["isBreadcrumb"] = true,
@@ -671,7 +671,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79651, {	-- Trade Partners
 					["sourceQuests"] = { 78256 },	-- The General's Consensus
 					["provider"] = { "n", 223754 },	-- Linny Leadlinger
-					["coord"] = { 56.3, 48.1, AZJ_KAHET },
+					["coord"] = { 55.8, 43.6, AZJ_KAHET },
 					["isBreadcrumb"] = true,
 				}),
 				q(80558, {	-- Nothing Ventured
@@ -872,7 +872,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(83324, {	-- A Silken Thread
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 223754 },	-- Linny Leadlinger
-					["coord"] = { 56.3, 48.1, AZJ_KAHET },
+					["coord"] = { 55.8, 43.6, AZJ_KAHET },
 					["isBreadcrumb"] = true
 				}),
 				q(81890, {	-- Unfulfilled Requests

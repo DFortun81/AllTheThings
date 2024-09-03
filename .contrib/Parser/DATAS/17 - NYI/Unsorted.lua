@@ -916,7 +916,6 @@ root(ROOTS.Unsorted, {
 				i(225786),	-- Chitin Stress Ball
 				i(225788),	-- Congratulatory Ascension Silk
 				i(225789),	-- Curved Threadripper
-				i(225793),	-- Acid-Etched Pendant
 				i(225794),	-- Preserved Gold-Inlaid Chelicera
 				i(225797),	-- The Fifty Rules of Commerce, Fourth Edition
 				i(225798),	-- Intricately Carved Barter Boulder
@@ -950,7 +949,6 @@ root(ROOTS.Unsorted, {
 				i(226045),	-- The General's Trove
 				i(226100),	-- The Vizier's Trove
 				i(226108),	-- [DNT] Debug Profession Stats
-				i(226149),	-- Pile of Humming Shinies
 				i(226150),	-- Gem-Studded Candelabra
 				i(226151),	-- Wax-Coated Coffer Unlocker
 				i(226152),	-- Wax-sealed Crests
@@ -1039,7 +1037,6 @@ root(ROOTS.Unsorted, {
 				i(218084),	-- Crumpled Note
 				i(218104),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
 				i(218127),	-- Ever-Blossoming Fungi
-				i(218456),	-- Precious Gems
 				i(218457),	-- Special Silk
 				i(218458),	-- Important Info Scrolls
 				i(218459),	-- TBD
@@ -1541,8 +1538,6 @@ root(ROOTS.Unsorted, {
 			i(228495),	-- Well-Used Potter's Wheel
 			-- Fall out.... Resort
 
-			i(219016),	-- Coated Steel Tips
-			i(219017),	-- Silver Armor Clasps
 			i(216665),	-- Warband Bank Distance Inhibitor
 			i(225431),	-- Design: Vicious Jeweler's Setting
 			--

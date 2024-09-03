@@ -1826,6 +1826,7 @@ i(225419);	-- Green Hills of Stranglethorn - Page 27
 ------------------
 -- PATCH 11.0.2 --
 ------------------
+i(225793);	-- Acid-Etched Pendant
 i(220287);	-- Acid-Filled Sack
 i(225843);	-- Ancient Bronze Hourglass
 i(228398);	-- Angry Rock
