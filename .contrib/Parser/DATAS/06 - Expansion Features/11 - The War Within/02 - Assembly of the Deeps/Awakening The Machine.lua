@@ -36,7 +36,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				n(TREASURES, {
 					o_repeated({
 						i(223269),	-- Machine Defense Unit 1-11 (MOUNT!)
+						i(226218),	-- Machine-Warden's Cloak
 						i(229000),	-- Machine-Warden's Cog
+						i(226221),	-- Machine-Warden's Pauldrons
+						i(226220),	-- Machine-Warden's Tabard
 						-- weekly?
 						o(465243, {	-- Awakened Cache
 							["coord"] = { 47.4, 31.9, THE_RINGING_DEEPS },

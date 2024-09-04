@@ -1142,10 +1142,8 @@ root(ROOTS.Unsorted, {
 				i(224467),	-- Forgotten Axe
 			}),
 			n(REWARDS, {
-				i(223444),	-- Arathi Defender's Breeches
 				i(223458),	-- [PH] 11.0 - Belt
 				i(223585),	-- Algari Bladefist
-				i(223588),	-- Algari Fighting Knife
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(223510),	-- Delver's Dirigible Schematic: Template
@@ -1492,10 +1490,7 @@ root(ROOTS.Unsorted, {
 			i(225256),	-- PH_2
 			--
 			-- Orphaned due to removal of "Awakening the Machine: Wave <x>" achievements
-			i(226220),	-- Machine-Warden's Tabard
-			i(226221),	-- Machine-Warden's Pauldrons
 			title(568),	-- <Name>, Machine-Warden
-			i(226218),	-- Machine-Warden's Cloak
 			-- Fallout
 			i(220693),	-- Coffer Key Shard \\ Delve Key Fragment
 			i(226103),	-- The Weaver's Trove

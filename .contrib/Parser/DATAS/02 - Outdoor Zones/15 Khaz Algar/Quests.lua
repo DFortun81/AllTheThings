@@ -76,6 +76,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 35.9, 81.5, DORNOGAL },
 					["g"] = {
+						i(223588),	-- Algari Fighting Knife
 						i(223549),	-- Algari Greatsword
 						i(223547),	-- Algari Heavy Staff
 						i(223548),	-- Algari Rifle
@@ -91,6 +92,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["races"] = HORDE_ONLY,
 					["coord"] = { 34.7, 94.3, DORNOGAL },
 					["g"] = {
+						i(223588),	-- Algari Fighting Knife
 						i(223549),	-- Algari Greatsword
 						i(223547),	-- Algari Heavy Staff
 						i(223548),	-- Algari Rifle
