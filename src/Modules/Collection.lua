@@ -63,6 +63,7 @@ local function PendingCollectionCoroutine()
 	end
 
 	-- Report new things to your collection!
+	-- TODO: this should include an UpdateRawIDs for simplicity elsewhere
 	local any,allTypes = false,{};
 	local reportCollected = app.Settings:GetTooltipSetting("Report:Collected");
 	for hash,t in pairs(pendingCollection) do

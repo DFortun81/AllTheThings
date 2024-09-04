@@ -147,7 +147,7 @@ function api:PlayRemoveSound()
 	PlayAudio("REMOVE", "Warn:Removed");
 end
 function api:PlayReportSound()
-	if app.Settings:GetTooltipSetting("Warn:Removed") or app.Settings:GetTooltipSetting("Celebrate") then
+	if app.Settings:GetTooltipSetting("Warn:Removed") or app.Settings:GetTooltipSetting("Celebrate") or app.Contributor then
 		PlayAudio("REPORT");
 	end
 end
