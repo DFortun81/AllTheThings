@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(216042, {	-- Cha'tak
-				["coord"] = { 70.0, 27.7, AZJ_KAHET },
+				["coord"] = { 70.7, 21.4, AZJ_KAHET },
 				["questID"] = 81704,
 				["g"] = {
 					i(221212),	-- Death Burrower Handguards

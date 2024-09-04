@@ -653,7 +653,9 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					Boss(FATESCRIBE),
 					Boss(KELTHUZAD, {
 						i(187056, {	-- The Devouring Cold
-							["bonusID"] = 7723,	-- Adjusted weapon [LFR]
+							i(187056, {	-- The Devouring Cold
+								["bonusID"] = 7723,	-- Adjusted weapon [LFR]
+							}),
 						}),
 					}),
 				}),
