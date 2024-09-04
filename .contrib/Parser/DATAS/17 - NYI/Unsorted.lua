@@ -43,7 +43,6 @@ root(ROOTS.Unsorted, {
 				i(228764),	-- Classic Sunny Tabard
 			}),
 			--
-			i(229000),	-- Machine-Warden's Cog
 			i(229005),	-- Cache of Earthen Treasures
 			i(229006),	-- Cache of Earthen Treasures
 			--
