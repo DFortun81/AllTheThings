@@ -33,9 +33,8 @@ root(ROOTS.Unsorted, {
 			filter(QUEST_ITEMS, {
 				i(228623),	-- Blue's Request
 			}),
-			filter(BATTLE_PETS, {
-				i(228765),	-- Gummi (PET!) [Promotion?]
-			}),
+			--filter(BATTLE_PETS, {
+			--}),
 			filter(COSMETIC, {
 				i(228761),	-- Classic Brick Tabard
 				i(228762),	-- Classic Lively Tabard

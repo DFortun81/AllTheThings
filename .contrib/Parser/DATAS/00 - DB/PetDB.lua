@@ -4130,6 +4130,7 @@ i(224259, 4590);	-- Flash
 i(222973, 4492);	-- Fringe
 i(224261, 4589);	-- Gale
 i(223623, 4576);	-- Guacamole
+i(228765, 4616);	-- Gummi
 i(220771, 4467);	-- Hallowed Glowfly
 i(222968, 4476);	-- Itchbite
 i(222972, 4491);	-- Jump Jump
@@ -4222,4 +4223,3 @@ i(0, 4556);			-- Tickler
 i(0, 4549);			-- Tiny Cragling
 i(0, 4560);			-- Zaedu
 --- UNSORTED ---
-i(228765, 4616);	-- Gummi

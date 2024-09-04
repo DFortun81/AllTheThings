@@ -37,9 +37,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(444804, {	-- Concentrated Shadow
-				["description"] = "Spawns all over the zone only when Beledar shifts into it's Void State.",
+				["description"] = "Spawns all over the zone only when Beledar shifts into its Void state.",
 				["maps"] = { HALLOWFALL },
-				--["questID"] = xx,
 				["g"] = {
 					-- some crafting reagents and gray item
 				},
