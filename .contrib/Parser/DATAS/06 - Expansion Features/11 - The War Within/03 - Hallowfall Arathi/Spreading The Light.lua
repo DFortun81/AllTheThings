@@ -133,6 +133,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					q(79234, {	-- A Small Bag of Seeds
 						["provider"] = { "i", 212339 },	-- A Small Bag of Seeds
 					}),
+					q(80562, {	-- Blossoming Delight
+						-- TODO: Needs info, currently exists as an achievement criteria for Beacon of Hope (40308), but did the quest even make it to live?
+					}),
 					q(79346, {	-- Chew On That
 						["sourceQuests"] = { 79295 },	-- Keyflame: Taerry Bligestone
 						["provider"] = { "n", 215956 },	-- Taerry Bligestone
