@@ -13366,6 +13366,9 @@ SlashCmdList.AllTheThings = function(cmd)
 		elseif cmd == "unsorted" then
 			app:GetWindow("Unsorted"):Toggle();
 			return true;
+		elseif cmd == "contribute" then
+			app.Contribute(not app.Contributor and 1)
+			return true
 		elseif cmd:sub(1, 4) == "mini" then
 			app:ToggleMiniListForCurrentZone();
 			return true;
@@ -13603,5 +13606,19 @@ app.AddEventRegistration("HEIRLOOMS_UPDATED", function(itemID, kind, ...)
 end)
 
 app.AddEventHandler("OnStartupDone", function() app.OnStartupDone = true end)
+
+-- Extra Contribution setup
+app.Contribute = function(contrib)
+	app.Contributor = contrib == 1 and true or nil
+	AllTheThingsSavedVariables.Contributor = app.Contributor and 1 or 0
+	if app.Contributor then
+		app.print("Thanks for helping to contribute to ATT! There will be additional chat and report sounds to help with finding additional discrepancies in ATT data.")
+	elseif app.IsReady then
+		app.print("Not showing ATT contribution information.")
+	end
+end
+app.AddEventHandler("OnReady", function()
+	app.Contribute(AllTheThingsSavedVariables.Contributor)
+end)
 
 -- app.PrintMemoryUsage("AllTheThings.EOF");
