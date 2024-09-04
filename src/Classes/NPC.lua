@@ -100,9 +100,6 @@ do
 		title = function(t)
 			return NPCTitlesFromID[t[KEY]]
 		end,
-		displayID = function(t)
-			return NPCDisplayIDFromID[t[KEY]]
-		end,
 		icon = function(t)
 			local vendorParent = t.parent and t.parent.headerID == app.HeaderConstants.VENDORS
 			if vendorParent then

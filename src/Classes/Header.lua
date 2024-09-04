@@ -116,9 +116,6 @@ do
 		icon = function(t)
 			return cache.GetCachedField(t, "icon", CacheInfo) or 4555017;
 		end,
-		displayID = function(t)
-			return cache.GetCachedField(t, "displayID", CacheInfo);
-		end,
 	},
 	"WithQuest", {
 		trackable = function(t)

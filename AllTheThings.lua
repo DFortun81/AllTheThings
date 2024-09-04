@@ -81,6 +81,7 @@ local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 local TryColorizeName = app.TryColorizeName;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
+local GetDisplayID = app.GetDisplayID
 local ATTAccountWideData;
 
 -- Color Lib
@@ -246,37 +247,6 @@ local function GetMoneyString(amount)
 		return formatted
 	end
 	return amount
-end
-local function GetDisplayID(data)
-	-- don't create a displayID for groups with a sourceID/itemID/difficultyID/mapID
-	if data.sourceID or data.itemID or data.difficultyID or data.mapID then return end
-	local displayID = data.displayID
-	if displayID then
-		return displayID
-	end
-	local npcID = data.npcID or data.creatureID
-	if npcID then
-		displayID = app.NPCDisplayIDFromID[npcID]
-		if displayID then
-			return displayID
-		end
-	end
-
-	local qgs = data.qgs
-	if qgs and #qgs > 0 then
-		return app.NPCDisplayIDFromID[qgs[1]]
-	end
-
-	local providers = data.providers
-	if providers and #providers > 0 then
-		local lookup = app.NPCDisplayIDFromID
-		for _,v in ipairs(providers) do
-			-- if one of the providers is an NPC, we should show its texture regardless of other providers
-			if v[1] == "n" then
-				return lookup[v[2]]
-			end
-		end
-	end
 end
 local function GetIconFromProviders(group)
 	if group.providers then
@@ -7783,7 +7753,8 @@ end
 local function OnScrollBarValueChanged(self, value)
 	if self.CurrentValue ~= value then
 		self.CurrentValue = value;
-		self:GetParent():Refresh();
+		local window = self:GetParent()
+		Callback(window.Refresh, window)
 	end
 end
 local function ProcessGroup(data, object)

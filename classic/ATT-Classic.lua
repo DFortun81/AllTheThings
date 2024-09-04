@@ -297,29 +297,7 @@ app.IsComplete = function(o)
 	if o.collectible then return o.collected; end
 	if o.trackable then return o.saved; end
 end
-local function GetDisplayID(data)
-	if data.displayID then
-		return data.displayID;
-	elseif data.creatureID then
-		local displayID = app.NPCDisplayIDFromID[data.creatureID];
-		if displayID then
-			return displayID;
-		end
-	end
-
-	if data.providers and #data.providers > 0 then
-		for k,v in pairs(data.providers) do
-			-- if one of the providers is an NPC, we should show its texture regardless of other providers
-			if v[1] == "n" then
-				return app.NPCDisplayIDFromID[v[2]];
-			end
-		end
-	end
-
-	if data.qgs and #data.qgs > 0 then
-		return app.NPCDisplayIDFromID[data.qgs[1]];
-	end
-end
+local GetDisplayID = app.GetDisplayID
 local function GetIconFromProviders(group)
 	if group.providers then
 		local icon;

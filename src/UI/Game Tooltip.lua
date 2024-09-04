@@ -45,19 +45,20 @@ GameTooltipModel:SetBackdrop({
 });
 GameTooltipModel:SetBackdropBorderColor(1, 1, 1, 1);
 GameTooltipModel:SetBackdropColor(0, 0, 0, 1);
-GameTooltipModel.Model = CreateFrame("DressUpModel", nil, GameTooltipModel);
-GameTooltipModel.Model:SetPoint("TOPLEFT", GameTooltipModel, "TOPLEFT", 4, -4)
-GameTooltipModel.Model:SetPoint("BOTTOMRIGHT", GameTooltipModel, "BOTTOMRIGHT", -4, 4)
-GameTooltipModel.Model:SetFacing(MODELFRAME_DEFAULT_ROTATION);
-GameTooltipModel.Model:SetScript("OnUpdate", function(self, elapsed)
+local GameTooltipModelModel = CreateFrame("PlayerModel", nil, GameTooltipModel);
+GameTooltipModel.Model = GameTooltipModelModel
+GameTooltipModelModel:SetPoint("TOPLEFT", GameTooltipModel, "TOPLEFT", 4, -4)
+GameTooltipModelModel:SetPoint("BOTTOMRIGHT", GameTooltipModel, "BOTTOMRIGHT", -4, 4)
+GameTooltipModelModel:SetFacing(MODELFRAME_DEFAULT_ROTATION);
+GameTooltipModelModel:SetScript("OnUpdate", function(self, elapsed)
 	self:SetFacing(self:GetFacing() + elapsed);
 end);
-GameTooltipModel.Model:Hide();
+GameTooltipModelModel:Hide();
 
 local MAX_CREATURES_PER_ENCOUNTER, Models = 9, {};
 for i=1,MAX_CREATURES_PER_ENCOUNTER do
-	---@class ATTGameTooltipModel: DressUpModel
-	model = CreateFrame("DressUpModel", "ATTGameTooltipModel" .. i, GameTooltipModel);
+	---@class ATTGameTooltipModel: PlayerModel
+	model = CreateFrame("PlayerModel", "ATTGameTooltipModel" .. i, GameTooltipModel);
 	model:SetPoint("TOPLEFT", GameTooltipModel, "TOPLEFT", 4, -4);
 	model:SetPoint("BOTTOMRIGHT", GameTooltipModel, "BOTTOMRIGHT", -4, 4);
 	model:SetCamDistanceScale(1.7);
@@ -77,32 +78,8 @@ local function HideAllModels()
 	for _,m in ipairs(Models) do
 		m:Hide();
 	end
-	GameTooltipModel.Model:Hide();
+	GameTooltipModelModel:Hide();
 end
-
--- returns the input key unless it's blocked by being set to 0
-local BlockedDisplayID = {
-	[11686] = 0,	-- empty blue thing
-	[16925] = 0,	-- nothing
-	[21072] = 0,	-- empty blue thing
-	[23767] = 0,	-- empty blue thing
-	[27823] = 0,	-- empty blue thing
-	[28016] = 0,	-- empty blue thing
-	[52318] = 0,	-- generic bunny
-	[56187] = 0,	-- generic bunny
-	[64062] = 0,	-- generic bunny
-	[110046] = 0,	-- nothing
-	[112684] = 0,	-- nothing
-}
-local AllowedDisplayID = setmetatable({}, {
-	__index = function(t, key)
-		if BlockedDisplayID[key] then
-			return;
-		end
-		--app.PrintDebug("DisplayID",key)
-		return key;
-	end
-});
 local function CalculateModelRotation(number)
 	return number and ((number * pi) / 180) or MODELFRAME_DEFAULT_ROTATION;
 end
@@ -141,14 +118,7 @@ local function TrySetDisplayInfos(reference)
 	local count = #displayInfos;
 	if count < 1 then return end
 
-	local validDisplayIDs, displayID = {}, nil;
-	for i=1,count do
-		displayID = AllowedDisplayID[displayInfos[i]];
-		if displayID then validDisplayIDs[#validDisplayIDs + 1] = displayID; end
-	end
-	count = #validDisplayIDs;
-	if count < 1 then return; end
-
+	-- we will consider displayInfos as always correctly populated
 	local rotation = CalculateModelRotation(reference.modelRotation);
 	local scale = reference.modelScale or 1;
 	if count > 1 then
@@ -156,7 +126,7 @@ local function TrySetDisplayInfos(reference)
 		if count < 3 then
 			for i=1,count do
 				model = Models[i];
-				model:SetDisplayInfo(validDisplayIDs[i]);
+				model:SetDisplayInfo(displayInfos[i]);
 				model:SetCamDistanceScale(scale);
 				model:SetFacing(rotation);
 				model:SetPosition(0, (i % 2 == 0 and 0.5 or -0.5), 0);
@@ -167,7 +137,7 @@ local function TrySetDisplayInfos(reference)
 			scale = (1 + (ratio * 0.5)) * scale;
 			for i=1,count do
 				model = Models[i];
-				model:SetDisplayInfo(validDisplayIDs[i]);
+				model:SetDisplayInfo(displayInfos[i]);
 				model:SetCamDistanceScale(scale);
 				model:SetFacing(rotation);
 				fi = math_floor(i / 2);
@@ -176,78 +146,77 @@ local function TrySetDisplayInfos(reference)
 			end
 		end
 	else
-		GameTooltipModel.Model:SetFacing(rotation);
-		GameTooltipModel.Model:SetCamDistanceScale(scale);
-		GameTooltipModel.Model:SetDisplayInfo(validDisplayIDs[1]);
-		GameTooltipModel.Model:Show();
+		GameTooltipModelModel:SetFacing(rotation);
+		GameTooltipModelModel:SetCamDistanceScale(scale);
+		GameTooltipModelModel:SetDisplayInfo(displayInfos[1]);
+		GameTooltipModelModel:Show();
 	end
 	GameTooltipModel:Show();
 	return true;
 end
-local function TrySetModel(reference)
-	HideAllModels();
-	if not app.Settings:GetTooltipSetting("Models") then return end
-
-	if TrySetDisplayInfos(reference) then return true end
-
-	if reference.artifactID and reference.sourceID then
-		-- TODO: would be cool if this showed for all sourceID's, but it seems to be random which items show a model from the visualID
+local function TrySetSourceID(reference)
+	if reference.sourceID then
 		local sourceInfo = C_TransmogCollection_GetSourceInfo(reference.sourceID);
-		if sourceInfo and sourceInfo.visualID then
-			GameTooltipModel.Model:SetCamDistanceScale(0.8);
-			GameTooltipModel.Model:SetItemAppearance(sourceInfo.visualID);
-			GameTooltipModel.Model:Show();
+		-- can show rotating models for weapons (categoryID > 11)
+		if sourceInfo and sourceInfo.visualID and (sourceInfo.categoryID or 0) > 11 then
+			GameTooltipModelModel:SetCamDistanceScale(0.8);
+			GameTooltipModelModel:SetItemAppearance(sourceInfo.visualID);
+			GameTooltipModelModel:Show();
 			GameTooltipModel:Show();
 			return true;
 		end
 	end
-
+end
+local function TrySetRawModel(reference)
 	local modelID = reference.model and tonumber(reference.model);
 	if modelID and modelID > 0 then
-		GameTooltipModel.Model:SetFacing(CalculateModelRotation(reference.modelRotation));
-		GameTooltipModel.Model:SetCamDistanceScale(reference.modelScale or 1);
-		GameTooltipModel.Model:SetUnit("none");
-		GameTooltipModel.Model:SetModel(modelID);
-		GameTooltipModel.Model:Show();
+		GameTooltipModelModel:SetFacing(CalculateModelRotation(reference.modelRotation));
+		GameTooltipModelModel:SetCamDistanceScale(reference.modelScale or 1);
+		GameTooltipModelModel:SetUnit("none");
+		GameTooltipModelModel:SetModel(modelID);
+		GameTooltipModelModel:Show();
 		GameTooltipModel:Show();
 		return true;
 	end
-
+end
+local function TrySetCreature(reference)
 	local creatureID = GetCreatureID(reference);
 	if creatureID and creatureID > 0 then
-		GameTooltipModel.Model:SetFacing(CalculateModelRotation(reference.modelRotation));
-		GameTooltipModel.Model:SetCamDistanceScale(reference.modelScale or 1);
-		GameTooltipModel.Model:SetUnit("none");
-		GameTooltipModel.Model:SetCreature(creatureID);
-		local displayID = GameTooltipModel.Model:GetDisplayInfo();
+		GameTooltipModelModel:SetFacing(CalculateModelRotation(reference.modelRotation));
+		GameTooltipModelModel:SetCamDistanceScale(reference.modelScale or 1);
+		GameTooltipModelModel:SetUnit("none");
+		GameTooltipModelModel:SetCreature(creatureID);
+		local displayID = GameTooltipModelModel:GetDisplayInfo();
 		if displayID then
-			if not AllowedDisplayID[displayID] then
-				GameTooltipModel.Model:SetUnit("none");
-			else
-				GameTooltipModel.Model:Show();
-				GameTooltipModel:Show();
-				return true;
-			end
+			GameTooltipModelModel:Show();
+			GameTooltipModel:Show();
+			return true;
 		end
 	end
-
-	local displayID = AllowedDisplayID[reference.displayID];
+end
+local function TrySetDisplayID(reference)
+	local displayID = app.GetDisplayID(reference)
 	if displayID then
-		GameTooltipModel.Model:SetFacing(CalculateModelRotation(reference.modelRotation));
-		GameTooltipModel.Model:SetCamDistanceScale(reference.modelScale or 1);
-		GameTooltipModel.Model:SetUnit("none");
-		GameTooltipModel.Model:SetDisplayInfo(displayID);
-		GameTooltipModel.Model:Show();
+		GameTooltipModelModel:SetFacing(CalculateModelRotation(reference.modelRotation));
+		GameTooltipModelModel:SetCamDistanceScale(reference.modelScale or 1);
+		GameTooltipModelModel:SetUnit("none");
+		GameTooltipModelModel:SetDisplayInfo(displayID);
+		GameTooltipModelModel:Show();
 		GameTooltipModel:Show();
 		return true;
-	elseif reference.unit and not reference.icon then
-		GameTooltipModel.Model:SetFacing(CalculateModelRotation(reference.modelRotation));
-		GameTooltipModel.Model:SetCamDistanceScale(reference.modelScale or 1);
-		GameTooltipModel.Model:SetUnit(reference.unit);
-		GameTooltipModel.Model:Show();
-		GameTooltipModel:Show();
 	end
-
+end
+local function TrySetUnit(reference)
+	if reference.unit and not reference.icon then
+		GameTooltipModelModel:SetFacing(CalculateModelRotation(reference.modelRotation));
+		GameTooltipModelModel:SetCamDistanceScale(reference.modelScale or 1);
+		GameTooltipModelModel:SetUnit(reference.unit);
+		GameTooltipModelModel:Show();
+		GameTooltipModel:Show();
+		return true
+	end
+end
+local function TrySetAtlas(reference)
 	if reference.atlas then
 		GameTooltipIcon:SetSize(64,64);
 		GameTooltipIcon.icon:SetAtlas(reference.atlas);
@@ -267,6 +236,35 @@ local function TrySetModel(reference)
 			end
 		end
 		return true;
+	end
+end
+
+-- Represents a sequence of prioritized functions for attempting to define a GameTooltipModelModel based on a given 'reference'
+local ModelAssignmentFunctions
+ModelAssignmentFunctions = {
+	Add = function(func)
+		ModelAssignmentFunctions[#ModelAssignmentFunctions + 1] = func
+	end
+}
+
+ModelAssignmentFunctions.Add(TrySetDisplayInfos)
+ModelAssignmentFunctions.Add(TrySetRawModel)
+-- Using DisplayID directly seems completely broken in Classic, so instead we have to set the creature itself
+if app.IsRetail then
+	ModelAssignmentFunctions.Add(TrySetDisplayID)
+else
+	ModelAssignmentFunctions.Add(TrySetCreature)
+end
+ModelAssignmentFunctions.Add(TrySetSourceID)
+ModelAssignmentFunctions.Add(TrySetUnit)
+ModelAssignmentFunctions.Add(TrySetAtlas)
+
+local function TrySetModel(reference)
+	HideAllModels();
+	if not app.Settings:GetTooltipSetting("Models") then return end
+
+	for _,tryset in ipairs(ModelAssignmentFunctions) do
+		if tryset(reference) then return true end
 	end
 end
 GameTooltipModel:Hide();

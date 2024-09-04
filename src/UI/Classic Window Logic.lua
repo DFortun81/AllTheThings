@@ -262,9 +262,9 @@ local function SetPortraitIcon(self, data, x)
 	if app.Settings:GetTooltipSetting("IconPortraits") then
 		local extraSetting = IconPortraitTooltipExtraSettings[data.key];
 		if not extraSetting or app.Settings:GetTooltipSetting(extraSetting) then
-			local displayID = CalculateRowDisplayID(data);
+			local displayID = app.GetDisplayID(data);
 			if displayID then
-				SetPortraitTextureFromDisplayID(self, type(displayID) == "number" and displayID or displayID[1]);
+				SetPortraitTextureFromDisplayID(self, displayID);
 				self:SetWidth(self:GetHeight());
 				self:SetTexCoord(0, 1, 0, 1);
 				return true;
