@@ -89,6 +89,7 @@ src\Classes\BattlePet.lua
 src\Classes\CharacterClass.lua
 src\Classes\Difficulty.lua
 src\Classes\Factions.lua
+src\Classes\FlightPath.lua
 src\Classes\Quests.lua
 src\Classes\Item.Retail.lua
 # src\Classes\Item.Classic.lua
