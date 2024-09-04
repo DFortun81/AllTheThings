@@ -116,7 +116,6 @@ root(ROOTS.Unsorted, {
 			i(229151),	-- Lamplighter's Hatchet
 			i(229153),	-- Lamplighter's Cudgel
 			i(229156),	-- Lamplighter's Great Mallet
-			i(229157),	-- Lamplighter's Bulwark
 			i(229158),	-- Lamplighter's War Knives
 			i(229161),	-- Lamplighter's Chopper
 			i(229162),	-- Lamplighter's Sword

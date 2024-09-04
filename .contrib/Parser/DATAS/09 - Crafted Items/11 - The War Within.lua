@@ -2614,7 +2614,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 446987);	-- Darkmoon Duffle
 			--FirstCraft(XXXXX, 446991);	-- Dawnthread Lining
 			--FirstCraft(XXXXX, 446928);	-- Dawnweave Bolt
-			--FirstCraft(XXXXX, 446977);	-- Dawnweave Reagent Bag
+			FirstCraft(80841, 446977);	-- Dawnweave Reagent Bag
 			--FirstCraft(XXXXX, 447001);	-- Daybreak Spellthread
 			--FirstCraft(XXXXX, 446992);	-- Duskthread Lining
 			--FirstCraft(XXXXX, 446979);	-- Duskweave Bag
