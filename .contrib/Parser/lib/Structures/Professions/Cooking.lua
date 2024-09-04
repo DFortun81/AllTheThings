@@ -315,7 +315,6 @@ TWW_COOKING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(445118),	-- Portioned Steak
 	r(445091),	-- Rib Stickers
 	r(445085),	-- Roasted Mycobloom
-	r(445482),	-- Rockslide Shake
 	r(445102),	-- Salt Baked Seafood
 	r(445097),	-- Salty Dog
 	r(445083),	-- Simple Stew

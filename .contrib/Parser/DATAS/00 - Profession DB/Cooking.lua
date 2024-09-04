@@ -885,7 +885,6 @@ i(0, 445086);		-- Pan-Seared Mycobloom
 i(0, 445118);		-- Portioned Steak
 i(0, 445091);		-- Rib Stickers
 i(0, 445085);		-- Roasted Mycobloom
-i(0, 445482);		-- Rockslide Shake
 i(0, 445102);		-- Salt Baked Seafood
 i(0, 445097);		-- Salty Dog
 i(0, 445083);		-- Simple Stew
@@ -916,6 +915,7 @@ i(228421, 445484);	-- Melted Candlebar
 i(226177, 445111);	-- Outsider's Provisions
 i(228423, 445480);	-- Pep-In-Your-Step
 i(223957, 447871);	-- Protein Slurp
+i(225892, 445482);	-- Rockslide Shake
 i(223958, 447872);	-- Spongey Scramble
 i(226190, 445483);	-- Sticky Sweet Treat
 --- DISCOVERY ---

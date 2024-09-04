@@ -360,7 +360,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78571, {	-- Mycomayhem
 					["sourceQuests"] = { 78570 },	-- Frayed Legacy
 					["provider"] = { "n", 212700 },	-- Woldtender Igris
-					["coord"] = { 53.1, 74.9, ISLE_OF_DORN },
+					["coord"] = { 53.5, 69.9, ISLE_OF_DORN },
 					["g"] = {
 						i(210845),	-- Boskroot Spores (QI!)
 					},
@@ -368,9 +368,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78572, {	-- Wold Memories
 					["sourceQuests"] = { 78571 },	-- Mycomayhem
 					["provider"] = { "n", 212700 },	-- Woldtender Igris
-					["coord"] = { 53.1, 74.9, ISLE_OF_DORN },
+					["coord"] = { 53.5, 69.9, ISLE_OF_DORN },
 					["g"] = {
-						i(216858),	-- Freydrin's Shillelagh (QI!)
+						o(411571, {	-- Freydrin's Shillelagh
+							i(216858),	-- Freydrin's Shillelagh (QI!)
+						}),
 					},
 				}),
 				q(78573, {	-- Keeper's Aid
@@ -647,19 +649,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78757, {	-- Honey and Clay the Pain Away
 					["sourceQuests"] = { 78754 },	-- Lost Delivery
 					["provider"] = { "n", 213691 },	-- Harmot
-					["coord"] = { 69.2, 43.8, ISLE_OF_DORN },
+					["coord"] = { 67, 43.8, ISLE_OF_DORN },
 				}),
 				q(78758, {	-- Pulse within the Earth
 					["sourceQuests"] = { 78757 },	-- Honey and Clay the Pain Away
 					["provider"] = { "n", 213691 },	-- Harmot
-					["coord"] = { 69.2, 43.8, ISLE_OF_DORN },
+					["coord"] = { 67, 43.8, ISLE_OF_DORN },
 				}),
 				q(78755, {	-- Playing in the Mud
 					["sourceQuests"] = { 78758 },	-- Pulse within the Earth
 					["provider"] = { "n", 214921 },	-- Harmot
-					["coord"] = { 69.1, 48.0, ISLE_OF_DORN },
+					["coord"] = { 67, 47.3, ISLE_OF_DORN },
 					["g"] = {
-						i(211485),	-- Elementally Charged Silt (QI!)
+						o(413246, {	-- Elemental Silt Mound
+							i(211485),	-- Elementally Charged Silt (QI!)
+						}),
 						i(211483),	-- Frenzied Sand Globule (QI!)
 						i(211484),	-- Frenzied Water Globule (QI!)
 					},
@@ -667,7 +671,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78756, {	-- Lots and Lots of FIre Honey
 					["sourceQuests"] = { 78758 },	-- Pulse within the Earth
 					["provider"] = { "n", 214922 },	-- Harvester Farnee
-					["coord"] = { 69.2, 47.9, ISLE_OF_DORN },
+					["coord"] = { 67, 47.3, ISLE_OF_DORN },
 					["g"] = {
 						i(211489),	-- Enormous Glob of Fire Honey (QI!)
 					},
@@ -678,7 +682,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78755,	-- Playing in the Mud
 					},
 					["provider"] = { "n", 214921 },	-- Harmot
-					["coord"] = { 69.1, 48.0, ISLE_OF_DORN },
+					["coord"] = { 67, 47.3, ISLE_OF_DORN },
 					["g"] = {
 						i(228380),	-- Earthmender's Signet
 					},
@@ -693,15 +697,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79726, {	-- "Cataloguing"
 					["sourceQuests"] = { 79724 },	-- A Titanic Expedition!
 					["provider"] = { "n", 217656 },	-- Tuberros
-					["coord"] = { 82.2, 27.7, ISLE_OF_DORN },
+					["coord"] = { 77.9, 30.3, ISLE_OF_DORN },
 					["g"] = {
-						i(215233),	-- Titan Artifact (QI!)
+						o(423612, {	-- Titan Artifacts
+							i(215233),	-- Titan Artifact (QI!)
+						}),
 					},
 				}),
 				q(79725, {	-- Not a Heating Pack
 					["sourceQuests"] = { 79724 },	-- A Titanic Expedition!
 					["provider"] = { "n", 217828 },	-- Rannan Korren
-					["coord"] = { 82.2, 27.7, ISLE_OF_DORN },
+					["coord"] = { 77.9, 30.3, ISLE_OF_DORN },
 				}),
 				q(79727, {	-- Because It's Shiny
 					["sourceQuests"] = {
@@ -709,7 +715,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						79725,	-- Not a Heating Pack
 					},
 					["provider"] = { "n", 217659 },	-- Tharessa Sunstrand
-					["coord"] = { 82.2, 27.7, ISLE_OF_DORN },
+					["coord"] = { 77.9, 30.3, ISLE_OF_DORN },
 					["g"] = {
 						i(215234),	-- Titan Artifact (QI!)
 					},
@@ -717,7 +723,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79728, {	-- It's Probably Nothing
 					["sourceQuests"] = { 79727 },	-- Because It's Shiny
 					["provider"] = { "n", 217828 },	-- Rannan Korren
-					["coord"] = { 82.2, 27.7, ISLE_OF_DORN },
+					["coord"] = { 77.9, 30.3, ISLE_OF_DORN },
 				}),
 			}),
 			header(HEADERS.AchCriteria, 20595.08, {	-- Remember Me, Earthen
@@ -1040,9 +1046,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 225478 },	-- Speaker Brinthe
 				["coord"] = { 61.7, 70.2, ISLE_OF_DORN },
 				["g"] = {
-					i(215177),	-- Power Cell (QI!)
-					i(215179),	-- Power Cell (QI!)
-					i(215180),	-- Power Cell (QI!)
+					o(423596, {	-- Sand Pile
+						i(215177),	-- Power Cell (QI!)
+					}),
+					o(423602, {	-- Sand Pile
+						i(215179),	-- Power Cell (QI!)
+					}),
+					o(423603, {	-- Sand Pile
+						i(215180),	-- Power Cell (QI!)
+					}),
 				},
 			}),
 			q(79716, {	-- The History Beneath Us
@@ -1061,7 +1073,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 225478 },	-- Speaker Brinthe
 				["coord"] = { 61.7, 70.2, ISLE_OF_DORN },
 				["g"] = {
-					i(212602),	-- Titan Emitter (QI!)
+					o(423688, {	-- Titan Device
+						i(212602),	-- Titan Emitter (QI!)
+					}),
 				},
 			}),
 			q(83083, {	-- A Place Forgotten
@@ -1074,7 +1088,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 226841 },	-- Speaker Brinthe
 				["coord"] = { 44.9, 20.6, ISLE_OF_DORN },
 				["g"] = {
-					i(226015),	-- Petrified Ironwood Parchment (QI!)
+					o(455170, {	-- Crumbling Ironwood Parchment
+						i(226015),	-- Petrified Ironwood Parchment (QI!)
+					}),
 					i(225888),	-- Titan Emitter (QI!)
 				},
 			}),
