@@ -270,14 +270,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(220133),	-- Flameguard's Band
 					},
 				}),
-				------ Stay awhile and listen ------
-				hqt(81631, {	-- Stay awhile and listen: Faerin Lothar
-					["name"] = "Stay awhile and listen: Faerin Lothar",
-					["sourceQuests"] = { 78624 },	-- A Candle in the Dark
-					["provider"] = { "n", 213107 },	-- Faerin Lothar
-					["coord"] = { 33.5, 54.8, HALLOWFALL },
-				}),
-				--
 				q(79089, {	-- Consecrated Cleanup
 					["sourceQuests"] = { 78624 },	-- A Candle in the Dark
 					["provider"] = { "n", 225188 },	-- General Steelstrike
@@ -288,6 +280,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 213107 },	-- Faerin Lothar
 					["coord"] = { 33.6, 54.8, HALLOWFALL },
 				}),
+				------ Stay awhile and listen ------
+				hqt(81631, {	-- Stay awhile and listen: Faerin Lothar
+					["name"] = "Stay awhile and listen: Faerin Lothar",
+					["sourceQuests"] = { 80049 },	-- The Flame Still Burns
+					["provider"] = { "n", 213107 },	-- Faerin Lothar
+					["coord"] = { 33.5, 54.8, HALLOWFALL },
+				}),
+				--
 				q(78627, {	-- The Final Front
 					["sourceQuests"] = {
 						79089,	-- Consecrated Cleanup
