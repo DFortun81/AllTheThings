@@ -564,12 +564,20 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 		q(56744),	--
 		q(56766),	--
 		q(56844),	--
+		-- 8.2.0.30430
+		q(56898),	--
+		-- 8.2.0.31229
+		q(57408),	--
 		-- 8.2.5
 		q(57550),	--
 		-- 8.3.0
 		q(58576),	--
 		q(59038),	--
 		q(59040),	--
+		-- 8.3.0.32044
+		q(55614),	-- Tracking Quest
+		-- 8.3.7.34872
+		q(59553),	--
 		-- 9.0.1
 		q(62684),	-- Encountered after using Focused Life Anima to create the final possible azerite power available from it (according to ATT), which was Fetish of the Hidden Labyrinths (Anima of Life and Death, Rank 3)?? Maybe new HQT for tracking?
 		q(56067),	--
@@ -581,10 +589,23 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 		q(62377),	--
 		q(62381),	--
 		q(62578),	--
+		-- 9.0.1.34278
+		q(60693),	--
 		-- 9.0.2
 		q(57537),	-- Covering our Tracks
 		q(63219),	-- @ 73.5,91.6,STORMIND_CITY L6 NE Druid, 2022-07-30 // 52.5, 88.1 Orgrimmar 2023-07-03 Goblin Hunter L9
 		-- 9.1.0
+		q(63925),	--
+		q(64110),	--
+		q(64113),	--
+		q(64114),	--
+		q(64115),	--
+		q(64116),	--
+		q(64117),	--
+		q(64118),	--
+		q(64119),	--
+		q(64121),	--
+		q(64127),	--
 		q(64192),	--
 		q(64369),	--
 		q(64516),	--
@@ -595,16 +616,29 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 		q(66034),	-- On Fail, Reset Player [DNT] (spellID 374750) / MDI Quest Trigger
 		q(67045),	--
 		q(71054),	--
+		-- 10.0.2
+		q(72379),	--
+		q(74047),	--
+		q(74064),	--
 		-- 10.0.5
 		q(74897),	-- L70 Human Hunter Achieved Duelist and Clock Mog 2023-03-15
+		q(76157),	--
 		-- 10.1.0
 		q(75443),	-- Flag Tracking Quest (spellID 431951)
 		-- 10.1.5
 		q(76267),	--
+		-- 10.1.7
+		q(78300),	--
+		-- 10.2.0
+		q(78253),	--
+		q(78737),	--
 		-- 10.2.5
 		q(78976),	--
 		q(79125),	--
 		q(79126),	--
 		q(79353),	--
+		q(79474),	--
+		-- 10.2.6
+		q(79988),	--
 	}),
 })));
