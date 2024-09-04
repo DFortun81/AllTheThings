@@ -152,11 +152,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						}),
 					},
 				}),
-				q(81480, {	-- Wild Reagents: Maddening Deep
-					["provider"] = { "n", 224180 },	-- Ghos'opp
-					["coord"] = { 48.4, 61.9, AZJ_KAHET },
+				q(81479, {	-- Requisitions: Umbrashrooms
+					-- ["provider"] = { "n", 224178 },	-- Ghos'opp	-- TODO
+					["coord"] = { 51.8, 16.5, NERUBAR },
 					["g"] = {
-						i(219228),	-- Fetid Slime Sac (QI!)
+						o(437726, {	-- Luminescent Umbrashroom
+							i(219212),	-- Luminescent Umbrashroom (QI!)
+						}),
 					},
 				}),
 				q(81482, {	-- Testing Formulae: Gelatinous Unguent
@@ -164,6 +166,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 50.6, 46.8, NERUBAR },
 					["g"] = {
 						i(219323),	-- Gelatinous Unguent (QI!)
+					},
+				}),
+				q(81502, {	-- Testing Formulae: Malodorous Philter
+					["provider"] = { "n", 224189 },	-- Ghos'opp
+					["coord"] = { 30.9, 23.0, NERUBAR },
+					["g"] = {
+						i(219322),	-- Malodorous Philter (QI!)
+					},
+				}),
+				q(81501, {	-- Testing Formulae: Roiling Elixir
+					["provider"] = { "n", 224188 },	-- Ghos'opp
+					["coord"] = { 47.8, 9.6, NERUBAR },
+					["g"] = {
+						i(219324),	-- Roiling Elixir (QI!)
+					},
+				}),
+				q(81480, {	-- Wild Reagents: Maddening Deep
+					["provider"] = { "n", 224180 },	-- Ghos'opp
+					["coord"] = { 48.4, 61.9, AZJ_KAHET },
+					["g"] = {
+						i(219228),	-- Fetid Slime Sac (QI!)
 					},
 				}),
 				q(81497, {	-- Wild Reagents: Salien Gutters
@@ -185,9 +208,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				["sourceQuestNumRequired"] = 1,
 				["cost"] = {{"i",228949,1}},	-- Rumor Map
 			},{
-				--TODO: Is this in the right spot? - ShadowBrooks
 				q(80573, {	-- Dropping Eaves: Spoils of War
-					-- ["provider"] = { "n", 224196 },	-- Ru'murh
+					-- ["provider"] = { "n", 224196 },	-- Ru'murh	-- TODO
 					["coord"] = { 55, 26.3, NERUBAR },
 					["g"] = {
 						o(437205, {	-- Sureki War Chest
@@ -218,13 +240,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 224197 },	-- Ru'murh
 					["coord"] = { 39.8, 26.6, NERUBAR },
 				}),
-				q(81501, {	-- Testing Formulae: Roiling Elixir
-					["provider"] = { "n", 224188 },	-- Ghos'opp
-					["coord"] = { 47.8, 9.6, NERUBAR },
-					["g"] = {
-						i(219324),	-- Roiling Elixir (QI!)
-					},
-				}),
 				q(81504, {	-- Infiltration: Hidden Figures
 					["provider"] = { "n", 224201 },	-- Ru'murh
 					["coord"] = { 76.2, 47.4, AZJ_KAHET },
@@ -235,16 +250,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81483, {	-- Infiltration: Production Blocker
 					["provider"] = { "n", 224199 },	-- Ru'murh
 					["coord"] = { 45.6, 51.0, NERUBAR_LOWER },
-				}),
-				--TODO: Is this in the right spot? - ShadowBrooks
-				q(81479, {	-- Requisitions: Umbrashrooms
-					-- ["provider"] = { "n", 224178 },	-- Ghos'opp
-					["coord"] = { 51.8, 16.5, NERUBAR },
-					["g"] = {
-						o(437726, {	-- Luminescent Umbrashroom
-							i(219212),	-- Luminescent Umbrashroom (QI!)
-						}),
-					},
 				}),
 				q(81484, {	-- Wet Work: Death of a Salesman
 					["sourceQuest"] = 82581,
@@ -278,7 +283,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 							i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
 							i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
-						}),			
+						}),
 					},
 				}),
 				q(80672, {	-- Hand of the Vizier
@@ -294,7 +299,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 							i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
 							i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
-						}),	
+						}),
 					},
 				}),
 				q(80670, {	-- Eyes of the Weaver
@@ -310,7 +315,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
 							i(223135),	-- Formula: Illusory Adornment: Shadow (RECIPE!)
 							i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
-						}),	
+						}),
 					},
 				}),
 			})),

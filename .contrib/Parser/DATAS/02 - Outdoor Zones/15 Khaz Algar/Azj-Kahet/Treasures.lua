@@ -83,7 +83,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			o(455446, {	-- Aspirant's Tribute
 				["provider"] = { "o", 451603 },	-- Forgotten Memorial
 				["coord"] = { 7.5, 25.7, NERUBAR },
-				-- ["questID"] = xx,
+				["questID"] = 82881,
 			}),
 			o(446140, {	-- Missing Scouts Pack
 				["coord"] = { 40.7, 42.1, AZJ_KAHET },

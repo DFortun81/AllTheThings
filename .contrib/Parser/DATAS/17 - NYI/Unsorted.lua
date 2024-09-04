@@ -993,7 +993,6 @@ root(ROOTS.Unsorted, {
 				i(219214),	-- Cooling Wax
 				i(219215),	-- Wax Puddle
 				i(219293),	-- Sureki Intelligence
-				i(219322),	-- Malodorous Philter
 				i(219350),	-- Maddening Manifest
 				i(219388),	-- Sacred Flame Torch
 				i(219400),	-- Faerin's Torch of Holy Flame
