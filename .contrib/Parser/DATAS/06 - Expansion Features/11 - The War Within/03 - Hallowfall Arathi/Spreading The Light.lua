@@ -396,6 +396,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229081),	-- Aevery's Spare Cowl
 						i(229080),	-- Aevery's Spare Gauntlets
 						i(229075),	-- Azra's Spare Bracers
+						i(229070),	-- Azra's Spare Striders
 						i(229073),	-- Azra's Spare Trousers
 						i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
 						i(229118),	-- Flamestonge's Belt
@@ -411,6 +412,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229097),	-- The Cleansing Flame's Sandals
 						i(229120),	-- Warstone's Breastplate
 						i(229122),	-- Warstone's Gauntlets
+						i(229121),	-- Warstone's Sabatons
 					}),
 					i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
 					i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
@@ -740,20 +742,20 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			--q(80556),	-- Radiant Remnant @ 63.7, 26.3 need objectid
 			q(80531),	-- Radiant Remnant @ 67.2, 26.6 need objectid
 			q(80587),	-- Radiant Remnant @ 62.4, 32.6	need objectid
-
 			q(83518),	-- Radiant Remnant @ 64.3, 28.2	need objectid
 			q(83520),	-- Radiant Remnant @ 66, 28.2	need objectid
 			q(80553),	-- Radiant Remnant @ 65.5, 29.6	need objectid
 			q(80530),	-- Radiant Remnant @ 65.5, 23.4	need objectid
+			q(80554),	-- Radiant Remnant @ 64.4, 28.8
 			-- Small Keyflames
-			q(80005),	-- Empty Crab Cage - Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
-			q(78472),	-- Attica Whiskervale - Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7
-			q(79295),	-- Taerry Bligestone - Hose 'Em Down - Activate, after flare up lesser keyflame @ 65.8, 24.4
-			q(76599),	-- Auebry Irongear - Right Between Gyro-Optics - Activate, after flare up lesser keyflame @ 65.4, 28.1
-			q(78452),	-- Yorvas Flintstrike - Reinforcements - Activate, after flare up lesser keyflame @ 64.6, 30.6
-			q(79383),	-- Erol Ellimoore - Web of Manipulation - Activate, after flare up lesser keyflame @ 63.3, 29.4
-			q(78466),	-- Chef Dinaire - Shadows of Flavor - Activate, after flare up lesser keyflame @ 64.4, 30.9
-			q(78458),	-- Seraphine Seedheart - Harvest Havoc - Activator, after flare up lesser keyflame @ 63.6, 33.6
+			q(80005, {["isWeekly"]=true,}),	-- Empty Crab Cage - Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
+			q(78472, {["isWeekly"]=true,}),	-- Attica Whiskervale - Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7
+			q(79295, {["isWeekly"]=true,}),	-- Taerry Bligestone - Hose 'Em Down - Activate, after flare up lesser keyflame @ 65.8, 24.4
+			q(76599, {["isWeekly"]=true,}),	-- Auebry Irongear - Right Between Gyro-Optics - Activate, after flare up lesser keyflame @ 65.4, 28.1
+			q(78452, {["isWeekly"]=true,}),	-- Yorvas Flintstrike - Reinforcements - Activate, after flare up lesser keyflame @ 64.6, 30.6
+			q(79383, {["isWeekly"]=true,}),	-- Erol Ellimoore - Web of Manipulation - Activate, after flare up lesser keyflame @ 63.3, 29.4
+			q(78466, {["isWeekly"]=true,}),	-- Chef Dinaire - Shadows of Flavor - Activate, after flare up lesser keyflame @ 64.4, 30.9
+			q(78458, {["isWeekly"]=true,}),	-- Seraphine Seedheart - Harvest Havoc - Activator, after flare up lesser keyflame @ 63.6, 33.6
 			--	Rares
 			q(84052),	-- Extra HQT: Crazed Cabbage Smacker
 			q(84054),	-- Extra HQT: Croakit
@@ -766,6 +768,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(84058),	-- Extra HQT: Ravageant
 			q(84056),	-- Extra HQT: Toadstomper
 			---
+			q(79214),	-- after harvester activation @ 61.9, 28.8, he is going to o: 433377 (Harvest Box) and highlight it
 			q(85552),	-- triggered on opening a Lamplighter Supply Satchel, first & second in week - x3 reports
 			q(79177),	-- Snuffling in Hallowfall?
 			--q(79179)	-- ??? "After looting Spider Touched Bag (211973)."

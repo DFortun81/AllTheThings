@@ -112,6 +112,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 57.3, 48.6, HALLOWFALL },
 				["questID"] = 81882,
 				["g"] = {
+					i(221247),	-- Cavernous Critter Shooter (dupe, from Plaguehart - horse-ish type rares?)
 					i(221225),	-- Benevolent Hornstag Cinch
 					i(221246),	-- Fierce Beast Staff
 					i(223007),	-- Lance of Beledar's Pride

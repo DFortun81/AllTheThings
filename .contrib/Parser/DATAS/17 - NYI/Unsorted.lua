@@ -56,7 +56,6 @@ root(ROOTS.Unsorted, {
 			i(229067),	-- Nisa's Spare Leggings
 			i(229068),	-- Nisa's Spare Shoulderpads
 			i(229069),	-- Nisa's Spare Cloak
-			i(229070),	-- Azra's Spare Striders
 			i(229071),	-- Azra's Spare Gloves
 			i(229072),	-- Azra's Spare Mask
 			i(229074),	-- Azra's Spare Cord
@@ -90,7 +89,6 @@ root(ROOTS.Unsorted, {
 			i(229116),	-- Flamestonge's Greaves
 			i(229117),	-- Flamestonge's Shoulderguards
 			i(229119),	-- Flamestonge's Bracers
-			i(229121),	-- Warstone's Sabatons
 			i(229123),	-- Warstone's Helm
 			i(229124),	-- Warstone's Legguards
 			i(229125),	-- Warstone's Mantle
