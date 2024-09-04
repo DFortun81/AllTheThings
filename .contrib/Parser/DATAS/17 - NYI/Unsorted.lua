@@ -1146,10 +1146,7 @@ root(ROOTS.Unsorted, {
 				i(224467),	-- Forgotten Axe
 			}),
 			n(REWARDS, {
-				i(223438),	-- Algari Warden's Vestment
 				i(223444),	-- Arathi Defender's Breeches
-				i(223443),	-- Algari Warden's Hood
-				i(223454),	-- Algari Warden's Greaves
 				i(223458),	-- [PH] 11.0 - Belt
 				i(223585),	-- Algari Bladefist
 				i(223588),	-- Algari Fighting Knife

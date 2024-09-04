@@ -795,6 +795,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 			q(84084, {	-- Just a Pinch
 				["provider"] = { "n", 219085 },	-- Nagad <Enchanting Trainer>
 				["coord"] = { 52.7, 71.1, DORNOGAL },
+				["isWeekly"] = true,
 				["groups"] = {
 					i(227667),	-- Algari Enchanter's Folio
 				},

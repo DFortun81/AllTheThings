@@ -468,7 +468,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["provider"] = { "n", 214271 },	-- General Steelstrike
 					["coord"] = { 71.6, 59.1, HALLOWFALL },
 					["g"] = {
+						i(223454),	-- Algari Warden's Greaves
 						i(223461),	-- Algari Warden's Helm
+						i(223443),	-- Algari Warden's Hood
+						i(223438),	-- Algari Warden's Vestment
 						i(217309),	-- Arathi Warhorn (QI!)
 					},
 				}),
