@@ -269,7 +269,6 @@ root(ROOTS.Unsorted, {
 				--- Notes
 				-- Prof Knowledge
 				i(224782),	-- Razor Talon
-				i(225225),	-- Deepstone Fragment
 				i(227662),	-- Shimmering Dust
 			}),
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace

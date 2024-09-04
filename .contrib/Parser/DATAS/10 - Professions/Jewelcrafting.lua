@@ -938,6 +938,10 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["name"] = "TWW Weekly Jewelcrafting Treasure #1",
 				["provider"] = { "i", 225224 },	-- Diaphanous Gem Shards
 			}),
+			q(83266, {	-- TWW Weekly Jewelcrafting Knowledgepoint #2
+				["name"] = "TWW Weekly Jewelcrafting Treasure #2",
+				["provider"] = { "i", 225225 },	-- Deepstone Fragment
+			}),
 		})),
 	})),
 })));

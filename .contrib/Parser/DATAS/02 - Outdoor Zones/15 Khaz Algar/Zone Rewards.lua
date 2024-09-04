@@ -112,6 +112,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				i(225226),	-- Striated Inkstone
 				i(225227),	-- Wax-Sealed Records
 				-- Jewelcrafting
+				i(225225),	-- Deepstone Fragment
 				i(225224),	-- Diaphanous Gem Shards
 				-- Leatherworking
 				i(225222),	-- Stone-Leather Swatch

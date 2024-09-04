@@ -1086,7 +1086,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			q(82960, {	-- Hillhelm Family: Lily's Locket
 				["provider"] = { "i", 224463 },	-- Lily's Locket (QS!/QI!)
 			}),
-			q(82894, {	-- Hillhelm Family: The Chicken
+			q(82961, {	-- Hillhelm Family: The Chicken
 				["provider"] = { "i", 224466 },	-- Wilber The Chicken (QS!/QI!)
 			}),
 			------ Miscellaneous ------
