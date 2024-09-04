@@ -386,6 +386,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 			},
 		},{
 			q(83097),	-- Cinder and Storm
+			q(83100),	-- Cracking the Shell
 		})),
 		n(TREASURES, {
 			o(455948, {	-- Arathi Craftsman's Spokeshave
