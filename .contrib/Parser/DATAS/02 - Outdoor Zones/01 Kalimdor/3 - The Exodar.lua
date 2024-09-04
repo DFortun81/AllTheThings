@@ -413,6 +413,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				n(221817, {	 -- Gaal <Blacksmith>
 					["coord"] = { 56.6, 81.8, THE_EXODAR},
+					["timeline"] = { ADDED_10_2_7 },
 					["races"] = ALLIANCE_ONLY,
 					["sym"] = {{"select","itemID",
 						208684,		-- Anchorite's Sorrow
