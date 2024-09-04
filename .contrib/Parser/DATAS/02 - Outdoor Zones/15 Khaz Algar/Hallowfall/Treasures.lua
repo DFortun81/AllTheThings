@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(444804, {	-- Concentrated Shadow
-				["description"] = "Spawn only when crystal in zone is purple",
+				["description"] = "Spawns all over the zone only when Beledar shifts into it's Void State.",
 				["maps"] = { HALLOWFALL },
 				--["questID"] = xx,
 				["g"] = {
