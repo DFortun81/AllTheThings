@@ -214,7 +214,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81090, 430315);	-- Thaumaturgy
 			--FirstCraft(QuestID, 427174);	-- Wild Experimentation
 			-- Reagents
-			--FirstCraft(XXXXX, 462121);	-- Bubbling Mycobloom Culture
+			FirstCraft(84492, 462121);	-- Bubbling Mycobloom Culture
 			FirstCraft(81129, 432204);	-- Harmonious Horticulture
 			FirstCraft(84493, 462122);	-- Petal Powder
 			-- Basic Concoctions
@@ -2673,6 +2673,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			--q(81898),	-- Together with First Craft of Flask of Alchemical Chaos
 
 			--q(78604),	-- Randomly when crafting Wild Experimentation
+						-- When learning Algari Mana Potion (first use of Mycobloom in Wild Experimentation)
+
+
 			--q(81090),	-- Randomly when crafting Wild Experimentation
 						-- Randomly when crafting Thaumaturgy
 		}),

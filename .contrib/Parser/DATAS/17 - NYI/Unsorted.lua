@@ -904,7 +904,6 @@ root(ROOTS.Unsorted, {
 				i(226152),	-- Wax-sealed Crests
 				i(226153),	-- Big Pile of Humming Shinies
 				i(226154),	-- Wax-Sealed Crafty Crest
-				i(226155),	-- Big Candle
 				i(226156),	-- Really Big Candle
 				i(226257),	-- Delver's Pouch of Valorstones
 				i(226260),	-- Delver's Pouch of Gold

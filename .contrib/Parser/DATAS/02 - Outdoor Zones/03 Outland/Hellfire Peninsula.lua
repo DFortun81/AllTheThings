@@ -366,13 +366,11 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.6, 62.4, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					-- #if ANYCLASSIC
 					fp(149, {	-- Shatter Point, Hellfire Peninsula
 						["cr"] = 20234,	-- Runetog Wildhammer <Gryphon Master>
 						["coord"] = { 78.4, 34.9, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					-- #endif
 					fp(141, {	-- Spinebreaker Ridge, Hellfire Peninsula
 						["cr"] = 19558,	-- Amilya Airheart <Wind Rider Master>
 						["coord"] = { 61.6, 81.2, HELLFIRE_PENINSULA },

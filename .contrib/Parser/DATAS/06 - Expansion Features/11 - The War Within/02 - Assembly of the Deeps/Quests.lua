@@ -89,6 +89,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(85540, {	-- Take Big Candle!
 					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
+					["g"] = {
+						i(226155),	-- Big Candle
+					},
 				}),
 				q(82375, {	-- Take Key!
 					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
