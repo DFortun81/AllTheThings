@@ -3345,6 +3345,7 @@ local keys = {
 [83262]="TWW Weekly Inscription Treasure #2",
 [83264]="TWW Weekly Inscription Treasure #1",
 [83265]="TWW Weekly Jewelcrafting Treasure #1",
+[83266]="TWW Weekly Jewelcrafting Treasure #2",
 [83267]="TWW Weekly Leatherworking Treasure #1",
 [83268]="TWW Weekly Leatherworking Treasure #2",
 [83269]="TWW Weekly Tailoring Treasure #2",

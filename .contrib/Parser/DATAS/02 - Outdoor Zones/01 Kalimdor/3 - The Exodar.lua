@@ -411,6 +411,21 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 						4565,    -- Simple Dagger
 					}},
 				}),
+				n(221817, {	 -- Gaal <Blacksmith>
+					["coord"] = { 56.6, 81.8, THE_EXODAR},
+					["races"] = ALLIANCE_ONLY,
+					["sym"] = {{"select","itemID",
+						208684,		-- Anchorite's Sorrow
+						208755,		-- Ancient Soulpriest's Staff
+						208683,		-- Arinor Ritual Baton
+						208677,		-- Eredath Crystal Hammer
+						208662,		-- Lightforged Seeker
+						206195,		-- Path of the Naaru (TOY!)
+						208685,		-- Recovered Kaarinos Blade
+						208688,		-- Telaasti Mining Pick
+						208686,		-- Velenite Claymore
+					}},
+				}),
 				n(16716, {	-- Gornii <Cloth Armor Merchant>
 					["coord"] = { 71.5, 91.7, THE_EXODAR },
 					["races"] = ALLIANCE_ONLY,
