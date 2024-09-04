@@ -3394,6 +3394,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					}),
 					i(171364, {	-- Darkmoon Top Hat
 						["timeline"] = { ADDED_8_2_5 },
+						["description"] = "Does not stack with the 'WHEE'-buff from Darkmoon Faire, and will replace it!",
 					}),
 					i(73765, {	-- Darkmoon Turtle  (PET!)
 						["timeline"] = { ADDED_4_3_0 },
