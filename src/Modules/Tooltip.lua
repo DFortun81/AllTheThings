@@ -295,15 +295,15 @@ for i,guid in ipairs({
 	-- Darkal
 	"Player-3391-0A512DEB",	-- Claella-Silvermoon EU
 	"Player-3391-07DAA0FA",	-- Cresaida-Silvermoon EU
-	"Player-3391-0CA26A8E",	-- Darkaldh-Silvermoon EU
+	"Player-3391-0CF60215",	-- Darkaldh-Silvermoon EU
 	"Player-3391-07B0B708",	-- Darkas-Silvermoon EU
 	"Player-3391-07DB0DD7",	-- Darkgrip-Silvermoon EU
 	"Player-3391-08E7E3F5",	-- Delonna-Silvermoon EU
 	"Player-3391-09E34204",	-- Kinquin-Silvermoon EU
-	"Player-3391-0C5619B9",	-- Lynnan-Silvermoon EU
+	"Player-3391-0C5619B9",	-- Sarkoth-Silvermoon EU
 	"Player-3391-07568D56",	-- Maylesa-Silvermoon EU
 	"Player-3391-082E58AE",	-- Eliclia-Silvermoon EU
-	"Player-3391-0CC7EE6E",	-- Palach-Silvermoon EU
+	"Player-3391-0CF60219",	-- Palach-Silvermoon EU
 	"Player-3391-0757575C",	-- Sianor-Silvermoon EU
 	"Player-3391-08D25BFA",	-- Smesue-Silvermoon EU
 	-- Danny Donkey

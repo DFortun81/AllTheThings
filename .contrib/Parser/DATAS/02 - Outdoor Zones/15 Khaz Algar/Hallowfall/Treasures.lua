@@ -237,7 +237,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			o(419729, {	-- Strange Eggs
 				["coord"] = { 67.1, 21.8, HALLOWFALL },
-				["questID"] = 83032,
+				--["questID"] = 83032, -- I looted it with some characters and never got any questID - Darkal
 				["g"] = {
 					i(212331),	-- The Unusual Bug
 				},
