@@ -407,6 +407,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229118),	-- Flamestonge's Belt
 						i(229106),	-- Ironstrike's Grips
 						i(229092),	-- Kyros's Spare Girdle
+						i(229135),	-- Lamplighter Elite's Blade
 						i(229145),	-- Lamplighter Elite's Shield
 						i(229152),	-- Lamplighter's Battleaxe
 						i(229157),	-- Lamplighter's Bulwark

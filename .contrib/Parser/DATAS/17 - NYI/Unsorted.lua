@@ -97,7 +97,6 @@ root(ROOTS.Unsorted, {
 			i(229132),	-- Lamplighter Elite's Ritual Knife
 			i(229133),	-- Lamplighter Elite's Great Mallet
 			i(229134),	-- Lamplighter Elite's Hammer
-			i(229135),	-- Lamplighter Elite's Blade
 			i(229136),	-- Lamplighter Elite's Sword
 			i(229137),	-- Lamplighter Elite's Slugthrower
 			i(229138),	-- Lamplighter Elite's Mace
