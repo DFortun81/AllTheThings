@@ -1149,6 +1149,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(216889),	-- Log Entry 893-03-9 (QI!)
 				},
 			}),
+			q(85648, {	-- Delver's Call: Earthcrawl Mines
+				["provider"] = { "o", 455716 },	-- DELVER'S CALL
+				["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
+			}),
 			q(84220, {	-- Passage to the Ringing Deeps
 				["sourceQuests"] = { 78546 },	-- Recompense
 				["provider"] = { "n", 228304 },	-- Oathsworn Earthen
