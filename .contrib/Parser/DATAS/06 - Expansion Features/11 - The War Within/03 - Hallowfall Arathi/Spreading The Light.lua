@@ -415,6 +415,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229155),	-- Lamplighter's Greataxe
 						i(229061),	-- Nisa's Spare Belt
 						i(229064),	-- Nisa's Spare Shoes
+						i(229102),	-- The Cleansing Flame's Cord
 						i(229099),	-- The Cleansing Flame's Cowl
 						i(229103),	-- The Cleansing Flame's Cuffs
 						i(229098),	-- The Cleansing Flame's Handwraps

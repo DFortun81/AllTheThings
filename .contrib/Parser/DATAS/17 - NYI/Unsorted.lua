@@ -70,7 +70,6 @@ root(ROOTS.Unsorted, {
 			i(229093),	-- Kyros's Spare Cuffs
 			i(229096),	-- The Cleansing Flame's Robes
 			i(229101),	-- The Cleansing Flame's Shoulderpads
-			i(229102),	-- The Cleansing Flame's Cord
 			i(229104),	-- Ironstrike's Vest
 			i(229105),	-- Ironstrike's Waders
 			i(229107),	-- Ironstrike's Headgear
@@ -972,7 +971,6 @@ root(ROOTS.Unsorted, {
 				i(217312),	-- The Foreman's Third Scroll
 				i(217400),	-- Kobyss Lure
 				i(217506),	-- Test Item [DNT]
-				i(217996),	-- Sureki Tithe
 				i(218084),	-- Crumpled Note
 				i(218104),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
 				i(218127),	-- Ever-Blossoming Fungi

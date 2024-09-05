@@ -104,7 +104,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 224162 },	-- Eirzay
 					["coord"] = { 30.6, 42.6, NERUBAR },
 				}),
-				q(81494, {	-- Relics of War: Rak-Ahat
+				q(81494, {	-- Relics of War: Rak-Zakaz
 					["provider"] = { "n", 224176 },	-- Eirzay
 					["coord"] = { 63.8, 26.3, NERUBAR_LOWER },
 					["g"] = {
@@ -136,13 +136,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				},
 				["sourceQuestNumRequired"] = 1,
 			},{
-				q(81473, {	-- Information Control: The Right Side of History
-					["provider"] = { "n", 224196 },	-- Ru'murh
-					["coord"] = { 77.8, 53.9, NERUBAR },
-					["g"] = {
-						--
-					},
-				}),
 				q(81495, {	-- Requisitions: Brightblooms
 					["provider"] = { "n", 224178 },	-- Ghos'opp
 					["coord"] = { 64.2, 21.4, NERUBAR },
@@ -160,6 +153,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(219212),	-- Luminescent Umbrashroom (QI!)
 						}),
 					},
+				}),
+				q(81506, {	-- Sabotage: Alchemical Instruments
+					["provider"] = { "n", 224186 },	-- Ghos'opp
+					["coord"] = { 54.6, 15.5, AZJ_KAHET },
 				}),
 				q(81505, {	-- Sabotage: Venomancers
 					["provider"] = { "n", 224184 },	-- Ghos'opp
@@ -198,6 +195,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 61.1, 74.7, AZJ_KAHET },
 					["g"] = {
 						i(219227),	-- Swollen Kobyss Eye (QI!)
+					},
+				}),
+				q(81498, {	-- Wild Reagents: Twitching Gorge
+					--["provider"] = { "n", 224181 },	-- Ghos'opp TODO
+					["coord"] = { 47.1, 58.7, AZJ_KAHET },
+					["g"] = {
+						i(219254),	-- Writhing Antennae (QI!)
 					},
 				}),
 			})),
@@ -244,6 +248,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 224197 },	-- Ru'murh
 					["coord"] = { 39.8, 26.6, NERUBAR },
 				}),
+				q(81473, {	-- Information Control: The Right Side of History
+					["provider"] = { "n", 224196 },	-- Ru'murh
+					["coord"] = { 77.8, 53.9, NERUBAR },
+				}),
 				q(81504, {	-- Infiltration: Hidden Figures
 					["provider"] = { "n", 224201 },	-- Ru'murh
 					["coord"] = { 76.2, 47.4, AZJ_KAHET },
@@ -261,6 +269,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 68.5, 51, NERUBAR },
 					["g"] = {
 						i(219292),	-- Perplexing Contraband (QI!)
+					},
+				}),
+				q(81484, {	-- Wet Work: Tithe to Kill
+					--["sourceQuest"] = 82581,	TODO
+					--["provider"] = { "n", 224201 },	-- Ru'murh
+					["coord"] = { 41.5, 22.4, NERUBAR },
+					["g"] = {
+						i(217996),	-- Sureki Tithe (QI!)
 					},
 				}),
 			})),

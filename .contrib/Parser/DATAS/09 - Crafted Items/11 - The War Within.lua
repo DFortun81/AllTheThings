@@ -2406,6 +2406,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(83403, 221786),	-- Skinning Pride of Beledar
 			FirstSkin(85547, 207826),	-- Skinning Ravageant
 			FirstSkin(85550, 219278),	-- Skinning Shallowshell the Clacker
+			FirstSkin(84259, 228439),	-- Skinning Slatefang
 			FirstSkin(83405, 221217),	-- Skinning Spore-infused Shalewing
 			FirstSkin(85551, 221690),	-- Skinning Strength of Beledar
 			FirstSkin(83407, 221126),	-- Skinning Tephratennae
@@ -2674,6 +2675,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 
 			--q(78604),	-- Randomly when crafting Wild Experimentation
 						-- When learning Algari Mana Potion (first use of Mycobloom in Wild Experimentation)
+						-- "was doing DF experiments in dornigal"
 
 
 			--q(81090),	-- Randomly when crafting Wild Experimentation
