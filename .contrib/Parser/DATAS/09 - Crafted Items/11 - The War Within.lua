@@ -2618,7 +2618,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			--FirstCraft(XXXXX, 447001);	-- Daybreak Spellthread
 			--FirstCraft(XXXXX, 446992);	-- Duskthread Lining
 			FirstCraft(80843, 446979);	-- Duskweave Bag
-			--FirstCraft(XXXXX, 446927);	-- Duskweave Bolt
+			FirstCraft(80800, 446927);	-- Duskweave Bolt
 			FirstCraft(80853, 446989);	-- Excavator's Haversack
 			FirstCraft(80867, 454397);	-- Exquisite Weavercloth Bolt
 			FirstCraft(80852, 446988);	-- Gardener's Seed Satchel

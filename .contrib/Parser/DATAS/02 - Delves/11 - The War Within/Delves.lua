@@ -679,7 +679,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(83770, {	-- Delver's Call: Spiral Weave
 					["provider"] = { "n", 211721 },	-- Sir Jonathan Trueheart
-					["coord"] = { 59.2, 25.1, AZJ_KAHET },
+					["coord"] = { 58.9, 18.6, AZJ_KAHET },
 				}),
 			}),
 			n(TREASURES, {

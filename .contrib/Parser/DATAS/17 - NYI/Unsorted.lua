@@ -48,7 +48,6 @@ root(ROOTS.Unsorted, {
 			i(228751),	-- Gigantic Grrloc
 			i(229062),	-- Nisa's Spare Coronet
 			i(229063),	-- Nisa's Spare Wristguards
-			i(229064),	-- Nisa's Spare Shoes
 			i(229065),	-- Nisa's Spare Gloves
 			i(229066),	-- Nisa's Spare Cassock
 			i(229067),	-- Nisa's Spare Leggings
@@ -77,8 +76,7 @@ root(ROOTS.Unsorted, {
 			i(229107),	-- Ironstrike's Headgear
 			i(229108),	-- Ironstrike's Breeches
 			i(229109),	-- Ironstrike's Epaulets
-			i(229110),	-- Ironstrike's Sash
-			i(229111),	-- Ironstrike's Bindings
+			i(229110),	-- Ironstrike's
 			i(229112),	-- Flamestonge's Chainmail
 			i(229113),	-- Flamestonge's Striders
 			i(229114),	-- Flamestonge's Grips

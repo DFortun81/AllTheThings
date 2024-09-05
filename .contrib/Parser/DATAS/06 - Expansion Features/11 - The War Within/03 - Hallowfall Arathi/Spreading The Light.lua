@@ -405,6 +405,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229073),	-- Azra's Spare Trousers
 						i(223318),	-- Dauntless Imperial Lynx (MOUNT!)
 						i(229118),	-- Flamestonge's Belt
+						i(229111),	-- Ironstrike's Bindings
 						i(229106),	-- Ironstrike's Grips
 						i(229092),	-- Kyros's Spare Girdle
 						i(229135),	-- Lamplighter Elite's Blade
@@ -413,6 +414,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229157),	-- Lamplighter's Bulwark
 						i(229155),	-- Lamplighter's Greataxe
 						i(229061),	-- Nisa's Spare Belt
+						i(229064),	-- Nisa's Spare Shoes
 						i(229099),	-- The Cleansing Flame's Cowl
 						i(229103),	-- The Cleansing Flame's Cuffs
 						i(229098),	-- The Cleansing Flame's Handwraps
