@@ -1276,44 +1276,34 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(DRAGON_ISLES, {
 		m(THALDRASZUS, {
-			q(67030),	-- Unlocks access to Adventure Mode within the Dragon Isles (spellID 393788 & 377069)
-			q(72366, {["name"] = "Dragonflight Campaign Completed [Account]"}),	-- triggered after completing 'Moving On' (questID 66221)
-			q(72369, {["repeatable"] = true}),	-- flags complete while 'Aiding the Accord' is active/completed
-			q(72084),	-- Triggers during 'The Fog of Battle' (questID 66246) (spellID 392476)
-			q(72110),	-- when delivering Gleamfish to spawn 'The Great Shellkhan' (spellID 392694)
-			q(72125),	-- Triggers during 'Tying Things Together' (questID 66248) (spellID 392925)
-			-- Achievement Framing a New Perspective
-			q(72142),	-- The Seat of the Aspects
-			q(72143),	-- The Cascades
-			q(72144),	-- Passage of Time
-			q(72145),	-- Vault of the Incarnates
-			q(72146),	-- Tryhold
-			q(72147),	-- Algeth'era Court
-			q(72148),	-- Veiled Ossuary
-			q(72149),	-- Serene Dreams Spa
-			q(72150),	-- Shadow Ledge
-			q(72151),	-- Valdrakken's Portal Room
-			q(72152),	-- Tryhold Reservoir
-			-- During Solicited Opinions (72418)
-			q(75199, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 3 answer 3
-			q(75198, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 3 answer 2
-			q(75197, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 3 answer 1
-			q(75196, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 2 answer 3
-			q(75195, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 2 answer 2
-			q(75194, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 2 answer 1
-			q(75193, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 1 answer 3
-			q(75192, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 1 answer 2
-			q(75191, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 1 answer 1
-			------ Stay awhile and listen ------
-			hqt(73960),	-- Stay awhile and listen (spellID 406027)
-			-- 10.1.7
-			-- Nozdormu & Eternus
-			q(77422, {["timeline"] = {ADDED_10_1_7}}),	-- qID 76407 - Timeport to Tanaris (spellID 414260)
-			q(77612, {["timeline"] = {ADDED_10_1_7}}),	-- Dialog option 1 during qID 76421 - (spellID 419463 - Option 1 [DNT])
-			q(77613, {["timeline"] = {ADDED_10_1_7}}),	-- Dialog option 2 during qID 76421 - <Well, your way hasn't worked so far...> - (spellID 419464 - Option 2 [DNT])
-			q(77614, {["timeline"] = {ADDED_10_1_7}}),	-- Dialog option 3 during qID 76421 - (spellID 419466 - Option 3 [DNT])
-			q(78173, {["timeline"] = {ADDED_10_1_7}}),	-- Ensemble: Temporal Burdens (itemID 210024) (spellID 424097)
-			q(78191, {["timeline"] = {ADDED_10_1_7}}),	-- Ensemble: Temporal Burdens (itemID 210024) (spellID 424247)
+			n(QUESTS, {
+				q(67030),	-- Unlocks access to Adventure Mode within the Dragon Isles (spellID 393788 & 377069)
+				q(72366, {["name"] = "Dragonflight Campaign Completed [Account]"}),	-- triggered after completing 'Moving On' (questID 66221)
+				q(72369, {["repeatable"] = true}),	-- flags complete while 'Aiding the Accord' is active/completed
+				q(72084),	-- Triggers during 'The Fog of Battle' (questID 66246) (spellID 392476)
+				q(72110),	-- when delivering Gleamfish to spawn 'The Great Shellkhan' (spellID 392694)
+				q(72125),	-- Triggers during 'Tying Things Together' (questID 66248) (spellID 392925)
+				-- During Solicited Opinions (72418)
+				q(75199, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 3 answer 3
+				q(75198, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 3 answer 2
+				q(75197, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 3 answer 1
+				q(75196, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 2 answer 3
+				q(75195, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 2 answer 2
+				q(75194, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 2 answer 1
+				q(75193, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 1 answer 3
+				q(75192, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 1 answer 2
+				q(75191, {["timeline"] = {ADDED_10_1_0}}),    -- Solicited Opinions question 1 answer 1
+				------ Stay awhile and listen ------
+				hqt(73960),	-- Stay awhile and listen (spellID 406027)
+				-- 10.1.7
+				-- Nozdormu & Eternus
+				q(77422, {["timeline"] = {ADDED_10_1_7}}),	-- qID 76407 - Timeport to Tanaris (spellID 414260)
+				q(77612, {["timeline"] = {ADDED_10_1_7}}),	-- Dialog option 1 during qID 76421 - (spellID 419463 - Option 1 [DNT])
+				q(77613, {["timeline"] = {ADDED_10_1_7}}),	-- Dialog option 2 during qID 76421 - <Well, your way hasn't worked so far...> - (spellID 419464 - Option 2 [DNT])
+				q(77614, {["timeline"] = {ADDED_10_1_7}}),	-- Dialog option 3 during qID 76421 - (spellID 419466 - Option 3 [DNT])
+				q(78173, {["timeline"] = {ADDED_10_1_7}}),	-- Ensemble: Temporal Burdens (itemID 210024) (spellID 424097)
+				q(78191, {["timeline"] = {ADDED_10_1_7}}),	-- Ensemble: Temporal Burdens (itemID 210024) (spellID 424247)
+			}),
 		}),
 	}),
 })));

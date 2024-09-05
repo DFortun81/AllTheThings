@@ -163,7 +163,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
 	m(DRAGON_ISLES, {
 		m(EMERALD_DREAM, {
-			q(78660),	-- server side script for deer that bring warglaive (spellID 427482) (I miss npcID .-.)
+			n(SPECIAL, {
+				q(78660),	-- server side script for deer that bring warglaive (spellID 427482) (I miss npcID .-.)
+			}),
 		}),
 	}),
 })));

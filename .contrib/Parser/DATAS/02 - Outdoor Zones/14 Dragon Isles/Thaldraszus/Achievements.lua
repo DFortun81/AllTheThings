@@ -118,3 +118,23 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		}),
 	}),
 })));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	m(DRAGON_ISLES, {
+		m(THALDRASZUS, {
+			n(ACHIEVEMENTS, {
+				-- Achievement Framing a New Perspective
+				q(72142),	-- The Seat of the Aspects
+				q(72143),	-- The Cascades
+				q(72144),	-- Passage of Time
+				q(72145),	-- Vault of the Incarnates
+				q(72146),	-- Tryhold
+				q(72147),	-- Algeth'era Court
+				q(72148),	-- Veiled Ossuary
+				q(72149),	-- Serene Dreams Spa
+				q(72150),	-- Shadow Ledge
+				q(72151),	-- Valdrakken's Portal Room
+				q(72152),	-- Tryhold Reservoir
+			}),
+		}),
+	}),
+})));

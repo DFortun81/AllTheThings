@@ -80,6 +80,3 @@ root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.DF),
 	expansion(EXPANSION.TWW),
 });
-root(ROOTS.Sourceless, {
-	-- TODO, but maybe not needed if Sourceless stays in a single file
-});

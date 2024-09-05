@@ -388,7 +388,7 @@ root(ROOTS.Sourceless, {
 				i(107644),	-- Napmaster's Sleep Mask
 			})),
 		}),
-		expansion(EXPANSION.BFA, {
+		expansion(EXPANSION.BFA, {	-- TODO: I really need to take a look at this one day and remove wrong itemIDs - Darkal
 			-- 8.0.1
 			expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				-- Drustvar items = Nazmir quest rewards
@@ -476,7 +476,7 @@ root(ROOTS.Sourceless, {
 			})),
 		}),
 	})),
-	n(QUESTS, {	-- These are/were completable
+	n(QUESTS, {	-- These are or were completable. Most of these are HQTs.
 		expansion(EXPANSION.CLASSIC, {
 			-- 1.x.x
 			n(P1xx, {

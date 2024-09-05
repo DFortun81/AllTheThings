@@ -5,17 +5,28 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }
 	header(HEADERS.Quest, 79009, {	-- The Harbinger
 		q(79009, {	-- The Harbinger
 			-- Auto accepted when logging in
+			["groups"] = {
+				i(223988),  -- Dalaran Hearthstone (QI!)
+			},
+		}),
+		q(81654, {	-- The Harbinger
 			["provider"] = { "n", 221491 },	-- Khadgar's Summons
-			["coords"] = {
-				-- { X, Y, STORMWIND_CITY },
-				{ 41.4, 75.5, ORGRIMMAR },
+			["aqd"] = {
+				["coord"] = { 84.8, 25.2, STORMWIND_CITY },
+			},
+			["hqd"] = {
+				["coord"] = { 41.4, 75.6, ORGRIMMAR },
 			},
 			["groups"] = {
 				i(223988),  -- Dalaran Hearthstone (QI!)
 			},
 		}),
 		q(79010, {	-- Door to the Ren'dorei
-			["sourceQuests"] = { 79009 },	-- The Harbinger
+			["sourceQuests"] = {
+				79009,	-- The Harbinger
+				81654,	-- The Harbinger
+			},
+			["sourceQuestNumRequired"] = 1,
 			["provider"] = { "n", 215013 },	-- Alleria Windrunner
 			["coord"] = { 31.4, 41.8, AEGWYNNS_GALLERY },
 		}),
@@ -93,7 +104,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }, {
 	m(DRAGON_ISLES, {
 		header(HEADERS.Quest, 79009, {	-- The Harbinger
-			q(81654),	-- Triggered with completion of Quest 79009
 			q(80199),	-- Bow of the Ranger Captain
 			q(80450),	-- Arsenal: Voidtouched Weaponry
 			q(80198),	-- Triggered with completion of Quest 79016
