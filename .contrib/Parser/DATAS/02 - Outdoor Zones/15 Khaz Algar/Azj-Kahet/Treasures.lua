@@ -174,7 +174,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(454340, {	-- Thimble's Cache
-				["description"] = "Interact with Thimble and follow him to reveal cache",
+				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
 				["provider"] = { "n", 224893 },	-- Thimble // Weave-Rat Cache (vignette)
 				["questID"] = 82859,
 				["coords"] = {
@@ -186,7 +186,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(434527, {	-- Thimble's Cache
-				["description"] = "Interact with Thimble and follow him to reveal cache",
+				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
 				["provider"] = { "n", 226528 },	-- Thimble // Weave-Rat Cache (vignette)
 				["questID"] = 82856,
 				["coords"] = {
@@ -198,7 +198,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(454342, {	-- Thimble's Cache
-				["description"] = "Interact with Thimble and follow him to reveal cache",
+				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
 				["provider"] = { "n", 224895 },	-- Thimble // Weave-Rat Cache (vignette)
 				["questID"] = 82862,
 				["coords"] = {
@@ -210,7 +210,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(454337, {	-- Thimble's Cache
-				["description"] = "Interact with Thimble and follow him to reveal cache",
+				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
 				["provider"] = { "n", 224891 },	-- Thimble // Weave-Rat Cache (vignette)
 				["questID"] = 82858,
 				["coords"] = {
@@ -222,7 +222,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(454331, {	-- Thimble's Cache
-				["description"] = "Interact with Thimble and follow him to reveal cache",
+				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
 				["provider"] = { "n", 224888 },	-- Thimble // Weave-Rat Cache (vignette)
 				["questID"] = 82855,
 				["coords"] = {

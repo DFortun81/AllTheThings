@@ -418,6 +418,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229097),	-- The Cleansing Flame's Sandals
 						i(229120),	-- Warstone's Breastplate
 						i(229122),	-- Warstone's Gauntlets
+						i(229123),	-- Warstone's Helm
 						i(229121),	-- Warstone's Sabatons
 					}),
 					i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)

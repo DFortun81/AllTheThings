@@ -777,7 +777,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				o(413590, {	-- Bountiful Coffer
 					["coord"] = { 45.3, 95.3, THE_WATERWORKS },
-					--["questID"] = 83319,
 				}),
 			}),
 		},
@@ -1534,6 +1533,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(82942),	-- The Spiral Weave
 		q(82943),	-- The Underkeep
 		q(82945),	-- The Waterworks
+		-- One time rep bonus from Bountiful Delves
+		q(83317), 	-- Council of Dornogal
+		q(83318), 	-- Assembly of the Deeps
+		q(83319), 	-- Severed Threads
+		q(83320),	-- Hallowfall Arathi
 		-- Restored Coffer Key (Pop from any weekly activity, orders (of activity) doesn't matter)
 		q(84736, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 1st
 		q(84737, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 2nd
