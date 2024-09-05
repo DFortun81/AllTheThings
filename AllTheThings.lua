@@ -8358,6 +8358,7 @@ function app:GetDataCache()
 			-- Professions
 			app.CreateDynamicHeaderByValue("professionID", {
 				dynamic_withsubgroups = true,
+				dynamic_valueField = "requireSkill",
 				name = TRADE_SKILLS,
 				icon = app.asset("Category_Professions")
 			}),
@@ -9188,6 +9189,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			self:Update();
 		end
 		-- local C_Map_GetMapChildrenInfo = C_Map.GetMapChildrenInfo;
+
 		-- Wraps a given object such that it can act as an unfiltered Header of the base group
 		local CreateWrapVisualHeader = app.CreateVisualHeaderWithGroups
 		-- Returns the consolidated data format for the next header level
@@ -12163,6 +12165,7 @@ app.LoadDebugger = function()
 				key = 1,
 				visible = 1,
 				displayInfo = 1,
+				displayID = 1,
 				fetchedDisplayID = 1,
 				nmr = 1,
 				nmc = 1,

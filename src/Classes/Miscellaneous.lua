@@ -11,6 +11,7 @@ local NestObjects, CreateObject, NestObject, SearchForFieldContainer, SearchForO
 
 local DynamicDataCache = app.CreateDataCache("dynamic", true);
 local Runner = app.CreateRunner("dynamic");
+Runner.SetPerFrameDefault(5)
 
 -- Miscellaneous API Implementation
 -- Access via AllTheThings.Modules.Miscellaneous
@@ -39,6 +40,7 @@ local function RecursiveParentMapper(group, field, value)
 		RecursiveParentMapping[group] = mapped;
 		return mapped;
 	end
+	-- this happens when we find unsorted cached content
 end
 
 
@@ -61,6 +63,26 @@ local DynamicCategory_Nested = function(self)
 	app.DirectGroupUpdate(self);
 end
 
+local function CreateTopHeaderCache()
+	local topheaders
+	topheaders = setmetatable({}, { __index = function(t,group)
+		local text = group and group.text
+		if not text then
+			-- this happens when we find unsorted cached content
+			return
+		end
+
+		local top = topheaders[text]
+		if not top then
+			top = app.CreateVisualHeaderWithGroups(group)
+			topheaders[text] = top
+			topheaders[group] = top
+		end
+
+		return top
+	end})
+	return topheaders
+end
 -- Common function set as the OnClick for a group which will build itself a 'simple' version of the
 -- content which matches the specified .dynamic 'field' of the group
 -- NOTE: Content must be cached using the dynamic 'field'
@@ -68,8 +90,8 @@ local DynamicCategory_Simple = function(self)
 	local dynamicCache = app.GetRawFieldContainer(self.dynamic);
 	if dynamicCache then
 		local rootATT = app:GetWindow("Prime").data;
-		local top, topText, thing;
-		local topHeaders, dynamicValue, clearSubgroups = {}, self.dynamic_value, not self.dynamic_withsubgroups;
+		local top, thing;
+		local topHeaders, dynamicValue, clearSubgroups = CreateTopHeaderCache(), self.dynamic_value, not self.dynamic_withsubgroups;
 		if dynamicValue then
 			local dynamicValueCache, thingKeys = dynamicCache[dynamicValue], app.ThingKeys;
 			if dynamicValueCache then
@@ -78,21 +100,13 @@ local DynamicCategory_Simple = function(self)
 					-- only pull in actual 'Things' to the simple dynamic group
 					if thingKeys[source.key] then
 						-- find the top-level parent of the Thing
-						top = RecursiveParentMapper(source, "parent", rootATT);
-						-- create/match the expected top header
-						topText = top and top.text;
-						if topText then
-							-- store a copy of this top header if we dont have it
-							if not topHeaders[topText] then
-								-- app.PrintDebug("New Dynamic Top",self.dynamic,":",dynamicValue,"==>",topText)
-								topHeaders[topText] = CreateObject(top, true);
-								-- app.PrintTable(topHeaders[topText])
-							end
+						top = topHeaders[RecursiveParentMapper(source, "parent", rootATT)]
+						if top then
 							-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
 							-- remove it from being considered a cost within the dynamic category
 							thing = CreateObject(source, clearSubgroups);
 							thing.collectibleAsCost = false;
-							NestObject(topHeaders[topText], thing);
+							NestObject(top, thing);
 						end
 					end
 				end
@@ -106,21 +120,13 @@ local DynamicCategory_Simple = function(self)
 			for id,sources in pairs(dynamicCache) do
 				for _,source in pairs(sources) do
 					-- find the top-level parent of the Thing
-					top = RecursiveParentMapper(source, "parent", rootATT);
-					-- create/match the expected top header
-					topText = top and top.text;
-					if topText then
-						-- store a copy of this top header if we dont have it
-						if not topHeaders[topText] then
-							-- app.PrintDebug("New Dynamic Top",self.dynamic,":",dynamicValue,"==>",topText)
-							topHeaders[topText] = CreateObject(top, true);
-							-- app.PrintTable(topHeaders[topText])
-						end
+					top = topHeaders[RecursiveParentMapper(source, "parent", rootATT)]
+					if top then
 						-- put a copy of the Thing into the matching top category (no uniques since only 1 per cached Thing)
 						-- remove it from being considered a cost within the dynamic category
 						thing = CreateObject(source, clearSubgroups);
 						thing.collectibleAsCost = false;
-						NestObject(topHeaders[topText], thing);
+						NestObject(top, thing);
 					end
 				end
 			end
@@ -164,7 +170,6 @@ local function FillDynamicCategory(group, field, value)
 	group.dynamic = group.dynamicID or field;
 	group.dynamic_value = group.dynamic_value or value;
 	Runner.Run(Filler, group);
-	Runner.SetPerFrame(5);
 	return group
 end
 
@@ -174,6 +179,7 @@ local function NestDynamicValueCategories(group)
 	group.OnClick = false
 	local cat;
 	local field = group.dynamicValueID
+	local dynamicvalue_field = group.dynamic_valueField
 	local cache = SearchForFieldContainer(field);
 	-- app.PrintDebug("FDVC:",field)
 	for id,_ in pairs(cache) do
@@ -187,10 +193,9 @@ local function NestDynamicValueCategories(group)
 		cat.symlink = nil;
 		-- if the Dynamic Value category itself is not collectible, then make sure it isn't filtered
 		if not cat.collectible then
-			cat.u = nil;
-			cat.e = nil;
+			cat = app.CreateVisualHeaderWithGroups(cat)
 		end
-		NestObject(group, FillDynamicCategory(cat, field, id));
+		NestObject(group, FillDynamicCategory(cat, dynamicvalue_field or field, id));
 	end
 	-- Make sure the Dynamic Category group is sorted when opened since order isn't guaranteed by the table
 	group.SortType = "Global";

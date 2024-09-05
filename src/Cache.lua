@@ -63,7 +63,6 @@ local CreateDataCache = function(name, skipMapCaching)
 	end
 	setmetatable(cache, fieldMeta);
 	cache.npcID = cache.creatureID;	-- identical cache as creatureID (probably deprecate npcID use eventually)
-	--cache.requireSkill = cache.professionID;	-- identical cache as professionID (in Retail)
 	return cache;
 end
 currentCache = CreateDataCache("default");
@@ -491,7 +490,7 @@ local fieldConverters = {
 		CacheField(group, "spellID", value);
 	end,
 	["requireSkill"] = function(group, value)
-		CacheField(group, "requireSkill", value);	-- NOTE: professionID in Retail, investigate why
+		CacheField(group, "requireSkill", value);
 	end,
 	["runeforgePowerID"] = function(group, value)
 		CacheField(group, "runeforgePowerID", value);
