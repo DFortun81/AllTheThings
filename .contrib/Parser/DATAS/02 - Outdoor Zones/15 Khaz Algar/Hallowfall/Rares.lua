@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 				["questID"] = 81763,
 				["g"] = {
+					i(223006),	-- Signet of Dark Horizons (dupe from Coalesced Monstrosity - elementals rares share?)
 					i(223315),	-- Beledar's Spawn (MOUNT!)
 				},
 			}),

@@ -70,7 +70,6 @@ root(ROOTS.Unsorted, {
 			i(229091),	-- Kyros's Spare Shoulder Plates
 			i(229093),	-- Kyros's Spare Cuffs
 			i(229096),	-- The Cleansing Flame's Robes
-			i(229099),	-- The Cleansing Flame's Cowl
 			i(229101),	-- The Cleansing Flame's Shoulderpads
 			i(229102),	-- The Cleansing Flame's Cord
 			i(229104),	-- Ironstrike's Vest

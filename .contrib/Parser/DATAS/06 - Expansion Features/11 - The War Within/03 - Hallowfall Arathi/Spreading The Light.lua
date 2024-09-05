@@ -413,6 +413,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229157),	-- Lamplighter's Bulwark
 						i(229155),	-- Lamplighter's Greataxe
 						i(229061),	-- Nisa's Spare Belt
+						i(229099),	-- The Cleansing Flame's Cowl
 						i(229103),	-- The Cleansing Flame's Cuffs
 						i(229098),	-- The Cleansing Flame's Handwraps
 						i(229100),	-- The Cleansing Flame's Leggings
@@ -727,7 +728,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 	n(HALLOWFALL_ARATHI, {
 		header(HEADERS.Quest, 76586, {	-- Spreading The Light
 			-- Hidden stuff in area, that require different light buffs
-			-- could be weekly, idk
+			-- isDaily
 			q(83211),	-- Herb @ 67.1, 23.3
 			q(83208),	-- Herb @ 66.3, 23.6
 			q(83223),	-- Herb @ 62.1, 13.0
@@ -746,7 +747,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(80535),	-- Radiant Remnant @ 66.8, 23.1
 			q(80338),	-- Radiant Remnant @ 63.6, 20.8
 			q(80345),	-- Radiant Remnant @ 66.1, 17.9
-			--q(80554),	-- Radiant Remnant @ 66.4, 28.8	need objectid
+			q(80554),	-- Radiant Remnant @ 66.4, 28.8	need objectid
 			--q(80556),	-- Radiant Remnant @ 63.7, 26.3 need objectid
 			q(80531),	-- Radiant Remnant @ 67.2, 26.6 need objectid
 			q(80587),	-- Radiant Remnant @ 62.4, 32.6	need objectid
@@ -754,7 +755,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(83520),	-- Radiant Remnant @ 66, 28.2	need objectid
 			q(80553),	-- Radiant Remnant @ 65.5, 29.6	need objectid
 			q(80530),	-- Radiant Remnant @ 65.5, 23.4	need objectid
-			q(80554),	-- Radiant Remnant @ 64.4, 28.8
+			q(80551),	-- Radiant Remnant @ 64.5, 26.7
 			-- Small Keyflames
 			q(80005, {["isWeekly"]=true,}),	-- Empty Crab Cage - Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
 			q(78472, {["isWeekly"]=true,}),	-- Attica Whiskervale - Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7
