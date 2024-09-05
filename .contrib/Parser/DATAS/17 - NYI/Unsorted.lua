@@ -835,7 +835,6 @@ root(ROOTS.Unsorted, {
 				i(220220),	-- Ornate Pipe
 				i(220233),	-- Extinguished Icon
 				i(220260),	-- Corroded Golem Graspers
-				i(220265),	-- Slitted Eye
 				i(220274),	-- Chipped Hammer
 				i(220284),	-- Darkened Crystal
 				i(220286),	-- Tarnished Medallion

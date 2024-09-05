@@ -1998,6 +1998,7 @@ i(226681);	-- Sizzling Cinderpollen
 i(220231);	-- Skiatic Vessel
 i(220299);	-- Sleek Beak
 i(220226);	-- Slime-Coated Membrane
+i(220265);	-- Slitted Eye
 i(228711);	-- Small Candle
 i(228488);	-- Small Glass Vase
 i(225832);	-- Smelly Backscratcher
