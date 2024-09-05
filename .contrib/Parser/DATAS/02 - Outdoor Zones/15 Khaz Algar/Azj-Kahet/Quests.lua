@@ -40,12 +40,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78350,	-- Heroes Never Die
 					},
 					["provider"] = { "n", 211699 },	-- Faerin
-					["coord"] = { 34.9, 51.2, AZJ_KAHET },
+					["coord"] = { 32.5, 47.1, AZJ_KAHET },
 				}),
 				q(78353, {	-- Fear the Old Blood
 					["sourceQuests"] = { 78348 },	-- Friends in Low Places
 					["provider"] = { "n", 215944 },	-- Orweyna
-					["coord"] = { 35.4, 59.6, AZJ_KAHET },
+					["coord"] = { 33.0, 56.3, AZJ_KAHET },
 					["g"] = {
 						i(225546),	-- Corrosive Blackblood Ring
 						i(225545),	-- Hissing Blackblood Ring
@@ -54,7 +54,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78352, {	-- For Naught, So Vial
 					["sourceQuests"] = { 78348 },	-- Friends in Low Places
 					["provider"] = { "n", 215944 },	-- Orweyna
-					["coord"] = { 35.4, 59.6, AZJ_KAHET },
+					["coord"] = { 33.0, 56.3, AZJ_KAHET },
 				}),
 				q(79139, {	-- Alone in the Dark
 					["sourceQuests"] = {
@@ -62,12 +62,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78352,	-- For Naught, So Vial
 					},
 					["provider"] = { "n", 215113 },	-- Orweyna
-					["coord"] = { 37.9, 61.3, AZJ_KAHET },
+					["coord"] = { 35.7, 58.2, AZJ_KAHET },
 				}),
 				q(78354, {	-- A Guiding Thread
 					["sourceQuests"] = { 79139 },	-- Alone in the Dark
 					["provider"] = { "n", 216213 },	-- Spindle
-					["coord"] = { 45.7, 60.1, AZJ_KAHET },
+					["coord"] = { 44.2, 56.8, AZJ_KAHET },
 					["g"] = {
 						i(225514),	-- Webweave Belt
 						i(225533),	-- Webweave Grips
@@ -78,12 +78,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78392, {	-- The Tangled Web
 					["sourceQuests"] = { 78354 },	-- A Guiding Thread
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 55.6, 43.9, AZJ_KAHET },
+					["coord"] = { 55.7, 43.8, AZJ_KAHET },
 				}),
 				q(78393, {	-- A Seeming Respite
 					["sourceQuests"] = { 78354 },	-- A Guiding Thread
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 55.6, 43.9, AZJ_KAHET },
+					["coord"] = { 55.7, 43.8, AZJ_KAHET },
 				}),
 				------ Chapter 2 ------
 				q(78233, {	-- The Weaver's Gift
@@ -92,7 +92,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78352,	-- The Tangled Web
 					},
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 55.6, 43.9, AZJ_KAHET },
+					["coord"] = { 55.7, 43.8, AZJ_KAHET },
 				}),
 				q(80399, {	-- Rations and Revelations
 					["sourceQuests"] = { 78233 },	-- The Weaver's Gift
@@ -573,30 +573,30 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(83321, {	-- Strange Bats
 					["sourceQuests"] = { 78233 },	-- The Weaver's Gift
 					["provider"] = { "n", 223754 },	-- Linny Leadlinger
-					["coord"] = { 56.3, 48.1, AZJ_KAHET },
+					["coord"] = { 55.8, 43.7, AZJ_KAHET },
 					["isBreadcrumb"] = true,
 				}),
 				q(78897, {	-- Boom or Blight
 					["sourceQuests"] = { 83321 },	-- Strange Bats
 					["provider"] = { "n", 211652 },	-- Greenspeaker Na'layro
-					["coord"] = { 43.9, 47.0, AZJ_KAHET },
+					["coord"] = { 42.3, 42.5, AZJ_KAHET },
 				}),
 				q(78898, {	-- Intention vs Instinct
 					["sourceQuests"] = { 83321 },	-- Strange Bats
 					["provider"] = { "n", 211652 },	-- Greenspeaker Na'layro
-					["coord"] = { 43.9, 47.0, AZJ_KAHET },
+					["coord"] = { 42.3, 42.5, AZJ_KAHET },
 					["g"] = {
 						i(211412),	-- Singing Stone (QI!)
 					},
 				}),
 				q(78901, {	-- Heeeelllp!!!
 					["sourceQuests"] = { 83321 },	-- Strange Bats
-					["coord"] = { 43.2, 46.5, AZJ_KAHET },
+					["coord"] = { 41.6, 42.1, AZJ_KAHET },
 				}),
 				q(78902, {	-- Delegated Dig
 					["sourceQuests"] = { 78901 },	-- Heeeelllp!!!
 					["provider"] = { "n", 214168 },	-- Skedgit Cinderbangs
-					["coord"] = { 42.5, 44.4, AZJ_KAHET },
+					["coord"] = { 40.7, 39.7, AZJ_KAHET },
 					["g"] = {
 						o(414113, {	-- Sivstone Deposit
 							i(211415),	-- Sivstone Chunk (QI!)
@@ -606,7 +606,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79349, {	-- Entrepreneur Inc.
 					["sourceQuests"] = { 78902 },	-- Delegated Dig
 					["provider"] = { "n", 214168 },	-- Skedgit Cinderbangs
-					["coord"] = { 42.5, 44.4, AZJ_KAHET },
+					["coord"] = { 40.7, 39.7, AZJ_KAHET },
 					["g"] = {
 						i(226172),	-- Disturbance Detection Device (COSMETIC!)
 					},
@@ -661,18 +661,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79574, {	-- The Second Front
 					["sourceQuests"] = { 78630 },	-- The Rise of the Reckoning
 					["provider"] = { "n", 217133 },	-- Kal Smoulderbrow
-					["coord"] = { 32.1, 46.1, AZJ_KAHET },
+					["coord"] = { 29.4, 41.6, AZJ_KAHET },
 					["isBreadcrumb"] = true,
 				}),
 				q(79580, {	-- Offensive Counter
 					["sourceQuests"] = { 79574 },	-- The Second Front
 					["provider"] = { "n", 212076 },	-- General Steelstrike
-					["coord"] = { 30.4, 49.3, AZJ_KAHET },
+					["coord"] = { 27.5, 45.1, AZJ_KAHET },
 				}),
 				q(79579, {	-- That Airspace is Mine(d)!
 					["sourceQuests"] = { 79574 },	-- The Second Front
 					["provider"] = { "n", 212076 },	-- General Steelstrike
-					["coord"] = { 30.4, 49.3, AZJ_KAHET },
+					["coord"] = { 27.5, 45.1, AZJ_KAHET },
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40636.09, {	-- Mr. Sunflower's Therapy
@@ -1092,7 +1092,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			q(84664, {	-- Making the Underworld Go Round
 				--["sourceQuests"] = { ? },	-- ?
 				["provider"] = { "n", 223754 },	-- Linny Leadlinger
-				["coord"] = { 55.7, 43.7, AZJ_KAHET },
+				["coord"] = { 55.8, 43.7, AZJ_KAHET },
 				["g"] = {
 					i(228913),	-- Dubious Vial of Vigor (QI!)
 				},

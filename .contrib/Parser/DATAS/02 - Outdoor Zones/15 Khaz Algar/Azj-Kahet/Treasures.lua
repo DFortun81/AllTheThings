@@ -15,10 +15,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(446419, {	-- Concealed Contraband
-				["coord"] = { 36.3, 63.9, AZJ_KAHET },
+				["coord"] = { 34.0, 61.0, AZJ_KAHET },
 				["questID"] = 82525,
 				["g"] = {
-					-- reps for all 3 zone 'assistant' and some trash items
+					currency(3002),	-- The Weaver's Commendation
+					currency(3003),	-- The General's Commendation
+					currency(3004),	-- The Vizier's Commendation
 				},
 			}),
 			o(446097, {	-- Disturbed Soil
@@ -86,10 +88,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 82881,
 			}),
 			o(446140, {	-- Missing Scouts Pack
-				["coord"] = { 40.7, 42.1, AZJ_KAHET },
+				["coord"] = { 38.8, 37.2, AZJ_KAHET },
 				["questID"] = 82722,
-				["g"] = {
-					-- no objectID since missing loot table
+				["g"] = {	-- Gold, junk
+					currency(3002),	-- The Weaver's Commendation
+					currency(3003),	-- The General's Commendation
+					currency(3004),	-- The Vizier's Commendation
 				},
 			}),
 			o(446101, {	-- Nerubian Offerings
@@ -97,6 +101,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 82720,
 			}),
 			o(446423, {	-- Nest Egg
+				["description"] = "Above on a web, near the ceiling.",
 				["coord"] = { 49.5, 43.73, AZJ_KAHET },
 				["questID"] = 82529,
 				["g"] = {
@@ -104,10 +109,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(446135, {	-- Niffen Stash
-				["coord"] = { 55.2, 54.6, AZJ_KAHET },
+				["description"] = "Below, hanging from a bridge.",
+				["coord"] = { 54.5, 50.81, AZJ_KAHET },
 				["questID"] = 82721,
-				["g"] = {
-					-- missing loot table
+				["g"] = {	-- Gold, food, junk
+					currency(3002),	-- The Weaver's Commendation
+					currency(3003),	-- The General's Commendation
+					currency(3004),	-- The Vizier's Commendation
 				},
 			}),
 			o(446299, {	-- Silk-spun Supplies
@@ -118,7 +126,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			o(444844, {	-- Stashed Loot
 				["coords"] = {
 					{ 26.2, 54.1, AZJ_KAHET },
-					{ 75.2, 61.2, AZJ_KAHET },
+					{ 76.4, 58.1, AZJ_KAHET },	-- Inside the cave in Mmarl
 				},
 				--["questID"] = xx,	-- missing qID
 				["g"] = {
