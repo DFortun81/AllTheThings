@@ -3,8 +3,10 @@
 -----------------------------------
 -- Every thing in this file hasn't been sorted yet, but is known to exist.
 -- #if NOT ANYCLASSIC
-root(ROOTS.Sourceless, {
-	n(ARMOR, bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+root(ROOTS.Sourceless, bubbleDownFiltered({
+		["sharedDescription"] = "If you obtain this item, please provide as much information as you can about how and where you got it.",
+	},FILTERFUNC_itemID,{
+	n(ARMOR, {
 		expansion(EXPANSION.CATA, {
 			-- 4.0.3
 			expansion(EXPANSION.CATA, 0.3, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 } }, {
@@ -348,8 +350,8 @@ root(ROOTS.Sourceless, {
 				i(179660),	-- Winterborn Tunic
 			})),
 		}),
-	})),
-	n(DRAKEWATCHER_MANUSCRIPTS, bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+	}),
+	n(DRAKEWATCHER_MANUSCRIPTS, {
 		expansion(EXPANSION.DF, {
 			-- 10.2.0
 			expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
@@ -357,16 +359,16 @@ root(ROOTS.Sourceless, {
 			})),
 		}),
 
-	})),
-	n(FOLLOWERS, bubbleDown({ ["description"] = "If you obtain this follower, please provide as much information as you can about how and where you got it.", }, {
+	}),
+	n(FOLLOWERS, {
 		expansion(EXPANSION.SL, {
 			-- 9.0.1
 			expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {
 				follower(1208),	-- Nadjia the Mistblade
 			})),
 		}),
-	})),
-	n(WEAPONS, bubbleDown({ ["description"] = "If you obtain this item, please provide as much information as you can about how and where you got it.", }, {
+	}),
+	n(WEAPONS, {
 		expansion(EXPANSION.WRATH, {
 			-- 3.0.2
 			expansion(EXPANSION.WRATH, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
@@ -475,7 +477,7 @@ root(ROOTS.Sourceless, {
 				i(158580),	-- Loa-Claimer's Wariglaives
 			})),
 		}),
-	})),
+	}),
 	n(QUESTS, {	-- These are or were completable. Most of these are HQTs.
 		expansion(EXPANSION.CLASSIC, {
 			-- 1.x.x
@@ -759,5 +761,5 @@ root(ROOTS.Sourceless, {
 			})),
 		}),
 	}),
-});
+}));
 -- #endif
