@@ -275,6 +275,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(212868),	-- Precious Ore
 				i(226222),	-- Webbed Hookshot
 			}),
+			n(QUESTS, {
+				q(85648, {	-- Delver's Call: Earthcrawl Mines
+					["provider"] = { "o", 455716 },	-- DELVER'S CALL
+					["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
+				}),
+			}),
 			n(TREASURES, {
 				o(454090, {	-- Sturdy Chest
 					["coord"] = { 45.2, 14.7, EARTHCRAWL_MINES },
