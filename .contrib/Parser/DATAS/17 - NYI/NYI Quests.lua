@@ -8836,12 +8836,19 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		})),
 	}),
 	expansion(EXPANSION.TWW, {
-		-- 10.0.0
+		-- 11.0.0
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			q(82199),	-- TWW Alpha/Beta Questauren Isle of Dorn skip
 			q(82200),	-- TWW Alpha/Beta Questauren Ringing Deeps skip
 			q(82201),	-- TWW Alpha/Beta Questauren Hallowfall skip
 			q(82202),	-- TWW Alpha/Beta Questauren Azj-Kahet skip
+			q(82366, {	-- DO NOT USE @Darkal probably move this to NYI
+			-- 	["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+			-- 	["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
+				-- ["g"] = {
+			-- 		i(226146),	-- Handful of Humming Shinies
+			-- 	},
+			}),
 			q(82383),	-- (Bunch of Rocks i(226147 unsorted quests showing on item)
 			q(82385),	-- (Bunch of Rocks i(226147 unsorted quests showing on item)
 			q(83023),	-- Short-Supply Reward
