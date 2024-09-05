@@ -26,7 +26,7 @@ i(0, 70164);		-- Rune of the Nerubian Carapace [REMOVED: 6.0.2]
 -----------------
 -- PATCH 9.0.1 --
 -----------------
-i(0, 326911);		-- Rune of Hysteria
+i(0, 326911);		-- Rune of Hysteria [REMOVED: 11.0.0]
 i(0, 326805);		-- Rune of Sanguination
 i(0, 326855);		-- Rune of Spellwarding
 i(0, 327082);		-- Rune of the Apocalypse

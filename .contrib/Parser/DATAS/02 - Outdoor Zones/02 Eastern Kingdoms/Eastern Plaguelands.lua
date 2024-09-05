@@ -600,7 +600,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					prof(RUNEFORGING, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 }, ["classes"] = { DEATHKNIGHT } }, {
 						r(53428),	-- Runeforging
 						r(53341, {["timeline"] = {ADDED_3_0_2, REMOVED_6_0_2}}), -- Rune of Cinderglacier
-						r(326911, {["timeline"] = {ADDED_9_0_1}}), -- Rune of Hysteria
+						r(326911, {["timeline"] = {ADDED_9_0_1, REMOVED_11_0_0}}), -- Rune of Hysteria
 						r(53331, {["timeline"] = {ADDED_3_0_2, REMOVED_7_0_3}}), -- Rune of Lichbane
 						r(53343), -- Rune of Razorice
 						r(326805, {["timeline"] = {ADDED_9_0_1}}), -- Rune of Sanguination
