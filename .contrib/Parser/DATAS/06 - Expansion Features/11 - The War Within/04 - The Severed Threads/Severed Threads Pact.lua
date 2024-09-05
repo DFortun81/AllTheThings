@@ -161,6 +161,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						}),
 					},
 				}),
+				q(81505, {	-- Sabotage: Venomancers
+					["provider"] = { "n", 224184 },	-- Ghos'opp
+					["coord"] = { 39.5, 51.4, AZJ_KAHET },
+				}),
 				q(81482, {	-- Testing Formulae: Gelatinous Unguent
 					["provider"] = { "n", 224187 },	-- Ghos'opp
 					["coord"] = { 50.6, 46.8, NERUBAR },

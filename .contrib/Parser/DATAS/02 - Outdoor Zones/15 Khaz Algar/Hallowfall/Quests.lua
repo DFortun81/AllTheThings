@@ -1254,6 +1254,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 				q(82733),	-- 5 page / 4 node (If you...)
 				q(82737),	-- 5 page / 4 node (If you...)
 				--
+				q(82673),	-- trigger after interact with Cooking Pot and choose 'Seems good to me' option, during questID 82222 (Cooking With Style)
 				q(82674),	-- trigger after interact with Cooking Pot and choose 'Good enought' option, during questID 82222 (Cooking With Style)
 				q(82675),	-- trigger after interact with Cooking Pot and choose 'Retry' or 'Cooking' option, during questID 82222 (Cooking With Style)
 				q(83056),	-- Cooking With Style Tracker (completed with Q(82222) and was named by blizzard)

@@ -1526,6 +1526,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(82772),	-- First Delve of the day
 		q(84670),	-- after turn in weekly delve quest (was 82746 - Delves: Breaking Tough to Loot Stuff - for this one)
 		q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
+		q(85651),	-- Triggeres with 'Delver's Call: The Sinkhole' (questID 83767)
 		-- Bountiful Delve runs
 		q(82944),	-- Earthcrawl Mines
 		q(82939),	-- Fungal Folly
@@ -1550,7 +1551,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(84738, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 3rd
 		q(84739, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 4th
 		-- Seasonal Rewards
-		q(83235),	-- Season 1: 1/10 reward progress (spellID 454473 - Airship: Wings 05 - Lantern Wing)
-		-- Unknown
+		q(83235),	-- Airship: Wings 05 - Lantern Wing (spellID 454473)
+		q(83236),	-- Airship: Top 03 - Zeppelin (spellID 454476)
+		q(83237),	-- Airship: Front 05 - Lantern (spellID 454475)
+		q(83238),	-- Airship: Body Color 01 - Brown (spellID 454478)
+		q(83239),	-- Airship: Back 02 - Multi-Exhaust (spellID 454474)
 	}),
 })));
