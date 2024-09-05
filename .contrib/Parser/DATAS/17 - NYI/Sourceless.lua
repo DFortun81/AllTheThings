@@ -1,21 +1,10 @@
 -----------------------------------
 --     NOT SORTED YET MODULE     --
 -----------------------------------
--- Everything in this file hasn't been sorted yet. But are known to probably exist
-SOURCELESS = createHeader({
-	readable = "Sourceless",
-	icon = "Interface\\Icons\\inv_misc_questionmark",
-	text = {
-		en = "Sourceless",
-		ru = "Без Источника",
-		cn = "无来源",
-	},
-	description = {
-		en = "This Category contains Things that probably exist in the game but no known source.",
-	},
-});
-root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
-	expansion(EXPANSION.BFA, {
+-- Every thing in this file hasn't been sorted yet, but is known to exist.
+-- #if NOT ANYCLASSIC
+root(ROOTS.Sourceless, {	-- TODO: Add expansion headers, add timelines, sort by type of thing (same as unsorted)
+	expansion(EXPANSION.BFA, {	-- TODO: I really need to take a look at this one day and remove wrong itemIDs - Darkal
 		-------------------------------------------
 		-- DO NOT TOUCH THIS PART OR I KNIFE YOU --
 		----------------- DARKAL ------------------
@@ -641,4 +630,5 @@ root(ROOTS.Unsorted, n(SOURCELESS, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1
 		-- 10.2.6
 		q(79988),	--
 	}),
-})));
+});
+-- #endif

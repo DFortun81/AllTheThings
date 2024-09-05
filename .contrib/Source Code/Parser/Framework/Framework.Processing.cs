@@ -410,6 +410,7 @@ namespace ATT
                                         container.Key.Contains("HiddenQuestTriggers") ||
                                         container.Key.Contains("NeverImplemented") ||
                                         container.Key.Contains("Uncollectible") ||
+                                        container.Key.Contains("Sourceless") ||
                                         container.Key.Contains("Unsorted");
             Process(container.Value);
         }

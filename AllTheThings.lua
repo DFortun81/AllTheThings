@@ -8468,6 +8468,17 @@ function app:GetDataCache()
 		CacheFields(db, true);
 	end
 
+	-- Sourceless
+	if app.Categories.Sourceless then
+		db = app.CreateRawText(L.SOURCELESS)
+		db.g = app.Categories.Sourceless;
+		db.description = L.SOURCELESS_DESC;
+		db._missing = true;
+		db._unsorted = true;
+		tinsert(g, db);
+		CacheFields(db, true);
+	end
+
 	-- Unsorted
 	if app.Categories.Unsorted then
 		db = app.CreateRawText(L.UNSORTED)
