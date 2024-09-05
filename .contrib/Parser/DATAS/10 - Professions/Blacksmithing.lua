@@ -1296,7 +1296,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			o(456010, {	-- Spiderling's Wire Brush
-				["coord"] = { 53.0, 51.3, NERUBAR },
+				["coord"] = { 53.0, 51.3, AZJ_KAHET },
 				["questID"] = 83855,
 				["g"] = {
 					i(226283),	-- Spiderling's Wire Brush

@@ -1163,11 +1163,11 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81363, 447362),	-- Concealed Chaos Module
 			FirstCraft(81355, 447366),	-- Convincingly Realistic Jumper Cables
 			FirstCraft(81333, 447363),	-- Energy Redistribution Beacon
-			FirstCraft(81331, 447312),	-- Invent
+			FirstCraft(81301, 447312),	-- Invent
 			FirstCraft(81332, 447364),	-- Irresistible Red Button
 			FirstCraft(81356, 447365),	-- Pausing Pylon
 			FirstCraft(81340, 447344),	-- Potion Bomb of Power
-			FirstCraft(81301, 447343),	-- Potion Bomb of Recovery
+			--FirstCraft(TODO, 447343),	-- Potion Bomb of Recovery
 			FirstCraft(81347, 447342),	-- Potion Bomb of Speed
 			FirstCraft(81349, 447361),	-- Pouch of Pocket Grenades
 			FirstCraft(81346, 447357),	-- Recalibrated Safety Switch

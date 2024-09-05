@@ -239,7 +239,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(218195, {	-- Rukku <Engineering Supplies>
-				["coord"] = { 46.8, 20.0, NERUBAR },
+				["coord"] = { 58.3, 31.5, NERUBAR },
 				["g"] = {
 					i(224052, {	-- Clocks, Gears, Sprockets, and Legs (CI!)
 						["cost"] = {{"c", KEJ, 565}},
