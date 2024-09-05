@@ -76,7 +76,7 @@ root(ROOTS.Unsorted, {
 			i(229107),	-- Ironstrike's Headgear
 			i(229108),	-- Ironstrike's Breeches
 			i(229109),	-- Ironstrike's Epaulets
-			i(229110),	-- Ironstrike's
+			i(229110),	-- Ironstrike's Sash
 			i(229112),	-- Flamestonge's Chainmail
 			i(229113),	-- Flamestonge's Striders
 			i(229114),	-- Flamestonge's Grips
