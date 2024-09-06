@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Item DB Compiler")]
+[assembly: AssemblyTitle("Item Database Consolidator")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("ALL THE THINGS")]
-[assembly: AssemblyProduct("Item DB Compiler")]
+[assembly: AssemblyProduct("Item Database Consolidator")]
 [assembly: AssemblyCopyright("Copyright © Dylan Fortune 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
