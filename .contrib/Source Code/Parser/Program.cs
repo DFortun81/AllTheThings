@@ -46,10 +46,10 @@ namespace ATT
                 if (!Framework.HasConfig())
                 {
                     // Ensure the Parser uses the default config if nothing is specified.
-                    Framework.InitConfigSettings("parser.config");
+                    Framework.InitConfigSettings(".config/retail/retail.config");
 
 #if DEBUG
-                    Framework.InitConfigSettings("parser.debug.config");
+                    Framework.InitConfigSettings("parser/retail/debug.config");
 #endif
                 }
             }

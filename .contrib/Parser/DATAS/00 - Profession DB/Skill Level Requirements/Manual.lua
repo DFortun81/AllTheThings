@@ -1,4 +1,3 @@
--- #if ANYCLASSIC
 local recipeDB = RecipeDBConditional;
 
 -- Blacksmithing
@@ -36,14 +35,13 @@ recipeDB[429354].learnedAt = 150;	-- Void-Touched Leather Gloves
 -- No changes needed.
 
 -- Cooking
-recipeDB[3413].learnedAt = 125;	-- Cooking
-recipeDB[18260].learnedAt = 200;	-- Cooking
+recipeDB[3413].learnedAt = 125;	-- Cooking (Expert)
+recipeDB[18260].learnedAt = 200;	-- Cooking (Artisan)
 
 -- First Aid
-recipeDB[7924].learnedAt = 125;	-- First Aid
-recipeDB[10846].learnedAt = 200;	-- First Aid
+recipeDB[7924].learnedAt = 125;	-- First Aid (Expert)
+recipeDB[10846].learnedAt = 200;	-- First Aid (Artisan)
 
 -- Fishing
 recipeDB[7732].learnedAt = 125;	-- Fishing (Expert)
 recipeDB[18248].learnedAt = 200;	-- Fishing (Artisan)
--- #endif
