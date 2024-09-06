@@ -1192,7 +1192,6 @@ root(ROOTS.Unsorted, {
 			i(223620),	-- 20th Anniversary Cache
 			i(223621),	-- 20th Anniversary Cache
 			i(223622),	-- 20th Anniversary Cache
-			i(223802),	-- Ruby-Eyed Stagshell
 			i(223805),	-- zzOld Do Not Use (DNT)
 			i(223806),	-- zzOld Do Not Use (DNT)
 			i(223965),	-- zzOld Do Not Use (DNT)
@@ -2476,7 +2475,6 @@ root(ROOTS.Unsorted, {
 				i(221764),	-- Burntram (PET!)
 				i(222979),	-- Clay Stonecharger (PET!)
 				i(221762),	-- Frenzied Bloodtick (PET!)
-				i(222970),	-- Fuzzy (PET!)
 				i(221195),	-- Illskitter (PET!)
 				i(221492),	-- Moss Skipper (PET!)
 				i(221759),	-- Sceaduthax (PET!)

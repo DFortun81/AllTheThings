@@ -39,10 +39,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			ach(40384, {	-- Hero of the Horde: Forged
 				["races"] = HORDE_ONLY,
 			}),
-			ach(40235, {	-- Forged Marshall: The War Within Season 1
+			ach(40235, {	-- Forged Marshal: The War Within Season 1
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					title(555),	-- Forged Marshall <Name>
+					title(555),	-- Forged Marshal <Name>
 				},
 			}),
 			ach(40234, {	-- Forged Warlord: The War Within Season 1

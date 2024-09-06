@@ -321,7 +321,14 @@ root(ROOTS.PetBattles, petbattle({
 			crit(21593),	-- Vale of Eternal Blossoms
 		}),
 		ach(16731,	bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {	-- Court is Now in Session
-			title(480),	-- <Name>, Knight of Feathersworth
+			crit(56693),	-- Lord Basilton
+			crit(56700),	-- Lady Feathersworth
+			crit(56706),	-- Mister Toots
+			crit(56707),	-- Mister Muskoxeles
+			crit(60889),	-- Princess Vorquistrasza
+			["g"] = {
+				title(480),	-- <Name>, Knight of Feathersworth
+			}
 		})),
 		ach(6554),	-- He's Mine! (10)
 		ach(6555),	-- Building a Team (25)

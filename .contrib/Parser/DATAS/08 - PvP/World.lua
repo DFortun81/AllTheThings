@@ -218,7 +218,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(ACHIEVEMENTS, {
 			ach(40088, {	-- A Champion's Tour: The War Within (automated)
-				i(223802),	-- Purple Stagshell (PET!)
+				i(223802),	-- Ruby-Eyed Stagshell (PET!)
 			}),
 			ach(40464),	-- Bounty Master
 			ach(40097, {	-- Ruffious's Bid

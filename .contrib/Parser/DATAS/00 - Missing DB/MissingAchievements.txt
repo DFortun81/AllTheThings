@@ -19,7 +19,6 @@ ach(40967),	-- Ratts' Revenge
 ach(40976),	-- A Cool Twenty Years
 ach(40977),	-- Codex Editor: Ahn'Qiraj
 ach(40979),	-- No Crate Left Behind
-ach(40980),	-- Family Battler of Khaz Algar
 ach(40984),	-- Big Fan
 ach(40985),	-- I Have That One!
 ach(40986),	-- Mount Master

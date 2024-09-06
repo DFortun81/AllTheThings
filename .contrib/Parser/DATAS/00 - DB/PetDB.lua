@@ -4102,7 +4102,6 @@ i(221851, 4466);	-- Argos
 i(221764, 4519);	-- Burntram
 i(222979, 4545);	-- Clay Stonecharger
 i(221762, 4484);	-- Frenzied Bloodtick
-i(222970, 4490);	-- Fuzzy
 i(221195, 4458);	-- Illskitter
 i(221492, 4459);	-- Moss Skipper
 i(221759, 4512);	-- Sceaduthax
@@ -4227,4 +4226,5 @@ i(0, 4560);			-- Zaedu
 -- PATCH 11.0.5 --
 ------------------
 --- ITEM ---
+i(222970, 4490);	-- Fuzzy
 i(191946, 3265);	-- Mister Muskoxeles
