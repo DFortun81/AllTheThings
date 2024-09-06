@@ -1,5 +1,5 @@
--- Localization for Chinese (Simplified, PRC) and Chinese (Traditional, Taiwan) Clients.
-if GetLocale() ~= "zhCN" and GetLocale() ~= "zhTW" then return; end
+-- Localization for Chinese (Simplified, PRC) Clients.
+if GetLocale() ~= "zhCN" then return; end
 local app = select(2, ...);
 local L = app.L;
 
@@ -458,11 +458,6 @@ for key,value in pairs({
 	["艾拉-卡拉，回响之城"] = "回响之城",	-- ["Ara-Kara, City of Echoes"] = "Ara-Kara"
 })
 do a[key] = value; end
-if GetLocale() == "zhTW" then
-	a["安托洛斯，燃燒王座"] = "安托洛斯"	-- ["Antorus, the Burning Throne"] = "Antorus"
-	a["奈奧羅薩，甦醒之城"] = "奈奧羅薩"	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
-	a["『帷幕市集』塔札維許"] = "塔札維許"	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
-end
 
 
 if app.IsRetail then
@@ -518,10 +513,6 @@ for key,value in pairs({
 			[-5205] = "隐藏外观",										-- Hidden Appearance
 })
 do a[key] = value; end
-if GetLocale() == "zhTW" then
-	a[-1120] = "莫魯克半人馬";											-- Maruuk Centaur
-	a[-1130] = "伊斯凱拉巨牙海民";										-- Iskaara Tuskarrccord
-end
 end
 
 local a = L.SETTINGS_MENU;
