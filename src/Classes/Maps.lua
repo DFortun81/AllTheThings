@@ -184,6 +184,18 @@ local function GetMapName(mapID)
 		return "Map ID #???";
 	end
 end
+local function GetPlayerPosition()
+	local mapID = app.CurrentMapID;
+	if mapID then
+		local pos = C_Map_GetPlayerMapPosition(mapID, "player");
+		if pos then
+			local px, py = pos:GetXY();
+			return mapID, px * 100, py * 100;
+		end
+	end
+	return mapID, 50, 50;
+end
+app.GetPlayerPosition = GetPlayerPosition
 local UpdateLocation
 if app.GameBuildVersion < 30000 then
 	-- Before Wrath Classic we didn't have mapIDs in the world proper, so ATT had to make a guess.

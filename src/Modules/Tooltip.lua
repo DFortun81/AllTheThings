@@ -19,9 +19,10 @@ timeFormatter:Init(1, SecondsFormatter.Abbreviation.Truncate);
 
 -- App locals
 local GetRelativeValue, SearchForField, SearchForObject = app.GetRelativeValue, app.SearchForField, app.SearchForObject
+local distance = app.distance
 
--- Module locals (can be set via OnReady if they do not change during Session but are not yet defined)
-local SearchForLink
+-- Module locals (can be set via OnLoad if they do not change during Session but are not yet defined)
+local SearchForLink, GetPlayerPosition
 
 -- Object Name Lookups
 local objectNamesToIDs = {};
@@ -37,21 +38,6 @@ local function OnLoad_CacheObjectNames()
 		end
 	end
 end
-local function distance( x1, y1, x2, y2 )
-	return math_sqrt( (x2-x1)^2 + (y2-y1)^2 )
-end
-local function GetPlayerPosition()
-	local mapID = app.CurrentMapID;
-	if mapID and not IsInInstance() then
-		local pos = C_Map_GetPlayerMapPosition(mapID, "player");
-		if pos then
-			local px, py = pos:GetXY();
-			return mapID, px * 100, py * 100;
-		end
-	end
-	return mapID, 50, 50;
-end
-
 local GetBestObjectIDForName;
 if app.IsRetail then
 	local InGame = app.Modules.Filter.Filters.InGame
@@ -1313,6 +1299,7 @@ api.AttachTooltipSearchResults = AttachTooltipSearchResults;
 api.GetBestObjectIDForName = GetBestObjectIDForName;
 app.AddEventHandler("OnLoad", function()
 	SearchForLink = app.SearchForLink;
+	GetPlayerPosition = app.GetPlayerPosition
 	OnLoad_CacheObjectNames();
 end);
 
