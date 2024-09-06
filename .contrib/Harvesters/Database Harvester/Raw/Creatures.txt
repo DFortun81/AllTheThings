@@ -22032,3 +22032,42 @@
 229045@@@Pilgrim
 11.0.2.56421
 230215@@@Burrowing Worm
+11.0.2.56461
+214277@@@High Exarch Turalyon
+216552@@@Horde Wolfaxe
+216601@@@Stormwind Knight
+216613@@@Corpse Marker
+216635@@@Dwarven Sharpshooter
+216636@@@Druid of the Claw
+216637@@@Gilnean Scrapper
+216639@@@Master Tidesage
+216832@@@Lightforged Vindicator
+216835@@@Rift Voidsinger
+216840@@@Suramar Chronomancer
+217229@@@Zandalari Prelate
+217231@@@Arachno-Pummeler Mk. I
+217234@@@Tauren Plainswalker
+217236@@@Forsaken Warlock
+217347@@@Veteran Blood Knight
+217486@@@Auric Sunchaser
+217492@@@Shining Warframe
+217493@@@Exodar Vigilant
+217529@@@Stormwind Knight
+217552@@@Machine Speaker Mech
+217554@@@Hallowfall Lightblade
+217569@@@Danath Trollbane
+218017@@@G.E.A.R Bomber
+219879@@@Veteran Blood Knight
+219919@@@Night Elf Starcaller
+219942@@@Kirin Tor Defender
+220571@@@Hallowfall Lightblade
+220832@@@Imperial Artillerist
+222848@@@Warborn Crusher
+222851@@@Hallowfall Lightblade
+222853@@@Arathi Warlynx
+223101@@@War Wolf
+223722@@@Thrall
+227111@@@Hallowfall Airman
+227436@@@Archmage Khadgar
+227437@@@Archmage Khadgar
+230201@@@Lightforged Vindicator
