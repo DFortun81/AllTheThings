@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading;
 using static ATT.Export;
@@ -1368,6 +1369,40 @@ namespace ATT
                     return field;
             }
         }
+
+        /// <summary>
+        /// Sort the supported locale keys in the list.
+        /// </summary>
+        /// <param name="supportedLocales">The list of supported locales.</param>
+        public static void SortSupportedLocales(List<string> supportedLocales)
+        {
+            supportedLocales.Sort(Framework.Compare);
+            if (supportedLocales.Contains("es"))
+            {
+                supportedLocales.Remove("es");
+                supportedLocales.Insert(0, "es");
+            }
+            if (supportedLocales.Contains("en"))
+            {
+                supportedLocales.Remove("en");
+                supportedLocales.Insert(0, "en");
+            }
+            if (supportedLocales.Contains("ko"))
+            {
+                supportedLocales.Remove("ko");
+                supportedLocales.Add("ko");
+            }
+            if (supportedLocales.Contains("cn"))
+            {
+                supportedLocales.Remove("cn");
+                supportedLocales.Add("cn");
+            }
+            if (supportedLocales.Contains("tw"))
+            {
+                supportedLocales.Remove("tw");
+                supportedLocales.Add("tw");
+            }
+        }
         #endregion
         #region JSON Conversion
         /// <summary>
@@ -1750,27 +1785,7 @@ namespace ATT
                                 {
                                     // Sort and then ensure es comes after en, to match previous convention.
                                     var supportedLocales = textLocales.Keys.ToList();
-                                    supportedLocales.Sort();
-                                    if (supportedLocales.Contains("es"))
-                                    {
-                                        supportedLocales.Remove("es");
-                                        supportedLocales.Insert(0, "es");
-                                    }
-                                    if (supportedLocales.Contains("en"))
-                                    {
-                                        supportedLocales.Remove("en");
-                                        supportedLocales.Insert(0, "en");
-                                    }
-                                    if (supportedLocales.Contains("ko"))
-                                    {
-                                        supportedLocales.Remove("ko");
-                                        supportedLocales.Add("ko");
-                                    }
-                                    if (supportedLocales.Contains("cn"))
-                                    {
-                                        supportedLocales.Remove("cn");
-                                        supportedLocales.Add("cn");
-                                    }
+                                    SortSupportedLocales(supportedLocales);
 
                                     builder.AppendLine("\t\ttext = {");
                                     foreach (var localeKey in supportedLocales)
@@ -1984,27 +1999,7 @@ namespace ATT
                                 {
                                     // Sort and then ensure es comes after en, to match previous convention.
                                     var supportedLocales = textLocales.Keys.ToList();
-                                    supportedLocales.Sort(Framework.Compare);
-                                    if (supportedLocales.Contains("es"))
-                                    {
-                                        supportedLocales.Remove("es");
-                                        supportedLocales.Insert(0, "es");
-                                    }
-                                    if (supportedLocales.Contains("en"))
-                                    {
-                                        supportedLocales.Remove("en");
-                                        supportedLocales.Insert(0, "en");
-                                    }
-                                    if (supportedLocales.Contains("ko"))
-                                    {
-                                        supportedLocales.Remove("ko");
-                                        supportedLocales.Add("ko");
-                                    }
-                                    if (supportedLocales.Contains("cn"))
-                                    {
-                                        supportedLocales.Remove("cn");
-                                        supportedLocales.Add("cn");
-                                    }
+                                    SortSupportedLocales(supportedLocales);
 
                                     builder.AppendLine("\t\ttext = {");
                                     foreach (var localeKey in supportedLocales)
@@ -2042,27 +2037,7 @@ namespace ATT
                                 {
                                     // Sort and then ensure es comes after en, to match previous convention.
                                     var supportedLocales = textLocales.Keys.ToList();
-                                    supportedLocales.Sort(Framework.Compare);
-                                    if (supportedLocales.Contains("es"))
-                                    {
-                                        supportedLocales.Remove("es");
-                                        supportedLocales.Insert(0, "es");
-                                    }
-                                    if (supportedLocales.Contains("en"))
-                                    {
-                                        supportedLocales.Remove("en");
-                                        supportedLocales.Insert(0, "en");
-                                    }
-                                    if (supportedLocales.Contains("ko"))
-                                    {
-                                        supportedLocales.Remove("ko");
-                                        supportedLocales.Add("ko");
-                                    }
-                                    if (supportedLocales.Contains("cn"))
-                                    {
-                                        supportedLocales.Remove("cn");
-                                        supportedLocales.Add("cn");
-                                    }
+                                    SortSupportedLocales(supportedLocales);
 
                                     builder.AppendLine("\t\ttext = {");
                                     foreach (var localeKey in supportedLocales)
@@ -2125,27 +2100,7 @@ namespace ATT
                                 {
                                     // Sort and then ensure es comes after en, to match previous convention.
                                     var supportedLocales = textLocales.Keys.ToList();
-                                    supportedLocales.Sort(Framework.Compare);
-                                    if (supportedLocales.Contains("es"))
-                                    {
-                                        supportedLocales.Remove("es");
-                                        supportedLocales.Insert(0, "es");
-                                    }
-                                    if (supportedLocales.Contains("en"))
-                                    {
-                                        supportedLocales.Remove("en");
-                                        supportedLocales.Insert(0, "en");
-                                    }
-                                    if (supportedLocales.Contains("ko"))
-                                    {
-                                        supportedLocales.Remove("ko");
-                                        supportedLocales.Add("ko");
-                                    }
-                                    if (supportedLocales.Contains("cn"))
-                                    {
-                                        supportedLocales.Remove("cn");
-                                        supportedLocales.Add("cn");
-                                    }
+                                    SortSupportedLocales(supportedLocales);
 
                                     builder.AppendLine("\t\ttext = {");
                                     foreach (var localeKey in supportedLocales)
@@ -2209,7 +2164,7 @@ namespace ATT
                 {
                     // 8 non-english locales, 9 supported in all. (English is written right away and acts as the default)
                     "es", "de", "fr", "it",
-                    "pt", "ru", "ko", "zh", // NOTE: "cn" is not valid, it's actually "zh"!
+                    "pt", "ru", "ko", "cn", "tw",
                 })
                 {
                     // Generate a string builder for each language. (an empty builder at the end will not be exported)
@@ -2276,25 +2231,8 @@ namespace ATT
                         }
                     }
 
-                    // Convert all "cn" into "zh" dictionaries, it makes the comparison later easier.
-                    if (localizationForText.TryGetValue("cn", out Dictionary<long, string> data))
-                    {
-                        localizationForText.Remove("cn");
-                        if (!localizationForText.TryGetValue("zh", out Dictionary<long, string> zh))
-                        {
-                            localizationForText["zh"] = data;
-                        }
-                        else
-                        {
-                            foreach (var pair in data)
-                            {
-                                zh[pair.Key] = pair.Value;
-                            }
-                        }
-                    }
-
                     // Get all of the english translations and always write them to the file.
-                    if (localizationForText.TryGetValue("en", out data))
+                    if (localizationForText.TryGetValue("en", out var data))
                     {
                         localizationForText.Remove("en");
                         builder.AppendLine("_.CategoryNames = {");
@@ -2514,55 +2452,8 @@ namespace ATT
                     }
                     builder.AppendLine("};");
 
-                    // Convert all "cn" into "zh" dictionaries, it makes the comparison later easier.
-                    if (localizationForText.TryGetValue("cn", out Dictionary<long, string> data))
-                    {
-                        localizationForText.Remove("cn");
-                        if (!localizationForText.TryGetValue("zh", out Dictionary<long, string> zh))
-                        {
-                            localizationForText["zh"] = data;
-                        }
-                        else
-                        {
-                            foreach (var pair in data)
-                            {
-                                zh[pair.Key] = pair.Value;
-                            }
-                        }
-                    }
-                    if (localizationForDescriptions.TryGetValue("cn", out data))
-                    {
-                        localizationForDescriptions.Remove("cn");
-                        if (!localizationForDescriptions.TryGetValue("zh", out Dictionary<long, string> zh))
-                        {
-                            localizationForDescriptions["zh"] = data;
-                        }
-                        else
-                        {
-                            foreach (var pair in data)
-                            {
-                                zh[pair.Key] = pair.Value;
-                            }
-                        }
-                    }
-                    if (localizationForLore.TryGetValue("cn", out data))
-                    {
-                        localizationForLore.Remove("cn");
-                        if (!localizationForLore.TryGetValue("zh", out Dictionary<long, string> zh))
-                        {
-                            localizationForLore["zh"] = data;
-                        }
-                        else
-                        {
-                            foreach (var pair in data)
-                            {
-                                zh[pair.Key] = pair.Value;
-                            }
-                        }
-                    }
-
                     // Get all of the english translations and always write them to the file.
-                    if (localizationForText.TryGetValue("en", out data))
+                    if (localizationForText.TryGetValue("en", out var data))
                     {
                         localizationForText.Remove("en");
                         builder.AppendLine("localize(L.HEADER_NAMES, {");
@@ -2787,25 +2678,8 @@ namespace ATT
                         builder.AppendLine("};");
                     }
 
-                    // Convert all "cn" into "zh" dictionaries, it makes the comparison later easier.
-                    if (localizationForText.TryGetValue("cn", out Dictionary<long, string> data))
-                    {
-                        localizationForText.Remove("cn");
-                        if (!localizationForText.TryGetValue("zh", out Dictionary<long, string> zh))
-                        {
-                            localizationForText["zh"] = data;
-                        }
-                        else
-                        {
-                            foreach (var pair in data)
-                            {
-                                zh[pair.Key] = pair.Value;
-                            }
-                        }
-                    }
-
                     // Get all of the english translations and always write them to the file.
-                    if (localizationForText.TryGetValue("en", out data))
+                    if (localizationForText.TryGetValue("en", out var data))
                     {
                         localizationForText.Remove("en");
                         builder.AppendLine("L.FILTER_ID_TYPES = {");
@@ -2918,25 +2792,8 @@ namespace ATT
                         }
                     }
 
-                    // Convert all "cn" into "zh" dictionaries, it makes the comparison later easier.
-                    if (localizationForText.TryGetValue("cn", out Dictionary<long, string> data))
-                    {
-                        localizationForText.Remove("cn");
-                        if (!localizationForText.TryGetValue("zh", out Dictionary<long, string> zh))
-                        {
-                            localizationForText["zh"] = data;
-                        }
-                        else
-                        {
-                            foreach (var pair in data)
-                            {
-                                zh[pair.Key] = pair.Value;
-                            }
-                        }
-                    }
-
                     // Get all of the english translations and always write them to the file.
-                    if (localizationForText.TryGetValue("en", out data))
+                    if (localizationForText.TryGetValue("en", out var data))
                     {
                         localizationForText.Remove("en");
                         builder.AppendLine("_.FlightPathNames = {");
@@ -3047,25 +2904,8 @@ namespace ATT
                         }
                     }
 
-                    // Convert all "cn" into "zh" dictionaries, it makes the comparison later easier.
-                    if (localizationForText.TryGetValue("cn", out Dictionary<long, string> data))
-                    {
-                        localizationForText.Remove("cn");
-                        if (!localizationForText.TryGetValue("zh", out Dictionary<long, string> zh))
-                        {
-                            localizationForText["zh"] = data;
-                        }
-                        else
-                        {
-                            foreach (var pair in data)
-                            {
-                                zh[pair.Key] = pair.Value;
-                            }
-                        }
-                    }
-
                     // Get all of the english translations and always write them to the file.
-                    if (localizationForText.TryGetValue("en", out data))
+                    if (localizationForText.TryGetValue("en", out var data))
                     {
                         localizationForText.Remove("en");
                         builder.AppendLine("_.ObjectNames = {");
@@ -3125,9 +2965,17 @@ namespace ATT
 
                 // Now write the localization for each locale to the localization database builder.
                 var localeKeys = localizationByLocale.Keys.ToList();
-                localeKeys.Sort(Framework.Compare);
+                SortSupportedLocales(localeKeys);
                 localizationDatabase.AppendLine("-- Supported Locales")
                     .AppendLine("local simplifiedLocale = GetLocale():sub(1,2);");
+                bool containsCN = localizationByLocale.TryGetValue("cn", out StringBuilder cnBuilder) && cnBuilder.Length > 0;
+                bool containsTW = localizationByLocale.TryGetValue("tw", out StringBuilder twBuilder) && twBuilder.Length > 0;
+                if (containsCN && containsTW)
+                {
+                    // If both are supported, we need to export it differently. Remove it from the list of locales for now.
+                    localeKeys.Remove("cn");
+                    localeKeys.Remove("tw");
+                }
                 foreach (var localeKey in localeKeys)
                 {
                     if (localizationByLocale.TryGetValue(localeKey, out StringBuilder builder) && builder.Length > 0)
@@ -3136,6 +2984,16 @@ namespace ATT
                         localizationDatabase.Append(builder.ToString());
                         localizationDatabase.AppendLine("end");
                     }
+                }
+                if (containsCN && containsTW)
+                {
+                    // If both are supported, we need to export it nested so that TW inherits the values from CN, but can still override the exported localization data.
+                    localizationDatabase.AppendLine("if simplifiedLocale == \"cn\" then");
+                    localizationDatabase.Append(cnBuilder.ToString());
+                    localizationDatabase.AppendLine("if GetLocale():sub(3,4):lower() == \"tw\" then");
+                    localizationDatabase.Append(twBuilder.ToString());
+                    localizationDatabase.AppendLine("end");
+                    localizationDatabase.AppendLine("end");
                 }
 
                 // Check to make sure the content is different since Diff tools are dumb as hell.
