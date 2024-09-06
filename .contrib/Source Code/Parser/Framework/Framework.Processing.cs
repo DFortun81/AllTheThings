@@ -2618,15 +2618,13 @@ namespace ATT
                         {
                             // remove the creatures which are not sourced from being reported as failed to merge
                             Objects.TrackPostProcessMergeKey("questID", questID);
-                            if (questRefs != null)
-                            {
-                                data.TryGetValue("achID", out long achID);
-                                LogDebugWarn($"Criteria {achID}:{criteriaID} not nested to Unsorted Quest {questID}. Consider adjusting Quest listing");
-                                questList.Add(questID);
-                            }
+                            questList.Add(questID);
+                            data.TryGetValue("achID", out long achID);
+                            LogDebugWarn($"Criteria {achID}:{criteriaID} not nested to Unsorted Quest {questID}. Consider adjusting Quest listing");
                         }
                     }
 
+                    // if every quest linked to a criteria is not sourced, then convert into a sourcequests list instead
                     if (questList.Count == questObjs.Count)
                     {
                         Objects.Merge(data, "sourceQuests", questList);

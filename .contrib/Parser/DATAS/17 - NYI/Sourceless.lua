@@ -760,6 +760,33 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(79988),	--
 			})),
 		}),
+
+		-- NOT SORTED --
+		-- These are required by Achievement Criteria Automation to exist in ATT
+		-- Maybe some will be Sourced, maybe some will be HQT, but they need to be somewhere
+		-- since Blizzard says they're the trigger for achievements
+		q(84571),
+		q(84570),
+		q(84569),
+		q(84568),
+		q(84567),
+		q(84566),
+		q(84564),
+		q(84575),
+		q(84573),
+		q(84574),
+		q(84572),
+		q(84577),
+		q(84578),
+		q(84576),
+		q(84581),
+		q(84582),
+		q(84580),
+		q(84579),
+		q(83282),
+		q(83278),
+		q(82959),
+		q(82324),
 	}),
 }));
 -- #endif
