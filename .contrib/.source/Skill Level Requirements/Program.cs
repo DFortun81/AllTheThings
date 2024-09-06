@@ -2,12 +2,17 @@
 using ATT;
 using System.Text;
 
-StringBuilder sb = new StringBuilder()
-    .AppendLine("-- #if ANYCLASSIC")
-    .AppendLine("-- WARNING: THIS DOCUMENT IS DYNAMICALLY GENERATED. DO NOT MANUALLY UPDATE!")
-    .AppendLine("local recipeDB = RecipeDBConditional;");
+// Make sure the Skill Level Requirements folder exists.
+var SkillLevelRequirementsFolderName = "../Parser/DATAS/00 - Profession DB/Skill Level Requirements/";
+#pragma warning disable CS8604 // Possible null reference argument.
+Directory.CreateDirectory(Path.GetDirectoryName(SkillLevelRequirementsFolderName));
+#pragma warning restore CS8604 // Possible null reference argument.
+
+// Define the Common Header
+string commonHeader = "-- WARNING: THIS DOCUMENT IS DYNAMICALLY GENERATED. DO NOT MANUALLY UPDATE!\nlocal recipeDB = RecipeDBConditional;";
 
 // Classic Profession Data
+StringBuilder sb = new StringBuilder().AppendLine("-- #if ANYCLASSIC").AppendLine(commonHeader);
 foreach (string profession in new string[] { "Alchemy", "Blacksmithing", "Enchanting", "Engineering", "Herbalism", "Leatherworking", "Mining", "Skinning", "Tailoring" })
 {
     var pageString = Helper.GetStringFromWoWHead($"professions/{profession.ToLower().Replace(" ", "")}", "classic/").Result;
@@ -22,9 +27,10 @@ foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" }
     Console.Write("classic/");
     Helper.Parse(pageString, sb, profession);
 }
+File.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "01 - Classic.lua"), sb.ToString());
 
 // TBC Profession Data
-sb.AppendLine().AppendLine("-- #if AFTER 2.0.0");
+sb.Clear().AppendLine("-- #if AFTER 2.0.0").AppendLine(commonHeader);
 foreach (string profession in new string[] { "Alchemy", "Blacksmithing", "Enchanting", "Engineering", "Herbalism", "Jewelcrafting", "Leatherworking", "Mining", "Skinning", "Tailoring" })
 {
     var pageString = Helper.GetStringFromWoWHead($"professions/{profession.ToLower().Replace(" ", "")}", "tbc/").Result;
@@ -39,10 +45,10 @@ foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" }
     Console.Write("tbc/");
     Helper.Parse(pageString, sb, profession);
 }
-sb.AppendLine("-- #endif");
+File.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "02 - TBC.lua"), sb.Append("-- #endif").ToString());
 
 // Wrath Profession Data
-sb.AppendLine().AppendLine("-- #if AFTER 3.0.0");
+sb.Clear().AppendLine("-- #if AFTER 3.0.0").AppendLine(commonHeader);
 foreach (string profession in new string[] { "Alchemy", "Blacksmithing", "Enchanting", "Engineering", "Herbalism", "Inscription", "Jewelcrafting", "Leatherworking", "Mining", "Skinning", "Tailoring" })
 {
     var pageString = Helper.GetStringFromWoWHead($"professions/{profession.ToLower().Replace(" ", "")}", "wotlk/").Result;
@@ -57,10 +63,10 @@ foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" }
     Console.Write("wotlk/");
     Helper.Parse(pageString, sb, profession);
 }
-sb.AppendLine("-- #endif");
+File.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "03 - Wrath.lua"), sb.Append("-- #endif").ToString());
 
 // Cataclysm Profession Data
-sb.AppendLine().AppendLine("-- #if AFTER 4.0.0");
+sb.Clear().AppendLine("-- #if AFTER 4.0.0").AppendLine(commonHeader);
 foreach (string profession in new string[] { "Alchemy", "Blacksmithing", "Enchanting", "Engineering", "Herbalism", "Inscription", "Jewelcrafting", "Leatherworking", "Mining", "Skinning", "Tailoring" })
 {
     var pageString = Helper.GetStringFromWoWHead($"professions/{profession.ToLower().Replace(" ", "")}", "cata/").Result;
@@ -75,12 +81,12 @@ foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" }
     Console.Write("cata/");
     Helper.Parse(pageString, sb, profession);
 }
-sb.AppendLine("-- #endif");
+File.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "04 - Cataclysm.lua"), sb.Append("-- #endif").ToString());
 
 
 
 // Retail Profession Data
-sb.AppendLine().AppendLine("-- #if AFTER 11.0.0");
+sb.Clear().AppendLine("-- #if AFTER 11.0.0").AppendLine(commonHeader);
 foreach (string profession in new string[] { "Alchemy", "Blacksmithing", "Enchanting", "Engineering", "Herbalism", "Inscription", "Jewelcrafting", "Leatherworking", "Mining", "Skinning", "Tailoring" })
 {
     var pageString = Helper.GetStringFromWoWHead($"professions/{profession.ToLower().Replace(" ", "")}").Result;
@@ -95,11 +101,4 @@ foreach (string profession in new string[] { "Archaeology", "Cooking", "Fishing"
     Console.Write("retail/");
     Helper.Parse(pageString, sb, profession);
 }
-sb.AppendLine("-- #endif");
-
-Console.WriteLine(sb.ToString());
-var ProfessionDBFileName = "../Parser/DATAS/00 - Profession DB/Skills Learned At.lua";
-#pragma warning disable CS8604 // Possible null reference argument.
-Directory.CreateDirectory(Path.GetDirectoryName(ProfessionDBFileName));
-#pragma warning restore CS8604 // Possible null reference argument.
-File.WriteAllText(ProfessionDBFileName, sb.Append("-- #endif").ToString());
+File.WriteAllText(Path.Combine(SkillLevelRequirementsFolderName, "11 - The War Within.lua"), sb.Append("-- #endif").ToString());

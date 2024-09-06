@@ -6,12 +6,12 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "Spell Learned At/1.0.0": {
+      "Skill Level Requirements/1.0.0": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
-          "Spell Learned At.dll": {}
+          "Skill Level Requirements.dll": {}
         }
       },
       "Newtonsoft.Json/13.0.3": {
@@ -25,7 +25,7 @@
     }
   },
   "libraries": {
-    "Spell Learned At/1.0.0": {
+    "Skill Level Requirements/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
