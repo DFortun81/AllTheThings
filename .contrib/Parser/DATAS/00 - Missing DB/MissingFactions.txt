@@ -30,3 +30,5 @@ faction(2645),	-- Earthen
 faction(2647),	-- The Vizier (Paragon) \\ The Vizier (Notoriety), Paragon
 faction(2648),	-- The Weaver (Paragon) \\ The Weaver (Notoriety), Paragon
 faction(2649),	-- The General (Paragon) \\ The General (Notoriety), Paragon
+11.0.5.56487
+faction(2682),	-- 

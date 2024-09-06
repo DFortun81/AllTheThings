@@ -40,6 +40,11 @@ mount(452777),	-- [PH] Goliathus (Green) \\ [PH] NerubianBeetleLargeMount (Green
 mount(452780),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
 11.0.2.55789
 mount(463025),	-- Gigantic Grrloc
+11.0.5.56487
+mount(452643),	-- Frayfeather Hippogryph
+mount(452645),	-- Amani Hunting Bear
+mount(463133),	-- Coldflame Tempest
+mount(468353),	-- Enchanted Spellweave Carpet
 
 
 
@@ -88,3 +93,8 @@ mount(452777),	-- [PH] Goliathus (Green) \\ [PH] NerubianBeetleLargeMount (Green
 mount(452780),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
 11.0.2.55789
 mount(463025),	-- Gigantic Grrloc
+11.0.5.56487
+mount(452643),	-- Frayfeather Hippogryph
+mount(452645),	-- Amani Hunting Bear
+mount(463133),	-- Coldflame Tempest
+mount(468353),	-- Enchanted Spellweave Carpet

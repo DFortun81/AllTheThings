@@ -1,0 +1,18 @@
+11.0.5.56487
+title(571),	-- Detective %s
+title(577),	-- Grizzly Hills Hiker %s
+title(578),	-- Plaguelands Survivor %s
+title(581),	-- Classic Enthusiast %s
+title(582),	-- Outland Enthusiast %s
+title(583),	-- Northrend Enthusiast %s
+title(584),	-- Cataclsym Enthusiast %s
+title(585),	-- Pandaria Enthusiast %s
+title(586),	-- Draenor Enthusiast %s
+title(587),	-- Broken Isles Enthusiast %s
+title(588),	-- Zuldazar Enthusiast %s
+title(589),	-- Kul Tiras Enthusiast %s
+title(590),	-- Shadowlands Enthusiast %s
+title(591),	-- Dragon Isles Enthusiast %s
+title(594),	-- Khaz Algar Racer %s
+title(595),	-- Molten Core Prospector %s
+title(596),	-- Karazhan Graduate %s

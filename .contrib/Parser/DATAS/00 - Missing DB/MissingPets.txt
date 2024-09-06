@@ -11,6 +11,14 @@ pet(4509),	-- Sporbit
 pet(4528),	-- Cobalt Mosswool
 pet(4583),	-- Green Stagshell
 pet(4584),	-- Tan Stagshell
+11.0.5.56487
+pet(4592),	-- Misty
+pet(4593),	-- Craggles
+pet(4669),	-- Bluedoo
+pet(4678),	-- Lil'Doomy
+pet(4679),	-- Lil'Kaz
+pet(4686),	-- Specter
+pet(4689),	-- Karazhan Syphoner
 
 
 
@@ -30,3 +38,11 @@ pet(4509),	-- Sporbit
 pet(4528),	-- Cobalt Mosswool
 pet(4583),	-- Green Stagshell
 pet(4584),	-- Tan Stagshell
+11.0.5.56487
+pet(4592),	-- Misty
+pet(4593),	-- Craggles
+pet(4669),	-- Bluedoo
+pet(4678),	-- Lil'Doomy
+pet(4679),	-- Lil'Kaz
+pet(4686),	-- Specter
+pet(4689),	-- Karazhan Syphoner
