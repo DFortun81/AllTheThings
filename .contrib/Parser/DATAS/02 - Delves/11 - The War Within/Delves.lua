@@ -1534,7 +1534,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(82772),	-- First Delve of the day
 		q(84670),	-- after turn in weekly delve quest (was 82746 - Delves: Breaking Tough to Loot Stuff - for this one)
 		q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
-		q(85651),	-- Triggeres with 'Delver's Call: The Sinkhole' (questID 83767)
+		q(85666),	-- Triggers with 'Delver's Call: Spiral Weave' (questID 83770)
+		q(85651),	-- Triggers with 'Delver's Call: The Sinkhole' (questID 83767)
 		-- Bountiful Delve runs
 		q(82944),	-- Earthcrawl Mines
 		q(82939),	-- Fungal Folly
