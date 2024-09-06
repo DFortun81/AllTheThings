@@ -472,6 +472,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 227523 },	-- Brann Bronzebeard
 					["coord"] = { 43.5, 56.3, HALLOWFALL },
 				}),
+				q(85664, {	-- Delver's Call: Nightfall Sanctum
+					["provider"] = { "o", 487847 },	-- DELVER'S CALL: Nightfall Sanctum
+					["coord"] = { 72.6, 27.5, NIGHTFALL_SANCTUM },
+				}),
 			}),
 			n(TREASURES, {
 				o(455494, {	-- Sturdy Chest
