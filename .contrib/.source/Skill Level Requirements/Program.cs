@@ -12,7 +12,7 @@ Directory.CreateDirectory(Path.GetDirectoryName(SkillLevelRequirementsFolderName
 string commonHeader = "-- WARNING: THIS DOCUMENT IS DYNAMICALLY GENERATED. DO NOT MANUALLY UPDATE!\nlocal recipeDB = RecipeDBConditional;";
 
 // Classic Profession Data
-StringBuilder sb = new StringBuilder().AppendLine("-- #if ANYCLASSIC").AppendLine(commonHeader);
+StringBuilder sb = new StringBuilder().AppendLine(commonHeader);
 foreach (string profession in new string[] { "Alchemy", "Blacksmithing", "Enchanting", "Engineering", "Herbalism", "Leatherworking", "Mining", "Skinning", "Tailoring" })
 {
     var pageString = Helper.GetStringFromWoWHead($"professions/{profession.ToLower().Replace(" ", "")}", "classic/").Result;

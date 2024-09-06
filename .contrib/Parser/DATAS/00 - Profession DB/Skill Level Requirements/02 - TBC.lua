@@ -84,7 +84,6 @@ for spellID,learnedAt in pairs({
 for spellID,learnedAt in pairs({
 	[43549] = 35,	-- Heavy Copper Longsword
 	[34979] = 100,	-- Thick Bronze Darts
-	[3491] = 105,	-- Big Bronze Knife
 	[34981] = 200,	-- Whirling Steel Axes
 	[36122] = 260,	-- Earthforged Leggings
 	[36125] = 260,	-- Light Earthforged Blade
@@ -920,6 +919,7 @@ for spellID,learnedAt in pairs({
 
 -- Cooking
 for spellID,learnedAt in pairs({
+	[818] = 0,	-- Basic Campfire
 	[33359] = 0,	-- Cooking
 	[43779] = 1,	-- Delicious Chocolate Cake
 	[33276] = 1,	-- Lynx Steak
