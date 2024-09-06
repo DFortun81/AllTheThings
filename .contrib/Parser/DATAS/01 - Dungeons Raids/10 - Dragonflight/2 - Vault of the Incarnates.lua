@@ -537,13 +537,13 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				q(72259, {	-- Vault Artifacts
 					["provider"] = { "n", 197095 },	-- Lillian Brightmoon
-					["maxReputation"] = { 2507, 25 },
+					["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["cost"] = { { "i", 201411, 1 } },	-- 1x Ancient Vault Artifact
 					["repeatable"] = true,
 				}),
 				q(72260, {	-- Vault Artifacts
 					["provider"] = { "n", 197095 },	-- Lillian Brightmoon
-					["maxReputation"] = { 2507, 25 },
+					["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["cost"] = { { "i", 201411, 5 } },	-- 5x Ancient Vault Artifact
 					["repeatable"] = true,
 				}),
