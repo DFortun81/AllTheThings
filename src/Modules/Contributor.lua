@@ -19,10 +19,7 @@ app.Modules.Contributor = api;
 api.Events = {}
 local Reports = setmetatable({}, { __index = function(t,key)
 	local reportType = setmetatable({}, { __index = function(t,key)
-		local typeIDReport = {
-			"### "..t.__type..":"..(key or UNKNOWN),
-			"```elixir",	-- discord fancy box start
-		};
+		local typeIDReport = {}
 		t[key] = typeIDReport
 		return typeIDReport
 	end})
@@ -50,8 +47,15 @@ local function DoReport(reporttype, id)
 
 	local reportData = Reports[reporttype][id]
 	-- keyed report data
+	local keyedData = {}
 	for k,v in pairs(reportData) do
-		reportData[#reportData + 1] = "("..tostring(k).." : "..tostring(v)..")"
+		keyedData[#keyedData + 1] = tostring(k).." : ("..tostring(v)..")"
+	end
+	-- common report data
+	reportData[#reportData + 1] = "### "..reporttype..":"..id
+	reportData[#reportData + 1] = "```elixir"	-- discord fancy box start
+	for _,text in pairs(keyedData) do
+		reportData[#reportData + 1] = text
 	end
 	-- common report data
 	reportData[#reportData + 1] = "----User Info---"
@@ -85,6 +89,40 @@ api.DoReport = function(id, text)
 	AddReportData("test", id, text)
 end
 
+local function Check_coords(objRef, id, mapID, px, py)
+	if not objRef or not objRef.coords then return end
+
+	local dist, sameMap, check
+	local closest = 9999
+	for _, coord in ipairs(objRef.coords) do
+		if mapID == coord[3] then
+			sameMap = mapID
+			dist = app.distance(px, py, coord[1], coord[2])
+			app.PrintDebug("coords @",dist)
+			if dist < closest then closest = dist end
+		end
+	end
+	if sameMap then
+		-- quest has an accurate coord on accurate map
+		if closest > 1 then
+			-- round to the tenth
+			closest = round(closest, 1)
+			AddReportData(objRef.__type,id,{
+				questID = id,
+				WrongCoords = "Closest Coordinates are off by: "..tostring(closest).." on mapID: "..mapID,
+			})
+			check = 1
+		end
+	else
+		AddReportData(objRef.__type,id,{
+			questID = id,
+			MissingMap = "No Coordinates on current Map!",
+		})
+		check = 1
+	end
+	return check or true
+end
+
 -- Add a check when interacting with a Quest Giver NPC to verify coordinates of the related Quest
 local function OnQUEST_DETAIL(...)
 	-- local questStartItemID = ...;
@@ -100,40 +138,26 @@ local function OnQUEST_DETAIL(...)
 
 	-- check coord distance
 	local mapID, px, py = app.GetPlayerPosition()
-	if questRef.coords then
-		local dist, sameMap
-		local closest = 9999
-		for _, coord in ipairs(questRef.coords) do
-			if mapID == coord[3] then
-				sameMap = mapID
-				dist = app.distance(px, py, coord[1], coord[2])
-				app.PrintDebug("coords @",dist)
-				if dist < closest then closest = dist end
-			end
-		end
-		if sameMap then
-			-- quest has an accurate coord on accurate map
-			if closest > 1 then
-				-- round to the tenth
-				closest = round(closest, 1)
+
+	-- player position in some instances reports as 50,50 so don't check coords if it's this case
+	if px ~= 50 or py ~= 50 then
+		if not Check_coords(questRef, questRef[questRef.key], mapID, px, py) then
+			-- is this quest listed directly under an NPC which has coords instead? check that NPC for coords
+			-- e.g. Garrison NPCs Bronzebeard/Saurfang
+			local questParent = questRef.parent
+			if questParent and questParent.__type == "NPC" then
+				if not Check_coords(questParent, questParent[questParent.key], mapID, px, py) then
+					AddReportData("quest",questID,{
+						questID = questID,
+						MissingCoords = "No Coordinates for this quest under NPC!",
+					})
+				end
+			else
 				AddReportData("quest",questID,{
 					questID = questID,
-					WrongCoords = "Closest Coordinates are off by: "..tostring(closest).." on mapID: "..mapID,
+					MissingCoords = "No Coordinates for this quest!",
 				})
 			end
-		else
-			AddReportData("quest",questID,{
-				questID = questID,
-				MissingMap = "No Coordinates for this quest on current Map!",
-			})
-		end
-	else
-		-- player position in some instances reports as 50,50
-		if px ~= 50 or py ~= 50 then
-			AddReportData("quest",questID,{
-				questID = questID,
-				MissingCoords = "No Coordinates for this quest!",
-			})
 		end
 	end
 
@@ -152,10 +176,15 @@ local function OnQUEST_DETAIL(...)
 			end
 		end
 		if not found then
-			AddReportData("quest",questID, {
-				questID = questID,
-				QuestGiver = "Missing Quest Giver: "..npc_id.." ["..(app.NPCNameFromID[npc_id] or UNKNOWN).."]",
-			})
+			local questParent = questRef.parent
+			-- this quest is listed directly under an NPC then compare that NPCID
+			-- e.g. Garrison NPCs Bronzebeard/Saurfang
+			if not questParent or not questParent.__type == "NPC" or questParent.npcID ~= npc_id then
+				AddReportData("quest",questID, {
+					questID = questID,
+					QuestGiver = "Missing Quest Giver: "..npc_id.." ["..(app.NPCNameFromID[npc_id] or UNKNOWN).."]",
+				})
+			end
 		end
 	end
 	-- app.PrintDebug("Contributor.OnQUEST_DETAIL.Done")
