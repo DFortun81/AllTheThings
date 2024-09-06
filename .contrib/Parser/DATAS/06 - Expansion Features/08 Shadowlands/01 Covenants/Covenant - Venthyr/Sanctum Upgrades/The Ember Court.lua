@@ -1218,7 +1218,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 30.9, 57.6, REVENDRETH },
 								}),
 								q(63696, {	-- Grandmaster Vole's Best Friend
-									-- ["minReputation"] = { 2457,  }, -- TODO, Best Friend w/ Grandmaster Vole?
+									-- ["minReputation"] = { FACTION_EMBER_COURT_VOLE,  }, -- TODO, Best Friend w/ Grandmaster Vole?
 									["provider"] = { "n", 163019 },	-- Grandmaster Vole
 									["coord"] = { 52.8, 49.2, MALDRAXXUS },
 								}),
@@ -1228,7 +1228,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 70.0, 56.2, REVENDRETH },
 								}),
 								q(63697, {	-- Kleia and Pelagos's Best Friend
-									-- ["minReputation"] = { 2457,  }, -- TODO, Best Friend w/ Kleia and Pelagos?
+									-- ["minReputation"] = { FACTION_EMBER_COURT_KLEIA_PELAGOS,  }, -- TODO, Best Friend w/ Kleia and Pelagos?
 									["provider"] = { "n", 174916 },	-- Kleia
 									["coord"] = { 55.8, 86.4, BASTION },
 								}),

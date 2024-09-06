@@ -150,16 +150,16 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 		n(FACTIONS, sharedData({
 			["races"] = ALLIANCE_ONLY,
 		},{
-			faction(1419, {	-- Bizmo's Brawlpub (Season 1)
+			faction(FACTION_BRAWLPUB_SEASON_1, {	-- Bizmo's Brawlpub (Season 1)
 				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
 			}),
-			faction(1691, {	-- Bizmo's Brawlpub (Season 2)
+			faction(FACTION_BRAWLPUB_SEASON_2, {	-- Bizmo's Brawlpub (Season 2)
 				["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
 			}),
-			faction(2011, {	-- Bizmo's Brawlpub (Season 3)
+			faction(FACTION_BRAWLPUB_SEASON_3, {	-- Bizmo's Brawlpub (Season 3)
 				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1_LAUNCH },
 			}),
-			faction(2371, {	-- Bizmo's Brawlpub
+			faction(FACTION_BRAWLPUB_SEASON_4, {	-- Bizmo's Brawlpub
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 			}),
 		})),

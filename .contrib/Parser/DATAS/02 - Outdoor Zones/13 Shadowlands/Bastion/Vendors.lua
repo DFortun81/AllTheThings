@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		n(VENDORS, {
 			n(160470, {	-- Adjutant Nikos <Ascended Quartermaster>
 				["coord"] = { 52.2, 47.0, BASTION },
-				["minReputation"] = { 2407, 5 },	-- The Ascended, Friendly
+				["minReputation"] = { FACTION_THE_ASCENDED, FRIENDLY },	-- The Ascended, Friendly
 				["g"] = bubbleDownRepSkip(FACTION_THE_ASCENDED, {
 					{		-- Neutral
 						i(190644, {	-- Vessel of Profound Possibilities

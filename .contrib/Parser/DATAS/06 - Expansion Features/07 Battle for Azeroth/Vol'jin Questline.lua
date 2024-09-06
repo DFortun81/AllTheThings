@@ -12,7 +12,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			["sourceQuest"] = 50954,	-- Zandalar Forever!
 			["provider"] = { "n", 120171 },	-- Rokhan
 			["coord"] = { 57.6, 62.4, ZULDAZAR },
-			["minReputation"] = { 2103, REVERED },
+			["minReputation"] = { FACTION_ZANDALARI_EMPIRE, REVERED },
 		}),
 		q(51514, {	-- Broken Bargain
 			["sourceQuest"] = 51513,	-- Zalazane Returns

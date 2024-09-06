@@ -22,63 +22,63 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 73.7, 36.9, MECHAGON },
 				["g"] = {
 					i(168400, {	-- Null Force Containment Unit (Rank 1)
-						["minReputation"] = { 2391, FRIENDLY },
+						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, FRIENDLY },
 						["cost"] = {
 							{ "i", 169610, 2 },	-- 2x Spare Crate
 							{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
 						},
 					}),
 					i(168566, {	-- Null Force Cooling Unit (Rank 2)
-						["minReputation"] = { 2391, HONORED },
+						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, HONORED },
 						["cost"] = {
 							{ "i", 169610, 8 },	-- 8x Spare Crate
 							{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
 						},
 					}),
 					i(168568, {	-- Null Force Nullifier (Rank 3)
-						["minReputation"] = { 2391, REVERED },
+						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, REVERED },
 						["cost"] = {
 							{ "i", 169610, 30 },	-- 30x Spare Crate
 							{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
 						},
 					}),
 					i(168858, {	-- Titan Purification Protocols (Rank 1)
-						["minReputation"] = { 2391, FRIENDLY },
+						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, FRIENDLY },
 						["cost"] = {
 							{ "i", 169610, 2 },	-- 2x Spare Crate
 							{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
 						},
 					}),
 					i(168859, {	-- Targeted Purification Protocols (Rank 2)
-						["minReputation"] = { 2391, HONORED },
+						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, HONORED },
 						["cost"] = {
 							{ "i", 169610, 8 },	-- 8x Spare Crate
 							{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
 						},
 					}),
 					i(168860, {	-- Enhanced Purification Protocols (Rank 3)
-						["minReputation"] = { 2391, REVERED },
+						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, REVERED },
 						["cost"] = {
 							{ "i", 169610, 30 },	-- 30x Spare Crate
 							{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
 						},
 					}),
 					i(168932, {	-- Reactive Existence Battery (Rank 1)
-						["minReputation"] = { 2391, FRIENDLY },
+						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, FRIENDLY },
 						["cost"] = {
 							{ "i", 169610, 2 },	-- 2x Spare Crate
 							{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
 						},
 					}),
 					i(168933, {	-- Enhanced Existence Capacitor (Rank 2)
-						["minReputation"] = { 2391, HONORED },
+						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, HONORED },
 						["cost"] = {
 							{ "i", 169610, 8 },	-- 8x Spare Crate
 							{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
 						},
 					}),
 					i(168934, {	-- Calibrated Existence Gauge (Rank 3)
-						["minReputation"] = { 2391, REVERED },
+						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, REVERED },
 						["cost"] = {
 							{ "i", 169610, 30 },	-- 30x Spare Crate
 							{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
