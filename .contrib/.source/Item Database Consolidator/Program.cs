@@ -13,41 +13,39 @@ namespace ATT
         static void Main(string[] args)
         {
             // DBContext / ItemDB
-            var databaseContexts = new Dictionary<string, Dictionary<long, object>>();
+            var databaseFolder = "../Parser/DATAS/00 - Item DB/.dynamic";
+            Directory.CreateDirectory(databaseFolder);
             foreach (var file in Directory.GetFiles("../.raw"))
             {
                 if (file.EndsWith(".lua"))
                 {
                     Console.WriteLine(file);
                     Lua lua = new Lua();
-                    lua.DoString("DBContext = \"\";ItemDB = {};");
+                    lua.DoString("DBContext = \"\";DBFileName = \"\";ItemDB = {};");
                     lua.DoFile(Path.GetFullPath(file));
 
                     // Determine the DB Context of this file.
-                    databaseContexts[lua.GetString("DBContext")] = ParseAsObject<long>(lua.GetTable("ItemDB"));
+                    var dbContext = lua.GetString("DBContext");
+                    var dbFileName = lua.GetString("DBFileName");
+                    var itemDB = ParseAsObject<long>(lua.GetTable("ItemDB"));
+
+                    var builder = new StringBuilder();
+                    builder.Append("-- #if ").Append(dbContext).AppendLine();
+                    builder.Append("_.ItemDB = {");
+                    var sortedKeys = itemDB.Keys.ToList();
+                    sortedKeys.Sort();
+                    foreach (var key in sortedKeys)
+                    {
+                        builder.AppendLine().Append("[").Append(key).Append("]=");
+                        Export(builder, itemDB[key]);
+                        builder.Append(",");
+                    }
+                    builder.AppendLine("};").AppendLine("-- #endif");
+                    File.WriteAllText(Path.Combine(databaseFolder, $"{dbFileName}.lua"), builder.ToString(), Encoding.UTF8);
                 }
             }
 
-            var databaseFolder = "../.db";
-            if (!Directory.Exists(databaseFolder)) databaseFolder = "../Parser/DATAS";
-            Console.WriteLine(databaseContexts.Count);
-
-            var builder = new StringBuilder();
-            foreach (var pair in databaseContexts)
-            {
-                builder.Append("-- #if ").Append(pair.Key).AppendLine();
-                builder.Append("_.ItemDB = {");
-                var sortedKeys = pair.Value.Keys.ToList();
-                sortedKeys.Sort();
-                foreach (var key in sortedKeys)
-                {
-                    builder.AppendLine().Append("[").Append(key).Append("]=");
-                    Export(builder, pair.Value[key]);
-                    builder.Append(",");
-                }
-                builder.AppendLine("};").AppendLine("-- #endif");
-            }
-            File.WriteAllText(Path.Combine(databaseFolder, "00 - DB/ItemDB.lua"), builder.ToString(), Encoding.UTF8);
+            
         }
 
         static void Export(StringBuilder builder, object o)

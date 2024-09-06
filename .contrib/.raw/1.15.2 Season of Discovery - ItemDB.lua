@@ -1,4 +1,5 @@
 DBContext = "SEASON_OF_DISCOVERY";
+DBFileName = "01 - Classic SOD";
 ItemDB = {
 [8957] = {
 ["q"] = 1,

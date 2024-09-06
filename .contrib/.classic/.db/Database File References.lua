@@ -1,5 +1,6 @@
 -- Database
 -- #IMPORT: 00 - DB\\Parser Setup Data\\
+-- #IMPORT: 00 - Item DB\\.dynamic\\
 -- #IMPORT: 00 - DB\\AchievementDB - Cataclysm.lua
 -- #IMPORT: 00 - DB\\CategoryDB.lua
 -- #IMPORT: 00 - DB\\ClassInfoDB.lua
@@ -8,7 +9,6 @@
 -- #IMPORT: 00 - DB\\FlightPathDB_Conditionals.lua
 -- #IMPORT: 00 - DB\\IllusionDB.lua
 -- #IMPORT: 00 - DB\\InstanceDB.lua
--- #IMPORT: 00 - DB\\ItemDB.lua
 -- #IMPORT: 00 - DB\\MountDB.lua
 -- #IMPORT: 00 - DB\\ObjectDB.lua
 -- #IMPORT: 00 - DB\\ObjectDB_Conditionals.lua

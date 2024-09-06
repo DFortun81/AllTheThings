@@ -1,0 +1,11 @@
+This folder contains data harvested from in game and exported to SavedVariables.
+
+Each file has a "DBContext", "DBFileName", and an "ItemDB" at bare minimum.
+
+Example:
+DBContext = "CLASSICERA";
+DBFileName = "01 - Classic Era";
+ItemDB = {};
+
+If you are reharvesting for a specific expansion, replace the ItemDB contents for that file and then update the patch in the name of the file.
+After doing so, simply run the Item DB Consolidator tool and it will build the 00 - Item DB/.dynamic folder based on this data.
