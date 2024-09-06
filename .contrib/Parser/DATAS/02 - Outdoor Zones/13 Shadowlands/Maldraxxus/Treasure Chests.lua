@@ -409,7 +409,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(SHADOWLANDS, {
 		m(MALDRAXXUS, {
-			n(RARES, {
+			n(TREASURES, {
 				--	Treasures of Maldraxxus achievement
 				q(58709),	-- Forgotten Mementos - clicking the chain
 				q(59245),	-- Misplaced Supplies (daily trigger)

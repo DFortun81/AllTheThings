@@ -534,7 +534,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
+root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(THE_MAW, {
 		-- q(64258),	-- Carriage Crusher / Traitor Balthier
 		-- q(64439),	-- Carriage Crusher / Traitor Balthier

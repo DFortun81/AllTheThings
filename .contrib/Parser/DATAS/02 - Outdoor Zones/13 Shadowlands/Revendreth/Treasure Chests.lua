@@ -827,7 +827,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(SHADOWLANDS, {
 		m(REVENDRETH, {
-			n(RARES, {
+			n(TREASURES, {
 				q(60954),	-- secondary questID when looting Pugilist's Prize (35.8, 67.5 location only)
 				q(60851),	-- secondary questID when looting Secret Treasure (27.7, 48.7 location only)
 				q(60852),	-- secondary questID when looting Stoneborn Satchel (76.6, 51.0 location only) / Bleakwood Chest
