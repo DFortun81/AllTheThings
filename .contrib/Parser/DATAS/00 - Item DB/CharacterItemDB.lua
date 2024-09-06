@@ -302,6 +302,9 @@ is(0, 367416); 						-- Path of the Streetwise Merchant
 -----------------
 is(0, 373262); 						-- Path of the Fallen Guardian
 is(0, 373274); 						-- Path of the Scrappy Prince
+is(0, 373192); 						-- Path of the First Ones
+is(0, 373190); 						-- Path of the Sire
+is(0, 373191); 						-- Path of the Tormented Soul
 
 ------------------
 -- PATCH 10.0.0 --
@@ -531,6 +534,9 @@ iq(216898, 80085);					-- Mallard Duck Disguise
 iq(216900, 80087);					-- Pink Duck Disguise
 iq(216901, 80088);					-- White Duck Disguise
 iq(216902, 80089);					-- Yellow Duck Disguise
+is(0, 432257); 						-- Path of the Bitter Legacy
+is(0, 432254); 						-- Path of the Primal Prison
+is(0, 432258); 						-- Path of the Scorching Dream
 
 ------------------
 -- PATCH 11.0.0 --
