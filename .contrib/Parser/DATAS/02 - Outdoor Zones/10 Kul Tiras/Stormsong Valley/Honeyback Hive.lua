@@ -5,7 +5,7 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 	m(STORMSONG_VALLEY, {
 		n(FACTIONS, {
-			faction(2395, {	-- Honeyback Hive
+			faction(FACTION_HONEYBACK_HIVE, {	-- Honeyback Hive
 				["races"] = ALLIANCE_ONLY,
 				["icon"] = "Interface\\Icons\\inv_cooking_80_choralhoney3",
 				-- Possible to use HQT's to track unlock
@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 				},
 				["g"] = {
 					n(FACTIONS, {
-						faction(2398, {	-- Honeyback Harvester
+						faction(FACTION_HONEYBACK_HARVESTER, {	-- Honeyback Harvester
 							["races"] = ALLIANCE_ONLY,
 						}),
 					}),
@@ -222,12 +222,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 							["groups"] = {
 								i(169657),	-- Hivethief's Jelly Stash
 							},
-						}),	
+						}),
 						n(155173, {	-- Honeyback Usurper
 							["groups"] = {
 								i(169658),	-- Usurper's Scent Gland
 							},
-						}),	
+						}),
 						n(155176, {	-- Old Nasha
 							["groups"] = {
 								i(169659),	-- Old Nasha's Paw
@@ -248,7 +248,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 								i(169654),	-- Spiral Yeti Horn
 							},
 						}),
-					})),	
+					})),
 					n(VENDORS, {
 						n(153393, {	-- Barry
 							["coord"] = { 69.2, 64.2, STORMSONG_VALLEY },

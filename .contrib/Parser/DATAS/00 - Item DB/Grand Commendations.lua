@@ -210,65 +210,65 @@ i(146939, 1894);	-- Wardens Insignia [The Wardens]
 -- Battle For Azeroth
 	-- These first factions have pure tokens only, no quest item > token exchange.
 	-- Honeyback Hive
-		i(168825, 2395);	-- Rich Jelly (+80)
-		i(168828, 2395);	-- Royal Jelly (+160)
-		i(168822, 2395);	-- Thin Jelly (+20)
+		i(168825, FACTION_HONEYBACK_HIVE);	-- Rich Jelly (+80)
+		i(168828, FACTION_HONEYBACK_HIVE);	-- Royal Jelly (+160)
+		i(168822, FACTION_HONEYBACK_HIVE);	-- Thin Jelly (+20)
 
 	-- Rajani
 
 
 	-- Rustbolt Resistance
-		i(173736, 2391);	-- Layered Information Kernel of E-steam (+250, Rustbolt Resistance)
-		i(174521, 2391);	-- Transferable Kernel of E-steam (+250, Rustbolt Resistance)
+		i(173736, FACTION_RUSTBOLT_RESISTANCE);	-- Layered Information Kernel of E-steam (+250, Rustbolt Resistance)
+		i(174521, FACTION_RUSTBOLT_RESISTANCE);	-- Transferable Kernel of E-steam (+250, Rustbolt Resistance)
 
 	-- Nazjatar
-		i(173948, 2373);	-- Glittering Abyssal Conch (Unshackled)
-		i(173947, 2400);	-- Glittering Abyssal Conch (Waveblade Ankoan)
-		i(174523, 2373);	-- Waveswept Abyssal Conch (Unshackled)
-		i(174522, 2400);	-- Waveswept Abyssal Conch (Waveblade Ankoan)
+		i(173948, FACTION_THE_UNSHACKLED);	-- Glittering Abyssal Conch (Unshackled)
+		i(173947, FACTION_WAVEBLADE_ANKOAN);	-- Glittering Abyssal Conch (Waveblade Ankoan)
+		i(174523, FACTION_THE_UNSHACKLED);	-- Waveswept Abyssal Conch (Unshackled)
+		i(174522, FACTION_WAVEBLADE_ANKOAN);	-- Waveswept Abyssal Conch (Waveblade Ankoan)
 
 	-- For the rest of these, the first line is the quest item and the second line is the BoA token awarded by the quest.
 	-- Currently commenting out the quest item from this file and leave just the token in, because that's the part that actually gives reputation.  These used to be a simple quest item > starts quest > quest gives reputation exchange, and the token rewards were added in 8.3.
 
 	-- 7th Legion
-	--	i(163617, 2159);	-- Rusted Alliance Insignia
-		i(174507, 2159);	-- Fallen Soldier's Insignia (A)
+	--	i(163617, FACTION_7TH_LEGION);	-- Rusted Alliance Insignia
+		i(174507, FACTION_7TH_LEGION);	-- Fallen Soldier's Insignia (A)
 
 	-- Champions of Azeroth
-	--	i(163217, 2164);	-- Azeroth's Tear
-		i(174502, 2164);	-- Tear of Azeroth
+	--	i(163217, FACTION_CHAMPIONS_OF_AZEROTH);	-- Azeroth's Tear
+		i(174502, FACTION_CHAMPIONS_OF_AZEROTH);	-- Tear of Azeroth
 
 	-- Honorbound
-	--	i(163621, 2157);	-- Rusted Horde Insignia
-		i(174508, 2157);	-- Fallen Soldier's Insignia (H)
+	--	i(163621, FACTION_THE_HONORBOUND);	-- Rusted Horde Insignia
+		i(174508, FACTION_THE_HONORBOUND);	-- Fallen Soldier's Insignia (H)
 
 	-- Order of Embers
-	--	i(163614, 2161);	-- Exotic Spices
-		i(174503, 2161);	-- Exotically Spiced Carrot
+	--	i(163614, FACTION_ORDER_OF_EMBERS);	-- Exotic Spices
+		i(174503, FACTION_ORDER_OF_EMBERS);	-- Exotically Spiced Carrot
 
 	-- Proudmoore Admiralty
-	--	i(163616, 2160);	-- Dented Coin
-		i(174504, 2160);	-- Proudmoore War Copper
+	--	i(163616, FACTION_PROUDMOORE_ADMIRALTY);	-- Dented Coin
+		i(174504, FACTION_PROUDMOORE_ADMIRALTY);	-- Proudmoore War Copper
 
 	-- Storm's Wake
-	--	i(163615, 2162);	-- Lost Sea Scroll
-		i(174505, 2162);	-- Tide-Speaker's Tome
+	--	i(163615, FACTION_STORMS_WAKE);	-- Lost Sea Scroll
+		i(174505, FACTION_STORMS_WAKE);	-- Tide-Speaker's Tome
 
 	-- Talanji's Expedition
-	--	i(163619, 2156);	-- Golden Beetle
-		i(174506, 2156);	-- Golden Insect Wings
+	--	i(163619, FACTION_TALANJIS_EXPEDITION);	-- Golden Beetle
+		i(174506, FACTION_TALANJIS_EXPEDITION);	-- Golden Insect Wings
 
 	-- Tortollan Seekers
-	--	i(166501, 2163);	-- Soggy Page
-		i(174519, 2163);	-- Verdant Hills of Chokingvine - Page 17
+	--	i(166501, FACTION_TORTOLLAN_SEEKERS);	-- Soggy Page
+		i(174519, FACTION_TORTOLLAN_SEEKERS);	-- Verdant Hills of Chokingvine - Page 17
 
 	-- Voldunai
-	--	i(163618, 2158);	-- Shimmering Shell
-		i(174501, 2158);	-- Ornate Voldunai Jewelry
+	--	i(163618, FACTION_VOLDUNAI);	-- Shimmering Shell
+		i(174501, FACTION_VOLDUNAI);	-- Ornate Voldunai Jewelry
 
 	-- Zandalari Empire
-	--	i(163620, 2103);	-- Island Flotsam
-		i(174518, 2103);	-- Jani Figurine
+	--	i(163620, FACTION_ZANDALARI_EMPIRE);	-- Island Flotsam
+		i(174518, FACTION_ZANDALARI_EMPIRE);	-- Jani Figurine
 
 
 

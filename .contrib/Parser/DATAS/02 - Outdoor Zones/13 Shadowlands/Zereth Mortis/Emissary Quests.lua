@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			q(64867, {	-- Supplies from The Enlightened
 				["provider"] = { "n", 182257 },	-- Vilo
 				["coord"] = { 34.8, 64.1, ZERETH_MORTIS },
-				["minReputation"] = { FACTION_THE_ENLIGHTENED, 8 },	-- The Enlightened, Exalted
+				["minReputation"] = { FACTION_THE_ENLIGHTENED, EXALTED },	-- The Enlightened, Exalted
 				["repeatable"] = true,
 				["g"] = {
 					i(187780, {	-- Enlightened Broker Supplies

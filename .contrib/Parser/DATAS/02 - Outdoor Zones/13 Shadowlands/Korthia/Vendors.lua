@@ -169,7 +169,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 			}),
 			n(179321, {	-- Duchess Mynx <Death's Advance Quartermaster>
 				["coord"] = { 63.5, 23.3, KORTHIA },
-				["minReputation"] = { FACTION_DEATHS_ADVANCE, 5 },	-- Death's Advance, Friendly
+				["minReputation"] = { FACTION_DEATHS_ADVANCE, FRIENDLY },	-- Death's Advance, Friendly
 				["g"] = {
 					i(186647, {	-- Amber Shardhide (MOUNT!)
 						["cost"] = { { "c", STYGIA, 5000 } },

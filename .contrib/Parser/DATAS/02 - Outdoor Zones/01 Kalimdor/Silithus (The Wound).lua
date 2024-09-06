@@ -55,7 +55,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 						}),
 					}),
 					n(EMISSARY_QUESTS, {
-						faction(2164, {	-- Champions of Azeroth
+						faction(FACTION_CHAMPIONS_OF_AZEROTH, {	-- Champions of Azeroth
 							q(50562, {	-- Champions of Azeroth
 								["isWorldQuest"] = true,
 								["coord"] = { 42.22, 44.27, SILITHUS },
