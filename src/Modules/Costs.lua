@@ -99,7 +99,7 @@ local function CacheFilters()
 	CheckCanBeCollected = app.MODE_DEBUG_OR_ACCOUNT and CanBeAccountCollected or CanBeCollected;
 end
 local function BlockedParent(group)
-	if group.questID and (group.saved or group.locked) or OneTimeQuests[group.questID] then
+	if group.questID and (group.saved or group.locked or OneTimeQuests[group.questID]) then
 		return group
 	end
 end
