@@ -1034,15 +1034,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	m(SHADOWLANDS, {
 		m(ARDENWEALD, {
 			n(QUESTS, {
 				q(62936),	-- Saw Bwonsamdi (spellID 345430)
 				q(63007),	-- Intro Skip
-				q(64312),	-- listening to the story time with tyrande after 9.1 campaign finish (in Ardenweald) (spellID 356055)
+				q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
+				------ Stay awhile and listen ------
+				hqt(64312, {["timeline"] = {ADDED_9_1_0}}),	-- Tyrande after 9.1 campaign finish (in Ardenweald) (spellID 356055)
 			}),
 		}),
 	}),
-});
+})));

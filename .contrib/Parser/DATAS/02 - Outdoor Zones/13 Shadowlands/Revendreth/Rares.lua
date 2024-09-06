@@ -213,3 +213,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 	}),
 })));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	m(SHADOWLANDS, {
+		m(REVENDRETH, {
+			n(RARES, {
+				q(62464),	-- Azgar secondary quest
+				q(60581),	-- Endlurker secondary quest
+				q(62463),	-- Prideful Hulk secondary quest
+				q(60583),	-- Tollkeeper Varaboss secondary quest
+				q(62455),	-- Amalgamation of Light secondary quest
+			}),
+		}),
+	}),
+})));

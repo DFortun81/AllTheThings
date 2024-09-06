@@ -244,3 +244,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 	}),
 })));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	m(SHADOWLANDS, {
+		m(MALDRAXXUS, {
+			n(WORLD_QUESTS, {
+				q(57210),	-- triggered when completing the ballista at 37.6, 50.8 during #57205, "A Few Bumps Along the Way"
+				q(57241),	-- triggered when completing the ballista at 38.8, 48.6 during #57205, "A Few Bumps Along the Way"
+				q(57242),	-- triggered when completing #57205, "A Few Bumps Along the Way"
+				q(62922),	-- triggered when turning in the Mixing a Mess WQ
+			}),
+		}),
+	}),
+})));

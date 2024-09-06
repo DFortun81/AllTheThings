@@ -1578,11 +1578,11 @@ for _,g in ipairs({ATTICUS_GROUP,ASCENDED_CHEST_OF_ARMS,MARTIAL_TITHE_OF_THE_COU
 	end
 end
 
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	n(NECROLORD, {
 		n(SANCTUM_UPGRADES, {
 			n(ABOMINATION_FACTORY, {
-			-- Recruiting Constructs
+				-- Recruiting Constructs
 				q(57577),	-- Triggered after recruiting Flytrap
 				q(57598),	-- Triggered after recruiting Gas Bag
 				q(57859),	-- Triggered after recruiting Guillotine
@@ -1597,7 +1597,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["customCol
 				q(57857),	-- Triggered after recruiting Toothpick
 				q(57612),	-- Triggered after recruiting The Professor
 
-			-- Stitching Table Abomination 'Upgrades'
+				-- Stitching Table Abomination 'Upgrades'
 				q(62575),	-- Crafted Armor Plating at Abominable Stitching Table
 				q(62824),	-- Crafted Back Mushrooms at Abominable Stitching Table (spellID 344796)
 				q(62580),	-- Crafted Barrel O'Fish at Abominable Stitching Table
@@ -1632,50 +1632,48 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["customCol
 				q(62819),	-- Crafted Unworthy Crown at Abominable Stitching Table (spellID 344770)
 				q(62468),	-- Crafted Vestigial Wings at Abominable Stitching Table
 			}),
-			q(63397),	-- Triggered when Completing weeklies with abominations/receiving Sitched set gear
-			q(62573),	-- Abomination level 3 sitching Chef hat/Sticky Cat.
-			q(61512),	-- Completing Something Old, Something Used first time. Confirmed first time 30.09.2021
-			q(63099),	-- Opening "Bag of Potions" (itemID 184589) from Atticus (spellID 346867)
-			q(60873),	-- Buying Bag of Sin Stones (180442) from Atticus
-			q(62988),	-- digging with Chordy in Revendreth
-			q(64666),	-- Completing Baker's Dozen (59043) (next week's quest rewarded Tomalin's Seasoning Crystal (181809))
+			n(ARMOR, {
+				-- Stitched Set (armor-type agnostic it seems by slot rewarded)
+				q(63393),	-- Helm
+				q(63396),	-- Shoulders
+				q(63398),	-- Chest
+				q(63394),	-- Wrist
+				q(63392),	-- Gloves
+				-- q(63397),	-- Waist -- TODO confirm
+				q(63395),	-- Legs
+				q(63399),	-- Feet
+				q(63400),	-- Cloak
 
-		-- Crypt Couture criterias
-			q(62404),	-- using Ashen Ink (Crypt Couture)
-			q(62408),	-- using Jagged Bonesaw (Crypt Couture)
-			q(62405),	-- using Mucosal Pigment (Crypt Couture)
+				-- Duty-Bound Set
+				-- q(),	-- Helm
+				q(63401),	-- Shoulders
+				-- q(),	-- Chest
+				-- q(),	-- Wrist
+				q(63404),	-- Gloves
+				q(63409),	-- Waist
+				q(63402),	-- Legs
+				q(63408),	-- Feet
 
-		-- Stitched Set (armor-type agnostic it seems by slot rewarded)
-			q(63393),	-- Helm
-			q(63396),	-- Shoulders
-			q(63398),	-- Chest
-			q(63394),	-- Wrist
-			q(63392),	-- Gloves
-			-- q(63397),	-- Waist -- TODO confirm
-			q(63395),	-- Legs
-			q(63399),	-- Feet
-			q(63400),	-- Cloak
+				--	Unity Transmog
+				q(63407),	-- Leather Chest
+				q(63403),	-- Plate Helm
+				q(63406),	-- Plate Chest
+				q(63405),	-- Cloak / 182525
 
-		-- Duty-Bound Set
-			-- q(),	-- Helm
-			q(63401),	-- Shoulders
-			-- q(),	-- Chest
-			-- q(),	-- Wrist
-			q(63404),	-- Gloves
-			q(63409),	-- Waist
-			q(63402),	-- Legs
-			q(63408),	-- Feet
-
-		--	Unity Transmog
-			q(63407),	-- Leather Chest
-			q(63403),	-- Plate Helm
-			q(63406),	-- Plate Chest
-			q(63405),	-- Cloak / 182525
-
-			q(62037),	-- unlocking Mind of Maldraxxus set (TransmogSetID 2033, Duty-Bound Conjurer's items)
-			q(62036),	-- unlocking Zeal of Maldraxxus set (TransmogSetID 2038, Duty-Bound Wraith's items)
-			q(62028),	-- unlocking Heart of Maldraxxus set (TransmogSetID 2039, Duty-Bound Tactician's items)
-			q(62015),	-- unlocking Mettle of Maldraxxus set (TransmogSetID 2046, Duty-Bound Harbinger's items)
+				q(62037),	-- unlocking Mind of Maldraxxus set (TransmogSetID 2033, Duty-Bound Conjurer's items)
+				q(62036),	-- unlocking Zeal of Maldraxxus set (TransmogSetID 2038, Duty-Bound Wraith's items)
+				q(62028),	-- unlocking Heart of Maldraxxus set (TransmogSetID 2039, Duty-Bound Tactician's items)
+				q(62015),	-- unlocking Mettle of Maldraxxus set (TransmogSetID 2046, Duty-Bound Harbinger's items)
+			}),
+			n(QUESTS, {
+				q(63397),	-- Triggered when Completing weeklies with abominations/receiving Sitched set gear
+				q(62573),	-- Abomination level 3 sitching Chef hat/Sticky Cat.
+				q(61512),	-- Completing Something Old, Something Used first time. Confirmed first time 30.09.2021
+				q(63099),	-- Opening "Bag of Potions" (itemID 184589) from Atticus (spellID 346867)
+				q(60873),	-- Buying Bag of Sin Stones (180442) from Atticus
+				q(62988),	-- digging with Chordy in Revendreth
+				q(64666),	-- Completing Baker's Dozen (59043) (next week's quest rewarded Tomalin's Seasoning Crystal (181809))
+			}),
 		}),
 	}),
 })));

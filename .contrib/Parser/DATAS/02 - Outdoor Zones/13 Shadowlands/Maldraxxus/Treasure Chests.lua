@@ -406,10 +406,19 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, {
---	Treasures of Maldraxxus achievement
-	q(58709),	-- Forgotten Mementos - clicking the chain
-	q(59245),	-- Misplaced Supplies (daily trigger)
-	q(62582),	-- Using Cache of Spare Weapons
-});
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	m(SHADOWLANDS, {
+		m(MALDRAXXUS, {
+			n(RARES, {
+				--	Treasures of Maldraxxus achievement
+				q(58709),	-- Forgotten Mementos - clicking the chain
+				q(59245),	-- Misplaced Supplies (daily trigger)
+				q(62582),	-- Using Cache of Spare Weapons
+				--
+				q(62248),	-- interacting with the Box of Torments
+				q(61127),	-- Triggered after getting Oonar's Arm
+				q(61128),	-- Triggered after getting Sorrowbane
+			}),
+		}),
+	}),
+})));

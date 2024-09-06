@@ -540,27 +540,33 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 	}),
 })));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	m(SHADOWLANDS, {
+		m(THE_MAW, {
+			n(QUESTS, {
+				q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (questID 60287) (spellID 345141)
+				q(64627),	-- popped after turning in 'Setting the Ground Rules' (questID 62882) on a fresh alt (spellID 358753)
+				q(64983),	-- After completing The Maw intro, upon teleport and loading screen into Oribos (level 48 human rogue)
+				q(59911),	-- triggered after picking up Ruiner's End
+				q(60507),	-- triggered shortly after picking up The Lion's Cage (picked up quest, refreshed, walked out of the cave, killed a Malice Shadow, the quest popped)
+				q(62939),	-- triggered after watching the cutscene for Stand as One / landing in Oribos (spellID 345446)
+				q(57678),	-- triggered after watching the cutscene for Stand as One / landing in Oribos (second character to go thru the scenario, didn't see this on my first)
+				q(62908),	-- triggered after collecting 5 souls during "Rule 1: Have an Escape Plan" (questID 60287) (spellID 345600)
+				q(62913),	-- triggered when turning in "Rule 4: Make a List" (questID 60281) (spellID 345184)
+				q(63446),	-- triggered when landing in The Maw on 12/9/20
+				q(63178),	-- triggered when starting/accepting Hunt Gorged Shadehounds (spellID 347101)
+				q(63195),	-- triggered when starting/accepting Hunt Souleaters (spellID 347178)
+				q(63196),	-- triggered when starting/accepting Hunt Death Elementals (spellID 347179)
+				q(63197),	-- triggered when starting/accepting Hunt Winged Souleaters (spellID 347180)
+				q(64151, {["timeline"] = {ADDED_9_1_0}}),	-- Completed at the same time as 63669 (Somebody Feed Kevin)
+				q(64149, {["timeline"] = {ADDED_9_1_0}}),	-- Completing any quest with Winslow Swan during necrolord assault (might be achievement "this army" pop),
 
-root(ROOTS.HiddenQuestTriggers, {
-	q(64126),	-- triggered when killing Dathlane the Herald, WotJ boss - TODO - move questIDs to individual bosses if they've been separated since they have new drops
-	q(64125),	-- triggered when killing Lumisende, wotj boss
-	q(64124),	-- triggered when killing Naelcrotix, WotJ boss - weirdly this triggered for me but not carb, first WotJ for both of us for the week
-	q(64123),	-- triggered when killing Zograthos, WotJ boss
-	q(62907),	-- triggered after collecting all stygia during "Rule 1: Have an Escape Plan" (questID 60287) (spellID 345141)
-
-	-- these seem shared... ? some sort of incremental counter?
-	q(64692),	-- triggered when killing Manifestation of Pain / Zul'gath the Flayer
-	q(64693),	-- triggered when killing Manifestation of Pain
-	q(64694),	-- triggered when killing Malleus Grakizz
-	q(64695),	-- triggered when killing Algel the Haunter / Gruukuuek the Elder / Gralebboih (5th of week)
-	q(64696),	-- triggered when killing Promathiz / Sentinel Shakorzeth
-	q(64697),	-- triggered when killing Malleus Grakizz / Sentinel Shakorzeth / Versya the Damned
-	q(64698),	-- triggered when killing Intercessor Razzra / Zul'gath the Flayer (4th Tormentor of week?)
-	q(64120),	-- triggered when killing Versya the Damned
-	-- q(64121),	-- triggered when killing Sentinel Shakorzeth (somehow it + Kazj the Sentinel were both up at once, this was only after killing Shakorzeth, and then Kazj did not trigger an additional questID at all)
-	q(64151),	-- Completed at the same time as 63669 (Somebody Feed Kevin)
-	q(64315),	-- Ve'nari paragon chest
-	q(64627),	-- popped after turning in 'Setting the Ground Rules' (questID 62882) on a fresh alt (spellID 358753)
-	q(64149),	-- Completing any quest with Winslow Swan during necrolord assault (might be achievement "this army" pop),
-	q(64983),	-- After completing The Maw intro, upon teleport and loading screen into Oribos (level 48 human rogue)
-});
+				-- Eye of the Jailer Levels
+				q(63379),	-- Assassins (2)
+				-- q(),	-- Chains (3)
+				q(63376),	-- Abductors (4)
+				q(63417),	-- Immediate Extinction (5)
+			}),
+		}),
+	}),
+})));

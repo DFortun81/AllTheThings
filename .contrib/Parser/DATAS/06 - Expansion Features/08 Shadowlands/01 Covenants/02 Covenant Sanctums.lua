@@ -333,11 +333,171 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, {
-	-- Misson Table
-	q(60635),	-- Night Fae Mission Table / Unknown Venthyr
-
-	-- RENOWN TRIGGERS
-	q(64082),	-- Renown 73 (WQ Reward increase)
-	q(64069),	-- Renown 75 (WQ Reward increase)
-});
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	n(COVENANT_SANCTUMS, {
+		n(ADVENTURES, {
+			-- Completing mi(2174), "Tutorial: Dispose of the Detritus"
+			q(63070),	-- Shared
+			q(63360),	-- Kyrian
+			q(63361),	-- Necrolord
+			q(63359),	-- Night Fae
+			q(63362),	-- Venthyr
+			-- Completing mi(2295), "Tutorial: Necromantic Intervention"
+			q(63071),	-- Shared
+			q(63364),	-- Kyrian
+			q(63365),	-- Necrolord
+			q(63363),	-- Night Fae
+			q(63366),	-- Venthyr
+			-- Completing mi(2175),	"Tutorial: Spinal Swarm"
+			q(60634),	-- Shared
+			q(63368),	-- Kyrian
+			q(63369),	-- Necrolord
+			q(63367),	-- Night Fae
+			q(63370),	-- Venthyr
+			-- Completing mi(2211),	"Campaign: Whisper in the Dark"
+			q(63247),	-- Shared
+			q(63281),	-- Kyrian
+			q(63282),	-- Necrolord
+			q(63280),	-- Night Fae
+			q(63283),	-- Venthyr
+			-- Completing mi(2228), "Campaign: Discarded But Not Useless"
+			q(63252),	-- Shared
+			q(63301),	-- Kyrian
+			q(63302),	-- Necrolord
+			q(63300),	-- Night Fae
+			q(63303),	-- Venthyr
+			-- Completing mi(2194), "Campaign: Erezuel's Revenge"
+			q(63237),	-- Shared
+			q(63258),	-- Kyrian
+			q(63259),	-- Necrolord
+			q(63257),	-- Night Fae
+			q(63260),	-- Venthyr
+			-- Completing mi(2245), "Campaign: Stacka's Last Stand"
+			q(63242),	-- Shared
+			q(63321),	-- Kyrian
+			q(63322),	-- Necrolord
+			q(63320),	-- Night Fae
+			q(63323),	-- Venthyr
+			-- Completing mi(2195), "Campaign: Quiet the Shriekers"
+			q(63238),	-- Shared
+			q(63265),	-- Kyrian
+			q(63266),	-- Necrolord
+			q(63264),	-- Night Fae
+			q(63267),	-- Venthyr
+			-- Completing mi(2246), "Campaign: Alpha Bonemauler"
+			q(63243),	-- Shared
+			q(63325),	-- Kyrian
+			q(63326),	-- Necrolord
+			q(63324),	-- Night Fae
+			q(63327),	-- Venthyr
+			-- Completing mi(2212), "Campaign: Promises of the Praetor"
+			q(63248),	-- Shared
+			q(63285),	-- Kyrian
+			q(63286),	-- Necrolord
+			q(63284),	-- Night Fae
+			q(63287),	-- Venthyr
+			-- Completing mi(2229), "Campaign: Bone Breaker's Hoard"
+			q(63253),	-- Shared
+			q(63305),	-- Kyrian
+			q(63306),	-- Necrolord
+			q(63304),	-- Night Fae
+			q(63307),	-- Venthyr
+			-- Completing mi(2213), "Campaign: Save the Skyfoal"
+			q(63249),	-- Shared
+			q(63289),	-- Kyrian
+			q(63290),	-- Necrolord
+			q(63288),	-- Night Fae
+			q(63291),	-- Venthyr
+			-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper"
+			q(63239),	-- Shared
+			q(63269),	-- Kyrian
+			q(63270),	-- Necrolord
+			q(63268),	-- Night Fae
+			q(63271),	-- Venthyr
+			-- Completing mi(2247), "Campaign: Charthox the Indomitable"
+			q(63244),	-- Shared
+			q(63329),	-- Kyrian
+			q(63330),	-- Necrolord
+			q(63328),	-- Night Fae
+			q(63331),	-- Venthyr
+			-- Completing mi(2230), "Campaign: Ahnqat's Darkness"
+			q(63254),	-- Shared
+			q(63309),	-- Kyrian
+			q(63310),	-- Necrolord
+			q(63308),	-- Night Fae
+			q(63311),	-- Venthyr
+			-- Completing mi(2197), "Campaign: Cleanse the Possessed"
+			q(63240),	-- Shared
+			q(63273),	-- Kyrian
+			q(63274),	-- Necrolord
+			q(63272),	-- Night Fae
+			q(63275),	-- Venthyr
+			-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs"
+			q(63255),	-- Shared
+			q(63313),	-- Kyrian
+			q(63314),	-- Necrolord
+			q(63312),	-- Night Fae
+			q(63315),	-- Venthyr
+			-- Completing mi(2214), "Campaign: The Forsworn Strike Back"
+			q(63250),	-- Shared
+			q(63293),	-- Kyrian
+			q(63294),	-- Necrolord
+			q(63292),	-- Night Fae
+			q(63295),	-- Venthyr
+			-- Completing mi(2248), "Campaign: Big Shiny and Friends"
+			q(63245),	-- Shared
+			q(63333),	-- Kyrian
+			q(63334),	-- Necrolord
+			q(63332),	-- Night Fae
+			q(63335),	-- Venthyr
+			-- Completing mi(2215), "Campaign: War-Captain's Woe"
+			q(63251),	-- Shared
+			q(63297),	-- Kyrian
+			q(63298),	-- Necrolord
+			q(63296),	-- Night Fae
+			q(63299),	-- Venthyr
+			-- Completing mi(2198), "Campaign: Darkwarren Finality"
+			q(63241),	-- Shared
+			q(63277),	-- Kyrian
+			q(63278),	-- Necrolord
+			q(63276),	-- Night Fae
+			q(63279),	-- Venthyr
+			-- Completing mi(2249), "Campaign: The Final Puzzle"
+			q(63246),	-- Shared
+			q(63337),	-- Kyrian
+			q(63338),	-- Necrolord
+			q(63336),	-- Night Fae
+			q(63339),	-- Venthyr
+			-- Completing mi(2232), "Campaign: Corpselice Catastrophe"
+			q(63256),	-- Shared
+			q(63317),	-- Kyrian
+			q(63318),	-- Necrolord
+			q(63316),	-- Night Fae
+			q(63319),	-- Venthyr
+			-- Maw adventures
+			q(63449),	-- i believe this was Topple the Giants
+			-- Misson Table
+			q(60635),	-- Night Fae Mission Table / Unknown Venthyr
+		}),
+		n(RENOWN, {
+			-- Generic SL tracking quests
+			q(64508),	-- generic Renown quest - triggers multiple times for all covenants
+			q(63220),	-- generic quest for hitting Renown 10 (any covenant) - WQ reward upgrade #1
+			q(63221),	-- generic quest for hitting Renown 19 (any covenant) - WQ reward upgrade #2
+			q(63350),	-- generic quest for hitting Renown 29 (any covenant) - WQ reward upgrade #3
+			q(64082, {["timeline"] = {ADDED_9_1_0}}),	-- Renown 73 (WQ Reward increase)
+			q(64069, {["timeline"] = {ADDED_9_1_0}}),	-- Renown 75 (WQ Reward increase)
+			q(64067, {["timeline"] = {ADDED_9_1_0}}),	-- generic quest for hitting Renown 46 (any covenant) - WQ reward upgrade #4
+			q(64073, {["timeline"] = {ADDED_9_1_0}}),	-- generic quest for hitting Renown 47 (any covenant)
+			q(64068, {["timeline"] = {ADDED_9_1_0}}),	-- generic quest for hitting Renown 61 (any covenant)
+		}),
+		n(QUESTS, {
+			-- Skip covenant sanctum intro quests
+			q(63426),	-- Skip the Kyrian sanctum intro quests (spellID 348412)
+			q(63428),	-- Skip the Necrolord sanctum intro quests (spellID 348414)
+			q(63427),	-- Skip the Night Fae sanctum intro quests (spellID 348413)
+			q(63425),	-- Skip the Venthyr sanctum intro quests (spellID 348407)
+			q(63429),	-- Skip the Venthyr sanctum intro quests (spellID 348415)
+		}),
+	}),
+})));

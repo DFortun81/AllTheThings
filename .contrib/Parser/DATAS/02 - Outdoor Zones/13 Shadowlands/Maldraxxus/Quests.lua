@@ -932,3 +932,17 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 	}),
 })));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	m(SHADOWLANDS, {
+		m(MALDRAXXUS, {
+			n(QUESTS, {
+				q(59429),	-- Triggered along with 59428 when looting Strange Growth (spellID 348521)
+				q(59439),	-- triggered when throwing Viscous Oil from Burning Extract into the Pool of Potions while on the quest "Pool of Potions"
+				q(59677),	-- Triggered when looting the Battlefront Rations Key (itemID 180277)
+				q(57619),	-- triggered while on "In Death We Are Truly Tested" -- not sure if from using the extra action button to summon Vyraz, during the encounter, or when Draka picks you up
+				q(59843),	-- triggered when turning in "A Sure Bet"
+				q(62411),	-- First time turning in Ani-Matter Animator (57245)
+			}),
+		}),
+	}),
+})));

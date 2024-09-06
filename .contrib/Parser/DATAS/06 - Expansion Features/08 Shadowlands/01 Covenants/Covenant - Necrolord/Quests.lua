@@ -1021,19 +1021,32 @@ for _,g in ipairs({CONDUIT_GROUP,LFR_WEAPON_GROUP}) do
 	end
 end
 
-root(ROOTS.HiddenQuestTriggers, {
---	Campaign quests
-	q(62982),	-- triggers when searching the storeroom on "Gharmal's Tower" (#57530)
-	q(62983),	-- triggers when searching the alchemical laboratory on "Gharmal's Tower" (#57530)
-
---	Crypt Couture
-	q(62319),	-- using "Amethystine Dye"
-	q(62266),	-- using "Discarded Grimoire"
-	q(62409),	-- using "Plague Doctor's Mask"
-	q(62311),	-- using "Ritualist's Mantle"
-	q(62306),	-- using "Sorcerer's Blade"
-
---	Unknown
-	--q(60773),	-- Renown 30/Channeling anima
-	--q(60873),	-- Flying around in necrolord base
-});
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	n(NECROLORD, {
+		n(QUESTS, {
+			-- Campaign quests
+			q(62982),	-- triggers when searching the storeroom on "Gharmal's Tower" (#57530)
+			q(62983),	-- triggers when searching the alchemical laboratory on "Gharmal's Tower" (#57530)
+			--
+			q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
+			q(62752),	-- Triggered when completion 59609 'No Rest For the Dead'
+			q(57602),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
+			q(57615),	-- triggered after summoning Atticus/Neena in Maldraxxus (spellID 353995 & 351967)
+			q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"
+			q(60783),	-- triggered when turning in #60722, "Tower Power"/Completing Campaign: Promises of the Praetor
+			q(61516),	-- When completing 'Things They Leave Behind' (61511) for the first time
+			q(63453),	-- triggers when turning in "Return Lost Souls" (spellID 348838 & 348841 & 348844 & 348847)
+			q(61591),	-- Triggered after completing Specter Of War: Visectus (60283) for the first time
+			q(62929),	-- Triggered when freeing Neena from cage to make "Every Dog Has Its Day" (questID 59615) available (spellID 345404)
+			q(62247),	-- Triggered when Toothpick dug up a "Burried Chest"
+			q(62290),	-- Triggered when turning in 'Corpse Run' (61523)
+			q(62215),	-- Triggered when turning in Training Program (62216)
+			q(62596),	-- Triggered when completing 'The Great Luckydo'
+			q(59266),	-- triggered when i picked up the last eye for "Prying Eyes"
+			q(60166),	-- Triggered after raising portcullis to access Miru Soulblossom in Etheric Vault
+			-- Unknown
+			--q(60773),	-- Renown 30/Channeling anima
+			--q(60873),	-- Flying around in necrolord base
+		}),
+	}),
+})));

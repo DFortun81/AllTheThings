@@ -183,3 +183,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 	}),
 })));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	m(SHADOWLANDS, {
+		m(ARDENWEALD, {
+			n(RARES, {
+				q(62267),	-- Gormbore secondary quest
+				q(62269),	-- Macabre secondary quest
+				q(62270),	-- Old Ardeite secondary quest
+				q(62271),	-- Deifir the Untamed secondary quest
+				q(61198),	-- Triggers when successfully completing the pre-req sequence for the Shimmermist Runner rare
+			}),
+		}),
+	}),
+})));

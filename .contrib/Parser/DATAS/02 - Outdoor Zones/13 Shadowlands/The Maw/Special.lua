@@ -287,6 +287,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(175846, {	-- Dathlane the Herald <Torghast Executioner>
 						["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+						["questID"] = 64126,
+						["isWeekly"] = true,
 						["g"] = {
 							i(186008),	-- Forsworn's Judgment
 							i(186207),	-- Mawsworn Herald's Vestments
@@ -294,6 +296,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(175877, {	-- Lumisende <Torghast Executioner>
 						["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+						["questID"] = 64125,
+						["isWeekly"] = true,
 						["g"] = {
 							i(186011),	-- Lumisende's Twin-Blade
 							i(186230),	-- Mawsworn Warboots
@@ -301,6 +305,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(175881, {	-- Naelcrotix <Torghast Executioner>
 						["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+						["questID"] = 64124,
+						["isWeekly"] = true,
 						["g"] = {
 							i(186243),	-- Helm of Necrotic Sight
 							i(186013),	-- Vessel of Primordial Death
@@ -308,6 +314,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					n(176173, {	-- Zograthos <Torghast Executioner>
 						["description"] = "A possible boss for the 'Wrath of the Jailer' event.",
+						["questID"] = 64123,
+						["isWeekly"] = true,
 						["g"] = {
 							i(186232),	-- Phantom-Stalker's Legplates
 							i(186216),	-- Zograthos' Visage

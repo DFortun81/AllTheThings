@@ -6807,7 +6807,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(62291, { ["name"] = "Venari Rep Token Tracking", }),	-- Venari Rep Token Tracking
 			-- 9.0.1.35482
 			-- 9.0.1.35522
-			q(62380),	--
 			q(62413),	--
 			q(62416),	--
 			-- 9.0.1.35598

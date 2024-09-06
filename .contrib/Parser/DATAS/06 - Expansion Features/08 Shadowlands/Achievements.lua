@@ -94,3 +94,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 		}),
 	}),
 }));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	n(ACHIEVEMENTS, {
+		-- Crypt Couture
+		q(62319),	-- using "Amethystine Dye"
+		q(62404),	-- using "Ashen Ink"
+		q(62266),	-- using "Discarded Grimoire"
+		q(62408),	-- using "Jagged Bonesaw"
+		q(62405),	-- using "Mucosal Pigment"
+		q(62409),	-- using "Plague Doctor's Mask"
+		q(62311),	-- using "Ritualist's Mantle"
+		q(62306),	-- using "Sorcerer's Blade"
+	}),
+})));

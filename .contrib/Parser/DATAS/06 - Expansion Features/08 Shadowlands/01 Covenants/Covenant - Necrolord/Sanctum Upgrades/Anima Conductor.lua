@@ -181,14 +181,20 @@ for _,t in ipairs({GIEGER,SABRIEL,GRATEFUL,AMALGAMTED_FORWORNS_JOURNAL,TEMPERED_
 	t.customCollect = nil;
 end
 
-root(ROOTS.HiddenQuestTriggers, {
-	q(61187),	-- Rank 3 Buff - Skeleton Command
-	q(61185),	-- Rank 3 Buff - Arctic Flesh
-	q(61186),	-- Rank 3 Buff - Primed Maldracite
-	q(61588),	-- House of the Chosen
-	q(60781),	-- House of Constructs
-	q(60774),	-- Theater of Pain
-	q(60780),	-- House of Eyes
-	q(60782),	-- House of Rituals
-	q(60773),	-- House of Plagues
-});
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	n(NECROLORD, {
+		n(SANCTUM_UPGRADES, {
+			n(ANIMA_CONDUCTOR, {
+				q(61187),	-- Rank 3 Buff - Skeleton Command
+				q(61185),	-- Rank 3 Buff - Arctic Flesh
+				q(61186),	-- Rank 3 Buff - Primed Maldracite
+				q(61588),	-- House of the Chosen
+				q(60781),	-- House of Constructs
+				q(60774),	-- Theater of Pain
+				q(60780),	-- House of Eyes
+				q(60782),	-- House of Rituals
+				q(60773),	-- House of Plagues
+			}),
+		}),
+	}),
+})));

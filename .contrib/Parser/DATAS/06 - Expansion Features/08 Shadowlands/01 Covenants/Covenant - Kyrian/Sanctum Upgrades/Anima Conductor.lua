@@ -161,8 +161,14 @@ for _,t in ipairs({WINGFLAYTER_THE_CRUEL,ORSTUS_AND_SOTIROS,GRATEFUL,REGURGITATE
 	t.customCollect = nil;
 end
 
-root(ROOTS.HiddenQuestTriggers, {
-	q(61268),	-- Triggered from buff received from Kyrian Conductor Tier 3
-	q(61267),	-- Triggered from buff received from Kyrian Conductor Tier 3
-	q(61266),	-- Triggered from buff received from Kyrian Conductor Tier 3
-});
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	n(KYRIAN, {
+		n(SANCTUM_UPGRADES, {
+			n(ANIMA_CONDUCTOR, {
+				q(61268),	-- Triggered from buff received from Kyrian Conductor Tier 3
+				q(61267),	-- Triggered from buff received from Kyrian Conductor Tier 3
+				q(61266),	-- Triggered from buff received from Kyrian Conductor Tier 3
+			}),
+		}),
+	}),
+})));

@@ -225,3 +225,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	n(NIGHT_FAE, {
+		n(SANCTUM_UPGRADES, {
+			n(TRANSPORT_NETWORK, {
+				n(VENDORS, {
+					q(62806),	-- learning Arsenal: Winterborn Weapons
+				}),
+			}),
+		}),
+	}),
+})));

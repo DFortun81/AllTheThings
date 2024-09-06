@@ -255,6 +255,14 @@ for _,t in ipairs({STAR_LAKE_AMPHITHEATER, VALFIR,GRATEFUL,GLIMMERLIGHT_STAFF,TW
 	t.customCollect = nil;
 end
 
-root(ROOTS.HiddenQuestTriggers, {
-	q(61168),	-- triggered when obtaining trickers moves from conductor lvl 3 enchantments
-});
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	n(NIGHT_FAE, {
+		n(SANCTUM_UPGRADES, {
+			n(ANIMA_CONDUCTOR, {
+				q(61168),	-- triggered when obtaining trickers moves from conductor lvl 3 enchantments
+				q(61169),	-- Night Fae buff from Claw's Edge anima conductor
+				q(61158),	-- Night Fae buff from Claw's Edge anima conductor (Ka'rolei)
+			}),
+		}),
+	}),
+})));

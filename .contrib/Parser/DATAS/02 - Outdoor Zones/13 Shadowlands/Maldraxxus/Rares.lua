@@ -313,3 +313,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 	}),
 })));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	m(SHADOWLANDS, {
+		m(MALDRAXXUS, {
+			n(RARES, {
+				q(62805),	-- Pulsing Leech secondary quest
+				q(61989),	-- Deadly Dapperling secondary quest
+				q(61987),	-- Deepscar secondary kill
+				q(61991),	-- Gristlebeak secondary kill
+				q(61988),	-- Indomitable Schmitd secondary quest
+				q(61992),	-- Pesticide secondary quest
+				q(61986),	-- Tahonta secondary quest
+			}),
+		}),
+	}),
+})));

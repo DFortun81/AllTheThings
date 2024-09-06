@@ -300,3 +300,18 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 	}),
 })));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	m(SHADOWLANDS, {
+		m(REVENDRETH, {
+			n(WORLD_QUESTS, {
+				q(59858),	-- Tea Tales: Theotar Achievement criteria
+				q(59861),	-- Tea Tales: Theotar Achievement criteria
+				q(60701),	-- triggered when completing #60653, "Mirror Restoration"
+				q(59857),	-- triggered when completing Tea Tales: Vulca
+				q(59859),	-- triggered when completing Tea Tales: Gubbins and Tubbins
+				q(59860),	-- triggered when completing Tea Tales: Lost Sybille
+				q(60768),	-- opening the cage to get Dal's Courier Badge on "A Stolen Stone Fiend"
+			}),
+		}),
+	}),
+})));

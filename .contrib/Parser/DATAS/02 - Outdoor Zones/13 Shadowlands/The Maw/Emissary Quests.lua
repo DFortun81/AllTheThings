@@ -17,9 +17,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, {
-	m(THE_MAW, {
-		q(64288),	-- Paragon of Ve'nari
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, {
+	m(SHADOWLANDS, {
+		m(THE_MAW, {
+			n(EMISSARY_QUESTS, {
+				q(64288),	-- Paragon of Ve'nari
+				q(64315),	-- Ve'nari paragon chest
+			}),
+		}),
 	}),
-}));
+})));

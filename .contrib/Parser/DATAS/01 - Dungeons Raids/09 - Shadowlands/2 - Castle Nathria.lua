@@ -965,8 +965,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 	}),
 })));
 
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
 	inst(1190, {	-- Castle Nathria
 		q(60680),	-- LFR 'The Leeching Vaults' Completed
 
@@ -1005,4 +1004,4 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, {
 		q(70469),	-- Sire Denthrius
 		q(70470),	-- Sire Denthrius
 	}),
-}));
+})));

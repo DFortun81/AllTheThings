@@ -1433,54 +1433,31 @@ root(ROOTS.HiddenQuestTriggers, {
 	------------------
 	--      SL      --
 	------------------
-	expansion(EXPANSION.SL, {
-		-- PVP
-		q(62298, { ["_drop"] = { "g" },	}),	-- Classic 20-49
-		q(62299, { ["_drop"] = { "g" },	}),	-- Classic 20-49
-		q(62347, { ["_drop"] = { "g" },	}),	-- Shadowlands (51-59) E
-		q(62353, { ["_drop"] = { "g" },	}),	-- Shadowlands (51-59) E
-		q(62357, { ["_drop"] = { "g" },	}),	-- Shadowlands (51-59) E
-		q(62348, { ["_drop"] = { "g" },	}),	-- Shadowlands (51-59) E
-
-		-- PvP Assassin
-		q(63389),	-- Killed and looted Horde Assasin (as Alliance obviously)
-		q(63390),	-- Killed and looted Horde Assasin (as Alliance obviously)
-		q(63391),	-- Killed and looted Horde Assasin (as Alliance obviously)
-
-		-- Generic SL tracking quests (cannot be placed in a single file)
-		q(64508),	-- generic Renown quest - triggers multiple times for all covenants
-		q(63220),	-- generic quest for hitting Renown 10 (any covenant) - WQ reward upgrade #1
-		q(63221),	-- generic quest for hitting Renown 19 (any covenant) - WQ reward upgrade #2
-		q(63350),	-- generic quest for hitting Renown 29 (any covenant) - WQ reward upgrade #3
-		q(64067),	-- generic quest for hitting Renown 46 (any covenant) - WQ reward upgrade #4
-		q(64073),	-- generic quest for hitting Renown 47 (any covenant)
-		q(64068),	-- generic quest for hitting Renown 61 (any covenant)
-		q(64655),	-- unsure precisely what triggers this - it was added late in the PTR cycle and popped originally in Korthia.  popped soon after i logged in on my main on retail
-
-		-- Exile's Reach
-		q(58418),	-- Triggers shortly after login. Possibly some kind of indicator for the account having done it at least once per faction?
-		q(54927),	-- Triggers after the cinematic. You can't move until this quest triggers
-		q(54937),	-- Triggers after the cinematic. You can't move until this quest triggers
-		q(59699),	-- Defeat Private Cole(A) or Grunt Throg(H) during "Stand Your Ground". Coincides with hitting level 2
-		q(58882),	-- Triggered after looting white-quality chestpiece. loot controller so they don't drop twice
-		q(58883),	-- Triggered after looting white-quality boots. loot controller so they don't drop twice
-		q(54928),	-- Triggered after getting 3 holy power and striking Warlord Grimaxe with the first major combat ability. Didn't trigger at all on an alliance priest
-		q(58336),	-- Triggered at the same time as 54928. Possibly dialog-related?
-		q(55607),	-- Triggered while killing quilboars in Quilboar Briarpatch on an alliance priest. Did not see it trigger as horde
-		q(55611),	-- triggered when completing "Message to Base" in Exile's Reach on alliance priest
-		q(59610),	-- Triggered after killing Torgok. Loot controller for "Torgok's Reagent Pouch"
-		q(59143),	-- Triggered after looting the Runetusk Necklace from ogres in Darkmaul Citadel
-		q(59139),	-- Triggered after looting the Spider-Eye Ring from spiders in Hrun's Barrow / Dented Legplates
-		q(60167),	-- Triggered right after Warlord Grimaxe tells Shuja to heal during the Tunk encounter
-		q(62547),	-- Triggered after speaking to trainer for What's Your Specialty? quest [Horde]
-		q(62548),	-- Triggered after speaking to trainer for What's Your Specialty? quest [Alliance]
-		q(62550),	-- Triggered after choosing a specialization for What's Your Specialty? quest [Alliance]
-		q(62551),	-- Triggered after choosing a specialization for What's Your Specialty? quest [Horde]
-		q(62655),	-- Triggers after you activate your specialization (both NPE and non-NPE characters)
-		q(62802),	-- Triggered after going to Stormwind for An End to Beginnings
-		q(62803),	-- Triggered after going to Orgrimmar for An End to Beginnings
-		q(63012),	-- Triggered after talking to Jaina at docks for The Nation of Kul Tiras
-		q(62912),	-- Triggered when flying from Exile's Reach (as Alliance if it matters)
+	expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+		n(PVP, {
+			q(62298, { ["_drop"] = { "g" },	}),	-- Classic 20-49
+			q(62299, { ["_drop"] = { "g" },	}),	-- Classic 20-49
+			q(62347, { ["_drop"] = { "g" },	}),	-- Shadowlands (51-59) E
+			q(62353, { ["_drop"] = { "g" },	}),	-- Shadowlands (51-59) E
+			q(62357, { ["_drop"] = { "g" },	}),	-- Shadowlands (51-59) E
+			q(62348, { ["_drop"] = { "g" },	}),	-- Shadowlands (51-59) E
+			-- PvP Assassin
+			q(63389),	-- Killed and looted Horde Assasin (as Alliance obviously)
+			q(63390),	-- Killed and looted Horde Assasin (as Alliance obviously)
+			q(63391),	-- Killed and looted Horde Assasin (as Alliance obviously)
+		}),
+		n(PROFESSIONS, {
+			-- Profession crafting world quests
+			q(62940),	-- Triggers when opening the box during "Alchemy: Elixir of Humility" (questID 61619) (spellID 345470)
+			q(62941),	-- Triggers when opening the box during "Blacksmithing: Stalker Arrowheads" (questID 61435) (spellID 345472)
+			q(62942),	-- Triggers when opening the box during "Cooking: Spider Jerky" (questID 61607) (spellID 345473)
+			q(62943),	-- Triggers when opening the box during "Enchanting: Boundless Basket" (questID 61440) (spellID 345475)
+			q(62944),	-- Triggers when opening the box during "Engineering: Boneclad Stake Launcher" (questID 61609) (spellID 345476)
+			q(62945),	-- Triggers when opening the box during "Inscription: Hymnal of Reprise" (questID 61599) (spellID 345477)
+			q(62946),	-- Triggers when opening the box during "Jewelcrafting: Carved Crystal Ring" (questID 61612) (spellID 345478)
+			q(62947),	-- Triggers when opening the box during "Leatherworking: Steelhide Leather Harness" (questID 61449) (spellID 345479)
+			q(62948),	-- Triggers when opening the box during "Tailoring: Haunting Hood" (questID 61615) (spellID 345480)
+		}),
 
 		-- Pre-launch event
 		q(60490),	-- Triggers after completing "Advancing the Effort" and unlocking Icecrown dailies. Also triggered when starting the new phase at Ironwall Rampart. Maybe it's the zone story daily progression tracker?
@@ -1504,304 +1481,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(62154),	-- triggered when accepting #62279, "Revendreth" for Threads of Fate
 		q(60826),	-- first use per day of Unbound Changeling trinket
 
-		-- Profession crafting world quests
-		q(62940),	-- Triggers when opening the box during "Alchemy: Elixir of Humility" (questID 61619) (spellID 345470)
-		q(62941),	-- Triggers when opening the box during "Blacksmithing: Stalker Arrowheads" (questID 61435) (spellID 345472)
-		q(62942),	-- Triggers when opening the box during "Cooking: Spider Jerky" (questID 61607) (spellID 345473)
-		q(62943),	-- Triggers when opening the box during "Enchanting: Boundless Basket" (questID 61440) (spellID 345475)
-		q(62944),	-- Triggers when opening the box during "Engineering: Boneclad Stake Launcher" (questID 61609) (spellID 345476)
-		q(62945),	-- Triggers when opening the box during "Inscription: Hymnal of Reprise" (questID 61599) (spellID 345477)
-		q(62946),	-- Triggers when opening the box during "Jewelcrafting: Carved Crystal Ring" (questID 61612) (spellID 345478)
-		q(62947),	-- Triggers when opening the box during "Leatherworking: Steelhide Leather Harness" (questID 61449) (spellID 345479)
-		q(62948),	-- Triggers when opening the box during "Tailoring: Haunting Hood" (questID 61615) (spellID 345480)
-
-		-- Adventures
-		-- Completing mi(2174), "Tutorial: Dispose of the Detritus"
-		q(63070),	-- Shared
-		q(63360),	-- Kyrian
-		q(63361),	-- Necrolord
-		q(63359),	-- Night Fae
-		q(63362),	-- Venthyr
-		-- Completing mi(2295), "Tutorial: Necromantic Intervention"
-		q(63071),	-- Shared
-		q(63364),	-- Kyrian
-		q(63365),	-- Necrolord
-		q(63363),	-- Night Fae
-		q(63366),	-- Venthyr
-		-- Completing mi(2175),	"Tutorial: Spinal Swarm"
-		q(60634),	-- Shared
-		q(63368),	-- Kyrian
-		q(63369),	-- Necrolord
-		q(63367),	-- Night Fae
-		q(63370),	-- Venthyr
-		-- Completing mi(2211),	"Campaign: Whisper in the Dark"
-		q(63247),	-- Shared
-		q(63281),	-- Kyrian
-		q(63282),	-- Necrolord
-		q(63280),	-- Night Fae
-		q(63283),	-- Venthyr
-		-- Completing mi(2228), "Campaign: Discarded But Not Useless"
-		q(63252),	-- Shared
-		q(63301),	-- Kyrian
-		q(63302),	-- Necrolord
-		q(63300),	-- Night Fae
-		q(63303),	-- Venthyr
-		-- Completing mi(2194), "Campaign: Erezuel's Revenge"
-		q(63237),	-- Shared
-		q(63258),	-- Kyrian
-		q(63259),	-- Necrolord
-		q(63257),	-- Night Fae
-		q(63260),	-- Venthyr
-		-- Completing mi(2245), "Campaign: Stacka's Last Stand"
-		q(63242),	-- Shared
-		q(63321),	-- Kyrian
-		q(63322),	-- Necrolord
-		q(63320),	-- Night Fae
-		q(63323),	-- Venthyr
-		-- Completing mi(2195), "Campaign: Quiet the Shriekers"
-		q(63238),	-- Shared
-		q(63265),	-- Kyrian
-		q(63266),	-- Necrolord
-		q(63264),	-- Night Fae
-		q(63267),	-- Venthyr
-		-- Completing mi(2246), "Campaign: Alpha Bonemauler"
-		q(63243),	-- Shared
-		q(63325),	-- Kyrian
-		q(63326),	-- Necrolord
-		q(63324),	-- Night Fae
-		q(63327),	-- Venthyr
-		-- Completing mi(2212), "Campaign: Promises of the Praetor"
-		q(63248),	-- Shared
-		q(63285),	-- Kyrian
-		q(63286),	-- Necrolord
-		q(63284),	-- Night Fae
-		q(63287),	-- Venthyr
-		-- Completing mi(2229), "Campaign: Bone Breaker's Hoard"
-		q(63253),	-- Shared
-		q(63305),	-- Kyrian
-		q(63306),	-- Necrolord
-		q(63304),	-- Night Fae
-		q(63307),	-- Venthyr
-		-- Completing mi(2213), "Campaign: Save the Skyfoal"
-		q(63249),	-- Shared
-		q(63289),	-- Kyrian
-		q(63290),	-- Necrolord
-		q(63288),	-- Night Fae
-		q(63291),	-- Venthyr
-		-- Completing mi(2196), "Campaign: Rescue the Runelight Leaper"
-		q(63239),	-- Shared
-		q(63269),	-- Kyrian
-		q(63270),	-- Necrolord
-		q(63268),	-- Night Fae
-		q(63271),	-- Venthyr
-		-- Completing mi(2247), "Campaign: Charthox the Indomitable"
-		q(63244),	-- Shared
-		q(63329),	-- Kyrian
-		q(63330),	-- Necrolord
-		q(63328),	-- Night Fae
-		q(63331),	-- Venthyr
-		-- Completing mi(2230), "Campaign: Ahnqat's Darkness"
-		q(63254),	-- Shared
-		q(63309),	-- Kyrian
-		q(63310),	-- Necrolord
-		q(63308),	-- Night Fae
-		q(63311),	-- Venthyr
-		-- Completing mi(2197), "Campaign: Cleanse the Possessed"
-		q(63240),	-- Shared
-		q(63273),	-- Kyrian
-		q(63274),	-- Necrolord
-		q(63272),	-- Night Fae
-		q(63275),	-- Venthyr
-		-- Completing mi(2231), "Campaign: Nirvaska's Grand Designs"
-		q(63255),	-- Shared
-		q(63313),	-- Kyrian
-		q(63314),	-- Necrolord
-		q(63312),	-- Night Fae
-		q(63315),	-- Venthyr
-		-- Completing mi(2214), "Campaign: The Forsworn Strike Back"
-		q(63250),	-- Shared
-		q(63293),	-- Kyrian
-		q(63294),	-- Necrolord
-		q(63292),	-- Night Fae
-		q(63295),	-- Venthyr
-		-- Completing mi(2248), "Campaign: Big Shiny and Friends"
-		q(63245),	-- Shared
-		q(63333),	-- Kyrian
-		q(63334),	-- Necrolord
-		q(63332),	-- Night Fae
-		q(63335),	-- Venthyr
-		-- Completing mi(2215), "Campaign: War-Captain's Woe"
-		q(63251),	-- Shared
-		q(63297),	-- Kyrian
-		q(63298),	-- Necrolord
-		q(63296),	-- Night Fae
-		q(63299),	-- Venthyr
-		-- Completing mi(2198), "Campaign: Darkwarren Finality"
-		q(63241),	-- Shared
-		q(63277),	-- Kyrian
-		q(63278),	-- Necrolord
-		q(63276),	-- Night Fae
-		q(63279),	-- Venthyr
-		-- Completing mi(2249), "Campaign: The Final Puzzle"
-		q(63246),	-- Shared
-		q(63337),	-- Kyrian
-		q(63338),	-- Necrolord
-		q(63336),	-- Night Fae
-		q(63339),	-- Venthyr
-		-- Completing mi(2232), "Campaign: Corpselice Catastrophe"
-		q(63256),	-- Shared
-		q(63317),	-- Kyrian
-		q(63318),	-- Necrolord
-		q(63316),	-- Night Fae
-		q(63319),	-- Venthyr
-		-- Maw adventures
-		q(63449),	-- i believe this was Topple the Giants
-
-		-- Ardenweald
-		q(60838),	-- requesting a song and dance from Korenth during "Wildseed Rescue" (doesn't seem to be a tracking quest for simply saying "I'll help you" - i abandoned/re-picked up to check)
-		q(61208),	-- triggered for no reason when i was traveling to the area where the "Swarm Defense" WQ takes place in Ardenweald.  i just went into the area between the main bit of Ardenweald + the Tirna Scythe area and it was like "what's up"
-		q(63452),	-- triggers when turning in "Return Lost Souls" (spellID 348837 & 348840 & 348843 & 348846)
-		-- Ardenweald Rares
-		q(62267),	-- Gormbore secondary quest
-		q(62269),	-- Macabre secondary quest
-		q(62270),	-- Old Ardeite secondary quest
-		q(62271),	-- Deifir the Untamed secondary quest
-		q(61198),	-- Triggers when successfully completing the pre-req sequence for the Shimmermist Runner rare
-		-- Ardenweald Treasures
-		q(60810),	-- \
-		q(60811),	--  \
-		q(60812),	--   running over Lunarlight Buds (somewhere in/near Glitterfall Basin) to light up Dim Lunarlight Pod and turn it into Lunarlight Pod (questID #60792)
-		q(60813),	--  /
-		q(60814),	-- /
-		-- Ardenweald Covenant (Night Fae)
-		q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
-		q(57559),	-- Triggered after turning in "For Queen and Grove!" (questID 58160) / "A Call to Service" (questID 62695)
-		q(62706),	-- Triggered after turning in "For Queen and Grove!" (questID 58160) / "A Call to Service" (questID 62695)
-		q(61590),	-- Triggered after first time channeling anima to Glitterfall Basin
-		-- q(60722),	-- Triggered after turning in The Roots Thirst [Wait what, this a Necrolords quest o_o]
-		q(62959),	-- Triggered after completing first "Into The Unknown" (questID 62296) (spellID 345586)
-		q(62957),	-- Triggered after completing second "Into The Unknown" (questID 60153) (spellID 345585)
-		-- q(62959),	-- Triggered after completing third Into The Unknown (questID 62382) (spellID 345586)
-		q(62956),	-- Triggered after completing fourth Into The Unknown (questID 62453) (spellID 345584)
-		q(62746),	-- Reaching Renown 19 Night Fae / unlocking Deepening Bond 4% stam increase
-		q(62747),	-- Reaching Renown 35 Night Fae / unlocking Deepening Bond 6% stam increase
-		q(62446),	-- Triggered after restoring Falir the Shifting for "A Rare and Unusual Spirit" (questID 62447)
-		q(62585),	-- Triggered after restoring Ohm of Meditation for "A Rare and Unusual Spirit" (questID 62603)
-		q(62586),	-- Triggered after restoring Lia the Curious
-		q(62958),	-- triggered during Marasmius dailies (spellID 345588)
-		q(62960),	-- Triggered after "Go Beyond!" (questID 62459) (spellID 345591)
-		q(62961),	-- Completed after doing "Go Beyond!" (questID ??) (spellID 345592)
-		q(62962),	-- triggered when turning in "Into the Unknown" (questID 62296) (spellID 345590)
-		q(62963),	-- triggered when turning in "Go Beyond!" (questID ??) (spellID 345593)
-		q(62415),	-- hitting Renown 39 as Night Fae
-		q(62806),	-- HQT for Arsenal: Winterborn Weapons
-		q(61169),	-- Night Fae buff from Claw's Edge anima conductor
-		q(61158),	-- Night Fae buff from Claw's Edge anima conductor (Ka'rolei)
-		q(64350),	-- Bit of RP inside of the Night Fae Covenant hall after The Power of Night campaign quest (spellID 356222)
-
-		-- Bastion
-		q(57574),	-- landing in Bastion for the first time during Seek the Ascended
-		q(58117),	-- Triggered after turning in The Aspirant's Crucible (57709)
-		q(60294),	-- Triggered after choosing Larion from Nemea during Pride Or Unit quest
-		q(60293),	-- Triggered after choosing Phalynx from Pelodis during Pride Or Unit quest
-		q(62734),	-- Triggered after opening Silver Strongbox during "The Sweetest Tribute" (questID 62733) (spellID 348442)
-		q(60259),	-- Your Personal Assistant - choosing Akiris
-		q(60260),	-- Your Personal Assistant - choosing Ipa — shares appearance with Dintos + Minta, so possible each steward has its own questID and you get credit for all the ones that share its appearance?
-		q(60261),	-- Your Personal Assistant - this one has triggered when choosing Thima and Syla so far
-		q(60262),	-- Your Personal Assistant - choosing Ipa/Akiris
-		q(60263),	-- Your Personal Assistant - choosing Ipa/Akiris
-			--	more steward info: https://imgur.com/0tLgE13
-			--	if each one has its own questID but grants credit for all in the same shared appearances set, these are the sets that are missing:
-			--	Bumos / Ilapos / Asellia / Syla / Zenza
-			--	Abalus / Thima
-			--	Bola / Pico / Ipadipos / Chaermi
-			--	Gramilos / Apa / Dafi
-			--	Haka
-			--	Mupu / Deka / Laratis
-			--	Kimos / Toulis / Korinthe
-			--	Akiris / Isilios / Koukis / Tibo / Farra / Arathane
-		--	Bastion Rares
-		q(63422),	-- Aethon secondary quest
-		q(62192),	-- Baedos secondary quest
-		q(62158),	-- Basilofos secondary quest
-		q(62167),	-- Bookkeeper Mnemis secondary quest along with 59022
-		q(62191),	-- Cloudfeather Guardian secondary quest
-		q(63424),	-- Cloudtail secondary quest
-		q(61069),	-- Demi the Relic Hoarder secondary quest
-		q(61082),	-- Echo of Aella kill quest
-		q(62251),	-- Echo of Aella secondary loot quest
-		q(57705),	-- Herculon kill quest
-		q(62201),	-- Herculon secondary loot quest
-		q(63421),	-- Nemaeus secondary quest
-		q(63410),	-- Selena the Reborn secondary quest (spellID 347866)
-		q(63423),	-- Sigilback secondary quest
-		q(62197),	-- Wingflayer the Cruel secondary quest
-		q(62202),	-- triggers when killing Corrupted Clawguard, which drops Functioning Anima Core
-		--	Bastion Treasures
-		q(60799),	-- secondary quest trigger on Skyward Bell (59.5, 66.3)
-		q(60874),	-- secondary quest trigger on Skyward Bell (not sure which one)
-		q(62847),	-- secondary quest trigger on Gift of Agthia
-		q(62842),	-- secondary quest trigger on Gift of Devos
-		--	Bastion WQs
-		q(63262),	-- triggered after completing the WQ "Flight School: Up and Away!" (questID 60858) (spellID 347486)
-		q(63263),	-- triggered after completing the WQ "Flight School: Flapping Frenzy" (questID 60911) (spellID 347487)
-		--	Kyrian Covenant
-		q(63216),	-- triggers when turning in #57897, "Dangerous to Go Alone"
-		q(62755),	-- triggers when turning in #57904, "Our Eternal Charge"
-		q(61589),	-- triggered when turning in #57903, "Power in the Sky," possibly connected to channeling anima to Purity's Pinnacle
-		q(60936),	-- Completed when crafting "Herald's Footpads" with Ascension Crafting
-		q(61054),	-- Completed when turning in quest 61473 (Sourcing Your Own Materials), Path of Ascension quest
-		q(63451),	-- triggers when turning in "Return Lost Souls" (spellID 345276 & 345277 & 345278 & 348836)
-		q(62756),	-- Reaching Renown 19 Kyrian / unlocking Deepening Bond 4% stam increase
-		q(62757),	-- Reaching Renown 35 Kyrian / unlocking Deepening Bond 6% stam increase
-		q(62927),	-- Reaching Renown 39 Kyrian / unlocking Eternal Phalynx of Purity
-
-		-- Maldraxxus
-		q(59429),	-- Triggered along with 59428 when looting Strange Growth (348521)
-		q(59439),	-- triggered when throwing Viscous Oil from Burning Extract into the Pool of Potions while on the quest "Pool of Potions"
-		q(59677),	-- Triggered when looting the Battlefront Rations Key (180277)
-		q(57619),	-- triggered while on "In Death We Are Truly Tested" -- not sure if from using the extra action button to summon Vyraz, during the encounter, or when Draka picks you up
-		q(59843),	-- triggered when turning in "A Sure Bet"
-		q(61127),	-- Triggered after getting Oonar's Arm
-		q(61128),	-- Triggered after getting Sorrowbane
-		q(62411),	-- First time turning in Ani-Matter Animator (57245)
-		-- Maldraxxus Pool of Mixed Monstrosities
-		q(62805),	-- Pulsing Leech secondary quest
-		-- Maldraxxus Rares
-		q(61989),	-- Deadly Dapperling secondary quest
-		q(61987),	-- Deepscar secondary kill
-		q(61991),	-- Gristlebeak secondary kill
-		q(61988),	-- Indomitable Schmitd secondary quest
-		q(61992),	-- Pesticide secondary quest
-		q(61986),	-- Tahonta secondary quest
-		-- Maldraxxus Treasures
-		q(62248),	-- interacting with the Box of Torments
-		-- Maldraxxus WQs
-		q(57210),	-- triggered when completing the ballista at 37.6, 50.8 during #57205, "A Few Bumps Along the Way"
-		q(57241),	-- triggered when completing the ballista at 38.8, 48.6 during #57205, "A Few Bumps Along the Way"
-		q(57242),	-- triggered when completing #57205, "A Few Bumps Along the Way"
-		q(62922),	-- triggered when turning in the Mixing a Mess WQ
-		-- Plaguefall dungeon
-		q(62685),	-- Triggers when solo killing last boss of heroic/mythic Plaguefall for collecting the Slime Serpent mount (spellID 303424)
-
-		-- Necrolord Covenant
-		q(57622),	-- Triggered when completing 58609 'Taking the Seat' on a Skip+Necrolord character
-		q(62752),	-- Triggered when completion 59609 'No Rest For the Dead'
-		q(57602),	-- triggered after summoning Atticus in Maldraxxus for quest Supply Chain
-		q(57615),	-- triggered after summoning Atticus/Neena in Maldraxxus (spellID 353995 & 351967)
-		q(58434),	-- triggered when summoning Chordy in Ardenweald for #61510, "A Bountiful Haul"
-		q(60783),	-- triggered when turning in #60722, "Tower Power"/Completing Campaign: Promises of the Praetor
-		q(61516),	-- When completing 'Things They Leave Behind' (61511) for the first time
-		q(63453),	-- triggers when turning in "Return Lost Souls" (spellID 348838 & 348841 & 348844 & 348847)
-		q(61591),	-- Triggered after completing Specter Of War: Visectus (60283) for the first time
-		q(62929),	-- Triggered when freeing Neena from cage to make "Every Dog Has Its Day" (questID 59615) available (spellID 345404)
-		q(62247),	-- Triggered when Toothpick dug up a "Burried Chest"
-		q(62290),	-- Triggered when turning in 'Corpse Run' (61523)
-		q(62215),	-- Triggered when turning in Training Program (62216)
-		q(62596),	-- Triggered when completing 'The Great Luckydo'
-		q(59266),	-- triggered when i picked up the last eye for "Prying Eyes"
-		q(60166),	-- Triggered after raising portcullis to access Miru Soulblossom in Etheric Vault
-
 		-- Swapping covenants
 		q(62023),	-- Become a Kyrian (spellID 360992 & 356127)
 		q(62708),	-- Become a Kyrian (spellID 360992)
@@ -1817,19 +1496,13 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(65077),	-- Become a Venthyr / Become a Venthyr Again (spellID 361039 & 361037)
 		q(65088),	-- Reset ALL Covenant Redemption History (spellID 361094)
 		q(62827),	-- Reset ALL Covenant History Kyrian/Necrolord/Night Fae/Venthyr (spellID 344813)
-
-		-- Skip covenant sanctum intro quests
-		q(63425),	-- Skip the Venthyr sanctum intro quests (spellID 348407)
-		q(63426),	-- Skip the Kyrian sanctum intro quests (spellID 348412)
-		q(63427),	-- Skip the Night Fae sanctum intro quests (spellID 348413)
-		q(63428),	-- Skip the Necrolord sanctum intro quests (spellID 348414)
-		q(63429),	-- Skip the Venthyr sanctum intro quests (spellID 348415)
-
-		-- Oribos
-		-- q(62153),	-- when completing 62159 (Aiding the Shadowlands) as Skip+Kyrian... it's for another covenant or something
-		-- q(62152),	-- when completing 62159 (Aiding the Shadowlands) as Skip+Necrolords covenant... kind of want to see when it happens again though
-		q(63348),	-- Triggered after turning in "Explore Torghast" (questID 62932) (spellID 345449)
-					-- Also basically every day the first time I fall into the Maw
+		-- TODO: Figure this out
+		q(64782),	-- Joining any Covenant during 'Choosing Your Purpose' (questID 62000) (spellID 359346 & 359347 & 359348 & 359349)
+		q(62370),	-- Swapping Cov to NF with NF already R40
+		q(62384),	-- Swapping Cov to NF with NF already R40
+		q(62923),	-- Swapped to Venthyr from Necrolord at R80? Probably a old hqt
+		q(62370),	-- Returning to the Venthyr before hitting rank 80 with anyone gave "Prove Your Worth" which flagged two quests as complete that aren't in ATT
+		q(62380),	-- Returning to the Venthyr before hitting rank 80 with anyone gave "Prove Your Worth" which flagged two quests as complete that aren't in ATT
 
 		-- Revendreth
 		q(60523),	-- Triggered after reading Theotar's Diary
@@ -1861,24 +1534,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(61188),	-- Triggered after looting Impressionable Gorger Spawn
 		q(61843),	-- Triggered after completing Nipping at the Undergrowth (61839)
 		q(63090),	-- looting weekly chest of Sinstone Fragments next to Archivist Fane
-		-- Revendreth Rares
-		q(62464),	-- Azgar secondary quest
-		q(60581),	-- Endlurker secondary quest
-		q(62463),	-- Prideful Hulk secondary quest
-		q(60583),	-- Tollkeeper Varaboss secondary quest
-		q(62455),	-- Amalgamation of Light secondary quest
-		-- Revendreth Treasures
-		q(60954),	-- secondary questID when looting Pugilist's Prize (35.8, 67.5 location only)
-		q(60851),	-- secondary questID when looting Secret Treasure (27.7, 48.7 location only)
-		q(60852),	-- secondary questID when looting Stoneborn Satchel (76.6, 51.0 location only) / Bleakwood Chest
-		-- Revendreth WQs
-		q(59858),	-- Tea Tales: Theotar Achievement criteria
-		q(59861),	-- Tea Tales: Theotar Achievement criteria
-		q(60701),	-- triggered when completing #60653, "Mirror Restoration"
-		q(59857),	-- triggered when completing Tea Tales: Vulca
-		q(59859),	-- triggered when completing Tea Tales: Gubbins and Tubbins
-		q(59860),	-- triggered when completing Tea Tales: Lost Sybille
-		q(60768),	-- opening the cage to get Dal's Courier Badge on "A Stolen Stone Fiend"
+
 		-- Venthyr Covenant
 		q(62950),	-- clicking "Activate" after putting "Thrill Seeker" in Nadjia's soulbind tree
 		q(62749),	-- triggered when turning in #62921, "Our True Purpose"
@@ -1987,55 +1643,19 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(62532),	-- think this was from doing the Sootible Hat: Pink Party Hat quest
 		q(63355),	-- think this was from doing the Sootible Hat: Fae Revel Mask quest (these 2 may be swapped/opposite, they both popped at once)
 
-		-- The Maw
-		q(59911),	-- triggered after picking up Ruiner's End
-		q(60507),	-- triggered shortly after picking up The Lion's Cage (picked up quest, refreshed, walked out of the cave, killed a Malice Shadow, the quest popped)
-		q(62939),	-- triggered after watching the cutscene for Stand as One / landing in Oribos (spellID 345446)
-		q(57678),	-- triggered after watching the cutscene for Stand as One / landing in Oribos (second character to go thru the scenario, didn't see this on my first)
-		q(62908),	-- triggered after collecting 5 souls during "Rule 1: Have an Escape Plan" (questID 60287) (spellID 345600)
-		q(62913),	-- triggered when turning in "Rule 4: Make a List" (questID 60281) (spellID 345184)
-		q(63446),	-- triggered when landing in The Maw on 12/9/20
-		q(63178),	-- triggered when starting/accepting Hunt Gorged Shadehounds (spellID 347101)
-		q(63195),	-- triggered when starting/accepting Hunt Souleaters (spellID 347178)
-		q(63196),	-- triggered when starting/accepting Hunt Death Elementals (spellID 347179)
-		q(63197),	-- triggered when starting/accepting Hunt Winged Souleaters (spellID 347180)
-		q(68666),	-- Either after killing Ekphoras, Herald of Grief in the maw or after crafting Domination's calling with the three Dominion's etchings
-		--	q(63178),	-- triggered randomly in The Maw 12/16/20
-		-- The Maw rares
-		q(62722),	-- triggered when killing Naelcrotix (possible Wrath of the Jailer rare)
-					-- also for mogwai when killing Eketra...
-		q(63384),	-- triggered when killing Sanngror (in addition to 62210)
-
-
-		-- Eye of the Jailer Levels
-		q(63379),	-- Assassins (2)
-		-- q(),	-- Chains (3)
-		q(63376),	-- Abductors (4)
-		q(63417),	-- Immediate Extinction (5)
-
-		-- Torghast (ref: SL/Torghast/Quests)
-
 		-- Dungeons
 		q(62658),	-- Shadowlands Dungeon Reward Quest
 		q(62079),	-- received weekly Mythic+ keystone
 
 		-- 9.1 PTR
-		q(64153),	-- dancing near a forge for The Zovaal Shuffle
-		q(64154),	-- dancing near a forge for The Zovaal Shuffle
-		q(64155),	-- dancing near a forge for The Zovaal Shuffle
-		q(64156),	-- dancing near a forge for The Zovaal Shuffle
-		q(64157),	-- dancing near a forge for The Zovaal Shuffle
-		q(64158),	-- dancing near a forge for The Zovaal Shuffle
-		q(64160),	-- dancing near a forge for The Zovaal Shuffle
-		q(64161),	-- dancing near a forge for The Zovaal Shuffle
 		q(64274),	-- triggered when logging in on 4/30/21 - ptr.wowhead.com says this is a tracking quest for "NPC #179868 slain (5)" and "Dusklight Matriarch [id #179871] slain."  i couldn't see anything on the map that was attached to this quest ID so idk!!  there IS a WQ up in the maw, but it's 64273, not 64274.  but possibly this is tied to the active status of a maw wq, not sure
 		q(64376),	-- tracking quest that automatically accepted when i flew in to Korthia on 5/11/21 - supposedly related to the Darkmaul mount
 		q(64262),	-- triggered when turning in 'Charge of the Covenants' (questID 64007) (spellID 356441)
 		q(64536),	-- looting Maldraxxus Larva Shell (300 Catalogued Research)
 
-		-- Treasures of Korthia achievement
-		q(64045),	-- The Maw repeatable treasure, Stolen Anima Vessel
-	}),
+		-- Unknown?
+		q(64655, {["timeline"] = {ADDED_9_1_0}}),	-- unsure precisely what triggers this - it was added late in the PTR cycle and popped originally in Korthia.  popped soon after i logged in on my main on retail
+	})),
 
 	------------------
 	--      DF      --

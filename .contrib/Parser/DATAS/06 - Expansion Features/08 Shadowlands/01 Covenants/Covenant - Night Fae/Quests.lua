@@ -960,6 +960,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 	}),
 })));
 
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	n(NIGHT_FAE, {
+		n(QUESTS, {
+			q(63452),	-- triggers when turning in "Return Lost Souls" (spellID 348837 & 348840 & 348843 & 348846)
+			q(62745),	-- Triggered after finishing Chapter 1 of Night Fae covenant questline
+			q(57559),	-- Triggered after turning in "For Queen and Grove!" (questID 58160) / "A Call to Service" (questID 62695)
+			q(62706),	-- Triggered after turning in "For Queen and Grove!" (questID 58160) / "A Call to Service" (questID 62695)
+			q(61590),	-- Triggered after first time channeling anima to Glitterfall Basin
+			q(62959),	-- Triggered after completing first "Into The Unknown" (questID 62296) (spellID 345586)
+			q(62957),	-- Triggered after completing second "Into The Unknown" (questID 60153) (spellID 345585)
+			-- q(62959),	-- Triggered after completing third Into The Unknown (questID 62382) (spellID 345586)
+			q(62956),	-- Triggered after completing fourth Into The Unknown (questID 62453) (spellID 345584)
+			q(62446),	-- Triggered after restoring Falir the Shifting for "A Rare and Unusual Spirit" (questID 62447)
+			q(62585),	-- Triggered after restoring Ohm of Meditation for "A Rare and Unusual Spirit" (questID 62603)
+			q(62586),	-- Triggered after restoring Lia the Curious
+			q(62958),	-- triggered during Marasmius dailies (spellID 345588)
+			q(62960),	-- Triggered after "Go Beyond!" (questID 62459) (spellID 345591)
+			q(62961),	-- Completed after doing "Go Beyond!" (questID ??) (spellID 345592)
+			q(62962),	-- triggered when turning in "Into the Unknown" (questID 62296) (spellID 345590)
+			q(62963),	-- triggered when turning in "Go Beyond!" (questID ??) (spellID 345593)
+			------ Stay awhile and listen ------
+			hqt(64350),	-- Tyrande/Astarii after The Power of Night campaign quest (spellID 356222)
+		}),
+	}),
+})));
+
 for _,g in ipairs({CONDUIT_GROUP,LFR_WEAPON_GROUP}) do
 	for	_,t in ipairs(g) do
 		t.customCollect = nil;
