@@ -444,7 +444,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							}),
 						}),
 						n(FACTIONS, {
-							faction(2462),	-- Stitchmasters
+							faction(FACTION_THE_STITCHMASTERS),	-- Stitchmasters
 						}),
 						n(REWARDS, {
 							i(184304, {	-- Anima-Touched Weapon Fragments

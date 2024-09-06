@@ -1126,13 +1126,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64511 },	-- Missing Relics
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.7, 22.5, KORTHIA },
-				["minReputation"] = { 2472, 3 },	-- Tier 3
+				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
 			}),
 			q(63915, {	-- Drum of the Death Loa
 				["provider"] = { "i", 187204 },	-- Drum of the Death Loa
 				["coord"] = { 39.3, 52.4, KORTHIA },
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
-				["minReputation"] = { 2472, 3 },	-- Tier 3
+				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
 				["g"] = {
 					i(187204),	-- Drum of the Death Loa (QI!)
 				},
@@ -1141,13 +1141,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["provider"] = { "i", 187103 },	-- Everliving Statuette
 				["coord"] = { 39.3, 52.4, KORTHIA },
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
-				["minReputation"] = { 2472, 3 },	-- Tier 3
+				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
 			}),
 			q(63916, {	-- Sack of Strange Soil
 				["provider"] = { "i", 187205 },	-- Sack of Strange Soil
 				["coord"] = { 45.0, 35.5, KORTHIA },
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
-				["minReputation"] = { 2472, 3 },	-- Tier 3
+				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
 				["g"] = {
 					i(187205),	-- Sack of Strange Soil (QI!)
 				},
@@ -1156,13 +1156,13 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["provider"] = { "i", 187104 },	-- Obelisk of Dark Tidings
 				["coord"] = { 45.0, 35.5, KORTHIA },
 				["cost"] = { { "i", 186718, 1 } },	-- Teleporter Repair Kit
-				["minReputation"] = { 2472, 3 },	-- Tier 3
+				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
 			}),
 			q(64526, {	-- Mysterious Rifts
 				["sourceQuests"] = { 64519 },	-- Lost Vaults
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.7, 22.5, KORTHIA },
-				["minReputation"] = { 2472, 4 },	-- Tier 4
+				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 4 },	-- Tier 4
 			}),
 			q(63919, {	-- Book of Binding: The Tormented Sorceror
 				["sourceQuests"] = { 64526 },	-- Mysterious Rifts
@@ -1205,7 +1205,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuests"] = { 64526 },	-- Mysterious Rifts
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.7, 22.5, KORTHIA },
-				["minReputation"] = { 2472, 5 },	-- Tier 5
+				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 5 },	-- Tier 5
 			}),
 			q(63908, {	-- Bulwark of Divine Intent
 				["description"] = "Requires having purchased |cFF0070ddResearch Report: Ancient Shrines|r, allowing you to interact with the phasing swords.",
@@ -1303,20 +1303,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 				["sourceQuest"] = 63861,	-- Beginning the Collection
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.8, 22.6, KORTHIA },
-				["minReputation"] = { 2472, 3 },	-- Tier 3
+				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			q(64368, {	-- Relic Efficiency
 				["sourceQuest"] = 63861,	-- Beginning the Collection
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.7, 22.5, KORTHIA },
-				["minReputation"] = { 2472, 4 },	-- Tier 4
+				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 4 },	-- Tier 4
 			}),
 			q(65146, {	-- Relic Hunter
 				["sourceQuest"] = 63861,	-- Beginning the Collection
 				["provider"] = { "n", 178257 },	-- Archivist Roh-Suir
 				["coord"] = { 62.8, 22.6, KORTHIA },
-				["minReputation"] = { 2472, 5 },	-- Tier 5
+				["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 5 },	-- Tier 5
 				["timeline"] = { ADDED_9_1_5 },
 			}),
 			q(63949, {	-- Shaping Fate

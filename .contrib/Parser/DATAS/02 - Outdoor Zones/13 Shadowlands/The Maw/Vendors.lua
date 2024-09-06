@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 	m(THE_MAW, {
 		n(VENDORS, {
 			n(162804, {	-- Ve'nari
-				["minReputation"] = { 2432, 1 },	-- Ve'nari, Dubious
+				["minReputation"] = { FACTION_VENARI, 1 },	-- Ve'nari, Dubious
 				["g"] = {
 					i(180949, {	-- Animaflow Stabilizer
 						["cost"] = { { "c", STYGIA, 1650 } },

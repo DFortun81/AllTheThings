@@ -1059,7 +1059,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sourceQuests"] = { 64958 },	-- The Forces Gather
 				["provider"] = { "n", 181183 },	-- Highlord Bolvar Fordragon
 				["coord"] = { 35, 64.8, ZERETH_MORTIS },
-				["minReputation"] = { 2478, HONORED },	-- Assumption
+				["minReputation"] = { FACTION_THE_ENLIGHTENED, HONORED },	-- Assumption
 			}),
 			q(65774, {	-- The Catalyst Awakens
 				["sourceQuests"] = { 64844 },	-- The Pilgrimage Ends

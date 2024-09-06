@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			}),
 			n(182257, {	-- Vilo
 				["coord"] = { 34.8, 64.1, ZERETH_MORTIS },
-				["minReputation"] = { 2478, 5 },	-- The Enlightened, Friendly
+				["minReputation"] = { FACTION_THE_ENLIGHTENED, 5 },	-- The Enlightened, Friendly
 				["g"] = {
 					i(187640, {	-- Anointed Protostag (MOUNT!)
 						["cost"] = { { "c", ANIMA, 5000 } },

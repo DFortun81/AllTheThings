@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 		n(EMISSARY_QUESTS, {
 			q(64267, {	-- Mysterious Gifts from Ve'nari
 				["repeatable"] = true,
-				["minReputation"] = { 2432, 1 },	-- Ve'nari, Dubious
+				["minReputation"] = { FACTION_VENARI, 1 },	-- Ve'nari, Dubious
 				["g"] = {
 					i(187029, {	-- Mysterious Gift from Ve'nari
 						i(186657),	-- Soulbound Gloomcharger (MOUNT!)
