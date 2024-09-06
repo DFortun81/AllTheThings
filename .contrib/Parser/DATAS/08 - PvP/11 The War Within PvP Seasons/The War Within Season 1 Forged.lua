@@ -17,11 +17,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			ach(40387),		-- Challenger I: The War Within Season 1
 			ach(40388),		-- Challenger II: The War Within Season 1
 			ach(40389),		-- Rival I: The War Within Season 1
-			ach(40390),		-- Rival II: The War Within Season 1
+			ach(40390, {	-- Rival II: The War Within Season 1
+				-- Illusion here
+			}),
 			ach(40391, {	-- Duelist: The War Within Season 1
 				i(223617),	-- Forged Gladiator's Prestigious Cloak
 			}),
 			ach(40392),		-- Elite: The War Within Season 1
+				-- Tabard here
 			ach(40393, {	-- Gladiator: The War Within Season 1
 				i(223586),	-- Forged Gladiator's Fel Bat (MOUNT!)
 			}),
