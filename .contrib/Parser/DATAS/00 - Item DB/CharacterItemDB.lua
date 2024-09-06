@@ -78,12 +78,21 @@ is(82470, 120146, MAGE);			-- Ancient Tome of Portal: Dalaran
 is(82469, 120145, MAGE);			-- Ancient Tome of Teleport: Dalaran
 iq(86125, 31304);					-- Kafa Press
 iq(86529, 31432);					-- Manipulator's Talisman
+is(0, 131204); 						-- Path of the Jade Serpent
 
 -----------------
 -- PATCH 5.2.0 --
 -----------------
 is(94232, 138430, HUNTER);			-- Ancient Tome of Dinomancy
 is(0, 101508, WARLOCK);				-- The Codex of Xerrath
+
+-----------------
+-- PATCH 6.0.1 --
+-----------------
+is(0, 159899); 						-- Path of the Crescent Moon
+is(0, 159900); 						-- Path of the Dark Rail
+is(0, 159896); 						-- Path of the Iron Prow
+is(0, 159901); 						-- Path of the Verdant
 
 -----------------
 -- PATCH 6.0.2 --
@@ -258,6 +267,14 @@ iq(186714, 64339);					-- Research Report: All-Seeing Crystal
 iq(186717, 64300);					-- Research Report: Adaptive Alloys
 iq(185965, 63893);					-- Memories of Sunless Skies
 iq(181442, 61458);					-- Visions of Sire Denathrius
+is(0, 354466); 						-- Path of the Ascendant
+is(0, 354462); 						-- Path of the Courageous
+is(0, 354464); 						-- Path of the Misty Forest
+is(0, 354463); 						-- Path of the Plagued
+is(0, 354468); 						-- Path of the Scheming Loa
+is(0, 354465); 						-- Path of the Sinful Soul
+is(0, 354469); 						-- Path of the Stone Warden
+is(0, 354467); 						-- Path of the Undefeated
 
 -----------------
 -- PATCH 9.1.5 --
@@ -278,6 +295,27 @@ iq(190640, 65694);					-- Font of Ephemeral Power
 iq(190956, 70705);					-- Decanter of Untapped Potential
 iq(190234, 65617);					-- Enlightened Portal Research
 iq(188793, 65282);					-- Improvised Cypher Analysis Tool
+is(0, 367416); 						-- Path of the Streetwise Merchant
+
+-----------------
+-- PATCH 9.2.5 --
+-----------------
+is(0, 373262); 						-- Path of the Fallen Guardian
+is(0, 373274); 						-- Path of the Scrappy Prince
+
+------------------
+-- PATCH 10.0.0 --
+------------------
+is(0, 393279); 						-- Path of Arcane Secrets
+is(0, 393764); 						-- Path of Proven Worth
+is(0, 393256); 						-- Path of the Clutch Defender
+is(0, 393273); 						-- Path of the Draconic Diploma
+is(0, 393766); 						-- Path of the Grand Magistrix
+is(0, 393276); 						-- Path of the Obsidian Hoard
+is(0, 393267); 						-- Path of the Rotting Woods
+is(0, 393283); 						-- Path of the Titanic Reservoir
+is(0, 393222); 						-- Path of the Watcher's Legacy
+is(0, 393262); 						-- Path of the Windswept Plains
 
 ------------------
 -- PATCH 10.0.2 --
@@ -388,6 +426,10 @@ iq(205438, 75850);					-- Bartered Enchanting Journal
 iq(205439, 75849);					-- Bartered Blacksmithing Journal
 iq(205440, 75848);					-- Bartered Alchemy Journal
 iq(205451, 75866);					-- Flawless Crystal Scale
+is(0, 410074); 						-- Path of Festering Rot
+is(0, 410071); 						-- Path of the Freebooter
+is(0, 410078); 						-- Path of the Earth-Warder
+is(0, 410080); 						-- Path of Wind's Domain
 
 ------------------
 -- PATCH 10.1.5 --
@@ -453,6 +495,12 @@ iq(210728, 78521, DRUID);	-- Moon-Blessed Claw
 iq(210727, 78518, DRUID);	-- Pollenfused Bristlebruin Fur Sample
 iq(210753, 78516, DRUID);	-- Scale of the Prismatic Whiskerfish
 iq(211314, 78842, HUNTER);	-- Cinder of Companionship
+is(0, 424153); 				-- Path of Ancient Horrors 
+is(0, 424167); 				-- Path of Heart's Bane
+is(0, 424187); 				-- Path of the Golden Tomb
+is(0, 424163); 				-- Path of the Nightmare Lord
+is(0, 424142); 				-- Path of the Tidehunter
+is(0, 424197); 				-- Path of Twisted Time
 
 ------------------
 -- PATCH 10.2.5 --
@@ -483,6 +531,21 @@ iq(216898, 80085);					-- Mallard Duck Disguise
 iq(216900, 80087);					-- Pink Duck Disguise
 iq(216901, 80088);					-- White Duck Disguise
 iq(216902, 80089);					-- Yellow Duck Disguise
+
+------------------
+-- PATCH 11.0.0 --
+------------------
+is(0, 445416); 						-- Path of Nerubian Ascension
+is(0, 445414); 						-- Path of the Arathi Flagship
+is(0, 445418); 						-- Path of the Besieged Harbor [A]
+is(0, 464256); 						-- Path of the Besieged Harbor [H]
+is(0, 445269); 						-- Path of the Corrupted Foundry
+is(0, 445443); 						-- Path of the Fallen Stormriders
+is(0, 445440); 						-- Path of the Flaming Brewery
+is(0, 445444); 						-- Path of the Light's Reverence
+is(0, 445417); 						-- Path of the Ruined City
+is(0, 445424); 						-- Path of the Twilight Fortress
+is(0, 445441); 						-- Path of the Warding Candles
 
 ------------------
 -- PATCH 11.0.2 --
