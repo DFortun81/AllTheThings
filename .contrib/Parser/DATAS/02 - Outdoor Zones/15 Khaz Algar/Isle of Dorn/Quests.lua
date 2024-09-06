@@ -1185,17 +1185,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(78618, {	-- Fungal Frenzy
-					["coord"] = { 52.0, 72.6, ISLE_OF_DORN },
+					["coord"] = { 53.5, 66.4, ISLE_OF_DORN },
 				}),
 				q(79669, {	-- I Take Candle!
-					["coord"] = { 62.8, 42.5, ISLE_OF_DORN },
+					["coord"] = { 64.32, 44.27, ISLE_OF_DORN },
 					["lockCriteria"] = { 1, "lvl", 74 },
 				}),
 				q(79667, {	-- It's Elementary
-					--["coord"] = { 62.8, 75.2, ISLE_OF_DORN },	-- need more accurate coords from popup
+					["coord"] = { 62.36, 72.13, ISLE_OF_DORN },
 				}),
 				q(81614, {	-- One Fin, Two Fin, Pearlfin, Dead Fin
-					["coord"] = { 50.5, 80.2, ISLE_OF_DORN },	-- need more accurate coords from popup
+					["coord"] = { 50.6, 79.5, ISLE_OF_DORN },
 				}),
 			}),
 		}),
