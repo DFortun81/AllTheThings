@@ -2676,6 +2676,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			--q(78604),	-- Randomly when crafting Wild Experimentation
 						-- When learning Algari Mana Potion (first use of Mycobloom in Wild Experimentation)
 						-- "was doing DF experiments in dornigal"
+						-- "Alchemy learning [Algarischer Manatrank] (430591)"
 
 
 			--q(81090),	-- Randomly when crafting Wild Experimentation
