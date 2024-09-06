@@ -12,12 +12,14 @@ foreach (string profession in new string[] { "Alchemy", "Blacksmithing", "Enchan
 {
     var pageString = Helper.GetStringFromWoWHead($"professions/{profession.ToLower().Replace(" ", "")}", "classic/").Result;
     if (pageString == null) continue;
+    Console.Write("classic/");
     Helper.Parse(pageString, sb, profession);
 }
 foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" })
 {
     var pageString = Helper.GetStringFromWoWHead($"secondary-skills/{profession.ToLower().Replace(" ", "-")}", "classic/").Result;
     if (pageString == null) continue;
+    Console.Write("classic/");
     Helper.Parse(pageString, sb, profession);
 }
 
@@ -27,12 +29,14 @@ foreach (string profession in new string[] { "Alchemy", "Blacksmithing", "Enchan
 {
     var pageString = Helper.GetStringFromWoWHead($"professions/{profession.ToLower().Replace(" ", "")}", "tbc/").Result;
     if (pageString == null) continue;
+    Console.Write("tbc/");
     Helper.Parse(pageString, sb, profession);
 }
 foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" })
 {
     var pageString = Helper.GetStringFromWoWHead($"secondary-skills/{profession.ToLower().Replace(" ", "-")}", "tbc/").Result;
     if (pageString == null) continue;
+    Console.Write("tbc/");
     Helper.Parse(pageString, sb, profession);
 }
 sb.AppendLine("-- #endif");
@@ -43,12 +47,32 @@ foreach (string profession in new string[] { "Alchemy", "Blacksmithing", "Enchan
 {
     var pageString = Helper.GetStringFromWoWHead($"professions/{profession.ToLower().Replace(" ", "")}", "wotlk/").Result;
     if (pageString == null) continue;
+    Console.Write("wotlk/");
     Helper.Parse(pageString, sb, profession);
 }
 foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" })
 {
     var pageString = Helper.GetStringFromWoWHead($"secondary-skills/{profession.ToLower().Replace(" ", "-")}", "wotlk/").Result;
     if (pageString == null) continue;
+    Console.Write("wotlk/");
+    Helper.Parse(pageString, sb, profession);
+}
+sb.AppendLine("-- #endif");
+
+// Cataclysm Profession Data
+sb.AppendLine().AppendLine("-- #if AFTER 4.0.0");
+foreach (string profession in new string[] { "Alchemy", "Blacksmithing", "Enchanting", "Engineering", "Herbalism", "Inscription", "Jewelcrafting", "Leatherworking", "Mining", "Skinning", "Tailoring" })
+{
+    var pageString = Helper.GetStringFromWoWHead($"professions/{profession.ToLower().Replace(" ", "")}", "cata/").Result;
+    if (pageString == null) continue;
+    Console.Write("cata/");
+    Helper.Parse(pageString, sb, profession);
+}
+foreach (string profession in new string[] { "Cooking", "First Aid", "Fishing" })
+{
+    var pageString = Helper.GetStringFromWoWHead($"secondary-skills/{profession.ToLower().Replace(" ", "-")}", "cata/").Result;
+    if (pageString == null) continue;
+    Console.Write("cata/");
     Helper.Parse(pageString, sb, profession);
 }
 sb.AppendLine("-- #endif");
@@ -56,21 +80,26 @@ sb.AppendLine("-- #endif");
 
 
 // Retail Profession Data
-sb.AppendLine().AppendLine("-- #if AFTER 10.0.0");
+sb.AppendLine().AppendLine("-- #if AFTER 11.0.0");
 foreach (string profession in new string[] { "Alchemy", "Blacksmithing", "Enchanting", "Engineering", "Herbalism", "Inscription", "Jewelcrafting", "Leatherworking", "Mining", "Skinning", "Tailoring" })
 {
     var pageString = Helper.GetStringFromWoWHead($"professions/{profession.ToLower().Replace(" ", "")}").Result;
     if (pageString == null) continue;
+    Console.Write("retail/");
     Helper.Parse(pageString, sb, profession);
 }
 foreach (string profession in new string[] { "Archaeology", "Cooking", "Fishing" })
 {
     var pageString = Helper.GetStringFromWoWHead($"secondary-skills/{profession.ToLower().Replace(" ", "-")}").Result;
     if (pageString == null) continue;
+    Console.Write("retail/");
     Helper.Parse(pageString, sb, profession);
 }
 sb.AppendLine("-- #endif");
 
 Console.WriteLine(sb.ToString());
-if (!Directory.Exists("DATAS/00 - Item Database/ProfessionDB")) Directory.CreateDirectory("DATAS/00 - Item Database/ProfessionDB");
-File.WriteAllText($"DATAS/00 - Item Database/ProfessionDB/Skills Learned At.lua", sb.Append("-- #endif").ToString());
+var ProfessionDBFileName = "../Parser/DATAS/00 - Profession DB/Skills Learned At.lua";
+#pragma warning disable CS8604 // Possible null reference argument.
+Directory.CreateDirectory(Path.GetDirectoryName(ProfessionDBFileName));
+#pragma warning restore CS8604 // Possible null reference argument.
+File.WriteAllText(ProfessionDBFileName, sb.Append("-- #endif").ToString());

@@ -42,6 +42,8 @@ namespace ATT
             pageString = pageString.Substring(0, pageString.IndexOf(endString) + endString.Length - 1);
             var dict = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Dictionary<string, object>>>(pageString);
             if (dict == null) return;
+            Console.Write("Parsing ");
+            Console.WriteLine(profession);
 
             var recipeList = new List<Dictionary<string, object>>();
             foreach (var entry in dict)
