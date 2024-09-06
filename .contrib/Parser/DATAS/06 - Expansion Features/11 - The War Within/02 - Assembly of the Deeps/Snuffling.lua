@@ -15,6 +15,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			n(QUESTS, {
 				q(80378, {	-- A Light of the Dark
 					["provider"] = { "i", 217390 },	-- Coagulated Black Blood Clot
+					--["coord"] = { x, y, },	-- Depends on the slain creature from which item is looted
 					["maps"] = { AZJ_KAHET },
 					["g"] = {
 						i(217391),	-- Coagulated Black Blood (QI!)

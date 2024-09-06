@@ -1586,7 +1586,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 				},
 			}),
 			o(455994, {	-- Emptied Venom Canister
-				["coord"] = { 63.1, 11.3, NERUBAR },
+				["coord"] = { 63.1, 11.1, NERUBAR },
 				["questID"] = 83873,
 				["g"] = {
 					i(226299),	-- Emptied Venom Canister

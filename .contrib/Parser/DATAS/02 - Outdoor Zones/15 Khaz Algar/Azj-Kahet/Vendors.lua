@@ -157,6 +157,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 				},
 			}),
+			n(227176, {	-- Mattimeo Twinstar <Quartermaster>
+				["coord"] = { 23.1, 51.3, AZJ_KAHET },
+				["sym"] = {{"sub", "common_vendor", 217989}},	-- Aeden Braesmeld <Weaponsmith>
+			}),
+			n(223354, {	-- Nataniel Highdawn <Quartermaster>
+				["coord"] = { 44.9, 66.4, AZJ_KAHET },	-- He is sporadically walking around the campfire
+				["sym"] = {{"sub", "common_vendor", 217989}},	-- Aeden Braesmeld <Weaponsmith>
+			}),
 			n(218176, {	-- Nuel Prill <Inscription Supplies>
 				["coord"] = { 42.2, 27.2, NERUBAR },
 				["g"] = {

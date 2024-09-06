@@ -25,6 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(216042, {	-- Cha'tak
+				["description"] = "Inside the cave, behind the waterfall.",
 				["coord"] = { 70.7, 21.4, AZJ_KAHET },
 				["questID"] = 81704,
 				["g"] = {
@@ -43,7 +44,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(216045, {	-- Enduring Gutterface
-				["coord"] = { 58.0, 62.1, AZJ_KAHET },
+				["coord"] = { 58.0, 62.3, AZJ_KAHET },
 				["questID"] = 81707,
 				["g"] = {
 					i(221248),	-- Deep Terror Carver
@@ -185,7 +186,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(216041, {	-- Webspeaker Grik'ik
-				["coord"] = { 61.3, 33.0, AZJ_KAHET },
+				["coord"] = { 61.3, 27.3, AZJ_KAHET },
 				["questID"] = 81699,
 				["g"] = {
 					i(223369),	-- Webspeaker's Spiritual Cloak
@@ -200,7 +201,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(216034, {	-- XT-Minecrusher 8700
-				["coord"] = { 76.5, 57.7, AZJ_KAHET },
+				["coord"] = { 76.6, 57.8, AZJ_KAHET },
 				["questID"] = 81703,
 				["g"] = {
 					i(221232),	-- Polished Goblin Bling

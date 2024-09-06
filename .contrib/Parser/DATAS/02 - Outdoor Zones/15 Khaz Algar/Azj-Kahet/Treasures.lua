@@ -4,23 +4,11 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(AZJ_KAHET, {
 		n(TREASURES, {
-			o(446404, {	-- Memory Cache
-				["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 5x Unseeming Shift debuff to see npc near cache, kill it to obtain key for cache",
-				["coord"] = { 62.7, 88.7, AZJ_KAHET_LOWER },
-				["questID"] = 82520,	-- previous 82723?
-				["g"] = {
-					i(223870),	-- Cache Key
-					--
-					i(225544),	-- Mind Slurp (PET!)
-				},
-			}),
 			o(446419, {	-- Concealed Contraband
 				["coord"] = { 34.0, 61.0, AZJ_KAHET },
 				["questID"] = 82525,
 				["g"] = {
-					currency(3002),	-- The Weaver's Commendation
-					currency(3003),	-- The General's Commendation
-					currency(3004),	-- The Vizier's Commendation
+					-- Junk
 				},
 			}),
 			o(446097, {	-- Disturbed Soil
@@ -30,13 +18,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(224816),	-- Nerubian Almanac
 				},
 			}),
+			o(446404, {	-- Memory Cache
+				["description"] = "Interact with Black Blood Extractors in area or stand in Black Blood pools until you reach at least 50 Unseeming Shift debuff to see Corrupted Memory near the cache. Kill it to obtain key for cache.",
+				["coord"] = { 62.7, 87.9, AZJ_KAHET_LOWER },
+				["questID"] = 82520,
+				["crs"] = { 223908 },	-- Corrupted Memory
+				["g"] = {
+					i(223870),	-- Cache Key
+					--
+					i(225544),	-- Mind Slurp (PET!)
+				},
+			}),
 			o(446140, {	-- Missing Scouts Pack
 				["coord"] = { 38.8, 37.2, AZJ_KAHET },
 				["questID"] = 82722,
-				["g"] = {	-- Gold, junk
-					currency(3002),	-- The Weaver's Commendation
-					currency(3003),	-- The General's Commendation
-					currency(3004),	-- The Vizier's Commendation
+				["g"] = {
+					-- Gold, junk
 				},
 			}),
 			o(446101, {	-- Nerubian Offerings
@@ -55,25 +52,28 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["description"] = "Below, hanging from a bridge.",
 				["coord"] = { 54.5, 50.81, AZJ_KAHET },
 				["questID"] = 82721,
-				["g"] = {	-- Gold, food, junk
-					currency(3002),	-- The Weaver's Commendation
-					currency(3003),	-- The General's Commendation
-					currency(3004),	-- The Vizier's Commendation
+				["g"] = {
+					-- Gold, food, junk
 				},
 			}),
 			o(446299, {	-- Silk-spun Supplies
 				--["description"] = "Finishing questID 78383 (Strategic Edge) make it spawn",
-				["coord"] = { 67.5, 27.6, AZJ_KAHET },
+				["coord"] = { 67.5, 27.5, AZJ_KAHET },
 				["questID"] = 82719,
+				["g"] = {
+					-- Crafting reagents, bandages
+				},
 			}),
 			o(444844, {	-- Stashed Loot
+				-- ["description"] = "At both locations, every once in a while, Pilfered Loot will appear instead of stashed. No obbjectID, same loot.",
 				["coords"] = {
-					{ 26.2, 54.1, AZJ_KAHET },
+					{ 22.9, 50.3, AZJ_KAHET },	-- Inside Wildcamp Or'lay
 					{ 76.4, 58.1, AZJ_KAHET },	-- Inside the cave in Mmarl
 				},
-				--["questID"] = xx,	-- missing qID
-				["g"] = {
-					-- some random gray and crafting reagent
+				--["questID"] = xx,	-- no quest attached, repeatable, respawn timer around 5 minutes
+				["g"] = {	-- Junk, crafting reagents
+					currency(3056),	-- Kej
+					currency(3008),	-- Valorstones
 				},
 			}),
 			o(444800, {	-- Sureki Strongbox
@@ -255,7 +255,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 82085,
 			}),
 			n(222283, {	-- Weathered Shadecaster
-				["coord"] = { 70.4, 65.2, AZJ_KAHET },
+				["coord"] = { 71.1, 62.3, AZJ_KAHET },
 				["questID"] = 82082,
 			}),
 		}),

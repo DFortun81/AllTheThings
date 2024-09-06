@@ -97,7 +97,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(80399, {	-- Rations and Revelations
 					["sourceQuests"] = { 78233 },	-- The Weaver's Gift
 					["provider"] = { "n", 211409 },	-- Faerin Lothar
-					["coord"] = { 59.3, 19.3, AZJ_KAHET },
+					["coord"] = { 59.4, 19.4, AZJ_KAHET },
 					["g"] = {
 						i(217614),	-- Arathi Rations (QI!)
 					},
@@ -105,7 +105,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78236, {	-- Scrappy Straggler
 					["sourceQuests"] = { 80399 },	-- Rations and Revelations
 					["provider"] = { "n", 211409 },	-- Faerin Lothar
-					["coord"] = { 59.3, 19.3, AZJ_KAHET },
+					["coord"] = { 59.4, 19.4, AZJ_KAHET },
 				}),
 				q(78234, {	-- Force Your Way
 					["sourceQuests"] = { 78236 },	-- Scrappy Straggler
@@ -113,7 +113,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						{ "n", 220051 },	-- Flynn Fairwind
 						{ "n", 211444 },	-- Flynn Fairwind
 					},
-					["coord"] = { 63.0, 32.9, AZJ_KAHET },
+					["coord"] = { 63.0, 27.1, AZJ_KAHET },
 				}),
 				q(78383, {	-- Strategic Edge
 					["sourceQuests"] = { 78236 },	-- Scrappy Straggler
@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						{ "n", 220051 },	-- Flynn Fairwind
 						{ "n", 211444 },	-- Flynn Fairwind
 					},
-					["coord"] = { 63.0, 32.9, AZJ_KAHET },
+					["coord"] = { 63.0, 27.1, AZJ_KAHET },
 					["g"] = {
 						o(441587, {	-- Crate of Emptied Vials
 							i(212159),	-- Vial of Used Pheromones (QI!)
@@ -161,12 +161,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79625, {	-- Not Quite Dead
 					["sourceQuests"] = { 78237 },	-- Let Fly!
 					["provider"] = { "n", 217330 },	-- Anub'azal
-					["coord"] = { 46.9, 26.2, AZJ_KAHET },
+					["coord"] = { 45.5, 19.7, AZJ_KAHET },
 				}),
 				q(79175, {	-- I Think I'm a Drone Now
 					["sourceQuests"] = { 79625 },	-- Not Quite Dead
 					["provider"] = { "n", 217330 },	-- Anub'azal
-					["coord"] = { 46.9, 26.2, AZJ_KAHET },
+					["coord"] = { 45.5, 19.7, AZJ_KAHET },
 					["g"] = {
 						i(225538),	-- General's Pungent Armor
 						i(225526),	-- General's Pungent Legguards
@@ -177,7 +177,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78250, {	-- General Admission
 					["sourceQuests"] = { 79175 },	-- I Think I'm a Drone Now
 					["provider"] = { "n", 217330 },	-- Anub'azal
-					["coord"] = { 46.9, 26.2, AZJ_KAHET },
+					["coord"] = { 45.5, 19.7, AZJ_KAHET },
 					["g"] = {
 						o(410395, {	-- Siegehold Records
 							i(217165),	-- Zev'kall's Attrition Log (QI!)
@@ -187,7 +187,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78249, {	-- Specific Personages
 					["sourceQuests"] = { 79175 },	-- I Think I'm a Drone Now
 					["provider"] = { "n", 217330 },	-- Anub'azal
-					["coord"] = { 46.9, 26.2, AZJ_KAHET },
+					["coord"] = { 45.5, 19.7, AZJ_KAHET },
 					["g"] = {
 						i(225549),	-- Cape of the Favored
 						i(225550),	-- Cloak of the Tactician
@@ -201,7 +201,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78249,	-- Specific Personages
 					},
 					["provider"] = { "n", 217330 },	-- Anub'azal
-					["coord"] = { 46.9, 26.2, AZJ_KAHET },
+					["coord"] = { 45.5, 19.7, AZJ_KAHET },
 					["g"] = {
 						i(212528),	-- Zev'kall's Pheromone Emitter (QI!)
 					},
@@ -212,7 +212,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78249,	-- Specific Personages
 					},
 					["provider"] = { "n", 211399 },	-- Monte Gazlowe
-					["coord"] = { 46.7, 26.2, AZJ_KAHET },
+					["coord"] = { 45.3, 19.9, AZJ_KAHET },
 				}),
 				q(78255, {	-- Just Act Casual
 					["sourceQuests"] = {
@@ -220,7 +220,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78254,	-- Stolen Influence
 					},
 					["provider"] = { "n", 215413 },	-- Monte Gazlowe
-					["coord"] = { 48.6, 29.9, AZJ_KAHET },
+					["coord"] = { 47.4, 23.9, AZJ_KAHET },
 					["g"] = {
 						i(225520),	-- Smuggled Nerubian Belt
 						i(225523),	-- Smuggled Nerubian Boots
@@ -231,7 +231,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78256, {	-- The General's Consensus
 					["sourceQuests"] = { 78255 },	-- Just Act Casual
 					["provider"] = { "n", 215845 },	-- Monte Gazlowe
-					["coord"] = { 52.7, 31.6, AZJ_KAHET },
+					["coord"] = { 51.8, 25.8, AZJ_KAHET },
 					["g"] = {
 						o(428814, {	-- Inconspicuous Box
 							i(217042),	-- Zev'kall's Pheromone Emitter (QI!)
@@ -373,12 +373,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79174, {	-- Infested Infestation
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 215349 },	-- Great Hexer Ohodo
-					["coord"] = { 58.1, 26.1, AZJ_KAHET },
+					["coord"] = { 57.8, 19.8, AZJ_KAHET },
 				}),
 				q(79355, {	-- Prisoner Preservation
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 215349 },	-- Great Hexer Ohodo
-					["coord"] = { 58.1, 26.1, AZJ_KAHET },
+					["coord"] = { 57.8, 19.8, AZJ_KAHET },
 				}),
 				q(79356, {	-- Anti-Fungal Firestarter
 					["sourceQuests"] = {
@@ -386,7 +386,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						79355,	-- Prisoner Preservation
 					},
 					["provider"] = { "n", 215349 },	-- Great Hexer Ohodo
-					["coord"] = { 58.1, 26.1, AZJ_KAHET },
+					["coord"] = { 57.8, 19.8, AZJ_KAHET },
 					["g"] = {
 						i(212334),	-- Anti-Fungal Fire Bomb (QI!)
 					},
@@ -397,7 +397,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						79355,	-- Prisoner Preservation
 					},
 					["provider"] = { "n", 215349 },	-- Great Hexer Ohodo
-					["coord"] = { 58.1, 26.1, AZJ_KAHET },
+					["coord"] = { 57.8, 19.8, AZJ_KAHET },
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40636.03, {	-- Gutter Work
@@ -459,18 +459,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(83306, {	-- Where the Wild Things Camp
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 211409 },	-- Faerin Lothar
-					["coord"] = { 59.3, 19.3, AZJ_KAHET },
+					["coord"] = { 59.4, 19.4, AZJ_KAHET },
 					["isBreadcrumb"] = true,
 				}),
 				q(80564, {	-- Field Research
 					["sourceQuests"] = { 83306 }, -- Where the Wild Things Camp
 					["provider"] = { "n", 220595 },	-- Orweyna
-					["coord"] = { 46.1, 68.9, AZJ_KAHET },
+					["coord"] = { 44.6, 66.4, AZJ_KAHET },
 				}),
 				q(80563, {	-- Tool of Attunement
 					["sourceQuests"] = { 83306 }, -- Where the Wild Things Camp
 					["provider"] = { "n", 220595 },	-- Orweyna
-					["coord"] = { 46.1, 68.9, AZJ_KAHET },
+					["coord"] = { 44.6, 66.4, AZJ_KAHET },
 					["g"] = {
 						i(218188),	-- Tuning Crystal (QI!)
 					},
@@ -481,27 +481,27 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						80563,	-- Tool of Attunement
 					},
 					["provider"] = { "n", 226672 },	-- Orweyna
-					["coord"] = { 50.4, 63.2, AZJ_KAHET },	-- but probably could be 2 more, depending on order of quest before?
+					["coord"] = { 49.3, 60.2, AZJ_KAHET },	-- but probably could be 2 more, depending on order of quest before?
 				}),
 				q(80565, {	-- Resounding Repercussions
 					["sourceQuests"] = { 82143 },	-- The Path of Dissonance
 					["provider"] = { "n", 220603 },	-- Orweyna
-					["coord"] = { 60.1, 66.5, AZJ_KAHET },
+					["coord"] = { 59.9, 63.8, AZJ_KAHET },
 				}),
 				q(80566, {	-- Enemies Around
 					["sourceQuests"] = { 80565 },	-- Resounding Repercussions
 					["provider"] = { "n", 220608 },	-- Hannan
-					["coord"] = { 61.9, 65.4, AZJ_KAHET },
+					["coord"] = { 61.9, 62.6, AZJ_KAHET },
 				}),
 				q(80567, {	-- Song of Restoring
 					["sourceQuests"] = { 80566 },	-- Enemies Around
 					["provider"] = { "n", 223285 },	-- Orweyna
-					["coord"] = { 60.0, 66.6, AZJ_KAHET },
+					["coord"] = { 59.8, 63.9, AZJ_KAHET },
 				}),
 				q(80568, {	-- Leave No Trace
 					["sourceQuests"] = { 80567 },	-- Song of Restoring
 					["provider"] = { "n", 223286 },	-- Hannan
-					["coord"] = { 60.0, 66.7, AZJ_KAHET },
+					["coord"] = { 59.8, 64.0, AZJ_KAHET },
 					["g"] = {
 						i(223322),	-- Hannan's Scythe (QI!)
 					},
@@ -509,7 +509,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(80571, {	-- Decipher the Cacophony
 					["sourceQuests"] = { 80568 },	-- Leave No Trace
 					["provider"] = { "n", 220610 },	-- Orweyna
-					["coord"] = { 62.5, 79.2, AZJ_KAHET_LOWER },
+					["coord"] = { 62.6, 79.2, AZJ_KAHET_LOWER },
 					["g"] = {
 						i(221776),	-- Discordant Essence (QI!)
 					},
@@ -517,7 +517,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(80570, {	-- Staunch the Flow
 					["sourceQuests"] = { 80568 },	-- Leave No Trace
 					["provider"] = { "n", 220610 },	-- Orweyna
-					["coord"] = { 62.5, 79.2, AZJ_KAHET_LOWER },
+					["coord"] = { 62.6, 79.2, AZJ_KAHET_LOWER },
 				}),
 				q(80572, {	-- Discordant Measure
 					["sourceQuests"] = {
@@ -525,7 +525,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						80570,	-- Decipher the Cacophony
 					},
 					["provider"] = { "n", 220610 },	-- Orweyna
-					["coord"] = { 62.5, 79.2, AZJ_KAHET_LOWER },
+					["coord"] = { 62.6, 79.2, AZJ_KAHET_LOWER },
 					["g"] = {
 						i(225696),	-- Corrupted Heart (QI!)
 						i(225698),	-- Root Sliver (QI!)
@@ -691,23 +691,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(83716, {	-- Beneath the Roots
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 211409 },	-- Faerin Lothar
-					["coord"] = { 59.3, 19.3, AZJ_KAHET },
+					["coord"] = { 59.4, 19.4, AZJ_KAHET },
 					["isBreadcrumb"] = true,
 				}),
 				q(83628, {	-- Tense Recovery
 					["sourceQuests"] = { 83716 }, -- Beneath the Roots
 					["provider"] = { "n", 227222 },	-- Ysabel Gleamgaard
-					["coord"] = { 26.8, 55.9, AZJ_KAHET },
+					["coord"] = { 23.6, 52.2, AZJ_KAHET },
 				}),
 				q(83629, {	-- Ancient Respite
 					["sourceQuests"] = { 83628 },	-- Tense Recovery
 					["provider"] = { "n", 227224 },	-- Goehi
-					["coord"] = { 27.1, 45.3, AZJ_KAHET },
+					["coord"] = { 23.9, 40.7, AZJ_KAHET },
 				}),
 				q(83632, {	-- Rings of Memory
 					["sourceQuests"] = { 83629 },	-- Ancient Respite
 					["provider"] = { "n", 227224 },	-- Goehi
-					["coord"] = { 27.1, 45.3, AZJ_KAHET },
+					["coord"] = { 23.9, 40.7, AZJ_KAHET },
 					["g"] = {
 						i(225973),	-- Goehi's Root (QI!)
 					},
@@ -715,7 +715,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(83639, {	-- Open Communications
 					["sourceQuests"] = { 83632 },	-- Rings of Memory
 					["provider"] = { "n", 215724 },	-- Ney'leia
-					["coord"] = { 26.3, 56.8, AZJ_KAHET },
+					["coord"] = { 23.1, 53.3, AZJ_KAHET },
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40636.11, {	-- Pillar-nest of Horrors
@@ -832,7 +832,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						81890,	-- Unfulfilled Requests
 					},
 					["provider"] = { "n", 221948 },	-- Sum'latha
-					["coord"] = { 52.3, 66.7, AZJ_KAHET },
+					["coord"] = { 51.4, 63.9, AZJ_KAHET },
 					["sourceQuestNumRequired"] = 1,
 				}),
 				q(81959, {	-- Collecting a Concotion
