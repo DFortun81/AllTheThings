@@ -716,7 +716,7 @@ app.CreateMap = app.CreateClass("Map", "mapID", {
 		local position = C_Map_GetPlayerMapPosition(mapID, "player")
 		if position then
 			local x,y = position:GetXY()
-			return { math_floor(x * 1000) / 10, math_floor(y * 1000) / 10, mapID };
+			return { app.round(x * 100, 1), app.round(y * 100, 1), mapID };
 		end
 	end,
 	["isCurrentMap"] = function(t)
