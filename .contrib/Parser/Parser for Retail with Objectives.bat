@@ -1,1 +1,1 @@
-"Parser.exe" baseconfig=parser.config config=parser.retail.objectives.config
+"Parser.exe" baseconfig=.config/retail/retail.config config=.config/retail/objectives.config

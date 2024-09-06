@@ -51,6 +51,7 @@ locales\ko.lua
 locales\pt.lua
 locales\ru.lua
 locales\cn.lua
+locales\tw.lua
 
 # Search Cache
 src\Cache.lua

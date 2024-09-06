@@ -1,1 +1,1 @@
-"Parser.exe" config=parser.classic.cata.config
+"Parser.exe" config=".config/classic/04 - Cataclysm.config"

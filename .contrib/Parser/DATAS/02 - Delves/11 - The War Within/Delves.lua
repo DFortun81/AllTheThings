@@ -721,6 +721,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(222971),	-- Bouncer (PET!)
 			}),
 			filter(MISC, {
+				i(217715),	-- Key Scroll
 				i(217895),	-- Pheromone Bottle
 				i(217897),	-- Volatile Pheromone
 			}),
@@ -873,6 +874,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(211031),	-- Secret-Dredger's Sabatons
 			}),
 			filter(TRINKET_F, {
+				i(215170),	-- Abyssal Trap
 				i(215174),	-- Concoction: Kiss of Death
 				i(225653),	-- Siphoning Lightbrand
 				i(215178),	-- Shadow-Binding Ritual Knife

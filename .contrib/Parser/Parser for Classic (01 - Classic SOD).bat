@@ -1,1 +1,1 @@
-"Parser.exe" config=parser.classic.sod.config
+"Parser.exe" config=".config/classic/01 - Classic SOD.config"

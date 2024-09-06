@@ -2930,7 +2930,6 @@ root(ROOTS.Unsorted, {
 				i(212151),	-- 11.0 End Game Template <Descriptor> Shawl
 				i(212152),	-- 11.0 End Game Template <Descriptor> Choker
 				i(213099),	-- Test Warbound until equipped (DNT)
-				i(215170),	-- Abyssal Trap
 				i(215171),	-- Fungal Friend Flute
 
 				i(215173),	-- Serum of Unconstrained Senses
@@ -3136,7 +3135,6 @@ root(ROOTS.Unsorted, {
 				i(217403),	-- Olden Weapon Charm
 				i(217404),	-- Time-Worn Armor Charm
 				i(217405),	-- Time-Worn Weapon Charm
-				i(217715),	-- Key Scroll
 				i(218308),	-- Winter Veil Cracker
 				i(218309),	-- Gently Shaken Gift
 				i(218311),	-- Winter Veil Gift
@@ -3423,7 +3421,6 @@ root(ROOTS.Unsorted, {
 				i(225214),	-- List of Activities
 			}),
 			cl(MAGE, {
-				i(227710),	-- Tome of Polymorph: Mosswool
 				i(228225),	-- do not use
 			}),
 			explorationHeader({

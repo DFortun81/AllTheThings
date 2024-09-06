@@ -11,6 +11,7 @@ local GetQuestID
 
 -- Modules
 local DelayedCallback = app.CallbackHandlers.DelayedCallback
+local round = app.round
 
 local api = {};
 app.Modules.Contributor = api;
@@ -21,7 +22,6 @@ local Reports = setmetatable({}, { __index = function(t,key)
 		local typeIDReport = {
 			"### "..t.__type..":"..(key or UNKNOWN),
 			"```elixir",	-- discord fancy box start
-			"L:"..app.Level.." R:"..app.RaceID.." ("..app.Race..") C:"..app.ClassIndex.." ("..app.Class..")",
 		};
 		t[key] = typeIDReport
 		return typeIDReport
@@ -39,8 +39,8 @@ end
 local function GetReportPlayerLocation()
 	local mapID, px, py = app.GetPlayerPosition()
 	-- floor coords to nearest tenth
-	if px then px = math.floor(px * 10) / 10 end
-	if py then py = math.floor(py * 10) / 10 end
+	if px then px = round(px, 1) end
+	if py then py = round(py, 1) end
 	return tostring(px or UNKNOWN)..", "..tostring(py or UNKNOWN)..", "..tostring(mapID or UNKNOWN).." ("..(app.GetMapName(mapID) or "??")..")"
 end
 
@@ -50,9 +50,11 @@ local function DoReport(reporttype, id)
 
 	local reportData = Reports[reporttype][id]
 	-- common report data
+	reportData[#reportData + 1] = "----User Info---"
 	reportData[#reportData + 1] = "PlayerLocation: "..GetReportPlayerLocation()
-	reportData[#reportData + 1] = "ver: "..app.Version;
-	reportData[#reportData + 1] = "build: "..app.GameBuildVersion;
+	reportData[#reportData + 1] = "L:"..app.Level.." R:"..app.RaceID.." ("..app.Race..") C:"..app.ClassIndex.." ("..app.Class..")"
+	reportData[#reportData + 1] = "ver: "..app.Version
+	reportData[#reportData + 1] = "build: "..app.GameBuildVersion
 	reportData[#reportData + 1] = "```";	-- discord fancy box end
 
 	if app:SetupReportDialog(dialogID, "Contributor Report: " .. dialogID, reportData) then
@@ -75,6 +77,10 @@ local function AddReportData(reporttype, id, data)
 	DelayedCallback(DoReport, 0.25, reporttype, id)
 end
 
+api.DoReport = function(id, text)
+	AddReportData("test", id, text)
+end
+
 -- Add a check when interacting with a Quest Giver NPC to verify coordinates of the related Quest
 local function OnQUEST_DETAIL(...)
 	-- local questStartItemID = ...;
@@ -84,10 +90,7 @@ local function OnQUEST_DETAIL(...)
 	local questRef = app.SearchForObject("questID", questID, "field")
 	-- app.PrintDebug("Contributor.OnQUEST_DETAIL.ref",questRef and questRef.hash)
 	if not questRef then
-		AddReportData("quest",questID,{
-			questID = questID,
-			Info = "This quest is missing entirely in ATT"
-		})
+		-- this is reported from Quest class
 		return
 	end
 
@@ -107,24 +110,25 @@ local function OnQUEST_DETAIL(...)
 		if sameMap then
 			-- quest has an accurate coord on accurate map
 			if closest > 1 then
-				-- floor to the tenth
-				closest = math.floor(closest * 10) / 10
+				-- round to the tenth
+				closest = round(closest, 1)
 				AddReportData("quest",questID,{
 					questID = questID,
-					Coords = "Closest Coordinates are off by: "..tostring(closest).." on mapID: "..mapID,
+					WrongCoords = "Closest Coordinates are off by: "..tostring(closest).." on mapID: "..mapID,
 				})
 			end
 		else
 			AddReportData("quest",questID,{
 				questID = questID,
-				MapID = "No Coordinates for this quest on current Map!",
+				MissingMap = "No Coordinates for this quest on current Map!",
 			})
 		end
 	else
+		-- player position in some instances reports as 50,50
 		if px ~= 50 or py ~= 50 then
 			AddReportData("quest",questID,{
 				questID = questID,
-				MapID = "No Coordinates for this quest!",
+				MissingCoords = "No Coordinates for this quest!",
 			})
 		end
 	end

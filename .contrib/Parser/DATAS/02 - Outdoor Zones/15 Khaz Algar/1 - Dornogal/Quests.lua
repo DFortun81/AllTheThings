@@ -10,6 +10,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 46.8, 33.0, DORNOGAL },
 				["isBreadcrumb"] = true,	-- but need to confirm
 			}),
+			q(84438, {	-- Easy Win
+				["provider"] = { "n", 229128 },	-- Valeera Sanguinar
+				["coord"] = { 61.0, 5.4, DORNOGAL },
+				["classes"] = { MAGE },
+				["g"] = {
+					i(227710),	-- Tome of Polymorph: Mosswool (CI!)
+				},
+			}),
 			q(83275, {	-- Gear Enchanting
 				["provider"] = { "n", 226287 },	-- Ellerdin
 				["coord"] = { 51.8, 48.7, DORNOGAL },

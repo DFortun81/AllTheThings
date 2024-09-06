@@ -498,7 +498,7 @@ iq(210728, 78521, DRUID);	-- Moon-Blessed Claw
 iq(210727, 78518, DRUID);	-- Pollenfused Bristlebruin Fur Sample
 iq(210753, 78516, DRUID);	-- Scale of the Prismatic Whiskerfish
 iq(211314, 78842, HUNTER);	-- Cinder of Companionship
-is(0, 424153); 				-- Path of Ancient Horrors 
+is(0, 424153); 				-- Path of Ancient Horrors
 is(0, 424167); 				-- Path of Heart's Bane
 is(0, 424187); 				-- Path of the Golden Tomb
 is(0, 424163); 				-- Path of the Nightmare Lord
@@ -611,6 +611,7 @@ iq(226520, 84006);					-- Queen's Pheromone
 iq(224038, 82631);					-- Smithing After Saronite
 iq(228943, 84689);					-- Spymaster's Severed Thread
 iq(224024, 82633);					-- Theories of Bodily Transmutation, Chapter 8
+is(227710, 460392, MAGE);			-- Tome of Polymorph: Mosswool
 iq(224056, 82626);					-- Uses for Leftover Husks (After You Take Them Apart)
 iq(224007, 82596);					-- Uses for Leftover Husks (How to Take Them Apart)
 iq(224656, 83066);					-- Void-Lit Herbalism Notes
