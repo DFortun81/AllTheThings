@@ -339,6 +339,67 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 			})),
+			n(TREASURES, sharedData({
+				["isDaily"] = true,
+				["sourceQuest"] = 80545,	-- The General Weekly pickup
+				["cost"] = {{"i",228949,1}},	-- Rumor Map
+			},{
+				o(437060, {	-- Aspirant's Tribute
+					["provider"] = { "o", 437058 },	-- Forgotten Memorial
+					["coord"] = { 69.2, 81.6, AZJ_KAHET },
+					["questID"] = 80688,
+				}),
+				o(455435, {	-- Aspirant's Tribute
+					["provider"] = { "o", 437191 },	-- Forgotten Memorial
+					["coord"] = { 60.1, 82.5, AZJ_KAHET },
+					["questID"] = 81467,
+				}),
+				o(455436, {	-- Aspirant's Tribute
+					["provider"] = { "o", 437389 },	-- Forgotten Memorial
+					["coord"] = { 65.2, 49.0, AZJ_KAHET },
+					-- ["questID"] = xx,	-- TODO
+				}),
+				o(455437, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451595 },	-- Forgotten Memorial
+					["coord"] = { 33.7, 42.1, AZJ_KAHET },
+					-- ["questID"] = xx,	-- TODO
+				}),
+				o(455439, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451596 },	-- Forgotten Memorial
+					["coord"] = { 39.3, 41.6, AZJ_KAHET },
+					["questID"] = 82874,
+				}),
+				o(455440, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451597 },	-- Forgotten Memorial
+					["coord"] = { 63.2, 11.3, AZJ_KAHET },
+					["questID"] = 82875,
+				}),
+				o(455442, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451599 },	-- Forgotten Memorial
+					["coord"] = { 76.2, 65.7, AZJ_KAHET },
+					["questID"] = 82877,
+				}),
+				o(455443, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451600 },	-- Forgotten Memorial
+					["coord"] = { 75.7, 86.9, AZJ_KAHET },
+					-- ["questID"] = xx,	-- TODO
+				}),
+				o(455444, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451601 },	-- Forgotten Memorial
+					["coord"] = { 48.5, 59.5, AZJ_KAHET },
+					["questID"] = 82879,
+				}),
+				o(455445, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451602 },	-- Forgotten Memorial
+					["coord"] = { 42.7, 34.6, AZJ_KAHET },
+					["questID"] = 81572,
+				}),
+				o(455446, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451603 },	-- Forgotten Memorial
+					["coord"] = { 7.5, 25.7, NERUBAR },
+					["questID"] = 82881,
+				}),
+			})),
 			n(VENDORS, {
 				n(228184, {	-- Yamas the Provider <Pact Information & Supplies>
 					["coord"] = { 55.4, 41.8, AZJ_KAHET },

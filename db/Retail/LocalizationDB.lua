@@ -6849,6 +6849,7 @@ _.ObjectNames = {
 	[465241] = "Awakened Cache",
 	[465242] = "Awakened Cache",
 	[465243] = "Awakened Cache",
+	[487847] = "DELVER'S CALL: Nightfall Sanctum",
 	[9000000] = "Wind Sculpted Stone",
 	[9000001] = "Ancient Incense Brazier",
 	[9000002] = "Ancient Incense Brazier",
@@ -12062,6 +12063,7 @@ _.ObjectModels = {
 	[465242] = 4323481,
 	[465243] = 4323481,
 	[487847] = 5386357,
+	[487855] = 5007022,
 }
 
 -- Supported Locales
