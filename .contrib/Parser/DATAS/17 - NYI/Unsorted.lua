@@ -4,6 +4,2330 @@
 -- Everything in this file hasn't been sorted yet.
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.TWW, {
+		expansion(EXPANSION.TWW, 0.5, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+			i(2361),	-- Battleworn Bludgeon
+			i(210940),	-- zzOld Do Not Use (DNT)
+			i(210941),	-- zzOld Do Not Use (DNT)
+			i(210942),	-- zzOld Do Not Use (DNT)
+			i(210943),	-- zzOld Do Not Use (DNT)
+			i(211087),	-- Hateforged Blazecycle
+			i(211428),	-- Earthen Belongings
+			i(212677),	-- zzOld Do Not Use (DNT)
+			i(212678),	-- zzOld Do Not Use (DNT)
+			i(212679),	-- zzOld Do Not Use (DNT)
+			i(213106),	-- Gladiator's Battered Greatsword
+			i(213778),	-- Forged Jeweler's Setting
+			i(217163),	-- Well-Worn Doll
+			i(217847),	-- zzOld Do Not Use (DNT)
+			i(217848),	-- zzOld Do Not Use (DNT)
+			i(217849),	-- zzOld Do Not Use (DNT)
+			i(217850),	-- zzOld Do Not Use (DNT)
+			i(217851),	-- zzOld Do Not Use (DNT)
+			i(217852),	-- zzOld Do Not Use (DNT)
+			i(217854),	-- zzOld Do Not Use (DNT)
+			i(217855),	-- zzOld Do Not Use (DNT)
+			i(217856),	-- zzOld Do Not Use (DNT)
+			i(217857),	-- zzOld Do Not Use (DNT)
+			i(217858),	-- zzOld Do Not Use (DNT)
+			i(217859),	-- zzOld Do Not Use (DNT)
+			i(217860),	-- zzOld Do Not Use (DNT)
+			i(217861),	-- zzOld Do Not Use (DNT)
+			i(217862),	-- zzOld Do Not Use (DNT)
+			i(217863),	-- zzOld Do Not Use (DNT)
+			i(217864),	-- zzOld Do Not Use (DNT)
+			i(217865),	-- zzOld Do Not Use (DNT)
+			i(217866),	-- zzOld Do Not Use (DNT)
+			i(217867),	-- zzOld Do Not Use (DNT)
+			i(217868),	-- zzOld Do Not Use (DNT)
+			i(217869),	-- zzOld Do Not Use (DNT)
+			i(217870),	-- zzOld Do Not Use (DNT)
+			i(217871),	-- zzOld Do Not Use (DNT)
+			i(217873),	-- zzOld Do Not Use (DNT)
+			i(217874),	-- zzOld Do Not Use (DNT)
+			i(217875),	-- zzOld Do Not Use (DNT)
+			i(217876),	-- zzOld Do Not Use (DNT)
+			i(217877),	-- zzOld Do Not Use (DNT)
+			i(217878),	-- zzOld Do Not Use (DNT)
+			i(217879),	-- zzOld Do Not Use (DNT)
+			i(217880),	-- zzOld Do Not Use (DNT)
+			i(217881),	-- zzOld Do Not Use (DNT)
+			i(217882),	-- zzOld Do Not Use (DNT)
+			i(217883),	-- zzOld Do Not Use (DNT)
+			i(217884),	-- zzOld Do Not Use (DNT)
+			i(217885),	-- zzOld Do Not Use (DNT)
+			i(217886),	-- zzOld Do Not Use (DNT)
+			i(217887),	-- zzOld Do Not Use (DNT)
+			i(217888),	-- zzOld Do Not Use (DNT)
+			i(217890),	-- zzOld Do Not Use (DNT)
+			i(217909),	-- zzOld Do Not Use (DNT)
+			i(217910),	-- zzOld Do Not Use (DNT)
+			i(217911),	-- zzOld Do Not Use (DNT)
+			i(217912),	-- zzOld Do Not Use (DNT)
+			i(217913),	-- zzOld Do Not Use (DNT)
+			i(217914),	-- zzOld Do Not Use (DNT)
+			i(217915),	-- zzOld Do Not Use (DNT)
+			i(217916),	-- zzOld Do Not Use (DNT)
+			i(217917),	-- zzOld Do Not Use (DNT)
+			i(217918),	-- zzOld Do Not Use (DNT)
+			i(217919),	-- zzOld Do Not Use (DNT)
+			i(217920),	-- zzOld Do Not Use (DNT)
+			i(217921),	-- zzOld Do Not Use (DNT)
+			i(217922),	-- zzOld Do Not Use (DNT)
+			i(217923),	-- zzOld Do Not Use (DNT)
+			i(217924),	-- zzOld Do Not Use (DNT)
+			i(217931),	-- zzOld Do Not Use (DNT)
+			i(217932),	-- zzOld Do Not Use (DNT)
+			i(217933),	-- zzOld Do Not Use (DNT)
+			i(217934),	-- zzOld Do Not Use (DNT)
+			i(217935),	-- zzOld Do Not Use (DNT)
+			i(217936),	-- zzOld Do Not Use (DNT)
+			i(217937),	-- zzOld Do Not Use (DNT)
+			i(217938),	-- zzOld Do Not Use (DNT)
+			i(217939),	-- zzOld Do Not Use (DNT)
+			i(217940),	-- zzOld Do Not Use (DNT)
+			i(217941),	-- zzOld Do Not Use (DNT)
+			i(217942),	-- zzOld Do Not Use (DNT)
+			i(217943),	-- zzOld Do Not Use (DNT)
+			i(217944),	-- zzOld Do Not Use (DNT)
+			i(217945),	-- zzOld Do Not Use (DNT)
+			i(217946),	-- zzOld Do Not Use (DNT)
+			i(217947),	-- zzOld Do Not Use (DNT)
+			i(217948),	-- zzOld Do Not Use (DNT)
+			i(217949),	-- zzOld Do Not Use (DNT)
+			i(217950),	-- zzOld Do Not Use (DNT)
+			i(217951),	-- zzOld Do Not Use (DNT)
+			i(217952),	-- zzOld Do Not Use (DNT)
+			i(217953),	-- zzOld Do Not Use (DNT)
+			i(217954),	-- zzOld Do Not Use (DNT)
+			i(217955),	-- zzOld Do Not Use (DNT)
+			i(219528),	-- zzOld Do Not Use (DNT)
+			i(219529),	-- zzOld Do Not Use (DNT)
+			i(219530),	-- zzOld Do Not Use (DNT)
+			i(219531),	-- zzOld Do Not Use (DNT)
+			i(219532),	-- zzOld Do Not Use (DNT)
+			i(219533),	-- zzOld Do Not Use (DNT)
+			i(219534),	-- zzOld Do Not Use (DNT)
+			i(219535),	-- zzOld Do Not Use (DNT)
+			i(219536),	-- zzOld Do Not Use (DNT)
+			i(219537),	-- zzOld Do Not Use (DNT)
+			i(219538),	-- zzOld Do Not Use (DNT)
+			i(219539),	-- zzOld Do Not Use (DNT)
+			i(219540),	-- zzOld Do Not Use (DNT)
+			i(219541),	-- zzOld Do Not Use (DNT)
+			i(219542),	-- zzOld Do Not Use (DNT)
+			i(219543),	-- zzOld Do Not Use (DNT)
+			i(219544),	-- zzOld Do Not Use (DNT)
+			i(219545),	-- zzOld Do Not Use (DNT)
+			i(219546),	-- zzOld Do Not Use (DNT)
+			i(219547),	-- zzOld Do Not Use (DNT)
+			i(219548),	-- zzOld Do Not Use (DNT)
+			i(219549),	-- zzOld Do Not Use (DNT)
+			i(219550),	-- zzOld Do Not Use (DNT)
+			i(219551),	-- zzOld Do Not Use (DNT)
+			i(219552),	-- zzOld Do Not Use (DNT)
+			i(219553),	-- zzOld Do Not Use (DNT)
+			i(219554),	-- zzOld Do Not Use (DNT)
+			i(219555),	-- zzOld Do Not Use (DNT)
+			i(219556),	-- zzOld Do Not Use (DNT)
+			i(219557),	-- zzOld Do Not Use (DNT)
+			i(219558),	-- zzOld Do Not Use (DNT)
+			i(219559),	-- zzOld Do Not Use (DNT)
+			i(219560),	-- zzOld Do Not Use (DNT)
+			i(219561),	-- zzOld Do Not Use (DNT)
+			i(219562),	-- zzOld Do Not Use (DNT)
+			i(219563),	-- zzOld Do Not Use (DNT)
+			i(219564),	-- zzOld Do Not Use (DNT)
+			i(219565),	-- zzOld Do Not Use (DNT)
+			i(219566),	-- zzOld Do Not Use (DNT)
+			i(219599),	-- zzOld Do Not Use (DNT)
+			i(219600),	-- zzOld Do Not Use (DNT)
+			i(219601),	-- zzOld Do Not Use (DNT)
+			i(219602),	-- zzOld Do Not Use (DNT)
+			i(219603),	-- zzOld Do Not Use (DNT)
+			i(219604),	-- zzOld Do Not Use (DNT)
+			i(219605),	-- zzOld Do Not Use (DNT)
+			i(219606),	-- zzOld Do Not Use (DNT)
+			i(219607),	-- zzOld Do Not Use (DNT)
+			i(219608),	-- zzOld Do Not Use (DNT)
+			i(219609),	-- zzOld Do Not Use (DNT)
+			i(219610),	-- zzOld Do Not Use (DNT)
+			i(219611),	-- zzOld Do Not Use (DNT)
+			i(219612),	-- zzOld Do Not Use (DNT)
+			i(219613),	-- zzOld Do Not Use (DNT)
+			i(219614),	-- zzOld Do Not Use (DNT)
+			i(219615),	-- zzOld Do Not Use (DNT)
+			i(219616),	-- zzOld Do Not Use (DNT)
+			i(219617),	-- zzOld Do Not Use (DNT)
+			i(219618),	-- zzOld Do Not Use (DNT)
+			i(219621),	-- zzOld Do Not Use (DNT)
+			i(219622),	-- zzOld Do Not Use (DNT)
+			i(219623),	-- zzOld Do Not Use (DNT)
+			i(219624),	-- zzOld Do Not Use (DNT)
+			i(219625),	-- zzOld Do Not Use (DNT)
+			i(219626),	-- zzOld Do Not Use (DNT)
+			i(219627),	-- zzOld Do Not Use (DNT)
+			i(219628),	-- zzOld Do Not Use (DNT)
+			i(219629),	-- zzOld Do Not Use (DNT)
+			i(219630),	-- zzOld Do Not Use (DNT)
+			i(219631),	-- zzOld Do Not Use (DNT)
+			i(219632),	-- zzOld Do Not Use (DNT)
+			i(219633),	-- zzOld Do Not Use (DNT)
+			i(219634),	-- zzOld Do Not Use (DNT)
+			i(219635),	-- zzOld Do Not Use (DNT)
+			i(219636),	-- zzOld Do Not Use (DNT)
+			i(219637),	-- zzOld Do Not Use (DNT)
+			i(219638),	-- zzOld Do Not Use (DNT)
+			i(219639),	-- zzOld Do Not Use (DNT)
+			i(219640),	-- zzOld Do Not Use (DNT)
+			i(219641),	-- zzOld Do Not Use (DNT)
+			i(219642),	-- zzOld Do Not Use (DNT)
+			i(219643),	-- zzOld Do Not Use (DNT)
+			i(219644),	-- zzOld Do Not Use (DNT)
+			i(219645),	-- zzOld Do Not Use (DNT)
+			i(219646),	-- zzOld Do Not Use (DNT)
+			i(219647),	-- zzOld Do Not Use (DNT)
+			i(219648),	-- zzOld Do Not Use (DNT)
+			i(219649),	-- zzOld Do Not Use (DNT)
+			i(219650),	-- zzOld Do Not Use (DNT)
+			i(219651),	-- zzOld Do Not Use (DNT)
+			i(219652),	-- zzOld Do Not Use (DNT)
+			i(219653),	-- zzOld Do Not Use (DNT)
+			i(219654),	-- zzOld Do Not Use (DNT)
+			i(219655),	-- zzOld Do Not Use (DNT)
+			i(219656),	-- zzOld Do Not Use (DNT)
+			i(219657),	-- zzOld Do Not Use (DNT)
+			i(219658),	-- zzOld Do Not Use (DNT)
+			i(219659),	-- zzOld Do Not Use (DNT)
+			i(219660),	-- zzOld Do Not Use (DNT)
+			i(219661),	-- zzOld Do Not Use (DNT)
+			i(219662),	-- zzOld Do Not Use (DNT)
+			i(219663),	-- zzOld Do Not Use (DNT)
+			i(219664),	-- zzOld Do Not Use (DNT)
+			i(219665),	-- zzOld Do Not Use (DNT)
+			i(219666),	-- zzOld Do Not Use (DNT)
+			i(219667),	-- zzOld Do Not Use (DNT)
+			i(219668),	-- zzOld Do Not Use (DNT)
+			i(219669),	-- zzOld Do Not Use (DNT)
+			i(219670),	-- zzOld Do Not Use (DNT)
+			i(219671),	-- zzOld Do Not Use (DNT)
+			i(219673),	-- zzOld Do Not Use (DNT)
+			i(219674),	-- zzOld Do Not Use (DNT)
+			i(219675),	-- zzOld Do Not Use (DNT)
+			i(219676),	-- zzOld Do Not Use (DNT)
+			i(219677),	-- zzOld Do Not Use (DNT)
+			i(219678),	-- zzOld Do Not Use (DNT)
+			i(219679),	-- zzOld Do Not Use (DNT)
+			i(219680),	-- zzOld Do Not Use (DNT)
+			i(219681),	-- zzOld Do Not Use (DNT)
+			i(219682),	-- zzOld Do Not Use (DNT)
+			i(219683),	-- zzOld Do Not Use (DNT)
+			i(219684),	-- zzOld Do Not Use (DNT)
+			i(219685),	-- zzOld Do Not Use (DNT)
+			i(219686),	-- zzOld Do Not Use (DNT)
+			i(219687),	-- zzOld Do Not Use (DNT)
+			i(219688),	-- zzOld Do Not Use (DNT)
+			i(219689),	-- zzOld Do Not Use (DNT)
+			i(219690),	-- zzOld Do Not Use (DNT)
+			i(219691),	-- zzOld Do Not Use (DNT)
+			i(219692),	-- zzOld Do Not Use (DNT)
+			i(219693),	-- zzOld Do Not Use (DNT)
+			i(219694),	-- zzOld Do Not Use (DNT)
+			i(219695),	-- zzOld Do Not Use (DNT)
+			i(219696),	-- zzOld Do Not Use (DNT)
+			i(219697),	-- zzOld Do Not Use (DNT)
+			i(219698),	-- zzOld Do Not Use (DNT)
+			i(219699),	-- zzOld Do Not Use (DNT)
+			i(219700),	-- zzOld Do Not Use (DNT)
+			i(219701),	-- zzOld Do Not Use (DNT)
+			i(219702),	-- zzOld Do Not Use (DNT)
+			i(219703),	-- zzOld Do Not Use (DNT)
+			i(219704),	-- zzOld Do Not Use (DNT)
+			i(219705),	-- zzOld Do Not Use (DNT)
+			i(219706),	-- zzOld Do Not Use (DNT)
+			i(219707),	-- zzOld Do Not Use (DNT)
+			i(219708),	-- zzOld Do Not Use (DNT)
+			i(219709),	-- zzOld Do Not Use (DNT)
+			i(219710),	-- zzOld Do Not Use (DNT)
+			i(219711),	-- zzOld Do Not Use (DNT)
+			i(219712),	-- zzOld Do Not Use (DNT)
+			i(219713),	-- zzOld Do Not Use (DNT)
+			i(219714),	-- zzOld Do Not Use (DNT)
+			i(219715),	-- zzOld Do Not Use (DNT)
+			i(219716),	-- zzOld Do Not Use (DNT)
+			i(219717),	-- zzOld Do Not Use (DNT)
+			i(219718),	-- zzOld Do Not Use (DNT)
+			i(219719),	-- zzOld Do Not Use (DNT)
+			i(219720),	-- zzOld Do Not Use (DNT)
+			i(219721),	-- zzOld Do Not Use (DNT)
+			i(219722),	-- zzOld Do Not Use (DNT)
+			i(219723),	-- zzOld Do Not Use (DNT)
+			i(219724),	-- zzOld Do Not Use (DNT)
+			i(219725),	-- zzOld Do Not Use (DNT)
+			i(219726),	-- zzOld Do Not Use (DNT)
+			i(219727),	-- zzOld Do Not Use (DNT)
+			i(219728),	-- zzOld Do Not Use (DNT)
+			i(219729),	-- zzOld Do Not Use (DNT)
+			i(219730),	-- zzOld Do Not Use (DNT)
+			i(219731),	-- zzOld Do Not Use (DNT)
+			i(219732),	-- zzOld Do Not Use (DNT)
+			i(219733),	-- zzOld Do Not Use (DNT)
+			i(219734),	-- zzOld Do Not Use (DNT)
+			i(219735),	-- zzOld Do Not Use (DNT)
+			i(219736),	-- zzOld Do Not Use (DNT)
+			i(219737),	-- zzOld Do Not Use (DNT)
+			i(219738),	-- zzOld Do Not Use (DNT)
+			i(219739),	-- zzOld Do Not Use (DNT)
+			i(219740),	-- zzOld Do Not Use (DNT)
+			i(219741),	-- zzOld Do Not Use (DNT)
+			i(219742),	-- zzOld Do Not Use (DNT)
+			i(219743),	-- zzOld Do Not Use (DNT)
+			i(219744),	-- zzOld Do Not Use (DNT)
+			i(219745),	-- zzOld Do Not Use (DNT)
+			i(219819),	-- zzOld Do Not Use (DNT)
+			i(219820),	-- zzOld Do Not Use (DNT)
+			i(219821),	-- zzOld Do Not Use (DNT)
+			i(219822),	-- zzOld Do Not Use (DNT)
+			i(219823),	-- zzOld Do Not Use (DNT)
+			i(219824),	-- zzOld Do Not Use (DNT)
+			i(219825),	-- zzOld Do Not Use (DNT)
+			i(219826),	-- zzOld Do Not Use (DNT)
+			i(219827),	-- zzOld Do Not Use (DNT)
+			i(219828),	-- zzOld Do Not Use (DNT)
+			i(219829),	-- zzOld Do Not Use (DNT)
+			i(219830),	-- zzOld Do Not Use (DNT)
+			i(219831),	-- zzOld Do Not Use (DNT)
+			i(219832),	-- zzOld Do Not Use (DNT)
+			i(219833),	-- zzOld Do Not Use (DNT)
+			i(219834),	-- zzOld Do Not Use (DNT)
+			i(219835),	-- zzOld Do Not Use (DNT)
+			i(219836),	-- zzOld Do Not Use (DNT)
+			i(219837),	-- zzOld Do Not Use (DNT)
+			i(219838),	-- zzOld Do Not Use (DNT)
+			i(219839),	-- zzOld Do Not Use (DNT)
+			i(219840),	-- zzOld Do Not Use (DNT)
+			i(219841),	-- zzOld Do Not Use (DNT)
+			i(219842),	-- zzOld Do Not Use (DNT)
+			i(219843),	-- zzOld Do Not Use (DNT)
+			i(219844),	-- zzOld Do Not Use (DNT)
+			i(219845),	-- zzOld Do Not Use (DNT)
+			i(219846),	-- zzOld Do Not Use (DNT)
+			i(219847),	-- zzOld Do Not Use (DNT)
+			i(219848),	-- zzOld Do Not Use (DNT)
+			i(219849),	-- zzOld Do Not Use (DNT)
+			i(219850),	-- zzOld Do Not Use (DNT)
+			i(219851),	-- zzOld Do Not Use (DNT)
+			i(219852),	-- zzOld Do Not Use (DNT)
+			i(219853),	-- zzOld Do Not Use (DNT)
+			i(219854),	-- zzOld Do Not Use (DNT)
+			i(219855),	-- zzOld Do Not Use (DNT)
+			i(219856),	-- zzOld Do Not Use (DNT)
+			i(219857),	-- zzOld Do Not Use (DNT)
+			i(219858),	-- zzOld Do Not Use (DNT)
+			i(219859),	-- zzOld Do Not Use (DNT)
+			i(219860),	-- zzOld Do Not Use (DNT)
+			i(220171),	-- zzOld Do Not Use (DNT)
+			i(220174),	-- zzOld Do Not Use (DNT)
+			i(220175),	-- zzOld Do Not Use (DNT)
+			i(220176),	-- zzOld Do Not Use (DNT)
+			i(220177),	-- zzOld Do Not Use (DNT)
+			i(220178),	-- zzOld Do Not Use (DNT)
+			i(220179),	-- zzOld Do Not Use (DNT)
+			i(220180),	-- zzOld Do Not Use (DNT)
+			i(220181),	-- zzOld Do Not Use (DNT)
+			i(220182),	-- zzOld Do Not Use (DNT)
+			i(220183),	-- zzOld Do Not Use (DNT)
+			i(220184),	-- zzOld Do Not Use (DNT)
+			i(220185),	-- zzOld Do Not Use (DNT)
+			i(220186),	-- zzOld Do Not Use (DNT)
+			i(220187),	-- zzOld Do Not Use (DNT)
+			i(220188),	-- zzOld Do Not Use (DNT)
+			i(220189),	-- zzOld Do Not Use (DNT)
+			i(220190),	-- zzOld Do Not Use (DNT)
+			i(220191),	-- zzOld Do Not Use (DNT)
+			i(220192),	-- zzOld Do Not Use (DNT)
+			i(220193),	-- zzOld Do Not Use (DNT)
+			i(220194),	-- zzOld Do Not Use (DNT)
+			i(220195),	-- zzOld Do Not Use (DNT)
+			i(220196),	-- zzOld Do Not Use (DNT)
+			i(220197),	-- zzOld Do Not Use (DNT)
+			i(220306),	-- zzOld Do Not Use (DNT)
+			i(220339),	-- zzOld Do Not Use (DNT)
+			i(220340),	-- zzOld Do Not Use (DNT)
+			i(220341),	-- zzOld Do Not Use (DNT)
+			i(220342),	-- zzOld Do Not Use (DNT)
+			i(220382),	-- zzOld Do Not Use (DNT)
+			i(220383),	-- zzOld Do Not Use (DNT)
+			i(220384),	-- zzOld Do Not Use (DNT)
+			i(220385),	-- zzOld Do Not Use (DNT)
+			i(220386),	-- zzOld Do Not Use (DNT)
+			i(220387),	-- zzOld Do Not Use (DNT)
+			i(220388),	-- zzOld Do Not Use (DNT)
+			i(220389),	-- zzOld Do Not Use (DNT)
+			i(220390),	-- zzOld Do Not Use (DNT)
+			i(220391),	-- zzOld Do Not Use (DNT)
+			i(220392),	-- zzOld Do Not Use (DNT)
+			i(220393),	-- zzOld Do Not Use (DNT)
+			i(220394),	-- zzOld Do Not Use (DNT)
+			i(220395),	-- zzOld Do Not Use (DNT)
+			i(220396),	-- zzOld Do Not Use (DNT)
+			i(220397),	-- zzOld Do Not Use (DNT)
+			i(220398),	-- zzOld Do Not Use (DNT)
+			i(220399),	-- zzOld Do Not Use (DNT)
+			i(220400),	-- zzOld Do Not Use (DNT)
+			i(220401),	-- zzOld Do Not Use (DNT)
+			i(220402),	-- zzOld Do Not Use (DNT)
+			i(220403),	-- zzOld Do Not Use (DNT)
+			i(220404),	-- zzOld Do Not Use (DNT)
+			i(220405),	-- zzOld Do Not Use (DNT)
+			i(220406),	-- zzOld Do Not Use (DNT)
+			i(220407),	-- zzOld Do Not Use (DNT)
+			i(220408),	-- zzOld Do Not Use (DNT)
+			i(220409),	-- zzOld Do Not Use (DNT)
+			i(220410),	-- zzOld Do Not Use (DNT)
+			i(220411),	-- zzOld Do Not Use (DNT)
+			i(220413),	-- zzOld Do Not Use (DNT)
+			i(220414),	-- zzOld Do Not Use (DNT)
+			i(220415),	-- zzOld Do Not Use (DNT)
+			i(220416),	-- zzOld Do Not Use (DNT)
+			i(220417),	-- zzOld Do Not Use (DNT)
+			i(220418),	-- zzOld Do Not Use (DNT)
+			i(220419),	-- zzOld Do Not Use (DNT)
+			i(220420),	-- zzOld Do Not Use (DNT)
+			i(220421),	-- zzOld Do Not Use (DNT)
+			i(220422),	-- zzOld Do Not Use (DNT)
+			i(220423),	-- zzOld Do Not Use (DNT)
+			i(220424),	-- zzOld Do Not Use (DNT)
+			i(220425),	-- zzOld Do Not Use (DNT)
+			i(220426),	-- zzOld Do Not Use (DNT)
+			i(220427),	-- zzOld Do Not Use (DNT)
+			i(220428),	-- zzOld Do Not Use (DNT)
+			i(220429),	-- zzOld Do Not Use (DNT)
+			i(220430),	-- zzOld Do Not Use (DNT)
+			i(220431),	-- zzOld Do Not Use (DNT)
+			i(220432),	-- zzOld Do Not Use (DNT)
+			i(220433),	-- zzOld Do Not Use (DNT)
+			i(220434),	-- zzOld Do Not Use (DNT)
+			i(220435),	-- zzOld Do Not Use (DNT)
+			i(220943),	-- zzOld Do Not Use (DNT)
+			i(220944),	-- zzOld Do Not Use (DNT)
+			i(220945),	-- zzOld Do Not Use (DNT)
+			i(220946),	-- zzOld Do Not Use (DNT)
+			i(220947),	-- zzOld Do Not Use (DNT)
+			i(220948),	-- zzOld Do Not Use (DNT)
+			i(220949),	-- zzOld Do Not Use (DNT)
+			i(220950),	-- zzOld Do Not Use (DNT)
+			i(220951),	-- zzOld Do Not Use (DNT)
+			i(220952),	-- zzOld Do Not Use (DNT)
+			i(220953),	-- zzOld Do Not Use (DNT)
+			i(220954),	-- zzOld Do Not Use (DNT)
+			i(220955),	-- zzOld Do Not Use (DNT)
+			i(220956),	-- zzOld Do Not Use (DNT)
+			i(220957),	-- zzOld Do Not Use (DNT)
+			i(220958),	-- zzOld Do Not Use (DNT)
+			i(220959),	-- zzOld Do Not Use (DNT)
+			i(220960),	-- zzOld Do Not Use (DNT)
+			i(220961),	-- zzOld Do Not Use (DNT)
+			i(220962),	-- zzOld Do Not Use (DNT)
+			i(220963),	-- zzOld Do Not Use (DNT)
+			i(220987),	-- Fire-Charm Jerkin
+			i(221221),	-- Venomous Lurker's Shoulderplates
+			i(221485),	-- Defias Gunpowder
+			i(221486),	-- Rak-Ush Threadling
+			i(221551),	-- zzOld Do Not Use (DNT)
+			i(221552),	-- zzOld Do Not Use (DNT)
+			i(221553),	-- zzOld Do Not Use (DNT)
+			i(221554),	-- zzOld Do Not Use (DNT)
+			i(221555),	-- zzOld Do Not Use (DNT)
+			i(221556),	-- zzOld Do Not Use (DNT)
+			i(221557),	-- zzOld Do Not Use (DNT)
+			i(221558),	-- zzOld Do Not Use (DNT)
+			i(221559),	-- zzOld Do Not Use (DNT)
+			i(221560),	-- zzOld Do Not Use (DNT)
+			i(221561),	-- zzOld Do Not Use (DNT)
+			i(221562),	-- zzOld Do Not Use (DNT)
+			i(221563),	-- zzOld Do Not Use (DNT)
+			i(221564),	-- zzOld Do Not Use (DNT)
+			i(221565),	-- zzOld Do Not Use (DNT)
+			i(221566),	-- zzOld Do Not Use (DNT)
+			i(221567),	-- zzOld Do Not Use (DNT)
+			i(221568),	-- zzOld Do Not Use (DNT)
+			i(221569),	-- zzOld Do Not Use (DNT)
+			i(221570),	-- zzOld Do Not Use (DNT)
+			i(221571),	-- zzOld Do Not Use (DNT)
+			i(221572),	-- zzOld Do Not Use (DNT)
+			i(221573),	-- zzOld Do Not Use (DNT)
+			i(221574),	-- zzOld Do Not Use (DNT)
+			i(221575),	-- zzOld Do Not Use (DNT)
+			i(221576),	-- zzOld Do Not Use (DNT)
+			i(221577),	-- zzOld Do Not Use (DNT)
+			i(221578),	-- zzOld Do Not Use (DNT)
+			i(221579),	-- zzOld Do Not Use (DNT)
+			i(221580),	-- zzOld Do Not Use (DNT)
+			i(221581),	-- zzOld Do Not Use (DNT)
+			i(221582),	-- zzOld Do Not Use (DNT)
+			i(221583),	-- zzOld Do Not Use (DNT)
+			i(221584),	-- zzOld Do Not Use (DNT)
+			i(221585),	-- zzOld Do Not Use (DNT)
+			i(221586),	-- zzOld Do Not Use (DNT)
+			i(221587),	-- zzOld Do Not Use (DNT)
+			i(221588),	-- zzOld Do Not Use (DNT)
+			i(221589),	-- zzOld Do Not Use (DNT)
+			i(221590),	-- zzOld Do Not Use (DNT)
+			i(221591),	-- zzOld Do Not Use (DNT)
+			i(221592),	-- zzOld Do Not Use (DNT)
+			i(221593),	-- zzOld Do Not Use (DNT)
+			i(221594),	-- zzOld Do Not Use (DNT)
+			i(221595),	-- zzOld Do Not Use (DNT)
+			i(221596),	-- zzOld Do Not Use (DNT)
+			i(221597),	-- zzOld Do Not Use (DNT)
+			i(221598),	-- zzOld Do Not Use (DNT)
+			i(221599),	-- zzOld Do Not Use (DNT)
+			i(221600),	-- zzOld Do Not Use (DNT)
+			i(221601),	-- zzOld Do Not Use (DNT)
+			i(221602),	-- zzOld Do Not Use (DNT)
+			i(221603),	-- zzOld Do Not Use (DNT)
+			i(221604),	-- zzOld Do Not Use (DNT)
+			i(221605),	-- zzOld Do Not Use (DNT)
+			i(221606),	-- zzOld Do Not Use (DNT)
+			i(221607),	-- zzOld Do Not Use (DNT)
+			i(221608),	-- zzOld Do Not Use (DNT)
+			i(221609),	-- zzOld Do Not Use (DNT)
+			i(221610),	-- zzOld Do Not Use (DNT)
+			i(221611),	-- zzOld Do Not Use (DNT)
+			i(221612),	-- zzOld Do Not Use (DNT)
+			i(221613),	-- zzOld Do Not Use (DNT)
+			i(221614),	-- zzOld Do Not Use (DNT)
+			i(221615),	-- zzOld Do Not Use (DNT)
+			i(221616),	-- zzOld Do Not Use (DNT)
+			i(221617),	-- zzOld Do Not Use (DNT)
+			i(221618),	-- zzOld Do Not Use (DNT)
+			i(221619),	-- zzOld Do Not Use (DNT)
+			i(221620),	-- zzOld Do Not Use (DNT)
+			i(221621),	-- zzOld Do Not Use (DNT)
+			i(221622),	-- zzOld Do Not Use (DNT)
+			i(221623),	-- zzOld Do Not Use (DNT)
+			i(221624),	-- zzOld Do Not Use (DNT)
+			i(221625),	-- zzOld Do Not Use (DNT)
+			i(221626),	-- zzOld Do Not Use (DNT)
+			i(221627),	-- zzOld Do Not Use (DNT)
+			i(221628),	-- zzOld Do Not Use (DNT)
+			i(221629),	-- zzOld Do Not Use (DNT)
+			i(221630),	-- zzOld Do Not Use (DNT)
+			i(221631),	-- zzOld Do Not Use (DNT)
+			i(221632),	-- zzOld Do Not Use (DNT)
+			i(221633),	-- zzOld Do Not Use (DNT)
+			i(221634),	-- zzOld Do Not Use (DNT)
+			i(221635),	-- zzOld Do Not Use (DNT)
+			i(221636),	-- zzOld Do Not Use (DNT)
+			i(221637),	-- zzOld Do Not Use (DNT)
+			i(221639),	-- zzOld Do Not Use (DNT)
+			i(221640),	-- zzOld Do Not Use (DNT)
+			i(221641),	-- zzOld Do Not Use (DNT)
+			i(221642),	-- zzOld Do Not Use (DNT)
+			i(221643),	-- zzOld Do Not Use (DNT)
+			i(221644),	-- zzOld Do Not Use (DNT)
+			i(221645),	-- zzOld Do Not Use (DNT)
+			i(221646),	-- zzOld Do Not Use (DNT)
+			i(221647),	-- zzOld Do Not Use (DNT)
+			i(221648),	-- zzOld Do Not Use (DNT)
+			i(221649),	-- zzOld Do Not Use (DNT)
+			i(221650),	-- zzOld Do Not Use (DNT)
+			i(221651),	-- zzOld Do Not Use (DNT)
+			i(221652),	-- zzOld Do Not Use (DNT)
+			i(221653),	-- zzOld Do Not Use (DNT)
+			i(221654),	-- zzOld Do Not Use (DNT)
+			i(221655),	-- zzOld Do Not Use (DNT)
+			i(221656),	-- zzOld Do Not Use (DNT)
+			i(221657),	-- zzOld Do Not Use (DNT)
+			i(221658),	-- zzOld Do Not Use (DNT)
+			i(221659),	-- zzOld Do Not Use (DNT)
+			i(221660),	-- zzOld Do Not Use (DNT)
+			i(221661),	-- zzOld Do Not Use (DNT)
+			i(221662),	-- zzOld Do Not Use (DNT)
+			i(221663),	-- zzOld Do Not Use (DNT)
+			i(221664),	-- zzOld Do Not Use (DNT)
+			i(221665),	-- zzOld Do Not Use (DNT)
+			i(221666),	-- zzOld Do Not Use (DNT)
+			i(221667),	-- zzOld Do Not Use (DNT)
+			i(221668),	-- zzOld Do Not Use (DNT)
+			i(221669),	-- zzOld Do Not Use (DNT)
+			i(221670),	-- zzOld Do Not Use (DNT)
+			i(221671),	-- zzOld Do Not Use (DNT)
+			i(221672),	-- zzOld Do Not Use (DNT)
+			i(221673),	-- zzOld Do Not Use (DNT)
+			i(221674),	-- zzOld Do Not Use (DNT)
+			i(221675),	-- zzOld Do Not Use (DNT)
+			i(221676),	-- zzOld Do Not Use (DNT)
+			i(221677),	-- zzOld Do Not Use (DNT)
+			i(221678),	-- zzOld Do Not Use (DNT)
+			i(221679),	-- zzOld Do Not Use (DNT)
+			i(221680),	-- zzOld Do Not Use (DNT)
+			i(221681),	-- zzOld Do Not Use (DNT)
+			i(221682),	-- zzOld Do Not Use (DNT)
+			i(221683),	-- zzOld Do Not Use (DNT)
+			i(221684),	-- zzOld Do Not Use (DNT)
+			i(221685),	-- zzOld Do Not Use (DNT)
+			i(221686),	-- zzOld Do Not Use (DNT)
+			i(221687),	-- zzOld Do Not Use (DNT)
+			i(221688),	-- zzOld Do Not Use (DNT)
+			i(221689),	-- zzOld Do Not Use (DNT)
+			i(221690),	-- zzOld Do Not Use (DNT)
+			i(221691),	-- zzOld Do Not Use (DNT)
+			i(221692),	-- zzOld Do Not Use (DNT)
+			i(221693),	-- zzOld Do Not Use (DNT)
+			i(221694),	-- zzOld Do Not Use (DNT)
+			i(221695),	-- zzOld Do Not Use (DNT)
+			i(221696),	-- zzOld Do Not Use (DNT)
+			i(221698),	-- zzOld Do Not Use (DNT)
+			i(221700),	-- zzOld Do Not Use (DNT)
+			i(221701),	-- zzOld Do Not Use (DNT)
+			i(221702),	-- zzOld Do Not Use (DNT)
+			i(221703),	-- zzOld Do Not Use (DNT)
+			i(221704),	-- zzOld Do Not Use (DNT)
+			i(221705),	-- zzOld Do Not Use (DNT)
+			i(221706),	-- zzOld Do Not Use (DNT)
+			i(221707),	-- zzOld Do Not Use (DNT)
+			i(221708),	-- zzOld Do Not Use (DNT)
+			i(221709),	-- zzOld Do Not Use (DNT)
+			i(221710),	-- zzOld Do Not Use (DNT)
+			i(221711),	-- zzOld Do Not Use (DNT)
+			i(221712),	-- zzOld Do Not Use (DNT)
+			i(221713),	-- zzOld Do Not Use (DNT)
+			i(221714),	-- zzOld Do Not Use (DNT)
+			i(221715),	-- zzOld Do Not Use (DNT)
+			i(221716),	-- zzOld Do Not Use (DNT)
+			i(221717),	-- zzOld Do Not Use (DNT)
+			i(221718),	-- zzOld Do Not Use (DNT)
+			i(221719),	-- zzOld Do Not Use (DNT)
+			i(221720),	-- zzOld Do Not Use (DNT)
+			i(221721),	-- zzOld Do Not Use (DNT)
+			i(221722),	-- zzOld Do Not Use (DNT)
+			i(221723),	-- zzOld Do Not Use (DNT)
+			i(221724),	-- zzOld Do Not Use (DNT)
+			i(221725),	-- zzOld Do Not Use (DNT)
+			i(221726),	-- zzOld Do Not Use (DNT)
+			i(221727),	-- zzOld Do Not Use (DNT)
+			i(221728),	-- zzOld Do Not Use (DNT)
+			i(221729),	-- zzOld Do Not Use (DNT)
+			i(221730),	-- zzOld Do Not Use (DNT)
+			i(221731),	-- zzOld Do Not Use (DNT)
+			i(221732),	-- zzOld Do Not Use (DNT)
+			i(221733),	-- zzOld Do Not Use (DNT)
+			i(221734),	-- zzOld Do Not Use (DNT)
+			i(221735),	-- zzOld Do Not Use (DNT)
+			i(221736),	-- zzOld Do Not Use (DNT)
+			i(221737),	-- zzOld Do Not Use (DNT)
+			i(221738),	-- zzOld Do Not Use (DNT)
+			i(221739),	-- zzOld Do Not Use (DNT)
+			i(221740),	-- zzOld Do Not Use (DNT)
+			i(221741),	-- zzOld Do Not Use (DNT)
+			i(221742),	-- zzOld Do Not Use (DNT)
+			i(221743),	-- zzOld Do Not Use (DNT)
+			i(221744),	-- zzOld Do Not Use (DNT)
+			i(221745),	-- zzOld Do Not Use (DNT)
+			i(221746),	-- zzOld Do Not Use (DNT)
+			i(221747),	-- zzOld Do Not Use (DNT)
+			i(221748),	-- zzOld Do Not Use (DNT)
+			i(221749),	-- zzOld Do Not Use (DNT)
+			i(221760),	-- Pillarnest Bonedrinker
+			i(221797),	-- Bismuth-Fueled Samophlange
+			i(221983),	-- zzOld Do Not Use (DNT)
+			i(221984),	-- zzOld Do Not Use (DNT)
+			i(221985),	-- zzOld Do Not Use (DNT)
+			i(221986),	-- zzOld Do Not Use (DNT)
+			i(221987),	-- zzOld Do Not Use (DNT)
+			i(221988),	-- zzOld Do Not Use (DNT)
+			i(221989),	-- zzOld Do Not Use (DNT)
+			i(221990),	-- zzOld Do Not Use (DNT)
+			i(221991),	-- zzOld Do Not Use (DNT)
+			i(221992),	-- zzOld Do Not Use (DNT)
+			i(221993),	-- zzOld Do Not Use (DNT)
+			i(221994),	-- zzOld Do Not Use (DNT)
+			i(221995),	-- zzOld Do Not Use (DNT)
+			i(221996),	-- zzOld Do Not Use (DNT)
+			i(221997),	-- zzOld Do Not Use (DNT)
+			i(221998),	-- zzOld Do Not Use (DNT)
+			i(221999),	-- zzOld Do Not Use (DNT)
+			i(222000),	-- zzOld Do Not Use (DNT)
+			i(222001),	-- zzOld Do Not Use (DNT)
+			i(222002),	-- zzOld Do Not Use (DNT)
+			i(222003),	-- zzOld Do Not Use (DNT)
+			i(222004),	-- zzOld Do Not Use (DNT)
+			i(222005),	-- zzOld Do Not Use (DNT)
+			i(222006),	-- zzOld Do Not Use (DNT)
+			i(222007),	-- zzOld Do Not Use (DNT)
+			i(222008),	-- zzOld Do Not Use (DNT)
+			i(222009),	-- zzOld Do Not Use (DNT)
+			i(222010),	-- zzOld Do Not Use (DNT)
+			i(222011),	-- zzOld Do Not Use (DNT)
+			i(222012),	-- zzOld Do Not Use (DNT)
+			i(222013),	-- zzOld Do Not Use (DNT)
+			i(222014),	-- zzOld Do Not Use (DNT)
+			i(222015),	-- zzOld Do Not Use (DNT)
+			i(222016),	-- zzOld Do Not Use (DNT)
+			i(222017),	-- zzOld Do Not Use (DNT)
+			i(222018),	-- zzOld Do Not Use (DNT)
+			i(222019),	-- zzOld Do Not Use (DNT)
+			i(222020),	-- zzOld Do Not Use (DNT)
+			i(222021),	-- zzOld Do Not Use (DNT)
+			i(222022),	-- zzOld Do Not Use (DNT)
+			i(222023),	-- zzOld Do Not Use (DNT)
+			i(222024),	-- zzOld Do Not Use (DNT)
+			i(222025),	-- zzOld Do Not Use (DNT)
+			i(222026),	-- zzOld Do Not Use (DNT)
+			i(222027),	-- zzOld Do Not Use (DNT)
+			i(222028),	-- zzOld Do Not Use (DNT)
+			i(222029),	-- zzOld Do Not Use (DNT)
+			i(222030),	-- zzOld Do Not Use (DNT)
+			i(222031),	-- zzOld Do Not Use (DNT)
+			i(222032),	-- zzOld Do Not Use (DNT)
+			i(222033),	-- zzOld Do Not Use (DNT)
+			i(222034),	-- zzOld Do Not Use (DNT)
+			i(222035),	-- zzOld Do Not Use (DNT)
+			i(222036),	-- zzOld Do Not Use (DNT)
+			i(222037),	-- zzOld Do Not Use (DNT)
+			i(222038),	-- zzOld Do Not Use (DNT)
+			i(222039),	-- zzOld Do Not Use (DNT)
+			i(222040),	-- zzOld Do Not Use (DNT)
+			i(222041),	-- zzOld Do Not Use (DNT)
+			i(222042),	-- zzOld Do Not Use (DNT)
+			i(222043),	-- zzOld Do Not Use (DNT)
+			i(222044),	-- zzOld Do Not Use (DNT)
+			i(222045),	-- zzOld Do Not Use (DNT)
+			i(222046),	-- zzOld Do Not Use (DNT)
+			i(222047),	-- zzOld Do Not Use (DNT)
+			i(222048),	-- zzOld Do Not Use (DNT)
+			i(222049),	-- zzOld Do Not Use (DNT)
+			i(222050),	-- zzOld Do Not Use (DNT)
+			i(222051),	-- zzOld Do Not Use (DNT)
+			i(222052),	-- zzOld Do Not Use (DNT)
+			i(222053),	-- zzOld Do Not Use (DNT)
+			i(222054),	-- zzOld Do Not Use (DNT)
+			i(222055),	-- zzOld Do Not Use (DNT)
+			i(222056),	-- zzOld Do Not Use (DNT)
+			i(222057),	-- zzOld Do Not Use (DNT)
+			i(222058),	-- zzOld Do Not Use (DNT)
+			i(222059),	-- zzOld Do Not Use (DNT)
+			i(222060),	-- zzOld Do Not Use (DNT)
+			i(222061),	-- zzOld Do Not Use (DNT)
+			i(222062),	-- zzOld Do Not Use (DNT)
+			i(222063),	-- zzOld Do Not Use (DNT)
+			i(222064),	-- zzOld Do Not Use (DNT)
+			i(222065),	-- zzOld Do Not Use (DNT)
+			i(222066),	-- zzOld Do Not Use (DNT)
+			i(222067),	-- zzOld Do Not Use (DNT)
+			i(222068),	-- zzOld Do Not Use (DNT)
+			i(222069),	-- zzOld Do Not Use (DNT)
+			i(222070),	-- zzOld Do Not Use (DNT)
+			i(222071),	-- zzOld Do Not Use (DNT)
+			i(222072),	-- zzOld Do Not Use (DNT)
+			i(222073),	-- zzOld Do Not Use (DNT)
+			i(222074),	-- zzOld Do Not Use (DNT)
+			i(222075),	-- zzOld Do Not Use (DNT)
+			i(222076),	-- zzOld Do Not Use (DNT)
+			i(222077),	-- zzOld Do Not Use (DNT)
+			i(222078),	-- zzOld Do Not Use (DNT)
+			i(222079),	-- zzOld Do Not Use (DNT)
+			i(222080),	-- zzOld Do Not Use (DNT)
+			i(222081),	-- zzOld Do Not Use (DNT)
+			i(222082),	-- zzOld Do Not Use (DNT)
+			i(222083),	-- zzOld Do Not Use (DNT)
+			i(222084),	-- zzOld Do Not Use (DNT)
+			i(222085),	-- zzOld Do Not Use (DNT)
+			i(222086),	-- zzOld Do Not Use (DNT)
+			i(222087),	-- zzOld Do Not Use (DNT)
+			i(222088),	-- zzOld Do Not Use (DNT)
+			i(222089),	-- zzOld Do Not Use (DNT)
+			i(222090),	-- zzOld Do Not Use (DNT)
+			i(222091),	-- zzOld Do Not Use (DNT)
+			i(222092),	-- zzOld Do Not Use (DNT)
+			i(222093),	-- zzOld Do Not Use (DNT)
+			i(222094),	-- zzOld Do Not Use (DNT)
+			i(222095),	-- zzOld Do Not Use (DNT)
+			i(222096),	-- zzOld Do Not Use (DNT)
+			i(222097),	-- zzOld Do Not Use (DNT)
+			i(222098),	-- zzOld Do Not Use (DNT)
+			i(222099),	-- zzOld Do Not Use (DNT)
+			i(222100),	-- zzOld Do Not Use (DNT)
+			i(222101),	-- zzOld Do Not Use (DNT)
+			i(222102),	-- zzOld Do Not Use (DNT)
+			i(222103),	-- zzOld Do Not Use (DNT)
+			i(222104),	-- zzOld Do Not Use (DNT)
+			i(222105),	-- zzOld Do Not Use (DNT)
+			i(222106),	-- zzOld Do Not Use (DNT)
+			i(222107),	-- zzOld Do Not Use (DNT)
+			i(222108),	-- zzOld Do Not Use (DNT)
+			i(222109),	-- zzOld Do Not Use (DNT)
+			i(222110),	-- zzOld Do Not Use (DNT)
+			i(222111),	-- zzOld Do Not Use (DNT)
+			i(222112),	-- zzOld Do Not Use (DNT)
+			i(222113),	-- zzOld Do Not Use (DNT)
+			i(222114),	-- zzOld Do Not Use (DNT)
+			i(222115),	-- zzOld Do Not Use (DNT)
+			i(222116),	-- zzOld Do Not Use (DNT)
+			i(222117),	-- zzOld Do Not Use (DNT)
+			i(222118),	-- zzOld Do Not Use (DNT)
+			i(222119),	-- zzOld Do Not Use (DNT)
+			i(222120),	-- zzOld Do Not Use (DNT)
+			i(222121),	-- zzOld Do Not Use (DNT)
+			i(222122),	-- zzOld Do Not Use (DNT)
+			i(222123),	-- zzOld Do Not Use (DNT)
+			i(222124),	-- zzOld Do Not Use (DNT)
+			i(222125),	-- zzOld Do Not Use (DNT)
+			i(222126),	-- zzOld Do Not Use (DNT)
+			i(222127),	-- zzOld Do Not Use (DNT)
+			i(222128),	-- zzOld Do Not Use (DNT)
+			i(222129),	-- zzOld Do Not Use (DNT)
+			i(222130),	-- zzOld Do Not Use (DNT)
+			i(222131),	-- zzOld Do Not Use (DNT)
+			i(222132),	-- zzOld Do Not Use (DNT)
+			i(222133),	-- zzOld Do Not Use (DNT)
+			i(222134),	-- zzOld Do Not Use (DNT)
+			i(222135),	-- zzOld Do Not Use (DNT)
+			i(222136),	-- zzOld Do Not Use (DNT)
+			i(222137),	-- zzOld Do Not Use (DNT)
+			i(222138),	-- zzOld Do Not Use (DNT)
+			i(222139),	-- zzOld Do Not Use (DNT)
+			i(222140),	-- zzOld Do Not Use (DNT)
+			i(222141),	-- zzOld Do Not Use (DNT)
+			i(222142),	-- zzOld Do Not Use (DNT)
+			i(222143),	-- zzOld Do Not Use (DNT)
+			i(222144),	-- zzOld Do Not Use (DNT)
+			i(222145),	-- zzOld Do Not Use (DNT)
+			i(222146),	-- zzOld Do Not Use (DNT)
+			i(222147),	-- zzOld Do Not Use (DNT)
+			i(222148),	-- zzOld Do Not Use (DNT)
+			i(222149),	-- zzOld Do Not Use (DNT)
+			i(222150),	-- zzOld Do Not Use (DNT)
+			i(222151),	-- zzOld Do Not Use (DNT)
+			i(222152),	-- zzOld Do Not Use (DNT)
+			i(222153),	-- zzOld Do Not Use (DNT)
+			i(222154),	-- zzOld Do Not Use (DNT)
+			i(222155),	-- zzOld Do Not Use (DNT)
+			i(222156),	-- zzOld Do Not Use (DNT)
+			i(222157),	-- zzOld Do Not Use (DNT)
+			i(222158),	-- zzOld Do Not Use (DNT)
+			i(222159),	-- zzOld Do Not Use (DNT)
+			i(222160),	-- zzOld Do Not Use (DNT)
+			i(222161),	-- zzOld Do Not Use (DNT)
+			i(222162),	-- zzOld Do Not Use (DNT)
+			i(222163),	-- zzOld Do Not Use (DNT)
+			i(222164),	-- zzOld Do Not Use (DNT)
+			i(222165),	-- zzOld Do Not Use (DNT)
+			i(222166),	-- zzOld Do Not Use (DNT)
+			i(222167),	-- zzOld Do Not Use (DNT)
+			i(222168),	-- zzOld Do Not Use (DNT)
+			i(222169),	-- zzOld Do Not Use (DNT)
+			i(222170),	-- zzOld Do Not Use (DNT)
+			i(222171),	-- zzOld Do Not Use (DNT)
+			i(222172),	-- zzOld Do Not Use (DNT)
+			i(222173),	-- zzOld Do Not Use (DNT)
+			i(222174),	-- zzOld Do Not Use (DNT)
+			i(222175),	-- zzOld Do Not Use (DNT)
+			i(222176),	-- zzOld Do Not Use (DNT)
+			i(222177),	-- zzOld Do Not Use (DNT)
+			i(222178),	-- zzOld Do Not Use (DNT)
+			i(222179),	-- zzOld Do Not Use (DNT)
+			i(222180),	-- zzOld Do Not Use (DNT)
+			i(222181),	-- zzOld Do Not Use (DNT)
+			i(222182),	-- zzOld Do Not Use (DNT)
+			i(222183),	-- zzOld Do Not Use (DNT)
+			i(222184),	-- zzOld Do Not Use (DNT)
+			i(222185),	-- zzOld Do Not Use (DNT)
+			i(222186),	-- zzOld Do Not Use (DNT)
+			i(222187),	-- zzOld Do Not Use (DNT)
+			i(222188),	-- zzOld Do Not Use (DNT)
+			i(222189),	-- zzOld Do Not Use (DNT)
+			i(222190),	-- zzOld Do Not Use (DNT)
+			i(222191),	-- zzOld Do Not Use (DNT)
+			i(222192),	-- zzOld Do Not Use (DNT)
+			i(222193),	-- zzOld Do Not Use (DNT)
+			i(222194),	-- zzOld Do Not Use (DNT)
+			i(222195),	-- zzOld Do Not Use (DNT)
+			i(222196),	-- zzOld Do Not Use (DNT)
+			i(222197),	-- zzOld Do Not Use (DNT)
+			i(222198),	-- zzOld Do Not Use (DNT)
+			i(222199),	-- zzOld Do Not Use (DNT)
+			i(222200),	-- zzOld Do Not Use (DNT)
+			i(222201),	-- zzOld Do Not Use (DNT)
+			i(222202),	-- zzOld Do Not Use (DNT)
+			i(222203),	-- zzOld Do Not Use (DNT)
+			i(222204),	-- zzOld Do Not Use (DNT)
+			i(222205),	-- zzOld Do Not Use (DNT)
+			i(222206),	-- zzOld Do Not Use (DNT)
+			i(222207),	-- zzOld Do Not Use (DNT)
+			i(222208),	-- zzOld Do Not Use (DNT)
+			i(222209),	-- zzOld Do Not Use (DNT)
+			i(222210),	-- zzOld Do Not Use (DNT)
+			i(222211),	-- zzOld Do Not Use (DNT)
+			i(222212),	-- zzOld Do Not Use (DNT)
+			i(222213),	-- zzOld Do Not Use (DNT)
+			i(222214),	-- zzOld Do Not Use (DNT)
+			i(222215),	-- zzOld Do Not Use (DNT)
+			i(222216),	-- zzOld Do Not Use (DNT)
+			i(222217),	-- zzOld Do Not Use (DNT)
+			i(222218),	-- zzOld Do Not Use (DNT)
+			i(222219),	-- zzOld Do Not Use (DNT)
+			i(222220),	-- zzOld Do Not Use (DNT)
+			i(222221),	-- zzOld Do Not Use (DNT)
+			i(222222),	-- zzOld Do Not Use (DNT)
+			i(222223),	-- zzOld Do Not Use (DNT)
+			i(222224),	-- zzOld Do Not Use (DNT)
+			i(222225),	-- zzOld Do Not Use (DNT)
+			i(222226),	-- zzOld Do Not Use (DNT)
+			i(222227),	-- zzOld Do Not Use (DNT)
+			i(222228),	-- zzOld Do Not Use (DNT)
+			i(222229),	-- zzOld Do Not Use (DNT)
+			i(222230),	-- zzOld Do Not Use (DNT)
+			i(222231),	-- zzOld Do Not Use (DNT)
+			i(222232),	-- zzOld Do Not Use (DNT)
+			i(222233),	-- zzOld Do Not Use (DNT)
+			i(222234),	-- zzOld Do Not Use (DNT)
+			i(222235),	-- zzOld Do Not Use (DNT)
+			i(222236),	-- zzOld Do Not Use (DNT)
+			i(222237),	-- zzOld Do Not Use (DNT)
+			i(222238),	-- zzOld Do Not Use (DNT)
+			i(222239),	-- zzOld Do Not Use (DNT)
+			i(222240),	-- zzOld Do Not Use (DNT)
+			i(222241),	-- zzOld Do Not Use (DNT)
+			i(222242),	-- zzOld Do Not Use (DNT)
+			i(222243),	-- zzOld Do Not Use (DNT)
+			i(222244),	-- zzOld Do Not Use (DNT)
+			i(222245),	-- zzOld Do Not Use (DNT)
+			i(222246),	-- zzOld Do Not Use (DNT)
+			i(222247),	-- zzOld Do Not Use (DNT)
+			i(222248),	-- zzOld Do Not Use (DNT)
+			i(222250),	-- zzOld Do Not Use (DNT)
+			i(222251),	-- zzOld Do Not Use (DNT)
+			i(222252),	-- zzOld Do Not Use (DNT)
+			i(222253),	-- zzOld Do Not Use (DNT)
+			i(222254),	-- zzOld Do Not Use (DNT)
+			i(222255),	-- zzOld Do Not Use (DNT)
+			i(222256),	-- zzOld Do Not Use (DNT)
+			i(222257),	-- zzOld Do Not Use (DNT)
+			i(222258),	-- zzOld Do Not Use (DNT)
+			i(222259),	-- zzOld Do Not Use (DNT)
+			i(222260),	-- zzOld Do Not Use (DNT)
+			i(222261),	-- zzOld Do Not Use (DNT)
+			i(222262),	-- zzOld Do Not Use (DNT)
+			i(222263),	-- zzOld Do Not Use (DNT)
+			i(222264),	-- zzOld Do Not Use (DNT)
+			i(222265),	-- zzOld Do Not Use (DNT)
+			i(222266),	-- zzOld Do Not Use (DNT)
+			i(222267),	-- zzOld Do Not Use (DNT)
+			i(222268),	-- zzOld Do Not Use (DNT)
+			i(222269),	-- zzOld Do Not Use (DNT)
+			i(222270),	-- zzOld Do Not Use (DNT)
+			i(222271),	-- zzOld Do Not Use (DNT)
+			i(222272),	-- zzOld Do Not Use (DNT)
+			i(222273),	-- zzOld Do Not Use (DNT)
+			i(222274),	-- zzOld Do Not Use (DNT)
+			i(222275),	-- zzOld Do Not Use (DNT)
+			i(222276),	-- zzOld Do Not Use (DNT)
+			i(222277),	-- zzOld Do Not Use (DNT)
+			i(222278),	-- zzOld Do Not Use (DNT)
+			i(222279),	-- zzOld Do Not Use (DNT)
+			i(222281),	-- zzOld Do Not Use (DNT)
+			i(222282),	-- zzOld Do Not Use (DNT)
+			i(222283),	-- zzOld Do Not Use (DNT)
+			i(222284),	-- zzOld Do Not Use (DNT)
+			i(222285),	-- zzOld Do Not Use (DNT)
+			i(222286),	-- zzOld Do Not Use (DNT)
+			i(222287),	-- zzOld Do Not Use (DNT)
+			i(222288),	-- zzOld Do Not Use (DNT)
+			i(222289),	-- zzOld Do Not Use (DNT)
+			i(222290),	-- zzOld Do Not Use (DNT)
+			i(222291),	-- zzOld Do Not Use (DNT)
+			i(222292),	-- zzOld Do Not Use (DNT)
+			i(222293),	-- zzOld Do Not Use (DNT)
+			i(222294),	-- zzOld Do Not Use (DNT)
+			i(222295),	-- zzOld Do Not Use (DNT)
+			i(222296),	-- zzOld Do Not Use (DNT)
+			i(222297),	-- zzOld Do Not Use (DNT)
+			i(222298),	-- zzOld Do Not Use (DNT)
+			i(222299),	-- zzOld Do Not Use (DNT)
+			i(222300),	-- zzOld Do Not Use (DNT)
+			i(222301),	-- zzOld Do Not Use (DNT)
+			i(222302),	-- zzOld Do Not Use (DNT)
+			i(222303),	-- zzOld Do Not Use (DNT)
+			i(222304),	-- zzOld Do Not Use (DNT)
+			i(222305),	-- zzOld Do Not Use (DNT)
+			i(222306),	-- zzOld Do Not Use (DNT)
+			i(222307),	-- zzOld Do Not Use (DNT)
+			i(222308),	-- zzOld Do Not Use (DNT)
+			i(222309),	-- zzOld Do Not Use (DNT)
+			i(222310),	-- zzOld Do Not Use (DNT)
+			i(222311),	-- zzOld Do Not Use (DNT)
+			i(222312),	-- zzOld Do Not Use (DNT)
+			i(222313),	-- zzOld Do Not Use (DNT)
+			i(222314),	-- zzOld Do Not Use (DNT)
+			i(222315),	-- zzOld Do Not Use (DNT)
+			i(222316),	-- zzOld Do Not Use (DNT)
+			i(222317),	-- zzOld Do Not Use (DNT)
+			i(222318),	-- zzOld Do Not Use (DNT)
+			i(222319),	-- zzOld Do Not Use (DNT)
+			i(222320),	-- zzOld Do Not Use (DNT)
+			i(222321),	-- zzOld Do Not Use (DNT)
+			i(222322),	-- zzOld Do Not Use (DNT)
+			i(222324),	-- zzOld Do Not Use (DNT)
+			i(222325),	-- zzOld Do Not Use (DNT)
+			i(222326),	-- zzOld Do Not Use (DNT)
+			i(222327),	-- zzOld Do Not Use (DNT)
+			i(222328),	-- zzOld Do Not Use (DNT)
+			i(222329),	-- zzOld Do Not Use (DNT)
+			i(222330),	-- zzOld Do Not Use (DNT)
+			i(222331),	-- zzOld Do Not Use (DNT)
+			i(222332),	-- zzOld Do Not Use (DNT)
+			i(222333),	-- zzOld Do Not Use (DNT)
+			i(222334),	-- zzOld Do Not Use (DNT)
+			i(222335),	-- zzOld Do Not Use (DNT)
+			i(222336),	-- zzOld Do Not Use (DNT)
+			i(222337),	-- zzOld Do Not Use (DNT)
+			i(222338),	-- zzOld Do Not Use (DNT)
+			i(222339),	-- zzOld Do Not Use (DNT)
+			i(222340),	-- zzOld Do Not Use (DNT)
+			i(222341),	-- zzOld Do Not Use (DNT)
+			i(222342),	-- zzOld Do Not Use (DNT)
+			i(222343),	-- zzOld Do Not Use (DNT)
+			i(222344),	-- zzOld Do Not Use (DNT)
+			i(222345),	-- zzOld Do Not Use (DNT)
+			i(222346),	-- zzOld Do Not Use (DNT)
+			i(222347),	-- zzOld Do Not Use (DNT)
+			i(222348),	-- zzOld Do Not Use (DNT)
+			i(222349),	-- zzOld Do Not Use (DNT)
+			i(222350),	-- zzOld Do Not Use (DNT)
+			i(222351),	-- zzOld Do Not Use (DNT)
+			i(222352),	-- zzOld Do Not Use (DNT)
+			i(222353),	-- zzOld Do Not Use (DNT)
+			i(222354),	-- zzOld Do Not Use (DNT)
+			i(222355),	-- zzOld Do Not Use (DNT)
+			i(222356),	-- zzOld Do Not Use (DNT)
+			i(222357),	-- zzOld Do Not Use (DNT)
+			i(222358),	-- zzOld Do Not Use (DNT)
+			i(222359),	-- zzOld Do Not Use (DNT)
+			i(222360),	-- zzOld Do Not Use (DNT)
+			i(222361),	-- zzOld Do Not Use (DNT)
+			i(222362),	-- zzOld Do Not Use (DNT)
+			i(222363),	-- zzOld Do Not Use (DNT)
+			i(222364),	-- zzOld Do Not Use (DNT)
+			i(222365),	-- zzOld Do Not Use (DNT)
+			i(222366),	-- zzOld Do Not Use (DNT)
+			i(222367),	-- zzOld Do Not Use (DNT)
+			i(222368),	-- zzOld Do Not Use (DNT)
+			i(222369),	-- zzOld Do Not Use (DNT)
+			i(222370),	-- zzOld Do Not Use (DNT)
+			i(222371),	-- zzOld Do Not Use (DNT)
+			i(222372),	-- zzOld Do Not Use (DNT)
+			i(222373),	-- zzOld Do Not Use (DNT)
+			i(222374),	-- zzOld Do Not Use (DNT)
+			i(222375),	-- zzOld Do Not Use (DNT)
+			i(222376),	-- zzOld Do Not Use (DNT)
+			i(222377),	-- zzOld Do Not Use (DNT)
+			i(222378),	-- zzOld Do Not Use (DNT)
+			i(222379),	-- zzOld Do Not Use (DNT)
+			i(222380),	-- zzOld Do Not Use (DNT)
+			i(222381),	-- zzOld Do Not Use (DNT)
+			i(222382),	-- zzOld Do Not Use (DNT)
+			i(222383),	-- zzOld Do Not Use (DNT)
+			i(222384),	-- zzOld Do Not Use (DNT)
+			i(222385),	-- zzOld Do Not Use (DNT)
+			i(222386),	-- zzOld Do Not Use (DNT)
+			i(222387),	-- zzOld Do Not Use (DNT)
+			i(222388),	-- zzOld Do Not Use (DNT)
+			i(222389),	-- zzOld Do Not Use (DNT)
+			i(222390),	-- zzOld Do Not Use (DNT)
+			i(222391),	-- zzOld Do Not Use (DNT)
+			i(222392),	-- zzOld Do Not Use (DNT)
+			i(222393),	-- zzOld Do Not Use (DNT)
+			i(222394),	-- zzOld Do Not Use (DNT)
+			i(222395),	-- zzOld Do Not Use (DNT)
+			i(222396),	-- zzOld Do Not Use (DNT)
+			i(222397),	-- zzOld Do Not Use (DNT)
+			i(222398),	-- zzOld Do Not Use (DNT)
+			i(222399),	-- zzOld Do Not Use (DNT)
+			i(222400),	-- zzOld Do Not Use (DNT)
+			i(222401),	-- zzOld Do Not Use (DNT)
+			i(222402),	-- zzOld Do Not Use (DNT)
+			i(222403),	-- zzOld Do Not Use (DNT)
+			i(222404),	-- zzOld Do Not Use (DNT)
+			i(222405),	-- zzOld Do Not Use (DNT)
+			i(222406),	-- zzOld Do Not Use (DNT)
+			i(222407),	-- zzOld Do Not Use (DNT)
+			i(222408),	-- zzOld Do Not Use (DNT)
+			i(222409),	-- zzOld Do Not Use (DNT)
+			i(222410),	-- zzOld Do Not Use (DNT)
+			i(222411),	-- zzOld Do Not Use (DNT)
+			i(222412),	-- zzOld Do Not Use (DNT)
+			i(222413),	-- zzOld Do Not Use (DNT)
+			i(222414),	-- zzOld Do Not Use (DNT)
+			i(222415),	-- zzOld Do Not Use (DNT)
+			i(222416),	-- zzOld Do Not Use (DNT)
+			i(222452),	-- zzOld Do Not Use (DNT)
+			i(222453),	-- zzOld Do Not Use (DNT)
+			i(222454),	-- zzOld Do Not Use (DNT)
+			i(222455),	-- zzOld Do Not Use (DNT)
+			i(222456),	-- zzOld Do Not Use (DNT)
+			i(222457),	-- zzOld Do Not Use (DNT)
+			i(222460),	-- zzOld Do Not Use (DNT)
+			i(222496),	-- zzOld Do Not Use (DNT)
+			i(222497),	-- zzOld Do Not Use (DNT)
+			i(222498),	-- zzOld Do Not Use (DNT)
+			i(222517),	-- zzOld Do Not Use (DNT)
+			i(222518),	-- zzOld Do Not Use (DNT)
+			i(222519),	-- zzOld Do Not Use (DNT)
+			i(222521),	-- zzOld Do Not Use (DNT)
+			i(222522),	-- zzOld Do Not Use (DNT)
+			i(222524),	-- zzOld Do Not Use (DNT)
+			i(222525),	-- zzOld Do Not Use (DNT)
+			i(222526),	-- zzOld Do Not Use (DNT)
+			i(222527),	-- zzOld Do Not Use (DNT)
+			i(222528),	-- zzOld Do Not Use (DNT)
+			i(222529),	-- zzOld Do Not Use (DNT)
+			i(222530),	-- zzOld Do Not Use (DNT)
+			i(222531),	-- zzOld Do Not Use (DNT)
+			i(222532),	-- zzOld Do Not Use (DNT)
+			i(222534),	-- zzOld Do Not Use (DNT)
+			i(222535),	-- zzOld Do Not Use (DNT)
+			i(222536),	-- zzOld Do Not Use (DNT)
+			i(222537),	-- zzOld Do Not Use (DNT)
+			i(222538),	-- zzOld Do Not Use (DNT)
+			i(222539),	-- zzOld Do Not Use (DNT)
+			i(222540),	-- zzOld Do Not Use (DNT)
+			i(222541),	-- zzOld Do Not Use (DNT)
+			i(222542),	-- zzOld Do Not Use (DNT)
+			i(222543),	-- zzOld Do Not Use (DNT)
+			i(222544),	-- zzOld Do Not Use (DNT)
+			i(222561),	-- zzOld Do Not Use (DNT)
+			i(222562),	-- zzOld Do Not Use (DNT)
+			i(222563),	-- zzOld Do Not Use (DNT)
+			i(222564),	-- zzOld Do Not Use (DNT)
+			i(222647),	-- zzOld Do Not Use (DNT)
+			i(222648),	-- zzOld Do Not Use (DNT)
+			i(222690),	-- zzOld Do Not Use (DNT)
+			i(222691),	-- zzOld Do Not Use (DNT)
+			i(222692),	-- zzOld Do Not Use (DNT)
+			i(222694),	-- zzOld Do Not Use (DNT)
+			i(222734),	-- zzOld Do Not Use (DNT)
+			i(222782),	-- zzOld Do Not Use (DNT)
+			i(222785),	-- zzOld Do Not Use (DNT)
+			i(222786),	-- zzOld Do Not Use (DNT)
+			i(222787),	-- zzOld Do Not Use (DNT)
+			i(222823),	-- zzOld Do Not Use (DNT)
+			i(222824),	-- zzOld Do Not Use (DNT)
+			i(222825),	-- zzOld Do Not Use (DNT)
+			i(222826),	-- zzOld Do Not Use (DNT)
+			i(222827),	-- zzOld Do Not Use (DNT)
+			i(222828),	-- zzOld Do Not Use (DNT)
+			i(222829),	-- zzOld Do Not Use (DNT)
+			i(222830),	-- zzOld Do Not Use (DNT)
+			i(222831),	-- zzOld Do Not Use (DNT)
+			i(223008),	-- zzOld Do Not Use (DNT)
+			i(223009),	-- zzOld Do Not Use (DNT)
+			i(223010),	-- zzOld Do Not Use (DNT)
+			i(223011),	-- zzOld Do Not Use (DNT)
+			i(223012),	-- zzOld Do Not Use (DNT)
+			i(223013),	-- zzOld Do Not Use (DNT)
+			i(223014),	-- zzOld Do Not Use (DNT)
+			i(223015),	-- zzOld Do Not Use (DNT)
+			i(223016),	-- zzOld Do Not Use (DNT)
+			i(223017),	-- zzOld Do Not Use (DNT)
+			i(223018),	-- zzOld Do Not Use (DNT)
+			i(223019),	-- zzOld Do Not Use (DNT)
+			i(223020),	-- zzOld Do Not Use (DNT)
+			i(223021),	-- zzOld Do Not Use (DNT)
+			i(223022),	-- zzOld Do Not Use (DNT)
+			i(223023),	-- zzOld Do Not Use (DNT)
+			i(223024),	-- zzOld Do Not Use (DNT)
+			i(223025),	-- zzOld Do Not Use (DNT)
+			i(223026),	-- zzOld Do Not Use (DNT)
+			i(223027),	-- zzOld Do Not Use (DNT)
+			i(223028),	-- zzOld Do Not Use (DNT)
+			i(223029),	-- zzOld Do Not Use (DNT)
+			i(223030),	-- zzOld Do Not Use (DNT)
+			i(223031),	-- zzOld Do Not Use (DNT)
+			i(223032),	-- zzOld Do Not Use (DNT)
+			i(223033),	-- zzOld Do Not Use (DNT)
+			i(223034),	-- zzOld Do Not Use (DNT)
+			i(223045),	-- zzOld Do Not Use (DNT)
+			i(223055),	-- zzOld Do Not Use (DNT)
+			i(223056),	-- zzOld Do Not Use (DNT)
+			i(223057),	-- zzOld Do Not Use (DNT)
+			i(223550),	-- Eternal Nemesis Robes
+			i(223551),	-- Eternal Nemesis Boots
+			i(223552),	-- Eternal Nemesis Gloves
+			i(223553),	-- Eternal Nemesis Skullcap
+			i(223554),	-- Eternal Nemesis Leggings
+			i(223555),	-- Eternal Nemesis Spaulders
+			i(223556),	-- Eternal Nemesis Belt
+			i(223566),	-- Eternal Nemesis Cloak
+			i(223568),	-- Eternal Nemesis Bracers
+			i(223575),	-- Eternal Nemesis Cloak
+			i(223576),	-- Eternal Nemesis Bracers
+			i(223577),	-- Eternal Nemesis Belt
+			i(223578),	-- Eternal Nemesis Spaulders
+			i(223579),	-- Eternal Nemesis Leggings
+			i(223580),	-- Eternal Nemesis Skullcap
+			i(223581),	-- Eternal Nemesis Gloves
+			i(223582),	-- Eternal Nemesis Boots
+			i(223583),	-- Eternal Nemesis Robes
+			i(223598),	-- Eternal Judgment Breastplate
+			i(223599),	-- Eternal Judgment Sabatons
+			i(223600),	-- Eternal Judgment Gauntlets
+			i(223601),	-- Eternal Judgment Crown
+			i(223602),	-- Eternal Judgment Legplates
+			i(223603),	-- Eternal Judgment Spaulders
+			i(223604),	-- Eternal Judgment Belt
+			i(223605),	-- Eternal Judgment Cloak
+			i(223606),	-- Eternal Judgment Bindings
+			i(223607),	-- Eternal Judgment Cloak
+			i(223608),	-- Eternal Judgment Bindings
+			i(223609),	-- Eternal Judgment Belt
+			i(223610),	-- Eternal Judgment Spaulders
+			i(223611),	-- Eternal Judgment Legplates
+			i(223612),	-- Eternal Judgment Crown
+			i(223613),	-- Eternal Judgment Gauntlets
+			i(223614),	-- Eternal Judgment Sabatons
+			i(223615),	-- Eternal Judgment Breastplate
+			i(223619),	-- Bronze Celebration Goodie Bag
+			i(223620),	-- 20th Anniversary Cache
+			i(223621),	-- 20th Anniversary Cache
+			i(223622),	-- 20th Anniversary Cache
+			i(223802),	-- Ruby-Eyed Stagshell
+			i(223805),	-- zzOld Do Not Use (DNT)
+			i(223806),	-- zzOld Do Not Use (DNT)
+			i(223965),	-- zzOld Do Not Use (DNT)
+			i(224117),	-- zzOld Do Not Use (DNT)
+			i(224157),	-- Pet Mirror
+			i(224190),	-- Kreeg's Hardy Draught
+			i(224192),	-- Practice Ravager
+			i(224194),	-- Fashion Frenzy Ribbon
+			i(224278),	-- Timewarped Ironforge Blueprints
+			i(224398),	-- Reins of the Frayfeather Hippogryph
+			i(224399),	-- Reins of the Amani Hunting Bear
+			i(224406),	-- Misty
+			i(224410),	-- Craggles
+			i(224468),	-- Eternal Netherwind Robes
+			i(224469),	-- Eternal Netherwind Boots
+			i(224470),	-- Eternal Netherwind Gloves
+			i(224471),	-- Eternal Netherwind Crown
+			i(224472),	-- Eternal Netherwind Pants
+			i(224473),	-- Eternal Netherwind Mantle
+			i(224474),	-- Eternal Netherwind Belt
+			i(224475),	-- Eternal Netherwind Cloak
+			i(224476),	-- Eternal Netherwind Bindings
+			i(224477),	-- Eternal Netherwind Cloak
+			i(224478),	-- Eternal Netherwind Bindings
+			i(224479),	-- Eternal Netherwind Belt
+			i(224480),	-- Eternal Netherwind Mantle
+			i(224481),	-- Eternal Netherwind Pants
+			i(224482),	-- Eternal Netherwind Crown
+			i(224483),	-- Eternal Netherwind Gloves
+			i(224484),	-- Eternal Netherwind Boots
+			i(224485),	-- Eternal Netherwind Robes
+			i(224558),	-- Commendation of the Brood of Nozdormu
+			i(224559),	-- Commendation of the Silverwing Sentinels
+			i(224560),	-- Commendation of the Warsong Outriders
+			i(224561),	-- Commendation of the Hydraxian Waterlords
+			i(224562),	-- Commendation of the Stormpike Guard
+			i(224563),	-- Commendation of the Frostwolf Clan
+			i(224564),	-- Commendation of the Ravasaur Trainers
+			i(224565),	-- Commendation of the Wintersaber Trainers
+			i(224566),	-- Commendation of the Timbermaw Hold
+			i(224567),	-- Commendation of the Argent Dawn
+			i(224568),	-- Commendation of the League of Arathor
+			i(224569),	-- Commendation of the Defilers
+			i(224570),	-- Commendation of the Zandalar Tribe
+			i(224571),	-- Commendation of the Thorium Brotherhood
+			i(224720),	-- zzOld Do Not Use (DNT)
+			i(224731),	-- Ogre-Sized Belt
+			i(224732),	-- Foreman's Handwraps
+			i(224733),	-- Watchman's Boots
+			i(224734),	-- Defias Spiked Pauldrons
+			i(224735),	-- Blackened Bone Necklace
+			i(224736),	-- Shredder Teeth
+			i(224737),	-- Goblin Treekickers
+			i(224738),	-- Logger's Wristguards
+			i(224739),	-- Lumbermaster's Mantle
+			i(224740),	-- Forgemasters's Faceshield
+			i(224741),	-- Defias Scimitar
+			i(224742),	-- Smite's Pistol
+			i(224744),	-- Defias Cuirass
+			i(224745),	-- Blackguard Slippers
+			i(224746),	-- Thief's Gloves
+			i(224747),	-- Buccaneer's Bludgeon
+			i(224748),	-- Captain's Tricorne
+			i(224749),	-- Goblin Griptreads
+			i(224753),	-- Pirate Captain's Girdle
+			i(224754),	-- Guildmaster's Leggings
+			i(224755),	-- Defias Knifeguards
+			i(224756),	-- Cookie's Special Flavors
+			i(224757),	-- Master Chef's Gloves
+			i(224758),	-- Stolen Stormwind Helmet
+			i(224759),	-- Pirate's Bracers
+			i(224853),	-- Adventurer's Pith Helmet
+			i(224854),	-- Holy Shroud
+			i(224855),	-- Helm of Narv
+			i(224856),	-- Mugthol's Helm
+			i(224857),	-- Feet of the Lynx
+			i(224858),	-- Coldstone Slippers
+			i(224859),	-- Caverndeep Trudgers
+			i(224860),	-- Boots of Avoidance
+			i(224894),	-- Eternal Robes of Transcendence
+			i(224895),	-- Eternal Boots of Transcendence
+			i(224896),	-- Eternal Handguards of Transcendence
+			i(224897),	-- Eternal Halo of Transcendence
+			i(224898),	-- Eternal Leggings of Transcendence
+			i(224899),	-- Eternal Pauldrons of Transcendence
+			i(224900),	-- Eternal Belt of Transcendence
+			i(224901),	-- Eternal Cloak of Transcendence
+			i(224902),	-- Eternal Bindings of Transcendence
+			i(224903),	-- Eternal Cloak of Transcendence
+			i(224904),	-- Eternal Bindings of Transcendence
+			i(224905),	-- Eternal Belt of Transcendence
+			i(224906),	-- Eternal Pauldrons of Transcendence
+			i(224907),	-- Eternal Leggings of Transcendence
+			i(224908),	-- Eternal Halo of Transcendence
+			i(224909),	-- Eternal Handguards of Transcendence
+			i(224910),	-- Eternal Boots of Transcendence
+			i(224911),	-- Eternal Robes of Transcendence
+			i(224923),	-- Eternal Breastplate of Wrath
+			i(224924),	-- Eternal Sabatons of Wrath
+			i(224925),	-- Eternal Gauntlets of Wrath
+			i(224926),	-- Eternal Helm of Wrath
+			i(224927),	-- Eternal Legplates of Wrath
+			i(224928),	-- Eternal Pauldrons of Wrath
+			i(224929),	-- Eternal Waistband of Wrath
+			i(224930),	-- Eternal Cloak of Wrath
+			i(224931),	-- Eternal Bracelets of Wrath
+			i(224932),	-- Eternal Cloak of Wrath
+			i(224933),	-- Eternal Bracelets of Wrath
+			i(224934),	-- Eternal Waistband of Wrath
+			i(224935),	-- Eternal Pauldrons of Wrath
+			i(224936),	-- Eternal Legplates of Wrath
+			i(224937),	-- Eternal Helm of Wrath
+			i(224938),	-- Eternal Gauntlets of Wrath
+			i(224939),	-- Eternal Sabatons of Wrath
+			i(224940),	-- Eternal Breastplate of Wrath
+			i(224951),	-- Eternal Bloodfang Chestpieces
+			i(224952),	-- Eternal Bloodfang Boots
+			i(224953),	-- Eternal Bloodfang Gloves
+			i(224954),	-- Eternal Bloodfang Hood
+			i(224955),	-- Eternal Bloodfang Pants
+			i(224956),	-- Eternal Bloodfang Spaulders
+			i(224957),	-- Eternal Bloodfang Belt
+			i(224958),	-- Eternal Bloodfang Cloak
+			i(224959),	-- Eternal Bloodfang Bracers
+			i(224961),	-- Eternal Bloodfang Cloak
+			i(224962),	-- Eternal Bloodfang Bracers
+			i(224963),	-- Eternal Bloodfang Belt
+			i(224964),	-- Eternal Bloodfang Spaulders
+			i(224965),	-- Eternal Bloodfang Pants
+			i(224966),	-- Eternal Bloodfang Hood
+			i(224967),	-- Eternal Bloodfang Gloves
+			i(224968),	-- Eternal Bloodfang Boots
+			i(224969),	-- Eternal Bloodfang Chestpieces
+			i(224983),	-- Eternal Stormrage Chestguard
+			i(224984),	-- Eternal Stormrage Boots
+			i(224985),	-- Eternal Stormrage Handguards
+			i(224986),	-- Eternal Stormrage Cover
+			i(224987),	-- Eternal Stormrage Legguards
+			i(224988),	-- Eternal Stormrage Pauldrons
+			i(224989),	-- Eternal Stormrage Belt
+			i(224990),	-- Eternal Stormrage Cloak
+			i(224991),	-- Eternal Stormrage Bracers
+			i(224992),	-- Eternal Stormrage Cloak
+			i(224993),	-- Eternal Stormrage Bracers
+			i(224994),	-- Eternal Stormrage Belt
+			i(224995),	-- Eternal Stormrage Pauldrons
+			i(224996),	-- Eternal Stormrage Legguards
+			i(224997),	-- Eternal Stormrage Cover
+			i(224998),	-- Eternal Stormrage Handguards
+			i(224999),	-- Eternal Stormrage Boots
+			i(225000),	-- Eternal Stormrage Chestguard
+			i(225010),	-- Dragonstalker's Eternal Breastplate
+			i(225011),	-- Dragonstalker's Eternal Greaves
+			i(225012),	-- Dragonstalker's Eternal Gauntlets
+			i(225013),	-- Dragonstalker's Eternal Helm
+			i(225014),	-- Dragonstalker's Eternal Legguards
+			i(225015),	-- Dragonstalker's Eternal Spaulders
+			i(225016),	-- Dragonstalker's Eternal Belt
+			i(225017),	-- Dragonstalker's Eternal Cloak
+			i(225018),	-- Dragonstalker's Eternal Bracers
+			i(225019),	-- Dragonstalker's Eternal Cloak
+			i(225020),	-- Dragonstalker's Eternal Bracers
+			i(225021),	-- Dragonstalker's Eternal Belt
+			i(225022),	-- Dragonstalker's Eternal Spaulders
+			i(225023),	-- Dragonstalker's Eternal Legguards
+			i(225024),	-- Dragonstalker's Eternal Helm
+			i(225025),	-- Dragonstalker's Eternal Gauntlets
+			i(225026),	-- Dragonstalker's Eternal Greaves
+			i(225027),	-- Dragonstalker's Eternal Breastplate
+			i(225037),	-- Eternal Breastplate of Ten Storms
+			i(225038),	-- Eternal Greaves of Ten Storms
+			i(225039),	-- Eternal Gauntlets of Ten Storms
+			i(225040),	-- Eternal Helmet of Ten Storms
+			i(225041),	-- Eternal Legplates of Ten Storms
+			i(225042),	-- Eternal Epaulets of Ten Storms
+			i(225043),	-- Eternal Belt of Ten Storms
+			i(225044),	-- Eternal Cloak of Ten Storms
+			i(225045),	-- Eternal Bracers of Ten Storms
+			i(225046),	-- Eternal Cloak of Ten Storms
+			i(225047),	-- Eternal Bracers of Ten Storms
+			i(225048),	-- Eternal Belt of Ten Storms
+			i(225049),	-- Eternal Epaulets of Ten Storms
+			i(225050),	-- Eternal Legplates of Ten Storms
+			i(225051),	-- Eternal Helmet of Ten Storms
+			i(225052),	-- Eternal Gauntlets of Ten Storms
+			i(225053),	-- Eternal Greaves of Ten Storms
+			i(225054),	-- Eternal Breastplate of Ten Storms
+			i(225069),	-- Eternal Vest of the August Acolyte
+			i(225070),	-- Eternal Talons of the August Acolyte
+			i(225071),	-- Eternal Grips of the August Acolyte
+			i(225072),	-- Eternal Helm of the August Acolyte
+			i(225073),	-- Eternal Pants of the August Acolyte
+			i(225074),	-- Eternal Spaulders of the August Acolyte
+			i(225075),	-- Eternal Cord of the August Acolyte
+			i(225076),	-- Eternal Cloak of the August Acolyte
+			i(225077),	-- Eternal Bindings of the August Acolyte
+			i(225078),	-- Eternal Cloak of the August Acolyte
+			i(225079),	-- Eternal Bindings of the August Acolyte
+			i(225080),	-- Eternal Cord of the August Acolyte
+			i(225081),	-- Eternal Spaulders of the August Acolyte
+			i(225082),	-- Eternal Pants of the August Acolyte
+			i(225083),	-- Eternal Helm of the August Acolyte
+			i(225084),	-- Eternal Grips of the August Acolyte
+			i(225085),	-- Eternal Talons of the August Acolyte
+			i(225086),	-- Eternal Vest of the August Acolyte
+			i(225096),	-- Earth-Warder's Eternal Breastplate
+			i(225097),	-- Earth-Warder's Eternal Talons
+			i(225098),	-- Earth-Warder's Eternal Claws
+			i(225099),	-- Earth-Warder's Eternal Crown
+			i(225100),	-- Earth-Warder's Eternal Legplates
+			i(225101),	-- Earth-Warder's Eternal Pauldrons
+			i(225102),	-- Earth-Warder's Eternal Girdle
+			i(225103),	-- Earth-Warder's Eternal Cloak
+			i(225104),	-- Earth-Warder's Eternal Vambraces
+			i(225105),	-- Earth-Warder's Eternal Cloak
+			i(225106),	-- Earth-Warder's Eternal Vambraces
+			i(225107),	-- Earth-Warder's Eternal Girdle
+			i(225108),	-- Earth-Warder's Eternal Pauldrons
+			i(225109),	-- Earth-Warder's Eternal Legplates
+			i(225110),	-- Earth-Warder's Eternal Crown
+			i(225111),	-- Earth-Warder's Eternal Claws
+			i(225112),	-- Earth-Warder's Eternal Talons
+			i(225113),	-- Earth-Warder's Eternal Breastplate
+			i(225124),	-- Netherwalker's Eternal Harness
+			i(225125),	-- Netherwalker's Eternal Sandals
+			i(225126),	-- Netherwalker's Eternal Gloves
+			i(225127),	-- Netherwalker's Eternal Skullcap
+			i(225128),	-- Netherwalker's Eternal Leggings
+			i(225129),	-- Netherwalker's Eternal Shoulderblades
+			i(225130),	-- Netherwalker's Eternal Cord
+			i(225131),	-- Netherwalker's Eternal Cloak
+			i(225132),	-- Netherwalker's Eternal Bracers
+			i(225133),	-- Netherwalker's Eternal Cloak
+			i(225134),	-- Netherwalker's Eternal Bracers
+			i(225135),	-- Netherwalker's Eternal Cord
+			i(225136),	-- Netherwalker's Eternal Shoulderblades
+			i(225137),	-- Netherwalker's Eternal Leggings
+			i(225138),	-- Netherwalker's Eternal Skullcap
+			i(225139),	-- Netherwalker's Eternal Gloves
+			i(225140),	-- Netherwalker's Eternal Sandals
+			i(225141),	-- Netherwalker's Eternal Harness
+			i(225151),	-- Pale Rider's Eternal Breastplate
+			i(225152),	-- Pale Rider's Eternal Sabatons
+			i(225153),	-- Pale Rider's Eternal Gloves
+			i(225154),	-- Pale Rider's Eternal Helm
+			i(225155),	-- Pale Rider's Eternal Leggings
+			i(225156),	-- Pale Rider's Eternal Pauldrons
+			i(225157),	-- Pale Rider's Eternal Girdle
+			i(225158),	-- Pale Rider's Eternal Cloak
+			i(225159),	-- Pale Rider's Eternal Vambraces
+			i(225160),	-- Pale Rider's Eternal Cloak
+			i(225161),	-- Pale Rider's Eternal Vambraces
+			i(225162),	-- Pale Rider's Eternal Girdle
+			i(225163),	-- Pale Rider's Eternal Pauldrons
+			i(225164),	-- Pale Rider's Eternal Leggings
+			i(225165),	-- Pale Rider's Eternal Helm
+			i(225166),	-- Pale Rider's Eternal Gloves
+			i(225167),	-- Pale Rider's Eternal Sabatons
+			i(225168),	-- Pale Rider's Eternal Breastplate
+			i(225181),	-- Unearthed Bands
+			i(225182),	-- Aristocratic Cuffs
+			i(225183),	-- Slimescale Bracers
+			i(225184),	-- Runed Golem Shackles
+			i(225185),	-- [DNT UNUSED] Reforged 1 Ring
+			i(225186),	-- Freezing Band
+			i(225187),	-- Blackmetal Cape
+			i(225188),	-- Lefty's Brass Knuckle
+			i(225189),	-- Lightforged Blade
+			i(225190),	-- Pendulum of Doom
+			i(225191),	-- Gut Ripper
+			i(225192),	-- Bow of Searing Arrows
+			i(225193),	-- Elemental Mage Staff
+			i(225194),	-- Redbeard Crest
+			i(225195),	-- Axe of the Deep Woods
+			i(225196),	-- Grimlok's Charge
+			i(225197),	-- Crimson Shocker
+			i(225198),	-- Warden Staff
+			i(225199),	-- Flurry Axe
+			i(225200),	-- Alcor's Sunrazor
+			i(225201),	-- Precisely Calibrated Rifle
+			i(225203),	-- Beledar - The Emperor's Vision
+			i(225252),	-- Bronze Celebration Token
+			i(225348),	-- Ancient Timewarped Scroll
+			i(225350),	-- zzOld Do Not Use (DNT)
+			i(225351),	-- zzOld Do Not Use (DNT)
+			i(225352),	-- zzOld Do Not Use (DNT)
+			i(225378),	-- Mohawk Grenade
+			i(225661),	-- zzOld Do Not Use (DNT)
+			i(225664),	-- Golem Lord Argelmach's Gun
+			i(225665),	-- Golem Lord Argelmach's Wrench
+			i(225666),	-- General Angerforge's Axe
+			i(225667),	-- Ambassador Flamelash's Trident
+			i(225678),	-- Spare Key to Shaffar's Stasis Chamber
+			i(226046),	-- Timely Tourist's Band
+			i(226047),	-- Timely Tourist's Signet
+			i(226048),	-- Timely Tourist's Ring
+			i(226049),	-- Timely Tourist's Pendant
+			i(226050),	-- Timely Tourist's Shawl
+			i(226051),	-- Timely Tourist's Cloak
+			i(226052),	-- Timely Tourist's Shank
+			i(226053),	-- Timely Tourist's Ritual Knife
+			i(226054),	-- Timely Tourist's Pummeler
+			i(226055),	-- Timely Tourist's Hammer
+			i(226056),	-- Timely Tourist's Blade
+			i(226057),	-- Timely Tourist's Sword
+			i(226058),	-- Timely Tourist's Sharpshooter
+			i(226059),	-- Timely Tourist's Torch
+			i(226060),	-- Timely Tourist's Waraxe
+			i(226061),	-- Timely Tourist's Spade
+			i(226062),	-- Timely Tourist's Polearm
+			i(226063),	-- Timely Tourist's Drill-Tipped Stave
+			i(226064),	-- Timely Tourist's Beacon Staff
+			i(226065),	-- Timely Tourist's Lantern
+			i(226066),	-- Timely Tourist's Shield
+			i(226067),	-- Timely Tourist's Glaive
+			i(226068),	-- Timely Tourist's Breastplate
+			i(226069),	-- Timely Tourist's Sabatons
+			i(226070),	-- Timely Tourist's Gauntlets
+			i(226071),	-- Timely Tourist's Helm
+			i(226072),	-- Timely Tourist's Legguards
+			i(226073),	-- Timely Tourist's Pauldrons
+			i(226074),	-- Timely Tourist's Girdle
+			i(226075),	-- Timely Tourist's Vambraces
+			i(226076),	-- Timely Tourist's Chainmail
+			i(226077),	-- Timely Tourist's Striders
+			i(226078),	-- Timely Tourist's Grips
+			i(226079),	-- Timely Tourist's Coif
+			i(226080),	-- Timely Tourist's Greaves
+			i(226081),	-- Timely Tourist's Shoulderguards
+			i(226082),	-- Timely Tourist's Belt
+			i(226083),	-- Timely Tourist's Bracers
+			i(226084),	-- Timely Tourist's Vest
+			i(226085),	-- Timely Tourist's Boots
+			i(226086),	-- Timely Tourist's Gloves
+			i(226087),	-- Timely Tourist's Headgear
+			i(226088),	-- Timely Tourist's Pants
+			i(226089),	-- Timely Tourist's Epaulets
+			i(226090),	-- Timely Tourist's Sash
+			i(226091),	-- Timely Tourist's Bindings
+			i(226092),	-- Timely Tourist's Robes
+			i(226093),	-- Timely Tourist's Sandals
+			i(226094),	-- Timely Tourist's Handwraps
+			i(226095),	-- Timely Tourist's Cowl
+			i(226096),	-- Timely Tourist's Leggings
+			i(226097),	-- Timely Tourist's Shoulderpads
+			i(226098),	-- Timely Tourist's Cord
+			i(226099),	-- Timely Tourist's Cuffs
+			i(226101),	-- Chromie's Tour Goodie Bag
+			i(226102),	-- Chromie's Tour Goodie Bag
+			i(226167),	-- Timely Tourist's Bolthrower
+			i(226168),	-- Timely Tourist's Ritual Knife
+			i(226169),	-- Timely Tourist's Chisel
+			i(226170),	-- Timely Tourist's Hatchet
+			i(226171),	-- Timely Tourist's Cleaver
+			i(226427),	-- Patched Harvester's Claw
+			i(227209),	-- Hateful Gladiator's Dreadplate Chestpiece
+			i(227210),	-- Hateful Gladiator's Plate Chestpiece
+			i(227211),	-- Hateful Gladiator's Ornamented Chestguard
+			i(227212),	-- Hateful Gladiator's Ringmail Armor
+			i(227213),	-- Hateful Gladiator's Chain Armor
+			i(227214),	-- Hateful Gladiator's Leather Tunic
+			i(227215),	-- Hateful Gladiator's Kodohide Robes
+			i(227216),	-- Hateful Gladiator's Wyrmhide Robes
+			i(227217),	-- Hateful Gladiator's Dragonhide Robes
+			i(227218),	-- Hateful Gladiator's Mooncloth Robe
+			i(227219),	-- Hateful Gladiator's Satin Robe
+			i(227220),	-- Hateful Gladiator's Silk Raiment
+			i(227221),	-- Hateful Gladiator's Felweave Raiment
+			i(227222),	-- Hateful Gladiator's Plate Gauntlets
+			i(227223),	-- Hateful Gladiator's Dreadplate Gauntlets
+			i(227224),	-- Hateful Gladiator's Ornamented Gloves
+			i(227225),	-- Hateful Gladiator's Ringmail Gauntlets
+			i(227226),	-- Hateful Gladiator's Chain Gauntlets
+			i(227227),	-- Hateful Gladiator's Kodohide Gloves
+			i(227228),	-- Hateful Gladiator's Leather Gloves
+			i(227229),	-- Hateful Gladiator's Mooncloth Gloves
+			i(227230),	-- Hateful Gladiator's Silk Handguards
+			i(227231),	-- Hateful Gladiator's Felweave Handguards
+			i(227232),	-- Hateful Gladiator's Plate Legguards
+			i(227233),	-- Hateful Gladiator's Dreadplate Legguards
+			i(227234),	-- Hateful Gladiator's Ornamented Legplates
+			i(227235),	-- Hateful Gladiator's Ringmail Leggings
+			i(227236),	-- Hateful Gladiator's Chain Leggings
+			i(227237),	-- Hateful Gladiator's Kodohide Legguards
+			i(227238),	-- Hateful Gladiator's Leather Legguards
+			i(227239),	-- Hateful Gladiator's Mooncloth Leggings
+			i(227240),	-- Hateful Gladiator's Silk Trousers
+			i(227241),	-- Hateful Gladiator's Felweave Trousers
+			i(227242),	-- Heroes' Frostfire Gloves
+			i(227243),	-- Heroes' Plagueheart Gloves
+			i(227244),	-- Heroes' Gloves of Faith
+			i(227245),	-- Heroes' Dreamwalker Handgrips
+			i(227246),	-- Heroes' Bonescythe Gauntlets
+			i(227247),	-- Heroes' Cryptstalker Handguards
+			i(227248),	-- Heroes' Earthshatter Handguards
+			i(227249),	-- Heroes' Dreadnaught Gauntlets
+			i(227250),	-- Heroes' Scourgeborne Gauntlets
+			i(227251),	-- Heroes' Redemption Gloves
+			i(227252),	-- Heroes' Frostfire Leggings
+			i(227253),	-- Heroes' Plagueheart Leggings
+			i(227254),	-- Heroes' Leggings of Faith
+			i(227255),	-- Heroes' Dreamwalker Legguards
+			i(227256),	-- Heroes' Bonescythe Legplates
+			i(227257),	-- Heroes' Cryptstalker Legguards
+			i(227258),	-- Heroes' Earthshatter Legguards
+			i(227259),	-- Heroes' Dreadnaught Legplates
+			i(227260),	-- Heroes' Scourgeborne Legplates
+			i(227261),	-- Heroes' Redemption Greaves
+			i(227262),	-- Heroes' Frostfire Robe
+			i(227263),	-- Heroes' Plagueheart Robe
+			i(227264),	-- Heroes' Robe of Faith
+			i(227265),	-- Heroes' Dreamwalker Raiments
+			i(227266),	-- Heroes' Bonescythe Breastplate
+			i(227267),	-- Heroes' Cryptstalker Tunic
+			i(227268),	-- Heroes' Earthshatter Tunic
+			i(227269),	-- Heroes' Dreadnaught Battleplate
+			i(227270),	-- Heroes' Scourgeborne Battleplate
+			i(227271),	-- Heroes' Redemption Tunic
+			i(227554),	-- Firebird's Legguards
+			i(227555),	-- Firebird's Grips
+			i(227556),	-- Firebird's Gloves
+			i(227557),	-- Firebird's Kilt
+			i(227558),	-- Yaungol Slayer's Legguards
+			i(227559),	-- Yaungol Slayer's Gloves
+			i(227560),	-- Legguards of the Thousandfold Blades
+			i(227561),	-- Gloves of the Thousandfold Blades
+			i(227562),	-- Eternal Blossom Leggings
+			i(227563),	-- Eternal Blossom Gloves
+			i(227564),	-- Eternal Blossom Legguards
+			i(227565),	-- Eternal Blossom Grips
+			i(227566),	-- Legguards of the Lost Catacomb
+			i(227567),	-- Handguards of the Lost Catacomb
+			i(227568),	-- White Tiger Legguards
+			i(227569),	-- White Tiger Handguards
+			i(227570),	-- Legguards of Resounding Rings
+			i(227571),	-- Handguards of Resounding Rings
+			i(227572),	-- Legplates of Resounding Rings
+			i(227573),	-- Gauntlets of Resounding Rings
+			i(227574),	-- Greaves of the Lost Catacomb
+			i(227575),	-- Gauntlets of the Lost Catacomb
+			i(227576),	-- White Tiger Legplates
+			i(227577),	-- White Tiger Gauntlets
+			i(227578),	-- White Tiger Greaves
+			i(227579),	-- White Tiger Gloves
+			i(227580),	-- Firebird's Legwraps
+			i(227581),	-- Firebird's Handwraps
+			i(227582),	-- Eternal Blossom Legwraps
+			i(227583),	-- Eternal Blossom Handwraps
+			i(227584),	-- Guardian Serpent Legwraps
+			i(227585),	-- Guardian Serpent Handwraps
+			i(227586),	-- Guardian Serpent Gloves
+			i(227587),	-- Guardian Serpent Leggings
+			i(227588),	-- Sha-Skin Gloves
+			i(227589),	-- Sha-Skin Leggings
+			i(227590),	-- Leggings of the Burning Scroll
+			i(227591),	-- Gloves of the Burning Scroll
+			i(227592),	-- Eternal Blossom Handguards
+			i(227593),	-- Eternal Blossom Breeches
+			i(227594),	-- Red Crane Legguards
+			i(227595),	-- Red Crane Gauntlets
+			i(227596),	-- Red Crane Handwraps
+			i(227597),	-- Red Crane Legwraps
+			i(227598),	-- Red Crane Grips
+			i(227599),	-- Red Crane Leggings
+			i(227600),	-- Malevolent Gladiator's Boots of Cruelty
+			i(227601),	-- Malevolent Gladiator's Boots of Alacrity
+			i(227602),	-- Malevolent Gladiator's Footguards of Alacrity
+			i(227603),	-- Malevolent Gladiator's Leather Gloves
+			i(227604),	-- Malevolent Gladiator's Ironskin Gloves
+			i(227605),	-- Malevolent Gladiator's Wyrmhide Gloves
+			i(227606),	-- Malevolent Gladiator's Leather Legguards
+			i(227607),	-- Malevolent Gladiator's Ironskin Legguards
+			i(227608),	-- Malevolent Gladiator's Wyrmhide Legguards
+			i(227609),	-- Malevolent Gladiator's Waistband of Cruelty
+			i(227610),	-- Malevolent Gladiator's Waistband of Accuracy
+			i(227611),	-- Malevolent Gladiator's Belt of Cruelty
+			i(227612),	-- Malevolent Gladiator's Armwraps of Alacrity
+			i(227613),	-- Malevolent Gladiator's Armwraps of Accuracy
+			i(227614),	-- Malevolent Gladiator's Bindings of Prowess
+			i(227615),	-- Malevolent Gladiator's Sabatons of Cruelty
+			i(227616),	-- Malevolent Gladiator's Footguards of Alacrity
+			i(227617),	-- Malevolent Gladiator's Chain Gauntlets
+			i(227618),	-- Malevolent Gladiator's Ringmail Gauntlets
+			i(227619),	-- Malevolent Gladiator's Chain Leggings
+			i(227620),	-- Malevolent Gladiator's Ringmail Leggings
+			i(227621),	-- Malevolent Gladiator's Waistguard of Meditation
+			i(227622),	-- Malevolent Gladiator's Links of Cruelty
+			i(227623),	-- Malevolent Gladiator's Wristguards of Alacrity
+			i(227624),	-- Malevolent Gladiator's Armbands of Prowess
+			i(227625),	-- Malevolent Gladiator's Treads of Cruelty
+			i(227626),	-- Malevolent Gladiator's Treads of Alacrity
+			i(227627),	-- Malevolent Gladiator's Treads of Meditation
+			i(227628),	-- Malevolent Gladiator's Silk Handguards
+			i(227629),	-- Malevolent Gladiator's Felweave Handguards
+			i(227630),	-- Malevolent Gladiator's Mooncloth Gloves
+			i(227631),	-- Malevolent Gladiator's Silk Trousers
+			i(227632),	-- Malevolent Gladiator's Felweave Trousers
+			i(227633),	-- Malevolent Gladiator's Mooncloth Leggings
+			i(227634),	-- Malevolent Gladiator's Cord of Cruelty
+			i(227635),	-- Malevolent Gladiator's Cord of Accuracy
+			i(227636),	-- Malevolent Gladiator's Cord of Meditation
+			i(227637),	-- Malevolent Gladiator's Cuffs of Accuracy
+			i(227638),	-- Malevolent Gladiator's Cuffs of Prowess
+			i(227639),	-- Malevolent Gladiator's Cuffs of Meditation
+			i(227640),	-- Malevolent Gladiator's Drape of Prowess
+			i(227641),	-- Malevolent Gladiator's Cape of Cruelty
+			i(227642),	-- Malevolent Gladiator's Cloak of Alacrity
+			i(227643),	-- Malevolent Gladiator's Warboots of Cruelty
+			i(227644),	-- Malevolent Gladiator's Greaves of Alacrity
+			i(227645),	-- Malevolent Gladiator's Warboots of Alacrity
+			i(227646),	-- Malevolent Gladiator's Ornamented Gloves
+			i(227647),	-- Malevolent Gladiator's Dreadplate Gauntlets
+			i(227648),	-- Malevolent Gladiator's Plate Gauntlets
+			i(227649),	-- Malevolent Gladiator's Ornamented Legplates
+			i(227650),	-- Malevolent Gladiator's Dreadplate Legguards
+			i(227651),	-- Malevolent Gladiator's Plate Legguards
+			i(227652),	-- Malevolent Gladiator's Girdle of Accuracy
+			i(227653),	-- Malevolent Gladiator's Girdle of Prowess
+			i(227654),	-- Malevolent Gladiator's Clasp of Cruelty
+			i(227655),	-- Malevolent Gladiator's Bracers of Prowess
+			i(227656),	-- Malevolent Gladiator's Armplates of Proficiency
+			i(227657),	-- Malevolent Gladiator's Armplates of Alacrity
+			i(227677),	-- zzOld Do Not Use (DNT)
+			i(227678),	-- zzOld Do Not Use (DNT)
+			i(227679),	-- zzOld Do Not Use (DNT)
+			i(227680),	-- zzOld Do Not Use (DNT)
+			i(227703),	-- Farstrider's Huntsblade
+			i(227704),	-- Claymore of the Knight's Pledge
+			i(227705),	-- Runed-Ice Dirk
+			i(227706),	-- Doomreaper's Scythe
+			i(227707),	-- Doomwail Reaper
+			i(227709),	-- Kirin Tor Adept's Stave
+			i(227711),	-- Tusked Branch of War
+			i(227712),	-- Emberswirl Bulwark
+			i(227714),	-- Gilded Drakecrest Shield
+			i(227717),	-- Sermons of the Naaru
+			i(227718),	-- Bearded Branch of Lore
+			i(228197),	-- Ensemble: Eternal Battlegear of Wrath
+			i(228198),	-- Ensemble: Eternal Judgment Armor
+			i(228199),	-- Ensemble: Eternal Stormrage Armor
+			i(228200),	-- Ensemble: Dragonstalker's Eternal Armor
+			i(228201),	-- Ensemble: Eternal Netherwind Regalia
+			i(228202),	-- Ensemble: Eternal Bloodfang Armor
+			i(228203),	-- Ensemble: Eternal Ten Storms
+			i(228204),	-- Ensemble: Eternal Vestments of Transcendence
+			i(228205),	-- Ensemble: Pale Rider's Eternal Armor
+			i(228206),	-- Ensemble: Netherwalker's Eternal Armor
+			i(228207),	-- Ensemble: Earth-Warder's Eternal Armor
+			i(228208),	-- Ensemble: Eternal Battlegear of the August Acolyte
+			i(228209),	-- Ensemble: Eternal Nemesis Raiment
+			i(228617),	-- Benatauk's Clue Book
+			i(228694),	-- Damp Ransom Note
+			i(228760),	-- Reins of the Coldflame Tempest
+			i(228766),	-- Sandy Ransom Note
+			i(228781),	-- Lil'Doomy's Hilt
+			i(228782),	-- PH - Sandbox Wolf
+			i(228783),	-- PH - Sandbox Horse
+			i(228784),	-- Coldflame's Edge
+			i(228785),	-- Coldflame Bulwark
+			i(228786),	-- Coldflame Winged Crown
+			i(228788),	-- Coldflame Edged Crest
+			i(228789),	-- Coldflame Ring
+			i(228910),	-- Cache of Nerubian Treasures
+			i(228986),	-- Aesthetician's Coupon Book
+			i(228987),	-- Scroll of Fel Binding
+			i(228989),	-- Exotic Critter Taming License
+			i(228990),	-- Bottle of Steam
+			i(228991),	-- Stone of Prophecy
+			i(229047),	-- Night Elf Crest
+			i(229048),	-- Human Crest
+			i(229049),	-- Orc Crest
+			i(229059),	-- Arsenal: Crests of the Kingdom
+			i(229165),	-- Quest Journal
+			i(229355),	-- Chromie's Premium Goodie Bag
+			i(229359),	-- Chromie's Goodie Bag
+			i(229364),	-- Scourge Crest
+			i(229375),	-- Neural Enlarger
+			i(229411),	-- Normal Feather
+			i(229413),	-- "Dogg-Saron" Costume
+			i(229414),	-- Moira Thaurissan's Hammer
+			i(229425),	-- Bronzebeard Battle Mace
+			i(229426),	-- Ancient Amani Longbow
+			i(229714),	-- Lion's Crest Earmuffs
+			i(229720),	-- Frostwolf Earmuffs
+			i(229807),	-- Crown of the Icy Blue Rose
+			i(229808),	-- Gossamer Cyan Gown
+			i(229811),	-- Frost Etched Dagger
+			i(229812),	-- Chilled Axe
+			i(229813),	-- Crystaline Longbow of the Heavens
+			i(229814),	-- Fan of Cooling
+			i(229815),	-- Sky Witch's Airy Stave
+			i(229816),	-- Sky Witch's Airy Wand
+			i(229817),	-- Lovely Airy Longbow
+			i(229826),	-- Bronze Celebration Titles: Grizzly Hills Hiker
+			i(229827),	-- Bronze Celebration Titles: Plaguelands Survivor
+			i(229828),	-- 20th Anniversary Balloon Chest
+			i(229829),	-- Light Blue Balloon
+			i(229830),	-- Dark Blue Balloon
+			i(229831),	-- Gold Balloon
+			i(229958),	-- Decorated Feather
+			i(229960),	-- Cheerbringer XL
+			i(229961),	-- Candied Knife
+			i(229962),	-- Tree Topper
+			i(229963),	-- Great Candied Blade
+			i(229993),	-- Bluedoo
+			i(229999),	-- Classic Cloudy Tabard
+			i(230011),	-- Lil'Kaz's Hilt
+			i(230033),	-- Prowler's Midnight Shoulder Cape
+			i(230034),	-- Prowler's Azure Shoulder Cape
+			i(230035),	-- Prowler's Sepia Shoulder Cape
+			i(230036),	-- Prowler's Grassy Shoulder Cape
+			i(230037),	-- Prowler's Cloudy Shoulder Cape
+			i(230038),	-- Prowler's Deep Shoulder Cape
+			i(230039),	-- Prowler's Brick Shoulder Cape
+			i(230040),	-- Prowler's Camo Shoulder Cape
+			i(230041),	-- Prowler's Lively Shoulder Cape
+			i(230042),	-- Prowler's Faded Shoulder Cape
+			i(230043),	-- Prowler's Icy Shoulder Cape
+			i(230044),	-- Prowler's Pink Shoulder Cape
+			i(230045),	-- Prowler's Carrot Shoulder Cape
+			i(230046),	-- Prowler's Rosy Shoulder Cape
+			i(230047),	-- Prowler's Plum Shoulder Cape
+			i(230048),	-- Prowler's Crimson Shoulder Cape
+			i(230049),	-- Prowler's Violet Shoulder Cape
+			i(230050),	-- Prowler's Aquatic Shoulder Cape
+			i(230051),	-- Prowler's Snowy Shoulder Cape
+			i(230052),	-- Prowler's Sunny Shoulder Cape
+			i(230054),	-- Prowler's Midnight Cowl
+			i(230055),	-- Prowler's Azure Cowl
+			i(230056),	-- Prowler's Sepia Cowl
+			i(230057),	-- Prowler's Grassy Cowl
+			i(230058),	-- Prowler's Cloudy Cowl
+			i(230059),	-- Prowler's Deep Cowl
+			i(230060),	-- Prowler's Camo Cowl
+			i(230061),	-- Prowler's Brick Cowl
+			i(230062),	-- Prowler's Lively Cowl
+			i(230063),	-- Prowler's Faded Cowl
+			i(230064),	-- Prowler's Icy Cowl
+			i(230065),	-- Prowler's Pink Cowl
+			i(230066),	-- Prowler's Carrot Cowl
+			i(230067),	-- Prowler's Rosy Cowl
+			i(230068),	-- Prowler's Plum Cowl
+			i(230069),	-- Prowler's Crimson Cowl
+			i(230070),	-- Prowler's Violet Cowl
+			i(230071),	-- Prowler's Aquatic Cowl
+			i(230072),	-- Prowler's Snowy Cowl
+			i(230073),	-- Prowler's Sunny Cowl
+			i(230074),	-- Prowler's Midnight Mask
+			i(230075),	-- Prowler's Azure Mask
+			i(230076),	-- Prowler's Sepia Mask
+			i(230077),	-- Prowler's Grassy Mask
+			i(230078),	-- Prowler's Cloudy Mask
+			i(230079),	-- Prowler's Deep Mask
+			i(230080),	-- Prowler's Camo Mask
+			i(230081),	-- Prowler's Brick Mask
+			i(230082),	-- Prowler's Lively Mask
+			i(230083),	-- Prowler's Faded Mask
+			i(230084),	-- Prowler's Icy Mask
+			i(230085),	-- Prowler's Pink Mask
+			i(230086),	-- Prowler's Carrot Mask
+			i(230087),	-- Prowler's Rosy Mask
+			i(230088),	-- Prowler's Plum Mask
+			i(230089),	-- Prowler's Crimson Mask
+			i(230090),	-- Prowler's Violet Mask
+			i(230091),	-- Prowler's Aquatic Mask
+			i(230092),	-- Prowler's Snowy Mask
+			i(230093),	-- Prowler's Sunny Mask
+			i(230152),	-- Ensemble: Prowler's Midnight Headgear
+			i(230165),	-- Ensemble: Prowler's Azure Headgear
+			i(230166),	-- Ensemble: Prowler's Sepia Headgear
+			i(230167),	-- Ensemble: Prowler's Grassy Headgear
+			i(230168),	-- Ensemble: Prowler's Cloudy Headgear
+			i(230169),	-- Ensemble: Prowler's Deep Headgear
+			i(230170),	-- Ensemble: Prowler's Camo Headgear
+			i(230171),	-- Ensemble: Prowler's Brick Headgear
+			i(230172),	-- Ensemble: Prowler's Lively Headgear
+			i(230173),	-- Ensemble: Prowler's Faded Headgear
+			i(230174),	-- Ensemble: Prowler's Icy Headgear
+			i(230175),	-- Ensemble: Prowler's Pink Headgear
+			i(230176),	-- Ensemble: Prowler's Carrot Headgear
+			i(230177),	-- Ensemble: Prowler's Rosy Headgear
+			i(230178),	-- Ensemble: Prowler's Plum Headgear
+			i(230179),	-- Ensemble: Prowler's Crimson Headgear
+			i(230180),	-- Ensemble: Prowler's Violet Headgear
+			i(230181),	-- Ensemble: Prowler's Aquatic Headgear
+			i(230182),	-- Ensemble: Prowler's Snowy Headgear
+			i(230183),	-- Ensemble: Prowler's Sunny Headgear
+			i(230258),	-- Bronze Celebration Titles: Classic Enthusiast
+			i(230259),	-- Bronze Celebration Titles: Outland Enthusiast
+			i(230260),	-- Bronze Celebration Titles: Northrend Enthusiast
+			i(230261),	-- Bronze Celebration Titles: Cataclysm Enthusiast
+			i(230262),	-- Bronze Celebration Titles: Pandaria Enthusiast
+			i(230263),	-- Bronze Celebration Titles: Draenor Enthusiast
+			i(230264),	-- Bronze Celebration Titles: Broken Isles Enthusiast
+			i(230265),	-- Bronze Celebration Titles: Zuldazar Enthusiast
+			i(230266),	-- Bronze Celebration Titles: Kul Tiras Enthusiast
+			i(230267),	-- Bronze Celebration Titles: Shadowlands Enthusiast
+			i(230268),	-- Bronze Celebration Titles: Dragon Isles Enthusiast
+			i(230283),	-- Weird Egg
+			i(230853),	-- Aegis of Yuletide
+			i(230869),	-- Ensemble: Crimson Aspirant's Cloth Armor
+			i(230870),	-- Ensemble: Crimson Aspirant's Leather Armor
+			i(230871),	-- Ensemble: Crimson Aspirant's Mail Armor
+			i(230872),	-- Ensemble: Crimson Aspirant's Plate Armor
+			i(230873),	-- Ensemble: Crimson Gladiator's Death Knight Armor
+			i(230874),	-- Ensemble: Crimson Gladiator's Demon Hunter Armor
+			i(230875),	-- Ensemble: Crimson Gladiator's Druid Armor
+			i(230876),	-- Ensemble: Crimson Gladiator's Evoker Armor
+			i(230877),	-- Ensemble: Crimson Gladiator's Hunter Armor
+			i(230878),	-- Ensemble: Crimson Gladiator's Mage Armor
+			i(230879),	-- Ensemble: Crimson Gladiator's Monk Armor
+			i(230880),	-- Ensemble: Crimson Gladiator's Paladin Armor
+			i(230881),	-- Ensemble: Crimson Gladiator's Priest Armor
+			i(230882),	-- Ensemble: Crimson Gladiator's Rogue Armor
+			i(230883),	-- Ensemble: Crimson Gladiator's Shaman Armor
+			i(230884),	-- Ensemble: Crimson Gladiator's Warlock Armor
+			i(230885),	-- Ensemble: Crimson Gladiator's Warrior Armor
+			i(230886),	-- Ensemble: Elite Crimson Gladiator's Death Knight Armor
+			i(230887),	-- Ensemble: Elite Crimson Gladiator's Demon Hunter Armor
+			i(230888),	-- Ensemble: Elite Crimson Gladiator's Druid Armor
+			i(230889),	-- Ensemble: Elite Crimson Gladiator's Evoker Armor
+			i(230890),	-- Ensemble: Elite Crimson Gladiator's Hunter Armor
+			i(230891),	-- Ensemble: Elite Crimson Gladiator's Mage Armor
+			i(230892),	-- Ensemble: Elite Crimson Gladiator's Monk Armor
+			i(230893),	-- Ensemble: Elite Crimson Gladiator's Paladin Armor
+			i(230894),	-- Ensemble: Elite Crimson Gladiator's Priest Armor
+			i(230895),	-- Ensemble: Elite Crimson Gladiator's Rogue Armor
+			i(230896),	-- Ensemble: Elite Crimson Gladiator's Shaman Armor
+			i(230897),	-- Ensemble: Elite Crimson Gladiator's Warlock Armor
+			i(230898),	-- Ensemble: Elite Crimson Gladiator's Warrior Armor
+			i(230899),	-- Arsenal: Crimson Aspirant's Weapons
+			i(230900),	-- Arsenal: Crimson Gladiator's Weapons
+			i(230901),	-- Arsenal: Elite Crimson Gladiator's Weapons
+			i(230940),	-- Wings of the Sapphire Monarch
+			i(230951),	-- Ensemble: Obsidian Aspirant's Cloth Armor
+			i(230952),	-- Ensemble: Obsidian Aspirant's Leather Armor
+			i(230953),	-- Ensemble: Obsidian Aspirant's Mail Armor
+			i(230954),	-- Ensemble: Obsidian Aspirant's Plate Armor
+			i(230955),	-- Ensemble: Obsidian Gladiator's Death Knight Armor
+			i(230956),	-- Ensemble: Obsidian Gladiator's Demon Hunter Armor
+			i(230957),	-- Ensemble: Obsidian Gladiator's Druid Armor
+			i(230958),	-- Ensemble: Obsidian Gladiator's Evoker Armor
+			i(230959),	-- Ensemble: Obsidian Gladiator's Hunter Armor
+			i(230960),	-- Ensemble: Obsidian Gladiator's Mage Armor
+			i(230961),	-- Ensemble: Obsidian Gladiator's Monk Armor
+			i(230962),	-- Ensemble: Obsidian Gladiator's Paladin Armor
+			i(230963),	-- Ensemble: Obsidian Gladiator's Priest Armor
+			i(230964),	-- Ensemble: Obsidian Gladiator's Rogue Armor
+			i(230965),	-- Ensemble: Obsidian Gladiator's Shaman Armor
+			i(230966),	-- Ensemble: Obsidian Gladiator's Warlock Armor
+			i(230967),	-- Ensemble: Obsidian Gladiator's Warrior Armor
+			i(230968),	-- Ensemble: Elite Obsidian Gladiator's Death Knight Armor
+			i(230969),	-- Ensemble: Elite Obsidian Gladiator's Demon Hunter Armor
+			i(230970),	-- Ensemble: Elite Obsidian Gladiator's Druid Armor
+			i(230971),	-- Ensemble: Elite Obsidian Gladiator's Evoker Armor
+			i(230972),	-- Ensemble: Elite Obsidian Gladiator's Hunter Armor
+			i(230973),	-- Ensemble: Elite Obsidian Gladiator's Mage Armor
+			i(230974),	-- Ensemble: Elite Obsidian Gladiator's Monk Armor
+			i(230975),	-- Ensemble: Elite Obsidian Gladiator's Paladin Armor
+			i(230976),	-- Ensemble: Elite Obsidian Gladiator's Priest Armor
+			i(230977),	-- Ensemble: Elite Obsidian Gladiator's Rogue Armor
+			i(230978),	-- Ensemble: Elite Obsidian Gladiator's Shaman Armor
+			i(230979),	-- Ensemble: Elite Obsidian Gladiator's Warlock Armor
+			i(230980),	-- Ensemble: Elite Obsidian Gladiator's Warrior Armor
+			i(230981),	-- Arsenal: Obsidian Aspirant's Weapons
+			i(230982),	-- Arsenal: Obsidian Gladiator's Weapons
+			i(230983),	-- Arsenal: Elite Obsidian Gladiator's Weapons
+			i(231017),	-- Wings of the Onyx Monarch
+			i(231019),	-- Hearthstone Invitation Letter
+			i(231120),	-- Ensemble: Verdant Aspirant's Cloth Armor
+			i(231121),	-- Ensemble: Verdant Aspirant's Leather Armor
+			i(231122),	-- Ensemble: Verdant Aspirant's Mail Armor
+			i(231123),	-- Ensemble: Verdant Aspirant's Plate Armor
+			i(231124),	-- Ensemble: Verdant Gladiator's Death Knight Armor
+			i(231125),	-- Ensemble: Verdant Gladiator's Demon Hunter Armor
+			i(231126),	-- Ensemble: Verdant Gladiator's Druid Armor
+			i(231127),	-- Ensemble: Verdant Gladiator's Evoker Armor
+			i(231128),	-- Ensemble: Verdant Gladiator's Hunter Armor
+			i(231129),	-- Ensemble: Verdant Gladiator's Mage Armor
+			i(231130),	-- Ensemble: Verdant Gladiator's Monk Armor
+			i(231131),	-- Ensemble: Verdant Gladiator's Paladin Armor
+			i(231132),	-- Ensemble: Verdant Gladiator's Priest Armor
+			i(231133),	-- Ensemble: Verdant Gladiator's Rogue Armor
+			i(231134),	-- Ensemble: Verdant Gladiator's Shaman Armor
+			i(231135),	-- Ensemble: Verdant Gladiator's Warlock Armor
+			i(231136),	-- Ensemble: Verdant Gladiator's Warrior Armor
+			i(231137),	-- Ensemble: Elite Verdant Gladiator's Death Knight Armor
+			i(231138),	-- Ensemble: Elite Verdant Gladiator's Demon Hunter Armor
+			i(231139),	-- Ensemble: Elite Verdant Gladiator's Druid Armor
+			i(231140),	-- Ensemble: Elite Verdant Gladiator's Evoker Armor
+			i(231141),	-- Ensemble: Elite Verdant Gladiator's Hunter Armor
+			i(231142),	-- Ensemble: Elite Verdant Gladiator's Mage Armor
+			i(231143),	-- Ensemble: Elite Verdant Gladiator's Monk Armor
+			i(231144),	-- Ensemble: Elite Verdant Gladiator's Paladin Armor
+			i(231145),	-- Ensemble: Elite Verdant Gladiator's Priest Armor
+			i(231146),	-- Ensemble: Elite Verdant Gladiator's Rogue Armor
+			i(231147),	-- Ensemble: Elite Verdant Gladiator's Shaman Armor
+			i(231148),	-- Ensemble: Elite Verdant Gladiator's Warlock Armor
+			i(231149),	-- Ensemble: Elite Verdant Gladiator's Warrior Armor
+			i(231150),	-- Arsenal: Verdant Aspirant's Weapons
+			i(231151),	-- Arsenal: Verdant Gladiator's Weapons
+			i(231152),	-- Arsenal: Elite Verdant Gladiator's Weapons
+			i(231344),	-- Obsidian Gladiator's Greatsword
+			i(231345),	-- Obsidian Gladiator's Greatsword
+			i(231356),	-- Specter
+			i(231365),	-- Karazhan Syphoner
+			i(231374),	-- Enchanted Spellweave Carpet
+			i(231388),	-- Lead Surveyor's Belt
+			i(231389),	-- Luminary Robe
+			i(231390),	-- Spritecaster Cape
+			i(231391),	-- Kentic Amice
+			i(231392),	-- Enthralled Sphere
+			i(231393),	-- Houndmaster's Bow
+			i(231394),	-- Stoneshell Guard
+			i(231395),	-- Earthslag Shoulders
+			i(231396),	-- Naglering
+			i(231397),	-- Rubicund Armguards
+			i(231398),	-- Molten Ironfoe
+			i(231399),	-- Bloodfist
+			i(231400),	-- Fists of Phalanx
+			i(231401),	-- Flamestrider Robes
+			i(231402),	-- Searingscale Leggings
+			i(231403),	-- Kindling Stave
+			i(231404),	-- Cinderhide Armsplints
+			i(231405),	-- Pyremail Wristguards
+			i(231406),	-- Flameweave Cuffs
+			i(231407),	-- Emberplate Armguards
+			i(231408),	-- Lavacrest Leggings
+			i(231409),	-- Force of Magma
+			i(231410),	-- Rubidium Hammer
+			i(231411),	-- Sash of the Burning Heart
+			i(231412),	-- Circle of Flame
+			i(231413),	-- Flame Wrath
+			i(231414),	-- Force of Will
+			i(231415),	-- Cape of the Fire Salamander
+			i(231416),	-- Molten Fists
+			i(231417),	-- Hand of Justice
+			i(231418),	-- Angerforge's Battle Axe
+			i(231419),	-- Lord General's Sword
+			i(231420),	-- Second Wind
+			i(231421),	-- Royal Decorated Armor
+			i(231422),	-- Warstrife Leggings
+			i(231423),	-- Omnicast Boots
+			i(231424),	-- Burst of Knowledge
+			i(231425),	-- Chief Architect's Monocle
+			i(231426),	-- Senior Designer's Pantaloons
+			i(231427),	-- Impervious Giant
+			i(231428),	-- The Hammer of Grace
+			i(231429),	-- Robes of the Royal Crown
+			i(231430),	-- Ghostshroud
+			i(231431),	-- Deathdealer Breastplate
+			i(231432),	-- Legplates of the Eternal Guardian
+			i(231433),	-- Thaurissan's Royal Scepter
+			i(231434),	-- Haunting Specter Leggings
+			i(231435),	-- Guiding Stave of Wisdom
+			i(231436),	-- Imperial Jewel
+			i(231437),	-- Emperor's Seal
+			i(231438),	-- Swiftwalker Boots
+			i(231439),	-- Hands of the Exalted Herald
+			i(231440),	-- Ebonsteel Spaulders
+			i(231441),	-- Wristguards of Renown
+			i(231442),	-- Sash of the Grand Hunt
+			i(231443),	-- Golem Fitted Pauldrons
+			i(231444),	-- Foreman's Head Protector
+			i(231445),	-- Mantle of Lost Hope
+			i(231446),	-- Greaves of Withering Despair
+			i(231447),	-- Bloodclot Band
+			i(231448),	-- Entrenching Boots
+			i(231449),	-- Leggings of Frenzied Magic
+			i(231450),	-- Belt of the Eminent Mason
+			i(231451),	-- Ferrous Cord
+			i(231453),	-- Shard Splinter
+			i(231454),	-- Magma-Shot Boomstick
+			i(231455),	-- Embershard Pendant
+			i(231456),	-- Heart of Roccor
+			i(231457),	-- Bottled Magma
+			i(231458),	-- Insolent Dark Iron's Vest
+			i(231461),	-- Magma Giant's Crown
+			i(231462),	-- Molten Furnace
+			i(231463),	-- Arbiter's Blade
+			i(231464),	-- Flame-Tempered Skinner
+			i(231465),	-- Grizzle's Skinner
+			i(231467),	-- Flamelord's Emberstaff
+			i(231468),	-- Flamekeeper's Fire Blanket
+			i(231469),	-- Spare Golem Pauldrons
+			i(231470),	-- Spare Golem Frame
+			i(231471),	-- Golem Gearbox
+			i(231472),	-- Argelmach's Breaking Bar
+			i(231473),	-- The Fifth's Linked Treads
+			i(231474),	-- Dope'rel's Finger Gloves
+			i(231475),	-- Sabaton's of Anger'rel
+			i(231476),	-- Dope'rel's Calling Rune
+			i(231477),	-- Anvilrage Medic's Boots
+			i(231478),	-- Flamekeeper's Handwraps
+			i(231479),	-- Anvilrage Rogue's Belt of Knives
+			i(231480),	-- Anvilrage Dragoon's Trousers
+			i(231481),	-- Sapper's Waistplate
+			i(231482),	-- Dragoon's Volley Gun
+			i(231483),	-- Flamelash's Fiery Spike
+			i(231484),	-- Fireguard's Lava-Dipped Cleaver
+			i(231485),	-- Flamewalker Scale Spaulders
+			i(231486),	-- Burning Spirit Tender's Mitts
+			i(231487),	-- Helm of the Molten Avatar
+			i(231488),	-- Anvilrage Warden's Breastplate
+			i(231489),	-- Dark Warder's Pauldrons
+			i(231490),	-- Arbiter's Blade
+			i(231491),	-- Grebmar's Catch Pole
+			i(231492),	-- Barman Shanker
+			i(231493),	-- Bottle-Popper Ring
+			i(231494),	-- Golem Carapace Opener
+			i(231495),	-- Ribsplitter
+			i(231496),	-- The Judge's Gavel
+			i(231497),	-- Searing Needle
+			i(231498),	-- Spire of the Stoneshaper
+			i(231499),	-- Doomforged Straightedge
+			i(231500),	-- Funeral Pyre Vestment
+			i(231501),	-- Aristocratic Cuffs
+			i(231502),	-- Mar Alom's Grip
+			i(231503),	-- Braincage
+			i(231504),	-- Runed Golem Shackles
+			i(231505),	-- Stoneshield Cloak
+			i(231506),	-- Blisterbane Wrap
+			i(231507),	-- Battlechaser's Greaves
+			i(231510),	-- Timewarped Relic Coffer Key
+			i(231511),	-- Relic Coffer Key Fragment
+			i(231832),	-- Bronze Celebration Titles: Molten Core Prospector
+			i(231833),	-- Bronze Celebration Titles: Karazhan Graduate
+			i(231839),	-- Trailseeker Longbow
+			i(231840),	-- Trailseeker Crossbow
+			i(231906),	-- High-Alert Thinking Cap
+			i(231907),	-- Tricked-Out Thinking Cap
+			i(231915),	-- Auchenai Priest's Robes
+			i(231916),	-- Auchenai Priest's Boots
+			i(231917),	-- Auchenai Priest's Gloves
+			i(231918),	-- Auchenai Priest's Skullcap
+			i(231919),	-- Auchenai Priest's Leggings
+			i(231920),	-- Auchenai Priest's Spaulders
+			i(231921),	-- Auchenai Priest's Belt
+			i(231922),	-- Auchenai Priest's Bracers
+			i(231923),	-- Shadowmoon Warlock's Robes
+			i(231924),	-- Shadowmoon Warlock's Boots
+			i(231925),	-- Shadowmoon Warlock's Gloves
+			i(231926),	-- Shadowmoon Warlock's Skullcap
+			i(231927),	-- Shadowmoon Warlock's Leggings
+			i(231928),	-- Shadowmoon Warlock's Spaulders
+			i(231929),	-- Shadowmoon Warlock's Belt
+			i(231930),	-- Shadowmoon Warlock's Bracers
+			i(231931),	-- Coldarra Spellbinder's Robes
+			i(231932),	-- Coldarra Spellbinder's Boots
+			i(231933),	-- Coldarra Spellbinder's Gloves
+			i(231934),	-- Coldarra Spellbinder's Skullcap
+			i(231935),	-- Coldarra Spellbinder's Leggings
+			i(231936),	-- Coldarra Spellbinder's Spaulders
+			i(231937),	-- Coldarra Spellbinder's Belt
+			i(231938),	-- Coldarra Spellbinder's Bracers
+			i(231939),	-- Drakkari Stalker's Sollerets
+			i(231940),	-- Drakkari Stalker's Grips
+			i(231941),	-- Drakkari Stalker's Vision
+			i(231942),	-- Drakkari Stalker's Legwraps
+			i(231943),	-- Drakkari Stalker's Spaulders
+			i(231944),	-- Drakkari Stalker's Girdle
+			i(231945),	-- Drakkari Stalker's Bindings
+			i(231946),	-- Drakkari Stalker's Jerkin
+			i(231947),	-- Cenarion Mender's Sollerets
+			i(231948),	-- Cenarion Mender's Grips
+			i(231949),	-- Cenarion Mender's Vision
+			i(231950),	-- Cenarion Mender's Legwraps
+			i(231951),	-- Cenarion Mender's Spaulders
+			i(231952),	-- Cenarion Mender's Girdle
+			i(231953),	-- Cenarion Mender's Bindings
+			i(231954),	-- Cenarion Mender's Robes
+			i(231955),	-- Boulderfist Mystic's Mantle
+			i(231956),	-- Boulderfist Mystic's Harness
+			i(231957),	-- Boulderfist Mystic's Breeches
+			i(231958),	-- Boulderfist Mystic's Boots
+			i(231959),	-- Boulderfist Mystic's Hood
+			i(231960),	-- Boulderfist Mystic's Grips
+			i(231961),	-- Boulderfist Mystic's Wraps
+			i(231962),	-- Boulderfist Mystic's Girdle
+			i(231963),	-- Brunnhildar Scout's Mantle
+			i(231964),	-- Brunnhildar Scout's Harness
+			i(231965),	-- Brunnhildar Scout's Breeches
+			i(231966),	-- Brunnhildar Scout's Boots
+			i(231967),	-- Brunnhildar Scout's Hood
+			i(231968),	-- Brunnhildar Scout's Grips
+			i(231969),	-- Brunnhildar Scout's Wraps
+			i(231970),	-- Brunnhildar Scout's Girdle
+			i(231971),	-- Jotunheim Berserker's Sabatons
+			i(231972),	-- Jotunheim Berserker's Handguards
+			i(231973),	-- Jotunheim Berserker's Helm
+			i(231974),	-- Jotunheim Berserker's Greaves
+			i(231975),	-- Jotunheim Berserker's Pauldrons
+			i(231976),	-- Jotunheim Berserker's Waistguard
+			i(231977),	-- Jotunheim Berserker's Bracelets
+			i(231978),	-- Jotunheim Berserker's Chestguard
+			i(231979),	-- Ymirjar Deathbringer's Sabatons
+			i(231980),	-- Ymirjar Deathbringer's Handguards
+			i(231981),	-- Ymirjar Deathbringer's Helm
+			i(231982),	-- Ymirjar Deathbringer's Greaves
+			i(231983),	-- Ymirjar Deathbringer's Pauldrons
+			i(231984),	-- Ymirjar Deathbringer's Waistguard
+			i(231985),	-- Ymirjar Deathbringer's Bracelets
+			i(231986),	-- Ymirjar Deathbringer's Chestguard
+			i(231987),	-- Telhamat Anchorite's Sabatons
+			i(231988),	-- Telhamat Anchorite's Handguards
+			i(231989),	-- Telhamat Anchorite's Helm
+			i(231990),	-- Telhamat Anchorite's Greaves
+			i(231991),	-- Telhamat Anchorite's Pauldrons
+			i(231992),	-- Telhamat Anchorite's Waistguard
+			i(231993),	-- Telhamat Anchorite's Bracelets
+			i(231994),	-- Telhamat Anchorite's Chestguard
+			i(231999),	-- Dragonflayer Heartpiercer
+			i(232000),	-- Frosted Ymirheim Battle Bow
+			i(232001),	-- Blazing Skyhawk Repeater
+			i(232002),	-- Amani Tracker's Blunderbuss
+			i(232003),	-- Wolf-Eyed Sharpshooter
+			i(232004),	-- Ironforge Hammerhead Rifle
+			i(232008),	-- Magehunter's Ornate Dagger
+			i(232010),	-- Vrykul Gutripper
+			i(232019),	-- Dark Ritualists Spellblade
+			i(232020),	-- Stormforged Short Blade
+			i(232021),	-- Sunburst Sticker
+			i(232022),	-- Point of the Nether Vortex
+			i(232023),	-- Chilled Obsidian Dragon's Tooth
+			i(232024),	-- Sunfury Stalker's Fists
+			i(232025),	-- Frost Giant's Claws
+			i(232026),	-- Drakkari Voodoo Stick
+			i(232027),	-- Dragonflayer's Iron Cleaver
+			i(232028),	-- Warsong Coldweather Cleaver
+			i(232029),	-- Auchenai Vindicator's Crystal Cleaver
+			i(232032),	-- Creche-Binder's Gloves
+			i(232033),	-- Creche-Binder's Cord
+			i(232034),	-- Creche-Binder's Leggings
+			i(232035),	-- Creche-Binder's Soles
+			i(232036),	-- Creche-Binder's Robe
+			i(232037),	-- Creche-Binder's Wrappings
+			i(232038),	-- Creche-Binder's Rod
+			i(232039),	-- Crystal-Hooked Shortsword
+			i(232040),	-- Corrupted Sunblade
+			i(232041),	-- Titan-Spark Longblade
+			i(232042),	-- Azure Magus' Blade
+			i(232043),	-- Crystal-Maw Basher
+			i(232044),	-- Hammer of the Forest Loas
+			i(232048),	-- Felguard Sentinel's Polearm
+			i(232050),	-- Ashtongue Guardian's Spire
+			i(232051),	-- Ashtongue Channeler's Staff
+			i(232052),	-- Dragonflayer's Wing Splitter
+			i(232055),	-- Griffon's Teeth Ripper
+			i(232056),	-- Ymirjar Battle Harpoon
+			i(232057),	-- Drake's Breath Heater Shield
+			i(232058),	-- Ceremonial Stratholme Shield
+			i(232059),	-- Tainted Keeper's Visage
+			i(232060),	-- Coldarra Spellbinder's Stave
+			i(232061),	-- Cenarion Gaurdian's Stave
+			i(232062),	-- Shadowsword Vanquisher's Blade
+			i(232063),	-- Drakkari Head Splitter
+			i(232064),	-- Leviathan Mk II Crowd Control Blade
+			i(232065),	-- Crimson Draenethyst Crusher
+			i(232066),	-- Icefrost Focuser
+			i(232067),	-- Amani'shi Voodoo Bow
+			i(232078),	-- Ghostly Titan Astrolabe
+			i(232264),	-- Creche-Guard's Greataxe
+			i(232265),	-- Creche-Guard's Chopper
+			i(232266),	-- Creche-Guard's Bulwark
+			i(232267),	-- Creche-Guard's Axe
+			i(232268),	-- Creche-Guard's Vambraces
+			i(232269),	-- Creche-Guard's Girdle
+			i(232270),	-- Creche-Guard's Pauldrons
+			i(232272),	-- Creche-Guard's Legplates
+			i(232274),	-- Creche-Guard's Gauntlets
+			i(232275),	-- Creche-Guard's Sabatons
+			i(232276),	-- Creche-Guard's Brestplate
+			i(232277),	-- Creche-Scout's Rifle
+			i(232278),	-- Creche-Scout's Longspear
+			i(232279),	-- Creche-Scout's Bracers
+			i(232282),	-- Creche-Scout's Belt
+			i(232283),	-- Creche-Scout's Spaulders
+			i(232284),	-- Creche-Scout's Chausses
+			i(232285),	-- Creche-Scout's Gauntlets
+			i(232286),	-- Creche-Scout's Greaves
+			i(232287),	-- Creche-Scout's Vest
+			i(232288),	-- Creche-Talon's Poniard
+			i(232289),	-- Creche-Talon's Baselard
+			i(232290),	-- Creche-Talon's Blade
+			i(232291),	-- Battered Bulwark of the Argent Crusade
+			i(232292),	-- Creche-Talon's Bindings
+			i(232293),	-- Creche-Talon's Clasp
+			i(232301),	-- Tempered Banner of the Algari
+			i(232305),	-- Forged Champion's Prestigious Banner
+			i(232313),	-- Ensemble: Coldarra Spellbinder's Regalia
+			i(232314),	-- Ensemble: Jotunheim Berserker's Battleplate
+			i(232315),	-- Ensemble: Ymirjar Deathbringer's Battleplate
+			i(232316),	-- Ensemble: Brunnhildar Scout's Kit
+			i(232317),	-- Ensemble: Drakkari Stalker's Trappings
+			i(232318),	-- Ensemble: Shadowmoon Warlock's Vestments
+			i(232319),	-- Ensemble: Auchenai Priest's Raiment
+			i(232320),	-- Ensemble: Telhamant Anchorite's Raiment
+			i(232321),	-- Ensemble: Boulderfist Mystic's Battlegear
+			i(232322),	-- Ensemble: Cenarion Mender's Battlegear
+			i(232325),	-- Creche-Talon's Breeches
+			i(232326),	-- Creche-Talon's Gloves
+			i(232327),	-- Creche-Talon's Kickers
+			i(232328),	-- Creche-Talon's Jerkin
+			i(232329),	-- Creche-Weaver's Spire
+			i(232330),	-- Creche-Weaver's Bangle
+			i(232331),	-- Creche-Weaver's Sash
+			i(232332),	-- Creche-Weaver's Robe
+			i(232333),	-- Creche-Weaver's Leggings
+			i(232334),	-- Creche-Weaver's Mitts
+			i(232335),	-- Creche-Weaver's Slippers
+			i(232336),	-- Creche-Magus's Staff
+			i(232337),	-- Creche-Magus's Bindings
+			i(232338),	-- Creche-Magus's Cinch
+			i(232339),	-- Creche-Magus's Regalia
+			i(232340),	-- Creche-Magus's Pants
+			i(232341),	-- Creche-Magus's Gloves
+			i(232342),	-- Creche-Magus's Shoes
+			i(232345),	-- Xu'rakas, Glaive of Command
+			i(232346),	-- Creche-Waker's Figurine
+			i(232347),	-- Creche-Waker's Insignia
+			i(232348),	-- Creche-Waker's Loop
+			i(232349),	-- Creche-Waker's Ring
+			i(232350),	-- Creche-Waker's Amulet
+			i(232351),	-- Creche-Waker's Cloak
+			i(232365),	-- Timewarped Relic Coffer Key
+			i(232366),	-- Timewarped Relic Coffer Key
+			i(232371),	-- Companion Experience
+			i(232374),	-- Greasy Links
+			i(232375),	-- Moon Bread
+			i(232376),	-- Cherry Bombs
+			i(232377),	-- Pappy Thunderbrew's Cough Syrup
+			i(232378),	-- Jenkins' No Nonsense Fried Chicken
+			i(232380),	-- Brivelthwerp's Sassafras Float
+			i(232385),	-- Elekk Ear
+		})),
 		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			explorationHeader({
 				exploration(15667),	-- Delves

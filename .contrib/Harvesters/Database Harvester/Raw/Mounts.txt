@@ -1990,3 +1990,11 @@
 463025@@@Gigantic Grrloc
 11.0.2.56380
 448850@@@Kah, Legend of the Deep
+11.0.5.56487
+428013@@@Incognitro, the Indecipherable Felcycle
+428067@@@Hateforged Blazecycle
+431359@@@Soaring Sky Fox
+452643@@@Frayfeather Hippogryph
+452645@@@Amani Hunting Bear
+463133@@@Coldflame Tempest
+468353@@@Enchanted Spellweave Carpet
