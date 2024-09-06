@@ -326,9 +326,7 @@ root(ROOTS.PetBattles, petbattle({
 			crit(56706),	-- Mister Toots
 			crit(56707),	-- Mister Muskoxeles
 			crit(60889),	-- Princess Vorquistrasza
-			["g"] = {
-				title(480),	-- <Name>, Knight of Feathersworth
-			}
+			title(480),	-- <Name>, Knight of Feathersworth
 		})),
 		ach(6554),	-- He's Mine! (10)
 		ach(6555),	-- Building a Team (25)

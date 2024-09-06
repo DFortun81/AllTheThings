@@ -1203,234 +1203,199 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						i(122190),	-- Ring of Blood Invitation
 					},
 				}),
-				n(89763, {	-- Muradin Bronzebeard
+				header(HEADERS.NPC,	89763, {	-- Muradin Bronzebeard
 					["description"] = "Muradin Bronzebeard has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
 					["crs"] = { 91196 },	-- Muradin Bronzebeard
-					["coord"] = { 34.1, 32.6, LUNARFALL },
 					["races"] = ALLIANCE_ONLY,
-					["g"] = {
+					["g"] = bubbleDownFiltered({ ["coord"] = { 34.1, 32.6, LUNARFALL }, ["races"] = ALLIANCE_ONLY, ["qg"] = 91196 },FILTERFUNC_questID,{
 						i(123975, {	-- Greater Bounty Spoils
 							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						q(39255, {	-- Amphitheater of the Eternal
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(37767, {	-- Arcane Sanctum: Ko'ragh
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(123975),	-- Greater Bounty Spoils
 							},
 						}),
 						q(37796, {	-- Auchindoun
 							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(824),	-- Garrison Resources (175)
 							},
 						}),
 						q(37772, {	-- Blackhand's Crucible: Blackhand
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(123975),	-- Greater Bounty Spoils
 							},
 						}),
 						q(37795, {	-- Bloodmaul Slag Mines
 							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(824),	-- Garrison Resources (175)
 							},
 						}),
 						q(39251, {	-- Court of Blood
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(39252, {	-- Deadeye's Vision
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(39259, {	-- Destructor's Rise
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(823),	-- Apexis Crystal (1,000)
 							},
 						}),
 						q(37794, {	-- Grimrail Depot
 							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(824),	-- Garrison Resources (175)
 							},
 						}),
 						q(39257, {	-- Grommash's Torment
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(39248, {	-- Hellfire Assault
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(37768, {	-- Imperator's Rise: Imperator Mar'gok
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(123975),	-- Greater Bounty Spoils
 							},
 						}),
 						q(37771, {	-- Iron Assembly: Admiral Gar'an
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(123975),	-- Greater Bounty Spoils
 							},
 						}),
 						q(37793, {	-- Iron Docks
 							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(824),	-- Garrison Resources (175)
 							},
 						}),
 						q(39254, {	-- Iskar's Clutch
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(39253, {	-- Maw of Souls
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(823),	-- Apexis Crystal (1,000)
 							},
 						}),
 						q(39250, {	-- Pits of Mannoroth
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(823),	-- Apexis Crystal (1,000)
 							},
 						}),
 						q(37792, {	-- Shadowmoon Burial Grounds
 							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(824),	-- Garrison Resources (175)
 							},
 						}),
 						q(37791, {	-- Skyreach
 							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(824),	-- Garrison Resources (175)
 							},
 						}),
 						q(37769, {	-- Slagworks: Heart of the Mountain
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(123975),	-- Greater Bounty Spoils
 							},
 						}),
 						q(39256, {	-- Temple of Tyranny
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(823),	-- Apexis Crystal (1,000)
 							},
 						}),
 						q(37770, {	-- The Black Forge: Kromog
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(123975),	-- Greater Bounty Spoils
 							},
 						}),
 						q(39260, {	-- The Black Gate
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(823),	-- Apexis Crystal (1,000)
 							},
 						}),
 						q(37790, {	-- The Everbloom
 							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(824),	-- Garrison Resources (175)
 							},
 						}),
 						q(39258, {	-- The Felborne Breach
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(39249, {	-- The Iron Bulwark
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(37789, {	-- Upper Blackrock Spire
 							["isDaily"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								currency(824),	-- Garrison Resources (175)
 							},
 						}),
 						q(37766, {	-- Walled City: Brackenspore
 							["isWeekly"] = true,
-							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(123975),	-- Greater Bounty Spoils
 							},
 						}),
-					},
+					}),
 				}),
-				n(89753, {	-- High Overlord Saurfang
+				header(HEADERS.NPC, 89753, { 	-- High Overlord Saurfang
 					["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
 					["crs"] = { 91195 },	-- High Overlord Saurfang
-					["coord"] = { 40.2, 56.7, FROSTWALL },
 					["races"] = HORDE_ONLY,
-					["g"] = {
+					["g"] = bubbleDownFiltered({ ["coord"] = { 40.2, 56.7, FROSTWALL }, ["races"] = HORDE_ONLY, ["qg"] = 91195 },FILTERFUNC_questID,{
 						i(123975, {	-- Greater Bounty Spoils
 							["sym"] = { { "fill" } },	-- simply fill this item
 						}),
 						q(39227, {	-- Amphitheater of the Eternal
 							["isWeekly"] = true,
-							["races"] = HORDE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(37757, {	-- Arcane Sanctum: Ko'ragh
-							["races"] = HORDE_ONLY,
 							["isWeekly"] = true,
 							["g"] = {
 								i(123975),	-- Greater Bounty Spoils
 							},
 						}),
 						q(37780, {	-- Auchindoun
-							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 							["g"] = {
 								currency(824),	-- Garrison Resources x175
 							},
 						}),
 						q(37765, {	-- Blackhand's Crucible: Blackhand
-							["races"] = HORDE_ONLY,
 							["isWeekly"] = true,
 							["g"] = {
 								i(123975),	-- Greater Bounty Spoils
 							},
 						}),
 						q(37781, {	-- Bloodmaul Slag Mines
-							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 							["g"] = {
 								currency(824),	-- Garrison Resources x175
@@ -1438,23 +1403,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						}),
 						q(39222, {	-- Court of Blood
 							["isWeekly"] = true,
-							["races"] = HORDE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(39223, {	-- Deadeye's Vision
 							["isWeekly"] = true,
-							["races"] = HORDE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(39231, {	-- Destructor's Rise
-							["races"] = HORDE_ONLY,
 							["isWeekly"] = true,
 							["g"] = {
 								currency(823),	-- Apexis Crystal x1000
 							},
 						}),
 						q(37782, {	-- Grimrail Depot
-							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 							["g"] = {
 								currency(824),	-- Garrison Resources x175
@@ -1462,30 +1423,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						}),
 						q(39229, {	-- Grommash's Torment
 							["isWeekly"] = true,
-							["races"] = HORDE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(39193, {	-- Hellfire Assault
 							["isWeekly"] = true,
-							["races"] = HORDE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(37758, {	-- Imperator's Rise: Imperator Mar'gok
-							["races"] = HORDE_ONLY,
 							["isWeekly"] = true,
 							["g"] = {
 								i(123975),	-- Greater Bounty Spoils
 							},
 						}),
 						q(37764, {	-- Iron Assembly: Admiral Gar'an
-							["races"] = HORDE_ONLY,
 							["isWeekly"] = true,
 							["g"] = {
 								i(123975),	-- Greater Bounty Spoils
 							},
 						}),
 						q(37783, {	-- Iron Docks
-							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 							["g"] = {
 								currency(824),	-- Garrison Resources x175
@@ -1493,67 +1449,57 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						}),
 						q(39226, {	-- Iskar's Clutch
 							["isWeekly"] = true,
-							["races"] = HORDE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(39225, {	-- Maw of Souls
-							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 							["g"] = {
 								currency(823),	-- Apexis Crystal x1000
 							},
 						}),
 						q(39221, {	-- Pits of Mannoroth
-							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 							["g"] = {
 								currency(823),	-- Apexis Crystal x1000
 							},
 						}),
 						q(37784, {	-- Shadowmoon Burial Grounds
-							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 							["g"] = {
 								currency(824),	-- Garrison Resources x175
 							},
 						}),
 						q(37785, {	-- Skyreach
-							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 							["g"] = {
 								currency(824),	-- Garrison Resources x175
 							},
 						}),
 						q(37762, {	-- Slagworks: Heart of the Mountain
-							["races"] = HORDE_ONLY,
 							["isWeekly"] = true,
 							["g"] = {
 								i(123975),	-- Greater Bounty Spoils
 							},
 						}),
 						q(39228, {	-- Temple of Tyranny
-							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 							["g"] = {
 								currency(823),	-- Apexis Crystal x1000
 							},
 						}),
 						q(37763, {	-- The Black Forge: Kromog
-							["races"] = HORDE_ONLY,
 							["isWeekly"] = true,
 							["g"] = {
 								i(123975),	-- Greater Bounty Spoils
 							},
 						}),
 						q(39232, {	-- The Black Gate
-							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 							["g"] = {
 								currency(823),	-- Apexis Crystal x1000
 							},
 						}),
 						q(37786, {	-- The Everbloom
-							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 							["g"] = {
 								currency(824),	-- Garrison Resources x175
@@ -1561,29 +1507,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						}),
 						q(39230, {	-- The Felborne Breach
 							["isWeekly"] = true,
-							["races"] = HORDE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(39219, {	-- The Iron Bulwark
 							["isWeekly"] = true,
-							["races"] = HORDE_ONLY,
 							["u"] = REMOVED_FROM_GAME,
 						}),
 						q(37787, {	-- Upper Blackrock Spire
-							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
 							["g"] = {
 								currency(824),	-- Garrison Resources x175
 							},
 						}),
 						q(37756, {	-- Walled City: Brackenspore
-							["races"] = HORDE_ONLY,
 							["isWeekly"] = true,
 							["g"] = {
 								i(123975),	-- Greater Bounty Spoils
 							},
 						}),
-					},
+					}),
 				}),
 			}),
 			q(38243, {	-- A Bit of Ore
