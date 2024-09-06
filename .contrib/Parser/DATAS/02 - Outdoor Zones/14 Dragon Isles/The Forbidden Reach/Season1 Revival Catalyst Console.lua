@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 	m(THE_FORBIDDEN_REACH, {
 		-- #if AFTER TWW
 		o(382621, {	-- Revival Catalyst Console
-			["description"] = "The Revival Catalyst is a system that allows you convert Primalist Items from the Forbidden Reach Zone or a Normal Mode Non-set items from the Vault of the Incarnates Raid into your class' Normal Transmog Set.\n\nIf you upgrade your Primal Storm Item to 3/3 Upgrades, you will instead unlock your classes' Heroic Vault of the Incarnes Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+			["description"] = "The Revival Catalyst is a system that allows you convert Primalist Items from the Forbidden Reach Zone or a Normal Mode Non-set items from the Vault of the Incarnates Raid into your class' Normal Transmog Set.\n\nIf you upgrade your Primal Storm Item to 3/3 Upgrades, you will instead unlock your classes' Heroic Vault of the Incarnes Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 			["coord"] = { 60.6, 53.8, THALDRASZUS },
 			["modelScale"] = 4,
 			["g"] = bubbleDown({ ["modID"] = 4 }, {
