@@ -13,10 +13,19 @@ root(ROOTS.PVP, pvp(filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0
 			i(165019, {	-- Vicious Black Warsaber (MOUNT!)
 				["timeline"] = { ADDED_9_0_2_LAUNCH },
 			}),
+			i(213439, {	-- Vicious Dreamtalon [A] (MOUNT!)
+				["timeline"] = { ADDED_11_0_2 },
+			}),
 			i(140353, {	-- Vicious Gilnean Warhorse (MOUNT!)
 				["timeline"] = { ADDED_7_0_3_LAUNCH }
 			}),
 			i(102514),	-- Vicious Kaldorei Warsaber (MOUNT!)
+			i(210070, {	-- Vicious Moonbeast [A] (MOUNT!)
+				["timeline"] = { ADDED_11_0_2 },
+			}),
+			i(201789, {	-- Vicious Sabertooth [A] (MOUNT!)
+				["timeline"] = { ADDED_11_0_2 },
+			}),
 			i(163122, {	-- Vicious War Basilisk [A] (MOUNT!)
 				["timeline"] = { ADDED_9_0_2_LAUNCH },
 			}),
@@ -47,6 +56,9 @@ root(ROOTS.PVP, pvp(filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0
 			i(163123, {	-- Vicious War Riverbeast (MOUNT!)
 				["timeline"] = { ADDED_9_0_2_LAUNCH },
 			}),
+			i(205246, {	-- Vicious War Snail [A] (MOUNT!)
+				["timeline"] = { ADDED_11_0_2 },
+			}),
 			i(184014, {	-- Vicious War Spider [A] (MOUNT!)
 				["timeline"] = { ADDED_10_0_2_LAUNCH },
 			}),
@@ -71,6 +83,15 @@ root(ROOTS.PVP, pvp(filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0
 		}, {
 			i(165020, {	-- Vicious Black Bonesteed (MOUNT!)
 				["timeline"] = { ADDED_9_0_2_LAUNCH },
+			}),
+			i(213440, {	-- Vicious Dreamtalon [H] (MOUNT!)
+				["timeline"] = { ADDED_11_0_2 },
+			}),
+			i(210069, {	-- Vicious Moonbeast [H] (MOUNT!)
+				["timeline"] = { ADDED_11_0_2 },
+			}),
+			i(201788, {	-- Vicious Sabertooth [H] (MOUNT!)
+				["timeline"] = { ADDED_11_0_2 },
 			}),
 			i(102533),	-- Vicious Skeletal Warhorse (MOUNT!)
 			i(163121, {	-- Vicious War Basilisk [H] (MOUNT!)
@@ -99,6 +120,9 @@ root(ROOTS.PVP, pvp(filter(MOUNTS, bubbleDownSelf({ ["timeline"] = { ADDED_5_4_0
 			}),
 			i(142437, {	-- Vicious War Scorpion (MOUNT!)
 				["timeline"] = { ADDED_7_2_0 },
+			}),
+			i(205245, {	-- Vicious War Snail [H] (MOUNT!)
+				["timeline"] = { ADDED_11_0_2 },
 			}),
 			i(184013, {	-- Vicious War Spider [H] (MOUNT!)
 				["timeline"] = { ADDED_10_0_2_LAUNCH },
