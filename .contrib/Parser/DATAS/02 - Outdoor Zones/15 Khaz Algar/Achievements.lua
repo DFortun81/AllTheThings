@@ -277,6 +277,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				40330,	-- The Ringing Deeps Advanced: Gold
 				40333,	-- The Ringing Deeps Reverse: Gold
 			}},
+			["g"] = {
+				title(594,	{	-- Khaz Algar Racer
+					["timeline"] = { ADDED_11_0_5 },
+				}),
+			},
 		}),
 		ach(40790, {	-- Khaz Algar Explorer
 			-- Meta Achievement

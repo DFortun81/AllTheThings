@@ -3682,7 +3682,6 @@ i(0, 3257);			-- Test Beetle
 i(0, 3308);			-- Time-Lost Duckling
 i(0, 3363);			-- Truesilver Crab
 i(193614, 3314);	-- Groundshaker
-i(191946, 3265);	-- Mister Muskoxeles
 i(193380, 3298);	-- Pink Salamanther
 i(193587, 3312);	-- Time-Lost Duck
 i(193620, 3267);	-- Time-Lost Slyvern
@@ -4223,3 +4222,9 @@ i(0, 4556);			-- Tickler
 i(0, 4549);			-- Tiny Cragling
 i(0, 4560);			-- Zaedu
 --- UNSORTED ---
+
+------------------
+-- PATCH 11.0.5 --
+------------------
+--- ITEM ---
+i(191946, 3265);	-- Mister Muskoxeles

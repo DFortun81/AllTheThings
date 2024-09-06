@@ -65,10 +65,6 @@ root(ROOTS.NeverImplemented, filter(TITLES, {
 		})),
 	}),
 	expansion(EXPANSION.DF, {
-		-- 10.0.2
-		expansion(EXPANSION.DF, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
-			title(480),	-- <Name>, Knight of Feathersworth
-		})),
 
 		-- 10.2.0
 		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {

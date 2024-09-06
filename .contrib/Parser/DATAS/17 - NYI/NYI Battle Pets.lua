@@ -1230,9 +1230,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(193614, {	-- Groundshaker (PET!)
 				["displayID"] = 106649,
 			}),
-			i(191946, {	-- Mister Muskoxeles (PET!)
-				["displayID"] = 106681,
-			}),
 			i(193380, {	-- Pink Salamanther (PET!)
 				["displayID"] = 106629,
 			}),

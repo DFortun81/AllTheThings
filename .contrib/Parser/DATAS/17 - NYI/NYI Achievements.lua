@@ -577,7 +577,6 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
 		expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
-			ach(15644),	-- Good Things Come in Small Packages
 			ach(15517),	-- Solo Shuffle rounds participated in
 			ach(15516),	-- Solo Shuffle rounds won
 			ach(15798),	-- Winding Slitherdrake
@@ -585,7 +584,6 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 
 		-- 10.0.2
 		expansion(EXPANSION.DF, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
-			ach(16731),	-- Court is Now in Session
 			ach(16794),	-- Dragon Isles Crafting Order Apprentice
 			ach(16795),	-- Dragon Isles Crafting Order Journeyman
 			ach(16800),	-- Dragon Isles Crafting Order Master
