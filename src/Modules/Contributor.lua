@@ -49,6 +49,10 @@ local function DoReport(reporttype, id)
 	-- app.PrintDebug("Contributor.DoReport",reporttype,id)
 
 	local reportData = Reports[reporttype][id]
+	-- keyed report data
+	for k,v in pairs(reportData) do
+		reportData[#reportData + 1] = "("..tostring(k).." : "..tostring(v)..")"
+	end
 	-- common report data
 	reportData[#reportData + 1] = "----User Info---"
 	reportData[#reportData + 1] = "PlayerLocation: "..GetReportPlayerLocation()
@@ -67,7 +71,7 @@ local function AddReportData(reporttype, id, data)
 	local reportData = Reports[reporttype][id]
 	if type(data) == "table" then
 		for k,v in pairs(data) do
-			reportData[#reportData + 1] = tostring(k).." : "..tostring(v)
+			reportData[k] = v
 		end
 	else
 		reportData[#reportData + 1] = tostring(data)
