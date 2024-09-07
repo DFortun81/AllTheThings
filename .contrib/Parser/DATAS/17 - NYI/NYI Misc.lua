@@ -1612,6 +1612,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(219693), -- Trophy Uncommon Fish B
 			i(219694), -- Trophy Uncommon Fish C
 			i(219695), -- Trophy Uncoomon Fish D
+			i(228412),	-- Scouting Map: The Skies of the Dragon Isles
 		})),
 	}),
 }));

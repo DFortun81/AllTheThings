@@ -5,6 +5,19 @@
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, 0.5, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+			filter(TOYS, {
+				i(229828),	-- 20th Anniversary Balloon Chest
+				i(228789),	-- Coldflame Ring
+				i(232305),	-- Forged Champion's Prestigious Banner
+				i(224192),	-- Practice Ravager
+				i(232301),	-- Tempered Banner of the Algari
+				i(232302),	-- Unknown
+				i(232303),	-- Unknown
+				i(232304),	-- Unknown
+				i(232306),	-- Unknown
+				i(232307),	-- Unknown
+				i(232308),	-- Unknown
+			}),
 			i(221485),	-- Defias Gunpowder
 			i(223550),	-- Eternal Nemesis Robes
 			i(223551),	-- Eternal Nemesis Boots
@@ -48,7 +61,6 @@ root(ROOTS.Unsorted, {
 			i(223622),	-- 20th Anniversary Cache
 			i(224157),	-- Pet Mirror
 			i(224190),	-- Kreeg's Hardy Draught
-			i(224192),	-- Practice Ravager
 			i(224194),	-- Fashion Frenzy Ribbon
 			i(224278),	-- Timewarped Ironforge Blueprints
 			i(224398),	-- Reins of the Frayfeather Hippogryph
@@ -592,7 +604,6 @@ root(ROOTS.Unsorted, {
 			i(228785),	-- Coldflame Bulwark
 			i(228786),	-- Coldflame Winged Crown
 			i(228788),	-- Coldflame Edged Crest
-			i(228789),	-- Coldflame Ring
 			i(228910),	-- Cache of Nerubian Treasures
 			i(228986),	-- Aesthetician's Coupon Book
 			i(228987),	-- Scroll of Fel Binding
@@ -626,7 +637,6 @@ root(ROOTS.Unsorted, {
 			i(229817),	-- Lovely Airy Longbow
 			i(229826),	-- Bronze Celebration Titles: Grizzly Hills Hiker
 			i(229827),	-- Bronze Celebration Titles: Plaguelands Survivor
-			i(229828),	-- 20th Anniversary Balloon Chest
 			i(229829),	-- Light Blue Balloon
 			i(229830),	-- Dark Blue Balloon
 			i(229831),	-- Gold Balloon
@@ -1118,8 +1128,6 @@ root(ROOTS.Unsorted, {
 			i(232291),	-- Battered Bulwark of the Argent Crusade
 			i(232292),	-- Creche-Talon's Bindings
 			i(232293),	-- Creche-Talon's Clasp
-			i(232301),	-- Tempered Banner of the Algari
-			i(232305),	-- Forged Champion's Prestigious Banner
 			i(232313),	-- Ensemble: Coldarra Spellbinder's Regalia
 			i(232314),	-- Ensemble: Jotunheim Berserker's Battleplate
 			i(232315),	-- Ensemble: Ymirjar Deathbringer's Battleplate
@@ -2180,14 +2188,6 @@ root(ROOTS.Unsorted, {
 				i(219793),	-- 11.0 Leveling Quest Template - Axe 1H - Agi
 				i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
 				i(228364),	-- Endiri's Chipped Boot Knife
-			}),
-			filter(TOYS, {
-				i(218310),	-- Box of Puntables (TOY!) [Winter Veil]
-				i(224809),	-- Earthen Plumber's Pipe (TOY!)
-				i(216887),	-- Unknown (TOY!)
-				-- Should Maybe get a Toy Tag... Lets see later...
-				i(215146),	-- JC Gemcutting Toy
-				i(228412),	-- Scouting Map: The Skies of the Dragon Isles
 			}),
 			race(EARTHEN_ALLIANCE, {
 				-- My Guess?? Earthen Starting Gear?

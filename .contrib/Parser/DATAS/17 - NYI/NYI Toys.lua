@@ -152,4 +152,12 @@ root(ROOTS.NeverImplemented, filter(TOYS, {
 			i(212525),	-- Delicate Ebony Parasol (TOY!)
 		})),
 	}),
+	expansion(EXPANSION.TWW, {
+		-- 11.0.0
+		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+			i(218310),	-- Box of Puntables (TOY!) [Winter Veil]
+			i(224809),	-- Earthen Plumber's Pipe (TOY!)
+			i(216887),	-- Unknown (TOY!)
+		})),
+	}),
 }));
