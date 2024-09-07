@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "i", 63046 },	-- Reins of the Grey Riding Camel
 					},
 				}),
-				achWithRep(4884, 1173),	-- Ramkahen
+				achWithRep(4884, FACTION_RAMKAHEN),	-- Ramkahen
 				ach(5767, {	-- Scourer of the Eternal Sands
 					["provider"] = { "i", 63046 },	-- Reins of the Grey Riding Camel
 					["groups"] = {
@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(5666),	-- Vir'naal Dam
 			}),
 			n(FACTIONS, {
-				faction(1173, {	-- Ramkahen
+				faction(FACTION_RAMKAHEN, {	-- Ramkahen
 					["icon"] = "Interface\\Icons\\inv_misc_tabard_tolvir",
 				}),
 			}),

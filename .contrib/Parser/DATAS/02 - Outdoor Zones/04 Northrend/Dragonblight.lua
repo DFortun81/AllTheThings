@@ -177,10 +177,10 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					achWithRep(1007, 1091, {	-- The Wyrmrest Accord
+					achWithRep(1007, FACTION_THE_WYRMREST_ACCORD, {	-- The Wyrmrest Accord
 						["maps"] = { BOREAN_TUNDRA },
 					}),
-					achWithRep(949, 1073, {	-- Tuskarrmageddon
+					achWithRep(949, FACTION_THE_KALUAK, {	-- Tuskarrmageddon
 						["maps"] = { BOREAN_TUNDRA, HOWLING_FJORD },
 					}),
 					ach(547, {	-- Veteran of the Wrathgate
@@ -255,11 +255,11 @@ root(ROOTS.Zones, {
 					exploration(4161),	-- Wyrmrest Temple
 				}),
 				n(FACTIONS, {
-					faction(1073, {	-- The Kalu'ak
+					faction(FACTION_THE_KALUAK, {	-- The Kalu'ak
 						["maps"] = { BOREAN_TUNDRA, HOWLING_FJORD },
 						["OnTooltip"] = OnTooltipForTheKaluak,
 					}),
-					faction(1091, {	-- The Wyrmrest Accord
+					faction(FACTION_THE_WYRMREST_ACCORD, {	-- The Wyrmrest Accord
 						["maps"] = { BOREAN_TUNDRA },
 					}),
 				}),
@@ -677,7 +677,7 @@ root(ROOTS.Zones, {
 						["qg"] = 27575,	-- Lord Afrasastrasz
 						["sourceQuest"] = 12435,	-- Report to Lord Afrasastrasz
 						["coord"] = { 59.2, 54.3, DRAGONBLIGHT },
-						["maxReputation"] = { 1091, EXALTED },	-- The Wyrmrest Accord, Exalted.
+						["maxReputation"] = { FACTION_THE_WYRMREST_ACCORD, EXALTED },	-- The Wyrmrest Accord, Exalted.
 						["isDaily"] = true,
 						["groups"] = {
 							ach(1277),	-- Rapid Defense
@@ -1207,7 +1207,7 @@ root(ROOTS.Zones, {
 					q(11960, {	-- Planning for the Future
 						["qg"] = 26228,	-- Trapper Mau'i
 						["coord"] = { 48.2, 74.3, DRAGONBLIGHT },
-						["maxReputation"] = { 1073, EXALTED },	-- The Kalu'ak, Exalted.
+						["maxReputation"] = { FACTION_THE_KALUAK, EXALTED },	-- The Kalu'ak, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12463, {	-- Plunderbeard Must Be Found!

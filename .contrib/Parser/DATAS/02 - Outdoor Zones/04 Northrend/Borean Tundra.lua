@@ -216,10 +216,10 @@ root(ROOTS.Zones, {
 						},
 						-- #endif
 					}),
-					achWithRep(1012, 1037, {	-- The Winds of the North (A)
+					achWithRep(1012, FACTION_ALLIANCE_VANGUARD, {	-- The Winds of the North (A)
 						["races"] = ALLIANCE_ONLY,
 					}),
-					achWithRep(1011, 1052, {	-- The Winds of the North (H)
+					achWithRep(1011, FACTION_HORDE_EXPEDITION, {	-- The Winds of the North (H)
 						["races"] = HORDE_ONLY,
 					}),
 				}),
@@ -299,22 +299,22 @@ root(ROOTS.Zones, {
 					exploration(4129),	-- Warsong Hold
 				}),
 				n(FACTIONS, {
-					faction(1037, {	-- Alliance Vanguard
+					faction(FACTION_ALLIANCE_VANGUARD, {	-- Alliance Vanguard
 						["races"] = ALLIANCE_ONLY,
 					}),
-					faction(1052, {	-- Horde Expedition
+					faction(FACTION_HORDE_EXPEDITION, {	-- Horde Expedition
 						["maps"] = { DRAGONBLIGHT, GRIZZLY_HILLS, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 					}),
-					faction(1064, {	-- The Taunka
+					faction(FACTION_THE_TAUNKA, {	-- The Taunka
 						["maps"] = { DRAGONBLIGHT, GRIZZLY_HILLS, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 					}),
-					faction(1085, {	-- Warsong Offensive
+					faction(FACTION_WARSONG_OFFENSIVE, {	-- Warsong Offensive
 						["maps"] = { DRAGONBLIGHT, GRIZZLY_HILLS, ICECROWN, THE_STORM_PEAKS },
 						["races"] = HORDE_ONLY,
 					}),
-					faction(1050, {	-- Valiance Expedition
+					faction(FACTION_VALIANCE_EXPEDITION, {	-- Valiance Expedition
 						["maps"] = { HOWLING_FJORD, GRIZZLY_HILLS, ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
@@ -508,7 +508,7 @@ root(ROOTS.Zones, {
 						["qg"] = 32548,	-- Corastrasza
 						["sourceQuest"] = 13413,	-- Aces High!
 						["coord"] = { 29.4, 24.8, BOREAN_TUNDRA },
-						["maxReputation"] = { 1091, EXALTED },	-- The Wyrmrest Accord, Exalted.
+						["maxReputation"] = { FACTION_THE_WYRMREST_ACCORD, EXALTED },	-- The Wyrmrest Accord, Exalted.
 						["isDaily"] = true,
 					}),
 					q(11930, {	-- Across Transborea
@@ -785,7 +785,7 @@ root(ROOTS.Zones, {
 						["qg"] = 26117,	-- Raelorasz
 						["sourceQuest"] = 11919,	-- Drake Hunt
 						["coord"] = { 33.3, 34.5, BOREAN_TUNDRA },
-						["maxReputation"] = { 1091, EXALTED },	-- The Wyrmrest Accord, Exalted.
+						["maxReputation"] = { FACTION_THE_WYRMREST_ACCORD, EXALTED },	-- The Wyrmrest Accord, Exalted.
 						["isDaily"] = true,
 					}),
 					q(11866, {	-- Ears of Our Enemies
@@ -1585,7 +1585,7 @@ root(ROOTS.Zones, {
 					q(11945, {	-- Preparing for the Worst
 						["qg"] = 26213,	-- Utaik
 						["coord"] = { 64.0, 45.7, BOREAN_TUNDRA },
-						["maxReputation"] = { 1073, EXALTED },	-- The Kalu'ak, Exalted.
+						["maxReputation"] = { FACTION_THE_KALUAK, EXALTED },	-- The Kalu'ak, Exalted.
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/8 Kaskala Supplies

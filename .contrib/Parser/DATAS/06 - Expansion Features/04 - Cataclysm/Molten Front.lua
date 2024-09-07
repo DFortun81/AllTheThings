@@ -38,7 +38,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						crit(17827),	-- Child of Tortolla
 					},
 				}),
-				achWithRep(5827, 1204, {	-- Avengers of Hyjal
+				achWithRep(5827, FACTION_AVENGERS_OF_HYJAL, {	-- Avengers of Hyjal
 					title(188),	-- <Name>, Avenger of Hyjal
 				}),
 				ach(5874, {	-- Death From Above  (Mount Hyjal - The Molten Front)
@@ -185,7 +185,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 			}),
 			n(FACTIONS, {
-				faction(1204),	-- Avengers of Hyjal
+				faction(FACTION_AVENGERS_OF_HYJAL),	-- Avengers of Hyjal
 			}),
 			n(QUESTS, {
 				q(29263, {	-- A Bitter Pill

@@ -427,7 +427,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Goblin|r.",
 		["g"] = bubbleDown({
 			-- #if BEFORE 10.1.0
-			["minReputation"] = { 1133, EXALTED },
+			["minReputation"] = { FACTION_BILGEWATER_CARTEL, EXALTED },
 			-- #endif
 		}, {
 			q(57043, {	-- Old Friends, New Opportunities
@@ -1482,7 +1482,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Worgen|r.",
 		["g"] = bubbleDown({
 			-- #if BEFORE 10.1.0
-			["minReputation"] = { 1134, EXALTED },
+			["minReputation"] = { FACTION_GILNEAS, EXALTED },
 			-- #endif
 		}, {
 			q(54976, {	-- The Shadow of Gilneas

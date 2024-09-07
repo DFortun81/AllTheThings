@@ -290,11 +290,11 @@ root(ROOTS.Zones, {
 					exploration(3982),	-- Wyrmskull Village
 				}),
 				n(FACTIONS, {
-					faction(1068, {	-- Explorer's League
+					faction(FACTION_EXPLORERS_LEAGUE, {	-- Explorer's League
 						["maps"] = { THE_STORM_PEAKS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					faction(1067, {	-- The Hand of Vengeance
+					faction(FACTION_THE_HAND_OF_VENGENCE, {	-- The Hand of Vengeance
 						["maps"] = { DRAGONBLIGHT },
 						["races"] = HORDE_ONLY,
 					}),
@@ -580,7 +580,7 @@ root(ROOTS.Zones, {
 					q(11153, {	-- Break the Blockade
 						["qg"] = 23895,	-- Bombardier Petrov
 						["coord"] = { 28.9, 41.9, HOWLING_FJORD },
-						["maxReputation"] = { 1050, EXALTED },	-- Valiance Expedition, Exalted.
+						["maxReputation"] = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -1615,7 +1615,7 @@ root(ROOTS.Zones, {
 						["qg"] = 24399,	-- Steel Gate Chief Archaeologist
 						["sourceQuest"] = 11390,	-- I've Got a Flying Machine!
 						["coord"] = { 30.8, 28.5, HOWLING_FJORD },
-						["maxReputation"] = { 1068, EXALTED },	-- Explorer's League, Exalted.
+						["maxReputation"] = { FACTION_EXPLORERS_LEAGUE, EXALTED },	-- Explorer's League, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -2035,7 +2035,7 @@ root(ROOTS.Zones, {
 						["qg"] = 24810,	-- Anuniaq
 						["sourceQuest"] = 11469,	-- Swabbin' Soap
 						["coord"] = { 24.6, 58.8, HOWLING_FJORD },
-						["maxReputation"] = { 1073, EXALTED },	-- The Kalu'ak, Exalted.
+						["maxReputation"] = { FACTION_THE_KALUAK, EXALTED },	-- The Kalu'ak, Exalted.
 						["isDaily"] = true,
 					}),
 					q(11229, {	-- The Windrunner Fleet

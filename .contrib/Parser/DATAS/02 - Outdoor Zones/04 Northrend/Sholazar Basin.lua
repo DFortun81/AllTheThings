@@ -107,7 +107,7 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					explorationAch(1268),	-- Explore Sholazar Basin
-					achWithRep(950, 1104),	-- Frenzyheart Tribe
+					achWithRep(950, FACTION_FRENZYHEART_TRIBE),	-- Frenzyheart Tribe
 					ach(961, {	-- Honorary Frenzyheart
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 						["groups"] = {
@@ -211,7 +211,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					achWithRep(951, 1105),	-- The Oracles
+					achWithRep(951, FACTION_THE_ORACLES),	-- The Oracles
 				}),
 				battlepets({
 					["sym"] = {{"select","speciesID",
@@ -269,12 +269,12 @@ root(ROOTS.Zones, {
 						["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
 						["collectible"] = false,
 					}),
-					faction(1104, {	-- Frenzyheart Tribe
-						["maxReputation"] = { 1105, NEUTRAL },	-- The Oracles, Neutral.
+					faction(FACTION_FRENZYHEART_TRIBE, {	-- Frenzyheart Tribe
+						["maxReputation"] = { FACTION_THE_ORACLES, NEUTRAL },	-- The Oracles, Neutral.
 						["OnTooltip"] = OnTooltipForFrenzyheart,
 					}),
-					faction(1105, {	-- The Oracles
-						["maxReputation"] = { 1104, NEUTRAL },	-- Frenzyheart Tribe, Neutral.
+					faction(FACTION_THE_ORACLES, {	-- The Oracles
+						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, NEUTRAL },	-- Frenzyheart Tribe, Neutral.
 						["OnTooltip"] = OnTooltipForOracles,
 					}),
 				}),
@@ -317,16 +317,16 @@ root(ROOTS.Zones, {
 							12732,	-- The Heartblood's Strength
 						},
 						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
-						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
-						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
+						["minReputation"] = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
 						["isDaily"] = true,
 					}),
 					q(12702, {	-- Chicken Party!
 						["qg"] = 28138,	-- Elder Harkek
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 						["coord"] = { 55.5, 69.6, SHOLAZAR_BASIN },
-						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
-						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
+						["minReputation"] = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
 						["isDaily"] = true,
 					}),
 					q(12582, {	-- Frenzyheart Champion
@@ -339,8 +339,8 @@ root(ROOTS.Zones, {
 						["qg"] = 29146,	-- Vekgar
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 						["coord"] = { 55.5, 68.6, SHOLAZAR_BASIN },
-						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
-						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
+						["minReputation"] = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
 						["isDaily"] = true,
 					}),
 					q(12734, {	-- Rejek: First Blood
@@ -353,8 +353,8 @@ root(ROOTS.Zones, {
 							12732,	-- The Heartblood's Strength
 						},
 						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
-						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
-						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
+						["minReputation"] = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
 						["isDaily"] = true,
 					}),
 					q(12692, {	-- Return of the Lich Hunter
@@ -366,8 +366,8 @@ root(ROOTS.Zones, {
 						["qg"] = 29146,	-- Vekgar
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 						["coord"] = { 55.5, 68.6, SHOLAZAR_BASIN },
-						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
-						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
+						["minReputation"] = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
 						["isDaily"] = true,
 					}),
 					q(12741, {	-- Strength of the Tempest
@@ -380,8 +380,8 @@ root(ROOTS.Zones, {
 							12732,	-- The Heartblood's Strength
 						},
 						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
-						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
-						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
+						["minReputation"] = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
 						["isDaily"] = true,
 					}),
 					q(12732, {	-- The Heartblood's Strength
@@ -394,16 +394,16 @@ root(ROOTS.Zones, {
 							-- 12732,	-- The Heartblood's Strength
 						},
 						["coord"] = { 55.7, 69.4, SHOLAZAR_BASIN },
-						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
-						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
+						["minReputation"] = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
 						["isDaily"] = true,
 					}),
 					q(12759, {	-- Tools of War
 						["qg"] = 29146,	-- Vekgar
 						["sourceQuest"] = 12692,	-- Return of the Lich Hunter
 						["coord"] = { 55.5, 68.6, SHOLAZAR_BASIN },
-						["maxReputation"] = { 1104, EXALTED },	-- Frenzyheart Tribe, Exalted.
-						["minReputation"] = { 1104, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
+						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, EXALTED },	-- Frenzyheart Tribe, Exalted.
+						["minReputation"] = { FACTION_FRENZYHEART_TRIBE, FRIENDLY },	-- Frenzyheart Tribe, Friendly.
 						["isDaily"] = true,
 					}),
 
@@ -418,8 +418,8 @@ root(ROOTS.Zones, {
 							12726,	-- Song of Wind and Water
 						},
 						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
-						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
-						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
+						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
+						["minReputation"] = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
 						["isDaily"] = true,
 					}),
 					q(12704, {	-- Appeasing the Great Rain Stone
@@ -429,8 +429,8 @@ root(ROOTS.Zones, {
 						},
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 						["coord"] = { 54.6, 56.3, SHOLAZAR_BASIN },
-						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
-						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
+						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
+						["minReputation"] = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/6 Shiny Treasures
@@ -455,8 +455,8 @@ root(ROOTS.Zones, {
 						["qg"] = 29149,	-- Oracle Soo-dow
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 						["coord"] = { 54.2, 53.8, SHOLAZAR_BASIN },
-						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
-						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
+						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
+						["minReputation"] = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/50 Frenzyheart Attacker slain
@@ -474,8 +474,8 @@ root(ROOTS.Zones, {
 						["qg"] = 29149,	-- Oracle Soo-dow
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 						["coord"] = { 54.2, 53.8, SHOLAZAR_BASIN },
-						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
-						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
+						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
+						["minReputation"] = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
 						["isDaily"] = true,
 					}),
 					q(12695, {	-- Return of the Friendly Dryskin
@@ -493,8 +493,8 @@ root(ROOTS.Zones, {
 							12726,	-- Song of Wind and Water
 						},
 						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
-						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
-						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
+						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
+						["minReputation"] = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/8 Song of Fedundity played
@@ -515,8 +515,8 @@ root(ROOTS.Zones, {
 							12726,	-- Song of Wind and Water
 						},
 						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
-						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
-						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
+						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
+						["minReputation"] = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
 						["isDaily"] = true,
 					}),
 					q(12726, {	-- Song of Wind and Water
@@ -529,16 +529,16 @@ root(ROOTS.Zones, {
 							-- 12726,	-- Song of Wind and Water
 						},
 						["coord"] = { 53.3, 56.4, SHOLAZAR_BASIN },
-						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
-						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
+						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
+						["minReputation"] = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
 						["isDaily"] = true,
 					}),
 					q(12705, {	-- Will of the Titans
 						["qg"] = 29149,	-- Oracle Soo-dow
 						["sourceQuest"] = 12695,	-- Return of the Friendly Dryskin
 						["coord"] = { 54.2, 53.8, SHOLAZAR_BASIN },
-						["maxReputation"] = { 1105, EXALTED },	-- The Oracles, Exalted.
-						["minReputation"] = { 1105, FRIENDLY },	-- The Oracles, Friendly.
+						["maxReputation"] = { FACTION_THE_ORACLES, EXALTED },	-- The Oracles, Exalted.
+						["minReputation"] = { FACTION_THE_ORACLES, FRIENDLY },	-- The Oracles, Friendly.
 						["isDaily"] = true,
 					}),
 

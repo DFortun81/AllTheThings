@@ -166,7 +166,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 						4584,	-- The Light of Dawn
 					}},
 				}),
-				achWithRep(4598, 1156, {	-- The Ashen Verdict
+				achWithRep(4598, FACTION_THE_ASHEN_VERDICT, {	-- The Ashen Verdict
 					title(141),	-- <Name> of the Ashen Verdict
 				}),
 				ach(11753, {["timeline"] = {ADDED_7_2_0}}),	-- Winter Catalog (Icecrown Citadel)
@@ -175,7 +175,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				}),
 			}),
 			n(FACTIONS, {
-				faction(1156),	-- The Ashen Verdict
+				faction(FACTION_THE_ASHEN_VERDICT),	-- The Ashen Verdict
 			}),
 			applyclassicphase(WRATH_PHASE_FOUR_SHADOWMOURNE, n(QUALITY_LEGENDARY, {
 				["description"] = "These quests can only be completed on 25-Man Normal or Heroic difficulty.",
@@ -187,7 +187,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				["groups"] = {
 					q(24545, {	-- The Sacred and the Corrupt
 						["qg"] = 37120,	-- Highlord Darion Mograine
-						["minReputation"] = { 1156, FRIENDLY },	-- The Ashen Verdict
+						["minReputation"] = { FACTION_THE_ASHEN_VERDICT, FRIENDLY },	-- The Ashen Verdict
 						["groups"] = {
 							i(49869, {	-- Light's Vengeance
 								["description"] = "Fly out to Dragonblight and collect this item from a cave after some short RP.",
@@ -321,7 +321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 			n(QUESTS, {
 				q(24815, {	-- Choose Your Path
 					["qg"] = 38316,	-- Ormus the Penitent
-					["minReputation"] = { 1156, FRIENDLY },	-- The Ashen Verdict
+					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, FRIENDLY },	-- The Ashen Verdict
 					["description"] = "If the quest does not appear when you hit Friendly, you may have to relog.",
 					["groups"] = {
 						i(50375, {	-- Ashen Band of Courage
@@ -345,7 +345,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				q(24827, {	-- Path of Courage (Honored)
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24815,	-- Choose Your Path
-					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, HONORED },	-- The Ashen Verdict
 					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 					["groups"] = {
 						i(50388, {	-- Ashen Band of Greater Courage
@@ -356,7 +356,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				q(24834, {	-- Path of Courage (Revered)
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24827,	-- Path of Courage (Honored)
-					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
+					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, REVERED },	-- The Ashen Verdict
 					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 					["groups"] = {
 						i(50403, {	-- Ashen Band of Unmatched Courage
@@ -367,7 +367,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				q(24835, {	-- Path of Courage (Exalted)
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24834,	-- Path of Courage (Revered)
-					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
+					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, EXALTED },	-- The Ashen Verdict
 					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 					["groups"] = {
 						i(50404, {	-- Ashen Band of Endless Courage
@@ -379,7 +379,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				q(24828, {	-- Path of Destruction (Honored)
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24815,	-- Choose Your Path
-					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, HONORED },	-- The Ashen Verdict
 					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 					["groups"] = {
 						i(50384, {	-- Ashen Band of Greater Destruction
@@ -390,7 +390,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				q(24823, {	-- Path of Destruction (Revered)
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24828,	-- Path of Destruction [Honored]
-					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
+					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, REVERED },	-- The Ashen Verdict
 					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 					["groups"] = {
 						i(50397, {	-- Ashen Band of Unmatched Destruction
@@ -401,7 +401,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				q(24829, {	-- Path of Destruction (Exalted)
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24823,	-- Path of Destruction (Revered)
-					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
+					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, EXALTED },	-- The Ashen Verdict
 					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 					["groups"] = {
 						i(50398, {	-- Ashen Band of Endless Destruction
@@ -413,7 +413,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				q(25239, {	-- Path of Might (Honored)
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24815,	-- Choose Your Path
-					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, HONORED },	-- The Ashen Verdict
 					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 					["groups"] = {
 						i(52570, {	-- Ashen Band of Greater Might
@@ -424,7 +424,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				q(25240, {	-- Path of Might [Revered]
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 25239,	-- Path of Might [Honored]
-					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
+					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, REVERED },	-- The Ashen Verdict
 					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 					["groups"] = {
 						i(52571, {	-- Ashen Band of Unmatched Might
@@ -435,7 +435,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				q(25242, {	-- Path of Might [Exalted]
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 25240,	-- Path of Might [Revered]
-					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
+					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, EXALTED },	-- The Ashen Verdict
 					["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 					["groups"] = {
 						i(52572, {	-- Ashen Band of Endless Might
@@ -447,7 +447,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				q(24826, {	-- Path of Vengeance [Honored]
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24815,	-- Choose Your Path
-					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, HONORED },	-- The Ashen Verdict
 					["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 					["groups"] = {
 						i(50387, {	-- Ashen Band of Greater Vengeance
@@ -458,7 +458,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				q(24832, {	-- Path of Vengeance [Revered]
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24826,	-- Path of Vengeance [Honored]
-					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
+					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, REVERED },	-- The Ashen Verdict
 					["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 					["groups"] = {
 						i(50401, {	-- Ashen Band of Unmatched Vengeance
@@ -469,7 +469,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				q(24833, {	-- Path of Vengeance [Exalted]
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24832,	-- Path of Vengeance [Revered]
-					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
+					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, EXALTED },	-- The Ashen Verdict
 					["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 					["groups"] = {
 						i(50402, {	-- Ashen Band of Endless Vengeance
@@ -481,7 +481,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				q(24825, {	-- Path of Wisdom [Honored]
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24815,	-- Choose Your Path
-					["minReputation"] = { 1156, HONORED },	-- The Ashen Verdict
+					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, HONORED },	-- The Ashen Verdict
 					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 					["groups"] = {
 						i(50386, {	-- Ashen Band of Greater Wisdom
@@ -492,7 +492,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				q(24830, {	-- Path of Wisdom [Revered]
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24825,	-- Path of Wisdom [Honored]
-					["minReputation"] = { 1156, REVERED },	-- The Ashen Verdict
+					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, REVERED },	-- The Ashen Verdict
 					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 					["groups"] = {
 						i(50399, {	-- Ashen Band of Unmatched Wisdom
@@ -503,7 +503,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				q(24831, {	-- Path of Wisdom [Exalted]
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24830,	-- Path of Wisdom [Revered]
-					["minReputation"] = { 1156, EXALTED },	-- The Ashen Verdict
+					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, EXALTED },	-- The Ashen Verdict
 					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
 					["groups"] = {
 						i(50400, {	-- Ashen Band of Endless Wisdom

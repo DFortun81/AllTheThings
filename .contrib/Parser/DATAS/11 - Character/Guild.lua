@@ -241,7 +241,7 @@ root(ROOTS.Character, n(createHeader({
 		ach(7444, {	-- Scenario Challenges
 			["timeline"] = { ADDED_5_0_4, REMOVED_7_0_3 },
 		}),
-		
+
 		-- Copy+Pasted from the Vendor list. Adjust as desired.
 		ach(4989),	-- A Class Act
 		ach(5422),	-- A Daily Routine

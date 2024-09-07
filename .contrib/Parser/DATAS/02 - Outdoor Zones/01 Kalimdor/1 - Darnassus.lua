@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.RuneclothTurnIns,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				faction(1134, {	-- Gilneas
+				faction(FACTION_GILNEAS, {	-- Gilneas
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
@@ -1239,7 +1239,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(55285, {	-- Astrid Langstrump <Mountain Horse Handler>
 					["coord"] = { 48.2, 21.8, DARNASSUS },
 					-- Available to Worgen without faction requirements.
-					["minReputation"] = { 1134, EXALTED },	-- Gilneas, Exalted.
+					["minReputation"] = { FACTION_GILNEAS, EXALTED },	-- Gilneas, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. WORGEN .. [[ then
 							t.minReputation = nil;
@@ -1572,19 +1572,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64893, {	-- Cape of Gilneas
-							["minReputation"] = { 1134, EXALTED },	-- Gilneas, Exalted.
+							["minReputation"] = { FACTION_GILNEAS, EXALTED },	-- Gilneas, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64892, {	-- Mantle of Gilneas
-							["minReputation"] = { 1134, EXALTED },	-- Gilneas, Exalted.
+							["minReputation"] = { FACTION_GILNEAS, EXALTED },	-- Gilneas, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64894, {	-- Shroud of Gilneas
-							["minReputation"] = { 1134, EXALTED },	-- Gilneas, Exalted.
+							["minReputation"] = { FACTION_GILNEAS, EXALTED },	-- Gilneas, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67532, {	-- Gilnean Satchel
-							["minReputation"] = { 1134, REVERED },	-- Gilneas, Revered.
+							["minReputation"] = { FACTION_GILNEAS, REVERED },	-- Gilneas, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},

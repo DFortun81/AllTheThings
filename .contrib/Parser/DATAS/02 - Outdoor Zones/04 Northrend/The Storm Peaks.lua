@@ -285,10 +285,10 @@ root(ROOTS.Zones, {
 					exploration(4437),	-- Valley of Ancient Winters
 				}),
 				n(FACTIONS, {
-					faction(1126, {	-- The Frostborn
+					faction(FACTION_THE_FROSTBORN, {	-- The Frostborn
 						["races"] = ALLIANCE_ONLY,
 					}),
-					faction(1119, {	-- The Sons of Hodir
+					faction(FACTION_THE_SONS_OF_HODIR, {	-- The Sons of Hodir
 						["OnTooltip"] = OnTooltipForSonsOfHodir,
 					}),
 				}),
@@ -331,13 +331,13 @@ root(ROOTS.Zones, {
 						["qg"] = 32540,	-- Lillehoff
 						["coord"] = { 66.1, 61.4, THE_STORM_PEAKS },
 						["cost"] = { { "i", 42780, 10 }, },	-- 10x Relic of Ulduar
-						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
 						["repeatable"] = true,
 					}),
 					q(13011, {	-- Culling Jorcuttar
 						["qg"] = 30105,	-- King Jokkum
 						["coord"] = { 65.3, 60.1, THE_STORM_PEAKS },
-						["minReputation"] = { 1119, FRIENDLY },	-- The Sons of Hodir, Friendly.
+						["minReputation"] = { FACTION_THE_SONS_OF_HODIR, FRIENDLY },	-- The Sons of Hodir, Friendly.
 						["groups"] = {
 							objective(1, {	-- 0/1 Jorcuttar slain
 								["provider"] = { "n", 30340 },	-- Jorcuttar
@@ -357,18 +357,18 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 192080 },	-- Hodir's Helm
 						["sourceQuest"] = 12987,	-- Placing Hodir's Helm
 						["coord"] = { 64.2, 59.6, THE_STORM_PEAKS },
-						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
 						["isDaily"] = true,
 					}),
 					q(13420, {	-- Everfrost
 						["provider"] = { "i", 44725 },	-- Everfrost Chip
-						["minReputation"] = { 1119, FRIENDLY },	-- The Sons of Hodir, Friendly.
+						["minReputation"] = { FACTION_THE_SONS_OF_HODIR, FRIENDLY },	-- The Sons of Hodir, Friendly.
 					}),
 					q(13421, {	-- Remember Everfrost!
 						["qg"] = 32594,	-- Calder <Blacksmithing Supplies>
 						["sourceQuest"] = 13420,	-- Everfrost
 						["coord"] = { 67.0, 60.8, THE_STORM_PEAKS },
-						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
 						["cost"] = { { "i", 44724, 1 } },	-- Everfrost Chip
 						["repeatable"] = true,
 					}),
@@ -376,36 +376,36 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 192078 },	-- Hodir's Horn
 						["sourceQuest"] = 12976,	-- A Monument to the Fallen
 						["coord"] = { 64.1, 64.7, THE_STORM_PEAKS },
-						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
 						["isDaily"] = true,
 					}),
 					q(13046, {	-- Feeding Arngrim
 						["provider"] = { "o", 192524 },	-- Arngrim the Insatiable
 						["coord"] = { 67.5, 60.0, THE_STORM_PEAKS },
-						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
-						["minReputation"] = { 1119, REVERED },	-- The Sons of Hodir, Revered.
+						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
+						["minReputation"] = { FACTION_THE_SONS_OF_HODIR, REVERED },	-- The Sons of Hodir, Revered.
 						["isDaily"] = true,
 					}),
 					q(12981, {	-- Hot and Cold
 						["provider"] = { "o", 192071 },	-- Fjorn's Anvil
 						["sourceQuest"] = 12967,	-- Battling the Elements
 						["coord"] = { 63.2, 63.0, THE_STORM_PEAKS },
-						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
+						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12994, {	-- Spy Hunter
 						["qg"] = 30294,	-- Frostworg Denmother
 						["coord"] = { 63.5, 59.7, THE_STORM_PEAKS },
-						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
-						["minReputation"] = { 1119, HONORED },	-- The Sons of Hodir, Honored.
+						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
+						["minReputation"] = { FACTION_THE_SONS_OF_HODIR, HONORED },	-- The Sons of Hodir, Honored.
 						["isDaily"] = true,
 					}),
 					q(13003, {	-- How to Slay Your Dragon
 						["provider"] = { "o", 192079 },	-- Hodir's Spear
 						["sourceQuest"] = 13001,	-- Raising Hodir's Spear
 						["coord"] = { 65.0, 60.9, THE_STORM_PEAKS },
-						["maxReputation"] = { 1119, EXALTED },	-- The Sons of Hodir, Exalted.
-						["minReputation"] = { 1119, HONORED },	-- The Sons of Hodir, Honored.
+						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- The Sons of Hodir, Exalted.
+						["minReputation"] = { FACTION_THE_SONS_OF_HODIR, HONORED },	-- The Sons of Hodir, Honored.
 						["isDaily"] = true,
 					}),
 
@@ -467,7 +467,7 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 192060 },	-- Fjorn's Anvil
 						["sourceQuest"] = 12922,	-- The Refiner's Fire
 						["coord"] = { 77.1, 62.9, THE_STORM_PEAKS },
-						["maxReputation"] = { 1119, EXALTED },	-- Sons of Hodir, Exalted
+						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- Sons of Hodir, Exalted
 					}),
 					q(12925, {	-- Aberrations
 						["qg"] = 30041,	-- Thyra Kvinnshal
@@ -732,7 +732,7 @@ root(ROOTS.Zones, {
 						["qg"] = 30127,	-- Njormeld
 						["sourceQuest"] = 12967,	-- Battling the Elements
 						["coord"] = { 63.2, 63.2, THE_STORM_PEAKS },
-						["minReputation"] = { 1119, FRIENDLY },	-- The Sons of Hodir, Friendly.
+						["minReputation"] = { FACTION_THE_SONS_OF_HODIR, FRIENDLY },	-- The Sons of Hodir, Friendly.
 						["groups"] = {
 							objective(1, {	-- 0/8 Stormforged Eye
 								["providers"] = {
@@ -766,7 +766,7 @@ root(ROOTS.Zones, {
 					q(13001, {	-- Raising Hodir's Spear
 						["qg"] = 30252,	-- Lorekeeper Randvir
 						["coord"] = { 64.8, 59.1, THE_STORM_PEAKS },
-						["minReputation"] = { 1119, HONORED },	-- The Sons of Hodir, Honored.
+						["minReputation"] = { FACTION_THE_SONS_OF_HODIR, HONORED },	-- The Sons of Hodir, Honored.
 						["groups"] = {
 							objective(1, {	-- 0/3 Everfrost Shard
 								["providers"] = {
@@ -946,7 +946,7 @@ root(ROOTS.Zones, {
 					q(12915, {	-- Mending Fences
 						["qg"] = 29445,	-- Thorim
 						["coord"] = { 33.4, 58.0, THE_STORM_PEAKS },
-						["maxReputation"] = { 1119, EXALTED },	-- Sons of Hodir, Exalted
+						["maxReputation"] = { FACTION_THE_SONS_OF_HODIR, EXALTED },	-- Sons of Hodir, Exalted
 						["sourceQuest"] = 13064,	-- Sibling Rivalry
 					}),
 					q(12905, {	-- Mildred the Cruel
@@ -1070,7 +1070,7 @@ root(ROOTS.Zones, {
 					q(12869, {	-- Pushed Too Far
 						["qg"] = 29732,	-- Fjorlin Frostbrow
 						["coord"] = { 29.8, 75.7, THE_STORM_PEAKS },
-						["maxReputation"] = { 1126, EXALTED },	-- The Frostborn, Exalted.
+						["maxReputation"] = { FACTION_THE_FROSTBORN, EXALTED },	-- The Frostborn, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 						-- this quest appeared for me after turning in "the brother's bronzebeard," which was the last quest i did for its criteria + the overall zone.  i'm not sure if the quest itself is a prerequisite or if it's based on reputation, because i also hit friendly with alliance vanguard when turning it in.  some wowhead comments said it had different requirements, so i'm not sure what to put for SQ or a description.

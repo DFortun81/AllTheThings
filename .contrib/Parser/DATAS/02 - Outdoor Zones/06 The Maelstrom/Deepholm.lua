@@ -36,7 +36,7 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					explorationAch(4864),	-- Explore Deepholm
-					achWithRep(4883, 1171),	-- Therazane
+					achWithRep(4883, FACTION_THERAZANE),	-- Therazane
 				}),
 				battlepets({
 					["sym"] = {{"select","speciesID",
@@ -74,7 +74,7 @@ root(ROOTS.Zones, {
 					exploration(5328),	-- Upper Silvermarsh
 				}),
 				n(FACTIONS, {
-					faction(1171, {	-- Therazane
+					faction(FACTION_THERAZANE, {	-- Therazane
 						["icon"] = "Interface\\Icons\\inv_misc_tabard_therazane",
 					}),
 				}),
