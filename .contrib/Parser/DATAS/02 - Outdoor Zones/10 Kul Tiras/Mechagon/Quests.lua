@@ -583,9 +583,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(168204, {	-- Small Metal Box
 						["description"] = "Small Metal Boxes can be collected when using the Rare Metal Collector.",
 						["g"] = {
-							i(170148, {	-- Paint Bottle: Electric Blue
-								["questID"] = 56909,
-							}),
+							i(170148),	-- Paint Bottle: Electric Blue (QS!)
 						},
 					}),
 				},
@@ -1236,6 +1234,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			}),
 			q(55080, {	-- Blueprint: Perfectly Timed Differential
 				["provider"] = { "i", 169172 },	-- Blueprint: Perfectly Timed Differential
+			}),
+		}),
+		-- Paint Bottles
+		n(QUESTS, {
+			q(56908, {	-- Paint Bottle: Goblin Green
+				["provider"] = { "i", 170147 },	-- Paint Bottle: Goblin Green
+			}),
+			q(56907, {	-- Paint Bottle: Nukular Red
+				["provider"] = { "i", 170146 },	-- Paint Bottle: Nukular Red
+			}),
+			q(56909, {	-- Paint Bottle: Electric Blue
+				["provider"] = { "i", 170148 },	-- Paint Bottle: Electric Blue
 			}),
 		}),
 		-- Paint Vials

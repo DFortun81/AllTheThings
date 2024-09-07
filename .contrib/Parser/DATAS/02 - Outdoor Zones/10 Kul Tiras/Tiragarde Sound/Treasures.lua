@@ -3,28 +3,24 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(TIRAGARDE_SOUND, {
-		n(ACHIEVEMENTS, {
+		n(TREASURES, {
 			o(293880, {	-- Buried Treasure Chest
-				["provider"] = { "i", 162580 },	-- Fading Treasure Map
 				["questID"] = 52833,	-- Fading Treasure Map
 				["sourceQuest"] = 52854,	-- Fading Treasure Map
 				["coord"] = { 29.26, 25.35, TIRAGARDE_SOUND },
 			}),
 			o(293884, {	-- Buried Treasure Chest
-				["provider"] = { "i", 162584 },	-- Singed Treasure Map
 				["questID"] = 52845,	-- Singed Treasure Map
 				["sourceQuest"] = 52860,	-- Singed Treasure Map
 				["coord"] = { 48.96, 37.75, TIRAGARDE_SOUND },
 			}),
 			o(293852, {	-- Buried Treasure Chest
-				["provider"] = { "i", 162571 },	-- Soggy Treasure Map
 				["questID"] = 52807,	-- Buried Treasure Chest
 				["sourceQuest"] = 52853,	-- Soggy Treasure Map
 				["coord"] = { 55.01, 46.01, TIRAGARDE_SOUND },
 				["description"] = "At the bottom of the ocean.",
 			}),
 			o(293881, {	-- Buried Treasure Chest
-				["provider"] = { "i", 162581 },	-- Yellowed Treasure Map
 				["questID"] = 52836,	-- Yellowed Treasure Map
 				["sourceQuest"] = 52859,	-- Yellowed Treasure Map
 				["coord"] = { 90.49, 75.53, TIRAGARDE_SOUND },

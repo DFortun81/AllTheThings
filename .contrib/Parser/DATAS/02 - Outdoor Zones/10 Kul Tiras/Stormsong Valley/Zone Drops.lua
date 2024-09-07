@@ -14,6 +14,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 				},
 			}),
+			i(163699, {	-- Annealed Honey Amulet
+				["races"] = ALLIANCE_ONLY,
+				["coord"] = { 69.2, 68.8, STORMSONG_VALLEY },
+				["crs"] = {
+					134147,	-- Beehemoth
+					133429,	-- Bubbling Mead
+					141901,	-- Bumbling Bee
+					134155,	-- Enraged Swarmer
+					131663,	-- Flowing Honey
+				},
+			}),
 			i(163573, {	-- Goldenmane (MOUNT!)
 				["crs"] = {
 					132226,	-- Briarback Kraultender

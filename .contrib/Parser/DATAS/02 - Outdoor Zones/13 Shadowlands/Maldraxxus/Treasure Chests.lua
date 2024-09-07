@@ -360,9 +360,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 65.6, 50.8, MALDRAXXUS },
 				["questID"] = 61451,
 				["g"] = {
-					i(182618, {	-- Reclaimed Vessel
-						["questID"] = 62085,	-- ...Why Me?
-					}),
+					i(182618),	-- Reclaimed Vessel (QS!)
 				},
 			}),
 			o(348521, {		-- Strange Growth

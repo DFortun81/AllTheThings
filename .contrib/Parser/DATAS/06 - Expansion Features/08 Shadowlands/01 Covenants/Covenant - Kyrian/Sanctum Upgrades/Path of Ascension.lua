@@ -614,6 +614,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									q(60907, {	-- Ascension Calling: Kleia
 										["provider"] = { "i", 182095 },	-- Ascension Calling: Kleia
 									}),
+									q(62223, {	-- Ascension Calling: Mikanikos
+										["provider"] = { "i", 182975 },	-- Ascension Calling: Mikanikos
+										["sourceQuests"] = { 58182 },	-- Dismantling the Opposition
+									}),
 									q(61963, {	-- Called to the Hunt
 										["sourceQuests"] = { 61358 },	-- Alderyn and Myn'ir
 										["provider"] = { "n", 168430 },	-- Dactylis

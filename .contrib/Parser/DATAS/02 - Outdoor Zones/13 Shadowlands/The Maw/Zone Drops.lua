@@ -67,7 +67,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			i(186727, {	-- Seal Breaker Key
 				["crs"] = { 177134 },	-- Maldraxxi Defector
-				["questID"] = 62679,
 				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(180806),	-- Shadebound Testimonial (QI!)
@@ -79,3 +78,11 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	m(THE_MAW, {
+		n(ZONE_DROPS, {
+			hqt(62679, name(HEADERS.Item, 186727)),	-- Seal Breaker Key
+		}),
+	}),
+})))

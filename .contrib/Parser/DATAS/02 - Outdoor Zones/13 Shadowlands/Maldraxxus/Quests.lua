@@ -856,6 +856,9 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					i(183728),	-- Key of Eyes (QI!)
 				},
 			}),
+			q(62085, {	-- ...Why Me?
+				["provider"] = { "i", 182618 },	-- Reclaimed Vessel
+			}),
 			n(BONUS_OBJECTIVES, sharedData({
 				["sourceQuests"] = { 62159 },	-- Aiding the Shadowlands
 				["customCollect"] = "SL_SKIP",	-- SL Skip Character

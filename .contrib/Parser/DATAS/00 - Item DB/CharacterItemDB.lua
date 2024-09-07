@@ -76,8 +76,8 @@ is(44811, 61780, MAGE);				-- Tome of Polymorph: Turkey
 -----------------
 is(82470, 120146, MAGE);			-- Ancient Tome of Portal: Dalaran
 is(82469, 120145, MAGE);			-- Ancient Tome of Teleport: Dalaran
-iq(86125, 31304);					-- Kafa Press
-iq(86529, 31432);					-- Manipulator's Talisman
+-- iq(86125, 31304);					-- Kafa Press
+-- iq(86529, 31432);					-- Manipulator's Talisman
 is(0, 131204); 						-- Path of the Jade Serpent
 
 -----------------
@@ -154,11 +154,6 @@ iq(132525, 40732);					-- Reaves Module: Repair Mode
 iq(132531, 40737);					-- Reaves Module: Piloted Combat Mode
 iq(132530, 40736);					-- Reaves Module: Bling Mode
 iq(132524, 40738);					-- Reaves Module: Wormhole Generator Mode
-iq(140665, 44097);					-- Nearly Satisfactory Eredar Head
-iq(140664, 44096);					-- Deficient Eredar Head
-iq(140663, 44095);					-- Malformed Eredar Head
-iq(140662, 44094);					-- Deformed Eredar Head
-iq(140661, 44093);					-- Damaged Eredar Head
 -- NYI
 is(136971, 211010, SHAMAN);			-- Tome of Hex: Snake
 
@@ -177,12 +172,6 @@ is(162625, 277787, MAGE);			-- Tome of Polymorph: Direhorn
 is(159841, 269352, SHAMAN);			-- Tome of Hex: Skeletal Hatchling
 is(162624, 277784, SHAMAN);			-- Tome of Hex: Wicker Mongrel
 is(162623, 277778, SHAMAN);			-- Tome of Hex: Zandalari Tendonripper
-iq(162581, 52859);					-- Yellowed Treasure Map
-iq(162571, 52853);					-- Soggy Treasure Map
-iq(162584, 52860);					-- Singed Treasure Map
-iq(162580, 52854);					-- Fading Treasure Map
-iq(163702, 53200);					-- Rosaline's Letter
-iq(163699, 53111);					-- Annealed Honey Amulet
 
 -----------------
 -- PATCH 8.1.0 --
@@ -193,9 +182,6 @@ iq(166749, 54859);					-- Lyrics: Song of the Sea
 -----------------
 -- PATCH 8.2.0 --
 -----------------
-iq(170147, 56908);					-- Paint Bottle: Goblin Green
-iq(170146, 56907);					-- Paint Bottle: Nukular Red
-iq(170148, 56909);					-- Paint Bottle: Electric Blue
 
 -----------------
 -- PATCH 8.2.5 --
@@ -233,14 +219,12 @@ iq(180705, 61160, HUNTER);			-- Gargon Training Manual
 iq(184219, 62821);					-- Treatise on Sinstone Fragment Acquisition
 iq(184222, 62822);					-- Lemet's Requisition Orders
 iq(184220, 62821);					-- Encyclopedia of Sinstone Fragment Recovery
-iq(182618, 62085);					-- Reclaimed Vessel
 iq(183517, 62372);					-- Page 76 of the Necronom-i-nom
 iq(187923, 65039);					-- Aurelid Lure
 --- NYI ---
 iq(181443, 61459);					-- The Party Herald's Party Hat
 iq(183957, 62657);					-- Invitation: Grandmaster Vole
 iq(183956, 62656);					-- Invitation: Choofa
-iq(182975, 62223);					-- Ascension Calling: Mikanikos
 
 -----------------
 -- PATCH 9.0.5 --
@@ -254,7 +238,6 @@ iq(185353, 63643);					-- Rune Codex Page: Binding
 -----------------
 -- PATCH 9.1.0 --
 -----------------
-iq(186727, 62679);					-- Seal Breaker Key
 iq(186453, 64061);					-- Vault Anima Tracker
 iq(186722, 64027);					-- Treatise: The Study of Anima and Harnessing Every Drop
 iq(186721, 64366);					-- Treatise: Relics Abound in the Shadowlands
