@@ -43,6 +43,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 223728 },	-- Auditor Balwurz <Keeper of Renown>
 					["coord"] = { 39.1, 24.0, DORNOGAL },
 				}),
+				q(85718, {	-- A Shining Stone
+					["provider"] = { "n", 223728 },	-- Auditor Balwurz <Keeper of Renown>
+					["coord"] = { 39.1, 24.0, DORNOGAL },
+					["g"] = {
+						i(223951),	-- Earth-Encrusted Gem
+					},
+				}),
 			}, {	-- RENOWN 9 --
 				q(82344, {	-- Weathered Crests
 					["provider"] = { "n", 223728 },	-- Auditor Balwurz <Keeper of Renown>

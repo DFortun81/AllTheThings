@@ -3161,8 +3161,6 @@ root(ROOTS.Unsorted, {
 				i(220377),	-- Growing Void Mass
 				i(220439),	-- Half-Eaten Fish
 				i(220440),	-- Kelp Necklace
-				i(220441),	-- Hardened Pearl
-				i(220442),	-- Weighty Shovel
 				i(220443),	-- Desecrated Arathi Tinderbox
 				i(220444),	-- Gnawed Spine
 				i(220445),	-- Illusionary Charm
@@ -3202,7 +3200,6 @@ root(ROOTS.Unsorted, {
 				i(225788),	-- Congratulatory Ascension Silk
 				i(225805),	-- Ornate Box of Seasonings
 				i(225806),	-- Crystal Inkwell
-				i(225824),	-- Sand Sculpting Comb
 				i(225896),	-- Void-Touched Valorstone
 				i(225930),	-- Glimmering Crystal
 				i(225948),	-- Harbinger's Equipment Chest
