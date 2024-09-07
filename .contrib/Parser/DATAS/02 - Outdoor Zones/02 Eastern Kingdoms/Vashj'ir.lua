@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					-- #endif
 				}),
-				achWithRep(4881, 1135, {	-- The Earthen Ring
+				achWithRep(4881, FACTION_THE_EARTHEN_RING, {	-- The Earthen Ring
 					["maps"] = {
 						VASHJIR_ABYSSAL_DEPTHS,
 						VASHJIR_KELPTHAR_FOREST,
@@ -163,7 +163,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 			}),
 			n(FACTIONS, {
-				faction(1135, {	-- The Earthen Ring
+				faction(FACTION_THE_EARTHEN_RING, {	-- The Earthen Ring
 					["icon"] = "Interface\\Icons\\inv_misc_tabard_tolvir",
 					["maps"] = {
 						VASHJIR_ABYSSAL_DEPTHS,

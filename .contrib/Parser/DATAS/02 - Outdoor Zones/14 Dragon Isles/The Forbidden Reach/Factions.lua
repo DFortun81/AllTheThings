@@ -4,10 +4,10 @@
 root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }, {
 	m(THE_FORBIDDEN_REACH, {
 		n(FACTIONS, {
-			faction(2523, {	-- Dark Talons
+			faction(FACTION_DARK_TALONS, {	-- Dark Talons
 				["races"] = HORDE_ONLY
 			}),
-			faction(2524, {	-- Obsidian Warders
+			faction(FACTION_OBSIDIAN_WARDERS, {	-- Obsidian Warders
 				["races"] = ALLIANCE_ONLY
 			}),
 		}),

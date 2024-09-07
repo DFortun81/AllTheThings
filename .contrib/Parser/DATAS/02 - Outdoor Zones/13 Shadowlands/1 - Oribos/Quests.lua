@@ -879,38 +879,34 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-	m(ORIBOS, {
-		q(64254),	-- triggers when using the second 9.1 skip (the one to Korthia) - returns info for "Supplies from Death's Advance" paragon quest, but text/reward are for Court of Harvesters (spellID 353954)
-		q(64514),	-- triggered while doing The Battle of Ardenweald scenario
-		q(64515),	-- triggered while doing The Battle of Ardenweald scenario
-		q(63416),	-- triggers when accepting the first of your 'Zone Meta Quests' on a Skip Character (spellID 348186)
-		q(64782),	-- Joining Nany Cov during 'Choosing Your Purpose' (questID 62000) (spellID 359346 & 359347 & 359348 & 359349)
-		q(62370),	-- Swapping Cov to NF with NF already R40
-		q(62384),	-- Swapping Cov to NF with NF already R40
-		-- 9.1.5 Swapping at R80. Flag/Unflag
-		--q(62370),	-- Returning to the Venthyr before hitting rank 80 with anyone gave "Prove Your Worth" which flagged two quests as complete that aren't in ATT
-		--q(62380),	-- Returning to the Venthyr before hitting rank 80 with anyone gave "Prove Your Worth" which flagged two quests as complete that aren't in ATT
-		-- 9.1.5?
-		q(62923),	-- Swapped to Venthyr from Necrolord at R80? Probably a old hqt
-		q(64848),	-- Scouting Map - Torghast Choice Complete (spellID 359574)
-		q(65030),	-- Scouting Map - Battlegrounds Choice Complete (spellID 360652)
-		q(65753),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Devouring Malediction'
-		q(65754),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Eternal Aegis'
-		q(65755),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Resonator'
-		q(65756),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Echoing Resolve'
-		q(65757),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Fastidious Resolve'
-		q(66047),	-- Solo Shuffle Completion? /First win
-		q(70704),	-- Tracking quest for Vessel of Profound Possibilities (spellID 367898)
-		------ Stay awhile and listen ------
-		hqt(65511),	-- Stay awhile and listen with Vareesa Windrunner (spellID 366650)
-		hqt(65618),	-- Stay awhile and listen with Bolvar (9.2.0) (spellID 367008)
-		hqt(65612),	-- Stay awhile and listen with Baine (spellID 366952)
-		hqt(65609),	-- Stay awhile and listen with Lor'themar (spellID 366932)
-		hqt(65607),	-- Stay awhile and listen with King Greymane (spellID 366925)
-		hqt(65614),	-- Stay awhile and listen with Arbiter Pelagos (spellID 366958)
-		hqt(66316),	-- Stay awhile and listen with Bolvar (9.2.5)
-		hqt(66313),	-- Stay awhile and listen with Proundmoore
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	m(SHADOWLANDS, {
+		m(ORIBOS, {
+			n(QUESTS, {
+				q(63348),	-- Triggered after turning in "Explore Torghast" (questID 62932) (spellID 345449) + also basically every day the first time I fall into the Maw
+				q(63416),	-- triggers when accepting the first of your 'Zone Meta Quests' on a Skip Character (spellID 348186)
+				q(64254, {["timeline"] = {ADDED_9_1_0}}),	-- triggers when using the second 9.1 skip (the one to Korthia) - returns info for "Supplies from Death's Advance" paragon quest, but text/reward are for Court of Harvesters (spellID 353954)
+				q(64514, {["timeline"] = {ADDED_9_1_0}}),	-- triggered while doing The Battle of Ardenweald scenario
+				q(64515, {["timeline"] = {ADDED_9_1_0}}),	-- triggered while doing The Battle of Ardenweald scenario
+				q(64848, {["timeline"] = {ADDED_9_1_5}}),	-- Scouting Map - Torghast Choice Complete (spellID 359574)
+				q(65030, {["timeline"] = {ADDED_9_1_5}}),	-- Scouting Map - Battlegrounds Choice Complete (spellID 360652)
+				q(65753, {["timeline"] = {ADDED_9_2_0}}),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Devouring Malediction'
+				q(65754, {["timeline"] = {ADDED_9_2_0}}),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Eternal Aegis'
+				q(65755, {["timeline"] = {ADDED_9_2_0}}),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Resonator'
+				q(65756, {["timeline"] = {ADDED_9_2_0}}),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Echoing Resolve'
+				q(65757, {["timeline"] = {ADDED_9_2_0}}),	-- triggered with 'A New Deal', selected 'Cosmic Gladiator's Fastidious Resolve'
+				q(66047, {["timeline"] = {ADDED_9_2_0}}),	-- Solo Shuffle Completion? /First win
+				q(70704, {["timeline"] = {ADDED_9_2_0}}),	-- Tracking quest for Vessel of Profound Possibilities (spellID 367898)
+				------ Stay awhile and listen ------
+				hqt(65511, {["timeline"] = {ADDED_9_2_0}}),	-- Stay awhile and listen with Vareesa Windrunner (spellID 366650)
+				hqt(65618, {["timeline"] = {ADDED_9_2_0}}),	-- Stay awhile and listen with Bolvar (9.2.0) (spellID 367008)
+				hqt(65612, {["timeline"] = {ADDED_9_2_0}}),	-- Stay awhile and listen with Baine (spellID 366952)
+				hqt(65609, {["timeline"] = {ADDED_9_2_0}}),	-- Stay awhile and listen with Lor'themar (spellID 366932)
+				hqt(65607, {["timeline"] = {ADDED_9_2_0}}),	-- Stay awhile and listen with King Greymane (spellID 366925)
+				hqt(65614, {["timeline"] = {ADDED_9_2_0}}),	-- Stay awhile and listen with Arbiter Pelagos (spellID 366958)
+				hqt(66316, {["timeline"] = {ADDED_9_2_5}}),	-- Stay awhile and listen with Bolvar (9.2.5)
+				hqt(66313, {["timeline"] = {ADDED_9_2_5}}),	-- Stay awhile and listen with Proundmoore
+			}),
+		}),
 	}),
 })));

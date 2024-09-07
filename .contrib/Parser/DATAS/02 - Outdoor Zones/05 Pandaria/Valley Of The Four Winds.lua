@@ -73,7 +73,7 @@ root(ROOTS.Zones, {
 					exploration(6388),	-- Zhu's Descent
 				}),
 				n(FACTIONS, {
-					faction(1272, {	-- The Tillers
+					faction(FACTION_THE_TILLERS, {	-- The Tillers
 						["icon"] = "Interface\\Icons\\achievement_faction_tillers",
 						["g"] = {
 							n(ACHIEVEMENTS, {
@@ -82,34 +82,34 @@ root(ROOTS.Zones, {
 								}),
 								ach(6552, {		-- Friends on the Farm
 									crit(19398, {	-- Farmer Fung
-										["_factions"] = { 1283 },
+										["_factions"] = { FACTION_FARMER_FUNG },
 									}),
 									crit(19402, {	-- Jogu the Drunk
-										["_factions"] = { 1273 },
+										["_factions"] = { FACTION_JOGU_THE_DRUNK },
 									}),
 									crit(19396, {	-- Chee Chee
-										["_factions"] = { 1277 },
+										["_factions"] = { FACTION_CHEE_CHEE },
 									}),
 									crit(19404, {	-- Sho
-										["_factions"] = { 1278 },
+										["_factions"] = { FACTION_SHO },
 									}),
 									crit(19397, {	-- Ella
-										["_factions"] = { 1275 },
+										["_factions"] = { FACTION_ELLA },
 									}),
 									crit(19405, {	-- Tina Mudclaw
-										["_factions"] = { 1280 },
+										["_factions"] = { FACTION_TINA_MUDCLAW },
 									}),
 									crit(19403, {	-- Old Hillpaw
-										["_factions"] = { 1276 },
+										["_factions"] = { FACTION_OLD_HILLPAW },
 									}),
 									crit(19401, {	-- Haohan Mudclaw
-										["_factions"] = { 1279 },
+										["_factions"] = { FACTION_HAOHAN_MUDCLAW },
 									}),
 									crit(19399, {	-- Fish Fellreed
-										["_factions"] = { 1282 },
+										["_factions"] = { FACTION_FISH_FELLREED },
 									}),
 									crit(19400, {	-- Gina Mudclaw
-										["_factions"] = { 1281 },
+										["_factions"] = { FACTION_GINA_MUDCLAW },
 									}),
 								}),
 								ach(7292, {	-- Green Acres
@@ -119,26 +119,26 @@ root(ROOTS.Zones, {
 									title(195),		-- Farmer <Name>
 								}),
 							}),
-							faction(1277, {	-- Chee Chee
+							faction(FACTION_CHEE_CHEE, {	-- Chee Chee
 								["cr"] = 58709,	-- Chee Chee
 								["coord"] = { 53.0, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 								["g"] = sharedData({
 									["qg"] = 58709,	-- Chee Chee
-									["maxReputation"] = { 1277, 6 },
+									["maxReputation"] = { FACTION_CHEE_CHEE, 6 },
 								},{
 									q(31341, {	-- A Wolf In Sheep's Clothing
 										["sourceQuests"] = { 31340 },	-- Oh Sheepie....
 									}),
 									q(31338, {	-- Lost Sheepie
-										["minReputation"] = { 1277, 3 },	-- Buddy
+										["minReputation"] = { FACTION_CHEE_CHEE, 3 },	-- Buddy
 									}),
 									q(31339, {	-- Lost Sheepie... Again
 										["sourceQuests"] = { 31338 },	-- Lost Sheepie
-										["minReputation"] = { 1277, 4 },	-- Friend
+										["minReputation"] = { FACTION_CHEE_CHEE, 4 },	-- Friend
 									}),
 									q(31340, {	-- Oh Sheepie...
 										["sourceQuests"] = { 31339 },	-- Lost Sheepie... Again
-										["minReputation"] = { 1277, 5 },	-- Good Friend
+										["minReputation"] = { FACTION_CHEE_CHEE, 5 },	-- Good Friend
 									}),
 									q(30402, {	-- A Dish for Chee Chee
 										["isDaily"] = true,
@@ -175,21 +175,21 @@ root(ROOTS.Zones, {
 									}),
 								}),
 							}),
-							faction(1275, {	-- Ella
+							faction(FACTION_ELLA, {	-- Ella
 								["cr"] = 58647,	-- Ella
 								["coord"] = { 53.0, 51.6, VALLEY_OF_THE_FOUR_WINDS },
 								["g"] = sharedData({
 									["qg"] = 58647,	-- Ella
-									["maxReputation"] = { 1275, 6 },
+									["maxReputation"] = { FACTION_ELLA, 6 },
 								},{
 									q(31534, {	-- The Beginner's Brew
-										["minReputation"] = { 1275, 3 },	-- Buddy
+										["minReputation"] = { FACTION_ELLA, 3 },	-- Buddy
 									}),
 									q(31537, {	-- Ella's Taste Test
-										["minReputation"] = { 1275, 4 },	-- Friend
+										["minReputation"] = { FACTION_ELLA, 4 },	-- Friend
 									}),
 									q(31538, {	-- A Worthy Brew
-										["minReputation"] = { 1275, 5 },	-- Good Friend
+										["minReputation"] = { FACTION_ELLA, 5 },	-- Good Friend
 									}),
 									q(30386, {	-- A Dish for Ella
 										["isDaily"] = true,
@@ -227,15 +227,15 @@ root(ROOTS.Zones, {
 									}),
 								}),
 							}),
-							faction(1283, {	-- Farmer Fung
+							faction(FACTION_FARMER_FUNG, {	-- Farmer Fung
 								["cr"] = 57298,	-- Farmer Fung
 								["coord"] = { 48.3, 33.9, VALLEY_OF_THE_FOUR_WINDS },
 								["g"] = sharedData({
 									["qg"] = 57298,	-- Farmer Fung
-									["maxReputation"] = { 1283, 6 },
+									["maxReputation"] = { FACTION_FARMER_FUNG, 6 },
 								},{
 									q(30517, {	-- Farmer Fung's Vote I: Yak Attack
-										["minReputation"] = { 1272, REVERED + 4500 },	-- The Tillers
+										["minReputation"] = { FACTION_THE_TILLERS, REVERED + 4500 },	-- The Tillers
 										["sourceQuests"] = { 31946 },	-- Mung-Mung's Vote III: The Great Carrot Caper
 										["qg"] = 58646,	-- Farmer Yoon
 										["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
@@ -281,7 +281,7 @@ root(ROOTS.Zones, {
 									}),
 								}),
 							}),
-							faction(1282, {	-- Fish Fellreed
+							faction(FACTION_FISH_FELLREED, {	-- Fish Fellreed
 								["cr"] = 58705,	-- Fish Fellreed
 								["coord"] = { 52.8, 51.8, VALLEY_OF_THE_FOUR_WINDS },
 								["g"] = sharedData({
@@ -289,7 +289,7 @@ root(ROOTS.Zones, {
 										58705,	-- Fish Fellreed
 										59517,	-- Fish Fellreed
 									},
-									["maxReputation"] = { 1282, 6 },
+									["maxReputation"] = { FACTION_FISH_FELLREED, 6 },
 								},{
 									q(30427, {	-- A Dish for Fish
 										["isDaily"] = true,
@@ -325,12 +325,12 @@ root(ROOTS.Zones, {
 									}),
 								}),
 							}),
-							faction(1281, {	-- Gina Mudclaw
+							faction(FACTION_GINA_MUDCLAW, {	-- Gina Mudclaw
 								["cr"] = 58706,	-- Gina Mudclaw
 								["coord"] = { 53.2, 51.8, VALLEY_OF_THE_FOUR_WINDS },
 								["g"] = sharedData({
 									["qg"] = 58706,	-- Gina Mudclaw
-									["maxReputation"] = { 1281, 6 },
+									["maxReputation"] = { FACTION_GINA_MUDCLAW, 6 },
 								},{
 									q(30257, {	-- Learn and Grow V: Halfhill Market
 										["sourceQuests"] = { 30256 },	-- Learn and Grow IV: Harvesting
@@ -375,17 +375,17 @@ root(ROOTS.Zones, {
 									}),
 								}),
 							}),
-							faction(1279, {	-- Haohan Mudclaw
+							faction(FACTION_HAOHAN_MUDCLAW, {	-- Haohan Mudclaw
 								["cr"] = 57402,	-- Haohan Mudclaw
 								["coord"] = { 53.0, 51.7, VALLEY_OF_THE_FOUR_WINDS },
 								["g"] = sharedData({
 									["qg"] = 57402,	-- Haohan Mudclaw
-									["maxReputation"] = { 1279, 6 },
+									["maxReputation"] = { FACTION_HAOHAN_MUDCLAW, 6 },
 								},{
 									q(30521, {	-- Haohan's Vote I: Bungalow Break-In
 										["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
 										["qg"] = 58646,	-- Farmer Yoon
-										["minReputation"] = { 1272, REVERED + 16800 },	-- The Tillers
+										["minReputation"] = { FACTION_THE_TILLERS, REVERED + 16800 },	-- The Tillers
 									}),
 									q(30414, {	-- A Dish for Haohan
 										["isDaily"] = true,
@@ -423,24 +423,24 @@ root(ROOTS.Zones, {
 									}),
 								}),
 							}),
-							faction(1273, {	-- Jogu the Drunk
+							faction(FACTION_JOGU_THE_DRUNK, {	-- Jogu the Drunk
 								["cr"] = 58710,	-- Jogu the Drunk
 								["coord"] = { 53.6, 52.6, VALLEY_OF_THE_FOUR_WINDS },
 								["g"] = sharedData({
 									["qg"] = 58710,	-- Jogu the Drunk
-									["maxReputation"] = { 1273, 6 },
+									["maxReputation"] = { FACTION_JOGU_THE_DRUNK, 6 },
 								},{
 									q(31323, {	-- Buy A Fish A Brewery?
-										["minReputation"] = { 1273, 5 },	-- Good Friend
+										["minReputation"] = { FACTION_JOGU_THE_DRUNK, 5 },	-- Good Friend
 									}),
 									q(31320, {	-- Buy A Fish A Drink?
-										["minReputation"] = { 1273, 2 },	-- Acquaintance
+										["minReputation"] = { FACTION_JOGU_THE_DRUNK, 2 },	-- Acquaintance
 									}),
 									q(31322, {	-- Buy A Fish A Keg?
-										["minReputation"] = { 1273, 4 },	-- Friend
+										["minReputation"] = { FACTION_JOGU_THE_DRUNK, 4 },	-- Friend
 									}),
 									q(31321, {	-- Buy A Fish A Round?
-										["minReputation"] = { 1273, 3 },	-- Buddy
+										["minReputation"] = { FACTION_JOGU_THE_DRUNK, 3 },	-- Buddy
 									}),
 									q(30439, {	-- A Dish for Jogu
 										["isDaily"] = true,
@@ -477,12 +477,12 @@ root(ROOTS.Zones, {
 									}),
 								}),
 							}),
-							faction(1276, {	-- Old Hillpaw
+							faction(FACTION_OLD_HILLPAW, {	-- Old Hillpaw
 								["cr"] = 58707,	-- Old Hillpaw
 								["coord"] = { 53.1, 51.9, VALLEY_OF_THE_FOUR_WINDS },
 								["g"] = sharedData({
 									["qg"] = 58707,	-- Old Hillpaw
-									["maxReputation"] = { 1276, 6 },
+									["maxReputation"] = { FACTION_OLD_HILLPAW, 6 },
 								},{
 									q(30396, {	-- A Dish for Old Hillpaw
 										["isDaily"] = true,
@@ -518,24 +518,24 @@ root(ROOTS.Zones, {
 									}),
 								}),
 							}),
-							faction(1278, {	-- Sho
+							faction(FACTION_SHO, {	-- Sho
 								["cr"] = 58708,	-- Sho
 								["coord"] = { 53.1, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 								["g"] = sharedData({
 									["qg"] = 58708,	-- Sho
-									["maxReputation"] = { 1278, 6 },
+									["maxReputation"] = { FACTION_SHO, 6 },
 								},{
 									q(31531, {	-- Mission: Aerial Threat
 										["description"] = "Must be at least 4200/8400 into \"Friend\" with Sho to start this quest.",
-										["minReputation"] = { 1278, 4 },	-- Friend
+										["minReputation"] = { FACTION_SHO, 4 },	-- Friend
 									}),
 									q(31529, {	-- Mission: Culling The Vermin
 										["description"] = "Must be at least \"Buddy\" with Sho to start this quest.",
-										["minReputation"] = { 1278, 3 },	-- Buddy
+										["minReputation"] = { FACTION_SHO, 3 },	-- Buddy
 									}),
 									q(31532, {	-- Mission: Predator of the Cliffs
 										["description"] = "Must be at least 4200 into \"Good Friend\" with Sho to start this quest.",
-										["minReputation"] = { 1278, 5 },	-- Good Friend
+										["minReputation"] = { FACTION_SHO, 5 },	-- Good Friend
 									}),
 									q(30408, {	-- A Dish for Sho
 										["isDaily"] = true,
@@ -572,16 +572,16 @@ root(ROOTS.Zones, {
 									}),
 								}),
 							}),
-							faction(1280, {	-- Tina Mudclaw
+							faction(FACTION_TINA_MUDCLAW, {	-- Tina Mudclaw
 								["cr"] = 58761,	-- Tina Mudclaw
 								["coord"] = { 53.0, 51.8, VALLEY_OF_THE_FOUR_WINDS },
 								["g"] = sharedData({
 									["qg"] = 58761,	-- Tina Mudclaw
-									["maxReputation"] = { 1280, 6 },
+									["maxReputation"] = { FACTION_TINA_MUDCLAW, 6 },
 								},{
 									q(31329, {	-- A Beautiful Brooch
 										["provider"] = { "i", 86436 },	-- Beautiful Brooch
-										["minReputation"] = { 1280, 5 },	-- Good Friend
+										["minReputation"] = { FACTION_TINA_MUDCLAW, 5 },	-- Good Friend
 										["crs"] = {
 											59120,	-- Kunzen Rockflinger
 											59126,	-- Jokka-Jokka
@@ -604,7 +604,7 @@ root(ROOTS.Zones, {
 									}),
 									q(31328, {	-- An Exquisite Earring
 										["provider"] = { "i", 86435 },	-- Exquisite Earring
-										["minReputation"] = { 1280, 4 },	-- Friend
+										["minReputation"] = { FACTION_TINA_MUDCLAW, 4 },	-- Friend
 										["crs"] = {
 											59120,	-- Kunzen Rockflinger
 											59126,	-- Jokka-Jokka
@@ -627,7 +627,7 @@ root(ROOTS.Zones, {
 									}),
 									q(31325, {	-- A Very Nice Necklace
 										["provider"] = { "i", 86433 },	-- Nice Necklace
-										["minReputation"] = { 1280, 2 },	-- Acquaintance
+										["minReputation"] = { FACTION_TINA_MUDCLAW, 2 },	-- Acquaintance
 										["crs"] = {
 											59120,	-- Kunzen Rockflinger
 											59126,	-- Jokka-Jokka
@@ -650,7 +650,7 @@ root(ROOTS.Zones, {
 									}),
 									q(31326, {	-- Tina's Tasteful Tiara
 										["provider"] = { "i", 86434 },	-- Tasteful Tiara
-										["minReputation"] = { 1280, 3 },	-- Buddy
+										["minReputation"] = { FACTION_TINA_MUDCLAW, 3 },	-- Buddy
 										["crs"] = {
 											59120,	-- Kunzen Rockflinger
 											59126,	-- Jokka-Jokka
@@ -716,7 +716,7 @@ root(ROOTS.Zones, {
 									["coord"] = { 52.8, 52.0, VALLEY_OF_THE_FOUR_WINDS },
 								}),
 								q(30516, {	-- Growing the Farm I: A Little Problem
-									["minReputation"] = { 1272, HONORED },
+									["minReputation"] = { FACTION_THE_TILLERS, HONORED },
 									["sourceQuests"] = { 30260 },	-- Growing the Farm I: The Weeds
 									["provider"] = { "n", 57385 },	-- Gai Lan
 									["coord"] = { 38.7, 51.7, VALLEY_OF_THE_FOUR_WINDS },
@@ -732,7 +732,7 @@ root(ROOTS.Zones, {
 									["coord"] = { 41.7, 30.1, VALLEY_OF_THE_FOUR_WINDS },
 								}),
 								q(30523, {	-- Growing the Farm II: The Broken Wagon
-									["minReputation"] = { 1272, REVERED },
+									["minReputation"] = { FACTION_THE_TILLERS, REVERED },
 									["sourceQuests"] = { 30516 },	-- Growing the Farm I: A Little Problem
 									["provider"] = { "n", 58646 },	-- Farmer Yoon
 									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
@@ -742,7 +742,7 @@ root(ROOTS.Zones, {
 									["description"] = "Must have all Tillers votes collected to start this quest.",
 									["coord"] = { 52.2, 48.8, VALLEY_OF_THE_FOUR_WINDS },
 									["provider"] = { "n", 58646 },	-- Farmer Yoon
-									["minReputation"] = { 1272, EXALTED },	-- The Tillers
+									["minReputation"] = { FACTION_THE_TILLERS, EXALTED },	-- The Tillers
 								}),
 								q(30522, {	-- Haohan's Vote II: The Real Culprits
 									["sourceQuests"] = { 30521 },	-- Haohan's Vote I: Bungalow Break-In
@@ -806,7 +806,7 @@ root(ROOTS.Zones, {
 								q(30519, {	-- Nana's Vote I: Nana's Secret Recipe
 									["coord"] = { 52.3, 48.8, VALLEY_OF_THE_FOUR_WINDS },
 									["provider"] = { "n", 58646 },	-- Farmer Yoon
-									["minReputation"] = { 1272, REVERED + 8400 },	-- The Tillers
+									["minReputation"] = { FACTION_THE_TILLERS, REVERED + 8400 },	-- The Tillers
 								}),
 								q(31948, {	-- Nana's Vote II: The Sacred Springs
 									["sourceQuests"] = { 30519 },	-- Nana's Vote I: Nana's Secret Recipe
@@ -832,7 +832,7 @@ root(ROOTS.Zones, {
 									["crs"] = { 59639 },	-- Enormous Cattail Grouper
 									["provider"] = { "i", 86404 },	-- Old Map
 									["description"] = "Requires a reputation level of Exalted with The Tillers and Best Friend with all Halfhill farmers to drop.",
-									["minReputation"] = { 1272, EXALTED },	-- The Tillers
+									["minReputation"] = { FACTION_THE_TILLERS, EXALTED },	-- The Tillers
 								}),
 							}),
 							-- Daily
@@ -1223,7 +1223,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 18.3, 31.3, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56714 },	-- Master Bruised Paw
 						["groups"] = {
-							o(209953, {	-- Emperor Tern Egg 
+							o(209953, {	-- Emperor Tern Egg
 								i(76501),	-- Emperor Tern Egg (QI!)
 							}),
 							o(209954, {	-- Whitefisher Crane Egg
@@ -1243,7 +1243,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 29912 },	-- The Fabular Miss Fanny
 						["coord"] = { 75.2, 24.0, VALLEY_OF_THE_FOUR_WINDS },
 						["provider"] = { "n", 56205 },	-- Liang Thunderfoot
-						["groups"] = {	
+						["groups"] = {
 							i(75271),	-- Jian (QI!)
 							i(75272),	-- Ling (QI!)
 							i(75273),	-- Smelly (QI!)
@@ -5673,7 +5673,7 @@ root(ROOTS.Zones, {
 							i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 						},
 					}),
-					faction(1276, {	-- Old Hillpaw
+					faction(FACTION_OLD_HILLPAW, {	-- Old Hillpaw
 						["g"] = {
 							i(90042, {	-- Straw Hat
 								["description"] = "Once you hit Exalted with Old Hillpaw you receive this in the mail.",
@@ -5691,7 +5691,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					faction(1278, {	-- Sho
+					faction(FACTION_SHO, {	-- Sho
 						i(85497, {	-- Chirping Package
 							["description"] = "Once you hit Exalted with Sho you receive this in the mail.",
 							["g"] = {

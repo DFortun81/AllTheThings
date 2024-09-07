@@ -175,6 +175,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(221248),	-- Deep Terror Carver
 					i(221233),	-- Deephunter's Bloody Hook
 					i(223501),	-- Ol' Mole Rufus (MOUNT!)
+					i(221255),	-- Sharpened Scalepiercer
+					i(221234),	-- Tidal Pendant
 				},
 			}),
 			n(220270, {	-- Zilthara <The Deepflayer Devourer>

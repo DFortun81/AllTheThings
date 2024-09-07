@@ -47,7 +47,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				}),
 				crit(30499, {	-- Class Hall Gloves Earned
 					["description"] = "Reach Honored reputation with the Nightfallen.",
-					["minReputation"] = { 1859, HONORED },
+					["minReputation"] = { FACTION_THE_NIGHTFALLEN, HONORED },
 				}),
 				crit(4, {	-- Class Hall Leggings Earned
 					["description"] = "Complete 8 Legion dungeons on any difficulty.",
@@ -77,9 +77,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 				}),
 				crit(8, {	-- Class Hall Shoulders Earned
 					["description"] = "Reach Exalted reputation with the Nightfallen.",
-					["minReputation"] = { 1859, EXALTED },
+					["minReputation"] = { FACTION_THE_NIGHTFALLEN, EXALTED },
 				}),
-				 -- #ENDIF
+				-- #ENDIF
 			}),
 			un(REMOVED_FROM_GAME, ach(10852)),		-- Artifact or Artifiction
 			ach(11137, {	-- A Legendary Campaign

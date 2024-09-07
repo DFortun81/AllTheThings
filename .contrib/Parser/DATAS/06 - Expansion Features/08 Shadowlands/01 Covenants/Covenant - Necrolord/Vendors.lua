@@ -1315,15 +1315,19 @@ for _,t in ipairs({CHRONICLE_OF_LOST_MEMORIES, MEMORY_OF_A_VITAL_SACRIFICE}) do
 	t.customCollect = nil;
 end
 
-root(ROOTS.HiddenQuestTriggers, {
-	q(63627),	-- learning Ensemble: Marileth's Assistant's Vestments
-	q(62005),	-- unlocking Rationale of Maldraxxus set (TransmogSetID 2031, Prime Conjurer's items)
-	q(62009),	-- unlocking Wisdom of Maldraxxus set (TransmogSetID 2032, Bladesworn Conjurer's items)
-	q(62008),	-- unlocking Sight of Maldraxxus set (TransmogSetID 2035, Bladesworn Wraith's items)
-	q(62004),	-- unlocking Guile of Maldraxxus set (TransmogSetID 2036, Prime Wraith's items)
-	q(62007),	-- unlocking Will of Maldraxxus set (TransmogSetID 2041, Bladesworn Tactician's items)
-	q(62003),	-- unlocking Alacrity of Maldraxxus set (TransmogSetID 2042, Prime Tactician's items)
-	q(62006),	-- unlocking Might of Maldraxxus set (TransmogSetID 2043, Bladesworn Harbinger's items)
-	q(62002),	-- unlocking Authority of Maldraxxus set (TransmogSetID 2044, Prime Harbinger's items)
-	q(62901),	-- learning Arsenal: Stitchmasters' Weapons
-});
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	n(NECROLORD, {
+		n(VENDORS, {
+			q(62005),	-- unlocking Rationale of Maldraxxus set (TransmogSetID 2031, Prime Conjurer's items)
+			q(62009),	-- unlocking Wisdom of Maldraxxus set (TransmogSetID 2032, Bladesworn Conjurer's items)
+			q(62008),	-- unlocking Sight of Maldraxxus set (TransmogSetID 2035, Bladesworn Wraith's items)
+			q(62004),	-- unlocking Guile of Maldraxxus set (TransmogSetID 2036, Prime Wraith's items)
+			q(62007),	-- unlocking Will of Maldraxxus set (TransmogSetID 2041, Bladesworn Tactician's items)
+			q(62003),	-- unlocking Alacrity of Maldraxxus set (TransmogSetID 2042, Prime Tactician's items)
+			q(62006),	-- unlocking Might of Maldraxxus set (TransmogSetID 2043, Bladesworn Harbinger's items)
+			q(62002),	-- unlocking Authority of Maldraxxus set (TransmogSetID 2044, Prime Harbinger's items)
+			q(62901),	-- learning Arsenal: Stitchmasters' Weapons
+			q(63627, {["timeline"] = {ADDED_9_1_0}}),	-- learning Ensemble: Marileth's Assistant's Vestments
+		}),
+	}),
+})));

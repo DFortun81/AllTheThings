@@ -182,7 +182,7 @@ root(ROOTS.Zones, {
 					exploration(7225),	-- Umbrafen
 				}),
 				n(FACTIONS, {
-					faction(1731, {["races"] = ALLIANCE_ONLY}),	-- Council of Exarchs
+					faction(FACTION_COUNCIL_OF_EXARCHS, {["races"] = ALLIANCE_ONLY}),	-- Council of Exarchs
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1569, {	-- Akeeta's Hovel, Shadowmoon Valley

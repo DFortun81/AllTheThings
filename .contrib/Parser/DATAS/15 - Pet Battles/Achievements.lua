@@ -320,18 +320,29 @@ root(ROOTS.PetBattles, petbattle({
 			crit(21592),	-- Townlong Steppes
 			crit(21593),	-- Vale of Eternal Blossoms
 		}),
+		ach(16731,	bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {	-- Court is Now in Session
+			crit(56693),	-- Lord Basilton
+			crit(56700),	-- Lady Feathersworth
+			crit(56706),	-- Mister Toots
+			crit(56707),	-- Mister Muskoxeles
+			crit(60889),	-- Princess Vorquistrasza
+			title(480),	-- <Name>, Knight of Feathersworth
+		})),
 		ach(6554),	-- He's Mine! (10)
 		ach(6555),	-- Building a Team (25)
 		ach(6556),	-- Going to Need More Traps (50)
 		ach(6557),	-- Master Pet Hunter (100)
 		ach(7436),	-- Zen Pet Hunter (200)
-		ach(15643,  bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- What Can I Say? They Love Me. (1750)
+		ach(15644,	bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {	-- Good Things Come in Small Packages (1800)
+			i(191946),	-- Mister Muskoxeles (PET!)
+		})),
+		ach(15643,  bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- What Can I Say? They Love Me. (1600)
 			i(191932),	-- Violet Violence (PET!)
 		})),
-		ach(15642,  bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- Proven Pet Parent (1500)
+		ach(15642,  bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- Proven Pet Parent (1400)
 			i(191936),	-- Secretive Frogduck (PET!)
 		})),
-		ach(15641,  bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- Many More Mini Minions (1250)
+		ach(15641,  bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {	-- Many More Mini Minions (1200)
 			i(191941),	-- Crystalline Mini-Monster (PET!)
 		})),
 		ach(12958, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {	-- Master of Minions (1000)

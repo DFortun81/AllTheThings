@@ -325,7 +325,7 @@ root(ROOTS.Zones, {
 						-- TODO: based on speed completion of "Troll Patrol" daily. Determine condition and add as description
 						["qg"] = 28039,	-- Commander Kunz
 						["coord"] = { 40.2, 66.6, ZULDRAK },
-						["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
+						["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
 						["isDaily"] = true,
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
@@ -968,7 +968,7 @@ root(ROOTS.Zones, {
 						["qg"] = 28039,	-- Commander Kunz
 						["sourceQuest"] = 12596,	-- Pa'Troll
 						["coord"] = { 40.2, 66.6, ZULDRAK },
-						["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
+						["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12563, {	-- Troll Patrol
@@ -976,7 +976,7 @@ root(ROOTS.Zones, {
 						["qg"] = 28039,	-- Commander Kunz
 						["sourceQuest"] = 12596,	-- Pa'Troll
 						["coord"] = { 40.2, 66.6, ZULDRAK },
-						["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
+						["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12587, {	-- Troll Patrol
@@ -985,7 +985,7 @@ root(ROOTS.Zones, {
 						["qg"] = 28039,	-- Commander Kunz
 						["sourceQuest"] = 12596,	-- Pa'Troll
 						["coord"] = { 40.2, 66.6, ZULDRAK },
-						["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
+						["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12588, {	-- Troll Patrol: Can You Dig It?

@@ -613,7 +613,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				q(79372, {	-- A Cluth of Hope
-					--["sourceQuests"] = { 79370 },	-- A Poultice for Poison // need to confirm
+					["sourceQuests"] = { 79371 },	-- A Royal Cure
 					["provider"] = { "o", 423581 },	-- Broodmother's Egg
 					["coord"] = { 68.1, 39.0, THE_RINGING_DEEPS },
 					["g"] = {
@@ -957,7 +957,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 217474 },	-- Keldaz
 					["coord"] = { 51.1, 14.8, THE_RINGING_DEEPS },
 				}),
-				q(79944, {	-- Raging Rifts	// bugged, can't progress it
+				q(79944, {	-- Raging Rifts
 					["sourceQuests"] = { 79194 },	-- To the Source
 					["provider"] = { "n", 223000 },	-- Keldaz
 					["coord"] = { 55.3, 11.1, THE_RINGING_DEEPS },
@@ -966,9 +966,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				q(79327, {	-- The Glittering Shard
-					["sourceQuests"] = { 79194 },	-- To the Source (TODO: need to clarify it, not sure)
+					["sourceQuests"] = { 79944 },	-- Raging Rifts
 					["provider"] = { "i", 212595 },	-- Glittering Shard
-					--["maps"] = { THE_RINGING_DEEPS },
+					["coord"] = { 57, 16, THE_RINGING_DEEPS },
 				}),
 			}),
 			header(HEADERS.AchCriteria, 40799.13, {	-- Abysmal Extraction
@@ -1068,7 +1068,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						--80578,	-- The Common Costume // unsure about this one
 					},
 					["provider"] = { "n", 220600 },	-- Haimaz
-					["coord"] = { 62.8,	44.2, THE_RINGING_DEEPS },
+					["coord"] = { 62.0, 45.5, THE_RINGING_DEEPS },
 					["g"] = {
 						i(221001),	-- Cinderbrew Flask (QI!)
 						i(221000),	-- Nearly-empty Cask (QI!)

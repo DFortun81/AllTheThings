@@ -3682,7 +3682,6 @@ i(0, 3257);			-- Test Beetle
 i(0, 3308);			-- Time-Lost Duckling
 i(0, 3363);			-- Truesilver Crab
 i(193614, 3314);	-- Groundshaker
-i(191946, 3265);	-- Mister Muskoxeles
 i(193380, 3298);	-- Pink Salamanther
 i(193587, 3312);	-- Time-Lost Duck
 i(193620, 3267);	-- Time-Lost Slyvern
@@ -3960,10 +3959,10 @@ i(205164, 3554);	-- Senega
 i(205150, 3544);	-- Shalewing Devourer
 i(205035, 3526);	-- Snapjaw Lurker
 i(205148, 3542);	-- Soot-Stained Shalewing
-
 i(205037, 3527);	-- Void Lurker
 i(205032, 0);		-- Bestial Lurker
 i(205153, 0);		-- Mikah
+i(205157, 0);		-- Undermoth
 
 ------------------
 -- PATCH 10.1.5 --
@@ -4086,9 +4085,8 @@ i(223145, 4548);	-- Marrlok
 i(221817, 4579);	-- Muskpaw Calf
 i(223339, 4565);	-- Trishi
 i(223474, 4566);	-- Worgli the Apprehensive
---- UNSORTED ---
-i(223498, 4568);	-- Charismatic Courier
 --- NYI ---
+i(223498, 4568);	-- Charismatic Courier
 i(223499, 4569);	-- Lil' Manny
 
 ------------------
@@ -4097,18 +4095,37 @@ i(223499, 4569);	-- Lil' Manny
 i(218245, 4451);	-- Remembered Construct
 i(218086, 4450);	-- Remembered Riverpaw
 i(218246, 4452);	-- Remembered Spawn
---- UNSORTED ---
+--- NYI ---
+i(0, 4478);			-- Caustic Oozeling
+i(0, 4528);			-- Cobalt Mosswool
+i(0, 4583);			-- Green Stagshell
+i(0, 4502);			-- Kaheti Bull Worm
+i(0, 4493);			-- Redthroat Skipling
+i(0, 4509);			-- Sporbit [Blue]
+i(0, 4505);			-- Sporbit [Orange]
+i(0, 4507);			-- Sporbit [Purple]
+i(0, 4504);			-- Sporbit [Red]
+i(0, 4503);			-- Sporbit [Teal]
+i(0, 4508);			-- Sporbit [Yellow]
+i(0, 4584);			-- Tan Stagshell
 i(222969, 4474);	-- Anub'Rekyute
 i(221851, 4466);	-- Argos
 i(221764, 4519);	-- Burntram
 i(222979, 4545);	-- Clay Stonecharger
 i(221762, 4484);	-- Frenzied Bloodtick
-i(222970, 4490);	-- Fuzzy
 i(221195, 4458);	-- Illskitter
 i(221492, 4459);	-- Moss Skipper
 i(221759, 4512);	-- Sceaduthax
 i(221495, 4497);	-- Waddles
 i(222967, 4475);	-- Webbers
+i(221493, 0);		-- Admiral
+i(223803, 0);		-- Blue Stagshell
+i(221022, 0);		-- Cowboy Bee[DNT]
+i(223626, 0);		-- Embersting
+i(228097, 0);		-- Pinkskin Burrower
+i(228098, 0);		-- Troglofrog
+i(222975, 0);		-- Umbral Amalgam [DNT]
+i(228096, 0);		-- Vibrant Firefly
 
 ------------------
 -- PATCH 11.0.2 --
@@ -4199,7 +4216,7 @@ n(223715, 4574);	-- Snuffling
 n(222736, 4521);	-- Subterranean Dartswog
 n(222739, 4522);	-- Troglofrog
 n(223136, 4544);	-- Umbral Amalgam
-i(205157, 3550);	-- Undermoth
+n(204361, 3550);	-- Undermoth
 n(222344, 4477);	-- Verdant Scootlefish
 n(222615, 4516);	-- Vibrant Glowfly
 n(222421, 4483);	-- Vile Bloodtick
@@ -4222,4 +4239,18 @@ i(0, 4553);			-- Takey-Take
 i(0, 4556);			-- Tickler
 i(0, 4549);			-- Tiny Cragling
 i(0, 4560);			-- Zaedu
+
+------------------
+-- PATCH 11.0.5 --
+------------------
+--- ITEM ---
+i(222970, 4490);	-- Fuzzy
+i(191946, 3265);	-- Mister Muskoxeles
 --- UNSORTED ---
+i(229993, 4669);	-- Bluedoo
+i(224410, 4593);	-- Craggles
+i(231365, 4689);	-- Karazhan Syphoner
+i(228781, 4678);	-- Lil'Doomy
+i(230011, 4679);	-- Lil'Kaz
+i(224406, 4592);	-- Misty
+i(231356, 4686);	-- Specter

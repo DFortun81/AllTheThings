@@ -76,14 +76,23 @@ is(44811, 61780, MAGE);				-- Tome of Polymorph: Turkey
 -----------------
 is(82470, 120146, MAGE);			-- Ancient Tome of Portal: Dalaran
 is(82469, 120145, MAGE);			-- Ancient Tome of Teleport: Dalaran
-iq(86125, 31304);					-- Kafa Press
-iq(86529, 31432);					-- Manipulator's Talisman
+-- iq(86125, 31304);					-- Kafa Press
+-- iq(86529, 31432);					-- Manipulator's Talisman
+is(0, 131204); 						-- Path of the Jade Serpent
 
 -----------------
 -- PATCH 5.2.0 --
 -----------------
 is(94232, 138430, HUNTER);			-- Ancient Tome of Dinomancy
 is(0, 101508, WARLOCK);				-- The Codex of Xerrath
+
+-----------------
+-- PATCH 6.0.1 --
+-----------------
+is(0, 159899); 						-- Path of the Crescent Moon
+is(0, 159900); 						-- Path of the Dark Rail
+is(0, 159896); 						-- Path of the Iron Prow
+is(0, 159901); 						-- Path of the Verdant
 
 -----------------
 -- PATCH 6.0.2 --
@@ -145,11 +154,6 @@ iq(132525, 40732);					-- Reaves Module: Repair Mode
 iq(132531, 40737);					-- Reaves Module: Piloted Combat Mode
 iq(132530, 40736);					-- Reaves Module: Bling Mode
 iq(132524, 40738);					-- Reaves Module: Wormhole Generator Mode
-iq(140665, 44097);					-- Nearly Satisfactory Eredar Head
-iq(140664, 44096);					-- Deficient Eredar Head
-iq(140663, 44095);					-- Malformed Eredar Head
-iq(140662, 44094);					-- Deformed Eredar Head
-iq(140661, 44093);					-- Damaged Eredar Head
 -- NYI
 is(136971, 211010, SHAMAN);			-- Tome of Hex: Snake
 
@@ -168,12 +172,6 @@ is(162625, 277787, MAGE);			-- Tome of Polymorph: Direhorn
 is(159841, 269352, SHAMAN);			-- Tome of Hex: Skeletal Hatchling
 is(162624, 277784, SHAMAN);			-- Tome of Hex: Wicker Mongrel
 is(162623, 277778, SHAMAN);			-- Tome of Hex: Zandalari Tendonripper
-iq(162581, 52859);					-- Yellowed Treasure Map
-iq(162571, 52853);					-- Soggy Treasure Map
-iq(162584, 52860);					-- Singed Treasure Map
-iq(162580, 52854);					-- Fading Treasure Map
-iq(163702, 53200);					-- Rosaline's Letter
-iq(163699, 53111);					-- Annealed Honey Amulet
 
 -----------------
 -- PATCH 8.1.0 --
@@ -184,9 +182,6 @@ iq(166749, 54859);					-- Lyrics: Song of the Sea
 -----------------
 -- PATCH 8.2.0 --
 -----------------
-iq(170147, 56908);					-- Paint Bottle: Goblin Green
-iq(170146, 56907);					-- Paint Bottle: Nukular Red
-iq(170148, 56909);					-- Paint Bottle: Electric Blue
 
 -----------------
 -- PATCH 8.2.5 --
@@ -224,14 +219,12 @@ iq(180705, 61160, HUNTER);			-- Gargon Training Manual
 iq(184219, 62821);					-- Treatise on Sinstone Fragment Acquisition
 iq(184222, 62822);					-- Lemet's Requisition Orders
 iq(184220, 62821);					-- Encyclopedia of Sinstone Fragment Recovery
-iq(182618, 62085);					-- Reclaimed Vessel
 iq(183517, 62372);					-- Page 76 of the Necronom-i-nom
 iq(187923, 65039);					-- Aurelid Lure
 --- NYI ---
 iq(181443, 61459);					-- The Party Herald's Party Hat
 iq(183957, 62657);					-- Invitation: Grandmaster Vole
 iq(183956, 62656);					-- Invitation: Choofa
-iq(182975, 62223);					-- Ascension Calling: Mikanikos
 
 -----------------
 -- PATCH 9.0.5 --
@@ -245,7 +238,6 @@ iq(185353, 63643);					-- Rune Codex Page: Binding
 -----------------
 -- PATCH 9.1.0 --
 -----------------
-iq(186727, 62679);					-- Seal Breaker Key
 iq(186453, 64061);					-- Vault Anima Tracker
 iq(186722, 64027);					-- Treatise: The Study of Anima and Harnessing Every Drop
 iq(186721, 64366);					-- Treatise: Relics Abound in the Shadowlands
@@ -258,6 +250,14 @@ iq(186714, 64339);					-- Research Report: All-Seeing Crystal
 iq(186717, 64300);					-- Research Report: Adaptive Alloys
 iq(185965, 63893);					-- Memories of Sunless Skies
 iq(181442, 61458);					-- Visions of Sire Denathrius
+is(0, 354466); 						-- Path of the Ascendant
+is(0, 354462); 						-- Path of the Courageous
+is(0, 354464); 						-- Path of the Misty Forest
+is(0, 354463); 						-- Path of the Plagued
+is(0, 354468); 						-- Path of the Scheming Loa
+is(0, 354465); 						-- Path of the Sinful Soul
+is(0, 354469); 						-- Path of the Stone Warden
+is(0, 354467); 						-- Path of the Undefeated
 
 -----------------
 -- PATCH 9.1.5 --
@@ -278,6 +278,30 @@ iq(190640, 65694);					-- Font of Ephemeral Power
 iq(190956, 70705);					-- Decanter of Untapped Potential
 iq(190234, 65617);					-- Enlightened Portal Research
 iq(188793, 65282);					-- Improvised Cypher Analysis Tool
+is(0, 367416); 						-- Path of the Streetwise Merchant
+
+-----------------
+-- PATCH 9.2.5 --
+-----------------
+is(0, 373262); 						-- Path of the Fallen Guardian
+is(0, 373274); 						-- Path of the Scrappy Prince
+is(0, 373192); 						-- Path of the First Ones
+is(0, 373190); 						-- Path of the Sire
+is(0, 373191); 						-- Path of the Tormented Soul
+
+------------------
+-- PATCH 10.0.0 --
+------------------
+is(0, 393279); 						-- Path of Arcane Secrets
+is(0, 393764); 						-- Path of Proven Worth
+is(0, 393256); 						-- Path of the Clutch Defender
+is(0, 393273); 						-- Path of the Draconic Diploma
+is(0, 393766); 						-- Path of the Grand Magistrix
+is(0, 393276); 						-- Path of the Obsidian Hoard
+is(0, 393267); 						-- Path of the Rotting Woods
+is(0, 393283); 						-- Path of the Titanic Reservoir
+is(0, 393222); 						-- Path of the Watcher's Legacy
+is(0, 393262); 						-- Path of the Windswept Plains
 
 ------------------
 -- PATCH 10.0.2 --
@@ -388,6 +412,10 @@ iq(205438, 75850);					-- Bartered Enchanting Journal
 iq(205439, 75849);					-- Bartered Blacksmithing Journal
 iq(205440, 75848);					-- Bartered Alchemy Journal
 iq(205451, 75866);					-- Flawless Crystal Scale
+is(0, 410074); 						-- Path of Festering Rot
+is(0, 410071); 						-- Path of the Freebooter
+is(0, 410078); 						-- Path of the Earth-Warder
+is(0, 410080); 						-- Path of Wind's Domain
 
 ------------------
 -- PATCH 10.1.5 --
@@ -453,6 +481,12 @@ iq(210728, 78521, DRUID);	-- Moon-Blessed Claw
 iq(210727, 78518, DRUID);	-- Pollenfused Bristlebruin Fur Sample
 iq(210753, 78516, DRUID);	-- Scale of the Prismatic Whiskerfish
 iq(211314, 78842, HUNTER);	-- Cinder of Companionship
+is(0, 424153); 				-- Path of Ancient Horrors
+is(0, 424167); 				-- Path of Heart's Bane
+is(0, 424187); 				-- Path of the Golden Tomb
+is(0, 424163); 				-- Path of the Nightmare Lord
+is(0, 424142); 				-- Path of the Tidehunter
+is(0, 424197); 				-- Path of Twisted Time
 
 ------------------
 -- PATCH 10.2.5 --
@@ -483,6 +517,24 @@ iq(216898, 80085);					-- Mallard Duck Disguise
 iq(216900, 80087);					-- Pink Duck Disguise
 iq(216901, 80088);					-- White Duck Disguise
 iq(216902, 80089);					-- Yellow Duck Disguise
+is(0, 432257); 						-- Path of the Bitter Legacy
+is(0, 432254); 						-- Path of the Primal Prison
+is(0, 432258); 						-- Path of the Scorching Dream
+
+------------------
+-- PATCH 11.0.0 --
+------------------
+is(0, 445416); 						-- Path of Nerubian Ascension
+is(0, 445414); 						-- Path of the Arathi Flagship
+is(0, 445418); 						-- Path of the Besieged Harbor [A]
+is(0, 464256); 						-- Path of the Besieged Harbor [H]
+is(0, 445269); 						-- Path of the Corrupted Foundry
+is(0, 445443); 						-- Path of the Fallen Stormriders
+is(0, 445440); 						-- Path of the Flaming Brewery
+is(0, 445444); 						-- Path of the Light's Reverence
+is(0, 445417); 						-- Path of the Ruined City
+is(0, 445424); 						-- Path of the Twilight Fortress
+is(0, 445441); 						-- Path of the Warding Candles
 
 ------------------
 -- PATCH 11.0.2 --
@@ -542,6 +594,7 @@ iq(226520, 84006);					-- Queen's Pheromone
 iq(224038, 82631);					-- Smithing After Saronite
 iq(228943, 84689);					-- Spymaster's Severed Thread
 iq(224024, 82633);					-- Theories of Bodily Transmutation, Chapter 8
+is(227710, 460392, MAGE);			-- Tome of Polymorph: Mosswool
 iq(224056, 82626);					-- Uses for Leftover Husks (After You Take Them Apart)
 iq(224007, 82596);					-- Uses for Leftover Husks (How to Take Them Apart)
 iq(224656, 83066);					-- Void-Lit Herbalism Notes

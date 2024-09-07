@@ -903,7 +903,7 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			o(455972, {	-- Librarian's Magnifiers
-				["coord"] = { 44.7, 50.9, THE_RINGING_DEEPS },
+				["coord"] = { 44.7, 50.9, HALLOWFALL },
 				["questID"] = 83895,
 				["g"] = {
 					i(226321),	-- Librarian's Magnifiers

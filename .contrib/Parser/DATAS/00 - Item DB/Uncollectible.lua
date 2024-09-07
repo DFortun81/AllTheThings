@@ -1912,6 +1912,7 @@ i(225790);	-- Half-Painted Pewter Spider
 i(220279);	-- Handful of Polished Scales
 i(220252);	-- Handful of Smooth Pebbles
 i(228400);	-- Happy Rock
+i(220441);	-- Hardened Pearl
 i(220246);	-- Humming Power Core
 i(220275);	-- Indigo Shard
 i(220253);	-- Inert Dust
@@ -1987,6 +1988,7 @@ i(225807);	-- Rune-Carved Bone
 i(223897);	-- Ruptured Engine
 i(228497);	-- Rusted Airship Cog
 i(228399);	-- Sad Rock
+i(225824);	-- Sand Sculpting Comb
 i(220236);	-- Sanguineous Sac
 i(220239);	-- Severed Spiraled Tail
 i(223899);	-- Shadowed Appendage
@@ -2042,8 +2044,9 @@ i(220221);	-- Void Pebble
 i(223884);	-- Volatile Transmutation
 i(220276);	-- Wax-Covered Helmet
 i(220263);	-- Wax Miner's Sack
+i(220442);	-- Weighty Shovel
 i(225802);	-- Well-Worn Darning Needle
-i(217163);	-- Well Worn Doll
+i(217163);	-- Well-Worn Doll
 i(220278);	-- Well-Worn Leather Sole
 i(225842);	-- Whirling Sphere
 i(220491);	-- Wicked Blade Shard

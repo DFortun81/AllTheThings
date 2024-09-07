@@ -107,7 +107,7 @@ root(ROOTS.Zones, {
 						}),
 						-- #endif
 					}),
-					achWithReps(945, { 529, 1106 }, {	-- The Argent Champion
+					achWithReps(945, { FACTION_ARGENT_DAWN, FACTION_ARGENT_CRUSADE }, {	-- The Argent Champion
 						-- #if BEFORE WRATH
 						["description"] = "Earn exalted status with the Argent Dawn and the Argent Crusade.",
 						-- #endif
@@ -116,8 +116,8 @@ root(ROOTS.Zones, {
 							title(99),	-- <Name> the Argent Champion
 						},
 					}),
-					achWithRep(947, 1106),	-- The Argent Crusade
-					achWithRep(1009, 1098),	-- Knights of the Ebon Blade
+					achWithRep(947, FACTION_ARGENT_CRUSADE),	-- The Argent Crusade
+					achWithRep(1009, FACTION_EBON_BLADE),	-- Knights of the Ebon Blade
 				}),
 				battlepets({
 					["sym"] = {{"select","speciesID",
@@ -167,10 +167,10 @@ root(ROOTS.Zones, {
 					exploration(4513),	-- Ymirheim
 				}),
 				n(FACTIONS, {
-					faction(1106, {	-- Argent Crusade
+					faction(FACTION_ARGENT_CRUSADE, {	-- Argent Crusade
 						["maps"] = { ZULDRAK },
 					}),
-					faction(1098, {	-- Knights of the Ebon Blade
+					faction(FACTION_EBON_BLADE, {	-- Knights of the Ebon Blade
 						["maps"] = { ZULDRAK },
 					}),
 				}),
@@ -310,7 +310,7 @@ root(ROOTS.Zones, {
 						["qg"] = 31808,	-- Ground Commander Koup
 						["sourceQuest"] = 13341,	-- Joining the Assault
 						["coord"] = { 62.5, 51.3, ICECROWN },
-						["maxReputation"] = { 1050, EXALTED },	-- Valiance Expedition, Exalted.
+						["maxReputation"] = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -318,7 +318,7 @@ root(ROOTS.Zones, {
 						["qg"] = 31834,	-- Ground Commander Xutjja
 						["sourceQuest"] = 13340,	-- Joining the Assault
 						["coord"] = { 58.3, 45.9, ICECROWN },
-						["maxReputation"] = { 1085, EXALTED },	-- Warsong Offensive, Exalted.
+						["maxReputation"] = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -326,7 +326,7 @@ root(ROOTS.Zones, {
 						["qg"] = 31737,	-- Skybreaker Squad Leader
 						["sourceQuest"] = 13341,	-- Joining the Assault
 						["coord"] = { 62.5, 51.1, ICECROWN },
-						["maxReputation"] = { 1050, EXALTED },	-- Valiance Expedition, Exalted.
+						["maxReputation"] = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -334,7 +334,7 @@ root(ROOTS.Zones, {
 						["qg"] = 31833,	-- Kor'kron Squad Leader
 						["sourceQuest"] = 13340,	-- Joining the Assault
 						["coord"] = { 58.3, 46.1, ICECROWN },
-						["maxReputation"] = { 1085, EXALTED },	-- Warsong Offensive, Exalted.
+						["maxReputation"] = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -452,7 +452,7 @@ root(ROOTS.Zones, {
 						["qg"] = 32302,	-- Knight-Captain Drosche
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13225,	-- The Skybreaker
-						["maxReputation"] = { 1050, EXALTED },	-- Valiance Expedition, Exalted.
+						["maxReputation"] = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -460,7 +460,7 @@ root(ROOTS.Zones, {
 						["qg"] = 32301,	-- Warbringer Davos Rioht
 						["sourceQuest"] = 13224,	-- Orgrim's Hammer
 						["description"] = "On Orgrim's Hammer.",
-						["maxReputation"] = { 1085, EXALTED },	-- Warsong Offensive, Exalted.
+						["maxReputation"] = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -526,7 +526,7 @@ root(ROOTS.Zones, {
 						["qg"] = 29799,	-- Thassarian
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13314,	-- Get the Message
-						["maxReputation"] = { 1050, EXALTED },	-- Valiance Expedition, Exalted.
+						["maxReputation"] = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -767,7 +767,7 @@ root(ROOTS.Zones, {
 						["qg"] = 29396,	-- Setaal Darkmender
 						["sourceQuest"] = 12807,	-- The Story Thus Far...
 						["coord"] = { 19.6, 48.3, ICECROWN },
-						["maxReputation"] = { 1098, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+						["maxReputation"] = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
 						["isDaily"] = true,
 					}),
 					q(13171, {	-- From Whence They Came
@@ -935,7 +935,7 @@ root(ROOTS.Zones, {
 						["qg"] = 29456,	-- Aurochs Grimbane
 						["sourceQuest"] = 12807,	-- The Story Thus Far...
 						["coord"] = { 20.0, 47.9, ICECROWN },
-						["maxReputation"] = { 1098, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+						["maxReputation"] = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
 						["isDaily"] = true,
 					}),
 					q(13139, {	-- Into The Frozen Heart Of Northrend
@@ -1008,7 +1008,7 @@ root(ROOTS.Zones, {
 						["qg"] = 30824,	-- Sky-Reaver Korm Blackscar
 						["sourceQuest"] = 13313,	-- Blinding the Eyes in the Sky
 						["description"] = "On Orgrim's Hammer.",
-						["maxReputation"] = { 1085, EXALTED },	-- Warsong Offensive, Exalted.
+						["maxReputation"] = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -1035,7 +1035,7 @@ root(ROOTS.Zones, {
 						["qg"] = 30345,	-- Chief Engineer Boltwrench
 						["sourceQuest"] = 13296,	-- Get to Ymirheim!
 						["coord"] = { 62.8, 50.5, ICECROWN },
-						["maxReputation"] = { 1050, EXALTED },	-- Valiance Expedition, Exalted.
+						["maxReputation"] = { FACTION_VALIANCE_EXPEDITION, EXALTED },	-- Valiance Expedition, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -1043,7 +1043,7 @@ root(ROOTS.Zones, {
 						["qg"] = 31781,	-- Blast Thunderbomb
 						["sourceQuest"] = 13293,	-- Get to Ymirheim!
 						["coord"] = { 51.9, 57.5, ICECROWN },
-						["maxReputation"] = { 1085, EXALTED },	-- Warsong Offensive, Exalted.
+						["maxReputation"] = { FACTION_WARSONG_OFFENSIVE, EXALTED },	-- Warsong Offensive, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -1068,7 +1068,7 @@ root(ROOTS.Zones, {
 						["qg"] = 29343,	-- Baron Sliver
 						["sourceQuest"] = 12951,	-- Let the Baron Know
 						["coord"] = { 42.8, 25.0, ICECROWN },
-						["maxReputation"] = { 1098, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+						["maxReputation"] = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
 						["isDaily"] = true,
 					}),
 					q(12951, {	-- Let the Baron Know
@@ -1170,7 +1170,7 @@ root(ROOTS.Zones, {
 						["qg"] = 29405,	-- Uzo Deathcaller
 						["sourceQuest"] = 12814,	-- You'll Need a Gryphon
 						["coord"] = { 19.6, 47.7, ICECROWN },
-						["maxReputation"] = { 1098, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+						["maxReputation"] = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
 						["isDaily"] = true,
 					}),
 					pvp(q(13233, {	-- No Mercy!
@@ -1554,7 +1554,7 @@ root(ROOTS.Zones, {
 						["qg"] = 30074,	-- The Leaper
 						["sourceQuest"] = 12982,	-- Ebon Blade Prisoners
 						["coord"] = { 43.5, 25.1, ICECROWN },
-						["maxReputation"] = { 1098, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+						["maxReputation"] = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
 						["isDaily"] = true,
 					}),
 					q(13397, {	-- Sindragosa's Fall
@@ -1574,7 +1574,7 @@ root(ROOTS.Zones, {
 						["qg"] = 31259,	-- Absalan the Pious
 						["description"] = "On the Skybreaker.",
 						["sourceQuest"] = 13225,	-- The Skybreaker
-						["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
+						["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
 						["races"] = ALLIANCE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -1582,7 +1582,7 @@ root(ROOTS.Zones, {
 						["qg"] = 31261,	-- Brother Keltan
 						["sourceQuest"] = 13224,	-- Orgrim's Hammer
 						["description"] = "On Orgrim's Hammer.",
-						["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
+						["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
 						["races"] = HORDE_ONLY,
 						["isDaily"] = true,
 					}),
@@ -2149,7 +2149,7 @@ root(ROOTS.Zones, {
 						["qg"] = 30216,	-- Vile
 						["sourceQuest"] = 12992,	-- Crush Dem Vrykuls!
 						["coord"] = { 42.9, 25.5, ICECROWN },
-						["maxReputation"] = { 1098, EXALTED },	-- Knights of the Ebon Blade, Exalted.
+						["maxReputation"] = { FACTION_EBON_BLADE, EXALTED },	-- Knights of the Ebon Blade, Exalted.
 						["isDaily"] = true,
 					}),
 					q(13239, {	-- Volatility

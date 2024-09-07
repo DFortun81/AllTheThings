@@ -20,10 +20,10 @@ i(19858, 270);	-- Zandalar Honor Token [Zandalar Tribe]
 
 -- Wrath of the Lich King
 -- Timear Foresees & Emblems of Triumph
-i(44711, 1106);	-- Argent Crusade Commendation Badge
-i(43950, 1090);	-- Kirin Tor Commendation Badge
-i(49702, 1119);	-- Sons of Hodir Commendation Badge
-i(44710, 1091);	-- Wyrmrest Commendation Badge
+i(44711, FACTION_ARGENT_CRUSADE);	-- Argent Crusade Commendation Badge
+i(43950, FACTION_KIRIN_TOR);	-- Kirin Tor Commendation Badge
+i(49702, FACTION_THE_SONS_OF_HODIR);	-- Sons of Hodir Commendation Badge
+i(44710, FACTION_THE_WYRMREST_ACCORD);	-- Wyrmrest Commendation Badge
 
 -- Argent Tournament
 a(i(45714, 69));	-- Darnassus Commendation Badge
@@ -39,13 +39,13 @@ h(i(45723, 68));	-- Undercity Commendation Badge
 
 -- Cataclysm
 -- Uldum
-i(64492, 1173);	-- Ramkahen Badge of Valor
+i(64492, FACTION_RAMKAHEN);	-- Ramkahen Badge of Valor
 
 -- Molten Front (Did not automatically apply race requirements... sigh)
-h(i(71088, 1133));	-- Bilgewater Writ of Commendation
+h(i(71088, FACTION_BILGEWATER_CARTEL));	-- Bilgewater Writ of Commendation
 a(i(70145, 69));	-- Darnassus Writ of Commendation
 a(i(70146, 930));	-- Exodar Writ of Commendation
-a(i(71087, 1134));	-- Gilneas Writ of Commendation
+a(i(71087, FACTION_GILNEAS));	-- Gilneas Writ of Commendation
 a(i(70147, 54));	-- Gnomeregan Writ of Commendation
 a(i(70148, 47));	-- Ironforge Writ of Commendation
 h(i(70149, 76));	-- Orgrimmar Writ of Commendation
@@ -70,16 +70,16 @@ h(i(70154, 68));	-- Undercity Writ of Commendation
 -- i(93220, 1270, true);		-- Grand Commendation of the Shado-Pan
 -- i(95548, 1388, true);		-- Grand Commendation of the Sunreaver Onslaught
 -- i(93226, 1272, true);		-- Grand Commendation of the Tillers
-i(95490, 1387);				-- Greater Kirin Tor Offensive Insignia
-i(95489, 1387);				-- Kirin Tor Offensive Insignia
-i(95488, 1388);				-- Greater Sunreaver Onslaught Insignia
-i(95487, 1388);				-- Sunreaver Onslaught Insignia
-i(90815, 1269);				-- Relic of Guo-Lai
-i(90816, 1269);				-- Relic of the Thunder King
-i(94225, 1341);				-- Stolen Celestial Insignia
-i(94227, 1269);				-- Stolen Golden Lotus Insignia
-i(94226, 1337);				-- Stolen Klaxxi Insignia
-i(94223, 1270);				-- Stolen Shado-Pan Insignia
+i(95490, FACTION_KIRIN_TOR_OFFENSIVE);				-- Greater Kirin Tor Offensive Insignia
+i(95489, FACTION_KIRIN_TOR_OFFENSIVE);				-- Kirin Tor Offensive Insignia
+i(95488, FACTION_SUNREAVER_ONSLAUGHT);				-- Greater Sunreaver Onslaught Insignia
+i(95487, FACTION_SUNREAVER_ONSLAUGHT);				-- Sunreaver Onslaught Insignia
+i(90815, FACTION_GOLDEN_LOTUS);				-- Relic of Guo-Lai
+i(90816, FACTION_GOLDEN_LOTUS);				-- Relic of the Thunder King
+i(94225, FACTION_THE_AUGUST_CELESTIALS);				-- Stolen Celestial Insignia
+i(94227, FACTION_GOLDEN_LOTUS);				-- Stolen Golden Lotus Insignia
+i(94226, FACTION_THE_KLAXXI);				-- Stolen Klaxxi Insignia
+i(94223, FACTION_SHADO_PAN);				-- Stolen Shado-Pan Insignia
 
 -- Timewalking: Burning Crusade
 i(129948, 946);		-- Commendation of Honor Hold
@@ -91,184 +91,183 @@ i(129946, 935);		-- Commendation of The Sha'tar
 i(129947, 947);		-- Commendation of Thrallmar
 
 -- Timewalking: Wrath of the Lich King
-i(129955, 1037);	-- Commendation of the Alliance Vanguard
-i(129942, 1106);	-- Commendation of the Argent Crusade
-i(129954, 1052);	-- Commendation of the Horde Expedition
-i(129940, 1090);	-- Commendation of the Kirin Tor
-i(129943, 1119);	-- Commendation of the Sons of Hodir
-i(129944, 1091);	-- Commendation of the Wyrmrest Accord
+i(129955, FACTION_ALLIANCE_VANGUARD);	-- Commendation of the Alliance Vanguard
+i(129942, FACTION_ARGENT_CRUSADE);	-- Commendation of the Argent Crusade
+i(129954, FACTION_HORDE_EXPEDITION);	-- Commendation of the Horde Expedition
+i(129940, FACTION_KIRIN_TOR);	-- Commendation of the Kirin Tor
+i(129943, FACTION_THE_SONS_OF_HODIR);	-- Commendation of the Sons of Hodir
+i(129944, FACTION_THE_WYRMREST_ACCORD);	-- Commendation of the Wyrmrest Accord
 
 -- Timewalking: Cataclysm
-i(133150, 1172);	-- Commendation of the Dragonmaw Clan
-i(133159, 1135);	-- Commendation of The Earthen Ring
-i(133152, 1158);	-- Commendation of the Guardians of Hyjal
-i(133154, 1173);	-- Commendation of the Ramkahen
-i(133151, 1174);	-- Commendation of the Wildhammer Clan
-i(133160, 1171);	-- Commendation of Therazane
+i(133150, FACTION_DRAGONMAW_CLAN);	-- Commendation of the Dragonmaw Clan
+i(133159, FACTION_THE_EARTHEN_RING);	-- Commendation of The Earthen Ring
+i(133152, FACTION_GUARDIANS_OF_HYJAL);	-- Commendation of the Guardians of Hyjal
+i(133154, FACTION_RAMKAHEN);	-- Commendation of the Ramkahen
+i(133151, FACTION_WILDHAMMER_CLAN);	-- Commendation of the Wildhammer Clan
+i(133160, FACTION_THERAZANE);	-- Commendation of Therazane
 
 -- Timewalking: Mists of Pandaria
-i(143947, 1492);	-- Commendation of Emperor Shaohao
-i(143944, 1376);	-- Commendation of Operation: Shieldwall
-i(143946, 1302);	-- Commendation of The Anglers
-i(143938, 1341);	-- Commendation of The August Celestials
-i(143943, 1375);	-- Commendation of the Dominance Offensive
-i(143937, 1269);	-- Commendation of the Golden Lotus
-i(143940, 1387);	-- Commendation of the Kirin Tor Offensive
-i(143935, 1337);	-- Commendation of The Klaxxi
-i(143942, 1271);	-- Commendation of the Order of the Cloud Serpent
-i(143936, 1270);	-- Commendation of the Shado-Pan
-i(143945, 1435);	-- Commendation of the Shado-Pan Assault
-i(143939, 1388);	-- Commendation of the Sunreaver Onslaught
-i(143941, 1272);	-- Commendation of The Tillers
+i(143947, FACTION_EMPEROR_SHAOHAO);	-- Commendation of Emperor Shaohao
+i(143944, FACTION_OPERATION_SHIELDWALL);	-- Commendation of Operation: Shieldwall
+i(143946, FACTION_THE_ANGLERS);	-- Commendation of The Anglers
+i(143938, FACTION_THE_AUGUST_CELESTIALS);	-- Commendation of The August Celestials
+i(143943, FACTION_DOMINANCE_OFFENSIVE);	-- Commendation of the Dominance Offensive
+i(143937, FACTION_GOLDEN_LOTUS);	-- Commendation of the Golden Lotus
+i(143940, FACTION_KIRIN_TOR_OFFENSIVE);	-- Commendation of the Kirin Tor Offensive
+i(143935, FACTION_THE_KLAXXI);	-- Commendation of The Klaxxi
+i(143942, FACTION_ORDER_OF_THE_CLOUD_SERPENT);	-- Commendation of the Order of the Cloud Serpent
+i(143936, FACTION_SHADO_PAN);	-- Commendation of the Shado-Pan
+i(143945, FACTION_SHADO_PAN_ASSAULT);	-- Commendation of the Shado-Pan Assault
+i(143939, FACTION_SUNREAVER_ONSLAUGHT);	-- Commendation of the Sunreaver Onslaught
+i(143941, FACTION_THE_TILLERS);	-- Commendation of The Tillers
 
 -- Miscellaneous Rep Items
 
 -- Cataclysm
-i(63518, 1178);		-- Hellscream's Reach Commendation
-i(63517, 1177);		-- Baradin's Wardens Commendation
+i(63518, FACTION_HELLSCREAMS_REACH);		-- Hellscream's Reach Commendation
+i(63517, FACTION_BARADINS_WARDENS);		-- Baradin's Wardens Commendation
 
 -- Mists of Pandaria
-i(104286, 1271);	-- Quivering Firestorm Egg [Order of the Cloud Serpent]
-i(89155, 1271);		-- Onyx Egg [Order of the Cloud Serpent]
+i(104286, FACTION_ORDER_OF_THE_CLOUD_SERPENT);	-- Quivering Firestorm Egg [Order of the Cloud Serpent]
+i(89155, FACTION_ORDER_OF_THE_CLOUD_SERPENT);		-- Onyx Egg [Order of the Cloud Serpent]
 
 -- Warlords of Draenor
-i(118099, 1711);	-- Gorian Artifact Fragment [Steamwheedle Preservation]
-i(118100, 1711);	-- Highmaul Relic [Steamwheedle Preservation]
-i(118654, 1711);	-- Aogexon's Fang [Steamwheedle Preservation]
-i(118655, 1711);	-- Bergruu's Horn [Steamwheedle Preservation]
-i(118656, 1711);	-- Dekorhan's Tusk [Steamwheedle Preservation]
-i(118657, 1711);	-- Direhoof's Hide [Steamwheedle Preservation]
-i(118658, 1711);	-- Gagrog's Skull [Steamwheedle Preservation]
-i(118659, 1711);	-- Mu'gra's Head [Steamwheedle Preservation]
-i(118660, 1711);	-- Thek'talon's Talon [Steamwheedle Preservation]
-i(118661, 1711);	-- Xelganak's Stinger [Steamwheedle Preservation]
-i(120172, 1711);	-- Vileclaw's Claw [Steamwheedle Preservation]
-i(117492, 1515);	-- Relic of Rukhmar [Arakkoa Outcasts]
+i(118099, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Gorian Artifact Fragment [Steamwheedle Preservation]
+i(118100, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Highmaul Relic [Steamwheedle Preservation]
+i(118654, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Aogexon's Fang [Steamwheedle Preservation]
+i(118655, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Bergruu's Horn [Steamwheedle Preservation]
+i(118656, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Dekorhan's Tusk [Steamwheedle Preservation]
+i(118657, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Direhoof's Hide [Steamwheedle Preservation]
+i(118658, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Gagrog's Skull [Steamwheedle Preservation]
+i(118659, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Mu'gra's Head [Steamwheedle Preservation]
+i(118660, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Thek'talon's Talon [Steamwheedle Preservation]
+i(118661, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Xelganak's Stinger [Steamwheedle Preservation]
+i(120172, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Vileclaw's Claw [Steamwheedle Preservation]
+i(117492, FACTION_ARAKKOA_OUTCASTS);	-- Relic of Rukhmar [Arakkoa Outcasts]
 -- Timewalking Vendor Commendations
-i(167924, 1515);	-- Commendation of the Arakkoa Outcast
-i(167926, 1711);	-- Commendation of the Steamwheedle Preservation Society
-i(167925, 1849);	-- Commendation of the Order of the Awakened
-i(167927, 1850);	-- Commendation of the Saberstalkers
+i(167924, FACTION_ARAKKOA_OUTCASTS);	-- Commendation of the Arakkoa Outcast
+i(167926, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Commendation of the Steamwheedle Preservation Society
+i(167925, FACTION_ORDER_OF_THE_AWAKENED);	-- Commendation of the Order of the Awakened
+i(167927, FACTION_THE_SABERSTALKERS);	-- Commendation of the Saberstalkers
 -- Horde
-i(167928, 1445);	-- Commendation of the Frostwolf Orcs
-i(167930, 1708);	-- Commendation of the Laughing Skull Orcs
-i(168017, 1848);	-- Commendation of Vol'jin's Headhunters
+i(167928, FACTION_FROSTWOLF_ORCS);	-- Commendation of the Frostwolf Orcs
+i(167930, FACTION_LAUGHING_SKULL_ORCS);	-- Commendation of the Laughing Skull Orcs
+i(168017, FACTION_VOLJINS_HEADHUNTERS);	-- Commendation of Vol'jin's Headhunters
 -- Alliance
-i(167929, 1731);	-- Commendation of the Council of Exarchs
-i(167932, 1710);	-- Commendation of the Sha'tari Defense
-i(168018, 1847);	-- Commendation of the Hand of the Prophet
+i(167929, FACTION_COUNCIL_OF_EXARCHS);	-- Commendation of the Council of Exarchs
+i(167932, FACTION_SHATARI_DEFENSE);	-- Commendation of the Sha'tari Defense
+i(168018, FACTION_HAND_OF_THE_PROPHET);	-- Commendation of the Hand of the Prophet
 
 -- Legion
-i(147418, 1859);	-- Arcane Remnant of Falanaar [The Nightfallen]
-i(147416, 1859);	-- Arcane Tablet of Falanaar [The Nightfallen]
-i(141340, 1900);	-- Court of Farondis Insignia [Court of Farondis]
-i(139023, 1900);	-- Court of Farondis Insignia [Court of Farondis]
-i(146937, 1900);	-- Court of Farondis Insignia [Court of Farondis]
-i(146943, 1900);	-- Court of Farondis Insignia [Court of Farondis]
-i(141339, 1883);	-- Dreamweaver Insignia [Dreamweavers]
-i(139021, 1883);	-- Dreamweaver Insignia [Dreamweavers]
-i(146942, 1883);	-- Dreamweaver Insignia [Dreamweavers]
-i(146936, 1883);	-- Dreamweaver Insignia [Dreamweavers]
-i(147410, 1900);	-- Greater Court of Farondis Insignia [Court of Farondis]
-i(141989, 1900);	-- Greater Court of Farondis Insignia [Court of Farondis]
-i(150927, 1900);	-- Greater Court of Farondis Insignia [Court of Farondis]
-i(141988, 1883);	-- Greater Dreamweaver Insignia [Dreamweavers]
-i(147411, 1883);	-- Greater Dreamweaver Insignia [Dreamweavers]
-i(150926, 1883);	-- Greater Dreamweaver Insignia [Dreamweavers]
-i(141990, 1828);	-- Greater Highmountain Tribe Insignia [Highmountain Tribe]
-i(147412, 1828);	-- Greater Highmountain Tribe Insignia [Highmountain Tribe]
-i(150928, 1828);	-- Greater Highmountain Tribe Insignia [Highmountain Tribe]
-i(147727, 2045);	-- Greater Legionfall Insignia [Armies of Legionfall]
-i(152464, 2045);	-- Greater Legionfall Insignia [Armies of Legionfall]
-i(141992, 1859);	-- Greater Nightfallen Insignia [The Nightfallen]
-i(147413, 1859);	-- Greater Nightfallen Insignia [The Nightfallen]
-i(150930, 1859);	-- Greater Nightfallen Insignia [The Nightfallen]
-i(141987, 1948);	-- Greater Valarjar Insignia [Valarjar]
-i(147414, 1948);	-- Greater Valarjar Insignia [Valarjar]
-i(150925, 1948);	-- Greater Valarjar Insignia [Valarjar]
-i(141991, 1894);	-- Greater Wardens Insignia [The Wardens]
-i(147415, 1894);	-- Greater Wardens Insignia [The Wardens]
-i(150929, 1894);	-- Greater Wardens Insignia [The Wardens]
-i(141341, 1828);	-- Highmountain Tribe Insignia [Highmountain Tribe]
-i(139024, 1828);	-- Highmountain Tribe Insignia [Highmountain Tribe]
-i(146944, 1828);	-- Highmountain Tribe Insignia [Highmountain Tribe]
-i(146938, 1828);	-- Highmountain Tribe Insignia [Highmountain Tribe]
-i(141343, 1859);	-- Nightfallen Insignia [The Nightfallen]
-i(139026, 1859);	-- Nightfallen Insignia [The Nightfallen]
-i(146940, 1859);	-- Nightfallen Insignia [The Nightfallen]
-i(146946, 1859);	-- Nightfallen Insignia [The Nightfallen]
-i(141338, 1948);	-- Valarjar Insignia [Valarjar]
-i(146935, 1948);	-- Valarjar Insignia [Valarjar]
-i(146941, 1948);	-- Valarjar Insignia [Valarjar]
-i(141342, 1894);	-- Wardens Insignia [The Wardens]
-i(139025, 1894);	-- Wardens Insignia [The Wardens]
-i(146945, 1894);	-- Wardens Insignia [The Wardens]
-i(146939, 1894);	-- Wardens Insignia [The Wardens]
-
+i(147418, FACTION_THE_NIGHTFALLEN);	-- Arcane Remnant of Falanaar [The Nightfallen]
+i(147416, FACTION_THE_NIGHTFALLEN);	-- Arcane Tablet of Falanaar [The Nightfallen]
+i(141340, FACTION_COURT_OF_FARONDIS);	-- Court of Farondis Insignia [Court of Farondis]
+i(139023, FACTION_COURT_OF_FARONDIS);	-- Court of Farondis Insignia [Court of Farondis]
+i(146937, FACTION_COURT_OF_FARONDIS);	-- Court of Farondis Insignia [Court of Farondis]
+i(146943, FACTION_COURT_OF_FARONDIS);	-- Court of Farondis Insignia [Court of Farondis]
+i(141339, FACTION_THE_DREAMWEAVERS);	-- Dreamweaver Insignia [Dreamweavers]
+i(139021, FACTION_THE_DREAMWEAVERS);	-- Dreamweaver Insignia [Dreamweavers]
+i(146942, FACTION_THE_DREAMWEAVERS);	-- Dreamweaver Insignia [Dreamweavers]
+i(146936, FACTION_THE_DREAMWEAVERS);	-- Dreamweaver Insignia [Dreamweavers]
+i(147410, FACTION_COURT_OF_FARONDIS);	-- Greater Court of Farondis Insignia [Court of Farondis]
+i(141989, FACTION_COURT_OF_FARONDIS);	-- Greater Court of Farondis Insignia [Court of Farondis]
+i(150927, FACTION_COURT_OF_FARONDIS);	-- Greater Court of Farondis Insignia [Court of Farondis]
+i(141988, FACTION_THE_DREAMWEAVERS);	-- Greater Dreamweaver Insignia [Dreamweavers]
+i(147411, FACTION_THE_DREAMWEAVERS);	-- Greater Dreamweaver Insignia [Dreamweavers]
+i(150926, FACTION_THE_DREAMWEAVERS);	-- Greater Dreamweaver Insignia [Dreamweavers]
+i(141990, FACTION_HIGHMOUNTAIN_TRIBE);	-- Greater Highmountain Tribe Insignia [Highmountain Tribe]
+i(147412, FACTION_HIGHMOUNTAIN_TRIBE);	-- Greater Highmountain Tribe Insignia [Highmountain Tribe]
+i(150928, FACTION_HIGHMOUNTAIN_TRIBE);	-- Greater Highmountain Tribe Insignia [Highmountain Tribe]
+i(147727, FACTION_ARMIES_OF_LEGIONFALL);	-- Greater Legionfall Insignia [Armies of Legionfall]
+i(152464, FACTION_ARMIES_OF_LEGIONFALL);	-- Greater Legionfall Insignia [Armies of Legionfall]
+i(141992, FACTION_THE_NIGHTFALLEN);	-- Greater Nightfallen Insignia [The Nightfallen]
+i(147413, FACTION_THE_NIGHTFALLEN);	-- Greater Nightfallen Insignia [The Nightfallen]
+i(150930, FACTION_THE_NIGHTFALLEN);	-- Greater Nightfallen Insignia [The Nightfallen]
+i(141987, FACTION_VALAJAR);	-- Greater Valarjar Insignia [Valarjar]
+i(147414, FACTION_VALAJAR);	-- Greater Valarjar Insignia [Valarjar]
+i(150925, FACTION_VALAJAR);	-- Greater Valarjar Insignia [Valarjar]
+i(141991, FACTION_THE_WARDENS);	-- Greater Wardens Insignia [The Wardens]
+i(147415, FACTION_THE_WARDENS);	-- Greater Wardens Insignia [The Wardens]
+i(150929, FACTION_THE_WARDENS);	-- Greater Wardens Insignia [The Wardens]
+i(141341, FACTION_HIGHMOUNTAIN_TRIBE);	-- Highmountain Tribe Insignia [Highmountain Tribe]
+i(139024, FACTION_HIGHMOUNTAIN_TRIBE);	-- Highmountain Tribe Insignia [Highmountain Tribe]
+i(146944, FACTION_HIGHMOUNTAIN_TRIBE);	-- Highmountain Tribe Insignia [Highmountain Tribe]
+i(146938, FACTION_HIGHMOUNTAIN_TRIBE);	-- Highmountain Tribe Insignia [Highmountain Tribe]
+i(141343, FACTION_THE_NIGHTFALLEN);	-- Nightfallen Insignia [The Nightfallen]
+i(139026, FACTION_THE_NIGHTFALLEN);	-- Nightfallen Insignia [The Nightfallen]
+i(146940, FACTION_THE_NIGHTFALLEN);	-- Nightfallen Insignia [The Nightfallen]
+i(146946, FACTION_THE_NIGHTFALLEN);	-- Nightfallen Insignia [The Nightfallen]
+i(141338, FACTION_VALAJAR);	-- Valarjar Insignia [Valarjar]
+i(146935, FACTION_VALAJAR);	-- Valarjar Insignia [Valarjar]
+i(146941, FACTION_VALAJAR);	-- Valarjar Insignia [Valarjar]
+i(141342, FACTION_THE_WARDENS);	-- Wardens Insignia [The Wardens]
+i(139025, FACTION_THE_WARDENS);	-- Wardens Insignia [The Wardens]
+i(146945, FACTION_THE_WARDENS);	-- Wardens Insignia [The Wardens]
+i(146939, FACTION_THE_WARDENS);	-- Wardens Insignia [The Wardens]
 
 
 -- Battle For Azeroth
 	-- These first factions have pure tokens only, no quest item > token exchange.
 	-- Honeyback Hive
-		i(168825, 2395);	-- Rich Jelly (+80)
-		i(168828, 2395);	-- Royal Jelly (+160)
-		i(168822, 2395);	-- Thin Jelly (+20)
+		i(168825, FACTION_HONEYBACK_HIVE);	-- Rich Jelly (+80)
+		i(168828, FACTION_HONEYBACK_HIVE);	-- Royal Jelly (+160)
+		i(168822, FACTION_HONEYBACK_HIVE);	-- Thin Jelly (+20)
 
 	-- Rajani
 
 
 	-- Rustbolt Resistance
-		i(173736, 2391);	-- Layered Information Kernel of E-steam (+250, Rustbolt Resistance)
-		i(174521, 2391);	-- Transferable Kernel of E-steam (+250, Rustbolt Resistance)
+		i(173736, FACTION_RUSTBOLT_RESISTANCE);	-- Layered Information Kernel of E-steam (+250, Rustbolt Resistance)
+		i(174521, FACTION_RUSTBOLT_RESISTANCE);	-- Transferable Kernel of E-steam (+250, Rustbolt Resistance)
 
 	-- Nazjatar
-		i(173948, 2373);	-- Glittering Abyssal Conch (Unshackled)
-		i(173947, 2400);	-- Glittering Abyssal Conch (Waveblade Ankoan)
-		i(174523, 2373);	-- Waveswept Abyssal Conch (Unshackled)
-		i(174522, 2400);	-- Waveswept Abyssal Conch (Waveblade Ankoan)
+		i(173948, FACTION_THE_UNSHACKLED);	-- Glittering Abyssal Conch (Unshackled)
+		i(173947, FACTION_WAVEBLADE_ANKOAN);	-- Glittering Abyssal Conch (Waveblade Ankoan)
+		i(174523, FACTION_THE_UNSHACKLED);	-- Waveswept Abyssal Conch (Unshackled)
+		i(174522, FACTION_WAVEBLADE_ANKOAN);	-- Waveswept Abyssal Conch (Waveblade Ankoan)
 
 	-- For the rest of these, the first line is the quest item and the second line is the BoA token awarded by the quest.
 	-- Currently commenting out the quest item from this file and leave just the token in, because that's the part that actually gives reputation.  These used to be a simple quest item > starts quest > quest gives reputation exchange, and the token rewards were added in 8.3.
 
 	-- 7th Legion
-	--	i(163617, 2159);	-- Rusted Alliance Insignia
-		i(174507, 2159);	-- Fallen Soldier's Insignia (A)
+	--	i(163617, FACTION_7TH_LEGION);	-- Rusted Alliance Insignia
+		i(174507, FACTION_7TH_LEGION);	-- Fallen Soldier's Insignia (A)
 
 	-- Champions of Azeroth
-	--	i(163217, 2164);	-- Azeroth's Tear
-		i(174502, 2164);	-- Tear of Azeroth
+	--	i(163217, FACTION_CHAMPIONS_OF_AZEROTH);	-- Azeroth's Tear
+		i(174502, FACTION_CHAMPIONS_OF_AZEROTH);	-- Tear of Azeroth
 
 	-- Honorbound
-	--	i(163621, 2157);	-- Rusted Horde Insignia
-		i(174508, 2157);	-- Fallen Soldier's Insignia (H)
+	--	i(163621, FACTION_THE_HONORBOUND);	-- Rusted Horde Insignia
+		i(174508, FACTION_THE_HONORBOUND);	-- Fallen Soldier's Insignia (H)
 
 	-- Order of Embers
-	--	i(163614, 2161);	-- Exotic Spices
-		i(174503, 2161);	-- Exotically Spiced Carrot
+	--	i(163614, FACTION_ORDER_OF_EMBERS);	-- Exotic Spices
+		i(174503, FACTION_ORDER_OF_EMBERS);	-- Exotically Spiced Carrot
 
 	-- Proudmoore Admiralty
-	--	i(163616, 2160);	-- Dented Coin
-		i(174504, 2160);	-- Proudmoore War Copper
+	--	i(163616, FACTION_PROUDMOORE_ADMIRALTY);	-- Dented Coin
+		i(174504, FACTION_PROUDMOORE_ADMIRALTY);	-- Proudmoore War Copper
 
 	-- Storm's Wake
-	--	i(163615, 2162);	-- Lost Sea Scroll
-		i(174505, 2162);	-- Tide-Speaker's Tome
+	--	i(163615, FACTION_STORMS_WAKE);	-- Lost Sea Scroll
+		i(174505, FACTION_STORMS_WAKE);	-- Tide-Speaker's Tome
 
 	-- Talanji's Expedition
-	--	i(163619, 2156);	-- Golden Beetle
-		i(174506, 2156);	-- Golden Insect Wings
+	--	i(163619, FACTION_TALANJIS_EXPEDITION);	-- Golden Beetle
+		i(174506, FACTION_TALANJIS_EXPEDITION);	-- Golden Insect Wings
 
 	-- Tortollan Seekers
-	--	i(166501, 2163);	-- Soggy Page
-		i(174519, 2163);	-- Verdant Hills of Chokingvine - Page 17
+	--	i(166501, FACTION_TORTOLLAN_SEEKERS);	-- Soggy Page
+		i(174519, FACTION_TORTOLLAN_SEEKERS);	-- Verdant Hills of Chokingvine - Page 17
 
 	-- Voldunai
-	--	i(163618, 2158);	-- Shimmering Shell
-		i(174501, 2158);	-- Ornate Voldunai Jewelry
+	--	i(163618, FACTION_VOLDUNAI);	-- Shimmering Shell
+		i(174501, FACTION_VOLDUNAI);	-- Ornate Voldunai Jewelry
 
 	-- Zandalari Empire
-	--	i(163620, 2103);	-- Island Flotsam
-		i(174518, 2103);	-- Jani Figurine
+	--	i(163620, FACTION_ZANDALARI_EMPIRE);	-- Island Flotsam
+		i(174518, FACTION_ZANDALARI_EMPIRE);	-- Jani Figurine
 
 
 

@@ -95,25 +95,9 @@ namespace ATT
         }
 
         /// <summary>
-        /// The default text value for an object, in each locale.
-        /// </summary>
-        private static readonly IDictionary<string, bool> LocaleDefaults = new Dictionary<string, bool>
-        {
-            { "Objects", true },
-            { "Entidades", true },
-            { "Objekte", true },
-            { "Entités", true },
-            { "Oggetti interagibili", true },
-            { "Objetos", true },
-            { "Объекты", true },
-            { "물체들", true },
-            { "道具", true },
-        };
-
-        /// <summary>
         /// All of the supported locales. (excluding english)
         /// </summary>
-        private static readonly string[] SupportedLocales = { "es", "de", "fr", "it", "pt", "ru", "ko", "cn" };
+        private static readonly string[] SupportedLocales = { "es", "de", "fr", "it", "pt", "ru", "ko", "cn", "tw" };
 
         /// <summary>
         /// All of the objects and their fields that have been dirtied.

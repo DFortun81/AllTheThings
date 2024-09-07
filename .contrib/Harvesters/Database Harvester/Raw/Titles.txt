@@ -764,3 +764,22 @@
 11.0.2.56110
 548@@@%s the Tempered Hero
 579@@@%s the Tempered
+11.0.5.56487
+555@@@Forged Marshal %s
+571@@@Detective %s
+577@@@Grizzly Hills Hiker %s
+578@@@Plaguelands Survivor %s
+581@@@Classic Enthusiast %s
+582@@@Outland Enthusiast %s
+583@@@Northrend Enthusiast %s
+584@@@Cataclsym Enthusiast %s
+585@@@Pandaria Enthusiast %s
+586@@@Draenor Enthusiast %s
+587@@@Broken Isles Enthusiast %s
+588@@@Zuldazar Enthusiast %s
+589@@@Kul Tiras Enthusiast %s
+590@@@Shadowlands Enthusiast %s
+591@@@Dragon Isles Enthusiast %s
+594@@@Khaz Algar Racer %s
+595@@@Molten Core Prospector %s
+596@@@Karazhan Graduate %s

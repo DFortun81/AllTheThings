@@ -115,7 +115,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			n(156822, {	-- Mistress Mihaela <Court of Harvesters Quartermaster>
 				["coord"] = { 61.4, 63.8, REVENDRETH },
-				["minReputation"] = { 2413, 5 },	-- Court of Harvesters, Friendly
+				["minReputation"] = { FACTION_COURT_OF_HARVESTERS, FRIENDLY },	-- Court of Harvesters, Friendly
 				["g"] = {
 					i(183518, {	-- Court Sinrunner (MOUNT!)
 						["cost"] = 300000000, -- 30,000g

@@ -127,7 +127,7 @@ root(ROOTS.Zones, {
 					exploration(6869),	-- Wor'gol
 				}),
 				n(FACTIONS, {
-					faction(1445, {["races"] = HORDE_ONLY}),	-- Frostwolf Orcs
+					faction(FACTION_FROSTWOLF_ORCS, {["races"] = HORDE_ONLY}),	-- Frostwolf Orcs
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1387, {	-- Bladespire Citadel, Frostfire Ridge

@@ -1,1 +1,1 @@
-"Parser.exe" debug baseconfig=parser.config config=parser.debug.config > log_debug.txt
+"Parser.exe" debug baseconfig=.config/retail/retail.config config=.config/retail/debug.config > log_debug.txt

@@ -1,2 +1,2 @@
 @ECHO OFF
-"Parser.exe" baseconfig=parser.config config=parser.ptr.config debug
+"Parser.exe" baseconfig=.config/retail/retail.config config=.config/retail/ptr.config debug

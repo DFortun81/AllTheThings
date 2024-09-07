@@ -91,7 +91,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 		["maps"] = { ICECROWN, 170 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				achWithRep(3676, 1094, {	-- A Silver Confidant
+				achWithRep(3676, FACTION_THE_SILVER_COVENANT, {	-- A Silver Confidant
 					["sourceQuests"] = {
 						13735,	-- A Champion Rises (A) (Darnassus)
 						13733,	-- A Champion Rises (A) (Gnomeregan)
@@ -199,7 +199,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				applyclassicphase(WRATH_PHASE_THREE, ach(3736, {	-- Pony Up!
 					["provider"] = { "i", 47541 },	-- Argent Pony Bridle
 				})),
-				achWithRep(3677, 1124, {	-- The Sunreavers
+				achWithRep(3677, FACTION_THE_SUNREAVERS, {	-- The Sunreavers
 					["sourceQuests"] = {
 						13737,	-- A Champion Rises (H) (Darkspear Trolls)
 						13736,	-- A Champion Rises (H) (Orgrimmar)
@@ -836,7 +836,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["allianceQuestData"] = q(14074, {	-- A Leg Up (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
-						["minReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
+						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
 						["OnTooltip"] = FACTION_DAILY_OnTooltip,
@@ -844,7 +844,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["hordeQuestData"] = q(14143, {	-- A Leg Up (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
 						["coord"] = { 76.1, 24.0, ICECROWN },
-						["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
+						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
 						["OnTooltip"] = FACTION_DAILY_OnTooltip,
@@ -1308,7 +1308,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["qg"] = 33771,	-- Luuri
 					["sourceQuest"] = 13794,	-- Eadric the Pure
 					["coord"] = { 69.8, 23.3, ICECROWN },
-					["maxReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
+					["maxReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1336,7 +1336,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["qg"] = 33771,	-- Luuri
 					["sourceQuest"] = 13794,	-- Eadric the Pure
 					["coord"] = { 69.8, 23.3, ICECROWN },
-					["maxReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
+					["maxReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 					["classes"] = exclude(DEATHKNIGHT, ALL_CLASSES),
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1364,7 +1364,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["qg"] = 33770,	-- Illyrie Nightfall <Mistress of Horses>
 					["sourceQuest"] = 13795,	-- The Scourgebane
 					["coord"] = { 73.6, 20.0, ICECROWN },
-					["maxReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
+					["maxReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 					["classes"] = { DEATHKNIGHT },
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
@@ -1392,7 +1392,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["qg"] = 33770,	-- Illyrie Nightfall <Mistress of Horses>
 					["sourceQuest"] = 13795,	-- The Scourgebane
 					["coord"] = { 73.6, 20.0, ICECROWN },
-					["maxReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
+					["maxReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 					["classes"] = { DEATHKNIGHT },
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
@@ -1788,7 +1788,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["allianceQuestData"] = q(14076, {	-- Breakfast Of Champions (A)
 						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
-						["minReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
+						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
 						["OnTooltip"] = FACTION_DAILY_OnTooltip,
@@ -1796,7 +1796,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["hordeQuestData"] = q(14092, {	-- Breakfast Of Champions (H)
 						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
 						["coord"] = { 76.1, 24.0, ICECROWN },
-						["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
+						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
 						["OnTooltip"] = FACTION_DAILY_OnTooltip,
@@ -1832,7 +1832,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						13739,	-- A Champion Rises (H) (Undercity)
 					},
 					["coord"] = { 69.5, 22.4, ICECROWN },
-					["maxReputation"] = { 1106, EXALTED },	-- Argent Crusade, Exalted.
+					["maxReputation"] = { FACTION_ARGENT_CRUSADE, EXALTED },	-- Argent Crusade, Exalted.
 					["isDaily"] = true,
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, q(14105, {	-- Deathspeaker Kharos
@@ -1911,7 +1911,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["allianceQuestData"] = q(14090, {	-- Gormok Wants His Snobolds (A)
 						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
-						["minReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
+						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
 						["OnTooltip"] = FACTION_DAILY_OnTooltip,
@@ -1919,7 +1919,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["hordeQuestData"] = q(14141, {	-- Gormok Wants His Snobolds (H)
 						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
 						["coord"] = { 76.1, 24.0, ICECROWN },
-						["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
+						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
 						["OnTooltip"] = FACTION_DAILY_OnTooltip,
@@ -2136,7 +2136,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["allianceQuestData"] = q(14152, {	-- Rescue at Sea (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
-						["minReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
+						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
 						["OnTooltip"] = FACTION_DAILY_OnTooltip,
@@ -2144,7 +2144,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["hordeQuestData"] = q(14136, {	-- Rescue at Sea (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
 						["coord"] = { 76.1, 24.0, ICECROWN },
-						["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
+						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
 						["OnTooltip"] = FACTION_DAILY_OnTooltip,
@@ -2164,7 +2164,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["allianceQuestData"] = q(14080, {	-- Stop The Aggressors (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
-						["minReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
+						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
 						["OnTooltip"] = FACTION_DAILY_OnTooltip,
@@ -2172,7 +2172,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["hordeQuestData"] = q(14140, {	-- Stop The Aggressors (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
 						["coord"] = { 76.1, 24.0, ICECROWN },
-						["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
+						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
 						["OnTooltip"] = FACTION_DAILY_OnTooltip,
@@ -2952,7 +2952,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["allianceQuestData"] = q(14077, {	-- The Light's Mercy (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
-						["minReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
+						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
 						["OnTooltip"] = FACTION_DAILY_OnTooltip,
@@ -2960,7 +2960,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["hordeQuestData"] = q(14144, {	-- The Light's Mercy (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
 						["coord"] = { 76.1, 24.0, ICECROWN },
-						["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
+						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
 						["OnTooltip"] = FACTION_DAILY_OnTooltip,
@@ -3590,7 +3590,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["allianceQuestData"] = q(14112, {	-- What Do You Feed a Yeti, Anyway? (A)
 						["qg"] = 34912,	-- Savinia Loresong <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
-						["minReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
+						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
 						["OnTooltip"] = FACTION_DAILY_OnTooltip,
@@ -3598,7 +3598,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["hordeQuestData"] = q(14145, {	-- What Do You Feed a Yeti, Anyway? (H)
 						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
 						["coord"] = { 76.1, 24.0, ICECROWN },
-						["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
+						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
 						["OnTooltip"] = FACTION_DAILY_OnTooltip,
@@ -3620,7 +3620,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["allianceQuestData"] = q(14096, {	-- You've Really Done It This Time, Kul (A)
 						["qg"] = 34880,	-- Narasi Snowdawn <The Silver Covenant>
 						["coord"] = { 76.2, 19.6, ICECROWN },
-						["minReputation"] = { 1094, EXALTED },	-- The Silver Covenant, Exalted.
+						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
 						["OnTooltip"] = FACTION_DAILY_OnTooltip,
@@ -3628,7 +3628,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["hordeQuestData"] = q(14142, {	-- You've Really Done It This Time, Kul (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
 						["coord"] = { 76.1, 24.0, ICECROWN },
-						["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
+						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
 						["OnTooltip"] = FACTION_DAILY_OnTooltip,
@@ -4616,7 +4616,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, n(34881, {	-- Hiren Loresong <Silver Covenant Quartermaster>
 					["coord"] = { 76.2, 19.6, ICECROWN },
-					["minReputation"] = { 1094, EXALTED },	-- Silver Covenant, Exalted.
+					["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- Silver Covenant, Exalted.
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						champ(50, i(46817)),	-- Silver Covenant Tabard
@@ -4841,7 +4841,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				}),
 				applyclassicphase(WRATH_PHASE_THREE, n(34772, {	-- Vasarin Redmorn <Sunreavers Quartermaster>
 					["coord"] = { 76.2, 24.0, ICECROWN },
-					["minReputation"] = { 1124, EXALTED },	-- The Sunreavers, Exalted.
+					["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						champ(50, i(46818)),	-- Sunreaver Tabard

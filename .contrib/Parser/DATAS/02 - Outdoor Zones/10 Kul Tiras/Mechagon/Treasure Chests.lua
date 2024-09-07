@@ -30,9 +30,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 							153219,	-- Seaspray Oracle
 						},
 						["g"] = {
-							i(170146, {	-- Paint Bottle: Nukular Red
-								["questID"] = 56907,
-							}),
+							i(170146),	-- Paint Bottle: Nukular Red (QS!)
 						},
 					}),
 				}
@@ -105,9 +103,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 						{ 70.6, 47.8, MECHAGON },	-- Possibly bloat from another chest
 					},
 					["g"] = {
-						i(170147, {	-- Paint Bottle: Goblin Green
-							["questID"] = 56908,
-						}),
+						i(170147),	-- Paint Bottle: Goblin Green (QS!)
 					},
 				}),
 				o(325664, {	-- Mechanized Chest

@@ -19,7 +19,30 @@ local ZIRIAK = {
 };
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(ACHIEVEMENTS, {
+		-- #IF BEFORE 11.0.5
 		n(FAMILY_BATTLER, {
+		-- #else
+		header(HEADERS.Achievement, 40980, {	-- Family Battler of Khaz Algar
+		-- #endif
+			petbattle(ach(40980, {	-- Family Battler of Khaz Algar
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					40154,	-- Aquatic Battler of Khaz Algar
+					40155,	-- Beast Battler of Khaz Algar
+					40156,	-- Critter Battler of Khaz Algar
+					40157,	-- Dragonkin Battler of Khaz Algar
+					40158,	-- Elemental Battler of Khaz Algar
+					40161,	-- Flying Battler of Khaz Algar
+					40162,	-- Humanoid Battler of Khaz Algar
+					40163,	-- Magic Battler of Khaz Algar
+					40164,	-- Mechanical Battler of Khaz Algar
+					40165,	-- Undead Battler of Khaz Algar
+				}},
+				["timeline"] = { ADDED_11_0_5 },
+				["g"] = {
+					i(222970),	-- Fuzzy (PET!)
+				},
+			})),
 			petbattle(ach(40154, {	-- Aquatic Battler of Khaz Algar
 				crit(67139, {	-- Collector Dyna
 					["crs"] = COLLECTOR_DYNA.crs,
@@ -277,6 +300,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				40330,	-- The Ringing Deeps Advanced: Gold
 				40333,	-- The Ringing Deeps Reverse: Gold
 			}},
+			["g"] = {
+				title(594,	{	-- Khaz Algar Racer
+					["timeline"] = { ADDED_11_0_5 },
+				}),
+			},
 		}),
 		ach(40790, {	-- Khaz Algar Explorer
 			-- Meta Achievement

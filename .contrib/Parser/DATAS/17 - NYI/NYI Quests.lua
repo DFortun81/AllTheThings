@@ -6807,7 +6807,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(62291, { ["name"] = "Venari Rep Token Tracking", }),	-- Venari Rep Token Tracking
 			-- 9.0.1.35482
 			-- 9.0.1.35522
-			q(62380),	--
 			q(62413),	--
 			q(62416),	--
 			-- 9.0.1.35598
@@ -7371,10 +7370,8 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(65368),	--
 			q(65423),	--
 			q(65430),	--
-			q(6544),	--
-			-- #if BEFORE 11.0.2
-			q(65440),	--
-			--#endif
+			q(65434),	--
+			--q(65440),	-- used for questID 82059 (Transmutation Station) in 11.0.2 (TODO: not sure what a better way to solve this)
 			q(65449),	--
 			q(65450),	--
 			q(65462),	--

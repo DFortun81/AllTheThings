@@ -4,14 +4,14 @@
 -- Simple function for First Craft tracking Quests
 -- ex. FirstCraft(QUESTID, RECIPEID);	-- RECIPE_NAME
 local function FirstCraft(questID, recipeID, added)
-	local t = { ["questID"] = questID, ["type"] = HEADERS.Spell..":"..recipeID };
+	local t = name(HEADERS.Spell, recipeID, { ["questID"] = questID })
 	if added then
 		t.timeline = { added };
 	end
 	return t;
 end
 local function FirstSkin(questID, creatureID, added, group)
-	local t = { ["questID"] = questID, ["type"] = HEADERS.NPC..":"..creatureID, };
+	local t = name(HEADERS.NPC, creatureID, { ["questID"] = questID })
 	if added then
 		t.timeline = { added };
 	end
@@ -1163,12 +1163,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81363, 447362),	-- Concealed Chaos Module
 			FirstCraft(81355, 447366),	-- Convincingly Realistic Jumper Cables
 			FirstCraft(81333, 447363),	-- Energy Redistribution Beacon
-			FirstCraft(81331, 447312),	-- Invent
+			FirstCraft(81301, 447312),	-- Invent
 			FirstCraft(81332, 447364),	-- Irresistible Red Button
 			FirstCraft(81356, 447365),	-- Pausing Pylon
 			FirstCraft(81340, 447344),	-- Potion Bomb of Power
-			FirstCraft(81301, 447343),	-- Potion Bomb of Recovery
-			FirstCraft(81347, 447342),	-- Potion Bomb of Speed
+			--FirstCraft(TODO, 447343),	-- Potion Bomb of Recovery
+			FirstCraft(81331, 447342),	-- Potion Bomb of Speed
 			FirstCraft(81349, 447361),	-- Pouch of Pocket Grenades
 			FirstCraft(81346, 447357),	-- Recalibrated Safety Switch
 			FirstCraft(81351, 447368),	-- Portable Profession Possibility
@@ -1297,7 +1297,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(221796),	-- Aqirite Miner's Headgear
 			i(221788),	-- Bismuth Brainwave Projector
 			i(221790),	-- Bismuth Fisherfriend
-			i(221797),	-- Bismuth Fueled Samophlange
+			i(221797),	-- Bismuth-Fueled Samophlange
 			i(221795),	-- Bismuth Miner's Headgear
 			i(221793),	-- Lapidary's Aqirite Clamps
 			i(221792),	-- Lapidary's Bismuth Clamps
@@ -2406,6 +2406,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(83403, 221786),	-- Skinning Pride of Beledar
 			FirstSkin(85547, 207826),	-- Skinning Ravageant
 			FirstSkin(85550, 219278),	-- Skinning Shallowshell the Clacker
+			FirstSkin(84259, 228439),	-- Skinning Slatefang
 			FirstSkin(83405, 221217),	-- Skinning Spore-infused Shalewing
 			FirstSkin(85551, 221690),	-- Skinning Strength of Beledar
 			FirstSkin(83407, 221126),	-- Skinning Tephratennae
@@ -2583,52 +2584,52 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = TAILORING,
 		},{
-			--FirstCraft(XXXXX, 438892);	-- Algari Competitor's Cloth Bands
-			--FirstCraft(XXXXX, 438897);	-- Algari Competitor's Cloth Cloak
-			--FirstCraft(XXXXX, 438894);	-- Algari Competitor's Cloth Gloves
-			--FirstCraft(XXXXX, 438893);	-- Algari Competitor's Cloth Hood
-			--FirstCraft(XXXXX, 438889);	-- Algari Competitor's Cloth Leggings
-			--FirstCraft(XXXXX, 438896);	-- Algari Competitor's Cloth Sash
-			--FirstCraft(XXXXX, 438890);	-- Algari Competitor's Cloth Shoulderpads
-			--FirstCraft(XXXXX, 438891);	-- Algari Competitor's Cloth Treads
-			--FirstCraft(XXXXX, 438895);	-- Algari Competitor's Cloth Tunic
+			FirstCraft(80794, 438892);	-- Algari Competitor's Cloth Bands
+			FirstCraft(80799, 438897);	-- Algari Competitor's Cloth Cloak
+			FirstCraft(80796, 438894);	-- Algari Competitor's Cloth Gloves
+			FirstCraft(80795, 438893);	-- Algari Competitor's Cloth Hood
+			FirstCraft(80791, 438889);	-- Algari Competitor's Cloth Leggings
+			FirstCraft(80798, 438896);	-- Algari Competitor's Cloth Sash
+			FirstCraft(80792, 438890);	-- Algari Competitor's Cloth Shoulderpads
+			FirstCraft(80793, 438891);	-- Algari Competitor's Cloth Treads
+			FirstCraft(80797, 438895);	-- Algari Competitor's Cloth Tunic
 			FirstCraft(80869, 456706);	-- Algari Weaverline
-			--FirstCraft(XXXXX, 446973);	-- Artisan Alchemist's Robe
-			--FirstCraft(XXXXX, 446974);	-- Artisan Chef's Hat
-			--FirstCraft(XXXXX, 446972);	-- Artisan Enchanter's Hat
-			--FirstCraft(XXXXX, 446971);	-- Artisan Fishing Cap
-			--FirstCraft(XXXXX, 446970);	-- Artisan Gardening Hat
+			FirstCraft(80837, 446973);	-- Artisan Alchemist's Robe
+			FirstCraft(80838, 446974);	-- Artisan Chef's Hat
+			FirstCraft(80836, 446972);	-- Artisan Enchanter's Hat
+			FirstCraft(80835, 446971);	-- Artisan Fishing Cap
+			FirstCraft(80834, 446970);	-- Artisan Gardening Hat
 			FirstCraft(80839, 446975);	-- Artisan Tailor's Coat
 			FirstCraft(80860, 446996);	-- Bright Polishing Cloth
-			--FirstCraft(XXXXX, 446982);	-- Concoctor's Clutch
-			--FirstCraft(XXXXX, 446940);	-- Consecrated Cloak
-			--FirstCraft(XXXXX, 446939);	-- Consecrated Cord
-			--FirstCraft(XXXXX, 446938);	-- Consecrated Cuffs
-			--FirstCraft(XXXXX, 446945);	-- Consecrated Gloves
-			--FirstCraft(XXXXX, 446941);	-- Consecrated Hood
-			--FirstCraft(XXXXX, 446943);	-- Consecrated Leggings
-			--FirstCraft(XXXXX, 446944);	-- Consecrated Mantle
-			--FirstCraft(XXXXX, 446942);	-- Consecrated Robe
-			--FirstCraft(XXXXX, 446937);	-- Consecrated Slippers
-			--FirstCraft(XXXXX, 446935);	-- Cool Sunset Bracers
-			--FirstCraft(XXXXX, 446987);	-- Darkmoon Duffle
+			FirstCraft(80846, 446982);	-- Concoctor's Clutch
+			FirstCraft(80813, 446940);	-- Consecrated Cloak
+			FirstCraft(80812, 446939);	-- Consecrated Cord
+			FirstCraft(80811, 446938);	-- Consecrated Cuffs
+			FirstCraft(80818, 446945);	-- Consecrated Gloves
+			FirstCraft(80814, 446941);	-- Consecrated Hood
+			FirstCraft(80816, 446943);	-- Consecrated Leggings
+			FirstCraft(80817, 446944);	-- Consecrated Mantle
+			FirstCraft(80815, 446942);	-- Consecrated Robe
+			FirstCraft(80810, 446937);	-- Consecrated Slippers
+			FirstCraft(80808, 446935);	-- Cool Sunset Bracers
+			FirstCraft(80851, 446987);	-- Darkmoon Duffle
 			--FirstCraft(XXXXX, 446991);	-- Dawnthread Lining
 			--FirstCraft(XXXXX, 446928);	-- Dawnweave Bolt
 			FirstCraft(80841, 446977);	-- Dawnweave Reagent Bag
 			--FirstCraft(XXXXX, 447001);	-- Daybreak Spellthread
 			--FirstCraft(XXXXX, 446992);	-- Duskthread Lining
-			--FirstCraft(XXXXX, 446979);	-- Duskweave Bag
-			--FirstCraft(XXXXX, 446927);	-- Duskweave Bolt
-			--FirstCraft(XXXXX, 446989);	-- Excavator's Haversack
+			FirstCraft(80843, 446979);	-- Duskweave Bag
+			FirstCraft(80800, 446927);	-- Duskweave Bolt
+			FirstCraft(80853, 446989);	-- Excavator's Haversack
 			FirstCraft(80867, 454397);	-- Exquisite Weavercloth Bolt
 			FirstCraft(80852, 446988);	-- Gardener's Seed Satchel
-			--FirstCraft(XXXXX, 446932);	-- Gloves of the Woven Dusk
-			--FirstCraft(XXXXX, 446930);	-- Grips of the Woven Dawn
+			FirstCraft(80805, 446932);	-- Gloves of the Woven Dusk
+			FirstCraft(80803, 446930);	-- Grips of the Woven Dawn
 			FirstCraft(80862, 446998);	-- Gritty Polishing Cloth
-			--FirstCraft(XXXXX, 447888);	-- Hideseeker's Tote
-			--FirstCraft(XXXXX, 446984);	-- Hideshaper's Workbag
-			--FirstCraft(XXXXX, 446983);	-- Ignition Satchel
-			--FirstCraft(XXXXX, 446990);	-- Jeweler's Purse
+			FirstCraft(80870, 447888);	-- Hideseeker's Tote
+			FirstCraft(80848, 446984);	-- Hideshaper's Workbag
+			FirstCraft(80847, 446983);	-- Ignition Satchel
+			FirstCraft(80854, 446990);	-- Jeweler's Purse
 			FirstCraft(80849, 446985);	-- Magically "Infinite" Messenger
 			FirstCraft(80822, 446958);	-- Pioneer's Cloth Cloak
 			FirstCraft(80821, 446957);	-- Pioneer's Cloth Cord
@@ -2640,12 +2641,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80825, 446961);	-- Pioneer's Perfected Leggings
 			FirstCraft(80826, 446962);	-- Pioneer's Perfected Mantle
 			FirstCraft(80859, 446995);	-- Preserving Embroidery Thread
-			--FirstCraft(XXXXX, 446986);	-- Prodigy's Toolbox
-			--FirstCraft(XXXXX, 446933);	-- Slippers of the Woven Dusk
+			FirstCraft(80850, 446986);	-- Prodigy's Toolbox
+			FirstCraft(80806, 446933);	-- Slippers of the Woven Dusk
 			--FirstCraft(XXXXX, 447000);	-- Sunset Spellthread
-			--FirstCraft(XXXXX, 454431);	-- The Severed Satchel
-			--FirstCraft(XXXXX, 446931);	-- Treads of the Woven Dawn
-			--FirstCraft(XXXXX, 446934);	-- Warm Sunrise Bracers
+			FirstCraft(80868, 454431);	-- The Severed Satchel
+			FirstCraft(80804, 446931);	-- Treads of the Woven Dawn
+			FirstCraft(80807, 446934);	-- Warm Sunrise Bracers
 			FirstCraft(80832, 446968);	-- Weavercloth Alchemist's Robe
 			FirstCraft(80840, 446976);	-- Weavercloth Bag
 			FirstCraft(80866, 447002);	-- Weavercloth Bandage
@@ -2674,6 +2675,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 
 			--q(78604),	-- Randomly when crafting Wild Experimentation
 						-- When learning Algari Mana Potion (first use of Mycobloom in Wild Experimentation)
+						-- "was doing DF experiments in dornigal"
+						-- "Alchemy learning [Algarischer Manatrank] (430591)"
 
 
 			--q(81090),	-- Randomly when crafting Wild Experimentation

@@ -29,25 +29,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					cl(WARLOCK, DEMONOLOGY, {
 						["description"] = "The heads can drop from any Eredar. Keep killing them until you unlock the hidden appearance.",
 						["g"] = {
-							i(140661, {	-- Damaged Eredar Head
-								["questID"] = 44093,
-							}),
-							i(140662, {	-- Deformed Eredar Head
-								["questID"] = 44094,
+							i(140661),	-- Damaged Eredar Head
+							i(140662),	-- Deformed Eredar Head
+							i(140663),	-- Malformed Eredar Head
+							i(140664),	-- Deficient Eredar Head
+							i(140665),	-- Nearly Satisfactory Eredar Head
+							hqt(44093, name(HEADERS.Item, 140661, {	-- Damaged Eredar Head
+								["provider"] = {"i",140661},	-- Damaged Eredar Head
+							})),
+							hqt(44094, name(HEADERS.Item, 140662, {	-- Deformed Eredar Head
 								["sourceQuests"] = { 44093 },	-- Damaged Eredar Head
-							}),
-							i(140663, {	-- Malformed Eredar Head
-								["questID"] = 44095,
+								["provider"] = {"i",140662},	-- Deformed Eredar Head
+							})),
+							hqt(44095, name(HEADERS.Item, 140663, {	-- Malformed Eredar Head
 								["sourceQuests"] = { 44094 },	-- Deformed Eredar Head
-							}),
-							i(140664, {	-- Deficient Eredar Head
-								["questID"] = 44096,
+								["provider"] = {"i",140663},	-- Malformed Eredar Head
+							})),
+							hqt(44096, name(HEADERS.Item, 140664, {	-- Deficient Eredar Head
 								["sourceQuests"] = { 44095 },	-- Malformed Eredar Head
-							}),
-							i(140665, {	-- Nearly Satisfactory Eredar Head
-								["questID"] = 44097,
+								["provider"] = {"i",140664},	-- Deficient Eredar Head
+							})),
+							hqt(44097, name(HEADERS.Item, 140665, {	-- Nearly Satisfactory Eredar Head
 								["sourceQuests"] = { 44096 },	-- Deficient Eredar Head
-							}),
+								["provider"] = {"i",140665},	-- Nearly Satisfactory Eredar Head
+							})),
 							i(139576, {	-- Visage of the First Wakener
 								["sourceQuests"] = { 44097 },	-- Nearly Satisfactory Eredar Head
 								["g"] = {

@@ -1175,7 +1175,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					achWithReps(1010, { 1106, 1090, 1098, 1091 }, {	-- Northrend Vanguard
+					achWithReps(1010, { FACTION_ARGENT_CRUSADE, FACTION_KIRIN_TOR, FACTION_EBON_BLADE, FACTION_THE_WYRMREST_ACCORD }, {	-- Northrend Vanguard
 						["maps"] = {
 							DRAGONBLIGHT,
 							ICECROWN,
@@ -1295,7 +1295,7 @@ root(ROOTS.Zones, {
 							i(44430),		-- Titanium Seal of Dalaran (TOY!)
 						},
 					}),
-					achWithRep(1008, 1090),	-- The Kirin Tor
+					achWithRep(1008, FACTION_KIRIN_TOR),	-- The Kirin Tor
 					ach(1957, {	-- There's Gold In That There Fountain
 						["sym"] = {{ "achievement_criteria" }},
 						["requireSkill"] = FISHING,
@@ -1345,15 +1345,15 @@ root(ROOTS.Zones, {
 					}),
 				}),
 				n(FACTIONS, {
-					faction(1090, {	-- Kirin Tor
+					faction(FACTION_KIRIN_TOR, {	-- Kirin Tor
 						["icon"] = "Interface\\Icons\\spell_holy_mindsooth",
 					}),
-					faction(1094, {	-- The Silver Covenant
+					faction(FACTION_THE_SILVER_COVENANT, {	-- The Silver Covenant
 						["icon"] = "Interface\\Icons\\inv_banner_02",
 						["maps"] = { ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					faction(1124, {	-- The Sunreavers
+					faction(FACTION_THE_SUNREAVERS, {	-- The Sunreavers
 						["icon"] = "Interface\\Icons\\inv_elemental_primal_nether",
 						["maps"] = { ICECROWN },
 						["races"] = HORDE_ONLY,
@@ -1534,7 +1534,7 @@ root(ROOTS.Zones, {
 					q(13833, {	-- Blood Is Thicker
 						["qg"] = 28742,	-- Marcia Chase
 						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { BOREAN_TUNDRA },
 						["requireSkill"] = FISHING,
 						["isDaily"] = true,
@@ -1557,7 +1557,7 @@ root(ROOTS.Zones, {
 							["qg"] = 29631,	-- Awilo Longomba
 							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						}),
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["requireSkill"] = COOKING,
 						["isDaily"] = true,
 						["groups"] = {
@@ -1605,7 +1605,7 @@ root(ROOTS.Zones, {
 							["qg"] = 29631,	-- Awilo Longomba
 							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						}),
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["requireSkill"] = COOKING,
 						["isDaily"] = true,
 						["groups"] = {
@@ -1625,7 +1625,7 @@ root(ROOTS.Zones, {
 					q(13834, {	-- Dangerously Delicious
 						["qg"] = 28742,	-- Marcia Chase
 						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { WINTERGRASP },
 						["requireSkill"] = FISHING,
 						["isDaily"] = true,
@@ -1639,7 +1639,7 @@ root(ROOTS.Zones, {
 					q(13836, {	-- Disarmed!
 						["qg"] = 28742,	-- Marcia Chase
 						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["requireSkill"] = FISHING,
 						["isDaily"] = true,
 						["groups"] = {
@@ -1704,7 +1704,7 @@ root(ROOTS.Zones, {
 							["qg"] = 29631,	-- Awilo Longomba
 							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						}),
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { NORTHREND_THE_UNDERBELLY },
 						["requireSkill"] = COOKING,
 						["isDaily"] = true,
@@ -1735,7 +1735,7 @@ root(ROOTS.Zones, {
 					q(13832, {	-- Jewel Of The Sewers
 						["qg"] = 28742,	-- Marcia Chase
 						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { NORTHREND_THE_UNDERBELLY },
 						["requireSkill"] = FISHING,
 						["isDaily"] = true,
@@ -1834,7 +1834,7 @@ root(ROOTS.Zones, {
 							["qg"] = 29631,	-- Awilo Longomba
 							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						}),
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["requireSkill"] = COOKING,
 						["isDaily"] = true,
 						["groups"] = {
@@ -1895,7 +1895,7 @@ root(ROOTS.Zones, {
 					q(13254, {	-- Proof of Demise: Anub'arak
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
@@ -1911,7 +1911,7 @@ root(ROOTS.Zones, {
 					q(13256, {	-- Proof of Demise: Cyanigosa
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
@@ -1927,7 +1927,7 @@ root(ROOTS.Zones, {
 					q(13250, {	-- Proof of Demise: Gal'darah
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
@@ -1943,7 +1943,7 @@ root(ROOTS.Zones, {
 					q(13255, {	-- Proof of Demise: Herald Volazj
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
@@ -1959,7 +1959,7 @@ root(ROOTS.Zones, {
 					q(13245, {	-- Proof of Demise: Ingvar the Plunderer
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
@@ -1975,7 +1975,7 @@ root(ROOTS.Zones, {
 					q(13246, {	-- Proof of Demise: Keristrasza
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
@@ -1991,7 +1991,7 @@ root(ROOTS.Zones, {
 					q(13248, {	-- Proof of Demise: King Ymiron
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
@@ -2007,7 +2007,7 @@ root(ROOTS.Zones, {
 					q(13247, {	-- Proof of Demise: Ley-Guardian Eregos
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
@@ -2023,7 +2023,7 @@ root(ROOTS.Zones, {
 					q(13253, {	-- Proof of Demise: Loken
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
@@ -2039,7 +2039,7 @@ root(ROOTS.Zones, {
 					q(13251, {	-- Proof of Demise: Mal'Ganis
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
@@ -2055,7 +2055,7 @@ root(ROOTS.Zones, {
 					q(13252, {	-- Proof of Demise: Sjonnir The Ironshaper
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
@@ -2071,7 +2071,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(WRATH_PHASE_THREE, q(14199, {	-- Proof of Demise: The Black Knight
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if ANYCLASSIC
 						["OnUpdate"] = [[function(t)
 							if _.Settings:GetUnobtainableFilter(]] .. WRATH_PHASE_FOUR .. [[) then
@@ -2095,7 +2095,7 @@ root(ROOTS.Zones, {
 					q(13249, {	-- Proof of Demise: The Prophet Tharon'ja
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
@@ -2112,7 +2112,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(WRATH_PHASE_FOUR, q(78752, {	-- Proof of Demise: Titan Rune Protocol Gamma
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if BEFORE 4.0.1
 						["description"] = "The quest item can also drop from any of the new Icecrown Heroic Dungeons.",
 						-- #endif
@@ -2148,7 +2148,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(WRATH_PHASE_FOUR, q(78753, {	-- Proof of Demise: Threats to Azeroth
 						["qg"] = 20735,	-- Archmage Lan'dalock
 						["coord"] = { 57.6, 66.8, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["timeline"] = { ADDED_3_3_0, REMOVED_4_0_1 },
 						["maps"] = {
 							AHNKAHET_THE_OLD_KINGDOM,
@@ -2210,7 +2210,7 @@ root(ROOTS.Zones, {
 							["qg"] = 29631,	-- Awilo Longomba
 							["coord"] = { 70.0, 39.0, NORTHREND_DALARAN },
 						}),
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { NORTHREND_THE_UNDERBELLY, CRYSTALSONG_FOREST },
 						["requireSkill"] = COOKING,
 						["isDaily"] = true,
@@ -2230,7 +2230,7 @@ root(ROOTS.Zones, {
 					q(12958, {	-- Shipment: Blood Jade Amulet
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { ICECROWN, THE_STORM_PEAKS, HOWLING_FJORD },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
@@ -2250,7 +2250,7 @@ root(ROOTS.Zones, {
 					q(12962, {	-- Shipment: Bright Armor Relic
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { DRAGONBLIGHT, THE_STORM_PEAKS },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
@@ -2270,7 +2270,7 @@ root(ROOTS.Zones, {
 					q(12959, {	-- Shipment: Glowing Ivory Figurine
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { DRAGONBLIGHT, SHOLAZAR_BASIN, THE_STORM_PEAKS },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
@@ -2290,7 +2290,7 @@ root(ROOTS.Zones, {
 					q(12961, {	-- Shipment: Intricate Bone Figurine
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { THE_STORM_PEAKS, SHOLAZAR_BASIN, HOWLING_FJORD },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
@@ -2310,7 +2310,7 @@ root(ROOTS.Zones, {
 					q(12963, {	-- Shipment: Shifting Sun Curio
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { ICECROWN, CRYSTALSONG_FOREST },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
@@ -2330,7 +2330,7 @@ root(ROOTS.Zones, {
 					q(12960, {	-- Shipment: Wicked Sun Brooch
 						["qg"] = 28701,	-- Timothy Jones
 						["coord"] = { 40.7, 35.4, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { THE_STORM_PEAKS, HOWLING_FJORD, GRIZZLY_HILLS },
 						["requireSkill"] = JEWELCRAFTING,
 						["isDaily"] = true,
@@ -2356,7 +2356,7 @@ root(ROOTS.Zones, {
 					q(13830, {	-- The Ghostfish
 						["qg"] = 28742,	-- Marcia Chase
 						["coord"] = { 53.0, 64.9, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						["maps"] = { SHOLAZAR_BASIN },
 						["requireSkill"] = FISHING,
 						["isDaily"] = true,
@@ -2412,7 +2412,7 @@ root(ROOTS.Zones, {
 					q(13240, {	-- Timear Foresees Centrifuge Constructs in your Future!
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
@@ -2444,7 +2444,7 @@ root(ROOTS.Zones, {
 					q(13243, {	-- Timear Foresees Infinite Agents in your Future!
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
@@ -2476,7 +2476,7 @@ root(ROOTS.Zones, {
 					q(13244, {	-- Timear Foresees Titanium Vanguards in your Future!
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif
@@ -2508,7 +2508,7 @@ root(ROOTS.Zones, {
 					q(13241, {	-- Timear Foresees Ymirjar Berserkers in your Future!
 						["qg"] = 31439,	-- Archmage Timear
 						["coord"] = { 63.8, 55.0, NORTHREND_DALARAN },
-						["maxReputation"] = { 1090, EXALTED },	-- Kirin Tor, Exalted.
+						["maxReputation"] = { FACTION_KIRIN_TOR, EXALTED },	-- Kirin Tor, Exalted.
 						-- #if ANYCLASSIC
 						["OnUpdate"] = OnUpdateForTimearDailies,
 						-- #endif

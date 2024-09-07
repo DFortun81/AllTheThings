@@ -1485,7 +1485,11 @@ for _,t in ipairs({CHRONICLE_OF_LOST_MEMORIES, MEMORY_OF_A_VITAL_SACRIFICE}) do
 	t.customCollect = nil;
 end
 
-root(ROOTS.HiddenQuestTriggers, {
-	q(63602),	-- learning Ensemble: Devoted Aspirant's Regalia
-	q(60595),	-- unlocking 12 Kyrian sets, no idea why they all have the same TrackingQuestID: https://wow.tools/dbc/?dbc=transmogset&build=9.1.5.40944#page=1&colFilter[3]=60595
-});
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	n(KYRIAN, {
+		n(VENDORS, {
+			q(60595),	-- unlocking 12 Kyrian sets, no idea why they all have the same TrackingQuestID: https://wow.tools/dbc/?dbc=transmogset&build=9.1.5.40944#page=1&colFilter[3]=60595
+			q(63602, {["timeline"] = {ADDED_9_1_0}}),	-- learning Ensemble: Devoted Aspirant's Regalia
+		}),
+	}),
+})));

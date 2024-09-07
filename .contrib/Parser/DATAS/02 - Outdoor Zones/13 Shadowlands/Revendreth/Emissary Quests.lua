@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(61100, {	-- Supplies from the Court of Harvesters
 				["provider"] = { "n", 156822 },	-- Mistress Mihaela <Court of Harvesters Quartermaster>
 				["coord"] = { 61.4, 63.8, REVENDRETH },
-				["minReputation"] = { 2413, 8 },	-- Court of Harvesters, Exalted
+				["minReputation"] = { FACTION_COURT_OF_HARVESTERS, EXALTED },	-- Court of Harvesters, Exalted
 				["repeatable"] = true,
 				["g"] = {
 					i(180648, {	-- Court of Harvesters Supplies

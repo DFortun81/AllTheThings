@@ -25,6 +25,7 @@ ROOTS = {
 	["RecipeDB"] = "RecipeDB",
 	["SeasonOfDiscovery"] = "SeasonOfDiscovery",
 	["Secrets"] = "Secrets",
+	["Sourceless"] = "Sourceless",
 	["TradingPost"] = "TradingPost",
 	["Uncollectible"] = "Uncollectible",
 	["Unsorted"] = "Unsorted",

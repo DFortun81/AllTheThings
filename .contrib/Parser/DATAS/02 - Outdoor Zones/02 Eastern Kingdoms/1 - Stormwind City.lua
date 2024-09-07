@@ -63,7 +63,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.RuneclothTurnIns,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				faction(1353, {	-- Tushui Pandaren
+				faction(FACTION_TUSHUI_PANDAREN, {	-- Tushui Pandaren
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -4269,7 +4269,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(92071, {	-- Tushui Satchel
-							["minReputation"] = { 1353, REVERED },	-- Tushui Pandaren, Revered.
+							["minReputation"] = { FACTION_TUSHUI_PANDAREN, REVERED },	-- Tushui Pandaren, Revered.
 							["timeline"] = { ADDED_5_1_0 },
 						}),
 						i(83079, {	-- Tushui Tabard
@@ -4432,7 +4432,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Appears in Stormwind after War of Thorns.",
 					["coord"] = { 52.4, 8.2, STORMWIND_CITY },
 					-- Available to Worgen without faction requirements.
-					["minReputation"] = { 1134, EXALTED },	-- Gilneas, Exalted.
+					["minReputation"] = { FACTION_GILNEAS, EXALTED },	-- Gilneas, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. WORGEN .. [[ then
 							t.minReputation = nil;
@@ -6099,19 +6099,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64893, {	-- Cape of Gilneas
-							["minReputation"] = { 1134, EXALTED },	-- Gilneas, Exalted.
+							["minReputation"] = { FACTION_GILNEAS, EXALTED },	-- Gilneas, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64892, {	-- Mantle of Gilneas
-							["minReputation"] = { 1134, EXALTED },	-- Gilneas, Exalted.
+							["minReputation"] = { FACTION_GILNEAS, EXALTED },	-- Gilneas, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64894, {	-- Shroud of Gilneas
-							["minReputation"] = { 1134, EXALTED },	-- Gilneas, Exalted.
+							["minReputation"] = { FACTION_GILNEAS, EXALTED },	-- Gilneas, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67532, {	-- Gilnean Satchel
-							["minReputation"] = { 1134, REVERED },	-- Gilneas, Revered.
+							["minReputation"] = { FACTION_GILNEAS, REVERED },	-- Gilneas, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
@@ -6352,7 +6352,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(65068, {	-- Old Whitenose <Dragon Turtle Breeder>
 					["coord"] = { 67.8, 18.4, STORMWIND_CITY },
 					-- Available to Tushui Pandaren without faction requirements.
-					["minReputation"] = { 1353, EXALTED },	-- Tushui Pandaren, Exalted.
+					["minReputation"] = { FACTION_TUSHUI_PANDAREN, EXALTED },	-- Tushui Pandaren, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. PANDAREN_ALLIANCE .. [[ then
 							t.minReputation = nil;

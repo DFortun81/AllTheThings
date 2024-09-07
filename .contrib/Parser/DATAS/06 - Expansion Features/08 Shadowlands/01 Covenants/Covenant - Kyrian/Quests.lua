@@ -1000,8 +1000,16 @@ for _,g in ipairs({CONDUIT_GROUP,LFR_WEAPON_GROUP}) do
 	end
 end
 
-root(ROOTS.HiddenQuestTriggers, {
-	q(59727),	-- Triggered when adding purple petals to Moonberry's soap during quest 58816 'Getting Backstage'
-	q(59728),	-- Triggered when adding red petals to Moonberry's soap during quest 58816 'Getting Backstage'
-	q(59729),	-- Triggered when adding green petals to Moonberry's soap during quest 58816 'Getting Backstage'
-});
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	n(KYRIAN, {
+		n(QUESTS, {
+			q(59727),	-- Triggered when adding purple petals to Moonberry's soap during quest 58816 'Getting Backstage'
+			q(59728),	-- Triggered when adding red petals to Moonberry's soap during quest 58816 'Getting Backstage'
+			q(59729),	-- Triggered when adding green petals to Moonberry's soap during quest 58816 'Getting Backstage'
+			q(63216),	-- triggers when turning in #57897, "Dangerous to Go Alone"
+			q(62755),	-- triggers when turning in #57904, "Our Eternal Charge"
+			q(61589),	-- triggered when turning in #57903, "Power in the Sky," possibly connected to channeling anima to Purity's Pinnacle
+			q(63451),	-- triggers when turning in "Return Lost Souls" (spellID 345276 & 345277 & 345278 & 348836)
+		}),
+	}),
+})));

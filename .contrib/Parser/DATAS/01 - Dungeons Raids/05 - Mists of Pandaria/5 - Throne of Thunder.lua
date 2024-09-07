@@ -106,7 +106,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				i(94594),	-- Titan Runestone
 			})),
 			n(FACTIONS, {
-				faction(1435),	-- Shado-Pan Assault
+				faction(FACTION_SHADO_PAN_ASSAULT),	-- Shado-Pan Assault
 			}),
 			n(QUESTS, sharedData({
 				["isWeekly"] = true,

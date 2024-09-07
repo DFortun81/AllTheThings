@@ -17,11 +17,14 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			ach(40387),		-- Challenger I: The War Within Season 1
 			ach(40388),		-- Challenger II: The War Within Season 1
 			ach(40389),		-- Rival I: The War Within Season 1
-			ach(40390),		-- Rival II: The War Within Season 1
+			ach(40390, {	-- Rival II: The War Within Season 1
+				-- Illusion here
+			}),
 			ach(40391, {	-- Duelist: The War Within Season 1
 				i(223617),	-- Forged Gladiator's Prestigious Cloak
 			}),
 			ach(40392),		-- Elite: The War Within Season 1
+				-- Tabard here
 			ach(40393, {	-- Gladiator: The War Within Season 1
 				i(223586),	-- Forged Gladiator's Fel Bat (MOUNT!)
 			}),
@@ -36,10 +39,10 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			ach(40384, {	-- Hero of the Horde: Forged
 				["races"] = HORDE_ONLY,
 			}),
-			ach(40235, {	-- Forged Marshall: The War Within Season 1
+			ach(40235, {	-- Forged Marshal: The War Within Season 1
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					title(555),	-- Forged Marshall <Name>
+					title(555),	-- Forged Marshal <Name>
 				},
 			}),
 			ach(40234, {	-- Forged Warlord: The War Within Season 1

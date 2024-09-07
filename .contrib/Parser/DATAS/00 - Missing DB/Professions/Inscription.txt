@@ -602,10 +602,6 @@ r(382989),	-- Cataclysm Milling
 r(382990),	-- Northrend Milling
 r(382991),	-- Outland Milling
 r(382994),	-- Classic Milling
-11.0.0.54311
-r(441318),	-- Miner's Rune of Decyphering
-r(445068),	-- Inquisitor's Greenwood Bow
-r(445069),	-- Vagabond's Alacrity
 
 
 

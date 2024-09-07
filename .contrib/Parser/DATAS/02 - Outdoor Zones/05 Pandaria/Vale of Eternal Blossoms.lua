@@ -83,8 +83,8 @@ root(ROOTS.Zones, {
 					exploration(6034),	-- Whitepetal Lake
 				}),
 				n(FACTIONS, {
-					faction(1269),	-- Golden Lotus
-					faction(1345),	-- The Lorewalkers
+					faction(FACTION_GOLDEN_LOTUS),	-- Golden Lotus
+					faction(FACTION_THE_LOREWALKERS),	-- The Lorewalkers
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1073, {	-- Serpent's Spine, Vale of Eternal Blossoms

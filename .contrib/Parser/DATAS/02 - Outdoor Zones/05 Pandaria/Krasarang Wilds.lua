@@ -81,7 +81,7 @@ root(ROOTS.Zones, {
 					exploration(6000),	-- Zhu's Watch
 				}),
 				n(FACTIONS, {
-					faction(1375, {	-- Dominance Offensive
+					faction(FACTION_DOMINANCE_OFFENSIVE, {	-- Dominance Offensive
 						["races"] = HORDE_ONLY,
 						["icon"] = "Interface\\Icons\\achievement_general_hordeslayer",
 						["g"] = {
@@ -321,7 +321,7 @@ root(ROOTS.Zones, {
 									["races"] = HORDE_ONLY,
 								}),
 								q(32351, {	-- Echoes of Thunder
-									["minReputation"] = { 1375, HONORED+10750 },
+									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, HONORED+10750 },
 									["sourceQuests"] = { 32384 },	-- Trapping the Leader
 									["provider"] = { "n", 67939 },	-- General Nazgrim
 									["coord"] = { 9.29, 51.2, KRASARANG_WILDS },
@@ -355,7 +355,7 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32329, {	-- Get My Results!
-									["minReputation"] = { 1375, REVERED+2700 },
+									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, REVERED+2700 },
 									["sourceQuests"] = { 32352 },	-- A Gathering Storm
 									["provider"] = { "n", 67939 },	-- General Nazgrim
 									["coord"] = { 9.30, 51.1, KRASARANG_WILDS },
@@ -382,7 +382,7 @@ root(ROOTS.Zones, {
 									["races"] = HORDE_ONLY,
 								}),
 								q(32326, {	-- Insertion
-									["minReputation"] = { 1375, REVERED+14540 },	-- possibly 14530
+									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, REVERED+14540 },	-- possibly 14530
 									["sourceQuests"] = { 32392 },	-- The Divine Bell
 									["provider"] = { "n", 67939 },	-- General Nazgrim
 									["coord"] = { 9.3, 51.1, KRASARANG_WILDS },
@@ -492,7 +492,7 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32256, {	-- Rise Of An Empire
-									["minReputation"] = { 1375, FRIENDLY+950 },
+									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, FRIENDLY+950 },
 									["sourceQuests"] = { 32108 },	-- Domination Point
 									["provider"] = { "n", 67939 },	-- General Nazgrim
 									["coord"] = { 9.3, 51.1, KRASARANG_WILDS },
@@ -513,7 +513,7 @@ root(ROOTS.Zones, {
 									["races"] = HORDE_ONLY,
 								}),
 								q(32284, {	-- Someone You Should See
-									["minReputation"] = { 1375, FRIENDLY+4900 },
+									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, FRIENDLY+4900 },
 									["sourceQuests"] = { 32257 },	-- Voice of the Gods
 									["provider"] = { "n", 67865 },	-- Messenger Grummle
 									["coord"] = { 9.62, 51.2, KRASARANG_WILDS },
@@ -534,7 +534,7 @@ root(ROOTS.Zones, {
 									["races"] = HORDE_ONLY,
 								}),
 								q(32398, {	-- The Bell Speaks
-									["minReputation"] = { 1375, EXALTED },
+									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, EXALTED },
 									["sourceQuests"] = {
 										32412,	-- One Last Grasp
 										32413,	-- A Return to Krasarang
@@ -574,7 +574,7 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32363, {	-- The Kun-Lai Expedition
-									["minReputation"] = { 1375, REVERED+6650 },
+									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, REVERED+6650 },
 									["sourceQuests"] = { 32330 },	-- What's in the Box?
 									["provider"] = { "n", 67939 },	-- General Nazgrim
 									["coord"] = { 9.30, 51.2, KRASARANG_WILDS },
@@ -590,7 +590,7 @@ root(ROOTS.Zones, {
 									["races"] = HORDE_ONLY,
 								}),
 								q(32391, {	-- The Ruins of Korune
-									["minReputation"] = { 1375, REVERED+10515 },	-- possibly up to 10755?  it didn't show up for me until turning in a quest that took me from 10455 to 11145
+									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, REVERED+10515 },	-- possibly up to 10755?  it didn't show up for me until turning in a quest that took me from 10455 to 11145
 									["sourceQuests"] = { 32368 },	-- Memory Wine
 									["provider"] = { "n", 67939 },	-- General Nazgrim
 									["coord"] = { 9.30, 51.2, KRASARANG_WILDS },
@@ -629,7 +629,7 @@ root(ROOTS.Zones, {
 									["races"] = HORDE_ONLY,
 								}),
 								q(32402, {	-- The Situation In Dalaran
-									["minReputation"] = { 1375, REVERED+18500 },
+									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, REVERED+18500 },
 									["sourceQuests"] = { 32328 },	-- Victorious Return
 									["provider"] = { "n", 67939 },	-- General Nazgrim
 									["coord"] = { 9.30, 51.2, KRASARANG_WILDS },
@@ -659,14 +659,14 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(32190, {	-- To Mogujia
-									["minReputation"] = { 1375, HONORED+2850 },
+									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, HONORED+2850 },
 									["sourceQuests"] = { 32372 },	-- De-Subjugation
 									["provider"] = { "n", 67939 },	-- General Nazgrim
 									["coord"] = { 9.30, 51.2, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32376, {	-- To the Valley!
-									["minReputation"] = { 1375, HONORED+6800 },
+									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, HONORED+6800 },
 									["sourceQuests"] = {
 										32191,	-- Ancient Guardians
 										32192,	-- Bloodlines
@@ -819,7 +819,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					faction(1376, {	-- Operation: Shieldwall
+					faction(FACTION_OPERATION_SHIELDWALL, {	-- Operation: Shieldwall
 						["races"] = ALLIANCE_ONLY,
 						["icon"] = "Interface\\Icons\\achievement_general_allianceslayer",
 						["g"] = {
@@ -913,7 +913,7 @@ root(ROOTS.Zones, {
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32315, {	-- Anduin's Plea
-									["minReputation"] = { 1376, HONORED+10750 },
+									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, HONORED+10750 },
 									["sourceQuests"] = {
 										32194,	-- Bad Blood
 										32243,	-- The Source of Korune Power
@@ -1003,7 +1003,7 @@ root(ROOTS.Zones, {
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32414, {	-- Darnassus Attacked?
-									["minReputation"] = { 1376, REVERED+8600 },
+									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+8600 },
 									["sourceQuests"] = { 32394 },	-- The Divine Bell
 									["provider"] = { "n", 67940 },	-- Admiral Taylor
 									["coord"] = { 94.4, 28.4, KRASARANG_WILDS },
@@ -1054,7 +1054,7 @@ root(ROOTS.Zones, {
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32382, {	-- He's In Deep
-									["minReputation"] = { 1376, FRIENDLY+4900 },
+									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, FRIENDLY+4900 },
 									["sourceQuests"] = { 32426 },	-- Stirred, Not Shaken
 									["provider"] = { "n", 67940 },	-- Admiral Taylor
 									["coord"] = { 94.4, 28.4, KRASARANG_WILDS },
@@ -1215,7 +1215,7 @@ root(ROOTS.Zones, {
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32400, {	-- The Bell Speaks
-									["minReputation"] = { 1376, EXALTED },
+									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, EXALTED },
 									["sourceQuests"] = {
 										32336,	-- The Handle
 										32338,	-- The Harmonic Ointment
@@ -1226,7 +1226,7 @@ root(ROOTS.Zones, {
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32380, {	-- The Best Around
-									["minReputation"] = { 1376, FRIENDLY+950 },
+									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, FRIENDLY+950 },
 									["sourceQuests"] = { 32109 },	-- Lion's Landing
 									["provider"] = { "n", 67940 },	-- Admiral Taylor
 									["coord"] = { 89.5, 32.5, KRASARANG_WILDS },
@@ -1261,35 +1261,35 @@ root(ROOTS.Zones, {
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32336, {	-- The Handle
-									["minReputation"] = { 1376, REVERED+18500 },	-- maybe 18490
+									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+18500 },	-- maybe 18490
 									["sourceQuests"] = { 32335 },	-- The Greatest Prank
 									["provider"] = { "n", 68538 },	-- The Monkey King
 									["coord"] = { 93.8, 27.5, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32355, {	-- The Harmonic Mallet
-									["minReputation"] = { 1376, REVERED+14540 },	-- possibly 14530
+									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+14540 },	-- possibly 14530
 									["sourceQuests"] = { 32423 },	-- What Had To Be Done
 									["provider"] = { "n", 67940 },	-- Admiral Taylor
 									["coord"] = { 94.5, 28.5, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32338, {	-- The Harmonic Ointment
-									["minReputation"] = { 1376, REVERED+18500 },	-- maybe 18490
+									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+18500 },	-- maybe 18490
 									["sourceQuests"] = { 32335 },	-- The Greatest Prank
 									["provider"] = { "n", 68538 },	-- The Monkey King
 									["coord"] = { 93.8, 27.5, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32337, {	-- The Head
-									["minReputation"] = { 1376, REVERED+18500 },	-- maybe 18490
+									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+18500 },	-- maybe 18490
 									["sourceQuests"] = { 32335 },	-- The Greatest Prank
 									["provider"] = { "n", 68538 },	-- The Monkey King
 									["coord"] = { 93.8, 27.5, KRASARANG_WILDS },
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32331, {	-- The Kirin Tor
-									["minReputation"] = { 1376, HONORED+2850 },
+									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, HONORED+2850 },
 									["sourceQuests"] = {
 										32383,	-- Bugging Out
 										32397,	-- He Won't Even Miss It
@@ -1299,7 +1299,7 @@ root(ROOTS.Zones, {
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32370, {	-- The Kun-Lai Expedition
-									["minReputation"] = { 1376, REVERED+2700 },
+									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+2700 },
 									["sourceQuests"] = { 32316 },	-- Heart Of The Alliance
 									["provider"] = { "n", 67940 },	-- Admiral Taylor
 									["coord"] = { 94.4, 28.5, KRASARANG_WILDS },
@@ -1319,7 +1319,7 @@ root(ROOTS.Zones, {
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32393, {	-- The Ruins of Korune
-									["minReputation"] = { 1376, REVERED+6650 },
+									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, REVERED+6650 },
 									["sourceQuests"] = { 32371 },	-- Memory Wine
 									["provider"] = { "n", 67940 },	-- Admiral Taylor
 									["coord"] = { 94.5, 28.4, KRASARANG_WILDS },
@@ -1371,7 +1371,7 @@ root(ROOTS.Zones, {
 									["races"] = ALLIANCE_ONLY,
 								}),
 								q(32193, {	-- To Mogujia
-									["minReputation"] = { 1376, HONORED+6800 },
+									["minReputation"] = { FACTION_OPERATION_SHIELDWALL, HONORED+6800 },
 									["sourceQuests"] = { 32331 },	-- The Kirin Tor
 									["provider"] = { "n", 67940 },	-- Admiral Taylor
 									["coord"] = { 94.4, 28.4, KRASARANG_WILDS },
@@ -1523,14 +1523,14 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					faction(1302, {	-- The Anglers
+					faction(FACTION_THE_ANGLERS, {	-- The Anglers
 						["requireSkill"] = FISHING,	-- doesn't seem like you can even get access to the faction on a non-fisher.  flew/walked all around the area on a character with no professions and nothing, and as soon as i flew up on a character with fishing the faction unlocked and all the NPCs appeared
 						["icon"] = "Interface\\Icons\\achievement_faction_anglers",
 						["g"] = {
 							n(ACHIEVEMENTS, {
 								ach(6547),		-- The Anglers
 							}),
-							faction(1358, {	-- Nat Pagle
+							faction(FACTION_NAT_PAGLE, {	-- Nat Pagle
 								n(QUESTS, {
 									q(31443, {	-- Flying Tiger Gourami
 										["requireSkill"] = FISHING,
@@ -1672,7 +1672,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					faction(1341, {	-- The August Celestials
+					faction(FACTION_THE_AUGUST_CELESTIALS, {	-- The August Celestials
 						["description"] = "Each day, the August Celestials require your aid at one of their temples.  Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",
 						["collectible"] = false,
 						["icon"] = "Interface\\Icons\\achievement_faction_celestials",

@@ -435,7 +435,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			q(55103, {	-- Ideas Can Come from Anywhere
 				["provider"] = { "n", 152295 }, -- Pascal
 				["coord"] = { 71.2, 32.3, MECHAGON },
-				["minReputation"] = { 2391, REVERED },
+				["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, REVERED },
 				["g"] = {
 					i(170542),	-- Idea Starter (QI!)
 					i(170541),	-- Idea Starter (QI!)
@@ -549,7 +549,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			q(56756, {	-- My Punkin, the Action Figure
 				["provider"] = { "n", 149815 },	-- Grizzek Fizzwrench
 				["coord"] = { 72.0, 34.2, MECHAGON },
-				["minReputation"] = { 2391, EXALTED },
+				["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, EXALTED },
 				["description"] = "Once you are exalted with Rustbolt Resistance, this quest is awarded after completing the Toys Like Us daily.",
 				["g"] = {
 					i(169882),	-- Sapphronetta Flivvers Action Figure (QI!)
@@ -583,9 +583,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					i(168204, {	-- Small Metal Box
 						["description"] = "Small Metal Boxes can be collected when using the Rare Metal Collector.",
 						["g"] = {
-							i(170148, {	-- Paint Bottle: Electric Blue
-								["questID"] = 56909,
-							}),
+							i(170148),	-- Paint Bottle: Electric Blue (QS!)
 						},
 					}),
 				},
@@ -703,7 +701,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 150631 },	-- Pristy Quickcharge
 				["coord"] = { 70.7, 38.4, MECHAGON },
 				["sourceQuest"] = 56319,	-- The Quickcharge Contract
-				["minReputation"] = { 2391, HONORED },
+				["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, HONORED },
 				["g"] = {
 					i(168122),	-- NRG-100 (QI!)
 					i(166970),	-- Energy Cell
@@ -1006,7 +1004,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			q(56319, {	-- The Quickcharge Contract
 				["provider"] = { "n", 150631 },	-- Pristy Quickcharge
 				["coord"] = { 70.7, 38.4, MECHAGON },
-				["minReputation"] = { 2391, HONORED },
+				["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, HONORED },
 			}),
 			q(55729, {	-- The Resistance Needs You!
 				["provider"] = { "n", 152851 },	-- Prince Erazmin
@@ -1019,7 +1017,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			q(56181, {	-- This One's On Me
 				["provider"] = { "n", 152295 },	-- Pascal
 				["coord"] = { 71.2, 32.5, MECHAGON },
-				["minReputation"] = { 2391, HONORED },
+				["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, HONORED },
 				["g"] = {
 					r(300122, {["u"]=15}),	-- Scrapmaster's Blowtorch
 				},
@@ -1125,7 +1123,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["provider"] = { "n", 152747 },	-- Christy Punchcog
 				["coord"] = { 69.7, 32.3, MECHAGON },
 				["cost"] = { { "i", 164740, 1 }, },	-- Ub3r-Spanner
-				["minReputation"] = { 2391, HONORED },
+				["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, HONORED },
 				["DisablePartySync"] = true,
 				["description"] = "You do not lose your Ub3r-Spanner while completing this quest, you simply need to have it in your inventory.",
 				["g"] = {
@@ -1236,6 +1234,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			}),
 			q(55080, {	-- Blueprint: Perfectly Timed Differential
 				["provider"] = { "i", 169172 },	-- Blueprint: Perfectly Timed Differential
+			}),
+		}),
+		-- Paint Bottles
+		n(QUESTS, {
+			q(56908, {	-- Paint Bottle: Goblin Green
+				["provider"] = { "i", 170147 },	-- Paint Bottle: Goblin Green
+			}),
+			q(56907, {	-- Paint Bottle: Nukular Red
+				["provider"] = { "i", 170146 },	-- Paint Bottle: Nukular Red
+			}),
+			q(56909, {	-- Paint Bottle: Electric Blue
+				["provider"] = { "i", 170148 },	-- Paint Bottle: Electric Blue
 			}),
 		}),
 		-- Paint Vials

@@ -866,7 +866,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroups(bubbleDown({ ["timeline"] = { ADDED_9_2_0, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
 				-- #if AFTER 10.0.2
 				o(375368, {	-- Creation Catalyst Console
-					["description"] = "The Creation Catalyst is a system that lets you convert Items bought with Sandworn Relics in Zereth Morthis & LFR Mode Non-set items from the Sepulcher of the First Ones Raid into your class' LFR Transmog Set.\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
+					["description"] = "The Creation Catalyst is a system that lets you convert Items bought with Sandworn Relics in Zereth Morthis & LFR Mode Non-set items from the Sepulcher of the First Ones Raid into your class' LFR Transmog Set.\n\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
 					["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
 					["g"] = bubbleDown({ ["modID"] = 4 }, {
 						cl(DEATHKNIGHT, {
@@ -1095,7 +1095,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				-- #if AFTER 10.0.2
 				o(375368, {	-- Creation Catalyst Console
-					["description"] = "The Creation Catalyst is a system that lets you convert Normal Mode Non-set items from the Sepulcher of the First Ones Raid or from the World Boss into your class' Normal Mode Transmog Set.\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
+					["description"] = "The Creation Catalyst is a system that lets you convert Normal Mode Non-set items from the Sepulcher of the First Ones Raid or from the World Boss into your class' Normal Mode Transmog Set.\n\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
 					["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
 					["g"] = bubbleDown({ ["modID"] = 3 }, {
 						cl(DEATHKNIGHT, {
@@ -1312,7 +1312,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				-- #if AFTER 10.0.2
 				o(375368, {	-- Creation Catalyst Console
-					["description"] = "The Creation Catalyst is a system that lets you convert Heroic Mode Non-set items from the Sepulcher of the First Ones Raid into your class' Heroic Mode Transmog Set.\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
+					["description"] = "The Creation Catalyst is a system that lets you convert Heroic Mode Non-set items from the Sepulcher of the First Ones Raid into your class' Heroic Mode Transmog Set.\n\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
 					["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
 					["g"] = bubbleDown({ ["modID"] = 5 }, {
 						cl(DEATHKNIGHT, {
@@ -1498,7 +1498,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				-- #if AFTER 10.0.2
 				o(375368, {	-- Creation Catalyst Console
-					["description"] = "The Creation Catalyst is a system that lets you convert Mythic Mode Non-set items from the Sepulcher of the First Ones Raid into your class' Mythic Transmog Set.\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
+					["description"] = "The Creation Catalyst is a system that lets you convert Mythic Mode Non-set items from the Sepulcher of the First Ones Raid into your class' Mythic Transmog Set.\n\nThe catalyst is outside of the Raid in southern Zereth Mortis. Make sure to equip your item first before converting it.",
 					["coord"] = { 47.4, 88.6, ZERETH_MORTIS },
 					["g"] = bubbleDown({ ["modID"] = 6 }, {
 						cl(DEATHKNIGHT, {
@@ -1719,56 +1719,54 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 	}),
 })));
 
-root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.SL, {
-		inst(1195, {	-- Sepulcher of the First Ones
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, {
+	inst(1195, {	-- Sepulcher of the First Ones
 		-- Normal
-			q(65356),	-- Entering the Raid
-			q(65810),	-- Triggered when killing Vigilant Guardian
-			q(65966),	-- Triggered when killing Vigilant Guardian
-			q(65984),	-- Triggered when killing Trash: Subjugator Zeltoth
-			q(65985),	-- Triggered when killing Trash: Subjugator Zeltoth
-			q(65818),	-- Triggered when killing Skolex
-			q(65819),	-- Triggered when killing Skolex
-			q(65970),	-- Triggered when killing Skolex
-			q(65982),	-- Triggered when killing Trash: Taskmaster Xy'pro
-			q(65983),	-- Triggered when killing Trash: Taskmaster Xy'pro
-			q(65820),	-- Triggered when killing Artificer Xy'mox
-			q(65821),	-- Triggered when killing Artificer Xy'mox
-			q(65971),	-- Triggered when killing Artificer Xy'mox
-			q(65822),	-- Triggered when killing Halondrus
-			q(65823),	-- Triggered when killing Halondrus
-			q(65972),	-- Triggered when killing Halondrus
-			q(65980),	-- Triggered when killing Trash: Manifestor Krugan
-			q(65981),	-- Triggered when killing Trash: Manifestor Krugan
-			q(65812),	-- Triggered when killing Dausegne
-			q(65813),	-- Triggered when killing Dausegne
-			q(65967),	-- Triggered when killing Dausegne
-			q(65814),	-- Triggered when killing Prototype Pantheon
-			q(65815),	-- Triggered when killing Prototype Pantheon
-			q(65968),	-- Triggered when killing Prototype Pantheon
-			q(65978),	-- Triggered when killing Trash: Sacred Matrix Automa
-			q(65979),	-- Triggered when killing Trash: Sacred Matrix Automa
-			q(65816),	-- Triggered when killing Lihuvium
-			q(65817),	-- Triggered when killing Lihuvium
-			q(65969),	-- Triggered when killing Lihuvium
-			q(65824),	-- Triggered when killing Anduin
-			q(65825),	-- Triggered when killing Anduin
-			q(65973),	-- Triggered when killing Anduin
-			q(65699),	-- Anduin Cinematic (spellID 368011)
-			q(65826),	-- Killing Lord of Dread
-			q(65827),	-- Killing Lord of Dread
-			q(65974),	-- Killing Lord of Dread
-			q(65828),	-- Killing Rygelon
-			q(65829),	-- Killing Rygelon
-			q(65975),	-- Killing Rygelon
-			q(65986),	-- Triggered when killing Trash: Kelmortos
-			q(65987),	-- Triggered when killing Trash: Kelmortos
-			q(65830),	-- Killing The Jailer
-			q(65831),	-- Killing The Jailer
-			q(65976),	-- Killing The Jailer
-			q(65697),	-- Jailer Intro Complete Quest (spellID 368009)
-			q(65698),	-- Jailer Cinematic (spellID 368010)
-		}),
+		q(65356),	-- Entering the Raid
+		q(65810),	-- Triggered when killing Vigilant Guardian
+		q(65966),	-- Triggered when killing Vigilant Guardian
+		q(65984),	-- Triggered when killing Trash: Subjugator Zeltoth
+		q(65985),	-- Triggered when killing Trash: Subjugator Zeltoth
+		q(65818),	-- Triggered when killing Skolex
+		q(65819),	-- Triggered when killing Skolex
+		q(65970),	-- Triggered when killing Skolex
+		q(65982),	-- Triggered when killing Trash: Taskmaster Xy'pro
+		q(65983),	-- Triggered when killing Trash: Taskmaster Xy'pro
+		q(65820),	-- Triggered when killing Artificer Xy'mox
+		q(65821),	-- Triggered when killing Artificer Xy'mox
+		q(65971),	-- Triggered when killing Artificer Xy'mox
+		q(65822),	-- Triggered when killing Halondrus
+		q(65823),	-- Triggered when killing Halondrus
+		q(65972),	-- Triggered when killing Halondrus
+		q(65980),	-- Triggered when killing Trash: Manifestor Krugan
+		q(65981),	-- Triggered when killing Trash: Manifestor Krugan
+		q(65812),	-- Triggered when killing Dausegne
+		q(65813),	-- Triggered when killing Dausegne
+		q(65967),	-- Triggered when killing Dausegne
+		q(65814),	-- Triggered when killing Prototype Pantheon
+		q(65815),	-- Triggered when killing Prototype Pantheon
+		q(65968),	-- Triggered when killing Prototype Pantheon
+		q(65978),	-- Triggered when killing Trash: Sacred Matrix Automa
+		q(65979),	-- Triggered when killing Trash: Sacred Matrix Automa
+		q(65816),	-- Triggered when killing Lihuvium
+		q(65817),	-- Triggered when killing Lihuvium
+		q(65969),	-- Triggered when killing Lihuvium
+		q(65824),	-- Triggered when killing Anduin
+		q(65825),	-- Triggered when killing Anduin
+		q(65973),	-- Triggered when killing Anduin
+		q(65699),	-- Anduin Cinematic (spellID 368011)
+		q(65826),	-- Killing Lord of Dread
+		q(65827),	-- Killing Lord of Dread
+		q(65974),	-- Killing Lord of Dread
+		q(65828),	-- Killing Rygelon
+		q(65829),	-- Killing Rygelon
+		q(65975),	-- Killing Rygelon
+		q(65986),	-- Triggered when killing Trash: Kelmortos
+		q(65987),	-- Triggered when killing Trash: Kelmortos
+		q(65830),	-- Killing The Jailer
+		q(65831),	-- Killing The Jailer
+		q(65976),	-- Killing The Jailer
+		q(65697),	-- Jailer Intro Complete Quest (spellID 368009)
+		q(65698),	-- Jailer Cinematic (spellID 368010)
 	}),
-});
+})));

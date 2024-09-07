@@ -206,11 +206,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(225204),	-- Shadow Curfew Guidelines [book]
 				},
 			}),
-			o(453753, {	-- Beledar- The Emperor's Vision
+			o(453753, {	-- Beledar - The Emperor's Vision
 				["coord"] = { 56.6, 65.2, HALLOWFALL },
 				["questID"] = 83312,
 				["g"] = {
-					i(225203),	-- Beledar- The Emperor's Vision [book]
+					i(225203),	-- Beledar - The Emperor's Vision [book]
 				},
 			}),
 			o(439473, {	-- Tenir and the Order of Night

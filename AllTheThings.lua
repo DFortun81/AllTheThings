@@ -8468,6 +8468,17 @@ function app:GetDataCache()
 		CacheFields(db, true);
 	end
 
+	-- Sourceless
+	if app.Categories.Sourceless then
+		db = app.CreateRawText(L.SOURCELESS)
+		db.g = app.Categories.Sourceless;
+		db.description = L.SOURCELESS_DESC;
+		db._missing = true;
+		db._unsorted = true;
+		tinsert(g, db);
+		CacheFields(db, true);
+	end
+
 	-- Unsorted
 	if app.Categories.Unsorted then
 		db = app.CreateRawText(L.UNSORTED)
@@ -13614,10 +13625,23 @@ app.AddEventHandler("OnStartupDone", function() app.OnStartupDone = true end)
 app.Contribute = function(contrib)
 	app.Contributor = contrib == 1 and true or nil
 	AllTheThingsSavedVariables.Contributor = app.Contributor and 1 or 0
+	local contribModule = app.Modules.Contributor or app.EmptyTable
 	if app.Contributor then
 		app.print("Thanks for helping to contribute to ATT! There will be additional chat and report sounds to help with finding additional discrepancies in ATT data.")
+		if contribModule.Events then
+			for event,func in pairs(contribModule.Events) do
+				-- app.PrintDebug("Contribute.RegisterFuncEvent",event)
+				app:RegisterFuncEvent(event,func)
+			end
+		end
 	elseif app.IsReady then
 		app.print("Not showing ATT contribution information.")
+		if contribModule.Events then
+			for event,func in pairs(contribModule.Events) do
+				-- app.PrintDebug("Contribute.UnregisterEventClean",event)
+				app:UnregisterEventClean(event)
+			end
+		end
 	end
 end
 app.AddEventHandler("OnReady", function()

@@ -80,7 +80,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						},
 					}),
 				}),
-				achWithRep(4882, 1158),	-- The Guardians of Hyjal
+				achWithRep(4882, FACTION_GUARDIANS_OF_HYJAL),	-- The Guardians of Hyjal
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
@@ -137,7 +137,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(5016),	-- Whistling Grove
 			}),
 			n(FACTIONS, {
-				faction(1158, {	-- Guardians of Hyjal
+				faction(FACTION_GUARDIANS_OF_HYJAL, {	-- Guardians of Hyjal
 					["icon"] = "Interface\\Icons\\inv_misc_tabard_guardiansofhyjal",
 				}),
 			}),

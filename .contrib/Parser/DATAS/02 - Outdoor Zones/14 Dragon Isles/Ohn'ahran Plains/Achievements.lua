@@ -249,3 +249,22 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		}),
 	}),
 })));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+	m(DRAGON_ISLES, {
+		m(OHNAHRAN_PLAINS, {
+			n(ACHIEVEMENTS, {
+				-- Achievement Honor Our Ancestors
+				q(71167),	-- Maruukai Ancestor (spellID 390535)
+				q(71168),	-- Timberstep Outpost Ancestor (spellID 390536)
+				q(71169),	-- Horn of Drusahl Ancestor (spellID 390538)
+				q(71170),	-- Toghusuq Village Ancestor (spellID 390539)
+				q(71171),	-- Shikaar Highlands Ancestor (spellID 390544)
+				q(71172),	-- The Carving Winds Ancestor (spellID 390545)
+				q(71173),	-- Sylvan Glade Ancestor (spellID 390547)
+				q(71174),	-- Ohn'iri Springs Ancestor (spellID 390549)
+				q(71175),	-- Teerakai Ancestor (spellID 390551)
+				q(71176),	-- The Eternal Kurgans Ancestor (spellID 390553)
+			}),
+		}),
+	}),
+})));

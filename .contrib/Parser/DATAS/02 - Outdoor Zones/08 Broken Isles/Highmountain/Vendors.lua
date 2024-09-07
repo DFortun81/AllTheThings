@@ -95,7 +95,7 @@ root(ROOTS.Zones, {
 						}),
 					},
 				}),
-				faction(2018, {	-- Talon's Vengeance
+				faction(FACTION_TALONS_VENGENCE, {	-- Talon's Vengeance
 					n(115887, {	-- Trinket
 						["coord"] = { 32.4, 66.8, HIGHMOUNTAIN },
 						["g"] = pvp({

@@ -22032,3 +22032,150 @@
 229045@@@Pilgrim
 11.0.2.56421
 230215@@@Burrowing Worm
+11.0.2.56461
+214277@@@High Exarch Turalyon
+216552@@@Horde Wolfaxe
+216601@@@Stormwind Knight
+216613@@@Corpse Marker
+216635@@@Dwarven Sharpshooter
+216636@@@Druid of the Claw
+216637@@@Gilnean Scrapper
+216639@@@Master Tidesage
+216832@@@Lightforged Vindicator
+216835@@@Rift Voidsinger
+216840@@@Suramar Chronomancer
+217229@@@Zandalari Prelate
+217231@@@Arachno-Pummeler Mk. I
+217234@@@Tauren Plainswalker
+217236@@@Forsaken Warlock
+217347@@@Veteran Blood Knight
+217486@@@Auric Sunchaser
+217492@@@Shining Warframe
+217493@@@Exodar Vigilant
+217529@@@Stormwind Knight
+217552@@@Machine Speaker Mech
+217554@@@Hallowfall Lightblade
+217569@@@Danath Trollbane
+218017@@@G.E.A.R Bomber
+219879@@@Veteran Blood Knight
+219919@@@Night Elf Starcaller
+219942@@@Kirin Tor Defender
+220571@@@Hallowfall Lightblade
+220832@@@Imperial Artillerist
+222848@@@Warborn Crusher
+222851@@@Hallowfall Lightblade
+222853@@@Arathi Warlynx
+223101@@@War Wolf
+223722@@@Thrall
+227111@@@Hallowfall Airman
+227436@@@Archmage Khadgar
+227437@@@Archmage Khadgar
+230201@@@Lightforged Vindicator
+11.0.5.56487
+204354@@@Jade Cragviper
+224698@@@Plague Deviser Marileth
+224915@@@Misty
+224916@@@Craggles
+226646@@@Sha of Anger
+227257@@@Archavon the Stone Watcher
+227270@@@Brok
+227682@@@Kill Credit [DNT]
+229053@@@Area Trigger Bunny [DNT]
+229151@@@Arthas
+229174@@@Arthas
+229176@@@Arthas
+229192@@@The Lich King
+229300@@@Kill Credit [DNT]
+229301@@@Kill Credit [DNT]
+229494@@@Moira Thaurissan
+229807@@@TEST
+229871@@@Kill Credit [DNT]
+229883@@@Kill Credit [DNT]
+229884@@@Kill Credit [DNT]
+229885@@@Kill Credit [DNT]
+229886@@@Kill Credit [DNT]
+229887@@@Kill Credit [DNT]
+229888@@@Kill Credit [DNT]
+229889@@@Kill Credit [DNT]
+229931@@@Energy
+230627@@@Kill Credit [DNT]
+230628@@@Kill Credit [DNT]
+230629@@@Kill Credit [DNT]
+230630@@@Kill Credit [DNT]
+230631@@@Kill Credit [DNT]
+230632@@@Kill Credit [DNT]
+230633@@@Kill Credit [DNT]
+230862@@@Kreethun
+230870@@@Dreadstalker
+230873@@@Wild Imp
+230898@@@Kill Credit [DNT]
+230900@@@Kill Credit [DNT]
+230905@@@Kill Credit [DNT]
+230987@@@Kill Credit [DNT]
+230988@@@Kill Credit [DNT]
+230989@@@Kill Credit [DNT]
+230998@@@Kill Credit [DNT]
+230999@@@Kill Credit [DNT]
+231000@@@Kill Credit [DNT]
+231001@@@Kill Credit [DNT]
+231096@@@Kill Credit [DNT]
+231097@@@Kill Credit [DNT]
+231098@@@Kill Credit [DNT]
+231099@@@Kill Credit [DNT]
+231100@@@Kill Credit - Progress Bar [DNT]
+231374@@@Light Blue Balloon
+231375@@@Dark Blue Balloon
+231376@@@Gold Balloon
+231436@@@Stasis-Locked Obsidian Warder
+231482@@@Doomguard
+231539@@@Trader Pam
+231540@@@Scalecommander Azurathel
+231544@@@Scalecommander Cindrethresh
+231624@@@Trader Toffa
+231630@@@Trader Josef
+231634@@@Trader Fram
+231713@@@Bluedoo
+231840@@@Lil'Doomy
+231841@@@Lil'Kaz
+231902@@@Caverns of Time Portal
+232048@@@Jeremy Feasel
+232095@@@[DNT] Symbol
+232253@@@Pet Pal
+232279@@@Pet Pal
+232280@@@Pet Pal
+232579@@@Specter
+232585@@@Karazhan Syphoner
+232620@@@Kill Credit [DNT]
+232621@@@Kill Credit [DNT]
+232622@@@Kill Credit [DNT]
+232623@@@Kill Credit [DNT]
+232758@@@Kill Credit [DNT]
+232759@@@Kill Credit [DNT]
+232760@@@Kill Credit [DNT]
+232761@@@Kill Credit [DNT]
+232914@@@Kill Credit [DNT]
+232915@@@Kill Credit [DNT]
+232916@@@Kill Credit [DNT]
+232917@@@Kill Credit [DNT]
+232999@@@Kill Credit [DNT]
+233001@@@Kill Credit [DNT]
+233003@@@Kill Credit [DNT]
+233004@@@Kill Credit [DNT]
+233005@@@Kill Credit [DNT]
+233009@@@Kill Credit [DNT]
+233010@@@Kill Credit [DNT]
+233028@@@Kill Credit [DNT]
+233081@@@Moira Thaurissan
+233099@@@Moira Thaurissan
+233101@@@Moira Thaurissan
+233103@@@Moira Thaurissan
+233105@@@Moira Thaurissan
+233107@@@Moira Thaurissan
+233109@@@Moira Thaurissan
+233111@@@Moira Thaurissan
+233113@@@Moira Thaurissan
+233115@@@Moira Thaurissan
+233117@@@Moira Thaurissan
+233119@@@Moira Thaurissan
+233121@@@Moira Thaurissan
+233231@@@Xal'atath

@@ -153,7 +153,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 
 			}),
 			n(FACTIONS, {
-				faction(1271, {	-- Order of the Cloud Serpent
+				faction(FACTION_ORDER_OF_THE_CLOUD_SERPENT, {	-- Order of the Cloud Serpent
 					n(ACHIEVEMENTS, {
 						ach(19912),		-- Order of the Cloud Serpent
 					}),

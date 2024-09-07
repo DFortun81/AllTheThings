@@ -537,13 +537,13 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				q(72259, {	-- Vault Artifacts
 					["provider"] = { "n", 197095 },	-- Lillian Brightmoon
-					["maxReputation"] = { 2507, 25 },
+					["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["cost"] = { { "i", 201411, 1 } },	-- 1x Ancient Vault Artifact
 					["repeatable"] = true,
 				}),
 				q(72260, {	-- Vault Artifacts
 					["provider"] = { "n", 197095 },	-- Lillian Brightmoon
-					["maxReputation"] = { 2507, 25 },
+					["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 					["cost"] = { { "i", 201411, 5 } },	-- 5x Ancient Vault Artifact
 					["repeatable"] = true,
 				}),
@@ -569,7 +569,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
 				-- #if AFTER TWW
 				o(382621, {	-- Revival Catalyst Console	-- LFR --
-					["description"] = "The Revival Catalyst is a system that lets you convert LFR Mode Non-set items from the Vault of the Incarnates Raid into your class' LFR Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+					["description"] = "The Revival Catalyst is a system that lets you convert LFR Mode Non-set items from the Vault of the Incarnates Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
 					["modelScale"] = 4,
 					["g"] = bubbleDown({ ["bonusID"] = 451 }, {
@@ -738,7 +738,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
 				-- #if AFTER TWW
 				o(382621, {	-- Revival Catalyst Console	-- NORMAL --
-					["description"] = "The Revival Catalyst is a system that lets you convert Normal Mode Non-set items from the Vault of the Incarnates Raid into your class' LFR Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+					["description"] = "The Revival Catalyst is a system that lets you convert Normal Mode Non-set items from the Vault of the Incarnates Raid into your class' LFR Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
 					["modelScale"] = 4,
 					["g"] = bubbleDown({ ["modID"] = 3 }, {
@@ -904,7 +904,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
 				-- #if AFTER TWW
 				o(382621, {	-- Revival Catalyst Console	-- HEROIC --
-					["description"] = "The Revival Catalyst is a system that lets you convert Heroic Mode Non-set items from the Vault of the Incarnates Raid into your class' Heroic Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+					["description"] = "The Revival Catalyst is a system that lets you convert Heroic Mode Non-set items from the Vault of the Incarnates Raid into your class' Heroic Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
 					["modelScale"] = 4,
 					["g"] = bubbleDown({ ["bonusID"] = 1 }, {
@@ -1052,7 +1052,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			Difficulty(DIFFICULTY.RAID.MYTHIC).AddGroups({
 				-- #if AFTER TWW
 				o(382621, {	-- Revival Catalyst Console	-- MYTHIC --
-					["description"] = "The Revival Catalyst is a system that lets you convert Mythic Mode Non-set items from the Vault of the Incarnates Raid into your class' Mythic Transmog Set.\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
+					["description"] = "The Revival Catalyst is a system that lets you convert Mythic Mode Non-set items from the Vault of the Incarnates Raid into your class' Mythic Transmog Set.\n\nThe catalyst is in Tyrhold in Thaldraszus, Dragon Isles.\n\nMake sure to equip your item first before converting it.",
 					["coord"] = { 60.6, 53.8, THALDRASZUS },
 					["modelScale"] = 4,
 					["g"] = bubbleDown({ ["bonusID"] = 450 }, {

@@ -99,7 +99,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 			}),
 			n(FACTIONS, {
-				faction(1133, {	-- Bilgewater Cartel
+				faction(FACTION_BILGEWATER_CARTEL, {	-- Bilgewater Cartel
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.RuneclothTurnIns,
 					["races"] = HORDE_ONLY,
 				}),
-				faction(1352, {	-- Huojin Pandaren
+				faction(FACTION_HUOJIN_PANDAREN, {	-- Huojin Pandaren
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2401,7 +2401,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_5_0_4 },
 						}),
 						i(92070, {	-- Houjin Satchel
-							["minReputation"] = { 1352, REVERED },	-- Huojin Pandaren, Revered.
+							["minReputation"] = { FACTION_HUOJIN_PANDAREN, REVERED },	-- Huojin Pandaren, Revered.
 							["timeline"] = { ADDED_5_1_0 },
 						}),
 					},
@@ -2632,19 +2632,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64906, {	-- Bilgewater Cape
-							["minReputation"] = { 1133, EXALTED },	-- Bilgewater Cartel, Exalted.
+							["minReputation"] = { FACTION_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64905, {	-- Bilgewater Shroud
-							["minReputation"] = { 1133, EXALTED },	-- Bilgewater Cartel, Exalted.
+							["minReputation"] = { FACTION_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64907, {	-- Bilgewater Mantle
-							["minReputation"] = { 1133, EXALTED },	-- Bilgewater Cartel, Exalted.
+							["minReputation"] = { FACTION_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67525, {	-- Bilgewater Satchel
-							["minReputation"] = { 1133, REVERED },	-- Bilgewater Cartel, Revered.
+							["minReputation"] = { FACTION_BILGEWATER_CARTEL, REVERED },	-- Bilgewater Cartel, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
@@ -2927,7 +2927,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(48510, {	-- Kall Worthaton <Trike Dealer>
 					["coord"] = { 36.2, 86.6, ORGRIMMAR },
 					-- Available to Goblins without faction requirements.
-					["minReputation"] = { 1133, EXALTED },	-- Bilgewater Cartel, Exalted.
+					["minReputation"] = { FACTION_BILGEWATER_CARTEL, EXALTED },	-- Bilgewater Cartel, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. GOBLIN .. [[ then
 							t.minReputation = nil;
@@ -5035,7 +5035,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(66022, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 }, }, {	-- Turtlemaster Odai <Dragon Turtle Breeder>
 					["coord"] = { 69.8, 41.0, ORGRIMMAR },
 					-- Available to Huojin Pandaren without faction requirements.
-					["minReputation"] = { 1352, EXALTED },	-- Huojin Pandaren, Exalted.
+					["minReputation"] = { FACTION_HUOJIN_PANDAREN, EXALTED },	-- Huojin Pandaren, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. PANDAREN_HORDE .. [[ then
 							t.minReputation = nil;

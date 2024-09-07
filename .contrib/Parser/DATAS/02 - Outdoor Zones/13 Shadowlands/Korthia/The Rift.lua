@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 					q(64522, {	-- Stolen Korthian Supplies
 						["provider"] = { "i", 187276 },	-- Stolen Korthian Supplies
 						["isWeekly"] = true,
-						["minReputation"] = { 2472, 3 },	-- Tier 3
+						["minReputation"] = { FACTION_THE_ARCHIVISTS_CODEX, 3 },	-- Tier 3
 						["g"] = {
 							i(187551),	-- Small Korthian Supply Chest
 						},

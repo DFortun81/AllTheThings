@@ -5422,7 +5422,7 @@ i(228188),	-- Prestor's Hairpin
 i(228189),	-- Gift of Gob
 i(228191),	-- Shimmering Molten Mineral
 i(228222),	-- Handbook of Valor of Azeroth
-i(228227),	-- Aggrend's Scroll of Overwhelming Power
+i(228227),	-- Scroll of Overwhelming Power \\ Aggrend's Scroll of Overwhelming Power
 i(228238),	-- Testament of Divine Steed
 i(228242),	-- Heavy Dark Iron Ring
 i(228243),	-- Ring of Spell Power
@@ -6522,6 +6522,24 @@ i(232310),	-- Renataki's Soul Conduit
 i(232311),	-- Zulian Tigerhide Cloak
 i(232312),	-- Blood of the Lightbringer
 i(232324),	-- Whistle
+1.15.4.56493
+i(232343),	-- QAEnchant Shield - Law of Nature
+i(232344),	-- Vick's VIP Pass
+i(232357),	-- Draconic Avenger
+i(232358),	-- Empty Reliquary
+i(232373),	-- Refined Eye of Sulfuras
+i(232389),	-- Libram of Plenty
+i(232390),	-- Idol of Celestial Focus
+i(232391),	-- Idol of Feline Focus
+i(232392),	-- Totem of Relentless Thunder
+i(232409),	-- Totem of the Elements
+i(232414),	-- Dragontooth Blade
+i(232416),	-- Totem of Astral Flow
+i(232419),	-- Totem of Conductive Currents
+i(232420),	-- Libram of Wrath
+i(232421),	-- Libram of Avengement
+i(232423),	-- Idol of Nurture
+i(232424),	-- Idol of Cruelty
 2.5.1.38043
 i(20473),	-- The Arcanist's Compendium, Volume 4
 i(20762),	-- DEPRECATED: Crystallized Essence
@@ -19510,6 +19528,23 @@ i(226462),	-- Greater Inscription of Jagged Stone
 i(226463),	-- Greater Inscription of Charged Lodestone
 4.4.0.56014
 i(224002),	-- Swoopy
+4.4.1.56464
+i(209528),	-- Secondhand Faceguard
+i(209529),	-- Secondhand Crown
+i(209530),	-- Secondhand Crown
+i(209531),	-- Secondhand Headguard
+i(209532),	-- Secondhand Cowl
+i(209533),	-- Secondhand Headguard
+i(231997),	-- Commendation of the World Tree
+i(231998),	-- Rock-Hard Biscuit
+i(232012),	-- Coren's Chilled Chromium Coaster
+i(232013),	-- Mithril Stopwatch
+i(232014),	-- Petrified Pickled Egg
+i(232015),	-- Brawler's Trophy
+i(232016),	-- Bubblier Brightbrew Charm
+i(232017),	-- Bitterer Balebrew Charm
+i(232030),	-- Direbrew's Bloodied Shanker
+i(232031),	-- Tremendous Tankard O' Terror
 7.3.0.24473
 i(71079),	-- Shimmering Lotus \\ mering Lotus
 i(72071),	-- Stolen Training Supplies \\ en Training Supplies
@@ -23018,7 +23053,6 @@ i(118392),	-- Burnt Clump \\ t Clump
 i(118417),	-- Crate of Surplus Materials \\ e of Surplus Materials
 i(118418),	-- Mug of Rousing Coffee \\ of Rousing Coffee
 i(118424),	-- Blind Palefish \\ d Palefish
-i(118426),	-- Scroll of Invoke Yu'lon, the Jade Serpent \\ ll of Invoke Yu'lon, the Jade Serpent
 i(118428),	-- Legion Chili \\ on Chili
 i(118468),	-- Fresh Bread \\ h Bread
 i(118469),	-- Black Claw of Sethe \\ k Claw of Sethe
@@ -30766,5 +30800,7 @@ i(210768),	-- Viridescent Bouquet of Aspect's Dreaming Crests \\ Bouquet of Aspe
 i(210923),	-- Clutch of Wyrm's Dreaming Crests
 10.2.6.53840
 i(220205),	-- Satchel of Drake's Dreaming Crests
+11.0.0.54311
+i(219934),	-- Spark of War
 11.0.2.55399
 i(228580),	-- Brute Force Idol

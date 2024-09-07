@@ -3754,6 +3754,11 @@
 4945@@@Guild Reputation: Honored
 4946@@@Guild Reputation: Revered
 5492@@@Guild Reputation: Exalted
+4.4.1.56464
+40968@@@Rival: Season 9
+40969@@@Gladiator: Season 9
+40970@@@Duelist: Season 9
+40971@@@Challenger: Season 9
 5.0.3.15882
 110@@@Lich King 5-player boss defeated the most
 131@@@Journeyman Medic
@@ -15338,3 +15343,38 @@
 40907@@@We Rise Anew
 11.0.2.56313
 40974@@@[DNT] <Hidden> Mythic+ Rating > 0 (The War Within, any season)
+11.0.5.56487
+40107@@@Harbinger of the Weathered
+40115@@@Harbinger of the Carved
+40118@@@Harbinger of the Runed
+40235@@@Forged Marshal: The War Within Season 1
+40661@@@Zoomies!
+40870@@@Azeroth's Greatest Detective
+40871@@@Assistant to the Assistant Guest Relations Manager
+40872@@@I Saved the Party and All I Got Was This Lousy Hat
+40873@@@Crate Insurance Agent
+40886@@@<Hidden> Is Dracthyr For Soar Wingman
+40910@@@Successfully Stress Test CN Realms
+40939@@@Harbinger of the Gilded
+40967@@@Ratts' Revenge
+40976@@@A Cool Twenty Years
+40977@@@Codex Editor: Ahn'Qiraj
+40979@@@No Crate Left Behind
+40980@@@Family Battler of Khaz Algar
+40984@@@Big Fan
+40985@@@I Have That One!
+40986@@@Mount Master
+40987@@@Fashion Critic
+40988@@@Photo Op!
+40989@@@Pet Mischief
+40990@@@Balloonist
+40991@@@Frequent Flyer
+40992@@@Peanut Gallery
+40993@@@Avid Listener
+40994@@@An Original
+40995@@@The Originals
+40996@@@A Gatecrasher
+40997@@@The Gatecrashers
+40998@@@A Timewalking Step Back to a Classic Dungeon Time
+40999@@@You're in Your Blackrock Depths
+41000@@@A Timewalking Journey Back to a Classic Dungeon Time

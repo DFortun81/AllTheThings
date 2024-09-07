@@ -1425,3 +1425,32 @@ root(ROOTS.Zones, m(EXILES_REACH, bubbleDownSelf({
 		}),
 	},
 })));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_1 } }, {
+	m(EXILES_REACH, {
+		n(QUESTS, {
+			q(58418),	-- Triggers shortly after login. Possibly some kind of indicator for the account having done it at least once per faction?
+			q(54927),	-- Triggers after the cinematic. You can't move until this quest triggers
+			q(54937),	-- Triggers after the cinematic. You can't move until this quest triggers
+			q(59699),	-- Defeat Private Cole(A) or Grunt Throg(H) during "Stand Your Ground". Coincides with hitting level 2
+			q(58882),	-- Triggered after looting white-quality chestpiece. loot controller so they don't drop twice
+			q(58883),	-- Triggered after looting white-quality boots. loot controller so they don't drop twice
+			q(54928),	-- Triggered after getting 3 holy power and striking Warlord Grimaxe with the first major combat ability. Didn't trigger at all on an alliance priest
+			q(58336),	-- Triggered at the same time as 54928. Possibly dialog-related?
+			q(55607),	-- Triggered while killing quilboars in Quilboar Briarpatch on an alliance priest. Did not see it trigger as horde
+			q(55611),	-- triggered when completing "Message to Base" in Exile's Reach on alliance priest
+			q(59610),	-- Triggered after killing Torgok. Loot controller for "Torgok's Reagent Pouch"
+			q(59143),	-- Triggered after looting the Runetusk Necklace from ogres in Darkmaul Citadel
+			q(59139),	-- Triggered after looting the Spider-Eye Ring from spiders in Hrun's Barrow / Dented Legplates
+			q(60167),	-- Triggered right after Warlord Grimaxe tells Shuja to heal during the Tunk encounter
+			q(62547),	-- Triggered after speaking to trainer for What's Your Specialty? quest [Horde]
+			q(62548),	-- Triggered after speaking to trainer for What's Your Specialty? quest [Alliance]
+			q(62550),	-- Triggered after choosing a specialization for What's Your Specialty? quest [Alliance]
+			q(62551),	-- Triggered after choosing a specialization for What's Your Specialty? quest [Horde]
+			q(62655),	-- Triggers after you activate your specialization (both NPE and non-NPE characters)
+			q(62802),	-- Triggered after going to Stormwind for An End to Beginnings
+			q(62803),	-- Triggered after going to Orgrimmar for An End to Beginnings
+			q(63012),	-- Triggered after talking to Jaina at docks for The Nation of Kul Tiras
+			q(62912),	-- Triggered when flying from Exile's Reach (as Alliance if it matters)
+		}),
+	}),
+})));

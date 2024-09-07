@@ -16,7 +16,7 @@ root(ROOTS.Secrets, n(FAITHFUL_DOG, {
 		q(30526, {	-- Step 1: Lost and Lonely
 			["provider"] = { "n", 59533 },	-- Lost Dog
 			["coord"] = { 42.4, 50.2, VALLEY_OF_THE_FOUR_WINDS },
-			["minReputation"] = { 1272, REVERED+600 },	-- The Tillers, 12600 Rep
+			["minReputation"] = { FACTION_THE_TILLERS, REVERED+600 },	-- The Tillers, 12600 Rep
 			["timeline"] = { ADDED_5_0_4 },
 		}),
 		q(46952, {	-- Step 2: Show the Pebble to Dog

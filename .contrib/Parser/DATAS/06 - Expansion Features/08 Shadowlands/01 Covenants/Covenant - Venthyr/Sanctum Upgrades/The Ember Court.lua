@@ -500,60 +500,60 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							ach(14725),		-- We Happy Few
 						}),
 						n(FACTIONS, {
-							faction(2445, {	-- The Ember court
+							faction(FACTION_THE_EMBER_COURT, {	-- The Ember court
 								["crs"] = { 165399 },	-- Lord Garridan
 								["maps"] = { REVENDRETH },
 								["g"] = {
 									-- Tier 1
-									faction(2454, {	-- Choofa
+									faction(FACTION_EMBER_COURT_CHOOFA, {	-- Choofa
 										["npcID"] = 168449,
 									}),
-									faction(2455, {	-- Cryptkeeper Kassir
+									faction(FACTION_EMBER_COURT_KASSIR, {	-- Cryptkeeper Kassir
 										["npcID"] = 168450,
 									}),
-									faction(2461, {	-- Plague Deviser Marileth
+									faction(FACTION_EMBER_COURT_MARILETH, {	-- Plague Deviser Marileth
 										["npcID"] = 171852,
 									}),
-									faction(2459, {	-- Sika
+									faction(FACTION_EMBER_COURT_SIKA, {	-- Sika
 										["npcID"] = 171854,
 									}),
 									-- Tier 2
-									faction(2456, {	-- Droman Aliothe
+									faction(FACTION_EMBER_COURT_ALIOTHE, {	-- Droman Aliothe
 										["npcID"] = 171847,
 									}),
-									faction(2457, {	-- Grandmaster Vole
+									faction(FACTION_EMBER_COURT_VOLE, {	-- Grandmaster Vole
 										["npcID"] = 171848,
 									}),
-									faction(2458, {	-- Kleia and Pelagos
+									faction(FACTION_EMBER_COURT_KLEIA_PELAGOS, {	-- Kleia and Pelagos
 										["npcID"] = 171850,
 									}),
-									faction(2460, {	-- Stonehead
+									faction(FACTION_EMBER_COURT_STONEHEAD, {	-- Stonehead
 										["npcID"] = 171856,
 									}),
 									-- Tier 3
-									faction(2450, {	-- Alexandros Mograine
+									faction(FACTION_EMBER_COURT_MOGRAINE, {	-- Alexandros Mograine
 										["npcID"] = 171833,
 									}),
-									faction(2451, {	-- Hunt-Captain Korayn
+									faction(FACTION_EMBER_COURT_KORAYN, {	-- Hunt-Captain Korayn
 										["npcID"] = 171836,
 									}),
-									faction(2452, {	-- Polemarch Adrestes
+									faction(FACTION_EMBER_COURT_ADRESTES, {	-- Polemarch Adrestes
 										["npcID"] = 168447,
 									}),
-									faction(2453, {	-- Rendle and Cudgelface
+									faction(FACTION_EMBER_COURT_RENDLE_CUDGELFACE, {	-- Rendle and Cudgelface
 										["npcID"] = 171839,
 									}),
 									-- Tier 4
-									faction(2446, {	-- Baroness Vashj
+									faction(FACTION_EMBER_COURT_VASHJ, {	-- Baroness Vashj
 										["npcID"] = 168444,
 									}),
-									faction(2447, {	-- Lady Moonberry
+									faction(FACTION_EMBER_COURT_MOONBERRY, {	-- Lady Moonberry
 										["npcID"] = 171830,
 									}),
-									faction(2448, {	-- Mikanikos
+									faction(FACTION_EMBER_COURT_MIKANIKOS, {	-- Mikanikos
 										["npcID"] = 171831,
 									}),
-									faction(2449, {	-- The Countess
+									faction(FACTION_EMBER_COURT_COUNTESS, {	-- The Countess
 										["npcID"] = 165269,
 									}),
 								},
@@ -953,7 +953,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								}),
 								q(61899, {	-- Anima Tastings
 								--	TODO: might also be tied to purchase of Staff: Stage Crew, which i purchased right after scenario
-									["minReputation"] = { 2445, HONORED },
+									["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },
 									["provider"] = { "n", 165494 },	-- Hips
 									["coord"] = { 30.7, 41.8, REVENDRETH },
 									["g"] = {
@@ -967,7 +967,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61900, {	-- Comfy Chairs
-									["minReputation"] = { 2445, REVERED },
+									["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
 									["provider"] = { "n", 165493 },	-- Boot the Beaut
 									["coord"] = { 29.8, 45.4, REVENDRETH },
 									["g"] = {
@@ -1059,7 +1059,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61403, {	-- Ember Court: Maldraxxus Army
-									["minReputation"] = { 2445, REVERED },
+									["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
 									["provider"] = { "n", 172964 },	-- Emeni
 									["coord"] = { 54.2, 69.3, MALDRAXXUS },
 									["g"] = {
@@ -1069,7 +1069,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61399, {	-- Ember Court: Mortal Reminders
-									["minReputation"] = { 2445, FRIENDLY },
+									["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },
 									["provider"] = { "n", 156791 },	-- Keeper Ta'saran
 									["coord"] = { 59.2, 75.1, ORIBOS },
 									["g"] = {
@@ -1097,7 +1097,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61400, {	-- Ember Court: Mystery Mirrors
-									["minReputation"] = { 2445, REVERED },
+									["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
 									["provider"] = { "n", 172986 },	-- Simone
 									["coord"] = { 24.6, 50.2, REVENDRETH },
 									["g"] = {
@@ -1126,7 +1126,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61398, {	-- Ember Court: Traditional
-									["minReputation"] = { 2445, FRIENDLY },
+									["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },
 									["provider"] = { "n", 156822 },	-- Mistress Mihaela
 									["coord"] = { 61.3, 63.8, REVENDRETH },
 									["g"] = {
@@ -1160,7 +1160,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61892, {	-- Ember Court Ambassador 1 - Revendreth
-									["minReputation"] = { 2445, FRIENDLY },
+									["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },
 									["provider"] = { "n", 165453 },	-- Lady Ilinca <Court Concierge>
 									["coord"] = { 28.5, 41.1, REVENDRETH },
 									["g"] = {
@@ -1170,7 +1170,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61893, {	-- Ember Court Ambassador 2 - Ardenweald
-									["minReputation"] = { 2445, HONORED },
+									["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },
 									["sourceQuests"] = { 61892 },	-- Ember Court Ambassador 1 - Revendreth
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
 									["coord"] = { 28.5, 41.1, REVENDRETH },
@@ -1181,7 +1181,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61894, {	-- Ember Court Ambassador 3 - Maldraxxus
-									["minReputation"] = { 2445, REVERED },
+									["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
 									["sourceQuests"] = { 61893 },	-- Ember Court Ambassador 2 - Ardenweald
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
 									["coord"] = { 28.5, 41.1, REVENDRETH },
@@ -1192,7 +1192,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61895, {	-- Ember Court Ambassador 4 - Bastion
-									["minReputation"] = { 2445, EXALTED },
+									["minReputation"] = { FACTION_THE_EMBER_COURT, EXALTED },
 									["sourceQuests"] = { 61894 },	-- Ember Court Ambassador 3 - Maldraxxus
 									["provider"] = { "n", 165453 },	-- Lady Ilinca
 									["coord"] = { 28.5, 41.1, REVENDRETH },
@@ -1218,7 +1218,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 30.9, 57.6, REVENDRETH },
 								}),
 								q(63696, {	-- Grandmaster Vole's Best Friend
-									-- ["minReputation"] = { 2457,  }, -- TODO, Best Friend w/ Grandmaster Vole?
+									-- ["minReputation"] = { FACTION_EMBER_COURT_VOLE,  }, -- TODO, Best Friend w/ Grandmaster Vole?
 									["provider"] = { "n", 163019 },	-- Grandmaster Vole
 									["coord"] = { 52.8, 49.2, MALDRAXXUS },
 								}),
@@ -1228,7 +1228,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 70.0, 56.2, REVENDRETH },
 								}),
 								q(63697, {	-- Kleia and Pelagos's Best Friend
-									-- ["minReputation"] = { 2457,  }, -- TODO, Best Friend w/ Kleia and Pelagos?
+									-- ["minReputation"] = { FACTION_EMBER_COURT_KLEIA_PELAGOS,  }, -- TODO, Best Friend w/ Kleia and Pelagos?
 									["provider"] = { "n", 174916 },	-- Kleia
 									["coord"] = { 55.8, 86.4, BASTION },
 								}),
@@ -1535,7 +1535,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61092, {	-- RSVP: Grandmaster Vole
-									["minReputation"] = { 2445, FRIENDLY },
+									["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },
 									["description"] = "|cFF1eff00Invitation: Grandmaster Vole|r can be purchased from Lady Ilinca above Sinfall.",
 									["provider"] = { "n", 163019 },	-- Grandmaster Vole
 									["isDaily"] = true,	-- according to the API!
@@ -1587,7 +1587,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61139, {	-- RSVP: Choofa
-									["minReputation"] = { 2445, HONORED },	-- Ember Court - Honored
+									["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },	-- Ember Court - Honored
 									["provider"] = { "n", 160814 },	-- Choofa
 									["isDaily"] = true,
 									["coord"] = { 63.6, 36.6, ARDENWEALD },
@@ -1605,7 +1605,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["coord"] = { 52.6, 82.5, BASTION },
 								}),
 								q(61898, {	-- Small Bites
-									["minReputation"] = { 2445, FRIENDLY },
+									["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },
 									["provider"] = { "n", 165490 },	-- Picky Stefan
 									["coord"] = { 28.9, 44.2, REVENDRETH },
 									["g"] = {
@@ -1664,7 +1664,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									},
 								}),
 								q(61896, {	-- Undercover Security
-									["minReputation"] = { 2445, REVERED },
+									["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
 									["provider"] = { "n", 165496 },	-- Watchmaster Boromod
 									["coord"] = { 32.0, 41.6, REVENDRETH },
 									["g"] = {
@@ -2107,7 +2107,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						}),
 						n(VENDORS, {
 							n(174711, {	-- Freeman
-								["minReputation"] = { 2445, REVERED },
+								["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },
 								["coord"] = { 32.0, 41.2, REVENDRETH },
 								["g"] = {
 									i(182371, {	-- Claws of the Court's Sentinels
@@ -2172,11 +2172,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["cost"] = { { "c", 1820, 15 } },
 									}),
 									i(183956, {	-- Invitation: Choofa
-										["minReputation"] = { 2445, HONORED },
+										["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },
 										["questID"] = 62656,
 									}),
 									i(183957, {	-- Invitation: Grandmaster Vole
-										["minReputation"] = { 2445, FRIENDLY },
+										["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },
 										["questID"] = 62657,
 									}),
 									i(183876),	-- Quill of Correspondence (TOY!)
@@ -2191,147 +2191,147 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								["g"] = {
 									i(181055, {	-- Court Death Shroud Belt
 										["cost"] = { { "c", ANIMA, 750 } },
-										["minReputation"] = { 2445, HONORED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },	-- The Ember Court
 									}),
 									i(181056, {	-- Court Death Shroud Bindings
 										["cost"] = { { "c", ANIMA, 750 } },
-										["minReputation"] = { 2445, HONORED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },	-- The Ember Court
 									}),
 									i(181050, {	-- Court Death Shroud Boots
 										["cost"] = { { "c", ANIMA, 1500 } },
-										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },	-- The Ember Court
 									}),
 									i(181053, {	-- Court Death Shroud Breeches
 										["cost"] = { { "c", ANIMA, 1500 } },
-										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },	-- The Ember Court
 									}),
 									i(181057, {	-- Court Death Shroud Cloak
 										["cost"] = { { "c", ANIMA, 750 } },
-										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, EXALTED },	-- The Ember Court
 									}),
 									i(181051, {	-- Court Death Shroud Gloves
 										["cost"] = { { "c", ANIMA, 1500 } },
-										["minReputation"] = { 2445, REVERED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },	-- The Ember Court
 									}),
 									i(181052, {	-- Court Death Shroud Hood
 										["cost"] = { { "c", ANIMA, 2000 } },
-										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, EXALTED },	-- The Ember Court
 									}),
 									i(181054, {	-- Court Death Shroud Spaulders
 										["cost"] = { { "c", ANIMA, 2000 } },
-										["minReputation"] = { 2445, REVERED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },	-- The Ember Court
 									}),
 									i(181049, {	-- Court Death Shroud Vest
 										["cost"] = { { "c", ANIMA, 2000 } },
-										["minReputation"] = { 2445, HONORED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },	-- The Ember Court
 									}),
 									i(181014, {	-- Dread Sentinel's Court Chestplate
 										["cost"] = { { "c", ANIMA, 2000 } },
-										["minReputation"] = { 2445, HONORED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },	-- The Ember Court
 									}),
 									i(181021, {	-- Dread Sentinel's Court Cloak
 										["cost"] = { { "c", ANIMA, 750 } },
-										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, EXALTED },	-- The Ember Court
 									}),
 									i(181019, {	-- Dread Sentinel's Court Girdle
 										["cost"] = { { "c", ANIMA, 750 } },
-										["minReputation"] = { 2445, HONORED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },	-- The Ember Court
 									}),
 									i(181015, {	-- Dread Sentinel's Court Greatboots
 										["cost"] = { { "c", ANIMA, 1500 } },
-										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },	-- The Ember Court
 									}),
 									i(181016, {	-- Dread Sentinel's Court Grips
 										["cost"] = { { "c", ANIMA, 1500 } },
-										["minReputation"] = { 2445, REVERED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },	-- The Ember Court
 									}),
 									i(181013, {	-- Dread Sentinel's Court Headgear
 										["cost"] = { { "c", ANIMA, 2000 } },
-										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, EXALTED },	-- The Ember Court
 									}),
 									i(181017, {	-- Dread Sentinel's Court Legguards
 										["cost"] = { { "c", ANIMA, 1500 } },
-										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },	-- The Ember Court
 									}),
 									i(181018, {	-- Dread Sentinel's Court Spaulders
 										["cost"] = { { "c", ANIMA, 2000 } },
-										["minReputation"] = { 2445, REVERED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },	-- The Ember Court
 									}),
 									i(181020, {	-- Dread Sentinel's Court Vambraces
 										["cost"] = { { "c", ANIMA, 750 } },
-										["minReputation"] = { 2445, HONORED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },	-- The Ember Court
 									}),
 									i(181082, {	-- Fearstalker's Court Belt
 										["cost"] = { { "c", ANIMA, 750 } },
-										["minReputation"] = { 2445, HONORED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },	-- The Ember Court
 									}),
 									i(181083, {	-- Fearstalker's Court Bracers
 										["cost"] = { { "c", ANIMA, 750 } },
-										["minReputation"] = { 2445, HONORED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },	-- The Ember Court
 									}),
 									i(181084, {	-- Fearstalker's Court Cloak
 										["cost"] = { { "c", ANIMA, 750 } },
-										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, EXALTED },	-- The Ember Court
 									}),
 									i(181078, {	-- Fearstalker's Court Gauntlets
 										["cost"] = { { "c", ANIMA, 1500 } },
-										["minReputation"] = { 2445, REVERED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },	-- The Ember Court
 									}),
 									i(181076, {	-- Fearstalker's Court Hauberk
 										["cost"] = { { "c", ANIMA, 2000 } },
-										["minReputation"] = { 2445, HONORED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },	-- The Ember Court
 									}),
 									i(181079, {	-- Fearstalker's Court Helm
 										["cost"] = { { "c", ANIMA, 2000 } },
-										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, EXALTED },	-- The Ember Court
 									}),
 									i(181080, {	-- Fearstalker's Court Leggings
 										["cost"] = { { "c", ANIMA, 1500 } },
-										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },	-- The Ember Court
 									}),
 									i(181081, {	-- Fearstalker's Court Monnion
 										["cost"] = { { "c", ANIMA, 2000 } },
-										["minReputation"] = { 2445, REVERED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },	-- The Ember Court
 									}),
 									i(181077, {	-- Fearstalker's Court Sabatons
 										["cost"] = { { "c", ANIMA, 1500 } },
-										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },	-- The Ember Court
 									}),
 									i(181120, {	-- Soulbreaker's Court Drape
 										["cost"] = { { "c", ANIMA, 750 } },
-										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, EXALTED },	-- The Ember Court
 									}),
 									i(181114, {	-- Soulbreaker's Court Handwraps
 										["cost"] = { { "c", ANIMA, 1500 } },
-										["minReputation"] = { 2445, REVERED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },	-- The Ember Court
 									}),
 									i(181115, {	-- Soulbreaker's Court Hood
 										["cost"] = { { "c", ANIMA, 2000 } },
-										["minReputation"] = { 2445, EXALTED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, EXALTED },	-- The Ember Court
 									}),
 									i(181116, {	-- Soulbreaker's Court Leggings
 										["cost"] = { { "c", ANIMA, 1500 } },
-										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },	-- The Ember Court
 									}),
 									i(181117, {	-- Soulbreaker's Court Mantle
 										["cost"] = { { "c", ANIMA, 2000 } },
-										["minReputation"] = { 2445, REVERED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, REVERED },	-- The Ember Court
 									}),
 									i(181118, {	-- Soulbreaker's Court Sash
 										["cost"] = { { "c", ANIMA, 750 } },
-										["minReputation"] = { 2445, HONORED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },	-- The Ember Court
 									}),
 									i(181113, {	-- Soulbreaker's Court Slippers
 										["cost"] = { { "c", ANIMA, 1500 } },
-										["minReputation"] = { 2445, FRIENDLY },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, FRIENDLY },	-- The Ember Court
 									}),
 									i(181112, {	-- Soulbreaker's Court Vestments
 										["cost"] = { { "c", ANIMA, 2000 } },
-										["minReputation"] = { 2445, HONORED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },	-- The Ember Court
 									}),
 									i(181119, {	-- Soulbreaker's Court Wraps
 										["cost"] = { { "c", ANIMA, 750 } },
-										["minReputation"] = { 2445, HONORED },	-- The Ember Court
+										["minReputation"] = { FACTION_THE_EMBER_COURT, HONORED },	-- The Ember Court
 									}),
 								},
 							}),

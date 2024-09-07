@@ -29,7 +29,7 @@ end
 
 -- Conversion Methods for specific formats for a given Information Type.
 local function GetCoordString(x, y)
-	return GetNumberWithZeros(math_floor(x * 10) * 0.1, 1) .. ", " .. GetNumberWithZeros(math_floor(y * 10) * 0.1, 1);
+	return GetNumberWithZeros(app.round(x, 1), 1) .. ", " .. GetNumberWithZeros(app.round(y, 1), 1);
 end
 local function GetPatchString(patch)
 	patch = tonumber(patch)

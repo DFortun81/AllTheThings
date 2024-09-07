@@ -41,3 +41,4 @@ obj/
 *.bak
 __pycache__
 .venv
+.contrib/.source/Item DB Compiler/bin/

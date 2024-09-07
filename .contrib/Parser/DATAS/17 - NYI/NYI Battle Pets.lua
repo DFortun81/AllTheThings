@@ -7,32 +7,32 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 		n(P1xx, {
 			-- Without SpeciesID Attached
 			i(21168, {	-- Baby Shark (PET!)
-			["displayID"] = 21168,
+				["displayID"] = 21168,
 			}),
 			i(11903, {	-- Cat Carrier (Corrupted Kitten) (PET!)
-			["displayID"] = 9209,
+				["displayID"] = 9209,
 			}),
 			i(18963, {	-- Turtle Egg (Albino)
-			-- ["displayID"] = ,
+				-- ["displayID"] = ,
 			}),
 			i(18964, {	-- Loggerhead Snapjaw / Turtle Egg (Loggerhead) (PET!)
-			["displayID"] = 14657,
+				["displayID"] = 14657,
 			}),
 			i(18965, {	-- Turtle Egg (Hawksbill)
-			-- ["displayID"] = ,
+				-- ["displayID"] = ,
 			}),
 			i(18966, {	-- Turtle Egg (Leatherback)
-			-- ["displayID"] = ,
+				-- ["displayID"] = ,
 			}),
 			i(18967, {	-- Turtle Egg (Olive)
-			-- ["displayID"] = ,
+				-- ["displayID"] = ,
 			}),
 
 			i(13342, {	-- Pet Fish (PET!)
-			-- ["displayID"] = ,
+				-- ["displayID"] = ,
 			}),
 			i(13343, {	-- Pet Stone (PET!)
-			-- ["displayID"] = ,
+				-- ["displayID"] = ,
 			}),
 
 			-- #if BEFORE 7.0.3
@@ -1230,9 +1230,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(193614, {	-- Groundshaker (PET!)
 				["displayID"] = 106649,
 			}),
-			i(191946, {	-- Mister Muskoxeles (PET!)
-				["displayID"] = 106681,
-			}),
 			i(193380, {	-- Pink Salamanther (PET!)
 				["displayID"] = 106629,
 			}),
@@ -1395,9 +1392,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(205148, {	-- Soot-Stained Shalewing (PET!)
 				["displayID"] = 112186,
 			}),
-			i(205157, {	-- Undermoth (PET!)
-				["displayID"] = 112196,
-			}),
 			i(205037, {	-- Void Lurker (PET!)
 				["displayID"] = 112164,
 			}),
@@ -1407,6 +1401,9 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			}),
 			i(205153, {	-- Mikah (PET!)
 				["displayID"] = 112190,
+			}),
+			i(205157, {	-- Undermoth (PET!)
+				["displayID"] = 112196,
 			}),
 		})),
 
@@ -1434,8 +1431,109 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 		-- 10.2.7
 		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
 			-- With SpeciesID Attached
+			i(223498, {	-- Charismatic Courier (PET!)
+				["displayID"] = 120173,
+			}),
 			i(223499, {	-- Lil' Manny (PET!)
 				["displayID"] = 119700,
+			}),
+		})),
+	}),
+	expansion(EXPANSION.TWW, {
+		-- 11.0.0
+		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+			-- Only SpeciesID
+			pet(4478, {	-- Caustic Oozeling (PET!)
+				["displayID"] = 116616,
+			}),
+			pet(4528, {	-- Cobalt Mosswool (PET!)
+				["displayID"] = 119068,
+			}),
+			pet(4583, {	-- Green Stagshell (PET!)
+				["displayID"] = 119768,
+			}),
+			pet(4502, {	-- Kaheti Bull Worm (PET!)
+				["displayID"] = 119693,
+			}),
+			pet(4493, {	-- Redthroat Skipling (PET!)
+				["displayID"] = 114830,
+			}),
+			pet(4509, {	-- Sporbit [Blue] (PET!)
+				["displayID"] = 115403,
+			}),
+			pet(4505, {	-- Sporbit [Orange] (PET!)
+				["displayID"] = 115406,
+			}),
+			pet(4507, {	-- Sporbit [Purple] (PET!)
+				["displayID"] = 115405,
+			}),
+			pet(4504, {	-- Sporbit [Red] (PET!)
+				["displayID"] = 115408,
+			}),
+			pet(4503, {	-- Sporbit [Teal] (PET!)
+				["displayID"] = 115409,
+			}),
+			pet(4508, {	-- Sporbit [Yellow] (PET!)
+				["displayID"] = 115404,
+			}),
+			pet(4584, {	-- Tan Stagshell (PET!)
+				["displayID"] = 119769,
+			}),
+			-- With SpeciesID Attached
+			i(222969, {	-- Anub'Rekyute (PET!)
+				["displayID"] = 114049,
+			}),
+			i(221851, {	-- Argos (PET!)
+				["displayID"] = 118863,
+			}),
+			i(221764, {	-- Burntram (PET!)
+				["displayID"] = 103840,
+			}),
+			i(222979, {	-- Clay Stonecharger (PET!)
+				["displayID"] = 120663,
+			}),
+			i(221762, {	-- Frenzied Bloodtick (PET!)
+				["displayID"] = 82290,
+			}),
+			i(221195, {	-- Illskitter (PET!)
+				["displayID"] = 116507,
+			}),
+			i(221492, {	-- Moss Skipper (PET!)
+				["displayID"] = 114832,
+			}),
+			i(221759, {	-- Sceaduthax (PET!)
+				["displayID"] = 114510,
+			}),
+			i(221495, {	-- Waddles (PET!)
+				["displayID"] = 114829,
+			}),
+			i(222967, {	-- Webbers (PET!)
+				["displayID"] = 114051,
+			}),
+			-- Without SpeciesID Attached
+			i(221493, {	-- Admiral (PET!)
+				["displayID"] = 114830,
+			}),
+			i(223803, {	-- Blue Stagshell (PET!)
+				["displayID"] = 119767,
+			}),
+			i(221022, {	-- Cowboy Bee[DNT] (PET!)
+				["displayID"] = 119745,
+			}),
+			i(223626, {	-- Embersting (PET!)
+				["displayID"] = 119715,
+			}),
+			i(228097, {	-- Pinkskin Burrower (PET!)
+				["displayID"] = 119707,
+			}),
+			i(228098, {	-- Troglofrog (PET!)
+				["displayID"] = 103831,
+			}),
+			i(222975, {	-- Umbral Amalgam [DNT] (PET!)
+				["displayID"] = 118749,
+			}),
+			i(228096, {	-- Vibrant Firefly (PET!)
+				["displayID"] = 119705,
 			}),
 		})),
 

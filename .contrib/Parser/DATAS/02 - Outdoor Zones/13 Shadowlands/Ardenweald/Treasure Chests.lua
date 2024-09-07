@@ -403,9 +403,20 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, {
-	--	Treasures of Ardenweald achievement
-	q(61126),	-- Cache of the Moon - turning in the Twinklestar Gardening Tools
-	q(61170),	-- Harmonic Chest - unlock trigger
-});
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	m(SHADOWLANDS, {
+		m(ARDENWEALD, {
+			n(TREASURES, {
+				--	Treasures of Ardenweald achievement
+				q(61126),	-- Cache of the Moon - turning in the Twinklestar Gardening Tools
+				q(61170),	-- Harmonic Chest - unlock trigger
+				--
+				q(60810),	-- \
+				q(60811),	--  \
+				q(60812),	--   running over Lunarlight Buds (somewhere in/near Glitterfall Basin) to light up Dim Lunarlight Pod and turn it into Lunarlight Pod (questID #60792)
+				q(60813),	--  /
+				q(60814),	-- /
+			}),
+		}),
+	}),
+})));

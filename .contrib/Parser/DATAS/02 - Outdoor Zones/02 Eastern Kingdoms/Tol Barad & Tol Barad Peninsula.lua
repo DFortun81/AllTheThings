@@ -7,11 +7,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 		["icon"] = 409548,	-- achievement_zone_tolbarad
 		["groups"] = {
 			n(ACHIEVEMENTS, {	-- non-pvp map
-				achWithRep(5375, 1177, {	-- Baradin's Wardens
+				achWithRep(5375, FACTION_BARADINS_WARDENS, {	-- Baradin's Wardens
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(4874),	-- Breaking Out of Tol Barad
-				achWithRep(5376, 1178, {	-- Hellscream's Reach
+				achWithRep(5376, FACTION_HELLSCREAMS_REACH, {	-- Hellscream's Reach
 					["races"] = HORDE_ONLY,
 				}),
 				a(ach(5718, {	-- Just Another Day in Tol Barad (A)
@@ -27,10 +27,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 				}},
 			})),
 			n(FACTIONS, {
-				faction(1177, {	-- Baradin's Wardens
+				faction(FACTION_BARADINS_WARDENS, {	-- Baradin's Wardens
 					["races"] = ALLIANCE_ONLY,
 				}),
-				faction(1178, {	-- Hellscream's Reach
+				faction(FACTION_HELLSCREAMS_REACH, {	-- Hellscream's Reach
 					["races"] = HORDE_ONLY,
 				}),
 			}),

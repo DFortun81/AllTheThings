@@ -278,7 +278,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(85648, {	-- Delver's Call: Earthcrawl Mines
 					["provider"] = { "o", 455716 },	-- DELVER'S CALL
-					["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
+					["coords"] = {
+						{ 55.3, 55.9, ISLE_OF_DORN },
+						{ 44.7, 12.0, EARTHCRAWL_MINES },
+					},
 				}),
 			}),
 			n(TREASURES, {
@@ -419,6 +422,20 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 			n(TREASURES, {
+				o(456581, {	-- Egg Clutch
+					["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 12 },
+					["coord"] = { 58.1, 31.2, MYCOMANCER_CAVERN },
+					["g"] = {
+						i(225339),	-- Chicken Eggs (QS!/QI!)
+					},
+				}),
+				o(456583, {	-- Lost Shoe
+					["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 12 },
+					["coord"] = { 38.8, 21.7, MYCOMANCER_CAVERN },
+					["g"] = {
+						i(225336),	-- A Lost Shoe (QS!/QI!)
+					},
+				}),
 				o(455497, {	-- Sturdy Chest
 					["coord"] = { 63.3, 45.3, MYCOMANCER_CAVERN },
 					["questID"] = 83691,
@@ -471,6 +488,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				q(83755, {	-- Delves: Nightfall Sanctum
 					["provider"] = { "n", 227523 },	-- Brann Bronzebeard
 					["coord"] = { 43.5, 56.3, HALLOWFALL },
+				}),
+				q(85664, {	-- Delver's Call: Nightfall Sanctum
+					["provider"] = { "o", 487847 },	-- DELVER'S CALL: Nightfall Sanctum
+					["coord"] = { 72.6, 27.5, NIGHTFALL_SANCTUM },
 				}),
 			}),
 			n(TREASURES, {
@@ -553,7 +574,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(83771, {	-- Delver's Call: Tak-Rethan Abyss
 					["provider"] = { "o", 455720 },	-- Delver's Call: Tak-Rethan Abyss
-					["coord"] = { 57.2, 45.3, AZJ_KAHET },
+					["coord"] = { 56.8, 40.7, AZJ_KAHET },
 				}),
 			}),
 			n(TREASURES, {
@@ -679,7 +700,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(83770, {	-- Delver's Call: Spiral Weave
 					["provider"] = { "n", 211721 },	-- Sir Jonathan Trueheart
-					["coord"] = { 59.2, 25.1, AZJ_KAHET },
+					["coord"] = { 58.9, 18.6, AZJ_KAHET },
 				}),
 			}),
 			n(TREASURES, {
@@ -717,6 +738,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(222971),	-- Bouncer (PET!)
 			}),
 			filter(MISC, {
+				i(217715),	-- Key Scroll
 				i(217895),	-- Pheromone Bottle
 				i(217897),	-- Volatile Pheromone
 			}),
@@ -724,6 +746,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				q(83761, {	-- Delves: The Underkeep
 					["provider"] = { "n", 227544 },	-- Brann Bronzebeard
 					["coord"] = { 57.3, 42.2, AZJ_KAHET },
+				}),
+				q(85667, {	-- Delver's Call: The Underkeep
+					["provider"] = { "o", 487855 },	-- DELVER'S CALL: The Underkeep
+					["coord"] = { 35.9, 26.2, THE_UNDERKEEP },
 				}),
 			}),
 			n(TREASURES, {
@@ -865,6 +891,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(211031),	-- Secret-Dredger's Sabatons
 			}),
 			filter(TRINKET_F, {
+				i(215170),	-- Abyssal Trap
 				i(215174),	-- Concoction: Kiss of Death
 				i(225653),	-- Siphoning Lightbrand
 				i(215178),	-- Shadow-Binding Ritual Knife
@@ -1526,7 +1553,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(82772),	-- First Delve of the day
 		q(84670),	-- after turn in weekly delve quest (was 82746 - Delves: Breaking Tough to Loot Stuff - for this one)
 		q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
-		q(85651),	-- Triggeres with 'Delver's Call: The Sinkhole' (questID 83767)
+		q(85666),	-- Triggers with 'Delver's Call: Spiral Weave' (questID 83770)
+		q(85651),	-- Triggers with 'Delver's Call: The Sinkhole' (questID 83767)
 		-- Bountiful Delve runs
 		q(82944),	-- Earthcrawl Mines
 		q(82939),	-- Fungal Folly

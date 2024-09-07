@@ -533,26 +533,27 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 	m(DRAGON_ISLES, {
 		m(VALDRAKKEN, {
-			q(72596),	-- After Open Orientation (spellID 396185)
-			q(69935),	-- triggered with 'A Dryadic Remedy' (questID 67606 & 69937) (spellID 381859)
-			q(72011),	-- triggeres when accepting 'The Ruby Feast!' (questID 71238) (spellID 391778 & 377492)
-			q(72009),	-- triggered with 'Warm Away These Shivers' (questID 67047) (spellID 377492 & 377494 & 377495 & 377496 & 377497 & 377498 & 377499 & 391779)
-			q(72258, {["name"] = "Ruby Feast Daily Lockout",["isDaily"] = true}),	-- daily lockout of Ruby Feast quest progression (spellID 393805)
-			q(67055),	-- triggered with 'Warm Away These Shivers' (questID 67047) (spellID 377492)
-			q(67056),	-- triggered after '10,000 Years of Roasting' (questID 67063) (spellID 377494)
-			q(67057),	-- triggered after 'Rambling Delight' (questID 67064) (spellID 377495)
-			q(67058),	-- triggered after 'Future-Fresh Fungi' (questID 67065) (spellID 377496)
-			q(67059),	-- triggered after 'Delights to Delve For' (questID 67066) (spellID 377497)
-			q(67060),	-- triggered after 'Navigating the Leapmaize' (questID 67067) (spellID 377498)
-			q(67061),	-- triggered after 'Anything But a Breeze' (questID 67068) (spellID 377499)
-			q(72010),	-- triggered after 'What a Long, Sweet Trip It's Been' (questID 67071) (spellID 391779)
-			q(65041),	-- Talked with Scalecommanders Cindretresh and Azurathel (spellID 388943)
-			hqt(79652, {["timeline"] = {ADDED_10_2_5}}),	-- 'Stay awhile and listen' with Kalecgos and Khadgar
-			hqt(79632, {["timeline"] = {ADDED_10_2_5}}),	-- 'Stay awhile and listen' with Wrathion and Sabellian
-			hqt(79666, {["timeline"] = {ADDED_10_2_5}}),	-- 'Stay awhile and listen' with Master Mathias Shaw
-			hqt(79668, {["timeline"] = {ADDED_10_2_5}}),	-- 'Stay awhile and listen' with Scalecommander Emberthal
-			q(82833, {["timeline"] = {ADDED_10_2_7}}),	-- triggered after turn in questID 79513 (Dragon Isles Adventuring: Being Yourself)
+			n(QUESTS, {
+				q(72596),	-- After Open Orientation (spellID 396185)
+				q(69935),	-- triggered with 'A Dryadic Remedy' (questID 67606 & 69937) (spellID 381859)
+				q(72011),	-- triggeres when accepting 'The Ruby Feast!' (questID 71238) (spellID 391778 & 377492)
+				q(72009),	-- triggered with 'Warm Away These Shivers' (questID 67047) (spellID 377492 & 377494 & 377495 & 377496 & 377497 & 377498 & 377499 & 391779)
+				q(72258, {["name"] = "Ruby Feast Daily Lockout",["isDaily"] = true}),	-- daily lockout of Ruby Feast quest progression (spellID 393805)
+				q(67055),	-- triggered with 'Warm Away These Shivers' (questID 67047) (spellID 377492)
+				q(67056),	-- triggered after '10,000 Years of Roasting' (questID 67063) (spellID 377494)
+				q(67057),	-- triggered after 'Rambling Delight' (questID 67064) (spellID 377495)
+				q(67058),	-- triggered after 'Future-Fresh Fungi' (questID 67065) (spellID 377496)
+				q(67059),	-- triggered after 'Delights to Delve For' (questID 67066) (spellID 377497)
+				q(67060),	-- triggered after 'Navigating the Leapmaize' (questID 67067) (spellID 377498)
+				q(67061),	-- triggered after 'Anything But a Breeze' (questID 67068) (spellID 377499)
+				q(72010),	-- triggered after 'What a Long, Sweet Trip It's Been' (questID 67071) (spellID 391779)
+				q(65041),	-- Talked with Scalecommanders Cindretresh and Azurathel (spellID 388943)
+				hqt(79652, {["timeline"] = {ADDED_10_2_5}}),	-- 'Stay awhile and listen' with Kalecgos and Khadgar
+				hqt(79632, {["timeline"] = {ADDED_10_2_5}}),	-- 'Stay awhile and listen' with Wrathion and Sabellian
+				hqt(79666, {["timeline"] = {ADDED_10_2_5}}),	-- 'Stay awhile and listen' with Master Mathias Shaw
+				hqt(79668, {["timeline"] = {ADDED_10_2_5}}),	-- 'Stay awhile and listen' with Scalecommander Emberthal
+				q(82833, {["timeline"] = {ADDED_10_2_7}}),	-- triggered after turn in questID 79513 (Dragon Isles Adventuring: Being Yourself)
+			}),
 		}),
 	}),
 })));
-

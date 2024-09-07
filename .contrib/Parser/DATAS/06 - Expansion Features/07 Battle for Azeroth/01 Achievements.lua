@@ -33,13 +33,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 			["g"] = {
 				i(169162),	-- Wonderwing 2.0 (MOUNT!)
 				crit(45265, {	-- Rustbolt Resistance Revered
-					["_factions"] = { 2391 },	-- Rustbolt Resistance
+					["_factions"] = { FACTION_RUSTBOLT_RESISTANCE },	-- Rustbolt Resistance
 				}),
 				crit(45266, {	-- Unshackled Revered
-					["_factions"] = { 2400 },	-- Ankoan
+					["_factions"] = { FACTION_WAVEBLADE_ANKOAN },	-- Ankoan
 				}),
 				crit(45267, {	-- Unshackled Revered
-					["_factions"] = { 2373 },	-- Unshackled
+					["_factions"] = { FACTION_THE_UNSHACKLED },	-- Unshackled
 				}),
 			},
 		}),

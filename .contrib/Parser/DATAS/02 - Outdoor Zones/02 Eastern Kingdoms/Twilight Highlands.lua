@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 27380,	-- Nightmare
 					["timeline"] = { ADDED_4_0_3 },
 				}),
-				achWithRep(4886, 1172, {	-- Dragonmaw Clan
+				achWithRep(4886, FACTION_DRAGONMAW_CLAN, {	-- Dragonmaw Clan
 					["races"] = HORDE_ONLY,
 				}),
 				ach(5482, {	-- Dragonmaw Tour of Duty
@@ -171,7 +171,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				achWithRep(4885, 1174, {	-- Wildhammer Clan
+				achWithRep(4885, FACTION_WILDHAMMER_CLAN, {	-- Wildhammer Clan
 					["races"] = ALLIANCE_ONLY,
 				}),
 				ach(5481, {	-- Wildhammer Tour of Duty
@@ -274,11 +274,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(5462),	-- Wyrms' Bend
 			}),
 			n(FACTIONS, {
-				faction(1172, {	-- Dragonmaw Clan
+				faction(FACTION_DRAGONMAW_CLAN, {	-- Dragonmaw Clan
 					["icon"] = "Interface\\Icons\\inv_misc_tabard_dragonmawclan",
 					["races"] = HORDE_ONLY,
 				}),
-				faction(1174, {	-- Wildhammer Clan
+				faction(FACTION_WILDHAMMER_CLAN, {	-- Wildhammer Clan
 					["icon"] = "Interface\\Icons\\inv_misc_tabard_wildhammerclan",
 					["races"] = ALLIANCE_ONLY,
 				}),

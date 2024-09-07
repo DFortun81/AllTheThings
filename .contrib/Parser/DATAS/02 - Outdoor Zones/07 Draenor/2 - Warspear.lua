@@ -2250,7 +2250,7 @@ root(ROOTS.Zones, {
 						}),
 						n(128759, {	-- Dazzerian <Warspear Quartermaster>
 							["coord"] = { 49.2, 55.0, WARSPEAR },
-							["minReputation"] = { 1681, 5 },	-- Vol'jin's Spear, Friendly
+							["minReputation"] = { FACTION_VOLJINS_SPEAR, FRIENDLY },	-- Vol'jin's Spear, Friendly
 							["g"] = {
 								i(116775, {	-- Breezestrider Stallion (MOUNT!)
 									["cost"] = {

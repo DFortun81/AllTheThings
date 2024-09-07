@@ -690,7 +690,7 @@ root(ROOTS.Zones, {
 					["coord"] = { 36.8, 46.5, SURAMAR },
 					["provider"] = { "n", 107126 },	-- Valewalker Farodin
 					["sourceQuest"] = 44561,	-- Seed of Hope
-					["minReputation"] = { 1859, HONORED },
+					["minReputation"] = { FACTION_THE_NIGHTFALLEN, HONORED },
 				}),
 				q(43969, {	-- Hired Help
 					["coord"] = { 48.4, 83.2, SURAMAR },

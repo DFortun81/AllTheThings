@@ -125,14 +125,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(219748),	-- Charred Nerubian Warplate
 					},
 				}),
-				------ Stay awhile and listen ------
-				hqt(82459, {	-- Stay awhile and Listen: Anduin Wrynn
-					["name"] = "Stay awhile and listen: Anduin Wrynn",
-					["sourceQuests"] = { 78536 },	-- Impossible Odds
-					["provider"] = { "n", 222558 },	-- Anduin Wrynn
-					["coord"] = { 44.7, 44.6, DORNOGAL },
-				}),
-				--
 				------ Chapter 2 ------
 				q(78460, {	-- Hypocenter
 					["sourceQuests"] = { 78536 },	-- Impossible Odds
@@ -142,11 +134,28 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(217610),	-- Earthen Memory Gem (QI!)
 					},
 				}),
+				------ Stay awhile and listen ------
+				hqt(82459, {	-- Stay awhile and Listen: Anduin Wrynn
+					["name"] = "Stay awhile and listen: Anduin Wrynn",
+					["sourceQuests"] = { 78460 },	-- Hypocenter (available if quest is picked up and after turnin but not before)
+					["provider"] = { "n", 222558 },	-- Anduin Wrynn
+					["coord"] = { 44.7, 44.6, DORNOGAL },
+					["lockCriteria"] = { 1, "questID", 78462 },	-- Echoes of Compassion
+				}),
+				--
 				q(78468, {	-- The Archive
 					["sourceQuests"] = { 78460 },	-- Hypocenter
 					["provider"] = { "n", 217857 },	-- Speaker Brinthe
 					["coord"] = { 29.4, 59.9, DORNOGAL },
 				}),
+				------ Stay awhile and listen ------
+				hqt(82461, {	-- Stay awhile and listen: Dagran Thaurissan II
+					["name"] = "Stay awhile and listen: Dagran Thaurissan II",
+					["sourceQuests"] = { 78468 },	-- The Archive
+					["provider"] = { "n", 217859 },	-- Dagran Thaurissan II
+					["coord"] = { 29.8, 60.0, DORNOGAL },
+				}),
+				---
 				q(78457, {	-- Stones of Dornogal
 					["sourceQuests"] = { 78460 },	-- Hypocenter
 					["provider"] = { "n", 217854 },	-- Merrix
@@ -161,6 +170,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { 78457 },	-- Stones of Dornogal (available if quest is picked up and after turnin but not before)
 					["provider"] = { "n", 222557 },	-- Magni Bronzebeard
 					["coord"] = { 44.5, 44.5, DORNOGAL },
+					["lockCriteria"] = { 1, "questID", 78462 },	-- Echoes of Compassion
 				}),
 				--
 				q(78459, {	-- State of the Union
@@ -176,10 +186,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 217864 },	-- Moira Thaurissan
 					["coord"] = { 40.5, 25.8, DORNOGAL },
 				}),
+				------ Stay awhile and listen ------
+				hqt(82462, {	-- Stay awhile and listen: Moira Thaurissan
+					["name"] = "Stay awhile and listen: Moira Thaurissan",
+					["sourceQuests"] = { 78461 },	-- The Fourth Seat
+					["provider"] = { "n", 217878 },	-- Moira Thaurissan
+					["coord"] = { 41.9, 72.7, ISLE_OF_DORN },
+					["lockCriteria"] = { 1, "questID", 78462 },	-- Echoes of Compassion
+				}),
+				--
 				q(78464, {	-- Delve into the Earth
 					["sourceQuests"] = { 78461 },	-- The Fourth Seat
 					["provider"] = { "n", 217879 },	-- Adelgonn
-					["coord"] = { 39.2, 78.2, ISLE_OF_DORN },
+					["coord"] = { 41.8, 72.6, ISLE_OF_DORN },
 					["maps"] = { 2269 },	-- Earthcrawl Mines
 					["g"] = {
 						i(219785),	-- Arachnophobic Spelunker's Battleaxe
@@ -196,7 +215,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79553, {	-- A Natural Remedy
 					["sourceQuests"] = { 78464 },	-- Delve into the Earth
 					["provider"] = { "n", 217879 },	-- Adelgonn
-					["coord"] = { 39.2, 78.2, ISLE_OF_DORN },
+					["coord"] = { 41.8, 72.6, ISLE_OF_DORN },
 					["g"] = {
 						i(213233),	-- Fungarian Chunks (QI!)
 					},
@@ -204,7 +223,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78463, {	-- Building Blocks
 					["sourceQuests"] = { 78464 },	-- Delve into the Earth
 					["provider"] = { "n", 217881 },	-- Baelgrim
-					["coord"] = { 39.0, 78.2, DORNOGAL },
+					["coord"] = { 41.8, 72.7, ISLE_OF_DORN },
 					["g"] = {
 						o_repeated({
 							i(211962),	-- Glittering Ore (QI!)
@@ -219,7 +238,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78463,	-- Building Blocks
 					},
 					["provider"] = { "n", 217879 },	-- Adelgonn
-					["coord"] = { 39.2, 78.2, ISLE_OF_DORN },
+					["coord"] = { 41.8, 72.7, ISLE_OF_DORN },
 					["g"] = {
 						i(219795),	-- Cured Terracotta Axe
 						i(219799),	-- Cured Terracotta Firearm
@@ -239,12 +258,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79701, {	-- The Calvalry is Here
 					["sourceQuests"] = { 78470 },	-- The Proscenium
 					["provider"] = { "n", 217766 },	-- Baelgrim
-					["coord"] = { 56.7, 53.6, ISLE_OF_DORN },
+					["coord"] = { 56.5, 52.1, ISLE_OF_DORN },
 				}),
 				q(79721, {	-- Fire in the Hole
 					["sourceQuests"] = { 78470 },	-- The Proscenium
 					["provider"] = { "n", 212295 },	-- Wenbrandt
-					["coord"] = { 56.8, 53.6, ISLE_OF_DORN },
+					["coord"] = { 56.6, 52.1, ISLE_OF_DORN },
 				}),
 				q(78471, {	-- Convergence
 					["sourceQuests"] = {
@@ -288,12 +307,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78541, {	-- Lay the Trap
 					["sourceQuests"] = { 78540 },	-- To the Meadery
 					["provider"] = { "n", 212749 },	-- Baelgrim
-					["coord"] = { 79.1, 43.0, ISLE_OF_DORN },
+					["coord"] = { 75.3, 43.1, ISLE_OF_DORN },
 				}),
 				q(78542, {	-- Evacuation Area
 					["sourceQuests"] = { 78540 },	-- To the Meadery
 					["provider"] = { "n", 212750 },	-- Wenbrandt
-					["coord"] = { 79.1, 43.0, ISLE_OF_DORN },
+					["coord"] = { 75.3, 43.2, ISLE_OF_DORN },
 				}),
 				q(78543, {	-- Poking the Spider Nest
 					["sourceQuests"] = {
@@ -306,7 +325,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78544, {	-- Bring the Thunder
 					["sourceQuests"] = { 78543 },	-- Poking the Spider Nest
 					["provider"] = { "n", 212756 },	-- Baelgrim
-					["coord"] = { 78.4, 42.0, ISLE_OF_DORN },
+					["coord"] = { 74.8, 42.3, ISLE_OF_DORN },
 					["g"] = {
 						i(219757),	-- Mead-Speckled Full Helm
 						i(219758),	-- Mead-Speckled Legguards
@@ -314,10 +333,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(219756),	-- Mead-Speckled Vest
 					},
 				}),
+				------ Stay awhile and listen ------
+				hqt(85680, {	-- Stay awhile and listen: Adelgonn
+					["name"] = "Stay awhile and listen: Adelgonn ",
+					["sourceQuests"] = { 78544 },	-- Bring the Thunder
+					["provider"] = { "n", 217849 },	-- Adelgonn
+					["coord"] = { 75.1, 43.7, ISLE_OF_DORN },
+					["lockCriteria"] = { 1, "questID", 78545 },	-- Return to the Coreway
+				}),
+				--
 				q(78545, {	-- Return to the Coreway
 					["sourceQuests"] = { 78544 },	-- Bring the Thunder
 					["provider"] = { "n", 217849 },	-- Adelgonn
-					["coord"] = { 79.0, 44.0, ISLE_OF_DORN },
+					["coord"] = { 75.1, 43.8, ISLE_OF_DORN },
 				}),
 				q(78546, {	-- Recompense
 					["sourceQuests"] = { 78545 },	-- Return to the Coreway
@@ -342,12 +370,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { 78546 },	-- Recompense
 					["provider"] = { "n", 217880 },	-- Merrix <Councilward>
 					["coord"] = { 32.0, 59.6, DORNOGAL },
-				}),
-				hqt(82461, {	-- Stay awhile and listen: Dagran Thaurissan II
-					["name"] = "Stay awhile and listen: Dagran Thaurissan II",
-					["sourceQuests"] = { 78546 },	-- Recompense
-					["provider"] = { "n", 217859 },	-- Dagran Thaurissan II
-					["coord"] = { 29.8, 60.0, DORNOGAL },
 				}),
 			}),
 			header(HEADERS.AchCriteria, 20595.01, {	-- Spores of Dread
@@ -1185,17 +1207,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(78618, {	-- Fungal Frenzy
-					["coord"] = { 52.0, 72.6, ISLE_OF_DORN },
+					["coord"] = { 53.5, 66.4, ISLE_OF_DORN },
 				}),
 				q(79669, {	-- I Take Candle!
-					["coord"] = { 62.8, 42.5, ISLE_OF_DORN },
+					["coord"] = { 64.32, 44.27, ISLE_OF_DORN },
 					["lockCriteria"] = { 1, "lvl", 74 },
 				}),
 				q(79667, {	-- It's Elementary
-					--["coord"] = { 62.8, 75.2, ISLE_OF_DORN },	-- need more accurate coords from popup
+					["coord"] = { 62.36, 72.13, ISLE_OF_DORN },
 				}),
 				q(81614, {	-- One Fin, Two Fin, Pearlfin, Dead Fin
-					["coord"] = { 50.5, 80.2, ISLE_OF_DORN },	-- need more accurate coords from popup
+					["coord"] = { 50.6, 79.5, ISLE_OF_DORN },
 				}),
 			}),
 		}),
@@ -1210,7 +1232,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 				-- During questing
 				q(83622),	-- [DNT] Zone 1 Bread Crumb Completed Organically (spellID 456955), when you break free out of rocks during questID 78529 (Violet Impact)
 				q(79629),	-- [DNT] Council of Dornogal Renown Unlock (spellID 446910)
-				q(82462),	-- 'Stay awhile and listen' - Moira Thaurissan (n: 217878), after turn in questID 78462 (Echoes of Compassion)
 				-- Side quests
 				q(81571),	-- Keep Ending Scene Active [DNT] (spellID 442907), rp after turn in questID 78999 (Heart of a Hero)
 				q(80539),	-- Completing The Machine Speakeasy (79546)

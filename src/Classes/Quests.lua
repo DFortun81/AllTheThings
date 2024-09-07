@@ -104,6 +104,9 @@ if C_QuestLog_RequestLoadQuestByID and pcall(app.RegisterEvent, app, "QUEST_DATA
 			app.FunctionRunner.Run(C_QuestLog_RequestLoadQuestByID, questID);
 		end
 	end
+	if app.Debugging then
+		app.RequestLoadQuestByID = RequestLoadQuestByID
+	end
 
 	-- This event seems to fire synchronously from C_QuestLog.RequestLoadQuestByID if we already have the data
 	app:RegisterFuncEvent("QUEST_DATA_LOAD_RESULT", function(questID, success)

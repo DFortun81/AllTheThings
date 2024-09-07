@@ -208,7 +208,7 @@ root(ROOTS.Zones, {
 					exploration(7306),	-- Windswept Terrace
 				}),
 				n(FACTIONS, {
-					faction(1515),	-- Arakkoa Outcasts
+					faction(FACTION_ARAKKOA_OUTCASTS),	-- Arakkoa Outcasts
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1513, {	-- Apexis Excavation, Spires of Arak
@@ -692,7 +692,7 @@ root(ROOTS.Zones, {
 					q(37177, {	-- Call of the Talon King
 						["provider"] = { "n", 84122 },	-- Shade of Terokk
 						["coord"] = { 46.6, 46.7, SPIRES_OF_ARAK },
-						["minReputation"] = { 1515, EXALTED },
+						["minReputation"] = { FACTION_ARAKKOA_OUTCASTS, EXALTED },
 						["description"] = "Granted automatically. If you're in the zone when you hit exalted, leave the zone and return.",
 					}),
 					q(35081, {	-- Clearing Out Before Cleaning Up
@@ -1225,7 +1225,7 @@ root(ROOTS.Zones, {
 					q(37144, {	-- Talon Guard Kurekk
 						["provider"] = { "n", 80758 },	-- Talon Guard Kurekk
 						["coord"] = { 62.2, 42.6, SPIRES_OF_ARAK },
-						["minReputation"] = { 1515, EXALTED },
+						["minReputation"] = { FACTION_ARAKKOA_OUTCASTS, EXALTED },
 						["g"] = {
 							follower(224),	-- Talon Guard Kurekk
 						},

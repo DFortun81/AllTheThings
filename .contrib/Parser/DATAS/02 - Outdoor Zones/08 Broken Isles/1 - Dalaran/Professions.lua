@@ -497,7 +497,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 50.0, 1.0, LEGION_DALARAN },
 						["g"] = LEGION_FISHING,
 					}),
-					faction(1975, {	-- Conjurer Margoss
+					faction(FACTION_CONJURER_MARGOSS, {	-- Conjurer Margoss
 						["creatureID"] = 108825,
 						["description"] = "Can be found on a floating island called Margoss' Retreat just North of Dalaran.\n\nIt is recommended to be in a group in order to be able to reach Best Friend the quickest.",
 						["requireSkill"] = FISHING,

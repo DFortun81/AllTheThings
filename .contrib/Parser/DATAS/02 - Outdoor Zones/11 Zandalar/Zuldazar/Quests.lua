@@ -1665,7 +1665,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(53774, {	-- Wisdom of the Warchief
-				["minReputation"] = { 2103, EXALTED },	-- Zandalari Empire, Exalted.
+				["minReputation"] = { FACTION_ZANDALARI_EMPIRE, EXALTED },	-- Zandalari Empire, Exalted.
 				["provider"] = { "n", 141555 },	-- Baine Bloodhoof
 				["coord"] = { 41.4, 72.2, HALL_OF_CHRONICLERS },
 				["races"] = HORDE_ONLY,

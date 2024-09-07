@@ -4,21 +4,11 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(AZJ_KAHET, {
 		n(TREASURES, {
-			o(446404, {	-- Memory Cache
-				["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 5x Unseeming Shift debuff to see npc near cache, kill it to obtain key for cache",
-				["coord"] = { 62.7, 88.7, AZJ_KAHET_LOWER },
-				["questID"] = 82520,	-- previous 82723?
-				["g"] = {
-					i(223870),	-- Cache Key
-					--
-					i(225544),	-- Mind Slurp (PET!)
-				},
-			}),
 			o(446419, {	-- Concealed Contraband
-				["coord"] = { 36.3, 63.9, AZJ_KAHET },
+				["coord"] = { 34.0, 61.0, AZJ_KAHET },
 				["questID"] = 82525,
 				["g"] = {
-					-- reps for all 3 zone 'assistant' and some trash items
+					-- Junk
 				},
 			}),
 			o(446097, {	-- Disturbed Soil
@@ -28,68 +18,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(224816),	-- Nerubian Almanac
 				},
 			}),
-			--TODO: probably better to move them towards Treads (wrathion like file) in future,
-			-- since for all of them active General is required
-			o(437060, {	-- Aspirant's Tribute
-				["provider"] = { "o", 437058 },	-- Forgotten Memorial
-				["coord"] = { 69.2, 81.6, AZJ_KAHET },
-				-- ["questID"] = xx,
-			}),
-			o(455435, {	-- Aspirant's Tribute
-				["provider"] = { "o", 437191 },	-- Forgotten Memorial
-				["coord"] = { 60.1, 82.5, AZJ_KAHET },
-				["questID"] = 81467,
-			}),
-			o(455436, {	-- Aspirant's Tribute
-				["provider"] = { "o", 437389 },	-- Forgotten Memorial
-				["coord"] = { 65.2, 49.0, AZJ_KAHET },
-				-- ["questID"] = xx,
-			}),
-			o(455437, {	-- Aspirant's Tribute
-				["provider"] = { "o", 451595 },	-- Forgotten Memorial
-				["coord"] = { 33.7, 42.1, AZJ_KAHET },
-				-- ["questID"] = xx,
-			}),
-			o(455439, {	-- Aspirant's Tribute
-				["provider"] = { "o", 451596 },	-- Forgotten Memorial
-				["coord"] = { 39.3, 41.6, AZJ_KAHET },
-				["questID"] = 82874,
-			}),
-			o(455440, {	-- Aspirant's Tribute
-				["provider"] = { "o", 451597 },	-- Forgotten Memorial
-				["coord"] = { 63.2, 11.3, AZJ_KAHET },
-				-- ["questID"] = xx,
-			}),
-			o(455442, {	-- Aspirant's Tribute
-				["provider"] = { "o", 451599 },	-- Forgotten Memorial
-				["coord"] = { 76.2, 65.7, AZJ_KAHET },
-				["questID"] = 82877,
-			}),
-			o(455443, {	-- Aspirant's Tribute
-				["provider"] = { "o", 451600 },	-- Forgotten Memorial
-				["coord"] = { 75.7, 86.9, AZJ_KAHET },
-				-- ["questID"] = xx,
-			}),
-			o(455444, {	-- Aspirant's Tribute
-				["provider"] = { "o", 451601 },	-- Forgotten Memorial
-				["coord"] = { 48.5, 59.5, AZJ_KAHET },
-				-- ["questID"] = xx,
-			}),
-			o(455445, {	-- Aspirant's Tribute
-				["provider"] = { "o", 451602 },	-- Forgotten Memorial
-				["coord"] = { 42.7, 34.6, AZJ_KAHET },
-				["questID"] = 81572,
-			}),
-			o(455446, {	-- Aspirant's Tribute
-				["provider"] = { "o", 451603 },	-- Forgotten Memorial
-				["coord"] = { 7.5, 25.7, NERUBAR },
-				["questID"] = 82881,
+			o(446404, {	-- Memory Cache
+				["description"] = "Interact with Black Blood Extractors in area or stand in Black Blood pools until you reach at least 50 Unseeming Shift debuff to see Corrupted Memory near the cache. Kill it to obtain key for cache.",
+				["coord"] = { 62.7, 87.9, AZJ_KAHET_LOWER },
+				["questID"] = 82520,
+				["crs"] = { 223908 },	-- Corrupted Memory
+				["g"] = {
+					i(223870),	-- Cache Key
+					--
+					i(225544),	-- Mind Slurp (PET!)
+				},
 			}),
 			o(446140, {	-- Missing Scouts Pack
-				["coord"] = { 40.7, 42.1, AZJ_KAHET },
+				["coord"] = { 38.8, 37.2, AZJ_KAHET },
 				["questID"] = 82722,
 				["g"] = {
-					-- no objectID since missing loot table
+					-- Gold, junk
 				},
 			}),
 			o(446101, {	-- Nerubian Offerings
@@ -97,6 +41,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 82720,
 			}),
 			o(446423, {	-- Nest Egg
+				["description"] = "Above on a web, near the ceiling.",
 				["coord"] = { 49.5, 43.73, AZJ_KAHET },
 				["questID"] = 82529,
 				["g"] = {
@@ -104,25 +49,31 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(446135, {	-- Niffen Stash
-				["coord"] = { 55.2, 54.6, AZJ_KAHET },
+				["description"] = "Below, hanging from a bridge.",
+				["coord"] = { 54.5, 50.81, AZJ_KAHET },
 				["questID"] = 82721,
 				["g"] = {
-					-- missing loot table
+					-- Gold, food, junk
 				},
 			}),
 			o(446299, {	-- Silk-spun Supplies
 				--["description"] = "Finishing questID 78383 (Strategic Edge) make it spawn",
-				["coord"] = { 67.5, 27.6, AZJ_KAHET },
+				["coord"] = { 67.5, 27.5, AZJ_KAHET },
 				["questID"] = 82719,
+				["g"] = {
+					-- Crafting reagents, bandages
+				},
 			}),
 			o(444844, {	-- Stashed Loot
+				-- ["description"] = "At both locations, every once in a while, Pilfered Loot will appear instead of Stashed. No obbjectID, same loot.",
 				["coords"] = {
-					{ 26.2, 54.1, AZJ_KAHET },
-					{ 75.2, 61.2, AZJ_KAHET },
+					{ 22.9, 50.3, AZJ_KAHET },	-- Inside Wildcamp Or'lay
+					{ 76.4, 58.1, AZJ_KAHET },	-- Inside the cave in Mmarl
 				},
-				--["questID"] = xx,	-- missing qID
-				["g"] = {
-					-- some random gray and crafting reagent
+				--["questID"] = xx,	-- no quest attached, repeatable, respawn timer around 5 minutes
+				["g"] = {	-- Junk, crafting reagents
+					currency(3056),	-- Kej
+					currency(3008),	-- Valorstones
 				},
 			}),
 			o(444800, {	-- Sureki Strongbox
@@ -167,10 +118,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coords"] = {
 					{ 36.9, 41.7, AZJ_KAHET },
 					{ 50.1, 50.7, AZJ_KAHET },
-					{ 64.8, 29.9, AZJ_KAHET },
+					{ 65.0, 23.9, AZJ_KAHET },
 				},
-				["g"] = {
-					-- some crafting reagent and gray item
+				["g"] = {	-- Crafting reagents, junk
+					currency(3056),	-- Kej
+					currency(3008),	-- Valorstones
 				},
 			}),
 			o(454340, {	-- Thimble's Cache
@@ -304,7 +256,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 82085,
 			}),
 			n(222283, {	-- Weathered Shadecaster
-				["coord"] = { 70.4, 65.2, AZJ_KAHET },
+				["coord"] = { 71.1, 62.3, AZJ_KAHET },
 				["questID"] = 82082,
 			}),
 		}),

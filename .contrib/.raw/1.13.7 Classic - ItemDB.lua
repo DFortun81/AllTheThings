@@ -1,4 +1,5 @@
 DBContext = "CLASSICERA";
+DBFileName = "01 - Classic Era";
 ItemDB = {
 	nil, -- [1]
 	nil, -- [2]

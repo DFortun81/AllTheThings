@@ -77,39 +77,39 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = HORDE_ONLY,
 			["g"] = {
 				i(168837, {	-- Depth Forged Aegis (Rank 1)
-					["minReputation"] = { 2373, FRIENDLY },
+					["minReputation"] = { FACTION_THE_UNSHACKLED, FRIENDLY },
 					["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
 				}),
 				i(168838, {	-- Enduring Bulwark of the Depths (Rank 2)
-					["minReputation"] = { 2373, HONORED },
+					["minReputation"] = { FACTION_THE_UNSHACKLED, HONORED },
 					["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
 				}),
 				i(168839, {	-- Regenerating Barrier of the Depths (Rank 3)
-					["minReputation"] = { 2373, REVERED },
+					["minReputation"] = { FACTION_THE_UNSHACKLED, REVERED },
 					["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
 				}),
 				i(168928, {	-- Tablet of the Balancing Tides (Rank 1)
-					["minReputation"] = { 2373, FRIENDLY },
+					["minReputation"] = { FACTION_THE_UNSHACKLED, FRIENDLY },
 					["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
 				}),
 				i(168929, {	-- Codex of the Never-Ending Tides (Rank 2)
-					["minReputation"] = { 2373, HONORED },
+					["minReputation"] = { FACTION_THE_UNSHACKLED, HONORED },
 					["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
 				}),
 				i(168930, {	-- Tome of the Quickening Tides (Rank 3)
-					["minReputation"] = { 2373, REVERED },
+					["minReputation"] = { FACTION_THE_UNSHACKLED, REVERED },
 					["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
 				}),
 				i(168863, {	-- Unbound Azerite Slivershards (Rank 1)
-					["minReputation"] = { 2373, FRIENDLY },
+					["minReputation"] = { FACTION_THE_UNSHACKLED, FRIENDLY },
 					["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
 				}),
 				i(168864, {	-- Sharpened Azerite Slivershards (Rank 2)
-					["minReputation"] = { 2373, HONORED },
+					["minReputation"] = { FACTION_THE_UNSHACKLED, HONORED },
 					["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
 				}),
 				i(168865, {	-- Polazired Azerite Slivershards (Rank 3)
-					["minReputation"] = { 2373, REVERED },
+					["minReputation"] = { FACTION_THE_UNSHACKLED, REVERED },
 					["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
 				}),
 				i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)
@@ -470,39 +470,39 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {
 				i(168837, {	-- Depth Forged Aegis (Rank 1)
-					["minReputation"] = { 2400, FRIENDLY },
+					["minReputation"] = { FACTION_WAVEBLADE_ANKOAN, FRIENDLY },
 					["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
 				}),
 				i(168838, {	-- Enduring Bulwark of the Depths (Rank 2)
-					["minReputation"] = { 2400, HONORED },
+					["minReputation"] = { FACTION_WAVEBLADE_ANKOAN, HONORED },
 					["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
 				}),
 				i(168839, {	-- Regenerating Barrier of the Depths (Rank 3)
-					["minReputation"] = { 2400, REVERED },
+					["minReputation"] = { FACTION_WAVEBLADE_ANKOAN, REVERED },
 					["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
 				}),
 				i(168928, {	-- Tablet of the Balancing Tides (Rank 1)
-					["minReputation"] = { 2400, FRIENDLY },
+					["minReputation"] = { FACTION_WAVEBLADE_ANKOAN, FRIENDLY },
 					["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
 				}),
 				i(168929, {	-- Codex of the Never-Ending Tides (Rank 2)
-					["minReputation"] = { 2400, HONORED },
+					["minReputation"] = { FACTION_WAVEBLADE_ANKOAN, HONORED },
 					["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
 				}),
 				i(168930, {	-- Tome of the Quickening Tides (Rank 3)
-					["minReputation"] = { 2400, REVERED },
+					["minReputation"] = { FACTION_WAVEBLADE_ANKOAN, REVERED },
 					["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
 				}),
 				i(168863, {	-- Unbound Azerite Slivershards (Rank 1)
-					["minReputation"] = { 2400, FRIENDLY },
+					["minReputation"] = { FACTION_WAVEBLADE_ANKOAN, FRIENDLY },
 					["cost"] = { { "c", 1721, 10 }, },	-- 10x Prismatic Manapearl
 				}),
 				i(168864, {	-- Sharpened Azerite Slivershards (Rank 2)
-					["minReputation"] = { 2400, HONORED },
+					["minReputation"] = { FACTION_WAVEBLADE_ANKOAN, HONORED },
 					["cost"] = { { "c", 1721, 30 }, },	-- 30x Prismatic Manapearl
 				}),
 				i(168865, {	-- Polazired Azerite Slivershards (Rank 3)
-					["minReputation"] = { 2400, REVERED },
+					["minReputation"] = { FACTION_WAVEBLADE_ANKOAN, REVERED },
 					["cost"] = { { "c", 1721, 50 }, },	-- 50x Prismatic Manapearl
 				}),
 				i(168848, {	-- Pearl of Perspicuous Intentions (Rank 3)

@@ -1836,7 +1836,7 @@ root(ROOTS.Zones, {
 						}),
 						n(128756, {	-- Magister Langley
 							["coord"] = { 54.8, 16.8, STORMSHIELD },
-							["minReputation"] = { 1682, 5 },	-- Wrynn's Vanguard, Friendly
+							["minReputation"] = { FACTION_WRYNNS_VANGUARD, FRIENDLY },	-- Wrynn's Vanguard, Friendly
 							["g"] = {
 								i(114126),	-- Disposable Pocket Flying Machine
 								i(116776, {	-- Pale Thorngrazer (MOUNT!)

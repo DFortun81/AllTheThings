@@ -67,7 +67,6 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			i(186727, {	-- Seal Breaker Key
 				["crs"] = { 177134 },	-- Maldraxxi Defector
-				["questID"] = 62679,
 				["timeline"] = { ADDED_9_1_0 },
 			}),
 			i(180806),	-- Shadebound Testimonial (QI!)
@@ -76,6 +75,15 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			i(186161),	-- Stygian Lockbox
 			i(180807),	-- Venthyr Concordat (QI!)
 			i(180804),	-- Worn Obleron Etching (QI!)
+		}),
+	}),
+})));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	m(SHADOWLANDS, {
+		m(THE_MAW, {
+			n(ZONE_DROPS, {
+				q(62679),	-- looting 'Seal Breaker Key' (itemID 186727)
+			}),
 		}),
 	}),
 })));

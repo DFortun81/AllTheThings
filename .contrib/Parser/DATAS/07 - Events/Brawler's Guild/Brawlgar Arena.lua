@@ -149,16 +149,16 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 		n(FACTIONS, sharedData({
 			["races"] = HORDE_ONLY,
 		},{
-			faction(1374, {	-- Brawl'gar Arena (Season 1)
+			faction(FACTION_BRAWLGAR_SEASON_1, {	-- Brawl'gar Arena (Season 1)
 				["timeline"] = { ADDED_5_1_0, REMOVED_6_0_2 },
 			}),
-			faction(1690, {	-- Brawl'gar Arena (Season 2)
+			faction(FACTION_BRAWLGAR_SEASON_2, {	-- Brawl'gar Arena (Season 2)
 				["timeline"] = { ADDED_6_0_3_LAUNCH, REMOVED_7_0_3_LAUNCH },
 			}),
-			faction(2010, {	-- Brawl'gar Arena (Season 3)
+			faction(FACTION_BRAWLGAR_SEASON_3, {	-- Brawl'gar Arena (Season 3)
 				["timeline"] = { ADDED_7_2_0, REMOVED_8_0_1_LAUNCH },
 			}),
-			faction(2372, {	-- Brawl'gar Arena
+			faction(FACTION_BRAWLGAR_SEASON_4, {	-- Brawl'gar Arena
 				["timeline"] = { ADDED_8_1_5, REMOVED_9_0_2_LAUNCH },
 			}),
 		})),

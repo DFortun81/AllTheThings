@@ -295,7 +295,28 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, {
-	q(57741),	-- when defeating Sundancer after also having ridden Sundancer using the Skyfeather Glider
-});
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	m(SHADOWLANDS, {
+		m(BASTION, {
+			n(RARES, {
+				q(63422),	-- Aethon secondary quest
+				q(62192),	-- Baedos secondary quest
+				q(62158),	-- Basilofos secondary quest
+				q(62167),	-- Bookkeeper Mnemis secondary quest along with 59022
+				q(62191),	-- Cloudfeather Guardian secondary quest
+				q(63424),	-- Cloudtail secondary quest
+				q(61069),	-- Demi the Relic Hoarder secondary quest
+				q(61082),	-- Echo of Aella kill quest
+				q(62251),	-- Echo of Aella secondary loot quest
+				q(57705),	-- Herculon kill quest
+				q(62201),	-- Herculon secondary loot quest
+				q(63421),	-- Nemaeus secondary quest
+				q(63410),	-- Selena the Reborn secondary quest (spellID 347866)
+				q(63423),	-- Sigilback secondary quest
+				q(62197),	-- Wingflayer the Cruel secondary quest
+				q(62202),	-- triggers when killing Corrupted Clawguard, which drops Functioning Anima Core
+				q(57741),	-- when defeating Sundancer after also having ridden Sundancer using the Skyfeather Glider
+			}),
+		}),
+	}),
+})));

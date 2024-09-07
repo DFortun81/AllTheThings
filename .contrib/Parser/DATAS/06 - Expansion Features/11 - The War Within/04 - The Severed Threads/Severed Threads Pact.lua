@@ -104,7 +104,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 224162 },	-- Eirzay
 					["coord"] = { 30.6, 42.6, NERUBAR },
 				}),
-				q(81494, {	-- Relics of War: Rak-Ahat
+				q(81494, {	-- Relics of War: Rak-Zakaz
 					["provider"] = { "n", 224176 },	-- Eirzay
 					["coord"] = { 63.8, 26.3, NERUBAR_LOWER },
 					["g"] = {
@@ -136,13 +136,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				},
 				["sourceQuestNumRequired"] = 1,
 			},{
-				q(81473, {	-- Information Control: The Right Side of History
-					["provider"] = { "n", 224196 },	-- Ru'murh
-					["coord"] = { 77.8, 53.9, NERUBAR },
-					["g"] = {
-						--
-					},
-				}),
 				q(81495, {	-- Requisitions: Brightblooms
 					["provider"] = { "n", 224178 },	-- Ghos'opp
 					["coord"] = { 64.2, 21.4, NERUBAR },
@@ -160,6 +153,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(219212),	-- Luminescent Umbrashroom (QI!)
 						}),
 					},
+				}),
+				q(81506, {	-- Sabotage: Alchemical Instruments
+					["provider"] = { "n", 224186 },	-- Ghos'opp
+					["coord"] = { 54.6, 15.5, AZJ_KAHET },
 				}),
 				q(81505, {	-- Sabotage: Venomancers
 					["provider"] = { "n", 224184 },	-- Ghos'opp
@@ -198,6 +195,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 61.1, 74.7, AZJ_KAHET },
 					["g"] = {
 						i(219227),	-- Swollen Kobyss Eye (QI!)
+					},
+				}),
+				q(81498, {	-- Wild Reagents: Twitching Gorge
+					--["provider"] = { "n", 224181 },	-- Ghos'opp TODO
+					["coord"] = { 47.1, 58.7, AZJ_KAHET },
+					["g"] = {
+						i(219254),	-- Writhing Antennae (QI!)
 					},
 				}),
 			})),
@@ -244,6 +248,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 224197 },	-- Ru'murh
 					["coord"] = { 39.8, 26.6, NERUBAR },
 				}),
+				q(81473, {	-- Information Control: The Right Side of History
+					["provider"] = { "n", 224196 },	-- Ru'murh
+					["coord"] = { 77.8, 53.9, NERUBAR },
+				}),
 				q(81504, {	-- Infiltration: Hidden Figures
 					["provider"] = { "n", 224201 },	-- Ru'murh
 					["coord"] = { 76.2, 47.4, AZJ_KAHET },
@@ -261,6 +269,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 68.5, 51, NERUBAR },
 					["g"] = {
 						i(219292),	-- Perplexing Contraband (QI!)
+					},
+				}),
+				q(81484, {	-- Wet Work: Tithe to Kill
+					--["sourceQuest"] = 82581,	TODO
+					--["provider"] = { "n", 224201 },	-- Ru'murh
+					["coord"] = { 41.5, 22.4, NERUBAR },
+					["g"] = {
+						i(217996),	-- Sureki Tithe (QI!)
 					},
 				}),
 			})),
@@ -281,7 +297,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 					["sourceQuestNumRequired"] = 1,
 					--["provider"] = { "n", xx },
-					["coord"] = { 57.7, 46.9, AZJ_KAHET },
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 					["g"] = {
 						i(225572, {	-- The General's War Chest
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
@@ -297,7 +313,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 					["sourceQuestNumRequired"] = 1,
 					--["provider"] = { "n", xx },
-					["coord"] = { 57.7, 46.9, AZJ_KAHET },
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 					["g"] = {
 						i(225573, {	-- The Vizier's Capital
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
@@ -313,7 +329,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 					["sourceQuestNumRequired"] = 1,
 					--["provider"] = { "n", xx },
-					["coord"] = { 57.7, 46.9, AZJ_KAHET },
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 					["g"] = {
 						i(225571, {	-- The Weaver's Gratuity
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
@@ -321,6 +337,67 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(227281),	-- Recipe: Feast of the Midnight Masquerade (RECIPE!)
 						}),
 					},
+				}),
+			})),
+			n(TREASURES, sharedData({
+				["isDaily"] = true,
+				["sourceQuest"] = 80545,	-- The General Weekly pickup
+				["cost"] = {{"i",228949,1}},	-- Rumor Map
+			},{
+				o(437060, {	-- Aspirant's Tribute
+					["provider"] = { "o", 437058 },	-- Forgotten Memorial
+					["coord"] = { 69.2, 81.6, AZJ_KAHET },
+					["questID"] = 80688,
+				}),
+				o(455435, {	-- Aspirant's Tribute
+					["provider"] = { "o", 437191 },	-- Forgotten Memorial
+					["coord"] = { 60.1, 82.5, AZJ_KAHET },
+					["questID"] = 81467,
+				}),
+				o(455436, {	-- Aspirant's Tribute
+					["provider"] = { "o", 437389 },	-- Forgotten Memorial
+					["coord"] = { 65.2, 49.0, AZJ_KAHET },
+					-- ["questID"] = xx,	-- TODO
+				}),
+				o(455437, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451595 },	-- Forgotten Memorial
+					["coord"] = { 33.7, 41.9, AZJ_KAHET },
+					["questID"] = 82873,
+				}),
+				o(455439, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451596 },	-- Forgotten Memorial
+					["coord"] = { 39.3, 41.6, AZJ_KAHET },
+					["questID"] = 82874,
+				}),
+				o(455440, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451597 },	-- Forgotten Memorial
+					["coord"] = { 63.2, 11.3, AZJ_KAHET },
+					["questID"] = 82875,
+				}),
+				o(455442, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451599 },	-- Forgotten Memorial
+					["coord"] = { 76.2, 65.7, AZJ_KAHET },
+					["questID"] = 82877,
+				}),
+				o(455443, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451600 },	-- Forgotten Memorial
+					["coord"] = { 75.7, 86.9, AZJ_KAHET },
+					-- ["questID"] = xx,	-- TODO
+				}),
+				o(455444, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451601 },	-- Forgotten Memorial
+					["coord"] = { 48.5, 59.5, AZJ_KAHET },
+					["questID"] = 82879,
+				}),
+				o(455445, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451602 },	-- Forgotten Memorial
+					["coord"] = { 41.0, 29.0, AZJ_KAHET },
+					["questID"] = 82880,	-- 81572 beta?
+				}),
+				o(455446, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451603 },	-- Forgotten Memorial
+					["coord"] = { 7.5, 25.7, NERUBAR },
+					["questID"] = 82881,
 				}),
 			})),
 			n(VENDORS, {

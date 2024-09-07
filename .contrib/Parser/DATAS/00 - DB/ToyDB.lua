@@ -1345,10 +1345,9 @@ i(220692);	-- X-treme Water Blaster Display
 i(204405);	-- Stuffed Bear
 -- #endif
 i(212174);	-- The Warband Map to Everywhere All At Once
---- UNSORTED ---
+--- NYI ---
 i(218310);	-- Box of Puntables
 i(224809);	-- Earthen Plumber's Pipe
-i(225347);	-- Web-Vandal's Spinning Wheel
 i(216887);	-- Unknown
 
 ------------------
@@ -1373,6 +1372,7 @@ i(225641);	-- Illusive Kobyss Lure
 i(226810);	-- Infiltrator's Shroud
 i(228413);	-- Lampyridae Lure
 i(224251);	-- Memory Chord
+i(228940);	-- Notorious Thread's Hearthstone
 i(224643);	-- Pet-Sized Candle
 i(225910);	-- Pileus Delight
 i(215145);	-- Remembrance Stone
@@ -1387,4 +1387,21 @@ i(227538);	-- Unbound Legend's Pennant
 i(227539);	-- Unbound Strategist's Pennant
 i(216665);	-- Warband Bank Distance Inhibitor
 i(226191);	-- Web Pet Leash
+i(225347);	-- Web-Vandal's Spinning Wheel
 i(221966);	-- Wormhole Generator: Khaz Algar
+
+------------------
+-- PATCH 11.0.2 --
+------------------
+--- UNSORTED ---
+i(229828);	-- 20th Anniversary Balloon Chest
+i(228789);	-- Coldflame Ring
+i(232305);	-- Forged Champion's Prestigious Banner
+i(224192);	-- Practice Ravager
+i(232301);	-- Tempered Banner of the Algari
+i(232302);	-- Unknown
+i(232303);	-- Unknown
+i(232304);	-- Unknown
+i(232306);	-- Unknown
+i(232307);	-- Unknown
+i(232308);	-- Unknown

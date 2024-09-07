@@ -45,6 +45,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 				},
 			}),
+			n(224729, {	-- Anub'okki <Disciple of Anub'azal>
+				["coord"] = { 55.9, 42.1, AZJ_KAHET },
+				["sourceQuests"] = { 78256 },	-- The General Consensus
+				["sym"] = {{"select","itemID",
+					228944,	-- Crypt Lord's Severed Thread
+					226519,	-- General's Expertise (TOY!)
+					226509,	-- General's Insight
+					223278,	-- Heritage Undercrawler (MOUNT!)
+					228949,	-- Rumor Map
+					228950,	-- Rumor Map Bundle
+					228952,	-- Treasure Map Bundle
+					226507,	-- Venom Dahn's Webscrub
+				}},
+			}),
 			n(226211, {	-- Ax'ill <Alchemixologist>
 				--["coord"] = { 47.8, 18.7, NERUBAR },
 				["g"] = {
@@ -157,6 +171,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 				},
 			}),
+			n(227176, {	-- Mattimeo Twinstar <Quartermaster>
+				["coord"] = { 23.1, 51.3, AZJ_KAHET },
+				["sym"] = {{"sub", "common_vendor", 217989}},	-- Aeden Braesmeld <Weaponsmith>
+			}),
+			n(223354, {	-- Nataniel Highdawn <Quartermaster>
+				["coord"] = { 44.9, 66.4, AZJ_KAHET },	-- He is sporadically walking around the campfire
+				["sym"] = {{"sub", "common_vendor", 217989}},	-- Aeden Braesmeld <Weaponsmith>
+			}),
 			n(218176, {	-- Nuel Prill <Inscription Supplies>
 				["coord"] = { 42.2, 27.2, NERUBAR },
 				["g"] = {
@@ -239,7 +261,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(218195, {	-- Rukku <Engineering Supplies>
-				["coord"] = { 46.8, 20.0, NERUBAR },
+				["coord"] = { 58.3, 31.5, NERUBAR },
 				["g"] = {
 					i(224052, {	-- Clocks, Gears, Sprockets, and Legs (CI!)
 						["cost"] = {{"c", KEJ, 565}},
