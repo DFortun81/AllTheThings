@@ -420,14 +420,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(456581, {	-- Egg Clutch
-					["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 12 }
+					["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 12 },
 					["coord"] = { 58.1, 31.2, MYCOMANCER_CAVERN },
 					["g"] = {
 						i(225339),	-- Chicken Eggs (QS!/QI!)
 					},
 				}),
 				o(456583, {	-- Lost Shoe
-					["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 12 }
+					["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 12 },
 					["coord"] = { 38.8, 21.7, MYCOMANCER_CAVERN },
 					["g"] = {
 						i(225336),	-- A Lost Shoe (QS!/QI!)
