@@ -361,8 +361,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				o(455437, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451595 },	-- Forgotten Memorial
-					["coord"] = { 33.7, 42.1, AZJ_KAHET },
-					-- ["questID"] = xx,	-- TODO
+					["coord"] = { 33.7, 41.9, AZJ_KAHET },
+					["questID"] = 82873,
 				}),
 				o(455439, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451596 },	-- Forgotten Memorial

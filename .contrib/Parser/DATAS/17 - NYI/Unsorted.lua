@@ -3327,8 +3327,6 @@ root(ROOTS.Unsorted, {
 				i(224252),	-- Calcified Journal
 				i(224777),	-- Sureki Shadecaster
 				i(224810),	-- Woodworm Elixir
-				i(225336),	-- A Lost Shoe
-				i(225339),	-- Chicken Eggs
 				i(225887),	-- Titan Emitter \\ The Archaedas Conundrum
 				i(225927),	-- Emerald Necklace
 				i(228378),	-- Pristine Council's Seal
