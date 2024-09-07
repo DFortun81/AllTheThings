@@ -11,6 +11,7 @@
 416158@@@Nightmarish Emerald Drake [Classic]
 423869@@@Avatar of Flame [Classic]
 446902@@@Polly Roger [Classic]
+440915@@@Auspicious Arborwyrm [Classic]
 0@@@TEST
 25675@@@Reindeer [Holiday]
 25858@@@Reindeer [Holiday]
@@ -90,3 +91,4 @@
 430833@@@Soar [Dracthyr Abilities]
 431049@@@Grotto Netherwing Drake [Cup]
 431050@@@Flourishing Whimsydrake [Cup]
+441313@@@Soar [Dracthyr Abilities]

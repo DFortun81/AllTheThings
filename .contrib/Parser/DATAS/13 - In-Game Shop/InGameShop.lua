@@ -58,9 +58,15 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		i(190636, {	-- Armored Siege Kodo (MOUNT!)
 			["timeline"] = { ADDED_10_1_5 },
 		}),
+		-- #if ANYCLASSIC
+		mount(440915, {	-- Auspicious Arborwyrm (MOUNT!)
+			["timeline"] = { ADDED_3_4_3 },
+		}),
+		-- #else
 		mount(418286, {	-- Auspicious Arborwyrm (MOUNT!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
+		-- #endif
 		i(219450, {	-- Charming Courier (MOUNT!)
 			["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
 		}),

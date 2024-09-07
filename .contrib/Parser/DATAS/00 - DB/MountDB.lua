@@ -27,6 +27,7 @@ i(184865, 348459);	-- Reawakened Phase-Hunter
 i(192455, 372677);	-- Kalu'ak Whalebone Glider
 i(201699, 394209);	-- Festering Emerald Drake
 i(207097, 416158);	-- Nightmarish Emerald Drake
+i(0, 440915);		-- Auspicious Arborwyrm
 i(0, 423869);		-- Avatar of Flame
 i(0, 446902);		-- Polly Roger
 --- NYI ---
@@ -860,7 +861,7 @@ i(124089, 183889);	-- Vicious War Mechanostrider
 i(128282, 189044);	-- Warmongering Gladiator's Felblood Gronnling
 i(128281, 189043);	-- Wild Gladiator's Felblood Gronnling
 --- NYI ---
--- i(128480, 190690);	-- Bristling Hellboar
+i(128480, 0);	-- Bristling Hellboar
 
 -----------------
 -- PATCH 6.2.1 --
@@ -1527,7 +1528,6 @@ i(198821, 359408);	-- Divine Kiss of Ohn'ahra
 i(192804, 374263);	-- Restless Hornstrider
 i(198823, 385253);	-- [PH] Brown Wind Eagle
 i(192787, 351403);	-- [PH] Mammoth V2 Dark
--- i(192789, 374172);	-- [PH] Mammoth V2 Gray
 i(192771, 352927);	-- [PH] Water Salamander Blue
 i(192773, 374093);	-- [PH] Water Salamander Orange
 i(192748, 373913);	-- PH Moose Bull Brown
@@ -1541,7 +1541,8 @@ i(192801, 374255);	-- PH Primal Tallstrider White
 i(192793, 374200);	-- PH Thunder Lizard Black
 i(192794, 374201);	-- PH Thunder Lizard Blue
 i(194106, 0);		-- Highland Drake
-i(192770, 0);		-- [PH] Moose Bull Black
+i(192770, 0);		-- Noble Elderhorn
+i(192789, 0);		-- [PH] Mammoth V2 Gray
 
 ------------------
 -- PATCH 10.0.2 --
@@ -1808,9 +1809,54 @@ i(223284, 448849);	-- Underlight Shorestalker
 ------------------
 -- PATCH 11.0.0 --
 ------------------
-i(229128, 464443);	-- Harmonious Salutations Bear (MOUNT!)
+i(229128, 464443);	-- Harmonious Salutations Bear
 i(217985, 441324);	-- Remembered Golden Gryphon
 i(217987, 441325);	-- Remembered Wind Rider
+--- NYI ---
+i(0, 405623);		-- Armadillo Roller
+i(223570, 449416);	-- Ebonhide Ramolith
+i(226506, 459193);	-- Hand of Reshkigaal
+i(226042, 457656);	-- Plunderlord's Midnight Crocolisk
+i(226044, 457659);	-- Plunderlord's Weathered Crocolisk
+i(223321, 448984);	-- [PH] ArathiLynxMount (Black Fur, Black Armor)
+i(223319, 448980);	-- [PH] ArathiLynxMount (Gold Fur, Yellow Armor)
+i(223320, 448981);	-- [PH] ArathiLynxMount (White Fur, Purple Armor)
+i(223272, 447938);	-- [PH] CaveBorerWormMount (Blue Skin, Purple Saddle)
+i(223273, 447956);	-- [PH] CaveBorerWormMount (Forest Skin, Blue Saddle)
+i(223275, 447958);	-- [PH] CaveBorerWormMount (Nocturne Skin, Red Saddle)
+i(223159, 448265);	-- [PH] Firebee Mount (Blue Variant)
+i(223152, 447149);	-- [PH] Firebee Mount (Grey Skin, Silver Saddle)
+i(223154, 447156);	-- [PH] Firebee Mount (White Skin, White Saddle)
+i(222988, 447173);	-- [PH] Firefly2Mount (Green)
+i(222991, 447181);	-- [PH] Firefly2Mount (Purple)
+i(221778, 447161);	-- [PH] Firefly2Mount (Yellow)
+i(223265, 447189);	-- [PH] FlyingNerubian2 Mount (Tan Body, Orange Saddle)
+i(224413, 452768);	-- [PH] Goliathus (Blue)
+i(224414, 452777);	-- [PH] Goliathus (Green)
+i(224416, 452780);	-- [PH] Goliathus (Purple)
+i(223271, 447214);	-- [PH] Gryphon_Air_Mount (White Skin, Gold Saddle)
+i(223500, 449260);	-- [PH] MoleMount (Gray Skin, Purple Saddle, Teeth Tusks, Nose Base)
+i(221852, 447466);	-- [PH] MoleMount (Pink Skin, Blue Saddle, Teeth Rodent, Nose Large Pointed)
+i(223503, 449271);	-- [PH] MoleMountBasic (Blue Skin, Purple Saddle, Teeth Tusks, Nose Base)
+i(223504, 449283);	-- [PH] MoleMountBasic (Green Skin, Black Saddle, Teeth Tusks, Nose Star)
+i(223506, 449265);	-- [PH] MoleMountBasic (Yellow Skin, Blue Saddle, Teeth Rodent, Nose Large Pointed)
+i(222898, 447898);	-- [PH] Mount - Unicorn Moose (Blue) (Gold Saddle) (Player Mount)
+i(222901, 447910);	-- [PH] Mount - Shalehorn (Brown) (Copper Saddle) (Player Mount) / Item: [PH] Mount - Unicorn Moose (Brown) (Copper Saddle) (Player Mount)
+i(222902, 447911);	-- [PH] Mount - Shalehorn (Crimson) (Dark Saddle) (Player Mount)  / Item: [PH] Mount - Unicorn Moose (Crimson) (Dark Saddle) (Player Mount)
+i(222903, 447912);	-- [PH] Mount - Shalehorn (Ivory) (Silver Saddle) (Player Mount)  / Item: [PH] Mount - Unicorn Moose (Ivory) (Silver Saddle) (Player Mount)
+i(222904, 447913);	-- [PH] Mount - Shalehorn (Yellow) (White Saddle) (Player Mount)  / Item: [PH] Mount - Unicorn Moose (Yellow) (White Saddle) (Player Mount)
+i(224148, 451487);	-- [PH] NerubianWarbeastMount (Cyan)
+i(224149, 451488);	-- [PH] NerubianWarbeastMount (Orange)
+i(223573, 449421);	-- [PH] Proto Ram Earthen (Sand Skin, Grand Horns, Dark Saddle)
+i(223574, 449419);	-- [PH] Proto Ram Earthen (White Skin, Grand Horns, White Saddle)
+i(223313, 448934);	-- [PH] Shadow Elemental (Black)
+i(223587, 449465);	-- [PH] Silver Armored Fel Bat Gladiator Mount
+i(223277, 448682);	-- [PH] SpiderUndergroundMount (Green)
+i(220786, 0);		-- Delver's Dirigible
+i(207104, 0);		-- Morsel Sniffer Reins
+i(219012, 0);		-- Placeholder Delve Exclusive Mount
+i(223268, 0);		-- [PH] DwarvenMechBoss (Gold)
+i(223502, 0);		-- [PH] MoleMount (Brown Skin, Red Saddle, Teeth Tusks, Nose Pointed)
 
 ------------------
 -- PATCH 11.0.2 --
@@ -1831,14 +1877,17 @@ i(223586, 449466);	-- Forged Gladiator's Fel Bat
 i(223278, 448685);	-- Heritage Undercrawler
 i(224415, 452779);	-- Ivory Goliathus
 i(223286, 448850);	-- Kah, Legend of the Deep
+i(226041, 457654);	-- Keg Leg's Radiant Crocolisk
 i(223269, 448188);	-- Machine Defense Unit 1-11
 i(223501, 449258);	-- Ol' Mole Rufus
+i(226040, 457650);	-- Plunderlord's Golden Crocolisk
 i(223158, 447160);	-- Raging Cinderbee
 i(223279, 448689);	-- Royal Court Undercrawler
 i(223314, 448939);	-- Shackled Shadow
 i(223266, 447190);	-- Shadowed Swarmite
 i(223571, 449418);	-- Shale Ramolith
 i(224150, 451489);	-- Siesbarg
+i(223572, 449415);	-- Slatestone Ramolith
 i(221753, 447057);	-- Smoldering Cinderbee
 i(223153, 447151);	-- Soaring Meaderbee
 i(221765, 442358);	-- Stonevault Mechsuit
@@ -1851,13 +1900,10 @@ i(225548, 449264);	-- Wick's Lead
 i(223276, 448680);	-- Widow's Undercrawler
 
 ------------------
--- PATCH 11.0.0 --
+-- PATCH 11.0.5 --
 ------------------
 --- UNSORTED ---
-i(223570, 449416);	-- Ebonhide Ramolith
-i(226506, 459193);	-- Hand of Reshkigaal
-i(226041, 457654);	-- Keg Leg's Radiant Crocolisk
-i(226040, 457650);	-- Plunderlord's Golden Crocolisk
-i(226042, 457656);	-- Plunderlord's Midnight Crocolisk
-i(226044, 457659);	-- Plunderlord's Weathered Crocolisk
-i(223572, 449415);	-- Slatestone Ramolith
+i(224399, 452645);	-- Amani Hunting Bear
+i(228760, 463133);	-- Coldflame Tempest
+i(231374, 468353);	-- Enchanted Spellweave Carpet
+i(224398, 452643);	-- Frayfeather Hippogryph

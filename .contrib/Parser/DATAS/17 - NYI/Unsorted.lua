@@ -6,26 +6,32 @@ root(ROOTS.Unsorted, {
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, 0.5, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 			filter(BATTLE_PETS, {
-				i(229993),	-- Bluedoo (PET!) [Trading Post]
-				i(224410),	-- Craggles (PET!) [Timewalking]
-				i(231365),	-- Karazhan Syphoner (PET!) [Timewalking]
-				i(228781),	-- Lil'Doomy (PET!) [Anniversary]
-				i(230011),	-- Lil'Kaz (PET!) [Anniversary]
-				i(224406),	-- Misty (PET!) [Timewalking]
-				i(231356),	-- Specter (PET!) [Timewalking]
+				i(229993),	-- Bluedoo (PET!) [Trading Post?]
+				i(224410),	-- Craggles (PET!) [Timewalking?]
+				i(231365),	-- Karazhan Syphoner (PET!) [Timewalking?]
+				i(228781),	-- Lil'Doomy (PET!) [Anniversary?]
+				i(230011),	-- Lil'Kaz (PET!) [Anniversary?]
+				i(224406),	-- Misty (PET!) [Timewalking?]
+				i(231356),	-- Specter (PET!) [Timewalking?]
+			}),
+			filter(MOUNTS, {
+				i(224399),	-- Amani Hunting Bear (MOUNT!) [Timewalking?]
+				i(228760),	-- Reins of the Coldflame Tempest (MOUNT!) [Anniversary?]
+				i(231374),	-- Enchanted Spellweave Carpet (MOUNT!) [Timewalking?]
+				i(224398),	-- Frayfeather Hippogryph (MOUNT!) [Timewalking?]
 			}),
 			filter(TOYS, {
-				i(229828),	-- 20th Anniversary Balloon Chest [Anniversary]
-				i(228789),	-- Coldflame Ring [Anniversary]
-				i(232305),	-- Forged Champion's Prestigious Banner [AWC]
-				i(224192),	-- Practice Ravager
-				i(232301),	-- Tempered Banner of the Algari [MDI]
-				i(232302),	-- Unknown
-				i(232303),	-- Unknown
-				i(232304),	-- Unknown
-				i(232306),	-- Unknown
-				i(232307),	-- Unknown
-				i(232308),	-- Unknown
+				i(229828),	-- 20th Anniversary Balloon Chest (TOY!) [Anniversary?]
+				i(228789),	-- Coldflame Ring (TOY!) [Anniversary?]
+				i(232305),	-- Forged Champion's Prestigious Banner (TOY!) [AWC?]
+				i(224192),	-- Practice Ravager (TOY!)
+				i(232301),	-- Tempered Banner of the Algari (TOY!) [MDI?]
+				i(232302),	-- Unknown (TOY!)
+				i(232303),	-- Unknown (TOY!)
+				i(232304),	-- Unknown (TOY!)
+				i(232306),	-- Unknown (TOY!)
+				i(232307),	-- Unknown (TOY!)
+				i(232308),	-- Unknown (TOY!)
 			}),
 			i(221485),	-- Defias Gunpowder
 			i(223550),	-- Eternal Nemesis Robes
@@ -72,10 +78,6 @@ root(ROOTS.Unsorted, {
 			i(224190),	-- Kreeg's Hardy Draught
 			i(224194),	-- Fashion Frenzy Ribbon
 			i(224278),	-- Timewarped Ironforge Blueprints
-			i(224398),	-- Reins of the Frayfeather Hippogryph
-			i(224399),	-- Reins of the Amani Hunting Bear
-
-
 			i(224468),	-- Eternal Netherwind Robes
 			i(224469),	-- Eternal Netherwind Boots
 			i(224470),	-- Eternal Netherwind Gloves
@@ -604,7 +606,6 @@ root(ROOTS.Unsorted, {
 			i(228209),	-- Ensemble: Eternal Nemesis Raiment
 			i(228617),	-- Benatauk's Clue Book
 			i(228694),	-- Damp Ransom Note
-			i(228760),	-- Reins of the Coldflame Tempest
 			i(228766),	-- Sandy Ransom Note
 			i(228782),	-- PH - Sandbox Wolf
 			i(228783),	-- PH - Sandbox Horse
@@ -851,7 +852,6 @@ root(ROOTS.Unsorted, {
 			i(231152),	-- Arsenal: Elite Verdant Gladiator's Weapons
 			i(231344),	-- Obsidian Gladiator's Greatsword
 			i(231345),	-- Obsidian Gladiator's Greatsword
-			i(231374),	-- Enchanted Spellweave Carpet
 			i(231388),	-- Lead Surveyor's Belt
 			i(231389),	-- Luminary Robe
 			i(231390),	-- Spritecaster Cape
@@ -1217,7 +1217,6 @@ root(ROOTS.Unsorted, {
 			i(229005),	-- Cache of Earthen Treasures
 			i(229006),	-- Cache of Earthen Treasures
 			--
-			i(228751),	-- Gigantic Grrloc
 			i(229062),	-- Nisa's Spare Coronet
 			i(229063),	-- Nisa's Spare Wristguards
 			i(229065),	-- Nisa's Spare Gloves
@@ -1317,53 +1316,6 @@ root(ROOTS.Unsorted, {
 			filter(TITLES, {
 				title(560),	-- <Name> Ascension Breaker
 				title(568),	-- <Name>, Machine-Warden
-			}),
-			filter(MOUNTS, {
-				i(223570),	-- Ebonhide Ramolith (MOUNT!)
-				i(226506),	-- Hand of Reshkigaal (MOUNT!) [Trading Post?]
-				i(226042),	-- Plunderlord's Midnight Crocolisk (MOUNT!) [Trading Post?]
-				i(226044),	-- Plunderlord's Weathered Crocolisk (MOUNT!) [Trading Post?]
-				---
-				i(220786),	-- Delver's Dirigible (MOUNT!) (Double Up!?)
-				i(207104),	-- Morsel Sniffer Reins (MOUNT!) (couldnt find)
-				i(219012),	-- Placeholder Delve Exclusive Mount (MOUNT!) (triple up?)
-				---
-				i(221778),	-- [PH] Firefly2Mount (Yellow)
-				i(221852),	-- [PH] MoleMount (Pink Skin, Blue Saddle, Teeth Rodent, Nose Large Pointed)
-				i(222898),	-- [PH] Mount - Unicorn Moose (Blue) (Gold Saddle) (Player Mount)
-				i(222901),	-- [PH] Mount - Unicorn Moose (Brown) (Copper Saddle) (Player Mount)
-				i(222902),	-- [PH] Mount - Unicorn Moose (Crimson) (Dark Saddle) (Player Mount)
-				i(222903),	-- [PH] Mount - Unicorn Moose (Ivory) (Silver Saddle) (Player Mount)
-				i(222904),	-- [PH] Mount - Unicorn Moose (Yellow) (White Saddle) (Player Mount)
-				i(222988),	-- [PH] Firefly2Mount (Green)
-				i(222991),	-- [PH] Firefly2Mount (Purple)
-				i(223152),	-- [PH] Firebee Mount (Grey Skin, Silver Saddle)
-				i(223154),	-- [PH] Firebee Mount (White Skin, White Saddle)
-				i(223159),	-- [PH] Firebee Mount (Blue Variant)
-				i(223265),	-- [PH] FlyingNerubian2 Mount (Tan Body, Orange Saddle)
-				i(223268),	-- [PH] DwarvenMechBoss (Gold)
-				i(223271),	-- [PH] Gryphon_Air_Mount (White Skin, Gold Saddle)
-				i(223272),	-- [PH] CaveBorerWormMount (Blue Skin, Purple Saddle)
-				i(223273),	-- [PH] CaveBorerWormMount (Forest Skin, Blue Saddle)
-				i(223275),	-- [PH] CaveBorerWormMount (Nocturne Skin, Red Saddle)
-				i(223277),	-- [PH] SpiderUndergroundMount (Green)
-				i(223313),	-- [PH] Shadow Elemental (Black)
-				i(223319),	-- [PH] ArathiLynxMount (Gold Fur, Yellow Armor)
-				i(223320),	-- [PH] ArathiLynxMount (White Fur, Purple Armor)
-				i(223321),	-- [PH] ArathiLynxMount (Black Fur, Black Armor)
-				i(223500),	-- [PH] MoleMount (Gray Skin, Purple Saddle, Teeth Tusks, Nose Base)
-				i(223502),	-- [PH] MoleMount (Brown Skin, Red Saddle, Teeth Tusks, Nose Pointed)
-				i(223503),	-- [PH] MoleMountBasic (Blue Skin, Purple Saddle, Teeth Tusks, Nose Base)
-				i(223504),	-- [PH] MoleMountBasic (Green Skin, Black Saddle, Teeth Tusks, Nose Star)
-				i(223506),	-- [PH] MoleMountBasic (Yellow Skin, Blue Saddle, Teeth Rodent, Nose Large Pointed)
-				i(223573),	-- [PH] Proto Ram Earthen (Sand Skin, Grand Horns, Dark Saddle)
-				i(223574),	-- [PH] Proto Ram Earthen (White Skin, Grand Horns, White Saddle)
-				i(223587),	-- [PH] Silver Armored Fel Bat Gladiator Mount
-				i(224148),	-- [PH] NerubianWarbeastMount (Cyan)
-				i(224149),	-- [PH] NerubianWarbeastMount (Orange)
-				i(224413),	-- [PH] Goliathus (Blue) \\ [PH] NerubianBeetleLargeMount (Blue)
-				i(224414),	-- [PH] Goliathus (Green) \\ [PH] NerubianBeetleLargeMount (Green)
-				i(224416),	-- [PH] Goliathus (Purple) \\ [PH] NerubianBeetleLargeMount (Purple)
 			}),
 			n(PROFESSIONS, {
 				i(211494),	-- Spark of Beginnings
