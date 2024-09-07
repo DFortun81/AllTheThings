@@ -2676,6 +2676,15 @@ root(ROOTS.Zones, {
 							{ 68.0, 26.6, BOREAN_TUNDRA },
 						},
 					}),
+					i(34597, {	-- Winterfin Clam
+						["provider"] = { "o", 187367 },	-- Winterfin Clam
+						["coords"] = {
+							{ 38.1, 15.3, BOREAN_TUNDRA },
+							{ 42.5, 14.2, BOREAN_TUNDRA },
+							{ 43.3, 19.7, BOREAN_TUNDRA },
+							{ 37.7, 23.2, BOREAN_TUNDRA },
+						},
+					}),
 				}),
 			},
 		}),
