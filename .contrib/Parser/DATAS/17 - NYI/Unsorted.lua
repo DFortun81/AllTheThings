@@ -5,12 +5,21 @@
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.TWW, {
 		expansion(EXPANSION.TWW, 0.5, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+			filter(BATTLE_PETS, {
+				i(229993),	-- Bluedoo (PET!) [Trading Post]
+				i(224410),	-- Craggles (PET!) [Timewalking]
+				i(231365),	-- Karazhan Syphoner (PET!) [Timewalking]
+				i(228781),	-- Lil'Doomy (PET!) [Anniversary]
+				i(230011),	-- Lil'Kaz (PET!) [Anniversary]
+				i(224406),	-- Misty (PET!) [Timewalking]
+				i(231356),	-- Specter (PET!) [Timewalking]
+			}),
 			filter(TOYS, {
-				i(229828),	-- 20th Anniversary Balloon Chest
-				i(228789),	-- Coldflame Ring
-				i(232305),	-- Forged Champion's Prestigious Banner
+				i(229828),	-- 20th Anniversary Balloon Chest [Anniversary]
+				i(228789),	-- Coldflame Ring [Anniversary]
+				i(232305),	-- Forged Champion's Prestigious Banner [AWC]
 				i(224192),	-- Practice Ravager
-				i(232301),	-- Tempered Banner of the Algari
+				i(232301),	-- Tempered Banner of the Algari [MDI]
 				i(232302),	-- Unknown
 				i(232303),	-- Unknown
 				i(232304),	-- Unknown
@@ -65,8 +74,8 @@ root(ROOTS.Unsorted, {
 			i(224278),	-- Timewarped Ironforge Blueprints
 			i(224398),	-- Reins of the Frayfeather Hippogryph
 			i(224399),	-- Reins of the Amani Hunting Bear
-			i(224406),	-- Misty
-			i(224410),	-- Craggles
+
+
 			i(224468),	-- Eternal Netherwind Robes
 			i(224469),	-- Eternal Netherwind Boots
 			i(224470),	-- Eternal Netherwind Gloves
@@ -597,7 +606,6 @@ root(ROOTS.Unsorted, {
 			i(228694),	-- Damp Ransom Note
 			i(228760),	-- Reins of the Coldflame Tempest
 			i(228766),	-- Sandy Ransom Note
-			i(228781),	-- Lil'Doomy's Hilt
 			i(228782),	-- PH - Sandbox Wolf
 			i(228783),	-- PH - Sandbox Horse
 			i(228784),	-- Coldflame's Edge
@@ -645,9 +653,7 @@ root(ROOTS.Unsorted, {
 			i(229961),	-- Candied Knife
 			i(229962),	-- Tree Topper
 			i(229963),	-- Great Candied Blade
-			i(229993),	-- Bluedoo
 			i(229999),	-- Classic Cloudy Tabard
-			i(230011),	-- Lil'Kaz's Hilt
 			i(230033),	-- Prowler's Midnight Shoulder Cape
 			i(230034),	-- Prowler's Azure Shoulder Cape
 			i(230035),	-- Prowler's Sepia Shoulder Cape
@@ -845,8 +851,6 @@ root(ROOTS.Unsorted, {
 			i(231152),	-- Arsenal: Elite Verdant Gladiator's Weapons
 			i(231344),	-- Obsidian Gladiator's Greatsword
 			i(231345),	-- Obsidian Gladiator's Greatsword
-			i(231356),	-- Specter
-			i(231365),	-- Karazhan Syphoner
 			i(231374),	-- Enchanted Spellweave Carpet
 			i(231388),	-- Lead Surveyor's Belt
 			i(231389),	-- Luminary Robe
@@ -1313,28 +1317,6 @@ root(ROOTS.Unsorted, {
 			filter(TITLES, {
 				title(560),	-- <Name> Ascension Breaker
 				title(568),	-- <Name>, Machine-Warden
-			}),
-			filter(BATTLE_PETS, {
-				i(222969),	-- Anub'Rekyute (PET!)
-				i(221851),	-- Argos (PET!)
-				i(221764),	-- Burntram (PET!)
-				i(222979),	-- Clay Stonecharger (PET!)
-				i(221762),	-- Frenzied Bloodtick (PET!)
-				i(221195),	-- Illskitter (PET!)
-				i(221492),	-- Moss Skipper (PET!)
-				i(221759),	-- Sceaduthax (PET!)
-				i(221495),	-- Waddles (PET!)
-				i(222967),	-- Webbers (PET!)
-				------ Have no source and Naming Weird.. ------
-				i(221493),	-- Admiral (PET!) (Redthroat Skipling)
-				i(223803),	-- Blue Stagshell (PET!) (Rak-Ush Battleshell)
-				i(221022),	-- Cowboy Bee[DNT] (PET!) (Bop???)
-				i(223626),	-- Embersting (PET!) (Cinderhoney Emberstinger)
-				i(222975),	-- Umbral Amalgam [DNT] (PET!) (Couldnt find)
-				-- Did blizz add new Outdoor Pets but also created items for them??!
-				i(228096),	-- Vibrant Firefly
-				i(228097),	-- Pinkskin Burrower
-				i(228098),	-- Troglofrog
 			}),
 			filter(MOUNTS, {
 				i(223570),	-- Ebonhide Ramolith (MOUNT!)
@@ -2590,9 +2572,6 @@ root(ROOTS.Unsorted, {
 	}),
 	expansion(EXPANSION.DF, {
 		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {
-			filter(BATTLE_PETS, {
-				i(223498),	-- Charismatic Courier (PET!) [In-Game Shop?]
-			}),
 			n(PVP, {
 				-- This is all broken as of 10.2.7. Currently added a placeholder data to the SL PvP vendor.
 				i(223769),	-- Eternal Aspirant's Cape
