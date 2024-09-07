@@ -78,11 +78,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-	m(THE_MAW, {
-		n(ZONE_DROPS, {
-			hqt(62679, name(HEADERS.Item, 186727)),	-- Seal Breaker Key
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	m(SHADOWLANDS, {
+		m(THE_MAW, {
+			n(ZONE_DROPS, {
+				q(62679),	-- looting 'Seal Breaker Key' (itemID 186727)
+			}),
 		}),
 	}),
-})))
+})));

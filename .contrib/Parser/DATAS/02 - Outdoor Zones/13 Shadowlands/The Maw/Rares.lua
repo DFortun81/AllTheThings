@@ -534,23 +534,27 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 		})),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-	m(THE_MAW, {
-		-- q(64258),	-- Carriage Crusher / Traitor Balthier
-		-- q(64439),	-- Carriage Crusher / Traitor Balthier
-		q(62722),	-- triggered when killing Naelcrotix / Eketra (possible Wrath of the Jailer rare)
-		q(63384),	-- triggered when killing Sanngror (in addition to 62210)
-		q(68666),	-- Either after killing Ekphoras, Herald of Grief
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+	m(SHADOWLANDS, {
+		m(THE_MAW, {
+			n(RARES, {
+				-- q(64258),	-- Carriage Crusher / Traitor Balthier
+				-- q(64439),	-- Carriage Crusher / Traitor Balthier
+				q(62722),	-- triggered when killing Naelcrotix / Eketra (possible Wrath of the Jailer rare)
+				q(63384),	-- triggered when killing Sanngror (in addition to 62210)
+				q(68666),	-- Either after killing Ekphoras, Herald of Grief
 
-		-- these seem shared... ? some sort of incremental counter?
-		q(64692, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Manifestation of Pain / Zul'gath the Flayer
-		q(64693, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Manifestation of Pain
-		q(64694, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Malleus Grakizz
-		q(64695, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Algel the Haunter / Gruukuuek the Elder / Gralebboih (5th of week)
-		q(64696, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Promathiz / Sentinel Shakorzeth
-		q(64697, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Malleus Grakizz / Sentinel Shakorzeth / Versya the Damned
-		q(64698, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Intercessor Razzra / Zul'gath the Flayer (4th Tormentor of week?)
-		q(64120, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Versya the Damned
-		q(64121, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Sentinel Shakorzeth (somehow it + Kazj the Sentinel were both up at once, this was only after killing Shakorzeth, and then Kazj did not trigger an additional questID at all)
-	})
+				-- these seem shared... ? some sort of incremental counter?
+				q(64692, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Manifestation of Pain / Zul'gath the Flayer
+				q(64693, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Manifestation of Pain
+				q(64694, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Malleus Grakizz
+				q(64695, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Algel the Haunter / Gruukuuek the Elder / Gralebboih (5th of week)
+				q(64696, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Promathiz / Sentinel Shakorzeth
+				q(64697, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Malleus Grakizz / Sentinel Shakorzeth / Versya the Damned
+				q(64698, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Intercessor Razzra / Zul'gath the Flayer (4th Tormentor of week?)
+				q(64120, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Versya the Damned
+				q(64121, {["timeline"] = {ADDED_9_1_0}}),	-- triggered when killing Sentinel Shakorzeth (somehow it + Kazj the Sentinel were both up at once, this was only after killing Shakorzeth, and then Kazj did not trigger an additional questID at all)
+			}),
+		}),
+	}),
 })));
