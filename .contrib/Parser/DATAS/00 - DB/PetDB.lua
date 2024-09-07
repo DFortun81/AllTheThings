@@ -3959,10 +3959,10 @@ i(205164, 3554);	-- Senega
 i(205150, 3544);	-- Shalewing Devourer
 i(205035, 3526);	-- Snapjaw Lurker
 i(205148, 3542);	-- Soot-Stained Shalewing
-
 i(205037, 3527);	-- Void Lurker
 i(205032, 0);		-- Bestial Lurker
 i(205153, 0);		-- Mikah
+i(205157, 0);		-- Undermoth
 
 ------------------
 -- PATCH 10.1.5 --
@@ -4197,7 +4197,7 @@ n(223715, 4574);	-- Snuffling
 n(222736, 4521);	-- Subterranean Dartswog
 n(222739, 4522);	-- Troglofrog
 n(223136, 4544);	-- Umbral Amalgam
-i(205157, 3550);	-- Undermoth
+n(204361, 3550);	-- Undermoth
 n(222344, 4477);	-- Verdant Scootlefish
 n(222615, 4516);	-- Vibrant Glowfly
 n(222421, 4483);	-- Vile Bloodtick

@@ -1392,9 +1392,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(205148, {	-- Soot-Stained Shalewing (PET!)
 				["displayID"] = 112186,
 			}),
-			i(205157, {	-- Undermoth (PET!)
-				["displayID"] = 112196,
-			}),
 			i(205037, {	-- Void Lurker (PET!)
 				["displayID"] = 112164,
 			}),
@@ -1404,6 +1401,9 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			}),
 			i(205153, {	-- Mikah (PET!)
 				["displayID"] = 112190,
+			}),
+			i(205157, {	-- Undermoth (PET!)
+				["displayID"] = 112196,
 			}),
 		})),
 
