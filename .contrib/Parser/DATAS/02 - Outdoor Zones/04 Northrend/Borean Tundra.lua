@@ -2628,7 +2628,13 @@ root(ROOTS.Zones, {
 							i(25474),	-- Tawny Wind Rider (MOUNT!)
 						},
 					}),
-					n(27188, {	-- Tonraq <Spearcrafter>
+					n(
+					-- #if AFTER 7.3.5
+					129141,	-- Tonraq <Spearcrafter>
+					-- #else
+					27188,	-- Tonraq <Spearcrafter>
+					-- #endif
+					{
 						["coord"] = { 77.8, 52.2, BOREAN_TUNDRA },
 						["groups"] = {
 							i(39987),	-- Tuskarr Fishing Spear
