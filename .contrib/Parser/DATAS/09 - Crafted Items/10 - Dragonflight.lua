@@ -19,7 +19,7 @@ local function FirstCraft(questID, recipeID, added, removed)
 	return t;
 end
 local function FirstSkin(questID, creatureID, added, group)
-	local t = { ["questID"] = questID, ["type"] = HEADERS.NPC..":"..creatureID, };
+	local t = name(HEADERS.NPC, creatureID, { ["questID"] = questID })
 	if added then
 		t.timeline = { added };
 	end

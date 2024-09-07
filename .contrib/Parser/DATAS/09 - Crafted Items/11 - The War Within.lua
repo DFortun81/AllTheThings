@@ -4,14 +4,14 @@
 -- Simple function for First Craft tracking Quests
 -- ex. FirstCraft(QUESTID, RECIPEID);	-- RECIPE_NAME
 local function FirstCraft(questID, recipeID, added)
-	local t = { ["questID"] = questID, ["type"] = HEADERS.Spell..":"..recipeID };
+	local t = name(HEADERS.Spell, recipeID, { ["questID"] = questID })
 	if added then
 		t.timeline = { added };
 	end
 	return t;
 end
 local function FirstSkin(questID, creatureID, added, group)
-	local t = { ["questID"] = questID, ["type"] = HEADERS.NPC..":"..creatureID, };
+	local t = name(HEADERS.NPC, creatureID, { ["questID"] = questID })
 	if added then
 		t.timeline = { added };
 	end
