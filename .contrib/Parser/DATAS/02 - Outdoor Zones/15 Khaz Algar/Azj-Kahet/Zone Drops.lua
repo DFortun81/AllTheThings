@@ -22,6 +22,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(226164),	-- Invitation: Grand Auction (QS!)/(QI!)
 				},
 			}),
+			currency(3056),	-- Kej
 		}),
 	}),
 })));

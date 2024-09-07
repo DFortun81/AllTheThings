@@ -27,9 +27,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(85535, {	-- Kej
 					["provider"] = { "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
-					["g"] = {
-						currency(KEJ),
-					},
 				}),
 			}, {	-- RENOWN 9 --
 				q(82431, {	-- Unsevered Threads
@@ -70,9 +67,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(85532, {	-- The Wealth of a Kingdom
 					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
-					["g"] = {
-						currency(KEJ),
-					},
 				}),
 			}, {	-- RENOWN 15 --
 				-- TODO: check Renown Requirement!

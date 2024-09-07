@@ -7,9 +7,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			o(446419, {	-- Concealed Contraband
 				["coord"] = { 34.0, 61.0, AZJ_KAHET },
 				["questID"] = 82525,
-				["g"] = {
-					-- Junk
-				},
 			}),
 			o(446097, {	-- Disturbed Soil
 				["coord"] = { 67.4, 90.7, AZJ_KAHET },
@@ -25,24 +22,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["crs"] = { 223908 },	-- Corrupted Memory
 				["g"] = {
 					i(223870),	-- Cache Key
-					--
 					i(225544),	-- Mind Slurp (PET!)
 				},
 			}),
 			o(446140, {	-- Missing Scouts Pack
 				["coord"] = { 38.8, 37.2, AZJ_KAHET },
 				["questID"] = 82722,
-				["g"] = {
-					-- Gold, junk
-				},
 			}),
 			o(446101, {	-- Nerubian Offerings
 				["description"] = "Below the terrace, hanging from the ceiling.",
 				["coord"] = { 31.6, 20.7, NERUBAR },
 				["questID"] = 82720,
-				["g"] = {
-					-- Gold, junk
-				},
 			}),
 			o(446423, {	-- Nest Egg
 				["description"] = "Above on a web, near the ceiling.",
@@ -56,28 +46,24 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["description"] = "Below, hanging from a bridge.",
 				["coord"] = { 54.5, 50.81, AZJ_KAHET },
 				["questID"] = 82721,
-				["g"] = {
-					-- Gold, food, junk
+			}),
+			o(445360, {	-- Pilfered Loot
+				["description"] = "Respawn timer around 5 minutes.",
+				["coords"] = {	-- Spawn points shared with Stashed Loot
+					{ 22.9, 50.3, AZJ_KAHET },	-- Inside Wildcamp Or'lay
+					{ 76.4, 58.1, AZJ_KAHET },	-- Inside the cave in Mmarl
 				},
 			}),
 			o(446299, {	-- Silk-spun Supplies
 				--["description"] = "Finishing questID 78383 (Strategic Edge) make it spawn",
 				["coord"] = { 67.5, 27.5, AZJ_KAHET },
 				["questID"] = 82719,
-				["g"] = {
-					-- Crafting reagents, bandages
-				},
 			}),
 			o(444844, {	-- Stashed Loot
-				-- ["description"] = "At both locations, every once in a while, Pilfered Loot will appear instead of Stashed. No obbjectID, same loot.",
-				["coords"] = {
+				["description"] = "Respawn timer around 5 minutes.",
+				["coords"] = {	-- Spawn points shared with Pilfered Loot
 					{ 22.9, 50.3, AZJ_KAHET },	-- Inside Wildcamp Or'lay
 					{ 76.4, 58.1, AZJ_KAHET },	-- Inside the cave in Mmarl
-				},
-				--["questID"] = xx,	-- no quest attached, repeatable, respawn timer around 5 minutes
-				["g"] = {	-- Junk, crafting reagents
-					currency(3056),	-- Kej
-					currency(3008),	-- Valorstones
 				},
 			}),
 			o(444800, {	-- Sureki Strongbox, these could be random like Arathi Treasure Hoard
@@ -91,10 +77,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 39.6, 15.5, NERUBAR },
 				},
 				--["questID"] = xx,	-- missing qtID
-				["g"] = {	-- Crafting Reagents, junk
-					currency(3056),	-- Kej
-					currency(3008),	-- Valorstones
-				},
 			}),
 			o(446421, {	-- Trapped Trove
 				["description"] = "IT'S A TRAP! Navigate through the web traps to get to the treasure.",
@@ -127,10 +109,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 50.1, 50.7, AZJ_KAHET },
 					{ 65.0, 23.9, AZJ_KAHET },
 				},
-				["g"] = {	-- Crafting reagents, junk
-					currency(3056),	-- Kej
-					currency(3008),	-- Valorstones
-				},
 			}),
 			o(454340, {	-- Thimble's Cache
 				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
@@ -139,9 +117,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coords"] = {
 					{ 29.0, 42.7, AZJ_KAHET },	-- Thimble (a bit bugged player can see vignette/different version of him during his pathway but they are uninteractable)
 					{ 29.4, 38.7, AZJ_KAHET },	-- cache spot
-				},
-				["g"] = {
-					currency(3056),	-- Kej
 				},
 			}),
 			o(434527, {	-- Thimble's Cache
@@ -152,9 +127,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 54.1, 57.0, AZJ_KAHET },	-- Thimble
 					{ 53.8, 56.8, AZJ_KAHET },	-- cache spot
 				},
-				["g"] = {
-					currency(3056),	-- Kej
-				},
 			}),
 			o(454342, {	-- Thimble's Cache
 				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
@@ -163,9 +135,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coords"] = {
 					{ 75.2, 48.3, NERUBAR },	-- Thimble
 					{ 73.6, 29.0, NERUBAR },	-- cache spot
-				},
-				["g"] = {
-					currency(3056),	-- Kej
 				},
 			}),
 			o(454337, {	-- Thimble's Cache
@@ -176,9 +145,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 69.9, 82.8, NERUBAR },	-- Thimble
 					{ 63.9, 85.7, NERUBAR },	-- cache spot
 				},
-				["g"] = {
-					currency(3056),	-- Kej
-				},
 			}),
 			o(454331, {	-- Thimble's Cache
 				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
@@ -188,14 +154,39 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 72.9, 43.9, AZJ_KAHET },	-- Thimble
 					{ 74.5, 43.0, AZJ_KAHET },	-- cache spot
 				},
+			}),
+			-- I know these three are out of order here but they are related to the "Weaving Supplies". -Exodius
+			o(446437, {	-- Crimson Thread
+				["description"] = "One of three Silk Scraps required to open 'Weaving Supplies'.",
+				["coord"] = { 72.7, 39.7, AZJ_KAHET },
 				["g"] = {
-					currency(3056),	-- Kej
+					i(223902),	-- Crimson Silk Scrap
 				},
 			}),
-			o(452708, {	-- "Weaving Supplies"  //user claims 452708 is right ID
-				--["provider"] = { "o", 452708 },	-- "Weaving Supplies" // probably need to be switched with 446420
+			o(446438, {	-- Gold Thread
+				["description"] = "One of three Silk Scraps required to open 'Weaving Supplies'.",
+				["coord"] = { 74.2, 37.7, AZJ_KAHET },
+				["g"] = {
+					i(223903),	-- Gold Silk Scrap
+				},
+			}),
+			o(446435, {	-- Violet Thread
+				["description"] = "One of three Silk Scraps required to open 'Weaving Supplies'.",
+				["coord"] = { 74.8, 42.9, AZJ_KAHET },
+				["g"] = {
+					i(223901),	-- Violet Silk Scrap
+				},
+			}),
+			o(446420, {	-- "Weaving Supplies"
+				["description"] = "Collect colored Silk Scrap from the nearby platform. Only available if your weekly pact is with The Weaver.",
+				["provider"] = { "o", 446420 },	-- "Weaving Supplies"
 				["questID"] = 82527,
 				["coord"] = { 78.6, 33.2, AZJ_KAHET },
+				["cost"] = {
+					{"i", 223902, 1},	-- Crimson Silk Scrap
+					{"i", 223903, 1},	-- Gold Silk Scrap
+					{"i", 223901, 1},	-- Violet Silk Scrap
+				},
 				["g"] = {
 					i(225347),	-- Web-Vandal's Spinning Wheel (TOY!)
 				},
