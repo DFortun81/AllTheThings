@@ -252,14 +252,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 211351 },	-- Anduin Wrynn
 					["coord"] = { 67.1, 31.5, NERUBAR_LOWER },
 				}),
-				------ Stay awhile and listen ------
-				hqt(81946, {	-- Stay awhile and listen: Anduin Wrynn
-					["name"] = "Stay awhile and listen: Anduin Wrynn",
-					["sourceQuests"] = { 78228 },	-- Into a Skittering City
-					["provider"] = { "n", 211351 },	-- Anduin Wrynn
-					["coord"] = { 67.0, 31.8, NERUBAR_LOWER },
-				}),
-				--
 				q(78232, {	-- Rewriting the Rewritten
 					["sourceQuests"] = { 78228 },	-- Into a Skittering City
 					["provider"] = { "n", 211499 },	-- Executor Nizrek
@@ -273,6 +265,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["provider"] = { "n", 211351 },	-- Anduin Wrynn
 					["coord"] = { 66.9, 31.9, NERUBAR_LOWER },
 				}),
+				------ Stay awhile and listen ------
+				hqt(81946, {	-- Stay awhile and listen: Anduin Wrynn
+					["name"] = "Stay awhile and listen: Anduin Wrynn",
+					["sourceQuests"] = {
+						78231,	-- Like a Spider on the Wall
+						78232,	-- Rewriting the Rewritten
+					},
+					["provider"] = { "n", 211351 },	-- Anduin Wrynn
+					["coord"] = { 67.0, 31.8, NERUBAR_LOWER },
+				}),
+				--
 				q(78244, {	-- Kahet Hospitality
 					["sourceQuests"] = {
 						78231,	-- Like a Spider on the Wall
