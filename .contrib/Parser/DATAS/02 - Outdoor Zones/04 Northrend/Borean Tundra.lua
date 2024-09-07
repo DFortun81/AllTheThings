@@ -2684,6 +2684,12 @@ root(ROOTS.Zones, {
 							{ 43.3, 19.7, BOREAN_TUNDRA },
 							{ 37.7, 23.2, BOREAN_TUNDRA },
 						},
+						["crs"] = {
+							25210,	-- Keymaster Urmgrgl
+							25216,	-- Winterfin Oracle
+							25215,	-- Winterfin Shorestriker
+							25217,	-- Winterfin Warrior
+						},
 					}),
 				}),
 			},
