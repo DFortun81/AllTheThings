@@ -130,17 +130,22 @@ local function OnQUEST_DETAIL(...)
 	-- app.PrintDebug("Contributor.OnQUEST_DETAIL",questID,...)
 	if questID == 0 then return end
 	local questRef = app.SearchForObject("questID", questID, "field")
-	-- app.PrintDebug("Contributor.OnQUEST_DETAIL.ref",questRef and questRef.hash)
+	app.PrintDebug("Contributor.OnQUEST_DETAIL.ref",questRef and questRef.hash)
 	if not questRef then
 		-- this is reported from Quest class
 		return
 	end
 
+	local guid = UnitGUID("questnpc") or UnitGUID("npc")
+	local npc_id, guidtype, _
+	if guid then guidtype, _, _, _, _, npc_id = ("-"):split(guid) end
+	app.PrintDebug(guidtype," => Quest #", questID, npc_id, app.NPCNameFromID[npc_id])
+
 	-- check coord distance
 	local mapID, px, py = app.GetPlayerPosition()
 
 	-- player position in some instances reports as 50,50 so don't check coords if it's this case
-	if px ~= 50 or py ~= 50 then
+	if guidtype ~= "Item" and (px ~= 50 or py ~= 50) then
 		if not Check_coords(questRef, questRef[questRef.key], mapID, px, py) then
 			-- is this quest listed directly under an NPC which has coords instead? check that NPC for coords
 			-- e.g. Garrison NPCs Bronzebeard/Saurfang
@@ -162,10 +167,7 @@ local function OnQUEST_DETAIL(...)
 	end
 
 	-- check quest giver
-	local guid = UnitGUID("questnpc") or UnitGUID("npc")
-	local npc_id, _
-	if guid then _, _, _, _, _, npc_id = ("-"):split(guid) end
-	-- app.PrintDebug(" => Quest #", questID, npc_id, app.NPCNameFromID[npc_id]);
+	-- TODO: test with object providers
 	if npc_id then
 		npc_id = tonumber(npc_id)
 		local found
