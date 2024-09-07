@@ -26,13 +26,13 @@ root(ROOTS.ExpansionFeatures,
 							["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
 							["collectible"] = false,
 						}),
-						faction(1740, {["races"] = HORDE_ONLY}),	-- Aeda Brightdawn
-						faction(1738, {["races"] = ALLIANCE_ONLY}),	-- Defender Illona
-						faction(1733, {["races"] = ALLIANCE_ONLY}),	-- Delvar Ironfist
-						faction(1741),	-- Leorajh
-						faction(1737),	-- Talonpriest Ishaal
-						faction(1736),	-- Tormmok
-						faction(1739, {["races"] = HORDE_ONLY}),	-- Vivianne
+						faction(FACTION_AEDA_BRIGHTDAWN, {["races"] = HORDE_ONLY}),	-- Aeda Brightdawn
+						faction(FACTION_DEFENDER_ILLONA, {["races"] = ALLIANCE_ONLY}),	-- Defender Illona
+						faction(FACTION_DELVAR_IRONFIST, {["races"] = ALLIANCE_ONLY}),	-- Delvar Ironfist
+						faction(FACTION_LEORAJH),	-- Leorajh
+						faction(FACTION_TALONPRIEST_ISHAAL),	-- Talonpriest Ishaal
+						faction(FACTION_TORMMOK),	-- Tormmok
+						faction(FACTION_VIVIANNE, {["races"] = HORDE_ONLY}),	-- Vivianne
 					}),
 					n(QUESTS, {
 						q(37126, {	-- An Ogre Without His Sword...(A)

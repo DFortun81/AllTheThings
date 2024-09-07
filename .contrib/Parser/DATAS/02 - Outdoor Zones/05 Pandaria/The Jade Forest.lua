@@ -108,7 +108,7 @@ root(ROOTS.Zones, {
 					exploration(5966),	-- Woods of the Lost
 				}),
 				n(FACTIONS, {
-					faction(1271, {	-- Order of the Cloud Serpent
+					faction(FACTION_ORDER_OF_THE_CLOUD_SERPENT, {	-- Order of the Cloud Serpent
 						["description"] = "Gain reputation with this faction by training a cloud serpent hatchling, and eventually you will earn either an Azure, Golden, or Jade Cloud Serpent mount.  More rewards are unlocked by reaching Revered and Exalted with the faction, including a toy, more mounts, and Jewelcrafting designs.\n\nThe quest chain begins with |cFFefc400Wild Things|r.\n\n",
 						["icon"] = "Interface\\Icons\\achievement_faction_serpentriders",
 						["g"] = {
@@ -120,7 +120,7 @@ root(ROOTS.Zones, {
 							}),
 							n(QUESTS, {
 								q(30149, {	-- A Feast for the Senses
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 								--	["requireSkill"] = COOKING,
 									["provider"] = { "n", 58413 },	-- Jenova Longeye
@@ -128,7 +128,7 @@ root(ROOTS.Zones, {
 									["coord"] = { 57.3, 45.1, THE_JADE_FOREST },	-- midpoint of NPC's path
 								}),
 								q(31707, {	-- A Tangled Web
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["provider"] = { "n", 58228 },	-- Instructor Skythorn
 									["isDaily"] = true,
@@ -147,7 +147,7 @@ root(ROOTS.Zones, {
 									["coord"] = { 65.3, 31.6, THE_JADE_FOREST },
 								}),
 								q(30151, {	-- Catch!
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["providers"] = {
 										{ "n", 65669 },	-- Your Hatchling
@@ -167,14 +167,14 @@ root(ROOTS.Zones, {
 									["coord"] = { 65.3, 31.6, THE_JADE_FOREST },
 								}),
 								q(31701, {	-- Dark Huntress
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["provider"] = { "n", 56564 },	-- Elder Anli
 									["isDaily"] = true,
 									["coord"] = { 57.8, 44.8, THE_JADE_FOREST },
 								}),
 								q(30158, {	-- Disarming the Enemy
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["provider"] = { "n", 58228 },	-- Instructor Skythorn
 									["isDaily"] = true,
@@ -194,7 +194,7 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(30157, {	-- Emptier Nests
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["provider"] = { "n", 58510 },	-- Suchi the Sweet
 									["isDaily"] = true,
@@ -208,7 +208,7 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(30156, {	-- Feeding Time
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["providers"] = {
 										{ "n", 65669 },	-- Your Hatchling
@@ -222,25 +222,25 @@ root(ROOTS.Zones, {
 									["isDaily"] = true,
 								}),
 								q(30145, {	-- Flight Training: Full Speed Ahead
-									["minReputation"] = { 1271, REVERED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 									["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
 									["provider"] = { "n", 58420 },	-- Instructor Windblade
 									["coord"] = { 58.5, 43.7, THE_JADE_FOREST },
 								}),
 								q(30187, {	-- Flight Training: In Due Course
-									["minReputation"] = { 1271, REVERED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 									["sourceQuests"] = { 30145 },	-- Flight Training: Full Speed Ahead
 									["provider"] = { "n", 58420 },	-- Instructor Windblade
 									["coord"] = { 58.5, 43.7, THE_JADE_FOREST },
 								}),
 								q(30144, {	-- Flight Training: Ring Round-Up
-									["minReputation"] = { 1271, REVERED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 									["sourceQuests"] = { 30143 },	-- They Grow Like Weeds
 									["provider"] = { "n", 58420 },	-- Instructor Windblade
 									["coord"] = { 58.5, 43.7, THE_JADE_FOREST },
 								}),
 								q(30147, {	-- Fragments of the Past
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 								--	["requireSkill"] = ARCHAEOLOGY,
 									["provider"] = { "n", 58413 },	-- Jenova Longeye
@@ -257,7 +257,7 @@ root(ROOTS.Zones, {
 									["coord"] = { 57.5, 45.1, THE_JADE_FOREST },
 								}),
 								q(30148, {	-- Just a Flesh Wound
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 								--	["requireSkill"] = TAILORING,
 									["provider"] = { "n", 58413 },	-- Jenova Longeye
@@ -265,39 +265,39 @@ root(ROOTS.Zones, {
 									["coord"] = { 57.3, 45.1, THE_JADE_FOREST },	-- midpoint of NPC's path
 								}),
 								q(31709, {	-- Lingering Doubt
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["provider"] = { "n", 58508 },	-- Big Bao
 									["isDaily"] = true,
 									["coord"] = { 57.4, 44.0, THE_JADE_FOREST },
 								}),
 								q(31703, {	-- Madcap Mayhem
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["provider"] = { "n", 58564 },	-- Elder Anli
 									["isDaily"] = true,
 								}),
 								q(31712, {	-- Monkey Mischief
-									["minReputation"] = { 1271, REVERED },	-- was not available at Honored.  as soon as i hit Revered and did the questline ending in Flight Training: In Due Course, this daily popped up
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },	-- was not available at Honored.  as soon as i hit Revered and did the questline ending in Flight Training: In Due Course, this daily popped up
 									["sourceQuests"] = { 30187 },	-- Flight Training: In Due Course
 									["provider"] = { "n", 58228 },	-- Instructor Skythorn <Serpent Master>
 									["isDaily"] = true,
 									["coord"] = { 57.6, 45.0, THE_JADE_FOREST },
 								}),
 								q(31705, {	-- Needle Me Not
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30150 },	-- Sweet as Honey
 									["provider"] = { "n", 58564 },	-- Elder Anli
 									["isDaily"] = true,
 								}),
 								q(31702, {	-- On The Prowl
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["provider"] = { "n", 58564 },	-- Elder Anli
 									["isDaily"] = true,
 									["coord"] = { 57.6, 44.9, THE_JADE_FOREST },
 								}),
 								q(31784, {	-- Onyx To Goodness
-									["maxReputation"] = { 1271, EXALTED },
+									["maxReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
 									["repeatable"] = true,
 									["provider"] = { "n", 58564 },	-- Elder Anli
 									["coord"] = { 57.6, 44.8, THE_JADE_FOREST },
@@ -343,7 +343,7 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(31704, {	-- Pooped
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["providers"] = {
 										{ "n", 58384 },	-- Azure Hatchling
@@ -354,7 +354,7 @@ root(ROOTS.Zones, {
 									["isDaily"] = true,
 								}),
 								q(31716, {	-- Pooped
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["providers"] = {
 										{ "n", 58384 },	-- Azure Hatchling
@@ -365,7 +365,7 @@ root(ROOTS.Zones, {
 									["isDaily"] = true,
 								}),
 								q(30159, {	-- Preservation
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["provider"] = { "n", 58510 },	-- Suchi the Sweet
 									["isDaily"] = true,
@@ -380,14 +380,14 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(30155, {	-- Restoring the Balance
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["provider"] = { "n", 58228 },	-- Instructor Skythorn
 									["isDaily"] = true,
 									["coord"] = { 57.5, 45.1, THE_JADE_FOREST },
 								}),
 								q(31810, {	-- Riding the Skies (Azure)
-									["minReputation"] = { 1271, EXALTED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
 									["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
 									["provider"] = { "n", 58564 },	-- Elder Anli
 									["coord"] = { 57.7, 45.0, THE_JADE_FOREST },
@@ -396,7 +396,7 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(31811, {	-- Riding the Skies (Golden)
-									["minReputation"] = { 1271, EXALTED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
 									["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
 									["provider"] = { "n", 58564 },	-- Elder Anli
 									["coord"] = { 57.7, 45.0, THE_JADE_FOREST },
@@ -405,7 +405,7 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(30188, {	-- Riding the Skies (Jade)
-									["minReputation"] = { 1271, EXALTED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, EXALTED },
 									["description"] = "You will receive the mount that corresponds to the color of egg you selected. To get the other two mounts, you may purchase them from the vendor or do the questline again on another character.",
 									["provider"] = { "n", 58564 },	-- Elder Anli
 									["coord"] = { 57.7, 45.0, THE_JADE_FOREST },
@@ -414,28 +414,28 @@ root(ROOTS.Zones, {
 									},
 								}),
 								q(31714, {	-- Saving the Serpents
-									["minReputation"] = { 1271, REVERED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 									["sourceQuests"] = { 30187 },	-- Flight Training: In Due Course
 									["provider"] = { "n", 58511 },	-- Qua-Ro Whitebrow
 									["isDaily"] = true,
 									["coord"] = { 57.2, 43.6, THE_JADE_FOREST },
 								}),
 								q(31708, {	-- Serpent's Scale
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["provider"] = { "n", 58511 },	-- Qua-Ro Whitebrow
 									["isDaily"] = true,
 									["coord"] = { 57.2, 43.5, THE_JADE_FOREST },
 								}),
 								q(31194, {	-- Slitherscale Suppression
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["provider"] = { "n", 58564 },	-- Elder Anli
 									["isDaily"] = true,
 									["coord"] = { 57.5, 45.1, THE_JADE_FOREST },
 								}),
 								q(30146, {	-- Snack Time
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 								--	["requireSkill"] = FISHING,
 									["provider"] = { "n", 58413 },	-- Jenova Longeye
@@ -443,14 +443,14 @@ root(ROOTS.Zones, {
 									["coord"] = { 57.3, 45.1, THE_JADE_FOREST },	-- midpoint of NPC's path
 								}),
 								q(31699, {	-- Sprite Fright
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["provider"] = { "n", 58509 },	-- Ningna Darkwheel
 									["isDaily"] = true,
 									["coord"] = { 58.2, 45.0, THE_JADE_FOREST },
 								}),
 								q(30150, {	-- Sweet as Honey
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["providers"] = {
 										{ "n", 58384 },	-- Azure Hatchling
@@ -461,20 +461,20 @@ root(ROOTS.Zones, {
 									["isDaily"] = true,
 								}),
 								q(31713, {	-- The Big Brew-haha
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["provider"] = { "n", 58506 },	-- Ace Longpaw
 									["isDaily"] = true,
 								}),
 								q(31715, {	-- The Big Kah-Oona
-									["minReputation"] = { 1271, REVERED },	-- was not available at Honored.  as soon as i hit Revered and did the questline ending in Flight Training: In Due Course, this daily popped up
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },	-- was not available at Honored.  as soon as i hit Revered and did the questline ending in Flight Training: In Due Course, this daily popped up
 									["sourceQuests"] = { 30187 },	-- Flight Training: In Due Course
 									["provider"] = { "n", 58564 },	-- Elder Anli
 									["isDaily"] = true,
 									["coord"] = { 57.5, 44.9, THE_JADE_FOREST },
 								}),
 								q(30154, {	-- The Easiest Way To A Serpent's Heart
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["providers"] = {
 										{ "n", 65669 },	-- Your Hatchling
@@ -509,76 +509,76 @@ root(ROOTS.Zones, {
 									["coord"] = { 65.3, 31.6, THE_JADE_FOREST },
 								}),
 								q(31711, {	-- The Seed of Doubt
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["provider"] = { "n", 58564 },	-- Elder Anli
 									["isDaily"] = true,
 									["coord"] = { 57.6, 44.9, THE_JADE_FOREST },
 								}),
 								q(31700, {	-- The Shoe Is On The Other Foot
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["provider"] = { "n", 58509 },	-- Ningna Darkwheel
 									["isDaily"] = true,
 									["coord"] = { 58.2, 45.1, THE_JADE_FOREST },
 								}),
 								q(30152, {	-- The Sky Race
-									["minReputation"] = { 1271, REVERED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 									["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
 									["provider"] = { "n", 58420 },	-- Instructor Windblade
 									["isDaily"] = true;
 									["coord"] = { 58.5, 43.7, THE_JADE_FOREST },
 								}),
 								q(31717, {	-- The Trainer's Challenge: Ace Longpaw
-									["minReputation"] = { 1271, REVERED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 									["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
 									["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
 									["isDaily"] = true,
 									["coord"] = { 57.6, 44.8, THE_JADE_FOREST },
 								}),
 								q(31718, {	-- The Trainer's Challenge: Big Bao
-									["minReputation"] = { 1271, REVERED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 									["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
 									["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
 									["isDaily"] = true,
 									["coord"] = { 57.6, 44.8, THE_JADE_FOREST },
 								}),
 								q(31719, {	-- The Trainer's Challenge: Ningna Darkwheel
-									["minReputation"] = { 1271, REVERED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 									["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
 									["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
 									["isDaily"] = true,
 									["coord"] = { 57.6, 44.8, THE_JADE_FOREST },
 								}),
 								q(31721, {	-- The Trainer's Challenge: Qua-Ro Whitebrow
-									["minReputation"] = { 1271, REVERED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 									["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
 									["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
 									["isDaily"] = true,
 									["coord"] = { 57.6, 44.8, THE_JADE_FOREST },
 								}),
 								q(31720, {	-- The Trainer's Challenge: Suchi the Sweet
-									["minReputation"] = { 1271, REVERED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 									["sourceQuests"] = { 30144 },	-- Flight Training: Ring Round-Up
 									["provider"] = { "n", 58564 },	-- Elder Anli <Serpent Master>
 									["isDaily"] = true,
 									["coord"] = { 57.6, 44.8, THE_JADE_FOREST },
 								}),
 								q(30143, {	-- They Grow Like Weeds
-									["minReputation"] = { 1271, REVERED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, REVERED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["provider"] = { "n", 58564 },	-- Elder Anli
 									["coord"] = { 57.6, 44.9, THE_JADE_FOREST },
 								}),
 								q(31698, {	-- Thinning The Pack
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["provider"] = { "n", 58228 },	-- Instructor Skythorn
 									["isDaily"] = true,
 									["coord"] = { 57.5, 45.0, THE_JADE_FOREST },
 								}),
 								q(31710, {	-- Tiny Treats
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["providers"] = {
 										{ "n", 65672 },	-- Your Cloud Serpent
@@ -590,7 +590,7 @@ root(ROOTS.Zones, {
 									["coord"] = { 57.5, 45.3, THE_JADE_FOREST },
 								}),
 								q(31706, {	-- Weeping Widows
-									["minReputation"] = { 1271, HONORED },
+									["minReputation"] = { FACTION_ORDER_OF_THE_CLOUD_SERPENT, HONORED },
 									["sourceQuests"] = { 30142 },	-- It's A...
 									["provider"] = { "n", 58228 },	-- Instructor Skythorn
 									["isDaily"] = true,
@@ -637,7 +637,7 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					faction(1341, {	-- The August Celestials
+					faction(FACTION_THE_AUGUST_CELESTIALS, {	-- The August Celestials
 						["description"] = "Each day, the August Celestials require your aid at one of their temples.  Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",
 						["collectible"] = false,
 						["icon"] = "Interface\\Icons\\achievement_faction_celestials",
@@ -676,10 +676,10 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					faction(1228, {	-- Forest Hozen
+					faction(FACTION_FOREST_HOZEN, {	-- Forest Hozen
 						["races"] = HORDE_ONLY,
 					}),
-					faction(1242, {	-- Pearlfin Jinyu
+					faction(FACTION_PEARLFIN_JINYU, {	-- Pearlfin Jinyu
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
@@ -1632,7 +1632,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 54.1, 82.5, THE_JADE_FOREST },
 					}),
 					q(29924, {	-- Kill Kher Shan
-						["minReputation"] = { 1228, FRIENDLY },
+						["minReputation"] = { FACTION_FOREST_HOZEN, FRIENDLY },
 						["sourceQuests"] = { 29879 },	-- Swallowed Whole
 						["provider"] = { "n", 56327 },	-- Nibi Nibi
 						["coord"] = { 25.9, 38.7, THE_JADE_FOREST },
@@ -2214,7 +2214,7 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 					})),
 					q(29933, {	-- The Bees' Knees
-						["minReputation"] = { 1228, FRIENDLY },
+						["minReputation"] = { FACTION_FOREST_HOZEN, FRIENDLY },
 						["sourceQuests"] = { 29879 },	-- Swallowed Whole
 						["provider"] = { "n", 56351 },	-- Bo Bo
 						["coord"] = { 25.8, 37.9, THE_JADE_FOREST },
@@ -2679,7 +2679,7 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(31241, {	-- Wicked Wikkets
-						["minReputation"] = { 1228, FRIENDLY },
+						["minReputation"] = { FACTION_FOREST_HOZEN, FRIENDLY },
 						["provider"] = { "n", 63748 },	-- Jeek Jeek
 						["coord"] = { 28.1, 38.9, THE_JADE_FOREST },
 						["races"] = HORDE_ONLY,

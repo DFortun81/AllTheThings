@@ -37,7 +37,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(FACTIONS, {
-				faction(1337, {	-- The Klaxxi
+				faction(FACTION_THE_KLAXXI, {	-- The Klaxxi
 					n(ACHIEVEMENTS, {
 						ach(19915),		-- The Klaxxi
 					}),

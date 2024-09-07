@@ -119,7 +119,7 @@ root(ROOTS.Zones, {
 					pet(1175),	-- Thundertail Flapper (PET!)
 				})),
 				n(FACTIONS, {
-					faction(1387, {	-- Kirin Tor Offensive
+					faction(FACTION_KIRIN_TOR_OFFENSIVE, {	-- Kirin Tor Offensive
 						["races"] = ALLIANCE_ONLY,
 						["g"] = {
 							n(ACHIEVEMENTS, {
@@ -130,7 +130,7 @@ root(ROOTS.Zones, {
 							n(68000, {	-- Hiren Loresong <Kirin Tor Offensive Quartermaster>
 								["coord"] = { 64.6, 74.6, ISLE_OF_THUNDER },
 								["races"] = ALLIANCE_ONLY,
-								["minReputation"] = { 1387, NEUTRAL },	-- Kirin Tor Offensive
+								["minReputation"] = { FACTION_KIRIN_TOR_OFFENSIVE, NEUTRAL },	-- Kirin Tor Offensive
 								["g"] = {
 									i(97191),	-- Ancient Overlord's Onyx Band
 									i(97189),	-- Ancient Primalist's Seal
@@ -180,7 +180,7 @@ root(ROOTS.Zones, {
 								}),
 								q(32599, {    -- Securing A Future
 									["provider"] = { "n", 67992 },    -- Lady Jaina Proudmoore
-									["minReputation"] = { 1387, EXALTED },    -- Kirin Tor Offensive
+									["minReputation"] = { FACTION_KIRIN_TOR_OFFENSIVE, EXALTED },    -- Kirin Tor Offensive
 									["g"] = {
 										i(95589),	-- Glorious Standard of the Kirin Tor Offensive (TOY!)
 									},
@@ -384,7 +384,7 @@ root(ROOTS.Zones, {
 							})),
 						},
 					}),
-					faction(1388, {	-- Sunreaver Onslaught
+					faction(FACTION_SUNREAVER_ONSLAUGHT, {	-- Sunreaver Onslaught
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							n(ACHIEVEMENTS, {
@@ -395,7 +395,7 @@ root(ROOTS.Zones, {
 							n(67672, {	-- Vasarin Redmorn <Sunreaver Onslaught Quartermaster>
 								["coord"] = { 33.4, 32.4, ISLE_OF_THUNDER },
 								["races"] = HORDE_ONLY,
-								["minReputation"] = { 1388, NEUTRAL },	-- Sunreaver Onslaught
+								["minReputation"] = { FACTION_SUNREAVER_ONSLAUGHT, NEUTRAL },	-- Sunreaver Onslaught
 								["g"] = {
 									i(97196),	-- Ancient Overlord's Onyx Band
 									i(97194),	-- Ancient Primalist's Seal
@@ -443,7 +443,7 @@ root(ROOTS.Zones, {
 								}),
 								q(32589, {	-- Life Blood (H)
 									["provider"] = { "n", 67990 },	-- Lor'themar Theron
-									["minReputation"] = { 1388, EXALTED },	-- Sunreaver Onslaught
+									["minReputation"] = { FACTION_SUNREAVER_ONSLAUGHT, EXALTED },	-- Sunreaver Onslaught
 									["g"] = {
 										i(95590),	-- Glorious Standard of the Sunreaver Onslaught (TOY!)
 									},

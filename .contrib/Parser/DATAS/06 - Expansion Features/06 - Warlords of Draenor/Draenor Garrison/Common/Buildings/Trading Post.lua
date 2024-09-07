@@ -25,8 +25,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					}),
 				}),
 				n(FACTIONS, {
-					faction(1710, {["races"] = ALLIANCE_ONLY}),	-- Sha'tari Defense
-					faction(1708, {["races"] = HORDE_ONLY}),	-- Laughing Skull Orcs
+					faction(FACTION_SHATARI_DEFENSE, {["races"] = ALLIANCE_ONLY}),	-- Sha'tari Defense
+					faction(FACTION_LAUGHING_SKULL_ORCS, {["races"] = HORDE_ONLY}),	-- Laughing Skull Orcs
 				}),
 				n(QUESTS, {
 					q(36948, {	-- Auctioning for Parts

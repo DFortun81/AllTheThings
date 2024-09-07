@@ -656,12 +656,12 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(9214, {		-- Hero of Stormshield
 		["races"] = ALLIANCE_ONLY,
 		["timeline"] = { ADDED_6_0_2, REMOVED_8_0_1 },
-		["minReputation"] = { 1682, EXALTED },	-- Wrynn's Vanguard
+		["minReputation"] = { FACTION_WRYNNS_VANGUARD, EXALTED },	-- Wrynn's Vanguard
 	}),
 	ach(9215, {		-- Hero of Warspear
 		["races"] = HORDE_ONLY,
 		["timeline"] = { ADDED_6_0_2, REMOVED_8_0_1 },
-		["minReputation"] = { 1681, EXALTED },	-- Vol'jin's Spear
+		["minReputation"] = { FACTION_VOLJINS_SPEAR, EXALTED },	-- Vol'jin's Spear
 	}),
 	ach(406, {		-- High Five: 1550
 		["timeline"] = { ADDED_3_0_2, REMOVED_6_2_0 },

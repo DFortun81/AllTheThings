@@ -285,10 +285,10 @@ root(ROOTS.Zones, {
 					exploration(7604),	-- Zorammarsh
 				}),
 				n(FACTIONS, {
-					faction(1847, {["races"] = ALLIANCE_ONLY}),	-- Hand of The Prophet
-					faction(1849),	-- Order of the Awakened
-					faction(1850),	-- The Saberstalkers
-					faction(1848, {["races"] = HORDE_ONLY}),	-- Vol'jin's Headhunters
+					faction(FACTION_HAND_OF_THE_PROPHET, {["races"] = ALLIANCE_ONLY}),	-- Hand of The Prophet
+					faction(FACTION_ORDER_OF_THE_AWAKENED),	-- Order of the Awakened
+					faction(FACTION_THE_SABERSTALKERS),	-- The Saberstalkers
+					faction(FACTION_VOLJINS_HEADHUNTERS, {["races"] = HORDE_ONLY}),	-- Vol'jin's Headhunters
 				}),
 				n(FLIGHT_PATHS, {
 					fp(1643, {	-- Aktar's Post, Tanaan Jungle

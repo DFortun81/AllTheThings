@@ -135,7 +135,7 @@ root(ROOTS.Zones, {
 					exploration(6444),	-- Zan'vess
 				}),
 				n(FACTIONS, {
-					faction(1337, {	-- The Klaxxi
+					faction(FACTION_THE_KLAXXI, {	-- The Klaxxi
 						n(ACHIEVEMENTS, {
 							ach(6545),	-- The Klaxxi
 							ach(7313, {	-- Stay Klaxxi
@@ -330,7 +330,7 @@ root(ROOTS.Zones, {
 					q(31018, {	-- Beneath the Heart of Fear
 						["coord"] = { 55.0, 35.8, DREAD_WASTES },
 						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
-						["minReputation"] = { 1337, REVERED },
+						["minReputation"] = { FACTION_THE_KLAXXI, REVERED },
 					}),
 					q(31090, {	-- Better With Age
 						["coord"] = { 48.1, 49.6, DREAD_WASTES },
@@ -568,7 +568,7 @@ root(ROOTS.Zones, {
 					q(31439, {	-- Dropping Our Signal
 						["coord"] = { 54.7, 34.0, DREAD_WASTES },
 						["provider"] = { "n", 64815 },	-- Kor'ik
-						["minReputation"] = { 1337, REVERED },
+						["minReputation"] = { FACTION_THE_KLAXXI, REVERED },
 						["sourceQuest"] = 31066,	-- A Cry From Darkness
 						["groups"] = {
 							i(87202),	-- Klaxxi Tuning Fork (QI!)
@@ -1162,7 +1162,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.1, 35.9, DREAD_WASTES },
 						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 						["sourceQuest"] = 31609,	-- The Wrath of Shek'zeer
-						["minReputation"] = { 1337, EXALTED },
+						["minReputation"] = { FACTION_THE_KLAXXI, EXALTED },
 						["g"] = {
 							i(90859),	-- Seal of the Lucid
 							i(90860),	-- Seal of the Unscathed
@@ -1200,7 +1200,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.0, 35.8, DREAD_WASTES },
 						["provider"] = { "n", 62538 },	-- Kil'ruk the Wind-Reaver
 						["sourceQuest"] = 31066,	-- A Cry From Darkness
-						["minReputation"] = { 1337, HONORED },
+						["minReputation"] = { FACTION_THE_KLAXXI, HONORED },
 					}),
 					q(31487, {	-- Sonic Disruption
 						["coord"] = { 54.2, 35.7, DREAD_WASTES },
@@ -1261,7 +1261,7 @@ root(ROOTS.Zones, {
 					q(31959, {	-- The Empress' Gambit
 						["coord"] = { 55.1, 35.5, DREAD_WASTES },
 						["provider"] = { "n", 62774 },	-- Malik the Unscathed
-						["minReputation"] = { 1337, EXALTED },
+						["minReputation"] = { FACTION_THE_KLAXXI, EXALTED },
 						["description"] = "Must also have completed the |cFFFFD700Amber is the Color of My Energy|r achievement.",
 					}),
 					q(31270, {	-- The Fight Against Fear
@@ -1407,13 +1407,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 55.0, 35.6, DREAD_WASTES },
 						["provider"] = { "n", 64599 },	-- Ambersmith Zikk
 						["sourceQuest"] = 31959,	-- The Empress' Gambit
-						["minReputation"] = { 1337, EXALTED },
+						["minReputation"] = { FACTION_THE_KLAXXI, EXALTED },
 					}),
 					q(31605, {	-- The Zan'thik Dig
 						["coord"] = { 54.7, 34.0, DREAD_WASTES },
 						["provider"] = { "n", 64815 },	-- Kor'ik
 						["isBreadcrumb"] = true,
-						["minReputation"] = { 1337, HONORED },
+						["minReputation"] = { FACTION_THE_KLAXXI, HONORED },
 						["sourceQuest"] = 31066,	-- A Cry From Darkness
 					}),
 					q(31208, {	-- Venomous Intent

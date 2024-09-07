@@ -107,19 +107,19 @@ i(133151, 1174);	-- Commendation of the Wildhammer Clan
 i(133160, 1171);	-- Commendation of Therazane
 
 -- Timewalking: Mists of Pandaria
-i(143947, 1492);	-- Commendation of Emperor Shaohao
-i(143944, 1376);	-- Commendation of Operation: Shieldwall
-i(143946, 1302);	-- Commendation of The Anglers
-i(143938, 1341);	-- Commendation of The August Celestials
-i(143943, 1375);	-- Commendation of the Dominance Offensive
-i(143937, 1269);	-- Commendation of the Golden Lotus
-i(143940, 1387);	-- Commendation of the Kirin Tor Offensive
-i(143935, 1337);	-- Commendation of The Klaxxi
-i(143942, 1271);	-- Commendation of the Order of the Cloud Serpent
-i(143936, 1270);	-- Commendation of the Shado-Pan
-i(143945, 1435);	-- Commendation of the Shado-Pan Assault
-i(143939, 1388);	-- Commendation of the Sunreaver Onslaught
-i(143941, 1272);	-- Commendation of The Tillers
+i(143947, FACTION_EMPEROR_SHAOHAO);	-- Commendation of Emperor Shaohao
+i(143944, FACTION_OPERATION_SHIELDWALL);	-- Commendation of Operation: Shieldwall
+i(143946, FACTION_THE_ANGLERS);	-- Commendation of The Anglers
+i(143938, FACTION_THE_AUGUST_CELESTIALS);	-- Commendation of The August Celestials
+i(143943, FACTION_DOMINANCE_OFFENSIVE);	-- Commendation of the Dominance Offensive
+i(143937, FACTION_GOLDEN_LOTUS);	-- Commendation of the Golden Lotus
+i(143940, FACTION_KIRIN_TOR_OFFENSIVE);	-- Commendation of the Kirin Tor Offensive
+i(143935, FACTION_THE_KLAXXI);	-- Commendation of The Klaxxi
+i(143942, FACTION_ORDER_OF_THE_CLOUD_SERPENT);	-- Commendation of the Order of the Cloud Serpent
+i(143936, FACTION_SHADO_PAN);	-- Commendation of the Shado-Pan
+i(143945, FACTION_SHADO_PAN_ASSAULT);	-- Commendation of the Shado-Pan Assault
+i(143939, FACTION_SUNREAVER_ONSLAUGHT);	-- Commendation of the Sunreaver Onslaught
+i(143941, FACTION_THE_TILLERS);	-- Commendation of The Tillers
 
 -- Miscellaneous Rep Items
 
@@ -128,35 +128,35 @@ i(63518, 1178);		-- Hellscream's Reach Commendation
 i(63517, 1177);		-- Baradin's Wardens Commendation
 
 -- Mists of Pandaria
-i(104286, 1271);	-- Quivering Firestorm Egg [Order of the Cloud Serpent]
-i(89155, 1271);		-- Onyx Egg [Order of the Cloud Serpent]
+i(104286, FACTION_ORDER_OF_THE_CLOUD_SERPENT);	-- Quivering Firestorm Egg [Order of the Cloud Serpent]
+i(89155, FACTION_ORDER_OF_THE_CLOUD_SERPENT);		-- Onyx Egg [Order of the Cloud Serpent]
 
 -- Warlords of Draenor
-i(118099, 1711);	-- Gorian Artifact Fragment [Steamwheedle Preservation]
-i(118100, 1711);	-- Highmaul Relic [Steamwheedle Preservation]
-i(118654, 1711);	-- Aogexon's Fang [Steamwheedle Preservation]
-i(118655, 1711);	-- Bergruu's Horn [Steamwheedle Preservation]
-i(118656, 1711);	-- Dekorhan's Tusk [Steamwheedle Preservation]
-i(118657, 1711);	-- Direhoof's Hide [Steamwheedle Preservation]
-i(118658, 1711);	-- Gagrog's Skull [Steamwheedle Preservation]
-i(118659, 1711);	-- Mu'gra's Head [Steamwheedle Preservation]
-i(118660, 1711);	-- Thek'talon's Talon [Steamwheedle Preservation]
-i(118661, 1711);	-- Xelganak's Stinger [Steamwheedle Preservation]
-i(120172, 1711);	-- Vileclaw's Claw [Steamwheedle Preservation]
-i(117492, 1515);	-- Relic of Rukhmar [Arakkoa Outcasts]
+i(118099, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Gorian Artifact Fragment [Steamwheedle Preservation]
+i(118100, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Highmaul Relic [Steamwheedle Preservation]
+i(118654, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Aogexon's Fang [Steamwheedle Preservation]
+i(118655, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Bergruu's Horn [Steamwheedle Preservation]
+i(118656, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Dekorhan's Tusk [Steamwheedle Preservation]
+i(118657, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Direhoof's Hide [Steamwheedle Preservation]
+i(118658, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Gagrog's Skull [Steamwheedle Preservation]
+i(118659, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Mu'gra's Head [Steamwheedle Preservation]
+i(118660, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Thek'talon's Talon [Steamwheedle Preservation]
+i(118661, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Xelganak's Stinger [Steamwheedle Preservation]
+i(120172, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Vileclaw's Claw [Steamwheedle Preservation]
+i(117492, FACTION_ARAKKOA_OUTCASTS);	-- Relic of Rukhmar [Arakkoa Outcasts]
 -- Timewalking Vendor Commendations
-i(167924, 1515);	-- Commendation of the Arakkoa Outcast
-i(167926, 1711);	-- Commendation of the Steamwheedle Preservation Society
-i(167925, 1849);	-- Commendation of the Order of the Awakened
-i(167927, 1850);	-- Commendation of the Saberstalkers
+i(167924, FACTION_ARAKKOA_OUTCASTS);	-- Commendation of the Arakkoa Outcast
+i(167926, FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY);	-- Commendation of the Steamwheedle Preservation Society
+i(167925, FACTION_ORDER_OF_THE_AWAKENED);	-- Commendation of the Order of the Awakened
+i(167927, FACTION_THE_SABERSTALKERS);	-- Commendation of the Saberstalkers
 -- Horde
-i(167928, 1445);	-- Commendation of the Frostwolf Orcs
-i(167930, 1708);	-- Commendation of the Laughing Skull Orcs
-i(168017, 1848);	-- Commendation of Vol'jin's Headhunters
+i(167928, FACTION_FROSTWOLF_ORCS);	-- Commendation of the Frostwolf Orcs
+i(167930, FACTION_LAUGHING_SKULL_ORCS);	-- Commendation of the Laughing Skull Orcs
+i(168017, FACTION_VOLJINS_HEADHUNTERS);	-- Commendation of Vol'jin's Headhunters
 -- Alliance
-i(167929, 1731);	-- Commendation of the Council of Exarchs
-i(167932, 1710);	-- Commendation of the Sha'tari Defense
-i(168018, 1847);	-- Commendation of the Hand of the Prophet
+i(167929, FACTION_COUNCIL_OF_EXARCHS);	-- Commendation of the Council of Exarchs
+i(167932, FACTION_SHATARI_DEFENSE);	-- Commendation of the Sha'tari Defense
+i(168018, FACTION_HAND_OF_THE_PROPHET);	-- Commendation of the Hand of the Prophet
 
 -- Legion
 i(147418, FACTION_THE_NIGHTFALLEN);	-- Arcane Remnant of Falanaar [The Nightfallen]

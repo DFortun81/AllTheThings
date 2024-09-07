@@ -112,7 +112,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.RuneclothTurnIns,
 					["races"] = HORDE_ONLY,
 				}),
-				faction(1352, {	-- Huojin Pandaren
+				faction(FACTION_HUOJIN_PANDAREN, {	-- Huojin Pandaren
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
@@ -2401,7 +2401,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_5_0_4 },
 						}),
 						i(92070, {	-- Houjin Satchel
-							["minReputation"] = { 1352, REVERED },	-- Huojin Pandaren, Revered.
+							["minReputation"] = { FACTION_HUOJIN_PANDAREN, REVERED },	-- Huojin Pandaren, Revered.
 							["timeline"] = { ADDED_5_1_0 },
 						}),
 					},
@@ -5035,7 +5035,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(66022, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 }, }, {	-- Turtlemaster Odai <Dragon Turtle Breeder>
 					["coord"] = { 69.8, 41.0, ORGRIMMAR },
 					-- Available to Huojin Pandaren without faction requirements.
-					["minReputation"] = { 1352, EXALTED },	-- Huojin Pandaren, Exalted.
+					["minReputation"] = { FACTION_HUOJIN_PANDAREN, EXALTED },	-- Huojin Pandaren, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. PANDAREN_HORDE .. [[ then
 							t.minReputation = nil;

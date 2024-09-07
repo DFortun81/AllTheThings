@@ -193,7 +193,7 @@ root(ROOTS.Zones, {
 					exploration(7385),	-- Zangar Shore
 				}),
 				n(FACTIONS, {
-					faction(1711, {	-- Steamwheedle Preservation Society
+					faction(FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY, {	-- Steamwheedle Preservation Society
 						["crs"] = { 87394 },	-- Kwilax Fuseshiv <Reputation Vendor>
 						["g"] = {
 							n(ACHIEVEMENTS, {

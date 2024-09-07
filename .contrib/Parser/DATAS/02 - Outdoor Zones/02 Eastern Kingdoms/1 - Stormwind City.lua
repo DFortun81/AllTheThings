@@ -63,7 +63,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.RuneclothTurnIns,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				faction(1353, {	-- Tushui Pandaren
+				faction(FACTION_TUSHUI_PANDAREN, {	-- Tushui Pandaren
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -4269,7 +4269,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						i(92071, {	-- Tushui Satchel
-							["minReputation"] = { 1353, REVERED },	-- Tushui Pandaren, Revered.
+							["minReputation"] = { FACTION_TUSHUI_PANDAREN, REVERED },	-- Tushui Pandaren, Revered.
 							["timeline"] = { ADDED_5_1_0 },
 						}),
 						i(83079, {	-- Tushui Tabard
@@ -6352,7 +6352,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(65068, {	-- Old Whitenose <Dragon Turtle Breeder>
 					["coord"] = { 67.8, 18.4, STORMWIND_CITY },
 					-- Available to Tushui Pandaren without faction requirements.
-					["minReputation"] = { 1353, EXALTED },	-- Tushui Pandaren, Exalted.
+					["minReputation"] = { FACTION_TUSHUI_PANDAREN, EXALTED },	-- Tushui Pandaren, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. PANDAREN_ALLIANCE .. [[ then
 							t.minReputation = nil;

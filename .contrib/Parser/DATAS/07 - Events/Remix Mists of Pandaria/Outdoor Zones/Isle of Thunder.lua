@@ -130,7 +130,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(FACTIONS, {
-				faction(1387, {	-- Kirin Tor Offensive
+				faction(FACTION_KIRIN_TOR_OFFENSIVE, {	-- Kirin Tor Offensive
 					["races"] = ALLIANCE_ONLY,
 					["g"] = {
 						n(ACHIEVEMENTS, {
@@ -140,7 +140,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						}),
 					},
 				}),
-				faction(1388, {	-- Sunreaver Onslaught
+				faction(FACTION_SUNREAVER_ONSLAUGHT, {	-- Sunreaver Onslaught
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						n(ACHIEVEMENTS, {

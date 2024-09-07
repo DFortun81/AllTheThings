@@ -110,8 +110,8 @@ root(ROOTS.Zones, {
 					exploration(6165),	-- Upper Sumprushes
 				}),
 				n(FACTIONS, {
-					faction(1270),	-- Shado-Pan
-					faction(1341, {	-- The August Celestials
+					faction(FACTION_SHADO_PAN),	-- Shado-Pan
+					faction(FACTION_THE_AUGUST_CELESTIALS, {	-- The August Celestials
 						["description"] = "Each day, the August Celestials require your aid at one of their temples.  Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",
 						["collectible"] = false,
 						["icon"] = "Interface\\Icons\\achievement_faction_celestials",
@@ -616,7 +616,7 @@ root(ROOTS.Zones, {
 					q(31266, {	-- Mogu Incursions
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["provider"] = { "n", 63009 },	-- Master Snowdrift
-						["minReputation"] = { 1270, EXALTED },
+						["minReputation"] = { FACTION_SHADO_PAN, EXALTED },
 					}),
 					q(30931, {	-- My Father's Crossbow
 						["coord"] = { 43.8, 65.7, TOWNLONG_STEPPES },
@@ -796,7 +796,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["provider"] = { "n", 63009 },	-- Master Snowdrift
 						["sourceQuests"] = { 31266 },	-- Mogu Incursions
-						["minReputation"] = { 1270, EXALTED },
+						["minReputation"] = { FACTION_SHADO_PAN, EXALTED },
 						["g"] = {
 							i(87768),	-- Onyx Cloud Serpent (MOUNT!)
 						},
@@ -864,37 +864,37 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["provider"] = { "n", 63009 },	-- Master Snowdrift
 						["description"] = "Only available when |cFFFFD700Yaungol|r themed dailies are available.",
-						["minReputation"] = { 1270, HONORED },
+						["minReputation"] = { FACTION_SHADO_PAN, HONORED },
 					}),
 					q(31220, {	-- The Challenger's Ring: Hawkmaster Nurong
 						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
 						["provider"] = { "n", 63614 },	-- Ling of the Six Pools
 						["description"] = "Only available when |cFFFFD700Mantid|r themed dailies are available.",
-						["minReputation"] = { 1270, HONORED },
+						["minReputation"] = { FACTION_SHADO_PAN, HONORED },
 					}),
 					q(31128, {	-- The Challenger's Ring: Lao-Chin the Iron Belly
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
 						["provider"] = { "n", 63009 },	-- Master Snowdrift
 						["description"] = "Only available when |cFFFFD700Yaungol|r themed dailies are available.",
-						["minReputation"] = { 1270, REVERED },
+						["minReputation"] = { FACTION_SHADO_PAN, REVERED },
 					}),
 					q(31038, {	-- The Challenger's Ring: Snow Blossom
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["provider"] = { "n", 62304 },	-- Ban Bearheart
 						["description"] = "Only available when |cFFFFD700Mogu|r themed dailies are available.",
-						["minReputation"] = { 1270, HONORED },
+						["minReputation"] = { FACTION_SHADO_PAN, HONORED },
 					}),
 					q(31221, {	-- The Challenger's Ring: Tenwu of the Red Smoke
 						["coord"] = { 49.0, 71.3, TOWNLONG_STEPPES },
 						["provider"] = { "n", 63614 },	-- Ling of the Six Pools
 						["description"] = "Only available when |cFFFFD700Mantid|r themed dailies are available.",
-						["minReputation"] = { 1270, REVERED },
+						["minReputation"] = { FACTION_SHADO_PAN, REVERED },
 					}),
 					q(31104, {	-- The Challenger's Ring: Yalia Sagewhisper
 						["coord"] = { 49.0, 70.4, TOWNLONG_STEPPES },
 						["provider"] = { "n", 62304 },	-- Ban Bearheart
 						["description"] = "Only available when |cFFFFD700Mogu|r themed dailies are available.",
-						["minReputation"] = { 1270, REVERED },
+						["minReputation"] = { FACTION_SHADO_PAN, REVERED },
 					}),
 					q(31118, {	-- The Deadtalker Cipher
 						["coord"] = { 49.5, 70.5, TOWNLONG_STEPPES },
