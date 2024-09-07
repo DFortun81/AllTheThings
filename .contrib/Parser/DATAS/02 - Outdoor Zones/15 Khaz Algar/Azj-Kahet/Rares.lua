@@ -200,7 +200,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81701,
 				["g"] = {
 					i(221239),	-- Spider Blasting Blunderbuss
-					i(221221),	-- Venomous Lurker's Greathelm
+					i(221221),	-- Venomous Lurker's Shoulderplates
 				},
 			}),
 			n(216034, {	-- XT-Minecrusher 8700

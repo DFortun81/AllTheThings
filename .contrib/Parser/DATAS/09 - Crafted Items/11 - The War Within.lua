@@ -1297,7 +1297,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(221796),	-- Aqirite Miner's Headgear
 			i(221788),	-- Bismuth Brainwave Projector
 			i(221790),	-- Bismuth Fisherfriend
-			i(221797),	-- Bismuth Fueled Samophlange
+			i(221797),	-- Bismuth-Fueled Samophlange
 			i(221795),	-- Bismuth Miner's Headgear
 			i(221793),	-- Lapidary's Aqirite Clamps
 			i(221792),	-- Lapidary's Bismuth Clamps

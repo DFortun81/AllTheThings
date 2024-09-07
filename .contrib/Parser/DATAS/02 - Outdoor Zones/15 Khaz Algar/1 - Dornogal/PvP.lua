@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(225481),	-- Technique: Algari Competitor's Staff (RECIPE!)
 						--
 						filter(MISC, {
-							i(213778, {	-- Vicious Jeweler's Setting
+							i(213778, {	-- Forged Jeweler's Setting
 								["cost"] = {
 									{"i", 215236, 2},	-- Vicious Bloodstone x2
 									{"c", HONOR, 9750},

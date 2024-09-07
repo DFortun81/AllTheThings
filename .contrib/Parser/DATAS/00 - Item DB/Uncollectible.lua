@@ -2046,7 +2046,7 @@ i(220276);	-- Wax-Covered Helmet
 i(220263);	-- Wax Miner's Sack
 i(220442);	-- Weighty Shovel
 i(225802);	-- Well-Worn Darning Needle
-i(217163);	-- Well Worn Doll
+i(217163);	-- Well-Worn Doll
 i(220278);	-- Well-Worn Leather Sole
 i(225842);	-- Whirling Sphere
 i(220491);	-- Wicked Blade Shard

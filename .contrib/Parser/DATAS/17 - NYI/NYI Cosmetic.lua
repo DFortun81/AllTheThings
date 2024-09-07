@@ -415,8 +415,8 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190908),	-- Devourer's Skullscythe
 				i(213073),	-- Faded Floral Staff
 				i(190816),	-- Forgehand's "Stable" Fuel Cell
+				i(213106),	-- Gladiator's Battered Greatsword
 				i(213107),	-- Gladiator's Ragged Greatsword
-				i(213106),	-- Gladiator's Serrated Greatsword
 				i(213077),	-- Lavender Bow-quet
 				i(190822),	-- Mo'arg Enforcer's Halberd
 				i(213076),	-- Orchid Bow-quet
