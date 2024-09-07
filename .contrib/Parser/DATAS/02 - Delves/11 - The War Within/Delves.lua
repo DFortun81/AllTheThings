@@ -278,7 +278,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(85648, {	-- Delver's Call: Earthcrawl Mines
 					["provider"] = { "o", 455716 },	-- DELVER'S CALL
-					["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
+					["coords"] = {
+						{ 55.3, 55.9, ISLE_OF_DORN },
+						{ 44.7, 12.0, EARTHCRAWL_MINES },
+					},
 				}),
 			}),
 			n(TREASURES, {
