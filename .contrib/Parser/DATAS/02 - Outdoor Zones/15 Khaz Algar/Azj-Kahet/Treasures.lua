@@ -37,8 +37,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(446101, {	-- Nerubian Offerings
+				["description"] = "Below the terrace, hanging from the ceiling.",
 				["coord"] = { 31.6, 20.7, NERUBAR },
 				["questID"] = 82720,
+				["g"] = {
+					-- Gold, junk
+				},
 			}),
 			o(446423, {	-- Nest Egg
 				["description"] = "Above on a web, near the ceiling.",
@@ -76,7 +80,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					currency(3008),	-- Valorstones
 				},
 			}),
-			o(444800, {	-- Sureki Strongbox
+			o(444800, {	-- Sureki Strongbox, these could be random like Arathi Treasure Hoard
 				["coords"] = {
 					{ 74.9, 56.3, AZJ_KAHET },
 					{ 78.0, 49.3, NERUBAR },
@@ -84,13 +88,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 73.5, 45.2, AZJ_KAHET },
 					--previous coords could be false
 					{ 40.4, 43.5, NERUBAR },
+					{ 39.6, 15.5, NERUBAR },
 				},
 				--["questID"] = xx,	-- missing qtID
-				["g"] = {
-					-- crafting reagent and gray item
+				["g"] = {	-- Crafting Reagents, junk
+					currency(3056),	-- Kej
+					currency(3008),	-- Valorstones
 				},
 			}),
 			o(446421, {	-- Trapped Trove
+				["description"] = "IT'S A TRAP! Navigate through the web traps to get to the treasure.",
 				["coord"] = { 67.4, 74.4, NERUBAR },
 				-- INFO: This is the HQT that triggers ingame when you loot it (Confirmed by Braghe, 2024-08-10)
 				["questID"] = 82727,

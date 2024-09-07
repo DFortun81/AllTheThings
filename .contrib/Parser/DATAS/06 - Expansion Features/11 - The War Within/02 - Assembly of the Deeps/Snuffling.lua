@@ -14,15 +14,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 		n(SNUFFLING, {
 			n(QUESTS, {
 				q(80378, {	-- A Light of the Dark
+					["description"] = "Quest Item drops from Nerubian enemies in the area.\nYou may need to get a few stacks of Unseeming Shift by standing in Blood Pools.",
 					["provider"] = { "i", 217390 },	-- Coagulated Black Blood Clot
-					--["coord"] = { x, y, },	-- Depends on the slain creature from which item is looted
-					["maps"] = { AZJ_KAHET },
+					["coord"] = { 64.8, 80.8, AZJ_KAHET },
 					["g"] = {
 						i(217391),	-- Coagulated Black Blood (QI!)
 						i(220161),	-- Coagulated Sticks of Blood
 					},
 				}),
 				q(79555, {	-- Deep Wax Galactic
+				["description"] = "Quest Item drops from Nerubian enemies in the area.",
 					["provider"] = { "i", 217385 },	-- Clump of Waxy Excretion
 					["coord"] = { 79.4, 76.5, AZJ_KAHET },
 					["g"] = {

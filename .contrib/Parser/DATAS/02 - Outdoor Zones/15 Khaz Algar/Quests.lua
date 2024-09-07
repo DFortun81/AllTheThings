@@ -44,9 +44,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 			header(HEADERS.AchCriteria, 20597.01, {	-- Against the Current
 				------ Chapter 1 ------
 				q(79197, {	-- Surface Bound
-					["sourceQuests"] = { 78248 },	-- What We Still Have
+					["sourceQuests"] = { 84022 },	-- Uniting Severed Threads
 					["provider"] = { "n", 219252 },	-- Alleria Windrunner
-					["coord"] = { 56.2, 48.5, AZJ_KAHET },
+					["coord"] = { 55.6, 44.2, AZJ_KAHET },
 				}),
 				q(84446, {	-- Renown of Khaz Algar
 					["sourceQuests"] = { 79197 },	-- Surface Bound

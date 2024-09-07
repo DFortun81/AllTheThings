@@ -18,12 +18,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 4 --
 			}, {	-- RENOWN 5 --
 			}, {	-- RENOWN 6 --
-			}, {	-- RENOWN 7 --
 				q(82418, {	-- A Cache of Crests and Power
-					["provider"] = { "n", 220867 },	-- Y'tekhi
+					["provider"] = { "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
+			}, {	-- RENOWN 7 --
 			}, {	-- RENOWN 8 --
+				q(85535, {	-- Kej
+					["provider"] = { "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+					["g"] = {
+						currency(KEJ),
+					},
+				}),
 			}, {	-- RENOWN 9 --
 				q(82431, {	-- Unsevered Threads
 					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
@@ -34,13 +41,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 					["g"] = {
 						i(223951),	-- Earth-Encrusted Gem
-					},
-				}),
-				q(85535, {	-- Kej
-					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
-					["coord"] = { 55.3, 41.2, AZJ_KAHET },
-					["g"] = {
-						currency(KEJ),
 					},
 				}),
 			}, {	-- RENOWN 10 --

@@ -1862,7 +1862,6 @@ root(ROOTS.Unsorted, {
 				i(220158),	-- Darkened Tinderbox
 				-- Armor Generator
 
-				i(226174),	-- Famished Bride's Clasp
 				i(226695),	-- Cunning Advisor's Favor
 				i(226696),	-- Mighty Advisor's Favor
 			}),

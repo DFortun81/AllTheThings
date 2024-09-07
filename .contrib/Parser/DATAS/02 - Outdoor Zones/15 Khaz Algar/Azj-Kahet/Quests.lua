@@ -290,22 +290,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(225563),	-- Threadmaestro's Collar
 					},
 				}),
-				------ Stay awhile and listen ------
-				hqt(82033, {	-- Stay awhile and listen: Alleria Windrunner
-					["name"] = "Stay awhile and listen: Alleria Windrunner",
-					["sourceQuests"] = { 78244 },	-- Kaheti Hospitality
-					["provider"] = { "n", 217385 },	-- Alleria Windrunner
-					["coord"] = { 60.6, 68.7, AZJ_KAHET },
-				}),
-				--
 				q(78248, {	-- What We Still Have
 					["sourceQuests"] = { 78244 },	-- Kahet Hospitality
 					["provider"] = { "n", 217385 },	-- Alleria Windrunner
-					["coord"] = { 60.7, 71.1, AZJ_KAHET },
+					["coord"] = { 60.6, 68.8, AZJ_KAHET },
 					["g"] = {
 						-- crit 'Plans Within Plans' for achievementID ? (Azj-Kahet)
 					},
 				}),
+				------ Stay awhile and listen ------
+				hqt(82033, {	-- Stay awhile and listen: Alleria Windrunner
+					["name"] = "Stay awhile and listen: Alleria Windrunner",
+					["sourceQuests"] = { 78248 },	-- What We Still Have
+					["provider"] = { "n", 217385 },	-- Alleria Windrunner
+					["coord"] = { 60.6, 68.8, AZJ_KAHET },
+				}),
+				--
 			}),
 			header(HEADERS.AchCriteria, 40636.01, {	-- Rak-Ush Swarmery
 				q(83325, {	-- Bountiful Beetles
@@ -407,7 +407,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79710, {	-- A Fin of Every Kind
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 217565 },	-- Al'kubian
-					["coord"] = { 60.2, 68.7, AZJ_KAHET },
+					["coord"] = { 60.0, 66.2, AZJ_KAHET },
 					["g"] = {
 						i(222921),	-- Mangled Kobyss Innards (QI!)
 						i(224102),	-- Chunked Kobyss Innards (QI!)
@@ -875,10 +875,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(80502, {	-- Don't Cry for Me, Azi-Kahet
 					["sourceQuests"] = { 79631 },	-- Klaskin's Great Escape
 					["provider"] = { "n", 220690 },	-- Klaskin
-					["coord"] = { 63.9, 16.3, NERUBAR },
+					["coord"] = { 63.9, 16.2, NERUBAR },
 					["g"] = {
-						i(226176),	-- Love's Last Grasp
 						i(226173),	-- Boots of the First Embrace
+						i(226174),	-- Famished Bride's Clasp
+						i(226176),	-- Love's Last Grasp
 						i(226175),	-- Traditional Nuptial Shoulderpads
 					},
 				}),
@@ -1057,12 +1058,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			q(79717, {	-- Means of Ingress
 				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 				["provider"] = { "n", 217692 },	-- Ar'syn <Legendary Legerdemain>
-				["coord"] = { 32.0, 22.4, NERUBAR },
+				["coord"] = { 32.0, 22.5, NERUBAR },
 			}),
 			q(79718, {	-- Skeins Street Irregulars
 				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 				["provider"] = { "n", 217692 },	-- Ar'syn <Legendary Legerdemain>
-				["coord"] = { 32.0, 22.4, NERUBAR },
+				["coord"] = { 32.0, 22.5, NERUBAR },
 			}),
 			q(79729, {	-- Educate Yourself
 				["sourceQuests"] = {
@@ -1070,7 +1071,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					79718,	-- Skeins Street Irregulars
 				},
 				["provider"] = { "n", 217692 },	-- Ar'syn <Legendary Legerdemain>
-				["coord"] = { 32.0, 22.4, NERUBAR },
+				["coord"] = { 32.0, 22.5, NERUBAR },
 			}),
 			q(79723, {	-- Repatriation by Subtraction
 				["sourceQuests"] = {
@@ -1078,7 +1079,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					79718,	-- Skeins Street Irregulars
 				},
 				["provider"] = { "n", 217692 },	-- Ar'syn <Legendary Legerdemain>
-				["coord"] = { 32.0, 22.4, NERUBAR },
+				["coord"] = { 32.0, 22.5, NERUBAR },
 				["g"] = {
 					i(215159),	-- Pillaged Trophy (QI!)
 				},

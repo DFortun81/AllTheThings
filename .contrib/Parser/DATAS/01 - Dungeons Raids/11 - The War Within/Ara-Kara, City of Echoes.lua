@@ -12,7 +12,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			n(QUESTS, {
 				q(83166, {	-- Ara-Kara, the City of Echoes: Harverst's End
 					["provider"] = { "n", 224733 },	-- Tulumun
-					["coord"] = { 56.7, 46.7, AZJ_KAHET },
+					["coord"] = { 56.2, 42.3, AZJ_KAHET },
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {

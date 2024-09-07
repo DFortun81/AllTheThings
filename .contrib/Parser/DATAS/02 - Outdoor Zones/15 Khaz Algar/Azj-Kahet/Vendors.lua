@@ -320,6 +320,29 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 				},
 			}),
+			n(224733, {	-- Tulumun <Assistant to the Executor>
+				["coord"] = { 45.0, 16.7, AZJ_KAHET },
+				["sourceQuests"] = { 78248 },	-- What We Still Have
+				["sym"] = {{"select","itemID",
+					228945,	-- Executor's Severed Thread
+					226511,	-- Nerubimorph Poultice
+					226518,	-- Phero-Escape
+					223279,	-- Royal Court Undercrawler (MOUNT!)
+					228949,	-- Rumor Map
+					228950,	-- Rumor Map Bundle
+					228952,	-- Treasure Map Bundle
+					226508,	-- Vizier's Influence
+				}},
+			}),
+			n(218209, {	-- Tyro Uwe <Custom Twitchery Goods>
+				["coord"] = { 45.0, 16.7, AZJ_KAHET },
+				["sourceQuests"] = { 78256 },	-- The General Consensus
+				["sym"] = {{"select","itemID",
+					222973,	-- Fringe (PET!)
+					222968,	-- Itchbite (PET!)
+					223956,	-- Recipe: Everything-On-A-Stick (RECIPE!)
+				}},
+			}),
 			n(218210, {	-- Tyro Whalekk <Organic Pet Food>
 				["coord"] = { 43.4, 17.0, NERUBAR },
 				["g"] = {

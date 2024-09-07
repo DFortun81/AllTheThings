@@ -745,7 +745,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(83761, {	-- Delves: The Underkeep
 					["provider"] = { "n", 227544 },	-- Brann Bronzebeard
-					["coord"] = { 57.3, 42.2, AZJ_KAHET },
+					["coord"] = { 57.3, 42.3, AZJ_KAHET },
 				}),
 				q(85667, {	-- Delver's Call: The Underkeep
 					["provider"] = { "o", 487855 },	-- DELVER'S CALL: The Underkeep

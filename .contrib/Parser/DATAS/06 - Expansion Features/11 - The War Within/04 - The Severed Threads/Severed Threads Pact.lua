@@ -37,11 +37,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			n(QUESTS, {
 				q(84022, {	-- Uniting Severed Threads
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 55.6, 43.8, AZJ_KAHET },
+					["coord"] = { 55.7, 43.8, AZJ_KAHET },
 				}),
 				q(84682, {	-- Of Pacts and Patrons
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
-					["coord"] = { 55.6, 43.8, AZJ_KAHET },
+					["coord"] = { 55.7, 43.8, AZJ_KAHET },
 				}),
 				-- The General quest chain unlocked at 4/9 rep
 				q(82338, {	-- Absent Errand
