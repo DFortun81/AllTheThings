@@ -297,7 +297,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 					["sourceQuestNumRequired"] = 1,
 					--["provider"] = { "n", xx },
-					["coord"] = { 57.7, 46.9, AZJ_KAHET },
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 					["g"] = {
 						i(225572, {	-- The General's War Chest
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
@@ -313,7 +313,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 					["sourceQuestNumRequired"] = 1,
 					--["provider"] = { "n", xx },
-					["coord"] = { 57.7, 46.9, AZJ_KAHET },
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 					["g"] = {
 						i(225573, {	-- The Vizier's Capital
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
@@ -329,7 +329,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 					["sourceQuestNumRequired"] = 1,
 					--["provider"] = { "n", xx },
-					["coord"] = { 57.7, 46.9, AZJ_KAHET },
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 					["g"] = {
 						i(225571, {	-- The Weaver's Gratuity
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
@@ -391,8 +391,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				o(455445, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451602 },	-- Forgotten Memorial
-					["coord"] = { 42.7, 34.6, AZJ_KAHET },
-					["questID"] = 81572,
+					["coord"] = { 41.0, 29.0, AZJ_KAHET },
+					["questID"] = 82880,	-- 81572 beta?
 				}),
 				o(455446, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451603 },	-- Forgotten Memorial

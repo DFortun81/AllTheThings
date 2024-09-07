@@ -77,7 +77,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(229085),	-- Aevery's Spare Bracers
 					i(229082),	-- Aevery's Spare Chausses
 					i(229081),	-- Aevery's Spare Cowl
-					i(216528, {
+					i(216528, {	-- Faded Supply Chest Key
 						["crs"] = { 218024, } -- Drowned Arathi
 					}),
 					i(229155),	-- Lamplighter's Greataxe
@@ -122,7 +122,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["provider"] = { "i", 212339 },	-- A Small Bag of Seeds
 					}),
 					q(80562, {	-- Blossoming Delight
-						-- TODO: Needs info, currently exists as an achievement criteria for Beacon of Hope (40308), but did the quest even make it to live?
+						--TODO: uncomment when confirmed
+						--["sourceQuests"] = { 78466 },	-- Keyflame: Chef Dinaire
+						--["provider"] = { "n", 206533 },	-- Chef Dinaire
+						--["coord"] = { 64.5, 31.1, HALLOWFALL },
+						--["g"] = {
+						--	i(218127),	-- Ever-Blossoming Fungi (QI!) TODO: remove from unsorted
+						--},
 					}),
 					q(79346, {	-- Chew On That
 						["sourceQuests"] = { 79295 },	-- Keyflame: Taerry Bligestone
@@ -754,6 +760,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(81846),	-- Ore @ 65.3, 16.6
 			q(83047),	-- Ore @ 66.1, 17.0
 			q(83039),	-- Ore @ 66.3, 17.5
+			q(81848),	-- Ore @ 66.4, 23.4
 			q(80337),	-- Radiant Remnant @ 66.1, 16.6
 			q(80347),	-- Radiant Remnant @ 65.7, 16.5
 			q(80342),	-- Radiant Remnant @ 65.4, 16.7
@@ -802,6 +809,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(76996),	-- after buy and use itemID 210826 (Harvestbot Repair Kit)
 			q(83341),	-- after turn in 78933 (The Sweet Eclipse), unlock ability to buy Sweet Eclipse from vendor
 			q(83342),	-- after turn in 76394 (Shadows of Flavor), unlock ability to buy Twilight-Spiced Grouper from vendor
+			--q(),	-- after turn in 80562 (Blossoming Delight), unlock ability to buy Darkstem Stew from vendor
 		}),
 	}),
 })));
