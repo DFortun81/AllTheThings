@@ -108,8 +108,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(216052, {	-- Skrimisher Sa'zryk
-				--TODO: add more waypoint next time
-				["coord"] = { 61.3, 7.4, AZJ_KAHET },
+				["description"] = "Patrolling the path from the base to the top.",
+				["coords"] = {
+						{ 61.3, 7.6, AZJ_KAHET },
+						{ 62.9, 4.8, AZJ_KAHET },
+				},
 				["questID"] = 82078,
 				["g"] = {
 					i(223939),	-- Esteemed Nerubian's Mantle

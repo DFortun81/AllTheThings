@@ -45,6 +45,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 				},
 			}),
+			n(224729, {	-- Anub'okki <Disciple of Anub'azal>
+				["coord"] = { 55.9, 42.1, AZJ_KAHET },
+				["sourceQuests"] = { 78256 },	-- The General Consensus
+				["sym"] = {{"select","itemID",
+					228944,	-- Crypt Lord's Severed Thread
+					226519,	-- General's Expertise (TOY!)
+					226509,	-- General's Insight
+					223278,	-- Heritage Undercrawler (MOUNT!)
+					228949,	-- Rumor Map
+					228950,	-- Rumor Map Bundle
+					228952,	-- Treasure Map Bundle
+					226507,	-- Venom Dahn's Webscrub
+				}},
+			}),
 			n(226211, {	-- Ax'ill <Alchemixologist>
 				--["coord"] = { 47.8, 18.7, NERUBAR },
 				["g"] = {

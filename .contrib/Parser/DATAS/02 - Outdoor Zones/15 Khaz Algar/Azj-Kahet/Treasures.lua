@@ -65,7 +65,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(444844, {	-- Stashed Loot
-				-- ["description"] = "At both locations, every once in a while, Pilfered Loot will appear instead of stashed. No obbjectID, same loot.",
+				-- ["description"] = "At both locations, every once in a while, Pilfered Loot will appear instead of Stashed. No obbjectID, same loot.",
 				["coords"] = {
 					{ 22.9, 50.3, AZJ_KAHET },	-- Inside Wildcamp Or'lay
 					{ 76.4, 58.1, AZJ_KAHET },	-- Inside the cave in Mmarl
@@ -118,10 +118,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coords"] = {
 					{ 36.9, 41.7, AZJ_KAHET },
 					{ 50.1, 50.7, AZJ_KAHET },
-					{ 64.8, 29.9, AZJ_KAHET },
+					{ 65.0, 23.9, AZJ_KAHET },
 				},
-				["g"] = {
-					-- some crafting reagent and gray item
+				["g"] = {	-- Crafting reagents, junk
+					currency(3056),	-- Kej
+					currency(3008),	-- Valorstones
 				},
 			}),
 			o(454340, {	-- Thimble's Cache
