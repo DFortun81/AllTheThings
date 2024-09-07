@@ -1413,7 +1413,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				},
 			}),
 			o(455966, {	-- Earthen Awl
-				["coord"] = { 64.3, 66.3, THE_RINGING_DEEPS },
+				["coord"] = { 64.3, 65.2, THE_RINGING_DEEPS },
 				["questID"] = 83901,
 				["g"] = {
 					i(226327),	-- Earthen Awl

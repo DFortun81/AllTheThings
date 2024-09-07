@@ -439,7 +439,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 				},
 			}),
 			o(455947, {	-- Nerubian's Slicking Iron
-				["coord"] = { 45.5, 49.3, NERUBAR },
+				["coord"] = { 45.5, 49.4, NERUBAR },
 				["questID"] = 83920,
 				["g"] = {
 					i(226346), -- Nerubian's Slicking Iron
