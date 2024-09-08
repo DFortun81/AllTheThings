@@ -6857,6 +6857,7 @@ _.ObjectNames = {
 	[465241] = "Awakened Cache",
 	[465242] = "Awakened Cache",
 	[465243] = "Awakened Cache",
+	[487815] = "DELVER'S CALL: The Waterworks",
 	[487847] = "DELVER'S CALL: Nightfall Sanctum",
 	[487855] = "DELVER'S CALL: The Underkeep",
 	[9000000] = "Wind Sculpted Stone",
