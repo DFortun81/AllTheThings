@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(50549, {	-- Absolutely Barbaric (H)
 				["races"] = HORDE_ONLY,
 			}),
-			q(52803),	-- Accidental Dread
+			petbattle(q(52803)),	-- Accidental Dread
 			q(50718),	-- Agent of Death
 			q(50488),	-- Ancient Jawbreaker
 			q(54684, {	-- Arcanist Quintril (Faction Assault WQ)
@@ -89,7 +89,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				a(ach(13426)),	-- Come On and Slam
 			})),
 			q(50491),	-- Corpse Bringer Yal'kar
-			q(52779),	-- Crawg in the Bog
+			petbattle(q(52779)),	-- Crawg in the Bog
 			q(50492),	-- Cursed Chest
 			a(q(50899, {	-- Don't Stalk Me, Troll (A)
 				["g"] = {
@@ -214,9 +214,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(54671),	-- Overgrown Ancient
 			q(50510),	-- Overstuffed Saurolisk
-			q(52799, {	-- Pack Leader
+			petbattle(q(52799, {	-- Pack Leader
 				["provider"] = { "n", 141799 },	-- Grady Prett
-			}),
+			})),
 			q(50667),	-- Past Due
 			q(51154),	-- Past Due
 			q(54680, {	-- Plague Master Herbert (Faction Assault WQ)

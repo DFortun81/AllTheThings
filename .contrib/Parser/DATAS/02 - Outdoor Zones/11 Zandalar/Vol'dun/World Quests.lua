@@ -125,9 +125,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(164742),	-- Crawler Mine Parts (QI!)
 				},
 			}),
-			q(52878, {	-- Desert Survivors
+			petbattle(q(52878, {	-- Desert Survivors
 				["provider"] = { "n", 142054 },	-- Kusa
-			}),
+			})),
 			q(51780, {	-- Dinner for Dolly and Dot
 				["g"] = {
 					i(155680),	-- Buzzard Meat (QI!)
@@ -220,9 +220,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51100),	-- Jumbo Sandsnapper
 			q(51125),	-- Jungleweb Hunter
 			q(51102),	-- Kamid the Trapper
-			q(52850, {	-- Keeyo's Champions of Vol'dun
+			petbattle(q(52850, {	-- Keeyo's Champions of Vol'dun
 				["provider"] = { "n", 141879 },	-- Keeyo
-			}),
+			})),
 			q(51429),	-- King Clickyclack
 			q(51252),	-- Kiro's Desert Flower
 			q(51635),	-- Make Loh Go
@@ -304,9 +304,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(53326, {	-- Smooth Platinum
 				["requireSkill"] = MINING,
 			}),
-			q(52856, {	-- Snakes on a Terrace
+			petbattle(q(52856, {	-- Snakes on a Terrace
 				["provider"] = { "n", 141945 },	-- Sizzik
-			}),
+			})),
 			q(51106),	-- Songstress Nahjeen
 			q(51836, {	-- Sourching Resources
 				["g"] = {

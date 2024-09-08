@@ -8,9 +8,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			["isWorldQuest"] = true,
 			["lvl"] = { 50 },
 		},{
-			q(52923, {	-- Add More to the Collection
+			petbattle(q(52923, {	-- Add More to the Collection
 				["provider"] = { "n", 142114 },	-- Talia Sparkbrow
-			}),
+			})),
 			q(50864),	-- Atal'zul Gotaka
 			q(50863),	-- Avatar of Xolotal
 			q(52858),	-- Azerite Empowerment
@@ -78,7 +78,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(50854),	-- Crimsonclaw
-			q(52892),	-- Critters are Friends, Not Food
+			petbattle(q(52892)),	-- Critters are Friends, Not Food
 			q(50651, {	-- Cut Off Potential
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
@@ -288,9 +288,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 45,
 				["races"] = HORDE_ONLY,
 			}),
-			q(52938, {	-- Small Beginnings
+			petbattle(q(52938, {	-- Small Beginnings
 				["filterID"] = BATTLE_PETS,
-			}),
+			})),
 			q(54712, {	-- Spell Components (Faction Assault WQ)
 				["lvl"] = 45,
 				["races"] = ALLIANCE_ONLY,
@@ -438,7 +438,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51824, {	-- You're Grounded
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(52937),	-- You've Never Seen Jammer Upset
+			petbattle(q(52937)),	-- You've Never Seen Jammer Upset
 			q(50866),	-- Zayoos
 		})),
 	}),
