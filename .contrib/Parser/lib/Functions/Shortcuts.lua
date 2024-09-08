@@ -706,7 +706,6 @@ achWithRep = function(id, factionID, t)					-- Create an ACHIEVEMENT Object with
 		-- #if ANYCLASSIC
 		-- CRIEVE NOTE: This function is temporary until I get the handlers cleared out of the main files.
 		t.OnInit = [[function(t) return _.CommonAchievementHandlers.EXALTED_REP_OnInit(t, ]] .. factionID ..[[); end]];
-		-- #if BEFORE 4.1.0
 		if not t.OnUpdate then
 			-- #if AFTER 3.0.1
 			if id == 5788 then	-- Agent of Shen'dralar still needs this until after 4.1.0
@@ -718,7 +717,6 @@ achWithRep = function(id, factionID, t)					-- Create an ACHIEVEMENT Object with
 		end
 		t.OnClick = [[_.CommonAchievementHandlers.EXALTED_REP_OnClick]];
 		t.OnTooltip = [[_.CommonAchievementHandlers.EXALTED_REP_OnTooltip]];
-		-- #endif
 		-- #endif
 	end
 	return t;
