@@ -1046,6 +1046,8 @@ namespace ATT
 
             CaptureDebugDBData(data);
 
+            AddPostProcessing(EmptyGroupCleanup, data);
+
             return true;
         }
 
@@ -1057,6 +1059,19 @@ namespace ATT
             {
                 data.Remove("c");
                 LogDebug("INFO: Removed 'c' which is equivalent to ALL_CLASSES", data);
+            }
+        }
+
+        private static void EmptyGroupCleanup(IDictionary<string, object> data)
+        {
+            if (data.TryGetValue("g", out List<object> g))
+            {
+                int subGroupCount = g?.Count ?? 0;
+                // no sub-groups, remove the g field
+                if (subGroupCount == 0)
+                {
+                    data.Remove("g");
+                }
             }
         }
 
