@@ -6,8 +6,8 @@ local _, app = ...;
 -- Globals
 local ipairs,pairs,tostring,setmetatable
 	= ipairs,pairs,tostring,setmetatable
-local GetQuestID
-	= GetQuestID
+local GetQuestID,C_QuestLog_IsOnQuest
+	= GetQuestID,C_QuestLog.IsOnQuest
 
 -- Modules
 local DelayedCallback = app.CallbackHandlers.DelayedCallback
@@ -49,7 +49,7 @@ local function DoReport(reporttype, id)
 	-- keyed report data
 	local keyedData = {}
 	for k,v in pairs(reportData) do
-		keyedData[#keyedData + 1] = tostring(k).." : ("..tostring(v)..")"
+		keyedData[#keyedData + 1] = tostring(k)..": \""..tostring(v).."\""
 	end
 	-- common report data
 	reportData[#reportData + 1] = "### "..reporttype..":"..id
@@ -58,7 +58,7 @@ local function DoReport(reporttype, id)
 		reportData[#reportData + 1] = text
 	end
 	-- common report data
-	reportData[#reportData + 1] = "----User Info---"
+	reportData[#reportData + 1] = "---- User Info ----"
 	reportData[#reportData + 1] = "PlayerLocation: "..GetReportPlayerLocation()
 	reportData[#reportData + 1] = "L:"..app.Level.." R:"..app.RaceID.." ("..app.Race..") C:"..app.ClassIndex.." ("..app.Class..")"
 	reportData[#reportData + 1] = "ver: "..app.Version
@@ -98,7 +98,7 @@ local function Check_coords(objRef, id, mapID, px, py)
 		if mapID == coord[3] then
 			sameMap = mapID
 			dist = app.distance(px, py, coord[1], coord[2])
-			app.PrintDebug("coords @",dist)
+			-- app.PrintDebug("coords @",dist)
 			if dist < closest then closest = dist end
 		end
 	end
@@ -123,10 +123,83 @@ local function Check_coords(objRef, id, mapID, px, py)
 	return check or true
 end
 
-local IgnoredQuestSourceTypes = {
-	Item = 1,
-	Player = 1,
+local IgnoredQuestChecksByTypes = setmetatable({
+	Item = {
+		coord = 1,
+		provider = 1,
+	},
+	Player = {
+		coord = 1,
+		provider = 1
+	},
+}, { __index = function() return app.EmptyTable end})
+
+local GuidTypeProviders = {
+	Item = "i",
+	GameObject = "o",
+	Creature = "n",
 }
+
+local ProviderTypeChecks = {
+	n = function(objID, objRef, providers, providerID)
+		local found
+		-- n providers are turned into qgs on quest objects
+		local qgs = objRef.qgs
+		if qgs then
+			for _,qg in ipairs(qgs) do
+				if qg == providerID then found = 1 break end
+			end
+		end
+		if not found and providers then
+			for _,provider in ipairs(providers) do
+				if provider[1] == "n" and provider[2] == providerID then found = 1 break end
+			end
+		end
+		if not found then
+			local questParent = objRef.parent
+			-- this quest is listed directly under an NPC then compare that NPCID
+			-- e.g. Garrison NPCs Bronzebeard/Saurfang
+			if questParent and questParent.__type == "NPC" and questParent.npcID == providerID then
+				found = 1
+			end
+		end
+		if not found then
+			AddReportData(objRef.__type,objID, {
+				questID = objID,
+				QuestGiver = "Missing Quest Giver: "..providerID.." ["..(app.NPCNameFromID[providerID] or UNKNOWN).."]",
+			})
+		end
+	end,
+	o = function(objID, objRef, providers, providerID)
+		if not providers then
+			AddReportData(objRef.__type,objID, {
+				questID = objID,
+				QuestGiver = "Missing Object Provider: "..providerID,
+			})
+			return
+		end
+		local found
+		for _,provider in ipairs(providers) do
+			if provider[1] == "o" and provider[2] == providerID then found = 1 break end
+		end
+		if not found then
+			AddReportData(objRef.__type,objID, {
+				questID = objID,
+				QuestGiver = "Missing Object Provider: "..providerID,
+			})
+		end
+	end,
+	-- TODO: Items are weird, maybe handle eventually
+	-- i = function(objID, objRef, providers, providerID)
+	-- end,
+}
+
+local function Check_providers(objID, objRef, providerType, id)
+	local providerTypeCheck = ProviderTypeChecks[providerType]
+	if providerTypeCheck then
+		providerTypeCheck(objID, objRef, objRef.providers, id)
+	end
+end
 
 -- Add a check when interacting with a Quest Giver NPC to verify coordinates of the related Quest
 local function OnQUEST_DETAIL(...)
@@ -134,23 +207,25 @@ local function OnQUEST_DETAIL(...)
 	local questID = GetQuestID();
 	-- app.PrintDebug("Contributor.OnQUEST_DETAIL",questID,...)
 	if questID == 0 then return end
+	-- only check logic when the player is not actually on this quest
+	if C_QuestLog_IsOnQuest(questID) then return end
 	local questRef = app.SearchForObject("questID", questID, "field")
-	app.PrintDebug("Contributor.OnQUEST_DETAIL.ref",questRef and questRef.hash)
+	-- app.PrintDebug("Contributor.OnQUEST_DETAIL.ref",questRef and questRef.hash)
 	if not questRef then
 		-- this is reported from Quest class
 		return
 	end
 
 	local guid = UnitGUID("questnpc") or UnitGUID("npc")
-	local npc_id, guidtype, _
-	if guid then guidtype, _, _, _, _, npc_id = ("-"):split(guid) end
-	app.PrintDebug(guidtype," => Quest #", questID, npc_id, app.NPCNameFromID[npc_id])
+	local providerid, guidtype, _
+	if guid then guidtype, _, _, _, _, providerid = ("-"):split(guid) end
+	app.PrintDebug(guidtype,providerid,app.NPCNameFromID[providerid] or app.ObjectNames[providerid]," => Quest #", questID)
 
 	-- check coord distance
 	local mapID, px, py = app.GetPlayerPosition()
 
 	-- player position in some instances reports as 50,50 so don't check coords if it's this case
-	if not IgnoredQuestSourceTypes[guidtype] and (px ~= 50 or py ~= 50) then
+	if not IgnoredQuestChecksByTypes[guidtype].coord and (px ~= 50 or py ~= 50) then
 		if not Check_coords(questRef, questRef[questRef.key], mapID, px, py) then
 			-- is this quest listed directly under an NPC which has coords instead? check that NPC for coords
 			-- e.g. Garrison NPCs Bronzebeard/Saurfang
@@ -171,32 +246,12 @@ local function OnQUEST_DETAIL(...)
 		end
 	end
 
-	-- check quest giver
-	-- TODO: test with object providers
-	if npc_id then
-		npc_id = tonumber(npc_id)
-		local found
-		local qgs = questRef.qgs
-		if qgs then
-			for _,qg in ipairs(qgs) do
-				if qg == npc_id then found = 1 break end
-			end
-		end
-		if not found then
-			local questParent = questRef.parent
-			-- this quest is listed directly under an NPC then compare that NPCID
-			-- e.g. Garrison NPCs Bronzebeard/Saurfang
-			if not questParent or not questParent.__type == "NPC" or questParent.npcID ~= npc_id then
-				AddReportData("quest",questID, {
-					questID = questID,
-					QuestGiver = "Missing Quest Giver: "..npc_id.." ["..(app.NPCNameFromID[npc_id] or UNKNOWN).."]",
-				})
-			end
-		end
+	-- check provider
+	if not IgnoredQuestChecksByTypes[guidtype].provider then
+		Check_providers(questID, questRef, GuidTypeProviders[guidtype], tonumber(providerid))
 	end
 	-- app.PrintDebug("Contributor.OnQUEST_DETAIL.Done")
 end
 AddEventFunc("QUEST_DETAIL", OnQUEST_DETAIL)
-
--- TODO: QUEST_PROGRESS & NOT C_QuestLog.IsOnQuest
--- TODO: QUEST_COMPLETE & NOT C_QuestLog.IsOnQuest
+AddEventFunc("QUEST_PROGRESS", OnQUEST_DETAIL)
+AddEventFunc("QUEST_COMPLETE", OnQUEST_DETAIL)
