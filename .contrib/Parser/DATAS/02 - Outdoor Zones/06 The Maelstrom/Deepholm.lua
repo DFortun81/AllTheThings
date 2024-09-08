@@ -9,14 +9,29 @@ local OnTooltipForTherazane = [[function(t, tooltipInfo)
 		for i,questData in ipairs({
 			{ 27046, 250 },
 			{ 27050, 250 },
-			{ 28390, 350 },
 			{ 27047, 250 },
 			{ 27049, 250 },
-			{ 28391, 350 },
 			{ 27051, 250 },
 		}) do
 			total = total + _.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo,
 				" %s", _.SearchForField("questID", questData[1])[1], questData[2]);
+		end
+		
+		local AddQuestsWithReputation = _.Modules.FactionData.AddQuestsTooltipWithReputation;
+		if reputation >= ]] .. REVERED .. [[ then
+			local glopmother = t.glopmother;
+			if not glopmother then
+				glopmother = {};
+				for i,questID in ipairs({ 28390, 28391 }) do
+					for j,quest in ipairs(_.SearchForField("questID", questID)) do
+						if quest.questID == questID then
+							tinsert(glopmother, quest);
+						end
+					end
+				end
+				t.glopmother = glopmother;
+			end
+			total = total + AddQuestsWithReputation(tooltipInfo, "Complete 1 of 2 quests:", glopmother, 350);
 		end
 		
 		local randomQuests = t.randomQuests;
@@ -31,8 +46,8 @@ local OnTooltipForTherazane = [[function(t, tooltipInfo)
 			end
 			t.randomQuests = randomQuests;
 		end
-		local randomQuestsRep = _.Modules.FactionData.AddQuestsTooltipWithReputation(tooltipInfo, "Complete 1 of 3 random quests:", randomQuests, 250);
-		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", total + randomQuestsRep, 42000);
+		total = total + AddQuestsWithReputation(tooltipInfo, "Complete 1 of 3 quests:", randomQuests, 250);
+		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", total, 42000);
 	end
 end]];
 root(ROOTS.Zones, {
