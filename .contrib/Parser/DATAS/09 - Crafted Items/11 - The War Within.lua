@@ -249,7 +249,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81119, 430615);	-- Phial of Truesight
 			-- Transmutations
 			FirstCraft(81145, 449938);	-- Gleaming Chaos
-			FirstCraft(81128, 430624);	-- Gleaming Glory
+			FirstCraft(81128, 430624);	-- Gleaming Glory (Blasphemite)
 			FirstCraft(81142, 449573);	-- Mercurial Coalescence
 			FirstCraft(81143, 449574);	-- Ominous Coalescence
 			FirstCraft(81144, 449575);	-- Volatile Coalescence
@@ -1156,24 +1156,24 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			["requireSkill"] = ENGINEERING,
 		},{
 			-- Miscellaneous
-			FirstCraft(81357, 447367),	-- Algari Repair Bot 11O Projector
-			FirstCraft(81353, 447358),	-- Blame Redirection Device
-			FirstCraft(81354, 447374),	-- Box o' Booms
-			FirstCraft(81339, 447360),	-- Complicated Fuse Box
-			FirstCraft(81363, 447362),	-- Concealed Chaos Module
+			FirstCraft(81356, 447367),	-- Algari Repair Bot 11O
+			FirstCraft(81347, 447358),	-- Blame Redirection Device
+			--FirstCraft(TODO, 447374),	-- Box o' Booms
+			FirstCraft(81349, 447360),	-- Complicated Fuse Box
+			FirstCraft(81351, 447362),	-- Concealed Chaos Module
 			FirstCraft(81355, 447366),	-- Convincingly Realistic Jumper Cables
-			FirstCraft(81333, 447363),	-- Energy Redistribution Beacon
+			FirstCraft(81352, 447363),	-- Energy Redistribution Beacon
 			FirstCraft(81301, 447312),	-- Invent
-			FirstCraft(81332, 447364),	-- Irresistible Red Button
-			FirstCraft(81356, 447365),	-- Pausing Pylon
-			FirstCraft(81340, 447344),	-- Potion Bomb of Power
-			--FirstCraft(TODO, 447343),	-- Potion Bomb of Recovery
+			FirstCraft(81353, 447364),	-- Irresistible Red Button
+			FirstCraft(81354, 447365),	-- Pausing Pylon
+			FirstCraft(81333, 447344),	-- Potion Bomb of Power
+			FirstCraft(81332, 447343),	-- Potion Bomb of Recovery
 			FirstCraft(81331, 447342),	-- Potion Bomb of Speed
-			FirstCraft(81349, 447361),	-- Pouch of Pocket Grenades
+			FirstCraft(81350, 447361),	-- Pouch of Pocket Grenades
 			FirstCraft(81346, 447357),	-- Recalibrated Safety Switch
-			FirstCraft(81351, 447368),	-- Portable Profession Possibility
-			FirstCraft(81352, 447350),	-- Tinker: Earthen Delivery Drill
-			FirstCraft(81350, 447351),	-- Tinker: Heartseeking Health Injector
+			FirstCraft(81357, 447368),	-- Portable Profession Possibility Projector
+			--FirstCraft(TODO, 447350),	-- Tinker: Earthen Delivery Drill
+			--FirstCraft(TODO, 447351),	-- Tinker: Heartseeking Health Injector
 			-- Reagents
 			FirstCraft(84019, 459299),	-- Bottled Brilliance
 			FirstCraft(81329, 447340),	-- Chaos Circuit
@@ -1226,7 +1226,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81322, 447333),	-- Aqirite Fueled Samophlange
 			FirstCraft(81320, 447331),	-- Aqirite Miner's Headgear
 			FirstCraft(81313, 447324),	-- Bismuth Brainwave Projector
-			FirstCraft(81315, 447324),	-- Bismuth Fisherfriend
+			FirstCraft(81315, 447326),	-- Bismuth Fisherfriend
 			FirstCraft(81321, 447332),	-- Bismuth Fueled Samophlange
 			FirstCraft(81319, 447330),	-- Bismuth Miner's Headgear
 			FirstCraft(81318, 447329),	-- Lapidary's Aqirite Clamps
