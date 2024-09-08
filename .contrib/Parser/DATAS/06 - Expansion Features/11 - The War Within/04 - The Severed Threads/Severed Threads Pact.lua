@@ -294,8 +294,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 
 				q(80592, {	-- Forge a Pact
 					["sourceQuests"] = { 84682 },	-- Of Pacts and Patrons
-					["provider"] = { "n", 223750 },	-- Lady Vinazian
-					["coord"] = { 55.6, 43.8, AZJ_KAHET },
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian
+						{ "n", 220867 },	-- Y'tekhi
+					},
+					["coord"] = { 55.2, 41, AZJ_KAHET },
 				}),
 				q(80671, {	-- Blade of the General
 					["sourceQuests"] = {
@@ -303,8 +306,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						80592,	-- Forge a Pact
 					},
 					["sourceQuestNumRequired"] = 1,
-					--["provider"] = { "n", xx },
-					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian
+						{ "n", 220867 },	-- Y'tekhi
+					},
+					["coord"] = { 55.2, 41, AZJ_KAHET },
 					["g"] = {
 						i(225572, {	-- The General's War Chest
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
@@ -319,8 +325,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						80592,	-- Forge a Pact
 					},
 					["sourceQuestNumRequired"] = 1,
-					--["provider"] = { "n", xx },
-					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian
+						{ "n", 220867 },	-- Y'tekhi
+					},
+					["coord"] = { 55.2, 41, AZJ_KAHET },
 					["g"] = {
 						i(225573, {	-- The Vizier's Capital
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
@@ -335,8 +344,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						80592,	-- Forge a Pact
 					},
 					["sourceQuestNumRequired"] = 1,
-					--["provider"] = { "n", xx },
-					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian
+						{ "n", 220867 },	-- Y'tekhi
+					},
+					["coord"] = { 55.2, 41, AZJ_KAHET },
 					["g"] = {
 						i(225571, {	-- The Weaver's Gratuity
 							i(223138),	-- Formula: Enchant Cloak - Chant of Winged Grace (RECIPE!)
