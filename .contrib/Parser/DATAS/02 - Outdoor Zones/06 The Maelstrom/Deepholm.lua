@@ -942,12 +942,12 @@ root(ROOTS.Zones, {
 						},
 					}),
 					q(27952, {	-- The Explorers [Alliance]
-						["lvl"] = 82,
 						["qg"] = 42573,	-- Earthcaller Yevaa
 						["coord"] = { 49.5, 53.3, DEEPHOLM },
+						["description"] = "This quest must be completed before unlocking the Therazane dailies (The Binding). Earthcaller Yevaa will not be present in the Temple of Earth once the fight is done.",
 						["races"] = ALLIANCE_ONLY,
 						["isBreadcrumb"] = true,
-						["description"] = "This quest must be completed before unlocking the Therazane dailies (The Binding). Earthcaller Yevaa will not be present in the Temple of Earth once the fight is done.",
+						["lvl"] = 83,
 					}),
 					q(26260, {	-- The Forgemaster's Log
 						["lvl"] = 82,
