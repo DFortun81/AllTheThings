@@ -49,6 +49,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["coord"] = { 55.6, 44.2, AZJ_KAHET },
 				}),
 				q(84446, {	-- Renown of Khaz Algar
+						-- Not part of the 'Against the Current' quest chain. I'll find it place somewhere else -Exodius
 					["sourceQuests"] = { 79197 },	-- Surface Bound
 					["provider"] = { "n", 216149 },	-- Moira Thaurissan
 					["coord"] = { 36.1, 80.3, DORNOGAL },
@@ -58,18 +59,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["provider"] = { "n", 216149 },	-- Moira Thaurissan
 					["coord"] = { 36.1, 80.3, DORNOGAL },
 				}),
-				------ Stay awhile and listen ------
-				hqt(84009, {	-- Stay awhile and listen: Alleria Windrunner
-					["name"] = "Stay awhile and listen: Alleria Windrunner",
-					["provider"] = { "n", 216148 },	-- Alleria Windrunner
-					["sourceQuests"] = {
-						79333,	-- The Fleet Arrives
-						-- But you have to have Embassies and Envoys Accepted for the ability to speak to her to pop.. so that shouldbe the sourcequest?
-						-- 82153,	-- Embassies and Envoys
-					},
-					["coord"] = { 35.9, 80.8, DORNOGAL },
-				}),
-				--
 				q(82153, {	-- Embassies and Envoys [A]
 					["sourceQuests"] = { 79333 },	-- The Fleet Arrives
 					["provider"] = { "n", 216168 },	-- Lady Jaina Proudmoore
@@ -103,11 +92,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					},
 				}),
 				------ Stay awhile and listen ------
+				hqt(84009, {	-- Stay awhile and listen: Alleria Windrunner
+					["name"] = "Stay awhile and listen: Alleria Windrunner",
+					["provider"] = { "n", 216148 },	-- Alleria Windrunner
+					["sourceQuests"] = {
+						82153,	-- Embassies and Envoys [A] (Accepted)
+						79328,	-- Embassies and Envoys [H] (Accepted)
+					},
+					["coord"] = { 35.9, 80.8, DORNOGAL },
+				}),
 				hqt(84345, {	-- Stay awhile and Listen: High Exarch Turalyon
 					["name"] = "Stay awhile and listen: High Exarch Turalyon",
 					["sourceQuests"] = {
-						82153,	-- Embassies and Envoys [A]
-						79328,	-- Embassies and Envoys [H]
+						82153,	-- Embassies and Envoys [A] (Completed)
+						79328,	-- Embassies and Envoys [H] (Completed)
 					},
 					["provider"] = { "n", 226650 },	-- High Exarch Turalyon
 					["coord"] = { 31.6, 59.6, DORNOGAL },
@@ -124,14 +122,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				q(83286, {	-- What's Hidden Beneath Dornogal
 					["sourceQuests"] = { 83271 },	-- There's Always Another Secret
 					["provider"] = { "n", 226040 },	-- Speaker Brinthe
-					["coord"] = { 49.9, 60.9, VAULT_OF_MEMORY },
+					["coord"] = { 49.9, 60.8, VAULT_OF_MEMORY },
 				}),
 				------ Stay awhile and listen ------
 				hqt(84814, {	-- Stay awhile and listen: Dagran Thaurissan II
 					["name"] = "Stay awhile and listen: Dagran Thaurissan II (Vault of Memory)",
 					["sourceQuests"] = { 83286 },	-- What's Hidden Beneath Dornogal
 					["provider"] = { "n", 217859 },	-- Dagran Thaurissan II
-					["coord"] = { 50.2, 62, VAULT_OF_MEMORY },
+					["coord"] = { 50.8, 61.7, VAULT_OF_MEMORY },
 				}),
 				--
 				q(83315, {	-- Preparing for the Unknown
@@ -139,10 +137,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["provider"] = { "n", 226040 },	-- Speaker Brinthe
 					["coord"] = { 49.9, 60.8, VAULT_OF_MEMORY },
 				}),
+				------ Stay awhile and listen ------
+				hqt(85682, {	-- Stay awhile and listen: Magni Bronzebeard
+					["name"] = "Stay awhile and listen: Magni Bronzebeard",
+					["sourceQuests"] = { 83315 },	-- Preparing for the Unknown (Completed)
+					["provider"] = { "n", 233267 },	-- Magni Bronzebeard
+					["coord"] = { 31.7, 59.3, DORNOGAL },
+				}),
+				--
 				q(79344, {	-- Urban Odyssey
 					["sourceQuests"] = { 83315 },	-- Preparing for the Unknown
 					["provider"] = { "n", 214917 },	-- Moira Thaurissan
-					["coord"] = { 31.8, 59.4, DORNOGAL },
+					["coord"] = { 31.8, 59.3, DORNOGAL },
 				}),
 			}),
 			header(HEADERS.AchCriteria, 20597.02, {	-- Ties That Bind
@@ -152,19 +158,19 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["provider"] = { "n", 223944 },	-- Alleria Windrunner
 					["coord"] = { 31.5, 59.7, DORNOGAL },
 				}),
-				------ Stay awhile and listen ------
-				hqt(82542, {	-- Stay awhile and listen: Rooktender Lufsela
-					["name"] = "Stay awhile and listen: Rooktender Lufsela",
-					["sourceQuests"] = { 79107 },	-- After the Storm
-					["provider"] = { "n", 215039 },	-- Rooktender Lufsela
-					["coord"] = { 37.6, 82.0, DORNOGAL },
-				}),
-				--
 				q(81914, {	-- Dhar Oztan
 					["sourceQuests"] = { 79107 },	-- After the Storm
 					["provider"] = { "n", 215039 },	-- Rooktender Lufsela
 					["coord"] = { 37.4, 82.2, DORNOGAL },
 				}),
+				------ Stay awhile and listen ------
+				hqt(82542, {	-- Stay awhile and listen: Rooktender Lufsela
+					["name"] = "Stay awhile and listen: Rooktender Lufsela",
+					["sourceQuests"] = { 81914 },	-- Dhar Oztan (Accepted)
+					["provider"] = { "n", 215039 },	-- Rooktender Lufsela
+					["coord"] = { 37.5, 82.2, DORNOGAL },
+				}),
+				--
 				q(79124, {	-- Conduit of the Southern Storm
 					["sourceQuests"] = { 81914 },	-- Dhar Oztan
 					["provider"] = { "n", 214995 },	-- Olbarig
