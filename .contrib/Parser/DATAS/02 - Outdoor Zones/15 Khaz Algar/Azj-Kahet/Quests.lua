@@ -8,7 +8,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.Achievement, 19559, {	-- Azj-Kahet
 				------ Chapter 1 ------
 				q(78384, {	-- Chasing The Light
-					["sourceQuests"] = { 78630 },	-- The Reckoning
+					["sourceQuests"] = {
+						78630,	-- The Reckoning
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 211752 },	-- Alleria Windrunner
 					["coord"] = { 32.0, 47.1, AZJ_KAHET },
 					["g"] = {
@@ -24,7 +28,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				q(78350, {	-- Heroes Never Die
-					["sourceQuests"] = { 78630 },	-- The Reckoning
+					["sourceQuests"] = {
+						78630,	-- The Reckoning
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 211699 },	-- Faerin
 					["coord"] = { 32.1, 46.6, AZJ_KAHET },
 					["g"] = {

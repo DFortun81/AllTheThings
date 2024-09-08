@@ -789,6 +789,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					["provider"] = { "n", 227477 },	-- Brann Bronzebeard
 					["coord"] = { 47.1, 31.9, THE_RINGING_DEEPS },
 				}),
+				q(85667, {	-- Delver's Call: The Waterworks
+					["provider"] = { "o", 487815 },	-- DELVER'S CALL: The Waterworks
+					["coord"] = { 46.9, 32.3, THE_RINGING_DEEPS },
+				}),
 			}),
 			n(TREASURES, {
 				o(455490, {	-- Sturdy Chest
@@ -987,6 +991,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		filter(COSMETIC, {
 			i(212172),	-- Ajul'Nerub Raptorial Spine
+			i(212162),	-- Bitter Shroom Cap
 			i(212166),	-- Coral Nautic Helm
 			i(212173),	-- Rulk'Nerub Raptorial Spine
 			i(212163),	-- Soporific Shroom Cap

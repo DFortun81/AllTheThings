@@ -88,6 +88,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82387, {	-- Slay the Goo, Save the World
 					["coord"] = { 61.3, 76.0, AZJ_KAHET },
 				}),
+				q(79116, {	-- Spider Optics
+					["coord"] = { 69.4, 76.6, AZJ_KAHET },
+				}),
 				q(79960, {	-- Taking It To Go
 					["coord"] = { 75.0, 77.4, AZJ_KAHET },
 					["g"] = {

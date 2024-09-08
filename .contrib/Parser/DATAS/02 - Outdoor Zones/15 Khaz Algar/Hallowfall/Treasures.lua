@@ -11,6 +11,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["description"] = "Spawns everywhere in Hallowfall",
 				["maps"] = { HALLOWFALL },
 				["g"] = {
+					i(212333),	-- Expedition Tinderbox (QS!)
 					i(224463),	-- Lily's Locket (QS!)
 					i(224460),	-- The Lost Diary (QS!)	-- Bugged, currently gives out the wrong quest
 					i(224466),	-- Wilber The Chicken (QS!)

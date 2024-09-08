@@ -1272,7 +1272,6 @@ root(ROOTS.Unsorted, {
 			i(229141),	-- Lamplighter Elite's Polearm
 			i(229142),	-- Lamplighter Elite's Staff
 			i(229143),	-- Lamplighter Elite's Spellstaff
-			i(229144),	-- Lamplighter Elite's Lightstone
 			i(229146),	-- Lamplighter Elite's Glaive
 			i(229147),	-- Lamplighter's Polearm
 			i(229148),	-- Lamplighter's Staff
@@ -1361,7 +1360,6 @@ root(ROOTS.Unsorted, {
 				--- Notes
 				-- Prof Knowledge
 				i(224782),	-- Razor Talon
-				i(227662),	-- Shimmering Dust
 			}),
 			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
 				--
@@ -1439,7 +1437,6 @@ root(ROOTS.Unsorted, {
 				i(217706),	-- Learn Warglaives Test Item (DNT)
 				-- Probably from Delves
 				i(211801),	-- Poisonous Shroom Cap \\ Poisonous Fungarian Helm [PH]
-				i(212162),	-- Bitter Shroom Cap \\ Angry Fungarian Helm [PH]
 				i(212163),	-- Soporific Shroom Cap \\ Sleepy Fungarian Helm [PH]
 				i(212164),	-- Shallow Nautic Helm \\ Shallow Kobyss Helm [PH]
 				i(212165),	-- Deep Nautic Helm \\ Deep Kobyss Helm [PH]
@@ -2076,7 +2073,6 @@ root(ROOTS.Unsorted, {
 				i(219214),	-- Cooling Wax
 				i(219215),	-- Wax Puddle
 				i(219293),	-- Sureki Intelligence
-				i(219350),	-- Maddening Manifest
 				i(219388),	-- Sacred Flame Torch
 				i(219400),	-- Faerin's Torch of Holy Flame
 				i(219804),	-- [DNT] Antiparalytic Serum

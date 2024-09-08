@@ -263,6 +263,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 224199 },	-- Ru'murh
 					["coord"] = { 45.6, 51.0, NERUBAR_LOWER },
 				}),
+				q(81503, {	-- Infiltration: Terror Made Manifest
+					--["provider"] = { "n", 224199 },	-- Ru'murh TODO
+					["coord"] = { 64.2, 75.3, AZJ_KAHET },
+					["g"] = {
+						i(219350),	-- Maddening Manifest (QI!)
+					},
+				}),
 				q(81484, {	-- Wet Work: Death of a Salesman
 					["sourceQuest"] = 82581,
 					["provider"] = { "n", 224201 },	-- Ru'murh

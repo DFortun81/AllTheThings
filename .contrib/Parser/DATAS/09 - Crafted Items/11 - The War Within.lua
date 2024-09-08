@@ -624,6 +624,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(219952),	-- Refulgent Crystal+
 			i(219954),	-- Refulgent Crystal++
 			i(219955),	-- Refulgent Crystal+++
+			i(227662),	-- Shimmering Dust	//Allegedly only rewarded as catchup KP, no quest attached?
 			i(219946),	-- Storm Dust+
 			i(219947),	-- Storm Dust++
 			i(219948),	-- Storm Dust+++

@@ -990,6 +990,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 225857 },	-- Lerrenal Fayn
 					["coord"] = { 68.0, 44.2, HALLOWFALL },
+					["isBreadcrumb"] = true, -- TODO, this is a breadcrumb or For Morale isn't actually sourcequested off this
 					["g"] = {
 						i(225340),	-- Imperial Brut (QI!)
 					},
