@@ -223,7 +223,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = ZIRIAK.coord,
 				}),
 			})),
+		-- #IF BEFORE 11.0.5
 		}),
+		-- #else
+		}),
+		-- #endif
 		petbattle(achraw(40153, {	-- Battle on Khaz Algar
 			crit(67131, {	-- Awakened Custodian
 				["_quests"] = { 82291 },
