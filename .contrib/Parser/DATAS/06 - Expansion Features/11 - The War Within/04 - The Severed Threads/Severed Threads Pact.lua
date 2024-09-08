@@ -357,7 +357,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				o(455436, {	-- Aspirant's Tribute
 					["provider"] = { "o", 437389 },	-- Forgotten Memorial
 					["coord"] = { 65.2, 49.0, AZJ_KAHET },
-					-- ["questID"] = xx,	-- TODO
+					["questID"] = 82876,
 				}),
 				o(455437, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451595 },	-- Forgotten Memorial
@@ -382,7 +382,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				o(455443, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451600 },	-- Forgotten Memorial
 					["coord"] = { 75.7, 86.9, AZJ_KAHET },
-					-- ["questID"] = xx,	-- TODO
+					["questID"] = 82878,
 				}),
 				o(455444, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451601 },	-- Forgotten Memorial
