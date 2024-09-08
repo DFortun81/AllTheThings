@@ -123,6 +123,11 @@ local function Check_coords(objRef, id, mapID, px, py)
 	return check or true
 end
 
+local IgnoredQuestSourceTypes = {
+	Item = 1,
+	Player = 1,
+}
+
 -- Add a check when interacting with a Quest Giver NPC to verify coordinates of the related Quest
 local function OnQUEST_DETAIL(...)
 	-- local questStartItemID = ...;
@@ -145,7 +150,7 @@ local function OnQUEST_DETAIL(...)
 	local mapID, px, py = app.GetPlayerPosition()
 
 	-- player position in some instances reports as 50,50 so don't check coords if it's this case
-	if guidtype ~= "Item" and (px ~= 50 or py ~= 50) then
+	if not IgnoredQuestSourceTypes[guidtype] and (px ~= 50 or py ~= 50) then
 		if not Check_coords(questRef, questRef[questRef.key], mapID, px, py) then
 			-- is this quest listed directly under an NPC which has coords instead? check that NPC for coords
 			-- e.g. Garrison NPCs Bronzebeard/Saurfang
