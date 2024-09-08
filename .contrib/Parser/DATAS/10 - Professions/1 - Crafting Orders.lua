@@ -32,6 +32,7 @@ root(ROOTS.Professions, n(CRAFTING_ORDERS, bubbleDownSelf({ ["timeline"] = { ADD
 		--	i(228610), -- Artisan's Consortium Payout [Uncommon]
 		--	i(228611), -- Artisan's Consortium Payout [Rare]
 		--	i(228612), -- Artisan's Consortium Payout [Epic]
+			i(225673),	-- Artisan's Consortium Seal of Approval
 			i(228724), -- Flicker of Alchemy Knowledge
 			i(228726), -- Flicker of Blacksmithing Knowledge
 			i(228728), -- Flicker of Enchanting Knowledge
