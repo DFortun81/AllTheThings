@@ -1558,7 +1558,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						q(25377, {	-- The Horde's Hoard
 							["provider"] = { "i", 53053 },	-- Tattered Treasure Map
-							["sourceQuest"] = 25558,	-- All or Nothing
 							["crs"] = { 39918 },	-- Clacksnap Pincer
 							["groups"] = {
 								objective(1, {	-- 0/1 Horde Chest Key
