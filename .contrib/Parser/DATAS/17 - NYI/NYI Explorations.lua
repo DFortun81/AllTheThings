@@ -5530,11 +5530,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(13800),	-- Fetid Encampment
 	exploration(13803),	-- Gelikyr Overlook
 	exploration(13806),	-- The War Creche
-	exploration(13807),	-- The Old Weyrn Grounds
-	exploration(13808),	-- Stormsunder Crater
-	exploration(13809),	-- Caldera of The Menders
-	exploration(13810),	-- Froststone Vault
-	exploration(13811),	-- Aerie Chasm
 	exploration(13814),	-- Garden Shrine
 	exploration(13815),	-- Misty Vale
 	exploration(13819),	-- DefunctThaldraszusarea
@@ -5560,8 +5555,6 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(13866),	-- Shadow Pass
 	exploration(13870),	-- mesten_dev1
 	exploration(13871),	-- Provis Strata
-	exploration(13872),	-- Talonlords' Perch
-	exploration(13874),	-- Scaleborn Pass
 	exploration(13875),	-- Shadow Ledge
 	exploration(13877),	-- Steelcliff Rampart
 	exploration(13878),	-- Aqueduct Basin
@@ -5662,10 +5655,8 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(14046),	-- Tirisfal Glades
 	exploration(14047),	-- Shattered Vaults
 	exploration(14050),	-- Stonefray Falls
-	exploration(14056),	-- Tempest Coast
 	exploration(14063),	-- Ruby Life Pools
 	exploration(14064),	-- Gelikyr Gardens
-	exploration(14071),	-- The Lost Atheneum
 	exploration(14075),	-- Hopper Hills
 	exploration(14081),	-- House of Plagues
 	exploration(14082),	-- Halls of Infusion
@@ -5691,13 +5682,10 @@ root(ROOTS.NeverImplemented, explorationHeader({
 	exploration(14146),	-- The Vault of Tyr
 	exploration(14148),	-- Out of Temporal Bounds
 	exploration(14149),	-- Pandaren Revolution - No Man's Land
-	exploration(14150),	-- Dragonskull Island
 	exploration(14151),	-- The Gnoll War- No Man's Land
 	exploration(14152),	-- War of the Shifting Sands - No Man's Land
 	exploration(14153),	-- Stormsunder Mountain
 	exploration(14154),	-- Sharpscale Coast
-	exploration(14155),	-- Morqut Islet
-	exploration(14156),	-- Hornswog Grounds
 	exploration(14157),	-- Chamber of Flames
 	exploration(14158),	-- Hissing Grotto
 	exploration(14160),	-- Flayscale Cavern

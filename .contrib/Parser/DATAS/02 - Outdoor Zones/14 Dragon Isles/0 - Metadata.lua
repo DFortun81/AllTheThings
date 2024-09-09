@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2 } }
 		m(THALDRASZUS, {["timeline"] = {ADDED_10_0_2_LAUNCH}}),
 		m(THE_AZURE_SPAN, {["timeline"] = {ADDED_10_0_2_LAUNCH}}),
 		m(THE_FORBIDDEN_REACH, {["timeline"] = {ADDED_10_0_7}}),
-		m(THE_FORBIDDEN_REACH_EVOKER),
+		m(THE_FORBIDDEN_REACH_DRACTHYR),
 		m(THE_WAKING_SHORES, {["timeline"] = {ADDED_10_0_2_LAUNCH}}),
 		m(ZARALEK_CAVERN, {["timeline"] = {ADDED_10_1_0}}),
 	},
