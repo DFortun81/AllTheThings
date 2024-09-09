@@ -5660,6 +5660,7 @@ local CCFuncs = {
 	end,
 	["SL_SKIP"] = function()
 		-- Threads content becomes unavailable when a player reaches max level
+		-- TODO: this is weird now... some stuff is available to alts post-70
 		if app.Level >= 70 then return false end
 		-- check if quest #62713 is completed. appears to be a HQT concerning whether the character has chosen to skip the SL Storyline
 		return IsQuestFlaggedCompleted(62713);
@@ -5761,6 +5762,8 @@ local DGU_Quests = {
 	[59926] = DGU_CustomCollect,	-- New Player Experience Starting Quest
 	[58911] = DGU_CustomCollect,	-- New Player Experience Ending Quest
 	[60359] = DGU_CustomCollect,	-- New Player Experience Ending Quest
+	[60129] = DGU_CustomCollect,	-- Shadowlands - SL_SKIP (Threads of Fate)
+	[62704] = DGU_CustomCollect,	-- Shadowlands - SL_SKIP (Threads of Fate)
 	[62713] = DGU_CustomCollect,	-- Shadowlands - SL_SKIP (Threads of Fate)
 	[65076] = DGU_CustomCollect,	-- Shadowlands - Covenant - Kyrian
 	[65077] = DGU_CustomCollect,	-- Shadowlands - Covenant - Venthyr

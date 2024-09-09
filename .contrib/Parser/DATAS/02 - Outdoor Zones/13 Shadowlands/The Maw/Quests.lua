@@ -16,6 +16,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				q(61874, {	-- A Chilling Summons [H]
 					["races"] = HORDE_ONLY,
+					["coord"] = { 50.3, 76.9, ORGRIMMAR },
 					["maps"] = {
 						1681,	-- Icecrown Citadel (Lower Acherus)
 						1682,	-- Icecrown Citadel (Upper Acherus)
