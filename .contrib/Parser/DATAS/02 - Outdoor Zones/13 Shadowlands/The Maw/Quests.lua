@@ -12,6 +12,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						1682,	-- Icecrown Citadel (Upper Acherus)
 						1360,	-- Icecrown Citadel (The Frozen Throne)
 					},
+					["coord"] = { 76.3, 42.7, STORMWIND_CITY },
 				}),
 				q(61874, {	-- A Chilling Summons [H]
 					["races"] = HORDE_ONLY,

@@ -297,6 +297,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				["sourceQuests"] = { 62846 },	-- Sanctum Improvements
 				["altQuests"] = { 59596 },	-- Collective Soul
 				["provider"] = { "n", 161907 },	-- Baroness Draka
+				["coord"] = { 49.7, 50.4, SEAT_OF_THE_PRIMUS },
 			}),
 			q(59597, {	-- Come On, We're Simpatico!
 				["sourceQuests"] = { 59596, 63003 },	-- Collective Soul

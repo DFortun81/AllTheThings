@@ -145,8 +145,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(60416, {	-- Rare Resources
-					--["provider"] = { "n",  },	--
-					--["coord"] = { , MALDRAXXUS },
+					["provider"] = { "n", 167201 },	-- Gatherer Zaya
+					["coord"] = { 46.8, 38.6, SEAT_OF_THE_PRIMUS },
 					["g"] = {
 						i(179327),	-- Coin of Brokerage (QI!)
 						i(181732),	-- Tribute of the Ambitious

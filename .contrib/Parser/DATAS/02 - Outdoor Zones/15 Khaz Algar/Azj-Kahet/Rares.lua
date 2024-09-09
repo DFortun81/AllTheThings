@@ -96,6 +96,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["g"] = {
 					i(221217),	-- Nerubian Bomber's Leggings
 					i(221252),	-- Nerubian Slayer's Claymore
+					i(221263),	-- Nerubian Venom-Tipped Dart (dupe from Tka'ktath - nerubian bugs-like?)
 				},
 			}),
 			n(216043, {	-- Monstrous Lasharoth

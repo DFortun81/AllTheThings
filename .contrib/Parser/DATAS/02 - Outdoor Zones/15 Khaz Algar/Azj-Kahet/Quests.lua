@@ -426,7 +426,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79711, {	-- That's Pretty Gross
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "o", 443995 },	-- Familiar-Looking Appendage
-					["coord"] = { 59.7, 69.2, AZJ_KAHET },	-- TODO: probably have more spawns?
+					["coord"] = { 55.6, 70.8, AZJ_KAHET },	-- TODO: probably have more spawns?
 					["g"] = {
 						i(214504),	-- Familiar-Looking Appendage (QI!)
 					},
@@ -460,7 +460,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						79714,	-- Rescuing the Food
 					},
 					["provider"] = { "n", 217565 },	-- Al'kubian
-					["coord"] = { 60.2, 68.7, AZJ_KAHET },
+					["coord"] = { 60.0, 66.1, AZJ_KAHET },
 					["g"] = {
 						i(222944),	-- Swollen Brain of Gluttony (QI!)
 					},
@@ -492,7 +492,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						80563,	-- Tool of Attunement
 					},
 					["provider"] = { "n", 226672 },	-- Orweyna
-					["coord"] = { 49.3, 60.2, AZJ_KAHET },	-- but probably could be 2 more, depending on order of quest before?
+					["coord"] = { 49.3, 60.2, AZJ_KAHET_LOWER },	-- but probably could be 2 more, depending on order of quest before?
 				}),
 				q(80565, {	-- Resounding Repercussions
 					["sourceQuests"] = { 82143 },	-- The Path of Dissonance
