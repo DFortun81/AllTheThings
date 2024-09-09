@@ -1311,84 +1311,43 @@ root(ROOTS.Unsorted, {
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			n(ARMOR, {
-				-- Might Exist
+				--- Might Exist ---
 				i(220158),	-- Darkened Tinderbox
 				i(226695),	-- Cunning Advisor's Favor
 				i(226696),	-- Mighty Advisor's Favor
-				--- idk might just be beta data still existing... 0.5%
+				--- Probably NYI (Wowhead data corrupted with beta) ---
 				i(221093),	-- Deeply Corrupted Coil
 			}),
 			filter(COSMETIC, {
-				-- Might Exist
+				--- Might Exist ---
 				i(212170),	-- Bronzebeard's Spare Hat
-				-- Idk
+				--- M+ Weapons Cosmetic? ---
 				i(227287),	-- Skovald's Resolve
 				i(227294),	-- Ravencrest's Wrath
 			}),
 			f(MISC, {
-				--- ?? proff? crafting materal
-				i(225570),	-- Algari Fowlfeather
-				--- upgrade
-				i(220776),	-- Glorious Cluster of Gilded Harbinger Crests \\ Glorious Cluster of Gilded Harbinger Crests (TODO: Fix Icon)
-				--- Quest
-				i(220156),	-- Bubbling Wax
-				--- Winter Veil
-				i(218308),	-- Winter Veil Cracker
-				i(218309),	-- Gently Shaken Gift
-				i(218311),	-- Winter Veil Gift
-				i(219255),	-- Puntable Rotten Little Helper
-				i(219286),	-- Puntable Globe Yeti
-				i(219289),	-- Puntable Tiny Snowman
-				i(219291),	-- Puntable Baby Greench
-				--- Attached to alot of QUESTS
-				i(215359),	-- Very Large Valdrakken Accord Supply Pack
-				i(215448),	-- Darkstem Stew \\ Darkstem Brew
-
-				--- Fungal Folly ---
-				i(209788),	-- Dispersion Crystal
-				--- Nightfall Sanctum ---
-				i(215466),	-- Sanctified Supplies
-				--- The Sinkhole ---
-				i(218122),	-- Stolen Relic \\ Stolen Shard
-				--- Kriegval--
-				i(224767),	-- Giant Candle Parts
-				--- Waterworks --
-				i(211481),	-- Stomping Shoes \\ Stompin' Shoes
-				--- WQ? Azj? ---
-				i(213420),	-- Fungarian Mushroom Cap
-				--- WQ special Ringing
-				i(224913),	-- Radiant Fuel Cache
-				i(224941),	-- Radiant Fuel Cache
-				-- Quest Reward?
-				i(225896),	-- Void-Touched Valorstone
-				-- Achievement Gobblin' with glublurp
+				--- Upgrade Crests? ---
+				i(220776),	-- Glorious Cluster of Gilded Harbinger Crests
+				--- Achievement: Gobblin' with Glublurp ---
 				i(225930),	-- Glimmering Crystal
-				-- Chest
+				--- Chest ---
 				i(225948),	-- Harbinger's Equipment Chest
-				-- Paragon
-				i(226045),	-- The General's Trove
-				i(226100),	-- The Vizier's Trove
-				i(226103),	-- The Weaver's Trove
-				-- Renown Quests?
-				i(226150),	-- Gem-Studded Candelabra
-				i(226151),	-- Wax-Coated Coffer Unlocker
-				i(226152),	-- Wax-sealed Crests
-				i(226153),	-- Big Pile of Humming Shinies
-				i(226154),	-- Wax-Sealed Crafty Crest
-				i(226156),	-- Really Big Candle
-				-- NYI --
 
-				-- Idk
+				--- Not Sure ---
 				i(226257),	-- Delver's Pouch of Valorstones
 				i(226260),	-- Delver's Pouch of Gold
-				-- Boooks
+				--- Books ---
 				i(226430),	-- Navigations of The Soul
 				i(228415),	-- Adelgonn's Journal
 				i(228416),	-- Steelvein's Manifesto
-				-- Draenei?
+				--- Draenei ---
 				i(226524),	-- Partially-Charged Hologem
 
-				-- Seems to exist from delves
+				--- Delves ---
+				--- Probably NYI ---
+				i(225901),	-- Streamlined Relic
+				i(225908),	-- Relicblood of Zekvir
+				--- Maps ---
 				i(227668),	-- Delver's Bounty [Tier 1]
 				i(227778),	-- Delver's Bounty [Tier 2]
 				i(227779),	-- Delver's Bounty [Tier 3]
@@ -1396,12 +1355,53 @@ root(ROOTS.Unsorted, {
 				i(227781),	-- Delver's Bounty [Tier 5]
 				i(227782),	-- Delver's Bounty [Tier 6]
 				i(227783),	-- Delver's Bounty [Tier 7]
-				-- Snuffling
+				--- Fungal Folly ---
+				i(209788),	-- Dispersion Crystal
+				--- Nightfall Sanctum ---
+				i(215466),	-- Sanctified Supplies
+				--- The Sinkhole ---
+				i(218122),	-- Stolen Relic
+				--- Kriegval ---
+				i(224767),	-- Giant Candle Parts
+				--- Waterworks ---
+				i(211481),	-- Stomping Shoes
+
+				--- Quest Rewards ---
+				i(220156),	-- Bubbling Wax
+				i(225896),	-- Void-Touched Valorstone
+				--- Renown Quest Rewards ---
+				i(226153),	-- Big Pile of Humming Shinies
+				i(226150),	-- Gem-Studded Candelabra
+				i(226156),	-- Really Big Candle
+				i(226151),	-- Wax-Coated Coffer Unlocker
+				i(226154),	-- Wax-Sealed Crafty Crest
+				i(226152),	-- Wax-sealed Crests
+				--- Paragon Chests ---
+				i(226045),	-- The General's Trove
+				i(226100),	-- The Vizier's Trove
+				i(226103),	-- The Weaver's Trove
+				--- Attached to Quests via API ---
+				i(215359),	-- Very Large Valdrakken Accord Supply Pack
+				i(215448),	-- Darkstem Stew
+
+				--- Snuffling ---
 				i(224650),	-- Wax-Sealed Pouch
 
-				-- Delves Prob NYI
-				i(225901),	-- Streamlined Relic
-				i(225908),	-- Relicblood of Zekvir
+				--- World Quests ---
+				--- Azj ---
+				i(213420),	-- Fungarian Mushroom Cap
+				--- Ringing ---
+				i(224913),	-- Radiant Fuel Cache
+				i(224941),	-- Radiant Fuel Cache
+
+				--- Winter Veil ---
+				i(218309),	-- Gently Shaken Gift
+				i(219291),	-- Puntable Baby Greench
+				i(219286),	-- Puntable Globe Yeti
+				i(219255),	-- Puntable Rotten Little Helper
+				i(219289),	-- Puntable Tiny Snowman
+				i(218308),	-- Winter Veil Cracker
+				i(218311),	-- Winter Veil Gift
 			}),
 			n(PROFESSIONS, {
 				i(211494),	-- Spark of Beginnings
@@ -1456,28 +1456,29 @@ root(ROOTS.Unsorted, {
 				i(224782),	-- Razor Talon
 			}),
 			n(PVP, {
+				--- Typical Seasonal PvP Stuff ---
 				i(224557),	-- Field Medic's Hazard Payout
-				i(225493),	-- Medal of Conquest
 				i(220378),	-- Forged Equipment Chest
+				i(225493),	-- Medal of Conquest
 				i(219934),	-- Spark of War
 			}),
 			f(QUEST_ITEMS, {
-				-- Delves?
+				-- Possibly Delves
 				i(212344),	-- Chest Key
 				i(209857),	-- Unusual Seeds
-				-- Idk
-				i(213163),	-- Cryptographic Glyph
-				i(220116),	-- Completed Market Audit
+				-- These might exist or just old Beta data
 				i(223638),	-- Arathi Trade Goods
 				i(224252),	-- Calcified Journal
+				i(220116),	-- Completed Market Audit
+				i(213163),	-- Cryptographic Glyph
 				i(225887),	-- Titan Emitter
 				--- Raid Quest
-				i(224011),	-- Signet of the Thousand Scars
-				i(224012),	-- Signet of the Thousand Scars
-				i(224013),	-- Signet of the Thousand Scars
 				i(224014),	-- Signet of the Skeinspiner
 				i(224015),	-- Signet of the Skeinspiner
 				i(224016),	-- Signet of the Skeinspiner
+				i(224011),	-- Signet of the Thousand Scars
+				i(224012),	-- Signet of the Thousand Scars
+				i(224013),	-- Signet of the Thousand Scars
 			}),
 			filter(TITLES, {
 				title(560),	-- <Name> Ascension Breaker

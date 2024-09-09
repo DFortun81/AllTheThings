@@ -820,6 +820,7 @@ root(ROOTS.NeverImplemented, {
 
 		-- 11.0.0
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+			-- Leave this for Darkal //Braghe
 			i(219780),	-- 11.0 Leveling Quest Template - Axe2H - Str
 			i(219781),	-- 11.0 Leveling Quest Template - FistWeapon - Agi
 			i(219782),	-- 11.0 Leveling Quest Template - Sword1H - Int
@@ -927,7 +928,6 @@ root(ROOTS.NeverImplemented, {
 			i(218236),	-- 11.0 Leveling Quest Template - Polearms - Str
 			i(218237),	-- 11.0 Leveling Quest Template - Staff - Int
 			i(218238),	-- 11.0 Leveling Quest Template - Warglaive - Agi
-
 			i(224467),	-- Forgotten Axe [2h axe]
 			i(225873),	-- Forged Gladiator's Sword
 

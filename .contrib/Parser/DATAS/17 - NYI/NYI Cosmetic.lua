@@ -538,154 +538,157 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		-- 11.0.0
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			n(ARMOR, {
-				i(226366),	-- Gloves of the Morning Mist
-				i(226367),	-- Ugly Black Boots
-				i(226368),	-- Ugly White Boots
+				i(225414),	-- Cave Topographer's Drape
 				i(226369),	-- Classic Faded Tabard
+				i(224869),	-- Earthen Drape
+				i(226366),	-- Gloves of the Morning Mist
+				i(227795),	-- Homebrewer's Sampling Mantle [Brewfest?]
 				i(225411),	-- Secret-Dredger's Cloak
+				i(224168),	-- Stonebound Tabard
 				i(225412),	-- Torchbearer's Greatcloak
 				i(225413),	-- Treasure-Seeker's Shawl
-				i(225414),	-- Cave Topographer's Drape
-				i(224869),	-- Earthen Drape
-				i(227795),	-- Homebrewer's Sampling Mantle [Brewfest?]
+				i(226367),	-- Ugly Black Boots
+				i(226368),	-- Ugly White Boots
 			}),
 			n(SETS, {
-				i(226429),	-- Ensemble: Ragged Harvest Golem
-				i(226431),	-- Ragged Harvest Golem's Chest
-				i(226432),	-- Ragged Harvest Golem's Post
-				i(226433),	-- Ragged Harvest Golem's Boots
-				i(226434),	-- Ragged Harvest Golem's Gloves
-				i(226435),	-- Ragged Harvest Golem's Pants
-				i(226436),	-- Ragged Harvest Golem's Pauldrons
-				i(226437),	-- Ragged Harvest Golem's Belt
-				i(226693),	-- Ragged Harvest Golem's Head
-
-
-				i(226483),	-- Ensemble: Battered Harvest Golem
-				i(226438),	-- Battered Harvest Golem's Chest
-				i(226439),	-- Battered Harvest Golem's Post
-				i(226448),	-- Battered Harvest Golem's Pauldrons
-				i(226449),	-- Battered Harvest Golem's Pants
-				i(226450),	-- Battered Harvest Golem's Gloves
-				i(226451),	-- Battered Harvest Golem's Boots
-				i(226452),	-- Battered Harvest Golem's Belt
-				i(226691),	-- Battered Harvest Golem's Head
-
-				i(226471),	-- Ensemble: Patched Harvest Golem
-				i(226690),	-- Patched Harvest Golem's Head
-				i(226453),	-- Patched Harvest Golem's Post
-				i(226454),	-- Patched Harvest Golem's Pauldrons
-				i(226455),	-- Patched Harvest Golem's Pants
-				i(226456),	-- Patched Harvest Golem's Gloves
-				i(226457),	-- Patched Harvest Golem's Chest
-				i(226458),	-- Patched Harvest Golem's Boots
-				i(226461),	-- Patched Harvest Golem's Belt
-
-				i(226482),	-- Ensemble: Grimy Harvest Golem
-				i(226464),	-- Grimy Harvest Golem's Post
-				i(226465),	-- Grimy Harvest Golem's Pauldrons
-				i(226466),	-- Grimy Harvest Golem's Pants
-				i(226467),	-- Grimy Harvest Golem's Gloves
-				i(226468),	-- Grimy Harvest Golem's Chest
-				i(226469),	-- Grimy Harvest Golem's Boots
-				i(226470),	-- Grimy Harvest Golem's Belt
-				i(226689),	-- Grimy Harvest Golem's Head
-
-				i(224861),	-- Dornogal Crown
-					i(224862),	-- Dornogal Mantle
-					i(224863),	-- Dornogal Cheststraps
-					i(224864),	-- Dornogal Girdle
-					i(224865),	-- Dornogal Legcoat
-					i(224866),	-- Dornogal Sabatons
-					i(224867),	-- Dornogal Cuffs
-					i(224868),	-- Dornogal Gauntlets
-
-					i(224876),	-- Freywold Crown
-					i(224877),	-- Freywold Mantle
-					i(224878),	-- Freywold Cheststraps
-					i(224879),	-- Freywold Girdle
-					i(224880),	-- Freywold Legcoat
-					i(224881),	-- Freywold Sabatons
-					i(224882),	-- Freywold Cuffs
-					i(224883),	-- Freywold Gauntlets
-					i(224884),	-- Gundargaz Crown
-					i(224885),	-- Gundargaz Mantle
-					i(224886),	-- Gundargaz Cheststraps
-					i(224887),	-- Gundargaz Girdle
-					i(224888),	-- Gundargaz Legcoat
-					i(224889),	-- Gundargaz Sabatons
-					i(224890),	-- Gundargaz Cuffs
-					i(224891),	-- Gundargaz Gauntlets
-
-					i(224165),	-- Dornogal Tabard
-					i(224167),	-- Gundargaz Tabard
-					i(224168),	-- Stonebound Tabard
-					i(224169),	-- Freywold Tabard
-
-
+				i(226000),	-- Ensemble: Earthen Adventurer's Copper Drapery
 				i(218911),	-- [DNT] EarthenCivilian Robe Copper
 				i(218912),	-- [DNT] EarthenCivilian Robe Dark
 				i(218913),	-- [DNT] EarthenCivilian Robe Gold
 				i(218914),	-- [DNT] EarthenCivilian Robe Silver
 				i(218915),	-- [DNT] EarthenCivilian Robe Skardyn
 				i(218916),	-- [DNT] EarthenCivilian Robe White
-				i(219065),	-- [DNT] Ensemble: CivilianScholar
-				i(219066),	-- [DNT] Ensemble: CivilianScholar
-				i(219067),	-- [DNT] Ensemble: CivilianScholar
-				i(219068),	-- [DNT] Ensemble: CivilianScholar
-				i(219069),	-- [DNT] Ensemble: CivilianScholar
-				i(219070),	-- [DNT] Ensemble: CivilianPeasant
-				i(219071),	-- [DNT] Ensemble: CivilianPeasant
-				i(219072),	-- [DNT] Ensemble: CivilianPeasant
-				i(219073),	-- [DNT] Ensemble: CivilianPeasant
-				i(219074),	-- [DNT] Ensemble: CivilianPeasant
-				i(219075),	-- [DNT] Ensemble: CivilianNoble
-				i(219076),	-- [DNT] Ensemble: CivilianNoble
-				i(219077),	-- [DNT] Ensemble: CivilianNoble
-				i(219078),	-- [DNT] Ensemble: CivilianNoble
-				i(219079),	-- [DNT] Ensemble: CivilianNoble
-				i(219080),	-- [DNT] Ensemble: CivilianMerchant
-				i(219081),	-- [DNT] Ensemble: CivilianMerchant
-				i(219082),	-- [DNT] Ensemble: CivilianMerchant
-				i(219083),	-- [DNT] Ensemble: CivilianMerchant
-				i(219084),	-- [DNT] Ensemble: CivilianMerchant
-				i(219085),	-- [DNT] Ensemble: CivilianLaborer
-				i(219086),	-- [DNT] Ensemble: CivilianLaborer
-				i(219087),	-- [DNT] Ensemble: CivilianLaborer
-				i(219088),	-- [DNT] Ensemble: CivilianLaborer
-				i(219089),	-- [DNT] Ensemble: CivilianLaborer
-				i(219090),	-- [DNT] Ensemble: CivilianCraftsperson
-				i(219091),	-- [DNT] Ensemble: CivilianCraftsperson
-				i(219092),	-- [DNT] Ensemble: CivilianCraftsperson
-				i(219093),	-- [DNT] Ensemble: CivilianCraftsperson
-				i(219094),	-- [DNT] Ensemble: CivilianCraftsperson
 				i(219095),	-- [DNT] Ensemble: CivilianAdventurer
 				i(219096),	-- [DNT] Ensemble: CivilianAdventurer
 				i(219097),	-- [DNT] Ensemble: CivilianAdventurer
 				i(219098),	-- [DNT] Ensemble: CivilianAdventurer
 				i(219099),	-- [DNT] Ensemble: CivilianAdventurer
-				i(226000),	-- Ensemble: Earthen Adventurer's Copper Drapery
+				i(219090),	-- [DNT] Ensemble: CivilianCraftsperson
+				i(219091),	-- [DNT] Ensemble: CivilianCraftsperson
+				i(219092),	-- [DNT] Ensemble: CivilianCraftsperson
+				i(219093),	-- [DNT] Ensemble: CivilianCraftsperson
+				i(219094),	-- [DNT] Ensemble: CivilianCraftsperson
+				i(219085),	-- [DNT] Ensemble: CivilianLaborer
+				i(219086),	-- [DNT] Ensemble: CivilianLaborer
+				i(219087),	-- [DNT] Ensemble: CivilianLaborer
+				i(219088),	-- [DNT] Ensemble: CivilianLaborer
+				i(219089),	-- [DNT] Ensemble: CivilianLaborer
+				i(219080),	-- [DNT] Ensemble: CivilianMerchant
+				i(219081),	-- [DNT] Ensemble: CivilianMerchant
+				i(219082),	-- [DNT] Ensemble: CivilianMerchant
+				i(219083),	-- [DNT] Ensemble: CivilianMerchant
+				i(219084),	-- [DNT] Ensemble: CivilianMerchant
+				i(219075),	-- [DNT] Ensemble: CivilianNoble
+				i(219076),	-- [DNT] Ensemble: CivilianNoble
+				i(219077),	-- [DNT] Ensemble: CivilianNoble
+				i(219078),	-- [DNT] Ensemble: CivilianNoble
+				i(219079),	-- [DNT] Ensemble: CivilianNoble
+				i(219070),	-- [DNT] Ensemble: CivilianPeasant
+				i(219071),	-- [DNT] Ensemble: CivilianPeasant
+				i(219072),	-- [DNT] Ensemble: CivilianPeasant
+				i(219073),	-- [DNT] Ensemble: CivilianPeasant
+				i(219074),	-- [DNT] Ensemble: CivilianPeasant
+				i(219065),	-- [DNT] Ensemble: CivilianScholar
+				i(219066),	-- [DNT] Ensemble: CivilianScholar
+				i(219067),	-- [DNT] Ensemble: CivilianScholar
+				i(219068),	-- [DNT] Ensemble: CivilianScholar
+				i(219069),	-- [DNT] Ensemble: CivilianScholar
+
+				------ Dornogal Set ------
+				i(224863),	-- Dornogal Cheststraps
+				i(224861),	-- Dornogal Crown
+				i(224867),	-- Dornogal Cuffs
+				i(224868),	-- Dornogal Gauntlets
+				i(224864),	-- Dornogal Girdle
+				i(224865),	-- Dornogal Legcoat
+				i(224862),	-- Dornogal Mantle
+				i(224866),	-- Dornogal Sabatons
+				i(224165),	-- Dornogal Tabard
+
+				------ Freywold Set ------
+				i(224878),	-- Freywold Cheststraps
+				i(224876),	-- Freywold Crown
+				i(224882),	-- Freywold Cuffs
+				i(224883),	-- Freywold Gauntlets
+				i(224879),	-- Freywold Girdle
+				i(224880),	-- Freywold Legcoat
+				i(224877),	-- Freywold Mantle
+				i(224881),	-- Freywold Sabatons
+				i(224169),	-- Freywold Tabard
+
+				------ Gundargaz Set ------
+				i(224886),	-- Gundargaz Cheststraps
+				i(224884),	-- Gundargaz Crown
+				i(224890),	-- Gundargaz Cuffs
+				i(224891),	-- Gundargaz Gauntlets
+				i(224887),	-- Gundargaz Girdle
+				i(224888),	-- Gundargaz Legcoat
+				i(224885),	-- Gundargaz Mantle
+				i(224889),	-- Gundargaz Sabatons
+				i(224167),	-- Gundargaz Tabard
+
+				------ Battered Harvest Golem Set ------
+				i(226483),	-- Ensemble: Battered Harvest Golem
+				i(226452),	-- Battered Harvest Golem's Belt
+				i(226451),	-- Battered Harvest Golem's Boots
+				i(226438),	-- Battered Harvest Golem's Chest
+				i(226450),	-- Battered Harvest Golem's Gloves
+				i(226691),	-- Battered Harvest Golem's Head
+				i(226449),	-- Battered Harvest Golem's Pants
+				i(226448),	-- Battered Harvest Golem's Pauldrons
+				i(226439),	-- Battered Harvest Golem's Post
+
+				------ Grimy Harvest Golem Set ------
+				i(226482),	-- Ensemble: Grimy Harvest Golem
+				i(226470),	-- Grimy Harvest Golem's Belt
+				i(226469),	-- Grimy Harvest Golem's Boots
+				i(226468),	-- Grimy Harvest Golem's Chest
+				i(226467),	-- Grimy Harvest Golem's Gloves
+				i(226689),	-- Grimy Harvest Golem's Head
+				i(226466),	-- Grimy Harvest Golem's Pants
+				i(226465),	-- Grimy Harvest Golem's Pauldrons
+				i(226464),	-- Grimy Harvest Golem's Post
+
+				------ Patched Harvest Golem Set ------
+				i(226471),	-- Ensemble: Patched Harvest Golem
+				i(226461),	-- Patched Harvest Golem's Belt
+				i(226458),	-- Patched Harvest Golem's Boots
+				i(226457),	-- Patched Harvest Golem's Chest
+				i(226456),	-- Patched Harvest Golem's Gloves
+				i(226690),	-- Patched Harvest Golem's Head
+				i(226455),	-- Patched Harvest Golem's Pants
+				i(226454),	-- Patched Harvest Golem's Pauldrons
+				i(226453),	-- Patched Harvest Golem's Post
+
+				------ Ragged Harvest Golem Set ------
+				i(226429),	-- Ensemble: Ragged Harvest Golem
+				i(226437),	-- Ragged Harvest Golem's Belt
+				i(226433),	-- Ragged Harvest Golem's Boots
+				i(226431),	-- Ragged Harvest Golem's Chest
+				i(226434),	-- Ragged Harvest Golem's Gloves
+				i(226693),	-- Ragged Harvest Golem's Head
+				i(226435),	-- Ragged Harvest Golem's Pants
+				i(226436),	-- Ragged Harvest Golem's Pauldrons
+				i(226432),	-- Ragged Harvest Golem's Post
 			}),
 			n(WEAPONS, {
-				i(217706),	-- Learn Warglaives Test Item (DNT)
-				i(226370),	-- Ashen Executioner
-				i(226381),	-- Feathered Bow of the Night
-				i(226382),	-- Feathered Bow of the Fallen
-				i(226383),	-- Simple Ebony Wand
-				i(226384),	-- Wand of the Bright Shadow
-				i(226386),	-- Gentle Glow of the Naaru
-				i(226387),	-- Battle-tested Warhammer
-				i(226388),	-- Battle-tested Obsidian Warhammer
-				i(226389),	-- Dark Iron Battle Mace
 				i(226390),	-- Aerie Battle Mace
-				i(226428),	-- Harvester's Claw
-				--
-
+				i(226370),	-- Ashen Executioner
+				i(226388),	-- Battle-tested Obsidian Warhammer
+				i(226387),	-- Battle-tested Warhammer
+				i(225495),	-- Brilliant Beacon
+				i(226389),	-- Dark Iron Battle Mace
+				i(226382),	-- Feathered Bow of the Fallen
+				i(226381),	-- Feathered Bow of the Night
+				i(226386),	-- Gentle Glow of the Naaru
 				i(226425),	-- Harvester's Claw
 				i(226426),	-- Harvester's Claw
+				i(226428),	-- Harvester's Claw
+				i(217706),	-- Learn Warglaives Test Item (DNT)
 				i(226427),	-- Patched Harvester's Claw
-				i(225495),	-- Brilliant Beacon
+				i(226383),	-- Simple Ebony Wand
 				i(225496),	-- Unhinged Vault-Hatch
+				i(226384),	-- Wand of the Bright Shadow
 			}),
 		})),
 	}),

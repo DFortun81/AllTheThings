@@ -1561,6 +1561,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			i(225640),	-- Abyssal Lure
 			i(225211),	-- Airship Operations Manual
+			i(225570),	-- Algari Fowlfeather
 			i(219741),	-- Algari Mineral
 			i(219742),	-- Algari Spices
 			i(208670),	-- Arachnophobia Mode
@@ -1590,18 +1591,24 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(228193),	-- Chipped Demon's Blade
 			i(220693),	-- Coffer Key Shard
 			i(222928),	-- Coin Coffer
+			i(225123),	-- Companion Experience
 			i(220260),	-- Corroded Golem Graspers
 			i(228192),	-- Cracked Fel Focus
 			i(225806),	-- Crystal Inkwell
 			i(220284),	-- Darkened Crystal
+			i(219138),	-- Delve Experience
+			i(210693),	-- Delves Keystone
+			i(211142),	-- Delves Keystone
 			i(217386),	-- Discarded Memory Gem
 			i(228225),	-- do not use
 			i(223869),	-- DO NOT USE Prismatic Codex
 			i(217970),	-- Dormant Runestone
 			i(228450),	-- Edible Copper Nuggets
+			i(210699),	-- Epic Delve Key
 			i(221503),	-- Explorer's Warbound Battlegear Drop
 			i(220233),	-- Extinguished Icon
 			i(212603),	-- First Half of Titan Key NOT USED
+			i(206348),	-- Fragmented Flame
 			i(228194),	-- Fully Scrapped Scrap
 			i(209431),	-- Fungal Scraper
 			i(218123),	-- Glowing Shard
@@ -1641,6 +1648,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(224065),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Mining
 			i(224066),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Skinning
 			i(224067),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Tailoring
+			i(210698),	-- Rare Delve Key
 			i(219494),	-- Ritual Flame
 			i(222954),	-- Runed Coin Coffer
 			i(225209),	-- Sacred Flame Prayers
@@ -1662,6 +1670,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(219146),	-- Set Keystone Map: Stonevault
 			i(219144),	-- Set Keystone Map: The Dawnbreaker
 			i(219140),	-- Set Keystone Map: The Rookery
+			i(212349),	-- Sizzling Spring Water [DNT][UNUSED]
 			i(224786),	-- Skeleton King Outfit
 			i(210051),	-- Spark Feather
 			i(220342),	-- Spiced Stock
@@ -1693,16 +1702,6 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(224269),	-- [DNT] 11.0 Food/Drink Template - Food Only - Level 75 - Required Level 70
 			i(226108),	-- [DNT] Debug Profession Stats
 			i(223804),	-- [DNT] Zone 1 Placeholder Treasure
-
-
-			i(206348),	-- Fragmented Flame
-			i(212349),	-- Sizzling Spring Water [DNT][UNUSED]
-			i(210693),	-- Delves Keystone
-			i(210698),	-- Rare Delve Key
-			i(210699),	-- Epic Delve Key
-			i(211142),	-- Delves Keystone
-			i(219138),	-- Delve Experience
-			i(225123),	-- Companion Experience
 		})),
 	}),
 }));
