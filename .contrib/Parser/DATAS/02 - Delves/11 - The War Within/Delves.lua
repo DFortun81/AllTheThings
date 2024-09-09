@@ -948,6 +948,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			filter(TRINKET_F, {
 				i(215170),	-- Abyssal Trap
 				i(215174),	-- Concoction: Kiss of Death
+				i(215171),	-- Fungal Friend Flute
 				i(225653),	-- Siphoning Lightbrand
 				i(215178),	-- Shadow-Binding Ritual Knife
 				i(215172),	-- Silken Chain Weaver

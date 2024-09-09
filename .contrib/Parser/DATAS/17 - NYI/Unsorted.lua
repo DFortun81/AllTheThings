@@ -1310,564 +1310,20 @@ root(ROOTS.Unsorted, {
 			i(232049),	-- Companion Experience
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
-			filter(TITLES, {
-				title(560),	-- <Name> Ascension Breaker
-				title(568),	-- <Name>, Machine-Warden
-			}),
-			n(PROFESSIONS, {
-				i(211494),	-- Spark of Beginnings
-				i(225772),	-- Artisan's Consortium Advertisement
-				i(228224),	-- Spark of Legacies
-				-- NYI Profession --
-				i(219500),	-- Fang Adornments
-				i(213097),	-- Test Warbound until equipped (DNT)
-				-- Misc/armor
-				i(224716),	-- [PH] Skewered Slum Shark
-				i(224718),	-- [PH] Surface Tipper's Toes
-				i(224719),	-- [PH] Evasive Angler's Treads
-				i(224720),	-- [PH] Keen Angler's Eye
-				-- Misc
-				i(224728),	-- Rollin' Barrel \\ [PH] Rollin' Barrel
-				i(224729),	-- Slum Shark Tooth \\ [PH] Slum Shark Tooth
-				i(224730),	-- [PH] Derby Dashers
-				i(219632),	-- Scribe Water
-				prof(BLACKSMITHING, {
-					-- Should be Insc..
-					i(223032),	-- Technique: Lexicon of Mysteries
-					i(223033),	-- Technique: Patient Alchemist's Mixing Rod
-					i(223034),	-- Technique: Inscribed Rolling Pin
-					i(223056),	-- Plans: Webbed Fishing Line
-				}),
-				prof(JEWELCRAFTING, {
-					i(214043),	-- Glittering Gemdust
-					i(225431),	-- Design: Vicious Jeweler's Setting
-				}),
-				prof(MINING, {
-					i(210940),	-- Null Stone
-					i(210941),	-- Null Stone
-					i(210942),	-- Byproduct 01 - Light
-					i(210943),	-- Byproduct 02 - Dark
-				}),
-				prof(TAILORING, {
-					i(212677),	-- Underground Cloth 01
-					i(212678),	-- Underground Cloth 01
-					i(212679),	-- Underground Cloth 01
-					i(221750),	-- Shredded Weavercloth
-					i(222416),	-- Shredded Weavercloth
-					i(224823),	-- Shredded Weavercloth
-					i(222348),	-- Unraveling
-					i(222788),	-- Khaz Algar Unraveling
-					--------
-					r(446975),	-- Artisan Tailor's Coat
-					r(447001),	-- Daybreak Spellthread
-					r(447000),	-- Sunset Spellthread
-				}),
-				--- Notes
-				-- Prof Knowledge
-				i(224782),	-- Razor Talon
-			}),
-			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
-				--
-				i(212390),	-- 11.0 Raid Template - Guns - RangedRight
-				i(212393),	-- 11.0 Raid Template - Polearms - Int - 2 Hand
-				i(212396),	-- Monster Weapon - 1H Sword \\ 11.0 Raid Template - Sword1H - Agi - Weapon
-				i(212402),	-- 11.0 Raid Template - Axe1H - Agi - Weapon
-				i(212403),	-- 11.0 Raid Template - Axe1H - Int - Weapon
-				i(212406),	-- 11.0 Raid Template - Mace1H - Str - Weapon
-				i(212408),	-- 11.0 Raid Template - Sword2H - Str - 2 Hand
-				i(212410),	-- 11.0 Raid Template - Mace2H - Int - 2 Hand
-				i(212411),	-- 11.0 Raid Template - Sword2H - Int - 2 Hand
-				i(212412),	-- 11.0 Raid Template - Wand - RangedRight
-				i(212455),	-- 11.0 Raid Template - Physical DPS - Trinket
-				i(212457),	-- 11.0 Raid Template - INT - Trinket
-				i(225726),	-- 11.0 Raid Template - Plate - Waist
-				i(225736),	-- 11.0 Raid Template - Plate - Head
-				i(225737),	-- 11.0 Raid Template - Plate - Feet
-
-				-- Extra Head Tierpieces!?!
-				i(228148),	-- Warsculptor's Barbute
-				i(228149),	-- Entombed Seraph's Casque
-				i(228150),	-- Exhumed Centurion's Galea
-				i(228151),	-- Noetic of the Forgotten Reservoir
-				i(228152),	-- Lightless Scavenger's Skull
-				i(228153),	-- Horns of the Destroyer
-				i(228154),	-- K'areshi Phantom's Emptiness
-				i(228155),	-- Gatecrasher's Horns
-				i(228156),	-- Mask of the Greatlynx
-				i(228157),	-- Impalers of the Hypogeal Nemesis
-				i(228158),	-- Hexflame Coven's All-Seeing Eye
-				i(228159),	-- Living Luster's Semblance
-				i(228161),	-- Hood of Violet Rebirth
-			}),
-			filter(COSMETIC, {
-				i(217706),	-- Learn Warglaives Test Item (DNT)
-				-- Probably from Delves
-
-
-
-				i(212170),	-- Bronzebeard's Spare Hat \\ Bronzebeard Hat [PH]
-				i(218911),	-- [DNT] EarthenCivilian Robe Copper
-				i(218912),	-- [DNT] EarthenCivilian Robe Dark
-				i(218913),	-- [DNT] EarthenCivilian Robe Gold
-				i(218914),	-- [DNT] EarthenCivilian Robe Silver
-				i(218915),	-- [DNT] EarthenCivilian Robe Skardyn
-				i(218916),	-- [DNT] EarthenCivilian Robe White
-				i(219065),	-- [DNT] Ensemble: CivilianScholar
-				i(219066),	-- [DNT] Ensemble: CivilianScholar
-				i(219067),	-- [DNT] Ensemble: CivilianScholar
-				i(219068),	-- [DNT] Ensemble: CivilianScholar
-				i(219069),	-- [DNT] Ensemble: CivilianScholar
-				i(219070),	-- [DNT] Ensemble: CivilianPeasant
-				i(219071),	-- [DNT] Ensemble: CivilianPeasant
-				i(219072),	-- [DNT] Ensemble: CivilianPeasant
-				i(219073),	-- [DNT] Ensemble: CivilianPeasant
-				i(219074),	-- [DNT] Ensemble: CivilianPeasant
-				i(219075),	-- [DNT] Ensemble: CivilianNoble
-				i(219076),	-- [DNT] Ensemble: CivilianNoble
-				i(219077),	-- [DNT] Ensemble: CivilianNoble
-				i(219078),	-- [DNT] Ensemble: CivilianNoble
-				i(219079),	-- [DNT] Ensemble: CivilianNoble
-				i(219080),	-- [DNT] Ensemble: CivilianMerchant
-				i(219081),	-- [DNT] Ensemble: CivilianMerchant
-				i(219082),	-- [DNT] Ensemble: CivilianMerchant
-				i(219083),	-- [DNT] Ensemble: CivilianMerchant
-				i(219084),	-- [DNT] Ensemble: CivilianMerchant
-				i(219085),	-- [DNT] Ensemble: CivilianLaborer
-				i(219086),	-- [DNT] Ensemble: CivilianLaborer
-				i(219087),	-- [DNT] Ensemble: CivilianLaborer
-				i(219088),	-- [DNT] Ensemble: CivilianLaborer
-				i(219089),	-- [DNT] Ensemble: CivilianLaborer
-				i(219090),	-- [DNT] Ensemble: CivilianCraftsperson
-				i(219091),	-- [DNT] Ensemble: CivilianCraftsperson
-				i(219092),	-- [DNT] Ensemble: CivilianCraftsperson
-				i(219093),	-- [DNT] Ensemble: CivilianCraftsperson
-				i(219094),	-- [DNT] Ensemble: CivilianCraftsperson
-				i(219095),	-- [DNT] Ensemble: CivilianAdventurer
-				i(219096),	-- [DNT] Ensemble: CivilianAdventurer
-				i(219097),	-- [DNT] Ensemble: CivilianAdventurer
-				i(219098),	-- [DNT] Ensemble: CivilianAdventurer
-				i(219099),	-- [DNT] Ensemble: CivilianAdventurer
-
-				-- Cosmetic
-				i(224165),	-- Dornogal Tabard \\ Gilded Earthen Tabard \\ [PH] Earthen Tabard
-				i(224167),	-- Gundargaz Tabard \\ Dark Earthen Tabard \\ [PH] Earthen Tabard
-				i(224168),	-- Stonebound Tabard \\ Silver Earthen Tabard \\ [PH] Earthen Tabard
-				i(224169),	-- Freywold Tabard \\ Sage Earthen Tabard \\ [PH] Earthen Tabard
-				i(226000),	-- Ensemble: Earthen Adventurer's Copper Drapery
-				i(226366),	-- Gloves of the Morning Mist
-				i(226367),	-- Ugly Black Boots
-				i(226368),	-- Ugly White Boots
-				i(226369),	-- Classic Faded Tabard
-				i(226370),	-- Ashen Executioner
-				i(226381),	-- Feathered Bow of the Night
-				i(226382),	-- Feathered Bow of the Fallen
-				i(226383),	-- Simple Ebony Wand
-				i(226384),	-- Wand of the Bright Shadow
-				i(226386),	-- Gentle Glow of the Naaru
-				i(226387),	-- Battle-tested Warhammer
-				i(226388),	-- Battle-tested Obsidian Warhammer
-				i(226389),	-- Dark Iron Battle Mace
-				i(226390),	-- Aerie Battle Mace
-				i(226425),	-- Harvester's Claw
-				i(226426),	-- Harvester's Claw
-				i(226427),	-- Patched Harvester's Claw
-				i(226428),	-- Harvester's Claw
-				i(226429),	-- Ensemble: Ragged Harvest Golem
-				i(226431),	-- Ragged Harvest Golem's Chest
-				i(226432),	-- Ragged Harvest Golem's Post
-				i(226433),	-- Ragged Harvest Golem's Boots
-				i(226434),	-- Ragged Harvest Golem's Gloves
-				i(226435),	-- Ragged Harvest Golem's Pants
-				i(226436),	-- Ragged Harvest Golem's Pauldrons
-				i(226437),	-- Ragged Harvest Golem's Belt
-				i(226438),	-- Battered Harvest Golem's Chest
-				i(226439),	-- Battered Harvest Golem's Post
-				i(226448),	-- Battered Harvest Golem's Pauldrons
-				i(226449),	-- Battered Harvest Golem's Pants
-				i(226450),	-- Battered Harvest Golem's Gloves
-				i(226451),	-- Battered Harvest Golem's Boots
-				i(226452),	-- Battered Harvest Golem's Belt
-				i(226453),	-- Patched Harvest Golem's Post
-				i(226454),	-- Patched Harvest Golem's Pauldrons
-				i(226455),	-- Patched Harvest Golem's Pants
-				i(226456),	-- Patched Harvest Golem's Gloves
-				i(226457),	-- Patched Harvest Golem's Chest
-				i(226458),	-- Patched Harvest Golem's Boots
-				i(226461),	-- Patched Harvest Golem's Belt
-				i(226464),	-- Grimy Harvest Golem's Post
-				i(226465),	-- Grimy Harvest Golem's Pauldrons
-				i(226466),	-- Grimy Harvest Golem's Pants
-				i(226467),	-- Grimy Harvest Golem's Gloves
-				i(226468),	-- Grimy Harvest Golem's Chest
-				i(226469),	-- Grimy Harvest Golem's Boots
-				i(226470),	-- Grimy Harvest Golem's Belt
-				i(226471),	-- Ensemble: Patched Harvest Golem
-				i(226482),	-- Ensemble: Grimy Harvest Golem
-				i(226483),	-- Ensemble: Battered Harvest Golem
-				i(226689),	-- Grimy Harvest Golem's Head
-				i(226690),	-- Patched Harvest Golem's Head
-				i(226691),	-- Battered Harvest Golem's Head
-				i(226693),	-- Ragged Harvest Golem's Head
-				i(227287),	-- Skovald's Resolve
-				i(227294),	-- Ravencrest's Wrath
-				i(227795),	-- Homebrewer's Sampling Mantle
-
-
-				--- NYI
-				i(225411),	-- Secret-Dredger's Cloak
-				i(225412),	-- Torchbearer's Greatcloak
-				i(225413),	-- Treasure-Seeker's Shawl
-				i(225414),	-- Cave Topographer's Drape
-				i(225495),	-- Brilliant Beacon
-				i(225496),	-- Unhinged Vault-Hatch
-			}),
 			n(ARMOR, {
-				i(206211),	-- Onyx Annulet
-				i(210220),	-- Resilient Mask
-				i(211620),	-- 11.0 Dungeon Template - Plate - Feet
-				i(211621),	-- 11.0 Dungeon Template - Cloth - Robe
-				i(211622),	-- 11.0 Dungeon Template - Plate - Chest
-				i(211623),	-- 11.0 Dungeon Template - Mail - Chest
-				i(211624),	-- 11.0 Dungeon Template - Leather - Chest
-				i(211625),	-- 11.0 Dungeon Template - Leather - Hand
-				i(211626),	-- 11.0 Dungeon Template - Plate - Hand
-				i(211627),	-- 11.0 Dungeon Template - Cloth - Hand
-				i(211628),	-- 11.0 Dungeon Template - Mail - Hand
-				i(211629),	-- 11.0 Dungeon Template - Cloth - Head
-				i(211630),	-- 11.0 Dungeon Template - Mail - Head
-				i(211631),	-- 11.0 Dungeon Template - Leather - Head
-				i(211632),	-- 11.0 Dungeon Template - Plate - Legs
-				i(211633),	-- 11.0 Dungeon Template - Cloth - Legs
-				i(211634),	-- 11.0 Dungeon Template - Mail - Legs
-				i(211635),	-- 11.0 Dungeon Template - Leather - Legs
-				i(211636),	-- 11.0 Dungeon Template - Leather - Shoulder
-				i(211637),	-- 11.0 Dungeon Template - Plate - Shoulder
-				i(211638),	-- 11.0 Dungeon Template - Cloth - Shoulder
-				i(211639),	-- 11.0 Dungeon Template - Mail - Shoulder
-				i(211640),	-- 11.0 Dungeon Template - Plate - Waist
-				i(211641),	-- 11.0 Dungeon Template - Cloth - Waist
-				i(211642),	-- 11.0 Dungeon Template - Mail - Waist
-				i(211643),	-- 11.0 Dungeon Template - Leather - Waist
-				i(211644),	-- 11.0 Dungeon Template - Cloth - Wrist
-				i(211645),	-- 11.0 Dungeon Template - Plate - Wrist
-				i(211646),	-- 11.0 Dungeon Template - Mail - Wrist
-				i(211647),	-- 11.0 Dungeon Template - Leather - Wrist
-				i(211648),	-- 11.0 Dungeon Template - Generic - Finger
-				i(211649),	-- 11.0 Dungeon Template - Generic - Trinket
-				i(211650),	-- 11.0 Dungeon Template - Generic - Neck
-				i(211651),	-- 11.0 Dungeon Template - Generic - Cloak
-				i(211652),	-- 11.0 Dungeon Template - Shield - Shield
-				i(211653),	-- 11.0 Dungeon Template - Generic - Holdable
-				i(211654),	-- 11.0 Dungeon Template - Mace2H - Str - 2 Hand
-				i(211655),	-- 11.0 Dungeon Template - Staff - Agi - 2 Hand
-				i(211656),	-- 11.0 Dungeon Template - Guns - RangedRight
-				i(211657),	-- 11.0 Dungeon Template - Warglaives - Weapon
-				i(211658),	-- 11.0 Dungeon Template - Sword1H - Str -Weapon
-				i(211659),	-- 11.0 Dungeon Template - Polearms - Int - 2 Hand
-				i(211660),	-- 11.0 Dungeon Template - Dagger - Int - Weapon
-				i(211661),	-- 11.0 Dungeon Template - Dagger - Agi - Weapon
-				i(211662),	-- 11.0 Dungeon Template - Sword1H - Agi - Weapon
-				i(211663),	-- 11.0 Dungeon Template - Plate - Head
-				i(211664),	-- 11.0 Dungeon Template - Cloth - Feet
-				i(211665),	-- 11.0 Dungeon Template - Mail - Feet
-				i(211666),	-- 11.0 Dungeon Template - Leather - Feet
-				i(211667),	-- 11.0 Dungeon Template - Staff - Int - 2 Hand
-				i(211668),	-- 11.0 Dungeon Template - Mace1H - Agi - Weapon
-				i(211669),	-- 11.0 Dungeon Template - Bows - Ranged
-				i(211670),	-- 11.0 Dungeon Template - Crossbow - RangedRight
-				i(211671),	-- 11.0 Dungeon Template - Axe1H - Str - Weapon
-				i(211672),	-- 11.0 Dungeon Template - Axe1H - Agi - Weapon
-				i(211673),	-- 11.0 Dungeon Template - Axe1H - Int - Weapon
-				i(211674),	-- 11.0 Dungeon Template - Mace1H - Int - Weapon
-				i(211675),	-- 11.0 Dungeon Template - Sword1H - Int - Weapon
-				i(211676),	-- 11.0 Dungeon Template - Mace1H - Str - Weapon
-				i(211677),	-- 11.0 Dungeon Template - Axe2H - Str - 2 Hand
-				i(211678),	-- 11.0 Dungeon Template - Sword2H - Str - 2 Hand
-				i(211679),	-- 11.0 Dungeon Template - FistWeapon - Weapon
-				i(211680),	-- 11.0 Dungeon Template - Mace2H - Int - 2 Hand
-				i(211681),	-- 11.0 Dungeon Template - Sword2H - Int - 2 Hand
-				i(211682),	-- 11.0 Dungeon Template - Wand - RangedRight
-				i(211683),	-- 11.0 Dungeon Template - Polearms - Agi - 2 Hand
-				i(211889),	-- 11.0 Poor Item Template - <Descriptor> Leather Cinch
-				i(211890),	-- 11.0 Poor Item Template - <Descriptor> Leather Footwraps
-				i(211891),	-- 11.0 Poor Item Template - <Descriptor> Leather Handwraps
-				i(211892),	-- 11.0 Poor Item Template - <Descriptor> Leather Guise
-				i(211893),	-- 11.0 Poor Item Template - <Descriptor> Leather Leggings
-				i(211894),	-- 11.0 Poor Item Template - <Descriptor> Leather Shoulderpads
-				i(211895),	-- 11.0 Poor Item Template - <Descriptor> Leather Jerkin
-				i(211896),	-- 11.0 Poor Item Template - <Descriptor> Leather Bracers
-				i(211897),	-- 11.0 Poor Item Template - <Descriptor> Plate Vambraces
-				i(211898),	-- 11.0 Poor Item Template - <Descriptor> Plate Warboots
-				i(211899),	-- 11.0 Poor Item Template - <Descriptor> Plate Shoulderguards
-				i(211900),	-- 11.0 Poor Item Template - <Descriptor> Plate Legguards
-				i(211901),	-- 11.0 Poor Item Template - <Descriptor> Plate Faceguard
-				i(211902),	-- 11.0 Poor Item Template - <Descriptor> Plate Gloves
-				i(211903),	-- 11.0 Poor Item Template - <Descriptor> Plate Chestpiece
-				i(211904),	-- 11.0 Poor Item Template - <Descriptor> Plate Greatbelt
-				i(211905),	-- 11.0 Poor Item Template - <Descriptor> Cloth Armbands
-				i(211906),	-- 11.0 Poor Item Template - <Descriptor> Cloth Vestments
-				i(211907),	-- 11.0 Poor Item Template - <Descriptor> Cloth Footpads
-				i(211908),	-- 11.0 Poor Item Template - <Descriptor> Cloth Legwraps
-				i(211909),	-- 11.0 Poor Item Template - <Descriptor> Cloth Grips
-				i(211910),	-- 11.0 Poor Item Template - <Descriptor> Cloth Hood
-				i(211911),	-- 11.0 Poor Item Template - <Descriptor> Cloth Cincture
-				i(211912),	-- 11.0 Poor Item Template - <Descriptor> Cloth Mantle
-				i(211913),	-- 11.0 Poor Item Template - <Descriptor> Chain Armguards
-				i(211914),	-- 11.0 Poor Item Template - <Descriptor> Chain Spaulders
-				i(211915),	-- 11.0 Poor Item Template - <Descriptor> Chain Footguards
-				i(211916),	-- 11.0 Poor Item Template - <Descriptor> Chain Breeches
-				i(211917),	-- 11.0 Poor Item Template - <Descriptor> Chain Vest
-				i(211918),	-- 11.0 Poor Item Template - <Descriptor> Chain Gauntlets
-				i(211919),	-- 11.0 Poor Item Template - <Descriptor> Chain Helm
-				i(211920),	-- 11.0 Poor Item Template - <Descriptor> Chain Clasp
-				i(212098),	-- 11.0 End Game Template <Descriptor> Vestment
-				i(212099),	-- 11.0 End Game Template <Descriptor> Sandals
-				i(212100),	-- 11.0 End Game Template <Descriptor> Handwraps
-				i(212101),	-- 11.0 End Game Template <Descriptor> Cowl
-				i(212102),	-- 11.0 End Game Template <Descriptor> Leggings
-				i(212103),	-- 11.0 End Game Template <Descriptor> Cord
-				i(212104),	-- 11.0 End Game Template <Descriptor> Cuffs
-				i(212105),	-- 11.0 End Game Template <Descriptor> Waders
-				i(212106),	-- 11.0 End Game Template <Descriptor> Grips
-				i(212108),	-- 11.0 End Game Template <Descriptor> Breeches
-				i(212109),	-- 11.0 End Game Template <Descriptor> Sash
-				i(212110),	-- 11.0 End Game Template <Descriptor> Bindings
-				i(212111),	-- 11.0 End Game Template <Descriptor> Chainmail
-				i(212112),	-- 11.0 End Game Template <Descriptor> Striders
-				i(212113),	-- 11.0 End Game Template <Descriptor> Grips
-				i(212114),	-- 11.0 End Game Template <Descriptor> Coif
-				i(212115),	-- 11.0 End Game Template <Descriptor> Greaves
-				i(212116),	-- 11.0 End Game Template <Descriptor> Shoulderguards
-				i(212117),	-- 11.0 End Game Template <Descriptor> Cinch
-				i(212118),	-- 11.0 End Game Template <Descriptor> Bracers
-				i(212119),	-- 11.0 End Game Template <Descriptor> Helm
-				i(212120),	-- 11.0 End Game Template <Descriptor> Breastplate
-				i(212121),	-- 11.0 End Game Template <Descriptor> Sabatons
-				i(212122),	-- 11.0 End Game Template <Descriptor> Gauntlets
-				i(212123),	-- 11.0 End Game Template <Descriptor> Legguards
-				i(212124),	-- 11.0 End Game Template <Descriptor> Mantle
-				i(212125),	-- 11.0 End Game Template <Descriptor> Girdle
-				i(212126),	-- 11.0 End Game Template <Descriptor> Armplates
-				i(212127),	-- 11.0 End Game Template <Descriptor> Vest
-				i(212128),	-- 11.0 End Game Template <Descriptor> Epaulets
-				i(212129),	-- 11.0 End Game Template <Descriptor> Shoulderpads
-				i(212130),	-- 11.0 End Game Template <Descriptor> Shield
-				i(212131),	-- 11.0 End Game Template <Descriptor> Offhand
-				i(212132),	-- 11.0 End Game Template <Descriptor> Polearm
-				i(212133),	-- 11.0 End Game Template <Descriptor> Gun
-				i(212134),	-- 11.0 End Game Template <Descriptor> Kris
-				i(212135),	-- 11.0 End Game Template <Descriptor> Mace
-				i(212136),	-- 11.0 End Game Template <Descriptor> Shank
-				i(212137),	-- 11.0 End Game Template <Descriptor> Sword
-				i(212138),	-- 11.0 End Game Template <Descriptor> Blade
-				i(212139),	-- 11.0 End Game Template <Descriptor> Great Mace
-				i(212140),	-- 11.0 End Game Template <Descriptor> Band
-				i(212141),	-- 11.0 End Game Template <Descriptor> Signet
-				i(212142),	-- 11.0 End Game Template <Descriptor> Cudgel
-				i(212143),	-- 11.0 End Game Template <Descriptor> Cudgel
-				i(212144),	-- 11.0 End Game Template <Descriptor> Stave
-				i(212145),	-- 11.0 End Game Template <Descriptor> Halberd
-				i(212146),	-- 11.0 End Game Template <Descriptor> Staff
-				i(212147),	-- 11.0 End Game Template <Descriptor> Warglaive
-				i(212148),	-- 11.0 End Game Template <Descriptor> Trinket
-				i(212149),	-- 11.0 End Game Template <Descriptor> Band
-				i(212150),	-- 11.0 End Game Template <Descriptor> Belt
-				i(212151),	-- 11.0 End Game Template <Descriptor> Shawl
-				i(212152),	-- 11.0 End Game Template <Descriptor> Choker
-				i(213099),	-- Test Warbound until equipped (DNT)
-				i(215171),	-- Fungal Friend Flute
-
-				i(215173),	-- Serum of Unconstrained Senses
-				i(215175),	-- Belt of Vials
-				i(216657),	-- Test Item C
-
-				i(218132),	-- 11.0 Zone Uncommon Template - Vestment
-				i(218133),	-- 11.0 Zone Uncommon Template - Sandals
-				i(218134),	-- 11.0 Zone Uncommon Template - Handwraps
-				i(218135),	-- 11.0 Zone Uncommon Template - Cowl
-				i(218136),	-- 11.0 Zone Uncommon Template - Leggings
-				i(218137),	-- 11.0 Zone Uncommon Template - Cord
-				i(218138),	-- 11.0 Zone Uncommon Template - Cuffs
-				i(218139),	-- 11.0 Zone Uncommon Template - Waders
-				i(218140),	-- 11.0 Zone Uncommon Template - Grips
-				i(218141),	-- 11.0 Zone Uncommon Template - Helm
-				i(218142),	-- 11.0 Zone Uncommon Template - Breeches
-				i(218143),	-- 11.0 Zone Uncommon Template - Sash
-				i(218144),	-- 11.0 Zone Uncommon Template - Bindings
-				i(218145),	-- 11.0 Zone Uncommon Template - Chainmail
-				i(218146),	-- 11.0 Zone Uncommon Template - Striders
-				i(218147),	-- 11.0 Zone Uncommon Template - Grips
-				i(218148),	-- 11.0 Zone Uncommon Template - Coif
-				i(218149),	-- 11.0 Zone Uncommon Template - Greaves
-				i(218150),	-- 11.0 Zone Uncommon Template - Shoulderguards
-				i(218151),	-- 11.0 Zone Uncommon Template - Cinch
-				i(218152),	-- 11.0 Zone Uncommon Template - Bracers
-				i(218153),	-- 11.0 Zone Uncommon Template - Helm
-				i(218154),	-- 11.0 Zone Uncommon Template - Breastplate
-				i(218155),	-- 11.0 Zone Uncommon Template - Sabatons
-				i(218156),	-- 11.0 Zone Uncommon Template - Gauntlets
-				i(218157),	-- 11.0 Zone Uncommon Template - Legguards
-				i(218158),	-- 11.0 Zone Uncommon Template - Mantle
-				i(218159),	-- 11.0 Zone Uncommon Template - Girdle
-				i(218160),	-- 11.0 Zone Uncommon Template - Armplates
-				i(218161),	-- 11.0 Zone Uncommon Template - Vest
-				i(218162),	-- 11.0 Zone Uncommon Template - Epaulets
-				i(218163),	-- 11.0 Zone Uncommon Template - Shoulderpads
-				i(218164),	-- 11.0 Zone Uncommon Template - Shield
-				i(218165),	-- 11.0 Zone Uncommon Template - Offhand
-				i(218166),	-- 11.0 Zone Uncommon Template - Polearm
-				i(218167),	-- 11.0 Zone Uncommon Template - Gun
-				i(218168),	-- 11.0 Zone Uncommon Template - Kris
-				i(218169),	-- 11.0 Zone Uncommon Template - Mace
-				i(218170),	-- 11.0 Zone Uncommon Template - Shank
-				i(218171),	-- 11.0 Zone Uncommon Template - Sword
-				i(218172),	-- 11.0 Zone Uncommon Template - Blade
-				i(218173),	-- 11.0 Zone Uncommon Template - Great Mace
-				i(218174),	-- 11.0 Zone Uncommon Template - Band
-				i(218175),	-- 11.0 Zone Uncommon Template - Signet
-				i(218176),	-- 11.0 Zone Uncommon Template - Cudgel
-				i(218177),	-- 11.0 Zone Uncommon Template - Cudgel
-				i(218178),	-- 11.0 Zone Uncommon Template - Stave
-				i(218179),	-- 11.0 Zone Uncommon Template - Halberd
-				i(218180),	-- 11.0 Zone Uncommon Template - Staff
-				i(218181),	-- 11.0 Zone Uncommon Template - Warglaive
-				i(218182),	-- 11.0 Zone Uncommon Template - Trinket
-				i(218183),	-- 11.0 Zone Uncommon Template - Band
-				i(218184),	-- 11.0 Zone Uncommon Template - Belt
-				i(218185),	-- 11.0 Zone Uncommon Template - Shawl
-				i(218186),	-- 11.0 Zone Uncommon Template - Choker
-				i(218189),	-- 11.0 Leveling Quest Template - Vestment
-				i(218190),	-- 11.0 Leveling Quest Template - Sandals
-				i(218191),	-- 11.0 Leveling Quest Template - Handwraps
-				i(218192),	-- 11.0 Leveling Quest Template - Cowl
-				i(218193),	-- 11.0 Leveling Quest Template - Leggings
-				i(218194),	-- 11.0 Leveling Quest Template - Cord
-				i(218195),	-- 11.0 Leveling Quest Template - Cuffs
-				i(218196),	-- 11.0 Leveling Quest Template - Waders
-				i(218197),	-- 11.0 Leveling Quest Template - Grips
-				i(218198),	-- 11.0 Leveling Quest Template - Helm
-				i(218199),	-- 11.0 Leveling Quest Template - Breeches
-				i(218200),	-- 11.0 Leveling Quest Template - Sash
-				i(218201),	-- 11.0 Leveling Quest Template - Bindings
-				i(218202),	-- 11.0 Leveling Quest Template - Chainmail
-				i(218203),	-- 11.0 Leveling Quest Template - Striders
-				i(218204),	-- 11.0 Leveling Quest Template - Grips
-				i(218205),	-- 11.0 Leveling Quest Template - Coif
-				i(218206),	-- 11.0 Leveling Quest Template - Greaves
-				i(218207),	-- 11.0 Leveling Quest Template - Shoulderguards
-				i(218208),	-- 11.0 Leveling Quest Template - Cinch
-				i(218209),	-- 11.0 Leveling Quest Template - Bracers
-				i(218210),	-- 11.0 Leveling Quest Template - Helm
-				i(218211),	-- 11.0 Leveling Quest Template - Breastplate
-				i(218212),	-- 11.0 Leveling Quest Template - Sabatons
-				i(218213),	-- 11.0 Leveling Quest Template - Gauntlets
-				i(218214),	-- 11.0 Leveling Quest Template - Legguards
-				i(218215),	-- 11.0 Leveling Quest Template - Mantle
-				i(218216),	-- 11.0 Leveling Quest Template - Girdle
-				i(218217),	-- 11.0 Leveling Quest Template - Armplates
-				i(218218),	-- 11.0 Leveling Quest Template - Vest
-				i(218219),	-- 11.0 Leveling Quest Template - Epaulets
-				i(218220),	-- 11.0 Leveling Quest Template - Shoulderpads
-				i(218221),	-- 11.0 Leveling Quest Template - Shield - Shield
-				i(218222),	-- 11.0 Leveling Quest Template - Generic - Holdable
-				i(218223),	-- 11.0 Leveling Quest Template - Polearms - Agi
-				i(218224),	-- 11.0 Leveling Quest Template - Guns - Agi
-				i(218225),	-- 11.0 Leveling Quest Template - Dagger - Int
-				i(218226),	-- 11.0 Leveling Quest Template - Mace2H - Int
-				i(218227),	-- 11.0 Leveling Quest Template - Dagger - Agi
-				i(218228),	-- 11.0 Leveling Quest Template - Sword1H - Str
-				i(218229),	-- 11.0 Leveling Quest Template - Sword1H - Agi
-				i(218230),	-- 11.0 Leveling Quest Template - Mace2H - Str
-				i(218231),	-- 11.0 Leveling Quest Template - Band
-				i(218232),	-- 11.0 Leveling Quest Template - Signet
-				i(218233),	-- 11.0 Leveling Quest Template - Mace1H - Str
-				i(218234),	-- 11.0 Leveling Quest Template - Mace1H - Agi
-				i(218235),	-- 11.0 Leveling Quest Template - Staff - Agi
-				i(218236),	-- 11.0 Leveling Quest Template - Polearms - Str
-				i(218237),	-- 11.0 Leveling Quest Template - Staff - Int
-				i(218238),	-- 11.0 Leveling Quest Template - Warglaive - Agi
-				i(218239),	-- 11.0 Leveling Quest Template - Trinket
-				i(218240),	-- 11.0 Leveling Quest Template - Band
-				i(218241),	-- 11.0 Leveling Quest Template - Belt
-				i(218242),	-- 11.0 Leveling Quest Template - Shawl
-				i(218243),	-- 11.0 Leveling Quest Template - Choker
-				-- Armor???
-				i(224084),	-- Tentacled Hat
-				i(224085),	-- Hightfish Cap
-				i(224086),	-- Nat's Drinking Hat
-				i(224087),	-- Boots of the Bay
-				i(224088),	-- Worn Fishing Hat
-				i(224089),	-- Nat Pagle's Extreme Anglin' Boots
-				i(224090),	-- Weather-Beaten Fishing Hat
-				i(224091),	-- Nat's Hat
-				i(224092),	-- Darkmoon Fishing Cap
-				i(224093),	-- Anglin' Art's Stompers
-				i(224094),	-- Anglin' Art's Waders
-				i(224095),	-- Anglin' Art's Treads
-				i(224096),	-- Anglin' Art's Sandals
-				i(224097),	-- Lucky Fishing Hat
-				-- Armor..
-				i(224170),	-- Wildercloth Fishing Cap
-				i(224171),	-- Master's Wildercloth Fishing Cap
-				-- Armor
-				i(225509),	-- [PH] Armor Vestment
-				i(225510),	-- [PH] Armor Sandals
-				i(225511),	-- [PH] Armor Handwraps
-				i(225512),	-- [PH] Armor Cowl
-				i(225517),	-- [PH] Armor Grips
-				i(225518),	-- [PH] Armor Helm
-				i(225519),	-- [PH] Armor Breeches
-				i(225522),	-- [PH] Armor Chainmail
-				i(225525),	-- [PH] Armor Coif
-				i(225527),	-- [PH] Armor Shoulderguards
-				i(225528),	-- [PH] Armor Cinch
-				i(225531),	-- [PH] Armor Breastplate
-				i(225532),	-- [PH] Armor Sabatons
-				i(225534),	-- [PH] Armor Legguards
-				i(225536),	-- [PH] Armor Girdle
-				i(225539),	-- [PH] Armor Epaulets
-				i(219942),	-- 11.0 Stalwart's Sandals
+				-- Might Exist
 				i(220158),	-- Darkened Tinderbox
-				-- Armor Generator
-
 				i(226695),	-- Cunning Advisor's Favor
 				i(226696),	-- Mighty Advisor's Favor
-
-				-- Mail Belt
-				i(223458),	-- [PH] 11.0 - Belt
-
-				---
-				i(226165),	-- Unseemly Agate Choker
-
-				--- Trinkets
-				i(213423),	-- Bygone Weapon Charm
-				i(213533),	-- Ancient Weapon Charm
-				i(213534),	-- Bygone Armor Charm
-				i(213535),	-- Ancient Armor Charm
-				i(217402),	-- Olden Armor Charm
-				i(217403),	-- Olden Weapon Charm
-				i(217404),	-- Time-Worn Armor Charm
-				i(217405),	-- Time-Worn Weapon Charm
-
-				-- armor
-				-- trinket
-				i(219916),	-- Bronzebeard Family Compass
-				i(225669),	-- Brute Force Idol
-				i(225682),	-- Time Lost Relic
-				i(225683),	-- Grasping Necrotic Relic
-				i(225684),	-- Relicblood of Zekvir
-				i(225685),	-- Relic of Sentience
-				--
-				i(207390),	-- Delve Ring
+				--- idk might just be beta data still existing... 0.5%
+				i(221093),	-- Deeply Corrupted Coil
 			}),
-			n(PVP, {
-				i(224557),	-- Field Medic's Hazard Payout
-				i(225493),	-- Medal of Conquest
-
-				i(220378),	-- Forged Equipment Chest \\ PH War Within Equipment Chest
-
-				i(225873),	-- Forged Gladiator's Sword
-
+			filter(COSMETIC, {
+				-- Might Exist
+				i(212170),	-- Bronzebeard's Spare Hat
+				-- Idk
+				i(227287),	-- Skovald's Resolve
+				i(227294),	-- Ravencrest's Wrath
 			}),
 			f(MISC, {
 				--- ?? proff? crafting materal
@@ -1947,6 +1403,64 @@ root(ROOTS.Unsorted, {
 				i(225901),	-- Streamlined Relic
 				i(225908),	-- Relicblood of Zekvir
 			}),
+			n(PROFESSIONS, {
+				i(211494),	-- Spark of Beginnings
+				i(225772),	-- Artisan's Consortium Advertisement
+				i(228224),	-- Spark of Legacies
+				-- NYI Profession --
+				i(219500),	-- Fang Adornments
+				i(213097),	-- Test Warbound until equipped (DNT)
+				-- Misc/armor
+				i(224716),	-- [PH] Skewered Slum Shark
+				i(224718),	-- [PH] Surface Tipper's Toes
+				i(224719),	-- [PH] Evasive Angler's Treads
+				i(224720),	-- [PH] Keen Angler's Eye
+				-- Misc
+				i(224728),	-- Rollin' Barrel \\ [PH] Rollin' Barrel
+				i(224729),	-- Slum Shark Tooth \\ [PH] Slum Shark Tooth
+				i(224730),	-- [PH] Derby Dashers
+				i(219632),	-- Scribe Water
+				prof(BLACKSMITHING, {
+					-- Should be Insc..
+					i(223032),	-- Technique: Lexicon of Mysteries
+					i(223033),	-- Technique: Patient Alchemist's Mixing Rod
+					i(223034),	-- Technique: Inscribed Rolling Pin
+					i(223056),	-- Plans: Webbed Fishing Line
+				}),
+				prof(JEWELCRAFTING, {
+					i(214043),	-- Glittering Gemdust
+					i(225431),	-- Design: Vicious Jeweler's Setting
+				}),
+				prof(MINING, {
+					i(210940),	-- Null Stone
+					i(210941),	-- Null Stone
+					i(210942),	-- Byproduct 01 - Light
+					i(210943),	-- Byproduct 02 - Dark
+				}),
+				prof(TAILORING, {
+					i(212677),	-- Underground Cloth 01
+					i(212678),	-- Underground Cloth 01
+					i(212679),	-- Underground Cloth 01
+					i(221750),	-- Shredded Weavercloth
+					i(222416),	-- Shredded Weavercloth
+					i(224823),	-- Shredded Weavercloth
+					i(222348),	-- Unraveling
+					i(222788),	-- Khaz Algar Unraveling
+					--------
+					r(446975),	-- Artisan Tailor's Coat
+					r(447001),	-- Daybreak Spellthread
+					r(447000),	-- Sunset Spellthread
+				}),
+				--- Notes
+				-- Prof Knowledge
+				i(224782),	-- Razor Talon
+			}),
+			n(PVP, {
+				i(224557),	-- Field Medic's Hazard Payout
+				i(225493),	-- Medal of Conquest
+				i(220378),	-- Forged Equipment Chest
+				i(219934),	-- Spark of War
+			}),
 			f(QUEST_ITEMS, {
 				-- Delves?
 				i(212344),	-- Chest Key
@@ -1956,9 +1470,7 @@ root(ROOTS.Unsorted, {
 				i(220116),	-- Completed Market Audit
 				i(223638),	-- Arathi Trade Goods
 				i(224252),	-- Calcified Journal
-				i(225887),	-- Titan Emitter \\ The Archaedas Conundrum
-				--
-				i(219934),	-- Spark of War
+				i(225887),	-- Titan Emitter
 				--- Raid Quest
 				i(224011),	-- Signet of the Thousand Scars
 				i(224012),	-- Signet of the Thousand Scars
@@ -1967,6 +1479,14 @@ root(ROOTS.Unsorted, {
 				i(224015),	-- Signet of the Skeinspiner
 				i(224016),	-- Signet of the Skeinspiner
 			}),
+			filter(TITLES, {
+				title(560),	-- <Name> Ascension Breaker
+				title(568),	-- <Name>, Machine-Warden
+			}),
+			filter(TOYS, {
+				--- Gonna check this! Make spellID able to be isToy to make it collectible from the quest // Braghe
+				i(216665),	-- Warband Bank Distance Inhibitor
+			}),
 			n(WEAPONS, {
 				-- These exist... Someone need to investigate (Fate Weaver has some comments) and also see itemID: 218126 that Alex sourced//Braghe
 				i(219381),	-- Fate Weaver
@@ -1974,51 +1494,11 @@ root(ROOTS.Unsorted, {
 				i(219382),	-- Fateweaved Needle
 				i(219941),	-- Fateweaved Mallet
 			}),
-			race(EARTHEN_ALLIANCE, {
-				-- My Guess?? Earthen Starting Gear?
-				-- Alex: NYI / boosted gear?
-				i(219393),	-- Earthen Shoulders
-				i(219394),	-- Earthen Trousers
-				i(219395),	-- Earthen Grips
-				i(219396),	-- Earthen Vest
-				i(219397),	-- Earthen Boots
-				i(219398),	-- Earthen Chain
-				i(219428),	-- Earthen Waistguard
-				i(224861),	-- Dornogal Crown
-				i(224862),	-- Dornogal Mantle
-				i(224863),	-- Dornogal Cheststraps
-				i(224864),	-- Dornogal Girdle
-				i(224865),	-- Dornogal Legcoat
-				i(224866),	-- Dornogal Sabatons
-				i(224867),	-- Dornogal Cuffs
-				i(224868),	-- Dornogal Gauntlets
-				i(224869),	-- Earthen Drape
-				i(224876),	-- Freywold Crown
-				i(224877),	-- Freywold Mantle
-				i(224878),	-- Freywold Cheststraps
-				i(224879),	-- Freywold Girdle
-				i(224880),	-- Freywold Legcoat
-				i(224881),	-- Freywold Sabatons
-				i(224882),	-- Freywold Cuffs
-				i(224883),	-- Freywold Gauntlets
-				i(224884),	-- Gundargaz Crown
-				i(224885),	-- Gundargaz Mantle
-				i(224886),	-- Gundargaz Cheststraps
-				i(224887),	-- Gundargaz Girdle
-				i(224888),	-- Gundargaz Legcoat
-				i(224889),	-- Gundargaz Sabatons
-				i(224890),	-- Gundargaz Cuffs
-				i(224891),	-- Gundargaz Gauntlets
-			}),
-			n(RARES, {
-				i(221066),	-- Template - Accessory - Finger
-				i(221093),	-- Deeply Corrupted Coil
-				i(221505),	-- [DNT] Rare Cloth - Robe
-				i(223944),	-- [PH] Infested Fungal Wristwraps
-				i(223945),	-- [PH] Perchfather's Cuffs
-				i(223946),	-- [PH] Storm Bindings
-				i(223947),	-- [PH] Steam-Powered Wristwatch
-				i(224467),	-- Forgotten Axe
+
+			n(QUESTS, {
+				q(83489, {
+					["_drop"] = {"g"},
+				}),
 			}),
 			explorationHeader({
 				exploration(15551),	-- The Fangs
@@ -2328,15 +1808,6 @@ root(ROOTS.Unsorted, {
 				exploration(14517),	-- 11Test1
 				exploration(14512),	-- RebornTree
 				exploration(14484),	-- 10.2 Devland
-			}),
-			n(QUESTS, {
-				q(83489, {
-					["_drop"] = {"g"},
-				}),
-			}),
-			n(SPECIAL, {
-				--- Gonna check this! Make spellID able to be isToy to make it collectible from the quest // Braghe
-				i(216665),	-- Warband Bank Distance Inhibitor
 			}),
 		})),
 	}),

@@ -838,7 +838,98 @@ root(ROOTS.NeverImplemented, {
 			i(211057),	-- Delver's Cudgel [1h mace]
 			i(211058),	-- Delver's Halberd [Polearm]
 			i(211060),	-- Delver's Warglaive
+			i(212390),	-- 11.0 Raid Template - Guns - RangedRight
+			i(212393),	-- 11.0 Raid Template - Polearms - Int - 2 Hand
+			i(212396),	-- Monster Weapon - 1H Sword \\ 11.0 Raid Template - Sword1H - Agi - Weapon
+			i(212402),	-- 11.0 Raid Template - Axe1H - Agi - Weapon
+			i(212403),	-- 11.0 Raid Template - Axe1H - Int - Weapon
+			i(212406),	-- 11.0 Raid Template - Mace1H - Str - Weapon
+			i(212408),	-- 11.0 Raid Template - Sword2H - Str - 2 Hand
+			i(212410),	-- 11.0 Raid Template - Mace2H - Int - 2 Hand
+			i(212411),	-- 11.0 Raid Template - Sword2H - Int - 2 Hand
+			i(212457),	-- 11.0 Raid Template - INT - Trinket
+			i(225726),	-- 11.0 Raid Template - Plate - Waist
+			i(225736),	-- 11.0 Raid Template - Plate - Head
+			i(225737),	-- 11.0 Raid Template - Plate - Feet
+			i(211652),	-- 11.0 Dungeon Template - Shield - Shield
+			i(211653),	-- 11.0 Dungeon Template - Generic - Holdable
+			i(211654),	-- 11.0 Dungeon Template - Mace2H - Str - 2 Hand
+			i(211655),	-- 11.0 Dungeon Template - Staff - Agi - 2 Hand
+			i(211656),	-- 11.0 Dungeon Template - Guns - RangedRight
+			i(211657),	-- 11.0 Dungeon Template - Warglaives - Weapon
+			i(211658),	-- 11.0 Dungeon Template - Sword1H - Str -Weapon
+			i(211659),	-- 11.0 Dungeon Template - Polearms - Int - 2 Hand
+			i(211660),	-- 11.0 Dungeon Template - Dagger - Int - Weapon
+			i(211661),	-- 11.0 Dungeon Template - Dagger - Agi - Weapon
+			i(211662),	-- 11.0 Dungeon Template - Sword1H - Agi - Weapon
+			i(211667),	-- 11.0 Dungeon Template - Staff - Int - 2 Hand
+			i(211668),	-- 11.0 Dungeon Template - Mace1H - Agi - Weapon
+			i(211669),	-- 11.0 Dungeon Template - Bows - Ranged
+			i(211670),	-- 11.0 Dungeon Template - Crossbow - RangedRight
+			i(211671),	-- 11.0 Dungeon Template - Axe1H - Str - Weapon
+			i(211672),	-- 11.0 Dungeon Template - Axe1H - Agi - Weapon
+			i(211673),	-- 11.0 Dungeon Template - Axe1H - Int - Weapon
+			i(211674),	-- 11.0 Dungeon Template - Mace1H - Int - Weapon
+			i(211675),	-- 11.0 Dungeon Template - Sword1H - Int - Weapon
+			i(211676),	-- 11.0 Dungeon Template - Mace1H - Str - Weapon
+			i(211677),	-- 11.0 Dungeon Template - Axe2H - Str - 2 Hand
+			i(211678),	-- 11.0 Dungeon Template - Sword2H - Str - 2 Hand
+			i(211679),	-- 11.0 Dungeon Template - FistWeapon - Weapon
+			i(211680),	-- 11.0 Dungeon Template - Mace2H - Int - 2 Hand
+			i(211681),	-- 11.0 Dungeon Template - Sword2H - Int - 2 Hand
+			i(211682),	-- 11.0 Dungeon Template - Wand - RangedRight
+			i(211683),	-- 11.0 Dungeon Template - Polearms - Agi - 2 Hand
+			i(212130),	-- 11.0 End Game Template <Descriptor> Shield
+			i(212131),	-- 11.0 End Game Template <Descriptor> Offhand
+			i(212132),	-- 11.0 End Game Template <Descriptor> Polearm
+			i(212133),	-- 11.0 End Game Template <Descriptor> Gun
+			i(212134),	-- 11.0 End Game Template <Descriptor> Kris
+			i(212135),	-- 11.0 End Game Template <Descriptor> Mace
+			i(212136),	-- 11.0 End Game Template <Descriptor> Shank
+			i(212137),	-- 11.0 End Game Template <Descriptor> Sword
+			i(212138),	-- 11.0 End Game Template <Descriptor> Blade
+			i(212139),	-- 11.0 End Game Template <Descriptor> Great Mace
+			i(212142),	-- 11.0 End Game Template <Descriptor> Cudgel
+			i(212143),	-- 11.0 End Game Template <Descriptor> Cudgel
+			i(212144),	-- 11.0 End Game Template <Descriptor> Stave
+			i(212145),	-- 11.0 End Game Template <Descriptor> Halberd
+			i(212146),	-- 11.0 End Game Template <Descriptor> Staff
+			i(212147),	-- 11.0 End Game Template <Descriptor> Warglaive
+			i(218164),	-- 11.0 Zone Uncommon Template - Shield
+			i(218165),	-- 11.0 Zone Uncommon Template - Offhand
+			i(218166),	-- 11.0 Zone Uncommon Template - Polearm
+			i(218167),	-- 11.0 Zone Uncommon Template - Gun
+			i(218168),	-- 11.0 Zone Uncommon Template - Kris
+			i(218169),	-- 11.0 Zone Uncommon Template - Mace
+			i(218170),	-- 11.0 Zone Uncommon Template - Shank
+			i(218171),	-- 11.0 Zone Uncommon Template - Sword
+			i(218172),	-- 11.0 Zone Uncommon Template - Blade
+			i(218173),	-- 11.0 Zone Uncommon Template - Great Mace
+			i(218176),	-- 11.0 Zone Uncommon Template - Cudgel
+			i(218177),	-- 11.0 Zone Uncommon Template - Cudgel
+			i(218178),	-- 11.0 Zone Uncommon Template - Stave
+			i(218179),	-- 11.0 Zone Uncommon Template - Halberd
+			i(218180),	-- 11.0 Zone Uncommon Template - Staff
+			i(218181),	-- 11.0 Zone Uncommon Template - Warglaive
+			i(218221),	-- 11.0 Leveling Quest Template - Shield - Shield
+			i(218222),	-- 11.0 Leveling Quest Template - Generic - Holdable
+			i(218223),	-- 11.0 Leveling Quest Template - Polearms - Agi
+			i(218224),	-- 11.0 Leveling Quest Template - Guns - Agi
+			i(218225),	-- 11.0 Leveling Quest Template - Dagger - Int
+			i(218226),	-- 11.0 Leveling Quest Template - Mace2H - Int
+			i(218227),	-- 11.0 Leveling Quest Template - Dagger - Agi
+			i(218228),	-- 11.0 Leveling Quest Template - Sword1H - Str
+			i(218229),	-- 11.0 Leveling Quest Template - Sword1H - Agi
+			i(218230),	-- 11.0 Leveling Quest Template - Mace2H - Str
+			i(218233),	-- 11.0 Leveling Quest Template - Mace1H - Str
+			i(218234),	-- 11.0 Leveling Quest Template - Mace1H - Agi
+			i(218235),	-- 11.0 Leveling Quest Template - Staff - Agi
+			i(218236),	-- 11.0 Leveling Quest Template - Polearms - Str
+			i(218237),	-- 11.0 Leveling Quest Template - Staff - Int
+			i(218238),	-- 11.0 Leveling Quest Template - Warglaive - Agi
 
+			i(224467),	-- Forgotten Axe [2h axe]
+			i(225873),	-- Forged Gladiator's Sword
 
 			--- Fist
 			i(223585),	-- Algari Bladefist

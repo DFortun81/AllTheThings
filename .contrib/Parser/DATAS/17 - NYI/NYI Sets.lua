@@ -11286,4 +11286,25 @@ root(ROOTS.NeverImplemented, n(SETS, {
 			}),
 		})),
 	}),
+	expansion(EXPANSION.TWW, {
+		-- 11.0.0
+		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+			header(HEADERS.LFGDungeon, 2645, {	-- Nerub-ar Palace
+				-- Extra Head Tierpieces
+				i(228148),	-- Warsculptor's Barbute
+				i(228149),	-- Entombed Seraph's Casque
+				i(228150),	-- Exhumed Centurion's Galea
+				i(228151),	-- Noetic of the Forgotten Reservoir
+				i(228152),	-- Lightless Scavenger's Skull
+				i(228153),	-- Horns of the Destroyer
+				i(228154),	-- K'areshi Phantom's Emptiness
+				i(228155),	-- Gatecrasher's Horns
+				i(228156),	-- Mask of the Greatlynx
+				i(228157),	-- Impalers of the Hypogeal Nemesis
+				i(228158),	-- Hexflame Coven's All-Seeing Eye
+				i(228159),	-- Living Luster's Semblance
+				i(228161),	-- Hood of Violet Rebirth
+			}),
+		})),
+	}),
 }));

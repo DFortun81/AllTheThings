@@ -3133,4 +3133,283 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 			i(211132),	-- Omni Storm
 		})),
 	}),
+	expansion(EXPANSION.TWW, {
+		-- 11.0.0
+		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+			i(211620),	-- 11.0 Dungeon Template - Plate - Feet
+				i(211621),	-- 11.0 Dungeon Template - Cloth - Robe
+				i(211622),	-- 11.0 Dungeon Template - Plate - Chest
+				i(211623),	-- 11.0 Dungeon Template - Mail - Chest
+				i(211624),	-- 11.0 Dungeon Template - Leather - Chest
+				i(211625),	-- 11.0 Dungeon Template - Leather - Hand
+				i(211626),	-- 11.0 Dungeon Template - Plate - Hand
+				i(211627),	-- 11.0 Dungeon Template - Cloth - Hand
+				i(211628),	-- 11.0 Dungeon Template - Mail - Hand
+				i(211629),	-- 11.0 Dungeon Template - Cloth - Head
+				i(211630),	-- 11.0 Dungeon Template - Mail - Head
+				i(211631),	-- 11.0 Dungeon Template - Leather - Head
+				i(211632),	-- 11.0 Dungeon Template - Plate - Legs
+				i(211633),	-- 11.0 Dungeon Template - Cloth - Legs
+				i(211634),	-- 11.0 Dungeon Template - Mail - Legs
+				i(211635),	-- 11.0 Dungeon Template - Leather - Legs
+				i(211636),	-- 11.0 Dungeon Template - Leather - Shoulder
+				i(211637),	-- 11.0 Dungeon Template - Plate - Shoulder
+				i(211638),	-- 11.0 Dungeon Template - Cloth - Shoulder
+				i(211639),	-- 11.0 Dungeon Template - Mail - Shoulder
+				i(211640),	-- 11.0 Dungeon Template - Plate - Waist
+				i(211641),	-- 11.0 Dungeon Template - Cloth - Waist
+				i(211642),	-- 11.0 Dungeon Template - Mail - Waist
+				i(211643),	-- 11.0 Dungeon Template - Leather - Waist
+				i(211644),	-- 11.0 Dungeon Template - Cloth - Wrist
+				i(211645),	-- 11.0 Dungeon Template - Plate - Wrist
+				i(211646),	-- 11.0 Dungeon Template - Mail - Wrist
+				i(211647),	-- 11.0 Dungeon Template - Leather - Wrist
+				i(211648),	-- 11.0 Dungeon Template - Generic - Finger
+				i(211649),	-- 11.0 Dungeon Template - Generic - Trinket
+				i(211650),	-- 11.0 Dungeon Template - Generic - Neck
+				i(211651),	-- 11.0 Dungeon Template - Generic - Cloak
+
+				i(211663),	-- 11.0 Dungeon Template - Plate - Head
+				i(211664),	-- 11.0 Dungeon Template - Cloth - Feet
+				i(211665),	-- 11.0 Dungeon Template - Mail - Feet
+				i(211666),	-- 11.0 Dungeon Template - Leather - Feet
+
+
+				i(211889),	-- 11.0 Poor Item Template - <Descriptor> Leather Cinch
+				i(211890),	-- 11.0 Poor Item Template - <Descriptor> Leather Footwraps
+				i(211891),	-- 11.0 Poor Item Template - <Descriptor> Leather Handwraps
+				i(211892),	-- 11.0 Poor Item Template - <Descriptor> Leather Guise
+				i(211893),	-- 11.0 Poor Item Template - <Descriptor> Leather Leggings
+				i(211894),	-- 11.0 Poor Item Template - <Descriptor> Leather Shoulderpads
+				i(211895),	-- 11.0 Poor Item Template - <Descriptor> Leather Jerkin
+				i(211896),	-- 11.0 Poor Item Template - <Descriptor> Leather Bracers
+				i(211897),	-- 11.0 Poor Item Template - <Descriptor> Plate Vambraces
+				i(211898),	-- 11.0 Poor Item Template - <Descriptor> Plate Warboots
+				i(211899),	-- 11.0 Poor Item Template - <Descriptor> Plate Shoulderguards
+				i(211900),	-- 11.0 Poor Item Template - <Descriptor> Plate Legguards
+				i(211901),	-- 11.0 Poor Item Template - <Descriptor> Plate Faceguard
+				i(211902),	-- 11.0 Poor Item Template - <Descriptor> Plate Gloves
+				i(211903),	-- 11.0 Poor Item Template - <Descriptor> Plate Chestpiece
+				i(211904),	-- 11.0 Poor Item Template - <Descriptor> Plate Greatbelt
+				i(211905),	-- 11.0 Poor Item Template - <Descriptor> Cloth Armbands
+				i(211906),	-- 11.0 Poor Item Template - <Descriptor> Cloth Vestments
+				i(211907),	-- 11.0 Poor Item Template - <Descriptor> Cloth Footpads
+				i(211908),	-- 11.0 Poor Item Template - <Descriptor> Cloth Legwraps
+				i(211909),	-- 11.0 Poor Item Template - <Descriptor> Cloth Grips
+				i(211910),	-- 11.0 Poor Item Template - <Descriptor> Cloth Hood
+				i(211911),	-- 11.0 Poor Item Template - <Descriptor> Cloth Cincture
+				i(211912),	-- 11.0 Poor Item Template - <Descriptor> Cloth Mantle
+				i(211913),	-- 11.0 Poor Item Template - <Descriptor> Chain Armguards
+				i(211914),	-- 11.0 Poor Item Template - <Descriptor> Chain Spaulders
+				i(211915),	-- 11.0 Poor Item Template - <Descriptor> Chain Footguards
+				i(211916),	-- 11.0 Poor Item Template - <Descriptor> Chain Breeches
+				i(211917),	-- 11.0 Poor Item Template - <Descriptor> Chain Vest
+				i(211918),	-- 11.0 Poor Item Template - <Descriptor> Chain Gauntlets
+				i(211919),	-- 11.0 Poor Item Template - <Descriptor> Chain Helm
+				i(211920),	-- 11.0 Poor Item Template - <Descriptor> Chain Clasp
+				i(212098),	-- 11.0 End Game Template <Descriptor> Vestment
+				i(212099),	-- 11.0 End Game Template <Descriptor> Sandals
+				i(212100),	-- 11.0 End Game Template <Descriptor> Handwraps
+				i(212101),	-- 11.0 End Game Template <Descriptor> Cowl
+				i(212102),	-- 11.0 End Game Template <Descriptor> Leggings
+				i(212103),	-- 11.0 End Game Template <Descriptor> Cord
+				i(212104),	-- 11.0 End Game Template <Descriptor> Cuffs
+				i(212105),	-- 11.0 End Game Template <Descriptor> Waders
+				i(212106),	-- 11.0 End Game Template <Descriptor> Grips
+				i(212108),	-- 11.0 End Game Template <Descriptor> Breeches
+				i(212109),	-- 11.0 End Game Template <Descriptor> Sash
+				i(212110),	-- 11.0 End Game Template <Descriptor> Bindings
+				i(212111),	-- 11.0 End Game Template <Descriptor> Chainmail
+				i(212112),	-- 11.0 End Game Template <Descriptor> Striders
+				i(212113),	-- 11.0 End Game Template <Descriptor> Grips
+				i(212114),	-- 11.0 End Game Template <Descriptor> Coif
+				i(212115),	-- 11.0 End Game Template <Descriptor> Greaves
+				i(212116),	-- 11.0 End Game Template <Descriptor> Shoulderguards
+				i(212117),	-- 11.0 End Game Template <Descriptor> Cinch
+				i(212118),	-- 11.0 End Game Template <Descriptor> Bracers
+				i(212119),	-- 11.0 End Game Template <Descriptor> Helm
+				i(212120),	-- 11.0 End Game Template <Descriptor> Breastplate
+				i(212121),	-- 11.0 End Game Template <Descriptor> Sabatons
+				i(212122),	-- 11.0 End Game Template <Descriptor> Gauntlets
+				i(212123),	-- 11.0 End Game Template <Descriptor> Legguards
+				i(212124),	-- 11.0 End Game Template <Descriptor> Mantle
+				i(212125),	-- 11.0 End Game Template <Descriptor> Girdle
+				i(212126),	-- 11.0 End Game Template <Descriptor> Armplates
+				i(212127),	-- 11.0 End Game Template <Descriptor> Vest
+				i(212128),	-- 11.0 End Game Template <Descriptor> Epaulets
+				i(212129),	-- 11.0 End Game Template <Descriptor> Shoulderpads
+
+				i(212140),	-- 11.0 End Game Template <Descriptor> Band
+				i(212141),	-- 11.0 End Game Template <Descriptor> Signet
+
+				i(212148),	-- 11.0 End Game Template <Descriptor> Trinket
+				i(212149),	-- 11.0 End Game Template <Descriptor> Band
+				i(212150),	-- 11.0 End Game Template <Descriptor> Belt
+				i(212151),	-- 11.0 End Game Template <Descriptor> Shawl
+				i(212152),	-- 11.0 End Game Template <Descriptor> Choker
+				i(206211),	-- Onyx Annulet
+				i(210220),	-- Resilient Mask
+
+				i(213099),	-- Test Warbound until equipped (DNT)
+
+
+				i(215173),	-- Serum of Unconstrained Senses
+				i(215175),	-- Belt of Vials
+				i(216657),	-- Test Item C
+
+				i(218132),	-- 11.0 Zone Uncommon Template - Vestment
+				i(218133),	-- 11.0 Zone Uncommon Template - Sandals
+				i(218134),	-- 11.0 Zone Uncommon Template - Handwraps
+				i(218135),	-- 11.0 Zone Uncommon Template - Cowl
+				i(218136),	-- 11.0 Zone Uncommon Template - Leggings
+				i(218137),	-- 11.0 Zone Uncommon Template - Cord
+				i(218138),	-- 11.0 Zone Uncommon Template - Cuffs
+				i(218139),	-- 11.0 Zone Uncommon Template - Waders
+				i(218140),	-- 11.0 Zone Uncommon Template - Grips
+				i(218141),	-- 11.0 Zone Uncommon Template - Helm
+				i(218142),	-- 11.0 Zone Uncommon Template - Breeches
+				i(218143),	-- 11.0 Zone Uncommon Template - Sash
+				i(218144),	-- 11.0 Zone Uncommon Template - Bindings
+				i(218145),	-- 11.0 Zone Uncommon Template - Chainmail
+				i(218146),	-- 11.0 Zone Uncommon Template - Striders
+				i(218147),	-- 11.0 Zone Uncommon Template - Grips
+				i(218148),	-- 11.0 Zone Uncommon Template - Coif
+				i(218149),	-- 11.0 Zone Uncommon Template - Greaves
+				i(218150),	-- 11.0 Zone Uncommon Template - Shoulderguards
+				i(218151),	-- 11.0 Zone Uncommon Template - Cinch
+				i(218152),	-- 11.0 Zone Uncommon Template - Bracers
+				i(218153),	-- 11.0 Zone Uncommon Template - Helm
+				i(218154),	-- 11.0 Zone Uncommon Template - Breastplate
+				i(218155),	-- 11.0 Zone Uncommon Template - Sabatons
+				i(218156),	-- 11.0 Zone Uncommon Template - Gauntlets
+				i(218157),	-- 11.0 Zone Uncommon Template - Legguards
+				i(218158),	-- 11.0 Zone Uncommon Template - Mantle
+				i(218159),	-- 11.0 Zone Uncommon Template - Girdle
+				i(218160),	-- 11.0 Zone Uncommon Template - Armplates
+				i(218161),	-- 11.0 Zone Uncommon Template - Vest
+				i(218162),	-- 11.0 Zone Uncommon Template - Epaulets
+				i(218163),	-- 11.0 Zone Uncommon Template - Shoulderpads
+
+				i(218174),	-- 11.0 Zone Uncommon Template - Band
+				i(218175),	-- 11.0 Zone Uncommon Template - Signet
+
+				i(218182),	-- 11.0 Zone Uncommon Template - Trinket
+				i(218183),	-- 11.0 Zone Uncommon Template - Band
+				i(218184),	-- 11.0 Zone Uncommon Template - Belt
+				i(218185),	-- 11.0 Zone Uncommon Template - Shawl
+				i(218186),	-- 11.0 Zone Uncommon Template - Choker
+				i(218189),	-- 11.0 Leveling Quest Template - Vestment
+				i(218190),	-- 11.0 Leveling Quest Template - Sandals
+				i(218191),	-- 11.0 Leveling Quest Template - Handwraps
+				i(218192),	-- 11.0 Leveling Quest Template - Cowl
+				i(218193),	-- 11.0 Leveling Quest Template - Leggings
+				i(218194),	-- 11.0 Leveling Quest Template - Cord
+				i(218195),	-- 11.0 Leveling Quest Template - Cuffs
+				i(218196),	-- 11.0 Leveling Quest Template - Waders
+				i(218197),	-- 11.0 Leveling Quest Template - Grips
+				i(218198),	-- 11.0 Leveling Quest Template - Helm
+				i(218199),	-- 11.0 Leveling Quest Template - Breeches
+				i(218200),	-- 11.0 Leveling Quest Template - Sash
+				i(218201),	-- 11.0 Leveling Quest Template - Bindings
+				i(218202),	-- 11.0 Leveling Quest Template - Chainmail
+				i(218203),	-- 11.0 Leveling Quest Template - Striders
+				i(218204),	-- 11.0 Leveling Quest Template - Grips
+				i(218205),	-- 11.0 Leveling Quest Template - Coif
+				i(218206),	-- 11.0 Leveling Quest Template - Greaves
+				i(218207),	-- 11.0 Leveling Quest Template - Shoulderguards
+				i(218208),	-- 11.0 Leveling Quest Template - Cinch
+				i(218209),	-- 11.0 Leveling Quest Template - Bracers
+				i(218210),	-- 11.0 Leveling Quest Template - Helm
+				i(218211),	-- 11.0 Leveling Quest Template - Breastplate
+				i(218212),	-- 11.0 Leveling Quest Template - Sabatons
+				i(218213),	-- 11.0 Leveling Quest Template - Gauntlets
+				i(218214),	-- 11.0 Leveling Quest Template - Legguards
+				i(218215),	-- 11.0 Leveling Quest Template - Mantle
+				i(218216),	-- 11.0 Leveling Quest Template - Girdle
+				i(218217),	-- 11.0 Leveling Quest Template - Armplates
+				i(218218),	-- 11.0 Leveling Quest Template - Vest
+				i(218219),	-- 11.0 Leveling Quest Template - Epaulets
+				i(218220),	-- 11.0 Leveling Quest Template - Shoulderpads
+
+				i(218231),	-- 11.0 Leveling Quest Template - Band
+				i(218232),	-- 11.0 Leveling Quest Template - Signet
+
+				i(218239),	-- 11.0 Leveling Quest Template - Trinket
+				i(218240),	-- 11.0 Leveling Quest Template - Band
+				i(218241),	-- 11.0 Leveling Quest Template - Belt
+				i(218242),	-- 11.0 Leveling Quest Template - Shawl
+				i(218243),	-- 11.0 Leveling Quest Template - Choker
+				i(224084),	-- Tentacled Hat
+				i(224085),	-- Hightfish Cap
+				i(224086),	-- Nat's Drinking Hat
+				i(224087),	-- Boots of the Bay
+				i(224088),	-- Worn Fishing Hat
+				i(224089),	-- Nat Pagle's Extreme Anglin' Boots
+				i(224090),	-- Weather-Beaten Fishing Hat
+				i(224091),	-- Nat's Hat
+				i(224092),	-- Darkmoon Fishing Cap
+				i(224093),	-- Anglin' Art's Stompers
+				i(224094),	-- Anglin' Art's Waders
+				i(224095),	-- Anglin' Art's Treads
+				i(224096),	-- Anglin' Art's Sandals
+				i(224097),	-- Lucky Fishing Hat
+				-- Armor..
+				i(224170),	-- Wildercloth Fishing Cap
+				i(224171),	-- Master's Wildercloth Fishing Cap
+				-- Armor
+				i(225509),	-- [PH] Armor Vestment
+				i(225510),	-- [PH] Armor Sandals
+				i(225511),	-- [PH] Armor Handwraps
+				i(225512),	-- [PH] Armor Cowl
+				i(225517),	-- [PH] Armor Grips
+				i(225518),	-- [PH] Armor Helm
+				i(225519),	-- [PH] Armor Breeches
+				i(225522),	-- [PH] Armor Chainmail
+				i(225525),	-- [PH] Armor Coif
+				i(225527),	-- [PH] Armor Shoulderguards
+				i(225528),	-- [PH] Armor Cinch
+				i(225531),	-- [PH] Armor Breastplate
+				i(225532),	-- [PH] Armor Sabatons
+				i(225534),	-- [PH] Armor Legguards
+				i(225536),	-- [PH] Armor Girdle
+				i(225539),	-- [PH] Armor Epaulets
+				i(219942),	-- 11.0 Stalwart's Sandals
+
+				i(221066),	-- Template - Accessory - Finger
+
+				i(221505),	-- [DNT] Rare Cloth - Robe
+				i(223944),	-- [PH] Infested Fungal Wristwraps
+				i(223945),	-- [PH] Perchfather's Cuffs
+				i(223946),	-- [PH] Storm Bindings
+				i(223947),	-- [PH] Steam-Powered Wristwatch
+				-- Mail Belt
+				i(223458),	-- [PH] 11.0 - Belt
+
+				---
+				i(226165),	-- Unseemly Agate Choker
+
+				--- Trinkets
+				i(213423),	-- Bygone Weapon Charm
+				i(213533),	-- Ancient Weapon Charm
+				i(213534),	-- Bygone Armor Charm
+				i(213535),	-- Ancient Armor Charm
+				i(217402),	-- Olden Armor Charm
+				i(217403),	-- Olden Weapon Charm
+				i(217404),	-- Time-Worn Armor Charm
+				i(217405),	-- Time-Worn Weapon Charm
+
+				-- armor
+				-- trinket
+				i(219916),	-- Bronzebeard Family Compass
+				i(225669),	-- Brute Force Idol
+				i(225682),	-- Time Lost Relic
+				i(225683),	-- Grasping Necrotic Relic
+				i(225684),	-- Relicblood of Zekvir
+				i(225685),	-- Relic of Sentience
+				i(212412),	-- 11.0 Raid Template - Wand - RangedRight
+				i(212455),	-- 11.0 Raid Template - Physical DPS - Trinket
+				--
+				i(207390),	-- Delve Ring
+		})),
+	}),
 }));
