@@ -1179,10 +1179,12 @@ root(ROOTS.Unsorted, {
 			i(232385),	-- Elekk Ear
 		})),
 		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+			--[[
 			explorationHeader({
 				exploration(15667),	-- Delves
 				exploration(15552),	-- The Undersea
 			}),
+			]]--
 			filter(MISC, {
 				i(228624),	-- Depleted Awakened Flightstone
 				i(228625),	-- Depleted Ruby Flightstone
@@ -1501,6 +1503,7 @@ root(ROOTS.Unsorted, {
 					["_drop"] = {"g"},
 				}),
 			}),
+			--[[
 			explorationHeader({
 				exploration(15551),	-- The Fangs
 				exploration(15550),	-- Stagnant Mire
@@ -1810,6 +1813,7 @@ root(ROOTS.Unsorted, {
 				exploration(14512),	-- RebornTree
 				exploration(14484),	-- 10.2 Devland
 			}),
+			--]]
 		})),
 	}),
 	expansion(EXPANSION.DF, {
