@@ -194,7 +194,6 @@ root(ROOTS.Zones, {
 					["sym"] = {{"select","speciesID",
 						641,	-- Arctic Hare (PET!)
 						536,	-- Tundra Penguin (PET!)
-						1238,	-- Unborn Val'kyr (PET!)
 					}},
 					["groups"] = {
 						pet(537, {	-- Dragonbone Hatchling (PET!)
@@ -209,6 +208,15 @@ root(ROOTS.Zones, {
 								{ 52.0, 54.0, DRAGONBLIGHT },
 								{ 54.0, 42.0, DRAGONBLIGHT },
 							},
+						}),
+						pet(1238, {	-- Unborn Val'kyr (PET!)
+							["description"] = "This pet spawns in all ordinary questing zones in Northrend, but only at a few specific locations. Other pets might spawn in their place, they might be sensitive to phasing, and might only have one spawn per zone.\n\nSpawns in Dragonblight:\n1. West of Star's Rest\n2. The Dragon Wastes, north of Wyrmrest temple, east of Path of the Titans\n3. The Forgotten Shore, north of the westernmost house ruin",
+							["coords"] = {
+								{ 26.7, 54.1, DRAGONBLIGHT },
+								{ 65.5, 35.6, DRAGONBLIGHT },
+								{ 82.2, 66.1, DRAGONBLIGHT },
+							},
+							["timeline"] = { ADDED_5_3_0 },
 						}),
 					},
 				}),

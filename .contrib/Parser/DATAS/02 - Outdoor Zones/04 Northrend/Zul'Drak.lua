@@ -114,12 +114,19 @@ root(ROOTS.Zones, {
 						641,	-- Arctic Hare (PET!)
 						387,	-- Snake (PET!)
 						412,	-- Spider (PET!)
-						1238,	-- Unborn Val'kyr (PET!)
 					}},
 					["groups"] = {
 						pet(535, {	-- Water Waveling (PET!)
 							["coord"] = { 43.0, 77.6,ZULDRAK },
 							["description"] = "Spawns in the farms south of The Argent Stand.",
+						}),
+						pet(1238, {	-- Unborn Val'kyr (PET!)
+							["description"] = "This pet spawns in all ordinary questing zones in Northrend, but only at a few specific locations. Other pets might spawn in their place, they might be sensitive to phasing, and might only have one spawn per zone.\n\nSpawns in Zul'Drak:\n1. The Dead Fields, just west of Crusader Forward Camp",
+							["coords"] = {
+								{ 24.35, 64.0, ZULDRAK },
+								--{ 75.1, 23.1, ZULDRAK }, -- Just south of Gundrak dungeon's northwestern entrance. NOT confirmed.
+							},
+							["timeline"] = { ADDED_5_3_0 },
 						}),
 					},
 				}),

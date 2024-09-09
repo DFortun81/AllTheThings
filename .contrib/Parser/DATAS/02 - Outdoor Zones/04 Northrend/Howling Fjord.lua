@@ -210,7 +210,6 @@ root(ROOTS.Zones, {
 						387,	-- Snake (PET!)
 						412,	-- Spider (PET!)
 						379,	-- Squirrel (PET!)
-						1238,	-- Unborn Val'kyr (PET!)
 					}},
 					["groups"] = {
 						pet(523, {	-- Devouring Maggot (PET!)
@@ -231,6 +230,15 @@ root(ROOTS.Zones, {
 								{ 32.2, 42.4, HOWLING_FJORD },
 								{ 60.6, 62.8, HOWLING_FJORD },
 							},
+						}),
+						pet(1238, {	-- Unborn Val'kyr (PET!)
+							["description"] = "This pet spawns in all ordinary questing zones in Northrend, but only at a few specific locations. Other pets might spawn in their place, they might be sensitive to phasing, and might only have one spawn per zone.\n\nSpawns in Howling Fjord:\n1. West of Utgarde Keep, between the road and the river\n2. By the main road west of Baelgun's Excavation Site\n3. East of the road east of Utgarde Keep",
+							["coords"] = {
+								{ 45.9, 43.15, HOWLING_FJORD },
+								{ 68.3, 67.6, HOWLING_FJORD },
+								{ 71.7, 43.2, HOWLING_FJORD },
+							},
+							["timeline"] = { ADDED_5_3_0 },
 						}),
 					},
 				}),

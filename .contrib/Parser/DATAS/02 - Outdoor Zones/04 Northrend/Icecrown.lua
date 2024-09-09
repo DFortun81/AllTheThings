@@ -124,11 +124,19 @@ root(ROOTS.Zones, {
 						635,	-- Adder (PET!)
 						641,	-- Arctic Hare (PET!)
 						633,	-- Mountain Skunk (PET!)
-						1238,	-- Unborn Val'kyr (PET!)
 					}},
 					["groups"] = {
 						pet(393),	-- Cockroach (PET!)
 						pet(538),	-- Scourged Whelpling (PET!)
+						pet(1238, {	-- Unborn Val'kyr (PET!)
+							["description"] = "This pet spawns in all ordinary questing zones in Northrend, but only at a few specific locations. Other pets might spawn in their place, they might be sensitive to phasing, and might only have one spawn per zone.\n\nSpawns in Icecrown:\n1. Between The Broken Front and Scourgeholme\n2. Northen end of Ironwall Rampart\n3. The Court of Bones, southwest by the citadel wall",
+							["coords"] = {
+								{ 73.55, 64.9, ICECROWN },
+								{ 44.2, 33.6, ICECROWN },
+								{ 48.3, 87.1, ICECROWN },
+							},
+							["timeline"] = { ADDED_5_3_0 },
+						}),
 					},
 				}),
 				explorationHeader({
