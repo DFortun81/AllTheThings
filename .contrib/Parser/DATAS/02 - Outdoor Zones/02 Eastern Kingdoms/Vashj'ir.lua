@@ -413,8 +413,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							},
 						})),
-						q(26019, {	-- Enormous Eel Egg
-							["provider"] = { "i", 56570 },	-- Enormous Eel Egg
+						q(26019, {	-- Enormous Eel Egg (A)
+							["provider"] = { "i", 56571 },	-- Enormous Eel Egg
 							["sourceQuest"] = 26015,	-- Phosphora Hunting
 							["crs"] = {
 								41925,	-- Coldlight Hunters
