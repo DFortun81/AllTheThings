@@ -768,14 +768,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["isBreadcrumb"] = true,	-- unless it is now required for spawn next quests/npc
 				}),
 				q(83616, {	-- The Entrenched
-					["sourceQuests"] = { 81686 },	-- Subterfuge in Silk
+					-- ["sourceQuests"] = { 81686 },	-- Subterfuge in Silk
 					["provider"] = { "n", 222136 },	-- Teth
-					["coord"] = { 69.1, 52.0, AZJ_KAHET },
+					["coord"] = { 69.7, 47.9, AZJ_KAHET },
 				}),
 				q(81683, {	-- Spring Collection
 					["sourceQuests"] = { 83616 },	-- The Entrenched
 					["provider"] = { "n", 221557 },	-- Grand Overspinner Antourix
-					["coord"] = { 74.7, 56.2, AZJ_KAHET },
+					["coord"] = { 75.8, 52.5, AZJ_KAHET },
 					["g"] = {
 						i(224286),	-- Cochineal Crawler (QI!)
 						i(224284),	-- Eyeless Petal (QI!)
@@ -786,7 +786,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81667, {	-- The Upstart
 					["sourceQuests"] = { 81686 },	-- Subterfuge in Silk
 					["provider"] = { "n", 222136 },	-- Teth
-					["coord"] = { 69.1, 52.0, AZJ_KAHET },
+					["coord"] = { 69.7, 47.9, AZJ_KAHET },
 				}),
 				q(81668, {	-- Measure Once, Cut Thrice
 					["sourceQuests"] = { 81667 },	-- The Upstart
@@ -818,7 +818,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						81687,	-- I Expect You To Dye
 					},
 					["provider"] = { "n", 222136 },	-- Teth
-					["coord"] = { 69.0, 52.0, AZJ_KAHET },
+					["coord"] = { 69.7, 47.9, AZJ_KAHET },
 					["g"] = {
 						i(224659),	-- Secret-Woven Silk (QI!)
 					},

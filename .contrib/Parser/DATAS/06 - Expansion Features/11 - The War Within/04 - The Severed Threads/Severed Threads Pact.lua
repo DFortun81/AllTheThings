@@ -50,7 +50,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(82339, {	-- An Honorless Kill
 					["sourceQuests"] = { 82338 },	-- Absent Errand
-					["provider"] = { "n", 224345 },	-- Ukos'via <Historical Spinner>
+					["provider"] = { "n", 223760 },	-- Ukos'via <Historical Spinner>
 					["coord"] = { 40.9, 33.5, NERUBAR },
 					["g"] = {
 						i(225637),	-- Poisoned Dagger (QI!)
