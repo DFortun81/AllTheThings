@@ -638,4 +638,80 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(210591),	-- Tishamaat Memory Stones
 		})),
 	}),
+	expansion(EXPANSION.TWW, {
+		-- 11.0.0
+		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+			i(220212),	-- Aelric's Corrupted Tinderbox
+			i(220359),	-- Aelric's Corrupted Tinderbox
+			i(219939),	-- Alleria's Crystal
+			i(213193),	-- Arathi Army Medallion
+			i(219197),	-- Black Blood Residue
+			i(211210),	-- Blacksmith Boss' Head
+			i(211304),	-- Bone Key
+			i(211963),	-- Ceiling Sweeper
+			i(208957),	-- Conduit of the Southern Storm
+			i(219214),	-- Cooling Wax
+			i(213108),	-- Corrupted Oil
+			i(218084),	-- Crumpled Note
+			i(211930),	-- Damaged Framework
+			i(211291),	-- Decorative Bones
+			i(221751),	-- DO NOT USE Prismatic Codex
+			i(216686),	-- Earthen Axe
+			i(217142),	-- Earthen Limb
+			i(216683),	-- Earthen Rifle
+			i(216685),	-- Earthen Shield
+			i(216684),	-- Earthen Sword
+			i(212223),	-- Elemental Essence
+			i(225927),	-- Emerald Necklace
+			i(218127),	-- Ever-Blossoming Fungi
+			i(211797),	-- Expedition Map
+			i(219400),	-- Faerin's Torch of Holy Flame
+			i(212547),	-- Final Project Page
+			i(206349),	-- Fragmented Reagent
+			i(211960),	-- Game Piece
+			i(212882),	-- Glittering Ore
+			i(211929),	-- Ichor Coated Debris
+			i(218458),	-- Important Info Scrolls
+			i(213402),	-- Incriminating Crystal
+			i(213405),	-- Incriminating Focus
+			i(213404),	-- Incriminating Script
+			i(223220),	-- Kaheti All-Purpose Cleanser
+			i(213424),	-- Keg of Cinderbrew Mead
+			i(217400),	-- Kobyss Lure
+			i(222963),	-- Lava Globs
+			i(213557),	-- Lost Journal Tablet
+			i(212519),	-- Nebb's Key
+			i(212521),	-- Nebb's "Treasure" [DNT]
+			i(228378),	-- Pristine Council's Seal
+			i(212604),	-- Restored Titan Key NOT USED
+			i(211961),	-- Rocket-Powered Impact Wrench
+			i(219388),	-- Sacred Flame Torch
+			i(212520),	-- Shadow-Tainted Tinderbox
+			i(213425),	-- Shredded Reins
+			i(223079),	-- Slagshell Egg
+			i(218457),	-- Special Silk
+			i(211469),	-- Squash Hook
+			i(212494),	-- Squishy Bits [DNT]
+			i(219293),	-- Sureki Intelligence
+			i(224777),	-- Sureki Shadecaster
+			i(218459),	-- TBD
+			i(217506),	-- Test Item [DNT]
+			i(211407),	-- The Book of Bob
+			i(217310),	-- The Foremans' First Scroll
+			i(217311),	-- The Foreman's Second Scroll
+			i(217312),	-- The Foreman's Third Scroll
+			i(216682),	-- The Vizier's Invitation
+			i(212224),	-- Titan Relics
+			i(220215),	-- Unidentified Tinderbox
+			i(219215),	-- Wax Puddle
+			i(224182),	-- Webbed Ingots
+			i(224810),	-- Woodworm Elixir
+			i(224180),	-- Worn Journal
+			i(219804),	-- [DNT] Antiparalytic Serum
+			i(208948),	-- [DNT] Club Chest Key
+			i(222899),	-- [UNUSED] Faerin's Shield
+			i(216605),	-- [UNUSED] Vial of Aggression Pheromone
+			i(218104),	-- [UNUSED] Vial of Aggression Pheromone
+		})),
+	}),
 }));

@@ -453,11 +453,8 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 		-- 9.0.1
 		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 			i(178152),	-- <Broker Adjective> Return Beacon
-			i(171298),	-- [DNT] REUSE ME \\ Modified Crafting Reagent 06
-			i(171299),	-- [DNT] REUSE ME \\ Modified Crafting Reagent 07
-			i(171300),	-- [DNT] REUSE ME \\ Modified Crafting Reagent 08
-			i(173063),	-- [DNT] REUSE ME \\ [DNT] REUSE ME [MTMM]
-			i(173064),	-- [DNT] REUSE ME \\ [DNT] REUSE ME [MTMM]
+			i(173063),	-- [DNT] REUSE ME
+			i(173064),	-- [DNT] REUSE ME
 			i(180483),	-- [PH] Legendary Dust
 			i(179367),	-- [PH] Torghast Boss Loot
 			i(180531),	-- [PH] Twisted Dust
@@ -612,6 +609,9 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(175752),	-- Mirror Fragment
 			i(177764),	-- Mirror Fragment
 			i(179664),	-- Mirror of Kalisthene
+			i(171298),	-- Modified Crafting Reagent 06
+			i(171299),	-- Modified Crafting Reagent 07
+			i(171300),	-- Modified Crafting Reagent 08
 			i(173941),	-- Monstrous Skull
 			i(183734),	-- Mysteriously Thrumming Orb
 			i(180399),	-- New Player Experience Box
@@ -1585,10 +1585,10 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(224028),	-- Bottomless Bag of Khaz Algar Ore
 			i(224029),	-- Bottomless Bag of Khaz Algar Skins
 			i(224039),	-- Bottomless Bag of Khaz Algar Tailoring Goods
-			i(222929),	-- Carved Coin Coffer \\ Large Coin Coffer
+			i(222929),	-- Carved Coin Coffer
 			i(218340),	-- Chest of Playtest Equipment
 			i(228193),	-- Chipped Demon's Blade
-			i(220693),	-- Coffer Key Shard \\ Delve Key Fragment
+			i(220693),	-- Coffer Key Shard
 			i(222928),	-- Coin Coffer
 			i(220260),	-- Corroded Golem Graspers
 			i(228192),	-- Cracked Fel Focus
@@ -1605,7 +1605,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(228194),	-- Fully Scrapped Scrap
 			i(209431),	-- Fungal Scraper
 			i(218123),	-- Glowing Shard
-			i(224791),	-- Golden Lord Outfit \\ Golden Ruler Outfit
+			i(224791),	-- Golden Lord Outfit
 			i(220377),	-- Growing Void Mass
 			i(206581),	-- Harvester Core
 			i(219743),	-- Khaz Algar Olive (Vendor)
@@ -1642,7 +1642,7 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(224066),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Skinning
 			i(224067),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Tailoring
 			i(219494),	-- Ritual Flame
-			i(222954),	-- Runed Coin Coffer \\ Coin Coffer
+			i(222954),	-- Runed Coin Coffer
 			i(225209),	-- Sacred Flame Prayers
 			i(224792),	-- Sanguine Aristocrat Outfit
 			i(227677),	-- Satchel of Enchanting Surplus

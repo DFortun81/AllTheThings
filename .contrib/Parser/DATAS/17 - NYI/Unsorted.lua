@@ -1919,6 +1919,8 @@ root(ROOTS.Unsorted, {
 				i(218122),	-- Stolen Relic \\ Stolen Shard
 				--- Kriegval--
 				i(224767),	-- Giant Candle Parts
+				--- Waterworks --
+				i(211481),	-- Stomping Shoes \\ Stompin' Shoes
 				--- WQ? Azj? ---
 				i(213420),	-- Fungarian Mushroom Cap
 				--- WQ special Ringing
@@ -1967,97 +1969,29 @@ root(ROOTS.Unsorted, {
 
 			}),
 			f(QUEST_ITEMS, {
-				i(206348),	-- Fragmented Flame
-				i(206349),	-- Fragmented Reagent
-				i(208948),	-- [DNT] Club Chest Key \\ Club Chest Key
-				i(208957),	-- Conduit of the Southern Storm
-				i(209857),	-- Unusual Seeds
-				i(211210),	-- Blacksmith Boss' Head
-				i(211291),	-- Decorative Bones
-				i(211304),	-- Bone Key
-				i(211407),	-- The Book of Bob
-				i(211469),	-- Squash Hook
-				i(211481),	-- Stomping Shoes \\ Stompin' Shoes
-				i(211797),	-- Expedition Map
-				i(211929),	-- Ichor Coated Debris
-				i(211930),	-- Damaged Framework
-				i(211960),	-- Game Piece
-				i(211961),	-- Rocket-Powered Impact Wrench
-				i(211963),	-- Ceiling Sweeper
-				i(212223),	-- Elemental Essence
-				i(212224),	-- Titan Relics
-				i(212349),	-- Sizzling Spring Water [DNT][UNUSED]
+				-- Delves?
 				i(212344),	-- Chest Key
-				i(212520),	-- Shadow-Tainted Tinderbox
-				i(212882),	-- Glittering Ore
-				i(212494),	-- Squishy Bits [DNT]
-				i(212519),	-- Nebb's Key
-				i(212521),	-- Nebb's "Treasure" [DNT]
-				i(212547),	-- Final Project Page
-				i(212604),	-- Restored Titan Key NOT USED
-				i(213108),	-- Corrupted Oil
+				i(209857),	-- Unusual Seeds
+				-- Idk
 				i(213163),	-- Cryptographic Glyph
-				i(213193),	-- Arathi Army Medallion
-				i(213402),	-- Incriminating Crystal
-				i(213404),	-- Incriminating Script
-				i(213405),	-- Incriminating Focus
-				i(213424),	-- Keg of Cinderbrew Mead
-				i(213425),	-- Shredded Reins
-				i(213557),	-- Lost Journal Tablet
-				i(216605),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
-				i(216682),	-- The Vizier's Invitation
-				i(216683),	-- Earthen Rifle
-				i(216684),	-- Earthen Sword
-				i(216685),	-- Earthen Shield
-				i(216686),	-- Earthen Axe
-				i(217142),	-- Earthen Limb
-				i(217310),	-- The Foremans' First Scroll
-				i(217311),	-- The Foreman's Second Scroll
-				i(217312),	-- The Foreman's Third Scroll
-				i(217400),	-- Kobyss Lure
-				i(217506),	-- Test Item [DNT]
-				i(218084),	-- Crumpled Note
-				i(218104),	-- [UNUSED] Vial of Aggression Pheromone \\ Vial of Aggression Pheromone
-				i(218127),	-- Ever-Blossoming Fungi
-				i(218457),	-- Special Silk
-				i(218458),	-- Important Info Scrolls
-				i(218459),	-- TBD
-				i(219197),	-- Black Blood Residue
-				i(219214),	-- Cooling Wax
-				i(219215),	-- Wax Puddle
-				i(219293),	-- Sureki Intelligence
-				i(219388),	-- Sacred Flame Torch
-				i(219400),	-- Faerin's Torch of Holy Flame
-				i(219804),	-- [DNT] Antiparalytic Serum
-				i(219939),	-- Alleria's Crystal
 				i(220116),	-- Completed Market Audit
-				i(220212),	-- Aelric's Corrupted Tinderbox
-				i(220215),	-- Unidentified Tinderbox
-				i(220359),	-- Aelric's Corrupted Tinderbox
-				i(221751),	-- DO NOT USE Prismatic Codex
-				i(222899),	-- [UNUSED] Faerin's Shield
-				i(222963),	-- Lava Globs
-				i(223079),	-- Slagshell Egg \\ Recipe: Shadow-Infused Gumbo
-				i(223220),	-- Kaheti All-Purpose Cleanser
 				i(223638),	-- Arathi Trade Goods
+				i(224252),	-- Calcified Journal
+				i(225887),	-- Titan Emitter \\ The Archaedas Conundrum
+				-- Misc NYI --
+				i(206348),	-- Fragmented Flame
+				i(212349),	-- Sizzling Spring Water [DNT][UNUSED]
+
+
+				--
+				i(219934),	-- Spark of War
+				--- Raid Quest
 				i(224011),	-- Signet of the Thousand Scars
 				i(224012),	-- Signet of the Thousand Scars
 				i(224013),	-- Signet of the Thousand Scars
 				i(224014),	-- Signet of the Skeinspiner
 				i(224015),	-- Signet of the Skeinspiner
 				i(224016),	-- Signet of the Skeinspiner
-				i(224180),	-- Worn Journal
-				i(224182),	-- Webbed Ingots
-				i(224252),	-- Calcified Journal
-				i(224777),	-- Sureki Shadecaster
-				i(224810),	-- Woodworm Elixir
-				i(225887),	-- Titan Emitter \\ The Archaedas Conundrum
-				i(225927),	-- Emerald Necklace
-				i(228378),	-- Pristine Council's Seal
-
-
-				--
-				i(219934),	-- Spark of War
 			}),
 			n(WEAPONS, {
 				i(216905),	-- Brann Bronzebeard's Axe
