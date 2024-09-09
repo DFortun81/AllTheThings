@@ -260,7 +260,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 	}),
 	m(EARTHCRAWL_MINES, {
-		["icon"] = [[~_.asset("Delves_Kobold")]],
+		["icon"] = [[~_.asset("Delves_Nerubian")]],
 		["coord"] = { 38.6, 73.9, ISLE_OF_DORN },
 		["g"] = {
 			n(ACHIEVEMENTS, {
@@ -268,7 +268,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				ach(40527),	-- Earthcrawl Mines Stories (automated)
 			}),
 			filter(BATTLE_PETS, {
-				i(223624),	-- Sneef (PET!)
+				i(222971),	-- Bouncer (PET!)
 			}),
 			filter(MISC, {
 				i(213000),	-- Holy Flamethrower Torch
@@ -319,6 +319,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			filter(BATTLE_PETS, {
 				i(225337),	-- Violet Sporbit (PET!)
 			}),
+			filter(COSMETIC, {
+				i(212162),	-- Bitter Shroom Cap
+				i(211801),	-- Poisonous Shroom Cap
+				i(212163),	-- Soporific Shroom Cap
+			}),
 			filter(MISC, {
 				i(210017),	-- Fungal Fish
 			}),
@@ -367,6 +372,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			filter(BATTLE_PETS, {
 				i(223624),	-- Sneef (PET!)
 			}),
+			filter(COSMETIC, {
+				i(212168),	-- Cinderbee Wax Candle Hat
+				i(212169),	-- Mint-Scented Candle Hat
+				i(212167),	-- Taken Candle
+			}),
 			filter(MISC, {
 				i(210970),	-- Crumbled Keepsake (QI!)
 				i(210981),	-- Kriegval's Helm (QI!)
@@ -408,6 +418,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			filter(BATTLE_PETS, {
 				i(225337),	-- Violet Sporbit (PET!)
+			}),
+			filter(COSMETIC, {
+				i(212162),	-- Bitter Shroom Cap
+				i(211801),	-- Poisonous Shroom Cap
+				i(212163),	-- Soporific Shroom Cap
 			}),
 			filter(MISC, {
 				i(218002),	-- Priceless Pumpkin
@@ -484,6 +499,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				ach(40809),	-- Nightfall Sanctum Discoveries
 				ach(40530),	-- Nightfall Sanctum Stories (automated)
 			}),
+			filter(COSMETIC, {
+				i(225067),	-- Shadowlit Haversack
+				i(225065),	-- Torchbearer's Haversack
+				i(225066),	-- Trail Blazer's Haversack
+			}),
 			n(QUESTS, {
 				q(83755, {	-- Delves: Nightfall Sanctum
 					["provider"] = { "n", 227523 },	-- Brann Bronzebeard
@@ -526,6 +546,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			filter(BATTLE_PETS, {
 				i(222971),	-- Bouncer (PET!)
 			}),
+			filter(COSMETIC, {
+				i(212172),	-- Ajul'Nerub Raptorial Spine
+				i(212173),	-- Rulk'Nerub Raptorial Spine
+			}),
 			filter(MISC, {
 				i(225719),	-- Light's Mantle
 			}),
@@ -565,6 +589,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			filter(BATTLE_PETS, {
 				i(221496),	-- Wriggle (PET!)
+			}),
+			filter(COSMETIC, {
+				i(212166),	-- Coral Nautic Helm
+				i(212165),	-- Deep Nautic Helm
+				i(212164),	-- Shallow Nautic Helm
 			}),
 			filter(MISC, {
 				o(415296, {	-- Repair Kit
@@ -610,6 +639,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			filter(BATTLE_PETS, {
 				i(222971),	-- Bouncer (PET!)
 			}),
+			filter(COSMETIC, {
+				i(212172),	-- Ajul'Nerub Raptorial Spine
+				i(212173),	-- Rulk'Nerub Raptorial Spine
+			}),
 			filter(MISC, {
 				i(217965),	-- Repair Kit
 			}),
@@ -649,6 +682,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			filter(BATTLE_PETS, {
 				i(221496),	-- Wriggle (PET!)
+			}),
+			filter(COSMETIC, {
+				i(212166),	-- Coral Nautic Helm
+				i(212165),	-- Deep Nautic Helm
+				i(212164),	-- Shallow Nautic Helm
 			}),
 			n(QUESTS, {
 				q(83767, {	-- Delver's Call: The Sinkhole
@@ -694,6 +732,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			filter(BATTLE_PETS, {
 				i(222971),	-- Bouncer (PET!)
 			}),
+			filter(COSMETIC, {
+				i(212172),	-- Ajul'Nerub Raptorial Spine
+				i(212173),	-- Rulk'Nerub Raptorial Spine
+			}),
 			filter(MISC, {
 				i(216772),	-- Whispering Explosives (QI!)
 			}),
@@ -736,6 +778,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			filter(BATTLE_PETS, {
 				i(222971),	-- Bouncer (PET!)
+			}),
+			filter(COSMETIC, {
+				i(212172),	-- Ajul'Nerub Raptorial Spine
+				i(212173),	-- Rulk'Nerub Raptorial Spine
 			}),
 			filter(MISC, {
 				i(217715),	-- Key Scroll
@@ -783,6 +829,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			filter(BATTLE_PETS, {
 				i(223624),	-- Sneef (PET!)
+			}),
+			filter(COSMETIC, {
+				i(212168),	-- Cinderbee Wax Candle Hat
+				i(212169),	-- Mint-Scented Candle Hat
+				i(212167),	-- Taken Candle
 			}),
 			n(QUESTS, {
 				q(83749, {	-- Delves: The Waterworks
@@ -988,14 +1039,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		filter(CONSUMABLES, {
 			i(226120),	-- Deployable Battle Supplies
 			i(226131),	-- Deployable Wind-Wrangling Spire
-		}),
-		filter(COSMETIC, {
-			i(212172),	-- Ajul'Nerub Raptorial Spine
-			i(212162),	-- Bitter Shroom Cap
-			i(212166),	-- Coral Nautic Helm
-			i(212173),	-- Rulk'Nerub Raptorial Spine
-			i(212163),	-- Soporific Shroom Cap
-			i(225066),	-- Trailblazer's Haversack
 		}),
 		n(CURIO, {	-- TODO: Might be that Curio Belongs to Specific Delves... Have to check // Braghe
 			["sharedDescription"] = "To collect a Curio, it must be selected on Brann prior to an ATT Force Refresh",

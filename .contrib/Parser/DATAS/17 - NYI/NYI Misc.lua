@@ -1693,6 +1693,16 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(224269),	-- [DNT] 11.0 Food/Drink Template - Food Only - Level 75 - Required Level 70
 			i(226108),	-- [DNT] Debug Profession Stats
 			i(223804),	-- [DNT] Zone 1 Placeholder Treasure
+
+
+			i(206348),	-- Fragmented Flame
+			i(212349),	-- Sizzling Spring Water [DNT][UNUSED]
+			i(210693),	-- Delves Keystone
+			i(210698),	-- Rare Delve Key
+			i(210699),	-- Epic Delve Key
+			i(211142),	-- Delves Keystone
+			i(219138),	-- Delve Experience
+			i(225123),	-- Companion Experience
 		})),
 	}),
 }));

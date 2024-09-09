@@ -1399,55 +1399,12 @@ root(ROOTS.Unsorted, {
 				i(228159),	-- Living Luster's Semblance
 				i(228161),	-- Hood of Violet Rebirth
 			}),
-			n(SPECIAL, {	-- Delves
-				i(207390),	-- Delve Ring
-				i(210693),	-- Delves Keystone
-				i(210698),	-- Rare Delve Key
-				i(210699),	-- Epic Delve Key
-				i(211042),	-- Delver's Wand
-				i(211043),	-- Delver's Polearm
-				i(211044),	-- Delver's Rifle
-				i(211045),	-- Delver's Spellblade
-				i(211049),	-- Delver's Blade
-				i(211050),	-- Delver's Greatsword
-				i(211053),	-- Delver's Hacker
-				i(211054),	-- Delver's Cleaver
-				i(211055),	-- Delver's Censer
-				i(211056),	-- Delver's Mallet
-				i(211057),	-- Delver's Cudgel
-				i(211058),	-- Delver's Halberd
-				i(211060),	-- Delver's Warglaive
-				i(211142),	-- Delves Keystone
-				i(219138),	-- Delve Experience
-				i(219916),	-- Bronzebeard Family Compass
-				i(225065),	-- Torchbearer's Haversack
-				i(225066),	-- Trail Blazer's Haversack
-				i(225067),	-- Shadowlit Haversack
-				i(225123),	-- Companion Experience
-				i(225411),	-- Secret-Dredger's Cloak
-				i(225412),	-- Torchbearer's Greatcloak
-				i(225413),	-- Treasure-Seeker's Shawl
-				i(225414),	-- Cave Topographer's Drape
-				i(225495),	-- Brilliant Beacon (Weird..)
-				i(225496),	-- Unhinged Vault-Hatch
-				i(225669),	-- Brute Force Idol
-				i(225682),	-- Time Lost Relic
-				i(225683),	-- Grasping Necrotic Relic
-				i(225684),	-- Relicblood of Zekvir
-				i(225685),	-- Relic of Sentience
-				i(225901),	-- Streamlined Relic \\ Power Idol
-				i(225908),	-- Relicblood of Zekvir
-			}),
 			filter(COSMETIC, {
 				i(217706),	-- Learn Warglaives Test Item (DNT)
 				-- Probably from Delves
-				i(211801),	-- Poisonous Shroom Cap \\ Poisonous Fungarian Helm [PH]
-				i(212163),	-- Soporific Shroom Cap \\ Sleepy Fungarian Helm [PH]
-				i(212164),	-- Shallow Nautic Helm \\ Shallow Kobyss Helm [PH]
-				i(212165),	-- Deep Nautic Helm \\ Deep Kobyss Helm [PH]
-				i(212167),	-- Taken Candle \\ Candle Kobold Helm [PH]
-				i(212168),	-- Cinderbee Wax Candle Hat \\ Cultlight Kobold Helm [PH]
-				i(212169),	-- Mint-Scented Candle Hat \\ Candelabra Kobold Helm [PH]
+
+
+
 				i(212170),	-- Bronzebeard's Spare Hat \\ Bronzebeard Hat [PH]
 				i(218911),	-- [DNT] EarthenCivilian Robe Copper
 				i(218912),	-- [DNT] EarthenCivilian Robe Dark
@@ -1554,6 +1511,15 @@ root(ROOTS.Unsorted, {
 				i(227287),	-- Skovald's Resolve
 				i(227294),	-- Ravencrest's Wrath
 				i(227795),	-- Homebrewer's Sampling Mantle
+
+
+				--- NYI
+				i(225411),	-- Secret-Dredger's Cloak
+				i(225412),	-- Torchbearer's Greatcloak
+				i(225413),	-- Treasure-Seeker's Shawl
+				i(225414),	-- Cave Topographer's Drape
+				i(225495),	-- Brilliant Beacon
+				i(225496),	-- Unhinged Vault-Hatch
 			}),
 			n(ARMOR, {
 				i(206211),	-- Onyx Annulet
@@ -1882,6 +1848,17 @@ root(ROOTS.Unsorted, {
 				i(217403),	-- Olden Weapon Charm
 				i(217404),	-- Time-Worn Armor Charm
 				i(217405),	-- Time-Worn Weapon Charm
+
+				-- armor
+				-- trinket
+				i(219916),	-- Bronzebeard Family Compass
+				i(225669),	-- Brute Force Idol
+				i(225682),	-- Time Lost Relic
+				i(225683),	-- Grasping Necrotic Relic
+				i(225684),	-- Relicblood of Zekvir
+				i(225685),	-- Relic of Sentience
+				--
+				i(207390),	-- Delve Ring
 			}),
 			n(PVP, {
 				i(224557),	-- Field Medic's Hazard Payout
@@ -1966,7 +1943,9 @@ root(ROOTS.Unsorted, {
 				-- Snuffling
 				i(224650),	-- Wax-Sealed Pouch
 
-
+				-- Delves Prob NYI
+				i(225901),	-- Streamlined Relic
+				i(225908),	-- Relicblood of Zekvir
 			}),
 			f(QUEST_ITEMS, {
 				-- Delves?
@@ -1978,11 +1957,6 @@ root(ROOTS.Unsorted, {
 				i(223638),	-- Arathi Trade Goods
 				i(224252),	-- Calcified Journal
 				i(225887),	-- Titan Emitter \\ The Archaedas Conundrum
-				-- Misc NYI --
-				i(206348),	-- Fragmented Flame
-				i(212349),	-- Sizzling Spring Water [DNT][UNUSED]
-
-
 				--
 				i(219934),	-- Spark of War
 				--- Raid Quest
@@ -1994,22 +1968,11 @@ root(ROOTS.Unsorted, {
 				i(224016),	-- Signet of the Skeinspiner
 			}),
 			n(WEAPONS, {
-				i(216905),	-- Brann Bronzebeard's Axe
-				i(216906),	-- Ol' Faithful
+				-- These exist... Someone need to investigate (Fate Weaver has some comments) and also see itemID: 218126 that Alex sourced//Braghe
 				i(219381),	-- Fate Weaver
 				i(218125),	-- Reactive Webbed Escutcheon
 				i(219382),	-- Fateweaved Needle
-				i(219780),	-- 11.0 Leveling Quest Template - Axe2H - Str
-				i(219781),	-- 11.0 Leveling Quest Template - FistWeapon - Agi
-				i(219782),	-- 11.0 Leveling Quest Template - Sword1H - Int
-				i(219791),	-- 11.0 Leveling Quest Template - Mace1H - Int
-				i(219793),	-- 11.0 Leveling Quest Template - Axe 1H - Agi
-				i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
-				i(228364),	-- Endiri's Chipped Boot Knife
-
-				--- NYI ---
-				--- Fist
-				i(223585),	-- Algari Bladefist
+				i(219941),	-- Fateweaved Mallet
 			}),
 			race(EARTHEN_ALLIANCE, {
 				-- My Guess?? Earthen Starting Gear?

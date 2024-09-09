@@ -817,6 +817,38 @@ root(ROOTS.NeverImplemented, {
 			i(211162),	-- Klaxxi Longsword
 			i(210533),	-- Timerunning Staff
 		})),
+
+		-- 11.0.0
+		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+			i(219780),	-- 11.0 Leveling Quest Template - Axe2H - Str
+			i(219781),	-- 11.0 Leveling Quest Template - FistWeapon - Agi
+			i(219782),	-- 11.0 Leveling Quest Template - Sword1H - Int
+			i(219791),	-- 11.0 Leveling Quest Template - Mace1H - Int
+			i(219793),	-- 11.0 Leveling Quest Template - Axe 1H - Agi
+			i(211042),	-- Delver's Wand
+			i(211043),	-- Delver's Polearm
+			i(211044),	-- Delver's Rifle
+			i(211045),	-- Delver's Spellblade [1h Sword]
+			i(211049),	-- Delver's Blade [1h Sword]
+			i(211050),	-- Delver's Greatsword [2h Sword]
+			i(211053),	-- Delver's Hacker [1h axe]
+			i(211054),	-- Delver's Cleaver [1h axe]
+			i(211055),	-- Delver's Censer [1h mace]
+			i(211056),	-- Delver's Mallet [1h mace]
+			i(211057),	-- Delver's Cudgel [1h mace]
+			i(211058),	-- Delver's Halberd [Polearm]
+			i(211060),	-- Delver's Warglaive
+
+
+			--- Fist
+			i(223585),	-- Algari Bladefist
+
+			-- Two hand
+			i(216905),	-- Brann Bronzebeard's Axe
+
+			-- Gun
+			i(216906),	-- Ol' Faithful
+		})),
 	}),
 	n(WEAPONS, {
 		expansion(EXPANSION.TBC, {

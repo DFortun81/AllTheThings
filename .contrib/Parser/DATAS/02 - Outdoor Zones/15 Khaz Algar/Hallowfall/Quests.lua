@@ -767,6 +767,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(228367),	-- Arathi Scout's Walking Stick
 						i(228366),	-- Child's Former Fishing Rod
 						i(228365),	-- Concerned Captain's Cudgel
+						i(228364),	-- Endiri's Chipped Boot Knife
 						i(228362),	-- Polished Arathi Rifle
 						i(228363),	-- Shinda's Spare Greataxe
 					},
