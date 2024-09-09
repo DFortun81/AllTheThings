@@ -4179,7 +4179,7 @@ root(ROOTS.Zones, {
 					}),
 					-- #if AFTER CATA
 					n(32712, {	-- The Amazing Zanzo
-						["description"] = "Wanders around the commerce and alliance bank sections.",
+						["description"] = "This NPC have two possiple spawns and routes: Either leaving The Militiant Mystic in The Eventide going to the nearby bank, or leaving the Legerdemain Lounge for a stroll through the Magus Commerce Exchange and back.",
 						["groups"] = {
 							{
 								["recipeID"] = 28272,	-- Polymorph (Pig)
