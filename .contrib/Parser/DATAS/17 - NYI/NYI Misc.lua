@@ -1559,60 +1559,140 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
-			i(219741), -- Algari Mineral
-			i(219742), -- Algari Spices
-			i(228610), -- Artisan's Consortium Payout [Uncommon]
-			i(228611), -- Artisan's Consortium Payout [Rare]
-			i(228612), -- Artisan's Consortium Payout [Epic]
-			i(224030), -- Bottomless Bag of Khaz Algar Alchemy Goods
-			i(224031), -- Bottomless Bag of Khaz Algar Blacksmithing Goods
-			i(224032), -- Bottomless Bag of Khaz Algar Enchanting Goods
-			i(224033), -- Bottomless Bag of Khaz Algar Engineering Goods
-			i(224100), -- Bottomless Bag of Khaz Algar General Goods
-			i(224156), -- Bottomless Bag of Khaz Algar General Goods
-			i(224027), -- Bottomless Bag of Khaz Algar Herbs
-			i(224034), -- Bottomless Bag of Khaz Algar Inscription Goods
-			i(224035), -- Bottomless Bag of Khaz Algar Jewelcrafting Goods
-			i(224037), -- Bottomless Bag of Khaz Algar Leatherworking Goods
-			i(224040), -- Bottomless Bag of Khaz Algar Optional Goods
-			i(224028), -- Bottomless Bag of Khaz Algar Ore
-			i(224029), -- Bottomless Bag of Khaz Algar Skins
-			i(224039), -- Bottomless Bag of Khaz Algar Tailoring Goods
-			i(219743), -- Khaz Algar Olive (Vendor)
-			i(219744), -- Khaz Algar Vegetable
-			i(224068), -- Professor Instructaur's Brain Pertaining to Khaz Algar
-			i(224057), -- Professor Instructaur's Top Secret Guide to Khaz Algar Alchemy
-			i(224058), -- Professor Instructaur's Top Secret Guide to Khaz Algar Blacksmithing
-			i(224059), -- Professor Instructaur's Top Secret Guide to Khaz Algar Enchanting
-			i(224060), -- Professor Instructaur's Top Secret Guide to Khaz Algar Engineering
-			i(224061), -- Professor Instructaur's Top Secret Guide to Khaz Algar Herbalism
-			i(224062), -- Professor Instructaur's Top Secret Guide to Khaz Algar Inscription
-			i(224063), -- Professor Instructaur's Top Secret Guide to Khaz Algar Jewelcrafting
-			i(224064), -- Professor Instructaur's Top Secret Guide to Khaz Algar Leatherworking
-			i(224065), -- Professor Instructaur's Top Secret Guide to Khaz Algar Mining
-			i(224066), -- Professor Instructaur's Top Secret Guide to Khaz Algar Skinning
-			i(224067), -- Professor Instructaur's Top Secret Guide to Khaz Algar Tailoring
-			i(219142), -- Set Keystone Map: Ara-Kara, City of Echoes
-			i(219145), -- Set Keystone Map: Cinderbrew Meadery
-			i(219141), -- Set Keystone Map: City of Threads
-			i(219143), -- Set Keystone Map: Darkflame Cleft
-			i(219139), -- Set Keystone Map: Priory of the Sacred Flame
-			i(219146), -- Set Keystone Map: Stonevault
-			i(219144), -- Set Keystone Map: The Dawnbreaker
-			i(219140), -- Set Keystone Map: The Rookery
-			i(219690), -- Trophy Common Fish A
-			i(219691), -- Trophy Common Fish B
-			i(219696), -- Trophy Rare Fish A
-			i(219697), -- Trophy Rare Fish B
-			i(219698), -- Trophy Rare Fish C
-			i(219699), -- Trophy Rare Fish D
-			i(219700), -- Trophy Rare Fish E
-			i(219701), -- Trophy Rare Fish F
-			i(219692), -- Trophy Uncommon Fish A
-			i(219693), -- Trophy Uncommon Fish B
-			i(219694), -- Trophy Uncommon Fish C
-			i(219695), -- Trophy Uncoomon Fish D
+			i(225640),	-- Abyssal Lure
+			i(225211),	-- Airship Operations Manual
+			i(219741),	-- Algari Mineral
+			i(219742),	-- Algari Spices
+			i(208670),	-- Arachnophobia Mode
+			i(228612),	-- Artisan's Consortium Payout [Epic]
+			i(228611),	-- Artisan's Consortium Payout [Rare]
+			i(228610),	-- Artisan's Consortium Payout [Uncommon]
+			i(211348),	-- Awkward Potion
+			i(223805),	-- Bag Test A
+			i(223806),	-- Bag Test B
+			i(216603),	-- Boots of the Light
+			i(224030),	-- Bottomless Bag of Khaz Algar Alchemy Goods
+			i(224031),	-- Bottomless Bag of Khaz Algar Blacksmithing Goods
+			i(224032),	-- Bottomless Bag of Khaz Algar Enchanting Goods
+			i(224033),	-- Bottomless Bag of Khaz Algar Engineering Goods
+			i(224100),	-- Bottomless Bag of Khaz Algar General Goods
+			i(224156),	-- Bottomless Bag of Khaz Algar General Goods
+			i(224027),	-- Bottomless Bag of Khaz Algar Herbs
+			i(224034),	-- Bottomless Bag of Khaz Algar Inscription Goods
+			i(224035),	-- Bottomless Bag of Khaz Algar Jewelcrafting Goods
+			i(224037),	-- Bottomless Bag of Khaz Algar Leatherworking Goods
+			i(224040),	-- Bottomless Bag of Khaz Algar Optional Goods
+			i(224028),	-- Bottomless Bag of Khaz Algar Ore
+			i(224029),	-- Bottomless Bag of Khaz Algar Skins
+			i(224039),	-- Bottomless Bag of Khaz Algar Tailoring Goods
+			i(222929),	-- Carved Coin Coffer \\ Large Coin Coffer
+			i(218340),	-- Chest of Playtest Equipment
+			i(228193),	-- Chipped Demon's Blade
+			i(220693),	-- Coffer Key Shard \\ Delve Key Fragment
+			i(222928),	-- Coin Coffer
+			i(220260),	-- Corroded Golem Graspers
+			i(228192),	-- Cracked Fel Focus
+			i(225806),	-- Crystal Inkwell
+			i(220284),	-- Darkened Crystal
+			i(217386),	-- Discarded Memory Gem
+			i(228225),	-- do not use
+			i(223869),	-- DO NOT USE Prismatic Codex
+			i(217970),	-- Dormant Runestone
+			i(228450),	-- Edible Copper Nuggets
+			i(221503),	-- Explorer's Warbound Battlegear Drop
+			i(220233),	-- Extinguished Icon
+			i(212603),	-- First Half of Titan Key NOT USED
+			i(228194),	-- Fully Scrapped Scrap
+			i(209431),	-- Fungal Scraper
+			i(218123),	-- Glowing Shard
+			i(224791),	-- Golden Lord Outfit \\ Golden Ruler Outfit
+			i(220377),	-- Growing Void Mass
+			i(206581),	-- Harvester Core
+			i(219743),	-- Khaz Algar Olive (Vendor)
+			i(219744),	-- Khaz Algar Vegetable
+			i(225214),	-- List of Activities
+			i(213085),	-- Lost Treasure
+			i(210697),	-- Luckstone
+			i(220340),	-- Meatball Cluster
+			i(217984),	-- Miner's Rune of Decyphering
+			i(212385),	-- Moira's Healing Surge TO DEPRECATE
+			i(211349),	-- Mundane Potion
+			i(225805),	-- Ornate Box of Seasonings
+			i(221777),	-- Pearlescent Shellcrab
+			i(215360),	-- Personalized Setting
+			i(225240),	-- PH_1
+			i(225256),	-- PH_2
+			i(225365),	-- PH_3
+			i(225541),	-- PH_4
+			i(225553),	-- PH_5
+			i(221812),	-- Player Experience
+			i(222956),	-- Player Experience
+			i(206134),	-- Potion of Healing
+			i(225210),	-- Priory Theses
+			i(224068),	-- Professor Instructaur's Brain Pertaining to Khaz Algar
+			i(224057),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Alchemy
+			i(224058),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Blacksmithing
+			i(224059),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Enchanting
+			i(224060),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Engineering
+			i(224061),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Herbalism
+			i(224062),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Inscription
+			i(224063),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Jewelcrafting
+			i(224064),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Leatherworking
+			i(224065),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Mining
+			i(224066),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Skinning
+			i(224067),	-- Professor Instructaur's Top Secret Guide to Khaz Algar Tailoring
+			i(219494),	-- Ritual Flame
+			i(222954),	-- Runed Coin Coffer \\ Coin Coffer
+			i(225209),	-- Sacred Flame Prayers
+			i(224792),	-- Sanguine Aristocrat Outfit
+			i(227677),	-- Satchel of Enchanting Surplus
+			i(227678),	-- Satchel of Engineering Surplus
+			i(227679),	-- Satchel of Inscription Surplus
+			i(227680),	-- Satchel of Jewelcrafting Surplus
+			i(222977),	-- Scorched Junk
 			i(228412),	-- Scouting Map: The Skies of the Dragon Isles
+			i(228451),	-- Scrumptious Gold Bar
+			i(212601),	-- Second Half of Titan Key NOT USED
+			i(219142),	-- Set Keystone Map: Ara-Kara, City of Echoes
+			i(219145),	-- Set Keystone Map: Cinderbrew Meadery
+			i(219141),	-- Set Keystone Map: City of Threads
+			i(219143),	-- Set Keystone Map: Darkflame Cleft
+			i(219390),	-- Set Keystone Map: Grim Batol
+			i(219139),	-- Set Keystone Map: Priory of the Sacred Flame
+			i(219146),	-- Set Keystone Map: Stonevault
+			i(219144),	-- Set Keystone Map: The Dawnbreaker
+			i(219140),	-- Set Keystone Map: The Rookery
+			i(224786),	-- Skeleton King Outfit
+			i(210051),	-- Spark Feather
+			i(220342),	-- Spiced Stock
+			i(212527),	-- Spiderforged Emitter Key [REMOVED]
+			i(216982),	-- Spy List
+			i(212340),	-- Strange Jar
+			i(228449),	-- Tasty Iron Bar
+			i(228195),	-- Tattered Goblin Cap
+			i(211529),	-- Test Big Bag (DNT)
+			i(213569),	-- Test Item A
+			i(213570),	-- Test Item B
+			i(219690),	-- Trophy Common Fish A
+			i(219691),	-- Trophy Common Fish B
+			i(219696),	-- Trophy Rare Fish A
+			i(219697),	-- Trophy Rare Fish B
+			i(219698),	-- Trophy Rare Fish C
+			i(219699),	-- Trophy Rare Fish D
+			i(219700),	-- Trophy Rare Fish E
+			i(219701),	-- Trophy Rare Fish F
+			i(219692),	-- Trophy Uncommon Fish A
+			i(219693),	-- Trophy Uncommon Fish B
+			i(219694),	-- Trophy Uncommon Fish C
+			i(219695),	-- Trophy Uncoomon Fish D
+			i(223316),	-- Trusty Hat
+			i(220770),	-- Void-Scarred Stormhammer
+			i(228495),	-- Well-Used Potter's Wheel
+			i(217401),	-- Wormcaller's Resonator
+			i(217986),	-- "Delicious" Egg Parts
+			i(224269),	-- [DNT] 11.0 Food/Drink Template - Food Only - Level 75 - Required Level 70
+			i(226108),	-- [DNT] Debug Profession Stats
+			i(223804),	-- [DNT] Zone 1 Placeholder Treasure
 		})),
 	}),
 }));

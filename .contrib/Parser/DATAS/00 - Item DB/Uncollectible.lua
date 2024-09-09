@@ -1826,8 +1826,11 @@ i(225419);	-- Green Hills of Stranglethorn - Page 27
 ------------------
 -- PATCH 11.0.2 --
 ------------------
+i(227299);	-- Acid Braised Beetle
 i(225793);	-- Acid-Etched Pendant
 i(220287);	-- Acid-Filled Sack
+i(227312);	-- Afterglow
+i(227305);	-- Airship Dog on a Bun
 i(225843);	-- Ancient Bronze Hourglass
 i(228398);	-- Angry Rock
 i(217170);	-- Backup Candles
@@ -1835,33 +1838,47 @@ i(220290);	-- Barbed Pincers
 i(225835);	-- Battered Lantern
 i(213254);	-- Big Gold Nugget
 i(220291);	-- Bioluminescent Thorax
+i(227321);	-- Blessed Brew
 i(225543);	-- Bloodied Idol
 i(228455);	-- Bolt of Bouldercloth
+i(227335);	-- Borer Blood Pudding
 i(223900);	-- Bottled Darkness
 i(228456);	-- Bouldercloth
 i(228458);	-- Bouldercloth Bag
+i(220484);	-- Bowl of Pulsing Goo
 i(225801);	-- Braided Seaweed Bangle
 i(225716);	-- Brax's Favorite Cog
 i(225709);	-- Brax's Left Shoe
 i(225710);	-- Brax's Other Hat
-i(225715);	-- Brax's To-Do List
 i(225718);	-- Brax's Toothpick
+i(225715);	-- Brax's To-Do List
 i(225826);	-- Broken Elevator Cog
 i(225853);	-- Broken Stirrup
+i(220447);	-- Broken Trident Prong
+i(227308);	-- Butterflied Deepstrider
 i(217171);	-- CANDLE KING DIARY
+i(227274);	-- Candle Rock Candy
 i(220277);	-- Carapace Fragment
 i(228485);	-- Carver's Spare Whittling Knife
+i(220448);	-- Cerulean Orb
+i(227326);	-- Chalcocite Lava Cake
 i(220245);	-- Charged Antennae
 i(220281);	-- Charged Fragments
+i(220274);	-- Chipped Hammer
 i(220249);	-- Chipped Mandible
 i(220254);	-- Chipped Molars
 i(225815);	-- Chipped Opal Signet Ring
 i(225786);	-- Chitin Stress Ball
 i(217168);	-- Chocolate Coins
+i(217896);	-- Cinderbrew Mead
+i(225996);	-- Clam Digger
 i(217169);	-- Cloak of Beards
 i(220256);	-- Clump of Rotting Detritus
+i(227314);	-- Coffee, Light Ice
+i(220486);	-- Collection of Shiny Shells
 i(228454);	-- Collector's Commemorative Proscenium Playbill
 i(220267);	-- Combustible Gland
+i(225788);	-- Congratulatory Ascension Silk
 i(225848);	-- Cracked Etheric Power Core
 i(228482);	-- Cracked Iridescent Pearl
 i(228496);	-- Cracked Lantern
@@ -1870,29 +1887,37 @@ i(228387);	-- Crumbling Bismuth
 i(225804);	-- Crumpled Patrol Assignment
 i(228494);	-- Crunchy Rock Candy
 i(217167);	-- Crusty Chalice
+i(227301);	-- Crystal Tots
 i(220301);	-- Crystallized Honey
 i(225789);	-- Curved Threadripper
 i(225844);	-- Damaged Radial Cog
+i(228388);	-- Damp Doll
 i(220255);	-- Darkened Residue
 i(225813);	-- Darkened Ritual Stone
 i(225799);	-- Dazzling Spanner
+i(228396);	-- Dead Fish
+i(220303);	-- Decayed Flesh
+i(228452);	-- Deepest, Darkest Black Ink
 i(224464);	-- Demonic Healthstone
 i(220280);	-- Dense Five-Pound Stone
 i(225795);	-- Dented Pocketwatch
-i(228452);	-- Deepest, Darkest Black Ink
+i(220443);	-- Desecrated Arathi Tinderbox
 i(228509);	-- Diaphanous Webbing
+i(227311);	-- Digspresso
+i(225251);	-- Disassemble Invention
 i(220229);	-- Dormant Core
 i(220271);	-- Downy Clump
 i(225836);	-- Drained Elemental Mote
 i(228723);	-- Earthen Pet Rock
+i(227316);	-- Eggnog
 i(220235);	-- Electrified Teeth
 i(225792);	-- Elegant Pedipalp Wrappings
 i(220262);	-- Elongated Proboscis
 i(220243);	-- Eloquent Tailfeather
 i(213265);	-- Empty Antidote Vial
 i(220355);	-- Enlarged Ear
-i(225841);	-- Ever-Frozen Ice
 i(220222);	-- Everburning Lump
+i(225841);	-- Ever-Frozen Ice
 i(228453);	-- Extra Large Bag of Popped Pebbles
 i(228489);	-- Fashionable Flask
 i(225814);	-- Feather-on-a-Stick
@@ -1904,47 +1929,74 @@ i(228490);	-- Fresh Grazing Rocks
 i(228487);	-- Freshly Fallen Sticks
 i(225677);	-- Gleaming Chaos
 i(225811);	-- Gleaming Deep-Pearl
+i(227333);	-- Glimmering Delicacy
 i(225831);	-- Glittering Rock
+i(220444);	-- Gnawed Spine
 i(220259);	-- Gob of Mucus
 i(220509);	-- Gossamer Web
+i(227302);	-- Granite Salad
 i(225825);	-- Ground Snacking Stone
+i(220439);	-- Half-Eaten Fish
 i(225790);	-- Half-Painted Pewter Spider
+i(227297);	-- Hallowed Burger
 i(220279);	-- Handful of Polished Scales
 i(220252);	-- Handful of Smooth Pebbles
 i(228400);	-- Happy Rock
 i(220441);	-- Hardened Pearl
+i(228721);	-- Hearty Feast
+i(222693);	-- Hearty Food
+i(222740);	-- Hearty Meals
+i(216708);	-- Holy Candle
+i(227306);	-- Holy Mackerel
+i(227298);	-- Humble Pie
 i(220246);	-- Humming Power Core
+i(220445);	-- Illusionary Charm
+i(220380);	-- Immature Spiderling
 i(220275);	-- Indigo Shard
 i(220253);	-- Inert Dust
 i(225847);	-- Inoperable Keystone
+i(227307);	-- Insects Bowl Mix
 i(225798);	-- Intricately Carved Barter Boulder
 i(220269);	-- Ionized Feather
 i(220224);	-- Iridescent Integument
-i(220380);	-- Immature Spiderling
+i(227273);	-- Iron Poppers
 i(225830);	-- Irreparably Bent Spoon
 i(225791);	-- Jar of Alchemical Solvent
 i(225822);	-- Jar of Cinderbee Honey
 i(225785);	-- Jar of Pickled Insects
 i(220264);	-- Jaw with Barbed Teeth
 i(220238);	-- Keen Fang
+i(220440);	-- Kelp Necklace
+i(217040);	-- Kobold Earwax
+i(227275);	-- Koboldatouille
+i(227319);	-- Koboldchino
 i(225812);	-- Kobyss Teeth-Sharpener
+i(227317);	-- Lava Cola
 i(220234);	-- Leaden Vial
 i(225849);	-- Long-Forgotten Glove
 i(223898);	-- Loose Bolts
+i(228394);	-- Lost Note
 i(228483);	-- Lovingly Carved Ramolith
 i(225820);	-- Lovingly Worn Chisel
 i(225803);	-- Lynx Tag Collar
+i(227310);	-- Magmalaid
+i(226811);	-- Marinated Maggots
 i(220248);	-- Mass of Melted Wax
+i(220298);	-- Melted Candle Stump
 i(225837);	-- Melted Globs of Glass
 i(223886);	-- Mercurial Herbs
 i(223883);	-- Mercurial Transmutation
 i(225850);	-- Moldy Rations
 i(220285);	-- Moldy Rucksack
+i(227334);	-- Mole Mole
 i(220219);	-- Mound of Night Soil
 i(228430);	-- Mucky Rock
 i(225854);	-- Muddied Amulet
+i(227304);	-- Mushroom Cake
+i(227323);	-- Mushroom Tea
 i(228720);	-- Nascent Gemstone
 i(217162);	-- Necklace of Kobold Teeth
+i(227324);	-- Nerub'ar Nectar
 i(210829);	-- Neutralize Concoctions
 i(224153);	-- Nibbled Shroomcap
 i(220240);	-- Night's Litany
@@ -1955,39 +2007,48 @@ i(225817);	-- Ominous Ceremonial Robe
 i(223887);	-- Ominous Herbs
 i(223885);	-- Ominous Transmutation
 i(228608);	-- On the Application of Arathi Technology to Earthen Life
+i(220220);	-- Ornate Pipe
 i(228099);	-- Oversized Chelicera
 i(220244);	-- Oversized Claw
 i(220251);	-- Pale Gills
+i(225796);	-- Particularly Pungent Herbs
 i(225787);	-- Pheromone-Covered Missive
 i(220283);	-- Pileus Puff
+i(225202);	-- Pilfer Through Parts
 i(225834);	-- Pilfered Matchbook
 i(225875);	-- Pitted Armor Plating
 i(222955);	-- Player Experience
+i(227300);	-- Poison Poached Eggs
 i(220247);	-- Polishing Powder
 i(225794);	-- Preserved Gold-Inlaid Chelicera
-i(225816);	-- Profaned Pendant
-i(228491);	-- Ramolith Bedding Material
-i(220258);	-- Rotting Bones
-i(225796);	-- Particularly Pungent Herbs
 i(220227);	-- Pristine Ventral Fin
+i(225816);	-- Profaned Pendant
 i(220257);	-- Pulsing Pustules
 i(220230);	-- Punctured Intestine
 i(220261);	-- Pungent Mushroom
 i(220228);	-- Quartz Growth
+i(227318);	-- Quicksilver Sipper
 i(220288);	-- Quivering Tail
 i(220362);	-- Ragged Rope
+i(228491);	-- Ramolith Bedding Material
 i(220242);	-- Razored Tail-Blade
 i(228429);	-- Reflective Rock
 i(228391);	-- Right Boot
 i(228510);	-- Ripped Swarmite Wing
-i(220297);	-- Rock-Encrusted Plates
+i(228431);	-- Rock Buddy
+i(227272);	-- Rock Lobster
 i(228609);	-- Rock Roasting for Dummies
+i(227327);	-- Rocky Road
+i(220297);	-- Rock-Encrusted Plates
 i(220438);	-- Root-Staff Splinter
+i(220258);	-- Rotting Bones
 i(217164);	-- Royal Nailpicker
 i(225807);	-- Rune-Carved Bone
 i(223897);	-- Ruptured Engine
 i(228497);	-- Rusted Airship Cog
 i(228399);	-- Sad Rock
+i(227331);	-- Saints' Delight
+i(227322);	-- Sanctified Sasparilla
 i(225824);	-- Sand Sculpting Comb
 i(220236);	-- Sanguineous Sac
 i(220239);	-- Severed Spiraled Tail
@@ -1996,6 +2057,7 @@ i(220266);	-- Sharpened Digging Claws
 i(220361);	-- Sharpened Steel Implement
 i(220273);	-- Shed Skin
 i(220237);	-- Shining Amethyst Cluster
+i(227332);	-- Sipping Aether
 i(226681);	-- Sizzling Cinderpollen
 i(220231);	-- Skiatic Vessel
 i(220299);	-- Sleek Beak
@@ -2013,12 +2075,18 @@ i(220268);	-- Spiraled Horn
 i(226692);	-- Splintered Stone
 i(225823);	-- Split Bull-Horn
 i(213262);	-- Stained Glass Fragment
+i(227313);	-- Starfruit Puree
+i(227329);	-- Still-Twitching Gumbo
 i(225800);	-- Stone Singing Bowl
+i(227325);	-- Stone Soup
 i(220294);	-- Strangely Glowing Filament
 i(220363);	-- Straw-Stuffed Hat
 i(220292);	-- Stretched Wing
+i(227336);	-- Sugar Slurry
 i(228507);	-- Swarmite Eggsac
 i(225818);	-- Tainted Incense
+i(220286);	-- Tarnished Medallion
+i(227315);	-- Tarragon Soda
 i(220225);	-- Tattered Standard
 i(225821);	-- Tattered Theater Hood
 i(225797);	-- The Fifty Rules of Commerce, Fourth Edition
@@ -2028,6 +2096,7 @@ i(225879);	-- The Fifty Rules of Commerce, Fourth Edition
 i(225852);	-- The Foolhardy's Guide to Survival
 i(220296);	-- Thickly Webbed Foot
 i(228481);	-- Tiny Fathomclam
+i(227309);	-- Titanshake
 i(220223);	-- Torn Gossamer Scrap
 i(220272);	-- Torn Manuscript Page
 i(220300);	-- Translucent Wing
@@ -2042,72 +2111,16 @@ i(220293);	-- Very Soft Wool
 i(220270);	-- Vile Catalyst
 i(220221);	-- Void Pebble
 i(223884);	-- Volatile Transmutation
-i(220276);	-- Wax-Covered Helmet
+i(227328);	-- Wax Fondue
 i(220263);	-- Wax Miner's Sack
+i(227303);	-- Waxy Cheese Snack
+i(220276);	-- Wax-Covered Helmet
 i(220442);	-- Weighty Shovel
 i(225802);	-- Well-Worn Darning Needle
 i(217163);	-- Well-Worn Doll
 i(220278);	-- Well-Worn Leather Sole
 i(225842);	-- Whirling Sphere
 i(220491);	-- Wicked Blade Shard
+i(227320);	-- Wicker Wisps
 i(220232);	-- Worm-Eaten Burlap Robe
 i(228911);	-- Xalatath's Rusty Coin
--- spider stuff
-i(222693);	-- Hearty Food
-i(222740);	-- Hearty Meals
-i(228721);	-- Hearty Feast
--- Fish
-i(228388);	-- Damp Doll
-i(228396);	-- Dead Fish
-i(228394);	-- Lost Note
-i(228431);	-- Rock Buddy
--- ?
-i(216708);	-- Holy Candle
-i(225251);	-- Disassemble Invention
-i(225202);	-- Pilfer Through Parts
--- vendor food
-i(227299);	-- Acid Braised Beetle
-i(227312);	-- Afterglow
-i(227305);	-- Airship Dog on a Bun
-i(227321);	-- Blessed Brew
-i(227335);	-- Borer Blood Pudding
-i(227308);	-- Butterflied Deepstrider
-i(227274);	-- Candle Rock Candy
-i(227326);	-- Chalcocite Lava Cake
-i(217896);	-- Cinderbrew Mead
-i(227314);	-- Coffee, Light Ice
-i(227301);	-- Crystal Tots
-i(227311);	-- Digspresso
-i(227316);	-- Eggnog
-i(227333);	-- Glimmering Delicacy
-i(227302);	-- Granite Salad
-i(227297);	-- Hallowed Burger
-i(227306);	-- Holy Mackerel
-i(227298);	-- Humble Pie
-i(227307);	-- Insects Bowl Mix
-i(227273);	-- Iron Poppers
-i(227275);	-- Koboldatouille
-i(227319);	-- Koboldchino
-i(227317);	-- Lava Cola
-i(227310);	-- Magmalaid
-i(226811);	-- Marinated Maggots
-i(227334);	-- Mole Mole
-i(227304);	-- Mushroom Cake
-i(227323);	-- Mushroom Tea
-i(227324);	-- Nerub'ar Nectar
-i(227300);	-- Poison Poached Eggs
-i(227318);	-- Quicksilver Sipper
-i(227272);	-- Rock Lobster
-i(227327);	-- Rocky Road
-i(227331);	-- Saints' Delight
-i(227322);	-- Sanctified Sasparilla
-i(227332);	-- Sipping Aether
-i(227313);	-- Starfruit Puree
-i(227329);	-- Still-Twitching Gumbo
-i(227325);	-- Stone Soup
-i(227336);	-- Sugar Slurry
-i(227315);	-- Tarragon Soda
-i(227309);	-- Titanshake
-i(227328);	-- Wax Fondue
-i(227303);	-- Waxy Cheese Snack
-i(227320);	-- Wicker Wisps

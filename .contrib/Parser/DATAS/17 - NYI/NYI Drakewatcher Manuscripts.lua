@@ -47,5 +47,11 @@ root(ROOTS.NeverImplemented, n(DRAKEWATCHER_MANUSCRIPTS, {
 			i(207777),	-- Grotto Netherwing Drake: Yellow Scales (DM!)
 		})),
 	}),
+	expansion(EXPANSION.TWW, {
+		-- 11.0.0
+		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+			i(223510),	-- Delver's Dirigible Schematic: Template (DM!)
+		})),
+	}),
 }));
 -- #endif

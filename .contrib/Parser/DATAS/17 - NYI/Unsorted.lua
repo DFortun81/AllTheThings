@@ -1331,8 +1331,16 @@ root(ROOTS.Unsorted, {
 				i(224729),	-- Slum Shark Tooth \\ [PH] Slum Shark Tooth
 				i(224730),	-- [PH] Derby Dashers
 				i(219632),	-- Scribe Water
+				prof(BLACKSMITHING, {
+					-- Should be Insc..
+					i(223032),	-- Technique: Lexicon of Mysteries
+					i(223033),	-- Technique: Patient Alchemist's Mixing Rod
+					i(223034),	-- Technique: Inscribed Rolling Pin
+					i(223056),	-- Plans: Webbed Fishing Line
+				}),
 				prof(JEWELCRAFTING, {
 					i(214043),	-- Glittering Gemdust
+					i(225431),	-- Design: Vicious Jeweler's Setting
 				}),
 				prof(MINING, {
 					i(210940),	-- Null Stone
@@ -1858,6 +1866,22 @@ root(ROOTS.Unsorted, {
 
 				i(226695),	-- Cunning Advisor's Favor
 				i(226696),	-- Mighty Advisor's Favor
+
+				-- Mail Belt
+				i(223458),	-- [PH] 11.0 - Belt
+
+				---
+				i(226165),	-- Unseemly Agate Choker
+
+				--- Trinkets
+				i(213423),	-- Bygone Weapon Charm
+				i(213533),	-- Ancient Weapon Charm
+				i(213534),	-- Bygone Armor Charm
+				i(213535),	-- Ancient Armor Charm
+				i(217402),	-- Olden Armor Charm
+				i(217403),	-- Olden Weapon Charm
+				i(217404),	-- Time-Worn Armor Charm
+				i(217405),	-- Time-Worn Weapon Charm
 			}),
 			n(PVP, {
 				i(224557),	-- Field Medic's Hazard Payout
@@ -1869,146 +1893,78 @@ root(ROOTS.Unsorted, {
 
 			}),
 			f(MISC, {
-				i(206134),	-- Potion of Healing
-				i(206581),	-- Harvester Core
-				i(208670),	-- Arachnophobia Mode
-				i(209431),	-- Fungal Scraper
-				i(209788),	-- Dispersion Crystal
-				i(210051),	-- Spark Feather
-				i(210697),	-- Luckstone
-				i(211348),	-- Awkward Potion
-				i(211349),	-- Mundane Potion
-				i(211529),	-- Test Big Bag (DNT)
-				i(212340),	-- Strange Jar
-				i(212385),	-- Moira's Healing Surge TO DEPRECATE
-				i(212527),	-- Spiderforged Emitter Key [REMOVED]
-				i(212601),	-- Second Half of Titan Key NOT USED
-				i(212603),	-- First Half of Titan Key NOT USED
-				i(213085),	-- Lost Treasure
-				i(213420),	-- Fungarian Mushroom Cap
-				i(213423),	-- Bygone Weapon Charm
-				i(213533),	-- Ancient Weapon Charm
-				i(213534),	-- Bygone Armor Charm
-				i(213535),	-- Ancient Armor Charm
-				i(213569),	-- Test Item A
-				i(213570),	-- Test Item B
-				i(215359),	-- Very Large Valdrakken Accord Supply Pack
-				i(215360),	-- Personalized Setting
-				i(215448),	-- Darkstem Stew \\ Darkstem Brew
-				i(215466),	-- Sanctified Supplies
-				i(216603),	-- Boots of the Light
-				i(216982),	-- Spy List
-				i(217040),	-- Kobold Earwax
-				i(217386),	-- Discarded Memory Gem
-				i(217401),	-- Wormcaller's Resonator
-				i(217402),	-- Olden Armor Charm
-				i(217403),	-- Olden Weapon Charm
-				i(217404),	-- Time-Worn Armor Charm
-				i(217405),	-- Time-Worn Weapon Charm
+				--- ?? proff? crafting materal
+				i(225570),	-- Algari Fowlfeather
+				--- upgrade
+				i(220776),	-- Glorious Cluster of Gilded Harbinger Crests \\ Glorious Cluster of Gilded Harbinger Crests (TODO: Fix Icon)
+				--- Quest
+				i(220156),	-- Bubbling Wax
+				--- Winter Veil
 				i(218308),	-- Winter Veil Cracker
 				i(218309),	-- Gently Shaken Gift
 				i(218311),	-- Winter Veil Gift
-				i(221503),	-- Explorer's Warbound Battlegear Drop
-				i(221777),	-- Pearlescent Shellcrab
-				i(221812),	-- Player Experience
-				i(222928),	-- Coin Coffer
-				i(222929),	-- Carved Coin Coffer \\ Large Coin Coffer
-				i(222954),	-- Runed Coin Coffer \\ Coin Coffer
-				i(222956),	-- Player Experience
-				i(222977),	-- Scorched Junk
-				i(223316),	-- Trusty Hat
-				i(219390),	-- Set Keystone Map: Grim Batol
-				i(219494),	-- Ritual Flame
-				i(220156),	-- Bubbling Wax
-				i(220220),	-- Ornate Pipe
-				i(220233),	-- Extinguished Icon
-				i(220260),	-- Corroded Golem Graspers
-				i(220274),	-- Chipped Hammer
-				i(220284),	-- Darkened Crystal
-				i(220286),	-- Tarnished Medallion
-				i(220298),	-- Melted Candle Stump
-				i(220303),	-- Decayed Flesh
-				i(220340),	-- Meatball Cluster
-				i(220342),	-- Spiced Stock
-				i(220377),	-- Growing Void Mass
-				i(220439),	-- Half-Eaten Fish
-				i(220440),	-- Kelp Necklace
-				i(220443),	-- Desecrated Arathi Tinderbox
-				i(220444),	-- Gnawed Spine
-				i(220445),	-- Illusionary Charm
-				i(220447),	-- Broken Trident Prong
-				i(220448),	-- Cerulean Orb
-				i(220484),	-- Bowl of Pulsing Goo
-				i(220486),	-- Collection of Shiny Shells
-				i(220770),	-- Void-Scarred Stormhammer
-				i(220776),	-- Glorious Cluster of Gilded Harbinger Crests \\ Glorious Cluster of Gilded Harbinger Crests (TODO: Fix Icon)
-				i(217970),	-- Dormant Runestone
-				i(217984),	-- Miner's Rune of Decyphering
-				i(217986),	-- "Delicious" Egg Parts
-				i(218123),	-- Glowing Shard
-				i(218122),	-- Stolen Relic \\ Stolen Shard
-				i(218340),	-- Chest of Playtest Equipment
 				i(219255),	-- Puntable Rotten Little Helper
 				i(219286),	-- Puntable Globe Yeti
 				i(219289),	-- Puntable Tiny Snowman
 				i(219291),	-- Puntable Baby Greench
-				i(223804),	-- [DNT] Zone 1 Placeholder Treasure
-				i(223805),	-- Bag Test A
-				i(223806),	-- Bag Test B
-				i(223869),	-- DO NOT USE Prismatic Codex
-				i(224269),	-- [DNT] 11.0 Food/Drink Template - Food Only - Level 75 - Required Level 70
+				--- Attached to alot of QUESTS
+				i(215359),	-- Very Large Valdrakken Accord Supply Pack
+				i(215448),	-- Darkstem Stew \\ Darkstem Brew
+
+				--- Fungal Folly ---
+				i(209788),	-- Dispersion Crystal
+				--- Nightfall Sanctum ---
+				i(215466),	-- Sanctified Supplies
+				--- The Sinkhole ---
+				i(218122),	-- Stolen Relic \\ Stolen Shard
+				--- Kriegval--
 				i(224767),	-- Giant Candle Parts
-				i(224786),	-- Skeleton King Outfit
-				i(224791),	-- Golden Lord Outfit \\ Golden Ruler Outfit
-				i(224792),	-- Sanguine Aristocrat Outfit
+				--- WQ? Azj? ---
+				i(213420),	-- Fungarian Mushroom Cap
+				--- WQ special Ringing
 				i(224913),	-- Radiant Fuel Cache
 				i(224941),	-- Radiant Fuel Cache
-				i(225240),	-- PH_1
-				i(225365),	-- PH_3
-				i(225541),	-- PH_4
-				i(225553),	-- PH_5
-				i(225570),	-- Algari Fowlfeather
-				i(225640),	-- Abyssal Lure
-				i(225788),	-- Congratulatory Ascension Silk
-				i(225805),	-- Ornate Box of Seasonings
-				i(225806),	-- Crystal Inkwell
+				-- Quest Reward?
 				i(225896),	-- Void-Touched Valorstone
+				-- Achievement Gobblin' with glublurp
 				i(225930),	-- Glimmering Crystal
+				-- Chest
 				i(225948),	-- Harbinger's Equipment Chest
-				i(225996),	-- Clam Digger
+				-- Paragon
 				i(226045),	-- The General's Trove
 				i(226100),	-- The Vizier's Trove
-				i(226108),	-- [DNT] Debug Profession Stats
+				i(226103),	-- The Weaver's Trove
+				-- Renown Quests?
 				i(226150),	-- Gem-Studded Candelabra
 				i(226151),	-- Wax-Coated Coffer Unlocker
 				i(226152),	-- Wax-sealed Crests
 				i(226153),	-- Big Pile of Humming Shinies
 				i(226154),	-- Wax-Sealed Crafty Crest
 				i(226156),	-- Really Big Candle
+				-- NYI --
+
+				-- Idk
 				i(226257),	-- Delver's Pouch of Valorstones
 				i(226260),	-- Delver's Pouch of Gold
+				-- Boooks
 				i(226430),	-- Navigations of The Soul
-				i(226524),	-- Partially-Charged Hologem
-				i(227668),	-- Delver's Bounty
-				i(227677),	-- Satchel of Enchanting Surplus
-				i(227678),	-- Satchel of Engineering Surplus
-				i(227679),	-- Satchel of Inscription Surplus
-				i(227680),	-- Satchel of Jewelcrafting Surplus
-				i(227778),	-- Delver's Bounty
-				i(227779),	-- Delver's Bounty
-				i(227780),	-- Delver's Bounty
-				i(227781),	-- Delver's Bounty
-				i(227782),	-- Delver's Bounty
-				i(227783),	-- Delver's Bounty
-				i(228192),	-- Cracked Fel Focus
-				i(228193),	-- Chipped Demon's Blade
-				i(228194),	-- Fully Scrapped Scrap
-				i(228195),	-- Tattered Goblin Cap
 				i(228415),	-- Adelgonn's Journal
 				i(228416),	-- Steelvein's Manifesto
-				i(228449),	-- Tasty Iron Bar
-				i(228450),	-- Edible Copper Nuggets
-				i(228451),	-- Scrumptious Gold Bar
+				-- Draenei?
+				i(226524),	-- Partially-Charged Hologem
+
+				-- Seems to exist from delves
+				i(227668),	-- Delver's Bounty [Tier 1]
+				i(227778),	-- Delver's Bounty [Tier 2]
+				i(227779),	-- Delver's Bounty [Tier 3]
+				i(227780),	-- Delver's Bounty [Tier 4]
+				i(227781),	-- Delver's Bounty [Tier 5]
+				i(227782),	-- Delver's Bounty [Tier 6]
+				i(227783),	-- Delver's Bounty [Tier 7]
+				-- Snuffling
+				i(224650),	-- Wax-Sealed Pouch
+
+
 			}),
 			f(QUEST_ITEMS, {
 				i(206348),	-- Fragmented Flame
@@ -2098,6 +2054,10 @@ root(ROOTS.Unsorted, {
 				i(225887),	-- Titan Emitter \\ The Archaedas Conundrum
 				i(225927),	-- Emerald Necklace
 				i(228378),	-- Pristine Council's Seal
+
+
+				--
+				i(219934),	-- Spark of War
 			}),
 			n(WEAPONS, {
 				i(216905),	-- Brann Bronzebeard's Axe
@@ -2112,6 +2072,10 @@ root(ROOTS.Unsorted, {
 				i(219793),	-- 11.0 Leveling Quest Template - Axe 1H - Agi
 				i(219941),	-- Fateweaved Mallet \\ Fateweaved Malet
 				i(228364),	-- Endiri's Chipped Boot Knife
+
+				--- NYI ---
+				--- Fist
+				i(223585),	-- Algari Bladefist
 			}),
 			race(EARTHEN_ALLIANCE, {
 				-- My Guess?? Earthen Starting Gear?
@@ -2158,26 +2122,6 @@ root(ROOTS.Unsorted, {
 				i(223946),	-- [PH] Storm Bindings
 				i(223947),	-- [PH] Steam-Powered Wristwatch
 				i(224467),	-- Forgotten Axe
-			}),
-			n(REWARDS, {
-				i(223458),	-- [PH] 11.0 - Belt
-				i(223585),	-- Algari Bladefist
-			}),
-			n(DRAKEWATCHER_MANUSCRIPTS, {
-				i(223510),	-- Delver's Dirigible Schematic: Template
-			}),
-			filter(MISC, {
-				-- Snuffling
-				i(224650),	-- Wax-Sealed Pouch
-			}),
-			n(ACHIEVEMENTS, {
-				i(225209),	-- Sacred Flame Prayers
-				i(225210),	-- Priory Theses
-				i(225211),	-- Airship Operations Manual
-				i(225214),	-- List of Activities
-			}),
-			cl(MAGE, {
-				i(228225),	-- do not use
 			}),
 			explorationHeader({
 				exploration(15551),	-- The Fangs
@@ -2493,25 +2437,10 @@ root(ROOTS.Unsorted, {
 					["_drop"] = {"g"},
 				}),
 			}),
-			--------
-			i(228495),	-- Well-Used Potter's Wheel
-			-- Fall out.... Resort
-
-			i(216665),	-- Warband Bank Distance Inhibitor
-			i(225431),	-- Design: Vicious Jeweler's Setting
-			--
-			i(223032),	-- Technique: Lexicon of Mysteries
-			i(223033),	-- Technique: Patient Alchemist's Mixing Rod
-			i(223034),	-- Technique: Inscribed Rolling Pin
-			i(223056),	-- Plans: Webbed Fishing Line
-			i(225256),	-- PH_2
-			--
-			-- Orphaned due to removal of "Awakening the Machine: Wave <x>" achievements
-			title(568),	-- <Name>, Machine-Warden
-			-- Fallout
-			i(220693),	-- Coffer Key Shard \\ Delve Key Fragment
-			i(226103),	-- The Weaver's Trove
-			i(226165),	-- Unseemly Agate Choker
+			n(SPECIAL, {
+				--- Gonna check this! Make spellID able to be isToy to make it collectible from the quest // Braghe
+				i(216665),	-- Warband Bank Distance Inhibitor
+			}),
 		})),
 	}),
 	expansion(EXPANSION.DF, {

@@ -450,9 +450,16 @@ i(207760, 77131);	-- Grotto Netherwing Drake: Armor (might be already 10.2.0)
 i(213561, 79690);	-- Winding Slitherdrake: Void Scales
 
 
-
-
 --- This File Will Be Renamed to include all Mount Mods!
+------------------
+-- PATCH 11.0.0 --
+------------------
+--- NYI ---
+i(223510, 82177);	-- Delver's Dirigible Schematic: Template
+
+------------------
+-- PATCH 11.0.2 --
+------------------
 i(224981, 82187);	-- Delver's Dirigible Schematic: Brown Paint
 i(224771, 82181);	-- Delver's Dirigible Schematic: Empennage
 i(224982, 82179);	-- Delver's Dirigible Schematic: Exhaust
