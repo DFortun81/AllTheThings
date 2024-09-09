@@ -94,6 +94,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 157979 },	-- Echo of Mercia <Paragon of Humility>
 				["coord"] = { 66.0, 43.6, BASTION },
 				["questID"] = 61002,
+				["providers"] = {
+					{ "o", 354283 },	-- Mercia's Legacy: Chapter One
+					{ "o", 354284 },	-- Mercia's Legacy: Chapter Two
+					{ "o", 354285 },	-- Mercia's Legacy: Chapter Three
+					{ "o", 354286 },	-- Mercia's Legacy: Chapter Four
+					{ "o", 354287 },	-- Mercia's Legacy: Chapter Five
+					{ "o", 354288 },	-- Mercia's Legacy: Chapter Six
+					{ "o", 354467 },	-- Mercia's Legacy: Chapter Seven
+					{ "i", 180569 },	-- Mercia's Legacy: Chapter Seven
+				},
 				["g"] = {
 					i(183606),	-- Bulwark of Echoing Courage
 					i(184295),	-- Eternal Daybreak Necklace
