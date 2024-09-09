@@ -22,30 +22,30 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						crit(15952, {	-- High Shaman MacKilligan slain
-							["cr"] = 46885,
+							["provider"] = { "n", 46885 },	-- High Shaman MacKilligan
 							["coord"] = { 45.8, 33.6, TWILIGHT_HIGHLANDS },
 						}),
 						crit(15953, {	-- Dillan MacHurley slain
-							["cr"] = 46378,
+							["provider"] = { "n", 46378 },	-- Dillan MacHurley
 							["coords"] = {
 								{ 45.0, 37.6, TWILIGHT_HIGHLANDS },
 								{ 46.8, 36.8, TWILIGHT_HIGHLANDS },
 							},
 						}),
 						crit(15954, {	-- Gunwald Greybeard slain
-							["cr"] = 46376,
+							["provider"] = { "n", 46376 },	-- Gunwald Greybeard
 							["coord"] = { 45.2, 42.8, TWILIGHT_HIGHLANDS },
 						}),
 						crit(15955, {	-- Cliff Thundermar slain
-							["cr"] = 46377,
+							["provider"] = { "n", 46377 },	-- Cliff Thundermar
 							["coord"] = { 52.8, 28.2, TWILIGHT_HIGHLANDS },
 						}),
 						crit(15950, {	-- The Black Recluse spider slain
-							["cr"] = 47115,
+							["provider"] = { "n", 47115 },	-- The Black Recluse spider
 							["coord"] = { 45.8, 31.6, TWILIGHT_HIGHLANDS },
 						}),
 						crit(15951, {	-- Korthalon the Black slain
-							["cr"] = 47171,
+							["provider"] = { "n", 47171 },	-- Korthalon the Black
 							["coord"] = { 52.0, 27.6, TWILIGHT_HIGHLANDS },
 						}),
 					},
@@ -178,23 +178,23 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						crit(1, {	-- Warlord Halthar slain
-							["cr"] = 46493,
+						crit(15948, {	-- Warlord Halthar slain
+							["provider"] = { "n", 46493 },	-- Warlord Halthar
 							["coord"] = { 49.0, 37.2, TWILIGHT_HIGHLANDS },
 						}),
-						crit(2, {	-- Karkrog the Exterminator slain
-							["cr"] = 46756,
+						crit(15949, {	-- Karkrog the Exterminator slain
+							["provider"] = { "n", 46756 },	-- Karkrog the Exterminator
 							["coords"] = {
 								{ 50.8, 33.8, TWILIGHT_HIGHLANDS },
 								{ 51.6, 33.0, TWILIGHT_HIGHLANDS },
 							},
 						}),
-						crit(3, {	-- The Black Recluse spider slain
-							["cr"] = 47115,
+						crit(15950, {	-- The Black Recluse spider slain
+							["provider"] = { "n", 47115 },	-- The Black Recluse spider
 							["coord"] = { 45.8, 31.6, TWILIGHT_HIGHLANDS },
 						}),
-						crit(4, {	-- Korthalon the Black slain
-							["cr"] = 47171,
+						crit(15951, {	-- Korthalon the Black slain
+							["provider"] = { "n", 47171 },	-- Korthalon the Black
 							["coord"] = { 52.0, 27.6, TWILIGHT_HIGHLANDS },
 						}),
 					},
