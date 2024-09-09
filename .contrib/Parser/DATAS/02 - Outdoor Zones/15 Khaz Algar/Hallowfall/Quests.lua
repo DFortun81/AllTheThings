@@ -1214,7 +1214,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(BONUS_OBJECTIVES, {
 				q(81568, {	-- Release the Beasts
-					["sourceQuests"] = { 78672 },	-- A Lamplighter's Duty
+					["sourceQuests"] = {
+						78672,	-- A Lamplighter's Duty
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["coord"] = { 55.2, 26.8, HALLOWFALL },
 					["g"] = {
 						i(217352),	-- Gasping Fish (QI!)

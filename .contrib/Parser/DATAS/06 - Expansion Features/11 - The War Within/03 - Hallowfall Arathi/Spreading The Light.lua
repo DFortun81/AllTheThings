@@ -442,7 +442,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(229097),	-- The Cleansing Flame's Sandals
 						i(229120),	-- Warstone's Breastplate
 						i(229122),	-- Warstone's Gauntlets
+						i(229126),	-- Warstone's Girdle
 						i(229123),	-- Warstone's Helm
+						i(229125),	-- Warstone's Mantle
 						i(229121),	-- Warstone's Sabatons
 					}),
 					i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
@@ -641,6 +643,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 64.0, 31.6, HALLOWFALL },
 						["questID"] = 80583,
 					}),
+					o(454543, {	-- Radiant Remnant
+						["coord"] = { 66.0, 28.2, HALLOWFALL },
+						["questID"] = 83520,
+					}),
+					o(430340, {	-- Radiant Remnant
+						["coord"] = { 65.4, 16.7, HALLOWFALL },
+						["questID"] = 80342,
+					}),
+					o(430342, {	-- Radiant Remnant
+						["coord"] = { 64.2, 16.4, HALLOWFALL },
+						["questID"] = 80344,
+					}),
+					o(430337, {	-- Radiant Remnant
+						["coord"] = { 66.4, 15.0, HALLOWFALL },
+						["questID"] = 80339,
+					}),
+					o(430343, {	-- Radiant Remnant
+						["coord"] = { 66.1, 17.9, HALLOWFALL },
+						["questID"] = 80345,
+					}),
 				})),
 				n(VENDORS, {
 					n(212419, {	-- Attica Whiskervale
@@ -764,21 +786,17 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(81848),	-- Ore @ 66.4, 23.4
 			q(80337),	-- Radiant Remnant @ 66.1, 16.6
 			q(80347),	-- Radiant Remnant @ 65.7, 16.5
-			q(80342),	-- Radiant Remnant @ 65.4, 16.7
-			q(80344),	-- Radiant Remnant @ 64.2, 16.4
-			q(80339),	-- Radiant Remnant @ 66.4, 15.0
 			q(80535),	-- Radiant Remnant @ 66.8, 23.1
 			q(80338),	-- Radiant Remnant @ 63.6, 20.8
-			q(80345),	-- Radiant Remnant @ 66.1, 17.9
 			q(80554),	-- Radiant Remnant @ 66.4, 28.8	need objectid
 			--q(80556),	-- Radiant Remnant @ 63.7, 26.3 need objectid
 			q(80531),	-- Radiant Remnant @ 67.2, 26.6 need objectid
 			q(80587),	-- Radiant Remnant @ 62.4, 32.6	need objectid
 			q(83518),	-- Radiant Remnant @ 64.3, 28.2	need objectid
-			q(83520),	-- Radiant Remnant @ 66, 28.2	need objectid
 			q(80553),	-- Radiant Remnant @ 65.5, 29.6	need objectid
 			q(80530),	-- Radiant Remnant @ 65.5, 23.4	need objectid
 			q(80551),	-- Radiant Remnant @ 64.5, 26.7
+			q(80555),	-- Radiant Remnant @ 64.8, 26.2	need objectid
 			-- Small Keyflames
 			q(80005, {["isWeekly"]=true,}),	-- Empty Crab Cage - Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
 			q(78472, {["isWeekly"]=true,}),	-- Attica Whiskervale - Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7

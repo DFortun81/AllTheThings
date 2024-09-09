@@ -15,7 +15,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(78717, {	-- A Mysterious Warning
 					["qg"] = 213624,	-- Magni Bronzebeard
-					["coord"] = { 45.3, 57.4, LEGION_DALARAN },
+					["coords"] = {
+						{ 45.3, 57.4, LEGION_DALARAN },
+						{ 45.7, 56.1, 629 },	-- Legion Dalaran, Aegwynn's Gallery
+					},
 					["sourceQuests"] = { 81966 },	-- Slept like a Rock
 				}),
 				q(78719, {	-- Citizens of Dalaran

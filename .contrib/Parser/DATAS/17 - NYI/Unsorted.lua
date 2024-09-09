@@ -1255,8 +1255,6 @@ root(ROOTS.Unsorted, {
 			i(229117),	-- Flamestonge's Shoulderguards
 			i(229119),	-- Flamestonge's Bracers
 			i(229124),	-- Warstone's Legguards
-			i(229125),	-- Warstone's Mantle
-			i(229126),	-- Warstone's Girdle
 			i(229127),	-- Warstone's Armplates
 			i(229129),	-- Cache of Delver's Spoils
 			i(229130),	-- Cache of Delver's Spoils

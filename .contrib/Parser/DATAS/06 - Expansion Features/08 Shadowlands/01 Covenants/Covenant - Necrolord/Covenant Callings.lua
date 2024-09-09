@@ -168,7 +168,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 				q(60402, {	-- Training in Ardenweald
 					["provider"] = { "n", 167209 },	-- Niall Kugal
-					--["coord"] = { 54.4, 67.8,  }, this had Bastion map, should be fixed
+					["coord"] = { 51.8, 28.8, SEAT_OF_THE_PRIMUS },
 					["g"] = {
 						i(181732),	-- Tribute of the Ambitious
 					},
