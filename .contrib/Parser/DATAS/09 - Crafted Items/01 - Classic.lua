@@ -3145,6 +3145,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			}),
 			i(11371, {    -- Dark Iron Bar
 				["cost"] = ClassicCost({ { "i", 11370, 8 } }),    -- Dark Iron Ore
+				["description"] = "Learning how to melt Dark Iron Ore from Gloom'rel costs 2 Star Ruby, 20 Gold Bars, and 10 Truesilver Bars.",
 			}),
 			i(17771, {    -- Enchanted / Elementium Bar
 				["cost"] = ClassicCost({
