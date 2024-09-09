@@ -449,7 +449,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							["cost"] = {{"c", KEJ, 25}},
 						}),
 						i(226520, {	-- Queen's Pheromone (CI!)
-							["cost"] = {{"c", KEJ, 8888888}},
+						-- The price is a Meme done by blizzard.
+						--	["cost"] = {{"c", KEJ, 8888888}},
 						}),
 						i(223279, {	-- Royal Court Undercrawler (MOUNT!)
 							["minReputation"] = { FACTION_THE_VIZIER, 8 },
