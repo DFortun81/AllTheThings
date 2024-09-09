@@ -179,7 +179,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			o(446420, {	-- "Weaving Supplies"
 				["description"] = "Collect colored Silk Scrap from the nearby platform. Only available if your weekly pact is with The Weaver.",
-				["provider"] = { "o", 446420 },	-- "Weaving Supplies"
 				["questID"] = 82527,
 				["coord"] = { 78.6, 33.2, AZJ_KAHET },
 				["cost"] = {
