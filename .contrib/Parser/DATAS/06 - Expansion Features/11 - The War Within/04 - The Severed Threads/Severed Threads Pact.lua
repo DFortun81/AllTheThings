@@ -145,6 +145,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						}),
 					},
 				}),
+				q(81496, {	-- Requisitions: Fangpetals
+					["provider"] = { "n", 224179 },	-- Ghos'opp
+					["coord"] = { 49.2, 51.6, NERUBAR },
+					["g"] = {
+						o(437769, {	-- Fragrant Fangpetal
+							i(219226),	-- Fragrant Fangpetal (QI!)
+						}),
+					},
+				}),
 				q(81479, {	-- Requisitions: Umbrashrooms
 					-- ["provider"] = { "n", 224178 },	-- Ghos'opp	-- TODO
 					["coord"] = { 51.8, 16.5, NERUBAR },
@@ -243,6 +252,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["g"] = {
 						i(219344),	-- Immaculate Spidersilk (QI!)
 					},
+				}),
+				q(81499, {	-- Information Control: Ascended Intrigue
+					["provider"] = { "n", 224198 },	-- Ru'murh
+					["coord"] = { 54.8, 34.7, NERUBAR },
 				}),
 				q(81472, {	-- Information Control: Ansurek's Truth
 					["provider"] = { "n", 224197 },	-- Ru'murh

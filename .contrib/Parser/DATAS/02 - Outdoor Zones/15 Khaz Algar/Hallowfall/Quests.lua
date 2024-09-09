@@ -1103,6 +1103,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			q(79221, {	-- The Unusual Bug
 				["provider"] = { "i", 212331 },	-- The Unusual Bug (QS!/QI!)
+				["coord"] = { 67.2, 21.8, HALLOWFALL },
 				["maps"] = { AZJ_KAHET },
 			}),
 			q(81640, {	-- Tenir and the Order of Night
