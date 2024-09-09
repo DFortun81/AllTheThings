@@ -355,7 +355,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coord"] = { 46.2, 73.5, SHADOWGLEN },
 							["timeline"] = { ADDED_4_0_3 },
-							-- #if AFTER LEGION
+							-- #if AFTER 7.2.5
 							["races"] = ALLIANCE_ONLY,
 							-- #else
 							["races"] = { NIGHTELF },
