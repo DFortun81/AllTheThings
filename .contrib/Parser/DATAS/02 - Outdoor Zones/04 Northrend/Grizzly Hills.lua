@@ -165,15 +165,6 @@ root(ROOTS.Zones, {
 						pet(647),	-- Grizzly Squirrel (PET!)
 						pet(534),	-- Imperial Eagle Chick (PET!)
 						pet(633),	-- Mountain Skunk (PET!)
-						pet(1238, {	-- Unborn Val'kyr (PET!)
-							["description"] = "This pet spawns in all ordinary questing zones in Northrend, but only at a few specific locations. Other pets might spawn in their place, they might be sensitive to phasing, and might only have one spawn per zone.\n\nSpawns in Grizzly Hill:\n1. West across the river for Amberpine Lodge\n2. At the bottom of the Zul'Drak stairs by Thor Modan\n3. Northeast of Dun Argol",
-							["coords"] = {
-								{ 25.8, 56.9, GRIZZLY_HILLS },
-								{ 61.7, 18.15, GRIZZLY_HILLS },
-								{ 79.6, 51.9, GRIZZLY_HILLS },
-							},
-							["timeline"] = { ADDED_5_3_0 },
-						}),
 					},
 				}),
 				explorationHeader({

@@ -232,15 +232,6 @@ root(ROOTS.Zones, {
 							["description"] = "Found around The Suntouched Pillar.",
 							["coord"] = { 33.0, 53.0, SHOLAZAR_BASIN },
 						}),
-						pet(1238, {	-- Unborn Val'kyr (PET!)
-							["description"] = "This pet spawns in all ordinary questing zones in Northrend, but only at a few specific locations. Other pets might spawn in their place, they might be sensitive to phasing, and might only have one spawn per zone.\n\nSpawns in Sholazar Basin:\n1. Shelf above Spearborn Encampment\n2. Shelf north of the Bonefields\n3. Wildgrowth Mangal, southwest of River's Heart",
-							["coords"] = {
-								{ 36.9, 19.25, SHOLAZAR_BASIN },
-								{ 58.3, 22.1, SHOLAZAR_BASIN },
-								{ 44.5, 69.35, SHOLAZAR_BASIN },
-							},
-							["timeline"] = { ADDED_5_3_0 },
-						}),
 					},
 				}),
 				explorationHeader({

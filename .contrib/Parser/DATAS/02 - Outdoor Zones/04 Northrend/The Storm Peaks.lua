@@ -242,15 +242,6 @@ root(ROOTS.Zones, {
 						pet(558, {	-- Arctic Fox Kit (PET!)
 							["description"] = "Only spawns while it is snowing. Weather in this area seems to be character specific.",
 						}),
-						pet(1238, {	-- Unborn Val'kyr (PET!)
-							["description"] = "This pet spawns in all ordinary questing zones in Northrend, but only at a few specific locations. Other pets might spawn in their place, they might be sensitive to phasing, and might only have one spawn per zone.\n\nSpawns in The Storm Peaks:\n1. Plain of Echoes\n2. Southern end of Snowdrift Plains\n3. Just east of the Crystalweb Cavern by K3",
-							["coords"] = {
-								{ 65.2, 41.8, THE_STORM_PEAKS },
-								{ 29.15, 51.4, THE_STORM_PEAKS },
-								{ 41.8, 78.7, THE_STORM_PEAKS },
-							},
-							["timeline"] = { ADDED_5_3_0 },
-						}),
 					},
 				}),
 				explorationHeader({

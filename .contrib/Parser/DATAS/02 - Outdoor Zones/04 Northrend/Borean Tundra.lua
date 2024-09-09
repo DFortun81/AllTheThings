@@ -249,15 +249,6 @@ root(ROOTS.Zones, {
 								{ 18.7, 63.3, DRAGONBLIGHT }, -- Moonrest Gardens
 							},
 						}),
-						pet(1238, {	-- Unborn Val'kyr (PET!)
-						["description"] = "This pet spawns in all ordinary questing zones in Northrend, but only at a few specific locations. Other pets might spawn in their place, they might be sensitive to phasing, and might only have one spawn per zone.\n\nSpawns in Crystalsong Forest:\n1. Between The Azure Front and Violet Stand\n2. Forlorn Woods, just east of Dalaran proper\n3.West of Sunreaver's Command",
-							["coords"] = {
-								{ 47.7, 7.65, BOREAN_TUNDRA }, -- Northwest of Bor'Gorok Outpost
-								{ 32.85, 60.25, BOREAN_TUNDRA }, -- South of Garrosh's Landing
-								{ 80.9, 48.4, BOREAN_TUNDRA }, -- The Frozen Reach, southwest of Death's Stand
-							},
-							["timeline"] = { ADDED_5_3_0 },
-						}),
 					},
 				}),
 				explorationHeader({

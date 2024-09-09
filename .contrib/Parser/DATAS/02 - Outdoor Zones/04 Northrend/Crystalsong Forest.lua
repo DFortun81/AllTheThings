@@ -16,17 +16,6 @@ root(ROOTS.Zones, {
 						378,	-- Rabbit (PET!)
 						379,	-- Squirrel (PET!)
 					}},
-					["g"] = {
-						pet(1238, {	-- Unborn Val'kyr (PET!)
-							["description"] = "This pet spawns in all ordinary questing zones in Northrend, but only at a few specific locations. Other pets might spawn in their place, they might be sensitive to phasing, and might only have one spawn per zone.\n\nSpawns in Crystalsong Forest:\n1. Between The Azure Front and Violet Stand\n2. Forlorn Woods, just east of Dalaran proper\n3. West of Sunreaver's Command",
-							["coords"] = {
-								{ 17.8, 57.25, CRYSTALSONG_FOREST },
-								{ 43.2, 44.2, CRYSTALSONG_FOREST },
-								{ 68.1, 49.2, CRYSTALSONG_FOREST },
-							},
-							["timeline"] = { ADDED_5_3_0 },
-						}),
-					},
 				}),
 				explorationHeader({
 					exploration(4553),	-- Forlorn Woods
