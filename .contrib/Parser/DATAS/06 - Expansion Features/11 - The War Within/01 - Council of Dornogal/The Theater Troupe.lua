@@ -6,7 +6,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 		header(HEADERS.Quest, 83240, bubbleDownSelf({ ["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 3 } }, {	-- The Theater Troupe
 			["icon"] = 132288,
 			["coord"] = { 56.4, 51.4, ISLE_OF_DORN },
-			["maps"] = { 2328 },	-- The Proscenium
+			["maps"] = { THE_PROSCENIUM },
 			["g"] = {
 				n(ACHIEVEMENTS, {
 					ach(40860),	-- A Star of Dorn (automated)
@@ -17,7 +17,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["provider"] = { "n", 217248 },	-- Elma
 						["coords"] = {
 							{ 56.7, 52.4, ISLE_OF_DORN },
-							{ 53.3, 78.6, 2328 },	-- The Proscenium
+							{ 53.3, 78.6, THE_PROSCENIUM },	-- The Proscenium
 						},
 						["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 10 }
 					}),
@@ -43,7 +43,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					q(83240, {	-- The Theater Troupe
 						["provider"] = { "n", 214296 },	-- Stage Manager Huberta
-						["coord"] = { 56.5, 52.8, ISLE_OF_DORN },
+						["coords"] = {
+							{ 56.5, 52.8, ISLE_OF_DORN },
+							{ 49.6, 65.1, THE_PROSCENIUM },	-- The Proscenium
+						},
 						["isWeekly"] = true,
 						["groups"] = {
 							i(226263, {	-- Theater Troupe's Trove
