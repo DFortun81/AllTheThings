@@ -321,25 +321,25 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 							conquest(1, i(218554)),	-- Forged Gladiator's Shawl
 						}),
 						cl(DRUID, {
-							conquest(1, i(218533)),	-- Forged Gladiator's Cloak
-							conquest(1, i(218534)),	-- Forged Gladiator's Drape
-							conquest(1, i(218529)),	-- Forged Gladiator's Leather Belt
-							conquest(1, i(218519)),	-- Forged Gladiator's Leather Boots
-							conquest(1, i(218525)),	-- Forged Gladiator's Leather Breeches
-							conquest(1, i(218521)),	-- Forged Gladiator's Leather Gloves
-							conquest(1, i(218522)),	-- Forged Gladiator's Leather Grips
-							conquest(1, i(218523)),	-- Forged Gladiator's Leather Helm
-							conquest(1, i(218526)),	-- Forged Gladiator's Leather Legwraps
-							conquest(1, i(218524)),	-- Forged Gladiator's Leather Mask
-							conquest(1, i(218528)),	-- Forged Gladiator's Leather Shoulderpads
-							conquest(1, i(218527)),	-- Forged Gladiator's Leather Spaulders
-							conquest(1, i(218530)),	-- Forged Gladiator's Leather Strap
-							conquest(1, i(218520)),	-- Forged Gladiator's Leather Treads
-							conquest(1, i(218517)),	-- Forged Gladiator's Leather Vest
-							conquest(1, i(218518)),	-- Forged Gladiator's Leather Vestments
-							conquest(1, i(218532)),	-- Forged Gladiator's Leather Wristguards
-							conquest(1, i(218531)),	-- Forged Gladiator's Leather Wristwraps
-							conquest(1, i(218535)),	-- Forged Gladiator's Shawl
+							conquest(525, i(218533)),	-- Forged Gladiator's Cloak
+							conquest(525, i(218534)),	-- Forged Gladiator's Drape
+							conquest(700, i(218529)),	-- Forged Gladiator's Leather Belt
+							conquest(700, i(218519)),	-- Forged Gladiator's Leather Boots
+							conquest(875, i(218525)),	-- Forged Gladiator's Leather Breeches
+							conquest(700, i(218521)),	-- Forged Gladiator's Leather Gloves
+							conquest(700, i(218522)),	-- Forged Gladiator's Leather Grips
+							conquest(875, i(218523)),	-- Forged Gladiator's Leather Helm
+							conquest(875, i(218526)),	-- Forged Gladiator's Leather Legwraps
+							conquest(875, i(218524)),	-- Forged Gladiator's Leather Mask
+							conquest(700, i(218528)),	-- Forged Gladiator's Leather Shoulderpads
+							conquest(700, i(218527)),	-- Forged Gladiator's Leather Spaulders
+							conquest(700, i(218530)),	-- Forged Gladiator's Leather Strap
+							conquest(700, i(218520)),	-- Forged Gladiator's Leather Treads
+							conquest(875, i(218517)),	-- Forged Gladiator's Leather Vest
+							conquest(875, i(218518)),	-- Forged Gladiator's Leather Vestments
+							conquest(525, i(218532)),	-- Forged Gladiator's Leather Wristguards
+							conquest(525, i(218531)),	-- Forged Gladiator's Leather Wristwraps
+							conquest(525, i(218535)),	-- Forged Gladiator's Shawl
 						}),
 						cl(EVOKER, {
 							conquest(875, i(218593)),	-- Forged Gladiator's Armored Scales
@@ -363,25 +363,25 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 							conquest(525, i(218611)),	-- Forged Gladiator's Shawl
 						}),
 						cl(HUNTER, {
-							conquest(1, i(218624)),	-- Forged Gladiator's Chain Belt
-							conquest(1, i(218615)),	-- Forged Gladiator's Chain Boots
-							conquest(1, i(218627)),	-- Forged Gladiator's Chain Bracers
-							conquest(1, i(218621)),	-- Forged Gladiator's Chain Breeches
-							conquest(1, i(218619)),	-- Forged Gladiator's Chain Faceguard
-							conquest(1, i(218616)),	-- Forged Gladiator's Chain Gauntlets
-							conquest(1, i(218625)),	-- Forged Gladiator's Chain Girdle
-							conquest(1, i(218617)),	-- Forged Gladiator's Chain Handguards
-							conquest(1, i(218618)),	-- Forged Gladiator's Chain Helm
-							conquest(1, i(218620)),	-- Forged Gladiator's Chain Leggings
-							conquest(1, i(218622)),	-- Forged Gladiator's Chain Monnion
-							conquest(1, i(218614)),	-- Forged Gladiator's Chain Sabatons
-							conquest(1, i(218623)),	-- Forged Gladiator's Chain Shoulderguard
-							conquest(1, i(218613)),	-- Forged Gladiator's Chain Tunic
-							conquest(1, i(218612)),	-- Forged Gladiator's Chain Vest
-							conquest(1, i(218626)),	-- Forged Gladiator's Chain Wristguards
-							conquest(1, i(218628)),	-- Forged Gladiator's Chain Cloak
-							conquest(1, i(218629)),	-- Forged Gladiator's Chain Drape
-							conquest(1, i(218630)),	-- Forged Gladiator's Chain Shawl
+							conquest(700, i(218624)),	-- Forged Gladiator's Chain Belt
+							conquest(700, i(218615)),	-- Forged Gladiator's Chain Boots
+							conquest(525, i(218627)),	-- Forged Gladiator's Chain Bracers
+							conquest(875, i(218621)),	-- Forged Gladiator's Chain Breeches
+							conquest(875, i(218619)),	-- Forged Gladiator's Chain Faceguard
+							conquest(700, i(218616)),	-- Forged Gladiator's Chain Gauntlets
+							conquest(700, i(218625)),	-- Forged Gladiator's Chain Girdle
+							conquest(700, i(218617)),	-- Forged Gladiator's Chain Handguards
+							conquest(875, i(218618)),	-- Forged Gladiator's Chain Helm
+							conquest(875, i(218620)),	-- Forged Gladiator's Chain Leggings
+							conquest(700, i(218622)),	-- Forged Gladiator's Chain Monnion
+							conquest(700, i(218614)),	-- Forged Gladiator's Chain Sabatons
+							conquest(700, i(218623)),	-- Forged Gladiator's Chain Shoulderguard
+							conquest(875, i(218613)),	-- Forged Gladiator's Chain Tunic
+							conquest(875, i(218612)),	-- Forged Gladiator's Chain Vest
+							conquest(525, i(218626)),	-- Forged Gladiator's Chain Wristguards
+							conquest(525, i(218628)),	-- Forged Gladiator's Cloak
+							conquest(525, i(218629)),	-- Forged Gladiator's Drape
+							conquest(525, i(218630)),	-- Forged Gladiator's Shawl
 						}),
 						cl(MAGE, {
 							conquest(1, i(218476)),	-- Forged Gladiator's Cloak
