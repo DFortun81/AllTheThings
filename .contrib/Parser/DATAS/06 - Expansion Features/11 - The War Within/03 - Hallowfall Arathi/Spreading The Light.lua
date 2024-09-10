@@ -110,7 +110,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						},
 					}),
 					q(79225, {	-- The Lost Flame
-						["provider"] = { "i", 212333 },	-- Expedition Tinderbox (QS!/QI!) //also given by i(224460) but that is a bug
+						["provider"] = { "i", 212333 },	-- Expedition Tinderbox (QS!/QI!)
 						["coord"] = { 61.1, 9.6, HALLOWFALL },
 					}),
 					q(79222, {	-- Shadow-Hardened Mainspring
@@ -154,6 +154,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					q(82963, {	-- Hillhelm Family: Lil Piggy
 						["provider"] = { "i", 224457 },	-- Lil Piggy (QS!/QI!)
+					}),
+					q(82959, {	-- Hillhelm Family: Lost Diary
+						["provider"] = { "i", 224460 },	-- The Lost Diary (QS!/QI!)
 					}),
 					q(82967, {	-- Hillhelm Family: The Chicken
 						["provider"] = { "i", 224466 },	-- Wilber The Chicken (QS!/QI!)

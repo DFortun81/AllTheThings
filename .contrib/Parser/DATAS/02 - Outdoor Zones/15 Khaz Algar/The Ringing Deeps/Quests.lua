@@ -777,7 +777,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79552, {	-- Hot Wax
 					["sourceQuests"] = { 81999 },	-- New Home, New Candle!
 					["provider"] = { "n", 219674 },	-- Janky
-					["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
+					["coord"] = { 72.1, 42.1, ISLE_OF_DORN },
 					["g"] = {
 						o(430215, {	-- Molten Wax
 							i(216670),	-- Fire Bee Wax (QI!)
@@ -787,7 +787,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79998, {	-- Mite Not Right
 					["sourceQuests"] = { 81999 },	-- New Home, New Candle!
 					["provider"] = { "n", 219674 },	-- Janky
-					["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
+					["coord"] = { 72.1, 42.1, ISLE_OF_DORN },
 				}),
 				q(80000, {	-- Beebiter
 					["sourceQuests"] = {
@@ -795,7 +795,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						79998,	-- Mite Not Right
 					},
 					["provider"] = { "n", 219674 },	-- Janky
-					["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
+					["coord"] = { 72.1, 42.1, ISLE_OF_DORN },
 				}),
 				q(80202, {	-- Hot Pollenate-o
 					["sourceQuests"] = {
@@ -803,7 +803,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						79998,	-- Mite Not Right
 					},
 					["provider"] = { "n", 219674 },	-- Janky
-					["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
+					["coord"] = { 72.1, 42.1, ISLE_OF_DORN },
 				}),
 				q(79565, {	-- Janky Candles
 					["sourceQuests"] = {
@@ -811,7 +811,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						80202,	-- Hot Pollenate-o
 					},
 					["provider"] = { "n", 219674 },	-- Janky
-					["coord"] = { 47.8, 35.4, ISLE_OF_DORN },
+					["coord"] = { 72.1, 42.1, ISLE_OF_DORN },
 					["g"] = {
 						i(224262),	-- Begrudgingly Poured Cinderbrew (QI!)
 						o(430551, {	-- Coal Shipment

@@ -184,6 +184,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 80506,
 				["g"] = {
 					i(221220),	-- Basilisk Scale Pauldrons
+					i(221247),	-- Cavernous Critter Shooter
 				},
 			}),
 		})),
