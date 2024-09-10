@@ -54,6 +54,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(82584, {	-- Light's Gambit
 					["coord"] = { 48.6, 39.4, HALLOWFALL },
+					["g"] = {
+						ach(40729),		-- Light's Gambit Champion
+					},
 				}),
 				q(82582, {	-- Mired in Shadow
 					["coord"] = { 74.8, 50.3, HALLOWFALL },
@@ -108,6 +111,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(82288, {	-- Work Hard, Play Hard
 					["coord"] = { 41.8, 55.3, HALLOWFALL },
+					["g"] = {
+						ach(40150),		-- Children's Entertainer
+					},
 				}),
 				n(SPECIAL, {
 					q(82852, {	-- Special Assignment: Lynx Rescue

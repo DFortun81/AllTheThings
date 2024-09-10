@@ -16,12 +16,16 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				q(61874, {	-- A Chilling Summons [H]
 					["races"] = HORDE_ONLY,
-					["coord"] = { 50.3, 76.9, ORGRIMMAR },
 					["maps"] = {
 						1681,	-- Icecrown Citadel (Lower Acherus)
 						1682,	-- Icecrown Citadel (Upper Acherus)
 						1360,	-- Icecrown Citadel (The Frozen Throne)
 					},
+					-- #IF AFTER DF
+					-- was a push-quest during SL right?
+					["coord"] = { 50.3, 76.9, ORGRIMMAR },
+					["provider"] = { "n", 176554 },	-- Highlord Darion Mograine
+					-- #ENDIF
 				}),
 				q(59751, {	-- Through the Shattered Sky
 					["sourceQuests"] = {

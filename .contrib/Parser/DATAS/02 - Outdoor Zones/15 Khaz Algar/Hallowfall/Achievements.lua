@@ -6,7 +6,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		n(ACHIEVEMENTS, {
 			ach(40851),		-- Adventurer of Hallowfall (automated)
 			ach(40622),		-- Biblo Archivist (automated)
-			ach(40150),		-- Children's Entertainer
 			ach(40826),		-- Explore Hallowfall (automated)
 			ach(20594, {	-- Flamegard's Hope
 				["description"] = "Use healing spells, bandages or Algari Healing Potion to heal 20 patients over 20 days, need not be consecutive.",
@@ -28,7 +27,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					40689,	-- Skyriding Glyphs: Velhan's Claim
 				}},
 			}),
-			ach(40729),		-- Light's Gambit Champion
 			ach(40360, {	-- Life on the Farm (automated)
 				["g"] = {
 					i(226160),	-- Hillhelm Farmhand's Hoe
