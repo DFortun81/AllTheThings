@@ -500,6 +500,7 @@ HeaderAssignments = {
 	["WoW's 17th Anniversary"] = -1000298,
 	["WoW's 18th Anniversary"] = -1000299,
 	["WoW's 19th Anniversary"] = -1000300,
+	["WoW's 20th Anniversary"] = -1001031,
 	["WoW's 4th Anniversary"] = -1000285,
 	["WoW's 5th Anniversary"] = -1000286,
 	["WoW's 6th Anniversary"] = -1000287,
@@ -519,4 +520,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001029;
+NextHeaderID = -1001032;

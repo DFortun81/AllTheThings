@@ -197,6 +197,22 @@ WOW_ANNIVERSARY_NINETEEN = createHeader({
 		en = WOWAPI_GetAchievementName(18702),
 	},
 });
+WOW_ANNIVERSARY_TWENTY = createHeader({
+	readable = "WoW's 20th Anniversary",
+	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	-- eventID = 1397,
+	-- eventSchedule = {
+	-- 	0, -- November 16th through December 7th
+	-- 	2022, 11, 16,	-- 11/16/2022
+	-- 	2022, 12, 7,	-- 12/07/2022
+	-- },
+	-- text = {
+	-- 	en = WOWAPI_GetAchievementName(18702),
+	-- },
+	text = {
+		en = "WoW's 20th Anniversary",
+	},
+});
 
 root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, {
 	-- Stuff that's completely gone.
@@ -2044,6 +2060,57 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					}),
 				},
 			}),
+		}),
+	})),
+	n(WOW_ANNIVERSARY_TWENTY, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } },{
+		ach(40976, {	-- A Cool Twenty Years
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				40996,	-- A Gatecrasher
+				40994,	-- An Original
+				40990,	-- Balloonist
+				40977,	-- Codex Editor: Ahn'Qiraj
+				40987,	-- Fashion Critic
+				40985,	-- I Have That One!
+				40992,	-- Peanut Gallery
+				40989,	-- Pet Mischief
+			}},
+			["g"] = {
+				i(228760),	-- Reins of the Coldflame Tempest (MOUNT!)
+			},
+		}),
+		ach(40996),		-- A Gatecrasher (automated)
+		ach(40994),		-- An Original (automated)
+		ach(40871, {	-- Assistant to the Assistant Guest Relations Manager (automated)
+			i(231907),	-- Tricked-Out Thinking Cap
+		}),
+		ach(40870, {	-- Azeroth's Greatest Detective
+			-- Meta Achievement
+			["sym"] = {{"meta_achievement",
+				40871,	-- Assistant to the Assistant Guest Relations Manager
+				40873,	-- Crate Insurance Agent
+				40872,	-- I Saved the Party and All I Got Was This Lousy Hat
+				40979,	-- No Crate Left Behind
+			}},
+			["g"] = {
+				title(571),	-- Detective <Name> (TITLE!)
+			},
+		}),
+		ach(40990),		-- Balloonist
+		ach(40977),		-- Codex Editor: Ahn'Qiraj
+		ach(40873),		-- Crate Insurance Agent
+		ach(40987),		-- Fashion Critic
+		ach(40985),		-- I Have That One!
+		ach(40872, {	-- I Saved the Party and All I Got Was This Lousy Hat (automated)
+			i(231906),	-- High-Alert Thinking Cap
+		}),
+		ach(40979),		-- No Crate Left Behind
+		ach(40992),		-- Peanut Gallery
+		ach(40989),		-- Pet Mischief
+		ach(40661),		-- Zoomies!
+		n(QUESTS, {
+			-- TODO: Quests for Assistant to the Assistant Guest Relations Manager
+			-- TODO: Quests for I Saved the Party and All I Got Was This Lousy Hat
 		}),
 	})),
 })));

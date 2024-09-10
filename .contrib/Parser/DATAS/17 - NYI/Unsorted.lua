@@ -16,7 +16,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(MOUNTS, {
 				i(224399),	-- Amani Hunting Bear (MOUNT!) [Timewalking?]
-				i(228760),	-- Reins of the Coldflame Tempest (MOUNT!) [Anniversary?]
 				i(231374),	-- Enchanted Spellweave Carpet (MOUNT!) [Timewalking?]
 				i(224398),	-- Frayfeather Hippogryph (MOUNT!) [Timewalking?]
 			}),
@@ -974,8 +973,6 @@ root(ROOTS.Unsorted, {
 			i(231833),	-- Bronze Celebration Titles: Karazhan Graduate
 			i(231839),	-- Trailseeker Longbow
 			i(231840),	-- Trailseeker Crossbow
-			i(231906),	-- High-Alert Thinking Cap
-			i(231907),	-- Tricked-Out Thinking Cap
 			i(231915),	-- Auchenai Priest's Robes
 			i(231916),	-- Auchenai Priest's Boots
 			i(231917),	-- Auchenai Priest's Gloves

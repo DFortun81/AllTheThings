@@ -1,5 +1,4 @@
 11.0.5.56487
-title(571),	-- Detective %s
 title(577),	-- Grizzly Hills Hiker %s
 title(578),	-- Plaguelands Survivor %s
 title(581),	-- Classic Enthusiast %s
