@@ -550,7 +550,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 		expansion(EXPANSION.DF, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
 			i(194706),	-- [DEPRECATED]Illusionary Key
 			i(191069),	-- Beacon of the Black Prince
-			i(198848),	-- Flyspawn Thorax
 			i(199798),	-- Makko's Journal - Page Seven
 			i(194423),	-- Maruuk's Spear
 			i(194421),	-- Teera's Bow

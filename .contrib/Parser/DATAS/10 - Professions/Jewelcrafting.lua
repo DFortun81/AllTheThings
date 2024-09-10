@@ -517,8 +517,14 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				},
 			}),
 			q(70032, {	-- Artisan's Supply: Jeweler's Specs
-				["provider"] = { "n", 192121 },	-- Falron Greygold
-				["coord"] = { 25.4, 54.2, THE_WAKING_SHORES },
+				["providers"] = {
+					{ "n", 192121 },	-- Falron Greygold
+					{ "n", 190103 },	-- Uluami
+				},
+				["coords"] = {
+					{ 25.4, 54.2, THE_WAKING_SHORES },
+					{ 65.3, 25.3, OHNAHRAN_PLAINS },
+				},
 				["cost"] = {{ "i", 193037, 1 }},	-- Sundered Onyx Loupe
 				["_drop"] = { "g" },
 			}),

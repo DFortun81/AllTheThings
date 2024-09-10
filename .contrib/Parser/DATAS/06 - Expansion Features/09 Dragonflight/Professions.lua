@@ -164,7 +164,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(69919, {	-- A Craft in Need
-				["provider"] = { "n", 194026 },	-- Azley
+				["providers"] = {
+					{ "n", 194026 },	-- Azley (Valdrakken npcID)
+					{ "n", 193108 },	-- Azley (Ohn'ahran Plains npcID)
+				},
 				["coords"] = {
 					{ 72.0, 81.1, OHNAHRAN_PLAINS },
 					{ 35.4, 58.8, VALDRAKKEN },
@@ -176,10 +179,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(69915, {	-- Targeted Ads
-				["provider"] = { "n", 194026 },	-- Azley
-				["coords"] = {
-					{ 72.0, 81.1, OHNAHRAN_PLAINS },
-				},
+				["provider"] = { "n", 193108 },	-- Azley
+				["coord"] = { 72.0, 81.1, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(198348),	-- "Custom High-Quality Gear: Better Business with Personal Orders!" (QI!)
 					i(198346),	-- "Order Anything Crafters Make!" (QI!)
@@ -190,7 +191,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				},
 			}),
 			q(69981, {	-- Customer Satisfaction
-				["provider"] = { "n", 194026 },	-- Azley
+				["providers"] = {
+					{ "n", 194026 },	-- Azley (Valdrakken npcID)
+					{ "n", 193108 },	-- Azley (Ohn'ahran Plains npcID)
+				},
 				["coords"] = {
 					{ 72.0, 81.1, OHNAHRAN_PLAINS },
 					{ 35.4, 58.8, VALDRAKKEN },

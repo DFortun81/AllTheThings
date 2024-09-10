@@ -8,7 +8,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				{		-- RENOWN 1 --
 					q(72429, {	-- Orientation: Maruukai
 						["provider"] = { "n", 195543 },	-- Sansok Khan
-						["coord"] = { 63.3, 41.3, OHNAHRAN_PLAINS },
+						["coord"] = { 61.4, 39.6, OHNAHRAN_PLAINS },
 					}),
 				}, {	-- RENOWN 2 --
 					q(72762, {	-- Sharing the Bounty

@@ -842,7 +842,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(85649, {	-- Delver's Call: The Waterworks
 					["provider"] = { "o", 487815 },	-- DELVER'S CALL: The Waterworks
-					["coord"] = { 46.9, 32.3, THE_RINGING_DEEPS },
+					["coord"] = { 46.9, 32.3, THE_RINGING_DEEPS },	-- TODO: dm report with 46.6, 17.8, 2251 for this quest?
 				}),
 			}),
 			n(TREASURES, {

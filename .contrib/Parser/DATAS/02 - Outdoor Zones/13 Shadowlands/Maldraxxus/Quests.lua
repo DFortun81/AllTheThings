@@ -69,6 +69,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						60179,	-- Memory of Honor
 					},
 					["provider"] = { "n", 167535 },	-- Chosen Scrapper
+					["coord"] = { 45.0, 61.6, MALDRAXXUS },
 				}),
 				------ Chapter 2 ------
 				q(57514, {	-- The First Act of War

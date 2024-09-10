@@ -70,7 +70,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						65802,	-- Supplies for the Journey
 					},
 					["provider"] = { "n", 181217 },	-- Sansok Khan
-					["coord"] = { 85.7, 25.3, OHNAHRAN_PLAINS },
+					["coord"] = { 84.7, 22.9, OHNAHRAN_PLAINS },
 				}),
 				q(65804, {	-- For Food and Rivalry
 					["sourceQuests"] = { 65803 },	-- Toward the City
@@ -163,7 +163,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						66021,	-- Unwelcome Outsider
 					},
 					["provider"] = { "n", 192724 },	-- Aru
-					["coord"] = { 61.3, 39.5, OHNAHRAN_PLAINS },	-- Follows you coords is middle.
+					["coord"] = { 62.4, 41.6, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(197906),	-- Teerai Locket
 						i(197671),	-- Shikaar Chain
@@ -174,7 +174,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(66948, {	-- The Emissary's Arrival
 					["sourceQuests"] = { 66969 },	-- Clans of the Plains
 					["provider"] = { "n", 194927 },	-- Gemisath
-					["coord"] = { 61.0, 39.2, OHNAHRAN_PLAINS },
+					["coord"] = { 61.0, 40.4, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(197639),	-- Nokhud Reaver Chestplate
 						i(197638),	-- Ohn'ir Initiate Vestments
@@ -185,7 +185,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(66022, {	-- The Khanam Matra
 					["sourceQuests"] = { 66948 },	-- The Emissary's Arrival
 					["provider"] = { "n", 194927 },	-- Gemisath
-					["coord"] = { 61.0, 39.2, OHNAHRAN_PLAINS },
+					["coord"] = { 61.0, 40.4, OHNAHRAN_PLAINS },
 				}),
 				q(66023, {	-- Trucebreakers
 					["sourceQuests"] = { 66022 },	-- The Khanam Matra
@@ -1008,6 +1008,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 186503 },	-- Gracus
 					["coord"] = { 30.7, 58.0, OHNAHRAN_PLAINS },	-- Is Moving
+					["g"] = {
+						--i(198856),	-- Flyspawn Mandibles (QI!) TODO: wasn't able to loot myself from quest but wowhead have looting data
+						i(198847),	-- Flyspawn Chitin (QI!)
+						i(198848),	-- Flyspawn Thorax (QI!)
+						i(198460),	-- Flyspawn Beetle Parts (QI!)
+					},
 				}),
 				q(70069, {	-- Others Call Me Duck Herder
 					["sourceQuests"] = { 70062 },	-- Some Call Me Bug Catcher

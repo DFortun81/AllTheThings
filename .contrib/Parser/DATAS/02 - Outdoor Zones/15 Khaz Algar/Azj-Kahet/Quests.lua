@@ -657,7 +657,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						79538,	-- Smelly Shrubberies
 					},
 					["provider"] = { "n", 217402 },	-- Grigg
-					["coord"] = { 71.9, 62.8, AZJ_KAHET },
+					["coord"] = { 77.9, 62.8, AZJ_KAHET },
 				}),
 				q(79541, {	-- Burn It With Fire
 					["sourceQuests"] = { 79540 },	-- The Party's Over
@@ -849,7 +849,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81959, {	-- Collecting a Concotion
 					["sourceQuests"] = { 81928 },	-- A Cure for All Problems
 					["provider"] = { "n", 221842 },	-- Alchemist Talbax
-					["coord"] = { 60.1, 57.7, AZJ_KAHET },
+					["coord"] = { 59.9, 54.2, AZJ_KAHET },
 					["g"] = {
 						i(221755),	-- Alchemical Potions (QI!)
 					},
@@ -857,12 +857,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81962, {	-- A Nudge in the Right Direction
 					["sourceQuests"] = { 81959 },	-- Collecting a Concotion
 					["provider"] = { "n", 221842 },	-- Alchemist Talbax
-					["coord"] = { 60.1, 57.7, AZJ_KAHET },
+					["coord"] = { 59.9, 54.1, AZJ_KAHET },
 				}),
 				q(81963, {	-- The Fruits of Our Labor
 					["sourceQuests"] = { 81962 },	-- A Nudge in the Right Direction
 					["provider"] = { "n", 221842 },	-- Alchemist Talbax
-					["coord"] = { 60.1, 57.7, AZJ_KAHET },
+					["coord"] = { 59.9, 54.1, AZJ_KAHET },
 					["g"] = {
 						i(228443),	-- Liberator's Tarnished Band
 						i(228444),	-- Silken Ward Signet
@@ -915,7 +915,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						{ "n", 221961 },	-- Faerin Lothar
 						{ "n", 221980 },	-- Faerin Lothar
 					},
-					["coord"] = { 63.8, 17.9, AZJ_KAHET },	-- Faerin and Monte start following on quest accept
+					["coord"] = { 64.9, 11.1, AZJ_KAHET },	-- Faerin and Monte start following on quest accept
 					["g"] = {
 						i(223157),	-- Blacksmith's Breastplate (QI!)
 					},
@@ -926,7 +926,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						{ "n", 221961 },	-- Faerin Lothar
 						{ "n", 221980 },	-- Faerin Lothar
 					},
-					["coord"] = { 63.8, 17.9, AZJ_KAHET },	-- Faerin and Monte start following on quest accept
+					["coord"] = { 64.9, 11.1, AZJ_KAHET },	-- Faerin and Monte start following on quest accept
 				}),
 				q(81950, {	-- BOOM Treats!
 					["sourceQuests"] = { 81945 },	-- To Arathi's End
@@ -934,7 +934,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						{ "n", 221977 },	-- Monte Gazlowe
 						{ "n", 221982 },	-- Monte Gazlowe
 					},
-					["coord"] = { 63.8, 17.9, AZJ_KAHET },	-- Faerin and Monte start following on quest accept
+					["coord"] = { 64.9, 11.1, AZJ_KAHET },	-- Faerin and Monte start following on quest accept
 				}),
 				q(81969, {	-- An End to the End
 					["sourceQuests"] = {

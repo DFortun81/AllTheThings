@@ -1056,7 +1056,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			q(83082, {	-- The Opalfront
 				["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 				["provider"] = { "n", 225454 },	-- Peacekeeper Hektare
-				["coord"] = { 42.7, 68.2, ISLE_OF_DORN },
+				["coord"] = { 44.8, 64.3, ISLE_OF_DORN },
 			}),
 			q(78465, {	-- Golgrin's Reach
 				["sourceQuests"] = {
@@ -1163,7 +1163,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			------ Miscellaneous ------
 			q(79686, {	-- Concerning Fungarians
 				["provider"] = { "o", 428135 },	-- Discarded Botanist Notes
-				["coord"] = { 31.9, 83.6, ISLE_OF_DORN },
+				["coord"] = { 35.8, 77.1, ISLE_OF_DORN },
 				["g"] = {
 					o(428167, {	-- Discarded Research Notes
 						i(216882),	-- Log Entry 467-21-5 (QI!)
@@ -1181,7 +1181,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			q(83337, {	-- Stormscarred
 				["provider"] = { "n", 226792 },	-- Rancher Edidither
-				["coord"] = { 58.9, 25.3, ISLE_OF_DORN },
+				["coord"] = { 58.4, 28.3, ISLE_OF_DORN },
 			}),
 			q(83336, {	-- The Earthwound
 				["provider"] = { "n", 226750 },	-- Freysworn Etterca
@@ -1192,11 +1192,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			q(83338, {	-- The Mage Slayer
 				["provider"] = { "n", 226791 },	-- Violet Warden
-				["coord"] = { 58.8, 23.9, ISLE_OF_DORN },
+				["coord"] = { 58.3, 27.2, ISLE_OF_DORN },
 			}),
 			q(83339, {	-- The Spirebreaker
 				["provider"] = { "n", 226791 },	-- Violet Warden
-				["coord"] = { 58.8, 23.9, ISLE_OF_DORN },
+				["coord"] = { 58.3, 27.2, ISLE_OF_DORN },
 			}),
 			q(83335, {	-- Wanted: The Boroughbreaker
 				["provider"] = { "o", 454463 },	-- Wanted Poster
