@@ -30,6 +30,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["provider"] = { "n", 219226 },	-- Vaskarn
 				["coord"] = { 52.1, 42.2, DORNOGAL },
 			}),
+			q(84490, {	-- The Great Vault
+				["provider"] = { "n", 229336 },	-- Overseer Hyggred
+				["coord"] = { 52.1, 45.5, DORNOGAL },
+				["g"] = {
+					i(228378),	-- Pristine Council's Seal (QI!)
+				},
+			}),
 			q(82050, {	-- The Hardbringer of Crests
 				["sourceQuests"] = { 82042 },	-- The Better Part of Valorstones
 				["provider"] = { "n", 219226 },	-- Vaskarn
@@ -92,35 +99,35 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		}, {
 			q(83465, {	-- Ara-Kara, City of Echoes
 				["provider"] = { "n", 226623 },	-- Biergoth
-				["coord"] = { 46.6, 56.8, DORNOGAL },
+				["coord"] = { 46.6, 48.2, DORNOGAL },
 			}),
 			q(83436, {	-- Cinderbrew Meadery
 				["provider"] = { "n", 226623 },	-- Biergoth
-				["coord"] = { 46.6, 56.8, DORNOGAL },
+				["coord"] = { 46.6, 48.2, DORNOGAL },
 			}),
 			q(83469, {	-- City of Threads
 				["provider"] = { "n", 226623 },	-- Biergoth
-				["coord"] = { 46.6, 56.8, DORNOGAL },
+				["coord"] = { 46.6, 48.2, DORNOGAL },
 			}),
 			q(83443, {	-- Darkflame Cleft
 				["provider"] = { "n", 226623 },	-- Biergoth
-				["coord"] = { 46.6, 56.8, DORNOGAL },
+				["coord"] = { 46.6, 48.2, DORNOGAL },
 			}),
 			q(83458, {	-- Priory of the Sacred Flame
 				["provider"] = { "n", 226623 },	-- Biergoth
-				["coord"] = { 46.6, 56.8, DORNOGAL },
+				["coord"] = { 46.6, 48.2, DORNOGAL },
 			}),
 			q(83459, {	-- The Dawnbreaker
 				["provider"] = { "n", 226623 },	-- Biergoth
-				["coord"] = { 46.6, 56.8, DORNOGAL },
+				["coord"] = { 46.6, 48.2, DORNOGAL },
 			}),
 			q(83432, {	-- The Rookery
 				["provider"] = { "n", 226623 },	-- Biergoth
-				["coord"] = { 46.6, 56.8, DORNOGAL },
+				["coord"] = { 46.6, 48.2, DORNOGAL },
 			}),
 			q(83457, {	-- The Stonevault
 				["provider"] = { "n", 226623 },	-- Biergoth
-				["coord"] = { 46.6, 56.8, DORNOGAL },
+				["coord"] = { 46.6, 48.2, DORNOGAL },
 			}),
 			--
 			q(82678, {	-- Archives: The First Disk

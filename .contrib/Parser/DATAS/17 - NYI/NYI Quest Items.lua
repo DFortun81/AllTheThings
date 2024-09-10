@@ -681,7 +681,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(213557),	-- Lost Journal Tablet
 			i(212519),	-- Nebb's Key
 			i(212521),	-- Nebb's "Treasure" [DNT]
-			i(228378),	-- Pristine Council's Seal
 			i(212604),	-- Restored Titan Key NOT USED
 			i(211961),	-- Rocket-Powered Impact Wrench
 			i(219388),	-- Sacred Flame Torch

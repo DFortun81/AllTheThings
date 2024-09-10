@@ -163,6 +163,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 		}),
+		q(84224, {	-- To Delves!
+			["sourceQuests"] = { 81510 },	-- Ship It!
+			--["provider"] = { "n", xxxxx },	-- Auto-accept?
+			["coord"] = { 47.4, 44.4, DORNOGAL },
+		}),
 		q(81596, {	-- Delve Hunter
 			["sourceQuests"] = { 81595 },	-- Seasonal Start
 			["provider"] = { "n", 226763 },	-- Naleidea Rivergleam

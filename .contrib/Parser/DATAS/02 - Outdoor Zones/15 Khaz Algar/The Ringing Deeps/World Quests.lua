@@ -82,6 +82,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						ach(40507),	-- Hanging Tight
 					},
 				}),
+				q(81767, {	-- Scrounge that Scrap!
+					["coord"] = { 68.8, 44.5, THE_RINGING_DEEPS },
+				}),
 				q(81811, {	-- Skyrider Racing - Cataract River Cruise
 					["coord"] = { 64.8, 64.0, THE_RINGING_DEEPS },
 				}),

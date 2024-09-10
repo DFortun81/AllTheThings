@@ -791,16 +791,17 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		n(QUESTS, {
-			q(84084, {	-- Just a Pinch
-				["provider"] = { "n", 219085 },	-- Nagad <Enchanting Trainer>
-				["coord"] = { 52.7, 71.1, DORNOGAL },
-				["isWeekly"] = true,
-				["groups"] = {
-					i(227667),	-- Algari Enchanter's Folio
-				},
-			}),
-		}),
+		n(QUESTS, sharedData({
+			["provider"] = { "n", 219085 },	-- Nagad <Enchanting Trainer>
+			["coord"] = { 52.7, 71.1, DORNOGAL },
+			["isWeekly"] = true,
+			["g"] = {
+				i(227667),	-- Algari Enchanter's Folio
+			},
+		},{
+			q(84084),	-- Just a Pinch
+			q(84085),	-- The Power of Potential
+		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
 			["g"] = sharedData({ ["cost"] = {{ "c", TWW_ENCHANTING_KNOWLEDGE, 1 }} }, {

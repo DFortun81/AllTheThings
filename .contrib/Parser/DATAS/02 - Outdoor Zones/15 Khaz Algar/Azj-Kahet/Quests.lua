@@ -340,12 +340,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79117, {	-- Bright Young Niffen
 					["sourceQuests"] = { 79115 },	-- Expert Consultant
 					["provider"] = { "n", 215037 },	-- Vetiverian
-					["coord"] = { 76.0, 67.1, AZJ_KAHET },
+					["coord"] = { 77.2, 64.5, AZJ_KAHET },
 				}),
 				q(79118, {	-- Rak-Ush Under New Management
 					["sourceQuests"] = { 79117 },	-- Bright Young Niffen
 					["provider"] = { "n", 215037 },	-- Vetiverian
-					["coord"] = { 76.0, 67.1, AZJ_KAHET },
+					["coord"] = { 77.2, 64.5, AZJ_KAHET },
 				}),
 				q(79120, {	-- Beetle in a Haystack
 					["sourceQuests"] = { 79118 },	-- Rak-Ush Under New Management

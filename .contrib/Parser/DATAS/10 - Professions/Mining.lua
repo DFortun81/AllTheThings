@@ -1285,7 +1285,7 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(QUESTS, sharedData({
 			["description"] = "Requires 25 Skill.",
-			["provider"] = { "n", 219097 },	-- Tarib
+			["provider"] = { "n", 219097 },	-- Tarib <Mining Trainer>
 			["coord"] = { 52.6, 52.6, DORNOGAL },
 			["isWeekly"] = true,
 			["g"] = {

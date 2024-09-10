@@ -351,6 +351,19 @@ root(ROOTS.Professions, prof(SKINNING, {
 		})),
 	})),
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 }, ["requireSkill"] = SKINNING }, {
+		n(QUESTS, sharedData({
+			--["description"] = "Requires 50 Skill.",
+			["provider"] = { "n", 219083 },	-- Ginnad <Skinning Trainer>
+			["coord"] = { 54.5, 57.6, DORNOGAL },
+			["isWeekly"] = true,
+			["g"] = {
+				i(224807),	-- Algari Skinner's Notes
+			},
+		},{
+			q(83097),	-- Cinder and Storm
+			q(83100),	-- Cracking the Shell
+			q(83098),	-- Snap and Crackle
+		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
 			["g"] = sharedData({ ["cost"] = {{ "c", TWW_SKINNING_KNOWLEDGE, 1 }} }, {
@@ -375,19 +388,6 @@ root(ROOTS.Professions, prof(SKINNING, {
 				r(442655),	-- Supreme Beast Lure
 			}),
 		}),
-		n(QUESTS, sharedData({
-			--["description"] = "Requires 50 Skill.",
-			["provider"] = { "n", 219083 },	-- Ginnad <Skinning Trainer>
-			["coord"] = { 54.5, 57.6, DORNOGAL },
-			["isWeekly"] = true,
-			["maxReputation"] = { FACTION_ARTISANS_CONSORTIUM_DRAGON_ISLES_BRANCH, 5 },
-			["g"] = {
-				i(224807),	-- Algari Skinner's Notes
-			},
-		},{
-			q(83097),	-- Cinder and Storm
-			q(83100),	-- Cracking the Shell
-		})),
 		n(TREASURES, {
 			o(455948, {	-- Arathi Craftsman's Spokeshave
 				["coord"] = { 42.2, 53.9, HALLOWFALL },
