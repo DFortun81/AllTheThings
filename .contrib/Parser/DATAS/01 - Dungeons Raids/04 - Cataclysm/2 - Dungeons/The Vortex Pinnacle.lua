@@ -36,6 +36,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					["sourceQuest"] = 28845,	-- The Vortex Pinnacle
 					["groups"] = {
 						i(66901),	-- Greaves of Orsis
+						i(66903),	-- Caliph's Band
+						i(66902),	-- Token of Gratitude
 					},
 				}),
 				q(28800, {	-- Whispers of the Djinn
