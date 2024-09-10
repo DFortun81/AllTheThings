@@ -289,9 +289,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51707, {	-- More Valuable Than Gold (A)
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(160577),	-- Silver Nugget (QI!)
+				},
 			}),
 			q(51743, {	-- More Valuable Than Gold (H)
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(160577),	-- Silver Nugget (QI!)
+				},
 			}),
 			q(54650, {	-- Muk'luk (Faction Assault WQ)
 				["races"] = ALLIANCE_ONLY,
@@ -392,7 +398,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51667, {	-- This Bird You Cannot Change
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
-					i(157845),	-- Falconer's Whistle
+					i(157845),	-- Falconer's Whistle (QI!)
 				},
 			}),
 			q(51767, {	-- Trapline
@@ -426,6 +432,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51694, {	-- Which Witch?
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(160571),	-- Lucille's Sewing Needle (QI!)
+				},
 			}),
 			q(51988),	-- Whitney "Steelclaw" Ramsay
 			q(51682, {	-- Witches by the Dozen (A)

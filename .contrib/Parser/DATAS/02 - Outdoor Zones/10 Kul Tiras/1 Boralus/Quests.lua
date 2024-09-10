@@ -542,6 +542,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					a(ach(12741)),	-- Giving a Scrap (A)
+					i(160266),	-- Scrapped Cloth (QI!)
+					i(160267),	-- Tattered Pants (QI!)
 				},
 			}),
 			q(52762, {	-- A Local Guide
@@ -788,7 +790,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122370 },	-- Cyrus Crestfall
 				["coord"] = { 67.9, 22.0, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 115,	-- wowhead says 110.  it's wrong.  tol dagor doesn't unlock until 115, and that's the other requirement to make this quest available.
+				["lvl"] = 10,
+				["g"] = {
+					i(163161),	-- Tol Dagor Master Key (QI!)
+				}
 			}),
 			q(49715, {	-- Trouble at Greystone Keep
 				-- ["sourceQuests"] = { 50790 },	-- Hot Pursuit	-- TODO maybe earlier? maybe none?

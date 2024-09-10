@@ -527,6 +527,9 @@ root(ROOTS.ExpansionFeatures,
 								51331,	-- Mole Machinations
 								51309,	-- Rocks of Ragnaros
 							},
+							["g"] = {
+								i(160058),	-- Stabilize Magma Elemental (QI!)
+							},
 						}),
 						q(52003, {	-- Champion: Kelsey Steelspark
 							["provider"] = { "n", 135620 },	-- Kelsey Steelspark
@@ -634,6 +637,10 @@ root(ROOTS.ExpansionFeatures,
 							["coord"] = { 41.0, 72.5, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52032 },	-- Never Stop Combing
+							["g"] = {
+								i(161241),	-- Zandalari Dunemelon (QI!)
+								i(161240),	-- Zandalari Water Jug (QI!)
+							},
 						}),
 						q(52034, {	-- A Message to the Zandalari
 							["provider"] = { "n", 139719 },	-- Shandris Feathermoon
@@ -646,6 +653,9 @@ root(ROOTS.ExpansionFeatures,
 							["coord"] = { 41.0, 72.5, VOLDUN },
 							["races"] = ALLIANCE_ONLY,
 							["sourceQuests"] = { 52032 },	-- Never Stop Combing
+							["g"] = {
+								i(161333),	-- Ultra-Safe Electrified Alpaca Lasso (QI!)
+							},
 						}),
 						q(52038, {	-- Splitting Up
 							["provider"] = { "n", 139705 },	-- Halford Wyrmbane

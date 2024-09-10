@@ -592,12 +592,18 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 61.4, 51.1, DRUSTVAR },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(160736),	-- Valentine's Key (QI!)
+							},
 						}),
 						q(51789, {	-- What Remains of Marshal M. Valentine
 							["sourceQuests"] = { 51788 },	-- The Crypt Keeper
 							["provider"] = { "n", 135691 },	-- Nathanos Blightcaller
 							["coord"] = { 61.4, 51.1, DRUSTVAR },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(160939),	-- Valentine's Log (QI!)
+							},
 						}),
 						-- Death of a Tidesage
 						q(53066, {	-- Operation: Water Wise
@@ -629,6 +635,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 139101 },	-- Lilian Voss
 							["coord"] = { 62.6, 31.9, STORMSONG_VALLEY },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(160901),	-- Val'kyr Horn (QI!)
+							},
 						}),
 						q(51818, {	-- Commander and Captain
 							["sourceQuests"] = { 51798 },	-- No Price Too High
@@ -811,6 +820,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 140487 },	-- Thomas Zelling
 							["coord"] = { 71.0, 84.8, BORALUS },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(162106),	-- Tome of Tidesage Research (QI!)
+							},
 						}),
 						q(52189, {	-- Forfeit Souls
 							["sourceQuests"] = { 52185 },	-- A Well Placed Portal
@@ -827,6 +839,9 @@ root(ROOTS.ExpansionFeatures,
 							["provider"] = { "n", 140487 },	-- Thomas Zelling
 							["coord"] = { 71.0, 84.8, BORALUS },
 							["races"] = HORDE_ONLY,
+							["g"] = {
+								i(162579)	-- Abyssal Scepter (QI!)
+							},
 						}),
 						q(52990, {	-- Return to the Harbor
 							["sourceQuests"] = { 52190 },	-- Gaining the Upper Hand

@@ -101,6 +101,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					h(ach(13025)),	-- Zandalari Spycatcher
+					i(158324),	-- Talanji's Mojo (QI!)
 				},
 			}),
 			q(51166, {	-- Down to the Roots (A)
@@ -112,7 +113,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52007, {	-- Engines of War
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(160988),	-- Goblin Incendiary Rocket Launcher
+					i(160988),	-- Goblin Incendiary Rocket Launcher (QI!)
 				},
 			}),
 			q(53290, {	-- Flourishing Riverbud
@@ -261,7 +262,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					i(157847),	-- Firestick (QI!)
 				},
 			}),
-			q(51109),	-- Scorched Earth
+			q(51109, {	-- Scorched Earth
+				["g"] = {
+					i(159745),	-- X-P100D (QI!)
+				},
+			}),
 			q(50512),	-- Scout Skrasniss
 			q(53886, {	-- Self Guided Tour (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
@@ -322,7 +327,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 			}),
 			q(55302),	-- The Cycle of Life
-			q(50474),	-- The Other Side
+			q(50474, {	-- The Other Side
+				["races"] = HORDE_ONLY,
+				["lvl"] = 50,
+				["g"] = {
+					i(157833),	-- Spirit Essence (QI!)
+				},
+			}),
 			q(50529, {	-- The Spirits Within
 				["races"] = HORDE_ONLY,
 			}),

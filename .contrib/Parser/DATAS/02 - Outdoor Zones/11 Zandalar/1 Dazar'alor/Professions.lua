@@ -130,6 +130,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						recipe(257153),	-- Skinning Technique: Bone Gathering (Rank 2)
+						i(161434),	-- Unbroken Makrura Carapace (QI!)
 					},
 				}),
 				q(52217, {	-- Loa Fit For A King
@@ -176,6 +177,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH }
 					["races"] = HORDE_ONLY,
 					["g"] = {
 						recipe(257151),	-- Skinning Technique: Scale Gathering (Rank 3)
+						i(161433),	-- Thick Webbing (QI!)
 					},
 				}),
 			}),

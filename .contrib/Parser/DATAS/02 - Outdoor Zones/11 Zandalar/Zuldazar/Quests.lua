@@ -366,6 +366,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131580 },	-- Apprentice Telemancer Astrandis
 				["coord"] = { 43.9, 72.1, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(156596),	-- Sweeper Beacon (QI!)
+					i(156597),	-- Xibalan Fossil Fragment (QI!)
+				},
 			}),
 			q(49492, {	-- Arrogance of Vol'jamba
 				["sourceQuests"] = {
@@ -550,6 +554,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122129 },	-- Trader Alexxi Cruzpot
 				["coord"] = { 66.8, 42.6, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(150347),	-- Steaming Fresh Carrion (QI!)
+				},
 			}),
 			q(50944, {	-- Down, But Not Out
 				["sourceQuests"] = { 50943 },	-- The Joy of Flight
@@ -599,6 +606,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129907 },	-- Zul the Prophet
 				["coord"] = { 65.7, 30.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(160523),	-- Seal of Implacable Fate (QI!)
+					i(160524),	-- Zul's Ire (QI!)
+				},
 			}),
 			q(55246, {	-- Even Greener Pastures
 				--["sourceQuests"] = { 55258 },	--
@@ -632,7 +643,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 70.9, 50.8, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
-					i(158885),	-- Shimmerfin Flesh
+					i(158885),	-- Shimmerfin Flesh (QI!)
 				},
 			}),
 			q(51407, {	-- Find Their Words
@@ -750,6 +761,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 124656 },	-- Zolani
 				["coord"] = { 72.1, 21.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(151384),	-- Traitorous Zandalari Head (QI!)
+				},
 			}),
 			q(52857, {	-- Held For Observation
 				["sourceQuests"] = { 52855 },	-- Alchemy is an Inexact Science
@@ -805,6 +819,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(47706, {	-- Hunt for King K'tal
 				["provider"] = { "o", 271706 },	-- Hunters' Board
 				["coord"] = { 67.4, 17.9, ZULDAZAR },
+				["g"] = {
+					i(151169),	-- Skull of K'tal (QI!)
+				},
 			}),
 			q(47586, {	-- Hunting the Hunter
 				["sourceQuests"] = {
@@ -1068,6 +1085,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 49283 },	-- Who Seeks the Seekers?
 				["provider"] = { "n", 129586 },	-- Batu
 				["coord"] = { 70.5, 65.2, ZULDAZAR },
+				["g"] = {
+					i(154704),	-- Scroll of Seeking (QI!)
+				},
 			}),
 			q(49905, {	-- Plot Twist
 				["sourceQuests"] = { 49495 },	-- Enforcing Fate
@@ -1124,6 +1144,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 76.7, 16.1, ZULDAZAR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(156861),	-- Skull of Windcaller Ula'jan (QI!)
 					i(155242),	-- Rastari Warboots
 					i(155243),	-- Zanchuli Slippers
 					i(155244),	-- Torcalin Boots
@@ -1175,11 +1196,17 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 				["provider"] = { "n", 125041 },	-- Scrollsage Goji
 				["coord"] = { 79.2, 42.1, ZULDAZAR },
+				["g"] = {
+					i(151859),	-- Scroll of Illusion (QI!)
+				},
 			}),
 			q(49288, {	-- Scrollhunters
 				["sourceQuests"] = { 49286 },	-- Caged Wisdom
 				["provider"] = { "n", 128889 },	-- Deyon
 				["coord"] = { 73.7, 61.0, ZULDAZAR },
+				["g"] = {
+					i(153022),	-- Tortollan Scroll (QI!)
+				},
 			}),
 			q(47235, {	-- Scrying for the Eye
 				["sourceQuests"] = { 47329 },	-- The Bloodwatcher Legacy
@@ -1311,6 +1338,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127377 },	-- Pa'ku
 				["coord"] = { 71.4, 49.2, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(158913),	-- Huge Dragon Kite (QI!)
+				},
 			}),
 			q(47963, {	-- The Ancient One
 				["sourceQuests"] = { 47521 },	-- Midnight in the Garden of the Loa
@@ -1466,6 +1496,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 132637 },	-- Jamil Abul'housin
 				["coord"] = { 76.5, 16.0, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(156834),	-- Traitor's Blood (QI!)
+				},
 			}),
 			q(48015, {	-- The Scrolls of Gral
 				["sourceQuests"] = {
@@ -1501,6 +1534,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 137075 },	-- Lieutenant Dennis Grimtale
 				["coord"] = { 76.6, 48.5, ZULDAZAR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(159836),	-- Scouting Map (QI!)
+					i(159835),	-- Ship's Manifest (QI!)
+					i(159837),	-- Unsent Letter (QI!)
+				},
 			}),
 			q(55247, {	-- The Trust You've Earned
 				["sourceQuests"] = { 55507 },	-- Torcali's Blessing
@@ -1758,6 +1796,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 63.5, 31.7, ZULDAZAR },
 				["sourceQuests"] = { 49488 },	-- Tal'gurub
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(154901),	-- Voodoo Totem (QI!)
+				},
 			}),
 			q(53452, {	-- Gorilla Warfare (A)
 				["provider"] = { "n", 130947 },	-- Tsunga

@@ -380,6 +380,8 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 137818 },	-- Myxle "The Searat" Gutwrench
 				["g"] = {
 					h(ach(13056)),	-- Giving a Scrap (H)
+					i(160266),	-- Scrapped Cloth (QI!)
+					i(160267),	-- Tattered Pants (QI!)
 				},
 			}),
 			q(49122, {	-- A Port in Peril
@@ -602,6 +604,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 50.0, 84.9, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 126684 },	-- Yazma
+				["g"] = {
+					i(152184),	-- Tongue of Gahz'ragon (QI!)
+				},
 			}),
 			q(47518, {	-- Raal
 				["sourceQuests"] = {
@@ -845,6 +850,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 50.0, 84.7, DAZARALOR },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 126684 },	-- Yazma
+				["g"] = {
+					i(152101),	-- The Word of Zul (QI!)
+				},
 			}),
 			q(51101, {	-- The Wounded King
 				["sourceQuests"] = { 49310 },	-- The Prophet's Ploy

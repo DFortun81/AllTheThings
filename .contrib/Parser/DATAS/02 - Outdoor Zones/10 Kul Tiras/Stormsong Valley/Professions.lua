@@ -13,7 +13,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["sourceQuest"] = 49599,	-- The Missing Chapter (H)
 					["requireSkill"] = JEWELCRAFTING,
 					["races"] = HORDE_ONLY,
-					["lvl"] = 120,
+					["lvl"] = 50,
+					["g"] = {
+						i(155590),	-- Shard of Golden Beryl (QI!)
+					},
 				}),
 			}),
 		}),

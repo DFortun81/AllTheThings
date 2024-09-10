@@ -4959,6 +4959,8 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["coord"] = { 20.6, 44, DRUSTVAR },
 				["groups"] = {
 					r(259665),	-- Blood Contract: Sacrifice
+					i(168046),	-- Fresh Heart (QI!)
+					i(156549),	-- Writ of Sacrifice (QI!)
 				},
 			})),
 			q(49874, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- By the Book
@@ -4994,6 +4996,9 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 				["coord"] = { 27.6, 52.3, VOLDUN },
 				["maps"] = { 1038, 1043 }, -- Temple of Sethraliss
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(156512),	-- Tome of Oblivion (QI!)
+				},
 			}),
 			q(49879, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- Brush With Death
 				["sourceQuests"] = { 49877 },	-- Temple of Sethraliss: Booking on a Favor

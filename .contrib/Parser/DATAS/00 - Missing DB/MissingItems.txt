@@ -27656,7 +27656,6 @@ i(156796),	-- Michiel Voidstrider's Head
 i(156797),	-- Twilight Silk
 i(157030),	-- Titan Prison Fragment
 8.0.1.25902
-i(133510),	-- Warchief's Orders \\ Sack of Gunpowder
 i(144031),	-- Hardened Shovel
 i(144040),	-- Great Sea Mackerel
 i(144430),	-- Siege Engine Controller \\ REUSE \\ Pearlescent Clam
@@ -27677,7 +27676,6 @@ i(150736),	-- Air Drop
 i(150738),	-- Overgrowth Lumber
 i(150751),	-- Prickly Fruit
 i(150752),	-- Heavy Coin Pouch
-i(150754),	-- Valjabu's Tusk Ring
 i(150755),	-- Bone Dust
 i(150756),	-- Woven Feathered Necklace
 i(150757),	-- Mallet of Gee'dae
@@ -27686,11 +27684,9 @@ i(150760),	-- Town Hall Upgrade Token
 i(150761),	-- Crystalline Spear
 i(150762),	-- Woven Basket
 i(150763),	-- Spiked Pauldrons
-i(150916),	-- Zulsan's Cracked Skull
 i(150932),	-- Akunda's Offering
 i(150937),	-- Blazing Torch
 i(150955),	-- Slippery Peel
-i(151022),	-- Whistlebloom Juicy Fruit
 i(151025),	-- Pristine Saurid Skin
 i(151032),	-- Mummified Claw
 i(151033),	-- Juju Totem
@@ -27728,13 +27724,11 @@ i(151276),	-- Cloudy Potion
 i(151277),	-- Coiled Idol
 i(151279),	-- Thundering Idol
 i(151342),	-- Warden's Key
-i(151363),	-- Ticker's Rocket Launcher
 i(151364),	-- Hand-Painted War Mask
 i(151371),	-- Fistful of Razor Quills
 i(151372),	-- Royal Mojo
 i(151373),	-- Blood of Rezan
 i(151376),	-- Unusual Bone Fragment
-i(151384),	-- Traitorous Zandalari Head
 i(151419),	-- Cora's Rocket Pack
 i(151525),	-- Stolen Artifact
 i(151527),	-- Block Warden's Key \\ Karybis Block Key \\ Bundy's Key
@@ -27744,7 +27738,6 @@ i(151616),	-- Driftwood
 i(151628),	-- Seafaring Hat
 i(151629),	-- Nautical Map
 i(151630),	-- Cracked Compass
-i(151631),	-- Weathered Spyglass
 i(151648),	-- Engorged Raptor Parts
 i(151701),	-- Extraction Suit
 i(151723),	-- Idol of Kimbul
@@ -27764,7 +27757,6 @@ i(151936),	-- Captive Bloodfly
 i(152099),	-- Shriveled Onion
 i(152100),	-- Scattered Grimiore Page
 i(152101),	-- The Word of Zul
-i(152184),	-- Tongue of Gahz'ragon
 i(152278),	-- Cracked Wand
 i(152279),	-- Chilled Shard
 i(152329),	-- Empowered Staff
@@ -27783,11 +27775,9 @@ i(152460),	-- Ancient Xibalan Tablet
 i(152471),	-- Animate Sphere
 i(152481),	-- Gravebloom Salve
 i(152484),	-- Chadwick Paxton's Legs
-i(152514),	-- Toxic Stinger
 i(152541),	-- Coarse Leather \\ Leather - Common (NEEDS NAME)
 i(152542),	-- Hardened Tempest Hide \\ Leather - Rare (NEEDS NAME)
 i(152572),	-- Sezahjin's Trusty Vulture Bow
-i(152573),	-- Snarltooth's Head
 i(152576),	-- Tidespray Linen \\ Sun-Bleached Linen \\ Cloth - Common (NEEDS NAME)
 i(152577),	-- Deep Sea Satin \\ Cloth - Rare (NEEDS NAME)
 i(152578),	-- Sack of Herbs
@@ -27797,7 +27787,6 @@ i(152582),	-- Stack of Skins
 i(152584),	-- The Last Pearl
 i(152587),	-- Levae's Missive
 i(152588),	-- Loa Offerings
-i(152590),	-- Wicker Charm
 i(152596),	-- Sur'jan's Ritual Dagger
 i(152599),	-- Skyterror Egg
 i(152601),	-- Scavenged Supplies
@@ -27807,10 +27796,8 @@ i(152631),	-- Briny Flesh \\ Meat 01 - Beast (NEEDS NAME)
 i(152633),	-- Alchemist Tincture - Caster(NEEDS NAME)
 i(152635),	-- Alchemist Tincture - Caster(NEEDS NAME)
 i(152642),	-- Soft Stoat Pelt
-i(152644),	-- Thistlevine Seeds
 i(152655),	-- Restored Eye of Obsidian
 i(152656),	-- Eye of Obsidian Fragment
-i(152660),	-- Weathered Satchel
 i(152661),	-- Thistlevine Seeds
 i(152662),	-- Blood Troll Outfit
 i(152663),	-- Blood Troll Decorative Bands
@@ -27818,7 +27805,6 @@ i(152664),	-- Blood Troll Bone Piercing
 i(152665),	-- Blood Troll Body Paint
 i(152666),	-- Recipe Rock
 i(152670),	-- Soup Stone
-i(152671),	-- Unidentifiable Meat
 i(152672),	-- Half-Eaten Supplies
 i(152673),	-- Heiro's Lucky Tamborine
 i(152674),	-- Empty Canteen
@@ -27836,7 +27822,6 @@ i(152801),	-- Grizzly Pelt
 i(152822),	-- Monel-Hardened Hatchet \\ Mariner's Hatchet
 i(152823),	-- Monel-Hardened Battleaxe \\ Mariner's Battleaxe
 i(152846),	-- Gnomish Telebomb
-i(152864),	-- Tortollan Scroll
 i(152865),	-- Snapclaw Meat
 i(152867),	-- Hefty Mudfish
 i(152882),	-- REUSE ME \\ Runed Norgal Rod
@@ -27859,7 +27844,6 @@ i(152990),	-- Kruga's Cage Key
 i(152994),	-- Stolen Tortollan Relic
 i(152997),	-- Torch
 i(153011),	-- Meiwatha's Locket
-i(153016),	-- Sealed Scroll
 i(153017),	-- Rough Forktongue Hide
 i(153022),	-- Tortollan Scroll
 i(153024),	-- Scroll of Combustion
@@ -27869,7 +27853,6 @@ i(153038),	-- Kruga's Poisoned Claw
 i(153049),	-- Scroll of Purging
 i(153050),	-- Shimmerscale
 i(153051),	-- Mistscale \\ Scale - Uncommon (NEEDS NAME)
-i(153053),	-- Tome of Silver and Ash
 i(153058),	-- Scroll of Fate's Hand
 i(153112),	-- Scroll of Purging
 i(153131),	-- Scroll of Eternal Return
@@ -27943,9 +27926,6 @@ i(153658),	-- Glyph of (NEEDS NAME)
 i(153659),	-- Glyph of (NEEDS NAME)
 i(153660),	-- Glyph of (NEEDS NAME)
 i(153669),	-- Viridescent Pigment
-i(153671),	-- Yialu's Talisman
-i(153672),	-- Vashera's Talisman
-i(153674),	-- Zu'Anji's Talisman
 i(153675),	-- Scroll of Capsizing
 i(153677),	-- Pair of Bongos
 i(153679),	-- Tether Shot
@@ -27987,18 +27967,14 @@ i(154723),	-- Emergency Bucket
 i(154733),	-- Sethrak Cache Key
 i(154872),	-- Marrten's Canvas Mantle \\ Heartsbane Amice \\ PH Cloth Shoulder
 i(154890),	-- Partially Digested Horde Missive
-i(154892),	-- Skycaller Gem
 i(154895),	-- Lightning Catcher
-i(154896),	-- Volatile Lightning Bomb \\ Lightning Catcher
 i(154897),	-- Stringy Loins \\ Meat 02 - Amphibian (NEEDS NAME)
 i(154898),	-- Meaty Haunch \\ Meat 03 - Dinosaur (NEEDS NAME)
 i(154899),	-- Thick Paleo Steak \\ Meat 04 - Other (NEEDS NAME)
 i(154900),	-- Lightning Bomb
-i(154901),	-- Voodoo Totem
 i(154920),	-- Pile of Lightning Bombs
 i(154969),	-- Sea Sapphire Band
 i(154987),	-- Beaten Copper Loop
-i(154993),	-- Wood-Adorned Skull
 i(155006),	-- Rare - Kul Tiras Project A (NEEDS NAME)
 i(155007),	-- Rare - Kul Tiras Project B (NEEDS NAME)
 i(155008),	-- Rare - Kul Tiras Project C (NEEDS NAME)
@@ -28222,14 +28198,12 @@ i(155646),	-- PH Flavor - Unused \\ Sinewy Wing
 i(155647),	-- PH Flavor - Unused \\ Grim Skull Fetish
 i(155649),	-- Broken Zandalari Spear
 i(155659),	-- Scroll of Absolute Handsomeness
-i(155663),	-- Saurolisk Tail
 i(155693),	-- Scouting Report
 i(155694),	-- Primordium Dust
 i(155808),	-- Positive Crystal Shard
 i(155809),	-- Negative Crystal Shard
 i(155810),	-- Tirasreli Gourmet Chocolate \\ The Loken
 i(155823),	-- Icy Snowball
-i(155828),	-- Spotted Gryphon Egg
 i(155833),	-- Primordium Crystal Key
 i(155834),	-- Alchemical Notes
 i(155835),	-- Small Keg of Beer
@@ -28238,7 +28212,6 @@ i(155841),	-- Defaced Statuette
 i(155842),	-- "Preserved" Foodstuffs
 i(155843),	-- Brittle Ceremonial Necklace
 i(155844),	-- Unreliable Lodestone
-i(155858),	-- Scratchy
 i(155863),	-- Gilded-Claw Gloves \\ Fang-Fingered Glove
 i(155865),	-- Handwraps of Jagged Incisions \\ 8.0 - PH Dungeon - Cloth HAND \\ Shadesilk Gloves
 i(155867),	-- Coif of Invigorating Tethers \\ Coif of Entwined Fates
@@ -28258,13 +28231,10 @@ i(155913),	-- Sticky Tar
 i(155914),	-- Prison Cart Key
 i(156472),	-- Songstone
 i(156476),	-- Dock Whistle
-i(156482),	-- Zeth'jir Harpoon
 i(156485),	-- Bottle of Mojo
 i(156508),	-- Blessed Bandage
-i(156512),	-- Tome of Oblivion
 i(156513),	-- Crude Hatchet
 i(156517),	-- Hastily Drawn Map
-i(156524),	-- Titan Plating
 i(156529),	-- Blood Orb
 i(156530),	-- Grapeshot Grenade
 i(156536),	-- Meaty Offering
@@ -28281,7 +28251,6 @@ i(156581),	-- Dirty Pocketwatch
 i(156596),	-- Sweeper Beacon
 i(156599),	-- Marine Identification Badge
 i(156602),	-- Glob of Honey Slime
-i(156607),	-- Warship Blueprint
 i(156608),	-- SI:7 Intelligence Report
 i(156609),	-- Stormfused Weapon
 i(156619),	-- Sur'jan's Right Shoulderpad
@@ -28305,28 +28274,23 @@ i(156661),	-- REUSE ME \\ HERB (PH)
 i(156662),	-- Fast-Grow Potion
 i(156708),	-- Sticky Research Notes
 i(156719),	-- Bee Pheromones
-i(156722),	-- Silver Nugget
 i(156736),	-- Sealed Assassin's Orders
 i(156737),	-- Forsaken Memento
 i(156799),	-- Royal Sundrop
 i(156807),	-- Loose Notes
 i(156826),	-- Empty Vial
-i(156834),	-- Traitor's Blood \\ Blood of a Traitor
 i(156835),	-- Delicious Honey
 i(156847),	-- Seaforium Smoke Grenade
 i(156848),	-- Idol of Rezan
 i(156856),	-- Traitorous Zandalari Head
 i(156857),	-- Un-'vooded'-ed Aggression Formula
 i(156860),	-- Aggression Formula
-i(156861),	-- Skull of Windcaller Ula'jan
 i(156870),	-- Samantha's Sword
 i(156872),	-- Loa Sweat
 i(156873),	-- Boozy Boot
 i(156878),	-- Freshwater Crab Meat
-i(156920),	-- The Golden Horn of Rezan
 i(156924),	-- Silver Shrapnel
 i(156928),	-- Tether Shot
-i(156931),	-- Wand of Embers
 i(156939),	-- Wand of Embers
 i(156971),	-- Boots of Speed
 i(156972),	-- Scroll of Healing
@@ -28346,7 +28310,6 @@ i(157769),	-- Sword of the Lone Victor
 i(157774),	-- Horse Documentation
 i(157776),	-- Dire Missive
 i(157777),	-- Report from Zuldazar
-i(157783),	-- Slagshot Slammer
 i(157785),	-- Wand of Polymorph
 i(157786),	-- Freshly Plucked Feather
 i(157792),	-- Gilded Riverbeast Tusk
@@ -28379,7 +28342,6 @@ i(158113),	-- 8.0 PH Weapon - Crossbow
 i(158119),	-- 8.0 PH Weapon - Gun
 i(158137),	-- 8.0 PH Reputation - Nazmir
 i(158138),	-- 8.0 PH Reputation - Zuldazar
-i(158139),	-- Tideblood
 i(158140),	-- 8.0 PH Reputation - Vol'dun
 i(158141),	-- 8.0 PH Reputation - Tiragarde
 i(158142),	-- 8.0 PH Reputation - Drustvar
@@ -28397,17 +28359,14 @@ i(158166),	-- 8.0 PH Trinket
 i(158167),	-- 8.0 PH Trinket
 i(158170),	-- Scroll of Recording
 i(158173),	-- Orders from the Emperor
-i(158175),	-- Weakening Potion
 i(158177),	-- Pterrordax Salivary Gland
 i(158178),	-- Mangled Tortollan Scroll
 i(158182),	-- Overcharged Skycaller's Staff
-i(158183),	-- Tidal Beacon
 i(158186),	-- Distilled Water
 i(158190),	-- Target Marker \\ Poison-Tipped Dagger \\ Bottle of Volatile Shadow
 i(158194),	-- Helm of the Sands
 i(158195),	-- Frothing Vial
 8.0.1.25976
-i(158200),	-- Zeth'jir Channeling Rod
 i(158205),	-- Acacia Powder
 i(158206),	-- Charged Crystal
 i(158207),	-- Insulated Hammer
@@ -28422,12 +28381,10 @@ i(158223),	-- 8.0 PH - Unused - Trinket \\ 8.0 PH - Trinket
 i(158227),	-- Shiny Metal \\ Scrap Metal
 i(158292),	-- PH Cooking Reward \\ Mostly Intact Shell - PH Turtle Rare
 i(158293),	-- Failed Explosive Charge
-i(158300),	-- Thundersnout's Snout \\ Battle-Piglet
 i(158310),	-- Soulspun Carapace \\ 8.0 - PH Dungeon - Plate CHEST
 i(158312),	-- Girdle of the Everlasting Guardian \\ 8.0 - PH Dungeon - Plate WAIST
 i(158316),	-- 8.0 - PH Dungeon - Leather HEAD
 i(158331),	-- 8.0 PH - Unused - Shield \\ 8.0 PH Shield Int
-i(158332),	-- Zeth'jir Channeling Rod
 i(158333),	-- Fleet Captain's Buffcoat \\ 8.0 - PH Dungeon - Leather CHEST
 i(158334),	-- 8.0 - PH Dungeon - Plate FEET
 i(158335),	-- 8.0 - PH Dungeon - Leather FEET
@@ -28483,15 +28440,12 @@ i(158457),	-- 8.0 PH - Trinket
 i(158458),	-- 8.0 PH - Trinket
 i(158459),	-- 8.0 PH - Trinket
 i(158460),	-- Neglected Memento
-i(158465),	-- Tidal Kris
 i(158466),	-- Fort Victory Sausage
 i(158559),	-- 8.0 PH - Unused - Trinket \\ PH Unused \\ PH Trinket Str D
 i(158560),	-- 8.0 PH - Unused - Trinket \\ PH Unused \\ Assassin's Orders \\ PH Trinket Agi D
 i(158596),	-- 8.0 PH - Unused - Shield \\ PH Str Shield B
 i(158637),	-- 8.0 PH - Unused - Polearm \\ 8.0 PH - Weapon - Polearm
 i(158638),	-- 8.0 PH - Unused - 1H Fist \\ 8.0 PH - Weapon - Fist
-i(158651),	-- Nisha's Attack Plans
-i(158654),	-- Treadward's Ring
 i(158676),	-- Salvaged Flying Machine Parts \\ Salvaged Gyrocopter Parts
 i(158677),	-- Scrimshaw Ledger \\ Finstripe Ledger \\ Dreadful Whale Ledger
 i(158720),	-- Staff of the Frosty Cavedweller
@@ -28635,26 +28589,20 @@ i(158871),	-- Autographed Painting of Anduin \\ PH Flavor - Unused \\ PH Flavor 
 i(158872),	-- Unstable Essence \\ Tough Sinew \\ PH Flavor - Troll - Sandfury
 i(158873),	-- Crystalline Honeymead \\ PH Flavor - Dire Troll Female - Blood Troll
 i(158874),	-- Frothing Vapor \\ PH Flavor - Human Spirit
-i(158875),	-- Tongo's Head
 i(158877),	-- Bloodstained Message \\ Tattered Message
 i(158879),	-- Bloodstained Message \\ Tattered Message
-i(158884),	-- Vulpera Banners
 i(158889),	-- Makeshift Cuffs
 i(158897),	-- Improved Flight Master's Whistle
 8.0.1.26010
-i(158324),	-- Talanji's Mojo
 i(158899),	-- UNUSUED \\ Scrap metal
 i(158906),	-- Shimmerfin Flesh
 i(158907),	-- Moonstone Pendant
 i(158908),	-- Moonstone Weapon
-i(158913),	-- Huge Dragon Kite
-i(158918),	-- Bilgewater Patented Flamethrower
 i(158925),	-- Moonwell Essence
 i(158926),	-- Fried Turtle Bits
 i(158933),	-- Depleted Soul Shard
 i(158934),	-- Empowered Soul Shard
 i(158935),	-- Depleted Soul Shard
-i(158936),	-- Rakera's Journal
 i(158940),	-- Nazmani Warplate Chestplate \\ Nazmani Warplate Breastplate \\ 8.0 PH Plate Chestplate
 i(158941),	-- Death-Pledged Chestguard \\ Death-Pledged Hauberk \\ 8.0 PH Mail Vest
 i(158942),	-- Ritual Flayer's Vest \\ Ritual Flayer's Tunic \\ 8.0 PH Leather Vest
@@ -28687,8 +28635,6 @@ i(159059),	-- 8.0 PH Mail Leggings
 8.0.1.26032
 i(159113),	-- 8.0 PH 1H Axe
 i(159142),	-- Tacha's Mystery Stew
-i(159143),	-- Tranquil Charm
-i(159144),	-- Scent Vial \\ Blood Vial
 i(159145),	-- Empty Grog Bottle \\ Plundered Supplies
 8.0.1.26095
 i(159156),	-- Sweete's Orders \\ Ashvane's Orders
@@ -28739,10 +28685,8 @@ i(159712),	-- Hunting Rifle
 i(159714),	-- Steel Sword
 i(159715),	-- Crossbow
 i(159716),	-- Heart of Azeroth
-i(159721),	-- Unprocessed Iron Ore
 i(159740),	-- Add Keystone Affix: Skittish
 i(159741),	-- Add Keystone Affix: Teeming
-i(159745),	-- X-P100D
 i(159748),	-- Rune-Etched Bone
 8.0.1.26131
 i(159754),	-- Heart of Azeroth
@@ -28762,10 +28706,8 @@ i(159792),	-- Hooked Deep Sea Net
 i(159827),	-- Bomb-samdi Mojo Bombs \\ Bomb-sondi Mojo Bombs \\ PH Bomb-sondi Mojo Bombs
 i(159831),	-- Sealed Kul Tiran Crate
 i(159832),	-- Gulch Beetle
-i(159834),	-- The Pride of Kul Tiras
 i(159835),	-- Ship's Manifest
 i(159836),	-- Scouting Map
-i(159837),	-- Unsent Letter
 i(159839),	-- Spider Silk
 i(159843),	-- Recruit Alliance Troop
 i(159844),	-- Recruit Horde Troop
@@ -28811,7 +28753,6 @@ i(159966),	-- Blouse of the Roving Scalawag
 i(159967),	-- Raider's Sailcloth
 i(159970),	-- Hull-Plate Half Helm
 i(159971),	-- Token of Ironside Blessing
-i(160026),	-- Sister Lilias' Head
 i(160027),	-- Ashenwood Relic
 i(160037),	-- Sethrak Weapon
 i(160038),	-- Owlseye Lens
@@ -28844,7 +28785,6 @@ i(160267),	-- Tattered Pants
 i(160268),	-- Bag of Armor (DNT)
 i(160298),	-- Durable Flux
 i(160316),	-- Dark Iron Curiosity
-i(160317),	-- V-300 Serial Plate
 i(160322),	-- Pile of Ore
 i(160323),	-- The Glaive of Vol'jin
 i(160398),	-- Choral Honey
@@ -28856,36 +28796,25 @@ i(160443),	-- The Glaive of Vol'jin
 i(160444),	-- Pile of Storm Silver Ingots
 i(160445),	-- Myra's Storm Silver Bucket \\ Blessed Storm Silver Ingot
 i(160446),	-- Ferry Pass
-i(160479),	-- Urn of Vol'jin
 8.0.1.26310
 i(160483),	-- Steamed Clams
-i(160499),	-- Zanchuli Reserve
 i(160502),	-- Chemical Blasting Cap
-i(160510),	-- Vorrik's Staff
 i(160516),	-- Pristine Quillrat Quill
 i(160517),	-- Saurid Sticks \\ Sauridsticks
 i(160518),	-- Great Turtle Soup
 i(160523),	-- Seal of Implacable Fate
-i(160524),	-- Zul's Ire
 i(160525),	-- Tongo's Head
 8.0.1.26367
-i(160550),	-- Enormous Anchor Pod
 i(160554),	-- Stormsong Sourdough
-i(160556),	-- Bot Cluster Bomb
-i(160571),	-- Lucille's Sewing Needle
-i(160574),	-- Sealed Letter
 i(160575),	-- PVP Reward 1
 i(160576),	-- PVP Reward 2
-i(160577),	-- Silver Nugget
 i(160584),	-- Greater Control Charm
-i(160585),	-- Soulcaller Scroll
 i(160586),	-- Blasting Stick
 i(160594),	-- Saw Dust \\ Metal Casing
 i(160596),	-- Taskmaster's Key
 i(160603),	-- Cracked Mine Sweeper \\ Mine Sweeper
 i(160611),	-- Woven Bacon \\ Slab of Smoked Bacon
 i(160659),	-- Hunting Rifle
-i(160667),	-- Unstable Azerite Bomb \\ Illegal Azerite Bomb
 8.0.1.26433
 i(160705),	-- Major's Frothy Coffee
 i(160706),	-- Enriched Coal
@@ -28896,7 +28825,6 @@ i(160711),	-- Aromatic Fish Oil
 i(160712),	-- Powdered Sugar
 i(160730),	-- Bubbling Totem
 i(160735),	-- Ashvane Garb
-i(160736),	-- Valentine's Key
 i(160738),	-- Bundle of Dynamite
 i(160739),	-- Goblin Rocket Launcher
 i(160752),	-- Voodoo'ed Aggression Formula
@@ -28989,9 +28917,6 @@ i(160845),	-- Exiled Veteran's Pauldrons
 i(160870),	-- Torch
 i(160895),	-- Irontide Key
 i(160897),	-- Grizz's Lunchbox
-i(160901),	-- Val'kyr Horn \\ Symbol of Fear
-i(160923),	-- Torch
-i(160939),	-- Valentine's Log
 i(160942),	-- Abandoned Brew
 i(160981),	-- 8.0 PH Weapon - 1H Warglaive Agi
 i(160986),	-- [NOT USED] Wolf's Den Report \\ Wolf's Den Report
@@ -29022,14 +28947,11 @@ i(161210),	-- Homemade Child's Doll
 i(161211),	-- Ship-in-a-Bottle
 i(161212),	-- Wavespeaker's Star Chart
 i(161213),	-- Sagehold Hymnal
-i(161240),	-- Zandalari Water Jug
-i(161241),	-- Zandalari Dunemelon
 i(161306),	-- Ashvane Captain's Longsword \\ Ashvane-Captain's Longsword
 i(161307),	-- Ashvane Captain's Scimitar \\ Ashvane-Captain's Scimitar
 i(161314),	-- Tweets' Flavorful Flan
 i(161321),	-- Dark Smores
 i(161324),	-- Zeth'jir Tidespear
-i(161333),	-- Ultra-Safe Electrified Alpaca Lasso
 8.0.1.26522
 i(155593),	-- Keeled Breastbone
 i(158736),	-- Trophy Antlers
@@ -29048,10 +28970,8 @@ i(161385),	-- Stonefist Watch
 i(161410),	-- Spaulders of the Devouring Wastes \\ 8.0 Raid - World - Boss 3 - Plate SHOULDER 2 - Horde
 i(161426),	-- Sulphur Speckled Turtle Skin
 i(161433),	-- Thick Webbing
-i(161434),	-- Unbroken Makrura Carapace
 i(161436),	-- Elemental Pitch
 i(161449),	-- Swiftwind Post \\ Fairwind Post
-i(161452),	-- The Glaive of Vol'jin
 i(161475),	-- Secret Fish Lure \\ Grappling Hook
 i(161482),	-- Mudfisher Cove
 i(161483),	-- Mission Report
@@ -29270,7 +29190,6 @@ i(162102),	-- Dread Gladiator's Leather Shoulderpads \\ PH Gladiator's Leather S
 i(162103),	-- Dread Gladiator's Shoulderplates \\ PH Gladiator's Shoulderplates
 i(162104),	-- Dread Gladiator's Silk Shoulderguards \\ PH Gladiator's Silk Shoulderguards
 i(162105),	-- Dread Gladiator's Chain Epaulets \\ PH Gladiator's Chain Epaulets
-i(162106),	-- Tome of Tidesage Research
 i(162113),	-- Potion of Herb Tracking
 i(162115),	-- Magnetic Mining Pick
 i(162116),	-- Tempest Hide Pouch
@@ -29338,7 +29257,6 @@ i(162576),	-- Mugamba Overlook
 i(162582),	-- Jungle Heat P'terrorwings
 i(162583),	-- Swamp Spice P'terrorwings
 i(162588),	-- Weathered Scrollcase
-i(162599),	-- Treated Shipwood
 i(162600),	-- Matching Tusk Rings
 i(162601),	-- Timeworn Pressed Flower
 i(162602),	-- Everburning Torch
@@ -29354,8 +29272,6 @@ i(162634),	-- Ancient Nazmani Coins
 i(162644),	-- Winter Veil Gift
 i(162645),	-- Mistvine Ledge
 i(162648),	-- Pristine Kodiak Pelt
-i(162649),	-- Tideblood
-i(162650),	-- Tidal Kris
 i(162651),	-- Rusted Chains
 i(162654),	-- REUSE ME (DNT)
 i(162659),	-- Worn Mace
@@ -29397,7 +29313,6 @@ i(163028),	-- Masterwork Statue of the First Trolls
 i(163029),	-- Misplaced Funereal Offering
 i(163030),	-- Rusted Mining Pick
 i(163031),	-- Crate of Unstable Dynamite
-i(163033),	-- Surging Mote
 i(163035),	-- Orders From Sylvanas
 i(163038),	-- Vulture's Nest
 i(163040),	-- Storm Glider
@@ -29461,7 +29376,6 @@ i(163115),	-- Curried Axebeak Skewer
 i(163116),	-- Riversprout Samosa
 i(163117),	-- Zandalari Kingsteak
 i(163118),	-- Brutosaur Tikka
-i(163120),	-- Welding Torch
 i(163132),	-- Bijou on the Beach
 i(163133),	-- Jungle Sunfruit
 i(163134),	-- No Morel Truffle
@@ -29485,7 +29399,6 @@ i(163157),	-- Musket Muddler
 i(163158),	-- White Tortollan
 i(163159),	-- Golden Sunrise
 i(163160),	-- The Tempest
-i(163161),	-- Tol Dagor Master Key
 i(163165),	-- Tiki Tumbler
 i(163171),	-- De Gral Kantik
 i(163172),	-- Green Glowing Puffer
@@ -29692,14 +29605,11 @@ i(155015),	-- REUSE ME (DNT)
 i(155016),	-- REUSE ME (DNT)
 i(155017),	-- REUSE ME (DNT)
 i(155018),	-- REUSE ME (DNT)
-i(155590),	-- Shard of Golden Beryl
 i(155668),	-- The Missing Chapter
 i(155669),	-- Transcribed Final Chapter
 i(155676),	-- Ancient Journal
-i(155824),	-- Flask of Enraging Vapors
 i(155838),	-- Briarback Quills
-i(156516),	-- Sedative Quill
-i(156549),	-- Writ of Sacrifice
+
 i(156686),	-- Elric's Shears
 i(156800),	-- Rough Map
 i(156832),	-- Immaculate Quilboar Quill
@@ -30642,7 +30552,6 @@ i(174266),	-- Trinket - PH \\ Trinket
 i(174267),	-- Trinket - PH \\ Trinket
 8.3.0.32151
 i(107799),	-- Racing Regs
-i(174325),	-- Fire Bomb
 i(174347),	-- Deteriorating Umbral Wing
 i(174353),	-- Questionable Meat
 i(174358),	-- Unopened Blackrock Supply Crate

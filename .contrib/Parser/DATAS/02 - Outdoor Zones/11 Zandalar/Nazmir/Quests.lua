@@ -60,6 +60,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 133338 },	-- Rokhan
 				["coord"] = { 48.3, 53.4, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(156931),	-- Wand of Embers (QI!)
+				},
 			}),
 			q(54964, {	-- A One-Way Ticket to the Heart
 				["sourceQuests"] = { 54940 },	-- Necessity is the MOTHER
@@ -218,6 +221,10 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 132988 },	-- Patch
 				["coord"] = { 44.9, 68.3, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(156847),	-- Seaforium Smoke Grenade (QI!)
+					i(159827),	-- Bomb-samdi Mojo Bombs
+				},
 			}),
 			q(48468, {	-- Bwonsamdi's Deliverance
 				["provider"] = { "n", 130481 },	-- Shinga Deathwalker
@@ -311,6 +318,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126713 },	-- Sur'jan
 				["coord"] = { 38.8, 77.7, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(152596),	-- Sur'jan's Ritual Dagger (QI!)
+				},
 			}),
 			q(49132, {	-- Crushing the Skullcrushers
 				["sourceQuests"] = { 49126 },	-- Forcing Fate's Hand
@@ -355,6 +365,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127960 },	-- Lashk
 				["coord"] = { 56.5, 26.7, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(153024),	-- Scroll of Combustion (QI!)
+				},
 			}),
 			q(49378, {	-- Earn Their Trust
 				["sourceQuests"] = { 49370 },	-- Rescue the Chronicler
@@ -669,6 +682,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 33.3, 45.8, NAZMIR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(153672),	-- Vashera's Talisman (QI!)
+					i(153671),	-- Yialu's Talisman (QI!)
+					i(153674),	-- Zu'Anji's Talisman (QI!)
 					i(159075),	-- Bloodhex Talisman
 					i(158970),	-- Death-Pledged Vambraces
 					i(158968),	-- Loa Speaker's Wraps
@@ -685,6 +701,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126713 },
 				["coord"] = { 34.0, 78.6, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(156621),	-- Sur'jan's Helm (QI!)
+					i(156620),	-- Sur'jan's Left Shoulderpad (QI!)
+					i(156619),	-- Sur'jan's Right Shoulderpad (QI!)
+				},
 			}),
 			q(54940, {	-- Necessity is the MOTHER
 				["sourceQuests"] = { 54939 },	-- Stubborn as a Bronzebeard
@@ -718,12 +739,18 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126377 },	-- Ingrid Bellix
 				["coord"] = { 26.6, 37.9, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(154892),	-- Skycaller Gem (QI!)
+				},
 			}),
 			q(49776, {	-- No Problem Tar Can't Solve
 				["sourceQuests"] = { 50933 },	-- An Unfortunate Event
 				["provider"] = { "n", 131231 },	-- Jin'Tiki
 				["coord"] = { 24.1, 53.1, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(155913),	-- Sticky Tar (QI!)
+				},
 			}),
 			q(49955, {	-- Not Fit for This Plane
 				["sourceQuests"] = {
@@ -824,6 +851,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(47924, {	-- Profanity Filter
 				["provider"] = { "n", 124666 },	-- Kajosh
 				["coord"] = { 55.1, 36.7, NAZMIR },
+				["g"] = {
+					i(151849),	-- Scroll of Inferno (QI!)
+				},
 			}),
 			q(49957, {	-- Protocol Recovery
 				["sourceQuests"] = {
@@ -873,6 +903,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131253 },	-- Titan Keeper Hezrel
 				["coord"] = { 66.9, 38.8, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(156524),	-- Titan Plating (QI!)
+				},
 			}),
 			q(47491, {	-- Remnants of the Damned
 				["sourceQuests"] = { 47880 },	-- A Tribute for Death
@@ -904,6 +937,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126346 },	-- Chadwick Paxton
 				["coord"] = { 25.9, 36.1, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(153519),	-- Skycaller Gem (QI!)
+				},
 			}),
 			q(49985, {	-- Return to Gloom Hollow
 				["sourceQuests"] = { 49980 },	-- Containment Procedure
@@ -933,6 +969,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 74.7, 39.0, NAZMIR },
 				["races"] = HORDE_ONLY,
 				["g"] = {
+					i(151363),	-- Ticker's Rocket Launcher (QI!)
 					i(159002),	-- Death-Pledged Girdle
 					i(159001),	-- Loa Speaker's Cinch
 					i(159000),	-- Nazmani Warplate Waistguard
@@ -948,6 +985,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 126713 },	-- Sur'jan
 				["coord"] = { 34.0, 78.7, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(152610),	-- Sur'jan's Grappling Hook (QI!)
+				},
 			}),
 			q(49131, {	-- Sanctifying Ground
 				["sourceQuests"] = { 49126 },	-- Forcing Fate's Hand
@@ -1200,6 +1240,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 120551 },	-- Krag'wa the Huge
 				["coord"] = { 75.3, 56.3, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(157805),	-- Scepter of Rebirth (QI!)
+				},
 			}),
 			q(47868, {	-- The Necropolis
 				["sourceQuests"] = { 49278 },	-- Spiritual Restoration
@@ -1262,6 +1305,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 122706 },	-- Theurgist Salazae
 				["coord"] = { 36.7, 27.4, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(150754),	-- Valjabu's Tusk Ring (QI!)
+				},
 			}),
 			q(49902, {	-- To Gloom Hollow
 				["sourceQuests"] = { 49160 },	-- Torga's Eternal Return
@@ -1311,6 +1357,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 127960 },	-- Lashk
 				["coord"] = { 56.5, 26.7, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(153131),	-- Scroll of Eternal Return (QI!)
+				},
 			}),
 			q(47540, {	-- Totemic Restoration
 				["sourceQuests"] = {
@@ -1412,6 +1461,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131231 },	-- Jin'Tiki
 				["coord"] = { 24.1, 53.1, NAZMIR },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(155912),	-- Sweetleaf (QI!)
+				},
 			}),
 			q(53781, {	-- Eyir
 				["provider"] = { "n", 122688 },	-- Bwonsamdi

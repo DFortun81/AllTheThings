@@ -19,7 +19,10 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 			n(WORLD_QUESTS, {
 				q(51287, {	-- Tol Dagor: Sealed Supplies
 					["isWorldQuest"] = true,
-					["lvl"] = 120,
+					["lvl"] = 50,
+					["g"] = {
+						i(159831),	-- Sealed Kul Tiran Crate (QI!)
+					},
 				}),
 				q(51297, {	-- Tol Dagor: Shorefront Property
 					["isWorldQuest"] = true,
@@ -27,7 +30,10 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				}),
 				q(51296, {	-- Tol Dagor: The Overseer's Pride
 					["isWorldQuest"] = true,
-					["lvl"] = 120,
+					["lvl"] = 50,
+					["g"] = {
+						i(159834),	-- The Pride of Kul Tiras (QI!)
+					},
 				}),
 			}),
 			d(DIFFICULTY.DUNGEON.NORMAL, {

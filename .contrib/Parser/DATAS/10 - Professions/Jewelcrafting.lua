@@ -285,6 +285,9 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["modelScale"] = 2,
 				["races"] = ALLIANCE_ONLY,
 				["timeline"] = { ADDED_8_1_5 },
+				["g"] = {
+					i(155590),	-- Shard of Golden Beryl (QI!)
+				},
 			}),
 			q(49583, {	-- Out With the Old [H]
 				["sourceQuests"] = { 49589 },	-- The Shrine of the Dawning
@@ -428,6 +431,8 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					r(256703),	-- Jewelhammer's Focus
+					i(155668),	-- The Missing Chapter (QI!)
+					i(155669),	-- Transcribed Final Chapter (QI!)
 				},
 			})),
 			q(49599, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {	-- The Missing Chapter [H]
@@ -440,6 +445,8 @@ root(ROOTS.Professions, prof(JEWELCRAFTING, bubbleDownSelf({ ["requireSkill"] = 
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					r(256703),	-- Jewelhammer's Focus
+					i(155668),	-- The Missing Chapter (QI!)
+					i(155669),	-- Transcribed Final Chapter (QI!)
 				},
 			})),
 		}),

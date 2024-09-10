@@ -532,6 +532,9 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					["sourceQuests"] = { 51482 },	-- Seeking More Knowledge [H]
 					["provider"] = { "i", 160035 },	-- Enormous Anchor Pod
 					["races"] = HORDE_ONLY,
+					["g"] = {
+						i(160550),	-- Enormous Anchor Pod (QI!)
+					},
 				}),
 				q(51361, {	-- More Anchor Pods [A]
 					["description"] = "Requires 150 Kul Tiran Herbalism.",

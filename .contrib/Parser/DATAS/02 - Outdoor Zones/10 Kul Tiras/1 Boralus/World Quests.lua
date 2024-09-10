@@ -248,6 +248,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 120,
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
+				["g"] = {
+					i(158677),	-- Scrimshaw Ledger (QI!)
+				},
 			}),
 			q(51621, {	-- Tidal Teachings
 				["lvl"] = 120,
@@ -260,9 +263,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["isWorldQuest"] = true,
 			}),
 			q(51758, {	-- Weapons Shipment
-				["lvl"] = 120,
+				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
+				["g"] = {
+					i(160667),	-- Unstable Azerite Bomb (QI!)
+				},
 			}),
 			q(50992, {	-- Work Order: Calcified Bone
 				["provider"] = { "n", 135808 },	-- Provisioner Fray

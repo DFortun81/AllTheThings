@@ -239,6 +239,9 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 					["qg"] = 134573,	-- Lorash
 					["races"] = HORDE_ONLY,
 					["sourceQuest"] = 50646,	-- A Quick Diversion
+					["g"] = {
+						i(158190),	-- Target Marker (QI!)
+					},
 				}),
 				q(53608, {	-- Fueling the Horde War Machine
 					["qg"] = 144346,	-- Jux Burstkix

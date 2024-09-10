@@ -3413,10 +3413,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(48237, {
 				["description"] = "Type: |cFFf09f26Account|r",
 			}),
-			q(48515, {
+			q(48515, {	-- Silver Blades
 				["description"] = "Area: |cFFf09f26Drustvar|r",
 				["lvl"] = 20,
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(155906),	-- Tarnished Silver Blade (QI!)
+				},
 			}),
 			q(48604, {	-- Home Again, Home Again
 				["description"] = "Area: |cFFf09f26Drustvar|r",
@@ -3455,14 +3458,20 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["description"] = "Category: |cFFf09f26Herbalism|r",
 				["lvl"] = 10,
 			}),
-			q(48808, {
+			q(48808, {	-- Thesis Statement
 				["description"] = "Area: |cFFf09f26Drustvar|r",
 				["lvl"] = 20,
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(152705),	-- Thesis Paper Page (QI!)
+				},
 			}),
-			q(48905, {
+			q(48905, {	-- Unappreciated Scrolls
 				["description"] = "Area: |cFFf09f26Nazmir|r",
 				["lvl"] = 20,
+				["g"] = {
+					i(152864),	-- Tortollan Scroll (QI!)
+				},
 			}),
 			q(48913, {
 				["description"] = "Category: |cFFf09f26Mining|r",
@@ -3524,30 +3533,39 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["description"] = "Category: |cFFf09f26Mining|r",
 				["lvl"] = 10,
 			}),
-			q(48949, {
+			q(48949, {	-- Weeds of the Mire
 				["description"] = "Area: |cFFf09f26Nazmir|r",
 				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(152895),	-- Sprig of Graveweed (QI!)
+				},
 			}),
 			q(48950, {
 				["description"] = "Area: |cFFf09f26Nazmir|r",
 				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
 			}),
-			q(49073, {
+			q(49073, {	-- Ritualistic Denial
 				["description"] = "Area: |cFFf09f26Nazmir|r",
 				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(153025),	-- Scroll of Purging (QI!)
+				},
 			}),
 			q(49123, {
 				["description"] = "Area: |cFFf09f26Nazmir|r",
 				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
 			}),
-			q(49124, {
+			q(49124, {	-- Tortollan Rescue
 				["description"] = "Area: |cFFf09f26Nazmir|r",
 				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(153049),	-- Scroll of Purging (QI!)
+				},
 			}),
 			q(49375, {
 				["description"] = "Area: |cFFf09f26Nazmir|r",
@@ -3603,10 +3621,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["description"] = "Category: |cFFf09f26Herbalism|r",
 				["lvl"] = 10,
 			}),
-			q(49464, {
+			q(49464, {	-- Saurolisk Tails
 				["description"] = "Area: |cFFf09f26Tiragarde Sound|r",
 				["lvl"] = 10,
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(155663),	-- Saurolisk Tail (QI!)
+				},
 			}),
 			q(49578, {
 				["description"] = "Category: |cFFf09f26Jewelcrafting|r",
@@ -3719,9 +3740,12 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 				["lvl"] = 20,
 				["races"] = HORDE_ONLY,
 			}),
-			q(50273, {
+			q(50273, {	-- Atal'Dazar: Locking Horns
 				["description"] = "Type: |cFFf09f26Dungeon|r\nCategory: |cFFf09f26Blacksmithing|r",
 				["lvl"] = 10,
+				["g"] = {
+					i(156920),	-- The Golden Horn of Rezan (QI!)
+				},
 			}),
 			q(50321, {
 				["description"] = "Area: |cFFf09f26Nazmir|r",
@@ -3853,10 +3877,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 					}),
 				},
 			}),
-			q(51070, {
+			q(51070, {	-- Raiding the Boulderfist
 				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
 				["lvl"] = 50,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(159721),	-- Unprocessed Iron Ore (QI!)
+				},
 			}),
 			q(51086, {	-- Break's Over (QI!)
 				["description"] = "Category: |cFFf09f26Warfronts|r",
@@ -3877,10 +3904,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 					}),
 				},
 			}),
-			q(51344, {
+			q(51344, {	-- To Matters at Hand
 				["description"] = "Area: |cFFf09f26Hall of Communion|r",
 				["lvl"] = 10,
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(159671),	-- Silithus Portal Stone (QI!)
+				},
 			}),
 			q(51370, {
 				["lvl"] = 50,
@@ -3984,10 +4014,13 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 					}),
 				},
 			}),
-			q(52497, {
+			q(52497, {	-- Raiding the Boulderfist
 				["description"] = "Type: |cFFf09f26Group|r\nCategory: |cFFf09f26Warfronts|r",
 				["lvl"] = 50,
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(159721),	-- Unprocessed Iron Ore (QI!)
+				},
 			}),
 			q(52991, {	-- [REMOVED]
 				["description"] = "Category: |cFFf09f26Hallow's End|r",

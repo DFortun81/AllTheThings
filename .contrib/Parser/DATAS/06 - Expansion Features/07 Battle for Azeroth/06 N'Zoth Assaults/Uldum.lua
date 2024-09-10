@@ -778,6 +778,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							["coord"] = { 24.5, 55.2, NZOTH_ASSAULT_ULDUM },
 							["provider"] = { "n", 159682 },	-- Tracker Samara
 							["sourceQuest"] = 57955,	-- To Ankhaten Harbor
+							["g"] = {
+								i(174325),	-- Fire Bomb (QI!)
+							},
 						}),
 						q(57971, {	-- Ruins of Ammon
 							["coord"] = { 24.4, 55.2, NZOTH_ASSAULT_ULDUM },

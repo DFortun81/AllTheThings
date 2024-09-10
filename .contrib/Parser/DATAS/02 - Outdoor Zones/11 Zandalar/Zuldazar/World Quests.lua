@@ -274,9 +274,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50581, {	-- Scrolls and Scales
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(158068),	-- Scroll of Gral (QI!)
+				},
 			}),
 			q(51822, {	-- Scrolls and Scales
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(158068),	-- Scroll of Gral (QI!)
+				},
 			}),
 			q(51630),	-- Shell Game
 			q(53883, {	-- Shores of Zuldazar (Faction Assault WQ)

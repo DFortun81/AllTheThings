@@ -32,6 +32,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52940, {	-- Arms Deal
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(162629),	-- Stormfused Weapon (QI!)
+				},
 			}),
 			q(52140, {	-- A Thorny Problem
 				["races"] = ALLIANCE_ONLY,
@@ -48,6 +52,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["filterID"] = BATTLE_PETS,
 			})),
 			q(52986, {	-- A Wicked Vessel
+				["g"] = {
+					i(162650),	-- Tidal Kris (QI!)
+				},
 			}),
 			q(52871, {	-- Azerite Empowerment
 			}),
@@ -94,8 +101,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52071, {	-- Briarback Mountain
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(161123),	-- Stormsong Supplies (QI!)
+				},
 			}),
 			q(52117, {	-- Briarback Mountain
+				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(161123),	-- Stormsong Supplies (QI!)
+				},
 			}),
 			q(51828, {	-- Burning the Legion
 				["races"] = HORDE_ONLY,
@@ -237,6 +251,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52987, {	-- Let's Burn!
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(163120),	-- Welding Torch (QI!)
+				},
 			}),
 			q(52941, {	-- Light in the Darkness (A)
 				["races"] = ALLIANCE_ONLY,
@@ -245,6 +262,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(52968, {	-- Light in the Darkness
+				["g"] = {
+					i(162649),	-- Tideblood (QI!)
+				},
 			}),
 			q(52794, {	-- Lizards and Ledgers
 				["races"] = ALLIANCE_ONLY,
@@ -306,6 +326,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(52939, {	-- Ordnance Orders
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(162629),	-- Stormfused Weapon (QI!)
+				},
 			}),
 			q(52464, {	-- Osca the Bloodied
 			}),
@@ -350,6 +373,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(52979, {	-- Ritual Cleansing
 				["races"] = ALLIANCE_ONLY,
 				["coord"] = { 53.2, 33.4, STORMSONG_VALLEY },
+				["g"] = {
+					i(162650),	-- Tidal Kris (QI!)
+				},
 			}),
 			q(53012, {	-- Put Away Your Toys
 				["races"] = ALLIANCE_ONLY,
@@ -435,15 +461,24 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53040, {	-- Squall Squelching
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(163033),	-- Surging Mote (QI!)
+				},
 			}),
 			q(52507, {	-- Sticky Mess
 				["races"] = ALLIANCE_ONLY,
 			}),
 			q(52879, {	-- Stiff Policy
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(162599),	-- Treated Shipwood (QI!)
+				},
 			}),
 			q(53042, {	-- Stormcaller
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(163033),	-- Surging Mote (QI!)
+				},
 			}),
 			q(51982, {	-- Storm's Rage (Faction Assault WQ)
 				["provider"] = { "n", 135800 },	-- Sister Lilyana <Storm's Wake Emissary>

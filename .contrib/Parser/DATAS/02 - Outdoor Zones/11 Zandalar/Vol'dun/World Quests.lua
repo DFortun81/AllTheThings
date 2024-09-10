@@ -115,9 +115,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51098),	-- Commodore Calhoun
 			q(51562, {	-- Damaged Goods
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(160923),	-- Torch (QI!)
+				},
 			}),
 			q(51559, {	-- Damaged Goods
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(160923),	-- Torch (QI!)
+				},
 			}),
 			q(54189, {	-- Desert Crawl (Faction Assault WQ)
 				["races"] = HORDE_ONLY,
@@ -285,6 +291,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51173, {	-- Sandfishing
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(159767),	-- Sandworm Fang (QI!)
+				},
 			}),
 			q(51107),	-- Scaleclaw Broodmother
 			q(51122),	-- Scorpox
@@ -303,6 +312,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			q(51116),	-- Skycarver Krakit
 			q(53326, {	-- Smooth Platinum
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163627),	-- Smooth Platinum (QI!)
+				},
 			}),
 			petbattle(q(52856, {	-- Snakes on a Terrace
 				["provider"] = { "n", 141945 },	-- Sizzik
@@ -315,9 +327,15 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(51558, {	-- Spider Scorching
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(160870),	-- Torch (QI!)
+				},
 			}),
 			q(51561, {	-- Spider Scorching
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(160870),	-- Torch (QI!)
+				},
 			}),
 			q(51120),	-- Stef "Marrow" Quin
 			q(54786, {	-- Stop the Shipments (Faction Assault WQ)
@@ -359,7 +377,11 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				},
 			}),
 			q(51316),	-- Walking in a Spiderweb
-			q(51223),	-- Walking on Broken Glass
+			q(51223, {	-- Walking on Broken Glass
+				["g"] = {
+					i(159790),	-- Sea Glass (QI!)
+				},
+			}),
 			q(51112),	-- Warbringer Hozzik
 			q(51113),	-- Warlord Zothix
 			q(51114),	-- Warmother Captive

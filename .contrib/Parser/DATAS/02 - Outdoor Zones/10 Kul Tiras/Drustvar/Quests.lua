@@ -75,6 +75,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 136234 },	-- Cesi Loosecannon
 				["coord"] = { 22.8, 46.2, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(159143),	-- Tranquil Charm (QI!)
+				},
 				-- Not required for "Drust Do It."
 			}),
 			q(50175, {	-- An Eight-Legged Curse
@@ -344,6 +347,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 48519 },	-- Hope They Can't Swim
 				["provider"] = {"o",273814},	-- Bladed Charm
+				["g"] = {
+					i(152590),	-- Wicker Charm (QI!)
+				},
 			}),
 			q(49295, {	-- Clear-Cutting
 				["provider"] = { "n", 126310 },	-- Evelyn Pare
@@ -557,7 +563,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				-- May be available earlier; needs confirmation.
 				-- Not required for "Drust Do It."
 				["g"] = {
-					i(157845),	-- Falconer's Whistle
+					i(157845),	-- Falconer's Whistle (QI!)
 				},
 			}),
 			q(49806, {	-- Hidden Dealings
@@ -740,6 +746,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 24.5, 56.6, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50370 },	-- Deeper Into the Woods
+				["g"] = {
+					i(158175),	-- Weakening Potion (QI!)
+				},
 			}),
 			q(48880, {	-- Mean Gulls
 				["provider"] = { "n", 127558 },	-- Art Hughie
@@ -802,6 +811,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135200 },	-- Alexander Treadward
 				["coord"] = { 23.3, 17.4, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(158654),	-- Treadward's Ring (QI!)
+				},
 				-- Not required for "Drust Do It."
 			}),
 			q(50911, {	-- One Man Against the Horde
@@ -838,6 +850,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 23.2, 17.4, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50754 },	-- To Have Loved and Lost
+				["g"] = {
+					i(158654),	-- Treadward's Ring (QI!)
+				},
 				-- Not required for "Drust Do It."
 			}),
 			q(48184, {	-- Pieces of History
@@ -890,11 +905,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 31.4, 30.2, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 50149 },	-- A Weather Eye
+				["g"] = {
+					i(156722),	-- Silver Nugget (QI!)
+				},
 			}),
 			q(53461, {	-- Precious Metals
 				["coord"] = { 36.4, 25.8, DRUSTVAR },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 143878 },	-- Reez Grimelock
+				["g"] = {
+					i(156722),	-- Silver Nugget (QI!)
+				},
 			}),
 			q(48678, {	-- Questionable Offerings
 				["provider"] = { "n", 127080 },	-- Lord Autumnvale
@@ -1148,11 +1169,17 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 286016 },	-- Ship's Log
 				["coord"] = { 27.4, 11.6, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
-				["lvl"] = 110,
+				["lvl"] = 20,
+				["g"] = {
+					i(159156),	-- Sweete's Orders (QI!)
+				},
 			}),
 			q(48904, {	-- Take the Bait
 				["provider"] = { "n", 127558 },	-- Art Hughie
 				["coord"] = { 71.7, 50.4, DRUSTVAR },
+				["g"] = {
+					i(152865),	-- Snapclaw Meat (QI!)
+				},
 			}),
 			q(48986, {	-- Take the High Road
 				["provider"] = { "n", 127715 },	-- Lucille Waycrest
@@ -1334,6 +1361,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 42.5, 25.2, DRUSTVAR },
 				["races"] = ALLIANCE_ONLY,
 				["sourceQuests"] = { 48945 },	-- The Ruins of Gol Var
+				["g"] = {
+					i(153053),	-- Tome of Silver and Ash (QI!)
+				},
 				-- Awarder "The Order of Embers" criteria.
 			}),
 			q(48881, {	-- The Reel Deal
@@ -1508,6 +1538,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sourceQuests"] = { 50253 },	-- An Improvised Arsenal
 				["provider"] = {"o",288622},	-- Wanted Poster
 				-- Not required for "Drust Do It."
+				["g"] = {
+					i(160026),	-- Sister Lilias' Head (QI!)
+				},
 			}),
 			q(51390, {	-- WANTED: The Crimson Cutthroats
 				["coord"] = { 26.4, 72.2, DRUSTVAR },
@@ -1528,7 +1561,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 19.57, 43.65, DRUSTVAR },
 			}),
 			q(53459, {	-- WANTED: Sister Lilias
+				["races"] = HORDE_ONLY,
+				["lvl"] = 20,
 				["coord"] = { 37.51, 25.8, DRUSTVAR },
+				["g"] = {
+					i(160026),	-- Sister Lilias' Head (QI!)
+				},
 			}),
 			q(53455, {	-- WANTED: The Crimson Cutthroats
 				["coord"] = { 19.57, 43.65, DRUSTVAR },

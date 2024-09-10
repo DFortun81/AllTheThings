@@ -231,6 +231,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(50299, {	-- Gryphon Wranglin'
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(156928),	-- Tether Shot (QI!)
+				},
 			}),
 			q(51844),	-- Gulliver
 			q(52167, {	-- Hardcore Raiders
@@ -351,6 +354,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			}),
 			q(53315, {	-- Smooth Platinum
 				["requireSkill"] = MINING,
+				["g"] = {
+					i(163627),	-- Smooth Platinum (QI!)
+				},
 			}),
 			q(50977, {	-- Smuggler Shakedown
 				["races"] = ALLIANCE_ONLY,

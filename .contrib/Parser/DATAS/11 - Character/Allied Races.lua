@@ -72,6 +72,9 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				["coord"] = { 57.0, 30.6, 1159 },	-- Blackrock Depths: Dark Iron Dwarf Scenario
 				["maps"] = { 1160 },	-- Blackrock Depths: Dark Iron Dwarf Scenario
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(163708),	-- Ironfoe (QI!)
+				},
 			}),
 			q(53342, {	-- Molten Core
 				["sourceQuests"] = { 53351 },	-- The MOTHERLODE!!: Ironfoe

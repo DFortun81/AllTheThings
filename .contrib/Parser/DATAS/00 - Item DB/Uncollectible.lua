@@ -112,7 +112,6 @@ i(128851);	-- Roasted juicycrunch carrots
 i(141593);	-- Dro's Key
 -- Quest Items
 i(164778);	-- Abyssal Scepter
-i(162579);	-- Abyssal Scepter
 i(146692);	-- Ancient Dreadleather Armor
 i(146700);	-- Ancient Gravenscale Armor
 i(169251);	-- Ancient Insect

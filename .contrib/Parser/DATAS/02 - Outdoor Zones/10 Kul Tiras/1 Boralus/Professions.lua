@@ -176,6 +176,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1_LAUNCH 
 					["requireSkill"] = SKINNING,
 					["g"] = {
 						recipe(257151),	-- Skinning Technique: Scale Gathering (Rank 3)
+						i(161426),	-- Sulphur Speckled Turtle Skin (QI)
 					},
 				}),
 			}),

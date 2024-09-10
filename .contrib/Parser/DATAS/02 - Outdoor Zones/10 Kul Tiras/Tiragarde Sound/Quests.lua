@@ -59,6 +59,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 75.8, 65.7, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 127646 },	-- Lord Kennings
+				["g"] = {
+					i(152800),	-- Simple Skinning Knife (QI!)
+				},
 			}),
 			q(48879, {	-- A Hunt for Hawk Eggs
 				["sourceQuests"] = { 50544 },	-- The Hunters of Kennings Lodge
@@ -83,6 +86,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 65.8, 50.1, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129956 },	-- Dockmaster Tyndall
+				["g"] = {
+					i(160574),	-- Sealed Letter (QI!)
+				},
 			}),
 			q(49234, {	-- A Marine Out of Water
 				["sourceQuests"] = { 50700 },	-- Drust in Time
@@ -194,6 +200,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 42.4, 22.6, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129170 },	-- Rulf
+				["g"] = {
+					i(155828),	-- Spotted Gryphon Egg (QI!)
+				},
 			}),
 			q(50349, {	-- An Overrun Mine
 				["isBreadcrumb"] = true,
@@ -329,6 +338,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["sym"] = {{"select","itemID",
 					163036,	-- Polished Pet Charm
 				}},
+				["g"] = {
+					i(155858),	-- Scratchy (QI!)
+				},
 			}),
 			q(49740, {	-- Cease Fire!
 				["sourceQuests"] = { 49738 },	-- Hands Off My Booty!
@@ -783,6 +795,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 68.9, 20.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129613 },	-- Maynard Algerson
+				["g"] = {
+					i(154993),	-- Wood-Adorned Skull (QI!)
+				},
 			}),
 			q(50573, {	-- Message from the Management
 				["provider"] = { "o", 281647 },	-- Posted Notice
@@ -844,12 +859,22 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 85.4, 80.8, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 128229 },	-- Stabby Jane
+				["g"] = {
+					i(153186),	-- Silver Compass (QI!)
+					i(153185),	-- Steel Lunchbox (QI!)
+					i(153187),	-- Tin Robot (QI!)
+				},
 			}),
 			q(53443, {	-- My Favorite Things (H)
 				["sourceQuests"] = { 53442 },	-- The Castaways
 				["coord"] = { 85.4, 80.8, TIRAGARDE_SOUND },
 				["races"] = HORDE_ONLY,
 				["provider"] = { "n", 128229 },	-- Stabby Jane
+				["g"] = {
+					i(153186),	-- Silver Compass (QI!)
+					i(153185),	-- Steel Lunchbox (QI!)
+					i(153187),	-- Tin Robot (QI!)
+				},
 			}),
 			q(48909, {	-- Noble Responsibilities
 				["sourceQuests"] = { 49039 },	-- The Start of a Monster Hunt
@@ -1016,6 +1041,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 65.0, 60.6, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 137694 },	-- Parin Tinklocket
+				["g"] = {
+					i(160317),	-- V-300 Serial Plate (QI!)
+				},
 			}),
 			q(49741, {	-- Righteous Retribution
 				["sourceQuests"] = {
@@ -1069,6 +1097,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129578 },	-- Shawn McClinter
 				["g"] = {
+					i(153679),	-- Tether Shot (QI!)
 					i(158228),	-- Gryphon Rider's Ring
 					i(158239),	-- Navigator's Walkers
 					i(158241),	-- Freebooter Striders
@@ -1198,6 +1227,12 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 276837 },	-- Recipe Rock
 				["coord"] = { 56.1, 17.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(152675),	-- Saurolisk Scale (QI!)
+					i(152670),	-- Soup Stone (QI!)
+					i(152678),	-- Stirring Bone (QI!)
+					i(152671),	-- Unidentifiable Meat (QI!)
+				},
 			}),
 			q(47489, {	-- Stow and Go
 				["sourceQuests"] = { 53041 },	-- Sampling the Goods
@@ -1245,6 +1280,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 42.4, 22.2, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 129003 },	-- Tagart
+				["g"] = {
+					i(153595),	-- Sticky Bee Honey (QI!)
+				},
 			}),
 			q(48774, {	-- The Beatings Will Continue
 				["sourceQuests"] = { 48539 },	-- Freehold
@@ -1417,6 +1455,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 125309 },	-- Abbey Watkins
 				["g"] = {
+					i(152642),	-- Soft Stoat Pelt (QI!)
 					i(158247),	-- Navigator's Pants
 					i(158249),	-- Freebooter Pants
 					i(158248),	-- Outrigger Links
@@ -1485,6 +1524,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 82.7, 72.8, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 126511 },	-- Skinner MacGuff
+				["g"] = {
+					i(152514),	-- Toxic Stinger (QI!)
+				},
 			}),
 			q(49407, {	-- Trixie Business
 				["sourceQuests"] = { 49290 },	-- Aged to Perfection
@@ -1572,6 +1614,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["provider"] = { "n", 130478 },	-- Griddon
 				["g"] = {
+					i(153697),	-- Steamy Essence (QI!)
 					i(158289),	-- Navigator's Cinch
 					i(158291),	-- Freebooter Waistwrap
 					i(158290),	-- Outrigger Cincture

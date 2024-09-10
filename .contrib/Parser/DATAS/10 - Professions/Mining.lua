@@ -720,6 +720,9 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 					["sourceQuests"] = { 52044 },	-- An Exceptional Platinum Shard [A]
 					["provider"] = { "i", 161085 },	-- Tattered Map
 					["races"] = ALLIANCE_ONLY,
+					["g"] = {
+						i(161085),	-- Tattered Map (QI!)
+					},
 				}),
 				q(52053, {	-- The Platinum Map
 					["description"] = "This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level.  You can only turn it in at Level 150 Zandalari Mining.",

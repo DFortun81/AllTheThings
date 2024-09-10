@@ -11,6 +11,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 30.2, 59.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
+					i(156472),	-- Songstone (QI!)
 					i(160345),	-- Zeth'jir Seacaller Signet
 					i(160371),	-- Tidespeaker Belt
 					i(160374),	-- Darkwater Waistcord
@@ -24,6 +25,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "i", 158195 },	-- Frothing Vial
 				["races"] = ALLIANCE_ONLY,
 				["crs"] = { 130094 },	-- Tidesage Seacaller
+				["g"] = {
+					i(158139),	-- Tideblood (QI!)
+				},
 			}),
 			q(50781, {	-- A Bridge Too Far
 				["sourceQuests"] = { 50784 },	-- Eye of the Storm
@@ -111,6 +115,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131003 },
 				["coord"] = { 34.5, 47.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(156482),	-- Zeth'jir Harpoon (QI!)
+				},
 			}),
 			q(50041, {	-- A Pocket Full of Shells
 				["sourceQuests"] = { 50157 },	-- There's Gold in Them There Fields
@@ -134,6 +141,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(156577),	-- Battered Toy Sword (QI!)
+					i(156578),	-- Tarnished Locket (QI!)
 				},
 			}),
 			q(49725, {	-- A Risky Ploy
@@ -161,6 +169,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131003 },
 				["coord"] = { 34.5, 47.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(158332),	-- Zeth'jir Channeling Rod (QI!)
+				},
 			}),
 			q(50797, {	-- A Turtle's Invitation
 				["sourceQuests"] = { 50753 },	-- Earl-E Bot Gets the Worm
@@ -200,6 +211,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 136574 },	-- Charles Davenport
 				["coord"] = { 29.8, 67.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(159839),	-- Spider Silk (QI!)
+				},
 			}),
 			q(51386, {	-- Battle Victorious
 				["sourceQuests"] = {
@@ -420,6 +434,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 133577 },	-- Master Gunner Line
 				["coord"] = { 25.9, 55.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(157783),	-- Slagshot Slammer (QI!)
+				},
 			}),
 			q(50376, {	-- Deadliest Cache: Reel Big Fish
 				["sourceQuests"] = { 53045 },	-- Surveying the Wharf
@@ -546,6 +563,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					o(286954, {	-- Bot Buster Bomb
 						i(160397),	-- Bot Buster Bomb (QI!)
 					}),
+					i(160556),	-- Bot Cluster Bomb (QI!)
 				},
 			}),
 			q(51712, {	-- Eye for an Eye
@@ -572,6 +590,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131248 },	-- Samuel Williams
 				["coord"] = { 66.4, 56.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(156607),	-- Warship Blueprint (QI!)
+				},
 			}),
 			q(50644, {	-- Facing the Invaders
 				["sourceQuests"] = { 50635 },	-- The Shifting Tides
@@ -612,6 +633,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131014 },	-- Rikal
 				["coord"] = { 34.9, 47.7, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(158183),	-- Tidal Beacon (QI!)
+				},
 			}),
 			q(51371, {	-- Flavorable Offering
 				["sourceQuests"] = { 51353 },	-- Cave of Ai'twen
@@ -646,6 +670,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 134639 },	-- Brother Pike
 				["coord"] = { 66.1, 47.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(158465),	-- Tidal Kris (QI!)
+				},
 			}),
 			q(49887, {	-- Forced Labor
 				["sourceQuests"] = {
@@ -899,9 +926,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					{ "n", 143565 },	-- Wayne the Ancestral (H)
 				},
 				["coord"] = { 78.5, 54.8, STORMSONG_VALLEY },
-				["lvl"] = 120,
+				["lvl"] = 50,
 				["g"] = {
-					i(157771),	-- Holy Water
+					i(157771),	-- Holy Water (QI!)
 				},
 			}),
 			q(50802, {	-- Iron Low Tide
@@ -924,6 +951,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 133953 },	-- Mayor Roz
 				["coord"] = { 44.7, 64.5, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(156516),	-- Sedative Quill (QI!)
+				},
 			}),
 			q(51278, {	-- Lost and Forgotten
 				["sourceQuests"] = { 50781 },	-- A Bridge Too Far
@@ -1079,6 +1109,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 34.5, 47.2, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
+					i(158200),	-- Zeth'jir Channeling Rod (QI!)
 					i(160885),	-- Fort Daelin Lantern
 					i(160360),	-- Tidespeaker Legwarmers
 					i(160363),	-- Darkwater Pants
@@ -1112,6 +1143,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 66.4, 56.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
+					i(156609),	-- Stormfused Weapon (QI!)
 					i(155204),	-- Brineworks Boot Knife
 					i(155214),	-- Brineworks Hullcracker
 					i(155199),	-- Great Sea Waraxe
@@ -1262,6 +1294,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135682 },	-- Patrick Eckhart
 				["coord"] = { 57.8, 55.3, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(159144),	-- Scent Vial (QI!)
+				},
 			}),
 			q(52796, {	-- Sometimes Less is More
 				["provider"] = { "n", 141769 },	-- Marilyn Hood
@@ -1276,6 +1311,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 282478 },	-- Empty Crate
 				["coord"] = { 46.3, 77.0, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(158735),	-- Stolen Crate (QI!)
+				},
 			}),
 			q(50162, {	-- Sticky Situation
 				["sourceQuests"] = { 50161 },	-- Recovering Raimond
@@ -1401,6 +1439,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 46.7, 73.8, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
+					i(155824),	-- Flask of Enraging Vapors (QI!)
 					i(155225),	-- Bramblehulk Greatsword
 					i(160522),	-- Brennadam Vinescythe
 					i(155205),	-- Briarback Thornshaper
@@ -1558,6 +1597,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 141223 },	-- Brother Pike
 				["coord"] = { 70.3, 36.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(162446),	-- Staff of Storms (QI!)
+				},
 			}),
 			q(50388, {	-- The Weight of My Ambition
 				["sourceQuests"] = { 50387 },	-- Trinkets and Baubles
@@ -1681,12 +1723,18 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "o", 287958 },	-- Bulletin Board
 				["coord"] = { 30.6, 68.1, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(158300),	-- Thundersnout's Snout (QI!)
+				},
 			}),
 			q(53348, {	-- WANTED: Thundersnout (H)
 			--	unknown if this has any SQs
 				["provider"] = { "o", 297492 },	-- Bulletin Board
 				["coord"] = { 51.0, 33.6, STORMSONG_VALLEY },
 				["races"] = HORDE_ONLY,
+				["g"] = {
+					i(158300),	-- Thundersnout's Snout (QI!)
+				},
 			}),
 			q(52876, {	-- WANTED: War Gore
 				["provider"] = { "o", 293985 },	-- WANTED: War Gore
@@ -1748,6 +1796,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 130694 },	-- Mayor Roz
 				["coord"] = { 57.6, 66.4, STORMSONG_VALLEY },
 				["races"] = ALLIANCE_ONLY,
+				["g"] = {
+					i(133510),	-- Warchief's Orders (QI!)
+				},
 			}),
 			q(50773, {	-- You're a Shark
 				["sourceQuests"] = {

@@ -351,6 +351,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["coord"] = { 50.3, 54.4, CHAMBER_OF_HEART },
 							["sourceQuest"] = 51211,	-- The Heart of Azeroth
 							["g"] = {
+								i(159671),	-- Silithus Portal Stone (QI!)
 								i(160909),	-- Crown of the Champion
 								i(160913),	-- Crown of the Champion
 								i(160917),	-- Mantle of the Champion
@@ -669,6 +670,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["coord"] = { 42.2, 44.2, SILITHUS },
 							["timeline"] = { ADDED_8_0_1 },
 							["groups"] = {
+								i(159671),	-- Silithus Portal Stone (QI!)
 								i(158075, {	-- Heart of Azeroth
 									["timeline"] = { ADDED_8_0_1 },
 								}),

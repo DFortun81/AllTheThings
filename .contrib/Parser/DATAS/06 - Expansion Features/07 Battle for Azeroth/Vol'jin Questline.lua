@@ -23,6 +23,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			["sourceQuest"] = 51513,	-- Zalazane Returns
 			["provider"] = { "n", 120173 },	-- Zen'tarba
 			["coord"] = { 59.2, 52.0, ECHO_ISLES },
+			["g"] = {
+				i(160323),	-- The Glaive of Vol'jin (QI!)
+			},
 		}),
 		q(51515, {	-- Vengeance for Vol'jin
 			["sourceQuests"] = {
@@ -31,6 +34,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			},
 			["provider"] = { "n", 137878 },	-- Master Gadrin
 			["coord"] = { 59.5, 51.5, ECHO_ISLES },
+			["g"] = {
+				i(160443),	-- The Glaive of Vol'jin (QI!)
+			},
 		}),
 		q(52114, {	-- Honoring a True Leader
 			["sourceQuest"] = 51515,	-- Vengeance for Vol'jin
@@ -46,6 +52,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 			["sourceQuest"] = 52113,	-- Vole'jin, Son of Sen'jin
 			["provider"] = { "n", 138138 },	-- Princess Telanji
 			["coord"] = { 43.7, 39.5, ZULDAZAR },
+			["g"] = {
+				i(160479),	-- Urn of Vol'jin (QI!)
+			},
 		}),
 		q(51517, {	-- You Owe Me a Spirit
 			["sourceQuest"] = 51516,	-- Atal'Dazar: Ashes of a Warchief
@@ -55,6 +64,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 				crit(40709, {	-- The Fallen Chieftain
 					["achievementID"] = 12719,	-- Spirits Be With You
 				}),
+				i(160479),	-- Urn of Vol'jin (QI!)
 			},
 		}),
 		q(51518, {	-- The Lost Spirit
@@ -76,6 +86,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"]
 				crit(40710, {	-- Justice for the Fallen
 					["achievementID"] = 12719,	-- Spirits Be With You
 				}),
+				i(162451),	-- The Bloodied Glaive of Vol'jin (QI!)
+				i(161452),	-- The Glaive of Vol'jin (QI!)
 			},
 		}),
 		q(51521, {	-- The True Leader of Zandalar
