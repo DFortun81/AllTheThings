@@ -543,9 +543,18 @@ root(ROOTS.Zones, {
 			}),
 		})),
 		ach(4958, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 }, }, {		-- The First Rule of Ring of Blood is You Don't Talk About Ring of Blood
-			crit(5798),		-- Ring of Blood in Nagrand
-			crit(5799),		-- Amphitheater of Anguish in Zul'Drak
-			crit(13918),	-- Crucible of Carnage in Twilight Highlands
+			["maps"] = { NAGRAND, ZULDRAK, TWILIGHT_HIGHLANDS },
+			["groups"] = {
+				crit(5798, {	-- Ring of Blood in Nagrand
+					["_quests"] = { 9977 },	-- The Ring of Blood: The Final Challenge
+				}),
+				crit(5799, {	-- Amphitheater of Anguish in Zul'Drak
+					["_quests"] = { 12948 },	-- The Champion of Anguish
+				}),
+				crit(13918, {	-- Crucible of Carnage in Twilight Highlands
+					["_quests"] = { 27868 },	-- The Crucible of Carnage: The Twilight Terror!
+				}),
+			},
 		})),
 		ach(5794, {	-- Time Flies When You're Having Fun
 			["timeline"] = { ADDED_4_2_0 },

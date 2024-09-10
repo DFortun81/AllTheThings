@@ -1183,10 +1183,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28244, {	-- Eye Spy (A)
+					["qg"] = 48010,	-- Low Shaman Blundy
 					["sourceQuest"] = 28243,	-- The Eyes Have It
 					["coord"] = { 49.7, 29.1, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 48175,	-- Low Shaman Blundy
 					["groups"] = {
 						i(63797),	-- Eye of Despair
 						i(63796),	-- Dark-Eye Ring
