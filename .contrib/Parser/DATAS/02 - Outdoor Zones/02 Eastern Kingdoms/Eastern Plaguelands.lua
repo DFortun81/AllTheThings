@@ -40,6 +40,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["icon"] = "Interface\\Icons\\Spell_Deathknight_ClassIcon",
 				["groups"] = {
 					n(QUESTS, {
+						-- #IF AFTER DF
+						["_drop"] = { "classes", "c" },
+						-- #ENDIF
 						["classes"] = { DEATHKNIGHT },
 						["groups"] = {
 							q(12738, {	-- A Cry For Vengeance!
