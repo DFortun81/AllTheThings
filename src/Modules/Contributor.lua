@@ -166,7 +166,7 @@ local ProviderTypeChecks = {
 		if not found then
 			AddReportData(objRef.__type,objID, {
 				questID = objID,
-				QuestGiver = "Missing Quest Giver: "..providerID.." ["..(app.NPCNameFromID[providerID] or UNKNOWN).."]",
+				QuestGiver = "Missing Quest Giver: "..providerID..", -- "..(app.NPCNameFromID[providerID] or UNKNOWN),
 			})
 		end
 	end,
@@ -174,7 +174,7 @@ local ProviderTypeChecks = {
 		if not providers then
 			AddReportData(objRef.__type,objID, {
 				questID = objID,
-				QuestGiver = "Missing Object Provider: "..providerID,
+				QuestGiver = "Missing Object Provider: "..providerID..", -- "..(app.ObjectNames[providerID] or UNKNOWN),
 			})
 			return
 		end
@@ -185,7 +185,7 @@ local ProviderTypeChecks = {
 		if not found then
 			AddReportData(objRef.__type,objID, {
 				questID = objID,
-				QuestGiver = "Missing Object Provider: "..providerID,
+				QuestGiver = "Missing Object Provider: "..providerID..", -- "..(app.ObjectNames[providerID] or UNKNOWN),
 			})
 		end
 	end,
