@@ -3101,7 +3101,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 
 					-- Available to Humans without faction requirements.
-					["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
+					["minReputation"] = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. HUMAN .. [[ then
 							t.minReputation = nil;
@@ -3318,7 +3318,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 84.0, 65.4, ELWYNN_FOREST },
 
 					-- Available to Humans without faction requirements.
-					["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
+					["minReputation"] = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. HUMAN .. [[ then
 							t.minReputation = nil;

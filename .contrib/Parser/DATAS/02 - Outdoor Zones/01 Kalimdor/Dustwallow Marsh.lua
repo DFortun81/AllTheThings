@@ -3736,7 +3736,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 65.2, 51.4, DUSTWALLOW_MARSH },
 
 					-- Available to Humans without faction requirements.
-					["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
+					["minReputation"] = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. HUMAN .. [[ then
 							t.minReputation = nil;

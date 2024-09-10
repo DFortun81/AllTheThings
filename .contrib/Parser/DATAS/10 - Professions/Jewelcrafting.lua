@@ -1379,7 +1379,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				{
 					["name"] = "Dazzling Deep Peridot",	-- NOTE: Actually removed from the game completely.
 					["timeline"] = { REMOVED_WITH_CATA },
-					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+					["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					["recipeID"] = 28924
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
@@ -1657,7 +1657,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				},
 				{
 					["name"] = "Purified Shadow Draenite [CATA+] / Royal Shadow Draenite [TBC]",
-					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					["recipeID"] = 28927
 				},
 				-- #endif
@@ -1690,7 +1690,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				},
 				{
 					["name"] = "Royal Shadow Draenite [TBC] / Purified Shadow Draenite [CATA+]",
-					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					["recipeID"] = 28927
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
@@ -1786,7 +1786,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				-- #if AFTER CATA
 				{
 					["name"] = "Brilliant Blood Garnet [CATA+] / Teardrop Blood Garnet [TBC]",
-					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+					["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					["recipeID"] = 28903
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
@@ -1840,7 +1840,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				-- #if BEFORE CATA
 				{
 					["name"] = "Runed Blood Garnet",	-- NOTE: Actually removed from the game completely.
-					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+					["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					["timeline"] = { REMOVED_WITH_CATA },
 					["recipeID"] = 28906
 				},
@@ -1914,7 +1914,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				},
 				{
 					["name"] = "Gleaming Golden Draenite [TBC] / Smooth Golden Draenite [CATA+]",
-					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					["recipeID"] = 28944
 				},
 				applyclassicphase(TBC_PHASE_THREE, {
@@ -1982,7 +1982,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				-- #if AFTER CATA
 				{
 					["name"] = "Smooth Golden Draenite [CATA+] / Gleaming Golden Draenite [TBC]",
-					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					["recipeID"] = 28944
 				},
 				-- #endif
@@ -2130,7 +2130,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				},
 				{
 					["name"] = "Pendant of Shadow's End",
-					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					["recipeID"] = 31065
 				},
 				applyclassicphase(TBC_PHASE_FIVE, {
@@ -2147,7 +2147,7 @@ applyclassicphase(TBC_PHASE_ONE, profession(JEWELCRAFTING, {
 				},
 				{
 					["name"] = "Pendant of Withering",
-					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+					["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					["recipeID"] = 31064
 				},
 				{

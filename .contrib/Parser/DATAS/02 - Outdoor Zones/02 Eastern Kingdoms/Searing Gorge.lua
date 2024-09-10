@@ -80,7 +80,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(84360, {	-- Firefighting
 						["qg"] = 14625,	-- Overseer Oilfist <The Thorium Brotherhood>
 						["coord"] = { 38.2, 27.0, SEARING_GORGE },
-						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 53,
 						["groups"] = {
@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(84350, {	-- Grinding Them Down
 						["qg"] = 14628,	-- Evonice Sootsmoker <The Thorium Brotherhood>
 						["coord"] = { 38.2, 27.8, SEARING_GORGE },
-						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 53,
 						["groups"] = {
@@ -107,7 +107,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(84372, {	-- Lava Diving
 						["qg"] = 14627,	-- Hansel Heavyhands <The Thorium Brotherhood>
 						["coord"] = { 38.6, 27.8, SEARING_GORGE },
-						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 53,
 						["groups"] = {
@@ -124,7 +124,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(84355, {	-- More Like Lame-bringers!
 						["qg"] = 14626,	-- Taskmaster Scrange <The Thorium Brotherhood>
 						["coord"] = { 38.8, 27.6, SEARING_GORGE },
-						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 53,
 						["groups"] = {
@@ -140,7 +140,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(84356, {	-- Oh, Shiny!
 						["qg"] = 14624,	-- Master Smith Burninate <The Thorium Brotherhood>
 						["coord"] = { 38.6, 28.6, SEARING_GORGE },
-						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 53,
 						["groups"] = {
@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(84349, {	-- Priority Target: Duke Searbrand
 						["qg"] = 14634,	-- Lookout Captain Lolo Longstriker <The Thorium Brotherhood>
 						["coord"] = { 37.6, 26.6, SEARING_GORGE },
-						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 53,
 						["groups"] = {
@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(84348, {	-- Priority Target: Duke Tectonis
 						["qg"] = 14627,	-- Hansel Heavyhands <The Thorium Brotherhood>
 						["coord"] = { 38.6, 27.8, SEARING_GORGE },
-						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 53,
 						["groups"] = {
@@ -186,7 +186,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(84359, {	-- Sleepless Nights
 						["qg"] = 14628,	-- Evonice Sootsmoker <The Thorium Brotherhood>
 						["coord"] = { 38.2, 27.8, SEARING_GORGE },
-						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 53,
 						["groups"] = {
@@ -202,7 +202,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(84351, {	-- Work Smarter, Not Harder
 						["qg"] = 14626,	-- Taskmaster Scrange <The Thorium Brotherhood>
 						["coord"] = { 38.8, 27.6, SEARING_GORGE },
-						["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 53,
 						["groups"] = {
@@ -618,11 +618,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 38.8, 28.5, SEARING_GORGE },
 					["timeline"] = { ADDED_3_3_0 },
 					-- #if AFTER CATA
-					["minReputation"] = { 59, REVERED },	-- Thorium Brotherhood, Revered.
-					["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+					["minReputation"] = { FACTION_THORIUM_BROTHERHOOD, REVERED },	-- Thorium Brotherhood, Revered.
+					["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
 					-- #else
-					["minReputation"] = { 59, FRIENDLY },	-- Thorium Brotherhood, Friendly.
-					["maxReputation"] = { 59, HONORED },	-- Thorium Brotherhood, Honored.
+					["minReputation"] = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },	-- Thorium Brotherhood, Friendly.
+					["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, HONORED },	-- Thorium Brotherhood, Honored.
 					-- #endif
 					["cost"] = { { "i", 18945, 4 } },	-- Dark Iron Residue
 					["repeatable"] = true,
@@ -637,11 +637,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					["coord"] = { 38.8, 28.5, SEARING_GORGE },
 					-- #if AFTER CATA
-					["minReputation"] = { 59, REVERED },	-- Thorium Brotherhood, Revered.
-					["maxReputation"] = { 59, EXALTED },	-- Thorium Brotherhood, Exalted.
+					["minReputation"] = { FACTION_THORIUM_BROTHERHOOD, REVERED },	-- Thorium Brotherhood, Revered.
+					["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
 					-- #else
-					["minReputation"] = { 59, FRIENDLY },	-- Thorium Brotherhood, Friendly.
-					["maxReputation"] = { 59, HONORED },	-- Thorium Brotherhood, Honored.
+					["minReputation"] = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },	-- Thorium Brotherhood, Friendly.
+					["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, HONORED },	-- Thorium Brotherhood, Honored.
 					-- #endif
 					-- #if AFTER WRATH
 					["cost"] = { { "i", 18945, 100 } },	-- Dark Iron Residue
@@ -1093,8 +1093,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14624,	-- Master Smith Burninate
 					["sourceQuest"] = 7722,	-- What the Flux?
 					["coord"] = { 38.8, 28.5, SEARING_GORGE },
-					["minReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood, Neutral.
-					["maxReputation"] = { 59, FRIENDLY },	-- Thorium Brotherhood, Friendly.
+					["minReputation"] = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },	-- Thorium Brotherhood, Neutral.
+					["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },	-- Thorium Brotherhood, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 18944, 2 },	-- Incendosaur Scale
@@ -1108,8 +1108,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14624,	-- Master Smith Burninate
 					["sourceQuest"] = 7722,	-- What the Flux?
 					["coord"] = { 38.8, 28.5, SEARING_GORGE },
-					["minReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood, Neutral.
-					["maxReputation"] = { 59, FRIENDLY },	-- Thorium Brotherhood, Friendly.
+					["minReputation"] = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },	-- Thorium Brotherhood, Neutral.
+					["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },	-- Thorium Brotherhood, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 18944, 2 },	-- Incendosaur Scale
@@ -1123,8 +1123,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 14624,	-- Master Smith Burninate
 					["sourceQuest"] = 7722,	-- What the Flux?
 					["coord"] = { 38.8, 28.5, SEARING_GORGE },
-					["minReputation"] = { 59, NEUTRAL },	-- Thorium Brotherhood, Neutral.
-					["maxReputation"] = { 59, FRIENDLY },	-- Thorium Brotherhood, Friendly.
+					["minReputation"] = { FACTION_THORIUM_BROTHERHOOD, NEUTRAL },	-- Thorium Brotherhood, Neutral.
+					["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, FRIENDLY },	-- Thorium Brotherhood, Friendly.
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {
 						{ "i", 18944, 2 },	-- Incendosaur Scale

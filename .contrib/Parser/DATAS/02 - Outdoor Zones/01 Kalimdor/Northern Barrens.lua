@@ -140,7 +140,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(718),	-- Wailing Caverns
 			}),
 			n(FACTIONS, {
-				faction(470, {	-- Ratchet
+				faction(FACTION_RATCHET, {	-- Ratchet
 					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					["OnTooltip"] = OnTooltipForRatchet,
 					["maps"] = { TANARIS },
@@ -2078,7 +2078,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["coord"] = { 61.22, 37.86, THE_BARRENS },
 					-- #endif
-					["maxReputation"] = { 470, NEUTRAL },	-- Ratchet, must be less than Neutral
+					["maxReputation"] = { FACTION_RATCHET, NEUTRAL },	-- Ratchet, must be less than Neutral
 					["cost"] = {
 						{ "i", 2589, 40 },	-- Linen Cloth
 						{ "i", 3371, 4 },	-- Empty Vial

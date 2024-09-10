@@ -35,7 +35,7 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Terokkar Forest, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, achWithRep(894, 1031, {	-- Flying High Over Skettis
+					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, achWithRep(894, FACTION_SHATARI_SKYGUARD, {	-- Flying High Over Skettis
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Sha'tari Skyguard to Exalted.",
 						-- #endif
@@ -333,7 +333,7 @@ root(ROOTS.Zones, {
 					--exploration(3892),	-- Writhing Mound (Wrath Classic: Can't be collected)
 				}),
 				n(FACTIONS, {
-					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, faction(1031, {	-- Sha'tari Skyguard
+					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, faction(FACTION_SHATARI_SKYGUARD, {	-- Sha'tari Skyguard
 						["icon"] = "Interface\\Icons\\ability_hunter_pet_netherray",
 						["OnTooltip"] = OnTooltipForSkyguard,
 					})),
@@ -499,14 +499,14 @@ root(ROOTS.Zones, {
 							{ 68.4, 74.0, TEROKKAR_FOREST },
 							{ 75.0, 86.2, TEROKKAR_FOREST },
 						},
-						["maxReputation"] = { 1031, EXALTED },	-- Sha'tari Skyguard, Exalted
+						["maxReputation"] = { FACTION_SHATARI_SKYGUARD, EXALTED },	-- Sha'tari Skyguard, Exalted
 						["isDaily"] = true,
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11008, {	-- Fires Over Skettis
 						["qg"] = 23048,	-- Sky Sergeant Doryn
 						["sourceQuest"] = 11098,	-- To Skettis!
 						["coord"] = { 64.5, 66.7, TEROKKAR_FOREST },
-						["maxReputation"] = { 1031, EXALTED },	-- Sha'tari Skyguard, Exalted
+						["maxReputation"] = { FACTION_SHATARI_SKYGUARD, EXALTED },	-- Sha'tari Skyguard, Exalted
 						["isDaily"] = true,
 						["groups"] = {
 							objective(1, {	-- 0/20 Monstrous Kaliri Egg Destroyed
@@ -545,7 +545,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23042,	-- Severin <Skyguard Medic>
 						["sourceQuest"] = 11004,	-- World of Shadows
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
-						["maxReputation"] = { 1031, EXALTED },	-- Sha'tari Skyguard, Exalted
+						["maxReputation"] = { FACTION_SHATARI_SKYGUARD, EXALTED },	-- Sha'tari Skyguard, Exalted
 						["cost"] = {{ "i", 32388, 6 }},	-- Shadow Dust
 						["repeatable"] = true,
 						["groups"] = {
@@ -561,7 +561,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23306,	-- Hazzik
 						["sourceQuest"] = 11885,	-- Adversarial Blood
 						["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
-						["maxReputation"] = { 1031, EXALTED },	-- Sha'tari Skyguard, Exalted
+						["maxReputation"] = { FACTION_SHATARI_SKYGUARD, EXALTED },	-- Sha'tari Skyguard, Exalted
 						["cost"] = {
 							{ "i", 32715, 1 },	-- Akkarai's Talons
 							{ "i", 32716, 1 },	-- Gezzarak's Claws

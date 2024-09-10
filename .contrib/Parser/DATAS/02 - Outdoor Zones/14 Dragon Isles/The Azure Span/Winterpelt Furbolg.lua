@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 					["sourceQuests"] = {
 						72589,	-- Honor Their Sacrifice
 						72588,	-- Primalist Pillagers
-					 },
+					},
 					--["minReputation"] = { TODO, TODO },	-- Language Furbolg 25
 					["provider"] = { "n", 201065 },	-- Sonova Snowden
 					["coord"] = { 66.9, 12.7, THE_AZURE_SPAN },

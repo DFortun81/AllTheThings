@@ -43,7 +43,7 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, achWithRep(896, 1038, {	-- A Quest a Day Keeps the Ogres at Bay
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, achWithRep(896, FACTION_ORGILA, {	-- A Quest a Day Keeps the Ogres at Bay
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with Ogri'la to Exalted.",
 						-- #endif
@@ -195,7 +195,7 @@ root(ROOTS.Zones, {
 					exploration(3832),	-- Vortex Pinnacle / Vortex Summit [CATA+]
 				}),
 				n(FACTIONS, {
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, faction(1038, {	-- Ogri'la
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, faction(FACTION_ORGILA, {	-- Ogri'la
 						["OnTooltip"] = OnTooltipForOgrila,
 					})),
 				}),
@@ -261,7 +261,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11060, {	-- A Crystalforged Darkrune
 						["qg"] = 23300,	-- Gahk
 						["coord"] = { 28.4, 58, BLADES_EDGE_MOUNTAINS },
-						["minReputation"] = { 1038, HONORED },	-- Ogri'la, Honored.
+						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
 						["isDaily"] = true,
 						["timeline"] = {
 							ADDED_3_3_0,
@@ -358,7 +358,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23233,	-- Chu'a'lor
 						["sourceQuest"] = 11059,	-- Guardian of the Monument
 						["coord"] = { 28.8, 57.4, BLADES_EDGE_MOUNTAINS },
-						["minReputation"] = { 1038, FRIENDLY },	-- Ogri'la, Friendly.
+						["minReputation"] = { FACTION_ORGILA, FRIENDLY },	-- Ogri'la, Friendly.
 						["lvl"] = lvlsquish(70, 70, 20),
 					})),
 					q(10682, {	-- A Time for Negotiation...
@@ -387,7 +387,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23253,	-- Kronk
 						["sourceQuest"] = 11026,	-- Banish the Demons
 						["coord"] = { 28.8, 57.8, BLADES_EDGE_MOUNTAINS },
-						["minReputation"] = { 1038, HONORED },	-- Ogri'la, Honored.
+						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
 						["cost"] = {
 							{ "i", 32696, 1 },	-- Banishing Crystal
 						},
@@ -401,7 +401,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, q(11026, {	-- Banish the Demons
 						["qg"] = 23253,	-- Kronk
 						["coord"] = { 28.8, 57.8, BLADES_EDGE_MOUNTAINS },
-						["minReputation"] = { 1038, HONORED },	-- Ogri'la, Honored.
+						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
 						["cost"] = {
 							{ "i", 32696, 1 },	-- Banishing Crystal
 						},
@@ -2193,7 +2193,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23300,	-- Gahk
 						["sourceQuest"] = 11060,	-- A Crystalforged Darkrune
 						["coord"] = { 28.4, 58, BLADES_EDGE_MOUNTAINS },
-						["minReputation"] = { 1038, HONORED },	-- Ogri'la, Honored.
+						["minReputation"] = { FACTION_ORGILA, HONORED },	-- Ogri'la, Honored.
 						["isDaily"] = true,
 						["timeline"] = {
 							ADDED_3_3_0,

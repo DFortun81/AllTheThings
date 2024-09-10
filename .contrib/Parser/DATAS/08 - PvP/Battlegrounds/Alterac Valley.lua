@@ -71,13 +71,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					},
 					["timeline"] = { ADDED_8_2_5 },
 				})),
-				applyclassicphase(PHASE_TWO, achWithRep(708, 729, {	-- Hero of the Frostwolf Clan
+				applyclassicphase(PHASE_TWO, achWithRep(708, FACTION_FROSTWOLF_CLAN, {	-- Hero of the Frostwolf Clan
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Frostwolf Clan to Exalted.",
 					-- #endif
 					["races"] = HORDE_ONLY,
 				})),
-				applyclassicphase(PHASE_TWO, achWithRep(709, 730, {	-- Hero of the Stormpike Guard
+				applyclassicphase(PHASE_TWO, achWithRep(709, FACTION_STORMPIKE_GUARD, {	-- Hero of the Stormpike Guard
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Stormpike Guard to Exalted.",
 					-- #endif
@@ -239,12 +239,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			}),
 			-- #endif
 			n(FACTIONS, {
-				faction(729, {	-- Frostwolf Clan
+				faction(FACTION_FROSTWOLF_CLAN, {	-- Frostwolf Clan
 					["icon"] = "Interface\\Icons\\inv_jewelry_frostwolftrinket_05",
 					["OnTooltip"] = OnTooltipForAlteracValley,
 					["races"] = HORDE_ONLY,
 				}),
-				faction(730, {	-- Stormpike Guard
+				faction(FACTION_STORMPIKE_GUARD, {	-- Stormpike Guard
 					["icon"] = "Interface\\Icons\\INV_Jewelry_StormPikeTrinket_05",
 					["OnTooltip"] = OnTooltipForAlteracValley,
 					["races"] = ALLIANCE_ONLY,
@@ -254,7 +254,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7385, {	-- A Gallon of Blood
 					["qg"] = 13236,	-- Primalist Thurloga
 					["coord"] = { 50.1, 85.1, ALTERAC_VALLEY },
-					["maxReputation"] = { 729, EXALTED },	-- Frostwolf Clan, Exalted.
+					["maxReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
 					["cost"] = { { "i", 17306, 5 } },	-- Stormpike Soldier's Blood
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -314,7 +314,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(6825, {	-- Call of Air - Guse's Fleet
 					["qg"] = 13179,	-- Wing Commander Guse
 					["coord"] = { 50, 32, ALTERAC_VALLEY },
-					["maxReputation"] = { 729, EXALTED },	-- Frostwolf Clan, Exalted.
+					["maxReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
 					["cost"] = { { "i", 17326, 1 } },	-- Stormpike Soldier's Flesh
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -322,7 +322,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(6943, {	-- Call of Air - Ichman's Fleet
 					["qg"] = 13437,	-- Wing Commander Ichman
 					["coord"] = { 48.3, 84.3, ALTERAC_VALLEY },
-					["maxReputation"] = { 730, EXALTED },	-- Stormpike Guard, Exalted.
+					["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
 					["cost"] = { { "i", 17504, 1 } },	-- Frostwolf Commander's Medal
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -330,7 +330,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(6826, {	-- Call of Air - Jeztor's Fleet
 					["qg"] = 13180,	-- Wing Commander Jeztor
 					["coord"] = { 54.2, 25.4, ALTERAC_VALLEY },
-					["maxReputation"] = { 729, EXALTED },	-- Frostwolf Clan, Exalted.
+					["maxReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
 					["cost"] = { { "i", 17327, 1 } },	-- Stormpike Lieutenant's Flesh
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -338,7 +338,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(6827, {	-- Call of Air - Mulverick's Fleet
 					["qg"] = 13181,	-- Wing Commander Mulverick
 					["coord"] = { 45.1, 14.0, ALTERAC_VALLEY },
-					["maxReputation"] = { 729, EXALTED },	-- Frostwolf Clan, Exalted.
+					["maxReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
 					["cost"] = { { "i", 17328, 1 } },	-- Stormpike Commander's Flesh
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -346,7 +346,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(6942, {	-- Call of Air - Slidore's Fleet
 					["qg"] = 13438,	-- Wing Commander Slidore
 					["coord"] = { 50.6, 65.8, ALTERAC_VALLEY },
-					["maxReputation"] = { 730, EXALTED },	-- Stormpike Guard, Exalted.
+					["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
 					["cost"] = { { "i", 17502, 1 } },	-- Frostwolf Soldier's Medal
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -354,7 +354,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(6941, {	-- Call of Air - Vipore's Fleet
 					["qg"] = 13439,	-- Wing Commander Vipore
 					["coord"] = { 50.3, 81.6, ALTERAC_VALLEY },
-					["maxReputation"] = { 730, EXALTED },	-- Stormpike Guard, Exalted.
+					["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
 					["cost"] = { { "i", 17503, 1 } },	-- Frostwolf Lieutenant's Medal
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -391,7 +391,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 12096,	-- Stormpike Quartermaster
 					["sourceQuest"] = 7121,	-- The Quartermaster
 					["coord"] = { 43.1, 17.6, ALTERAC_VALLEY },
-					["maxReputation"] = { 730, EXALTED },	-- Stormpike Guard, Exalted.
+					["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
 					["cost"] = { { "i", 17542, 10 } },	-- Coldtooth Supplies
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -399,7 +399,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(5893, {	-- Coldtooth Supplies (Horde)
 					["qg"] = 12097,	-- Frostwolf Quartermaster
 					["coord"] = { 46.6, 84.2, ALTERAC_VALLEY },
-					["maxReputation"] = { 729, EXALTED },	-- Frostwolf Clan, Exalted.
+					["maxReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
 					["cost"] = { { "i", 17542, 10 } },	-- Coldtooth Supplies
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -407,7 +407,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7386, {	-- Crystal Cluster
 					["qg"] = 13442,	-- Arch Druid Renferal
 					["coord"] = { 43.9, 12.6, ALTERAC_VALLEY },
-					["maxReputation"] = { 730, EXALTED },	-- Stormpike Guard, Exalted.
+					["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
 					["cost"] = { { "i", 17423, 5 } },	-- Storm Crystal
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -437,7 +437,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 39.6, 81.0, ALTERAC_MOUNTAINS },
 						-- #endif
 					},
-					["minReputation"] = { 730, REVERED },  -- Stormpike Guard, Revered
+					["minReputation"] = { FACTION_STORMPIKE_GUARD, REVERED },  -- Stormpike Guard, Revered
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Stormpike Insignia Rank 3
@@ -456,7 +456,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 62.2, 59.0, ALTERAC_MOUNTAINS },
 						-- #endif
 					},
-					["minReputation"] = { 729, REVERED },    -- Frostwolf Clan, Revered
+					["minReputation"] = { FACTION_FROSTWOLF_CLAN, REVERED },    -- Frostwolf Clan, Revered
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Frostwolf Insignia Rank 3
@@ -468,7 +468,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7027, {	-- Empty Stables (Alliance)
 					["qg"] = 13617,	-- Stormpike Stable Master <Stable Master>
 					["coord"] = { 42.6, 16.8, ALTERAC_VALLEY },
-					["maxReputation"] = { 730, EXALTED },	-- Stormpike Guard, Exalted.
+					["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
 					["groups"] = {
@@ -481,7 +481,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7001, {	-- Empty Stables (Horde)
 					["qg"] = 13616,	-- Frostwolf Stable Master <Stable Master>
 					["coord"] = { 57.2, 82.4, ALTERAC_VALLEY },
-					["maxReputation"] = { 729, EXALTED },	-- Frostwolf Clan, Exalted.
+					["maxReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
 					["groups"] = {
@@ -565,7 +565,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 62.2, 59.0, ALTERAC_MOUNTAINS },
 						-- #endif
 					},
-					["minReputation"] = { 729, HONORED },    -- Frostwolf Clan, Honored
+					["minReputation"] = { FACTION_FROSTWOLF_CLAN, HONORED },    -- Frostwolf Clan, Honored
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Frostwolf Insignia Rank 2
@@ -584,7 +584,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 39.6, 81.0, ALTERAC_MOUNTAINS },
 						-- #endif
 					},
-					["minReputation"] = { 730, HONORED },  -- Stormpike Guard, Honored
+					["minReputation"] = { FACTION_STORMPIKE_GUARD, HONORED },  -- Stormpike Guard, Honored
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Stormpike Insignia Rank 2
@@ -615,7 +615,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(8387, {	-- Invaders of Alterac Valley
 					["qg"] = 15350,	-- Horde Warbringer
 					["sourceQuest"] = 8369,	-- Invaders of Alterac Valley
-					["maxReputation"] = { 729, EXALTED },	-- Frostwolf Clan, Exalted.
+					["maxReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
 					["cost"] = { { "i", 20560, 3 } },	-- Alterac Valley Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
@@ -625,7 +625,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 12096,	-- Stormpike Quartermaster
 					["sourceQuest"] = 7121,	-- The Quartermaster
 					["coord"] = { 43.1, 17.6, ALTERAC_VALLEY },
-					["maxReputation"] = { 730, EXALTED },	-- Stormpike Guard, Exalted.
+					["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
 					["cost"] = { { "i", 17522, 10 } },	-- Irondeep Supplies
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -633,7 +633,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(6985, {	-- Irondeep Supplies (Horde)
 					["qg"] = 12097,	-- Frostwolf Quartermaster
 					["coord"] = { 46.6, 84.2, ALTERAC_VALLEY },
-					["maxReputation"] = { 729, EXALTED },	-- Frostwolf Clan, Exalted.
+					["maxReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
 					["cost"] = { { "i", 17522, 10 } },	-- Irondeep Supplies
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -641,7 +641,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(6881, {	-- Ivus the Forest Lord
 					["qg"] = 13442,	-- Arch Druid Renferal
 					["coord"] = { 43.9, 12.6, ALTERAC_VALLEY },
-					["maxReputation"] = { 730, EXALTED },	-- Stormpike Guard, Exalted.
+					["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
 					["cost"] = { { "i", 17423, 1 } },	-- Storm Crystal
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -677,7 +677,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 39.6, 81.0, ALTERAC_MOUNTAINS },
 						-- #endif
 					},
-					["minReputation"] = { 730, EXALTED },  -- Stormpike Guard, Exalted
+					["minReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },  -- Stormpike Guard, Exalted
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Stormpike Insignia Rank 4
@@ -696,7 +696,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 62.2, 59.0, ALTERAC_MOUNTAINS },
 						-- #endif
 					},
-					["minReputation"] = { 729, EXALTED },    -- Frostwolf Clan, Exalted
+					["minReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },    -- Frostwolf Clan, Exalted
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Frostwolf Insignia Rank 4
@@ -708,7 +708,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(6801, {	-- Lokholar the Ice Lord
 					["qg"] = 13236,	-- Primalist Thurloga
 					["coord"] = { 50.1, 85.1, ALTERAC_VALLEY },
-					["maxReputation"] = { 729, EXALTED },	-- Frostwolf Clan, Exalted.
+					["maxReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
 					["cost"] = { { "i", 17306, 1 } },	-- Stormpike Soldier's Blood
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -727,7 +727,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 13257,	-- Murgot Deepforge
 					["sourceQuest"] = 7223,	-- Armor Scraps
 					["coord"] = { 43.5, 15.5, ALTERAC_VALLEY },
-					["maxReputation"] = { 730, EXALTED },	-- Stormpike Guard, Exalted.
+					["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
 					["cost"] = { { "i", 17422, 20 } },	-- Armor Scraps
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -736,7 +736,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["qg"] = 13176,	-- Smith Regzar
 					["sourceQuest"] = 7224,	-- Enemy Booty
 					["coord"] = { 49.5, 82.7, ALTERAC_VALLEY },
-					["maxReputation"] = { 729, EXALTED },	-- Frostwolf Clan, Exalted.
+					["maxReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
 					["cost"] = { { "i", 17422, 20 } },	-- Armor Scraps
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -790,7 +790,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7002, {	-- Ram Hide Harnesses
 					["qg"] = 13441,	-- Frostwolf Wolf Rider Commander
 					["coord"] = { 57.0, 82.8, ALTERAC_VALLEY },
-					["maxReputation"] = { 729, EXALTED },	-- Frostwolf Clan, Exalted.
+					["maxReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },	-- Frostwolf Clan, Exalted.
 					["cost"] = { { "i", 17642, 1 } },	-- Alterac Ram Hide
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -798,7 +798,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(7026, {	-- Ram Riding Harnesses
 					["qg"] = 13577,	-- Stormpike Ram Rider Commander
 					["coord"] = { 42.1, 17.2, ALTERAC_VALLEY },
-					["maxReputation"] = { 730, EXALTED },	-- Stormpike Guard, Exalted.
+					["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
 					["cost"] = { { "i", 17643, 1 } },	-- Frostwolf Hide
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -812,7 +812,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				q(8383, {	-- Remember Alterac Valley!
 					["qg"] = 15351,	-- Alliance Brigadier General
 					["sourceQuest"] = 8375,	-- Remember Alterac Valley!
-					["maxReputation"] = { 730, EXALTED },	-- Stormpike Guard, Exalted.
+					["maxReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },	-- Stormpike Guard, Exalted.
 					["cost"] = { { "i", 20560, 3 } },	-- Alterac Valey Mark of Honor
 					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
@@ -828,7 +828,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 39.6, 81.0, ALTERAC_MOUNTAINS },
 						-- #endif
 					},
-					["minReputation"] = { 730, FRIENDLY },  -- Stormpike Guard, Friendly
+					["minReputation"] = { FACTION_STORMPIKE_GUARD, FRIENDLY },  -- Stormpike Guard, Friendly
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Stormpike Insignia Rank 1
@@ -847,7 +847,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						{ 62.2, 59.0, ALTERAC_MOUNTAINS },
 						-- #endif
 					},
-					["minReputation"] = { 729, FRIENDLY },    -- Frostwolf Clan, Friendly
+					["minReputation"] = { FACTION_FROSTWOLF_CLAN, FRIENDLY },    -- Frostwolf Clan, Friendly
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Frostwolf Insignia Rank 1
@@ -919,9 +919,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 7171,	-- Legendary Heroes
 					["coord"] = { 39.6, 81.0, ALTERAC_MOUNTAINS },
 					-- #if AFTER SHADOWLANDS
-					["minReputation"] = { 730, EXALTED },  -- Stormpike Guard, Exalted
+					["minReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED },  -- Stormpike Guard, Exalted
 					-- #else
-					["minReputation"] = { 730, EXALTED + 998 },    -- Stormpike Guard, 999/1000 Exalted
+					["minReputation"] = { FACTION_STORMPIKE_GUARD, EXALTED + 998 },    -- Stormpike Guard, 999/1000 Exalted
 					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
@@ -936,9 +936,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["sourceQuest"] = 7166,	-- Legendary Heroes
 					["coord"] = { 62.2, 59.0, ALTERAC_MOUNTAINS },
 					-- #if AFTER SHADOWLANDS
-					["minReputation"] = { 729, EXALTED },    -- Frostwolf Clan, Exalted
+					["minReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED },    -- Frostwolf Clan, Exalted
 					-- #else
-					["minReputation"] = { 729, EXALTED + 998 },    -- Frostwolf Clan, 999/1000 Exalted
+					["minReputation"] = { FACTION_FROSTWOLF_CLAN, EXALTED + 998 },    -- Frostwolf Clan, 999/1000 Exalted
 					-- #endif
 					["races"] = HORDE_ONLY,
 					["groups"] = {

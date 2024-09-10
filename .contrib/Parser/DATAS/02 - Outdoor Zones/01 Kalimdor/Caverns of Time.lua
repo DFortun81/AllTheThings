@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #if AFTER TBC
 			n(FACTIONS, {
-				applyclassicphase(TBC_PHASE_ONE, faction(989, {	-- Keepers of Time
+				applyclassicphase(TBC_PHASE_ONE, faction(FACTION_KEEPERS_OF_TIME, {	-- Keepers of Time
 					["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
 					["timeline"] = { ADDED_2_0_1 },
 					["maps"] = { CAVERNS_OF_TIME_BLACK_MORASS, CAVERNS_OF_TIME_OLD_HILLSBRAD_FOOTHILLS },

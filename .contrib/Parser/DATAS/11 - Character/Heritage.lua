@@ -6,7 +6,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Blood Elf|r.",
 		["g"] = bubbleDown({
 			-- #if BEFORE 10.1.0
-			["minReputation"] = { 911, EXALTED },
+			["minReputation"] = { FACTION_SILVERMOON_CITY, EXALTED },
 			-- #endif
 		}, {
 			q(53791, {	-- The Pride of the Sin'dorei
@@ -262,7 +262,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Dwarf|r.",
 		["g"] = bubbleDown({
 			-- #if BEFORE 10.1.0
-			["minReputation"] = { 47, EXALTED },
+			["minReputation"] = { FACTION_IRONFORGE, EXALTED },
 			-- #endif
 		}, {
 			q(53838, {	-- Keep Yer Feet On The Ground
@@ -342,7 +342,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Gnome|r that has completed |cFFFFD700Stay of Execution|r, the 8.2 War Campaign.",
 		["g"] = bubbleDown({
 			-- #if BEFORE 10.1.0
-			["minReputation"] = { 54, EXALTED },
+			["minReputation"] = { FACTION_GNOMEREGAN, EXALTED },
 			-- #endif
 		}, {
 			q(54402, {	-- Shifting Gears
@@ -544,7 +544,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Human|r.",
 		["g"] = bubbleDown({
 			-- #if BEFORE 10.1.0
-			["minReputation"] = { 72, EXALTED }
+			["minReputation"] = { FACTION_STORMWIND, EXALTED }
 			-- #endif
 		}, {
 			q(72644, {	-- An Urgent Matter
@@ -922,7 +922,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Orc|r.",
 		["g"] = bubbleDown({
 			-- #if BEFORE 10.1.0
-			["minReputation"] = { 76, EXALTED }
+			["minReputation"] = { FACTION_ORGRIMMAR, EXALTED }
 			-- #endif
 		}, {
 			q(73703, {	-- A Summon to Orgrimmar
@@ -1104,7 +1104,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 50 Tauren|r that has completed |cFFFFD700Stay of Execution|r, the 8.2 War Campaign.",
 		["g"] = bubbleDown({
 			-- #if BEFORE 10.1.0
-			["minReputation"] = { 81, EXALTED },
+			["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },
 			-- #endif
 		}, {
 			q(54759, {	-- When Spririts Whisper

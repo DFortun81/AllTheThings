@@ -858,7 +858,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(2273),	-- Zul'Mashar
 			}),
 			n(FACTIONS, {
-				faction(529, {	-- Argent Dawn
+				faction(FACTION_ARGENT_DAWN, {	-- Argent Dawn
 					["icon"] = "Interface\\Icons\\INV_Misc_Token_ArgentDawn3",
 					["maps"] = {
 						WESTERN_PLAGUELANDS,
@@ -1151,7 +1151,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 49856,	-- Lord Raymond George
 					["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
 					["coord"] = { 76.1, 50.9, EASTERN_PLAGUELANDS },
-					["maxReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+					["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STRATHOLME },
 					["repeatable"] = true,
@@ -1521,7 +1521,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					-- #endif
-					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
+					["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
 					["cost"] = { { "i", 12844, 25 } },	-- Argent Dawn Valor Token
 					["timeline"] = { REMOVED_4_0_3 },
 					["altQuests"] = {
@@ -1845,7 +1845,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					-- #endif
-					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
+					["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					-- #if BEFORE 4.0.3
@@ -1883,8 +1883,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					-- #endif
-					["maxReputation"] = { 529, HONORED },	-- Argent Dawn
-					["minReputation"] = { 529, FRIENDLY },	-- Argent Dawn
+					["maxReputation"] = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn
+					["minReputation"] = { FACTION_ARGENT_DAWN, FRIENDLY },	-- Argent Dawn
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					-- #if BEFORE 4.0.3
@@ -1922,8 +1922,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					-- #endif
-					["maxReputation"] = { 529, REVERED },	-- Argent Dawn
-					["minReputation"] = { 529, HONORED },	-- Argent Dawn
+					["maxReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
+					["minReputation"] = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					-- #if BEFORE 4.0.3
@@ -1961,8 +1961,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					-- #endif
-					["maxReputation"] = { 529, EXALTED },	-- Argent Dawn
-					["minReputation"] = { 529, REVERED },	-- Argent Dawn
+					["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
+					["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					-- #if BEFORE 4.0.3
@@ -2637,7 +2637,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["coord"] = { 81.6, 60.0, EASTERN_PLAGUELANDS },
 					-- #endif
-					["minReputation"] = { 529, REVERED },	-- Argent Dawn
+					["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
 					["cost"] = { { "i", 12844, 10 } },	-- Argent Dawn Valor Token
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
@@ -3129,7 +3129,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				applyclassicphase(PHASE_SIX, q(9227, {	-- Superior Armaments of Battle - Exalted Amongst the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
-					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
+					["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
 					-- #if AFTER WRATH
 					["coord"] = { 75.8, 54.0, EASTERN_PLAGUELANDS },
 					-- #else
@@ -3165,8 +3165,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(PHASE_SIX, q(9221, {	-- Superior Armaments of Battle - Friend of the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
-					["maxReputation"] = { 529, HONORED },	-- Argent Dawn
-					["minReputation"] = { 529, FRIENDLY },	-- Argent Dawn
+					["maxReputation"] = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn
+					["minReputation"] = { FACTION_ARGENT_DAWN, FRIENDLY },	-- Argent Dawn
 					-- #if AFTER WRATH
 					["coord"] = { 75.8, 54.0, EASTERN_PLAGUELANDS },
 					-- #else
@@ -3202,8 +3202,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(PHASE_SIX, q(9223, {	-- Superior Armaments of Battle - Honored Amongst the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
-					["maxReputation"] = { 529, REVERED },	-- Argent Dawn
-					["minReputation"] = { 529, HONORED },	-- Argent Dawn
+					["maxReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
+					["minReputation"] = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn
 					-- #if AFTER WRATH
 					["coord"] = { 75.8, 54.0, EASTERN_PLAGUELANDS },
 					-- #else
@@ -3239,8 +3239,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(PHASE_SIX, q(9226, {	-- Superior Armaments of Battle - Revered Amongst the Dawn
 					["qg"] = 11536,	-- Quartermaster Miranda Breechlock <The Argent Dawn>
-					["maxReputation"] = { 529, EXALTED },	-- Argent Dawn
-					["minReputation"] = { 529, REVERED },	-- Argent Dawn
+					["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
+					["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
 					-- #if AFTER WRATH
 					["coord"] = { 75.8, 54.0, EASTERN_PLAGUELANDS },
 					-- #else
@@ -4733,7 +4733,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							}),
 							-- 10.1.5 Scholomance Items
 							i(206584, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Archived Crafting Techniques
-								--	["minReputation"] = { 529, EXALTED },	-- Argent Dawn
+								--	["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
 								["cost"] = { { "i", 12844, 6 } },	-- Argent Dawn Valor Token
 								["groups"] = {
 									i(207569),	-- Ancient Formula: Magebane Nexus (RECIPE!)

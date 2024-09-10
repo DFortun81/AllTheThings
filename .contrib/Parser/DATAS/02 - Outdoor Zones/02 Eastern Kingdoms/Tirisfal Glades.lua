@@ -2613,7 +2613,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { ORC, TROLL, UNDEAD },
 
 					-- Available to Undead without faction requirements.
-					["minReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
+					["minReputation"] = { FACTION_UNDERCITY, EXALTED },	-- Undercity, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. UNDEAD .. [[ then
 							t.minReputation = nil;
@@ -2772,7 +2772,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					-- Available to Undead without faction requirements.
-					["minReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
+					["minReputation"] = { FACTION_UNDERCITY, EXALTED },	-- Undercity, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. UNDEAD .. [[ then
 							t.minReputation = nil;

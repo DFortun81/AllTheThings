@@ -2898,7 +2898,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(978),	-- Zul'Farrak
 			}),
 			n(FACTIONS, {
-				faction(369, {	-- Gadgetzan
+				faction(FACTION_GADGETZAN, {	-- Gadgetzan
 					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForGadgetzhan,
@@ -5186,7 +5186,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(9268, {	-- War at Sea
 					["qg"] = 16417,	-- Rumsen Fizzlebrack
 					["coord"] = { 50.4, 26.2, TANARIS },
-					["maxReputation"] = { 369, NEUTRAL },	-- Gadgetzan, must be less than Neutral
+					["maxReputation"] = { FACTION_GADGETZAN, NEUTRAL },	-- Gadgetzan, must be less than Neutral
 					["cost"] = {
 						{ "i", 4338, 40 },	-- Mageweave Cloth
 						{ "i", 3466, 4 },	-- Strong Flux

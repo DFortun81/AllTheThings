@@ -149,7 +149,7 @@ root(ROOTS.Zones, {
 						["qg"] = 19840,	-- Caledis Brightdawn
 						["coord"] = { 48.2, 86.6, NETHERSTORM },
 						["sourceQuest"] = 10652,	-- Behind Enemy Lines
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/1 Sunfury Researcher Gloves
 								["provider"] = { "i", 28636 },	-- Sunfury Researcher Gloves
@@ -169,14 +169,14 @@ root(ROOTS.Zones, {
 						["qg"] = 19469,	-- Magistrix Larynna
 						["coord"] = { 32.1, 64.0, NETHERSTORM },
 						["sourceQuest"] = 10341,	-- Kick Them While They're Down
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10508, {	-- A Gift for Voren'thal
 						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["sourceQuest"] = 10432,	-- Damning Evidence
 						-- May also require Shutting Down Manaforge Ara.
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/1 First Half of Socrethar's Stone
 								["provider"] = { "i", 29624 },	-- First Half of Socrethar's Stone
@@ -193,31 +193,31 @@ root(ROOTS.Zones, {
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["isBreadcrumb"] = true,
 						["sourceQuest"] = 10186,	-- You're Hired!
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10652, {	-- Behind Enemy Lines
 						["qg"] = 20162,	-- Veronia
 						["coord"] = { 33.8, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10194,	-- Stealth Flight
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10204, {	-- Bloodgem Crystals
 						["qg"] = 19469,	-- Magistrix Larynna
 						["coord"] = { 32.1, 64.0, NETHERSTORM },
 						["sourceQuest"] = 10189,	-- Manaforge B'naar
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10509, {	-- Bound for Glory
 						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["sourceQuest"] = 10508,	-- A Gift for Voren'thal
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10432, {	-- Damning Evidence
 						["qg"] = 20920,	-- Magister Theledorn
 						["coord"] = { 26.2, 41.6, NETHERSTORM },
 						["sourceQuest"] = 10202,	-- A Defector
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/8 Orders From Kael'thas
 								["provider"] = { "i", 29797 },	-- Orders From Kael'thas
@@ -233,7 +233,7 @@ root(ROOTS.Zones, {
 						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["sourceQuest"] = 10189,	-- Manaforge B'naar
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/2 Sunfury Warp-Master slain
 								["provider"] = { "n", 18857 },	-- Sunfury Warp-Master
@@ -250,7 +250,7 @@ root(ROOTS.Zones, {
 						["qg"] = 19840,	-- Caledis Brightdawn
 						["coord"] = { 48.2, 86.6, NETHERSTORM },
 						["sourceQuest"] = 10197,	-- A Convincing Disguise
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
 							i(30383),	-- Belt of the Sage
 							i(30386),	-- Bloodguard's Greaves
@@ -262,7 +262,7 @@ root(ROOTS.Zones, {
 						["qg"] = 19469,	-- Magistrix Larynna
 						["coord"] = { 32.1, 64.0, NETHERSTORM },
 						["sourceQuest"] = 10330,	-- Shutting Down Manaforge Coruu
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/8 Sunfury Conjurer slain
 								["provider"] = { "n", 20139 },	-- Sunfury Conjurer
@@ -286,7 +286,7 @@ root(ROOTS.Zones, {
 							10552,	-- Allegiance to the Scryers
 							11039,	-- Report to Spymaster Thalodien
 						},
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/1 B'naar Personnel Roster
 								["provider"] = { "i", 28376 },	-- B'naar Personnel Roster
@@ -298,13 +298,13 @@ root(ROOTS.Zones, {
 						["qg"] = 19840,	-- Caledis Brightdawn
 						["coord"] = { 48.2, 86.6, NETHERSTORM },
 						["sourceQuest"] = 10330,	-- Shutting Down Manaforge Coruu
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10329, {	-- Shutting Down Manaforge B'naar
 						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["sourceQuest"] = 10193,	-- High Value Targets
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/1 Manaforge B'naar Shut Down
 								["provider"] = { "n", 20209 },	-- B'naar Control Console
@@ -319,7 +319,7 @@ root(ROOTS.Zones, {
 						["qg"] = 19840,	-- Caledis Brightdawn
 						["coord"] = { 48.2, 86.6, NETHERSTORM },
 						["sourceQuest"] = 10198,	-- Information Gathering
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/1 Manaforge Coruu Shut Down
 								["provider"] = { "n", 20417 },	-- Coruu Control Console
@@ -334,7 +334,7 @@ root(ROOTS.Zones, {
 						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["sourceQuest"] = 10200,	-- Return to Thalodien
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/1 Manaforge Duro Shut Down
 								["provider"] = { "n", 20418 },	-- Duro Control Console
@@ -349,13 +349,13 @@ root(ROOTS.Zones, {
 						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.1, NETHERSTORM },
 						["sourceQuest"] = 10329,	-- Shutting Down Manaforge B'naar
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10365, {	-- Shutting Down Manaforge Ara
 						["qg"] = 19468,	-- Spymaster Thalodien
 						["coord"] = { 32.0, 64.0, NETHERSTORM },
 						["sourceQuest"] = 10338,	-- Shutting Down Manaforge Duro
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/1 Manaforge Ara Shut Down
 								["provider"] = { "n", 20440 },	-- Ara Control Console
@@ -372,7 +372,7 @@ root(ROOTS.Zones, {
 						["qg"] = 18530,	-- Voren'thal the Seer
 						["coord"] = { 42.6, 91.4, SHATTRATH_CITY },
 						["sourceQuest"] = 10509,	-- Bound for Glory
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/1 Socrethar slain
 								["provider"] = { "n", 20132 },	-- Socrethar
@@ -399,7 +399,7 @@ root(ROOTS.Zones, {
 					q(10970, {	-- A Mission of Mercy
 						["qg"] = 20448,	-- Commander Ameer
 						["coord"] = { 59.5, 32.4, NETHERSTORM },
-						["minReputation"] = { 933, HONORED },
+						["minReputation"] = { FACTION_THE_CONSORTIUM, HONORED },
 						["sourceQuest"] = 10969,	-- Seek Out Ameer
 						["groups"] = {
 							objective(1, {	-- 0/1 Salvaged Ethereum Prison Key
@@ -425,7 +425,7 @@ root(ROOTS.Zones, {
 					}),
 					q(10973, {	-- A Thousand Worlds
 						["qg"] = 20448,	-- Commander Ameer
-						["minReputation"] = { 933, REVERED },
+						["minReputation"] = { FACTION_THE_CONSORTIUM, REVERED },
 					}),
 					q(10308, {	-- Another Heap of Ethereals
 						["qg"] = 19880,	-- Nether-Stalker Khay'ji
@@ -438,7 +438,7 @@ root(ROOTS.Zones, {
 						["qg"] = 20448,	-- Commander Ameer
 						["sourceQuest"] = 10971,	-- Ethereum Secrets
 						["coord"] = { 59.5, 32.4, NETHERSTORM },
-						["maxReputation"] = { 933, EXALTED },	-- The Consortium, Exalted.
+						["maxReputation"] = { FACTION_THE_CONSORTIUM, EXALTED },	-- The Consortium, Exalted.
 						["cost"] = { { "i", 31957, 1 } },	-- Ethereum Prisoner I.D. Tag
 						["repeatable"] = true,
 					}),
@@ -450,7 +450,7 @@ root(ROOTS.Zones, {
 					q(10969, {	-- Seek Out Ameer
 						["qg"] = 22899,	-- Protectorate Advisor Rahim
 						["coord"] = { 45.8, 36.2, NETHERSTORM },
-						["minReputation"] = { 933, HONORED },
+						["minReputation"] = { FACTION_THE_CONSORTIUM, HONORED },
 						["isBreadcrumb"] = true,	-- for "A Mission of Mercy"
 					}),
 					q(10974, {	-- Stasis Chambers of Bash'ir
@@ -466,7 +466,7 @@ root(ROOTS.Zones, {
 						["qg"] = 20780,	-- Kaylaan
 						["coord"] = { 34.8, 38.3, NETHERSTORM },
 						["sourceQuest"] = 10431,	-- Outside Assistance
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/6 Gan'arg Warp-Tinker slain
 								["provider"] = { "n", 20285 },	-- Gan'arg Warp-Tinker
@@ -483,7 +483,7 @@ root(ROOTS.Zones, {
 						["qg"] = 20780,	-- Kaylaan
 						["coord"] = { 34.8, 38.3, NETHERSTORM },
 						["sourceQuest"] = 10380,	-- A Dark Pact
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
 							i(30382),	-- Aldor Ceremonial Wraps
 							i(30380),	-- Girdle of the Lost Vindicator
@@ -496,13 +496,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["isBreadcrumb"] = true,
 						["sourceQuest"] = 10186,	-- You're Hired!
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10246, {	-- Attack on Manaforge Coruu
 						["qg"] = 19466,	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10299,	-- Shutting Down Manaforge B'naar
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/5 Sunfury Researcher slain
 								["provider"] = { "n", 20136 },	-- Sunfury Researcher
@@ -516,13 +516,13 @@ root(ROOTS.Zones, {
 						["provider"] = { "o", 183770 },	-- B'naar Control Console
 						["coord"] = { 23.2, 68.2, NETHERSTORM },
 						["sourceQuest"] = 10243,	-- Naaru Technology
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10409, {	-- Deathblow to the Legion
 						["qg"] = 18538,	-- Ishanah
 						["coord"] = { 24.2, 29.8, SHATTRATH_CITY },
 						["sourceQuest"] = 10410,	-- Ishanah's Help
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
 							i(30369),	-- Cleansed Fel Pauldrons
 							i(30370),	-- Gauntlets of the Redeemed Vindicator
@@ -534,7 +534,7 @@ root(ROOTS.Zones, {
 					q(10241, {	-- Distraction at Manaforge B'naar
 						["qg"] = 19466,	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["sourceQuests"] = {
 							10551,	-- Allegiance to the Aldor
 							11038,	-- Assist Exarch Orelis
@@ -552,13 +552,13 @@ root(ROOTS.Zones, {
 						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10407,	-- Socrethar's Shadow
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10313, {	-- Measuring Warp Energies
 						["qg"] = 19466,	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10241,	-- Distraction at Manaforge B'naar
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
 							i(30362),	-- Energized Helm
 							i(30364),	-- Resonating Axe
@@ -570,19 +570,19 @@ root(ROOTS.Zones, {
 						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10241,	-- Distraction at Manaforge B'naar
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10431, {	-- Outside Assistance
 						["qg"] = 19466,	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10328,	-- Sunfury Briefings
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10323, {	-- Shutting Down Manaforge Ara
 						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10322,	-- Shutting Down Manaforge Duro
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/1 Manaforge Ara Shut Down
 								["provider"] = { "n", 20440 },	-- Ara Control Console
@@ -599,7 +599,7 @@ root(ROOTS.Zones, {
 						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10245,	-- B'naar Console Transcription
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/1 Manaforge B'naar Shut Down
 								["provider"] = { "n", 20209 },	-- B'naar Control Console
@@ -614,7 +614,7 @@ root(ROOTS.Zones, {
 						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10299,	-- Shutting Down Manaforge B'naar
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/1 Manaforge Coruu Shut Down
 								["provider"] = { "n", 20417 },	-- Coruu Control Console
@@ -629,7 +629,7 @@ root(ROOTS.Zones, {
 						["qg"] = 19467,	-- Anchorite Karja
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10321,	-- Shutting Down Manaforge Coruu
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/1 Manaforge Duro Shut Down
 								["provider"] = { "n", 20418 },	-- Duro Control Console
@@ -647,7 +647,7 @@ root(ROOTS.Zones, {
 							10323,	-- Shutting Down Manaforge Ara
 							10381,	-- Aldor No More
 						},
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/1 First Half of Socrethar's Stone
 								["provider"] = { "i", 29624 },	-- First Half of Socrethar's Stone
@@ -663,7 +663,7 @@ root(ROOTS.Zones, {
 						["qg"] = 19466,	-- Exarch Orelis
 						["coord"] = { 32.0, 64.2, NETHERSTORM },
 						["sourceQuest"] = 10321,	-- Shutting Down Manaforge Coruu
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
 							objective(1, {	-- 0/1 Sunfury Military Briefing
 								["provider"] = { "i", 29545 },	-- Sunfury Military Briefing

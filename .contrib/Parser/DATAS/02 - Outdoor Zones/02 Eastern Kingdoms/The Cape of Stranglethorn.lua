@@ -116,10 +116,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(43),	-- Wild Shore
 			}),
 			n(FACTIONS, {
-				faction(87, {	-- Bloodsail Buccaneers
+				faction(FACTION_BLOODSAIL_BUCCANEERS, {	-- Bloodsail Buccaneers
 					["icon"] = "Interface\\Icons\\INV_Misc_Bandana_03",
 				}),
-				faction(21, {	-- Booty Bay
+				faction(FACTION_BOOTY_BAY, {	-- Booty Bay
 					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 				}),
 			}),
@@ -334,7 +334,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(4621, {	-- Avast Ye, Admiral!
 					["qg"] = 2546,	-- Fleet Master Firallon
 					["sourceQuest"] = 1036,	-- Avast Ye, Scallywag
-					["minReputation"] = { 87, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
+					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
 					["description"] = "This quest also requires you to be hated or lower with Booty Bay.",
 					["coord"] = { 46.7, 95.2, THE_CAPE_OF_STRANGLETHORN },
 					["lvl"] = lvlsquish(55, 55, 10),
@@ -350,7 +350,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1036, {	-- Avast Ye, Scallywag
 					["qg"] = 43454,	-- "Good-Boy" Bruce
-					["minReputation"] = { 87, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
+					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
 					["coord"] = { 41.6, 61.2, THE_CAPE_OF_STRANGLETHORN },
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(55, 55, 10),
@@ -669,7 +669,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(9272, {	-- Dressing the Part
 					["qg"] = 2546,	-- Fleet Master Firallon
-					["minReputation"] = { 87, NEUTRAL },	-- Bloodsail Buccaneers, Neutral.
+					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, NEUTRAL },	-- Bloodsail Buccaneers, Neutral.
 					["coord"] = { 46.6, 95.2, THE_CAPE_OF_STRANGLETHORN },
 					["lvl"] = lvlsquish(49, 49, 10),
 					["groups"] = {
@@ -2343,7 +2343,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(9259, {	-- Traitor to the Bloodsail
 					["qg"] = 16399,	-- Bloodsail Traitor
 					["coord"] = { 48.4, 63.2, THE_CAPE_OF_STRANGLETHORN },
-					["maxReputation"] = { 21, NEUTRAL },	-- Booty Bay, must be less than Neutral
+					["maxReputation"] = { FACTION_BOOTY_BAY, NEUTRAL },	-- Booty Bay, must be less than Neutral
 					["cost"] = {
 						{ "i", 4306, 40 },	-- Silk Cloth
 						{ "i", 2604, 4 },	-- Red Dye
@@ -2716,7 +2716,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				n(44179, {	-- Harry No-Hooks <Birds and Rum>
 					["description"] = "If you don't have the required reputation with Bloodsail Buccaneers, these pets are also sold in Booty Bay by Narkk.",
-					["minReputation"] = { 87, FRIENDLY },	-- Bloodsail Buccaneers
+					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers
 					["coord"] = { 46.6, 93.6, THE_CAPE_OF_STRANGLETHORN },
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {

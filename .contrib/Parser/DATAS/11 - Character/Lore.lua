@@ -5,7 +5,7 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 	race(BLOODELF, bubbleDown({ ["timeline"] = { ADDED_9_2_5 }, ["races"] = { BLOODELF } }, {
 		["description"] = "To unlock this questline you need to be logged in on a |cFFa335eelevel 60 Blood Elf|r.",
 		["g"] = bubbleDown({
-			["minReputation"] = { 911, EXALTED }
+			["minReputation"] = { FACTION_SILVERMOON_CITY, EXALTED }
 		}, {
 			q(65652, {	-- Summons from the Matriarch (non-Paladin)
 				-- ["sourceQuests"] = { },

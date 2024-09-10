@@ -134,7 +134,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(2478),	-- Morlos'Aran
 				exploration(2481),	-- Ruins of Constellas
 				exploration(1766),	-- Shatter Scar Vale
-				exploration(1998),	-- Talonbranch Glade 
+				exploration(1998),	-- Talonbranch Glade
 				exploration(1769),	-- Timbermaw Hold
 			}),
 			n(FLIGHT_PATHS, {
@@ -1116,7 +1116,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 11554,	-- Grazle
 					["sourceQuest"] = 27995,	-- Dance for Ruumbo!
 					["coord"] = { 51.4, 80.4, FELWOOD },
-					["maxReputation"] = { 576, EXALTED },	-- Timbermaw Hold, Exalted.
+					["maxReputation"] = { FACTION_TIMBERMAW_HOLD, EXALTED },	-- Timbermaw Hold, Exalted.
 					["timeline"] = { ADDED_4_0_3 },
 					["cost"] = {{ "i", 21377, 5 }},	-- Deadwood Headdress Feather
 					["repeatable"] = true,
@@ -3043,7 +3043,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(221491, {	-- Shadowtooth Bag
 							["description"] = "Random non-Ace card from the new DMF decks.",
 							["cost"] = {{ "i", 221262, 10 }},	-- 10x Wild Offering
-							["sym"] = {{ "select", "itemID", 
+							["sym"] = {{ "select", "itemID",
 								221291,	-- Two of Dunes
 								221292,	-- Three of Dunes
 								221293,	-- Four of Dunes

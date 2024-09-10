@@ -2093,7 +2093,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 66.1, 63.7, STONETALON_MOUNTAINS },
 					["description"] = "This quest cannot be completed after level 30, after reaching Exalted with Orgrimmar, or after finishing the Stonetalon Mountains questline.",
 					["timeline"] = { ADDED_4_0_3 },
-					["maxReputation"] = { 76, EXALTED },
+					["maxReputation"] = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {

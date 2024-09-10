@@ -1353,7 +1353,7 @@ applyclassicphase(PHASE_SIX,
 						q(9237, {	-- Glacial Cloak
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 							["cost"] = {
@@ -1389,7 +1389,7 @@ applyclassicphase(PHASE_SIX,
 						q(9240, {	-- Glacial Vest
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 							["classes"] = { PRIEST, MAGE, WARLOCK },
 							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
@@ -1444,7 +1444,7 @@ applyclassicphase(PHASE_SIX,
 						q(9236, {	-- Icebane Breastplate
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 							["classes"] = { WARRIOR, PALADIN },
 							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
@@ -1499,7 +1499,7 @@ applyclassicphase(PHASE_SIX,
 						q(9246, {	-- Icy Scale Breastplate
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 							["classes"] = { HUNTER, SHAMAN },
 							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
@@ -1536,7 +1536,7 @@ applyclassicphase(PHASE_SIX,
 						q(9233, {	-- Omarion's Handbook
 							["provider"] = { "i", 22719 },	-- Omarion's Handbook
 							["description"] = "You must not have a profession above 270 skill for you to get this item from Omarion.",
-							["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+							["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
 							["lvl"] = 60,
 						}),
@@ -1579,7 +1579,7 @@ applyclassicphase(PHASE_SIX,
 						q(9243, {	-- Polar Tunic
 							["qg"] = 16376,	-- Craftsman Wilhelm <Brotherhood of the Light>
 							["sourceQuest"] = 9233,	-- Omarion's Handbook
-							["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["coord"] = { 81.0, 59.6, EASTERN_PLAGUELANDS },
 							["classes"] = { ROGUE, DRUID },
 							["OnUpdate"] = [[_.OnUpdateForOmarionsHandbook]],
@@ -1611,7 +1611,7 @@ applyclassicphase(PHASE_SIX,
 						}),
 						q(9121, {	-- The Dread Citadel - Naxxramas [Honored]
 							["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
-							["minReputation"] = { 529, HONORED },	-- Argent Dawn, Honored.
+							["minReputation"] = { FACTION_ARGENT_DAWN, HONORED },	-- Argent Dawn, Honored.
 							["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
 							["altQuests"] = {
 								9122,	-- The Dread Citadel - Naxxramas [Revered]
@@ -1630,7 +1630,7 @@ applyclassicphase(PHASE_SIX,
 						q(9122, {	-- The Dread Citadel - Naxxramas [Revered]
 							["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
 							["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
-							["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+							["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 							["altQuests"] = {
 								9121,	-- The Dread Citadel - Naxxramas [Honored]
 								9123,	-- The Dread Citadel - Naxxramas [Exalted]
@@ -1645,7 +1645,7 @@ applyclassicphase(PHASE_SIX,
 						}),
 						q(9123, {	-- The Dread Citadel - Naxxramas [Exalted]
 							["qg"] = 16116,	-- Archmage Angela Dosantos <Brotherhood of the Light>
-							["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+							["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 							["coord"] = { 81.5, 58.3, EASTERN_PLAGUELANDS },
 							["altQuests"] = {
 								9121,	-- The Dread Citadel - Naxxramas [Honored]
@@ -1910,59 +1910,59 @@ applyclassicphase(PHASE_SIX,
 								["timeline"] = { ADDED_1_11_1 },
 								["groups"] = {
 									i(22719, {	-- Omarion's Handbook
-										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 										["description"] = "Non-crafters can take his handbook to Craftsman Wilhelm at Light's Hope Chapel who can make all the items as well, as long as the players provide the materials and pay a hefty fee.",
 									}),
 									{
 										["itemID"] = 22685,	-- Pattern: Glacial Cloak
-										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+										["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 									},
 									{
 										["itemID"] = 22684,	-- Pattern: Glacial Gloves
-										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 									},
 									{
 										["itemID"] = 22686,	-- Pattern: Glacial Vest
-										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+										["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 									},
 									{
 										["itemID"] = 22687,	-- Pattern: Glacial Wrists
-										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 									},
 									r(28244, {	-- Icebane Bracers (RECIPE!)
-										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 										["requireSkill"] = BLACKSMITHING,
 									}),
 									r(28242, {	-- Icebane Breastplate (RECIPE!)
-										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+										["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 										["requireSkill"] = BLACKSMITHING,
 									}),
 									r(28243, {	-- Icebane Gauntlets (RECIPE!)
-										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 										["requireSkill"] = BLACKSMITHING,
 									}),
 									r(28224, {	-- Icy Scale Bracers (RECIPE!)
-										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 										["requireSkill"] = LEATHERWORKING,
 									}),
 									r(28222, {	-- Icy Scale Breastplate (RECIPE!)
-										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Revered.
+										["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Revered.
 										["requireSkill"] = LEATHERWORKING,
 									}),
 									r(28223, {	-- Icy Scale Gauntlets (RECIPE!)
-										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 										["requireSkill"] = LEATHERWORKING,
 									}),
 									r(28221, {	-- Polar Bracers (RECIPE!)
-										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 										["requireSkill"] = LEATHERWORKING,
 									}),
 									r(28220, {	-- Polar Gloves (RECIPE!)
-										["minReputation"] = { 529, REVERED },	-- Argent Dawn, Revered.
+										["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn, Revered.
 										["requireSkill"] = LEATHERWORKING,
 									}),
 									r(28219, {	-- Polar Tunic (RECIPE!)
-										["minReputation"] = { 529, EXALTED },	-- Argent Dawn, Revered.
+										["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Revered.
 										["requireSkill"] = LEATHERWORKING,
 									}),
 								},

@@ -336,11 +336,11 @@ root(ROOTS.Zones, {
 					exploration(3582),	-- Zeth'Gor
 				}),
 				n(FACTIONS, {
-					faction(946, {	-- Honor Hold
+					faction(FACTION_HONOR_HOLD, {	-- Honor Hold
 						["maps"] = { HELLFIRE_CITADEL_BLOOD_FURNACE, HELLFIRE_CITADEL_RAMPARTS, HELLFIRE_CITADEL_SHATTERED_HALLS },
 						["races"] = ALLIANCE_ONLY,
 					}),
-					faction(947, {	-- Thrallmar
+					faction(FACTION_THRALLMAR, {	-- Thrallmar
 						["maps"] = { HELLFIRE_CITADEL_BLOOD_FURNACE, HELLFIRE_CITADEL_RAMPARTS, HELLFIRE_CITADEL_SHATTERED_HALLS },
 						["races"] = HORDE_ONLY,
 					}),
@@ -812,7 +812,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_FIVE, q(11516, {	-- Blast the Gateway
 						["qg"] = 24937,	-- Magistrix Seyla
 						["sourceQuest"] = 11526,	-- The Missing Magistrix
-						["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+						["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["coord"] = { 58.2, 17.6, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(70, 70, 25),
 						["isDaily"] = true,
@@ -830,7 +830,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_FIVE, q(11515, {	-- Blood for Blood
 						["qg"] = 24937,	-- Magistrix Seyla
 						["sourceQuest"] = 11526,	-- The Missing Magistrix
-						["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+						["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 						["coord"] = { 58.2, 17.6, HELLFIRE_PENINSULA },
 						["lvl"] = lvlsquish(70, 70, 25),
 						["isDaily"] = true,

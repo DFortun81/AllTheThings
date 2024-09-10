@@ -50,7 +50,7 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					achWithRep(902, 933, {	-- Chief Exalted Officer
+					achWithRep(902, FACTION_THE_CONSORTIUM, {	-- Chief Exalted Officer
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with The Consortium to Exalted.",
 						-- #endif
@@ -66,7 +66,7 @@ root(ROOTS.Zones, {
 						["description"] = "Complete all of Hemet Nesingwary quests in Nagrand up to and including The Ultimate Bloodsport.",
 						-- #endif
 					}),
-					achWithRep(901, 941, {	-- Mag'har of Draenor
+					achWithRep(901, FACTION_THE_MAGHAR, {	-- Mag'har of Draenor
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Mag'har to Exalted.",
 						-- #endif
@@ -266,7 +266,7 @@ root(ROOTS.Zones, {
 						-- },
 						-- #endif
 					}),
-					achWithRep(899, 978, {	-- Oh My, Kurenai
+					achWithRep(899, FACTION_KURENAI, {	-- Oh My, Kurenai
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Kurenai to Exalted.",
 						-- #endif
@@ -322,15 +322,15 @@ root(ROOTS.Zones, {
 					exploration(3763),	-- Zangar Ridge
 				}),
 				n(FACTIONS, {
-					faction(978, {	-- Kurenai
+					faction(FACTION_KURENAI, {	-- Kurenai
 						["OnTooltip"] = OnTooltipForKurenai,
 						["races"] = ALLIANCE_ONLY,
 					}),
-					faction(933, {	-- The Consortium
+					faction(FACTION_THE_CONSORTIUM, {	-- The Consortium
 						["maps"] = { NETHERSTORM, AUCHINDOUN_MANA_TOMBS },
 						["OnTooltip"] = OnTooltipForConsortium,
 					}),
-					faction(941, {	-- The Mag'har
+					faction(FACTION_THE_MAGHAR, {	-- The Mag'har
 						["OnTooltip"] = OnTooltipForMaghar,
 						["races"] = HORDE_ONLY,
 					}),
@@ -979,8 +979,8 @@ root(ROOTS.Zones, {
 					q(9914, {	-- A Head Full of Ivory
 						["qg"] = 18333,	-- Shadrek
 						["coord"] = { 31.8, 56.8, NAGRAND },
-						["maxReputation"] = { 933, FRIENDLY },	-- The Consortium, Friendly.
-						["minReputation"] = { 933, NEUTRAL },	-- The Consortium, Neutral.
+						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
+						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
@@ -989,8 +989,8 @@ root(ROOTS.Zones, {
 					q(9886, {	-- Membership Benefits
 						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
-						["maxReputation"] = { 933, FRIENDLY },	-- The Consortium, Friendly.
-						["minReputation"] = { 933, NEUTRAL },	-- The Consortium, Neutral.
+						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
+						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
@@ -1003,8 +1003,8 @@ root(ROOTS.Zones, {
 					q(9884, {	-- Membership Benefits
 						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
-						["maxReputation"] = { 933, HONORED },	-- The Consortium, Honored.
-						["minReputation"] = { 933, FRIENDLY },	-- The Consortium, Friendly.
+						["maxReputation"] = { FACTION_THE_CONSORTIUM, HONORED },	-- The Consortium, Honored.
+						["minReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.6 },	-- Consortium, Honored
@@ -1028,7 +1028,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10476,	-- Fierce Enemies
 						["coord"] = { 54.8, 70.8, NAGRAND },
 						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
-						["maxReputation"] = { 978, EXALTED },	-- Kurenai, Exalted.
+						["maxReputation"] = { FACTION_KURENAI, EXALTED },	-- Kurenai, Exalted.
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 978.8 },	-- Kurenai, Exalted
@@ -1039,8 +1039,8 @@ root(ROOTS.Zones, {
 					q(9885, {	-- Membership Benefits
 						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
-						["maxReputation"] = { 933, REVERED },	-- The Consortium, Revered.
-						["minReputation"] = { 933, HONORED },	-- The Consortium, Honored.
+						["maxReputation"] = { FACTION_THE_CONSORTIUM, REVERED },	-- The Consortium, Revered.
+						["minReputation"] = { FACTION_THE_CONSORTIUM, HONORED },	-- The Consortium, Honored.
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.7 },	-- Consortium, Revered
@@ -1053,7 +1053,7 @@ root(ROOTS.Zones, {
 					q(9887, {	-- Membership Benefits
 						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
-						["minReputation"] = { 933, REVERED },
+						["minReputation"] = { FACTION_THE_CONSORTIUM, REVERED },
 						["isMonthly"] = true,
 						["groups"] = {
 							i(25423),	-- Bag of Premium Gems
@@ -1063,8 +1063,8 @@ root(ROOTS.Zones, {
 						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["sourceQuest"] = 9882,	-- Stealing from Thieves
 						["coord"] = { 31.4, 57.8, NAGRAND },
-						["maxReputation"] = { 933, FRIENDLY },	-- The Consortium, Friendly.
-						["minReputation"] = { 933, NEUTRAL },	-- The Consortium, Neutral.
+						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
+						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
@@ -1075,8 +1075,8 @@ root(ROOTS.Zones, {
 						["qg"] = 18333,	-- Shadrek
 						["sourceQuest"] = 9914,	-- A Head Full of Ivory
 						["coord"] = { 31.8, 56.8, NAGRAND },
-						["maxReputation"] = { 933, FRIENDLY },	-- The Consortium, Friendly.
-						["minReputation"] = { 933, NEUTRAL },	-- The Consortium, Neutral.
+						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
+						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },	-- The Consortium, Neutral.
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
@@ -1088,8 +1088,8 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 9893,	-- Obsidian Warbeads
 						["coord"] = { 31.4, 57.8, NAGRAND },
 						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
-						["maxReputation"] = { 933, EXALTED },	-- The Consortium, Exalted.
-						["minReputation"] = { 933, FRIENDLY },	-- The Consortium, Friendly.
+						["maxReputation"] = { FACTION_THE_CONSORTIUM, EXALTED },	-- The Consortium, Exalted.
+						["minReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },	-- The Consortium, Friendly.
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 933.8 },	-- The Consortium, Exalted
@@ -1101,7 +1101,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 10479,	-- Proving Your Strength
 						["coord"] = { 55.8, 37.8, NAGRAND },
 						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
-						["maxReputation"] = { 941, EXALTED },	-- The Maghar, Exalted.
+						["maxReputation"] = { FACTION_THE_MAGHAR, EXALTED },	-- The Maghar, Exalted.
 						-- #if NOT ANYCLASSIC
 						-- TODO: Investigate if this is necessary, we have maxReputation already for this since it's a repeatable quest.
 						["lockCriteria"] = { 1, "factionID", 941.8 },	-- The Maghar, Exalted
@@ -1118,14 +1118,14 @@ root(ROOTS.Zones, {
 					q(9893, {	-- Obsidian Warbeads
 						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
-						["minReputation"] = { 933, FRIENDLY },
+						["minReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },
 						["cost"] = { { "i", 25433, 10 }, },	-- Obsidian Warbeads
 					}),
 					q(9882, {	-- Stealing from Thieves
 						["qg"] = 18265,	-- Gezhe <The Consortium>
 						["coord"] = { 31.4, 57.8, NAGRAND },
-						["minReputation"] = { 933, NEUTRAL },
-						["maxReputation"] = { 933, FRIENDLY },
+						["minReputation"] = { FACTION_THE_CONSORTIUM, NEUTRAL },
+						["maxReputation"] = { FACTION_THE_CONSORTIUM, FRIENDLY },
 						["lockCriteria"] = { 1, "factionID", 933.5 },	-- Consortium, Friendly
 					}),
 					q(9906, {	-- Message in a Battle
@@ -1234,7 +1234,7 @@ root(ROOTS.Zones, {
 						["qg"] = 18068,	-- Farseer Margadesh <The Lightning Sons>
 						["coord"] = { 54.6, 39.8, NAGRAND },
 						["description"] = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
-						["minReputation"] = { 941, NEUTRAL },	-- The Mag'har, Neutral
+						["minReputation"] = { FACTION_THE_MAGHAR, NEUTRAL },	-- The Mag'har, Neutral
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/1 Head of Ortor of Murkblood
@@ -1363,7 +1363,7 @@ root(ROOTS.Zones, {
 					q(10650, {	-- Return to the Aldor
 						["qg"] = 18417,	-- Altruis the Sufferer
 						["sourceQuest"] = 10649,	-- The Book of Fel Names
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10170, {	-- Return to the Greatmother
 						["qg"] = 18687,	-- Mother Kashur
@@ -1375,7 +1375,7 @@ root(ROOTS.Zones, {
 						["qg"] = 18417,	-- Altruis
 						["sourceQuest"] = 10649,	-- The Book of Fel Names
 						["coord"] = { 27.3, 43.0, NAGRAND },
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(9931, {	-- Returning the Favor
 						["qg"] = 18261,	-- Lantresor of the Blade
@@ -1559,7 +1559,7 @@ root(ROOTS.Zones, {
 						["qg"] = 18067,	-- Farseer Corhuk <The Lightning Sons>
 						["coord"] = { 54.8, 39.8, NAGRAND },
 						["description"] = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
-						["minReputation"] = { 941, NEUTRAL },	-- The Mag'har, Neutral
+						["minReputation"] = { FACTION_THE_MAGHAR, NEUTRAL },	-- The Mag'har, Neutral
 						["races"] = HORDE_ONLY,
 					}),
 					q(10113, {	-- The Nesingwary Safari (A)
@@ -1806,7 +1806,7 @@ root(ROOTS.Zones, {
 						["qg"] = 18066,	-- Farseer Kurkush <The Lightning Sons>
 						["coord"] = { 54.8, 39.4, NAGRAND },
 						["description"] = "Completing [9888] 'The Impotent Leader' will grant Neutral with The Mag'har.",
-						["minReputation"] = { 941, NEUTRAL },	-- The Mag'har, Neutral
+						["minReputation"] = { FACTION_THE_MAGHAR, NEUTRAL },	-- The Mag'har, Neutral
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							objective(1, {	-- 0/10 Murkblood Idol

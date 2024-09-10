@@ -21,7 +21,7 @@ root(ROOTS.Zones, {
 						["description"] = "Explore Shadowmoon Valley, revealing the covered areas of the world map.",
 						-- #endif
 					}),
-					applyclassicphase(TBC_PHASE_THREE_NETHERWING, achWithRep(898, 1015, {	-- On Wings of Nether
+					applyclassicphase(TBC_PHASE_THREE_NETHERWING, achWithRep(898, FACTION_NETHERWING, {	-- On Wings of Nether
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Netherwing to Exalted.",
 						-- #endif
@@ -162,7 +162,7 @@ root(ROOTS.Zones, {
 					exploration(3745),	-- Wildhammer Stronghold
 				}),
 				n(FACTIONS, {
-					applyclassicphase(TBC_PHASE_THREE_NETHERWING, faction(1015, {	-- Netherwing
+					applyclassicphase(TBC_PHASE_THREE_NETHERWING, faction(FACTION_NETHERWING, {	-- Netherwing
 						["OnTooltip"] = OnTooltipForNetherwing,
 					})),
 				}),
@@ -170,13 +170,13 @@ root(ROOTS.Zones, {
 					fp(140, {	-- Altar of Sha'tar, Shadowmoon Valley
 						["cr"] = 19581,	-- Maddix <Flight Master>
 						["coord"] = { 63.2, 30.4, SHADOWMOON_VALLEY },
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["altQuests"] = { 10553 }, -- Voren'thal the Seer
 					}),
 					fp(159, {	-- Sanctum of the Stars, Shadowmoon Valley
 						["cr"] = 21766,	-- Alieshor <Flight Master>
 						["coord"] = { 56.2, 57.8, SHADOWMOON_VALLEY },
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["altQuests"] = { 10554 }, -- Ishanah
 					}),
 					fp(123, {	-- Shadowmoon Village, Shadowmoon Valley
@@ -251,7 +251,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11041, {	-- A Job Unfinished...
 						["provider"] = { "i", 32621 },	-- Partially Digested Hand
 						["sourceQuest"] = 10870,	-- Ally of the Netherwing
-						["minReputation"] = { 1015, NEUTRAL },	-- Netherwing, Neutral.
+						["minReputation"] = { FACTION_NETHERWING, NEUTRAL },	-- Netherwing, Neutral.
 						["groups"] = {
 							i(32866),	-- Ascendant's Boots
 							i(32867),	-- Dragonmaw Augur's Cinch
@@ -273,26 +273,26 @@ root(ROOTS.Zones, {
 					q(10637, {	-- A Necessary Distraction
 						["qg"] = 21860,	-- Exarch Onaala
 						["sourceQuest"] = 10587,	-- Karabor Training Grounds
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10688, {	-- A Necessary Distraction
 						["qg"] = 21954,	-- Larissa Sunstrike
 						["sourceQuest"] = 10687,	-- Karabor Training Grounds
 						["coord"] = { 55.7, 58.1, SHADOWMOON_VALLEY },
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11020, {	-- A Slow Death
 						["qg"] = 23141,	-- Yarzill the Merc
 						["sourceQuest"] = 11019,	-- Your Friend on the Inside
 						["coord"] = { 65.9, 86.4, SHADOWMOON_VALLEY },
-						["maxReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
+						["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 						["isDaily"] = true,
 					})),
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11050, {	-- Accepting All Eggs
 						["qg"] = 23141,	-- Yarzill the Merc
 						["sourceQuest"] = 11049,	-- The Great Netherwing Egg Hunt
 						["coord"] = { 65.9, 86.4, SHADOWMOON_VALLEY },
-						["maxReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
+						["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 						["cost"] = { { "i", 32506, 1 } },	-- Netherwing Egg
 						["repeatable"] = true,
 					})),
@@ -344,13 +344,13 @@ root(ROOTS.Zones, {
 					q(10640, {	-- Altruis (Aldor)
 						["qg"] = 21860,	-- Exarch Onaala
 						["sourceQuest"] = 10637,	-- A Necessary Distraction
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10689, {	-- Altruis (Scryers)
 						["qg"] = 21954,	-- Larissa Sunstrike
 						["sourceQuest"] = 10688,	-- A Necessary Distraction
 						["coord"] = { 55.7, 58.1, SHADOWMOON_VALLEY },
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10870, {	-- Ally of the Netherwing
 						["qg"] = 22112,	-- Karynaku
@@ -515,7 +515,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 						["sourceQuest"] = 11092,	-- Hail, Commander!
 						["coord"] = { 66.0, 86.4, SHADOWMOON_VALLEY },
-						["minReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
+						["minReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 					})),
 					q(10773, {	-- Breaching the Path (A)
 						["qg"] = 22059,	-- Wildhammer Gryphon Rider
@@ -608,19 +608,19 @@ root(ROOTS.Zones, {
 						["qg"] = 21402,	-- Anchorite Ceyla
 						["sourceQuest"] = 11099,	-- Kill Them All! (Aldor)
 						["coord"] = { 62.4, 28.4, SHADOWMOON_VALLEY },
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					})),
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11095, {	-- Commander Hobb
 						["qg"] = 21955,	-- Arcanist Thelis
 						["sourceQuest"] = 11094,	-- Kill Them All! (Scryers)
 						["coord"] = { 56.2, 59.6, SHADOWMOON_VALLEY },
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					})),
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11083, {	-- Crazed and Confused
 						["qg"] = 23166,	-- Ronag the Slave Driver
 						["sourceQuest"] = 11075,	-- The Netherwing Mines
 						["coord"] = { 71.6, 87.6, SHADOWMOON_VALLEY },
-						["minReputation"] = { 1015, FRIENDLY },	-- Netherwing, Friendly.
+						["minReputation"] = { FACTION_NETHERWING, FRIENDLY },	-- Netherwing, Friendly.
 					})),
 					q(10528, {	-- Demonic Crystal Prisons
 						["qg"] = 21292,	-- Ar'tor, Son of Oronok
@@ -630,7 +630,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23139,	-- Overlord Mor'ghor
 						["sourceQuest"] = 11084,	-- Stand Tall, Captain!
 						["coord"] = { 66.3, 85.6, SHADOWMOON_VALLEY },
-						["maxReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
+						["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 						["isDaily"] = true,
 					})),
 					q(10776, {	-- Dissension Amongst the Ranks... (A)
@@ -771,8 +771,8 @@ root(ROOTS.Zones, {
 						["qg"] = 23376,	-- Dragonmaw Foreman
 						["sourceQuest"] = 11075,	-- The Netherwing Mines
 						["coord"] = { 63.4, 87.4, SHADOWMOON_VALLEY },
-						["maxReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
-						["minReputation"] = { 1015, FRIENDLY },	-- Netherwing, Friendly.
+						["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
+						["minReputation"] = { FACTION_NETHERWING, FRIENDLY },	-- Netherwing, Friendly.
 						["isDaily"] = true,
 					})),
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11063, {	-- Earning Your Wings
@@ -885,7 +885,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 						["sourceQuest"] = 11084,	-- Stand Tall, Captain!
 						["coord"] = { 66.0, 86.4, SHADOWMOON_VALLEY },
-						["minReputation"] = { 1015, REVERED },	-- Netherwing, Revered.
+						["minReputation"] = { FACTION_NETHERWING, REVERED },	-- Netherwing, Revered.
 						["groups"] = {
 							i(32864),	-- Commander's Badge
 						},
@@ -973,13 +973,13 @@ root(ROOTS.Zones, {
 					q(10587, {	-- Karabor Training Grounds (Aldor)
 						["qg"] = 21860,	-- Exarch Onaala
 						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10687, {	-- Karabor Training Grounds (Scryers)
 						["qg"] = 21954,	-- Larissa Sunstrike
 						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
 						["coord"] = { 55.7, 58.1, SHADOWMOON_VALLEY },
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10858, {	-- Karynaku
 						["qg"] = 21657,	-- Neltharaku
@@ -990,13 +990,13 @@ root(ROOTS.Zones, {
 						["qg"] = 23139,	-- Overlord Mor'ghor
 						["sourceQuest"] = 11092,	-- Hail, Commander!
 						["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
-						["minReputation"] = { 932, FRIENDLY },	-- The Aldor, Friendly.
+						["minReputation"] = { FACTION_THE_ALDOR, FRIENDLY },	-- The Aldor, Friendly.
 					})),
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11094, {	-- Kill Them All! (Scryers)
 						["qg"] = 23139,	-- Overlord Mor'ghor
 						["sourceQuest"] = 11092,	-- Hail, Commander!
 						["coord"] = { 66.2, 85.6, SHADOWMOON_VALLEY },
-						["minReputation"] = { 934, FRIENDLY },	-- The Scryers, Friendly.
+						["minReputation"] = { FACTION_THE_SCRYERS, FRIENDLY },	-- The Scryers, Friendly.
 					})),
 					q(10804, {	-- Kindness
 						["qg"] = 22113,	-- Mordenai
@@ -1037,7 +1037,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22214,	-- Harbinger Saronen
 						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
 						["coord"] = { 62.2, 29.8, SHADOWMOON_VALLEY },
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["cost"] = { { "i", 30809, 10 } },	-- Mark of Sargeras
 					}),
 					q(10582, {	-- Minions of the Shadow Council (A)
@@ -1065,8 +1065,8 @@ root(ROOTS.Zones, {
 						["qg"] = 22214,	-- Harbinger Saronen
 						["sourceQuests"] = { 10826, 10653 },	-- Marks of Sargeras (SMV or Shattrath)
 						["coord"] = { 62.2, 29.8, SHADOWMOON_VALLEY },
-						["maxReputation"] = { 932, EXALTED },	-- The Aldor, Exalted.
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["maxReputation"] = { FACTION_THE_ALDOR, EXALTED },	-- The Aldor, Exalted.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["cost"] = { { "i", 30809, 10 } },	-- Mark of Sargeras
 						["repeatable"] = true,
 					}),
@@ -1074,8 +1074,8 @@ root(ROOTS.Zones, {
 						["qg"] = 22211,	-- Battlemage Vyara
 						["sourceQuests"] = { 10824, 10656 },	-- Sunfury Signets (SMV or Shattrath)
 						["coord"] = { 56.2, 58.7, SHADOWMOON_VALLEY },
-						["maxReputation"] = { 934, EXALTED },	-- The Scryers, Exalted.
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["maxReputation"] = { FACTION_THE_SCRYERS, EXALTED },	-- The Scryers, Exalted.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["cost"] = { { "i", 30810, 10 } },	-- Sunfury Signet
 						["repeatable"] = true,
 					}),
@@ -1087,7 +1087,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11018, {	-- Nethercite Ore
 						["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 						["sourceQuest"] = 11014,	-- Enter the Taskmaster
-						["maxReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
+						["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 						["cost"] = { { "i", 32464, 40 } },	-- Nethercite Ore
 						["requireSkill"] = MINING,
 						["isDaily"] = true,
@@ -1095,7 +1095,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11017, {	-- Netherdust Pollen
 						["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 						["sourceQuest"] = 11014,	-- Enter the Taskmaster
-						["maxReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
+						["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 						["cost"] = { { "i", 32468, 40 } },	-- Netherdust Pollen
 						["requireSkill"] = HERBALISM,
 						["isDaily"] = true,
@@ -1103,7 +1103,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11016, {	-- Nethermine Flayer Hide
 						["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 						["sourceQuest"] = 11014,	-- Enter the Taskmaster
-						["maxReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
+						["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 						["cost"] = { { "i", 32470, 35 } },	-- Nethermine Flayer Hide
 						["requireSkill"] = SKINNING,
 						["isDaily"] = true,
@@ -1111,7 +1111,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11015, {	-- Netherwing Crystals
 						["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 						["sourceQuest"] = 11014,	-- Enter the Taskmaster
-						["maxReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
+						["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 						["cost"] = { { "i", 32427, 30 } },	-- Netherwing Crystals
 						["isDaily"] = true,
 					})),
@@ -1159,25 +1159,25 @@ root(ROOTS.Zones, {
 					q(10571, {	-- Oronu the Elder (Aldor)
 						["qg"] = 21402,	-- Anchorite Ceyla
 						["sourceQuest"] = 10568,	-- Tablets of Baa'ri (Aldor)
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10684, {	-- Oronu the Elder (Scryers)
 						["qg"] = 21955,	-- Arcanist Thelis
 						["sourceQuest"] = 10683,	-- Tablets of Baa'ri (Scryers)
 						["coord"] = { 56.2, 59.6, SHADOWMOON_VALLEY },
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11054, {	-- Overseeing and You: Making the Right Choices
 						["qg"] = 23291,	-- Chief Overseer Mudlump
 						["sourceQuest"] = 11053,	-- Rise, Overseer!
 						["coord"] = { 66.8, 86.0, SHADOWMOON_VALLEY },
-						["minReputation"] = { 1015, FRIENDLY },	-- Netherwing, Friendly.
+						["minReputation"] = { FACTION_NETHERWING, FRIENDLY },	-- Netherwing, Friendly.
 					})),
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11076, {	-- Picking Up The Pieces...
 						["qg"] = 23149,	-- Mistress of the Mines
 						["sourceQuest"] = 11075,	-- The Netherwing Mines
 						["coord"] = { 63.0, 87.8, SHADOWMOON_VALLEY },
-						["maxReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
+						["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 						["isDaily"] = true,
 					})),
 					q(10622, {	-- Proof of Allegiance
@@ -1216,7 +1216,7 @@ root(ROOTS.Zones, {
 					q(10816, {	-- Reclaiming Holy Ground
 						["qg"] = 21822,	-- Vindicator Aluumen
 						["sourceQuest"] = 10619,	-- The Ashtongue Tribe
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
 							i(30940),	-- Aged Leather Bindings
 							i(30961),	-- Ash-Covered Helm
@@ -1228,7 +1228,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 						["sourceQuest"] = 11014,	-- Enter the Taskmaster
 						["coord"] = { 66.0, 86.4, SHADOWMOON_VALLEY },
-						["minReputation"] = { 1015, FRIENDLY },	-- Netherwing, Friendly.
+						["minReputation"] = { FACTION_NETHERWING, FRIENDLY },	-- Netherwing, Friendly.
 						["groups"] = {
 							i(32694),	-- Overseer's Badge
 						},
@@ -1270,8 +1270,8 @@ root(ROOTS.Zones, {
 						["qg"] = 22214,	-- Harbinger Saronen
 						["sourceQuests"] = { 10826, 10653 },	-- Marks of Sargeras (SMV or Shattrath)
 						["coord"] = { 62.2, 29.8, SHADOWMOON_VALLEY },
-						["maxReputation"] = { 932, EXALTED },	-- The Aldor, Exalted.
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["maxReputation"] = { FACTION_THE_ALDOR, EXALTED },	-- The Aldor, Exalted.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["cost"] = { { "i", 30809, 1 } },	-- Mark of Sargeras
 						["repeatable"] = true,
 					}),
@@ -1279,8 +1279,8 @@ root(ROOTS.Zones, {
 						["qg"] = 22211,	-- Battlemage Vyara
 						["sourceQuests"] = { 10824, 10656 },	-- Sunfury Signets (SMV or Shattrath)
 						["coord"] = { 56.2, 58.7, SHADOWMOON_VALLEY },
-						["maxReputation"] = { 934, EXALTED },	-- The Scryers, Exalted.
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["maxReputation"] = { FACTION_THE_SCRYERS, EXALTED },	-- The Scryers, Exalted.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["cost"] = { { "i", 30810, 1 } },	-- Sunfury Signet
 						["repeatable"] = true,
 					}),
@@ -1324,7 +1324,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 						["sourceQuest"] = 11053,	-- Rise, Overseer!
 						["coord"] = { 66.0, 86.4, SHADOWMOON_VALLEY },
-						["minReputation"] = { 1015, HONORED },	-- Netherwing, Honored.
+						["minReputation"] = { FACTION_NETHERWING, HONORED },	-- Netherwing, Honored.
 						["groups"] = {
 							i(32695),	-- Captain's Badge
 						},
@@ -1344,7 +1344,7 @@ root(ROOTS.Zones, {
 						["qg"] = 22211,	-- Battlemage Vyara
 						["coord"] = { 56.2, 58.7, SHADOWMOON_VALLEY },
 						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["cost"] = { { "i", 30810, 10 } },	-- Sunfury Signet
 					}),
 					q(10775, {	-- Tabards of the Illidari (A)
@@ -1376,13 +1376,13 @@ root(ROOTS.Zones, {
 					q(10568, {	-- Tablets of Baa'ri (Aldor)
 						["qg"] = 21402,	-- Anchorite Ceyla
 						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10683, {	-- Tablets of Baa'ri (Scryers)
 						["qg"] = 21955,	-- Arcanist Thelis
 						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
 						["coord"] = { 56.2, 59.6, SHADOWMOON_VALLEY },
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10645, {	-- Teron Gorefiend, I am... (A)
 						["qg"] = 21797,	-- Ancient Shadowmoon Spirit
@@ -1470,23 +1470,23 @@ root(ROOTS.Zones, {
 						["qg"] = 21953,	-- Varen the Reclaimer
 						["sourceQuest"] = 10552,	-- Allegiance to the Scryers
 						["coord"] = { 54.7, 58.1, SHADOWMOON_VALLEY },
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10574, {	-- The Ashtongue Corruptors (Aldor)
 						["qg"] = 21402,	-- Anchorite Ceyla
 						["sourceQuest"] = 10571,	-- Oronu the Elder
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10685, {	-- The Ashtongue Corruptors (Scryers)
 						["qg"] = 21955,	-- Arcanist Thelis
 						["sourceQuest"] = 10684,	-- Oronu the Elder
 						["coord"] = { 56.2, 59.6, SHADOWMOON_VALLEY },
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10619, {	-- The Ashtongue Tribe
 						["qg"] = 21822,	-- Vindicator Aluumen
 						["sourceQuest"] = 10551,	-- Allegiance to the Aldor
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10707, {	-- The Ata'mal Terrace
 						["qg"] = 21700,	-- Akama
@@ -1497,7 +1497,7 @@ root(ROOTS.Zones, {
 						["qg"] = 23291,	-- Chief Overseer Mudlump
 						["sourceQuest"] = 11054,	-- Overseeing and You: Making the Right Choices
 						["coord"] = { 66.8, 86.0, SHADOWMOON_VALLEY },
-						["maxReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
+						["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 						["isDaily"] = true,
 					})),
 					q(10588, {	-- The Cipher of Damnation
@@ -1569,16 +1569,16 @@ root(ROOTS.Zones, {
 						["qg"] = 23452,	-- Commander Arcus
 						["sourceQuest"] = 11100,	-- Commander Arcus
 						["coord"] = { 62.4, 29.4, SHADOWMOON_VALLEY },
-						["maxReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["isDaily"] = true,
 					})),
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11097, {	-- The Deadliest Trap Ever Laid (Scryers)
 						["qg"] = 23434,	-- Commander Hobb
 						["sourceQuest"] = 11095,	-- Commander Hobb
 						["coord"] = { 56.6, 58.6, SHADOWMOON_VALLEY },
-						["maxReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["isDaily"] = true,
 					})),
 					q(10573, {	-- The Deathforge (A)
@@ -1626,7 +1626,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11081, {	-- The Great Murkblood Revolt
 						["provider"] = { "i", 32726 },	-- Murkblood Escape Plans
 						["description"] = "The plans can be found inside Sludge-Covered Object, looted from Black Bloods inside the mines.  You must be at least Friendly with Netherwing to loot them.",
-						["minReputation"] = { 1015, FRIENDLY },	-- Netherwing, Friendly.
+						["minReputation"] = { FACTION_NETHERWING, FRIENDLY },	-- Netherwing, Friendly.
 					})),
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11049, {	-- The Great Netherwing Egg Hunt
 						["qg"] = 23141,	-- Yarzill the Merc
@@ -1637,7 +1637,7 @@ root(ROOTS.Zones, {
 					q(10817, {	-- The Great Retribution
 						["qg"] = 21953,	-- Varen the Reclaimer
 						["sourceQuest"] = 10807,	-- The Ashtongue Broken
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["coord"] = { 54.7, 58.1, SHADOWMOON_VALLEY },
 						["groups"] = {
 							i(30940),	-- Aged Leather Bindings
@@ -1693,13 +1693,13 @@ root(ROOTS.Zones, {
 						["qg"] = 23140,	-- Taskmaster Varkule Dragonbreath
 						["sourceQuest"] = 11053,	-- Rise, Overseer!
 						["coord"] = { 66.0, 86.4, SHADOWMOON_VALLEY },
-						["minReputation"] = { 1015, FRIENDLY },	-- Netherwing, Friendly.
+						["minReputation"] = { FACTION_NETHERWING, FRIENDLY },	-- Netherwing, Friendly.
 					})),
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, q(11035, {	-- The Not-So-Friendly Skies...
 						["qg"] = 23141,	-- Yarzill the Merc
 						["sourceQuest"] = 11019,	-- Your Friend on the Inside
 						["coord"] = { 65.9, 86.4, SHADOWMOON_VALLEY },
-						["maxReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
+						["maxReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 						["isDaily"] = true,
 					})),
 					q(10772, {	-- The Path of Conquest (A)
@@ -1816,13 +1816,13 @@ root(ROOTS.Zones, {
 					q(10575, {	-- The Warden's Cage (Aldor)
 						["qg"] = 21402,	-- Anchorite Ceyla
 						["sourceQuest"] = 10574,	-- The Ashtongue Corruptors
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					}),
 					q(10686, {	-- The Warden's Cage (Scryers)
 						["qg"] = 21955,	-- Arcanist Thelis
 						["sourceQuest"] = 10685,	-- The Ashtongue Corruptors
 						["coord"] = { 56.2, 59.6, SHADOWMOON_VALLEY },
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					}),
 					q(10808, {	-- Thwart the Dark Conclave
 						["qg"] = 22024,	-- Parshah
@@ -1871,7 +1871,7 @@ root(ROOTS.Zones, {
 						["qg"] = 21860,	-- Exarch Onaala
 						["coord"] = { 61.2, 29.2, SHADOWMOON_VALLEY },
 						["sourceQuest"] = 10650,	-- Return to the Aldor
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["groups"] = {
 							i(31013),	-- Ceremonial Kris
 							i(30933),	-- Hauberk of Karabor
@@ -1885,7 +1885,7 @@ root(ROOTS.Zones, {
 						["qg"] = 21954,	-- Larissa Sunstrike
 						["coord"] = { 55.7, 58.1, SHADOWMOON_VALLEY },
 						["sourceQuest"] = 10691,	-- Return to the Scryers
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
 							i(31013),	-- Ceremonial Kris
 							i(30933),	-- Hauberk of Karabor
@@ -2038,7 +2038,7 @@ root(ROOTS.Zones, {
 				n(VENDORS, {
 					n(19521, {	-- Arrond <Tailoring Supplies>
 						["coord"] = { 55.8, 58.2, SHADOWMOON_VALLEY },
-						["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 						["groups"] = {
 							i(21900, {	-- Pattern: Imbued Netherweave Robe (RECIPE!)
 								["isLimited"] = true,
@@ -2096,7 +2096,7 @@ root(ROOTS.Zones, {
 							11114,	-- Zoya the Veridian Netherwing Drake
 						},
 						["coord"] = { 65.6, 85.9, SHADOWMOON_VALLEY },
-						["minReputation"] = { 1015, EXALTED },	-- Netherwing, Exalted.
+						["minReputation"] = { FACTION_NETHERWING, EXALTED },	-- Netherwing, Exalted.
 						["description"] = "To access this vendor, you must reach Exalted with the Netherwing and claim one of the netherwing drakes in Shattrath.",
 						["groups"] = {
 							i(32858),	-- Azure Netherwing Drake (MOUNT!)
@@ -2109,7 +2109,7 @@ root(ROOTS.Zones, {
 					})),
 					n(19526, {	-- Dunaman <Weapons Vendor>
 						["coord"] = { 63.2, 30.6, SHADOWMOON_VALLEY },
-						["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 						["sym"] = {{"select","itemID",
 							30754,	-- Ancient Bone Mace
 							30749,	-- Draenic Sparring Blade
@@ -2207,7 +2207,7 @@ root(ROOTS.Zones, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32506)),	-- Netherwing Egg
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, i(32621, {	-- Partially Digested Hand
 						["coord"] = { 74.6, 86.5, SHADOWMOON_VALLEY },
-						["minReputation"] = { 1015, NEUTRAL },	-- Netherwing, Neutral.
+						["minReputation"] = { FACTION_NETHERWING, NEUTRAL },	-- Netherwing, Neutral.
 						["cr"] = 23267,	-- Arvoar the Rapacious
 					})),
 					i(23609, {	-- Plans: Khorium Pants (RECIPE!)

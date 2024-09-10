@@ -54,7 +54,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(1699),	-- Thorn Hill
 			}),
 			n(FACTIONS, {
-				faction(470, {	-- Ratchet
+				faction(FACTION_RATCHET, {	-- Ratchet
 					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					["OnTooltip"] = OnTooltipForRatchet,
 					["maps"] = { TANARIS },
@@ -1745,7 +1745,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(9267, {	-- Mending Old Wounds
 					["qg"] = 16418,	-- Mupsi Shacklefridd
 					["coord"] = { 61.22, 37.86, THE_BARRENS },
-					["maxReputation"] = { 470, NEUTRAL },	-- Ratchet, must be less than Neutral
+					["maxReputation"] = { FACTION_RATCHET, NEUTRAL },	-- Ratchet, must be less than Neutral
 					["cost"] = {
 						{ "i", 2589, 40 },	-- Linen Cloth
 						{ "i", 3371, 4 },	-- Empty Vial

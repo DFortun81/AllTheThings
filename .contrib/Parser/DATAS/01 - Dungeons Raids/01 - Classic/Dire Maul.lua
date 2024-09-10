@@ -146,7 +146,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 		["lvl"] = lvlsquish(44, 44, 15),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				achWithRep(5788, 809, {	-- Agent of the Shen'dralar [Shen'dralar Exalted]
+				achWithRep(5788, FACTION_SHENDRALAR, {	-- Agent of the Shen'dralar [Shen'dralar Exalted]
 					-- #if BEFORE 4.1.0
 					-- This isn't actually an achievement yet.
 					["description"] = "Earn exalted status with the Shen'dralar.",
@@ -179,14 +179,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 			}),
 			n(FACTIONS, {
-				faction(809, {	-- Shen'dralar
+				faction(FACTION_SHENDRALAR, {	-- Shen'dralar
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = CAPITAL_GARDENS_MAPS,
 					-- #if BEFORE 4.0.3
 					["OnTooltip"] = OnTooltipForShendralar,
 					-- #endif
 				}),
-				faction(169, {	-- Steamweedle Cartel
+				faction(FACTION_STEAMWHEEDLE_CARTEL, {	-- Steamweedle Cartel
 					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					["OnTooltip"] = OnTooltipForSteamweedle,
 					["maps"] = merge(GORDOK_COMMONS_MAPS, {
@@ -497,7 +497,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					["description"] = "Freeing him gets you access to his Cache.\n\nNOTE: Do not free him until after you have finished your Tribute Run!",
 					["cost"] = { { "i", 18250, 1 } },	-- Gordok Shackle Key
 					-- #endif
-					["maxReputation"] = { 169, EXALTED },	-- Steamweedle Cartel, Exalted.
+					["maxReputation"] = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamweedle Cartel, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["repeatable"] = true,
@@ -675,7 +675,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 14344, 4 },	-- Large Brilliant Shard
 						{ "i", 12753, 2 },	-- Skin of Shadow
 					},
-					["maxReputation"] = { 809, EXALTED },	-- Shen'dralar, Exalted.
+					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
@@ -698,7 +698,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 14344, 2 },	-- Large Brilliant Shard
 						{ "i", 12735, 1 },	-- Frayed Abomination Stitching
 					},
-					["maxReputation"] = { 809, EXALTED },	-- Shen'dralar, Exalted.
+					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
@@ -721,7 +721,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						{ "i", 14344, 2 },	-- Large Brilliant Shard
 						{ "i", 12938, 2 },	-- Blood of Heroes
 					},
-					["maxReputation"] = { 809, EXALTED },	-- Shen'dralar, Exalted.
+					["maxReputation"] = { FACTION_SHENDRALAR, EXALTED },	-- Shen'dralar, Exalted.
 					["repeatable"] = true,
 					["lvl"] = 57,
 					["groups"] = {
@@ -892,7 +892,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				q(5519, {	-- The Gordok Ogre Suit
 					["qg"] = 14338,	-- Knot Thimblejack
 					["sourceQuest"] = 5518,	-- The Gordok Ogre Suit
-					["maxReputation"] = { 169, EXALTED },	-- Steamweedle Cartel, Exalted.
+					["maxReputation"] = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamweedle Cartel, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = GORDOK_COMMONS_MAPS,
 					["cost"] = {

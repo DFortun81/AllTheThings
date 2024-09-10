@@ -23,8 +23,8 @@ local INSANE_IN_THE_MEMBRANE_OnInit = [[function(t)
 					return;
 				end
 			end
-			local bloodsail = _.CreateFaction(87);
-			bloodsail.minReputation = { 87, ]] .. HONORED .. [[ };
+			local bloodsail = _.CreateFaction( ]] .. FACTION_BLOODSAIL_BUCCANEERS .. [[ );
+			bloodsail.minReputation = { ]] .. FACTION_BLOODSAIL_BUCCANEERS .. [[ , ]] .. HONORED .. [[ };
 			bloodsail.OnTooltip = factions[1].OnTooltip;
 			bloodsail.collectible = false;
 			factions[1] = bloodsail;

@@ -889,7 +889,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						5521,	-- Chromatic Mantle of the Dawn
 						5524,	-- Chromatic Mantle of the Dawn
 					},
-					["minReputation"] = { 529, EXALTED },	-- Argent Dawn
+					["minReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn
 					["cost"] = { { "i", 12844, 25 } },	-- Argent Dawn Valor Token
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,
@@ -1524,7 +1524,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						["qg"] = 10856,	-- Argent Quartermaster Hasana <The Argent Dawn>
 						["coord"] = { 83.2, 68.2, TIRISFAL_GLADES },
 					}),
-					["minReputation"] = { 529, REVERED },	-- Argent Dawn
+					["minReputation"] = { FACTION_ARGENT_DAWN, REVERED },	-- Argent Dawn
 					["cost"] = { { "i", 12844, 10 } },	-- Argent Dawn Valor Token
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 55,

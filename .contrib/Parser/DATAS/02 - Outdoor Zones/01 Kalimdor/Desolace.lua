@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				exploration(607),	-- Valley of Spears
 			}),
 			n(FACTIONS, {
-				faction(92, {	-- Gelkis Clan Centaur
+				faction(FACTION_GELKIS_CLAN_CENTAUR, {	-- Gelkis Clan Centaur
 					["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
 					-- #if AFTER CATA
 					-- #if ANYCLASSIC
@@ -162,12 +162,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
 					-- #endif
 					-- #else
-					["minReputation"] = { 92, HONORED },	-- Gelkis Clan Centaur, must be Honored.
-					["maxReputation"] = { 93, HONORED },	-- Magram Clan Centaur, must be lower than Honored.
+					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, must be Honored.
+					["maxReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, must be lower than Honored.
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.DesolaceCentaurs,
 					-- #endif
 				}),
-				faction(93, {	-- Magram Clan Centaur
+				faction(FACTION_MAGRAM_CLAN_CENTAUR, {	-- Magram Clan Centaur
 					["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
 					-- #if AFTER CATA
 					-- #if ANYCLASSIC
@@ -180,8 +180,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_8_0_1 },
 					-- #endif
 					-- #else
-					["minReputation"] = { 93, HONORED },	-- Magram Clan Centaur, must be Honored.
-					["maxReputation"] = { 92, HONORED },	-- Gelkis Clan Centaur, must be lower than Honored.
+					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, must be Honored.
+					["maxReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, must be lower than Honored.
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.DesolaceCentaurs,
 					-- #endif
 				}),
@@ -321,7 +321,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1386, {	-- Assault on the Kolkar
 					["qg"] = 5398,	-- Warug
 					["sourceQuest"] = 1385,	-- Brutal Politics
-					["minReputation"] = { 93, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["coord"] = { 74.8, 68.0, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,	-- TODO: Double check that this is only Alliance Only
@@ -473,7 +473,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						1386,	-- Assault on the Kolkar
 						1367,	-- Magram Alliance
 					},
-					["minReputation"] = { 93, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["coord"] = { 74.8, 68.0, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
@@ -1048,7 +1048,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1371, {	-- Gizmo for Warug
 					["qg"] = 5398,	-- Warug
 					["sourceQuest"] = 1369,	-- Broken Tears
-					["minReputation"] = { 93, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["coord"] = { 74.8, 68.0, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["cost"] = {{ "i", 4392, 1 }},	-- Advanced Target Dummy
@@ -1257,7 +1257,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1380, {	-- Khan Hratha (Gelkis)
 					["qg"] = 5397,	-- Uthek the Wise
 					["sourceQuest"] = 1374,	-- Khan Jehn
-					["minReputation"] = { 92, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["coord"] = { 36.2, 79.2, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
@@ -1279,7 +1279,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1381, {	-- Khan Hratha (Magram)
 					["qg"] = 5398,	-- Warug
 					["sourceQuest"] = 1375,	-- Khan Shaka
-					["minReputation"] = { 93, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["coord"] = { 74.8, 68.0, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
@@ -1301,7 +1301,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1374, {	-- Khan Jehn
 					["qg"] = 5397,	-- Uthek the Wise
 					["sourceQuest"] = 1373,	-- Ongeku
-					["minReputation"] = { 92, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["coord"] = { 36.2, 79.2, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
@@ -1316,7 +1316,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1375, {	-- Khan Shaka
 					["qg"] = 5398,	-- Warug
 					["sourceQuest"] = 1371,	-- Gizmo for Warug
-					["minReputation"] = { 93, FRIENDLY },	-- Magram Clan Centaur, Friendly.
+					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, FRIENDLY },	-- Magram Clan Centaur, Friendly.
 					["coord"] = { 74.8, 68.0, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,
@@ -1464,7 +1464,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1373, {	-- Ongeku
 					["qg"] = 5397,	-- Uthek the Wise
 					["sourceQuest"] = 1370,	-- Stealing Supplies
-					["minReputation"] = { 92, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["coord"] = { 36.2, 79.2, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["maps"] = { SWAMP_OF_SORROWS },
@@ -1978,7 +1978,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				q(1370, {	-- Stealing Supplies
 					["qg"] = 5397,	-- Uthek the Wise
 					["sourceQuest"] = 1384,	-- Raid on the Kolkar
-					["minReputation"] = { 92, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
+					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, FRIENDLY },	-- Gelkis Clan Centaur, Friendly.
 					["coord"] = { 36.2, 79.2, DESOLACE },
 					["timeline"] = { REMOVED_4_0_3 },
 					["lvl"] = 30,

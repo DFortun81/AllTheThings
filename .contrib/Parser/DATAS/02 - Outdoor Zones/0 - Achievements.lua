@@ -86,12 +86,12 @@ root(ROOTS.Zones, {
 			["timeline"] = { ADDED_3_0_2 },
 		}),
 		applyclassicphase(PHASE_ONE, achWithReps(948, {	-- Ambassador of the Alliance
-			69, 54, 47, 72,		-- Exalted Darnassus, Gnomeregan, Ironforge, Stormwind City
+		FACTION_DARNASSUS, FACTION_GNOMEREGAN, FACTION_IRONFORGE, FACTION_STORMWIND,		-- Exalted Darnassus, Gnomeregan, Ironforge, Stormwind City
 			-- #if AFTER TBC
-			930,	-- Exalted Exodar
+			FACTION_EXODAR,	-- Exalted Exodar
 			-- #endif
 			-- #if AFTER CATA
-			1134,	-- Exalted Gilnaes
+			FACTION_GILNEAS,	-- Exalted Gilnaes
 			-- #endif
 		}, {
 			-- #if BEFORE TBC
@@ -106,12 +106,12 @@ root(ROOTS.Zones, {
 			}),
 		})),
 		applyclassicphase(PHASE_ONE, achWithReps(762, {	-- Ambassador of the Horde
-			530, 76, 81, 68,	-- Exalted Darkspear Trolls, Orgrimmar, Thunder Bluff, Undercity
+			FACTION_DARKSPEAR_TROLLS, FACTION_ORGRIMMAR, FACTION_THUNDER_BLUFF, FACTION_UNDERCITY,	-- Exalted Darkspear Trolls, Orgrimmar, Thunder Bluff, Undercity
 			-- #if AFTER TBC
-			911,	-- Exalted Silvermoon City
+			FACTION_SILVERMOON_CITY,	-- Exalted Silvermoon City
 			-- #endif
 			-- #if AFTER CATA
-			1133,	-- Exalted Bilgewater Cartel
+			FACTION_BILGEWATER_CARTEL,	-- Exalted Bilgewater Cartel
 			-- #endif
 		}, {
 			-- #if BEFORE TBC
@@ -522,7 +522,7 @@ root(ROOTS.Zones, {
 		ach(1182, {	-- The Bread Winner
 			["timeline"] = { ADDED_3_0_2 },
 		}),
-		applyclassicphase(TBC_PHASE_ONE, achWithReps(942, { 978, 970, 576 }, {	-- The Diplomat
+		applyclassicphase(TBC_PHASE_ONE, achWithReps(942, { FACTION_KURENAI, FACTION_SPOREGGAR, FACTION_TIMBERMAW_HOLD }, {	-- The Diplomat
 			-- #if BEFORE WRATH
 			["description"] = "Raise your reputation level from unfriendly to exalted with Timbermaw Hold, Sporeggar and the Kurenai.",
 			-- #endif
@@ -532,7 +532,7 @@ root(ROOTS.Zones, {
 				title(48),	-- <Name> the Diplomat
 			}),
 		})),
-		applyclassicphase(TBC_PHASE_ONE, achWithReps(943, { 941, 970, 576 }, {	-- The Diplomat
+		applyclassicphase(TBC_PHASE_ONE, achWithReps(943, { FACTION_THE_MAGHAR, FACTION_SPOREGGAR, FACTION_TIMBERMAW_HOLD }, {	-- The Diplomat
 			-- #if BEFORE WRATH
 			["description"] = "Raise your reputation level from unfriendly to exalted with Timbermaw Hold, Sporeggar and the Mag'har.",
 			-- #endif

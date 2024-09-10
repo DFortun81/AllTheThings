@@ -36,7 +36,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 		["lvl"] = lvlsquish(50, 50, 25),
 		["groups"] = {
 			n(FACTIONS, {
-				faction(609, {	-- Cenarion Circle
+				faction(FACTION_CENARION_CIRCLE, {	-- Cenarion Circle
 					["icon"] = "Interface\\Icons\\Ability_Druid_Maul",
 					["maps"] = { SILITHUS },
 				}),
@@ -45,7 +45,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(DRUID, bubbleDown({ ["classes"] = { DRUID } }, {
 					q(8700, {	-- Band of Unending Life
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { DRUID },
 						["cost"] = {
@@ -60,7 +60,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8692, {	-- Cloak of Unending Life
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
 						["classes"] = { DRUID },
 						["cost"] = {
@@ -75,7 +75,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8708, {	-- Mace of Unending Life
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
 						["classes"] = { DRUID },
 						["cost"] = {
@@ -92,7 +92,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(HUNTER, bubbleDown({ ["classes"] = { HUNTER } }, {
 					q(8704, {	-- Signet of the Unseen Path
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { HUNTER },
 						["cost"] = {
@@ -107,7 +107,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8696, {	-- Cloak of the Unseen Path
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
 						["classes"] = { HUNTER },
 						["cost"] = {
@@ -122,7 +122,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8712, {	-- Scythe of the Unseen Path
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
 						["classes"] = { HUNTER },
 						["cost"] = {
@@ -139,7 +139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(MAGE, bubbleDown({ ["classes"] = { MAGE } }, {
 					q(8699, {	-- Band of Vaulted Secrets
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { MAGE },
 						["cost"] = {
@@ -154,7 +154,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8691, {	-- Drape of Vaulted Secrets
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
 						["classes"] = { MAGE },
 						["cost"] = {
@@ -169,7 +169,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8707, {	-- Blade of Vaulted Secrets
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
 						["classes"] = { MAGE },
 						["cost"] = {
@@ -186,7 +186,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(PALADIN, bubbleDown({ ["classes"] = { PALADIN } }, {
 					q(8703, {	-- Ring of Eternal Justice
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { PALADIN },
 						["cost"] = {
@@ -201,7 +201,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8695, {	-- Cape of Eternal Justice
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
 						["classes"] = { PALADIN },
 						["cost"] = {
@@ -216,7 +216,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8711, {	-- Blade of Eternal Justice
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
 						["classes"] = { PALADIN },
 						["cost"] = {
@@ -233,7 +233,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(PRIEST, bubbleDown({ ["classes"] = { PRIEST } }, {
 					q(8697, {	-- Ring of Infinite Wisdom
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { PRIEST },
 						["cost"] = {
@@ -248,7 +248,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8689, {	-- Shroud of Infinite Wisdom
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
 						["classes"] = { PRIEST },
 						["cost"] = {
@@ -263,7 +263,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8705, {	-- Gavel of Infinite Wisdom
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
 						["classes"] = { PRIEST },
 						["cost"] = {
@@ -280,7 +280,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(ROGUE, bubbleDown({ ["classes"] = { ROGUE } }, {
 					q(8701, {	-- Band of Veiled Shadows
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { ROGUE },
 						["cost"] = {
@@ -295,7 +295,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8693, {	-- Cloak of Veiled Shadows
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
 						["classes"] = { ROGUE },
 						["cost"] = {
@@ -310,7 +310,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8709, {	-- Dagger of Veiled Shadows
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
 						["classes"] = { ROGUE },
 						["cost"] = {
@@ -327,7 +327,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(SHAMAN, bubbleDown({ ["classes"] = { SHAMAN } }, {
 					q(8698, {	-- Ring of the Gathering Storm
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { SHAMAN },
 						["cost"] = {
@@ -342,7 +342,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8690, {	-- Cloak of the Gathering Storm
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
 						["classes"] = { SHAMAN },
 						["cost"] = {
@@ -357,7 +357,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8706, {	-- Hammer of the Gathering Storm
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
 						["classes"] = { SHAMAN },
 						["cost"] = {
@@ -374,7 +374,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(WARLOCK, bubbleDown({ ["classes"] = { WARLOCK } }, {
 					q(8702, {	-- Ring of Unspoken Names
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { WARLOCK },
 						["cost"] = {
@@ -389,7 +389,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8694, {	-- Shroud of Unspoken Names
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
 						["classes"] = { WARLOCK },
 						["cost"] = {
@@ -404,7 +404,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8710, {	-- Kris of Unspoken Names
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
 						["classes"] = { WARLOCK },
 						["cost"] = {
@@ -421,7 +421,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				cl(WARRIOR, bubbleDown({ ["classes"] = { WARRIOR } }, {
 					q(8556, {	-- Signet of Unyielding Strength
 						["qg"] = 15498,	-- Windcaller Yessendra
-						["minReputation"] = { 609, HONORED },	-- Cenarion Circle, Honored.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, HONORED },	-- Cenarion Circle, Honored.
 						["coord"] = WINDCALLER_LOCATION,
 						["classes"] = { WARRIOR },
 						["cost"] = {
@@ -436,7 +436,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8557, {	-- Drape of Unyielding Strength
 						["qg"] = 15500,	-- Keyl Swiftclaw
-						["minReputation"] = { 609, REVERED },	-- Cenarion Circle, Revered.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },	-- Cenarion Circle, Revered.
 						["coord"] = KEYL_LOCATION,
 						["classes"] = { WARRIOR },
 						["cost"] = {
@@ -451,7 +451,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 					}),
 					q(8558, {	-- Sickle of Unyielding Strength
 						["qg"] = 15499,	-- Warden Haro
-						["minReputation"] = { 609, EXALTED },	-- Cenarion Circle, Exalted.
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },	-- Cenarion Circle, Exalted.
 						["coord"] = WARDEN_LOCATION,
 						["classes"] = { WARRIOR },
 						["cost"] = {
@@ -648,7 +648,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 						}),
 					})),
 					-- #endif
-					
+
 					-- Enchants
 					i(20736),	-- Formula: Enchant Cloak - Dodge (RECIPE!)
 					i(20734),	-- Formula: Enchant Cloak - Stealth (RECIPE!)

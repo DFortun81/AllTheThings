@@ -51,7 +51,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["lvl"] = lvlsquish(50, 50, 25),
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				achWithRep(955, 749, {	-- Hydraxian Waterlords
+				achWithRep(955, FACTION_HYDRAXIAN_WATERLORDS, {	-- Hydraxian Waterlords
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Hydraxian Waterlords to Exalted.",
 					-- #endif
@@ -65,7 +65,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				ach(11741, {["timeline"] = {ADDED_7_2_0}}),	-- So Hot Right Now (Molten Core)
 			}),
 			n(FACTIONS, {
-				faction(749, {	-- Hydraxian Waterlords
+				faction(FACTION_HYDRAXIAN_WATERLORDS, {	-- Hydraxian Waterlords
 					["icon"] = "Interface\\Icons\\Spell_frost_summonwaterelemental",
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
@@ -115,7 +115,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuest"] = 6822,	-- The Molten Core
 					["coord"] = { 79.2, 73.6, AZSHARA },
-					["minReputation"] = { 749, HONORED },	-- Hydraxian Waterlords, Honored.
+					["minReputation"] = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
 					["lvl"] = 55,
 				})),
 				q(7633, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- An Introduction
@@ -365,13 +365,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(REWARDS, {
 				i(17333, {	-- Aqual Quintessence
 					["description"] = "Return to the Duke at Honored reputation after completing the Hands of the Enemy quest to receive this item from a dialog option.",
-					["minReputation"] = { 749, HONORED },	-- Hydraxian Waterlords, Honored.
+					["minReputation"] = { FACTION_HYDRAXIAN_WATERLORDS, HONORED },	-- Hydraxian Waterlords, Honored.
 					["sourceQuest"] = 6824,	-- Hands of the Enemy
 					["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 },
 				}),
 				applyclassicphase(PHASE_THREE, i(22754, {	-- Eternal Quintessence
 					["description"] = "Return to the Duke at Revered reputation to be given a version of your Quintessence that can be used more than once.",
-					["minReputation"] = { 749, REVERED },	-- Hydraxian Waterlords, Revered.
+					["minReputation"] = { FACTION_HYDRAXIAN_WATERLORDS, REVERED },	-- Hydraxian Waterlords, Revered.
 					["sourceQuest"] = 6824,	-- Hands of the Enemy
 					["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 },
 				})),
@@ -616,7 +616,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #if after 4.4.0
 						["description"] = "For Blizzard to consider the Tier 1 Priest set as collected in the Transmog Preview, you need to loot these exact pants.",
 						-- #endif
-					}),	
+					}),
 					i(18824),	-- Magma Tempered Boots
 					i(19144),	-- Sabatons of the Flamewalker
 					i(18821),	-- Quick Strike Ring
@@ -922,7 +922,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							tokencost(TOKENS.SCORCHED_CORE.BELT, i(226660)),	--  Cenarion Girdle
 							tokencost(TOKENS.SCORCHED_CORE.LEGS, i(226666)),	--  Cenarion Trousers
 							tokencost(TOKENS.SCORCHED_CORE.BOOTS, i(226663)),	--  Cenarion Treads
-							
+
 							-- DPS (Intellect)
 							tokencost(TOKENS.SCORCHED_CORE.HELM, i(226658)),	--  Cenarion Antlers
 							tokencost(TOKENS.SCORCHED_CORE.SHOULDERS, i(226653)),	--  Cenarion Mantle
@@ -932,7 +932,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							tokencost(TOKENS.SCORCHED_CORE.BELT, i(226657)),	--  Cenarion Cord
 							tokencost(TOKENS.SCORCHED_CORE.LEGS, i(226651)),	--  Cenarion Pants
 							tokencost(TOKENS.SCORCHED_CORE.BOOTS, i(226652)),	--  Cenarion Sandals
-							
+
 							-- Healer
 							tokencost(TOKENS.SCORCHED_CORE.HELM, i(226647)),	--  Cenarion Helm
 							tokencost(TOKENS.SCORCHED_CORE.SHOULDERS, i(226644)),	--  Cenarion Spaulders
@@ -942,7 +942,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							tokencost(TOKENS.SCORCHED_CORE.BELT, i(226650)),	--  Cenarion Belt
 							tokencost(TOKENS.SCORCHED_CORE.LEGS, i(226646)),	--  Cenarion Leggings
 							tokencost(TOKENS.SCORCHED_CORE.BOOTS, i(226645)),	--  Cenarion Boots
-							
+
 							-- Tank
 							tokencost(TOKENS.SCORCHED_CORE.HELM, i(226670)),	--  Cenarion Crown
 							tokencost(TOKENS.SCORCHED_CORE.SHOULDERS, i(226674)),	--  Cenarion Pauldrons
@@ -963,7 +963,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							tokencost(TOKENS.MOLTEN_SCALED.BELT, i(226542)),	--  Giantstalker's Girdle
 							tokencost(TOKENS.MOLTEN_SCALED.LEGS, i(226537)),	--  Giantstalker's Chain Leggings
 							tokencost(TOKENS.MOLTEN_SCALED.BOOTS, i(226538)),	--  Giantstalker's Sabatons
-							
+
 							-- Ranged
 							tokencost(TOKENS.MOLTEN_SCALED.HELM, i(226533)),	--  Giantstalker's Helmet
 							tokencost(TOKENS.MOLTEN_SCALED.SHOULDERS, i(226527)),	--  Giantstalker's Epaulets
@@ -984,7 +984,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							tokencost(TOKENS.INCANDESCENT.BELT, i(226555)),	--  Arcanist Belt
 							tokencost(TOKENS.INCANDESCENT.LEGS, i(226561)),	--  Arcanist Leggings
 							tokencost(TOKENS.INCANDESCENT.BOOTS, i(226557)),	--  Arcanist Boots
-							
+
 							-- Healer
 							tokencost(TOKENS.INCANDESCENT.HELM, i(226564)),	--  Arcanist Headdress
 							tokencost(TOKENS.INCANDESCENT.SHOULDERS, i(226566)),	--  Arcanist Shoulders
@@ -1005,7 +1005,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							tokencost(TOKENS.MOLTEN_SCALED.BELT, i(226597)),	--  Lawbringer Girdle
 							tokencost(TOKENS.MOLTEN_SCALED.LEGS, i(226598)),	--  Lawbringer Leggings
 							tokencost(TOKENS.MOLTEN_SCALED.BOOTS, i(226601)),	--  Lawbringer Battleboots
-							
+
 							-- Healer
 							tokencost(TOKENS.MOLTEN_SCALED.HELM, i(226590)),	--  Lawbringer Helm
 							tokencost(TOKENS.MOLTEN_SCALED.SHOULDERS, i(226588)),	--  Lawbringer Spaulders
@@ -1015,7 +1015,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							tokencost(TOKENS.MOLTEN_SCALED.BELT, i(226592)),	--  Lawbringer Belt
 							tokencost(TOKENS.MOLTEN_SCALED.LEGS, i(226594)),	--  Lawbringer Legplates
 							tokencost(TOKENS.MOLTEN_SCALED.BOOTS, i(226593)),	--  Lawbringer Boots
-							
+
 							-- Tank
 							tokencost(TOKENS.MOLTEN_SCALED.HELM, i(226607)),	--  Lawbringer Headguard
 							tokencost(TOKENS.MOLTEN_SCALED.SHOULDERS, i(226605)),	--  Lawbringer Pauldrons
@@ -1036,7 +1036,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							tokencost(TOKENS.INCANDESCENT.BELT, i(226580)),	--  Belt of Prophecy
 							tokencost(TOKENS.INCANDESCENT.LEGS, i(226583)),	--  Leggings of Prophecy
 							tokencost(TOKENS.INCANDESCENT.BOOTS, i(226586)),	--  Sandals of Prophecy
-							
+
 							-- Healer
 							tokencost(TOKENS.INCANDESCENT.HELM, i(226573)),	--  Circlet of Prophecy
 							tokencost(TOKENS.INCANDESCENT.SHOULDERS, i(226576)),	--  Mantle of Prophecy
@@ -1057,7 +1057,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							tokencost(TOKENS.SCORCHED_CORE.BELT, i(226440)),	--  Nightslayer Belt
 							tokencost(TOKENS.SCORCHED_CORE.LEGS, i(226445)),	--  Nightslayer Pants
 							tokencost(TOKENS.SCORCHED_CORE.BOOTS, i(226443)),	--  Nightslayer Boots
-							
+
 							-- Tank
 							tokencost(TOKENS.SCORCHED_CORE.HELM, i(226480)),	--  Nightslayer Hood
 							tokencost(TOKENS.SCORCHED_CORE.SHOULDERS, i(226478)),	--  Nightslayer Pauldrons
@@ -1078,7 +1078,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							tokencost(TOKENS.MOLTEN_SCALED.BELT, i(226641)),	--  Earthfury Girdle
 							tokencost(TOKENS.MOLTEN_SCALED.LEGS, i(226639)),	--  Earthfury Chain Leggings
 							tokencost(TOKENS.MOLTEN_SCALED.BOOTS, i(226636)),	--  Earthfury Battleboots
-							
+
 							-- DPS (Intellect)
 							tokencost(TOKENS.MOLTEN_SCALED.HELM, i(226622)),	--  Earthfury Visor
 							tokencost(TOKENS.MOLTEN_SCALED.SHOULDERS, i(226624)),	--  Earthfury Mantle
@@ -1088,7 +1088,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							tokencost(TOKENS.MOLTEN_SCALED.BELT, i(226625)),	--  Earthfury Cord
 							tokencost(TOKENS.MOLTEN_SCALED.LEGS, i(226623)),	--  Earthfury Leggings
 							tokencost(TOKENS.MOLTEN_SCALED.BOOTS, i(226620)),	--  Earthfury Walkers
-							
+
 							-- Healer
 							tokencost(TOKENS.MOLTEN_SCALED.HELM, i(226612)),	--  Earthfury Helmet
 							tokencost(TOKENS.MOLTEN_SCALED.SHOULDERS, i(226611)),	--  Earthfury Epaulets
@@ -1098,7 +1098,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							tokencost(TOKENS.MOLTEN_SCALED.BELT, i(226616)),	--  Earthfury Belt
 							tokencost(TOKENS.MOLTEN_SCALED.LEGS, i(226614)),	--  Earthfury Legguards
 							tokencost(TOKENS.MOLTEN_SCALED.BOOTS, i(226613)),	--  Earthfury Boots
-							
+
 							-- Tank
 							tokencost(TOKENS.MOLTEN_SCALED.HELM, i(226630)),	--  Earthfury Greathelm
 							tokencost(TOKENS.MOLTEN_SCALED.SHOULDERS, i(226632)),	--  Earthfury Pauldrons
@@ -1119,7 +1119,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							tokencost(TOKENS.INCANDESCENT.BELT, i(226551)),	--  Felheart Belt
 							tokencost(TOKENS.INCANDESCENT.LEGS, i(226547)),	--  Felheart Pants
 							tokencost(TOKENS.INCANDESCENT.BOOTS, i(226554)),	--  Felheart Slippers
-							
+
 							-- Tank
 							tokencost(TOKENS.INCANDESCENT.HELM, i(216922)),	--  Felheart Crown
 							tokencost(TOKENS.INCANDESCENT.SHOULDERS, i(216925)),	--  Felheart Mantle
@@ -1140,7 +1140,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							tokencost(TOKENS.SCORCHED_CORE.BELT, i(226498)),	--  Sash of Might
 							tokencost(TOKENS.SCORCHED_CORE.LEGS, i(226493)),	--  Leggings of Might
 							tokencost(TOKENS.SCORCHED_CORE.BOOTS, i(226496)),	--  Treads of Might
-							
+
 							-- Tank
 							tokencost(TOKENS.SCORCHED_CORE.HELM, i(226488)),	--  Helm of Might
 							tokencost(TOKENS.SCORCHED_CORE.SHOULDERS, i(226491)),	--  Shoulderplates of Might
@@ -1490,7 +1490,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(228297),	-- Shard of the Flame
 				}),
 				n(227939, {	-- The Molten Core
-					
+
 				}),
 				spell(458843, {	-- Molten Heat [Heat Level 3]
 					["description"] = "You can opt into Heat Level 3 by speaking to Duke Hydraxis. Doing so will drop 'Molten' varients of the weapons that have a neat molten appearance despite providing no difference in quality. (Cosmetic only!)",
@@ -1561,17 +1561,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						--[[
 						i(, {	--  [Molten]
 							["crs"] = {
-								,	-- 
+								,	--
 							},
 						}),
 						i(, {	--  [Molten]
 							["crs"] = {
-								,	-- 
+								,	--
 							},
 						}),
 						i(, {	--  [Molten]
 							["crs"] = {
-								,	-- 
+								,	--
 							},
 						}),
 						]]--

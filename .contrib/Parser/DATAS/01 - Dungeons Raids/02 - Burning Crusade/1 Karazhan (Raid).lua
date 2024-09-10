@@ -38,20 +38,20 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		["lvl"] = lvlsquish(70, 68, 30),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in. TODO: Check this.
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				achWithRep(960, 967, {	-- The Violet Eye
+				achWithRep(960, FACTION_THE_VIOLET_EYE, {	-- The Violet Eye
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with The Violet Eye to Exalted.",
 					-- #endif
 				}),
 			}),
 			n(FACTIONS, {
-				faction(967),	-- The Violet Eye
+				faction(FACTION_THE_VIOLET_EYE),	-- The Violet Eye
 			}),
 			n(QUESTS, bubbleDown({ ["timeline"] = REMOVED_WITH_RETURN_TO_KARAZHAN }, {
 				q(9631, {	-- A Colleague's Aid
 					["qg"] = 17613,	-- Archmage Alturus
 					["sourceQuest"] = 9680,	-- Digging Up the Past
-					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 					["maps"] = { NETHERSTORM },
 					["cost"] = {
@@ -96,7 +96,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(11031, {	-- Archmage No More
 					["qg"] = 18253,	-- Archmage Leryda
 					["sourceQuest"] = 10725,	-- Eminence Among the Violet Eye [Mage]
-					["minReputation"] = { 967, EXALTED },	-- The Violet Eye, Exalted.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, EXALTED },	-- The Violet Eye, Exalted.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["repeatable"] = true,
 					["cost"] = {
@@ -113,7 +113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(11033, {	-- Assassin No More
 					["qg"] = 18253,	-- Archmage Leryda
 					["sourceQuest"] = 10727,	-- Eminence Among the Violet Eye [Assassin]
-					["minReputation"] = { 967, EXALTED },	-- The Violet Eye, Exalted.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, EXALTED },	-- The Violet Eye, Exalted.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["repeatable"] = true,
 					["cost"] = {
@@ -147,7 +147,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9680, {	-- Digging Up the Past
 					["qg"] = 17613,	-- Archmage Alturus
 					["sourceQuest"] = 9645,	-- The Master's Terrace
-					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
 					["lvl"] = 70,
 					["groups"] = {
@@ -160,7 +160,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10740, {	-- Distinguished Service [Assassin]
 					["qg"] = 18253,	-- Archmage Leryda
 					["sourceQuest"] = 10735,	-- Down the Violet Path [Assassin]
-					["minReputation"] = { 967, REVERED },	-- The Violet Eye, Revered.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, REVERED },	-- The Violet Eye, Revered.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["altQuests"] = {
 						--10740,	-- Distinguished Service [Assassin]
@@ -179,7 +179,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10738, {	-- Distinguished Service [Mage]
 					["qg"] = 18253,	-- Archmage Leryda
 					["sourceQuest"] = 10733,	-- Down the Violet Path [Mage]
-					["minReputation"] = { 967, REVERED },	-- The Violet Eye, Revered.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, REVERED },	-- The Violet Eye, Revered.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["altQuests"] = {
 						10740,	-- Distinguished Service [Assassin]
@@ -198,7 +198,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10741, {	-- Distinguished Service [Protector]
 					["qg"] = 18253,	-- Archmage Leryda
 					["sourceQuest"] = 10736,	-- Down the Violet Path [Protector]
-					["minReputation"] = { 967, REVERED },	-- The Violet Eye, Revered.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, REVERED },	-- The Violet Eye, Revered.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["altQuests"] = {
 						10740,	-- Distinguished Service [Assassin]
@@ -217,7 +217,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10739, {	-- Distinguished Service [Restorer]
 					["qg"] = 18253,	-- Archmage Leryda
 					["sourceQuest"] = 10734,	-- Down the Violet Path [Restorer]
-					["minReputation"] = { 967, REVERED },	-- The Violet Eye, Revered.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, REVERED },	-- The Violet Eye, Revered.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["altQuests"] = {
 						10740,	-- Distinguished Service [Assassin]
@@ -236,7 +236,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10735, {	-- Down the Violet Path [Assassin]
 					["qg"] = 18253,	-- Archmage Leryda
 					["sourceQuest"] = 10731,	-- Path of the Violet Assassin
-					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["altQuests"] = {
 						--10735,	-- Down the Violet Path [Assassin]
@@ -255,7 +255,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10733, {	-- Down the Violet Path [Mage]
 					["qg"] = 18253,	-- Archmage Leryda
 					["sourceQuest"] = 10729,	-- Path of the Violet Mage
-					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["altQuests"] = {
 						10735,	-- Down the Violet Path [Assassin]
@@ -274,7 +274,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10736, {	-- Down the Violet Path [Protector]
 					["qg"] = 18253,	-- Archmage Leryda
 					["sourceQuest"] = 10732,	-- Path of the Violet Protector
-					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["altQuests"] = {
 						10735,	-- Down the Violet Path [Assassin]
@@ -293,7 +293,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10734, {	-- Down the Violet Path [Restorer]
 					["qg"] = 18253,	-- Archmage Leryda
 					["sourceQuest"] = 10730,	-- Path of the Violet Restorer
-					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["altQuests"] = {
 						10735,	-- Down the Violet Path [Assassin]
@@ -312,7 +312,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10727, {	-- Eminence Among the Violet Eye [Assassin]
 					["qg"] = 18253,	-- Archmage Leryda
 					["sourceQuest"] = 10740,	-- Distinguished Service [Assassin]
-					["minReputation"] = { 967, EXALTED },	-- The Violet Eye, Exalted.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, EXALTED },	-- The Violet Eye, Exalted.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["altQuests"] = {
 						--10727,	-- Eminence Among the Violet Eye [Assassin]
@@ -331,7 +331,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10725, {	-- Eminence Among the Violet Eye [Mage]
 					["qg"] = 18253,	-- Archmage Leryda
 					["sourceQuest"] = 10738,	-- Distinguished Service [Mage]
-					["minReputation"] = { 967, EXALTED },	-- The Violet Eye, Exalted.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, EXALTED },	-- The Violet Eye, Exalted.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["altQuests"] = {
 						10727,	-- Eminence Among the Violet Eye [Assassin]
@@ -350,7 +350,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10728, {	-- Eminence Among the Violet Eye [Protector]
 					["qg"] = 18253,	-- Archmage Leryda
 					["sourceQuest"] = 10741,	-- Distinguished Service [Protector]
-					["minReputation"] = { 967, EXALTED },	-- The Violet Eye, Exalted.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, EXALTED },	-- The Violet Eye, Exalted.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["altQuests"] = {
 						10727,	-- Eminence Among the Violet Eye [Assassin]
@@ -369,7 +369,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(10726, {	-- Eminence Among the Violet Eye [Restorer]
 					["qg"] = 18253,	-- Archmage Leryda
 					["sourceQuest"] = 10739,	-- Distinguished Service [Restorer]
-					["minReputation"] = { 967, EXALTED },	-- The Violet Eye, Exalted.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, EXALTED },	-- The Violet Eye, Exalted.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["altQuests"] = {
 						10727,	-- Eminence Among the Violet Eye [Assassin]
@@ -400,13 +400,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9638, {	-- In Good Hands
 					["qg"] = 16813,	-- Wravien <The Mage>
 					["sourceQuest"] = 9630,	-- Medivh's Journal
-					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
 					["lvl"] = 70,
 				}),
 				q(9637, {	-- Kalynna's Request
 					["qg"] = 17636,	-- Kalynna Lathred
 					["sourceQuest"] = 9631,	-- A Colleague's Aid
-					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 32.2, 63.6, NETHERSTORM },
 					["maps"] = { AUCHINDOUN_SETHEKK_HALLS, HELLFIRE_CITADEL_SHATTERED_HALLS },
 					["lvl"] = 70,
@@ -422,7 +422,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9639, {	-- Kamsis
 					["qg"] = 16814,	-- Gradav <The Warlock>
 					["sourceQuest"] = 9638,	-- In Good Hands
-					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
 					["lvl"] = 70,
 				}),
 				q(9843, {	-- Keanna's Log
@@ -448,13 +448,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9630, {	-- Medivh's Journal
 					["qg"] = 17613,	-- Archmage Alturus
 					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
 					["lvl"] = 70,
 				}),
 				q(9644, {	-- Nightbane
 					["qg"] = 17636,	-- Kalynna Lathred
 					["sourceQuest"] = 9637,	-- Kalynna's Request
-					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
 					["coord"] = { 32.2, 63.6, NETHERSTORM },
 					["lvl"] = 70,
 					["groups"] = {
@@ -468,7 +468,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(10731, {	-- Path of the Violet Assassin
 					["qg"] = 18253,	-- Archmage Leryda
-					["minReputation"] = { 967, FRIENDLY },	-- The Violet Eye, Friendly.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, FRIENDLY },	-- The Violet Eye, Friendly.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["altQuests"] = {
 						--10731,	-- Path of the Violet Assassin [Assassin]
@@ -483,7 +483,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(10729, {	-- Path of the Violet Mage
 					["qg"] = 18253,	-- Archmage Leryda
-					["minReputation"] = { 967, FRIENDLY },	-- The Violet Eye, Friendly.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, FRIENDLY },	-- The Violet Eye, Friendly.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["altQuests"] = {
 						10731,	-- Path of the Violet Assassin [Assassin]
@@ -498,7 +498,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(10732, {	-- Path of the Violet Protector
 					["qg"] = 18253,	-- Archmage Leryda
-					["minReputation"] = { 967, FRIENDLY },	-- The Violet Eye, Friendly.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, FRIENDLY },	-- The Violet Eye, Friendly.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["altQuests"] = {
 						10731,	-- Path of the Violet Assassin [Assassin]
@@ -513,7 +513,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 				q(10730, {	-- Path of the Violet Restorer
 					["qg"] = 18253,	-- Archmage Leryda
-					["minReputation"] = { 967, FRIENDLY },	-- The Violet Eye, Friendly.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, FRIENDLY },	-- The Violet Eye, Friendly.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["altQuests"] = {
 						10731,	-- Path of the Violet Assassin [Assassin]
@@ -529,7 +529,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(11032, {	-- Protector No More
 					["qg"] = 18253,	-- Archmage Leryda
 					["sourceQuest"] = 10728,	-- Eminence Among the Violet Eye [Protector]
-					["minReputation"] = { 967, EXALTED },	-- The Violet Eye, Exalted.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, EXALTED },	-- The Violet Eye, Exalted.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["repeatable"] = true,
 					["cost"] = {
@@ -564,7 +564,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(11034, {	-- Restorer No More
 					["qg"] = 18253,	-- Archmage Leryda
 					["sourceQuest"] = 10726,	-- Eminence Among the Violet Eye [Restorer]
-					["minReputation"] = { 967, EXALTED },	-- The Violet Eye, Exalted.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, EXALTED },	-- The Violet Eye, Exalted.
 					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
 					["repeatable"] = true,
 					["cost"] = {
@@ -581,7 +581,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9645, {	-- The Master's Terrace
 					["qg"] = 16815,	-- Kamsis <The Conjurer>
 					["sourceQuest"] = 9640,	-- The Shade of Aran
-					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
 					["lvl"] = 70,
 					["groups"] = {
 						objective(1, {	-- Journal Entry Read
@@ -616,7 +616,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				q(9640, {	-- The Shade of Aran
 					["qg"] = 16815,	-- Kamsis <The Conjurer>
 					["sourceQuest"] = 9639,	-- Kamsis
-					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored.
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
 					["lvl"] = 70,
 					["groups"] = {
 						objective(1, {	-- 0/1 Medivh's Journal
@@ -635,7 +635,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			n(VENDORS, {
 				n(16388, {	-- Koren
 					["description"] = "This vendor is located in the Livery Stables, but will only serve characters that are at least Honoured with The Violet Eye.",
-					["minReputation"] = { 967, HONORED },	-- The Violet Eye, Honored
+					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored
 					["groups"] = {
 						i(31395),	-- Plans: Iceguard Helm (RECIPE!)
 						i(31393),	-- Plans: Iceguard Breastplate (RECIPE!)

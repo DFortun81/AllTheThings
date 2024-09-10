@@ -1891,7 +1891,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 
 					-- Available to Tauren without faction requirements.
-					["minReputation"] = { 81, EXALTED },	-- Thunder Bluff, Exalted.
+					["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. TAUREN .. [[ then
 							t.minReputation = nil;
@@ -1990,7 +1990,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.6, 58.4, MULGORE },
 					-- #endif
 					-- Available to Tauren without faction requirements.
-					["minReputation"] = { 81, EXALTED },	-- Thunder Bluff, Exalted.
+					["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. TAUREN .. [[ then
 							t.minReputation = nil;

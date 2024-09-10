@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				}},
 			}),
 			n(FACTIONS, {
-				faction(930, {	-- Exodar
+				faction(FACTION_EXODAR, {	-- Exodar
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.RuneclothTurnIns,
 					["races"] = ALLIANCE_ONLY,
 				}),
@@ -105,7 +105,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					["qg"] = 20604,	-- Dugiru <Alliance Cloth Quartermaster>
 					["sourceQuest"] = 10357,	-- A Donation of Runecloth
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
-					["maxReputation"] = { 930, EXALTED },	-- Exodar, Exalted.
+					["maxReputation"] = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
 					["coord"] = { 63.5, 67.7, THE_EXODAR },
 					["timeline"] = { REMOVED_4_0_3},
 					["races"] = ALLIANCE_ONLY,
@@ -508,19 +508,19 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64889, {	-- Mantle of Exodar
-							["minReputation"] = { 930, EXALTED },	-- Exodar, Exalted.
+							["minReputation"] = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64890, {	-- Cape of Exodar
-							["minReputation"] = { 930, EXALTED },	-- Exodar, Exalted.
+							["minReputation"] = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64891, {	-- Shroud of Exodar
-							["minReputation"] = { 930, EXALTED },	-- Exodar, Exalted.
+							["minReputation"] = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67527, {	-- Exodar Satchel
-							["minReputation"] = { 930, REVERED },	-- Exodar, Revered.
+							["minReputation"] = { FACTION_EXODAR, REVERED },	-- Exodar, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
@@ -615,7 +615,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				n(17584, {	-- Torallius the Pack Handler <Elekk Breeder>
 					["coord"] = { 81.5, 51.4, THE_EXODAR },
 					-- Available to Draenei without faction requirements.
-					["minReputation"] = { 930, EXALTED },	-- Exodar, Exalted.
+					["minReputation"] = { FACTION_EXODAR, EXALTED },	-- Exodar, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. DRAENEI .. [[ then
 							t.minReputation = nil;

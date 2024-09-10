@@ -224,10 +224,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				exploration(122),	-- Zuuldaia Ruins
 			}),
 			n(FACTIONS, {
-				faction(87, {	-- Bloodsail Buccaneers
+				faction(FACTION_BLOODSAIL_BUCCANEERS, {	-- Bloodsail Buccaneers
 					["icon"] = "Interface\\Icons\\INV_Misc_Bandana_03",
 					-- #if BEFORE WRATH
-					["minReputation"] = { 87, EXALTED - 1 },	-- Bloodsail Buccaneers, must be 20999 into Revered.
+					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, EXALTED - 1 },	-- Bloodsail Buccaneers, must be 20999 into Revered.
 					-- #endif
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForBloodsail,
@@ -236,7 +236,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["crs"] = { 9179 },	-- Jazzrik
 					-- #endif
 				}),
-				faction(21, {	-- Booty Bay
+				faction(FACTION_BOOTY_BAY, {	-- Booty Bay
 					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
 					["OnTooltip"] = OnTooltipForBootyBay,
 					["maps"] = {
@@ -475,7 +475,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				q(4621, {	-- Avast Ye, Admiral!
 					["qg"] = 2546,	-- Fleet Master Firallon
 					["sourceQuest"] = 1036,	-- Avast Ye, Scallywag
-					["minReputation"] = { 87, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
+					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
 					["description"] = "This quest also requires you to be hated or lower with Booty Bay.",
 					["coords"] = {
 						-- #if AFTER CATA
@@ -491,7 +491,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(1036, {	-- Avast Ye, Scallywag
 					["qg"] = 2545,	-- "Pretty Boy" Duncan
-					["minReputation"] = { 87, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
+					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, FRIENDLY },	-- Bloodsail Buccaneers, Friendly.
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 44.4, 92.6, THE_CAPE_OF_STRANGLETHORN },
@@ -871,7 +871,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				q(9272, {	-- Dressing the Part
 					["qg"] = 2546,	-- Fleet Master Firallon
-					["minReputation"] = { 87, NEUTRAL },	-- Bloodsail Buccaneers, Neutral.
+					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, NEUTRAL },	-- Bloodsail Buccaneers, Neutral.
 					["coords"] = {
 						-- #if AFTER CATA
 						{ 46.6, 95.2, THE_CAPE_OF_STRANGLETHORN },
@@ -2336,7 +2336,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 31.8, 70.9, STRANGLETHORN_VALE },
 						-- #endif
 					},
-					["maxReputation"] = { 21, NEUTRAL },	-- Booty Bay, must be less than Neutral
+					["maxReputation"] = { FACTION_BOOTY_BAY, NEUTRAL },	-- Booty Bay, must be less than Neutral
 					["cost"] = {
 						{ "i", 4306, 40 },	-- Silk Cloth
 						{ "i", 2604, 4 },	-- Red Dye

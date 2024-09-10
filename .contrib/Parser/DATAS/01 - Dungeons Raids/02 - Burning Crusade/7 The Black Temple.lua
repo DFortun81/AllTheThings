@@ -24,14 +24,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(11748, {["timeline"] = {ADDED_7_2_0}}),	-- Black is the New Black (Black Temple)
-				achWithRep(958, 1012, {	-- Sworn to the Deathsworn
+				achWithRep(958, FACTION_ASHTONGUE_DEATHSWORN, {	-- Sworn to the Deathsworn
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Ashtongue Deathsworn to Exalted.",
 					-- #endif
 				}),
 			}),
 			n(FACTIONS, {
-				faction(1012),	-- Ashtongue Deathsworn
+				faction(FACTION_ASHTONGUE_DEATHSWORN),	-- Ashtongue Deathsworn
 			}),
 			n(QUESTS, {
 				q(10985, {	-- A Distraction for Akama (legacy version)

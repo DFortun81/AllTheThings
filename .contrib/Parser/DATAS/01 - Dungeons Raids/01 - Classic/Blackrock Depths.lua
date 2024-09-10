@@ -66,7 +66,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["lvl"] = 42,
 		["groups"] = {
 			n(FACTIONS, {
-				faction(59, {	-- Thorium Brotherhood
+				faction(FACTION_THORIUM_BROTHERHOOD, {	-- Thorium Brotherhood
 					["maps"] = { SEARING_GORGE },
 					["OnTooltip"] = OnTooltipForThoriumBrotherhood,
 				}),
@@ -320,35 +320,35 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				-- #endif
 				q(6646, {	-- Favor Amongst the Brotherhood, Blood of the Mountain
 					["qg"] = 12944,	-- Lokhtos Darkbargainer
-					["maxReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
+					["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- The Thorium Brotherhood, Exalted.
 					["cost"] = { { "i", 11382, 1 } },	-- Blood of the Mountain
 					["repeatable"] = true,
 					["lvl"] = 60,
 				}),
 				q(6645, {	-- Favor Amongst the Brotherhood, Core Leather
 					["qg"] = 12944,	-- Lokhtos Darkbargainer
-					["maxReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
+					["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- The Thorium Brotherhood, Exalted.
 					["cost"] = { { "i", 17012, 2 } },	-- Core Leather
 					["repeatable"] = true,
 					["lvl"] = 60,
 				}),
 				q(6642, {	-- Favor Amongst the Brotherhood, Dark Iron Ore
 					["qg"] = 12944,	-- Lokhtos Darkbargainer
-					["maxReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
+					["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- The Thorium Brotherhood, Exalted.
 					["cost"] = { { "i", 11370, 10 } },	-- Dark Iron Ore
 					["repeatable"] = true,
 					["lvl"] = 60,
 				}),
 				q(6643, {	-- Favor Amongst the Brotherhood, Fiery Core
 					["qg"] = 12944,	-- Lokhtos Darkbargainer
-					["maxReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
+					["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- The Thorium Brotherhood, Exalted.
 					["cost"] = { { "i", 17010, 1 } },	-- Fiery Core
 					["repeatable"] = true,
 					["lvl"] = 60,
 				}),
 				q(6644, {	-- Favor Amongst the Brotherhood, Lava Core
 					["qg"] = 12944,	-- Lokhtos Darkbargainer
-					["maxReputation"] = { 59, EXALTED },	-- The Thorium Brotherhood, Exalted.
+					["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- The Thorium Brotherhood, Exalted.
 					["cost"] = { { "i", 17011, 1 } },	-- Lava Core
 					["repeatable"] = true,
 					["lvl"] = 60,
@@ -2357,7 +2357,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						applyclassicphase(PHASE_THREE_RECIPES, i(19206)),	-- Plans: Dark Iron Helm (RECIPE!)
 						i(17059),	-- Plans: Dark Iron Reaver (RECIPE!)
 						i(17049),	-- Plans: Fiery Chain Girdle (RECIPE!)
-						
+
 						-- #if SEASON_OF_DISCOVERY
 						-- EPIC ITEM UPGRADES
 						applyclassicphase(SOD_PHASE_FOUR, i(227826, {	-- Dark Iron Flame Reaver
@@ -2821,7 +2821,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						})),
 						-- #endif
 						i(22305, {	-- Ironweave Mantle
-							["timeline"] = { 
+							["timeline"] = {
 								-- #if SEASON_OF_DISCOVERY
 								"removed 1.15.3",
 								-- #else

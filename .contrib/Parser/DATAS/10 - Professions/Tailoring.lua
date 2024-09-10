@@ -2312,22 +2312,22 @@ profession(TAILORING, {
 			["groups"] = {
 				{
 					["name"] = "Golden Spellthread",
-					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					["recipeID"] = 31433
 				},
 				{
 					["name"] = "Mystic Spellthread",
-					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+					["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					["recipeID"] = 31430
 				},
 				{
 					["name"] = "Runic Spellthread",
-					["minReputation"] = { 934, NEUTRAL },	-- The Scryers, Neutral.
+					["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
 					["recipeID"] = 31432
 				},
 				{
 					["name"] = "Silver Spellthread",
-					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					["recipeID"] = 31431
 				}
 			}
@@ -2424,7 +2424,7 @@ profession(TAILORING, {
 				},
 				{
 					["name"] = "Flameheart Vest",
-					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					["recipeID"] = 37884
 				},
 				-- #if AFTER 4.0.1.12984
@@ -2497,7 +2497,7 @@ profession(TAILORING, {
 				}),
 				{
 					["name"] = "Flameheart Bracers",
-					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					["recipeID"] = 37882
 				},
 				{
@@ -2570,7 +2570,7 @@ profession(TAILORING, {
 			["groups"] = {
 				{
 					["name"] = "Flameheart Gloves",
-					["minReputation"] = { 932, NEUTRAL },	-- The Aldor, Neutral.
+					["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
 					["recipeID"] = 37883
 				},
 				applyclassicphase(TBC_PHASE_FIVE, {

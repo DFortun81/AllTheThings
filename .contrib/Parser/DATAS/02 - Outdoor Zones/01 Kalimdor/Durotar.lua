@@ -3792,7 +3792,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = { ORC, TROLL, UNDEAD },
 
 					-- Available to Trolls without faction requirements.
-					["minReputation"] = { 530, EXALTED },	-- Darkspear Trolls, Exalted.
+					["minReputation"] = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. TROLL .. [[ then
 							t.minReputation = nil;
@@ -3969,7 +3969,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(7952, {	-- Zjolnir <Raptor Handler>
 					["coord"] = { 55.2, 75.6, DUROTAR },
 					-- Available to Trolls without faction requirements.
-					["minReputation"] = { 530, EXALTED },	-- Darkspear Trolls, Exalted.
+					["minReputation"] = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. TROLL .. [[ then
 							t.minReputation = nil;

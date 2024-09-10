@@ -4022,7 +4022,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { DWARF, GNOME },
 
 					-- Available to Gnomes without faction requirements.
-					["minReputation"] = { 54, EXALTED },	-- Gnomeregan Exiles, Exalted.
+					["minReputation"] = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. GNOME .. [[ then
 							t.minReputation = nil;
@@ -4041,7 +4041,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 
 					-- Available to Dwarves without faction requirements.
-					["minReputation"] = { 47, EXALTED },	-- Ironforge, Exalted.
+					["minReputation"] = { FACTION_IRONFORGE, EXALTED },	-- Ironforge, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. DWARF .. [[ then
 							t.minReputation = nil;
@@ -4172,7 +4172,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 
 					-- Available to Gnomes without faction requirements.
-					["minReputation"] = { 54, EXALTED },	-- Gnomeregan Exiles, Exalted.
+					["minReputation"] = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. GNOME .. [[ then
 							t.minReputation = nil;
@@ -4221,7 +4221,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 
 					-- Available to Dwarves without faction requirements.
-					["minReputation"] = { 47, EXALTED },	-- Ironforge, Exalted.
+					["minReputation"] = { FACTION_IRONFORGE, EXALTED },	-- Ironforge, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. DWARF .. [[ then
 							t.minReputation = nil;

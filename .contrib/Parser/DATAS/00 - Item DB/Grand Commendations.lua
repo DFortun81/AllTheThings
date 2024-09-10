@@ -26,16 +26,16 @@ i(49702, FACTION_THE_SONS_OF_HODIR);	-- Sons of Hodir Commendation Badge
 i(44710, FACTION_THE_WYRMREST_ACCORD);	-- Wyrmrest Commendation Badge
 
 -- Argent Tournament
-a(i(45714, 69));	-- Darnassus Commendation Badge
-a(i(45715, 930));	-- Exodar Commendation Badge
-a(i(45716, 54));	-- Gnomeregan Commendation Badge
-a(i(45717, 47));	-- Ironforge Commendation Badge
-h(i(45719, 76));	-- Orgrimmar Commendation Badge
-h(i(45720, 530));	-- Sen'jin Commendation Badge
-h(i(45721, 911));	-- Silvermoon Commendation Badge
-a(i(45718, 72));	-- Stormwind Commendation Badge
-h(i(45722, 81));	-- Thunder Bluff Commendation Badge
-h(i(45723, 68));	-- Undercity Commendation Badge
+a(i(45714, FACTION_DARNASSUS));	-- Darnassus Commendation Badge
+a(i(45715, FACTION_EXODAR));	-- Exodar Commendation Badge
+a(i(45716, FACTION_GNOMEREGAN));	-- Gnomeregan Commendation Badge
+a(i(45717, FACTION_IRONFORGE));	-- Ironforge Commendation Badge
+h(i(45719, FACTION_ORGRIMMAR));	-- Orgrimmar Commendation Badge
+h(i(45720, FACTION_DARKSPEAR_TROLLS));	-- Sen'jin Commendation Badge
+h(i(45721, FACTION_SILVERMOON_CITY));	-- Silvermoon Commendation Badge
+a(i(45718, FACTION_STORMWIND));	-- Stormwind Commendation Badge
+h(i(45722, FACTION_THUNDER_BLUFF));	-- Thunder Bluff Commendation Badge
+h(i(45723, FACTION_UNDERCITY));	-- Undercity Commendation Badge
 
 -- Cataclysm
 -- Uldum
@@ -43,17 +43,17 @@ i(64492, FACTION_RAMKAHEN);	-- Ramkahen Badge of Valor
 
 -- Molten Front (Did not automatically apply race requirements... sigh)
 h(i(71088, FACTION_BILGEWATER_CARTEL));	-- Bilgewater Writ of Commendation
-a(i(70145, 69));	-- Darnassus Writ of Commendation
-a(i(70146, 930));	-- Exodar Writ of Commendation
+a(i(70145, FACTION_DARNASSUS));	-- Darnassus Writ of Commendation
+a(i(70146, FACTION_EXODAR));	-- Exodar Writ of Commendation
 a(i(71087, FACTION_GILNEAS));	-- Gilneas Writ of Commendation
-a(i(70147, 54));	-- Gnomeregan Writ of Commendation
-a(i(70148, 47));	-- Ironforge Writ of Commendation
-h(i(70149, 76));	-- Orgrimmar Writ of Commendation
-h(i(70150, 530));	-- Sen'jin Writ of Commendation
-h(i(70151, 911));	-- Silvermoon Writ of Commendation
-a(i(70152, 72));	-- Stormwind Writ of Commendation
-h(i(70153, 81));	-- Thunder Bluff Writ of Commendation
-h(i(70154, 68));	-- Undercity Writ of Commendation
+a(i(70147, FACTION_GNOMEREGAN));	-- Gnomeregan Writ of Commendation
+a(i(70148, FACTION_IRONFORGE));	-- Ironforge Writ of Commendation
+h(i(70149, FACTION_ORGRIMMAR));	-- Orgrimmar Writ of Commendation
+h(i(70150, FACTION_DARKSPEAR_TROLLS));	-- Sen'jin Writ of Commendation
+h(i(70151, FACTION_SILVERMOON_CITY));	-- Silvermoon Writ of Commendation
+a(i(70152, FACTION_STORMWIND));	-- Stormwind Writ of Commendation
+h(i(70153, FACTION_THUNDER_BLUFF));	-- Thunder Bluff Writ of Commendation
+h(i(70154, FACTION_UNDERCITY));	-- Undercity Writ of Commendation
 
 -- Pandaria
 -- The "Grand Commendation" items of Pandaria unlock bonus reputation rather than grant reputation.
@@ -82,13 +82,13 @@ i(94226, FACTION_THE_KLAXXI);				-- Stolen Klaxxi Insignia
 i(94223, FACTION_SHADO_PAN);				-- Stolen Shado-Pan Insignia
 
 -- Timewalking: Burning Crusade
-i(129948, 946);		-- Commendation of Honor Hold
-i(129951, 1011);	-- Commendation of Lower City
-i(129949, 942);		-- Commendation of the Cenarion Expedition
-i(129945, 933);		-- Commendation of The Consortium
-i(129950, 989);		-- Commendation of the Keepers of Time
-i(129946, 935);		-- Commendation of The Sha'tar
-i(129947, 947);		-- Commendation of Thrallmar
+i(129948, FACTION_HONOR_HOLD);		-- Commendation of Honor Hold
+i(129951, FACTION_LOWER_CITY);	-- Commendation of Lower City
+i(129949, FACTION_CENARION_EXPEDITION);		-- Commendation of the Cenarion Expedition
+i(129945, FACTION_THE_CONSORTIUM);		-- Commendation of The Consortium
+i(129950, FACTION_KEEPERS_OF_TIME);		-- Commendation of the Keepers of Time
+i(129946, FACTION_THE_SHATAR);		-- Commendation of The Sha'tar
+i(129947, FACTION_THRALLMAR);		-- Commendation of Thrallmar
 
 -- Timewalking: Wrath of the Lich King
 i(129955, FACTION_ALLIANCE_VANGUARD);	-- Commendation of the Alliance Vanguard

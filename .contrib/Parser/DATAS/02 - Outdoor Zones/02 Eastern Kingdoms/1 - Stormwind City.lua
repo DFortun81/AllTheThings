@@ -54,7 +54,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}},
 			}),
 			n(FACTIONS, {
-				faction(72, {	-- Stormwind
+				faction(FACTION_STORMWIND, {	-- Stormwind
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Human_Female",
 					-- #else
@@ -678,7 +678,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
-					["maxReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
+					["maxReputation"] = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -4616,19 +4616,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64902, {	-- Cape of Stormwind
-							["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
+							["minReputation"] = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
 							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64901, {	-- Mantle of Stormwind
-							["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
+							["minReputation"] = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
 							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64903, {	-- Shroud of Stormwind
-							["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
+							["minReputation"] = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
 							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(67531, {	-- Stormwind Satchel
-							["minReputation"] = { 72, REVERED },	-- Stormwind, Revered.
+							["minReputation"] = { FACTION_STORMWIND, REVERED },	-- Stormwind, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
@@ -5635,7 +5635,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(43694, {	-- Katie Stokx <Horse Breeder>
 					["coord"] = { 77.0, 67.8, STORMWIND_CITY },
 					-- Available to Humans without faction requirements.
-					["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
+					["minReputation"] = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. HUMAN .. [[ then
 							t.minReputation = nil;
@@ -5796,7 +5796,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["description"] = "Appears in Stormwind after War of Thorns.",
 					["coord"] = { 55.0, 12.6, STORMWIND_CITY },
 					-- Available to Night Elves without faction requirements.
-					["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
+					["minReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. NIGHTELF .. [[ then
 							t.minReputation = nil;
@@ -6258,19 +6258,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64887, {	-- Cape of Darnassus
-							["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
+							["minReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64888, {	-- Mantle of Darnassus
-							["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
+							["minReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64886, {	-- Shroud of Darnassus
-							["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
+							["minReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67526, {	-- Darnassian Satchel
-							["minReputation"] = { 69, REVERED },	-- Darnassus, Revered.
+							["minReputation"] = { FACTION_DARNASSUS, REVERED },	-- Darnassus, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},

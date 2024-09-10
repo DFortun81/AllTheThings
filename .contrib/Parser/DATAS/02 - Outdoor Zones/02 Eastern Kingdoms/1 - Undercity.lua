@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			n(FACTIONS, {
-				faction(68, {	-- Undercity
+				faction(FACTION_UNDERCITY, {	-- Undercity
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Undead_Male",
 					-- #else
@@ -251,7 +251,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 7818,	-- A Donation of Runecloth
 					["coord"] = { 71.8, 29, UNDERCITY },
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
-					["maxReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
+					["maxReputation"] = { FACTION_UNDERCITY, EXALTED },	-- Undercity, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -1488,19 +1488,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64921, {	-- Cape of Undercity
-							["minReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
+							["minReputation"] = { FACTION_UNDERCITY, EXALTED },	-- Undercity, Exalted.
 							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64922, {	-- Mantle of Undercity
-							["minReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
+							["minReputation"] = { FACTION_UNDERCITY, EXALTED },	-- Undercity, Exalted.
 							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(64920, {	-- Shroud of Undercity
-							["minReputation"] = { 68, EXALTED },	-- Undercity, Exalted.
+							["minReputation"] = { FACTION_UNDERCITY, EXALTED },	-- Undercity, Exalted.
 							["timeline"] = { ADDED_4_0_1 },
 						}),
 						i(67529, {	-- Undercity Satchel
-							["minReputation"] = { 68, REVERED },	-- Undercity, Revered.
+							["minReputation"] = { FACTION_UNDERCITY, REVERED },	-- Undercity, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},

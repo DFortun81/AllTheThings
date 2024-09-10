@@ -297,7 +297,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							{ 22.0, 38.6, ASHENVALE },
 							{ 69.6, 63.6, ASHENVALE },
 						},
-						["maxReputation"] = { 890, HONORED },	-- Silverwing Sentinels, Honored.
+						["maxReputation"] = { FACTION_SILVERWING_SENTINELS, HONORED },	-- Silverwing Sentinels, Honored.
 					},
 					["hqd"] = {
 						["crs"] = {
@@ -310,7 +310,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							{ 74.0, 74.0, ASHENVALE },
 							{ 28.6, 28.8, ASHENVALE },
 						},
-						["maxReputation"] = { 889, HONORED },	-- Warsong Outriders, Honored.
+						["maxReputation"] = { FACTION_WARSONG_OUTRIDERS, HONORED },	-- Warsong Outriders, Honored.
 					},
 					["OnInit"] = [[function(t) _.ResolveQuestData(t); t.OnInit = nil; return _.CreateCustomHeader(t.headerID, t); end]],
 					["timeline"] = { REMOVED_2_0_1 },
@@ -342,12 +342,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["aqd"] = {
 						["cr"] = 212969,	-- Kazragore <Far Seer>
 						["coord"] = { 42.0, 67.0, ASHENVALE },
-						["maxReputation"] = { 890, HONORED },	-- Silverwing Sentinels, Honored.
+						["maxReputation"] = { FACTION_SILVERWING_SENTINELS, HONORED },	-- Silverwing Sentinels, Honored.
 					},
 					["hqd"] = {
 						["cr"] = 212970,	-- Felore Moonray <Priestess of the Moon>
 						["coord"] = { 50.5, 72.0, ASHENVALE },
-						["maxReputation"] = { 889, HONORED },	-- Warsong Outriders, Honored.
+						["maxReputation"] = { FACTION_WARSONG_OUTRIDERS, HONORED },	-- Warsong Outriders, Honored.
 					},
 					["OnInit"] = [[function(t) _.ResolveQuestData(t); t.OnInit = nil; return _.CreateCustomHeader(t.headerID, t); end]],
 					["timeline"] = { REMOVED_2_0_1 },
@@ -826,7 +826,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 212969 },	-- Kazragore <Far Seer>
 					},
 					["coord"] = { 42.0, 67.0, ASHENVALE },
-					["maxReputation"] = { 889, HONORED },	-- Warsong Outriders, Honored.
+					["maxReputation"] = { FACTION_WARSONG_OUTRIDERS, HONORED },	-- Warsong Outriders, Honored.
 					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = HORDE_ONLY,
 					-- #if AFTER 1.15.2
@@ -2429,7 +2429,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ "n", 212970 },	-- Felore Moonray <Priestess of the Moon>
 					},
 					["coord"] = { 50.5, 72.0, ASHENVALE },
-					["maxReputation"] = { 890, HONORED },	-- Silverwing Sentinels, Honored.
+					["maxReputation"] = { FACTION_SILVERWING_SENTINELS, HONORED },	-- Silverwing Sentinels, Honored.
 					["timeline"] = { REMOVED_2_0_1 },
 					["races"] = ALLIANCE_ONLY,
 					-- #if AFTER 1.15.2

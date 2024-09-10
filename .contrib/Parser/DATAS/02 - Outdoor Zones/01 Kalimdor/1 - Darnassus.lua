@@ -72,7 +72,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 			}),
 			n(FACTIONS, {
-				faction(69, {	-- Darnassus
+				faction(FACTION_DARNASSUS, {	-- Darnassus
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Nightelf_Female",
 					-- #else
@@ -223,7 +223,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14725,	-- Raedon Duskstriker
 					["sourceQuest"] = 7800,	-- A Donation of Runecloth
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
-					["maxReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
+					["maxReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
 					["coord"] = { 64.0, 23.0, DARNASSUS },
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
@@ -1140,7 +1140,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 
 					-- Available to Night Elves without faction requirements.
-					["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
+					["minReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. NIGHTELF .. [[ then
 							t.minReputation = nil;
@@ -1537,7 +1537,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 38.3, 15.3, DARNASSUS },
 					-- #endif
 					-- Available to Night Elves without faction requirements.
-					["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
+					["minReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. NIGHTELF .. [[ then
 							t.minReputation = nil;
@@ -1681,19 +1681,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64887, {	-- Cape of Darnassus
-							["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
+							["minReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64888, {	-- Mantle of Darnassus
-							["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
+							["minReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64886, {	-- Shroud of Darnassus
-							["minReputation"] = { 69, EXALTED },	-- Darnassus, Exalted.
+							["minReputation"] = { FACTION_DARNASSUS, EXALTED },	-- Darnassus, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67526, {	-- Darnassian Satchel
-							["minReputation"] = { 69, REVERED },	-- Darnassus, Revered.
+							["minReputation"] = { FACTION_DARNASSUS, REVERED },	-- Darnassus, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},

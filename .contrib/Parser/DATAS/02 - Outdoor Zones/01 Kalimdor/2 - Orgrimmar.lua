@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
-				faction(530, {	-- Darkspear Trolls
+				faction(FACTION_DARKSPEAR_TROLLS, {	-- Darkspear Trolls
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Troll_Male",
 					-- #else
@@ -538,7 +538,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 7824,	-- A Donation of Runecloth
 					["coord"] = { 63.4, 51.0, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maxReputation"] = { 530, EXALTED },	-- Darkspear Trolls, Exalted.
+					["maxReputation"] = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -549,7 +549,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 7836,	-- A Donation of Runecloth
 					["coord"] = { 37.8, 87.6, ORGRIMMAR },
 					["timeline"] = { REMOVED_4_0_3 },
-					["maxReputation"] = { 76, EXALTED },	-- Orgrimmar, Exalted.
+					["maxReputation"] = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted.
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -2161,7 +2161,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = { ORC, TROLL, UNDEAD },
 
 					-- Available to Orcs without faction requirements.
-					["minReputation"] = { 76, EXALTED },	-- Orgrimmar, Exalted.
+					["minReputation"] = { FACTION_ORGRIMMAR, EXALTED },	-- Orgrimmar, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. ORC .. [[ then
 							t.minReputation = nil;
@@ -2375,19 +2375,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64912, {	-- Darkspear Cape
-							["minReputation"] = { 530, EXALTED },	-- Darkspear Trolls, Exalted.
+							["minReputation"] = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64911, {	-- Darkspear Mantle
-							["minReputation"] = { 530, EXALTED },	-- Darkspear Trolls, Exalted.
+							["minReputation"] = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64913, {	-- Darkspear Shroud
-							["minReputation"] = { 530, EXALTED },	-- Darkspear Trolls, Exalted.
+							["minReputation"] = { FACTION_DARKSPEAR_TROLLS, EXALTED },	-- Darkspear Trolls, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67536, {	-- Darkspear Satchel
-							["minReputation"] = { 530, REVERED },	-- Darkspear Trolls, Revered.
+							["minReputation"] = { FACTION_DARKSPEAR_TROLLS, REVERED },	-- Darkspear Trolls, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},

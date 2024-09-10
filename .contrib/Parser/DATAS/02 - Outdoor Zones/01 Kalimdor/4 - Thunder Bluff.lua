@@ -73,7 +73,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}},
 			}),
 			n(FACTIONS, {
-				faction(81, {	-- Thunder Bluff
+				faction(FACTION_THUNDER_BLUFF, {	-- Thunder Bluff
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Tauren_Male",
 					-- #else
@@ -189,7 +189,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 7823,	-- A Donation of Runecloth
 					["coord"] = { 43.2, 42.8, THUNDER_BLUFF },
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
-					["maxReputation"] = { 81, EXALTED },	-- Thunder Bluff, Exalted.
+					["maxReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["repeatable"] = true,
@@ -943,19 +943,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64917, {	-- Cape of Thunder Bluff
-							["minReputation"] = { 81, EXALTED },	-- Thunder Bluff, Exalted.
+							["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64918, {	-- Mantle of Thunder Bluff
-							["minReputation"] = { 81, EXALTED },	-- Thunder Bluff, Exalted.
+							["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64919, {	-- Shroud of Thunder Bluff
-							["minReputation"] = { 81, EXALTED },	-- Thunder Bluff, Exalted.
+							["minReputation"] = { FACTION_THUNDER_BLUFF, EXALTED },	-- Thunder Bluff, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67534, {	-- Thunder Bluff Satchel
-							["minReputation"] = { 81, REVERED },	-- Thunder Bluff, Revered.
+							["minReputation"] = { FACTION_THUNDER_BLUFF, REVERED },	-- Thunder Bluff, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},

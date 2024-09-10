@@ -1337,7 +1337,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["description"] = "Explore Isle of Quel'Danas, revealing the covered areas of the world map.",
 					-- #endif
 				}),
-				achWithRep(897, 1077, {	-- You're So Offensive
+				achWithRep(897, FACTION_SHATTERED_SUN_OFFENSIVE, {	-- You're So Offensive
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with the Shattered Sun Offensive to Exalted.",
 					-- #endif
@@ -1357,7 +1357,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				exploration(4092),	-- The Dead Scar
 			}),
 			n(FACTIONS, {
-				faction(1077, {	-- Shattered Sun Offensive
+				faction(FACTION_SHATTERED_SUN_OFFENSIVE, {	-- Shattered Sun Offensive
 					["maps"] = { MAGISTERS_TERRACE },
 				}),
 			}),
@@ -1374,7 +1374,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR, q(11545, {	-- A Charitable Donation (Removed completion of Phase 4)
 					["qg"] = 25112,	-- Anchorite Ayuri
 					["coord"] = { 49.1, 37.6, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["timeline"] = { REMOVED_3_0_2 },
 					-- #if BEFORE WRATH
 					["OnUpdate"] = [[function(t) t.u = _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B .. [[) and ]] .. REMOVED_FROM_GAME .. [[ or ]] .. TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR .. [[; end]],
@@ -1386,7 +1386,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				q(11554, {	-- A Friend in the Frontlines
 					["qg"] = 25032,	-- Eldara Dawnrunner
 					["coord"] = { 47.3, 30.7, ISLE_OF_QUELDANAS },
-					["minReputation"] = { 1077, FRIENDLY },	-- Shattered Sun Offensive, Friendly.
+					["minReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, FRIENDLY },	-- Shattered Sun Offensive, Friendly.
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
 						i(34583),	-- Aldor Supplies Package (Friendly)
@@ -1396,7 +1396,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR, q(11549, {	-- A Magnanimous Benefactor
 					["qg"] = 25163,	-- Anchorite Kairthos
 					["coord"] = { 51.2, 33.1, ISLE_OF_QUELDANAS },
-					["minReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["minReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["cost"] = { { "g", 10000000 } },	-- 1000g
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
@@ -1406,7 +1406,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO, q(11523, {	-- Arm the Wards!
 					["qg"] = 24967,	-- Captain Theris Dawnhearth
 					["coord"] = { 47.4, 30.4, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
@@ -1427,7 +1427,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE_B, q(11544, {	-- Ata'mal Armaments
 					["qg"] = 25046,	-- Smith Hauthaa
 					["coord"] = { 50.5, 40.7, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["maps"] = { SHADOWMOON_VALLEY },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
@@ -1450,7 +1450,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR, q(11540, {	-- Crush the Dawnblade
 					["qg"] = 25069,	-- Magister Ilastar
 					["coord"] = { 49.3, 40.3, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
@@ -1468,7 +1468,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR, q(11541, {	-- Disrupt the Greengill Coast
 					["qg"] = 25088,	-- Captain Valindria
 					["coord"] = { 53.7, 34.2, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
@@ -1482,7 +1482,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE, q(11532, {	-- Distraction at the Dead Scar (Removed completion of Phase 2)
 					["qg"] = 25057,	-- Battlemage Arynna
 					["coord"] = { 47.5, 35.0, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["timeline"] = { REMOVED_3_0_2 },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
@@ -1507,7 +1507,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE_B, q(11536, {	-- Don't Stop Now....
 					["qg"] = 25046,	-- Smith Hauthaa
 					["coord"] = { 50.5, 40.7, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
@@ -1533,7 +1533,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE, q(11524, {	-- Erratic Behavior (Removed completion of Phase 1)
 					["qg"] = 24965,	-- Vindicator Xayann
 					["coord"] = { 47.1, 30.6, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["timeline"] = { REMOVED_3_0_2 },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
@@ -1550,7 +1550,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				q(11557, {	-- Exalted Among All Combatants
 					["qg"] = 25032,	-- Eldara Dawnrunner
 					["coord"] = { 47.3, 30.7, ISLE_OF_QUELDANAS },
-					["minReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["minReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
 						i(34595),	-- Aldor Supplies Package (Exalted)
@@ -1560,7 +1560,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO, q(11525, {	-- Further Conversions
 					["qg"] = 24965,	-- Vindicator Xayann
 					["coord"] = { 47.1, 30.6, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
@@ -1573,7 +1573,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				q(11555, {	-- Honored by Your Allies
 					["qg"] = 25032,	-- Eldara Dawnrunner
 					["coord"] = { 47.3, 30.7, ISLE_OF_QUELDANAS },
-					["minReputation"] = { 1077, HONORED },	-- Shattered Sun Offensive, Honored.
+					["minReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, HONORED },	-- Shattered Sun Offensive, Honored.
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
 						i(34587),	-- Aldor Supplies Package (Honored)
@@ -1583,7 +1583,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE, q(11542, {	-- Intercept the Reinforcements (Removed completion of Phase 3)
 					["qg"] = 25108,	-- Vindicator Kaalan
 					["coord"] = { 50.5, 38.9, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["timeline"] = { REMOVED_3_0_2 },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
@@ -1608,7 +1608,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR, q(11543, {	-- Keeping the Enemy at Bay
 					["qg"] = 25108,	-- Vindicator Kaalan
 					["coord"] = { 50.5, 38.9, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
@@ -1629,7 +1629,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B, q(11547, {	-- Know Your Ley Lines
 					["qg"] = 25133,	-- Astromancer Darnarian
 					["coord"] = { 47.4, 35.3, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
@@ -1651,7 +1651,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE, q(11535, {	-- Making Ready
 					["qg"] = 25046,	-- Smith Hauthaa
 					["coord"] = { 50.5, 40.7, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["timeline"] = { REMOVED_3_0_2 },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
@@ -1672,7 +1672,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C, q(11546, {	-- Open for Business
 					["qg"] = 24975,	-- Mar'nah
 					["coord"] = { 51.4, 32.4, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
@@ -1688,7 +1688,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR, q(11520, {	-- Discovering Your Roots (Removed completion of Phase 4)
 					["qg"] = 24975,	-- Mar'nah
 					["coord"] = { 51.4, 32.4, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["timeline"] = { REMOVED_3_0_2 },
 					["maps"] = { TEROKKAR_FOREST },
 					["isDaily"] = true,
@@ -1710,7 +1710,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C, q(11521, {	-- Rediscovering Your Roots
 					["qg"] = 24975,	-- Mar'nah
 					["coord"] = { 51.4, 32.4, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["maps"] = { TEROKKAR_FOREST },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
@@ -1744,7 +1744,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				q(11556, {	-- Revered in the Field of Battle
 					["qg"] = 25032,	-- Eldara Dawnrunner
 					["coord"] = { 47.3, 30.7, ISLE_OF_QUELDANAS },
-					["minReputation"] = { 1077, REVERED },	-- Shattered Sun Offensive, Revered.
+					["minReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, REVERED },	-- Shattered Sun Offensive, Revered.
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
 						i(34592),	-- Aldor Supplies Package (Revered)
@@ -1754,7 +1754,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE, q(11539, {	-- Taking the Harbor (Removed completion of Phase 3)
 					["qg"] = 25069,	-- Magister Ilastar
 					["coord"] = { 49.3, 40.3, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["timeline"] = { REMOVED_3_0_2 },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
@@ -1776,7 +1776,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE, q(11533, {	-- The Air Strikes Must Continue
 					["qg"] = 25057,	-- Battlemage Arynna
 					["coord"] = { 47.5, 35.0, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
@@ -1797,7 +1797,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO, q(11538, {	-- The Battle for the Sun's Reach Armory (Removed completion of Phase 2)
 					["qg"] = 25061,	-- Harbinger Inuuro
 					["coord"] = { 47.6, 35.0, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["timeline"] = { REMOVED_3_0_2 },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
@@ -1822,7 +1822,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE, q(11537, {	-- The Battle Must Go On
 					["qg"] = 25061,	-- Harbinger Inuuro
 					["coord"] = { 47.6, 35.0, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
@@ -1843,7 +1843,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE, q(11496, {	-- The Sanctum Wards (Removed completion of Phase 1)
 					["qg"] = 24967,	-- Captain Theris Dawnhearth
 					["coord"] = { 47.4, 30.4, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["timeline"] = { REMOVED_3_0_2 },
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),
@@ -1876,7 +1876,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B, q(11548, {	-- Your Continued Support
 					["qg"] = 25112,	-- Anchorite Ayuri
 					["coord"] = { 49.1, 37.6, ISLE_OF_QUELDANAS },
-					["maxReputation"] = { 1077, EXALTED },	-- Shattered Sun Offensive, Exalted.
+					["maxReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, EXALTED },	-- Shattered Sun Offensive, Exalted.
 					["cost"] = { { "g", 100000 } },	-- 10g
 					["isDaily"] = true,
 					["lvl"] = lvlsquish(70, 70, 25),

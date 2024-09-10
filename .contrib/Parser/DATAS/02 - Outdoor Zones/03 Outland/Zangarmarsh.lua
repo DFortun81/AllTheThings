@@ -197,7 +197,7 @@ root(ROOTS.Zones, {
 						-- }),
 						-- #endif
 					}),
-					applyclassicphase(TBC_PHASE_ONE, achWithReps(953, { 609, 942 }, {	-- Guardian of Cenarius
+					applyclassicphase(TBC_PHASE_ONE, achWithReps(953, { FACTION_CENARION_CIRCLE, FACTION_CENARION_EXPEDITION }, {	-- Guardian of Cenarius
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with the Cenarion Circle and Cenarion Expedition to Exalted.",
 						-- #endif
@@ -206,7 +206,7 @@ root(ROOTS.Zones, {
 							applyclassicphase(WRATH_PHASE_ONE, title(100)),	-- %, Guardian of Cenarius
 						},
 					})),
-					achWithRep(900, 970, {	-- The Czar of Sporeggar
+					achWithRep(900, FACTION_SPOREGGAR, {	-- The Czar of Sporeggar
 						-- #if BEFORE WRATH
 						["description"] = "Raise your reputation with Sporeggar to Exalted.",
 						-- #endif
@@ -222,7 +222,7 @@ root(ROOTS.Zones, {
 							["coord"] = { 20.0, 51.6, ZANGARMARSH },
 							-- #if BEFORE 5.3.0
 							["description"] = "Found only in Sporeggar. Requires FRIENDLY reputation with the Sporeggar faction.",
-							["minReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly
+							["minReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly
 							-- #else
 							["description"] = "Found only in Sporeggar.",	-- The reputation requirement got removed in a late MoP patch, but can't find any confirmation on which one. Working assumption is 5.3.0 which brough battle pets to TBC raids.
 							-- #endif
@@ -260,10 +260,10 @@ root(ROOTS.Zones, {
 					exploration(3645),	-- Zabra'jin
 				}),
 				n(FACTIONS, {
-					faction(942, {	-- Cenarion Expedition
+					faction(FACTION_CENARION_EXPEDITION, {	-- Cenarion Expedition
 						["maps"] = { COILFANG_RESERVOIR_SLAVE_PENS, COILFANG_RESERVOIR_STEAMVAULT, COILFANG_RESERVOIR_UNDERBOG },
 					}),
-					faction(970, {	-- Sporeggar
+					faction(FACTION_SPOREGGAR, {	-- Sporeggar
 						["OnTooltip"] = OnTooltipForSporeggar,
 						["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
 					}),
@@ -340,8 +340,8 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 9919,	-- Sporeggar
 						["coord"] = { 19.7, 52.1, ZANGARMARSH },
 						["timeline"] = { ADDED_7_3_5 },
-						["minReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
-						["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
+						["minReputation"] = { FACTION_SPOREGGAR, NEUTRAL },	-- Sporeggar, Neutral.
+						["maxReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(62, 62, 10),
 						-- #if NOT ANYCLASSIC
@@ -356,8 +356,8 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 19.0, 63.4, ZANGARMARSH },
 						["timeline"] = { ADDED_7_3_5 },
-						["minReputation"] = { 970, UNFRIENDLY },	-- Sporeggar, Unfriendly.
-						["maxReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
+						["minReputation"] = { FACTION_SPOREGGAR, UNFRIENDLY },	-- Sporeggar, Unfriendly.
+						["maxReputation"] = { FACTION_SPOREGGAR, NEUTRAL },	-- Sporeggar, Neutral.
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(62, 62, 10),
 						-- #if NOT ANYCLASSIC
@@ -398,7 +398,7 @@ root(ROOTS.Zones, {
 					}),
 					q(9792, {	-- A Message to Telaar
 						["qg"] = 18008,	-- Ikuti
-						["minReputation"] = { 978, NEUTRAL },	-- Kurenai, Neutral.
+						["minReputation"] = { FACTION_KURENAI, NEUTRAL },	-- Kurenai, Neutral.
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(64, 64, 10),
 					}),
@@ -609,7 +609,7 @@ root(ROOTS.Zones, {
 					q(9766, {	-- Coilfang Armaments
 						["qg"] = 17841,	-- Ysiel Windsinger
 						["sourceQuest"] = 9765,	-- Preparing for War
-						["maxReputation"] = { 942, EXALTED },	-- Cenarion Expedition, Exalted.
+						["maxReputation"] = { FACTION_CENARION_EXPEDITION, EXALTED },	-- Cenarion Expedition, Exalted.
 						["timeline"] = { REMOVED_4_3_0 },
 						["cost"] = { { "i", 24368, 1 } },	-- Coilfang Armaments
 						["maps"] = { COILFANG_RESERVOIR_STEAMVAULT },
@@ -713,7 +713,7 @@ root(ROOTS.Zones, {
 					q(9806, {	-- Fertile Spores
 						["qg"] = 17925,	-- Gshaff
 						["coord"] = { 19.1, 49.4, ZANGARMARSH },
-						["minReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
+						["minReputation"] = { FACTION_SPOREGGAR, NEUTRAL },	-- Sporeggar, Neutral.
 						["cost"] = { { "i", 24449, 6 } },	-- Fertile Spore
 						["lvl"] = lvlsquish(62, 62, 10),
 					}),
@@ -722,9 +722,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 19.8, 50.8, ZANGARMARSH },
 						-- #if BEFORE CATA
 						-- Not really sure when this changed. It's only available after Exalted in TBC Classic.
-						["minReputation"] = { 970, EXALTED },	-- Sporeggar, Exalted.
+						["minReputation"] = { FACTION_SPOREGGAR, EXALTED },	-- Sporeggar, Exalted.
 						-- #else
-						["minReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
+						["minReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
 						-- #endif
 						["lvl"] = lvlsquish(63, 63, 10),
 						["groups"] = {
@@ -778,8 +778,8 @@ root(ROOTS.Zones, {
 					q(9808, {	-- Glowcap Mushrooms
 						["qg"] = 17924,	-- Msshi'fn
 						["coord"] = { 19.7, 52.1, ZANGARMARSH },
-						["minReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
-						["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
+						["minReputation"] = { FACTION_SPOREGGAR, NEUTRAL },	-- Sporeggar, Neutral.
+						["maxReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
 						["cost"] = { { "i", 24245, 10 } },	-- Glowcap
 						["lvl"] = lvlsquish(62, 62, 10),
 						-- #if NOT ANYCLASSIC
@@ -811,7 +811,7 @@ root(ROOTS.Zones, {
 						["qg"] = 17909,	-- Lauranna Thar'well
 						["sourceQuest"] = 9802,	-- Plants of Zangarmarsh
 						["coord"] = { 80.3, 64.2, ZANGARMARSH },
-						["maxReputation"] = { 942, HONORED },	-- Cenarion Expedition, Honored.
+						["maxReputation"] = { FACTION_CENARION_EXPEDITION, HONORED },	-- Cenarion Expedition, Honored.
 						["cost"] = {{ "i", 24401, 10 }},	-- Unidentified Plant Parts
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(60, 60, 10),
@@ -906,7 +906,7 @@ root(ROOTS.Zones, {
 					}),
 					q(9833, {	-- Lines of Communication
 						["qg"] = 18009,	-- Puluu
-						["minReputation"] = { 978, NEUTRAL },	-- Kurenai, Neutral.
+						["minReputation"] = { FACTION_KURENAI, NEUTRAL },	-- Kurenai, Neutral.
 						["coord"] = { 40.8, 28.6, ZANGARMARSH },
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 62, 10),
@@ -1002,8 +1002,8 @@ root(ROOTS.Zones, {
 						["qg"] = 17925,	-- Gshaff
 						["sourceQuest"] = 9806,	-- Fertile Spores
 						["coord"] = { 19.1, 49.4, ZANGARMARSH },
-						["maxReputation"] = { 970, EXALTED },	-- Sporeggar, Exalted.
-						["minReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
+						["maxReputation"] = { FACTION_SPOREGGAR, EXALTED },	-- Sporeggar, Exalted.
+						["minReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
 						["cost"] = { { "i", 24449, 6 } },	-- Fertile Spore
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(62, 62, 10),
@@ -1015,7 +1015,7 @@ root(ROOTS.Zones, {
 						["qg"] = 17924,	-- Mshii'fn
 						["sourceQuest"] = 9808,	-- Glowcap Mushrooms
 						["coord"] = { 19.7, 52.1, ZANGARMARSH },
-						["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
+						["maxReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
 						["cost"] = { { "i", 24245, 10 } },	-- Glowcap
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(62, 62, 10),
@@ -1027,7 +1027,7 @@ root(ROOTS.Zones, {
 						["qg"] = 17923,	-- Fahssn
 						["sourceQuest"] = 9739,	-- The Sporelings' Plight
 						["coord"] = { 19.0, 63.4, ZANGARMARSH },
-						["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
+						["maxReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(61, 61, 10),
 						-- #if NOT ANYCLASSIC
@@ -1038,7 +1038,7 @@ root(ROOTS.Zones, {
 						["qg"] = 17923,	-- Fahssn
 						["sourceQuest"] = 9743,	-- Natural Enemies
 						["coord"] = { 19.0, 63.4, ZANGARMARSH },
-						["maxReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
+						["maxReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
 						["cost"] = { { "i", 24291, 6 } },	-- Bog Lord Tendril
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(61, 61, 10),
@@ -1049,7 +1049,7 @@ root(ROOTS.Zones, {
 					q(9834, {	-- Natural Armor
 						["qg"] = 18010,	-- Maktu
 						["coord"] = { 41.6, 27.4, ZANGARMARSH },
-						["minReputation"] = { 978, NEUTRAL },	-- Kurenai, Neutral.
+						["minReputation"] = { FACTION_KURENAI, NEUTRAL },	-- Kurenai, Neutral.
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 62, 10),
 						["groups"] = {
@@ -1111,7 +1111,7 @@ root(ROOTS.Zones, {
 					q(9726, {	-- Now That We're Friends...
 						["qg"] = 17856,	-- Gzhun'tt
 						["coord"] = { 19.5, 50.0, ZANGARMARSH },
-						["minReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
+						["minReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
 						["lvl"] = lvlsquish(62, 62, 10),
 						["groups"] = {
 							objective(1, {	-- 0/12 Bloodscale Slavedriver slain
@@ -1132,8 +1132,8 @@ root(ROOTS.Zones, {
 						["qg"] = 17856,	-- Gzhun'tt
 						["sourceQuest"] = 9726,	-- Now That We're Friends...
 						["coord"] = { 19.5, 50.0, ZANGARMARSH },
-						["maxReputation"] = { 970, EXALTED },	-- Sporeggar, Exalted.
-						["minReputation"] = { 970, FRIENDLY },	-- Sporeggar, Friendly.
+						["maxReputation"] = { FACTION_SPOREGGAR, EXALTED },	-- Sporeggar, Exalted.
+						["minReputation"] = { FACTION_SPOREGGAR, FRIENDLY },	-- Sporeggar, Friendly.
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(62, 62, 10),
 						-- #if NOT ANYCLASSIC
@@ -1324,7 +1324,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 50131,	-- An Outside Perspective
 						-- #endif
 						["coord"] = { 19.0, 63.4, ZANGARMARSH },
-						["minReputation"] = { 970, NEUTRAL },	-- Sporeggar, Neutral.
+						["minReputation"] = { FACTION_SPOREGGAR, NEUTRAL },	-- Sporeggar, Neutral.
 						["lvl"] = lvlsquish(60, 60, 10),
 					}),
 					q(9709, {	-- Stealing Back the Mushrooms
@@ -1357,7 +1357,7 @@ root(ROOTS.Zones, {
 					q(9830, {	-- Stinger Venom
 						["qg"] = 18009,	-- Puluu
 						["coord"] = { 40.8, 28.6, ZANGARMARSH },
-						["minReputation"] = { 978, NEUTRAL },	-- Kurenai, Neutral.
+						["minReputation"] = { FACTION_KURENAI, NEUTRAL },	-- Kurenai, Neutral.
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 62, 10),
 						["groups"] = {
@@ -1517,7 +1517,7 @@ root(ROOTS.Zones, {
 					q(9902, {	-- The Terror of Marshlight Lake
 						["qg"] = 18009,	-- Puluu
 						["coord"] = { 40.8, 28.6, ZANGARMARSH },
-						["minReputation"] = { 978, NEUTRAL },	-- Kurenai, Neutral.
+						["minReputation"] = { FACTION_KURENAI, NEUTRAL },	-- Kurenai, Neutral.
 						["races"] = ALLIANCE_ONLY,
 						["lvl"] = lvlsquish(62, 62, 10),
 						["groups"] = {
@@ -1682,7 +1682,7 @@ root(ROOTS.Zones, {
 					q(9875, {	-- Uncatalogued Species
 						["provider"] = { "i", 24407 },	-- Uncatalogued Species
 						["sourceQuest"] = 9784,	-- Identify Plant Parts
-						["maxReputation"] = { 942, HONORED },	-- Cenarion Expedition, Honored.
+						["maxReputation"] = { FACTION_CENARION_EXPEDITION, HONORED },	-- Cenarion Expedition, Honored.
 						["repeatable"] = true,
 						["lvl"] = lvlsquish(60, 60, 10),
 						-- #if NOT ANYCLASSIC

@@ -45,8 +45,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 22919,	-- Image of Commander Ameer
 					["sourceQuest"] = 10977,	-- Stasis Chambers of the Mana-Tombs
 					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
-					["minReputation"] = { 933, REVERED },	-- The Consortium, Revered.
-					["maxReputation"] = { 933, EXALTED },	-- The Consortium, Exalted.
+					["minReputation"] = { FACTION_THE_CONSORTIUM, REVERED },	-- The Consortium, Revered.
+					["maxReputation"] = { FACTION_THE_CONSORTIUM, EXALTED },	-- The Consortium, Exalted.
 					["cost"] = {
 						{ "i", 31941, 1 },	-- Mark of the Nexus-King
 					},
@@ -129,7 +129,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["qg"] = 22919,	-- Image of Commander Ameer
 					["sourceQuest"] = 10977,	-- Stasis Chambers of the Mana-Tombs
 					["coord"] = { 52.8, 15.0, BLADES_EDGE_MOUNTAINS },
-					["minReputation"] = { 933, EXALTED },	-- The Consortium, Exalted.
+					["minReputation"] = { FACTION_THE_CONSORTIUM, EXALTED },	-- The Consortium, Exalted.
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
 						i(32092),	-- The Eye of Haramad

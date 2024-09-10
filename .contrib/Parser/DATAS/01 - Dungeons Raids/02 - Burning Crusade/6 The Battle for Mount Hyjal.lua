@@ -20,7 +20,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 		["lvl"] = lvlsquish(70, 68, 30),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in.
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				achWithRep(959, 990, {	-- The Scale of the Sands
+				achWithRep(959, FACTION_THE_SCALE_OF_THE_SANDS, {	-- The Scale of the Sands
 					-- #if BEFORE WRATH
 					["description"] = "Raise your reputation with The Scale of the Sands to Exalted.",
 					-- #endif
@@ -28,7 +28,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 				}),
 			}),
 			n(FACTIONS, {
-				faction(990, {	-- The Scale of the Sands
+				faction(FACTION_THE_SCALE_OF_THE_SANDS, {	-- The Scale of the Sands
 					["maps"] = { CAVERNS_OF_TIME },
 				}),
 			}),
@@ -51,7 +51,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						10473,	-- Restorer's Covenant
 						10472,	-- Sage's Covenant
 					},
-					["minReputation"] = { 990, EXALTED },	-- The Scale of the Sands, Exalted.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, EXALTED },	-- The Scale of the Sands, Exalted.
 					["maps"] = { CAVERNS_OF_TIME },
 					["repeatable"] = true,
 					["cost"] = {
@@ -70,7 +70,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						{ "n", 19936 },	-- Arazmodu
 					},
 					["sourceQuest"] = 10470,	-- Champion's Oath
-					["minReputation"] = { 990, EXALTED },	-- The Scale of the Sands, Exalted.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, EXALTED },	-- The Scale of the Sands, Exalted.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						--10474,	-- Champion's Covenant
@@ -91,7 +91,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						{ "n", 19936 },	-- Arazmodu
 					},
 					["sourceQuest"] = 10466,	-- Champion's Vow
-					["minReputation"] = { 990, REVERED },	-- The Scale of the Sands, Revered.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, REVERED },	-- The Scale of the Sands, Revered.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						--10470,	-- Champion's Oath
@@ -118,7 +118,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						10445,	-- The Vials of Eternity
 						-- #endif
 					},
-					["minReputation"] = { 990, FRIENDLY },	-- The Scale of the Sands, Friendly.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, FRIENDLY },	-- The Scale of the Sands, Friendly.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						--10462,	-- Champion's Pledge
@@ -136,7 +136,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						{ "n", 19936 },	-- Arazmodu
 					},
 					["sourceQuest"] = 10462,	-- Champion's Pledge
-					["minReputation"] = { 990, HONORED },	-- The Scale of the Sands, Honored.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, HONORED },	-- The Scale of the Sands, Honored.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						--10466,	-- Champion's Vow
@@ -159,7 +159,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						10473,	-- Restorer's Covenant
 						10472,	-- Sage's Covenant
 					},
-					["minReputation"] = { 990, EXALTED },	-- The Scale of the Sands, Exalted.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, EXALTED },	-- The Scale of the Sands, Exalted.
 					["maps"] = { CAVERNS_OF_TIME },
 					["repeatable"] = true,
 					["cost"] = {
@@ -178,7 +178,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						{ "n", 19936 },	-- Arazmodu
 					},
 					["sourceQuest"] = 10471,	-- Defender's Oath
-					["minReputation"] = { 990, EXALTED },	-- The Scale of the Sands, Exalted.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, EXALTED },	-- The Scale of the Sands, Exalted.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						10474,	-- Champion's Covenant
@@ -199,7 +199,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						{ "n", 19936 },	-- Arazmodu
 					},
 					["sourceQuest"] = 10467,	-- Defender's Vow
-					["minReputation"] = { 990, REVERED },	-- The Scale of the Sands, Revered.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, REVERED },	-- The Scale of the Sands, Revered.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						10470,	-- Champion's Oath
@@ -226,7 +226,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						10445,	-- The Vials of Eternity
 						-- #endif
 					},
-					["minReputation"] = { 990, FRIENDLY },	-- The Scale of the Sands, Friendly.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, FRIENDLY },	-- The Scale of the Sands, Friendly.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						10462,	-- Champion's Pledge
@@ -244,7 +244,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						{ "n", 19936 },	-- Arazmodu
 					},
 					["sourceQuest"] = 10460,	-- Defender's Pledge
-					["minReputation"] = { 990, HONORED },	-- The Scale of the Sands, Honored.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, HONORED },	-- The Scale of the Sands, Honored.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						10466,	-- Champion's Vow
@@ -267,7 +267,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						10473,	-- Restorer's Covenant
 						10472,	-- Sage's Covenant
 					},
-					["minReputation"] = { 990, EXALTED },	-- The Scale of the Sands, Exalted.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, EXALTED },	-- The Scale of the Sands, Exalted.
 					["maps"] = { CAVERNS_OF_TIME },
 					["repeatable"] = true,
 					["cost"] = {
@@ -286,7 +286,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						{ "n", 19936 },	-- Arazmodu
 					},
 					["sourceQuest"] = 10469,	-- Restorer's Oath
-					["minReputation"] = { 990, EXALTED },	-- The Scale of the Sands, Exalted.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, EXALTED },	-- The Scale of the Sands, Exalted.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						10474,	-- Champion's Covenant
@@ -307,7 +307,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						{ "n", 19936 },	-- Arazmodu
 					},
 					["sourceQuest"] = 10465,	-- Restorer's Vow
-					["minReputation"] = { 990, REVERED },	-- The Scale of the Sands, Revered.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, REVERED },	-- The Scale of the Sands, Revered.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						10470,	-- Champion's Oath
@@ -334,7 +334,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						10445,	-- The Vials of Eternity
 						-- #endif
 					},
-					["minReputation"] = { 990, FRIENDLY },	-- The Scale of the Sands, Friendly.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, FRIENDLY },	-- The Scale of the Sands, Friendly.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						10462,	-- Champion's Pledge
@@ -352,7 +352,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						{ "n", 19936 },	-- Arazmodu
 					},
 					["sourceQuest"] = 10461,	-- Restorer's Pledge
-					["minReputation"] = { 990, HONORED },	-- The Scale of the Sands, Honored.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, HONORED },	-- The Scale of the Sands, Honored.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						10466,	-- Champion's Vow
@@ -375,7 +375,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						10473,	-- Restorer's Covenant
 						10472,	-- Sage's Covenant
 					},
-					["minReputation"] = { 990, EXALTED },	-- The Scale of the Sands, Exalted.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, EXALTED },	-- The Scale of the Sands, Exalted.
 					["maps"] = { CAVERNS_OF_TIME },
 					["repeatable"] = true,
 					["cost"] = {
@@ -394,7 +394,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						{ "n", 19936 },	-- Arazmodu
 					},
 					["sourceQuest"] = 10468,	-- Sage's Oath
-					["minReputation"] = { 990, EXALTED },	-- The Scale of the Sands, Exalted.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, EXALTED },	-- The Scale of the Sands, Exalted.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						10474,	-- Champion's Covenant
@@ -415,7 +415,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						{ "n", 19936 },	-- Arazmodu
 					},
 					["sourceQuest"] = 10464,	-- Sage's Vow
-					["minReputation"] = { 990, REVERED },	-- The Scale of the Sands, Revered.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, REVERED },	-- The Scale of the Sands, Revered.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						10470,	-- Champion's Oath
@@ -442,7 +442,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						10445,	-- The Vials of Eternity
 						-- #endif
 					},
-					["minReputation"] = { 990, FRIENDLY },	-- The Scale of the Sands, Friendly.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, FRIENDLY },	-- The Scale of the Sands, Friendly.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						10462,	-- Champion's Pledge
@@ -460,7 +460,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 						{ "n", 19936 },	-- Arazmodu
 					},
 					["sourceQuest"] = 10463,	-- Sage's Pledge
-					["minReputation"] = { 990, HONORED },	-- The Scale of the Sands, Honored.
+					["minReputation"] = { FACTION_THE_SCALE_OF_THE_SANDS, HONORED },	-- The Scale of the Sands, Honored.
 					["maps"] = { CAVERNS_OF_TIME },
 					["altQuests"] = {
 						10466,	-- Champion's Vow

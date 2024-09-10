@@ -40,7 +40,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 			["qg"] = 49856,	-- Lord Raymond George
 			["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
 			["coord"] = { 76.1, 50.9, EASTERN_PLAGUELANDS },
-			["maxReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+			["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 			["timeline"] = { ADDED_4_0_3 },
 			["repeatable"] = true,
 			["lvl"] = lvlsquish(40, 40, 15),
@@ -313,7 +313,7 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { REMOVED_5_0_4,
 		q(5582, {	-- Healthy Dragon Scale
 			["provider"] = { "i", 13920 },	-- Healthy Dragon Scale
 			["sourceQuest"] = 5529,	-- Plagued Hatchlings
-			["maxReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+			["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 			["timeline"] = { REMOVED_4_0_3 },
 			["repeatable"] = true,
 			["lvl"] = 55,
@@ -2055,7 +2055,7 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.NORMAL, {
 			["qg"] = 49856,	-- Lord Raymond George
 			["sourceQuest"] = 27464,	-- Argent Call: The Trial of the Crypt
 			["coord"] = { 76.1, 50.9, EASTERN_PLAGUELANDS },
-			["maxReputation"] = { 529, EXALTED },	-- Argent Dawn, Exalted.
+			["maxReputation"] = { FACTION_ARGENT_DAWN, EXALTED },	-- Argent Dawn, Exalted.
 			["timeline"] = { ADDED_4_0_3 },
 			["repeatable"] = true,
 			["lvl"] = lvlsquish(40, 40, 15),

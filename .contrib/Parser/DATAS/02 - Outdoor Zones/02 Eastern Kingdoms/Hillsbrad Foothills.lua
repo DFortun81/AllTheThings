@@ -175,14 +175,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #if AFTER CATA
 			n(FACTIONS, {
-				faction(349, {	-- Ravenholdt
+				faction(FACTION_RAVENHOLDT, {	-- Ravenholdt
 					["icon"] = "Interface\\Icons\\Ability_Rogue_Eviscerate",
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.Ravenholdt,
 				}),
-				faction(70, {	-- Syndicate
+				faction(FACTION_SYNDICATE, {	-- Syndicate
 					["description"] = "Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",
-					["minReputation"] = { 70, NEUTRAL - 1 },	-- Syndicate, Neutral. (-1)
-					["maxReputation"] = { 70, NEUTRAL },	-- Syndicate, Neutral.
+					["minReputation"] = { FACTION_SYNDICATE, NEUTRAL - 1 },	-- Syndicate, Neutral. (-1)
+					["maxReputation"] = { FACTION_SYNDICATE, NEUTRAL },	-- Syndicate, Neutral.
 				}),
 			}),
 			-- #endif
@@ -1825,7 +1825,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6707,	-- Fahrad <Grand Master Rogue>
 					["coord"] = { 84.4, 80.3, ALTERAC_MOUNTAINS },
 					-- #endif
-					["maxReputation"] = { 349, EXALTED },	-- Ravenholdt, Exalted.
+					["maxReputation"] = { FACTION_RAVENHOLDT, EXALTED },	-- Ravenholdt, Exalted.
 					["cost"] = { { "i", 16885, 5 } },	-- Heavy Junkbox
 					["repeatable"] = true,
 					["lvl"] = lvlsquish(50, 50, 20),
@@ -2477,7 +2477,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 6766,	-- Ravenholdt Guard <Assassin's League>
 					["sourceQuest"] = 6681,	-- The Manor, Ravenholdt
 					["coord"] = { 85.2, 79.4, ALTERAC_MOUNTAINS },
-					["maxReputation"] = { 349, FRIENDLY },	-- Ravenholdt, Friendly.
+					["maxReputation"] = { FACTION_RAVENHOLDT, FRIENDLY },	-- Ravenholdt, Friendly.
 					["cost"] = { { "i", 17124, 1 } },	-- Syndicate Emblem
 					["timeline"] = { REMOVED_4_0_3 },
 					["classes"] = { ROGUE },
@@ -3416,7 +3416,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 52.2, 55.4, HILLSBRAD_FOOTHILLS },
 
 					-- Available to Humans without faction requirements.
-					["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
+					["minReputation"] = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. HUMAN .. [[ then
 							t.minReputation = nil;

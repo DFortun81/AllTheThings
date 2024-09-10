@@ -284,7 +284,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					}),
 					ach(2760, {	-- Exalted Champion of Darnassus
 						crit(5328, {	-- Exalted with Darnassus
-							["_factions"] = { 69 },
+							["_factions"] = { FACTION_DARNASSUS },
 						}),
 						-- #if ANYCLASSIC
 						crit(9773, {	-- Champion of Darnassus
@@ -299,7 +299,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					}),
 					ach(2761, {	-- Exalted Champion of the Exodar
 						crit(5332, {	-- Exalted with Exodar
-							["_factions"] = { 930 },
+							["_factions"] = { FACTION_EXODAR },
 						}),
 						-- #if ANYCLASSIC
 						crit(9774, {	-- Champion of Exodar
@@ -314,7 +314,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					}),
 					ach(2762, {	-- Exalted Champion of Gnomeregan
 						crit(5329, {	-- Exalted with Gnomeregan
-							["_factions"] = { 54 },
+							["_factions"] = { FACTION_GNOMEREGAN },
 						}),
 						-- #if ANYCLASSIC
 						crit(9775, {	-- Champion of Gnomeregan
@@ -329,7 +329,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					}),
 					ach(2764, {	-- Exalted Champion of Stormwind
 						crit(5331, {	-- Exalted with Stormwind
-							["_factions"] = { 72 },
+							["_factions"] = { FACTION_STORMWIND },
 						}),
 						-- #if ANYCLASSIC
 						crit(9777, {	-- Champion of Stormwind
@@ -344,7 +344,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					}),
 					ach(2763, {	-- Exalted Champion of Ironforge
 						crit(5330, {	-- Exalted with Ironforge
-							["_factions"] = { 47 },
+							["_factions"] = { FACTION_IRONFORGE },
 						}),
 						-- #if ANYCLASSIC
 						crit(9776, {	-- Champion of Ironforge
@@ -412,7 +412,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					}),
 					ach(2765, {	-- Exalted Champion of Orgrimmar
 						crit(5314, {	-- Exalted with Orgrimmar
-							["_factions"] = { 76 },
+							["_factions"] = { FACTION_ORGRIMMAR },
 						}),
 						crit(9783, {	-- Champion of Orgrimmar
 							["_achievements"] = { 2783 },
@@ -421,7 +421,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					}),
 					ach(2766, {	-- Exalted Champion of Sen'jin
 						crit(5313, {	-- Exalted with Darkspear Trolls
-							["_factions"] = { 530 },
+							["_factions"] = { FACTION_DARKSPEAR_TROLLS },
 						}),
 						-- #if ANYCLASSIC
 						crit(9784, {	-- Champion of Sen'jin
@@ -436,7 +436,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					}),
 					ach(2767, {	-- Exalted Champion of Silvermoon City
 						crit(5317, {	-- Exalted with Silvermoon City
-							["_factions"] = { 911 },
+							["_factions"] = { FACTION_SILVERMOON_CITY },
 						}),
 						crit(9785, {	-- Champion of Silvermoon City
 							["_achievements"] = { 2785 },
@@ -445,7 +445,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					}),
 					ach(2769, {	-- Exalted Champion of the Undercity
 						crit(5316, {	-- Exalted with Undercity
-							["_factions"] = { 68 },
+							["_factions"] = { FACTION_UNDERCITY },
 						}),
 						-- #if ANYCLASSIC
 						crit(9787, {	-- Champion of the Undercity
@@ -460,7 +460,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					}),
 					ach(2768, {	-- Exalted Champion of Thunder Bluff
 						crit(5315, {	-- Exalted with Thunder Bluff
-							["_factions"] = { 81 },
+							["_factions"] = { FACTION_THUNDER_BLUFF },
 						}),
 						-- #if ANYCLASSIC
 						crit(9786, {	-- Champion of Thunder Bluff

@@ -354,7 +354,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14637,	-- Zorbin Fandazzle
 					["sourceQuest"] = 7003,	-- Zapped Giants
 					["coord"] = { 44.8, 43.4, FERALAS },
-					["maxReputation"] = { 169, EXALTED },	-- Steamweedle Cartel, Exalted.
+					["maxReputation"] = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamweedle Cartel, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 45,
@@ -1361,7 +1361,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 14637,	-- Zorbin Fandazzle
 					["sourceQuest"] = 7721,	-- Fuel for the Zapping
 					["coord"] = { 44.8, 43.4, FERALAS },
-					["maxReputation"] = { 169, EXALTED },	-- Steamweedle Cartel, Exalted.
+					["maxReputation"] = { FACTION_STEAMWHEEDLE_CARTEL, EXALTED },	-- Steamweedle Cartel, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
 					["lvl"] = 45,

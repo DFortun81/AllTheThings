@@ -49,7 +49,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				pet(404),	-- Long-tailed Mole (PET!)
 			}),
 			n(FACTIONS, {
-				faction(54, {	-- Gnomeregan Exiles
+				faction(FACTION_GNOMEREGAN, {	-- Gnomeregan Exiles
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Male",
 					-- #else
@@ -58,7 +58,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.RuneclothTurnIns,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				faction(47, {	-- Ironforge
+				faction(FACTION_IRONFORGE, {	-- Ironforge
 					-- #if AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Dwarf_Male",
 					-- #else
@@ -362,7 +362,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 7805,	-- A Donation of Runecloth
 					["coord"] = { 43.2, 31.9, IRONFORGE },
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
-					["maxReputation"] = { 47, EXALTED },	-- Ironforge, Exalted.
+					["maxReputation"] = { FACTION_IRONFORGE, EXALTED },	-- Ironforge, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -373,7 +373,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["sourceQuest"] = 7811,	-- A Donation of Runecloth
 					["coord"] = { 74.1, 48.1, IRONFORGE },
 					["cost"] = { { "i", 14047, 20 } },	-- Runecloth
-					["maxReputation"] = { 54, EXALTED },	-- Gnomeregan Exiles, Exalted.
+					["maxReputation"] = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
 					["timeline"] = { REMOVED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["repeatable"] = true,
@@ -1440,19 +1440,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64899, {	-- Cape of Ironforge
-							["minReputation"] = { 47, EXALTED },	-- Ironforge, Exalted.
+							["minReputation"] = { FACTION_IRONFORGE, EXALTED },	-- Ironforge, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64900, {	-- Mantle of Ironforge
-							["minReputation"] = { 47, EXALTED },	-- Ironforge, Exalted.
+							["minReputation"] = { FACTION_IRONFORGE, EXALTED },	-- Ironforge, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64898, {	-- Shroud of Ironforge
-							["minReputation"] = { 47, EXALTED },	-- Ironforge, Exalted.
+							["minReputation"] = { FACTION_IRONFORGE, EXALTED },	-- Ironforge, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67528, {	-- Ironforge Satchel
-							["minReputation"] = { 47, REVERED },	-- Ironforge, Revered.
+							["minReputation"] = { FACTION_IRONFORGE, REVERED },	-- Ironforge, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},
@@ -1882,19 +1882,19 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_3_1_0 },
 						}),
 						i(64896, {	-- Cape of Gnomeregan
-							["minReputation"] = { 54, EXALTED },	-- Gnomeregan Exiles, Exalted.
+							["minReputation"] = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64895, {	-- Mantle of Gnomeregan
-							["minReputation"] = { 54, EXALTED },	-- Gnomeregan Exiles, Exalted.
+							["minReputation"] = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(64897, {	-- Shroud of Gnomeregan
-							["minReputation"] = { 54, EXALTED },	-- Gnomeregan Exiles, Exalted.
+							["minReputation"] = { FACTION_GNOMEREGAN, EXALTED },	-- Gnomeregan Exiles, Exalted.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 						i(67530, {	-- Gnomeregan Satchel
-							["minReputation"] = { 54, REVERED },	-- Gnomeregan Exiles, Revered.
+							["minReputation"] = { FACTION_GNOMEREGAN, REVERED },	-- Gnomeregan Exiles, Revered.
 							["timeline"] = { ADDED_4_0_3 },
 						}),
 					},

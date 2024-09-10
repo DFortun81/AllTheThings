@@ -2274,7 +2274,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					-- Available to Humans without faction requirements.
-					["minReputation"] = { 72, EXALTED },	-- Stormwind, Exalted.
+					["minReputation"] = { FACTION_STORMWIND, EXALTED },	-- Stormwind, Exalted.
 					["OnInit"] = [[function(t)
 						if _.RaceIndex == ]] .. HUMAN .. [[ then
 							t.minReputation = nil;
