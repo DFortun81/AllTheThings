@@ -5569,9 +5569,10 @@ local function DirectGroupUpdate(group, got)
 	end
 	local window = app.GetRelativeRawWithField(group, "window");
 	if window then window:ToggleExtraFilters(true) end
+	local wasHidden = app.GetRelativeField(group, "visible")
 	-- starting an update from a non-top-level group means we need to verify this group should even handle updates based on current filters first
-	if not app.RecursiveDirectGroupRequirementsFilter(group) then
-		-- app.PrintDebug("DGU:Filtered",group.hash,group.parent and group.parent.text)
+	if wasHidden and not app.RecursiveDirectGroupRequirementsFilter(group) then
+		-- app.PrintDebug("DGU:Filtered",group.visible,app:SearchLink(group))
 		if window then window:ToggleExtraFilters() end
 		return;
 	end
@@ -5587,9 +5588,13 @@ local function DirectGroupUpdate(group, got)
 	end
 	local progChange, totalChange, costChange, upgradeChange
 		= group.progress - prevProg, group.total - prevTotal, group.costTotal - prevCost, group.upgradeTotal - prevUpgrade
-	-- Something to change
+	-- Something to change for a visible group prior to the DGU or changed in visibility
 	if progChange ~= 0 or totalChange ~= 0 or costChange ~= 0 or upgradeChange ~= 0 then
-		AdjustParentProgress(group, progChange, totalChange, costChange, upgradeChange);
+		local isHidden = app.GetRelativeField(group, "visible")
+		if not isHidden or isHidden ~= wasHidden then
+			-- app.PrintDebug("DGU:Change",wasHidden,"=>",isHidden,app:SearchLink(group),progChange, totalChange, costChange, upgradeChange)
+			AdjustParentProgress(group, progChange, totalChange, costChange, upgradeChange);
+		end
 	end
 	-- After completing the Direct Update, setup a soft-update on the affected Window, if any
 	if window then
