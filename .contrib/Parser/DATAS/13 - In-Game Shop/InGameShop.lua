@@ -79,6 +79,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		mount(307932, {	-- Ensorcelled Everwyrm (MOUNT!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
+		mount(457485, {	-- Grizzly Hills Packmaster (MOUNT!)
+			["timeline"] = { ADDED_11_0_2 },
+		}),
 		--Maybe later in the Shop
 		--[[mount(315132, {	-- Gargantuan Grrloc (MOUNT!)
 			["timeline"] = { ADDED_10_0_0 },
