@@ -643,8 +643,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 			i(87216),	-- Thermal Anvil
 		}),
 		filter(MOUNTS, {
-			i(87250),	-- Depleted-Kyparium Rocket (MOUNT!)
-			i(87251),	-- Geosynchronous World Spinner (MOUNT!)
 			i(95416, {["timeline"] = {ADDED_5_4_0}}),	-- Sky Golem (MOUNT!)
 		}),
 		i(89991, {  -- Pandaria Fireworks
