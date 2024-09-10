@@ -3596,5 +3596,12 @@ root(ROOTS.HiddenAchievementTriggers, {
 			-- 11.0.2.56313
 			ach(40974),	-- [DNT] <Hidden> Mythic+ Rating > 0 (The War Within, any season)
 		})),
+
+		-- 11.0.5
+		expansion(EXPANSION.TWW, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
+			-- 11.0.5.56487
+			ach(40886),	-- <Hidden> Is Dracthyr For Soar Wingman
+			ach(40910),	-- Successfully Stress Test CN Realms
+		})),
 	}),
 });

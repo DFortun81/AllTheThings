@@ -2063,54 +2063,87 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		}),
 	})),
 	n(WOW_ANNIVERSARY_TWENTY, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } },{
-		ach(40976, {	-- A Cool Twenty Years
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				40996,	-- A Gatecrasher
-				40994,	-- An Original
-				40990,	-- Balloonist
-				40977,	-- Codex Editor: Ahn'Qiraj
-				40987,	-- Fashion Critic
-				40985,	-- I Have That One!
-				40992,	-- Peanut Gallery
-				40989,	-- Pet Mischief
-			}},
-			["g"] = {
-				i(228760),	-- Reins of the Coldflame Tempest (MOUNT!)
-			},
+		n(ACHIEVEMENTS, {
+			ach(40976, {	-- A Cool Twenty Years
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					40996,	-- A Gatecrasher
+					40994,	-- An Original
+					40990,	-- Balloonist
+					40977,	-- Codex Editor: Ahn'Qiraj
+					40987,	-- Fashion Critic
+					40985,	-- I Have That One!
+					40992,	-- Peanut Gallery
+					40989,	-- Pet Mischief
+				}},
+				["g"] = {
+					i(228760),	-- Reins of the Coldflame Tempest (MOUNT!)
+				},
+			}),
+			ach(40996),		-- A Gatecrasher (automated)
+			ach(40998),		-- A Timewalking Step Back to a Classic Dungeon Time (automated)
+			ach(41000),		-- A Timewalking Journey Back to a Classic Dungeon Time (automated)
+			ach(40994),		-- An Original (automated)
+			ach(40871, {	-- Assistant to the Assistant Guest Relations Manager (automated)
+				i(231907),	-- Tricked-Out Thinking Cap
+			}),
+			ach(40993, {	-- Avid Listener
+				crit(70553),	-- Listen to 'The Heroes of the Scarab Wall' story
+				crit(70555),	-- Listen to 'The Mercy of Baine Bloodhoof' story
+				crit(70554),	-- Listen to 'The Tragedy of Thassarian' story
+			}),
+			ach(40870, {	-- Azeroth's Greatest Detective
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					40871,	-- Assistant to the Assistant Guest Relations Manager
+					40873,	-- Crate Insurance Agent
+					40872,	-- I Saved the Party and All I Got Was This Lousy Hat
+					40979,	-- No Crate Left Behind
+				}},
+				["g"] = {
+					title(571),	-- Detective <Name> (TITLE!)
+				},
+			}),
+			ach(40990),		-- Balloonist
+			ach(40984),		-- Big Fan
+			ach(40977),		-- Codex Editor: Ahn'Qiraj
+			ach(40873),		-- Crate Insurance Agent
+			ach(40987),		-- Fashion Critic
+			ach(40991, {	-- Frequent Flyer
+				crit(70549),	-- Bronze Balloon
+				crit(70550),	-- Dark Blue Balloon
+				crit(70548),	-- Gold Balloon
+				crit(70551),	-- Light Blue Balloon
+			}),
+			ach(40985),		-- I Have That One!
+			ach(40872, {	-- I Saved the Party and All I Got Was This Lousy Hat (automated)
+				i(231906),	-- High-Alert Thinking Cap
+			}),
+			ach(40986),		-- Mount Master
+			ach(40979),		-- No Crate Left Behind
+			ach(40992),		-- Peanut Gallery
+			ach(40989),		-- Pet Mischief
+			ach(40988),		-- Photo Op!
+			ach(40997),		-- The Gatecrashers (automated)
+			ach(40995),		-- The Originals (automated)
+			ach(40999),		-- You're in Your Blackrock Depths (automated)
+			ach(40661),		-- Zoomies!
 		}),
-		ach(40996),		-- A Gatecrasher (automated)
-		ach(40994),		-- An Original (automated)
-		ach(40871, {	-- Assistant to the Assistant Guest Relations Manager (automated)
-			i(231907),	-- Tricked-Out Thinking Cap
-		}),
-		ach(40870, {	-- Azeroth's Greatest Detective
-			-- Meta Achievement
-			["sym"] = {{"meta_achievement",
-				40871,	-- Assistant to the Assistant Guest Relations Manager
-				40873,	-- Crate Insurance Agent
-				40872,	-- I Saved the Party and All I Got Was This Lousy Hat
-				40979,	-- No Crate Left Behind
-			}},
-			["g"] = {
-				title(571),	-- Detective <Name> (TITLE!)
-			},
-		}),
-		ach(40990),		-- Balloonist
-		ach(40977),		-- Codex Editor: Ahn'Qiraj
-		ach(40873),		-- Crate Insurance Agent
-		ach(40987),		-- Fashion Critic
-		ach(40985),		-- I Have That One!
-		ach(40872, {	-- I Saved the Party and All I Got Was This Lousy Hat (automated)
-			i(231906),	-- High-Alert Thinking Cap
-		}),
-		ach(40979),		-- No Crate Left Behind
-		ach(40992),		-- Peanut Gallery
-		ach(40989),		-- Pet Mischief
-		ach(40661),		-- Zoomies!
 		n(QUESTS, {
-			-- TODO: Quests for Assistant to the Assistant Guest Relations Manager
-			-- TODO: Quests for I Saved the Party and All I Got Was This Lousy Hat
+			q(84336),	-- Chapter 1
+			q(84756),	-- Chapter 2 (faction?)
+			q(85043),	-- Chapter 2 (faction?)
+			q(85195),	-- Chapter 3
+			q(85503),	-- Chapter 4
+			q(84924),	-- The Case of a Feathered Friend
+			q(83825),	-- The Case of a Good Book
+			q(84435),	-- The Case of an Old Soul
+			q(84933),	-- The Case of Great Aspirations
+			q(84882),	-- The Case of Misfortune
+			q(85477),	-- The Case of Missing Mementos
+			q(84469),	-- The Case of Pet Games
+			q(84912),	-- The Case of Staged Disaster
+			q(84595),	-- The Loud and Smelly Case
 		}),
 	})),
 })));

@@ -1,23 +1,8 @@
-3.4.3.55417
-ach(40821),	-- Successfully Stress Test CN Realms
-ach(40841),	-- [DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy)
 4.4.1.56464
 ach(40968),	-- Rival: Season 9
 ach(40969),	-- Gladiator: Season 9
 ach(40970),	-- Duelist: Season 9
 ach(40971),	-- Challenger: Season 9
 11.0.5.56487
-ach(40886),	-- <Hidden> Is Dracthyr For Soar Wingman
-ach(40910),	-- Successfully Stress Test CN Realms
 ach(40939),	-- Harbinger of the Gilded
 ach(40967),	-- Ratts' Revenge
-ach(40984),	-- Big Fan
-ach(40986),	-- Mount Master
-ach(40988),	-- Photo Op!
-ach(40991),	-- Frequent Flyer
-ach(40993),	-- Avid Listener
-ach(40995),	-- The Originals
-ach(40997),	-- The Gatecrashers
-ach(40998),	-- A Timewalking Step Back to a Classic Dungeon Time
-ach(40999),	-- You're in Your Blackrock Depths
-ach(41000),	-- A Timewalking Journey Back to a Classic Dungeon Time
