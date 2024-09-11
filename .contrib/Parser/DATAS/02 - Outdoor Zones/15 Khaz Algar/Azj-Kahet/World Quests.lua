@@ -97,6 +97,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(216664),	-- Threading Lure (QI!)
 					},
 				}),
+				q(82266, {	-- Tower Washing Simulator
+					["coord"] = { 37, 34.1, NERUBAR },
+					["g"] = {
+						i(223220),	-- Kaheti All-Purpose Cleanser (QI!)
+					},
+				}),
 				q(78995, {	-- Truffle Shuffle
 					["coord"] = { 73.1, 71.4, AZJ_KAHET },
 				}),

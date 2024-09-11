@@ -50,7 +50,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			e(2635, {	-- Aggregation of Horrors
 				["crs"] = { 220999 },	-- Aggregation of Horrors
 				["coord"] = { 64.8, 87.0, THE_RINGING_DEEPS },
-				--["questID"] = xx,
+				["questID"] = 83466,
 				["g"] = sharedData({
 					["modID"] = 3,
 				},{

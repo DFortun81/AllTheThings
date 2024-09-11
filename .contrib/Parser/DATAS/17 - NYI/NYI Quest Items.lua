@@ -674,7 +674,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(213402),	-- Incriminating Crystal
 			i(213405),	-- Incriminating Focus
 			i(213404),	-- Incriminating Script
-			i(223220),	-- Kaheti All-Purpose Cleanser
 			i(213424),	-- Keg of Cinderbrew Mead
 			i(217400),	-- Kobyss Lure
 			i(222963),	-- Lava Globs
