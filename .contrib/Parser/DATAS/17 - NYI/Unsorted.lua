@@ -1204,11 +1204,6 @@ root(ROOTS.Unsorted, {
 			filter(QUEST_ITEMS, {
 				i(228623),	-- Blue's Request
 			}),
-			filter(COSMETIC, {
-				i(228762),	-- Classic Lively Tabard
-				i(228763),	-- Classic Crimson Tabard
-				i(228764),	-- Classic Sunny Tabard
-			}),
 			--
 			i(229005),	-- Cache of Earthen Treasures
 			i(229006),	-- Cache of Earthen Treasures

@@ -624,8 +624,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(84263),	-- The Bloodbound Horror
 		q(84265),	-- Sikran
 		q(84267),	-- Rasha'nan
-		-- q(),	-- Bloodtwister Ovi'nax
-		-- q(),	-- Nexus-Princess Ky'veza
+		q(84271),	-- Bloodtwister Ovi'nax
+		q(84269),	-- Nexus-Princess Ky'veza
 		-- q()
 		q(84276),	-- Queen Ansurek
 
