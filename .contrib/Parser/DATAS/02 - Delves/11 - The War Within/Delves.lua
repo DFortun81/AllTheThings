@@ -171,7 +171,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(81596, {	-- Delve Hunter
 			["sourceQuests"] = { 81595 },	-- Seasonal Start
 			["provider"] = { "n", 226763 },	-- Naleidea Rivergleam
-			["coord"] = { 47.7, 44.5, DORNOGAL },
+			["coord"] = { 47.8, 44.5, DORNOGAL },
 		}),
 		q(83500, {	-- Zekvir, Hand of the Harbinger
 			["sourceQuests"] = { 81596 },	-- Delve Hunter

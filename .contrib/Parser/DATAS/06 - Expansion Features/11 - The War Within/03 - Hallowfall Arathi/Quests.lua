@@ -10,12 +10,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 4 --
 				q(82335, {	-- Crystals
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["coord"] = { 42.4, 55.0, HALLOWFALL },
 				}),
 			}, {	-- RENOWN 5 --
 				q(82391, {	-- Precious Stones
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["coord"] = { 42.4, 55.0, HALLOWFALL },
 					["g"] = {
 						i(223951),	-- Earth-Encrusted Gem
 					},
@@ -23,7 +23,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				--
 				q(81990, {	-- The Light's Call
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["coord"] = { 42.4, 55.0, HALLOWFALL },
 					["isBreadcrumb"] = true,
 				}),
 				q(76588, {	-- Defender of the Flame
@@ -56,22 +56,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 6 --
 				q(82390, {	-- Weathered Crests
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["coord"] = { 42.4, 55.0, HALLOWFALL },
 				}),
 			}, {	-- RENOWN 7 --
 				q(84409, {	-- For the Valorous
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["coord"] = { 42.4, 55.0, HALLOWFALL },
 				}),
 			}, {	-- RENOWN 8 --
 				q(82393, {	-- Resonating Crystals
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["coord"] = { 42.4, 55.0, HALLOWFALL },
 				}),
 			}, {	-- RENOWN 9 --
 				q(82394, {	-- A Cache of Crests
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["coord"] = { 42.4, 55.0, HALLOWFALL },
 				}),
 			}, {	-- RENOWN 10 --
 				q(82395, {	-- Flame-touched Tabard
@@ -118,43 +118,43 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 12 --
 				q(82396, {	-- A Gift from Mereldar
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["coord"] = { 42.4, 55.0, HALLOWFALL },
 				}),
 			}, {	-- RENOWN 13 --
 				q(84559, {	-- Carved Crests
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["coord"] = { 42.4, 55.0, HALLOWFALL },
 				}),
 			}, {	-- RENOWN 14 --
 				q(82398, {	-- Another Rare Key
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["coord"] = { 42.4, 55.0, HALLOWFALL },
 				}),
 			}, {	-- RENOWN 15 --
 			}, {	-- RENOWN 16 --
 				q(82400, {	-- A Hallowfall Windfall
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["coord"] = { 42.4, 55.0, HALLOWFALL },
 				}),
 				q(85536, {	-- Resonance Crystals
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["coord"] = { 42.4, 55.0, HALLOWFALL },
 				}),
 			}, {	-- RENOWN 17 --
 			}, {	-- RENOWN 18 --
 			}, {	-- RENOWN 19 --
 				q(85537, {	-- Crystals
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["coord"] = { 42.4, 55.0, HALLOWFALL },
 				}),
 				q(82403, {	-- Stones
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["coord"] = { 42.4, 55.0, HALLOWFALL },
 				}),
 			}, {	-- RENOWN 20 --
 				q(82404, {	-- Something to Set You Apart
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["coord"] = { 42.4, 55.0, HALLOWFALL },
 				}),
 			}, {	-- RENOWN 21 --
 			}, {	-- RENOWN 22 --
@@ -165,7 +165,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					------ Paragon ------
 					q(79218, {	-- Renowned with the Hallowfall Arathi
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 41.2, 53.0, HALLOWFALL },
+					["coord"] = { 42.4, 55.0, HALLOWFALL },
 					["isRepeatable"] = true,
 					["g"] = {
 						i(225246),	-- Overflowing Hallowfall Trove

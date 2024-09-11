@@ -119,7 +119,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			q(83459, {	-- The Dawnbreaker
 				["provider"] = { "n", 226623 },	-- Biergoth
-				["coord"] = { 46.6, 48.2, DORNOGAL },
+				["coord"] = { 46.7, 48.3, DORNOGAL },
 			}),
 			q(83432, {	-- The Rookery
 				["provider"] = { "n", 226623 },	-- Biergoth
