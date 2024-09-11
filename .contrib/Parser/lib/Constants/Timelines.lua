@@ -503,6 +503,7 @@ REMOVED_TWW_LAUNCH = "removed 11.0.2.56311";			-- The War Within 11.0.2/Pre-Patc
 CREATED_11_0_5 = "created 11.0.5";						-- The War Within 11.0.5 Launch on
 ADDED_11_0_5 = "added 11.0.5";							-- The War Within 11.0.5 Launch on
 REMOVED_11_0_5 = "removed 11.0.5";						-- The War Within 11.0.5 Launch on
+DELETED_11_0_5 = "deleted 11.0.5";						-- The War Within 11.0.5 Launch on
 CREATED_11_0_7 = "created 11.0.7";						-- The War Within 11.0.7 Launch on
 ADDED_11_0_7 = "added 11.0.7";							-- The War Within 11.0.7 Launch on
 REMOVED_11_0_7 = "removed 11.0.7";						-- The War Within 11.0.7 Launch on
