@@ -88,7 +88,7 @@ do
 					end
 				end
 				if app.Contributor then
-					if not InGame(fp) then
+					if not fp or not InGame(fp) then
 						app.print("FlightPath",nodeData.name,"#",nodeID,"is available on the Map but is not found in game for ATT!")
 						app.Audio:PlayReportSound();
 					end
