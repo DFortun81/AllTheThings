@@ -221,6 +221,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(77730),	-- Level 13
 		q(77731),	-- Level 14
 		q(77732),	-- Level 15
+		q(77733),	-- Level 16
+		q(77734),	-- Level 17
+		q(77735),	-- Level 18
+		q(77736),	-- Level 19
 	}),
 	n(QUESTS, sharedData({
 		["provider"] = { "n", 206017 },	-- Brann Bronzebeard
@@ -261,6 +265,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(228071),	-- Chunk of Companion Experience (Uncommon)
 				i(228072),	-- Chunk of Companion Experience (Rare)
 				i(228073),	-- Chunk of Companion Experience (Epic)
+				i(232046),	-- Chunk of Companion Experience (Possibly not from treasure)
 			},
 		}),
 	}),

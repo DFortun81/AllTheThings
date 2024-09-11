@@ -1302,7 +1302,6 @@ root(ROOTS.Unsorted, {
 			i(229193),	-- Queen's Pheromone
 			--
 			i(232045),	-- Chunk of Companion Experience
-			i(232046),	-- Chunk of Companion Experience
 			i(232047),	-- Chunk of Companion Experience
 			i(232049),	-- Companion Experience
 		})),
