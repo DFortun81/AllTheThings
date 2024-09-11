@@ -1479,7 +1479,6 @@ root(ROOTS.Unsorted, {
 			}),
 			filter(TITLES, {
 				title(560),	-- <Name> Ascension Breaker
-				title(568),	-- <Name>, Machine-Warden
 			}),
 			filter(TOYS, {
 				--- Gonna check this! Make spellID able to be isToy to make it collectible from the quest // Braghe

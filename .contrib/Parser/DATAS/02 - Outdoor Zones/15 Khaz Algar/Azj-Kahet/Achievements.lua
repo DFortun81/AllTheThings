@@ -45,9 +45,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				crit(68978, {	-- Scampering Weave-Rat
 					["coord"] = { 49.6, 15.7, NERUBAR },
 				}),
-				crit(68979, {	-- General's Scouting Shadecaster
-					--["coord"] = { 1, 1, AZJ_KAHET },
-				}),
 			}),
 			ach(40843),		-- Mine Poppin'
 			header(HEADERS.Achievement, 40632, {	-- No Harm Ever Came From Reading A Book

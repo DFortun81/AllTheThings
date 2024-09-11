@@ -110,8 +110,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						filter(MISC, {
 							i(213778, {	-- Forged Jeweler's Setting
 								["cost"] = {
-									{"i", 215236, 2},	-- Vicious Bloodstone x2
-									{"c", HONOR, 9750},
+									{"i", 215236, 3},	-- Vicious Bloodstone x3
+									{"c", HONOR, 5000},
 								},
 								["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 							}),
@@ -163,7 +163,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 							},
 						}),
 						i(224556, {	-- Glorious Contender's Strongbox
-							["cost"] = {{"c", HONOR, 5000}},
+							["cost"] = {{"c", HONOR, 3500}},
 							["g"] = {
 								--
 							},

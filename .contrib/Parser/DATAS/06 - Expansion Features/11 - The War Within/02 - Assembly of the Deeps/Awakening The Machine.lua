@@ -15,7 +15,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			["coord"] = { 47.5, 31.9, THE_RINGING_DEEPS },
 			["g"] = {
 				n(ACHIEVEMENTS, {
-					ach(40662),		-- It's Not Much, But It's Honest Work
+					ach(40662, {		-- It's Not Much, But It's Honest Work
+						title(568),	-- <Name>, Machine-Warden
+					}),
 				}),
 				n(QUESTS, {
 					q(83333, {	-- Gearing Up for Trouble
