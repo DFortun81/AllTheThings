@@ -378,18 +378,6 @@ end
 
 
 -- Achievement Harvesting
-local function RawCloneData(data, clone)
-	clone = clone or {};
-	for key,value in pairs(data) do
-		if clone[key] == nil then
-			clone[key] = value
-		end
-	end
-	-- maybe better solution at another time?
-	clone.__type = nil;
-	clone.__index = nil;
-	return clone;
-end
 local HarvestedAchievementDatabase = {};
 local harvesterFields = {}
 harvesterFields.visible = app.ReturnTrue;
