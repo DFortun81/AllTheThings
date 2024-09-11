@@ -2129,6 +2129,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			ach(40999),		-- You're in Your Blackrock Depths (automated)
 			ach(40661),		-- Zoomies!
 		}),
+		n(DUNGEONS_AND_RAIDS, {
+			-- INFO: It's here so the criteria can nest under him, as he's normally removed from game
+			n(639),	-- Edwin VanCleef <Defias Kingpin>
+		}),
 		n(QUESTS, {
 			q(84336),	-- Chapter 1
 			q(84756),	-- Chapter 2 (faction?)
@@ -2144,6 +2148,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			q(84469),	-- The Case of Pet Games
 			q(84912),	-- The Case of Staged Disaster
 			q(84595),	-- The Loud and Smelly Case
+		}),
+		n(WORLD_BOSSES, {
+			-- INFO: These are new world bosses for this year, here so their criteria can nest under them. If they have loot tables and all, it can be put here too (like previous years).
+			n(226646),	-- Sha of Anger
+			n(227257),	-- Archavon the Stone Watcher
 		}),
 	})),
 })));
