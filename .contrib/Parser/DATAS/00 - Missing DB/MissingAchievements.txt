@@ -1,8 +1,3 @@
-4.4.1.56464
-ach(40968),	-- Rival: Season 9
-ach(40969),	-- Gladiator: Season 9
-ach(40970),	-- Duelist: Season 9
-ach(40971),	-- Challenger: Season 9
 11.0.5.56487
 ach(40939),	-- Harbinger of the Gilded
 ach(40967),	-- Ratts' Revenge

@@ -135,3 +135,8 @@
 3.4.3.55417
 40821@@@Successfully Stress Test CN Realms
 40841@@@[DNT] Joyous Journeys - Hit 80 with Buff Joyous Journeys (hidden) (copy)
+4.4.1.56464
+40968@@@Rival: Season 9
+40969@@@Gladiator: Season 9
+40970@@@ Duelist: Season 9
+40971@@@Challenger: Season 9

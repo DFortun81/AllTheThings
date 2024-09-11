@@ -716,6 +716,16 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(6167),	-- Deathwing kills (Dragon Soul)
 		ach(6168),	-- Deathwing Heroic kills (Dragon Soul)
 		ach(6170),	-- Alizabal kills (Baradin Hold)
+
+		-- 4.4.1.56464
+		-- #if ANYCLASSIC
+		-- #if AFTER 4.4.1
+		ach(40968),	-- Rival: Season 9
+		ach(40969),	-- Gladiator: Season 9
+		ach(40970),	-- Duelist: Season 9
+		ach(40971),	-- Challenger: Season 9
+		-- #endif
+		-- #endif
 	}),
 	expansion(EXPANSION.MOP, {
 		ach(6337),	-- Ossirian kills (Ruins of Ahn'Qiraj)
