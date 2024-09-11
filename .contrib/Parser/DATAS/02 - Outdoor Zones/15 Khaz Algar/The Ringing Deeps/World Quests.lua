@@ -22,6 +22,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				pvp(q(80323, {	-- Foggy Faceoff
 					["coord"] = { 64.9, 51.2, THE_RINGING_DEEPS },
 				})),
+				q(82653, {	-- Aggregation of Horrors
+					["coord"] = { 64.8, 87.4, THE_RINGING_DEEPS },
+				}),
 				q(82552, {	-- All Worked Up
 					["coord"] = { 47.0, 20.5, THE_RINGING_DEEPS },
 				}),

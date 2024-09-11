@@ -1457,7 +1457,6 @@ root(ROOTS.Unsorted, {
 				i(224557),	-- Field Medic's Hazard Payout
 				i(220378),	-- Forged Equipment Chest
 				i(225493),	-- Medal of Conquest
-				i(219934),	-- Spark of War
 			}),
 			f(QUEST_ITEMS, {
 				-- Possibly Delves
@@ -1469,13 +1468,6 @@ root(ROOTS.Unsorted, {
 				i(220116),	-- Completed Market Audit
 				i(213163),	-- Cryptographic Glyph
 				i(225887),	-- Titan Emitter
-				--- Raid Quest
-				i(224014),	-- Signet of the Skeinspiner
-				i(224015),	-- Signet of the Skeinspiner
-				i(224016),	-- Signet of the Skeinspiner
-				i(224011),	-- Signet of the Thousand Scars
-				i(224012),	-- Signet of the Thousand Scars
-				i(224013),	-- Signet of the Thousand Scars
 			}),
 			filter(TITLES, {
 				title(560),	-- <Name> Ascension Breaker

@@ -484,6 +484,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					}),
 				}),
 				n(QUESTS, {
+					q(82629,{	-- Nerub-ar Palace: For Nerubian Eyes Only
+						["provider"] = { "n", 216971 },	-- Shadow Walker Tarvex
+						["g"] = {
+							i(224014),	-- Signet of the Skeinspiner
+							i(224011),	-- Signet of the Thousand Scars
+						},
+					}),
 				}),
 				ZoneDrops({
 				}),
@@ -520,6 +527,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					}),
 				}),
 				n(QUESTS, {
+					q(82638,{	-- Nerub-ar Palace: For Nerubian Eyes Only
+						["provider"] = { "n", 216971 },	-- Shadow Walker Tarvex
+						["g"] = {
+							i(224015),	-- Signet of the Skeinspiner
+							i(224012),	-- Signet of the Thousand Scars
+						},
+					}),
 				}),
 				ZoneDrops({
 				}),
@@ -544,6 +558,13 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					}),
 				}),
 				n(QUESTS, {
+					q(82639,{	-- Nerub-ar Palace: For Nerubian Eyes Only
+						["provider"] = { "n", 216971 },	-- Shadow Walker Tarvex
+						["g"] = {
+							i(224016),	-- Signet of the Skeinspiner
+							i(224013),	-- Signet of the Thousand Scars
+						},
+					}),
 				}),
 				ZoneDrops({
 				}),
@@ -595,11 +616,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		-- LFR
 		q(83508),	-- First trash pack
 		q(83515),	-- Xur'khun the Defiled (trash)
-		q(83508),	-- Foreseer Xix'amon (trash)
+		q(83505),	-- Foreseer Xix'amon (trash)
 		q(83511),	-- Terrace of Majesty FP unlock
 		q(84261),	-- Ulgrax the Devourer
 		q(84263),	-- The Bloodbound Horror
 		q(84265),	-- Sikran
+		q(83507),	-- Rasha'nan
 
 		-- Normal
 

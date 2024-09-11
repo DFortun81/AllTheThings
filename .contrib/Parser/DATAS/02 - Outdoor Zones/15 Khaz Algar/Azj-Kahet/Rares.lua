@@ -200,6 +200,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 67.3, 58.4, NERUBAR_LOWER },
 				["questID"] = 81701,
 				["g"] = {
+					i(221506),	-- Arachnid's Web-Sown Guise
 					i(221239),	-- Spider Blasting Blunderbuss
 					i(221221),	-- Venomous Lurker's Shoulderplates
 				},
