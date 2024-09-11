@@ -2290,10 +2290,6 @@ q(76596),	--
 q(77164),	-- Scarab Test One	 PTR2:Scarab Test One	 BETA:Scarab Test One
 q(77581),	-- Kill them Gnolls!
 q(77676),	--
-q(77733),	-- Level 16
-q(77734),	-- Level 17
-q(77735),	-- Level 18
-q(77736),	-- Level 19
 q(77782),	--
 q(77821),	--
 q(77956),	--
@@ -2380,7 +2376,6 @@ q(79307),	--
 q(79334),	--
 q(79345),	--
 q(79347),	--
-q(79352),	-- Level 24
 q(79386),	--
 q(79387),	-- Test Quest - Account Test (DNT)
 q(79478),	--
@@ -2757,9 +2752,6 @@ q(81496),	-- Requisitions: Fangpetals
 q(81499),	-- Information Control: Ascended Intrigue
 q(81500),	-- Wet Work: Step Into Their Parlor
 q(81503),	-- Infiltration: Terror Made Manifest
-q(81507),	-- Level 23
-q(81508),	-- Level 22
-q(81509),	-- Level 21
 q(81516),	--
 q(81538),	--
 q(81554),	--
@@ -3253,37 +3245,6 @@ q(84021),	--
 q(84023),	--
 q(84024),	--
 q(84025),	--
-q(84087),	-- Level 26
-q(84088),	-- Level 27
-q(84089),	-- Level 28
-q(84090),	-- Level 29
-q(84092),	-- Level 31
-q(84093),	-- Level 32
-q(84094),	-- Level 33
-q(84095),	-- Level 34
-q(84096),	-- Level 35
-q(84097),	-- Level 36
-q(84098),	-- Level 37
-q(84099),	-- Level 38
-q(84100),	-- Level 39
-q(84102),	-- Level 41
-q(84103),	-- Level 42
-q(84104),	-- Level 43
-q(84105),	-- Level 44
-q(84106),	-- Level 45
-q(84107),	-- Level 46
-q(84108),	-- Level 47
-q(84109),	-- Level 48
-q(84110),	-- Level 49
-q(84111),	-- Level 51
-q(84112),	-- Level 52
-q(84113),	-- Level 53
-q(84114),	-- Level 54
-q(84115),	-- Level 55
-q(84116),	-- Level 56
-q(84117),	-- Level 57
-q(84118),	-- Level 58
-q(84119),	-- Level 59
 11.0.0.55087
 q(82238),	-- Lava Glob Lobbin'
 q(82244),	--

@@ -225,6 +225,47 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(77734),	-- Level 17
 		q(77735),	-- Level 18
 		q(77736),	-- Level 19
+		--q(???),	-- Level 20
+		q(81509),	-- Level 21
+		q(81508),	-- Level 22
+		q(81507),	-- Level 23
+		q(79352),	-- Level 24
+		--q(???),	-- Level 25
+		q(84087),	-- Level 26
+		q(84088),	-- Level 27
+		q(84089),	-- Level 28
+		q(84090),	-- Level 29
+		--q(???),	-- Level 30
+		q(84092),	-- Level 31
+		q(84093),	-- Level 32
+		q(84094),	-- Level 33
+		q(84095),	-- Level 34
+		q(84096),	-- Level 35
+		q(84097),	-- Level 36
+		q(84098),	-- Level 37
+		q(84099),	-- Level 38
+		q(84100),	-- Level 39
+		--q(???),	-- Level 40
+		q(84102),	-- Level 41
+		q(84103),	-- Level 42
+		q(84104),	-- Level 43
+		q(84105),	-- Level 44
+		q(84106),	-- Level 45
+		q(84107),	-- Level 46
+		q(84108),	-- Level 47
+		q(84109),	-- Level 48
+		q(84110),	-- Level 49
+		--q(???),	-- Level 50
+		q(84111),	-- Level 51
+		q(84112),	-- Level 52
+		q(84113),	-- Level 53
+		q(84114),	-- Level 54
+		q(84115),	-- Level 55
+		q(84116),	-- Level 56
+		q(84117),	-- Level 57
+		q(84118),	-- Level 58
+		q(84119),	-- Level 59
+		--q(???),	-- Level 60
 	}),
 	n(QUESTS, sharedData({
 		["provider"] = { "n", 206017 },	-- Brann Bronzebeard

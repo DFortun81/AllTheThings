@@ -487,8 +487,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					q(82629,{	-- Nerub-ar Palace: For Nerubian Eyes Only
 						["provider"] = { "n", 216971 },	-- Shadow Walker Tarvex
 						["g"] = {
-							i(224014),	-- Signet of the Skeinspiner
-							i(224011),	-- Signet of the Thousand Scars
+							i(224014),	-- Signet of the Skeinspiner (QI!)
+							i(224011),	-- Signet of the Thousand Scars (QI!)
 						},
 					}),
 				}),
@@ -530,8 +530,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					q(82638,{	-- Nerub-ar Palace: For Nerubian Eyes Only
 						["provider"] = { "n", 216971 },	-- Shadow Walker Tarvex
 						["g"] = {
-							i(224015),	-- Signet of the Skeinspiner
-							i(224012),	-- Signet of the Thousand Scars
+							i(224015),	-- Signet of the Skeinspiner (QI!)
+							i(224012),	-- Signet of the Thousand Scars (QI!)
 						},
 					}),
 				}),
@@ -561,8 +561,8 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					q(82639,{	-- Nerub-ar Palace: For Nerubian Eyes Only
 						["provider"] = { "n", 216971 },	-- Shadow Walker Tarvex
 						["g"] = {
-							i(224016),	-- Signet of the Skeinspiner
-							i(224013),	-- Signet of the Thousand Scars
+							i(224016),	-- Signet of the Skeinspiner (QI!)
+							i(224013),	-- Signet of the Thousand Scars (QI!)
 						},
 					}),
 				}),
