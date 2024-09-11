@@ -143,7 +143,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 17 --
 			}, {	-- RENOWN 18 --
 			}, {	-- RENOWN 19 --
+				q(85537, {	-- Crystals
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
+					["coord"] = { 41.2, 53.0, HALLOWFALL },
+				}),
+				q(82403, {	-- Stones
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
+					["coord"] = { 41.2, 53.0, HALLOWFALL },
+				}),
 			}, {	-- RENOWN 20 --
+				q(82404, {	-- Something to Set You Apart
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
+					["coord"] = { 41.2, 53.0, HALLOWFALL },
+				}),
 			}, {	-- RENOWN 21 --
 			}, {	-- RENOWN 22 --
 			}, {	-- RENOWN 23 --

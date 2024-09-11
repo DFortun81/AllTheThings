@@ -96,6 +96,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
 				}),
 			}, {	-- RENOWN 15 --
+				q(82377, {	-- Crests
+					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
+				}),
+				q(85541, {	-- Here's a Shiny!
+					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
+				}),
 			}, {	-- RENOWN 16 --
 			}, {	-- RENOWN 17 --
 			}, {	-- RENOWN 18 --

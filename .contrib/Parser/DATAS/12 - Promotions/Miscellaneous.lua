@@ -106,9 +106,14 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 		["description"] = "Azeroth Choppers promotional mount. You had to have logged in on a Horde character between the 24th of July and the 30th of September 2014 in order for your account to receive this mount.",
 		["timeline"] = { ADDED_6_0_2 },
 	}),
-	usONLY(i(228765, {	-- Gummi (PET!) //US only?
-		["description"] = "Trolli + Xbox promotional pet. Available between 9/1/24 - 2/28/25 by purchasing Trolli Candy products in physical retail stores, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Once processed, you should recieve a code to your email to redeem on battle.net or in the launcher.",
+	usONLY(i(228765, {	-- Gummi (PET!)
+		["description"] = "Trolli + Xbox promotional pet. Available between 9/1/24 - 2/28/25 by purchasing Trolli Candy products in any physical retail store, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Once processed, you should recieve a code to your email to redeem on battle.net or in the launcher.",
 		["timeline"] = { ADDED_11_0_2 },
 		["u"] = BLIZZARD_BALANCE,
-	})), --There's supposed to be a second promotional reward, a tabard but it has not been seen yet. It is reported to only be available from Walgreens, Doller General and Circle K. The pet reward is reported to be from any retailer.
+	})),
+	usONLY(i(228761, {	-- Classic Brick Tabard
+		["description"] = "Trolli + Xbox promotional item. Available between 9/1/24 - 2/28/25 by purchasing Trolli Candy products in Walgreens, Doller General, or Circle K, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Once processed, you should recieve a code to your email to redeem on battle.net or in the launcher.",
+		["timeline"] = { ADDED_11_0_2 },
+		["u"] = BLIZZARD_BALANCE,
+	})),
 })));

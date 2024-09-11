@@ -1205,7 +1205,6 @@ root(ROOTS.Unsorted, {
 				i(228623),	-- Blue's Request
 			}),
 			filter(COSMETIC, {
-				i(228761),	-- Classic Brick Tabard
 				i(228762),	-- Classic Lively Tabard
 				i(228763),	-- Classic Crimson Tabard
 				i(228764),	-- Classic Sunny Tabard
