@@ -3479,9 +3479,6 @@ root(ROOTS.HiddenAchievementTriggers, {
 			ach(20490),	-- Carved Harbinger Crests earned
 			ach(20491),	-- Runed Harbinger Crests earned
 			ach(20492),	-- Gilded Harbinger Crests earned
-			ach(40107),	-- Harbinger of the Carved (TODO: Fix Icon)
-			ach(40115),	-- Harbinger of the Runed (TODO: Fix Icon)
-			ach(40118),	-- Harbinger of the Gilded (TODO: Fix Icon)
 			ach(40145),	-- So Much Sharing
 
 			-- 11.0.0.54774

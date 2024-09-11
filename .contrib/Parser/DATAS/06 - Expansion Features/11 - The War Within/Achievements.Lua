@@ -3,6 +3,18 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(ACHIEVEMENTS, {
+		ach(40107, {	-- Harbinger of the Weatherd
+			["timeline"] = { ADDED_11_0_5, REMOVED_11_1_0 },
+		}),
+		ach(40115, {	-- Harbinger of the Carved
+			["timeline"] = { ADDED_11_0_5, REMOVED_11_1_0 },
+		}),
+		ach(40118, {	-- Harbinger of the Runed
+			["timeline"] = { ADDED_11_0_5, REMOVED_11_1_0 },
+		}),
+        ach(40939, {	-- Harbinger of the Gilded
+            ["timeline"] = { ADDED_11_0_5, REMOVED_11_1_0 },
+        }),
         ach(40591, {	-- Khaz Algar Diplomat
             ["sym"] = {{ "achievement_criteria" }},
             ["g"] = {

@@ -1,3 +1,2 @@
 11.0.5.56487
-ach(40939),	-- Harbinger of the Gilded
 ach(40967),	-- Ratts' Revenge
