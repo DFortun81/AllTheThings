@@ -23,7 +23,7 @@ local EncounterToCRS = {
 		223779,	-- Anub'arash <The Thousand Scars>
 		223781,	-- Skeinspinner Takazj
 	},
-	[ANSUREK] = { 227323 },	-- Queen Ansurek
+	[ANSUREK] = { 227323, 218370 },	-- Queen Ansurek
 };
 
 ------ EnconterToLoot ------
