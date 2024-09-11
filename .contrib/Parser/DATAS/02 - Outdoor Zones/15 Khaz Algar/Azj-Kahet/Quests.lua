@@ -915,7 +915,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						{ "n", 221961 },	-- Faerin Lothar
 						{ "n", 221980 },	-- Faerin Lothar
 					},
-					["coord"] = { 64.9, 11.1, AZJ_KAHET },	-- Faerin and Monte start following on quest accept
+					["coord"] = { 63.8, 17.9, AZJ_KAHET },	-- Faerin and Monte start following on quest accept
 					["g"] = {
 						i(223157),	-- Blacksmith's Breastplate (QI!)
 					},
@@ -926,7 +926,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						{ "n", 221961 },	-- Faerin Lothar
 						{ "n", 221980 },	-- Faerin Lothar
 					},
-					["coord"] = { 64.9, 11.1, AZJ_KAHET },	-- Faerin and Monte start following on quest accept
+					["coord"] = { 63.8, 17.9, AZJ_KAHET },	-- Faerin and Monte start following on quest accept
 				}),
 				q(81950, {	-- BOOM Treats!
 					["sourceQuests"] = { 81945 },	-- To Arathi's End
@@ -934,7 +934,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						{ "n", 221977 },	-- Monte Gazlowe
 						{ "n", 221982 },	-- Monte Gazlowe
 					},
-					["coord"] = { 64.9, 11.1, AZJ_KAHET },	-- Faerin and Monte start following on quest accept
+					["coord"] = { 63.8, 17.9, AZJ_KAHET },	-- Faerin and Monte start following on quest accept
 				}),
 				q(81969, {	-- An End to the End
 					["sourceQuests"] = {
