@@ -1343,14 +1343,6 @@ root(ROOTS.Unsorted, {
 				--- Probably NYI ---
 				i(225901),	-- Streamlined Relic
 				i(225908),	-- Relicblood of Zekvir
-				--- Maps ---
-				i(227668),	-- Delver's Bounty [Tier 1]
-				i(227778),	-- Delver's Bounty [Tier 2]
-				i(227779),	-- Delver's Bounty [Tier 3]
-				i(227780),	-- Delver's Bounty [Tier 4]
-				i(227781),	-- Delver's Bounty [Tier 5]
-				i(227782),	-- Delver's Bounty [Tier 6]
-				i(227783),	-- Delver's Bounty [Tier 7]
 				--- Fungal Folly ---
 				i(209788),	-- Dispersion Crystal
 				--- Nightfall Sanctum ---
