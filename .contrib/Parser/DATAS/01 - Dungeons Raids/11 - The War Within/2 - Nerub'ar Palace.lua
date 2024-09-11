@@ -613,17 +613,21 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 	inst(1273, bubbleDown({	-- Nerub'ar Palace
 		["isWeekly"] = true,
 	},{
-		-- LFR
+		-- LFR/Normal
 		q(83508),	-- First trash pack
 		q(83515),	-- Xur'khun the Defiled (trash)
 		q(83505),	-- Foreseer Xix'amon (trash)
 		q(83511),	-- Terrace of Majesty FP unlock
+		q(83507),	-- trash after Rasha'nan
+
 		q(84261),	-- Ulgrax the Devourer
 		q(84263),	-- The Bloodbound Horror
 		q(84265),	-- Sikran
-		q(83507),	-- Rasha'nan
-
-		-- Normal
+		q(84267),	-- Rasha'nan
+		-- q(),	-- Bloodtwister Ovi'nax
+		-- q(),	-- Nexus-Princess Ky'veza
+		-- q()
+		q(84276),	-- Queen Ansurek
 
 		-- Heroic
 
