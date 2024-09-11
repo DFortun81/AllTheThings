@@ -193,6 +193,7 @@ ExportDB.FlightPathDB = {
 		2175,	-- Zaralek Cavern
 		2241,	-- Emerald Dream
 		2276,	-- Khaz Algar
+		2298,	-- Nerub-ar Palace (has FPs inside)
 	}
 }
 

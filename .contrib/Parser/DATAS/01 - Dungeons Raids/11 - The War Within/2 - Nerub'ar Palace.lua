@@ -587,3 +587,24 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 		},
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	inst(1273, bubbleDown({	-- Nerub'ar Palace
+		["isWeekly"] = true,
+	},{
+		-- LFR
+		q(83508),	-- First trash pack
+		q(83515),	-- Xur'khun the Defiled (trash)
+		q(83508),	-- Foreseer Xix'amon (trash)
+		q(83511),	-- Terrace of Majesty FP unlock
+		q(84261),	-- Ulgrax the Devourer
+		q(84263),	-- The Bloodbound Horror
+		q(84265),	-- Sikran
+
+		-- Normal
+
+		-- Heroic
+
+		-- Mythic
+	})),
+})))
