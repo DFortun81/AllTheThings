@@ -507,7 +507,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 			n(VENDORS, {
 				n(48531, {	-- Pogg <Hellscream's Reach Quartermaster>
 					["races"] = HORDE_ONLY,
-					["groups"] = bubbleDownClassicRep(1178, {	-- Hellscream's Reach
+					["groups"] = bubbleDownClassicRep(FACTION_HELLSCREAMS_REACH, {	-- Hellscream's Reach
 						{	-- Neutral
 							tolbaradcommendation(80, i(68774)),	-- Greater Inscription of Vicious Agility
 							tolbaradcommendation(80, i(68772)),	-- Greater Inscription of Vicious Intellect
@@ -554,7 +554,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 				}),
 				n(47328, {	-- Quartermaster Brazie <Baradin's Wardens Quartermaster>
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = bubbleDownClassicRep(1177, {	-- Baradin's Wardens
+					["groups"] = bubbleDownClassicRep(FACTION_BARADINS_WARDENS, {	-- Baradin's Wardens
 						{	-- Neutral
 							tolbaradcommendation(80, i(68774)),	-- Greater Inscription of Vicious Agility
 							tolbaradcommendation(80, i(68772)),	-- Greater Inscription of Vicious Intellect

@@ -2314,7 +2314,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 				}),
 			}),
 			n(VENDORS, {
-				n(12944, bubbleDownClassicRep(59, {	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
+				n(12944, bubbleDownClassicRep(FACTION_THORIUM_BROTHERHOOD, {	-- Lokhtos Darkbargainer <The Thorium Brotherhood>
 					{	-- Neutral
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_FOUR, i(20754, {	-- Lesser Mana Oil

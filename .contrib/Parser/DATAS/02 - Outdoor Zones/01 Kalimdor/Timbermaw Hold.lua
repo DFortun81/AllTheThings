@@ -473,7 +473,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						{ 65.6, 2.8, FELWOOD },
 						-- #endif
 					},
-					["groups"] = bubbleDownClassicRep(576, {
+					["groups"] = bubbleDownClassicRep(FACTION_TIMBERMAW_HOLD, {
 						{	-- Neutral
 
 						},

@@ -4725,7 +4725,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{ 81.6, 60.0, EASTERN_PLAGUELANDS },
 						-- #endif
 					},
-					["groups"] = bubbleDownClassicRep(529, {
+					["groups"] = bubbleDownClassicRep(FACTION_ARGENT_DAWN, {
 						{	-- Neutral
 							i(136801, {	-- Divine Tome: Contemplation (CI!)
 								["timeline"] = { ADDED_7_0_3_LAUNCH },
