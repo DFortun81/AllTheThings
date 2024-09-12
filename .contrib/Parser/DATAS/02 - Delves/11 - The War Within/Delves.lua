@@ -380,8 +380,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(QUESTS, {
 				q(83758, {	-- Delver's Call: Fungal Folly
-					["provider"] = { "o", 455716 },
-					["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
+					["providers"] = {
+						{ "o", 455716 },	-- DELVER'S CALL
+						{ "o", 485669 },	-- DELVER'S CALL: Fungal Folly
+					},
+					["coords"] = {
+						{ 55.3, 55.9, ISLE_OF_DORN },
+						{ 61.5, 80.5, FUNGAL_FOLLY },
+					},
 				}),
 			}),
 			n(TREASURES, {
@@ -435,8 +441,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(QUESTS, {
 				q(83759, {	-- Delver's Call: Kriegval's Rest
-					["provider"] = { "o", 455713 },
-					["coord"] = { 55.3, 55.9, ISLE_OF_DORN },
+					["providers"] = {
+						{ "o", 455716 },	-- DELVER'S CALL
+						{ "o", 455713 },	-- DELVER'S CALL: Kriegval's Rest
+					},
+					["coords"] = {
+						{ 55.3, 55.9, ISLE_OF_DORN },
+						{ 35.6, 27.1, KRIEGVALS_REST },
+					},
 				}),
 			}),
 			n(TREASURES, {
@@ -893,7 +905,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(85649, {	-- Delver's Call: The Waterworks
 					["provider"] = { "o", 487815 },	-- DELVER'S CALL: The Waterworks
-					["coord"] = { 46.9, 32.3, THE_RINGING_DEEPS },	-- TODO: dm report with 46.6, 17.8, 2251 for this quest?
+					["coord"] = { 46.6, 17.7, THE_WATERWORKS },
 				}),
 			}),
 			n(TREASURES, {
