@@ -3069,7 +3069,7 @@ root(ROOTS.Zones, {
 						},
 					})),
 					n(20889, {	-- Ethereum Prisoner (Group Energy Ball)
-						["description"] = "You can use either of the keys listed below to open an Ethereum Stasis Chamber.",
+						["description"] = "You can use either of the listed keys to open an Ethereum Stasis Chamber.",
 						["coords"] = {
 							{ 51.2, 11.6, BLADES_EDGE_MOUNTAINS },	-- Ethereum Prisoner (Group Energy Ball)
 							{ 49.6, 15.8, BLADES_EDGE_MOUNTAINS },	-- Ethereum Prisoner (Group Energy Ball)
