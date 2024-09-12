@@ -3427,7 +3427,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			n(55072, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 }, }, {	-- Barum <Replica Armor Prizes>
 				["coord"] = { 47.5, 66.3, DARKMOON_ISLAND },
 				["groups"] = {
-					gs(1431, {	-- Battlegear of Valor
+					clWithoutLock(WARRIOR, {	-- Battlegear of Valor
 						darkmoonprizeticket(55, i(78319)),	-- Replica Belt of Valor
 						darkmoonprizeticket(55, i(78318)),	-- Replica Boots of Valor
 						darkmoonprizeticket(55, i(78321)),	-- Replica Bracers of Valor
@@ -3437,7 +3437,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(75, i(78324)),	-- Replica Legplates of Valor
 						darkmoonprizeticket(75, i(78325)),	-- Replica Shoulders of Valor
 					}),
-					gs(1428, {	-- Beaststalker Armor
+					clWithoutLock(HUNTER, {	-- Beaststalker Armor
 						darkmoonprizeticket(55, i(78274)),	-- Replica Beaststalker's Belt
 						darkmoonprizeticket(55, i(78277)),	-- Replica Beaststalker's Bindings
 						darkmoonprizeticket(55, i(78272)),	-- Replica Beaststalker's Boots
@@ -3447,7 +3447,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(75, i(78276)),	-- Replica Beaststalker's Pants
 						darkmoonprizeticket(75, i(78270)),	-- Replica Beaststalker's Tunic
 					}),
-					gs(1424, {	-- Dreadmist Raiment
+					clWithoutLock(WARLOCK, {	-- Dreadmist Raiment
 						darkmoonprizeticket(55, i(78222)),	-- Replica Dreadmist Belt
 						darkmoonprizeticket(55, i(78229)),	-- Replica Dreadmist Bracers
 						darkmoonprizeticket(75, i(78228)),	-- Replica Dreadmist Leggings
@@ -3457,7 +3457,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(55, i(78224)),	-- Replica Dreadmist Sandals
 						darkmoonprizeticket(55, i(78223)),	-- Replica Dreadmist Wraps
 					}),
-					gs(1430, {	-- Lightforge Armor
+					clWithoutLock(PALADIN, {	-- Lightforge Armor
 						darkmoonprizeticket(55, i(78302)),	-- Replica Lightforge Belt
 						darkmoonprizeticket(55, i(78309)),	-- Replica Lightforge Boots
 						darkmoonprizeticket(55, i(78304)),	-- Replica Lightforge Bracers
@@ -3467,7 +3467,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(75, i(78305)),	-- Replica Lightforge Legplates
 						darkmoonprizeticket(75, i(78308)),	-- Replica Lightforge Spaulders
 					}),
-					gs(1425, {	-- Magister's Regalia
+					clWithoutLock(MAGE, {	-- Magister's Regalia
 						darkmoonprizeticket(55, i(78192)),	-- Replica Magister's Belt
 						darkmoonprizeticket(55, i(78193)),	-- Replica Magister's Bindings
 						darkmoonprizeticket(55, i(78186)),	-- Replica Magister's Boots
@@ -3477,7 +3477,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(75, i(78191)),	-- Replica Magister's Mantle
 						darkmoonprizeticket(75, i(78190)),	-- Replica Magister's Robes
 					}),
-					gs(1427, {	-- Shadowcraft Armor
+					clWithoutLock(ROGUE, {	-- Shadowcraft Armor
 						darkmoonprizeticket(55, i(78259)),	-- Replica Shadowcraft Belt
 						darkmoonprizeticket(55, i(78256)),	-- Replica Shadowcraft Boots
 						darkmoonprizeticket(55, i(78255)),	-- Replica Shadowcraft Bracers
@@ -3487,7 +3487,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(75, i(78261)),	-- Replica Shadowcraft Spaulders
 						darkmoonprizeticket(75, i(78254)),	-- Replica Shadowcraft Tunic
 					}),
-					gs(1429, {	-- The Elements
+					clWithoutLock(SHAMAN, {	-- The Elements
 						darkmoonprizeticket(55, i(78289)),	-- Replica Bindings of Elements
 						darkmoonprizeticket(55, i(78292)),	-- Replica Boots of Elements
 						darkmoonprizeticket(75, i(78286)),	-- Replica Coif of Elements
@@ -3497,7 +3497,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(75, i(78288)),	-- Replica Pauldrons of Elements
 						darkmoonprizeticket(75, i(78290)),	-- Replica Vest of Elements
 					}),
-					gs(359, {	-- Vestments of the Devout
+					clWithoutLock(PRIEST, {	-- Vestments of the Devout
 						darkmoonprizeticket(55, i(78207)),	-- Replica Devout Belt
 						darkmoonprizeticket(55, i(78211)),	-- Replica Devout Bracers
 						darkmoonprizeticket(75, i(78205)),	-- Replica Devout Crown
@@ -3507,7 +3507,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(55, i(78210)),	-- Replica Devout Sandals
 						darkmoonprizeticket(75, i(78206)),	-- Replica Devout Skirt
 					}),
-					gs(1426, {	-- Wildheart Raiment
+					clWithoutLock(DRUID, {	-- Wildheart Raiment
 						darkmoonprizeticket(55, i(78244)),	-- Replica Wildheart Belt
 						darkmoonprizeticket(55, i(78243)),	-- Replica Wildheart Boots
 						darkmoonprizeticket(55, i(78240)),	-- Replica Wildheart Bracers
@@ -3522,7 +3522,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 			n(57983, bubbleDownSelf({ ["timeline"] = { ADDED_4_3_0 }, }, {	-- Baruma <Replica Armor Prizes>
 				["coord"] = { 47.6, 66.0, DARKMOON_ISLAND },
 				["groups"] = {
-					gs(861, {	-- Battlegear of Heroism
+					clWithoutLock(WARRIOR, {	-- Battlegear of Heroism
 						darkmoonprizeticket(55, i(78333)),	-- Replica Belt of Heroism
 						darkmoonprizeticket(55, i(78326)),	-- Replica Boots of Heroism
 						darkmoonprizeticket(55, i(78327)),	-- Replica Bracers of Heroism
@@ -3532,7 +3532,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(75, i(78331)),	-- Replica Legplates of Heroism
 						darkmoonprizeticket(75, i(78332)),	-- Replica Spaulders of Heroism
 					}),
-					gs(856, {	-- Beastmaster Armor
+					clWithoutLock(HUNTER, {	-- Beastmaster Armor
 						darkmoonprizeticket(55, i(78285)),	-- Replica Beastmaster's Belt
 						darkmoonprizeticket(55, i(78283)),	-- Replica Beastmaster's Bindings
 						darkmoonprizeticket(55, i(78279)),	-- Replica Beastmaster's Boots
@@ -3542,7 +3542,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(75, i(78280)),	-- Replica Beastmaster's Pants
 						darkmoonprizeticket(75, i(78282)),	-- Replica Beastmaster's Tunic
 					}),
-					gs(857, {	-- Darkmantle Armor
+					clWithoutLock(ROGUE, {	-- Darkmantle Armor
 						darkmoonprizeticket(55, i(78265)),	-- Replica Darkmantle Belt
 						darkmoonprizeticket(55, i(78262)),	-- Replica Darkmantle Boots
 						darkmoonprizeticket(55, i(78264)),	-- Replica Darkmantle Bracers
@@ -3552,7 +3552,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(75, i(78267)),	-- Replica Darkmantle Spaulders
 						darkmoonprizeticket(75, i(78269)),	-- Replica Darkmantle Tunic
 					}),
-					gs(854, {	-- Deathmist Rainment
+					clWithoutLock(WARLOCK, {	-- Deathmist Rainment
 						darkmoonprizeticket(55, i(78233)),	-- Replica Deathmist Belt
 						darkmoonprizeticket(55, i(78232)),	-- Replica Deathmist Bracers
 						darkmoonprizeticket(75, i(78231)),	-- Replica Deathmist Leggings
@@ -3562,7 +3562,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(55, i(78235)),	-- Replica Deathmist Sandals
 						darkmoonprizeticket(55, i(78236)),	-- Replica Deathmist Wraps
 					}),
-					gs(858, {	-- Feralheart Rainment
+					clWithoutLock(DRUID, {	-- Feralheart Rainment
 						darkmoonprizeticket(55, i(78246)),	-- Replica Feralheart Belt
 						darkmoonprizeticket(55, i(78251)),	-- Replica Feralheart Boots
 						darkmoonprizeticket(55, i(78253)),	-- Replica Feralheart Bracers
@@ -3572,7 +3572,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(75, i(78247)),	-- Replica Feralheart Spaulders
 						darkmoonprizeticket(75, i(78252)),	-- Replica Feralheart Vest
 					}),
-					gs(855, {	-- Sorcerer's Regalia
+					clWithoutLock(MAGE, {	-- Sorcerer's Regalia
 						darkmoonprizeticket(55, i(78202)),	-- Replica Sorcerer's Belt
 						darkmoonprizeticket(55, i(78203)),	-- Replica Sorcerer's Bindings
 						darkmoonprizeticket(55, i(78196)),	-- Replica Sorcerer's Boots
@@ -3582,7 +3582,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(75, i(78201)),	-- Replica Sorcerer's Mantle
 						darkmoonprizeticket(75, i(78200)),	-- Replica Sorcerer's Robes
 					}),
-					gs(859, {	-- Soulforge Armor
+					clWithoutLock(PALADIN, {	-- Soulforge Armor
 						darkmoonprizeticket(55, i(78311)),	-- Replica Soulforge Belt
 						darkmoonprizeticket(55, i(78310)),	-- Replica Soulforge Boots
 						darkmoonprizeticket(55, i(78317)),	-- Replica Soulforge Bracers
@@ -3592,7 +3592,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(75, i(78315)),	-- Replica Soulforge Legplates
 						darkmoonprizeticket(75, i(78316)),	-- Replica Soulforge Spaulders
 					}),
-					gs(860, {	-- The Five Thunders
+					clWithoutLock(SHAMAN, {	-- The Five Thunders
 						darkmoonprizeticket(55, i(78296)),	-- Replica Bindings of The Five Thunders
 						darkmoonprizeticket(55, i(78298)),	-- Replica Boots of The Five Thunders
 						darkmoonprizeticket(75, i(78294)),	-- Replica Coif of The Five Thunders
@@ -3602,7 +3602,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 						darkmoonprizeticket(75, i(78299)),	-- Replica Pauldrons of The Five Thunders
 						darkmoonprizeticket(75, i(78300)),	-- Replica Vest of The Five Thunders
 					}),
-					gs(360, {	-- Vestments of the Virtuous
+					clWithoutLock(PRIEST, {	-- Vestments of the Virtuous
 						darkmoonprizeticket(55, i(78218)),	-- Replica Virtuous Belt
 						darkmoonprizeticket(55, i(78215)),	-- Replica Virtuous Bracers
 						darkmoonprizeticket(75, i(78216)),	-- Replica Virtuous Crown
