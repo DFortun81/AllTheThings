@@ -120,6 +120,11 @@ do
 				-- account-wide collected
 				if app.IsAccountCached(CACHE, id) then return 2; end
 			end,
+			trackable = app.ReturnTrue,
+			saved = function(t)
+				-- character collected
+				if CollectedSpeciesHelper[t[KEY]] then return 1; end
+			end,
 			costCollectibles = function(t)
 				return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
 			end,
