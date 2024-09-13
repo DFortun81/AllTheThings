@@ -511,7 +511,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			}),
 			i(117393, {	-- Keg-Shaped Treasure Chest	(Epic Quality)
 				-- #if AFTER 10.0.5
-				["description"] = "You can loot the Keg-Shaped Treasure Chest once a day per character by queueing for the encounter in the Dungeon Finder.\nThe first Keg-Shaped Treasure Chest you get per day per |CFFFF0000account|r has a vastly increased chance to contain collectables such as manuscripts, mounts, pets, and toys.",
+				["description"] = "You can loot the Keg-Shaped Treasure Chest once a day per character by queueing for the encounter in the Dungeon Finder.\nThe first Keg-Shaped Treasure Chest you get per day per |CFFFF0000account|r has a vastly increased chance to contain collectables such as mount mods, mounts, pets, and toys.",
 				-- #endif
 				["timeline"] = { ADDED_6_0_2 },
 				["lvl"] = 98,
@@ -534,7 +534,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					i(37863, {	-- Direbrew's Remote
 						["timeline"] = { ADDED_2_0_1 },
 					}),
-					i(208742, {	-- Renewed Proto-Drake: Brewfest Armor (DM!)
+					i(208742, {	-- Renewed Proto-Drake: Brewfest Armor (MM!)
 						["timeline"] = { ADDED_10_1_7 },
 					}),
 				}),

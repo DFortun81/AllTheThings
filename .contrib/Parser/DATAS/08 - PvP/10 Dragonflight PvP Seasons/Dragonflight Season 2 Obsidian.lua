@@ -25,7 +25,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			ach(17831),		-- Elite: Dragonflight Season 2
 			ach(17740, {	-- Gladiator: Dragonflight Season 2
 				i(205233),	-- Obsidian Gladiator's Slitherdrake (MOUNT!)
-				i(205865),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator (DM!)
+				i(205865),	-- Winding Slitherdrake: Embodiment of the Obsidian Gladiator (MM!)
 			}),
 			ach(17778),		-- Obsidian Gladiator's Drake
 			ach(17764, {	-- Obsidian Gladiator: Dragonflight Season 2

@@ -216,13 +216,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							["cost"] = {{"i",225798,1}},	-- Intricately Carved Barter Boulder
 							["timeline"] = {ADDED_11_0_2}
 						}),
-						i(203308, {	-- Winding Slitherdrake: Hairy Brow (DM!)
+						i(203308, {	-- Winding Slitherdrake: Hairy Brow (MM!)
 							["cost"] = BarterCost(55, 30),
 						}),
-						i(203312, {	-- Winding Slitherdrake: Cluster Chin Horn (DM!)
+						i(203312, {	-- Winding Slitherdrake: Cluster Chin Horn (MM!)
 							["cost"] = BarterCost(55, 30),
 						}),
-						i(203346, {	-- Winding Slitherdrake: Curled Nose (DM!)
+						i(203346, {	-- Winding Slitherdrake: Curled Nose (MM!)
 							["cost"] = BarterCost(55, 30),
 						}),
 						i(205120, {	-- Thimblerig (PET!)

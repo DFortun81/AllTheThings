@@ -19,9 +19,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				i(210106),	-- Maple Tender Wristbands
 			}),
 			n(DRAKEWATCHER_MANUSCRIPTS, {
-				i(207779),	-- Grotto Netherwing Drake: Barbed Tail (DM!)
-				i(207771),	-- Grotto Netherwing Drake: Short Horns (DM!)
-				i(207766),	-- Grotto Netherwing Drake: Triple Spiked Crest (DM!)
+				i(207779),	-- Grotto Netherwing Drake: Barbed Tail (MM!)
+				i(207771),	-- Grotto Netherwing Drake: Short Horns (MM!)
+				i(207766),	-- Grotto Netherwing Drake: Triple Spiked Crest (MM!)
 			}),
 			filter(FINGER_F, {
 				i(208350),	-- Ochre Field Signet

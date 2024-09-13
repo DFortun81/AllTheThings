@@ -216,9 +216,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 29.9, 41.1, OHNAHRAN_PLAINS },
 				["questID"] = 74075,
 				["g"] = {
-					i(196996),	-- Cliffside Wylderdrake: Branched Horns (DM!)
+					i(196996),	-- Cliffside Wylderdrake: Branched Horns (MM!)
 					i(200437),	-- Dreamsong Censer
-					i(197115),	-- Highland Drake: Thorned Jaw (DM!)
+					i(197115),	-- Highland Drake: Thorned Jaw (MM!)
 					i(200444),	-- Mantle of the Gatekeeper
 				},
 			}),
@@ -242,7 +242,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["g"] = {
 					bo(74465, true),
 					i(203676),	-- Stormcaller's Grounding Shoes
-					i(197367),	-- Renewed Proto-Drake: Gray Hair (DM!)
+					i(197367),	-- Renewed Proto-Drake: Gray Hair (MM!)
 				},
 			})),
 			n(191842, {	-- Sulfurion

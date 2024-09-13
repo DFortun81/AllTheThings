@@ -563,7 +563,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				BossOnly(DIURNA),
 				BossOnly(RASZAGETH, {
-					i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (DM!)
+					i(201790),	-- Renewed Proto-Drake: Embodiment of the Storm-Eater (MM!)
 				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroups({

@@ -310,8 +310,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				i(200442),	-- Basilisk Hide Jerkin
 				i(200174),	-- Bonesigil Shoulderguards
 				i(200137),	-- Chitin Dreadbringer
-				i(196976),	-- Cliffside Wylderdrake: Head Mane (DM!)
-				i(197111),	-- Highland Drake: Maned Head (DM!)
+				i(196976),	-- Cliffside Wylderdrake: Head Mane (MM!)
+				i(197111),	-- Highland Drake: Maned Head (MM!)
 				i(200445),	-- Lucky Hunting Charm
 				i(200249),	-- Mage's Chewed Wand (TOY!)
 				i(200193),	-- Manafrond Sandals
@@ -338,133 +338,133 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		-- Technically, further Header organization under the 'Drops' Header should still work properly for automatic filling of the raw Items
 		n(DROPS, {	-- Items which can drop from multiple, specifically-tagged Creatures
 			n(DRAKEWATCHER_MANUSCRIPTS, {
-				i(196991, {	-- Cliffside Wylderdrake: Black Horns (DM!)
+				i(196991, {	-- Cliffside Wylderdrake: Black Horns (MM!)
 					["crs"] = RARE_GROUP_GIANT,
 				}),
-				i(196986, {	-- Cliffside Wylderdrake: Black Hair (DM!)
+				i(196986, {	-- Cliffside Wylderdrake: Black Hair (MM!)
 					["crs"] = RARE_GROUP_TWO,
 				}),
-				i(197019, {	-- Cliffside Wylderdrake: Blunt Spiked Tail (DM!)
+				i(197019, {	-- Cliffside Wylderdrake: Blunt Spiked Tail (MM!)
 					["crs"] = RARE_GROUP_DJARADIN,
 				}),
-				i(196973, {	-- Cliffside Wylderdrake: Dual Horned Chin (DM!)
+				i(196973, {	-- Cliffside Wylderdrake: Dual Horned Chin (MM!)
 					["crs"] = RARE_GROUP_TWO,
 				}),
-				i(196982, {	-- Cliffside Wylderdrake: Ears (DM!)
+				i(196982, {	-- Cliffside Wylderdrake: Ears (MM!)
 					["crs"] = RARE_GROUP_GNOLLS,
 				}),
-				i(197001, {	-- Cliffside Wylderdrake: Finned Cheek (DM!)
+				i(197001, {	-- Cliffside Wylderdrake: Finned Cheek (MM!)
 					["crs"] = RARE_GROUP_WATER,
 				}),
-				i(197022, {	-- Cliffside Wylderdrake: Finned Neck (DM!)
+				i(197022, {	-- Cliffside Wylderdrake: Finned Neck (MM!)
 					["crs"] = RARE_GROUP_FOUR,
 				}),
-				i(196992, {	-- Cliffside Wylderdrake: Heavy Horns (DM!)
+				i(196992, {	-- Cliffside Wylderdrake: Heavy Horns (MM!)
 					["crs"] = RARE_GROUP_DRAGONKIN,
 				}),
-				i(196985, {	-- Cliffside Wylderdrake: Horned Jaw (DM!)
+				i(196985, {	-- Cliffside Wylderdrake: Horned Jaw (MM!)
 					["crs"] = RARE_GROUP_SPECTRAL,
 				}),
-				i(197005, {	-- Cliffside Wylderdrake: Horned Nose (DM!)
+				i(197005, {	-- Cliffside Wylderdrake: Horned Nose (MM!)
 					["crs"] = RARE_GROUP_DJARADIN,
 				}),
-				i(196983, {	-- Cliffside Wylderdrake: Maned Jaw (DM!)
+				i(196983, {	-- Cliffside Wylderdrake: Maned Jaw (MM!)
 					["crs"] = RARE_GROUP_DRAGON,
 				}),
-				i(197023, {	-- Cliffside Wylderdrake: Maned Neck (DM!)
+				i(197023, {	-- Cliffside Wylderdrake: Maned Neck (MM!)
 					["crs"] = RARE_GROUP_BEOGOKA,
 				}),
-				i(197016, {	-- Cliffside Wylderdrake: Maned Tail (DM!)
+				i(197016, {	-- Cliffside Wylderdrake: Maned Tail (MM!)
 					["crs"] = RARE_GROUP_GHENDISH,
 				}),
-				i(197008, {	-- Cliffside Wylderdrake: Narrow Stripes Pattern (DM!)
+				i(197008, {	-- Cliffside Wylderdrake: Narrow Stripes Pattern (MM!)
 					["crs"] = RARE_GROUP_TIME,
 				}),
-				i(196970, {	-- Cliffside Wylderdrake: Spiked Back (DM!)
+				i(196970, {	-- Cliffside Wylderdrake: Spiked Back (MM!)
 					["crs"] = RARE_GROUP_DRAGONKIN_SMALL,
 				}),
-				i(196999, {	-- Cliffside Wylderdrake: Swept Horns (DM!)
+				i(196999, {	-- Cliffside Wylderdrake: Swept Horns (MM!)
 					["crs"] = RARE_GROUP_SUNDERING,
 				}),
-				i(197149, {	-- Highland Drake: Club Tail (DM!)
+				i(197149, {	-- Highland Drake: Club Tail (MM!)
 					["crs"] = RARE_GROUP_THREE
 				}),
-				i(197125, {	-- Highland Drake: Coiled Horns (DM!)
+				i(197125, {	-- Highland Drake: Coiled Horns (MM!)
 					["crs"] = RARE_GROUP_DRAGON,
 				}),
-				i(197100, {	-- Highland Drake: Crested Brow (DM!)
+				i(197100, {	-- Highland Drake: Crested Brow (MM!)
 					["crs"] = RARE_GROUP_TITAN,
 				}),
-				i(197116, {	-- Highland Drake: Ears (DM!)
+				i(197116, {	-- Highland Drake: Ears (MM!)
 					["crs"] = RARE_GROUP_SUNDERING,
 				}),
-				i(197098, {	-- Highland Drake: Finned Back (DM!)
+				i(197098, {	-- Highland Drake: Finned Back (MM!)
 					["crs"] = RARE_GROUP_WATER,
 				}),
-				i(197106, {	-- Highland Drake: Finned Head (DM!)
+				i(197106, {	-- Highland Drake: Finned Head (MM!)
 					["crs"] = RARE_GROUP_SUNDER,
 				}),
-				i(197150, {	-- Highland Drake: Spiked Club Tail (DM!)
+				i(197150, {	-- Highland Drake: Spiked Club Tail (MM!)
 					["crs"] = RARE_GROUP_GNOLLS,
 				}),
-				i(197105, {	-- Highland Drake: Spined Chin (DM!)
+				i(197105, {	-- Highland Drake: Spined Chin (MM!)
 					["crs"] = RARE_GROUP_DRAGONKIN_SMALL,
 				}),
-				i(197130, {	-- Highland Drake: Stag Horns (DM!)
+				i(197130, {	-- Highland Drake: Stag Horns (MM!)
 					["crs"] = RARE_GROUP_TIME,
 				}),
-				i(197138, {	-- Highland Drake: Striped Pattern (DM!)
+				i(197138, {	-- Highland Drake: Striped Pattern (MM!)
 					["crs"] = RARE_GROUP_ONE,
 				}),
-				i(197121, {	-- Highland Drake: Tan Horns (DM!)
+				i(197121, {	-- Highland Drake: Tan Horns (MM!)
 					["crs"] = RARE_GROUP_AZRA,
 				}),
-				i(197135, {	-- Highland Drake: Toothy Mouth (DM!)
+				i(197135, {	-- Highland Drake: Toothy Mouth (MM!)
 					["crs"] = RARE_GROUP_BIQ,
 				}),
-				i(197403, {	-- Renewed Proto-Drake: Club Tail (DM!)
+				i(197403, {	-- Renewed Proto-Drake: Club Tail (MM!)
 					["crs"] = RARE_GROUP_DRAGONKIN,
 				}),
-				i(197367, {	-- Renewed Proto-Drake: Gray Hair (DM!)
+				i(197367, {	-- Renewed Proto-Drake: Gray Hair (MM!)
 					["crs"] = RARE_GROUP_GHENDISH,
 				}),
-				i(197383, {	-- Renewed Proto-Drake: Heavy Horns (DM!)
+				i(197383, {	-- Renewed Proto-Drake: Heavy Horns (MM!)
 					["crs"] = RARE_GROUP_FIVE,
 				}),
-				i(197379, {	-- Renewed Proto-Drake: Impaler Horns (DM!)
+				i(197379, {	-- Renewed Proto-Drake: Impaler Horns (MM!)
 					["crs"] = RARE_GROUP_BIQ,
 				}),
-				i(197372, {	-- Renewed Proto-Drake: Purple Hair (DM!)
+				i(197372, {	-- Renewed Proto-Drake: Purple Hair (MM!)
 					["crs"] = RARE_GROUP_WIND,
 				}),
-				i(197400, {	-- Renewed Proto-Drake: Shark Snout (DM!)
+				i(197400, {	-- Renewed Proto-Drake: Shark Snout (MM!)
 					["crs"] = RARE_GROUP_SUNDER,
 				}),
-				i(197398, {	-- Renewed Proto-Drake: Snub Snout (DM!)
+				i(197398, {	-- Renewed Proto-Drake: Snub Snout (MM!)
 					["crs"] = RARE_GROUP_AZRA,
 				}),
-				i(197382, {	-- Renewed Proto-Drake: White Horns (DM!)
+				i(197382, {	-- Renewed Proto-Drake: White Horns (MM!)
 					["crs"] = RARE_GROUP_SPECTRAL,
 				}),
-				i(197624, {	-- Windborne Velocidrake: Club Tail (DM!)
+				i(197624, {	-- Windborne Velocidrake: Club Tail (MM!)
 					["crs"] = RARE_GROUP_GIANT,
 				}),
-				i(197602, {	-- Windborne Velocidrake: Cluster Horns (DM!)
+				i(197602, {	-- Windborne Velocidrake: Cluster Horns (MM!)
 					["crs"] = RARE_GROUP_FIVE,
 				}),
-				i(197593, {	-- Windborne Velocidrake: Feathery Head (DM!)
+				i(197593, {	-- Windborne Velocidrake: Feathery Head (MM!)
 					["crs"] = RARE_GROUP_TEMPEST,
 				}),
-				i(197608, {	-- Windborne Velocidrake: Gray Horns (DM!)
+				i(197608, {	-- Windborne Velocidrake: Gray Horns (MM!)
 					["crs"] = RARE_GROUP_THREE
 				}),
-				i(197589, {	-- Windborne Velocidrake: Large Head Fin (DM!)
+				i(197589, {	-- Windborne Velocidrake: Large Head Fin (MM!)
 					["crs"] = RARE_GROUP_FOUR,
 				}),
-				i(197586, {	-- Windborne Velocidrake: Spiked Back (DM!)
+				i(197586, {	-- Windborne Velocidrake: Spiked Back (MM!)
 					["crs"] = RARE_GROUP_ONE,
 				}),
-				i(197606, {	-- Windborne Velocidrake: Swept Horns (DM!)
+				i(197606, {	-- Windborne Velocidrake: Swept Horns (MM!)
 					["crs"] = RARE_GROUP_WIND,
 				}),
 			}),

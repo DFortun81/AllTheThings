@@ -128,7 +128,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75284,	-- Old QuestID: 75550
 				["g"] = {
 					bo(75285, true),
-					i(203307),	-- Winding Slitherdrake: Plated Brow (DM!)
+					i(203307),	-- Winding Slitherdrake: Plated Brow (MM!)
 					i(205318),	-- Guardian Golem's Legplates
 					i(205309),	-- Loyal Attendant's Gaze
 				},
@@ -164,7 +164,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75475,	-- Old QuestID: 75572
 				["g"] = {
 					bo(75476, true),
-					i(197364),	-- Renewed Proto-Drake: Short Spiked Crest (DM!)
+					i(197364),	-- Renewed Proto-Drake: Short Spiked Crest (MM!)
 					i(205315),	-- Colossian Cuirass
 					i(205332),	-- Fist of the Demolisher
 					i(205330),	-- Signet of Colossal Mastery
@@ -176,7 +176,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75353, true),
 					i(205419),	-- Dinn's Drum (TOY!)
-					i(203320),	-- Winding Slitherdrake: Ears (DM!)
+					i(203320),	-- Winding Slitherdrake: Ears (MM!)
 					i(205195),	-- Drakeforged Magma Charm
 					i(205299),	-- Rudiment Cuffs
 					i(205304),	-- Snareguard Sash
@@ -188,7 +188,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75361,	-- Old QuestID: 75567
 				["g"] = {
 					bo(75364, true),
-					i(203363),	-- Winding Slitherdrake: Large Finned Throat (DM!)
+					i(203363),	-- Winding Slitherdrake: Large Finned Throat (MM!)
 					i(205293),	-- Emberdusk's Embrace
 					i(205201),	-- Smoldering Howler Horn
 					i(205335),	-- Talisman of the Dusk
@@ -200,7 +200,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75357,	-- Old QuestID: 75565
 				["g"] = {
 					bo(75358, true),
-					i(197109),	-- Highland Drake: Spiked Head (DM!)
+					i(197109),	-- Highland Drake: Spiked Head (MM!)
 					i(205334),	-- Flowfy's Smoldering Chain
 					i(205303),	-- Leggings of Flowing Flame
 				},
@@ -210,7 +210,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75295,	-- Old QuestID: 75552
 				["g"] = {
 					bo(75296, true),
-					i(203334),	-- Winding Slitherdrake: Curled Horns (DM!)
+					i(203334),	-- Winding Slitherdrake: Curled Horns (MM!)
 					i(205321),	-- Brimstone Bracers
 					i(205291),	-- Garrison General's Cape
 					i(205331),	-- Zskorran Cleaver
@@ -221,7 +221,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75273,	-- Old QuestID: 75548
 				["g"] = {
 					bo(75274, true),
-					i(203309),	-- Winding Slitherdrake: Long Chin Horn (DM!)
+					i(203309),	-- Winding Slitherdrake: Long Chin Horn (MM!)
 					i(205317),	-- Crystalpod Gauntlets
 					i(205296),	-- Goopal's Visage
 				},
@@ -242,7 +242,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					--	["description"] = "This toy is bugged for some accounts and simply does not drop. Nobody knows why.",
 					--	Fixed 4 months into the patch (and 4 days after the note was added to ATT).
 					}),
-					i(203328),	-- Winding Slitherdrake: White Horns (DM!)
+					i(203328),	-- Winding Slitherdrake: White Horns (MM!)
 					i(205297),	-- Flamewielder's Trousers
 					i(205329),	-- Loop of Burning Invocation
 				},
@@ -254,7 +254,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					bo(75334, true),
 					i(205203),	-- Cobalt Shalewing (MOUNT!)
 					i(205147),	-- Ridged Shalewing	(PET!)
-					i(203358),	-- Winding Slitherdrake: Small Finned Tail (DM!)
+					i(203358),	-- Winding Slitherdrake: Small Finned Tail (MM!)
 					i(205298),	-- Belt of Floating Stone
 					i(205292),	-- Karokta's Mane
 					i(205192),	-- Volatile Crystal Shard
@@ -265,7 +265,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75268,	-- Old QuestID: 75546
 				["g"] = {
 					bo(75269, true),
-					i(205341),	-- Winding Slitherdrake: Heavy Scales (DM!)
+					i(205341),	-- Winding Slitherdrake: Heavy Scales (MM!)
 					i(205319),	-- Deepflayer Shoulderguards
 					i(205310),	-- Leggings of Kaprachu
 				},
@@ -286,7 +286,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["g"] = {
 					bo(75267, true),
 					i(205152),	-- Skaarn (PET!)
-					i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail (DM!)
+					i(197021),	-- Cliffside Wylderdrake: Spiked Club Tail (MM!)
 					i(205307),	-- Kob'rok's Scale Sabatons
 					i(205323),	-- Rock-Lined Pauldrons
 					i(206021),	-- Kob'rok's Luminescent Scale
@@ -311,7 +311,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75339,	-- Old QuestID: 75561
 				["g"] = {
 					bo(75340, true),
-					i(203339),	-- Winding Slitherdrake: Impaler Horns (DM!)
+					i(203339),	-- Winding Slitherdrake: Impaler Horns (MM!)
 					i(205300),	-- Magma Waders
 					i(205311),	-- Magmascale Pauldrons
 				},
@@ -321,7 +321,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75291,	-- Old QuestID: 75551
 				["g"] = {
 					bo(75292, true),
-					i(203331),	-- Winding Slitherdrake: Cluster Horns (DM!)
+					i(203331),	-- Winding Slitherdrake: Cluster Horns (MM!)
 					i(205322),	-- Algeth'ar Exile's Frock
 					i(205333),	-- Obsidian Amulet of Transmutation
 				},
@@ -338,7 +338,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75348,	-- Old QuestID: 75563
 				["g"] = {
 					bo(75349, true),
-					i(203321),	-- Winding Slitherdrake: Curled Cheek Horn (DM!)
+					i(203321),	-- Winding Slitherdrake: Curled Cheek Horn (MM!)
 					i(205301),	-- Hardened Lava Handwraps
 					i(205294),	-- Sandals of Molten Scorn
 				},
@@ -348,7 +348,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75275,	-- Old QuestID: 75549
 				["g"] = {
 					bo(75276, true),
-					i(203318),	-- Winding Slitherdrake: Hairy Chest (DM!)
+					i(203318),	-- Winding Slitherdrake: Hairy Chest (MM!)
 					i(205326),	-- Crystalweb Chelicera
 					i(205290),	-- Greatcloak of Spun Marrow
 					i(205191),	-- Underlight Globe
@@ -360,7 +360,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75359,	-- Old QuestID: 75566
 				["g"] = {
 					bo(75360, true),
-					i(203338),	-- Winding Slitherdrake: Antler Horns (DM!)
+					i(203338),	-- Winding Slitherdrake: Antler Horns (MM!)
 					i(205328),	-- Earthen Emissary's Edge
 					i(205314),	-- Greathelm of the Emissary
 					i(205312),	-- Subterrax's Stout Waistguard
@@ -382,7 +382,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				["questID"] = 75365,	-- Old QuestID: 75570
 				["g"] = {
 					bo(75366, true),
-					i(203345),	-- Winding Slitherdrake: Split Jaw Horns (DM!)
+					i(203345),	-- Winding Slitherdrake: Split Jaw Horns (MM!)
 					i(205316),	-- Crystal Stompers
 					i(205336),	-- Glowing Veridian Necklace
 					i(205327),	-- Shard of the Veridian King

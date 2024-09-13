@@ -12,16 +12,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			},
 			["groups"] = {
 				i(199192, {	-- Dragon Racer's Purse
-					i(196979),	-- Cliffside Wylderdrake: Curled Head Horns (DM!)
-					i(197017),	-- Cliffside Wylderdrake: Large Tail Spikes (DM!)
-					i(196971),	-- Cliffside Wylderdrake: Spiked Brow (DM!)
-					i(197128),	-- Highland Drake: Curled Back Horns (DM!)
-					i(197152),	-- Highland Drake: Hooked Tail (DM!)
-					i(197113),	-- Highland Drake: Swept Spiked Head (DM!)
-					i(197366),	-- Renewed Proto-Drake: Dual Horned Crest (DM!)
-					i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw (DM!)
-					i(197605),	-- Windborne Velocidrake: Curled Horns (DM!)
-					i(197619),	-- Windborne Velocidrake: Hooked Snout (DM!)
+					i(196979),	-- Cliffside Wylderdrake: Curled Head Horns (MM!)
+					i(197017),	-- Cliffside Wylderdrake: Large Tail Spikes (MM!)
+					i(196971),	-- Cliffside Wylderdrake: Spiked Brow (MM!)
+					i(197128),	-- Highland Drake: Curled Back Horns (MM!)
+					i(197152),	-- Highland Drake: Hooked Tail (MM!)
+					i(197113),	-- Highland Drake: Swept Spiked Head (MM!)
+					i(197366),	-- Renewed Proto-Drake: Dual Horned Crest (MM!)
+					i(197387),	-- Renewed Proto-Drake: Thin Spined Jaw (MM!)
+					i(197605),	-- Windborne Velocidrake: Curled Horns (MM!)
+					i(197619),	-- Windborne Velocidrake: Hooked Snout (MM!)
 				}),
 				i(200609),	-- Dragon Racing Purse - First Place
 				i(200610),	-- Dragon Racing Purse - Second Place

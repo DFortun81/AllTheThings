@@ -778,8 +778,8 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateInstance(t.instanceID, t);
 		elseif t.currencyID then
 			t = app.CreateCurrencyClass(t.currencyID, t);
-		elseif t.drakewatcherManuscriptID then
-			t = app.CreateDrakewatcherManuscript(t.drakewatcherManuscriptID, t);
+		elseif t.mountmodID then
+			t = app.CreateMountMod(t.mountmodID, t);
 		elseif t.speciesID then
 			t = app.CreateSpecies(t.speciesID, t);
 		elseif t.objectID then
@@ -8325,8 +8325,8 @@ function app:GetDataCache()
 				icon = app.asset("Interface_Vendor")
 			}),
 
-			-- Drake Manuscripts (TODO)
-			-- app.CreateDynamicHeader("dmID", SimpleNPCGroup(app.HeaderConstants.DRA)),
+			-- Mount Mods (TODO)
+			-- app.CreateDynamicHeader("mmID", SimpleNPCGroup(app.HeaderConstants.DRA)),
 
 			-- Factions
 			app.CreateDynamicHeaderByValue("factionID", {

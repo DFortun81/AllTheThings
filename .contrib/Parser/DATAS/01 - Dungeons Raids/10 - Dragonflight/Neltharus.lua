@@ -73,8 +73,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						i(193779),	-- Sargha's Smasher
 						i(193773),	-- Spoils of Neltharus
 						i(193775),	-- Warlord's Cindermitts
-						i(197376),	-- Renewed Proto-Drake: Ears (DM!)
-						i(197397),	-- Renewed Proto-Drake: Heavy Scales (DM!)
+						i(197376),	-- Renewed Proto-Drake: Ears (MM!)
+						i(197397),	-- Renewed Proto-Drake: Heavy Scales (MM!)
 					},
 				}),
 			}),

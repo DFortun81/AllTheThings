@@ -1521,7 +1521,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 					["timeline"] = { ADDED_8_1_0 },
 					["cost"] = { { "i", 21100, 30 } },	-- 30x Coin of Ancestry
 				}),
-				i(211868, {	-- Winding Slitherdrake: Lunar Festival Armor (DM!)
+				i(211868, {	-- Winding Slitherdrake: Lunar Festival Armor (MM!)
 					["timeline"] = { ADDED_10_2_5 },
 					["cost"] = 500000000,	-- 50k
 				}),
@@ -1554,7 +1554,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.LUNAR_FESTIVAL, n(LUNAR_FESTIVAL_HEADER, 
 				i(21576),	-- Red Rocket Cluster
 				i(21721),	-- Moonglow
 				i(21747),	-- Festival Firecracker
-				i(211868, {	-- Winding Slitherdrake: Lunar Festival Armor (DM!)
+				i(211868, {	-- Winding Slitherdrake: Lunar Festival Armor (MM!)
 					["timeline"] = { ADDED_10_2_5 },
 					["cost"] = 500000000,	-- 50k
 				}),

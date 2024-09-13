@@ -156,23 +156,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}, {	-- RENOWN 8 --
 					}, {	-- RENOWN 9 --
-						i(197369, {	-- Renewed Proto-Drake: Brown Hair (DM!)
+						i(197369, {	-- Renewed Proto-Drake: Brown Hair (MM!)
 							["cost"] = {
 								{"c", DRAGON_SUPPLIES, 50 },
 							},
 							["timeline"] = { ADDED_10_1_0 },
 						}),
-						i(197363, {	-- Renewed Proto-Drake: Maned Crest (DM!)
+						i(197363, {	-- Renewed Proto-Drake: Maned Crest (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 50 },
 							},
 						}),
-						i(197360, {	-- Renewed Proto-Drake: Spined Brow (DM!)
+						i(197360, {	-- Renewed Proto-Drake: Spined Brow (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 50 },
 							},
 						}),
-						i(197386, {	-- Renewed Proto-Drake: Spiked Jaw (DM!)
+						i(197386, {	-- Renewed Proto-Drake: Spiked Jaw (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 50 },
 							},
@@ -336,23 +336,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 					}, {	-- RENOWN 15 --
-						i(197358, {	-- Renewed Proto-Drake: Curved Spiked Brow (DM!)
+						i(197358, {	-- Renewed Proto-Drake: Curved Spiked Brow (MM!)
 							["timeline"] = { ADDED_10_0_7 },
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 100 },
 							},
 						}),
-						i(197395, {	-- Renewed Proto-Drake: Harrier Pattern (DM!)
+						i(197395, {	-- Renewed Proto-Drake: Harrier Pattern (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 100 },
 							},
 						}),
-						i(197402, {	-- Renewed Proto-Drake: Spiked Club Tail (DM!)
+						i(197402, {	-- Renewed Proto-Drake: Spiked Club Tail (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 100 },
 							},
 						}),
-						i(197374, {	-- Renewed Proto-Drake: Swept Horns (DM!)
+						i(197374, {	-- Renewed Proto-Drake: Swept Horns (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 100 },
 							},
@@ -489,25 +489,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 					}, {	-- RENOWN 22 --
-						i(197010, {	-- Cliffside Wylderdrake: Red Scales (DM!)
+						i(197010, {	-- Cliffside Wylderdrake: Red Scales (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 400 },
 								{ "i", AWAKENED_FIRE, 1 },
 							},
 						}),
-						i(197144, {	-- Highland Drake: Red Scales (DM!)
+						i(197144, {	-- Highland Drake: Red Scales (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 400 },
 								{ "i", AWAKENED_FIRE, 1 },
 							},
 						}),
-						i(197614, {	-- Windborne Velocidrake: Red Scales (DM!)
+						i(197614, {	-- Windborne Velocidrake: Red Scales (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 400 },
 								{ "i", AWAKENED_FIRE, 1 },
 							},
 						}),
-						i(203353, {	-- Winding Slitherdrake: Red Scales (DM!)
+						i(203353, {	-- Winding Slitherdrake: Red Scales (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 400 },
 								{ "i", AWAKENED_FIRE, 1 },
@@ -620,28 +620,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					194326,	-- Trusty Sweeper
 					------ RENOWN 9 ------
 					-- #if AFTER 10.1.0
-					197369,	-- Renewed Proto-Drake: Brown Hair (DM!)
+					197369,	-- Renewed Proto-Drake: Brown Hair (MM!)
 					-- #endif
-					197363,	-- Renewed Proto-Drake: Maned Crest (DM!)
-					197360,	-- Renewed Proto-Drake: Spined Brow (DM!)
-					197386,	-- Renewed Proto-Drake: Spiked Jaw (DM!)
+					197363,	-- Renewed Proto-Drake: Maned Crest (MM!)
+					197360,	-- Renewed Proto-Drake: Spined Brow (MM!)
+					197386,	-- Renewed Proto-Drake: Spiked Jaw (MM!)
 					------ RENOWN 15 ------
 					-- #if AFTER 10.0.7
-					197358,	-- Renewed Proto-Drake: Curved Spiked Brow (DM!)
+					197358,	-- Renewed Proto-Drake: Curved Spiked Brow (MM!)
 					-- #endif
-					197395,	-- Renewed Proto-Drake: Harrier Pattern (DM!)
-					197402,	-- Renewed Proto-Drake: Spiked Club Tail (DM!)
-					197374,	-- Renewed Proto-Drake: Swept Horns (DM!)
+					197395,	-- Renewed Proto-Drake: Harrier Pattern (MM!)
+					197402,	-- Renewed Proto-Drake: Spiked Club Tail (MM!)
+					197374,	-- Renewed Proto-Drake: Swept Horns (MM!)
 					------ RENOWN 17 ------
 					198721,	-- Skinny Reliquary Pillow (TOY!)
 					198722,	-- Small Triangular Pillow (TOY!)
 					198720,	-- Soft Purple Pillow (TOY!)
 					------ RENOWN 22 ------
-					197010,	-- Cliffside Wylderdrake: Red Scales (DM!)
-					197144,	-- Highland Drake: Red Scales (DM!)
-					197614,	-- Windborne Velocidrake: Red Scales (DM!)
+					197010,	-- Cliffside Wylderdrake: Red Scales (MM!)
+					197144,	-- Highland Drake: Red Scales (MM!)
+					197614,	-- Windborne Velocidrake: Red Scales (MM!)
 					-- #if AFTER 10.1.0
-					203353,	-- Winding Slitherdrake: Red Scales (DM!)
+					203353,	-- Winding Slitherdrake: Red Scales (MM!)
 					-- #endif
 				}},
 			}),

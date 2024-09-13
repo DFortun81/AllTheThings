@@ -287,8 +287,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 193359 },	-- Lord Andestrasz
 					["coord"] = { 75.2, 55.0, THE_WAKING_SHORES },
 					["g"] = {
-						i(197380),	-- Renewed Proto-Drake: Curved Horns (DM!)
-						i(197365),	-- Renewed Proto-Drake: Finned Crest (DM!)
+						i(197380),	-- Renewed Proto-Drake: Curved Horns (MM!)
+						i(197365),	-- Renewed Proto-Drake: Finned Crest (MM!)
 					},
 				}),
 				q(68798, {	-- Dragon Glyphs and You
@@ -317,7 +317,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 194174 },	-- Amella
 					["coord"] = { 62.2, 70.5, THE_WAKING_SHORES },
 					["g"] = {
-						i(197406),	-- Renewed Proto-Drake: Spined Tail (DM!)
+						i(197406),	-- Renewed Proto-Drake: Spined Tail (MM!)
 					},
 				}),
 				q(66931, {	-- Who Brought the Ruckus?
@@ -377,7 +377,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 191895 },	-- Majordomo Selistra
 					["coord"] = { 53.7, 80.2, THE_WAKING_SHORES },
 					["g"] = {
-						i(197378),	-- Renewed Proto-Drake: Subtle Horns (DM!)
+						i(197378),	-- Renewed Proto-Drake: Subtle Horns (MM!)
 					},
 				}),
 				------ Chapter 3 ------
@@ -772,7 +772,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 191011 },	-- Keshki
 					["coord"] = { 65.3, 63.7, THE_WAKING_SHORES },
 					["g"] = {
-						i(197399),	-- Renewed Proto-Drake: Razor Snout (DM!)
+						i(197399),	-- Renewed Proto-Drake: Razor Snout (MM!)
 					},
 				}),
 				q(66879, {	-- Hornstrider Havoc
@@ -1029,7 +1029,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 194076 },	-- Veritistrasz
 					["coord"] = { 57.8, 66.7, THE_WAKING_SHORES },
 					["g"] = {
-						i(197361),	-- Renewed Proto-Drake: Spiked Crest (DM!)
+						i(197361),	-- Renewed Proto-Drake: Spiked Crest (MM!)
 						i(198979),	-- Time Capsule Letter
 						i(198430),	-- Time Capsule (QI!)
 					},

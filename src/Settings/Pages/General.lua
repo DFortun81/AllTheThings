@@ -730,12 +730,12 @@ if app.GameBuildVersion >= 60000 then
 				:AlignAfter(accwideCheckboxRunecarvingPowers)
 
 			if app.GameBuildVersion >= 90000 then
-				-- Skyriding Manuscripts (Dragonflight+)
-				local accwideCheckboxDrakewatcherManuscripts =
+				-- Mount Mods (Dragonflight+)
+				local accwideCheckboxMountMods =
 				child:CreateForcedAccountWideCheckbox()
 					:AlignBelow(accwideCheckboxRunecarvingPowers)
-				child:CreateTrackingCheckbox("DRAKEWATCHERMANUSCRIPTS", "DrakewatcherManuscripts", true)
-					:AlignAfter(accwideCheckboxDrakewatcherManuscripts)
+				child:CreateTrackingCheckbox("MOUNTMODS", "MountMods", true)
+					:AlignAfter(accwideCheckboxMountMods)
 			end
 		end
 	end

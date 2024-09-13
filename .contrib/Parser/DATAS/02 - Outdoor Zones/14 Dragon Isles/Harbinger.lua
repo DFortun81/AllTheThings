@@ -95,7 +95,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }
 			["provider"] = { "n", 214657 },	-- Locus-Walker
 			["coord"] = { 50.2, 75.2, TELOGRUS_RIFT },
 			["groups"] = {
-				i(213561),	-- Winding Slitherdrake: Void Scales (DM!)
+				i(213561),	-- Winding Slitherdrake: Void Scales (MM!)
                 ach(40382), -- Hunt the Harbinger
 			},
 		}),

@@ -994,11 +994,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["g"] = appendGroups(QUANTUM_GROUP, {
 						ach(18704),	-- Dawn of the Infinite: Murozond's Rise
 						i(206145),	-- Mysterious Time Relic (QI!)
-						i(208102),	-- Cliffside Wylderdrake: Visage of the Infinite (DM!)
-						i(208103),	-- Highland Drake: Visage of the Infinite (DM!)
-						i(208104),	-- Renewed Proto-Drake: Visage of the Infinite (DM!)
-						i(208105),	-- Windborne Velocidrake: Visage of the Infinite (DM!)
-						i(208106),	-- Winding Slitherdrake: Visage of the Infinite (DM!)
+						i(208102),	-- Cliffside Wylderdrake: Visage of the Infinite (MM!)
+						i(208103),	-- Highland Drake: Visage of the Infinite (MM!)
+						i(208104),	-- Renewed Proto-Drake: Visage of the Infinite (MM!)
+						i(208105),	-- Windborne Velocidrake: Visage of the Infinite (MM!)
+						i(208106),	-- Winding Slitherdrake: Visage of the Infinite (MM!)
 						i(207874),	-- Belt of the Eternal Struggle
 						i(207945),	-- Chrono-Lord's Wingspan
 						i(207951),	-- Displaced Trooper's Gauntlets
@@ -1343,11 +1343,11 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					["g"] = appendGroups(QUANTUM_GROUP, {
 						ach(18704),	-- Dawn of the Infinite: Murozond's Rise
 						i(206145),	-- Mysterious Time Relic (QI!)
-						i(208102),	-- Cliffside Wylderdrake: Visage of the Infinite (DM!)
-						i(208103),	-- Highland Drake: Visage of the Infinite (DM!)
-						i(208104),	-- Renewed Proto-Drake: Visage of the Infinite (DM!)
-						i(208105),	-- Windborne Velocidrake: Visage of the Infinite (DM!)
-						i(208106),	-- Winding Slitherdrake: Visage of the Infinite (DM!)
+						i(208102),	-- Cliffside Wylderdrake: Visage of the Infinite (MM!)
+						i(208103),	-- Highland Drake: Visage of the Infinite (MM!)
+						i(208104),	-- Renewed Proto-Drake: Visage of the Infinite (MM!)
+						i(208105),	-- Windborne Velocidrake: Visage of the Infinite (MM!)
+						i(208106),	-- Winding Slitherdrake: Visage of the Infinite (MM!)
 						i(207874),	-- Belt of the Eternal Struggle
 						i(207945),	-- Chrono-Lord's Wingspan
 						i(207951),	-- Displaced Trooper's Gauntlets

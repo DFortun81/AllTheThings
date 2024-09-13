@@ -73,8 +73,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						i(193662),	-- Densified Ooze Tassets
 						i(193660),	-- Idol of Pure Decay
 						i(193664),	-- Rot-Carved Totemic Shank
-						i(197396),	-- Renewed Proto-Drake: Skyterror Pattern (DM!)
-						i(197598),	-- Windborne Velocidrake: Gray Hair (DM!)
+						i(197396),	-- Renewed Proto-Drake: Skyterror Pattern (MM!)
+						i(197598),	-- Windborne Velocidrake: Gray Hair (MM!)
 					},
 				}),
 			}),

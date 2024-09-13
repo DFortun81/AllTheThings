@@ -479,16 +479,16 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					17492,	-- Zaralek Cavern Racing Completionist
 				}},
 				["g"] = {
-					i(207776),	-- Grotto Netherwing Drake: Black Scales (DM!)
+					i(207776),	-- Grotto Netherwing Drake: Black Scales (MM!)
 				},
 			})),
 			n(WORLD_QUESTS, {
 				i(204359,	-- Reach Racer's Purse
 				bubbleDownSelf({ ["timeline"] = { ADDED_10_0_7 } }, {
-					i(197002),	-- Cliffside Wylderdrake: Flared Cheek (DM!)
-					i(197124),	-- Highland Drake: Swept Horns (DM!)
-					i(202274),	-- Renewed Proto-Drake: Plated Brow (DM!)
-					i(197594),	-- Windborne Velocidrake: Small Ears (DM!)
+					i(197002),	-- Cliffside Wylderdrake: Flared Cheek (MM!)
+					i(197124),	-- Highland Drake: Swept Horns (MM!)
+					i(202274),	-- Renewed Proto-Drake: Plated Brow (MM!)
+					i(197594),	-- Windborne Velocidrake: Small Ears (MM!)
 				})),
 			}),
 			n(WORLD_QUESTS, sharedData({

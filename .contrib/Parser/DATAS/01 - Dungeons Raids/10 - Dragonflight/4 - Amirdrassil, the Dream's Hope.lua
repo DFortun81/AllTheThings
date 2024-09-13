@@ -1040,7 +1040,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 				}),
 				BossOnly(FYRAKK, {
 					i(210871),	-- Greater Ember of Fyr'alath
-					i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing (DM!)
+					i(210536),	-- Renewed Proto-Drake: Embodiment of the Blazing (MM!)
 					i(207728, {	-- Fyr'alath the Dreamrender
 						["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 						["g"] = {
@@ -1401,7 +1401,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					q(78876, bubbleDownSelf({["timeline"] = { ADDED_10_2_0, REMOVED_TWW_LAUNCH } }, {	-- A Glowing Memento
 						["provider"] = { "i", 211375 },	-- Everglowing Ember
 						["g"] = {
-							i(210537),	-- Renewed Proto-Drake: Embodiment of Shadowflame (DM!)
+							i(210537),	-- Renewed Proto-Drake: Embodiment of Shadowflame (MM!)
 						},
 					})),
 				}),

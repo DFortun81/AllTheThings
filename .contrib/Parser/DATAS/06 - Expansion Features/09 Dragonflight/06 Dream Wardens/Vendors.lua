@@ -13,13 +13,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}, {	-- RENOWN 4 --
 					}, {	-- RENOWN 5 --
 					}, {	-- RENOWN 6 --
-						i(210482, {	-- Flourishing Whimsydrake: Back Fins (DM!)
+						i(210482, {	-- Flourishing Whimsydrake: Back Fins (MM!)
 							["cost"] = { { "c", DRAGON_SUPPLIES, 225 } },
 						}),
-						i(210483, {	-- Flourishing Whimsydrake: Ridged Brow (DM!)
+						i(210483, {	-- Flourishing Whimsydrake: Ridged Brow (MM!)
 							["cost"] = { { "c", DRAGON_SUPPLIES, 225 } },
 						}),
-						i(210484, {	-- Flourishing Whimsydrake: Underbite Snout (DM!)
+						i(210484, {	-- Flourishing Whimsydrake: Underbite Snout (MM!)
 							["cost"] = { { "c", DRAGON_SUPPLIES, 225 } },
 						}),
 					}, {	-- RENOWN 7 --
@@ -41,13 +41,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}, {	-- RENOWN 11 --
 					}, {	-- RENOWN 12 --
 					}, {	-- RENOWN 13 --
-						i(210485, {	-- Flourishing Whimsydrake: Long Snout (DM!)
+						i(210485, {	-- Flourishing Whimsydrake: Long Snout (MM!)
 							["cost"] = { { "c", DRAGON_SUPPLIES, 450 } },
 						}),
-						i(210487, {	-- Flourishing Whimsydrake: Neck Fins (DM!)
+						i(210487, {	-- Flourishing Whimsydrake: Neck Fins (MM!)
 							["cost"] = { { "c", DRAGON_SUPPLIES, 450 } },
 						}),
-						i(210486, {	-- Flourishing Whimsydrake: Horns (DM!)
+						i(210486, {	-- Flourishing Whimsydrake: Horns (MM!)
 							["cost"] = { { "c", DRAGON_SUPPLIES, 450 } },
 						}),
 					}, {	-- RENOWN 14 --
@@ -104,10 +104,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}, {	-- RENOWN 18 --
 						i(211495),	-- Dreambound Augment Rune
 					}, {	-- RENOWN 19 --
-						i(210479, {	-- Flourishing Whimsydrake: Night Scales (DM!)
+						i(210479, {	-- Flourishing Whimsydrake: Night Scales (MM!)
 							["cost"] = { { "c", DRAGON_SUPPLIES, 1250 } },
 						}),
-						i(210481, {	-- Flourishing Whimsydrake: Sunset Scales (DM!)
+						i(210481, {	-- Flourishing Whimsydrake: Sunset Scales (MM!)
 							["cost"] = { { "c", DRAGON_SUPPLIES, 1250 } },
 						}),
 					}, {	-- RENOWN 20 --

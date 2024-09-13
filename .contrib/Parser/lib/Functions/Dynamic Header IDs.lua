@@ -271,6 +271,7 @@ HeaderAssignments = {
 	["Miscellaneous"] = -1000264,
 	["Monster Hunting"] = -1000277,
 	["Monthly Reward"] = -1000367,
+	["Mount Mods"] = -1001032,
 	["Mythic+"] = -1000047,
 	["Neck"] = -1000068,
 	["Nether Disruptor"] = -1000935,
@@ -520,4 +521,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001032;
+NextHeaderID = -1001033;

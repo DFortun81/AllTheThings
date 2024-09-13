@@ -422,7 +422,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					["provider"] = { "n", 202523 },	-- Ebyssian
 					["coord"] = { 53.6, 30.2, ZARALEK_CAVERN },
 					["g"] = {
-						i(203330),	-- Winding Slitherdrake: Swept Horns (DM!)
+						i(203330),	-- Winding Slitherdrake: Swept Horns (MM!)
 					},
 				}),
 				q(74563, {	-- Worst of the Worst

@@ -201,7 +201,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(197646),	-- Ohn'ir Initiate Hood
 						i(197647),	-- Shikaar Scout Helm
 						i(197648),	-- Teerai Watcher Hood
-						i(197405),	-- Renewed Proto-Drake: Maned Tail (DM!)
+						i(197405),	-- Renewed Proto-Drake: Maned Tail (MM!)
 					},
 				}),
 				q(66025, {	-- The Nokhud Threat
@@ -397,7 +397,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 22.1, 51.0, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(197672),	-- Emerald Shroud of Loyalty
-						i(197375),	-- Renewed Proto-Drake: Curled Horns (DM!)
+						i(197375),	-- Renewed Proto-Drake: Curled Horns (MM!)
 					},
 				}),
 				------ Continues in Azure Span ------
@@ -883,7 +883,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 66.3, 24.3, OHNAHRAN_PLAINS },
 					["g"] = {
 						i(200278),	-- Drake Archaeologist's Shawl
-						i(197407),	-- Renewed Proto-Drake: Spiked Throat (DM!)
+						i(197407),	-- Renewed Proto-Drake: Spiked Throat (MM!)
 						i(198354),	-- The Black Locus
 					},
 				}),

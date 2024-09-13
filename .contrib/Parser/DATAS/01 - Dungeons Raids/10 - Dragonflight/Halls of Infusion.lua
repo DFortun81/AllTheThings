@@ -70,8 +70,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						i(212682, {	-- Water's Beating Heart
 							["timeline"] = { ADDED_10_2_6 },
 						}),
-						i(196975),	-- Cliffside Wylderdrake: Head Fin (DM!)
-						i(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern (DM!)
+						i(196975),	-- Cliffside Wylderdrake: Head Fin (MM!)
+						i(197007),	-- Cliffside Wylderdrake: Wide Stripes Pattern (MM!)
 					},
 				}),
 			}),

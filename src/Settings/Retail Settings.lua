@@ -10,7 +10,7 @@ local Things = {
 	"CharacterUnlocks",
 	"Conduits",
 	"Deaths",
-	"DrakewatcherManuscripts",
+	"MountMods",
 	"Exploration",
 	"FlightPaths",
 	"Followers",
@@ -62,7 +62,7 @@ local GeneralSettingsBase = {
 		["Thing:BattlePets"] = true,
 		["Thing:CharacterUnlocks"] = app.IsRetail,	-- CRIEVE NOTE: This class might be up to the chopping block with a thing I have on my todo list. I'll leave it for now.
 		["Thing:Conduits"] = app.GameBuildVersion >= 100000,
-		["Thing:DrakewatcherManuscripts"] = app.GameBuildVersion >= 100000,
+		["Thing:MountMods"] = app.GameBuildVersion >= 100000,
 		["Thing:Exploration"] = app.IsClassic,	-- CRIEVE NOTE: For now, until Blizzard fixes their broken Retail version of the exploration API.
 		["Thing:FlightPaths"] = true,
 		["Thing:Followers"] = app.GameBuildVersion >= 60000,

@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							15856,	-- Tyrhold Trial: Silver
 						}},
 						["g"] = {
-							i(196987),	-- Cliffside Wylderdrake: Blonde Hair (DM!)
+							i(196987),	-- Cliffside Wylderdrake: Blonde Hair (MM!)
 						},
 					}),
 					ach(15926, {	-- Thaldraszus: Gold
@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							15859,	-- Tyrhold Trial Advanced: Silver
 						}},
 						["g"] = {
-							i(196966),	-- Cliffside Wylderdrake: Gold and Orange Armor (DM!)
+							i(196966),	-- Cliffside Wylderdrake: Gold and Orange Armor (MM!)
 						},
 					}),
 					ach(15938, {	-- Thaldraszus Advanced: Gold

@@ -184,9 +184,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						["g"] = {
 							i(210059),	-- Winter Night Dreamsaber (MOUNT!) / should be from any dreamseed (according to blue post)
 							i(210174),	-- Formula: Illusory Adornment: Dreams (RECIPE!)
-							i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back (DM!) / also was looted from purple
-							i(207772),	-- Grotto Netherwing Drake: Long Horns (DM!)
-							i(207769),	-- Grotto Netherwing Drake: Outcast Pattern (DM!)
+							i(207759),	-- Grotto Netherwing Drake: Cluster Spiked Back (MM!) / also was looted from purple
+							i(207772),	-- Grotto Netherwing Drake: Long Horns (MM!)
+							i(207769),	-- Grotto Netherwing Drake: Outcast Pattern (MM!)
 							i(210241),	-- Recipe: Dreamwalker's Healing Potion (RECIPE!)
 							i(210242),	-- Recipe: Slumbering Peacebloom Tea (RECIPE!)
 							i(210490),	-- Technique: Vantus Rune: Amirdrassil, the Dream's Hope (RECIPE!)
@@ -259,7 +259,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 						filter(MOUNTS, {
 							i(209947),	-- Blossoming Dreamstag (MOUNT!)
 							i(210058),	-- Evening Sun Dreamsaber (MOUNT!)
-							i(207764),	-- Grotto Netherwing Drake: Head Spike (DM!)
+							i(207764),	-- Grotto Netherwing Drake: Head Spike (MM!)
 							i(210057),	-- Morning Flourish Dreamsaber (MOUNT!)
 							i(209950),	-- Rekindled Dreamstag (MOUNT!)
 							i(210775),	-- Snowfluff Dreamtalon (MOUNT!)

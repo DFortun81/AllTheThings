@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							17475,	-- Sulfur Sprint: Silver
 						}},
 						["g"] = {
-							i(203325),	-- Winding Slitherdrake: Red Hair (DM!)
+							i(203325),	-- Winding Slitherdrake: Red Hair (MM!)
 						},
 					}),
 					ach(17485, {	-- Zaralek Cavern: Gold
@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 							17478,	-- Sulfur Sprint Advanced: Silver
 						}},
 						["g"] = {
-							i(203303),	-- Winding Slitherdrake: Red and Gold Armor (DM!)
+							i(203303),	-- Winding Slitherdrake: Red and Gold Armor (MM!)
 						},
 					}),
 					ach(17488, {	-- Zaralek Cavern Advanced: Gold
@@ -472,14 +472,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 			n(WORLD_QUESTS, {
 				i(205226,	-- Cavern Racer's Purse
 					bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
-					i(196978),	-- Cliffside Wylderdrake: Small Head Spikes (DM!)
-					i(196997),	-- Cliffside Wylderdrake: Split Horns (DM!)
-					i(197104),	-- Highland Drake: Tapered Chin (DM!)
-					i(202280),	-- Renewed Proto-Drake: Pronged Tail (DM!)
-					i(203361),	-- Winding Slitherdrake: Finned Tip Tail (DM!)
-					i(203348),	-- Winding Slitherdrake: Pointed Nose (DM!)
-					i(203317),	-- Winding Slitherdrake: Small Finned Crest (DM!)
-					i(203342),	-- Winding Slitherdrake: Triple Jaw Horns (DM!)
+					i(196978),	-- Cliffside Wylderdrake: Small Head Spikes (MM!)
+					i(196997),	-- Cliffside Wylderdrake: Split Horns (MM!)
+					i(197104),	-- Highland Drake: Tapered Chin (MM!)
+					i(202280),	-- Renewed Proto-Drake: Pronged Tail (MM!)
+					i(203361),	-- Winding Slitherdrake: Finned Tip Tail (MM!)
+					i(203348),	-- Winding Slitherdrake: Pointed Nose (MM!)
+					i(203317),	-- Winding Slitherdrake: Small Finned Crest (MM!)
+					i(203342),	-- Winding Slitherdrake: Triple Jaw Horns (MM!)
 				})),
 			}),
 			n(WORLD_QUESTS, sharedData({

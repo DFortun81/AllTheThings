@@ -2200,8 +2200,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.FEAST_OF_WINTER_VEIL, n(FEAST_OF_WINTER_V
 						i(209859, {	-- Festive Trans-Dimensional Bird Whistle (TOY!)
 							["timeline"] = { ADDED_10_2_0 },
 						}),
-						-- Manuscripts
-						i(210432, {	-- Highland Drake: Winter Veil Armor (DM!)
+						-- Mount Mods
+						i(210432, {	-- Highland Drake: Winter Veil Armor (MM!)
 							["timeline"] = ADDED_10_2_0,
 						}),
 						-- Illusions

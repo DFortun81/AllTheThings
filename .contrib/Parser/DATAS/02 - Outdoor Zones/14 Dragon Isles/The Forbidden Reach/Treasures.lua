@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					{ 53.6, 76.7, THE_FORBIDDEN_REACH },
 				},
 				["g"] = {
-					i(197000),	-- Cliffside Wylderdrake: Coiled Horns (DM!)
+					i(197000),	-- Cliffside Wylderdrake: Coiled Horns (MM!)
 				},
 			}),
 			o(385834, {	-- Journal Entry: Experiments

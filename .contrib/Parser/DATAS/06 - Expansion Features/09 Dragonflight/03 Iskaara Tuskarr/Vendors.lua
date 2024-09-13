@@ -189,23 +189,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 					}, {	-- RENOWN 7 --
-						i(197101, {	-- Highland Drake: Bushy Brow (DM!)
+						i(197101, {	-- Highland Drake: Bushy Brow (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 50 },
 							},
 						}),
-						i(197155, {	-- Highland Drake: Finned Neck (DM!)
+						i(197155, {	-- Highland Drake: Finned Neck (MM!)
 							["timeline"] = { ADDED_10_0_7 },
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 50 },
 							},
 						}),
-						i(197114, {	-- Highland Drake: Multi-Horned Head (DM!)
+						i(197114, {	-- Highland Drake: Multi-Horned Head (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 50 },
 							},
 						}),
-						i(197132, {	-- Highland Drake: Spiked Cheek (DM!)
+						i(197132, {	-- Highland Drake: Spiked Cheek (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 50 },
 							},
@@ -293,17 +293,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								{ "c", DRAGON_SUPPLIES, 25 },
 							},
 						}),
-						i(197153, {	-- Highland Drake: Bladed Tail (DM!)
+						i(197153, {	-- Highland Drake: Bladed Tail (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 100 },
 							},
 						}),
-						i(197139, {	-- Highland Drake: Large Spotted Pattern (DM!)
+						i(197139, {	-- Highland Drake: Large Spotted Pattern (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 100 },
 							},
 						}),
-						i(197123, {	-- Highland Drake: Thorn Horns (DM!)
+						i(197123, {	-- Highland Drake: Thorn Horns (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 100 },
 							},
@@ -487,25 +487,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 					}, {	-- RENOWN 19 --
-						i(197012, {	-- Cliffside Wylderdrake: Blue Scales (DM!)
+						i(197012, {	-- Cliffside Wylderdrake: Blue Scales (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 400 },
 								{ "i", AWAKENED_FROST, 1 },
 							},
 						}),
-						i(197390, {	-- Renewed Proto-Drake: Blue Scales (DM!)
+						i(197390, {	-- Renewed Proto-Drake: Blue Scales (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 400 },
 								{ "i", AWAKENED_FROST, 1 },
 							},
 						}),
-						i(197612, {	-- Windborne Velocidrake: Blue Scales (DM!)
+						i(197612, {	-- Windborne Velocidrake: Blue Scales (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 400 },
 								{ "i", AWAKENED_FROST, 1 },
 							},
 						}),
-						i(203350, {	-- Winding Slitherdrake: Blue Scales (DM!)
+						i(203350, {	-- Winding Slitherdrake: Blue Scales (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 400 },
 								{ "i", AWAKENED_FROST, 1 },
@@ -775,19 +775,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
 				["sym"] = {{"select","itemID",
 					------ RENOWN 7 ------
-					197101,	-- Highland Drake: Bushy Brow (DM!)
-					197155,	-- Highland Drake: Finned Neck (DM!)
-					197114,	-- Highland Drake: Multi-Horned Head (DM!)
-					197132,	-- Highland Drake: Spiked Cheek (DM!)
+					197101,	-- Highland Drake: Bushy Brow (MM!)
+					197155,	-- Highland Drake: Finned Neck (MM!)
+					197114,	-- Highland Drake: Multi-Horned Head (MM!)
+					197132,	-- Highland Drake: Spiked Cheek (MM!)
 					------ RENOWN 13 ------
-					197612,	-- Windborne Velocidrake: Blue Scales (DM!)
-					197390,	-- Renewed Proto-Drake: Blue Scales (DM!)
-					197012,	-- Cliffside Wylderdrake: Blue Scales (DM!)
+					197612,	-- Windborne Velocidrake: Blue Scales (MM!)
+					197390,	-- Renewed Proto-Drake: Blue Scales (MM!)
+					197012,	-- Cliffside Wylderdrake: Blue Scales (MM!)
 					------ RENOWN 19 ------
-					197123,	-- Highland Drake: Thorn Horns (DM!)
-					197139,	-- Highland Drake: Large Spotted Pattern (DM!)
-					197153,	-- Highland Drake: Bladed Tail (DM!)
-					203350, -- Winding Slitherdrake: Blue Scales (DM!)
+					197123,	-- Highland Drake: Thorn Horns (MM!)
+					197139,	-- Highland Drake: Large Spotted Pattern (MM!)
+					197153,	-- Highland Drake: Bladed Tail (MM!)
+					203350, -- Winding Slitherdrake: Blue Scales (MM!)
 				}},
 			}),
 			n(186554, {	-- Nunvuq

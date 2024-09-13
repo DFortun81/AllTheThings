@@ -3085,7 +3085,7 @@ for i,o in ipairs({
 				-- #if BEFORE 10.0.5
 				["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.",
 				-- #else
-				["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.\nThe first Heart-Shaped Box you get per day per |CFFFF0000account|r has a vastly increased chance to contain collectables such as manuscripts, mounts, pets, and toys.",
+				["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.\nThe first Heart-Shaped Box you get per day per |CFFFF0000account|r has a vastly increased chance to contain collectables such as mount mods, mounts, pets, and toys.",
 				-- #endif
 				["timeline"] = { ADDED_3_3_0 },
 				-- Minimum level this box drops (not 100% sure)
@@ -3129,7 +3129,7 @@ for i,o in ipairs({
 					i(50471, {	-- The Heartbreaker (TOY!)
 						["timeline"] = { ADDED_3_3_0 },
 					}),
-					i(211812, {	-- Renewed Proto-Drake: Love Armor (DM!)
+					i(211812, {	-- Renewed Proto-Drake: Love Armor (MM!)
 						["timeline"] = { ADDED_10_2_5 },
 					}),
 				},

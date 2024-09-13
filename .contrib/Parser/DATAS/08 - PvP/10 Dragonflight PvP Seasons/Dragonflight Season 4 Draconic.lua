@@ -25,7 +25,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			ach(19509),		-- Elite: Dragonflight Season 4
 			ach(19490, {	-- Gladiator: Dragonflight Season 4
 				mount(424539),	-- Draconic Gladiator's Drake (MOUNT!)
-				i(216710),	-- Highland Drake: Embodiment of the Draconic Gladiator (DM!)
+				i(216710),	-- Highland Drake: Embodiment of the Draconic Gladiator (MM!)
 			}),
 			ach(19503),		-- Draconic Gladiator's Drake
 			ach(19454, {	-- Draconic Gladiator: Dragonflight Season 4
