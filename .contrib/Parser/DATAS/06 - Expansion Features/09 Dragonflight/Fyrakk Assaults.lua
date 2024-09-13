@@ -39,7 +39,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						i(205003),	-- Ambre (PET!)
 						i(205002),	-- Blaise (PET!)
 					}),
-					n(MOUNT_MODS, {
+					n(DRAKEWATCHER_MANUSCRIPTS, {
 						i(197348),	-- Renewed Proto-Drake: Black and Red Armor (MM!) [Discord]
 						i(202277),	-- Renewed Proto-Drake: Bruiser Horns (MM!) [Mount Discord/Runaway]
 					}),

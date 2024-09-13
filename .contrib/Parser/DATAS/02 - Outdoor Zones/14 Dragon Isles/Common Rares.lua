@@ -337,7 +337,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 		-- This will automatically cause these Items to list themselves under any matching Creature of their ["crs"] list when that Creature is loaded in a ATT list
 		-- Technically, further Header organization under the 'Drops' Header should still work properly for automatic filling of the raw Items
 		n(DROPS, {	-- Items which can drop from multiple, specifically-tagged Creatures
-			n(MOUNT_MODS, {
+			n(DRAKEWATCHER_MANUSCRIPTS, {
 				i(196991, {	-- Cliffside Wylderdrake: Black Horns (MM!)
 					["crs"] = RARE_GROUP_GIANT,
 				}),

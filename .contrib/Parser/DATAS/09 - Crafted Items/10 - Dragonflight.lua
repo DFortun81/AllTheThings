@@ -1730,7 +1730,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			r(392944),	-- Draconic Treatise on Skinning
 			r(383520),	-- Draconic Treatise on Tailoring
 		}),
-		n(MOUNT_MODS, {
+		n(DRAKEWATCHER_MANUSCRIPTS, {
 			i(196981),	-- Cliffside Wylderdrake: Conical Head (MM!)
 			i(196988),	-- Cliffside Wylderdrake: Red Hair (MM!)
 			i(196963),	-- Cliffside Wylderdrake: Silver and Blue Armor (MM!)
