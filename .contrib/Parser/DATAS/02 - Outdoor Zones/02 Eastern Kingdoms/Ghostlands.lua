@@ -1407,53 +1407,34 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				n(16528, {	-- Provisioner Vredigar
 					["coord"] = { 47.6, 32.2, GHOSTLANDS },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(22990, {	-- Tranquillien Champion's Cloak
-							["minReputation"] = { FACTION_TRANQUILLIEN, EXALTED },	-- Tranquillien, Exalted.
-						}),
-						i(22986, {	-- Apothecary's Robe
-							["minReputation"] = { FACTION_TRANQUILLIEN, REVERED },	-- Tranquillien, Revered.
-						}),
-						i(22987, {	-- Deathstalker's Vest
-							["minReputation"] = { FACTION_TRANQUILLIEN, REVERED },	-- Tranquillien, Revered.
-						}),
-						i(132572, {	-- Deathstalker's Hauberk
-							["minReputation"] = { FACTION_TRANQUILLIEN, REVERED },	-- Tranquillien, Revered.
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(22985, {	-- Suncrown Breastplate
-							["minReputation"] = { FACTION_TRANQUILLIEN, REVERED },	-- Tranquillien, Revered.
-						}),
-						i(28155, {	-- Apothecary's Waistband
-							["minReputation"] = { FACTION_TRANQUILLIEN, HONORED },	-- Tranquillien, Honored.
-						}),
-						i(28158, {	-- Batskin Belt
-							["minReputation"] = { FACTION_TRANQUILLIEN, HONORED },	-- Tranquillien, Honored.
-						}),
-						i(28162, {	-- Tranquillien Defender's Girdle
-							["minReputation"] = { FACTION_TRANQUILLIEN, HONORED },	-- Tranquillien, Honored.
-						}),
-						i(132573, {	-- Tranquillen Pathfinder's Cinch
-							["minReputation"] = { FACTION_TRANQUILLIEN, HONORED },	-- Tranquillien, Honored.
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(28164, {	-- Tranquillien Flamberge
-							["minReputation"] = { FACTION_TRANQUILLIEN, FRIENDLY },	-- Tranquillien, Friendly.
-						}),
-						i(22991, {	-- Apprentice Boots
-							["minReputation"] = { FACTION_TRANQUILLIEN, FRIENDLY },	-- Tranquillien, Friendly.
-						}),
-						i(22992, {	-- Bogwalker Boots
-							["minReputation"] = { FACTION_TRANQUILLIEN, FRIENDLY },	-- Tranquillien, Friendly.
-						}),
-						i(22993, {	-- Volunteer's Greaves
-							["minReputation"] = { FACTION_TRANQUILLIEN, FRIENDLY },	-- Tranquillien, Friendly.
-						}),
-						i(132571, {	-- Woodrunner's Footpads
-							["minReputation"] = { FACTION_TRANQUILLIEN, FRIENDLY },	-- Tranquillien, Friendly.
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-					},
+					["g"] = bubbleDownClassicRep(FACTION_TRANQUILLIEN, {
+						{		-- Neutral
+						}, {	-- Friendly
+							i(22991),	-- Apprentice Boots
+							i(22992),	-- Bogwalker Boots
+							i(28164),	-- Tranquillien Flamberge
+							i(22993),	-- Volunteer's Greaves
+							i(132571, {	-- Woodrunner's Footpads
+								["timeline"] = { ADDED_7_0_3 },
+							}),
+						}, {	-- Honored
+							i(28155),	-- Apothecary's Waistband
+							i(28158),	-- Batskin Belt
+							i(28162),	-- Tranquillien Defender's Girdle
+							i(132573, {	-- Tranquillen Pathfinder's Cinch
+								["timeline"] = { ADDED_7_0_3 },
+							}),
+						}, {	-- Revered
+							i(22986),	-- Apothecary's Robe
+							i(22987),	-- Deathstalker's Vest
+							i(132572, {	-- Deathstalker's Hauberk
+								["timeline"] = { ADDED_7_0_3 },
+							}),
+							i(22985),	-- Suncrown Breastplate
+						}, {	-- Exalted
+							i(22990),	-- Tranquillien Champion's Cloak
+						},
+					}),
 				}),
 				n(16224, {	-- Rathis Tomber <Trade Supplies>
 					["coord"] = { 47.2, 28.6, GHOSTLANDS },

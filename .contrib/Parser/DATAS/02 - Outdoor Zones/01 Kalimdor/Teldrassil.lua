@@ -355,13 +355,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 							["coord"] = { 46.2, 73.5, SHADOWGLEN },
 							["timeline"] = { ADDED_4_0_3 },
-							["races"] = {
+							["races"] =
 								-- #if AFTER 7.2.5
 								ALLIANCE_ONLY,
 								-- #else
-								NIGHTELF
+								{ NIGHTELF },
 								-- #endif
-							},
 						}),
 						-- #if SEASON_OF_DISCOVERY
 						applyclassicphase(SOD_PHASE_ONE, q(77571, {	-- Relics of the Kaldorei

@@ -20,113 +20,110 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 			}),
 			n(150716, {	-- Stolen Royal Vendorbot
 				["coord"] = { 73.7, 36.9, MECHAGON },
-				["g"] = {
-					i(168400, {	-- Null Force Containment Unit (Rank 1)
-						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, FRIENDLY },
-						["cost"] = {
-							{ "i", 169610, 2 },	-- 2x Spare Crate
-							{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
-						},
-					}),
-					i(168566, {	-- Null Force Cooling Unit (Rank 2)
-						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, HONORED },
-						["cost"] = {
-							{ "i", 169610, 8 },	-- 8x Spare Crate
-							{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
-						},
-					}),
-					i(168568, {	-- Null Force Nullifier (Rank 3)
-						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, REVERED },
-						["cost"] = {
-							{ "i", 169610, 30 },	-- 30x Spare Crate
-							{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
-						},
-					}),
-					i(168858, {	-- Titan Purification Protocols (Rank 1)
-						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, FRIENDLY },
-						["cost"] = {
-							{ "i", 169610, 2 },	-- 2x Spare Crate
-							{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
-						},
-					}),
-					i(168859, {	-- Targeted Purification Protocols (Rank 2)
-						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, HONORED },
-						["cost"] = {
-							{ "i", 169610, 8 },	-- 8x Spare Crate
-							{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
-						},
-					}),
-					i(168860, {	-- Enhanced Purification Protocols (Rank 3)
-						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, REVERED },
-						["cost"] = {
-							{ "i", 169610, 30 },	-- 30x Spare Crate
-							{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
-						},
-					}),
-					i(168932, {	-- Reactive Existence Battery (Rank 1)
-						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, FRIENDLY },
-						["cost"] = {
-							{ "i", 169610, 2 },	-- 2x Spare Crate
-							{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
-						},
-					}),
-					i(168933, {	-- Enhanced Existence Capacitor (Rank 2)
-						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, HONORED },
-						["cost"] = {
-							{ "i", 169610, 8 },	-- 8x Spare Crate
-							{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
-						},
-					}),
-					i(168934, {	-- Calibrated Existence Gauge (Rank 3)
-						["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, REVERED },
-						["cost"] = {
-							{ "i", 169610, 30 },	-- 30x Spare Crate
-							{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
-						},
-					}),
-					i(169112, {	-- Blueprint: Advanced Adventurer Augment
-						["cost"] = 20480000,	-- 2,048g
-					}),
-					i(168493, {	-- Blueprint: Battle Box
-						["cost"] = 10240000,	-- 1,024g
-					}),
-					i(169134, {	-- Blueprint: Extraordinary Adventurer Augment
-						["cost"] = 20480000,	-- 2,048g
-					}),
-					i(167672),	-- Cyclotronic Blast
-					i(169380, {	-- Mustyfur Snooter (PET!)
-						["cost"] = 5000000,	-- 500g
-					}),
-					i(167693),	-- Neural Autonomy
-					i(169547, {	-- Technique: Contract: Rustbolt Resistance (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(168369, {	-- Recipe: Famine Evaluator And Snack Table [Rank 2] (RECIPE!)
-						["cost"] = 19000000,	-- 1,900g
-					}),
-					i(169108, {	-- Rustbolt Banner (TOY!)
-						["cost"] = 5120000,	-- 512g
-					}),
-					i(168619),	-- Rustbolt Resistance Tabard
-					i(168829, {	-- Rustbolt Resistor (MOUNT!)
-						["cost"] = 5242880000,	-- 524,288g
-					}),
-					i(168660, {	-- Schematic: Blingtron 7000 (RECIPE!)
-						["cost"] = 19000000,	-- 1,900g
-					}),
-					i(168533, {	-- Schematic: Ub3r-Module: P.O.G.O. (RECIPE!)
-						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(168535, {	-- Schematic: Ub3r-Module: Scrap Cannon (RECIPE!)
-						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(168534, {	-- Schematic: Ub3r-Module: Ub3r-Coil (RECIPE!)
-						["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
-						["cost"] = 14000000,	-- 1,400g
-					}),
-				},
+				["g"] = bubbleDownClassicRep(FACTION_RUSTBOLT_RESISTANCE, {
+					{		-- Neutral
+						i(169112, {	-- Blueprint: Advanced Adventurer Augment
+							["cost"] = 20480000,	-- 2,048g
+						}),
+						i(168493, {	-- Blueprint: Battle Box
+							["cost"] = 10240000,	-- 1,024g
+						}),
+						i(169134, {	-- Blueprint: Extraordinary Adventurer Augment
+							["cost"] = 20480000,	-- 2,048g
+						}),
+						i(167672),	-- Cyclotronic Blast
+						i(169380, {	-- Mustyfur Snooter (PET!)
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(167693),	-- Neural Autonomy
+						i(168369, {	-- Recipe: Famine Evaluator And Snack Table [Rank 2] (RECIPE!)
+							["cost"] = 19000000,	-- 1,900g
+						}),
+						i(169108, {	-- Rustbolt Banner (TOY!)
+							["cost"] = 5120000,	-- 512g
+						}),
+						i(168619),	-- Rustbolt Resistance Tabard
+						i(168829, {	-- Rustbolt Resistor (MOUNT!)
+							["cost"] = 5242880000,	-- 524,288g
+						}),
+						i(168660, {	-- Schematic: Blingtron 7000 (RECIPE!)
+							["cost"] = 19000000,	-- 1,900g
+						}),
+						i(168533, {	-- Schematic: Ub3r-Module: P.O.G.O. (RECIPE!)
+							["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(168535, {	-- Schematic: Ub3r-Module: Scrap Cannon (RECIPE!)
+							["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(168534, {	-- Schematic: Ub3r-Module: Ub3r-Coil (RECIPE!)
+							["description"] = "Must be an engineer, have completed the |cFFFFD700Iteration Is Key|r quest, and have a crafted Ub3r-Spanner for this to show up on the vendor.",
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(169547, {	-- Technique: Contract: Rustbolt Resistance (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+					}, {	-- Friendly
+						i(168400, {	-- Null Force Containment Unit (Rank 1)
+							["cost"] = {
+								{ "i", 169610, 2 },	-- 2x Spare Crate
+								{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
+							},
+						}),
+						i(168932, {	-- Reactive Existence Battery (Rank 1)
+							["cost"] = {
+								{ "i", 169610, 2 },	-- 2x Spare Crate
+								{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
+							},
+						}),
+						i(168858, {	-- Titan Purification Protocols (Rank 1)
+							["cost"] = {
+								{ "i", 169610, 2 },	-- 2x Spare Crate
+								{ "i", 168832, 1 },	-- 1x Galvanic Oscillator
+							},
+						}),
+					}, {	-- Honored
+						i(168933, {	-- Enhanced Existence Capacitor (Rank 2)
+							["cost"] = {
+								{ "i", 169610, 8 },	-- 8x Spare Crate
+								{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
+							},
+						}),
+						i(168566, {	-- Null Force Cooling Unit (Rank 2)
+							["cost"] = {
+								{ "i", 169610, 8 },	-- 8x Spare Crate
+								{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
+							},
+						}),
+						i(168859, {	-- Targeted Purification Protocols (Rank 2)
+							["cost"] = {
+								{ "i", 169610, 8 },	-- 8x Spare Crate
+								{ "i", 168832, 4 },	-- 4x Galvanic Oscillator
+							},
+						}),
+					}, {	-- Revered
+						i(168568, {	-- Null Force Nullifier (Rank 3)
+							["cost"] = {
+								{ "i", 169610, 30 },	-- 30x Spare Crate
+								{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
+							},
+						}),
+						i(168860, {	-- Enhanced Purification Protocols (Rank 3)
+							["cost"] = {
+								{ "i", 169610, 30 },	-- 30x Spare Crate
+								{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
+							},
+						}),
+						i(168934, {	-- Calibrated Existence Gauge (Rank 3)
+							["cost"] = {
+								{ "i", 169610, 30 },	-- 30x Spare Crate
+								{ "i", 168832, 6 },		-- 6x Galvanic Oscillator
+							},
+						}),
+					}, {	-- Exalted
+					},
+				}),
 			}),
 		}),
 	}),

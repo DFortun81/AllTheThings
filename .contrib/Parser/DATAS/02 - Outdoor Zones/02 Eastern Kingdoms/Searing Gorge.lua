@@ -76,13 +76,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					en = "This event occurs every 2 hours from Midnight and lasts 60 minutes. While this event is active, Daily Quests will be available in Searing Gorge for the Thorium Brotherhood. Traditionally Thorium Brotherhood can be quite a grind to achieve reputation with so this addition of a Daily Quest Hub will be very welcome.\nWhen the event is active, new NPCs will spawn and some environmental changes will occur to the outside area of Searing Gorge.",
 				},
 			}), bubbleDownSelf({ ["timeline"] = { "added 1.15.3" } }, {
-				n(QUESTS, {
-					q(84360, {	-- Firefighting
-						["qg"] = 14625,	-- Overseer Oilfist <The Thorium Brotherhood>
-						["coord"] = { 38.2, 27.0, SEARING_GORGE },
+				n(QUESTS, sharedData({
 						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 53,
+				}, {
+					q(84360, {	-- Firefighting
+						["qg"] = 14625,	-- Overseer Oilfist <The Thorium Brotherhood>
+						["coord"] = { 38.2, 27.0, SEARING_GORGE },
 						["groups"] = {
 							objective(1, {	-- 0/10 Firelands Invader slain
 								["provider"] = { "n", 228718 },	-- Firelands Invader
@@ -94,9 +95,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(84350, {	-- Grinding Them Down
 						["qg"] = 14628,	-- Evonice Sootsmoker <The Thorium Brotherhood>
 						["coord"] = { 38.2, 27.8, SEARING_GORGE },
-						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
-						["isDaily"] = true,
-						["lvl"] = 53,
 						["groups"] = {
 							objective(1, {	-- 0/10 Obsidian Reaver slain
 								["provider"] = { "n", 228723 },	-- Obsidian Reaver
@@ -107,9 +105,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(84372, {	-- Lava Diving
 						["qg"] = 14627,	-- Hansel Heavyhands <The Thorium Brotherhood>
 						["coord"] = { 38.6, 27.8, SEARING_GORGE },
-						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
-						["isDaily"] = true,
-						["lvl"] = 53,
 						["groups"] = {
 							objective(1, {	-- 0/1 Shimmering Molten Mineral
 								["providers"] = {
@@ -124,9 +119,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(84355, {	-- More Like Lame-bringers!
 						["qg"] = 14626,	-- Taskmaster Scrange <The Thorium Brotherhood>
 						["coord"] = { 38.8, 27.6, SEARING_GORGE },
-						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
-						["isDaily"] = true,
-						["lvl"] = 53,
 						["groups"] = {
 							objective(1, {	-- 0/4 Flamebringer Defender slain
 								["provider"] = { "n", 228727 },	-- Flamebringer Defender
@@ -140,9 +132,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(84356, {	-- Oh, Shiny!
 						["qg"] = 14624,	-- Master Smith Burninate <The Thorium Brotherhood>
 						["coord"] = { 38.6, 28.6, SEARING_GORGE },
-						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
-						["isDaily"] = true,
-						["lvl"] = 53,
 						["groups"] = {
 							objective(1, {	-- 0/8 Flamestone Cluster
 								["provider"] = { "i", 227767 },	-- Flamestone Cluster
@@ -158,9 +147,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(84349, {	-- Priority Target: Duke Searbrand
 						["qg"] = 14634,	-- Lookout Captain Lolo Longstriker <The Thorium Brotherhood>
 						["coord"] = { 37.6, 26.6, SEARING_GORGE },
-						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
-						["isDaily"] = true,
-						["lvl"] = 53,
 						["groups"] = {
 							objective(1, {	-- 0/1 Duke Searbrand slain
 								["provider"] = { "n", 228720 },	-- Duke Searbrand
@@ -172,9 +158,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(84348, {	-- Priority Target: Duke Tectonis
 						["qg"] = 14627,	-- Hansel Heavyhands <The Thorium Brotherhood>
 						["coord"] = { 38.6, 27.8, SEARING_GORGE },
-						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
-						["isDaily"] = true,
-						["lvl"] = 53,
 						["groups"] = {
 							objective(1, {	-- 0/1 Duke Tectonis slain
 								["provider"] = { "n", 228729 },	-- Duke Tectonis
@@ -186,9 +169,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(84359, {	-- Sleepless Nights
 						["qg"] = 14628,	-- Evonice Sootsmoker <The Thorium Brotherhood>
 						["coord"] = { 38.2, 27.8, SEARING_GORGE },
-						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
-						["isDaily"] = true,
-						["lvl"] = 53,
 						["groups"] = {
 							objective(1, {	-- 0/5 Flamebringer Stalker slain
 								["providers"] = {
@@ -202,9 +182,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					q(84351, {	-- Work Smarter, Not Harder
 						["qg"] = 14626,	-- Taskmaster Scrange <The Thorium Brotherhood>
 						["coord"] = { 38.8, 27.6, SEARING_GORGE },
-						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
-						["isDaily"] = true,
-						["lvl"] = 53,
 						["groups"] = {
 							objective(1, {	-- 0/6 Obsidian Power Core
 								["provider"] = { "i", 227743 },	-- Obsidian Power Core
