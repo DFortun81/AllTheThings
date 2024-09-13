@@ -778,8 +778,8 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateInstance(t.instanceID, t);
 		elseif t.currencyID then
 			t = app.CreateCurrencyClass(t.currencyID, t);
-		elseif t.mountModID then
-			t = app.CreateMountMod(t.mountModID, t);
+		elseif t.mountmodID then
+			t = app.CreateMountMod(t.mountmodID, t);
 		elseif t.speciesID then
 			t = app.CreateSpecies(t.speciesID, t);
 		elseif t.objectID then
