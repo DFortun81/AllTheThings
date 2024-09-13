@@ -303,10 +303,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		o(455914, {	-- Mislaid Curiosity
 			["description"] = "Contains Chunk of Companion Experience tokens.",
 			["g"] = {
+				-- First versions
 				i(228071),	-- Chunk of Companion Experience (Uncommon)
 				i(228072),	-- Chunk of Companion Experience (Rare)
 				i(228073),	-- Chunk of Companion Experience (Epic)
-				i(232046),	-- Chunk of Companion Experience (Possibly not from treasure)
+				-- Second versions
+				i(232047),	-- Chunk of Companion Experience (Uncommon)
+				i(232046),	-- Chunk of Companion Experience (Rare)
+				i(232045),	-- Chunk of Companion Experience (Epic)
 			},
 		}),
 	}),

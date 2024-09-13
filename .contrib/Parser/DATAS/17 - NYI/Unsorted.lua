@@ -1201,77 +1201,13 @@ root(ROOTS.Unsorted, {
 				i(228951),	-- Pact Treasure Map
 
 			}),
-			filter(QUEST_ITEMS, {
-				i(228623),	-- Blue's Request
-			}),
 			--
 			i(229005),	-- Cache of Earthen Treasures
 			i(229006),	-- Cache of Earthen Treasures
-			--
-			i(229062),	-- Nisa's Spare Coronet
-			i(229063),	-- Nisa's Spare Wristguards
-			i(229065),	-- Nisa's Spare Gloves
-			i(229066),	-- Nisa's Spare Cassock
-			i(229067),	-- Nisa's Spare Leggings
-			i(229068),	-- Nisa's Spare Shoulderpads
-			i(229069),	-- Nisa's Spare Cloak
-			i(229071),	-- Azra's Spare Gloves
-			i(229072),	-- Azra's Spare Mask
-			i(229074),	-- Azra's Spare Cord
-			i(229076),	-- Azra's Spare Chestguard
-			i(229077),	-- Azra's Spare Shoulderguards
-			i(229078),	-- Aevery's Spare Brigandine
-			i(229079),	-- Aevery's Spare Boots
-			i(229084),	-- Aevery's Spare Belt
-			i(229086),	-- Kyros's Spare Helm
-			i(229087),	-- Kyros's Spare Chestplate
-			i(229088),	-- Kyros's Spare Sabatons
-			i(229089),	-- Kyros's Spare Handguards
-			i(229090),	-- Kyros's Spare Faulds
-			i(229091),	-- Kyros's Spare Shoulder Plates
-			i(229093),	-- Kyros's Spare Cuffs
-			i(229096),	-- The Cleansing Flame's Robes
-			i(229101),	-- The Cleansing Flame's Shoulderpads
-			i(229104),	-- Ironstrike's Vest
-			i(229105),	-- Ironstrike's Waders
-			i(229107),	-- Ironstrike's Headgear
-			i(229108),	-- Ironstrike's Breeches
-			i(229109),	-- Ironstrike's Epaulets
-			i(229110),	-- Ironstrike's Sash
-			i(229112),	-- Flamestonge's Chainmail
-			i(229113),	-- Flamestonge's Striders
-			i(229114),	-- Flamestonge's Grips
-			i(229115),	-- Flamestonge's Coif
-			i(229116),	-- Flamestonge's Greaves
-			i(229117),	-- Flamestonge's Shoulderguards
-			i(229119),	-- Flamestonge's Bracers
-			i(229124),	-- Warstone's Legguards
-			i(229127),	-- Warstone's Armplates
 			i(229129),	-- Cache of Delver's Spoils
 			i(229130),	-- Cache of Delver's Spoils
-			i(229131),	-- Lamplighter Elite's Dagger
-			i(229132),	-- Lamplighter Elite's Ritual Knife
-			i(229133),	-- Lamplighter Elite's Great Mallet
-			i(229134),	-- Lamplighter Elite's Hammer
-			i(229136),	-- Lamplighter Elite's Sword
-			i(229137),	-- Lamplighter Elite's Slugthrower
-			i(229138),	-- Lamplighter Elite's Mace
-			i(229139),	-- Lamplighter Elite's Warhammer
-			i(229140),	-- Lamplighter Elite's Great Splitter
-			i(229141),	-- Lamplighter Elite's Polearm
-			i(229142),	-- Lamplighter Elite's Staff
-			i(229143),	-- Lamplighter Elite's Spellstaff
-			i(229146),	-- Lamplighter Elite's Glaive
-			i(229147),	-- Lamplighter's Polearm
-			i(229148),	-- Lamplighter's Staff
-			i(229149),	-- Lamplighter's Rifle
-			i(229150),	-- Lamplighter's Splitter
-			i(229151),	-- Lamplighter's Hatchet
-			i(229153),	-- Lamplighter's Cudgel
-			i(229156),	-- Lamplighter's Great Mallet
-			i(229158),	-- Lamplighter's War Knives
-			i(229161),	-- Lamplighter's Chopper
-			i(229162),	-- Lamplighter's Sword
+			i(229069),	-- Nisa's Spare Cloak
+			i(229193),	-- Queen's Pheromone
 			i(229194),	-- Queen's Pheromone
 			i(229195),	-- Queen's Pheromone
 			i(229370),	-- Companion Experience
@@ -1292,11 +1228,7 @@ root(ROOTS.Unsorted, {
 			i(231826),	-- Hook-Barbed Spaulders
 			i(231827),	-- Harpooner's Plate Cuirass
 			i(231830),	-- Kraken Shell Pauldrons
-			-- Fallout
-			i(229193),	-- Queen's Pheromone
 			--
-			i(232045),	-- Chunk of Companion Experience
-			i(232047),	-- Chunk of Companion Experience
 			i(232049),	-- Companion Experience
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {

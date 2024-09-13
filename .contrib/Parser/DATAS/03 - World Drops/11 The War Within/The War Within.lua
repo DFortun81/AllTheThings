@@ -72,7 +72,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 			i(224603),	-- Underscout's Trousers
 		}),
 		filter(MAIL, {
-			i(229083),	-- Aevery's Spare Shoulderguards
 			i(224614),	-- Expeditionary Belt
 			i(224609),	-- Expeditionary Boots
 			i(224615),	-- Expeditionary Bracers

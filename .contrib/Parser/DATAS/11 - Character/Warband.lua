@@ -18,7 +18,9 @@ root(ROOTS.Character, n(WARBAND, {
 	})),
 	n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 		q(83492, {	-- Warbanding Together
-			-- Auto granted upon login
+			["g"] = {
+				i(228623),	-- Blue's Request (QS!/QI!)
+			},
 		}),
 		q(83493, {	-- Rift Reader
 			["sourceQuest"] = 83492,	-- Warbanding Together
