@@ -1874,6 +1874,7 @@ i(219391, 446052);	-- Delver's Dirigible
 i(0, 453785);		-- Earthen Ordinant's Ramolith
 i(223274, 447957);	-- Ferocious Jawcrawler
 i(223586, 449466);	-- Forged Gladiator's Fel Bat
+i(0, 457485);		-- Grizzly Hills Packmaster
 i(223278, 448685);	-- Heritage Undercrawler
 i(224415, 452779);	-- Ivory Goliathus
 i(223286, 448850);	-- Kah, Legend of the Deep
