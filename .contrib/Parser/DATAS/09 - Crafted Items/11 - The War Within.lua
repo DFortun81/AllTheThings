@@ -1061,6 +1061,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 				["g"] = {
 					i(219192, {	-- Comprehensibly Organized Ideas
 						["description"] = "NOTE: Some of these require a specific specialization to discover.",
+						["f"] = MISC,
 						["g"] = {
 							r(447325, {	-- Aqirite Brainwave Projector
 								["description"] = "Requires specialization - Profession Gear to discover",
@@ -2624,7 +2625,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80808, 446935);	-- Cool Sunset Bracers
 			FirstCraft(80851, 446987);	-- Darkmoon Duffle
 			FirstCraft(80855, 446991);	-- Dawnthread Lining
-			--FirstCraft(XXXXX, 446928);	-- Dawnweave Bolt
+			FirstCraft(80801, 446928);	-- Dawnweave Bolt
 			FirstCraft(80841, 446977);	-- Dawnweave Reagent Bag
 			--FirstCraft(XXXXX, 447001);	-- Daybreak Spellthread
 			--FirstCraft(XXXXX, 446992);	-- Duskthread Lining
