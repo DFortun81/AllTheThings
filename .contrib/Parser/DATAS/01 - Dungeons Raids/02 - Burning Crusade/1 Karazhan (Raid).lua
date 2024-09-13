@@ -48,588 +48,567 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				faction(FACTION_THE_VIOLET_EYE),	-- The Violet Eye
 			}),
 			n(QUESTS, bubbleDown({ ["timeline"] = REMOVED_WITH_RETURN_TO_KARAZHAN }, {
-				q(9631, {	-- A Colleague's Aid
-					["qg"] = 17613,	-- Archmage Alturus
-					["sourceQuest"] = 9680,	-- Digging Up the Past
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
-					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["maps"] = { NETHERSTORM },
-					["cost"] = {
-						{ "i", 24152, 1 },	-- Charred Bone Fragment
-					},
-					["lvl"] = 70,
-				}),
-				q(9844, {	-- A Demonic Presence
-					["qg"] = 17613,	-- Archmage Alturus
-					["sourceQuest"] = 9843,	-- Keanna's Log
-					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- Demonic Presence Destroyed
-							["provider"] = { "n", 15690 },	-- Prince Malchezaar
+				["g"] = bubbleDownClassicRep(FACTION_THE_VIOLET_EYE, {
+					{		-- Neutral
+						q(9844, {	-- A Demonic Presence
+							["qg"] = 17613,	-- Archmage Alturus
+							["sourceQuest"] = 9843,	-- Keanna's Log
+							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- Demonic Presence Destroyed
+									["provider"] = { "n", 15690 },	-- Prince Malchezaar
+								}),
+							},
 						}),
-					},
-				}),
-				q(9824, {	-- Arcane Disturbances
-					["qg"] = 17613,	-- Archmage Alturus
-					["sourceQuest"] = 11216,	-- Archmage Alturus
-					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["lvl"] = 68,
-					["groups"] = {
-						objective(1, {	-- Underground Well Reading
-							["provider"] = { "i", 24474 },	-- Violet Scrying Crystal
-							["coord"] = { 53.4, 89.4, DEADWIND_PASS },
+						q(9824, {	-- Arcane Disturbances
+							["qg"] = 17613,	-- Archmage Alturus
+							["sourceQuest"] = 11216,	-- Archmage Alturus
+							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
+							["lvl"] = 68,
+							["groups"] = {
+								objective(1, {	-- Underground Well Reading
+									["provider"] = { "i", 24474 },	-- Violet Scrying Crystal
+									["coord"] = { 53.4, 89.4, DEADWIND_PASS },
+								}),
+								objective(2, {	-- Underground Pond Reading
+									["provider"] = { "i", 24474 },	-- Violet Scrying Crystal
+									["coord"] = { 43, 13, DEADWIND_PASS },
+								}),
+							},
 						}),
-						objective(2, {	-- Underground Pond Reading
-							["provider"] = { "i", 24474 },	-- Violet Scrying Crystal
-							["coord"] = { 43, 13, DEADWIND_PASS },
+						q(11216, {	-- Archmage Alturus
+							["qg"] = 23948,	-- Apprentice Tasserel
+							["coord"] = { 75.0, 33.2, SHATTRATH_CITY },
+							["maps"] = { DEADWIND_PASS },
+							["isBreadcrumb"] = true,
+							["lvl"] = 68,
 						}),
-					},
-				}),
-				q(11216, {	-- Archmage Alturus
-					["qg"] = 23948,	-- Apprentice Tasserel
-					["coord"] = { 75.0, 33.2, SHATTRATH_CITY },
-					["maps"] = { DEADWIND_PASS },
-					["isBreadcrumb"] = true,
-					["lvl"] = 68,
-				}),
-				q(11031, {	-- Archmage No More
-					["qg"] = 18253,	-- Archmage Leryda
-					["sourceQuest"] = 10725,	-- Eminence Among the Violet Eye [Mage]
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, EXALTED },	-- The Violet Eye, Exalted.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["repeatable"] = true,
-					["cost"] = {
-						{ "i", 29287, 1 },	-- Violet Signet of the Archmage
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						--i(29287),	-- Violet Signet of the Archmage
-						i(29279),	-- Violet Signet of the Great Protector
-						i(29290),	-- Violet Signet of the Grand Restorer
-						i(29283),	-- Violet Signet of the Master Assassin
-					},
-				}),
-				q(11033, {	-- Assassin No More
-					["qg"] = 18253,	-- Archmage Leryda
-					["sourceQuest"] = 10727,	-- Eminence Among the Violet Eye [Assassin]
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, EXALTED },	-- The Violet Eye, Exalted.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["repeatable"] = true,
-					["cost"] = {
-						{ "i", 29283, 1 },	-- Violet Signet of the Master Assassin
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						i(29287),	-- Violet Signet of the Archmage
-						i(29279),	-- Violet Signet of the Great Protector
-						i(29290),	-- Violet Signet of the Grand Restorer
-					},
-				}),
-				q(9840, {	-- Assessing the Situation
-					["qg"] = 17613,	-- Archmage Alturus
-					["sourceQuest"] = 9838,	-- The Violet Eye
-					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["lvl"] = 69,
-				}),
-				q(9826, {	-- Contact from Dalaran
-					["qg"] = 17613,	-- Archmage Alturus
-					["sourceQuests"] = {
-						9824,	-- Arcane Disturbances
-						9825,	-- Restless Activity
-					},
-					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["cost"] = {
-						{ "i", 24482, 1 },	-- Alturus's Report
-					},
-					["lvl"] = 68,
-				}),
-				q(9680, {	-- Digging Up the Past
-					["qg"] = 17613,	-- Archmage Alturus
-					["sourceQuest"] = 9645,	-- The Master's Terrace
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
-					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- 0/1 Charred Bone Fragment
-							["provider"] = { "i", 24152 },	-- Charred Bone Fragment
-							["coord"] = { 45.0, 79.0, DEADWIND_PASS },
+						q(9840, {	-- Assessing the Situation
+							["qg"] = 17613,	-- Archmage Alturus
+							["sourceQuest"] = 9838,	-- The Violet Eye
+							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
+							["lvl"] = 69,
 						}),
-					},
-				}),
-				q(10740, {	-- Distinguished Service [Assassin]
-					["qg"] = 18253,	-- Archmage Leryda
-					["sourceQuest"] = 10735,	-- Down the Violet Path [Assassin]
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, REVERED },	-- The Violet Eye, Revered.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["altQuests"] = {
-						--10740,	-- Distinguished Service [Assassin]
-						10738,	-- Distinguished Service [Mage]
-						10741,	-- Distinguished Service [Protector]
-						10739,	-- Distinguished Service [Restorer]
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- 0/1 Violet Signet
-							["provider"] = { "i", 29281 },	-- Violet Signet
+						q(9826, {	-- Contact from Dalaran
+							["qg"] = 17613,	-- Archmage Alturus
+							["sourceQuests"] = {
+								9824,	-- Arcane Disturbances
+								9825,	-- Restless Activity
+							},
+							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
+							["cost"] = {
+								{ "i", 24482, 1 },	-- Alturus's Report
+							},
+							["lvl"] = 68,
 						}),
-						i(29282),	-- Violet Signet
-					},
-				}),
-				q(10738, {	-- Distinguished Service [Mage]
-					["qg"] = 18253,	-- Archmage Leryda
-					["sourceQuest"] = 10733,	-- Down the Violet Path [Mage]
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, REVERED },	-- The Violet Eye, Revered.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["altQuests"] = {
-						10740,	-- Distinguished Service [Assassin]
-						--10738,	-- Distinguished Service [Mage]
-						10741,	-- Distinguished Service [Protector]
-						10739,	-- Distinguished Service [Restorer]
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- 0/1 Violet Signet
-							["provider"] = { "i", 29285 },	-- Violet Signet
+						q(9831, {	-- Entry Into Karazhan
+							["qg"] = 18166,	-- Khadgar <Sons of Lothar>
+							["sourceQuest"] = 9829,	-- Khadgar
+							["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
+							["maps"] = { AUCHINDOUN_SHADOW_LABYRINTH },
+							["lvl"] = 68,
+							["groups"] = {
+								objective(1, {	-- 0/1 First Key Fragment
+									["provider"] = { "i", 24514 },	-- First Key Fragment
+								}),
+							},
 						}),
-						i(29286),	-- Violet Signet
-					},
-				}),
-				q(10741, {	-- Distinguished Service [Protector]
-					["qg"] = 18253,	-- Archmage Leryda
-					["sourceQuest"] = 10736,	-- Down the Violet Path [Protector]
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, REVERED },	-- The Violet Eye, Revered.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["altQuests"] = {
-						10740,	-- Distinguished Service [Assassin]
-						10738,	-- Distinguished Service [Mage]
-						--10741,	-- Distinguished Service [Protector]
-						10739,	-- Distinguished Service [Restorer]
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- 0/1 Violet Signet
-							["provider"] = { "i", 29277 },	-- Violet Signet
+						q(9843, {	-- Keanna's Log
+							["qg"] = 16388,	-- Koren <The Blacksmith>
+							["sourceQuest"] = 9840,	-- Assessing the Situation
+							["timeline"] = { REMOVED_7_1_0 },
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- 0/1 Keanna's Log
+									["provider"] = { "i", 24492 },	-- Keanna's Log
+									["description"] = "In the second room on a table in the hall leading to Maiden.",
+								}),
+							},
 						}),
-						i(29278),	-- Violet Signet
-					},
-				}),
-				q(10739, {	-- Distinguished Service [Restorer]
-					["qg"] = 18253,	-- Archmage Leryda
-					["sourceQuest"] = 10734,	-- Down the Violet Path [Restorer]
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, REVERED },	-- The Violet Eye, Revered.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["altQuests"] = {
-						10740,	-- Distinguished Service [Assassin]
-						10738,	-- Distinguished Service [Mage]
-						10741,	-- Distinguished Service [Protector]
-						--10739,	-- Distinguished Service [Restorer]
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- 0/1 Violet Signet
-							["provider"] = { "i", 29289 },	-- Violet Signet
+						q(9829, {	-- Khadgar
+							["qg"] = 18165,	-- Archmage Cedric
+							["sourceQuest"] = 9826,	-- Contact from Dalaran
+							-- #if TBC
+							["coord"] = { 15.6, 54.6, ALTERAC_MOUNTAINS },
+							-- #endif
+							["lvl"] = 68,
 						}),
-						i(29291),	-- Violet Signet
-					},
-				}),
-				q(10735, {	-- Down the Violet Path [Assassin]
-					["qg"] = 18253,	-- Archmage Leryda
-					["sourceQuest"] = 10731,	-- Path of the Violet Assassin
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["altQuests"] = {
-						--10735,	-- Down the Violet Path [Assassin]
-						10733,	-- Down the Violet Path [Mage]
-						10736,	-- Down the Violet Path [Protector]
-						10734,	-- Down the Violet Path [Restorer]
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- 0/1 Violet Signet
-							["provider"] = { "i", 29280 },	-- Violet Signet
+						q(9825, {	-- Restless Activity
+							["qg"] = 17613,	-- Archmage Alturus
+							["sourceQuest"] = 11216,	-- Archmage Alturus
+							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
+							["lvl"] = 68,
+							["groups"] = {
+								objective(1, {	-- 0/10 Ghostly Essence
+									["provider"] = { "i", 24480 },	-- Ghostly Essence
+									["crs"] = {
+										12378,	-- Damned Soul
+										7370,	-- Restless Shade
+										12379,	-- Unliving Caretaker
+										-- 12380,	-- Unliving Resident -- NOTE: This was removed as a drop source sometime during TBC.
+										12377,	-- Wailing Spectre
+									},
+								}),
+							},
 						}),
-						i(29281),	-- Violet Signet
-					},
-				}),
-				q(10733, {	-- Down the Violet Path [Mage]
-					["qg"] = 18253,	-- Archmage Leryda
-					["sourceQuest"] = 10729,	-- Path of the Violet Mage
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["altQuests"] = {
-						10735,	-- Down the Violet Path [Assassin]
-						--10733,	-- Down the Violet Path [Mage]
-						10736,	-- Down the Violet Path [Protector]
-						10734,	-- Down the Violet Path [Restorer]
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- 0/1 Violet Signet
-							["provider"] = { "i", 29284 },	-- Violet Signet
+						q(9860, {	-- The New Directive
+							["qg"] = 17613,	-- Archmage Alturus
+							["sourceQuest"] = 9844,	-- A Demonic Presence
+							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
+							["lvl"] = 70,
+							["groups"] = {
+								i(31113),	-- Violet Badge
+							},
 						}),
-						i(29285),	-- Violet Signet
-					},
-				}),
-				q(10736, {	-- Down the Violet Path [Protector]
-					["qg"] = 18253,	-- Archmage Leryda
-					["sourceQuest"] = 10732,	-- Path of the Violet Protector
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["altQuests"] = {
-						10735,	-- Down the Violet Path [Assassin]
-						10733,	-- Down the Violet Path [Mage]
-						--10736,	-- Down the Violet Path [Protector]
-						10734,	-- Down the Violet Path [Restorer]
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- 0/1 Violet Signet
-							["provider"] = { "i", 29276 },	-- Violet Signet
+						q(9832, {	-- The Second and Third Fragments
+							["qg"] = 18166,	-- Khadgar <Sons of Lothar>
+							["sourceQuest"] = 9831,	-- Entry Into Karazhan
+							["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
+							["maps"] = { COILFANG_RESERVOIR_STEAMVAULT, TEMPEST_KEEP_ARCATRAZ },
+							["lvl"] = 68,
+							["groups"] = {
+								objective(1, {	-- 0/1 Second Key Fragment
+									["provider"] = { "i", 24487 },	-- Second Key Fragment
+								}),
+								objective(2, {	-- 0/1 Third Key Fragment
+									["provider"] = { "i", 24488 },	-- Third Key Fragment
+								}),
+							},
 						}),
-						i(29277),	-- Violet Signet
-					},
-				}),
-				q(10734, {	-- Down the Violet Path [Restorer]
-					["qg"] = 18253,	-- Archmage Leryda
-					["sourceQuest"] = 10730,	-- Path of the Violet Restorer
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["altQuests"] = {
-						10735,	-- Down the Violet Path [Assassin]
-						10733,	-- Down the Violet Path [Mage]
-						10736,	-- Down the Violet Path [Protector]
-						--10734,	-- Down the Violet Path [Restorer]
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- 0/1 Violet Signet
-							["provider"] = { "i", 29288 },	-- Violet Signet
+						q(9838, {	-- The Violet Eye
+							["qg"] = 18166,	-- Khadgar <Sons of Lothar>
+							["sourceQuest"] = 9837,	-- Return to Khadgar
+							["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
+							["maps"] = { DEADWIND_PASS },
+							["lvl"] = 69,
 						}),
-						i(29289),	-- Violet Signet
-					},
-				}),
-				q(10727, {	-- Eminence Among the Violet Eye [Assassin]
-					["qg"] = 18253,	-- Archmage Leryda
-					["sourceQuest"] = 10740,	-- Distinguished Service [Assassin]
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, EXALTED },	-- The Violet Eye, Exalted.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["altQuests"] = {
-						--10727,	-- Eminence Among the Violet Eye [Assassin]
-						10725,	-- Eminence Among the Violet Eye [Mage]
-						10728,	-- Eminence Among the Violet Eye [Protector]
-						10726,	-- Eminence Among the Violet Eye [Restorer]
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- 0/1 Violet Signet
-							["provider"] = { "i", 29282 },	-- Violet Signet
+					}, {	-- Friendly
+						q(10731, {	-- Path of the Violet Assassin
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["altQuests"] = {
+								--10731,	-- Path of the Violet Assassin [Assassin]
+								10729,	-- Path of the Violet Mage [Mage]
+								10732,	-- Path of the Violet Protector [Protector]
+								10730,	-- Path of the Violet Restorer [Restorer]
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								i(29280),	-- Violet Signet
+							},
 						}),
-						i(29283),	-- Violet Signet of the Master Assassin
-					},
-				}),
-				q(10725, {	-- Eminence Among the Violet Eye [Mage]
-					["qg"] = 18253,	-- Archmage Leryda
-					["sourceQuest"] = 10738,	-- Distinguished Service [Mage]
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, EXALTED },	-- The Violet Eye, Exalted.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["altQuests"] = {
-						10727,	-- Eminence Among the Violet Eye [Assassin]
-						--10725,	-- Eminence Among the Violet Eye [Mage]
-						10728,	-- Eminence Among the Violet Eye [Protector]
-						10726,	-- Eminence Among the Violet Eye [Restorer]
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- 0/1 Violet Signet
-							["provider"] = { "i", 29286 },	-- Violet Signet
+						q(10729, {	-- Path of the Violet Mage
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["altQuests"] = {
+								10731,	-- Path of the Violet Assassin [Assassin]
+								--10729,	-- Path of the Violet Mage [Mage]
+								10732,	-- Path of the Violet Protector [Protector]
+								10730,	-- Path of the Violet Restorer [Restorer]
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								i(29284),	-- Violet Signet
+							},
 						}),
-						i(29287),	-- Violet Signet of the Archmage
-					},
-				}),
-				q(10728, {	-- Eminence Among the Violet Eye [Protector]
-					["qg"] = 18253,	-- Archmage Leryda
-					["sourceQuest"] = 10741,	-- Distinguished Service [Protector]
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, EXALTED },	-- The Violet Eye, Exalted.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["altQuests"] = {
-						10727,	-- Eminence Among the Violet Eye [Assassin]
-						10725,	-- Eminence Among the Violet Eye [Mage]
-						--10728,	-- Eminence Among the Violet Eye [Protector]
-						10726,	-- Eminence Among the Violet Eye [Restorer]
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- 0/1 Violet Signet
-							["provider"] = { "i", 29278 },	-- Violet Signet
+						q(10732, {	-- Path of the Violet Protector
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["altQuests"] = {
+								10731,	-- Path of the Violet Assassin [Assassin]
+								10729,	-- Path of the Violet Mage [Mage]
+								--10732,	-- Path of the Violet Protector [Protector]
+								10730,	-- Path of the Violet Restorer [Restorer]
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								i(29276),	-- Violet Signet
+							},
 						}),
-						i(29279),	-- Violet Signet of the Great Protector
-					},
-				}),
-				q(10726, {	-- Eminence Among the Violet Eye [Restorer]
-					["qg"] = 18253,	-- Archmage Leryda
-					["sourceQuest"] = 10739,	-- Distinguished Service [Restorer]
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, EXALTED },	-- The Violet Eye, Exalted.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["altQuests"] = {
-						10727,	-- Eminence Among the Violet Eye [Assassin]
-						10725,	-- Eminence Among the Violet Eye [Mage]
-						10728,	-- Eminence Among the Violet Eye [Protector]
-						--10726,	-- Eminence Among the Violet Eye [Restorer]
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- 0/1 Violet Signet
-							["provider"] = { "i", 29291 },	-- Violet Signet
+						q(10730, {	-- Path of the Violet Restorer
+							["qg"] = 18253,	-- Archmage Leryda
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["altQuests"] = {
+								10731,	-- Path of the Violet Assassin [Assassin]
+								10729,	-- Path of the Violet Mage [Mage]
+								10732,	-- Path of the Violet Protector [Protector]
+								--10730,	-- Path of the Violet Restorer [Restorer]
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								i(29288),	-- Violet Signet
+							},
 						}),
-						i(29290),	-- Violet Signet of the Grand Restorer
-					},
-				}),
-				q(9831, {	-- Entry Into Karazhan
-					["qg"] = 18166,	-- Khadgar <Sons of Lothar>
-					["sourceQuest"] = 9829,	-- Khadgar
-					["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
-					["maps"] = { AUCHINDOUN_SHADOW_LABYRINTH },
-					["lvl"] = 68,
-					["groups"] = {
-						objective(1, {	-- 0/1 First Key Fragment
-							["provider"] = { "i", 24514 },	-- First Key Fragment
+					}, {	-- Honored
+						q(9631, {	-- A Colleague's Aid
+							["qg"] = 17613,	-- Archmage Alturus
+							["sourceQuest"] = 9680,	-- Digging Up the Past
+							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
+							["maps"] = { NETHERSTORM },
+							["cost"] = {
+								{ "i", 24152, 1 },	-- Charred Bone Fragment
+							},
+							["lvl"] = 70,
 						}),
-					},
-				}),
-				q(9638, {	-- In Good Hands
-					["qg"] = 16813,	-- Wravien <The Mage>
-					["sourceQuest"] = 9630,	-- Medivh's Journal
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
-					["lvl"] = 70,
-				}),
-				q(9637, {	-- Kalynna's Request
-					["qg"] = 17636,	-- Kalynna Lathred
-					["sourceQuest"] = 9631,	-- A Colleague's Aid
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
-					["coord"] = { 32.2, 63.6, NETHERSTORM },
-					["maps"] = { AUCHINDOUN_SETHEKK_HALLS, HELLFIRE_CITADEL_SHATTERED_HALLS },
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- 0/1 Book of Forgotten Names
-							["provider"] = { "i", 25461 },	-- Book of Forgotten Names
+						q(9680, {	-- Digging Up the Past
+							["qg"] = 17613,	-- Archmage Alturus
+							["sourceQuest"] = 9645,	-- The Master's Terrace
+							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- 0/1 Charred Bone Fragment
+									["provider"] = { "i", 24152 },	-- Charred Bone Fragment
+									["coord"] = { 45.0, 79.0, DEADWIND_PASS },
+								}),
+							},
 						}),
-						objective(2, {	-- 0/1 Tome of Dusk
-							["provider"] = { "i", 25462 },	-- Tome of Dusk
+						q(10735, {	-- Down the Violet Path [Assassin]
+							["qg"] = 18253,	-- Archmage Leryda
+							["sourceQuest"] = 10731,	-- Path of the Violet Assassin
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["altQuests"] = {
+								--10735,	-- Down the Violet Path [Assassin]
+								10733,	-- Down the Violet Path [Mage]
+								10736,	-- Down the Violet Path [Protector]
+								10734,	-- Down the Violet Path [Restorer]
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- 0/1 Violet Signet
+									["provider"] = { "i", 29280 },	-- Violet Signet
+								}),
+								i(29281),	-- Violet Signet
+							},
 						}),
-					},
-				}),
-				q(9639, {	-- Kamsis
-					["qg"] = 16814,	-- Gradav <The Warlock>
-					["sourceQuest"] = 9638,	-- In Good Hands
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
-					["lvl"] = 70,
-				}),
-				q(9843, {	-- Keanna's Log
-					["qg"] = 16388,	-- Koren <The Blacksmith>
-					["sourceQuest"] = 9840,	-- Assessing the Situation
-					["timeline"] = { REMOVED_7_1_0 },
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- 0/1 Keanna's Log
-							["provider"] = { "i", 24492 },	-- Keanna's Log
-							["description"] = "In the second room on a table in the hall leading to Maiden.",
+						q(10733, {	-- Down the Violet Path [Mage]
+							["qg"] = 18253,	-- Archmage Leryda
+							["sourceQuest"] = 10729,	-- Path of the Violet Mage
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["altQuests"] = {
+								10735,	-- Down the Violet Path [Assassin]
+								--10733,	-- Down the Violet Path [Mage]
+								10736,	-- Down the Violet Path [Protector]
+								10734,	-- Down the Violet Path [Restorer]
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- 0/1 Violet Signet
+									["provider"] = { "i", 29284 },	-- Violet Signet
+								}),
+								i(29285),	-- Violet Signet
+							},
 						}),
-					},
-				}),
-				q(9829, {	-- Khadgar
-					["qg"] = 18165,	-- Archmage Cedric
-					["sourceQuest"] = 9826,	-- Contact from Dalaran
-					-- #if TBC
-					["coord"] = { 15.6, 54.6, ALTERAC_MOUNTAINS },
-					-- #endif
-					["lvl"] = 68,
-				}),
-				q(9630, {	-- Medivh's Journal
-					["qg"] = 17613,	-- Archmage Alturus
-					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
-					["lvl"] = 70,
-				}),
-				q(9644, {	-- Nightbane
-					["qg"] = 17636,	-- Kalynna Lathred
-					["sourceQuest"] = 9637,	-- Kalynna's Request
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
-					["coord"] = { 32.2, 63.6, NETHERSTORM },
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- 0/1 Faint Arcane Essence
-							["provider"] = { "i", 24139 },	-- Faint Arcane Essence
+						q(10736, {	-- Down the Violet Path [Protector]
+							["qg"] = 18253,	-- Archmage Leryda
+							["sourceQuest"] = 10732,	-- Path of the Violet Protector
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["altQuests"] = {
+								10735,	-- Down the Violet Path [Assassin]
+								10733,	-- Down the Violet Path [Mage]
+								--10736,	-- Down the Violet Path [Protector]
+								10734,	-- Down the Violet Path [Restorer]
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- 0/1 Violet Signet
+									["provider"] = { "i", 29276 },	-- Violet Signet
+								}),
+								i(29277),	-- Violet Signet
+							},
 						}),
-						i(31116),	-- Infused Amethyst
-						i(31118),	-- Pulsing Amethyst
-						i(31117),	-- Soothing Amethyst
-					},
-				}),
-				q(10731, {	-- Path of the Violet Assassin
-					["qg"] = 18253,	-- Archmage Leryda
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, FRIENDLY },	-- The Violet Eye, Friendly.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["altQuests"] = {
-						--10731,	-- Path of the Violet Assassin [Assassin]
-						10729,	-- Path of the Violet Mage [Mage]
-						10732,	-- Path of the Violet Protector [Protector]
-						10730,	-- Path of the Violet Restorer [Restorer]
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						i(29280),	-- Violet Signet
-					},
-				}),
-				q(10729, {	-- Path of the Violet Mage
-					["qg"] = 18253,	-- Archmage Leryda
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, FRIENDLY },	-- The Violet Eye, Friendly.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["altQuests"] = {
-						10731,	-- Path of the Violet Assassin [Assassin]
-						--10729,	-- Path of the Violet Mage [Mage]
-						10732,	-- Path of the Violet Protector [Protector]
-						10730,	-- Path of the Violet Restorer [Restorer]
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						i(29284),	-- Violet Signet
-					},
-				}),
-				q(10732, {	-- Path of the Violet Protector
-					["qg"] = 18253,	-- Archmage Leryda
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, FRIENDLY },	-- The Violet Eye, Friendly.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["altQuests"] = {
-						10731,	-- Path of the Violet Assassin [Assassin]
-						10729,	-- Path of the Violet Mage [Mage]
-						--10732,	-- Path of the Violet Protector [Protector]
-						10730,	-- Path of the Violet Restorer [Restorer]
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						i(29276),	-- Violet Signet
-					},
-				}),
-				q(10730, {	-- Path of the Violet Restorer
-					["qg"] = 18253,	-- Archmage Leryda
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, FRIENDLY },	-- The Violet Eye, Friendly.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["altQuests"] = {
-						10731,	-- Path of the Violet Assassin [Assassin]
-						10729,	-- Path of the Violet Mage [Mage]
-						10732,	-- Path of the Violet Protector [Protector]
-						--10730,	-- Path of the Violet Restorer [Restorer]
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						i(29288),	-- Violet Signet
-					},
-				}),
-				q(11032, {	-- Protector No More
-					["qg"] = 18253,	-- Archmage Leryda
-					["sourceQuest"] = 10728,	-- Eminence Among the Violet Eye [Protector]
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, EXALTED },	-- The Violet Eye, Exalted.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["repeatable"] = true,
-					["cost"] = {
-						{ "i", 29279, 1 },	-- Violet Signet of the Great Protector
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						i(29287),	-- Violet Signet of the Archmage
-						--i(29279),	-- Violet Signet of the Great Protector
-						i(29290),	-- Violet Signet of the Grand Restorer
-						i(29283),	-- Violet Signet of the Master Assassin
-					},
-				}),
-				q(9825, {	-- Restless Activity
-					["qg"] = 17613,	-- Archmage Alturus
-					["sourceQuest"] = 11216,	-- Archmage Alturus
-					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["lvl"] = 68,
-					["groups"] = {
-						objective(1, {	-- 0/10 Ghostly Essence
-							["provider"] = { "i", 24480 },	-- Ghostly Essence
-							["crs"] = {
-								12378,	-- Damned Soul
-								7370,	-- Restless Shade
-								12379,	-- Unliving Caretaker
-								-- 12380,	-- Unliving Resident -- NOTE: This was removed as a drop source sometime during TBC.
-								12377,	-- Wailing Spectre
+						q(10734, {	-- Down the Violet Path [Restorer]
+							["qg"] = 18253,	-- Archmage Leryda
+							["sourceQuest"] = 10730,	-- Path of the Violet Restorer
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["altQuests"] = {
+								10735,	-- Down the Violet Path [Assassin]
+								10733,	-- Down the Violet Path [Mage]
+								10736,	-- Down the Violet Path [Protector]
+								--10734,	-- Down the Violet Path [Restorer]
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- 0/1 Violet Signet
+									["provider"] = { "i", 29288 },	-- Violet Signet
+								}),
+								i(29289),	-- Violet Signet
+							},
+						}),
+						q(9638, {	-- In Good Hands
+							["qg"] = 16813,	-- Wravien <The Mage>
+							["sourceQuest"] = 9630,	-- Medivh's Journal
+							["lvl"] = 70,
+						}),
+						q(9637, {	-- Kalynna's Request
+							["qg"] = 17636,	-- Kalynna Lathred
+							["sourceQuest"] = 9631,	-- A Colleague's Aid
+							["coord"] = { 32.2, 63.6, NETHERSTORM },
+							["maps"] = { AUCHINDOUN_SETHEKK_HALLS, HELLFIRE_CITADEL_SHATTERED_HALLS },
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- 0/1 Book of Forgotten Names
+									["provider"] = { "i", 25461 },	-- Book of Forgotten Names
+								}),
+								objective(2, {	-- 0/1 Tome of Dusk
+									["provider"] = { "i", 25462 },	-- Tome of Dusk
+								}),
+							},
+						}),
+						q(9639, {	-- Kamsis
+							["qg"] = 16814,	-- Gradav <The Warlock>
+							["sourceQuest"] = 9638,	-- In Good Hands
+							["lvl"] = 70,
+						}),
+						q(9630, {	-- Medivh's Journal
+							["qg"] = 17613,	-- Archmage Alturus
+							["coord"] = { 47.3, 75.2, DEADWIND_PASS },
+							["lvl"] = 70,
+						}),
+						q(9644, {	-- Nightbane
+							["qg"] = 17636,	-- Kalynna Lathred
+							["sourceQuest"] = 9637,	-- Kalynna's Request
+							["coord"] = { 32.2, 63.6, NETHERSTORM },
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- 0/1 Faint Arcane Essence
+									["provider"] = { "i", 24139 },	-- Faint Arcane Essence
+								}),
+								i(31116),	-- Infused Amethyst
+								i(31118),	-- Pulsing Amethyst
+								i(31117),	-- Soothing Amethyst
+							},
+						}),
+						q(9645, {	-- The Master's Terrace
+							["qg"] = 16815,	-- Kamsis <The Conjurer>
+							["sourceQuest"] = 9640,	-- The Shade of Aran
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- Journal Entry Read
+									["provider"] = { "i", 23934 },	-- Medivh's Journal
+								}),
+							},
+						}),
+						q(9640, {	-- The Shade of Aran
+							["qg"] = 16815,	-- Kamsis <The Conjurer>
+							["sourceQuest"] = 9639,	-- Kamsis
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- 0/1 Medivh's Journal
+									["provider"] = { "i", 23933 },	-- Medivh's Journal
+								}),
+							},
+						}),
+					}, {	-- Revered
+						q(10740, {	-- Distinguished Service [Assassin]
+							["qg"] = 18253,	-- Archmage Leryda
+							["sourceQuest"] = 10735,	-- Down the Violet Path [Assassin]
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["altQuests"] = {
+								--10740,	-- Distinguished Service [Assassin]
+								10738,	-- Distinguished Service [Mage]
+								10741,	-- Distinguished Service [Protector]
+								10739,	-- Distinguished Service [Restorer]
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- 0/1 Violet Signet
+									["provider"] = { "i", 29281 },	-- Violet Signet
+								}),
+								i(29282),	-- Violet Signet
+							},
+						}),
+						q(10738, {	-- Distinguished Service [Mage]
+							["qg"] = 18253,	-- Archmage Leryda
+							["sourceQuest"] = 10733,	-- Down the Violet Path [Mage]
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["altQuests"] = {
+								10740,	-- Distinguished Service [Assassin]
+								--10738,	-- Distinguished Service [Mage]
+								10741,	-- Distinguished Service [Protector]
+								10739,	-- Distinguished Service [Restorer]
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- 0/1 Violet Signet
+									["provider"] = { "i", 29285 },	-- Violet Signet
+								}),
+								i(29286),	-- Violet Signet
+							},
+						}),
+						q(10741, {	-- Distinguished Service [Protector]
+							["qg"] = 18253,	-- Archmage Leryda
+							["sourceQuest"] = 10736,	-- Down the Violet Path [Protector]
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["altQuests"] = {
+								10740,	-- Distinguished Service [Assassin]
+								10738,	-- Distinguished Service [Mage]
+								--10741,	-- Distinguished Service [Protector]
+								10739,	-- Distinguished Service [Restorer]
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- 0/1 Violet Signet
+									["provider"] = { "i", 29277 },	-- Violet Signet
+								}),
+								i(29278),	-- Violet Signet
+							},
+						}),
+						q(10739, {	-- Distinguished Service [Restorer]
+							["qg"] = 18253,	-- Archmage Leryda
+							["sourceQuest"] = 10734,	-- Down the Violet Path [Restorer]
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["altQuests"] = {
+								10740,	-- Distinguished Service [Assassin]
+								10738,	-- Distinguished Service [Mage]
+								10741,	-- Distinguished Service [Protector]
+								--10739,	-- Distinguished Service [Restorer]
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- 0/1 Violet Signet
+									["provider"] = { "i", 29289 },	-- Violet Signet
+								}),
+								i(29291),	-- Violet Signet
+							},
+						}),
+					}, {	-- Exalted
+						q(11031, {	-- Archmage No More
+							["qg"] = 18253,	-- Archmage Leryda
+							["sourceQuest"] = 10725,	-- Eminence Among the Violet Eye [Mage]
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["repeatable"] = true,
+							["cost"] = {
+								{ "i", 29287, 1 },	-- Violet Signet of the Archmage
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								--i(29287),	-- Violet Signet of the Archmage
+								i(29279),	-- Violet Signet of the Great Protector
+								i(29290),	-- Violet Signet of the Grand Restorer
+								i(29283),	-- Violet Signet of the Master Assassin
+							},
+						}),
+						q(11033, {	-- Assassin No More
+							["qg"] = 18253,	-- Archmage Leryda
+							["sourceQuest"] = 10727,	-- Eminence Among the Violet Eye [Assassin]
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["repeatable"] = true,
+							["cost"] = {
+								{ "i", 29283, 1 },	-- Violet Signet of the Master Assassin
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								i(29287),	-- Violet Signet of the Archmage
+								i(29279),	-- Violet Signet of the Great Protector
+								i(29290),	-- Violet Signet of the Grand Restorer
+							},
+						}),
+						q(10727, {	-- Eminence Among the Violet Eye [Assassin]
+							["qg"] = 18253,	-- Archmage Leryda
+							["sourceQuest"] = 10740,	-- Distinguished Service [Assassin]
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["altQuests"] = {
+								--10727,	-- Eminence Among the Violet Eye [Assassin]
+								10725,	-- Eminence Among the Violet Eye [Mage]
+								10728,	-- Eminence Among the Violet Eye [Protector]
+								10726,	-- Eminence Among the Violet Eye [Restorer]
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- 0/1 Violet Signet
+									["provider"] = { "i", 29282 },	-- Violet Signet
+								}),
+								i(29283),	-- Violet Signet of the Master Assassin
+							},
+						}),
+						q(10725, {	-- Eminence Among the Violet Eye [Mage]
+							["qg"] = 18253,	-- Archmage Leryda
+							["sourceQuest"] = 10738,	-- Distinguished Service [Mage]
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["altQuests"] = {
+								10727,	-- Eminence Among the Violet Eye [Assassin]
+								--10725,	-- Eminence Among the Violet Eye [Mage]
+								10728,	-- Eminence Among the Violet Eye [Protector]
+								10726,	-- Eminence Among the Violet Eye [Restorer]
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- 0/1 Violet Signet
+									["provider"] = { "i", 29286 },	-- Violet Signet
+								}),
+								i(29287),	-- Violet Signet of the Archmage
+							},
+						}),
+						q(10728, {	-- Eminence Among the Violet Eye [Protector]
+							["qg"] = 18253,	-- Archmage Leryda
+							["sourceQuest"] = 10741,	-- Distinguished Service [Protector]
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["altQuests"] = {
+								10727,	-- Eminence Among the Violet Eye [Assassin]
+								10725,	-- Eminence Among the Violet Eye [Mage]
+								--10728,	-- Eminence Among the Violet Eye [Protector]
+								10726,	-- Eminence Among the Violet Eye [Restorer]
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- 0/1 Violet Signet
+									["provider"] = { "i", 29278 },	-- Violet Signet
+								}),
+								i(29279),	-- Violet Signet of the Great Protector
+							},
+						}),
+						q(10726, {	-- Eminence Among the Violet Eye [Restorer]
+							["qg"] = 18253,	-- Archmage Leryda
+							["sourceQuest"] = 10739,	-- Distinguished Service [Restorer]
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["altQuests"] = {
+								10727,	-- Eminence Among the Violet Eye [Assassin]
+								10725,	-- Eminence Among the Violet Eye [Mage]
+								10728,	-- Eminence Among the Violet Eye [Protector]
+								--10726,	-- Eminence Among the Violet Eye [Restorer]
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								objective(1, {	-- 0/1 Violet Signet
+									["provider"] = { "i", 29291 },	-- Violet Signet
+								}),
+								i(29290),	-- Violet Signet of the Grand Restorer
+							},
+						}),
+						q(11032, {	-- Protector No More
+							["qg"] = 18253,	-- Archmage Leryda
+							["sourceQuest"] = 10728,	-- Eminence Among the Violet Eye [Protector]
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["repeatable"] = true,
+							["cost"] = {
+								{ "i", 29279, 1 },	-- Violet Signet of the Great Protector
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								i(29287),	-- Violet Signet of the Archmage
+								--i(29279),	-- Violet Signet of the Great Protector
+								i(29290),	-- Violet Signet of the Grand Restorer
+								i(29283),	-- Violet Signet of the Master Assassin
+							},
+						}),
+						q(11034, {	-- Restorer No More
+							["qg"] = 18253,	-- Archmage Leryda
+							["sourceQuest"] = 10726,	-- Eminence Among the Violet Eye [Restorer]
+							["coord"] = { 47.2, 75.0, DEADWIND_PASS },
+							["repeatable"] = true,
+							["cost"] = {
+								{ "i", 29290, 1 },	-- Violet Signet of the Grand Restorer
+							},
+							["lvl"] = 70,
+							["groups"] = {
+								i(29287),	-- Violet Signet of the Archmage
+								i(29279),	-- Violet Signet of the Great Protector
+								--i(29290),	-- Violet Signet of the Grand Restorer
+								i(29283),	-- Violet Signet of the Master Assassin
 							},
 						}),
 					},
-				}),
-				q(11034, {	-- Restorer No More
-					["qg"] = 18253,	-- Archmage Leryda
-					["sourceQuest"] = 10726,	-- Eminence Among the Violet Eye [Restorer]
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, EXALTED },	-- The Violet Eye, Exalted.
-					["coord"] = { 47.2, 75.0, DEADWIND_PASS },
-					["repeatable"] = true,
-					["cost"] = {
-						{ "i", 29290, 1 },	-- Violet Signet of the Grand Restorer
-					},
-					["lvl"] = 70,
-					["groups"] = {
-						i(29287),	-- Violet Signet of the Archmage
-						i(29279),	-- Violet Signet of the Great Protector
-						--i(29290),	-- Violet Signet of the Grand Restorer
-						i(29283),	-- Violet Signet of the Master Assassin
-					},
-				}),
-				q(9645, {	-- The Master's Terrace
-					["qg"] = 16815,	-- Kamsis <The Conjurer>
-					["sourceQuest"] = 9640,	-- The Shade of Aran
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- Journal Entry Read
-							["provider"] = { "i", 23934 },	-- Medivh's Journal
-						}),
-					},
-				}),
-				q(9860, {	-- The New Directive
-					["qg"] = 17613,	-- Archmage Alturus
-					["sourceQuest"] = 9844,	-- A Demonic Presence
-					["coord"] = { 47.3, 75.2, DEADWIND_PASS },
-					["lvl"] = 70,
-					["groups"] = {
-						i(31113),	-- Violet Badge
-					},
-				}),
-				q(9832, {	-- The Second and Third Fragments
-					["qg"] = 18166,	-- Khadgar <Sons of Lothar>
-					["sourceQuest"] = 9831,	-- Entry Into Karazhan
-					["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
-					["maps"] = { COILFANG_RESERVOIR_STEAMVAULT, TEMPEST_KEEP_ARCATRAZ },
-					["lvl"] = 68,
-					["groups"] = {
-						objective(1, {	-- 0/1 Second Key Fragment
-							["provider"] = { "i", 24487 },	-- Second Key Fragment
-						}),
-						objective(2, {	-- 0/1 Third Key Fragment
-							["provider"] = { "i", 24488 },	-- Third Key Fragment
-						}),
-					},
-				}),
-				q(9640, {	-- The Shade of Aran
-					["qg"] = 16815,	-- Kamsis <The Conjurer>
-					["sourceQuest"] = 9639,	-- Kamsis
-					["minReputation"] = { FACTION_THE_VIOLET_EYE, HONORED },	-- The Violet Eye, Honored.
-					["lvl"] = 70,
-					["groups"] = {
-						objective(1, {	-- 0/1 Medivh's Journal
-							["provider"] = { "i", 23933 },	-- Medivh's Journal
-						}),
-					},
-				}),
-				q(9838, {	-- The Violet Eye
-					["qg"] = 18166,	-- Khadgar <Sons of Lothar>
-					["sourceQuest"] = 9837,	-- Return to Khadgar
-					["coord"] = { 54.8, 44.3, SHATTRATH_CITY },
-					["maps"] = { DEADWIND_PASS },
-					["lvl"] = 69,
 				}),
 			})),
 			n(VENDORS, {
