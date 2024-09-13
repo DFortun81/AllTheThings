@@ -56,12 +56,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 6 --
 				q(82390, {	-- Weathered Crests
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 42.4, 55.0, HALLOWFALL },
+					["coords"] = {
+						{ 42.4, 55.0, HALLOWFALL },
+						{ 41.3, 53.1, HALLOWFALL },
+					},
 				}),
 			}, {	-- RENOWN 7 --
 				q(84409, {	-- For the Valorous
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 42.4, 55.0, HALLOWFALL },
+					["coords"] = {
+						{ 42.4, 55.0, HALLOWFALL },
+						{ 41.3, 53.1, HALLOWFALL },
+					},
 				}),
 			}, {	-- RENOWN 8 --
 				q(82393, {	-- Resonating Crystals
@@ -71,7 +77,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 9 --
 				q(82394, {	-- A Cache of Crests
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 42.4, 55.0, HALLOWFALL },
+					["coords"] = {
+						{ 42.4, 55.0, HALLOWFALL },
+						{ 41.3, 53.1, HALLOWFALL },
+					},
 				}),
 			}, {	-- RENOWN 10 --
 				q(82395, {	-- Flame-touched Tabard
@@ -118,12 +127,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 12 --
 				q(82396, {	-- A Gift from Mereldar
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 42.4, 55.0, HALLOWFALL },
+					["coords"] = {
+						{ 42.4, 55.0, HALLOWFALL },
+						{ 41.3, 53.1, HALLOWFALL },
+					},
 				}),
 			}, {	-- RENOWN 13 --
 				q(84559, {	-- Carved Crests
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
-					["coord"] = { 42.4, 55.0, HALLOWFALL },
+					["coords"] = {
+						{ 42.4, 55.0, HALLOWFALL },
+						{ 41.3, 53.1, HALLOWFALL },
+					},
 				}),
 			}, {	-- RENOWN 14 --
 				q(82398, {	-- Another Rare Key

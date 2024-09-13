@@ -401,7 +401,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					},
 					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 190902 },	-- Alexstrasza the Life-Binder
-					["coord"] = { 72.5, 56.2, THALDRASZUS },
+					["coords"] = {
+						{ 72.5, 56.2, THALDRASZUS },
+						{ 57.9, 35.6, VALDRAKKEN },	-- TODO: possibly only after DF?
+					},
 				}),
 				------ Chapter 4 ------
 				q(70437, {	-- To Tyrhold

@@ -533,7 +533,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 						},
 					}),
-						o(441795, {	-- Hallowfall Sparkfly
+					o(437302, {	-- Fisherman's Pouch
+						["coord"] = { 56.1, 14.6, HALLOWFALL },
+						["questID"] = 81518,
+						["isWeekly"] = true,
+					}),
+					o(417057, {	-- Hallowfall Farm Supply
+						["sourceQuests"] = { 79173 },	-- Supply the Effort
+						["coord"] = { 63.2, 29.5, HALLOWFALL },
+						["questID"] = 79191,
+						--["isWeekly"] = true,	-- TODO: uncomment if will be up after reset
+					}),
+					o(441795, {	-- Hallowfall Sparkfly
 						["description"] = "Requires level 80. Use a light source item then walk along the river near Stillstone Pond. With time Sparkbugs will appear next to you and randomly may be interactable, granting the pet.",
 						["coord"] = { 66.8, 25.3, HALLOWFALL },
 						--["questID"] = ,
@@ -800,6 +811,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(80530),	-- Radiant Remnant @ 65.5, 23.4	need objectid
 			q(80551),	-- Radiant Remnant @ 64.5, 26.7
 			q(80555),	-- Radiant Remnant @ 64.8, 26.2	need objectid
+			q(80582),	-- Radiant Remnant @ 65.9, 32.3
 			-- Small Keyflames
 			q(80005, {["isWeekly"]=true,}),	-- Empty Crab Cage - Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
 			q(78472, {["isWeekly"]=true,}),	-- Attica Whiskervale - Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7

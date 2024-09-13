@@ -100,6 +100,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["g"] = {
 						n(222605),	-- Aqu'yinra
 						n(222611),	-- Bor'zal the Lurking
+						n(228901),	-- Dark Prophet Grshol
 						n(222629),	-- S'toth the Insatiable
 						n(222640),	-- Venox
 						n(222632),	-- Yor'sith

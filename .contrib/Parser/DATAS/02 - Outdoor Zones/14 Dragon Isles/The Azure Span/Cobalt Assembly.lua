@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}),
 			n(QUESTS, {
 				q(71094, {	-- Help Is Our Way!
-					["sourceQuests"] = { 72435 },	-- Welcome to the Assembly
+					["sourceQuests"] = { 70550 },	-- Welcome to the Assembly
 					["provider"] = { "n", 197100 },	-- Heleth the Wise
 					["coord"] = { 46.4, 25.6, THE_AZURE_SPAN },
 					["g"] = {

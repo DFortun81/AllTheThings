@@ -1047,7 +1047,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82224, {	-- Check on the Compiler
 					["sourceQuests"] = { 80577 },	-- Readying the Recitation
 					["provider"] = { "n", 220600 },	-- Haimaz
-					["coord"] = { 62.0, 45.5, THE_RINGING_DEEPS },
+					["coord"] = { 62.8, 44.2, THE_RINGING_DEEPS },
 					["isBreadcrumb"] = true,
 				}),
 				q(80578, {	-- The Common Costume

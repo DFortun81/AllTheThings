@@ -457,12 +457,10 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(191104),	-- Durgun's Paw
 			i(193049),	-- Earth Key [DNT/UNUSED]
 			i(192454),	-- Elemental Essence
-			i(192478),	-- Elemental Focus
 			i(194428),	-- Elemental Soul Cage NYI
 			i(191117),	-- Enchanted Claws
 			i(193858),	-- Enchanted Tools
 			i(191551),	-- Encrusted Key [DNT]
-			i(191669),	-- Engraved Tusk
 			i(194426),	-- Enriched Soil
 			i(191308),	-- Envenomed Spear
 			i(192496),	-- Exhumed Hunter's Spear
@@ -472,10 +470,8 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(191788),	-- Field Sampling Tool
 			i(193856),	-- Flowery's Rake
 			i(192079),	-- Fossil Fragments
-			i(191671),	-- Fragmented Tuskarr Effigy
 			i(191115),	-- Giant Temporal Mote
 			i(191088),	-- Gorloc Scrimshaw
-			i(191673),	-- Grinning Dolphin Fetish
 			i(190174),	-- Haunch of Salamander Meat
 			i(193405),	-- Headteacher's Ledger
 			i(193416),	-- Holographic Distributor
@@ -485,7 +481,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(193397),	-- Kyrakka's Fangs
 			i(200873),	-- Leftover Bread
 			i(200548),	-- Maldra's Manacles Key
-			i(191672),	-- Mark of the Provider
 			i(191702),	-- Matilda's Favorite Fishing Rod
 			i(200544),	-- Mistvale Map: Illegible
 			i(190191),	-- Muck-Covered Map

@@ -225,12 +225,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(77734),	-- Level 17
 		q(77735),	-- Level 18
 		q(77736),	-- Level 19
-		--q(???),	-- Level 20
+		q(77737),	-- Level 20
 		q(81509),	-- Level 21
 		q(81508),	-- Level 22
 		q(81507),	-- Level 23
 		q(79352),	-- Level 24
-		--q(???),	-- Level 25
+		q(79351),	-- Level 25
 		q(84087),	-- Level 26
 		q(84088),	-- Level 27
 		q(84089),	-- Level 28
@@ -1703,5 +1703,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(83237),	-- Airship: Front 05 - Lantern (spellID 454475)
 		q(83238),	-- Airship: Body Color 01 - Brown (spellID 454478)
 		q(83239),	-- Airship: Back 02 - Multi-Exhaust (spellID 454474)
+		-- Zekvir
+		q(84816),	-- Zekvir pop in Earthcrawl Mines (first time, unsure what tier it was)
+		q(84818),	-- Zekvir pop in The Spiral Weave (2nd time in week, Tier 8)
 	}),
 })));

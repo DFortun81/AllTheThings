@@ -23,7 +23,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					q(82782, {	-- Authenticity in Dress
 						--["provider"] = { "n",  },	--
-						--["coord"] = { 57.0, 53.8, ISLE_OF_DORN },
+						["coord"] = { 53.5, 77.1, THE_PROSCENIUM },
 						["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 14 }
 					}),
 					q(82775, {	-- Quickchange Artist
@@ -44,7 +44,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					q(83240, {	-- The Theater Troupe
 						["provider"] = { "n", 214296 },	-- Stage Manager Huberta
 						["coords"] = {
-							{ 56.5, 52.8, ISLE_OF_DORN },
+							{ 56.4, 51.4, ISLE_OF_DORN },	-- 
 							{ 49.6, 65.1, THE_PROSCENIUM },	-- The Proscenium
 						},
 						["isWeekly"] = true,

@@ -53,19 +53,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(225693),	-- Shadowed Essence
 				},
 			}),
-			o(437302, {	-- Fisherman's Pouch
-				["coord"] = { 56.1, 14.6, HALLOWFALL },
-				["questID"] = 81518,
-			}),
-			--[[	-- Didnt make it to live?
-			o(417057, {	-- Hallowfall Farm Supply
-				["coord"] = { 63.2, 29.5, HALLOWFALL },
-				["questID"] = 79191,
-				["g"] = {
-					-- was only radiant remnant as loot
-				},
-			}),
-			--]]
 			o(437211, {	-- Illuminated Footlocker
 				["description"] = "Catch lightning orbs in highlighted zones 5 times to loot this chest",
 				["coord"] = { 58.4, 27.2, HALLOWFALL },

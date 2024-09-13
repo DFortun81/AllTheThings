@@ -1334,8 +1334,6 @@ root(ROOTS.Unsorted, {
 
 				--- Delves ---
 				--- Probably NYI ---
-				i(225901),	-- Streamlined Relic
-				i(225908),	-- Relicblood of Zekvir
 				--- Fungal Folly ---
 				i(209788),	-- Dispersion Crystal
 				--- Nightfall Sanctum ---

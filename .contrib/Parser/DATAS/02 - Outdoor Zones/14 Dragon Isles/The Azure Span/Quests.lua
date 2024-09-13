@@ -190,7 +190,11 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 188809 },	-- Elder Poa
 					["coord"] = { 35.4, 36.9, THE_AZURE_SPAN },
 					["g"] = {
+						i(191669),	-- Engraved Tusk (QI!)
 						i(191107),	-- Funerary Offering (QI!)
+						i(191671),	-- Fragmented Tuskarr Effigy (QI!)
+						i(191673),	-- Grinning Dolphin Fetish (QI!)
+						i(191672),	-- Mark of the Provider (QI!)
 					},
 				}),
 				q(65871, {	-- Gnoll Way Out
@@ -374,6 +378,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 70.0, 35.3, THE_AZURE_SPAN },
 					["g"] = {
 						i(198025),	-- Bramble Chain Belt
+						i(192478),	-- Elemental Focus (QI!)
 						i(198026),	-- Sleet Shined Waistguard
 						i(198017),	-- Twisted Leather Belt
 						i(197996),	-- Windswept Sash
@@ -522,21 +527,33 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["sourceQuests"] = { 71234 },	-- Nook News
 					["provider"] = { "n", 190691 },	-- Mordigan Ironjaw
 					["coord"] = { 7.6, 44.3, THE_AZURE_SPAN },
+					["g"] = {
+						i(193052),	-- Large Stone (QI!)
+					},
 				}),
 				q(66147, {	-- Crystals in the Water
 					["sourceQuests"] = { 66781 },	-- A Matter of Taste
 					["provider"] = { "n", 187156 },	-- Aelnara
 					["coord"] = { 7.6, 44.2, THE_AZURE_SPAN },
+					["g"] = {
+						i(192203),	-- Crystal Sample (QI!)
+					},
 				}),
 				q(66164, {	-- Fishy Fingers
 					["sourceQuests"] = { 66781 },	-- A Matter of Taste
 					["provider"] = { "n", 187198 },	-- LOU-C Fitzcog
 					["coord"] = { 7.6, 44.3, THE_AZURE_SPAN },
+					["g"] = {
+						i(191680),	-- Stolen Parts (QI!)
+					},
 				}),
 				q(66154, {	-- Salivatory Samples
 					["sourceQuests"] = { 66781 },	-- A Matter of Taste
 					["provider"] = { "n", 187136 },	-- Examiner Rowe
 					["coord"] = { 7.7, 44.3, THE_AZURE_SPAN },
+					["g"] = {
+						i(191202),	-- Saliva Sample (QI!)
+					},
 				}),
 				q(66175, {	-- Field Experiment
 					["sourceQuests"] = {
@@ -1078,7 +1095,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(66428, {	-- Friendship For Granted
 					["sourceQuests"] = { 66427 },	-- A Looming Menace
 					["provider"] = { "n", 189791 },	-- Rannan Korren
-					["coord"] = { 69.5, 60.4, THE_AZURE_SPAN },
+					["coord"] = { 68.5, 60.4, THE_AZURE_SPAN },
 					["g"] = {
 						i(192475),	-- R.A.D.D.E.R.E.R
 					},
@@ -1254,7 +1271,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				q(66212, {	-- Fishing: Aileron Seamoth
 					["sourceQuests"] = { 65849 },	-- To Iskaara
 					["provider"] = { "n", 193877 },	-- Lukoturukk
-					["coord"] = { 13.5, 48.6, THE_AZURE_SPAN },
+					["coord"] = { 14.1, 49.4, THE_AZURE_SPAN },
 					["requireSkill"] = FISHING,
 					["cost"] = { { "i", 194967, 5 }, },	-- 5xAileron Seamoth
 				}),
@@ -2131,7 +2148,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["sourceQuests"] = { 65686 },	-- To the Azure Span
 				["provider"] = { "n", 185608 },	-- Khuri
 				["coord"] = { 41.5, 35.6, THE_AZURE_SPAN },
-				["requireSkill"] = FISHING,
+				--["requireSkill"] = FISHING,	-- TODO: It doesn't require to pickup this quest but you cannot finish it without it
 				["g"] = {
 					i(191646),	-- Blue-Tailed Minnow (QI!)
 				},
