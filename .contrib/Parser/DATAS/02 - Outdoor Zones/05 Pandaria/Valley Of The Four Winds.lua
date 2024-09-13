@@ -1872,6 +1872,7 @@ root(ROOTS.Zones, {
 					q(31315, {	-- The Heartland Legacy
 						["provider"] = { "o", 213767 },	-- Hidden Treasure
 						["sourceQuests"] = { 31314 },	-- Old Man Thistle's Treasure
+						["coord"] = { 31.5, 53.3, 377 },
 						["g"] = {
 							ach(7296),	-- Ain't Lost No More
 						},
