@@ -67,6 +67,7 @@ local function DoReport(reporttype, id)
 
 	if app:SetupReportDialog(dialogID, "Contributor Report: " .. dialogID, reportData) then
 		app.print(app:Linkify("Contributor Report: "..dialogID, app.Colors.ChatLinkError, "dialog:" .. dialogID));
+		app.Audio:PlayReportSound();
 	end
 end
 
