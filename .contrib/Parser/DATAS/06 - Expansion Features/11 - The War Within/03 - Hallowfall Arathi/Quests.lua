@@ -158,6 +158,35 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 			}, {	-- RENOWN 21 --
 			}, {	-- RENOWN 22 --
+				q(81906, {	-- Whispers from the Web
+					--["provider"] = { "n",  },	--
+					--["coord"] = {  },
+				}),
+				q(81908, {	-- A Flame in the Dark
+					["sourceQuests"] = { 81906 },	-- Whispers from the Web
+					--["provider"] = { "n",  },	--
+					["coord"] = { 46.9, 50.1, NERUBAR },
+					["g"] = {
+						i(220212),	-- Aelric's Corrupted Tinderbox (QI!)
+						i(220215),	-- Unidentified Tinderbox (QI!)
+					},
+				}),
+				q(81909, {	-- Absolute Power
+					["sourceQuests"] = { 81908 },	-- A Flame in the Dark
+					--["provider"] = { "n",  },	--
+					["coord"] = { 46.9, 50.1, NERUBAR },
+					["g"] = {
+						i(220359),	-- Aelric's Corrupted Tinderbox (QI!)
+					},
+				}),
+				q(81910, {	-- A Great Responsibility
+					["sourceQuests"] = { 81909 },	-- Absolute Power
+					--["provider"] = { "n",  },	--
+					["coord"] = { 43.2, 56.4, HALLOWFALL },
+					["g"] = {
+						i(220158),	-- Darkened Tinderbox
+					},
+				}),
 			}, {	-- RENOWN 23 --
 				i(224553),	-- Beledar's Attunement (CI!)
 			}, {	-- RENOWN 24 --

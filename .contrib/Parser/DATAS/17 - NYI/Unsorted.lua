@@ -1302,7 +1302,6 @@ root(ROOTS.Unsorted, {
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			n(ARMOR, {
 				--- Might Exist ---
-				i(220158),	-- Darkened Tinderbox
 				i(226695),	-- Cunning Advisor's Favor
 				i(226696),	-- Mighty Advisor's Favor
 				--- Probably NYI (Wowhead data corrupted with beta) ---

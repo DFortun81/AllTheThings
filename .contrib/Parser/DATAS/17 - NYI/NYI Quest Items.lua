@@ -640,8 +640,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
-			i(220212),	-- Aelric's Corrupted Tinderbox
-			i(220359),	-- Aelric's Corrupted Tinderbox
 			i(219939),	-- Alleria's Crystal
 			i(213193),	-- Arathi Army Medallion
 			i(219197),	-- Black Blood Residue
@@ -699,7 +697,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(217312),	-- The Foreman's Third Scroll
 			i(216682),	-- The Vizier's Invitation
 			i(212224),	-- Titan Relics
-			i(220215),	-- Unidentified Tinderbox
 			i(219215),	-- Wax Puddle
 			i(224182),	-- Webbed Ingots
 			i(224810),	-- Woodworm Elixir
