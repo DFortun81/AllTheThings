@@ -118,6 +118,7 @@ HeaderAssignments = {
 	["Deadly Gladiator"] = -1000131,
 	["December"] = -1000160,
 	["Defeat a Lieutenant"] = -1000191,
+	["Delver's Dirigible Schematic"] = -1001033,
 	["Delves"] = -1000907,
 	["Demon Trainer"] = -1000015,
 	["Demonic Gladiator: Legion Season 7"] = -1000995,
@@ -521,4 +522,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001033;
+NextHeaderID = -1001034;
