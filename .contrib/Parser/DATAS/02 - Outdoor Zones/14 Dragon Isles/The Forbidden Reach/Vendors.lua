@@ -53,7 +53,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							{ "c", ELEMENTAL_OVERFLOW, 2000 },
 						},
 					}),
-					i(197136, {	-- Highland Drake: Tapered Nose (DM!)
+					i(197136, {	-- Highland Drake: Tapered Nose (MM!)
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 2500 },
 						},
@@ -67,7 +67,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 							i(200455),	-- Valdrakken Accord Insignia [Rare]
 						},
 					}),
-					i(197626, {	-- Windborne Velocidrake: Exposed Finned Neck (DM!)
+					i(197626, {	-- Windborne Velocidrake: Exposed Finned Neck (MM!)
 						["cost"] = {
 							{ "c", ELEMENTAL_OVERFLOW, 2500 },
 						},

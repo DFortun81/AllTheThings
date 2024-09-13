@@ -27,7 +27,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["questID"] = 74058,
 				["g"] = {
 					bo(69858, true),
-					i(197404),	-- Renewed Proto-Drake: Finned Tail (DM!)
+					i(197404),	-- Renewed Proto-Drake: Finned Tail (MM!)
 				},
 			}),
 			n(197353, {	-- Blisterhide <The Infested>
@@ -38,7 +38,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 16.7, 28.4, THE_AZURE_SPAN },
 				["questID"] = 73870,
 				["g"] = {
-					i(197595),	-- Windborne Velocidrake: Finned Ears (DM!)
+					i(197595),	-- Windborne Velocidrake: Finned Ears (MM!)
 				},
 			}),
 			n(194392, {	-- Brackle

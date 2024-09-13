@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							15819,	-- The Vakthros Ascent: Silver
 						}},
 						["g"] = {
-							i(197118),	-- Highland Drake: Brown Hair (DM!)
+							i(197118),	-- Highland Drake: Brown Hair (MM!)
 						},
 					}),
 					ach(15923, {	-- Azure Span: Gold
@@ -64,7 +64,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							15822,	-- The Vakthros Ascent Advanced: Silver
 						}},
 						["g"] = {
-							i(197094),	-- Highland Drake: Gold and Red Armor (DM!)
+							i(197094),	-- Highland Drake: Gold and Red Armor (MM!)
 						},
 					}),
 					ach(15935, {	-- Azure Span Advanced: Gold

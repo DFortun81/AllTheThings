@@ -141,39 +141,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				["sym"] = {{"select","itemID",
 					------ RENOWN 9 ------
 					-- #if AFTER 10.0.7
-					197015,	-- Cliffside Wylderdrake: Dark Skin Variation (DM!)
+					197015,	-- Cliffside Wylderdrake: Dark Skin Variation (MM!)
 					-- #endif
-					196972,	-- Cliffside Wylderdrake: Plated Brow (DM!)
-					197003,	-- Cliffside Wylderdrake: Spiked Cheek (DM!)
-					196977,	-- Cliffside Wylderdrake: Split Head Horns (DM!)
+					196972,	-- Cliffside Wylderdrake: Plated Brow (MM!)
+					197003,	-- Cliffside Wylderdrake: Spiked Cheek (MM!)
+					196977,	-- Cliffside Wylderdrake: Split Head Horns (MM!)
 					------ RENOWN 15 ------
 					-- #if AFTER 10.0.7
-					196974,	-- Cliffside Wylderdrake: Four-Horned Chin (DM!)
+					196974,	-- Cliffside Wylderdrake: Four-Horned Chin (MM!)
 					-- #endif
-					196998,	-- Cliffside Wylderdrake: Hook Horns (DM!)
-					197009,	-- Cliffside Wylderdrake: Scaled Pattern (DM!)
+					196998,	-- Cliffside Wylderdrake: Hook Horns (MM!)
+					197009,	-- Cliffside Wylderdrake: Scaled Pattern (MM!)
 					-- #if AFTER 10.0.7
-					197004,	-- Cliffside Wylderdrake: Spiked Legs (DM!)
+					197004,	-- Cliffside Wylderdrake: Spiked Legs (MM!)
 					-- #endif
-					197020,	-- Cliffside Wylderdrake: Spear Tail (DM!)
-					196989,	-- Cliffside Wylderdrake: White Hair (DM!)
+					197020,	-- Cliffside Wylderdrake: Spear Tail (MM!)
+					196989,	-- Cliffside Wylderdrake: White Hair (MM!)
 					------ RENOWN 21 ------
-					197145,	-- Highland Drake: Bronze Scales (DM!)
-					197391,	-- Renewned Proto-Drake: Bronze Scales (DM!)
-					197613,	-- Windborne Velocidrake: Bronze Scales (DM!)
-					203351,	-- Winding Slitherdrake: Bronze Scales (DM!)
+					197145,	-- Highland Drake: Bronze Scales (MM!)
+					197391,	-- Renewned Proto-Drake: Bronze Scales (MM!)
+					197613,	-- Windborne Velocidrake: Bronze Scales (MM!)
+					203351,	-- Winding Slitherdrake: Bronze Scales (MM!)
 					------ RENOWN 26 ------
-					196962,	-- Cliffside Wylderdrake: Silver and Purple Armor (DM!)
-					197093,	-- Highland Drake: Silver and Purple Armor (DM!)
-					197350,	-- Renewned Proto-Drake: Silver and Purple Armor (DM!)
-					197581,	-- Windborne Velocidrake: Silver and Purple Armor (DM!)
-					203302,	-- Winding Slitherdrake: Purple and Silver Armor (DM!)
-					196961,	-- Cliffside Wylderdrake: Armor (DM!)
-					197099,	-- Highland Drake: Armor (DM!)
-					197357,	-- Renewed Proto-Drake: Armor (DM!)
-					197588,	-- Windborne Velocidrake: Armor (DM!)
+					196962,	-- Cliffside Wylderdrake: Silver and Purple Armor (MM!)
+					197093,	-- Highland Drake: Silver and Purple Armor (MM!)
+					197350,	-- Renewned Proto-Drake: Silver and Purple Armor (MM!)
+					197581,	-- Windborne Velocidrake: Silver and Purple Armor (MM!)
+					203302,	-- Winding Slitherdrake: Purple and Silver Armor (MM!)
+					196961,	-- Cliffside Wylderdrake: Armor (MM!)
+					197099,	-- Highland Drake: Armor (MM!)
+					197357,	-- Renewed Proto-Drake: Armor (MM!)
+					197588,	-- Windborne Velocidrake: Armor (MM!)
 					-- #if AFTER 10.1.0
-					203305,	-- Winding Slitherdrake: Armor (DM!)
+					203305,	-- Winding Slitherdrake: Armor (MM!)
 					-- #endif
 				}},
 				["g"] = {
@@ -294,23 +294,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					}, {	-- RENOWN 7 --
 					}, {	-- RENOWN 8 --
 					}, {	-- RENOWN 9 --
-						i(197015, {	-- Cliffside Wylderdrake: Dark Skin Variation (DM!)
+						i(197015, {	-- Cliffside Wylderdrake: Dark Skin Variation (MM!)
 							["timeline"] = { ADDED_10_0_7 },
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 50 },
 							},
 						}),
-						i(196972, {	-- Cliffside Wylderdrake: Plated Brow (DM!)
+						i(196972, {	-- Cliffside Wylderdrake: Plated Brow (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 50 },
 							},
 						}),
-						i(197003, {	-- Cliffside Wylderdrake: Spiked Cheek (DM!)
+						i(197003, {	-- Cliffside Wylderdrake: Spiked Cheek (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 50 },
 							},
 						}),
-						i(196977, {	-- Cliffside Wylderdrake: Split Head Horns (DM!)
+						i(196977, {	-- Cliffside Wylderdrake: Split Head Horns (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 50 },
 							},
@@ -426,34 +426,34 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 					}, {	-- RENOWN 15 --
-						i(196974, {	-- Cliffside Wylderdrake: Four-Horned Chin (DM!)
+						i(196974, {	-- Cliffside Wylderdrake: Four-Horned Chin (MM!)
 							["timeline"] = { ADDED_10_0_7 },
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 100 },
 							},
 						}),
-						i(196998, {	-- Cliffside Wylderdrake: Hook Horns (DM!)
+						i(196998, {	-- Cliffside Wylderdrake: Hook Horns (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 100 },
 							},
 						}),
-						i(197009, {	-- Cliffside Wylderdrake: Scaled Pattern (DM!)
+						i(197009, {	-- Cliffside Wylderdrake: Scaled Pattern (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 100 },
 							},
 						}),
-						i(197020, {	-- Cliffside Wylderdrake: Spear Tail (DM!)
+						i(197020, {	-- Cliffside Wylderdrake: Spear Tail (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 100 },
 							},
 						}),
-						i(197004, {	-- Cliffside Wylderdrake: Spiked Legs (DM!)
+						i(197004, {	-- Cliffside Wylderdrake: Spiked Legs (MM!)
 							["timeline"] = { ADDED_10_0_7 },
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 100 },
 							},
 						}),
-						i(196989, {	-- Cliffside Wylderdrake: White Hair (DM!)
+						i(196989, {	-- Cliffside Wylderdrake: White Hair (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 100 },
 							},
@@ -633,25 +633,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 					}, {	-- RENOWN 21 --
-						i(197145, {	-- Highland Drake: Bronze Scales (DM!)
+						i(197145, {	-- Highland Drake: Bronze Scales (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 400 },
 								{ "i", AWAKENED_ORDER, 1 },
 							},
 						}),
-						i(197391, {	-- Renewned Proto-Drake: Bronze Scales (DM!)
+						i(197391, {	-- Renewned Proto-Drake: Bronze Scales (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 400 },
 								{ "i", AWAKENED_ORDER, 1 },
 							},
 						}),
-						i(197613, {	-- Windborne Velocidrake: Bronze Scales (DM!)
+						i(197613, {	-- Windborne Velocidrake: Bronze Scales (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 400 },
 								{ "i", AWAKENED_ORDER, 1 },
 							},
 						}),
-						i(203351, {	-- Winding Slitherdrake: Bronze Scales (DM!)
+						i(203351, {	-- Winding Slitherdrake: Bronze Scales (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 400 },
 								{ "i", AWAKENED_ORDER, 1 },
@@ -742,28 +742,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 					}, {	-- RENOWN 26 --
-						i(196962, {	-- Cliffside Wylderdrake: Silver and Purple Armor (DM!)
+						i(196962, {	-- Cliffside Wylderdrake: Silver and Purple Armor (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 750 },
 								{ "i", DRACONIUM_ORE, 20 },
 								{ "i", TALLSTRIDER_SINEW, 10 },
 							},
 						}),
-						i(197093, {	-- Highland Drake: Silver and Purple Armor (DM!)
+						i(197093, {	-- Highland Drake: Silver and Purple Armor (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 750 },
 								{ "i", DRACONIUM_ORE, 20 },
 								{ "i", TALLSTRIDER_SINEW, 10 },
 							},
 						}),
-						i(197350, {	-- Renewned Proto-Drake: Silver and Purple Armor (DM!)
+						i(197350, {	-- Renewned Proto-Drake: Silver and Purple Armor (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 750 },
 								{ "i", DRACONIUM_ORE, 20 },
 								{ "i", TALLSTRIDER_SINEW, 10 },
 							},
 						}),
-						i(197581, {	-- Windborne Velocidrake: Silver and Purple Armor (DM!)
+						i(197581, {	-- Windborne Velocidrake: Silver and Purple Armor (MM!)
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 750 },
 								{ "i", DRACONIUM_ORE, 20 },

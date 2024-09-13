@@ -123,15 +123,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["g"] = {
-							i(197630, {	-- Windborne Velocidrake: Feathered Neck (DM!)
+							i(197630, {	-- Windborne Velocidrake: Feathered Neck (MM!)
 								["timeline"] = { ADDED_10_0_7 },
 							}),
-							i(197596),	-- Windborne Velocidrake: Horned Jaw (DM!)
-							i(197604, {	-- Windborne Velocidrake: Ox Horns (DM!)
+							i(197596),	-- Windborne Velocidrake: Horned Jaw (MM!)
+							i(197604, {	-- Windborne Velocidrake: Ox Horns (MM!)
 								["timeline"] = { ADDED_10_0_7 },
 							}),
-							i(197610),	-- Windborne Velocidrake: Yellow Horns (DM!)
-							i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned all Skyriding Manuscripts
+							i(197610),	-- Windborne Velocidrake: Yellow Horns (MM!)
+							i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned all Mount Mods
 						},
 					}),
 				}, {	-- RENOWN 7 --
@@ -306,15 +306,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["g"] = {
-							i(197587, {	-- Windborne Velocidrake: Feathered Back (DM!)
+							i(197587, {	-- Windborne Velocidrake: Feathered Back (MM!)
 								["timeline"] = { ADDED_10_0_7 },
 							}),
-							i(197591, {	-- Windborne Velocidrake: Hairy Head (DM!)
+							i(197591, {	-- Windborne Velocidrake: Hairy Head (MM!)
 								["timeline"] = { ADDED_10_0_7 },
 							}),
-							i(197618),	-- Windborne Velocidrake: Long Snout (DM!)
-							i(197623),	-- Windborne Velocidrake: Spiked Tail (DM!)
-							i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned all Skyriding Manuscripts
+							i(197618),	-- Windborne Velocidrake: Long Snout (MM!)
+							i(197623),	-- Windborne Velocidrake: Spiked Tail (MM!)
+							i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned all Mount Mods
 						},
 					}),
 				}, {	-- RENOWN 16 --
@@ -358,10 +358,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 196707 },	-- Quatermaster Huseng
 						["coord"] = { 60.4, 37.7, OHNAHRAN_PLAINS },
 						["g"] = {
-							i(197011),	-- Cliffside Wylderdrake: Green Scales (DM!)
-							i(197143),	-- Highland Drake: Green Scales (DM!)
-							i(197389),	-- Renewed Proto-Drake: Green Scales (DM!)
-							i(203352, {	-- Winding Slitherdrake: Green Scales (DM!)
+							i(197011),	-- Cliffside Wylderdrake: Green Scales (MM!)
+							i(197143),	-- Highland Drake: Green Scales (MM!)
+							i(197389),	-- Renewed Proto-Drake: Green Scales (MM!)
+							i(203352, {	-- Winding Slitherdrake: Green Scales (MM!)
 								["timeline"] = { ADDED_10_1_0 },
 							}),
 						},

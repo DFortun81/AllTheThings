@@ -145,7 +145,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["questID"] = 74036,
 					["g"] = {
 						bo(70947, true),
-						i(196994),	-- Cliffside Wylderdrake: Short Horns (DM!)
+						i(196994),	-- Cliffside Wylderdrake: Short Horns (MM!)
 						i(200300),	-- Sack of Looted Treasures
 						i(200291),	-- Waterlogged Racing Grips
 					},
@@ -211,7 +211,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["questID"] = 74003,
 					["g"] = {
 						i(200171),	-- Grymheart Blade
-						i(197131),	-- Highland Drake: Hairy Cheek (DM!)
+						i(197131),	-- Highland Drake: Hairy Cheek (MM!)
 						i(200175),	-- Repurposed Anvil
 						i(200243),	-- Titanic Scholar's Finery
 					},

@@ -140,7 +140,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 					i(208441),	-- Restful Dozer's Shoes
 					i(208439),	-- Rousing Earth Striders
 					i(208443),	-- Slumbering Ursine Talisman
-					i(210480),	-- Flourishing Whimsydrake: Sunrise Scales (DM!)
+					i(210480),	-- Flourishing Whimsydrake: Sunrise Scales (MM!)
 				}),
 			})),
 			q(76367,	-- Hibernation Heroes

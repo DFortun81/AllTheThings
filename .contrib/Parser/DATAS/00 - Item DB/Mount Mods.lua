@@ -1,7 +1,7 @@
 -- This file will combine itemIDs for customization and questIDs so they dont have to be in the source files
 local Items = ItemDBConditional;
 local i = function(itemID, questID)
-	Items[itemID] = { ["questID"] = questID, ["type"] = "dmID" };
+	Items[itemID] = { ["questID"] = questID, ["type"] = "mmID" };
 end
 
 ------------------
@@ -449,8 +449,6 @@ i(210471, 78401);	-- Flourishing Whimsydrake: Body Armor (might be already 10.2.
 i(207760, 77131);	-- Grotto Netherwing Drake: Armor (might be already 10.2.0)
 i(213561, 79690);	-- Winding Slitherdrake: Void Scales
 
-
---- This File Will Be Renamed to include all Mount Mods!
 ------------------
 -- PATCH 11.0.0 --
 ------------------

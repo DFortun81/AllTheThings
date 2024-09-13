@@ -25,7 +25,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			ach(15984),		-- Elite: Dragonflight Season 1
 			ach(15957, {	-- Gladiator: Dragonflight Season 1
 				i(202086),	-- Crimson Gladiator's Drake (MOUNT!)
-				i(201792),	-- Highland Drake: Embodiment of the Crimson Gladiator (DM!)
+				i(201792),	-- Highland Drake: Embodiment of the Crimson Gladiator (MM!)
 			}),
 			ach(16730),		-- Crimson Gladiator's Drake
 			ach(15951, {	-- Crimson Gladiator: Dragonflight Season 1

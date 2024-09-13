@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							15758,	-- Sundapple Copse Circuit: Silver
 						}},
 						["g"] = {
-							i(197599),	-- Windborne Velocidrake: Red Hair (DM!)
+							i(197599),	-- Windborne Velocidrake: Red Hair (MM!)
 						},
 					}),
 					ach(15920, {	-- Ohn'ahran Plains: Gold
@@ -65,7 +65,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							15761,	-- Sundapple Copse Circuit Advanced: Silver
 						}},
 						["g"] = {
-							i(197580),	-- Windborne Velocidrake: Gold and Red Armor (DM!)
+							i(197580),	-- Windborne Velocidrake: Gold and Red Armor (MM!)
 						},
 					}),
 					ach(15932, {	-- Ohn'ahran Plains Advanced: Gold

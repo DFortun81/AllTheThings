@@ -52,7 +52,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						i(197889),	-- Geyserwalker Visage
 						i(197897),	-- Keratin-Reinforced Coif
 						i(197899),	-- Speakbreaker Barbuta
-						i(197359),	-- Renewed Proto-Drake: Hairy Brow (DM!)
+						i(197359),	-- Renewed Proto-Drake: Hairy Brow (MM!)
 					},
 				}),
 				q(66339, {	-- The Wind Belongs to the Sky
@@ -118,8 +118,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						i(193688),	-- Stormslash
 						i(201929),	-- Stolen Breath of Ohn'ahra
 						i(201743),	-- Technique: Windborne Velocidrake: Silver and Blue Armor (RECIPE!)
-						i(197625),	-- Windborne Velocidrake: Feathery Tail (DM!)
-						i(197635),	-- Windborne Velocidrake: Reaver Pattern (DM!)
+						i(197625),	-- Windborne Velocidrake: Feathery Tail (MM!)
+						i(197635),	-- Windborne Velocidrake: Reaver Pattern (MM!)
 					},
 				}),
 			}),

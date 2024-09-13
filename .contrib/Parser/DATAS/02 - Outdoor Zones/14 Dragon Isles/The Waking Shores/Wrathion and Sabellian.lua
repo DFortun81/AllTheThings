@@ -665,14 +665,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						}, {	-- Friend --
-							i(196964, {	-- Cliffside Wylderdrake: Gold and Black Armor (DM!)
+							i(196964, {	-- Cliffside Wylderdrake: Gold and Black Armor (MM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 750 },
 									{ "i", PRIMAL_BEAR_SPINE, 6 },
 									{ "i", DRACONIUM_ORE, 20 },
 								},
 							}),
-							i(197090, {	-- Highland Drake: Gold and Black Armor (DM!)
+							i(197090, {	-- Highland Drake: Gold and Black Armor (MM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 750 },
 									{ "i", PRIMAL_BEAR_SPINE, 6 },
@@ -684,7 +684,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", DRAGON_SUPPLIES, 150 },
 								},
 							}),
-							i(197346, {	-- Renewed Proto-Drake: Gold and Black Armor (DM!)
+							i(197346, {	-- Renewed Proto-Drake: Gold and Black Armor (MM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 750 },
 									{ "i", PRIMAL_BEAR_SPINE, 6 },
@@ -692,13 +692,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						}, {	-- True Friend --
-							i(197013, {	-- Cliffside Wylderdrake: Black Scales (DM!)
+							i(197013, {	-- Cliffside Wylderdrake: Black Scales (MM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 400 },
 									{ "i", AWAKENED_EARTH, 1 },
 								},
 							}),
-							i(197142, {	-- Highland Drake: Black Scales (DM!)
+							i(197142, {	-- Highland Drake: Black Scales (MM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 400 },
 									{ "i", AWAKENED_EARTH, 1 },
@@ -709,13 +709,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", DRAGON_SUPPLIES, 150 },
 								},
 							}),
-							i(197392, {	-- Renewed Proto-Drake: Black Scales (DM!)
+							i(197392, {	-- Renewed Proto-Drake: Black Scales (MM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 400 },
 									{ "i", AWAKENED_EARTH, 1 },
 								},
 							}),
-							i(197611, {	-- Windborne Velocidrake: Black Scales (DM!)
+							i(197611, {	-- Windborne Velocidrake: Black Scales (MM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 400 },
 									{ "i", AWAKENED_EARTH, 1 },
@@ -845,14 +845,14 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						}, {	-- Friend --
-							i(196964, {	-- Cliffside Wylderdrake: Gold and Black Armor (DM!)
+							i(196964, {	-- Cliffside Wylderdrake: Gold and Black Armor (MM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 750 },
 									{ "i", PRIMAL_BEAR_SPINE, 6 },
 									{ "i", DRACONIUM_ORE, 20 },
 								},
 							}),
-							i(197090, {	-- Highland Drake: Gold and Black Armor (DM!)
+							i(197090, {	-- Highland Drake: Gold and Black Armor (MM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 750 },
 									{ "i", PRIMAL_BEAR_SPINE, 6 },
@@ -864,7 +864,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", DRAGON_SUPPLIES, 150 },
 								},
 							}),
-							i(197346, {	-- Renewed Proto-Drake: Gold and Black Armor (DM!)
+							i(197346, {	-- Renewed Proto-Drake: Gold and Black Armor (MM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 750 },
 									{ "i", PRIMAL_BEAR_SPINE, 6 },
@@ -872,13 +872,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								},
 							}),
 						}, {	-- True Friend --
-							i(197013, {	-- Cliffside Wylderdrake: Black Scales (DM!)
+							i(197013, {	-- Cliffside Wylderdrake: Black Scales (MM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 400 },
 									{ "i", AWAKENED_EARTH, 1 },
 								},
 							}),
-							i(197142, {	-- Highland Drake: Black Scales (DM!)
+							i(197142, {	-- Highland Drake: Black Scales (MM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 400 },
 									{ "i", AWAKENED_EARTH, 1 },
@@ -889,13 +889,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									{ "c", DRAGON_SUPPLIES, 150 },
 								},
 							}),
-							i(197392, {	-- Renewed Proto-Drake: Black Scales (DM!)
+							i(197392, {	-- Renewed Proto-Drake: Black Scales (MM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 400 },
 									{ "i", AWAKENED_EARTH, 1 },
 								},
 							}),
-							i(197611, {	-- Windborne Velocidrake: Black Scales (DM!)
+							i(197611, {	-- Windborne Velocidrake: Black Scales (MM!)
 								["cost"] = {
 									{ "c", DRAGON_SUPPLIES, 400 },
 									{ "i", AWAKENED_EARTH, 1 },

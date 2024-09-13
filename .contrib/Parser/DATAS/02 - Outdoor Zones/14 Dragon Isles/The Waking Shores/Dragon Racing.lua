@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							15743,	-- Wingrest Roundabout: Silver
 						}},
 						["g"] = {
-							i(197370),	-- Renewed Proto-Drake: Red Hair (DM!)
+							i(197370),	-- Renewed Proto-Drake: Red Hair (MM!)
 						},
 					}),
 					ach(15917, {	-- Waking Shores: Gold
@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							15746,	-- Wingrest Roundabout Advanced: Silver
 						}},
 						["g"] = {
-							i(197351),	-- Renewed Proto-Drake: Gold and Red Armor (DM!)
+							i(197351),	-- Renewed Proto-Drake: Gold and Red Armor (MM!)
 						},
 					}),
 					ach(15929, {	-- Waking Shores Advanced: Gold

@@ -66,7 +66,7 @@ settings.Collectibles = {
 };
 settings.ForceAccountWide = {
 	BattlePets = true,
-	DrakewatcherManuscripts = true,
+	MountMods = true,
 	FlightPaths = app.GameBuildVersion >= 110000,
 	Heirlooms = true,
 	Illusions = true,
@@ -82,7 +82,7 @@ settings.RequiredForInsaneMode = {
 	CharacterUnlocks = app.IsRetail,	-- CRIEVE NOTE: This class might be up to the chopping block with a thing I have on my todo list. I'll leave it for now.
 	Conduits = app.GameBuildVersion >= 100000,
 	Deaths = app.IsClassic,
-	DrakewatcherManuscripts = app.GameBuildVersion >= 100000,
+	MountMods = app.GameBuildVersion >= 100000,
 	Exploration = app.IsClassic,	-- CRIEVE NOTE: For now, until Blizzard fixes their broken Retail version of the exploration API.
 	FlightPaths = true,
 	Followers = app.GameBuildVersion >= 60000,

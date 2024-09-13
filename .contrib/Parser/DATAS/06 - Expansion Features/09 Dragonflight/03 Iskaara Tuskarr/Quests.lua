@@ -134,12 +134,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 196544 },	-- Norukk
 						["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
 						["g"] = {
-							i(197101),	-- Highland Drake: Bushy Brow (DM!)
-							i(197155, {	-- Highland Drake: Finned Neck (DM!)
+							i(197101),	-- Highland Drake: Bushy Brow (MM!)
+							i(197155, {	-- Highland Drake: Finned Neck (MM!)
 								["timeline"] = { ADDED_10_0_7 },
 							}),
-							i(197114),	-- Highland Drake: Multi-Horned Head (DM!)
-							i(197132),	-- Highland Drake: Spiked Cheek (DM!)
+							i(197114),	-- Highland Drake: Multi-Horned Head (MM!)
+							i(197132),	-- Highland Drake: Spiked Cheek (MM!)
 						},
 					}),
 					q(72388, {	-- Dragon Isles Supplies
@@ -329,9 +329,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 196544 },	-- Norukk
 						["coord"] = { 12.9, 48.6, THE_AZURE_SPAN },
 						["g"] = {
-							i(197153),	-- Highland Drake: Bladed Tail (DM!)
-							i(197139),	-- Highland Drake: Large Spotted Pattern (DM!)
-							i(197123),	-- Highland Drake: Thorn Horns (DM!)
+							i(197153),	-- Highland Drake: Bladed Tail (MM!)
+							i(197139),	-- Highland Drake: Large Spotted Pattern (MM!)
+							i(197123),	-- Highland Drake: Thorn Horns (MM!)
 						},
 					}),
 					q(72394 , {	-- Dragon Isles Supplies
@@ -465,10 +465,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						-- TODO: this has some source quest? otherwise 72634 is offerred instead
 						["altQuests"] = { 72634 },	-- Dragon Isles Supplies [Renown 19]
 						["g"] = {
-							i(197390),	-- Renewed Proto-Drake: Blue Scales (DM!)
-							i(197612),	-- Windborne Velocidrake: Blue Scales (DM!)
-							i(197012),	-- Cliffside Wylderdrake: Blue Scales (DM!)
-							i(203350, {	-- Winding Slitherdrake: Blue Scales (DM!)
+							i(197390),	-- Renewed Proto-Drake: Blue Scales (MM!)
+							i(197612),	-- Windborne Velocidrake: Blue Scales (MM!)
+							i(197012),	-- Cliffside Wylderdrake: Blue Scales (MM!)
+							i(203350, {	-- Winding Slitherdrake: Blue Scales (MM!)
 								["timeline"] = { ADDED_10_1_0 },
 							}),
 						},

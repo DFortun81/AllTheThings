@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["questID"] = 73222,
 				["g"] = {
 					bo(74344, true),
-					i(197628),	-- Windborne Velocidrake: Plated Neck (DM!)
+					i(197628),	-- Windborne Velocidrake: Plated Neck (MM!)
 				},
 			}),
 			n(203353, {	-- Loot Specialist <Venture Co. Acquisitions>
@@ -158,7 +158,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				-- ["coord"] = { X, Y, THE_FORBIDDEN_REACH },
 				-- ["questID"] = ,
 				["g"] = {
-					i(197000),	-- Cliffside Wylderdrake: Coiled Horns (DM!)
+					i(197000),	-- Cliffside Wylderdrake: Coiled Horns (MM!)
 				},
 			}),
 			n(200742, {	-- Luttrok
@@ -195,7 +195,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["questID"] = 73366,
 				["g"] = {
 					bo(74349, true),
-					i(197636),	-- Windborne Velocidrake: Shrieker Pattern (DM!)
+					i(197636),	-- Windborne Velocidrake: Shrieker Pattern (MM!)
 				},
 			}),
 			n(200978, {	-- Pyrachniss
@@ -204,7 +204,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["questID"] = 73385,
 				["g"] = {
 					bo(74350, true),
-					i(197590),	-- Windborne Velocidrake: Small Head Fin (DM!)
+					i(197590),	-- Windborne Velocidrake: Small Head Fin (MM!)
 				},
 			}),
 			n(200600, {	-- Reisa the Drowned
@@ -275,7 +275,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["questID"] = 73225,
 				["g"] = {
 					bo(74351, true),
-					i(197617),	-- Windborne Velocidrake: Heavy Scales (DM!)
+					i(197617),	-- Windborne Velocidrake: Heavy Scales (MM!)
 				},
 			}),
 			n(200960, {	-- Warden Entrix
@@ -293,7 +293,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				["questID"] = 73409,
 				["g"] = {
 					bo(74347, true),
-					i(197609),	-- Windborne Velocidrake: White Horns (DM!)
+					i(197609),	-- Windborne Velocidrake: White Horns (MM!)
 				},
 			}),
 		})),

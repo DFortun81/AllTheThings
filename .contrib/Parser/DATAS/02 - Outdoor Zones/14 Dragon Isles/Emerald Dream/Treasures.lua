@@ -213,9 +213,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 				i(210171),	-- Formula: Enchanted Aspect's Dreaming Crest (RECIPE!)
 				i(210173),	-- Formula: Enchanted Whelpling's Dreaming Crest (RECIPE!)
 				i(210172),	-- Formula: Enchanted Wyrm's Dreaming Crest (RECIPE!)
-				i(203315),	-- Winding Slitherdrake: Small Spiked Crest (DM!)
-				i(203332),	-- Winding Slitherdrake: Spiked Horns (DM!)
-				i(203357),	-- Winding Slitherdrake: Spiked Tail (DM!)
+				i(203315),	-- Winding Slitherdrake: Small Spiked Crest (MM!)
+				i(203332),	-- Winding Slitherdrake: Spiked Horns (MM!)
+				i(203357),	-- Winding Slitherdrake: Spiked Tail (MM!)
 			}),
 			o(408720, {	-- Laden Somnut
 				["sym"] = {

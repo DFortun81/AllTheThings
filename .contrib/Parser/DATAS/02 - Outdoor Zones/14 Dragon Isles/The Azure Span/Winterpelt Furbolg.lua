@@ -243,10 +243,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 								["cost"] = {{ "c", DRAGON_SUPPLIES, 15 }},
 							}),
 						}, {	-- Honored
-							i(197006, {	-- Cliffside Wylderdrake: Plated Nose (DM!)
+							i(197006, {	-- Cliffside Wylderdrake: Plated Nose (MM!)
 								["cost"] = {{ "c", DRAGON_SUPPLIES, 50 }},
 							}),
-							i(197129, {	-- Highland Drake: Sleek Horns (DM!)
+							i(197129, {	-- Highland Drake: Sleek Horns (MM!)
 								["cost"] = {{ "c", DRAGON_SUPPLIES, 50 }},
 							}),
 							i(204354, {	-- Hollowed Furbolg Food Pack
@@ -258,17 +258,17 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 							i(202282, {	-- Winterpelt Mending Totem
 								["cost"] = {{ "c", DRAGON_SUPPLIES, 150 }},
 							}),
-							i(202273, {	-- Renewed Proto-Drake: Stubby Snout (DM!)
+							i(202273, {	-- Renewed Proto-Drake: Stubby Snout (MM!)
 								["cost"] = {{ "c", DRAGON_SUPPLIES, 50 }},
 							}),
-							i(197583, {	-- Windborne Velocidrake: Exposed Finned Back (DM!)
+							i(197583, {	-- Windborne Velocidrake: Exposed Finned Back (MM!)
 								["cost"] = {{ "c", DRAGON_SUPPLIES, 50 }},
 							}),
 						}, {	-- Revered
-							i(196995, {	-- Cliffside Wylderdrake: Spiked Horns (DM!)
+							i(196995, {	-- Cliffside Wylderdrake: Spiked Horns (MM!)
 								["cost"] = {{ "c", DRAGON_SUPPLIES, 100 }},
 							}),
-							i(197102, {	-- Highland Drake: Horned Chin (DM!)
+							i(197102, {	-- Highland Drake: Horned Chin (MM!)
 								["cost"] = {{ "c", DRAGON_SUPPLIES, 100 }},
 							}),
 							i(204355, {	-- Hollowed Winterpelt Food Pack
@@ -280,13 +280,13 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = ADDED_10_0_7 }, {
 							i(202289, {	-- Recipe: Firewater Sorbet (RECIPE!)
 								["cost"] = {{ "c", DRAGON_SUPPLIES, 750 }},
 							}),
-							i(202279, {	-- Renewed Proto-Drake: Malevolent Horns (DM!)
+							i(202279, {	-- Renewed Proto-Drake: Malevolent Horns (MM!)
 								["cost"] = {{ "c", DRAGON_SUPPLIES, 100 }},
 							}),
 							i(203734, {	-- Snow Blanket (TOY!)
 								["cost"] = {{ "c", DRAGON_SUPPLIES, 200 }},
 							}),
-							i(197629, {	-- Windborne Velocidrake: Spiked Neck (DM!)
+							i(197629, {	-- Windborne Velocidrake: Spiked Neck (MM!)
 								["cost"] = {{ "c", DRAGON_SUPPLIES, 100 }},
 							}),
 						}, {	-- Exalted

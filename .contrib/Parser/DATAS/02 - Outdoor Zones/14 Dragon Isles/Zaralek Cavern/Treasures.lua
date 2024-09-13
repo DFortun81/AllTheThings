@@ -200,7 +200,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 				},
 				["g"] = appendAllGroups({
 					-- Shared Drops
-					i(202275),	-- Renewed Proto-Drake: Plated Jaw (DM!)
+					i(202275),	-- Renewed Proto-Drake: Plated Jaw (MM!)
 				},sharedData({
 					["isDaily"] = true,
 				},{
@@ -292,7 +292,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 						["sym"] = {
 							{"select","mapID",ZARALEK_CAVERN},
 							{"find","headerID",COMMON_BOSS_DROPS},{"pop"},	-- Obtained Weapons/Armor confirmed by Wowhead/Runaway
-							{"select","itemID", 202275},	-- Renewed Proto-Drake: Plated Jaw (DM!)
+							{"select","itemID", 202275},	-- Renewed Proto-Drake: Plated Jaw (MM!)
 						},
 					}),
 				},
@@ -305,10 +305,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_1_0 } }
 					{"select","mapID",ZARALEK_CAVERN},
 					{"find","headerID",COMMON_BOSS_DROPS},
 					{"find","headerID",BACK},{"pop"},		-- Only Cloak/Ring drop from these it appears
-					{"select","itemID", 202275},	-- Renewed Proto-Drake: Plated Jaw (DM!)
+					{"select","itemID", 202275},	-- Renewed Proto-Drake: Plated Jaw (MM!)
 				},
 				["g"] = {
-					i(203313),	-- Winding Slitherdrake: Spiked Chin (DM!)
+					i(203313),	-- Winding Slitherdrake: Spiked Chin (MM!)
 				},
 			}),
 			o_repeated({	-- Stolen Stash

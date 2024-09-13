@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["g"] = {
 						i(198037),	-- Brimming Arcanocrystal
 						i(190769),	-- Unstable Arcana (QI!)
-						i(197622),	-- Windborne Velocidrake: Finned Tail (DM!)
+						i(197622),	-- Windborne Velocidrake: Finned Tail (MM!)
 					},
 				}),
 				q(65852, {	-- Straight to the Top
@@ -177,7 +177,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(198030),	-- Sleet Shined Legplates
 						i(198015),	-- Twisted Leather Breeches
 						i(197998),	-- Windswept Leggings
-						i(197388),	-- Renewed Proto-Drake: Finned Jaw (DM!)
+						i(197388),	-- Renewed Proto-Drake: Finned Jaw (MM!)
 					},
 				}),
 				q(65866, {	-- Snap the Traps
@@ -288,7 +288,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["g"] = {
 						i(191928),	-- Brena's Totem
 						i(198001),	-- Tuskarr Spirit Shawl
-						i(197408),	-- Renewed Proto-Drake: Finned Throat (DM!)
+						i(197408),	-- Renewed Proto-Drake: Finned Throat (MM!)
 					},
 				}),
 				q(65846, {	-- Ley Litter
@@ -427,7 +427,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(198031),	-- Sleet Shined Crushers
 						i(198014),	-- Twisted Leather Gloves
 						i(198000),	-- Windswept Gloves
-						i(197603),	-- Windborne Velocidrake: Curved Horns (DM!)
+						i(197603),	-- Windborne Velocidrake: Curved Horns (MM!)
 					},
 				}),
 				q(70041, {	-- The Storm-Eater's Fury
@@ -565,7 +565,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 188030 },	-- Aelnara
 					["coord"] = { 10.8, 41.2, THE_AZURE_SPAN },
 					["g"] = {
-						i(197381),	-- Renewed Proto-Drake: Gradient Horns (DM!)
+						i(197381),	-- Renewed Proto-Drake: Gradient Horns (MM!)
 						i(201294),	-- Salt Crystal Ring
 					},
 				}),
@@ -759,7 +759,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["g"] = {
 						i(198432),	-- Crude Wind Charm
 						i(198036),	-- Spineripper's Fang
-						i(197385),	-- Renewned Proto-Drake: Horned Jaw (DM!)
+						i(197385),	-- Renewned Proto-Drake: Horned Jaw (MM!)
 					},
 				}),
 			}),
@@ -929,7 +929,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						i(199826),	-- Tuskarr Puddle Steppers
 						i(199829),	-- Tuskarr Wading Boots
 						i(199827),	-- Tuskarr Water Kickers
-						i(197607),	-- Windborne Velocidrake: Split Horns (DM!)
+						i(197607),	-- Windborne Velocidrake: Split Horns (MM!)
 					},
 				}),
 			}),
@@ -1185,7 +1185,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 65.4, 15.9, THE_AZURE_SPAN },
 					["g"] = {
 						i(197988),	-- Frozen Shard Ring
-						i(197627),	-- Windborne Velocidrake: Finned Neck (DM!)
+						i(197627),	-- Windborne Velocidrake: Finned Neck (MM!)
 					},
 				}),
 			}),
@@ -1224,7 +1224,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 188915 },	-- Supply Portal
 					["coord"] = { 46.0, 38.8, THE_AZURE_SPAN },
 					["g"] = {
-						i(197107),	-- Highland Drake: Triple Finned Head (DM!)
+						i(197107),	-- Highland Drake: Triple Finned Head (MM!)
 					},
 				}),
 			}),
@@ -1822,7 +1822,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["coord"] = { 39.5, 63.1, THE_AZURE_SPAN },
 						["maps"] = { 2183 },	-- The Azure Vault
 						["groups"] = {
-							i(197134),	-- Highland Drake: Spiked Legs (DM!)
+							i(197134),	-- Highland Drake: Spiked Legs (MM!)
 						},
 					}),
 					q(72951, {	-- A Peaceful Farewell
@@ -2115,8 +2115,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 75.8, 24.2, THE_AZURE_SPAN },
 				["description"] = "Requires 2 players (or solo if you time it perfectly). Kill the Lost Elemental, then each player needs to click on a different Lava Orb to open a nearby cave. Kill the Stranded Soul inside the cave and loot the quest item.",
 				["g"] = {
-					i(197141),	-- Highland Drake: Scaled Pattern (DM!)
-					i(197137),	-- Highland Drake: Spined Nose (DM!)
+					i(197141),	-- Highland Drake: Scaled Pattern (MM!)
+					i(197137),	-- Highland Drake: Spined Nose (MM!)
 				},
 			}),
 			q(67175, {	-- How To Stop An Exploding Toy Boat

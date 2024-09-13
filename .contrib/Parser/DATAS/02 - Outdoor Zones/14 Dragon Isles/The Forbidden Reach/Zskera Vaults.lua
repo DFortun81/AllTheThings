@@ -1191,7 +1191,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 					["coord"] = { 29.5, 55.7, THE_FORBIDDEN_REACH },
 					["isWeekly"] = true,
 					["g"] = {
-						i(202278),	-- Renewed Proto-Drake: Antlers (DM!)
+						i(202278),	-- Renewed Proto-Drake: Antlers (MM!)
 					},
 				}),
 			}),

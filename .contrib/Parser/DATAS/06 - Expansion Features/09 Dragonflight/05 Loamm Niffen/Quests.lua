@@ -76,9 +76,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 205127 },	-- Newsy
 						["maps"] = { ZARALEK_CAVERN },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
 						["g"] = {
-							i(203310),	-- Winding Slitherdrake: Grand Chin Thorn (DM!)
-							i(203316),	-- Winding Slitherdrake: Large Finned Crest (DM!)
-							i(203327),	-- Winding Slitherdrake: Tan Horns (DM!)
+							i(203310),	-- Winding Slitherdrake: Grand Chin Thorn (MM!)
+							i(203316),	-- Winding Slitherdrake: Large Finned Crest (MM!)
+							i(203327),	-- Winding Slitherdrake: Tan Horns (MM!)
 						},
 					}),
 				}, {	-- RENOWN 6 --
@@ -180,21 +180,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["maps"] = { ZARALEK_CAVERN },	-- Spawns everywhere, but keeping it only listed in the factions 'main zone'
 						["g"] = {
 							spell(409471, {	-- Drake Helms
-								-- auto learns these Skyriding Manuscripts
-								i(196990),	-- Cliffside Wylderdrake: Helm (DM!)
-								i(210476, {	-- Flourishing Whimsydrake: Helmet (DM!)
+								-- auto learns these Mount Mods
+								i(196990),	-- Cliffside Wylderdrake: Helm (MM!)
+								i(210476, {	-- Flourishing Whimsydrake: Helmet (MM!)
 									["timeline"] = { ADDED_10_2_0 },
 								}),
-								i(207770, {	-- Grotto Netherwing Drake: Helm (DM!)
+								i(207770, {	-- Grotto Netherwing Drake: Helm (MM!)
 									["timeline"] = { ADDED_10_2_0 },
 								}),
-								i(197119, {	-- Highland Drake: Helm (DM!)
+								i(197119, {	-- Highland Drake: Helm (MM!)
 									["timeline"] = { ADDED_10_2_0 },
 								}),
-								i(197120),	-- Highland Drake: Ornate Helm (DM!)
-								i(197373),	-- Renewed Proto-Drake: Helm (DM!)
-								i(197600),	-- Windborne Velocidrake: Helm (DM!)
-								i(203326),	-- Winding Slitherdrake: Helm (DM!)
+								i(197120),	-- Highland Drake: Ornate Helm (MM!)
+								i(197373),	-- Renewed Proto-Drake: Helm (MM!)
+								i(197600),	-- Windborne Velocidrake: Helm (MM!)
+								i(203326),	-- Winding Slitherdrake: Helm (MM!)
 							}),
 						},
 					}),

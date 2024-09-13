@@ -154,18 +154,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 185561 },	-- Kaestrasz
 						["coord"] = { 46.8, 78.8, VALDRAKKEN },
 						["lockCriteria"] = {4,
-							"questID", 69215,	-- Cliffside Wylderdrake: Dark Skin Variation (DM!)
-							"questID", 69203,	-- Cliffside Wylderdrake: Plated Brow (DM!)
-							"questID", 69172,	-- Cliffside Wylderdrake: Spiked Cheek (DM!)
-							"questID", 69177,	-- Cliffside Wylderdrake: Split Head Horns (DM!)
+							"questID", 69215,	-- Cliffside Wylderdrake: Dark Skin Variation (MM!)
+							"questID", 69203,	-- Cliffside Wylderdrake: Plated Brow (MM!)
+							"questID", 69172,	-- Cliffside Wylderdrake: Spiked Cheek (MM!)
+							"questID", 69177,	-- Cliffside Wylderdrake: Split Head Horns (MM!)
 						},
 						["g"] = {
-							i(197015, {	-- Cliffside Wylderdrake: Dark Skin Variation (DM!)
+							i(197015, {	-- Cliffside Wylderdrake: Dark Skin Variation (MM!)
 								["timeline"] = { ADDED_10_0_7 },
 							}),
-							i(196972),	-- Cliffside Wylderdrake: Plated Brow (DM!)
-							i(197003),	-- Cliffside Wylderdrake: Spiked Cheek (DM!)
-							i(196977),	-- Cliffside Wylderdrake: Split Head Horns (DM!)
+							i(196972),	-- Cliffside Wylderdrake: Plated Brow (MM!)
+							i(197003),	-- Cliffside Wylderdrake: Spiked Cheek (MM!)
+							i(196977),	-- Cliffside Wylderdrake: Split Head Horns (MM!)
 						},
 					}),
 					q(72682, {	-- Renown Supplies
@@ -409,7 +409,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["provider"] = { "n", 204605 },	-- Travard
 								["coord"] = { 60.4, 58.9, THALDRASZUS },
 								["g"] = {
-									i(208200),	-- Dragon Isles Drakes: Gilded Armor (DM!)
+									i(208200),	-- Dragon Isles Drakes: Gilded Armor (MM!)
 								},
 							}),
 						},
@@ -463,7 +463,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["provider"] = { "n", 208800 },	-- Travard
 								["coord"] = { 60.4, 58.7, THALDRASZUS },
 								["groups"] = {
-									i(208550),	-- Dragon Isles Drakes: White Scales (DM!)
+									i(208550),	-- Dragon Isles Drakes: White Scales (MM!)
 									ach(18958, {	-- Of the Tyr's Guard
 										title(516),	-- <Name> Of the Tyr's Guard
 									}),
@@ -572,16 +572,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 185561 },	-- Kaestrasz
 						["coord"] = { 46.8, 78.8, VALDRAKKEN },
 						["g"] = {
-							i(196974, {	-- Cliffside Wylderdrake: Four-Horned Chin (DM!)
+							i(196974, {	-- Cliffside Wylderdrake: Four-Horned Chin (MM!)
 								["timeline"] = { ADDED_10_0_7 },
 							}),
-							i(196998),	-- Cliffside Wylderdrake: Hook Horns (DM!)
-							i(197009),	-- Cliffside Wylderdrake: Scaled Pattern (DM!)
-							i(197020),	-- Cliffside Wylderdrake: Spear Tail (DM!)
-							i(197004, {	-- Cliffside Wylderdrake: Spiked Legs (DM!)
+							i(196998),	-- Cliffside Wylderdrake: Hook Horns (MM!)
+							i(197009),	-- Cliffside Wylderdrake: Scaled Pattern (MM!)
+							i(197020),	-- Cliffside Wylderdrake: Spear Tail (MM!)
+							i(197004, {	-- Cliffside Wylderdrake: Spiked Legs (MM!)
 								["timeline"] = { ADDED_10_0_7 },
 							}),
-							i(196989),	-- Cliffside Wylderdrake: White Hair (DM!)
+							i(196989),	-- Cliffside Wylderdrake: White Hair (MM!)
 						},
 					}),
 					q(72283, {	-- Renown Supplies
@@ -831,10 +831,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 185561 },	-- Kaestrasz
 						["coord"] = { 46.8, 78.8, VALDRAKKEN },
 						["g"] = {
-							i(197145),	-- Highland Drake: Bronze Scales (DM!)
-							i(197391),	-- Renewed Proto-Drake: Bronze Scales (DM!)
-							i(197613),	-- Windborne Velocidrake: Bronze Scales (DM!)
-							i(203351, {	-- Winding Slitherdrake: Bronze Scales (DM!)
+							i(197145),	-- Highland Drake: Bronze Scales (MM!)
+							i(197391),	-- Renewed Proto-Drake: Bronze Scales (MM!)
+							i(197613),	-- Windborne Velocidrake: Bronze Scales (MM!)
+							i(203351, {	-- Winding Slitherdrake: Bronze Scales (MM!)
 								["timeline"] = { ADDED_10_1_0 },
 							}),
 						},
@@ -964,23 +964,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 185561 },	-- Kaestrasz
 						["coord"] = { 46.8, 78.8, VALDRAKKEN },
 						["g"] = {
-							i(196962),	-- Cliffside Wylderdrake: Silver and Purple Armor (DM!)
-							i(197093),	-- Highland Drake: Silver and Purple Armor (DM!)
-							i(197350),	-- Renewned Proto-Drake: Silver and Purple Armor (DM!)
-							i(197581),	-- Windborne Velocidrake: Silver and Purple Armor (DM!)
+							i(196962),	-- Cliffside Wylderdrake: Silver and Purple Armor (MM!)
+							i(197093),	-- Highland Drake: Silver and Purple Armor (MM!)
+							i(197350),	-- Renewned Proto-Drake: Silver and Purple Armor (MM!)
+							i(197581),	-- Windborne Velocidrake: Silver and Purple Armor (MM!)
 
-							-- auto learns these Skyriding Manuscripts
-							i(196961),	-- Cliffside Wylderdrake: Armor (DM!)
-							i(210471, {	-- Flourishing Whimsydrake: Body Armor (DM!)
+							-- auto learns these Mount Mods
+							i(196961),	-- Cliffside Wylderdrake: Armor (MM!)
+							i(210471, {	-- Flourishing Whimsydrake: Body Armor (MM!)
 								["timeline"] = { ADDED_10_2_7 },	-- maybe since 10.2.0?
 							}),
-							i(207760, {	-- Grotto Netherwing Drake: Armor (DM!)
+							i(207760, {	-- Grotto Netherwing Drake: Armor (MM!)
 								["timeline"] = { ADDED_10_2_7 },	-- maybe since 10.2.0?
 							}),
-							i(197099),	-- Highland Drake: Armor (DM!)
-							i(197357),	-- Renewed Proto-Drake: Armor (DM!)
-							i(197588),	-- Windborne Velocidrake: Armor (DM!)
-							i(203305, {	-- Winding Slitherdrake: Armor (DM!)
+							i(197099),	-- Highland Drake: Armor (MM!)
+							i(197357),	-- Renewed Proto-Drake: Armor (MM!)
+							i(197588),	-- Windborne Velocidrake: Armor (MM!)
+							i(203305, {	-- Winding Slitherdrake: Armor (MM!)
 								["timeline"] = { ADDED_10_1_0 },
 							}),
 						},

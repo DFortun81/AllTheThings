@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 190180 },	-- Guardian Velomir
 					["coord"] = { 35.8, 82.6, THALDRASZUS },
 					["g"] = {
-						i(197110),	-- Highland Drake: Plated Head (DM!)
+						i(197110),	-- Highland Drake: Plated Head (MM!)
 					},
 				}),
 				q(66246, {	-- The Fog of Battle
@@ -103,7 +103,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 190180 },	-- Guardian Velomir
 					["coord"] = { 37.6, 83.1, THALDRASZUS },
 					["g"] = {
-						i(197126),	-- Highland Drake: Hooked Horns (DM!)
+						i(197126),	-- Highland Drake: Hooked Horns (MM!)
 					},
 				}),
 				q(66250, {	-- Where's The Chief?
@@ -211,7 +211,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 186711 },	-- Chromie
 					["coord"] = { 59.6, 81.7, THALDRASZUS },
 					["g"] = {
-						i(197151),	-- Highland Drake: Spiked Tail (DM!)
+						i(197151),	-- Highland Drake: Spiked Tail (MM!)
 					},
 				}),
 				q(66646, {	-- Quelling Causalities
@@ -453,7 +453,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 189174 },	-- Commander Thadezus
 					["coord"] = { 52.7, 67.3, THALDRASZUS },
 					["g"] ={
-						i(197097),	-- Highland Drake: Spined Back (DM!)
+						i(197097),	-- Highland Drake: Spined Back (MM!)
 						i(192795),	-- Rejuvenating Draught
 					},
 				}),
@@ -483,7 +483,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 189188 },	-- Sharnax
 					["coord"] = { 54.8, 64.3, THALDRASZUS },
 					["g"] = {
-						i(197103),	--	Highland Drake: Maned Chin (DM!)
+						i(197103),	--	Highland Drake: Maned Chin (MM!)
 					},
 				}),
 				q(66472, {	-- Primal List
@@ -569,7 +569,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 187289 },	-- Waywatcher Alvi
 					["coord"] = { 57.0, 67.7, THALDRASZUS },
 					["g"] = {
-						i(197122),	-- Highland Drake: Heavy Horns (DM!)
+						i(197122),	-- Highland Drake: Heavy Horns (MM!)
 					},
 				}),
 			}),
@@ -702,7 +702,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 183912 },	-- Harleen Chirpsnide
 					["coord"] = { 43.5, 72.1, THALDRASZUS },
 					["g"] = {
-						i(197133),	-- Highland Drake: Spined Cheek (DM!)
+						i(197133),	-- Highland Drake: Spined Cheek (MM!)
 						i(191891),	-- Professor Chirpsnide's Im-PECK-able Harpy Disguise (TOY!)
 						i(191763),	-- Im-PECK-able Screechflight Disguise v2
 					},

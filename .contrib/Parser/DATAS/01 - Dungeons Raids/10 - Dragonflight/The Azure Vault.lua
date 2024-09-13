@@ -83,8 +83,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						i(212684, {	-- Umbrelskul's Fractured Heart
 							["timeline"] = { ADDED_10_2_6 },
 						}),
-						i(197127),	-- Highland Drake: Grand Thorn Horns (DM!)
-						i(197140),	-- Highland Drake: Small Spotted Pattern (DM!)
+						i(197127),	-- Highland Drake: Grand Thorn Horns (MM!)
+						i(197140),	-- Highland Drake: Small Spotted Pattern (MM!)
 					},
 				}),
 			}),

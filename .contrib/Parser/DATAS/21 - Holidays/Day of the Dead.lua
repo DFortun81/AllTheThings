@@ -214,7 +214,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 					i(46690, {	-- Candy Skull
 						["timeline"] = { ADDED_3_2_2 },
 					}),
-					i(208859, {	-- Cliffside Wylderdrake: Day of the Dead Armor (DM!)
+					i(208859, {	-- Cliffside Wylderdrake: Day of the Dead Armor (MM!)
 						["timeline"] = { ADDED_10_1_7 },
 					}),
 					i(188689, {	-- Marigold Petal Offering Bowl

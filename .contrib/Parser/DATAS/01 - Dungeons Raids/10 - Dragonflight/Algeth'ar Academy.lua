@@ -77,8 +77,8 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 						i(193703),	-- Organized Pontificator's Cap
 						i(193704),	-- Scaled Commencement Spaulders
 						i(193706),	-- Venerated Professor's Greaves
-						i(197147),	-- Highland Drake: Heavy Scales (DM!)
-						i(197112),	-- Highland Drake: Single Horned Head (DM!)
+						i(197147),	-- Highland Drake: Heavy Scales (MM!)
+						i(197112),	-- Highland Drake: Single Horned Head (MM!)
 						i(198910),	-- Technique: Illusion Parchment: Shadow Orb (RECIPE!)
 					},
 				}),

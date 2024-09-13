@@ -294,12 +294,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							"questID", 69561,	-- Spined Brow
 						},
 						["g"] = {
-							i(197369, {	-- Renewed Proto-Drake: Brown Hair (DM!)
+							i(197369, {	-- Renewed Proto-Drake: Brown Hair (MM!)
 								["timeline"] = { ADDED_10_0_7 },
 							}),
-							i(197363),	-- Renewed Proto-Drake: Maned Crest (DM!)
-							i(197386),	-- Renewed Proto-Drake: Spiked Jaw (DM!)
-							i(197360),	-- Renewed Proto-Drake: Spined Brow (DM!)
+							i(197363),	-- Renewed Proto-Drake: Maned Crest (MM!)
+							i(197386),	-- Renewed Proto-Drake: Spiked Jaw (MM!)
+							i(197360),	-- Renewed Proto-Drake: Spined Brow (MM!)
 						},
 					}),
 					q(72035, {	-- Dragon Isles Supplies
@@ -530,12 +530,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							"questID", 69575,	-- Swept Horns
 						},
 						["g"] = {
-							i(197358, {	-- Renewed Proto-Drake: Curved Spiked Brow (DM!)
+							i(197358, {	-- Renewed Proto-Drake: Curved Spiked Brow (MM!)
 								["timeline"] = { ADDED_10_0_7 },
 							}),
-							i(197395),	-- Renewed Proto-Drake: Harrier Pattern (DM!)
-							i(197402),	-- Renewed Proto-Drake: Spiked Club Tail (DM!)
-							i(197374),	-- Renewed Proto-Drake: Swept Horns (DM!)
+							i(197395),	-- Renewed Proto-Drake: Harrier Pattern (MM!)
+							i(197402),	-- Renewed Proto-Drake: Spiked Club Tail (MM!)
+							i(197374),	-- Renewed Proto-Drake: Swept Horns (MM!)
 						},
 					}),
 					q(72040, {	-- Dragon Isles Supplies
@@ -644,10 +644,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							"questID", 73844,	-- Winding Slitherdrake
 						},
 						["g"] = {
-							i(197144),	-- Highland Drake: Red Scales (DM!)
-							i(197010),	-- Cliffside Wylderdrake: Red Scales (DM!)
-							i(197614),	-- Windborne Velocidrake: Red Scales (DM!)
-							i(203353, {["timeline"] = ADDED_10_1_0}),	-- Winding Slitherdrake: Red Scales (DM!)
+							i(197144),	-- Highland Drake: Red Scales (MM!)
+							i(197010),	-- Cliffside Wylderdrake: Red Scales (MM!)
+							i(197614),	-- Windborne Velocidrake: Red Scales (MM!)
+							i(203353, {["timeline"] = ADDED_10_1_0}),	-- Winding Slitherdrake: Red Scales (MM!)
 						},
 					}),
 					q(72047, {	-- Dragon Isles Supplies
