@@ -1,14 +1,14 @@
-DRAKEWATCHER_MANUSCRIPTS = createHeader({
-	readable = "Drakewatcher Manuscripts",
+MOUNT_MODS = createHeader({
+	readable = "Mount Mods",
 	icon = "Interface\\Icons\\ability_dragonriding_glyph01",
 	text = {
-		en = "Drakewatcher Manuscript",
-		es = "Manuscrito de dracovigía",
-		de = "Drachenwächtermanuskript",
-		fr = "Manuscrit guette-drake",
-		it = "Manoscritto del Guardadraghi",
-		pt = "Manuscrito de Vigia-dracos",
-		ru = "Манускрипты наблюдений за драконами",
-		ko = "비룡감시자 필사본",
+		en = "Mount Mods",
+		es = "",
+		de = "",
+		fr = "",
+		it = "",
+		pt = "",
+		ru = "",
+		ko = "",
 	},
 });
