@@ -957,6 +957,9 @@ root(ROOTS.Zones, {
 						["maxReputation"] = { FACTION_LOWER_CITY, HONORED },	-- Lower City, Honored.
 						["cost"] = { { "i", 25719, 30 } },	-- 30x Arakkoa Feather
 						["repeatable"] = true,
+						-- #if NOT ANYCLASSIC
+						["lockCriteria"] = { 1, "factionID", 1011.6 },	-- Lower City, Honored
+						-- #endif
 						["groups"] = {
 							i(31800,  {  -- Outcasts Cache
 								["sym"] = {{"fill"}},	-- fill with Sourced content for this Item since reward of repeatable quest
