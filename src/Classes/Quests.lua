@@ -219,8 +219,12 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	local userignored = ATTAccountWideData.IGNORE_QUEST_PRINT
 	-- add user ignored to the list if any, don't save our hardcoded quests for everyone...
 	if userignored then
-		for i,questID in ipairs(userignored) do
-			IgnoreErrorQuests[questID] = 1;
+		for i,questID in pairs(userignored) do
+			if questID == 1 then
+				IgnoreErrorQuests[i] = 1;
+			else
+				IgnoreErrorQuests[questID] = 1;
+			end
 		end
 		-- a bunch of bad data got contaminated into literally everyones saved vars... so let's clean it
 		if IgnoreErrorQuests[7171] or IgnoreErrorQuests[8706] or IgnoreErrorQuests[10759]
@@ -1362,9 +1366,11 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		return t.name;
 	end or nil,
 	name = function(t)
+		-- TODO: need app.GetAutomaticHeaderData to provide name if not returned from server prior to using QuestNameDefault
 		return QuestNameFromID[t.questID] or RETRIEVING_DATA;
 	end,
 	icon = function(t)
+		-- TODO: need app.GetAutomaticHeaderData to provide icon
 		return app.GetIconFromProviders(t)
 			or (t.isWorldQuest and GetWorldQuestIcon(t))
 			or (t.repeatable and RepeatableQuestIcon)
