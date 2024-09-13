@@ -321,6 +321,803 @@ root(ROOTS.Zones, {
 			}},
 			["timeline"] = { ADDED_4_0_3 },
 		})),
+		header(HEADERS.Achievement, 13279, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 }, }, {	-- Family Battler
+			petbattle(ach(13279, {	-- Family Battler
+				-- Meta Achievement
+				["sym"] = {{"meta_achievement",
+					13270,	-- Beast Mode
+					13271,	-- Critters with Huge Teeth
+					13272,	-- Dragons Make Everything Better
+					13273,	-- Element of Success
+					13274,	-- Fun With Flying
+					13280,	-- Hobbyist Aquarist
+					13281,	-- Human Resources
+					13277,	-- Machine Learning
+					13275,	-- Magician's Secrets
+					13278,	-- Not Quite Dead Yet
+				}},
+			})),
+			petbattle(ach(13270, {	-- Beast Mode
+				crit(43620, {	-- Burly
+					["cr"] = 141479,	-- Burly
+					["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
+				}),
+				crit(43611, {	-- Captain Hermes
+					["cr"] = 139489,	-- Captain Hermes
+					["coord"] = { 21.4, 66.4, DRUSTVAR },
+				}),
+				crit(43619, {	-- Delia Hanako
+					["cr"] = 141292,	-- Delia Hanako
+					["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
+				}),
+				crit(43613, {	-- Dilbert McClint
+					["cr"] = 140461,	-- Dilbert McClint
+					["coord"] = { 63.6, 59.6, DRUSTVAR },
+				}),
+				crit(43612, {	-- Eddie Fixit
+					["cr"] = 140315,	-- Eddie Fixit
+					["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
+				}),
+				crit(43616, {	-- Ellie Vern
+					["cr"] = 141002,	-- Ellie Vern
+					["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
+				}),
+				crit(43614, {	-- Fizzie Sparkwhistle
+					["cr"] = 140813,	-- Fizzie Sparkwhistle
+					["coord"] = { 38.1, 38.5, DRUSTVAR },
+				}),
+				crit(43622, {	-- Grady Prett
+					["cr"] = 141799,	-- Grady Prett
+					["coord"] = { 36.0, 54.6, NAZMIR },
+				}),
+				crit(43627, {	-- Karaga
+					["cr"] = 142096,	-- Karaga
+					["coord"] = { 70.6, 29.6, ZULDAZAR },
+				}),
+				crit(43624, {	-- Keeyo
+					["coord"] = { 57.0, 49.0, VOLDUN },
+					["cr"] = 141879,	-- Keeyo
+				}),
+				crit(43623, {	-- Korval Darkbeard
+					["cr"] = 141814,	-- Korval Darkbeard
+					["coord"] = { 43.0, 38.8, NAZMIR },
+				}),
+				crit(43626, {	-- Kusa
+					["coord"] = { 45.0, 46.4, VOLDUN },
+					["cr"] = 142054,	-- Kusa
+				}),
+				crit(43618, {	-- Kwint
+					["cr"] = 141077,	-- Kwint
+					["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
+				}),
+				crit(43617, {	-- Leana Darkwind
+					["cr"] = 141046,	-- Leana Darkwind
+					["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
+				}),
+				crit(43621, {	-- Lozu
+					["cr"] = 141529,	-- Lozu
+					["coord"] = { 72.8, 48.6, NAZMIR },
+				}),
+				crit(43615, {	-- Michael Skarn
+					["cr"] = 140880,	-- Michael Skarn
+					["coord"] = { 61.0, 17.6, DRUSTVAR },
+				}),
+				crit(43625, {	-- Sizzik
+					["coord"] = { 26.6, 54.8, VOLDUN },
+					["cr"] = 141945,	-- Sizzik
+				}),
+				crit(43628, {	-- Talia Sparkbrow
+					["cr"] = 142114,	-- Talia Sparkbrow
+					["coord"] = { 48.4, 35.0, ZULDAZAR },
+				}),
+				crit(43629, {	-- Zujai
+					["cr"] = 142234,	-- Zujai
+					["coord"] = { 50.6, 24.0, ZULDAZAR },
+				}),
+			})),
+			petbattle(ach(13271, {	-- Critters with Huge Teeth
+				crit(43641, {	-- Burly
+					["cr"] = 141479,	-- Burly
+					["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
+				}),
+				crit(43631, {	-- Captain Hermes
+					["cr"] = 139489,	-- Captain Hermes
+					["coord"] = { 21.4, 66.4, DRUSTVAR },
+				}),
+				crit(43640, {	-- Delia Hanako
+					["cr"] = 141292,	-- Delia Hanako
+					["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
+				}),
+				crit(43633, {	-- Dilbert McClint
+					["cr"] = 140461,	-- Dilbert McClint
+					["coord"] = { 63.6, 59.6, DRUSTVAR },
+				}),
+				crit(43632, {	-- Eddie Fixit
+					["cr"] = 140315,	-- Eddie Fixit
+					["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
+				}),
+				crit(43636, {	-- Ellie Vern
+					["cr"] = 141002,	-- Ellie Vern
+					["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
+				}),
+				crit(43634, {	-- Fizzie Sparkwhistle
+					["cr"] = 140813,	-- Fizzie Sparkwhistle
+					["coord"] = { 38.1, 38.5, DRUSTVAR },
+				}),
+				crit(43644, {	-- Grady Prett
+					["cr"] = 141799,	-- Grady Prett
+					["coord"] = { 36.0, 54.6, NAZMIR },
+				}),
+				crit(43649, {	-- Karaga
+					["cr"] = 142096,	-- Karaga
+					["coord"] = { 70.6, 29.6, ZULDAZAR },
+				}),
+				crit(43646, {	-- Keeyo
+					["coord"] = { 57.0, 49.0, VOLDUN },
+					["cr"] = 141879,	-- Keeyo
+				}),
+				crit(43645, {	-- Korval Darkbeard
+					["cr"] = 141814,	-- Korval Darkbeard
+					["coord"] = { 43.0, 38.8, NAZMIR },
+				}),
+				crit(43648, {	-- Kusa
+					["coord"] = { 45.0, 46.4, VOLDUN },
+					["cr"] = 142054,	-- Kusa
+				}),
+				crit(43639, {	-- Kwint
+					["cr"] = 141077,	-- Kwint
+					["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
+				}),
+				crit(43638, {	-- Leana Darkwind
+					["cr"] = 141046,	-- Leana Darkwind
+					["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
+				}),
+				crit(43643, {	-- Lozu
+					["cr"] = 141529,	-- Lozu
+					["coord"] = { 72.8, 48.6, NAZMIR },
+				}),
+				crit(43635, {	-- Michael Skarn
+					["cr"] = 140880,	-- Michael Skarn
+					["coord"] = { 61.0, 17.6, DRUSTVAR },
+				}),
+				crit(43647, {	-- Sizzik
+					["coord"] = { 26.6, 54.8, VOLDUN },
+					["cr"] = 141945,	-- Sizzik
+				}),
+				crit(43650, {	-- Talia Sparkbrow
+					["cr"] = 142114,	-- Talia Sparkbrow
+					["coord"] = { 48.4, 35.0, ZULDAZAR },
+				}),
+				crit(43651, {	-- Zujai
+					["cr"] = 142234,	-- Zujai
+					["coord"] = { 50.6, 24.0, ZULDAZAR },
+				}),
+			})),
+			petbattle(ach(13272, {	-- Dragons Make Everything Better
+				crit(43661, {	-- Burly
+					["cr"] = 141479,	-- Burly
+					["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
+				}),
+				crit(43652, {	-- Captain Hermes
+					["cr"] = 139489,	-- Captain Hermes
+					["coord"] = { 21.4, 66.4, DRUSTVAR },
+				}),
+				crit(43660, {	-- Delia Hanako
+					["cr"] = 141292,	-- Delia Hanako
+					["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
+				}),
+				crit(43654, {	-- Dilbert McClint
+					["cr"] = 140461,	-- Dilbert McClint
+					["coord"] = { 63.6, 59.6, DRUSTVAR },
+				}),
+				crit(43653, {	-- Eddie Fixit
+					["cr"] = 140315,	-- Eddie Fixit
+					["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
+				}),
+				crit(43657, {	-- Ellie Vern
+					["cr"] = 141002,	-- Ellie Vern
+					["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
+				}),
+				crit(43655, {	-- Fizzie Sparkwhistle
+					["cr"] = 140813,	-- Fizzie Sparkwhistle
+					["coord"] = { 38.1, 38.5, DRUSTVAR },
+				}),
+				crit(43663, {	-- Grady Prett
+					["cr"] = 141799,	-- Grady Prett
+					["coord"] = { 36.0, 54.6, NAZMIR },
+				}),
+				crit(43668, {	-- Karaga
+					["cr"] = 142096,	-- Karaga
+					["coord"] = { 70.6, 29.6, ZULDAZAR },
+				}),
+				crit(43665, {	-- Keeyo
+					["coord"] = { 57.0, 49.0, VOLDUN },
+					["cr"] = 141879,	-- Keeyo
+				}),
+				crit(43664, {	-- Korval Darkbeard
+					["cr"] = 141814,	-- Korval Darkbeard
+					["coord"] = { 43.0, 38.8, NAZMIR },
+				}),
+				crit(43667, {	-- Kusa
+					["coord"] = { 45.0, 46.4, VOLDUN },
+					["cr"] = 142054,	-- Kusa
+				}),
+				crit(43659, {	-- Kwint
+					["cr"] = 141077,	-- Kwint
+					["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
+				}),
+				crit(43658, {	-- Leana Darkwind
+					["cr"] = 141046,	-- Leana Darkwind
+					["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
+				}),
+				crit(43662, {	-- Lozu
+					["cr"] = 141529,	-- Lozu
+					["coord"] = { 72.8, 48.6, NAZMIR },
+				}),
+				crit(43656, {	-- Michael Skarn
+					["cr"] = 140880,	-- Michael Skarn
+					["coord"] = { 61.0, 17.6, DRUSTVAR },
+				}),
+				crit(43666, {	-- Sizzik
+					["coord"] = { 26.6, 54.8, VOLDUN },
+					["cr"] = 141945,	-- Sizzik
+				}),
+				crit(43669, {	-- Talia Sparkbrow
+					["cr"] = 142114,	-- Talia Sparkbrow
+					["coord"] = { 48.4, 35.0, ZULDAZAR },
+				}),
+				crit(43670, {	-- Zujai
+					["cr"] = 142234,	-- Zujai
+					["coord"] = { 50.6, 24.0, ZULDAZAR },
+				}),
+			})),
+			petbattle(ach(13273, {	-- Element of Success
+				crit(43689, {	-- Burly
+					["cr"] = 141479,	-- Burly
+					["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
+				}),
+				crit(43671, {	-- Captain Hermes
+					["cr"] = 139489,	-- Captain Hermes
+					["coord"] = { 21.4, 66.4, DRUSTVAR },
+				}),
+				crit(43679, {	-- Delia Hanako
+					["cr"] = 141292,	-- Delia Hanako
+					["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
+				}),
+				crit(43673, {	-- Dilbert McClint
+					["cr"] = 140461,	-- Dilbert McClint
+					["coord"] = { 63.6, 59.6, DRUSTVAR },
+				}),
+				crit(43672, {	-- Eddie Fixit
+					["cr"] = 140315,	-- Eddie Fixit
+					["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
+				}),
+				crit(43676, {	-- Ellie Vern
+					["cr"] = 141002,	-- Ellie Vern
+					["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
+				}),
+				crit(43674, {	-- Fizzie Sparkwhistle
+					["cr"] = 140813,	-- Fizzie Sparkwhistle
+					["coord"] = { 38.1, 38.5, DRUSTVAR },
+				}),
+				crit(43691, {	-- Grady Prett
+					["cr"] = 141799,	-- Grady Prett
+					["coord"] = { 36.0, 54.6, NAZMIR },
+				}),
+				crit(43696, {	-- Karaga
+					["cr"] = 142096,	-- Karaga
+					["coord"] = { 70.6, 29.6, ZULDAZAR },
+				}),
+				crit(43693, {	-- Keeyo
+					["coord"] = { 57.0, 49.0, VOLDUN },
+					["cr"] = 141879,	-- Keeyo
+				}),
+				crit(43692, {	-- Korval Darkbeard
+					["cr"] = 141814,	-- Korval Darkbeard
+					["coord"] = { 43.0, 38.8, NAZMIR },
+				}),
+				crit(43695, {	-- Kusa
+					["coord"] = { 45.0, 46.4, VOLDUN },
+					["cr"] = 142054,	-- Kusa
+				}),
+				crit(43678, {	-- Kwint
+					["cr"] = 141077,	-- Kwint
+					["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
+				}),
+				crit(43677, {	-- Leana Darkwind
+					["cr"] = 141046,	-- Leana Darkwind
+					["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
+				}),
+				crit(43690, {	-- Lozu
+					["cr"] = 141529,	-- Lozu
+					["coord"] = { 72.8, 48.6, NAZMIR },
+				}),
+				crit(43675, {	-- Michael Skarn
+					["cr"] = 140880,	-- Michael Skarn
+					["coord"] = { 61.0, 17.6, DRUSTVAR },
+				}),
+				crit(43694, {	-- Sizzik
+					["coord"] = { 26.6, 54.8, VOLDUN },
+					["cr"] = 141945,	-- Sizzik
+				}),
+				crit(43697, {	-- Talia Sparkbrow
+					["cr"] = 142114,	-- Talia Sparkbrow
+					["coord"] = { 48.4, 35.0, ZULDAZAR },
+				}),
+				crit(43698, {	-- Zujai
+					["cr"] = 142234,	-- Zujai
+					["coord"] = { 50.6, 24.0, ZULDAZAR },
+				}),
+			})),
+			petbattle(ach(13274, {	-- Fun With Flying
+				crit(43708, {	-- Burly
+					["cr"] = 141479,	-- Burly
+					["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
+				}),
+				crit(43699, {	-- Captain Hermes
+					["cr"] = 139489,	-- Captain Hermes
+					["coord"] = { 21.4, 66.4, DRUSTVAR },
+				}),
+				crit(43707, {	-- Delia Hanako
+					["cr"] = 141292,	-- Delia Hanako
+					["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
+				}),
+				crit(43701, {	-- Dilbert McClint
+					["cr"] = 140461,	-- Dilbert McClint
+					["coord"] = { 63.6, 59.6, DRUSTVAR },
+				}),
+				crit(43700, {	-- Eddie Fixit
+					["cr"] = 140315,	-- Eddie Fixit
+					["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
+				}),
+				crit(43704, {	-- Ellie Vern
+					["cr"] = 141002,	-- Ellie Vern
+					["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
+				}),
+				crit(43702, {	-- Fizzie Sparkwhistle
+					["cr"] = 140813,	-- Fizzie Sparkwhistle
+					["coord"] = { 38.1, 38.5, DRUSTVAR },
+				}),
+				crit(43710, {	-- Grady Prett
+					["cr"] = 141799,	-- Grady Prett
+					["coord"] = { 36.0, 54.6, NAZMIR },
+				}),
+				crit(43715, {	-- Karaga
+					["cr"] = 142096,	-- Karaga
+					["coord"] = { 70.6, 29.6, ZULDAZAR },
+				}),
+				crit(43712, {	-- Keeyo
+					["coord"] = { 57.0, 49.0, VOLDUN },
+					["cr"] = 141879,	-- Keeyo
+				}),
+				crit(43711, {	-- Korval Darkbeard
+					["cr"] = 141814,	-- Korval Darkbeard
+					["coord"] = { 43.0, 38.8, NAZMIR },
+				}),
+				crit(43714, {	-- Kusa
+					["coord"] = { 45.0, 46.4, VOLDUN },
+					["cr"] = 142054,	-- Kusa
+				}),
+				crit(43706, {	-- Kwint
+					["cr"] = 141077,	-- Kwint
+					["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
+				}),
+				crit(43705, {	-- Leana Darkwind
+					["cr"] = 141046,	-- Leana Darkwind
+					["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
+				}),
+				crit(43709, {	-- Lozu
+					["cr"] = 141529,	-- Lozu
+					["coord"] = { 72.8, 48.6, NAZMIR },
+				}),
+				crit(43703, {	-- Michael Skarn
+					["cr"] = 140880,	-- Michael Skarn
+					["coord"] = { 61.0, 17.6, DRUSTVAR },
+				}),
+				crit(43713, {	-- Sizzik
+					["coord"] = { 26.6, 54.8, VOLDUN },
+					["cr"] = 141945,	-- Sizzik
+				}),
+				crit(43716, {	-- Talia Sparkbrow
+					["cr"] = 142114,	-- Talia Sparkbrow
+					["coord"] = { 48.4, 35.0, ZULDAZAR },
+				}),
+				crit(43717, {	-- Zujai
+					["cr"] = 142234,	-- Zujai
+					["coord"] = { 50.6, 24.0, ZULDAZAR },
+				}),
+			})),
+			petbattle(ach(13280, {	-- Hobbyist Aquarist
+				crit(43600, {	-- Burly
+					["cr"] = 141479,	-- Burly
+					["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
+				}),
+				crit(43591, {	-- Captain Hermes
+					["cr"] = 139489,	-- Captain Hermes
+					["coord"] = { 21.4, 66.4, DRUSTVAR },
+				}),
+				crit(43599, {	-- Delia Hanako
+					["cr"] = 141292,	-- Delia Hanako
+					["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
+				}),
+				crit(43593, {	-- Dilbert McClint
+					["cr"] = 140461,	-- Dilbert McClint
+					["coord"] = { 63.6, 59.6, DRUSTVAR },
+				}),
+				crit(43592, {	-- Eddie Fixit
+					["cr"] = 140315,	-- Eddie Fixit
+					["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
+				}),
+				crit(43596, {	-- Ellie Vern
+					["cr"] = 141002,	-- Ellie Vern
+					["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
+				}),
+				crit(43594, {	-- Fizzie Sparkwhistle
+					["cr"] = 140813,	-- Fizzie Sparkwhistle
+					["coord"] = { 38.1, 38.5, DRUSTVAR },
+				}),
+				crit(43602, {	-- Grady Prett
+					["cr"] = 141799,	-- Grady Prett
+					["coord"] = { 36.0, 54.6, NAZMIR },
+				}),
+				crit(43607, {	-- Karaga
+					["cr"] = 142096,	-- Karaga
+					["coord"] = { 70.6, 29.6, ZULDAZAR },
+				}),
+				crit(43604, {	-- Keeyo
+					["coord"] = { 57.0, 49.0, VOLDUN },
+					["cr"] = 141879,	-- Keeyo
+				}),
+				crit(43603, {	-- Korval Darkbeard
+					["cr"] = 141814,	-- Korval Darkbeard
+					["coord"] = { 43.0, 38.8, NAZMIR },
+				}),
+				crit(43606, {	-- Kusa
+					["coord"] = { 45.0, 46.4, VOLDUN },
+					["cr"] = 142054,	-- Kusa
+				}),
+				crit(43598, {	-- Kwint
+					["cr"] = 141077,	-- Kwint
+					["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
+				}),
+				crit(43597, {	-- Leana Darkwind
+					["cr"] = 141046,	-- Leana Darkwind
+					["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
+				}),
+				crit(43601, {	-- Lozu
+					["cr"] = 141529,	-- Lozu
+					["coord"] = { 72.8, 48.6, NAZMIR },
+				}),
+				crit(43595, {	-- Michael Skarn
+					["cr"] = 140880,	-- Michael Skarn
+					["coord"] = { 61.0, 17.6, DRUSTVAR },
+				}),
+				crit(43605, {	-- Sizzik
+					["coord"] = { 26.6, 54.8, VOLDUN },
+					["cr"] = 141945,	-- Sizzik
+				}),
+				crit(43608, {	-- Talia Sparkbrow
+					["cr"] = 142114,	-- Talia Sparkbrow
+					["coord"] = { 48.4, 35.0, ZULDAZAR },
+				}),
+				crit(43609, {	-- Zujai
+					["cr"] = 142234,	-- Zujai
+					["coord"] = { 50.6, 24.0, ZULDAZAR },
+				}),
+			})),
+			petbattle(ach(13281, {	-- Human Resources
+				crit(43730, {	-- Burly
+					["cr"] = 141479,	-- Burly
+					["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
+				}),
+				crit(43721, {	-- Captain Hermes
+					["cr"] = 139489,	-- Captain Hermes
+					["coord"] = { 21.4, 66.4, DRUSTVAR },
+				}),
+				crit(43729, {	-- Delia Hanako
+					["cr"] = 141292,	-- Delia Hanako
+					["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
+				}),
+				crit(43723, {	-- Dilbert McClint
+					["cr"] = 140461,	-- Dilbert McClint
+					["coord"] = { 63.6, 59.6, DRUSTVAR },
+				}),
+				crit(43722, {	-- Eddie Fixit
+					["cr"] = 140315,	-- Eddie Fixit
+					["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
+				}),
+				crit(43726, {	-- Ellie Vern
+					["cr"] = 141002,	-- Ellie Vern
+					["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
+				}),
+				crit(43724, {	-- Fizzie Sparkwhistle
+					["cr"] = 140813,	-- Fizzie Sparkwhistle
+					["coord"] = { 38.1, 38.5, DRUSTVAR },
+				}),
+				crit(43732, {	-- Grady Prett
+					["cr"] = 141799,	-- Grady Prett
+					["coord"] = { 36.0, 54.6, NAZMIR },
+				}),
+				crit(43737, {	-- Karaga
+					["cr"] = 142096,	-- Karaga
+					["coord"] = { 70.6, 29.6, ZULDAZAR },
+				}),
+				crit(43734, {	-- Keeyo
+					["coord"] = { 57.0, 49.0, VOLDUN },
+					["cr"] = 141879,	-- Keeyo
+				}),
+				crit(43733, {	-- Korval Darkbeard
+					["cr"] = 141814,	-- Korval Darkbeard
+					["coord"] = { 43.0, 38.8, NAZMIR },
+				}),
+				crit(43736, {	-- Kusa
+					["coord"] = { 45.0, 46.4, VOLDUN },
+					["cr"] = 142054,	-- Kusa
+				}),
+				crit(43728, {	-- Kwint
+					["cr"] = 141077,	-- Kwint
+					["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
+				}),
+				crit(43727, {	-- Leana Darkwind
+					["cr"] = 141046,	-- Leana Darkwind
+					["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
+				}),
+				crit(43731, {	-- Lozu
+					["cr"] = 141529,	-- Lozu
+					["coord"] = { 72.8, 48.6, NAZMIR },
+				}),
+				crit(43725, {	-- Michael Skarn
+					["cr"] = 140880,	-- Michael Skarn
+					["coord"] = { 61.0, 17.6, DRUSTVAR },
+				}),
+				crit(43735, {	-- Sizzik
+					["coord"] = { 26.6, 54.8, VOLDUN },
+					["cr"] = 141945,	-- Sizzik
+				}),
+				crit(43738, {	-- Talia Sparkbrow
+					["cr"] = 142114,	-- Talia Sparkbrow
+					["coord"] = { 48.4, 35.0, ZULDAZAR },
+				}),
+				crit(43739, {	-- Zujai
+					["cr"] = 142234,	-- Zujai
+					["coord"] = { 50.6, 24.0, ZULDAZAR },
+				}),
+			})),
+			petbattle(ach(13277, {	-- Machine Learning
+				crit(43768, {	-- Burly
+					["cr"] = 141479,	-- Burly
+					["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
+				}),
+				crit(43759, {	-- Captain Hermes
+					["cr"] = 139489,	-- Captain Hermes
+					["coord"] = { 21.4, 66.4, DRUSTVAR },
+				}),
+				crit(43767, {	-- Delia Hanako
+					["cr"] = 141292,	-- Delia Hanako
+					["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
+				}),
+				crit(43761, {	-- Dilbert McClint
+					["cr"] = 140461,	-- Dilbert McClint
+					["coord"] = { 63.6, 59.6, DRUSTVAR },
+				}),
+				crit(43760, {	-- Eddie Fixit
+					["cr"] = 140315,	-- Eddie Fixit
+					["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
+				}),
+				crit(43764, {	-- Ellie Vern
+					["cr"] = 141002,	-- Ellie Vern
+					["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
+				}),
+				crit(43762, {	-- Fizzie Sparkwhistle
+					["cr"] = 140813,	-- Fizzie Sparkwhistle
+					["coord"] = { 38.1, 38.5, DRUSTVAR },
+				}),
+				crit(43770, {	-- Grady Prett
+					["cr"] = 141799,	-- Grady Prett
+					["coord"] = { 36.0, 54.6, NAZMIR },
+				}),
+				crit(43775, {	-- Karaga
+					["cr"] = 142096,	-- Karaga
+					["coord"] = { 70.6, 29.6, ZULDAZAR },
+				}),
+				crit(43772, {	-- Keeyo
+					["coord"] = { 57.0, 49.0, VOLDUN },
+					["cr"] = 141879,	-- Keeyo
+				}),
+				crit(43771, {	-- Korval Darkbeard
+					["cr"] = 141814,	-- Korval Darkbeard
+					["coord"] = { 43.0, 38.8, NAZMIR },
+				}),
+				crit(43774, {	-- Kusa
+					["coord"] = { 45.0, 46.4, VOLDUN },
+					["cr"] = 142054,	-- Kusa
+				}),
+				crit(43766, {	-- Kwint
+					["cr"] = 141077,	-- Kwint
+					["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
+				}),
+				crit(43765, {	-- Leana Darkwind
+					["cr"] = 141046,	-- Leana Darkwind
+					["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
+				}),
+				crit(43769, {	-- Lozu
+					["cr"] = 141529,	-- Lozu
+					["coord"] = { 72.8, 48.6, NAZMIR },
+				}),
+				crit(43763, {	-- Michael Skarn
+					["cr"] = 140880,	-- Michael Skarn
+					["coord"] = { 61.0, 17.6, DRUSTVAR },
+				}),
+				crit(43773, {	-- Sizzik
+					["coord"] = { 26.6, 54.8, VOLDUN },
+					["cr"] = 141945,	-- Sizzik
+				}),
+				crit(43776, {	-- Talia Sparkbrow
+					["cr"] = 142114,	-- Talia Sparkbrow
+					["coord"] = { 48.4, 35.0, ZULDAZAR },
+				}),
+				crit(43777, {	-- Zujai
+					["cr"] = 142234,	-- Zujai
+					["coord"] = { 50.6, 24.0, ZULDAZAR },
+				}),
+			})),
+			petbattle(ach(13275, {	-- Magician's Secrets
+				crit(43749, {	-- Burly
+					["cr"] = 141479,	-- Burly
+					["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
+				}),
+				crit(43740, {	-- Captain Hermes
+					["cr"] = 139489,	-- Captain Hermes
+					["coord"] = { 21.4, 66.4, DRUSTVAR },
+				}),
+				crit(43748, {	-- Delia Hanako
+					["cr"] = 141292,	-- Delia Hanako
+					["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
+				}),
+				crit(43742, {	-- Dilbert McClint
+					["cr"] = 140461,	-- Dilbert McClint
+					["coord"] = { 63.6, 59.6, DRUSTVAR },
+				}),
+				crit(43741, {	-- Eddie Fixit
+					["cr"] = 140315,	-- Eddie Fixit
+					["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
+				}),
+				crit(44012, {	-- Ellie Vern
+					["cr"] = 141002,	-- Ellie Vern
+					["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
+				}),
+				crit(43743, {	-- Fizzie Sparkwhistle
+					["cr"] = 140813,	-- Fizzie Sparkwhistle
+					["coord"] = { 38.1, 38.5, DRUSTVAR },
+				}),
+				crit(43751, {	-- Grady Prett
+					["cr"] = 141799,	-- Grady Prett
+					["coord"] = { 36.0, 54.6, NAZMIR },
+				}),
+				crit(43756, {	-- Karaga
+					["cr"] = 142096,	-- Karaga
+					["coord"] = { 70.6, 29.6, ZULDAZAR },
+				}),
+				crit(43753, {	-- Keeyo
+					["coord"] = { 57.0, 49.0, VOLDUN },
+					["cr"] = 141879,	-- Keeyo
+				}),
+				crit(43752, {	-- Korval Darkbeard
+					["cr"] = 141814,	-- Korval Darkbeard
+					["coord"] = { 43.0, 38.8, NAZMIR },
+				}),
+				crit(43755, {	-- Kusa
+					["coord"] = { 45.0, 46.4, VOLDUN },
+					["cr"] = 142054,	-- Kusa
+				}),
+				crit(43747, {	-- Kwint
+					["cr"] = 141077,	-- Kwint
+					["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
+				}),
+				crit(43746, {	-- Leana Darkwind
+					["cr"] = 141046,	-- Leana Darkwind
+					["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
+				}),
+				crit(43750, {	-- Lozu
+					["cr"] = 141529,	-- Lozu
+					["coord"] = { 72.8, 48.6, NAZMIR },
+				}),
+				crit(43744, {	-- Michael Skarn
+					["cr"] = 140880,	-- Michael Skarn
+					["coord"] = { 61.0, 17.6, DRUSTVAR },
+				}),
+				crit(43754, {	-- Sizzik
+					["coord"] = { 26.6, 54.8, VOLDUN },
+					["cr"] = 141945,	-- Sizzik
+				}),
+				crit(43757, {	-- Talia Sparkbrow
+					["cr"] = 142114,	-- Talia Sparkbrow
+					["coord"] = { 48.4, 35.0, ZULDAZAR },
+				}),
+				crit(43758, {	-- Zujai
+					["cr"] = 142234,	-- Zujai
+					["coord"] = { 50.6, 24.0, ZULDAZAR },
+				}),
+			})),
+			petbattle(ach(13278, {	-- Not Quite Dead Yet
+				crit(43787, {	-- Burly
+					["cr"] = 141479,	-- Burly
+					["coord"] = { 67.6, 12.8, TIRAGARDE_SOUND },
+				}),
+				crit(43778, {	-- Captain Hermes
+					["cr"] = 139489,	-- Captain Hermes
+					["coord"] = { 21.4, 66.4, DRUSTVAR },
+				}),
+				crit(43786, {	-- Delia Hanako
+					["cr"] = 141292,	-- Delia Hanako
+					["coord"] = { 59.6, 33.2, TIRAGARDE_SOUND },
+				}),
+				crit(43780, {	-- Dilbert McClint
+					["cr"] = 140461,	-- Dilbert McClint
+					["coord"] = { 63.6, 59.6, DRUSTVAR },
+				}),
+				crit(43779, {	-- Eddie Fixit
+					["cr"] = 140315,	-- Eddie Fixit
+					["coord"] = { 36.5, 33.7, STORMSONG_VALLEY },
+				}),
+				crit(43783, {	-- Ellie Vern
+					["cr"] = 141002,	-- Ellie Vern
+					["coord"] = { 65.0, 50.8, STORMSONG_VALLEY },
+				}),
+				crit(43781, {	-- Fizzie Sparkwhistle
+					["cr"] = 140813,	-- Fizzie Sparkwhistle
+					["coord"] = { 38.1, 38.5, DRUSTVAR },
+				}),
+				crit(43789, {	-- Grady Prett
+					["cr"] = 141799,	-- Grady Prett
+					["coord"] = { 36.0, 54.6, NAZMIR },
+				}),
+				crit(43794, {	-- Karaga
+					["cr"] = 142096,	-- Karaga
+					["coord"] = { 70.6, 29.6, ZULDAZAR },
+				}),
+				crit(43791, {	-- Keeyo
+					["coord"] = { 57.0, 49.0, VOLDUN },
+					["cr"] = 141879,	-- Keeyo
+				}),
+				crit(43790, {	-- Korval Darkbeard
+					["cr"] = 141814,	-- Korval Darkbeard
+					["coord"] = { 43.0, 38.8, NAZMIR },
+				}),
+				crit(43793, {	-- Kusa
+					["coord"] = { 45.0, 46.4, VOLDUN },
+					["cr"] = 142054,	-- Kusa
+				}),
+				crit(43785, {	-- Kwint
+					["cr"] = 141077,	-- Kwint
+					["coord"] = { 86.2, 38.6, TIRAGARDE_SOUND },
+				}),
+				crit(43784, {	-- Leana Darkwind
+					["cr"] = 141046,	-- Leana Darkwind
+					["coord"] = { 77.2, 29.0, STORMSONG_VALLEY },
+				}),
+				crit(43788, {	-- Lozu
+					["cr"] = 141529,	-- Lozu
+					["coord"] = { 72.8, 48.6, NAZMIR },
+				}),
+				crit(43782, {	-- Michael Skarn
+					["cr"] = 140880,	-- Michael Skarn
+					["coord"] = { 61.0, 17.6, DRUSTVAR },
+				}),
+				crit(43792, {	-- Sizzik
+					["coord"] = { 26.6, 54.8, VOLDUN },
+					["cr"] = 141945,	-- Sizzik
+				}),
+				crit(43795, {	-- Talia Sparkbrow
+					["cr"] = 142114,	-- Talia Sparkbrow
+					["coord"] = { 48.4, 35.0, ZULDAZAR },
+				}),
+				crit(43796, {	-- Zujai
+					["cr"] = 142234,	-- Zujai
+					["coord"] = { 50.6, 24.0, ZULDAZAR },
+				}),
+			})),
+		})),
 		ach(9924, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0 }, }, {	-- Field Photographer
 			title(307),	-- Field Photographer <Name>
 			crit(27865),	-- Onyxia's Lair

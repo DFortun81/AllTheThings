@@ -11,17 +11,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 		},
 		["lvl"] = 110,
 		["g"] = {
-			n(ACHIEVEMENTS,  {
-				ach(13020, {	-- Bow to Your Masters
-					["collectible"] = false,
-					["races"] = HORDE_ONLY,
-					["g"] = {
-						crit(41502, {	-- Rezan Respected
-							["cr"] = 122963,	-- Rezan
-						}),
-					},
-				}),
-			}),
 			n(DROPS, {
 				i(159841, {	-- Tome of Hex: Skeletal Hatchling (CI!)
 					["crs"] = { 122963 },	-- Rezan

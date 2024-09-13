@@ -72,25 +72,6 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 49.9, 33.3, DAZARALOR },
 				["races"] = HORDE_ONLY,
 			}),
-			ach(11861, {	-- The Throne of Zuldazar
-				["collectible"] = false,
-				["races"] = HORDE_ONLY,
-				["g"] = {
-					crit(40025, {	--  Port of Zuldazar
-						["sourceQuests"] = { 50881 },	-- Royal Report
-					}),
-					crit(37954, {	-- The Zanchuli Council
-						["sourceQuests"] = {	-- whichever one you pick
-							47439,	-- Gonk, Lord of the Pack
-						},
-					}),
-					crit(37953, {	-- The Zanchuli Council
-						["sourceQuests"] = {	-- whichever one you pick
-							47440,	-- Pa'ku, Master of Winds
-						},
-					}),
-				},
-			}),
 			ach(12555, {	-- Welcome to Zandalar
 				["sourceQuests"] = { 52131 },	-- We Need Each Other
 				["races"] = HORDE_ONLY,

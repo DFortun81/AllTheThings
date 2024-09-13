@@ -49,7 +49,32 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
                 i(161215),	-- Obsidian Krolusk (MOUNT!)
             },
 		}),
-		ach(12489),	-- Losing My Profession
+		ach(12489, {	-- Losing My Profession
+			crit(40750, {	-- Brutik Blackanvil
+				["cr"] = 141800,	-- Brutik Blackanvil
+			}),
+			crit(40145, {	-- Governess Tabitha
+				["cr"] = 131595,	-- Governess Tabitha
+			}),
+			crit(40147, {	-- Groundskeeper Lilith
+				["cr"] = 131617,	-- Groundskeeper Lilith
+			}),
+			crit(40146, {	-- Head Vintner Justin
+				["cr"] = 131615,	-- Head Vintner Justin
+			}),
+			crit(40149, {	-- Huntmaster Grath
+				["cr"] = 131853,	-- Huntmaster Grath
+			}),
+			crit(40751, {	-- Liz Vilepot
+				["cr"] = 141792,	-- Liz Vilepot
+			}),
+			crit(40148, {	-- Seamstress Johanna
+				["cr"] = 131619,	-- Seamstress Johanna
+			}),
+			crit(40749, {	-- Threshanator 3000
+				["cr"] = 141805,	-- Threshanator 3000
+			}),
+		}),
 		-- #IF BEFORE SHADOWLANDS
 		ach(11162),	-- Keystone Master
 		ach(11185),	-- Keystone Conqueror

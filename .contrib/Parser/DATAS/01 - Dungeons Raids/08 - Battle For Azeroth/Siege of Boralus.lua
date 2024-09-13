@@ -114,20 +114,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
 				["difficulties"] = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
 				["g"] = {
-					ach(12489, {	-- Losing My Profession
-						["collectible"] = false,
-						["g"] = {
-							crit(40749, {	-- Threshanator 3000
-								["cr"] = 141805,	-- Threshanator 3000
-							}),
-							crit(40750, {	-- Brutik Blackanvil
-								["cr"] = 141800,	-- Brutik Blackanvil
-							}),
-							crit(40751, {	-- Liz Vilepot
-								["cr"] = 141792,	-- Liz Vilepot
-							}),
-						},
-					}),
 					e(2132, {	-- Chopper Redhook [1st Encounter - Alliance]
 						-- This fight is Alliance-only.  We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
 						["races"] = ALLIANCE_ONLY,

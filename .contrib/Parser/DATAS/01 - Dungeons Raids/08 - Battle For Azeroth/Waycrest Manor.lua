@@ -222,26 +222,6 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				["difficulties"] = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
 				["lvl"] = 120,
 				["g"] = {
-					ach(12489, {	-- Losing My Profession
-						["collectible"] = false,
-						["g"] = {
-							crit(40145, {	-- Governess Tabitha
-								["cr"] = 131595,	-- Governess Tabitha
-							}),
-							crit(40146, {	-- Head Vintner Justin
-								["cr"] = 131615,	-- Head Vintner Justin
-							}),
-							crit(40147, {	-- Groundskeeper Lilith
-								["cr"] = 131617,	-- Groundskeeper Lilith
-							}),
-							crit(40148, {	-- Seamstress Johanna
-								["cr"] = 131619,	-- Seamstress Johanna
-							}),
-							crit(40149, {	-- Huntmaster Grath
-								["cr"] = 131853,	-- Huntmaster Grath
-							}),
-						},
-					}),
 					e(2125, {	-- Heartsbane Triad
 						["crs"] = {
 							131825,	-- Sister Briar

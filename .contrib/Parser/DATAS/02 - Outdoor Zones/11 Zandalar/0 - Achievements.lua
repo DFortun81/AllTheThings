@@ -86,6 +86,80 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["_quests"] = { 52938 },
 			}),
 		}),
+		ach(13020, {	-- Bow to Your Masters
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				crit(41497, {	-- Akunda respected
+					["coord"] = { 53.1, 91.5, VOLDUN },
+					["cr"] = 128152,	-- Akunda
+				}),
+				crit(41503, {	-- Avatar of Sethraliss respected
+					["coord"] = { 27.0, 52.5, VOLDUN },
+					["cr"] = 135210,	-- Avatar of Sethraliss
+				}),
+				crit(41525, {	-- Bwonsamdi respected
+					["coord"] = { 39.4, 24.7, NAZMIR },
+					["cr"] = 122688,	-- Bwonsamdi
+				}),
+				crit(41498, {	-- Gonk Respected
+					["coord"] = { 49.2, 44.3, ZULDAZAR },
+					["cr"] = 129740,	-- Gonk
+				}),
+				crit(41500, {	-- Jani Respected
+					["sourceQuests"] = {
+						51145,	-- Curse of Jani (A)
+						47442,	-- Curse of Jani (H)
+					},
+					["coord"] = { 35.4, 7.81, DAZARALOR },
+					["cr"] = 126334,	-- Jani
+				}),
+				crit(41499, {	-- Kimbul respected
+					["coord"] = { 57.0, 10.8, VOLDUN },
+					["cr"] = 123052,	-- Kimbul
+				}),
+				crit(41495, {	-- Krag'wa respected
+					["coord"] = { 75.4, 56.7, NAZMIR },
+					["cr"] = 120551,	-- Krag'wa
+				}),
+				crit(41501, {	-- Pa'ku Respected
+					["coord"] = { 71.5, 49.4, ZULDAZAR },
+					["cr"] = 127377,	-- Pa'ku
+				}),
+				crit(41502, {	-- Rezan Respected
+					["coord"] = { 70.8, 29.8, ZULDAZAR },
+					["cr"] = 124948,	-- Rezan
+				}),
+			}
+		}),
+		ach(13048, {	-- Life Finds a Way... To Die!
+
+			crit(41676, {		-- Azuresail the Diemetrodon slain
+				["coord"] = { 67.10, 26.57, ZULDAZAR },
+				["description"] = "This rare shares respawn with Thuderfoot (67.73 29.03) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
+			}),
+			crit(41677, {		-- King K'tal the Devilsaur slain
+				["coord"] = { 71.24, 21.84, ZULDAZAR },
+			}),
+			crit(41683, {		-- Makatau the Pterrordax slain
+				["coord"] = { 26.3, 73.3, NAZMIR },
+			}),
+			crit(41673, {		-- Nol'ixwan the Direhorn slain
+				["coord"] = { 61.62, 25.37, ZULDAZAR },
+			}),
+			crit(41684, {		-- Sludgecrusher the Anklyodon slain
+				["coord"] = { 66.08, 22.38, ZULDAZAR },
+			}),
+			crit(41674, {		-- The Sabertusk Empress slain
+				["coord"] = { 52.39, 47.71, ZULDAZAR },
+			}),
+			crit(41675, {		-- Thuderfoot the Brutosaur slain
+				["coord"] = { 67.73, 29.03, ZULDAZAR },
+				["description"] = "This rare shares respawn with Azuresail (67.10 26.57) and Kil'Tawan (69.2 30.4) so kill them if you need it. To make things worse they don't spawn every day.",
+			}),
+			crit(41672, {		-- Queenfeather the Ravasaur slain
+				["coord"] = { 71.13, 40.34, ZULDAZAR },
+			}),
+		}),
 		ach(13294, {	-- Loremaster of Zandalar [H]
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -94,6 +168,39 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				12478,	-- Secrets in the Sands
 			}},
 			["races"] = HORDE_ONLY,
+		}),
+		ach(11861, {	-- The Throne of Zuldazar
+			["races"] = HORDE_ONLY,
+			["g"] = {
+				crit(41674, {	-- Among the People
+					["sourceQuests"] = { 47741 },	-- To Sacrifice a Loa
+				}),
+				crit(41673, {	-- March of the Loa
+					["sourceQuests"] = { 49426 },	-- The King's Gambit
+				}),
+				crit(41675, {	-- Portents and Prophecies
+					["sourceQuests"] = { 49663 },	-- False Prophecies
+				}),
+				crit(40025, {	--  Port of Zuldazar
+					["sourceQuests"] = { 50881 },	-- Royal Report
+				}),
+				crit(37954, {	-- The Zanchuli Council
+					["sourceQuests"] = {	-- whichever one you pick
+						47439,	-- Gonk, Lord of the Pack
+					},
+				}),
+				crit(37953, {	-- The Zanchuli Council
+					["sourceQuests"] = {	-- whichever one you pick
+						47440,	-- Pa'ku, Master of Winds
+					},
+				}),
+				crit(41672, {	-- Warport Rastari
+					["sourceQuests"] = { 49310 },	-- The Prophet's Ploy
+				}),
+				crit(41683, {	-- Web of Lies
+					["sourceQuests"] = { 47528 },	-- Mistress of Lies
+				}),
+			},
 		}),
 		ach(13517, {	-- Two Sides To Every Tale
 			["sym"] = {{"meta_achievement",
