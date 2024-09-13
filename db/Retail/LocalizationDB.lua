@@ -12196,7 +12196,6 @@ localize(L.HEADER_NAMES, {
 	[-1000938] = "Olfatobúsqueda",
 	[-1000944] = "Comercio",
 	[-1000945] = "Asaltos de Fyrakk",
-	[-1001032] = "",
 	[-1001033] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
 	[-1001034] = "|cFFFFFFFFStep 1:|r Nota llamativa",
 });
@@ -16108,7 +16107,6 @@ localize(L.HEADER_NAMES, {
 	[-1000944] = "Tauschhandels",
 	[-1000945] = "Angriffe von Fyrakk",
 	[-1001006] = "Garnisonskampagne",
-	[-1001032] = "",
 	[-1001033] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
 	[-1001034] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
 });
@@ -20217,7 +20215,6 @@ localize(L.HEADER_NAMES, {
 	[-1000938] = "Recherches olfactives",
 	[-1000944] = "Marchandage",
 	[-1000945] = "Assauts de Fyrakk",
-	[-1001032] = "",
 	[-1001033] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
 	[-1001034] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
 });
@@ -24228,7 +24225,6 @@ localize(L.HEADER_NAMES, {
 	[-1000938] = "Il Fiutatutto",
 	[-1000944] = "Baratto",
 	[-1000945] = "Assalti di Fyrakk",
-	[-1001032] = "",
 	[-1001033] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
 	[-1001034] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
 });
@@ -27881,7 +27877,6 @@ localize(L.HEADER_NAMES, {
 	[-1000938] = "Busca farejante",
 	[-1000944] = "Pechincha",
 	[-1000945] = "Ofensivas de Fyrakk",
-	[-1001032] = "",
 	[-1001033] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
 	[-1001034] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
 });
@@ -31887,7 +31882,6 @@ localize(L.HEADER_NAMES, {
 	[-1000944] = "Обмен",
 	[-1000945] = "Налеты Фиракка",
 	[-1001006] = "Гарнизонная кампания",
-	[-1001032] = "",
 	[-1001033] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
 	[-1001034] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
 });
@@ -35960,7 +35954,6 @@ localize(L.HEADER_NAMES, {
 	[-1000937] = "지스케라 금고",
 	[-1000938] = "냄새 추적",
 	[-1000945] = "피락의 습격",
-	[-1001032] = "",
 	[-1001033] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
 	[-1001034] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
 });
