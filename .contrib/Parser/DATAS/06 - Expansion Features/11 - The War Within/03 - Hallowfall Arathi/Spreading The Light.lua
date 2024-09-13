@@ -77,7 +77,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(216528, {	-- Faded Supply Chest Key
 						["crs"] = { 218024, } -- Drowned Arathi
 					}),
-					i(229155),	-- Lamplighter's Greataxe
 					i(224545, {	-- Plowhead
 						["crs"] = { 206067, } -- Dark-Crazed Harvester
 					}),
@@ -505,12 +504,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(229136),	-- Lamplighter Elite's Sword
 							i(229139),	-- Lamplighter Elite's Warhammer
 							i(229152),	-- Lamplighter's Battleaxe
+							i(229163),	-- Lamplighter's Blade
 							i(229157),	-- Lamplighter's Bulwark
 							i(229161),	-- Lamplighter's Chopper
 							i(229153),	-- Lamplighter's Cudgel
+							i(229154),	-- Lamplighter's Edge
+							i(229160),	-- Lamplighter's Glaive
 							i(229156),	-- Lamplighter's Great Mallet
 							i(229155),	-- Lamplighter's Greataxe
 							i(229151),	-- Lamplighter's Hatchet
+							i(229159),	-- Lamplighter's Lightstone
 							i(229147),	-- Lamplighter's Polearm
 							i(229149),	-- Lamplighter's Rifle
 							i(229150),	-- Lamplighter's Splitter

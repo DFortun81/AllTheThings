@@ -96,8 +96,8 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 		--TODO: uncomment & remove from unsorted if it drop
 		i(224627),	-- Arathi Arquebus
 		i(224628),	-- Arathi Claymore
-		i(224629),	-- Arathi Hatchet
 		i(224633),	-- Arathi Greataxe
+		i(224629),	-- Arathi Hatchet
 		i(224634),	-- Arathi Mace
 		i(227692),	-- Arathi Sword
 		i(224630),	-- Deep-Dweller's Battleaxe
@@ -109,10 +109,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 		i(224635),	-- Expeditionary Bulwark
 		i(224639),	-- Expeditionary Chopper
 		i(224625),	-- Expeditionary Spear
-		i(229163),	-- Lamplighter's Blade
-		i(229154),	-- Lamplighter's Edge
-		i(229160),	-- Lamplighter's Glaive
-		i(229159),	-- Lamplighter's Lightstone
 		i(224632),	-- Underscout's Kukri
 		i(224638),	-- Underscout's Glaive
 	}),
