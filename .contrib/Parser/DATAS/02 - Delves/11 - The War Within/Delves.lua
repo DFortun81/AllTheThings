@@ -938,7 +938,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 } }, {
 				ach(40431),	-- Hunting the Hunter
 				ach(40433, {	-- Hunting the Hunter (Solo)
-					i(225542),	-- Delver's Dirigible Schematic: Void (DDS!)
+					i(225542),	-- Delver's Dirigible Schematic: Void (MM!)
 				}),
 				ach(40103, {	-- Nemesis
 					i(212171),	-- Zekvir's Raptorial Spine
@@ -1350,20 +1350,20 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		n(226250, {	-- Reno Jackson <Delve Treasures>
 			["coord"] = { 47.6, 45.0, DORNOGAL },
 			["g"] = {
-				n(AIRSHIP, {
-					i(224981, {	-- Delver's Dirigible Schematic: Brown Paint (DDS!)
+				n(DELVERS_DIRIGIBLE_SCHEMATIC, {
+					i(224981, {	-- Delver's Dirigible Schematic: Brown Paint (MM!)
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
 					}),
-					i(224982, {	-- Delver's Dirigible Schematic: Exhaust (DDS!)
+					i(224982, {	-- Delver's Dirigible Schematic: Exhaust (MM!)
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
 					}),
-					i(224980, {	-- Delver's Dirigible Schematic: Front-Mounted Lantern (DDS!)
+					i(224980, {	-- Delver's Dirigible Schematic: Front-Mounted Lantern (MM!)
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
 					}),
-					i(224960, {	-- Delver's Dirigible Schematic: Lantern Wing (DDS!)
+					i(224960, {	-- Delver's Dirigible Schematic: Lantern Wing (MM!)
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
 					}),
-					i(224979, {	-- Delver's Dirigible Schematic: Zeppelin (DDS!)
+					i(224979, {	-- Delver's Dirigible Schematic: Zeppelin (MM!)
 						["cost"] = {{"c", RESONANCE_CRYSTALS, 10}},
 					}),
 				}),
@@ -1533,17 +1533,17 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(224172, {	-- Restored Coffer Key
 					["cost"] = {{"c", UNDERCOIN, 1000}},
 				}),
-				n(AIRSHIP, {
-					i(224771, {	-- Delver's Dirigible Schematic: Empennage (DDS!)
+				n(DELVERS_DIRIGIBLE_SCHEMATIC, {
+					i(224771, {	-- Delver's Dirigible Schematic: Empennage (MM!)
 						["cost"] = {{"c", UNDERCOIN, 1000}},
 					}),
-					i(224770, {	-- Delver's Dirigible Schematic: Front-Mounted Propeller (DDS!)
+					i(224770, {	-- Delver's Dirigible Schematic: Front-Mounted Propeller (MM!)
 						["cost"] = {{"c", UNDERCOIN, 2500}},
 					}),
-					i(224769, {	-- Delver's Dirigible Schematic: Rotor Blades (DDS!)
+					i(224769, {	-- Delver's Dirigible Schematic: Rotor Blades (MM!)
 						["cost"] = {{"c", UNDERCOIN, 3000}},
 					}),
-					i(224768, {	-- Delver's Dirigible Schematic: Wing-Mounted Propeller (DDS!)
+					i(224768, {	-- Delver's Dirigible Schematic: Wing-Mounted Propeller (MM!)
 						["cost"] = {{"c", UNDERCOIN, 2500}},
 					}),
 				}),
