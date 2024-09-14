@@ -368,7 +368,7 @@ if app.IsRetail then
 		local faction
 		local saved, none = {}, {}
 		for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
-			faction = app.SearchForObject(KEY, id)
+			faction = app.SearchForObject(KEY, id, "key")
 			if faction.standing >= faction.maxstanding then
 				saved[id] = true
 			else
@@ -388,7 +388,7 @@ if app.IsRetail then
 		for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
 			if not IsCached(CACHE, id) then
 				-- app.PrintDebug("Check Uncached Faction",id)
-				faction = SearchForObject(KEY, id)
+				faction = SearchForObject(KEY, id, "key")
 				-- factions can dynamically be during the 'UPDATE_FACTION' event (thanks Blizzard not telling us which Faction got rep...)
 				if faction.standing >= faction.maxstanding then
 					-- Character Cache

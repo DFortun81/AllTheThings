@@ -78,7 +78,7 @@ do
 				nodeID = nodeData.nodeID
 				localizedFlightPathNames[nodeID] = nodeData.name
 				-- app.PrintDebug("FP",nodeID,nodeData.name,nodeData.state)
-				local fp = app.SearchForObject(KEY, nodeID)
+				local fp = app.SearchForObject(KEY, nodeID, "key")
 				if nodeData.state and nodeData.state < 2 then
 					app.SetCollected(fp, CACHE, nodeID, true)
 					-- TODO: remove once SetCollected handles Updates also

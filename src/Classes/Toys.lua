@@ -76,7 +76,7 @@ end;
 
 app.AddEventRegistration("TOYS_UPDATED", app.IsRetail and function(itemID, new)
 	if itemID and not AccountWideToyData[itemID] and PlayerHasToy(itemID) then
-		app.SetAccountCollected(app.SearchForObject(KEY, itemID) or app.CreateToy(itemID), CACHE, itemID, true);
+		app.SetAccountCollected(app.SearchForObject(KEY, itemID, "field") or app.CreateToy(itemID), CACHE, itemID, true);
 		app.UpdateRawID("itemID", itemID);
 	end
 end or function(toyID, new)

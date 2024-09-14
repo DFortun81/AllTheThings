@@ -144,7 +144,7 @@ app.AddEventHandler("OnRefreshCollections", function()
 	local object
 	local saved, none = {}, {}
 	for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
-		object = app.SearchForObject(KEY, id)
+		object = app.SearchForObject(KEY, id, "field")
 		-- This artifact is listed for the current class
 		if not GetRelativeField(object, "nmc", true) then
 			if object.artifactinfo[5] then

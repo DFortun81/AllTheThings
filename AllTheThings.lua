@@ -1678,7 +1678,7 @@ if GetAchievementNumCriteria then
 			elseif criteriaType == 0	-- Monster kill
 			then
 				-- app.PrintDebug("NPC Kill Criteria",assetID)
-				local c = SearchForObject("npcID", assetID)
+				local c = SearchForObject("npcID", assetID, "field")
 				if c then
 					-- criteria inherit their achievement data ONLY when the achievement data is actually referenced... this is required for proper caching
 					NestObject(c, criteriaObject);
@@ -3732,7 +3732,7 @@ app.BuildSourceParent = function(group)
 		-- re-popping this Achievement will do normal Sources for all the Criteria and be useful
 		if groupKey == "criteriaID" then
 			local achID = group.achievementID;
-			parent = SearchForObject("achievementID", achID) or { achievementID = achID };
+			parent = SearchForObject("achievementID", achID, "key") or { achievementID = achID };
 			-- app.PrintDebug("add achievement for empty criteria",achID)
 			tinsert(parents, parent);
 		end
@@ -5783,7 +5783,7 @@ app.__CacheQuestTriggers = nil
 local function AssignDirectGroupOnUpdates()
 	local questRef;
 	for questID,func in pairs(DGU_Quests) do
-		questRef = SearchForObject("questID", questID);
+		questRef = SearchForObject("questID", questID, "field");
 		if questRef then
 			-- app.PrintDebug("Assign DGUOnUpdate",questRef.hash)
 			questRef.DGUOnUpdate = func;
