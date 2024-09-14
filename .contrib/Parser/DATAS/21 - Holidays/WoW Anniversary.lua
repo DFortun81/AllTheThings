@@ -2208,7 +2208,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					n(ARMOR, bubbleDownFiltered({
 						["cost"] = {{"c", TIMEWARPED_BADGE, 25}},["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
 					},FILTERFUNC_itemID,{
-						filter(BACK_F, {
+						filter(BACK, {
 							i(225187),	-- Blackmetal Cape
 						}),
 						filter(CLOTH, {
