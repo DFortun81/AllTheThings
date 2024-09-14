@@ -896,7 +896,12 @@ root(ROOTS.Zones, {
 						["qg"] = 26170,	-- Thassarian
 					}),
 					q(11705, {	-- Foolish Endeavors
-						["qg"] = 25729,	-- Shadowstalker Getry
+						["qgs"] = {
+							25729,	-- Shadowstalker Getry
+							-- #if AFTER SHADOWLANDS
+							176304,	-- Shadowstalker Getry
+							-- #endif
+						},
 						["coord"] = { 34.5, 46.4, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 11703,	-- Get to Getry
@@ -1057,6 +1062,7 @@ root(ROOTS.Zones, {
 					}),
 					q(11916, {	-- Hellscream's Champion
 						["qg"] = 25237,	-- Garrosh Hellscream
+						["coord"] = { 41.4, 53.6, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
 							i(38237),	-- Axe of Frozen Death

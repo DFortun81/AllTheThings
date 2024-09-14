@@ -61,64 +61,64 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["isWeekly"] = true,
 				},{
 					q(82928, { 	-- Arathor Hammerfish
-					  ["name"] = "Arathor Hammerfish Derby Bonus Mark",
+						["name"] = "Arathor Hammerfish Derby Bonus Mark",
 					}),
 					q(82936, { 	-- Awoken Coelacanth
-					  ["name"] = "Awoken Coelacanth Derby Bonus Mark",
+						["name"] = "Awoken Coelacanth Derby Bonus Mark",
 					}),
 					q(82920, { 	-- Bismuth Bitterling
-					  ["name"] = "Bismuth Bitterling Derby Bonus Mark",
+						["name"] = "Bismuth Bitterling Derby Bonus Mark",
 					}),
 					q(82918, { 	-- Bloody Perch
-					  ["name"] = "Bloody Perch Derby Bonus Mark",
+						["name"] = "Bloody Perch Derby Bonus Mark",
 					}),
 					q(82919, { 	-- Crystalline Sturgeon
-					  ["name"] = "Crystalline Sturgeon Derby Bonus Mark",
+						["name"] = "Crystalline Sturgeon Derby Bonus Mark",
 					}),
 					q(82935, { 	-- Cursed Ghoulfish
-					  ["name"] = "Cursed Ghoulfish Derby Bonus Mark",
+						["name"] = "Cursed Ghoulfish Derby Bonus Mark",
 					}),
 					q(82947, { 	-- Dilly-Dally Dace
-					  ["name"] = "Dilly-Dally Dace Derby Bonus Mark",
+						["name"] = "Dilly-Dally Dace Derby Bonus Mark",
 					}),
 					q(82926, { 	-- Dornish Pike
-					  ["name"] = "Dornish Pike Derby Bonus Mark",
+						["name"] = "Dornish Pike Derby Bonus Mark",
 					}),
 					q(82923, { 	-- Goldengill Trout
-					  ["name"] = "Goldengill Trout Derby Bonus Mark",
+						["name"] = "Goldengill Trout Derby Bonus Mark",
 					}),
 					q(82930, { 	-- Kaheti Slum Shark
-					  ["name"] = "Kaheti Slum Shark Derby Bonus Mark",
+						["name"] = "Kaheti Slum Shark Derby Bonus Mark",
 					}),
 					q(82921, { 	-- Nibbling Minnow
-					  ["name"] = "Nibbling Minnow Derby Bonus Mark",
+						["name"] = "Nibbling Minnow Derby Bonus Mark",
 					}),
 					q(82931, { 	-- Pale Huskfish
-					  ["name"] = "Pale Huskfish Derby Bonus Mark",
+						["name"] = "Pale Huskfish Derby Bonus Mark",
 					}),
 					q(82934, { 	-- Queen's Lurefish
-					  ["name"] = "Queen's Lurefish Derby Bonus Mark",
+						["name"] = "Queen's Lurefish Derby Bonus Mark",
 					}),
 					q(82925, { 	-- Quiet River Bass
-					  ["name"] = "Quiet River Bass Derby Bonus Mark",
+						["name"] = "Quiet River Bass Derby Bonus Mark",
 					}),
 					q(82929, { 	-- Regal Dottyback
-					  ["name"] = "Regal Dottyback Derby Bonus Mark",
+						["name"] = "Regal Dottyback Derby Bonus Mark",
 					}),
 					q(82927, { 	-- Roaring Anglerseeker
-					  ["name"] = "Roaring Anglerseeker Derby Bonus Mark",
+						["name"] = "Roaring Anglerseeker Derby Bonus Mark",
 					}),
 					q(82932, { 	-- Sanguine Dogfish
-					  ["name"] = "Sanguine Dogfish Derby Bonus Mark",
+						["name"] = "Sanguine Dogfish Derby Bonus Mark",
 					}),
 					q(82924, { 	-- Specular Rainbowfish
-					  ["name"] = "Specular Rainbowfish Derby Bonus Mark",
+						["name"] = "Specular Rainbowfish Derby Bonus Mark",
 					}),
 					q(82933, { 	-- Spiked Sea Raven
-					  ["name"] = "Spiked Sea Raven Derby Bonus Mark",
+						["name"] = "Spiked Sea Raven Derby Bonus Mark",
 					}),
 					q(82922, { 	-- Whispering Stargazer
-					  ["name"] = "Whispering Stargazer Derby Bonus Mark",
+						["name"] = "Whispering Stargazer Derby Bonus Mark",
 					}),
 				})),
 				n(VENDORS, {
@@ -138,7 +138,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								["cost"] = {{"c", DERBY_MARK, 50}}
 							}),
 							iensemble(224717, {	-- Ensemble: Cerulean Dredger
-								["cost"] = {{"c", DERBY_MARK, 250}}
+								["cost"] = {{"c", DERBY_MARK, 500}}
 							}),
 							i(225763, {	-- Fallen Dalaran Defender
 								["cost"] = {{"c", DERBY_MARK, 50}}
@@ -147,7 +147,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 								["cost"] = {{"c", DERBY_MARK, 100}}
 							}),
 							i(225758, {	-- Hallowfall Harvester's Pitchfork
-								["cost"] = {{"c", DERBY_MARK, 10}}
+								["cost"] = {{"c", DERBY_MARK, 50}}
 							}),
 							i(226379, {	-- Keen-eye 'Noculars
 								["cost"] = {{"c", DERBY_MARK, 50}}

@@ -67,6 +67,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 				},
 			}),
+			n(218224, {	-- "Calmest" Gobbu <Pots, Urns, and Armamnets>
+				["coord"] = { 46.6, 29.2, NERUBAR },
+				["g"] = {
+					i(222973, {	-- Fringe (PET!)
+						["cost"] = {{"c", KEJ, 2250}},
+					}),
+					i(222968, {	-- Itchbite (PET!)
+						["cost"] = {{"c", KEJ, 2250}},
+					}),
+				},
+			}),
 			n(218207, {	-- Clutchmother Marn'tiq <Pet Battle Master>
 				["coord"] = { 44.2, 17.1, NERUBAR },
 				["g"] = {

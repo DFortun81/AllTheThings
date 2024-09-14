@@ -19,7 +19,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							{ 56.7, 52.4, ISLE_OF_DORN },
 							{ 53.3, 78.6, THE_PROSCENIUM },	-- The Proscenium
 						},
-						["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 10 }
+						["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 10 },
 					}),
 					q(82782, {	-- Authenticity in Dress
 						["provider"] = { "n", 215745 },	-- Rabaan
@@ -27,17 +27,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							{ 56.7, 52.2, ISLE_OF_DORN },	-- Isle of Dorn
 							{ 53.5, 77.1, THE_PROSCENIUM },	-- The Proscenium
 						},
-						["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 14 }
+						["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 14 },
 					}),
 					q(82775, {	-- Quickchange Artist
 						["provider"] = { "n", 215748 },	-- Wendeline
 						["coord"] = { 57.0, 53.8, ISLE_OF_DORN },
-						["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 8 }
+						["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 8 },
 					}),
 					q(82784, {	-- Resonant Performance
 						--["provider"] = { "n",  },	--
 						--["coord"] = { 57.0, 53.8, ISLE_OF_DORN },
-						["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 21 }
+						["minReputation"] = { FACTION_COUNCIL_OF_DORNOGAL, 21 },
 					}),
 					q(79282, {	-- The Grand Debut
 						["sourceQuests"] = { 79150 },	-- Thespians at the Proscenium

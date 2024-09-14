@@ -682,7 +682,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(218457),	-- Special Silk
 			i(211469),	-- Squash Hook
 			i(212494),	-- Squishy Bits [DNT]
-			i(219293),	-- Sureki Intelligence
 			i(224777),	-- Sureki Shadecaster
 			i(218459),	-- TBD
 			i(217506),	-- Test Item [DNT]

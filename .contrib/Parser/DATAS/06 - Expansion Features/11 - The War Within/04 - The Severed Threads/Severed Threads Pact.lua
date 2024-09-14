@@ -291,6 +291,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(219292),	-- Perplexing Contraband (QI!)
 					},
 				}),
+				q(81500, {	-- Wet Work: Step Into Their Parlor
+					["sourceQuest"] = 82581,
+					--["provider"] = { "n",  },	-- Ru'murh
+					["coord"] = { 79.6, 56.5, NERUBAR },
+					["g"] = {
+						i(219293),	-- Sureki Intelligence (QI!)
+					},
+				}),
 				q(81484, {	-- Wet Work: Tithe to Kill
 					--["sourceQuest"] = 82581,	TODO
 					--["provider"] = { "n", 224201 },	-- Ru'murh

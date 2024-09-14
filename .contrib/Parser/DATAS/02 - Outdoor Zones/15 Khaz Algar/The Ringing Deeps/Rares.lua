@@ -148,6 +148,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 80507,
 				["g"] = {
 					i(221242),	-- Forgeborn Helm
+					i(221255),	-- Sharpened Scalepiercer
 				},
 			}),
 			n(220268, {	-- Trungal
