@@ -131,9 +131,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82355, {	-- Special Assignment: Cinderbee Surge
 					["coord"] = { 71.3, 40.7, ISLE_OF_DORN },
 				}),
-				--q(81650, {	-- Special Assignment: Titanic Resurgence
-				--	["coord"] = { x, y, ISLE_OF_DORN },
-				--}),
+				q(81650, {	-- Special Assignment: Titanic Resurgence
+					["coord"] = { 71.7, 31.1, ISLE_OF_DORN },
+				}),
 				q(81649, {	-- Special Assignment: Titanic Resurgence // can bug out interface and make you character unplayable atm
 					["coord"] = { 73.0, 77.2, ISLE_OF_DORN },
 				}),
