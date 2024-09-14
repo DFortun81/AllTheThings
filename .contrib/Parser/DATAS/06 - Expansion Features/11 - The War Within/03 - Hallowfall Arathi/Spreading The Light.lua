@@ -525,11 +525,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(229158),	-- Lamplighter's War Knives
 						}),
 					}),
-					i(226264, {	-- Radiant Cache
-						i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
-						i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
-						i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
-					}),
 					i(RADIANT_REMNANT),
 				}),
 				n(TREASURES, {
@@ -865,6 +860,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				n(WORLD_QUESTS, sharedData({ ["isWorldQuest"] = true, }, {
 					q(76586, {	-- Spreading The Light
 						["coord"] = { 55.3, 14.5, HALLOWFALL },
+						["g"] = {
+							i(226264, {	-- Radiant Cache
+								i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
+								i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
+								i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
+							}),
+						},
 					}),
 				})),
 			},
