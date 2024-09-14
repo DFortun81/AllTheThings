@@ -39,6 +39,15 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_0_2, },
 				["u"] = BLIZZARD_BALANCE,
 			}),
+			-- Season 1
+			i(232305, {	-- Forged Champion's Prestigious Banner (TOY!)
+				["description"] = "...",
+				["timeline"] = { ADDED_11_0_5 },
+			}),
+			i(232301, {	-- Tempered Banner of the Algari (TOY!)
+				["description"] = "...",
+				["timeline"] = { ADDED_11_0_5 },
+			}),
 		},
 	}),
 });

@@ -213,6 +213,7 @@ WOW_ANNIVERSARY_TWENTY = createHeader({
 		en = "WoW's 20th Anniversary",
 	},
 });
+local BRONZE_TOKEN = 3100;
 
 root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, {
 	-- Stuff that's completely gone.
@@ -222,7 +223,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 	})),
 	n(WOW_ANNIVERSARY_FIVE, bubbleDownSelf({ ["timeline"] = { ADDED_3_2_2, REMOVED_3_3_2 } }, {
 		ach(4400),	-- 5th Anniversary
-		i(49362),	-- Onyxian Whelpling
+		i(49362),	-- Onyxian Whelpling (PET!)
 	})),
 	n(WOW_ANNIVERSARY_SIX, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_1, REMOVED_4_2_2 } }, {
 		ach(5512),	-- 6th Anniversary
@@ -1914,6 +1915,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							}),
 						},
 					}),
+					-- #if AFTER 11.0.5
+					n(158386, {	-- Time-Displaced Jorek Ironside <Frostwolf Supply Officer>
+						["crs"] = { 229711 },	-- Time-Displaced Jorek Ironside <Frostwolf Supply Officer>
+					}),
+					n(158385, {	-- Time-Displaced Thanthaldis Snowgleam <Stormpike Supply Officer>
+						["crs"] = { 229710 },	-- Time-Displaced Thanthaldis Snowgleam <Stormpike Supply Officer>
+					}),
 				}),
 			},
 		}),
@@ -2077,7 +2085,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					40989,	-- Pet Mischief
 				}},
 				["g"] = {
-					i(228760),	-- Reins of the Coldflame Tempest (MOUNT!)
+					i(228760),	-- Coldflame Tempest (MOUNT!)
 				},
 			}),
 			ach(40996),		-- A Gatecrasher (automated)
@@ -2132,8 +2140,48 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		n(DUNGEONS_AND_RAIDS, {
 			-- INFO: It's here so the criteria can nest under him, as he's normally removed from game
 			n(639),	-- Edwin VanCleef <Defias Kingpin>
+
+			-- Seem you can get "Timewraped Relic Coffer Key" from all difficulties then you can trade for which ever loot you want. Not sure if loot will drop or this is the way loot will work //Braghe
+			n(223881),	-- Braggi Brazenbrass LFR Vendor
+			n(233209),	-- Kraegen Emberforge Normal Vendor
+			n(224322),	-- Hilda Hellforge Heroic Vendor
+			-- There is two raids Codex (Scenario?) and BRD
 		}),
 		n(QUESTS, {
+			q(82672),	-- Another Timely Invitation
+			q(84254, {	-- Meet and Greet
+				["sourceQuests"] = { 82672 },	-- Another Timely Invitation
+				["provider"] = { "n", 223877 },	-- Yllana <Event Coordinator>
+				["coord"] = { 62.9, 50.7, TANARIS },
+			}),
+			--q(84629),	-- HQT for Completing Meet and Greet??
+			q(84489, {	-- Shopping Squee!
+				["sourceQuests"] = { 84254 },	-- Meet and Greet
+				["provider"] = { "n", 223877 },	-- Yllana <Event Coordinator>
+				["coord"] = { 62.9, 50.7, TANARIS },
+			}),
+			q(84616, {	-- Celebrate Good Fun!
+				["provider"] = { "n", 223877 },	-- Yllana <Event Coordinator>
+				["coord"] = { 62.9, 50.7, TANARIS },
+				["isDaily"] = true
+			}),
+
+			q(82817, {	-- Disturbance Detected: Blackrock Depths
+				["provider"] = { "n", 229775 },	-- Moira Thaurissan <Queen of the Dark Iron>
+				["coord"] = { 63.0, 49.7, TANARIS },
+				["isWeekly"] = true
+			}),
+			q(84735, {	-- Truth of the Dark Irons
+				["provider"] = { "n", 229775 },	-- Moira Thaurissan <Queen of the Dark Iron>
+				["coord"] = { 63.0, 49.7, TANARIS },
+			}),
+
+			q(82783, {	-- Chromie's Codex
+				["provider"] = { "n", 226368 },	-- Chromie
+				["coord"] = { 62.6, 50.0, TANARIS },
+				["isWeekly"] = true
+			}),
+
 			q(84336),	-- Chapter 1
 			q(84756),	-- Chapter 2 (faction?)
 			q(85043),	-- Chapter 2 (faction?)
@@ -2148,6 +2196,407 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			q(84469),	-- The Case of Pet Games
 			q(84912),	-- The Case of Staged Disaster
 			q(84595),	-- The Loud and Smelly Case
+		}),
+		n(REWARDS, {
+			currency(BRONZE_TOKEN),
+		}),
+		n(VENDORS, {
+			n(223884, {	--  Bobadormu
+				["coord"] = { 62.7, 50.3, TANARIS },
+				["g"] = {
+					n(ARMOR, bubbleDownFiltered({
+						["cost"] = {{"c", TIMEWARPED_BADGE, 25}},["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+					},FILTERFUNC_itemID,{
+						filter(BACK_F, {
+							i(225187),	-- Blackmetal Cape
+						}),
+						filter(CLOTH, {
+							i(225182),	-- Aristocratic Cuffs
+							i(224858),	-- Coldstone Slippers
+							i(224854),	-- Holy Shroud
+						}),
+						filter(FINGER, {
+							i(225186),	-- Freezing Band
+						}),
+						filter(LEATHER, {
+							i(224853),	-- Adventurer's Pith Helmet
+							i(224857),	-- Feet of the Lynx
+							i(225181),	-- Unearthed Bands
+						}),
+						filter(MAIL, {
+							i(224859),	-- Caverndeep Trudgers
+							i(224855),	-- Helm of Narv
+							i(225183),	-- Slimescale Bracers
+						}),
+						filter(PLATE, {
+							i(224860),	-- Boots of Avoidance
+							i(224856),	-- Mugthol's Helm
+							i(225184),	-- Runed Golem Shackles
+						}),
+					})),
+					filter(BATTLE_PETS, {
+						i(224410, {	-- Craggles (PET!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2200}}
+						}),
+						i(224406, {	-- Misty (PET!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2200}}
+						}),
+					}),
+					filter(COSMETIC, {
+						i(227718, {	-- Bearded Branch of Lore
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}}
+						}),
+						i(227704, {	-- Claymore of the Knight's Pledge
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}}
+						}),
+						i(227706, {	-- Doomreaper's Scythe
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}}
+						}),
+						i(227707, {	-- Doomwail Reaper
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}}
+						}),
+						i(227712, {	-- Emberswirl Bulwark
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2000}}
+						}),
+						i(227703, {	-- Farstrider's Huntsblade
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1500}}
+						}),
+						i(227714, {	-- Gilded Drakecrest Shield
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2000}}
+						}),
+						i(227709, {	-- Kirin Tor Adept's Stave
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}}
+						}),
+						i(227705, {	-- Runed-Ice Dirk
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1500}}
+						}),
+						i(227717, {	-- Sermons of the Naaru
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1500}}
+						}),
+						i(227711, {	-- Tusked Branch of War
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}}
+						}),
+					}),
+					filter(MISC, sharedData({
+						["cost"] = {{"c", TIMEWARPED_BADGE, 50}},
+					}, {
+						i(224567),	-- Commendation of the Argent Dawn
+						i(224558),	-- Commendation of the Brood of Nozdormu
+						i(224569),	-- Commendation of the Defilers
+						i(224563),	-- Commendation of the Frostwolf Clan
+						i(224561),	-- Commendation of the Hydraxian Waterlords
+						i(224568),	-- Commendation of the League of Arathor
+						i(224564),	-- Commendation of the Ravasaur Trainers [Unclear?!]
+						i(224559),	-- Commendation of the Silverwing Sentinels
+						i(224562),	-- Commendation of the Stormpike Guard
+						i(224571),	-- Commendation of the Thorium Brotherhood
+						i(224566),	-- Commendation of the Timbermaw Hold
+						i(224560),	-- Commendation of the Warsong Outriders
+						i(224565),	-- Commendation of the Wintersaber Trainers
+						i(224570),	-- Commendation of the Zandalar Tribe
+					})),
+					filter(MISC, {	-- Might be unecessary..
+						i(122338, {	-- Ancient Heirloom Armor Casing
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 750 }},
+							["sym"] = {{ "fill" }},
+						}),
+						i(122339, {	-- Ancient Heirloom Scabbard
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 900 }},
+							["sym"] = {{ "fill" }},
+						}),
+						i(204336, {	-- Awakened Heirloom Armor Casing
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["timeline"] = { ADDED_10_0_7 },
+							["sym"] = {{ "fill" }},
+						}),
+						i(204337, {	-- Awakened Heirloom Scabbard
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["timeline"] = { ADDED_10_0_7 },
+							["sym"] = {{ "fill" }},
+						}),
+						i(167731, {	-- Battle-Hardened Heirloom Armor Casing
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["timeline"] = { ADDED_8_1_5 },
+							["sym"] = {{ "fill" }},
+						}),
+						i(167732, {	-- Battle-Hardened Heirloom Scabbard
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["timeline"] = { ADDED_8_1_5 },
+							["sym"] = {{ "fill" }},
+						}),
+						i(187997, {	-- Eternal Heirloom Armor Casing
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["timeline"] = { ADDED_9_1_5 },
+							["sym"] = {{ "fill" }},
+						}),
+						i(187998, {	-- Eternal Heirloom Scabbard
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["timeline"] = { ADDED_9_1_5 },
+							["sym"] = {{ "fill" }},
+						}),
+						i(122340, {	-- Timeworn Heirloom Armor Casing
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["sym"] = {{ "fill" }},
+						}),
+						i(122341, {	-- Timeworn Heirloom Scabbard
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["sym"] = {{ "fill" }},
+						}),
+						i(151614, {	-- Weathered Heirloom Armor Casing
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1000 }},
+							["timeline"] = { ADDED_7_2_5 },
+							["sym"] = {{ "fill" }},
+						}),
+						i(151615, {	-- Weathered Heirloom Scabbard
+							["cost"] = {{ "c", TIMEWARPED_BADGE, 1200 }},
+							["timeline"] = { ADDED_7_2_5 },
+							["sym"] = {{ "fill" }},
+						}),
+					}),
+					filter(MISC, {
+						i(224190, {	-- Kreeg's Hardy Draught
+							["cost"] = {{"c", TIMEWARPED_BADGE, 25}}
+						}),
+						i(225378, {	-- Mohawk Grenade
+							["cost"] = {{"c", TIMEWARPED_BADGE, 200}}
+						}),
+					}),
+					filter(MOUNTS, {
+						i(224398, {	-- Frayfeather Hippogryph (MOUNT!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 5000}}
+						}),
+					}),
+					filter(TOYS, {
+						i(224192, {	-- Practice Ravager (TOY!)
+							["cost"] = {{"c", TIMEWARPED_BADGE, 200}}
+						}),
+					}),
+					n(WEAPONS, {
+						i(225200, {	-- Alcor's Sunrazor
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}}
+						}),
+						i(225195, {	-- Axe of the Deep Woods
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}}
+						}),
+						i(225192, {	-- Bow of Searing Arrows
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}}
+						}),
+						i(225197, {	-- Crimson Shocker
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}}
+						}),
+						i(225193, {	-- Elemental Mage Staff
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}}
+						}),
+						i(225199, {	-- Flurry Axe
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}}
+						}),
+						i(225196, {	-- Grimlok's Charge
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}}
+						}),
+						i(225191, {	-- Gut Ripper
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}}
+						}),
+						i(225188, {	-- Lefty's Brass Knuckle
+							["cost"] = {{"c", TIMEWARPED_BADGE, 50}}
+						}),
+						i(225189, {	-- Lightforged Blade
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}}
+						}),
+						i(225190, {	-- Pendulum of Doom
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}}
+						}),
+						i(225201, {	-- Precisely Calibrated Rifle
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}}
+						}),
+						i(225194, {	-- Redbeard Crest
+							["cost"] = {{"c", TIMEWARPED_BADGE, 35}}
+						}),
+						i(225198, {	-- Warden Staff
+							["cost"] = {{"c", TIMEWARPED_BADGE, 100}}
+						}),
+					}),
+				},
+			}),
+			n(158061, {	-- Historian Ma'di
+				["coord"] = { 62.6, 50.4, TANARIS },
+				["g"] = {
+					i(229828, {	-- 20th Anniversary Balloon Chest (TOY!)
+						["cost"] = {{"c", BRONZE_TOKEN, 10}}
+					}),
+					i(208572, {	-- Azure Worldchiller (MOUNT!)
+						["cost"] = {{"c", TIMEWARPED_BADGE, 5000}}
+					}),
+					i(228785, {	-- Coldflame Bulwark
+						["cost"] = {{"c", BRONZE_TOKEN, 10}}
+					}),
+					i(228788, {	-- Coldflame Edged Crest
+						["cost"] = {{"c", BRONZE_TOKEN, 15}}
+					}),
+					i(228789, {	-- Coldflame Ring (TOY!)
+						["cost"] = {{"c", BRONZE_TOKEN, 10}}
+					}),
+					i(228786, {	-- Coldflame Winged Crown
+						["cost"] = {{"c", BRONZE_TOKEN, 10}}
+					}),
+					i(228784, {	-- Coldflame's Edge
+						["cost"] = {{"c", BRONZE_TOKEN, 10}}
+					}),
+				},
+			}),
+			n(231352, {	-- Notary Grably <Titles of Olde>
+				["coord"] = { 63.3, 50.7, TANARIS },
+				["g"] = {
+					-- This might have further requirements such as achievements //Braghe
+					i(230264, {	-- Bronze Celebration Titles: Broken Isles Enthusiast
+						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						["g"] = {
+							title(587),	-- Broken Isles Enthusiast <Name> (TITLE!)
+						},
+					}),
+					i(230261, {	-- Bronze Celebration Titles: Cataclysm Enthusiast
+						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						["g"] = {
+							title(584),	-- Cataclsym Enthusiast <Name> (TITLE!)
+						},
+					}),
+					i(230258, {	-- Bronze Celebration Titles: Classic Enthusiast
+						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						["g"] = {
+							title(581),	-- Classic Enthusiast <Name> (TITLE!)
+						},
+					}),
+					i(230263, {	-- Bronze Celebration Titles: Draenor Enthusiast
+						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						["g"] = {
+							title(586),	-- Draenor Enthusias <Name> (TITLE!)
+						},
+					}),
+					i(230268, {	-- Bronze Celebration Titles: Dragon Isles Enthusiast
+						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						["g"] = {
+							title(591),	-- Dragon Isles Enthusiast <Name> (TITLE!)
+						},
+					}),
+					i(229826, {	-- Bronze Celebration Titles: Grizzly Hills Hiker
+						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						["g"] = {
+							title(577),	-- Grizzly Hills Hiker <Name> (TITLE!)
+						},
+					}),
+					i(231833, {	-- Bronze Celebration Titles: Karazhan Graduate
+						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						["g"] = {
+							title(596),	-- Karazhan Graduate <Name> (TITLE!)
+						},
+					}),
+					i(230266, {	-- Bronze Celebration Titles: Kul Tiras Enthusiast
+						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						["g"] = {
+							title(589),	-- Kul Tiras Enthusiast <Name> (TITLE!)
+						},
+					}),
+					i(231832, {	-- Bronze Celebration Titles: Molten Core Prospector
+						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						["g"] = {
+							title(595),	-- Molten Core Prospector <Name> (TITLE!)
+						},
+					}),
+					i(230260, {	-- Bronze Celebration Titles: Northrend Enthusiast
+						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						["g"] = {
+							title(583),	-- Northrend Enthusiast <Name> (TITLE!)
+						},
+					}),
+					i(230259, {	-- Bronze Celebration Titles: Outland Enthusiast
+						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						["g"] = {
+							title(582),	-- Outland Enthusiast <Name> (TITLE!)
+						},
+					}),
+					i(230262, {	-- Bronze Celebration Titles: Pandaria Enthusiast
+						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						["g"] = {
+							title(585),	-- Pandaria Enthusiast <Name> (TITLE!)
+						},
+					}),
+					i(229827, {	-- Bronze Celebration Titles: Plaguelands Survivor
+						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						["g"] = {
+							title(578),	-- Plaguelands Survivor <Name> (TITLE!)
+						},
+					}),
+					i(230267, {	-- Bronze Celebration Titles: Shadowlands Enthusiast
+						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						["g"] = {
+							title(590),	-- Shadowlands Enthusiast <Name> (TITLE!)
+						},
+					}),
+					i(230265, {	-- Bronze Celebration Titles: Zuldazar Enthusiast
+						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
+						["g"] = {
+							title(588),	-- Zuldazar Enthusiast <Name> (TITLE!)
+						},
+					}),
+				},
+			}),
+			n(229707, {	-- Storekeeper Reginald <Out of Time-ly Trinkets>
+				["coord"] = { 62.9, 51.1, TANARIS },
+				["g"] = sharedData({
+					["cost"] = {{"c", BRONZE_TOKEN, 10}},
+				}, {
+					i(44819),	-- Baby Blizzard Bear (PET!)
+					i(118574),	-- Hatespark the Tiny (PET!)
+					i(172016),	-- Lil' Nefarian (PET!)
+					i(115301),	-- Molten Corgi (PET!)
+					i(49362),	-- Onyxian Whelpling (PET!)
+				}),
+			}),
+			n(223902, {	-- Traeya <Armor Vendor>
+				["coord"] = { 63.1, 50.9, TANARIS },
+				["g"] = sharedData({
+					["cost"] = {{"c", BRONZE_TOKEN, 80}},
+				}, {
+					iensemble(228205, {	-- Ensemble: Pale Rider's Eternal Armor
+						["classes"] = { DEATHKNIGHT },
+					}),
+					iensemble(228206, {	-- Ensemble: Netherwalker's Eternal Armor
+						["classes"] = { DEMONHUNTER },
+					}),
+					iensemble(228199, {	-- Ensemble: Eternal Stormrage Armor
+						["classes"] = { DRUID },
+					}),
+					iensemble(228207, {	-- Ensemble: Earth-Warder's Eternal Armor
+						["classes"] = { EVOKER },
+					}),
+					iensemble(228200, {	-- Ensemble: Dragonstalker's Eternal Armor
+						["classes"] = { HUNTER },
+					}),
+					iensemble(228201, {	-- Ensemble: Eternal Netherwind Regalia
+						["classes"] = { MAGE },
+					}),
+					iensemble(228208, {	-- Ensemble: Eternal Battlegear of the August Acolyte
+						["classes"] = { MONK },
+					}),
+					iensemble(228198, {	-- Ensemble: Eternal Judgment Armor
+						["classes"] = { PALADIN },
+					}),
+					iensemble(228204, {	-- Ensemble: Eternal Vestments of Transcendence
+						["classes"] = { PRIEST },
+					}),
+					iensemble(228202, {	-- Ensemble: Eternal Bloodfang Armor
+						["classes"] = { ROGUE },
+					}),
+					iensemble(228203, {	-- Ensemble: Eternal Ten Storms
+						["classes"] = { SHAMAN },
+					}),
+					iensemble(228209, {	-- Ensemble: Eternal Nemesis Raiment
+						["classes"] = { WARLOCK },
+					}),
+					iensemble(228197, {	-- Ensemble: Eternal Battlegear of Wrath
+						["classes"] = { WARRIOR },
+					}),
+				}),
+			}),
 		}),
 		n(WORLD_BOSSES, {
 			-- INFO: These are new world bosses for this year, here so their criteria can nest under them. If they have loot tables and all, it can be put here too (like previous years).

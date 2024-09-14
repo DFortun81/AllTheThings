@@ -1903,8 +1903,8 @@ i(223276, 448680);	-- Widow's Undercrawler
 ------------------
 -- PATCH 11.0.5 --
 ------------------
+i(228760, 463133);	-- Coldflame Tempest
+i(224398, 452643);	-- Frayfeather Hippogryph
 --- UNSORTED ---
 i(224399, 452645);	-- Amani Hunting Bear
-i(228760, 463133);	-- Coldflame Tempest
 i(231374, 468353);	-- Enchanted Spellweave Carpet
-i(224398, 452643);	-- Frayfeather Hippogryph

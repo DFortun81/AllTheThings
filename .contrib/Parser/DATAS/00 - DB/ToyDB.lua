@@ -1393,12 +1393,12 @@ i(221966);	-- Wormhole Generator: Khaz Algar
 ------------------
 -- PATCH 11.0.2 --
 ------------------
---- UNSORTED ---
 i(229828);	-- 20th Anniversary Balloon Chest
 i(228789);	-- Coldflame Ring
 i(232305);	-- Forged Champion's Prestigious Banner
 i(224192);	-- Practice Ravager
 i(232301);	-- Tempered Banner of the Algari
+--- UNSORTED ---
 i(232302);	-- Unknown
 i(232303);	-- Unknown
 i(232304);	-- Unknown

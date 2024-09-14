@@ -661,3 +661,22 @@ is(modItemId(225899, nil, 11245), 439669);	-- Unbreakable Iron Idol [Rank 1]
 is(modItemId(225899, nil, 11246), 458943);	-- Unbreakable Iron Idol [Rank 2]
 is(modItemId(225899, nil, 11247), 458949);	-- Unbreakable Iron Idol [Rank 3]
 is(modItemId(225899, nil, 11248), 458955);	-- Unbreakable Iron Idol [Rank 4]
+
+------------------
+-- PATCH 11.0.5 --
+------------------
+iq(230264, 85224);	-- Bronze Celebration Titles: Broken Isles Enthusiast
+iq(230261, 85221);	-- Bronze Celebration Titles: Cataclysm Enthusiast
+iq(230258, 85218);	-- Bronze Celebration Titles: Classic Enthusiast
+iq(230263, 85223);	-- Bronze Celebration Titles: Draenor Enthusiast
+iq(230268, 85228);	-- Bronze Celebration Titles: Dragon Isles Enthusiast
+iq(229826, 85015);	-- Bronze Celebration Titles: Grizzly Hills Hiker
+iq(231833, 85517);	-- Bronze Celebration Titles: Karazhan Graduate
+iq(230266, 85226);	-- Bronze Celebration Titles: Kul Tiras Enthusiast
+iq(231832, 85516);	-- Bronze Celebration Titles: Molten Core Prospector
+iq(230260, 85220);	-- Bronze Celebration Titles: Northrend Enthusiast
+iq(230259, 85219);	-- Bronze Celebration Titles: Outland Enthusiast
+iq(230262, 85222);	-- Bronze Celebration Titles: Pandaria Enthusiast
+iq(229827, 85014);	-- Bronze Celebration Titles: Plaguelands Survivor
+iq(230267, 85227);	-- Bronze Celebration Titles: Shadowlands Enthusiast
+iq(230265, 85225);	-- Bronze Celebration Titles: Zuldazar Enthusiast
