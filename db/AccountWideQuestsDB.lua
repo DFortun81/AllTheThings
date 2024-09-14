@@ -1366,6 +1366,7 @@ select(2, ...).AccountWideQuestsDB = {
 	[81993] = true,
 	[81994] = true,
 	[82345] = true,	-- A Shining Stone
+	[82349] = true,	-- Carved Crests
 	[82367] = true,	-- Earth-Encrusted Gem
 	[82391] = true,	-- Precious Stones
 	[82676] = true,	-- Broken Masquerade
