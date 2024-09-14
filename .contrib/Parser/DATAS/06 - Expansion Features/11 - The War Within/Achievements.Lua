@@ -4,16 +4,17 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(ACHIEVEMENTS, {
 		ach(40107, {	-- Harbinger of the Weatherd
-			["timeline"] = { ADDED_11_0_5, REMOVED_11_1_0 },
+            -- INFO: The 4 harbinger achievements (which are feats of strength) were added at the start of 11.0.2 but didn't fire and showed a TODO in the name. They were corrected before 11.0.5. They could be timelined to the exact build if prefered but this is good enough.
+			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 		}),
 		ach(40115, {	-- Harbinger of the Carved
-			["timeline"] = { ADDED_11_0_5, REMOVED_11_1_0 },
+			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 		}),
 		ach(40118, {	-- Harbinger of the Runed
-			["timeline"] = { ADDED_11_0_5, REMOVED_11_1_0 },
+			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 		}),
 		ach(40939, {	-- Harbinger of the Gilded
-			["timeline"] = { ADDED_11_0_5, REMOVED_11_1_0 },
+			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 		}),
 		ach(40591, {	-- Khaz Algar Diplomat
 			["sym"] = {{ "achievement_criteria" }},
