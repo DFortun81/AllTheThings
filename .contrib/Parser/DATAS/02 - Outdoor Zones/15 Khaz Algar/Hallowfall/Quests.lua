@@ -1099,7 +1099,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["isWeekly"] = true,
 			}),
 			------ Miscellaneous ------
-			q(81651),	-- Delver's Guide to Delves [Might be NYI??]
 			q(79554, {	-- Holy Hydrocarbons
 				["provider"] = { "i", 217388 },	-- Crate of Devotional Candles (QS!/QI!)
 			}),
