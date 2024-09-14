@@ -1221,6 +1221,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						TWW_ACCOUNT_CAMPAIGN_QUEST,
 					},
 					["coord"] = { 55.2, 26.8, HALLOWFALL },
+					["sourceQuestNumRequired"] = 1,
 					["g"] = {
 						i(217352),	-- Gasping Fish (QI!)
 					},

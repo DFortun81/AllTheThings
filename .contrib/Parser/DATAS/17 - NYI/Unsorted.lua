@@ -1282,7 +1282,6 @@ root(ROOTS.Unsorted, {
 				i(225896),	-- Void-Touched Valorstone
 				--- Renown Quest Rewards ---
 				i(226153),	-- Big Pile of Humming Shinies
-				i(226150),	-- Gem-Studded Candelabra
 				i(226156),	-- Really Big Candle
 				i(226151),	-- Wax-Coated Coffer Unlocker
 				i(226154),	-- Wax-Sealed Crafty Crest

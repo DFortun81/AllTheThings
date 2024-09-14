@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			ach(40620),		-- Back to the Wall
 			ach(40629),		-- Bookworm (automated)
 			ach(40822),		-- Explore Azj-Kahet (automated)
-			ach(40624, {	-- Itsy Bitsy Spider
+			achraw(40624, {	-- Itsy Bitsy Spider
 				-- TODO: Braghe please add spider coords, thanks
 				crit(68972, {	-- Webster
 					["coord"] = { 39.4, 65.3, NERUBAR },

@@ -131,7 +131,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 								["timeline"] = { ADDED_10_0_7 },
 							}),
 							i(197610),	-- Windborne Velocidrake: Yellow Horns (MM!)
-							i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned all Mount Mods
+							i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned all Skyriding Manuscripts
 						},
 					}),
 				}, {	-- RENOWN 7 --
@@ -314,7 +314,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							}),
 							i(197618),	-- Windborne Velocidrake: Long Snout (MM!)
 							i(197623),	-- Windborne Velocidrake: Spiked Tail (MM!)
-							i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned all Mount Mods
+							i(189765),	-- Maruuk Centaur Supply Satchel - rewarded only if you already learned all Skyriding Manuscripts
 						},
 					}),
 				}, {	-- RENOWN 16 --
