@@ -25,15 +25,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
 						["isWeekly"] = true,
 						["g"] = {
-							i(226273),	-- Awakened Mechanical Cache
-							--i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength (RECIPE!) from cache
+							i(226273, {	-- Awakened Mechanical Cache
+								i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength (RECIPE!)
+								i(224426),	-- Pattern: Ignition Satchel (RECIPE!)
+								i(223040),	-- Plans: Charged Crusher (RECIPE!)
+							}),
 						},
 					}),
-				}),
-				n(REWARDS, {
-					i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength (RECIPE!)
-					i(224426),	-- Pattern: Ignition Satchel (RECIPE!)
-					i(223040),	-- Plans: Charged Crusher (RECIPE!)
 				}),
 				n(TREASURES, {
 					o_repeated({
