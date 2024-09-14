@@ -2206,9 +2206,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["coord"] = { 62.7, 50.3, TANARIS },
 				["g"] = {
 					n(ARMOR, bubbleDownFiltered({
-						["cost"] = {{"c", TIMEWARPED_BADGE, 25}},["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
+						["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
 					},FILTERFUNC_itemID,{
-						filter(BACK, {
+						filter(BACK_F, {
 							i(225187),	-- Blackmetal Cape
 						}),
 						filter(CLOTH, {
@@ -2216,7 +2216,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 							i(224858),	-- Coldstone Slippers
 							i(224854),	-- Holy Shroud
 						}),
-						filter(FINGER, {
+						filter(FINGER_F, {
 							i(225186),	-- Freezing Band
 						}),
 						filter(LEATHER, {
