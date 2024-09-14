@@ -63,14 +63,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.MYTHIC, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2, ADDED_11_1_0 } }, {
 				e(2568, {	-- Voidstone Monstrosity
 					["crs"] = { 207207 },	-- Voidstone Monstrosity
 					["g"] = {
 						ach(40642),	-- Mythic: The Rookery
 					},
 				}),
-			}),
+			})),
 		},
 	})
 })));

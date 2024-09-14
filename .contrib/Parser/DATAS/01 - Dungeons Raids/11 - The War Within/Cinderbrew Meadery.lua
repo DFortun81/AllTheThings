@@ -72,14 +72,14 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					},
 				}),
 			}),
-			d(DIFFICULTY.DUNGEON.MYTHIC, {
+			d(DIFFICULTY.DUNGEON.MYTHIC, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2, ADDED_11_1_0 } }, {
 				e(2589, {	-- Goldie Baronbottom
 					["crs"] = { 218523 },	-- Goldie Baronbottom <BEE.E.O.>
 					["g"] = {
 						ach(40366),	-- Mythic: Cinderbrew Meadery
 					},
 				}),
-			}),
+			})),
 		},
 	})
 })));
