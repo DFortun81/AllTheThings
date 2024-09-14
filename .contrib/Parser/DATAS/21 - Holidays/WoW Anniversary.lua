@@ -1922,6 +1922,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					n(158385, {	-- Time-Displaced Thanthaldis Snowgleam <Stormpike Supply Officer>
 						["crs"] = { 229710 },	-- Time-Displaced Thanthaldis Snowgleam <Stormpike Supply Officer>
 					}),
+					-- #endif
 				}),
 			},
 		}),
