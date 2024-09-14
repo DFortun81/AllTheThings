@@ -2038,14 +2038,17 @@ table.insert(SCHOLOMANCE_GROUPS, d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, {
 		["questID"] = 76248,
 		["groups"] = {
 			i(206365),	-- Inert Spectral Essence
-			i(13544, {	-- Spectral Essence
-				["questID"] = 76250,
+			hqt(76250, name(HEADERS.Item, 13544, {	-- Spectral Essence
 				["cost"] = {
 					{ "i", 20520, 3 },	-- 3x Dark Rune
 					{ "i", 12808, 5 },	-- 5x Essence of Undeath
 					{ "i", 206365, 1 },	-- 1x Inert Spectral Essence
 				},
-			}),
+				-- ["lockCriteria"] = {},	-- cannot be triggered if Spectral Essence already in player inventory from Vanilla
+				["g"] = {
+					i(13544),	-- Spectral Essence
+				},
+			})),
 		},
 	})),
 }))

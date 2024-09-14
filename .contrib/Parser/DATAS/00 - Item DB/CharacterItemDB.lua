@@ -422,8 +422,6 @@ is(0, 410080); 						-- Path of Wind's Domain
 ------------------
 -- #IF AFTER 10.1.5
 iq(206473, 76307);					-- Makeshift Grappling Hook
-iq(13544, 76250);					-- Spectral Essence
-iq(13544, 76250);					-- Spectral Essence
 -- #ENDIF
 --- Imp ---
 iq(207178, 76743, WARLOCK);			-- Grimoire of the Darkfire Imp
