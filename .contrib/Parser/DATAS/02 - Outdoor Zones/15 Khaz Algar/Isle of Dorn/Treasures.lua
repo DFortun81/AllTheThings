@@ -175,6 +175,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 82326,
 			}),
 			o(423854, {	-- Soulwell
+				["description"] = "Can be obtained only during the Introductory quest chain.",
 				["coord"] = { 31.5, 54.2, ISLE_OF_DORN },
 				["questID"] = 84494,
 				["groups"] = {

@@ -80,17 +80,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78530, {	-- Slay the Saboteurs
 					["sourceQuests"] = { 78529 },	-- Violet Impact
 					["provider"] = { "n", 211994 },	-- Lady Jaina Proudmoore
-					["coord"] = { 24.4, 57.1, ISLE_OF_DORN },
+					["coord"] = { 29.5, 55.0, ISLE_OF_DORN },
 				}),
 				q(78531, {	-- Urgent Recovery
 					["sourceQuests"] = { 78529 },	-- Violet Impact
 					["provider"] = { "n", 211993 },	-- Thrall
-					["coord"] = { 24.3, 57.2, ISLE_OF_DORN },
+					["coord"] = { 29.5, 55.1, ISLE_OF_DORN },
 				}),
 				q(78532, {	-- Erratic Artifacts
 					["sourceQuests"] = { 78529 },	-- Violet Impact
 					["provider"] = { "n", 223166 },	-- Archmage Aethas Sunreaver
-					["coord"] = { 26.1, 57.3, ISLE_OF_DORN },
+					["coord"] = { 30.1, 55.1, ISLE_OF_DORN },
 					["g"] = {
 						i(211535),	-- Scroll of Shattering (QI!)
 					},
@@ -102,7 +102,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78531,	-- Urgent Recovery
 					},
 					["provider"] = { "n", 212450 },	-- Anduin Wrynn
-					["coord"] = { 24.4, 57.1, ISLE_OF_DORN },
+					["coord"] = { 29.5, 55.0, ISLE_OF_DORN },
 					["g"] = {
 						i(219754),	-- Remembrance of the Fallen City
 					},
@@ -110,7 +110,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78534, {	-- To Dornogal
 					["sourceQuests"] = { 78533 },	-- Secure the Beach
 					["provider"] = { "n", 211859 },	-- Baelgrim
-					["coord"] = { 25.5, 58.0, ISLE_OF_DORN },
+					["coord"] = { 30.4, 55.7, ISLE_OF_DORN },
 				}),
 				q(78535, {	-- They Come from Below
 					["sourceQuests"] = { 78534 },	-- To Dornogal
@@ -137,15 +137,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(217610),	-- Earthen Memory Gem (QI!)
 					},
 				}),
-				------ Stay awhile and listen ------
-				hqt(82459, {	-- Stay awhile and Listen: Anduin Wrynn
-					["name"] = "Stay awhile and listen: Anduin Wrynn",
-					["sourceQuests"] = { 78460 },	-- Hypocenter (available if quest is picked up and after turnin but not before)
-					["provider"] = { "n", 222558 },	-- Anduin Wrynn
-					["coord"] = { 44.7, 44.6, DORNOGAL },
-					["lockCriteria"] = { 1, "questID", 78462 },	-- Echoes of Compassion
-				}),
-				--
 				q(78468, {	-- The Archive
 					["sourceQuests"] = { 78460 },	-- Hypocenter
 					["provider"] = { "n", 217857 },	-- Speaker Brinthe
@@ -154,12 +145,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				------ Stay awhile and listen ------
 				hqt(82461, {	-- Stay awhile and listen: Dagran Thaurissan II
 					["name"] = "Stay awhile and listen: Dagran Thaurissan II",
-					["sourceQuests"] = { 78468 },	-- The Archive
+					["sourceQuests"] = { 78468 },	-- The Archive (Completed)
 					["provider"] = { "n", 217859 },	-- Dagran Thaurissan II
 					["coord"] = { 29.8, 60.0, DORNOGAL },
 				}),
 				---
 				q(78457, {	-- Stones of Dornogal
+					["description"] = "After speaking with Innkeeper Ronesh, enter The Inn and talk to Anduin Wrynn and Magni Bronzebeard.",
 					["sourceQuests"] = { 78460 },	-- Hypocenter
 					["provider"] = { "n", 217854 },	-- Merrix
 					["coord"] = { 29.4, 59.4, DORNOGAL },
@@ -168,9 +160,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				------ Stay awhile and listen ------
+				hqt(82459, {	-- Stay awhile and Listen: Anduin Wrynn
+					["name"] = "Stay awhile and listen: Anduin Wrynn",
+					["sourceQuests"] = { 78460 },	-- Hypocenter (Accepted and/or Completed)
+					["provider"] = { "n", 222558 },	-- Anduin Wrynn
+					["coord"] = { 44.8, 44.7, DORNOGAL },
+					["lockCriteria"] = { 1, "questID", 78462 },	-- Echoes of Compassion
+				}),
 				hqt(82460, {	-- Stay awhile and Listen: Magni Bronzebeard
 					["name"] = "Stay awhile and listen: Magni Bronzebeard",
-					["sourceQuests"] = { 78457 },	-- Stones of Dornogal (available if quest is picked up and after turnin but not before)
+					["sourceQuests"] = { 78457 },	-- Stones of Dornogal (Accepted and/or Completed)
 					["provider"] = { "n", 222557 },	-- Magni Bronzebeard
 					["coord"] = { 44.5, 44.5, DORNOGAL },
 					["lockCriteria"] = { 1, "questID", 78462 },	-- Echoes of Compassion
@@ -556,7 +555,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78996, {	-- Weapons and Warriors
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 214444 },	-- Aggartha
-					["coord"] = { 38.9, 80.2, ISLE_OF_DORN },
+					["coord"] = { 42.7, 71.7, ISLE_OF_DORN },
 				}),
 				q(78998, {	-- Frontline Farmers
 					["sourceQuests"] = { 78996 },	-- Weapons and Warriors
@@ -632,12 +631,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78469, {	-- Prairie Fever
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 217961 },	-- Hreka
-					["coord"] = { 39.0, 76.0, ISLE_OF_DORN },
+					["coord"] = { 41.8, 70.8, ISLE_OF_DORN },
 				}),
 				q(79692, {	-- Buried, Not Forgotten
 					["sourceQuests"] = { 78469 },	-- Prairie Fever
 					["provider"] = { "n", 216094 },	-- Kodun
-					["coord"] = { 39.6, 79.0, ISLE_OF_DORN },
+					["coord"] = { 42.3, 73.3, ISLE_OF_DORN },
 					["g"] = {
 						i(215464),	-- Memory Gem Fragment (QI!)
 						i(217108),	-- Modhina's Bag of Ore (QI!)
@@ -647,7 +646,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79691, {	-- Monsters in the Dark
 					["sourceQuests"] = { 78469 },	-- Prairie Fever
 					["provider"] = { "n", 216094 },	-- Kodun
-					["coord"] = { 39.6, 79.0, ISLE_OF_DORN },
+					["coord"] = { 42.3, 73.3, ISLE_OF_DORN },
 				}),
 				q(79703, {	-- Hope, An Anomaly
 					["sourceQuests"] = {
