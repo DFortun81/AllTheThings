@@ -1221,10 +1221,6 @@ root(ROOTS.Unsorted, {
 				i(226151),	-- Wax-Coated Coffer Unlocker
 				i(226154),	-- Wax-Sealed Crafty Crest
 				i(226152),	-- Wax-sealed Crests
-				--- Paragon Chests ---
-				i(226045),	-- The General's Trove
-				i(226100),	-- The Vizier's Trove
-				i(226103),	-- The Weaver's Trove
 				--- Attached to Quests via API ---
 				i(215359),	-- Very Large Valdrakken Accord Supply Pack
 				i(215448),	-- Darkstem Stew

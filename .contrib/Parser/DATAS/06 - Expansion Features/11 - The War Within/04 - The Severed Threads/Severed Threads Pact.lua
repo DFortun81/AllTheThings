@@ -43,19 +43,135 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
 					["coord"] = { 55.7, 43.8, AZJ_KAHET },
 				}),
-				-- The General quest chain unlocked at 4/9 rep
-				q(82338, {	-- Absent Errand
-					["provider"] = { "n", 224345 },	-- Anub'azal <Lord of Heritage Forces>
-					["coord"] = { 55.0, 41.1, AZJ_KAHET },
+				header(HEADERS.Achievement, 40832, {	-- Leave it to Weaver
+					q(84700, {	-- Pacts Below
+						--["sourceQuests"] = { 79030 },	-- The Voice of the Speakers (?)
+						["provider"] = { "n", 230098 },	-- Spindle
+						["coord"] = { 46.1, 50.0, DORNOGAL },
+						["isBreadcrumb"] = true,
+					}),
+					q(83276, {	-- Saving Private Spindle
+						["sourceQuests"] = { 84700 },	-- Pacts Below (still unsure)
+						["provider"] = { "n", 207471 },	-- Widow Arak'nai
+						["minReputation"] = { FACTION_THE_WEAVER, 4 },
+						["coord"] = { 55.6, 43.9, AZJ_KAHET },
+					}),
+					q(83277, {	-- Personal Pilfering
+						["sourceQuests"] = { 83276 },	-- Saving Private Spindle
+						["provider"] = { "n", 226019 },	-- Spindle
+						["minReputation"] = { FACTION_THE_WEAVER, 4 },
+						["coord"] = { 87.7, 59.3, NERUBAR },
+						["g"] = {
+							i(225341),	-- Incriminating Dagger (QI!)
+							i(225344),	-- Incriminating Evidence (QI!)
+							i(225343),	-- Incriminating Journal Entry (QI!)
+							i(225342),	-- Incriminating Script (QI!)
+						},
+					}),
+					q(79532, {	-- Tinker, Tailor, Soldier, Spider
+						["sourceQuests"] = { 83277 },	-- Personal Pilfering
+						["provider"] = { "n", 207471 },	-- Widow Arak'nai
+						["minReputation"] = { FACTION_THE_WEAVER, 7 },
+						["coord"] = { 55.6, 43.9, AZJ_KAHET },
+					}),
+					q(79627, {	-- Wine and Die
+						["sourceQuests"] = { 79532 },	-- Tinker, Tailor, Soldier, Spider
+						["provider"] = { "n", 227428 },	-- Widow Arak'nai
+						["minReputation"] = { FACTION_THE_WEAVER, 7 },
+						["coord"] = { 62.9, 12.1, NERUBAR_LOWER },
+						["g"] = {
+							i(213538),	-- Wood-Worm Tonic (QI!)
+						},
+					}),
+					q(79633, {	-- The Weaver's Legacy
+						["sourceQuests"] = { 79627 },	-- Wine and Die
+						["provider"] = { "n", 216298 },	-- Meesk the Venomtongue
+						["minReputation"] = { FACTION_THE_WEAVER, 7 },
+						["coord"] = { 62.8, 22.9, NERUBAR },
+						["g"] = {
+							ach(40832),		-- Leave it to Weaver
+							i(226103),	-- The Weaver's Trove
+						},
+					}),
 				}),
-				q(82339, {	-- An Honorless Kill
-					["sourceQuests"] = { 82338 },	-- Absent Errand
-					["provider"] = { "n", 223760 },	-- Ukos'via <Historical Spinner>
-					["coord"] = { 40.9, 33.5, NERUBAR },
-					["g"] = {
-						i(225637),	-- Poisoned Dagger (QI!)
-						i(225635),	-- Zev'kall's Attrition Log (QI!)
-					},
+				header(HEADERS.Achievement, 40833, {	-- The General's Salute
+					q(82338, {	-- Absent Errand
+						["provider"] = { "n", 224345 },	-- Anub'azal <Lord of Heritage Forces>
+						["minReputation"] = { FACTION_THE_GENERAL, 4 },
+						["coord"] = { 55.0, 41.1, AZJ_KAHET },
+					}),
+					q(82339, {	-- An Honorless Kill
+						["sourceQuests"] = { 82338 },	-- Absent Errand
+						["provider"] = { "n", 223760 },	-- Ukos'via <Historical Spinner>
+						["minReputation"] = { FACTION_THE_GENERAL, 4 },
+						["coord"] = { 40.9, 33.5, NERUBAR },
+						["g"] = {
+							i(225637),	-- Poisoned Dagger (QI!)
+							i(225635),	-- Zev'kall's Attrition Log (QI!)
+						},
+					}),
+					q(82121, {	-- Demand Satisfaction
+						["sourceQuests"] = { 82339 },	-- An Honorless Kill
+						["provider"] = { "n", 224345 },	-- Anub'azal <Lord of Heritage Forces>
+						["minReputation"] = { FACTION_THE_GENERAL, 7 },
+						["coord"] = { 55.0, 41.1, AZJ_KAHET },
+					}),
+					q(82122, {	-- Duel of the Fates
+						["sourceQuests"] = { 82121 },	-- Demand Satisfaction
+						["provider"] = { "n", 222788 },	-- Anub'azal <Lord of Heritage Forces>
+						["minReputation"] = { FACTION_THE_GENERAL, 7 },
+						["coord"] = { 46.0, 24.2, AZJ_KAHET },
+					}),
+					q(82123, {	-- The General's Conviction
+						["sourceQuests"] = { 82122 },	-- Duel of the Fates
+						["provider"] = { "n", 224547 },	-- Anub'azal <Lord of Heritage Forces>
+						["minReputation"] = { FACTION_THE_GENERAL, 7 },
+						["coord"] = { 46.0, 24.2, AZJ_KAHET },
+						["g"] = {
+							ach(40833),		-- The General's Salute
+							i(226045),	-- The General's Trove
+						},
+					}),
+				}),
+				header(HEADERS.Achievement, 40835, {	-- Vizier than Ever
+					q(83177, {	-- Socialized Medicine
+						["provider"] = { "n", 208782 },	-- Executor Nizrek
+						["minReputation"] = { FACTION_THE_VIZIER, 4 },
+						["coord"] = { 52.9, 46.2, NERUBAR },
+						["g"] = {
+							i(224799),	-- Nizrek's potion (QI!)
+						},
+					}),
+					q(83178, {	-- Rules and Consequences
+						["sourceQuests"] = { 83177 },	-- Socialized Medicine
+						["provider"] = { "n", 208782 },	-- Executor Nizrek
+						["minReputation"] = { FACTION_THE_VIZIER, 4 },
+						["coord"] = { 52.9, 46.2, NERUBAR },
+					}),
+					q(82954, {	-- Knives in the Dark
+						["sourceQuests"] = { 83178 },	-- Rules and Consequences
+						--["provider"] = { "n", 208782 },	-- Executor Nizrek
+						["minReputation"] = { FACTION_THE_VIZIER, 7 },
+						["coord"] = { 52.9, 46.1, NERUBAR },
+					}),
+					q(82953, {	-- A Cordial Invitation
+						--["provider"] = { "n", 208782 },	-- Executor Nizrek
+						["minReputation"] = { FACTION_THE_VIZIER, 7 },
+						["coord"] = { 52.9, 46.1, NERUBAR },
+					}),
+					q(82955, {	-- The Vizier's Resolve
+						["sourceQuests"] = {
+							82954,	-- Knives in the Dark
+							82953,	-- A Cordial Invitation
+						},
+						--["provider"] = { "n", 208782 },	-- Executor Nizrek
+						["minReputation"] = { FACTION_THE_VIZIER, 7 },
+						["coord"] = { 54.7, 33.2, NERUBAR },
+						["g"] = {
+							ach(40835),		-- Vizier than Ever
+							i(226100),	-- The Vizier's Trove
+						},
+					}),
 				}),
 			}),
 			-- The General

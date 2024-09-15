@@ -626,7 +626,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(84267),	-- Rasha'nan
 		q(84271),	-- Bloodtwister Ovi'nax
 		q(84269),	-- Nexus-Princess Ky'veza
-		-- q()
+		q(84273),	-- The Silken Court
 		q(84276),	-- Queen Ansurek
 
 		-- Heroic

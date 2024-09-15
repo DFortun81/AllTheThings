@@ -159,6 +159,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(221250),	-- Creeping Lasher Machete
 					i(221253),	-- Cultivator's Plant Puncher
 					i(221228),	-- Infested Fungal Wristwraps
+					i(223005),	-- String of Fungal Fruits
 				},
 			}),
 			n(220285, {	-- Lurker of the Deeps <Displaced Sea Horror>
