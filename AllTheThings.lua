@@ -5402,9 +5402,9 @@ local function UpdateGroup(group, parent)
 	-- Things which are determined to be a cost for something else which meets user filters will
 	-- be shown anyway, so don't need to undergo a filtering pass
 	local valid = group.isCost
-	if valid then
+	-- if valid then
 		-- app.PrintDebug("Pre-valid group as from cost/upgrade",group.isCost,group.isUpgrade,app:SearchLink(group))
-	end
+	-- end
 	-- A group with a source parent means it has a different 'real' heirarchy than in the current window
 	-- so need to verify filtering based on that instead of only itself
 	if not valid then
@@ -5483,7 +5483,7 @@ local function UpdateGroup(group, parent)
 
 	-- if debug then print("UpdateGroup.Done",group.progress,group.total,group.visible,group.__type) end
 	-- debug = nil
-	return group.visible;
+	-- return group.visible;
 end
 UpdateGroups = function(parent, g)
 	if g then
@@ -5579,13 +5579,6 @@ local function DirectGroupUpdate(group, got)
 	local prevTotal, prevProg, prevCost, prevUpgrade
 		= group.total or 0, group.progress or 0, group.costTotal or 0, group.upgradeTotal or 0
 	TopLevelUpdateGroup(group);
-	-- Set proper visibility for the updated group
-	local parent = rawget(group, "parent");
-	if group.g then
-		SetGroupVisibility(parent, group);
-	else
-		SetThingVisibility(parent, group);
-	end
 	local progChange, totalChange, costChange, upgradeChange
 		= group.progress - prevProg, group.total - prevTotal, group.costTotal - prevCost, group.upgradeTotal - prevUpgrade
 	-- Something to change for a visible group prior to the DGU or changed in visibility
