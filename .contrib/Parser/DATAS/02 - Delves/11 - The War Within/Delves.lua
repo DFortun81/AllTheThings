@@ -235,7 +235,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(84088),	-- Level 27
 		q(84089),	-- Level 28
 		q(84090),	-- Level 29
-		--q(???),	-- Level 30
+		q(84091),	-- Level 30
 		q(84092),	-- Level 31
 		q(84093),	-- Level 32
 		q(84094),	-- Level 33
