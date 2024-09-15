@@ -603,11 +603,13 @@ namespace ATT
             {
                 Log($"Using config: {filepath}");
                 Config = new CustomConfiguration(filepath);
+                Console.Title = $"ATT Parser: {filepath}";
             }
             else
             {
                 Log($"Added config: {filepath}");
                 Config.ApplyFile(filepath);
+                Console.Title += $" + {filepath}";
             }
         }
 

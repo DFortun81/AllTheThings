@@ -3162,21 +3162,38 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					n(VENDORS, {
 						n(50324, {	-- Provisioner Arok <Earthen Ring Quartermaster>
 							["coord"] = { 49.1, 42.1, VASHJIR_SHIMMERING_EXPANSE },
-							["groups"] = {
-								i(62357),	-- Cloak of Ancient Wisdom
-								i(62363),	-- Earthmender's Boots
-								i(62364),	-- Flamebloom Gloves
-								i(62356),	-- Helm of Temperance
-								i(62358),	-- Leggings of Clutching Roots
-								i(62353),	-- Mantle of Moss
-								i(62359),	-- Peacemaker's Breastplate
-								i(62354),	-- Pendant of Elemental Balance
-								i(62362),	-- Signet of the Elder Council
-								i(62361),	-- Softwind Cape
-								i(62355),	-- Stone-Wrapped Greaves
-								i(65905),	-- Tabard of the Earthen Ring
-								i(62365),	-- World Keeper's Gauntlets
-							},
+							["groups"] = bubbleDownClassicRep(FACTION_THE_EARTHEN_RING, {
+								{	-- Neutral
+								},
+								{	-- Friendly
+									i(65905),	-- Tabard of the Earthen Ring
+								},
+								{	-- Honored
+									i(62356),	-- Helm of Temperance
+									i(62354),	-- Pendant of Elemental Balance
+									i(62353),	-- Mantle of Moss
+									i(62355),	-- Stone-Wrapped Greaves
+								},
+								{	-- Revered
+									i(62357),	-- Cloak of Ancient Wisdom
+									i(62361),	-- Softwind Cape
+									i(62359),	-- Peacemaker's Breastplate
+									i(62358),	-- Leggings of Clutching Roots
+									i(62366, {	-- Arcanum of the Earthen Ring
+										["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+										["filterID"] = CONSUMABLES,
+									}),
+									i(68764, {	-- Arcanum of the Earthen Ring
+										["filterID"] = CONSUMABLES,
+									}),
+								},
+								{	-- Exalted
+									i(62364),	-- Flamebloom Gloves
+									i(62365),	-- World Keeper's Gauntlets
+									i(62363),	-- Earthmender's Boots
+									i(62362),	-- Signet of the Elder Council
+								},
+							}),
 						}),
 					}),
 				},
