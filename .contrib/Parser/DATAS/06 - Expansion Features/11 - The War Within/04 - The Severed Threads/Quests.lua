@@ -11,10 +11,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
-				q(82421, {	-- For Your Next Delve
-					--["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
-					--["coord"] = { 55.3, 41.2, AZJ_KAHET },
-				}),
 			}, {	-- RENOWN 4 --
 			}, {	-- RENOWN 5 --
 			}, {	-- RENOWN 6 --
