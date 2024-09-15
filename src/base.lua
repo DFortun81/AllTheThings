@@ -147,6 +147,11 @@ local function GetRelativeField(group, field, value)
 		return group[field] == value or GetRelativeField(group.sourceParent or group.parent, field, value);
 	end
 end
+local function GetRawRelativeField(group, field, value)
+	if group then
+		return group[field] == value or GetRawRelativeField(rawget(group, "parent"), field, value)
+	end
+end
 -- Returns the first encountered group's value tracing upwards in parent hierarchy which has a value for the provided field
 -- Prioritizes sourceParent before parent
 local function GetRelativeValue(group, field)
@@ -184,6 +189,7 @@ app.CloneReference = CloneReference;
 app.GetBestMapForGroup = GetBestMapForGroup;
 app.GetDeepestRelativeValue = GetDeepestRelativeValue;
 app.GetRelativeField = GetRelativeField;
+app.GetRawRelativeField = GetRawRelativeField
 app.GetRelativeValue = GetRelativeValue;
 
 -- Cache information about the player.

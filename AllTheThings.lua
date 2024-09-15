@@ -5350,7 +5350,7 @@ local function SetThingVisibility(parent, group)
 	-- Total
 	if not visible and group.total > 0 then
 		visible = group.progress < group.total or ThingVisibilityFilter(group);
-		-- if debug then print("total",visible) end
+		-- app.PrintDebug("STV.total",group.hash,visible,group.progress,group.total,ThingVisibilityFilter(group))
 	end
 	-- Cost
 	if not visible and ((group.costTotal or 0) > 0) then
@@ -5569,7 +5569,7 @@ local function DirectGroupUpdate(group, got)
 	end
 	local window = app.GetRelativeRawWithField(group, "window");
 	if window then window:ToggleExtraFilters(true) end
-	local wasHidden = app.GetRelativeField(group, "visible")
+	local wasHidden = app.GetRawRelativeField(group, "visible")
 	-- starting an update from a non-top-level group means we need to verify this group should even handle updates based on current filters first
 	if wasHidden and not app.RecursiveDirectGroupRequirementsFilter(group) then
 		-- app.PrintDebug("DGU:Filtered",group.visible,app:SearchLink(group))
@@ -5583,9 +5583,9 @@ local function DirectGroupUpdate(group, got)
 		= group.progress - prevProg, group.total - prevTotal, group.costTotal - prevCost, group.upgradeTotal - prevUpgrade
 	-- Something to change for a visible group prior to the DGU or changed in visibility
 	if progChange ~= 0 or totalChange ~= 0 or costChange ~= 0 or upgradeChange ~= 0 then
-		local isHidden = app.GetRelativeField(group, "visible")
+		local isHidden = not group.visible
+		-- app.PrintDebug("DGU:Change",window.Suffix,wasHidden,"=>",isHidden,app:SearchLink(group),progChange, totalChange, costChange, upgradeChange)
 		if not isHidden or isHidden ~= wasHidden then
-			-- app.PrintDebug("DGU:Change",wasHidden,"=>",isHidden,app:SearchLink(group),progChange, totalChange, costChange, upgradeChange)
 			AdjustParentProgress(group, progChange, totalChange, costChange, upgradeChange);
 		end
 	end
