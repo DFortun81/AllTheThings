@@ -325,7 +325,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79119, {	-- It's Rough to Be a Bug!
 					["sourceQuests"] = { 83325 },
 					["provider"] = { "n", 214359 },	-- Kish'nal
-					["coord"] = { 74.9, 83.5, AZJ_KAHET },
+					["coord"] = { 76, 82.4, AZJ_KAHET },
 				}),
 				q(79114, {	-- Beautification Project
 					["sourceQuests"] = { 79119 },	-- It's Rough to Be a Bug!
@@ -437,7 +437,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						79711,	-- That's Pretty Gross
 					},
 					["provider"] = { "n", 217565 },	-- Al'kubian
-					["coord"] = { 60.2, 68.6, AZJ_KAHET },
+					["coord"] = { 60.0, 66.2, AZJ_KAHET },
 					["g"] = {
 						i(222926),	-- Leg Chewers' Stomach (QI!)
 						i(222924),	-- Liverseeker's Intestines (QI!)
@@ -449,7 +449,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						79711,	-- That's Pretty Gross
 					},
 					["provider"] = { "n", 217565 },	-- Al'kubian
-					["coord"] = { 60.2, 68.6, AZJ_KAHET },
+					["coord"] = { 60.0, 66.2, AZJ_KAHET },
 					["g"] = {
 						i(223287),	-- Atomized Salien Slime (QI!)
 					},
@@ -460,7 +460,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						79714,	-- Rescuing the Food
 					},
 					["provider"] = { "n", 217565 },	-- Al'kubian
-					["coord"] = { 60.0, 66.1, AZJ_KAHET },
+					["coord"] = { 60.0, 66.2, AZJ_KAHET },
 					["g"] = {
 						i(222944),	-- Swollen Brain of Gluttony (QI!)
 					},

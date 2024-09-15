@@ -1161,7 +1161,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(223022),	-- Plans: Artisan Sickle
 					i(223024),	-- Plans: Artisan Skinning Knife
 					i(223011),	-- Plans: Charged Claymore
-					i(223038),	-- Plans: Charged Claymore
 					i(223013),	-- Plans: Charged Crusher
 					i(223010),	-- Plans: Charged Facesmasher
 					i(223012),	-- Plans: Charged Halberd

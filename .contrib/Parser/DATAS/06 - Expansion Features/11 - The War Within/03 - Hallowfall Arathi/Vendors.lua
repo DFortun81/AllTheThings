@@ -29,6 +29,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(223114, {	-- Formula: Enchant Boots - Scout's March (RECIPE!)
 							["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 						}),
+						i(223038, {	-- Plans: Charged Claymore (RECIPE!)	-- Doesn't show on vendor unless you have the profession on the current character
+							["cost"] = {{"i", ARTISANS_ACUITY, 150}},
+						}),
 						i(223064, {	-- Technique: Contract: Hallowfall Arathi (RECIPE!)
 							["cost"] = {{"i", ARTISANS_ACUITY, 150}},
 						}),

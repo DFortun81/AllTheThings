@@ -2233,7 +2233,6 @@ i(223023, 0);		-- Plans: Artisan Pickaxe
 i(223022, 0);		-- Plans: Artisan Sickle
 i(223024, 0);		-- Plans: Artisan Skinning Knife
 i(223011, 0);		-- Plans: Charged Claymore
-i(223038, 0);		-- Plans: Charged Claymore
 i(223013, 0);		-- Plans: Charged Crusher
 i(223010, 0);		-- Plans: Charged Facesmasher
 i(223012, 0);		-- Plans: Charged Halberd
@@ -2358,6 +2357,7 @@ i(223050, 450276);	-- Artisan Pickaxe
 i(223049, 450275);	-- Artisan Sickle
 i(223051, 450277);	-- Artisan Skinning Knife
 i(226643, 450246);	-- Beledar's Bulwark
+i(223038, 450238);	-- Charged Claymore
 i(223040, 450240);	-- Charged Crusher
 i(223037, 450237);	-- Charged Facesmasher
 i(223036, 450236);	-- Charged Runeaxe
