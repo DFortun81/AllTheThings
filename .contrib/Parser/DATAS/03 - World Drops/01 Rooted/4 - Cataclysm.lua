@@ -590,6 +590,7 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 		filter(ONE_HANDED_SWORDS, {
 			i(55454),	-- Angerfang Sword
 			i(55458),	-- Bladefist Sword
+			i(62071),	-- Corroded Blade
 			i(66916),	-- Delicate Blade of Meaning
 			i(66960),	-- Dirk's Command
 			i(55459),	-- Irontree Sword
@@ -603,7 +604,6 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 		filter(TWO_HANDED_SWORDS, {
 			i(55463),	-- Angerfang Greatsword
 			i(55467),	-- Bladefist Greatsword
-			i(62071),	-- Corroded Blade
 			i(55468),	-- Irontree Greatsword
 			i(55466),	-- Mardenholde Greatsword
 			i(55464),	-- Nethergarde Greatsword
