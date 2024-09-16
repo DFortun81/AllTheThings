@@ -1781,6 +1781,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								["timeline"] = { "removed 1.15.3" },
 								-- #endif
 							}),
+							-- #if BEFORE MOP
+							i(66049, {	-- Book of the Paragon
+								["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+							}),
+							i(66050, {	-- Idol of the Paragon
+								["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+							}),
+							i(66051, {	-- Relic of the Paragon
+								["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+							}),
+							i(66048, {	-- Statue of the Paragon
+								["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+							}),
+							-- #endif
 						},
 					}),
 					n(10440, {	-- Baron Rivendare

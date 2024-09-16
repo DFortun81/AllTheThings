@@ -648,7 +648,17 @@ TIER_TWELVE_COMMON_GROUPS = {
 	i(71260),	-- Bracers of Imperious Truths
 	i(71263),	-- Bracers of Misting Ash
 	i(70937),	-- Bracers of Regal Force
+	-- #if BEFORE MOP
+	i(71146, {	-- Covenant of the Flame
+		["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+	}),
+	-- #endif
 	i(71210),	-- Crystalline Brimstone Ring
+	-- #if BEFORE MOP
+	i(70939, {	-- Deathclutch Figurine
+		["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+	}),
+	-- #endif
 	i(70940),	-- Deflecting Brimstone Band
 	-- #if BEFORE MOP
 	i(71218, {	-- Deflecting Star
@@ -666,10 +676,25 @@ TIER_TWELVE_COMMON_GROUPS = {
 	}),
 	-- #endif
 	i(71129),	-- Necklace of Smoke Signals
+	-- #if BEFORE MOP
+	i(71147, {	-- Relic of the Elemental Lords
+		["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+	}),
+	-- #endif
 	i(71150),	-- Scorchvine Wand
 	i(71208),	-- Serrated Brimstone Signet
+	-- #if BEFORE MOP
+	i(71149, {	-- Singed Plume of Aviana
+		["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+	}),
+	-- #endif
 	i(71262),	-- Smolderskull Bindings
 	i(71211),	-- Soothing Brimstone Circle
+	-- #if BEFORE MOP
+	i(71148, {	-- Soulflame Vial
+		["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+	}),
+	-- #endif
 	i(71209),	-- Splintered Brimstone Seal
 	i(71212),	-- Stoneheart Choker
 	i(70935),	-- Stoneheart Necklace

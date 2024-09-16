@@ -983,6 +983,9 @@ root(ROOTS.Zones, {
 							i(61401, {	-- Rigid Colossus Fragment
 								["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 							}),
+							i(61399, {	-- Emerald Heart
+								["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+							}),
 							-- #endif
 						},
 					}),
@@ -1163,6 +1166,11 @@ root(ROOTS.Zones, {
 							}),
 							i(61439),	-- Gateshattering Hauberk
 							i(61441),	-- Starscraper Signet
+							-- #if BEFORE MOP
+							i(61440, {	-- Relic of the Waywalker
+								["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+							}),
+							-- #endif
 						},
 					}),
 					q(27059, {	-- The Wrong Sequence [Horde]
@@ -1172,6 +1180,11 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(61436),	-- Gateshattering Hauberk
 							i(61438),	-- Starscraper Signet
+							-- #if BEFORE MOP
+							i(61437, {	-- Relic of the Waywalker
+								["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+							}),
+							-- #endif
 						},
 					}),
 					q(26832, {	-- Therazane's Mercy

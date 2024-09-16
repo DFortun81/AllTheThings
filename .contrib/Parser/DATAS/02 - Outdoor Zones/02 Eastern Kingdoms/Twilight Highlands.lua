@@ -656,12 +656,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(27509, {	-- Breach in the Defenses
+					["qg"] = 45528,	-- Calen
 					["sourceQuest"] = 27564,	-- In Defense of the Redoubt
 					["coord"] = { 29.3, 26.0, TWILIGHT_HIGHLANDS },
-					["qg"] = 45528,	-- Calen
 					["groups"] = {
 						i(63780),	-- Dragonmender Waistguard
 						i(63775),	-- Helm of Verdant Explosion
+						-- #if BEFORE MOP
+						i(63776, {	-- Exhausted Flashgrowth Mote
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(28875, {	-- Bring Down the High Shaman
@@ -1556,6 +1561,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(63889),	-- Shackle-Shatter Wand
 						i(63890),	-- Ring of Rebellion
+						-- #if BEFORE MOP
+						i(63888, {	-- Blackblood Freedom Standard
+							["timeline"] = { REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(27638, {	-- Just You and Garona
@@ -1642,6 +1652,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(63893),	-- Signet of Bloody Sands
 						i(63892),	-- Beach-Sweeper Wand
+						-- #if BEFORE MOP
+						i(63891, {	-- Shore-Cleansing Standard
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(28247, {	-- Last of Her Kind
@@ -2132,10 +2147,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				q(28104, {	-- Precious Goods (A)
+					["qg"] = 47592,	-- Master Mathias Shaw
 					["sourceQuest"] = 28101,	-- Mathias' Command
 					["coord"] = { 26.0, 38.8, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
-					["qg"] = 47592,	-- Master Mathias Shaw
 					["groups"] = {
 						objective(1, {	-- 0/1 Twilight Caravan Cargo Key
 							["provider"] = { "i", 62926 },	-- Twilight Caravan Cargo Key
@@ -2153,13 +2168,18 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(63774),	-- Spear-Impaled Leggings
 						i(63773),	-- Gatekeeper's Helm
+						-- #if BEFORE MOP
+						i(63772, {	-- Spearwarden's "Lucky" Charm
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(28090, {	-- Precious Goods (H)
 					["qg"] = 47492,	-- Patch
+					["sourceQuest"] = 27576,	-- Patchwork Command
 					["coord"] = { 27.3, 36.7, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
-					["sourceQuest"] = 27576,	-- Patchwork Command
 					["groups"] = {
 						objective(1, {	-- 0/1 Twilight Caravan Cargo Key
 							["provider"] = { "i", 62926 },	-- Twilight Caravan Cargo Key
@@ -2177,6 +2197,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 						i(63771),	-- Crushchest Leggings
 						i(63770),	-- Helm of Durable Hatred
+						-- #if BEFORE MOP
+						i(63769, {	-- Spearwarden's Unlucky Charm
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(28109, {	-- Pressing Forward (A)

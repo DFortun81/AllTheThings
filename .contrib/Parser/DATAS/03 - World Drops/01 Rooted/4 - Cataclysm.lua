@@ -721,6 +721,23 @@ root(ROOTS.WorldDrops, applyclassicphase(CATA_PHASE_ONE, expansion(EXPANSION.CAT
 	}),
 	filter(MISC, {
 		i(68729),	-- Elementium Lockbox
+		-- #if BEFORE MOP
+		i(66988, {	-- Ashes of Youth
+			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+		}),
+		i(66912, {	-- Fetish of the Fiery Sands
+			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+		}),
+		i(67110, {	-- Goblin Surgeon's Kit
+			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+		}),
+		i(67059, {	-- Halted Clock
+			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+		}),
+		i(66961, {	-- Mindbender Bloom
+			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+		}),
+		-- #endif
 	}),
 	filter(RECIPES, {
 		prof(ENCHANTING, {

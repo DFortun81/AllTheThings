@@ -46,6 +46,14 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			i(73160),	-- Ebonsoul Defender's Stone
 			i(73155),	-- Ebonsoul Idol of Battle
 			i(73154),	-- Ebonsoul Stone of Battle
+			-- #if BEFORE MOP
+			i(73343, {	-- Ebonsoul Sigil of Battle
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			i(73346, {	-- Ebonsoul Sigil of Stoicism
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			-- #endif
 		}),
 		cl(DRUID, {
 			i(73012),	-- Wildsoul Spear
@@ -93,6 +101,17 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			i(73065),	-- Wildsoul Stone of Destruction
 			i(73067),	-- Wildsoul Stone of Rage
 			i(73126),	-- Wildsoul Stone of Wisdom
+			-- #if BEFORE MOP
+			i(73339, {	-- Wildsoul Idol of Destruction
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			i(73338, {	-- Wildsoul Idol of Rage
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			i(73337, {	-- Wildsoul Idol of Wisdom
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			-- #endif
 		}),
 		cl(HUNTER, {
 			i(73000),	-- Beastsoul Rifle
@@ -219,6 +238,17 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			i(73063),	-- Zealous Idol of Wisdom
 			i(73061),	-- Zealous Stone of Battle
 			i(73064),	-- Zealous Stone of Wisdom
+			-- #if BEFORE MOP
+			i(73354, {	-- Zealous Libram of Battle
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			i(73355, {	-- Zealous Libram of Stoicism
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			i(73356, {	-- Zealous Libram of Wisdom
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			-- #endif
 		}),
 		cl(PRIEST, {
 			i(73008),	-- Seraphic Staff
@@ -325,6 +355,17 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			i(73140),	-- Stormbinder Stone of Destruction
 			i(73135),	-- Stormbinder Stone of Rage
 			i(73145),	-- Stormbinder Stone of Wisdom
+			-- #if BEFORE MOP
+			i(73340, {	-- Stormbinder Totem of Destruction
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			i(73342, {	-- Stormbinder Totem of Rage
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			i(73341, {	-- Stormbinder Totem of Wisdom
+				["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			}),
+			-- #endif
 		}),
 		cl(WARLOCK, {
 			i(73007),	-- Dreadsoul Staff

@@ -98,6 +98,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(55797),	-- Hematite Plate Gloves
 						i(55801),	-- Quicksilver Blade
 						i(55799),	-- Rose Quartz Band
+						-- #if BEFORE MOP
+						i(55800, {	-- Stalagmite Dragon
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				e(112, {	-- Ozruk
@@ -125,6 +130,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(55820), -- Prophet Scepter
 						i(55817), -- Slippers of the Twilight Prophet
 						i(55819), -- Tear of Blood
+						-- #if BEFORE MOP
+						i(55821, {	-- Book of Dark Prophecies
+							["timeline"] = { REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 			})),
@@ -148,6 +158,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(56336),	-- Hematite Plate Gloves
 						i(56335),	-- Quicksilver Blade
 						i(56333),	-- Rose Quartz Band
+						-- #if BEFORE MOP
+						i(56337, {	-- Stalagmite Dragon
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				e(112, {	-- Ozruk
@@ -175,6 +190,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(56349),	-- Prophet Scepter
 						i(56348),	-- Slippers of the Twilight Prophet
 						i(56351),	-- Tear of Blood
+						-- #if BEFORE MOP
+						i(56350, {	-- Book of Dark Prophecies
+							["timeline"] = { REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 			}),

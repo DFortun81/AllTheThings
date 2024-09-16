@@ -713,6 +713,20 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 									},
 								}),
 								-- #if BEFORE MOP
+								i(71567, {	-- Covenant of the Flame
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 71146, 1 },	-- Covenant of the Flame
+									},
+									["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+								}),
+								i(71590, {	-- Deathclutch Figurine
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 70939, 1 },	-- Deathclutch Figurine
+									},
+									["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+								}),
 								i(71592, {	-- Deflecting Star
 									["cost"] = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
@@ -769,6 +783,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 										{ "i", 71361, 1 },	-- Ranseur of Hatred
 									},
 								}),
+								-- #if BEFORE MOP
+								i(71587, {	-- Relic of the Elemental Lords
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 71147, 1 },	-- Relic of the Elemental Lords
+									},
+									["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+								}),
+								-- #endif
 								i(71641, {	-- Riplimb's Lost Collar
 									["cost"] = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone
@@ -787,6 +810,22 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 										{ "i", 71150, 1 },	-- Scorchvine Wand
 									},
 								}),
+								-- #if BEFORE MOP
+								i(71577, {	-- Singed Plume of Aviana
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 71149, 1 },	-- Singed Plume of Aviana
+									},
+									["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+								}),
+								i(71580, {	-- Soulflame Vial
+									["cost"] = {
+										{ "i", 71617, 1 },	-- Crystallized Firestone
+										{ "i", 71148, 1 },	-- Soulflame Vial
+									},
+									["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+								}),
+								-- #endif
 								i(71559, {	-- Spire of Scarlet Pain
 									["cost"] = {
 										{ "i", 71617, 1 },	-- Crystallized Firestone

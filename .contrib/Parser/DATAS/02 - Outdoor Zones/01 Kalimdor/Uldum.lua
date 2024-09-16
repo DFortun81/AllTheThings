@@ -202,6 +202,20 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(65865),	-- Ankh-Inscribed Bracers
 					},
 				}),
+				q(27176, {	-- A Strange Disc
+					["coord"] = { 64.8, 29.5, ULDUM },
+					["modelScale"] = 30,
+					["provider"] = { "o", 205266 },	-- Elaborate Disc
+					["sourceQuests"] = {
+						28112,	-- Escape From the Lost City
+						27141,	-- Exploding Through
+					},
+					["groups"] = {
+						i(65889),	-- Shardfinder Hood
+						i(65888),	-- Splinterproof Bracers
+						i(65887),	-- Staffseeker Shoulderplates
+					},
+				}),
 				q(27624, {	-- After the Fall
 					["qg"] = 45296,	-- Harrison Jones
 					["coord"] = { 64.5, 28.0, ULDUM },
@@ -733,20 +747,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						objective(4, {	-- 0/5 Turquoise Scarabs Slain
 							["provider"] = { "n", 46126 },	-- Turquoise Scarab
 						}),
-					},
-				}),
-				q(27176, {	-- A Strange Disc
-					["coord"] = { 64.8, 29.5, ULDUM },
-					["modelScale"] = 30,
-					["provider"] = { "o", 205266 },	-- Elaborate Disc
-					["sourceQuests"] = {
-						28112,	-- Escape From the Lost City
-						27141,	-- Exploding Through
-					},
-					["groups"] = {
-						i(65889),	-- Shardfinder Hood
-						i(65888),	-- Splinterproof Bracers
-						i(65887),	-- Staffseeker Shoulderplates
+						-- #if BEFORE MOP
+						i(68612, {	-- Scarab Leg Talisman
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(28105, {	-- Kavem the Callous
@@ -770,8 +775,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28480, {	-- Lieutenants of Darkness
 					["qg"] = 48564,	-- King Phaoris
-					["coord"] = { 52.0, 65.4, ULDUM },
 					["sourceQuest"] = 28623,	-- The Push Westward
+					["coord"] = { 52.0, 65.4, ULDUM },
 					["groups"] = {
 						objective(1, {	-- 0/1 Scorpion-Lord Namkhare slain
 							["provider"] = { "n", 47742 },	-- Scorpion-Lord Namkhare
@@ -781,6 +786,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(65813),	-- Scarab-Inlaid Crossbow
 						i(65814),	-- Sekhemet's Seal
+						-- #if BEFORE MOP
+						i(65812, {	-- Namkhare's Cabochon Charm
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(28193, {	-- Lockdown!

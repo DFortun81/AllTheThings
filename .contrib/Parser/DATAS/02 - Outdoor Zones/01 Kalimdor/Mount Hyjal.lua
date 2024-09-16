@@ -1891,6 +1891,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(57299),	-- Torque of the Herald
 						i(57298),	-- Gatekeeper Treads
+						-- #if BEFORE MOP
+						i(57297, {	-- Azralon's Twisted Rune
+							["timeline"] = { REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				q(25310, {	-- The Greater of Two Evils

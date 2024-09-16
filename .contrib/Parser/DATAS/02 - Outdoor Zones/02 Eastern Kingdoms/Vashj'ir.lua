@@ -222,6 +222,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(59639),	-- Spikemender Shoulderplates
 								i(59638),	-- Necklace of the Furious Standard
+								-- #if BEFORE MOP
+								i(59640, {	-- Fetish of Azrajar
+									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+								}),
+								-- #endif
 							},
 						}),
 						q(25980, {	-- A Standard Day for Azrajar (H)
@@ -238,6 +243,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(59636),	-- Spikemender Shoulderplates
 								i(59635),	-- Necklace of the Furious Standard
+								-- #if BEFORE MOP
+								i(59637, {	-- Fetish of Azrajar
+									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+								}),
+								-- #endif
 							},
 						}),
 						q(26143, {	-- All that Rises
@@ -466,6 +476,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 								i(59628),	-- Hood of Teeming Horror
 								i(59627),	-- Tentacle-Slayer Bracers
+								-- #if BEFORE MOP
+								i(59626, {	-- Wil'hai's Extraneous Tooth
+									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+								}),
+								-- #endif
 							},
 						}),
 						q(26106, {	-- Fuel-ology 101
@@ -971,14 +986,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								}),
 							}
 						}),
-						q(25388, {	-- Crate of Crab Meat
-							["providers"] = {
-								{ "o", 202871 },	-- Sunken Crate
-								{ "i",  53061 },	-- Crate of Crab Meat
-							},
-							["sourceQuest"] = 25587,	-- Gimme Shelter
-							["coord"] = { 49.6, 40.8, VASHJIR_KELPTHAR_FOREST },
-						}),
 						q(25471, {	-- Across the Great Divide
 							["qg"] = 41341,	-- Erunak Stonespeaker
 							["sourceQuest"] = 27708,	-- The Warden's Time
@@ -1173,6 +1180,21 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								i(59778),	-- Medusoid Staff
 								i(59777),	-- Conch-Inlaid Gauntlets
 								i(59776),	-- Pipefish Bracers
+							},
+						}),
+						q(25388, {	-- Crate of Crab Meat
+							["providers"] = {
+								{ "o", 202871 },	-- Sunken Crate
+								{ "i",  53061 },	-- Crate of Crab Meat
+							},
+							["sourceQuest"] = 25587,	-- Gimme Shelter
+							["coord"] = { 49.6, 40.8, VASHJIR_KELPTHAR_FOREST },
+							["groups"] = {
+								-- #if BEFORE MOP
+								i(68609, {	-- Fine-Toothed Comb
+									["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+								}),
+								-- #endif
 							},
 						}),
 						q(25657, {	-- Dah, Nunt.. Dah, Nunt...

@@ -851,6 +851,14 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 						i(63482),	-- Daughter's Hands
 						i(63483),	-- Guildmaster's Greaves
 						i(65178),	-- VanCleef's Boots
+						-- #if BEFORE MOP
+						i(63487, {	-- Book of the Well Sung Song
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						i(63480, {	-- Record of the Brotherhood's End
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 			},

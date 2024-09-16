@@ -173,6 +173,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(55780),	-- Twitching Shadows
 						i(55785),	-- Willowy Crown
 						i(55787),	-- Witching Hourglass
+						-- #if BEFORE MOP
+						i(55783, {	-- Sandshift Relic
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 			})),
@@ -236,6 +241,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(56315),	-- Twitching Shadows
 						i(56321),	-- Willowy Crown
 						i(56320),	-- Witching Hourglass
+						-- #if BEFORE MOP
+						i(56316, {	-- Sandshift Relic
+							["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 			}),

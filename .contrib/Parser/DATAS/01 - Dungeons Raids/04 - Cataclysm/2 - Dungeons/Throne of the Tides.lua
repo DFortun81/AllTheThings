@@ -97,6 +97,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(55236), -- Anthia's Ring
 						i(55235), -- Decapod Slippers
 						i(55237), -- Porcelain Crab
+						-- #if BEFORE MOP
+						i(55248, {	-- Conch of Thundering Waves
+							["timeline"] = { REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				e(104, {	-- Ozumat
@@ -148,6 +153,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(56276), -- Anthia's Ring
 						i(56277), -- Decapod Slippers
 						i(56280), -- Porcelain Crab
+						-- #if BEFORE MOP
+						i(56279, {	-- Conch of Thundering Waves
+							["timeline"] = { REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				e(104, {	-- Ozumat

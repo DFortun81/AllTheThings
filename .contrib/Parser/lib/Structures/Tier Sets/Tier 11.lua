@@ -752,6 +752,23 @@ TIER_ELEVEN_COMMON_GROUPS = {
 	i(58154),	-- Pensive Legwraps
 	i(58099),	-- Reaping Gauntlets
 	i(58187),	-- Ring of the Battle Anthem
+	-- #if BEFORE MOP
+	i(64674, {	-- Relic of Aggramar
+		["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+	}),
+	i(64673, {	-- Relic of Eonar
+		["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+	}),
+	i(64671, {	-- Relic of Golganneth
+		["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+	}),
+	i(64676, {	-- Relic of Khaz'goroth
+		["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+	}),
+	i(64672, {	-- Relic of Norgannon
+		["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+	}),
+	-- #endif
 	i(58153),	-- Robes of Embalmed Darkness
 	i(58197),	-- Rock Furrow Boots
 	i(57918),	-- Sash of Musing

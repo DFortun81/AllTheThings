@@ -119,6 +119,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						i(55851),	-- Ring of Frozen Rain
 						i(55850),	-- Shadow of Perfect Bliss
 						i(55853),	-- Thundercall
+							-- #if BEFORE MOP
+							i(55852, {	-- Captured Lightning
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
+							-- #endif
 					},
 				}),
 			})),
@@ -165,6 +170,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							i(56373),	-- Ring of Frozen Rain
 							i(56371),	-- Shadow of Perfect Bliss
 							i(56376),	-- Thundercall
+							-- #if BEFORE MOP
+							i(56372, {	-- Captured Lightning
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
+							-- #endif
 						},
 					}),
 				},
