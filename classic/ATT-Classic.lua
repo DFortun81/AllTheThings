@@ -83,6 +83,7 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 
 -- Helper Functions
+app.AddEventHandler("OnThingCollected", function() app.Audio:PlayFanfare(); end);
 local pendingCollection, pendingRemovals, retrievingCollection, pendingCollectionCooldown = {},{},{},0;
 local function PendingCollectionCoroutine()
 	while not app.IsReady do coroutine.yield(); end
