@@ -1321,11 +1321,8 @@ root(ROOTS.Unsorted, {
 				i(216665),	-- Warband Bank Distance Inhibitor
 			}),
 			n(WEAPONS, {
-				-- These exist... Someone need to investigate (Fate Weaver has some comments) and also see itemID: 218126 that Alex sourced//Braghe
-				i(219381),	-- Fate Weaver
+				-- These exist... Someone need to investigate and also see itemID: 218126 that Alex sourced//Braghe
 				i(218125),	-- Reactive Webbed Escutcheon
-				i(219382),	-- Fateweaved Needle
-				i(219941),	-- Fateweaved Mallet
 			}),
 
 			n(QUESTS, {
