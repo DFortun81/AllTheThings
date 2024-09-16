@@ -1689,7 +1689,7 @@ root(ROOTS.Zones, {
 							i(44192),	-- Stalactite Chopper
 							-- #if ANYCLASSIC
 							i(206392, {	-- Tabard of the Sons of Hodir
-								["factionID"] = 1119,	-- The Sons of Hodir
+								["factionID"] = FACTION_THE_SONS_OF_HODIR,	-- The Sons of Hodir
 							}),
 							-- #endif
 						},
