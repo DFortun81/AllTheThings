@@ -213,6 +213,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(211872),	-- Patrol Torch (QI!)
 						},
 					}),
+					q(82995, {	-- Nerubian Device
+						["provider"] = { "i", 224548 },	-- Nerubian Device
+						["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 16 },
+					}),
 					q(76600, {	-- RIght Between the Gyro-Optics
 						["sourceQuests"] = { 76599 },	-- Right Between the Gyro-Optics - Activate
 						["provider"] = { "n", 208019 },	-- Auebry Irongear
@@ -670,11 +674,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						},
 					}),
 					o(451993, {	-- Nerubian Device
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure in any area of farmland.",
 						["coord"] = { 62.3, 31.7, HALLOWFALL },
 						["g"] = {
-							i(224548),	-- Nerubian Device
-							-- put this on the quest once known
-							-- ["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 16 },
+							i(224548),	-- Nerubian Device (QS!)
 						},
 					}),
 					o(453186, {	-- Nightfarm Growthling
@@ -826,7 +829,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							}),
 							i(224811, {	-- Sugar Shrooms
 								["cost"] = {{"i", RADIANT_REMNANT, 1}},
-								["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 12 }
+								["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 12 },
 							}),
 						},
 					}),
@@ -846,7 +849,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["g"] = {
 							i(224815, {	-- Charm of the Flame
 								["cost"] = {{"i", RADIANT_REMNANT, 5}},
-								["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 14 }
+								["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 14 },
 							}),
 							i(225253, {	-- Flickering Flame Holder
 								["cost"] = {{"i", RADIANT_REMNANT, 2}},
@@ -927,7 +930,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(79214),	-- after harvester activation @ 61.9, 28.8, he is going to o: 433377 (Harvest Box) and highlight it
 			q(85552),	-- triggered on opening a Lamplighter Supply Satchel, first & second in week - x3 reports
 			q(79177),	-- Snuffling in Hallowfall?
-			--q(79179)	-- ??? "After looting Spider Touched Bag (211973)."
+			q(79179),	-- After looting Spider Touched Bag (211973)
 			--q(79188),	-- ??? "After picking up Spider-Touched Bag (211973), during the keyflame event and turning in 79173 Supply the Effort" //That last quest is what I turned in, Supply the Effort but it popped up a bit after turning in, First Bag this week
 						-- ??? "after turning in 79173 Supply the Effort and receiving a lamplighter supply satchel (first that week)"
 			-- Vendor

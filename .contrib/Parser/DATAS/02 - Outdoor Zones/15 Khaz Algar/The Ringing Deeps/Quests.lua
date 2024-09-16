@@ -741,9 +741,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40799.09, {	-- Kobold Candles
 				q(82946, {	-- Rollin' Down In the Deeps
 					["isDaily"] = true,
-					["sourceQuests"] = { 80082 },	-- Back to Gundargaz	// yet I'm unsure
+					["sourceQuests"] = {
+						80082,	-- Back to Gundargaz
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["provider"] = { "n", 216164 },	-- Gnawbles
 					["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
+					["sourceQuestNumRequired"] = 1,
 					["g"] = {
 						i(227792),	-- Everyday Cache
 					},
