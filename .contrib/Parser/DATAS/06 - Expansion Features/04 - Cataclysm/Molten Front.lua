@@ -664,6 +664,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						i(70176),	-- Pattern: Luxurious Silk Gem Bag
 						i(70174),	-- Pattern: Royal Scribe's Satchel (RECIPE!)
 						i(70175),	-- Pattern: Triple-Reinforced Mining Bag (RECIPE!)
+						-- #if BEFORE MOP
+						i(70111, {	-- Relic of Elune's Light
+							["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+						}),
+						i(70109, {	-- Relic of Elune's Shadow
+							["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				n(53214, {	-- Damek Bloombeard <Exceptional Equipment>
@@ -703,6 +711,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						i(70127),	-- Lylagar Horn Ring
 						i(70126),	-- Nemesis Shell Band
 						i(70124),	-- Spirit Fragment Band
+						-- #if BEFORE MOP
+						i(70125, {	-- Relic of Lo'Gosh
+							["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+						}),
+						i(70128, {	-- Relic of Tortolla
+							["timeline"] = { ADDED_4_2_0, REMOVED_5_0_4 },
+						}),
+						-- #endif
 					},
 				}),
 				n(52822, {	-- Zen'Vorka <Favors of the World Tree>

@@ -608,6 +608,41 @@ root(ROOTS.NeverImplemented, n(ARMOR, {
 				i(65015),	-- DONTUSEFury of Angerforge
 			}),
 		}),
+		-- #if BEFORE MOP
+		filter(MISC, {
+			-- These were created for Dragon Soul, but the Normal Mode relics themselves were added to the Valor vendor instead, meaning the LFR and Heroic versions were never available to players
+			i(78629, {	-- Gutripper Shard (LFR)
+				["timeline"] = { CREATED_4_3_0, REMOVED_5_0_4 },
+			}),
+			i(78550, {	-- Gutripper Shard (Heroic)
+				["timeline"] = { CREATED_4_3_0, REMOVED_5_0_4 },
+			}),
+			i(78631, {	-- Lightning Spirit in a Bottle (LFR)
+				["timeline"] = { CREATED_4_3_0, REMOVED_5_0_4 },
+			}),
+			i(78552, {	-- Lightning Spirit in a Bottle (Heroic)
+				["timeline"] = { CREATED_4_3_0, REMOVED_5_0_4 },
+			}),
+			i(78630, {	-- Mindbender Lens (LFR)
+				["timeline"] = { CREATED_4_3_0, REMOVED_5_0_4 },
+			}),
+			i(78553, {	-- Mindbender Lens (Heroic)
+				["timeline"] = { CREATED_4_3_0, REMOVED_5_0_4 },
+			}),
+			i(78633, {	-- Ripfang Relic (LFR)
+				["timeline"] = { CREATED_4_3_0, REMOVED_5_0_4 },
+			}),
+			i(78554, {	-- Ripfang Relic (Heroic)
+				["timeline"] = { CREATED_4_3_0, REMOVED_5_0_4 },
+			}),
+			i(78632, {	-- Stoutheart Talisman (LFR)
+				["timeline"] = { CREATED_4_3_0, REMOVED_5_0_4 },
+			}),
+			i(78551, {	-- Stoutheart Talisman (Heroic)
+				["timeline"] = { CREATED_4_3_0, REMOVED_5_0_4 },
+			}),
+		}),
+		-- #endif
 	}),
 	expansion(EXPANSION.MOP, {
 		filter(CLOTH, {

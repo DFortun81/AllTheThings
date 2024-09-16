@@ -1036,6 +1036,11 @@ TIER_THIRTEEN_COMMON_GROUPS = {
 	i(77153),	-- Glowing Wings of Hope
 	i(77165),	-- Grimfist Crushers
 	i(77092),	-- Guardspike Choker
+	-- #if BEFORE MOP
+	i(77081, {	-- Gutripper Shard
+		["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+	}),
+	-- #endif
 	i(77317),	-- Heartcrusher Wristplates
 	i(77149),	-- Helmet of Perpetual Rebirth
 	i(77147),	-- Hood of Hidden Flesh
@@ -1046,14 +1051,29 @@ TIER_THIRTEEN_COMMON_GROUPS = {
 	i(77113),	-- Kiroptyric Sigil
 	i(77170),	-- Kneebreaker Boots
 	i(77161),	-- Lightfinger Handwraps
+	-- #if BEFORE MOP
+	i(77083, {	-- Lightning Spirit in a Bottle
+		["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+	}),
+	-- #endif
 	i(77121),	-- Lightwarper Vestments
 	i(77320),	-- Luminescent Bracers
+	-- #if BEFORE MOP
+	i(77082, {	-- Mindbender Lens
+		["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+	}),
+	-- #endif
 	i(77098),	-- Nanoprecise Cape
 	i(77090),	-- Necklace of Black Dragon's Teeth
 	i(77148),	-- Nocturnal Gaze
 	i(77088),	-- Opal of the Secret Order
 	i(77115),	-- Reflection of the Light
 	i(77110),	-- Ring of Torn Flesh
+	-- #if BEFORE MOP
+	i(77080, {	-- Ripfang Relic
+		["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+	}),
+	-- #endif
 	i(77122),	-- Robes of Searing Shadow
 	i(77173),	-- Rooftop Griptoes
 	i(77116),	-- Rotting Skull
@@ -1066,6 +1086,11 @@ TIER_THIRTEEN_COMMON_GROUPS = {
 	i(77169),	-- Silver Sabatons of Fury
 	i(77146),	-- Soulgaze Cowl
 	i(77177),	-- Splinterfoot Sandals
+	-- #if BEFORE MOP
+	i(77084, {	-- Stoutheart Talisman
+		["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+	}),
+	-- #endif
 	i(77179),	-- Tentacular Belt
 	i(77157),	-- The Hands of Gilly
 	i(77089),	-- Threadlinked Chain
