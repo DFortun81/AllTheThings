@@ -167,9 +167,11 @@ root(ROOTS.Zones, {
 				}),
 				n(FACTIONS, {
 					faction(FACTION_ARGENT_CRUSADE, {	-- Argent Crusade
+						["provider"] = { "i", 43154 },	-- Tabard of the Argent Crusade
 						["maps"] = { ZULDRAK },
 					}),
 					faction(FACTION_EBON_BLADE, {	-- Knights of the Ebon Blade
+						["provider"] = { "i", 43155 },	-- Tabard of the Ebon Blade
 						["maps"] = { ZULDRAK },
 					}),
 				}),
@@ -2289,9 +2291,7 @@ root(ROOTS.Zones, {
 							i(44249),	-- Runeblade of Demonstrable Power
 							i(44257),	-- Spaulders of the Black Arrow
 							i(44256),	-- Sterile Flesh-Handling Gloves
-							i(43155, {	-- Tabard of the Ebon Blade
-								["factionID"] = 1098,	-- Knights of the Ebon Blade
-							}),
+							i(43155),	-- Tabard of the Ebon Blade
 							i(44243),	-- Toxin-Tempered Sabatons
 							i(44241),	-- Unholy Persuader
 							i(44258),	-- Wound-Binder Wristguards
@@ -2332,9 +2332,7 @@ root(ROOTS.Zones, {
 							i(44283),	-- Signet of Hopeful Light
 							i(44240),	-- Special Issue Legplates
 							i(44239),	-- Standard Issue Legplates
-							i(43154, {	-- Tabard of the Argent Crusade
-								["factionID"] = 1106,	-- Argent Crusade
-							}),
+							i(43154),	-- Tabard of the Argent Crusade
 							i(44245),	-- Zombie Sweeper Shotgun
 						},
 					}),

@@ -73,7 +73,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_DARNASSUS, {	-- Darnassus
-					-- #if AFTER WRATH
+					-- #if AFTER CATA
+					["provider"] = { "i", 45579 },	-- Darnassus Tabard
+					-- #elseif AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Nightelf_Female",
 					-- #else
 					["icon"] = [[~_.asset("Achievement_Character_Nightelf_Female")]],
@@ -82,6 +84,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				faction(FACTION_GILNEAS, {	-- Gilneas
+					["provider"] = { "i", 64882 },	-- Gilneas Tabard
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,

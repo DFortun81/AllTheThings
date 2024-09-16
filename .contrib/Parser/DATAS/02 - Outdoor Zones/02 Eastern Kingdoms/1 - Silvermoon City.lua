@@ -32,6 +32,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_SILVERMOON_CITY, {	-- Silvermoon City
+					-- #if AFTER CATA
+					["provider"] = { "i", 45585 },	-- Silvermoon City Tabard
+					-- #endif
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.RuneclothTurnIns,
 					["races"] = HORDE_ONLY,
 				}),

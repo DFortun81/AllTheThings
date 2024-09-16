@@ -55,7 +55,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_STORMWIND, {	-- Stormwind
-					-- #if AFTER WRATH
+					-- #if AFTER CATA
+					["provider"] = { "i", 45574 },	-- Stormwind Tabard
+					-- #elseif AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Human_Female",
 					-- #else
 					["icon"] = [[~_.asset("Achievement_Character_Human_Female")]],
@@ -64,6 +66,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				faction(FACTION_TUSHUI_PANDAREN, {	-- Tushui Pandaren
+					["provider"] = { "i", 83079 },	-- Tushui Tabard
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,
 				}),

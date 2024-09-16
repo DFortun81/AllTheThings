@@ -50,7 +50,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_GNOMEREGAN, {	-- Gnomeregan Exiles
-					-- #if AFTER WRATH
+					-- #if AFTER CATA
+					["provider"] = { "i", 45578 },	-- Gnomeregan Tabard
+					-- #elseif AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Male",
 					-- #else
 					["icon"] = [[~_.asset("Achievement_Character_Gnome_Male")]],
@@ -59,7 +61,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				faction(FACTION_IRONFORGE, {	-- Ironforge
-					-- #if AFTER WRATH
+					-- #if AFTER CATA
+					["provider"] = { "i", 45577 },	-- Ironforge Tabard
+					-- #elseif AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Dwarf_Male",
 					-- #else
 					["icon"] = [[~_.asset("Achievement_Character_Dwarf_Male")]],

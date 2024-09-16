@@ -323,7 +323,12 @@ root(ROOTS.Character, n(createHeader({
 			["description"] = "This is a hidden reputation. It might not count towards reputation achievements.",
 			["collectible"] = false,
 		}),
-		faction(FACTION_GUILD),
+		faction(FACTION_GUILD, {
+			["providers"] = {
+				{ "i", 69210 },	-- Renowned Guild Tabard
+				{ "i", 69209 },	-- Illustrious Guild Tabard
+			},
+		}),
 	}),
 	n(createHeader({
 		readable = "Guild Vendors",

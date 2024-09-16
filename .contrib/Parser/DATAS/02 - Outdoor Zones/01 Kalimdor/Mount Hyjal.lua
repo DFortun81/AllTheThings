@@ -138,7 +138,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_GUARDIANS_OF_HYJAL, {	-- Guardians of Hyjal
-					["icon"] = "Interface\\Icons\\inv_misc_tabard_guardiansofhyjal",
+					["provider"] = { "i", 65906 },	-- Tabard of the Guardians of Hyjal
 				}),
 			}),
 			prof(FISHING, {
@@ -2455,24 +2455,41 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(VENDORS, {
 				n(50314, {	-- Provisioner Whitecloud <Guardians of Hyjal Quartermaster>
 					["coord"] = { 62.7, 23.8, MOUNT_HYJAL },
-					["groups"] = {
-						i(62378),	-- Acorn of the Daughter Tree
-						i(62381),	-- Aessina- Blessed Gloves
-						i(62384),	-- Belt of the Ferocious Wolf
-						i(62377),	-- Cloak of the Dryads
-						i(62386),	-- Cord of the Raven Queen
-						i(62375),	-- Galrond's Band
-						i(138803, {	-- Illusion: Mending (ILLUSION!)
-							["timeline"] = { ADDED_7_0_3 },
-						}),
-						i(62376),	-- Mountain's Mouth
-						i(62374),	-- Sly Fox Jerkin
-						i(65906),	-- Tabard of the Guardians of Hyjal
-						i(62385),	-- Treads of Malorne
-						i(62382),	-- Waywatcher's Boots
-						i(62380),	-- Wilderness Legguards
-						i(62383),	-- Wrap of the Great Turtle
-					},
+					["groups"] = bubbleDownClassicRep(FACTION_GUARDIANS_OF_HYJAL, {
+						{	-- Neutral
+						},
+						{	-- Friendly
+							i(65906),	-- Tabard of the Guardians of Hyjal
+						},
+						{	-- Honored
+							i(62376),	-- Mountain's Mouth
+							i(62377),	-- Cloak of the Dryads
+							i(62374),	-- Sly Fox Jerkin
+							i(62375),	-- Galrond's Band
+						},
+						{	-- Revered
+							i(62378),	-- Acorn of the Daughter Tree
+							i(62381),	-- Aessina- Blessed Gloves
+							i(62380),	-- Wilderness Legguards
+							i(62382),	-- Waywatcher's Boots
+							i(62367, {	-- Arcanum of Hyjal
+								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+								["filterID"] = CONSUMABLES,
+							}),
+							i(68765, {	-- Arcanum of Hyjal
+								["filterID"] = CONSUMABLES,
+							}),
+							i(138803, {	-- Illusion: Mending (ILLUSION!)
+								["timeline"] = { ADDED_7_0_3 },
+							}),
+						},
+						{	-- Exalted
+							i(62383),	-- Wrap of the Great Turtle
+							i(62384),	-- Belt of the Ferocious Wolf
+							i(62386),	-- Cord of the Raven Queen
+							i(62385),	-- Treads of Malorne
+						},
+					}),
 				}),
 				n(71304, {	-- Iris Moondreamer <Quartermaster>
 					["coord"] = { 62.8, 24.2, MOUNT_HYJAL },

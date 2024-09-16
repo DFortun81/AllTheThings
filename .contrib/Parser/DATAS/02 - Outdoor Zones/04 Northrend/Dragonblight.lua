@@ -259,6 +259,8 @@ root(ROOTS.Zones, {
 						["OnTooltip"] = OnTooltipForTheKaluak,
 					}),
 					faction(FACTION_THE_WYRMREST_ACCORD, {	-- The Wyrmrest Accord
+						["provider"] = { "i", 43156 },	-- Tabard of the Wyrmrest Accord
+						["icon"] = 236699,
 						["maps"] = { BOREAN_TUNDRA },
 					}),
 				}),
@@ -2397,9 +2399,7 @@ root(ROOTS.Zones, {
 							i(44201),	-- Sabatons of Draconic Vigor
 							i(44202),	-- Sandals of Crimson Fury
 							i(44196),	-- Sash of the Wizened Wyrm
-							i(43156, {	-- Tabard of the Wyrmrest Accord
-								["factionID"] = 1091,	-- The Wyrmrest Accord
-							}),
+							i(43156),	-- Tabard of the Wyrmrest Accord
 						},
 					}),
 					n(27185, {	-- Kuk'uq <Spearcrafter>

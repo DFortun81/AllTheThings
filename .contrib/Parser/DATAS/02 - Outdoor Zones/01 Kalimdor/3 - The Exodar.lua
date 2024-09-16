@@ -30,6 +30,9 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_EXODAR, {	-- Exodar
+					-- #if AFTER CATA
+					["provider"] = { "i", 45580 },	-- Exodar Tabard
+					-- #endif
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.RuneclothTurnIns,
 					["races"] = ALLIANCE_ONLY,
 				}),

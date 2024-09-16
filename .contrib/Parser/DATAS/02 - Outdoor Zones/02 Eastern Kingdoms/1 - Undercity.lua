@@ -44,7 +44,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_UNDERCITY, {	-- Undercity
-					-- #if AFTER WRATH
+					-- #if AFTER CATA
+					["provider"] = { "i", 45583 },	-- Undercity Tabard
+					-- #elseif AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Undead_Male",
 					-- #else
 					["icon"] = [[~_.asset("Achievement_Character_Undead_Male")]],

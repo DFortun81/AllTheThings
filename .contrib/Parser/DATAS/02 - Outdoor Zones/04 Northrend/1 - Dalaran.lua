@@ -1346,6 +1346,7 @@ root(ROOTS.Zones, {
 				}),
 				n(FACTIONS, {
 					faction(FACTION_KIRIN_TOR, {	-- Kirin Tor
+						["provider"] = { "i", 43157 },	-- Tabard of the Kirin Tor
 						["icon"] = "Interface\\Icons\\spell_holy_mindsooth",
 					}),
 					faction(FACTION_THE_SILVER_COVENANT, {	-- The Silver Covenant
@@ -2878,9 +2879,7 @@ root(ROOTS.Zones, {
 							i(44167),	-- Shroud of Dedicated Research
 							i(44171),	-- Spaulders of Grounded Lightning
 							i(44174),	-- Stave of Shrouded Mysteries
-							i(43157, {	-- Tabard of the Kirin Tor
-								["factionID"] = 1090,	-- Kirin Tor
-							}),
+							i(43157),	-- Tabard of the Kirin Tor
 						},
 					}),
 					n(29499, {	-- Bartram Haller <Dagger & Fist Weapon Merchant>

@@ -275,11 +275,11 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_DRAGONMAW_CLAN, {	-- Dragonmaw Clan
-					["icon"] = "Interface\\Icons\\inv_misc_tabard_dragonmawclan",
+					["provider"] = { "i", 65909 },	-- Tabard of the Dragonmaw Clan
 					["races"] = HORDE_ONLY,
 				}),
 				faction(FACTION_WILDHAMMER_CLAN, {	-- Wildhammer Clan
-					["icon"] = "Interface\\Icons\\inv_misc_tabard_wildhammerclan",
+					["provider"] = { "i", 65908 },	-- Tabard of the Wildhammer Clan
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),
@@ -3218,40 +3218,74 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				n(49386, {	-- Craw MacGraw <Wildhammer Clan Quartermaster>
 					["coord"] = { 48.6, 30.6, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
-					["groups"] = {
-						i(62427),	-- Band of Singing Grass
-						i(62431),	-- Belt of the Untamed
-						i(62428),	-- Crown of Wings
-						i(62424),	-- Gloves of Aetherial Rumors
-						i(62432),	-- Gryphon Rider's Boots
-						i(62430),	-- Gryphon Talon Gauntlets
-						i(62423),	-- Helm of the Skyborne
-						i(62434),	-- Lightning Flash Pendant
-						i(62426),	-- Mantle of Wild Feathers
-						i(62433),	-- Stormbolt Gloves
-						i(62425),	-- Swiftflight Leggings
-						i(65908),	-- Tabard of the Wildhammer Clan
-						i(62429),	-- Windhome Helm
-					},
+					["groups"] = bubbleDownClassicRep(FACTION_WILDHAMMER_CLAN, {
+						{	-- Neutral
+						},
+						{	-- Friendly
+							i(65908),	-- Tabard of the Wildhammer Clan
+						},
+						{	-- Honored
+							i(62423),	-- Helm of the Skyborne
+							i(62426),	-- Mantle of Wild Feathers
+							i(62424),	-- Gloves of Aetherial Rumors
+							i(62425),	-- Swiftflight Leggings
+						},
+						{	-- Revered
+							i(62428),	-- Crown of Wings
+							i(62429),	-- Windhome Helm
+							i(62430),	-- Gryphon Talon Gauntlets
+							i(62427),	-- Band of Singing Grass
+							i(62422, {	-- Arcanum of the Wildhammer
+								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+								["filterID"] = CONSUMABLES,
+							}),
+							i(68767, {	-- Arcanum of the Wildhammer
+								["filterID"] = CONSUMABLES,
+							}),
+						},
+						{	-- Exalted
+							i(62434),	-- Lightning Flash Pendant
+							i(62433),	-- Stormbolt Gloves
+							i(62431),	-- Belt of the Untamed
+							i(62432),	-- Gryphon Rider's Boots
+						},
+					}),
 				}),
 				n(49387, {	-- Grot Deathblow <Dragonmaw Clan Quartermaster>
 					["coord"] = { 53.8, 42.0, TWILIGHT_HIGHLANDS },
 					["races"] = HORDE_ONLY,
-					["groups"] = {
-						i(62415),	-- Band of Lamentation
-						i(62406),	-- Bone Fever Gloves
-						i(62418),	-- Boots of Sullen Rock
-						i(62408),	-- Gauntlets of Rattling Bones
-						i(62410),	-- Grinning Fang Helm
-						i(62407),	-- Helm of the Brown Lands
-						i(62405),	-- Leggings of the Impenitent
-						i(62417),	-- Liar's Handwraps
-						i(62409),	-- Snarling Helm
-						i(62404),	-- Spaulders of the Endless Plains
-						i(65909),	-- Tabard of the Dragonmaw Clan
-						i(62420),	-- Withered Dream Belt
-						i(62416),	-- Yellow Smoke Pendant
-					},
+					["groups"] = bubbleDownClassicRep(FACTION_DRAGONMAW_CLAN, {
+						{	-- Neutral
+						},
+						{	-- Friendly
+							i(65909),	-- Tabard of the Dragonmaw Clan
+						},
+						{	-- Honored
+							i(62407),	-- Helm of the Brown Lands
+							i(62404),	-- Spaulders of the Endless Plains
+							i(62406),	-- Bone Fever Gloves
+							i(62405),	-- Leggings of the Impenitent
+						},
+						{	-- Revered
+							i(62416),	-- Yellow Smoke Pendant
+							i(62417),	-- Liar's Handwraps
+							i(62420),	-- Withered Dream Belt
+							i(62418),	-- Boots of Sullen Rock
+							i(62368, {	-- Arcanum of the Dragonmaw
+								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+								["filterID"] = CONSUMABLES,
+							}),
+							i(68763, {	-- Arcanum of the Dragonmaw
+								["filterID"] = CONSUMABLES,
+							}),
+						},
+						{	-- Exalted
+							i(62410),	-- Grinning Fang Helm
+							i(62409),	-- Snarling Helm
+							i(62408),	-- Gauntlets of Rattling Bones
+							i(62415),	-- Band of Lamentation
+						},
+					}),
 				}),
 				n(49549, {	-- Jodan <Dragonmaw Armorsmith>
 					["coord"] = { 77.2, 52.8, TWILIGHT_HIGHLANDS },

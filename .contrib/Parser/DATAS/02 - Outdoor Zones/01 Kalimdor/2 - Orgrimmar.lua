@@ -100,11 +100,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_BILGEWATER_CARTEL, {	-- Bilgewater Cartel
+					["provider"] = { "i", 64884 },	-- Bilgewater Cartel Tabard
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 				}),
 				faction(FACTION_DARKSPEAR_TROLLS, {	-- Darkspear Trolls
-					-- #if AFTER WRATH
+					-- #if AFTER CATA
+					["provider"] = { "i", 45582 },	-- Darkspear Tabard
+					-- #elseif AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Troll_Male",
 					-- #else
 					["icon"] = [[~_.asset("Achievement_Character_Troll_Male")]],
@@ -113,11 +116,14 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 				}),
 				faction(FACTION_HUOJIN_PANDAREN, {	-- Huojin Pandaren
+					["provider"] = { "i", 83080 },	-- Huojin Tabard
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),
 				faction(FACTION_ORGRIMMAR, {
-					-- #if AFTER WRATH
+					-- #if AFTER CATA
+					["provider"] = { "i", 45581 },	-- Orgrimmar Tabard
+					-- #elseif AFTER WRATH
 					["icon"] = "Interface\\Icons\\Achievement_Character_Orc_Male",
 					-- #else
 					["icon"] = [[~_.asset("Achievement_Character_Orc_Male")]],

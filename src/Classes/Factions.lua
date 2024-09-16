@@ -149,7 +149,8 @@ app.CreateFaction = app.CreateClass("Faction", KEY, {
 		return GetFactionLore(t[KEY]);
 	end,
 	icon = function(t)
-		return app.asset("Category_Factions");
+		return app.GetIconFromProviders(t)
+			or app.asset("Category_Factions");
 	end,
 	trackable = app.ReturnTrue,
 	isHeader = app.ReturnTrue,

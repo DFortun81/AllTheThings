@@ -127,7 +127,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_RAMKAHEN, {	-- Ramkahen
-					["icon"] = "Interface\\Icons\\inv_misc_tabard_tolvir",
+					["provider"] = { "i", 65904 },	-- Tabard of Ramkahen
 				}),
 			}),
 			n(FLIGHT_PATHS, {
@@ -1566,23 +1566,40 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(VENDORS, {
 				n(48617, {	-- Blacksmith Abasi <Ramkahen Quartermaster>
 					["coord"] = { 54.0, 33.2, ULDUM },
-					["groups"] = {
-						i(63044),	-- Brown Riding Camel (MOUNT!)
-						i(63045),	-- Tan Riding Camel (MOUNT!)
-						i(62436),	-- Ammunae's Blessing
-						i(62439),	-- Belt of the Stargazer
-						i(62450),	-- Desert Walker Sandals
-						i(62438),	-- Drystone Greaves
-						i(62447),	-- Gift of Nadun
-						i(62446),	-- Quicksand Belt
-						i(62440),	-- Red Rock Band
-						i(62441),	-- Robes of Orsis
-						i(62449),	-- Sandguard Bracers
-						i(62445),	-- Sash of Prophecy
-						i(62437),	-- Shroud of the Dead
-						i(62448),	-- Sun King's Girdle
-						i(65904),	-- Tabard of Ramkahen
-					},
+					["groups"] = bubbleDownClassicRep(FACTION_RAMKAHEN, {
+						{	-- Neutral
+						},
+						{	-- Friendly
+							i(65904),	-- Tabard of Ramkahen
+						},
+						{	-- Honored
+							i(62437),	-- Shroud of the Dead
+							i(62439),	-- Belt of the Stargazer
+							i(62438),	-- Drystone Greaves
+							i(62436),	-- Ammunae's Blessing
+						},
+						{	-- Revered
+							i(62441),	-- Robes of Orsis
+							i(62446),	-- Quicksand Belt
+							i(62445),	-- Sash of Prophecy
+							i(62440),	-- Red Rock Band
+							i(62369, {	-- Arcanum of the Ramkahen
+								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+								["filterID"] = CONSUMABLES,
+							}),
+							i(68766, {	-- Arcanum of the Ramkahen
+								["filterID"] = CONSUMABLES,
+							}),
+						},
+						{	-- Exalted
+							i(62447),	-- Gift of Nadun
+							i(62449),	-- Sandguard Bracers
+							i(62448),	-- Sun King's Girdle
+							i(62450),	-- Desert Walker Sandals
+							i(63044),	-- Brown Riding Camel (MOUNT!)
+							i(63045),	-- Tan Riding Camel (MOUNT!)
+						},
+					}),
 				}),
 			}),
 			n(ZONE_DROPS, {
