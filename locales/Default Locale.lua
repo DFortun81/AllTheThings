@@ -14,15 +14,16 @@ local L = setmetatable({
 	YOU_DID_IT = "YOU DID IT!";
 
 	-- Social Module
-	NEW_VERSION_AVAILABLE = "A newer version of %s is available. Please update the AddOn, %s.";
-	NEW_VERSION_FLAVORS= {
-		"or we'll give Sylvanas another lighter",
-		"Alexstrasza is worried about you",
-		"this was merely a setback",
-		"and Invincible will drop |cffffaaaafor sure|r next time",
-		"time to drop your % down",
-		"and a turtle will make it to the water",
-		"CHAMPYUUN, DE AZURIITE",
+	NEW_VERSION_AVAILABLE = "A newer version of %s is available. Please update the AddOn %s";
+	NEW_VERSION_FLAVORS = {
+		"AllTheThings hungers."
+		"or Sylvanas might get another lighter.",
+		"as Alexstrasza is worried about you.",
+		"and Invincible will drop |cffffaaaafor sure|r next time.",
+		"this was merely a setback.",
+		", Yes Chef!",
+		"to help a turtle to make it to the water.",
+		"CHAMPYUUN, DE AZURIITE.",
 	};
 	SOCIAL_PROGRESS = "Social Progress";
 	TRACKING_PROGRESS = "Tracking Progress";
