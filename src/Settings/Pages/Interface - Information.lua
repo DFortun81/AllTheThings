@@ -197,27 +197,39 @@ local function BuildKnownByInfoForKind(tooltipInfo, kind)
 end
 local function ProcessForCompletedBy(t, reference, tooltipInfo)
 	-- If the item is a recipe, then show which characters know this recipe.
-	if not reference.objectiveID then
-		-- Completed By for Quests
-		local id = reference.questID;
-		if id then
-			-- Account-Wide Quests
-			if app.AccountWideQuestsDB[id] then
-				if IsQuestFlaggedCompletedOnAccount(id) then
-					tinsert(knownBy, {text=ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE or "Quest completed on your Account"});
-				end
-			else
-				for _,character in pairs(ATTCharacterData) do
-					if character.Quests and character.Quests[id] then
-						tinsert(knownBy, character);
-					end
-				end
-				if #knownBy == 0 and IsQuestFlaggedCompletedOnAccount(id) then
-					tinsert(knownBy, {text=ACCOUNT_COMPLETED_QUEST_NOTICE or "Quest completed on your Account"});
+	if reference.objectiveID then return end
+
+	-- Completed By for Quests
+	local id = reference.questID;
+	if id then
+		-- Account-Wide Quests
+		if app.AccountWideQuestsDB[id] then
+			if IsQuestFlaggedCompletedOnAccount(id) then
+				tinsert(knownBy, {text=ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE or "Quest completed on your Account"});
+			end
+		else
+			for _,character in pairs(ATTCharacterData) do
+				if character.Quests and character.Quests[id] then
+					tinsert(knownBy, character);
 				end
 			end
-			BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
+			if #knownBy == 0 and IsQuestFlaggedCompletedOnAccount(id) then
+				tinsert(knownBy, {text=ACCOUNT_COMPLETED_QUEST_NOTICE or "Quest completed on your Account"});
+			end
 		end
+		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
+	end
+
+	-- Completed By for Exploration
+	local id = reference.explorationID;
+	if id then
+		for _,character in pairs(ATTCharacterData) do
+			if character.Exploration and character.Exploration[id] then
+				tinsert(knownBy, character);
+			end
+		end
+		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
+	end
 
 		-- Pre-MOP Known By types
 		if app.GameBuildVersion < 50000 then
