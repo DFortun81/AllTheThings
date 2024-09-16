@@ -980,6 +980,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							["description"] = "These are rewarded by completing Tol Barad daily quests.",
 						}),
 					}),
+					-- Helpful event descriptions
+					n(45344, {	-- Abandoned Siege Engine
+						-- #if BEFORE 8.0.3
+						["description"] = "Is used by the attacking faction to destroy towers, which requires the player to have got a honourable kill in the current battle. Players of the defending faction can attack deployed siege engines for credit towards the achievements 'Towers of Power' and 'Tol Barad Saboteur'.",
+						-- #else
+						["description"] = "Is used by the attacking faction to destroy towers, which requires the player to have got a honourable kill in the current battle. Abandoned siege engines can be attacked by high-level players of the defending faction for credit towards the achievement 'Towers of Power'. 'Tol Barad Saboteur' however requires defeating deployed siege engines.",
+						-- #endif
+					}),
 				},
 			}),
 		},
