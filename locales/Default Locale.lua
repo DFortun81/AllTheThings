@@ -16,7 +16,7 @@ local L = setmetatable({
 	-- Social Module
 	NEW_VERSION_AVAILABLE = "A newer version of %s is available. Please update the AddOn %s";
 	NEW_VERSION_FLAVORS = {
-		"AllTheThings hungers."
+		"AllTheThings hungers.",
 		"or Sylvanas might get another lighter.",
 		"as Alexstrasza is worried about you.",
 		"and Invincible will drop |cffffaaaafor sure|r next time.",
