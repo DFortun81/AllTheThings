@@ -1636,7 +1636,7 @@ root(ROOTS.Zones, {
 					n(19772, {	-- Spirit Sage Gartok
 						["coord"] = { 49.8, 46.6, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
-						["groups"] = pvp({
+						["groups"] = {
 							spiritshard(50, i(28553)),	-- Band of the Exorcist
 							spiritshard(50, i(28555)),	-- Seal of the Exorcist
 							spiritshard(18, i(28576)),	-- Exorcist's Chain Helm
@@ -1654,12 +1654,12 @@ root(ROOTS.Zones, {
 							spiritshard(8, i(28556)),	-- Swift Windfire Diamond
 							spiritshard(2, i(32947)),	-- Auchenai Healing Potion
 							spiritshard(2, i(32948)),	-- Auchenai Mana Potion
-						}),
+						},
 					}),
 					n(19773, {	-- Spirit Sage Zran
 						["coord"] = { 56.0, 53.6, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = pvp({
+						["groups"] = {
 							spiritshard(50, i(28553)),	-- Band of the Exorcist
 							spiritshard(50, i(28555)),	-- Seal of the Exorcist
 							spiritshard(18, i(28576)),	-- Exorcist's Chain Helm
@@ -1677,7 +1677,7 @@ root(ROOTS.Zones, {
 							spiritshard(8, i(28556)),	-- Swift Windfire Diamond
 							spiritshard(2, i(32947)),	-- Auchenai Healing Potion
 							spiritshard(2, i(32948)),	-- Auchenai Mana Potion
-						}),
+						},
 					}),
 					n(19038, {	-- Supply Officer Mills <Rations>
 						["coord"] = { 55.8, 53.0, TEROKKAR_FOREST },
