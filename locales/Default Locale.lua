@@ -9,6 +9,206 @@ local L = setmetatable({
 	TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
 	SHORTTITLE = "|c" .. app.Colors.ATT .. "ATT|r";
 	DESCRIPTION = "\"Foolishly you have sought your own demise. Brazenly you have disregarded powers beyond your understanding. You have fought hard to invade the realm of the Collector. Now there is only one way out - To walk the lonely path... of the damned.\"";
+	THINGS_UNTIL = " THINGS UNTIL ";
+	THING_UNTIL = " THING UNTIL ";
+	YOU_DID_IT = "YOU DID IT!";
+
+	-- Social Module
+	NEW_VERSION_AVAILABLE = "A newer version of %s is available. Please update the AddOn, %s.";
+	NEW_VERSION_FLAVORS= {
+		"or we'll give Sylvanas another lighter",
+		"Alexstrasza is worried about you",
+		"this was merely a setback",
+		"and Invincible will drop |cffffaaaafor sure|r next time",
+		"time to drop your % down",
+		"and a turtle will make it to the water",
+		"CHAMPYUUN, DE AZURIITE",
+	};
+	SOCIAL_PROGRESS = "Social Progress";
+	TRACKING_PROGRESS = "Tracking Progress";
+	COLLECTION_PROGRESS = "Collection Progress";
+	
+	-- Settings
+	DATA_TYPE_NOT_SUPPORTED = "This data type is not supported at this time.",
+	OPEN_MINILIST_FOR = "Open mini list for ";
+	REFRESHING_COLLECTION = "Refreshing collection...";
+	DONE_REFRESHING = "Done refreshing collection.";
+	ADDED_WITH_PATCH = "Added With Patch";
+	REMOVED_WITH_PATCH = "Removed With Patch";
+	AVAILABILITY = "Availability";
+	CREATURES_COUNT = "[%s Creatures]";
+	CREATURES_LIST = "Creatures List";
+	PROGRESS = "Progress";
+	COMPLETED_BY = "Completed By: %s";
+	KNOWN_BY = "Known by %s";
+	OWNED_BY = "Owned by %s";
+	ALIVE = "Alive";
+	SPAWNED = "Spawned";
+	LAYER = "Layer";
+	BINDING = "Binding";
+	BONUS_ID = "Bonus ID";
+	CONDUIT_ID = "Conduit ID";
+	DISPLAY_ID = "Display ID";
+	PET_BATTLES = "Pet Battles";
+	EVENT_ID = "Event ID";
+	ICON_PATH = "Icon Path";
+	ITEM_LEVEL = "iLvl";
+	ITEM_STRING = "Item String";
+	MOD_ID = "Mod ID";
+	OBJECT_TYPE = "Object Type";
+	OBJECTIVES = "Objectives";
+	QUEST_GIVERS = "Quest Givers";
+	RUNEFORGE_POWER_ID = "Runeforge Power ID";
+
+	-- Instructional Text
+	MINIMAP_MOUSEOVER_TEXT = "Right click to change settings.\nLeft click to open the Main List.\n"..CTRL_KEY_TEXT.." click to open the Mini List.\n"..SHIFT_KEY_TEXT.." click to Refresh Collections.";
+	TOP_ROW_INSTRUCTIONS = "|cff3399ffLeft Click and Drag to Move|r\n|cff3399ffRight Click to Open the Settings Menu|r\n|cff3399ffShift + Click to Refresh Collections|r";
+	OTHER_ROW_INSTRUCTIONS = "|cff3399ffLeft Click to Expand/Collapse|r\n|cff3399ffRight Click to Pop Out to Mini List|r\n|cff3399ffShift + Click to Refresh Collections|r\n|cff3399ffAlt + Right Click to Plot Waypoints|r";
+	TOP_ROW_INSTRUCTIONS_AH = "|cff3399ffLeft Click and Drag to Move|r\n|cff3399ffRight Click to Open the Settings Menu|r\n|cff3399ffShift + Click to Search the Auction House|r";
+	OTHER_ROW_INSTRUCTIONS_AH = "|cff3399ffLeft Click to Expand/Collapse|r\n|cff3399ffRight Click to Pop Out to Mini List|r\n|cff3399ffShift + Click to Search the Auction House|r";
+	RECENTLY_MADE_OBTAINABLE = "|CFFFF0000If this recently dropped for you (anywhere but Salvage\nCrates), please post in Discord where you got it to drop!|r";
+	RECENTLY_MADE_OBTAINABLE_PT2 = "|CFFFF0000The more information, the better.  Thanks!|r";
+	MAIN_LIST_REQUIRES_REFRESH = "[Click to Update Progress]";
+	UPDATES_PAUSED = "Updates Paused";
+	VISIT_FLIGHT_MASTER = "Visit the Flight Master to cache.";
+	REQUIRES_PVP = "|CFF00FFDERequires PvP Activities or Currencies|r";
+	REQUIRES_PETBATTLES = "|CFF00FFDERequires Pet Battling|r";
+	PLEASE_REPORT_MESSAGE = "Please report this to the ATT Discord in #retail-errors! Thanks!";
+	REPORT_TIP = "\n("..CTRL_KEY_TEXT.."+C to copy multiline report to your clipboard)";
+	QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' %s will prevent collection of Breadcrumb Quest '%s' %s";
+	REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
+	ITEM_GIVES_REP = "Provides Reputation with '";
+	
+	-- Event Text
+	ITEM_ID_ADDED = "%s (%d) was added to your collection.";
+	ITEM_ID_ADDED_RANK = "%s (%d) [Rank %d] was added to your collection.";
+	ITEM_ID_ADDED_MISSING = "%s (%d) was added to your collection. Not found in the database. Please report to the ATT Discord!";
+	ITEM_ID_ADDED_SHARED = "%s (%d) [+%d] were added to your collection.";
+	ITEM_ID_ADDED_SHARED_MISSING = "%s (%d) [+%d] were added to your collection. Not found in the database. Please report to the ATT Discord!";
+	ITEM_ID_REMOVED = "%s (%d) was removed from your collection.";
+	ITEM_ID_REMOVED_SHARED = "%s (%d) [+%d] were removed from your collection.";
+
+	-- Tooltip Text
+	DROP_RATE = "Drop Rate";
+	QUEST_GIVER = "Quest Giver";
+	COORDINATES = "Coordinates";
+	PLAYER_COORDINATES = "Player Coordinates";
+	EVENT_SCHEDULE = "Event Schedule";
+	EVENT_ACTIVE = "Active:";
+	EVENT_START = "Start:";
+	EVENT_END = "End:";
+	EVENT_WHERE = "Where:";
+	REQUIRES_EVENT = "Requires Event";
+	BREADCRUMBS = "Breadcrumbs";
+	MAPS = "Maps";
+	LOCKOUT = "Lockout";
+	LOCKOUTS = "Lockouts";
+	RESETS = "Resets";
+	SHARED = "Shared";
+	SPLIT = "Per Difficulty";
+	REQUIRES = "Requires";
+	REQUIRES_LEVEL = "Requires Level";
+	LIMITED_QUANTITY = "This has a limited quantity and may not always be present on the vendor.";
+	ADDED_WITH_PATCH_FORMAT = "This gets added with patch %s";
+	ADDED_BACK_WITH_PATCH_FORMAT = "This gets added back with patch %s";
+	REMOVED_WITH_PATCH_FORMAT = "This gets removed with patch %s";
+	WAS_ADDED_WITH_PATCH_FORMAT = "This was added with patch %s";
+	WAS_ADDED_BACK_WITH_PATCH_FORMAT = "This was added back with patch %s";
+	
+	FACTION_SPECIFIC_REP = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
+	MINUMUM_STANDING_WITH_FACTION = "Requires a minimum standing of %s with %s.";
+	MAXIMUM_STANDING_WITH_FACTION = "Requires a standing lower than %s with %s.";
+	MIN_MAX_STANDING_WITH_FACTION = "Requires a standing between %s and %s with %s.";
+	
+	HEIRLOOM_TEXT = "Unlocked Heirloom";
+	HEIRLOOM_TEXT_DESC = "This indicates whether or not you have acquired or purchased the heirloom yet.";
+	HEIRLOOMS_UPGRADES_DESC = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve";
+	
+	LOCK_CRITERIA_LEVEL_LABEL = "Player Level";
+	LOCK_CRITERIA_QUEST_LABEL = "Completed Quest";
+	LOCK_CRITERIA_SPELL_LABEL = "Learned Spell/Mount/Recipe";
+	LOCK_CRITERIA_FACTION_LABEL = "Faction Reputation";
+	LOCK_CRITERIA_SOURCE_LABEL = "Known Appearance";
+	LOCK_CRITERIA_FACTION_FORMAT = "%s with %s (Current: %s)";
+	TITLES_DESC = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character.";
+	
+	-- Filter Text
+	ARTIFACT_ID = "Artifact ID";
+	AZERITE_ESSENCE_ID = "Azerite Essence ID";
+	ART_ID = "Art ID";
+	CREATURE_ID = "Creature ID";
+	CURRENCY_ID = "Currency ID";
+	DESCRIPTIONS = "Descriptions";
+	DIFFICULTY_ID = "Difficulty ID";
+	ENCOUNTER_ID = "Encounter ID";
+	EXPANSION_ID = "Expansion ID";
+	EXPLORATION_ID = "Exploration ID";
+	FILTER_ID = "Filter ID";
+	FOLLOWER_ID = "Follower ID";
+	GUID = "Global ID";
+	HEADER_ID = "Header ID";
+	ILLUSION_ID = "Illusion ID";
+	INSTANCE_ID = "Instance ID";
+	SAVED_INSTANCE_ID = "Saved Instance ID";
+	ITEM_ID = "Item ID";
+	FACTION_ID = "Faction ID";
+	FLIGHT_PATH_ID = "Flight Path ID";
+	LORE = "Lore";
+	MAP_ID = "Map ID";
+	MOUNT_ID = "Mount ID";
+	MUSIC_ROLL_ID = "Music Roll ID";
+	NPC_ID = "NPC ID";
+	OBJECT_ID = "Object ID";
+	PROVIDERS = "Provider(s)";
+	QUEST_ID = "Quest ID";
+	SET_ID = "Gear Set ID";
+	SOURCE_ID = "Source ID";
+	SPELL_ID = "Spell ID";
+	SPELL_NAME = "Spell Name";
+	SPECIES_ID = "Species ID";
+	TITLE_ID = "Title ID";
+	TOY_ID = "Toy ID";
+	VISUAL_ID = "Visual ID";
+	AND_MORE = "And %s more...";
+	SYM_ROW_INFORMATION = "Right Click to see additional content which is Sourced in another location";
+	SYM_ROW_SKIP_DESC = "Linked content is only displayed in the tooltip for this object.";
+	ACHIEVEMENT_PRE_WRATH_SOURCE_QUEST_INFO = "This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch.";
+	CLASSES = "Classes";
+	
+	ADDITIONAL_LABEL = "Additional Information";
+	CRITERIA_FOR = "Criteria for";
+	CURRENCY_FOR = "Currency for";
+	
+	CHAT_COMMANDS_LABEL = "Chat Commands";
+	CHAT_COMMANDS_TEXT = "/att |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/attbounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/attrwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/attnwp\n|cffFFFFFFShows all current New With Patch things.\n\n|R/attrandom\n|cffFFFFFFOpens the Random List.\n\n|R/attunsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
+	ICON_LEGEND_LABEL = "Icon Legend";
+	ICON_LEGEND_TEXT = app.ccColors.White .. "|TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t " .. "Unobtainable" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-prerequisites.blp:0|t " .. "Obtainable only with prerequisites" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-available.blp:0|t " .. "Available seasonal content" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-unavailable.blp:0|t " .. "Unavailable seasonal content" .. "\n|TInterface\\FriendsFrame\\StatusIcon-Offline:0|t " .. "Unavailable on current character";
+	KEYBINDINGS = SETTINGS_KEYBINDINGS_LABEL;
+	KEYBINDINGS_TEXT = "You can set keybindings for ATT in the game's options.";
+	MINIMAP_LABEL = "Minimap Button";
+	MODULES_LABEL = "Modules & Mini Lists";
+	AUTO_PROF_LIST_CHECKBOX = "Automatically Open the Profession List";
+	AUTO_PROF_LIST_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List";
+	SKIP_CUTSCENES_CHECKBOX = "Automatically Skip Cutscenes";
+	SKIP_CUTSCENES_CHECKBOX_TOOLTIP = "Enable this option if you want ATT to automatically skip all cutscenes on your behalf.";
+	MINIMAP_BUTTON_CHECKBOX = "Show the Minimap Button";
+	MINIMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
+	MINIMAP_SLIDER = "Minimap Button Size";
+	MINIMAP_SLIDER_TOOLTIP = 'Use this to customize the size of the Minimap Button.\n\nDefault: 36';
+	WORLDMAP_BUTTON_CHECKBOX = "Show the World Map Button";
+	WORLDMAP_BUTTON_CHECKBOX_TOOLTIP = "Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.";
+
+	-- Icons and Collection Text
+	COLLECTED_ICON = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
+	COLLECTED_APPEARANCE_ICON = "|T" .. app.asset("known_circle") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
+	COMPLETE_ICON = "|T" .. app.asset("known_green") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
+	NOT_COLLECTED_ICON = "|T" .. app.asset("unknown") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
+	COLLECTED = "|T" .. app.asset("known") .. ":0|t |c" .. app.Colors.Completed .. "Collected|r";		-- Acquired the colors and icon from CanIMogIt.
+	COLLECTED_APPEARANCE = "|T" .. app.asset("known_circle") .. ":0|t |c" .. app.Colors.Completed .. "Collected*|r";	-- Acquired the colors and icon from CanIMogIt.
+	NOT_COLLECTED = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Not Collected|r";		-- Acquired the colors and icon from CanIMogIt.
+	COMPLETE = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complete|r";		-- Acquired the colors and icon from CanIMogIt.
+	COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complete*|r";		-- Acquired the colors and icon from CanIMogIt.
+	INCOMPLETE = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Incomplete|r";		-- Acquired the colors and icon from CanIMogIt.
 
 	-- These are populated by the LocalizationDB.
 	EVENT_REMAPPING = {};
