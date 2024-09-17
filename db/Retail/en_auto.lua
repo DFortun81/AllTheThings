@@ -3411,6 +3411,7 @@ local keys = {
 [84814]="Stay awhile and listen: Dagran Thaurissan II (Vault of Memory)",
 [84815]="Stay awhile and listen: Merrix <Councilward>",
 [85680]="Stay awhile and listen: Adelgonn ",
+[85681]="Stay awhile and listen: Moira Thaurissan",
 [85682]="Stay awhile and listen: Magni Bronzebeard"},
 ["SOURCE_NAMES"]={
 [90628]="Monel-Hardened Breastplate",

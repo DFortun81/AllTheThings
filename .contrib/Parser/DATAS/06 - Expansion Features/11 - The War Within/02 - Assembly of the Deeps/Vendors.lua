@@ -24,7 +24,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						}),
 					}, {	-- RENOWN 4 --
 						i(224418, {	-- Recipe: Everything Stew (RECIPE!)
-							["cost"] = {{"i", RESONANCE_CRYSTALS, 1000}},
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 1000}},
 						}),
 					}, {	-- RENOWN 5 --
 					}, {	-- RENOWN 6 --
