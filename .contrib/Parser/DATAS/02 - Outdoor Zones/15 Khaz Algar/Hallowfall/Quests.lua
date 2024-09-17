@@ -519,10 +519,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				q(82217, {	-- Underground Economics
-					["sourceQuests"] = {	-- possibly will be require all 3 but atm only 'Does Anyone Like Wasps?'
-						--82213,	-- A Batty Request
+					["sourceQuests"] = {
+						82213,	-- A Batty Request
 						82214,	-- Does Anyone Like Wasps?
-						--82215,	-- Regular Fiber
+						82215,	-- Regular Fiber
 					},
 					["provider"] = { "n", 225711 },	-- General Steelstrike
 					["coord"] = { 68.4, 44.6, HALLOWFALL },
