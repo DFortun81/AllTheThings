@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					}),
 					i(175095),	-- Book of Tickets
 					i(180634, {	-- Gloober, as G'huun (PET!)
-						["cost"] = { { "i", 163036, 250 } },
+						["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 					}),
 					i(180416),	-- Mistcaller's Aria
 					i(180417),	-- Mistcaller's Ballad
@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							["timeline"] = { ADDED_9_1_5 },
 						}),
 						i(182662, {	-- Leafadore (PET!)
-							["cost"] = { { "i", 163036, 250 } },
+							["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 						}),
 						i(182175, {	-- Moose Soul (SS!)
 							["cost"] = { { "c", ANIMA, 1500 } },

@@ -392,7 +392,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						}),
 						i(186543, {	-- Domestic Aunian (PET!)
 							["cost"] = {
-								{ "i", 163036, 50 },	-- 50x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 50 },
 								{ "c", STYGIA, 1500 },
 							},
 						}),

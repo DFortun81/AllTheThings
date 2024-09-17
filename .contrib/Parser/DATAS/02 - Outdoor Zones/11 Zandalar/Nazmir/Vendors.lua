@@ -10,13 +10,13 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["g"] = {
 					i(163506, {	-- Accursed Hexxer (PET!)
 						["sourceQuests"] = { 50976 },	-- An Ancient Curse
-						["cost"] = { { "i", 163036, 500 }, },	-- 500x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 500 }, },
 					}),
 					i(163500, {	-- Bloodfeaster Larva (PET!)
-						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
 					}),
 					i(163510, {	-- Crimson Frog (PET!)
-						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
 					}),
 				},
 			}),
@@ -126,7 +126,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["timeline"] = { CREATED_8_0_1 }, -- (Was in beta, not there on 9/16/18)
 					}),
 					i(163501, {	-- Tragg the Curious (PET!)
-						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 75 }, },
 					}),
 					i(161492, {	-- Zo'bal Spirit Gloves
 						["timeline"] = { CREATED_8_0_1 }, -- (Was in beta, not there on 9/16/18)
@@ -153,16 +153,16 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["g"] = {
 					i(163506, {	-- Accursed Hexxer (PET!)
 						["sourceQuests"] = { 50976 },	-- An Ancient Curse
-						["cost"] = { { "i", 163036, 500 }, },	-- 500x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 500 }, },
 					}),
 					i(163500, {	-- Bloodfeaster Larva (PET!)
-						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
 					}),
 					i(163510, {	-- Crimson Frog (PET!)
-						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
 					}),
 					i(163505, {	-- Swamp Toad (PET!)
-						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
 					}),
 				},
 			}),

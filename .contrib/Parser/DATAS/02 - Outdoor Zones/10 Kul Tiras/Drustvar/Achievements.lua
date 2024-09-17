@@ -356,7 +356,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						}),
 					},
 					["sym"] = {{"select","itemID",
-						163036,	-- Polished Pet Charm
+						POLISHED_PET_CHARM,
 					}},
 				}),
 				o(297891, {	-- Runebound Cache
@@ -392,7 +392,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					["icon"] = "Interface\\Icons\\garrison_bronzechest",
 					["description"] = "Enter the cave at 24.70, 48.95.",
 					["sym"] = {{"select","itemID",
-						163036,	-- Polished Pet Charm
+						POLISHED_PET_CHARM,
 					}},
 				}),
 				o(297825, {	-- Web-Covered Chest

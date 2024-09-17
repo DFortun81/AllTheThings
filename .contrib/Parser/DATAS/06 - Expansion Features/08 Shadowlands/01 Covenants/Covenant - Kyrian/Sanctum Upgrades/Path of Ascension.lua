@@ -129,19 +129,19 @@ local PHIXIN_GROUP = {
 };
 local ZELESKOS_GROUP = {
 	i(181315, {	-- Bloodfeaster Spiderling (PET!)
-		["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+		["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 	}),
 	i(181168, {	-- Corpulent Bonetusk (PET!)
-		["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+		["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 	}),
 	i(180628, {	-- Pearlwing Heron (PET!)
-		["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+		["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 	}),
 	i(180814, {	-- Sable (PET!)
-		["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+		["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 	}),
 	i(180603, {	-- Violet Dredwing Pup (PET!)
-		["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+		["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 	}),
 };
 local CALLOUSED_BONE = 180594;
@@ -1679,7 +1679,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								["coord"] = { 31.1, 47.3, ARCHONS_RISE },
 								["g"] = appendGroups(ZELESKOS_GROUP, {
 									i(184398, {	-- Steward Featherling (PET!)
-										["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+										["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 									}),
 								}),
 							}),

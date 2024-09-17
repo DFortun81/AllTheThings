@@ -15,7 +15,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["cost"] = 11000000,	-- 1,100g
 					}),
 					i(163513, {	-- Cou'pa (PET!)
-						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
 					}),
 					i(162298, {	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
@@ -136,43 +136,43 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(163489, {	-- Abyssal Eel (PET!)
-						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 75 }, },
 					}),
 					i(163511, {	-- Barnacled Hermit Crab (PET!)
-						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
 					}),
 					i(163508, {	-- Blue Flitter (PET!)
-						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
 					}),
 					i(163509, {	-- Freshwater Pincher (PET!)
-						["cost"] = { { "i", 163036, 250 }, },	-- 250x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 250 }, },
 					}),
 					i(163705, {	-- Imaginary Gun (TOY!)
-						["cost"] = { { "i", 163036, 250 }, },	-- 250x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 250 }, },
 					}),
 					i(165840, {	-- Interdimensional Pet Portal
 						["questID"] = 54264,
 						-- #if BEFORE 9.0.2
-						["cost"] = { { "i", 163036, 1000 }, },	-- 1,000x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 }, },
 						-- #endif
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(139003, {	-- Pocket Pet Portal
 						["questID"] = 43016,
-						["cost"] = { { "i", 163036, 1000 }, },	-- 1,000x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 }, },
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(163512, {	-- Sandstinger Wasp (PET!)
-						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
 					}),
 					i(163560, {	-- Saurolisk Hatchling (PET!)
-						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
 					}),
 					i(163704, {	-- Tiny Mechanical Mouse (TOY!)
-						["cost"] = { { "i", 163036, 500 }, },	-- 500x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 500 }, },
 					}),
 					i(163514, {	-- Carnivorous Lasher (PET!)
-						["cost"] = { { "i", 163036, 150 }, },	-- 150x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 150 }, },
 					}),
 				},
 			}),
@@ -226,7 +226,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["cost"] = 19000000,	-- 1,900g
 					}),
 					i(163490, {	-- Seabreeze Bumblebee (PET!)
-						["cost"] = { { "i", 163036, 250 }, },	-- 250x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 250 }, },
 					}),
 					i(163318, {	-- Recipe: Battle Potion of Stamina [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g

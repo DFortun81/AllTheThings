@@ -1616,7 +1616,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							}),
 							i(174995, {	-- Void Tendril Pet Leash (TOY!)
 								["cost"] = {
-									{ "i", 163036, 20 },	-- Polished Pet Charm
+									{ "i", POLISHED_PET_CHARM, 20 },
 									{ "c", 1719, 100 },		-- 100x Corrupted Memento
 								},
 							}),
@@ -1634,7 +1634,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 								},
 							}),
 							i(174477, {	-- Pygmy Camel (PET!)
-								["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charm
+								["cost"] = { { "i", POLISHED_PET_CHARM, 300 }, },
 							}),
 							i(174648, {	-- Uldum Accord Tabard
 								["cost"] = 2280000,	-- 228g

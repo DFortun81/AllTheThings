@@ -2358,7 +2358,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 										["cost"] = { { "c", 1820, 70 } },	-- 70 Infused Ruby
 									}),
 									i(183854, {	-- Battie (PET!)
-										["cost"] = { { "i", 163036, 250 } },
+										["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 									}),
 									i(185741, {	-- Restock and Repair, Tips and Tricks for Keeping the Party Going
 										["cost"] = { { "c", 1820, 85 } },	-- 85 Infused Ruby

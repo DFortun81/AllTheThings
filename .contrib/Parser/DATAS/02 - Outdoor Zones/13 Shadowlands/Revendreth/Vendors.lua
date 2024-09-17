@@ -149,7 +149,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						}),
 					}, {	-- Revered
 						i(180593, {	-- Court Messenger Scroll (PET!)
-							["cost"] = { { "i", 163036, 250 } },
+							["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 						}),
 						i(184726),	-- Courtier's Mantle
 						i(184724),	-- Courtier's Pauldron

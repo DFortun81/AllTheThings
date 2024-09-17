@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["cost"] = 11000000,	-- 1,100g
 					}),
 					i(163513, {	-- Cou'pa (PET!)
-						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
 					}),
 					i(162298, {	-- Formula: Enchant Ring - Seal of Critical Strike [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g
@@ -142,7 +142,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 71.6, 29.4, ZULDAZAR },
 				["g"] = {
 					i(163508, {	-- Blue Flitter (PET!)
-						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
 					}),
 				},
 			}),

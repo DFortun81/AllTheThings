@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["g"] = bubbleDownClassicRep(FACTION_THE_UNDYING_ARMY, {
 					{		-- Neutral
 						i(183112, {	-- Animated Radius
-							["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+							["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 						}),
 						i(190644, {	-- Vessel of Profound Possibilities
 							["cost"] = {{"c",2009,10000}},	-- 10,000 Cosmic Flux
@@ -73,7 +73,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						i(183244),	-- Memory of the Rattle of the Maw
 						i(183104),	-- Technique: Contract: The Undying Army (RECIPE!)
 						i(181272, {	-- Toenail (PET!)
-							["cost"] = { { "i", 163036, 250 } },	-- 250x Polished Pet Charm
+							["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 						}),
 					}, {	-- Exalted
 						i(184738),	-- Chainmail of the March Warden

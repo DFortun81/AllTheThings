@@ -264,48 +264,48 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 56.0, 32.2, DAZARALOR },
 				["g"] = {
 					i(163508, {	-- Blue Flitter (PET!)
-						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
 					}),
 					i(163504, {	-- Child of Jani (PET!)
 						["description"] = "Complete the \"Get Hek'd\" achievement for this item to appear on the vendor.",
-						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
 					}),
 					i(163705, {	-- Imaginary Gun (TOY!)
-						["cost"] = { { "i", 163036, 250 }, },	-- 250x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 250 }, },
 					}),
 					i(165840, {	-- Interdimensional Pet Portal
 						["questID"] = 54264,
 						-- #if BEFORE 9.0.2
-						["cost"] = { { "i", 163036, 1000 }, },	-- 1,000x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 }, },
 						-- #endif
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(163502, {	-- Lil' Ben'fon (PET!)
 						["sourceQuests"] = { 50297 },	-- The Head of Her Enemy
 						["races"] = HORDE_ONLY,	-- Note!! We are only marking the item that learns it as Horde.  Alliance can use it so we don't mark the actual species.
-						["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 300 }, },
 					}),
 					i(161016, {	-- Lil' Tika (PET!)
 						["sourceQuests"] = { 49681 },	-- Lil' Tika
 						["races"] = HORDE_ONLY,	-- Note!! We are only marking the item that learns it as Horde.  Alliance can use it so we don't mark the actual species.
-						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
 					}),
 					i(139003, {	-- Pocket Pet Portal
 						["questID"] = 43016,
-						["cost"] = { { "i", 163036, 1000 }, },	-- 1,000x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 1000 }, },
 						["u"] = REMOVED_FROM_GAME,
 					}),
 					i(163499, {	-- Zandalari Shinchomper (PET!)
-						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
 					}),
 					i(163560, {	-- Saurolisk Hatchling (PET!)
-						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
 					}),
 					i(163498, {	-- Tiny Direhorn (PET!)
-						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
 					}),
 					i(163704, {	-- Tiny Mechanical Mouse (TOY!)
-						["cost"] = { { "i", 163036, 500 }, },	-- 500x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 500 }, },
 					}),
 				},
 			}),
@@ -435,22 +435,22 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(163489, {	-- Abyssal Eel (PET!)
-						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 75 }, },
 					}),
 					i(163493, {	-- Frenzied Cottontail (PET!)
-						["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 300 }, },
 					}),
 					i(163492, {	-- Drustvar Piglet (PET!)
-						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 75 }, },
 					}),
 					i(163495, {	-- Greatwing Macaw (PET!)
-						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
 					}),
 					i(163496, {	-- Mechanical Prarie Dog (PET!)
-						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 75 }, },
 					}),
 					i(163494, {	-- Bilefang Skitterer (PET!)
-						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
 					}),
 				},
 			}),
@@ -560,7 +560,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 					i(163779, {	-- Lil' War Machine (PET!)
 						["races"] = HORDE_ONLY,
-						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
 					}),
 					i(161550, {	-- Lustful Warbringer's Legplates
 						["cost"] = 19000000,	-- 1,900g

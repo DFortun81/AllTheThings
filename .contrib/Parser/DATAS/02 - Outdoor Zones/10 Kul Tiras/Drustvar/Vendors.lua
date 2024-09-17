@@ -11,21 +11,21 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["g"] = {
 					i(163493, {	-- Frenzied Cottontail (PET!)
 						["description"] = "Defeat Cottontail Matron (located at 52.2, 46.8) for this item to appear on the vendor.",
-						["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 300 }, },
 					}),
 					i(163510, {	-- Crimson Frog (PET!)
-						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
 					}),
 					i(163492, {	-- Drustvar Piglet (PET!)
 						["sourceQuests"] = { 47950 },	-- Cured Ham
-						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 75 }, },
 					}),
 					i(160708, {	-- Smoochums (PET!)
 						["sourceQuests"] = { 44785 },	-- Tea Party
-						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
 					}),
 					i(163494, {	-- Bilefang Skitterer (PET!)
-						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
 					}),
 				},
 			}),
@@ -80,7 +80,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						["cost"] = 14000000,	-- 1,400g
 					}),
 					i(163491, {	-- Corlain Falcon (PET!)
-						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
 					}),
 					i(163314, {	-- Recipe: Battle Potion of Agility [Rank 3] (RECIPE!)
 						["cost"] = 14000000,	-- 1,400g

@@ -137,22 +137,22 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = HORDE_ONLY,
 				["g"] = {
 					i(163511, {	-- Barnacled Hermit Crab (PET!)
-						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
 					}),
 					i(159753, {	-- Desert Flute (TOY!)
 						["cost"] = 11000000,	-- 1,100g
 					}),
 					i(163509, {	-- Freshwater Pincher (PET!)
-						["cost"] = { { "i", 163036, 250 }, },	-- 250x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 250 }, },
 					}),
 					i(163503, {	-- Ranishu Runt (PET!)
-						["cost"] = { { "i", 163036, 250 }, },	-- 250x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 250 }, },
 					}),
 					i(163512, {	-- Sandstinger Wasp (PET!)
-						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
 					}),
 					i(163514, {	-- Carnivorous Lasher (PET!)
-						["cost"] = { { "i", 163036, 150 }, },	-- 150x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 150 }, },
 					}),
 				},
 			}),

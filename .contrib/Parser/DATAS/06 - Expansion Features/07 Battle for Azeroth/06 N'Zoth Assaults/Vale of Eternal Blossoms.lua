@@ -1055,7 +1055,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 								["cost"] = 14000000,	-- 1,400g
 							}),
 							i(174480, {	-- Windfeather Quill (PET!)
-								["cost"] = { { "i", 163036, 300 }, },	-- 300x Polished Pet Charms
+								["cost"] = { { "i", POLISHED_PET_CHARM, 300 }, },
 							}),
 							i(174906, {	-- Lightning-Forged Augment Rune
 								["cost"] = 500000000,	-- 50,000g

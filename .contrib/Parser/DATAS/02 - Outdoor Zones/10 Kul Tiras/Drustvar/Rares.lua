@@ -155,7 +155,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 				},
 				["sym"] = {{"select","itemID",
-					163036,	-- Polished Pet Charm
+					POLISHED_PET_CHARM,
 				}},
 			}),
 			n(134706, {	-- Deathcap

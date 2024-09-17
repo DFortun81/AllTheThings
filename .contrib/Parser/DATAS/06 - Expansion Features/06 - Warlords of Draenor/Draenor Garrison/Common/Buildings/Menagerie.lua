@@ -22,7 +22,7 @@ root(ROOTS.ExpansionFeatures,
 										-- #if BEFORE 10.2.5
 										{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 										-- #else
-										{ "i", 163036, 50 },	-- 200x Polished Pet Charm
+										{ "i", POLISHED_PET_CHARM, 50 },
 										-- #endif
 									},
 								}),
@@ -31,16 +31,16 @@ root(ROOTS.ExpansionFeatures,
 										-- #if BEFORE 10.2.5
 										{ "i", 116415, 500 },	-- 500x Shiny Pet Charm
 										-- #else
-										{ "i", 163036, 500 },	-- 200x Polished Pet Charm
+										{ "i", POLISHED_PET_CHARM, 500 },
 										-- #endif
 									},
 								}),
 								i(127695, {	-- Spirit Wand (TOY!)
 									["cost"] = {
 										-- #if BEFORE 10.2.5
-										{ "i", 116415, 100 },	-- 500x Shiny Pet Charm
+										{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
 										-- #else
-										{ "i", 163036, 100 },	-- 200x Polished Pet Charm
+										{ "i", POLISHED_PET_CHARM, 100 },
 										-- #endif
 									},
 								}),
@@ -58,9 +58,9 @@ root(ROOTS.ExpansionFeatures,
 								i(127707, {	-- Indestructible Bone (TOY!)
 									["cost"] = {
 										-- #if BEFORE 10.2.5
-										{ "i", 116415, 50 },	-- 500x Shiny Pet Charm
+										{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 										-- #else
-										{ "i", 163036, 50 },	-- 200x Polished Pet Charm
+										{ "i", POLISHED_PET_CHARM, 50 },
 										-- #endif
 									},
 								}),
@@ -69,16 +69,16 @@ root(ROOTS.ExpansionFeatures,
 										-- #if BEFORE 10.2.5
 										{ "i", 116415, 500 },	-- 500x Shiny Pet Charm
 										-- #else
-										{ "i", 163036, 500 },	-- 200x Polished Pet Charm
+										{ "i", POLISHED_PET_CHARM, 500 },
 										-- #endif
 									},
 								}),
 								i(127695, {	-- Spirit Wand (TOY!)
 									["cost"] = {
 										-- #if BEFORE 10.2.5
-										{ "i", 116415, 100 },	-- 500x Shiny Pet Charm
+										{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
 										-- #else
-										{ "i", 163036, 100 },	-- 200x Polished Pet Charm
+										{ "i", POLISHED_PET_CHARM, 100 },
 										-- #endif
 									},
 								}),

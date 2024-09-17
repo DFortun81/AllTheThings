@@ -219,11 +219,11 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["g"] = {
 					i(163495, {	-- Greatwing Macaw (PET!)
 						["sourceQuests"] = { 49403 },	-- Rodrigo's Revenge
-						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
 					}),
 					i(163496, {	-- Mechanical Prarie Dog (PET!)
 						["sourceQuests"] = { 51426 },	-- Inspection Gadget
-						["cost"] = { { "i", 163036, 75 }, },	-- 75x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 75 }, },
 					}),
 				},
 			}),
@@ -247,25 +247,25 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["g"] = {
 					i(163506, {	-- Accursed Hexxer (PET!)
-						["cost"] = { { "i", 163036, 500 }, },	-- 500x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 500 }, },
 					}),
 					i(163500, {	-- Bloodfeaster Larva (PET!)
-						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
 					}),
 					i(163504, {	-- Child of Jani (PET!)
-						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
 					}),
 					i(163503, {	-- Ranishu Runt (PET!)
-						["cost"] = { { "i", 163036, 250 }, },	-- 250x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 250 }, },
 					}),
 					i(163499, {	-- Zandalari Shinchomper (PET!)
-						["cost"] = { { "i", 163036, 50 }, },	-- 50x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 50 }, },
 					}),
 					i(163498, {	-- Tiny Direhorn (PET!)
-						["cost"] = { { "i", 163036, 100 }, },	-- 100x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 100 }, },
 					}),
 					i(163505, {	-- Swamp Toad (PET!)
-						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
 					}),
 				},
 			}),
@@ -654,7 +654,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					}),
 					i(163778, {	-- Lil' Siege Tower (PET!)
 						["races"] = ALLIANCE_ONLY,
-						["cost"] = { { "i", 163036, 200 }, },	-- 200x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
 					}),
 					i(161584, {	-- Medical Corps Slippers
 						["cost"] = 19000000,	-- 1,900g

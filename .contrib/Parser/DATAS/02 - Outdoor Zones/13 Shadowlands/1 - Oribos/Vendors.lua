@@ -221,7 +221,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 64.9, 67.3, ORIBOS },
 				["g"] = sharedData({ ["timeline"] = { ADDED_9_1_0 } }, {
 					i(185919, {	-- Flawless Amethyst Baubleworm (PET!)
-						["cost"] = { { "i", 163036, 10000 } },	-- 10,000x Polished Pet Charm
+						["cost"] = { { "i", POLISHED_PET_CHARM, 10000 } },
 					}),
 					i(186537, {	-- Ruby Baubleworm (PET!)
 						["cost"] = {

@@ -198,16 +198,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											["cost"] = { { "c", ANIMA, 3500 } },
 										}),
 										i(182661, {	-- Fun Guss (PET!)
-											["cost"] = { { "i", 163036, 250 } },
+											["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 										}),
 										i(180638, {	-- Fuzzy Shimmermoth (PET!)
-											["cost"] = { { "i", 163036, 250 } },
+											["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 										}),
 										i(181303, {	-- Night Courtier's Branches
 											["cost"] = { { "c", ANIMA, 3500 } },
 										}),
 										i(182674, {	-- Sir Reginald
-											["cost"] = { { "i", 163036, 250 } },
+											["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 										}),
 										i(182181, {	-- Tiger Soul
 											["cost"] = { { "c", ANIMA, 1500 } },

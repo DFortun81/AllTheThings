@@ -922,13 +922,13 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 									["cost"] = 11000000,	-- 1,100g
 								}),
 								i(163555, {	-- Azerite Puddle (PET!)
-									["cost"] = { { "i", 163036, 200 } },	-- 200x Polished Pet Charm
+									["cost"] = { { "i", POLISHED_PET_CHARM, 200 } },
 								}),
 								i(161563, {	-- Helm of the Azerothian Champion
 									["cost"] = 22500000,	-- 2,250g
 								}),
 								i(163515, {	-- Azeriti (PET!)
-									["cost"] = { { "i", 163036, 100 } },	-- 100x Polished Pet Charm
+									["cost"] = { { "i", POLISHED_PET_CHARM, 100 } },
 								}),
 								i(161557, {	-- Vest of the Azerothian Champion
 									["cost"] = 22500000,	-- 2,250g

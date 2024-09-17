@@ -861,7 +861,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["_drop"] = { "g" },	-- Drop Polished Pet Charm
 			["sym"] = {{"select","itemID",
 				92683,	-- Flawless Dragonkin Battle-Stone
-				163036,	-- Polished Pet Charm
+				POLISHED_PET_CHARM,
 			}},
 		}),
 		q(70732, {	-- A Practice Bout
@@ -884,7 +884,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["coord"] = { 38.9, 83.3, THE_WAKING_SHORES },
 			["_drop"] = { "g" },	-- Drop Polished Pet Charm
 			["sym"] = {{"select","itemID",
-				163036,	-- Polished Pet Charm
+				POLISHED_PET_CHARM,
 			}},
 		}),
 		q(70853, {	-- A Friend for Lubbins
@@ -895,7 +895,7 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			["_drop"] = { "g" },	-- Drop Polished Pet Charm
 			["sym"] = {{"select","itemID",
 				116421,	-- Flying Battle-Training Stone
-				163036,	-- Polished Pet Charm
+				POLISHED_PET_CHARM,
 			}},
 		}),
 		q(70854, {	-- So How Did It Go?

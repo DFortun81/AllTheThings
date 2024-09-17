@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							}),
 						}, {	-- Friendly
 							i(180641, {	-- Floofa (PET!)
-								["cost"] = { { "i", 163036, 250 } },	-- Polished Pet Charm
+								["cost"] = { { "i", POLISHED_PET_CHARM, 250 } },
 							}),
 						}, {	-- Honored
 							i(183096),	-- Formula: Sacred Shard (RECIPE!)

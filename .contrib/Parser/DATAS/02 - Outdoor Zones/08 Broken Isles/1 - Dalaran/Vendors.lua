@@ -509,7 +509,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 200 },	-- 200x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 200 },	-- 200x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 200 },
 								-- #endif
 							},
 						}),
@@ -518,7 +518,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 100 },	-- 100x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 100 },
 								-- #endif
 							},
 						}),
@@ -527,7 +527,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 200 },	-- 200x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 200 },	-- 200x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 200 },
 								-- #endif
 							},
 						}),
@@ -536,7 +536,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 1000 },	-- 1000x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 1000 },	-- 1000x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 1000 },
 								-- #endif
 							},
 						}),
@@ -545,7 +545,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 100 },	-- 100x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 100 },
 								-- #endif
 							},
 						}),
@@ -554,7 +554,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 500 },	-- 500x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 500 },
 								-- #endif
 							},
 						}),
@@ -563,7 +563,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 50 },	-- 50x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 50 },
 								-- #endif
 							},
 						}),
@@ -588,7 +588,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 50 },	-- 50x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 50 },
 								-- #endif
 							},
 						}),
@@ -597,7 +597,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 50 },	-- 50x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 50 },
 								-- #endif
 							},
 						}),
@@ -606,7 +606,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 100 },	-- 100x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 100 },
 								-- #endif
 							},
 						}),
@@ -615,7 +615,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 200 },	-- 200x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 200 },
 								-- #endif
 							},
 						}),
@@ -624,7 +624,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 200 },	-- 200x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 200 },	-- 200x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 200 },
 								-- #endif
 							},
 						}),
@@ -633,7 +633,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 500 },	-- 500x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 500 },	-- 500x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 500 },
 								-- #endif
 							},
 						}),
@@ -642,7 +642,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 200 },	-- 200x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 200 },
 								-- #endif
 							},
 						}),
@@ -1331,7 +1331,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 50 },	-- 50x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 50 },
 								-- #endif
 							},
 						}),
@@ -1340,7 +1340,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 50 },	-- 50x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 50 },
 								-- #endif
 							},
 						}),
@@ -1349,7 +1349,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 100 },	-- 100x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 100 },
 								-- #endif
 							},
 						}),
@@ -1358,7 +1358,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 50 },	-- 50x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 50 },	-- 50x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 50 },
 								-- #endif
 							},
 						}),
@@ -1367,7 +1367,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 200 },	-- 200x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 200 },	-- 200x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 200 },
 								-- #endif
 							},
 						}),
@@ -1376,7 +1376,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 500 },	-- 500x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 500 },	-- 500x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 500 },
 								-- #endif
 							},
 						}),
@@ -1385,7 +1385,7 @@ root(ROOTS.Zones, {
 								-- #if BEFORE 10.2.5
 								{ "i", 116415, 100 },	-- 100x Shiny Pet Charm
 								-- #else
-								{ "i", 163036, 100 },	-- 100x Polished Pet Charm
+								{ "i", POLISHED_PET_CHARM, 100 },
 								-- #endif
 							},
 						}),

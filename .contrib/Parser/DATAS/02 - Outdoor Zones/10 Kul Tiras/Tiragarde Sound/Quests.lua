@@ -336,7 +336,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 131654 },	-- Meredith
 				["_drop"] = { "g" },	-- Drop Polished Pet Charm
 				["sym"] = {{"select","itemID",
-					163036,	-- Polished Pet Charm
+					POLISHED_PET_CHARM,
 				}},
 				["g"] = {
 					i(155858),	-- Scratchy (QI!)
@@ -1079,7 +1079,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 129098 },	-- Rodrigo <Flight Master>
 				["_drop"] = { "g" },	-- Drop Polished Pet Charm
 				["sym"] = {{"select","itemID",
-					163036,	-- Polished Pet Charm
+					POLISHED_PET_CHARM,
 				}},
 			}),
 			q(49401, {	-- Rodrigo's Roost
