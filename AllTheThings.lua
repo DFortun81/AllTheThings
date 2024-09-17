@@ -436,6 +436,11 @@ local function GetProgressTextForRow(data)
 	if icon then
 		tinsert(text, icon)
 	end
+	-- Progress Achievement
+	local statistic = data.statistic
+	if statistic then
+		tinsert(text, "["..statistic.."]")
+	end
 	-- Collectible
 	local stateIcon = GetCollectibleIcon(data, true)
 	if stateIcon then
@@ -489,6 +494,11 @@ local function GetProgressTextForTooltip(data)
 	if icon then
 		tinsert(text, icon)
 	end
+	-- Progress Achievement (this is a bit redundant with the 'Progress' information type for tooltips)
+	-- local statistic = data.statistic
+	-- if statistic then
+	-- 	tinsert(text, "["..statistic.."]")
+	-- end
 	-- Collectible
 	local stateIcon = GetCollectibleIcon(data, iconOnly)
 	if stateIcon then

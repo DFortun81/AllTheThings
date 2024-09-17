@@ -68,6 +68,13 @@ do
 		_t.icon = icon or QUESTION_MARK_ICON;
 		if field then return _t[field]; end
 	end
+	local InvalidStatistics = setmetatable({
+		["0"] = 1,
+		["1"] = 1,
+		[""] = 1,
+	}, { __index=function(t,key)
+		if not key or key:match("%W") then return 1 end
+	end})
 	-- This was used to update information about achievement progress following Pet Battles
 	-- This unfortunately triggers all the time and rarely actually represents useful Achievement changes
 	-- TODO: Think of another way to represent Achievement changes post Pet Battles
@@ -114,9 +121,8 @@ do
 			end
 			---@diagnostic disable-next-line: missing-parameter
 			local statistic = GetStatistic(t[KEY]);
-			if statistic and statistic ~= '0' and statistic ~= '' and not statistic:match("%W") then
-				return statistic;
-			end
+			if InvalidStatistics[statistic] then return end
+			return statistic
 		end,
 		sortProgress = function(t)
 			if t.collected then
