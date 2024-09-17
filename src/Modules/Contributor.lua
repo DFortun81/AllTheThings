@@ -256,3 +256,30 @@ end
 AddEventFunc("QUEST_DETAIL", OnQUEST_DETAIL)
 AddEventFunc("QUEST_PROGRESS", OnQUEST_DETAIL)
 AddEventFunc("QUEST_COMPLETE", OnQUEST_DETAIL)
+
+-- Contribution setup
+app.Contribute = function(contrib)
+	app.Contributor = contrib == 1 and true or nil
+	AllTheThingsSavedVariables.Contributor = app.Contributor and 1 or 0
+	local contribModule = app.Modules.Contributor or app.EmptyTable
+	if app.Contributor then
+		app.print("Thanks for helping to contribute to ATT! There will be additional chat and report sounds to help with finding additional discrepancies in ATT data.")
+		if contribModule.Events then
+			for event,func in pairs(contribModule.Events) do
+				-- app.PrintDebug("Contribute.RegisterFuncEvent",event)
+				app:RegisterFuncEvent(event,func)
+			end
+		end
+	elseif app.IsReady then
+		app.print("Not showing ATT contribution information.")
+		if contribModule.Events then
+			for event,func in pairs(contribModule.Events) do
+				-- app.PrintDebug("Contribute.UnregisterEventClean",event)
+				app:UnregisterEventClean(event)
+			end
+		end
+	end
+end
+app.AddEventHandler("OnReady", function()
+	app.Contribute(AllTheThingsSavedVariables.Contributor)
+end)
