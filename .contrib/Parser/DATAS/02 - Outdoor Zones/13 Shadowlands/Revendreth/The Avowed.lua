@@ -233,40 +233,48 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 					n(VENDORS, {
 						n(173705, {	-- Archivist Janeera <Avowed Quartermaster>
 							["coord"] = { 73.0, 52.0, REVENDRETH },
-							["g"] = {
-								i(184221, {	-- Archivist's Quill
-									["cost"] = { { "c", SINSTONE_FRAGMENTS, 1000 } },
-								}),
-								i(184220, {	-- Encyclopedia of Sinstone Fragment Recovery
-									["questID"] = 62821,	-- same spell / quest trigger as Treatise but this is BoA version that can be mailed to alts
-									["cost"] = { { "c", SINSTONE_FRAGMENTS, 1200 } },
-								}),
-								i(184222, {	-- Lemet's Requisition Orders
-									["questID"] = 62822,
-									["cost"] = { { "c", SINSTONE_FRAGMENTS, 350 } },
-								}),
-								i(182890, {	-- Rapid Recitation Quill (TOY!)
-									["cost"] = { { "c", SINSTONE_FRAGMENTS, 500 } },
-								}),
-								i(182660, {	-- Recipe: Shadestone (RECIPE!)
-									["cost"] = { { "c", SINSTONE_FRAGMENTS, 35 } },
-								}),
-								i(184219, {	-- Treatise on Sinstone Fragment Acquisition
-									["questID"] = 62821,
-									["cost"] = { { "c", SINSTONE_FRAGMENTS, 600 } },
-								}),
-								i(184218, {	-- Vulgarity Arbiter (TOY!)
-									["cost"] = { { "c", SINSTONE_FRAGMENTS, 1000 } },
-								}),
-								n(VENTHYR, sharedData({["customCollect"] = { "SL_COV_VEN" }},{
-									i(180940, {	-- Ebony Crypt Keeper's Mantle
+							["g"] = bubbleDownClassicRep(FACTION_THE_AVOWED, {
+								{		-- Neutral
+								}, {	-- Friendly
+								}, {	-- Honored
+									i(184222, {	-- Lemet's Requisition Orders
+										["questID"] = 62822,
+										["cost"] = { { "c", SINSTONE_FRAGMENTS, 350 } },
+									}),
+									i(182660, {	-- Recipe: Shadestone (RECIPE!)
+										["cost"] = { { "c", SINSTONE_FRAGMENTS, 35 } },
+									}),
+								}, {	-- Revered
+									n(VENTHYR, sharedData({["customCollect"] = "SL_COV_VEN" }, {
+										i(180940, {	-- Ebony Crypt Keeper's Mantle
+											["cost"] = { { "c", SINSTONE_FRAGMENTS, 500 } },
+										}),
+									})),
+									i(182890, {	-- Rapid Recitation Quill (TOY!)
 										["cost"] = { { "c", SINSTONE_FRAGMENTS, 500 } },
 									}),
-									i(182954, {	-- Inquisition Gargon (MOUNT!)
-										["cost"] = { { "c", SINSTONE_FRAGMENTS, 2000 } },
+									i(184219, {	-- Treatise on Sinstone Fragment Acquisition
+										["questID"] = 62821,
+										["cost"] = { { "c", SINSTONE_FRAGMENTS, 600 } },
 									}),
-								})),
-							},
+								}, {	-- Exalted
+									i(184221, {	-- Archivist's Quill
+										["cost"] = { { "c", SINSTONE_FRAGMENTS, 1000 } },
+									}),
+									i(184220, {	-- Encyclopedia of Sinstone Fragment Recovery
+										["questID"] = 62821,	-- same spell / quest trigger as Treatise but this is BoA version that can be mailed to alts
+										["cost"] = { { "c", SINSTONE_FRAGMENTS, 1200 } },
+									}),
+									n(VENTHYR, sharedData({["customCollect"] = "SL_COV_VEN" }, {
+										i(182954, {	-- Inquisition Gargon (MOUNT!)
+											["cost"] = { { "c", SINSTONE_FRAGMENTS, 2000 } },
+										}),
+									})),
+									i(184218, {	-- Vulgarity Arbiter (TOY!)
+										["cost"] = { { "c", SINSTONE_FRAGMENTS, 1000 } },
+									}),
+								},
+							}),
 						}),
 						n(159088, {	-- Bored Dredger
 							["description"] = "There is a chance to find this vendor when opening a crypt with an |cFFFFFFFFAtonement Crypt Key|r.\n\nHe runs away shortly after exiting the crypt, so make your purchases quickly!",

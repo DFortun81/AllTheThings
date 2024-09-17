@@ -538,7 +538,6 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(182201),	-- Unleashed Frenzy
 				}),
 				BossOnly(NERZHUL, {
-					i(186558),	-- Irongrasp (PET!)
 					i(183508),	-- Ambidexterity
 					i(181705),	-- Celestial Effervescence
 					i(182206),	-- Convocation of the Dead
@@ -551,6 +550,7 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 					i(183464),	-- Tough as Bark
 				}),
 				BossOnly(DORMAZAIN, {
+					i(186558),	-- Irongrasp (PET!)
 					i(180844),	-- Brutal Vitality
 					i(181834),	-- Chilled Resilience
 					i(183076),	-- Diabolic Bloodstone

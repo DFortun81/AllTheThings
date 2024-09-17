@@ -34,7 +34,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					["races"] = ALLIANCE_ONLY,
 				}),
 				spell(464256, {	-- Path of the Besieged Harbor [H]
-					["races"] = HORDE_ONLY_ONLY,
+					["races"] = HORDE_ONLY,
 				}),
 			}),
 			ach(20585, {	-- Keystone Hero: The Dawnbreaker
