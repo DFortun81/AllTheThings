@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["isRaid"] = true,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				ach(5477, {	-- Fish or Cut Bait: Orgrimmar
+				applyclassicphase(CATA_PHASE_ONE, ach(5477, {	-- Fish or Cut Bait: Orgrimmar
 					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
@@ -58,8 +58,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["_quests"] = { 26572 },
 						}),
 					},
-				}),
-				ach(5475, {	-- Let's Do Lunch: Orgrimmar
+				})),
+				applyclassicphase(CATA_PHASE_ONE, ach(5475, {	-- Let's Do Lunch: Orgrimmar
 					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
@@ -80,7 +80,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["_quests"] = { 26233, 26234 },
 						}),
 					},
-				}),
+				})),
 				applyclassicphase(TBC_PHASE_ONE, ach(1836, {	-- Old Crafty
 					["provider"] = { "i", 34486 },	-- Old Crafty
 					-- #if BEFORE WRATH

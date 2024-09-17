@@ -18,7 +18,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["groups"] = {
 			-- #if AFTER 4.2.0
 			n(ACHIEVEMENTS, {
-				ach(5849, {	-- Fish or Cut Bait: Thunder Bluff
+				applyclassicphase(CATA_PHASE_ONE, ach(5849, {	-- Fish or Cut Bait: Thunder Bluff
 					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
@@ -39,8 +39,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["_quests"] = { 29354 },
 						}),
 					},
-				}),
-				ach(5843, {	-- Let's Do Lunch: Thunder Bluff
+				})),
+				applyclassicphase(CATA_PHASE_ONE, ach(5843, {	-- Let's Do Lunch: Thunder Bluff
 					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
@@ -61,7 +61,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["_quests"] = { 29358 },
 						}),
 					},
-				}),
+				})),
 			}),
 			-- #endif
 			battlepets({

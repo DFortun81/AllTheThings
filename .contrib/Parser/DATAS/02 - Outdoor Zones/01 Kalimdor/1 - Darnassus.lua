@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["groups"] = {
 			-- #if AFTER 4.2.0
 			n(ACHIEVEMENTS, {
-				ach(5848, {	-- Fish or Cut Bait: Darnassus
+				applyclassicphase(CATA_PHASE_ONE, ach(5848, {	-- Fish or Cut Bait: Darnassus
 					["timeline"] = { ADDED_4_2_0 },
 					["races"] = ALLIANCE_ONLY,
 					["requireSkill"] = FISHING,
@@ -38,8 +38,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["_quests"] = { 29359 },
 						}),
 					},
-				}),
-				ach(5842, {	-- Let's Do Lunch: Darnassus
+				})),
+				applyclassicphase(CATA_PHASE_ONE, ach(5842, {	-- Let's Do Lunch: Darnassus
 					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["_quests"] = { 29357 },
 						}),
 					},
-				}),
+				})),
 			}),
 			-- #endif
 			battlepets({
@@ -83,12 +83,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.RuneclothTurnIns,
 					["races"] = ALLIANCE_ONLY,
 				}),
-				faction(FACTION_GILNEAS, {	-- Gilneas
+				applyclassicphase(CATA_PHASE_ONE, faction(FACTION_GILNEAS, {	-- Gilneas
 					["provider"] = { "i", 64882 },	-- Gilneas Tabard
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { STORMWIND_CITY },
 					["races"] = ALLIANCE_ONLY,
-				}),
+				})),
 			}),
 			-- #if AFTER 4.0.1.12984
 			n(FLIGHT_PATHS, {
@@ -202,7 +202,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					-- #endif
 				}),
-				q(29325, {	-- A Slippery Snack
+				applyclassicphase(CATA_PHASE_ONE, q(29325, {	-- A Slippery Snack
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
 					["timeline"] = { ADDED_4_1_0 },
@@ -221,7 +221,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(67414),	-- Bag of Shiny Things
 					},
-				}),
+				})),
 				q(7801, {	-- Additional Runecloth [Darnassus]
 					["qg"] = 14725,	-- Raedon Duskstriker
 					["sourceQuest"] = 7800,	-- A Donation of Runecloth
@@ -233,7 +233,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["lvl"] = 50,
 				}),
-				q(29359, {	-- An Old Favorite
+				applyclassicphase(CATA_PHASE_ONE, q(29359, {	-- An Old Favorite
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
 					["timeline"] = { ADDED_4_1_0 },
@@ -249,7 +249,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(67414),	-- Bag of Shiny Things
 					},
-				}),
+				})),
 				-- #if AFTER CATA
 				q(6342, {	-- An Unexpected Gift [CATA+] / Flight to Auberdine
 					["providers"] = {
@@ -315,7 +315,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 47,
 				}),
-				q(29316, {	-- Back to Basics
+				applyclassicphase(CATA_PHASE_ONE, q(29316, {	-- Back to Basics
 					["qg"] = 4210,	-- Alegorn
 					["coord"] = { 50.0, 36.6, DARNASSUS },
 					["timeline"] = { ADDED_4_1_0 },
@@ -329,23 +329,23 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						COOKING_AWARD,
 					},
-				}),
-				q(26383, {	-- Breaking Waves of Change [NON-WORGEN]
+				})),
+				applyclassicphase(CATA_PHASE_ONE, q(26383, {	-- Breaking Waves of Change [NON-WORGEN]
 					["qg"] = 42936,	-- Sentinel Cordressa Briarbow
 					["coord"] = { 43.8, 76.2, DARNASSUS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TELDRASSIL, DARKSHORE },
 					["races"] = exclude(WORGEN, ALLIANCE_ONLY),
 					["isBreadcrumb"] = true,
-				}),
-				q(26385, {	-- Breaking Waves of Change [WORGEN]
+				})),
+				applyclassicphase(CATA_PHASE_ONE, q(26385, {	-- Breaking Waves of Change [WORGEN]
 					["qg"] = 48736,	-- Genn Greymane
 					["coord"] = { 48.2, 14.6, DARNASSUS },
 					["timeline"] = { ADDED_4_0_3 },
 					["maps"] = { TELDRASSIL, DARKSHORE },
 					["races"] = { WORGEN },
 					["isBreadcrumb"] = true,
-				}),
+				})),
 				q(4510, {	-- Calm Before the Storm (2/2)
 					["providers"] = {
 						{ "n", 7740 },	-- Gracina Spiritmight
@@ -507,7 +507,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 6,
 				}),
-				q(29321, {	-- Happy as a Clam Digger
+				applyclassicphase(CATA_PHASE_ONE, q(29321, {	-- Happy as a Clam Digger
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
 					["timeline"] = { ADDED_4_1_0 },
@@ -525,7 +525,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(67414),	-- Bag of Shiny Things
 					},
-				}),
+				})),
 				q(32664, {	-- Learn to Ride
 					["description"] = "This quest is available to Night Elves upon reaching level 10.",
 					["timeline"] = { ADDED_5_2_0, REMOVED_10_1_5 },
@@ -665,7 +665,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["repeatable"] = true,
 					["_drop"] = { "g" },
 				}),
-				q(29314, {	-- Remembering the Ancestors
+				applyclassicphase(CATA_PHASE_ONE, q(29314, {	-- Remembering the Ancestors
 					["providers"] = {
 						{ "n",   4210 },	-- Alegorn
 						{ "o", 208825 },	-- Shrine of the Ancestors
@@ -689,7 +689,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						COOKING_AWARD,
 					},
-				}),
+				})),
 				-- #if AFTER CATA
 				q(6343, {	-- Return to Nyoma [CATA+] / Return to Nessa
 					["qg"] = 40552,	-- Leora
@@ -699,7 +699,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = { NIGHTELF },
 				}),
 				-- #endif
-				q(29318, {	-- Ribs for the Sentinels
+				applyclassicphase(CATA_PHASE_ONE, q(29318, {	-- Ribs for the Sentinels
 					["qg"] = 4210,	-- Alegorn
 					["coord"] = { 50.0, 36.6, DARNASSUS },
 					["timeline"] = { ADDED_4_1_0 },
@@ -718,7 +718,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						COOKING_AWARD,
 					},
-				}),
+				})),
 				q(2520, {	-- Sathrah's Sacrifice
 					["qg"] = 7313,	-- Priestess A'moora
 					["sourceQuest"] = 2518,	-- Tears of the Moon
@@ -801,7 +801,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 10,
 				}),
-				q(29357, {	-- Spice Bread Aplenty
+				applyclassicphase(CATA_PHASE_ONE, q(29357, {	-- Spice Bread Aplenty
 					["qg"] = 4210,	-- Alegorn
 					["coord"] = { 50.0, 36.6, DARNASSUS },
 					["timeline"] = { ADDED_4_1_0 },
@@ -817,7 +817,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						COOKING_AWARD,
 					},
-				}),
+				})),
 				-- #if ANYCLASSIC
 				q(5627, {	-- Stars of Elune / Returning Home [Darnassus]
 					["qgs"] = {
@@ -887,7 +887,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				-- #endif
-				q(29323, {	-- Stocking Up
+				applyclassicphase(CATA_PHASE_ONE, q(29323, {	-- Stocking Up
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
 					["timeline"] = { ADDED_4_1_0 },
@@ -901,7 +901,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(67414),	-- Bag of Shiny Things
 					},
-				}),
+				})),
 				q(1710, {	-- Sunscorched Shells
 					["qg"] = 6142,	-- Mathiel
 					["sourceQuest"] = 1703,	-- Mathiel
@@ -963,7 +963,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
-				q(29313, {	-- The Secret to Perfect Kimchi
+				applyclassicphase(CATA_PHASE_ONE, q(29313, {	-- The Secret to Perfect Kimchi
 					["qg"] = 4210,	-- Alegorn
 					["coord"] = { 50.0, 36.6, DARNASSUS },
 					["timeline"] = { ADDED_4_1_0 },
@@ -981,7 +981,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						COOKING_AWARD,
 					},
-				}),
+				})),
 				q(1686, {	-- The Shade of Elura
 					["qg"] = 4088,	-- Elanaria
 					["sourceQuest"] = 1683,	-- Vorlus Vilehoof
@@ -1006,7 +1006,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(29324, {	-- The Sister's Pendant
+				applyclassicphase(CATA_PHASE_ONE, q(29324, {	-- The Sister's Pendant
 					["qg"] = 4156,	-- Astaia
 					["coord"] = { 49.0, 61.0, DARNASSUS },
 					["timeline"] = { ADDED_4_1_0 },
@@ -1023,7 +1023,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 						i(67414),	-- Bag of Shiny Things
 					},
-				}),
+				})),
 				q(2519, {	-- The Temple of the Moon
 					["qg"] = 7316,	-- Sister Aquinne
 					["coord"] = { 29, 45.4, DARNASSUS },

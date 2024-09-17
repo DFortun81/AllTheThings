@@ -24,13 +24,45 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = FISHING,
 					["races"] = HORDE_ONLY,
-					["sym"] = {{ "achievement_criteria" }},
+					["groups"] = {
+						crit(17764, {	-- Fish Head
+							["_quests"] = { 29317 },
+						}),
+						crit(17765, {	-- Tadpole Terror
+							["_quests"] = { 29319 },
+						}),
+						crit(17766, {	-- Like Pike?
+							["_quests"] = { 29320 },
+						}),
+						crit(17767, {	-- Time for Slime
+							["_quests"] = { 29322 },
+						}),
+						crit(17768, {	-- Moat Monster!
+							["_quests"] = { 29361 },
+						}),
+					},
 				})),
 				applyclassicphase(CATA_PHASE_ONE, ach(5844, {	-- Let's Do Lunch: Undercity
 					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
-					["sym"] = {{ "achievement_criteria" }},
+					["groups"] = {
+						crit(17738, {	-- Fungus Among Us
+							["_quests"] = { 29315 },
+						}),
+						crit(17739, {	-- Lily, Oh Lily
+							["_quests"] = { 29332 },
+						}),
+						crit(17740, {	-- Escargot A Go-Go
+							["_quests"] = { 29333 },
+						}),
+						crit(17741, {	-- Roach Coach
+							["_quests"] = { 29334 },
+						}),
+						crit(17742, {	-- Would You Like Some Flies With That?
+							["_quests"] = { 29360 },
+						}),
+					},
 				})),
 			}),
 			battlepets({

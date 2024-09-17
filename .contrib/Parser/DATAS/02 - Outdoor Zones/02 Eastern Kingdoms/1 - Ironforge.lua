@@ -28,13 +28,45 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{ "achievement_criteria" }},
+					["groups"] = {
+						crit(17749, {	-- Cold Water Fishing
+							["_quests"] = { 29342 },
+						}),
+						crit(17750, {	-- One fer the Ages
+							["_quests"] = { 29343 },
+						}),
+						crit(17751, {	-- Fish fer Squirky
+							["_quests"] = { 29344 },
+						}),
+						crit(17752, {	-- Live Bait
+							["_quests"] = { 29347 },
+						}),
+						crit(17753, {	-- The Gnomish Bait-o-Matic
+							["_quests"] = { 29350 },
+						}),
+					},
 				})),
 				applyclassicphase(CATA_PHASE_ONE, ach(5841, {	-- Let's Do Lunch: Ironforge
 					["timeline"] = { ADDED_4_2_0 },
 					["requireSkill"] = COOKING,
 					["races"] = ALLIANCE_ONLY,
-					["sym"] = {{ "achievement_criteria" }},
+					["groups"] = {
+						crit(17723, {	-- A Round of the Guards
+							["_quests"] = { 29351 },
+						}),
+						crit(17724, {	-- A Fowl Shortage
+							["_quests"] = { 29352 },
+						}),
+						crit(17725, {	-- Keepin' the Haggis Flowin'
+							["_quests"] = { 29353 },
+						}),
+						crit(17726, {	-- Can't Get Enough Spice Bread
+							["_quests"] = { 29355 },
+						}),
+						crit(17727, {	-- I Need to Cask a Favor
+							["_quests"] = { 29356 },
+						}),
+					},
 				})),
 				applyclassicphase(TBC_PHASE_ONE, ach(1837, {	-- Old Ironjaw
 					["provider"] = { "i", 34484 },	-- Old Ironjaw
@@ -235,7 +267,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 12,
 				}),
-				q(29352, {	-- A Fowl Shortage
+				applyclassicphase(CATA_PHASE_ONE, q(29352, {	-- A Fowl Shortage
 					["qg"] = 5159,	-- Daryl Riknussun
 					["coord"] = { 60.1, 36.4, IRONFORGE },
 					["timeline"] = { ADDED_4_0_1 },
@@ -244,7 +276,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = COOKING_AWARD_GROUPS,
-				}),
+				})),
 				q(686, {	-- A King's Tribute (1/3)
 					["qg"] = 2784,	-- King Magni Bronzebeard
 					["sourceQuest"] = 683,	-- Sara Balloo's Plea
@@ -351,7 +383,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						i(12051),	-- Brazen Gauntlets
 					},
 				}),
-				q(29351, {	-- A Round for the Guards
+				applyclassicphase(CATA_PHASE_ONE, q(29351, {	-- A Round for the Guards
 					["qg"] = 5159,	-- Daryl Riknussun
 					["coord"] = { 60.1, 36.4, IRONFORGE },
 					["timeline"] = { ADDED_4_0_1 },
@@ -360,7 +392,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = COOKING_AWARD_GROUPS,
-				}),
+				})),
 				q(7806, {	-- Additional Runecloth [Ironforge]
 					["qg"] = 14723,	-- Mistina Steelshield
 					["sourceQuest"] = 7805,	-- A Donation of Runecloth
@@ -527,7 +559,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				})),
 				-- #endif
-				q(29355, {	-- Can't Get Enough Spice Bread
+				applyclassicphase(CATA_PHASE_ONE, q(29355, {	-- Can't Get Enough Spice Bread
 					["qg"] = 5159,	-- Daryl Riknussun
 					["coord"] = { 60.1, 36.4, IRONFORGE },
 					["timeline"] = { ADDED_4_0_1 },
@@ -536,8 +568,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = COOKING_AWARD_GROUPS,
-				}),
-				q(29342, {	-- Cold Water Fishing
+				})),
+				applyclassicphase(CATA_PHASE_ONE, q(29342, {	-- Cold Water Fishing
 					["qg"] = 5161,	-- Grimnur Stonebrand
 					["coord"] = { 48.4, 8.2, IRONFORGE },
 					["timeline"] = { ADDED_4_0_1 },
@@ -548,7 +580,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(67414),	-- Bag of Shiny Things
 					},
-				}),
+				})),
 				q(38394, {	-- Completionism
 					["qg"] = 6294,	-- Krom Stoutarm
 					["sourceQuest"] = 38345,	-- Numismatics
@@ -620,7 +652,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = lvlsquish(12, 12, 5),
 				}),
-				q(29344, {	-- Fish fer Squrky
+				applyclassicphase(CATA_PHASE_ONE, q(29344, {	-- Fish fer Squrky
 					["qg"] = 5161,	-- Grimnur Stonebrand
 					["coord"] = { 48.4, 8.2, IRONFORGE },
 					["timeline"] = { ADDED_4_0_1 },
@@ -631,7 +663,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(67414),	-- Bag of Shiny Things
 					},
-				}),
+				})),
 				q(1618, {	-- Gearing Redridge
 					["qg"] = 6031,	-- Tormus Deepforge
 					["coord"] = { 48.6, 43, IRONFORGE },
@@ -706,7 +738,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 35,
 				}),
-				q(29356, {	-- I Need to Cask a Favor
+				applyclassicphase(CATA_PHASE_ONE, q(29356, {	-- I Need to Cask a Favor
 					["qg"] = 5159,	-- Daryl Riknussun
 					["coord"] = { 60.1, 36.4, IRONFORGE },
 					["timeline"] = { ADDED_4_0_1 },
@@ -715,7 +747,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = COOKING_AWARD_GROUPS,
-				}),
+				})),
 				q(1073, {	-- Ineptitude + Chemicals = Fun (1/2)
 					["qg"] = 4081,	-- Lomac Gearstrip
 					["sourceQuest"] = 1072,	-- An Old Colleague
@@ -780,7 +812,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(29353, {	-- Keepin' the Haggis Flowin'
+				applyclassicphase(CATA_PHASE_ONE, q(29353, {	-- Keepin' the Haggis Flowin'
 					["qg"] = 5159,	-- Daryl Riknussun
 					["coord"] = { 60.1, 36.4, IRONFORGE },
 					["timeline"] = { ADDED_4_0_1 },
@@ -789,7 +821,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = COOKING_AWARD_GROUPS,
-				}),
+				})),
 				q(2298, {	-- Kingly Shakedown
 					["qg"] = 5165,	-- Hulfdan Blackbeard
 					["sourceQuest"] = 2299,	-- To Hulfdan!
@@ -814,7 +846,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(29347, {	-- Live Bait
+				applyclassicphase(CATA_PHASE_ONE, q(29347, {	-- Live Bait
 					["qg"] = 5161,	-- Grimnur Stonebrand
 					["coord"] = { 48.4, 8.2, IRONFORGE },
 					["timeline"] = { ADDED_4_0_1 },
@@ -825,7 +857,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(67414),	-- Bag of Shiny Things
 					},
-				}),
+				})),
 				q(1880,	{	-- Mage-tastic Gizmonitor
 					["qg"] = 5144,	-- Bink <Mage Trainer>
 					["sourceQuest"] = 1879,	-- Speak with Bink
@@ -865,7 +897,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						}),
 					},
 				}),
-				q(29343, {	-- One fer the Ages
+				applyclassicphase(CATA_PHASE_ONE, q(29343, {	-- One fer the Ages
 					["qg"] = 5161,	-- Grimnur Stonebrand
 					["coord"] = { 48.4, 8.2, IRONFORGE },
 					["timeline"] = { ADDED_4_0_1 },
@@ -876,7 +908,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(67414),	-- Bag of Shiny Things
 					},
-				}),
+				})),
 				q(3448, {	-- Passing the Burden
 					["qg"] = 2916,	-- Historian Karnik
 					["coord"] = { 77.2, 11.8, IRONFORGE },
@@ -987,7 +1019,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = 25,
 				}),
-				q(26118, {	-- Seize the Ambassador
+				applyclassicphase(CATA_PHASE_ONE, q(26118, {	-- Seize the Ambassador
 					["qg"] = 42129,	-- Moira Thaurissan
 					["sourceQuest"] = 26112,	-- Demanding Answers
 					["coord"] = { 39.7, 57.3, IRONFORGE },
@@ -1007,7 +1039,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["timeline"] = { ADDED_7_0_3 },
 						}),
 					},
-				}),
+				})),
 				q(3641, {	-- Show Your Work
 					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 					["sourceQuest"] = 3640,	-- The Pledge of Secrecy
@@ -1065,7 +1097,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 				}),
-				q(29350, {	-- The Gnomish Bait-o-Matic
+				applyclassicphase(CATA_PHASE_ONE, q(29350, {	-- The Gnomish Bait-o-Matic
 					["qg"] = 5161,	-- Grimnur Stonebrand
 					["coord"] = { 48.4, 8.2, IRONFORGE },
 					["timeline"] = { ADDED_4_0_1 },
@@ -1076,7 +1108,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["groups"] = {
 						i(67414),	-- Bag of Shiny Things
 					},
-				}),
+				})),
 				q(3640, {	-- The Pledge of Secrecy
 					["qg"] = 7944,	-- Tinkmaster Overspark <Master Gnome Engineer>
 					["sourceQuests"] = {
