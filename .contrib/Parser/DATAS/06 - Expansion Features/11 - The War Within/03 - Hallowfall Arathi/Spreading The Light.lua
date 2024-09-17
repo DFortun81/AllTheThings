@@ -153,10 +153,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					q(82963, {	-- Hillhelm Family: Lil Piggy
 						["provider"] = { "i", 224457 },	-- Lil Piggy (QS!/QI!)
 					}),
+					q(82960, {	-- Hillhelm Family: Lily's Locket
+						["provider"] = { "i", 224463 },	-- Lily's Locket (QS!/QI!)
+					}),
 					q(82959, {	-- Hillhelm Family: Lost Diary
 						["provider"] = { "i", 224460 },	-- The Lost Diary (QS!/QI!)
 					}),
-					q(82967, {	-- Hillhelm Family: The Chicken
+					q(82961, {	-- Hillhelm Family: The Chicken
 						["provider"] = { "i", 224466 },	-- Wilber The Chicken (QS!/QI!)
 					}),
 					q(82967, {	-- Hillhelm Family: The Ear

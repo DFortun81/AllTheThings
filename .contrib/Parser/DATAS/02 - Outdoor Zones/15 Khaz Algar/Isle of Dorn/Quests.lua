@@ -366,12 +366,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { 78546 },	-- Recompense
 					["provider"] = { "n", 228493 },	-- Alleria Windrunner
 					["coord"] = { 32.0, 60.5, DORNOGAL },
+					["lockCriteria"] = { 1, "questID", 80434 },	-- Into The Deeps
 				}),
 				hqt(84815, {	-- Stay awhile and listen: Merrix <Councilward>
 					["name"] = "Stay awhile and listen: Merrix <Councilward>",
 					["sourceQuests"] = { 78546 },	-- Recompense
 					["provider"] = { "n", 217880 },	-- Merrix <Councilward>
 					["coord"] = { 32.0, 59.6, DORNOGAL },
+					["lockCriteria"] = { 1, "questID", 80434 },	-- Into The Deeps
+				}),
+				hqt(85681, {	-- Stay awhile and listen: Moira Thaurissan
+					["name"] = "Stay awhile and listen: Moira Thaurissan",
+					["sourceQuests"] = { 80434 },	-- Into The Deeps (After accepting but unavailable after completion)
+					["provider"] = { "n", 217887 },	-- Moira Thaurissan
+					["coord"] = { 32.4, 59.6, DORNOGAL },
+					["lockCriteria"] = { 1, "questID", 80434 },	-- Into The Deeps
 				}),
 			}),
 			header(HEADERS.AchCriteria, 20595.01, {	-- Spores of Dread

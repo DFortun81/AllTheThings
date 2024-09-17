@@ -1089,15 +1089,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 			}),
-			------ Life on the Farm (ACH) Quests ------ Should be moved into their own header but some quests require Spreading the Light and are sourced there. Automate?
-			q(82960, {	-- Hillhelm Family: Lily's Locket
-				["provider"] = { "i", 224463 },	-- Lily's Locket (QS!/QI!)
-				["isWeekly"] = true,
-			}),
-			q(82961, {	-- Hillhelm Family: The Chicken
-				["provider"] = { "i", 224466 },	-- Wilber The Chicken (QS!/QI!)
-				["isWeekly"] = true,
-			}),
 			------ Miscellaneous ------
 			q(79554, {	-- Holy Hydrocarbons
 				["provider"] = { "i", 217388 },	-- Crate of Devotional Candles (QS!/QI!)
