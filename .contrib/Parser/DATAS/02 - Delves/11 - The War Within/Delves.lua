@@ -326,9 +326,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(222971),	-- Bouncer (PET!)
 			}),
 			filter(MISC, {
-				i(213000),	-- Holy Flamethrower Torch
-				i(212868),	-- Precious Ore
-				i(226222),	-- Webbed Hookshot
+				i(213000),	-- Holy Flamethrower Torch (QI!)
+				i(212868),	-- Precious Ore (QI!)
+				i(226222),	-- Webbed Hookshot (QI!)
 			}),
 			filter(COSMETIC, {
 				i(225066),	-- Trail Blazer's Haversack
@@ -380,10 +380,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			filter(COSMETIC, {
 				i(212162),	-- Bitter Shroom Cap
 				i(211801),	-- Poisonous Shroom Cap
+				i(212164),	-- Shallow Nautic Helm
 				i(212163),	-- Soporific Shroom Cap
 			}),
 			filter(MISC, {
-				i(210017),	-- Fungal Fish
+				i(210017),	-- Fungal Fish (QI!)
 			}),
 			n(QUESTS, {
 				q(83758, {	-- Delver's Call: Fungal Folly
@@ -444,7 +445,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			filter(MISC, {
 				i(210970),	-- Crumbled Keepsake (QI!)
 				i(210981),	-- Kriegval's Helm (QI!)
-				i(211209),	-- Suspicious Candle
+				i(211209),	-- Suspicious Candle (QI!)
 			}),
 			n(QUESTS, {
 				q(83759, {	-- Delver's Call: Kriegval's Rest
@@ -495,10 +496,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(212163),	-- Soporific Shroom Cap
 			}),
 			filter(MISC, {
-				i(218002),	-- Priceless Pumpkin
-				i(217387),	-- Princess Pumpkin
-				i(218000),	-- Sack of Spices
-				i(217999),	-- Tasty Mussel
+				i(218002),	-- Priceless Pumpkin (QI!)
+				i(217387),	-- Princess Pumpkin (QI!)
+				i(218000),	-- Sack of Spices (QI!)
+				i(217999),	-- Tasty Mussel (QI!)
 			}),
 			n(QUESTS, {
 				q(83769, {	-- Delver's Call: Mycomancer Cavern
@@ -574,6 +575,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(225065),	-- Torchbearer's Haversack
 				i(225066),	-- Trail Blazer's Haversack
 			}),
+			filter(MISC, {
+				i(215466),	-- Sanctified Supplies (QI!)
+			}),
 			n(QUESTS, {
 				q(83755, {	-- Delves: Nightfall Sanctum
 					["provider"] = { "n", 227523 },	-- Brann Bronzebeard
@@ -586,7 +590,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(TREASURES, {
 				o(455494, {	-- Sturdy Chest
-					["coord"] = { 51.9, 57.0, NIGHTFALL_SANCTUM },
+					["coord"] = { 77.7, 36.2, NIGHTFALL_SANCTUM },
 					["questID"] = 83688,
 				}),
 				o(454201, {	-- Sturdy Chest
@@ -621,7 +625,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(212173),	-- Rulk'Nerub Raptorial Spine
 			}),
 			filter(MISC, {
-				i(225719),	-- Light's Mantle
+				i(225719),	-- Light's Mantle (QI!)
 			}),
 			n(QUESTS, {
 				q(83768, {	-- Delver's Call: The Skittering Breach
@@ -714,7 +718,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(212173),	-- Rulk'Nerub Raptorial Spine
 			}),
 			filter(MISC, {
-				i(217965),	-- Repair Kit
+				i(217965),	-- Repair Kit (QI!)
 			}),
 			n(QUESTS, {
 				q(83766, {	-- Delver's Call: Dread Pit
@@ -757,6 +761,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(212166),	-- Coral Nautic Helm
 				i(212165),	-- Deep Nautic Helm
 				i(212164),	-- Shallow Nautic Helm
+			}),
+			filter(MISC, {
+				i(218122),	-- Stolen Relic (QI!)
 			}),
 			n(QUESTS, {
 				q(83767, {	-- Delver's Call: The Sinkhole
@@ -854,9 +861,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(212173),	-- Rulk'Nerub Raptorial Spine
 			}),
 			filter(MISC, {
-				i(217715),	-- Key Scroll
-				i(217895),	-- Pheromone Bottle
-				i(217897),	-- Volatile Pheromone
+				i(217715),	-- Key Scroll (QI!)
+				i(217895),	-- Pheromone Bottle (QI!)
+				i(217897),	-- Volatile Pheromone (QI!)
 			}),
 			n(QUESTS, {
 				q(83761, {	-- Delves: The Underkeep

@@ -620,7 +620,7 @@ root(ROOTS.Zones, {
 					q(10013, {	-- An Unseen Hand
 						["provider"] = { "o", 182549 },	-- Fel Orc Plans
 						["sourceQuest"] = 10000,	-- An Unwelcome Presence
-						["coord"] = { 63.4, 42.7, TEROKKAR_FOREST },
+						["coord"] = { 67.9, 53.5, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 					}),
 					q(10000, {	-- An Unwelcome Presence

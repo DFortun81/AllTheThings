@@ -897,7 +897,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(80535),	-- Radiant Remnant @ 66.8, 23.1
 			q(80338),	-- Radiant Remnant @ 63.6, 20.8
 			q(80554),	-- Radiant Remnant @ 66.4, 28.8	need objectid
-			--q(80556),	-- Radiant Remnant @ 63.7, 26.3 need objectid
+			q(80556),	-- Radiant Remnant @ 63.7, 26.3 need objectid
 			q(80531),	-- Radiant Remnant @ 67.2, 26.6 need objectid
 			q(80587),	-- Radiant Remnant @ 62.4, 32.6	need objectid
 			q(83518),	-- Radiant Remnant @ 64.3, 28.2	need objectid

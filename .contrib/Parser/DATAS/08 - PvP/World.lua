@@ -308,6 +308,9 @@ root(ROOTS.HiddenQuestTriggers, {
 		n(PVP, {
 			q(80415, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
 			q(80416, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
+			q(84447),	-- after looting an Unbound Spoils War Supply Chest
+			q(84448),	-- after looting an Unbound Spoils War Supply Chest
+			q(84449),	-- after looting an Unbound Spoils War Supply Chest
 		}),
 	})),
 });

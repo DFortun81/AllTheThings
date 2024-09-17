@@ -2038,7 +2038,7 @@ root(ROOTS.Zones, {
 						["isDaily"] = true,
 					}),
 					q(11229, {	-- The Windrunner Fleet
-						["coord"] = { 26.2, 24.6, HOWLING_FJORD },
+						["coord"] = { 78.6, 31.2, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
 						["qg"] = 23780,	-- High Executor Anselm
 						["sourceQuest"] = 11221,	-- Reports from the Field

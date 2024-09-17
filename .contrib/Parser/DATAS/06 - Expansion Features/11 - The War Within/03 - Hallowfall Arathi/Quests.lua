@@ -200,6 +200,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 			}, {	-- RENOWN 21 --
 			}, {	-- RENOWN 22 --
+				q(82406, {	-- The Quartermaster's Cache
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
+					["coords"] = {
+						{ 42.4, 55.0, HALLOWFALL },
+						{ 41.3, 53.1, HALLOWFALL },
+					},
+				}),
 				q(81906, {	-- Whispers from the Web
 					--["provider"] = { "n",  },	--
 					--["coord"] = {  },
@@ -230,6 +237,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 			}, {	-- RENOWN 23 --
+				q(83334, {	-- The Wealth of an Empire
+					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
+					["coords"] = {
+						{ 42.4, 55.0, HALLOWFALL },
+						{ 41.3, 53.1, HALLOWFALL },
+					},
+				}),
 				i(224553),	-- Beledar's Attunement (CI!)
 			}, {	-- RENOWN 24 --
 			}, {	-- RENOWN 25 --

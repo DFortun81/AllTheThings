@@ -1203,10 +1203,6 @@ root(ROOTS.Unsorted, {
 				--- Probably NYI ---
 				--- Fungal Folly ---
 				i(209788),	-- Dispersion Crystal
-				--- Nightfall Sanctum ---
-				i(215466),	-- Sanctified Supplies
-				--- The Sinkhole ---
-				i(218122),	-- Stolen Relic
 				--- Kriegval ---
 				i(224767),	-- Giant Candle Parts
 				--- Waterworks ---
