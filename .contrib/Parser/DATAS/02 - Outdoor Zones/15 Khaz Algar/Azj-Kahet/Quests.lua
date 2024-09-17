@@ -350,7 +350,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79120, {	-- Beetle in a Haystack
 					["sourceQuests"] = { 79118 },	-- Rak-Ush Under New Management
 					["provider"] = { "n", 214356 },	-- Vix'aron
-					["coord"] = { 74.0, 82.2, AZJ_KAHET },
+					["coord"] = { 75, 80.9, AZJ_KAHET },
 					["g"] = {
 						i(213392),	-- Smoke Grenade (QI!)
 					},
@@ -358,12 +358,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79121, {	-- Bug Test
 					["sourceQuests"] = { 79120 },	-- Beetle in a Haystack
 					["provider"] = { "n", 214359 },	-- Kish'nal
-					["coord"] = { 74.0, 82.0, AZJ_KAHET },
+					["coord"] = { 75, 80.7, AZJ_KAHET },
 				}),
 				q(79122, {	-- Scarab Scouting
 					["sourceQuests"] = { 79121 },	-- Bug Test
 					["provider"] = { "n", 214359 },	-- Kish'nal
-					["coord"] = { 74.0, 82.0, AZJ_KAHET },
+					["coord"] = { 75, 80.7, AZJ_KAHET },
 					["g"] = {
 						i(228440),	-- Chitin-Laced Shoulderguards
 						i(228439),	-- Mitts of Menial Tasks
@@ -374,7 +374,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(79123, {	-- Permanent Hire
 					["sourceQuests"] = { 79122 },	-- Scarab Scouting
 					["provider"] = { "n", 214359 },	-- Kish'nal
-					["coord"] = { 74.0, 82.0, AZJ_KAHET },
+					["coord"] = { 75, 80.7, AZJ_KAHET },
 					["g"] = {
 						i(225935),	-- Rak-Ush Battleshell (PET!)
 					},
