@@ -90,6 +90,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 48.1, 27.0, ISLE_OF_DORN },
 				["questID"] = 81902,
 				["g"] = {
+					i(221507),	-- Earth Golem's Wrap
 					i(221254),	-- Earthshatter Lance
 					i(221210),	-- Grips of the Earth
 				},

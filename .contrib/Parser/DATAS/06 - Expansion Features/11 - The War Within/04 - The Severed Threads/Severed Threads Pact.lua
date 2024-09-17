@@ -283,6 +283,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 224186 },	-- Ghos'opp
 					["coord"] = { 54.6, 15.5, AZJ_KAHET },
 				}),
+				q(81506, {	-- Sabotage: Transformatory Vessels
+					["provider"] = { "n", 224183 },	-- Ghos'opp
+					["coord"] = { 64.5, 87.3, AZJ_KAHET },
+				}),
 				q(81505, {	-- Sabotage: Venomancers
 					["provider"] = { "n", 224184 },	-- Ghos'opp
 					["coord"] = { 39.5, 51.4, AZJ_KAHET },
