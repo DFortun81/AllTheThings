@@ -122,10 +122,10 @@ local EventSequence = {
 local Runner = app.CreateRunner("events")
 -- Runner.SetPerFrameDefault(5)
 local Callback = app.CallbackHandlers.Callback
-local function EventStart(eventName,...)
+local function DebugEventStart(eventName,...)
 	app.PrintDebug("HandleEvent:Start",app.Modules.Color.Colorize(eventName,app.Colors.Time),...)
 end
-local function EventDone(eventName,...)
+local function DebugEventDone(eventName,...)
 	app.PrintDebug("HandleEvent:Done",app.Modules.Color.Colorize(eventName,app.Colors.Horde),...)
 end
 
@@ -137,11 +137,13 @@ app.HandleEvent = function(eventName, ...)
 	-- the Event Runner so that they execute in the expected sequence
 	if RunnerEvents[eventName] or Runner.IsRunning() then
 		-- app.PrintDebug("HandleEvent:",app.Modules.Color.Colorize(eventName,app.Colors.LockedWarning),...)
-		-- Runner.Run(EventStart, eventName, ...)
+		-- Runner.Run(DebugEventStart, eventName, ...)
 		for i,handler in ipairs(EventHandlers[eventName]) do
+			-- Runner.Run(app.PrintDebug,"HandleEvent:",app.Modules.Color.Colorize(eventName,app.Colors.Time),"Handler #",i)
 			Runner.Run(handler, ...)
+			-- Runner.Run(app.PrintDebugPrior,"HandleEvent:",app.Modules.Color.Colorize(eventName,app.Colors.Horde),"Handler Done")
 		end
-		-- Runner.Run(EventDone, eventName)
+		-- Runner.Run(DebugEventDone, eventName)
 		if sequenceEvents then
 			-- run the sequence events immediately when in a Runner
 			for _,event in ipairs(sequenceEvents) do
@@ -150,11 +152,11 @@ app.HandleEvent = function(eventName, ...)
 		end
 	else
 		-- app.PrintDebug("HandleEvent:",app.Modules.Color.Colorize(eventName,app.Colors.Renown),...)
-		-- EventStart(eventName, ...)
+		-- DebugEventStart(eventName, ...)
 		for i,handler in ipairs(EventHandlers[eventName]) do
 			handler(...);
 		end
-		-- EventDone(eventName)
+		-- DebugEventDone(eventName)
 		if sequenceEvents then
 			-- app.PrintDebug("HandleSequenceEvents:",app.Modules.Color.Colorize(eventName,app.Colors.Alliance),...)
 			-- run the sequence events on the next frame when not in a Runner
