@@ -200,6 +200,8 @@ app.TryColorizeName = function(group, name)
 		-- class color
 		if group.classID then
 			return Colorize(name, app.ClassInfoByID[group.classID].colorStr);
+		elseif group.accountWide then
+			return Colorize(name, colors.Account)
 		elseif group.c and #group.c == 1 then
 			return Colorize(name, app.ClassInfoByID[group.c[1]].colorStr);
 		-- faction colors
