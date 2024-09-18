@@ -1210,7 +1210,6 @@ root(ROOTS.Unsorted, {
 
 				--- Quest Rewards ---
 				i(220156),	-- Bubbling Wax
-				i(225896),	-- Void-Touched Valorstone
 				--- Renown Quest Rewards ---
 				i(226153),	-- Big Pile of Humming Shinies
 				i(226156),	-- Really Big Candle

@@ -1062,7 +1062,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(228913),	-- Dubious Vial of Vigor (QI!)
 				},
 			}),
-			------ Sort? ------
+			-- Raid Campaign Intro --
 			q(83587, {	-- Our Chance to Strike
 				--["sourceQuests"] = { ? },	-- ?
 				["provider"] = { "n", 227217 },	-- Webster
@@ -1070,12 +1070,46 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 29.6, 73.5, DORNOGAL },
 					{ 57, 41.7, AZJ_KAHET },
 				},
+				["isBreadcrumb"] = true,
 			}),
 			q(82124, {	-- The Beginning of the End
 				["sourceQuests"] = { 83587 },	-- Our Chance to Strike
 				["provider"] = { "n", 208782 },	-- Executor Nizrek
 				["coord"] = { 52.9, 46.1, NERUBAR },
 			}),
+			q(82125, {	-- A Spy Like Us
+				["sourceQuests"] = { 82124 },	-- The Beginning of the End
+				["provider"] = { "n", 208782 },	-- Executor Nizrek
+				["coord"] = { 52.9, 46.1, NERUBAR },
+			}),
+			q(82126, {	-- Defense of the People
+				["sourceQuests"] = { 82125 },	-- A Spy Like Us
+				["provider"] = { "n", 222790  },	-- Gut'usu
+				["coord"] = { 57.2, 41, NERUBAR },
+			}),
+			q(82127, {	-- Make Them Prey
+				["sourceQuests"] = { 82125 },	-- A Spy Like Us
+				["provider"] = { "n", 222790  },	-- Gut'usu
+				["coord"] = { 57.2, 41, NERUBAR },
+			}),
+			q(82130, {	-- A Shot at the Top
+				["sourceQuests"] = {
+					82126,	-- Defense of the People
+					82127,	-- Make Them Prey
+				},
+				["provider"] = { "n", 222790  },	-- Gut'usu
+				["coord"] = { 57.2, 41, NERUBAR },
+			}),
+			q(82141, {	-- To Kill a Queen
+				["sourceQuests"] = { 82130 },	-- A Shot at the Top
+				["provider"] = { "n", 208782 },	-- Executor Nizrek
+				["coord"] = { 52.9, 46.1, NERUBAR },
+				["g"] = {
+					i(224072),	-- Enchanted Runed Harbinger Crest
+					i(225896),	-- Void-Touched Valorstone
+				},
+			}),
+			--
 			n(BONUS_OBJECTIVES, {
 				q(81670, {	-- Shattered Silk
 					["coord"] = { 72.8, 55.0, AZJ_KAHET },

@@ -116,6 +116,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["g"] = {
 					i(221247),	-- Cavernous Critter Shooter (dupe, from Plaguehart - horse-ish type rares?)
 					i(221225),	-- Benevolent Hornstag Cinch
+					i(221251),	-- Bestial Underground Cleaver
 					i(221246),	-- Fierce Beast Staff
 					i(223007),	-- Lance of Beledar's Pride
 				},
