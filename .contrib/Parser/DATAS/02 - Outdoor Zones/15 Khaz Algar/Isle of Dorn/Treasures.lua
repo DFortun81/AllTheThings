@@ -109,6 +109,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			o(441183, {	-- Galan's Edict
 				["coord"] = { 37.3, 52.5, ISLE_OF_DORN },
 				["questID"] = 82038,
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
+				["timeline"] = { "removed 11.0.2.56313" },
 			}),
 			o(446473, {	-- Infused Fire-Honey Milk
 				["coord"] = { 56.2, 60.9, ISLE_OF_DORN },
@@ -185,6 +187,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			o(441223, {	-- Stone of The Unbound
 				["coord"] = { 44.1, 30.1, ISLE_OF_DORN },
 				["questID"] = 82046,
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
+				["timeline"] = { "removed 11.0.2.56313" },
 			}),
 			n(223227, {	-- One-Eyed Thak
 				["crs"] = { 223247 },	-- One-Eyed Thak
@@ -203,6 +207,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			o(441231, {	-- Titan Console
 				["coord"] = { 78.1, 27.9, ISLE_OF_DORN },
 				["questID"] = 82045,
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
+				["timeline"] = { "removed 11.0.2.56313" },
 			}),
 			n(222894, {	-- U'llort the Self-Exiled
 				["description"] = "Talk to U'llort then bring it |cff888888Boskroot Cap|r from the woods nearby.",
@@ -218,10 +224,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			o(441284, {	-- Watcher of the North
 				["coord"] = { 57.2, 20.0, ISLE_OF_DORN },
 				["questID"] = 82047,
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
+				["timeline"] = { "removed 11.0.2.56313" },
 			}),
 			o(441278, {	-- Watcher of the South
 				["coord"] = { 42.1, 80.2, ISLE_OF_DORN },
 				["questID"] = 82048,
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
+				["timeline"] = { "removed 11.0.2.56313" },
 			}),
 			n(222847, {	-- Weary Water Elemental
 				["coord"] = { 54.1, 19.0, ISLE_OF_DORN },

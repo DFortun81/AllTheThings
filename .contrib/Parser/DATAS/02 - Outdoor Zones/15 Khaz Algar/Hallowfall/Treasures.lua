@@ -304,22 +304,32 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			o(441720, {	-- A Scout's Journal
 				["coord"] = { 62.2, 45.6, HALLOWFALL },
 				["questID"] = 82066,
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
+				["timeline"] = { "removed 11.0.2.56313" },
 			}),
 			o(441688, {	-- A Tattered Note
 				["coord"] = { 71.4, 36.7, HALLOWFALL },
 				["questID"] = 82065,
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
+				["timeline"] = { "removed 11.0.2.56313" },
 			}),
 			o(441637, {	-- A Weathered Tome
 				["coord"] = { 78.2, 40.3, HALLOWFALL },
 				["questID"] = 82064,
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
+				["timeline"] = { "removed 11.0.2.56313" },
 			}),
 			o(441633, {	-- A Worn Down Book
 				["coord"] = { 25.1, 53.7, HALLOWFALL },
 				["questID"] = 82063,
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
+				["timeline"] = { "removed 11.0.2.56313" },
 			}),
 			o(441628, {	-- Captain's Chest
 				["coord"] = { 25.7, 38.4, HALLOWFALL },
 				["questID"] = 82061,
+				["description"] = "This object for its achievement is currently disabled by Blizzard and will be readded in a future patch.",
+				["timeline"] = { "removed 11.0.2.56313" },
 			}),
 			o(441800, {	-- Sunken Cache
 				["sourceQuests"] = { 82012, 82024, 82025, 82026 },	-- Talk to all Sky-Captains
