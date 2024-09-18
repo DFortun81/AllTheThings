@@ -104,7 +104,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 			}),
-			ach(40727),		-- Skittershaw Spin
+			ach(40727, {	-- Skittershaw Spin
+				["cr"] = 224973,	-- High Hollows Skittershaw
+				["coords"] = {
+					{ 65.2, 57.2, NERUBAR },
+					{ 71.4, 50.0, NERUBAR },
+					{ 76.5, 55.0, NERUBAR },
+					{ 75.9, 63.7, NERUBAR },
+					{ 71.0, 67.2, NERUBAR },
+				},
+			}),
 			ach(40691, {	-- Skyriding Glyphs: Arathi's End
 				["coord"] = { 63.4, 13.7, AZJ_KAHET },
 			}),
