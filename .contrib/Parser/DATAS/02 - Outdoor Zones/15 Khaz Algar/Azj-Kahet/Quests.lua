@@ -1066,7 +1066,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			q(83587, {	-- Our Chance to Strike
 				--["sourceQuests"] = { ? },	-- ?
 				["provider"] = { "n", 227217 },	-- Webster
-				["coord"] = { 29.6, 73.5, DORNOGAL },
+				["coords"] = {
+					{ 29.6, 73.5, DORNOGAL },
+					{ 57, 41.7, AZJ_KAHET },
+				},
 			}),
 			q(82124, {	-- The Beginning of the End
 				["sourceQuests"] = { 83587 },	-- Our Chance to Strike
