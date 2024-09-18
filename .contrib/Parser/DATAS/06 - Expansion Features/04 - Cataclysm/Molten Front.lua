@@ -61,7 +61,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 							["description"] = "Instead of punting into the water, punt it at a fire elemental. (target its feet)",
 							["coord"] = { 21.6, 58.8, MOUNT_HYJAL },
 							["crs"] = {
-								52218,	-- Child of Tortolla
+								52177,	-- Child of Tortolla
 								52219,	-- Flame Terror
 							},
 						}),
