@@ -292,17 +292,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					["provider"] = { "n", 199261 },	-- Holiday Enthusiast
 					["coord"] = { 55.0, 37.7, VALDRAKKEN },
 					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 				}),
 				q(78880, {	-- The Eastern Kingdoms Cup Begins
 					["provider"] = { "n", 214031 },	-- Holiday Enthusiast
 					["coord"] = { 62.3, 74.4, STORMWIND_CITY },
 					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(78881, {	-- The Eastern Kingdoms Cup Begins
 					["provider"] = { "n", 213769 },	-- Holiday Enthusiast
 					["coord"] = { 52.7, 79.4, ORGRIMMAR },
 					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
 				}),
 				q(77839, {	-- The Eastern Kingdoms Cup Introduction
@@ -314,6 +317,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 206737 },	-- Lord Andestrasz
 					["coord"] = { 27.1, 47.1, VALDRAKKEN },
+					["repeatable"] = true,
 					["g"] = {
 						currency(RIDERS_OF_AZEROTH_BADGE),
 					},
@@ -960,11 +964,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					["provider"] = { "n", 199261 },	-- Holiday Enthusiast
 					["coord"] = { 55.0, 37.7, VALDRAKKEN },
 					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 				}),
 				q(76426, {	-- The Kalimdor Cup's Introduction
 					["sourceQuests"] = { 76429 },	-- The Kalimdor Cup Begins
 					["provider"] = { "n", 206737 },	-- Lord Andestrasz
 					["coord"] = { 27.1, 47.1, VALDRAKKEN },
+					["repeatable"] = true,
 					["g"] = {
 						currency(RIDERS_OF_AZEROTH_BADGE),
 					},
@@ -1953,17 +1959,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					["provider"] = { "n", 199261 },	-- Holiday Enthusiast
 					["coord"] = { 31.5, 67.1, VALDRAKKEN },
 					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 				}),
 				q(79127, {	-- The Outland Cup Begins
 					["provider"] = { "n", 214031 },	-- Racing Enthusiast
 					["coord"] = {61.8, 75.1, STORMWIND_CITY },
 					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(79128, {	-- The Outland Cup Begins
 					["provider"] = { "n", 213769 },	-- Racing Enthusiast
 					["coord"] = { 52.8, 79.5, ORGRIMMAR },
 					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
 				}),
 				q(78047, {	-- The Outland Cup Circuit
@@ -2566,17 +2575,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.DRAGONRIDING_CUP, n(DRAGONRIDING_CUP_ROOT
 					["provider"] = { "n", 199261 },	-- Holiday Enthusiast
 					["coord"] = { 31.5, 67.1, VALDRAKKEN },
 					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 				}),
 				q(79132, {	-- The Northrend Cup Begins
 					["provider"] = { "n", 214031 },	-- Racing Enthusiast
 					["coord"] = { 61.8, 75.1, STORMWIND_CITY },
 					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(79133, {	-- The Northrend Cup Begins
 					["provider"] = { "n", 213769 },	-- Racing Enthusiast
 					["coord"] = { 52.8, 79.5, ORGRIMMAR },
 					["isBreadcrumb"] = true,
+					["repeatable"] = true,
 					["races"] = HORDE_ONLY,
 				}),
 				q(79130, {	-- The Northrend Cup Circuit
