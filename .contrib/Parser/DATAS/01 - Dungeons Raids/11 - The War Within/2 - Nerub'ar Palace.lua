@@ -390,6 +390,23 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				ach(40256),	-- Nerub-ar Palace Guild Run
 				ach(40257),	-- Heroic: Nerub-ar Palace Guild Run
 			}),
+			n(FLIGHT_PATHS, {
+				fp(2933, {	-- Grand Rampart
+					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
+				}),
+				fp(2934, {	-- The Pulsing Pit
+					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
+				}),
+				fp(2935, {	-- Terrace of Majesty
+					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
+				}),
+				fp(2937, {	-- The Narthex
+					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
+				}),
+				fp(2984, {	-- The Ascending Reach
+					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
+				}),
+			}),
 			n(SPECIAL, {
 				n(228081, {	-- Ethereum Void Reaper
 					["description"] = "This rare has a chance to spawn while using the Trinket, Treacherous Transmitter. This rare can spawn outside the raid also.",
