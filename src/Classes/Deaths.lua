@@ -38,7 +38,7 @@ local fields = {
 		return "deathtracker";
 	end,
 	["progress"] = function(t)
-		return math.min(t.total, app.Settings.AccountWide.Deaths and ATTAccountWideData.Deaths or app.CurrentCharacter.Deaths);
+		return math.min(t.total, app.Settings.AccountWide.DeathTracker and ATTAccountWideData.Deaths or app.CurrentCharacter.Deaths);
 	end,
 	["OnTooltip"] = function()
 		return OnTooltipForDeathTracker;
@@ -60,7 +60,7 @@ local GetStatistic = GetStatistic;
 if GetStatistic and GetStatistic(60) then
 	-- Statistics are available, this means we can get the actual statistic from the server's database.
 	local OnUpdateForDeathTrackerLib = function(t)
-		if app.MODE_DEBUG or app.Settings:Get("DeathTracker") then
+		if app.MODE_DEBUG or app.Settings:Get("Thing:DeathTracker") then
 			---@diagnostic disable-next-line: missing-parameter
 			local stat = GetStatistic(60) or "0";
 			if stat == "--" then stat = "0"; end
@@ -86,7 +86,7 @@ if GetStatistic and GetStatistic(60) then
 else
 	-- Oh boy, we have to track it ourselves!
 	local OnUpdateForDeathTrackerLib = function(t)
-		if app.MODE_DEBUG or app.Settings:Get("DeathTracker") then
+		if app.MODE_DEBUG or app.Settings:Get("Thing:DeathTracker") then
 			t.parent.progress = t.parent.progress + t.progress;
 			t.parent.total = t.parent.total + t.total;
 			t.visible = app.GroupVisibilityFilter(t);

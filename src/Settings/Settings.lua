@@ -27,7 +27,7 @@ settings:Hide();
 settings.AccountWide = setmetatable({
 	Achievements = true,
 	BattlePets = true,
-	Deaths = true,
+	DeathTracker = true,
 	Exploration = true,
 	FlightPaths = true,
 	Heirlooms = true,
@@ -81,7 +81,7 @@ settings.RequiredForInsaneMode = {
 	BattlePets = true,
 	CharacterUnlocks = app.IsRetail,	-- CRIEVE NOTE: This class might be up to the chopping block with a thing I have on my todo list. I'll leave it for now.
 	Conduits = app.GameBuildVersion >= 100000,
-	Deaths = app.IsClassic,
+	DeathTracker = app.IsClassic,
 	MountMods = app.GameBuildVersion >= 100000,
 	Exploration = app.IsClassic,	-- CRIEVE NOTE: For now, until Blizzard fixes their broken Retail version of the exploration API.
 	FlightPaths = true,
