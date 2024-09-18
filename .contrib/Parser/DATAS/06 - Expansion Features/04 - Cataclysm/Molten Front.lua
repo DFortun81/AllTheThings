@@ -34,22 +34,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["maps"] = { MOUNT_HYJAL },
 					["groups"] = {
 						crit(17824, {	-- Angry Little Squirrel
+							["description"] = "Bring a fire elemental to the green patches with squirrels in the trees. Once they start throwing acorns, you should get credit.",
 							["coord"] = { 36.1, 58.8, MOUNT_HYJAL },
-							["crs"] = 52195,	-- Angry Little Squirrel
+							["crs"] = {
+								52195,	-- Angry Little Squirrel
+								52794,	-- Brimstone Destroyer
+							},
 						}),
 						crit(17825, {	-- Hyjal Bear Cub
 							["description"] = "Instead of throwing the cub to the trampoline, throw it at a sleeping corehound.",
 							["coord"] = { 12.8, 34.0, MOUNT_HYJAL },
-							["cr"] = 52688,	-- Hyjal Bear Cub
+							["crs"] = {
+								52688,	-- Hyjal Bear Cub
+								52795,	-- Brimstone Hound
+							},
 						}),
 						crit(17826, {	-- Alpine Songbird
+							["description"] = "Summon Millagazor and when she starts to fly away, allow the songbirds to kill her.",
 							["coord"] = { 13.6, 44.4, MOUNT_HYJAL },
-							["cr"] = 52595,	-- Alpine Songbird
+							["crs"] = {
+								52595,	-- Alpine Songbird
+								52649,	-- Millagazor
+							},
 						}),
 						crit(17827, {	-- Child of Tortolla
 							["description"] = "Instead of punting into the water, punt it at a fire elemental. (target its feet)",
 							["coord"] = { 21.6, 58.8, MOUNT_HYJAL },
-							["cr"] = 52218,	-- Child of Tortolla
+							["crs"] = {
+								52218,	-- Child of Tortolla
+								52219,	-- Flame Terror
+							},
 						}),
 					},
 				}),
