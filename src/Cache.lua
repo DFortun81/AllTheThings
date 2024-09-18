@@ -983,33 +983,13 @@ local function SearchForObject(field, id, require, allowMultiple)
 			fcacheObj = fcache[i];
 			-- field matching id
 			if fcacheObj[field] == id then
-				if fcacheObj.key == field then
-					-- with keyed-field matching key
-					keyMatch[#keyMatch + 1] = fcacheObj
-				else
 					-- with field matching id
 					fieldMatch[#fieldMatch + 1] = fcacheObj
-				end
 			end
 		end
 	else
 		-- No require
-		for i=1,count,1 do
-			fcacheObj = fcache[i];
-			-- field matching id
-			if fcacheObj[field] == id then
-				if fcacheObj.key == field then
-					-- with keyed-field matching key
-					keyMatch[#keyMatch + 1] = fcacheObj
-				else
-					-- with field matching id
-					fieldMatch[#fieldMatch + 1] = fcacheObj
-				end
-			else
-				-- basic group related to search
-				match[#match + 1] = fcacheObj
-			end
-		end
+		match = fcache
 	end
 	-- app.PrintDebug("SFO",field,id,require,"?>",#keyMatch,#fieldMatch,#match)
 	local results = (#keyMatch > 0 and keyMatch) or (#fieldMatch > 0 and fieldMatch) or (#match > 0 and match) or app.EmptyTable
