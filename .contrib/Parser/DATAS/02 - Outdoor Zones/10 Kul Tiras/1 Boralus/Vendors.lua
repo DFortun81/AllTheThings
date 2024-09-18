@@ -425,96 +425,102 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(135808, {	-- Provisioner Fray <Proudmoore Admiralty Emissary>
 				["coord"] = { 67.5, 21.5, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					i(161976, {	-- Admiralty Marine's Duffel
-						["cost"] = 30000000,	-- 3,000g
-					}),
-					i(161574, {	-- Boarding Action Vambraces
-						["cost"] = 19000000,	-- 1,900g
-					}),
-					i(161571, {	-- Cordage Sliding Grips
-						["cost"] = 19000000,	-- 1,900g
-					}),
-					i(163200, {	-- Cursed Spyglass (TOY!)
-						["cost"] = 18000000,	-- 1,800g
-					}),
-					i(162380, {	-- Design: Tidal Amethyst Loop [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(161570, {	-- First Lieutenant's Ceremonial Belt
-						["cost"] = 19000000,	-- 1,900g
-					}),
-					i(162304, {	-- Formula: Enchant Ring - Pact of Mastery [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162317, {	-- Formula: Enchant Weapon - Masterful Navigation [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162316, {	-- Formula: Enchant Weapon - Siphoning [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(163201, {	-- Gnoll Targetting Barrel (TOY!)
-						["cost"] = 11000000,	-- 1,100g
-					}),
-					i(161568, {	-- Maritime Spellweaver's Leggings
-						["cost"] = 19000000,	-- 1,900g
-					}),
-					i(161569, {	-- Master-At-Arms Wristguards
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(160534, {	-- Navy Blue Boat Cloak
-						["cost"] = 11000000,	-- 1,100g
-					}),
-					i(160540, {	-- Proudmoore Admiralty Tabard
-						["cost"] = 5000000,	-- 500g
-					}),
-					i(161573, {	-- Proudmoore Marine's Legplates
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(163316, {	-- Recipe: Battle Potion of Intellect [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162254, {	-- Recipe: Coastal Mana Potion [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162359, {	-- Technique: Contract: Proudmoore Admiralty [Rank 2] (RECIPE!)
-						["cost"] = 11000000,	-- 1,100g
-					}),
-					i(162134, {	-- Recipe: Flask of the Vast Horizon [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162414, {	-- Pattern: Hardened Tempest Knuckles [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162413, {	-- Pattern: Mistscale Knuckles [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162130, {	-- Recipe: Potion of Bursting Blood [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(161911, {	-- Admiralty Stallion (MOUNT!)
-						["cost"] = 100000000,	-- 10,000g
-					}),
-					i(161879, {	-- Proudmoore Sea Scout (MOUNT!)
-						["cost"] = 900000000,	-- 90,000g
-					}),
-					i(161567, {	-- Sailing Master's Sash
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162327, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 2] (RECIPE!)
-						["cost"] = 11000000,	-- 1,100g
-					}),
-					i(162328, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(166277, {	-- Schematic: Unstable Temporal Time Shifter [Rank 2] (RECIPE!)
-						["cost"] = 19000000,	-- 1,900g
-						["timeline"] = { ADDED_8_1_0 },
-					}),
-					i(161572, {	-- Yardarm Sharpshooter's Boots
-						["cost"] = 14000000,	-- 1,400g
-					}),
-				},
+				["g"] = bubbleDownClassicRep(FACTION_PROUDMOORE_ADMIRALTY, {
+					{		-- Neutral
+					}, {	-- Friendly
+					}, {	-- Honored
+						i(163201, {	-- Gnoll Targetting Barrel (TOY!)
+							["cost"] = 11000000,	-- 1,100g
+						}),
+						i(160534, {	-- Navy Blue Boat Cloak
+							["cost"] = 11000000,	-- 1,100g
+						}),
+						i(162327, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 2] (RECIPE!)
+							["cost"] = 11000000,	-- 1,100g
+						}),
+						i(162359, {	-- Technique: Contract: Proudmoore Admiralty [Rank 2] (RECIPE!)
+							["cost"] = 11000000,	-- 1,100g
+						}),
+					}, {	-- Revered
+						i(161976, {	-- Admiralty Marine's Duffel
+							["cost"] = 30000000,	-- 3,000g
+						}),
+						i(163200, {	-- Cursed Spyglass (TOY!)
+							["cost"] = 18000000,	-- 1,800g
+						}),
+						i(162380, {	-- Design: Tidal Amethyst Loop [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162304, {	-- Formula: Enchant Ring - Pact of Mastery [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162317, {	-- Formula: Enchant Weapon - Masterful Navigation [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162316, {	-- Formula: Enchant Weapon - Siphoning [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(161569, {	-- Master-At-Arms Wristguards
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162414, {	-- Pattern: Hardened Tempest Knuckles [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162413, {	-- Pattern: Mistscale Knuckles [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(161573, {	-- Proudmoore Marine's Legplates
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(163316, {	-- Recipe: Battle Potion of Intellect [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162254, {	-- Recipe: Coastal Mana Potion [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162134, {	-- Recipe: Flask of the Vast Horizon [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162130, {	-- Recipe: Potion of Bursting Blood [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(161567, {	-- Sailing Master's Sash
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162328, {	-- Schematic: AZ3-R1-T3 Bionic Bifocals [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(161572, {	-- Yardarm Sharpshooter's Boots
+							["cost"] = 14000000,	-- 1,400g
+						}),
+					}, {	-- Exalted
+						i(161574, {	-- Boarding Action Vambraces
+							["cost"] = 19000000,	-- 1,900g
+						}),
+						i(161571, {	-- Cordage Sliding Grips
+							["cost"] = 19000000,	-- 1,900g
+						}),
+						i(161570, {	-- First Lieutenant's Ceremonial Belt
+							["cost"] = 19000000,	-- 1,900g
+						}),
+						i(161568, {	-- Maritime Spellweaver's Leggings
+							["cost"] = 19000000,	-- 1,900g
+						}),
+						i(160540, {	-- Proudmoore Admiralty Tabard
+							["cost"] = 5000000,	-- 500g
+						}),
+						i(161911, {	-- Reins of the Admiralty Stallion (MOUNT!)
+							["cost"] = 100000000,	-- 10,000g
+						}),
+						i(161879, {	-- Reins of the Proudmoore Sea Scout (MOUNT!)
+							["cost"] = 900000000,	-- 90,000g
+						}),
+						i(166277, {	-- Schematic: Unstable Temporal Time Shifter [Rank 2] (RECIPE!)
+							["cost"] = 19000000,	-- 1,900g
+							["timeline"] = { ADDED_8_1_0 },
+						}),
+					},
+				}),
 			}),
 			n(148927, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {	-- Provisioner Stoutforge
 				["coord"] = { 66.8, 25.7, BORALUS },
@@ -624,103 +630,109 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 			n(135446, {	-- Vindicator Jaelaana <7th Legion Emissary>
 				["coord"] = { 69.3, 24.9, BORALUS },
 				["races"] = ALLIANCE_ONLY,
-				["g"] = {
-					i(166445, {	-- 7th Legion Scouting Map
-						["filterID"] = MISC,
-					}),
-					i(160536, {	-- 7th Legionnaire's Cloak
-						["cost"] = 11000000,	-- 1,100g
-					}),
-					i(161586, {	-- Belt of the Grove Auxiliary
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(161588, {	-- Bracers of the Allied Earthbinders
-						["cost"] = 19000000,	-- 1,900g
-					}),
-					i(162378, {	-- Design: Amberblaze Loop [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(161590, {	-- Elite Footman's Legplates
-						["cost"] = 19000000,	-- 1,900g
-					}),
-					i(162302, {	-- Formula: Enchant Ring - Pact of Critical Strike [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(161585, {	-- Gloves of the Forward Skirmisher
-						["cost"] = 19000000,	-- 1,900g
-					}),
-					i(161587, {	-- Legguards of the Storm Battalion
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(163778, {	-- Lil' Siege Tower (PET!)
-						["races"] = ALLIANCE_ONLY,
-						["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
-					}),
-					i(161584, {	-- Medical Corps Slippers
-						["cost"] = 19000000,	-- 1,900g
-					}),
-					i(165720, {	-- Monelite Whetstone
-						["cost"] = { { "c", 1560, 200 }, },	-- 200x War Resources
-					}),
-					i(163320, {	-- Recipe: Battle Potion of Strength [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(166278, {	-- Technique: Contract: 7th Legion [Rank 2] (RECIPE!)
-						["cost"] = 19000000,	-- 1,900g
-						["timeline"] = { ADDED_8_1_0 },
-					}),
-					i(162306, {	-- Formula: Enchanter's Sorcerous Scepter [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162138, {	-- Recipe: Endless Tincture of Fractional Power [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162132, {	-- Recipe: Flask of the Currents [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162128, {	-- Recipe: Steelskin Potion [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162275, {	-- Plans: Stormsteel Dagger [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162670, {	-- Plans: Stormsteel Saber [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162261, {	-- Plans: Stormsteel Shield [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162276, {	-- Plans: Stormsteel Spear [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162139, {	-- Recipe: Surging Alchemist Stone [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(161589, {	-- Royal Knight's Sabatons
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162323, {	-- Schematic: AZ3-R1-T3 Synthetic Specs [Rank 2] (RECIPE!)
-						["cost"] = 11000000,	-- 1,100g
-					}),
-					i(162324, {	-- Schematic: AZ3-R1-T3 Synthetic Specs [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162346, {	-- Schematic: Finely-Tuned Stormsteel Destroyer [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162344, {	-- Schematic: Monelite Scope of Alacrity [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(162345, {	-- Schematic: Precision Attitude Adjuster [Rank 3] (RECIPE!)
-						["cost"] = 14000000,	-- 1,400g
-					}),
-					i(160539, {	-- Tabard of the 7th Legion
-						["cost"] = 6250000,	-- 625g
-					}),
-					i(161583, {	-- Warmage's Flame-Brimming Wristcords
-						["cost"] = 14000000,	-- 1,400g
-					}),
-				},
+				["g"] = bubbleDownClassicRep(FACTION_7TH_LEGION, {
+					{		-- Neutral
+						i(166445, {	-- 7th Legion Scouting Map
+							["filterID"] = MISC,
+						}),
+					}, {	-- Friendly
+					}, {	-- Honored
+						i(160536, {	-- 7th Legionnaire's Cloak
+							["cost"] = 11000000,	-- 1,100g
+						}),
+						i(165720, {	-- Monelite Whetstone
+							["cost"] = { { "c", 1560, 200 }, },	-- 200x War Resources
+						}),
+						i(162323, {	-- Schematic: AZ3-R1-T3 Synthetic Specs [Rank 2] (RECIPE!)
+							["cost"] = 11000000,	-- 1,100g
+						}),
+						i(166278, {	-- Technique: Contract: 7th Legion [Rank 2] (RECIPE!)
+							["cost"] = 19000000,	-- 1,900g
+							["timeline"] = { ADDED_8_1_0 },
+						}),
+					}, {	-- Revered
+						i(161586, {	-- Belt of the Grove Auxiliary
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162378, {	-- Design: Amberblaze Loop [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162302, {	-- Formula: Enchant Ring - Pact of Critical Strike [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162306, {	-- Formula: Enchanter's Sorcerous Scepter [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(161587, {	-- Legguards of the Storm Battalion
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(163778, {	-- Lil' Siege Tower (PET!)
+							["races"] = ALLIANCE_ONLY,
+							["cost"] = { { "i", POLISHED_PET_CHARM, 200 }, },
+						}),
+						i(162275, {	-- Plans: Stormsteel Dagger [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162670, {	-- Plans: Stormsteel Saber [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162261, {	-- Plans: Stormsteel Shield [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162276, {	-- Plans: Stormsteel Spear [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(163320, {	-- Recipe: Battle Potion of Strength [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162138, {	-- Recipe: Endless Tincture of Fractional Power [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162132, {	-- Recipe: Flask of the Currents [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162128, {	-- Recipe: Steelskin Potion [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162139, {	-- Recipe: Surging Alchemist Stone [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(161589, {	-- Royal Knight's Sabatons
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162324, {	-- Schematic: AZ3-R1-T3 Synthetic Specs [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162346, {	-- Schematic: Finely-Tuned Stormsteel Destroyer [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162344, {	-- Schematic: Monelite Scope of Alacrity [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(162345, {	-- Schematic: Precision Attitude Adjuster [Rank 3] (RECIPE!)
+							["cost"] = 14000000,	-- 1,400g
+						}),
+						i(161583, {	-- Warmage's Flame-Brimming Wristcords
+							["cost"] = 14000000,	-- 1,400g
+						}),
+					}, {	-- Exalted
+						i(161588, {	-- Bracers of the Allied Earthbinders
+							["cost"] = 19000000,	-- 1,900g
+						}),
+						i(161590, {	-- Elite Footman's Legplates
+							["cost"] = 19000000,	-- 1,900g
+						}),
+						i(161585, {	-- Gloves of the Forward Skirmisher
+							["cost"] = 19000000,	-- 1,900g
+						}),
+						i(161584, {	-- Medical Corps Slippers
+							["cost"] = 19000000,	-- 1,900g
+						}),
+						i(160539, {	-- Tabard of the 7th Legion
+							["cost"] = 6250000,	-- 625g
+						}),
+					},
+				}),
 			}),
 			n(130399, {	-- Zooey Inksprocket <Inscription Trainer>
 				["coord"] = { 73.4, 6.3, BORALUS },
