@@ -13349,6 +13349,16 @@ SlashCmdList.AllTheThings = function(cmd)
 			-- app.PrintDebug("Split custom arg:",customArg,customValue)
 			app.SetCustomWindowParam(cmd, customArg, customValue or true);
 		end
+
+		-- Eventually will migrate known Chat Commands to their respective creators
+		-- TODO: maybe this block migrates to base.lua or a separate module?
+		local commandFunc = app.ChatCommands[cmd]
+		if commandFunc then
+			local help = args[2] == "help"
+			if help then return app.ChatCommands.PrintHelp(cmd) end
+			return commandFunc(args)
+		end
+
 		if not cmd or cmd == "" or cmd == "main" or cmd == "mainlist" then
 			app.ToggleMainList();
 			return true;

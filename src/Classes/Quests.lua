@@ -233,6 +233,46 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 			app.CallbackHandlers.DelayedCallback(app.print, 10, "Wiped 'ATTAccountWideData.IGNORE_QUEST_PRINT' Saved Variable table due to bad data!")
 		end
 	end
+	-- Allows a user to use /att ignore-quest-print ### ### ### ### ...
+	-- to manually add to IGNORE_QUEST_PRINT without needing to run scripts or modify saved variables
+	app.ChatCommands.Add("ignore-quest-print", function(args)
+		local questID
+		for i=2,#args do
+			questID = tonumber(args[i])
+			if not questID then
+				app.print("Unable to add a questID to ignore",questID)
+			else
+				if not app.contains(userignored, questID) then
+					userignored[#userignored + 1] = questID
+				end
+				IgnoreErrorQuests[questID] = 1
+				app.print("Ignoring Quest Chat output for",questID,app:SearchLink(Search("questID",questID,"field")))
+			end
+		end
+		return true
+	end, {
+		"Usage : /att ignore-quest-print questID1 [questID2] [questID3] ...",
+		"Example : /att ignore-quest-print 12345",
+		"          Will ignore Quest 12345 flagging from being reported in chat"
+	})
+	app.ChatCommands.Add("allow-quest-print", function(args)
+		local questID
+		for i=2,#args do
+			questID = tonumber(args[i])
+			if not questID then
+				app.print("Unable to add a questID to allow",questID)
+			else
+				tremove(userignored, app.indexOf(userignored, questID))
+				IgnoreErrorQuests[questID] = nil
+				app.print("Allowing Quest Chat output for",questID,app:SearchLink(Search("questID",questID,"field")))
+			end
+		end
+		return true
+	end, {
+		"Usage : /att allow-quest-print questID1 [questID2] [questID3] ...",
+		"Example : /att allow-quest-print 12345",
+		"          Will allow Quest 12345 flagging to be reported in chat"
+	})
 end)
 local BatchRefresh
 -- We can't track unflagged quests with a single meta-table unless we double-assign keys... that's a bit silly
