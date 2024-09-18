@@ -28,6 +28,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				petbattle(pvp(q(83357, {	-- The Very Best
 					["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone
 				}))),
+				q(83363),					-- A Burning Path Through Time
 				q(83366),					-- The World Awaits
 			})),
 		}),

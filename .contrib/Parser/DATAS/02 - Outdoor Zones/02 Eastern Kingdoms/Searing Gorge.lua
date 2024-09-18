@@ -75,7 +75,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				description = {
 					en = "This event occurs every 2 hours from Midnight and lasts 60 minutes. While this event is active, Daily Quests will be available in Searing Gorge for the Thorium Brotherhood. Traditionally Thorium Brotherhood can be quite a grind to achieve reputation with so this addition of a Daily Quest Hub will be very welcome.\nWhen the event is active, new NPCs will spawn and some environmental changes will occur to the outside area of Searing Gorge.",
 				},
-			}), bubbleDownSelf({ ["timeline"] = { "added 1.15.3" } }, {
+			}),
+			bubbleDownSelf({ ["timeline"] = { "added 1.15.3" } }, {
 				n(QUESTS, sharedData({
 						["maxReputation"] = { FACTION_THORIUM_BROTHERHOOD, EXALTED },	-- Thorium Brotherhood, Exalted.
 						["isDaily"] = true,
