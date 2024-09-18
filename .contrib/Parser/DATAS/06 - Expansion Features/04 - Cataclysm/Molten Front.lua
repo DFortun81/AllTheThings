@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, bubbleDown({ ["timeline"] = { ADDED_4_2_0 } }, {
-	m(338, {	-- Molten Front
+	m(THE_MOLTEN_FRONT, {
 		["provider"] = { "o", 208900 },	-- Portal to the Firelands
 		["description"] = "The Molten Front is a daily quest zone for level 32+ players added in 4.2. Players reach it via a portal in Mount Hyjal. This zone covers the initial attacks on Firelands. It is a volcanic zone covered in flame elementals and allies of Ragnarnos. As players complete more daily quests, phasing will occur that shows how the Avengers of Hyjal are making progress.",
 		["icon"] = 514278,	-- Achievement_zone_firelands
@@ -52,34 +52,34 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				ach(5870, {	-- Fireside Chat (Mount Hyjal)
 					crit(17878, {	-- Malfurion Stormrage
-						["coord"] = { 47.0, 91.3, 338 },
+						["coord"] = { 47.0, 91.3, THE_MOLTEN_FRONT },
 					}),
 					crit(17879, {	-- Matoclaw
 						["coord"] = { 27.2, 62.6, MOUNT_HYJAL },
 					}),
 					crit(17880, {	-- Jarod Shadowsong
 						["coords"] = {
-							{ 49.7, 85.5, 338 },
-							{ 45.2, 82.9, 338 },
+							{ 49.7, 85.5, THE_MOLTEN_FRONT },
+							{ 45.2, 82.9, THE_MOLTEN_FRONT },
 						},
 					}),
 					crit(17882, {	-- Dorda'en Nightweaver
 						["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
 					}),
 					crit(17883, {	-- Thisalee Crow
-						["coord"] = { 42.5, 59.7, 338 },
+						["coord"] = { 42.5, 59.7, THE_MOLTEN_FRONT },
 					}),
 					crit(17884, {	-- Arthorn Windsong
-						["coord"] = { 34.3, 56.4, 338 },
+						["coord"] = { 34.3, 56.4, THE_MOLTEN_FRONT },
 					}),
 					crit(17886, {	-- Deldren Ravenelm
 						["coords"] = {
-							{ 55.4, 68.4, 338 },
-							{ 66.6, 63.6, 338 },
+							{ 55.4, 68.4, THE_MOLTEN_FRONT },
+							{ 66.6, 63.6, THE_MOLTEN_FRONT },
 						},
 					}),
 					crit(17889, {	-- General Taldris Moonfall
-						["coord"] = { 45.6, 85.6, 338 },
+						["coord"] = { 45.6, 85.6, THE_MOLTEN_FRONT },
 					}),
 				}),
 				ach(5867, {	-- Flawless Victory
@@ -191,7 +191,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 			n(QUESTS, {
 				q(29263, {	-- A Bitter Pill
 					["qg"] = 53196,	-- Ricket
-					["coord"] = { 47.0, 89.4, 338 },
+					["coord"] = { 47.0, 89.4, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29281,	-- Additional Armaments
 					["isDaily"] = true,
 				}),
@@ -202,7 +202,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29281, {	-- Additional Armaments
 					["qg"] = 53214,	-- Damek Bloombeard
-					["coord"] = { 47.0, 90.0, 338 },
+					["coord"] = { 47.0, 90.0, THE_MOLTEN_FRONT },
 					["sourceQuests"] = {
 						29181,	-- Druids of the Talon
 						29214,	-- The Shadow Wardens
@@ -211,7 +211,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29139, {	-- Agressive Growth
 					["qg"] = 52467,	-- Rayne Feathersong
-					["coord"] = { 48.5, 86.2, 338 },
+					["coord"] = { 48.5, 86.2, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["isDaily"] = true,
 				}),
@@ -221,19 +221,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29137, {	-- Breach in the Defenses
 					["qg"] = 52824,	-- General Taldris Moonfall
-					["coord"] = { 45.5, 85.8, 338 },
+					["coord"] = { 45.5, 85.8, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["isDaily"] = true,
 				}),
 				q(29138, {	-- Burn Victims
 					["qg"] = 53080,	-- Captain Irontree
-					["coord"] = { 46.8, 90.0, 338 },
+					["coord"] = { 46.8, 90.0, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["isDaily"] = true,
 				}),
 				q(29297, {	-- Bye Bye Burdy
 					["qg"] = 54163,	-- Ricket
-					["coord"] = { 66.2, 65.4, 338 },
+					["coord"] = { 66.2, 65.4, THE_MOLTEN_FRONT },
 					["sourceQuests"] = {
 						29281,	-- Additional Armaments
 						29214,	-- The Shadow Wardens
@@ -242,7 +242,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29283, {	-- Calling the Ancients
 					["qg"] = 53882,	-- Varlan Highbough
-					["coord"] = { 44.4, 88.4, 338 },
+					["coord"] = { 44.4, 88.4, THE_MOLTEN_FRONT },
 					["sourceQuests"] = {
 						29181,	-- Druids of the Talon
 						29214,	-- The Shadow Wardens
@@ -251,23 +251,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29181, {	-- Druids of the Talon
 					["qg"] = 52135,	-- Malfurion Stormrage
-					["coord"] = { 47.0, 91.3, 338 },
+					["coord"] = { 47.0, 91.3, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
 				}),
 				q(29160, {	-- Egg-stinction
 					["qg"] = 52921,	-- Deldren Ravenelm
-					["coord"] = { 66.0, 64.0, 338 },
+					["coord"] = { 66.0, 64.0, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29205,	-- The Forlorn Spire
 					["isDaily"] = true,
 				}),
 				q(29330, {	-- Elemental Bonds: Fury
 					["qg"] = 53925,	-- Aggra
-					["coord"] = { 51.4, 25.7, 338 },
+					["coord"] = { 51.4, 25.7, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29338,	-- Into Unrelenting Flame
 				}),
 				q(29331, {	-- Elemental Bonds: The Vow
-					["coord"] = { 51.4, 25.7, 338 },
+					["coord"] = { 51.4, 25.7, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29330,	-- Elemental Bonds: Fury
 					["groups"] = {
 						i(71268),	-- Mantle of Doubt
@@ -278,19 +278,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29255, {	-- Embergris
 					["qg"] = 52489,	-- Avrilla
-					["coord"] = { 50.6, 87.3, 338 },
+					["coord"] = { 50.6, 87.3, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29254,	-- Little Lasher
 					["isDaily"] = true,
 				}),
 				q(29210, {	-- Enduring the Heat
 					["qg"] = 52494,	-- Marin Bladewing
-					["coord"] = { 64.8, 66.8, 338 },
+					["coord"] = { 64.8, 66.8, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29211,	-- Solar Core Destruction
 					["isDaily"] = true,
 				}),
 				q(29275, {	-- Fandral's Methods
 					["qg"] = 52478,	-- Anren Shadowseeker
-					["coord"] = { 65.6, 66.0, 338 },
+					["coord"] = { 65.6, 66.0, THE_MOLTEN_FRONT },
 					["sourceQuests"] = {
 						29272,	-- Need... Water... Badly...
 						29214,	-- The Shadow Wardens
@@ -299,7 +299,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29279, {	-- Filling the Moonwell
 					["qg"] = 53881,	-- Ayla Shadowstorm
-					["coord"] = { 47.0, 90.0, 338 },
+					["coord"] = { 47.0, 90.0, THE_MOLTEN_FRONT },
 					["sourceQuests"] = {
 						29181,	-- Druids of the Talon
 						29214,	-- The Shadow Wardens
@@ -308,42 +308,42 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29265, {	-- Fire Flowers
 					["qg"] = 52444,	-- Thisalee Crow
-					["coord"] = { 42.4, 59.8, 338 },
+					["coord"] = { 42.4, 59.8, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29206,	-- Into the Fire
 					["isDaily"] = true,
 				}),
 				q(29290, {	-- Fire in the Skies
 					["qg"] = 52491,	-- Morthis Whisperwing
-					["coord"] = { 34.6, 56.4, 338 },
+					["coord"] = { 34.6, 56.4, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 				}),
 				q(29264, {	-- Flamewakers of the Molten Flow
 					["qg"] = 52444,	-- Thisalee Crow
-					["coord"] = { 42.4, 59.8, 338 },
+					["coord"] = { 42.4, 59.8, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29206,	-- Into the Fire
 					["isDaily"] = true,
 				}),
 				q(29179, {	-- Hostile Elements
 					["qg"] = 52824,	-- General Taldris Moonfall
-					["coord"] = { 45.5, 85.8, 338 },
+					["coord"] = { 45.5, 85.8, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["isDaily"] = true,
 				}),
 				q(29274, {	-- Hounds of Shannox
 					["qg"] = 52478,	-- Anren Shadowseeker
-					["coord"] = { 42.0, 61.2, 338 },
+					["coord"] = { 42.0, 61.2, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29272,	-- Need... Water... Badly...
 					["isDaily"] = true,
 				}),
 				q(29273, {	-- How Hot
 					["qg"] = 52477,	-- Tholo Whitehoof
-					["coord"] = { 51.2, 85.2, 338 },
+					["coord"] = { 51.2, 85.2, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29272,	-- Need... Water... Badly...
 					["isDaily"] = true,
 				}),
 				q(29203, {	-- Into the Depths
 					["qg"] = 52135,	-- Malfurion Stormrage
-					["coord"] = { 47.0, 90.0, 338 },
+					["coord"] = { 47.0, 90.0, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29280,	-- Nourishing Waters
 				}),
 				q(29209, {	-- Into the Fiery Depths
@@ -352,24 +352,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29206, {	-- Into the Fire
 					["qg"] = 52824,	-- General Taldris Moonfall
-					["coord"] = { 45.8, 85.8, 338 },
+					["coord"] = { 45.8, 85.8, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29181,	-- Druids of the Talon
 					["isDaily"] = true,
 				}),
 				q(29254, {	-- Little Lasher
 					["qg"] = 52489,	-- Avrilla
-					["coord"] = { 50.6, 87.0, 338 },
+					["coord"] = { 50.6, 87.0, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29249,	-- Planting Season
 				}),
 				q(29278, {	-- Living Obsidium
 					["qg"] = 53196,	-- Ricket
-					["coord"] = { 47.0, 89.4, 338 },
+					["coord"] = { 47.0, 89.4, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29281,	-- Additional Armaments
 					["isDaily"] = true,
 				}),
 				q(29289, {	-- Mother's Malice
 					["qg"] = 52491,	-- Morthis Whisperwing
-					["coord"] = { 34.6, 56.4, 338 },
+					["coord"] = { 34.6, 56.4, THE_MOLTEN_FRONT },
 					["sourceQuests"] = {
 						29293,	-- Singed Wings
 						29296,	-- Territorial Birds
@@ -378,12 +378,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29272, {	-- Need... Water... Badly...
 					["qg"] = 53233,	-- Anren Shadowseeker
-					["coord"] = { 51.8, 31.0, 338 },
+					["coord"] = { 51.8, 31.0, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29181,	-- Druids of the Talon
 				}),
 				q(29287, {	-- Peaked Interest
 					["qg"] = 52491,	-- Morthis Whisperwing
-					["coord"] = { 34.6, 56.4, 338 },
+					["coord"] = { 34.6, 56.4, THE_MOLTEN_FRONT },
 					["sourceQuests"] = {
 						29265,	-- Fire Flowers
 						29264,	-- Flamewakers of the Molten Flow
@@ -392,36 +392,36 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29159, {	-- Pyrorachnophobia
 					["qg"] = 52921,	-- Deldren Ravenelm
-					["coord"] = { 66.0, 64.0, 338 },
+					["coord"] = { 66.0, 64.0, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29205,	-- The Forlorn Spire
 					["isDaily"] = true,
 				}),
 				q(29249, {	-- Planting Season
 					["qg"] = 52489,	-- Avrilla
-					["coord"] = { 50.6, 87.0, 338 },
+					["coord"] = { 50.6, 87.0, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29245,	-- The Mysterious Seed
 				}),
 				q(29293, {	-- Singed Wings
 					["qg"] = 53259,	-- Arthorn Windsong
-					["coord"] = { 34.4, 56.4, 338 },
+					["coord"] = { 34.4, 56.4, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29206,	-- Into the Fire
 					["isDaily"] = true,
 				}),
 				q(29211, {	-- Solar Core Destruction
 					["qg"] = 52494,	-- Marin Bladewing
-					["coord"] = { 64.8, 66.8, 338 },
+					["coord"] = { 64.8, 66.8, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29205,	-- The Forlorn Spire
 					["isDaily"] = true,
 				}),
 				q(29299, {	-- Some Like It Hot
 					["qg"] = 52489,	-- Avrilla
-					["coord"] = { 50.6, 87.3, 338 },
+					["coord"] = { 50.6, 87.3, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29254,	-- Little Lasher
 					["isDaily"] = true,
 				}),
 				q(29288, {	-- Starting Young
 					["qg"] = 52491,	-- Morthis Whisperwing
-					["coord"] = { 34.6, 56.4, 338 },
+					["coord"] = { 34.6, 56.4, THE_MOLTEN_FRONT },
 					["sourceQuests"] = {
 						29265,	-- Fire Flowers
 					},
@@ -429,13 +429,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29257, {	-- Steal Magmolias
 					["qg"] = 52489,	-- Avrilla
-					["coord"] = { 50.6, 87.3, 338 },
+					["coord"] = { 50.6, 87.3, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29254,	-- Little Lasher
 					["isDaily"] = true,
 				}),
 				q(29243, {	-- Strike at the Heart
 					["qg"] = 52495,	-- Shalis Darkhunter
-					["coord"] = { 57.6, 49.6, 338 },
+					["coord"] = { 57.6, 49.6, THE_MOLTEN_FRONT },
 					["sourceQuests"] = {
 						29159,	-- Pyrorachnophobia
 						29160,	-- Egg-stinction
@@ -449,7 +449,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29305, {	-- Strike at the Heart
 					["qg"] = 52490,	-- Choluna
-					["coord"] = { 43.2, 80.8, 338 },
+					["coord"] = { 43.2, 80.8, THE_MOLTEN_FRONT },
 					["sourceQuests"] = {
 						29283,	-- Calling the Ancients
 						29290,	-- Fire in the Skies
@@ -461,13 +461,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29296, {	-- Territorial Birds
 					["qg"] = 53259,	-- Arthorn Windsong
-					["coord"] = { 34.4, 56.4, 338 },
+					["coord"] = { 34.4, 56.4, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29206,	-- Into the Fire
 					["isDaily"] = true,
 				}),
 				q(29295, {	-- The Bigger They Are
 					["qg"] = 53304,	-- Ricket
-					["coord"] = { 36.0, 56.6, 338 },
+					["coord"] = { 36.0, 56.6, THE_MOLTEN_FRONT },
 					["sourceQuests"] = {
 						29281,	-- Additional Armaments
 						29181,	-- Druids of the Talon
@@ -476,13 +476,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29304, {	-- The Dogs of War
 					["qg"] = 52824,	-- General Taldris Moonfall
-					["coord"] = { 45.5, 85.8, 338 },
+					["coord"] = { 45.5, 85.8, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["isDaily"] = true,
 				}),
 				q(29276, {	-- The Flame Spider Queen
 					["qg"] = 52477,	-- Tholo Whitehoof
-					["coord"] = { 66.0, 65.8, 338 },
+					["coord"] = { 66.0, 65.8, THE_MOLTEN_FRONT },
 					["sourceQuests"] = {
 						29272,	-- Need... Water... Badly...
 						29214,	-- The Shadow Wardens
@@ -491,19 +491,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29205, {	-- The Forlorn Spire
 					["qg"] = 52824,	-- General Taldris Moonfall
-					["coord"] = { 50.6, 87.3, 338 },
+					["coord"] = { 50.6, 87.3, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29204,	-- The Warden's Charge
 					["isDaily"] = true,
 				}),
 				q(29141, {	-- The Harder They Fall
 					["qg"] = 52824,	-- General Taldris Moonfall
-					["coord"] = { 45.5, 85.8, 338 },
+					["coord"] = { 45.5, 85.8, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["isDaily"] = true,
 				}),
 				q(29245, {	-- The Mysterious Seed
 					["provider"] = { "o", 208535 },	-- Dried Acorn
-					["coord"] = { 70.1, 39.6, 338 },
+					["coord"] = { 70.1, 39.6, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29214,	-- The Shadow Wardens
 				}),
 				q(29311, {	-- The Rest is History
@@ -522,27 +522,27 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29214, {	-- The Shadow Wardens
 					["qg"] = 52135,	-- Malfurion Stormrage
-					["coord"] = { 47.0, 91.3, 338 },
+					["coord"] = { 47.0, 91.3, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
 				}),
 				q(29192, {	-- The Wardens are Watching
 					["qg"] = 52494,	-- Marin Bladewing
-					["coord"] = { 64.8, 66.8, 338 },
+					["coord"] = { 64.8, 66.8, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29205,	-- The Forlorn Spire
 					["isDaily"] = true,
 				}),
 				q(29204, {	-- The Warden's Charge
 					["u"] = REMOVED_FROM_GAME,
 					["qg"] = 52824,	-- General Taldris Moonfall
-					["coord"] = { 50.6, 87.3, 338 },
+					["coord"] = { 50.6, 87.3, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29214,	-- The Shadow Wardens
 					["isBreadcrumb"] = true,
 					["isDaily"] = true,
 				}),
 				q(29142, {	-- Traitors Return
 					["qg"] = 52824,	-- General Taldris Moonfall
-					["coord"] = { 45.5, 85.8, 338 },
+					["coord"] = { 45.5, 85.8, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["isDaily"] = true,
 				}),
@@ -566,13 +566,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29189, {	-- Wicked Webs
 					["qg"] = 52921,	-- Deldren Ravenelm
-					["coord"] = { 66.0, 64.0, 338 },
+					["coord"] = { 66.0, 64.0, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29205,	-- The Forlorn Spire
 					["isDaily"] = true,
 				}),
 				q(29143, {	-- Wisp Away
 					["qg"] = 52467,	-- Rayne Feathersong
-					["coord"] = { 48.5, 86.2, 338 },
+					["coord"] = { 48.5, 86.2, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["isDaily"] = true,
 				}),
@@ -581,11 +581,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				o(207496, {	-- Dark Iron Treasure Chest
 					--["modelScale"] = 1.5,
 					["coords"] = {
-						{ 34.3, 48.3, 338 },
-						{ 33.9, 53.8, 338 },
-						{ 49.9, 47.2, 338 },
-						{ 65.8, 55.0, 338 },
-						{ 68.5, 64.9, 338 },
+						{ 34.3, 48.3, THE_MOLTEN_FRONT },
+						{ 33.9, 53.8, THE_MOLTEN_FRONT },
+						{ 49.9, 47.2, THE_MOLTEN_FRONT },
+						{ 65.8, 55.0, THE_MOLTEN_FRONT },
+						{ 68.5, 64.9, THE_MOLTEN_FRONT },
 					},
 					["sym"] = {{"select","itemID",
 						67121,	-- Chestguard of the Caring Ursine
