@@ -84,22 +84,20 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			e(2636, {	-- Shurrai, Atrocity of the Undersea
 				["crs"] = { 221224 },	-- Shurrai <Atrocity of the Undersea>
 				["coord"] = { 45.6, 18.4, HALLOWFALL },
-				--["questID"] = xx,
+				["questID"] = 83467,
 				["g"] = sharedData({
 					["modID"] = 3,
 				},{
 					i(225750),	-- Seal of the Abyssal Terror
 				}),
 			}),
-			--[[
-			q(xx, {	-- xx (WQ)
+			q(81653, {	-- Shurrai, Atrocity of the Undersea (WQ)
 				["coord"] = { 45.6, 18.4, HALLOWFALL },
 				["isWorldQuest"] = true,
 				["sym"] = {
 					{"select","encounterID",2636,},{"pop"},	-- Original WB
 				},
 			}),
-			--]]
 		}),
 	}),
 })));

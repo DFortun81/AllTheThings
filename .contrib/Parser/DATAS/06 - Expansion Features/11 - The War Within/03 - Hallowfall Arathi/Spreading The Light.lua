@@ -120,13 +120,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["provider"] = { "i", 212339 },	-- A Small Bag of Seeds
 					}),
 					q(80562, {	-- Blossoming Delight
-						--TODO: uncomment when confirmed
-						--["sourceQuests"] = { 78466 },	-- Keyflame: Chef Dinaire
-						--["provider"] = { "n", 206533 },	-- Chef Dinaire
-						--["coord"] = { 64.5, 31.1, HALLOWFALL },
-						--["g"] = {
-						--	i(218127),	-- Ever-Blossoming Fungi (QI!) TODO: remove from unsorted
-						--},
+						["sourceQuests"] = { 78466 },	-- Keyflame: Chef Dinaire
+						["provider"] = { "n", 206533 },	-- Chef Dinaire
+						["coord"] = { 64.5, 31.1, HALLOWFALL },
+						["g"] = {
+							i(215448),	-- Darkstem Stew x5 TODO: Source this item to a vendor?
+							i(218127),	-- Ever-Blossoming Fungi (QI!) TODO: remove from unsorted
+						},
 					}),
 					q(79346, {	-- Chew On That
 						["sourceQuests"] = { 79295 },	-- Keyflame: Taerry Bligestone
@@ -314,9 +314,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(211964),	-- Stillstone Catch (QI!)
 						},
 					}),
-					--[[
-					q(80562),	-- Blossoming Delight
-					]]
 				})),
 				n(RARES, sharedDataSelf({
 						["isDaily"] = true,
@@ -940,7 +937,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(76996),	-- after buy and use itemID 210826 (Harvestbot Repair Kit)
 			q(83341),	-- after turn in 78933 (The Sweet Eclipse), unlock ability to buy Sweet Eclipse from vendor
 			q(83342),	-- after turn in 76394 (Shadows of Flavor), unlock ability to buy Twilight-Spiced Grouper from vendor
-			--q(),	-- after turn in 80562 (Blossoming Delight), unlock ability to buy Darkstem Stew from vendor
+			q(83343),	-- after turn in 80562 (Blossoming Delight), unlock ability to buy Darkstem Stew from vendor
 		}),
 	}),
 })));

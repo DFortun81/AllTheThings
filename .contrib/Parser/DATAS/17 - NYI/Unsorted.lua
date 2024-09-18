@@ -1219,7 +1219,6 @@ root(ROOTS.Unsorted, {
 				i(226152),	-- Wax-sealed Crests
 				--- Attached to Quests via API ---
 				i(215359),	-- Very Large Valdrakken Accord Supply Pack
-				i(215448),	-- Darkstem Stew
 
 				--- Snuffling ---
 				i(224650),	-- Wax-Sealed Pouch

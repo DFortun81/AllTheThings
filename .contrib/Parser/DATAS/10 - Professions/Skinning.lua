@@ -362,6 +362,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 		},{
 			q(83097),	-- Cinder and Storm
 			q(83100),	-- Cracking the Shell
+			q(82993),	-- From Shadows
 			q(83098),	-- Snap and Crackle
 		})),
 		filter(RECIPES, {
@@ -452,7 +453,6 @@ root(ROOTS.Professions, prof(SKINNING, {
 				currency(TWW_SKINNING_KNOWLEDGE),
 			},
 		},{
-			--i(xx),	-- new skinning weekly item
 			q(83734, {	-- TWW Inscription Order: Skinning
 				["name"] = "TWW Inscription Order: Skinning",
 				["description"] = "Requires a crafting order from Inscription.",

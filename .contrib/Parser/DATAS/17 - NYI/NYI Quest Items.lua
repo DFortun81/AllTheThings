@@ -655,7 +655,6 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(216684),	-- Earthen Sword
 			i(212223),	-- Elemental Essence
 			i(225927),	-- Emerald Necklace
-			i(218127),	-- Ever-Blossoming Fungi
 			i(211797),	-- Expedition Map
 			i(219400),	-- Faerin's Torch of Holy Flame
 			i(212547),	-- Final Project Page
