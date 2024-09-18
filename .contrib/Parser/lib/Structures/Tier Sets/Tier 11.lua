@@ -1,4 +1,3 @@
--- #if AFTER CATA
 TIER_ELEVEN_NORMAL_GROUPS = {	-- Bastion of Twilight [Tier 11] (Normal)
 	cl(WARRIOR, {
 		-- DPS
@@ -801,7 +800,6 @@ TIER_ELEVEN_GROUPS = applyclassicphase(CATA_PHASE_ONE,
 	appendGroups(TIER_ELEVEN_HEROIC_GROUPS,
 	appendGroups(TIER_ELEVEN_NORMAL_GROUPS, {
 }))));
--- #endif
 -- #IF AFTER 6.0.2
 SYMLINKS.TIER_ELEVEN = {
 	CONQ = {

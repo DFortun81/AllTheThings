@@ -6427,6 +6427,7 @@ _.ObjectNames = {
 	[416450] = "Lush Orange Illicium",
 	[416950] = "Unsorted Ore Pile",
 	[416954] = "Ore Fragment",
+	[417057] = "Hallowfall Farm Supply",
 	[417136] = "Intriguing Scrap",
 	[417137] = "Intriguing Scrap",
 	[417138] = "Intriguing Scrap",

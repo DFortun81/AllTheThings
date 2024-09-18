@@ -1,4 +1,3 @@
--- #if AFTER CATA
 TIER_TWELVE_NORMAL_GROUPS = {	-- Firelands [Tier 12] (Normal)
 	cl(WARRIOR, {
 		-- DPS
@@ -705,4 +704,3 @@ TIER_TWELVE_GROUPS = applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS,
 	appendGroups(TIER_TWELVE_HEROIC_GROUPS,
 	appendGroups(TIER_TWELVE_NORMAL_GROUPS, {
 }))));
--- #endif

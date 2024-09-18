@@ -1,4 +1,3 @@
--- #if AFTER CATA
 TIER_THIRTEEN_RAIDFINDER_GROUPS = {	-- Dragon Soul [Tier 13] (Raid Finder)
 	cl(WARRIOR, {
 		-- DPS
@@ -1116,4 +1115,3 @@ TIER_THIRTEEN_GROUPS = applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT,
 	appendGroups(TIER_THIRTEEN_NORMAL_GROUPS,
 	appendGroups(TIER_THIRTEEN_RAIDFINDER_GROUPS, {
 })))));
--- #endif
