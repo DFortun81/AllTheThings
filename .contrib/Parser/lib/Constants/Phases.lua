@@ -1,4 +1,3 @@
--- #if ANYCLASSIC
 -- Classic Phases
 PHASE_ONE = 11;
 PHASE_ONE_DIREMAUL = 1101;
@@ -126,4 +125,3 @@ TWW_PHASE_TWO = 111;
 TWW_PHASE_THREE = 112;
 
 -- Done defining Phases for Classic
--- #endif
