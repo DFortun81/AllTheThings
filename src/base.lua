@@ -541,5 +541,44 @@ end
 -- Define Modules
 app.Modules = {};
 
+-- Define Chat Commands handling
+app.ChatCommands = { Help = {} }
+-- Adds a handled chat command for ATT
+-- cmd : The lowercase string to trigger the command handler
+-- func : The function which is run with provided 'args' from chat input when 'cmd' is used
+-- info : (optional, WIP) An Info table which defines helpful information about using the command
+app.ChatCommands.Add = function(cmd, func, help)
+	if not cmd or cmd == "" then error("Must supply an Add Chat Command name") end
+	if type(func) ~= "function" then error("Attempted to add a non-function handler for a Chat Command: "..cmd) end
+		app.ChatCommands[cmd:lower()] = func
+		if help then
+			if type(help) ~= "table" then
+				app.print("Attempted to add a non-table Help for a Chat Command: "..cmd)
+			else
+				app.ChatCommands.Help[cmd:lower()] = help
+			end
+		end
+	end
+-- Removes a handled chat command for ATT
+-- cmd : The lowercase string command whose handler will be removed
+app.ChatCommands.Remove = function(cmd)
+	if not cmd or cmd == "" then error("Must supply a Remove Chat Command name") end
+	app.ChatCommands[cmd:lower()] = nil
+	app.ChatCommands.Help[cmd:lower()] = nil
+end
+-- Prints the Help information for a given command
+-- cmd : The command's Help to print
+app.ChatCommands.PrintHelp = function(cmd)
+	local help = app.ChatCommands.Help[cmd:lower()]
+	if not help then
+		app.print("No Help provided for command:",cmd)
+		return true
+	end
+	for _,helpLine in ipairs(help) do
+		app.print(helpLine)
+	end
+	return true
+end
+
 -- Global Variables
 AllTheThingsSavedVariables = {};
