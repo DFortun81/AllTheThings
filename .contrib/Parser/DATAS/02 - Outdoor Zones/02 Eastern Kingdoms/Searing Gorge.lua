@@ -191,7 +191,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							i(227801),	-- Firelands Ember
 						},
 					}),
-				}),
+				})),
 				n(RARES, {
 					n(228970, {	-- Galenges
 						["description"] = "This is a rare that may not always be present. Seems to have a high drop rate for world drop epics and recipes. Kill it on sight during the invasion!",
