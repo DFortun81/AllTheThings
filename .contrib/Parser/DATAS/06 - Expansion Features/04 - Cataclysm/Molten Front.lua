@@ -33,53 +33,87 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				ach(5868, {	-- And the Meek Shall Inherit Kalimdor
 					["maps"] = { MOUNT_HYJAL },
 					["groups"] = {
-						crit(17824),	-- Angry Little Squirrel
-						crit(17825),	-- Hyjal Bear Cub
-						crit(17826),	-- Alpine Songbird
-						crit(17827),	-- Child of Tortolla
+						crit(17824, {	-- Angry Little Squirrel
+							["coord"] = { 36.1, 58.8, MOUNT_HYJAL },
+							["crs"] = 52195,	-- Angry Little Squirrel
+						}),
+						crit(17825, {	-- Hyjal Bear Cub
+							["description"] = "Instead of throwing the cub to the trampoline, throw it at a sleeping corehound.",
+							["coord"] = { 12.8, 34.0, MOUNT_HYJAL },
+							["cr"] = 52688,	-- Hyjal Bear Cub
+						}),
+						crit(17826, {	-- Alpine Songbird
+							["coord"] = { 13.6, 44.4, MOUNT_HYJAL },
+							["cr"] = 52595,	-- Alpine Songbird
+						}),
+						crit(17827, {	-- Child of Tortolla
+							["description"] = "Instead of punting into the water, punt it at a fire elemental. (target its feet)",
+							["coord"] = { 21.6, 58.8, MOUNT_HYJAL },
+							["cr"] = 52218,	-- Child of Tortolla
+						}),
 					},
 				}),
 				achWithRep(5827, FACTION_AVENGERS_OF_HYJAL, {	-- Avengers of Hyjal
 					title(188),	-- <Name>, Avenger of Hyjal
 				}),
 				ach(5874, {	-- Death From Above  (Mount Hyjal - The Molten Front)
-					crit(17857),	-- Ragepyre
-					crit(17858),	-- Blazefury
-					crit(17859),	-- Flashfire
-					crit(17860),	-- Hatespark
-					crit(17861),	-- Heatflayer
-					crit(17862),	-- Singeslayer
+					crit(17857, {	-- Ragepyre
+						["cr"] = 54252,	-- Ragepyre <Firelord>
+					}),
+					crit(17858, {	-- Blazefury
+						["cr"] = 54253,	-- Blazefury <Firelord>
+					}),
+					crit(17859, {	-- Flashfire
+						["cr"] = 54254,	-- Flashfire <Firelord>
+					}),
+					crit(17860, {	-- Hatespark
+						["cr"] = 54255,	-- Hatespark <Firelord>
+					}),
+					crit(17861, {	-- Heatflayer
+						["cr"] = 54256,	-- Heatflayer <Firelord>
+					}),
+					crit(17862, {	-- Singeslayer
+						["cr"] = 54257,	-- Singeslayer <Firelord>
+					}),
 				}),
 				ach(5870, {	-- Fireside Chat (Mount Hyjal)
 					crit(17878, {	-- Malfurion Stormrage
 						["coord"] = { 47.0, 91.3, THE_MOLTEN_FRONT },
+						["cr"] = 52135,	-- Malfurion Stormrage
 					}),
 					crit(17879, {	-- Matoclaw
 						["coord"] = { 27.2, 62.6, MOUNT_HYJAL },
+						["cr"] = 52669,	-- Matoclaw
 					}),
 					crit(17880, {	-- Jarod Shadowsong
 						["coords"] = {
 							{ 49.7, 85.5, THE_MOLTEN_FRONT },
 							{ 45.2, 82.9, THE_MOLTEN_FRONT },
 						},
+						["cr"] = 52134,	-- Commander Jarod Shadowsong
 					}),
 					crit(17882, {	-- Dorda'en Nightweaver
 						["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
+						["cr"] = 52986,	-- Dorda'en Nightweaver <Hamuul's Attendant>
 					}),
 					crit(17883, {	-- Thisalee Crow
 						["coord"] = { 42.5, 59.7, THE_MOLTEN_FRONT },
+						["cr"] = 52444,	-- Thisalee Crow <Druid of the Talon>
 					}),
 					crit(17884, {	-- Arthorn Windsong
 						["coord"] = { 34.3, 56.4, THE_MOLTEN_FRONT },
+						["cr"] = 53259,	-- Arthorn Windsong <Druid of the Talon>
 					}),
 					crit(17886, {	-- Deldren Ravenelm
 						["coords"] = {
 							{ 55.4, 68.4, THE_MOLTEN_FRONT },
 							{ 66.6, 63.6, THE_MOLTEN_FRONT },
 						},
+						["cr"] = 52921,	-- Deldren Ravenelm
 					}),
 					crit(17889, {	-- General Taldris Moonfall
 						["coord"] = { 45.6, 85.6, THE_MOLTEN_FRONT },
+						["cr"] = 52824,	-- General Taldris Moonfall
 					}),
 				}),
 				ach(5867, {	-- Flawless Victory
@@ -91,22 +125,49 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				ach(5865, {	-- Have... Have We Met?
 					["maps"] = { MOUNT_HYJAL },
 					["groups"] = {
-						crit(17806),	-- Linken
-						crit(17807),	-- Hemet Nesingwary
-						crit(17808),	-- Nat Pagle
-						crit(17809),	-- Chromie
-						crit(17810),	-- Mankrik
-						crit(17811),	-- Thassarian
+						crit(17806, {	-- Linken
+							["cr"] = 52233,
+						}),
+						crit(17807, {	-- Hemet Nesingwary
+							["cr"] = 52261,
+						}),
+						crit(17808, {	-- Nat Pagle
+							["cr"] = 52244,
+						}),
+						crit(17809, {	-- Chromie
+							["cr"] = 57913,
+						}),
+						crit(17810, {	-- Mankrik
+							["cr"] = 52238,
+						}),
+						crit(17811, {	-- Thassarian
+							["cr"] = 53427,
+						}),
 					},
 				}),
 				ach(5869, {	-- Infernal Ambassadors
 					["maps"] = { MOUNT_HYJAL },
 					["groups"] = {
-						crit(17829),	-- Slay Pyrachnis without using the Emerald of Aessina.
-						crit(17831),	-- Slay Millagazor without taking damage from Gout of Flame.
-						crit(17832),	-- Slay Lylagar without taking damage from Lylagar Breath.
-						crit(17833),	-- Slay Galenges before he is weakened a second time
-						crit(17834),	-- Slay Nemesis at Ashen Lake without taking damage from Molten Fury.
+						crit(17829, {	-- Slay Pyrachnis without using the Emerald of Aessina.
+							["coord"] = { 13.4, 44.4, MOUNT_HYJAL },
+							["cr"] = 52749,	-- Pyrachnis <Beth'tilac Lieutenant>
+						}),
+						crit(17831, {	-- Slay Millagazor without taking damage from Gout of Flame.
+							["coord"] = { 13.6, 44.4, MOUNT_HYJAL },
+							["cr"] = 52649,	-- Millagazor
+						}),
+						crit(17832, {	-- Slay Lylagar without taking damage from Lylagar Breath.
+							["coord"] = { 41.6, 56.0, MOUNT_HYJAL },
+							["cr"] = 52766,	-- Lylagar
+						}),
+						crit(17833, {	-- Slay Galenges before he is weakened a second time
+							["coord"] = { 41.6, 56.2, MOUNT_HYJAL },
+							["cr"] = 52399,	-- Galenges <The Unbreakable>
+						}),
+						crit(17834, {	-- Slay Nemesis at Ashen Lake without taking damage from Molten Fury.
+							["coord"] = { 24.6, 55.6, MOUNT_HYJAL },
+							["cr"] = 52383,	-- Nemesis <Echo of the Usurper>
+						}),
 					},
 				}),
 				ach(5872),	-- King of the Spider-Hill  (Mount Hyjal - The Molten Front)
@@ -126,31 +187,61 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["maps"] = { MOUNT_HYJAL },
 				}),
 				ach(5871, {	-- Master of the Molten Flow (Mount Hyjal - The Molten Front)
-					crit(17835),	-- Kill a Flamewaker Shaman with his own Flamewave
-					crit(17836),	-- Kill a Flamewaker Sentinel while it is carrying someone
-					crit(17837),	-- Survive a Flamewaker Hunter's Wild Barrage without getting hit
+					crit(17835, {	-- Kill a Flamewaker Shaman with his own Flamewave
+						["coord"] = { 52.6, 40.2, THE_MOLTEN_FRONT },
+						["cr"] = 53093,	-- Flamewaker Shaman
+					}),
+					crit(17836, {	-- Kill a Flamewaker Sentinel while it is carrying someone
+						["coord"] = { 54.2, 49.8, THE_MOLTEN_FRONT },
+						["cr"] = 53085,	-- Flamewaker Sentinel
+					}),
+					crit(17837, {	-- Survive a Flamewaker Hunter's Wild Barrage without getting hit
+						["coord"] = { 49.6, 42.8, THE_MOLTEN_FRONT },
+						["cr"] = 53143,	-- Flamewaker Hunter
+					}),
 				}),
 				ach(5873, {	-- Ready for Raiding II
-					crit(17840),	-- Ancient Charscale slain
-					crit(17841),	-- Cinderweb Queen slain
-					crit(17842),	-- Ancient Smoldering Behemoth slain
-					crit(17843),	-- Devout Harbinger slain
-					crit(17844),	-- Ancient Firelord slain
+					["sourceQuest"] = 29243,	-- Strike at the Heart
+					["coord"] = { 50.8, 23.0, THE_MOLTEN_FRONT },
+					["groups"] = {
+						crit(17840, {	-- Ancient Charscale slain
+							["cr"] = 53055,	-- Ancient Charscale <Lieutenant of Flame>
+						}),
+						crit(17841, {	-- Cinderweb Queen slain
+							["cr"] = 53759,	-- Cinderweb Queen <Lieutenant of Flame>
+						}),
+						crit(17842, {	-- Ancient Smoldering Behemoth slain
+							["cr"] = 53771,	-- Ancient Smoldering Behemoth <Lieutenant of Flame>
+						}),
+						crit(17843, {	-- Devout Harbinger slain
+							["cr"] = 53834,	-- Devout Harbinger <Lieutenant of Flame>
+						}),
+						crit(17844, {	-- Ancient Firelord slain
+							["cr"] = 53864,	-- Ancient Firelord <Lieutenant of Flame>
+						}),
+					},
 				}),
 				ach(5861, {	-- The Fiery Lords of Sethria's Roost
 					["maps"] = { MOUNT_HYJAL },
 					["groups"] = {
 						crit(17799, {	-- Searris slain
-							["cr"] = 53264,	-- Searris
+							["coords"] = {
+								{ 32.0, 94.8, MOUNT_HYJAL },
+								{ 35.6, 97.6, MOUNT_HYJAL },
+							},
+							["cr"] = 53264,	-- Searris <Lord of Embers>
 						}),
 						crit(17800, {	-- Kelbnar slain
-							["cr"] = 53265,	-- Kelbnar
+							["coord"] = { 30.8, 82.2, MOUNT_HYJAL },
+							["cr"] = 53265,	-- Kelbnar <Lord of Ashes>
 						}),
 						crit(17801, {	-- Andrazor slain
-							["cr"] = 53267,	-- Andrazor
+							["coord"] = { 30.8, 75.9, MOUNT_HYJAL },
+							["cr"] = 53267,	-- Andrazor <Lord of Cinders>
 						}),
 						crit(17802, {	-- Fah Jarakk slain
-							["cr"] = 53271,	-- Fah Jarakk
+							["coord"] = { 31.0, 86.6, MOUNT_HYJAL },
+							["cr"] = 53271,	-- Fah Jarakk <Lord of Smoke>
 						}),
 					},
 				}),
@@ -186,7 +277,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 			}),
 			n(FACTIONS, {
-				faction(FACTION_AVENGERS_OF_HYJAL),	-- Avengers of Hyjal
+				faction(FACTION_AVENGERS_OF_HYJAL, {	-- Avengers of Hyjal
+					["maps"] = { 367, 368, 369 },
+					["icon"] = 512609,
+				}),
 			}),
 			n(QUESTS, {
 				q(29263, {	-- A Bitter Pill
