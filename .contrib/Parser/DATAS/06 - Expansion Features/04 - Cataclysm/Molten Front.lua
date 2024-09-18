@@ -156,31 +156,31 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				ach(5866, {	-- The Molten Front Offensive (Mount Hyjal - The Molten Front)
 					i(69213),	-- Flameward Hippogryph (MOUNT!)
 					crit(17813, {	-- Stop the assault on the Sanctuary of Malorne
-						["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+						["_quests"] = { 29198 },	-- The Sanctuary Must Not Fall
 					}),
 					crit(17814, {	-- Gain access to the Molten Front
-						["sourceQuest"] = 29201,	-- Through the Gates of Hell
+						["_quests"] = { 29201 },	-- Through the Gates of Hell
 					}),
 					crit(17815, {	-- Recruit the Druids of the Talon
-						["sourceQuest"] = 29181,	-- Druids of the Talon
+						["_quests"] = { 29181 },	-- Druids of the Talon
 					}),
 					crit(17816, {	-- Recruit the Shadow Wardens
-						["sourceQuest"] = 29214,	-- The Shadow Wardens
+						["_quests"] = { 29214 },	-- The Shadow Wardens
 					}),
 					crit(17817, {	-- Recruit Elderlimb and the ancients
-						["sourceQuest"] = 29283,	-- Calling the Ancients
+						["_quests"] = { 29283 },	-- Calling the Ancients
 					}),
 					crit(17818, {	-- Recruit an armorer
-						["sourceQuest"] = 29281,	-- Additional Armaments
+						["_quests"] = { 29281 },	-- Additional Armaments
 					}),
 					crit(17819, {	-- Build a moonwell
-						["sourceQuest"] = 29279,	-- Filling the Moonwell
+						["_quests"] = { 29279 },	-- Filling the Moonwell
 					}),
 					crit(17820, {	-- Find the Crimson Lasher
-						["sourceQuest"] = 29254,	-- Little Lasher
+						["_quests"] = { 29254 },	-- Little Lasher
 					}),
 					crit(17821, {	-- Save Anren Shadowseeker
-						["sourceQuest"] = 29272,	-- Need... Water... Badly...
+						["_quests"] = { 29272 },	-- Need... Water... Badly...
 					}),
 				}),
 			}),
@@ -207,9 +207,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						29214,	-- The Shadow Wardens
 					},
 					["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
-					["groups"] = {
-						ach(5866, crit(17818)),	-- The Molten Front Offensive / Recruit an armorer
-					},
 				}),
 				q(29139, {	-- Agressive Growth
 					["qg"] = 52467,	-- Rayne Feathersong
@@ -250,18 +247,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						29214,	-- The Shadow Wardens
 					},
 					["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
-					["groups"] = {
-						ach(5866, crit(17817)),	-- The Molten Front Offensive / Recruit Elderlimb and the ancients
-					},
 				}),
 				q(29181, {	-- Druids of the Talon
 					["qg"] = 52135,	-- Malfurion Stormrage
 					["coord"] = { 47.0, 91.3, 338 },
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
-					["groups"] = {
-						ach(5866, crit(17815)),	-- The Molten Front Offensive / Recruit the Druids of the Talon
-					},
 				}),
 				q(29160, {	-- Egg-stinction
 					["qg"] = 52921,	-- Deldren Ravenelm
@@ -313,9 +304,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						29214,	-- The Shadow Wardens
 					},
 					["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
-					["groups"] = {
-						ach(5866, crit(17819)),	-- The Molten Front Offensive / Filling the Moonwell
-					},
 				}),
 				q(29265, {	-- Fire Flowers
 					["qg"] = 52444,	-- Thisalee Crow
@@ -356,9 +344,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["qg"] = 52135,	-- Malfurion Stormrage
 					["coord"] = { 47.0, 90.0, 338 },
 					["sourceQuest"] = 29280,	-- Nourishing Waters
-					["groups"] = {
-						ach(5859, crit(17796)),	-- Legacy of Leyara / Into the Depths
-					},
 				}),
 				q(29209, {	-- Into the Fiery Depths
 					["u"] = REMOVED_FROM_GAME,
@@ -374,9 +359,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["qg"] = 52489,	-- Avrilla
 					["coord"] = { 50.6, 87.0, 338 },
 					["sourceQuest"] = 29249,	-- Planting Season
-					["groups"] = {
-						ach(5866, crit(17820)),	-- The Molten Front Offensive / Find the Crimson Lasher
-					},
 				}),
 				q(29278, {	-- Living Obsidium
 					["qg"] = 53196,	-- Ricket
@@ -397,9 +379,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["qg"] = 53233,	-- Anren Shadowseeker
 					["coord"] = { 51.8, 31.0, 338 },
 					["sourceQuest"] = 29181,	-- Druids of the Talon
-					["groups"] = {
-						ach(5866, crit(17821)),	-- The Molten Front Offensive / Save Anren Shadowseeker
-					},
 				}),
 				q(29287, {	-- Peaked Interest
 					["qg"] = 52491,	-- Morthis Whisperwing
@@ -545,9 +524,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["coord"] = { 47.0, 91.3, 338 },
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
-					["groups"] = {
-						ach(5866, crit(17816)),	-- The Molten Front Offensive / Recruit the Shadow Wardens
-					},
 				}),
 				q(29192, {	-- The Wardens are Watching
 					["qg"] = 52494,	-- Marin Bladewing

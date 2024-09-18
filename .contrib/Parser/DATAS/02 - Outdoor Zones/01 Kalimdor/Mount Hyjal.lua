@@ -2054,11 +2054,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["timeline"] = { ADDED_4_2_0 },
 					["lvl"] = 85,
-					["groups"] = {
-						ach(5866, {	-- The Molten Front Offensive / Stop the assault on the Sanctuary of Malorne
-							["sym"] = {{ "achievement_criteria" }},
-						}),
-					},
 				})),
 				q(25549, {	-- The Sanctum of the Prophets
 					["qg"] = 40772,	-- Commander Jarod Shadowsong
@@ -2178,9 +2173,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 27.0, 62.7, MOUNT_HYJAL },
 					["timeline"] = { ADDED_4_2_0 },
 					["lvl"] = 85,
-					["groups"] = {
-						ach(5866, crit(17814)),	-- The Molten Front Offensive / Gain access to the Molten Front
-					},
 				})),
 				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29196, {	-- To the Sanctuary!
 					["qg"] = 52845,	-- Malfurion Stormrage
