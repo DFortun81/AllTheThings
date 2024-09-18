@@ -1,7 +1,7 @@
 -----------------------------------
 --     NOT SORTED YET MODULE     --
 -----------------------------------
--- Every thing in this file hasn't been sorted yet, but is known to exist.
+-- Every thing in this file hasn't been sorted yet, but is known to exist and is not 'NYI'.
 -- #if NOT ANYCLASSIC
 root(ROOTS.Sourceless, bubbleDownFiltered({
 		["sharedDescription"] = "If you obtain this item, please provide as much information as you can about how and where you got it.",
@@ -747,6 +747,8 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 
 			-- 10.2.5
 			expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+				q(79125),	-- The Kalimdor Cup Begins [A]
+				q(79126),	-- The Kalimdor Cup Begins [H]
 				q(78976),	--
 				q(79353),	--
 				q(79474),	--

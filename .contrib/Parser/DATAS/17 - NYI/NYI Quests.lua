@@ -8837,8 +8837,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(77870),	--
 			q(77873),	--
 			q(78179),	--
-			q(79125),	-- The Kalimdor Cup Begins (A)
-			q(79126),	-- The Kalimdor Cup Begins (H)
 		})),
 
 		-- 10.2.6

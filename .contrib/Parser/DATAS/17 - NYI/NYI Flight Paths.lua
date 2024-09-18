@@ -741,7 +741,8 @@ root(ROOTS.NeverImplemented, n(FLIGHT_PATHS, {
 			fp(2887, {["description"] = "Quest Path 9429: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Lower Floor (MPK)"}),
 			fp(2892, {["description"] = "Quest Path 9443: 10.1.7 Heritage - Night Elf - Player Up to the Start of Shadow Hold, Hel'nurath's Room (MPK)"}),
 		})),
-
+	}),
+	expansion(EXPANSION.TWW, {
 		-- 11.0.2
 		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
 			fp(3003, {["description"] = "The Crown of Shadows"}),
