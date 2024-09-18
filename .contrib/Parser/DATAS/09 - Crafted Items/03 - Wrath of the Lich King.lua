@@ -118,7 +118,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			["provider"] = { "o", 203078 },	-- Nerubian Archaeology Find
 			["maps"] = {
 				BOREAN_TUNDRA,
-				DRAGONFLIGHT,
+				DRAGONBLIGHT,
 				EASTERN_PLAGUELANDS,
 				ICECROWN,
 				ZULDRAK,

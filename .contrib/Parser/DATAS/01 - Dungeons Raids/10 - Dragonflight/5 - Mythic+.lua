@@ -181,7 +181,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 			}),
 		})),
 		header(HEADERS.Achievement, SEASON_DRACONIC_PVE, bubbleDownSelf({
-			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_PREPATCH_END },
+			["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
 		},{
 			ach(19780),		-- Dragonflight Keystone Explorer: Season Four
 			ach(19781, {	-- Dragonflight Keystone Conqueror: Season Four

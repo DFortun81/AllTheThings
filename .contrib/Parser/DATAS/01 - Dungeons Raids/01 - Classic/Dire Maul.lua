@@ -188,7 +188,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 				}),
 				faction(FACTION_STEAMWHEEDLE_CARTEL, {	-- Steamweedle Cartel
 					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
+					-- #if BEFORE 4.0.3
 					["OnTooltip"] = OnTooltipForSteamweedle,
+					-- #endif
 					["maps"] = merge(GORDOK_COMMONS_MAPS, {
 						FERALAS,
 						STRANGLETHORN_VALE,
