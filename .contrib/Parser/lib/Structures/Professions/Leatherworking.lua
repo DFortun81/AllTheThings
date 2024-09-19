@@ -1318,7 +1318,6 @@ TWW_LEATHERWORKING = sharedData({ ["timeline"] = { ADDED_11_0_2 } }, {
 		r(444075),	-- Carapace-Backed Hide
 		r(444086),	-- Chitin Armor Banding
 		r(444076),	-- Crystalfused Hide
-		r(444085),	-- Deepfury Hide
 		r(444079),	-- Leyfused Hide
 		r(444078),	-- Sporecoated Hide
 		r(444087),	-- Storm-Touched Weapon Wrap

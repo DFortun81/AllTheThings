@@ -411,6 +411,9 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(197985),	-- Pattern: Illustrious Insight / Essence of Tyr (RECIPE!)
 				})),
 			}),
+			expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+				r(444085),	-- Deepfury Hide
+			})),
 		}),
 	}),
 }));
