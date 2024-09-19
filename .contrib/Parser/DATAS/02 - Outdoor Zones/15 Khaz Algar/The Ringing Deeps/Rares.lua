@@ -116,6 +116,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(221253),	-- Cultivator's Plant Puncher
 					i(221264),	-- Fungarian Mystic's Cluster
 					i(221204),	-- Spore Giant's Stompers
+					i(223005),	-- String of Fungal Fruits
 				},
 			}),
 			n(220273, {	-- Rampaging Skardyn

@@ -118,6 +118,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
 				}),
 			}, {	-- RENOWN 18 --
+				q(82379, {	-- An Overflowing Bundle of Shinies
+					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
+					["g"] = {
+						currency(RESONANCE_CRYSTALS),
+					},
+				}),
 			}, {	-- RENOWN 19 --
 			}, {	-- RENOWN 20 --
 			}, {	-- RENOWN 21 --
