@@ -645,14 +645,23 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 	n(THE_SEVERED_THREADS, {
 		n(SEVERED_THREADS_PACT, {
 			-- Reps with zone dudes, probably gonna need to move into expansion feature?
+			-- General --
 			q(81601),	-- [DNT] General - Level 1 Unlock (spellID 443677)
 			q(81602),	-- [DNT] General - Level 2 Unlock (spellID 443679)
-			q(81626),	-- [DNT] General - Level 2 Unlock (spellID 443679)
+			q(81626),	-- [DNT] General - Level 2 Unlock (spellID 443679) (???)
 			q(81603),	-- [DNT] General - Level 3 Unlock (spellID 443680)
+			--q(XX),	-- Triggered on General Rank 4/9
+			q(84530),	-- Triggered on General Rank 6/9
+			q(84531),	-- Triggered on General Rank 7/9
+			-- Vizier --
 			q(81605),	-- [DNT] Vizier - Level 1 Unlock (spellID 443682) & [DNT] Vizier - Level 4 Unlock (spellID 443686) (???)
 			q(81606),	-- [DNT] Vizier - Level 2 Unlock (spellID 443683)
 			q(81607),	-- [DNT] Vizier - Level 3 Unlock (spellID 443684)
 			q(84534),	-- [DNT] Vizier - Level 5 Unlock (spellID 462473)
+			--q(84534),	-- Triggered on Vizier Rank 6/9 (???)
+			q(84535),	-- Triggered on Vizier Rank 7/9
+			q(84536),	-- Triggered on Vizier Rank 8/9
+			-- Weaver --
 			q(81597),	-- [DNT] Weaver - Level 1 Unlock (spellID 443033)
 			q(81598),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674)
 			q(81627),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674) (???)
@@ -675,7 +684,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(82649),	-- pop questIDs: 81494 (General), 81502 (Vizier), 81504 (Weaver)
 			q(82647),	-- pop questIDs: 81478 (General), 81482 (Vizier), 81483 (Weaver)
 			q(82648),	-- pop questIDs: 81493 (General), 81503 (?), 81501 (?)
-			-- General
 			--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224191 @ 68.5, 51.1), start questID 81484 (Wet Work: Death of a Salesman)
 			--q(82645),	-- 'Listen to the rumor' from Eirzay (n: 224171 @ 63.0, 38.1, 2216), start questID 81491 (Armaments: Arbalests)
 			--q(82646),	-- 'Listen to the rumor' from Eirzay (n: 224172 @ 48.4, 60.7), start questID 81492 (Armaments: Smithing Tools)
@@ -689,7 +697,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			--q(82649),	-- 'Listen to the rumor' from Eirzay (n: 224176 @ 63.8, 26.3, 2216), start questID 81494 (Relics of War: Rak-Ahat)
 			--q(82647),	-- 'Listen to the rumor' from Eirzay (n: 224173 @ 39.5, 53.0), start questID 81478 (Relics of War: The Ruptired Lake)
 			--q(82648),	-- 'Listen to the rumor' from Eirzay (n: 224174 @ 63.8, 26.3, 2216), start questID 81493 (Relics of War: The Salien Gutter Conflict)
-			-- Weaver
 			q(79698),	-- after turn in questID 79627 (Wine and Die)
 			--q(82581),	-- 'Investiage the scene' from Ru'murh (n: 224194 @ 70.3, 31.8, 2213), start questID 81470 (Dropping Eaves: Thieving Weave)
 			--q(82643),	-- 'Investiage the scene' from Ru'murh (n: 224195 @ 73.3, 50.9, 2213), start questID 81471 (Dropping Eaves: Saving the Past)
@@ -697,7 +704,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			--q(82647),	-- 'Consider the missive' from Ru'murh (n: 224199 @ 45.6, 51.0, 2216), start questID 81483 (Infiltration: Production Blocker)
 			--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224201 @ 76.2, 47.4), start questID 81504 (Infiltration: Hidden Figures)
 			-- Missing 5 more quest data/givers
-			-- Vizier
 			--q(82616),	-- 'Gather some reagent' from Ghos-opp (n: 224180 @ 48.4, 61.9), start questID 81480 (Wild Reagents: Maddening Deep)
 			-- Missing 11 total quest data/givers, 81505 81498 81497 81502 81482 (and 5 more)
 

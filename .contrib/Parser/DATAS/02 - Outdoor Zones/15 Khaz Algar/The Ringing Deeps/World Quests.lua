@@ -119,6 +119,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(81691, {	-- Special Assignment: Shadows Below
 					["coord"] = { 68.2, 48.4, THE_RINGING_DEEPS },
 					["g"] = {
+						i(224941),	-- Radiant Fuel Cache
 						i(219522),	-- Radiant Fuel Crystal
 						i(224292),	-- Radiant Fuel Shard
 					},

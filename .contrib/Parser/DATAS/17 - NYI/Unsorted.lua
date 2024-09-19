@@ -1220,7 +1220,6 @@ root(ROOTS.Unsorted, {
 				i(213420),	-- Fungarian Mushroom Cap
 				--- Ringing ---
 				i(224913),	-- Radiant Fuel Cache
-				i(224941),	-- Radiant Fuel Cache
 
 				--- Winter Veil ---
 				i(218309),	-- Gently Shaken Gift

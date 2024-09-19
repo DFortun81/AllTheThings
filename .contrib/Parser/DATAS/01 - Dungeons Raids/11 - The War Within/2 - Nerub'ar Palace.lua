@@ -647,7 +647,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(84276),	-- Queen Ansurek
 
 		-- Heroic
-
+			-- Shared with LFR/Normal?
 		-- Mythic
+		q(84262),	-- Ulgrax the Devourer
 	})),
 })))
