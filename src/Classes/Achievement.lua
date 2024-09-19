@@ -68,7 +68,7 @@ do
 		--local IDNumber, Name, Points, Completed, Month, Day, Year, Description, Flags, Image, RewardText, isGuildAch = GetAchievementInfo(t[KEY]);
 		local _, name, _, _, _, _, _, _, flags, icon = GetAchievementInfo(id);
 		_t.silentLink = GetAchievementLink(id)
-		local accountWide = FlagsUtil_IsSet(tonumber(flags), FLAG_AccountWide)
+		local accountWide = FlagsUtil_IsSet(tonumber(flags) or 0, FLAG_AccountWide)
 		_t.accountWide = accountWide
 		if accountWide then
 			local len = string_len(_t.silentLink)
