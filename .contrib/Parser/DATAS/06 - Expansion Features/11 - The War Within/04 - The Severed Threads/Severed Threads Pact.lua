@@ -652,6 +652,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(81605),	-- [DNT] Vizier - Level 1 Unlock (spellID 443682) & [DNT] Vizier - Level 4 Unlock (spellID 443686) (???)
 			q(81606),	-- [DNT] Vizier - Level 2 Unlock (spellID 443683)
 			q(81607),	-- [DNT] Vizier - Level 3 Unlock (spellID 443684)
+			q(84534),	-- [DNT] Vizier - Level 5 Unlock (spellID 462473)
 			q(81597),	-- [DNT] Weaver - Level 1 Unlock (spellID 443033)
 			q(81598),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674)
 			q(81627),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674) (???)

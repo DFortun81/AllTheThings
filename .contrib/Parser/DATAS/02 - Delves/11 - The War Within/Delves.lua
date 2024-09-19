@@ -504,7 +504,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(83769, {	-- Delver's Call: Mycomancer Cavern
 					["provider"] = { "o", 455690 },	-- Delver's Call: Mycomancer Cavern
-					["coord"] = { 68.9, 44.4, HALLOWFALL },
+					["coords"] = {
+						{ 68.9, 44.4, HALLOWFALL },
+						{ 19.5, 36.7, MYCOMANCER_CAVERN },
+					},
 				}),
 			}),
 			n(TREASURES, {
@@ -723,7 +726,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(83766, {	-- Delver's Call: Dread Pit
 					["provider"] = { "o", 455685 },	-- Delver's Call: Dread Pit
-					["coord"] = { 58.3, 64.2, THE_RINGING_DEEPS },
+					["coords"] = {
+						{ 58.3, 64.2, THE_RINGING_DEEPS },
+						{ 30, 54.8, THE_DREAD_PIT },
+					},
 				}),
 			}),
 			n(TREASURES, {
@@ -768,7 +774,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(83767, {	-- Delver's Call: The Sinkhole
 					["provider"] = { "o", 455704 },	-- Delver's Call: The Sinkhole
-					["coord"] = { 48.7, 39.5, HALLOWFALL },
+					["coords"] = {
+						{ 48.7, 39.5, HALLOWFALL },
+						{ 53.1, 20.2, THE_SINKHOLE },
+					},
 				}),
 			}),
 			n(TREASURES, {
@@ -820,6 +829,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				q(83770, {	-- Delver's Call: Spiral Weave
 					["provider"] = { "n", 211721 },	-- Sir Jonathan Trueheart
 					["coord"] = { 58.9, 18.6, AZJ_KAHET },
+				}),
+				q(85666, {	-- Delver's Call: Spiral Weave
+					-- cross complete with 83770
+					--["provider"] = { "o", XXXXX },	-- ?
+					["coord"] = { 53.0, 76.1, THE_SPIRAL_WEAVE },
 				}),
 			}),
 			n(TREASURES, {
@@ -1690,7 +1704,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(82772),	-- First Delve of the day
 		q(84670),	-- after turn in weekly delve quest (was 82746 - Delves: Breaking Tough to Loot Stuff - for this one)
 		q(84671),	-- after accepting weekly quest (was 82746 - Delves: Breaking Tough to Loot Stuff) / also after 82679 (Archives: Seeking History)
-		q(85666),	-- Triggers with 'Delver's Call: Spiral Weave' (questID 83770)
 		q(85651),	-- Triggers with 'Delver's Call: The Sinkhole' (questID 83767)
 		-- Bountiful Delve runs
 		q(82944),	-- Earthcrawl Mines

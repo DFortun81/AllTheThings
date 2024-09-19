@@ -2400,6 +2400,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstSkin(85549, 214757),	-- Skinning Croakit
 			FirstSkin(83408, 220286),	-- Skinning Deepflayer Broodmother
 			FirstSkin(83404, 218393),	-- Skinning Disturbed Earthgorger
+			FirstSkin(81446, 224924),	-- Skinning Elusive Gargantuan Stormscale
+			FirstSkin(81445, 224515),	-- Skinning Elusive Ironhide Maelstrom Wolf
+			FirstSkin(81447, 224963),	-- Skinning Elusive Kaheti Battle Tank
+			FirstSkin(81448, 226232),	-- Skinning Elusive Razormouth Steelhide
 			FirstSkin(81451, 219265),	-- Skinning Emperor Pitfang
 			FirstSkin(85548, 220492),	-- Skinning Finclaw Bloodtide
 			FirstSkin(83402, 221668),	-- Skinning Horror of the Shallows

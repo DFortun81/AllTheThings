@@ -63,7 +63,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					q(79150, {	-- Thespians at the Proscenium
 						["provider"] = { "n", 214296 },	-- Stage Manager Huberta
-						["coord"] = { 56.5, 52.8, ISLE_OF_DORN },
+						["coord"] = { 56.4, 51.4, ISLE_OF_DORN },
 					}),
 				}),
 				n(REWARDS, {

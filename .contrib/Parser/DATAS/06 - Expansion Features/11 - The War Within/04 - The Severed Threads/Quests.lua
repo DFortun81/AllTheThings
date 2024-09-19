@@ -26,7 +26,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 			}, {	-- RENOWN 9 --
 				q(82431, {	-- Unsevered Threads
-					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 				q(85531, {	-- Earth-Encrusted Gem
