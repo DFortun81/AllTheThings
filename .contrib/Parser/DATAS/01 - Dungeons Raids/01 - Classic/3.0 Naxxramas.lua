@@ -21,14 +21,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC,
 applyclassicphase(PHASE_SIX,
 -- #endif
 {
-	inst(754, {	-- Naxxramas
+	inst(754, bubbleDownSelf({ ["timeline"] = { REMOVED_3_0_2 } }, {	-- Naxxramas
 		-- #if BEFORE MOP
 		["lore"] = "An ancient Nerubian ziggurat, Naxxramas was torn free from the ground by agents of the Lich King to serve as Kel'Thuzad's base of operations as he spreads the plague throughout Lordaeron.\n\nDue to Kel'Thuzad fighting a war against the Scarlet Crusade, the Argent Dawn, the Forsaken and the humans of the Alliance, as well as constant incursions of adventurers from every race and nation into the Scourge-controlled Plaguelands on a daily basis, his forces have been severely taxed to maintain the security of his necropolis. But now that the gates of Naxxramas are open, Kel'Thuzad's new forces are rapidly sweeping away all opposition to the Scourge.",
 		-- #endif
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 3456,	-- Naxxramas
 		["sourceQuest"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
-		["timeline"] = { REMOVED_3_0_2 },
 		-- #endif
 		-- #if AFTER CATA
 		["sharedLockout"] = 1,
@@ -39,7 +38,7 @@ applyclassicphase(PHASE_SIX,
 		-- #if BEFORE WRATH
 		["lvl"] = 60,
 		-- #endif
-		["groups"] = bubbleDown({ ["timeline"] = { REMOVED_3_0_2 } }, {
+		["groups"] = {
 			-- #if AFTER WRATH
 			d(9, applyclassicphase(PHASE_SIX, {	-- 40 Player (Legacy)
 				["sourceQuest"] = 9121,	-- The Dread Citadel - Naxxramas [Honored]
@@ -2112,8 +2111,8 @@ applyclassicphase(PHASE_SIX,
 				},
 			})),
 			-- #endif
-		}),
-	}),
+		},
+	})),
 }
 -- #if BEFORE WRATH
 )

@@ -7,7 +7,7 @@ local RAZZASHI_HATCHLING = i(48126, {	-- Razzashi Hatchling
 	["cr"] = 14821,	-- Razzashi Raptor
 });
 root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR, {
-	inst(76, {	-- Zul'Gurub
+	inst(76, bubbleDownSelf({ ["timeline"] = { REMOVED_4_0_3 } }, {	-- Zul'Gurub
 		["lore"] = "Over a thousand years ago the powerful Gurubashi Empire was torn apart by a massive civil war. An influential group of troll priests, known as the Atal'ai, called forth the avatar of an ancient and terrible blood god named Hakkar the Soulflayer. Though the priests were defeated and ultimately exiled, the great troll empire collapsed upon itself. The exiled priests fled far to the north, into the Swamp of Sorrows, where they erected a great temple to Hakkar in order to prepare for his arrival into the physical world.",
 		-- #if BEFORE WRATH
 		["zone-text-areaID"] = 19,	-- Zul'Gurub
@@ -18,10 +18,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 			233,
 			-- #endif
 		},
-		["timeline"] = { REMOVED_4_0_3 },
 		["isRaid"] = true,
 		["lvl"] = 58,
-		["groups"] = bubbleDown({ ["timeline"] = { REMOVED_4_0_3 } }, {
+		["groups"] = {
 			n(ACHIEVEMENTS, {
 				achWithRep(957, FACTION_ZANDALAR_TRIBE, {	-- Hero of the Zandalar Tribe
 					-- #if BEFORE WRATH
@@ -1532,8 +1531,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				i(20257),	-- Seafury Gauntlets
 				i(19855),	-- Bloodsoaked Legplates
 			}),
-		}),
-	}),
+		},
+	})),
 })));
 
 -- The tome was added to Cataclysm Fishing Pools after being removed from ZG.
