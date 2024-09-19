@@ -2561,7 +2561,7 @@ namespace ATT
                             localeBuilder.AppendLine("localize(L.HEADER_NAMES, {");
                             foreach (var key in keys)
                             {
-                                if (localePair.Value.TryGetValue(key, out string name))
+                                if (localePair.Value.TryGetValue(key, out string name) && !string.IsNullOrWhiteSpace(name))
                                 {
                                     ExportStringKeyValue(localeBuilder, key, name).AppendLine();
                                 }
@@ -2577,7 +2577,7 @@ namespace ATT
                             localeBuilder.AppendLine("localize(L.HEADER_DESCRIPTIONS, {");
                             foreach (var key in keys)
                             {
-                                if (localePair.Value.TryGetValue(key, out string name))
+                                if (localePair.Value.TryGetValue(key, out string name) && !string.IsNullOrWhiteSpace(name))
                                 {
                                     ExportStringKeyValue(localeBuilder, key, name).AppendLine();
                                 }
@@ -2593,7 +2593,7 @@ namespace ATT
                             localeBuilder.AppendLine("localize(L.HEADER_LORE, {");
                             foreach (var key in keys)
                             {
-                                if (localePair.Value.TryGetValue(key, out string name))
+                                if (localePair.Value.TryGetValue(key, out string name) && !string.IsNullOrWhiteSpace(name))
                                 {
                                     ExportStringKeyValue(localeBuilder, key, name).AppendLine();
                                 }
