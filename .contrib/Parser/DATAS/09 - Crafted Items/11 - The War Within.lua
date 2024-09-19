@@ -2244,8 +2244,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80948, 444078);	-- Sporecoated Hide
 			FirstCraft(80951, 444087);	-- Storm-Touched Weapon Wrap
 			FirstCraft(80947, 444077);	-- Writhing Hide
-			-- NYI
-			FirstCraft(80950, 444085);	-- Deepfury Hide
 		})),
 		filter(MISC, {
 			i(219495),	-- Blessed Weapon Grip+

@@ -2393,7 +2393,6 @@ i(0, 444105);		-- Apothecary's Cap
 i(0, 444075);		-- Carapace-Backed Hide
 i(0, 444086);		-- Chitin Armor Banding
 i(0, 444076);		-- Crystalfused Hide
-i(0, 444085);		-- Deepfury Hide
 i(0, 444104);		-- Dual Layered Armor Kit
 i(0, 444112);		-- Gardener's Basket
 i(0, 444114);		-- Gemcutter's Apron
@@ -2479,3 +2478,5 @@ i(0, 441057);		-- Rune-Branded Waistband
 i(0, 443961);		-- Smoldering Pollen Hauberk
 i(0, 443951);		-- Weathered Stormfront Vest
 i(0, 441461);		-- Writhing Armor Banding
+--- NYI ---
+i(0, 444085);		-- Deepfury Hide

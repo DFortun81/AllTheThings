@@ -8888,6 +8888,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(83023),	-- Short-Supply Reward
 			q(84086),	--
 			q(81651),	-- Delver's Guide to Delves
+			q(80950),	-- First Craft: Deepfury Hide
 		})),
 	}),
 }));

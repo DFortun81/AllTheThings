@@ -34,11 +34,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(193241),	-- Drygrate Scales+++
 				})),
 			}),
-			expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
-				i(219895),	-- Deepfury Hide+
-				i(219896),	-- Deepfury Hide++
-				i(219897),	-- Deepfury Hide+++
-			})),
+			expansion(EXPANSION.TWW, {
+				-- 11.0.0
+				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+					i(219895),	-- Deepfury Hide+
+					i(219896),	-- Deepfury Hide++
+					i(219897),	-- Deepfury Hide+++
+				})),
+			}),
 		}),
 		filter(RECIPES, {
 			expansion(EXPANSION.DF, {
