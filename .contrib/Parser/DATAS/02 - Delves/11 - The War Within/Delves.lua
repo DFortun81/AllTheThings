@@ -13,8 +13,27 @@ CURIO = createHeader({
 	},
 });
 local UNDERCOIN = 2803;
+local MAPS = {
+	EARTHCRAWL_MINES,
+	FUNGAL_FOLLY,
+	KRIEGVALS_REST,
+	MYCOMANCER_CAVERN,
+	NIGHTFALL_SANCTUM,
+	SKITTERING_BREACH,
+	TAK_RETHAN_ABYSS,
+	THE_DREAD_PIT,
+	THE_SINKHOLE,
+	THE_SPIRAL_WEAVE,
+	THE_UNDERKEEP,
+	THE_WATERWORKS,
+}
+local mapped = function(t)
+	t.maps = MAPS
+	return t
+end
 root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
-	n(ACHIEVEMENTS, {
+	mapped(n(ACHIEVEMENTS, {
+		-- TODO: Some of these aren't actually obtainable in all delves, needs refining
 		ach(40817),		-- A Delver's Bounty
 		ach(40538, {	-- Brann Development
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
@@ -138,7 +157,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			title(550),	-- High Explorer <Name>
 		}),
 		ach(40436),	-- You're Getting a Delve!
-	}),
+	})),
 	n(QUESTS, {
 		q(81514, {	-- Bountiful Delves
 			["sourceQuests"] = { 83315 },	-- Preparing for the Unknown
@@ -292,13 +311,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		q(82712),	-- Delves: Trouble Up and Down Khaz Algar
 	})),
 	n(RARES, {
+		-- TODO: These might not appear in all delves, look into refining these down
 		n(207482),	-- Invasive Sporecap
 		n(209721),	-- Secret Treasure
 		n(228030),	-- Sir Finley Mrgglton
 		n(223541),	-- Stolen Loader
 		n(208728),	-- Treasure Wraith
 	}),
-	n(TREASURES, {
+	mapped(n(TREASURES, {
 		-- Mislaid Curiosities can be found throughout all Delves, random coordinates
 		o(455914, {	-- Mislaid Curiosity
 			["description"] = "Contains Chunk of Companion Experience tokens.",
@@ -313,7 +333,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(232045),	-- Chunk of Companion Experience (Epic)
 			},
 		}),
-	}),
+	})),
 	m(EARTHCRAWL_MINES, {
 		["icon"] = [[~_.asset("Delves_Nerubian")]],
 		["coord"] = { 38.6, 73.9, ISLE_OF_DORN },
@@ -980,7 +1000,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 		},
 	}),
-	n(REWARDS, {
+	mapped(n(REWARDS, {
 		n(ARMOR, {
 			filter(BACK_F, {
 				i(211005),	-- Cave Topographer's Drape
@@ -1377,7 +1397,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			i(211046),	-- Umbral Artist's Chisel
 			i(211040),	-- Unhinged Vault-Hatch
 		}),
-	}),
+	})),
 	n(VENDORS, {
 		n(226250, {	-- Reno Jackson <Delve Treasures>
 			["coord"] = { 47.6, 45.0, DORNOGAL },
