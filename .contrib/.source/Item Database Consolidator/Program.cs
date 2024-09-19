@@ -15,7 +15,7 @@ namespace ATT
             // DBContext / ItemDB
             var databaseFolder = "../Parser/DATAS/00 - Item DB/.dynamic";
             Directory.CreateDirectory(databaseFolder);
-            foreach (var file in Directory.GetFiles("../.raw"))
+            foreach (var file in Directory.GetFiles("../.raw/ItemDB"))
             {
                 if (file.EndsWith(".lua"))
                 {
