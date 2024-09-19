@@ -1067,7 +1067,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				--["sourceQuests"] = { ? },	-- ?
 				["provider"] = { "n", 227217 },	-- Webster
 				["coords"] = {
-					{ 29.6, 73.5, DORNOGAL },
+					{ 31.6, 63.2, DORNOGAL },
 					{ 57, 41.7, AZJ_KAHET },
 				},
 				["isBreadcrumb"] = true,
