@@ -309,12 +309,19 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						["g"] = {
 							i(159651),	-- Coral-Edged Crescent
 							i(159310),	-- Circlet of the Enveloping Leviathan
+							i(231824, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0}}),	-- Circlet of the Enveloping Leviathan
 							i(159252),	-- Grasping Crown of the Deep
+							i(231818, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0}}),	-- Grasping Crown of the Deep
 							i(159376),	-- Hook-Barbed Spaulders
+							i(231826, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0}}),	-- Hook-Barbed Spaulders
 							i(159431),	-- Kraken Shell Pauldrons
+							i(231830, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0}}),	-- Kraken Shell Pauldrons
 							i(159314),	-- Cephalohide Jacket
+							i(231822, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0}}),	-- Cephalohide Jacket
 							i(159416),	-- Harpooner's Plate Cuirass
+							i(231827, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0}}),	-- Harpooner's Plate Cuirass
 							i(159362),	-- Tri-Heart Chestguard
+							i(231825, {["timeline"] = {ADDED_11_0_2, REMOVED_11_1_0}}),	-- Tri-Heart Chestguard
 							i(159256),	-- Iron-Kelp Wristwraps
 							i(168130),	-- Essence of the Depths
 						},
