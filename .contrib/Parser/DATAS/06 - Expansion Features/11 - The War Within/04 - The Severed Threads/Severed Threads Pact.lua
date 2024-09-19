@@ -150,12 +150,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					q(82954, {	-- Knives in the Dark
 						["sourceQuests"] = { 83178 },	-- Rules and Consequences
-						--["provider"] = { "n", 208782 },	-- Executor Nizrek
+						["provider"] = { "n", 208782 },	-- Executor Nizrek
 						["minReputation"] = { FACTION_THE_VIZIER, 7 },
 						["coord"] = { 52.9, 46.1, NERUBAR },
 					}),
 					q(82953, {	-- A Cordial Invitation
-						--["provider"] = { "n", 208782 },	-- Executor Nizrek
+						["sourceQuests"] = { 83178 },	-- Rules and Consequences
+						["provider"] = { "n", 208782 },	-- Executor Nizrek
 						["minReputation"] = { FACTION_THE_VIZIER, 7 },
 						["coord"] = { 52.9, 46.1, NERUBAR },
 					}),
@@ -164,7 +165,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							82954,	-- Knives in the Dark
 							82953,	-- A Cordial Invitation
 						},
-						--["provider"] = { "n", 208782 },	-- Executor Nizrek
+						["provider"] = { "n", 225024 },	-- Executor Nizrek
 						["minReputation"] = { FACTION_THE_VIZIER, 7 },
 						["coord"] = { 54.7, 33.2, NERUBAR },
 						["g"] = {
@@ -185,42 +186,52 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				["sourceQuestNumRequired"] = 1,
 			},{
 				q(81491, {	-- Armaments: Arbalests
+					["sourceQuest"] = 82645,
 					["provider"] = { "n", 224171 },	-- Eirzay
 					["coord"] = { 63.0, 38.1, NERUBAR_LOWER },
 				}),
 				q(81492, {	-- Armaments: Smithing Tools
+					["sourceQuest"] = 82646,
 					["provider"] = { "n", 224172 },	-- Eirzay
 					["coord"] = { 48.4, 60.7, AZJ_KAHET },
 				}),
 				q(81477, {	-- Armaments: Weaponry
+					["sourceQuest"] = 82644,
 					["provider"] = { "n", 224170 },	-- Eirzay
 					["coord"] = { 58.1, 39.3, NERUBAR_LOWER },
 				}),
 				q(81490, {	-- Bounty: Balaxir the Bully
+					["sourceQuest"] = 82643,
 					["provider"] = { "n", 224168 },	-- Eirzay
 					["coord"] = { 48.6, 50.5, NERUBAR_LOWER },
 				}),
 				q(81476, {	-- Bounty: Goliath
+					["sourceQuest"] = 82616,
 					["provider"] = { "n", 224166 },	-- Eirzay
 					["coord"] = { 36.1, 50.2, NERUBAR },
 				}),
 				q(81489, {	-- Bounty: Zorikal the Patron
+					["sourceQuest"] = 82581,
 					["provider"] = { "n", 224167 },	-- Eirzay
 					["coord"] = { 15.6, 45.9, NERUBAR },
 				}),
 				q(81475, {	-- Breaking the Phalanx: Royal Appointments
+					["sourceQuest"] = 82640,
 					["provider"] = { "n", 224161 },	-- Eirzay
 					["coord"] = { 43.0, 47.1, NERUBAR },
 				}),
 				q(81488, {	-- Breaking the Phalanx: Sages
+					["sourceQuest"] = 82642,
 					["provider"] = { "n", 224163 },	-- Eirzay
 					["coord"] = { 27.7, 57.8, NERUBAR },
 				}),
 				q(81487, {	-- Breaking the Phalanx: Venomblades
+					["sourceQuest"] = 82641,
 					["provider"] = { "n", 224162 },	-- Eirzay
 					["coord"] = { 30.6, 42.6, NERUBAR },
 				}),
 				q(81494, {	-- Relics of War: Rak-Zakaz
+					["sourceQuest"] = 82649,
 					["provider"] = { "n", 224176 },	-- Eirzay
 					["coord"] = { 63.8, 26.3, NERUBAR_LOWER },
 					["g"] = {
@@ -228,6 +239,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(81478, {	-- Relics of War: The Ruptired Lake
+					["sourceQuest"] = 82647,
 					["provider"] = { "n", 224173 },	-- Eirzay
 					["coord"] = { 39.5, 53.0, AZJ_KAHET },
 					["g"] = {
@@ -235,6 +247,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(81493, {	-- Relics of War: The Salien Gutter Conflict
+					["sourceQuest"] = 82648,
 					["provider"] = { "n", 224174 },	-- Eirzay
 					["coord"] = { 63.8, 26.3, NERUBAR_LOWER },
 					["g"] = {
@@ -253,6 +266,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				["sourceQuestNumRequired"] = 1,
 			},{
 				q(81495, {	-- Requisitions: Brightblooms
+					["sourceQuest"] = 82641,
 					["provider"] = { "n", 224178 },	-- Ghos'opp
 					["coord"] = { 64.2, 21.4, NERUBAR },
 					["g"] = {
@@ -262,6 +276,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(81496, {	-- Requisitions: Fangpetals
+					["sourceQuest"] = 82640,
 					["provider"] = { "n", 224179 },	-- Ghos'opp
 					["coord"] = { 49.2, 51.6, NERUBAR },
 					["g"] = {
@@ -271,6 +286,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(81479, {	-- Requisitions: Umbrashrooms
+					["sourceQuest"] = 82642,
 					-- ["provider"] = { "n", 224178 },	-- Ghos'opp	-- TODO
 					["coord"] = { 51.8, 16.5, NERUBAR },
 					["g"] = {
@@ -280,18 +296,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(81506, {	-- Sabotage: Alchemical Instruments
+					["sourceQuest"] = 82646,
 					["provider"] = { "n", 224186 },	-- Ghos'opp
 					["coord"] = { 54.6, 15.5, AZJ_KAHET },
 				}),
-				q(81506, {	-- Sabotage: Transformatory Vessels
+				q(81481, {	-- Sabotage: Transformatory Vessels
+					["sourceQuest"] = 82644,
 					["provider"] = { "n", 224183 },	-- Ghos'opp
 					["coord"] = { 64.5, 87.3, AZJ_KAHET },
 				}),
 				q(81505, {	-- Sabotage: Venomancers
+					["sourceQuest"] = 82645,
 					["provider"] = { "n", 224184 },	-- Ghos'opp
 					["coord"] = { 39.5, 51.4, AZJ_KAHET },
 				}),
 				q(81482, {	-- Testing Formulae: Gelatinous Unguent
+					["sourceQuest"] = 82647,
 					["provider"] = { "n", 224187 },	-- Ghos'opp
 					["coord"] = { 50.6, 46.8, NERUBAR },
 					["g"] = {
@@ -299,6 +319,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(81502, {	-- Testing Formulae: Malodorous Philter
+					["sourceQuest"] = 82649,
 					["provider"] = { "n", 224189 },	-- Ghos'opp
 					["coord"] = { 30.9, 23.0, NERUBAR },
 					["g"] = {
@@ -306,6 +327,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(81501, {	-- Testing Formulae: Roiling Elixir
+					["sourceQuest"] = 82648,
 					["provider"] = { "n", 224188 },	-- Ghos'opp
 					["coord"] = { 47.8, 9.6, NERUBAR },
 					["g"] = {
@@ -313,6 +335,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(81480, {	-- Wild Reagents: Maddening Deep
+					["sourceQuest"] = 82616,
 					["provider"] = { "n", 224180 },	-- Ghos'opp
 					["coord"] = { 48.4, 61.9, AZJ_KAHET },
 					["g"] = {
@@ -320,6 +343,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(81497, {	-- Wild Reagents: Salien Gutters
+					["sourceQuest"] = 82581,
 					["provider"] = { "n", 224181 },	-- Ghos'opp
 					["coord"] = { 61.1, 74.7, AZJ_KAHET },
 					["g"] = {
@@ -327,6 +351,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(81498, {	-- Wild Reagents: Twitching Gorge
+					["sourceQuest"] = 82643,
 					--["provider"] = { "n", 224181 },	-- Ghos'opp TODO
 					["coord"] = { 47.1, 58.7, AZJ_KAHET },
 					["g"] = {
@@ -346,6 +371,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				["cost"] = {{"i",228949,1}},	-- Rumor Map
 			},{
 				q(80573, {	-- Dropping Eaves: Spoils of War
+					["sourceQuest"] = 82616,
 					-- ["provider"] = { "n", 224196 },	-- Ru'murh	-- TODO
 					["coord"] = { 55, 26.3, NERUBAR },
 					["g"] = {
@@ -360,6 +386,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(81471, {	-- Dropping Eaves: Saving the Past
+					["sourceQuest"] = 82643,
 					["provider"] = { "n", 224195 },	-- Ru'murh
 					["coord"] = { 73.3, 50.9, NERUBAR },
 					["g"] = {
@@ -367,6 +394,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(81470, {	-- Dropping Eaves: Thieving Weave
+					["sourceQuest"] = 82581,
 					["provider"] = { "n", 224194 },	-- Ru'murh
 					["coord"] = { 70.3, 31.8, NERUBAR },
 					["g"] = {
@@ -374,18 +402,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(81499, {	-- Information Control: Ascended Intrigue
+					["sourceQuest"] = 82646,
 					["provider"] = { "n", 224198 },	-- Ru'murh
 					["coord"] = { 54.8, 34.7, NERUBAR },
 				}),
 				q(81472, {	-- Information Control: Ansurek's Truth
+					["sourceQuest"] = 82645,
 					["provider"] = { "n", 224197 },	-- Ru'murh
 					["coord"] = { 39.8, 26.6, NERUBAR },
 				}),
 				q(81473, {	-- Information Control: The Right Side of History
+					["sourceQuest"] = 82644,
 					["provider"] = { "n", 224196 },	-- Ru'murh
 					["coord"] = { 77.8, 53.9, NERUBAR },
 				}),
 				q(81504, {	-- Infiltration: Hidden Figures
+					["sourceQuest"] = 82649,
 					["provider"] = { "n", 224201 },	-- Ru'murh
 					["coord"] = { 76.2, 47.4, AZJ_KAHET },
 					["g"] = {
@@ -393,10 +425,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(81483, {	-- Infiltration: Production Blocker
+					["sourceQuest"] = 82647,
 					["provider"] = { "n", 224199 },	-- Ru'murh
 					["coord"] = { 45.6, 51.0, NERUBAR_LOWER },
 				}),
 				q(81503, {	-- Infiltration: Terror Made Manifest
+					["sourceQuest"] = 82648,
 					--["provider"] = { "n", 224199 },	-- Ru'murh TODO
 					["coord"] = { 64.2, 75.3, AZJ_KAHET },
 					["g"] = {
@@ -404,7 +438,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(81484, {	-- Wet Work: Death of a Salesman
-					["sourceQuest"] = 82581,
+					["sourceQuest"] = 82641,
 					["provider"] = { "n", 224201 },	-- Ru'murh
 					["coord"] = { 68.5, 51, NERUBAR },
 					["g"] = {
@@ -412,15 +446,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(81500, {	-- Wet Work: Step Into Their Parlor
-					["sourceQuest"] = 82581,
+					["sourceQuest"] = 82642,
 					--["provider"] = { "n",  },	-- Ru'murh
 					["coord"] = { 79.6, 56.5, NERUBAR },
 					["g"] = {
 						i(219293),	-- Sureki Intelligence (QI!)
 					},
 				}),
-				q(81484, {	-- Wet Work: Tithe to Kill
-					--["sourceQuest"] = 82581,	TODO
+				q(81555, {	-- Wet Work: Tithe to Kill
+					["sourceQuest"] = 82640,
 					--["provider"] = { "n", 224201 },	-- Ru'murh
 					["coord"] = { 41.5, 22.4, NERUBAR },
 					["g"] = {
@@ -644,23 +678,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(THE_SEVERED_THREADS, {
 		n(SEVERED_THREADS_PACT, {
-			-- Reps with zone dudes, probably gonna need to move into expansion feature?
 			-- General --
 			q(81601),	-- [DNT] General - Level 1 Unlock (spellID 443677)
 			q(81602),	-- [DNT] General - Level 2 Unlock (spellID 443679)
 			q(81626),	-- [DNT] General - Level 2 Unlock (spellID 443679) (???)
 			q(81603),	-- [DNT] General - Level 3 Unlock (spellID 443680)
-			--q(XX),	-- Triggered on General Rank 4/9
-			q(84530),	-- Triggered on General Rank 6/9
-			q(84531),	-- Triggered on General Rank 7/9
+			q(81604),	-- [DNT] General - Level 4 Unlock (spellID 443681)
+			q(84530),	-- [DNT] General - Level 5 Unlock (spellID 462466)
+			q(84531),	-- [DNT] General - Level 6 Unlock (spellID 462468)
+			q(84532),	-- [DNT] General - Level 7 Unlock (spellID 462470)
+			q(84533),	-- [DNT] General - Level 8 Unlock (spellID 462471)
 			-- Vizier --
 			q(81605),	-- [DNT] Vizier - Level 1 Unlock (spellID 443682) & [DNT] Vizier - Level 4 Unlock (spellID 443686) (???)
 			q(81606),	-- [DNT] Vizier - Level 2 Unlock (spellID 443683)
 			q(81607),	-- [DNT] Vizier - Level 3 Unlock (spellID 443684)
 			q(84534),	-- [DNT] Vizier - Level 5 Unlock (spellID 462473)
-			--q(84534),	-- Triggered on Vizier Rank 6/9 (???)
-			q(84535),	-- Triggered on Vizier Rank 7/9
-			q(84536),	-- Triggered on Vizier Rank 8/9
+			q(84535),	-- [DNT] Vizier - Level 6 Unlock (spellID 462474)
+			q(84536),	-- [DNT] Vizier - Level 7 Unlock (spellID 462475)
+			q(84537),	-- [DNT] Vizier - Level 8 Unlock (spellID 462476)
 			-- Weaver --
 			q(81597),	-- [DNT] Weaver - Level 1 Unlock (spellID 443033)
 			q(81598),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674)
@@ -673,17 +708,17 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(84541),	-- [DNT] Weaver - Level 8 Unlock (spellID 462493)
 			--'Push quest', should be probably be weekly, since you can 'normaly' choose dude once per week (TODO: re-format it)
 			q(82645),	-- pop questIDs: 81491 (General), 81505 (Vizier), 81472 (Weaver)
-			q(82646),	-- pop questIDs: 81492 (General), 81499 (?), 81506 (?)
-			q(82644),	-- pop questIDs: 81477 (General), 81473 (?), 81481 (?)
+			q(82646),	-- pop questIDs: 81492 (General), 81499 (Weaver), 81506 (Vizier)
+			q(82644),	-- pop questIDs: 81477 (General), 81473 (Weaver), 81481 (Vizier)
 			q(82643),	-- pop questIDs: 81490 (General), 81498 (Vizier), 81471 (Weaver)
 			q(82616),	-- pop questIDs: 81476 (General), 81480 (Vizier), 80573 (Weaver)
 			q(82581),	-- pop questIDs: 81489 (General), 81497 (Vizier), 81470 (Weaver)
-			q(82640),	-- pop questIDs: 81475 (General), 81555 (?), 81496 (?)
-			q(82642),	-- pop questIDs: 81488 (General), 81500 (?), 81479 (?)
-			q(82641),	-- pop questIDs: 81487 (General), 81484 (?), 81495 (?)
+			q(82640),	-- pop questIDs: 81475 (General), 81555 (Weaver), 81496 (Vizier)
+			q(82642),	-- pop questIDs: 81488 (General), 81500 (Weaver), 81479 (Vizier)
+			q(82641),	-- pop questIDs: 81487 (General), 81484 (Weaver), 81495 (Vizier)
 			q(82649),	-- pop questIDs: 81494 (General), 81502 (Vizier), 81504 (Weaver)
 			q(82647),	-- pop questIDs: 81478 (General), 81482 (Vizier), 81483 (Weaver)
-			q(82648),	-- pop questIDs: 81493 (General), 81503 (?), 81501 (?)
+			q(82648),	-- pop questIDs: 81493 (General), 81503 (Weaver), 81501 (Vizier)
 			--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224191 @ 68.5, 51.1), start questID 81484 (Wet Work: Death of a Salesman)
 			--q(82645),	-- 'Listen to the rumor' from Eirzay (n: 224171 @ 63.0, 38.1, 2216), start questID 81491 (Armaments: Arbalests)
 			--q(82646),	-- 'Listen to the rumor' from Eirzay (n: 224172 @ 48.4, 60.7), start questID 81492 (Armaments: Smithing Tools)

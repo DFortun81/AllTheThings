@@ -120,10 +120,3 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 		})),
 	}),
 })));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
-	n(THE_SEVERED_THREADS, {
-		n(QUESTS, {
-			q(81604),	-- Triggered on renown 25
-		}),
-	}),
-})));
