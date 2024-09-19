@@ -13,7 +13,12 @@ CURIO = createHeader({
 	},
 });
 local UNDERCOIN = 2803;
-local MAPS = {
+local NERUBIAN_DELVES = { EARTHCRAWL_MINES, SKITTERING_BREACH, THE_DREAD_PIT, THE_SPIRAL_WEAVE, THE_UNDERKEEP };
+local FUNGARIAN_DELVES = { FUNGAL_FOLLY, MYCOMANCER_CAVERN };
+local KOBOLD_DELVES = { KRIEGVALS_REST, THE_WATERWORKS };
+local SHADOW_DELVES = { NIGHTFALL_SANCTUM };
+local KOBYSS_DELVES = { TAK_RETHAN_ABYSS, THE_SINKHOLE };
+local ALL_REGULAR_DELVES = {
 	EARTHCRAWL_MINES,
 	FUNGAL_FOLLY,
 	KRIEGVALS_REST,
@@ -26,14 +31,30 @@ local MAPS = {
 	THE_SPIRAL_WEAVE,
 	THE_UNDERKEEP,
 	THE_WATERWORKS,
-}
+};
+local ALL_THE_DELVES = {
+	EARTHCRAWL_MINES,
+	FUNGAL_FOLLY,
+	KRIEGVALS_REST,
+	MYCOMANCER_CAVERN,
+	NIGHTFALL_SANCTUM,
+	SKITTERING_BREACH,
+	TAK_RETHAN_ABYSS,
+	THE_DREAD_PIT,
+	THE_SINKHOLE,
+	THE_SPIRAL_WEAVE,
+	THE_UNDERKEEP,
+	THE_WATERWORKS,
+	ZEKVIRS_LAIR
+};
 local mapped = function(t)
-	t.maps = MAPS
+	if not t.maps then
+		t.maps = ALL_REGULAR_DELVES
+	end
 	return t
 end
 root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	mapped(n(ACHIEVEMENTS, {
-		-- TODO: Some of these aren't actually obtainable in all delves, needs refining
 		ach(40817),		-- A Delver's Bounty
 		ach(40538, {	-- Brann Development
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
@@ -55,7 +76,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40447),	-- Delver of the Depths II (automated)
 		ach(40448),	-- Delver of the Depths III (automated)
 		ach(40449),	-- Delver of the Depths IV (automated)
-		ach(40454),	-- Daystormer
+		ach(40454, {	-- Daystormer
+			["maps"] = SHADOW_DELVES,
+		}),
 		ach(40460),	-- Delve Deep
 		ach(40462),	-- Delve Deeper
 		ach(40463),	-- Delve Deepest
@@ -95,16 +118,22 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			},
 		}),
 		ach(40524),	-- Good Deed Delver
-		ach(40732),	-- Heavy-Handed
+		ach(40732, {	-- Heavy-Handed
+			["maps"] = ALL_THE_DELVES,
+		}),
 		ach(40098, {	-- Immortal Spelunker
 			title(549),	-- Immortal Spelunker <Name>
 		}),
 		ach(40763),	-- I'm not a Thief, I'm a Treasure Hunter
-		ach(40446),	-- I TAKE Candle!
+		ach(40446, {	-- I TAKE Candle!
+			["maps"] = KOBOLD_DELVES,
+		}),
 		ach(40459),	-- I've Got a Flying Machine!
 		ach(40789),	-- I've Got More Flying Machine?! (automated)
 		ach(40788),	-- I Got the Keys
-		ach(40452),	-- Just Keep Swimming
+		ach(40452, {	-- Just Keep Swimming
+			["maps"] = KOBYSS_DELVES,
+		}),
 		ach(40506, {	-- Leave No Treasure Unfound
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -136,8 +165,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		ach(40458),	-- Rare Finding
 		ach(40819),	-- Ready to Turn
-		ach(40453),	-- Spider Senses
-		ach(40445),	-- Sporesweeper
+		ach(40453, {	-- Spider Senses
+			["maps"] = NERUBIAN_DELVES,
+		}),
+		ach(40445, {	-- Sporesweeper
+			["maps"] = FUNGARIAN_DELVES,
+		}),
 		ach(40885),	-- The Key to Madness
 		ach(40100),	-- Undying Caver
 		ach(40725, {	-- War Within Delves: Endgame (automated)
