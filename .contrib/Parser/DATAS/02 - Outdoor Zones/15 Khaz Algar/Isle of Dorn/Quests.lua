@@ -93,15 +93,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78531,	-- Urgent Recovery
 					},
 					["provider"] = { "n", 211994 },	-- Lady Jaina Proudmoore
+					["lockCriteria"] = { 1, "questID", 78532 },	-- Erratic Artifacts
 					["coord"] = { 29.5, 55.0, ISLE_OF_DORN },
 					["isBreadcrumb"] = true,
 				}),
 				q(78532, {	-- Erratic Artifacts
-					["sourceQuests"] = {
-						78529,	-- Violet Impact
-						80334,	-- Shattered Spires
-					},
-					["sourceQuestNumRequired"] = 1,
+					["sourceQuests"] = { 78529 },	-- Violet Impact
 					["provider"] = { "n", 223166 },	-- Archmage Aethas Sunreaver
 					["coord"] = { 30.1, 55.1, ISLE_OF_DORN },
 					["g"] = {
