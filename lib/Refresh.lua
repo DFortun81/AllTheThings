@@ -247,6 +247,57 @@ local function FixNonOneTimeQuests(accountWideData)
 	end
 end
 
+local OneTimeFixFunctions = {
+	-- ref. https://github.com/DFortun81/AllTheThings/commit/d1b02b8021a7f2aa80c03d212a2ea54a443e9117
+	Spell148972 = function()
+		local ATTCharacterData = app.LocalizeGlobalIfAllowed("ATTCharacterData", true);
+		local found
+		for charGuid,charData in pairs(ATTCharacterData) do
+			if charData.Spells and charData.Spells[148972] then
+				charData.Spells[148972] = nil
+				found = true
+			end
+		end
+		if found then
+			app.print(app.Modules.Color.Colorize("One-Time removal for inaccurate cached data performed!", app.Colors.Account),
+						"If any character knows",
+						app:Linkify("this Thing (Spell 148972)", app.Colors.ChatLink,"search:spellID:148972"),
+						"they will need to log in to properly re-collect in ATT")
+		end
+	end,
+	-- ref. https://github.com/DFortun81/AllTheThings/commit/d1b02b8021a7f2aa80c03d212a2ea54a443e9117
+	Spell241857 = function()
+		local ATTCharacterData = app.LocalizeGlobalIfAllowed("ATTCharacterData", true);
+		local found
+		for charGuid,charData in pairs(ATTCharacterData) do
+			if charData.Spells and charData.Spells[241857] then
+				charData.Spells[241857] = nil
+				found = true
+			end
+		end
+		if found then
+			app.print(app.Modules.Color.Colorize("One-Time removal for inaccurate cached data performed!", app.Colors.Account),
+						"If any character knows",
+						app:Linkify("this Thing (Spell 241857)", app.Colors.ChatLink,"search:spellID:241857"),
+						"they will need to log in to properly re-collect in ATT")
+		end
+	end,
+}
+
+local function OneTimeFixes(accountWideData)
+	if not accountWideData.OneTimeFixes then accountWideData.OneTimeFixes = {} end
+	local appliedFixes = accountWideData.OneTimeFixes
+
+	for fix,func in pairs(OneTimeFixFunctions) do
+		if not appliedFixes[fix] then
+			appliedFixes[fix] = 1
+			func(accountWideData)
+		end
+	end
+
+	OneTimeFixFunctions = nil
+end
+
 local function CheckOncePerAccountQuestsForCharacter(accountWideData)
 	-- Double check if any once-per-account quests which haven't been detected as being completed are completed by this character
 	local acctQuests, oneTimeQuests = accountWideData.Quests, accountWideData.OneTimeQuests;
@@ -305,6 +356,7 @@ end)
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	ATTAccountWideData = accountWideData
 	FixNonOneTimeQuests(accountWideData)
+	OneTimeFixes(accountWideData)
 end)
 
 else	-- Classic
