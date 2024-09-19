@@ -335,5 +335,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 			},
 		}),
+		-- Reward for winning Epic Battleground
+		i(225772, {	-- Artisan's Consortium Advertisement (QS!/QI!)
+			["timeline"] = { ADDED_10_0_7 },
+		}),
 	})),
 })));

@@ -12,6 +12,7 @@ i(3914);	-- neyman's Backpack \\ Journeyman's Backpack
 i(102144);	-- Kor'kron Cage Key
 i(180786);	-- Empty Binding
 -- Legion
+i(139398);	-- Pant Loaf \\ Loaf
 i(147348);	-- Bulky Armor Set \\ y Armor Set
 i(147349);	-- Spiked Armor Set \\ ed Armor Set
 -- BFA Minor Visions

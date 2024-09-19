@@ -1240,7 +1240,6 @@ root(ROOTS.Unsorted, {
 			}),
 			n(PROFESSIONS, {
 				i(211494),	-- Spark of Beginnings
-				i(225772),	-- Artisan's Consortium Advertisement
 				i(228224),	-- Spark of Legacies
 				-- NYI Profession --
 				i(219500),	-- Fang Adornments
@@ -1317,12 +1316,6 @@ root(ROOTS.Unsorted, {
 			n(WEAPONS, {
 				-- These exist... Someone need to investigate and also see itemID: 218126 that Alex sourced//Braghe
 				i(218125),	-- Reactive Webbed Escutcheon
-			}),
-
-			n(QUESTS, {
-				q(83489, {
-					["_drop"] = {"g"},
-				}),
 			}),
 			explorationHeader({
 				exploration(14484),	-- 10.2 Devland
