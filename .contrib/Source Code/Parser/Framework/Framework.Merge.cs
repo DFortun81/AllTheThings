@@ -464,6 +464,22 @@ namespace ATT
                             }
                             break;
                         }
+                    case "GlyphDB":
+                        {
+                            // The format of the Glyph DB is a dictionary of Glyph ID <-> Spell ID pairs.
+                            if (pair.Value is Dictionary<long, object> db)
+                            {
+                                foreach (var keyValuePair in db)
+                                {
+                                    GlyphDB[keyValuePair.Key] = Convert.ToInt64(keyValuePair.Value);
+                                }
+                            }
+                            else
+                            {
+                                ThrowBadFormatDB("GlyphDB");
+                            }
+                            break;
+                        }
                     case "ObjectDB":
                         {
                             // The format of the Object DB is a dictionary of Object ID <-> Object pairs.

@@ -8,6 +8,7 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using static ATT.Export;
@@ -536,6 +537,11 @@ namespace ATT
         /// NOTE: This is exclusively used for text localizations.
         /// </summary>
         internal static Dictionary<long, Dictionary<string, object>> FlightPathDB { get; private set; } = new Dictionary<long, Dictionary<string, object>>();
+
+        /// <summary>
+        /// All of the glyphs that have been loaded into the database.
+        /// </summary>
+        internal static Dictionary<long, long> GlyphDB { get; private set; } = new Dictionary<long, long>();
 
         /// <summary>
         /// All of the objects that have been loaded into the database.
@@ -2826,6 +2832,28 @@ namespace ATT
                             localeBuilder.AppendLine("});");
                         }
                     }
+
+                    // Append the file content to our localization database.
+                    localizationDatabase.AppendLine(builder.ToString());
+                }
+
+                // Export the Glyph DB file.
+                if (GlyphDB.Any())
+                {
+                    var builder = new StringBuilder("-- Glyphs Database Module").AppendLine();
+
+                    // Sort the list by glyphID...
+                    var keys = GlyphDB.Keys.ToList();
+                    keys.Sort();
+                    builder.AppendLine("_.GlyphDB = {");
+                    foreach (var key in keys)
+                    {
+                        if (GlyphDB.TryGetValue(key, out var spellID))
+                        {
+                            ExportObjectKeyValue(builder, key, spellID).AppendLine();
+                        }
+                    }
+                    builder.AppendLine("}");
 
                     // Append the file content to our localization database.
                     localizationDatabase.AppendLine(builder.ToString());

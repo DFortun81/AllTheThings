@@ -5097,11 +5097,31 @@ local ADDON_LOADED_HANDLERS = {
 				return 2;
 			end
 		end
+		-- Allows directly saving a cached state for a table of ids for a given field at the Account level
+		-- Note: This does not include reporting of collected things. It should be used in situations where this is not desired (onstartup refresh, etc.)
+		local function SetBatchAccountCached(field, ids, state)
+			-- app.PrintDebug("SBAC:A",field,state)
+			local container = accountWideData[field]
+			for id,_ in pairs(ids) do
+				container[id] = state
+			end
+		end
+		-- Allows directly saving a cached state for a table of ids for a given field.
+		-- Note: This does not include reporting of collected things. It should be used in situations where this is not desired (onstartup refresh, etc.)
+		local function SetBatchCached(field, ids, state)
+			-- app.PrintDebug("SBC",field,state)
+			local container = currentCharacter[field]
+			for id,_ in pairs(ids) do
+				container[id] = state
+			end
+		end
 		app.IsAccountCached = IsAccountCached;
 		app.SetAccountCollected = SetAccountCollected;
 		app.SetAccountCollectedForSubType = SetAccountCollectedForSubType;
 		app.SetCollected = SetCollected;
 		app.SetCollectedForSubType = SetCollectedForSubType;
+		app.SetBatchAccountCached = SetBatchAccountCached;
+		app.SetBatchCached = SetBatchCached;
 		
 		-- Notify Event Handlers that Saved Variable Data is available.
 		app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, accountWideSettings);
