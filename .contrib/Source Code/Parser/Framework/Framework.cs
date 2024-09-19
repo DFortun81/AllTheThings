@@ -3000,12 +3000,7 @@ namespace ATT
                     .AppendLine("local simplifiedLocale = GetLocale():sub(1,2);");
                 bool containsCN = localizationByLocale.TryGetValue("cn", out StringBuilder cnBuilder) && cnBuilder.Length > 0;
                 bool containsTW = localizationByLocale.TryGetValue("tw", out StringBuilder twBuilder) && twBuilder.Length > 0;
-                if (containsCN && containsTW)
-                {
-                    // If both are supported, we need to export it differently. Remove it from the list of locales for now.
-                    localeKeys.Remove("cn");
-                    localeKeys.Remove("tw");
-                }
+                localeKeys.Remove("cn"); localeKeys.Remove("tw");
                 foreach (var localeKey in localeKeys)
                 {
                     if (localizationByLocale.TryGetValue(localeKey, out StringBuilder builder) && builder.Length > 0)
@@ -3015,14 +3010,17 @@ namespace ATT
                         localizationDatabase.AppendLine("end");
                     }
                 }
-                if (containsCN && containsTW)
+                if (containsCN || containsTW)
                 {
                     // If both are supported, we need to export it nested so that TW inherits the values from CN, but can still override the exported localization data.
-                    localizationDatabase.AppendLine("if simplifiedLocale == \"cn\" then");
-                    localizationDatabase.Append(cnBuilder.ToString());
-                    localizationDatabase.AppendLine("if GetLocale():sub(3,4):lower() == \"tw\" then");
-                    localizationDatabase.Append(twBuilder.ToString());
-                    localizationDatabase.AppendLine("end");
+                    localizationDatabase.AppendLine("if simplifiedLocale == \"zh\" then");
+                    if (containsCN) localizationDatabase.Append(cnBuilder.ToString());
+                    if (containsTW)
+                    {
+                        localizationDatabase.AppendLine("if GetLocale():sub(3,4):lower() == \"tw\" then");
+                        localizationDatabase.Append(twBuilder.ToString());
+                        localizationDatabase.AppendLine("end");
+                    }
                     localizationDatabase.AppendLine("end");
                 }
 

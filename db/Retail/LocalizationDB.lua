@@ -39470,7 +39470,7 @@ localize(_.ObjectNames, {
 	[13000037] = "|cFFFFFFFFStep 8:|r 군체의식",
 });
 end
-if simplifiedLocale == "cn" then
+if simplifiedLocale == "zh" then
 localize(L.HEADER_NAMES, {
 	[-1000000] = "东部",
 	[-1000001] = "北部",
