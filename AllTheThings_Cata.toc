@@ -72,7 +72,6 @@ src\Modules\Vignette.lua
 # Expansion specific localization files
 db\Cata\ExplorationDB.lua
 db\Cata\LocalizationDB.lua
-# db\Cata\en_auto.lua
 # db\Cata\ReagentsDB.lua
 db\Presets.lua
 db\AccountWideQuestsDB.lua

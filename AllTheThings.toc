@@ -81,7 +81,6 @@ src\Modules\Contributor.lua
 # Expansion specific localization files
 db\Retail\ExplorationDB.lua
 db\Retail\LocalizationDB.lua
-db\Retail\en_auto.lua
 db\Presets.lua
 
 # Load object class templates
@@ -147,5 +146,4 @@ db\Retail\Categories.lua
 # src\UI\Windows\Windows.xml
 
 # Finally, prepare the Data Cache
-# Not used in Retail?
 # src\Root.lua

@@ -72,7 +72,6 @@ src\Modules\Vignette.lua
 # Expansion specific localization files
 db\Wrath\ExplorationDB.lua
 db\Wrath\LocalizationDB.lua
-# db\Wrath\en_auto.lua
 # db\Wrath\ReagentsDB.lua
 db\Presets.lua
 db\AccountWideQuestsDB.lua

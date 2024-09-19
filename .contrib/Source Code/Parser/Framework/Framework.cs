@@ -2993,6 +2993,43 @@ namespace ATT
                     localizationDatabase.AppendLine(builder.ToString());
                 }
 
+                // Export the Automatic Localizations (previously en_auto.lua)
+                // CRIEVE NOTE: I don't fully grasp what this accomplishes that a custom header doesn't already, but I'll leave it alone for now.
+                if (NAMES_BY_TYPE.Any())
+                {
+                    var AllLocaleTypes = new SortedDictionary<string, SortedDictionary<long, string>>();
+                    foreach (var localeKey in NAMES_BY_TYPE)
+                    {
+                        if (AutoLocalizeType(localeKey.Key))
+                        {
+                            AllLocaleTypes.Add(localeKey.Key,
+                                new SortedDictionary<long, string>(localeKey.Value));
+                        }
+                    }
+
+                    if (AllLocaleTypes.Any())
+                    {
+                        bool hasRequirements = !string.IsNullOrEmpty(DATA_REQUIREMENTS);
+                        StringBuilder builder = new StringBuilder(10000);
+                        builder.AppendLine("-- Automatic Types");
+                        if (hasRequirements) builder.AppendLine($"if ({DATA_REQUIREMENTS}) then");
+                        foreach (var localeTypePair in AllLocaleTypes)
+                        {
+                            builder.Append("L.").Append(localeTypePair.Key.ToUpper().Replace("ID", string.Empty) + "_NAMES").AppendLine(" = {");
+                            foreach (var localePair in localeTypePair.Value)
+                            {
+
+                                ExportStringKeyValue(builder, localePair.Key, localePair.Value).AppendLine();
+                            }
+                            builder.AppendLine("}");
+                        }
+                        if (hasRequirements) builder.AppendLine("end");
+
+                        // Append the file content to our localization database.
+                        localizationDatabase.AppendLine(builder.ToString());
+                    }
+                }
+
                 // Now write the localization for each locale to the localization database builder.
                 var localeKeys = localizationByLocale.Keys.ToList();
                 SortSupportedLocales(localeKeys);
@@ -3045,8 +3082,6 @@ namespace ATT
 
                 CurrentParseStage = ParseStage.ExportAutoSources;
                 Objects.ExportAutoItemSources(Config["root-data"] ?? "./DATAS");
-                CurrentParseStage = ParseStage.ExportAutoLocale;
-                Objects.ExportAutoLocale(Path.Combine(addonRootFolder, $"db/{dbRootFolder}en_auto.lua"));
 
                 // Attempt to find some dirty objects and write them to a dynamic file.
                 var dirtyObjectsFilePath = Path.Combine(Config["root-data"] ?? "./DATAS", "00 - DB/Dynamic/", $"DynamicObjectDB_{DateTime.UtcNow.Ticks}.lua");
