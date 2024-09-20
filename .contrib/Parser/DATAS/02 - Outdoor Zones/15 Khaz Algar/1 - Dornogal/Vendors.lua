@@ -72,7 +72,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 				},
 			}),
-			n(207496, {	-- Kargand <Stable Master>
+			n(219376, {	-- Kargand <Stable Master>
 				["coord"] = { 55.4, 67.1, DORNOGAL },
 				["sym"] = {{"sub", "common_vendor", 219230}},	-- Erani <Pet Charm Trader>
 			}),
