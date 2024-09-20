@@ -469,6 +469,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				i(226222),	-- Webbed Hookshot (QI!)
 			}),
 			filter(COSMETIC, {
+				i(212172),	-- Ajul'Nerub Raptorial Spine
 				i(225066),	-- Trail Blazer's Haversack
 			}),
 			n(QUESTS, {
