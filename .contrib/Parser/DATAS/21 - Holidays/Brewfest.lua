@@ -178,6 +178,19 @@ local BREWFEST_VENDOR_OnTooltip = [[function(t, tooltipInfo)
 	end
 end]];
 
+-- #if ANYCLASSIC
+-- The 353 ilvl gear was added for Brewfest 2024 in Cataclysm Classic
+local BREWFEST_2024_OnUpdate = [[function(t)
+	if _.Settings:GetUnobtainableFilter(]] .. CATA_PHASE_HOUR_OF_TWILIGHT .. [[) then
+		t.u = ]] .. REMOVED_FROM_GAME .. [[;
+		t.rwp = nil;
+	else
+		t.u = ]] .. CATA_PHASE_ONE .. [[;
+		t.rwp = 40300;
+	end
+end]];
+-- #endif
+
 root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 	n(ACHIEVEMENTS, {
 		ach(18579, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- A Round on the House
@@ -581,9 +594,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					})),
 					applyclassicphase(CATA_PHASE_ONE, i(232030, {	-- Direbrew's Bloodied Shanker [Level 85, ilvl 353]
 						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+						["OnUpdate"] = BREWFEST_2024_OnUpdate,
 					})),
 					applyclassicphase(CATA_PHASE_ONE, i(232031, {	-- Tremendous Tankard O'Terror [Level 85, ilvl 353]
 						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+						["OnUpdate"] = BREWFEST_2024_OnUpdate,
 					})),
 					-- #else
 					i(71331, {	-- Direbrew's Bloodied Shanker [Level 85]
@@ -676,22 +691,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			
 			-- The idiots at Blizzard decided that they wanted to give people 353 ilvl stuff from Coren in Cataclysm Classic.
 			applyclassicphase(CATA_PHASE_ONE, i(232017, {	-- Bitterer Balebrew Charm [Level 85, ilvl 353]
-				["timeline"] = { ADDED_4_0_1, REMOVED_4_3_0 },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["OnUpdate"] = BREWFEST_2024_OnUpdate,
 			})),
 			applyclassicphase(CATA_PHASE_ONE, i(232015, {	-- Brawler's Trophy [Level 85, ilvl 353]
-				["timeline"] = { ADDED_4_0_1, REMOVED_4_3_0 },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["OnUpdate"] = BREWFEST_2024_OnUpdate,
 			})),
 			applyclassicphase(CATA_PHASE_ONE, i(232016, {	-- Bubblier Brightbrew Charm [Level 85, ilvl 353]
-				["timeline"] = { ADDED_4_0_1, REMOVED_4_3_0 },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["OnUpdate"] = BREWFEST_2024_OnUpdate,
 			})),
 			applyclassicphase(CATA_PHASE_ONE, i(232012, {	-- Coren's Chilled Chromium Coaster [Level 85, ilvl 353]
-				["timeline"] = { ADDED_4_0_1, REMOVED_4_3_0 },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["OnUpdate"] = BREWFEST_2024_OnUpdate,
 			})),
 			applyclassicphase(CATA_PHASE_ONE, i(232013, {	-- Mithril Stopwatch [Level 85, ilvl 353]
-				["timeline"] = { ADDED_4_0_1, REMOVED_4_3_0 },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["OnUpdate"] = BREWFEST_2024_OnUpdate,
 			})),
 			applyclassicphase(CATA_PHASE_ONE, i(232014, {	-- Petrified Pickled Egg [Level 85, ilvl 353]
-				["timeline"] = { ADDED_4_0_1, REMOVED_4_3_0 },
+				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+				["OnUpdate"] = BREWFEST_2024_OnUpdate,
 			})),
 			-- #else
 			i(71333, {	-- Bitterer Balebrew Charm [Level 85]
