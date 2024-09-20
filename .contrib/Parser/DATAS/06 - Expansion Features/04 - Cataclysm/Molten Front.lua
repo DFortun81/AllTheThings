@@ -317,11 +317,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 					["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
 				}),
-				q(29139, {	-- Agressive Growth
+				q(29139, {	-- Aggressive Growth
 					["qg"] = 52467,	-- Rayne Feathersong
-					["coord"] = { 48.5, 86.2, THE_MOLTEN_FRONT },
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["coord"] = { 48.5, 86.2, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/5 Smothervine planted
+							["providers"] = {
+								{ "o", 208545 },	-- Ash Pile
+								{ "i", 69749 },	-- Smothervine Seeds
+								{ "n", 53107 },	-- Smothervine
+							},
+						}),
+					},
 				}),
 				q(29244, {	-- A Lieutenant of Flame
 					["u"] = REMOVED_FROM_GAME,
