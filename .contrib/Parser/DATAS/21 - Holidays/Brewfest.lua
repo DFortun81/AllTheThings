@@ -571,12 +571,28 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					i(107218, {	-- Tremendous Tankard O'Terror [Level 90]
 						["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 					}),
+					-- #if ANYCLASSIC
+					-- The idiots at Blizzard decided that they wanted to give people 353 ilvl stuff from Coren in Cataclysm Classic.
+					applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(71331, {	-- Direbrew's Bloodied Shanker [Level 85, ilvl 365]
+						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+					})),
+					applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(71332, {	-- Tremendous Tankard O'Terror [Level 85, ilvl 365]
+						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+					})),
+					applyclassicphase(CATA_PHASE_ONE, i(232030, {	-- Direbrew's Bloodied Shanker [Level 85, ilvl 353]
+						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+					})),
+					applyclassicphase(CATA_PHASE_ONE, i(232031, {	-- Tremendous Tankard O'Terror [Level 85, ilvl 353]
+						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
+					})),
+					-- #else
 					i(71331, {	-- Direbrew's Bloodied Shanker [Level 85]
 						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 					}),
 					i(71332, {	-- Tremendous Tankard O'Terror [Level 85]
 						["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 					}),
+					-- #endif
 					i(49120, {	-- Direbrew's Bloody Shanker [Level 80]
 						["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
 					}),
@@ -638,6 +654,46 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["timeline"] = { ADDED_5_0_4, REMOVED_6_0_2 },
 			}),
 			-- Cataclysm
+			-- #if ANYCLASSIC
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(71333, {	-- Bitterer Balebrew Charm [Level 85, ilvl 365]
+				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+			})),
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(71338, {	-- Brawler's Trophy [Level 85, ilvl 365]
+				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+			})),
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(71334, {	-- Bubblier Brightbrew Charm [Level 85, ilvl 365]
+				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+			})),
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(71335, {	-- Coren's Chilled Chromium Coaster [Level 85, ilvl 365]
+				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+			})),
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(71337, {	-- Mithril Stopwatch [Level 85, ilvl 365]
+				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+			})),
+			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(71336, {	-- Petrified Pickled Egg [Level 85, ilvl 365]
+				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
+			})),
+			
+			-- The idiots at Blizzard decided that they wanted to give people 353 ilvl stuff from Coren in Cataclysm Classic.
+			applyclassicphase(CATA_PHASE_ONE, i(232017, {	-- Bitterer Balebrew Charm [Level 85, ilvl 353]
+				["timeline"] = { ADDED_4_0_1, REMOVED_4_3_0 },
+			})),
+			applyclassicphase(CATA_PHASE_ONE, i(232015, {	-- Brawler's Trophy [Level 85, ilvl 353]
+				["timeline"] = { ADDED_4_0_1, REMOVED_4_3_0 },
+			})),
+			applyclassicphase(CATA_PHASE_ONE, i(232016, {	-- Bubblier Brightbrew Charm [Level 85, ilvl 353]
+				["timeline"] = { ADDED_4_0_1, REMOVED_4_3_0 },
+			})),
+			applyclassicphase(CATA_PHASE_ONE, i(232012, {	-- Coren's Chilled Chromium Coaster [Level 85, ilvl 353]
+				["timeline"] = { ADDED_4_0_1, REMOVED_4_3_0 },
+			})),
+			applyclassicphase(CATA_PHASE_ONE, i(232013, {	-- Mithril Stopwatch [Level 85, ilvl 353]
+				["timeline"] = { ADDED_4_0_1, REMOVED_4_3_0 },
+			})),
+			applyclassicphase(CATA_PHASE_ONE, i(232014, {	-- Petrified Pickled Egg [Level 85, ilvl 353]
+				["timeline"] = { ADDED_4_0_1, REMOVED_4_3_0 },
+			})),
+			-- #else
 			i(71333, {	-- Bitterer Balebrew Charm [Level 85]
 				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
@@ -656,6 +712,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			i(71336, {	-- Petrified Pickled Egg [Level 85]
 				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
 			}),
+			-- #endif
 			-- Wrath of the Lich King
 			i(49078, {	-- Ancient Pickled Egg [Level 80]
 				["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
