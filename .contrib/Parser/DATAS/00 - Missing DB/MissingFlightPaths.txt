@@ -1,10 +1,6 @@
 11.0.0.54311
 fp(2894),	-- 11.0  - TEST - Dorn Batol, Khaz Algar - (LWB)
-fp(2933),	-- Grand Rampart \\ Front Gate, Nerub'ar Palace
-fp(2934),	-- The Pulsing Pit \\ Slime Pit, Nerub'ar Palace
-fp(2935),	-- Terrace of Majesty \\ Barracks, Nerub'ar Palace
 fp(2936),	-- The Swaying Span (One-way) \\ Bridge, Nerub'ar Palace
-fp(2937),	-- The Narthex \\ Sanctum, Nerub'ar Palace
 fp(2938),	-- The Swaying Span \\ Weapon Master, Nerub'ar Palace
 fp(2955),	-- Quest Path 9706: 11.0 Z2 - Max Level - CH3 - Q2 - Pipe Ingress 1 Taxi (SMART)
 fp(2964),	-- Quest Path 9786: 11.0 Z2 - Campaign - Ch 3 - Dark Iron From Above - Boss Flyover - (LWB)
@@ -15,9 +11,5 @@ fp(2970),	-- Tranquil Strand, Isle of Dorn
 fp(2971),	-- The Pulsing Pit (One-way)
 11.0.0.55000
 fp(2972),	-- Jeff the Flightmaster
-11.0.0.55288
-fp(2984),	-- The Ascending Reach
 11.0.2.55665
 fp(2987),	-- The Congealing Pool (One-way)
-11.0.2.56110
-fp(3003),	-- The Crown of Shadows
