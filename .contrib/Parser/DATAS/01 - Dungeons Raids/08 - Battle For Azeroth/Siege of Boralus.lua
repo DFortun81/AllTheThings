@@ -39,7 +39,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 			})),
 			-- #if BEFORE 8.1.0
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				["difficulties"] = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
+				["difficulties"] = { DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
 				["g"] = {
 					e(2132, {	-- Chopper Redhook [1st Encounter - Alliance]
 						-- This fight is Alliance-only.  We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
@@ -139,7 +139,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_PLUS, {
-				["difficulties"] = { DIFFICULTY.DUNGEON.NORMAL, DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
+				["difficulties"] = { DIFFICULTY.DUNGEON.NORMAL, DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
 				["g"] = {
 					e(2132, {	-- Chopper Redhook [1st Encounter - Alliance]
 						-- This fight is Alliance-only.  We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
@@ -208,7 +208,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
-				["difficulties"] = { DIFFICULTY.DUNGEON.NORMAL, DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
+				["difficulties"] = { DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
 				["g"] = {
 					e(2140, {	-- Viq'Goth [4th Encounter - Both Factions]
 						["crs"] = { 128652 },-- Viq'Goth
@@ -225,7 +225,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				["difficulties"] = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
+				["difficulties"] = { DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
 				["g"] = {
 					e(2173, {	-- Dread Captain Lockwood [2nd Encounter - Both Factions]
 						["crs"] = { 129208 },	-- Dread Captain Lockwood
@@ -246,7 +246,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 			-- Outside of TWW Season 1
 			-- #else
 			d(DIFFICULTY.DUNGEON.MULTI.HEROIC_PLUS, {
-				["difficulties"] = { DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
+				["difficulties"] = { DIFFICULTY.DUNGEON.HEROIC, DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
 				["g"] = {
 					e(2132, {	-- Chopper Redhook [1st Encounter - Alliance]
 						-- This fight is Alliance-only.  We are going to set the boss as such, but leave the items not marked Alliance due to the fact that Horde should be able to transmog them, and in the event Blizzard makes them available for the opposite faction later.
@@ -329,7 +329,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 				},
 			}),
 			d(DIFFICULTY.DUNGEON.MYTHIC, {
-				["difficulties"] = { DIFFICULTY.DUNGEON.KEYSTONE, DIFFICULTY.DUNGEON.MYTHIC },
+				["difficulties"] = { DIFFICULTY.DUNGEON.MYTHIC, DIFFICULTY.DUNGEON.KEYSTONE },
 				["g"] = {
 					e(2173, {	-- Dread Captain Lockwood [2nd Encounter - Both Factions]
 						["crs"] = { 129208 },	-- Dread Captain Lockwood
