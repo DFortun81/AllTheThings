@@ -216,6 +216,7 @@ if app.IsRetail then
 	end
 end
 
+local CloneDictionary = app.CloneDictionary
 -- Creates a Base Object Table which will evaluate the provided set of 'fields' (each field value being a keyed function)
 local classDefinitions, _cache = {}, nil;
 local call = function(class, key, t)
@@ -232,18 +233,12 @@ local BaseObjectFields = not app.__perf and function(fields, className)
 	else
 		print("A Class has already been defined with that name!", className);
 	end
-	if fields then
-		for key,method in pairs(fields) do
-			class[key] = method;
-		end
-	end
+
+	if fields then CloneDictionary(fields, class) end
 
 	-- Inject the default fields into the class
-	for key,method in pairs(DefaultFields) do
-		if not class[key] then
-			class[key] = method;
-		end
-	end
+	CloneDictionary(DefaultFields, class)
+
 	return {
 		__class = class,
 		__index = function(t, key)
@@ -269,18 +264,12 @@ or function(fields, className)
 	else
 		print("A Class has already been defined with that name!", className);
 	end
-	if fields then
-		for key,method in pairs(fields) do
-			class[key] = method;
-		end
-	end
+
+	if fields then CloneDictionary(fields, class) end
 
 	-- Inject the default fields into the class
-	for key,method in pairs(DefaultFields) do
-		if not class[key] then
-			class[key] = method;
-		end
-	end
+	CloneDictionary(DefaultFields, class)
+
 	return {
 		__class = class,
 		__index = function(t, key)
@@ -409,6 +398,61 @@ app.CreateClassInstance = CreateClassInstance;
 local GlobalVariants = {}
 app.GlobalVariants = GlobalVariants
 
+local function GenerateVariantClasses(class)
+	local fields = class.__class
+	local variants = fields.variants
+	if not variants then return end
+	local subbase = function(t, key) return class.__index; end
+	local classname = fields.__type()
+	local variantClone
+	for variantName,variant in pairs(variants) do
+		if not variant.__condition then
+			app.print("Missing Class Variant __condition!",variantName,classname)
+			error("ATT Variants Require __condition function")
+		end
+		-- raw variant table may be used by other classes, so need to copy it for this specific subclass
+		variantClone = CloneDictionary(fields, CloneDictionary(variant, {base=subbase}))
+		variants[variantName] = BaseObjectFields(variantClone, classname..variantName);
+	end
+end
+local function AppendVariantConditionals(conditionals, class)
+	local subcassCondition = class.__class.__condition
+	local variants = class.__class.variants
+	if variants then
+		conditionals[#conditionals + 1] = function(t)
+			if subcassCondition(t) then
+				-- check any variants for this subclass
+				for variantName,variant in pairs(variants) do
+					if variant.__class.__condition(t) then
+						setmetatable(t, variant);
+						-- app.PrintDebug("Create Variant",t.hash,class.__class.__type()..variantName)
+						return true
+					end
+				end
+				setmetatable(t, class);
+				return true;
+			end
+		end
+	else
+		conditionals[#conditionals + 1] = function(t)
+			if subcassCondition(t) then
+				setmetatable(t, class);
+				return true;
+			end
+		end
+	end
+end
+local function GenerateSimpleMetaClass(fields,name,subname)
+	if fields.collectibleAsCost then
+		local simpleclass = CloneDictionary(fields, {
+			collectibleAsCost = app.ReturnFalse
+		})
+		simpleclass.collectedAsCost = nil
+		local simplemeta = BaseObjectFields(simpleclass, "Simple" .. name .. (subname or ""))
+		fields.simplemeta = function(t) return simplemeta end
+	end
+end
+
 app.CreateClass = function(className, classKey, fields, ...)
 	-- Validate arguments
 	if not className then
@@ -429,16 +473,7 @@ app.CreateClass = function(className, classKey, fields, ...)
 	end
 
 	-- If this object supports collectibleAsCost, that means it needs a way to fallback to a version of itself without any cost evaluations should it detect that it doesn't use it anywhere.
-	if fields.collectibleAsCost then
-		local simpleclass = {};
-		for key,method in pairs(fields) do
-			simpleclass[key] = method;
-		end
-		simpleclass.collectibleAsCost = app.ReturnFalse;
-		simpleclass.collectedAsCost = nil;
-		local simplemeta = BaseObjectFields(simpleclass, "Simple" .. className);
-		fields.simplemeta = function(t) return simplemeta; end;
-	end
+	GenerateSimpleMetaClass(fields, className)
 
 	local args = { ... };
 	local total = #args;
@@ -450,77 +485,25 @@ app.CreateClass = function(className, classKey, fields, ...)
 			local subclassName = args[i];
 			if subclassName then
 				local conditional = args[i + 2];
-				local class = args[i + 1];
-				if class then
-					for key,method in pairs(fields) do
-						if not rawget(class, key) then
-							class[key] = method;
-						end
-					end
-					class.base = base;
-					if class.collectibleAsCost then
-						local simpleclass = {};
-						for key,method in pairs(class) do
-							simpleclass[key] = method;
-						end
-						simpleclass.collectibleAsCost = app.ReturnFalse;
-						simpleclass.collectedAsCost = nil;
-						local simplemeta = BaseObjectFields(simpleclass, "Simple" .. className .. subclassName);
-						class.simplemeta = function(t) return simplemeta; end;
-					end
-					local subclass = BaseObjectFields(class, className .. subclassName);
-					local variants = class.variants;
-					if variants then
-						local subbase = function(t, key) return subclass.__index; end
-						local variantClone
-						for variantName,variant in pairs(variants) do
-							if not variant.__condition then
-								app.print("Missing Sub-Class Variant __condition!",variantName,subclassName,className)
-							end
-							-- raw variant table may be used by other classes, so need to copy it for this specific subclass
-							variantClone = {}
-							for key,method in pairs(variant) do
-								variantClone[key] = method;
-							end
-							-- copy in the class fields
-							for key,method in pairs(class) do
-								if not variantClone[key] then
-									variantClone[key] = method;
-								end
-							end
-							variantClone.base = subbase;
-							variants[variantName] = BaseObjectFields(variantClone, className .. subclassName .. variantName);
-						end
-					end
-					local a;
-					tinsert(conditionals, function(t)
-						a = conditional(t);
-						if a then
-							-- check any variants for this subclass
-							if variants then
-								local variantCondition
-								for variantName,variant in pairs(variants) do
-									variantCondition = variant.__class.__condition
-									if variantCondition and variantCondition(t) then
-										setmetatable(t, variant);
-										-- app.PrintDebug("Create Variant",t.hash,variantName)
-										return true
-									end
-								end
-							end
-							setmetatable(t, subclass);
-							return true;
-						end
-					end);
+				local subfields = args[i + 1];
+				if subfields then
+					CloneDictionary(fields, subfields)
+					subfields.__condition = conditional
+					subfields.base = base;
+					GenerateSimpleMetaClass(subfields, className, subclassName)
+					local subclass = BaseObjectFields(subfields, className .. subclassName)
+					GenerateVariantClasses(subclass)
+					AppendVariantConditionals(conditionals, subclass)
 				else
-					tinsert(conditionals, conditional);
+					conditionals[#conditionals] = conditional
 				end
 			end
 		end
 		total = #conditionals;
+		-- Not sure the use case for this assignment...
 		fields.conditionals = conditionals;
 		Class = BaseObjectFields(fields, className);
-		local classConstructor = function(id, t)
+		local classConstructor = total > 0 and function(id, t)
 			t = constructor(id, t, classKey);
 			for i=1,total,1 do
 				if conditionals[i](t) then
@@ -528,7 +511,9 @@ app.CreateClass = function(className, classKey, fields, ...)
 				end
 			end
 			return setmetatable(t, Class);
-		end;
+		end or function(id, t)
+			return setmetatable(constructor(id, t, classKey), Class);
+		end
 		if not classesByKey[classKey] then
 			classesByKey[classKey] = classConstructor;
 		elseif not fields.IsClassIsolated then
@@ -567,12 +552,10 @@ app.CreateClassWithInfo = function(className, classKey, classInfo, fields)
 	end
 
 	-- Ensure that a key and _type field exists!
-	local class = {
+	local class = CloneDictionary(DefaultFields, CloneDictionary(fields, {
 		__type = function() return className; end,
 		key = function() return classKey; end
-	};
-	for key,method in pairs(DefaultFields) do class[key] = method; end
-	for key,method in pairs(fields) do class[key] = method; end
+	}))
 	if not classDefinitions[className] then
 		classDefinitions[className] = class;
 	else
@@ -618,12 +601,7 @@ end
 app.ExtendClass = function(baseClassName, className, classKey, fields, ...)
 	local baseClass = classDefinitions[baseClassName];
 	if baseClass then
-		if not fields then fields = {}; end
-		for key,method in pairs(baseClass) do
-			if not fields[key] then
-				fields[key] = method;
-			end
-		end
+		fields = CloneDictionary(baseClass, fields)
 		fields.__type = nil;
 		fields.key = nil;
 		fields.conditionals = nil;
