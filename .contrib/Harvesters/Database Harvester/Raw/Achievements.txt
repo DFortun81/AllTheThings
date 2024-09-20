@@ -38,6 +38,11 @@
 40137@@@[DNT] Discoverer's Delight - Reach Level 50 in Phase 4 - Update (hidden)
 1.15.3.55244
 19563@@@UNUSED Bael'Gar Defeated (Daily)
+1.15.4.56573
+41008@@@Rune Learned - Shared Acquisition - Illari Duskfeather (40)
+41009@@@Rune Learned - Shared Acquisition - Dark Riders (40)
+41010@@@Rune Learned - Shared Acquisition - Ley Lines (50)
+41011@@@Rune Learned - Shared Acquisition - Wild Gods (50)
 2.5.1.39399
 15018@@@Infernal Gladiator
 15019@@@Gladiator: Season 1

@@ -2580,6 +2580,9 @@
 7637@@@Cobra Slayer
 7638@@@Healing Specialization
 7639@@@Meditation Specialization
+1.15.4.56573
+7563@@@+25 Fire Resistance
+7564@@@+30 Fire Resistance
 2.0.0.6080
 13@@@Sharpened (+3 Damage)
 14@@@Sharpened (+4 Damage)
