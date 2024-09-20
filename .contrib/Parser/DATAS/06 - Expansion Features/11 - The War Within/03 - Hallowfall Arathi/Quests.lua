@@ -208,13 +208,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 				q(81906, {	-- Whispers from the Web
-					--["provider"] = { "n",  },	--
-					--["coord"] = {  },
+					["provider"] = { "n", 221867 },
+					--["coord"] = {  }, NPC follows you
 				}),
 				q(81908, {	-- A Flame in the Dark
 					["sourceQuests"] = { 81906 },	-- Whispers from the Web
-					--["provider"] = { "n",  },	--
-					["coord"] = { 46.9, 50.1, NERUBAR },
+					["provider"] = { "n", 221902 },	-- Ct'nak
+					["coord"] = { 46.9, 50.1, NERUBAR_LOWER },
 					["g"] = {
 						i(220212),	-- Aelric's Corrupted Tinderbox (QI!)
 						i(220215),	-- Unidentified Tinderbox (QI!)
@@ -222,15 +222,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(81909, {	-- Absolute Power
 					["sourceQuests"] = { 81908 },	-- A Flame in the Dark
-					--["provider"] = { "n",  },	--
-					["coord"] = { 46.9, 50.1, NERUBAR },
+					["provider"] = { "n", 221902 },	-- Ct'nak
+					["coord"] = { 46.9, 50.1, NERUBAR_LOWER },
 					["g"] = {
 						i(220359),	-- Aelric's Corrupted Tinderbox (QI!)
 					},
 				}),
 				q(81910, {	-- A Great Responsibility
 					["sourceQuests"] = { 81909 },	-- Absolute Power
-					--["provider"] = { "n",  },	--
+					["provider"] = { "n", 214380 },	-- Raen Dawncavalyr
 					["coord"] = { 43.2, 56.4, HALLOWFALL },
 					["g"] = {
 						i(220158),	-- Darkened Tinderbox

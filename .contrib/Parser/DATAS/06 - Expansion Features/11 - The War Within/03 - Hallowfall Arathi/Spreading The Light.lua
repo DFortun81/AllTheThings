@@ -162,6 +162,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					q(82961, {	-- Hillhelm Family: The Chicken
 						["provider"] = { "i", 224466 },	-- Wilber The Chicken (QS!/QI!)
+						["isWeekly"] = true,
 					}),
 					q(82967, {	-- Hillhelm Family: The Ear
 						["provider"] = { "i", 224462 },	-- The Ear (QS!/QI!)
@@ -641,7 +642,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					o(441795, {	-- Hallowfall Sparkfly
 						["description"] = "Requires level 80. Use a light source item then walk along the river near Stillstone Pond. With time Sparkbugs will appear next to you and randomly may be interactable, granting the pet.",
 						["coord"] = { 66.8, 25.3, HALLOWFALL },
-						--["questID"] = ,
 						["provider"] = {"i", 218107},	-- Sparkbug Jar
 						["g"] = {
 							i(220771),	-- Hallowed Glowfly (PET!)
@@ -660,6 +660,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 65.6, 29.4, HALLOWFALL },
 						["questID"] = 80420,
+						["isWeekly"] = true,
 						["g"] = {
 							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 						},
