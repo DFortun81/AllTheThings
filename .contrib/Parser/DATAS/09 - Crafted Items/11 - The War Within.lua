@@ -417,6 +417,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80667, 450289);	-- Tempered Framework
 			-- Other
 			FirstCraft(83398, 450291);	-- Coreforged Repair Hammer
+			FirstCraft(83399, 450292);	-- Coreforged Skeleton Key
 		})),
 		filter(MISC, {
 			i(222520),	-- Coreforged Repair Hammer+
