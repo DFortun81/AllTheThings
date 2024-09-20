@@ -786,7 +786,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		},
 	}),
 	n(QUESTS, {
-		-- #if NOT ANYCLASSIC
+		-- #if AFTER CATA
 		["OnInit"] = [[function(t)
 			if GetCVar("portal") == "EU" then
 				local quests = {[11117]=1,[11431]=1,[11118]=1,[11120]=1};
