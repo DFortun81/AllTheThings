@@ -542,7 +542,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(226369),	-- Classic Faded Tabard
 				i(224869),	-- Earthen Drape
 				i(226366),	-- Gloves of the Morning Mist
-				i(227795),	-- Homebrewer's Sampling Mantle [Brewfest?]
 				i(225411),	-- Secret-Dredger's Cloak
 				i(224168),	-- Stonebound Tabard
 				i(225412),	-- Torchbearer's Greatcloak
