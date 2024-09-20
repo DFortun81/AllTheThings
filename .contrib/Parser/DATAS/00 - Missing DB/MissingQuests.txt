@@ -3201,16 +3201,6 @@ q(84275),	--
 q(84277),	--
 11.0.0.55185
 q(84297),	--
-q(84305),	-- Bar Tab Barrel
-q(84306),	-- Bar Tab Barrel
-q(84307),	-- Bar Tab Barrel
-q(84308),	-- Bar Tab Barrel
-q(84310),	-- Bar Tab Barrel
-q(84311),	-- Bar Tab Barrel
-q(84313),	-- Bar Tab Barrel
-q(84314),	-- Bar Tab Barrel
-q(84315),	-- Bar Tab Barrel
-q(84316),	-- Bar Tab Barrel
 q(84344),	--
 q(84373),	-- The Beta Within
 11.0.0.55288
