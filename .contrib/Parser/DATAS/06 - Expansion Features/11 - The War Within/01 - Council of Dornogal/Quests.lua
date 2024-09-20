@@ -84,6 +84,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 			}, {	-- RENOWN 18 --
 			}, {	-- RENOWN 19 --
+				q(82358, {	-- Carved Crests
+					["provider"] = { "n", 223728 },	-- Auditor Balwurz <Keeper of Renown>
+					["coord"] = { 39.1, 24.0, DORNOGAL },
+				}),
 			}, {	-- RENOWN 20 --
 			}, {	-- RENOWN 21 --
 			}, {	-- RENOWN 22 --

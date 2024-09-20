@@ -1085,12 +1085,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			q(82126, {	-- Defense of the People
 				["sourceQuests"] = { 82125 },	-- A Spy Like Us
 				["provider"] = { "n", 222790  },	-- Gut'usu
-				["coord"] = { 57.2, 41, NERUBAR },
+				["coord"] = { 57.2, 41, NERUBAR_LOWER },
 			}),
 			q(82127, {	-- Make Them Prey
 				["sourceQuests"] = { 82125 },	-- A Spy Like Us
 				["provider"] = { "n", 222790  },	-- Gut'usu
-				["coord"] = { 57.2, 41, NERUBAR },
+				["coord"] = { 57.2, 41, NERUBAR_LOWER },
 			}),
 			q(82130, {	-- A Shot at the Top
 				["sourceQuests"] = {
@@ -1098,7 +1098,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					82127,	-- Make Them Prey
 				},
 				["provider"] = { "n", 222790  },	-- Gut'usu
-				["coord"] = { 57.2, 41, NERUBAR },
+				["coord"] = { 57.2, 41, NERUBAR_LOWER },
 			}),
 			q(82141, {	-- To Kill a Queen
 				["sourceQuests"] = { 82130 },	-- A Shot at the Top

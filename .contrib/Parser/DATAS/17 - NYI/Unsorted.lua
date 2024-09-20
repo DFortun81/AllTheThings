@@ -1141,7 +1141,6 @@ root(ROOTS.Unsorted, {
 			i(229006),	-- Cache of Earthen Treasures
 			i(229129),	-- Cache of Delver's Spoils
 			i(229130),	-- Cache of Delver's Spoils
-			i(229069),	-- Nisa's Spare Cloak
 			i(229193),	-- Queen's Pheromone
 			i(229194),	-- Queen's Pheromone
 			i(229195),	-- Queen's Pheromone

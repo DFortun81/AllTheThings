@@ -155,6 +155,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					q(82960, {	-- Hillhelm Family: Lily's Locket
 						["provider"] = { "i", 224463 },	-- Lily's Locket (QS!/QI!)
+						["isWeekly"] = true,
 					}),
 					q(82959, {	-- Hillhelm Family: Lost Diary
 						["provider"] = { "i", 224460 },	-- The Lost Diary (QS!/QI!)
@@ -173,6 +174,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					q(82966, {	-- Hillhelm Family: Unusual Potato
 						["provider"] = { "i", 224465 },	-- Unusual Potato (QS!/QI!)
+						["isWeekly"] = true,
 					}),
 					q(81632, {	-- Lizard Looters
 						["sourceQuests"] = { 78472 },	-- Keyflame: Attica Whiskervale
@@ -207,6 +209,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					q(78589, {	-- Invasive Cuisine
 						["provider"] = { "i", 211861 },	-- Umbral Eggplant
+						["isWeekly"] = true,
 					}),
 					q(76997, {	-- Lost in Shadows
 						["sourceQuests"] = { 78452 },	-- Keyflame: Yovas Flintstrike
@@ -417,6 +420,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					i(228741, {	-- Lamplighter Supply Satchel
 						-- Probably all these armors/weapons are from this area and not only from Lamplighter Supply Satchel?
 						n(ARMOR, {
+							filter(BACK_F, {
+								i(229069),	-- Nisa's Spare Cloak
+							}),
 							filter(CLOTH, {
 								i(229061),	-- Nisa's Spare Belt
 								i(229064),	-- Nisa's Spare Shoes
@@ -542,6 +548,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 66.4, 23.0, HALLOWFALL },
 						["questID"] = 80541,
+						["isWeekly"] = true,
 						["g"] = {
 							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
 						},
@@ -629,7 +636,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["sourceQuests"] = { 79173 },	-- Supply the Effort
 						["coord"] = { 63.2, 29.5, HALLOWFALL },
 						["questID"] = 79191,
-						--["isWeekly"] = true,	-- TODO: uncomment if will be up after reset
+						["isWeekly"] = true,
 					}),
 					o(441795, {	-- Hallowfall Sparkfly
 						["description"] = "Requires level 80. Use a light source item then walk along the river near Stillstone Pond. With time Sparkbugs will appear next to you and randomly may be interactable, granting the pet.",
@@ -644,6 +651,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 62.0, 31.7, HALLOWFALL },
 						["questID"] = 82996,
+						["isWeekly"] = true,
 						["g"] = {
 							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 						},
@@ -668,6 +676,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 68.2, 26.6, HALLOWFALL },
 						["questID"] = 84340,
+						["isWeekly"] = true,
 						["g"] = {
 							i(226018),	-- Darkened Arathi Cape (COSMETIC!)
 							i(224460),	-- The Lost Diary (QS!)
