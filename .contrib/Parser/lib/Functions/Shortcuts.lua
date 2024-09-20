@@ -1491,14 +1491,14 @@ modItemId = function(itemID, modID, bonusID)
 	return i;
 end
 -- Adds a 'type' field with proper formatting to set the 'name' of this object automatically in Retail
--- NOTE: The base Type must support: GlobalVariant.WithTypeName as a Class Variant for the 'type' field to be recognized in the addon to generate a 'name'
+-- NOTE: The base Type must support: GlobalVariant.WithAutoName as a Class Variant for the 'type' field to be recognized in the addon to generate a 'name'
 -- ref. Classes/Quest.lua
 name = function(type, id, t)
 	t = t or {}
-	if t.type then
+	if t.autoname then
 		error("Cannot use name() when the contained data includes 'type' field! "..type..":"..id)
 	end
-	t.type = type..":"..id
+	t.autoname = type..":"..id
 	return t
 end
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.

@@ -1594,6 +1594,7 @@ end");
                     case "title":
                     case "order":
                     case "SortType":
+                    case "an":
                         {
                             item[field] = ATT.Export.ToString(value).Replace("\n", "\\n").Replace("\r", "\\r").Replace("\t", "\\t");
                             break;

@@ -1329,9 +1329,9 @@ local AndBreadcrumbWithLockCriteria = {
 	end,
 }
 if app.IsRetail then
-	local WithTypeName = {
+	local WithAutoName = {
 		name = function(t)
-			local type, id = (":"):split(t.type)
+			local type, id = (":"):split(t.an)
 			local data = app.GetAutomaticHeaderData(id,type)
 			for key,value in pairs(data) do
 				t[key] = value;
@@ -1339,7 +1339,7 @@ if app.IsRetail then
 			return data.name
 		end,
 		icon = function(t)
-			local type, id = (":"):split(t.type)
+			local type, id = (":"):split(t.an)
 			local data = app.GetAutomaticHeaderData(id,type)
 			for key,value in pairs(data) do
 				t[key] = value;
@@ -1347,12 +1347,12 @@ if app.IsRetail then
 			return data.icon
 		end,
 		__condition = function(t)
-			return t.type
+			return t.an
 		end,
 	}
-	app.GlobalVariants.WithTypeName = WithTypeName
+	app.GlobalVariants.WithAutoName = WithAutoName
 else
-	app.GlobalVariants.WithTypeName = {}
+	app.GlobalVariants.WithAutoName = {}
 end
 
 -- Party Sync Support
@@ -1597,7 +1597,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 -- Both: Locked Quest support (no way to make a variant on the base Class at this time)
 ,"WithLockCriteria", app.CloneDictionary(AndLockCriteria), AndLockCriteria.__condition
 -- Retail: Quests with a 'type' field can derive their name from other in-game data automatically
-,app.IsRetail and "WithTypeName" or false, app.CloneDictionary(app.GlobalVariants.WithTypeName), app.GlobalVariants.WithTypeName.__condition
+,app.IsRetail and "WithAutoName" or false, app.CloneDictionary(app.GlobalVariants.WithAutoName), app.GlobalVariants.WithAutoName.__condition
 );
 
 app.CreateQuest = createQuest;

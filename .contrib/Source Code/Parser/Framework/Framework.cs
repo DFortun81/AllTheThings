@@ -1264,6 +1264,9 @@ namespace ATT
                 case "races_display":
                     return "races_disp";
 
+                case "autoname":
+                    return "an";
+
                 // tags which are accurate already
                 case "azeriteEssenceID":
                 case "buildingID":
