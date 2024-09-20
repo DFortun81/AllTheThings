@@ -278,9 +278,7 @@ root(ROOTS.Unsorted, {
 				i(228694),	-- Damp Ransom Note
 				i(228766),	-- Sandy Ransom Note
 				i(229411),	-- Normal Feather
-				-- Hearthstone
-				i(231019),	-- Hearthstone Invitation Letter
-				--
+
 				i(225678),	-- Spare Key to Shaffar's Stasis Chamber
 				i(228782),	-- PH - Sandbox Wolf
 				i(228783),	-- PH - Sandbox Horse
@@ -1157,6 +1155,18 @@ root(ROOTS.Unsorted, {
 			--
 			i(232049),	-- Companion Experience
 			i(232371),	-- Companion Experience
+			--
+			i(226262),	-- Grizzly Hills Trail Mix
+			i(226274),	-- Grizzly Hills Spring Water
+			i(226275),	-- Grizzly Hills Granola
+			i(231019),	-- Hearthstone Invitation Letter
+			i(232492),	-- Gleaming Shatter
+			i(232493),	-- Restored Coffer Key
+			i(232494),	-- Restored Coffer Key
+			i(232495),	-- Restored Coffer Key
+			i(232496),	-- Restored Coffer Key
+			i(232497),	-- Restored Coffer Key
+			i(232498),	-- Restored Coffer Key
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			n(ARMOR, {
