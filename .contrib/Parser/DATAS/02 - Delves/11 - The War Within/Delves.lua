@@ -54,34 +54,67 @@ local mapped = function(t)
 	return t
 end
 root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
-	mapped(n(ACHIEVEMENTS, {
-		ach(40817),		-- A Delver's Bounty
+	n(ACHIEVEMENTS, {
+		ach(40817, {	-- A Delver's Bounty
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
 		ach(40538, {	-- Brann Development
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+			["maps"] = ALL_THE_DELVES,
 		}),
 		ach(40635, {	-- Branntastic
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 			["sym"] = {{ "achievement_criteria" }},
+			["maps"] = ALL_THE_DELVES,
 		}),
-		ach(40461),	-- Buddy System VI
-		ach(40457),	-- Buddy System V
-		ach(40456),	-- Buddy System IV
-		ach(40451),	-- Buddy System III
-		ach(40450),	-- Buddy System II
-		ach(40455),	-- Buddy System
+		ach(40461, {	-- Buddy System VI
+			["maps"] = ALL_THE_DELVES,
+		}),
+		ach(40457, {	-- Buddy System V
+			["maps"] = ALL_THE_DELVES,
+		}),
+		ach(40456, {	-- Buddy System IV
+			["maps"] = ALL_THE_DELVES,
+		}),
+		ach(40451, {	-- Buddy System III
+			["maps"] = ALL_THE_DELVES,
+		}),
+		ach(40450, {	-- Buddy System II
+			["maps"] = ALL_THE_DELVES,
+		}),
+		ach(40455, {	-- Buddy System
+			["maps"] = ALL_THE_DELVES,
+		}),
 		ach(40882, {	-- Copious Coffers
-			title(575),	-- <Name> the Bountiful
+			["maps"] = ALL_REGULAR_DELVES,
+			["g"] = {
+				title(575),	-- <Name> the Bountiful
+			},
 		}),
-		ach(40437),	-- Delver of the Depths (automated)
-		ach(40447),	-- Delver of the Depths II (automated)
-		ach(40448),	-- Delver of the Depths III (automated)
-		ach(40449),	-- Delver of the Depths IV (automated)
+		ach(40437, {	-- Delver of the Depths (automated)
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
+		ach(40447, {	-- Delver of the Depths II (automated)
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
+		ach(40448, {	-- Delver of the Depths III (automated)
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
+		ach(40449, {	-- Delver of the Depths IV (automated)
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
 		ach(40454, {	-- Daystormer
 			["maps"] = SHADOW_DELVES,
 		}),
-		ach(40460),	-- Delve Deep
-		ach(40462),	-- Delve Deeper
-		ach(40463),	-- Delve Deepest
+		ach(40460, {	-- Delve Deep
+			["maps"] = ALL_THE_DELVES,
+		}),
+		ach(40462, {	-- Delve Deeper
+			["maps"] = ALL_THE_DELVES,
+		}),
+		ach(40463, {	-- Delve Deepest
+			["maps"] = ALL_THE_DELVES,
+		}),
 		ach(40537, {	-- Delve Loremaster: War Within
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
@@ -98,6 +131,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				40535,	-- Tak-Rethan Abyss Stories
 				40534,	-- The Underkeep Stories
 			}},
+			["maps"] = ALL_REGULAR_DELVES,
 		}),
 		ach(40438, {	-- Glory of the Delver
 			-- Meta Achievement
@@ -113,24 +147,34 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				40103,	-- Nemesis
 				40538,	-- Brann Development
 			}},
+			["maps"] = ALL_THE_DELVES,
 			["g"] = {
 				i(224415),	-- Ivory Goliathus (MOUNT!)
 			},
 		}),
-		ach(40524),	-- Good Deed Delver
+		ach(40524, {	-- Good Deed Delver
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
 		ach(40732, {	-- Heavy-Handed
 			["maps"] = ALL_THE_DELVES,
 		}),
 		ach(40098, {	-- Immortal Spelunker
-			title(549),	-- Immortal Spelunker <Name>
+			["maps"] = ALL_REGULAR_DELVES,
+			["g"] = {
+				title(549),	-- Immortal Spelunker <Name>
+			},
 		}),
-		ach(40763),	-- I'm not a Thief, I'm a Treasure Hunter
+		ach(40763, {	-- I'm not a Thief, I'm a Treasure Hunter
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
 		ach(40446, {	-- I TAKE Candle!
 			["maps"] = KOBOLD_DELVES,
 		}),
 		ach(40459),	-- I've Got a Flying Machine!
 		ach(40789),	-- I've Got More Flying Machine?! (automated)
-		ach(40788),	-- I Got the Keys
+		ach(40788, {	-- I Got the Keys
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
 		ach(40452, {	-- Just Keep Swimming
 			["maps"] = KOBYSS_DELVES,
 		}),
@@ -150,47 +194,88 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				40811,	-- Tak-Rethan Abyss Discoveries
 				40815,	-- The Underkeep Discoveries
 			}},
+			["maps"] = ALL_REGULAR_DELVES,
 			["g"] = {
 				title(570),	-- <Name>, Seeker of Loot
 			},
 		}),
 		ach(40523, {	-- On Brand
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+			["maps"] = ALL_THE_DELVES,
 			["sym"] = {{ "achievement_criteria" }},
 		}),
-		ach(40863),	-- Perplexing Puzzle
-		ach(40864),	-- Plentiful Perplexing Puzzles
+		ach(40863, {	-- Perplexing Puzzle
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
+		ach(40864, {	-- Plentiful Perplexing Puzzles
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
 		ach(40820, {	-- Raisin' Brann
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+			["maps"] = ALL_THE_DELVES,
 		}),
-		ach(40458),	-- Rare Finding
-		ach(40819),	-- Ready to Turn
+		ach(40819, {	-- Ready to Turn
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
 		ach(40453, {	-- Spider Senses
 			["maps"] = NERUBIAN_DELVES,
 		}),
 		ach(40445, {	-- Sporesweeper
 			["maps"] = FUNGARIAN_DELVES,
 		}),
-		ach(40885),	-- The Key to Madness
-		ach(40100),	-- Undying Caver
+		ach(40458, {	-- Stranger Delves
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
+		ach(40885, {	-- The Key to Madness
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
+		ach(40100, {	-- Undying Caver
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
 		ach(40725, {	-- War Within Delves: Endgame (automated)
 			["timeline"] = { REMOVED_11_1_0 },
+			["maps"] = ALL_REGULAR_DELVES,
 		}),
-		ach(40631),	-- War Within Delves: Tier 1
-		ach(40512),	-- War Within Delves: Tier 2
-		ach(40514),	-- War Within Delves: Tier 3
-		ach(40515),	-- War Within Delves: Tier 4
-		ach(40516),	-- War Within Delves: Tier 5
-		ach(40517),	-- War Within Delves: Tier 6
-		ach(40518),	-- War Within Delves: Tier 7
-		ach(40519),	-- War Within Delves: Tier 8
-		ach(40520),	-- War Within Delves: Tier 9
-		ach(40521),	-- War Within Delves: Tier 10
+		ach(40631, {	-- War Within Delves: Tier 1
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
+		ach(40512, {	-- War Within Delves: Tier 2
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
+		ach(40514, {	-- War Within Delves: Tier 3
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
+		ach(40515, {	-- War Within Delves: Tier 4
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
+		ach(40516, {	-- War Within Delves: Tier 5
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
+		ach(40517, {	-- War Within Delves: Tier 6
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
+		ach(40518, {	-- War Within Delves: Tier 7
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
+		ach(40519, {	-- War Within Delves: Tier 8
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
+		ach(40520, {	-- War Within Delves: Tier 9
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
+		ach(40521, {	-- War Within Delves: Tier 10
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
 		ach(40726, {	-- War Within Delves: Tier 11
-			title(550),	-- High Explorer <Name>
+			["maps"] = ALL_REGULAR_DELVES,
+			["g"] = {
+				title(550),	-- High Explorer <Name>
+			},
 		}),
-		ach(40436),	-- You're Getting a Delve!
-	})),
+		ach(40436, {	-- You're Getting a Delve!
+			["maps"] = ALL_REGULAR_DELVES,
+		}),
+	}),
 	n(QUESTS, {
 		q(81514, {	-- Bountiful Delves
 			["sourceQuests"] = { 83315 },	-- Preparing for the Unknown
