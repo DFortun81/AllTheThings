@@ -261,7 +261,7 @@ local OneTimeFixFunctions = {
 		if found then
 			app.print(app.Modules.Color.Colorize("One-Time removal for inaccurate cached data performed!", app.Colors.Account),
 						"If any character knows",
-						app:Linkify("this Thing (Spell 148972)", app.Colors.ChatLink,"search:spellID:148972"),
+						app:Linkify("Spell 148972", app.Colors.ChatLink,"search:spellID:148972"),
 						"they will need to log in to properly re-collect in ATT")
 		end
 	end,
@@ -278,7 +278,7 @@ local OneTimeFixFunctions = {
 		if found then
 			app.print(app.Modules.Color.Colorize("One-Time removal for inaccurate cached data performed!", app.Colors.Account),
 						"If any character knows",
-						app:Linkify("this Thing (Spell 241857)", app.Colors.ChatLink,"search:spellID:241857"),
+						app:Linkify("Spell 241857", app.Colors.ChatLink,"search:spellID:241857"),
 						"they will need to log in to properly re-collect in ATT")
 		end
 	end,
