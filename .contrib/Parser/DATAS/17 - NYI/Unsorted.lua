@@ -806,7 +806,7 @@ root(ROOTS.Unsorted, {
 				i(232317),	-- Ensemble: Drakkari Stalker's Trappings
 				i(232318),	-- Ensemble: Shadowmoon Warlock's Vestments
 				i(232319),	-- Ensemble: Auchenai Priest's Raiment
-				i(232320),	-- Ensemble: Telhamant Anchorite's Raiment
+				i(232320),	-- Ensemble: Telhamat Anchorite's Raiment
 				i(232321),	-- Ensemble: Boulderfist Mystic's Battlegear
 				i(232322),	-- Ensemble: Cenarion Mender's Battlegear
 				i(232345),	-- Xu'rakas, Glaive of Command
@@ -1119,6 +1119,11 @@ root(ROOTS.Unsorted, {
 			i(232491),	-- Glyph of Jab
 			i(232510),	-- Electric Eel
 			i(232511),	-- Electric Eel
+			i(232484),	-- Eternal Judgment Greaves
+			i(232521),	-- Glyph of Arcane Familiar
+			i(232524),	-- Dark Ranger General's Bodice
+			i(232525),	-- Dark Ranger General's Vest
+			i(232527),	-- Glyph of Traditional Ascendance
 		})),
 		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			explorationHeader({
