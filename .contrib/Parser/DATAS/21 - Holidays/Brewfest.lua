@@ -2106,7 +2106,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["cost"] = BREWFEST_TOKEN_COST(150),
 					}),
 					i(227795, {	-- Homebrewer's Sampling Mantle
-						["timeline"] = { ADDED_10_0_2_LAUNCH },
+						["timeline"] = { ADDED_11_0_2_LAUNCH },
 						["cost"] = BREWFEST_TOKEN_COST(200),
 					}),
 					i(209044, {	-- Orange Brewfest Bulwark
@@ -2296,7 +2296,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 						["cost"] = BREWFEST_TOKEN_COST(150),
 					}),
 					i(227795, {	-- Homebrewer's Sampling Mantle
-						["timeline"] = { ADDED_10_0_2_LAUNCH },
+						["timeline"] = { ADDED_11_0_2_LAUNCH },
 						["cost"] = BREWFEST_TOKEN_COST(200),
 					}),
 					i(209044, {	-- Orange Brewfest Bulwark
