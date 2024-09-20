@@ -651,19 +651,21 @@ PrintQuestInfo = function(questID, new)
 	local questChange = (new == true and "accepted") or (new == false and "unflagged") or "completed";
 	local searchResults = SearchForField("questID", questID);
 	if #searchResults > 0 then
-		local nmr, nmc, nyi, hqt
+		local nmr, nmc, nyi, hqt, unsorted
 		if #searchResults == 1 then
 			questRef = searchResults[1]
 			nmr = questRef.nmr
 			nmc = questRef.nmc
-			nyi = GetRelativeField(questRef, "u", 1) or GetRelativeValue(questRef, "_unsorted")
+			nyi = GetRelativeField(questRef, "u", 1)
+			unsorted = GetRelativeValue(questRef, "_unsorted") or nyi
 			hqt = GetRelativeValue(questRef, "_hqt")
 		else
 			for i,searchResult in ipairs(searchResults) do
 				if searchResult.key == "questID" then
 					nmr = nmr or searchResult.nmr
 					nmc = nmc or searchResult.nmc
-					nyi = nyi or GetRelativeField(searchResult, "u", 1) or GetRelativeValue(searchResult, "_unsorted")
+					nyi = nyi or GetRelativeField(searchResult, "u", 1)
+					unsorted = GetRelativeValue(questRef, "_unsorted") or nyi
 					hqt = hqt or GetRelativeValue(searchResult, "_hqt")
 					questRef = searchResult
 				end
@@ -676,17 +678,23 @@ PrintQuestInfo = function(questID, new)
 		end
 
 		-- if user is allowing reporting of Sourced quests (true = don't report Sourced)
-		if not nyi and app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
+		if not unsorted and app.Settings:GetTooltipSetting("Report:UnsortedQuests") then
 			return true;
 		end
 
-		-- don't worry about names if we know it's HQT
+		-- Quest can be linked to all sorts of things...
+		text = (QuestNameFromID[questID] or (questRef and questRef.name))
 		if hqt then
-			text = questID
+			-- don't worry about retrieving names if we know it's HQT
+			if IsRetrieving(text) then
+				text = questID
+			end
 		else
-			-- Quest can be linked to all sorts of things...
-			text = (QuestNameFromID[questID] or (questRef and questRef.name) or UNKNOWN) .. " (" .. questID .. ")"
+			if IsRetrieving(text) then
+				text = UNKNOWN
+			end
 		end
+		text = text .. " (" .. questID .. ")"
 		if nmc then text = text .. "[C]"; end
 		if nmr then text = text .. "[R]"; end
 		-- only check to report when accepting a quest, quests flag complete all the time without being filtered
@@ -705,6 +713,20 @@ PrintQuestInfo = function(questID, new)
 				BuildDiscordQuestInfoTable(questID, "nyi-quest", questChange)
 			);
 			print("Quest", questChange, app:Linkify(text .. " [NYI] ATT " .. app.Version, app.Colors.ChatLinkError, "dialog:" .. popupID));
+			return
+		end
+
+		-- give a chat output if the user has just interacted with a quest flagged as Unsorted
+		if unsorted then
+			-- Play a sound when a reportable error is found, if any sound setting is enabled
+			app.Audio:PlayReportSound();
+
+			-- Linkify the output
+			local popupID = "quest-" .. questID .. questChange;
+			app:SetupReportDialog(popupID, "Unsorted Quest: " .. questID,
+				BuildDiscordQuestInfoTable(questID, "unsorted-quest", questChange)
+			);
+			print("Quest", questChange, app:Linkify(text .. " [UNS] ATT " .. app.Version, app.Colors.ChatLinkError, "dialog:" .. popupID));
 			return
 		end
 
