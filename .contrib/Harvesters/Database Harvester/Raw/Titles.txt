@@ -783,3 +783,5 @@
 594@@@Khaz Algar Racer %s
 595@@@Molten Core Prospector %s
 596@@@Karazhan Graduate %s
+11.0.5.56572
+584@@@Cataclysm Enthusiast %s

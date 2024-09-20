@@ -78,7 +78,7 @@ root(ROOTS.Unsorted, {
 				i(224957),	-- Eternal Bloodfang Belt
 				i(224958),	-- Eternal Bloodfang Cloak
 				i(224959),	-- Eternal Bloodfang Bracers
-				i(224983),	-- Eternal Stormrage Chestguard
+				i(224983),	-- Eternal Stormrage Robe
 				i(224984),	-- Eternal Stormrage Boots
 				i(224985),	-- Eternal Stormrage Handguards
 				i(224986),	-- Eternal Stormrage Cover
@@ -100,7 +100,7 @@ root(ROOTS.Unsorted, {
 				i(225038),	-- Eternal Greaves of Ten Storms
 				i(225039),	-- Eternal Gauntlets of Ten Storms
 				i(225040),	-- Eternal Helmet of Ten Storms
-				i(225041),	-- Eternal Legplates of Ten Storms
+				i(225041),	-- Eternal Kilt of Ten Storms
 				i(225042),	-- Eternal Epaulets of Ten Storms
 				i(225043),	-- Eternal Belt of Ten Storms
 				i(225044),	-- Eternal Cloak of Ten Storms
@@ -582,7 +582,7 @@ root(ROOTS.Unsorted, {
 				i(229808),	-- Gossamer Cyan Gown
 				i(229811),	-- Frost Etched Dagger
 				i(229812),	-- Chilled Axe
-				i(229813),	-- Crystaline Longbow of the Heavens
+				i(229813),	-- Crystalline Longbow of the Heavens
 				i(229814),	-- Fan of Cooling
 				i(229815),	-- Sky Witch's Airy Stave
 				i(229816),	-- Sky Witch's Airy Wand
@@ -755,7 +755,7 @@ root(ROOTS.Unsorted, {
 				i(231992),	-- Telhamat Anchorite's Waistguard
 				i(231993),	-- Telhamat Anchorite's Bracelets
 				i(231994),	-- Telhamat Anchorite's Chestguard
-				i(231999),	-- Dragonflayer Heartpiercer
+				i(231999),	-- Dragonflayer's Heartpiercer
 				i(232000),	-- Frosted Ymirheim Battle Bow
 				i(232001),	-- Blazing Skyhawk Repeater
 				i(232002),	-- Amani Tracker's Blunderbuss
@@ -1106,6 +1106,19 @@ root(ROOTS.Unsorted, {
 				i(231839),	-- Trailseeker Longbow
 				i(231840),	-- Trailseeker Crossbow
 			}),
+			i(232471),	-- Cache of Dark Iron Treasures
+			i(232472),	-- Cache of Dark Iron Treasures
+			i(232473),	-- Cache of Dark Iron Treasures
+			i(232474),	-- Defias Cuirass
+			i(232475),	-- Defias Cuirass
+			i(232479),	-- Eternal Netherwind Blouse
+			i(232480),	-- Eternal Nemesis Blouse
+			i(232481),	-- Eternal Blouse of Transcendence
+			i(232482),	-- Eternal Greaves of Ten Storms
+			i(232483),	-- Eternal Stormrage Chestguard
+			i(232491),	-- Glyph of Jab
+			i(232510),	-- Electric Eel
+			i(232511),	-- Electric Eel
 		})),
 		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			explorationHeader({

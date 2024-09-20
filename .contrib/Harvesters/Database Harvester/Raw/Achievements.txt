@@ -15384,3 +15384,6 @@
 40998@@@A Timewalking Step Back to a Classic Dungeon Time
 40999@@@You're in Your Blackrock Depths
 41000@@@A Timewalking Journey Back to a Classic Dungeon Time
+11.0.5.56572
+41013@@@Upgraded Apparel
+41015@@@A Dark Iron Past
