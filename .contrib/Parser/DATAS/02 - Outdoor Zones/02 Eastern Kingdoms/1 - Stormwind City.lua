@@ -2693,6 +2693,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
+						objective(1, {	-- 0/6 Rock Lobster
+							["providers"] = {
+								{ "i",  58809 },	-- Rock Lobster
+								{ "o", 204284 },	-- Stormwind Lobster Trap
+							},
+							["coord"] = { 21.5, 36.6, STORMWIND_CITY },
+						}),
 						i(67414),	-- Bag of Shiny Things
 					},
 				}),
