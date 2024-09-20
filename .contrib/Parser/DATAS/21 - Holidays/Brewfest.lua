@@ -688,7 +688,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(71336, {	-- Petrified Pickled Egg [Level 85, ilvl 365]
 				["timeline"] = { ADDED_4_3_0, REMOVED_5_0_4 },
 			})),
-			
+
 			-- The idiots at Blizzard decided that they wanted to give people 353 ilvl stuff from Coren in Cataclysm Classic.
 			applyclassicphase(CATA_PHASE_ONE, i(232017, {	-- Bitterer Balebrew Charm [Level 85, ilvl 353]
 				["timeline"] = { ADDED_4_0_1, REMOVED_5_0_4 },
@@ -887,35 +887,35 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				},
 			}),
 			q(77152, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Maruukai
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 405009 },	-- Bar Tab Barrel
 				["coord"] = { 59.8, 38.7, OHNAHRAN_PLAINS },
 				["timeline"] = { ADDED_10_1_7 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(77745, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Rusza'Thar Reach
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 407192 },	-- Bar Tab Barrel
 				["coord"] = { 85.8, 35.3, OHNAHRAN_PLAINS },
 				["timeline"] = { ADDED_10_1_7 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(77099, {	-- Bar Tab Barrel @ Ohn'ahran Plains, Shady Sanctuary
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 404992 },	-- Bar Tab Barrel
 				["coord"] = { 28.6, 60.4, OHNAHRAN_PLAINS },
 				["timeline"] = { ADDED_10_1_7 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(77747, {	-- Bar Tab Barrel @ Thaldraszus, Algeth'era Court
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 407201 },	-- Bar Tab Barrel
 				["coord"] = { 50.1, 42.7, THALDRASZUS },
 				["timeline"] = { ADDED_10_1_7 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(77155, {	-- Bar Tab Barrel @ Thaldraszus, Eon's Fringe
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 405012 },	-- Bar Tab Barrel
 				["coord"] = { 52.2, 81.5, THALDRASZUS },
 				["timeline"] = { ADDED_10_1_7 },
 				["isYearly"] = true,
@@ -929,112 +929,112 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(77096, {	-- Bar Tab Barrel @ The Azure Span, Camp Antonidas
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 404982 },	-- Bar Tab Barrel
 				["coord"] = { 46.9, 40.2, THE_AZURE_SPAN },
 				["timeline"] = { ADDED_10_1_7 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(77746, {	-- Bar Tab Barrel @ The Azure Span, Camp Nowhere
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 407199 },	-- Bar Tab Barrel
 				["coord"] = { 62.8, 57.7, THE_AZURE_SPAN },
 				["timeline"] = { ADDED_10_1_7 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(77097, {	-- Bar Tab Barrel @ The Azure Span, Iskaara
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 404987 },	-- Bar Tab Barrel
 				["coord"] = { 12.4, 49.3, THE_AZURE_SPAN },
 				["timeline"] = { ADDED_10_1_7 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(77744, {	-- Bar Tab Barrel @ The Waking Shores, Dragonscale Basecamp
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 407186 },	-- Bar Tab Barrel
 				["coord"] = { 47.7, 83.3, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_10_1_7 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(76531, {	-- Bar Tab Barrel @ The Waking Shores, Ruby Lifeshrine
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 404337 },	-- Bar Tab Barrel
 				["coord"] = { 58.3,67.5, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_10_1_7 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(77095, {	-- Bar Tab Barrel @ The Waking Shores, Wingrest Embassy
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 404981 },	-- Bar Tab Barrel
 				["coord"] = { 76.3, 35.4, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_10_1_7 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(84305, {	-- Bar Tab Barrel @ Dornogal, Stonelight Rest
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel	-- TODO: Might be wrong objectID
 				["coord"] = { 44.1, 46.1, DORNOGAL },
 				["timeline"] = { ADDED_11_0_2 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(84306, {	-- Bar Tab Barrel @ Isle of Dorn, Freywold Village
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel	-- TODO: Might be wrong objectID
 				["coord"] = { 41.9, 74.2, ISLE_OF_DORN },
 				["timeline"] = { ADDED_11_0_2 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(84307, {	-- Bar Tab Barrel @ The Ringing Deeps, Gundargaz
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel	-- TODO: Might be wrong objectID
 				["coord"] = { 48.3, 32.2, THE_RINGING_DEEPS },
 				["timeline"] = { ADDED_11_0_2 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(84308, {	-- Bar Tab Barrel @ The Ringing Deeps, Opportunity Point
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel	-- TODO: Might be wrong objectID
 				["coord"] = { 63.4, 78.8, THE_RINGING_DEEPS },
 				["timeline"] = { ADDED_11_0_2 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(84310, {	-- Bar Tab Barrel @ Hallowfall, Fjord Tavern
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel	-- TODO: Might be wrong objectID
 				["coord"] = { 49.2, 39.5, HALLOWFALL },
 				["timeline"] = { ADDED_11_0_2 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(84311, {	-- Bar Tab Barrel @ Hallowfall, Empire's Edge Tavern
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel	-- TODO: Might be wrong objectID
 				["coord"] = { 42.8, 55.8, HALLOWFALL },
 				["timeline"] = { ADDED_11_0_2 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(84313, {	-- Bar Tab Barrel @ City of Threads, The Cobwebs
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel	-- TODO: Might be wrong objectID
 				["coord"] = { 57.8, 39.9, NERUBAR_LOWER },
 				["timeline"] = { ADDED_11_0_2 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(84314, {	-- Bar Tab Barrel @ City of Threads, The Skittering Lounge
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel	-- TODO: Might be wrong objectID
 				["coord"] = { 49.8, 21.6, NERUBAR },
 				["timeline"] = { ADDED_11_0_2 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(84315, {	-- Bar Tab Barrel @ Azj-Kahet, Rock Bottom Inn
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel	-- TODO: Might be wrong objectID
 				["coord"] = { 77.8, 62.7, AZJ_KAHET },
 				["timeline"] = { ADDED_11_0_2 },
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
 			q(84316, {	-- Bar Tab Barrel @ Azj-Kahet, The Trap Door
-				["provider"] = { "o", 405010 },	-- Bar Tab Barrel
+				["provider"] = { "o", 405010 },	-- Bar Tab Barrel	-- TODO: Might be wrong objectID
 				["coord"] = { 56.7, 38.7, AZJ_KAHET },
 				["timeline"] = { ADDED_11_0_2 },
 				["isYearly"] = true,
