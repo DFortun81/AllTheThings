@@ -1070,6 +1070,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					19172,	-- Gnome Commoner
 					19173,	-- Night Elf Commoner
 					20102,	-- Goblin Commoner
+					220307,	-- Holiday Enthusiast
 				},
 				["altQuests"] = {
 					11441,	-- Brewfest! (A)
@@ -1082,6 +1083,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					DARNASSUS,
 					THE_EXODAR,
 					ISLE_OF_THUNDER,
+					DORNOGAL,
 				},
 				["races"] = ALLIANCE_ONLY,
 				["isYearly"] = true,
