@@ -962,7 +962,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["isYearly"] = true,
 				["groups"] = BREWFEST_TOKEN,
 			}),
-
 			q(77208, {	-- Barreling Down
 				["qg"] = 207496,	-- Bragdur Battlebrew
 				["coord"] = { 29.7, 56.2, VALDRAKKEN },
