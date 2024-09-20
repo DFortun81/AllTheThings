@@ -59,6 +59,7 @@ local Ignored = setmetatable({
 		[223728] = true,	-- Auditor Balwurz [Renown Quartermaster - Council of Dornogal]
 		[221390] = true,	-- Waxmonger Squick [Renown Quartermaster - The Assembly of the Deeps]
 		[213145] = true,	-- Auralia Steelstrike [Renown Quartermaster - Hallowfall Arathi]
+		[220867] = true,	-- Y'tekhi [Renown Quartermaster - The Severed Threads]
 	},
 	object = {
 
