@@ -301,7 +301,6 @@ root(ROOTS.Unsorted, {
 				i(229831),	-- Gold Balloon
 				i(229958),	-- Decorated Feather
 				i(230283),	-- Weird Egg
-				i(232371),	-- Companion Experience
 				i(232374),	-- Greasy Links
 				i(232375),	-- Moon Bread
 				i(232376),	-- Cherry Bombs
@@ -1157,6 +1156,7 @@ root(ROOTS.Unsorted, {
 			i(222905),	-- Faerin's Shield
 			--
 			i(232049),	-- Companion Experience
+			i(232371),	-- Companion Experience
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			n(ARMOR, {

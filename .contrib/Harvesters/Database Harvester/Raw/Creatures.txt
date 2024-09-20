@@ -22071,6 +22071,8 @@
 227436@@@Archmage Khadgar
 227437@@@Archmage Khadgar
 230201@@@Lightforged Vindicator
+11.0.2.56513
+233231@@@Xal'atath
 11.0.5.56487
 204354@@@Jade Cragviper
 224698@@@Plague Deviser Marileth
@@ -22178,4 +22180,3 @@
 233117@@@Moira Thaurissan
 233119@@@Moira Thaurissan
 233121@@@Moira Thaurissan
-233231@@@Xal'atath

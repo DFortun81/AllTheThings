@@ -15348,10 +15348,13 @@
 40907@@@We Rise Anew
 11.0.2.56313
 40974@@@[DNT] <Hidden> Mythic+ Rating > 0 (The War Within, any season)
-11.0.5.56487
+11.0.2.56513
 40107@@@Harbinger of the Weathered
 40115@@@Harbinger of the Carved
 40118@@@Harbinger of the Runed
+40910@@@Successfully Stress Test CN Realms
+40939@@@Harbinger of the Gilded
+11.0.5.56487
 40235@@@Forged Marshal: The War Within Season 1
 40661@@@Zoomies!
 40870@@@Azeroth's Greatest Detective
@@ -15359,8 +15362,6 @@
 40872@@@I Saved the Party and All I Got Was This Lousy Hat
 40873@@@Crate Insurance Agent
 40886@@@<Hidden> Is Dracthyr For Soar Wingman
-40910@@@Successfully Stress Test CN Realms
-40939@@@Harbinger of the Gilded
 40967@@@Ratts' Revenge
 40976@@@A Cool Twenty Years
 40977@@@Codex Editor: Ahn'Qiraj
