@@ -249,10 +249,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					},
 				}),
 			}),
-			-- #else
-			-- This is the header for after 11.0.2 where they added the new list of items.
-			-- These items, while unfortunately removed from game with 11.1.0 when season 1 is over
-			-- persist in the database. The damage done to the loot tables here is forever.
+			-- #elseif AFTER 11.0.2
+			-- This is the header for after 11.0.2 where they re-added the timewalking list of items in TWW Season 1 for Heroic and temporary Mythic difficulty.
 			d(DIFFICULTY.DUNGEON.NORMAL, {
 				["nomerge"] = true,
 				["groups"] = MixedNormalAndHeroicLootTable,
@@ -317,6 +315,25 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 							i(133300),	-- Mark of Khardros
 						},
 					}),
+				}),
+			}),
+			-- #elseif AFTER 11.1.0
+			-- Return to the old version again when TWW Season 1 ends.
+			d(DIFFICULTY.DUNGEON.MULTI.NORMAL_HEROIC, MixedNormalAndHeroicLootTable),
+			d(DIFFICULTY.DUNGEON.HEROIC, {
+				e(131, {	-- General Umbriss
+					["crs"] = { 39625 },	-- General Umbriss
+					["groups"] = {
+						ach(5297),	-- Umbrage for Umbriss
+					},
+				}),
+				e(134, {	-- Erudax
+					["crs"] = { 40484 },	-- Erudax
+					["groups"] = {
+						ach(5298),	-- Don't Need to Break Eggs to Make an Omelet
+						ach(5062),	-- Heroic: Grim Batol
+						ach(5138),	-- Heroic: Grim Batol Guild Run
+					},
 				}),
 			}),
 			-- #endif
