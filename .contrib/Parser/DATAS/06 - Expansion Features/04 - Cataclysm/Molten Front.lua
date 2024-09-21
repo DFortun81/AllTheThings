@@ -1124,6 +1124,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 			}),
 			n(RARES, {
+				n(54338, {	-- Anthriss
+					["coord"] = { 54.8, 41.0, THE_MOLTEN_FRONT },
+				}),
 				o(207496, {	-- Dark Iron Treasure Chest
 					--["modelScale"] = 1.5,
 					["coords"] = {
@@ -1155,15 +1158,38 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						67117,	-- Woundsealer Spaulders
 					}},
 				}),
---[[
-					n(54338, {	-- Anthriss	}),
-					n(54322, {	-- Deth'tilac	}),
-					n(50959, {	-- Karkin	}),
-					n(54323, {	-- Kirix	}),
-					n(50815, {	-- Skarr	}),
-					n(54324, {	-- Skitterflame	}),
-					n(54321, {	-- Solix	}),
---]]
+				n(54322, {	-- Deth'tilac <The Smouldering Darkness>
+					["coords"] = {
+						{ 68.8, 71.2, THE_MOLTEN_FRONT },
+						{ 73.2, 59.4, THE_MOLTEN_FRONT },
+					},
+				}),
+				n(50959, {	-- Karkin
+					["coords"] = {
+						{ 33.6, 52.2, THE_MOLTEN_FRONT },
+						{ 37.6, 35.4, THE_MOLTEN_FRONT },
+					},
+				}),
+				n(54323, {	-- Kirix
+					["coords"] = {
+						{ 31.6, 56.8, THE_MOLTEN_FRONT },
+						{ 28.0, 61.6, THE_MOLTEN_FRONT },
+						{ 26.6, 66.4, THE_MOLTEN_FRONT },
+						{ 29.0, 73.0, THE_MOLTEN_FRONT },
+					},
+				}),
+				n(50815, {	-- Skarr
+					["coords"] = {
+						{ 36.8, 34.8, THE_MOLTEN_FRONT },
+						{ 33.6, 52.6, THE_MOLTEN_FRONT },
+					},
+				}),
+				n(54324, {	-- Skitterflame
+					["coord"] = { 20.0, 50.8, THE_MOLTEN_FRONT },
+				}),
+				n(54321, {	-- Solix
+					["coord"] = { 60.6, 59.6, THE_MOLTEN_FRONT },
+				}),
 			}),
 			n(VENDORS, {
 				n(53881, {	-- Ayla Shadowstorm <Treasures of Elune>
