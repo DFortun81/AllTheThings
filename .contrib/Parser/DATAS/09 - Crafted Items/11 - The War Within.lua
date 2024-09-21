@@ -2704,6 +2704,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		}),
 		prof(HERBALISM, {
 			q(81415),	-- 40/40 Overloading the Underground
+			q(81842),	-- Looting a hidden herb via a light source near the Spreading the Light objectives
 		}),
 		prof(MINING, {
 			q(82317),	-- 45/45 Mastering the Mysterious

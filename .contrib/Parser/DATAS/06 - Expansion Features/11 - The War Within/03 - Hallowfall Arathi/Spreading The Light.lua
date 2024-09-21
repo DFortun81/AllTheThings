@@ -556,7 +556,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					o(428472, {	-- Captain Lancekat's Discretionary Funds
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
-						["coord"] = { 66.5, 15.1, HALLOWFALL },
+						["coord"] = { 66.56, 15.14, HALLOWFALL },
 						["questID"] = 81612,
 						--["isWeekly"] = true,
 						["g"] = {
@@ -564,7 +564,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(224466),	-- Wilber The Chicken (QS!)
 						},
 					}),
-					o(437112, {	-- Claimmer's Kit
+					o(437112, {	-- Clammer's Kit
 						--when you loot it - other treasure which require this item vanish, so cannot be looted on same week?
 						["coord"] = { 61.9, 6.0, HALLOWFALL },
 						["questID"] = 80687,
@@ -605,7 +605,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					o(441723, {	-- Farm Satchel
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
-						["coord"] = { 64.9, 25.7, HALLOWFALL },
+						["coord"] = { 64.36, 26.03, HALLOWFALL },
 						["questID"] = 81988,
 						["g"] = {
 							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
