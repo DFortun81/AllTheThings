@@ -2770,16 +2770,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				working = true;
 			end
 
-			if app.Settings:GetTooltipSetting("SpecializationRequirements") then
-				local specs = GetFixedItemSpecInfo(itemID);
-				-- specs is already filtered/sorted to only current class
-				if specs and #specs > 0 then
-					tinsert(tooltipInfo, { right = GetSpecsString(specs, true, true) });
-				elseif sourceID then
-					tinsert(tooltipInfo, { right = L.NOT_AVAILABLE_IN_PL });
-				end
-			end
-
 			app.AddArtifactRelicInformation(itemID, rawlink, tooltipInfo, group);
 		end
 

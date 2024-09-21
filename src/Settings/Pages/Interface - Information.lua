@@ -960,6 +960,23 @@ local InformationTypes = {
 		end,
 	}),
 
+	CreateInformationType("SpecializationRequirements", {
+		priority = 9002,
+		text = "SpecializationRequirements",
+		Process = function(t, reference, tooltipInfo)
+			local itemID = reference.itemID
+			-- Currently excluded for Classic versions
+			if not itemID or not app.IsRetail then return end
+			local specs = app.GetFixedItemSpecInfo(itemID);
+			-- specs is already filtered/sorted to only current class
+			if specs and #specs > 0 then
+				tinsert(tooltipInfo, { right = app.GetSpecsString(specs, true, true) });
+			elseif reference.sourceID then
+				tinsert(tooltipInfo, { right = L.NOT_AVAILABLE_IN_PL });
+			end
+		end,
+	});
+
 	-- We want this after most of the regular fields.
 	CreateInformationType("OnTooltip", {
 		priority = 10000,
