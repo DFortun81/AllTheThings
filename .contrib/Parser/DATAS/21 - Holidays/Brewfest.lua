@@ -1345,6 +1345,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				-- #endif
 				-- #if AFTER 3.0.0
 				["provider"] = { "i", 37571 },    -- "Brew of the Month" Club Membership Form (current)
+				["repeatable"] = true,
 				-- #else
 				["provider"] = { "i", 37736 },    -- "Brew of the Month" Club Membership Form (original)
 				["description"] = "We're not sure if completing this at the moment will get you progress on the achievement during Wrath as it does NOT retain its completion status after acquired.",
