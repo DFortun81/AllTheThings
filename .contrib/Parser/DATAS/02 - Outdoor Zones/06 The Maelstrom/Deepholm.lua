@@ -414,13 +414,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 22.7, 52.0, DEEPHOLM },
 						["lvl"] = 82,
 					}),
-					applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29329, {	-- Elemental Bonds: Patience
-						["qg"] = 53738,	-- Aggra
-						["sourceQuest"] = 29337,	-- Into Constant Earth
-						["coord"] = { 56.5, 12.4, DEEPHOLM },
-						["timeline"] = { ADDED_4_2_0 },
-						["lvl"] = 85,
-					})),
 					q(27136, {	-- Elemental Energy
 						["qg"] = 43397,	-- Seer Kormo
 						["sourceQuest"] = 27123,	-- Deepholm, Realm of Earth
@@ -620,13 +613,6 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.4, 82.2, DEEPHOLM },
 						["lvl"] = 82,
 					}),
-					applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29338, {	-- Into Unrelenting Flame
-						["qg"] = 53738,	-- Aggra
-						["sourceQuest"] = 29329,	-- Elemental Bonds: Patience
-						["coord"] = { 64.0, 46.0, DEEPHOLM },
-						["timeline"] = { ADDED_4_2_0 },
-						["lvl"] = 85,
-					})),
 					q(26755, {	-- Keep Them off the Front
 						["qg"] = 43897,	-- Pyrium Lodestone
 						["sourceQuest"] = 26632,	-- Close Escort

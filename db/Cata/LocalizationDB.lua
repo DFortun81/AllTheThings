@@ -755,6 +755,7 @@ localize(L.HEADER_NAMES, {
 	[-1000872] = "Plunderstorm",
 	[-1000904] = "Source IDs",
 	[-1000905] = GUILD .. " " .. TUTORIAL_TITLE20,
+	[-1001034] = "Elemental Bonds",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -792,6 +793,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000380] = "This list contains Unobtainable items that the ATT Discord has reported as bugs that Blizzard has yet to fix.\n\nNOTE: All filters are ignored within this list for visibility. Only items removed from the game due to negligence rather than a gigantic fire breathing dragon are present on this list.\n\nTo Blizzard Devs: Please fix the items and encounters listed below.",
 	[-1000863] = "These items require the Legionnaire/Knight-Captain rank from Classic/Rated Battlegrounds or higher to purchase.",
 	[-1000872] = "Get swept away in the Plunderstorm— a fun, new, limited-time, pirate-themed event of prodigious proportions lasting the next several weeks. Scour the map and try to be the last pirate standing while dashing across the Arathi Highlands to find abilities, upgrades, and loot to plunder just to survive!\n\nTo Play: Login to Retail WoW and select 'Plunderstorm' from the Game Mode on the top left of your Character Select screen.",
+	[-1001034] = "The Elemental Bonds questline is an epic series of quests to restore Thrall to his former self after Majordomo Staghelm splits him into 4 essences of elements.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -965,6 +967,7 @@ localize(L.HEADER_ICONS, {
 	[-1000872] = "133168",
 	[-1000904] = "Interface/Icons/Inv_misc_questionmark",
 	[-1000905] = _.asset("Interface_Vendor"),
+	[-1001034] = "516313",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -3800,6 +3803,8 @@ _.ObjectNames = {
 	[208365] = "Recently Disturbed Dirt Mound",
 	[208376] = "Direhammer's Boots",
 	[208419] = "Grain Sack",
+	[208423] = "Cinderweb Egg Sac",
+	[208431] = "Cinderweb Egg Sac",
 	[208442] = "Blueroot Vine",
 	[208535] = "Dried Acorn",
 	[208545] = "Ash Pile",
@@ -6259,6 +6264,8 @@ _.ObjectModels = {
 	[208365] = 189528,
 	[208376] = 198140,
 	[208419] = 197608,
+	[208423] = 512894,
+	[208431] = 512894,
 	[208442] = 219489,
 	[208535] = 202297,
 	[208545] = 204112,
@@ -6321,6 +6328,7 @@ localize(L.HEADER_NAMES, {
 	[-1000380] = "Prima",
 	[-1000862] = "Gladiador cataclísmico: Season 11",
 	[-1000870] = "La incursión trol",
+	[-1001034] = "Vínculos Elementales",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -8002,6 +8010,8 @@ localize(_.ObjectNames, {
 	[208365] = "Montón de barro removido recientemente",
 	[208376] = "Botas de Martillo Funesto",
 	[208419] = "Saco de grano",
+	[208423] = "Saco de huevos de Telaceniza",
+	[208431] = "Saco de huevos de Telaceniza",
 	[208442] = "Parra raízañil",
 	[208535] = "Bellota seca",
 	[208545] = "Montón de ceniza",
@@ -8071,6 +8081,7 @@ localize(L.HEADER_NAMES, {
 	[-1000380] = "Kopfgeld",
 	[-1000862] = "Kataklysmischer Gladiator: Season 11",
 	[-1000870] = "Trollinvasion",
+	[-1001034] = "Elementare Bande",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -9758,6 +9769,8 @@ localize(_.ObjectNames, {
 	[208365] = "Vor kurzem aufgewühlter Erdhaufen",
 	[208376] = "Düsterhammers Stiefel",
 	[208419] = "Kornsack",
+	[208423] = "Aschenwebereiersack",
+	[208431] = "Aschenwebereiersack",
 	[208442] = "Blauknollenwinde",
 	[208535] = "Getrocknete Eichel",
 	[208545] = "Aschehaufen",
@@ -9852,6 +9865,7 @@ localize(L.HEADER_NAMES, {
 	[-1000861] = select(2,GetAchievementInfo(6124))..": Saison 10",
 	[-1000862] = "Gladiateur cataclysmique: Saison 11",
 	[-1000870] = "L’incursion trolle",
+	[-1001034] = "Liens élémentaires",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -11544,6 +11558,8 @@ localize(_.ObjectNames, {
 	[208365] = "Tas de terre remué récemment",
 	[208376] = "Bottes de Marteau-cruel",
 	[208419] = "Sac de grain",
+	[208423] = "Cocon d’œufs de braisetoile",
+	[208431] = "Cocon d’œufs de braisetoile",
 	[208442] = "Vrillebleue",
 	[208535] = "Gland séché",
 	[208545] = "Tas de cendre",
@@ -11604,6 +11620,7 @@ localize(L.HEADER_NAMES, {
 	[-1000380] = "Premio",
 	[-1000862] = "Gladiatore Cataclismico: Season 11",
 	[-1000870] = "L'incursione dei Troll",
+	[-1001034] = "Legami Elementali",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -12954,6 +12971,8 @@ localize(_.ObjectNames, {
 	[208365] = "Mucchio di Terra Recentemente Smosso",
 	[208376] = "Stivali di Fieromartello",
 	[208419] = "Sacco di Grano",
+	[208423] = "Sacca di Uova di Cinertela",
+	[208431] = "Sacca di Uova di Cinertela",
 	[208442] = "Radice di Bluetta",
 	[208535] = "Ghianda Essiccata",
 	[208545] = "Cumulo di Cenere",
@@ -13012,6 +13031,7 @@ localize(L.HEADER_NAMES, {
 	[-1000380] = "Recompensa",
 	[-1000862] = "Gladiador Cataclísmico: Season 11",
 	[-1000870] = "A incursão troll",
+	[-1001034] = "Prisão Elemental",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -14631,6 +14651,8 @@ localize(_.ObjectNames, {
 	[208365] = "Monturo de Terra Remexido Recentemente",
 	[208376] = "Botas do Martelo Cruel",
 	[208419] = "Saco de Grãos",
+	[208423] = "Bolsa de Ovos de Teia de Cinzas",
+	[208431] = "Bolsa de Ovos de Teia de Cinzas",
 	[208442] = "Vinha Raizul",
 	[208535] = "Semente Seca",
 	[208545] = "Montículo de Cinzas",
@@ -14733,6 +14755,7 @@ localize(L.HEADER_NAMES, {
 	[-1000862] = "Гладиатор Катаклизма: Сезон 11",
 	[-1000870] = "Вторжение троллей",
 	[-1000872] = "Пиратская буря",
+	[-1001034] = "Власть стихий",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -16436,6 +16459,8 @@ localize(_.ObjectNames, {
 	[208365] = "Свежая куча грязи",
 	[208376] = "Сапоги Лютомолота",
 	[208419] = "Мешок зерна",
+	[208423] = "Яйца пеплопряда",
+	[208431] = "Яйца пеплопряда",
 	[208442] = "Лазоревый корень",
 	[208535] = "Сухой желудь",
 	[208545] = "Кучка пепла",
@@ -16714,6 +16739,7 @@ localize(L.HEADER_NAMES, {
 	[-1000380] = "하사품",
 	[-1000862] = "격변한 검투사: Season 11",
 	[-1000870] = "트롤의 난입",
+	[-1001034] = "정령의 속박",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -18331,6 +18357,8 @@ localize(_.ObjectNames, {
 	[208317] = "대족장의 명령 게시판",
 	[208365] = "최근에 건드려진 흙더미",
 	[208376] = "다이어해머의 장화",
+	[208423] = "잿그물 알 주머니",
+	[208431] = "잿그물 알 주머니",
 	[208442] = "푸른뿌리 덩굴",
 	[208545] = "재무더기",
 	[208549] = "부두 더미",
@@ -18428,6 +18456,7 @@ localize(L.HEADER_NAMES, {
 	[-1000862] = "灾变角斗士：第11赛季",
 	[-1000870] = "巨魔来袭",
 	[-1000905] = GUILD .. "商人",
+	[-1001034] = "元素誓约",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",

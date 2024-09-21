@@ -508,12 +508,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27669,	-- Do the Honors
 					["isBreadcrumb"] = true,
 				}),
-				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29327, {	-- Elemental Bonds: Doubt
-					["qg"] = 53524,	-- Cyclonas
-					["sourceQuest"] = 29335,	-- Into Slashing Winds
-					["coord"] = { 47.7, 88.9, ULDUM },
-					["timeline"] = { ADDED_4_2_0 },
-				})),
 				q(28112, {	-- Escape From the Lost City
 					["qg"] = 46872,	-- Prince Nadun
 					["coord"] = { 59.5, 72.0, ULDUM },
@@ -707,23 +701,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 54.9, 32.7, ULDUM },
 					["sourceQuest"] = 28112,	-- Escape From the Lost City
 				}),
-				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29336, {	-- Into Coaxing Tides
-					["qg"] = 53519,	-- Aggra
-					["sourceQuest"] = 29327,	-- Elemental Bonds: Doubt
-					["coord"] = { 34.3, 77.6, ULDUM },
-					["timeline"] = { ADDED_4_2_0 },
-					["groups"] = {
-						objective(1, {	-- 0/1 Speak with Nomarch Teneth
-							["provider"] = { "n", 46603 },	-- Nomarch Teneth
-						}),
-						objective(2, {	-- 0/1 Speak with Sun Priest Asaris
-							["provider"] = { "n", 47715 },	-- Sun Priest Asaris
-						}),
-						objective(3, {	-- 0/1 Speak with Asaq
-							["provider"] = { "n", 47930 },	-- Asaq
-						}),
-					},
-				})),
 				q(28353, {	-- Jonesy Sent For You
 					["qg"] = 48431,	-- Sullah
 					["coord"] = { 29.6, 21.8, ULDUM },

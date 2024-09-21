@@ -1068,17 +1068,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 40278,	-- Tholo Whitehoof
 					["coord"] = { 64.0, 22.4, MOUNT_HYJAL },
 				}),
-				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29335, {	-- Into Slashing Winds
-					["qg"] = 54312,	-- Aggra
-					["sourceQuest"] = 29326,	-- The Nordrassil Summit
-					["coord"] = { 60.2, 30.1, MOUNT_HYJAL },
-					["timeline"] = { ADDED_4_2_0 },
-					["groups"] = {
-						objective(1, {	-- 0/4 Twilight Inciter slain
-							["provider"] = { "n", 39926 },	-- Twilight Inciter
-						}),
-					},
-				})),
 				q(25624, {	-- Into the Maw!
 					["qg"] = 39432,	-- Takrik Ragehowl
 					["altQuests"] = { 25617 },	-- Into the Maw!
@@ -1785,25 +1774,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 					["isDaily"] = true,
 				}),
-				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29439, {	-- The Call of the World-Shaman (A)
-					["qg"] = 45226,	-- Naraat the Earthspeaker
-					["coord"] = { 74.4, 18.8, STORMWIND_CITY },
-					["timeline"] = { ADDED_4_2_0 },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				})),
-				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29440, {	-- The Call of the World-Shaman (H)
-					["qg"] = 45244,	-- Farseer Krogar
-					["coord"] = { 50.4, 38.2, ORGRIMMAR },
-					["timeline"] = { ADDED_4_2_0 },
-					["races"] = HORDE_ONLY,
-					["isBreadcrumb"] = true,
-					["groups"] = {
-						objective(1, {	-- 0/1 Lylagar slain
-							["provider"] = { "n", 52766 },	-- Lylagar
-						}),
-					},
-				})),
 				q(25320, {	-- The Captured Scout
 					["qg"] = 38917,	-- Alysra
 					["sourceQuest"] = 25430,	-- Emerald Allies
@@ -1979,26 +1949,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "To get this quest DO NOT accept another version from Subjugated Inferno Lord after \"A New Master\", instead head back to Tyrus Blackhorn.",
 					["coord"] = { 22.2, 44.8, MOUNT_HYJAL },
 				}),
-				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29326, {	-- The Nordrassil Summit
-					["qg"] = 54313,	-- Thrall
-					["sourceQuests"] = {
-						29439,	-- The Call of the World-Shaman (A)
-						29440,	-- The Call of the World-Shaman (H)
-					},
-					["coord"] = { 60.6, 31.4, MOUNT_HYJAL },
-					["timeline"] = { ADDED_4_2_0 },
-					["groups"] = {
-						objective(1, {	-- 0/1 Northern Firestone Examined
-							["provider"] = { "o", 202765 },	-- Northern Firestone
-						}),
-						objective(2, {	-- 0/1 Central Firestone Examined
-							["provider"] = { "o", 202764 },	-- Central Firestone
-						}),
-						objective(3, {	-- 0/1 Southern Firestone Examined
-							["provider"] = { "o", 202763 },	-- Southern Firestone
-						}),
-					},
-				})),
 				q(29126, {	-- The Power of Malorne
 					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29125,	-- Between the Trees

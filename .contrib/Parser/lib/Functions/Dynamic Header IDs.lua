@@ -154,6 +154,7 @@ HeaderAssignments = {
 	["Duskwood Active"] = -1000330,
 	["East"] = -1000000,
 	["Eastern Kingdoms Cup"] = -1000210,
+	["Elemental Bonds"] = -1001034,
 	["Elemental Unrest"] = -1000232,
 	["Elite"] = -1000100,
 	["Elite Gear"] = -1000140,
@@ -522,4 +523,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001034;
+NextHeaderID = -1001035;

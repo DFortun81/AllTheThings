@@ -409,20 +409,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 42.8, 51.0, VASHJIR_ABYSSAL_DEPTHS },
 							["races"] = HORDE_ONLY,
 						}),
-						applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29328, {	-- Elemental Bonds: Desire
-							["qg"] = 53652,	-- Aggra
-							["sourceQuest"] = 29336,	-- Into Coaxing Tides
-							["coord"] = { 69.8, 34.2, VASHJIR_ABYSSAL_DEPTHS },
-							["timeline"] = { ADDED_4_2_0 },
-							["groups"] = {
-								objective(1, {	-- 0/4 Coldlight Hunter slain
-									["provider"] = { "n", 41925 },	-- Coldlight Hunter
-								}),
-								objective(2, {	-- 0/4 Coldlight Oracle slain
-									["provider"] = { "n", 41926 },	-- Coldlight Oracle
-								}),
-							},
-						})),
 						q(26019, {	-- Enormous Eel Egg (A)
 							["provider"] = { "i", 56571 },	-- Enormous Eel Egg
 							["sourceQuest"] = 26015,	-- Phosphora Hunting
@@ -536,12 +522,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 							["races"] = HORDE_ONLY,
 						}),
-						applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, q(29337, {	-- Into Constant Earth
-							["qg"] = 53652,	-- Aggra
-							["sourceQuest"] = 29328,	-- Elemental Bonds: Desire
-							["coord"] = { 69.8, 34.2, VASHJIR_ABYSSAL_DEPTHS },
-							["timeline"] = { ADDED_4_2_0 },
-						})),
 						q(26072, {	-- Into the Totem
 							["qg"] = 41600,	-- Erunak Stonespeaker
 							["sourceQuests"] = {
