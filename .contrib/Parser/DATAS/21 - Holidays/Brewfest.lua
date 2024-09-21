@@ -191,6 +191,93 @@ local BREWFEST_2024_OnUpdate = [[function(t)
 end]];
 -- #endif
 
+-- Helper functions for the filled steins
+local barleybrewclear = function(t)		-- Barleybrew Clear - Alliance
+	t.provider = { "o", 186183 };	-- Barleybrew Festive Keg
+	t.coord = { 48.8, 39.8, DUN_MOROGH };
+	return t;
+end
+local thunderfortyfive = function(t)	-- Thunder 45 - Alliance
+	t.provider = { "o", 186184 };	-- Thunderbrew Festive Keg
+	t.coord = { 56.6, 37.2, DUN_MOROGH };
+	return t;
+end
+local gordokgrog = function(t)			-- Gordok Grog - Alliance/Horde
+	t.provider = { "o", 186185 };	-- Gordok Festive Keg
+	t.coords = {
+		{ 55.6, 36.8, DUN_MOROGH },
+		-- #if AFTER CATA
+		{ 41.0, 17.0, DUROTAR },
+		-- #else
+		{ 44.2, 16.6, DUROTAR },
+		-- #endif
+	};
+	return t;
+end
+local smallstepbrew = function(t)		-- Small Step Brew - Horde]
+	t.provider = { "o", 186186 };	-- Drohn's Distillery Festive Keg
+	t.coords = {
+		-- #if AFTER CATA
+		{ 40.8, 18.0, DUROTAR },
+		-- #else
+		{ 44.4, 17.6, DUROTAR },
+		-- #endif
+	};
+	return t;
+end
+local jungleriverwater = function(t)	-- Jungle River Water - Horde
+	t.provider = { "o", 186187 };	-- T'chali's Voodoo Brew Festive Keg
+	t.coords = {
+		-- #if AFTER CATA
+		{ 40.2, 17.4, DUROTAR },
+		-- #else
+		{ 43.6, 17.6, DUROTAR },
+		-- #endif
+	};
+	return t;
+end
+local OnInitForStein = function(rwp)
+	-- This init function unmarks the removed from game flag for folks with the stein.
+	return [[function(t)
+		if ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ < 1 then
+			local any;
+			if t.g then
+				for i,o in ipairs(t.g) do
+					if ]] .. WOWAPI_GetItemCount("o.itemID") .. [[ > 0 then
+						any = true;
+						break;
+					end
+				end
+			end
+			if not any then return t; end
+		end
+		t.u = nil;
+		t.rwp = ]] .. (rwp or "nil") .. [[;
+		if t.g then
+			for i,o in ipairs(t.g) do
+				o.u = nil;
+				o.rwp = ]] .. (rwp or "nil") .. [[;
+			end
+		end
+		return t;
+	end]];
+end
+local fillstein = function(t)
+	-- Apply the keg data to each of the filled steins (NOTE: They must be in order!)
+	local g = t.groups or t.g;
+	barleybrewclear(g[1]);	-- Barleybrew Clear - Alliance
+	thunderfortyfive(g[2]);	-- Thunder 45 - Alliance
+	gordokgrog(g[3]);		-- Gordok Grog - Alliance/Horde
+	smallstepbrew(g[4]);	-- Small Step Brew - Horde]
+	jungleriverwater(g[5]);	-- Jungle River Water - Horde
+	
+	-- #if AFTER CATA
+	t.description = "Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!";
+	if t.timeline then bubbleDown({ ["timeline"] = t.timeline }, g); end
+	-- #endif
+	return t;
+end
+
 root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 	n(ACHIEVEMENTS, {
 		ach(18579, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- A Round on the House
@@ -1991,10 +2078,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 		["f"] = COSMETIC,	-- These Steins turn into 'Miscellanous' filter, which doesn't allow SourceIDs to be attached in Retail
 		-- #ENDIF
 	},{
-		-- #if AFTER TRANSMOG
-		i(33016, bubbleDown({ ["timeline"] = { ADDED_2_4_3, REMOVED_3_0_2 } }, {	-- Blue Brewfest Stein
-			["description"] = "Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
+		fillstein(i(33016, {	-- Blue Brewfest Stein
 			["lore"] = "This stein was the reward from the 2008 Brewfest.",
+			["timeline"] = { ADDED_2_4_3, REMOVED_3_0_2 },
+			["OnInit"] = OnInitForStein(30002),
 			["groups"] = {
 				i(33017),	-- Filled Blue Brewfest Stein [Barleybrew Clear - Alliance]
 				i(33018),	-- Filled Blue Brewfest Stein [Thunder 45 - Alliance]
@@ -2003,19 +2090,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				i(33021),	-- Filled Blue Brewfest Stein [Jungle River Water - Horde]
 			},
 		})),
-		-- #else
-		i(33016, {	-- Blue Brewfest Stein
-			["lore"] = "This stein was the reward from the 2008 Brewfest.",
-			["timeline"] = { ADDED_2_4_3, REMOVED_3_0_2 },
-			["groups"] = {
-				i(33017),	-- Filled Blue Brewfest Stein [Barleybrew Clear - Alliance]
-				i(33018),	-- Filled Blue Brewfest Stein [Thunder 45 - Alliance]
-				i(33019),	-- Filled Blue Brewfest Stein [Gordok Grog - Alliance/Horde]
-				i(33020),	-- Filled Blue Brewfest Stein [Small Step Brew - Horde]
-				i(33021),	-- Filled Blue Brewfest Stein [Jungle River Water - Horde]
-			},
-		}),
-		-- #endif
 		i(169448, {	-- Bottomless Brewfest Stein
 			-- #if AFTER TRANSMOG
 			["description"] = "Fill up the stein with one brew, unequip and re-equip the filled stein, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
@@ -2029,40 +2103,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				i(169455),	-- Filled Bottomless Brewfest Stein [Jungle River Water - Horde]
 			},
 		}),
-		-- #if AFTER TRANSMOG
-		i(37892, bubbleDown({ ["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 } }, {	-- Green Brewfest Stein
-			["description"] = "Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
-			["lore"] = "This stein was the reward from the 2009 & 2010 Brewfest.",
-			["groups"] = {
-				i(37893),	-- Filled Green Brewfest Stein [Barleybrew Clear - Alliance]
-				i(37894),	-- Filled Green Brewfest Stein [Thunder 45 - Alliance]
-				i(37895),	-- Filled Green Brewfest Stein [Gordok Grog - Alliance/Horde]
-				i(37896),	-- Filled Green Brewfest Stein [Small Step Brew - Horde]
-				i(37897),	-- Filled Green Brewfest Stein [Jungle River Water - Horde]
-			},
-		})),
-		-- #else
-		i(37892, {	-- Green Brewfest Stein
+		fillstein(i(37892, {	-- Green Brewfest Stein
 			["lore"] = "This stein was the reward from the 2009 & 2010 Brewfest.",
 			["timeline"] = { ADDED_3_0_2, REMOVED_4_0_1 },
+			["OnInit"] = OnInitForStein(40001),
 			["groups"] = {
 				i(37893),	-- Filled Green Brewfest Stein [Barleybrew Clear - Alliance]
 				i(37894),	-- Filled Green Brewfest Stein [Thunder 45 - Alliance]
-				i(37895),	-- Filled Green Brewfest Stein [Gordok Grog - Alliance/Horde]
+				i(37897),	-- Filled Green Brewfest Stein [Gordok Grog - Alliance/Horde]
 				i(37896),	-- Filled Green Brewfest Stein [Small Step Brew - Horde]
-				i(37897),	-- Filled Green Brewfest Stein [Jungle River Water - Horde]
+				i(37895),	-- Filled Green Brewfest Stein [Jungle River Water - Horde]
 			},
-		}),
-		-- #endif
-
+		})),
 		i(56836, {	-- Overflowing Purple Brewfest Stein
 			["lore"] = "This stein was the reward from the 2011 Brewfest onward.",
 			["timeline"] = { ADDED_4_0_1 },
 		}),
-		-- #if AFTER TRANSMOG
-		i(32912, bubbleDown({ ["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 } }, {	-- Yellow Brewfest Stein
-			["description"] = "Fill up the stein with one brew, relog, and then manually refresh your collection. Once it has registered, move on to the next brew and repeat.\n\nBarleybrew Clear and Thunder 45 can only be found in Dun Morogh, while Small Step Brew and Jungle River Water can be only found in Durotar. Gordok Grog is in both areas. Players can use the opposite faction's kegs; it just requires a little traveling!",
+		fillstein(i(32912, {	-- Yellow Brewfest Stein
 			["lore"] = "This stein was the reward from the 2007 Brewfest.",
+			["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
+			["OnInit"] = OnInitForStein(20403),
 			["groups"] = {
 				i(32915),	-- Filled Yellow Brewfest Stein [Barleybrew Clear - Alliance]
 				i(32917),	-- Filled Yellow Brewfest Stein [Thunder 45 - Alliance]
@@ -2071,19 +2131,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				i(32920),	-- Filled Yellow Brewfest Stein [Jungle River Water - Horde]
 			},
 		})),
-		-- #else
-		i(32912, {	-- Yellow Brewfest Stein
-			["lore"] = "This stein was the reward from the 2007 Brewfest.",
-			["timeline"] = { ADDED_2_0_1, REMOVED_2_4_3 },
-			["groups"] = {
-				i(32915),	-- Filled Yellow Brewfest Stein [Barleybrew Clear - Alliance]
-				i(32917),	-- Filled Yellow Brewfest Stein [Thunder 45 - Alliance]
-				i(32918),	-- Filled Yellow Brewfest Stein [Gordok Grog - Alliance/Horde]
-				i(32919),	-- Filled Yellow Brewfest Stein [Small Step Brew - Horde]
-				i(32920),	-- Filled Yellow Brewfest Stein [Jungle River Water - Horde]
-			},
-		}),
-		-- #endif
 	})),
 	n(VENDORS, {
 		-- #if ANYCLASSIC
