@@ -2111,8 +2111,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 			i(209024, {	-- Loot-Filled Pumpkin (Epic Bag after 10.1.7 Rework)
 				["timeline"] = { ADDED_10_1_7 },
-				["description"] = "Only your first daily attempt per Battle.net account has a chance to drop the unique rewards, such as mounts, pets, toys, and manuscripts. The drop chance increases with every failed attempt.\nBlizzard have not specified which items are subject to this system.",
-				-- ["description"] = HOLIDAY_DROP,
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
 					{ "pop" },	-- Get the Rewards.

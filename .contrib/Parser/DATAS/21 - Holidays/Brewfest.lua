@@ -523,10 +523,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 				["timeline"] = { ADDED_3_0_2 },
 			}),
 			i(117393, {	-- Keg-Shaped Treasure Chest	(Epic Quality)
-				-- #if AFTER 10.0.5
-				["description"] = "Only your first daily attempt per Battle.net account has a chance to drop the unique rewards, such as mounts, pets, toys, and manuscripts. The drop chance increases with every failed attempt.\nBlizzard have not specified which items are subject to this system.",
-				-- ["description"] = HOLIDAY_DROP,
-				-- #endif
 				["timeline"] = { ADDED_6_0_2 },
 				["lvl"] = 98,
 				["groups"] = appendGroups(BREWFEST_TOKEN, {

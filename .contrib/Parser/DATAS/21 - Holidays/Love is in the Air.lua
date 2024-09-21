@@ -3084,9 +3084,6 @@ for i,o in ipairs({
 			i(54537, {	-- Heart-Shaped Box
 				-- #if BEFORE 10.0.5
 				["description"] = "You can loot the Heart-Shaped Box once a day per character by queueing for the encounter in the Dungeon Finder.",
-				-- #else
-				["description"] = "Only your first daily attempt per Battle.net account has a chance to drop the unique rewards, such as mounts, pets, toys, and manuscripts. The drop chance increases with every failed attempt.\nBlizzard have not specified which items are subject to this system.",
-				-- ["description"] = HOLIDAY_DROP,
 				-- #endif
 				["timeline"] = { ADDED_3_3_0 },
 				-- Minimum level this box drops (not 100% sure)
