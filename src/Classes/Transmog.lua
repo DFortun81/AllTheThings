@@ -23,6 +23,9 @@ if not C_TransmogCollection then
 	return
 end
 
+local RETRIEVING_DATA
+	= RETRIEVING_DATA
+
 -- WoW API Cache
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
@@ -721,6 +724,29 @@ do
 	end
 end
 
+local function GetLinkTooltipInfo(sourceGroup, useItemIDs, sameItem)
+	local link = sourceGroup.link or sourceGroup.silentLink
+	if IsRetrieving(link) then
+		return { left = RETRIEVING_DATA , working = true }
+	end
+	local text
+	if sourceGroup.e or sourceGroup.u then
+		local texture = app.GetUnobtainableTexture(sourceGroup);
+		if texture then
+			text = "|T" .. texture .. ":0|t";
+		else
+			text = "   ";
+		end
+	else
+		text = "   ";
+	end
+	local itemID = sourceGroup.modItemID or sourceGroup.itemID or sourceGroup.silentItemID;
+	return {
+		left = text .. link .. (useItemIDs and (" (" .. ((sameItem and "(*)" or itemID) or "???") .. ")") or ""),
+		right = app.GetCollectionIcon(sourceGroup.collected)
+	}
+end
+
 -- External Functionality
 app.AddSourceInformation = function(sourceID, info, group)
 	local sourceInfo = sourceID and C_TransmogCollection_GetSourceInfo(sourceID);
@@ -736,52 +762,29 @@ app.AddSourceInformation = function(sourceID, info, group)
 			tinsert(info, 1, { left = L.FORCE_REFRESH_REQUIRED, wrap = true, color = app.Colors.TooltipDescription });
 		end
 		if app.Settings:GetTooltipSetting("SharedAppearances") then
-			local text;
+			local text, linkInfo
 			local useItemIDs, origSource = app.Settings:GetTooltipSetting("itemID"), app.Settings:GetTooltipSetting("IncludeOriginalSource")
 			if app.Settings:GetTooltipSetting("OnlyShowRelevantSharedAppearances") then
 				-- The user doesn't want to see Shared Appearances that don't match the item's requirements.
 				for i,otherSourceID in ipairs(allVisualSources) do
 					if otherSourceID == sourceID and not sourceGroup.missing then
 						if origSource then
-							local link = sourceGroup.link or sourceGroup.silentLink;
-							if not link then
-								link = RETRIEVING_DATA;
-								working = true;
+							linkInfo = GetLinkTooltipInfo(sourceGroup, useItemIDs, true)
+							if not working and linkInfo.working then
+								working = true
 							end
-							if sourceGroup.e or sourceGroup.u then
-								local texture = app.GetUnobtainableTexture(sourceGroup);
-								if texture then
-									text = "|T" .. texture .. ":0|t";
-								else
-									text = "   ";
-								end
-							else
-								text = "   ";
-							end
-							tinsert(info, { left = text .. link .. (useItemIDs and " (*)" or ""), right = app.GetCollectionIcon(AccountSources[sourceID])});
+							info[#info + 1] = linkInfo
 						end
 					else
 						local otherATTSource = app.SearchForObject("sourceID", otherSourceID, "field");
 						if otherATTSource then
 							-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
 							if (sourceGroup.f == otherATTSource.f or sourceGroup.f == 2 or otherATTSource.f == 2) and not otherATTSource.nmc and not otherATTSource.nmr then
-								local link = otherATTSource.link or otherATTSource.silentLink;
-								local otherItemID = otherATTSource.modItemID or otherATTSource.itemID or otherATTSource.silentItemID;
-								if not link then
-									link = RETRIEVING_DATA;
-									working = true;
+								linkInfo = GetLinkTooltipInfo(otherATTSource, useItemIDs)
+								if not working and linkInfo.working then
+									working = true
 								end
-								if otherATTSource.e or otherATTSource.u then
-									local texture = app.GetUnobtainableTexture(otherATTSource);
-									if texture then
-										text = "|T" .. texture .. ":0|t";
-									else
-										text = "   ";
-									end
-								else
-									text = "   ";
-								end
-								tinsert(info, { left = text .. link .. (useItemIDs and (" (" .. (otherItemID or "???") .. ")") or ""), right = app.GetCollectionIcon(otherATTSource.collected)});
+								info[#info + 1] = linkInfo
 							end
 						else
 							local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
@@ -803,46 +806,20 @@ app.AddSourceInformation = function(sourceID, info, group)
 				for i,otherSourceID in ipairs(allVisualSources) do
 					if otherSourceID == sourceID and not sourceGroup.missing then
 						if origSource then
-							local link = sourceGroup.link or sourceGroup.silentLink;
-							if not link then
-								link = RETRIEVING_DATA;
-								working = true;
+							linkInfo = GetLinkTooltipInfo(sourceGroup, useItemIDs, true)
+							if not working and linkInfo.working then
+								working = true
 							end
-							if sourceGroup.e or sourceGroup.u then
-								local texture = app.GetUnobtainableTexture(sourceGroup);
-								if texture then
-									text = "|T" .. texture .. ":0|t";
-								else
-									text = "   ";
-								end
-							else
-								text = "   ";
-							end
-							tinsert(info, { left = text .. link .. (useItemIDs and " (*)" or ""), right = app.GetCollectionIcon(AccountSources[sourceID])});
+							info[#info + 1] = linkInfo
 						end
 					else
 						local otherATTSource = app.SearchForObject("sourceID", otherSourceID, "field");
 						if otherATTSource then
-							-- Show information about the appearance:
+							linkInfo = GetLinkTooltipInfo(otherATTSource, useItemIDs)
+							if not working and linkInfo.working then
+								working = true
+							end
 							local failText = "";
-							local link = otherATTSource.link or otherATTSource.silentLink;
-							if not link then
-								link = RETRIEVING_DATA;
-								working = true;
-							end
-							if otherATTSource.e or otherATTSource.u then
-								local texture = app.GetUnobtainableTexture(otherATTSource);
-								if texture then
-									text = "|T" .. texture .. ":0|t";
-								else
-									text = "   ";
-								end
-							else
-								text = "   ";
-							end
-							local otherItemID = otherATTSource.modItemID or otherATTSource.itemID or otherATTSource.silentItemID;
-							text = text .. link .. (useItemIDs and (" (" .. (otherItemID or "???") .. ")") or "");
-
 							-- Show all of the reasons why an appearance does not meet given criteria.
 							-- Only show Shared Appearances that match the requirements for this class to prevent people from assuming things.
 							if sourceGroup.f ~= otherATTSource.f then
@@ -865,8 +842,8 @@ app.AddSourceInformation = function(sourceID, info, group)
 								-- Should be fine
 							end
 
-							if #failText > 0 then text = text .. " |CFFFF0000(" .. failText .. ")|r"; end
-							tinsert(info, { left = text, right = app.GetCollectionIcon(otherATTSource.collected)});
+							if #failText > 0 then linkInfo.left = linkInfo.left .. " |CFFFF0000(" .. failText .. ")|r"; end
+							info[#info + 1] = linkInfo
 						else
 							local otherSource = C_TransmogCollection_GetSourceInfo(otherSourceID);
 							if otherSource then
