@@ -901,7 +901,7 @@ local InformationTypes = {
 	-- Summary Information Types
 	CreateInformationType("CompletedBy", { text = L.COMPLETED_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForCompletedBy });
 	CreateInformationType("KnownBy", { text = L.KNOWN_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForKnownBy });
-	CreateInformationType("extraDescription", { text = "extraDescription", priority = 2.51, HideCheckBox = true, ForceActive = true,
+	CreateInformationType("extraInfo", { text = "extraInfo", priority = 2.51, HideCheckBox = true, ForceActive = true,
 		Process = function(t, reference, tooltipInfo)
 			local itemID = reference.itemID
 			if itemID then
@@ -938,6 +938,24 @@ local InformationTypes = {
 						tinsert(tooltipInfo, 1, { left = L.MOP_REMIX_BRONZE_DESC, color = app.Colors.SourceIgnored });
 					end
 				end
+			end
+
+			-- Description for Unobtainable Things
+			if reference.u and (not reference.crs or reference.itemID or reference.sourceID) then
+				-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
+				if reference.u == 1 and app.GetRelativeValue(reference, "_missing") then
+					tinsert(tooltipInfo, { left = L.UNSORTED_DESC, wrap = true, color = app.Colors.ChatLinkError });
+				else
+					-- removed BoE seen with a non-generic BonusID, potentially a level-scaled drop made re-obtainable
+					if reference.u == 2 and not app.IsBoP(reference) and (reference.bonusID or 3524) ~= 3524 then
+						tinsert(tooltipInfo, { left = L.RECENTLY_MADE_OBTAINABLE });
+					end
+				end
+			end
+
+			-- Limited availability
+			if reference.isLimited then
+				tinsert(tooltipInfo, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = app.Colors.TooltipDescription });
 			end
 		end,
 	}),

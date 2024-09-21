@@ -2783,23 +2783,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			app.AddArtifactRelicInformation(itemID, rawlink, tooltipInfo, group);
 		end
 
-		if group.isLimited then
-			tinsert(tooltipInfo, 1, { left = L.LIMITED_QUANTITY, wrap = false, color = app.Colors.TooltipDescription });
-		end
-
-		-- Description for Items
-		if group.u and (not group.crs or group.itemID or group.sourceID) then
-			-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
-			if group.u == 1 and app.GetRelativeValue(group, "_missing") then
-				tinsert(tooltipInfo, { left = L.UNSORTED_DESC, wrap = true, color = app.Colors.ChatLinkError });
-			else
-				-- removed BoE seen with a non-generic BonusID, potentially a level-scaled drop made re-obtainable
-				if group.u == 2 and not app.IsBoP(group) and (group.bonusID or 3524) ~= 3524 then
-					if isTopLevelSearch then tinsert(tooltipInfo, { left = L.RECENTLY_MADE_OBTAINABLE }); end
-				end
-			end
-		end
-
 		if group.g and app.Settings:GetTooltipSetting("SummarizeThings") then
 			-- Sort by the heirarchy of the group
 			if not working then
