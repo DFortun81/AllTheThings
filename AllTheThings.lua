@@ -579,6 +579,8 @@ app.MergeSkipFields = {
 	isYearly = 1,
 	OnUpdate = 1,
 	requireSkill = 1,
+	modID = 1,
+	bonusID = 1,
 };
 -- Fields on a Thing which are specific to where the Thing is Sourced or displayed in a ATT window
 app.SourceSpecificFields = {
@@ -2411,6 +2413,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	if group then
 		if a then paramA = a; end
 		if b then paramB = b; end
+		if paramA == "modItemID" then paramA = "itemID" end
 		-- Move all post processing here?
 		if #group > 0 then
 			-- For Creatures and Encounters that are inside of an instance, we only want the data relevant for the instance + difficulty.
