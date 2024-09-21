@@ -2111,7 +2111,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			}),
 			i(209024, {	-- Loot-Filled Pumpkin (Epic Bag after 10.1.7 Rework)
 				["timeline"] = { ADDED_10_1_7 },
-				["description"] = "You can loot the Loot-Stuffed Filled Pumpkin once a day per character by queueing for the encounter in the Dungeon Finder.\nThe first Loot-Stuffed Filled Pumpkin you get per day per |CFFFF0000account|r has a vastly increased chance to contain collectables such as mount mods, mounts, pets, and toys.\n\nThis bag has a higher chance of dropping The Horseman's Reins with more curses applied, as confirmed in a blue post on October 18, 2023.\nThe effect on other items' drop rates remains unknown.",
+				["description"] = "Only your first daily attempt per Battle.net account has a chance to drop the unique rewards, such as mounts, pets, toys, and manuscripts. The drop chance increases with every failed attempt.\nBlizzard have not specified which items are subject to this system.",
+				-- ["description"] = HOLIDAY_DROP,
 				["sym"] = {
 					{ "selectparent", 2 },	-- Select the holiday root.
 					{ "pop" },	-- Get the Rewards.

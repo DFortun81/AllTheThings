@@ -291,6 +291,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				},
 			}),
 			i(117394, {	-- Satchel of Chilled Goods [Epic Quality]
+				["description"] = "Only your first daily attempt per Battle.net account has a chance to drop the unique rewards, such as mounts, pets, toys, and manuscripts. The drop chance increases with every failed attempt.\nBlizzard have not specified which items are subject to this system.",
+				-- ["description"] = HOLIDAY_DROP,
 				["timeline"] = { ADDED_6_0_2 },
 				["groups"] = {
 					i(138838, {	-- Illusion: Deathfrost (ILLUSION!)
@@ -304,8 +306,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 					}),
 					i(224163, {	-- Cliffside Wylderdrake: Midsummer Fire Festival Armor (MM!)
 						["timeline"] = { ADDED_10_2_7 },
-						["description"] = "Only your first daily attempt per Battle.net account has a chance to drop this item. The drop chance increases with every daily attempt.",
-						-- ["description"] = HOLIDAY_DROP,	I can't get this to work but it would be good if we could re-use this, as this logic is being used from Midsummer onward
 					}),
 					q(83134, {	-- Increased Cliffside Wylderdrake: Midsummer Fire Festival Armor Droprate (Daily Accountwide)
 						["name"] = "Increased Cliffside Wylderdrake: Midsummer Fire Festival Armor Droprate (Daily Accountwide)",

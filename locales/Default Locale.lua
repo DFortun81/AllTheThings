@@ -253,7 +253,7 @@ local L = setmetatable({
 	RELOG_REQUIRED = "After using this, it is typically required to logout & login to collect all the items correctly on the game servers.";
 	RACE_LOCKED = "Race Locked";
 	ENSEMBLE_LEARNED = "This Ensemble has already been used by one of your characters";
-	HOLIDAY_DROP = "Only your first daily attempt per Battle.net account has a chance to drop this item. The drop chance increases with every daily attempt.";
+	HOLIDAY_DROP = "Only your first daily attempt per Battle.net account has a chance to drop the unique rewards, such as mounts, pets, toys, and manuscripts. The drop chance increases with every failed attempt.\nBlizzard have not specified which items are subject to this system.";
 	ADHOC_UNIQUE_COLLECTED_INFO = "This Item is Unique-Collected but failed to be detected due to missing Blizzard API information.\n\nIt will be fixed after the next Force-Refresh.";
 
 	-- Windows
