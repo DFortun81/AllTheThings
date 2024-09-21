@@ -313,8 +313,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
+				q(29244, {	-- A Lieutenant of Flame
+					["qg"] = 52493,	-- Captain Saynna Stormrunner
+					["u"] = REMOVED_FROM_GAME,
+				}),
 				q(29298, {	-- A Smoke-Stained Locket
-					["provider"] = { "i", 69854 },	-- Smoke-Stained Locket
+					["providers"] = {
+						{ "i", 69854 },	-- Smoke-Stained Locket
+						{ "n", 11801 },	-- Rabine Saturna
+					},
 					["sourceAchievement"] = 5859,	-- Legacy of Leyara
 					["maps"] = { MOONGLADE },
 				}),
@@ -342,10 +349,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						}),
 						currency(416),	-- Mark of the World Tree (x2)
 					},
-				}),
-				q(29244, {	-- A Lieutenant of Flame
-					["qg"] = 52493,	-- Captain Saynna Stormrunner
-					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(29137, {	-- Breach in the Defenses
 					["qg"] = 52824,	-- General Taldris Moonfall
@@ -434,12 +437,50 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["sourceQuest"] = 29254,	-- Little Lasher
 					["coord"] = { 50.6, 87.3, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/5 Embergris
+							["provider"] = { "i", 69722 },	-- Embergris
+							["crs"] = {
+								52504,	-- Charred Soldier
+								52503,	-- Charred Vanquisher
+							},
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
 				}),
 				q(29210, {	-- Enduring the Heat
 					["qg"] = 52494,	-- Marin Bladewing
 					["sourceQuest"] = 29211,	-- Solar Core Destruction
 					["coord"] = { 64.8, 66.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- Enter the Igneous Depths
+							["coord"] = { 57.19, 49.94, THE_MOLTEN_FRONT },
+						}),
+						objective(2, {	-- All Flame Runes Destroyed
+							["coords"] = {
+								{ 61.4, 48.5, THE_MOLTEN_FRONT },
+								{ 61.9, 52.9, THE_MOLTEN_FRONT },
+								{ 60.5, 60.0, THE_MOLTEN_FRONT },
+								{ 64.2, 66.1, THE_MOLTEN_FRONT },
+								{ 68.1, 66.5, THE_MOLTEN_FRONT },
+								{ 68.9, 58.3, THE_MOLTEN_FRONT },
+								{ 64.7, 59.3, THE_MOLTEN_FRONT },
+								{ 66.3, 52.2, THE_MOLTEN_FRONT },
+							},
+							["crs"] = {
+								52884,	-- Flame Protection Rune [61.4, 48.5]
+								52889,	-- Flame Protection Rune [61.9, 52.9]
+								52888,	-- Flame Protection Rune [60.5, 60.0]
+								52887,	-- Flame Protection Rune [64.2, 66.1]
+								52885,	-- Flame Protection Rune [68.1, 66.5]
+								52886,	-- Flame Protection Rune [68.9, 58.3]
+								52890,	-- Flame Protection Rune [64.7, 59.3]
+								52885,	-- Flame Protection Rune [66.3, 52.2]
+							},
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29275, {	-- Fandral's Methods
 					["qg"] = 52478,	-- Anren Shadowseeker
@@ -449,6 +490,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 					["coord"] = { 65.6, 66.0, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Flame Druid Staff
+							["providers"] = {
+								{ "i",  69810 },	-- Flame Druid Staff
+								{ "o", 208588 },	-- Flame Druid Staff
+							},
+							["coord"] = { 69.8, 54.9, THE_MOLTEN_FRONT },
+						}),
+						objective(2, {	-- 0/1 Flame Druid Spellbook
+							["providers"] = {
+								{ "i",  69811 },	-- Flame Druid Spellbook
+								{ "o", 208589 },	-- Flame Druid Spellbook
+								{ "o", 208590 },	-- Flame Druid Spellbook
+							},
+							["coord"] = { 66.5, 59.5, THE_MOLTEN_FRONT },
+						}),
+						objective(3, {	-- 0/1 Flame Druid Reagent Pouch
+							["providers"] = {
+								{ "i",  69812 },	-- Flame Druid Reagent Pouch
+								{ "o", 208592 },	-- Flame Druid Reagent Pouch
+							},
+							["coord"] = { 65.8, 54.5, THE_MOLTEN_FRONT },
+						}),
+						objective(4, {	-- 0/1 Flame Druid Idol
+							["providers"] = {
+								{ "i",  69813 },	-- Flame Druid Idol
+								{ "o", 208593 },	-- Flame Druid Idol
+							},
+							["coord"] = { 64.1, 60.4, THE_MOLTEN_FRONT },
+							["cr"] = 52662,	-- Unstable Flamerager
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
 				}),
 				q(29279, {	-- Filling the Moonwell
 					["qg"] = 53881,	-- Ayla Shadowstorm
@@ -464,40 +538,120 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["sourceQuest"] = 29206,	-- Into the Fire
 					["coord"] = { 42.4, 59.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/5 Lucifern
+							["providers"] = {
+								{ "i",  69765 },	-- Lucifern
+								{ "o", 208551 },	-- Lucifern
+							},
+							["coord"] = { 50.6, 46.5, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29290, {	-- Fire in the Skies
 					["qg"] = 52491,	-- Morthis Whisperwing
 					["coord"] = { 34.6, 56.4, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/100 Amassing Flamewalkers slain
+							["providers"] = {
+								{ "n", 53308 },	-- Flamewaker Centurion
+								{ "n", 53309 },	-- Flamewaker Cauterizer
+								{ "n", 53469 },	-- Flamewaker Incinerator
+							},
+						}),
+						objective(2, {	-- 0/40 Amassing Cinderwebs slain
+							["providers"] = {
+								{ "n", 53477 },	-- Cinderweb Skitterer
+								{ "n", 53478 },	-- Cinderweb Clutchkeeper
+								{ "n", 53479 },	-- Cinderweb Matriarch
+							},
+						}),
+						objective(1, {	-- 0/3 Molten Lords slain
+							["provider"] = { "n", 53310 },	-- Molten Lord
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29264, {	-- Flamewakers of the Molten Flow
 					["qg"] = 52444,	-- Thisalee Crow
 					["sourceQuest"] = 29206,	-- Into the Fire
 					["coord"] = { 42.4, 59.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/8 Flamewaker slain
+							["providers"] = {
+								{ "n", 53085 },	-- Flamewaker Sentinel
+								{ "n", 53093 },	-- Flamewaker Shaman
+								{ "n", 53143 },	-- Flamewaker Hunter
+							},
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29179, {	-- Hostile Elements
 					["qg"] = 52824,	-- General Taldris Moonfall
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["coord"] = { 45.5, 85.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/8 Charred Combatant slain
+							["providers"] = {
+								{ "n", 52504 },	-- Charred Soldier
+								{ "n", 52503 },	-- Charred Vanquisher
+							},
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29274, {	-- Hounds of Shannox
 					["qg"] = 52478,	-- Anren Shadowseeker
 					["sourceQuest"] = 29272,	-- Need... Water... Badly...
 					["coord"] = { 42.0, 61.2, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/6 Houndbone Ash
+							["provider"] = { "i", 69816 },	-- Houndbone Ash
+							["crs"] = {
+								53152,	-- Charhound
+								54339,	-- Ancient Charhound
+							},
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
 				}),
 				q(29273, {	-- How Hot
 					["qg"] = 52477,	-- Tholo Whitehoof
 					["sourceQuest"] = 29272,	-- Need... Water... Badly...
 					["coord"] = { 51.2, 85.2, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Northwestern Lava Pool sampled
+							["provider"] = { "i", 69806 },	-- Tholo's Thermometer
+							["coord"] = { 21, 29, THE_MOLTEN_FRONT },
+						}),
+						objective(2, {	-- 0/1 Northeastern Lava Pool sampled
+							["provider"] = { "i", 69806 },	-- Tholo's Thermometer
+							["coord"] = { 30, 31, THE_MOLTEN_FRONT },
+						}),
+						objective(3, {	-- 0/1 Central Lava Pool sampled
+							["provider"] = { "i", 69806 },	-- Tholo's Thermometer
+							["coord"] = { 23, 40, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
 				}),
 				q(29203, {	-- Into the Depths
 					["qg"] = 52135,	-- Malfurion Stormrage
 					["sourceQuest"] = 29280,	-- Nourishing Waters
 					["coord"] = { 47.0, 90.0, THE_MOLTEN_FRONT },
+					["groups"] = {
+						objective(1, {	-- Leyara slain
+							["provider"] = { "n", 53366 },	-- Leyara
+							["coord"] = { 65.0, 58.2, THE_MOLTEN_FRONT },
+						}),
+					},
 				}),
 				q(29209, {	-- Into the Fiery Depths
 					["qg"] = 52494,	-- Marin Bladewing
@@ -508,17 +662,41 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["sourceQuest"] = 29181,	-- Druids of the Talon
 					["coord"] = { 45.8, 85.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- Druid of the Talon Windcaller protected
+							["providers"] = {
+								{ "n", 53217 },	-- Windcaller Voramus
+								{ "n", 53355 },	-- Windcaller Nordrala
+							},
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29254, {	-- Little Lasher
 					["qg"] = 52489,	-- Avrilla
 					["sourceQuest"] = 29249,	-- Planting Season
 					["coord"] = { 50.6, 87.0, THE_MOLTEN_FRONT },
+					["groups"] = {
+						currency(416),	-- Mark of the World Tree (x5)
+					},
 				}),
 				q(29278, {	-- Living Obsidium
 					["qg"] = 53196,	-- Ricket
 					["sourceQuest"] = 29281,	-- Additional Armaments
 					["coord"] = { 47.0, 89.4, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/10 Obsidium Meteorite
+							["providers"] = {
+								{ "i",  69807 },	-- Obsidium Meteorite
+								{ "o", 208672 },	-- Obsidium Meteorite
+								{ "o", 208587 },	-- Obsidium Meteorite
+								{ "o", 208576 },	-- Obsidium Meteorite
+							},
+							["coord"] = { 51.0, 50.6, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29289, {	-- Mother's Malice
 					["qg"] = 52491,	-- Morthis Whisperwing
@@ -528,11 +706,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 					["coord"] = { 34.6, 56.4, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- Druid of the Talon Windcaller protected
+							["provider"] = { "n", 53249 },	-- Fire Hawk Matriarch
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29272, {	-- Need... Water... Badly...
 					["qg"] = 53233,	-- Anren Shadowseeker
 					["sourceQuest"] = 29181,	-- Druids of the Talon
 					["coord"] = { 51.8, 31.0, THE_MOLTEN_FRONT },
+					["groups"] = {
+						objective(1, {	-- Escort Anren to the front of the cave
+							["provider"] = { "n", 53234 },	-- Anren Shadowseeker
+						}),
+						currency(416),	-- Mark of the World Tree (x5)
+					},
 				}),
 				q(29287, {	-- Peaked Interest
 					["qg"] = 52491,	-- Morthis Whisperwing
@@ -542,81 +732,189 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 					["coord"] = { 34.6, 56.4, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Fire Hawk Egg
+							["providers"] = {
+								{ "i",  69836 },	-- Fire Hawk Egg
+								{ "o", 208630 },	-- Fire Hawk Egg
+							},
+							["coord"] = { 50.8, 23.0, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29159, {	-- Pyrorachnophobia
 					["qg"] = 52921,	-- Deldren Ravenelm
 					["sourceQuest"] = 29205,	-- The Forlorn Spire
 					["coord"] = { 66.0, 64.0, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/8 Cinderweb spider slain
+							["providers"] = {
+								{ "n", 52648 },	-- Cinderweb Creeper
+								{ "n", 52981 },	-- Cinderweb Spinner
+							},
+							["coord"] = { 66.4, 56.8, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29249, {	-- Planting Season
 					["qg"] = 52489,	-- Avrilla
 					["sourceQuest"] = 29245,	-- The Mysterious Seed
 					["coord"] = { 50.6, 87.0, THE_MOLTEN_FRONT },
+					["groups"] = {
+						objective(1, {	-- Acorn Planted
+							["providers"] = {
+								{ "i",  69675 },	-- Dried Acorn
+								{ "o", 208537 },	-- Un'Goro Soil
+							},
+							["coord"] = { 53.5, 90.5, THE_MOLTEN_FRONT },
+						}),
+					},
 				}),
 				q(29293, {	-- Singed Wings
 					["qg"] = 53259,	-- Arthorn Windsong
 					["sourceQuest"] = 29206,	-- Into the Fire
 					["coord"] = { 34.4, 56.4, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/5 Injured Druid of the Talon rescued
+							["providers"] = {
+								{ "n", 53243 },	-- Injured Druid of the Talon
+								{ "i", 69837 },	-- Arthorn's Injury Kit
+							},
+							["coord"] = { 26, 36.4, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29211, {	-- Solar Core Destruction
 					["qg"] = 52494,	-- Marin Bladewing
 					["sourceQuest"] = 29205,	-- The Forlorn Spire
 					["coord"] = { 64.8, 66.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Solar Core detonated
+							["provider"] = { "o", 208474 },	-- Solar Core
+							["coord"] = { 71.0, 38.5, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29299, {	-- Some Like It Hot
 					["qg"] = 52489,	-- Avrilla
 					["sourceQuest"] = 29254,	-- Little Lasher
 					["coord"] = { 50.6, 87.3, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/6 Help the Crimson Lasher Drink from Ember Pools
+							["provider"] = { "n", 53013 },	-- Crimson Lasher
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
 				}),
 				q(29288, {	-- Starting Young
 					["qg"] = 52491,	-- Morthis Whisperwing
-					["sourceQuests"] = {
-						29265,	-- Fire Flowers
-					},
+					["sourceQuest"] = 29265,	-- Fire Flowers
 					["coord"] = { 34.6, 56.4, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/5 Fire Hawk Hatchling
+							["providers"] = {
+								{ "i", 69845 },	-- Fire Hawk Hatchling
+								{ "n", 53275 },	-- Fire Hawk Hatchling
+							},
+							["coord"] = { 23.6, 42.0, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29257, {	-- Steal Magmolias
 					["qg"] = 52489,	-- Avrilla
 					["sourceQuest"] = 29254,	-- Little Lasher
 					["coord"] = { 50.6, 87.3, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/8 Magmolia
+							["providers"] = {
+								{ "i",  69725 },	-- Magmolia
+								{ "o", 208540 },	-- Magmolia
+							},
+							["coord"] = { 49.5, 50.2, THE_MOLTEN_FRONT },
+							["cr"] = 53090,	-- Lava Burster
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
 				}),
 				q(29243, {	-- Strike at the Heart
 					["qg"] = 52495,	-- Shalis Darkhunter
 					["sourceQuests"] = {
-						29159,	-- Pyrorachnophobia
-						29160,	-- Egg-stinction
-						29189,	-- Wicked Webs
-						29192,	-- The Wardens are Watching
-						29210,	-- Enduring the Heat
 						29283,	-- Calling the Ancients
+						29160,	-- Egg-stinction
+						29210,	-- Enduring the Heat
+						29159,	-- Pyrorachnophobia
+						29192,	-- The Wardens are Watching
+						29189,	-- Wicked Webs
 					},
 					["sourceQuestNumRequired"] = 4,
 					["coord"] = { 57.6, 49.6, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Lieutenant of Flame slain
+							["providers"] = {
+								{ "n", 53055 },	-- Ancient Charscale <Lieutenant of Flame>
+								{ "n", 53759 },	-- Cinderweb Queen <Lieutenant of Flame>
+								{ "n", 53771 },	-- Ancient Smoldering Behemoth <Lieutenant of Flame>
+								{ "n", 53834 },	-- Devout Harbinger <Lieutenant of Flame>
+								{ "n", 53864 },	-- Ancient Firelord <Lieutenant of Flame>
+							},
+							["coord"] = { 50.8, 23.0, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x3)
+					},
 				}),
 				q(29305, {	-- Strike at the Heart
 					["qg"] = 52490,	-- Choluna
 					["sourceQuests"] = {
 						29283,	-- Calling the Ancients
 						29290,	-- Fire in the Skies
+						29289,	-- Mother's Malice
 						29287,	-- Peaked Interest
 						29288,	-- Starting Young
-						29289,	-- Mother's Malice
 					},
+					["sourceQuestNumRequired"] = 4,
 					["coord"] = { 43.2, 80.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Lieutenant of Flame slain
+							["providers"] = {
+								{ "n", 53055 },	-- Ancient Charscale <Lieutenant of Flame>
+								{ "n", 53759 },	-- Cinderweb Queen <Lieutenant of Flame>
+								{ "n", 53771 },	-- Ancient Smoldering Behemoth <Lieutenant of Flame>
+								{ "n", 53834 },	-- Devout Harbinger <Lieutenant of Flame>
+								{ "n", 53864 },	-- Ancient Firelord <Lieutenant of Flame>
+							},
+							["coord"] = { 50.8, 23.0, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x3)
+					},
 				}),
 				q(29296, {	-- Territorial Birds
 					["qg"] = 53259,	-- Arthorn Windsong
 					["sourceQuest"] = 29206,	-- Into the Fire
 					["coord"] = { 34.4, 56.4, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/5 Fire Hawk slain
+							["providers"] = {
+								{ "n", 52660 },	-- Fire Hawk
+								{ "n", 53245 },	-- Fire Hawk
+							},
+							["coord"] = { 25.8, 37.6, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29295, {	-- The Bigger They Are
 					["qg"] = 53304,	-- Ricket
@@ -626,12 +924,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 					["coord"] = { 36.0, 56.6, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/10 Living Obsidium Chip
+							["providers"] = {
+								{ "i", 69860 },	-- Living Obsidium Chip
+								{ "n", 52107 },	-- Obsidium Punisher
+							},
+							["coord"] = { 31.6, 47.8, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29304, {	-- The Dogs of War
 					["qg"] = 52824,	-- General Taldris Moonfall
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["coord"] = { 45.5, 85.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/5 Ancient Charhound slain
+							["providers"] = {
+								{ "n", 53152 },	-- Charhound
+								{ "n", 54339 },	-- Ancient Charhound
+							},
+							["coord"] = { 48.4, 72, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
 				}),
 				q(29276, {	-- The Flame Spider Queen
 					["qg"] = 52477,	-- Tholo Whitehoof
@@ -641,37 +959,72 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 					["coord"] = { 66.0, 65.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/8 Flame Venom
+							["providers"] = {
+								{ "i", 69808 },	-- Flame Venom
+								{ "n", 52648 },	-- Cinderweb Creeper
+							},
+							["coord"] = { 65.4, 50.4, THE_MOLTEN_FRONT },
+						}),
+						objective(2, {	-- 0/8 Searing Web Fluid
+							["providers"] = {
+								{ "i", 69809 },	-- Searing Web Fluid
+								{ "n", 52981 },	-- Cinderweb Spinner
+							},
+							["coord"] = { 66.6, 56.8, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
 				}),
 				q(29205, {	-- The Forlorn Spire
 					["qg"] = 52824,	-- General Taldris Moonfall
 					["sourceQuest"] = 29204,	-- The Warden's Charge
 					["coord"] = { 50.6, 87.3, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29141, {	-- The Harder They Fall
 					["qg"] = 52824,	-- General Taldris Moonfall
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["coord"] = { 45.5, 85.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/3 Molten Behemoth slain
+							["provider"] = { "n", 52552 },	-- Molten Behemoth
+							["coord"] = { 48.0, 75.6, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29245, {	-- The Mysterious Seed
-					["provider"] = { "o", 208535 },	-- Dried Acorn
+					["providers"] = {
+						{ "o", 208535 },	-- Dried Acorn
+						{ "i",  69675 },	-- Dried Acorn
+					},
 					["sourceQuest"] = 29214,	-- The Shadow Wardens
 					["coord"] = { 70.1, 39.6, THE_MOLTEN_FRONT },
 				}),
 				q(29311, {	-- The Rest is History
-					["qg"] = 11801,	-- Rabine Saturna
+					["providers"] = {
+						{ "n", 11801 },	-- Rabine Saturna
+						{ "i", 69855 },	-- Smoke-Stained Locket
+					},
 					["sourceQuest"] = 29310,	-- The Tipping Point
-					["lvl"] = 85,
+					["maps"] = { MOONGLADE, MOUNT_HYJAL },
 					["groups"] = {
 						i(71259),	-- Leyara's Locket (TOY!)
 					},
 				}),
 				q(29310, {	-- The Tipping Point
-					["qg"] = 11801,	-- Rabine Saturna
+					["providers"] = {
+						{ "n", 11801 },	-- Rabine Saturna
+						{ "i", 69855 },	-- Smoke-Stained Locket
+					},
 					["sourceQuest"] = 29303,	-- Tragedy and Family
-					["timeline"] = { ADDED_4_2_0 },
-					["lvl"] = lvlsquish(85, 85, 32),
+					["maps"] = { MOONGLADE },
 				}),
 				q(29214, {	-- The Shadow Wardens
 					["qg"] = 52135,	-- Malfurion Stormrage
@@ -684,6 +1037,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["sourceQuest"] = 29205,	-- The Forlorn Spire
 					["coord"] = { 64.8, 66.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Druid of the Flame captured
+							["provider"] = { "n", 52804 },	-- Shadow Warden
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29204, {	-- The Warden's Charge
 					["qg"] = 52824,	-- General Taldris Moonfall
@@ -698,19 +1057,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["coord"] = { 45.5, 85.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/3 Druids of the Flame slain
+							["providers"] = {
+								{ "n", 54343 },	-- Druid of the Flame
+								{ "n", 52122 },	-- Druid of the Flame
+								{ "n", 52661 },	-- Druid of the Flame
+								{ "n", 52871 },	-- Druid of the Flame
+								{ "n", 52872 },	-- Druid of the Flame
+							},
+							["coord"] = { 47.8, 73, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29303, {	-- Tragedy and Family
 					["qg"] = 11801,	-- Rabine Saturna
 					["sourceQuest"] = 29302,	-- Unlocking the Secrets Within
 					["coord"] = { 51.6, 44.8, MOONGLADE },
-					["timeline"] = { ADDED_4_2_0 },
-					["lvl"] = 85,
 				}),
 				q(29302, {	-- Unlocking the Secrets Within
-					["qg"] = 11801,	-- Rabine Saturna
+					["providers"] = {
+						{ "n", 11801 },	-- Rabine Saturna
+						{ "i", 69855 },	-- Smoke-Stained Locket
+					},
 					["sourceQuest"] = 29298,	-- A Smoke-Stained Locket
 					["coord"] = { 51.6, 44.8, MOONGLADE },
-					["lvl"] = 85,
+					["maps"] = { MOONGLADE },
 				}),
 				q(29282, {	-- Well Armed
 					["qg"] = 52669,	-- Matoclaw
@@ -722,12 +1095,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["sourceQuest"] = 29205,	-- The Forlorn Spire
 					["coord"] = { 66.0, 64.0, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/8 Victims freed
+							["providers"] = {
+								{ "n", 52751 },	-- Cinderweb Cocoon
+								{ "n", 52783 },	-- Cinderweb Cocoon
+								{ "n", 52784 },	-- Cinderweb Cocoon
+								{ "n", 52989 },	-- Cinderweb Cocoon
+								{ "n", 52991 },	-- Cinderweb Cocoon
+								{ "n", 52992 },	-- Cinderweb Cocoon
+							},
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 				q(29143, {	-- Wisp Away
 					["qg"] = 52467,	-- Rayne Feathersong
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["coord"] = { 48.5, 86.2, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Close a Fire Portal
+							["provider"] = { "n", 53083 },	-- Hyjal Wisp
+							["coord"] = { 42.36, 69.45, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
 				}),
 			}),
 			n(RARES, {
@@ -771,13 +1164,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					n(54324, {	-- Skitterflame	}),
 					n(54321, {	-- Solix	}),
 --]]
-			}),
-			n(REWARDS, {
-				["groups"] = {
-					currency(416, {	-- Mark of the World Tree
-						["description"] = "These are rewarded by completing the Molten Front related daily quests.",
-					}),
-				},
 			}),
 			n(VENDORS, {
 				n(53881, {	-- Ayla Shadowstorm <Treasures of Elune>
