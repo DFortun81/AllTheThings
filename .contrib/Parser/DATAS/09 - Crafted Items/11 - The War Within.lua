@@ -2655,7 +2655,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80859, 446995);	-- Preserving Embroidery Thread
 			FirstCraft(80850, 446986);	-- Prodigy's Toolbox
 			FirstCraft(80806, 446933);	-- Slippers of the Woven Dusk
-			--FirstCraft(XXXXX, 447000);	-- Sunset Spellthread
+			FirstCraft(80864, 447000);	-- Sunset Spellthread
 			FirstCraft(80868, 454431);	-- The Severed Satchel
 			FirstCraft(80804, 446931);	-- Treads of the Woven Dawn
 			FirstCraft(80807, 446934);	-- Warm Sunrise Bracers

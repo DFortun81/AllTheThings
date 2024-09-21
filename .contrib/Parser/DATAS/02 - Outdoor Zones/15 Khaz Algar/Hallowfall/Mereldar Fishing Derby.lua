@@ -20,7 +20,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["provider"] = { "n", 226846 },	--  Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["g"] = {
-							i(DERBY_MARK),
+							currency(DERBY_MARK),
 						},
 					}),
 					q(83529, {	-- Hallowfall Fishing Derby
@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["provider"] = { "n", 226846 },	--  Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["g"] = {
-							i(DERBY_MARK),
+							currency(DERBY_MARK),
 						},
 					}),
 					q(83530, {	-- Hallowfall Fishing Derby
@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["provider"] = { "n", 226846 },	--  Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["g"] = {
-							i(DERBY_MARK),
+							currency(DERBY_MARK),
 						},
 					}),
 					q(83531, {	-- Hallowfall Fishing Derby
@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["provider"] = { "n", 226846 },	--  Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["g"] = {
-							i(DERBY_MARK),
+							currency(DERBY_MARK),
 						},
 					}),
 					q(83532, {	-- Hallowfall Fishing Derby
@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["provider"] = { "n", 226846 },	--  Captain Oathmyt
 						["coord"] = { 44.2, 61.4, HALLOWFALL },
 						["g"] = {
-							i(DERBY_MARK),
+							currency(DERBY_MARK),
 						},
 					}),
 				})),
