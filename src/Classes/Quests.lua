@@ -684,15 +684,8 @@ PrintQuestInfo = function(questID, new)
 
 		-- Quest can be linked to all sorts of things...
 		text = (QuestNameFromID[questID] or (questRef and questRef.name))
-		if hqt then
-			-- don't worry about retrieving names if we know it's HQT
-			if IsRetrieving(text) then
-				text = questID
-			end
-		else
-			if IsRetrieving(text) then
-				text = UNKNOWN
-			end
+		if IsRetrieving(text) then
+			text = UNKNOWN
 		end
 		text = text .. " (" .. questID .. ")"
 		if nmc then text = text .. "[C]"; end
