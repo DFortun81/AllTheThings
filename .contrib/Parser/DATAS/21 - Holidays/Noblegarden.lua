@@ -765,18 +765,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216874, {	-- Loot-Filled Basket
-					q(82543, {	-- Increased Noble Flying Carpet Droprate (Daily Accountwide)
-						["name"] = "Increased Noble Flying Carpet Droprate (Daily Accountwide)",
-						["collectible"] = false,
-						["isDaily"] = true,
-					}),
-					i(212599),	-- Noble Flying Carpet (MOUNT!)
-					i(212698),	-- Spring Reveler's Turquoise Attire
-					i(212699),	-- Spring Reveler's Turquoise Belt
-					i(212701),	-- Spring Reveler's Turquoise Boots
-					i(212711),	-- Spring Reveler's Turquoise Dress
-					i(212985),	-- Spring Reveler's Turquoise Pants
-					i(212715),	-- Spring Reveler's Turquoise Sun Hat
+					["description"] = "Only your first daily attempt per Battle.net account has a chance to drop the unique rewards, such as mounts, pets, toys, and manuscripts. The drop chance increases with every failed attempt.\nBlizzard have not specified which items are subject to this system.",
+					-- ["description"] = HOLIDAY_DROP,
+					["groups"] = {
+						q(82543, {	-- Increased Noble Flying Carpet Droprate (Daily Accountwide)
+							["name"] = "Increased Noble Flying Carpet Droprate (Daily Accountwide)",
+							["collectible"] = false,
+							["isDaily"] = true,
+						}),
+						i(212599),	-- Noble Flying Carpet (MOUNT!)
+						i(212698),	-- Spring Reveler's Turquoise Attire
+						i(212699),	-- Spring Reveler's Turquoise Belt
+						i(212701),	-- Spring Reveler's Turquoise Boots
+						i(212711),	-- Spring Reveler's Turquoise Dress
+						i(212985),	-- Spring Reveler's Turquoise Pants
+						i(212715),	-- Spring Reveler's Turquoise Sun Hat
+					},
 				}),
 				i(213428, {	-- Loot-Stuffed Basket (version for low levels)
 					["sym"] = {{"select","itemID",
@@ -798,18 +802,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.NOBLEGARDEN, n(NOBLEGARDEN_HEADER, {
 			["_drop"] = { "g" },	-- Drop Brightly Colored Egg
 			["groups"] = {
 				i(216874, {	-- Loot-Filled Basket
-					q(82543, {	-- Increased Noble Flying Carpet Droprate (Daily Accountwide)
-						["name"] = "Increased Noble Flying Carpet Droprate (Daily Accountwide)",
-						["collectible"] = false,
-						["isDaily"] = true,
-					}),
-					i(212599),	-- Noble Flying Carpet (MOUNT!)
-					i(212698),	-- Spring Reveler's Turquoise Attire
-					i(212699),	-- Spring Reveler's Turquoise Belt
-					i(212701),	-- Spring Reveler's Turquoise Boots
-					i(212711),	-- Spring Reveler's Turquoise Dress
-					i(212985),	-- Spring Reveler's Turquoise Pants
-					i(212715),	-- Spring Reveler's Turquoise Sun Hat
+					["description"] = "Only your first daily attempt per Battle.net account has a chance to drop the unique rewards, such as mounts, pets, toys, and manuscripts. The drop chance increases with every failed attempt.\nBlizzard have not specified which items are subject to this system.",
+					-- ["description"] = HOLIDAY_DROP,
+					["groups"] = {
+						q(82543, {	-- Increased Noble Flying Carpet Droprate (Daily Accountwide)
+							["name"] = "Increased Noble Flying Carpet Droprate (Daily Accountwide)",
+							["collectible"] = false,
+							["isDaily"] = true,
+						}),
+						i(212599),	-- Noble Flying Carpet (MOUNT!)
+						i(212698),	-- Spring Reveler's Turquoise Attire
+						i(212699),	-- Spring Reveler's Turquoise Belt
+						i(212701),	-- Spring Reveler's Turquoise Boots
+						i(212711),	-- Spring Reveler's Turquoise Dress
+						i(212985),	-- Spring Reveler's Turquoise Pants
+						i(212715),	-- Spring Reveler's Turquoise Sun Hat
+					},
 				}),
 				i(213428, {	-- Loot-Stuffed Basket (version for low levels)
 					["sym"] = {{"select","itemID",
