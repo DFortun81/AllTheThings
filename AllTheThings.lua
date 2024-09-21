@@ -2799,30 +2799,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				end
 			end
 		end
-		-- Holiday drop description
-		if app.GameBuildVersion >= 100500 then	-- Dragonflight 10.0.5
-			if paramA == "itemID" and paramB == 54537 or	-- Heart-Shaped Box [Love is in the Air]
-			paramA == "itemID" and paramB == 117393 or		-- Keg-Shaped Treasure Chest [Brewfest]
-			paramA == "itemID" and paramB == 117394 or		-- Satchel of Chilled Goods [Midsummer Fire Festival]
-			paramA == "itemID" and paramB == 209024 or		-- Loot-Filled Pumpkin [Hallow's End]
-			paramA == "itemID" and paramB == 216874 then 	-- Loot-Filled Basket [Noblegarden]
-				tinsert(tooltipInfo, 1, { left = L.HOLIDAY_DROP, wrap = true, color = app.Colors.TooltipDescription });
-			end
-		end
-		-- an item used for a faction which is repeatable
-		if group.itemID and group.factionID and group.repeatable then
-			tinsert(tooltipInfo, { left = L.ITEM_GIVES_REP .. (GetFactionName(group.factionID) or ("Faction #" .. tostring(group.factionID))) .. "'", wrap = true, color = app.Colors.TooltipDescription });
-		end
-		if paramA == "itemID" and paramB == 137642 then
-			if app.Settings:GetTooltipSetting("SummarizeThings") then
-				tinsert(tooltipInfo, 1, { left = L.MARKS_OF_HONOR_DESC, color = app.Colors.SourceIgnored });
-			end
-		end
-		if paramA == "currencyID" and paramB == 2778 then
-			if app.Settings:GetTooltipSetting("SummarizeThings") then
-				tinsert(tooltipInfo, 1, { left = L.MOP_REMIX_BRONZE_DESC, color = app.Colors.SourceIgnored });
-			end
-		end
 
 		if group.g and app.Settings:GetTooltipSetting("SummarizeThings") then
 			-- Sort by the heirarchy of the group

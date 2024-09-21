@@ -901,6 +901,46 @@ local InformationTypes = {
 	-- Summary Information Types
 	CreateInformationType("CompletedBy", { text = L.COMPLETED_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForCompletedBy });
 	CreateInformationType("KnownBy", { text = L.KNOWN_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForKnownBy });
+	CreateInformationType("extraDescription", { text = "extraDescription", priority = 2.51, HideCheckBox = true, ForceActive = true,
+		Process = function(t, reference, tooltipInfo)
+			local itemID = reference.itemID
+			if itemID then
+				-- an item used for a faction which is repeatable
+				if reference.factionID and reference.repeatable then
+					tinsert(tooltipInfo, {
+						left = L.ITEM_GIVES_REP .. (app.WOWAPI.GetFactionName(reference.factionID) or ("Faction #" .. tostring(reference.factionID))) .. "'",
+						wrap = true,
+						color = app.Colors.TooltipDescription });
+				end
+				-- Holiday drop description
+				if app.GameBuildVersion >= 100500 then	-- Dragonflight 10.0.5
+					if itemID == 54537 or	-- Heart-Shaped Box [Love is in the Air]
+						itemID == 117393 or		-- Keg-Shaped Treasure Chest [Brewfest]
+						itemID == 117394 or		-- Satchel of Chilled Goods [Midsummer Fire Festival]
+						itemID == 209024 or		-- Loot-Filled Pumpkin [Hallow's End]
+						itemID == 216874  	-- Loot-Filled Basket [Noblegarden]
+					then
+						tinsert(tooltipInfo, 1, { left = L.HOLIDAY_DROP, wrap = true, color = app.Colors.TooltipDescription });
+					end
+				end
+				-- Mark of Honor
+				if itemID == 137642 then
+					if app.Settings:GetTooltipSetting("SummarizeThings") then
+						tinsert(tooltipInfo, 1, { left = L.MARKS_OF_HONOR_DESC, color = app.Colors.SourceIgnored });
+					end
+				end
+			end
+			local currencyID = reference.currencyID
+			if currencyID then
+				-- Bronze [MoP Timerunning]
+				if currencyID == 2778 then
+					if app.Settings:GetTooltipSetting("SummarizeThings") then
+						tinsert(tooltipInfo, 1, { left = L.MOP_REMIX_BRONZE_DESC, color = app.Colors.SourceIgnored });
+					end
+				end
+			end
+		end,
+	}),
 
 	-- We want this after most of the regular fields.
 	CreateInformationType("OnTooltip", {
