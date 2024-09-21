@@ -279,6 +279,8 @@ local fillstein = function(t)
 end
 
 root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
+	["maps"] = { DUN_MOROGH, DUROTAR },
+	["groups"] = {
 	n(ACHIEVEMENTS, {
 		ach(18579, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {	-- A Round on the House
 			crit(60561, {	-- Ohn'ahran Plains, Maruukai
@@ -2751,6 +2753,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 			}),
 		},
 	}),
+	},
 })));
 
 -- #if AFTER 6.0.1
