@@ -67,6 +67,18 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 				},
 			}),
+			n(224734, {	-- Bobbin <Eye of the Weaver>
+				["coord"] = { 56.4, 43.3, AZJ_KAHET },
+				["sym"] = {{"select","itemID",
+					226511,	-- Nerubimorph Poultice
+					228949,	-- Rumor Map
+					228950,	-- Rumor Map
+					228943,	-- Spymaster's Severed Thread
+					228952,	-- Treasure Map Bundle
+					226510,	-- Weaver's Facade
+					223276,	-- Widow's Undercrawler (MOUNT!)
+				}},
+			}),
 			n(218224, {	-- "Calmest" Gobbu <Pots, Urns, and Armamnets>
 				["coord"] = { 46.6, 29.2, NERUBAR },
 				["g"] = {

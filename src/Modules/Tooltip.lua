@@ -334,6 +334,12 @@ for i,guid in ipairs({
 	"Player-3676-0A6CC504",	-- Jezartroz-Area52 US
 	-- rootkit1337
 	"Player-3674-0B3F8DA8", -- Cerealm-TwistingNether EU
+	-- Exodius
+	"Player-1096-076FE799",	-- Felhaim-DefiasBrotherhood EU
+	"Player-1096-076FE593",	-- Exodiüs-DefiasBrotherhood EU
+	"Player-1096-0A7FACBF",	-- Thrëx-DefiasBrotherhood EU
+	"Player-1096-0A57D3A7",	-- Kaala-DefiasBrotherhood EU
+	"Player-1096-0A7FDD25",	-- Atröpos-DefiasBrotherhood EU
 }) do
 	PLAYER_TOOLTIPS[guid] = tooltipFunction;
 end
