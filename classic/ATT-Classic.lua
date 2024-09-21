@@ -1456,10 +1456,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			end
 		end
 	end
-
-	if group.isLimited then
-		tinsert(tooltipInfo, 1, { left = L.LIMITED_QUANTITY, wrap = true, color = app.Colors.TooltipDescription });
-	end
 	
 	if isTopLevelSearch then
 		-- Add various extra field info if enabled in settings
