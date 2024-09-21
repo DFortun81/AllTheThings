@@ -1101,11 +1101,24 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 5161,	-- Grimnur Stonebrand
 					["coord"] = { 48.4, 8.2, IRONFORGE },
 					["timeline"] = { ADDED_4_0_1 },
+					["maps"] = { DEEPRUN_TRAM },
 					["requireSkill"] = FISHING,
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
 					["groups"] = {
+						objective(1, {	-- 0/1 Gnomish Bait-o-Matic
+							["providers"] = {
+								{ "i",  69978 },	-- Gnomish Bait-o-Matic
+								{ "i",  69979 },	-- Bait-o-Matic Blueprints
+								{ "o", 208864 },	-- Rat Trap
+							},
+							["cost"] = {
+								{ "i", 6529, 5 },	-- Shiny Bauble
+								{ "i", 69980, 3 },	-- Rat Trap
+								{ "i", 39684, 1 },	-- Hair Trigger
+							},
+						}),
 						i(67414),	-- Bag of Shiny Things
 					},
 				})),
