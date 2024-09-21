@@ -984,7 +984,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 20595.10, {	-- All Ore Nothing
 				q(82792, {	-- All Ore Nothing
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = {
+						TEMPORARY_SOURCEQUEST,
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
+					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 218535 },	-- Germira
 					["coord"] = { 41.1, 72.1, ISLE_OF_DORN },
 				}),

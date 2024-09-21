@@ -409,7 +409,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
 					["provider"] = { "n", 215335 },	-- General Steelstrike
 					["coord"] = { 40.5, 50.8, HALLOWFALL },
-					["isBreadcrumb"] = true,
 				}),
 				q(79642, {	-- Stave Them Off
 					["sourceQuests"] = { 82628 },	-- The Brothers Braunpyke
