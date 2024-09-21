@@ -127,6 +127,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 			}, {	-- RENOWN 19 --
 			}, {	-- RENOWN 20 --
+				q(82381, {	-- A Scintillating Candle
+					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+					["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
+					["g"] = {
+						i(226150),	-- Gem-Studded Candelabra
+					},
+				}),
 			}, {	-- RENOWN 21 --
 			}, {	-- RENOWN 22 --
 			}, {	-- RENOWN 23 --

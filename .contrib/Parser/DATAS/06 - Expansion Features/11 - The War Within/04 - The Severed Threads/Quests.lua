@@ -8,20 +8,29 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 2 --
 			}, {	-- RENOWN 3 --
 				q(82417, {	-- A Rare Key
-					["provider"] = { "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 			}, {	-- RENOWN 4 --
 			}, {	-- RENOWN 5 --
 			}, {	-- RENOWN 6 --
 				q(82418, {	-- A Cache of Crests and Power
-					["provider"] = { "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 			}, {	-- RENOWN 7 --
 			}, {	-- RENOWN 8 --
 				q(85535, {	-- Kej
-					["provider"] = { "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 			}, {	-- RENOWN 9 --
@@ -33,7 +42,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 				q(85531, {	-- Earth-Encrusted Gem
-					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 					["g"] = {
 						i(223951),	-- Earth-Encrusted Gem
@@ -41,7 +53,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 			}, {	-- RENOWN 10 --
 				q(82432, {	-- A Gift Handwoven
-					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 					["g"] = {
 						i(218349),	-- Tabard of the Severed Threads (COSMETIC!)
@@ -50,43 +65,67 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 11 --
 			}, {	-- RENOWN 12 --
 				q(82433, {	-- Power, Etched in the Deep
-					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 			}, {	-- RENOWN 13 --
 				q(82434, {	-- Unlock a Reward
-					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 			}, {	-- RENOWN 14 --
 				q(82435, {	-- Valorstones
-					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 				q(85532, {	-- The Wealth of a Kingdom
-					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 			}, {	-- RENOWN 15 --
 			}, {	-- RENOWN 16 --
 				-- TODO: check Renown Requirement!
 				q(82442, {	-- Keep Up Appearances
-					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 			}, {	-- RENOWN 17 --
 				-- TODO: check Renown Requirement!
 				q(82443, {	-- Tokens of Her Favor
-					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 			}, {	-- RENOWN 18 --
 				q(82440, {	-- Crests
-					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 				q(85533, {	-- Kej
-					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 			}, {	-- RENOWN 19 --
@@ -95,12 +134,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 22 --
 			}, {	-- RENOWN 23 --
 				q(82444, {	-- The Weaver's Cache
-					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 			}, {	-- RENOWN 24 --
 				q(82446, {	-- For What Glimmers in Shadow
-					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 					["g"] = {
 						i(224072),	-- Enchanted Runed Harbinger Crest
@@ -109,7 +154,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 25 --
 				------ Paragon ------
 				q(79196, {	-- Renowned with The Severed Threads
-					["provider"] = { "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 					["isRepeatable"] = true,
 					["g"] = {
