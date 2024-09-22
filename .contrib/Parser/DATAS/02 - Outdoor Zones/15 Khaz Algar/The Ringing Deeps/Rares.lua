@@ -26,7 +26,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(220276, {	-- Candleflyer Captain
-				["description"] = "Flying around and pretty high",
+				["description"] = "Flying around pretty high.",
 				["coord"] = { 66.5, 29.9, THE_RINGING_DEEPS },
 				["questID"] = 80505,
 				["g"] = {
@@ -68,7 +68,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(220286, {	-- Deepflayer Broodmother
-				["description"] = "Flying around entire Earthenworks location",
+				["description"] = "Flying around entire Earthenworks location.",
 				["coords"] = {
 					{ 53.1, 21.7, THE_RINGING_DEEPS },
 					{ 55.6, 12.6, THE_RINGING_DEEPS },
@@ -153,7 +153,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(220268, {	-- Trungal
-				["description"] = "Kill roots of Trungal on way to him to make him jump out of terrain",
+				["description"] = "Kill roots of Trungal on way to him to make him jump out of terrain.",
 				["coord"] = { 71.8, 46.3, THE_RINGING_DEEPS },
 				["questID"] = 80574,
 				["g"] = {

@@ -21,10 +21,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(223315),	-- Beledar's Spawn (MOUNT!)
 				},
 			}),
-			n(220159, {	-- Brineslash
+			--n(220159, {	-- Brineslash
 				--["coord"] = { X, Y, HALLOWFALL },
-				["questID"] = 80486,
-			}),
+				--["questID"] = 80486,
+			--}),
 			n(221753, {	-- Deathtide <The Viscous Swell>
 				["coord"] = { 44.8, 42.8, HALLOWFALL },
 				["cost"] = { { "i", 220123, 1 } },	-- 1x Ominous Offering
@@ -52,8 +52,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(223377),	-- Ancient Fungarian's Fingerwrap
 				},
 			}),
-			n(221551, {	-- Grimslicer
-				["description"] = "Walking around park and can be killed by random ally npcs in area.",
+			n(221551, {	-- Grimslice
+				["description"] = "Walking around the park. Can be killed by random Arathi NPCs in area.",
 				["coords"] = {
 					{ 35.0, 58.7, HALLOWFALL },
 					{ 35.0, 50.4, HALLOWFALL },

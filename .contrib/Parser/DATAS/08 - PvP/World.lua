@@ -291,7 +291,9 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
 		n(PVP, {
-			q(72376),	-- looting first War Crate of the day
+			q(72376, {	-- looting first War Crate of the day
+				["name"] = "Warmode Crate Looted",
+			}),
 			q(72377, {	-- looting first War Crate of the day
 				["name"] = "Warmode Crate Looted",
 				["isDaily"] = true,
@@ -300,17 +302,37 @@ root(ROOTS.HiddenQuestTriggers, {
 				["name"] = "Warmode Bounty Looted",
 				["isDaily"] = true,
 			}),
-			q(80413, {["timeline"] = {ADDED_10_2_7}}, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
-			q(80414, {["timeline"] = {ADDED_10_2_7}}, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
+			q(80413, {	-- after looting War Supply chest, first time per day
+				["name"] = "First War Supply Chest of the Day!",
+				["timeline"] = {ADDED_10_2_7},
+				["isDaily"] = true,
+			}),
+			q(80414, {	-- after looting War Supply chest, first time per day
+				["name"] = "First War Supply Chest of the Day!",
+				["timeline"] = {ADDED_10_2_7},
+				["isDaily"] = true,
+			}),
 		}),
 	})),
 	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(PVP, {
-			q(80415, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
-			q(80416, {["isDaily"]=true,}),	-- after looting War Supply chest, first time per day
-			q(84447),	-- after looting an Unbound Spoils War Supply Chest
-			q(84448),	-- after looting an Unbound Spoils War Supply Chest
-			q(84449),	-- after looting an Unbound Spoils War Supply Chest
+			q(80415, {	-- after looting War Supply chest, first time per day
+				["name"] = "First War Supply Chest of the Day!",
+				["isDaily"] = true,
+			}),
+			q(80416, {	-- after looting War Supply chest, first time per day
+				["name"] = "First War Supply Chest of the Day!",
+				["isDaily"] = true,
+			}),
+			q(84447, {	-- after looting an Unbound Spoils War Supply Chest
+				["name"] = "Unbound Spoils Looted.",
+			}),
+			q(84448, {	-- after looting an Unbound Spoils War Supply Chest
+				["name"] = "Unbound Spoils Looted.",
+			}),
+			q(84449, {	-- after looting an Unbound Spoils War Supply Chest
+				["name"] = "Unbound Spoils Looted.",
+			}),
 		}),
 	})),
 });

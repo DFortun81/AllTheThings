@@ -1056,7 +1056,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				q(82810, {	-- Time Found
-					["description"] = "Become available on next week, after Time Lost was finished",
+					["description"] = "Becomes available a week after 'Time Lost' was finished.",
 					["sourceQuests"] = { 80678 },	-- Time Lost
 					["provider"] = { "n", 220718 },	-- Maera Ashyld
 					["coord"] = { 60.5, 60.2, HALLOWFALL },
@@ -1076,7 +1076,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				q(82813, {	-- Time Borrowed
-					["description"] = "Become available on next week, after Time Found was finished",
+					["description"] = "Become available a week after 'Time Found' was finished.",
 					["sourceQuests"] = { 82810 },	-- Time Found
 					["provider"] = { "n", 220718 },	-- Maera Ashyld
 					["coord"] = { 60.5, 60.2, HALLOWFALL },
@@ -1175,7 +1175,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			--
 			hqt(82025, {	-- Talk with Sky-Captain Aerthin
 				["name"] = "Talk with Sky-Captain Aerthin",
-				["description"] = "This npc is on a patrolling airship",
+				["description"] = "This npc is on a patrolling airship.",
 				["provider"] = { "n", 222323 },	-- Sky-Captain Aerthin
 				["coords"] = {
 					{ 33.0, 43.0, HALLOWFALL },
@@ -1184,7 +1184,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			hqt(82024, {	-- Talk with Sky-Captain Clairmonte
 				["name"] = "Talk with Sky-Captain Clairmonte",
-				["description"] = "This npc is on a patrolling airship",
+				["description"] = "This npc is on a patrolling airship.",
 				["provider"] = { "n", 222311 },	-- Sky-Captain Clairmonte
 				["coords"] = {
 					{ 44.6, 45.8, HALLOWFALL },
@@ -1193,7 +1193,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			hqt(82012, {	-- Talk with Sky-Captain Dornald
 				["name"] = "Talk with Sky-Captain Dornald",
-				["description"] = "This npc is on a patrolling airship",
+				["description"] = "This npc is on a patrolling airship.",
 				["provider"] = { "n", 222333 },	-- Sky-Captain Dornald
 				["coords"] = {
 					{ 45.4, 47.4, HALLOWFALL },
@@ -1202,7 +1202,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			hqt(82026, {	-- Talk with Sky-Captain Onaro
 				["name"] = "Talk with Sky-Captain Onaro",
-				["description"] = "This npc is on a patrolling airship",
+				["description"] = "This npc is on a patrolling airship.",
 				["provider"] = { "n", 222337 },	-- Sky-Captain Onaro
 				["coords"] = {
 					{ 45.4, 47.4, HALLOWFALL },
@@ -1265,7 +1265,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 				q(82218),	-- 'Break [DNT]' triggered during questID 82217 (Underground Economics) when you click 'Alliance' dialog option on Andee Seabraid
 				--q(xxxxx),	-- '?' triggered during questID 82217 (Underground Economics) when you click 'Horde' dialog option on Andee Seabraid
 				--
-				q(82749),	-- Flag for next quest after weekly reset for Time Lost & Time Found & Time Borrowed (spellID 452551 - Flag Timer)
+				q(82749, {		-- Flag for next quest after weekly reset for Time Lost & Time Found & Time Borrowed (spellID 452551 - Flag Timer)
+					["name"] = "Times Lost, Found and Borrowed have been reset. You should visit Maera Ashyld at the outskirts of Stagnant Mire.",
+				}),
 				q(83748),	-- triggered after turn in questID 79168 (Light's Gambit) (spellID 457904 - [DNT] Have Played Light's Gambit)
 				q(79941, {["isDaily"]=true,}),	-- <I wish to visit Veneration Groundkeeper> - Justicia Baercennan (n: 225942 @ 41.8, 54.3), nothing happen & reset on daily (spellID 454635)
 				q(79212),	-- not sure why it pop near Defender of the Flame quest chain @ 65.5, 32.2, when I fly here first time

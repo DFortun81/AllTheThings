@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		n(QUESTS, {
 			header(HEADERS.Achievement, 20118, {	-- The Isle of Dorn
 				q(81966, {	-- Slept like a Rock
-					["description"] = "Requires re-logging to be accepted",
+					["description"] = "Requires re-logging to be accepted.",
 					["sourceQuests"] = { 80500 },	-- The Bronzebeard Family
 					["maps"] = { LEGION_DALARAN },
 					["isBreadcrumb"] = true,
@@ -155,6 +155,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				------ Stay awhile and listen ------
 				hqt(82461, {	-- Stay awhile and listen: Dagran Thaurissan II
 					["name"] = "Stay awhile and listen: Dagran Thaurissan II",
+					["description"] = "Dialogue becomes available after completing 'The Archive' (78468).",
 					["sourceQuests"] = { 78468 },	-- The Archive (Completed)
 					["provider"] = { "n", 217859 },	-- Dagran Thaurissan II
 					["coord"] = { 29.8, 60.0, DORNOGAL },
@@ -172,14 +173,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				------ Stay awhile and listen ------
 				hqt(82459, {	-- Stay awhile and Listen: Anduin Wrynn
 					["name"] = "Stay awhile and listen: Anduin Wrynn",
-					["sourceQuests"] = { 78460 },	-- Hypocenter (Accepted and/or Completed)
+					["description"] = "Dialogue becomes available after accepting 'Hypocenter' (78460).",
+					["sourceQuests"] = { 78460 },	-- Hypocenter (Accepted)
 					["provider"] = { "n", 222558 },	-- Anduin Wrynn
 					["coord"] = { 44.8, 44.7, DORNOGAL },
 					["lockCriteria"] = { 1, "questID", 78462 },	-- Echoes of Compassion
 				}),
 				hqt(82460, {	-- Stay awhile and Listen: Magni Bronzebeard
 					["name"] = "Stay awhile and listen: Magni Bronzebeard",
-					["sourceQuests"] = { 78457 },	-- Stones of Dornogal (Accepted and/or Completed)
+					["description"] = "Dialogue becomes available after accepting 'Stones of Dornogal' (78457).",
+					["sourceQuests"] = { 78457 },	-- Stones of Dornogal (Accepted)
 					["provider"] = { "n", 222557 },	-- Magni Bronzebeard
 					["coord"] = { 44.5, 44.5, DORNOGAL },
 					["lockCriteria"] = { 1, "questID", 78462 },	-- Echoes of Compassion
@@ -387,7 +390,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				hqt(85681, {	-- Stay awhile and listen: Moira Thaurissan
 					["name"] = "Stay awhile and listen: Moira Thaurissan",
-					["description"] = "This dialogue becomes available after accepting 'Into The Deeps' (80434) but vanishes once you hand in 'Into The Deeps' (80434).",
+					["description"] = "Dialogue becomes available after accepting 'Into The Deeps' (80434) but vanishes once you hand in 'Into The Deeps' (80434).",
 					["sourceQuests"] = { 80434 },	-- Into The Deeps (After accepting but unavailable after completion)
 					["provider"] = { "n", 217887 },	-- Moira Thaurissan
 					["coord"] = { 32.4, 59.6, DORNOGAL },

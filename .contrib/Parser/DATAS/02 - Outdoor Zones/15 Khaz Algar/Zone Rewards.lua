@@ -94,7 +94,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		}),
 		i(228361),	-- Seasoned Adventurer's Cache
 		n(WEEKLY_PROFESSION_KNOWLEDGE, {
-			["description"] = "Rewarded from many different treasures and activities",
+			["description"] = "Rewarded from many different treasures and activities.",
 			["g"] = {
 				-- Alchemy
 				i(225234),	-- Alchemical Sediment

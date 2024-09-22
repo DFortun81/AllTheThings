@@ -136,10 +136,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(THE_ASSEMBLY_OF_THE_DEEPS, {
 		n(AWAKENING_THE_MACHINE, {
-			q(84631),	-- Wave 5
-			q(84632),	-- Wave 10
-			q(84633),	-- Wave 15
-			q(84634),	-- Wave 20
+			q(84631, {	-- Wave 5
+				["name"] = "Awakening The Machine: Wave 5 Completed.",
+			}),
+			q(84632, {	-- Wave 10
+				["name"] = "Awakening The Machine: Wave 10 Completed.",
+			}),
+			q(84633, {	-- Wave 15
+				["name"] = "Awakening The Machine: Wave 15 Completed.",
+			}),
+			q(84634, {	-- Wave 20
+				["name"] = "Awakening The Machine: Wave 20 Completed. Congratulations.",
+			}),
 		}),
 	}),
 })));

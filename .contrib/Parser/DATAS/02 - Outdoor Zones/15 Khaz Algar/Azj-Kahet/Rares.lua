@@ -52,7 +52,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(216050, {	-- Harverster Qixt
-				["description"] = "Patrol in area",
+				["description"] = "Patrols in the area.",
 				["questID"] = 82036,
 				["coords"] = {
 					{ 62.4, 86.4, AZJ_KAHET_LOWER},	-- Start
@@ -77,7 +77,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(221327, {	-- Kaheti Silk Hauler
-				["description"] = "Patrol on road",
+				["description"] = "Patrols on the road.",
 				["coords"] = {
 					{ 65.2, 18.9, AZJ_KAHET },	-- Start
 					{ 63.2, 25.2, AZJ_KAHET },	-- Mid
@@ -179,7 +179,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(216037, {	-- Vilewing
-				["description"] = "Fly around",
+				["description"] = "Flies around the area.",
 				["coord"] = { 36.6, 44.3, AZJ_KAHET },
 				["questID"] = 81700,
 				["g"] = {

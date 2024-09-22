@@ -150,7 +150,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			ach(40542),		-- Smelling History (automated)
 			ach(40636),		-- Sojourner of Azj-Kahet (automated)
 			ach(40633, {	-- The Unseeming
-				["description"] = "Stand in the pool.",
+				["description"] = "Stand in the pool and acquire 100 stacks of 'Unseeming Shift' debuff.",
 				["coord"] = { 67.2, 28.4, AZJ_KAHET },
 			}),
 			pvp(ach(40086)),	-- Tour of Duty: Azj-Kahet

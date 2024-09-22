@@ -679,33 +679,83 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 	n(THE_SEVERED_THREADS, {
 		n(SEVERED_THREADS_PACT, {
 			-- General --
-			q(81601),	-- [DNT] General - Level 1 Unlock (spellID 443677)
-			q(81602),	-- [DNT] General - Level 2 Unlock (spellID 443679)
-			q(81626),	-- [DNT] General - Level 2 Unlock (spellID 443679) (???)
-			q(81603),	-- [DNT] General - Level 3 Unlock (spellID 443680)
-			q(81604),	-- [DNT] General - Level 4 Unlock (spellID 443681)
-			q(84530),	-- [DNT] General - Level 5 Unlock (spellID 462466)
-			q(84531),	-- [DNT] General - Level 6 Unlock (spellID 462468)
-			q(84532),	-- [DNT] General - Level 7 Unlock (spellID 462470)
-			q(84533),	-- [DNT] General - Level 8 Unlock (spellID 462471)
+			q(81601, {	-- [DNT] General - Level 1 Unlock (spellID 443677)
+				["name"] = "The General considers you an Acquaintance.",
+			}),
+			q(81602, {	-- [DNT] General - Level 2 Unlock (spellID 443679)
+				["name"] = "The General considers you a Crony.",
+			}),
+			q(81626, {	-- [DNT] General - Level 2 Unlock (spellID 443679) (???)
+				["name"] = "The General considers you a Crony.",
+			}),
+			q(81603, {	-- [DNT] General - Level 3 Unlock (spellID 443680)
+				["name"] = "The General considers you an Accomplice.",
+			}),
+			q(81604, {	-- [DNT] General - Level 4 Unlock (spellID 443681)
+				["name"] = "The General considers you a Collaborator.",
+			}),
+			q(84530, {	-- [DNT] General - Level 5 Unlock (spellID 462466)
+				["name"] = "The General considers you an Accessory.",
+			}),
+			q(84531, {	-- [DNT] General - Level 6 Unlock (spellID 462468)
+				["name"] = "The General considers you an Abettor.",
+			}),
+			q(84532, {	-- [DNT] General - Level 7 Unlock (spellID 462470)
+				["name"] = "The General considers you a Conspirator.",
+			}),
+			q(84533, {	-- [DNT] General - Level 8 Unlock (spellID 462471)
+				["name"] = [[~("The General considers you a Mastermind. Congratulations, Anub'%s."):format(UnitName("player"))]],
+			}),
 			-- Vizier --
-			q(81605),	-- [DNT] Vizier - Level 1 Unlock (spellID 443682) & [DNT] Vizier - Level 4 Unlock (spellID 443686) (???)
-			q(81606),	-- [DNT] Vizier - Level 2 Unlock (spellID 443683)
-			q(81607),	-- [DNT] Vizier - Level 3 Unlock (spellID 443684)
-			q(84534),	-- [DNT] Vizier - Level 5 Unlock (spellID 462473)
-			q(84535),	-- [DNT] Vizier - Level 6 Unlock (spellID 462474)
-			q(84536),	-- [DNT] Vizier - Level 7 Unlock (spellID 462475)
-			q(84537),	-- [DNT] Vizier - Level 8 Unlock (spellID 462476)
+			q(81605, {	-- [DNT] Vizier - Level 1 Unlock (spellID 443682) & [DNT] Vizier - Level 4 Unlock (spellID 443686) (???)
+				["name"] = "The Vizier considers you an Acquaintance.",
+			}),
+			q(81606, {	-- [DNT] Vizier - Level 2 Unlock (spellID 443683)
+				["name"] = "The Vizier considers you a Crony.",
+			}),
+			q(81607, {	-- [DNT] Vizier - Level 3 Unlock (spellID 443684)
+				["name"] = "The Vizier considers you an Accomplice.",
+			}),
+			q(84534, {	-- [DNT] Vizier - Level 5 Unlock (spellID 462473)
+				["name"] = "The Vizier considers you an Accessory.",
+			}),
+			q(84535, {	-- [DNT] Vizier - Level 6 Unlock (spellID 462474)
+				["name"] = "The Vizier considers you an Abettor.",
+			}),
+			q(84536, {	-- [DNT] Vizier - Level 7 Unlock (spellID 462475)
+				["name"] = "The Vizier considers you a Conspirator.",
+			}),
+			q(84537, {	-- [DNT] Vizier - Level 8 Unlock (spellID 462476)
+				["name"] = [[~("The Vizier considers you a Mastermind. Congratulations, %s, Hand of the Vizier."):format(UnitName("player"))]],
+			}),
 			-- Weaver --
-			q(81597),	-- [DNT] Weaver - Level 1 Unlock (spellID 443033)
-			q(81598),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674)
-			q(81627),	-- [DNT] Weaver - Level 2 Unlock (spellID 443674) (???)
-			q(81599),	-- [DNT] Weaver - Level 3 Unlock (spellID 443675)
-			q(81600),	-- [DNT] Weaver - Level 4 Unlock (spellID 443676)
-			q(84538),	-- [DNT] Weaver - Level 5 Unlock (spellID 462490)
-			q(84539),	-- [DNT] Weaver - Level 6 Unlock (spellID 462491)
-			q(84540),	-- [DNT] Weaver - Level 7 Unlock (spellID 462492)
-			q(84541),	-- [DNT] Weaver - Level 8 Unlock (spellID 462493)
+			q(81597, {	-- [DNT] Weaver - Level 1 Unlock (spellID 443033)
+				["name"] = "The Weaver considers you an Acquaintance.",
+			}),
+			q(81598, {	-- [DNT] Weaver - Level 2 Unlock (spellID 443674)
+				["name"] = "The Weaver considers you a Crony.",
+			}),
+			q(81627, {	-- [DNT] Weaver - Level 2 Unlock (spellID 443674) (???)
+				["name"] = "The Weaver considers you a Crony.",
+			}),
+			q(81599, {	-- [DNT] Weaver - Level 3 Unlock (spellID 443675)
+				["name"] = "The Weaver considers you an Accomplice.",
+			}),
+			q(81600, {	-- [DNT] Weaver - Level 4 Unlock (spellID 443676)
+				["name"] = "The Weaver considers you a Collaborator.",
+			}),
+			q(84538, {	-- [DNT] Weaver - Level 5 Unlock (spellID 462490)
+				["name"] = "The Weaver considers you an Accessory.",
+			}),
+			q(84539, {	-- [DNT] Weaver - Level 6 Unlock (spellID 462491)
+				["name"] = "The Weaver considers you an Abettor.",
+			}),
+			q(84540, {	-- [DNT] Weaver - Level 7 Unlock (spellID 462492)
+				["name"] = "The Weaver considers you a Conspirator.",
+			}),
+			q(84541, {	-- [DNT] Weaver - Level 8 Unlock (spellID 462493)
+				["name"] = [[~("The Weaver considers you a Mastermind. Congratulations, Silksinger %s."):format(UnitName("player"))]],
+			}),
 			--'Push quest', should be probably be weekly, since you can 'normaly' choose dude once per week (TODO: re-format it)
 			q(82645),	-- pop questIDs: 81491 (General), 81505 (Vizier), 81472 (Weaver)
 			q(82646),	-- pop questIDs: 81492 (General), 81499 (Weaver), 81506 (Vizier)

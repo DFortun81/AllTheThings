@@ -20,11 +20,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				pet(4480, {	-- Shadowy Oozeling (PET!)
-					["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 10x Unseeming Shift debuff to see this pet",
+					["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 10x Unseeming Shift debuff to see this pet.",
 					["coord"] = { 63.6, 88.1, AZJ_KAHET_LOWER },
 				}),
 				pet(3550, {	-- Undermoth (PET!)
-					-- ["coord"] = { X, Y, AZJ_KAHET },
+					["description"] = "It can be found only as a backline pet in battles throughout Azj-Kahet.",
+					["maps"] = { AZJ_KAHET },
 				}),
 				pet(4477, {	-- Verdant Scootlefish (PET!)
 					["coords"] = {
@@ -34,10 +35,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				pet(4483, {	-- Vile Bloodtick (PET!)
-					-- ["coord"] = { X, Y, AZJ_KAHET },
+					["description"] = "It can be found both as a frontline and a backline pet in battles throughout Azj-Kahet.",
+					["maps"] = { AZJ_KAHET },
 				}),
 				pet(4481, {	-- Voidling Ooze (PET!)
-					["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 10x Unseeming Shift debuff to see this pet",
+					["description"] = "Interact with Black Blood Extractor objects in area until you reach at least 10x Unseeming Shift debuff to see this pet.",
 					["coord"] = { 56.4, 48.3, AZJ_KAHET_LOWER },
 				}),
 			},

@@ -49,7 +49,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["coord"] = { 55.6, 44.2, AZJ_KAHET },
 				}),
 				q(84446, {	-- Renown of Khaz Algar
-						-- Not part of the 'Against the Current' quest chain. I'll find it place somewhere else -Exodius
+					-- Not part of the 'Against the Current' quest chain. I'll find it place somewhere else -Exodius
+					-- Apparently, it can be completed only if your renown reputations are below lvl4, needs more info
 					["sourceQuests"] = { 79197 },	-- Surface Bound
 					["provider"] = { "n", 216149 },	-- Moira Thaurissan
 					["coord"] = { 36.1, 80.3, DORNOGAL },
@@ -531,7 +532,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			--q(79326),	-- after turn in questID 82153 (Embassies and Envoys), [DNT] Push RP Event (spellID 362105)
 			--^ seems like currently fire as 79328 instead with name 'Embassies and Envoys', could be horde counter part?
 			q(80538),	-- after turn in questID 79525 (Report to the Councilward), Tracking Quest [DNT] (spellID 441842)
-			q(79573, {["name"] = "The War Within Campaign Completed [Account]"}),	-- triggered after completing 'Surface Bound' (questID 79197)
+			q(79573, {	-- triggered after completing 'Surface Bound' (questID 79197)
+				["name"] = "The War Within Campaign Completed [Account]",
+			}),
 		}),
 	}),
 })));

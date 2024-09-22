@@ -5,10 +5,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 	m(HALLOWFALL, {
 		n(TREASURES, {
 			i(220123, {	-- Ominous Offering
-				["description"] = "Combine 'Offering of Pure Water' and 'Jar of Mucus' to get this item.\nUsed to summon 'Deathtide' rare",
+				["description"] = "Combine 'Offering of Pure Water' and 'Jar of Mucus' to get this item.\nUsed to summon 'Deathtide'.",
 			}),
 			o(444798, {	-- Arathi Treasure Hoard
-				["description"] = "Spawns everywhere in Hallowfall",
+				["description"] = "Spawns randomly throughout the zone.",
 				["maps"] = { HALLOWFALL },
 				["g"] = {
 					i(212333),	-- Expedition Tinderbox (QS!)
@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(225948, {	-- Caesper
-				["description"] = "Bring Caesper Meaty Haunch and follow him, he will dig up treasure for you",
+				["description"] = "Bring Caesper Meaty Haunch and follow him, he will dig up treasure for you.",
 				["coord"] = { 41.8, 58.3, HALLOWFALL },	-- Caesper
 				["cost"] = {{ "i", 225238, 1 }},	-- Meaty Haunch
 				["g"] = {
@@ -44,8 +44,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					-- some crafting reagents and gray item
 				},
 			}),
-			o(453374, {	-- Dark Ritual
-				["description"] = "In cave",	-- I'm unsure this is treasure, rather rare.
+			o(453374, {	-- Shadowed Essence (Dark Ritual, event)
+				["description"] = "Inside the cave. Interract with the book and start the ritual. Survive the attack and kill the shadows.",
 				["provider"] = { "o", 453359 },	-- Dark Ritual (vignette)
 				["coord"] = { 59.5, 59.7, HALLOWFALL },
 				["questID"] = 83284,
@@ -54,7 +54,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(437211, {	-- Illuminated Footlocker
-				["description"] = "Catch lightning orbs in highlighted zones 5 times to loot this chest",
+				["description"] = "Starblessed Glimmerfly flies around in circle casting Lightning Orbs on the ground.\nCatch 5 Lightning Orbs by standing in illuminated circles in order to reveal the treasure.",
 				["coord"] = { 58.4, 27.2, HALLOWFALL },
 				["questID"] = 81468,
 				["g"] = {
@@ -62,6 +62,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(440926, {	-- Jar of Mucus
+				["description"] = "One of two parts required to create 'Ominous Offering'. An item required to summon 'Deathtide'.",
 				["coords"] = {
 					{ 48.0, 16.7, HALLOWFALL },
 					{ 48.8, 50.2, HALLOWFALL },
@@ -71,6 +72,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(441606, {	-- Jewel of the Cliffs
+				["description"] = "Located inside the crack of the pillar high above ground.",
 				["coord"] = { 55.8, 69.5, HALLOWFALL },
 				["questID"] = 81971,
 				["g"] = {
@@ -80,11 +82,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(444802, {	-- Kobyss Ritual Cache
+				["description"] = "Spawns randomly around the costal regions of the zone.",
 				["maps"] = { HALLOWFALL },
-				--["questID"] = xx,
-				["g"] = {
-					-- crafting reagents and gray items
-				},
 			}),
 			o(441638, {	-- Lost Memento
 				["coord"] = { 50.1, 13.8, HALLOWFALL },
@@ -116,9 +115,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["description"] = "Inside the Shadowmire cave.",
 				["coord"] = { 76.8, 53.8, HALLOWFALL },
 				["questID"] = 79275,
-				["g"] = {
-					-- crafting reagents
-				},
 			}),
 			o(454797, {	-- From the Depths They Come
 				["coord"] = { 57.8, 51.7, HALLOWFALL },
@@ -142,6 +138,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(440914, {	-- Offering of Pure Water
+				["description"] = "One of two parts required to create 'Ominous Offering'. An item required to summon 'Deathtide'.",
 				["coords"] = {
 					{ 28.9, 51.2, HALLOWFALL },
 					{ 34.2, 57.9, HALLOWFALL },
@@ -202,7 +199,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(439473, {	-- Tenir and the Order of Night
-				["description"] = "In the basement",
+				["description"] = "In the basement.",
 				["coord"] = { 63.5, 29.5, HALLOWFALL },
 				["g"] = {
 					i(219384),	-- Tenir and the Order of Night
@@ -236,12 +233,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(224578),	-- Arathor Courier's Satchel
 				},
 			}),
-			--o(, {	-- Coral Fused Clam
-			--	["coord"] = { 64.0, 6.1, HALLOWFALL },
-			--	["questID"] = ,
-			--	["cost"] = {{ "i", xx, 1 }},	-- Clammer's Pry Bar
-			--}),
-			--Lore dude
+			-- Ryfus Sacredpyr / Arathi Loremaster
 			o(453741, {	-- Loremaster's Reward
 				["provider"] = { "n", 221630 },	-- Ryfus Sacredpyr
 				["coord"] = { 40.0, 51.1, HALLOWFALL },
@@ -332,6 +324,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["timeline"] = { "removed 11.0.2.56313" },
 			}),
 			o(441800, {	-- Sunken Cache
+				["description"] = "You need to talk to Sky-Captains Aerthin, Clairmonte, Dornald, and Onaro on their respective airships.",
 				["sourceQuests"] = { 82012, 82024, 82025, 82026 },	-- Talk to all Sky-Captains
 				["coord"] = { 45.9, 45.1, HALLOWFALL },
 				["questID"] = 82005,

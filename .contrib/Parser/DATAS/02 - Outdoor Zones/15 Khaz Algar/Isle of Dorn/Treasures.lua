@@ -29,7 +29,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(212928, {	-- Dalaran Sewer Turtle
-				["description"] = "You will be able to loot the battle pet in Dornogal",
+				["description"] = "You will be able to loot the battle pet in Dornogal.",
 				["coord"] = { 40.9, 73.8, ISLE_OF_DORN },
 				["questID"] = 79586,
 				["cost"] = {
@@ -44,7 +44,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(222940, {	-- Freysworn Letitia
-				["description"] = "Find 6 Pearlescent Shellcrab around Isle of Dorn",
+				["description"] = "Find 6 Pearlescent Shellcrab around Isle of Dorn.",
 				["coord"] = { 48.6, 30.0, ISLE_OF_DORN },
 				["g"] = {
 					i(224185),	-- Crab-Guiding Branch
@@ -135,7 +135,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(223104, {	-- Lionel
 				["description"] = "After you kick Lionel back into water, find 5 |cff888888Plump Snapcrabs|r on the shore and feed him.",
-				["crs"] = { 223104 },	-- Lionel (223143)
+				["crs"] = { 223159 },	-- Plump Snapcrab
 				["coord"] = { 40.6, 59.9, ISLE_OF_DORN },
 				["questID"] = 82212,	-- Weak Lionfish
 				["cost"] = {{"i", 222906, 5}},	-- 5x Plump Snapcrab

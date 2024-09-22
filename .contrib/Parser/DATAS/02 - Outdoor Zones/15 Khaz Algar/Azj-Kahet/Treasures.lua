@@ -66,17 +66,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 76.4, 58.1, AZJ_KAHET },	-- Inside the cave in Mmarl
 				},
 			}),
-			o(444800, {	-- Sureki Strongbox, these could be random like Arathi Treasure Hoard
-				["coords"] = {
-					{ 74.9, 56.3, AZJ_KAHET },
-					{ 78.0, 49.3, NERUBAR },
-					{ 76.3, 43.4, AZJ_KAHET },
-					{ 73.5, 45.2, AZJ_KAHET },
-					--previous coords could be false
-					{ 40.4, 43.5, NERUBAR },
-					{ 39.6, 15.5, NERUBAR },
-				},
-				--["questID"] = xx,	-- missing qtID
+			o(444800, {	-- Sureki Strongbox
+				["description"] = "Spawns randomly throughout the zone.",
+				["maps"] = { AZJ_KAHET },
 			}),
 			o(446421, {	-- Trapped Trove
 				["description"] = "IT'S A TRAP! Navigate through the web traps to get to the treasure.",
@@ -178,7 +170,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(446420, {	-- "Weaving Supplies"
-				["description"] = "Collect colored Silk Scrap from the nearby platform.",
+				["description"] = "Collect colored Silk Scrap from the nearby platform in order to open the treasure chest.",
 				["questID"] = 82527,
 				["coord"] = { 78.6, 33.2, AZJ_KAHET },
 				["cost"] = {

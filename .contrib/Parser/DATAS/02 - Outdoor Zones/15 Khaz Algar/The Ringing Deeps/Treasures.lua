@@ -4,7 +4,6 @@
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(THE_RINGING_DEEPS, {
 		n(TREASURES, {
-			-- Ask Alex About
 			o(433773, {	-- Buried Treasire
 				["coord"] = { 50.8, 52.4, THE_RINGING_DEEPS },
 				["questID"] = 80488,
@@ -33,7 +32,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(217962),	-- Dud Bomb (gray)
 				},
 			}),
-			o(433778, {	-- Buried Treasure, has no questID
+			o(433778, {	-- Buried Treasure
 				["coord"] = { 50.3, 53.3, THE_RINGING_DEEPS },
 				["g"] = {
 					i(217960),	-- Forgotten Key
@@ -41,24 +40,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			-- Repeatable
 			o(452710, {	-- Brimming Deep-Lost Satchel
-				["g"] = {
-					-- Key Shard, Profession Knowledge
-				},
+				["description"] = "Spawns randomly throughout the zone.",
+				["maps"] = { THE_RINGING_DEEPS },
 			}),
 			o(452706, {	-- Deep-Lost Satchel
-				["g"] = {
-					-- Key Shard, Profession Knowledge
-				},
+				["description"] = "Spawns randomly throughout the zone.",
+				["maps"] = { THE_RINGING_DEEPS },
 			}),
 			o(452696, {	-- Machine Speaker's Reliquary
-				["g"] = {
-					-- Key Shard, Profession Knowledge
-				},
+				["description"] = "Spawns randomly throughout the zone.",
+				["maps"] = { THE_RINGING_DEEPS },
 			}),
 			o(446495, {	-- Pile of Refuse
-				["g"] = {
-					-- Key Shard, Profession Knowledge
-				},
+				["description"] = "Spawns randomly throughout the zone.",
+				["maps"] = { THE_RINGING_DEEPS },
 			}),
 			--
 			o(441358, {	-- A Skull on a Sign
@@ -107,7 +102,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			o(433733, {	-- Forgotten Treasure
-				["description"] = "Key to this chest can be found in nearest Buried Treasure",
+				["description"] = "Key to this chest can be found in nearest Buried Treasure.",
 				["coord"] = { 50.5, 53.5, THE_RINGING_DEEPS },
 				["questID"] = 80485,
 				["cost"] = {
@@ -166,7 +161,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 82235,
 			}),
 			o(445403, {	-- Scary Dark Chest
-				["description"] = "Lit up all candles",
+				["description"] = "Lit up all candles.",
 				["coord"] = { 58.9, 30.3, THE_RINGING_DEEPS },
 				["questID"] = 82818,
 				["g"] = {

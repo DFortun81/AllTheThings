@@ -2765,6 +2765,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 	expansion(EXPANSION.DF, {
 		q(77775, {	-- Daily kill of Coren Direbrew
+			["name"] = "Coren Direbrew killed. Cheers...",
 			["timeline"] = { ADDED_10_1_7 },
 		}),
 	}),
