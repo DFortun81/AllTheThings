@@ -37,10 +37,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 			-- Daily Quests
 			n(QUESTS, sharedData({
 				["isDaily"] = true,
+				["description"] = "This quest is in rotation and other daily quests can appear in it's place.",
 			},{
 				q(27948, {	-- A Sticky Task [A]
+					["qg"] = 48255, -- Camp Coordinator Brack
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 73.75, 57.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/4 Sticky Silk Gland
 							["provider"] = { "i", 62803 },	-- Sticky Silk Gland
@@ -49,8 +52,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28684, {	-- A Sticky Task [H]
+					["qg"] = 48360, -- 3rd Officer Kronkar
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/4 Sticky Silk Gland
 							["provider"] = { "i", 62803 },	-- Sticky Silk Gland
@@ -59,16 +64,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28275, {	-- Bombs Away! [A]
+					["qg"] = 48254, -- Sergeant Gray
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 72.95, 60.95, TOL_BARAD_PENINSULA },
 				}),
 				q(28696, {	-- Bombs Away! [H]
+					["qg"] = 48361, -- Private Sarlosk
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
 				}),
 				q(27972, {	-- Boosting Morale [A]
+					["qg"] = 48255, -- Camp Coordinator Brack
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 73.75, 57.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/6 Barrel of Southsea Rum
 							["providers"] = {
@@ -79,8 +90,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28680, {	-- Boosting Morale [H]
+					["qg"] = 48360, -- 3rd Officer Kronkar
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/6 Barrel of Southsea Rum
 							["providers"] = {
@@ -91,8 +104,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(27987, {	-- Cannonball! [A]
+					["qg"] = 48254, -- Sergeant Gray
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 72.95, 60.95, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/4 Stack of Cannonballs
 							["providers"] = {
@@ -103,8 +118,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28698, {	-- Cannonball! [H]
+					["qg"] = 48361, -- Private Sarlosk
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/4 Stack of Cannonballs
 							["providers"] = {
@@ -115,8 +132,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(27970, {	-- Captain P. Harris [A]
+					["qg"] = 48255, -- Camp Coordinator Brack
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 73.75, 57.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Captain P. Harris slain
 							["provider"] = { "n", 47287 },	-- Captain P. Harris
@@ -124,8 +143,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28678, {	-- Captain P. Harris [H]
+					["qg"] = 48360, -- 3rd Officer Kronkar
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Captain P. Harris slain
 							["provider"] = { "n", 47287 },	-- Captain P. Harris
@@ -133,8 +154,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28059, {	-- Claiming The Keep [A]
+					["qg"] = 47240, -- Commander Marcus Johnson
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 73.4, 59.2, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Keep Lord Farson slain
 							["provider"] = { "n", 47447 },	-- Keep Lord Farson
@@ -142,8 +165,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28682, {	-- Claiming The Keep [H]
+					["qg"] = 48358, -- Commander Larmash
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 53.55, 80.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Keep Lord Farson slain
 							["provider"] = { "n", 47447 },	-- Keep Lord Farson
@@ -151,8 +176,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28046, {	-- Finish The Job [A]
+					["qg"] = 48250, -- Lieutenant Farnsworth
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 74.8, 59.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/5 Restless Infantry slain
 							["provider"] = { "n", 46823 },	-- Restless Infantry
@@ -160,8 +187,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28693, {	-- Finish The Job [H]
+					["qg"] = 48363, -- Captain Prug
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 54.9, 79.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/5 Restless Soldier slain
 							["provider"] = { "n", 46825 },	-- Restless Soldier
@@ -169,8 +198,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(27967, {	-- First Lieutenant Connor [A]
+					["qg"] = 48250, -- Lieutenant Farnsworth
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 74.8, 59.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 First Lieutenant Connor slain
 							["provider"] = { "n", 46571 },	-- First Lieutenant Connor
@@ -178,8 +209,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28691, {	-- First Lieutenant Connor [H]
+					["qg"] = 48363, -- Captain Prug
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 54.9, 79.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 First Lieutenant Connor slain
 							["provider"] = { "n", 46571 },	-- First Lieutenant Connor
@@ -187,8 +220,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(27978, {	-- Ghostbuster [A]
+					["qg"] = 48254, -- Sergeant Gray
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 72.95, 60.95, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/14 Largo's Overlook Ghosts Slain
 							["providers"] = {
@@ -200,8 +235,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28697, {	-- Ghostbuster [H]
+					["qg"] = 48361, -- Private Sarlosk
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/14 Largo's Overlook Ghosts Slain
 							["providers"] = {
@@ -213,8 +250,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28063, {	-- Leave No Weapon Behind [A]
+					["qg"] = 47240, -- Commander Marcus Johnson
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 73.4, 59.2, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/12 Rusty Rifle
 							["provider"] = { "i", 62921 },	-- Rusty Rifle
@@ -223,8 +262,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28685, {	-- Leave No Weapon Behind [H]
+					["qg"] = 48358, -- Commander Larmash
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 53.55, 80.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/12 Rusty Rifle
 							["provider"] = { "i", 62921 },	-- Rusty Rifle
@@ -233,8 +274,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(27992, {	-- Magnets, How Do They Work? [A]
+					["qg"] = 48250, -- Lieutenant Farnsworth
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 74.8, 59.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/7 Siege Engine Scrap
 							["providers"] = {
@@ -247,8 +290,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28692, {	-- Magnets, How Do They Work? [H]
+					["qg"] = 48363, -- Captain Prug
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 54.9, 79.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/7 Siege Engine Scrap
 							["providers"] = {
@@ -261,8 +306,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28130, {	-- Not The Friendliest Town [A]
+					["qg"] = 47240, -- Commander Marcus Johnson
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 73.4, 59.2, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/14 Rustberg Village Residents
 							["providers"] = {
@@ -275,8 +322,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28686, {	-- Not The Friendliest Town [H]
+					["qg"] = 48358, -- Commander Larmash
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 53.55, 80.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/14 Rustberg Village Residents
 							["providers"] = {
@@ -289,8 +338,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(27971, {	-- Rattling Their Cages [A]
+					["qg"] = 48255, -- Camp Coordinator Brack
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 73.75, 57.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/8 Shipwrecked Sailor slain
 							["provider"] = { "n", 46605 },	-- Shipwrecked Sailor
@@ -298,8 +349,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28679, {	-- Rattling Their Cages [H]
+					["qg"] = 48360, -- 3rd Officer Kronkar
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/8 Shipwrecked Sailor slain
 							["provider"] = { "n", 46605 },	-- Shipwrecked Sailor
@@ -307,8 +360,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(27966, {	-- Salvaging the Remains [A]
+					["qg"] = 48250, -- Lieutenant Farnsworth
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 74.8, 59.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/9 Cursed Femur
 							["provider"] = { "i", 62808 },	-- Cursed Femur
@@ -322,8 +377,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28690, {	-- Salvaging the Remains [H]
+					["qg"] = 48363, -- Captain Prug
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 54.9, 79.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/9 Cursed Femur
 							["provider"] = { "i", 62808 },	-- Cursed Femur
@@ -337,8 +394,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28050, {	-- Shark Tank [A]
+					["qg"] = 48255, -- Camp Coordinator Brack
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 73.75, 57.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Tank slain
 							["provider"] = { "n", 46608 },	-- Tank
@@ -346,8 +405,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28681, {	-- Shark Tank [H]
+					["qg"] = 48360, -- 3rd Officer Kronkar
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Tank slain
 							["provider"] = { "n", 46608 },	-- Tank
@@ -355,8 +416,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(27991, {	-- Taking the Overlook Back [A]
+					["qg"] = 48254, -- Sergeant Gray
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 72.95, 60.95, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Commander Largo slain
 							["provider"] = { "n", 47304 },	-- Commander Largo
@@ -364,8 +427,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28700, {	-- Taking the Overlook Back [H]
+					["qg"] = 48361, -- Private Sarlosk
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Commander Largo slain
 							["provider"] = { "n", 47304 },	-- Commander Largo
@@ -373,8 +438,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28137, {	-- Teach A Man To Fish.... Or Steal [A]
+					["qg"] = 47240, -- Commander Marcus Johnson
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 73.4, 59.2, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/22 Rustberg Seabass
 							["provider"] = { "i", 63047 },	-- Rustberg Seabass
@@ -383,8 +450,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28687, {	-- Teach A Man To Fish.... Or Steal [H]
+					["qg"] = 48358, -- Commander Larmash
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 53.55, 80.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/22 Rustberg Seabass
 							["provider"] = { "i", 63047 },	-- Rustberg Seabass
@@ -393,8 +462,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(27949, {	-- The Forgotten [A]
+					["qg"] = 48250, -- Lieutenant Farnsworth
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 74.8, 59.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/6 Forgotten Soldier's Tombstone
 							["provider"] = { "o", 206570 },	-- Forgotten Soldier's Tombstone
@@ -402,8 +473,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28689, {	-- The Forgotten [H]
+					["qg"] = 48363, -- Captain Prug
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 54.9, 79.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/6 Forgotten Soldier's Tombstone
 							["provider"] = { "o", 206570 },	-- Forgotten Soldier's Tombstone
@@ -411,8 +484,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(27944, {	-- Thinning the Brood [A]
+					["qg"] = 48255, -- Camp Coordinator Brack
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 73.75, 57.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/12 Darkwood Lurker slain
 							["provider"] = { "n", 46508 },	-- Darkwood Lurker
@@ -420,8 +495,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28683, {	-- Thinning the Brood [H]
+					["qg"] = 48360, -- 3rd Officer Kronkar
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/12 Darkwood Lurker slain
 							["provider"] = { "n", 46508 },	-- Darkwood Lurker
@@ -429,8 +506,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(27975, {	-- WANTED: Foreman Wellson [A]
+					["qg"] = 48254, -- Sergeant Gray
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 72.95, 60.95, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Foreman Wellson slain
 							["provider"] = { "n", 46648 },	-- Foreman Wellson
@@ -438,8 +517,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28695, {	-- WANTED: Foreman Wellson [H]
+					["qg"] = 48361, -- Private Sarlosk
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Foreman Wellson slain
 							["provider"] = { "n", 46648 },	-- Foreman Wellson
@@ -447,16 +528,22 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28065, {	-- Walk A Mile In Their Shoes [A]
+					["qg"] = 47240, -- Commander Marcus Johnson
 					["timeline"] = { ADDED_4_0_3 },
+					["coord"] = { 73.4, 59.2, TOL_BARAD_PENINSULA },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(28721, {	-- Walk A Mile In Their Shoes [H]
+					["qg"] = 48358, -- Commander Larmash
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 53.55, 80.6, TOL_BARAD_PENINSULA },
 				}),
 				q(27973, {	-- Watch Out For Splinters! [A]
+					["qg"] = 48254, -- Sergeant Gray
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["coord"] = { 72.95, 60.95, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/15 Shipyard Lumber
 							["provider"] = { "i", 62811 },	-- Shipyard Lumber
@@ -470,8 +557,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 				q(28694, {	-- Watch Out For Splinters! [H]
+					["qg"] = 48361, -- Private Sarlosk
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
+					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/15 Shipyard Lumber
 							["provider"] = { "i", 62811 },	-- Shipyard Lumber
@@ -642,7 +731,26 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 						ach(5415),	-- Tower Plower
 					})),
 					pvp(n(QUESTS, {
+						q(28882, {	-- Victory in Tol Barad [A]
+							["qg"] = 51288,	-- Major Marsden
+							["timeline"] = { ADDED_4_0_3 },
+							["races"] = ALLIANCE_ONLY,
+							["isWeekly"] = true,
+							["lvl"] = 90,
+						}),
+						q(28884, {	-- Victory in Tol Barad [H]
+							["qg"] = 51287,	-- Colonel Karzag
+							["timeline"] = { ADDED_4_0_3 },
+							["races"] = HORDE_ONLY,
+							["isWeekly"] = true,
+							["lvl"] = 90,
+						}),
+					})),
+					pvp(n(QUESTS, sharedData({ -- Always up in Baradin Hold: Sergeant Parker (Alliance)/Commander Zanoth(Horde)
+						["coord"] = { 51.0, 49.65, TOL_BARAD },
+					}, {
 						q(28122, {	-- A Huge Problem [A]
+							["qg"] = 48066, -- Sergeant Parker
 							["timeline"] = { ADDED_4_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
@@ -653,6 +761,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							},
 						}),
 						q(28657, {	-- A Huge Problem [H]
+							["qg"] = 48069, -- Commander Zanoth
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
@@ -662,201 +771,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 								}),
 							},
 						}),
-						q(28117, {	-- Clearing the Depths [A]
-							["timeline"] = { ADDED_4_0_1 },
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-							["groups"] = {
-								objective(1, {	-- 0/9 Ghosts Slain
-									["providers"] = {
-										{ "n", 47531},	-- Captive Spirit
-										{ "n", 47534},	-- Cellblock Ooze
-										{ "n", 47590},	-- Ghastly Convict
-									},
-								}),
-							},
-						}),
-						q(28660, {	-- Clearing the Depths [H]
-							["timeline"] = { ADDED_4_0_3 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-							["groups"] = {
-								objective(1, {	-- 0/9 Ghosts Slain
-									["providers"] = {
-										{ "n", 47531},	-- Captive Spirit
-										{ "n", 47534},	-- Cellblock Ooze
-										{ "n", 47590},	-- Ghastly Convict
-									},
-								}),
-							},
-						}),
-						q(28665, {	-- Cursed Shackles [H]
-							["timeline"] = { ADDED_8_0_1 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-							["groups"] = {
-								objective(1, {	-- 0/8 Cursed Shackles
-									["providers"] = {
-										{ "i", 63149 },	-- Cursed Shackles
-										{ "o", 206905 },	-- Cursed Shackles
-									},
-								}),
-							},
-						}),
-						q(28186, {	-- Cursed Shackles [A]
-							["timeline"] = { ADDED_4_0_1 },
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-							["groups"] = {
-								objective(1, {	-- 0/8 Cursed Shackles
-									["providers"] = {
-										{ "i", 63149 },	-- Cursed Shackles
-										{ "o", 206905 },	-- Cursed Shackles
-									},
-								}),
-							},
-						}),
-						q(28165, {	-- D-Block [A]
-							["timeline"] = { ADDED_4_0_1 },
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-							["groups"] = {
-								objective(1, {	-- 0/10 Demons Slain
-									["providers"] = {
-										{ "n", 47540},	-- Shivan Destroyer
-										{ "n", 47542},	-- Cell Watcher
-										{ "n", 47544},	-- Svarnos
-										{ "n", 47548},	-- Jailed Wrathguard
-										{ "n", 47549},	-- Imprisoned Imp
-										{ "n", 56350},	-- Disciple of Hate
-									},
-								}),
-							},
-						}),
-						q(28663, {	-- D-Block [H]
-							["timeline"] = { ADDED_4_0_3 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-							["groups"] = {
-								objective(1, {	-- 0/10 Demons Slain
-									["providers"] = {
-										{ "n", 47540},	-- Shivan Destroyer
-										{ "n", 47542},	-- Cell Watcher
-										{ "n", 47544},	-- Svarnos
-										{ "n", 47548},	-- Jailed Wrathguard
-										{ "n", 47549},	-- Imprisoned Imp
-										{ "n", 56350},	-- Disciple of Hate
-									},
-								}),
-							},
-						}),
-						q(28670, {	-- Food From Below [H]
-							["timeline"] = { ADDED_8_0_1 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-							["groups"] = {
-								objective(1, {	-- 0/12 Cellblock Rations
-									["providers"] = {
-										{ "i", 63315 },	-- Cellblock Rations
-										{ "o", 206996 },	-- Crate of Cellblock Rations
-									},
-								}),
-							},
-						}),
-						q(28232, {	-- Food From Below [A]
-							["timeline"] = { ADDED_4_0_1 },
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-							["groups"] = {
-								objective(1, {	-- 0/12 Cellblock Rations
-									["providers"] = {
-										{ "i", 63315 },	-- Cellblock Rations
-										{ "o", 206996 },	-- Crate of Cellblock Rations
-									},
-								}),
-							},
-						}),
-						q(28662, {	-- Learning From The Past [H]
-							["timeline"] = { ADDED_4_0_3 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-							["groups"] = {
-								objective(1, {	-- 0/4 Dusty Prison Journal
-									["providers"] = {
-										{ "i", 63034 },	-- Dusty Prison Journal
-										{ "o", 206890 },	-- Dusty Prison Journal
-									},
-								}),
-							},
-						}),
-						q(28120, {	-- Learning From The Past [A]
-							["timeline"] = { ADDED_4_0_1 },
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-							["groups"] = {
-								objective(1, {	-- 0/4 Dusty Prison Journal
-									["providers"] = {
-										{ "i", 63034 },	-- Dusty Prison Journal
-										{ "o", 206890 },	-- Dusty Prison Journal
-									},
-								}),
-							},
-						}),
-						q(28188, {	-- Prison Revolt [A]
-							["timeline"] = { ADDED_4_0_1 },
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-							["groups"] = {
-								objective(1, {	-- 0/10 Prisoners Slain
-									["providers"] = {
-										{ "n", 47550},	-- Imprisoned Worker
-										{ "n", 47552},	-- Exiled Mage
-										{ "n", 47561},	-- Warden Guard
-										{ "n", 48036},	-- Warden Silva
-										{ "n", 51023},	-- Demented Prisoner
-									},
-								}),
-							},
-						}),
-						q(28668, {	-- Prison Revolt [H]
-							["timeline"] = { ADDED_4_0_3 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-							["groups"] = {
-								objective(1, {	-- 0/10 Prisoners Slain
-									["providers"] = {
-										{ "n", 47550},	-- Imprisoned Worker
-										{ "n", 47552},	-- Exiled Mage
-										{ "n", 47561},	-- Warden Guard
-										{ "n", 48036},	-- Warden Silva
-										{ "n", 51023},	-- Demented Prisoner
-									},
-								}),
-							},
-						}),
-						q(28185, {	-- Svarnos [A]
-							["timeline"] = { ADDED_4_0_1 },
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-							["groups"] = {
-								objective(1, {	-- 0/1 Svarnos' Cursed Collar
-									["provider"] = { "i", 63143 },	-- Svarnos' Cursed Collar
-									["cr"] = 47544,	-- Svarnos
-								}),
-							},
-						}),
-						q(28664, {	-- Svarnos [H]
-							["timeline"] = { ADDED_8_0_1 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-							["groups"] = {
-								objective(1, {	-- 0/1 Svarnos' Cursed Collar
-									["provider"] = { "i", 63143 },	-- Svarnos' Cursed Collar
-									["cr"] = 47544,	-- Svarnos
-								}),
-							},
-						}),
 						q(28658, {	-- Swamp Bait [H]
+							["qg"] = 48069, -- Commander Zanoth
 							["timeline"] = { ADDED_8_0_1 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
@@ -868,6 +784,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							},
 						}),
 						q(28162, {	-- Swamp Bait [A]
+							["qg"] = 48066, -- Sergeant Parker
 							["timeline"] = { ADDED_8_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
@@ -878,29 +795,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 								}),
 							},
 						}),
-						q(28661, {	-- The Imprisoned Archmage [A]
-							["timeline"] = { ADDED_8_0_1 },
-							["races"] = HORDE_ONLY,
-							["isDaily"] = true,
-							["groups"] = {
-								objective(1, {	-- 0/1 Archmage Galus' Staff
-									["provider"] = { "i", 63033 },	-- Archmage Galus' Staff
-									["cr"] = 47537,	-- Archmage Galus
-								}),
-							},
-						}),
-						q(28118, {	-- The Imprisoned Archmage [H]
-							["timeline"] = { ADDED_4_0_1 },
-							["races"] = ALLIANCE_ONLY,
-							["isDaily"] = true,
-							["groups"] = {
-								objective(1, {	-- 0/1 Archmage Galus' Staff
-									["provider"] = { "i", 63033 },	-- Archmage Galus' Staff
-									["cr"] = 47537,	-- Archmage Galus
-								}),
-							},
-						}),
 						q(28163, {	-- The Leftovers [A]
+							["qg"] = 48066, -- Sergeant Parker
 							["timeline"] = { ADDED_4_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
@@ -920,6 +816,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							},
 						}),
 						q(28659, {	-- The Leftovers [H]
+							["qg"] = 48069, -- Commander Zanoth
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
@@ -938,7 +835,244 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 								}),
 							},
 						}),
+					}))),
+					pvp(n(QUESTS, sharedData({ -- Rotating questgivers in Baradin Hold
+						["coord"] = { 51.45, 49.65, TOL_BARAD },
+					}, {
+						q(28117, {	-- Clearing the Depths [A]
+							["qg"] = 48039, -- Commander Stevens
+							["timeline"] = { ADDED_4_0_1 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/9 Ghosts Slain
+									["providers"] = {
+										{ "n", 47531},	-- Captive Spirit
+										{ "n", 47534},	-- Cellblock Ooze
+										{ "n", 47590},	-- Ghastly Convict
+									},
+								}),
+							},
+						}),
+						q(28660, {	-- Clearing the Depths [H]
+							["qg"] = 48071, -- Private Garnoth
+							["timeline"] = { ADDED_4_0_3 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/9 Ghosts Slain
+									["providers"] = {
+										{ "n", 47531},	-- Captive Spirit
+										{ "n", 47534},	-- Cellblock Ooze
+										{ "n", 47590},	-- Ghastly Convict
+									},
+								}),
+							},
+						}),
+						q(28665, {	-- Cursed Shackles [H]
+							["qg"] = 48070, -- Drillmaster Razgoth
+							["timeline"] = { ADDED_8_0_1 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/8 Cursed Shackles
+									["providers"] = {
+										{ "i", 63149 },	-- Cursed Shackles
+										{ "o", 206905 },	-- Cursed Shackles
+									},
+								}),
+							},
+						}),
+						q(28186, {	-- Cursed Shackles [A]
+							["qg"] = 48061, -- 2nd Lieutenant Wansworth
+							["timeline"] = { ADDED_4_0_1 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/8 Cursed Shackles
+									["providers"] = {
+										{ "i", 63149 },	-- Cursed Shackles
+										{ "o", 206905 },	-- Cursed Shackles
+									},
+								}),
+							},
+						}),
+						q(28165, {	-- D-Block [A]
+							["qg"] = 48061, -- 2nd Lieutenant Wansworth
+							["timeline"] = { ADDED_4_0_1 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/10 Demons Slain
+									["providers"] = {
+										{ "n", 47540},	-- Shivan Destroyer
+										{ "n", 47542},	-- Cell Watcher
+										{ "n", 47544},	-- Svarnos
+										{ "n", 47548},	-- Jailed Wrathguard
+										{ "n", 47549},	-- Imprisoned Imp
+										{ "n", 56350},	-- Disciple of Hate
+									},
+								}),
+							},
+						}),
+						q(28663, {	-- D-Block [H]
+							["qg"] = 48070, -- Drillmaster Razgoth
+							["timeline"] = { ADDED_4_0_3 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/10 Demons Slain
+									["providers"] = {
+										{ "n", 47540},	-- Shivan Destroyer
+										{ "n", 47542},	-- Cell Watcher
+										{ "n", 47544},	-- Svarnos
+										{ "n", 47548},	-- Jailed Wrathguard
+										{ "n", 47549},	-- Imprisoned Imp
+										{ "n", 56350},	-- Disciple of Hate
+									},
+								}),
+							},
+						}),
+						q(28670, {	-- Food From Below [H]
+							["gq"] = 48062, -- Staff Sergeant Lazgar
+							["timeline"] = { ADDED_8_0_1 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/12 Cellblock Rations
+									["providers"] = {
+										{ "i", 63315 },	-- Cellblock Rations
+										{ "o", 206996 },	-- Crate of Cellblock Rations
+									},
+								}),
+							},
+						}),
+						q(28232, {	-- Food From Below [A]
+							["gq"] = 48074, -- Marshal Fallows
+							["timeline"] = { ADDED_4_0_1 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/12 Cellblock Rations
+									["providers"] = {
+										{ "i", 63315 },	-- Cellblock Rations
+										{ "o", 206996 },	-- Crate of Cellblock Rations
+									},
+								}),
+							},
+						}),
+						q(28662, {	-- Learning From The Past [H]
+							["qg"] = 48071, -- Private Garnoth
+							["timeline"] = { ADDED_4_0_3 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/4 Dusty Prison Journal
+									["providers"] = {
+										{ "i", 63034 },	-- Dusty Prison Journal
+										{ "o", 206890 },	-- Dusty Prison Journal
+									},
+								}),
+							},
+						}),
+						q(28120, {	-- Learning From The Past [A]
+							["qg"] = 48039, -- Commander Stevens
+							["timeline"] = { ADDED_4_0_1 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/4 Dusty Prison Journal
+									["providers"] = {
+										{ "i", 63034 },	-- Dusty Prison Journal
+										{ "o", 206890 },	-- Dusty Prison Journal
+									},
+								}),
+							},
+						}),
+						q(28188, {	-- Prison Revolt [A]
+							["gq"] = 48074, -- Marshal Fallows
+							["timeline"] = { ADDED_4_0_1 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/10 Prisoners Slain
+									["providers"] = {
+										{ "n", 47550},	-- Imprisoned Worker
+										{ "n", 47552},	-- Exiled Mage
+										{ "n", 47561},	-- Warden Guard
+										{ "n", 48036},	-- Warden Silva
+										{ "n", 51023},	-- Demented Prisoner
+									},
+								}),
+							},
+						}),
+						q(28668, {	-- Prison Revolt [H]
+							["gq"] = 48062, -- Staff Sergeant Lazgar
+							["timeline"] = { ADDED_4_0_3 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/10 Prisoners Slain
+									["providers"] = {
+										{ "n", 47550},	-- Imprisoned Worker
+										{ "n", 47552},	-- Exiled Mage
+										{ "n", 47561},	-- Warden Guard
+										{ "n", 48036},	-- Warden Silva
+										{ "n", 51023},	-- Demented Prisoner
+									},
+								}),
+							},
+						}),
+						q(28185, {	-- Svarnos [A]
+							["qg"] = 48061, -- 2nd Lieutenant Wansworth
+							["timeline"] = { ADDED_4_0_1 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/1 Svarnos' Cursed Collar
+									["provider"] = { "i", 63143 },	-- Svarnos' Cursed Collar
+									["cr"] = 47544,	-- Svarnos
+								}),
+							},
+						}),
+						q(28664, {	-- Svarnos [H]
+							["qg"] = 48070, -- Drillmaster Razgoth
+							["timeline"] = { ADDED_8_0_1 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/1 Svarnos' Cursed Collar
+									["provider"] = { "i", 63143 },	-- Svarnos' Cursed Collar
+									["cr"] = 47544,	-- Svarnos
+								}),
+							},
+						}),
+						q(28661, {	-- The Imprisoned Archmage [A]
+							["qg"] = 48039, -- Commander Stevens
+							["timeline"] = { ADDED_8_0_1 },
+							["races"] = HORDE_ONLY,
+							["isDaily"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/1 Archmage Galus' Staff
+									["provider"] = { "i", 63033 },	-- Archmage Galus' Staff
+									["cr"] = 47537,	-- Archmage Galus
+								}),
+							},
+						}),
+						q(28118, {	-- The Imprisoned Archmage [H]
+							["qg"] = 48071, -- Private Garnoth
+							["timeline"] = { ADDED_4_0_1 },
+							["races"] = ALLIANCE_ONLY,
+							["isDaily"] = true,
+							["groups"] = {
+								objective(1, {	-- 0/1 Archmage Galus' Staff
+									["provider"] = { "i", 63033 },	-- Archmage Galus' Staff
+									["cr"] = 47537,	-- Archmage Galus
+								}),
+							},
+						}),
 						q(28223, {	-- The Warden [A]
+							["gq"] = 48074, -- Marshal Fallows
 							["timeline"] = { ADDED_4_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
@@ -950,6 +1084,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							},
 						}),
 						q(28669, {	-- The Warden [H]
+							["gq"] = 48062, -- Staff Sergeant Lazgar
 							["timeline"] = { ADDED_8_0_1 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
@@ -960,21 +1095,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 								}),
 							},
 						}),
-						q(28882, {	-- Victory in Tol Barad [A]
-							["qg"] = 51288,	-- Major Marsden
-							["timeline"] = { ADDED_4_0_3 },
-							["races"] = ALLIANCE_ONLY,
-							["isWeekly"] = true,
-							["lvl"] = 90,
-						}),
-						q(28884, {	-- Victory in Tol Barad [H]
-							["qg"] = 51287,	-- Colonel Karzag
-							["timeline"] = { ADDED_4_0_3 },
-							["races"] = HORDE_ONLY,
-							["isWeekly"] = true,
-							["lvl"] = 90,
-						}),
-					})),
+					}))),
 					n(REWARDS, {
 						currency(391, {	-- Tol Barad Commendation
 							["description"] = "These are rewarded by completing Tol Barad daily quests.",
@@ -989,7 +1110,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 						-- #endif
 					}),
 				},
+				["groups"] = sharedData({ -- Rotating questgivers in Tol Barad
+					["description"] = "This questgiver shares it's spawn with two other quest givers. Win the battle of Tol Barad to have a chance at getting a different questgiver offering other quests in it's place.",
+				}, {
+					n(48039), -- Commander Stevens
+					n(48061), -- 2nd Lieutenant Wansworth
+					n(48062), -- Staff Sergeant Lazgar
+					n(48070), -- Drillmaster Razgoth
+					n(48071), -- Private Garnoth
+					n(48074), -- Marshal Fallows
+				}),
 			}),
 		},
+		["groups"] = sharedData({ -- Rotating questgivers in Tol Barad Peninsula
+			-- #if AFTER 8.0.3
+			["description"] = "Due to how sharding works, you will usually only get the same eight daily quests from the camp in Tol Barad Peninsula. The trick for having a chance at getting offered some of the other quests in rotation is to have zoned into Tol Barad Peninsula a few minutes before the daily reset occurs. Then you can wait for the daily reset, or leave the zone for up to 15 minutes before returning. Protip: Do the same with Warmode on, which zones you to a different shard. Quests picked up in Warmode can be completed and turned in outside Warmode.",
+			-- #endif
+		}, {
+			n(47240), -- Commander Marcus Johnson
+			n(48250), -- Lieutenant Farnsworth
+			n(48254), -- Sergeant Gray
+			n(48255), -- Camp Coordinator Brack
+			n(48358), -- Commander Larmash
+			n(48360), -- 3rd Officer Kronkar
+			n(48361), -- Private Sarlosk
+			n(48363), -- Captain Prug
+		}),
 	}),
 })));
