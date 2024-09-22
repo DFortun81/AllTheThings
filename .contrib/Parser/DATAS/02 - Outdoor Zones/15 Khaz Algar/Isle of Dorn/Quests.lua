@@ -430,7 +430,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78574, {	-- Boss of the Bosk
 					["sourceQuests"] = { 78573 },	-- Keeper's Aid
 					["provider"] = { "n", 218333 },	-- Woldtender Igris
-					["coord"] = { 53.9, 69.4, ISLE_OF_DORN },
+					["coord"] = { 54.2, 65.3, ISLE_OF_DORN },
 					["g"] = {
 						i(215142),	-- Freydrin's Shillelagh (QI!)
 						i(219769),	-- Sporefused Chainmail
@@ -1028,7 +1028,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82801, {	-- Beetlejeweled
 					["sourceQuests"] = { 82800 },	--A Sedimental Moment
 					["provider"] = { "n", 224708 },	-- Cenderragg
-					["coord"] = { 48.6, 60.9, ISLE_OF_DORN },
+					["coord"] = { 47.4, 60.9, ISLE_OF_DORN },
 					["g"] = {
 						i(228375),	-- Belt of Kix'arak's Bane
 						i(228376),	-- Boots of Kix'arak's Bane

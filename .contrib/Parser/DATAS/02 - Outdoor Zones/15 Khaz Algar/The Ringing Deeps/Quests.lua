@@ -301,8 +301,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(81798, {	-- Return to Moira
 					["sourceQuests"] = {
-						78741, -- Sympathetic Speaker
-						78742, -- Battle of the Earthenworks
+						78741,	-- Sympathetic Speaker
+						78742,	-- Battle of the Earthenworks
 					},
 					["provider"] = { "n", 213672 },	-- Foreman Uzjax
 					["coord"] = { 49.0, 17.5, THE_RINGING_DEEPS },
@@ -310,6 +310,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(78760, {	-- Dark Iron from Above
 					["sourceQuests"] = {
+						78741,	-- Sympathetic Speaker
 						78742,	-- Battle of the Earthenworks
 						81798,	-- Return to Moira
 					},
