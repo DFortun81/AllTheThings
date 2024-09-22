@@ -898,6 +898,7 @@ root(ROOTS.Zones, {
 					}),
 					q(10306, {	-- Conjurer Luminrath
 						["provider"] = { "i", 29235 },	-- Luminrath's Mantle
+						["crs"] = { 19544 },	-- Conjurer Luminrath
 						["coord"] = { 59.8, 85.6, NETHERSTORM },
 						["groups"] = {
 							objective(1, {	-- 0/1 Put Luminrath's Spirit to Rest

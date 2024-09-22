@@ -167,11 +167,12 @@ end);
 
 -- External Functionality
 -- TODO: Eventually I'd like for this to not be externally referenced and to instead use an event handler or to register with the Settings Menu or something (be able to turn it off)
-app.AddArtifactRelicInformation = function(itemID, rawlink, info, group)
+app.AddArtifactRelicInformation = function(itemID, info, group)
 	-- TODO: Change this to a different tooltip setting.
 	if app.Settings:GetTooltipSetting("Progress") and IsArtifactRelicItem(itemID) then
 		-- If the item is a relic, then let's compare against equipped relics.
 		if CurrentArtifactRelicItemLevels then
+			local rawlink = group.rawlink or group.link
 			local progress, total = 0, 0;
 			local relicItemLevel = select(1, GetDetailedItemLevelInfo(rawlink)) or 0;
 			local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
@@ -209,6 +210,13 @@ app.AddArtifactRelicInformation = function(itemID, rawlink, info, group)
 		end
 	end
 end
+-- app.Settings.CreateInformationType("ArtifactRelicCompletion", {
+-- 	priority = 10000,
+-- 	text = L.ARTIFACT_RELIC_COMPLETION,
+-- 	Process = function(t, reference, tooltipInfo)
+	-- TODO: migrate above AddArtifactRelicInformation to here
+-- 	end
+-- })
 
 -- Resolve Functionality
 local tremove, contains = tremove, app.contains;

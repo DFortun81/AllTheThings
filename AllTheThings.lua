@@ -2773,7 +2773,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				working = true;
 			end
 
-			app.AddArtifactRelicInformation(itemID, rawlink, tooltipInfo, group);
+			app.AddArtifactRelicInformation(itemID, tooltipInfo, group);
 		end
 
 		if group.g and app.Settings:GetTooltipSetting("SummarizeThings") then
