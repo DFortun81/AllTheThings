@@ -565,21 +565,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				applyclassicphase(CATA_PHASE_MOLTEN_FRONT, q(29122, {	-- Echoes of Nemesis
-					["qg"] = 52671,	-- Mylune
-					["sourceQuest"] = 29101,	-- Punting Season
-					["coord"] = { 27.1, 61.9, MOUNT_HYJAL },
-					["timeline"] = { ADDED_4_1_0 },
-					["isDaily"] = true,
-					["lvl"] = 85,
-					["groups"] = {
-						n(52383, {	-- Nemesis <Echo of the Usurper>
-							crit(17834, {	-- Infernal Ambassadors (Slay Nemesis at Ashen Lake without taking damage from Molten Fury)
-								["achievementID"] = 5869,
-							}),
-						}),
-					},
-				})),
 				q(25764, {	-- Egg Hunt
 					["qg"] = 41006,	-- Thisalee Crow
 					["sourceQuests"] = {
@@ -739,18 +724,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(52716),	-- Twilight Firelance
 					},
 				}),
-				applyclassicphase(CATA_PHASE_MOLTEN_FRONT, q(29182, {	-- Flight of the Storm Crows
-					["providers"] = {
-						{ "n", 50068 },	-- Isara Riverstride
-						{ "n", 52669 },	-- Matoclaw
-					},
-					["sourceQuest"] = 29181,	-- Druids of the Talon
-					["coords"] = {
-						{ 27.1, 62.5, MOUNT_HYJAL },
-						{ 42.6, 45.6, MOUNT_HYJAL },
-					},
-					["timeline"] = { ADDED_4_1_0 },
-				})),
 				q(25575, {	-- Forged of Shadow and Flame
 					["qg"] = 40834,	-- Jordan Olafson
 					["sourceQuest"] = 25617,	-- Into the Maw!
@@ -1135,27 +1108,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(57287),	-- Gauntlets of Guerilla Fury
 					},
 				}),
-				applyclassicphase(CATA_PHASE_MOLTEN_FRONT, q(29162, {	-- Nature's Blessing
-					["qg"] = 52671,	-- Mylune
-					["sourceQuest"] = 29161,	-- Those Bears Up There
-					["coord"] = { 27.1, 62.0, MOUNT_HYJAL },
-					["timeline"] = { ADDED_4_1_0 },
-					["isDaily"] = true,
-					["lvl"] = 85,
-					["groups"] = {
-						objective(1, {	-- 0/4 Flame Ascendant slain
-							["provider"] = { "n", 40709 },	-- Flame Ascendant
-						}),
-						objective(2, {	-- 0/5 Twilight Subjugator slain
-							["provider"] = { "n", 40463 },	-- Twilight Subjugator
-						}),
-						n(52749, {	-- Pyrachnis <Beth'tilac Lieutenant>
-							crit(17829, {	-- Infernal Ambassadors (Slay Pyrachnis without using the Emerald of Aessina)
-								["achievementID"] = 5869,
-							}),
-						}),
-					},
-				})),
 				q(25392, {	-- Oh, Deer!
 					["qg"] = 39930,	-- Mylune
 					["sourceQuest"] = 25385,	-- Save the Wee Animals
@@ -1166,19 +1118,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(57328),	-- Cloak of Cheerful Flowers
 					},
 				}),
-				applyclassicphase(CATA_PHASE_MOLTEN_FRONT, q(29145, {	-- Opening the Door
-					["qg"] = 52669,	-- Matoclaw
-					-- #if AFTER 4.2.0
-					["sourceQuests"] = {
-						29387,	-- Guardians of Hyjal: Firelands Invasion! (A)
-						29388,	-- Guardians of Hyjal: Firelands Invasion! (H)
-						29389,	-- Guardians of Hyjal: Firelands Invasion! (both)
-					},
-					-- #endif
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-					["timeline"] = { ADDED_4_1_0 },
-					["lvl"] = 85,
-				})),
 				q(29164, {	-- Perfecting Your Howl
 					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall

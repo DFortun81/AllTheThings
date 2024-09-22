@@ -458,6 +458,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
+				q(29122, {	-- Echoes of Nemesis
+					["qg"] = 52671,	-- Mylune
+					["sourceQuest"] = 29101,	-- Punting Season
+					["coord"] = { 27.1, 61.9, MOUNT_HYJAL },
+					["timeline"] = { ADDED_4_1_0 },
+					["isDaily"] = true,
+					["lvl"] = 85,
+					["groups"] = {
+						n(52383, {	-- Nemesis <Echo of the Usurper>
+							crit(17834, {	-- Infernal Ambassadors (Slay Nemesis at Ashen Lake without taking damage from Molten Fury)
+								["achievementID"] = 5869,
+							}),
+						}),
+					},
+				}),
 				q(29255, {	-- Embergris
 					["qg"] = 52489,	-- Avrilla
 					["sourceQuest"] = 29254,	-- Little Lasher
@@ -615,6 +630,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						}),
 						currency(416),	-- Mark of the World Tree (x2)
 					},
+				}),
+				q(29182, {	-- Flight of the Storm Crows
+					["providers"] = {
+						{ "n", 50068 },	-- Isara Riverstride
+						{ "n", 52669 },	-- Matoclaw
+					},
+					["sourceQuest"] = 29181,	-- Druids of the Talon
+					["coords"] = {
+						{ 27.1, 62.5, MOUNT_HYJAL },
+						{ 42.6, 45.6, MOUNT_HYJAL },
+					},
+					["timeline"] = { ADDED_4_1_0 },
 				}),
 				heroscall(q(29391, {	-- Guardians of Hyjal: Call of the Ancients (A)
 					["description"] = "Only available to players who have not quested through Mount Hyjal.",
@@ -775,6 +802,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
+				q(29162, {	-- Nature's Blessing
+					["qg"] = 52671,	-- Mylune
+					["sourceQuest"] = 29161,	-- Those Bears Up There
+					["coord"] = { 27.1, 62.0, MOUNT_HYJAL },
+					["timeline"] = { ADDED_4_1_0 },
+					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/4 Flame Ascendant slain
+							["provider"] = { "n", 40709 },	-- Flame Ascendant
+						}),
+						objective(2, {	-- 0/5 Twilight Subjugator slain
+							["provider"] = { "n", 40463 },	-- Twilight Subjugator
+						}),
+						n(52749, {	-- Pyrachnis <Beth'tilac Lieutenant>
+							crit(17829, {	-- Infernal Ambassadors (Slay Pyrachnis without using the Emerald of Aessina)
+								["achievementID"] = 5869,
+							}),
+						}),
+					},
+				}),
 				q(29272, {	-- Need... Water... Badly...
 					["qg"] = 53233,	-- Anren Shadowseeker
 					["sourceQuest"] = 29181,	-- Druids of the Talon
@@ -790,6 +837,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29279,	-- Filling the Moonwell
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+				}),
+				q(29145, {	-- Opening the Door
+					["qg"] = 52669,	-- Matoclaw
+					-- #if AFTER 4.2.0
+					["sourceQuests"] = {
+						29387,	-- Guardians of Hyjal: Firelands Invasion! (A)
+						29388,	-- Guardians of Hyjal: Firelands Invasion! (H)
+						29389,	-- Guardians of Hyjal: Firelands Invasion! (both)
+					},
+					-- #endif
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["timeline"] = { ADDED_4_1_0 },
 				}),
 				q(29287, {	-- Peaked Interest
 					["qg"] = 52491,	-- Morthis Whisperwing
