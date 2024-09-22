@@ -843,17 +843,18 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			n(17225, {	-- Nightbane
 				["lore"] = "Nightbane is a summonable boss found in Karazhan. He is an undead dragon, transformed from the dragon known as Arcanagos, formerly of the Blue Dragonflight.",
-				-- #if AFTER 7.1
-				["description"] = "As of 7.1, any player can summon him on the Terrace by clicking on the Urn.",
-				-- #else
+				["providers"] = {
+					{ "o", 194092 },	-- Blackened Urn
+					-- #if BEFORE WRATH
+					{ "i",  24140 },	-- Blackened Urn
+					-- #endif
+				},
+				-- #if BEFORE 7.1
 				["sourceQuest"] = 9644,	-- Nightbane
 				-- #if AFTER WRATH
 				["description"] = "Once you have completed the quest chain, you can summon him on the Terrace by clicking on the Urn on the ground.",
 				-- #else
 				["description"] = "Requires the completion of a complex questline to be summoned via the Blackened Urn.",
-				["cost"] = {
-					{ "i", 24140, 1 },	-- Blackened Urn
-				},
 				-- #endif
 				-- #endif
 				["groups"] = {

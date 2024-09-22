@@ -104,8 +104,10 @@ src\Classes\NPC.lua
 src\Classes\Objects.lua
 src\Classes\Category.lua
 src\Classes\Deaths.lua
+# src\Classes\Dynamic Categories.lua
 src\Classes\Filter Types.lua
 src\Classes\Gear Sets.lua
+# src\Classes\Glyphs.lua
 src\Classes\Illusions.lua
 src\Classes\Miscellaneous.lua
 src\Classes\PVP Ranks.lua
