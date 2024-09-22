@@ -1083,7 +1083,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 					["sourceQuest"] = 29298,	-- A Smoke-Stained Locket
 					["coord"] = { 51.6, 44.8, MOONGLADE },
-					["maps"] = { MOONGLADE },
 				}),
 				q(29282, {	-- Well Armed
 					["qg"] = 52669,	-- Matoclaw
