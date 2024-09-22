@@ -1122,7 +1122,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 				}),
 			}),
 		},
-		["groups"] = sharedData({ -- Rotating questgivers in Tol Barad Peninsula
+		["groups"] = sharedData({ -- Questgivers in Tol Barad Peninsula with rotating quests
 			-- #if AFTER 8.0.3
 			["description"] = "Due to how sharding works, you will usually only get the same eight daily quests from the camp in Tol Barad Peninsula. The trick for having a chance at getting offered some of the other quests in rotation is to have zoned into Tol Barad Peninsula a few minutes before the daily reset occurs. Then you can wait for the daily reset, or leave the zone for up to 15 minutes before returning. Protip: Do the same with Warmode on, which zones you to a different shard. Quests picked up in Warmode can be completed and turned in outside Warmode.",
 			-- #endif
