@@ -236,6 +236,10 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	-- Allows a user to use /att ignore-quest-print ### ### ### ### ...
 	-- to manually add to IGNORE_QUEST_PRINT without needing to run scripts or modify saved variables
 	app.ChatCommands.Add("ignore-quest-print", function(args)
+		if not userignored then
+			userignored = {}
+			ATTAccountWideData.IGNORE_QUEST_PRINT = userignored
+		end
 		local questID
 		for i=2,#args do
 			questID = tonumber(args[i])
@@ -256,6 +260,10 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		"          Will ignore Quest 12345 flagging from being reported in chat"
 	})
 	app.ChatCommands.Add("allow-quest-print", function(args)
+		if not userignored then
+			userignored = {}
+			ATTAccountWideData.IGNORE_QUEST_PRINT = userignored
+		end
 		local questID
 		for i=2,#args do
 			questID = tonumber(args[i])
