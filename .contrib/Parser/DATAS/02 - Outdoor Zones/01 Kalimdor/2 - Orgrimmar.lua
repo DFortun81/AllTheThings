@@ -2340,6 +2340,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				n(12793, {	-- Brave Stonehide <Officer Accessories Quartermaster>
 					["description"] = "Found within the Champion's Hall in Orgrimmar.",
 					["maps"] = { ORGRIMMAR },
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(18607),	-- Horde Battle Standard
 						i(15199),	-- Stone Guard's Herald
@@ -4287,6 +4288,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- TODO: Finish this part.
 				n(12799, {	-- Sergeant Ba'sha <Accessories Quartermaster>
 					["coord"] = { 41.6, 68.6, ORGRIMMAR },
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(15197),	-- Scout's Tabard
 						i(18834, {	-- Insignia of the Horde
@@ -4353,6 +4355,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(14581, {	-- Sergeant Thunderhorn <Weapons Quartermaster>
 					["description"] = "Found within the Champion's Hall in Orgrimmar.",
+					["races"] = HORDE_ONLY,
 					["groups"] = {
 						i(18831),	-- High Warlord's Battle Axe
 						i(23464),	-- High Warlord's Battle Mace
