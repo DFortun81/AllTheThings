@@ -574,6 +574,20 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 					},
 				}),
 			})),
+			n(QUESTS, sharedData({ -- Questgivers in Tol Barad Peninsula with rotating quests
+				-- #if AFTER 8.0.3
+				["description"] = "Due to how sharding works, you will usually only get the same eight daily quests from the camp in Tol Barad Peninsula. The trick for having a chance at getting offered some of the other quests in rotation is to have zoned into Tol Barad Peninsula a few minutes before the daily reset occurs. Then you can wait for the daily reset, or leave the zone for up to 15 minutes before returning. Protip: Do the same with Warmode on, which zones you to a different shard. Quests picked up in Warmode can be completed and turned in outside Warmode.",
+				-- #endif
+			},{
+				n(47240), -- Commander Marcus Johnson
+				n(48250), -- Lieutenant Farnsworth
+				n(48254), -- Sergeant Gray
+				n(48255), -- Camp Coordinator Brack
+				n(48358), -- Commander Larmash
+				n(48360), -- 3rd Officer Kronkar
+				n(48361), -- Private Sarlosk
+				n(48363), -- Captain Prug
+			})),
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					i(22739, {	-- Tome of Polymorph: Turtle (CI!)
@@ -934,7 +948,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							},
 						}),
 						q(28670, {	-- Food From Below [H]
-							["gq"] = 48062, -- Staff Sergeant Lazgar
+							["qg"] = 48062, -- Staff Sergeant Lazgar
 							["timeline"] = { ADDED_8_0_1 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
@@ -948,7 +962,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							},
 						}),
 						q(28232, {	-- Food From Below [A]
-							["gq"] = 48074, -- Marshal Fallows
+							["qg"] = 48074, -- Marshal Fallows
 							["timeline"] = { ADDED_4_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
@@ -990,7 +1004,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							},
 						}),
 						q(28188, {	-- Prison Revolt [A]
-							["gq"] = 48074, -- Marshal Fallows
+							["qg"] = 48074, -- Marshal Fallows
 							["timeline"] = { ADDED_4_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
@@ -1007,7 +1021,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							},
 						}),
 						q(28668, {	-- Prison Revolt [H]
-							["gq"] = 48062, -- Staff Sergeant Lazgar
+							["qg"] = 48062, -- Staff Sergeant Lazgar
 							["timeline"] = { ADDED_4_0_3 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
@@ -1072,7 +1086,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							},
 						}),
 						q(28223, {	-- The Warden [A]
-							["gq"] = 48074, -- Marshal Fallows
+							["qg"] = 48074, -- Marshal Fallows
 							["timeline"] = { ADDED_4_0_1 },
 							["races"] = ALLIANCE_ONLY,
 							["isDaily"] = true,
@@ -1084,7 +1098,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							},
 						}),
 						q(28669, {	-- The Warden [H]
-							["gq"] = 48062, -- Staff Sergeant Lazgar
+							["qg"] = 48062, -- Staff Sergeant Lazgar
 							["timeline"] = { ADDED_8_0_1 },
 							["races"] = HORDE_ONLY,
 							["isDaily"] = true,
@@ -1096,6 +1110,16 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 							},
 						}),
 					}))),
+					n(QUESTS, sharedData({ -- Rotating questgivers in Tol Barad
+						["description"] = "This questgiver shares it's spawn with two other quest givers. Win the battle of Tol Barad to have a chance at getting a different questgiver offering other quests in it's place.",
+					}, {
+						n(48039), -- Commander Stevens
+						n(48061), -- 2nd Lieutenant Wansworth
+						n(48062), -- Staff Sergeant Lazgar
+						n(48070), -- Drillmaster Razgoth
+						n(48071), -- Private Garnoth
+						n(48074), -- Marshal Fallows
+					})),
 					n(REWARDS, {
 						currency(391, {	-- Tol Barad Commendation
 							["description"] = "These are rewarded by completing Tol Barad daily quests.",
@@ -1110,31 +1134,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_
 						-- #endif
 					}),
 				},
-				["groups"] = sharedData({ -- Rotating questgivers in Tol Barad
-					["description"] = "This questgiver shares it's spawn with two other quest givers. Win the battle of Tol Barad to have a chance at getting a different questgiver offering other quests in it's place.",
-				}, {
-					n(48039), -- Commander Stevens
-					n(48061), -- 2nd Lieutenant Wansworth
-					n(48062), -- Staff Sergeant Lazgar
-					n(48070), -- Drillmaster Razgoth
-					n(48071), -- Private Garnoth
-					n(48074), -- Marshal Fallows
-				}),
 			}),
 		},
-		["groups"] = sharedData({ -- Questgivers in Tol Barad Peninsula with rotating quests
-			-- #if AFTER 8.0.3
-			["description"] = "Due to how sharding works, you will usually only get the same eight daily quests from the camp in Tol Barad Peninsula. The trick for having a chance at getting offered some of the other quests in rotation is to have zoned into Tol Barad Peninsula a few minutes before the daily reset occurs. Then you can wait for the daily reset, or leave the zone for up to 15 minutes before returning. Protip: Do the same with Warmode on, which zones you to a different shard. Quests picked up in Warmode can be completed and turned in outside Warmode.",
-			-- #endif
-		}, {
-			n(47240), -- Commander Marcus Johnson
-			n(48250), -- Lieutenant Farnsworth
-			n(48254), -- Sergeant Gray
-			n(48255), -- Camp Coordinator Brack
-			n(48358), -- Commander Larmash
-			n(48360), -- 3rd Officer Kronkar
-			n(48361), -- Private Sarlosk
-			n(48363), -- Captain Prug
-		}),
 	}),
 })));
