@@ -409,7 +409,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						["repeatable"] = true,
 					}),
 					q(67015, {	-- Forging the Answer
-						--["provider"] = { "n",  },	--
+						["provider"] = { "n", 187272 },	-- Forgemaster Bazentus
 						["coord"] = { 27.4, 60.8, THE_WAKING_SHORES },
 						["repeatable"] = true,
 					}),

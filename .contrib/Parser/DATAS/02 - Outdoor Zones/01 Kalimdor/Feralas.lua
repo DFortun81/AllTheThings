@@ -3155,9 +3155,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #endif
 			n(TREASURES, {
 				i(212991, {	-- Grimoire of the Dire Observer (CI!)
-					--["provider"] = { "o", xxxxx },	-- Carved Eye
+					["provider"] = { "o", 420954 },	-- Carved Eye
 					["description"] = "Click on the Carved Eye in the room under the Maul Arena in Dire Maul",
-					--["coord"] = { X, Y, FERALAS },
+					["coord"] = { 61.5, 30.6, FERALAS },
 					["timeline"] = { ADDED_10_2_5 },
 				}),
 				i(8564, {	-- Hippogryph Egg

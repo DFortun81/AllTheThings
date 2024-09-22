@@ -113,7 +113,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["sourceQuest"] = 54090,	-- Toys For Destruction
 			}),
 			q(56365, {	-- Be Kind, Rewind
-				--["provider"] = { "n",  }
+				["provider"] = { "n", 153982 },	-- Izira Gearsworn <Battle Captain>
 				["coords"] = {
 					--{ 69.7, 33.0, MECHAGON },	-- Future
 					{ 73.6, 35.6, MECHAGON },	-- Current

@@ -1,0 +1,51 @@
+﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	[420954] = {
+		readable = "Carved Eye",
+		model = 204046,
+		text = {
+			en = "Carved Eye",
+			es = "Carved Eye",
+			de = "Geschnitztes Auge",
+			fr = "Œil gravé",
+			it = "Carved Eye",
+			pt = "Olho Entalhado",
+			ru = "Резной глаз",
+			ko = "Carved Eye",
+			cn = "Carved Eye",
+			tw = "Carved Eye",
+		},
+	},
+	[421154] = {
+		readable = "Carved Eye",
+		model = 204049,
+		text = {
+			en = "Carved Eye",
+			es = "Carved Eye",
+			de = "Geschnitztes Auge",
+			fr = "Œil gravé",
+			it = "Carved Eye",
+			pt = "Olho Entalhado",
+			ru = "Резной глаз",
+			ko = "Carved Eye",
+			cn = "Carved Eye",
+			tw = "Carved Eye",
+		},
+	},
+	[487851] = {
+		readable = "DELVER'S CALL: The Spiral Weave",
+		model = 5386357,
+		text = {
+			en = "DELVER'S CALL: The Spiral Weave",
+			es = "LLAMADA DE EXPLORADOR DE PROFUNDIDADES: Espiral Serpenteante",
+			de = "RUF DES TIEFENFORSCHERS: Spiralgewebe",
+			fr = "APPEL DU GOUFFRE : la Trame spiralée",
+			it = "CHIAMATA ALLA SCORRIBANDA: Trama a Spirale",
+			pt = "CHAMADO DO IMERSOR: Trama Espiral",
+			ru = "Вызов в вылазку: Сплетенная Спираль",
+			ko = "구렁 탐험가의 부름: 나선의 방직소",
+			cn = "地下堡行者的召唤：螺旋织纹",
+			tw = "DELVER'S CALL: The Spiral Weave",
+		},
+	},
+})
+do ObjectDB[objectID] = objectData; end

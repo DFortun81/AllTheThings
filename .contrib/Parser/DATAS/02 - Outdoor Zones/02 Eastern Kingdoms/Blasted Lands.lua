@@ -1835,7 +1835,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER 10.2.5
 			n(TREASURES, {
 				i(212983, {	-- Grimoire of the Blasted Observer (CI!)
-					--["provider"] = { "o", xxxxx },	-- Carved Eye
+					["provider"] = { "o", 421154 },	-- Carved Eye
 					["coord"] = { 55.6, 53.1, BLASTED_LANDS },
 					["timeline"] = { ADDED_10_2_5 },
 				}),

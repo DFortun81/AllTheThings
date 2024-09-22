@@ -971,7 +971,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				q(85666, {	-- Delver's Call: Spiral Weave
 					-- cross complete with 83770
-					--["provider"] = { "o", XXXXX },	-- ?
+					["provider"] = { "o", 487851 },	-- DELVER'S CALL: The Spiral Weave
 					["coord"] = { 53.0, 76.1, THE_SPIRAL_WEAVE },
 				}),
 			}),
