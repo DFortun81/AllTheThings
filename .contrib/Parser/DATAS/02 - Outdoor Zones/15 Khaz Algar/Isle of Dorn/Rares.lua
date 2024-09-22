@@ -239,21 +239,51 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 	m(KHAZ_ALGAR, {
 		m(ISLE_OF_DORN, {
 			n(RARES, {
-				q(84036),	-- Extra HQT: Clawbreaker K'zithix
-				q(84029),	-- Extra HQT: Escaped Cutthroat
-				q(84034),	-- Extra HQT: Flamekeeper Graz
-				q(84028),	-- Extra HQT: Gar'loc
-				q(85160),	-- Extra HQT: Kereke
-				q(84031),	-- Extra HQT: Kronolith, Might of the Mountain
-				q(84039),	-- Extra HQT: Matriarch Charfuria
-				q(84026),	-- Extra HQT: Plaguehart
-				q(85161),	-- Extra HQT: Rotfist
-				q(84032),	-- Extra HQT: Shallowshell the Clacker
-				q(84038),	-- Extra HQT: Sweetspark the Oozeful
-				q(84030),	-- Extra HQT: Tempest Lord Incarnus
-				q(84037),	-- Extra HQT: Tephratennae
-				q(84033),	-- Extra HQT: Twice-Stinger the Wretched
-				q(85159),	-- Extra HQT: Zovex
+				q(84036, {	-- Extra HQT: Clawbreaker K'zithix
+					["name"] = "Clawbreaker K'zithix killed. Not gonna be breaking any more claws.",
+				}),
+				q(84029, {	-- Extra HQT: Escaped Cutthroat
+					["name"] = "Escaped Cutthroat killed.",
+				}),
+				q(84034, {	-- Extra HQT: Flamekeeper Graz
+					["name"] = "Flamekeeper Graz killed.",
+				}),
+				q(84028, {	-- Extra HQT: Gar'loc
+					["name"] = "Gar'loc killed.",
+				}),
+				q(85160, {	-- Extra HQT: Kereke
+					["name"] = "Kereke killed.",
+				}),
+				q(84031, {	-- Extra HQT: Kronolith, Might of the Mountain
+					["name"] = "Kronolith, Might of the Mountain killed.",
+				}),
+				q(84039, {	-- Extra HQT: Matriarch Charfuria
+					["name"] = "Matriarch Charfuria killed.",
+				}),
+				q(84026, {	-- Extra HQT: Plaguehart
+					["name"] = "Plaguehart killed.",
+				}),
+				q(85161, {	-- Extra HQT: Rotfist
+					["name"] = "Rotfist, Rotface's uglier brother, killed.",
+				}),
+				q(84032, {	-- Extra HQT: Shallowshell the Clacker
+					["name"] = "Shallowshell the Clacker killed.",
+				}),
+				q(84038, {	-- Extra HQT: Sweetspark the Oozeful
+					["name"] = "Sweetspark the Oozeful killed.",
+				}),
+				q(84030, {	-- Extra HQT: Tempest Lord Incarnus
+					["name"] = "Tempest Lord Incarnus killed.",
+				}),
+				q(84037, {	-- Extra HQT: Tephratennae
+					["name"] = "Tephratennae killed.",
+				}),
+				q(84033, {	-- Extra HQT: Twice-Stinger the Wretched
+					["name"] = "Twice-Stinger the Wretched killed.",
+				}),
+				q(85159, {	-- Extra HQT: Zovex
+					["name"] = "Zovex killed.",
+				}),
 			}),
 		}),
 	}),

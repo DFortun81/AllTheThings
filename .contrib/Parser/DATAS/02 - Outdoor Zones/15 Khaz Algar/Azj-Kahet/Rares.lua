@@ -220,23 +220,57 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 	m(KHAZ_ALGAR, {
 		m(AZJ_KAHET, {
 			n(RARES, {
-				q(78905),	-- Extra HQT: Ahg'zagall
-				q(84073),	-- Extra HQT: Cha'tak
-				q(84081),	-- Extra HQT: Deepcrawler Tx'kesh
-				q(84076),	-- Extra HQT: Enduring Gutterface
-				q(84079),	-- Extra HQT: Harverster Qixt
-				q(84077),	-- Extra HQT: Jix'ak the Crazed
-				q(84071),	-- Extra HQT: Kaheti Silk Hauler
-				q(84070),	-- Extra HQT: Xishorr
-				q(84075),	-- Extra HQT: Maddened Siegebomber
-				q(84074),	-- Extra HQT: Monstrous Lasharoth
-				q(84082),	-- Extra HQT: Skrimisher Sa'zryk
-				q(84069),	-- Extra HQT: The Groundskeeper
-				q(85167),	-- Extra HQT: The One Left
-				q(84078),	-- Extra HQT: The Oozekhan
-				q(85166),	-- Extra HQT: Tka'ktath
-				q(84080),	-- Extra HQT: Umbraclaw Matra
-				q(84072),	-- Extra HQT: XT-Minecrusher 8700
+				q(78905, {	-- Extra HQT: Ahg'zagall
+					["name"] = "Ahg'zagall killed.",
+				}),
+				q(84073, {	-- Extra HQT: Cha'tak
+					["name"] = "Cha'tak killed.",
+				}),
+				q(84081, {	-- Extra HQT: Deepcrawler Tx'kesh
+					["name"] = "Deepcrawler Tx'kesh killed.",
+				}),
+				q(84076, {	-- Extra HQT: Enduring Gutterface
+					["name"] = "Enduring Gutterface killed.",
+				}),
+				q(84079, {	-- Extra HQT: Harverster Qixt
+					["name"] = "Harverster Qixt killed.",
+				}),
+				q(84077, {	-- Extra HQT: Jix'ak the Crazed
+					["name"] = "Jix'ak the Crazed killed.",
+				}),
+				q(84071, {	-- Extra HQT: Kaheti Silk Hauler
+					["name"] = "Kaheti Silk Hauler killed. Didn't Haul enough Silk.",
+				}),
+				q(84070, {	-- Extra HQT: Xishorr
+					["name"] = "Xishorr killed.",
+				}),
+				q(84075, {	-- Extra HQT: Maddened Siegebomber
+					["name"] = "Maddened Siegebomber killed.",
+				}),
+				q(84074, {	-- Extra HQT: Monstrous Lasharoth
+					["name"] = "Monstrous Lasharoth killed.",
+				}),
+				q(84082, {	-- Extra HQT: Skrimisher Sa'zryk
+					["name"] = "Skrimisher Sa'zryk killed.",
+				}),
+				q(84069, {	-- Extra HQT: The Groundskeeper
+					["name"] = "The Groundskeeper killed... Who's gonna tend to the gardens now?",
+				}),
+				q(85167, {	-- Extra HQT: The One Left
+					["name"] = "The One Left killed. Now there's None Left.",
+				}),
+				q(84078, {	-- Extra HQT: The Oozekhan
+					["name"] = "The Oozekhan killed.",
+				}),
+				q(85166, {	-- Extra HQT: Tka'ktath
+					["name"] = "Tka'ktath killed.",
+				}),
+				q(84080, {	-- Extra HQT: Umbraclaw Matra
+					["name"] = "Umbraclaw Matra killed.",
+				}),
+				q(84072, {	-- Extra HQT: XT-Minecrusher 8700
+					["name"] = "XT-Minecrusher 8700 killed.",
+				}),
 			}),
 		}),
 	}),

@@ -197,21 +197,51 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 	m(KHAZ_ALGAR, {
 		m(THE_RINGING_DEEPS, {
 			n(RARES, {
-				q(84046),	-- Extra HQT: Automaxor
-				q(84044),	-- Extra HQT: Charmonger
-				q(84045),	-- Extra HQT: Coalesced Monstrosity
-				q(84042),	-- Extra HQT: Cragmund
-				q(84044),	-- Extra HQT: Deathbound Husk
-				q(85162),	-- Extra HQT: Deepflayer Broodmother
-				q(84050),	-- Extra HQT: Disturbed Earthgorger
-				q(84048),	-- Extra HQT: Hungerer of the Deeps
-				q(84047),	-- Extra HQT: Kelpmire
-				q(85163),	-- Extra HQT: Lurker of the Deeps
-				q(81455),	-- Extra HQT: King Splash
-				q(84049),	-- Extra HQT: Spore-Infused Shalewing
-				q(84040),	-- Extra HQT: Terror of Forge
-				q(84043),	-- Extra HQT: Trungal
-				q(84041),	-- Extra HQT: Zilthara
+				q(84046, {	-- Extra HQT: Automaxor
+					["name"] = "Automaxor killed.",
+				}),
+				q(84044, {	-- Extra HQT: Charmonger
+					["name"] = "Charmonger killed.",
+				}),
+				q(84045, {	-- Extra HQT: Coalesced Monstrosity
+					["name"] = "Coalesced Monstrosity killed.",
+				}),
+				q(84042, {	-- Extra HQT: Cragmund
+					["name"] = "Cragmund killed.",
+				}),
+				q(84044, {	-- Extra HQT: Deathbound Husk
+					["name"] = "Deathbound Husk killed.",
+				}),
+				q(85162, {	-- Extra HQT: Deepflayer Broodmother
+					["name"] = "Deepflayer Broodmother killed.",
+				}),
+				q(84050, {	-- Extra HQT: Disturbed Earthgorger
+					["name"] = "Disturbed Earthgorger killed.",
+				}),
+				q(84048, {	-- Extra HQT: Hungerer of the Deeps
+					["name"] = "Hungerer of the Deeps killed.",
+				}),
+				q(84047, {	-- Extra HQT: Kelpmire
+					["name"] = "Kelpmire killed.",
+				}),
+				q(85163, {	-- Extra HQT: Lurker of the Deeps
+					["name"] = "Lurker of the Deeps killed.",
+				}),
+				q(81455, {	-- Extra HQT: King Splash
+					["name"] = "King Splash killed.",
+				}),
+				q(84049, {	-- Extra HQT: Spore-Infused Shalewing
+					["name"] = "Spore-Infused Shalewing killed.",
+				}),
+				q(84040, {	-- Extra HQT: Terror of Forge
+					["name"] = "Terror of Forge killed.",
+				}),
+				q(84043, {	-- Extra HQT: Trungal
+					["name"] = "Trungal killed.",
+				}),
+				q(84041, {	-- Extra HQT: Zilthara
+					["name"] = "Zilthara killed.",
+				}),
 			}),
 		}),
 	}),

@@ -171,18 +171,42 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 	m(KHAZ_ALGAR, {
 		m(HALLOWFALL, {
 			n(RARES, {
-				q(85164), -- Extra HQT: Beledar's Spawn
-				q(85165), -- Extra HQT: Deathtide
-				q(84055), -- Extra HQT: Toadstomper
-				q(84061), -- Extra HQT: Murkshade
-				q(84061), -- Extra HQT: The Taskmaker
-				q(84065), -- Extra HQT: Horror of the Shallows
-				q(84063), -- Extra HQT: Lytfang the Lost
-				q(84068), -- Extra HQT: Pride of Beledar
-				q(84062), -- Extra HQT: Sloshmuck
-				q(84067), -- Extra HQT: Sir Alastair Purefire
-				q(84066), -- Extra HQT: Strenght of Beledar
-				q(84064), -- Extra HQT: The Perchfather
+				q(85164, { -- Extra HQT: Beledar's Spawn
+					["name"] = "Beledar's Spawn killed.",
+				}),
+				q(85165, { -- Extra HQT: Deathtide
+					["name"] = "Deathtide killed.",
+				}),
+				q(84055, { -- Extra HQT: Toadstomper
+					["name"] = "Toadstomper killed.",
+				}),
+				q(84061, { -- Extra HQT: Murkshade
+					["name"] = "Murkshade killed.",
+				}),
+				q(84061, { -- Extra HQT: The Taskmaker
+					["name"] = "The Taskmaker killed.",
+				}),
+				q(84065, { -- Extra HQT: Horror of the Shallows
+					["name"] = "Horror of the Shallows killed.",
+				}),
+				q(84063, { -- Extra HQT: Lytfang the Lost
+					["name"] = "Lytfang the Lost killed. He's not lost anymore.",
+				}),
+				q(84068, { -- Extra HQT: Pride of Beledar
+					["name"] = "Pride of Beledar killed. Pride is a sin, you know?",
+				}),
+				q(84062, { -- Extra HQT: Sloshmuck
+					["name"] = "Sloshmuck killed.",
+				}),
+				q(84067, { -- Extra HQT: Sir Alastair Purefire
+					["name"] = "Sir Alastair Purefire killed.",
+				}),
+				q(84066, { -- Extra HQT: Strenght of Beledar
+					["name"] = "Strenght of Beledar killed.",
+				}),
+				q(84064, { -- Extra HQT: The Perchfather
+					["name"] = "The Perchfather killed.",
+				}),
 			}),
 		}),
 	}),

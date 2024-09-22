@@ -1123,7 +1123,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		m(AZJ_KAHET, {
 			n(QUESTS, {
 				q(79658),	-- [DNT] The Severed Threads Renown Unlock (spellID 448677)
-				q(83488),	-- Rak-Ush Stagshell World Quests Unlocked (spellID 456051)
+				q(83488, {	-- Rak-Ush Stagshell World Quests Unlocked (spellID 456051)
+					["name"] = "Rak-Ush Stagshell World Quests Unlocked.",
+				}),
 				-- Pheromones (spellID 444927 - [DNT] Set Faction Reputation) - ?
 				q(81628),	-- triggered during questID 79175 (I Think I'm a Drone Now) when apply Anub'azal's Pheromones
 				q(81625),	-- triggered during questID 78226 (A Most Intriguing Invitation) when apply Azi-Kahet Pheromones
