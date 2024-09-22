@@ -107,15 +107,33 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				}),
 			}),
 			ach(17335, {	-- Airborne Tumbler (x1)
-				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				["maps"] = {
+					-- #if BEFORE 11.0.2
+					THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS,
+					-- #else
+					THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, DORNOGAL, AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS,
+					-- #endif
+				},
 				["timeline"] = { ADDED_10_0_5 },
 			}),
 			ach(17336, {	-- Airborne Tumbler (x10)
-				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				["maps"] = {
+					-- #if BEFORE 11.0.2
+					THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS,
+					-- #else
+					THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, DORNOGAL, AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS,
+					-- #endif
+				},
 				["timeline"] = { ADDED_10_0_5 },
 			}),
 			ach(17345, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 }, }, {	-- Airborne Tumbler (x50)
-				["maps"] = { THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS },
+				["maps"] = {
+					-- #if BEFORE 11.0.2
+					THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS,
+					-- #else
+					THE_WAKING_SHORES, OHNAHRAN_PLAINS, THE_AZURE_SPAN, THALDRASZUS, DORNOGAL, AZJ_KAHET, HALLOWFALL, ISLE_OF_DORN, THE_RINGING_DEEPS,
+					-- #endif
+				},
 				["g"] =	{
 					title(492),	-- Skyscourge <Name>
 				},
