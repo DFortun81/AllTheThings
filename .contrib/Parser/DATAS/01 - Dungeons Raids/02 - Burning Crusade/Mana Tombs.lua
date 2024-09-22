@@ -120,7 +120,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["lvl"] = lvlsquish(70, 70, 25),
 					["groups"] = {
 						objective(1, {	--	Mana-Tombs Stasis Chamber Investigated
-							["provider"] = { "i", 32069 },	-- Mana-Tombs Stasis Chamber Key
+							["providers"] = {
+								{ "i",  32069 },	-- Mana-Tombs Stasis Chamber Key
+								{ "o", 185519 },	-- Mana-Tombs Stasis Chamber
+							},
 							["description"] = "Stasis Chamber is in the room to the left after the first boss.\n\nThis can only be completed on Heroic difficulty.",
 						}),
 					},
