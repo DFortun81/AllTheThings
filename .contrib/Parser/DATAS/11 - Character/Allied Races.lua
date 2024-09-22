@@ -159,10 +159,11 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			["provider"] = { "n", 221839 },	-- Dawn
 			["coord"] = { 89.4, 48.0, 2322 },
 		}),
-		q(79201, {	-- The Analysis Interface
+		q(79201, {	-- The Analysis Interface (non-Hunter)
 			["sourceQuests"] = { 79200 },	-- Who am I?
 			["provider"] = { "n", 221891 },	-- Foreman Uzjax
 			["coord"] = { 62.6, 49.2, 2322 },	-- Hall of Awakening
+			["classes"] = exclude({ HUNTER }, ALL_CLASSES),
 			["g"] = {
 				-- bag
 				i(222982),	-- Earthen Satchel
@@ -229,8 +230,31 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 				i(222994),	-- Earthen Staff
 			},
 		}),
+		q(83328, {	-- The Analysis Interface (Hunter)
+			["sourceQuests"] = { 79200 },	-- Who am I?
+			["provider"] = { "n", 221891 },	-- Foreman Uzjax
+			["coord"] = { 62.6, 49.2, 2322 },	-- Hall of Awakening
+			["classes"] = HUNTER,
+			["g"] = {
+				-- bag
+				i(222982),	-- Earthen Satchel
+				-- mail
+				-- hunter (a)
+				i(219412),	-- Earthen Belt
+				i(219407),	-- Earthen Chestpiece
+				i(219410),	-- Earthen Coif
+				i(219411),	-- Earthen Greaves
+				i(219409),	-- Earthen Handguards
+				i(219408),	-- Earthen Striders
+				-- hunter missing shoulder piece (bug reported)
+			},
+		}),
 		q(79202, {	-- Rock Beats Rock
-			["sourceQuests"] = { 79201 },	-- The Analysis Interface
+			["sourceQuests"] = {
+				79201,	-- The Analysis Interface (non-Hunter)
+				83328,	-- The Analysis Interface (Hunter)
+			},
+			["sourceQuestNumRequired"] = 1,
 			["provider"] = { "n", 221888 },	-- Dawn
 			["coord"] = { 47.7, 54.7, 2322 },
 		}),
