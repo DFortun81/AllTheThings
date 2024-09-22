@@ -916,6 +916,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(80551),	-- Radiant Remnant @ 64.5, 26.7
 			q(80555),	-- Radiant Remnant @ 64.8, 26.2	need objectid
 			q(80582),	-- Radiant Remnant @ 65.9, 32.3
+			q(80584),	-- Radiant Remnant @ 63.8, 31.0	need objectid
 			-- Small Keyflames
 			q(80005, {["isWeekly"]=true,}),	-- Empty Crab Cage - Crab Grab - Activate, after flare up lesser keyflame @ 61.5, 17.4
 			q(78472, {["isWeekly"]=true,}),	-- Attica Whiskervale - Glow in the Dark - Activate, after flare up lesser keyflame @ 64.4, 18.7

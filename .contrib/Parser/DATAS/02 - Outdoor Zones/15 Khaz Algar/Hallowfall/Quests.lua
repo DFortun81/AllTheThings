@@ -351,7 +351,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78693, {	-- Spears for Fears
 					["sourceQuests"] = { 78690 },	-- Situational Awareness
 					["provider"] = { "n", 213613 },	-- Aemyra Acton
-					["coord"] = { 50.0, 20.8, HALLOWFALL },
+					["coords"] = {
+						{ 50.0, 20.8, HALLOWFALL },
+						{ 45.8, 13.1, HALLOWFALL },
+					},
 					["g"] = {
 						o(416401, {	-- Kobyss Spear
 							i(211948),	-- Kobyss Spear (QI!)
@@ -803,7 +806,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82479, {	-- The Sword is Mightier
 					["sourceQuests"] = { 82478 },	-- Regularly Scheduled Maintenance
 					["provider"] = { "n", 213613 },	-- Aemyra Acton
-					["coord"] = { 50.0, 20.8, HALLOWFALL },
+					["coords"] = {
+						{ 50.0, 20.8, HALLOWFALL },
+						{ 46.0, 10.5, HALLOWFALL },
+					},
 				}),
 				q(82480, {	-- Job Killing Robot Or...
 					["sourceQuests"] = { 82479 },	-- The Sword is Mightier
@@ -1151,7 +1157,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			q(82815, {	-- Sturdy Locket
 				["sourceQuests"] = { 82813 },	-- Time Borrowed
 				["provider"] = { "n", 220859 },	-- Amy Lychenstone
-				["coord"] = { 43.1, 50.1, HALLOWFALL },
+				["coord"] = { 42.1, 49.5, HALLOWFALL },
 				["cost"] = {{"i", 224274, 1}},	-- 1x Sturdy Locket
 			}),
 			q(80680, {	-- Tarnished Compass

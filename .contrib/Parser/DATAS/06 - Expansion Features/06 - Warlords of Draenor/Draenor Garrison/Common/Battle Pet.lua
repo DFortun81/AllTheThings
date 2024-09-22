@@ -15,7 +15,10 @@ root(ROOTS.ExpansionFeatures,
 							["isDaily"] = true,
 							["sourceQuest"] = 36423,	-- Pets Versus Pests
 							["provider"] = { "n", 85418 },	-- Lio the Lioness
-							["coord"] = { 28.3, 38.8, LUNARFALL },
+							["coords"] = {
+								{ 28.4, 39.92, LUNARFALL },
+								{ 29.2, 40.4, LUNARFALL },
+							},
 							["races"] = ALLIANCE_ONLY,
 							["_drop"] = { "g" },	-- Drop Shiny Pet Charm
 						}),
@@ -78,7 +81,10 @@ root(ROOTS.ExpansionFeatures,
 						q(37644,  {	-- Mastering the Menagerie (A)
 							["isDaily"] = true,
 							["provider"] = { "n", 85418 },	-- Lio the Lioness
-							["coord"] = { 29.0, 40.4, LUNARFALL },
+							["coords"] = {
+								{ 28.4, 39.9, LUNARFALL },
+								{ 29.2, 40.4, LUNARFALL },
+							},
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(118697, {	-- Big Bag of Pet Supplies
@@ -112,7 +118,10 @@ root(ROOTS.ExpansionFeatures,
 						q(36423, {	-- Pets Versus Pests
 							["sourceQuest"] = 38241,	-- Unearthed Magic
 							["provider"] = { "n", 85418 },	-- Lio the Lioness
-							["coord"] = { 28.2, 38.8, LUNARFALL },
+							["coords"] = {
+								{ 28.4, 39.92, LUNARFALL },
+								{ 29.2, 40.4, LUNARFALL },
+							},
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								garrisonBuilding(42),	-- Menagerie
@@ -138,7 +147,10 @@ root(ROOTS.ExpansionFeatures,
 						q(38241, {	-- Unearthed Magic
 							["sourceQuests"] = { 36615 },	-- My Very Own Castle
 							["provider"] = { "n", 85418 },	-- Lio the Lioness
-							["coord"] = { 28.2, 38.8, LUNARFALL },
+							["coords"] = {
+								{ 28.4, 39.92, LUNARFALL },
+								{ 29.2, 40.4, LUNARFALL },
+							},
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {
 								i(122457),	-- Ultimate Battle-Training Stone
