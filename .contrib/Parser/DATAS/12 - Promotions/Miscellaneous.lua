@@ -106,29 +106,4 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 		["description"] = "Azeroth Choppers promotional mount. You had to have logged in on a Horde character between the 24th of July and the 30th of September 2014 in order for your account to receive this mount.",
 		["timeline"] = { ADDED_6_0_2 },
 	}),
-	usONLY(i(228765, {	-- Gummi (PET!)
-		["description"] = "Trolli + Xbox promotional pet. Available between 9/1/24 - 2/28/25 by purchasing Trolli Candy products in any physical retail store, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Once processed, you should recieve a code to your email to redeem on battle.net or in the launcher.",
-		["timeline"] = { ADDED_11_0_2 },
-		["u"] = BLIZZARD_BALANCE,
-	})),
-	usONLY(i(228761, {	-- Classic Brick Tabard
-		["description"] = "Trolli + Xbox promotional item. Available between 9/1/24 - 2/28/25 by purchasing Trolli Candy products in |CFFFF0000Walgreens|r, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Once processed, you should recieve a code to your email to redeem on battle.net or in the launcher.",
-		["timeline"] = { ADDED_11_0_2 },
-		["u"] = BLIZZARD_BALANCE,
-	})),
-	usONLY(i(228763, {	-- Classic Crimson Tabard
-		["description"] = "Trolli + Xbox promotional item. Available between 9/1/24 - 2/28/25 by purchasing Trolli Candy products in |CFFFF0000Circle K|r, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Once processed, you should recieve a code to your email to redeem on battle.net or in the launcher.",
-		["timeline"] = { ADDED_11_0_2 },
-		["u"] = BLIZZARD_BALANCE,
-	})),
-	usONLY(i(228762, {	-- Classic Lively Tabard
-		["description"] = "Trolli + Xbox promotional item. Available between 9/1/24 - 2/28/25 by purchasing Trolli Candy products in |CFFFF0000Doller General|r, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Once processed, you should recieve a code to your email to redeem on battle.net or in the launcher.",
-		["timeline"] = { ADDED_11_0_2 },
-		["u"] = BLIZZARD_BALANCE,
-	})),
-	i(228764, {	-- Classic Sunny Tabard
-		["description"] = "Krogers promotional item. Available for an unknown period. Can be redeemed for 1500 rewards points from pointsrewardsplus.com. With a referral link, just signing up will earn you enough points to redeem the tabard for free. Access the code from the account page and then redeem on battle.net or in the launcher.",
-		["timeline"] = { ADDED_11_0_2 },
-		["u"] = BLIZZARD_BALANCE,
-	}),
 })));
