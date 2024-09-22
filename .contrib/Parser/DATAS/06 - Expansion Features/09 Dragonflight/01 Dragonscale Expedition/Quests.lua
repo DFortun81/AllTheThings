@@ -29,7 +29,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						},
 					}),
 					q(70975, {	-- Wanted: Everblazing Fireheart
-						--["provider"] = { "o", },	-- Archivists' Request
+						["provider"] = { "o", 381584 },	-- Archivists' Request
 						["coord"] = { 47.8, 83.2, THE_WAKING_SHORES },
 						["maxReputation"] = { FACTION_DRAGONSCALE_EXPEDITION, 25 },
 						["isWeekly"] = true,

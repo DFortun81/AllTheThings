@@ -246,7 +246,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				i(224553),	-- Beledar's Attunement (CI!)
 			}, {	-- RENOWN 24 --
-				q(83334, {	-- For What Glimmers in the Deep
+				q(82407, {	-- For What Glimmers in the Deep
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike <Arathi Quartermaster>
 					["coords"] = {
 						{ 42.4, 55.0, HALLOWFALL },
