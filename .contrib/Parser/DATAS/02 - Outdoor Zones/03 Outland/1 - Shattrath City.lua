@@ -1739,7 +1739,6 @@ root(ROOTS.Zones, {
 							applyclassicphase(TBC_PHASE_TWO, i(35380)),	-- Stalker's Chain Spaulders
 							i(30634, {	-- Warpforged Key
 								["timeline"] = { REMOVED_4_2_0 },
-								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
 								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
 								["OnTooltip"] = [[function(t, tooltipInfo)
@@ -1756,7 +1755,6 @@ root(ROOTS.Zones, {
 									t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
 									return t;
 								end]],
-								-- #endif
 								-- #endif
 							}),
 							applyclassicphase(TBC_PHASE_TWO, i(35375)),	-- Wyrmhide Robe
@@ -2349,7 +2347,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(30633, {	-- Auchenai Key
 								["timeline"] = { REMOVED_4_2_0 },
-								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
 								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
 								["OnTooltip"] = [[function(t, tooltipInfo)
@@ -2366,7 +2363,6 @@ root(ROOTS.Zones, {
 									t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
 									return t;
 								end]],
-								-- #endif
 								-- #endif
 							}),
 							applyclassicphase(TBC_PHASE_TWO, i(35405)),	-- Crusader's Ornamented Leggings

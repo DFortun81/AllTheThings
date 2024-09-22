@@ -8102,7 +8102,7 @@ localize(_.ObjectNames, {
 	[100000001] = "불을 붙이지 않은 횃불",
 });
 end
-if simplifiedLocale == "cn" then
+if simplifiedLocale == "zh" then
 localize(L.HEADER_NAMES, {
 	[-1000013] = "常规商人物品",
 	[-1000015] = "恶魔训练师",

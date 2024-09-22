@@ -474,10 +474,6 @@ namespace ATT
                                     GlyphDB[keyValuePair.Key] = Convert.ToInt64(keyValuePair.Value);
                                 }
                             }
-                            else
-                            {
-                                ThrowBadFormatDB("GlyphDB");
-                            }
                             break;
                         }
                     case "ObjectDB":

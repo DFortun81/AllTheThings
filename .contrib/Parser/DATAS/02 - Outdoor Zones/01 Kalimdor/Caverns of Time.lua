@@ -133,7 +133,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(31777),	-- Keepers of Time Tabard
 						i(30635, {	-- Key of Time
 							["timeline"] = { REMOVED_4_2_0 },
-							-- #if BEFORE 4.2.0
 							-- #if ANYCLASSIC
 							-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
 							["OnTooltip"] = [[function(t, tooltipInfo)
@@ -150,7 +149,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
 								return t;
 							end]],
-							-- #endif
 							-- #endif
 						}),
 						applyclassicphase(TBC_PHASE_TWO, i(35363)),	-- Kodohide Legguards

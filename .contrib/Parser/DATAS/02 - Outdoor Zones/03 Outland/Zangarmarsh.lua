@@ -1998,7 +1998,6 @@ root(ROOTS.Zones, {
 							i(33999),	-- Cenarion War Hippogryph (MOUNT!)
 							i(30623, {	-- Reservoir Key [Revered]
 								["timeline"] = { REMOVED_4_2_0 },
-								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
 								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
 								["OnTooltip"] = [[function(t, tooltipInfo)
@@ -2015,7 +2014,6 @@ root(ROOTS.Zones, {
 									t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
 									return t;
 								end]],
-								-- #endif
 								-- #endif
 							}),
 							i(29192, {	-- Glyph of Ferocity

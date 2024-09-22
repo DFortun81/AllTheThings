@@ -3355,7 +3355,6 @@ root(ROOTS.Zones, {
 							i(30622, {	-- Flamewrought Key
 								["timeline"] = { REMOVED_4_2_0 },
 								["races"] = ALLIANCE_ONLY,
-								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
 								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
 								["OnTooltip"] = [[function(t, tooltipInfo)
@@ -3372,7 +3371,6 @@ root(ROOTS.Zones, {
 									t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
 									return t;
 								end]],
-								-- #endif
 								-- #endif
 							}),
 							i(32883, {	-- Felbane Slugs
@@ -3451,7 +3449,6 @@ root(ROOTS.Zones, {
 							i(30637, {	-- Flamewrought Key
 								["timeline"] = { REMOVED_4_2_0 },
 								["races"] = HORDE_ONLY,
-								-- #if BEFORE 4.2.0
 								-- #if ANYCLASSIC
 								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
 								["OnTooltip"] = [[function(t, tooltipInfo)
@@ -3468,7 +3465,6 @@ root(ROOTS.Zones, {
 									t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
 									return t;
 								end]],
-								-- #endif
 								-- #endif
 							}),
 							i(29197, {	-- Glyph of Fire Warding

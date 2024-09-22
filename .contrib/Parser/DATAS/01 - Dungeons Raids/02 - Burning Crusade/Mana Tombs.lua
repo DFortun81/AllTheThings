@@ -373,6 +373,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						},
 					}),
 					e(536, {	-- Yor
+						["provider"] = { "o", 185522 },	-- Shaffar's Stasis Chamber
 						["description"] = "Requires one of two keys unlocked via a quest chain in Blades Edge to open.\n\nOnly one member of your group needs the key.",
 						["cost"] = {
 							{ "i", 32079, 1 },	-- Shaffar's Stasis Chamber Key
