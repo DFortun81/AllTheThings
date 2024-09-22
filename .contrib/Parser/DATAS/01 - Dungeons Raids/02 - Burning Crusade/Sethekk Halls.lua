@@ -75,6 +75,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["groups"] = {
 						objective(1, {	-- 0/3 Cobalt Eye
 							["provider"] = { "i", 72480 },	-- Cobalt Eye
+							["cr"] = 19428,	-- Cobalt Serpent
 						}),
 					},
 				}),
@@ -171,10 +172,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 				}),
 			}),
 			n(ZONE_DROPS, {
-				i(72480, {	-- Cobalt Eye
-					["timeline"] = { ADDED_4_3_0 },
-					["cr"] = 19428,	-- Cobalt Serpent
-				}),
 				i(29669, {	-- Pattern: Shadow Armor Kit (RECIPE!)
 					["timeline"] = { REMOVED_5_0_4 },
 					["cr"] = 18320,	-- Time-Lost Shadowmage
