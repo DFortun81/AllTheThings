@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, bubbleDown({ ["timeline"] = { ADDED_4_2_0 } }, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_MOLTEN_FRONT, bubbleDown({ ["timeline"] = { ADDED_4_2_0 } }, {
 	m(THE_MOLTEN_FRONT, {
 		["provider"] = { "o", 208900 },	-- Portal to the Firelands
 		["description"] = "The Molten Front is a volcanic daily quest hub added before the release of Firelands with Patch 4.2. It can be accessed via the Portal to the Firelands in Mount Hyjal. As players complete more daily quests, phasing will occur that shows how the Avengers of Hyjal are making progress against the fire elementals and agents of the Firelord.",
@@ -317,6 +317,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["qg"] = 52493,	-- Captain Saynna Stormrunner
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(29195, {	-- A Ritual of Flame
+					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
+					["sourceQuest"] = 29145,	-- Opening the Door
+					["coord"] = { 27.1, 54.4, MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- Open the portal to the Firelands
+							["provider"] = { "n", 52863 },	-- Leyara
+							["coord"] = { 27.4, 55.6, MOUNT_HYJAL },
+						}),
+					},
+				}),
 				q(29298, {	-- A Smoke-Stained Locket
 					["providers"] = {
 						{ "i", 69854 },	-- Smoke-Stained Locket
@@ -349,6 +360,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						}),
 						currency(416),	-- Mark of the World Tree (x2)
 					},
+				}),
+				q(29284, {	-- Aid of the Ancients
+					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29283,	-- Calling the Ancients
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 				}),
 				q(29137, {	-- Breach in the Defenses
 					["qg"] = 52824,	-- General Taldris Moonfall
@@ -400,6 +416,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
+				q(29199, {	-- Calling for Reinforcements
+					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.1, 62.7, MOUNT_HYJAL },
+				}),
 				q(29283, {	-- Calling the Ancients
 					["qg"] = 53882,	-- Varlan Highbough
 					["sourceQuests"] = {
@@ -408,6 +429,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 					["coord"] = { 44.4, 88.4, THE_MOLTEN_FRONT },
 					["cost"] = { { "c", 416, 125 } },	-- 125x Mark of the World Tree
+				}),
+				q(29197, {	-- Caught Unawares
+					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29196,	-- To the Sanctuary!
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 				}),
 				q(29181, {	-- Druids of the Talon
 					["qg"] = 52135,	-- Malfurion Stormrage
@@ -590,6 +616,37 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
+				heroscall(q(29391, {	-- Guardians of Hyjal: Call of the Ancients (A)
+					["description"] = "Only available to players who have not quested through Mount Hyjal.",
+					["isBreadcrumb"] = true,
+					["lvl"] = 85,
+					["u"] = REMOVED_FROM_GAME,
+				})),
+				warchiefscommand(q(29390, {	-- Guardians of Hyjal: Call of the Ancients (H)
+					["description"] = "Only available to players who have not quested through Mount Hyjal.",
+					["isBreadcrumb"] = true,
+					["u"] = REMOVED_FROM_GAME,
+				})),
+				heroscall(q(29387, {	-- Guardians of Hyjal: Firelands Invasion! (A)
+					["races"] = ALLIANCE_ONLY,
+					["isBreadcrumb"] = true,
+				})),
+				warchiefscommand(q(29388, {	-- Guardians of Hyjal: Firelands Invasion! (H)
+					["races"] = HORDE_ONLY,
+					["isBreadcrumb"] = true,
+				})),
+				q(29389, {	-- Guardians of Hyjal: Firelands Invasion!
+					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
+					["sourceQuests"] = {
+						25372,	-- Aessina's Miracle
+						-- #if AFTER 4.2.0
+						29391,	-- Guardians of Hyjal: Call of the Ancients (A)
+						29390,	-- Guardians of Hyjal: Call of the Ancients (H)
+						-- #endif
+					},
+					["coord"] = { 19.5, 37.8, MOUNT_HYJAL },
+					["isBreadcrumb"] = true,
+				}),
 				q(29179, {	-- Hostile Elements
 					["qg"] = 52824,	-- General Taldris Moonfall
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
@@ -672,6 +729,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
+				q(29200, {	-- Leyara
+					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
+					["sourceQuest"] = 29199,	-- Calling for Reinforcements
+					["coord"] = { 27.1, 62.7, MOUNT_HYJAL },
+				}),
 				q(29254, {	-- Little Lasher
 					["qg"] = 52489,	-- Avrilla
 					["sourceQuest"] = 29249,	-- Planting Season
@@ -723,6 +785,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						}),
 						currency(416),	-- Mark of the World Tree (x5)
 					},
+				}),
+				q(29280, {	-- Nourishing Waters
+					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29279,	-- Filling the Moonwell
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 				}),
 				q(29287, {	-- Peaked Interest
 					["qg"] = 52491,	-- Morthis Whisperwing
@@ -951,6 +1018,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
+				q(29437, {	-- The Fallen Guardian
+					["qg"] = 40289,	-- Ysera
+					["sourceQuest"] = 29326,	-- The Nordrassil Summit	-- verify
+					["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
+				}),
+				q(29202, {	-- The Fate of Runetotem
+					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+				}),
 				q(29276, {	-- The Flame Spider Queen
 					["qg"] = 52477,	-- Tholo Whitehoof
 					["sourceQuests"] = {
@@ -999,6 +1076,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
+				q(29215, {	-- The Hunt Begins
+					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29214,	-- The Shadow Wardens
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+				}),
 				q(29245, {	-- The Mysterious Seed
 					["providers"] = {
 						{ "o", 208535 },	-- Dried Acorn
@@ -1018,6 +1100,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						i(71259),	-- Leyara's Locket (TOY!)
 					},
 				}),
+				q(29198, {	-- The Sanctuary Must Not Fall
+					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
+					["sourceQuest"] = 29197,	-- Caught Unawares
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+				}),
+				q(29214, {	-- The Shadow Wardens
+					["qg"] = 52135,	-- Malfurion Stormrage
+					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["coord"] = { 47.0, 91.3, THE_MOLTEN_FRONT },
+					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
+				}),
 				q(29310, {	-- The Tipping Point
 					["providers"] = {
 						{ "n", 11801 },	-- Rabine Saturna
@@ -1025,12 +1118,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 					["sourceQuest"] = 29303,	-- Tragedy and Family
 					["maps"] = { MOONGLADE },
-				}),
-				q(29214, {	-- The Shadow Wardens
-					["qg"] = 52135,	-- Malfurion Stormrage
-					["sourceQuest"] = 29201,	-- Through the Gates of Hell
-					["coord"] = { 47.0, 91.3, THE_MOLTEN_FRONT },
-					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
 				}),
 				q(29192, {	-- The Wardens are Watching
 					["qg"] = 52494,	-- Marin Bladewing
@@ -1051,6 +1138,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["isBreadcrumb"] = true,
 					["isDaily"] = true,
 					["u"] = REMOVED_FROM_GAME,
+				}),
+				q(29201, {	-- Through the Gates of Hell
+					["qg"] = 52845,	-- Malfurion Stormrage
+					["sourceQuest"] = 29200,	-- Leyara
+					["coord"] = { 27.0, 62.7, MOUNT_HYJAL },
+					["timeline"] = { ADDED_4_2_0 },
+				}),
+				q(29196, {	-- To the Sanctuary!
+					["qg"] = 52845,	-- Malfurion Stormrage
+					["sourceQuest"] = 29195,	-- A Ritual of Flame
+					["coord"] = { 27.3, 55.2, MOUNT_HYJAL },
 				}),
 				q(29142, {	-- Traitors Return
 					["qg"] = 52824,	-- General Taldris Moonfall
