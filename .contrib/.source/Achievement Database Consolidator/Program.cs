@@ -3,7 +3,7 @@ using System.Text;
 using NLua;
 
 // DBContext / AchievementDB
-var databaseFolder = "../Parser/DATAS/.dynamic/AchievementDB";
+var databaseFolder = "../Parser/DATAS/00 - DB/AchievementDB";
 Directory.CreateDirectory(databaseFolder);
 foreach (var file in Directory.GetFiles("../.raw/AchievementDB"))
 {
