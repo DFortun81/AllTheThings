@@ -26,6 +26,11 @@ namespace ATT
 
                 // Export the Item ID as the second argument.
                 builder.Append(',');
+                if (!data.TryGetValue("itemID", out long itemID))
+                {
+                    // TEMPORARY
+                    data["itemID"] = 0;
+                }
                 ExportField(builder, data, fields, "itemID");
             }
         }

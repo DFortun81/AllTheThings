@@ -719,7 +719,10 @@ do
 		return t;
 	end) or function(sourceID, itemID, t)
 		t = createItemWithAppearance(sourceID, t);
-		t.itemID = itemID;
+		-- TEMPORARY
+		if itemID > 0 then
+			t.itemID = itemID;
+		end
 		return t;
 	end
 end
