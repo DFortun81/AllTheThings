@@ -261,14 +261,20 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 						["creatureID"] = 24723,
 						["groups"] = {
 							i(34604),	-- Jaded Crystal Dagger
+							-- #if AFTER 7.3.5
 							i(34699),	-- Sun-Forged Cleaver
+							-- #endif
 							i(34601),	-- Shoulderplates of Everlasting Pain
+							-- #if AFTER 7.3.5
 							i(34702),	-- Cloak of Swift Mending
 							i(34697),	-- Bindings of Raging Fire
 							i(34698),	-- Bracers of the Forest Stalker
+							-- #endif
 							i(34602),	-- Eversong Bracers
+							-- #if AFTER 7.3.5
 							i(34700),	-- Gauntlets of Divine Blessings
 							i(34701),	-- Leggings of the Betrayed
+							-- #endif
 							-- #if BEFORE MOP
 							i(34603, {	-- Distracting Blades
 								["timeline"] = { REMOVED_5_0_4 },
@@ -281,14 +287,20 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 						["groups"] = {
 							i(34608),	-- Rod of the Blazing Light
 							i(34606),	-- Edge of Oppression
+							-- #if AFTER 7.3.5
 							i(34703),	-- Landro's Dancing Blade
+							-- #endif
 							i(34607),	-- Fel-Tinged Mantle
+							-- #if AFTER 7.3.5
 							i(34708),	-- Cloak of the Coming Night
+							-- #endif
 							i(34605),	-- Breastplate of Fierce Survival
+							-- #if AFTER 7.3.5
 							i(34705),	-- Bracers of Divine Infusion
 							i(34707),	-- Boots of Resuscitation
 							i(34704),	-- Band of Arcane Alacrity
 							i(34706),	-- Band of Determination
+							-- #endif
 							i(73084, {	-- Volatile Essence
 								["timeline"] = { ADDED_4_3_0 },
 							}),
@@ -298,20 +310,17 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 						["creatureID"] = 24560,
 						["groups"] = {
 							i(35756),	-- Formula: Enchant Cloak - Greater Dodge / TBC: Formula: Enchant Cloak - Steelweave (RECIPE!)
+							-- #if AFTER 7.3.5
 							i(34790),	-- Battle-Mace of the High Priestess
 							i(34788),	-- Duskhallow Mantle
 							i(34792),	-- Cloak of the Betrayed
 							i(34789),	-- Bracers of Slaughter
 							i(34791),	-- Gauntlets of the Tranquil Waves
+							-- #endif
 							i(34473),	-- Commendation of Kael'thas
 							i(34472),	-- Shard of Contempt
 							i(34470),	-- Timbal's Focusing Crystal
 							i(34471),	-- Vial of the Sunwell
-							-- #if BEFORE MOP
-							i(34783, {	-- Nightstrike
-								["timeline"] = { REMOVED_5_0_4 },
-							}),
-							-- #endif
 						},
 					}),
 					e(533, {	-- Kael'thas Sunstrider
@@ -332,25 +341,37 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 							}),
 							i(35513),	-- Swift White Hawkstrider (MOUNT!)
 							i(35504),	-- Phoenix Hatchling (PET!)
+							-- #if AFTER 7.3.5
 							i(34794),	-- Axe of Shattered Dreams
 							i(34798),	-- Band of Celerity
+							-- #endif
 							i(34616),	-- Breeching Comet
+							-- #if AFTER 7.3.5
 							i(34810),	-- Cloak of Blade Turning
 							i(34793),	-- Cord of Reconstruction
+							-- #endif
 							i(34611),	-- Cudgel of Consecration
+							-- #if AFTER 7.3.5
 							i(34808),	-- Gloves of Arcane Acuity
+							-- #endif
 							i(34612),	-- Greaves of the Penitent Knight
+							-- #if AFTER 7.3.5
 							i(34799),	-- Hauberk of the War Bringer
 							i(34795),	-- Helm of Sanctification
 							i(34625),	-- Kharmaa's Ring of Fate
+							-- #endif
 							i(34615),	-- Netherforce Chestplate
 							i(34609),	-- Quickening Blade of the Prince
+							-- #if AFTER 7.3.5
 							i(34796),	-- Robes of the Summer Flame
+							-- #endif
 							i(34610),	-- Scarlet Sin'dorei Robes
 							i(34613),	-- Shoulderpads of the Silvermoon Retainer
+							-- #if AFTER 7.3.5
 							i(34797),	-- Sun-Infused Focus Staff
 							i(34809),	-- Sunrage Treads
 							i(34807),	-- Sunstrider Warboots
+							-- #endif
 							i(34614),	-- Tunic of the Ranger Lord
 							i(34157),	-- Head of Kael'thas
 							i(34160),	-- The Signet Ring of Prince Kael'thas
