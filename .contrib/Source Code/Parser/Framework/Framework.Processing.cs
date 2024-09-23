@@ -1775,10 +1775,19 @@ namespace ATT
             // only incorporate achievement criteria which is under a header or another achievement
             if (CurrentParentGroup.HasValue &&
                 CurrentParentGroup.Value.Key != "npcID" &&
-                CurrentParentGroup.Value.Key != "achID") return;
+                CurrentParentGroup.Value.Key != "achID" &&
+                CurrentParentGroup.Value.Key != "headerID")
+            {
+                LogDebug($"INFO: Achievement {achID} not being incorporated since it is listed under a specific Thing {CurrentParentGroup.Value.Key}:{CurrentParentGroup.Value.Value}");
+                return;
+            }
 
-            // don't incorporate criteria if the achievement is listed under an NPC group
-            if (CurrentParentGroup.Value.Key == "npcID" && CurrentParentGroup.Value.Value.TryConvert(out long id) && id > 0) return;
+            // don't incorporate criteria if the achievement is listed under a real NPC
+            if (CurrentParentGroup.Value.Key == "npcID" && CurrentParentGroup.Value.Value.TryConvert(out long id) && id > 0)
+            {
+                LogDebug($"INFO: Achievement {achID} not being incorporated since it is listed under real NPC {id}");
+                return;
+            }
 
             // Pull in any defined Achievement Criteria/Tree unless we've defined it a 'meta' Achievement
             if (achInfo.TryGetValue("criteriaTreeID", out long criteriaTreeID) &&
