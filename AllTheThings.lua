@@ -816,6 +816,8 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateFaction(t.factionID, t);
 		elseif t.heirloomID then
 			t = app.CreateHeirloom(t.heirloomID, t);
+		elseif t.azeriteEssenceID or t.azeriteessenceID then
+			t = app.CreateAzeriteEssence(t.azeriteEssenceID or t.azeriteessenceID, t);
 		elseif t.itemID or t.modItemID then
 			local itemID, modID, bonusID = app.GetItemIDAndModID(t.modItemID or t.itemID)
 			t.itemID = itemID
@@ -4174,7 +4176,9 @@ local KeyMaps = setmetatable({
 	c = "currencyID",
 	currency = "currencyID",
 	enchant = "spellID",
+	fp = "flightPathID",
 	follower = "followerID",
+	garrbuilding = "garrisonBuildingID",
 	garrfollower = "followerID",
 	i = "modItemID",
 	item = "modItemID",
