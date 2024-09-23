@@ -1649,7 +1649,7 @@ end");
                     case "displayID":
                     case "modID":
                     case "bonusID":
-                    case "runeforgePowerID":
+                    case "runeforgepowerID":
                     case "raceID":
                     case "conduitID":
                     case "criteriaTreeID":

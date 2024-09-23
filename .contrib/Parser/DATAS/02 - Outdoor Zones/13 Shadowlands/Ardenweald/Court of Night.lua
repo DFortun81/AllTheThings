@@ -12,7 +12,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							i(184665, {	-- Chronicle of Lost Memories
 								["sym"] = {
 									{ "select", "headerID", LEGENDARIES },	-- Legendary header
-									{ "extract", "runeforgePowerID" },	-- extract all Legendaries into a direct list
+									{ "extract", "runeforgepowerID" },	-- extract all Legendaries into a direct list
 									{ "exclude", "itemID",
 										190584,	-- Memory of Unity (DK)
 										190587,	-- Memory of Unity (DH)

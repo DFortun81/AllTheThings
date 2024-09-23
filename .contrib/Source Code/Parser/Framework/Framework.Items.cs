@@ -508,7 +508,7 @@ namespace ATT
                     case "petTypeID":
                     case "speciesID":
                     case "objectiveID":
-                    case "runeforgePowerID":
+                    case "runeforgepowerID":
                     case "raceID":
                     case "conduitID":
                     case "f":
@@ -892,7 +892,7 @@ namespace ATT
                     case "isMonthly":
                     case "isYearly":
                     case "isWorldQuest":
-                    case "runeforgePowerID":
+                    case "runeforgepowerID":
                     case "raceID":
                     case "conduitID":
                     case "customCollect":

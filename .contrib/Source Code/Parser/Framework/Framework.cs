@@ -570,7 +570,7 @@ namespace ATT
                 "questID",
                 "questIDA",
                 "questIDH",
-                "runeforgePowerID",
+                "runeforgepowerID",
                 "spellID",
                 "titleID",
             } },
@@ -1332,7 +1332,7 @@ namespace ATT
                 case "qgs":
                 case "r": // horde/alliance faction
                 case "races":
-                case "runeforgePowerID":
+                case "runeforgepowerID":
                 case "raceID":
                 case "conduitID":
                 case "customCollect":

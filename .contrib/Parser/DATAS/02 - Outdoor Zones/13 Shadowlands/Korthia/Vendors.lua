@@ -43,7 +43,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["_drop"] = { "customCollect" },	-- this is Covenant tagged in various other locations
 							["sym"] = {
 								{ "select", "headerID", LEGENDARIES },	-- Legendary header
-								{ "extract", "runeforgePowerID" },	-- extract all Legendaries into a direct list
+								{ "extract", "runeforgepowerID" },	-- extract all Legendaries into a direct list
 								{ "exclude", "itemID",
 									190584,	-- Memory of Unity (DK)
 									190587,	-- Memory of Unity (DH)

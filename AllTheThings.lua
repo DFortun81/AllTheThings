@@ -825,8 +825,8 @@ local function CreateObject(t, rootOnly)
 			t.bonusID = bonusID
 			if t.toyID then
 				t = app.CreateToy(itemID, t);
-			elseif t.runeforgePowerID or t.runeforgepowerID then
-				t = app.CreateRuneforgeLegendary(t.runeforgePowerID or t.runeforgepowerID, t);
+			elseif t.runeforgepowerID then
+				t = app.CreateRuneforgeLegendary(t.runeforgepowerID, t);
 			elseif t.conduitID then
 				t = app.CreateConduit(t.conduitID, t);
 			else
@@ -3525,7 +3525,7 @@ app.ThingKeys = {
 	sourceID = true,
 	speciesID = true,
 	recipeID = true,
-	runeforgePowerID = true,
+	runeforgepowerID = true,
 	spellID = true,
 	mountID = true,
 	mountmodID = true,
@@ -4192,7 +4192,7 @@ local KeyMaps = setmetatable({
 	object = "objectID",
 	r = "spellID",
 	recipe = "spellID",
-	rfp = "runeforgePowerID",
+	rfp = "runeforgepowerID",
 	s = "sourceID",
 	source = "sourceID",
 	species = "speciesID",
@@ -8341,7 +8341,7 @@ function app:GetDataCache()
 			}),
 
 			-- Runeforge Powers
-			app.CreateDynamicHeader("runeforgePowerID", SimpleNPCGroup(app.HeaderConstants.LEGENDARIES, {suffix=EXPANSION_NAME8})),
+			app.CreateDynamicHeader("runeforgepowerID", SimpleNPCGroup(app.HeaderConstants.LEGENDARIES, {suffix=EXPANSION_NAME8})),
 
 			-- Titles
 			app.CreateDynamicHeader("titleID", {

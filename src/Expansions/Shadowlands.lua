@@ -5,7 +5,7 @@ local _, app = ...;
 if app.GameBuildVersion < 90000 then
 
 	app.CreateConduit = app.CreateUnimplementedClass("Conduit", "conduitID");
-	app.CreateRuneforgeLegendary = app.CreateUnimplementedClass("RuneforgeLegendary", "runeforgePowerID");
+	app.CreateRuneforgeLegendary = app.CreateUnimplementedClass("RuneforgeLegendary", "runeforgepowerID");
 
 	return
 end
@@ -74,7 +74,7 @@ end
 
 -- Runeforge Legendary Lib
 do
-	local KEY, CACHE = "runeforgePowerID", "RuneforgeLegendaries"
+	local KEY, CACHE = "runeforgepowerID", "RuneforgeLegendaries"
 	if C_LegendaryCrafting then
 		local C_LegendaryCrafting_GetRuneforgePowerInfo = C_LegendaryCrafting.GetRuneforgePowerInfo;
 		app.CreateRuneforgeLegendary = app.ExtendClass("Item", "RuneforgeLegendary", KEY, {

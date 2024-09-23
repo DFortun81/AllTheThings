@@ -202,7 +202,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 				["sym"] = {
 					{"select", "instanceID", 1190},			-- Castle Nathria
 					{"find", "difficultyID", DIFFICULTY.RAID.MULTI.ALL},	-- Legendaries are listed under All Difficulties
-					{"extract","runeforgePowerID"},		-- Get all Legendaries
+					{"extract","runeforgepowerID"},		-- Get all Legendaries
 				},
 			}),
 			n(185092, {	-- Shade of Irik-tu

@@ -47,7 +47,7 @@ namespace ATT
             ObjectData.Create("illusionID",         "ill",          "_.CreateIllusion", "f", "spellID");
             ObjectData.Create<RecipeData>("recipeID",   "r",        "_.CreateRecipe", "f", "spellID", "modID");
             ObjectData.Create("azeriteessenceID",   "aze",          "_.CreateAzeriteEssence", "f");
-            ObjectData.Create("runeforgePowerID",   "rfl",          "_.CreateRuneforgeLegendary", "f");
+            ObjectData.Create("runeforgepowerID",   "rfl",          "_.CreateRuneforgeLegendary", "f");
             ObjectData.Create("conduitID",          "cd",           "_.CreateConduit", "f");
             ObjectData.Create("raceID",             "ra",           "_.CreateRace", "f");
             ObjectData.Create("setID",              "gs",           "_.CreateGearSet", "f");

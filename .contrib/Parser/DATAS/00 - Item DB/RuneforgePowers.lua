@@ -1,9 +1,9 @@
 
 local Items = ItemDBConditional;
 local i = function(itemID
-				,runeforgePowerID
+				,runeforgepowerID
 				,specSetID)
-	local item = { ["runeforgePowerID"] = runeforgePowerID, };
+	local item = { ["runeforgepowerID"] = runeforgepowerID, };
 	-- assign classes to the item based on its Spec-Set ID
 	if ClassInfoDB then
 		item.classes = ClassInfoDB.GetClassesBySet(specSetID);
