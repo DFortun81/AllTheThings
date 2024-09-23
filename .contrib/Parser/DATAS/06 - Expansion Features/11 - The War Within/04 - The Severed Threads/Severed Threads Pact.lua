@@ -218,6 +218,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81475, {	-- Breaking the Phalanx: Royal Appointments
 					["sourceQuest"] = 82640,
 					["provider"] = { "n", 224161 },	-- Eirzay
+					["crs"] = { 220916 },	-- Royal Appointee
 					["coord"] = { 43.0, 47.1, NERUBAR },
 				}),
 				q(81488, {	-- Breaking the Phalanx: Sages
@@ -455,7 +456,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(81555, {	-- Wet Work: Tithe to Kill
 					["sourceQuest"] = 82640,
-					--["provider"] = { "n", 224201 },	-- Ru'murh TODO
+					["provider"] = { "n", 224190 },	-- Ru'murh
+					["crs"] = { 220315 },	-- Sureki Strongarm
 					["coord"] = { 41.5, 22.4, NERUBAR },
 					["g"] = {
 						i(217996),	-- Sureki Tithe (QI!)
@@ -769,6 +771,14 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(82649),	-- pop questIDs: 81494 (General), 81502 (Vizier), 81504 (Weaver)
 			q(82647),	-- pop questIDs: 81478 (General), 81482 (Vizier), 81483 (Weaver)
 			q(82648),	-- pop questIDs: 81493 (General), 81503 (Weaver), 81501 (Vizier)
+			-- Rumors
+			-- Observation: QuestIDs of the rumors are the same as the above 'Push Quests' however, you don't get the quests until you talk to the NPC that gives you the rumor	//Exodius
+			q(82640, {	-- 'Listen to the rumor' from Ru'murh (n: 224190 @ 41.5, 22.4, 2213), start questID 82640 (Wet Work: Tithe to Kill), AreaPoiID 7963
+				["name"] = "You heard a tasty rumor from Ru'murh. Go to the Umbral Bazaar and slay Sureki Strongarms.",
+			}),
+			q(82642, {	-- 'Listen to the rumor' from Eirzay (n: 224161 @ 43.0, 47.1, 2213), start questID 81475 (Breaking the Phalanx: Royal Appointments), AreaPoiID 7985
+				["name"] = "You heard a tasty rumor from Eirzay. Go to The Skeins and slay Royal Appointees.",
+			}),
 			--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224191 @ 68.5, 51.1), start questID 81484 (Wet Work: Death of a Salesman)
 			--q(82645),	-- 'Listen to the rumor' from Eirzay (n: 224171 @ 63.0, 38.1, 2216), start questID 81491 (Armaments: Arbalests)
 			--q(82646),	-- 'Listen to the rumor' from Eirzay (n: 224172 @ 48.4, 60.7), start questID 81492 (Armaments: Smithing Tools)
@@ -776,8 +786,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			--q(82643),	-- 'Listen to the rumor' from Eirzay (n: 224168 @ 48.6, 50.5, 2216), start questID 81490 (Bounty: Balaxir the Bully)
 			--q(82616),	-- 'Listen to the rumor' from Eirzay (n: 224166 @ 36.1, 50.2, 2213), start questID 81476 (Bounty: Goliath)
 			--q(82581),	-- 'Listen to the rumor' from Eirzay (n: 224167 @ 15.6, 45.9, 2213), start questID 81489 (Bounty: Zorikal the Patron)
-			--q(82640),	-- 'Listen to the rumor' from Eirzay (n: 224161 @ 43.0, 47.1, 2213), start questID 81475 (Breaking the Phalanx: Royal Appointments)
-			--q(82642),	-- 'Listen to the rumor' from Eirzay (n: 224163 @ 27.7, 57.8, 2213), start questID 81488 (Breaking the Phalanx: Sages)
 			--q(82641),	-- 'Listen to the rumor' from Eirzay (n: 224162 @ 30.6, 42.6, 2213), start questID 81487 (Breaking the Phalanx: Venomblades)
 			--q(82649),	-- 'Listen to the rumor' from Eirzay (n: 224176 @ 63.8, 26.3, 2216), start questID 81494 (Relics of War: Rak-Ahat)
 			--q(82647),	-- 'Listen to the rumor' from Eirzay (n: 224173 @ 39.5, 53.0), start questID 81478 (Relics of War: The Ruptired Lake)
