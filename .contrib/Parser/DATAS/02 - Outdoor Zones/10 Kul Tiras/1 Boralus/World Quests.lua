@@ -67,6 +67,20 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["lvl"] = 110,
 				["races"] = ALLIANCE_ONLY,
 				["isWorldQuest"] = true,
+				["g"] = {
+					a(ach(13285, {	-- Upright Citizens
+						i(166247),		-- Citizens Brigade Whistle (TOY!)
+						hqt(54400, name(HEADERS.NPC, 145101, {	-- Russel the Bard recruited
+							["coord"] = { 72.4, 68.9, BORALUS },
+						})),
+						hqt(54401, name(HEADERS.NPC, 146295, {	-- Flynn Fairwind recruited
+							["coord"] = { 72.0, 61.6, BORALUS },
+						})),
+						hqt(54399, name(HEADERS.NPC, 145107, {	-- Leeroy Jenkins recruited
+							["coord"] = { 66.8, 64.0, BORALUS },
+						})),
+					})),
+				},
 			}),
 			q(51092, {	-- Picturesque Boralus
 				["lvl"] = 120,
