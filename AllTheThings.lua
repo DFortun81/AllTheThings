@@ -796,8 +796,8 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateSpecies(t.speciesID, t);
 		elseif t.objectID then
 			t = app.CreateObject(t.objectID, t);
-		elseif t.flightPathID then
-			t = app.CreateFlightPath(t.flightPathID, t);
+		elseif t.flightPathID or t.flightpathID then
+			t = app.CreateFlightPath(t.flightPathID or t.flightpathID, t);
 		elseif t.followerID then
 			t = app.CreateFollower(t.followerID, t);
 		elseif t.illusionID then
@@ -823,8 +823,8 @@ local function CreateObject(t, rootOnly)
 			t.bonusID = bonusID
 			if t.toyID then
 				t = app.CreateToy(itemID, t);
-			elseif t.runeforgePowerID then
-				t = app.CreateRuneforgeLegendary(t.runeforgePowerID, t);
+			elseif t.runeforgePowerID or t.runeforgepowerID then
+				t = app.CreateRuneforgeLegendary(t.runeforgePowerID or t.runeforgepowerID, t);
 			elseif t.conduitID then
 				t = app.CreateConduit(t.conduitID, t);
 			else
