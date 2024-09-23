@@ -15493,7 +15493,6 @@ L.QUEST_NAMES = {
 	[77775] = "Coren Direbrew killed. Cheers...",
 	[77973] = "Third Lock",
 	[77974] = "First Lock",
-	[78905] = "Ahg'zagall killed.",
 	[78912] = "When donating to the Gala (daily)",
 	[79104] = "Increased Renewed Proto-Drake: Love Armor Droprate (Daily Accountwide)",
 	[79573] = "The War Within Campaign Completed [Account]",

@@ -2137,7 +2137,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			ach(40997),		-- The Gatecrashers (automated)
 			ach(40995),		-- The Originals (automated)
 			ach(41013),		-- Upgraded Apparel
-			ach(40999),		-- You're in Your Blackrock Depths (automated)
+			ach(40999, {		-- You're in Your Blackrock Depths
+				crit(70642),	-- Lord Roccor
+				crit(70571),	-- High Interrogator Gerstahn
+				crit(70643),	-- Bael'Gar
+				crit(70572),	-- Houndmaster Grebmar
+				crit(70644),	-- Lord Incendius
+				crit(70575),	-- Fineous Darkvire
+				crit(70576),	-- Phalanx
+				crit(70645),	-- Golem Lord Argelmach
+				crit(70578),	-- The Seven
+				crit(70646),	-- General Angerforge
+				crit(70647),	-- Ambassador Flamelash
+				crit(70581),	-- Pyromancer Loregrain
+				crit(70648),	-- Emperor Dagran Thaurissan
+			}),
 			ach(40661),		-- Zoomies!
 		}),
 		n(DUNGEONS_AND_RAIDS, {
