@@ -1146,7 +1146,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 				},
 			}),
 			o(456025, {	-- Earthen Iron Powder
-				["coord"] = { 30.6, 70.4, DORNOGAL },
+				["coord"] = { 32.5, 60.3, DORNOGAL },
 				["questID"] = 83840,
 				["g"] = {
 					i(226265),	-- Earthen Iron Powder

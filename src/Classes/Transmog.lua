@@ -907,7 +907,7 @@ app.BuildSourceInformationForPopout = function(group)
 		-- source without an item, try to generate the valid item link for it
 		if not group.itemID and not group.artifactID then
 			app.ImportRawLink(group, app.DetermineItemLink(group.sourceID));
-			-- if we found a Item link, save it into ATTHarvestItems for ease of use (don't need to add Item, parse, Havrest, add harvest, parse)
+			-- if we found a Item link, save it into ATTHarvestItems for ease of use (don't need to add Item, parse, Harvest, add harvest, parse)
 			app.SaveHarvestSource(group);
 		end
 		-- Attempt to get information about the source ID.

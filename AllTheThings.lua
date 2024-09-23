@@ -2772,8 +2772,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			if app.AddSourceInformation(sourceID, tooltipInfo, group) then
 				working = true;
 			end
-
-			app.AddArtifactRelicInformation(itemID, tooltipInfo, group);
 		end
 
 		if group.g and app.Settings:GetTooltipSetting("SummarizeThings") then

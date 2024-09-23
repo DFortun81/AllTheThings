@@ -5,7 +5,6 @@ local appName,app = ...;
 local C_ArtifactUI = C_ArtifactUI;
 if not C_ArtifactUI then
 	-- Artifacts are not supported by this version of the game client.
-	app.AddArtifactRelicInformation = app.EmptyFunction;
 	app.GetArtifactModItemID = app.EmptyFunction
 	app.CreateArtifact = app.CreateUnimplementedClass("Artifact", "artifactID");
 	return
@@ -15,9 +14,9 @@ end
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 
 local CurrentArtifactRelicItemLevels = {}
-local pairs, select, math_floor
-	= pairs, select, math.floor;
-local L, ColorizeRGB = app.L, app.Modules.Color.ColorizeRGB;
+local pairs, select, math_floor,tinsert,tremove
+	= pairs, select, math.floor,tinsert,tremove
+local L, ColorizeRGB, contains = app.L, app.Modules.Color.ColorizeRGB, app.contains
 local GetRelativeField, GetRelativeValue = app.GetRelativeField, app.GetRelativeValue;
 local GetDetailedItemLevelInfo, IsArtifactRelicItem = GetDetailedItemLevelInfo, IsArtifactRelicItem;
 local C_TransmogCollection_PlayerHasTransmogItemModifiedAppearance = C_TransmogCollection and C_TransmogCollection.PlayerHasTransmogItemModifiedAppearance;
@@ -166,60 +165,56 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 end);
 
 -- External Functionality
--- TODO: Eventually I'd like for this to not be externally referenced and to instead use an event handler or to register with the Settings Menu or something (be able to turn it off)
-app.AddArtifactRelicInformation = function(itemID, info, group)
-	-- TODO: Change this to a different tooltip setting.
-	if app.Settings:GetTooltipSetting("Progress") and IsArtifactRelicItem(itemID) then
-		-- If the item is a relic, then let's compare against equipped relics.
-		if CurrentArtifactRelicItemLevels then
-			local rawlink = group.rawlink or group.link
-			local progress, total = 0, 0;
-			local relicItemLevel = select(1, GetDetailedItemLevelInfo(rawlink)) or 0;
-			local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
-			for relicID,artifactData in pairs(CurrentArtifactRelicItemLevels) do
-				local infoString;
-				for relicSlotIndex,relicData in pairs(artifactData) do
-					if relicData.relicType == relicType then
-						if infoString then
-							infoString = infoString .. " | " .. relicData.iLvl;
-						else
-							infoString = relicData.iLvl;
-						end
-						total = total + 1;
-						if relicData.iLvl >= relicItemLevel then
-							progress = progress + 1;
-							infoString = infoString .. " " .. app.GetCompletionIcon(1);
-						else
-							infoString = infoString .. " " .. app.GetCompletionIcon();
+app.AddEventHandler("OnLoad", function()
+	app.Settings.CreateInformationType("ArtifactRelicCompletion", {
+		priority = 10000,
+		text = L.ARTIFACT_RELIC_COMPLETION,
+		Process = function(t, reference, tooltipInfo)
+			local itemID = reference.itemID
+			if not itemID or not IsArtifactRelicItem(itemID) then return end
+			-- If the item is a relic, then let's compare against equipped relics.
+			if CurrentArtifactRelicItemLevels then
+				local rawlink = reference.rawlink or reference.link
+				local progress, total = 0, 0;
+				local relicItemLevel = select(1, GetDetailedItemLevelInfo(rawlink)) or 0;
+				local relicType = select(3, C_ArtifactUI.GetRelicInfoByItemID(itemID));
+				for relicID,artifactData in pairs(CurrentArtifactRelicItemLevels) do
+					local infoString;
+					for relicSlotIndex,relicData in pairs(artifactData) do
+						if relicData.relicType == relicType then
+							if infoString then
+								infoString = infoString .. " | " .. relicData.iLvl;
+							else
+								infoString = relicData.iLvl;
+							end
+							total = total + 1;
+							if relicData.iLvl >= relicItemLevel then
+								progress = progress + 1;
+								infoString = infoString .. " " .. app.GetCompletionIcon(1);
+							else
+								infoString = infoString .. " " .. app.GetCompletionIcon();
+							end
 						end
 					end
+					if infoString then
+						local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(relicID);
+						tinsert(tooltipInfo, 1, {
+							left = link and ("   " .. ((icon and ("|T" .. icon .. ":0|t ") or "") .. link)) or RETRIEVING_DATA,
+							right = L.ITEM_LEVEL .. " " .. infoString,
+						});
+					end
 				end
-				if infoString then
-					local _, link, _, _, _, _, _, _, _, icon = GetItemInfo(relicID);
-					tinsert(info, 1, {
-						left = link and ("   " .. ((icon and ("|T" .. icon .. ":0|t ") or "") .. link)) or RETRIEVING_DATA,
-						right = L.ITEM_LEVEL .. " " .. infoString,
-					});
+				if total > 0 then
+					tinsert(tooltipInfo, 1, { left = L.ARTIFACT_RELIC_COMPLETION, right = L[progress == total and "TRADEABLE" or "NOT_TRADEABLE"] });
 				end
+			else
+				tinsert(tooltipInfo, 1, { left = L.ARTIFACT_RELIC_CACHE, wrap = true, color = app.Colors.TooltipDescription });
 			end
-			if total > 0 then
-				tinsert(info, 1, { left = L.ARTIFACT_RELIC_COMPLETION, right = L[progress == total and "TRADEABLE" or "NOT_TRADEABLE"] });
-			end
-		else
-			tinsert(info, 1, { left = L.ARTIFACT_RELIC_CACHE, wrap = true, color = app.Colors.TooltipDescription });
 		end
-	end
-end
--- app.Settings.CreateInformationType("ArtifactRelicCompletion", {
--- 	priority = 10000,
--- 	text = L.ARTIFACT_RELIC_COMPLETION,
--- 	Process = function(t, reference, tooltipInfo)
-	-- TODO: migrate above AddArtifactRelicInformation to here
--- 	end
--- })
+	})
+end)
 
 -- Resolve Functionality
-local tremove, contains = tremove, app.contains;
 local RelicTypeNameByKey = setmetatable({}, {
 	__index = function(t, key)
 		--[[
