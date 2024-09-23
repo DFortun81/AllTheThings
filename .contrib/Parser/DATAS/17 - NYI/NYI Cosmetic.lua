@@ -593,39 +593,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(219068),	-- [DNT] Ensemble: CivilianScholar
 				i(219069),	-- [DNT] Ensemble: CivilianScholar
 
-				------ Dornogal Set ------
-				i(224863),	-- Dornogal Cheststraps
-				i(224861),	-- Dornogal Crown
-				i(224867),	-- Dornogal Cuffs
-				i(224868),	-- Dornogal Gauntlets
-				i(224864),	-- Dornogal Girdle
-				i(224865),	-- Dornogal Legcoat
-				i(224862),	-- Dornogal Mantle
-				i(224866),	-- Dornogal Sabatons
-				i(224165),	-- Dornogal Tabard
-
-				------ Freywold Set ------
-				i(224878),	-- Freywold Cheststraps
-				i(224876),	-- Freywold Crown
-				i(224882),	-- Freywold Cuffs
-				i(224883),	-- Freywold Gauntlets
-				i(224879),	-- Freywold Girdle
-				i(224880),	-- Freywold Legcoat
-				i(224877),	-- Freywold Mantle
-				i(224881),	-- Freywold Sabatons
-				i(224169),	-- Freywold Tabard
-
-				------ Gundargaz Set ------
-				i(224886),	-- Gundargaz Cheststraps
-				i(224884),	-- Gundargaz Crown
-				i(224890),	-- Gundargaz Cuffs
-				i(224891),	-- Gundargaz Gauntlets
-				i(224887),	-- Gundargaz Girdle
-				i(224888),	-- Gundargaz Legcoat
-				i(224885),	-- Gundargaz Mantle
-				i(224889),	-- Gundargaz Sabatons
-				i(224167),	-- Gundargaz Tabard
-
 				------ Battered Harvest Golem Set ------
 				i(226483),	-- Ensemble: Battered Harvest Golem
 				i(226452),	-- Battered Harvest Golem's Belt

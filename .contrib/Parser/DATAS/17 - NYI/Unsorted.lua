@@ -1569,10 +1569,6 @@ root(ROOTS.Unsorted, {
 					i(219218),	-- Timerunner's Starter Kit
 					i(219219),	-- Timerunner's Starter Kit
 					i(219220),	-- Catch Up Thread
-					i(224009),	-- Survivalist's Biscuit
-					i(224010),	-- Survivalist's Purified Water
-					i(224021),	-- Survivalist's Healing Potion
-					i(224022),	-- Survivalist's Mana Potion
 					i(224120),	-- Timerunner's Gem Box
 					i(226037),	-- Timeless Neural Silencer
 				}),

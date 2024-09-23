@@ -163,7 +163,7 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			["sourceQuests"] = { 79200 },	-- Who am I?
 			["provider"] = { "n", 221891 },	-- Foreman Uzjax
 			["coord"] = { 62.6, 49.2, 2322 },	-- Hall of Awakening
-			["classes"] = exclude({ HUNTER }, ALL_CLASSES),
+			["classes"] = exclude({ HUNTER }, ALL_CLASSES), --TODO: Exclude classes Earthen can't play, this filter still displays things like Demon Hunter and Evoker.
 			["g"] = {
 				-- bag
 				i(222982),	-- Earthen Satchel

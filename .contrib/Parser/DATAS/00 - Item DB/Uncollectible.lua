@@ -1800,6 +1800,10 @@ i(212345);	-- Hunted Hakkari Blood
 i(211695);	-- Jagged Crystallized Eye
 i(212352);	-- Mosh'Ogg Totem
 i(211694);	-- Oozing Felfang
+i(224009);	-- Survivalist's Biscuit
+i(224010);	-- Survivalist's Purified Water
+i(224021);	-- Survivalist's Healing Potion
+i(224022);	-- Survivalist's Mana Potion
 i(211692);	-- Tainted Patch of Hide
 i(212341);	-- Twice-Dead Tusk
 i(211798);	-- Un-Raised Bone Fragments
