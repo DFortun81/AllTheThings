@@ -1169,7 +1169,7 @@ local function GenerateSourceHash(group)
 	if parent then
 		return GenerateSourceHash(parent) .. ">" .. (group.hash or group.name or group.text);
 	else
-		return group.hash or group.name or group.text;
+		return group.hash or group.name or group.text or "NOHASH"..app.UniqueCounter.SourceHash
 	end
 end
 local function GenerateSourcePath(group, l)
