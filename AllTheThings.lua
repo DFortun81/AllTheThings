@@ -4278,7 +4278,7 @@ local function SearchForLink(link)
 	end
 	--print(link:gsub("|c", "c"):gsub("|h", "h"));
 	-- app.PrintDebug("SFL",kind,">",KeyMaps[kind],id,">")
-	kind = KeyMaps[kind]
+	kind = (KeyMaps[kind].."ID"):gsub("IDID", "ID")
 	if kind == "modItemID" then
 		if not id2 and not id3 then
 			id, id2, id3 = GetItemIDAndModID(id)
