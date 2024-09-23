@@ -1851,7 +1851,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				n(4175, {	-- Vinasia <Cloth Armor Merchant>
 					-- #if AFTER CATA
-					["coord"] = { 60.8, 72.6, DARNASSUS },
+					["coord"] = { 57.9, 71.8, DARNASSUS },
 					-- #else
 					["coord"] = { 60.7, 72.5, DARNASSUS },
 					-- #endif
