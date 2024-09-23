@@ -5,25 +5,8 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 	m(MECHAGON, {
 		n(ACHIEVEMENTS, {
-			achraw(13790, {	-- Armed for Action
+			ach(13790, {	-- Armed for Action
 				["description"] = "Each criteria can be earned by creating weapons with Rocket-Chief Fuselage during the |cFFffd200Toys for Destruction|r daily.",
-				["groups"] = {
-					crit(46003, {	-- Volatile Blaster
-						["_quests"] = { 54090 },	-- Toys For Destruction
-					}),
-					crit(45999, {	-- Ricket's Special Delivery
-						["_quests"] = { 54090 },	-- Toys For Destruction
-					}),
-					crit(46000, {	-- Lightning Zap 5000
-						["_quests"] = { 54090 },	-- Toys For Destruction
-					}),
-					crit(46001, {	-- Supercollider
-						["_quests"] = { 54090 },	-- Toys For Destruction
-					}),
-					crit(46002, {	-- Boltspitter
-						["_quests"] = { 54090 },	-- Toys For Destruction
-					}),
-				},
 			}),
 			ach(13513, {	-- Available in Eight Colors (unlocks paint: Battletorn Blue)
 				["sym"] = {{ "achievement_criteria" }},
@@ -461,7 +444,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 					["coord"] = { 72.1, 72.9, MECHAGON },
 				}),
 			})),
-			achraw(13708, {	-- Most Minis Wins
+			ach(13708, {	-- Most Minis Wins
 				crit(45771, {	-- Izira Gearsworn
 					["provider"] = { "i", 169794 },	-- Azeroth Mini: Izira Gearsworn
 				}),

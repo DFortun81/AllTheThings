@@ -18,7 +18,7 @@ root(ROOTS.Zones, {
 					explorationAch(6351),	-- Explore Jade Forest
 					ach(7290),	-- How To Strain Your Dragon
 					ach(7291),	-- In a Trail of Smoke
-					achraw(7381),	-- Restore Balance
+					ach(7381),	-- Restore Balance
 					ach(7289),	-- Shadow Hopper
 					ach(6300, {	-- Upjade Complete (A)
 						["races"] = ALLIANCE_ONLY,	-- Alliance
@@ -2912,6 +2912,7 @@ root(ROOTS.Zones, {
 						["questID"] = 31866, -- Stash of Gems
 						["coord"] = { 62.4, 27.5, THE_JADE_FOREST },
 					}),
+					o(214379),	-- Shrine of Fellowship
 				}),
 				n(VENDORS, {
 					n(56687, {	-- Metalworker Sashi <Trade Goods>

@@ -1322,27 +1322,27 @@ root(ROOTS.HiddenQuestTriggers, m(KUL_TIRAS, {
 			q(56514),	-- Grahophone, play all of my music.
 
 			-- Achievement 'Armed for Action' (achievementID 13790)
-			q(55260),	-- Volatile Blaster
-			q(55261),	-- Lightning Zap 5000
-			q(55903),	-- Boltspitter
-			q(55414),	-- Ricket's Special Delivery
-			q(55902),	-- Supercollider
+			q(55260, { ["name"] = "Volatile Blaster" }),	-- Volatile Blaster
+			q(55261, { ["name"] = "Lightning Zap 5000" }),	-- Lightning Zap 5000
+			q(55903, { ["name"] = "Boltspitter" }),	-- Boltspitter
+			q(55414, { ["name"] = "Ricket's Special Delivery" }),	-- Ricket's Special Delivery
+			q(55902, { ["name"] = "Supercollider" }),	-- Supercollider
 
 			-- Achievement 'Most Minis Wins' (achievementID 13708)
-			q(56624),	-- Collected Izira Gearsworn
-			q(56625),	-- Collected Bondo Grosbloc
-			q(56626),	-- Collected Wrenchbot
-			q(56627),	-- Collected Roadtrogg
-			q(56628),	-- Collected Overspark
-			q(56629),	-- Collected Gazlowe
-			q(56630),	-- Collected HK-8
-			q(56631),	-- Collected King Mechagon
-			q(56632),	-- Collected Prince Erazmin
-			q(56633),	-- Collected Cork Stuttguard
-			q(56634),	-- Collected Naeno Megacrash
-			q(56635),	-- Collected Cogstar
-			q(56652),	-- Collected Blastatron
-			q(56729),	-- Collected Sapphronetta
+			q(56624, { ["name"] = "Izira Gearsworn" }),	-- Collected Izira Gearsworn
+			q(56625, { ["name"] = "Bondo Grosbloc" }),	-- Collected Bondo Grosbloc
+			q(56626, { ["name"] = "Wrenchbot" }),	-- Collected Wrenchbot
+			q(56627, { ["name"] = "Roadtrogg" }),	-- Collected Roadtrogg
+			q(56628, { ["name"] = "Overspark" }),	-- Collected Overspark
+			q(56629, { ["name"] = "Gazlowe" }),	-- Collected Gazlowe
+			q(56630, { ["name"] = "HK-8" }),	-- Collected HK-8
+			q(56631, { ["name"] = "King Mechagon" }),	-- Collected King Mechagon
+			q(56632, { ["name"] = "Prince Erazmin" }),	-- Collected Prince Erazmin
+			q(56633, { ["name"] = "Cork Stuttguard" }),	-- Collected Cork Stuttguard
+			q(56634, { ["name"] = "Naeno Megacrash" }),	-- Collected Naeno Megacrash
+			q(56635, { ["name"] = "Cogstar" }),	-- Collected Cogstar
+			q(56652, { ["name"] = "Blastatron" }),	-- Collected Blastatron
+			q(56729, { ["name"] = "Sapphronetta" }),	-- Collected Sapphronetta
 
 			-- First rare kill
 			q(55913),	-- Arachnoid Harvester

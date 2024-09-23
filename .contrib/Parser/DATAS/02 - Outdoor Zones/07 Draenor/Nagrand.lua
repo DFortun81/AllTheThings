@@ -90,7 +90,7 @@ root(ROOTS.Zones, {
 						["sym"] = {{ "achievement_criteria" }},
 					}),
 					explorationAch(8942),	-- Explore Nagrand
-					achraw(9610,  {	-- History of Violence (Broken Precipice)
+					ach(9610,  {	-- History of Violence (Broken Precipice)
 						["description"] = "In order to get the relics, except the Bust, use Jewel of Transformation in the area and then break boulder piles.",
 						["groups"] = {
 							crit(26397),	-- Krog the Dominator's Hammer
@@ -2627,10 +2627,10 @@ root(ROOTS.Zones, {
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.WOD, {
-		q(37250),	-- Broken Precipice POI Tracking Quest - triggers after finding Krog the Dominator's Hammer (achievementID 9610)
-		q(37251),	-- Broken Precipice POI Tracking Quest - triggers after finding Thak the Conqueror's Bust (achievementID 9610)
-		q(37252),	-- Broken Precipice POI Tracking Quest - triggers after finding Thurg the Slave Lord's Necklace (achievementID 9610)
-		q(37253),	-- Broken Precipice POI Tracking Quest - triggers after finding Gorg the Subjugator's Idol (achievementID 9610)
+		q(37250, { ["name"] = "Krog the Dominator's Hammer" }),	-- Broken Precipice POI Tracking Quest - triggers after finding Krog the Dominator's Hammer (achievementID 9610)
+		q(37251, { ["name"] = "Thak the Conqueror's Bust" }),	-- Broken Precipice POI Tracking Quest - triggers after finding Thak the Conqueror's Bust (achievementID 9610)
+		q(37252, { ["name"] = "Thurg the Slave Lord's Necklace" }),	-- Broken Precipice POI Tracking Quest - triggers after finding Thurg the Slave Lord's Necklace (achievementID 9610)
+		q(37253, { ["name"] = "Gorg the Subjugator's Idol" }),	-- Broken Precipice POI Tracking Quest - triggers after finding Gorg the Subjugator's Idol (achievementID 9610)
 	}),
 });
 root(ROOTS.HiddenQuestTriggers, {
