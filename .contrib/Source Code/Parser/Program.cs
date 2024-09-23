@@ -334,7 +334,7 @@ namespace ATT
         private static void ParseWagoDbCsvFile(string f)
         {
             // Ignore Wago DB files if not on Retail... they're always latest so can't be used for older versions
-            if (!((string[])Framework.Config["PreProcessorTags"]).Contains("RETAIL")) return;
+            //if (!((string[])Framework.Config["PreProcessorTags"]).Contains("RETAIL")) return;
 
             string csv = File.ReadAllText(f);
             string type = f.Substring(f.LastIndexOf('\\') + 1);

@@ -1772,9 +1772,6 @@ namespace ATT
             // data marked with noautomation shouldn't incorporate more than this
             if (data.TryGetValue("_noautomation", out bool noautomation) && noautomation) return;
 
-            // Classic can't trust Retail data for Achievements because Blizzard
-            if (!Program.PreProcessorTags.ContainsKey("RETAIL")) return;
-
             // only incorporate achievement criteria which is under a header or another achievement
             if (CurrentParentGroup.HasValue &&
                 CurrentParentGroup.Value.Key != "npcID" &&
@@ -1801,9 +1798,6 @@ namespace ATT
 
         private static void Incorporate_Criteria(IDictionary<string, object> data)
         {
-            // Classic can't trust Retail data for Achievements because Blizzard
-            if (!Program.PreProcessorTags.ContainsKey("RETAIL")) return;
-
             // don't automate any achievement criteria which is specifically listed under a Difficulty
             if (NestedDifficultyID != 0) return;
 
