@@ -2388,7 +2388,7 @@ root(ROOTS.Zones, {
 							REMOVED_4_1_0,
 						},
 						["cost"] = {
-							 { "i", 33784, 5 },	-- Darkrune Fragment
+							{ "i", 33784, 5 },	-- Darkrune Fragment
 						},
 					}),
 					i(32777, {	-- Kronk's Grab Bag
@@ -2403,7 +2403,7 @@ root(ROOTS.Zones, {
 					i(32601, {	-- Unstable Flask of the Sorcerer
 						["coord"] = { 54, 11, BLADES_EDGE_MOUNTAINS },
 						["cost"] = {
-							 { "i", 32569, 10 },	-- Apexis Shard
+							{ "i", 32569, 10 },	-- Apexis Shard
 						},
 					}),
 				}),

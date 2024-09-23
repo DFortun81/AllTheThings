@@ -354,7 +354,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["cr"] = 7092,	-- Tainted Ooze
 						}),
 						-- #if ANYCLASSIC
-						i(11912, {	 -- Package of Empty Ooze Containers
+						i(11912, {	-- Package of Empty Ooze Containers
 							i(11914),	-- Empty Cursed Ooze Jar
 							i(11948),	-- Empty Tainted Ooze Jar
 						}),
@@ -378,7 +378,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							},
 						}),
 						-- #if ANYCLASSIC
-						i(11955, {	 -- Bag of Empty Ooze Containers
+						i(11955, {	-- Bag of Empty Ooze Containers
 							i(11953),	-- Empty Pure Sample Jar
 						}),
 						-- #endif

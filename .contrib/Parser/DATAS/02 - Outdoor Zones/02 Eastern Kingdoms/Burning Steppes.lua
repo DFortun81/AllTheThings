@@ -321,7 +321,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { HUMAN, DWARF, VOIDELF, KULTIRAN, DARKIRON },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
-					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Humans, Dwarfs, Void Elves, Kul Tirans, and Dark Iron Dwarfs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution for Human, Dwarf and Dark Iron Dwarf:\n2 Hides, 4 handfulls of Mud, and 2 spools of Thread.\n\nSolution for Void Elf:\n3 Hides, 2 handfulls of Mud, and 1 spool of Thread.\n\nSolution for Kul Tiran:\n4 Hides, 1 handfull of Mud, and 3 spools of Thread.\n\n",
 					-- #endif
 					["groups"] = {
@@ -352,7 +352,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { DRAENEI, WORGEN, PANDAREN_ALLIANCE, LIGHTFORGED, DRACTHYR_ALLIANCE},
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
-					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Draenei, Worgen, Tushui Pandaren, Lightforged Draenei, and Alliance Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 handfull of Mud\n3 spools of Thread",
 					-- #endif
 					["groups"] = {
@@ -376,7 +376,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { GNOME, MECHAGNOME },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
-					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Gnomes and Mechagnomes. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 handfulls of Mud\n4 spools of Thread",
 					-- #endif
 					["groups"] = {
@@ -400,7 +400,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { NIGHTELF },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
-					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Night Elves. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 handfulls of Mud\n1 spool of Thread",
 					-- #endif
 					["groups"] = {
@@ -424,7 +424,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { ORC, UNDEAD, MAGHAR },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
-					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Orcs, Undead, and Mag'har Orcs. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n2 Hides\n4 handfulls of Mud\n2 spools of Thread",
 					-- #endif
 					["groups"] = {
@@ -448,7 +448,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { TAUREN, PANDAREN_HORDE, HIGHMOUNTAIN_TAUREN, DRACTHYR_HORDE },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
-					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Tauren, Huojin Pandaren, Highmountain Tauren, and Horde Dracthyr. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n4 Hides\n1 handfull of Mud\n3 spools of Thread",
 					-- #endif
 					["groups"] = {
@@ -472,7 +472,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { GOBLIN, VULPERA },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
-					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Goblins and Vulperas. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n1 Hide\n3 handfulls of Mud\n4 spools of Thread",
 					-- #endif
 					["groups"] = {
@@ -496,7 +496,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = { TROLL, BLOODELF, NIGHTBORNE, ZANDALARI },
 					-- #if NOT ANYCLASSIC
 					-- CRIEVE NOTE: The solution is on the objective, once objectives are supported by Retail ATT, get rid of this.
-					 -- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
+					-- The following description is accurate for retail per 10.2.5, but it is unknown how accurate it will be for the coming Classic Cataclysm.
 					["description"] = "This is a race-specific quest where different races get different versions of this quest. This particurlar version is only available for Trolls, Blood Elves, Nightborne Elves, and Zandalari Trolls. Completing this quest might give completion credit to other versions of this quest, and vice versa.\n\n\nSolution:\n\n3 Hides\n2 handfulls of Mud\n1 spool of Thread",
 					-- #endif
 					["groups"] = {
@@ -2392,8 +2392,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				i(15738, {	-- Pattern: Heavy Scorpid Gauntlets (RECIPE!)
 					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					["coords"] = {
-						 { 34.8, 36.3, BURNING_STEPPES },
-						 { 36.0, 36.6, BURNING_STEPPES },
+						{ 34.8, 36.3, BURNING_STEPPES },
+						{ 36.0, 36.6, BURNING_STEPPES },
 					},
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
 					["crs"] = {
@@ -2406,8 +2406,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_10_0_5 },
 					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					["coords"] = {
-						 { 34.8, 36.3, BURNING_STEPPES },
-						 { 36.0, 36.6, BURNING_STEPPES },
+						{ 34.8, 36.3, BURNING_STEPPES },
+						{ 36.0, 36.6, BURNING_STEPPES },
 					},
 					["crs"] = {
 						7025,	-- Blackrock Soldier
@@ -2419,8 +2419,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { REMOVED_4_0_3, ADDED_5_0_4, REMOVED_6_0_2, ADDED_10_0_5 },
 					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					["coords"] = {
-						 { 34.8, 36.3, BURNING_STEPPES },
-						 { 36.0, 36.6, BURNING_STEPPES },
+						{ 34.8, 36.3, BURNING_STEPPES },
+						{ 36.0, 36.6, BURNING_STEPPES },
 					},
 					["crs"] = {
 						7025,	-- Blackrock Soldier
@@ -2451,8 +2451,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_10_0_5 },
 					["description"] = "Killing the mobs at one of the coordinates, respawns them instantly at the other and vice versa. Farmed with a second person, you get all recipes within 2-3 minutes.",
 					["coords"] = {
-						 { 34.8, 36.3, BURNING_STEPPES },
-						 { 36.0, 36.6, BURNING_STEPPES },
+						{ 34.8, 36.3, BURNING_STEPPES },
+						{ 36.0, 36.6, BURNING_STEPPES },
 					},
 					["crs"] = {
 						7025,	-- Blackrock Soldier

@@ -1027,7 +1027,7 @@ root(ROOTS.ExpansionFeatures,
 							artifact(249),	-- Unlock 30 Artifact Traits
 							artifact(248),	-- Reach AK25
 							artifact(251),	-- Complete "This Side Up"
-						 }),
+						}),
 						BalanceOfPowerAppearance("Interface\\Icons\\inv_offhand_1h_artifactcthun_d_03", {
 							artifact(255),	-- Complete Quest Line
 							artifact(253),	-- Complete "Unleashed Monstrosities"
@@ -1039,7 +1039,7 @@ root(ROOTS.ExpansionFeatures,
 							artifact(256),	-- Reach Honor Level 30
 							artifact(258),	-- Reach Honor Level 50
 							artifact(259),	-- Reach Honor Level 80
-						 }),
+						}),
 						ChallengeAppearance("Interface\\Icons\\inv_offhand_1h_artifactcthun_d_05", {
 							artifact(261),	-- Complete Legionfall: Mage Tower
 							artifact(260),	-- Defeat Heroic Kil'jaeden with appearance

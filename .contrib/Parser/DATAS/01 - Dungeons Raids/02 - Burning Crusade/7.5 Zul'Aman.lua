@@ -226,7 +226,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FOUR,
 					n(23559, {	-- Budd
 						["coord"] = { 71.0, 67.2, GHOSTLANDS },
 						["groups"] = {
-							i(33105, {	  -- Budd's Guise of Zul'aman
+							i(33105, {	-- Budd's Guise of Zul'aman
 								["sourceQuest"] = 11132,	-- Promises, Promises...
 								["description"] = "To obtain this, talk to Budd Nedreck after completing 'Promises, Promises...', click the dialog \"You gave the crew disguises?\", and look in your inventory.\n\n|Cffff0000WARNING: If you complete 'X Marks... Your Doom!' this option is NOT available to you!|r",
 								["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },	-- Conditionally removed based on quest progress.

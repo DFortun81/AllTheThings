@@ -201,7 +201,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
 						["DisablePartySync"] = true,
-						 -- technically not accurate, but no other way to lock this properly for first character
+						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 72688 },	-- Renown Supplies [Renown 12]
 						["timeline"] = { REMOVED_11_0_0 },
 						["g"] = {
@@ -928,7 +928,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					q(72697, {	-- Renown Supplies
 						["provider"] = { "n", 193015 },	-- Unatos
 						["coord"] = { 58.1, 35.2, VALDRAKKEN },
-						 -- technically not accurate, but no other way to lock this properly for first character
+						-- technically not accurate, but no other way to lock this properly for first character
 						["lockCriteria"] = { 1, "questID", 72698 },	-- Renown Supplies [Renown 25]
 						["DisablePartySync"] = true,
 						["timeline"] = { REMOVED_11_0_0 },

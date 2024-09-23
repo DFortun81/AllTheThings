@@ -43,7 +43,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						{ "n", 208105 },	-- Information-Stuffed Clue
 						{ "n", 208132 },	-- Information-Stuffed Clue
 						{ "n", 208766 },	-- Information-Stuffed Clue
-					 },
+					},
 				}),
 				ach(19793, {	-- Finally At Rest
 					i(213134),	-- Hap'he (PET!)

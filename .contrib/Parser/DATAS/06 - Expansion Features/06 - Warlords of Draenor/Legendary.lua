@@ -510,7 +510,7 @@ root(ROOTS.ExpansionFeatures,
 						REMOVED_7_0_3,
 					},
 					["g"] = {
-						 un(REMOVED_FROM_GAME, i(128693)),	-- Draenic Sea Chart
+						un(REMOVED_FROM_GAME, i(128693)),	-- Draenic Sea Chart
 					},
 				}),
 				q(39000, {	-- We Don't Need No Library Card

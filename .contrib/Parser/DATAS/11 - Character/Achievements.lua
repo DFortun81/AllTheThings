@@ -170,7 +170,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		},
 		-- #endif
 	})),
-	applyclassicphase(CATA_PHASE_ONE, ach(5374, {	 	-- 45 Exalted Reputations
+	applyclassicphase(CATA_PHASE_ONE, ach(5374, {		-- 45 Exalted Reputations
 		-- #if ANYCLASSIC
 		["OnClick"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnClick]],
 		["OnTooltip"] = [[_.CommonAchievementHandlers.REPUTATIONS_OnTooltip]],
@@ -650,7 +650,7 @@ root(ROOTS.Character, n(ACHIEVEMENTS, {
 		["timeline"] = { ADDED_3_0_2, REMOVED_3_0_8 },
 	}),
 	ach(6829, {		-- Realm First! Pandaren Ambassador
-	 	["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
+		["timeline"] = { ADDED_5_0_4, REMOVED_5_2_0 },
 	}),
 	ach(14662, {	-- Realm First! Shadowlands Keystone Master
 		["timeline"] = { ADDED_9_0_2, REMOVED_9_1_0 },

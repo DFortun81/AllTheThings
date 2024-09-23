@@ -126,7 +126,7 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 				}),
 				crit(60855, {	-- Shifting Sands
 					["_quests"] = { 77305 },
-				 }),
+				}),
 				crit(60856, {	-- What's in a Mold?
 					["_quests"] = { 77822 },
 				}),

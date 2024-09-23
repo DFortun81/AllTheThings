@@ -91,7 +91,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 				["timeline"] = { ADDED_5_3_0, REMOVED_7_0_3 },
 			}),
 			ach(11573, {	-- Rumble Club
-			 	["timeline"] = { ADDED_7_1_5, REMOVED_9_1_5 },
+				["timeline"] = { ADDED_7_1_5, REMOVED_9_1_5 },
 			}),
 			ach(7947, {		-- The First Rule of Brawler's Guild (Season 1 or 2)
 				["races"] = ALLIANCE_ONLY,

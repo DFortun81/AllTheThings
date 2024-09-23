@@ -1082,7 +1082,7 @@ i(190238);	-- Xy'rath's Booby-Trapped Cache
 -----------------
 -- PATCH 9.2.5 --
 -----------------
-i(192099);	 -- Earpieces of Tranquil Focus
+i(192099);	-- Earpieces of Tranquil Focus
 i(192485);	-- Stored Wisdom Device
 i(193588);	-- Timewalker's Hearthstone
 i(187958);	-- Shrouded Banner of the Opportune

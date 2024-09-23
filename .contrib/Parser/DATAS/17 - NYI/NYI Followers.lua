@@ -16,10 +16,10 @@ root(ROOTS.NeverImplemented, n(FOLLOWERS, {
 			follower(20),	-- Alliance:Horde:Aki the Chosen \\ Horde:Great Chef Woo
 			follower(21),	-- Alliance:Horde:Acidtooth Devourer \\ Horde:Hansel Heavyhands
 			follower(28),	-- Alliance:Horde:Olin Umberhide \\ Horde:Borin Brewbelly
-			follower(29),	-- Alliance:Horde:Mulverick	 \\ Horde:Borin Brewbelly
+			follower(29),	-- Alliance:Horde:Mulverick	\\ Horde:Borin Brewbelly
 			follower(30),	-- Alliance:Horde:Weaponsmith Na'Shra \\ Horde:Borin Brewbelly
 			follower(31),	-- Alliance:Horde:Shadow Hunter Rala \\ Horde:Borin Brewbelly
-			follower(33),	-- Alliance:Horde:Lokra	 \\ Horde:Borin Brewbelly
+			follower(33),	-- Alliance:Horde:Lokra	\\ Horde:Borin Brewbelly
 			follower(70),	-- Alliance:Horde:Mokugg Lagerpounder \\ Horde:Borin Brewbelly
 			follower(122),	-- Draenei Female
 			follower(123),	-- Dwarf Male

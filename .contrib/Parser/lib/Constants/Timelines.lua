@@ -487,7 +487,7 @@ REMOVED_PLUNDERSTORM_END = "removed 10.2.6.54499";		-- Plunderstorm Ended on Apr
 CREATED_10_2_7 = "created 10.2.7.54577";				-- Dragonflight 10.2.7 Launch on May 7th, 2024
 ADDED_10_2_7 = "added 10.2.7.54577";					-- Dragonflight 10.2.7 Launch on May 7th, 2024
 REMOVED_10_2_7 = "removed 10.2.7.54577";				-- Dragonflight 10.2.7 Launch on May 7th, 2024
-ADDED_MOP_REMIX = "added 10.2.7.54736";				    -- Dragonflight 10.2.7 MoP Remix Launch on May 16th, 2024
+ADDED_MOP_REMIX = "added 10.2.7.54736";					-- Dragonflight 10.2.7 MoP Remix Launch on May 16th, 2024
 REMOVED_MOP_REMIX_END = "removed 11.0.2.56162";			-- Remix ends on 19th August, shortly after The War Within 11.0.2 Launch on August 12th, 2024
 
 --------------------

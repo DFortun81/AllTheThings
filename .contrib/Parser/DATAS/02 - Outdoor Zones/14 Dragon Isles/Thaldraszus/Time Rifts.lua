@@ -452,8 +452,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 						},
 					}),
 					o(404480,{	-- Ragged Mantid Sword
-					 	["coord"] = { 63.5, 65.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
-					 	["g"] = {
+						["coord"] = { 63.5, 65.4, 2199 },	-- Tyrhold Reservoir (Scenario Map)
+						["g"] = {
 							i(206998),	-- Amber Sword (QI!)
 						},
 					}),

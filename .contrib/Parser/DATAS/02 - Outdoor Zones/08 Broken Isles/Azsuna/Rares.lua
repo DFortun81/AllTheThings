@@ -89,7 +89,7 @@ root(ROOTS.Zones, {
 				n(109677, {	-- Chief Treasurer Jabrill
 					["questID"] = 45491,
 					["coord"] = { 58.9, 76.6, AZSUNA },
-				 }),
+				}),
 				n(107266, bubbleDownSelf({	-- Commander Soraax
 					["timeline"] = {
 						REMOVED_8_3_0,	-- as of 8.3, no sign of him or his world quest for a very long time

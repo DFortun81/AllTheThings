@@ -1264,7 +1264,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["races"] = { DRACTHYR_ALLIANCE, DRACTHYR_HORDE },
 			}),
 			q(70159, {	-- A Taste of Home
-				["provider"] = { "n", 194462 },	 -- Talon Scaralesh
+				["provider"] = { "n", 194462 },	-- Talon Scaralesh
 				["coord"] = { 47.1, 82.9, THE_WAKING_SHORES },
 				["classes"] = { EVOKER },
 				["races"] = { DRACTHYR_HORDE },

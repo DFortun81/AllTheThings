@@ -3397,8 +3397,8 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					-- Swapped/Confirmed Drops
 					i(133261),	-- Balkar's Waders	-- 10.0.7, confirmed dropping here too on 04.04.2023
 					i(133259),	-- Resonant Kris	-- 8.3.7, confirmed dropping here too on 18.08.2020
-					i(133278),	-- Evelyn's Belt	 -- 9.1, confirmed dropping here too on 27.09.2021
-					i(133262),	-- Greaves of Wu the Younger	 -- 9.1, confirmed dropping here too on 27.09.2021
+					i(133278),	-- Evelyn's Belt	-- 9.1, confirmed dropping here too on 27.09.2021
+					i(133262),	-- Greaves of Wu the Younger	-- 9.1, confirmed dropping here too on 27.09.2021
 					--	i(133267),	-- Sand Dune Belt (movd to Lockmaw))
 					--	i(133266),	-- Veneficial Band (moved to Lockmaw)
 				},

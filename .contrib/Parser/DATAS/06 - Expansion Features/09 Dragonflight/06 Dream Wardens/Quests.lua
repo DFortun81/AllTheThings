@@ -33,7 +33,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							i(210872, {	-- Satchel of Dreams
 								["g"] = {
 									i(202172),	-- Overflowing Satchel of Coins
-								--	filter(CLOTH, {	 -- Commented out due Tooltip Length
+								--	filter(CLOTH, {	-- Commented out due Tooltip Length
 										i(210349),	-- Frigid Conservator's Gown
 										i(210355),	-- Frigid Conservator's Mitts
 										i(210357),	-- Frigid Conservator's Hood

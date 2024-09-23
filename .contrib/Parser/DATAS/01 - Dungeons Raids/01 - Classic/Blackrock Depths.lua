@@ -2827,7 +2827,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 								-- #else
 								REMOVED_4_0_1,
 								-- #endif
-							 },
+							},
 						}),
 						i(22317),	-- Lefty's Brass Knuckle
 						i(22318),	-- Malgen's Long Bow

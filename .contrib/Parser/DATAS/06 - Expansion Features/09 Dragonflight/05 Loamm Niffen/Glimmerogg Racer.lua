@@ -112,7 +112,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				q(75706, {	-- A Race To The Finish
 					["repeatable"] = true,
-			 		["g"] = {
+					["g"] = {
 						i(205121),	-- Tricky (PET!)
 					},
 				}),

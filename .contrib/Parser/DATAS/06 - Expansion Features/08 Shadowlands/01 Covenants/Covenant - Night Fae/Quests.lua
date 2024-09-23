@@ -710,8 +710,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 			}),
 			q(61711, {	-- Ritual of Purification
 				["sourceQuests"] = {
-					61710,	 -- The Broken Spear
-					61709,	 -- Witch's Satchel
+					61710,	-- The Broken Spear
+					61709,	-- Witch's Satchel
 				},
 				["provider"] = { "n", 171413 },	-- Kivarr
 				["coord"] = { 46.2, 56.5, ARDENWEALD },

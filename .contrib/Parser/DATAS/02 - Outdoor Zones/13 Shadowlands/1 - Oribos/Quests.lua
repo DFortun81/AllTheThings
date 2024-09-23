@@ -305,7 +305,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 38.8, 70.0, ORIBOS },
 				["isBreadcrumb"] = true,
 				["lockCriteria"] = { 1,	-- Completing 1 Zone Meta Quest
-					"questID", 62763,	-- Support the Court,
+					"questID", 62763,	-- Support the Court
 					"questID", 62723,	-- Bolstering Bastion
 					"questID", 62748,	-- Rallying Maldraxxus
 					"questID", 62778,	-- Reinforcing Revendreth
@@ -319,7 +319,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 38.8, 69.9, ORIBOS },
 				["isBreadcrumb"] = true,
 				["lockCriteria"] = { 2,	-- Completing 2 Zone Meta Quest
-					"questID", 62763,	-- Support the Court,
+					"questID", 62763,	-- Support the Court
 					"questID", 62723,	-- Bolstering Bastion
 					"questID", 62748,	-- Rallying Maldraxxus
 					"questID", 62778,	-- Reinforcing Revendreth
@@ -332,7 +332,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 38.8, 69.9, ORIBOS },
 				["isBreadcrumb"] = true,
 				["lockCriteria"] = { 3,	-- Completing 3 Zone Meta Quest
-					"questID", 62763,	-- Support the Court,
+					"questID", 62763,	-- Support the Court
 					"questID", 62723,	-- Bolstering Bastion
 					"questID", 62748,	-- Rallying Maldraxxus
 					"questID", 62778,	-- Reinforcing Revendreth
@@ -345,7 +345,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["coord"] = { 38.8, 69.9, ORIBOS },
 				["isBreadcrumb"] = true,
 				["lockCriteria"] = { 4,	-- Completing 4 Zone Meta Quest
-					"questID", 62763,	-- Support the Court,
+					"questID", 62763,	-- Support the Court
 					"questID", 62723,	-- Bolstering Bastion
 					"questID", 62748,	-- Rallying Maldraxxus
 					"questID", 62778,	-- Reinforcing Revendreth

@@ -70,7 +70,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							{ 57.0, 58.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						},
 					}),
-					crit(47214,	 {		-- Corrupted Bloodseeker slain
+					crit(47214,	{		-- Corrupted Bloodseeker slain
 						["description"] = "This doesn't appear to share a spawn with any other mob, but it's an elite shark that spawns off the southern coast of Uldum.  It can swim very far out, close to fatigue waters, so if you're searching for Corrupted Bloodseeker it may be helpful to follow the outside edge rather than sticking to the coast.",
 						["cr"] = 162290,	-- Corrupted Bloodseeker
 						["coords"] = {
@@ -79,7 +79,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							{ 46.6, 91.2, NZOTH_ASSAULT_ULDUM },
 						},
 					}),
-					crit(47215,	 {		-- Corrupted Bonestripper slain
+					crit(47215,	{		-- Corrupted Bonestripper slain
 						["description"] = "Shares a spawn with N'Zoth Bonestripper.  Found in most water locations.",
 						["cr"] = 159087,	-- Corrupted Bonestripper
 						["coords"] = {
@@ -96,7 +96,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							{ 72.8, 29.8, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						},
 					}),
-					crit(47216,	 {		-- Corrupted Despoiler slain
+					crit(47216,	{		-- Corrupted Despoiler slain
 						["description"] = "Shares a spawn with Faceless Despoiler and Mind Eater.  Can also result in Corrupted Mind Eater spawning.",
 						["cr"] = 156709,	-- Corrupted Despoiler
 						["coords"] = {
@@ -127,7 +127,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 							{ 75.0, 23.6, NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS },
 						},
 					}),
-					crit(47217,	 {		-- Corrupted Dominator slain
+					crit(47217,	{		-- Corrupted Dominator slain
 						["description"] = "Shares a spawn with Faceless Dominator.",
 						["cr"] = 162246,	-- Corrupted Dominator
 						["coords"] = {

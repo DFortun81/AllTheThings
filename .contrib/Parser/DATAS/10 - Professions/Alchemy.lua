@@ -1066,7 +1066,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			["g"] = {
 				currency(DF_ALCHEMY_KNOWLEDGE),
 			},
-		 }, {
+		}, {
 			i(198608),	-- Alchemy Notes
 			q(74108, {	-- DF Inscription Order: Alchemy
 				["name"] = "DF Inscription Order: Alchemy",

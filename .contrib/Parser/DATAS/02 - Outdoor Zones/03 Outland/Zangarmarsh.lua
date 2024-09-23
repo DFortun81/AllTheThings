@@ -1424,7 +1424,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 						["lvl"] = lvlsquish(61, 61, 10),
 					}),
-					q(9911,	 {	-- The Count of the Marshes
+					q(9911,	{	-- The Count of the Marshes
 						["provider"] = { "i", 25459 },	-- "Count" Ungula's Mandible
 						["coord"] = { 32.8, 59.5, ZANGARMARSH },
 						["cr"] = 18285,	-- "Count" Ungula
@@ -1797,7 +1797,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,	-- for "Observing the Sporelings"
 						["lvl"] = lvlsquish(61, 61, 10),
 					}),
-					q(9827,	 {	-- Withered Basidium [Alliance]
+					q(9827,	{	-- Withered Basidium [Alliance]
 						["provider"] = { "i", 24483 },	-- Withered Basidium
 						["cr"] = 18124,	-- Withered Giant
 						["races"] = ALLIANCE_ONLY,

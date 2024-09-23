@@ -472,13 +472,13 @@ i(45103, 63204);	-- Spellslinger's Slippers
 -------------------
 --- ITEM ---
 i(47654, 67079);	-- Bejeweled Wizard's Bracers [A]
-i(47639, 67145);	   -- Bejeweled Wizard's Bracers [H]
+i(47639, 67145);	-- Bejeweled Wizard's Bracers [H]
 i(47655, 67066);	-- Merlin's Robe [A]
-i(47638, 67146);	   -- Merlin's Robe [H]
+i(47638, 67146);	-- Merlin's Robe [H]
 i(47656, 67065);	-- Royal Moonshroud Bracers [A]
-i(47637, 67147);	   -- Royal Moonshroud Bracers [H]
+i(47637, 67147);	-- Royal Moonshroud Bracers [H]
 i(47657, 67064);	-- Royal Moonshroud Robe [A]
-i(47636, 67144);	   -- Royal Moonshroud Robe [H]
+i(47636, 67144);	-- Royal Moonshroud Robe [H]
 
 -------------------
 --- PATCH 3.3.0 ---

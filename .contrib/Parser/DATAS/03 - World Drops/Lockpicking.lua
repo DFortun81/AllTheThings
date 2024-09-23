@@ -74,7 +74,7 @@ root(ROOTS.WorldDrops, {
 				},
 				["sym"] = { {
 					"select", "itemID",
-				    11968,	-- Amber Hoop
+					11968,	-- Amber Hoop
 					4999,	-- Azora's Will
 					11984,	-- Cobalt Ring
 					11994,	-- Coral Band
@@ -172,7 +172,7 @@ root(ROOTS.WorldDrops, {
 					11989,  -- Vanadium Loop
 				}},
 			}),
-			i(4634,	 {	-- Iron Lockbox
+			i(4634,	{	-- Iron Lockbox
 				["sym"] = { {
 					"select", "itemID",
 					11164,  -- Formula: Enchant Weapon - Lesser Beastslayer (RECIPE!)

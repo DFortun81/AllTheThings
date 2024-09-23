@@ -301,7 +301,7 @@ root(ROOTS.Professions, prof(BLACKSMITHING, bubbleDownSelf({ ["requireSkill"] = 
 			["sourceQuest"] = 38507,	-- Secrets of Leysmithing
 			["provider"] = { "n", 97261 },	-- Alard Schmied
 			["coord"] = { 45.0, 29.6, LEGION_DALARAN },
-			["cost"] = { { "i", 124103,	 10 }, },	-- 10xFoxflower
+			["cost"] = { { "i", 124103,	10 }, },	-- 10xFoxflower
 		}),
 		q(38500, {	-- Leysmithing Mastery
 			["sourceQuest"] = 38515,	-- Nature Provides

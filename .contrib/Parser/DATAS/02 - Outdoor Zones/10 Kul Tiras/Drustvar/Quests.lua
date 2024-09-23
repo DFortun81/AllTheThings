@@ -1163,8 +1163,8 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 					azewrongItem(175323),	-- Waycrest Militia Spaulders (no azerite version)
 				},
 			}),
---						   51851	-- Storming the Manor \	-- Not sure why, but there are three versions of this quest on wowhead.
---						   51852	-- Storming the Manor /	-- Not sure why, but there are three versions of this quest on wowhead.
+--							51851	-- Storming the Manor \	-- Not sure why, but there are three versions of this quest on wowhead.
+--							51852	-- Storming the Manor /	-- Not sure why, but there are three versions of this quest on wowhead.
 			q(50960, {	-- Sweete's Orders
 				["provider"] = { "o", 286016 },	-- Ship's Log
 				["coord"] = { 27.4, 11.6, DRUSTVAR },

@@ -1396,7 +1396,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					72858,	-- Acid Beats Paper
 					72857,	-- Boom Weed
 					72856,	-- Nothing Like the Classic
-				 },
+				},
 				["provider"] = { "n", 199793 },	-- Calia Menethil
 				["coord"] = { 45.6, 41.6, SILVERPINE_FOREST },
 				["g"] = {
@@ -1408,7 +1408,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					72858,	-- Acid Beats Paper
 					72857,	-- Boom Weed
 					72856,	-- Nothing Like the Classic
-				 },
+				},
 				["provider"] = { "n", 199792 },	-- Lilian Voss
 				["coord"] = { 45.4, 41.6, SILVERPINE_FOREST },
 			}),
@@ -1416,7 +1416,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuests"] = {
 					72859,	-- A Proper Disguise
 					72860,	-- Fear is Our Weapon
-				 },
+				},
 				["provider"] = { "n", 199792 },	-- Lilian Voss
 				["coord"] = { 45.4, 41.6, SILVERPINE_FOREST },
 				["g"] = {

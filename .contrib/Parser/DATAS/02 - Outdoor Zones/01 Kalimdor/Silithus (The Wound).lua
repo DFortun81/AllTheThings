@@ -788,7 +788,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 							["cost"] = { { "i", 174784, 1 } },	-- The Final Truth
 							["g"] = {
 								i(169223, {	-- Ashjra'kamas, Shroud of Resolve
-									["bonusID"] = 6283,	 -- (Rank 12 Appearence)
+									["bonusID"] = 6283,	-- (Rank 12 Appearence)
 								}),
 								i(171355),	-- Voidborn Core
 							},

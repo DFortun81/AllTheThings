@@ -363,12 +363,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 				-- AlexSoft
 				q(75910),	-- Unknown [When Going to Thieving Critters (75619)] /Unflagged After Complete
 				q(75930),	-- Completed Thieving Critters (75619),			This Might Be Achievement Tracker/Daily/weekly etc..
-				q(75882),	-- Completed Thieving Critters (75619),			 /unflagged?
+				q(75882),	-- Completed Thieving Critters (75619),			/unflagged?
 
 				-- AlexSoft
 				q(75892),	-- Unknown [When Going to Vertical Anomaly (75390)] /Unflagged After Complete
 				q(75924),	-- Completed Vertical Anomaly (75390),			This Might Be Achievement Tracker/Daily/weekly etc..
-				q(75882),	-- Completed Vertical Anomaly (75390),			 /unflagged?
+				q(75882),	-- Completed Vertical Anomaly (75390),			/unflagged?
 
 				-- Pr3vention
 				q(75908),	-- Starting The Living Drill (76016)

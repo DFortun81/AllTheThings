@@ -42,10 +42,10 @@ local QUANTUM_GROUP = sharedData({
 			}),
 			ig(114264),	-- Bloodthorn Hood					(NYI)
 			ig(114388),	-- Hood of Falling Leaves			(NYI)
-			i(147516, {	-- Legion Stalker's Hood		(NYI)
+			i(147516, {	-- Legion Stalker's Hood			(NYI)
 				["modID"] = 2, -- Heroic dungeon
 			}),
-			ig(121509),	-- Runesworn Crown		 			(NYI)
+			ig(121509),	-- Runesworn Crown					(NYI)
 
 			ig(134621),	-- Incendiary Helm 					(Removed)
 			ig(134794),	-- Ruinous Helm 					(Removed)
@@ -208,8 +208,8 @@ local QUANTUM_GROUP = sharedData({
 			ig(108202),	-- Peerless Draenic Steel Chestplate	(NYI)
 			ig(108210),	-- Peerless Draenic Steel Chestplate	(NYI)
 			ig(108218),	-- Peerless Draenic Steel Chestplate	(NYI)
-			ig(114253),	-- Ruby Plate Breastplate			(NYI)
-			ig(114316),	-- Salt-Scorched Breastplate		(NYI)
+			ig(114253),	-- Ruby Plate Breastplate				(NYI)
+			ig(114316),	-- Salt-Scorched Breastplate			(NYI)
 
 			ig(134735),	-- Chillplate Chestpiece			(Removed)
 			ig(134767),	-- Concealment Breastplate			(Removed)
@@ -1386,7 +1386,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 			ig(114388),	-- Hood of Falling Leaves			(NYI)
 			ig(93081),	-- Hozen-Stitched Hood 				(NYI)
 		--	ig(147516),	-- Legion Stalker's Hood 			(NYI)						Listed under CoEN (Legion Dungeon)
-			ig(121509),	-- Runesworn Crown		 			(NYI)
+			ig(121509),	-- Runesworn Crown					(NYI)
 
 			ig(134621),	-- Incendiary Helm 					(Removed)
 			ig(134794),	-- Ruinous Helm 					(Removed)
@@ -1434,7 +1434,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 			ig(114251),	-- Bloodthorn Chestguard 			(NYI)
 			ig(189917),	-- Constellation Master's Smock		(NYI)
 			ig(93078),	-- Hozen-Stitched Jerkin 			(NYI)
-			ig(93049),	-- Mogubreaker Jerkin	 			(NYI)
+			ig(93049),	-- Mogubreaker Jerkin				(NYI)
 			ig(3984),	-- Strapped Armor					(NYI)
 
 			ig(134729),	-- Frosthide Tunic 					(Removed)

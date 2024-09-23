@@ -1388,7 +1388,7 @@ root(ROOTS.HiddenQuestTriggers, m(SHADOWLANDS, {
 		-- Treasure
 		q(65670),	-- Syntactic Vault When unlocking the box (spellID 367552)
 
-		--q(65011),	 Old HQT for i(187885, {	-- Honeycombed Lattice
+		--q(65011),	Old HQT for i(187885, {	-- Honeycombed Lattice
 
 		-- Jiro Buffs
 		q(65167),	-- Echoed Jiro Nascii(183263) with spellID(362023) Same HQTs from different Jiros (42.7 44.8) Stackable?
