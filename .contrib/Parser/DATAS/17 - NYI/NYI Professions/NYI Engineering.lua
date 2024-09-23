@@ -139,7 +139,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(221890),	-- Gravity Mine
 					i(221946),	-- Irresistible Red Button
 					i(221947),	-- Irresistible Red Button
-					i(221968),	-- Legibly Scribbled Notes
 					i(221929),	-- Overclocked Circuit Board
 					i(221930),	-- Overclocked Circuit Board
 					i(221931),	-- Overclocked Circuit Board

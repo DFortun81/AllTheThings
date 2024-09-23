@@ -46,6 +46,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(82524, {	-- Exterminate
 					["coord"] = { 63.1, 19.7, AZJ_KAHET },
 				}),
+				q(82324, {	-- Grub Run
+					["coord"] = { 39.6, 39.9, AZJ_KAHET },
+				}),
 				q(79722, {	-- Gutter Work
 					["coord"] = { 57.5, 71.1, AZJ_KAHET },
 					["g"] = {
