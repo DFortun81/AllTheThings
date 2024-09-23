@@ -1,7 +1,8 @@
 -- Database
 -- #IMPORT: 00 - DB\\Parser Setup Data\\
 -- #IMPORT: 00 - DB\\Wago\\
--- #IMPORT: 00 - Item DB\\.dynamic\\
+-- #IMPORT: 00 - DB\\Dynamic\\
+-- #IMPORT: 00 - DB\\AchievementDB\\
 -- #IMPORT: 00 - DB\\CategoryDB.lua
 -- #IMPORT: 00 - DB\\ClassInfoDB.lua
 -- #IMPORT: 00 - DB\\FilterDB.lua
@@ -15,7 +16,7 @@
 -- #IMPORT: 00 - DB\\PetDB.lua
 -- #IMPORT: 00 - DB\\PetTypeDB.lua
 -- #IMPORT: 00 - DB\\ToyDB.lua
--- #IMPORT: 00 - DB\\Dynamic\\
+-- #IMPORT: 00 - Item DB\\.dynamic\\
 -- #IMPORT: 00 - Item DB\\Build NYI.lua
 -- #IMPORT: 00 - Item DB\\BindOnAccountItems.lua
 -- #IMPORT: 00 - Item DB\\Blueprints.lua
