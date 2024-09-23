@@ -1,7 +1,7 @@
 -- Database
 -- #IMPORT: 00 - DB\\Parser Setup Data\\
+-- #IMPORT: 00 - DB\\Wago\\
 -- #IMPORT: 00 - Item DB\\.dynamic\\
--- #IMPORT: 00 - DB\\AchievementDB - Cataclysm.lua
 -- #IMPORT: 00 - DB\\CategoryDB.lua
 -- #IMPORT: 00 - DB\\ClassInfoDB.lua
 -- #IMPORT: 00 - DB\\FilterDB.lua

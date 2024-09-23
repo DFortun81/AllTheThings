@@ -646,8 +646,10 @@ localize(L.HEADER_NAMES, {
 	[-1001032] = "Mount Mods",
 	[-1001033] = C_Spell.GetSpellName(363104),
 	[-1001034] = "Elemental Bonds",
-	[-1001035] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
-	[-1001036] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-1001035] = "Seasonal Fish: Summer Bass",
+	[-1001036] = "Seasonal Fish: Winter Squid",
+	[-1001037] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
+	[-1001038] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -1181,6 +1183,8 @@ localize(L.HEADER_ICONS, {
 	[-1001032] = "975744",
 	[-1001033] = "Interface/Icons/inv_mechagon_blueprints",
 	[-1001034] = "516313",
+	[-1001035] = "133889",
+	[-1001036] = "133899",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
@@ -1225,6 +1229,8 @@ localize(L.HEADER_EVENTS, {
 	[-1000368] = 1271,
 	[-1000872] = 446916,
 	[-1000873] = 1525,
+	[-1001035] = 133889,
+	[-1001036] = 133899,
 });
 localize(L.EVENT_TIMERUNNING_SEASONS, {
 	[1] = 1525,
@@ -1268,6 +1274,16 @@ _.Modules.Events.SetEventInformation(590, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=5,["year"]=2023},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=5,["year"]=2023}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=7,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=7,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=1,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=1,["year"]=2025})
+});
+_.Modules.Events.SetEventInformation(133899, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=7,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=3,["year"]=2024}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=2,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=4,["year"]=2025}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026})
+});
+_.Modules.Events.SetEventInformation(133889, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=2,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=6,["year"]=2023}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=1,["year"]=2024}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025})
 });
 
 -- Filter Database Module
@@ -14867,7 +14883,7 @@ L.QUEST_NAMES = {
 	[50185] = "Green Crystal Monocle",
 	[50250] = "Posthaste",
 	[50384] = "Doug Test - Completable Quest4",
-	[52819] = _.L.HEADER_NAMES[-1001036],
+	[52819] = _.L.HEADER_NAMES[-1001038],
 	[52917] = "Grimmy Dialogue",
 	[53568] = "Kill Credit 1",
 	[53569] = "Kill Credit 2",
@@ -15919,8 +15935,10 @@ localize(L.HEADER_NAMES, {
 	[-1000944] = "Comercio",
 	[-1000945] = "Asaltos de Fyrakk",
 	[-1001034] = "Vínculos Elementales",
-	[-1001035] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
-	[-1001036] = "|cFFFFFFFFStep 1:|r Nota llamativa",
+	[-1001035] = "Pescado de temporada: lubina de verano",
+	[-1001036] = "Pescado de temporada: calamares de invierno",
+	[-1001037] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
+	[-1001038] = "|cFFFFFFFFStep 1:|r Nota llamativa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -19853,8 +19871,10 @@ localize(L.HEADER_NAMES, {
 	[-1000945] = "Angriffe von Fyrakk",
 	[-1001006] = "Garnisonskampagne",
 	[-1001034] = "Elementare Bande",
-	[-1001035] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
-	[-1001036] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
+	[-1001035] = "Saisonfisch: Sommerbarsch",
+	[-1001036] = "Saisonfisch: Winterkalmar",
+	[-1001037] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
+	[-1001038] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -23987,8 +24007,10 @@ localize(L.HEADER_NAMES, {
 	[-1000944] = "Marchandage",
 	[-1000945] = "Assauts de Fyrakk",
 	[-1001034] = "Liens élémentaires",
-	[-1001035] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
-	[-1001036] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
+	[-1001035] = "Poisson de saison : bar d'été",
+	[-1001036] = "Poisson de saison : calmar d'hiver",
+	[-1001037] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
+	[-1001038] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon.",
@@ -28023,8 +28045,10 @@ localize(L.HEADER_NAMES, {
 	[-1000944] = "Baratto",
 	[-1000945] = "Assalti di Fyrakk",
 	[-1001034] = "Legami Elementali",
-	[-1001035] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
-	[-1001036] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
+	[-1001035] = "Pesce di stagione: spigola estiva",
+	[-1001036] = "Pesce di stagione: calamari invernali",
+	[-1001037] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
+	[-1001038] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -31699,8 +31723,10 @@ localize(L.HEADER_NAMES, {
 	[-1000944] = "Pechincha",
 	[-1000945] = "Ofensivas de Fyrakk",
 	[-1001034] = "Prisão Elemental",
-	[-1001035] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
-	[-1001036] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
+	[-1001035] = "Peixe sazonal: robalo de verão",
+	[-1001036] = "Peixe sazonal: Lula de Inverno",
+	[-1001037] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
+	[-1001038] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -35729,8 +35755,10 @@ localize(L.HEADER_NAMES, {
 	[-1000945] = "Налеты Фиракка",
 	[-1001006] = "Гарнизонная кампания",
 	[-1001034] = "Власть стихий",
-	[-1001035] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
-	[-1001036] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
+	[-1001035] = "Сезонная рыба: летний окунь",
+	[-1001036] = "Сезонная рыба: зимний кальмар",
+	[-1001037] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
+	[-1001038] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Эти предметы можно получить в награду Заданий эмиссаров или из припасов.",
@@ -39827,8 +39855,10 @@ localize(L.HEADER_NAMES, {
 	[-1000938] = "냄새 추적",
 	[-1000945] = "피락의 습격",
 	[-1001034] = "정령의 속박",
-	[-1001035] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
-	[-1001036] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
+	[-1001035] = "제철 생선: 여름 농어",
+	[-1001036] = "제철 생선: 겨울 오징어",
+	[-1001037] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
+	[-1001038] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -43502,8 +43532,10 @@ localize(L.HEADER_NAMES, {
 	[-1000945] = "菲莱克突袭",
 	[-1001006] = "要塞战役",
 	[-1001034] = "元素誓约",
-	[-1001035] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
-	[-1001036] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
+	[-1001035] = "时令鱼类：夏季鲈鱼",
+	[-1001036] = "时令鱼类：冬鱿鱼",
+	[-1001037] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
+	[-1001038] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "这些物品可以通过做使者任务或获得巅峰宝箱来获得。",

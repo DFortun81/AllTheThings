@@ -756,6 +756,8 @@ localize(L.HEADER_NAMES, {
 	[-1000904] = "Source IDs",
 	[-1000905] = GUILD .. " " .. TUTORIAL_TITLE20,
 	[-1001034] = "Elemental Bonds",
+	[-1001035] = "Seasonal Fish: Summer Bass",
+	[-1001036] = "Seasonal Fish: Winter Squid",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "A specific holiday may need to be active for you to complete the referenced Things within this section.",
@@ -968,6 +970,8 @@ localize(L.HEADER_ICONS, {
 	[-1000904] = "Interface/Icons/Inv_misc_questionmark",
 	[-1000905] = _.asset("Interface_Vendor"),
 	[-1001034] = "516313",
+	[-1001035] = "133889",
+	[-1001036] = "133899",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -988,6 +992,8 @@ localize(L.HEADER_EVENTS, {
 	[-1000282] = 372,
 	[-1000284] = 590,
 	[-1000872] = 446916,
+	[-1001035] = 133889,
+	[-1001036] = 133899,
 });
 -- Programmatic Event Scheduling
 _.Modules.Events.SetEventInformation(446916, {
@@ -997,6 +1003,16 @@ _.Modules.Events.SetEventInformation(590, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=5,["year"]=2023},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=5,["year"]=2023}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=7,["year"]=2024},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=7,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=11,["monthDay"]=16,["weekday"]=1,["year"]=2025},{["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=7,["weekday"]=1,["year"]=2025})
+});
+_.Modules.Events.SetEventInformation(133899, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=7,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=3,["year"]=2024}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=2,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=4,["year"]=2025}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026})
+});
+_.Modules.Events.SetEventInformation(133889, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=2,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=6,["year"]=2023}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=1,["year"]=2024}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025})
 });
 
 -- Filter Database Module
@@ -6361,6 +6377,8 @@ localize(L.HEADER_NAMES, {
 	[-1000862] = "Gladiador cataclísmico: Season 11",
 	[-1000870] = "La incursión trol",
 	[-1001034] = "Vínculos Elementales",
+	[-1001035] = "Pescado de temporada: lubina de verano",
+	[-1001036] = "Pescado de temporada: calamares de invierno",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -8129,6 +8147,8 @@ localize(L.HEADER_NAMES, {
 	[-1000862] = "Kataklysmischer Gladiator: Season 11",
 	[-1000870] = "Trollinvasion",
 	[-1001034] = "Elementare Bande",
+	[-1001035] = "Saisonfisch: Sommerbarsch",
+	[-1001036] = "Saisonfisch: Winterkalmar",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -9929,6 +9949,8 @@ localize(L.HEADER_NAMES, {
 	[-1000862] = "Gladiateur cataclysmique: Saison 11",
 	[-1000870] = "L’incursion trolle",
 	[-1001034] = "Liens élémentaires",
+	[-1001035] = "Poisson de saison : bar d'été",
+	[-1001036] = "Poisson de saison : calmar d'hiver",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -11699,6 +11721,8 @@ localize(L.HEADER_NAMES, {
 	[-1000862] = "Gladiatore Cataclismico: Season 11",
 	[-1000870] = "L'incursione dei Troll",
 	[-1001034] = "Legami Elementali",
+	[-1001035] = "Pesce di stagione: spigola estiva",
+	[-1001036] = "Pesce di stagione: calamari invernali",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -13124,6 +13148,8 @@ localize(L.HEADER_NAMES, {
 	[-1000862] = "Gladiador Cataclísmico: Season 11",
 	[-1000870] = "A incursão troll",
 	[-1001034] = "Prisão Elemental",
+	[-1001035] = "Peixe sazonal: robalo de verão",
+	[-1001036] = "Peixe sazonal: Lula de Inverno",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -14863,6 +14889,8 @@ localize(L.HEADER_NAMES, {
 	[-1000870] = "Вторжение троллей",
 	[-1000872] = "Пиратская буря",
 	[-1001034] = "Власть стихий",
+	[-1001035] = "Сезонная рыба: летний окунь",
+	[-1001036] = "Сезонная рыба: зимний кальмар",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -16863,6 +16891,8 @@ localize(L.HEADER_NAMES, {
 	[-1000862] = "격변한 검투사: Season 11",
 	[-1000870] = "트롤의 난입",
 	[-1001034] = "정령의 속박",
+	[-1001035] = "제철 생선: 여름 농어",
+	[-1001036] = "제철 생선: 겨울 오징어",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -18594,6 +18624,8 @@ localize(L.HEADER_NAMES, {
 	[-1000870] = "巨魔来袭",
 	[-1000905] = GUILD .. "商人",
 	[-1001034] = "元素誓约",
+	[-1001035] = "时令鱼类：夏季鲈鱼",
+	[-1001036] = "时令鱼类：冬鱿鱼",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",

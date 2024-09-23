@@ -339,6 +339,8 @@ HeaderAssignments = {
 	["Scenarios"] = -1000054,
 	["Scroll of Resurrection"] = -1000265,
 	["Season of Discovery"] = -1000273,
+	["Seasonal Fish: Summer Bass"] = -1001035,
+	["Seasonal Fish: Winter Squid"] = -1001036,
 	["Second Chest"] = -1000057,
 	["Secret 10.2.6"] = -1000867,
 	["Secrets"] = -1000035,
@@ -523,4 +525,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001035;
+NextHeaderID = -1001037;

@@ -1880,18 +1880,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 			["description"] = "Can be caught in open sea water in Azshara, Cape of Stranglethorn, Dustwallow Marsh and Tanaris.",
 			-- #endif
 		}),
-		i(13756, {	-- Raw Summer Bass
-			-- #if AFTER 4.0.3
-			["description"] = "Can be caught in open sea water in Blasted Lands and Swamp of Sorrows from 20th March to 22nd September.",
-			-- #endif
-		}),
-		i(13760, {	-- Raw Sunscale Salmon
-			-- #if AFTER 9.0.1
-			["description"] = "Can be caught in open inland waters in Blasted Lands, Eastern Plaguelands, Feralas, and Moonglade.",
-			-- #elseif AFTER 4.0.3
-			["description"] = "Can be caught in open inland waters in Blasted Lands, Eastern Plaguelands, Feralas, and Moonglade. Can only be caught during day time: 06:00/6am to 00:00/12am server time.",
-			-- #endif
-		}),
 		i(13889, {	-- Raw Whitescale Salmon
 			-- #if AFTER 4.0.3
 			["description"] = "Can be caught in open inland waters in Blasted Lands, Un'Goro Crater and Winterspring.",

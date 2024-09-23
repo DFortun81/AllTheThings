@@ -13,6 +13,10 @@ EVENTS = {
 	NOBLEGARDEN = 181,
 	PILGRIMS_BOUNTY = 404,
 	PIRATES_DAY = 398,
+	
+	-- Seasonal Fish
+	SEASONAL_FISH_SUMMER_BASS = 133889,	-- Generic Header [Crieve made this up, it's just supposed to be Unique!]
+	SEASONAL_FISH_WINTER_SQUID = 133899,	-- Generic Header [Crieve made this up, it's just supposed to be Unique!]
 
 	-- Weekly Events
 	KALUAK_FISHING_DERBY = 424,	-- Obtained from Wrath Classic
