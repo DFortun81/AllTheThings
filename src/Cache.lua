@@ -63,6 +63,12 @@ local CreateDataCache = function(name, skipMapCaching)
 	end
 	setmetatable(cache, fieldMeta);
 	cache.npcID = cache.creatureID;	-- identical cache as creatureID (probably deprecate npcID use eventually)
+
+	-- Fixing camelcase cache keys due to lowercase command usage
+	cache.flightpathID = cache.flightPathID
+	cache.runeforgepowerID = cache.runeforgePowerID
+	cache.azeriteessenceID = cache.azeriteEssenceID
+	cache.garrisonbuildingID = cache.garrisonBuildingID
 	return cache;
 end
 currentCache = CreateDataCache("default");
