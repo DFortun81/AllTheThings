@@ -776,7 +776,7 @@ local InformationTypes = {
 
 	CreateInformationType("achievementCategoryID", { text = L.ACHIEVEMENT_CATEGORY_ID }),
 	CreateInformationType("artifactID", { text = L.ARTIFACT_ID }),
-	CreateInformationType("azeriteEssenceID", { text = L.AZERITE_ESSENCE_ID }),
+	CreateInformationType("azeriteessenceID", { text = L.AZERITE_ESSENCE_ID }),
 	CreateInformationType("conduitID", { text = L.CONDUIT_ID }),
 	CreateInformationType("creatureID", { text = L.CREATURE_ID }),
 	CreateInformationType("crs", { text = L.CREATURES_LIST, ShouldDisplayInExternalTooltips = false,

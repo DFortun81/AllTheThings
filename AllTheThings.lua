@@ -816,8 +816,8 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateFaction(t.factionID, t);
 		elseif t.heirloomID then
 			t = app.CreateHeirloom(t.heirloomID, t);
-		elseif t.azeriteEssenceID or t.azeriteessenceID then
-			t = app.CreateAzeriteEssence(t.azeriteEssenceID or t.azeriteessenceID, t);
+		elseif t.azeriteessenceID then
+			t = app.CreateAzeriteEssence(t.azeriteessenceID, t);
 		elseif t.itemID or t.modItemID then
 			local itemID, modID, bonusID = app.GetItemIDAndModID(t.modItemID or t.itemID)
 			t.itemID = itemID
@@ -2436,7 +2436,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 					end
 					group = subgroup;
 				end
-			elseif paramA == "azeriteEssenceID" then
+			elseif paramA == "azeriteessenceID" then
 				local regroup = {};
 				local rank = ...;
 				if app.MODE_ACCOUNT then
@@ -3534,7 +3534,7 @@ app.ThingKeys = {
 	objectID = true,
 	encounterID = true,
 	artifactID = true,
-	azeriteEssenceID = true,
+	azeriteessenceID = true,
 	followerID = true,
 	factionID = true,
 	explorationID = true,
@@ -4171,7 +4171,7 @@ do
 local KeyMaps = setmetatable({
 	a = "achievementID",
 	achievement = "achievementID",
-	azessence = "azeriteEssenceID",
+	azessence = "azeriteessenceID",
 	battlepet = "speciesID",
 	c = "currencyID",
 	currency = "currencyID",
@@ -8270,7 +8270,7 @@ function app:GetDataCache()
 			app.CreateDynamicHeader("artifactID", SimpleNPCGroup(app.HeaderConstants.ARTIFACTS)),
 
 			-- Azerite Essences
-			app.CreateDynamicHeader("azeriteEssenceID", SimpleNPCGroup(app.HeaderConstants.AZERITE_ESSENCES)),
+			app.CreateDynamicHeader("azeriteessenceID", SimpleNPCGroup(app.HeaderConstants.AZERITE_ESSENCES)),
 
 			-- Battle Pets
 			app.CreateDynamicHeader("speciesID", {

@@ -558,7 +558,7 @@ namespace ATT
             { "Provided", new HashSet<string>
             {
                 "achID",
-                "azeriteEssenceID",
+                "azeriteessenceID",
                 "conduitID",
                 "difficultyID",
                 "factionID",
@@ -1268,7 +1268,7 @@ namespace ATT
                     return "an";
 
                 // tags which are accurate already
-                case "azeriteEssenceID":
+                case "azeriteessenceID":
                 case "buildingID":
                 case "class":
                 case "classID":

@@ -793,11 +793,11 @@ artifact = function(id, t)								-- Create an ARTIFACT Object
 end
 az = function(id, rank, t)								-- Create a AZERITE ESSENCE Object.
 	if t or type(rank) == "number" then
-		t = struct("azeriteEssenceID", id, t or {});
+		t = struct("azeriteessenceID", id, t or {});
 		t.rank = rank;
 		return t;
 	else
-		return struct("azeriteEssenceID", id, rank);
+		return struct("azeriteessenceID", id, rank);
 	end
 end
 azeriteEssence = az;									-- Create a AZERITE ESSENCE Object. (alternative shortcut)

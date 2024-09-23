@@ -66,7 +66,6 @@ local CreateDataCache = function(name, skipMapCaching)
 
 	-- Fixing camelcase cache keys due to lowercase command usage
 	cache.runeforgepowerID = cache.runeforgePowerID
-	cache.azeriteessenceID = cache.azeriteEssenceID
 	cache.garrisonbuildingID = cache.garrisonBuildingID
 	return cache;
 end
@@ -425,8 +424,8 @@ local fieldConverters = {
 	["artifactID"] = function(group, value)
 		CacheField(group, "artifactID", value);
 	end,
-	["azeriteEssenceID"] = function(group, value)
-		CacheField(group, "azeriteEssenceID", value);
+	["azeriteessenceID"] = function(group, value)
+		CacheField(group, "azeriteessenceID", value);
 	end,
 	["creatureID"] = cacheCreatureID,
 	["currencyID"] = function(group, value)

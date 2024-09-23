@@ -3,12 +3,12 @@ local _,app = ...;
 
 -- BFA File
 if app.GameBuildVersion < 80000 or not C_AzeriteEssence then
-	app.CreateAzeriteEssence = app.CreateUnimplementedClass("AzeriteEssence", "azeriteEssenceID");
+	app.CreateAzeriteEssence = app.CreateUnimplementedClass("AzeriteEssence", "azeriteessenceID");
 	return
 end
 
 -- Azerite Essence Lib
-local KEY, CACHE, SETTING = "azeriteEssenceID", "AzeriteEssenceRanks", "AzeriteEssences"
+local KEY, CACHE, SETTING = "azeriteessenceID", "AzeriteEssenceRanks", "AzeriteEssences"
 local C_AzeriteEssence_GetEssenceInfo, C_AzeriteEssence_GetEssenceHyperlink
 	= C_AzeriteEssence.GetEssenceInfo, C_AzeriteEssence.GetEssenceHyperlink;
 local AzeriteEssenceInfoCache = setmetatable({}, {
@@ -44,7 +44,7 @@ app.CreateAzeriteEssence = app.CreateClass("AzeriteEssence", KEY, {
 		return t.info.name;
 	end,
 	link = function(t)
-		local link = C_AzeriteEssence_GetEssenceHyperlink(t.azeriteEssenceID, t.rank);
+		local link = C_AzeriteEssence_GetEssenceHyperlink(t.azeriteessenceID, t.rank);
 		t.link = link;
 		return link;
 	end,

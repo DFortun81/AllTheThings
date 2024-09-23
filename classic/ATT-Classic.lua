@@ -1677,7 +1677,7 @@ local function SearchForLink(link)
 	elseif kind == "pettype" or kind == "pettypeID" then
 		kind = "petTypeID";
 	elseif kind == "azeriteessence" or kind == "azeriteessenceID" then
-		kind = "azeriteEssenceID";
+		kind = "azeriteessenceID";
 	end
 	local cache;
 	if id then
