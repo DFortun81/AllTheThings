@@ -365,7 +365,7 @@ app:CreateWindow("AchievementFinder", {
 				total = 0,
 				back = 1,
 				current = 0,
-				limit = 19451,
+				limit = 45000,
 				g = { },
 				OnUpdate = function(header)
 					local g = header.g;
