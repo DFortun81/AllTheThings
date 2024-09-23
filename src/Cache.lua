@@ -65,7 +65,6 @@ local CreateDataCache = function(name, skipMapCaching)
 	cache.npcID = cache.creatureID;	-- identical cache as creatureID (probably deprecate npcID use eventually)
 
 	-- Fixing camelcase cache keys due to lowercase command usage
-	cache.flightpathID = cache.flightPathID
 	cache.runeforgepowerID = cache.runeforgePowerID
 	cache.azeriteessenceID = cache.azeriteEssenceID
 	cache.garrisonbuildingID = cache.garrisonBuildingID
@@ -443,8 +442,8 @@ local fieldConverters = {
 		CacheField(group, "explorationID", value);
 	end,
 	["factionID"] = cacheFactionID,
-	["flightPathID"] = function(group, value)
-		CacheField(group, "flightPathID", value);
+	["flightpathID"] = function(group, value)
+		CacheField(group, "flightpathID", value);
 	end,
 	["followerID"] = function(group, value)
 		CacheField(group, "followerID", value);

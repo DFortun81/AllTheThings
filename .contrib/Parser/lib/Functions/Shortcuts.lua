@@ -1015,7 +1015,7 @@ faction = function(id, t)								-- Create a FACTION Object
 	return struct("factionID", id, t);
 end
 flightpath = function(id, t)							-- Create a FLIGHT PATH Object
-	return struct("flightPathID", id, t);
+	return struct("flightpathID", id, t);
 end
 fp = flightpath;										-- Create a FLIGHT PATH Object (Alternative)
 filter = function(id, t)								-- Create a FILTER Object

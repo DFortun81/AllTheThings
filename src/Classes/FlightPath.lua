@@ -35,7 +35,7 @@ end
 
 -- Flight Path Lib
 do
-	local KEY, CACHE = "flightPathID", "FlightPaths"
+	local KEY, CACHE = "flightpathID", "FlightPaths"
 	app.CreateFlightPath = app.CreateClass("FlightPath", KEY, {
 		name = function(t)
 			local id = t[KEY]

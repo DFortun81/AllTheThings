@@ -146,7 +146,7 @@ namespace ATT
                 //{ "itemID", new Dictionary<long, bool>() },
                 //{ "headerID", new Dictionary<long, bool>() },
                 //{ "factionID", new Dictionary<long, bool>() },
-                //{ "flightPathID", new Dictionary<long, bool>() },
+                //{ "flightpathID", new Dictionary<long, bool>() },
                 //{ "npcID", new Dictionary<long, bool>() },
                 //{ "objectID", new Dictionary<long, bool>() },
                 //{ "questID", new Dictionary<long, bool>() },
@@ -159,7 +159,7 @@ namespace ATT
             { "itemID", new Dictionary<long, List<IDictionary<string, object>>>() },
             { "headerID", new Dictionary<long, List<IDictionary<string, object>>>() },
             { "factionID", new Dictionary<long, List<IDictionary<string, object>>>() },
-            { "flightPathID", new Dictionary<long, List<IDictionary<string, object>>>() },
+            { "flightpathID", new Dictionary<long, List<IDictionary<string, object>>>() },
             { "npcID", new Dictionary<long, List<IDictionary<string, object>>>() },
             { "objectID", new Dictionary<long, List<IDictionary<string, object>>>() },
             { "questID", new Dictionary<long, List<IDictionary<string, object>>>() },
@@ -562,7 +562,7 @@ namespace ATT
                 "conduitID",
                 "difficultyID",
                 "factionID",
-                "flightPathID",
+                "flightpathID",
                 "followerID",
                 "instanceID",
                 "heirloomUnlockID",
@@ -1288,7 +1288,7 @@ namespace ATT
                 case "eventID":
                 case "expansionID":
                 case "factionID":
-                case "flightPathID":
+                case "flightpathID":
                 case "followerID":
                 case "heirloomID":
                 case "hideText":

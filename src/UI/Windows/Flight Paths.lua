@@ -24,7 +24,7 @@ app:CreateWindow("Flight Paths", {
 				local g = data.g;
 				if #g < 1 then
 					local fps = {};
-					for i,_ in pairs(app.SearchForFieldContainer("flightPathID")) do
+					for i,_ in pairs(app.SearchForFieldContainer("flightpathID")) do
 						if not fps[i] then
 							local fp = app.CreateFlightPath(tonumber(i));
 							for j,o in ipairs(_) do

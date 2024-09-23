@@ -238,7 +238,7 @@ end
 local function GetProgressTextForTooltip(data)
 	local iconOnly = app.Settings:GetTooltipSetting("ShowIconOnly");
 	if iconOnly then return GetProgressTextForRow(data); end
-	
+
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
 		return GetProgressColorText(data.progress or 0, data.total);
 	elseif data.collectible or (data.spellID and data.itemID and data.trackable) then
@@ -1021,7 +1021,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB, group)
 		local FilterUnobtainable, FilterCharacter, FirstParent
 			= app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
 		local abbrevs = L["ABBREVIATIONS"];
-		
+
 		-- Include Cost Sources
 		local sourceGroups = group;
 		if #sourceGroups == 0 and (paramA == "itemID" or paramA == "currencyID") then
@@ -1037,7 +1037,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB, group)
 				sourceGroups = regroup;
 			end
 		end
-		
+
 		for _,j in ipairs(sourceGroups) do
 			parent = j.parent;
 			if parent and not FirstParent(j, "hideText") and parent.parent
@@ -1111,7 +1111,7 @@ app.Settings.CreateInformationType("SourceLocations", {
 		["expansionID"] = false,
 		["explorationID"] = true,
 		["factionID"] = true,
-		["flightPathID"] = true,
+		["flightpathID"] = true,
 		["headerID"] = false,
 		["itemID"] = true,
 		["speciesID"] = true,
@@ -1280,7 +1280,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	group.working = nil;
 
 	-- For Creatures that are inside of an instance, we only want the data relevant for the instance.
-	
+
 	-- Determine if this is a search for an item
 	local itemID, itemString;
 	if rawlink then
@@ -1316,7 +1316,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	elseif paramA == "itemID" then
 		itemID = paramB;
 	end
-	
+
 	-- Find the most accessible version of the thing we're looking for.
 	if paramA == "spellID" and not itemID then
 		-- We want spells to have higher preference for the spell itself rather than the recipe.
@@ -1337,7 +1337,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			break;
 		end
 	end
-	
+
 	-- Create a list of sources
 	if isTopLevelSearch then
 		AddSourceLinesForTooltip(tooltipInfo, paramA, paramB, group);
@@ -1442,7 +1442,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			end
 		end
 	end
-		
+
 	-- Only need to build/update groups from the top level
 	if isTopLevelSearch and group.g then
 		group.total = 0;
@@ -1456,7 +1456,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			end
 		end
 	end
-	
+
 	if isTopLevelSearch then
 		-- Add various extra field info if enabled in settings
 		group.itemString = itemString
@@ -1467,7 +1467,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	if app.AddSourceInformation(group.sourceID, tooltipInfo, group) then
 		working = true;
 	end
-	
+
 	if app.Settings:GetTooltipSetting("SummarizeThings") then
 		-- Contents
 		if group.g and #group.g > 0 then
@@ -1501,7 +1501,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				end
 			end
 		end
-		
+
 		if itemID then
 			local reagentCache = app.GetDataSubMember("Reagents", itemID);
 			if reagentCache then
@@ -1642,7 +1642,7 @@ local function SearchForLink(link)
 			end
 		end
 	end
-	
+
 	---@diagnostic disable-next-line: undefined-field
 	local kind, id = (":"):split(link);
 	kind = kind:lower():gsub("id", "ID");
@@ -1843,7 +1843,7 @@ function app:GetDataCache()
 				g = app.Categories.ExpansionFeatures
 			});
 		end
-		
+
 		-- Character
 		if app.Categories.Character then
 			local db = {};
@@ -1853,7 +1853,7 @@ function app:GetDataCache()
 			db.icon = app.asset("Category_ItemSets");
 			tinsert(g, db);
 		end
-		
+
 		-- In-Game Store
 		if app.Categories.InGameShop then
 			tinsert(g, app.CreateNPC(app.HeaderConstants.IN_GAME_SHOP, {
@@ -1880,14 +1880,14 @@ function app:GetDataCache()
 				isPromotionCategory = true
 			});
 		end
-		
+
 		-- Season of Discovery
 		if app.Categories.SeasonOfDiscovery then
 			for i,o in ipairs(app.Categories.SeasonOfDiscovery) do
 				tinsert(g, o);
 			end
 		end
-		
+
 		-- Skills
 		if app.Categories.Skills then
 			tinsert(g, {
@@ -1907,7 +1907,7 @@ function app:GetDataCache()
 				isEventCategory = true,
 			});
 		end
-		
+
 		-- Dynamic Categories
 		if app.Windows then
 			local keys,sortedList = {},{};
@@ -3441,7 +3441,7 @@ app.AddEventHandler("OnReady", function()
 			for j,nodeData in ipairs(allNodeData) do
 				if nodeData.name then
 					AllTheThingsAD.LocalizedFlightPathNames[nodeData.nodeID] = nodeData.name;
-					if #SearchForField("flightPathID", nodeData.nodeID) < 1 then
+					if #SearchForField("flightpathID", nodeData.nodeID) < 1 then
 						newNodes[nodeData.nodeID] = nodeData.name;
 						anyNew = true;
 					end
@@ -3460,7 +3460,7 @@ end);
 app.CacheFlightPathDataForMap = function(mapID, nodes)
 	local count = 0;
 	local temp = {};
-	for nodeID,_ in pairs(SearchForFieldContainer("flightPathID")) do
+	for nodeID,_ in pairs(SearchForFieldContainer("flightpathID")) do
 		for i,node in ipairs(_) do
 			if not node.u and node.coords and node.coords[1][3] == mapID then
 				if not node.r or node.r == app.FactionID then
@@ -3511,8 +3511,8 @@ app.CacheFlightPathDataForTarget = function(nodes)
 			local searchResults = SearchForField("creatureID", npcID);
 			if searchResults and #searchResults > 0 then
 				for i,group in ipairs(searchResults) do
-					if group.flightPathID and not group.nmr and not group.nmc and (not group.u or group.u > 1) then
-						nodes[group.flightPathID] = true;
+					if group.flightpathID and not group.nmr and not group.nmc and (not group.u or group.u > 1) then
+						nodes[group.flightpathID] = true;
 						count = count + 1;
 					end
 				end
@@ -3522,12 +3522,12 @@ app.CacheFlightPathDataForTarget = function(nodes)
 	end
 	return 0;
 end
-app.CreateFlightPath = app.CreateClass("FlightPath", "flightPathID", {
+app.CreateFlightPath = app.CreateClass("FlightPath", "flightpathID", {
 	["text"] = function(t)
 		return t.name;
 	end,
 	["name"] = function(t)
-		return AllTheThingsAD.LocalizedFlightPathNames[t.flightPathID] or "Visit the Flight Master to cache.";
+		return AllTheThingsAD.LocalizedFlightPathNames[t.flightpathID] or "Visit the Flight Master to cache.";
 	end,
 	["icon"] = function(t)
 		local r = t.r;
@@ -3547,8 +3547,8 @@ app.CreateFlightPath = app.CreateClass("FlightPath", "flightPathID", {
 		return app.Settings.Collectibles.FlightPaths;
 	end,
 	["collected"] = function(t)
-		if app.CurrentCharacter.FlightPaths[t.flightPathID] then return 1; end
-		if app.Settings.AccountWide.FlightPaths and ATTAccountWideData.FlightPaths[t.flightPathID] then return 2; end
+		if app.CurrentCharacter.FlightPaths[t.flightpathID] then return 1; end
+		if app.Settings.AccountWide.FlightPaths and ATTAccountWideData.FlightPaths[t.flightpathID] then return 2; end
 		if t.altQuests then
 			for i,questID in ipairs(t.altQuests) do
 				if IsQuestFlaggedCompleted(questID) then
@@ -3578,7 +3578,7 @@ app.events.GOSSIP_SHOW = function()
 		for nodeID,_ in pairs(knownNodeIDs) do
 			nodeID = tonumber(nodeID);
 			if not app.CurrentCharacter.FlightPaths[nodeID] then
-				local searchResults = SearchForField("flightPathID", nodeID);
+				local searchResults = SearchForField("flightpathID", nodeID);
 				app.SetCollected(#searchResults > 0 and searchResults[1], "FlightPaths", nodeID, true);
 				any = true;
 			end
@@ -3609,7 +3609,7 @@ app.events.TAXIMAP_OPENED = function()
 	for nodeID,_ in pairs(knownNodeIDs) do
 		nodeID = tonumber(nodeID);
 		if not app.CurrentCharacter.FlightPaths[nodeID] then
-			local searchResults = SearchForField("flightPathID", nodeID);
+			local searchResults = SearchForField("flightpathID", nodeID);
 			app.SetCollected(#searchResults > 0 and searchResults[1], "FlightPaths", nodeID, true);
 			any = true;
 		end
@@ -4803,12 +4803,12 @@ app.AddEventHandler("OnReady", function()
 			end
 			return oldAddWaypoint(self, m, x, y, opts, root, ...);
 		end
-		
+
 		local function AreAnyATTWaypointsPersisted()
 			-- If there are any persisted waypoints, recover their tooltips
 			local waypointsByMapID = tomTom.waypoints;
 			if not waypointsByMapID then return false; end
-			
+
 			local any = false;
 			for mapID,waypointsByMap in pairs(waypointsByMapID) do
 				for waypointUID,waypoint in pairs(waypointsByMap) do
@@ -4853,12 +4853,12 @@ end);
 		text = "|Haddon:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
 		return text;
 	end
-	
+
 	function app:WaypointLink(mapID, x, y, text)
 		return "|cffffff00|Hworldmap:" .. mapID .. ":" .. math_floor(x * 10000) .. ":" .. math_floor(y * 10000)
 			.. "|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a" .. (text or "") .. "]|h|r";
 	end
-	
+
 	-- Stores some information for use by a report popup by id
 	local reports = {};
 	function app:SetupReportDialog(id, reportMessage, text)
@@ -4890,7 +4890,7 @@ local ADDON_LOADED_HANDLERS = {
 			AllTheThingsAD = { };
 			_G["AllTheThingsAD"] = AllTheThingsAD;
 		end
-		
+
 		-- Cache the Localized Category Data
 		AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
 		app.CategoryNames = nil;
@@ -5118,10 +5118,10 @@ local ADDON_LOADED_HANDLERS = {
 		app.SetCollectedForSubType = SetCollectedForSubType;
 		app.SetBatchAccountCached = SetBatchAccountCached;
 		app.SetBatchCached = SetBatchCached;
-		
+
 		-- Notify Event Handlers that Saved Variable Data is available.
 		app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, accountWideSettings);
-		
+
 		-- Check to see if we have a leftover ItemDB cache
 		GetDataMember("GroupQuestsByGUID", {});
 
@@ -5144,7 +5144,7 @@ local ADDON_LOADED_HANDLERS = {
 
 		-- Wipe the Debugger Data
 		AllTheThingsDebugData = nil;
-		
+
 		-- If we have RWP data on this character, let's update that to use Transmog.
 		for guid,character in pairs(characterData) do
 			local characterRWP = character.RWP;
@@ -5172,7 +5172,7 @@ local ADDON_LOADED_HANDLERS = {
 				if not any then character.RWP = nil; end
 			end
 		end
-		
+
 		-- Refresh Collections
 		app.RefreshCollections();
 
@@ -5192,7 +5192,7 @@ app.AddEventHandler("OnStartupDone", function()
 
 	-- Execute the OnReady handlers.
 	app.HandleEvent("OnReady");
-	
+
 	-- Mark that we're ready now!
 	app.IsReady = true;
 end);

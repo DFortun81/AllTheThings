@@ -77,7 +77,7 @@ local CachedMapData = setmetatable({}, {
 			local function MergeIntoHeader(headerID, o)
 				MergeObject(headers[headerID].g, o);
 			end
-			
+
 			-- If there's a timerunning event going on...
 			local timerunningSeasonEventID = GetTimerunningSeasonEventID();
 			if timerunningSeasonEventID and app.Settings:GetTooltipSetting("Filter:MiniList:Timerunning") then
@@ -89,7 +89,7 @@ local CachedMapData = setmetatable({}, {
 				end
 				results = refined;
 			end
-			
+
 			local header = {};
 			header.mapID = mapID;
 			header.g = groups;
@@ -138,7 +138,7 @@ local CachedMapData = setmetatable({}, {
 					MergeIntoHeader(app.HeaderConstants.FACTIONS, clone);
 				elseif key == "explorationID" then
 					MergeIntoHeader(app.HeaderConstants.EXPLORATION, clone);
-				elseif key == "flightPathID" then
+				elseif key == "flightpathID" then
 					MergeIntoHeader(app.HeaderConstants.FLIGHT_PATHS, clone);
 				elseif key == "itemID" or key == "spellID" then
 					if GetRelativeField(group, "headerID", app.HeaderConstants.ZONE_DROPS) then
@@ -192,7 +192,7 @@ local CachedMapData = setmetatable({}, {
 					end
 				end
 			end
-			
+
 			for i,o in ipairs(header.g) do
 				if o.key == "headerID" then
 					o.SortType = SortTypeByHeaderID[o.headerID];

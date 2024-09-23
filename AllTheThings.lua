@@ -796,8 +796,8 @@ local function CreateObject(t, rootOnly)
 			t = app.CreateSpecies(t.speciesID, t);
 		elseif t.objectID then
 			t = app.CreateObject(t.objectID, t);
-		elseif t.flightPathID or t.flightpathID then
-			t = app.CreateFlightPath(t.flightPathID or t.flightpathID, t);
+		elseif t.flightpathID then
+			t = app.CreateFlightPath(t.flightpathID, t);
 		elseif t.followerID then
 			t = app.CreateFollower(t.followerID, t);
 		elseif t.illusionID then
@@ -3513,7 +3513,7 @@ end
 -- Keys for groups which are in-game 'Things'
 app.ThingKeys = {
 	-- filterID = true,
-	flightPathID = true,
+	flightpathID = true,
 	-- professionID = true,
 	-- categoryID = true,
 	-- mapID = true,
@@ -4176,7 +4176,7 @@ local KeyMaps = setmetatable({
 	c = "currencyID",
 	currency = "currencyID",
 	enchant = "spellID",
-	fp = "flightPathID",
+	fp = "flightpathID",
 	follower = "followerID",
 	garrbuilding = "garrisonBuildingID",
 	garrfollower = "followerID",
@@ -8305,7 +8305,7 @@ function app:GetDataCache()
 			}),
 
 			-- Flight Paths
-			app.CreateDynamicHeader("flightPathID", {
+			app.CreateDynamicHeader("flightpathID", {
 				name = L.FLIGHT_PATHS,
 				icon = app.asset("Category_FlightPaths")
 			}),
@@ -9217,7 +9217,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 			-- [app.HeaderConstants.COMMON_BOSS_DROPS] = true,
 			-- [app.HeaderConstants.EMISSARY_QUESTS] = true,
 			-- [app.HeaderConstants.FACTIONS] = "factionID",
-			-- [app.HeaderConstants.FLIGHT_PATHS] = "flightPathID",
+			-- [app.HeaderConstants.FLIGHT_PATHS] = "flightpathID",
 			-- [app.HeaderConstants.HOLIDAYS] = "eventID",
 			-- [app.HeaderConstants.PROFESSIONS] = "professionID",
 			-- [app.HeaderConstants.PVP] = true,
