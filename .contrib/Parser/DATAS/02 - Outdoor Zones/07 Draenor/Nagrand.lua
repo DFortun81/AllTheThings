@@ -2627,10 +2627,10 @@ root(ROOTS.Zones, {
 
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.WOD, {
-		q(37250, { ["name"] = "Krog the Dominator's Hammer" }),	-- Broken Precipice POI Tracking Quest - triggers after finding Krog the Dominator's Hammer (achievementID 9610)
-		q(37251, { ["name"] = "Thak the Conqueror's Bust" }),	-- Broken Precipice POI Tracking Quest - triggers after finding Thak the Conqueror's Bust (achievementID 9610)
-		q(37252, { ["name"] = "Thurg the Slave Lord's Necklace" }),	-- Broken Precipice POI Tracking Quest - triggers after finding Thurg the Slave Lord's Necklace (achievementID 9610)
-		q(37253, { ["name"] = "Gorg the Subjugator's Idol" }),	-- Broken Precipice POI Tracking Quest - triggers after finding Gorg the Subjugator's Idol (achievementID 9610)
+		hqt(37250, name(HEADERS.AchCriteria, 9610.01)),	-- Krog the Dominator's Hammer
+		hqt(37251, name(HEADERS.AchCriteria, 9610.02)),	-- Thak the Conqueror's Bust
+		hqt(37252, name(HEADERS.AchCriteria, 9610.03)),	-- Thurg the Slave Lord's Necklace
+		hqt(37253, name(HEADERS.AchCriteria, 9610.04)),	-- Gorg the Subjugator's Idol
 	}),
 });
 root(ROOTS.HiddenQuestTriggers, {
