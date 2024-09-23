@@ -318,8 +318,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			header(HEADERS.AchCriteria, 40636.01, {	-- Rak-Ush Swarmery
 				q(83325, {	-- Bountiful Beetles
 					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
-					["provider"] = { "n", 224729 },	-- Anub'okki
-					["coord"] = { 55.9, 42.1, AZJ_KAHET },
+					["providers"] = {
+						{ "n", 224729 },	-- Anub'okki
+						{ "n", 229184 },	-- Aspirant Kiipka
+					},
+					["coord"] = { 55.9, 42.4, AZJ_KAHET },
 					["isBreadcrumb"] = true,
 				}),
 				q(79119, {	-- It's Rough to Be a Bug!

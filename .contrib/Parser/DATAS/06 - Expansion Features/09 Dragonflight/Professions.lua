@@ -157,7 +157,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 			q(69979, {	-- A Worthy Hunt
 				["sourceQuests"] = { 69946 },	-- The Master of Their Craft
 				["provider"] = { "n", 193110 },	-- Khadin
-				["coord"] = { 51.7, 7.33, OHNAHRAN_PLAINS },
+				["coord"] = { 51.7, 33, OHNAHRAN_PLAINS },
 				["g"] = {
 					i(191784),	-- Dragon Shard of Knowledge
 					i(198137),	-- Esoteric Dragon Shard of Knowledge

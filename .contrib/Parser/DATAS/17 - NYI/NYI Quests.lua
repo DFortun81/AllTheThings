@@ -8868,6 +8868,8 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+			q(80950),	-- First Craft: Deepfury Hide
+			q(81651),	-- Delver's Guide to Delves
 			q(82199),	-- TWW Alpha/Beta Questauren Isle of Dorn skip
 			q(82200),	-- TWW Alpha/Beta Questauren Ringing Deeps skip
 			q(82201),	-- TWW Alpha/Beta Questauren Hallowfall skip
@@ -8886,9 +8888,8 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(82383),	-- (Bunch of Rocks i(226147 unsorted quests showing on item)
 			q(82385),	-- (Bunch of Rocks i(226147 unsorted quests showing on item)
 			q(83023),	-- Short-Supply Reward
-			q(84086),	--
-			q(81651),	-- Delver's Guide to Delves
-			q(80950),	-- First Craft: Deepfury Hide
+			q(83345),	-- A Call to Battle
+			q(84086),	-- A Rare Necessity
 		})),
 	}),
 }));

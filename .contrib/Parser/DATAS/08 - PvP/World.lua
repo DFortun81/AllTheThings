@@ -275,13 +275,13 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 			ach(40096, {	-- Sparking Battle (x20)
 				i(225969),	-- Forged Flag of Victory (TOY!)
 			}),
-			ach(40089),	-- Spoiled Goods
-			ach(40090),	-- Spoiled Goods
+			ach(40089),	-- Spoiled Goods (1x)
+			ach(40090),	-- Spoiled Goods (10x)
 			ach(40087),	-- Unbound Battle (automated)
 			ach(40465),	-- Unbound Bounty (automated)
-			ach(40466),	-- Unbound Glory
-			ach(40467),	-- Unbound Glory
-			ach(40468),	-- Unbound Glory
+			ach(40466),	-- Unbound Glory (10x)
+			ach(40467),	-- Unbound Glory (25x)
+			ach(40468),	-- Unbound Glory (5x)
 		}),
 		n(TREASURES, {
 			o(433370,{	-- War Supply Chest
