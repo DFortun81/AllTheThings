@@ -1,0 +1,51 @@
+﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	[85562] = {
+		readable = "Ironband's Strongbox",
+		model = 196976,
+		text = {
+			en = "Ironband's Strongbox",
+			es = "Caja fuerte de Vetaferro",
+			de = "Eisenbands Geldkassette",
+			fr = "Coffre de Baguefer",
+			it = "Ironband's Strongbox",
+			pt = "[Ironband's Strongbox]",
+			ru = "Сейф Сталекрута",
+			ko = "아이언밴드의 금고",
+			cn = "[Ironband's Strongbox]",
+			tw = "Ironband's Strongbox",
+		},
+	},
+	[89634] = {
+		readable = "Iron Coral",
+		model = 201354,
+		text = {
+			en = "Iron Coral",
+			es = "Coral férreo",
+			de = "Eisenkoralle",
+			fr = "Corail de fer",
+			it = "Iron Coral",
+			pt = "Coral de Ferro",
+			ru = "Железный коралл",
+			ko = "철산호",
+			cn = "铁珊瑚",
+			tw = "Iron Coral",
+		},
+	},
+	[102984] = {
+		readable = "Bink's Toolbox",
+		model = 196976,
+		text = {
+			en = "Bink's Toolbox",
+			es = "Caja de herramientas de Bink",
+			de = "Binks Werkzeugkasten",
+			fr = "Boîte à outils de Bink",
+			it = "Bink's Toolbox",
+			pt = "Caixa de Ferramentas de Bink",
+			ru = "Ящик для инструментов Бинк",
+			ko = "빙크의 연장통",
+			cn = "彬克的工具箱",
+			tw = "Bink's Toolbox",
+		},
+	},
+})
+do ObjectDB[objectID] = objectData; end
