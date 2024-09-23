@@ -2231,14 +2231,14 @@ end
 local GetRawField = app.GetRawField
 local SourceSearcher = setmetatable({
 	itemID = function(field, id)
-		local results = SearchForObject(field, id, "field", true)
+		local results = SearchForObject("itemID", id, "field", true)
 		-- Original logic did not include cost matches, then I added cost matches when revising the logic
 		-- I'm not sure on why that should be the case... so removing for now
 		-- local costResults = GetRawField("itemIDAsCost", id)
 		-- if results or costResults then return ArrayAppend({}, results, costResults) end
 		if results then return results end
 		local baseItemID = GetItemIDAndModID(id)
-		results = SearchForObject(field, baseItemID, "field", true)
+		results = SearchForObject("itemID", baseItemID, "field", true)
 		-- costResults = GetRawField("itemIDAsCost", baseItemID)
 		-- if results or costResults then return ArrayAppend({}, results, costResults) end
 		return results
@@ -2254,6 +2254,9 @@ local SourceSearcher = setmetatable({
 		return GetRawField
 	end
 })
+-- Some key-based Searches should simply use a different field
+SourceSearcher.mountmodID = SourceSearcher.itemID
+SourceSearcher.heirloomID = SourceSearcher.itemID
 
 local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 	-- Create a list of sources
@@ -2359,30 +2362,30 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 	end
 end
 app.AddSourceLinesForTooltip = AddSourceLinesForTooltip
-app.Settings.CreateInformationType("SourceLocations", {
-	priority = 2.7,
-	text = "Source Locations",
-	HideCheckBox = true,
-	keys = {
-		["autoID"] = false,
-		["creatureID"] = true,
-		["expansionID"] = false,
-		["explorationID"] = true,
-		["factionID"] = true,
-		["flightPathID"] = true,
-		["headerID"] = false,
-		["itemID"] = true,
-		["speciesID"] = true,
-		["titleID"] = true,
-	},
-	Process = function(t, data, tooltipInfo)
-		local key, id = data.key, data[data.key];
-		if key and id and t.keys[key] then
-			if tooltipInfo.hasSourceLocations then return; end
-			AddSourceLinesForTooltip(tooltipInfo, key, id --[[, app.SearchForField(key, id)]]);
+app.AddEventHandler("OnLoad", function()
+	local SourceShowKeys = app.CloneDictionary(app.ThingKeys, {
+		-- Specific keys which we don't want to list Sources but are considered Things
+		npcID = false,
+		creatureID = false,
+		encounterID = false,
+		explorationID = false,
+	})
+	app.Settings.CreateInformationType("SourceLocations", {
+		priority = 2.7,
+		text = "Source Locations",
+		HideCheckBox = true,
+		Process = function(t, reference, tooltipInfo)
+			local key = reference.key
+			local id = reference[key]
+			if key and id and SourceShowKeys[key] then
+				if tooltipInfo.hasSourceLocations then return end
+				if AddSourceLinesForTooltip(tooltipInfo, key, id) then
+					reference.working = true
+				end
+			end
 		end
-	end
-})
+	})
+end)
 
 local function GetSearchResults(method, paramA, paramB, ...)
 	-- app.PrintDebug("GetSearchResults",method,paramA,paramB,...)
@@ -2763,9 +2766,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		--- Start of tooltip code migration
 		local tooltipInfo = {}
 		-- Add various text to the group now that it has been consolidated from all sources
-		if AddSourceLinesForTooltip(tooltipInfo, paramA, paramB) then
-			working = true
-		end
 
 		-- Shared Appearances and Stuff
 		if itemID then
@@ -3519,12 +3519,14 @@ app.ThingKeys = {
 	creatureID = true,
 	currencyID = true,
 	itemID = true,
+	toyID = true,
 	sourceID = true,
 	speciesID = true,
 	recipeID = true,
 	runeforgePowerID = true,
 	spellID = true,
 	mountID = true,
+	mountmodID = true,
 	illusionID = true,
 	questID = true,
 	objectID = true,
