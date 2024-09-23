@@ -1099,7 +1099,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		},
 	}),
 	m(ZEKVIRS_LAIR, {
-		["icon"] = [[~_.asset("Delves_Shadow")]],
+		["icon"] = [[~_.asset("Delves_Nerubian")]],
 		["coord"] = { 6.7, 33.9, NERUBAR },
 		["g"] = {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 } }, {

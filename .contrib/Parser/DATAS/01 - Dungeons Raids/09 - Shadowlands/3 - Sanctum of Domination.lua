@@ -22,33 +22,33 @@ local EncounterToCRS = {
 	[EYE] = {
 		175725,	-- Eye of the Jailer
 		176531,	-- Deathseeker Eye
-	 },
+	},
 	[NINE] = {
 		177094,	-- Signe
 		177095,	-- Kyra
 		175726,	-- Skyja
-	 },
+	},
 	[NERZHUL] = {
 		175729,	-- Remnant of Ner'zhul
-	 },
+	},
 	[DORMAZAIN] = {
 		175727,	-- Soulrender Dormazain
 	},
 	[PAINSMITH] = {
 		176523,	-- Painsmith Raznal
-	 },
+	},
 	[GUARDIAN] = {
 		175731,	-- Guardian of the First Ones
-	 },
+	},
 	[FATESCRIBE] = {
 		175730,	-- Fatescribe Roh-Kalo
-	 },
+	},
 	[KELTHUZAD] = {
 		175559,	-- Kel'Thuzad
 	},
 	[SYLVANAS] = {
 		175732,	-- Sylvanas Windrunner
-	 },
+	},
 };
 
 ------ All Bosses crs ------
@@ -84,7 +84,7 @@ local EncounterToLoot = {
 		i(186296),	-- Mawsworn Eviscerator's Cuirass
 		i(186403),	-- Stygian Lance of Passage
 		i(186423),	-- Titanic Ocular Gland
-	 },
+	},
 	[NINE] = {
 		i(186313),	-- Agatha's Gothic Greaves
 		i(186307),	-- Aradne's Lancer Legguards
@@ -98,7 +98,7 @@ local EncounterToLoot = {
 		i(186385),	-- Signe's Sonorous Scramaseax
 		i(186384),	-- Skyja's Revenant Fury
 		i(186290),	-- Sworn Oath of the Nine
-	 },
+	},
 	[NERZHUL] = {
 		i(186386),	-- Betrayer's Shadowspike
 		i(186292),	-- Cap of Writhing Malevolence
@@ -111,7 +111,7 @@ local EncounterToLoot = {
 		i(186428),	-- Shadowed Orb of Torment
 		i(186378),	-- Weathered Talisman of the Shadowmoon
 		i(186427),	-- Whispering Shard of Power
-	 },
+	},
 	[DORMAZAIN] = {
 		i(186294),	-- Agonizing Spiked Belt
 		i(186289),	-- Cloak of Scarred Honor
@@ -139,7 +139,7 @@ local EncounterToLoot = {
 		i(186391),	-- Shadowsteel Demoralizer
 		i(186341),	-- Shadowsteel Facecage
 		i(186430),	-- Tormented Rack Fragment
-	 },
+	},
 	[GUARDIAN] = {
 		i(186347),	-- Ancient Colossus Chassis
 		i(186413),	-- Directional Meltdown Projector
@@ -154,7 +154,7 @@ local EncounterToLoot = {
 		i(186374),	-- Self-Replicating Tissue
 		i(186393),	-- Torch of Eternal Knowledge
 		i(186363),	-- Unstable Energizer Boots
-	 },
+	},
 	[FATESCRIBE] = {
 		i(186352),	-- Binding of Dark Destinies
 		i(186435),	-- Carved Ivory Keepsake
@@ -168,7 +168,7 @@ local EncounterToLoot = {
 		i(186376),	-- Oscillating Ouroboros
 		i(186419),	-- Record of Collapsing Realities
 		i(186434),	-- Weave of Warped Fates
-	 },
+	},
 	[KELTHUZAD] = {
 		i(186365),	-- Bands of the Fallen House
 		i(186338),	-- Ceremonial Construct Clasp
@@ -206,7 +206,7 @@ local EncounterToLoot = {
 		i(186325),	-- Veil of the Banshee Queen
 		i(186332),	-- Windrunner's Baldric
 		i(186334),	-- Witherheart Studded Breastplate
-	 },
+	},
 }
 
 ------ Zone Drops ------

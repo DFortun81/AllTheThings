@@ -1,6 +1,47 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
+LEECHING_VAULTS_HEADER = createHeader({
+	readable = "Leeching Vaults",
+	icon = 3614361,
+	text = {
+		en = "Leeching Vaults",
+	},
+	description = {
+		en = "The first LFR wing, featuring Huntsman Altimor, Hungering Destroyer, and Lady Inerva Darkvein.",
+	},
+});
+RELIQUARY_OF_OPULENCE_HEADER = createHeader({
+	readable = "Reliquary of Opulence",
+	icon = 3614361,
+	text = {
+		en = "Reliquary of Opulence",
+	},
+	description = {
+		en = "The second LFR wing, featuring Artificer Xy'mox, Sun King's Salvation, and The Council of Blood.",
+	},
+});
+BLOOD_FROM_STONE_HEADER = createHeader({
+	readable = "Blood from Stone",
+	icon = 3614361,
+	text = {
+		en = "Blood from Stone",
+	},
+	description = {
+		en = "The third LFR wing, featuring Shriekwing, Sludgefist, and Stone Legion Generals.",
+	},
+});
+AUDIENCE_WITH_ARROGANCE_HEADER = createHeader({
+	readable = "Audience with Arrogance",
+	icon = 3614361,
+	text = {
+		en = "Audience with Arrogance",
+	},
+	description = {
+		en = "The fourth LFR wing, featuring Sire Denathrius.",
+	},
+});
+
 local MYTHIC = 92;
 local HEROIC = 91;
 local NORMAL = 89;
@@ -661,53 +702,61 @@ root(ROOTS.Instances, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDE
 			-- #endif
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroups(bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH, REMOVED_10_0_2_LAUNCH, ADDED_10_1_5 } }, {
 				ZoneDrops(),
-				Boss(SHRIEKWING),
-				Boss(HUNTSMAN, {
-					FatedItem(modItemId(183892,04), LFR),	-- Mystic Anima Spherule (Fated)
-				}),
-				Boss(SUN_KING, {
-					FatedItem(modItemId(183893,04), LFR),	-- Abominable Anima Spherule (Fated)
-				}),
-				Boss(ARTIFICER_XYMOX, {
-					FatedItem(modItemId(183888,04), LFR),	-- Apogee Anima Bead (Fated)
-				}),
-				Boss(HUNGERING, {
-					FatedItem(modItemId(183891,04), LFR),	-- Venerated Anima Spherule (Fated)
-				}),
-				Boss(LADY, {
-					FatedItem(modItemId(183889,04), LFR),	-- Thaumaturgic Anima Bead (Fated)
-				}),
-				Boss(COUNCIL, {
-					FatedItem(modItemId(183890,04), LFR),	-- Zenith Anima Spherule (Fated)
-				}),
-				Boss(SLUDGEFIST),
-				Boss(GENERALS, {
-					i(183895, {	-- Apogee Anima Bead
-						["modID"] = 83,
+				n(LEECHING_VAULTS_HEADER, {
+					Boss(HUNTSMAN, {
+						FatedItem(modItemId(183892,04), LFR),	-- Mystic Anima Spherule (Fated)
 					}),
-					FatedItem(modItemId(183895,83), LFR),	-- Apogee Anima Bead (Fated)
-					i(183894, {	-- Thaumaturgic Anima Bead
-						["modID"] = 83,
+					Boss(HUNGERING, {
+						FatedItem(modItemId(183891,04), LFR),	-- Venerated Anima Spherule (Fated)
 					}),
-					FatedItem(modItemId(183894,83), LFR),	-- Thaumaturgic Anima Bead (Fated)
+					Boss(LADY, {
+						FatedItem(modItemId(183889,04), LFR),	-- Thaumaturgic Anima Bead (Fated)
+					}),
 				}),
-				Boss(SIRE, {
-					i(183896, {	-- Abominable Anima Spherule
-						["modID"] = 83,
+				n(RELIQUARY_OF_OPULENCE_HEADER, {
+					Boss(ARTIFICER_XYMOX, {
+						FatedItem(modItemId(183888,04), LFR),	-- Apogee Anima Bead (Fated)
 					}),
-					FatedItem(modItemId(183896,83), LFR),	-- Abominable Anima Spherule (Fated)
-					i(183897, {	-- Mystic Anima Spherule
-						["modID"] = 83,
+					Boss(SUN_KING, {
+						FatedItem(modItemId(183893,04), LFR),	-- Abominable Anima Spherule (Fated)
 					}),
-					FatedItem(modItemId(183897,83), LFR),	-- Mystic Anima Spherule (Fated)
-					i(183898, {	-- Venerated Anima Spherule
-						["modID"] = 83,
+					Boss(COUNCIL, {
+						FatedItem(modItemId(183890,04), LFR),	-- Zenith Anima Spherule (Fated)
 					}),
-					FatedItem(modItemId(183898,83), LFR),	-- Venerated Anima Spherule (Fated)
-					i(183899, {	-- Zenith Anima Spherule
-						["modID"] = 83,
+				}),
+				n(BLOOD_FROM_STONE_HEADER, {
+					Boss(SHRIEKWING),
+					Boss(SLUDGEFIST),
+					Boss(GENERALS, {
+						i(183895, {	-- Apogee Anima Bead
+							["modID"] = 83,
+						}),
+						FatedItem(modItemId(183895,83), LFR),	-- Apogee Anima Bead (Fated)
+						i(183894, {	-- Thaumaturgic Anima Bead
+							["modID"] = 83,
+						}),
+						FatedItem(modItemId(183894,83), LFR),	-- Thaumaturgic Anima Bead (Fated)
 					}),
-					FatedItem(modItemId(183899,83), LFR),	-- Zenith Anima Spherule (Fated)
+				}),
+				n(AUDIENCE_WITH_ARROGANCE_HEADER, {
+					Boss(SIRE, {
+						i(183896, {	-- Abominable Anima Spherule
+							["modID"] = 83,
+						}),
+						FatedItem(modItemId(183896,83), LFR),	-- Abominable Anima Spherule (Fated)
+						i(183897, {	-- Mystic Anima Spherule
+							["modID"] = 83,
+						}),
+						FatedItem(modItemId(183897,83), LFR),	-- Mystic Anima Spherule (Fated)
+						i(183898, {	-- Venerated Anima Spherule
+							["modID"] = 83,
+						}),
+						FatedItem(modItemId(183898,83), LFR),	-- Venerated Anima Spherule (Fated)
+						i(183899, {	-- Zenith Anima Spherule
+							["modID"] = 83,
+						}),
+						FatedItem(modItemId(183899,83), LFR),	-- Zenith Anima Spherule (Fated)
+					}),
 				}),
 			})),
 			Difficulty(DIFFICULTY.RAID.MULTI.NORMAL_PLUS).AddGroups({
