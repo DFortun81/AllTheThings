@@ -70,15 +70,15 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["g"] = {
 					a(ach(13285, {	-- Upright Citizens
 						i(166247),		-- Citizens Brigade Whistle (TOY!)
-						hqt(54400, name(HEADERS.NPC, 145101, {	-- Russel the Bard recruited
+						crit(43718, {	-- Russel the Bard recruited
 							["coord"] = { 72.4, 68.9, BORALUS },
-						})),
-						hqt(54401, name(HEADERS.NPC, 146295, {	-- Flynn Fairwind recruited
+						}),
+						crit(43719, {	-- Flynn Fairwind recruited
 							["coord"] = { 72.0, 61.6, BORALUS },
-						})),
-						hqt(54399, name(HEADERS.NPC, 145107, {	-- Leeroy Jenkins recruited
+						}),
+						crit(43720, {	-- Leeroy Jenkins recruited
 							["coord"] = { 66.8, 64.0, BORALUS },
-						})),
+						}),
 					})),
 				},
 			}),
@@ -403,3 +403,9 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 		}),
 	}),
 })));
+
+root(ROOTS.HiddenQuestTriggers, {
+	hqt(54400, name(HEADERS.AchCriteria, 13285.01)),	-- Russel the Bard recruited
+	hqt(54401, name(HEADERS.AchCriteria, 13285.02)),	-- Flynn Fairwind recruited
+	hqt(54399, name(HEADERS.AchCriteria, 13285.03)),	-- Leeroy Jenkins recruited
+});
