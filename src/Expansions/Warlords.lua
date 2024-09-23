@@ -4,7 +4,7 @@ local _, app = ...;
 -- Check to see if Garrison APIs are available for Warlords
 local C_Garrison = C_Garrison;
 if not C_Garrison then
-	app.CreateGarrisonBuilding = app.CreateUnimplementedClass("GarrisonBuilding", "garrisonBuildingID");
+	app.CreateGarrisonBuilding = app.CreateUnimplementedClass("GarrisonBuilding", "garrisonbuildingID");
 	app.CreateGarrisonMission = app.CreateUnimplementedClass("GarrisonMission", "missionID");
 	app.CreateGarrisonTalent = app.CreateUnimplementedClass("GarrisonTalent", "garrisonTalentID");
 	app.CreateFollower = app.CreateUnimplementedClass("Follower", "followerID");
@@ -21,7 +21,7 @@ local L = app.L;
 
 -- Buildings
 do
-	local KEY, CACHE = "garrisonBuildingID", "GarrisonBuildings"
+	local KEY, CACHE = "garrisonbuildingID", "GarrisonBuildings"
 	local C_Garrison_GetBuildingInfo
 		= C_Garrison.GetBuildingInfo;
 	local GarrisonBuildingInfoMeta = { __index = function(t, key)
