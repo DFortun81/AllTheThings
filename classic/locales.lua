@@ -634,6 +634,22 @@ for key,value in pairs({
 			["lore"] = "Dragonflight is the ninth expansion. The dragonflights of Azeroth have returned, called upon to defend their ancestral home, the Dragon Isles. Surging with elemental magic and the life energies of Azeroth, the Isles are awakening once more, and it's up to you to explore their primordial wonder and discover long-forgotten secrets.",
 			["lvl"] = 58,
 		},
+		{	-- The War Within
+			["name"] = "The War Within",
+			["icon"] = app.asset("Expansion_TWW"),
+			["lore"] = "The War Within is the tenth expansion for World of Warcraft and the beginning of the Worldsoul Saga. Journey through never-before-seen subterranean worlds filled with hidden wonders and lurking perils, down to the dark depths of the nerubian empire, where the malicious Harbinger of the Void is gathering arachnid forces to bring Azeroth to its knees.",
+			["lvl"] = 68,
+		},
+		{	-- Midnight
+			["name"] = "Midnight",
+			["icon"] = app.asset("Expansion_MD"),
+			["lore"] = "Midnight is the eleventh expansion for World of Warcraft and the second installment of the Worldsoul Saga.",
+		},
+		{	-- The Last Titan
+			["name"] = "The Last Titan",
+			["icon"] = app.asset("Expansion_TLT"),
+			["lore"] = "The Last Titan is the twelfth expansion for World of Warcraft and the final installment of the Worldsoul Saga.",
+		},
 	};
 	
 	-- Unobtainable Listing
