@@ -492,32 +492,55 @@ local InformationTypes = {
 			if coordCount < 1 then return; end
 
 			local maxCoords = 10;
-			local currentMapID, j, str = app.CurrentMapID, 0, nil;
-			local showMapID = app.Settings:GetTooltipSetting("mapID");
+			local currentMapID, j = app.CurrentMapID, 0
+			local othercoords
 			for i,coord in ipairs(coords) do
-				local x, y = coord[1], coord[2];
 				local mapID = coord[3] or currentMapID;
 				if mapID ~= currentMapID then
+					if not othercoords then othercoords = { coord }
+					else othercoords[#othercoords + 1] = coord end
+				else
+					local x, y = coord[1], coord[2];
+					tinsert(tooltipInfo, {
+						left = j == 0 and t.text,
+						right = GetCoordString(x, y),
+						r = 1, g = 1, b = 1
+					});
+					j = j + 1;
+					if j >= maxCoords then
+						tinsert(tooltipInfo, {
+							right = (L.AND_MORE):format(coordCount - maxCoords),
+							r = 1, g = 1, b = 1
+						});
+						break;
+					end
+				end
+			end
+			-- include coords from other maps if any and not at the limit
+			if othercoords and j < maxCoords then
+				local str
+				local showMapID = app.Settings:GetTooltipSetting("mapID");
+				for i,coord in ipairs(othercoords) do
+					local x, y = coord[1], coord[2];
+					local mapID = coord[3] or currentMapID;
 					str = app.GetMapName(mapID);
 					if showMapID then
 						str = str .. " (" .. mapID .. ")";
 					end
 					str = str .. ": ";
-				else
-					str = "";
-				end
-				tinsert(tooltipInfo, {
-					left = j == 0 and t.text,
-					right = str .. GetCoordString(x, y),
-					r = 1, g = 1, b = 1
-				});
-				j = j + 1;
-				if j > maxCoords then
 					tinsert(tooltipInfo, {
-						right = (L.AND_MORE):format(coordCount - maxCoords),
+						left = j == 0 and t.text,
+						right = str .. GetCoordString(x, y),
 						r = 1, g = 1, b = 1
 					});
-					break;
+					j = j + 1;
+					if j >= maxCoords then
+						tinsert(tooltipInfo, {
+							right = (L.AND_MORE):format(coordCount - maxCoords),
+							r = 1, g = 1, b = 1
+						});
+						break;
+					end
 				end
 			end
 		end,
