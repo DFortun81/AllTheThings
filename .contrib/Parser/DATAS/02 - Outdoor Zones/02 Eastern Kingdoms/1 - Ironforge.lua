@@ -1,13 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local COOKING_AWARD_GROUPS = {
-	-- #if AFTER 5.0.4
-	currency(81),	-- Epicurean's Award
-	-- #else
-	currency(402),	-- Ironpaw Token // Pre 5.0.4 named Chef's Award
-	-- #endif
-};
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(IRONFORGE, {
 		-- #if AFTER CATA
@@ -275,7 +268,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				})),
 				q(686, {	-- A King's Tribute (1/3)
 					["qg"] = 2784,	-- King Magni Bronzebeard
@@ -391,7 +386,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				})),
 				q(7806, {	-- Additional Runecloth [Ironforge]
 					["qg"] = 14723,	-- Mistina Steelshield
@@ -567,7 +564,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				})),
 				applyclassicphase(CATA_PHASE_ONE, q(29342, {	-- Cold Water Fishing
 					["qg"] = 5161,	-- Grimnur Stonebrand
@@ -746,7 +745,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				})),
 				q(1073, {	-- Ineptitude + Chemicals = Fun (1/2)
 					["qg"] = 4081,	-- Lomac Gearstrip
@@ -820,7 +821,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				})),
 				q(2298, {	-- Kingly Shakedown
 					["qg"] = 5165,	-- Hulfdan Blackbeard

@@ -1,13 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local COOKING_AWARD_GROUPS = {
-	-- #if AFTER 5.0.4
-	currency(81),	-- Epicurean's Award
-	-- #else
-	currency(402),	-- Ironpaw Token // Pre 5.0.4 named Chef's Award
-	-- #endif
-};
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(THUNDER_BLUFF, {
 		["lore"] = "Thunder Bluff is the Tauren capital city located in the northern part of the region of Mulgore. The whole of the city is built on bluffs several hundred feet above the surrounding landscape, and is accessible by elevators on the southwestern and northeastern sides.",
@@ -133,7 +126,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				}),
 				q(6361, {	-- A Bundle of Hides
 					["providers"] = {
@@ -280,7 +275,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				}),
 				q(29349, {	-- Craving Crayfish
 					["qg"] = 3028,	-- Kah Mistrunner
@@ -494,7 +491,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				}),
 				q(29365, {	-- Perfectly Picked Portions
 					["qg"] = 3026,	-- Aska Mistrunner
@@ -504,7 +503,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				}),
 				q(29358, {	-- Pining for Nuts
 					["qg"] = 3026,	-- Aska Mistrunner
@@ -514,7 +515,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
 					["lvl"] = 10,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				}),
 				q(29345, {	-- Pond Predators
 					["qg"] = 3028,	-- Kah Mistrunner

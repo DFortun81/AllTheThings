@@ -1,13 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local COOKING_AWARD_GROUPS = {
-	-- #if AFTER 5.0.4
-	currency(81),	-- Epicurean's Award
-	-- #else
-	currency(402),	-- Ironpaw Token // Pre 5.0.4 named Chef's Award
-	-- #endif
-};
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(UNDERCITY, {
 		["lore"] = "The Undercity is the capital city of the Forsaken undead of the Horde.\n\nFar beneath the ruined Capital City of the kingdom of Lordaeron, its royal crypts were turned into a bastion of evil and undeath. Originally intended by Prince Arthas to be the Scourge's seat of power, the budding \"Undercity\" was abandoned when Arthas was recalled to aid the Lich King in the distant Northrend. In Arthas' absence, the Dark Lady, Sylvanas Windrunner, led the rebel Forsaken to the Undercity, and claimed it for her own. Since taking up residence, the Forsaken worked to complete the Undercity's construction by dredging the twisted maze of catacombs, tombs, and dungeons that Arthas began.",
@@ -475,7 +468,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				}),
 				q(1998, {	-- Fenwick Thatros
 					["qg"] = 6467,	-- Mennet Carkad
@@ -511,7 +506,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				}),
 				q(1961, {	-- Gathering Materials
 					["qg"] = 4568,	-- Anastasia Hartwell <Mage Trainer>
@@ -688,7 +685,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				}),
 				q(2995, {	-- Lines of Communication
 					["qg"] = 7825,	-- Oran Snakewrithe
@@ -843,7 +842,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				}),
 				q(1358, {	-- Sample for Helbrim
 					["providers"] = {
@@ -1413,7 +1414,9 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				}),
 			}),
 			-- #if SEASON_OF_DISCOVERY

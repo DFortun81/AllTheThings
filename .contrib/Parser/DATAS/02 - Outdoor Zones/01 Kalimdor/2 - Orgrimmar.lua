@@ -1,13 +1,6 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local COOKING_AWARD_GROUPS = {
-	-- #if AFTER 5.0.4
-	currency(81),	-- Epicurean's Award
-	-- #else
-	currency(402),	-- Ironpaw Token // Pre 5.0.4 named Chef's Award
-	-- #endif
-};
 local JEWELCRAFTING_AWARD_GROUPS = {
 	currency(361),	-- Illustrious Jewelcrafter's Token
 };
@@ -798,7 +791,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				}),
 				q(26543, {	-- Clammy Hands
 					["qg"] = 43239,	-- Razgar
@@ -819,7 +814,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				}),
 				q(1501, {	-- Creature of the Void [Orgrimmar]
 					["qg"] = 5875,	-- Gan'rul Bloodeye
@@ -966,7 +963,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				}),
 				q(26220, {	-- Everything Is Better with Bacon
 					["qg"] = 42506,	-- Marogg
@@ -975,7 +974,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = COOKING,
 					["races"] = HORDE_ONLY,
 					["isDaily"] = true,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				}),
 				q(31014, {	-- Hellscream's Gift
 					["qg"] = 62092,	-- Garrosh Hellscream
@@ -1579,7 +1580,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = exclude(TROLL, HORDE_ONLY),
 					["timeline"] = { ADDED_4_0_3 },
 					["isDaily"] = true,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				}),
 				q(26234, {	-- Stealing From Our Own (Troll)
 					["qg"] = 42506,	-- Marogg
@@ -1588,7 +1591,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = COOKING,
 					["races"] = { TROLL },
 					["isDaily"] = true,
-					["groups"] = COOKING_AWARD_GROUPS,
+					["groups"] = {
+						COOKING_AWARD,
+					},
 				}),
 				q(66253, {	-- Stolen Shipments
 					["qg"] = 187758,	-- Zaa'je
