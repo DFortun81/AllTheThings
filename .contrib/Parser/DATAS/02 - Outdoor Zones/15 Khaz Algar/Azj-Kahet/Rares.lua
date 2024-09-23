@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(214151, {	-- Ahg'zagall
 				["coord"] = { 40.0, 47.3, AZJ_KAHET },
-				["questID"] = 81698,
+				["questID"] = 78905,
 				["g"] = {
 					i(223375),	-- Clattering Chitin Necklace
 				},
@@ -220,9 +220,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 	m(KHAZ_ALGAR, {
 		m(AZJ_KAHET, {
 			n(RARES, {
-				q(78905, {	-- Extra HQT: Ahg'zagall
-					["name"] = "Ahg'zagall killed.",
-				}),
 				q(84073, {	-- Extra HQT: Cha'tak
 					["name"] = "Cha'tak killed.",
 				}),
