@@ -102,31 +102,42 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 65.0, 23.9, AZJ_KAHET },
 				},
 			}),
-			o(454340, {	-- Thimble's Cache
+			-- Thimble's Caches.
+			-- I'll remove signature when I "catch them all". They are here so I know what I verified and what needs to be verified.	//Exo
+			o(434527, {	-- Thimble's Cache, (23-09-24, Exo)
 				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
-				["provider"] = { "n", 224893 },	-- Thimble // Weave-Rat Cache (vignette)
-				["questID"] = 82859,
+				["provider"] = { "n", 224889 },	-- Thimble // Weave-Rat Cache (vignette)
+				["questID"] = 82857,
 				["coords"] = {
-					{ 29.0, 42.7, AZJ_KAHET },	-- Thimble (a bit bugged player can see vignette/different version of him during his pathway but they are uninteractable)
-					{ 29.4, 38.7, AZJ_KAHET },	-- cache spot
+					{ 65.9, 88.1, AZJ_KAHET },    -- Thimble
+					{ 67.5, 83.4, AZJ_KAHET },    -- Thimble's Cache
 				},
 			}),
-			o(434527, {	-- Thimble's Cache
+			o(454318, {	-- Thimble's Cache, (23-09-24, Exo)
 				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
-				["provider"] = { "n", 226528 },	-- Thimble // Weave-Rat Cache (vignette)
-				["questID"] = 82856,
+				["provider"] = { "n", 220568 },	-- Thimble // Weave-Rat Cache (vignette)
+				["questID"] = 80559,
 				["coords"] = {
-					{ 54.1, 57.0, AZJ_KAHET },	-- Thimble
-					{ 53.8, 56.8, AZJ_KAHET },	-- cache spot
+					{ 55.1, 68.8, AZJ_KAHET },	-- Thimble
+					{ 56.5, 71.8, AZJ_KAHET },	-- Thimble's Cache
 				},
 			}),
-			o(454342, {	-- Thimble's Cache
+			o(454321, {	-- Thimble's Cache, (23-09-24, Exo)
 				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
-				["provider"] = { "n", 224895 },	-- Thimble // Weave-Rat Cache (vignette)
-				["questID"] = 82862,
+				["provider"] = { "n", 224885 },	-- Thimble // Weave-Rat Cache (vignette)
+				["questID"] = 80579,
 				["coords"] = {
-					{ 75.2, 48.3, NERUBAR },	-- Thimble
-					{ 73.6, 29.0, NERUBAR },	-- cache spot
+					{ 55.9, 32.5, AZJ_KAHET },	-- Thimble
+					{ 41.9, 21.5, AZJ_KAHET },	-- Thimble's Cache
+				},
+			}),
+			o(454331, {	-- Thimble's Cache
+				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
+				["provider"] = { "n", 224888 },	-- Thimble // Weave-Rat Cache (vignette)
+				["questID"] = 82855,
+				["coords"] = {
+					{ 72.9, 43.9, AZJ_KAHET },	-- Thimble
+					{ 74.5, 43.0, AZJ_KAHET },	-- cache spot
 				},
 			}),
 			o(454337, {	-- Thimble's Cache
@@ -138,13 +149,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					{ 63.9, 85.7, NERUBAR },	-- cache spot
 				},
 			}),
-			o(454331, {	-- Thimble's Cache
+			o(454340, {	-- Thimble's Cache
 				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
-				["provider"] = { "n", 224888 },	-- Thimble // Weave-Rat Cache (vignette)
-				["questID"] = 82855,
+				["provider"] = { "n", 224893 },	-- Thimble // Weave-Rat Cache (vignette)
+				["questID"] = 82859,
 				["coords"] = {
-					{ 72.9, 43.9, AZJ_KAHET },	-- Thimble
-					{ 74.5, 43.0, AZJ_KAHET },	-- cache spot
+					{ 29.0, 42.7, AZJ_KAHET },	-- Thimble (a bit bugged player can see vignette/different version of him during his pathway but they are uninteractable)
+					{ 29.4, 38.7, AZJ_KAHET },	-- Thimble's Cache
+				},
+			}),
+			o(454342, {	-- Thimble's Cache, (23-09-24, Exo)
+				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
+				["provider"] = { "n", 224895 },	-- Thimble // Weave-Rat Cache (vignette)
+				["questID"] = 82862,
+				["coords"] = {
+					{ 75.2, 48.3, NERUBAR },	-- Thimble
+					{ 73.7, 29.0, NERUBAR },	-- Thimble's Cache
 				},
 			}),
 			-- I know these three are out of order here but they are related to the "Weaving Supplies". -Exodius

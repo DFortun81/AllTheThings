@@ -193,7 +193,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81492, {	-- Armaments: Smithing Tools
 					["sourceQuest"] = 82646,
 					["provider"] = { "n", 224172 },	-- Eirzay
-					["coord"] = { 48.4, 60.7, AZJ_KAHET },
+					["coord"] = { 54.5, 63.6, AZJ_KAHET },
 				}),
 				q(81477, {	-- Armaments: Weaponry
 					["sourceQuest"] = 82644,
@@ -299,7 +299,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81506, {	-- Sabotage: Alchemical Instruments
 					["sourceQuest"] = 82646,
 					["provider"] = { "n", 224186 },	-- Ghos'opp
-					["coord"] = { 54.6, 15.5, AZJ_KAHET },
+					["coord"] = { 54.5, 15.5, AZJ_KAHET },
 				}),
 				q(81481, {	-- Sabotage: Transformatory Vessels
 					["sourceQuest"] = 82644,
@@ -432,7 +432,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(81503, {	-- Infiltration: Terror Made Manifest
 					["sourceQuest"] = 82648,
-					--["provider"] = { "n", 224199 },	-- Ru'murh TODO
+					["provider"] = { "n", 224200 },	-- Ru'murh
 					["coord"] = { 64.2, 75.3, AZJ_KAHET },
 					["g"] = {
 						i(219350),	-- Maddening Manifest (QI!)
@@ -759,39 +759,52 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 				["name"] = [[~("The Weaver considers you a Mastermind. Congratulations, Silksinger %s."):format(UnitName("player"))]],
 			}),
 			--'Push quest', should be probably be weekly, since you can 'normaly' choose dude once per week (TODO: re-format it)
+			--These quests are related to rumors. Each of them triggers when 1 of 3 rumors is heard. This section can be removed as soon as the quests are properly sourced in-game.	//Exodius (23-09-24)
 			q(82645),	-- pop questIDs: 81491 (General), 81505 (Vizier), 81472 (Weaver)
-			q(82646),	-- pop questIDs: 81492 (General), 81499 (Weaver), 81506 (Vizier)
-			q(82644),	-- pop questIDs: 81477 (General), 81473 (Weaver), 81481 (Vizier)
+			--q(82646),	-- pop questIDs: 81492 (General), 81499 (Weaver), 81506 (Vizier)
+			--q(82644),	-- pop questIDs: 81477 (General), 81473 (Weaver), 81481 (Vizier)
 			q(82643),	-- pop questIDs: 81490 (General), 81498 (Vizier), 81471 (Weaver)
 			q(82616),	-- pop questIDs: 81476 (General), 81480 (Vizier), 80573 (Weaver)
-			q(82581),	-- pop questIDs: 81489 (General), 81497 (Vizier), 81470 (Weaver)
-			q(82640),	-- pop questIDs: 81475 (General), 81555 (Weaver), 81496 (Vizier)
-			q(82642),	-- pop questIDs: 81488 (General), 81500 (Weaver), 81479 (Vizier)
+			--q(82581),	-- pop questIDs: 81489 (General), 81497 (Vizier), 81470 (Weaver)
+			--q(82640),	-- pop questIDs: 81475 (General), 81555 (Weaver), 81496 (Vizier)
+			--q(82642),	-- pop questIDs: 81488 (General), 81500 (Weaver), 81479 (Vizier)
 			q(82641),	-- pop questIDs: 81487 (General), 81484 (Weaver), 81495 (Vizier)
 			q(82649),	-- pop questIDs: 81494 (General), 81502 (Vizier), 81504 (Weaver)
 			q(82647),	-- pop questIDs: 81478 (General), 81482 (Vizier), 81483 (Weaver)
-			q(82648),	-- pop questIDs: 81493 (General), 81503 (Weaver), 81501 (Vizier)
-			-- Rumors
-			-- Observation: QuestIDs of the rumors are the same as the above 'Push Quests' however, you don't get the quests until you talk to the NPC that gives you the rumor	//Exodius
-			q(82640, {	-- 'Listen to the rumor' from Ru'murh (n: 224190 @ 41.5, 22.4, 2213), start questID 82640 (Wet Work: Tithe to Kill), AreaPoiID 7963
-				["name"] = "You heard a tasty rumor from Ru'murh. Go to the Umbral Bazaar and slay Sureki Strongarms.",
+			--q(82648),	-- pop questIDs: 81493 (General), 81503 (Weaver), 81501 (Vizier)
+			-- City Rumors (SpellID: 463344), events available after unlocking Level 1 (Acquaintance) with the General, Vizier and Weaver
+			-- Ru'murh <Agent of the Weaver>, Eirzay <Agent of the General>, Ghos'opp <Agent of the Vizier>
+			-- Using Rumor Map Bundle (ItemID 228950) triggers all quests as completed and reveals all the NPCs with "rumors" on the map
+			-- 3 different rumors from all 3 'Agents' can trigger a same HQT
+			-- Observation: QuestIDs of the rumors are the same as the above 'Push Quests' however, you don't get the quests until you talk to the NPC that gives you the rumor	//Exodius (23-09-24)
+			q(82581, {	-- Ru'murh (n: 224199 @ 45.6, 51.0), starts questID 81483 (Infiltration: Production Blocker), (23-09-24, Exo)
+				["name"] = "You heard a rumor. Go and investigate.",
 			}),
-			q(82642, {	-- 'Listen to the rumor' from Eirzay (n: 224161 @ 43.0, 47.1, 2213), start questID 81475 (Breaking the Phalanx: Royal Appointments), AreaPoiID 7985
-				["name"] = "You heard a tasty rumor from Eirzay. Go to The Skeins and slay Royal Appointees.",
+			q(82640, {	-- Ru'murh  (n: 224190 @ 41.5, 22.4), starts questID 81555 (Wet Work: Tithe to Kill), (23-09-24, Exo)
+						-- Ghos'opp (n: 224186 @ 54.5, 15.5), starts questID 81506 (Sabotage: Alchemical Instruments), (23-09-24, Exo)
+				["name"] = "You heard a rumor. Go and investigate.",
+			}),
+			q(82642, {	-- Eirzay   (n: 224161 @ 43.0, 47.2), starts questID 81475 (Breaking the Phalanx: Royal Appointments), (23-09-24, Exo)
+				["name"] = "You heard a rumor. Go and investigate.",
+			}),
+			q(82644, {	-- Ru'murh  (n: 224197 @ 55.7, 47.8), starts questID 81472 (Information Control: Ansurek's Truth), (23-09-24, Exo)
+				["name"] = "You heard a rumor. Go and investigate.",
+			}),
+			q(82646, {	-- Eirzay   (n: 224172 @ 54.5, 63.6), starts questID 81492 (Armaments: Smithing Tools), (23-09-24, Exo)
+				["name"] = "You heard a rumor. Go and investigate.",
+			}),
+			q(82648, {	-- Ru'murh (n: 224200 @ 64.2, 75.3), starts questID 81503 (Infiltration: Terror Made Manifest), (23-09-24, Exo)
+				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224191 @ 68.5, 51.1), start questID 81484 (Wet Work: Death of a Salesman)
 			--q(82645),	-- 'Listen to the rumor' from Eirzay (n: 224171 @ 63.0, 38.1, 2216), start questID 81491 (Armaments: Arbalests)
-			--q(82646),	-- 'Listen to the rumor' from Eirzay (n: 224172 @ 48.4, 60.7), start questID 81492 (Armaments: Smithing Tools)
-			--q(82644),	-- 'Listen to the rumor' from Eirzay (n: 224170 @ 58.1, 39.3, 2216), start questID 81477 (Armaments: Weaponry)
 			--q(82643),	-- 'Listen to the rumor' from Eirzay (n: 224168 @ 48.6, 50.5, 2216), start questID 81490 (Bounty: Balaxir the Bully)
 			--q(82616),	-- 'Listen to the rumor' from Eirzay (n: 224166 @ 36.1, 50.2, 2213), start questID 81476 (Bounty: Goliath)
 			--q(82581),	-- 'Listen to the rumor' from Eirzay (n: 224167 @ 15.6, 45.9, 2213), start questID 81489 (Bounty: Zorikal the Patron)
 			--q(82641),	-- 'Listen to the rumor' from Eirzay (n: 224162 @ 30.6, 42.6, 2213), start questID 81487 (Breaking the Phalanx: Venomblades)
 			--q(82649),	-- 'Listen to the rumor' from Eirzay (n: 224176 @ 63.8, 26.3, 2216), start questID 81494 (Relics of War: Rak-Ahat)
 			--q(82647),	-- 'Listen to the rumor' from Eirzay (n: 224173 @ 39.5, 53.0), start questID 81478 (Relics of War: The Ruptired Lake)
-			--q(82648),	-- 'Listen to the rumor' from Eirzay (n: 224174 @ 63.8, 26.3, 2216), start questID 81493 (Relics of War: The Salien Gutter Conflict)
 			q(79698),	-- after turn in questID 79627 (Wine and Die)
-			--q(82581),	-- 'Investiage the scene' from Ru'murh (n: 224194 @ 70.3, 31.8, 2213), start questID 81470 (Dropping Eaves: Thieving Weave)
 			--q(82643),	-- 'Investiage the scene' from Ru'murh (n: 224195 @ 73.3, 50.9, 2213), start questID 81471 (Dropping Eaves: Saving the Past)
 			--q(82645),	-- 'Consider the missive' from Ru'murh (n: 224197 @ 39.8, 26.6, 2213), start questID 81472 (Information Control: Ansurek's Truth)
 			--q(82647),	-- 'Consider the missive' from Ru'murh (n: 224199 @ 45.6, 51.0, 2216), start questID 81483 (Infiltration: Production Blocker)
@@ -812,7 +825,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(84753),	-- Alchemy
 			-- Weaver Rat Treasure Map
 			q(83778),	-- N-220568 @ 55.0, 68.7
-			q(80559),	-- opened weaver rat treasure after 83778
 		}),
 	}),
 })));

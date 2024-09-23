@@ -204,19 +204,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 						i(223447),	-- Lightning-Scarred Vest
 					},
 				}),
+				q(79146, {	-- Ground Pounders
+					["sourceQuests"] = { 79129 },	-- Rook Rally
+					["provider"] = { "n", 214919 },	-- Thrall
+					["coord"] = { 27.8, 60.8, ISLE_OF_DORN },
+				}),
 				------ Stay awhile and listen ------
 				hqt(84813, {	-- Stay awhile and listen: Rooktender Lufsela
+					["description"] = "Dialogue becomes available after accepting 'Ground Pounders' (79146).",
 					["name"] = "Stay awhile and listen: Rooktender Lufsela",
 					["sourceQuests"] = { 79129 },	-- Rook Rally
 					["provider"] = { "n", 215039 },	-- Rooktender Lufsela
 					["coord"] = { 27.8, 60.8, ISLE_OF_DORN },
 				}),
 				--
-				q(79146, {	-- Ground Pounders
-					["sourceQuests"] = { 79129 },	-- Rook Rally
-					["provider"] = { "n", 214919 },	-- Thrall
-					["coord"] = { 27.8, 60.8, ISLE_OF_DORN },
-				}),
 				q(79140, {	-- Goldbricking
 					["sourceQuests"] = { 79146 },	-- Ground Pounders
 					["provider"] = { "n", 215187 },	-- Overlord Geya'rah
