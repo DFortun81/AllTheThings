@@ -5,6 +5,3 @@ ach(41010),	-- Rune Learned - Shared Acquisition - Ley Lines (50)
 ach(41011),	-- Rune Learned - Shared Acquisition - Wild Gods (50)
 11.0.5.56487
 ach(40967),	-- Ratts' Revenge
-11.0.5.56572
-ach(41013),	-- Upgraded Apparel
-ach(41015),	-- A Dark Iron Past

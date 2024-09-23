@@ -2089,6 +2089,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(228760),	-- Coldflame Tempest (MOUNT!)
 				},
 			}),
+			ach(41015),		-- A Dark Iron Past
 			ach(40996),		-- A Gatecrasher (automated)
 			ach(40998),		-- A Timewalking Step Back to a Classic Dungeon Time (automated)
 			ach(41000),		-- A Timewalking Journey Back to a Classic Dungeon Time (automated)
@@ -2135,6 +2136,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			ach(40988),		-- Photo Op!
 			ach(40997),		-- The Gatecrashers (automated)
 			ach(40995),		-- The Originals (automated)
+			ach(41013),		-- Upgraded Apparel
 			ach(40999),		-- You're in Your Blackrock Depths (automated)
 			ach(40661),		-- Zoomies!
 		}),
@@ -2653,3 +2655,9 @@ What was the name of the once benevolent spiritual leader in Stormwind that side
 what is the highest rank that can be bestowed on a night elf watcher? Warden
 --]]
 -- #endif
+
+root(ROOTS.HiddenQuestTriggers, {
+	n(WOW_ANNIVERSARY_TWENTY, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } },{
+		q(85661),	-- Purchase one Tier 2 Set
+	})),
+});
