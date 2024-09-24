@@ -68,7 +68,6 @@ root(ROOTS.Zones, {
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 							i(137975, {	-- Pattern: Imbued Silkweave Epaulets [Rank 3] (RECIPE!)
-								["requireSkill"] = TAILORING,
 								["cost"] = { { "i", 137642, 3 } },	-- 3x Mark of Honor
 							}),
 							i(123950, {	-- Plans: Demonsteel Pauldrons [Rank 3] (RECIPE!)
