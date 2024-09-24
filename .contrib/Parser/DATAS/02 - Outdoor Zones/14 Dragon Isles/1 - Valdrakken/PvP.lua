@@ -207,9 +207,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["coord"] = { 44.7, 37.0, VALDRAKKEN },
 					["g"] = {
 						i(185834, {	-- Orboreal Distinguishment
-							["cost"] = {{"c", HONOR, 2000}},
+							["cost"] = { { "c", HONOR, 2000 } },
 							["g"] = {
+							-- #if BEFORE 11.0.2
+							-- Lets display it only in the latest Expansion
 								i(137642),	-- Mark of Honor
+							-- #endif
 							},
 						}),
 						i(201250, {	-- Victorious Contender's Strongbox
