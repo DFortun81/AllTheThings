@@ -1464,9 +1464,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		if group.working then working = true; end
 	end
 
-	if app.AddSourceInformation(group.sourceID, tooltipInfo, group) then
-		working = true;
-	end
 
 	if app.Settings:GetTooltipSetting("SummarizeThings") then
 		-- Contents

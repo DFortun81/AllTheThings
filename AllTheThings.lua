@@ -2770,11 +2770,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		-- Add various text to the group now that it has been consolidated from all sources
 
 		-- Shared Appearances and Stuff
-		if itemID then
-			if app.AddSourceInformation(sourceID, tooltipInfo, group) then
-				working = true;
-			end
-		end
 
 		if group.g and app.Settings:GetTooltipSetting("SummarizeThings") then
 			-- Sort by the heirarchy of the group
@@ -8315,7 +8310,7 @@ function app:GetDataCache()
 
 			-- Garrison Buildings
 			-- TODO: doesn't seem to work...
-			-- app.CreateDynamicHeader("garrisonBuildingID", SimpleNPCGroup(app.HeaderConstants.BUILDINGS)),
+			-- app.CreateDynamicHeader("garrisonbuildingID", SimpleNPCGroup(app.HeaderConstants.BUILDINGS)),
 
 			-- Heirlooms
 			app.CreateDynamicHeader("heirloomID", SimpleNPCGroup(app.HeaderConstants.HEIRLOOMS)),
