@@ -450,6 +450,7 @@ root(ROOTS.ExpansionFeatures,
 						i(122576),	-- Rush Order: Alchemy Lab
 						i(122594),	-- Rush Order: Tailoring Emporium
 						i(122596),	-- Rush Order: The Tannery
+						i(114129),	-- Striking Weapon Enhancement
 						i(118474),	-- Supreme Manual of Dance
 						i(114616),	-- War Ravaged Weaponry
 						i(120302),	-- Weapon Enhancement Token

@@ -2296,6 +2296,7 @@ root(ROOTS.Zones, {
 						["coord"] = { 75.4, 47.1, DRAENOR_NAGRAND },
 						["g"] = {
 							currency(824),	-- Garrison Resources
+							i(118236),	-- Counterfeit Coin
 						},
 					}),
 					o(233539, {	-- Genedar Debris

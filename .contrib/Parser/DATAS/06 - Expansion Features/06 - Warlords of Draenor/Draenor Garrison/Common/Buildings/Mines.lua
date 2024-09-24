@@ -16,6 +16,12 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 					}),
+					n(TREASURES, {
+						o(232541, {	-- Mine Cart
+							i(118897),	-- Miner's Coffee
+							i(118903),	-- Preserved Mining Pick
+						}),
+					}),
 				}),
 			}),
 		})),

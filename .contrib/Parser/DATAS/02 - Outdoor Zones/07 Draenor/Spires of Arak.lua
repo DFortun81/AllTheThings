@@ -1891,6 +1891,7 @@ root(ROOTS.Zones, {
 					}),
 					o(234618, {	-- Gift of Anzu
 						["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
+						["cost"] = {{"i",115463,1}},	-- Elixir of Shadow Sight
 						["questID"] = 36381,
 						["coord"] = { 61.1, 55.3, SPIRES_OF_ARAK },
 						["modelScale"] = 0.4,
@@ -1900,6 +1901,7 @@ root(ROOTS.Zones, {
 					}),
 					n(86961,  {	-- Gift of Anzu
 						["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
+						["cost"] = {{"i",115463,1}},	-- Elixir of Shadow Sight
 						["questID"] = 36386,
 						["coord"] = { 48.6, 44.4, SPIRES_OF_ARAK },
 						["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
@@ -1909,6 +1911,7 @@ root(ROOTS.Zones, {
 					}),
 					n(86941,  {	-- Gift of Anzu
 						["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
+						["cost"] = {{"i",115463,1}},	-- Elixir of Shadow Sight
 						["questID"] = 36388,
 						["coord"] = { 42.42, 26.69, SPIRES_OF_ARAK },
 						["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
@@ -1918,6 +1921,7 @@ root(ROOTS.Zones, {
 					}),
 					n(86962,  {	-- Gift of Anzu
 						["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
+						["cost"] = {{"i",115463,1}},	-- Elixir of Shadow Sight
 						["questID"] = 36389,
 						["coord"] = { 46.9, 40.46, SPIRES_OF_ARAK },
 						["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
@@ -1927,6 +1931,7 @@ root(ROOTS.Zones, {
 					}),
 					n(86953,  {	-- Gift of Anzu
 						["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
+						["cost"] = {{"i",115463,1}},	-- Elixir of Shadow Sight
 						["questID"] = 36390,
 						["coord"] = { 57.01, 78.93, SPIRES_OF_ARAK },
 						["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
@@ -1936,6 +1941,7 @@ root(ROOTS.Zones, {
 					}),
 					n(86956,  {	-- Gift of Anzu
 						["description"] = "Drink an Elixir of Shadow Sight near the Shrine to get the Gift of Anzu.",
+						["cost"] = {{"i",115463,1}},	-- Elixir of Shadow Sight
 						["questID"] = 36392,
 						["coord"] = { 52.0, 19.7, SPIRES_OF_ARAK },
 						["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working

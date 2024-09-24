@@ -693,6 +693,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.WOD, applyclassicphase(WOD_PHASE_ONE,
 			i(115989),					-- Whispering Iron Band
 			WOD_CRAFTED_ITEM(115798),	-- Whispering Taladite Ring
 		}),
+		filter(MISC, {
+			i(112384),	-- Reflecting Prism
+		}),
 	}),
 	prof(LEATHERWORKING, {
 		n(ARMOR, {

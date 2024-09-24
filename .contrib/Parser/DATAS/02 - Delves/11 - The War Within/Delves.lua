@@ -320,6 +320,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		q(84519, {	-- Ancient Curiosity: Combat
 			["provider"] = { "i", 228560 },	-- Ancient Curio (TODO: providers ids could be swapped) (TODO: MIGHT CHANGED ITEMID)
+			["maps"] = ALL_REGULAR_DELVES,
 			["g"] = {
 				-- I don't think this is the curio everyone gets from this quest... is it RNG or only this one
 				-- that wowhead claims?
@@ -332,6 +333,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		q(84520, {	-- Ancient Curiosity: Utility
 			["provider"] = { "i", 228581 },	-- Ancient Curio (TODO: providers ids could be swapped) (TODO: MIGHT CHANGED ITEMID)
+			["maps"] = ALL_REGULAR_DELVES,
 			["g"] = {
 				i(228582),	-- Streamlined Relic
 				i(225901, {	-- Streamlined Relic [Rank 1]

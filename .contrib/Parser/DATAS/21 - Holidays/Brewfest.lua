@@ -1526,7 +1526,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					},
 				}),
 				q(11431, {	-- Catch the Wild Wolpertinger! (H) [Non-EU Only!]
-					["qg"] = 24657,	-- Glodrak Huntsniper
+					["qgs"] = {
+						24657,	-- Glodrak Huntsniper
+						-- #IF AFTER 8.2.0
+						155269, -- Snipehunter Goro
+						-- #ENDIF
+					},
 					-- #if AFTER CATA
 					["coord"] = { 41.2, 18.4, DUROTAR },
 					-- #else
@@ -1825,7 +1830,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					}),
 				}),
 				q(11120, {	-- Pink Elekks On Parade (H) [Non-EU Only!]
-					["qg"] = 24657,	-- Glodrak Huntsniper
+					["qgs"] = {
+						24657,	-- Glodrak Huntsniper
+						-- #IF AFTER 8.2.0
+						155269, -- Snipehunter Goro
+						-- #ENDIF
+					},
 					-- #if AFTER CATA
 					["coord"] = { 41.2, 18.4, DUROTAR },
 					-- #else
