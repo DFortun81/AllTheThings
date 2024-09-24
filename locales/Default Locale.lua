@@ -28,7 +28,7 @@ local L = setmetatable({
 	SOCIAL_PROGRESS = "Social Progress";
 	TRACKING_PROGRESS = "Tracking Progress";
 	COLLECTION_PROGRESS = "Collection Progress";
-	
+
 	-- Settings
 	DATA_TYPE_NOT_SUPPORTED = "This data type is not supported at this time.",
 	OPEN_MINILIST_FOR = "Open mini list for ";
@@ -79,7 +79,7 @@ local L = setmetatable({
 	QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT = "Quest '%s' %s will prevent collection of Breadcrumb Quest '%s' %s";
 	REPORT_INACCURATE_QUEST = "Wrong Quest Info! (Click to Report)";
 	ITEM_GIVES_REP = "Provides Reputation with '";
-	
+
 	-- Event Text
 	ITEM_ID_ADDED = "%s (%d) was added to your collection.";
 	ITEM_ID_ADDED_RANK = "%s (%d) [Rank %d] was added to your collection.";
@@ -115,16 +115,16 @@ local L = setmetatable({
 	REMOVED_WITH_PATCH_FORMAT = "This gets removed with patch %s";
 	WAS_ADDED_WITH_PATCH_FORMAT = "This was added with patch %s";
 	WAS_ADDED_BACK_WITH_PATCH_FORMAT = "This was added back with patch %s";
-	
+
 	FACTION_SPECIFIC_REP = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
 	MINUMUM_STANDING_WITH_FACTION = "Requires a minimum standing of %s with %s.";
 	MAXIMUM_STANDING_WITH_FACTION = "Requires a standing lower than %s with %s.";
 	MIN_MAX_STANDING_WITH_FACTION = "Requires a standing between %s and %s with %s.";
-	
+
 	HEIRLOOM_TEXT = "Unlocked Heirloom";
 	HEIRLOOM_TEXT_DESC = "This indicates whether or not you have acquired or purchased the heirloom yet.";
 	HEIRLOOMS_UPGRADES_DESC = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve";
-	
+
 	LOCK_CRITERIA_LEVEL_LABEL = "Player Level";
 	LOCK_CRITERIA_QUEST_LABEL = "Completed Quest";
 	LOCK_CRITERIA_SPELL_LABEL = "Learned Spell/Mount/Recipe";
@@ -132,7 +132,7 @@ local L = setmetatable({
 	LOCK_CRITERIA_SOURCE_LABEL = "Known Appearance";
 	LOCK_CRITERIA_FACTION_FORMAT = "%s with %s (Current: %s)";
 	TITLES_DESC = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character.";
-	
+
 	-- Filter Text
 	ARTIFACT_ID = "Artifact ID";
 	AZERITE_ESSENCE_ID = "Azerite Essence ID";
@@ -175,11 +175,11 @@ local L = setmetatable({
 	SYM_ROW_SKIP_DESC = "Linked content is only displayed in the tooltip for this object.";
 	ACHIEVEMENT_PRE_WRATH_SOURCE_QUEST_INFO = "This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch.";
 	CLASSES = "Classes";
-	
+
 	ADDITIONAL_LABEL = "Additional Information";
 	CRITERIA_FOR = "Criteria for";
 	CURRENCY_FOR = "Currency for";
-	
+
 	CHAT_COMMANDS_LABEL = "Chat Commands";
 	CHAT_COMMANDS_TEXT = "/att |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/attbounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/attrwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/attnwp\n|cffFFFFFFShows all current New With Patch things.\n\n|R/attrandom\n|cffFFFFFFOpens the Random List.\n\n|R/attunsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
 	ICON_LEGEND_LABEL = "Icon Legend";
@@ -412,6 +412,8 @@ L.SETTINGS_MENU = {
 		QUESTS_CHECKBOX_TOOLTIP = "Enable this option to track normal Quests.\n\nYou can right click any Quest in the lists to pop out their full quest chain to show your progress and any prerequisite Quests.\n\nNOTE: Tracking of Daily, Weekly, Yearly, and World Quests is not included in this option due to their periodic resets within the Blizzard Database.";
 		QUESTS_LOCKED_CHECKBOX = "+Locked";
 		QUESTS_LOCKED_CHECKBOX_TOOLTIP = "Enable this option to specifically include tracking of Locked Quest completion.\n\nLocked Quests are those which the player is no longer able to complete (according to known ATT data) through normal gameplay.\n\nObtaining these Quests is very reliant on the Party Sync feature or using Account-Wide Quests to incorporate progress from other characters.";
+		QUESTS_HIDDEN_TRACKER_CHECKBOX = "+HQT";
+		QUESTS_HIDDEN_TRACKER_CHECKBOX_TOOLTIP = "Enable this option to specifically include Hidden Quest Tracking (HQT) completion.\n\nHQT are those QuestID's which are invisible to Players and used behind-the-scenes to monitor character/account progress or status in various situations.\n\nYou probably don't care to track these. Right? I mean you're not crazy, I'm sure...";
 		RECIPES_CHECKBOX = "Recipes";
 		RECIPES_CHECKBOX_TOOLTIP = "Enable this option to track recipes for your professions.\n\nNOTE: You must open your professions list in order to cache these.";
 		REPUTATIONS_CHECKBOX = "Reputations";
