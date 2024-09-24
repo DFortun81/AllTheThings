@@ -276,7 +276,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				------ Stay awhile and listen ------
 				hqt(81946, {	-- Stay awhile and listen: Anduin Wrynn
 					["name"] = "Stay awhile and listen: Anduin Wrynn",
-					["description"] = "Dialogue becomes available after accepting 'Hypocenter' (78460).",
+					["description"] = "Dialogue becomes available after accepting both 'Like a Spider on the Wall' (78231) and 'Rewriting the Rewritten' (78232) but will be unavailable after completion.",
 					["sourceQuests"] = {
 						78231,	-- Like a Spider on the Wall
 						78232,	-- Rewriting the Rewritten
