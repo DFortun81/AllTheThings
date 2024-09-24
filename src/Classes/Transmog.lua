@@ -1032,7 +1032,7 @@ end)
 app.AddEventHandler("OnLoad", function()
 	app.Settings.CreateInformationType("SharedAppearances", {
 		text = "SharedAppearances",
-		priority = 2.999, HideCheckBox = true,
+		priority = 2.899, HideCheckBox = true,
 		Process = function(t, reference, tooltipInfo)
 			local sourceID = reference.sourceID
 			if not sourceID then return end

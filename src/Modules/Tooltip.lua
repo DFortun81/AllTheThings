@@ -632,9 +632,10 @@ app.StripColorAndTextureData = function()
 	return StripColorAndTextureData("|TInterface\\MONEYFRAME\\UI-GoldIcon:0|t2 |cffff0000GOLD|r Coins")
 end;
 ]]--
+local HexToARGB = app.Modules.Color.HexToARGB;
 local function AttachTooltipInformationEntry(tooltip, entry)
 	if entry.color then
-		entry.a, entry.r, entry.g, entry.b = app.Modules.Color.HexToARGB(entry.color);
+		entry.a, entry.r, entry.g, entry.b = HexToARGB(entry.color);
 		entry.color = nil;
 	end
 
@@ -705,8 +706,8 @@ local function ClearTooltip(tooltip)
 	tooltip.AllTheThingsProcessing = nil;
 	tooltip.ATT_AttachComplete = nil;
 end
-local HexToARGB = app.Modules.Color.HexToARGB;
-local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
+-- TODO: remove second unused param...
+local function AttachTooltipSearchResults(tooltip, _, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",...)
 	app.SetSkipLevel(1);
 	local status, group, working = pcall(app.GetCachedSearchResults, method, ...)
@@ -727,16 +728,6 @@ local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
 				-- only save the cached tooltip info for this group if it is not working
 				if not group.working then
 					group.tooltipInfo = tooltipInfo
-				end
-			end
-
-			-- Some tooltip items might be added using a color instead of argb, so we have to convert them... TODO maybe clean up
-			if #tooltipInfo > 0 then
-				for i,item in ipairs(tooltipInfo) do
-					if item.color then
-						item.a, item.r, item.g, item.b = HexToARGB(item.color)
-						item.color = nil
-					end
 				end
 			end
 

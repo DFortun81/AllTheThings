@@ -2930,14 +2930,12 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		group.g = nil;
 	end
 
-	-- Determine if this tooltip needs more work the next time it refreshes.
 	group.itemString = itemString
 
 	if isTopLevelSearch then
 
 		group.isBaseSearchResult = true;
 
-		-- Track if the result is not finished processing
 		if isTopLevelSearch then InitialCachedSearch = nil; end
 	end
 
@@ -5246,6 +5244,8 @@ local function CacheFilterFunctions()
 	-- app.PrintDebug("CacheFilterFunctions","DG",DefaultGroupVisibility,"DT",DefaultThingVisibility)
 	-- app.PrintDebug("ItemUnboundSetting",ItemUnboundSetting)
 end
+-- TODO: test perf when instead using an array of ordered visibility checkers which is defined via settings changes
+-- similar to information types
 local function SetGroupVisibility(parent, group)
 	local forceShowParent;
 	-- Set visible initially based on the global 'default' visibility, or whether the group should inherently be shown

@@ -252,6 +252,7 @@ app.AddEventHandler("OnLoad", function()
 end);
 local CurrentDifficultyRemapper ={
 	[205] = 1,	-- Follower Dungeon -> Normal Dungeon
+	[220] = 220,	-- Story -> Story (currently only available to defeat during a quest and provides no loot...)
 }
 app.GetCurrentDifficultyID = function()
 	if not IsInInstance() then return 0 end
