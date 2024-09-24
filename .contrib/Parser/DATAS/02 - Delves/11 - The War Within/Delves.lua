@@ -1924,5 +1924,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		-- Zekvir
 		q(84816),	-- Zekvir pop in Earthcrawl Mines (first time, unsure what tier it was)
 		q(84818),	-- Zekvir pop in The Spiral Weave (2nd time in week, Tier 8)
+		q(84819),	-- Zekvir pop in Skittering Breach (2nd time in week, Tier 8)
 	}),
 })));
