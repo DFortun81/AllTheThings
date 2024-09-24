@@ -7,23 +7,6 @@ end
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(AZJ_KAHET, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
-			n(216031, {	-- Abyssal Devourer
-				["coord"] = { 47.4, 43.7, AZJ_KAHET },
-				["questID"] = 81695,
-				["g"] = {
-					i(223390),	-- Leggings of Dark Hunger
-					i(223391),	-- Legguards of Dark Hunger
-					i(223389),	-- Legplates of Dark Hunger
-					i(223392),	-- Trousers of Dark Hunger
-				},
-			}),
-			n(214151, {	-- Ahg'zagall
-				["coord"] = { 40.0, 47.3, AZJ_KAHET },
-				["questID"] = 78905,
-				["g"] = {
-					i(223375),	-- Clattering Chitin Necklace
-				},
-			}),
 			n(216042, {	-- Cha'tak
 				["description"] = "Inside the cave, behind the waterfall.",
 				["coord"] = { 70.7, 21.4, AZJ_KAHET },
@@ -122,21 +105,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(223915),	-- Nerubian Orator's Stiletto
 				},
 			}),
-			n(216032, {	-- Stronghold Scouts (Khak'ik npcID)
-				["crs"] = { 221032 },	-- Rhak'ik
-				["coords"] = {
-					{ 45.5, 36.2, AZJ_KAHET },	-- Start
-					{ 45.5, 42.1, AZJ_KAHET },	-- Mid
-					{ 45.5, 47.1, AZJ_KAHET },	-- End
-				},
-				["questID"] = 81694,
-				["g"] = {
-					i(223378),	-- Footguards of the Nerubian Twins
-					i(223407),	-- Sabatons of the Nerubian Twins
-					i(223406),	-- Slippers of the Nerubian Twins
-					i(223408),	-- Treads of the Nerubian Twins
-				},
-			}),
 			n(216038, {	-- The Groundskeeper
 				["coord"] = { 30.6, 55.5, NERUBAR },
 				["questID"] = 81634,
@@ -178,24 +146,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(221240),	-- Nerubian Stagshell Gouger
 				},
 			}),
-			n(216037, {	-- Vilewing
-				["description"] = "Flies around the area.",
-				["coord"] = { 36.6, 44.3, AZJ_KAHET },
-				["questID"] = 81700,
-				["g"] = {
-					i(223388),	-- Vilewing Cap
-					i(223387),	-- Vilewing Chain Helm
-					i(223386),	-- Vilewing Crown
-					i(223405),	-- Vilewing Visor
-				},
-			}),
-			n(216041, {	-- Webspeaker Grik'ik
-				["coord"] = { 61.3, 27.3, AZJ_KAHET },
-				["questID"] = 81699,
-				["g"] = {
-					i(223369),	-- Webspeaker's Spiritual Cloak
-				},
-			}),
 			n(216039, {	-- Xishorr
 				["coord"] = { 67.3, 58.4, NERUBAR_LOWER },
 				["questID"] = 81701,
@@ -214,59 +164,111 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 		})),
+		n(RARES, {
+			n(216031, {	-- Abyssal Devourer
+				["coord"] = { 47.4, 43.7, AZJ_KAHET },
+				["questID"] = 81695,
+				["g"] = {
+					i(223390),	-- Leggings of Dark Hunger
+					i(223391),	-- Legguards of Dark Hunger
+					i(223389),	-- Legplates of Dark Hunger
+					i(223392),	-- Trousers of Dark Hunger
+				},
+			}),
+			n(214151, {	-- Ahg'zagall
+				["coord"] = { 40.0, 47.3, AZJ_KAHET },
+				["questID"] = 78905,
+				["g"] = {
+					i(223375),	-- Clattering Chitin Necklace
+				},
+			}),
+			n(216032, {	-- Stronghold Scouts (Khak'ik npcID)
+				["crs"] = { 221032 },	-- Rhak'ik
+				["coords"] = {
+					{ 45.5, 36.2, AZJ_KAHET },	-- Start
+					{ 45.5, 42.1, AZJ_KAHET },	-- Mid
+					{ 45.5, 47.1, AZJ_KAHET },	-- End
+				},
+				["questID"] = 81694,
+				["g"] = {
+					i(223378),	-- Footguards of the Nerubian Twins
+					i(223407),	-- Sabatons of the Nerubian Twins
+					i(223406),	-- Slippers of the Nerubian Twins
+					i(223408),	-- Treads of the Nerubian Twins
+				},
+			}),
+			n(216037, {	-- Vilewing
+				["description"] = "Flies around the area.",
+				["coord"] = { 36.6, 44.3, AZJ_KAHET },
+				["questID"] = 81700,
+				["g"] = {
+					i(223388),	-- Vilewing Cap
+					i(223387),	-- Vilewing Chain Helm
+					i(223386),	-- Vilewing Crown
+					i(223405),	-- Vilewing Visor
+				},
+			}),
+			n(216041, {	-- Webspeaker Grik'ik
+				["coord"] = { 61.3, 27.3, AZJ_KAHET },
+				["questID"] = 81699,
+				["g"] = {
+					i(223369),	-- Webspeaker's Spiritual Cloak
+				},
+			}),
+		}),
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(KHAZ_ALGAR, {
 		m(AZJ_KAHET, {
 			n(RARES, {
-				q(84073, {	-- Extra HQT: Cha'tak
-					["name"] = "Cha'tak killed.",
+				q(84073, {	-- Weekly reputation: Cha'tak
+					["name"] = "Cha'tak weekly reputation obtained.",
 				}),
-				q(84081, {	-- Extra HQT: Deepcrawler Tx'kesh
-					["name"] = "Deepcrawler Tx'kesh killed.",
+				q(84081, {	-- Weekly reputation: Deepcrawler Tx'kesh
+					["name"] = "Deepcrawler Tx'kesh weekly reputation obtained.",
 				}),
-				q(84076, {	-- Extra HQT: Enduring Gutterface
-					["name"] = "Enduring Gutterface killed.",
+				q(84076, {	-- Weekly reputation: Enduring Gutterface
+					["name"] = "Enduring Gutterface weekly reputation obtained.",
 				}),
-				q(84079, {	-- Extra HQT: Harverster Qixt
-					["name"] = "Harverster Qixt killed.",
+				q(84079, {	-- Weekly reputation: Harverster Qixt
+					["name"] = "Harverster Qixt weekly reputation obtained.",
 				}),
-				q(84077, {	-- Extra HQT: Jix'ak the Crazed
-					["name"] = "Jix'ak the Crazed killed.",
+				q(84077, {	-- Weekly reputation: Jix'ak the Crazed
+					["name"] = "Jix'ak the Crazed weekly reputation obtained.",
 				}),
-				q(84071, {	-- Extra HQT: Kaheti Silk Hauler
-					["name"] = "Kaheti Silk Hauler killed. Didn't Haul enough Silk.",
+				q(84071, {	-- Weekly reputation: Kaheti Silk Hauler
+					["name"] = "Kaheti Silk Hauler weekly reputation obtained.",
 				}),
-				q(84070, {	-- Extra HQT: Xishorr
-					["name"] = "Xishorr killed.",
+				q(84075, {	-- Weekly reputation: Maddened Siegebomber
+					["name"] = "Maddened Siegebomber weekly reputation obtained.",
 				}),
-				q(84075, {	-- Extra HQT: Maddened Siegebomber
-					["name"] = "Maddened Siegebomber killed.",
+				q(84074, {	-- Weekly reputation: Monstrous Lasharoth
+					["name"] = "Monstrous Lasharoth weekly reputation obtained.",
 				}),
-				q(84074, {	-- Extra HQT: Monstrous Lasharoth
-					["name"] = "Monstrous Lasharoth killed.",
+				q(84082, {	-- Weekly reputation: Skrimisher Sa'zryk
+					["name"] = "Skrimisher Sa'zryk weekly reputation obtained.",
 				}),
-				q(84082, {	-- Extra HQT: Skrimisher Sa'zryk
-					["name"] = "Skrimisher Sa'zryk killed.",
+				q(84069, {	-- Weekly reputation: The Groundskeeper
+					["name"] = "The Groundskeeper weekly reputation obtained.",
 				}),
-				q(84069, {	-- Extra HQT: The Groundskeeper
-					["name"] = "The Groundskeeper killed... Who's gonna tend to the gardens now?",
+				q(85167, {	-- Weekly reputation: The One Left
+					["name"] = "The One Left weekly reputation obtained.",
 				}),
-				q(85167, {	-- Extra HQT: The One Left
-					["name"] = "The One Left killed. Now there's None Left.",
+				q(84078, {	-- Weekly reputation: The Oozekhan
+					["name"] = "The Oozekhan weekly reputation obtained.",
 				}),
-				q(84078, {	-- Extra HQT: The Oozekhan
-					["name"] = "The Oozekhan killed.",
+				q(85166, {	-- Weekly reputation: Tka'ktath
+					["name"] = "Tka'ktath weekly reputation obtained.",
 				}),
-				q(85166, {	-- Extra HQT: Tka'ktath
-					["name"] = "Tka'ktath killed.",
+				q(84080, {	-- Weekly reputation: Umbraclaw Matra
+					["name"] = "Umbraclaw Matra weekly reputation obtained.",
 				}),
-				q(84080, {	-- Extra HQT: Umbraclaw Matra
-					["name"] = "Umbraclaw Matra killed.",
+				q(84070, {	-- Weekly reputation: Xishorr
+					["name"] = "Xishorr weekly reputation obtained.",
 				}),
-				q(84072, {	-- Extra HQT: XT-Minecrusher 8700
-					["name"] = "XT-Minecrusher 8700 killed.",
+				q(84072, {	-- Weekly reputation: XT-Minecrusher 8700
+					["name"] = "XT-Minecrusher 8700 weekly reputation obtained.",
 				}),
 			}),
 		}),

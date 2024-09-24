@@ -304,11 +304,9 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				i(225446),    -- Pattern Algari Competitors Leather Shoulderpads
 				i(225448),    -- Pattern Algari Competitors Leather Trousers
 			}),
-		})
+		}),
 		n(REWARDS, {
-			currency(2123, {	-- Bloody Tokens
-				["timeline"] = { "Added 11.0.2" },
-			}),
+			currency(2123),	-- Bloody Tokens
 		}),
 	})),
 })));

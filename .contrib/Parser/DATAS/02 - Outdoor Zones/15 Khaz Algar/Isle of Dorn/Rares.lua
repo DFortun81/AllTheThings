@@ -7,45 +7,10 @@ end
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(ISLE_OF_DORN, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
-			n(219281, {	-- Alunira
-				["coord"] = { 23.1, 58.5, ISLE_OF_DORN },
-				--["questID"] = x,
-				["cost"] = {{"i", 224026, 1}},	-- 1x Storm Vessel
-				["g"] = {
-					i(223270),	-- Alunira (MOUNT!)
-				},
-			}),
-			n(219264, {	-- Bloodmaw
-				["description"] = "Walking around in the area.",
-				["coords"] = {
-					{ 49.9, 74.8, ISLE_OF_DORN },
-					{ 39.6, 82.4, ISLE_OF_DORN },
-					{ 39.9, 83.8, ISLE_OF_DORN },
-					{ 38.0, 84.0, ISLE_OF_DORN },
-				},
-				["questID"] = 81893,
-				["g"] = {
-					i(223349),	-- Wolf Packleader's Cowl
-					i(223350),	-- Wolf Packleader's Helm
-					i(223351),	-- Wolf Packleader's Hood
-					i(223370),	-- Wolf Packleader's Visor
-				},
-			}),
 			n(221128, {	-- Clawbreaker K'zithix
 				["description"] = "Walking around in the area.",
 				["coord"] = { 55.6, 27.0, ISLE_OF_DORN},	-- old coords: 80.3, 35.1 / 79.1, 34.2 / 64.0, 39.2
 				["questID"] = 81920,
-			}),
-			n(219265, {	-- Emperor Pitfang
-				["description"] = "Walking around in the area.",
-				["coord"] = { 47.9, 60.1, ISLE_OF_DORN },
-				["questID"] = 81895,
-				["g"] = {
-					i(223348),	-- Viper's Stone Gauntlets
-					i(223345),	-- Viper's Stone Grips
-					i(223346),	-- Viper's Stone Handguards
-					i(223347),	-- Viper's Stone Mitts
-				},
 			}),
 			n(219266, {	-- Escaped Cutthroat
 				["coord"] = { 25.8, 45.1, ISLE_OF_DORN },
@@ -104,11 +69,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(223948),	-- Stubborn Wolf's Greathelm
 				},
 			}),
-			n(220068, {	-- Malfuctioning Spire
-				["description"] = "This Rare might only be available during the introduction.",
-				["coord"] = { 26.7, 57.4, ISLE_OF_DORN },
-				["questID"] = 81891,
-			}),
 			n(219267, {	-- Plaguehart
 				["coord"] = { 51.1, 70.0, ISLE_OF_DORN },
 				["questID"] = 81897,
@@ -127,49 +87,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(226112),	-- Rotfist Flesh Carver
 				},
 			}),
-			n(220846, {	-- Rowdy Rubble
-				["coord"] = { 46.0, 32.2, ISLE_OF_DORN },
-				["questID"] = 81515,
-			}),
-			n(213115, {	-- Rustul Titancap
-				["description"] = "Walking around in the area.",
-				["coords"] = {
-					{ 31.7, 80.8, ISLE_OF_DORN },
-					{ 33.5, 81.3, ISLE_OF_DORN },
-					{ 32.4, 82.7, ISLE_OF_DORN },
-					{ 31.4, 82.0, ISLE_OF_DORN },
-				},
-				["questID"] = 78619,
-				["g"] = {
-					i(223367),	-- Cuffs of the Titancap
-					i(223366),	-- Bracers of the Titancap
-					i(223365),	-- Wristguards of the Titancap
-					i(223364),	-- Wristwraps of the Titancap
-				},
-			}),
-			n(217534, {	-- Sandres the Relicbearer
-				["coord"] = { 64.1, 73.1, ISLE_OF_DORN },
-				["questID"] = 79685,
-				["g"] = {
-					i(223376),	-- Band of the Relic Bearer
-				},
-			}),
 			n(219278, {	-- Shallowshell the Clacker
 				["coord"] = { 74.5, 27.8, ISLE_OF_DORN },
 				["questID"] = 81903,
 				["g"] = {
 					i(221224),	-- Bouldershell Waistguard
 					i(221255),	-- Sharpened Scalepiercer
-				},
-			}),
-			n(219262, {	-- Springbubble
-				["coord"] = { 58.7, 60.7, ISLE_OF_DORN },
-				["questID"] = 81892,
-				["g"] = {
-					i(223359),	-- Epaulets of the Steamsurger
-					i(223358),	-- Mantle of the Steamsurger
-					i(223356),	-- Shoulderpads of the Steamsurger
-					i(223357),	-- Spaulders of the Steamsurger
 				},
 			}),
 			n(220883, {	-- Sweetspark the Oozeful
@@ -206,6 +129,97 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(221239),	-- Spider Blasting Blunderbuss (dupe)
 				},
 			}),
+			n(219284, {	-- Zovex
+				--seems like rare in this spot have rotation?
+				["coord"] = { 30.9, 52.3, ISLE_OF_DORN },
+				["questID"] = 82203,
+				["g"] = {
+					i(226118),	-- Arcane Prisoner's Puncher
+					i(226119),	-- Arcane Sharpshooter's Crossbow
+					i(226117),	-- Dalaran Guardian's Arcanotool
+				},
+			}),
+
+			-- Alpha/Beta
+			--n(220846, {	-- Rowdy Rubble
+			--	["coord"] = { 46.0, 32.2, ISLE_OF_DORN },
+			--	["questID"] = 81515,
+			--}),
+		})),
+		n(RARES, {
+			n(219281, {	-- Alunira
+				["coord"] = { 23.1, 58.5, ISLE_OF_DORN },
+				--["questID"] = x,
+				["cost"] = {{"i", 224026, 1}},	-- 1x Storm Vessel
+				["g"] = {
+					i(223270),	-- Alunira (MOUNT!)
+				},
+			}),
+			n(219264, {	-- Bloodmaw
+				["description"] = "Walking around in the area.",
+				["coords"] = {
+					{ 49.9, 74.8, ISLE_OF_DORN },
+					{ 39.6, 82.4, ISLE_OF_DORN },
+					{ 39.9, 83.8, ISLE_OF_DORN },
+					{ 38.0, 84.0, ISLE_OF_DORN },
+				},
+				["questID"] = 81893,
+				["g"] = {
+					i(223349),	-- Wolf Packleader's Cowl
+					i(223350),	-- Wolf Packleader's Helm
+					i(223351),	-- Wolf Packleader's Hood
+					i(223370),	-- Wolf Packleader's Visor
+				},
+			}),
+			n(219265, {	-- Emperor Pitfang
+				["description"] = "Walking around in the area.",
+				["coord"] = { 47.9, 60.1, ISLE_OF_DORN },
+				["questID"] = 81895,
+				["g"] = {
+					i(223348),	-- Viper's Stone Gauntlets
+					i(223345),	-- Viper's Stone Grips
+					i(223346),	-- Viper's Stone Handguards
+					i(223347),	-- Viper's Stone Mitts
+				},
+			}),
+			n(220068, {	-- Malfuctioning Spire
+				["description"] = "This Rare might only be available during the introduction.",
+				["coord"] = { 26.7, 57.4, ISLE_OF_DORN },
+				["questID"] = 81891,
+			}),
+			n(213115, {	-- Rustul Titancap
+				["description"] = "Walking around in the area.",
+				["coords"] = {
+					{ 31.7, 80.8, ISLE_OF_DORN },
+					{ 33.5, 81.3, ISLE_OF_DORN },
+					{ 32.4, 82.7, ISLE_OF_DORN },
+					{ 31.4, 82.0, ISLE_OF_DORN },
+				},
+				["questID"] = 78619,
+				["g"] = {
+					i(223367),	-- Cuffs of the Titancap
+					i(223366),	-- Bracers of the Titancap
+					i(223365),	-- Wristguards of the Titancap
+					i(223364),	-- Wristwraps of the Titancap
+				},
+			}),
+			n(217534, {	-- Sandres the Relicbearer
+				["coord"] = { 64.1, 73.1, ISLE_OF_DORN },
+				["questID"] = 79685,
+				["g"] = {
+					i(223376),	-- Band of the Relic Bearer
+				},
+			}),
+			n(219262, {	-- Springbubble
+				["coord"] = { 58.7, 60.7, ISLE_OF_DORN },
+				["questID"] = 81892,
+				["g"] = {
+					i(223359),	-- Epaulets of the Steamsurger
+					i(223358),	-- Mantle of the Steamsurger
+					i(223356),	-- Shoulderpads of the Steamsurger
+					i(223357),	-- Spaulders of the Steamsurger
+				},
+			}),
 			n(219263, {	-- Warphorn
 				["description"] = "Walking around in the area.",
 				["coords"] = {
@@ -222,67 +236,57 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(223344),	-- Warphorn's Resilient Vest
 				},
 			}),
-			n(219284, {	-- Zovex
-				--seems like rare in this spot have rotation?
-				["coord"] = { 30.9, 52.3, ISLE_OF_DORN },
-				["questID"] = 82203,
-				["g"] = {
-					i(226118),	-- Arcane Prisoner's Puncher
-					i(226119),	-- Arcane Sharpshooter's Crossbow
-					i(226117),	-- Dalaran Guardian's Arcanotool
-				},
-			}),
-		})),
+		}),
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(KHAZ_ALGAR, {
 		m(ISLE_OF_DORN, {
 			n(RARES, {
-				q(84036, {	-- Extra HQT: Clawbreaker K'zithix
-					["name"] = "Clawbreaker K'zithix killed. Not gonna be breaking any more claws.",
+				q(84036, {	-- Weekly reputation: Clawbreaker K'zithix
+					["name"] = "Clawbreaker K'zithix weekly reputation obtained.",
 				}),
-				q(84029, {	-- Extra HQT: Escaped Cutthroat
-					["name"] = "Escaped Cutthroat killed.",
+				q(84029, {	-- Weekly reputation: Escaped Cutthroat
+					["name"] = "Escaped Cutthroat weekly reputation obtained.",
 				}),
-				q(84034, {	-- Extra HQT: Flamekeeper Graz
-					["name"] = "Flamekeeper Graz killed.",
+				q(84034, {	-- Weekly reputation: Flamekeeper Graz
+					["name"] = "Flamekeeper Graz weekly reputation obtained.",
 				}),
-				q(84028, {	-- Extra HQT: Gar'loc
-					["name"] = "Gar'loc killed.",
+				q(84028, {	-- Weekly reputation: Gar'loc
+					["name"] = "Gar'loc weekly reputation obtained.",
 				}),
-				q(85160, {	-- Extra HQT: Kereke
-					["name"] = "Kereke killed.",
+				q(85160, {	-- Weekly reputation: Kereke
+					["name"] = "Kereke weekly reputation obtained.",
 				}),
-				q(84031, {	-- Extra HQT: Kronolith, Might of the Mountain
-					["name"] = "Kronolith, Might of the Mountain killed.",
+				q(84031, {	-- Weekly reputation: Kronolith, Might of the Mountain
+					["name"] = "Kronolith, Might of the Mountain weekly reputation obtained.",
 				}),
-				q(84039, {	-- Extra HQT: Matriarch Charfuria
-					["name"] = "Matriarch Charfuria killed.",
+				q(84039, {	-- Weekly reputation: Matriarch Charfuria
+					["name"] = "Matriarch Charfuria weekly reputation obtained.",
 				}),
-				q(84026, {	-- Extra HQT: Plaguehart
-					["name"] = "Plaguehart killed.",
+				q(84026, {	-- Weekly reputation: Plaguehart
+					["name"] = "Plaguehart weekly reputation obtained.",
 				}),
-				q(85161, {	-- Extra HQT: Rotfist
-					["name"] = "Rotfist, Rotface's uglier brother, killed.",
+				q(85161, {	-- Weekly reputation: Rotfist
+					["name"] = "Rotfist weekly reputation obtained.",
 				}),
-				q(84032, {	-- Extra HQT: Shallowshell the Clacker
-					["name"] = "Shallowshell the Clacker killed.",
+				q(84032, {	-- Weekly reputation: Shallowshell the Clacker
+					["name"] = "Shallowshell the Clacker weekly reputation obtained.",
 				}),
-				q(84038, {	-- Extra HQT: Sweetspark the Oozeful
-					["name"] = "Sweetspark the Oozeful killed.",
+				q(84038, {	-- Weekly reputation: Sweetspark the Oozeful
+					["name"] = "Sweetspark the Oozeful weekly reputation obtained.",
 				}),
-				q(84030, {	-- Extra HQT: Tempest Lord Incarnus
-					["name"] = "Tempest Lord Incarnus killed.",
+				q(84030, {	-- Weekly reputation: Tempest Lord Incarnus
+					["name"] = "Tempest Lord Incarnus weekly reputation obtained.",
 				}),
-				q(84037, {	-- Extra HQT: Tephratennae
-					["name"] = "Tephratennae killed.",
+				q(84037, {	-- Weekly reputation: Tephratennae
+					["name"] = "Tephratennae weekly reputation obtained.",
 				}),
-				q(84033, {	-- Extra HQT: Twice-Stinger the Wretched
-					["name"] = "Twice-Stinger the Wretched killed.",
+				q(84033, {	-- Weekly reputation: Twice-Stinger the Wretched
+					["name"] = "Twice-Stinger the Wretched weekly reputation obtained.",
 				}),
-				q(85159, {	-- Extra HQT: Zovex
-					["name"] = "Zovex killed.",
+				q(85159, {	-- Weekly reputation: Zovex
+					["name"] = "Zovex weekly reputation obtained.",
 				}),
 			}),
 		}),

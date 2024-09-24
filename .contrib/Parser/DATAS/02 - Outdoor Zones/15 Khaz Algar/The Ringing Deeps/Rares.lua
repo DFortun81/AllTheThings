@@ -7,33 +7,12 @@ end
 root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(THE_RINGING_DEEPS, {
 		n(RARES, sharedData({ ["isDaily"] = true }, {
-			n(220274, {	-- Aquelion
-				["coord"] = { 49.5, 66.2, THE_RINGING_DEEPS },	-- old coord: 55.0, 70.5?
-				["questID"] = 80557,
-				["g"] = {
-					i(223340),	-- Footguards of Shallow Waters
-					i(223372),	-- Sabatons of Shallow Waters
-					i(223371),	-- Slippers of Shallow Waters
-					i(223373),	-- Treads of Shallow Waters
-				},
-			}),
 			n(220265, {	-- Automaxor
 				["coord"] = { 52.6, 19.9, THE_RINGING_DEEPS },
 				["questID"] = 81674,
 				["g"] = {
 					i(221238),	-- Pillar of Constructs
 					i(221218),	-- Reinforced Construct's Greaves
-				},
-			}),
-			n(220276, {	-- Candleflyer Captain
-				["description"] = "Flying around pretty high.",
-				["coord"] = { 66.5, 29.9, THE_RINGING_DEEPS },
-				["questID"] = 80505,
-				["g"] = {
-					i(223360),	-- Flying Kobold's Seatbelt [Plate]
-					i(223361),	-- Flying Kobold's Seatbelt [Cloth]
-					i(223362),	-- Flying Kobold's Seatbelt [Mail]
-					i(223363),	-- Flying Kobold's Seatbelt [Leather]
 				},
 			}),
 			n(220267, {	-- Charmonger
@@ -58,13 +37,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["g"] = {
 					i(221254),	-- Earthshatter Lance
 					i(221205),	-- Vest of the River
-				},
-			}),
-			n(220272, {	-- Deathbound Husk
-				["coord"] = { 66.7, 68.8, THE_RINGING_DEEPS },
-				["questID"] = 81566,
-				["g"] = {
-					i(223368),	-- Twisted Earthen Signet
 				},
 			}),
 			n(220286, {	-- Deepflayer Broodmother
@@ -99,16 +71,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(223949),	-- Dark Depth Stompers
 				},
 			}),
-			n(220275, {	-- King Splash
-				["coord"] = { 42.8, 35.1, THE_RINGING_DEEPS },
-				["questID"] = 80547,
-				["g"] = {
-					i(223354),	-- Waterskipper's Chain Leggings
-					i(223355),	-- Waterskipper's Leggings
-					i(223352),	-- Waterskipper's Legplates
-					i(223353),	-- Waterskipper's Trousers
-				},
-			}),
 			n(220287, {	-- Kelpmire
 				["coord"] = { 46.8, 46.8, THE_RINGING_DEEPS },
 				["questID"] = 81485,
@@ -119,14 +81,23 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(223005),	-- String of Fungal Fruits
 				},
 			}),
-			n(220273, {	-- Rampaging Skardyn
-				["coord"] = { 57.0, 54.7, THE_RINGING_DEEPS },
-				["questID"] = 81563,
+			n(220285, {	-- Lurker of the Deeps <Displaced Sea Horror>
+				["description"] = "Interact with 5 levers located across the zone within 10 seconds to summon this rare.",
+				["coords"] = {
+					{ 60.8, 76.6, THE_RINGING_DEEPS },	-- Lurker of the Deeps
+					{ 49.5, 8.8, THE_RINGING_DEEPS },	-- Lever 1
+					{ 53.9, 25.3, THE_RINGING_DEEPS },	-- Lever 2
+					{ 57.6, 23.6, THE_RINGING_DEEPS },	-- Lever 3
+					{ 62.8, 44.7, THE_RINGING_DEEPS },	-- Lever 4
+					{ 59.1, 92.3, THE_RINGING_DEEPS },	-- Lever 5
+				},
+				["questID"] = 81633,
 				["g"] = {
-					i(223403),	-- Corrupted Earthen Binds
-					i(223404),	-- Corrupted Earthen Cuffs
-					i(223402),	-- Corrupted Earthen Wristguards
-					i(223401),	-- Corrupted Earthen Wristwraps
+					i(221248),	-- Deep Terror Carver
+					i(221233),	-- Deephunter's Bloody Hook
+					i(223501),	-- Ol' Mole Rufus (MOUNT!)
+					i(221255),	-- Sharpened Scalepiercer
+					i(221234),	-- Tidal Pendant
 				},
 			}),
 			n(221217, {	-- Spore-Infused Shalewing
@@ -163,25 +134,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(223005),	-- String of Fungal Fruits
 				},
 			}),
-			n(220285, {	-- Lurker of the Deeps <Displaced Sea Horror>
-				["description"] = "Interact with 5 levers located across the zone within 10 seconds to summon this rare.",
-				["coords"] = {
-					{ 60.8, 76.6, THE_RINGING_DEEPS },	-- Lurker of the Deeps
-					{ 49.5, 8.8, THE_RINGING_DEEPS },	-- Lever 1
-					{ 53.9, 25.3, THE_RINGING_DEEPS },	-- Lever 2
-					{ 57.6, 23.6, THE_RINGING_DEEPS },	-- Lever 3
-					{ 62.8, 44.7, THE_RINGING_DEEPS },	-- Lever 4
-					{ 59.1, 92.3, THE_RINGING_DEEPS },	-- Lever 5
-				},
-				["questID"] = 81633,
-				["g"] = {
-					i(221248),	-- Deep Terror Carver
-					i(221233),	-- Deephunter's Bloody Hook
-					i(223501),	-- Ol' Mole Rufus (MOUNT!)
-					i(221255),	-- Sharpened Scalepiercer
-					i(221234),	-- Tidal Pendant
-				},
-			}),
 			n(220270, {	-- Zilthara <The Deepflayer Devourer>
 				["coord"] = { 52.0, 26.4, THE_RINGING_DEEPS },
 				["questID"] = 80506,
@@ -191,56 +143,100 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 		})),
+		n(RARES, {
+			n(220274, {	-- Aquelion
+				["coord"] = { 49.5, 66.2, THE_RINGING_DEEPS },	-- old coord: 55.0, 70.5?
+				["questID"] = 80557,
+				["g"] = {
+					i(223340),	-- Footguards of Shallow Waters
+					i(223372),	-- Sabatons of Shallow Waters
+					i(223371),	-- Slippers of Shallow Waters
+					i(223373),	-- Treads of Shallow Waters
+				},
+			}),
+			n(220276, {	-- Candleflyer Captain
+				["description"] = "Flying around pretty high.",
+				["coord"] = { 66.5, 29.9, THE_RINGING_DEEPS },
+				["questID"] = 80505,
+				["g"] = {
+					i(223360),	-- Flying Kobold's Seatbelt [Plate]
+					i(223361),	-- Flying Kobold's Seatbelt [Cloth]
+					i(223362),	-- Flying Kobold's Seatbelt [Mail]
+					i(223363),	-- Flying Kobold's Seatbelt [Leather]
+				},
+			}),
+			n(220272, {	-- Deathbound Husk
+				["coord"] = { 66.7, 68.8, THE_RINGING_DEEPS },
+				["questID"] = 81566,
+				["g"] = {
+					i(223368),	-- Twisted Earthen Signet
+				},
+			}),
+			n(220275, {	-- King Splash
+				["coord"] = { 42.8, 35.1, THE_RINGING_DEEPS },
+				["questID"] = 80547,
+				["g"] = {
+					i(223354),	-- Waterskipper's Chain Leggings
+					i(223355),	-- Waterskipper's Leggings
+					i(223352),	-- Waterskipper's Legplates
+					i(223353),	-- Waterskipper's Trousers
+				},
+			}),
+			n(220273, {	-- Rampaging Skardyn
+				["coord"] = { 57.0, 54.7, THE_RINGING_DEEPS },
+				["questID"] = 81563,
+				["g"] = {
+					i(223403),	-- Corrupted Earthen Binds
+					i(223404),	-- Corrupted Earthen Cuffs
+					i(223402),	-- Corrupted Earthen Wristguards
+					i(223401),	-- Corrupted Earthen Wristwraps
+				},
+			}),
+		}),
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(KHAZ_ALGAR, {
 		m(THE_RINGING_DEEPS, {
 			n(RARES, {
-				q(84046, {	-- Extra HQT: Automaxor
-					["name"] = "Automaxor killed.",
+				q(84046, {	-- Weekly reputation: Automaxor
+					["name"] = "Automaxor weekly reputation obtained.",
 				}),
-				q(84044, {	-- Extra HQT: Charmonger
-					["name"] = "Charmonger killed.",
+				q(84044, {	-- Weekly reputation: Charmonger
+					["name"] = "Charmonger weekly reputation obtained.",
 				}),
-				q(84045, {	-- Extra HQT: Coalesced Monstrosity
-					["name"] = "Coalesced Monstrosity killed.",
+				q(84045, {	-- Weekly reputation: Coalesced Monstrosity
+					["name"] = "Coalesced Monstrosity weekly reputation obtained.",
 				}),
-				q(84042, {	-- Extra HQT: Cragmund
-					["name"] = "Cragmund killed.",
+				q(84042, {	-- Weekly reputation: Cragmund
+					["name"] = "Cragmund weekly reputation obtained.",
 				}),
-				q(84044, {	-- Extra HQT: Deathbound Husk
-					["name"] = "Deathbound Husk killed.",
+				q(85162, {	-- Weekly reputation: Deepflayer Broodmother
+					["name"] = "Deepflayer Broodmother weekly reputation obtained.",
 				}),
-				q(85162, {	-- Extra HQT: Deepflayer Broodmother
-					["name"] = "Deepflayer Broodmother killed.",
+				q(84050, {	-- Weekly reputation: Disturbed Earthgorger
+					["name"] = "Disturbed Earthgorger weekly reputation obtained.",
 				}),
-				q(84050, {	-- Extra HQT: Disturbed Earthgorger
-					["name"] = "Disturbed Earthgorger killed.",
+				q(84048, {	-- Weekly reputation: Hungerer of the Deeps
+					["name"] = "Hungerer of the Deeps weekly reputation obtained.",
 				}),
-				q(84048, {	-- Extra HQT: Hungerer of the Deeps
-					["name"] = "Hungerer of the Deeps killed.",
+				q(84047, {	-- Weekly reputation: Kelpmire
+					["name"] = "Kelpmire weekly reputation obtained.",
 				}),
-				q(84047, {	-- Extra HQT: Kelpmire
-					["name"] = "Kelpmire killed.",
+				q(85163, {	-- Weekly reputation: Lurker of the Deeps
+					["name"] = "Lurker of the Deeps weekly reputation obtained.",
 				}),
-				q(85163, {	-- Extra HQT: Lurker of the Deeps
-					["name"] = "Lurker of the Deeps killed.",
+				q(84049, {	-- Weekly reputation: Spore-Infused Shalewing
+					["name"] = "Spore-Infused Shalewing weekly reputation obtained.",
 				}),
-				q(81455, {	-- Extra HQT: King Splash
-					["name"] = "King Splash killed.",
+				q(84040, {	-- Weekly reputation: Terror of Forge
+					["name"] = "Terror of Forge weekly reputation obtained.",
 				}),
-				q(84049, {	-- Extra HQT: Spore-Infused Shalewing
-					["name"] = "Spore-Infused Shalewing killed.",
+				q(84043, {	-- Weekly reputation: Trungal
+					["name"] = "Trungal weekly reputation obtained.",
 				}),
-				q(84040, {	-- Extra HQT: Terror of Forge
-					["name"] = "Terror of Forge killed.",
-				}),
-				q(84043, {	-- Extra HQT: Trungal
-					["name"] = "Trungal killed.",
-				}),
-				q(84041, {	-- Extra HQT: Zilthara
-					["name"] = "Zilthara killed.",
+				q(84041, {	-- Weekly reputation: Zilthara
+					["name"] = "Zilthara weekly reputation obtained.",
 				}),
 			}),
 		}),

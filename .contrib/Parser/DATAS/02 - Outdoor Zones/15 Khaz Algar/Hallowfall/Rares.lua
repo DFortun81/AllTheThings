@@ -21,10 +21,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(223315),	-- Beledar's Spawn (MOUNT!)
 				},
 			}),
-			--n(220159, {	-- Brineslash
-				--["coord"] = { X, Y, HALLOWFALL },
-				--["questID"] = 80486,
-			--}),
 			n(221753, {	-- Deathtide <The Viscous Swell>
 				["coord"] = { 44.8, 42.8, HALLOWFALL },
 				["cost"] = { { "i", 220123, 1 } },	-- 1x Ominous Offering
@@ -33,37 +29,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(225997),	-- Earthen Adventurer's Spaulders
 					i(223921),	-- Ever-Oozing Signet
 					i(223920),	-- Slime Deflecting Stopper
-				},
-			}),
-			n(218458, {	-- Deepfiend Azellix
-				["coord"] = { 72.1, 64.3, HALLOWFALL },
-				["questID"] = 80011,
-				["g"] = {
-					i(223394),	-- Deepfiend Pauldrons
-					i(223396),	-- Deepfiend Shoulder Shells
-					i(223395),	-- Deepfiend Shoulderpads
-					i(223393),	-- Deepfiend Spaulders
-				},
-			}),
-			n(221767, {	-- Funglour
-				["coord"] = { 36.8, 71.8, HALLOWFALL },
-				["questID"] = 81881,
-				["g"] = {
-					i(223377),	-- Ancient Fungarian's Fingerwrap
-				},
-			}),
-			n(221551, {	-- Grimslice
-				["description"] = "Walking around the park. Can be killed by random Arathi NPCs in area.",
-				["coords"] = {
-					{ 35.0, 58.7, HALLOWFALL },
-					{ 35.0, 50.4, HALLOWFALL },
-				},
-				["questID"] = 81761,
-				["g"] = {
-					i(223399),	-- Abyssal Hunter's Chain
-					i(223400),	-- Abyssal Hunter's Cinch
-					i(223397),	-- Abyssal Hunter's Girdle
-					i(223398),	-- Abyssal Hunter's Sash
 				},
 			}),
 			n(221668, {	-- Horror of the Shallows
@@ -82,32 +47,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(221255),	-- Sharpened Scalepiercer
 				},
 			}),
-			n(218426, {	-- Ixlorb the Spinner
-				["coord"] = { 57.0, 64.4, HALLOWFALL },
-				["questID"] = 80006,
-				["g"] = {
-					i(223380),	-- Nerubian Weaver's Chainmail
-					i(223379),	-- Nerubian Weaver's Chestplate
-					i(223374),	-- Nerubian Weaver's Gown
-					i(223381),	-- Nerubian Weaver's Vest
-				},
-			}),
 			n(221534, {	-- Lytfang the Lost
 				["coord"] = { 23.0, 59.2, HALLOWFALL },
 				["questID"] = 81756,
 				["g"] = {
 					i(221207),	-- Den Mother's Chestpiece
-				},
-			}),
-			n(218452, {	-- Murkshade
-				["provider"] = { "n", 218455 },	-- Lost Cache
-				["coord"] = { 52.3, 27.0, HALLOWFALL },
-				["questID"] = 80010,
-				["g"] = {
-					i(223385),	-- Murkshade Gauntlets
-					i(223384),	-- Murkshade Gloves
-					i(223382),	-- Murkshade Grips
-					i(223383),	-- Murkshade Handguards
 				},
 			}),
 			n(221786, {	-- Pride of Beledar
@@ -139,7 +83,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(221255),	-- Sharpened Scalepiercer
 				},
 			}),
-			n(221690, {	-- Strength of Beledar
+			n(221690, {	-- Strenght of Beledar
 				["coord"] = { 43.6, 29.9, HALLOWFALL },
 				["questID"] = 81849,
 				["g"] = {
@@ -164,48 +108,102 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(221215),	-- Taskmaster's Mining Cap
 				},
 			}),
+
+			-- Alpha/Beta
+			--n(220159, {	-- Brineslash
+			--	["coord"] = { X, Y, HALLOWFALL },
+			--	["questID"] = 80486,
+			--}),
 		})),
+		n(RARES, {
+			n(218458, {	-- Deepfiend Azellix
+				["coord"] = { 72.1, 64.3, HALLOWFALL },
+				["questID"] = 80011,
+				["g"] = {
+					i(223394),	-- Deepfiend Pauldrons
+					i(223396),	-- Deepfiend Shoulder Shells
+					i(223395),	-- Deepfiend Shoulderpads
+					i(223393),	-- Deepfiend Spaulders
+				},
+			}),
+			n(221767, {	-- Funglour
+				["coord"] = { 36.8, 71.8, HALLOWFALL },
+				["questID"] = 81881,
+				["g"] = {
+					i(223377),	-- Ancient Fungarian's Fingerwrap
+				},
+			}),
+			n(221551, {	-- Grimslice
+				["description"] = "Walking around the park. Can be killed by random Arathi NPCs in area.",
+				["coords"] = {
+					{ 35.0, 58.7, HALLOWFALL },
+					{ 35.0, 50.4, HALLOWFALL },
+				},
+				["questID"] = 81761,
+				["g"] = {
+					i(223399),	-- Abyssal Hunter's Chain
+					i(223400),	-- Abyssal Hunter's Cinch
+					i(223397),	-- Abyssal Hunter's Girdle
+					i(223398),	-- Abyssal Hunter's Sash
+				},
+			}),
+			n(218426, {	-- Ixlorb the Spinner
+				["coord"] = { 57.0, 64.4, HALLOWFALL },
+				["questID"] = 80006,
+				["g"] = {
+					i(223380),	-- Nerubian Weaver's Chainmail
+					i(223379),	-- Nerubian Weaver's Chestplate
+					i(223374),	-- Nerubian Weaver's Gown
+					i(223381),	-- Nerubian Weaver's Vest
+				},
+			}),
+			n(218452, {	-- Murkshade
+				["provider"] = { "n", 218455 },	-- Lost Cache
+				["coord"] = { 52.3, 27.0, HALLOWFALL },
+				["questID"] = 80010,
+				["g"] = {
+					i(223385),	-- Murkshade Gauntlets
+					i(223384),	-- Murkshade Gloves
+					i(223382),	-- Murkshade Grips
+					i(223383),	-- Murkshade Handguards
+				},
+			}),
+		}),
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(KHAZ_ALGAR, {
 		m(HALLOWFALL, {
 			n(RARES, {
-				q(85164, { -- Extra HQT: Beledar's Spawn
-					["name"] = "Beledar's Spawn killed.",
+				q(85164, { -- Weekly reputation: Beledar's Spawn
+					["name"] = "Beledar's Spawn weekly reputation obtained.",
 				}),
-				q(85165, { -- Extra HQT: Deathtide
-					["name"] = "Deathtide killed.",
+				q(85165, { -- Weekly reputation: Deathtide
+					["name"] = "Deathtide weekly reputation obtained.",
 				}),
-				q(84055, { -- Extra HQT: Toadstomper
-					["name"] = "Toadstomper killed.",
+				q(84065, { -- Weekly reputation: Horror of the Shallows
+					["name"] = "Horror of the Shallows weekly reputation obtained.",
 				}),
-				q(84061, { -- Extra HQT: Murkshade
-					["name"] = "Murkshade killed.",
+				q(84063, { -- Weekly reputation: Lytfang the Lost
+					["name"] = "Lytfang the Lost weekly reputation obtained.",
 				}),
-				q(84061, { -- Extra HQT: The Taskmaker
-					["name"] = "The Taskmaker killed.",
+				q(84068, { -- Weekly reputation: Pride of Beledar
+					["name"] = "Pride of Beledar weekly reputation obtained.",
 				}),
-				q(84065, { -- Extra HQT: Horror of the Shallows
-					["name"] = "Horror of the Shallows killed.",
+				q(84067, { -- Weekly reputation: Sir Alastair Purefire
+					["name"] = "Sir Alastair Purefire weekly reputation obtained.",
 				}),
-				q(84063, { -- Extra HQT: Lytfang the Lost
-					["name"] = "Lytfang the Lost killed. He's not lost anymore.",
+				q(84062, { -- Weekly reputation: Sloshmuck
+					["name"] = "Sloshmuck weekly reputation obtained.",
 				}),
-				q(84068, { -- Extra HQT: Pride of Beledar
-					["name"] = "Pride of Beledar killed. Pride is a sin, you know?",
+				q(84066, { -- Weekly reputation: Strenght of Beledar
+					["name"] = "Strenght of Beledar weekly reputation obtained.",
 				}),
-				q(84062, { -- Extra HQT: Sloshmuck
-					["name"] = "Sloshmuck killed.",
+				q(84064, { -- Weekly reputation: The Perchfather
+					["name"] = "The Perchfather weekly reputation obtained.",
 				}),
-				q(84067, { -- Extra HQT: Sir Alastair Purefire
-					["name"] = "Sir Alastair Purefire killed.",
-				}),
-				q(84066, { -- Extra HQT: Strenght of Beledar
-					["name"] = "Strenght of Beledar killed.",
-				}),
-				q(84064, { -- Extra HQT: The Perchfather
-					["name"] = "The Perchfather killed.",
+				q(84061, { -- Weekly reputation: The Taskmaker
+					["name"] = "The Taskmaker weekly reputation obtained.",
 				}),
 			}),
 		}),
