@@ -228,7 +228,9 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 			}),
 		}),
 		n(REWARDS, {
-			currency(2123),	-- Bloody Tokens
+			currency(2123, {	-- Bloody Tokens
+				["timeline"] = { REMOVED_11_0_0 },
+			}),
 			i(201756),	-- Bulging Coin Purse
 			i(202184),	-- Trophy of Strife
 		}),
@@ -303,6 +305,11 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 				i(225448),    -- Pattern Algari Competitors Leather Trousers
 			}),
 		})
+		n(REWARDS, {
+			currency(2123, {	-- Bloody Tokens
+				["timeline"] = { ADDED_TWW_LAUNCH },
+			}),
+		}),
 	})),
 })));
 
