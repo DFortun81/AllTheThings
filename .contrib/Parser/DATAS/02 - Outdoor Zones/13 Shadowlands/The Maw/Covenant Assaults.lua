@@ -403,7 +403,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							["provider"] = { "n", 177072 },	-- Baroness Draka
 							["coord"] = { 33.8, 54.8, THE_MAW },
 							["g"] = {
-								achraw(15037, {	-- This Army
+								ach(15037, {	-- This Army
 									crit(52044, {	-- Cutter Fin
 										["crs"] = { 177771 },	-- Cutter Fin
 									}),
@@ -906,9 +906,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"
 				q(63806),	-- selecting Flytrap to accompany you on You and What Army (spellID 350869)
 				q(63808),	-- selecting Kearnen the Blade to accompany you on You and What Army (spellID 350866)
 				q(63805),	-- selecting Winslow Swain to accompany you on You and What Army (spellID 350867)
-				q(64150),	-- turning in 'Centurion's March' (questID 63753)
-				q(64147),	-- triggered when turning in 'Pulling His Chain' (questID 63621)
-				q(64148),	-- triggered when completing 'Pulling His Chain' (questID 63621)
+				q(64147, name(HEADERS.NPC, 177767)),	-- triggered when turning in 'Pulling His Chain' (questID 63621) // Boil Master Yetch
+				q(64148, name(HEADERS.NPC, 177771)),	-- triggered when completing 'Pulling His Chain' (questID 63621) // Cutter Fin
+				q(64149, name(HEADERS.NPC, 177764)),	-- Completing any quest with Winslow Swan during necrolord assault (might be achievement "this army" pop) // Winslow Swain
+				q(64150, name(HEADERS.NPC, 158300)),	-- turning in 'Centurion's March' (questID 63753) // Flytrap
+				q(64151, name(HEADERS.NPC, 177769)),	-- Completed at the same time as 63669 (Somebody Feed Kevin) // Kearnen the Blade
 				q(63544),	-- triggered when completing 'Necrolord Assault' (questID 63543) (spellID 349796)
 
 				-- Night Fae

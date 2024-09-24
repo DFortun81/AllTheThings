@@ -568,8 +568,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"
 				q(63195),	-- triggered when starting/accepting Hunt Souleaters (spellID 347178)
 				q(63196),	-- triggered when starting/accepting Hunt Death Elementals (spellID 347179)
 				q(63197),	-- triggered when starting/accepting Hunt Winged Souleaters (spellID 347180)
-				q(64151, {["timeline"] = {ADDED_9_1_0}}),	-- Completed at the same time as 63669 (Somebody Feed Kevin)
-				q(64149, {["timeline"] = {ADDED_9_1_0}}),	-- Completing any quest with Winslow Swan during necrolord assault (might be achievement "this army" pop),
 
 				-- Eye of the Jailer Levels
 				q(63379),	-- Assassins (2)
