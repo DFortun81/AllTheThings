@@ -161,10 +161,10 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 			["timeline"] = { ADDED_5_2_0, REMOVED_8_3_0 },
 		}),
 		i(190231, {	-- Ash'adar, Harbinger of Dawn (MOUNT!)
-			["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 },	-- 1st March until 1st April 2024
+			["timeline"] = { ADDED_10_2_5, REMOVED_10_2_6 },	-- 1st March 2024 until 1st April 2024
 		}),
 		i(54811, {	-- Celestial Steed (MOUNT!)
-			["timeline"] = { ADDED_3_3_3, REMOVED_10_0_2_LAUNCH },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
+			["timeline"] = { ADDED_3_3_3, REMOVED_10_0_2_LAUNCH },	-- Removed from shop on Jan 2 2023, will be offered sometimes in Trading Post
 		}),
 		i(112327, {	-- Grinning Reaver (MOUNT!)
 			["timeline"] = { ADDED_6_0_2, REMOVED_8_3_0 },
