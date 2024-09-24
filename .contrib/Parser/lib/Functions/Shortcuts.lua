@@ -1060,7 +1060,9 @@ heir = function(id, t)									-- Create an HEIRLOOM Object(NOTE: You should onl
 end
 hqt = function(id, t)									-- Create a HQT (Hidden Quest Tracker) Object
 	-- currently this is simply a 'Quest' but will soon be an actual new Type to track
-	return q(id, t);
+	t = q(id, t);
+	t.type = "hqt"
+	return t
 end
 illusion = function(id, t)								-- Create an ILLUSION Object (only necessary for illusions without itemIDs)
 	return struct("illusionID", id, t);

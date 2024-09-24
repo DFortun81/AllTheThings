@@ -569,6 +569,7 @@ iq(227416, 81390);					-- Faded Miner's Notes
 iq(227408, 80749);					-- Faded Scribe's Runic Drawings
 iq(227417, 84232);					-- Faded Skinner's Notes
 iq(227410, 80871);					-- Faded Tailor's Diagrams
+iq(210826, 76996);					-- Harvestbot Repair Kit
 iq(224023, 82630);					-- Herbal Embalming Techniques
 iq(224645, 83058);					-- Jewel-Etched Alchemy Notes
 iq(224647, 83059);					-- Jewel-Etched Blacksmithing Notes

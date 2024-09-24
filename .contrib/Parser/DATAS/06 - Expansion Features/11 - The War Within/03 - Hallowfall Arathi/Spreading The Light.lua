@@ -965,7 +965,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			--q(79188),	-- ??? "After picking up Spider-Touched Bag (211973), during the keyflame event and turning in 79173 Supply the Effort" //That last quest is what I turned in, Supply the Effort but it popped up a bit after turning in, First Bag this week
 						-- ??? "after turning in 79173 Supply the Effort and receiving a lamplighter supply satchel (first that week)"
 			-- Vendor
-			q(76996),	-- after buy and use itemID 210826 (Harvestbot Repair Kit)
 			q(83341),	-- after turn in 78933 (The Sweet Eclipse), unlock ability to buy Sweet Eclipse from vendor
 			q(83342),	-- after turn in 76394 (Shadows of Flavor), unlock ability to buy Twilight-Spiced Grouper from vendor
 			q(83343),	-- after turn in 80562 (Blossoming Delight), unlock ability to buy Darkstem Stew from vendor

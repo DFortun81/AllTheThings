@@ -436,8 +436,13 @@ child:CreateAccountWideCheckbox("QUESTS", "Quests")
 local checkboxQuests =
 child:CreateTrackingCheckbox("QUESTS", "Quests", true)
 	:AlignAfter(accwideCheckboxQuests)
+local checkboxQuestsLocked =
 child:CreateTrackingCheckbox("QUESTS_LOCKED", "QuestsLocked", true)
 	:AlignAfter(checkboxQuests)
+if app.IsRetail then
+	child:CreateTrackingCheckbox("QUESTS_HIDDEN_TRACKER", "QuestsHidden", true)
+		:AlignAfter(checkboxQuestsLocked)
+end
 
 local accwideCheckboxRecipes =
 child:CreateAccountWideCheckbox("RECIPES", "Recipes")

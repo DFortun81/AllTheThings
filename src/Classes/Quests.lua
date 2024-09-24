@@ -367,8 +367,12 @@ if app.IsRetail then
 		questID
 		and
 		(
-			-- Regular Quests
-			app.Settings.Collectibles.Quests
+			-- Quest collectible type is being collected
+			-- TODO: will probably need to split this method into separate types
+			-- and use in separate Quest types...
+			-- but really need a revision of the Variant/Subclass logic to make this
+			-- viable and not chaos like it is becoming
+			app.Settings.Collectibles[t.CollectibleType or "Quests"]
 			and
 			(
 				(
@@ -1424,6 +1428,7 @@ end
 
 -- Quest Lib
 local createQuest = app.CreateClass("Quest", "questID", {
+	CollectibleType = function() return "Quests" end,
 	text = app.IsClassic and function(t)
 		if t.repeatable then return "|cff0070DD" .. t.name .. "|r"; end
 		return t.name;
@@ -1576,6 +1581,12 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		AndLockCriteria = AndLockCriteria,
 	},
 }, (function(t) return t.maxReputation; end),
+"AsHQT", {
+	CollectibleType = function() return "QuestsHidden" end,
+	variants = {
+		AndLockCriteria = AndLockCriteria,
+	},
+}, (function(t) return t.type == "hqt" end),
 -- Both: Breadcrumbs
 "AsBreadcrumb", {
 	text = function(t)

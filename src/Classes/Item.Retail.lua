@@ -454,6 +454,9 @@ local ItemWithFactionBonus = {
 }
 app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
 "WithQuest", {
+	CollectibleType = app.IsClassic and function() return "Quests" end
+	-- Retail: items tracked as HQT
+	or function() return "QuestsHidden" end,
 	collectible = app.GlobalVariants.AndLockCriteria.collectible or app.CollectibleAsQuest,
 	locked = app.GlobalVariants.AndLockCriteria.locked,
 	collected = function(t)

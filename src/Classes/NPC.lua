@@ -107,6 +107,50 @@ do
 			end
 			return app.GetRelativeDifficultyIcon(t)
 		end,
+		indicatorIcon = function(t)
+			if app.ActiveVignettes.npc[t.npcID] then
+				return app.asset("Interface_Ping")
+			end
+		end,
+		-- use custom to track opposite faction questID collection in account/debug if the NPC is considered collectible
+		customTotal = function(t)
+			if app.MODE_DEBUG_OR_ACCOUNT and t.questIDA and t.collectible then
+				return 1
+			end
+		end,
+		customProgress = function(t)
+			return (t.otherFactionQuestID and IsQuestFlaggedCompleted(t.otherFactionQuestID)) and 1 or 0
+		end,
+	},
+	"WithQuest", {
+		CollectibleType = app.IsClassic and function() return "Quests" end
+		-- Retail: NPCs tracked as HQT
+		or function() return "QuestsHidden" end,
+		collectible = app.GlobalVariants.AndLockCriteria.collectible or app.CollectibleAsQuest,
+		locked = app.GlobalVariants.AndLockCriteria.locked,
+		collected = function(t)
+			return IsQuestFlaggedCompletedForObject(t)
+		end,
+		trackable = function(t)
+			-- raw repeatable quests can't really be tracked since they immediately unflag
+			return not rawget(t, "repeatable")
+		end,
+		saved = function(t)
+			return IsQuestFlaggedCompleted(t.questID)
+		end,
+		repeatable = function(t)
+			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly
+		end,
+		altcollected = function(t)
+			if t.altQuests then
+				for i,questID in ipairs(t.altQuests) do
+					if IsQuestFlaggedCompleted(questID) then
+						t.altcollected = questID
+						return questID
+					end
+				end
+			end
+		end,
 		-- questID is sometimes a faction-based questID for a single NPC (i.e. BFA Warfront Rares), thanks Blizzard
 		questID = function(t)
 			local qa = t.questIDA
@@ -138,48 +182,7 @@ do
 				end
 			end
 		end,
-		indicatorIcon = function(t)
-			if app.ActiveVignettes.npc[t.npcID] then
-				return app.asset("Interface_Ping")
-			end
-		end,
-		-- use custom to track opposite faction questID collection in account/debug if the NPC is considered collectible
-		customTotal = function(t)
-			if app.MODE_DEBUG_OR_ACCOUNT and t.questIDA and t.collectible then
-				return 1
-			end
-		end,
-		customProgress = function(t)
-			return (t.otherFactionQuestID and IsQuestFlaggedCompleted(t.otherFactionQuestID)) and 1 or 0
-		end,
-	},
-	"WithQuest", {
-		collectible = app.GlobalVariants.AndLockCriteria.collectible or app.CollectibleAsQuest,
-		locked = app.GlobalVariants.AndLockCriteria.locked,
-		collected = function(t)
-			return IsQuestFlaggedCompletedForObject(t)
-		end,
-		trackable = function(t)
-			-- raw repeatable quests can't really be tracked since they immediately unflag
-			return not rawget(t, "repeatable")
-		end,
-		saved = function(t)
-			return IsQuestFlaggedCompleted(t.questID)
-		end,
-		repeatable = function(t)
-			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly
-		end,
-		altcollected = function(t)
-			if t.altQuests then
-				for i,questID in ipairs(t.altQuests) do
-					if IsQuestFlaggedCompleted(questID) then
-						t.altcollected = questID
-						return questID
-					end
-				end
-			end
-		end,
-	}, (function(t) return t.questID end))
+	}, (function(t) return t.questID or t.questIDA or t.questIDH end))
 end
 
 -- Header Lib

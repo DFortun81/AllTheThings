@@ -21,6 +21,7 @@ local Things = {
 	"MusicRollsAndSelfieFilters",
 	"Quests",
 	"QuestsLocked",
+	"QuestsHidden",
 	"PVPRanks",
 	"Recipes",
 	"Reputations",
@@ -74,6 +75,7 @@ local GeneralSettingsBase = {
 		--["Thing:PVPRanks"] = app.GameBuildVersion < 20000,	-- CRIEVE NOTE: Maybe someday? Classic Era project.
 		["Thing:Quests"] = true,
 		["Thing:QuestsLocked"] = false,
+		["Thing:QuestsHidden"] = false,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
 		["Thing:RuneforgeLegendaries"] = app.GameBuildVersion >= 90000,
