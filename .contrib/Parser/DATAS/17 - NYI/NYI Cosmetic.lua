@@ -540,8 +540,11 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(ARMOR, {
 				i(225414),	-- Cave Topographer's Drape
 				i(226369),	-- Classic Faded Tabard
+				i(224165),	-- Dornogal Tabard
 				i(224869),	-- Earthen Drape
+				i(224169),	-- Freywold Tabard
 				i(226366),	-- Gloves of the Morning Mist
+				i(224167),	-- Gundargaz Tabard
 				i(225411),	-- Secret-Dredger's Cloak
 				i(224168),	-- Stonebound Tabard
 				i(225412),	-- Torchbearer's Greatcloak
