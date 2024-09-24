@@ -209,7 +209,8 @@ local L = setmetatable({
 	NOT_COLLECTED = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Not Collected|r";		-- Acquired the colors and icon from CanIMogIt.
 	COMPLETE = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complete|r";		-- Acquired the colors and icon from CanIMogIt.
 	COMPLETE_OTHER = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complete*|r";		-- Acquired the colors and icon from CanIMogIt.
-	INCOMPLETE = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Incomplete|r";		-- Acquired the colors and icon from CanIMogIt.
+	INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |c" .. app.Colors.Completed .. "Incomplete|r";		-- Acquired the colors and icon from CanIMogIt.
+	INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 
 	-- These are populated by the LocalizationDB.
 	EVENT_REMAPPING = {};
