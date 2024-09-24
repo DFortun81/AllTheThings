@@ -307,7 +307,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 		})
 		n(REWARDS, {
 			currency(2123, {	-- Bloody Tokens
-				["timeline"] = { ADDED_TWW_LAUNCH },
+				["timeline"] = { "Added 11.0.2" },
 			}),
 		}),
 	})),
