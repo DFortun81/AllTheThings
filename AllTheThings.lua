@@ -2229,6 +2229,182 @@ local function GetRelativeDifficulty(group, difficultyID)
 		end
 	end
 end
+local function AddContainsData(group, tooltipInfo)
+	local key = group.key
+	-- only show Contains on Things
+	if not app.ThingKeys[key] then return end
+	local id = group[key]
+	local working = group.working
+	-- Sort by the heirarchy of the group
+	if not working then
+		app.Sort(group.g, app.SortDefaults.Hierarchy, true);
+	end
+	-- app.PrintDebug("SummarizeThings",group.hash,group.g and #group.g)
+	local entries = {};
+	-- app.Debugging = "CONTAINS-"..group.hash;
+	ContainsLimit = app.Settings:GetTooltipSetting("ContainsCount") or 25;
+	ContainsExceeded = 0;
+	BuildContainsInfo(group.g, entries, 1, 1)
+	-- app.Debugging = nil;
+	-- app.PrintDebug(entries and #entries,"contains entries")
+	if #entries > 0 then
+		local left, right;
+		tinsert(tooltipInfo, { left = L.CONTAINS });
+		local item, entry;
+		local RecursiveParentField = app.GetRelativeValue
+		for i=1,#entries do
+			item = entries[i];
+			entry = item.group;
+			if not entry.objectiveID then
+				left = entry.text;
+				if not left or IsRetrieving(left) then
+					left = RETRIEVING_DATA;
+					working = true;
+				end
+				left = TryColorizeName(entry, left);
+
+				-- If this entry has a specific Class requirement and is not itself a 'Class' header, tack that on as well
+				if entry.c and entry.key ~= "classID" and #entry.c == 1 then
+					left = left .. " [" .. TryColorizeName(entry, app.ClassInfoByID[entry.c[1]].name) .. "]";
+				end
+				if entry.icon then item.prefix = item.prefix .. "|T" .. entry.icon .. ":0|t "; end
+
+				-- If this entry has specialization requirements, let's attempt to show the specialization icons.
+				right = item.right;
+				local specs = entry.specs;
+				if specs and #specs > 0 then
+					right = GetSpecsString(specs, false, false) .. right;
+				else
+					local c = entry.c;
+					if c and #c > 0 then
+						right = GetClassesString(c, false, false) .. right;
+					end
+				end
+
+				-- If this entry has customCollect requirements, list them for clarity
+				if entry.customCollect then
+					for i,c in ipairs(entry.customCollect) do
+						local reason = L.CUSTOM_COLLECTS_REASONS[c];
+						local icon_color_str = reason.icon.." |c"..reason.color..reason.text;
+						if i > 1 then
+							right = icon_color_str .. " / " .. right;
+						else
+							right = icon_color_str .. "  " .. right;
+						end
+					end
+				end
+
+				-- If this entry is an Item, show additional Source information for that Item (since it needs to be acquired in a specific location most-likely)
+				if entry.itemID and key ~= "npcID" and key ~= "encounterID" then
+					-- Add the Zone name
+					local field, id;
+					for _,v in ipairs(TooltipSourceFields) do
+						id = RecursiveParentField(entry, v, true);
+						-- print("check",v,id)
+						if id then
+							field = v;
+							break;
+						end
+					end
+					if field then
+						local locationGroup, locationName;
+						-- convert maps
+						if field == "maps" then
+							-- if only a few maps, list them all
+							local count = #id;
+							if count == 1 then
+								locationName = app.GetMapName(id[1]);
+							else
+								-- instead of listing individual zone names, just list zone count for brevity
+								local names = {__count=0}
+								local name
+								for j=1,count,1 do
+									name = app.GetMapName(id[j]);
+									if name and not names[name] then
+										names.__count = names.__count + 1
+									end
+								end
+								locationName = "["..names.__count.." "..BRAWL_TOOLTIP_MAPS.."]"
+								-- old: list 3 zones/+++
+								-- local mapsConcat, names, name = {}, {}, nil;
+								-- for j=1,count,1 do
+								-- 	name = app.GetMapName(id[j]);
+								-- 	if name and not names[name] then
+								-- 		names[name] = true;
+								-- 		mapsConcat[#mapsConcat + 1] = name
+								-- 	end
+								-- end
+								-- -- 1 unique map name displayed
+								-- if #mapsConcat < 2 then
+								-- 	locationName = app.TableConcat(mapsConcat, nil, nil, "/");
+								-- else
+								-- 	mapsConcat[2] = "+"..(count - 1);
+								-- 	locationName = app.TableConcat(mapsConcat, nil, nil, "/", 1, 2);
+								-- end
+							end
+						else
+							locationGroup = SearchForObject(field, id, "field") or (id and field == "mapID" and C_Map_GetMapInfo(id));
+							locationName = locationGroup and TryColorizeName(locationGroup, locationGroup.name);
+						end
+						-- print("contains info",entry.itemID,field,id,locationGroup,locationName)
+						if locationName then
+							-- Add the immediate parent group Vendor name
+							local rawParent, sParent = rawget(entry, "parent"), entry.sourceParent;
+							-- the source entry is different from the raw parent and the search context, then show the source parent text for reference
+							if sParent and sParent.text and not GroupMatchesParams(rawParent, sParent.key, sParent[sParent.key]) and not GroupMatchesParams(sParent, key, id) then
+								local parentText = sParent.text;
+								if IsRetrieving(parentText) then
+									working = true;
+								end
+								right = locationName .. " > " .. parentText .. " " .. right;
+							else
+								right = locationName .. " " .. right;
+							end
+						-- else
+							-- print("No Location name for item",entry.itemID,id,field)
+						end
+					end
+				end
+
+				-- If this entry is an Achievement Criteria (whose raw parent is not the Achievement) then show the Achievement
+				if entry.criteriaID and entry.achievementID then
+					local rawParent = rawget(entry, "parent");
+					if not rawParent or rawParent.achievementID ~= entry.achievementID then
+						local critAch = SearchForObject("achievementID", entry.achievementID, "key");
+						left = left .. " > " .. (critAch and critAch.text or "???");
+					end
+				end
+
+				tinsert(tooltipInfo, { left = item.prefix .. left, right = right });
+			end
+		end
+
+		if ContainsExceeded > 0 then
+			tinsert(tooltipInfo, { left = (L.AND_MORE):format(ContainsExceeded) });
+		end
+
+		if app.Settings:GetTooltipSetting("Currencies") then
+			local currencyCount = app.CalculateTotalCosts(group, id)
+			if currencyCount > 0 then
+				tinsert(tooltipInfo, { left = L.CURRENCY_NEEDED_TO_BUY, right = formatNumericWithCommas(currencyCount) });
+			end
+		end
+	end
+	return working
+end
+app.AddEventHandler("OnLoad", function()
+	app.Settings.CreateInformationType("SummarizeThings", {
+		text = "SummarizeThings",
+		priority = 2.9, HideCheckBox = true,
+		Process = function(t, reference, tooltipInfo)
+			if reference.g then
+				if AddContainsData(reference, tooltipInfo) then
+					reference.working = true
+				end
+			end
+		end
+	})
+end)
 
 local GetRawField = app.GetRawField
 local SourceSearcher = setmetatable({
@@ -2755,205 +2931,17 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	-- Determine if this tooltip needs more work the next time it refreshes.
-	local working
-	group.working = nil;
 	group.itemString = itemString
 
 	if isTopLevelSearch then
-		-- needs tooltip if it's just a regular cached group search skip level... don't bother populating until actually needing to show into a tooltip
-		-- TODO: all of this tooltip data should be moved into Information Types
-		-- then no tooltip information will be generated within the cache search and only within tooltip
-		-- scope when required
-
-		--- Start of tooltip code migration
-		local tooltipInfo = {}
-		-- Add various text to the group now that it has been consolidated from all sources
-
-		-- Shared Appearances and Stuff
-
-		if group.g and app.Settings:GetTooltipSetting("SummarizeThings") then
-			-- Sort by the heirarchy of the group
-			if not working then
-				app.Sort(group.g, app.SortDefaults.Hierarchy, true);
-			end
-			-- app.PrintDebug("SummarizeThings",group.hash,group.g and #group.g)
-			local entries = {};
-			-- app.Debugging = "CONTAINS-"..group.hash;
-			ContainsLimit = app.Settings:GetTooltipSetting("ContainsCount") or 25;
-			ContainsExceeded = 0;
-			BuildContainsInfo(group.g, entries, 1, 1)
-			-- app.Debugging = nil;
-			-- app.PrintDebug(entries and #entries,"contains entries")
-			if #entries > 0 then
-				local left, right;
-				tinsert(tooltipInfo, { left = L.CONTAINS });
-				local item, entry;
-				local RecursiveParentField = app.GetRelativeValue
-				for i=1,#entries do
-					item = entries[i];
-					entry = item.group;
-					if not entry.objectiveID then
-						left = entry.text;
-						if not left or IsRetrieving(left) then
-							left = RETRIEVING_DATA;
-							working = true;
-						end
-						left = TryColorizeName(entry, left);
-
-						-- If this entry has a specific Class requirement and is not itself a 'Class' header, tack that on as well
-						if entry.c and entry.key ~= "classID" and #entry.c == 1 then
-							left = left .. " [" .. TryColorizeName(entry, app.ClassInfoByID[entry.c[1]].name) .. "]";
-						end
-						if entry.icon then item.prefix = item.prefix .. "|T" .. entry.icon .. ":0|t "; end
-
-						-- If this entry has specialization requirements, let's attempt to show the specialization icons.
-						right = item.right;
-						local specs = entry.specs;
-						if specs and #specs > 0 then
-							right = GetSpecsString(specs, false, false) .. right;
-						else
-							local c = entry.c;
-							if c and #c > 0 then
-								right = GetClassesString(c, false, false) .. right;
-							end
-						end
-
-						-- If this entry has customCollect requirements, list them for clarity
-						if entry.customCollect then
-							for i,c in ipairs(entry.customCollect) do
-								local reason = L.CUSTOM_COLLECTS_REASONS[c];
-								local icon_color_str = reason.icon.." |c"..reason.color..reason.text;
-								if i > 1 then
-									right = icon_color_str .. " / " .. right;
-								else
-									right = icon_color_str .. "  " .. right;
-								end
-							end
-						end
-
-						-- If this entry is an Item, show additional Source information for that Item (since it needs to be acquired in a specific location most-likely)
-						if entry.itemID and paramA ~= "npcID" and paramA ~= "encounterID" then
-							-- Add the Zone name
-							local field, id;
-							for _,v in ipairs(TooltipSourceFields) do
-								id = RecursiveParentField(entry, v, true);
-								-- print("check",v,id)
-								if id then
-									field = v;
-									break;
-								end
-							end
-							if field then
-								local locationGroup, locationName;
-								-- convert maps
-								if field == "maps" then
-									-- if only a few maps, list them all
-									local count = #id;
-									if count == 1 then
-										locationName = app.GetMapName(id[1]);
-									else
-										-- instead of listing individual zone names, just list zone count for brevity
-										local names = {__count=0}
-										local name
-										for j=1,count,1 do
-											name = app.GetMapName(id[j]);
-											if name and not names[name] then
-												names.__count = names.__count + 1
-											end
-										end
-										locationName = "["..names.__count.." "..BRAWL_TOOLTIP_MAPS.."]"
-										-- old: list 3 zones/+++
-										-- local mapsConcat, names, name = {}, {}, nil;
-										-- for j=1,count,1 do
-										-- 	name = app.GetMapName(id[j]);
-										-- 	if name and not names[name] then
-										-- 		names[name] = true;
-										-- 		mapsConcat[#mapsConcat + 1] = name
-										-- 	end
-										-- end
-										-- -- 1 unique map name displayed
-										-- if #mapsConcat < 2 then
-										-- 	locationName = app.TableConcat(mapsConcat, nil, nil, "/");
-										-- else
-										-- 	mapsConcat[2] = "+"..(count - 1);
-										-- 	locationName = app.TableConcat(mapsConcat, nil, nil, "/", 1, 2);
-										-- end
-									end
-								else
-									locationGroup = SearchForObject(field, id, "field") or (id and field == "mapID" and C_Map_GetMapInfo(id));
-									locationName = locationGroup and TryColorizeName(locationGroup, locationGroup.name);
-								end
-								-- print("contains info",entry.itemID,field,id,locationGroup,locationName)
-								if locationName then
-									-- Add the immediate parent group Vendor name
-									local rawParent, sParent = rawget(entry, "parent"), entry.sourceParent;
-									-- the source entry is different from the raw parent and the search context, then show the source parent text for reference
-									if sParent and sParent.text and not GroupMatchesParams(rawParent, sParent.key, sParent[sParent.key]) and not GroupMatchesParams(sParent, paramA, paramB) then
-										local parentText = sParent.text;
-										if IsRetrieving(parentText) then
-											working = true;
-										end
-										right = locationName .. " > " .. parentText .. " " .. right;
-									else
-										right = locationName .. " " .. right;
-									end
-								-- else
-									-- print("No Location name for item",entry.itemID,id,field)
-								end
-							end
-						end
-
-						-- If this entry is an Achievement Criteria (whose raw parent is not the Achievement) then show the Achievement
-						if entry.criteriaID and entry.achievementID then
-							local rawParent = rawget(entry, "parent");
-							if not rawParent or rawParent.achievementID ~= entry.achievementID then
-								local critAch = SearchForObject("achievementID", entry.achievementID, "key");
-								left = left .. " > " .. (critAch and critAch.text or "???");
-							end
-						end
-
-						tinsert(tooltipInfo, { left = item.prefix .. left, right = right });
-					end
-				end
-
-				if ContainsExceeded > 0 then
-					tinsert(tooltipInfo, { left = (L.AND_MORE):format(ContainsExceeded) });
-				end
-
-				if app.Settings:GetTooltipSetting("Currencies") then
-					local currencyCount = app.CalculateTotalCosts(group, paramB)
-					if currencyCount > 0 then
-						tinsert(tooltipInfo, { left = L.CURRENCY_NEEDED_TO_BUY, right = formatNumericWithCommas(currencyCount) });
-					end
-				end
-			end
-		end
-
-		-- Add various extra field info if enabled in settings
-		app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group)
-
-		-- If there was any informational text generated, then attach that info.
-		if #tooltipInfo > 0 then
-			group.tooltipInfo = tooltipInfo
-			for i,item in ipairs(tooltipInfo) do
-				if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color) end
-			end
-		end
-
-		--- End of tooltip code migration
 
 		group.isBaseSearchResult = true;
 
-		-- app.PrintDebug("TopLevelSearch",working and "WORKING" or "DONE",group.text or (group.key and group.key .. group[group.key]),group)
-
 		-- Track if the result is not finished processing
 		if isTopLevelSearch then InitialCachedSearch = nil; end
-
-		if group.working then working = true; end
-		group.working = working
 	end
 
-	return group, working;
+	return group
 end
 app.GetCachedSearchResults = function(method, paramA, paramB, ...)
 	return app.GetCachedData((paramB and table.concat({ paramA, paramB, ...}, ":")) or paramA, GetSearchResults, method, paramA, paramB, ...);

@@ -720,7 +720,7 @@ do
 	end) or function(sourceID, itemID, t)
 		t = createItemWithAppearance(sourceID, t);
 		-- TEMPORARY
-		if itemID > 0 then
+		if itemID and itemID > 0 then
 			t.itemID = itemID;
 		end
 		return t;
@@ -757,7 +757,7 @@ app.AddSourceInformation = function(sourceID, info, group)
 		local sourceGroup = group
 		-- app.PrintDebug("ASI",app:SearchLink(group))
 		-- app.PrintGroup(group)
-		local working = false;
+		local working
 		local allVisualSources = C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID) or app.EmptyTable;
 		if #allVisualSources < 1 or not contains(allVisualSources, sourceID) then
 			-- Items with SourceInfo which don't register as having any visual data or don't include themselves as a shared appearance...

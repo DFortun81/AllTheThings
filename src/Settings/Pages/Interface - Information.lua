@@ -1067,9 +1067,11 @@ app.ProcessInformationTypes = function(tooltipInfo, reference)
 	end
 end
 app.ProcessInformationTypesForExternalTooltips = function(tooltipInfo, reference)
+	-- app.PrintDebug("PITFET",#tooltipInfo,app.ActiveRowReference and true)
 	for _,informationType in ipairs(app.ActiveRowReference and ActiveInformationTypes or ActiveInformationTypesForExternalTooltips) do
 		informationType:Process(reference, tooltipInfo);
 	end
+	-- app.PrintDebug("PITFET.Done",#tooltipInfo)
 end
 
 local function OnClickForInformationCheckBox(self)

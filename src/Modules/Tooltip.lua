@@ -705,6 +705,7 @@ local function ClearTooltip(tooltip)
 	tooltip.AllTheThingsProcessing = nil;
 	tooltip.ATT_AttachComplete = nil;
 end
+local HexToARGB = app.Modules.Color.HexToARGB;
 local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",...)
 	app.SetSkipLevel(1);
@@ -718,20 +719,26 @@ local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
 			end
 
 			local tooltipInfo = group.tooltipInfo
-			-- TODO: comment in once all tooltip logic is hooked via information types
 			-- If we need to generate tooltip-only content for this group then do that now
-			-- if not tooltipInfo then
-			-- 	tooltipInfo = {}
-			-- 	group.tooltipInfo = tooltipInfo
-			-- 	app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group)
+			if not tooltipInfo then
+				tooltipInfo = {}
+				group.working = nil
+				app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group)
+				-- only save the cached tooltip info for this group if it is not working
+				if not group.working then
+					group.tooltipInfo = tooltipInfo
+				end
+			end
 
-			-- 	-- Some tooltip items might be added using a color instead of argb, so we have to convert them... TODO maybe clean up
-			-- 	if #tooltipInfo > 0 then
-			-- 		for i,item in ipairs(tooltipInfo) do
-			-- 			if item.color then item.a, item.r, item.g, item.b = HexToARGB(item.color) end
-			-- 		end
-			-- 	end
-			-- end
+			-- Some tooltip items might be added using a color instead of argb, so we have to convert them... TODO maybe clean up
+			if #tooltipInfo > 0 then
+				for i,item in ipairs(tooltipInfo) do
+					if item.color then
+						item.a, item.r, item.g, item.b = HexToARGB(item.color)
+						item.color = nil
+					end
+				end
+			end
 
 			-- If there was info text generated for this search result, then display that first.
 			AttachTooltipInformation(tooltip, tooltipInfo);
@@ -741,6 +748,7 @@ local function AttachTooltipSearchResults(tooltip, lineNumber, method, ...)
 		app.PrintDebug("pcall tooltip failed",group)
 	end
 	tooltip.ATT_AttachComplete = not (working or (group and group.working));
+	-- app.PrintDebug("ATT_AttachComplete",tooltip.ATT_AttachComplete,working,group.working)
 end
 
 -- Battle Pet Tooltips
