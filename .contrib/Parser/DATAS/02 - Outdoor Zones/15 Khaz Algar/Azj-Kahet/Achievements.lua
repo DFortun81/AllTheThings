@@ -33,7 +33,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				crit(68973, {	-- Spindle	//will have two sets of coords depending on completion of Saving Private Spindle?
 					["coord"] = { 55.6, 43.9, AZJ_KAHET },	-- NPCID: 216213
 				}),
-				crit(68974, {	-- Swift
+				crit(68974, {	-- Bobbin	//Automatically granted somehow?
 					--["coord"] = { 1, 1, AZJ_KAHET },
 				}),
 				crit(68976, {	-- Ru'murh

@@ -276,12 +276,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				------ Stay awhile and listen ------
 				hqt(81946, {	-- Stay awhile and listen: Anduin Wrynn
 					["name"] = "Stay awhile and listen: Anduin Wrynn",
+					["description"] = "Dialogue becomes available after accepting 'Hypocenter' (78460).",
 					["sourceQuests"] = {
 						78231,	-- Like a Spider on the Wall
 						78232,	-- Rewriting the Rewritten
 					},
 					["provider"] = { "n", 211351 },	-- Anduin Wrynn
 					["coord"] = { 67.0, 31.8, NERUBAR_LOWER },
+					["lockCriteria"] = { 2,	-- Completing both quests
+						"questID", 78231,	-- Like a Spider on the Wall
+						"questID", 78232,	-- Rewriting the Rewritten
+					},
 				}),
 				--
 				q(78244, {	-- Kahet Hospitality
