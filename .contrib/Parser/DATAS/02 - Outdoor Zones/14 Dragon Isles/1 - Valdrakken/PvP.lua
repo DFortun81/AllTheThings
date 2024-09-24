@@ -9,6 +9,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["provider"] = { "n", 196191 },	-- Malicia
 					["coord"] = { 43.4, 42.5, VALDRAKKEN },
 					["isWeekly"] = true,
+					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_TWW_LAUNCH },
 				}),
 				q(71026, {	-- Against Overwhelming Odds
 					["provider"] = { "n", 196191 },	-- Malicia
