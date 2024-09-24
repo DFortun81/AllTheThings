@@ -40,7 +40,7 @@ root(ROOTS.ExpansionFeatures,
 						}),
 						q(38299,  bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0 } }, {	-- Critters of Draenor
 							["isDaily"] = true,
-							["coord"] = { 28.8, 39.2, LUNARFALL },
+							["coord"] = { 28.8, 40.3, LUNARFALL },
 							["races"] = ALLIANCE_ONLY,
 							["providers"] = {
 								{ "n", 90675 },	-- Erris the Collector

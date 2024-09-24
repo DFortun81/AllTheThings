@@ -340,6 +340,7 @@ i(10922);	-- Wound Poison IV
 -----------------
 i(62370);	-- Bear Whisker
 i(60406);	-- Blood-Caked Incisors
+i(56149);	-- Empty Town-In-A-Box
 i(56054);	-- Gleaming Flipper
 i(62770);	-- Infested Feather
 i(54629);	-- Prickly Thorn

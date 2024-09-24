@@ -1925,6 +1925,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(83239),	-- Airship: Back 02 - Multi-Exhaust (spellID 454474)
 		-- Zekvir
 		q(84816),	-- Zekvir pop in Earthcrawl Mines (first time, unsure what tier it was)
+		q(84817),	-- Zekvir pop in Mycomancer Cavern (unsure, Tier 9)
 		q(84818),	-- Zekvir pop in The Spiral Weave (2nd time in week, Tier 8)
 		q(84819),	-- Zekvir pop in Skittering Breach (2nd time in week, Tier 8)
 	}),

@@ -799,6 +799,7 @@ root(ROOTS.Professions, prof(ENCHANTING, bubbleDownSelf({ ["requireSkill"] = ENC
 				i(227667),	-- Algari Enchanter's Folio
 			},
 		},{
+			q(84086),	-- A Rare Necessity
 			q(84084),	-- Just a Pinch
 			q(84085),	-- The Power of Potential
 		})),
