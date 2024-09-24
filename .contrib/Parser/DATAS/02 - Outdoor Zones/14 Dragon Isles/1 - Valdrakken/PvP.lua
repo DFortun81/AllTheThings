@@ -209,12 +209,12 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					["g"] = {
 						i(185834, {	-- Orboreal Distinguishment
 							["cost"] = { { "c", HONOR, 2000 } },
-							["g"] = {
 							-- #if BEFORE 11.0.2
+							["g"] = {
 							-- Lets display it only in the latest Expansion
 								i(137642),	-- Mark of Honor
-							-- #endif
 							},
+							-- #endif
 						}),
 						i(201250, {	-- Victorious Contender's Strongbox
 							["cost"] = {{"c", HONOR, 5000}},
