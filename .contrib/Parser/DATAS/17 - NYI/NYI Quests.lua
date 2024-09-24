@@ -8888,7 +8888,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(82383),	-- (Bunch of Rocks i(226147 unsorted quests showing on item)
 			q(82385),	-- (Bunch of Rocks i(226147 unsorted quests showing on item)
 			q(83023),	-- Short-Supply Reward
-			q(83345),	-- A Call to Battle
 			q(84086),	-- A Rare Necessity
 		})),
 	}),

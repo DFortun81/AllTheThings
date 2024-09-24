@@ -31,22 +31,20 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 			e(2625, {	-- Orta, the Broken Mountain
 				["crs"] = { 221067 },	-- Orta, the Broken Mountain
 				["coord"] = { 18.3, 33.1, NERUBAR },
-				--["questID"] = xx,
+				--["questID"] = ,
 				["g"] = sharedData({
 					["modID"] = 3,
 				},{
 					i(225751),	-- Seal of the Broken Mountain
 				}),
 			}),
-			--[[
-			q(xx, {	-- Orta, the Broken Mountain (WQ)
+			q(81624, {	-- Orta, the Broken Mountain (WQ)
 				["coord"] = { 18.3, 33.1, NERUBAR },
 				["isWorldQuest"] = true,
 				["sym"] = {
 					{"select","encounterID",2625,},{"pop"},	-- Original WB
 				},
 			}),
-			--]]
 			e(2635, {	-- Aggregation of Horrors
 				["crs"] = { 220999 },	-- Aggregation of Horrors
 				["coord"] = { 64.8, 87.0, THE_RINGING_DEEPS },
