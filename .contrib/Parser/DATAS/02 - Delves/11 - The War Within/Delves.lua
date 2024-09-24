@@ -460,17 +460,21 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				ach(40806),	-- Earthcrawl Mines Discoveries
 				ach(40527),	-- Earthcrawl Mines Stories (automated)
 			}),
-			filter(BATTLE_PETS, {
-				i(222971),	-- Bouncer (PET!)
+			n(DELVE_COMPLETION, {
+				n(TREASURES, {
+					filter(BATTLE_PETS, {
+						i(222971),	-- Bouncer (PET!)
+					}),
+					filter(COSMETIC, {
+						i(212172),	-- Ajul'Nerub Raptorial Spine
+						i(225066),	-- Trail Blazer's Haversack
+					}),
+				}),
 			}),
 			filter(MISC, {
 				i(213000),	-- Holy Flamethrower Torch (QI!)
 				i(212868),	-- Precious Ore (QI!)
 				i(226222),	-- Webbed Hookshot (QI!)
-			}),
-			filter(COSMETIC, {
-				i(212172),	-- Ajul'Nerub Raptorial Spine
-				i(225066),	-- Trail Blazer's Haversack
 			}),
 			n(QUESTS, {
 				q(85648, {	-- Delver's Call: Earthcrawl Mines
@@ -513,14 +517,18 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				ach(40803),	-- Fungal Folly Discoveries
 				ach(40525),	-- Fungal Folly Stories (automated)
 			}),
-			filter(BATTLE_PETS, {
-				i(225337),	-- Violet Sporbit (PET!)
-			}),
-			filter(COSMETIC, {
-				i(212162),	-- Bitter Shroom Cap
-				i(211801),	-- Poisonous Shroom Cap
-				i(212164),	-- Shallow Nautic Helm
-				i(212163),	-- Soporific Shroom Cap
+			n(DELVE_COMPLETION, {
+				n(TREASURES, {
+					filter(BATTLE_PETS, {
+						i(225337),	-- Violet Sporbit (PET!)
+					}),
+					filter(COSMETIC, {
+						i(212162),	-- Bitter Shroom Cap
+						i(211801),	-- Poisonous Shroom Cap
+						i(212164),	-- Shallow Nautic Helm
+						i(212163),	-- Soporific Shroom Cap
+					}),
+				}),
 			}),
 			filter(MISC, {
 				i(210017),	-- Fungal Fish (QI!)
@@ -573,13 +581,17 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				ach(40807),	-- Kriegval's Rest Discoveries
 				ach(40526),	-- Kriegval's Rest Stories (automated)
 			}),
-			filter(BATTLE_PETS, {
-				i(223624),	-- Sneef (PET!)
-			}),
-			filter(COSMETIC, {
-				i(212168),	-- Cinderbee Wax Candle Hat
-				i(212169),	-- Mint-Scented Candle Hat
-				i(212167),	-- Taken Candle
+			n(DELVE_COMPLETION, {
+				n(TREASURES, {
+					filter(BATTLE_PETS, {
+						i(223624),	-- Sneef (PET!)
+					}),
+					filter(COSMETIC, {
+						i(212168),	-- Cinderbee Wax Candle Hat
+						i(212169),	-- Mint-Scented Candle Hat
+						i(212167),	-- Taken Candle
+					}),
+				}),
 			}),
 			filter(MISC, {
 				i(210970),	-- Crumbled Keepsake (QI!)
@@ -626,13 +638,17 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				ach(40808),	-- Mycomancer Cavern Discoveries
 				ach(40531),	-- Mycomancer Cavern Stories (automated)
 			}),
-			filter(BATTLE_PETS, {
-				i(225337),	-- Violet Sporbit (PET!)
-			}),
-			filter(COSMETIC, {
-				i(212162),	-- Bitter Shroom Cap
-				i(211801),	-- Poisonous Shroom Cap
-				i(212163),	-- Soporific Shroom Cap
+			n(DELVE_COMPLETION, {
+				n(TREASURES, {
+					filter(BATTLE_PETS, {
+						i(225337),	-- Violet Sporbit (PET!)
+					}),
+					filter(COSMETIC, {
+						i(212162),	-- Bitter Shroom Cap
+						i(211801),	-- Poisonous Shroom Cap
+						i(212163),	-- Soporific Shroom Cap
+					}),
+				}),
 			}),
 			filter(MISC, {
 				i(218002),	-- Priceless Pumpkin (QI!)
@@ -712,10 +728,14 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				ach(40809),	-- Nightfall Sanctum Discoveries
 				ach(40530),	-- Nightfall Sanctum Stories (automated)
 			}),
-			filter(COSMETIC, {
-				i(225067),	-- Shadowlit Haversack
-				i(225065),	-- Torchbearer's Haversack
-				i(225066),	-- Trail Blazer's Haversack
+			n(DELVE_COMPLETION, {
+				n(TREASURES, {
+					filter(COSMETIC, {
+						i(225067),	-- Shadowlit Haversack
+						i(225065),	-- Torchbearer's Haversack
+						i(225066),	-- Trail Blazer's Haversack
+					}),
+				}),
 			}),
 			filter(MISC, {
 				i(215466),	-- Sanctified Supplies (QI!)
@@ -759,12 +779,16 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				ach(40810),	-- Skittering Breach Discoveries
 				ach(40533),	-- Skittering Breach Stories (automated)
 			}),
-			filter(BATTLE_PETS, {
-				i(222971),	-- Bouncer (PET!)
-			}),
-			filter(COSMETIC, {
-				i(212172),	-- Ajul'Nerub Raptorial Spine
-				i(212173),	-- Rulk'Nerub Raptorial Spine
+			n(DELVE_COMPLETION, {
+				n(TREASURES, {
+					filter(BATTLE_PETS, {
+						i(222971),	-- Bouncer (PET!)
+					}),
+					filter(COSMETIC, {
+						i(212172),	-- Ajul'Nerub Raptorial Spine
+						i(212173),	-- Rulk'Nerub Raptorial Spine
+					}),
+				}),
 			}),
 			filter(MISC, {
 				i(225719),	-- Light's Mantle (QI!)
@@ -803,13 +827,17 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				ach(40811),	-- Tak-Rethan Abyss Discoveries
 				ach(40535),	-- Tak-Rethan Abyss Stories (automated)
 			}),
-			filter(BATTLE_PETS, {
-				i(221496),	-- Wriggle (PET!)
-			}),
-			filter(COSMETIC, {
-				i(212166),	-- Coral Nautic Helm
-				i(212165),	-- Deep Nautic Helm
-				i(212164),	-- Shallow Nautic Helm
+			n(DELVE_COMPLETION, {
+				n(TREASURES, {
+					filter(BATTLE_PETS, {
+						i(221496),	-- Wriggle (PET!)
+					}),
+					filter(COSMETIC, {
+						i(212166),	-- Coral Nautic Helm
+						i(212165),	-- Deep Nautic Helm
+						i(212164),	-- Shallow Nautic Helm
+					}),
+				}),
 			}),
 			filter(MISC, {
 				o(415296, {	-- Repair Kit
@@ -852,12 +880,16 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				ach(40812),	-- The Dread Pit Discoveries
 				ach(40529),	-- The Dread Pit Stories (automated)
 			}),
-			filter(BATTLE_PETS, {
-				i(222971),	-- Bouncer (PET!)
-			}),
-			filter(COSMETIC, {
-				i(212172),	-- Ajul'Nerub Raptorial Spine
-				i(212173),	-- Rulk'Nerub Raptorial Spine
+			n(DELVE_COMPLETION, {
+				n(TREASURES, {
+					filter(BATTLE_PETS, {
+						i(222971),	-- Bouncer (PET!)
+					}),
+					filter(COSMETIC, {
+						i(212172),	-- Ajul'Nerub Raptorial Spine
+						i(212173),	-- Rulk'Nerub Raptorial Spine
+					}),
+				}),
 			}),
 			filter(MISC, {
 				i(217965),	-- Repair Kit (QI!)
@@ -899,13 +931,17 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				ach(40813),	-- The Sinkhole Discoveries
 				ach(40532),	-- The Sinkhole Stories (automated)
 			}),
-			filter(BATTLE_PETS, {
-				i(221496),	-- Wriggle (PET!)
-			}),
-			filter(COSMETIC, {
-				i(212166),	-- Coral Nautic Helm
-				i(212165),	-- Deep Nautic Helm
-				i(212164),	-- Shallow Nautic Helm
+			n(DELVE_COMPLETION, {
+				n(TREASURES, {
+					filter(BATTLE_PETS, {
+						i(221496),	-- Wriggle (PET!)
+					}),
+					filter(COSMETIC, {
+						i(212166),	-- Coral Nautic Helm
+						i(212165),	-- Deep Nautic Helm
+						i(212164),	-- Shallow Nautic Helm
+					}),
+				}),
 			}),
 			filter(MISC, {
 				i(218122),	-- Stolen Relic (QI!)
@@ -954,12 +990,16 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				ach(40814),	-- The Spiral Weave Discoveries
 				ach(40536),	-- The Spiral Weave Stories (automated)
 			}),
-			filter(BATTLE_PETS, {
-				i(222971),	-- Bouncer (PET!)
-			}),
-			filter(COSMETIC, {
-				i(212172),	-- Ajul'Nerub Raptorial Spine
-				i(212173),	-- Rulk'Nerub Raptorial Spine
+			n(DELVE_COMPLETION, {
+				n(TREASURES, {
+					filter(BATTLE_PETS, {
+						i(222971),	-- Bouncer (PET!)
+					}),
+					filter(COSMETIC, {
+						i(212172),	-- Ajul'Nerub Raptorial Spine
+						i(212173),	-- Rulk'Nerub Raptorial Spine
+					}),
+				}),
 			}),
 			filter(MISC, {
 				i(216772),	-- Whispering Explosives (QI!)
@@ -1006,12 +1046,16 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				ach(40815),	-- The Underkeep Discoveries
 				ach(40534),	-- The Underkeep Stories (automated)
 			}),
-			filter(BATTLE_PETS, {
-				i(222971),	-- Bouncer (PET!)
-			}),
-			filter(COSMETIC, {
-				i(212172),	-- Ajul'Nerub Raptorial Spine
-				i(212173),	-- Rulk'Nerub Raptorial Spine
+			n(DELVE_COMPLETION, {
+				n(TREASURES, {
+					filter(BATTLE_PETS, {
+						i(222971),	-- Bouncer (PET!)
+					}),
+					filter(COSMETIC, {
+						i(212172),	-- Ajul'Nerub Raptorial Spine
+						i(212173),	-- Rulk'Nerub Raptorial Spine
+					}),
+				}),
 			}),
 			filter(MISC, {
 				i(217715),	-- Key Scroll (QI!)
@@ -1057,13 +1101,17 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				ach(40816),	-- The Waterworks Discoveries
 				ach(40528),	-- The Waterworks Stories (automated)
 			}),
-			filter(BATTLE_PETS, {
-				i(223624),	-- Sneef (PET!)
-			}),
-			filter(COSMETIC, {
-				i(212168),	-- Cinderbee Wax Candle Hat
-				i(212169),	-- Mint-Scented Candle Hat
-				i(212167),	-- Taken Candle
+			n(DELVE_COMPLETION, {
+				n(TREASURES, {
+					filter(BATTLE_PETS, {
+						i(223624),	-- Sneef (PET!)
+					}),
+					filter(COSMETIC, {
+						i(212168),	-- Cinderbee Wax Candle Hat
+						i(212169),	-- Mint-Scented Candle Hat
+						i(212167),	-- Taken Candle
+					}),
+				}),
 			}),
 			n(QUESTS, {
 				q(83749, {	-- Delves: The Waterworks
