@@ -115,6 +115,7 @@ _.HeaderConstants = {
 	CRAFTED_ITEMS = -1000014,
 	DARKMOON_FAIRE_HEADER = -1000201,
 	DAY_OF_THE_DEAD_HEADER = -1000207,
+	DELVE_COMPLETION = -1001041,
 	DELVES = -1000907,
 	DISCOVERY = -1000016,
 	DRAGONRIDING_CUP_HEADER = -1000208,
@@ -652,8 +653,9 @@ localize(L.HEADER_NAMES, {
 	[-1001038] = "Reliquary of Opulence",
 	[-1001039] = "Blood from Stone",
 	[-1001040] = "Audience with Arrogance",
-	[-1001041] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
-	[-1001042] = "|cFFFFFFFFStep 1:|r Conspicious Note",
+	[-1001041] = "Delve Completion",
+	[-1001042] = "|cffFF0000Ogom the Mangler seems just to spawn when you are doing the Daily 'Assault on the Iron Siegeworks'. This Quest wasn't active since the start of Legion and the buyable Quest 'Missive: Assault on the Iron Siegeworks' does not work either.|r",
+	[-1001043] = "|cFFFFFFFFStep 1:|r Conspicious Note",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "These items can be obtained by doing Emissary Quests or gaining a paragon box.",
@@ -746,6 +748,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1001038] = "The second LFR wing, featuring Artificer Xy'mox, Sun King's Salvation, and The Council of Blood.",
 	[-1001039] = "The third LFR wing, featuring Shriekwing, Sludgefist, and Stone Legion Generals.",
 	[-1001040] = "The fourth LFR wing, featuring Sire Denathrius.",
+	[-1001041] = "Contains things that are rewarded upon completing that event.",
 });
 localize(L.HEADER_LORE, {
 	[-1000048] = "One of these dragons will spawn randomly at the associated coordinates across Azeroth.",
@@ -1197,6 +1200,7 @@ localize(L.HEADER_ICONS, {
 	[-1001038] = "3614361",
 	[-1001039] = "3614361",
 	[-1001040] = "3614361",
+	[-1001041] = _.asset("Interface_Rewards"),
 });
 localize(L.HEADER_EVENTS, {
 	[-1000199] = 638,
@@ -14900,7 +14904,7 @@ L.QUEST_NAMES = {
 	[50185] = "Green Crystal Monocle",
 	[50250] = "Posthaste",
 	[50384] = "Doug Test - Completable Quest4",
-	[52819] = _.L.HEADER_NAMES[-1001042],
+	[52819] = _.L.HEADER_NAMES[-1001043],
 	[52917] = "Grimmy Dialogue",
 	[53568] = "Kill Credit 1",
 	[53569] = "Kill Credit 2",
@@ -15957,8 +15961,8 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Vínculos Elementales",
 	[-1001035] = "Pescado de temporada: lubina de verano",
 	[-1001036] = "Pescado de temporada: calamares de invierno",
-	[-1001041] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
-	[-1001042] = "|cFFFFFFFFStep 1:|r Nota llamativa",
+	[-1001042] = "|cffFF0000Ogom the Mangler parece aparecer cuando estás realizando el 'Asalto a los Sitios de Hierro' diario. Esta misión no estuvo activa desde el inicio de Legion y la misión comprable 'Misiva: Asalto a los Sitios de Hierro' tampoco funciona.|r",
+	[-1001043] = "|cFFFFFFFFStep 1:|r Nota llamativa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Los elementos de esta lista son apariencias compartidas del elemento anterior. En el modo de apariencia única, esta lista puede ayudarlo a comprender por qué o no un elemento específico se marcaría como recopilado.",
@@ -19895,8 +19899,8 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Elementare Bande",
 	[-1001035] = "Saisonfisch: Sommerbarsch",
 	[-1001036] = "Saisonfisch: Winterkalmar",
-	[-1001041] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
-	[-1001042] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
+	[-1001042] = "|cffFF0000Ogom der Mangler scheint gerade dann zu erscheinen, wenn Sie den täglichen „Angriff auf das Eiserne Belagerungswerk“ durchführen. Diese Quest war seit Beginn von Legion nicht mehr aktiv und die käufliche Quest „Missive: Angriff auf das Eiserne Belagerungswerk“ funktioniert auch nicht.|r",
+	[-1001043] = "|cFFFFFFFFSchritt 1:|r Auffällige Notiz",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -24033,8 +24037,8 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Liens élémentaires",
 	[-1001035] = "Poisson de saison : bar d'été",
 	[-1001036] = "Poisson de saison : calmar d'hiver",
-	[-1001041] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
-	[-1001042] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
+	[-1001042] = "|cffFF0000Ogom le Mangler semble apparaître lorsque vous effectuez l'« Assaut quotidien sur les usines de siège de fer ». Cette quête n'était plus active depuis le début de Legion et la quête achetable « Missive : Assaut sur les usines de siège de fer » ne fonctionne pas non plus.|r",
+	[-1001043] = "|cFFFFFFFFÉtape 1:|r Note mise en évidence",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Ces objets peuvent être obtenus en effectuant des quêtes d’émissaire ou en l’obtaenant via un coffre de parangon.",
@@ -24051,6 +24055,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000855] = "Il y a une bataille en 4x4 en cours. Aidez l'Alliance en battant l'escadron de la mort abandonné.",
 	[-1000856] = "Il y a une bataille en 4x4 en cours. Aidez la Horde en battant les Worgen Stalkers.",
 	[-1000858] = "Trois chasseurs ont encerclé Mara Swiftmane. Engagez-les au combat et un coffre battu apparaîtra près de Mara Swiftmane. Une fois la bataille terminée, Mara vous remerciera et vous laissera avec le coffre battu.",
+	[-1001041] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
 });
 localize(L.HEADER_LORE, {
 	[-1000308] = "Les objets suivants peuvent être créés en utilisant un Fardeau de l'éternité sur un jeton de Cache d'armure du Temps figé pour une double dose de RNG inutile.",
@@ -28073,8 +28078,8 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Legami Elementali",
 	[-1001035] = "Pesce di stagione: spigola estiva",
 	[-1001036] = "Pesce di stagione: calamari invernali",
-	[-1001041] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
-	[-1001042] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
+	[-1001042] = "|cffFF0000Ogom the Mangler sembra apparire solo quando stai eseguendo l'\"Assalto alle officine d'assedio di ferro\" giornaliero. Questa missione non era attiva dall'inizio di Legion e neanche la missione acquistabile \"Missiva: Assalto alle officine d'assedio di ferro\" funziona.|r",
+	[-1001043] = "|cFFFFFFFFStep 1:|r Nota Vistosa",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Gli elementi in questo elenco sono aspetti condivisi per l'elemento precedente. Nella modalità Aspetto unico, questo elenco può aiutarti a capire perché o perché un oggetto specifico verrebbe contrassegnato come Raccolto.",
@@ -31753,8 +31758,8 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Prisão Elemental",
 	[-1001035] = "Peixe sazonal: robalo de verão",
 	[-1001036] = "Peixe sazonal: Lula de Inverno",
-	[-1001041] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
-	[-1001042] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
+	[-1001042] = "|cffFF0000Ogom, o Mangler, parece surgir apenas quando você está fazendo o 'Assalto ao Cerco de Ferro' diário. Esta missão não estava ativa desde o início de Legion e a missão comprável 'Missiva: Assault on the Iron Siegeworks' também não funciona.|r",
+	[-1001043] = "|cFFFFFFFFStep 1:|r Bilhete Suspeito",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "Os itens nesta lista são aparências compartilhadas do item acima. No Modo de Aparência Única, esta lista pode ajudá-lo a entender por que ou não um item específico seria marcado como Coletado.",
@@ -35787,8 +35792,8 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "Власть стихий",
 	[-1001035] = "Сезонная рыба: летний окунь",
 	[-1001036] = "Сезонная рыба: зимний кальмар",
-	[-1001041] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
-	[-1001042] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
+	[-1001042] = "|cffFF0000Огом Уничтожитель появляется только при выполнении ежедневного задания 'Штурм осадного лагеря Железной Орды'. Данное задание не было доступно со старта Легиона, а приобретаемое в гарнизоне задание 'Донесение: Штурм осадного лагеря Железной Орды' тоже не помогает.|r",
+	[-1001043] = "|cFFFFFFFFШаг 1:|r Примечательная записка",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "Эти предметы можно получить в награду Заданий эмиссаров или из припасов.",
@@ -35807,6 +35812,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000855] = "Идет продолжающаяся битва четыре на четыре. Помогите Альянсу, победив Отрекшихся Отряд Смерти.",
 	[-1000856] = "Идет продолжающаяся битва четыре на четыре. Помогите Орде, победив воргенов-сталкеров.",
 	[-1000858] = "Трое охотников окружили Мару Быстрогривую. Вступите с ними в бой, и рядом с Марой Быстрогривой появится потрепанный сундук. Как только битва закончится, Мара поблагодарит вас и оставит с потрепанным сундуком.",
+	[-1001041] = "Штучки, которые можно получить в награду с разного контента в родительской секции.\nОни собраны здесь, чтобы уменьшить количество источников, когда Штучка доступна из многих мест.",
 });
 localize(L.HEADER_LORE, {
 	[-1000308] = "Эти предметы могут быть созданы при помощи Бремя вечности и Вневременного токена для двойной дозы бессмысленного рандома.",
@@ -39889,8 +39895,8 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "정령의 속박",
 	[-1001035] = "제철 생선: 여름 농어",
 	[-1001036] = "제철 생선: 겨울 오징어",
-	[-1001041] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
-	[-1001042] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
+	[-1001042] = "|cffFF0000약탈자 오곰은 일일 '철 공성 작업장 공격'을 수행할 때 생성되는 것 같습니다. 이 퀘스트는 Legion이 시작된 이후 활성화되지 않았으며 구매 가능한 퀘스트 'Missive: Iron Siegeworks 공격'도 작동하지 않습니다.|r",
+	[-1001043] = "|cFFFFFFFFStep 1:|r 눈에 띄는 쪽지",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000162] = "이 목록의 항목은 위 항목의 공유 모양입니다. 고유 외형 모드에서 이 목록은 특정 항목이 수집됨으로 표시되는 이유와 이유를 이해하는 데 도움이 될 수 있습니다.",
@@ -43568,8 +43574,8 @@ localize(L.HEADER_NAMES, {
 	[-1001034] = "元素誓约",
 	[-1001035] = "时令鱼类：夏季鲈鱼",
 	[-1001036] = "时令鱼类：冬鱿鱼",
-	[-1001041] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
-	[-1001042] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
+	[-1001042] = "|cffFF0000绞肉机奥戈姆似乎只是在你做每日突袭钢铁军工厂的时候刷新的。这个任务从军团开始后就没有激活过，可购买的任务密报：突袭钢铁军工厂也不能用了。|r",
+	[-1001043] = "|cFFFFFFFF步骤1:|r 不起眼的纸条",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000018] = "这些物品可以通过做使者任务或获得巅峰宝箱来获得。",
@@ -43588,6 +43594,7 @@ localize(L.HEADER_DESCRIPTIONS, {
 	[-1000855] = "正在进行一场四对四的战斗。协助联盟击败被遗忘者敢死队。",
 	[-1000856] = "正在进行一场四对四的战斗。击败狼人追猎者，协助部落。",
 	[-1000858] = "三名猎人包围了玛拉·斯威夫迈恩。与他们交战，玛拉·迅鬃附近会生成一个破烂的宝箱。战斗结束后，玛拉会感谢你，并给你留下破损的宝箱。",
+	[-1001041] = "包含有奖励或可从包含部分中的其他内容获得的事物。\n在此处合并以减少来自许多可能重复来源。",
 });
 localize(L.HEADER_LORE, {
 	[-1000308] = "以下物品可以通过在永恒护甲代币上使用不朽之责获得双倍无意随机生成来创建。",

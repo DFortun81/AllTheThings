@@ -34,7 +34,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 55.6, 43.9, AZJ_KAHET },	-- NPCID: 216213
 				}),
 				crit(68976, {	-- Ru'murh
-					--["coord"] = { 1, 1, AZJ_KAHET },
+					["coord"] = { 41.54, 22.45, NERUBAR },
 				}),
 				crit(68977, {	-- Thimble
 					["coords"] = {
@@ -46,7 +46,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 49.6, 15.7, NERUBAR },
 				}),
 				crit(3236, {	-- Bobbin
-					--["coord"] = { 1, 1, AZJ_KAHET },
+					["coord"] = { 56.4, 43.2, AZJ_KAHET },
 				}),
 			}),
 			ach(40843),		-- Mine Poppin'
