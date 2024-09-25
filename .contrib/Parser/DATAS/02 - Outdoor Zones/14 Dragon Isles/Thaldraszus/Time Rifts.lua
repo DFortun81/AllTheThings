@@ -413,7 +413,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								}),
 								i(208952),	-- Soridormi's Letter of Commendation
 								i(215363, {	-- Cache of Embers
-									["timeline"] = { ADDED_10_2_6_SEASON_FOUR, REMOVED_TWW_LAUNCH },
+									["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
 									-- probably need symlink
 								}),
 							}),

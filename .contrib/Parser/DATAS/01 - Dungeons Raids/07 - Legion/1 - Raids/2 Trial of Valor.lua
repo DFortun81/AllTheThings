@@ -47,7 +47,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					},
 				},{
 					i(143509, {	-- Ensemble: Vestment of the Chosen Dead
-						["classes"] = { PRIEST, MAGE, WARLOCK },
+						["classes"] = CLOTH_CLASSES,
 						["g"] = {
 							i(143346),	-- Circlet of the Chosen Dead
 							i(143356),	-- Mantle of the Chosen Dead
@@ -61,7 +61,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						},
 					}),
 					i(143513, {	-- Ensemble: Garb of the Chosen Dead
-						["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+						["classes"] = LEATHER_CLASSES,
 						["g"] = {
 							i(143348),	-- Hood of the Chosen Dead
 							i(143354),	-- Shoulderpads of the Chosen Dead
@@ -75,7 +75,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						},
 					}),
 					i(143517, {	-- Ensemble: Chains of the Chosen Dead
-						["classes"] = { HUNTER, SHAMAN },
+						["classes"] = MAIL_CLASSES,
 						["g"] = {
 							i(143347),	-- Coif of the Chosen Dead
 							i(143357),	-- Pauldrons of the Chosen Dead
@@ -89,7 +89,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						},
 					}),
 					i(143521, {	-- Ensemble: Funerary Plate of the Chosen Dead
-						["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
+						["classes"] = PLATE_CLASSES,
 						["g"] = {
 							i(143345),	-- Visor of the Chosen Dead
 							i(143355),	-- Shoulderplates of the Chosen Dead
@@ -113,7 +113,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					["provider"] = { "n", 114263 },	-- Odyn
 					["g"] = {
 						i(143506, {	-- Ensemble: Vestment of the Chosen Dead
-							["classes"] = { PRIEST, MAGE, WARLOCK },
+							["classes"] = CLOTH_CLASSES,
 							["g"] = {
 								i(143346),	-- Circlet of the Chosen Dead
 								i(143356),	-- Mantle of the Chosen Dead
@@ -127,7 +127,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							},
 						}),
 						i(143510, {	-- Ensemble: Garb of the Chosen Dead
-							["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+							["classes"] = LEATHER_CLASSES,
 							["g"] = {
 								i(143348),	-- Hood of the Chosen Dead
 								i(143354),	-- Shoulderpads of the Chosen Dead
@@ -141,7 +141,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							},
 						}),
 						i(143514, {	-- Ensemble: Chains of the Chosen Dead
-							["classes"] = { HUNTER, SHAMAN },
+							["classes"] = MAIL_CLASSES,
 							["g"] = {
 								i(143347),	-- Coif of the Chosen Dead
 								i(143357),	-- Pauldrons of the Chosen Dead
@@ -155,7 +155,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							},
 						}),
 						i(143518, {	-- Ensemble: Funerary Plate of the Chosen Dead
-							["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
+							["classes"] = PLATE_CLASSES,
 							["g"] = {
 								i(143345),	-- Visor of the Chosen Dead
 								i(143355),	-- Shoulderplates of the Chosen Dead
@@ -327,7 +327,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				n(COMMON_BOSS_DROPS, {
 					i(143507, {	-- Ensemble: Vestment of the Chosen Dead
 						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties.",
-						["classes"] = { PRIEST, MAGE, WARLOCK },
+						["classes"] = CLOTH_CLASSES,
 						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
 						["g"] = {
 							i(143346),	-- Circlet of the Chosen Dead
@@ -343,7 +343,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 					i(143511, {	-- Ensemble: Garb of the Chosen Dead
 						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties.",
-						["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+						["classes"] = LEATHER_CLASSES,
 						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
 						["g"] = {
 							i(143348),	-- Hood of the Chosen Dead
@@ -359,7 +359,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 					i(143515, {	-- Ensemble: Chains of the Chosen Dead
 						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties.",
-						["classes"] = { HUNTER, SHAMAN },
+						["classes"] = MAIL_CLASSES,
 						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
 						["g"] = {
 							i(143347),	-- Coif of the Chosen Dead
@@ -375,7 +375,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					}),
 					i(143519, {	-- Ensemble: Funerary Plate of the Chosen Dead
 						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties.",
-						["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
+						["classes"] = PLATE_CLASSES,
 						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
 						["g"] = {
 							i(143345),	-- Visor of the Chosen Dead
@@ -510,7 +510,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 								["u"] = REMOVED_FROM_GAME,
 							}),
 							i(143508, {	-- Ensemble: Vestment of the Chosen Dead
-								["classes"] = { PRIEST, MAGE, WARLOCK },
+								["classes"] = CLOTH_CLASSES,
 								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
 									i(143346),	-- Circlet of the Chosen Dead
@@ -525,7 +525,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 								},
 							}),
 							i(143512, {	-- Ensemble: Garb of the Chosen Dead
-								["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+								["classes"] = LEATHER_CLASSES,
 								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
 									i(143348),	-- Hood of the Chosen Dead
@@ -540,7 +540,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 								},
 							}),
 							i(143516, {	-- Ensemble: Chains of the Chosen Dead
-								["classes"] = { HUNTER, SHAMAN },
+								["classes"] = MAIL_CLASSES,
 								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
 									i(143347),	-- Coif of the Chosen Dead
@@ -555,7 +555,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 								},
 							}),
 							i(143520, {	-- Ensemble: Funerary Plate of the Chosen Dead
-								["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
+								["classes"] = PLATE_CLASSES,
 								["u"] = REMOVED_FROM_GAME,
 								["g"] = {
 									i(143345),	-- Visor of the Chosen Dead

@@ -57,10 +57,10 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					objective(1, {	-- 0/100 Bloodied Defias Bandana
 						["provider"] = { "i", 142349 },	-- Bloodied Defias Bandana
 					}),
-					i(142273, {	-- Ensemble: Blackened Defias Armor
+					iensemble(142273, {	-- Ensemble: Blackened Defias Armor
 						["timeline"] = { ADDED_7_1_0 },
 						["classes"] = { ROGUE },
-						["groups"] = {
+						["_groups"] = { -- TODO: Strip
 							i(10399, {	-- Blackened Defias Armor
 								["timeline"] = { ADDED_7_1_0 },
 							}),
@@ -566,7 +566,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #endif
 			}),
 			i(5787, {	-- Pattern: Murloc Scale Breastplate (RECIPE!)
-				["crs"] = {	
+				["crs"] = {
 					-- #if BEFORE 4.0.3
 					657,	-- Defias Pirate
 					-- #else
