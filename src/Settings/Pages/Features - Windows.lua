@@ -35,16 +35,24 @@ local SetWindowForButton = function(self, window)
 	if window.Commands then text = text .. " ( /" .. window.Commands[1] .. " )"; end
 	self:SetText(text);
 end
+local a = false;
 local CreateWindowButton = function()
 	local row = CreateFrame("Button", nil, child, "UIPanelButtonTemplate");
-	row:SetPoint("LEFT", child.separator or child, "LEFT", 8, -8);
-	row:SetPoint("RIGHT", child.separator or child, "LEFT", 300, -8);
-	row:SetPoint("TOP", lastWindowButtonRow, "BOTTOM", 0, lastWindowButtonDistance);
-	row:SetHeight(17);
+	a = not a;
+	if a then
+		row:SetPoint("LEFT", child.separator or child, "LEFT", 8, -8);
+		row:SetPoint("RIGHT", child.separator or child, "LEFT", 320, -8);
+		row:SetPoint("TOP", lastWindowButtonRow, "BOTTOM", 0, lastWindowButtonDistance);
+	else
+		row:SetPoint("LEFT", child.separator or child, "RIGHT", -320, -8);
+		row:SetPoint("RIGHT", child.separator or child, "RIGHT", -8, -8);
+		row:SetPoint("TOP", lastWindowButtonRow, "BOTTOM", 0, lastWindowButtonDistance);
+		lastWindowButtonRow = row;
+		lastWindowButtonDistance = -1;
+	end
+	row:SetHeight(28);
 	row:RegisterForClicks("AnyUp");
 	row:SetScript("OnClick", OnClickForWindowButton);
-	lastWindowButtonDistance = -1;
-	lastWindowButtonRow = row;
 	tinsert(WindowButtons, row);
 	return row;
 end

@@ -600,7 +600,7 @@ ATTSettingsPanelMixin = {
 		---@class ATTSettingsCheckButton: CheckButton
 		---@field Text FontString
 		---@field OnRefreshCheckedDisabled any
-		local cb = CreateFrame("CheckButton", self:GetName() .. "-" .. text, self, "InterfaceOptionsCheckButtonTemplate")
+		local cb = CreateFrame("CheckButton", self:GetName() .. "-" .. text, self, "UICheckButtonTemplate")
 		Mixin(cb, ATTSettingsObjectMixin);
 		--self:RegisterObject(cb);
 		if OnClick then cb:SetScript("OnClick", OnClick) end
@@ -610,9 +610,10 @@ ATTSettingsPanelMixin = {
 			OnRefresh(cb);
 		end);
 		cb.Text:SetText(text)
-		cb.Text:SetScale(1.1)
+		cb.Text:SetScale(1.3)
 		cb.Text:SetWordWrap(false)
 		cb:SetHitRectInsets(0,0 - cb.Text:GetUnboundedStringWidth(),0,0);
+		cb:SetScale(0.8);
 		return cb
 	end,
 	CreateTextbox = function(self, opts, functions)
