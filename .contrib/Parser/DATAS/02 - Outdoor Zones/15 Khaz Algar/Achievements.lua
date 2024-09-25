@@ -228,29 +228,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		-- #else
 		}),
 		-- #endif
-		petbattle(achraw(40153, {	-- Battle on Khaz Algar
-			crit(67131, {	-- Awakened Custodian
-				["_quests"] = { 82291 },
-			}),
-			crit(67132, {	-- Haywire Servobot
-				["_quests"] = { 82300 },
-			}),
-			crit(67133, {	-- Guttergunk
-				["_quests"] = { 82298 },
-			}),
+		petbattle(ach(40153, {	-- Battle on Khaz Algar (automated)
 			crit(67135, {	-- Collector Dyna
+				["_noautomation"] = true,	-- Doesn't nest properly
 				["_quests"] = { 82292 },
 			}),
-			crit(67134, {	-- Zaedu
-				["_quests"] = { 82297 },
-			}),
 			crit(67136, {	-- Friendhaver Grem
+				["_noautomation"] = true, 	-- Doesn't nest properly
 				["_quests"] = { 82293 },
 			}),
 			crit(67137, {	-- Kyrie
+				["_noautomation"] = true, 	-- Doesn't nest properly
 				["_quests"] = { 82294 },
 			}),
 			crit(67138, {	-- Ziriak
+				["_noautomation"] = true, 	-- Doesn't nest properly
 				["_quests"] = { 82295 },
 			}),
 		})),

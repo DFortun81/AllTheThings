@@ -10,6 +10,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			},
 			["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 				petbattle(q(82294, {	-- Miniature Army
+					["provider"] = { "n", 223442 },	-- Kyrie
 					["coord"] = { 57.4, 62.8, HALLOWFALL },
 				})),
 				petbattle(q(82298, {	-- The Thing from the Swamp

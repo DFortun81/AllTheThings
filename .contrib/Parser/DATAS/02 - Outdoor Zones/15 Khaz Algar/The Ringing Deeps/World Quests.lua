@@ -10,6 +10,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			},
 			["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 				petbattle(q(82293, {	-- The Power of Friendship
+					["provider"] = { "n", 223444 },	-- Friendhaver Grem
 					["coord"] = { 61.6, 37.6, THE_RINGING_DEEPS },
 				})),
 				petbattle(q(82300, {	-- Major Malfunction

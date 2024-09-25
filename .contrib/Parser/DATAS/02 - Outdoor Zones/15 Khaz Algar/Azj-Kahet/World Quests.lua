@@ -14,6 +14,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 53.9, 37.0, AZJ_KAHET },
 				})),
 				petbattle(q(82295, {	-- Ziriak
+					["provider"] = { "n", 223443 },	-- Ziriak
 					["coord"] = { 61.3, 37.0, NERUBAR_LOWER },
 				})),
 				pvp(q(80409, {	-- Polarized

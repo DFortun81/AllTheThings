@@ -10,6 +10,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			},
 			["g"] = bubbleDownFiltered({ ["isWorldQuest"] = true, },FILTERFUNC_questID,{
 				petbattle(q(82292, {	-- Rock Collector
+					["provider"] = { "n", 223446 },	-- Collector Dyna
 					["coord"] = { 34.9, 85.6, ISLE_OF_DORN },
 				})),
 				petbattle(q(82291, {	-- Robot Rumble
