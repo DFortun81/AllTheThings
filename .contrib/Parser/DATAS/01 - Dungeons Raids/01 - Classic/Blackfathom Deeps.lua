@@ -76,7 +76,17 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				-- #if BEFORE CATA
+				q(26891, {	-- Amongst the Ruins
+					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
+					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+					["races"] = HORDE_ONLY,
+					["lvl"] = 20,
+					["groups"] = {
+						objective(1, {	-- 0/1 Fathom Core
+							["provider"] = { "i", 16762 },	-- Fathom Core
+						}),
+					},
+				}),
 				q(6921, {	-- Amongst the Ruins
 					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
 					["coord"] = { 11.6, 34.3, ASHENVALE },
@@ -89,19 +99,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				-- #else
-				q(6921, {	-- Amongst the Ruins [CATA]
-					["qg"] = 12736,	-- Je'neu Sancrea <The Earthen Ring>
-					["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
-					["races"] = HORDE_ONLY,
-					["lvl"] = 20,
-					["groups"] = {
-						objective(1, {	-- 0/1 Fathom Core
-							["provider"] = { "i", 16762 },	-- Fathom Core
-						}),
-					},
-				}),
-				-- #endif
 				q(6922, {	-- Baron Aquanis
 					["provider"] = { "i", 16782 },	-- Strange Water Globe
 					["timeline"] = { REMOVED_6_0_2 },
@@ -515,7 +512,13 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			o(177964, {	-- Fathom Stone
 				["description"] = "In the water below the Twilight bridge.\n\nWARNING: Spawns Baron Aquanis.",
-				["sourceQuest"] = 6921,	-- Amongst the Ruins
+				["sourceQuests"] = {
+					-- #if AFTER 4.0.3
+					26891,	-- Amongst the Ruins
+					-- #else
+					6921,	-- Amongst the Ruins
+					-- #endif
+				},
 				["timeline"] = { REMOVED_6_0_2 },
 				["races"] = HORDE_ONLY,
 				["groups"] = {
