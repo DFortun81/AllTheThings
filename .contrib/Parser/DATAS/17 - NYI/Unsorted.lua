@@ -1232,7 +1232,6 @@ root(ROOTS.Unsorted, {
 				i(220156),	-- Bubbling Wax
 				--- Renown Quest Rewards ---
 				i(226153),	-- Big Pile of Humming Shinies
-				i(226156),	-- Really Big Candle
 				i(226151),	-- Wax-Coated Coffer Unlocker
 				i(226154),	-- Wax-Sealed Crafty Crest
 				i(226152),	-- Wax-sealed Crests

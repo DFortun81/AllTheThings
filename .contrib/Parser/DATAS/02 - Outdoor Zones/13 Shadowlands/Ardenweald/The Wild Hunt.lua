@@ -30,7 +30,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 						{ 48.4, 50.4, ARDENWEALD },
 						{ 59.6, 31.8, THE_TRUNK },	-- Heart of the Forest
 					},
-					["g"] = bubbleDownRepSkip(FACTION_THE_WILD_HUNT, {
+					["g"] = bubbleDownClassicRep(FACTION_THE_WILD_HUNT, {
 						{		-- Neutral
 							i(190644, {	-- Vessel of Profound Possibilities
 								["cost"] = {{"c",2009,10000}},	-- 10,000 Cosmic Flux

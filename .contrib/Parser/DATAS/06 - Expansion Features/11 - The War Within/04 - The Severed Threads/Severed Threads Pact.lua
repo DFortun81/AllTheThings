@@ -35,6 +35,32 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 			}),
 			n(QUESTS, {
+				n(EMISSARY_QUESTS, {
+					q(83739, {	-- Notorious with The General
+						["provider"] = { "n", 229184 },	-- Aspirant Kiipka
+						["coord"] = { 55.8, 42.2, AZJ_KAHET },
+						["isRepeatable"] = true,
+						["g"] = {
+							i(226045),	-- The General's Trove
+						},
+					}),
+					q(64267, {	-- Notorious with The Vizier
+						["provider"] = { "n", 224733 },	-- Tulumun <Assistant to the Executor>
+						["coord"] = { 56.2, 42.2, AZJ_KAHET },
+						["isRepeatable"] = true,
+						["g"] = {
+							i(226100),	-- The Vizier's Trove
+						},
+					}),
+					q(83738, {	-- Notorious with The Weaver
+						["provider"] = { "n", 224733 },	-- Bobbin <Eye of the Weaver>
+						["coord"] = { 56.4, 43.2, AZJ_KAHET },
+						["isRepeatable"] = true,
+						["g"] = {
+							i(226103),	-- The Weaver's Trove
+						},
+					}),
+				}),
 				q(84022, {	-- Uniting Severed Threads
 					["provider"] = { "n", 207471 },	-- Widow Arak'nai
 					["coord"] = { 55.7, 43.8, AZJ_KAHET },

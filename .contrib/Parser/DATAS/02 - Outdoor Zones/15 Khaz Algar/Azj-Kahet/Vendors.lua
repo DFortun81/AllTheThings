@@ -81,23 +81,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			n(218224, {	-- "Calmest" Gobbu <Pots, Urns, and Armamnets>
 				["coord"] = { 46.6, 29.2, NERUBAR },
-				["g"] = {
-					i(222973, {	-- Fringe (PET!)
-						["cost"] = {{"c", KEJ, 2250}},
-					}),
-					i(222968, {	-- Itchbite (PET!)
-						["cost"] = {{"c", KEJ, 2250}},
-					}),
-				},
+				["sym"] = {{"select","itemID",
+					222973,	-- Fringe (PET!)
+					222968,	-- Itchbite (PET!)
+				}},
 			}),
 			n(218207, {	-- Clutchmother Marn'tiq <Pet Battle Master>
 				["coord"] = { 44.2, 17.1, NERUBAR },
 				["g"] = {
 					i(222973, {	-- Fringe (PET!)
 						["cost"] = {{"c", KEJ, 2250}},
+						["isLimited"] = true,
 					}),
 					i(222968, {	-- Itchbite (PET!)
 						["cost"] = {{"c", KEJ, 2250}},
+						["isLimited"] = true,
 					}),
 				},
 			}),
@@ -179,6 +177,20 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 				},
 			}),
+			n(218199, {	-- Kram'an <Head Clerk>
+				["coord"] = { 49.6, 26.6, AZJ_KAHET },
+				["sym"] = {{"select","itemID",
+					221850,	-- Freshly Webbed Kebab (PET!)
+					223956,	-- Recipe: Everything-On-A-Stick (RECIPE!)
+				}},
+			}),
+			n(218197, {	-- Kurth <Clerk>
+				["coord"] = { 49.0, 26.8, AZJ_KAHET },
+				["sym"] = {{"select","itemID",
+					221850,	-- Freshly Webbed Kebab (PET!)
+					223956,	-- Recipe: Everything-On-A-Stick (RECIPE!)
+				}},
+			}),
 			n(218169, {	-- Llyot <Plant Sundries & Herbalism Supplies>
 				["coord"] = { 46.9, 16.1, NERUBAR },
 				["g"] = {
@@ -220,7 +232,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			n(218198, {	-- Pelefien <Clerk>
 				["coord"] = { 50.5, 26.3, NERUBAR },
 				["g"] = {
-					i(221850, {	-- Bean (PET!)
+					i(221850, {	-- Freshly Webbed Kebab (PET!)
 						["cost"] = {{"c", KEJ, 2250}},
 						["isLimited"] = true,
 					}),
@@ -361,6 +373,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 45.0, 16.7, AZJ_KAHET },
 				["sourceQuests"] = { 78256 },	-- The General Consensus
 				["sym"] = {{"select","itemID",
+					221850,	-- Freshly Webbed Kebab (PET!)
 					222973,	-- Fringe (PET!)
 					222968,	-- Itchbite (PET!)
 					223956,	-- Recipe: Everything-On-A-Stick (RECIPE!)
@@ -393,6 +406,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["cost"] = {{"c", KEJ, 2250}},
 					}),
 				},
+			}),
+			n(218200, {	-- Yaggi <Sitck Cook>
+				["coord"] = { 49.6, 26.2, AZJ_KAHET },
+				["sym"] = {{"select","itemID",
+					221850,	-- Freshly Webbed Kebab (PET!)
+					223956,	-- Recipe: Everything-On-A-Stick (RECIPE!)
+				}},
 			}),
 			n(224337, {	-- Zara'azj the Magnificent <Alchemy Supplies>
 				["coord"] = { 55.6, 47.5, NERUBAR_LOWER },

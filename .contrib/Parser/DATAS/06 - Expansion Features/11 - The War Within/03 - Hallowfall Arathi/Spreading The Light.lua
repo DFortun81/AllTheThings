@@ -172,6 +172,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					q(82964, {	-- Hillhelm Family: Uncle's Eye
 						["provider"] = { "i", 224486 },	-- Uncle's Eye (QS!/QI!)
+						["isWeekly"] = true,
 					}),
 					q(82966, {	-- Hillhelm Family: Unusual Potato
 						["provider"] = { "i", 224465 },	-- Unusual Potato (QS!/QI!)
@@ -568,7 +569,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						--when you loot it - other treasure which require this item vanish, so cannot be looted on same week?
 						["coord"] = { 61.9, 6.0, HALLOWFALL },
 						["questID"] = 80687,
-						--["isWeekly"] = true,
+						["isWeekly"] = true,
 						["g"] = {
 							i(218354),	-- Clammer's Pry Bar
 						},
@@ -576,7 +577,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					o(423971, {	-- Coral-Fused Clam
 						["coord"] = { 64.0, 6.2, HALLOWFALL },
 						--["questID"] = ,
-						--["isWeekly"] = true,
+						["isWeekly"] = true,
 						["cost"] = { { "i", 218354, 1 }, },	-- 1x Clammer's Pry Bar
 						["g"] = {
 							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
