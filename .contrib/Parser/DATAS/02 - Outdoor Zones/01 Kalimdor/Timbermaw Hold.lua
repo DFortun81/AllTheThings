@@ -475,7 +475,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 					["groups"] = bubbleDownClassicRep(FACTION_TIMBERMAW_HOLD, {
 						{	-- Neutral
-
 						},
 						{	-- Friendly
 							applyclassicphase(PHASE_THREE_ENCHANTS, i(22392)),	-- Formula: Enchant 2H Weapon - Agility (RECIPE!)
@@ -488,7 +487,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							applyclassicphase(PHASE_THREE_RECIPES, i(19202)),	-- Plans: Heavy Timbermaw Belt (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19326)),	-- Pattern: Might of the Timbermaw (RECIPE!)
 							applyclassicphase(PHASE_THREE_RECIPES, i(19215)),	-- Pattern: Wisdom of the Timbermaw
-
 							-- #if SEASON_OF_DISCOVERY
 							-- EPIC CRAFTED ITEMS UPGRADES
 							applyclassicphase(SOD_PHASE_FOUR, i(227807, {	-- Dense Timbermaw Belt
@@ -598,7 +596,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								["timeline"] = { ADDED_4_0_1 },
 							}),
 						},
-
 					}),
 				}),
 			}),

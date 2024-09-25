@@ -121,114 +121,127 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					n(87015, {	-- Kil'rip <Laughing Skull Quartermaster>
 						["races"] = HORDE_ONLY,
 						["crs"] = { 86698 },	-- Kil'rip
-						["g"] = {
-							i(118672, {	-- Bloody Visage of the Laughing Skull
-								["cost"] = {
-									{ "g", 10000000 },	-- 1,000g
-									{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
-								},
-							}),
-							i(119146, {	-- Bone Wasp (PET!)
-								["cost"] = {
-									{ "g", 10000000 },	-- 1,000g
-									{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
-								},
-							}),
-							i(119166, {	-- Contract: Cacklebone
-								["cost"] = 50000000,	-- 5,000g
-								["g"] = {
-									follower(458),	-- Cacklebone
-								},
-							}),
-							i(118671, {	-- Frozen Visage of the Laughing Skull
-								["cost"] = {
-									{ "g", 10000000 },	-- 1,000g
-									{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
-								},
-							}),
-							i(118673, {	-- Golden Visage of the Laughing Skull
-								["cost"] = {
-									{ "g", 50000000 },	-- 5,000g
-									{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
-								},
-							}),
-							i(119159, {	-- Happy Fun Skull
-								["cost"] = 5000000,		-- 500g
-							}),
-							i(116782, {	-- Ironside Warwolf (MOUNT!)
-								["cost"] = {
-									{ "g", 50000000 },	-- 5,000g
-									{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-								},
-							}),
-							i(118668),	-- Laughing Skull Elixir
-							i(119138),	-- Laughing Skull Orc Tabard
-							i(118684, {	-- Maniacal Grimace
-								["cost"] = 5000000,		-- 500g
-							}),
-							i(119160, {	-- Tickle Totem (TOY!)
-								["cost"] = 12500000,	-- 1,250g
-							}),
-							i(118674, {	-- Visage of the Laughing Skull
-								["cost"] = {
-									{ "g", 10000000 },	-- 1,000g
-									{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
-								},
-							}),
-						},
+						["g"] = bubbleDownClassicRep(FACTION_LAUGHING_SKULL_ORCS, {
+							{		-- Neutral
+							}, {	-- Friendly
+								i(119159, {	-- Happy Fun Skull
+									["cost"] = 5000000,		-- 500g
+								}),
+								i(118668),	-- Laughing Skull Elixir
+							}, {	-- Honored
+								i(118684, {	-- Maniacal Grimace
+									["cost"] = 5000000,		-- 500g
+								}),
+								i(119160, {	-- Tickle Totem (TOY!)
+									["cost"] = 12500000,	-- 1,250g
+								}),
+							}, {	-- Revered
+								i(118672, {	-- Bloody Visage of the Laughing Skull
+									["cost"] = {
+										{ "g", 10000000 },	-- 1,000g
+										{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
+									},
+								}),
+								i(119146, {	-- Bone Wasp (PET!)
+									["cost"] = {
+										{ "g", 10000000 },	-- 1,000g
+										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+									},
+								}),
+								i(119166, {	-- Contract: Cacklebone
+									["cost"] = 50000000,	-- 5,000g
+									["g"] = {
+										follower(458),	-- Cacklebone
+									},
+								}),
+								i(118671, {	-- Frozen Visage of the Laughing Skull
+									["cost"] = {
+										{ "g", 10000000 },	-- 1,000g
+										{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
+									},
+								}),
+								i(118674, {	-- Visage of the Laughing Skull
+									["cost"] = {
+										{ "g", 10000000 },	-- 1,000g
+										{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
+									},
+								}),
+							}, {	-- Exalted
+								i(118673, {	-- Golden Visage of the Laughing Skull
+									["cost"] = {
+										{ "g", 50000000 },	-- 5,000g
+										{ "c", 823, 1000 },	-- 1,000x Apexis Crystal
+									},
+								}),
+								i(116782, {	-- Ironside Warwolf (MOUNT!)
+									["cost"] = {
+										{ "g", 50000000 },	-- 5,000g
+										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+									},
+								}),
+								i(119138),	-- Laughing Skull Orc Tabard
+							},
+						}),
 					}),
 					n(85427, {	-- Maaria <Sha'tari Defense Quartermaster>
 						["races"] = ALLIANCE_ONLY,
-						["g"] = {
-							i(116665, {	-- Armored Irontusk (MOUNT!)
-								["cost"] = {
-									{ "g", 50000000 },	-- 5,000g
-									{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-								},
-							}),
-							i(119167, {	-- Contract: Vindicator Heluun
-								["cost"] = 50000000,	-- 5,000g
-								["g"] = {
-									follower(458),	-- Vindicator Heluun
-								},
-							}),
-							i(158208, {	-- Ensemble: Sha'tari Defender's Plate [Confirmed]
-								["cost"] = 75000000,	-- 7,500g
-								["g"] = {
-									i(119425),  -- Belt of the Sha'tari Defense
-									i(119423),	-- Boots of the Sha'tari Defense
-									i(119429),	-- Bracers of the Sha'tari Defense
-									i(119422),	-- Breastplate of the Sha'tari Defense
-									i(119426),	-- Gauntlets of the Sha'tari Defense
-									i(119428),	-- Greathelm of the Sha'tari Defense
-									i(119424),	-- Legplates of the Sha'tari Defense
-									i(119427),	-- Shoulderguards of the Sha'tari Defense
-								},
-							}),
-							i(119421),	-- Sha'tari Defender's Medallion (TOY!)
-							i(119140),	-- Sha'tari Defense Tabard
-							i(118669),	-- Sha'tari Elixir
-							i(118685, {	-- Sha'tari Protector
-								["cost"] = 5000000,		-- 500g
-							}),
-							i(119150, {	-- Sky Fry (PET!)
-								["cost"] = {
-									{ "g", 10000000 },	-- 1,000g
-									{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
-								},
-							}),
-							i(119182),	-- Soul Evacuation Crystal (TOY!)
-							--[[ Note: Leaving this commented out as they removed the items from the vendor and ensembled. Leaving here in case they revert.
-							i(119428),	-- Greathelm of the Sha'tari Defense
-							i(119427),	-- Shoulderguards of the Sha'tari Defense
-							i(119422),	-- Breastplate of the Sha'tari Defense
-							i(119429),	-- Bracers of the Sha'tari Defense
-							i(119426),	-- Gauntlets of the Sha'tari Defense
-							i(119425),  -- Belt of the Sha'tari Defense
-							i(119424),	-- Legplates of the Sha'tari Defense
-							i(119423),	-- Boots of the Sha'tari Defense
-							--]]
-						},
+						["g"] = bubbleDownClassicRep(FACTION_SHATARI_DEFENSE, {
+							{		-- Neutral
+							}, {	-- Friendly
+								i(118669),	-- Sha'tari Elixir
+							}, {	-- Honored
+								i(118685, {	-- Sha'tari Protector
+									["cost"] = 5000000,		-- 500g
+								}),
+								i(119182),	-- Soul Evacuation Crystal (TOY!)
+							}, {	-- Revered
+								i(119167, {	-- Contract: Vindicator Heluun
+									["cost"] = 50000000,	-- 5,000g
+									["g"] = {
+										follower(458),	-- Vindicator Heluun
+									},
+								}),
+								i(158208, {	-- Ensemble: Sha'tari Defender's Plate [Confirmed]
+									["classes"] = PLATE_CLASSES,
+									["cost"] = 75000000,	-- 7,500g
+									["g"] = {
+										i(119425),  -- Belt of the Sha'tari Defense
+										i(119423),	-- Boots of the Sha'tari Defense
+										i(119429),	-- Bracers of the Sha'tari Defense
+										i(119422),	-- Breastplate of the Sha'tari Defense
+										i(119426),	-- Gauntlets of the Sha'tari Defense
+										i(119428),	-- Greathelm of the Sha'tari Defense
+										i(119424),	-- Legplates of the Sha'tari Defense
+										i(119427),	-- Shoulderguards of the Sha'tari Defense
+									},
+								}),
+								--[[ Note: Leaving this commented out as they removed the items from the vendor and ensembled. Leaving here in case they revert.
+								i(119428),	-- Greathelm of the Sha'tari Defense
+								i(119427),	-- Shoulderguards of the Sha'tari Defense
+								i(119422),	-- Breastplate of the Sha'tari Defense
+								i(119429),	-- Bracers of the Sha'tari Defense
+								i(119426),	-- Gauntlets of the Sha'tari Defense
+								i(119425),  -- Belt of the Sha'tari Defense
+								i(119424),	-- Legplates of the Sha'tari Defense
+								i(119423),	-- Boots of the Sha'tari Defense
+								--]]
+								i(119421),	-- Sha'tari Defender's Medallion (TOY!)
+								i(119150, {	-- Sky Fry (PET!)
+									["cost"] = {
+										{ "g", 10000000 },	-- 1,000g
+										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+									},
+								}),
+							}, {	-- Exalted
+								i(116665, {	-- Armored Irontusk (MOUNT!)
+									["cost"] = {
+										{ "g", 50000000 },	-- 5,000g
+										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+									},
+								}),
+								i(119140),	-- Sha'tari Defense Tabard
+							},
+						}),
 					}),
 				}),
 			}),

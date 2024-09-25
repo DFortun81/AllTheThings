@@ -1834,19 +1834,24 @@ root(ROOTS.Zones, {
 								})),
 							}),
 						}),
-						n(128756, {	-- Magister Langley
+						n(128756, {	-- Magister Langley <Stormshield Quartermaster>
 							["coord"] = { 54.8, 16.8, STORMSHIELD },
-							["minReputation"] = { FACTION_WRYNNS_VANGUARD, FRIENDLY },	-- Wrynn's Vanguard, Friendly
-							["g"] = {
-								i(114126),	-- Disposable Pocket Flying Machine
-								i(116776, {	-- Pale Thorngrazer (MOUNT!)
-									["cost"] = {
-										{ "g", 50000000 },		-- 5,000g
-										{ "i", 137642, 100 },	-- 100x Mark of Honor
-									},
-								}),
-								i(115517),	-- Wrynn's Vanguard Tabard
-							},
+							["g"] = bubbleDownClassicRep(FACTION_WRYNNS_VANGUARD, {
+								{		-- Neutral
+								}, {	-- Friendly
+									i(114126),	-- Disposable Pocket Flying Machine
+								}, {	-- Honored
+								}, {	-- Revered
+								}, {	-- Exalted
+									i(116776, {	-- Pale Thorngrazer (MOUNT!)
+										["cost"] = {
+											{ "g", 50000000 },		-- 5,000g
+											{ "i", 137642, 100 },	-- 100x Mark of Honor
+										},
+									}),
+									i(115517),	-- Wrynn's Vanguard Tabard
+								},
+							}),
 						}),
 						n(92501, {	-- Dawn-Seeker Kasrek <Apexis Belt Trader>
 							["coord"] = { 51.2, 61.8, STORMSHIELD },
@@ -2215,40 +2220,46 @@ root(ROOTS.Zones, {
 						}),
 						n(88482, {	-- Gazrix Gearlock <Steamwheedle "Preservation" Society Quartermaster>
 							["coord"] = { 43.1, 77.7, STORMSHIELD },
-							["g"] = {
-								i(119149, {	-- Forest Sproutling (PET!)
-									["cost"] = {
-										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
-										{ "g", 10000000 },	-- 1,000g
-									},
-								}),
-								i(119165, {	-- Contract: Professor Felblast
-									["cost"] = 50000000,	-- 5,000g
-									["g"] = {
-										follower(460),	-- Professor Felblast
-									},
-								}),
-								i(116672, {	-- Domesticated Razorback (MOUNT!)
-									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-										{ "g", 50000000 },	-- 5,000g
-									},
-								}),
-								i(110426),	-- Goblin Hot Potato
-								i(119148, {	-- Albino River Calf (PET!)
-									["cost"] = {
-										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
-										{ "g", 10000000 },	-- 1,000g
-									},
-								}),
-								i(118683, {	-- Portable Goon Squad
-									["cost"] = 5000000,	-- 500g
-								}),
-								i(119137),	-- Steamwheedle "Preservation" Society Tabard
-								i(118667),	-- Steamwheedle Elixir
-							},
+							["g"] = bubbleDownClassicRep(FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY, {
+								{		-- Neutral
+								}, {	-- Friendly
+									i(118667),	-- Steamwheedle Elixir
+								}, {	-- Honored
+									i(110426),	-- Goblin Hot Potato
+									i(118683, {	-- Portable Goon Squad
+										["cost"] = 5000000,	-- 500g
+									}),
+								}, {	-- Revered
+									i(119165, {	-- Contract: Professor Felblast
+										["cost"] = 50000000,	-- 5,000g
+										["g"] = {
+											follower(460),	-- Professor Felblast
+										},
+									}),
+									i(119149, {	-- Forest Sproutling (PET!)
+										["cost"] = {
+											{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+											{ "g", 10000000 },	-- 1,000g
+										},
+									}),
+									i(119148, {	-- Indentured Albino River Calf (PET!)
+										["cost"] = {
+											{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+											{ "g", 10000000 },	-- 1,000g
+										},
+									}),
+								}, {	-- Exalted
+									i(116672, {	-- Domesticated Razorback (MOUNT!)
+										["cost"] = {
+											{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+											{ "g", 50000000 },	-- 5,000g
+										},
+									}),
+									i(119137),	-- Steamwheedle "Preservation" Society Tabard
+								},
+							}),
 						}),
-						n(87365, {  -- Grakis
+						n(87365, {  -- Grakis <Archaeology Fragments>
 							["coord"] = { 48.6, 33.5, STORMSHIELD },
 							["g"] = {
 								i(122606, {	-- Explorer's Notebook
@@ -4234,27 +4245,33 @@ root(ROOTS.Zones, {
 						}),
 						n(85946, {	-- Shadow Sage Brakoss <Arakkoa Outcasts Quartermaster>
 							["coord"] = { 44.5, 75.0, STORMSHIELD },
-							["g"] = {
-								i(118666, {	-- Arakkoa Elixir
-									["cost"] = { { "c", 823, 1 }, },	-- 1x Apexis Crystal
-								}),
-								i(119136),	-- Arakkoa Outcasts Tabard
-								i(118682, {	-- Saberon Protector
-									["cost"] = 5000000,	-- 500g
-								}),
-								i(116772, {	-- Shadowmane Charger (MOUNT!)
-									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-										{ "g", 50000000 },	-- 5,000g
-									},
-								}),
-								i(119143, {	-- Son of Sethe (PET!)
-									["cost"] = {
-										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
-										{ "g", 10000000 },	-- 1,000g
-									},
-								}),
-							},
+							["g"] = bubbleDownClassicRep(FACTION_ARAKKOA_OUTCASTS, {
+								{		-- Neutral
+								}, {	-- Friendly
+									i(118666, {	-- Arakkoa Elixir
+										["cost"] = { { "c", 823, 1 }, },	-- 1x Apexis Crystal
+									}),
+								}, {	-- Honored
+									i(118682, {	-- Saberon Protector
+										["cost"] = 5000000,	-- 500g
+									}),
+								}, {	-- Revered
+									i(119143, {	-- Son of Sethe (PET!)
+										["cost"] = {
+											{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+											{ "g", 10000000 },	-- 1,000g
+										},
+									}),
+								}, {	-- Exalted
+									i(119136),	-- Arakkoa Outcasts Tabard
+									i(116772, {	-- Shadowmane Charger (MOUNT!)
+										["cost"] = {
+											{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+											{ "g", 50000000 },	-- 5,000g
+										},
+									}),
+								},
+							}),
 						}),
 						n(93906, {	-- Slugg Spinbolt <Wild Combatant>
 							["coord"] = { 54.6, 17.6, STORMSHIELD },
@@ -4818,39 +4835,45 @@ root(ROOTS.Zones, {
 						}),
 						n(85932, {	-- Vindicator Nuurem <Council of Exarchs Quartermaster>
 							["coord"] = { 46.6, 76.7, STORMSHIELD },
-							["g"] = {
-								i(119162, {	-- Contract: Cleric Maluuf
-									["cost"] = 50000000,	-- 5,000g
-									["g"] = {
-										follower(459),	-- Cleric Maluuf
-									},
-								}),
-								i(119135),	-- Council of Exarchs Tabard
-								i(119142, {	-- Draenei Micro Defender (PET!)
-									["cost"] = {
-										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
-										{ "g", 10000000 },	-- 1,000g
-									},
-								}),
-								i(116664, {	-- Dusty Rockhide (MOUNT!)
-									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-										{ "g", 50000000 },	-- 5,000g
-									},
-								}),
-								i(118665, {	-- Exarch Elixir
-									["cost"] = { { "c", 823, 1 }, },	-- 1x Apexis Crystal
-								}),
-								i(115472, {	-- Permanent Time Bubble (TOY!)
-									["cost"] = 10000000,	-- 1,000g
-								}),
-								i(118663, {	-- Relic of Karabor
-									["cost"] = 25000000,	-- 2,500g
-								}),
-								i(118680, {	-- Tranquility of the Exarchs
-									["cost"] = 5000000,	-- 500g
-								}),
-							},
+							["g"] = bubbleDownClassicRep(FACTION_COUNCIL_OF_EXARCHS, {
+								{		-- Neutral
+								}, {	-- Friendly
+									i(118665, {	-- Exarch Elixir
+										["cost"] = { { "c", 823, 1 }, },	-- 1x Apexis Crystal
+									}),
+								}, {	-- Honored
+									i(115472, {	-- Permanent Time Bubble (TOY!)
+										["cost"] = 10000000,	-- 1,000g
+									}),
+									i(118680, {	-- Tranquility of the Exarchs
+										["cost"] = 5000000,	-- 500g
+									}),
+								}, {	-- Revered
+									i(119162, {	-- Contract: Cleric Maluuf
+										["cost"] = 50000000,	-- 5,000g
+										["g"] = {
+											follower(459),	-- Cleric Maluuf
+										},
+									}),
+									i(119142, {	-- Draenei Micro Defender (PET!)
+										["cost"] = {
+											{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+											{ "g", 10000000 },	-- 1,000g
+										},
+									}),
+									i(118663, {	-- Relic of Karabor
+										["cost"] = 25000000,	-- 2,500g
+									}),
+								}, {	-- Exalted
+									i(119135),	-- Council of Exarchs Tabard
+									i(116664, {	-- Dusty Rockhide (MOUNT!)
+										["cost"] = {
+											{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+											{ "g", 50000000 },	-- 5,000g
+										},
+									}),
+								},
+							}),
 						}),
 					},
 				}),

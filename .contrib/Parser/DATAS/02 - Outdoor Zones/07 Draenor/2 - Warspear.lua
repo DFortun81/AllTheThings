@@ -310,39 +310,45 @@ root(ROOTS.Zones, {
 					["g"] = {
 						n(86036, {	-- Beska Redtusk <Frostwolf Orcs Quartermaster>
 							["coord"] = { 53.9, 62.6, WARSPEAR },
-							["g"] = {
-								i(118662, {	-- Bladespire Relic
-									["cost"] = 25000000,	-- 2,500g
-								}),
-								i(119161, {	-- Contract: Karg Bloodfury
-									["cost"] = 50000000,	-- 5,000g
-									["g"] = {
-										follower(459),	-- Karg Bloodfury
-									},
-								}),
-								i(118664, {	-- Frostwolf Elixir
-									["cost"] = { { "c", 823, 1 }, },	-- 1x Apexis Crystal
-								}),
-								i(119141, {	-- Frostwolf Pup (PET!)
-									["cost"] = {
-										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
-										{ "g", 10000000 },	-- 1,000g
-									},
-								}),
-								i(119133),	-- Frostwolf Tabard
-								i(118677, {	-- Howl of the Frostwolf
-									["cost"] = 5000000,	-- 500g
-								}),
-								i(115468, {	-- Permanent Frost Essence (TOY!)
-									["cost"] = 10000000,	-- 1,000g
-								}),
-								i(116785, {	-- Swift Frostwolf (MOUNT!)
-									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-										{ "g", 50000000 },	-- 5,000g
-									},
-								}),
-							},
+							["g"] = bubbleDownClassicRep(FACTION_FROSTWOLF_ORCS, {
+								{		-- Neutral
+								}, {	-- Friendly
+									i(118664, {	-- Frostwolf Elixir
+										["cost"] = { { "c", 823, 1 }, },	-- 1x Apexis Crystal
+									}),
+								}, {	-- Honored
+									i(118677, {	-- Howl of the Frostwolf
+										["cost"] = 5000000,	-- 500g
+									}),
+									i(115468, {	-- Permanent Frost Essence (TOY!)
+										["cost"] = 10000000,	-- 1,000g
+									}),
+								}, {	-- Revered
+									i(118662, {	-- Bladespire Relic
+										["cost"] = 25000000,	-- 2,500g
+									}),
+									i(119161, {	-- Contract: Karg Bloodfury
+										["cost"] = 50000000,	-- 5,000g
+										["g"] = {
+											follower(459),	-- Karg Bloodfury
+										},
+									}),
+									i(119141, {	-- Frostwolf Pup (PET!)
+										["cost"] = {
+											{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+											{ "g", 10000000 },	-- 1,000g
+										},
+									}),
+								}, {	-- Exalted
+									i(119133),	-- Frostwolf Tabard
+									i(116785, {	-- Swift Frostwolf (MOUNT!)
+										["cost"] = {
+											{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+											{ "g", 50000000 },	-- 5,000g
+										},
+									}),
+								},
+							}),
 						}),
 						n(88569, {	-- Blood Guard Axelash <Primal Gladiator>
 							["coord"] = { 48.5, 57.6, WARSPEAR },
@@ -2250,17 +2256,22 @@ root(ROOTS.Zones, {
 						}),
 						n(128759, {	-- Dazzerian <Warspear Quartermaster>
 							["coord"] = { 49.2, 55.0, WARSPEAR },
-							["minReputation"] = { FACTION_VOLJINS_SPEAR, FRIENDLY },	-- Vol'jin's Spear, Friendly
-							["g"] = {
-								i(116775, {	-- Breezestrider Stallion (MOUNT!)
-									["cost"] = {
-										{ "g", 50000000 },		-- 5,000g
-										{ "i", 137642, 100 },	-- 100x Mark of Honor
-									},
-								}),
-								i(115500),	-- Disposable Pocket Flying Machine
-								i(115518),	-- Vol'jin's Spear Tabard
-							},
+							["g"] = bubbleDownClassicRep(FACTION_VOLJINS_SPEAR, {
+								{		-- Neutral
+								}, {	-- Friendly
+									i(115500),	-- Disposable Pocket Flying Machine
+								}, {	-- Honored
+								}, {	-- Revered
+								}, {	-- Exalted
+									i(116775, {	-- Breezestrider Stallion (MOUNT!)
+										["cost"] = {
+											{ "g", 50000000 },		-- 5,000g
+											{ "i", 137642, 100 },	-- 100x Mark of Honor
+										},
+									}),
+									i(115518),	-- Vol'jin's Spear Tabard
+								},
+							}),
 						}),
 						n(93908, {	-- Fobbly Kickfix <Wild Combatant>
 							["coord"] = { 49.1, 56.4, WARSPEAR },
@@ -3584,38 +3595,44 @@ root(ROOTS.Zones, {
 						}),
 						n(88493, {	-- Mimi Wizzlebub <Steamwheedle Quartermaster>
 							["coord"] = { 54.2, 60.7, WARSPEAR },
-							["g"] = {
-								i(119149, {	-- Forest Sproutling (PET!)
-									["cost"] = {
-										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
-										{ "g", 10000000 },	-- 1,000g
-									},
-								}),
-								i(119165, {	-- Contract: Professor Felblast
-									["cost"] = 50000000,	-- 5,000g
-									["g"] = {
-										follower(460),	-- Professor Felblast
-									},
-								}),
-								i(116672, {	-- Domesticated Razorback (MOUNT!)
-									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-										{ "g", 50000000 },	-- 5,000g
-									},
-								}),
-								i(110426),	-- Goblin Hot Potato
-								i(119148, {	-- Albino River Calf (PET!)
-									["cost"] = {
-										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
-										{ "g", 10000000 },	-- 1,000g
-									},
-								}),
-								i(118683, {	-- Portable Goon Squad
-									["cost"] = 5000000,	-- 500g
-								}),
-								i(119137),	-- Steamwheedle "Preservation" Society Tabard
-								i(118667),	-- Steamwheedle Elixir
-							},
+							["g"] = bubbleDownClassicRep(FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY, {
+								{		-- Neutral
+								}, {	-- Friendly
+									i(118667),	-- Steamwheedle Elixir
+								}, {	-- Honored
+									i(110426),	-- Goblin Hot Potato
+									i(118683, {	-- Portable Goon Squad
+										["cost"] = 5000000,	-- 500g
+									}),
+								}, {	-- Revered
+									i(119165, {	-- Contract: Professor Felblast
+										["cost"] = 50000000,	-- 5,000g
+										["g"] = {
+											follower(460),	-- Professor Felblast
+										},
+									}),
+									i(119149, {	-- Forest Sproutling (PET!)
+										["cost"] = {
+											{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+											{ "g", 10000000 },	-- 1,000g
+										},
+									}),
+									i(119148, {	-- Indentured Albino River Calf (PET!)
+										["cost"] = {
+											{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+											{ "g", 10000000 },	-- 1,000g
+										},
+									}),
+								}, {	-- Exalted
+									i(116672, {	-- Domesticated Razorback (MOUNT!)
+										["cost"] = {
+											{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+											{ "g", 50000000 },	-- 5,000g
+										},
+									}),
+									i(119137),	-- Steamwheedle "Preservation" Society Tabard
+								},
+							}),
 						}),
 						n(87543, {	-- Petir Starocean <Tailoring Patterns>
 							["coord"] = { 59.0, 42.8, WARSPEAR },
@@ -3683,29 +3700,35 @@ root(ROOTS.Zones, {
 						}),
 						n(86037, {	-- Ravenspeaker Skeega <Arakkoa Outcasts Quartermaster>
 							["coord"] = { 53.4, 59.8, WARSPEAR },
-							["g"] = {
-								i(118666, {	-- Arakkoa Elixir
-									["cost"] = { { "c", 823, 1 }, },	-- 1x Apexis Crystal
-								}),
-								i(119136),	-- Arakkoa Outcasts Tabard
-								i(118682, {	-- Saberon Protector
-									["cost"] = 5000000,	-- 500g
-								}),
-								i(116772, {	-- Shadowmane Charger (MOUNT!)
-									["cost"] = {
-										{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-										{ "g", 50000000 },	-- 5,000g
-									},
-								}),
-								i(119143, {	-- Son of Sethe (PET!)
-									["cost"] = {
-										{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
-										{ "g", 10000000 },	-- 1,000g
-									},
-								}),
-							},
+							["g"] = bubbleDownClassicRep(FACTION_ARAKKOA_OUTCASTS, {
+								{		-- Neutral
+								}, {	-- Friendly
+									i(118666, {	-- Arakkoa Elixir
+										["cost"] = { { "c", 823, 1 }, },	-- 1x Apexis Crystal
+									}),
+								}, {	-- Honored
+									i(118682, {	-- Saberon Protector
+										["cost"] = 5000000,	-- 500g
+									}),
+								}, {	-- Revered
+									i(119143, {	-- Son of Sethe (PET!)
+										["cost"] = {
+											{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
+											{ "g", 10000000 },	-- 1,000g
+										},
+									}),
+								}, {	-- Exalted
+									i(119136),	-- Arakkoa Outcasts Tabard
+									i(116772, {	-- Shadowmane Charger (MOUNT!)
+										["cost"] = {
+											{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
+											{ "g", 50000000 },	-- 5,000g
+										},
+									}),
+								},
+							}),
 						}),
-						n(88253, {	-- Srikka <Archaeology>
+						n(88253, {	-- Srikka <Archaeology Fragments>
 							["coord"] = { 74.4, 31.6, WARSPEAR },
 							["g"] = {
 								i(122606, {	-- Explorer's Notebook
