@@ -70,7 +70,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(16580, {	-- Lend a Helping Span
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			achraw(16638, {	-- Ley Line in the Span
+			ach(16638, {	-- Ley Line in the Span
 				crit(55972, {	-- Azure Archives
 					--["cr"] = 198260,	-- Misaligned Ley Crystal
 					["coord"] = { 43.8, 61.9, THE_AZURE_SPAN },
@@ -121,11 +121,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 				q(72095),	-- Triggers together with 'Seeing Blue' achievement (achievementID 16581) (spellID 392664)
 				q(72031),	-- Triggers together with 'Do You Wanna Build a Snowman?' (achievementID 16474) (spellID 392156)
 				q(70023),	-- Triggers together with 'River Rapids Wrangler' (achievementID 15889) (spellID 382284)
-				q(72136),	-- Ley Line in the Span achievement - Rustpine Den - 66.2, 51.3, THE_AZURE_SPAN
-				q(72138),	-- Ley Line in the Span achievement - Azure Archives - 43.8, 61.9, THE_AZURE_SPAN
-				q(72139),	-- Ley Line in the Span achievement - Ancient Outlook - 26.3, 36.4, THE_AZURE_SPAN
-				q(72140),	-- Ley Line in the Span achievement - Slyvern Plunge - 65.4, 28.4, THE_AZURE_SPAN
-				q(72141),	-- Ley Line in the Span achievement - Ruins of Karnthar - 66.8, 59.6, THE_AZURE_SPAN
+				q(72136, name(HEADERS.AchCriteria, 16638.03)),	-- Ley Line in the Span achievement - Rustpine Den - 66.2, 51.3, THE_AZURE_SPAN
+				q(72138, name(HEADERS.AchCriteria, 16638.01)),	-- Ley Line in the Span achievement - Azure Archives - 43.8, 61.9, THE_AZURE_SPAN
+				q(72139, name(HEADERS.AchCriteria, 16638.02)),	-- Ley Line in the Span achievement - Ancient Outlook - 26.3, 36.4, THE_AZURE_SPAN
+				q(72140, name(HEADERS.AchCriteria, 16638.05)),	-- Ley Line in the Span achievement - Slyvern Plunge - 65.4, 28.4, THE_AZURE_SPAN
+				q(72141, name(HEADERS.AchCriteria, 16638.04)),	-- Ley Line in the Span achievement - Ruins of Karnthar - 66.8, 59.6, THE_AZURE_SPAN
 			}),
 		}),
 	}),

@@ -105,27 +105,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			ach(17561, {    -- Ancient Stones of the Waking Shores (automated)
 				["timeline"] = { ADDED_10_1_0 },
 			}),
-			achraw(16406, {	-- All Sides of the Story
-				crit(55253, {	-- Captain Garrick & Shuja Grimaxe
-					["sourceQuests"] = {
-						70135,	-- Encroaching Elementals [A]
-					},
-					["races"] = ALLIANCE_ONLY,
-				}),
-				crit(55254, {	-- Captain Garrick & Shuja Grimaxe
-					["sourceQuests"] = {
-						66111,	-- Encroaching Elementals [H]
-					},
-					["races"] = HORDE_ONLY,
-				}),
-				crit(55246, {	-- Duroz & Kolgar
-					["_quests"] = { 70708 },	-- Hallow
-				}),
+			ach(16406, {	-- All Sides of the Story (automated)
 				crit(55244, {	-- Tarjin the Blind
+					["_noautomation"] = true,	-- Points to a useless HQT otherwise
 					["_quests"] = { 70779 },	-- Tarjin's Tales
-				}),
-				crit(55245, {	-- Veritistrasz
-					["_quests"] = { 70268 },	-- Memories Revived
 				}),
 			}),
 			ach(15991, {	-- Dragon Glyphs: Crumbling Life Archway

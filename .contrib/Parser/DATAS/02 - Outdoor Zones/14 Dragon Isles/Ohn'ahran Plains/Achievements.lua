@@ -47,7 +47,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 61.6, 64.4, OHNAHRAN_PLAINS },
 			}),
 			explorationAch(16457),	-- Explore the Ohn'ahran Plains
-			achraw(16423, {	-- Honor Our Ancestors
+			ach(16423, {	-- Honor Our Ancestors
 				["provider"] = { "i", 201323 },	-- 1x Essence of Awakening
 				["g"] = {
 					i(200630),	-- Ohn'ir Windsage's Hearthstone (TOY!)
@@ -254,16 +254,16 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 		m(OHNAHRAN_PLAINS, {
 			n(ACHIEVEMENTS, {
 				-- Achievement Honor Our Ancestors
-				q(71167),	-- Maruukai Ancestor (spellID 390535)
-				q(71168),	-- Timberstep Outpost Ancestor (spellID 390536)
-				q(71169),	-- Horn of Drusahl Ancestor (spellID 390538)
-				q(71170),	-- Toghusuq Village Ancestor (spellID 390539)
-				q(71171),	-- Shikaar Highlands Ancestor (spellID 390544)
-				q(71172),	-- The Carving Winds Ancestor (spellID 390545)
-				q(71173),	-- Sylvan Glade Ancestor (spellID 390547)
-				q(71174),	-- Ohn'iri Springs Ancestor (spellID 390549)
-				q(71175),	-- Teerakai Ancestor (spellID 390551)
-				q(71176),	-- The Eternal Kurgans Ancestor (spellID 390553)
+				q(71167, name(HEADERS.AchCriteria, 16423.01)),	-- Maruukai Ancestor (spellID 390535)
+				q(71168, name(HEADERS.AchCriteria, 16423.02)),	-- Timberstep Outpost Ancestor (spellID 390536)
+				q(71169, name(HEADERS.AchCriteria, 16423.03)),	-- Horn of Drusahl Ancestor (spellID 390538)
+				q(71170, name(HEADERS.AchCriteria, 16423.04)),	-- Toghusuq Village Ancestor (spellID 390539)
+				q(71171, name(HEADERS.AchCriteria, 16423.05)),	-- Shikaar Highlands Ancestor (spellID 390544)
+				q(71172, name(HEADERS.AchCriteria, 16423.06)),	-- The Carving Winds Ancestor (spellID 390545)
+				q(71173, name(HEADERS.AchCriteria, 16423.07)),	-- Sylvan Glade Ancestor (spellID 390547)
+				q(71174, name(HEADERS.AchCriteria, 16423.08)),	-- Ohn'iri Springs Ancestor (spellID 390549)
+				q(71175, name(HEADERS.AchCriteria, 16423.09)),	-- Teerakai Ancestor (spellID 390551)
+				q(71176, name(HEADERS.AchCriteria, 16423.10)),	-- The Eternal Kurgans Ancestor (spellID 390553)
 			}),
 		}),
 	}),
