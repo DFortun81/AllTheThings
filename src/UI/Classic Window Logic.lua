@@ -566,33 +566,29 @@ local function StopMovingOrSizing(self)
 	if self.isMoving then
 		self:StopMovingOrSizing();
 		self.isMoving = false;
+		self:RecordSettings();
 	end
 end
 local function StartMovingOrSizing(self)
-	if not (self:IsMovable() or self:IsResizable()) then
+	if not (self:IsMovable() or self:IsResizable()) or self.isLocked then
 		return
 	end
 	if self.isMoving then
 		StopMovingOrSizing(self);
 	else
 		self.isMoving = true;
-		if not self:IsMovable() or ((select(2, GetCursorPosition()) / self:GetEffectiveScale()) < math.max(self:GetTop() - 40, self:GetBottom() + 10)) then
+		self.isMoving = true;
+		if ((select(2, GetCursorPosition()) / self:GetEffectiveScale()) < math.max(self:GetTop() - 40, self:GetBottom() + 10)) then
 			self:StartSizing();
-			self:StartATTCoroutine("StartMovingOrSizing (Sizing)", function()
+			self:StartATTCoroutine(self, "StartMovingOrSizing (Sizing)", function()
 				while self.isMoving do
 					self:Refresh();
 					coroutine.yield();
 				end
 				self:RecordSettings();
 			end);
-		else
+		elseif self:IsMovable() then
 			self:StartMoving();
-			self:StartATTCoroutine("StartMovingOrSizing (Moving)", function()
-				while IsSelfOrChild(self, GetMouseFocus()) do
-					coroutine.yield();
-				end
-				StopMovingOrSizing(self);
-			end);
 		end
 	end
 end
