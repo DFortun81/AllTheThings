@@ -2682,9 +2682,9 @@ What was the name of the once benevolent spiritual leader in Stormwind that side
 what is the highest rank that can be bestowed on a night elf watcher? Warden
 --]]
 
-root(ROOTS.HiddenQuestTriggers, {
-	n(WOW_ANNIVERSARY_TWENTY, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } },{
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_5 } }, {
+	n(WOW_ANNIVERSARY_TWENTY, {
 		q(85661),	-- Purchase one Tier 2 Set
-	})),
-});
+	}),
+})));
 -- #endif
