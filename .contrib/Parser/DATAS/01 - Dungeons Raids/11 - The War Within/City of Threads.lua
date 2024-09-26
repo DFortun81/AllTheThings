@@ -15,6 +15,16 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					["coord"] = { 56.2, 42.3, AZJ_KAHET },
 				}),
 			}),
+x
+		}),
+			n(VENDORS, {
+				n(227607, {	-- Fliq'ri <Mistress of Minions>
+				["description"] = "Found by the right stairs near the second boss. You may need another player to be caught by the nearby guard to be able to buy from the vendor yourself.",
+				["coord"] = { 74.67, 48.8, 2343 },
+				["g"] = {
+					i(226191),	-- Web Pet Leash (TOY!)
+				},
+			}),
 			n(ZONE_DROPS, {
 				-- NOTE: it was looted in follower dungeon, from mobs after Fangs of the Queen boss
 				i(218126),	-- Befouler's Syringe
