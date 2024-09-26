@@ -2458,6 +2458,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(228784, {	-- Coldflame's Edge
 						["cost"] = {{"c", BRONZE_TOKEN, 10}}
 					}),
+					i(228781, {	-- Lil'Doomy (PET!)
+						["cost"] = {{"c", BRONZE_TOKEN, 10}}
+					}),
 				},
 			}),
 			n(231352, {	-- Notary Grably <Titles of Olde>
@@ -2619,6 +2622,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			-- INFO: These are new world bosses for this year, here so their criteria can nest under them. If they have loot tables and all, it can be put here too (like previous years).
 			n(226646),	-- Sha of Anger
 			n(227257),	-- Archavon the Stone Watcher
+
+			n(121818, {	-- Lord Kazzak [Blasted Lands - Always up]
+				["isRaid"] = true,
+				["questID"] = 47461,
+				["isDaily"] = true,
+				["coord"] = { 32.42, 48.21, BLASTED_LANDS },
+				["groups"] = {
+					i(230011),	-- Lil'Kaz (PET!)
+				},
+			}),
 		}),
 	})),
 })));

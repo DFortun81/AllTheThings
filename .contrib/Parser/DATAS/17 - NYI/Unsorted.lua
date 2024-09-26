@@ -7,12 +7,9 @@ root(ROOTS.Unsorted, {
 		expansion(EXPANSION.TWW, 0.5, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 			filter(BATTLE_PETS, {
 				i(229993),	-- Bluedoo (PET!) [Trading Post?]
-				i(231365),	-- Karazhan Syphoner (PET!) [Timewalking?]
-				i(230011),	-- Lil'Kaz (PET!) [Anniversary?]
 				i(231356),	-- Specter (PET!) [Timewalking?]
 			}),
 			filter(MOUNTS, {
-				i(224399),	-- Amani Hunting Bear (MOUNT!) [Timewalking?]
 				i(231374),	-- Enchanted Spellweave Carpet (MOUNT!) [Timewalking?]
 			}),
 			filter(TOYS, {
@@ -141,6 +138,38 @@ root(ROOTS.Unsorted, {
 				i(225157),	-- Pale Rider's Eternal Girdle
 				i(225158),	-- Pale Rider's Eternal Cloak
 				i(225159),	-- Pale Rider's Eternal Vambraces
+				i(231915),	-- Auchenai Priest's Robes
+				i(231916),	-- Auchenai Priest's Boots
+				i(231917),	-- Auchenai Priest's Gloves
+				i(231918),	-- Auchenai Priest's Skullcap
+				i(231919),	-- Auchenai Priest's Leggings
+				i(231920),	-- Auchenai Priest's Spaulders
+				i(231921),	-- Auchenai Priest's Belt
+				i(231922),	-- Auchenai Priest's Bracers
+				i(231923),	-- Shadowmoon Warlock's Robes
+				i(231924),	-- Shadowmoon Warlock's Boots
+				i(231925),	-- Shadowmoon Warlock's Gloves
+				i(231926),	-- Shadowmoon Warlock's Skullcap
+				i(231927),	-- Shadowmoon Warlock's Leggings
+				i(231928),	-- Shadowmoon Warlock's Spaulders
+				i(231929),	-- Shadowmoon Warlock's Belt
+				i(231930),	-- Shadowmoon Warlock's Bracers
+				i(231947),	-- Cenarion Mender's Sollerets
+				i(231948),	-- Cenarion Mender's Grips
+				i(231949),	-- Cenarion Mender's Vision
+				i(231950),	-- Cenarion Mender's Legwraps
+				i(231951),	-- Cenarion Mender's Spaulders
+				i(231952),	-- Cenarion Mender's Girdle
+				i(231953),	-- Cenarion Mender's Bindings
+				i(231954),	-- Cenarion Mender's Robes
+				i(231955),	-- Boulderfist Mystic's Mantle
+				i(231956),	-- Boulderfist Mystic's Harness
+				i(231957),	-- Boulderfist Mystic's Breeches
+				i(231958),	-- Boulderfist Mystic's Boots
+				i(231959),	-- Boulderfist Mystic's Hood
+				i(231960),	-- Boulderfist Mystic's Grips
+				i(231961),	-- Boulderfist Mystic's Wraps
+				i(231962),	-- Boulderfist Mystic's Girdle
 			}),
 			n(ARMOR, {	-- T2 Gear Variant... ???
 				-- All Pieces are Warlock Tier for Nerubar?!?!
@@ -675,22 +704,7 @@ root(ROOTS.Unsorted, {
 				i(230853),	-- Aegis of Yuletide
 				i(230940),	-- Wings of the Sapphire Monarch
 				i(231017),	-- Wings of the Onyx Monarch
-				i(231915),	-- Auchenai Priest's Robes
-				i(231916),	-- Auchenai Priest's Boots
-				i(231917),	-- Auchenai Priest's Gloves
-				i(231918),	-- Auchenai Priest's Skullcap
-				i(231919),	-- Auchenai Priest's Leggings
-				i(231920),	-- Auchenai Priest's Spaulders
-				i(231921),	-- Auchenai Priest's Belt
-				i(231922),	-- Auchenai Priest's Bracers
-				i(231923),	-- Shadowmoon Warlock's Robes
-				i(231924),	-- Shadowmoon Warlock's Boots
-				i(231925),	-- Shadowmoon Warlock's Gloves
-				i(231926),	-- Shadowmoon Warlock's Skullcap
-				i(231927),	-- Shadowmoon Warlock's Leggings
-				i(231928),	-- Shadowmoon Warlock's Spaulders
-				i(231929),	-- Shadowmoon Warlock's Belt
-				i(231930),	-- Shadowmoon Warlock's Bracers
+
 				i(231931),	-- Coldarra Spellbinder's Robes
 				i(231932),	-- Coldarra Spellbinder's Boots
 				i(231933),	-- Coldarra Spellbinder's Gloves
@@ -707,22 +721,8 @@ root(ROOTS.Unsorted, {
 				i(231944),	-- Drakkari Stalker's Girdle
 				i(231945),	-- Drakkari Stalker's Bindings
 				i(231946),	-- Drakkari Stalker's Jerkin
-				i(231947),	-- Cenarion Mender's Sollerets
-				i(231948),	-- Cenarion Mender's Grips
-				i(231949),	-- Cenarion Mender's Vision
-				i(231950),	-- Cenarion Mender's Legwraps
-				i(231951),	-- Cenarion Mender's Spaulders
-				i(231952),	-- Cenarion Mender's Girdle
-				i(231953),	-- Cenarion Mender's Bindings
-				i(231954),	-- Cenarion Mender's Robes
-				i(231955),	-- Boulderfist Mystic's Mantle
-				i(231956),	-- Boulderfist Mystic's Harness
-				i(231957),	-- Boulderfist Mystic's Breeches
-				i(231958),	-- Boulderfist Mystic's Boots
-				i(231959),	-- Boulderfist Mystic's Hood
-				i(231960),	-- Boulderfist Mystic's Grips
-				i(231961),	-- Boulderfist Mystic's Wraps
-				i(231962),	-- Boulderfist Mystic's Girdle
+
+
 				i(231963),	-- Brunnhildar Scout's Mantle
 				i(231964),	-- Brunnhildar Scout's Harness
 				i(231965),	-- Brunnhildar Scout's Breeches
@@ -755,61 +755,43 @@ root(ROOTS.Unsorted, {
 				i(231992),	-- Telhamat Anchorite's Waistguard
 				i(231993),	-- Telhamat Anchorite's Bracelets
 				i(231994),	-- Telhamat Anchorite's Chestguard
+
 				i(231999),	-- Dragonflayer's Heartpiercer
 				i(232000),	-- Frosted Ymirheim Battle Bow
-				i(232001),	-- Blazing Skyhawk Repeater
-				i(232002),	-- Amani Tracker's Blunderbuss
 				i(232003),	-- Wolf-Eyed Sharpshooter
 				i(232004),	-- Ironforge Hammerhead Rifle
 				i(232008),	-- Magehunter's Ornate Dagger
 				i(232010),	-- Vrykul Gutripper
 				i(232019),	-- Dark Ritualists Spellblade
 				i(232020),	-- Stormforged Short Blade
-				i(232021),	-- Sunburst Sticker
-				i(232022),	-- Point of the Nether Vortex
-				i(232023),	-- Chilled Obsidian Dragon's Tooth
-				i(232024),	-- Sunfury Stalker's Fists
 				i(232025),	-- Frost Giant's Claws
 				i(232026),	-- Drakkari Voodoo Stick
 				i(232027),	-- Dragonflayer's Iron Cleaver
 				i(232028),	-- Warsong Coldweather Cleaver
-				i(232029),	-- Auchenai Vindicator's Crystal Cleaver
-				i(232039),	-- Crystal-Hooked Shortsword
-				i(232040),	-- Corrupted Sunblade
 				i(232041),	-- Titan-Spark Longblade
 				i(232042),	-- Azure Magus' Blade
 				i(232043),	-- Crystal-Maw Basher
-				i(232044),	-- Hammer of the Forest Loas
-				i(232048),	-- Felguard Sentinel's Polearm
-				i(232050),	-- Ashtongue Guardian's Spire
-				i(232051),	-- Ashtongue Channeler's Staff
 				i(232052),	-- Dragonflayer's Wing Splitter
 				i(232055),	-- Griffon's Teeth Ripper
 				i(232056),	-- Ymirjar Battle Harpoon
-				i(232057),	-- Drake's Breath Heater Shield
 				i(232058),	-- Ceremonial Stratholme Shield
 				i(232059),	-- Tainted Keeper's Visage
 				i(232060),	-- Coldarra Spellbinder's Stave
-				i(232061),	-- Cenarion Gaurdian's Stave
-				i(232062),	-- Shadowsword Vanquisher's Blade
 				i(232063),	-- Drakkari Head Splitter
 				i(232064),	-- Leviathan Mk II Crowd Control Blade
-				i(232065),	-- Crimson Draenethyst Crusher
 				i(232066),	-- Icefrost Focuser
-				i(232067),	-- Amani'shi Voodoo Bow
 				i(232078),	-- Ghostly Titan Astrolabe
 				i(232291),	-- Battered Bulwark of the Argent Crusade
+
 				i(232313),	-- Ensemble: Coldarra Spellbinder's Regalia
 				i(232314),	-- Ensemble: Jotunheim Berserker's Battleplate
 				i(232315),	-- Ensemble: Ymirjar Deathbringer's Battleplate
 				i(232316),	-- Ensemble: Brunnhildar Scout's Kit
 				i(232317),	-- Ensemble: Drakkari Stalker's Trappings
-				i(232318),	-- Ensemble: Shadowmoon Warlock's Vestments
-				i(232319),	-- Ensemble: Auchenai Priest's Raiment
-				i(232320),	-- Ensemble: Telhamat Anchorite's Raiment
-				i(232321),	-- Ensemble: Boulderfist Mystic's Battlegear
-				i(232322),	-- Ensemble: Cenarion Mender's Battlegear
-				i(232345),	-- Xu'rakas, Glaive of Command
+
+
+
+
 			}),
 			n(PVP, {
 				i(230869),	-- Ensemble: Crimson Aspirant's Cloth Armor

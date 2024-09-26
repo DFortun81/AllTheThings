@@ -4246,11 +4246,11 @@ i(0, 4560);			-- Zaedu
 --- ITEM ---
 i(224410, 4593);	-- Craggles
 i(222970, 4490);	-- Fuzzy
+i(231365, 4689);	-- Karazhan Syphoner
 i(228781, 4678);	-- Lil'Doomy
+i(230011, 4679);	-- Lil'Kaz
 i(191946, 3265);	-- Mister Muskoxeles
 i(224406, 4592);	-- Misty
 --- UNSORTED ---
 i(229993, 4669);	-- Bluedoo
-i(231365, 4689);	-- Karazhan Syphoner
-i(230011, 4679);	-- Lil'Kaz
 i(231356, 4686);	-- Specter
