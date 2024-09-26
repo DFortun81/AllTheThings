@@ -440,6 +440,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["coord"] = { 47.0, 91.3, THE_MOLTEN_FRONT },
 					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
+					["maps"] = { MOUNT_HYJAL },
 				}),
 				q(29160, {	-- Egg-stinction
 					["qg"] = 52921,	-- Deldren Ravenelm
@@ -1169,6 +1170,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
 					["coord"] = { 47.0, 91.3, THE_MOLTEN_FRONT },
 					["cost"] = { { "c", 416, 150 } },	-- 150x Mark of the World Tree
+					["maps"] = { MOUNT_HYJAL },
 				}),
 				q(29310, {	-- The Tipping Point
 					["providers"] = {
