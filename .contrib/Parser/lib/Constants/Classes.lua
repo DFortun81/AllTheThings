@@ -14,27 +14,27 @@ DEMONHUNTER = 12;
 EVOKER = 13;
 
 ALL_CLASSES = {
-	WARRIOR,
-	PALADIN,
-	SHAMAN,
-	HUNTER,
-	DRUID,
-	ROGUE,
-	MAGE,
-	PRIEST,
-	WARLOCK,
 	-- #if AFTER WRATH
 	DEATHKNIGHT,
-		-- #if AFTER MOP
-		MONK,
-			-- #if AFTER 7.3.5
-			DEMONHUNTER,
-				-- #if AFTER 10.0.2
-				EVOKER,
-				-- #endif
-			-- #endif
-		-- #endif
 	-- #endif
+	-- #if AFTER LEGION
+	DEMONHUNTER,
+	-- #endif
+	DRUID,
+	-- #if AFTER DF
+	EVOKER,
+	-- #endif
+	HUNTER,
+	MAGE,
+	-- #if AFTER MOP
+	MONK,
+	-- #endif
+	PALADIN,
+	PRIEST,
+	ROGUE,
+	SHAMAN,
+	WARLOCK,
+	WARRIOR,
 };
 TANKS = {
 	-- #if AFTER WRATH
@@ -79,7 +79,9 @@ LEATHER_CLASSES = {
 };
 LEATHER_CLASSES_INTELLECT = {
 	DRUID,
+	-- #if AFTER MOP
 	MONK,
+	-- #endif
 };
 MAIL_CLASSES = {
 	-- #if AFTER DF
@@ -93,7 +95,9 @@ MAIL_CLASSES_AGILITY = {
 	SHAMAN,
 };
 MAIL_CLASSES_HEALER = {
+	-- #if AFTER DF
 	EVOKER,
+	-- #endif
 	SHAMAN,
 };
 PLATE_CLASSES = {
@@ -107,25 +111,46 @@ PLATE_CLASSES_HEALER = {
 	PALADIN,
 };
 AGILITY_CLASSES = {
+	-- #if AFTER LEGION
 	DEMONHUNTER,
+	-- #endif
 	DRUID,
 	HUNTER,
+	-- #if AFTER MOP
 	MONK,
+	-- #endif
 	ROGUE,
 	SHAMAN,
 };
 STRENGTH_CLASSES = {
+	-- #if AFTER WRATH
 	DEATHKNIGHT,
+	-- #endif
 	PALADIN,
 	WARRIOR,
 };
 INTELLECT_CLASSES = {
 	DRUID,
+	-- #if AFTER DF
 	EVOKER,
+	-- #endif
 	MAGE,
+	-- #if AFTER MOP
 	MONK,
+	-- #endif
 	PALADIN,
 	PRIEST,
 	SHAMAN,
 	WARLOCK,
+};
+EARTHEN_CLASSES = {
+	HUNTER,
+	MAGE,
+	MONK,
+	PALADIN,
+	PRIEST,
+	ROGUE,
+	SHAMAN,
+	WARLOCK,
+	WARRIOR,
 };
