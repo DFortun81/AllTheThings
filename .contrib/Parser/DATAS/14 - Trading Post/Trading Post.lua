@@ -2430,6 +2430,118 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 				}),
 			}),
 		})),
+		n(OCTOBER, bubbleDownSelf({ ["timeline"] = { "added 11.0.2.56421", "removed 11.0.2.99999" } }, { -- TODO add better timeline
+			n(FILLED_TRAVELERS_LOG, {
+				i(187674),	-- Depthstalker (MOUNT!)
+			}),
+			filter(BATTLE_PETS, {
+				i(205148, {	-- Soot-Stained Shalewing (PET!)
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+			}),
+			filter(MOUNTS, {
+				i(226506, {	-- Hand of Reshkigaal (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 750}},
+				}),
+				i(37719, {	-- Swift Zhevra (MOUNT!)
+					["cost"] = {{"c", TRADERS_TENDER, 550}},
+				}),
+			}),
+			filter(TOYS, {
+				i(212525, {	-- Delicate Ebony Parasol (TOY!)
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+				i(212500, {	-- Delicate Silk Parasol (TOY!)
+					["cost"] = {{"c", TRADERS_TENDER, 200}},
+				}),
+			}),
+			filter(COSMETIC, {
+				i(226390, {	-- Aerie Battle Mace
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(226370, {	-- Ashen Executioner
+					["cost"] = {{"c", TRADERS_TENDER, 150}},
+				}),
+				i(226388, {	-- Battle-tested Obsidian Warhammer
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(226387, {	-- Battle-tested Warhammer
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190710, {	-- Caged Eye of the Watcher
+					["cost"] = {{"c", TRADERS_TENDER, 225}},
+				}),
+				i(226369, {	-- Classic Faded Tabard
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(226389, {	-- Dark Iron Battle Mace
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(212620, {	-- Dueler's Faded Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(212628, {	-- Dueler's Midnight Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(212615, {	-- Dueler's Snowy Shoulder Cape
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				iensemble(226429, {	-- Ensemble: Ragged Harvest Golem
+					["cost"] = {{"c", TRADERS_TENDER, 800}},
+				}),
+				iensemble(206324, {	-- Ensemble: Vagabond's Faded Threads
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				iensemble(206335, {	-- Ensemble: Wanderer's Faded Trappings
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(226382, {	-- Feathered Bow of the Fallen
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(226381, {	-- Feathered Bow of the Night
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190886, {	-- Fine White Evening Gloves
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(226386, {	-- Gentle Glow of the Naaru
+					["cost"] = {{"c", TRADERS_TENDER, 75}},
+				}),
+				i(213395, {	-- Gloves of the Midnight Soiree
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(226366, {	-- Gloves of the Morning Mist
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(190076, {	-- Granny's Old Hat
+					["cost"] = {{"c", TRADERS_TENDER, 175}},
+				}),
+				i(226428, {	-- Harvester's Claw
+					["cost"] = {{"c", TRADERS_TENDER, 250}},
+				}),
+				i(190132, {	-- Krokul Battlescythe
+					["cost"] = {{"c", TRADERS_TENDER, 85}},
+				}),
+				i(226383, {	-- Simple Ebony Wand
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+				i(210848, {	-- Trader's Midnight Sarong
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(210862, {	-- Trader's Snowy Sarong
+					["cost"] = {{"c", TRADERS_TENDER, 100}},
+				}),
+				i(226367, {	-- Ugly Black Boots
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(226368, {	-- Ugly White Boots
+					["cost"] = {{"c", TRADERS_TENDER, 40}},
+				}),
+				i(226384, {	-- Wand of the Bright Shadow
+					["cost"] = {{"c", TRADERS_TENDER, 50}},
+				}),
+			}),
+		})),
 	}),
 }));
 
@@ -2634,7 +2746,6 @@ root(ROOTS.NeverImplemented, {
 					i(190714),	-- Gorian Pulverizer
 					i(190442),	-- Illidari Bladeward
 					i(190713),	-- Imperator's Command
-					i(190132),	-- Krokul Battlescythe
 					i(189883),	-- Lordaeron Sentry's Bulwark
 					i(189886),	-- Might of the Titanforged
 					i(190687),	-- Painted Warblade
@@ -2674,11 +2785,6 @@ root(ROOTS.NeverImplemented, {
 					i(206283),	-- Vagabond's Deep Cape
 					i(206294),	-- Vagabond's Deep Hood
 
-					------ Vagabond's Faded Threads ------
-					i(206324),	-- Ensemble: Vagabond's Faded Threads
-					i(206280),	-- Vagabond's Faded Cape
-					i(206291),	-- Vagabond's Faded Hood
-
 					------ Vagabond's Grassy Threads ------
 					i(206329),	-- Ensemble: Vagabond's Grassy Threads
 					i(206285),	-- Vagabond's Grassy Cape
@@ -2697,11 +2803,6 @@ root(ROOTS.NeverImplemented, {
 					------ Wanderer's Deep Trappings ------
 					i(206316),	-- Wanderer's Deep Cloak
 					i(206305),	-- Wanderer's Deep Scarf
-
-					------ Wanderer's Faded Trappings ------
-					i(206335),	-- Ensemble: Wanderer's Faded Trappings
-					i(206313),	-- Wanderer's Faded Cloak
-					i(206302),	-- Wanderer's Faded Scarf
 
 					------ Wanderer's Grassy Trappings ------
 					i(206340),	-- Ensemble: Wanderer's Grassy Trappings
@@ -2725,9 +2826,7 @@ root(ROOTS.NeverImplemented, {
 					i(210849),	-- Trader's Azure Sarong
 					i(210856),	-- Trader's Faded Sarong
 					i(210851),	-- Trader's Grassy Sarong
-					i(210848),	-- Trader's Midnight Sarong
 					i(210859),	-- Trader's Plum Sarong
-					i(210862),	-- Trader's Snowy Sarong
 				}),
 				n(WEAPONS, {
 					i(190875),	-- Chilled Touch of the Condemned
@@ -2744,10 +2843,8 @@ root(ROOTS.NeverImplemented, {
 					i(190090),	-- Dessicated Bouquet
 					i(212627),	-- Dueler's Azure Shoulder Cape
 					i(212617),	-- Dueler's Crimson Shoulder Cape
-					i(212620),	-- Dueler's Faded Shoulder Cape
 					i(212625),	-- Dueler's Grassy Shoulder Cape
 					i(212618),	-- Dueler's Plum Shoulder Cape
-					i(212615),	-- Dueler's Snowy Shoulder Cape
 					i(190893),	-- Jeweled Valkyrion Cape
 					i(190688),	-- Silvered Helm of Righteousness
 					i(212705),	-- Spring Reveler's Cornsilk Attire

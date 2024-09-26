@@ -1389,9 +1389,6 @@ root(ROOTS.NeverImplemented, filter(BATTLE_PETS, {
 			i(205035, {	-- Snapjaw Lurker (PET!)
 				["displayID"] = 112163,
 			}),
-			i(205148, {	-- Soot-Stained Shalewing (PET!)
-				["displayID"] = 112186,
-			}),
 			i(205037, {	-- Void Lurker (PET!)
 				["displayID"] = 112164,
 			}),

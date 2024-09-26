@@ -3958,7 +3958,6 @@ i(205023, 3522);	-- Savage Lobstrok
 i(205164, 3554);	-- Senega
 i(205150, 3544);	-- Shalewing Devourer
 i(205035, 3526);	-- Snapjaw Lurker
-i(205148, 3542);	-- Soot-Stained Shalewing
 i(205037, 3527);	-- Void Lurker
 i(205032, 0);		-- Bestial Lurker
 i(205153, 0);		-- Mikah
@@ -4170,6 +4169,7 @@ i(222974, 4543);	-- Sir Shady Mrrgglton Junior
 i(221494, 4495);	-- Skippy
 i(222980, 4542);	-- Slim
 i(223624, 4575);	-- Sneef
+i(205148, 3542);	-- Soot-Stained Shalewing
 i(222966, 4473);	-- Spinner
 i(221811, 4524);	-- Starkstripe Hopper
 i(220782, 4462);	-- Thunder

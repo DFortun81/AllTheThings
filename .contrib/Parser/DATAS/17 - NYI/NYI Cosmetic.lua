@@ -254,7 +254,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190714),	-- Gorian Pulverizer
 				i(190442),	-- Illidari Bladeward
 				i(190713),	-- Imperator's Command
-				i(190132),	-- Krokul Battlescythe
 				i(189883),	-- Lordaeron Sentry's Bulwark
 				i(189886),	-- Might of the Titanforged
 				i(190687),	-- Painted Warblade
@@ -294,11 +293,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(206284),	-- Vagabond's Cloudy Cape
 				i(206295),	-- Vagabond's Cloudy Hood
 
-				------ Vagabond's Faded Threads ------
-				iensemble(206324),	-- Ensemble: Vagabond's Faded Threads
-				i(206280),	-- Vagabond's Faded Cape
-				i(206291),	-- Vagabond's Faded Hood
-
 				------ Vagabond's Grassy Threads ------
 				iensemble(206329),	-- Ensemble: Vagabond's Grassy Threads
 				i(206285),	-- Vagabond's Grassy Cape
@@ -314,10 +308,6 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(206317),	-- Wanderer's Cloudy Cloak
 				i(206306),	-- Wanderer's Cloudy Scarf
 
-				------ Wanderer's Faded Trappings ------
-				iensemble(206335),	-- Ensemble: Wanderer's Faded Trappings
-				i(206313),	-- Wanderer's Faded Cloak
-				i(206302),	-- Wanderer's Faded Scarf
 
 				------ Wanderer's Grassy Trappings ------
 				iensemble(206340),	-- Ensemble: Wanderer's Grassy Trappings
@@ -341,9 +331,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(211069),	-- Azure Treads of the Kalu'ak
 				i(210856),	-- Trader's Faded Sarong
 				i(210851),	-- Trader's Grassy Sarong
-				i(210848),	-- Trader's Midnight Sarong
 				i(210859),	-- Trader's Plum Sarong
-				i(210862),	-- Trader's Snowy Sarong
 			}),
 			n(WEAPONS, {
 				i(190875),	-- Chilled Touch of the Condemned
@@ -362,10 +350,8 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(190692),	-- Champion's Battle Standard
 				i(190847),	-- Deathmantle Assassin's Barb
 				i(190090),	-- Dessicated Bouquet
-				i(212620),	-- Dueler's Faded Shoulder Cape
 				i(212625),	-- Dueler's Grassy Shoulder Cape
 				i(212618),	-- Dueler's Plum Shoulder Cape
-				i(212615),	-- Dueler's Snowy Shoulder Cape
 				i(190893),	-- Jeweled Valkyrion Cape
 				i(190688),	-- Silvered Helm of Righteousness
 				i(212705),	-- Spring Reveler's Cornsilk Attire
@@ -539,18 +525,14 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			n(ARMOR, {
 				i(225414),	-- Cave Topographer's Drape
-				i(226369),	-- Classic Faded Tabard
 				i(224165),	-- Dornogal Tabard
 				i(224869),	-- Earthen Drape
 				i(224169),	-- Freywold Tabard
-				i(226366),	-- Gloves of the Morning Mist
 				i(224167),	-- Gundargaz Tabard
 				i(225411),	-- Secret-Dredger's Cloak
 				i(224168),	-- Stonebound Tabard
 				i(225412),	-- Torchbearer's Greatcloak
 				i(225413),	-- Treasure-Seeker's Shawl
-				i(226367),	-- Ugly Black Boots
-				i(226368),	-- Ugly White Boots
 			}),
 			n(SETS, {
 				i(226000),	-- Ensemble: Earthen Adventurer's Copper Drapery
@@ -629,35 +611,14 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 				i(226454),	-- Patched Harvest Golem's Pauldrons
 				i(226453),	-- Patched Harvest Golem's Post
 
-				------ Ragged Harvest Golem Set ------
-				i(226429),	-- Ensemble: Ragged Harvest Golem
-				i(226437),	-- Ragged Harvest Golem's Belt
-				i(226433),	-- Ragged Harvest Golem's Boots
-				i(226431),	-- Ragged Harvest Golem's Chest
-				i(226434),	-- Ragged Harvest Golem's Gloves
-				i(226693),	-- Ragged Harvest Golem's Head
-				i(226435),	-- Ragged Harvest Golem's Pants
-				i(226436),	-- Ragged Harvest Golem's Pauldrons
-				i(226432),	-- Ragged Harvest Golem's Post
 			}),
 			n(WEAPONS, {
-				i(226390),	-- Aerie Battle Mace
-				i(226370),	-- Ashen Executioner
-				i(226388),	-- Battle-tested Obsidian Warhammer
-				i(226387),	-- Battle-tested Warhammer
 				i(225495),	-- Brilliant Beacon
-				i(226389),	-- Dark Iron Battle Mace
-				i(226382),	-- Feathered Bow of the Fallen
-				i(226381),	-- Feathered Bow of the Night
-				i(226386),	-- Gentle Glow of the Naaru
 				i(226425),	-- Harvester's Claw
 				i(226426),	-- Harvester's Claw
-				i(226428),	-- Harvester's Claw
 				i(217706),	-- Learn Warglaives Test Item (DNT)
 				i(226427),	-- Patched Harvester's Claw
-				i(226383),	-- Simple Ebony Wand
 				i(225496),	-- Unhinged Vault-Hatch
-				i(226384),	-- Wand of the Bright Shadow
 			}),
 		})),
 	}),

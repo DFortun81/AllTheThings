@@ -1488,7 +1488,6 @@ i(187682, 359407);	-- Wastewarped Deathwalker
 i(190768, 368158);	-- Zereth Overseer
 --- NYI ---
 i(0, 356802);		-- Holy Lightstrider
-i(187674, 359380);	-- Depthstalker
 
 -----------------
 -- PATCH 9.2.5 --
@@ -1869,6 +1868,7 @@ i(223505, 449269);	-- Crimson Mudnose
 i(221967, 448186);	-- Crowd Pummeler 2-30
 i(222989, 447176);	-- Cyan Glowmite
 i(223318, 448979);	-- Dauntless Imperial Lynx
+i(187674, 359380);	-- Depthstalker
 i(226357, 458335);	-- Diamond Mechsuit
 i(219391, 446052);	-- Delver's Dirigible
 i(0, 453785);		-- Earthen Ordinant's Ramolith

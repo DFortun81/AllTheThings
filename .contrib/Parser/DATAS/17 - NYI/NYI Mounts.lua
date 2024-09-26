@@ -854,9 +854,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			i(223570, {	-- Ebonhide Ramolith (MOUNT!)
 				["displayID"] = 117966,
 			}),
-			i(226506, {	-- Hand of Reshkigaal (MOUNT!) [Trading Post?]
-				["displayID"] = 101036,
-			}),
 			i(226042, {	-- Plunderlord's Midnight Crocolisk (MOUNT!) [Trading Post?]
 				["displayID"] = 121170,
 			}),
