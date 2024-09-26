@@ -580,7 +580,7 @@ local function StartMovingOrSizing(self)
 		self.isMoving = true;
 		if ((select(2, GetCursorPosition()) / self:GetEffectiveScale()) < math.max(self:GetTop() - 40, self:GetBottom() + 10)) then
 			self:StartSizing();
-			self:StartATTCoroutine(self, "StartMovingOrSizing (Sizing)", function()
+			self:StartATTCoroutine("StartMovingOrSizing (Sizing)", function()
 				while self.isMoving do
 					self:Refresh();
 					coroutine.yield();
