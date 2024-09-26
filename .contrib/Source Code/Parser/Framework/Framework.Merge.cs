@@ -464,6 +464,21 @@ namespace ATT
                             }
                             break;
                         }
+                    case "FlightPathMapIDs":
+                        {
+                            if (pair.Value is List<object> db)
+                            {
+                                foreach (var obj in db)
+                                {
+                                    FlightPathMapIDs.Add(Convert.ToInt64(obj));
+                                }
+                            }
+                            else
+                            {
+                                ThrowBadFormatDB("FlightPathMapIDs");
+                            }
+                            break;
+                        }
                     case "GlyphDB":
                         {
                             // The format of the Glyph DB is a dictionary of Glyph ID <-> Spell ID pairs.

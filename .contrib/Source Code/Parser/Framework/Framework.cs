@@ -539,6 +539,11 @@ namespace ATT
         internal static Dictionary<long, Dictionary<string, object>> FlightPathDB { get; private set; } = new Dictionary<long, Dictionary<string, object>>();
 
         /// <summary>
+        /// All of the flight path map IDs that are used to gather flight path localization data for each given expansion.
+        /// </summary>
+        internal static List<long> FlightPathMapIDs { get; private set; } = new List<long>();
+
+        /// <summary>
         /// All of the glyphs that have been loaded into the database.
         /// </summary>
         internal static Dictionary<long, long> GlyphDB { get; private set; } = new Dictionary<long, long>();
@@ -2745,13 +2750,15 @@ namespace ATT
                 {
                     CurrentParseStage = ParseStage.ExportFlightPathDB;
                     var builder = new StringBuilder("-- Flight Path Database Module").AppendLine();
-
-                    var localizationForText = new Dictionary<string, Dictionary<long, string>>();
+                    builder.AppendLine("_.FlightPathMapIDs = {");
+                    foreach (var mapID in FlightPathMapIDs) builder.Append('\t').Append(mapID).AppendLine(",");
+                    builder.AppendLine("}");
 
                     // Include Only Referenced Flight Paths!
                     var keys = FLIGHTPATHS_WITH_REFERENCES.Keys.ToList();
                     keys.Sort();
                     bool isRetail = ((string[])Config["PreProcessorTags"]).Contains("RETAIL");
+                    var localizationForText = new Dictionary<string, Dictionary<long, string>>();
                     foreach (var key in keys)
                     {
                         // Check to see if FlightPathDB has any information on our flight path.

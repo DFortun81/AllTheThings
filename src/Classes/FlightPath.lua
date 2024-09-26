@@ -13,7 +13,7 @@ local contains = app.contains
 
 -- App
 local localizedFlightPathNames
-local FlightPathMapIDs = app.FlightPathDB.FlightPathMapIDs
+local FlightPathMapIDs = app.FlightPathMapIDs
 local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes, GetTaxiMapID
 	= C_TaxiMap.GetTaxiNodesForMap, C_TaxiMap.GetAllTaxiNodes, GetTaxiMapID
 local HarvestFlightPaths = function(requestID)

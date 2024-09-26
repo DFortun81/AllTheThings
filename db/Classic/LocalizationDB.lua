@@ -303,6 +303,8 @@ localize(L.HEADER_NAMES, {
 	[-1000380] = "Bounty",
 	[-1000872] = "Plunderstorm",
 	[-1000904] = "Source IDs",
+	[-1001035] = "Seasonal Fish: Summer Bass",
+	[-1001036] = "Seasonal Fish: Winter Squid",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000015] = "Warlocks can teach their demons new tricks. Some of the higher level grimoires can only be purchased from the Demon Trainer in your faction's capital cities.",
@@ -435,6 +437,8 @@ localize(L.HEADER_ICONS, {
 	[-1000380] = "Interface/Icons/ability_hunter_markedfordeath",
 	[-1000872] = "133168",
 	[-1000904] = "Interface/Icons/Inv_misc_questionmark",
+	[-1001035] = "133889",
+	[-1001036] = "133899",
 });
 localize(L.HEADER_EVENTS, {
 	[-1000200] = 201,
@@ -449,6 +453,8 @@ localize(L.HEADER_EVENTS, {
 	[-1000227] = 301,
 	[-1000243] = 1181,
 	[-1000872] = 446916,
+	[-1001035] = 133889,
+	[-1001036] = 133899,
 });
 localize(L.EVENT_REMAPPING, {
 	[374] = 479,
@@ -511,6 +517,16 @@ _.Modules.Events.SetEventInformation(201, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=2,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=1,["year"]=2023}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=3,["year"]=2024}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=4,["year"]=2025})
+});
+_.Modules.Events.SetEventInformation(133889, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=2,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=6,["year"]=2023}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=4,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=1,["year"]=2024}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=20,["weekday"]=5,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025})
+});
+_.Modules.Events.SetEventInformation(133899, {
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=7,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=3,["year"]=2024}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=2,["year"]=2024},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=4,["year"]=2025}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=3,["year"]=2025},{["hour"]=23,["minute"]=59,["month"]=3,["monthDay"]=19,["weekday"]=5,["year"]=2026})
 });
 
 -- Filter Database Module
@@ -657,6 +673,10 @@ L.FILTER_ID_ICONS = {
 }
 
 -- Flight Path Database Module
+_.FlightPathMapIDs = {
+	1414,
+	1415,
+}
 _.FlightPathNames = {
 	[1] = "Northshire Abbey",
 	[2] = "Stormwind, Elwynn",
@@ -989,14 +1009,17 @@ _.ObjectNames = {
 	[61935] = "Regulator Valve",
 	[61936] = "Fuel Control Valve",
 	[68865] = "Snufflenose Command Sticks",
+	[85562] = "Ironband's Strongbox",
 	[85563] = "Dead-tooth's Strongbox",
 	[86492] = "Crate of Elunite",
+	[89634] = "Iron Coral",
 	[89635] = "Sunscorched Shell",
 	[91138] = "Jordan's Hammer",
 	[92013] = "Tome of the Cabal",
 	[92420] = "Bailor's Ore",
 	[92423] = "Damaged Chest",
 	[93192] = "Heartswood",
+	[102984] = "Bink's Toolbox",
 	[102985] = "Balnir Snapdragons",
 	[103574] = "Filled Containment Coffer",
 	[103628] = "Ur's Treatise on Shadow Magic",
@@ -1981,14 +2004,17 @@ _.ObjectModels = {
 	[61935] = 198616,
 	[61936] = 198618,
 	[68865] = 202821,
+	[85562] = 196976,
 	[85563] = 197617,
 	[86492] = 200960,
+	[89634] = 201354,
 	[89635] = 202738,
 	[91138] = 198648,
 	[92013] = 203385,
 	[92420] = 198168,
 	[92423] = 196979,
 	[93192] = 203691,
+	[102984] = 196976,
 	[102985] = 203732,
 	[103574] = 201015,
 	[103628] = 198022,
@@ -2417,6 +2443,8 @@ localize(L.HEADER_NAMES, {
 	[-1000236] = "El cetro del Mar de Dunas",
 	[-1000373] = "Nueva personaje",
 	[-1000380] = "Prima",
+	[-1001035] = "Pescado de temporada: lubina de verano",
+	[-1001036] = "Pescado de temporada: calamares de invierno",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Un maestro de armas es un PNJ que ofrece a los personajes la oportunidad de aprender habilidades específicas con armas, cuya disponibilidad varía de un maestro de armas a otro. Todas las habilidades con armas se pueden entrenar en el nivel 1, excepto las armas de asta que requieren el nivel 20.\n\nEl entrenamiento con un maestro de armas quedó obsoleto en el parche 4.0.1, ya que cada clase ahora aprende todas las competencias de armas apropiadas para la clase en el momento de la creación. Los maestros de armas se eliminaron del juego poco después.",
@@ -2664,14 +2692,17 @@ localize(_.ObjectNames, {
 	[61935] = "Válvula reguladora",
 	[61936] = "Válvula de control de combustible",
 	[68865] = "Varas de mando de husmeador",
+	[85562] = "Caja fuerte de Vetaferro",
 	[85563] = "Caja fuerte de Dentomuerto",
 	[86492] = "Cajón de Elunite",
+	[89634] = "Coral férreo",
 	[89635] = "Cáscara asolada",
 	[91138] = "Martillo de Jordan",
 	[92013] = "Libro del conciliábulo",
 	[92420] = "Mena de Bailor",
 	[92423] = "Cofre dañado",
 	[93192] = "Duramen",
+	[102984] = "Caja de herramientas de Bink",
 	[102985] = "Bocas de dragón de Balnir",
 	[103574] = "Arca de contención llena",
 	[103628] = "Tratado de Magia de las Sombras de Ur",
@@ -3104,6 +3135,8 @@ localize(L.HEADER_NAMES, {
 	[-1000236] = "Das Szepter der Sandstürme",
 	[-1000373] = "Neuer Charakter",
 	[-1000380] = "Kopfgeld",
+	[-1001035] = "Saisonfisch: Sommerbarsch",
+	[-1001036] = "Saisonfisch: Winterkalmar",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Es muss möglicherweise ein bestimmter Feiertag aktiv sein, um hier genannte Dinge abschließen zu können.",
@@ -3355,14 +3388,17 @@ localize(_.ObjectNames, {
 	[61935] = "Regelventil",
 	[61936] = "Treibstoffzufuhrventil",
 	[68865] = "Schnüffelnasenleitstecken",
+	[85562] = "Eisenbands Geldkassette",
 	[85563] = "Stumpfzahns Geldkassette",
 	[86492] = "Kiste mit Elunit",
+	[89634] = "Eisenkoralle",
 	[89635] = "Sonnenverbrannte Schale",
 	[91138] = "Jordans Hammer",
 	[92013] = "Foliant der Kabale",
 	[92420] = "Bailors Erz",
 	[92423] = "Beschädigte Truhe",
 	[93192] = "Herzholz",
+	[102984] = "Binks Werkzeugkasten",
 	[102985] = "Balnirlöwenmäulchen",
 	[103574] = "Gefüllte Verwahrungskästen",
 	[103628] = "Urs Abhandlung über Schattenmagie",
@@ -3806,6 +3842,8 @@ localize(L.HEADER_NAMES, {
 	[-1000244] = "Edition Collector",
 	[-1000373] = "Nouveau personnage",
 	[-1000380] = "Prime",
+	[-1001035] = "Poisson de saison : bar d'été",
+	[-1001036] = "Poisson de saison : calmar d'hiver",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000033] = "Contient des objets de récompenses ou disponibles dans d’autres contenus de la section qui les contient.\nIls sont regroupés ici dans le but de réduire la duplication de nombreuses sources possibles.",
@@ -4057,14 +4095,17 @@ localize(_.ObjectNames, {
 	[61935] = "Valve de réglage",
 	[61936] = "Valve de contrôle du carburant",
 	[68865] = "Bâtons de commandement de Sniffetarin",
+	[85562] = "Coffre de Baguefer",
 	[85563] = "Coffre de Dent-Morte",
 	[86492] = "Caisse d'élunite",
+	[89634] = "Corail de fer",
 	[89635] = "Coquille brûlée par le soleil",
 	[91138] = "Marteau de Jordan",
 	[92013] = "Tome de la Cabale",
 	[92420] = "Minerai de Bailor",
 	[92423] = "Coffre endommagé",
 	[93192] = "Cœur du bois",
+	[102984] = "Boîte à outils de Bink",
 	[102985] = "Gueules-de-loup de Balnir",
 	[103574] = "Coffre de stockage rempli",
 	[103628] = "Traité d'Ur sur la Magie des Ombres",
@@ -4489,6 +4530,8 @@ localize(L.HEADER_NAMES, {
 	[-1000236] = "Scettro delle Sabbie Mutevoli",
 	[-1000373] = "Nuovo personaggio",
 	[-1000380] = "Premio",
+	[-1001035] = "Pesce di stagione: spigola estiva",
+	[-1001036] = "Pesce di stagione: calamari invernali",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000380] = "Questo elenco contiene elementi non ottenibili che ATT Discord ha segnalato come bug che Blizzard deve ancora correggere.\n\nNOTA: tutti i filtri vengono ignorati in questo elenco per motivi di visibilità. In questo elenco sono presenti solo gli oggetti rimossi dal gioco a causa di negligenza e non un gigantesco drago sputafuoco.\n\nAgli sviluppatori Blizzard: correggete gli oggetti e gli incontri elencati di seguito.",
@@ -4838,6 +4881,8 @@ localize(L.HEADER_NAMES, {
 	[-1000236] = "Cetro das Areias Cambiantes",
 	[-1000373] = "Novo personagem",
 	[-1000380] = "Recompensa",
+	[-1001035] = "Peixe sazonal: robalo de verão",
+	[-1001036] = "Peixe sazonal: Lula de Inverno",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "Um mestre de armas é um NPC que oferece aos personagens a oportunidade de aprender habilidades específicas com armas, cuja disponibilidade varia de um mestre de armas para outro. Todas as habilidades com armas podem ser treinadas no nível 1, exceto as armas de haste, que exigem nível 20.\n\nO treinamento com um mestre de armas tornou-se obsoleto no Patch 4.0.1, já que todas as proficiências de armas apropriadas à classe agora são aprendidas por cada classe após a criação. Os mestres de armas foram removidos do jogo logo depois.",
@@ -5084,12 +5129,14 @@ localize(_.ObjectNames, {
 	[68865] = "Bastões de Comando do Fungafuça",
 	[85563] = "Caixa-forte do Dente-podre",
 	[86492] = "Cratera de Elunita",
+	[89634] = "Coral de Ferro",
 	[89635] = "Casca Queimada de Sol",
 	[91138] = "Martelo de Jardel",
 	[92013] = "Tomo do Conluio",
 	[92420] = "Minério do Bailor",
 	[92423] = "Baú Danificado",
 	[93192] = "Palocórdio",
+	[102984] = "Caixa de Ferramentas de Bink",
 	[102985] = "Boca-de-leão de Balnir",
 	[103574] = "Cofre de Contenção Cheio",
 	[103628] = "Tratado de Ur sobre Umbromancia",
@@ -5483,6 +5530,8 @@ localize(L.HEADER_NAMES, {
 	[-1000373] = "Новый персонаж",
 	[-1000380] = "Премия",
 	[-1000872] = "Пиратская буря",
+	[-1001035] = "Сезонная рыба: летний окунь",
+	[-1001036] = "Сезонная рыба: зимний кальмар",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "Чтобы выполнить упомянутые в данной секции Штучки, может быть нужен какой-то праздник.",
@@ -5735,14 +5784,17 @@ localize(_.ObjectNames, {
 	[61935] = "Перепускной клапан",
 	[61936] = "Топливный распределительный клапан",
 	[68865] = "Палочка-погонялочка для шмыгуносов",
+	[85562] = "Сейф Сталекрута",
 	[85563] = "Сейф Мертвозуба",
 	[86492] = "Ящик с элунитом",
+	[89634] = "Железный коралл",
 	[89635] = "Высохшая на солнце скорлупа",
 	[91138] = "Молот Джордана",
 	[92013] = "Фолиант заговора",
 	[92420] = "Руда Бэйлора",
 	[92423] = "Поврежденный сундук",
 	[93192] = "Сердцедрево",
+	[102984] = "Ящик для инструментов Бинк",
 	[102985] = "Львиный зев Бальнира",
 	[103574] = "Заполненная шкатулка-духоловка",
 	[103628] = "Трактат Ура по темной магии",
@@ -6243,6 +6295,8 @@ localize(L.HEADER_NAMES, {
 	[-1000236] = "흐르는 모래의 홀",
 	[-1000373] = "새로운 캐릭터",
 	[-1000380] = "하사품",
+	[-1001035] = "제철 생선: 여름 농어",
+	[-1001036] = "제철 생선: 겨울 오징어",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000040] = "웨폰 마스터는 캐릭터에게 특정 무기 기술을 배울 수 있는 기회를 제공하는 NPC로, 사용 가능 여부는 웨폰 마스터마다 다릅니다. 모든 무기 기술은 레벨 20이 필요한 폴암을 제외하고 레벨 1에서 훈련할 수 있습니다.\n\n4.0.1 패치에서는 각 병과가 생성 시 모든 병과에 적합한 무기 숙련도를 배우게 되므로 무기 전문가와의 훈련은 더 이상 필요하지 않게 되었습니다. 무기 마스터는 곧 게임에서 제거되었습니다.",
@@ -6489,14 +6543,17 @@ localize(_.ObjectNames, {
 	[61935] = "압력 조절 밸브",
 	[61936] = "연료 조절 밸브",
 	[68865] = "땅다람쥐 지휘봉",
+	[85562] = "아이언밴드의 금고",
 	[85563] = "썩은니의 금고",
 	[86492] = "엘루니트 상자",
+	[89634] = "철산호",
 	[89635] = "바짝 마른 알껍질",
 	[91138] = "조던의 망치",
 	[92013] = "비밀의 고서",
 	[92420] = "베일러의 광석",
 	[92423] = "부서진 궤짝",
 	[93192] = "사랑나무",
+	[102984] = "빙크의 연장통",
 	[102985] = "발니르 금어초",
 	[103574] = "채워진 속박의 상자",
 	[103628] = "우르의 흑마법 논문",
@@ -6891,6 +6948,8 @@ localize(L.HEADER_NAMES, {
 	[-1000263] = "可口可乐活动",
 	[-1000373] = "新角色",
 	[-1000380] = "赏金任务",
+	[-1001035] = "时令鱼类：夏季鲈鱼",
+	[-1001036] = "时令鱼类：冬鱿鱼",
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
@@ -7131,12 +7190,14 @@ localize(_.ObjectNames, {
 	[68865] = "地鼠指挥棒",
 	[85563] = "蛀牙杰克的箱子",
 	[86492] = "月神矿石",
+	[89634] = "铁珊瑚",
 	[89635] = "晒焦的蛋壳",
 	[91138] = "乔丹的铁锤",
 	[92013] = "阴谋之书",
 	[92420] = "白洛尔的矿石",
 	[92423] = "破损的箱子",
 	[93192] = "同心树",
+	[102984] = "彬克的工具箱",
 	[102985] = "巴尼尔金鱼草",
 	[103574] = "装满的封灵箱",
 	[103628] = "乌尔的暗影魔法研究论文",

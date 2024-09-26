@@ -3394,41 +3394,7 @@ end)();
 local function distance( x1, y1, x2, y2 )
 	return math.sqrt( (x2-x1)^2 + (y2-y1)^2 )
 end
-local arrOfNodes = {
-	1414,	-- Kalimdor
-	1415,	-- Eastern Kingdoms
-	1941,	-- Eversong Woods (and Ghostlands + Isle of Quel'Danas)
-	1943,	-- Azuremyst Isle (and Bloodmyst)
-	1944,	-- Hellfire Peninsula (All of Outland)
-
-	-- TODO:
-	118,	-- Icecrown (All of Northrend)
-	--422,	-- Dread Wastes (All of Pandaria)
-	--525,	-- Frostfire Ridge (All of Draenor)
-	--630,	-- Azsuna (All of Broken Isles)
-	--882,	-- Mac'Aree (All of Argus)
-	--862,	-- Zuldazar (All of Zuldazar)
-	--896,	-- Drustvar (All of Kul Tiras)
-
-	1209,	-- Kalimdor
-	1208,	-- Eastern Kingdoms
-	1467,	-- Outland
-	1384,	-- Northrend
-	1923,	-- Pandaria
-	1922,	-- Draenor
-	993,	-- Broken Isles
-	994,	-- Argus
-	1011,	-- Zandalar
-	1014,	-- Kul Tiras
-	1504,	-- Nazjatar
-	1647,	-- The Shadowlands
-	1409,	-- Exile's Reach [Correct]
-	2046,	-- Zereth Mortis
-	2057,	-- Dragon Isles
-	2055,	-- Sepulcher of the First Ones (has FPs inside)
-	2149,	-- Ohn'ahran Plains [The Nokhud Offensive] (has FPs inside)
-	2175,	-- Zaralek Cavern
-};
+local arrOfNodes = app.FlightPathMapIDs;
 app.AddEventHandler("OnReady", function()
 	-- Cache Flight Path Data once the addon is ready.
 	local newNodes, anyNew = {}, false;
