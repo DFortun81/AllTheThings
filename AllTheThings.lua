@@ -2236,8 +2236,8 @@ local function AddContainsData(group, tooltipInfo)
 	if not app.ThingKeys[key] or (app.ActiveRowReference and not SummarizeShowForActiveRowKeys[key]) then return end
 	local id = group[key]
 	local working = group.working
-	-- Sort by the heirarchy of the group
-	if not working then
+	-- Sort by the heirarchy of the group if not the raw group of an ATT list
+	if not working and not app.ActiveRowReference then
 		app.Sort(group.g, app.SortDefaults.Hierarchy, true);
 	end
 	-- app.PrintDebug("SummarizeThings",group.hash,group.g and #group.g)
