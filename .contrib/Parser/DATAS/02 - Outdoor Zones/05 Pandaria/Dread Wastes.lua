@@ -1726,10 +1726,10 @@ root(ROOTS.Zones, {
 								i(89394),	-- Amber Spear of Klaxxi'vess
 								i(89392),	-- Amber Spine of Klaxxi'vess
 								i(89399),	-- Amber Sprayer of Klaxxi'vess
+								i(89798),	-- Klaxxi Tabard
 								i(85262, {	-- Reins of the Amber Scorpion (MOUNT!)
 									["cost"] = 100000000,	-- 10,000g
 								}),
-								i(89798),	-- Klaxxi Tabard
 							},
 						}),
 					}),
