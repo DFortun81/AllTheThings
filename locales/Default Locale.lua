@@ -212,6 +212,103 @@ local L = setmetatable({
 	INCOMPLETE = "|T" .. app.asset("incomplete") .. ":0|t |c" .. app.Colors.Completed .. "Incomplete|r";		-- Acquired the colors and icon from CanIMogIt.
 	INCOMPLETE_ICON = "|T" .. app.asset("incomplete") .. ":0|t";		-- Acquired the colors and icon from CanIMogIt.
 
+	-- These are solely used to condense the length of Source strings within Tooltips
+	ABBREVIATIONS = {
+		["ALL THE THINGS"] = "ATT",
+		["Expansion Pre"] = "Pre",
+		["Expansion Features"] = "EF",
+		[GROUP_FINDER] = "D&R",
+		["Dungeons & Raids"] = "D&R",
+		["Player vs Player"] = STAT_CATEGORY_PVP,
+		["Player vs. Player"] = STAT_CATEGORY_PVP,
+		["Outdoor Zones"] = LFG_TYPE_ZONE,
+		-- Expansion sorted
+		["Classic %> "] = "",
+		["The Burning Crusade"] = "BC",
+		["Burning Crusade"] = "BC",
+		["The BC"] = "BC",
+		["Wrath of the Lich King"] = "WotLK",
+		["Cataclysm %>"] = "Cata >",
+		["Cataclysm"] = "Cata",
+		["Mists of Pandaria"] = "MoP",
+		["Warlords of Draenor"] = "WoD",
+		["Battle for Azeroth"] = "BFA",
+		["The Shadowlands"] = "SL",
+		["Shadowlands"] = "SL",
+		["Dragonflight"] = "DF",
+		["The War Within"] = "TWW",
+		-- Dungeon & Raid
+		["Normal"] = "N",
+		["Heroic"] = "H",
+		["Mythic"] = "M",
+		["Raid Finder"] = "LFR",
+		["Looking For Raid"] = "LFR",
+		["10 Player"] = "10M",
+		["10 Player (Heroic)"] = "10M (H)",
+		["25 Player"] = "25M",
+		["25 Player (Heroic)"] = "25M (H)",
+		[BATTLEGROUNDS] = "BGs",
+		-- Dungeon & Raid Names
+		-- Cata
+		["Baleroc, the Gatekeeper"] = "Baleroc",
+		["The Conclave of Wind"] = "Conclave",
+		["Hagara the Stormbinder"] = "Hagara",
+		["Majordomo Staghelm"] = "Majordomo",
+		["Omnotron Defense System"] = "Omnotron",
+		["Theralion and Valiona"] = "Theralion&Valiona",
+		["Yor'sahj the Unsleeping"] = "Yor'sahj",
+		-- DF
+		["Aberrus, the Shadowed Crucible"] = "Aberrus",
+		["Antorus, the Burning Throne"] = "Antorus",
+		["Amirdrassil, the Dream's Hope"] = "Amirdrassil",
+		["Kazzara, the Hellforged"] = "Kazzara",
+		["Larodar, Keeper of the Flame"] = "Larodar",
+		["Nymue, Weaver of the Cycle"] = "Nymue",
+		["Tindral Sageswift, Seer of the Flame"] = "Tindral Sageswift",
+		-- Legion
+		["Il'gynoth, The Heart of Corruption"] = "Il'gynoth",
+		-- BFA
+		["Ny'alotha, the Waking City"] = "Ny'alotha",
+		-- SL
+		["Tazavesh, the Veiled Market"] = "Tazavesh",
+		-- TWW
+		["Ara-Kara, City of Echoes"] = "Ara-Kara",
+		["Sikran, Captain of the Sureki"] = "Sikran",
+		-- Outdoor Zones
+		["Quartermaster Miranda Breechlock"] = "Quartermaster Miranda",
+		["Season "] = "S",
+		["Sanctum Upgrades %> "] = "",
+		["The Azure Span"] = "Azure Span",
+		["The Forbidden Reach"] = "Forbidden Reach",
+		["The Superbloom"] = "Superbloom",
+		["The Waking Shores"] = "Waking Shores",
+		["The Primalist Future"] = "Primalist Future",
+		["The Storm's Fury"] = "Storm's Fury",
+		["WoW Anniversary"] = "Anniversary",
+		["Dragonriding Challenge: Dragon Isles: Gold > "] = "",
+		["Dragon Racing Completionist: Gold > "] = "",
+		["Emerald Dream Challenge Racing Completionist: Gold > "] = "",
+		["Emerald Dream Racing Completionist: Gold > "] = "",
+		["Forbidden Reach Challenge Racing Completionist: Gold > "] = "",
+		["Forbidden Reach Racing Completionist: Gold > "] = "",
+		["Zaralek Cavern Racing Completionist: Gold > "] = "",
+
+		["WoW's Anniversary %> "] = "",
+		[BLACK_MARKET_AUCTION_HOUSE] = "BMAH",
+		["Emissary Quests"] = "Emissary",
+		["Item Sets"] = WARDROBE_SETS,
+		["Zone Wide"] = LFG_TYPE_ZONE,
+		["Mini World Events"] = GetSpellName(57055),
+		["Monthly World Events"] = CALENDAR_REPEAT_MONTHLY,
+		[TRACKER_HEADER_WORLD_QUESTS] = "WQ",
+		["Weekly World Events"] = CALENDAR_REPEAT_WEEKLY,
+		["Covenant:"] = "Cov:",
+		[CLASS.." %> "] = "",
+
+		["Pet Journal"] = PETS,
+		["Toy Box"] = TOY,
+	};
+	
 	-- These are populated by the LocalizationDB.
 	EVENT_REMAPPING = {};
 	EVENT_TIMERUNNING_SEASONS = {};
