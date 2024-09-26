@@ -6,7 +6,7 @@ local L, settings = app.L.SETTINGS_MENU, app.Settings;
 local child = settings:CreateOptionsPage("Commands", L.FEATURES_PAGE)
 
 -- CONTENT
-local headerCommands = child:CreateHeaderLabel("Commands to view any thing")
+local headerCommands = child:CreateHeaderLabel("Chat commands to view any thing")
 if child.separator then
 	headerCommands:SetPoint("TOPLEFT", child.separator, "BOTTOMLEFT", 8, -8);
 else

@@ -8372,74 +8372,40 @@ function app:GetDataCache()
 	-- app.PrintDebugPrior("Ended Cache Prime")
 	-- app.PrintMemoryUsage()
 
-	-- Now build the hidden "Unsorted" Window's Data
-	g = {};
-	local unsortedData = app.CreateRawText(L.UNSORTED, {
-		title = L.UNSORTED .. DESCRIPTION_SEPARATOR .. app.Version,
-		icon = app.asset("WindowIcon_Unsorted"),
-		description = L.UNSORTED_DESC,
-		font = "GameFontNormalLarge",
-		g = g,
-	});
+	-- Function to build a hidden window's data
+	local function BuildHiddenWindowData(name, icon, description, category, flags)
+		local g = {}
+		local windowData = app.CreateRawText(name, {
+			title = name .. DESCRIPTION_SEPARATOR .. app.Version,
+			icon = app.asset(icon),
+			description = description,
+			font = "GameFontNormalLarge",
+			g = g,
+		})
 
-	-- Never Implemented
-	if app.Categories.NeverImplemented then
-		db = app.CreateRawText(L.NEVER_IMPLEMENTED)
-		db.g = app.Categories.NeverImplemented;
-		db.description = L.NEVER_IMPLEMENTED_DESC;
-		db._nyi = true;
-		tinsert(g, db);
-		CacheFields(db, true);
-		app.AssignFieldValue(db, "u", 1);
+		if app.Categories[category] then
+			local db = app.CreateRawText(name)
+			db.g = app.Categories[category]
+			db.description = description
+			for k, v in pairs(flags or {}) do
+				db[k] = v
+			end
+			tinsert(g, db)
+			CacheFields(db, true)
+		end
+
+		local window = app:GetWindow(category)
+		window.AdHoc = true
+		window:SetData(windowData)
+		window:BuildData()
 	end
 
-	-- Hidden Achievement Triggers
-	if app.Categories.HiddenAchievementTriggers then
-		db = app.CreateRawText(L.HIDDEN_ACHIEVEMENT_TRIGGERS)
-		db.g = app.Categories.HiddenAchievementTriggers;
-		db.description = L.HIDDEN_ACHIEVEMENT_TRIGGERS_DESC;
-		db._hqt = true;
-		tinsert(g, db);
-		CacheFields(db, true);
-	end
-
-	-- Hidden Quest Triggers
-	if app.Categories.HiddenQuestTriggers then
-		db = app.CreateRawText(L.HIDDEN_QUEST_TRIGGERS)
-		db.g = app.Categories.HiddenQuestTriggers;
-		db.description = L.HIDDEN_QUEST_TRIGGERS_DESC;
-		db._hqt = true;
-		tinsert(g, db);
-		CacheFields(db, true);
-	end
-
-	-- Sourceless
-	if app.Categories.Sourceless then
-		db = app.CreateRawText(L.SOURCELESS)
-		db.g = app.Categories.Sourceless;
-		db.description = L.SOURCELESS_DESC;
-		db._missing = true;
-		db._unsorted = true;
-		tinsert(g, db);
-		CacheFields(db, true);
-	end
-
-	-- Unsorted
-	if app.Categories.Unsorted then
-		db = app.CreateRawText(L.UNSORTED)
-		db.g = app.Categories.Unsorted;
-		db.description = L.UNSORTED_DESC_2;
-		-- since unsorted is technically auto-populated, anything nested under it is considered 'missing' in ATT
-		db._missing = true;
-		db._unsorted = true;
-		tinsert(g, db);
-		CacheFields(db, true);
-	end
-	local unsorted = app:GetWindow("Unsorted");
-	-- force the unsorted window to be skipped for Updates unless it is actually visible
-	unsorted.AdHoc = true;
-	unsorted:SetData(unsortedData);
-	unsorted:BuildData();
+	-- Build all the hidden window's data
+	BuildHiddenWindowData(L.UNSORTED, "WindowIcon_Unsorted", L.UNSORTED_DESC, "Unsorted", { _missing = true, _unsorted = true })
+	BuildHiddenWindowData(L.NEVER_IMPLEMENTED, "status-unobtainable", L.NEVER_IMPLEMENTED_DESC, "NeverImplemented", { _nyi = true })
+	BuildHiddenWindowData(L.HIDDEN_ACHIEVEMENT_TRIGGERS, "Category_Achievements", L.HIDDEN_ACHIEVEMENT_TRIGGERS_DESC, "HiddenAchievementTriggers", { _hqt = true })
+	BuildHiddenWindowData(L.HIDDEN_QUEST_TRIGGERS, "Interface_Quest", L.HIDDEN_QUEST_TRIGGERS_DESC, "HiddenQuestTriggers", { _hqt = true })
+	BuildHiddenWindowData(L.SOURCELESS, "WindowIcon_Unsorted", L.SOURCELESS_DESC, "Sourceless", { _missing = true, _unsorted = true })
 
 	-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
 	-- app.PrintDebug("Finished loading data cache")
@@ -13334,6 +13300,18 @@ SlashCmdList.AllTheThings = function(cmd)
 			return true;
 		elseif cmd == "unsorted" then
 			app:GetWindow("Unsorted"):Toggle();
+			return true;
+		elseif cmd == "nyi" then
+			app:GetWindow("NeverImplemented"):Toggle();
+			return true;
+		elseif cmd == "hat" then
+			app:GetWindow("HiddenAchievementTriggers"):Toggle();
+			return true;
+		elseif cmd == "hqt" then
+			app:GetWindow("HiddenQuestTriggers"):Toggle();
+			return true;
+		elseif cmd == "sourceless" then
+			app:GetWindow("Sourceless"):Toggle();
 			return true;
 		elseif cmd == "contribute" then
 			app.Contribute(not app.Contributor and 1)

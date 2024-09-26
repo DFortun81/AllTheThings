@@ -299,7 +299,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 			n(98685, {	-- Cupri <Timewalking Vendor>
 				["coord"] = { 54.4, 38.8,  SHATTRATH_CITY },
 				["g"] = {
-					filter(ARMOR, {
+					n(ARMOR, {
 						filter(BACK_F, {
 							i(129834, {	-- Bishop's Cloak
 								["cost"] = {{"c", TIMEWARPED_BADGE, 25}},
