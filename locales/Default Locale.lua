@@ -4,6 +4,10 @@
 --						English / United States (default)					  --
 --------------------------------------------------------------------------------
 local appName, app = ...;
+
+-- WoW API Cache
+local GetSpellName = app.WOWAPI.GetSpellName;
+
 local L = setmetatable({
 	-- General Text
 	TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
