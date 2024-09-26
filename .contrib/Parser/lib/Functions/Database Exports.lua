@@ -173,27 +173,58 @@ ExportDB.FlightPathDB = {
 	-- Represents the mapID used by the game to show FlightPaths at a Flight Master
 	-- Missing ones will be reported in chat by ATT when 'Debugging' is set
 	FlightPathMapIDs = {
+		-- #if ANYCLASSIC
+		KALIMDOR,
+		EASTERN_KINGDOMS,
+		-- #if AFTER TBC
+		EVERSONG_WOODS,		-- Eversong Woods (and Ghostlands + Isle of Quel'Danas)
+		AZUREMYST_ISLE,		-- Azuremyst Isle (and Bloodmyst)
+		HELLFIRE_PENINSULA,	-- Hellfire Peninsula (All of Outland)
+		-- #endif
+		-- #if AFTER WRATH
+		ICECROWN,			-- Icecrown (All of Northrend)
+		-- #endif
+		-- #else
 		1209,	-- Kalimdor
 		1208,	-- Eastern Kingdoms
+		-- #if AFTER TBC
 		1467,	-- Outland
+		-- #endif
+		-- #if AFTER WRATH
 		1384,	-- Northrend
+		-- #endif
+		-- #endif
+		-- #if AFTER MOP
 		1923,	-- Pandaria
+		-- #endif
+		-- #if AFTER WOD
 		1922,	-- Draenor
+		-- #endif
+		-- #if AFTER LEGION
 		993,	-- Broken Isles
 		994,	-- Argus
+		-- #endif
+		-- #if AFTER BFA
 		1011,	-- Zandalar
 		1014,	-- Kul Tiras
 		1504,	-- Nazjatar
+		-- #endif
+		-- #if AFTER SHADOWLANDS
 		1647,	-- The Shadowlands
 		1409,	-- Exile's Reach
 		2046,	-- Zereth Mortis
+		-- #endif
+		-- #if AFTER DF
 		2057,	-- Dragon Isles
 		2055,	-- Sepulcher of the First Ones (has FPs inside)
 		2149,	-- Ohn'ahran Plains [The Nokhud Offensive] (has FPs inside)
 		2175,	-- Zaralek Cavern
 		2241,	-- Emerald Dream
+		-- #endif
+		-- #if AFTER TWW
 		2276,	-- Khaz Algar
 		2298,	-- Nerub-ar Palace (has FPs inside)
+		-- #endif
 	}
 }
 

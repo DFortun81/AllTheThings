@@ -3434,7 +3434,7 @@ app.AddEventHandler("OnReady", function()
 	local newNodes, anyNew = {}, false;
 	for i,mapID in ipairs(arrOfNodes) do
 		local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
-		if allNodeData then
+		if allNodeData and #allNodeData > 0 then
 			for j,nodeData in ipairs(allNodeData) do
 				if nodeData.name then
 					AllTheThingsAD.LocalizedFlightPathNames[nodeData.nodeID] = nodeData.name;

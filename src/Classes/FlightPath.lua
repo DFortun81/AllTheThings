@@ -22,10 +22,12 @@ local HarvestFlightPaths = function(requestID)
 	local allNodeData
 	for _,mapID in ipairs(FlightPathMapIDs) do
 		allNodeData = C_TaxiMap_GetTaxiNodesForMap(mapID)
-		if allNodeData then
+		if allNodeData and #allNodeData > 0 then
 			for _,nodeData in ipairs(allNodeData) do
 				localizedFlightPathNames[nodeData.nodeID] = nodeData.name
 			end
+		else
+			print("No taxi nodes found for map", mapID);
 		end
 	end
 
