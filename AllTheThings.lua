@@ -2229,10 +2229,11 @@ local function GetRelativeDifficulty(group, difficultyID)
 		end
 	end
 end
+local SummarizeShowForActiveRowKeys
 local function AddContainsData(group, tooltipInfo)
 	local key = group.key
 	-- only show Contains on Things
-	if not app.ThingKeys[key] then return end
+	if not app.ThingKeys[key] or (app.ActiveRowReference and not SummarizeShowForActiveRowKeys[key]) then return end
 	local id = group[key]
 	local working = group.working
 	-- Sort by the heirarchy of the group
@@ -2393,6 +2394,13 @@ local function AddContainsData(group, tooltipInfo)
 	return working
 end
 app.AddEventHandler("OnLoad", function()
+	SummarizeShowForActiveRowKeys = app.CloneDictionary(app.ThingKeys, {
+		-- Specific keys which we don't want to list Contains data on row reference tooltips but are considered Things
+		npcID = false,
+		creatureID = false,
+		encounterID = false,
+		explorationID = false,
+	})
 	app.Settings.CreateInformationType("SummarizeThings", {
 		text = "SummarizeThings",
 		priority = 2.9, HideCheckBox = true,
