@@ -436,6 +436,7 @@ for key,value in pairs({
 		["Normal"] = "N",
 		["Heroic"] = "H",
 		["Mythic"] = "M",
+		["Clé mythique"] = "M+",
 		["Ny’alotha, la cité en éveil"] = "Ny’alotha",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
 		["Tazavesh, le marché dissimulé"] = "Tazavesh",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
 		["10 Player"] = "10J",

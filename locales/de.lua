@@ -428,6 +428,7 @@ for key,value in pairs({
 		["Normal"] = "N",
 		["Heroisch"] = "H",
 		["Mythisch"] = "M",
+		["Mythischer Schlüsselstein"] = "M+",
 		["Ny'alotha, die Erwachte Stadt"] = "Ny'alotha",	-- ["Ny'alotha, the Waking City"] = "Ny'alotha"
 		["Tazavesh, der Verhüllte Markt"] = "Tazavesh",	-- ["Tazavesh, the Veiled Market"] = "Tazavesh"
 		["10 Spieler"] = "10M",
