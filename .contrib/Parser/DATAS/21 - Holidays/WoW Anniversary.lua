@@ -2681,10 +2681,10 @@ Cro Threadstrong continually threatened what specific type of vendor in shattrat
 What was the name of the once benevolent spiritual leader in Stormwind that sided with Deathwing? Benedictus
 what is the highest rank that can be bestowed on a night elf watcher? Warden
 --]]
--- #endif
 
 root(ROOTS.HiddenQuestTriggers, {
 	n(WOW_ANNIVERSARY_TWENTY, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } },{
 		q(85661),	-- Purchase one Tier 2 Set
 	})),
 });
+-- #endif
