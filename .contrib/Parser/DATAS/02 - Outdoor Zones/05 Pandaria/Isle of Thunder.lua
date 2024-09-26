@@ -130,41 +130,54 @@ root(ROOTS.Zones, {
 							n(68000, {	-- Hiren Loresong <Kirin Tor Offensive Quartermaster>
 								["coord"] = { 64.6, 74.6, ISLE_OF_THUNDER },
 								["races"] = ALLIANCE_ONLY,
-								["minReputation"] = { FACTION_KIRIN_TOR_OFFENSIVE, NEUTRAL },	-- Kirin Tor Offensive
-								["g"] = {
-									i(97191),	-- Ancient Overlord's Onyx Band
-									i(97189),	-- Ancient Primalist's Seal
-									i(95532),	-- Belt of Loa Charms
-									i(80433),	-- Blood Spiritcaller
-									i(95530),	-- Cinch of the Dead Forest's Vigil
-									i(97207),	-- Cloak of the Immortal Guardian
-									i(95529),	-- Girdle of Shan'ze Glory
-									i(95545),	-- Grand Commendation of the Kirin Tor Offensive
-									i(95490, {	-- Greater Kirin Tor Offensive Insignia
-										["cost"] = {{"i",95491,10}},	-- Tattered Historical Parchments
-									}),
-									i(95567),	-- Kirin Tor Beacon (TOY!)
-									i(95489, {	-- Kirin Tor Offensive Insignia
-										["cost"] = {{"i",95491,1}},	-- Tattered Historical Parchments
-									}),
-									i(95591),	-- Kirin Tor Offensive Tabard
-									i(95527),	-- Pain-Binder Girdle
-									i(97187),	-- Refurbished Band of Jin
-									i(97190),	-- Refurbished Seal of Jin
-									i(95564, {	-- Golden Primal Direhorn (MOUNT!)
-										["cost"] = 30000000,	-- 3,000g
-									}),
-									i(97188),	-- Restored Hexxer's Signet
-									i(95531),	-- Rotting Bog Cinch
-									i(97205),	-- Shan'ze Gravetender Cloak
-									i(97206),	-- Shan'ze Partisan's Greatcloak
-									i(95526),	-- Shan'ze Scholar's Girdle
-									i(95534),	-- Skumblade Ritualist Links
-									i(95528),	-- Skumblade-Tooth Girdle
-									i(97204),	-- Static-Collecting Cloak
-									i(95533),	-- Thunder Caressed Waistguard
-									i(97203),	-- Thunder-Chaser Cloak
-								},
+								["g"] = bubbleDownClassicRep(FACTION_KIRIN_TOR_OFFENSIVE, {
+									{		-- Neutral
+										i(97191),	-- Ancient Overlord's Onyx Band
+										i(97189),	-- Ancient Primalist's Seal
+										i(80433),	-- Blood Spirit
+										i(97207),	-- Cloak of the Immortal Guardian
+										i(95490, {	-- Greater Kirin Tor Offensive Insignia
+											["cost"] = {{"i",95491,10}},	-- Tattered Historical Parchments
+										}),
+										i(95567),	-- Kirin Tor Beacon (TOY!)
+										i(95489, {	-- Kirin Tor Offensive Insignia
+											["cost"] = {{"i",95491,1}},	-- Tattered Historical Parchments
+										}),
+										i(97187),	-- Refurbished Band of Jin
+										i(97190),	-- Refurbished Seal of Jin
+										i(97188),	-- Restored Hexxer's Signet
+										i(97205),	-- Shan'ze Gravetender Cloak
+										i(97206),	-- Shan'ze Partisan's Greatcloak
+										i(97204),	-- Static-Collecting Cloak
+										i(97203),	-- Thunder-Chaser Cloak
+									}, {	-- Friendly
+										i(95054),	-- Potion of Light Steps
+									}, {	-- Honored
+										i(95053),	-- A Common Rock
+										i(95532),	-- Belt of Loa Charms
+										i(95530),	-- Cinch of the Dead Forest's Vigil
+										i(95529),	-- Girdle of Shan'ze Glory
+										i(95527),	-- Pain-Binder Girdle
+										i(95531),	-- Rotting Bog Cinch
+										i(95526),	-- Shan'ze Scholar's Girdle
+										i(95534),	-- Skumblade Ritualist Links
+										i(95528),	-- Skumblade-Tooth Girdle
+										i(95093),	-- Sleep Dust
+										i(95533),	-- Thunder Caressed Waistguard
+									}, {	-- Revered
+										i(95052),	-- Arcane Propellant
+										i(95055),	-- Frost Rune Trap
+										i(95545),	-- Grand Commendation of the Kirin Tor Offensive
+									}, {	-- Exalted
+										i(98560),	-- Arcane Trove
+										i(98558),	-- Empty Supply Crate
+										i(95591),	-- Kirin Tor Offensive Tabard
+										i(95056),	-- Polymorphic Key
+										i(95564, {	-- Reins of the Golden Primal Direhorn (MOUNT!)
+											["cost"] = 30000000,	-- 3,000g
+										}),
+									},
+								}),
 							}),
 							n(QUESTS, sharedData({
 								["races"] = ALLIANCE_ONLY,
@@ -395,41 +408,54 @@ root(ROOTS.Zones, {
 							n(67672, {	-- Vasarin Redmorn <Sunreaver Onslaught Quartermaster>
 								["coord"] = { 33.4, 32.4, ISLE_OF_THUNDER },
 								["races"] = HORDE_ONLY,
-								["minReputation"] = { FACTION_SUNREAVER_ONSLAUGHT, NEUTRAL },	-- Sunreaver Onslaught
-								["g"] = {
-									i(97196),	-- Ancient Overlord's Onyx Band
-									i(97194),	-- Ancient Primalist's Seal
-									i(95523),	-- Belt of Loa Charms
-									i(80433),	-- Blood Spirit
-									i(95521),	-- Cinch of the Dead Forest's Vigil
-									i(97212),	-- Cloak of the Immortal Guardian
-									i(95520),	-- Girdle of Shan'ze Glory
-									i(95548),	-- Grand Commendation of the Sunreaver Onslaught
-									i(95488, {	-- Greater Sunreaver Onslaught Insignia
-										["cost"] = {{"i",95491,10}},	-- Tattered Historical Patchments
-									}),
-									i(95518),	-- Pain-Binder Girdle
-									i(97192),	-- Refurbished Band of Jin
-									i(97195),	-- Refurbished Seal of Jin
-									i(95565, {	-- Crimson Primal Direhorn (MOUNT!)
-										["cost"] = 30000000,	-- 3,000g
-									}),
-									i(97193),	-- Restored Hexxer's Signet
-									i(95522),	-- Rotting Bog Cinch
-									i(97210),	-- Shan'ze Gravetender Cloak
-									i(97211),	-- Shan'ze Partisan's Greatcloak
-									i(95517),	-- Shan'ze Scholar's Girdle
-									i(95525),	-- Skumblade Ritualist Links
-									i(95519),	-- Skumblade-Tooth Girdle
-									i(97209),	-- Static-Collecting Cloak
-									i(95568),	-- Sunreaver Beacon (TOY!)
-									i(95487, {	-- Sunreaver Onslaught Insignia
-										["cost"] = {{"i",95491,1}},	-- Tattered Historical Patchments
-									}),
-									i(95592),	-- Sunreaver Onslaught Tabard
-									i(95524),	-- Thunder Caressed Waistguard
-									i(97208),	-- Thunder-Chaser Cloak
-								},
+								["g"] = bubbleDownClassicRep(FACTION_SUNREAVER_ONSLAUGHT, {
+									{		-- Neutral
+										i(97196),	-- Ancient Overlord's Onyx Band
+										i(97194),	-- Ancient Primalist's Seal
+										i(80433),	-- Blood Spirit
+										i(97212),	-- Cloak of the Immortal Guardian
+										i(95488, {	-- Greater Sunreaver Onslaught Insignia
+											["cost"] = {{"i",95491,10}},	-- Tattered Historical Patchments
+										}),
+										i(97192),	-- Refurbished Band of Jin
+										i(97195),	-- Refurbished Seal of Jin
+										i(97193),	-- Restored Hexxer's Signet
+										i(97210),	-- Shan'ze Gravetender Cloak
+										i(97211),	-- Shan'ze Partisan's Greatcloak
+										i(97209),	-- Static-Collecting Cloak
+										i(95568),	-- Sunreaver Beacon (TOY!)
+										i(95487, {	-- Sunreaver Onslaught Insignia
+											["cost"] = {{"i",95491,1}},	-- Tattered Historical Patchments
+										}),
+										i(97208),	-- Thunder-Chaser Cloak
+									}, {	-- Friendly
+										i(97157),	-- Potion of Light Steps
+									}, {	-- Honored
+										i(97158),	-- A Common Rock
+										i(95523),	-- Belt of Loa Charms
+										i(95521),	-- Cinch of the Dead Forest's Vigil
+										i(95520),	-- Girdle of Shan'ze Glory
+										i(95518),	-- Pain-Binder Girdle
+										i(95522),	-- Rotting Bog Cinch
+										i(95517),	-- Shan'ze Scholar's Girdle
+										i(95525),	-- Skumblade Ritualist Links
+										i(95519),	-- Skumblade-Tooth Girdle
+										i(97154),	-- Sleep Dust
+										i(95524),	-- Thunder Caressed Waistguard
+									}, {	-- Revered
+										i(97159),	-- Arcane Propellant
+										i(97156),	-- Frost Rune Trap
+										i(95548),	-- Grand Commendation of the Sunreaver Onslaught
+									}, {	-- Exalted
+										i(98559),	-- Empty Supply Crate
+										i(97155),	-- Polymorphic Key
+										i(95565, {	-- Reins of the Crimson Primal Direhorn (MOUNT!)
+											["cost"] = 30000000,	-- 3,000g
+										}),
+										i(98562),	-- Sunreaver Bounty
+										i(95592),	-- Sunreaver Onslaught Tabard
+									},
+								}),
 							}),
 							n(QUESTS, sharedData({
 								["races"] = HORDE_ONLY,

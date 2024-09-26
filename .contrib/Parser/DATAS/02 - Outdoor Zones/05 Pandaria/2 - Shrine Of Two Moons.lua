@@ -479,7 +479,7 @@ root(ROOTS.Zones, m(PANDARIA, {
 						}),
 					},
 				}),
-				n(66685, {	-- Danky
+				n(66685, {	-- Danky <Spirit of Harmony Vendor>
 					["coord"] = { 61.6, 21.6, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = IGNORED_VALUE,	-- technically available both factions
 					["groups"] = sharedData({

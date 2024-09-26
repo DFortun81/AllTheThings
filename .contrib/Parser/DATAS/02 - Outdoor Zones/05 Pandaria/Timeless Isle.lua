@@ -2338,38 +2338,44 @@ root(ROOTS.Zones, {
 					}),
 					n(73306, {	-- Mistweaver Ku <Lost Treasures of Shaohao>
 						["coord"] = { 42.6, 54.6, TIMELESS_ISLE },
-						["g"] = {
-							i(103685, {	-- Celestial Defender's Medallion (TOY!)
-								["cost"] = { { "c", 777, 1000 } },	-- 1,000x Timeless Coin
-							}),
-							i(104295, {	-- Harmonious Purcupette (PET!)
-								["cost"] = { { "c", 777, 7500 } },	-- 7,500x Timeless Coin
-							}),
-							i(103683, {	-- Mask of Anger
-								["cost"] = { { "c", 777, 100 } },	-- 100x Timeless Coin
-							}),
-							i(103681, {	-- Mask of Doubt
-								["cost"] = { { "c", 777, 100 } },	-- 100x Timeless Coin
-							}),
-							i(103679, {	-- Mask of Fear
-								["cost"] = { { "c", 777, 100 } },	-- 100x Timeless Coin
-							}),
-							i(103680, {	-- Mask of Hatred
-								["cost"] = { { "c", 777, 100 } },	-- 100x Timeless Coin
-							}),
-							i(103682, {	-- Mask of Violence
-								["cost"] = { { "c", 777, 100 } },	-- 100x Timeless Coin
-							}),
-							i(87774, {	-- Heavenly Golden Cloud Serpent (MOUNT!)
-								["cost"] = { { "c", 777, 100000 } },	-- 100,000x Timeless Coin
-							}),
-							i(103684, {	-- Scroll of Challenge
-								["cost"] = { { "c", 777, 500 } },	-- 500x Timeless Coin
-							}),
-							i(103678, {	-- Time-Lost Artifact
-								["cost"] = { { "c", 777, 7500 } },	-- 7,500x Timeless Coin
-							}),
-						},
+						["g"] = bubbleDownClassicRep(FACTION_EMPEROR_SHAOHAO, {
+							{		-- Neutral
+							}, {	-- Friendly
+								i(103683, {	-- Mask of Anger
+									["cost"] = { { "c", 777, 100 } },	-- 100x Timeless Coin
+								}),
+								i(103681, {	-- Mask of Doubt
+									["cost"] = { { "c", 777, 100 } },	-- 100x Timeless Coin
+								}),
+								i(103679, {	-- Mask of Fear
+									["cost"] = { { "c", 777, 100 } },	-- 100x Timeless Coin
+								}),
+								i(103680, {	-- Mask of Hatred
+									["cost"] = { { "c", 777, 100 } },	-- 100x Timeless Coin
+								}),
+								i(103682, {	-- Mask of Violence
+									["cost"] = { { "c", 777, 100 } },	-- 100x Timeless Coin
+								}),
+							}, {	-- Honored
+								i(103684, {	-- Scroll of Challenge
+									["cost"] = { { "c", 777, 500 } },	-- 500x Timeless Coin
+								}),
+								i(103678, {	-- Time-Lost Artifact
+									["cost"] = { { "c", 777, 7500 } },	-- 7,500x Timeless Coin
+								}),
+							}, {	-- Revered
+								i(103685, {	-- Celestial Defender's Medallion (TOY!)
+									["cost"] = { { "c", 777, 1000 } },	-- 1,000x Timeless Coin
+								}),
+								i(104295, {	-- Harmonious Purcupette (PET!)
+									["cost"] = { { "c", 777, 7500 } },	-- 7,500x Timeless Coin
+								}),
+							}, {	-- Exalted
+								i(87774, {	-- Reins of the Heavenly Golden Cloud Serpent (MOUNT!)
+									["cost"] = { { "c", 777, 100000 } },	-- 100,000x Timeless Coin
+								}),
+							},
+						}),
 					}),
 					n(73307, {	-- Speaker Gulan <Emissary of Ordos>
 						["coord"] = { 74.9, 44.9, TIMELESS_ISLE },

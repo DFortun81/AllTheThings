@@ -609,30 +609,40 @@ root(ROOTS.Zones, {
 							n(VENDORS, {
 								n(58414, {	-- San Redscale <Serpent Keeper>
 									["coord"] = { 56.7, 44.3, THE_JADE_FOREST },
-									["g"] = {
-										i(89222, {	-- Cloud Ring (TOY!)
-											["cost"] = 10000000,	-- 1,000g
-										}),
-										i(83845),	-- Design: Jade Panther
-										i(83877),	-- Design: Jeweled Onyx Panther
-										i(83931),	-- Design: Ruby Panther
-										i(83932),	-- Design: Sapphire Panther
-										i(83830),	-- Design: Sunstone Panther
-										i(93229),	-- Grand Commendation of the Order of the Cloud Serpent
-										i(89796),	-- Order of the Cloud Serpent Tabard
-										i(85430, {	-- Azure Cloud Serpent (MOUNT!)
-											["cost"] = 30000000,	-- 3,000g
-										}),
-										i(85429, {	-- Golden Cloud Serpent (MOUNT!)
-											["cost"] = 30000000,	-- 3,000g
-										}),
-										i(79802, {	-- Jade Cloud Serpent (MOUNT!)
-											["cost"] = 30000000,	-- 3,000g
-										}),
-										i(183123, {	-- How to School Your Serpent (CI!)
-											["description"] = "Purchasable/learnable by any character exalted with Order of the Cloud Serpent.",
-										}),
-									},
+									["g"] = bubbleDownClassicRep(FACTION_ORDER_OF_THE_CLOUD_SERPENT, {
+										{		-- Neutral
+										}, {	-- Friendly
+										}, {	-- Honored
+											i(83845),	-- Design: Jade Panther
+											i(83830),	-- Design: Sunstone Panther
+										}, {	-- Revered
+											i(89222, {	-- Cloud Ring (TOY!)
+												["cost"] = 10000000,	-- 1,000g
+											}),
+											i(83931),	-- Design: Ruby Panther
+											i(83932),	-- Design: Sapphire Panther
+											i(89225),	-- Finish Line
+											i(89227),	-- Floating Finish Line
+											i(89224),	-- Floating Racing Flag
+											i(93229),	-- Grand Commendation of the Order of the Cloud Serpent
+											i(89223),	-- Racing Flag
+										}, {	-- Exalted
+											i(83877),	-- Design: Jeweled Onyx Panther
+											i(183123, {	-- How to School Your Serpent (CI!)
+												["description"] = "Purchasable/learnable by any character exalted with Order of the Cloud Serpent.",
+											}),
+											i(89796),	-- Order of the Cloud Serpent Tabard
+											i(85430, {	-- Reins of the Azure Cloud Serpent (MOUNT!)
+												["cost"] = 30000000,	-- 3,000g
+											}),
+											i(85429, {	-- Reins of the Golden Cloud Serpent (MOUNT!)
+												["cost"] = 30000000,	-- 3,000g
+											}),
+											i(79802, {	-- Reins of the Jade Cloud Serpent (MOUNT!)
+												["cost"] = 30000000,	-- 3,000g
+											}),
+										},
+									}),
 								}),
 							}),
 						},

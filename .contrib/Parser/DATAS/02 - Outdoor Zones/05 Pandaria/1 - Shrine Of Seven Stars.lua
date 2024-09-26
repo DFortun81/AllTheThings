@@ -884,7 +884,7 @@ root(ROOTS.Zones, m(PANDARIA, {
 						i(21099),	-- Recipe: Smoked Sagefish (RECIPE!)
 					},
 				}),
-				n(66678, {	-- Krystel
+				n(66678, {	-- Krystel <Spirit of Harmony Vendor>
 					["coord"] = { 84.6, 60.4, VALE_OF_ETERNAL_BLOSSOMS },
 					["races"] = IGNORED_VALUE,	-- technically available both factions
 					["groups"] = sharedData({
