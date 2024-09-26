@@ -4251,6 +4251,6 @@ i(228781, 4678);	-- Lil'Doomy
 i(230011, 4679);	-- Lil'Kaz
 i(191946, 3265);	-- Mister Muskoxeles
 i(224406, 4592);	-- Misty
+i(231356, 4686);	-- Specter
 --- UNSORTED ---
 i(229993, 4669);	-- Bluedoo
-i(231356, 4686);	-- Specter

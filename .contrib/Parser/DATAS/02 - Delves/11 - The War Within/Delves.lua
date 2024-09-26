@@ -1154,8 +1154,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		["coord"] = { 6.7, 33.9, NERUBAR },
 		["g"] = {
 			n(ACHIEVEMENTS, bubbleDown({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 } }, {
-				ach(40431),	-- Hunting the Hunter
-				ach(40433, {	-- Hunting the Hunter (Solo)
+				ach(40431, {	-- Hunting the Hunter
+					title(560),	-- <Name> Ascension Breaker
+				}),
+				ach(40433, {	-- Let Me Solo Him
 					i(225542),	-- Delver's Dirigible Schematic: Void (MM!)
 				}),
 				ach(40103, {	-- Nemesis

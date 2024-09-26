@@ -7,10 +7,6 @@ root(ROOTS.Unsorted, {
 		expansion(EXPANSION.TWW, 0.5, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 			filter(BATTLE_PETS, {
 				i(229993),	-- Bluedoo (PET!) [Trading Post?]
-				i(231356),	-- Specter (PET!) [Timewalking?]
-			}),
-			filter(MOUNTS, {
-				i(231374),	-- Enchanted Spellweave Carpet (MOUNT!) [Timewalking?]
 			}),
 			filter(TOYS, {
 				i(232302),	-- Unknown (TOY!)
@@ -19,157 +15,6 @@ root(ROOTS.Unsorted, {
 				i(232306),	-- Unknown (TOY!)
 				i(232307),	-- Unknown (TOY!)
 				i(232308),	-- Unknown (TOY!)
-			}),
-			filter(COSMETIC, {	-- T2 Cosmetic Variant. Can be deleted later when ensembleDB is updated
-				i(223550),	-- Eternal Nemesis Robes
-				i(223551),	-- Eternal Nemesis Boots
-				i(223552),	-- Eternal Nemesis Gloves
-				i(223553),	-- Eternal Nemesis Skullcap
-				i(223554),	-- Eternal Nemesis Leggings
-				i(223555),	-- Eternal Nemesis Spaulders
-				i(223556),	-- Eternal Nemesis Belt
-				i(223566),	-- Eternal Nemesis Cloak
-				i(223568),	-- Eternal Nemesis Bracers
-				i(223598),	-- Eternal Judgment Breastplate
-				i(223599),	-- Eternal Judgment Sabatons
-				i(223600),	-- Eternal Judgment Gauntlets
-				i(223601),	-- Eternal Judgment Crown
-				i(223602),	-- Eternal Judgment Legplates
-				i(223603),	-- Eternal Judgment Spaulders
-				i(223604),	-- Eternal Judgment Belt
-				i(223605),	-- Eternal Judgment Cloak
-				i(223606),	-- Eternal Judgment Bindings
-				i(224468),	-- Eternal Netherwind Robes
-				i(224469),	-- Eternal Netherwind Boots
-				i(224470),	-- Eternal Netherwind Gloves
-				i(224471),	-- Eternal Netherwind Crown
-				i(224472),	-- Eternal Netherwind Pants
-				i(224473),	-- Eternal Netherwind Mantle
-				i(224474),	-- Eternal Netherwind Belt
-				i(224475),	-- Eternal Netherwind Cloak
-				i(224476),	-- Eternal Netherwind Bindings
-				i(224894),	-- Eternal Robes of Transcendence
-				i(224895),	-- Eternal Boots of Transcendence
-				i(224896),	-- Eternal Handguards of Transcendence
-				i(224897),	-- Eternal Halo of Transcendence
-				i(224898),	-- Eternal Leggings of Transcendence
-				i(224899),	-- Eternal Pauldrons of Transcendence
-				i(224900),	-- Eternal Belt of Transcendence
-				i(224901),	-- Eternal Cloak of Transcendence
-				i(224902),	-- Eternal Bindings of Transcendence
-				i(224923),	-- Eternal Breastplate of Wrath
-				i(224924),	-- Eternal Sabatons of Wrath
-				i(224925),	-- Eternal Gauntlets of Wrath
-				i(224926),	-- Eternal Helm of Wrath
-				i(224927),	-- Eternal Legplates of Wrath
-				i(224928),	-- Eternal Pauldrons of Wrath
-				i(224929),	-- Eternal Waistband of Wrath
-				i(224930),	-- Eternal Cloak of Wrath
-				i(224931),	-- Eternal Bracelets of Wrath
-				i(224951),	-- Eternal Bloodfang Chestpieces
-				i(224952),	-- Eternal Bloodfang Boots
-				i(224953),	-- Eternal Bloodfang Gloves
-				i(224954),	-- Eternal Bloodfang Hood
-				i(224955),	-- Eternal Bloodfang Pants
-				i(224956),	-- Eternal Bloodfang Spaulders
-				i(224957),	-- Eternal Bloodfang Belt
-				i(224958),	-- Eternal Bloodfang Cloak
-				i(224959),	-- Eternal Bloodfang Bracers
-				i(224983),	-- Eternal Stormrage Robe
-				i(224984),	-- Eternal Stormrage Boots
-				i(224985),	-- Eternal Stormrage Handguards
-				i(224986),	-- Eternal Stormrage Cover
-				i(224987),	-- Eternal Stormrage Legguards
-				i(224988),	-- Eternal Stormrage Pauldrons
-				i(224989),	-- Eternal Stormrage Belt
-				i(224990),	-- Eternal Stormrage Cloak
-				i(224991),	-- Eternal Stormrage Bracers
-				i(225010),	-- Dragonstalker's Eternal Breastplate
-				i(225011),	-- Dragonstalker's Eternal Greaves
-				i(225012),	-- Dragonstalker's Eternal Gauntlets
-				i(225013),	-- Dragonstalker's Eternal Helm
-				i(225014),	-- Dragonstalker's Eternal Legguards
-				i(225015),	-- Dragonstalker's Eternal Spaulders
-				i(225016),	-- Dragonstalker's Eternal Belt
-				i(225017),	-- Dragonstalker's Eternal Cloak
-				i(225018),	-- Dragonstalker's Eternal Bracers
-				i(225037),	-- Eternal Breastplate of Ten Storms
-				i(225038),	-- Eternal Greaves of Ten Storms
-				i(225039),	-- Eternal Gauntlets of Ten Storms
-				i(225040),	-- Eternal Helmet of Ten Storms
-				i(225041),	-- Eternal Kilt of Ten Storms
-				i(225042),	-- Eternal Epaulets of Ten Storms
-				i(225043),	-- Eternal Belt of Ten Storms
-				i(225044),	-- Eternal Cloak of Ten Storms
-				i(225045),	-- Eternal Bracers of Ten Storms
-				i(225069),	-- Eternal Vest of the August Acolyte
-				i(225070),	-- Eternal Talons of the August Acolyte
-				i(225071),	-- Eternal Grips of the August Acolyte
-				i(225072),	-- Eternal Helm of the August Acolyte
-				i(225073),	-- Eternal Pants of the August Acolyte
-				i(225074),	-- Eternal Spaulders of the August Acolyte
-				i(225075),	-- Eternal Cord of the August Acolyte
-				i(225076),	-- Eternal Cloak of the August Acolyte
-				i(225077),	-- Eternal Bindings of the August Acolyte
-				i(225096),	-- Earth-Warder's Eternal Breastplate
-				i(225097),	-- Earth-Warder's Eternal Talons
-				i(225098),	-- Earth-Warder's Eternal Claws
-				i(225099),	-- Earth-Warder's Eternal Crown
-				i(225100),	-- Earth-Warder's Eternal Legplates
-				i(225101),	-- Earth-Warder's Eternal Pauldrons
-				i(225102),	-- Earth-Warder's Eternal Girdle
-				i(225103),	-- Earth-Warder's Eternal Cloak
-				i(225104),	-- Earth-Warder's Eternal Vambraces
-				i(225124),	-- Netherwalker's Eternal Harness
-				i(225125),	-- Netherwalker's Eternal Sandals
-				i(225126),	-- Netherwalker's Eternal Gloves
-				i(225127),	-- Netherwalker's Eternal Skullcap
-				i(225128),	-- Netherwalker's Eternal Leggings
-				i(225129),	-- Netherwalker's Eternal Shoulderblades
-				i(225130),	-- Netherwalker's Eternal Cord
-				i(225131),	-- Netherwalker's Eternal Cloak
-				i(225132),	-- Netherwalker's Eternal Bracers
-				i(225151),	-- Pale Rider's Eternal Breastplate
-				i(225152),	-- Pale Rider's Eternal Sabatons
-				i(225153),	-- Pale Rider's Eternal Gloves
-				i(225154),	-- Pale Rider's Eternal Helm
-				i(225155),	-- Pale Rider's Eternal Leggings
-				i(225156),	-- Pale Rider's Eternal Pauldrons
-				i(225157),	-- Pale Rider's Eternal Girdle
-				i(225158),	-- Pale Rider's Eternal Cloak
-				i(225159),	-- Pale Rider's Eternal Vambraces
-				i(231915),	-- Auchenai Priest's Robes
-				i(231916),	-- Auchenai Priest's Boots
-				i(231917),	-- Auchenai Priest's Gloves
-				i(231918),	-- Auchenai Priest's Skullcap
-				i(231919),	-- Auchenai Priest's Leggings
-				i(231920),	-- Auchenai Priest's Spaulders
-				i(231921),	-- Auchenai Priest's Belt
-				i(231922),	-- Auchenai Priest's Bracers
-				i(231923),	-- Shadowmoon Warlock's Robes
-				i(231924),	-- Shadowmoon Warlock's Boots
-				i(231925),	-- Shadowmoon Warlock's Gloves
-				i(231926),	-- Shadowmoon Warlock's Skullcap
-				i(231927),	-- Shadowmoon Warlock's Leggings
-				i(231928),	-- Shadowmoon Warlock's Spaulders
-				i(231929),	-- Shadowmoon Warlock's Belt
-				i(231930),	-- Shadowmoon Warlock's Bracers
-				i(231947),	-- Cenarion Mender's Sollerets
-				i(231948),	-- Cenarion Mender's Grips
-				i(231949),	-- Cenarion Mender's Vision
-				i(231950),	-- Cenarion Mender's Legwraps
-				i(231951),	-- Cenarion Mender's Spaulders
-				i(231952),	-- Cenarion Mender's Girdle
-				i(231953),	-- Cenarion Mender's Bindings
-				i(231954),	-- Cenarion Mender's Robes
-				i(231955),	-- Boulderfist Mystic's Mantle
-				i(231956),	-- Boulderfist Mystic's Harness
-				i(231957),	-- Boulderfist Mystic's Breeches
-				i(231958),	-- Boulderfist Mystic's Boots
-				i(231959),	-- Boulderfist Mystic's Hood
-				i(231960),	-- Boulderfist Mystic's Grips
-				i(231961),	-- Boulderfist Mystic's Wraps
-				i(231962),	-- Boulderfist Mystic's Girdle
 			}),
 			n(ARMOR, {	-- T2 Gear Variant... ???
 				-- All Pieces are Warlock Tier for Nerubar?!?!
@@ -604,6 +449,8 @@ root(ROOTS.Unsorted, {
 				i(229059),	-- Arsenal: Crests of the Kingdom
 				i(229364),	-- Scourge Crest
 				i(229425),	-- Bronzebeard Battle Mace
+
+				-- Trading Post?
 				i(229426),	-- Ancient Amani Longbow
 				i(229714),	-- Lion's Crest Earmuffs
 				i(229720),	-- Frostwolf Earmuffs
@@ -704,94 +551,6 @@ root(ROOTS.Unsorted, {
 				i(230853),	-- Aegis of Yuletide
 				i(230940),	-- Wings of the Sapphire Monarch
 				i(231017),	-- Wings of the Onyx Monarch
-
-				i(231931),	-- Coldarra Spellbinder's Robes
-				i(231932),	-- Coldarra Spellbinder's Boots
-				i(231933),	-- Coldarra Spellbinder's Gloves
-				i(231934),	-- Coldarra Spellbinder's Skullcap
-				i(231935),	-- Coldarra Spellbinder's Leggings
-				i(231936),	-- Coldarra Spellbinder's Spaulders
-				i(231937),	-- Coldarra Spellbinder's Belt
-				i(231938),	-- Coldarra Spellbinder's Bracers
-				i(231939),	-- Drakkari Stalker's Sollerets
-				i(231940),	-- Drakkari Stalker's Grips
-				i(231941),	-- Drakkari Stalker's Vision
-				i(231942),	-- Drakkari Stalker's Legwraps
-				i(231943),	-- Drakkari Stalker's Spaulders
-				i(231944),	-- Drakkari Stalker's Girdle
-				i(231945),	-- Drakkari Stalker's Bindings
-				i(231946),	-- Drakkari Stalker's Jerkin
-
-
-				i(231963),	-- Brunnhildar Scout's Mantle
-				i(231964),	-- Brunnhildar Scout's Harness
-				i(231965),	-- Brunnhildar Scout's Breeches
-				i(231966),	-- Brunnhildar Scout's Boots
-				i(231967),	-- Brunnhildar Scout's Hood
-				i(231968),	-- Brunnhildar Scout's Grips
-				i(231969),	-- Brunnhildar Scout's Wraps
-				i(231970),	-- Brunnhildar Scout's Girdle
-				i(231971),	-- Jotunheim Berserker's Sabatons
-				i(231972),	-- Jotunheim Berserker's Handguards
-				i(231973),	-- Jotunheim Berserker's Helm
-				i(231974),	-- Jotunheim Berserker's Greaves
-				i(231975),	-- Jotunheim Berserker's Pauldrons
-				i(231976),	-- Jotunheim Berserker's Waistguard
-				i(231977),	-- Jotunheim Berserker's Bracelets
-				i(231978),	-- Jotunheim Berserker's Chestguard
-				i(231979),	-- Ymirjar Deathbringer's Sabatons
-				i(231980),	-- Ymirjar Deathbringer's Handguards
-				i(231981),	-- Ymirjar Deathbringer's Helm
-				i(231982),	-- Ymirjar Deathbringer's Greaves
-				i(231983),	-- Ymirjar Deathbringer's Pauldrons
-				i(231984),	-- Ymirjar Deathbringer's Waistguard
-				i(231985),	-- Ymirjar Deathbringer's Bracelets
-				i(231986),	-- Ymirjar Deathbringer's Chestguard
-				i(231987),	-- Telhamat Anchorite's Sabatons
-				i(231988),	-- Telhamat Anchorite's Handguards
-				i(231989),	-- Telhamat Anchorite's Helm
-				i(231990),	-- Telhamat Anchorite's Greaves
-				i(231991),	-- Telhamat Anchorite's Pauldrons
-				i(231992),	-- Telhamat Anchorite's Waistguard
-				i(231993),	-- Telhamat Anchorite's Bracelets
-				i(231994),	-- Telhamat Anchorite's Chestguard
-
-				i(231999),	-- Dragonflayer's Heartpiercer
-				i(232000),	-- Frosted Ymirheim Battle Bow
-				i(232003),	-- Wolf-Eyed Sharpshooter
-				i(232004),	-- Ironforge Hammerhead Rifle
-				i(232008),	-- Magehunter's Ornate Dagger
-				i(232010),	-- Vrykul Gutripper
-				i(232019),	-- Dark Ritualists Spellblade
-				i(232020),	-- Stormforged Short Blade
-				i(232025),	-- Frost Giant's Claws
-				i(232026),	-- Drakkari Voodoo Stick
-				i(232027),	-- Dragonflayer's Iron Cleaver
-				i(232028),	-- Warsong Coldweather Cleaver
-				i(232041),	-- Titan-Spark Longblade
-				i(232042),	-- Azure Magus' Blade
-				i(232043),	-- Crystal-Maw Basher
-				i(232052),	-- Dragonflayer's Wing Splitter
-				i(232055),	-- Griffon's Teeth Ripper
-				i(232056),	-- Ymirjar Battle Harpoon
-				i(232058),	-- Ceremonial Stratholme Shield
-				i(232059),	-- Tainted Keeper's Visage
-				i(232060),	-- Coldarra Spellbinder's Stave
-				i(232063),	-- Drakkari Head Splitter
-				i(232064),	-- Leviathan Mk II Crowd Control Blade
-				i(232066),	-- Icefrost Focuser
-				i(232078),	-- Ghostly Titan Astrolabe
-				i(232291),	-- Battered Bulwark of the Argent Crusade
-
-				i(232313),	-- Ensemble: Coldarra Spellbinder's Regalia
-				i(232314),	-- Ensemble: Jotunheim Berserker's Battleplate
-				i(232315),	-- Ensemble: Ymirjar Deathbringer's Battleplate
-				i(232316),	-- Ensemble: Brunnhildar Scout's Kit
-				i(232317),	-- Ensemble: Drakkari Stalker's Trappings
-
-
-
-
 			}),
 			n(PVP, {
 				i(230869),	-- Ensemble: Crimson Aspirant's Cloth Armor
@@ -1088,6 +847,205 @@ root(ROOTS.Unsorted, {
 				i(231839),	-- Trailseeker Longbow
 				i(231840),	-- Trailseeker Crossbow
 			}),
+			filter(COSMETIC, {	-- T2 Cosmetic Variant. Can be deleted later when ensembleDB is updated
+				i(223550),	-- Eternal Nemesis Robes
+				i(223551),	-- Eternal Nemesis Boots
+				i(223552),	-- Eternal Nemesis Gloves
+				i(223553),	-- Eternal Nemesis Skullcap
+				i(223554),	-- Eternal Nemesis Leggings
+				i(223555),	-- Eternal Nemesis Spaulders
+				i(223556),	-- Eternal Nemesis Belt
+				i(223566),	-- Eternal Nemesis Cloak
+				i(223568),	-- Eternal Nemesis Bracers
+				i(223598),	-- Eternal Judgment Breastplate
+				i(223599),	-- Eternal Judgment Sabatons
+				i(223600),	-- Eternal Judgment Gauntlets
+				i(223601),	-- Eternal Judgment Crown
+				i(223602),	-- Eternal Judgment Legplates
+				i(223603),	-- Eternal Judgment Spaulders
+				i(223604),	-- Eternal Judgment Belt
+				i(223605),	-- Eternal Judgment Cloak
+				i(223606),	-- Eternal Judgment Bindings
+				i(224468),	-- Eternal Netherwind Robes
+				i(224469),	-- Eternal Netherwind Boots
+				i(224470),	-- Eternal Netherwind Gloves
+				i(224471),	-- Eternal Netherwind Crown
+				i(224472),	-- Eternal Netherwind Pants
+				i(224473),	-- Eternal Netherwind Mantle
+				i(224474),	-- Eternal Netherwind Belt
+				i(224475),	-- Eternal Netherwind Cloak
+				i(224476),	-- Eternal Netherwind Bindings
+				i(224894),	-- Eternal Robes of Transcendence
+				i(224895),	-- Eternal Boots of Transcendence
+				i(224896),	-- Eternal Handguards of Transcendence
+				i(224897),	-- Eternal Halo of Transcendence
+				i(224898),	-- Eternal Leggings of Transcendence
+				i(224899),	-- Eternal Pauldrons of Transcendence
+				i(224900),	-- Eternal Belt of Transcendence
+				i(224901),	-- Eternal Cloak of Transcendence
+				i(224902),	-- Eternal Bindings of Transcendence
+				i(224923),	-- Eternal Breastplate of Wrath
+				i(224924),	-- Eternal Sabatons of Wrath
+				i(224925),	-- Eternal Gauntlets of Wrath
+				i(224926),	-- Eternal Helm of Wrath
+				i(224927),	-- Eternal Legplates of Wrath
+				i(224928),	-- Eternal Pauldrons of Wrath
+				i(224929),	-- Eternal Waistband of Wrath
+				i(224930),	-- Eternal Cloak of Wrath
+				i(224931),	-- Eternal Bracelets of Wrath
+				i(224951),	-- Eternal Bloodfang Chestpieces
+				i(224952),	-- Eternal Bloodfang Boots
+				i(224953),	-- Eternal Bloodfang Gloves
+				i(224954),	-- Eternal Bloodfang Hood
+				i(224955),	-- Eternal Bloodfang Pants
+				i(224956),	-- Eternal Bloodfang Spaulders
+				i(224957),	-- Eternal Bloodfang Belt
+				i(224958),	-- Eternal Bloodfang Cloak
+				i(224959),	-- Eternal Bloodfang Bracers
+				i(224983),	-- Eternal Stormrage Robe
+				i(224984),	-- Eternal Stormrage Boots
+				i(224985),	-- Eternal Stormrage Handguards
+				i(224986),	-- Eternal Stormrage Cover
+				i(224987),	-- Eternal Stormrage Legguards
+				i(224988),	-- Eternal Stormrage Pauldrons
+				i(224989),	-- Eternal Stormrage Belt
+				i(224990),	-- Eternal Stormrage Cloak
+				i(224991),	-- Eternal Stormrage Bracers
+				i(225010),	-- Dragonstalker's Eternal Breastplate
+				i(225011),	-- Dragonstalker's Eternal Greaves
+				i(225012),	-- Dragonstalker's Eternal Gauntlets
+				i(225013),	-- Dragonstalker's Eternal Helm
+				i(225014),	-- Dragonstalker's Eternal Legguards
+				i(225015),	-- Dragonstalker's Eternal Spaulders
+				i(225016),	-- Dragonstalker's Eternal Belt
+				i(225017),	-- Dragonstalker's Eternal Cloak
+				i(225018),	-- Dragonstalker's Eternal Bracers
+				i(225037),	-- Eternal Breastplate of Ten Storms
+				i(225038),	-- Eternal Greaves of Ten Storms
+				i(225039),	-- Eternal Gauntlets of Ten Storms
+				i(225040),	-- Eternal Helmet of Ten Storms
+				i(225041),	-- Eternal Kilt of Ten Storms
+				i(225042),	-- Eternal Epaulets of Ten Storms
+				i(225043),	-- Eternal Belt of Ten Storms
+				i(225044),	-- Eternal Cloak of Ten Storms
+				i(225045),	-- Eternal Bracers of Ten Storms
+				i(225069),	-- Eternal Vest of the August Acolyte
+				i(225070),	-- Eternal Talons of the August Acolyte
+				i(225071),	-- Eternal Grips of the August Acolyte
+				i(225072),	-- Eternal Helm of the August Acolyte
+				i(225073),	-- Eternal Pants of the August Acolyte
+				i(225074),	-- Eternal Spaulders of the August Acolyte
+				i(225075),	-- Eternal Cord of the August Acolyte
+				i(225076),	-- Eternal Cloak of the August Acolyte
+				i(225077),	-- Eternal Bindings of the August Acolyte
+				i(225096),	-- Earth-Warder's Eternal Breastplate
+				i(225097),	-- Earth-Warder's Eternal Talons
+				i(225098),	-- Earth-Warder's Eternal Claws
+				i(225099),	-- Earth-Warder's Eternal Crown
+				i(225100),	-- Earth-Warder's Eternal Legplates
+				i(225101),	-- Earth-Warder's Eternal Pauldrons
+				i(225102),	-- Earth-Warder's Eternal Girdle
+				i(225103),	-- Earth-Warder's Eternal Cloak
+				i(225104),	-- Earth-Warder's Eternal Vambraces
+				i(225124),	-- Netherwalker's Eternal Harness
+				i(225125),	-- Netherwalker's Eternal Sandals
+				i(225126),	-- Netherwalker's Eternal Gloves
+				i(225127),	-- Netherwalker's Eternal Skullcap
+				i(225128),	-- Netherwalker's Eternal Leggings
+				i(225129),	-- Netherwalker's Eternal Shoulderblades
+				i(225130),	-- Netherwalker's Eternal Cord
+				i(225131),	-- Netherwalker's Eternal Cloak
+				i(225132),	-- Netherwalker's Eternal Bracers
+				i(225151),	-- Pale Rider's Eternal Breastplate
+				i(225152),	-- Pale Rider's Eternal Sabatons
+				i(225153),	-- Pale Rider's Eternal Gloves
+				i(225154),	-- Pale Rider's Eternal Helm
+				i(225155),	-- Pale Rider's Eternal Leggings
+				i(225156),	-- Pale Rider's Eternal Pauldrons
+				i(225157),	-- Pale Rider's Eternal Girdle
+				i(225158),	-- Pale Rider's Eternal Cloak
+				i(225159),	-- Pale Rider's Eternal Vambraces
+				i(231915),	-- Auchenai Priest's Robes
+				i(231916),	-- Auchenai Priest's Boots
+				i(231917),	-- Auchenai Priest's Gloves
+				i(231918),	-- Auchenai Priest's Skullcap
+				i(231919),	-- Auchenai Priest's Leggings
+				i(231920),	-- Auchenai Priest's Spaulders
+				i(231921),	-- Auchenai Priest's Belt
+				i(231922),	-- Auchenai Priest's Bracers
+				i(231923),	-- Shadowmoon Warlock's Robes
+				i(231924),	-- Shadowmoon Warlock's Boots
+				i(231925),	-- Shadowmoon Warlock's Gloves
+				i(231926),	-- Shadowmoon Warlock's Skullcap
+				i(231927),	-- Shadowmoon Warlock's Leggings
+				i(231928),	-- Shadowmoon Warlock's Spaulders
+				i(231929),	-- Shadowmoon Warlock's Belt
+				i(231930),	-- Shadowmoon Warlock's Bracers
+				i(231947),	-- Cenarion Mender's Sollerets
+				i(231948),	-- Cenarion Mender's Grips
+				i(231949),	-- Cenarion Mender's Vision
+				i(231950),	-- Cenarion Mender's Legwraps
+				i(231951),	-- Cenarion Mender's Spaulders
+				i(231952),	-- Cenarion Mender's Girdle
+				i(231953),	-- Cenarion Mender's Bindings
+				i(231954),	-- Cenarion Mender's Robes
+				i(231955),	-- Boulderfist Mystic's Mantle
+				i(231956),	-- Boulderfist Mystic's Harness
+				i(231957),	-- Boulderfist Mystic's Breeches
+				i(231958),	-- Boulderfist Mystic's Boots
+				i(231959),	-- Boulderfist Mystic's Hood
+				i(231960),	-- Boulderfist Mystic's Grips
+				i(231961),	-- Boulderfist Mystic's Wraps
+				i(231962),	-- Boulderfist Mystic's Girdle
+				i(231931),	-- Coldarra Spellbinder's Robes
+				i(231932),	-- Coldarra Spellbinder's Boots
+				i(231933),	-- Coldarra Spellbinder's Gloves
+				i(231934),	-- Coldarra Spellbinder's Skullcap
+				i(231935),	-- Coldarra Spellbinder's Leggings
+				i(231936),	-- Coldarra Spellbinder's Spaulders
+				i(231937),	-- Coldarra Spellbinder's Belt
+				i(231938),	-- Coldarra Spellbinder's Bracers
+				i(231939),	-- Drakkari Stalker's Sollerets
+				i(231940),	-- Drakkari Stalker's Grips
+				i(231941),	-- Drakkari Stalker's Vision
+				i(231942),	-- Drakkari Stalker's Legwraps
+				i(231943),	-- Drakkari Stalker's Spaulders
+				i(231944),	-- Drakkari Stalker's Girdle
+				i(231945),	-- Drakkari Stalker's Bindings
+				i(231946),	-- Drakkari Stalker's Jerkin
+				i(231963),	-- Brunnhildar Scout's Mantle
+				i(231964),	-- Brunnhildar Scout's Harness
+				i(231965),	-- Brunnhildar Scout's Breeches
+				i(231966),	-- Brunnhildar Scout's Boots
+				i(231967),	-- Brunnhildar Scout's Hood
+				i(231968),	-- Brunnhildar Scout's Grips
+				i(231969),	-- Brunnhildar Scout's Wraps
+				i(231970),	-- Brunnhildar Scout's Girdle
+				i(231971),	-- Jotunheim Berserker's Sabatons
+				i(231972),	-- Jotunheim Berserker's Handguards
+				i(231973),	-- Jotunheim Berserker's Helm
+				i(231974),	-- Jotunheim Berserker's Greaves
+				i(231975),	-- Jotunheim Berserker's Pauldrons
+				i(231976),	-- Jotunheim Berserker's Waistguard
+				i(231977),	-- Jotunheim Berserker's Bracelets
+				i(231978),	-- Jotunheim Berserker's Chestguard
+				i(231979),	-- Ymirjar Deathbringer's Sabatons
+				i(231980),	-- Ymirjar Deathbringer's Handguards
+				i(231981),	-- Ymirjar Deathbringer's Helm
+				i(231982),	-- Ymirjar Deathbringer's Greaves
+				i(231983),	-- Ymirjar Deathbringer's Pauldrons
+				i(231984),	-- Ymirjar Deathbringer's Waistguard
+				i(231985),	-- Ymirjar Deathbringer's Bracelets
+				i(231986),	-- Ymirjar Deathbringer's Chestguard
+				i(231987),	-- Telhamat Anchorite's Sabatons
+				i(231988),	-- Telhamat Anchorite's Handguards
+				i(231989),	-- Telhamat Anchorite's Helm
+				i(231990),	-- Telhamat Anchorite's Greaves
+				i(231991),	-- Telhamat Anchorite's Pauldrons
+				i(231992),	-- Telhamat Anchorite's Waistguard
+				i(231993),	-- Telhamat Anchorite's Bracelets
+				i(231994),	-- Telhamat Anchorite's Chestguard
+			}),
 			i(232471),	-- Cache of Dark Iron Treasures
 			i(232472),	-- Cache of Dark Iron Treasures
 			i(232473),	-- Cache of Dark Iron Treasures
@@ -1305,9 +1263,6 @@ root(ROOTS.Unsorted, {
 				i(220116),	-- Completed Market Audit
 				i(213163),	-- Cryptographic Glyph
 				i(225887),	-- Titan Emitter
-			}),
-			filter(TITLES, {
-				title(560),	-- <Name> Ascension Breaker
 			}),
 			filter(TOYS, {
 				--- Gonna check this! Make spellID able to be isToy to make it collectible from the quest // Braghe
