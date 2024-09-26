@@ -1750,9 +1750,12 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 				i(226259, {	-- Delver's Pouch of Resonance Crystals
 					["cost"] = {{"c", UNDERCOIN, 2000}},
-					["g"] = {
-						currency(RESONANCE_CRYSTALS),
-					},
+					["description"] = "Contains 250 Resonance Crystals.",
+					-- Listening 500+ Items is excessive bloat, especially since you get around 150 Undercoins per Delve
+					-- Even if you have all items, which takes ages, its probably better to keep them for future Delve Seasons -Goldenshacal 24th Sep 2024
+					--["g"] = {
+					--	currency(RESONANCE_CRYSTALS),
+					--},
 				}),
 				i(224172, {	-- Restored Coffer Key
 					["cost"] = {{"c", UNDERCOIN, 1000}},
