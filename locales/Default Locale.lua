@@ -245,6 +245,7 @@ local L = setmetatable({
 		["Normal"] = "N",
 		["Heroic"] = "H",
 		["Mythic"] = "M",
+		["Mythic Keystone"] = "M+",
 		["Raid Finder"] = "LFR",
 		["Looking For Raid"] = "LFR",
 		["10 Player"] = "10M",
