@@ -225,6 +225,22 @@ do
 				end
 			end
 		})
+		app.Settings.CreateInformationType("Achievement_Statistic", {
+			text = "Achievement_Statistic",
+			HideCheckBox = true, ForceActive = true,
+			Process = function(t, reference, tooltipInfo)
+				-- achievement progress. If it has a measurable statistic, show it under the achievement description
+				if reference.achievementID then
+					if reference.statistic then
+						tinsert(tooltipInfo, {
+							left = L.PROGRESS,
+							right = reference.statistic,
+						});
+					end
+				end
+			end
+		})
+
 	end)
 
 end
