@@ -1,5 +1,6 @@
 
 local _, app = ...
+local L = app.L
 
 -- Globals
 local setmetatable, rawget, select, tostring, ipairs, pairs, tinsert, tonumber
@@ -208,6 +209,24 @@ do
 			app.UpdateRawID(KEY, id);
 		end
 	end);
+
+	-- Information Types
+	app.AddEventHandler("OnLoad", function()
+		app.Settings.CreateInformationType("Achievement_CriteriaFor", {
+			text = "Achievement_CriteriaFor",
+			priority = 1.5, HideCheckBox = true, ForceActive = true,
+			Process = function(t, reference, tooltipInfo)
+				if reference.criteriaID and reference.achievementID and not (reference.parent and reference.parent.achievementID) then
+					local achievement = SearchForObject("achievementID", reference.achievementID, "key")
+					tinsert(tooltipInfo, {
+						left = L.CRITERIA_FOR,
+						right = achievement.text or GetAchievementLink(reference.achievementID),
+					});
+				end
+			end
+		})
+	end)
+
 end
 
 -- Achievement Category Lib

@@ -4617,7 +4617,8 @@ app.AddEventHandler("OnReady", function()
 								if key == "objectiveID" then
 									if o.parent and o.parent.questID then tooltip:AddLine("Objective for " .. o.parent.text); end
 								elseif key == "criteriaID" then
-									tooltip:AddDoubleLine(L.CRITERIA_FOR, GetAchievementLink(o.achievementID));
+									local achGroup = SearchForObject("achievementID", o.achievementID, "key")
+									tooltip:AddDoubleLine(L.CRITERIA_FOR, achGroup.text or GetAchievementLink(o.achievementID));
 								else
 									if key == "npcID" then key = "creatureID"; end
 									AttachTooltipSearchResults(tooltip, line, SearchForField, key, o[o.key]);
@@ -7027,14 +7028,6 @@ RowOnEnter = function (self)
 				right = GetMoneyString(reference.cost),
 			});
 		end
-	end
-
-	-- TODO: Convert this to an InformationType.
-	if reference.criteriaID and reference.achievementID and not (reference.parent and reference.parent.achievementID) then
-		tinsert(tooltipInfo, {
-			left = L.CRITERIA_FOR,
-			right = GetAchievementLink(reference.achievementID),
-		});
 	end
 
 	-- Additional information (search will insert this information if found in search)
