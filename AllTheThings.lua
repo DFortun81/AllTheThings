@@ -8018,6 +8018,9 @@ function app:RefreshData(lazy, got, manual)
 		AfterCombatOrDelayedCallback(RefreshData, 0.5);
 	end
 end
+app.AddEventHandler("OnSettingsNeedsRefresh", function()
+	app:RefreshData(nil,nil,true)
+end)
 end	-- Dynamic/Main Data
 
 do -- Search Response Logic

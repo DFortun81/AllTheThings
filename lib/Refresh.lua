@@ -337,14 +337,6 @@ end
 
 -- [Event]Done is called automatically when processed by a Runner and it completes the set of functions
 app.AddEventHandler("OnRefreshCollectionsDone", function()
-
-	-- Need to update the Settings window as well if User does not have auto-refresh for Settings
-	if app.Settings:Get("Skip:AutoRefresh") or app.Settings.NeedsRefresh then
-		app.Settings:UpdateMode("FORCE");
-	else
-		app:RefreshData(false, false, true);
-	end
-
 	-- Report success once refresh is done
 	print(app.L.DONE_REFRESHING);
 	if __FirstRefresh then

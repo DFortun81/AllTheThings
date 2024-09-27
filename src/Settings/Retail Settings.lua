@@ -1118,7 +1118,7 @@ settings.CreateOptionsPage = function(self, text, parentCategory, isRootCategory
 	function(self)
 		local skipRefresh = self:GetChecked();
 		settings:Set("Skip:AutoRefresh", skipRefresh)
-		if not skipRefresh then settings:UpdateMode("FORCE"); end
+		if not skipRefresh and settings.NeedsRefresh then settings:UpdateMode("FORCE"); end
 	end)
 	checkboxSkipAutoRefresh:SetATTTooltip(L.SKIP_AUTO_REFRESH_TOOLTIP);
 	checkboxSkipAutoRefresh:SetPoint("BOTTOMRIGHT", separator, "TOPRIGHT", -(checkboxSkipAutoRefresh.Text:GetWidth() * checkboxSkipAutoRefresh.Text:GetScale()), 0)
@@ -1416,20 +1416,18 @@ settings.UpdateMode = function(self, doRefresh)
 	-- FORCE = Force Update
 	-- 1 = Force Update IF NOT Skip
 	-- not = Soft Update
-	doRefresh = doRefresh == "FORCE" or
-		(doRefresh and not settings:Get("Skip:AutoRefresh"))
-
+	doRefresh = doRefresh == "FORCE" or (doRefresh and not settings:Get("Skip:AutoRefresh"))
 	if doRefresh then
+		app.HandleEvent("OnSettingsNeedsRefresh")
 		self.NeedsRefresh = nil
-		app:RefreshData(nil,nil,true)
-		app._SettingsRefresh = GetTimePreciseSec()
-	else
-		-- lazy refresh instead if ATT is ready
-		if app.IsReady then
-			app:RefreshData(true,nil,true)
-		end
 	end
+
+	app._SettingsRefresh = GetTimePreciseSec()
 
 	-- ensure the settings pane itself is refreshed
 	self:Refresh()
 end
+app.AddEventHandler("OnRefreshCollectionsDone", function()
+	-- Need to update the Settings window as well if User does not have auto-refresh for Settings
+	settings:UpdateMode("FORCE");
+end)
