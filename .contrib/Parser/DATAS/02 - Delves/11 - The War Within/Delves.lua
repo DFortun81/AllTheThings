@@ -1934,5 +1934,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(84817),	-- Zekvir pop in Mycomancer Cavern (unsure, Tier 9)
 		q(84818),	-- Zekvir pop in The Spiral Weave (2nd time in week, Tier 8)
 		q(84819),	-- Zekvir pop in Skittering Breach (2nd time in week, Tier 8)
+		q(85757),	-- Triggered when looting second chest after defeating Zekvir solo on ? difficulty
 	}),
 })));
