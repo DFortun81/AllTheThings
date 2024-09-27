@@ -1,6 +1,10 @@
 --------------------------------------------------------------------------------
 --						L O C A L I Z A T I O N  F I L E					  --
 --------------------------------------------------------------------------------
+-- This file has been deprecated. All custom headers in this file MUST be moved into the proper addon database.
+-- All shared locales will be moved to the Default Locale file.
+-- The file will be removed after migration is complete, so please do not add any descriptions to it.
+
 local name, app = ...;
 local L = app.L;
 for key,value in pairs({
