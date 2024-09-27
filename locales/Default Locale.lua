@@ -808,3 +808,6 @@ end
 app.GetCompletionText = function(state)
 	return L[(state == 2 and "COMPLETE_OTHER") or (state and "COMPLETE") or "INCOMPLETE"];
 end
+app.GetSavedText = function(state)
+	return L[state and "SAVED" or "INCOMPLETE"];
+end

@@ -345,9 +345,6 @@ end)
 end -- TradeSkill Functionality
 
 
-local function GetSavedText(state)
-	return L[state and "SAVED" or "INCOMPLETE"];
-end
 local function GetCollectibleIcon(data, iconOnly)
 	if data.collectible then
 		local collected = data.collected
@@ -365,7 +362,7 @@ local function GetTrackableIcon(data, iconOnly, forSaved)
 			if forSaved then
 				-- if for saved, we ignore if it is un-saved for less clutter
 				if saved then
-					return iconOnly and app.GetCompletionIcon(saved) or GetSavedText(saved);
+					return iconOnly and app.GetCompletionIcon(saved) or app.GetSavedText(saved);
 				end
 			else
 				return iconOnly and app.GetCompletionIcon(saved) or app.GetCompletionText(saved);
