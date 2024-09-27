@@ -334,9 +334,6 @@ local function GetReagentIcon(data, iconOnly)
 		return L[iconOnly and "REAGENT_ICON" or "REAGENT_TEXT"];
 	end
 end
-local function GetStateIcon(data, iconOnly)
-	return GetCollectibleIcon(data, iconOnly) or GetTrackableIcon(data, iconOnly);
-end
 local function GetProgressTextForRow(data)
 	-- build the row text from left to right with possible info
 	local text = {}
