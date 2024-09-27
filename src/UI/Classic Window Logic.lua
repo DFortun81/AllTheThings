@@ -6,7 +6,6 @@ local AssignChildren, CloneClassInstance, CloneReference
 local IsQuestFlaggedCompleted, IsQuestReadyForTurnIn = app.IsQuestFlaggedCompleted, app.IsQuestReadyForTurnIn;
 local DESCRIPTION_SEPARATOR = app.DESCRIPTION_SEPARATOR;
 local GetDeepestRelativeValue = app.GetDeepestRelativeValue;
-local GetCompletionIcon = app.GetCompletionIcon;
 local GetProgressTextForRow = app.GetProgressTextForRow;
 local GetRelativeValue = app.GetRelativeValue;
 local ResolveSymbolicLink = app.ResolveSymbolicLink;
@@ -947,7 +946,7 @@ local function RowOnEnter(self)
 				if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
 				tinsert(tooltipInfo, {
 					left = text,
-					right = GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)),
+					right = app.GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)),
 				});
 			end
 		end
@@ -962,7 +961,7 @@ local function RowOnEnter(self)
 				if mapID and mapID ~= currentMapID then text = text .. " (" .. app.GetMapName(mapID) .. ")"; end
 				tinsert(tooltipInfo, {
 					left = text,
-					right = GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)),
+					right = app.GetCompletionIcon(IsQuestFlaggedCompleted(prereq.questID)),
 				});
 			end
 		end
@@ -1000,7 +999,7 @@ local function RowOnEnter(self)
 				if prereq.isGuild then text = text .. " (" .. GUILD .. ")"; end
 				tinsert(tooltipInfo, {
 					left = text,
-					right = GetCompletionIcon(prereq.collected),
+					right = app.GetCompletionIcon(prereq.collected),
 				});
 			end
 		end

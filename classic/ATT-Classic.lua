@@ -213,26 +213,14 @@ app.GetDataSubMember = GetDataSubMember;
 
 
 -- Color Lib
-local function GetCollectionIcon(state)
-	return L[(state and (state == 2 and "COLLECTED_APPEARANCE_ICON" or "COLLECTED_ICON")) or "NOT_COLLECTED_ICON"];
-end
-local function GetCollectionText(state)
-	return L[(state and (state == 2 and "COLLECTED_APPEARANCE" or "COLLECTED")) or "NOT_COLLECTED"];
-end
-local function GetCompletionIcon(state)
-	return L[state and "COMPLETE_ICON" or "NOT_COLLECTED_ICON"];
-end
-local function GetCompletionText(state)
-	return L[(state == 2 and "COMPLETE_OTHER") or ((state == 1 or state == true) and "COMPLETE") or "INCOMPLETE"];
-end
 local function GetProgressTextForRow(data)
 	local total = data.total;
 	if total and (total > 1 or (total > 0 and not data.collectible)) then
 		return GetProgressColorText(data.progress or 0, total);
 	elseif data.collectible then
-		return GetCollectionIcon(data.collected);
+		return app.GetCollectionIcon(data.collected);
 	elseif data.trackable then
-		return GetCompletionIcon(data.saved);
+		return app.GetCompletionIcon(data.saved);
 	end
 end
 local function GetProgressTextForTooltip(data)
@@ -242,15 +230,11 @@ local function GetProgressTextForTooltip(data)
 	if data.total and (data.total > 1 or (data.total > 0 and not data.collectible)) then
 		return GetProgressColorText(data.progress or 0, data.total);
 	elseif data.collectible or (data.spellID and data.itemID and data.trackable) then
-		return GetCollectionText(data.collected);
+		return app.GetCollectionText(data.collected);
 	elseif data.trackable then
-		return GetCompletionText(data.saved);
+		return app.GetCompletionText(data.saved);
 	end
 end
-app.GetCollectionIcon = GetCollectionIcon;
-app.GetCollectionText = GetCollectionText;
-app.GetCompletionIcon = GetCompletionIcon;
-app.GetCompletionText = GetCompletionText;
 app.GetProgressTextForRow = GetProgressTextForRow;
 app.GetProgressTextForTooltip = GetProgressTextForTooltip;
 local function GetUnobtainableTexture(group)
@@ -855,7 +839,7 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				if group.collectible then
 					if group.collected then
 						if app.Settings:Get("Show:CollectedThings") then
-							right = GetCollectionIcon(group.collected);
+							right = app.GetCollectionIcon(group.collected);
 						end
 					else
 						right = L["NOT_COLLECTED_ICON"];
@@ -2410,7 +2394,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 					criteriaDatasByUID[criteriaUID] = true;
 					tinsert(criteriaDatas, {
 						" [" .. criteriaUID .. "]: " .. tostring(criteriaString),
-						"(" .. tostring(assetID) .. " @ " .. tostring(criteriaType) .. ") " .. tostring(quantityString) .. " " .. GetCompletionIcon(completed)
+						"(" .. tostring(assetID) .. " @ " .. tostring(criteriaType) .. ") " .. tostring(quantityString) .. " " .. app.GetCompletionIcon(completed)
 					});
 				end
 			end
@@ -2422,7 +2406,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 					if criteriaString and (not criteriaDatasByUID[criteriaUID] or criteriaUID == 0) then
 						tinsert(criteriaDatas, {
 							" [" .. criteriaUID .. " @ Index: " .. criteriaIndex .. "]: " .. tostring(criteriaString),
-							"(" .. tostring(assetID) .. " @ " .. tostring(criteriaType) .. ") " .. tostring(quantityString) .. " " .. GetCompletionIcon(completed)
+							"(" .. tostring(assetID) .. " @ " .. tostring(criteriaType) .. ") " .. tostring(quantityString) .. " " .. app.GetCompletionIcon(completed)
 						});
 					end
 				end
@@ -2459,7 +2443,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 					if criteriaString then
 						tinsert(tooltipInfo, {
 							left = " [" .. criteriaUID .. "]: " .. tostring(criteriaString),
-							right = "(" .. tostring(assetID) .. " @ " .. tostring(criteriaType) .. ") " .. tostring(quantityString) .. " " .. GetCompletionIcon(completed),
+							right = "(" .. tostring(assetID) .. " @ " .. tostring(criteriaType) .. ") " .. tostring(quantityString) .. " " .. app.GetCompletionIcon(completed),
 							r = 1, g = 1, b = 1
 						});
 					end

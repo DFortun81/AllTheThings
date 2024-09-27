@@ -19,36 +19,19 @@ local GetItemClassInfo = GetItemClassInfo;
 if not GetItemClassInfo then GetItemClassInfo = C_Item.GetItemClassInfo; end
 
 for key, value in pairs({
-	-- General Text
-	-- ["THINGS_UNTIL"] = " THINGS UNTIL ";
-	-- ["THING_UNTIL"] = " THING UNTIL ";
-	-- ["YOU_DID_IT"] = "YOU DID IT!";
-
 	-- Big new chunk from AllTheThings.lua
-	-- ["PROGRESS"] = "Progress";
-	-- ["TRACKING_PROGRESS"] = "Tracking Progress";
 	["COLLECTED_STRING"] = " Collected";
-	-- ["PROVIDERS"] = "Provider(s)";
-	-- ["COLLECTION_PROGRESS"] = "Collection Progress";
 	["CONTAINS"] = "Contains:";
 	["FACTIONS"] = "Factions";
-	-- ["COORDINATES"] = "Coordinates";
-	-- ["AND_MORE"] = "And %s more...";
 
-	-- ["PLAYER_COORDINATES"] = "Player Coordinates";
 	["NO_COORDINATES_FORMAT"] = "No known coordinates for %s";
 	["TOM_TOM_NOT_FOUND"] = "You must have TomTom installed to plot coordinates.";
 	["FLIGHT_PATHS"] = "Flight Paths";
-	-- ["KNOWN_BY"] = "Known by %s";
 	["BOUND_ON"] = "Bound on %s |T" .. app.asset("known_circle_yellow") .. ":0|t";
-	-- ["REQUIRES"] = "Requires";
-
-	-- ["PLEASE_REPORT_MESSAGE"] = "Please report this to the ATT Discord in #retail-errors! Thanks!";
-	-- ["REPORT_TIP"] = "\n("..CTRL_KEY_TEXT.."+C to copy multiline report to your clipboard)";
+	
 	["NOT_AVAILABLE_IN_PL"] = "Not available in Personal Loot.";
 	["MARKS_OF_HONOR_DESC"] = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.." click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
 	["MOP_REMIX_BRONZE_DESC"] = "Bronze must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.." click to link the currency)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
-	-- ["ITEM_GIVES_REP"] = "Provides Reputation with '";
 	["COST"] = "Cost";
 	["COST_DESC"] = "This contains the visual breakdown of what is required to obtain or purchase this Thing";
 	["COST_TOTAL"] = "Total Cost";
@@ -57,19 +40,15 @@ for key, value in pairs({
 	["SOURCES_DESC"] = "Shows the Source of this Thing.\n\nParticularly, a specific Vendor/NPC, Quest, Encounter, etc.";
 	["WRONG_FACTION"] = "You might need to be on the other faction to view this.";
 	["ARTIFACT_INTRO_REWARD"] = "Awarded for completing the introductory quest for this Artifact.";
-	-- ["VISIT_FLIGHT_MASTER"] = "Visit the Flight Master to cache.";
 	["FLIGHT_PATHS_DESC"] = "Flight paths are cached when you talk to the flight master on each continent.\n  - Crieve";
 	["FOLLOWERS_COLLECTION_DESC"] = "Followers can be collected "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", if you enable this setting in ATT.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";
-	-- ["HEIRLOOM_TEXT"] = "Unlocked Heirloom";
-	-- ["HEIRLOOM_TEXT_DESC"] = "This indicates whether or not you have acquired or purchased the heirloom yet.";
 	["FAILED_ITEM_INFO"] = "Failed to acquire item information. The item may be invalid or may not have been cached on your server yet.";
-	-- ["HEIRLOOMS_UPGRADES_DESC"] = "This indicates whether or not you have upgraded the heirloom to a certain level.\n\nR.I.P. Gold.\n - Crieve";
 	["MUSIC_ROLLS_AND_SELFIE_DESC"] = "These are unlocked per-character and are not currently shared across your account. If someone at Blizzard is reading this, it would be really swell if you made these "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..".\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";
 	["MUSIC_ROLLS_AND_SELFIE_DESC_2"] = "\n\nYou must first unlock the Music Rolls by completing the Bringing the Bass in your garrison for this item to drop.\n\nSelfies require the S.E.L.F.I.E Toy.";
 	["OPPOSITE_FACTION_EQ"] = "Opposite faction equivalent: ";
 	["SELFIE_DESC"] = "Take a selfie using your ";
 	["SELFIE_DESC_2"] = " with |cffff8000";
-	-- ["TITLES_DESC"] = "Titles are tracked across your account, however, your individual character must qualify for certain titles to be usable on that character.";
+	
 	["UPON_COMPLETION"] = "Upon Completion";
 	["UPON_COMPLETION_DESC"] = "The above quests need to be completed before being able to complete the things listed below.";
 	["QUEST_CHAIN_REQ"] = "Quest Chain Requirements";
@@ -84,46 +63,17 @@ for key, value in pairs({
 	["AUCTIONATOR_GROUPS"] = "Group-based searches are only supported using Auctionator.";
 	["TSM4_ERROR"] = "TSM4 is not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!";
 	["QUEST_MAY_BE_REMOVED"] = "Failed to acquire information. This quest may have been removed from the game. ";
-
-	-- ["FACTION_SPECIFIC_REP"] = "Not all reputations can be viewed on a single character. IE: Warsong Outriders cannot be viewed by an Alliance Player and Silverwing Sentinels cannot be viewed by a Horde Player.";
-	-- ["MINUMUM_STANDING_WITH_FACTION"] = "Requires a minimum standing of %s with %s.";
-	-- ["MAXIMUM_STANDING_WITH_FACTION"] = "Requires a standing lower than %s with %s.";
-	-- ["MIN_MAX_STANDING_WITH_FACTION"] = "Requires a standing between %s and %s with %s.";
-
-	-- ["ADDED_WITH_PATCH"] = "Added With Patch";
-	-- ["REMOVED_WITH_PATCH"] = "Removed With Patch";
-	-- ["ALIVE"] = "Alive";
-	-- ["SPAWNED"] = "Spawned";
-	-- ["LAYER"] = "Layer";
-	-- ["ART_ID"] = "Art ID";
-	-- ["BINDING"] = "Binding";
-	-- ["BONUS_ID"] = "Bonus ID";
-	-- ["CONDUIT_ID"] = "Conduit ID";
-	-- ["DISPLAY_ID"] = "Display ID";
-	-- ["EXPLORATION_ID"] = "Exploration ID";
-	-- ["EVENT_ID"] = "Event ID";
-	-- ["ICON_PATH"] = "Icon Path";
-	-- ["ITEM_LEVEL"] = "iLvl";
-	-- ["ITEM_STRING"] = "Item String";
-	-- ["MOD_ID"] = "Mod ID";
-	-- ["OBJECT_TYPE"] = "Object Type";
-	-- ["OBJECTIVES"] = "Objectives";
-	-- ["QUEST_GIVERS"] = "Quest Givers";
-	-- ["RUNEFORGE_POWER_ID"] = "Runeforge Power ID";
-	-- ["DATA_TYPE_NOT_SUPPORTED"] = "This data type is not supported at this time.",
+	
 	["DURING_WQ_ONLY"] = "Can be completed when the World Quest is active";
 	["COMPLETED_DAILY"] = "Can be completed daily";
 	["COMPLETED_WEEKLY"] = "Can be completed weekly";
 	["COMPLETED_MONTHLY"] = "Can be completed monthly";
 	["COMPLETED_YEARLY"] = "Can be completed yearly";
 	["COMPLETED_MULTIPLE"] = "Can be repeated multiple times";
-	-- ["CRITERIA_FOR"] = "Criteria for";
-	-- ["CURRENCY_FOR"] = "Currency for";
 	["LOOT_TABLE_CHANCE"] = "Loot Table Chance";
 	["BEST_BONUS_ROLL_CHANCE"] = "Best Bonus Roll Chance";
 	["BEST_PERSONAL_LOOT_CHANCE"] = "Best Personal Loot Chance";
 	["PREREQUISITE_QUESTS"] = "There are prerequisite quests that must be completed before this may be obtained:";
-	-- ["BREADCRUMBS"] = "Breadcrumbs";
 	["BREADCRUMBS_WARNING"] = "There are breadcrumb quests that may not be obtainable after completing this:";
 	["THIS_IS_BREADCRUMB"] = "This is a breadcrumb quest.";
 	["BREADCRUMB_PARTYSYNC"] = "This may be unable to be completed without Party Sync if completing any of these quests first:";
@@ -225,26 +175,10 @@ for key, value in pairs({
 	["REAGENT_CACHE_OUT_OF_DATE"] = "Reagent Cache is out-of-date and will be re-cached when opening your professions!";
 	["ARTIFACT_CACHE_OUT_OF_DATE"] = "Artifact Cache is out-of-date/inaccurate and will be re-cached when logging onto each character!";
 	["QUEST_LOOP"] = "Likely just broke out of an infinite source quest loop.";
-	-- ["QUEST_PREVENTS_BREADCRUMB_COLLECTION_FORMAT"] = "Quest '%s' %s will prevent collection of Breadcrumb Quest '%s' %s";
 	["QUEST_OBJECTIVE_INVALID"] = "Invalid Quest Objective";
-	-- ["REFRESHING_COLLECTION"] = "Refreshing collection...";
-	-- ["DONE_REFRESHING"] = "Done refreshing collection.";
-	-- ["AVAILABILITY"] = "Availability";
-	-- ["PET_BATTLES"] = "Pet Battles";
-	-- ["REQUIRES_PVP"] = "|CFF00FFDERequires PvP Activities or Currencies|r";
-	-- ["REQUIRES_PETBATTLES"] = "|CFF00FFDERequires Pet Battling|r";
-	-- ["REPORT_INACCURATE_QUEST"] = "Wrong Quest Info! (Click to Report)";
 	["NESTED_QUEST_REQUIREMENTS"] = "Nested Quest Requirements";
-	-- ["MAIN_LIST_REQUIRES_REFRESH"] = "[Open Main list to update progress]";
-	-- ["UPDATES_PAUSED"] = "Updates Paused";
 	["DOES_NOT_CONTRIBUTE_TO_PROGRESS"] = "|cffe08207This group and its content do not contribute to the progress of this window since it is Sourced in another Location!|r";
 	["CURRENCY_NEEDED_TO_BUY"] = "Estimated amount needed to obtain remaining Things";
-	-- ["LOCK_CRITERIA_LEVEL_LABEL"] = "Player Level";
-	-- ["LOCK_CRITERIA_QUEST_LABEL"] = "Completed Quest";
-	-- ["LOCK_CRITERIA_SPELL_LABEL"] = "Learned Spell/Mount/Recipe";
-	-- ["LOCK_CRITERIA_FACTION_LABEL"] = "Faction Reputation";
-	-- ["LOCK_CRITERIA_FACTION_FORMAT"] = "%s with %s (Current: %s)";
-	-- ["LOCK_CRITERIA_SOURCE_LABEL"] = "Known Appearance";
 	["FUTURE_UNOBTAINABLE"] = "Future Unobtainable!";
 	["FUTURE_UNOBTAINABLE_TOOLTIP"] = "This is content that has been confirmed or is highly-probable to be made unobtainable in a known future patch.";
 	["NEW_WITH_PATCH"] = "Newly Added Things";
@@ -314,35 +248,11 @@ for key, value in pairs({
 	["ITEM_FILTER_POPUP_TEXT"] = "Which Item Filter would you like to search for?";
 
 	-- Instructional Text
-	-- ["MINIMAP_MOUSEOVER_TEXT"] = "Right click to change settings.\nLeft click to open the Main List.\n"..CTRL_KEY_TEXT.." click to open the Mini List.\n"..SHIFT_KEY_TEXT.." click to Refresh Collections.";
-	-- ["TOP_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click and Drag to Move\nRight Click to Open the Settings Menu\n"..SHIFT_KEY_TEXT.." click to Refresh Collections\n"..CTRL_KEY_TEXT.." click to Expand/Collapse Recursively\n"..SHIFT_KEY_TEXT.." right click to Sort Groups/Popout Lists|r";
-	-- ["OTHER_ROW_INSTRUCTIONS"] = "|cff3399ffLeft Click to Expand/Collapse\nRight Click to Pop Out to Mini List\n"..SHIFT_KEY_TEXT.." click to Refresh Collections\n"..CTRL_KEY_TEXT.." click to Expand/Collapse Recursively\n"..SHIFT_KEY_TEXT.." right click to Sort Groups/Popout Lists\n"..ALT_KEY_TEXT.." right click to Plot Waypoints|r";
-	-- ["TOP_ROW_INSTRUCTIONS_AH"] = "|cff3399ffLeft Click and Drag to Move\nRight Click to Open the Settings Menu\n"..SHIFT_KEY_TEXT.." click to Search the Auction House|r";
-	-- ["OTHER_ROW_INSTRUCTIONS_AH"] = "|cff3399ffLeft Click to Expand/Collapse\nRight Click to Pop Out to Mini List\n"..SHIFT_KEY_TEXT.." click to Search the Auction House|r";
-	-- ["RECENTLY_MADE_OBTAINABLE"] = "|CFFFF0000If this recently dropped for you (anywhere but Salvage\nCrates), please post in Discord where you got it to drop!|r";
-	-- ["RECENTLY_MADE_OBTAINABLE_PT2"] = "|CFFFF0000The more information, the better.  Thanks!|r";
 	["TOP_ROW_TO_LOCK"] = "|cff3399ff"..ALT_KEY_TEXT.." click to Lock this Window";
 	["TOP_ROW_TO_UNLOCK"] = "|cffcf0000"..ALT_KEY_TEXT.." click to Unlock this Window";
 	["QUEST_ROW_INSTRUCTIONS"] = "Right Click to see any Quest Chain Requirements";
-	-- ["SYM_ROW_INFORMATION"] = "Right Click to see additional content which is Sourced in another location";
-	-- ["SYM_ROW_SKIP_DESC"] = "Linked content is only displayed in the tooltip for this object.";
 	["QUEST_ONCE_PER_ACCOUNT"] = "Once-Per-Account Quest";
-	-- ["COMPLETED_BY"] = "Completed By: %s";
-	-- ["OWNED_BY"] = "Owned by %s";
 	["GARRISON_BUILDINGS_REQUIRE_GARRISON"] = "Due to a Blizzard API issue/restriction, this can only be properly cached as collected while within your Garrison",
-
-	-- Social Module
-	-- ["NEW_VERSION_AVAILABLE"] = "A newer version of %s is available. Please update the AddOn, %s.";
-	-- ["NEW_VERSION_FLAVORS"] = {
-	--	"or we'll give Sylvanas another lighter",
-	--	"Alexstrasza is worried about you",
-	--	"and Invincible will drop |cffffaaaafor sure|r next time",
-	--	"this was merely a setback",
-	--	"time to drop your % down",
-	--	"and a turtle will make it to the water",
-	--	"CHAMPYUUN, DE AZURIITE",
-	--};
-	-- ["SOCIAL_PROGRESS"] = "Social Progress";
 
 	-- Settings.lua
 		["AFTER_REFRESH"] = "After Refresh";
@@ -366,33 +276,13 @@ for key, value in pairs({
 				["TITLE_SOLO"] = "Solo ";
 				["_BETA_LABEL"] = " |cff4AA7FF[Beta]|R";
 
-	-- ["MINIMAP_SLIDER"] = "Minimap Button Size";
-	-- ["MINIMAP_SLIDER_TOOLTIP"] = 'Use this to customize the size of the Minimap Button.\n\nDefault: 36';
 	["EXTRA_THINGS_LABEL"] = "Additional Resources";
-
-	-- ["MINIMAP_BUTTON_CHECKBOX"] = "Show the Minimap Button";
-	-- ["MINIMAP_BUTTON_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the minimap button. This button allows you to quickly access the Main List, show your Overall Collection Progress, and access the Settings Menu by right clicking it.\n\nSome people don't like clutter. Alternatively, you can access the Main List by typing '/att' in your chatbox. From there, you can right click the header to get to the Settings Menu.";
-	-- ["WORLDMAP_BUTTON_CHECKBOX"] = "Show the World Map Button";
-	-- ["WORLDMAP_BUTTON_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the ATT button on your world map. This button allows you to quickly access the Mini List for the currently displayed zone. Regularly, you'd need to physically travel to the zone in order to see the content on the mini list that you can access by typing '/att mini' in your chatbox.";
 
 	["CLICK_TO_CREATE_FORMAT"] = "Click to Create %s";
 	["LOADING_FORMAT"] = "%s "..LFG_LIST_LOADING;	-- %s Loading...
 	["READY_FORMAT"] = "%s "..READY;	-- %s Ready
-	-- ["KEYBINDINGS"] = SETTINGS_KEYBINDINGS_LABEL;
-	-- ["KEYBINDINGS_TEXT"] = "You can set keybindings for ATT in the game's options.";
-
-	-- Interface tab
-	-- ["ADDITIONAL_LABEL"] = "Additional Information";
-	-- ["DESCRIPTIONS"] = "Descriptions";
-	-- ["LOCKOUTS"] = "Lockouts";
-	-- ["LORE"] = "Lore";
-	-- ["CLASSES"] = "Classes";
 
 	-- Features tab
-	-- ["MINIMAP_LABEL"] = "Minimap Button";
-	-- ["MODULES_LABEL"] = "Modules & Mini Lists";
-	-- ["SKIP_CUTSCENES_CHECKBOX"] = "Automatically Skip Cutscenes";
-	-- ["SKIP_CUTSCENES_CHECKBOX_TOOLTIP"] = "Enable this option if you want ATT to automatically skip all cutscenes on your behalf.";
 	["AUTO_BOUNTY_CHECKBOX"] = "Automatically Open the Bounty List";
 	["AUTO_BOUNTY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty";
 	["AUTO_MAIN_LIST_CHECKBOX"] = "Automatically Open the Main List";
@@ -401,18 +291,12 @@ for key, value in pairs({
 	["AUTO_MINI_LIST_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones. Some people don't like this feature, but when you are solo farming, this feature is extremely useful.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Mini List\n\nShortcut Command: /att mini";
 	["FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX"] = "Filter Mini List for Timerunning";
 	["FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP"] = "Enable this option to filter Timerunning content appropriately (only from the mini list) when playing on either a Retail or Timerunning Character.\n\nNOTE: This option will only be available during Timerunning events!";
-	-- ["AUTO_PROF_LIST_CHECKBOX"] = "Automatically Open the Profession List";
-	-- ["AUTO_PROF_LIST_CHECKBOX_TOOLTIP"] = "Enable this option if you want ATT to open and refresh the profession list when you open your professions. Due to an API limitation imposed by Blizzard, the only time an addon can interact with your profession data is when it is open. The list will automatically switch when you change to a different profession.\n\nWe don't recommend disabling this option as it may prevent recipes from tracking correctly.\n\nYou can also bind this setting to a Key. (only works when a profession is open)\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Profession Mini List";
 	["AUTO_RAID_ASSISTANT_CHECKBOX"] = "Automatically Open the Raid Assistant";
 	["AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra";
 	["AUTO_WQ_LIST_CHECKBOX"] = "Automatically Open the World Quests List";
 	["AUTO_WQ_LIST_CHECKBOX_TOOLTIP"] = "Enable this option if you want the 'World Quests' list to appear automatically. The list will automatically update whenever you switch zones.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle World Quests List\n\nShortcut Command: /attwq";
 	["AUCTION_TAB_CHECKBOX"] = "Show the Auction House Module Tab";
 	["AUCTION_TAB_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.";
-	-- ["ICON_LEGEND_LABEL"] = "Icon Legend";
-	-- ["ICON_LEGEND_TEXT"] = app.ccColors.White .. "|TInterface\\AddOns\\AllTheThings\\assets\\status-unobtainable.blp:0|t " .. "Unobtainable" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-prerequisites.blp:0|t " .. "Obtainable only with prerequisites" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-available.blp:0|t " .. "Available seasonal content" .. "\n|TInterface\\AddOns\\AllTheThings\\assets\\status-seasonal-unavailable.blp:0|t " .. "Unavailable seasonal content" .. "\n|TInterface\\FriendsFrame\\StatusIcon-Offline:0|t " .. "Unavailable on current character";
-	-- ["CHAT_COMMANDS_LABEL"] = "Chat Commands";
-	-- ["CHAT_COMMANDS_TEXT"] = "/att |cffFFFFFFor|R /things |cffFFFFFFor|R /allthethings\n|cffFFFFFFOpens the Main List.\n\n|R/att mini |cffFFFFFFor|R /attmini\n|cffFFFFFFOpens the Mini List.\n\n|R/att bounty\n|cffFFFFFFOpens a list of bugged or unconfirmed items.\n\n|R/att ra |cffFFFFFFor|R /attra\n|cffFFFFFFOpens the Raid Assistant.\n\n|R/att wq |cffFFFFFFor|R /attwq\n|cffFFFFFFOpens the World Quests List.\n\n|R/att item:1234 |cffFFFFFFor|R /att [Item Link]\n|cffFFFFFFOpens a window with shared appearances. Also works with other things, such as|R quest:1234|cffFFFFFF, |Rnpcid:1234|cffFFFFFF, |Rmapid:1234|cffFFFFFF or |Rrecipeid:1234|cffFFFFFF.\n\n|R/att rwp\n|cffFFFFFFShows all future Removed With Patch things.\n\n|R/att nwp\n|cffFFFFFFShows all current New With Patch things.\n\n|R/att random |cffFFFFFFor|R /attrandom |cffFFFFFFor|R /attran\n|cffFFFFFFOpens the Random List.\n\n|R/att unsorted\n|cffFFFFFFOpens a list of unsourced items. Best opened in Debug Mode.\n\n|R/rl\n|cffFFFFFFReload your WoW interface.|R";
 
 	-- Sync Window
 	["ACCOUNT_MANAGEMENT"] = "Account Management";
@@ -432,74 +316,9 @@ for key, value in pairs({
 	["DELETE_CHARACTER"] = "Right Click to Delete this Character";
 	["CONFIRM_DELETE"] = "\n \nAre you sure you want to delete this?";
 
-	-- Event Text
-	-- ["ITEM_ID_ADDED"] = "%s (%d) was added to your collection.";
-	-- ["ITEM_ID_ADDED_RANK"] = "%s (%d) [Rank %d] was added to your collection.";
-	-- ["ITEM_ID_ADDED_MISSING"] = "%s (%d) was added to your collection. Not found in the %s database. Please report to the ATT Discord!";
-	-- ["ITEM_ID_ADDED_SHARED"] = "%s (%d) [+%d] were added to your collection.";
-	-- ["ITEM_ID_ADDED_SHARED_MISSING"] = "%s (%d) [+%d] were added to your collection. Not found in the %s database. Please report to the ATT Discord!";
-	-- ["ITEM_ID_REMOVED"] = "%s (%d) was removed from your collection.";
-	-- ["ITEM_ID_REMOVED_SHARED"] = "%s (%d) [+%d] were removed from your collection.";
-
 	-- Tooltip Text
-	-- ["DROP_RATE"] = "Drop Rate";
-	-- ["QUEST_GIVER"] = "Quest Giver";
-	-- ["EVENT_SCHEDULE"] = "Event Schedule";
-	-- ["EVENT_ACTIVE"] = "Active:";
-	-- ["EVENT_START"] = "Start:";
-	-- ["EVENT_END"] = "End:";
-	-- ["EVENT_WHERE"] = "Where:";
-	-- ["REQUIRES_EVENT"] = "Requires Event";
-	-- ["MAPS"] = "Maps";
-	-- ["LOCKOUT"] = "Lockout";
-	-- ["RESETS"] = "Resets";
-	-- ["SHARED"] = "Shared";
-	-- ["SPLIT"] = "Per Difficulty";
-	-- ["REQUIRES_LEVEL"] = "Requires Level";
 	["SECRETS_HEADER"] = "Secrets";
-	-- ["LIMITED_QUANTITY"] = "This has a limited quantity and may not always be present on the vendor.";
 	["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
-	-- ["ADDED_WITH_PATCH_FORMAT"] = "Added in %s";
-	-- ["WAS_ADDED_WITH_PATCH_FORMAT"] = "Added in %s";
-	-- ["ADDED_BACK_WITH_PATCH_FORMAT"] = "Re-added in %s";
-	-- ["WAS_ADDED_BACK_WITH_PATCH_FORMAT"] = "Added in %s";
-	-- ["REMOVED_WITH_PATCH_FORMAT"] = "Removed in %s";
-
-	-- Filter Text
-	-- ["ARTIFACT_ID"] = "Artifact ID";
-	-- ["AZERITE_ESSENCE_ID"] = "Azerite Essence ID";
-	-- ["CREATURE_ID"] = "Creature ID";
-	-- ["CREATURES_COUNT"] = "[%s Creatures]";
-	-- ["CREATURES_LIST"] = "Creatures List";
-	-- ["CURRENCY_ID"] = "Currency ID";
-	-- ["DIFFICULTY_ID"] = "Difficulty ID";
-	-- ["ENCOUNTER_ID"] = "Encounter ID";
-	-- ["EXPANSION_ID"] = "Expansion ID";
-	-- ["FILTER_ID"] = "Filter ID";
-	-- ["FOLLOWER_ID"] = "Follower ID";
-	-- ["GUID"] = "Global ID";
-	-- ["HEADER_ID"] = "Header ID";
-	-- ["ILLUSION_ID"] = "Illusion ID";
-	-- ["INSTANCE_ID"] = "Instance ID";
-	-- ["SAVED_INSTANCE_ID"] = "Saved Instance ID";
-	-- ["ITEM_ID"] = "Item ID";
-	-- ["FACTION_ID"] = "Faction ID";
-	-- ["FLIGHT_PATH_ID"] = "Flight Path ID";
-	-- ["MAP_ID"] = "Map ID";
-	-- ["MOUNT_ID"] = "Mount ID";
-	-- ["MUSIC_ROLL_ID"] = "Music Roll ID";	-- not used
-	-- ["NPC_ID"] = "NPC ID";
-	-- ["OBJECT_ID"] = "Object ID";
-	-- ["QUEST_ID"] = "Quest ID";
-	-- ["SET_ID"] = "Gear Set ID";
-	-- ["SOURCE_ID"] = "Source ID";
-	-- ["SPECIES_ID"] = "Species ID";
-	-- ["SPELL_ID"] = "Spell ID";
-	-- ["SPELL_NAME"] = "Spell Name";
-	-- ["TITLE_ID"] = "Title ID";
-	-- ["TOY_ID"] = "Toy ID";
-	-- ["VISUAL_ID"] = "Visual ID";
-	-- ["ACHIEVEMENT_PRE_WRATH_SOURCE_QUEST_INFO"] = "This achievement has associated quests that can be completed before the introduction of the Achievement system coming with the Wrath Prepatch. Not all achievements can be tracked this way, but for those that can, they will be displayed. All other non-trackable achievements will be activated with the prepatch.";
 
 	-- Artifact Relic Completion
 	["ARTIFACT_RELIC_CACHE"] = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
@@ -512,17 +331,6 @@ for key, value in pairs({
 	["DISABLED"] = "disabled";
 
 	-- Icons and Collection Text
-	-- ["COLLECTED_ICON"] = "|T" .. app.asset("known") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
-	-- ["COLLECTED_APPEARANCE_ICON"] = "|T" .. app.asset("known_circle") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
-	-- ["COMPLETE_ICON"] = "|T" .. app.asset("known_green") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
-	-- ["INCOMPLETE_ICON"] = "|T" .. app.asset("incomplete") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
-	-- ["NOT_COLLECTED_ICON"] = "|T" .. app.asset("unknown") .. ":0|t";	-- Acquired the colors and icon from CanIMogIt.
-	-- ["COLLECTED"] = "|T" .. app.asset("known") .. ":0|t |cff15abffCollected|r";	-- Acquired the colors and icon from CanIMogIt.
-	-- ["COLLECTED_APPEARANCE"] = "|T" .. app.asset("known_circle") .. ":0|t |cff15abffCollected*|r";	-- Acquired the colors and icon from CanIMogIt.
-	-- ["NOT_COLLECTED"] = "|T" .. app.asset("unknown") .. ":0|t |cffff9333Not Collected|r";	-- Acquired the colors and icon from CanIMogIt.
-	-- ["COMPLETE"] = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complete|r";	-- Acquired the colors and icon from CanIMogIt.
-	-- ["COMPLETE_OTHER"] = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Complete*|r";	-- Acquired the colors and icon from CanIMogIt.
-	-- ["INCOMPLETE"] = "|T" .. app.asset("incomplete") .. ":0|t |cff15abffIncomplete|r";	-- Acquired the colors and icon from CanIMogIt.
 	["SAVED"] = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Saved|r";	-- Acquired the colors and icon from CanIMogIt.
 	["COST_ICON"] = "|T" .. app.asset("Currency") .. ":0|t";
 	["COST_TEXT"] = "|T" .. app.asset("Currency") .. ":0|t |cffdedade"..CURRENCY.."|r";
@@ -532,104 +340,6 @@ for key, value in pairs({
 	["UPGRADE_TEXT"] = "|T" .. app.asset("Interface_Upgrade") .. ":0|t |cff62e37e"..UPGRADE.."|r";
 	["REAGENT_ICON"] = "|T" .. app.asset("Interface_Reagent") .. ":0|t";
 	["REAGENT_TEXT"] = "|T" .. app.asset("Interface_Reagent") .. ":0|t |cffdedade"..GetItemClassInfo(5).."|r";
-
-	-- These are solely used to condense the length of Source strings within Tooltips
-	-- ["ABBREVIATIONS"] = {
-		-- ["ALL THE THINGS"] = "ATT",
-		-- ["Expansion Pre"] = "Pre",
-		-- ["Expansion Features"] = "EF",
-		-- [GROUP_FINDER] = "D&R",
-		-- Expansion sorted
-		-- ["Classic %> "] = "",
-		-- ["The Burning Crusade"] = "BC",
-		-- ["Burning Crusade"] = "BC",
-		-- ["The BC"] = "BC",										-- Fix for BC PvP season
-		-- ["Wrath of the Lich King"] = "WotLK",
-		-- ["Cataclysm %>"] = "Cata >",
-		-- ["Cataic"] = "Cataclysmic",								-- Fix for Cata last PvP Season
-		-- ["Mists of Pandaria"] = "MoP",
-		-- ["Warlords of Draenor"] = "WoD",
-		-- ["Battle for Azeroth"] = "BFA",
-		-- ["The Shadowlands"] = "SL",
-		-- ["Shadowlands"] = "SL",
-		-- ["Dragonflight"] = "DF",
-		-- ["The War Within"] = "TWW",
-		-- Dungeon&Raids
-		-- ["Player vs Player"] = "PvP",
-		-- ["Raid Finder"] = "LFR",
-		-- ["Looking For Raid"] = "LFR",
-		-- ["Normal"] = "N",
-		-- ["Heroic"] = "H",
-		-- ["Mythic"] = "M",
-		-- ["10 Player"] = "10M",
-		-- ["10 Player (Heroic)"] = "10M (H)",
-		-- ["25 Player"] = "25M",
-		-- ["25 Player (Heroic)"] = "25M (H)",
-		-- [BATTLEGROUNDS] = "BGs",
-		-- Dungeon&Raids Names
-		-- BFA
-		-- ["Ny'alotha, the Waking City"] = "Ny'alotha",
-		-- Cata
-		-- ["Baleroc, the Gatekeeper"] = "Baleroc",
-		-- ["The Conclave of Wind"] = "Conclave",
-		-- ["Hagara the Stormbinder"] = "Hagara",
-		-- ["Majordomo Staghelm"] = "Majordomo",
-		-- ["Omnotron Defense System"] = "Omnotron",
-		-- ["Theralion and Valiona"] = "Theralion&Valiona",
-		-- ["Yor'sahj the Unsleeping"] = "Yor'sahj",
-		-- DF
-		-- ["Aberrus, the Shadowed Crucible"] = "Aberrus",
-		-- ["Antorus, the Burning Throne"] = "Antorus",
-		-- ["Amirdrassil, the Dream's Hope"] = "Amirdrassil",
-		-- ["Kazzara, the Hellforged"] = "Kazzara",
-		-- ["Larodar, Keeper of the Flame"] = "Larodar",
-		-- ["Nymue, Weaver of the Cycle"] = "Nymue",
-		-- ["Tindral Sageswift, Seer of the Flame"] = "Tindral Sageswift",
-		-- Legion
-		-- ["Il'gynoth, The Heart of Corruption"] = "Il'gynoth",
-		-- SL
-		-- ["Tazavesh, the Veiled Market"] = "Tazavesh",
-		-- TWW
-		-- ["Ara-Kara, City of Echoes"] = "Ara-Kara",
-		-- ["Sikran, Captain of the Sureki"] = "Sikran",
-		-- Outdoor Zones
-		-- ["Quartermaster Miranda Breechlock"] = "Quartermaster Miranda",
-		-- ["Season "] = "S",
-		-- ["Sanctum Upgrades %> "] = "",
-		-- ["The Azure Span"] = "Azure Span",
-		-- ["The Forbidden Reach"] = "Forbidden Reach",
-		-- ["The Superbloom"] = "Superbloom",
-		-- ["The Waking Shores"] = "Waking Shores",
-		-- ["The Primalist Future"] = "Primalist Future",
-		-- ["The Storm's Fury"] = "Storm's Fury",
-		-- ["WoW Anniversary"] = "Anniversary",
-		-- ["Dragonriding Challenge: Dragon Isles: Gold > "] = "",
-		-- ["Dragon Racing Completionist: Gold > "] = "",
-		-- ["Emerald Dream Challenge Racing Completionist: Gold > "] = "",
-		-- ["Emerald Dream Racing Completionist: Gold > "] = "",
-		-- ["Forbidden Reach Challenge Racing Completionist: Gold > "] = "",
-		-- ["Forbidden Reach Racing Completionist: Gold > "] = "",
-		-- ["Zaralek Cavern Racing Completionist: Gold > "] = "",
-
-		-- ["WoW's Anniversary %> "] = "",
---		["Dragonriding Cup %> "] = "",
-		-- [BLACK_MARKET_AUCTION_HOUSE] = "BMAH",
-		-- ["Emissary Quests"] = "Emissary",
-		-- ["Item Sets"] = WARDROBE_SETS,
-		-- ["Outdoor Zones"] = LFG_TYPE_ZONE,
-		-- ["Pet Journal"] = PETS,
-		-- ["Pet Battles"] = PETS,
-		-- ["Player vs. Player"] = STAT_CATEGORY_PVP,
-		-- ["Toy Box"] = TOY,
-		-- ["Zone Drop"] = LFG_TYPE_ZONE,
-		-- ["Zone Wide"] = LFG_TYPE_ZONE,
-		-- ["Mini World Events"] = GetSpellName(57055),
-		-- ["Monthly World Events"] = CALENDAR_REPEAT_MONTHLY,
-		-- [TRACKER_HEADER_WORLD_QUESTS] = "WQ",
-		-- ["Weekly World Events"] = CALENDAR_REPEAT_WEEKLY,
-		-- ["Covenant:"] = "Cov:",
-		-- [CLASS.." %> "] = "",
-	-- };
 
 	-- These need to be localized manually.
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###

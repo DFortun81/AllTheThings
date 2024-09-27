@@ -345,19 +345,6 @@ end)
 end -- TradeSkill Functionality
 
 
-
-local function GetCollectionIcon(state)
-	return L[(state and (state == 2 and "COLLECTED_APPEARANCE_ICON" or "COLLECTED_ICON")) or "NOT_COLLECTED_ICON"];
-end
-local function GetCollectionText(state)
-	return L[(state and (state == 2 and "COLLECTED_APPEARANCE" or "COLLECTED")) or "NOT_COLLECTED"];
-end
-local function GetCompletionIcon(state)
-	return L[state and "COMPLETE_ICON" or "INCOMPLETE_ICON"];
-end
-local function GetCompletionText(state)
-	return L[(state == 2 and "COMPLETE_OTHER") or (state and "COMPLETE") or "INCOMPLETE"];
-end
 local function GetSavedText(state)
 	return L[state and "SAVED" or "INCOMPLETE"];
 end
@@ -367,7 +354,7 @@ local function GetCollectibleIcon(data, iconOnly)
 		if not collected and data.collectedwarband then
 			return iconOnly and L["COLLECTED_WARBAND_ICON"] or L["COLLECTED_WARBAND"];
 		end
-		return iconOnly and GetCollectionIcon(collected) or GetCollectionText(collected);
+		return iconOnly and app.GetCollectionIcon(collected) or app.GetCollectionText(collected);
 	end
 end
 local function GetTrackableIcon(data, iconOnly, forSaved)
@@ -378,10 +365,10 @@ local function GetTrackableIcon(data, iconOnly, forSaved)
 			if forSaved then
 				-- if for saved, we ignore if it is un-saved for less clutter
 				if saved then
-					return iconOnly and GetCompletionIcon(saved) or GetSavedText(saved);
+					return iconOnly and app.GetCompletionIcon(saved) or GetSavedText(saved);
 				end
 			else
-				return iconOnly and GetCompletionIcon(saved) or GetCompletionText(saved);
+				return iconOnly and app.GetCompletionIcon(saved) or app.GetCompletionText(saved);
 			end
 		end
 	end
@@ -531,10 +518,6 @@ local function GetProgressTextForTooltip(data)
 
 	return app.TableConcat(text, nil, "", " ");
 end
-app.GetCollectionIcon = GetCollectionIcon;
-app.GetCollectionText = GetCollectionText;
-app.GetCompletionIcon = GetCompletionIcon;
-app.GetCompletionText = GetCompletionText;
 app.GetProgressTextForRow = GetProgressTextForRow;
 app.GetProgressTextForTooltip = GetProgressTextForTooltip;
 
@@ -5825,7 +5808,7 @@ local function AddAchievementInfoToTooltip(info, achievements, reference)
 				text = RETRIEVING_DATA;
 				reference.working = true;
 			end
-			text = GetCompletionIcon(ach.saved) .. " [" .. ach.achievementID .. "] " .. text;
+			text = app.GetCompletionIcon(ach.saved) .. " [" .. ach.achievementID .. "] " .. text;
 			if ach.isGuild then text = text .. " (" .. GUILD .. ")"; end
 			tinsert(info, {
 				left = text
@@ -5843,7 +5826,7 @@ local function AddQuestInfoToTooltip(info, quests, reference)
 				text = RETRIEVING_DATA;
 				reference.working = true;
 			end
-			text = GetCompletionIcon(q.saved) .. " [" .. q.questID .. "] " .. text;
+			text = app.GetCompletionIcon(q.saved) .. " [" .. q.questID .. "] " .. text;
 			mapID = q.mapID
 				or (q.maps and q.maps[1])
 				or (q.coord and q.coord[3])
@@ -7018,7 +7001,7 @@ RowOnEnter = function (self)
 					reference.working = true
 				end
 				tinsert(tooltipInfo, {
-					left = GetCompletionIcon(critFunc(critValue)).." "..label..": "..text,
+					left = app.GetCompletionIcon(critFunc(critValue)).." "..label..": "..text,
 				});
 			end
 		end
@@ -7040,7 +7023,7 @@ RowOnEnter = function (self)
 			if critFunc then
 				text = critFuncs.text_questID(critValue);
 				tinsert(tooltipInfo, {
-					left = GetCompletionIcon(critFunc(critValue)).." "..label..": "..text,
+					left = app.GetCompletionIcon(critFunc(critValue)).." "..label..": "..text,
 				});
 			end
 		end
