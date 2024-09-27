@@ -215,6 +215,161 @@ WOW_ANNIVERSARY_TWENTY = createHeader({
 });
 local BRONZE_TOKEN = 3100;
 
+------ Encounter Constants ------
+local ROCCOR = 2663;
+local BAELGAR = 2664;
+local INCENDIUS = 2665;
+local ARGELMACH = 2666;
+local THE_SEVEN = 2667;
+local ANGERFORGE = 2668;
+local FLAMELASH = 2669;
+local DAGRAN = 2670;
+
+------ NPC Constants ------
+local GERSTAHN = 9018;
+local GREBMAR = 9319;
+local DARKVIRE = 9056;
+local PHALANX = 9502;
+local LOREGRAIN = 9024;
+
+------ EncounterToCRS ------
+local EncounterToCRS = {
+	[ROCCOR] = { 9025 },	-- Lord Roccor
+	[BAELGAR] = { 9016 },	-- Bael'Gar
+	[INCENDIUS] = { 9017 },	-- Lord Incendius
+	[ARGELMACH] = { 8983 },	-- Golem Lord Argelmach
+	[THE_SEVEN] = {
+		9035,	-- Anger'rel
+		9039,	-- Doom'rel
+		9040,	-- Dope'rel
+		9037,	-- Gloom'rel
+		9034,	-- Hate'rel
+		9038,	-- Seeth'rel
+		9036,	-- Vile'rel
+	},
+	[ANGERFORGE] = { 9033 },	-- General Angerforge
+	[FLAMELASH] = { 9156 },		-- Ambassador Flamelash
+	[DAGRAN] = { 9019 },	-- Emperor Dagran Thaurissan
+};
+
+------ EnconterToLoot ------
+local EncounterToLoot = {
+	[ROCCOR] = {
+		i(231457),	-- Bottled Magma
+		i(231395),	-- Earthslag Shoulders
+		i(231455),	-- Embershard Pendant
+		i(231456),	-- Heart of Roccor
+		i(231449),	-- Leggings of Frenzied Magic
+		i(231454),	-- Magma-Shot Boomstick
+		i(231445),	-- Mantle of Lost Hope
+		i(231397),	-- Rubicund Armguards
+		i(231453),	-- Shard Splinter
+		i(231394),	-- Stoneshell Guard
+	};
+	[BAELGAR] = {
+		i(231463),	-- Arbiter's Blade
+		i(231447),	-- Bloodclot Band
+		i(231409),	-- Force of Magma
+		i(231458),	-- Insolent Dark Iron's Vest
+		i(231408),	-- Lavacrest Leggings
+		i(231461),	-- Magma Giant's Crown
+		i(231462),	-- Molten Furnace
+		i(231410),	-- Rubidium Hammer
+		i(231411),	-- Sash of the Burning Heart
+	};
+	[INCENDIUS] = {
+		i(231404),	-- Cinderhide Armsplints
+		i(231407),	-- Emberplate Armguards
+		i(231464),	-- Flame-Tempered Skinner
+		i(231468),	-- Flamekeeper's Fire Blanket
+		i(231467),	-- Flamelord's Emberstaff
+		i(231406),	-- Flameweave Cuffs
+		i(231405),	-- Pyremail Wristguards
+	};
+	[ARGELMACH] = {
+		i(231472),	-- Argelmach's Breaking Bar
+		i(231471),	-- Golem Gearbox
+		i(231389),	-- Luminary Robe
+		i(231396),	-- Naglering
+		i(231423),	-- Omnicast Boots
+		i(231420),	-- Second Wind
+		i(231470),	-- Spare Golem Frame
+		i(231469),	-- Spare Golem Pauldrons
+	};
+	[THE_SEVEN] = {
+		i(231431),	-- Deathdealer Breastplate
+		i(231476),	-- Dope'rel's Calling Rune
+		i(231474),	-- Dope'rel's Finger Gloves
+		i(231430),	-- Ghostshroud
+		i(231434),	-- Haunting Specter Leggings
+		i(231427),	-- Impervious Giant
+		i(231432),	-- Legplates of the Eternal Guardian
+		i(231475),	-- Sabaton's of Anger'rel
+		i(231473),	-- The Fifth's Linked Treads
+		i(231428),	-- The Hammer of Grace
+	};
+	[ANGERFORGE] = {
+		i(231418),	-- Angerforge's Battle Axe
+		i(231480),	-- Anvilrage Dragoon's Trousers
+		i(231477),	-- Anvilrage Medic's Boots
+		i(231479),	-- Anvilrage Rogue's Belt of Knives
+		i(231482),	-- Dragoon's Volley Gun
+		i(231440),	-- Ebonsteel Spaulders
+		i(231478),	-- Flamekeeper's Handwraps
+		i(231414),	-- Force of Will
+		i(231435),	-- Guiding Stave of Wisdom
+		i(231419),	-- Lord General's Sword
+		i(231421),	-- Royal Decorated Armor
+		i(231481),	-- Sapper's Waistplate
+		i(231422),	-- Warstrife Leggings
+	};
+	[FLAMELASH] = {
+		i(231486),	-- Burning Spirit Tender's Mitts
+		i(231424),	-- Burst of Knowledge
+		i(231415),	-- Cape of the Fire Salamander
+		i(231412),	-- Circle of Flame
+		i(231484),	-- Fireguard's Lava-Dipped Cleaver
+		i(231413),	-- Flame Wrath
+		i(231483),	-- Flamelash's Fiery Spike
+		i(231485),	-- Flamewalker Scale Spaulders
+		i(231416),	-- Molten Fists
+	};
+	[DAGRAN] = {
+		i(231437),	-- Emperor's Seal
+		i(231417),	-- Hand of Justice
+		i(231439),	-- Hands of the Exalted Herald
+		i(231487),	-- Helm of the Molten Avatar
+		i(231436),	-- Imperial Jewel
+		i(231398),	-- Molten Ironfoe
+		i(231429),	-- Robes of the Royal Crown
+		i(231442),	-- Sash of the Grand Hunt
+		i(231438),	-- Swiftwalker Boots
+		i(231433),	-- Thaurissan's Royal Scepter
+	};
+};
+
+------ Zone Drops ----------
+local ZoneDropLoot = {
+	i(231501),	-- Aristocratic Cuffs
+	i(231507),	-- Battlechaser's Greaves
+	i(231506),	-- Blisterbane Wrap
+	i(231503),	-- Braincage
+	i(231499),	-- Doomforged Straightedge
+	i(231500),	-- Funeral Pyre Vestment
+	i(231502),	-- Mar Alom's Grip
+	i(231495),	-- Ribsplitter
+	i(231504),	-- Runed Golem Shackles
+	i(231497),	-- Searing Needle
+	i(231498),	-- Spire of the Stoneshaper
+	i(231505),	-- Stoneshield Cloak
+	i(231496),	-- The Judge's Gavel
+}
+
+------ Boss Functions ------
+local InstanceHelper = CreateInstanceHelper(EncounterToCRS, EncounterToLoot, ZoneDropLoot)
+local Boss, BossOnly, Difficulty, CommonBossDrops, ZoneDrops =
+InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, InstanceHelper.CommonBossDrops, InstanceHelper.ZoneDrops
+
 root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, {
 	-- Stuff that's completely gone.
 	n(WOW_ANNIVERSARY_FOUR, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_3, REMOVED_3_1_0 } }, {
@@ -2072,6 +2227,125 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		}),
 	})),
 	n(WOW_ANNIVERSARY_TWENTY, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } },{
+		inst(1301, {	-- Blackrock Depths
+			["isRaid"] = true,
+			--["coord"] = { },
+			["maps"] = {
+				2362,	-- Shadowforge City
+				2363,	-- Detention Block
+			},
+			["g"] = {
+				n(ACHIEVEMENTS, {
+					ach(40999, {		-- You're in Your Blackrock Depths
+						crit(70642, {	-- Lord Roccor
+							["_encounter"] = { ROCCOR, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC },
+						}),
+						crit(70571, {	-- High Interrogator Gerstahn
+							["_npc"] = { GERSTAHN },
+						}),
+						crit(70643, {	-- Bael'Gar
+							["_encounter"] = { BAELGAR, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC },
+						}),
+						crit(70572, {	-- Houndmaster Grebmar
+							["_npc"] = { GREBMAR },
+						}),
+						crit(70644, {	-- Lord Incendius
+							["_encounter"] = { INCENDIUS, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC },
+						}),
+						crit(70575, {	-- Fineous Darkvire
+							["_npc"] = { DARKVIRE },
+						}),
+						crit(70576, {	-- Phalanx
+							["_npc"] = { PHALANX },
+						}),
+						crit(70645, {	-- Golem Lord Argelmach
+							["_encounter"] = { ARGELMACH, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC },
+						}),
+						crit(70578, {	-- The Seven
+							["_encounter"] = { THE_SEVEN, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC },
+						}),
+						crit(70646, {	-- General Angerforge
+							["_encounter"] = { ANGERFORGE, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC },
+						}),
+						crit(70647, {	-- Ambassador Flamelash
+							["_encounter"] = { FLAMELASH, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC },
+						}),
+						crit(70581, {	-- Pyromancer Loregrain
+							["_npc"] = { LOREGRAIN },
+						}),
+						crit(70648, {	-- Emperor Dagran Thaurissan
+							["_encounter"] = { DAGRAN, DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC },
+						}),
+					}),
+				}),
+				n(QUESTS, {
+					q(82817, {	-- Disturbance Detected: Blackrock Depths
+						["provider"] = { "n", 229775 },	-- Moira Thaurissan <Queen of the Dark Iron>
+						["coord"] = { 63.0, 49.7, TANARIS },
+						["isWeekly"] = true
+					}),
+					q(84735, {	-- Truth of the Dark Irons
+						["provider"] = { "n", 229775 },	-- Moira Thaurissan <Queen of the Dark Iron>
+						["coord"] = { 63.0, 49.7, TANARIS },
+					}),
+				}),
+				n(VENDORS, {
+					-- Seem you can get "Timewraped Relic Coffer Key" from all difficulties then you can trade for which ever loot you want. Not sure if loot will drop or this is the way loot will work //Braghe
+					n(223881),	-- Braggi Brazenbrass LFR Vendor
+					n(233209),	-- Kraegen Emberforge Normal Vendor
+					n(224322),	-- Hilda Hellforge Heroic Vendor
+				}),
+				Difficulty(DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC).AddGroups({
+					-- Unsure which Miniboss Drops These //Braghe
+					i(231488),	-- Anvilrage, Warden's Breastplate
+					i(231490),	-- Arbiter's Blade
+					i(231492),	-- Barman Shanker
+					i(231493),	-- Bottle-Popper Ring
+					i(231489),	-- Dark Warder's Pauldrons
+					i(231494),	-- Golem Carapace Opener
+					i(231465),	-- Grizzle's Skinne
+					ZoneDrops({}),
+					Boss(ROCCOR),
+					n(GERSTAHN, {
+						i(231392),	-- Enthralled Sphere
+						i(231446),	-- Greaves of Withering Despair
+						i(231391),	-- Kentic Amice
+					}),
+					Boss(BAELGAR),
+					n(GREBMAR, {
+						i(231491),	-- Grebmar's Catch Pole
+						i(231393),	-- Houndmaster's Bow
+						i(231390),	-- Spritecaster Cape
+					}),
+					Boss(INCENDIUS),
+					n(DARKVIRE, {
+						i(231450),	-- Belt of the Eminent Mason
+						i(231425),	-- Chief Architect's Monocle
+						i(231444),	-- Foreman's Head Protector
+						i(231388),	-- Lead Surveyor's Belt
+						i(231426),	-- Senior Designer's Pantaloons
+					}),
+					n(PHALANX, {
+						i(231399),	-- Bloodfist
+						i(231451),	-- Ferrous Cord
+						i(231400),	-- Fists of Phalanx
+						i(231443),	-- Golem Fitted Pauldrons
+						i(231441),	-- Wristguards of Renown
+					}),
+					Boss(ARGELMACH),
+					Boss(THE_SEVEN),
+					Boss(ANGERFORGE),
+					Boss(FLAMELASH),
+					n(LOREGRAIN, {
+						i(231448),	-- Entrenching Boots
+						i(231401),	-- Flamestrider Robes
+						i(231403),	-- Kindling Stave
+						i(231402),	-- Searingscale Leggings
+					}),
+					Boss(DAGRAN)
+				}),
+			},
+		}),
 		n(ACHIEVEMENTS, {
 			ach(40976, {	-- A Cool Twenty Years
 				-- Meta Achievement
@@ -2137,31 +2411,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			ach(40997),		-- The Gatecrashers (automated)
 			ach(40995),		-- The Originals (automated)
 			ach(41013),		-- Upgraded Apparel
-			ach(40999, {		-- You're in Your Blackrock Depths
-				crit(70642),	-- Lord Roccor
-				crit(70571),	-- High Interrogator Gerstahn
-				crit(70643),	-- Bael'Gar
-				crit(70572),	-- Houndmaster Grebmar
-				crit(70644),	-- Lord Incendius
-				crit(70575),	-- Fineous Darkvire
-				crit(70576),	-- Phalanx
-				crit(70645),	-- Golem Lord Argelmach
-				crit(70578),	-- The Seven
-				crit(70646),	-- General Angerforge
-				crit(70647),	-- Ambassador Flamelash
-				crit(70581),	-- Pyromancer Loregrain
-				crit(70648),	-- Emperor Dagran Thaurissan
-			}),
 			ach(40661),		-- Zoomies!
 		}),
 		n(DUNGEONS_AND_RAIDS, {
 			-- INFO: It's here so the criteria can nest under him, as he's normally removed from game
 			n(639),	-- Edwin VanCleef <Defias Kingpin>
 
-			-- Seem you can get "Timewraped Relic Coffer Key" from all difficulties then you can trade for which ever loot you want. Not sure if loot will drop or this is the way loot will work //Braghe
-			n(223881),	-- Braggi Brazenbrass LFR Vendor
-			n(233209),	-- Kraegen Emberforge Normal Vendor
-			n(224322),	-- Hilda Hellforge Heroic Vendor
+
 			-- There is two raids Codex (Scenario?) and BRD
 		}),
 		n(QUESTS, {
@@ -2183,15 +2439,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["isDaily"] = true
 			}),
 
-			q(82817, {	-- Disturbance Detected: Blackrock Depths
-				["provider"] = { "n", 229775 },	-- Moira Thaurissan <Queen of the Dark Iron>
-				["coord"] = { 63.0, 49.7, TANARIS },
-				["isWeekly"] = true
-			}),
-			q(84735, {	-- Truth of the Dark Irons
-				["provider"] = { "n", 229775 },	-- Moira Thaurissan <Queen of the Dark Iron>
-				["coord"] = { 63.0, 49.7, TANARIS },
-			}),
+
 
 			q(82783, {	-- Chromie's Codex
 				["provider"] = { "n", 226368 },	-- Chromie
