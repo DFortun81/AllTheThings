@@ -1435,7 +1435,10 @@ root(ROOTS.Character, n(ALLIED_RACES, {
 			-- Zandalari Troll Starter Quests
 			q(55137, {	-- For the Horde
 				["provider"] = { "n", 146335 },	--  Queen Talanji
-				["coord"] = { 42.2, 9.4, DAZARALOR },
+				["coords"] = {
+					{ 42.2, 9.4, DAZARALOR },
+					{ 49.9, 46.6, DAZARALOR },
+				},
 				["races"] = { ZANDALARI },
 				["lvl"] = 20,
 				["g"] = {
