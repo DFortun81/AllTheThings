@@ -1,4 +1,3 @@
-do
 local _, app = ...
 local L = app.L
 
@@ -16,7 +15,8 @@ local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
 -- Flight Path Lib
 local localizedFlightPathNames;
 local KEY, CACHE = "flightpathID", "FlightPaths"
-app.CreateFlightPath = app.CreateClass("FlightPath", KEY, {
+local CLASSNAME = "FlightPath"
+app.CreateFlightPath = app.CreateClass(CLASSNAME, KEY, {
 	name = function(t)
 		return localizedFlightPathNames[t[KEY]] or L.VISIT_FLIGHT_MASTER
 	end,
@@ -115,7 +115,7 @@ end)
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
 	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
 	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
-	
+
 	-- Create the Localization table for Flight Paths.
 	localizedFlightPathNames = AllTheThingsAD.LocalizedFlightPathNames;
 	if not localizedFlightPathNames then
@@ -129,7 +129,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		end
 		AllTheThingsAD.LocalizedFlightPathNames = localizedFlightPathNames;
 	end
-	
+
 	-- Push the default flight path names to the index.
 	local flightPathNames = app.FlightPathNames
 	app.FlightPathNames = nil;
@@ -146,7 +146,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 					print("No taxi nodes found for map", mapID);
 				end
 			end
-			
+
 			-- Now that we've run this once, reassign the default names as the fallback.
 			if flightPathNames then
 				setmetatable(t, { __index = flightPathNames })
@@ -157,4 +157,4 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		end,
 	})
 end)
-end
+app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)

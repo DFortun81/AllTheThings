@@ -27,8 +27,9 @@ end
 app.GetArtifactModItemID = GetArtifactModItemID
 
 local KEY, CACHE, SETTING = "artifactID", "Artifacts", "Transmog"
+local CLASSNAME = "Artifact"
 -- Artifact Class
-app.CreateArtifact = app.CreateClass("Artifact", KEY, {
+app.CreateArtifact = app.CreateClass(CLASSNAME, KEY, {
 	artifactinfo = function(t)
 		--[[
 		local setID, appearanceID, appearanceName, displayIndex, appearanceUnlocked, unlockConditionText,
@@ -163,6 +164,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
 	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 end);
+app.AddSimpleCollectibleSwap(CLASSNAME, SETTING)
 
 -- External Functionality
 app.AddEventHandler("OnLoad", function()

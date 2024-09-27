@@ -31,9 +31,10 @@ end);
 -- Conduit Lib
 do
 	local KEY, CACHE = "conduitID", "Conduits"
+	local CLASSNAME = "Conduit"
 	if C_Soulbinds then
 		local C_Soulbinds_GetConduitCollectionData = C_Soulbinds.GetConduitCollectionData;
-		app.CreateConduit = app.ExtendClass("Item", "Conduit", KEY, {
+		app.CreateConduit = app.ExtendClass("Item", CLASSNAME, KEY, {
 			collectible = function(t) return app.Settings.Collectibles[CACHE]; end,
 			collectibleAsCost = app.ReturnFalse,
 			collected = function(t)
@@ -67,6 +68,7 @@ do
 			if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 		end);
 		-- No known 'on learned' Event
+		app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
 	else
 		app.CreateConduit = app.CreateUnimplementedClass("Conduit", KEY);
 	end
@@ -75,9 +77,10 @@ end
 -- Runeforge Legendary Lib
 do
 	local KEY, CACHE = "runeforgepowerID", "RuneforgeLegendaries"
+	local CLASSNAME = "RuneforgeLegendary"
 	if C_LegendaryCrafting then
 		local C_LegendaryCrafting_GetRuneforgePowerInfo = C_LegendaryCrafting.GetRuneforgePowerInfo;
-		app.CreateRuneforgeLegendary = app.ExtendClass("Item", "RuneforgeLegendary", KEY, {
+		app.CreateRuneforgeLegendary = app.ExtendClass("Item", CLASSNAME, KEY, {
 			collectible = function(t) return app.Settings.Collectibles[CACHE]; end,
 			collectibleAsCost = app.ReturnFalse,
 			collected = function(t) return app.IsAccountCached(CACHE, t[KEY]) and 1 end,
@@ -106,6 +109,7 @@ do
 			app.SetAccountCollected(app.SearchForObject(KEY, id, "field"), CACHE, id, true)
 			app.UpdateRawID(KEY, id)
 		end);
+		app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
 	else
 		app.CreateRuneforgeLegendary = app.CreateUnimplementedClass("RuneforgeLegendary", KEY);
 	end

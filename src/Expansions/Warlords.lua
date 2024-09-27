@@ -160,6 +160,7 @@ end
 -- Followers (Not Warlords exclusive, but the API originally was added with Warlords!)
 do
 	local KEY, CACHE = "followerID", "Followers"
+	local CLASSNAME = "Follower"
 	local C_Garrison_GetFollowerInfo, C_Garrison_GetFollowerLinkByID, C_Garrison_IsFollowerCollected
 		= C_Garrison.GetFollowerInfo, C_Garrison.GetFollowerLinkByID, C_Garrison.IsFollowerCollected;
 	local cache = app.CreateCache(KEY);
@@ -177,7 +178,7 @@ do
 		_t.link = C_Garrison_GetFollowerLinkByID(id);
 		if field then return _t[field]; end
 	end
-	app.CreateFollower = app.CreateClass("Follower", KEY, {
+	app.CreateFollower = app.CreateClass(CLASSNAME, KEY, {
 		name = function(t)
 			return cache.GetCachedField(t, "name", CacheInfo);
 		end,
@@ -233,6 +234,7 @@ do
 			if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
 			if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 		end);
+		app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
 	});
 end
 

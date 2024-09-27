@@ -9,6 +9,7 @@ end
 
 -- Azerite Essence Lib
 local KEY, CACHE, SETTING = "azeriteessenceID", "AzeriteEssenceRanks", "AzeriteEssences"
+local CLASSNAME = "AzeriteEssence"
 local C_AzeriteEssence_GetEssenceInfo, C_AzeriteEssence_GetEssenceHyperlink
 	= C_AzeriteEssence.GetEssenceInfo, C_AzeriteEssence.GetEssenceHyperlink;
 local AzeriteEssenceInfoCache = setmetatable({}, {
@@ -18,7 +19,7 @@ local AzeriteEssenceInfoCache = setmetatable({}, {
 		return info
 	end
 })
-app.CreateAzeriteEssence = app.CreateClass("AzeriteEssence", KEY, {
+app.CreateAzeriteEssence = app.CreateClass(CLASSNAME, KEY, {
 	info = function(t)
 		return AzeriteEssenceInfoCache[t[KEY]]
 	end,
@@ -75,6 +76,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
 	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
 end);
+app.AddSimpleCollectibleSwap(CLASSNAME, SETTING)
 
 -- Subroutines
 local select = select;

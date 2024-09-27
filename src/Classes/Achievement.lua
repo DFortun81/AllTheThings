@@ -56,6 +56,7 @@ end})
 -- Achievement Lib
 do
 	local KEY, CACHE = "achievementID", "Achievements"
+	local CLASSNAME = "Achievement"
 	local GetStatistic
 		= GetStatistic
 
@@ -106,7 +107,7 @@ do
 	-- 	AfterCombatOrDelayedCallback(OnUpdateWindows, 1)
 	-- end
 	-- app.AddEventRegistration("RECEIVED_ACHIEVEMENT_LIST", DelayedOnUpdateWindows);
-	app.CreateAchievement = app.CreateClass("Achievement", KEY, {
+	app.CreateAchievement = app.CreateClass(CLASSNAME, KEY, {
 		silentLink = function(t)
 			return cache.GetCachedField(t, "silentLink", CacheInfo);
 		end,
@@ -209,6 +210,7 @@ do
 			app.UpdateRawID(KEY, id);
 		end
 	end);
+	app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
 
 	-- Information Types
 	app.AddEventHandler("OnLoad", function()
@@ -441,6 +443,7 @@ do
 		t.isGuild = true;
 		return t;
 	end
+	app.AddSimpleCollectibleSwap("Criteria", "Achievements")
 end
 
 

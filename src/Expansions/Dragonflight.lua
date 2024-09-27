@@ -11,9 +11,11 @@ end
 -- Mount Mod Lib
 do
 	local CACHE = "MountMods"
-	app.CreateMountMod = app.ExtendClass("Item", "MountMod", "mountmodID", {
+	local CLASSNAME = "MountMod"
+	app.CreateMountMod = app.ExtendClass("Item", CLASSNAME, "mountmodID", {
 		collectible = function(t) return app.Settings.Collectibles[CACHE]; end,
 		collected = function(t) return app.IsAccountCached("Quests", t.questID) and 1 end,
 		itemID = function(t) return t.mountmodID; end,
 	});
+	app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
 end
