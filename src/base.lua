@@ -192,6 +192,42 @@ app.GetRelativeField = GetRelativeField;
 app.GetRawRelativeField = GetRawRelativeField
 app.GetRelativeValue = GetRelativeValue;
 
+local GetItemIcon = app.WOWAPI.GetItemIcon;
+local function GetIconFromProviders(group)
+	if group.providers then
+		local icon;
+		for k,v in ipairs(group.providers) do
+			if v[2] > 0 then
+				if v[1] == "o" then
+					icon = app.ObjectIcons[v[2]];
+				elseif v[1] == "i" then
+					icon = GetItemIcon(v[2]);
+				end
+				if icon then return icon; end
+			end
+		end
+	end
+end
+local function GetNameFromProviders(group)
+	if group.providers then
+		local name;
+		for k,v in ipairs(group.providers) do
+			if v[2] > 0 then
+				if v[1] == "o" then
+					name = app.ObjectNames[v[2]];
+				elseif v[1] == "i" then
+					name = GetItemInfo(v[2]);
+				elseif v[1] == "n" then
+					name = app.NPCNameFromID[v[2]];
+				end
+				if name then return name; end
+			end
+		end
+	end
+end
+app.GetIconFromProviders = GetIconFromProviders;
+app.GetNameFromProviders = GetNameFromProviders;
+
 -- Cache information about the player.
 app.Gender = UnitSex("player");
 app.GUID = UnitGUID("player");
@@ -582,7 +618,6 @@ hooksecurefunc("SetItemRef", function(link, text)
 end);
 
 -- Chat Links
-local math_floor = math.floor;
 function app:Linkify(text, color, operation)
 	-- Turns a bit of text into a colored link which ATT will attempt to understand
 	return "|Haddon:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
