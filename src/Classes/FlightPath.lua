@@ -65,6 +65,12 @@ local function CacheFlightPathDataForTarget(nodes)
 	end
 	return 0;
 end
+-- TODO: this is scary. literally any NPC interaction i do in the game ATT will check if there's FlightPaths on that NPC
+-- and then mark them completed based on arbitrary field data...
+-- really needs to be revised that only entering the specific mapID triggers the event registration, and then only the specific npcIDs with
+-- 'fake' flightpaths are accepted prior to running searches on that npcID
+-- something similar to the zone-art caching stuff perhaps to link which mapIDs contain 'fake' FPs, and likewise which NPCs
+-- or even have Parser capture this data for a separate DB container
 app.AddEventRegistration("GOSSIP_SHOW", function()
 	local knownNodeIDs = {};
 	if CacheFlightPathDataForTarget(knownNodeIDs) > 0 then
@@ -74,6 +80,7 @@ app.AddEventRegistration("GOSSIP_SHOW", function()
 				local searchResults = SearchForField(KEY, nodeID);
 				if searchResults and #searchResults > 0 then
 					app.SetCollected(searchResults[1], CACHE, nodeID, true);
+					-- TODO: remove once SetCollected handles UpdateRawID
 					if not newFPs then newFPs = { nodeID }
 					else newFPs[#newFPs + 1] = nodeID end
 				end
@@ -100,6 +107,7 @@ app.AddEventRegistration("TAXIMAP_OPENED", function()
 			if nodeData.state and nodeData.state < 2 then
 				if not app.IsCached(CACHE, nodeID) then
 					app.SetCollected(fp, CACHE, nodeID, true)
+					-- TODO: remove once SetCollected handles UpdateRawID
 					if not newFPs then newFPs = { nodeID }
 					else newFPs[#newFPs + 1] = nodeID end
 				end
