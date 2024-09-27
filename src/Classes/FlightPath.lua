@@ -113,7 +113,7 @@ app.AddEventRegistration("TAXIMAP_OPENED", function()
 				end
 			end
 			if app.Contributor and (not fp or not app.Modules.Filter.Filters.InGame(fp)) then
-				app.print("FlightPath",nodeData.name,"#",nodeID,"is available on the Map but is not found in game for ATT!")
+				app.print("FlightPath",nodeData.name,"#",nodeID,"is available on the Map",mapID,app.GetMapName(mapID) or UNKNOWN,"but is not found in game for ATT!")
 				app.Audio:PlayReportSound();
 			end
 		end
