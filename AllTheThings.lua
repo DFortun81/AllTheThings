@@ -73,25 +73,6 @@ local ATTAccountWideData;
 local GetProgressColor = app.Modules.Color.GetProgressColor;
 local Colorize = app.Modules.Color.Colorize;
 
--- Print/Debug/Testing Functions
-app.PrintGroup = function(group,depth)
-	depth = depth or 0;
-	if group then
-		local p = "";
-		for i=0,depth,1 do
-			p = p .. "-";
-		end
-		p = p .. tostring(group.key or group.text) .. ":" .. tostring(group[group.key or "NIL"]);
-		print(p);
-		if group.g then
-			for i,sg in ipairs(group.g) do
-				app.PrintGroup(sg,depth + 1);
-			end
-		end
-	end
-	print("---")
-end
-
 -- Coroutine Helper Functions
 local Push = app.Push;
 local StartCoroutine = app.StartCoroutine;
