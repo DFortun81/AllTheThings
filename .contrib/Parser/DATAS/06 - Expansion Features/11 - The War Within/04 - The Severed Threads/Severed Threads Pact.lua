@@ -625,22 +625,25 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			n(VENDORS, {
 				n(228184, {	-- Yamas the Provider <Pact Information & Supplies>
 					["coord"] = { 55.4, 41.8, AZJ_KAHET },
+					["sym"] = {{"select","itemID",
+						228944,	-- Crypt Lord's Severed Thread
+						228945,	-- Executor's Severed Thread
+						226509,	-- General's Insight
+						223278,	-- Heritage Undercrawler (MOUNT!)
+						226518,	-- Phero-Escape
+						223279,	-- Royal Court Undercrawler (MOUNT!)
+						228943,	-- Spymaster's Severed Thread
+						226512,	-- Treasure Map: Forgotten Memorial
+						226513,	-- Treasure Map: Kaheti Excavation
+						226514,	-- Treasure Map: Weave-Rat Cache
+						226507,	-- Venom Dahn's Webscrub
+						226508,	-- Vizier's Influence
+						226510,	-- Weaver's Facade
+						223276,	-- Widow's Undercrawler (MOUNT!)
+					}},
 					["g"] = {
-						i(228944, {	-- Crypt Lord's Severed Thread
-							["cost"] = {{"c", KEJ, 250}},
-						}),
-						i(228945, {	-- Executor's Severed Thread
-							["cost"] = {{"c", KEJ, 250}},
-						}),
 						i(226519, {	-- General's Expertise (TOY!)
 							["cost"] = {{"c", KEJ, 1100}},
-						}),
-						i(226509, {	-- General's Insight
-							["cost"] = {{"c", KEJ, 50}},
-						}),
-						i(223278, {	-- Heritage Undercrawler (MOUNT!)
-							["minReputation"] = { FACTION_THE_GENERAL, 8 },
-							["cost"] = {{"c", KEJ, 2020}},
 						}),
 						i(226511, {	-- Nerubimorph Poultice
 							["cost"] = {{"c", KEJ, 25}},
@@ -648,16 +651,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(228940, {	-- Notorious Thread's Hearthstone
 							["cost"] = {{"c", KEJ, 3000}},
 						}),
-						i(226518, {	-- Phero-Escape
-							["cost"] = {{"c", KEJ, 25}},
-						}),
 						i(226520, {	-- Queen's Pheromone (CI!)
 						-- The price is a Meme done by blizzard.
 						--	["cost"] = {{"c", KEJ, 8888888}},
-						}),
-						i(223279, {	-- Royal Court Undercrawler (MOUNT!)
-							["minReputation"] = { FACTION_THE_VIZIER, 8 },
-							["cost"] = {{"c", KEJ, 2020}},
 						}),
 						i(228949, {	-- Rumor Map
 							["cost"] = {{"c", KEJ, 25}},
@@ -665,36 +661,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(228950, {	-- Rumor Map Bundle
 							["cost"] = {{"c", KEJ, 125}},
 						}),
-						i(228943, {	-- Spymaster's Severed Thread (CI!)
-							["cost"] = {{"c", KEJ, 250}},
-						}),
-						i(226512, {	-- Treasure Map: Forgotten Memorial
-							["cost"] = {{"c", KEJ, 25}},
-						}),
-						i(226513, {	-- Treasure Map: Kaheti Excavation
-							["cost"] = {{"c", KEJ, 25}},
-						}),
-						i(226514, {	-- Treasure Map: Weave-Rat Cache
-							["cost"] = {{"c", KEJ, 25}},
-						}),
 						i(228952, {	-- Treasure Map Bundle
 							["cost"] = {{"c", KEJ, 125}},
 						}),
-						i(226507, {	-- Venom Dahn's Webscrub
-							["cost"] = {{"c", KEJ, 25}},
-						}),
-						i(226508, {	-- Vizier's Influence
-							["cost"] = {{"c", KEJ, 50}},
-						}),
-						i(226510, {	-- Weaver's Facade
-							["cost"] = {{"c", KEJ, 50}},
-						}),
 						i(228946, {	-- Weaver's Lair Profession Table (CI!)
 							["cost"] = {{"c", KEJ, 500}},
-						}),
-						i(223276, {	-- Widow's Undercrawler (MOUNT!)
-							["minReputation"] = { FACTION_THE_WEAVER, 8 },
-							["cost"] = {{"c", KEJ, 2020}},
 						}),
 					},
 				}),

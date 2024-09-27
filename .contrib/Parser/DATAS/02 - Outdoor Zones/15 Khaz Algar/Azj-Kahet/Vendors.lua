@@ -49,15 +49,38 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 55.9, 42.1, AZJ_KAHET },
 				["sourceQuests"] = { 78256 },	-- The General Consensus
 				["sym"] = {{"select","itemID",
-					228944,	-- Crypt Lord's Severed Thread
 					226519,	-- General's Expertise (TOY!)
-					226509,	-- General's Insight
-					223278,	-- Heritage Undercrawler (MOUNT!)
 					228949,	-- Rumor Map
 					228950,	-- Rumor Map Bundle
 					228952,	-- Treasure Map Bundle
-					226507,	-- Venom Dahn's Webscrub
 				}},
+				["g"] = bubbleDownRep(FACTION_THE_GENERAL, {
+					{		-- Stranger
+					}, {	-- Acquaintance
+					}, {	-- Crony
+						i(226512, {	-- Treasure Map: Forgotten Memorial
+							["cost"] = {{"c", KEJ, 25}},
+						}),
+						i(226507, {	-- Venom Dahn's Webscrub
+							["cost"] = {{"c", KEJ, 25}},
+						}),
+					}, {	-- Accomplice
+						i(226509, {	-- General's Insight
+							["cost"] = {{"c", KEJ, 50}},
+						}),
+					}, {	-- Collaborator
+					}, {	-- Accessory
+					}, {	-- Abettor
+					}, {	-- Conspirator
+						i(223278, {	-- Heritage Undercrawler (MOUNT!)
+							["cost"] = {{"c", KEJ, 2020}},
+						}),
+					}, {	-- Mastermind
+						i(228944, {	-- Crypt Lord's Severed Thread (CI!)
+							["cost"] = {{"c", KEJ, 250}},
+						}),
+					},
+				}),
 			}),
 			n(226211, {	-- Ax'ill <Alchemixologist>
 				--["coord"] = { 47.8, 18.7, NERUBAR },
@@ -72,12 +95,33 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["sym"] = {{"select","itemID",
 					226511,	-- Nerubimorph Poultice
 					228949,	-- Rumor Map
-					228950,	-- Rumor Map
-					228943,	-- Spymaster's Severed Thread
+					228950,	-- Rumor Map Bundle
 					228952,	-- Treasure Map Bundle
-					226510,	-- Weaver's Facade
-					223276,	-- Widow's Undercrawler (MOUNT!)
 				}},
+				["g"] = bubbleDownRep(FACTION_THE_WEAVER, {
+					{		-- Stranger
+					}, {	-- Acquaintance
+					}, {	-- Crony
+						i(226514, {	-- Treasure Map: Weave-Rat Cache
+							["cost"] = {{"c", KEJ, 25}},
+						}),
+					}, {	-- Accomplice
+						i(226510, {	-- Weaver's Facade
+							["cost"] = {{"c", KEJ, 50}},
+						}),
+					}, {	-- Collaborator
+					}, {	-- Accessory
+					}, {	-- Abettor
+					}, {	-- Conspirator
+						i(223276, {	-- Widow's Undercrawler (MOUNT!)
+							["cost"] = {{"c", KEJ, 2020}},
+						}),
+					}, {	-- Mastermind
+						i(228943, {	-- Spymaster's Severed Thread (CI!)
+							["cost"] = {{"c", KEJ, 250}},
+						}),
+					},
+				}),
 			}),
 			n(218224, {	-- "Calmest" Gobbu <Pots, Urns, and Armamnets>
 				["coord"] = { 46.6, 29.2, NERUBAR },
@@ -353,15 +397,38 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 45.0, 16.7, AZJ_KAHET },
 				["sourceQuests"] = { 78248 },	-- What We Still Have
 				["sym"] = {{"select","itemID",
-					228945,	-- Executor's Severed Thread
 					226511,	-- Nerubimorph Poultice
-					226518,	-- Phero-Escape
-					223279,	-- Royal Court Undercrawler (MOUNT!)
 					228949,	-- Rumor Map
 					228950,	-- Rumor Map Bundle
 					228952,	-- Treasure Map Bundle
-					226508,	-- Vizier's Influence
 				}},
+				["g"] = bubbleDownRep(FACTION_THE_VIZIER, {
+					{		-- Stranger
+					}, {	-- Acquaintance
+					}, {	-- Crony
+						i(226518, {	-- Phero-Escape
+							["cost"] = {{"c", KEJ, 25}},
+						}),
+						i(226513, {	-- Treasure Map: Kaheti Excavation
+							["cost"] = {{"c", KEJ, 25}},
+						}),
+					}, {	-- Accomplice
+						i(226508, {	-- Vizier's Influence
+							["cost"] = {{"c", KEJ, 50}},
+						}),
+					}, {	-- Collaborator
+					}, {	-- Accessory
+					}, {	-- Abettor
+					}, {	-- Conspirator
+						i(223279, {	-- Royal Court Undercrawler (MOUNT!)
+							["cost"] = {{"c", KEJ, 2020}},
+						}),
+					}, {	-- Mastermind
+						i(228945, {	-- Executor's Severed Thread (CI!)
+							["cost"] = {{"c", KEJ, 250}},
+						}),
+					},
+				}),
 			}),
 			n(218209, {	-- Tyro Uwe <Custom Twitchery Goods>
 				["coord"] = { 45.0, 16.7, AZJ_KAHET },

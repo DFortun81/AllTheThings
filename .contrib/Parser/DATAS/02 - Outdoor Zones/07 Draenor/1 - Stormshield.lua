@@ -2220,44 +2220,7 @@ root(ROOTS.Zones, {
 						}),
 						n(88482, {	-- Gazrix Gearlock <Steamwheedle "Preservation" Society Quartermaster>
 							["coord"] = { 43.1, 77.7, STORMSHIELD },
-							["g"] = bubbleDownClassicRep(FACTION_STEAMWHEEDLE_PRESERVATION_SOCIETY, {
-								{		-- Neutral
-								}, {	-- Friendly
-									i(118667),	-- Steamwheedle Elixir
-								}, {	-- Honored
-									i(110426),	-- Goblin Hot Potato
-									i(118683, {	-- Portable Goon Squad
-										["cost"] = 5000000,	-- 500g
-									}),
-								}, {	-- Revered
-									i(119165, {	-- Contract: Professor Felblast
-										["cost"] = 50000000,	-- 5,000g
-										["g"] = {
-											follower(460),	-- Professor Felblast
-										},
-									}),
-									i(119149, {	-- Forest Sproutling (PET!)
-										["cost"] = {
-											{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
-											{ "g", 10000000 },	-- 1,000g
-										},
-									}),
-									i(119148, {	-- Indentured Albino River Calf (PET!)
-										["cost"] = {
-											{ "c", 823, 2000 },	-- 2,000x Apexis Crystal
-											{ "g", 10000000 },	-- 1,000g
-										},
-									}),
-								}, {	-- Exalted
-									i(116672, {	-- Domesticated Razorback (MOUNT!)
-										["cost"] = {
-											{ "c", 823, 5000 },	-- 5,000x Apexis Crystal
-											{ "g", 50000000 },	-- 5,000g
-										},
-									}),
-									i(119137),	-- Steamwheedle "Preservation" Society Tabard
-								},
-							}),
+							["sym"] = {{"sub","common_vendor",87394}},	-- Kwilax Fuseshiv <Reputation Vendor>
 						}),
 						n(87365, {  -- Grakis <Archaeology Fragments>
 							["coord"] = { 48.6, 33.5, STORMSHIELD },
