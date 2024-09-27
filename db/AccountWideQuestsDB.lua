@@ -1371,6 +1371,7 @@ select(2, ...).AccountWideQuestsDB = {
 	[82676] = true,	-- Broken Masquerade
 	[82689] = true,	-- Only Darkness
 	[82809] = true,
+	[83272] = true,	-- Nightfarm Growthling
 	[83329] = true,
 	[83330] = true,
 	[83492] = true,

@@ -387,6 +387,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["description"] = "Pull many Shadowroot Vines until eventually the Rare is spawned.",
 						["coord"] = { 61.8, 32.5, HALLOWFALL },
 						["questID"] = 82563,
+						["provider"] = { "i", 206670 },	-- Darkroot Grips
 						["crs"] = {
 							206870,	-- Shadowrooted Vine
 							206978,	-- Disturbed Dirt
@@ -546,15 +547,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(212339),	-- A Small Bag of Seeds
 						},
 					}),
-					o(434502, {	-- Anglers Supply Box
-						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
-						["coord"] = { 66.4, 23.0, HALLOWFALL },
-						["questID"] = 80541,
-						["isWeekly"] = true,
-						["g"] = {
-							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
-						},
-					}),
 					o(428472, {	-- Captain Lancekat's Discretionary Funds
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 66.56, 15.14, HALLOWFALL },
@@ -563,6 +555,124 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["g"] = {
 							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
 							i(224466),	-- Wilber The Chicken (QS!)
+						},
+					}),
+					o(419714, {	-- Expedition Pack
+						["coord"] = { 61.1, 9.6, HALLOWFALL },
+						["g"] = {
+							i(212333),	-- Expedition Tinderbox (QS!/QI!)
+						},
+					}),
+					o(423959, {	-- Faded Supply Chest
+						["description"] = "The key drops rarely from Drowned Arathi nearby.",
+						["coord"] = { 61.8, 17.5, HALLOWFALL },
+						["questID"] = 79964,
+						["cost"] = { { "i", 216528, 1 }, },	-- 1x Faded Supply Chest Key
+					}),
+					o(441723, {	-- Farm Satchel
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+						["coords"] = {
+							{ 64.36, 26.03, HALLOWFALL },
+							{ 64.9, 25.6, HALLOWFALL },
+						},
+						["questID"] = 81988,
+						["g"] = {
+							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
+							i(224466),	-- Wilber The Chicken (QS!)
+						},
+					}),
+					o(435008, {	-- Farmhand Stash
+						["description"] = "Requires weekly quest with controlling Harvestbot Remy to spawn.",
+						["coord"] = { 61.6, 32.6, HALLOWFALL },
+						["questID"] = 80590,
+						["g"] = {
+							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
+						},
+					}),
+					o(457246, {	-- Fieldhand Stash
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+						["coord"] = { 64.5, 28.8, HALLOWFALL },
+						["questID"] = 84337,
+						["g"] = {
+							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
+						},
+					}),
+					o(441795, {	-- Hallowfall Sparkfly
+						["description"] = "Requires level 80. Use a light source item then walk along the river near Stillstone Pond. With time Sparkbugs will appear next to you and randomly may be interactable, granting the pet.",
+						["coord"] = { 66.8, 25.3, HALLOWFALL },
+						["provider"] = {"i", 218107},	-- Sparkbug Jar
+						["g"] = {
+							i(220771),	-- Hallowed Glowfly (PET!)
+						},
+					}),
+					o(452005, {	-- Lil Piggy
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure somewhere in The Whirring Field.",
+						["coords"] = {
+							{ 64.7, 26.5, HALLOWFALL },
+							{ 64.8, 27.3, HALLOWFALL },
+						},
+						["g"] = {
+							i(224457),	-- Lil Piggy (QS!/QI!)
+						},
+					}),
+					o(451993, {	-- Nerubian Device
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure in any area of farmland.",
+						["coord"] = { 62.3, 31.7, HALLOWFALL },
+						["g"] = {
+							i(224548),	-- Nerubian Device (QS!)
+						},
+					}),
+					o(453186, {	-- Nightfarm Growthling
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure in any area of farmland.",
+						["coord"] = { 61.3, 31.8, HALLOWFALL },
+						["questID"] = 83272,
+						["g"] = {
+							i(221546),	-- Nightfarm Growthling (PET!)
+						},
+					}),
+					o(457251, {	-- Old Rotting Crate
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+						["coord"] = { 64.5, 31.6, HALLOWFALL },
+						["questID"] = 84339,
+						["g"] = {
+							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
+						},
+					}),
+					n(206870, {	-- Shadowrooted Vine
+						["provider"] = { "i", 206670 },	-- Darkroot Grips
+						["g"] = {
+							-- confirmed for this ID
+							i(211861),	-- Umbral Eggplant
+							-- probable drops for this ID
+							i(224462),	-- The Ear
+							i(224465),	-- Unusual Potato
+						},
+					}),
+					n(207092, {	-- Shadowrooted Vine
+						["provider"] = { "i", 206670 },	-- Darkroot Grips
+						-- any specific drops for this ID??
+					}),
+					n(225986, {	-- Shadowrooted Vine
+						["provider"] = { "i", 206670 },	-- Darkroot Grips
+						["g"] = {
+							-- confirmed x2
+							i(221819, {	-- Shadowbog Hopper (PET!)
+								["description"] = "Seems to only come from vines in Stillstone Pond",
+							}),
+						},
+					}),
+				}),
+				-- Weekly Treasures
+				n(TREASURES, sharedData({
+					["isWeekly"] = true,
+				},{
+					o(434502, {	-- Anglers Supply Box
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+						["coord"] = { 66.4, 23.0, HALLOWFALL },
+						["questID"] = 80541,
+						["isWeekly"] = true,
+						["g"] = {
+							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
 						},
 					}),
 					o(437112, {	-- Clammer's Kit
@@ -592,43 +702,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(224466),	-- Wilber The Chicken (QS!)
 						},
 					}),
-					o(419714, {	-- Expedition Pack
-						["coord"] = { 61.1, 9.6, HALLOWFALL },
-						["g"] = {
-							i(212333),	-- Expedition Tinderbox (QS!/QI!)
-						},
-					}),
-					o(423959, {	-- Faded Supply Chest
-						["description"] = "The key drops rarely from Drowned Arathi nearby.",
-						["coord"] = { 61.8, 17.5, HALLOWFALL },
-						["questID"] = 79964,
-						["cost"] = { { "i", 216528, 1 }, },	-- 1x Faded Supply Chest Key
-					}),
-					o(441723, {	-- Farm Satchel
-						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
-						["coord"] = { 64.36, 26.03, HALLOWFALL },
-						["questID"] = 81988,
-						["g"] = {
-							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
-							i(224466),	-- Wilber The Chicken (QS!)
-						},
-					}),
-					o(435008, {	-- Farmhand Stash
-						["description"] = "Requires weekly quest with controlling Harvestbot Remy to spawn.",
-						["coord"] = { 61.6, 32.6, HALLOWFALL },
-						["questID"] = 80590,
-						["g"] = {
-							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
-						},
-					}),
-					o(457246, {	-- Fieldhand Stash
-						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
-						["coord"] = { 64.5, 28.8, HALLOWFALL },
-						["questID"] = 84337,
-						["g"] = {
-							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
-						},
-					}),
 					o(437302, {	-- Fisherman's Pouch
 						["coord"] = { 56.1, 14.6, HALLOWFALL },
 						["questID"] = 81518,
@@ -639,14 +712,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 63.2, 29.5, HALLOWFALL },
 						["questID"] = 79191,
 						["isWeekly"] = true,
-					}),
-					o(441795, {	-- Hallowfall Sparkfly
-						["description"] = "Requires level 80. Use a light source item then walk along the river near Stillstone Pond. With time Sparkbugs will appear next to you and randomly may be interactable, granting the pet.",
-						["coord"] = { 66.8, 25.3, HALLOWFALL },
-						["provider"] = {"i", 218107},	-- Sparkbug Jar
-						["g"] = {
-							i(220771),	-- Hallowed Glowfly (PET!)
-						},
 					}),
 					o(451967, {	-- Hillhelm Lunchbox
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
@@ -661,17 +726,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 65.6, 29.4, HALLOWFALL },
 						["questID"] = 80420,
-						["isWeekly"] = true,
 						["g"] = {
 							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
-						},
-					}),
-					o(452005, {	-- Lil Piggy
-						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure somewhere in The Whirring Field.",
-						["coord"] = { 64.7, 26.5, HALLOWFALL },
-						--["questID"] = ,
-						["g"] = {
-							i(224457),	-- Lil Piggy (QS!/QI!)
 						},
 					}),
 					o(457260, {	-- Misplaced Supplies
@@ -684,49 +740,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(224460),	-- The Lost Diary (QS!)
 						},
 					}),
-					o(451993, {	-- Nerubian Device
-						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure in any area of farmland.",
-						["coord"] = { 62.3, 31.7, HALLOWFALL },
-						["g"] = {
-							i(224548),	-- Nerubian Device (QS!)
-						},
-					}),
-					o(453186, {	-- Nightfarm Growthling
-						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure in any area of farmland.",
-						["coord"] = { 61.3, 31.8, HALLOWFALL },
-						["questID"] = 83272,
-						["g"] = {
-							i(221546),	-- Nightfarm Growthling (PET!)
-						},
-					}),
-					o(457251, {	-- Old Rotting Crate
-						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
-						["coord"] = { 64.5, 31.6, HALLOWFALL },
-						["questID"] = 84339,
-						["g"] = {
-							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
-						},
-					}),
-					n(206870, {	-- Shadowrooted Vine
-						["provider"] = { "i", 206670 },	-- Darkroot Grips
-						["g"] = {
-							i(224462),	-- The Ear
-							i(211861),	-- Umbral Eggplant
-							i(224465),	-- Unusual Potato
-							i(221819, {	-- Shadowbog Hopper (PET!)
-								["description"] = "Seems to only come from vines in Stillstone Pond",
-							}),
-						},
-					}),
 					o(457270, {	-- Surveyor's Box
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 63.8, 26.8, HALLOWFALL },
 						["questID"] = 84341,
 						["g"] = {
 							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
+							i(224460),	-- The Lost Diary (QS!)
 						},
 					}),
-				}),
+				})),
 				-- Daily Treasures
 				n(TREASURES, sharedData({
 					["isDaily"] = true,
