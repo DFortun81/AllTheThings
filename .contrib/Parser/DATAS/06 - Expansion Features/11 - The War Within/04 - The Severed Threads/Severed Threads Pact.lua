@@ -305,7 +305,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81496, {	-- Requisitions: Fangpetals
 					["sourceQuest"] = 82640,
 					["provider"] = { "n", 224179 },	-- Ghos'opp
-					["coord"] = { 49.2, 51.6, NERUBAR },
+					["coord"] = { 49.2, 51.8, NERUBAR },
 					["g"] = {
 						o(437769, {	-- Fragrant Fangpetal
 							i(219226),	-- Fragrant Fangpetal (QI!)
@@ -364,7 +364,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81480, {	-- Wild Reagents: Maddening Deep
 					["sourceQuest"] = 82616,
 					["provider"] = { "n", 224180 },	-- Ghos'opp
-					["coord"] = { 48.4, 61.9, AZJ_KAHET },
+					["coord"] = { 65.1, 78.8, AZJ_KAHET },
 					["g"] = {
 						i(219228),	-- Fetid Slime Sac (QI!)
 					},
@@ -775,22 +775,25 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			-- 3 different rumors from all 3 'Agents' can trigger a same HQT
 			-- Observation: QuestIDs of the rumors are the same as the above 'Push Quests' however, you don't get the quests until you talk to the NPC that gives you the rumor	//Exodius (23-09-24)
 			q(82581, {	-- Ru'murh (n: 224199 @ 45.6, 51.0), starts questID 81483 (Infiltration: Production Blocker), (23-09-24, Exo)
+					-- Ghos'opp (n: 224183 @ 64.5, 87.3), starts questID 81481 (Sabotage: Transformatory Vessels), (27-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82640, {	-- Ru'murh  (n: 224190 @ 41.5, 22.4), starts questID 81555 (Wet Work: Tithe to Kill), (23-09-24, Exo)
-						-- Ghos'opp (n: 224186 @ 54.5, 15.5), starts questID 81506 (Sabotage: Alchemical Instruments), (23-09-24, Exo)
+					-- Ghos'opp (n: 224186 @ 54.5, 15.5), starts questID 81506 (Sabotage: Alchemical Instruments), (27-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
-			q(82642, {	-- Eirzay   (n: 224161 @ 43.0, 47.2), starts questID 81475 (Breaking the Phalanx: Royal Appointments), (23-09-24, Exo)
+			q(82642, {	-- Eirzay   (n: 224161 @ 43.0, 47.2), starts questID 81475 (Breaking the Phalanx: Royal Appointments), (27-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82644, {	-- Ru'murh  (n: 224197 @ 55.7, 47.8), starts questID 81472 (Information Control: Ansurek's Truth), (23-09-24, Exo)
+					-- Ghos'opp (n: 224179 @ 49.2, 51.8), starts questID 81496 (Requisitions: Fangpetals), (27-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82646, {	-- Eirzay   (n: 224172 @ 54.5, 63.6), starts questID 81492 (Armaments: Smithing Tools), (23-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82648, {	-- Ru'murh (n: 224200 @ 64.2, 75.3), starts questID 81503 (Infiltration: Terror Made Manifest), (23-09-24, Exo)
+					-- Ghos'opp (n: 224180 @ 65.1, 78.8), starts questID 81480 (Wild Reagents: Maddening Deep), (27-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224191 @ 68.5, 51.1), start questID 81484 (Wet Work: Death of a Salesman)
@@ -803,11 +806,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			--q(82647),	-- 'Listen to the rumor' from Eirzay (n: 224173 @ 39.5, 53.0), start questID 81478 (Relics of War: The Ruptired Lake)
 			q(79698),	-- after turn in questID 79627 (Wine and Die)
 			--q(82643),	-- 'Investiage the scene' from Ru'murh (n: 224195 @ 73.3, 50.9, 2213), start questID 81471 (Dropping Eaves: Saving the Past)
-			--q(82645),	-- 'Consider the missive' from Ru'murh (n: 224197 @ 39.8, 26.6, 2213), start questID 81472 (Information Control: Ansurek's Truth)
-			--q(82647),	-- 'Consider the missive' from Ru'murh (n: 224199 @ 45.6, 51.0, 2216), start questID 81483 (Infiltration: Production Blocker)
 			--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224201 @ 76.2, 47.4), start questID 81504 (Infiltration: Hidden Figures)
 			-- Missing 5 more quest data/givers
-			--q(82616),	-- 'Gather some reagent' from Ghos-opp (n: 224180 @ 48.4, 61.9), start questID 81480 (Wild Reagents: Maddening Deep)
+			--q(82616),	-- 'Gather some reagent' from Ghos-opp (n: 224180 @ 48.4, 61.9), start questID ()
 			-- Missing 11 total quest data/givers, 81505 81498 81497 81502 81482 (and 5 more)
 
 			-- q(80688), -- triggered after completing task for a 'Rumor' (re-capture and narrow down)

@@ -292,6 +292,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				------ Stay awhile and listen ------
 				hqt(82541, {	-- Stay awhile and listen: Merrix <Councilward>
 					["name"] = "Stay awhile and listen: Merrix <Councilward>",
+					["description"] = "Dialogue becomes available after completing 'Titanic Failsafe' (79157).",
 					["sourceQuests"] = { 79157 },	-- Titanic Failsafe
 					["provider"] = { "n", 214916 },	-- Merrix <Councilward>
 					["coord"] = { 31.8, 61.0, DORNOGAL },
@@ -359,7 +360,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 						79243,	-- Manufactured Mutiny
 					},
 					["provider"] = { "n", 215625 },	-- Lilian Voss
-					["coord"] = { 56.3, 48.5, AZJ_KAHET },
+					["coord"] = { 55.7, 44.1, AZJ_KAHET },
 					["g"] = {
 						i(223437),	-- Handwraps of the Weaver
 						i(223466),	-- Mantle of the Weaver
@@ -513,15 +514,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 				------ Stay awhile and listen ------
 				hqt(84139, {	-- Stay awhile and listen: Anduin Wrynn
 					["name"] = "Stay awhile and listen: Anduin Wrynn",
+					["description"] = "Dialogue becomes available after completing 'Return to Dornogal' (83503).",
 					["sourceQuests"] = { 83503 },	-- Return to Dornogal
 					["provider"] = { "n", 225897 },	-- Anduin Wrynn
-					["coord"] = { 25.3, 66.0, DORNOGAL },
+					["coord"] = { 25.4, 66.2, DORNOGAL },
 				}),
 				hqt(84754, {	-- Stay awhile and listen: Alleria Windrunner
 					["name"] = "Stay awhile and listen: Alleria Windrunner",
+					["description"] = "Dialogue becomes available after completing 'Return to Dornogal' (83503).",
 					["sourceQuests"] = { 83503 },	-- Return to Dornogal
 					["provider"] = { "n", 227758 },	-- Alleria Windrunner
-					["coord"] = { 42.3, 26.9, DORNOGAL },
+					["coord"] = { 42.4, 26.9, DORNOGAL },
 				}),
 			}),
 		}),
