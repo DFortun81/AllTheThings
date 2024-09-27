@@ -1006,9 +1006,6 @@ root(ROOTS.Unsorted, {
 			i(232493),	-- Restored Coffer Key
 			i(232494),	-- Restored Coffer Key
 			i(232495),	-- Restored Coffer Key
-			i(232496),	-- Restored Coffer Key
-			i(232497),	-- Restored Coffer Key
-			i(232498),	-- Restored Coffer Key
 		})),
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			n(ARMOR, {

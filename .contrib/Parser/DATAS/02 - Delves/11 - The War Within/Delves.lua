@@ -1745,21 +1745,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		n(208070, {	-- Sir Finley Mrgglton <Delve Treasures>
 			["coord"] = { 47.6, 43.6, DORNOGAL },
 			["g"] = {
-				i(226258, {	-- Delver's Pouch of Reagents
-					["cost"] = {{"c", UNDERCOIN, 1500}},
-				}),
-				i(226259, {	-- Delver's Pouch of Resonance Crystals
-					["cost"] = {{"c", UNDERCOIN, 2000}},
-					["description"] = "Contains 250 Resonance Crystals.",
-					-- Listening 500+ Items is excessive bloat, especially since you get around 150 Undercoins per Delve
-					-- Even if you have all items, which takes ages, its probably better to keep them for future Delve Seasons -Goldenshacal 24th Sep 2024
-					--["g"] = {
-					--	currency(RESONANCE_CRYSTALS),
-					--},
-				}),
-				i(224172, {	-- Restored Coffer Key
-					["cost"] = {{"c", UNDERCOIN, 1000}},
-				}),
 				n(DELVERS_DIRIGIBLE_SCHEMATIC, {
 					i(224771, {	-- Delver's Dirigible Schematic: Empennage (MM!)
 						["cost"] = {{"c", UNDERCOIN, 1000}},
@@ -1777,6 +1762,32 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 				filter(BATTLE_PETS, {
 					i(222974, {	-- Sir Shady Mrrgglton Junior (PET!)
 						["cost"] = {{"c", UNDERCOIN, 10000}},
+					}),
+				}),
+				filter(MISC, {
+					i(226258, {	-- Delver's Pouch of Reagents
+						["cost"] = {{"c", UNDERCOIN, 1500}},
+					}),
+					i(226259, {	-- Delver's Pouch of Resonance Crystals
+						["cost"] = {{"c", UNDERCOIN, 2000}},
+						["description"] = "Contains 250 Resonance Crystals.",
+						-- Listening 500+ Items is excessive bloat, especially since you get around 150 Undercoins per Delve
+						-- Even if you have all items, which takes ages, its probably better to keep them for future Delve Seasons -Goldenshacal 24th Sep 2024
+						--["g"] = {
+						--	currency(RESONANCE_CRYSTALS),
+						--},
+					}),
+					i(224172, {	-- Restored Coffer Key
+						["cost"] = {{"c", UNDERCOIN, 1000}},
+					}),
+					i(232496, {	-- Restored Coffer Key
+						["cost"] = {{"c", UNDERCOIN, 2000}},
+					}),
+					i(232497, {	-- Restored Coffer Key
+						["cost"] = {{"c", UNDERCOIN, 2000}},
+					}),
+					i(232498, {	-- Restored Coffer Key
+						["cost"] = {{"c", UNDERCOIN, 2000}},
 					}),
 				}),
 				filter(TOYS, {
