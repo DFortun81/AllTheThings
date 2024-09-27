@@ -3244,15 +3244,22 @@ local function SkipFillingGroup(group, FillData)
 	if included[groupHash] then return true; end
 
 	-- do not fill 'saved' groups in ATT tooltips
-	-- or groups directly under saved groups unless in Acct or Debug mode
-	if not app.MODE_DEBUG_OR_ACCOUNT then
-		-- TODO: properly account for account-wide quests
+	-- or groups directly under saved groups unless in Debug mode
+	if not app.MODE_DEBUG then
 		-- only ignored filling saved 'quest' groups (unless it's an Item, which we ignore the ignore... :D)
-		if group.saved and group.questID and not group.itemID then return true; end
+		if group.questID then
+			if not group.itemID and group.saved then
+				return true
+			end
+			-- don't fill under locked quests
+			if group.locked then
+				return true
+			end
+		end
 		-- root fills of a thing from a saved parent should still show their contains, so don't use .parent
 		local parent = rawget(group, "parent");
 		-- direct parent is a saved quest, then do not fill with stuff
-		if parent and parent.questID and parent.saved then return true; end
+		if parent and parent.questID and (parent.saved or parent.locked) then return true; end
 	end
 end
 local function FillGroupDirect(group, FillData, doDGU)
