@@ -34,7 +34,7 @@ local L = setmetatable({
 	COLLECTION_PROGRESS = "Collection Progress";
 
 	-- Settings
-	DATA_TYPE_NOT_SUPPORTED = "This data type is not supported at this time.",
+	DATA_TYPE_NOT_SUPPORTED = "This data type is not supported at this time.";
 	OPEN_MINILIST_FOR = "Open mini list for ";
 	REFRESHING_COLLECTION = "Refreshing collection...";
 	DONE_REFRESHING = "Done refreshing collection.";
@@ -395,7 +395,7 @@ local L = setmetatable({
 	TOP_ROW_TO_UNLOCK = "|cffcf0000"..ALT_KEY_TEXT.." click to Unlock this Window";
 	QUEST_ROW_INSTRUCTIONS = "Right Click to see any Quest Chain Requirements";
 	QUEST_ONCE_PER_ACCOUNT = "Once-Per-Account Quest";
-	GARRISON_BUILDINGS_REQUIRE_GARRISON = "Due to a Blizzard API issue/restriction, this can only be properly cached as collected while within your Garrison",
+	GARRISON_BUILDINGS_REQUIRE_GARRISON = "Due to a Blizzard API issue/restriction, this can only be properly cached as collected while within your Garrison";
 
 
 	-- These are solely used to condense the length of Source strings within Tooltips
