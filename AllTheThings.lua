@@ -13045,103 +13045,30 @@ end
 			end
 		end
 	end);
-
-	-- Turns a bit of text into a colored link which ATT will attempt to understand
-	function app:Linkify(text, color, operation)
-		text = "|Haddon:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
-		return text;
-	end
 	function app:WaypointLink(mapID, x, y, text)
 		return "|cffffff00|Hworldmap:" .. mapID .. ":" .. math_floor(x * 10000) .. ":" .. math_floor(y * 10000)
 			.. "|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a" .. (text or "") .. "]|h|r";
 	end
-	function app:SearchLink(group)
-		if not group then return end
-		return app:Linkify(group.text or group.hash, app.Colors.ChatLink, "search:"..group.key..":"..group[group.key])
-	end
-	-- Turns a bit of text into a chat-sendable link which other ATT users will attempt to understand
-	-- function app:ChatLink(text, operation)
-	-- 	text = "|Hgarrmission:ATT:"..operation.."|h["..text.."]|h";
-	-- 	print("ChatLink",text)
-	-- 	return text;
-	-- end
-
-	-- local function GetNavPath(group)
-	-- 	local current, nav, hash = group;
-	-- 	repeat
-	-- 		hash = current.hash;
-	-- 		if hash then
-	-- 			if nav then
-	-- 				nav = hash .. ">" .. nav;
-	-- 			else
-	-- 				nav = hash;
-	-- 			end
-	-- 		end
-	-- 		current = current.parent;
-	-- 	until not current;
-	-- 	return nav;
-	-- end
-
-	-- function app:GroupNavLink(group)
-	-- 	local nav = GetNavPath(group);
-	-- 	if nav then
-	-- 		print("nav:",nav)
-	-- 		return app:Linkify(group.text, app.Colors.ChatLink, "nav:"..nav);
-	-- 		-- return app:ChatLink(group.text, "nav:"..nav);
-	-- 	end
-	-- end
 
 	-- Stores some information for use by a report popup by id
+	local reports = {};
 	function app:SetupReportDialog(id, reportMessage, text)
-		if not app.popups then app.popups = {}; end
-		if not app.popups[id] then
-			local popupID;
-			if type(text) == "table" then
-				popupID = { ["msg"] = reportMessage, ["text"] = app.TableConcat(text, nil, "", "\n") };
-			else
-				popupID = { ["msg"] = reportMessage, ["text"] = text };
-			end
-			-- print("Setup PopupID",id)
-			-- app.PrintTable(popupID);
-			app.popups[id] = popupID;
+		if not reports[id] then
+			-- print("Setup Report", id, reportMessage)
+			reports[id] = {
+				msg = reportMessage,
+				text = (type(text) == "table" and app.TableConcat(text, nil, "", "\n") or text)
+			};
 			return true;
 		end
 	end
 
-	-- function app:TestReportDialog()
-	-- 	local coord;
-	-- 	local mapID = app.CurrentMapID;
-    -- 	local position = C_Map.GetPlayerMapPosition(mapID, "player")
-	-- 	if position then
-    --     	local x,y = position:GetXY();
-    --         x = math_floor(x * 1000) / 10;
-    --         y = math_floor(y * 1000) / 10;
-	-- 		coord = x..","..y;
-	-- 	end
-	-- 	app:SetupReportDialog("test", "TEST Report Dialog",
-	-- 				{
-	-- 					"```",	-- discord fancy box
-
-	-- 					"race:"..app.RaceID,
-	-- 					"class:"..app.ClassIndex,
-	-- 					"lvl:"..app.Level,
-	-- 					"mapID:"..app.CurrentMapID,
-	-- 					"coord:"..coord,
-
-	-- 					"```",	-- discord fancy box
-	-- 				}
-	-- 				-- TODO: put more info in here as it will be copy-paste into Discord
-	-- 			);
-	-- end
-
 	-- Retrieves stored information for a report dialog and attempts to display the dialog if possible
 	function app:TriggerReportDialog(id)
-		if app.popups then
-			local popupID = app.popups[id];
-			if popupID then
-				app:ShowPopupDialogToReport(popupID.msg, popupID.text);
-				return true;
-			end
+		local popupID = reports[id];
+		if popupID then
+			app:ShowPopupDialogToReport(popupID.msg, popupID.text);
+			return true;
 		end
 	end
 end)();

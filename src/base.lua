@@ -377,6 +377,14 @@ editBoxClass.SetATTTooltip = SetATTTooltip;
 editbox:Hide();
 end)();
 
+-- Turns a bit of text into a colored link which ATT will attempt to understand
+function app:Linkify(text, color, operation)
+	return "|Haddon:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
+end
+function app:SearchLink(group)
+	if not group then return end
+	return app:Linkify(group.text or group.hash, app.Colors.ChatLink, "search:"..group.key..":"..group[group.key])
+end
 function app:ShowPopupDialog(msg, callback)
 	local popup = StaticPopupDialogs.ALL_THE_THINGS;
 	if not popup then
