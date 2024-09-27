@@ -47,14 +47,14 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.VISIT_FLIGHT_MASTER = "Visite o Mestre de Voo para registrar.";
 	L.FLIGHT_PATHS_DESC = "Pontos de voo são registrados quando você fala com um mestre de voo em cada continente.\n  - Crieve";
 	if app.IsRetail then
-	L.FOLLOWERS_COLLECTION_DESC = "Followers can be collected "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..", if you enable this setting in ATT.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";	--TODO
+	L.FOLLOWERS_COLLECTION_DESC = "Followers can be collected account wide, if you enable this setting in ATT.\n\nYou must manually refresh the addon by "..SHIFT_KEY_TEXT.." clicking the header for this to be detected.";	--TODO
 	end
 	L.HEIRLOOM_TEXT = "Herança Desbloqueada";
 	L.HEIRLOOM_TEXT_DESC = "Isso indica se já adquiriu ou não a Herança.";
 	L.FAILED_ITEM_INFO = "Falha ao adquirir informações sobre o item. O item pode ser inválido ou pode ainda não ter sido registrado em seu servidor.";
 	L.HEIRLOOMS_UPGRADES_DESC = "Isso indica se já atualizou ou não a herança para um certo nível.\n\nR.I.P. Gold.\n - Crieve";
 	if app.IsRetail then
-	L.MUSIC_ROLLS_AND_SELFIE_DESC = "Estes são desbloqueados por personagem e não são atualmente compartilhados pela conta. Se alguém da Blizzard está lendo isso, seria muito interessante se fizesse isso "..ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE..".\n\nVocê precisa manualmente atualizar o addon apertando "..SHIFT_KEY_TEXT.." e clicando no cabeçalho para isso ser detectado.";	--TODO
+	L.MUSIC_ROLLS_AND_SELFIE_DESC = "Estes são desbloqueados por personagem e não são atualmente compartilhados pela conta. Se alguém da Blizzard está lendo isso, seria muito interessante se fizesse isso em toda a conta.\n\nVocê precisa manualmente atualizar o addon apertando "..SHIFT_KEY_TEXT.." e clicando no cabeçalho para isso ser detectado.";	--TODO
 	end
 	--TODO: L.MUSIC_ROLLS_AND_SELFIE_DESC_2 = "\n\nYou must first unlock the Music Rolls by completing the Bringing the Bass quest in your garrison for this item to drop.\n\nSelfies require the S.E.L.F.I.E Toy.";
 	--TODO: L.OPPOSITE_FACTION_EQ = "Opposite faction equivalent: ";
