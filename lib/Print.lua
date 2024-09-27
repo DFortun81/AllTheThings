@@ -1,5 +1,5 @@
 -- Chat and Print functionality
-local _, app = ...;
+local appName, app = ...;
 
 local print
 	= print
@@ -12,6 +12,10 @@ app.report = function(...)
 		app.print(...);
 	end
 	app.print(app.Version..": "..app.L.PLEASE_REPORT_MESSAGE);
+end
+app.PrintMemoryUsage = function(...)
+	UpdateAddOnMemoryUsage();
+	app.print(... or "Memory", GetAddOnMemoryUsage(appName));
 end
 -- Consolidated debug-only print with preceding precise timestamp
 local GetTimePreciseSec = GetTimePreciseSec;

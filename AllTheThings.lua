@@ -91,15 +91,6 @@ app.PrintGroup = function(group,depth)
 	end
 	print("---")
 end
---[[]]
-app.PrintMemoryUsage = function(...)
-	-- update memory value for ATT
-	UpdateAddOnMemoryUsage();
-	if ... then app.print(..., GetAddOnMemoryUsage(appName));
-	else app.print("Memory",GetAddOnMemoryUsage(appName)); end
-end
--- app.PrintMemoryUsage("ATT.lua")
---]]
 
 -- Coroutine Helper Functions
 local Push = app.Push;
