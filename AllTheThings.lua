@@ -8055,6 +8055,11 @@ function app:GetDataCache()
 			end
 			tinsert(g, db)
 			CacheFields(db, true)
+
+			-- Filter for Never Implemented things
+			if category == "NeverImplemented" then
+				app.AssignFieldValue(db, "u", 1)
+			end
 		end
 
 		local window = app:GetWindow(category)
