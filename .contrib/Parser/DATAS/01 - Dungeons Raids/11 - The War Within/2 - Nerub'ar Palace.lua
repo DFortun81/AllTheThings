@@ -652,5 +652,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(84262),	-- Ulgrax the Devourer
 
 		q(84266),	-- Sikran
+		q(84268),	-- Rasha'nan
 	})),
 })))

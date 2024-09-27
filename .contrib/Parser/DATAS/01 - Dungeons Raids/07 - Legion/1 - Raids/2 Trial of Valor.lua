@@ -388,7 +388,6 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							iensemble(143516, {	-- Ensemble: Chains of the Chosen Dead
 								["classes"] = MAIL_CLASSES,
 								["u"] = REMOVED_FROM_GAME,
-
 							}),
 							iensemble(143520, {	-- Ensemble: Funerary Plate of the Chosen Dead
 								["classes"] = PLATE_CLASSES,

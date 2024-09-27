@@ -23,6 +23,6 @@ root(ROOTS.Promotions, n(STEELSERIES, sharedDataSelf({
 		["description"] = "Aquired alongside the purchase of a 160$ Aerox 9 Mouse as part of the World of Warcraft SteelSeries Limited Editon Collection.",
 	}),
 	i(224574, {	-- Savage Ebony Battle Turtle (MOUNT!)
-		["description"] = "Aquired alongside the purchase of a 80$ Artistan Keycap, 40$QcK XXL Mousepad, or a 40$ Alliance/Horde Booster Pack Headset as part of the World of Warcraft SteelSeries Limited Editon Collection.",
+		["description"] = "Aquired alongside the purchase of a 80$ Artistan Keycap, 40$QcK XXL Mousepad, or a 40$ Alliance/Horde Booster Pack as part of the World of Warcraft SteelSeries Limited Editon Collection.",
 	}),
 })));

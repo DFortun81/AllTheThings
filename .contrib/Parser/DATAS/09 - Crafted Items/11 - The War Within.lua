@@ -1185,7 +1185,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81350, 447361),	-- Pouch of Pocket Grenades
 			FirstCraft(81346, 447357),	-- Recalibrated Safety Switch
 			FirstCraft(81357, 447368),	-- Portable Profession Possibility Projector
-			--FirstCraft(TODO, 447350),	-- Tinker: Earthen Delivery Drill
+			FirstCraft(81339, 447350),	-- Tinker: Earthen Delivery Drill
 			--FirstCraft(TODO, 447351),	-- Tinker: Heartseeking Health Injector
 			-- Reagents
 			FirstCraft(84019, 459299),	-- Bottled Brilliance
