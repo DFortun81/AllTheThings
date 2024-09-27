@@ -74,7 +74,11 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 },
 "AsGenericObjectContainer", {
 	__ignoreCaching = app.ReturnTrue,
-	trackable = app.ReturnTrue,
+	trackable = function(t)
+		for _,group in ipairs(t.g) do
+			if group.objectID and group.trackable then return true; end
+		end
+	end,
 	repeatable = function(t)
 		for _,group in ipairs(t.g) do
 			if group.objectID and group.repeatable then return true; end
