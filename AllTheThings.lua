@@ -8037,29 +8037,22 @@ function app:GetDataCache()
 
 	-- Function to build a hidden window's data
 	local function BuildHiddenWindowData(name, icon, description, category, flags)
-		local g = {}
-		local windowData = app.CreateRawText(name, {
-			title = name .. DESCRIPTION_SEPARATOR .. app.Version,
-			icon = app.asset(icon),
-			description = description,
-			font = "GameFontNormalLarge",
-			g = g,
-		})
+		if not app.Categories[category] then return end
 
-		if app.Categories[category] then
-			local db = app.CreateRawText(name)
-			db.g = app.Categories[category]
-			db.description = description
-			for k, v in pairs(flags or {}) do
-				db[k] = v
-			end
-			tinsert(g, db)
-			CacheFields(db, true)
+		local windowData = app.CreateRawText(name, app.Categories[category])
+		windowData.title = name .. DESCRIPTION_SEPARATOR .. app.Version
+		windowData.icon = app.asset(icon)
+		windowData.description = description
+		windowData.font = "GameFontNormalLarge"
+		for k, v in pairs(flags or app.EmptyTable) do
+			windowData[k] = v
+		end
 
-			-- Filter for Never Implemented things
-			if category == "NeverImplemented" then
-				app.AssignFieldValue(db, "u", 1)
-			end
+		CacheFields(windowData, true)
+
+		-- Filter for Never Implemented things
+		if category == "NeverImplemented" then
+			app.AssignFieldValue(windowData, "u", 1)
 		end
 
 		local window = app:GetWindow(category)
