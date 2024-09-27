@@ -15,7 +15,10 @@ local IsRetrieving = app.Modules.RetrievingData.IsRetrieving
 
 -- App
 local SearchForObject = app.SearchForObject
-local CreateClassInstance = app.CreateClassInstance;
+local CreateObject
+app.AddEventHandler("OnLoad", function()
+	CreateObject = app.__CreateObject
+end)
 
 -- Automatic Headers
 local HeaderTypeAbbreviations = {
@@ -71,7 +74,7 @@ local function GetAutomaticHeaderData(id, type)
 		return altFunc(id);
 	end
 	local typeID = HeaderTypeAbbreviations[type] or type;
-	local obj = SearchForObject(typeID, id, "key") or CreateClassInstance(typeID, id);
+	local obj = SearchForObject(typeID, id, "key") or CreateObject({[typeID]=id});
 	if obj then
 		-- app.PrintDebug("GetAutomaticHeaderData", id, typeID, obj.text, obj.key, obj[obj.key]);
 		-- app.PrintDebug("Automatic Header",obj.name or obj.link)
