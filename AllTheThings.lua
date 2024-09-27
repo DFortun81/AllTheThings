@@ -64,10 +64,6 @@ local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture;
 local C_TradeSkillUI = C_TradeSkillUI;
 local C_TradeSkillUI_GetCategories, C_TradeSkillUI_GetCategoryInfo, C_TradeSkillUI_GetRecipeInfo, C_TradeSkillUI_GetRecipeSchematic, C_TradeSkillUI_GetTradeSkillLineForRecipe
 	= C_TradeSkillUI.GetCategories, C_TradeSkillUI.GetCategoryInfo, C_TradeSkillUI.GetRecipeInfo, C_TradeSkillUI.GetRecipeSchematic, C_TradeSkillUI.GetTradeSkillLineForRecipe;
----@return number[]
-local function GetCategoryIDs()
-	return { C_TradeSkillUI_GetCategories() };
-end
 ---@class ATTGameTooltip: GameTooltip
 local GameTooltip = GameTooltip;
 
@@ -10866,7 +10862,7 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 				updates.Categories = true;
 				local currentCategoryID;
 				local categoryData = {};
-				local categoryIDs = GetCategoryIDs();
+				local categoryIDs = { C_TradeSkillUI_GetCategories() };
 				for i = 1,#categoryIDs do
 					currentCategoryID = categoryIDs[i];
 					if not categories[currentCategoryID] then
@@ -11958,7 +11954,7 @@ app.LoadDebugger = function()
 					local tradeSkillID = app.GetTradeSkillLine();
 					local currentCategoryID, categories = -1, {};
 					local categoryData, categoryList, rawGroups = {}, {}, {};
-					local categoryIDs = GetCategoryIDs();
+					local categoryIDs = { C_TradeSkillUI_GetCategories() };
 					for i = 1,#categoryIDs do
 						currentCategoryID = categoryIDs[i];
 						C_TradeSkillUI.GetCategoryInfo(currentCategoryID, categoryData);
