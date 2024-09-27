@@ -3348,6 +3348,46 @@ local function FillGroupsRecursiveAsync(group, FillData)
 		end
 	end
 end
+-- Fills the group and returns an array of the next layer of groups to fill
+-- Run an entire layer, run a function to run the next layer
+-- Capture next layer
+local function FillGroupsLayeredAsync(group, FillData)
+	if SkipFillingGroup(group, FillData) then
+		-- if FillData.Debug then
+		-- 	app.print(Colorize("FGR-SKIP",app.Colors.ChatLinkError),app:SearchLink(group))
+		-- end
+		-- app.PrintDebug(Colorize("FGR-SKIP",app.Colors.ChatLinkError),app:SearchLink(group))
+		return;
+	end
+	-- app.PrintDebug("FGL",group.hash)
+
+	FillGroupDirect(group, FillData, true)
+
+	local g = group.g;
+	if g then
+		-- if FillData.CurrentLayer then
+		-- 	app.PrintDebug("AddLayered.g",#g,app:SearchLink(group))
+		-- end
+		app.ArrayAppend(FillData.NextLayer, g)
+	end
+end
+local function RunGroupsLayeredAsync(FillData)
+	local g = FillData.NextLayer;
+	if #g > 0 then
+		-- if FillData.CurrentLayer then
+		-- 	app.PrintDebug("FillLayered",FillData.CurrentLayer,#g)
+		-- 	FillData.CurrentLayer = FillData.CurrentLayer + 1
+		-- end
+		local Run = FillData.Runner.Run;
+		-- Then nest anything further
+		for _,o in ipairs(g) do
+			Run(FillGroupsLayeredAsync, o, FillData)
+		end
+		wipe(FillData.NextLayer)
+		-- Re-run the layer runner since there's been more filling scheduled
+		Run(RunGroupsLayeredAsync, FillData)
+	end
+end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
 app.FillGroups = function(group)
 	-- Sometimes entire sub-groups should be preventing from even allowing filling (i.e. Dynamic groups)
@@ -3359,6 +3399,8 @@ app.FillGroups = function(group)
 	local FillData = {
 		Included = {},
 		CraftedItems = {},
+		NextLayer = {},
+		-- CurrentLayer = 0,	-- debugging
 		InWindow = groupWindow and true or nil,
 		NestNPCData = app.Settings:GetTooltipSetting("NPCData:Nested"),
 		SkipLevel = app.GetSkipLevel(),
@@ -3376,7 +3418,13 @@ app.FillGroups = function(group)
 		groupWindow.StartProcessing();
 		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
 		Runner.SetPerFrame(25);
-		Runner.Run(FillGroupsRecursiveAsync, group, FillData);
+		-- Recursive Fill
+		-- Runner.Run(FillGroupsRecursiveAsync, group, FillData);
+
+		-- Layered Fill
+		Runner.Run(FillGroupsLayeredAsync, group, FillData)
+		Runner.Run(RunGroupsLayeredAsync, FillData)
+
 	else
 		-- app.PrintDebug("FG",group.hash)
 		-- this performs depth-first filling which leads to usually one group having tons of nesting
