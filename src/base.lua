@@ -377,14 +377,6 @@ editBoxClass.SetATTTooltip = SetATTTooltip;
 editbox:Hide();
 end)();
 
--- Turns a bit of text into a colored link which ATT will attempt to understand
-function app:Linkify(text, color, operation)
-	return "|Haddon:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
-end
-function app:SearchLink(group)
-	if not group then return end
-	return app:Linkify(group.text or group.hash, app.Colors.ChatLink, "search:"..group.key..":"..group[group.key])
-end
 function app:ShowPopupDialog(msg, callback)
 	local popup = StaticPopupDialogs.ALL_THE_THINGS;
 	if not popup then
@@ -544,6 +536,64 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 end
 function app:ShowPopupDialogToReport(reportReason, text)
 	app:ShowPopupDialogWithMultiLineEditBox(text, nil, (reportReason or "Missing Data").."\n"..app.L.PLEASE_REPORT_MESSAGE..app.L.REPORT_TIP);
+end
+
+-- Clickable ATT Chat Link Handling
+local reports = {};
+function app:SetupReportDialog(id, reportMessage, text)
+	-- Store some information for use by a report popup by id
+	if not reports[id] then
+		-- print("Setup Report", id, reportMessage)
+		reports[id] = {
+			msg = reportMessage,
+			text = (type(text) == "table" and app.TableConcat(text, nil, "", "\n") or text)
+		};
+		return true;
+	end
+end
+hooksecurefunc("SetItemRef", function(link, text)
+	-- print("Chat Link Click",link,text:gsub("\|", "&"));
+	-- if IsShiftKeyDown() then
+	-- 	ChatEdit_InsertLink(text);
+	-- else
+	local type, info, data1, data2, data3 = (":"):split(link);
+	-- print(type, info, data1, data2, data3)
+	if type == "addon" and info == "ATT" then
+		-- local op = link:sub(17)
+		-- print("ATT Link",op)
+		-- local type, paramA, paramB = (":"):split(data);
+		-- print(type,paramA,paramB)
+		if data1 == "search" then
+			local cmd = data2 .. ":" .. data3;
+			app.SetSkipLevel(2);
+			local group = app.GetCachedSearchResults(app.SearchForLink, cmd);
+			app.SetSkipLevel(0);
+			app:CreateMiniListForGroup(group);
+			return true;
+		elseif data1 == "dialog" then
+			-- Retrieves stored information for a report dialog and attempts to display the dialog if possible
+			local popup = reports[data2];
+			if popup then
+				app:ShowPopupDialogToReport(popup.msg, popup.text);
+				return true;
+			end
+		end
+	end
+end);
+
+-- Chat Links
+local math_floor = math.floor;
+function app:Linkify(text, color, operation)
+	-- Turns a bit of text into a colored link which ATT will attempt to understand
+	return "|Haddon:ATT:"..operation.."|h|c"..color.."["..text.."]|r|h";
+end
+function app:SearchLink(group)
+	if not group then return end
+	return app:Linkify(group.text or group.hash, app.Colors.ChatLink, "search:"..group.key..":"..group[group.key])
+end
+function app:WaypointLink(mapID, x, y, text)
+	return "|cffffff00|Hworldmap:" .. mapID .. ":" .. math_floor(x * 10000) .. ":" .. math_floor(y * 10000)
+		.. "|h[|A:Waypoint-MapPin-ChatIcon:13:13:0:0|a" .. (text or "") .. "]|h|r";
 end
 
 -- Define Modules
