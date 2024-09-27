@@ -152,16 +152,6 @@ app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
 	return dlo;
 end
 
-local function RoundNumber(number, decimalPlaces)
-	local ret;
-	if number < 60 then
-		ret = number .. " second(s)";
-	else
-		ret = (("%%.%df"):format(decimalPlaces)):format(number/60) .. " minute(s)";
-	end
-	return ret;
-end
-
 local function formatNumericWithCommas(amount)
   local k
   while true do
@@ -8307,6 +8297,15 @@ customWindowUpdates.AchievementHarvester = function(self, ...)
 		self:BaseUpdate(true);
 	end
 end;
+local function RoundNumber(number, decimalPlaces)
+	local ret;
+	if number < 60 then
+		ret = number .. " second(s)";
+	else
+		ret = (("%%.%df"):format(decimalPlaces)):format(number/60) .. " minute(s)";
+	end
+	return ret;
+end
 customWindowUpdates.AuctionData = function(self)
 	if not self.initialized then
 		local C_AuctionHouse_ReplicateItems = C_AuctionHouse.ReplicateItems;

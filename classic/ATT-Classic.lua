@@ -2282,7 +2282,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 		if name then return name; end
 		local data = L.ACHIEVEMENT_DATA[t.achievementID];
 		if data and data[2] then return data[2]; end
-		return GetNameFromProviders(t)
+		return app.GetNameFromProviders(t)
 			or (t.spellID and GetSpellName(t.spellID));
 	end
 	fields.link = function(t)
@@ -2293,7 +2293,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 		if name then return name; end
 		local data = L.ACHIEVEMENT_DATA[t.achievementID];
 		if data and data[3] then return data[3]; end
-		return GetIconFromProviders(t)
+		return app.GetIconFromProviders(t)
 			or (t.spellID and GetSpellIcon(t.spellID))
 			or t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
 	end
@@ -2429,7 +2429,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 			if achievementID then
 				local criteriaID = t.criteriaID;
 				if criteriaID then
-					local name = t.GetInfo(achievementID, criteriaID, true) or GetNameFromProviders(t);
+					local name = t.GetInfo(achievementID, criteriaID, true) or app.GetNameFromProviders(t);
 					if not IsRetrieving(name) then return name; end
 					local sourceQuests = t.sourceQuests;
 					if sourceQuests then
@@ -2442,7 +2442,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 			end
 		end,
 		["icon"] = function(t)
-			return GetIconFromProviders(t)
+			return app.GetIconFromProviders(t)
 				or (t.achievementID and select(10, GetAchievementInfo(t.achievementID)));
 		end,
 		["model"] = function(t)
@@ -2595,12 +2595,12 @@ else
 	fields.name = function(t)
 		local data = L.ACHIEVEMENT_DATA[t.achievementID];
 		if data and data[2] then return data[2]; end
-		return GetNameFromProviders(t) or (t.spellID or GetSpellName(t.spellID)) or RETRIEVING_DATA;
+		return app.GetNameFromProviders(t) or (t.spellID or GetSpellName(t.spellID)) or RETRIEVING_DATA;
 	end
 	fields.icon = function(t)
 		local data = L.ACHIEVEMENT_DATA[t.achievementID];
 		if data and data[3] then return data[3]; end
-		return GetIconFromProviders(t)
+		return app.GetIconFromProviders(t)
 			or (t.spellID and GetSpellIcon(t.spellID))
 			or t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
 	end

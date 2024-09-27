@@ -200,7 +200,7 @@ app.IsComplete = function(o)
 end
 
 local GetItemIcon = app.WOWAPI.GetItemIcon;
-local function GetIconFromProviders(group)
+app.GetIconFromProviders = function(group)
 	if group.providers then
 		local icon;
 		for k,v in ipairs(group.providers) do
@@ -214,8 +214,8 @@ local function GetIconFromProviders(group)
 			end
 		end
 	end
-end
-local function GetNameFromProviders(group)
+end;
+app.GetNameFromProviders = function(group)
 	if group.providers then
 		local name;
 		for k,v in ipairs(group.providers) do
@@ -231,9 +231,7 @@ local function GetNameFromProviders(group)
 			end
 		end
 	end
-end
-app.GetIconFromProviders = GetIconFromProviders;
-app.GetNameFromProviders = GetNameFromProviders;
+end;
 
 -- Cache information about the player.
 app.Gender = UnitSex("player");
