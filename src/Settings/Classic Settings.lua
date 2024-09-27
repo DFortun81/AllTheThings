@@ -229,12 +229,6 @@ local AllTheThingsSettings, AllTheThingsSettingsPerCharacter = {}, {};
 settings.Initialize = function(self)
 	local global_AllTheThingsSettings = _G["AllTheThingsSettings"];
 	if global_AllTheThingsSettings then AllTheThingsSettings = global_AllTheThingsSettings; end
-	global_AllTheThingsSettings = _G["ATTClassicSettings"];
-	if global_AllTheThingsSettings then
-		-- Purge the deprecated variable (remove this in a few versions)
-		AllTheThingsSettings = global_AllTheThingsSettings;
-		_G["ATTClassicSettings"] = nil;
-	end
 	_G["AllTheThingsSettings"] = AllTheThingsSettings;
 	RawSettings = AllTheThingsSettings;
 
