@@ -13,12 +13,12 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_2_0 } }, 
 			ach(15512, {	-- Adventures in Zereth Mortis
 				["sym"] = {{ "achievement_criteria" }},
 			}),
-			ach(15211, sharedDataSelf({	-- Completing the Code
+			ach(15211, bubbleDownFiltered({	-- Completing the Code
 				["cost"] = {
 					{ "i", 187909, 1 },	-- Unstable Containment Trap (temporary vendor item)
 					{ "i", 187684, 1 },	-- Containment Trap (quest item)
 				},
-			}, {
+			},FILTERFUNC_criteriaID,{
 				["g"] = {
 					i(187793),	-- Personal Containment Trap (TOY!)
 					crit(52552, {
