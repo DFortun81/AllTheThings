@@ -46,61 +46,17 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 						114537,	-- Helya
 					},
 				},{
-					i(143509, {	-- Ensemble: Vestment of the Chosen Dead
+					iensemble(143509, {	-- Ensemble: Vestment of the Chosen Dead
 						["classes"] = CLOTH_CLASSES,
-						["g"] = {
-							i(143346),	-- Circlet of the Chosen Dead
-							i(143356),	-- Mantle of the Chosen Dead
-							i(143369),	-- Drape of the Chosen Dead
-							i(143353),	-- Robe of the Chosen Dead
-							i(143362),	-- Bracers of the Chosen Dead
-							i(143343),	-- Gloves of the Chosen Dead
-							i(143359),	-- Sash of the Chosen Dead
-							i(143350),	-- Pantaloons of the Chosen Dead
-							i(143338),	-- Sandals of the Chosen Dead
-						},
 					}),
-					i(143513, {	-- Ensemble: Garb of the Chosen Dead
+					iensemble(143513, {	-- Ensemble: Garb of the Chosen Dead
 						["classes"] = LEATHER_CLASSES,
-						["g"] = {
-							i(143348),	-- Hood of the Chosen Dead
-							i(143354),	-- Shoulderpads of the Chosen Dead
-							i(143366),	-- Wrap of the Chosen Dead
-							i(143336),	-- Tunic of the Chosen Dead
-							i(143365),	-- Wristguards of the Chosen Dead
-							i(143341),	-- Grips of the Chosen Dead
-							i(143361),	-- Strap of the Chosen Dead
-							i(143352),	-- Leggings of the Chosen Dead
-							i(143340),	-- Boots of the Chosen Dead
-						},
 					}),
-					i(143517, {	-- Ensemble: Chains of the Chosen Dead
+					iensemble(143517, {	-- Ensemble: Chains of the Chosen Dead
 						["classes"] = MAIL_CLASSES,
-						["g"] = {
-							i(143347),	-- Coif of the Chosen Dead
-							i(143357),	-- Pauldrons of the Chosen Dead
-							i(143368),	-- Cloak of the Chosen Dead
-							i(143335),	-- Chain Shirt of the Chosen Dead
-							i(143364),	-- Armbands of the Chosen Dead
-							i(143344),	-- Gauntlets of the Chosen Dead
-							i(143360),	-- Girdle of the Chosen Dead
-							i(143351),	-- Chain Leggings of the Chosen Dead
-							i(143339),	-- Sabatons of the Chosen Dead
-						},
 					}),
-					i(143521, {	-- Ensemble: Funerary Plate of the Chosen Dead
+					iensemble(143521, {	-- Ensemble: Funerary Plate of the Chosen Dead
 						["classes"] = PLATE_CLASSES,
-						["g"] = {
-							i(143345),	-- Visor of the Chosen Dead
-							i(143355),	-- Shoulderplates of the Chosen Dead
-							i(143367),	-- Greatcloak of the Chosen Dead
-							i(143334),	-- Chestplate of the Chosen Dead
-							i(143363),	-- Wristclamps of the Chosen Dead
-							i(143342),	-- Handguards of the Chosen Dead
-							i(143358),	-- Waistplate of the Chosen Dead
-							i(143349),	-- Legplates of the Chosen Dead
-							i(143337),	-- Treads of the Chosen Dead
-						},
 					}),
 				}),
 			}),
@@ -112,61 +68,17 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 				q(45088, {	-- Trial of Valor: The Lost Army
 					["provider"] = { "n", 114263 },	-- Odyn
 					["g"] = {
-						i(143506, {	-- Ensemble: Vestment of the Chosen Dead
+						iensemble(143506, {	-- Ensemble: Vestment of the Chosen Dead
 							["classes"] = CLOTH_CLASSES,
-							["g"] = {
-								i(143346),	-- Circlet of the Chosen Dead
-								i(143356),	-- Mantle of the Chosen Dead
-								i(143369),	-- Drape of the Chosen Dead
-								i(143353),	-- Robe of the Chosen Dead
-								i(143362),	-- Bracers of the Chosen Dead
-								i(143343),	-- Gloves of the Chosen Dead
-								i(143359),	-- Sash of the Chosen Dead
-								i(143350),	-- Pantaloons of the Chosen Dead
-								i(143338),	-- Sandals of the Chosen Dead
-							},
 						}),
-						i(143510, {	-- Ensemble: Garb of the Chosen Dead
+						iensemble(143510, {	-- Ensemble: Garb of the Chosen Dead
 							["classes"] = LEATHER_CLASSES,
-							["g"] = {
-								i(143348),	-- Hood of the Chosen Dead
-								i(143354),	-- Shoulderpads of the Chosen Dead
-								i(143366),	-- Wrap of the Chosen Dead
-								i(143336),	-- Tunic of the Chosen Dead
-								i(143365),	-- Wristguards of the Chosen Dead
-								i(143341),	-- Grips of the Chosen Dead
-								i(143361),	-- Strap of the Chosen Dead
-								i(143352),	-- Leggings of the Chosen Dead
-								i(143340),	-- Boots of the Chosen Dead
-							},
 						}),
-						i(143514, {	-- Ensemble: Chains of the Chosen Dead
+						iensemble(143514, {	-- Ensemble: Chains of the Chosen Dead
 							["classes"] = MAIL_CLASSES,
-							["g"] = {
-								i(143347),	-- Coif of the Chosen Dead
-								i(143357),	-- Pauldrons of the Chosen Dead
-								i(143368),	-- Cloak of the Chosen Dead
-								i(143335),	-- Chain Shirt of the Chosen Dead
-								i(143364),	-- Armbands of the Chosen Dead
-								i(143344),	-- Gauntlets of the Chosen Dead
-								i(143360),	-- Girdle of the Chosen Dead
-								i(143351),	-- Chain Leggings of the Chosen Dead
-								i(143339),	-- Sabatons of the Chosen Dead
-							},
 						}),
-						i(143518, {	-- Ensemble: Funerary Plate of the Chosen Dead
+						iensemble(143518, {	-- Ensemble: Funerary Plate of the Chosen Dead
 							["classes"] = PLATE_CLASSES,
-							["g"] = {
-								i(143345),	-- Visor of the Chosen Dead
-								i(143355),	-- Shoulderplates of the Chosen Dead
-								i(143367),	-- Greatcloak of the Chosen Dead
-								i(143334),	-- Chestplate of the Chosen Dead
-								i(143363),	-- Wristclamps of the Chosen Dead
-								i(143342),	-- Handguards of the Chosen Dead
-								i(143358),	-- Waistplate of the Chosen Dead
-								i(143349),	-- Legplates of the Chosen Dead
-								i(143337),	-- Treads of the Chosen Dead
-							},
 						}),
 					},
 				}),
@@ -325,69 +237,25 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 					i(142541),	-- Drape of the Forgotten Souls
 				}),
 				n(COMMON_BOSS_DROPS, {
-					i(143507, {	-- Ensemble: Vestment of the Chosen Dead
+					iensemble(143507, {	-- Ensemble: Vestment of the Chosen Dead
 						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties.",
 						["classes"] = CLOTH_CLASSES,
 						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
-						["g"] = {
-							i(143346),	-- Circlet of the Chosen Dead
-							i(143356),	-- Mantle of the Chosen Dead
-							i(143369),	-- Drape of the Chosen Dead
-							i(143353),	-- Robe of the Chosen Dead
-							i(143362),	-- Bracers of the Chosen Dead
-							i(143343),	-- Gloves of the Chosen Dead
-							i(143359),	-- Sash of the Chosen Dead
-							i(143350),	-- Pantaloons of the Chosen Dead
-							i(143338),	-- Sandals of the Chosen Dead
-						},
 					}),
-					i(143511, {	-- Ensemble: Garb of the Chosen Dead
+					iensemble(143511, {	-- Ensemble: Garb of the Chosen Dead
 						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties.",
 						["classes"] = LEATHER_CLASSES,
 						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
-						["g"] = {
-							i(143348),	-- Hood of the Chosen Dead
-							i(143354),	-- Shoulderpads of the Chosen Dead
-							i(143366),	-- Wrap of the Chosen Dead
-							i(143336),	-- Tunic of the Chosen Dead
-							i(143365),	-- Wristguards of the Chosen Dead
-							i(143341),	-- Grips of the Chosen Dead
-							i(143361),	-- Strap of the Chosen Dead
-							i(143352),	-- Leggings of the Chosen Dead
-							i(143340),	-- Boots of the Chosen Dead
-						},
 					}),
-					i(143515, {	-- Ensemble: Chains of the Chosen Dead
+					iensemble(143515, {	-- Ensemble: Chains of the Chosen Dead
 						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties.",
 						["classes"] = MAIL_CLASSES,
 						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
-						["g"] = {
-							i(143347),	-- Coif of the Chosen Dead
-							i(143357),	-- Pauldrons of the Chosen Dead
-							i(143368),	-- Cloak of the Chosen Dead
-							i(143335),	-- Chain Shirt of the Chosen Dead
-							i(143364),	-- Armbands of the Chosen Dead
-							i(143344),	-- Gauntlets of the Chosen Dead
-							i(143360),	-- Girdle of the Chosen Dead
-							i(143351),	-- Chain Leggings of the Chosen Dead
-							i(143339),	-- Sabatons of the Chosen Dead
-						},
 					}),
-					i(143519, {	-- Ensemble: Funerary Plate of the Chosen Dead
+					iensemble(143519, {	-- Ensemble: Funerary Plate of the Chosen Dead
 						["description"] = "This item has a chance to drop from any boss in Heroic and Mythic difficulties.",
 						["classes"] = PLATE_CLASSES,
 						["crs"] = { 116245 },	-- Heroic Champion of the Chosen Dead
-						["g"] = {
-							i(143345),	-- Visor of the Chosen Dead
-							i(143355),	-- Shoulderplates of the Chosen Dead
-							i(143367),	-- Greatcloak of the Chosen Dead
-							i(143334),	-- Chestplate of the Chosen Dead
-							i(143363),	-- Wristclamps of the Chosen Dead
-							i(143342),	-- Handguards of the Chosen Dead
-							i(143358),	-- Waistplate of the Chosen Dead
-							i(143349),	-- Legplates of the Chosen Dead
-							i(143337),	-- Treads of the Chosen Dead
-						},
 					}),
 				}),
 				cr(114263, e(1819, {	-- Odyn
@@ -509,65 +377,22 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 							title(347, {	-- The Chosen
 								["u"] = REMOVED_FROM_GAME,
 							}),
-							i(143508, {	-- Ensemble: Vestment of the Chosen Dead
+							iensemble(143508, {	-- Ensemble: Vestment of the Chosen Dead
 								["classes"] = CLOTH_CLASSES,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
-									i(143346),	-- Circlet of the Chosen Dead
-									i(143356),	-- Mantle of the Chosen Dead
-									i(143369),	-- Drape of the Chosen Dead
-									i(143353),	-- Robe of the Chosen Dead
-									i(143362),	-- Bracers of the Chosen Dead
-									i(143343),	-- Gloves of the Chosen Dead
-									i(143359),	-- Sash of the Chosen Dead
-									i(143350),	-- Pantaloons of the Chosen Dead
-									i(143338),	-- Sandals of the Chosen Dead
-								},
 							}),
-							i(143512, {	-- Ensemble: Garb of the Chosen Dead
+							iensemble(143512, {	-- Ensemble: Garb of the Chosen Dead
 								["classes"] = LEATHER_CLASSES,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
-									i(143348),	-- Hood of the Chosen Dead
-									i(143354),	-- Shoulderpads of the Chosen Dead
-									i(143366),	-- Wrap of the Chosen Dead
-									i(143336),	-- Tunic of the Chosen Dead
-									i(143365),	-- Wristguards of the Chosen Dead
-									i(143341),	-- Grips of the Chosen Dead
-									i(143361),	-- Strap of the Chosen Dead
-									i(143352),	-- Leggings of the Chosen Dead
-									i(143340),	-- Boots of the Chosen Dead
-								},
 							}),
-							i(143516, {	-- Ensemble: Chains of the Chosen Dead
+							iensemble(143516, {	-- Ensemble: Chains of the Chosen Dead
 								["classes"] = MAIL_CLASSES,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
-									i(143347),	-- Coif of the Chosen Dead
-									i(143357),	-- Pauldrons of the Chosen Dead
-									i(143368),	-- Cloak of the Chosen Dead
-									i(143335),	-- Chain Shirt of the Chosen Dead
-									i(143364),	-- Armbands of the Chosen Dead
-									i(143344),	-- Gauntlets of the Chosen Dead
-									i(143360),	-- Girdle of the Chosen Dead
-									i(143351),	-- Chain Leggings of the Chosen Dead
-									i(143339),	-- Sabatons of the Chosen Dead
-								},
+
 							}),
-							i(143520, {	-- Ensemble: Funerary Plate of the Chosen Dead
+							iensemble(143520, {	-- Ensemble: Funerary Plate of the Chosen Dead
 								["classes"] = PLATE_CLASSES,
 								["u"] = REMOVED_FROM_GAME,
-								["g"] = {
-									i(143345),	-- Visor of the Chosen Dead
-									i(143355),	-- Shoulderplates of the Chosen Dead
-									i(143367),	-- Greatcloak of the Chosen Dead
-									i(143334),	-- Chestplate of the Chosen Dead
-									i(143363),	-- Wristclamps of the Chosen Dead
-									i(143342),	-- Handguards of the Chosen Dead
-									i(143358),	-- Waistplate of the Chosen Dead
-									i(143349),	-- Legplates of the Chosen Dead
-									i(143337),	-- Treads of the Chosen Dead
-								},
 							}),
 						},
 					}),
