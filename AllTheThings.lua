@@ -42,36 +42,26 @@ local print, rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, se
 	= print, rawget, rawset, tostring, ipairs, pairs, tonumber, wipe, select, setmetatable, getmetatable, tinsert, tremove, type, math.floor
 
 -- Global WoW API Cache
-local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
 local C_Map_GetMapInfo = C_Map.GetMapInfo;
-local GetAchievementCriteriaInfo = _G.GetAchievementCriteriaInfo;
-local GetAchievementInfo = _G.GetAchievementInfo;
-local GetAchievementLink = _G.GetAchievementLink;
 local InCombatLockdown = _G.InCombatLockdown;
-local GetTimePreciseSec = GetTimePreciseSec
 local IsInInstance = IsInInstance
 
 -- WoW API Cache
 local GetFactionName = app.WOWAPI.GetFactionName;
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemID = app.WOWAPI.GetItemID;
-local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
-local GetSpellLink = app.WOWAPI.GetSpellLink;
 local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture;
 
 local C_TradeSkillUI = C_TradeSkillUI;
 local C_TradeSkillUI_GetCategories, C_TradeSkillUI_GetCategoryInfo, C_TradeSkillUI_GetRecipeInfo, C_TradeSkillUI_GetRecipeSchematic, C_TradeSkillUI_GetTradeSkillLineForRecipe
 	= C_TradeSkillUI.GetCategories, C_TradeSkillUI.GetCategoryInfo, C_TradeSkillUI.GetRecipeInfo, C_TradeSkillUI.GetRecipeSchematic, C_TradeSkillUI.GetTradeSkillLineForRecipe;
----@class ATTGameTooltip: GameTooltip
-local GameTooltip = GameTooltip;
 
 -- App & Module locals
 local ArrayAppend, constructor = app.ArrayAppend, app.constructor;
 local CacheFields, SearchForField, SearchForFieldContainer, SearchForObject
 	= app.CacheFields, app.SearchForField, app.SearchForFieldContainer, app.SearchForObject
-local AttachTooltipSearchResults = app.Modules.Tooltip.AttachTooltipSearchResults;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 local TryColorizeName = app.TryColorizeName;
@@ -82,7 +72,6 @@ local ATTAccountWideData;
 -- Color Lib
 local GetProgressColor = app.Modules.Color.GetProgressColor;
 local Colorize = app.Modules.Color.Colorize;
-local HexToARGB = app.Modules.Color.HexToARGB;
 
 -- Print/Debug/Testing Functions
 app.PrintGroup = function(group,depth)
@@ -1195,6 +1184,7 @@ local function Resolve_Find(results, groups, field, val)
 	end
 end
 local GetAchievementNumCriteria = GetAchievementNumCriteria
+local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
 
 -- Defines a known set of functions which can be run via symlink resolution. The inputs to each function will be identical in order when called.
 -- searchResults - the current set of searchResults when reaching the current sym command
@@ -1578,6 +1568,7 @@ local ResolveFunctions = {
 
 -- Replace achievementy_criteria function if criteria API doesn't exist
 if GetAchievementNumCriteria then
+	local GetAchievementCriteriaInfo = _G.GetAchievementCriteriaInfo;
 	-- Instruction to query all criteria of an Achievement via the in-game APIs and generate Criteria data into the most-accurate Sources
 	ResolveFunctions.achievement_criteria = function(finalized, searchResults, o)
 		-- Instruction to select the criteria provided by the achievement this is attached to. (maybe build this into achievements?)
@@ -3724,6 +3715,7 @@ end)();
 
 -- Synchronization Functions
 (function()
+local C_CreatureInfo_GetRaceInfo = C_CreatureInfo.GetRaceInfo;
 local outgoing,incoming,queue,active = {},{},{},nil;
 local whiteListedFields = { --[["Achievements",]] "AzeriteEssenceRanks", --[["Exploration",]] "Factions", "FlightPaths", "Followers", "GarrisonBuildings", "Quests", "Spells", "Titles" };
 app.CharacterSyncTables = whiteListedFields;
@@ -4697,6 +4689,7 @@ end)();
 
 -- Music Rolls & Selfie Filter Lib: Music Rolls
 (function()
+local GetSpellLink = app.WOWAPI.GetSpellLink;
 local fields = {
 	["key"] = function(t)
 		return "questID";
@@ -4842,6 +4835,7 @@ end)();
 
 -- Processing Functions
 do
+local GetTimePreciseSec = GetTimePreciseSec
 local DefaultGroupVisibility, DefaultThingVisibility;
 local UpdateGroups;
 local RecursiveGroupRequirementsFilter, GroupFilter, GroupVisibilityFilter, ThingVisibilityFilter, TrackableFilter
@@ -6434,6 +6428,9 @@ local function RowOnClick(self, button)
 		end
 	end
 end
+
+---@class ATTGameTooltip: GameTooltip
+local GameTooltip = GameTooltip;
 RowOnEnter = function (self)
 	local reference = self.ref;
 	if not reference then return; end
