@@ -240,12 +240,6 @@ settings.Initialize = function(self)
 
 	local global_AllTheThingsSettingsPerCharacter = _G["AllTheThingsSettingsPerCharacter"];
 	if global_AllTheThingsSettingsPerCharacter then AllTheThingsSettingsPerCharacter = global_AllTheThingsSettingsPerCharacter; end
-	global_AllTheThingsSettingsPerCharacter = _G["ATTClassicSettingsPerCharacter"];
-	if global_AllTheThingsSettingsPerCharacter then
-		-- Purge the deprecated variable (remove this in a few versions)
-		AllTheThingsSettingsPerCharacter = global_AllTheThingsSettingsPerCharacter;
-		_G["ATTClassicSettingsPerCharacter"] = nil;
-	end
 	_G["AllTheThingsSettingsPerCharacter"] = AllTheThingsSettingsPerCharacter;
 
 	-- Assign the default settings
