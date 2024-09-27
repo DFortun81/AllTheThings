@@ -408,4 +408,22 @@ q(74730),	-- Ensemble: Bloodtinged Cloth
 q(74732),	-- Ensemble: Blooddrenched Leather
 q(74733),	-- Ensemble: Bloodstained Mail
 q(74734),	-- Ensemble: Bloodsoaked Plate
+
+------ Trial of Valor ------
+q(45208),	-- Ensemble: Vestment of the Chosen Dead [Normal]
+q(45223),	-- Ensemble: Vestment of the Chosen Dead [Heroic]
+q(45224),	-- Ensemble: Vestment of the Chosen Dead [Mythic]
+q(45225),	-- Ensemble: Vestment of the Chosen Dead [LFR]
+q(45226),	-- Ensemble: Garb of the Chosen Dead [Normal]
+q(45227),	-- Ensemble: Garb of the Chosen Dead [Heroic]
+q(45228),	-- Ensemble: Garb of the Chosen Dead [Mythic]
+q(45229),	-- Ensemble: Garb of the Chosen Dead [LFR]
+q(45230),	-- Ensemble: Chains of the Chosen Dead [Normal]
+q(45231),	-- Ensemble: Chains of the Chosen Dead [Heroic]
+q(45232),	-- Ensemble: Chains of the Chosen Dead [Mythic]
+q(45233),	-- Ensemble: Chains of the Chosen Dead [LFR]
+q(45234),	-- Ensemble: Funerary Plate of the Chosen Dead [Normal]
+q(45235),	-- Ensemble: Funerary Plate of the Chosen Dead [Heroic]
+q(45236),	-- Ensemble: Funerary Plate of the Chosen Dead [Mythic]
+q(45237),	-- Ensemble: Funerary Plate of the Chosen Dead [LFR]
 --]]
