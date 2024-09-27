@@ -245,13 +245,6 @@ end
 app.GetUnobtainableTexture = GetUnobtainableTexture;
 
 
-app.IsComplete = function(o)
-	if o.total then return o.total == o.progress; end
-	if o.collectible then return o.collected; end
-	if o.trackable then return o.saved; end
-end
-
-
 local MergeObject;
 local CloneArray = app.CloneArray;
 local function GetHash(t)

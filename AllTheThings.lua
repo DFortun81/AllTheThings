@@ -818,13 +818,7 @@ local function RawCloneData(data, clone)
 	return clone;
 end
 
-app.IsComplete = function(o)
-	local total = o.total
-	if total and total > 0 then return total == o.progress; end
-	if o.collectible then return o.collected; end
-	if o.trackable then return o.saved; end
-	return true;
-end
+
 local function GetUnobtainableTexture(group)
 	if not group then return; end
 	if type(group) ~= "table" then

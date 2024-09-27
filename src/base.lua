@@ -191,6 +191,13 @@ app.GetDeepestRelativeValue = GetDeepestRelativeValue;
 app.GetRelativeField = GetRelativeField;
 app.GetRawRelativeField = GetRawRelativeField
 app.GetRelativeValue = GetRelativeValue;
+app.IsComplete = function(o)
+	local total = o.total
+	if total and total > 0 then return total == o.progress; end
+	if o.collectible then return o.collected; end
+	if o.trackable then return o.saved; end
+	return true;
+end
 
 local GetItemIcon = app.WOWAPI.GetItemIcon;
 local function GetIconFromProviders(group)
