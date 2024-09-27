@@ -137,6 +137,7 @@ local TooltipSettingsBase = {
 		["Precision"] = 2,
 		["PlayDeathSound"] = false,
 		["Progress"] = true,
+		["Repeatables"] = true,
 		["ShowIconOnly"] = false,
 		["SharedAppearances"] = true,
 		["Show:CraftedItems"] = false,

@@ -922,6 +922,16 @@ local InformationTypes = {
 	CreateInformationType("__type", { text = L.OBJECT_TYPE, priority = 9001, ShouldDisplayInExternalTooltips = false, }),
 
 	-- Summary Information Types
+	CreateInformationType("Repeatables", { text = "Repeatables", priority = 10999, ShouldDisplayInExternalTooltips = false,
+		Process = function(t, reference, tooltipInfo)
+			if reference.isWorldQuest then tinsert(tooltipInfo, { left = L.DURING_WQ_ONLY }); end
+			if reference.isDaily then tinsert(tooltipInfo, { left = L.COMPLETED_DAILY });
+			elseif reference.isWeekly then tinsert(tooltipInfo, { left = L.COMPLETED_WEEKLY });
+			elseif reference.isMonthly then tinsert(tooltipInfo, { left = L.COMPLETED_MONTHLY });
+			elseif reference.isYearly then tinsert(tooltipInfo, { left = L.COMPLETED_YEARLY });
+			elseif reference.repeatable then tinsert(tooltipInfo, { left = L.COMPLETED_MULTIPLE }); end
+		end,
+	}),
 	CreateInformationType("CompletedBy", { text = L.COMPLETED_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForCompletedBy });
 	CreateInformationType("KnownBy", { text = L.KNOWN_BY:format(""), priority = 11000, HideCheckBox = true, Process = ProcessForKnownBy });
 	CreateInformationType("extraInfo", { text = "extraInfo", priority = 2.51, HideCheckBox = true, ForceActive = true,

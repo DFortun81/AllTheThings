@@ -891,12 +891,7 @@ local function RowOnEnter(self)
 	end
 	
 	-- Show Breadcrumb information
-	if reference.isBreadcrumb then tinsert(tooltipInfo, { left = "This is a breadcrumb quest." }); end
-	if reference.isDaily then tinsert(tooltipInfo, { left = "This can be completed daily." });
-	elseif reference.isWeekly then tinsert(tooltipInfo, { left = "This can be completed weekly." });
-	elseif reference.isMontly then tinsert(tooltipInfo, { left = "This can be completed monthly." });
-	elseif reference.isYearly then tinsert(tooltipInfo, { left = "This can be completed yearly." });
-	elseif reference.repeatable then tinsert(tooltipInfo, { left = "This can be completed multiple times." }); end
+	if reference.isBreadcrumb then tinsert(tooltipInfo, { left = "This is a breadcrumb quest.", color = app.Colors.Breadcrumb }); end
 
 	-- Show Quest Prereqs
 	local isDebugMode = app.MODE_DEBUG;

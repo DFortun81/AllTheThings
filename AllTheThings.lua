@@ -6500,33 +6500,6 @@ RowOnEnter = function (self)
 		end
 	end
 
-	if reference.isWorldQuest then
-		tinsert(tooltipInfo, {
-			left = L.DURING_WQ_ONLY,
-		});
-	end
-	if reference.isDaily then
-		tinsert(tooltipInfo, {
-			left = L.COMPLETED_DAILY,
-		});
-	elseif reference.isWeekly then
-		tinsert(tooltipInfo, {
-			left = L.COMPLETED_WEEKLY,
-		});
-	elseif reference.isMonthly then
-		tinsert(tooltipInfo, {
-			left = L.COMPLETED_MONTHLY,
-		});
-	elseif reference.isYearly then
-		tinsert(tooltipInfo, {
-			left = L.COMPLETED_YEARLY,
-		});
-	elseif reference.repeatable then
-		tinsert(tooltipInfo, {
-			left = L.COMPLETED_MULTIPLE,
-		});
-	end
-
 	-- TODO: Convert cost to an InformationType.
 	if reference.cost then
 		if type(reference.cost) == "table" then
