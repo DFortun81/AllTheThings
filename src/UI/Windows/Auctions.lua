@@ -375,7 +375,11 @@ app:CreateWindow("Auctions", {
 							end
 							
 							-- Process the Non-Collectible Items for Reagents
-							local reagentCache = app.GetDataMember("Reagents");
+							local reagentCache = AllTheThingsAD.Reagents;
+							if not reagentCache then
+								reagentCache = {};
+								AllTheThingsAD.Reagents = reagentCache;
+							end
 							if reagentCache and searchResultsByKey.itemID then
 								local cachedItems = searchResultsByKey.itemID;
 								searchResultsByKey.itemID = {};

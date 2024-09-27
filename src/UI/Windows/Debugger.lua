@@ -98,8 +98,7 @@ app:CreateWindow("Debugger", {
 				if addonName ~= appName then return; end
 				self:UnregisterEvent("ADDON_LOADED");
 				if not AllTheThingsDebugData then
-					AllTheThingsDebugData = app.GetDataMember("Debugger", {});
-					app.SetDataMember("Debugger", nil);
+					AllTheThingsDebugData = {};
 				end
 				self.rawData = AllTheThingsDebugData;
 				self.data.g = CloneClassInstance(self.rawData);

@@ -178,39 +178,7 @@ local function RemoveFromCollection(group)
 end
 
 -- Data Lib
-local attData;
 local AllTheThingsAD = {};			-- For account-wide data.
-local function SetDataMember(member, data)
-	AllTheThingsAD[member] = data;
-end
-local function GetDataMember(member, default)
-	attData = AllTheThingsAD[member];
-	if attData == nil then
-		AllTheThingsAD[member] = default;
-		return default;
-	else
-		return attData;
-	end
-end
-local function GetDataSubMember(member, submember, default)
-	attData = AllTheThingsAD[member];
-	if attData then
-		attData = attData[submember];
-		if attData == nil then
-			AllTheThingsAD[member][submember] = default;
-			return default;
-		else
-			return attData;
-		end
-	else
-		AllTheThingsAD[member] = { [submember] = default };
-		return default;
-	end
-end
-app.SetDataMember = SetDataMember;
-app.GetDataMember = GetDataMember;
-app.GetDataSubMember = GetDataSubMember;
-
 
 -- Color Lib
 local function GetProgressTextForRow(data)
@@ -1483,7 +1451,12 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		end
 
 		if itemID then
-			local reagentCache = app.GetDataSubMember("Reagents", itemID);
+			local reagentCache = AllTheThingsAD.Reagents;
+			if reagentCache then
+				reagentCache = reagentCache[itemID];
+			else
+				AllTheThingsAD.Reagents = {};
+			end
 			if reagentCache then
 				-- Crafted Items
 				if app.Settings:GetTooltipSetting("Show:CraftedItems") then
@@ -4601,23 +4574,8 @@ local ADDON_LOADED_HANDLERS = {
 		app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, accountWideSettings);
 
 		-- Check to see if we have a leftover ItemDB cache
-		GetDataMember("GroupQuestsByGUID", {});
-
-		-- Clean up settings
-		local oldsettings = {};
-		for i,key in ipairs({
-			"GroupQuestsByGUID",
-			"LocalizedCategoryNames",
-			"LocalizedFlightPathNames",
-			"Reagents",
-			"SoftReserves",
-			"SoftReservePersistence",
-		}) do
-			oldsettings[key] = AllTheThingsAD[key];
-		end
-		wipe(AllTheThingsAD);
-		for key,value in pairs(oldsettings) do
-			AllTheThingsAD[key] = value;
+		if not AllTheThingsAD.GroupQuestsByGUID then
+			AllTheThingsAD.GroupQuestsByGUID = {};
 		end
 
 		-- Wipe the Debugger Data

@@ -116,7 +116,12 @@ app:CreateWindow("Tradeskills", {
 			local skillCache = SearchForFieldContainer("spellID");
 			if skillCache then
 				-- Cache learned recipes and reagents
-				local reagentCache = app.GetDataMember("Reagents", {});
+				local reagentCache = AllTheThingsAD.Reagents;
+				if not reagentCache then
+					reagentCache = {};
+					AllTheThingsAD.Reagents = reagentCache;
+				end
+				
 				local learned, craftSkillID, tradeSkillID, shouldShowSpellRanks = 0, 0, 0, nil;
 				rawset(app.SpellNameToSpellID, 0, nil);
 				app.GetSpellName(0);

@@ -144,7 +144,6 @@ if app.Debugging and app.Version == "[Git]" then
 			print("Header " .. id .. " has " .. data[2] .. " references" .. (data[3] or "."), header.name);
 			tinsert(data, header);
 		end
-		app.SetDataMember("CUSTOM_HEADERS", CUSTOM_HEADERS);
 	end
 	cacheCreatureID = function(group, creatureID)
 		if creatureID > 0 then

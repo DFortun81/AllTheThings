@@ -134,22 +134,7 @@ local containsValue = app.containsValue;
 local indexOf = app.indexOf;
 
 -- Data Lib
-local attData;
 local AllTheThingsAD = {};			-- For account-wide data.
-local function SetDataMember(member, data)
-	AllTheThingsAD[member] = data;
-end
-app.SetDataMember = SetDataMember;
-local function GetDataMember(member, default)
-	attData = AllTheThingsAD[member];
-	if attData == nil then
-		AllTheThingsAD[member] = default;
-		return default;
-	else
-		return attData;
-	end
-end
-app.GetDataMember = GetDataMember;
 
 -- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
 -- i.e. Create a data group which contains no information but will attempt to populate itself when [loadField] is referenced
@@ -8445,9 +8430,10 @@ customWindowUpdates.AuctionData = function(self)
 						if AucAdvanced and AucAdvanced.API then AucAdvanced.API.CompatibilityMode(1, ""); end
 
 						-- Only allow a scan once every 15 minutes.
-						local cooldown, now = GetDataMember("AuctionScanCooldownTime", 0), time();
+						local cooldown = self.AuctionScanCooldownTime or 0;
+						local now = time();
 						if cooldown - now < 0 then
-							SetDataMember("AuctionScanCooldownTime", time() + 900);
+							self.AuctionScanCooldownTime = now + 900;
 							app.AuctionFrame:RegisterEvent("REPLICATE_ITEM_LIST_UPDATE");
 							C_AuctionHouse_ReplicateItems();
 						else
@@ -10004,7 +9990,7 @@ customWindowUpdates.Random = function(self)
 						['description'] = L.SEARCH_EVERYTHING_BUTTON_OF_DOOM,
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", appName);
+							self.RandomSearchFilter = appName;
 							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
@@ -10021,7 +10007,7 @@ customWindowUpdates.Random = function(self)
 						['description'] = L.ACHIEVEMENT_DESC,
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", "Achievement");
+							self.RandomSearchFilter = "Achievement";
 							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
@@ -10034,7 +10020,7 @@ customWindowUpdates.Random = function(self)
 						['description'] = L.ITEM_DESC,
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", "Item");
+							self.RandomSearchFilter = "Item";
 							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
@@ -10047,7 +10033,7 @@ customWindowUpdates.Random = function(self)
 						['description'] = L.INSTANCE_DESC,
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", "Instance");
+							self.RandomSearchFilter = "Instance";
 							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
@@ -10060,7 +10046,7 @@ customWindowUpdates.Random = function(self)
 						['description'] = L.DUNGEON_DESC,
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", "Dungeon");
+							self.RandomSearchFilter = "Dungeon";
 							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
@@ -10073,7 +10059,7 @@ customWindowUpdates.Random = function(self)
 						['description'] = L.RAID_DESC,
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", "Raid");
+							self.RandomSearchFilter = "Raid";
 							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
@@ -10086,7 +10072,7 @@ customWindowUpdates.Random = function(self)
 						['description'] = L.MOUNT_DESC,
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", "Mount");
+							self.RandomSearchFilter = "Mount";
 							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
@@ -10099,7 +10085,7 @@ customWindowUpdates.Random = function(self)
 						['description'] = L.PET_DESC,
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", "Pet");
+							self.RandomSearchFilter = "Pet";
 							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
@@ -10112,7 +10098,7 @@ customWindowUpdates.Random = function(self)
 						['description'] = L.QUEST_DESC,
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", "Quest");
+							self.RandomSearchFilter = "Quest";
 							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
@@ -10125,7 +10111,7 @@ customWindowUpdates.Random = function(self)
 						['description'] = L.TOY_DESC,
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", "Toy");
+							self.RandomSearchFilter = "Toy";
 							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
@@ -10138,7 +10124,7 @@ customWindowUpdates.Random = function(self)
 						['description'] = L.ZONE_DESC,
 						['visible'] = true,
 						['OnClick'] = function(row, button)
-							app.SetDataMember("RandomSearchFilter", "Zone");
+							self.RandomSearchFilter = "Zone";
 							self:SetData(mainHeader);
 							self:Reroll();
 							return true;
@@ -10181,7 +10167,7 @@ customWindowUpdates.Random = function(self)
 				local primePending = primeWindow.HasPendingUpdate
 
 				-- Call to our method and build a list to draw from if Prime has been opened
-				local method = not primePending and app.GetDataMember("RandomSearchFilter", "Instance");
+				local method = not primePending and self.RandomSearchFilter or "Instance";
 				if method then
 					rerollOption.text = L.REROLL_2 .. (method ~= appName and L[method:upper()] or method);
 					method = "Select" .. method;
@@ -10230,7 +10216,7 @@ customWindowUpdates.Random = function(self)
 			for i,o in ipairs(self.data.options) do
 				tinsert(self.data.g, o);
 			end
-			local method = app.GetDataMember("RandomSearchFilter", "Instance");
+			local method = self.RandomSearchFilter or "Instance";
 			rerollOption.text = L.REROLL_2 .. (method ~= appName and L[method:upper()] or method);
 		end
 
@@ -12714,25 +12700,11 @@ app.Startup = function()
 		end
 	end
 	accountWideData.Deaths = deaths;
-
-	-- Clean up non-allowed keys
-	local validKeys = {
-		"LinkedAccounts",
-		"LocalizedCategoryNames",
-		"LocalizedFlightPathNames",
-		"RandomSearchFilter"
-	};
-	local removeKeys = {};
-	for key,_ in pairs(AllTheThingsAD) do
-		if not contains(validKeys, key) then
-			tinsert(removeKeys, key);
-		end
+	
+	-- CRIEVE NOTE: Once the Sync Window is moved over from Classic, this can be removed.
+	if not AllTheThingsAD.LinkedAccounts then
+		AllTheThingsAD.LinkedAccounts = {};
 	end
-	for _,key in ipairs(removeKeys) do
-		app.PrintDebug("wiped invalid AD key",key)
-		AllTheThingsAD[key] = nil;
-	end
-	GetDataMember("LinkedAccounts", {});
 	-- app.PrintMemoryUsage("Startup:Done")
 end
 -- This needs to be the first OnStartup event processed

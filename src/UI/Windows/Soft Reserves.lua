@@ -132,6 +132,8 @@ else
 	end
 end
 
+-- Module Variable Cache
+local SoftReserves, SoftReservePersistence = {}, {};	-- These get replaced in OnLoad.
 local function ParseSoftReserve(guid, cmd, isSilentMode, isCurrentPlayer)
 	-- Attempt to parse the command.
 	if cmd and cmd ~= "" then
@@ -162,7 +164,7 @@ local function ParseSoftReserve(guid, cmd, isSilentMode, isCurrentPlayer)
 end
 local function PushSoftReserve(ignoreZero)
 	local guid, itemID, timeStamp = UnitGUID("player");
-	local reserves = app.GetDataMember("SoftReserves");
+	local reserves = SoftReserves;
 	if reserves then
 		local oldreserve = reserves[guid];
 		if oldreserve then
@@ -178,7 +180,7 @@ local function PushSoftReserve(ignoreZero)
 	end
 end
 local function PushSoftReserves(method, target)
-	local reserves = app.GetDataMember("SoftReserves");
+	local reserves = SoftReserves;
 	if reserves then
 		local count, length, msg, cmd = 7, 0, "!\tsrml", nil;
 		if not method then method = GetGroupType(); end
@@ -259,7 +261,7 @@ local function QuerySoftReserve(guid, cmd, target)
 			end
 		end
 	else
-		local reserve = rawget(app.GetDataMember("SoftReserves"), guid);
+		local reserve = rawget(SoftReserves, guid);
 		if reserve then
 			-- Parse out the itemID if possible.
 			local itemID = type(reserve) == 'number' and reserve or reserve[1];
@@ -304,7 +306,7 @@ local function SortByTextAndPriority(a, b)
 	end
 end
 local function UpdateSoftReserveInternal(guid, itemID, timeStamp, isCurrentPlayer)
-	local reserves = app.GetDataMember("SoftReserves");
+	local reserves = SoftReserves;
 	
 	-- Check the Old Reserve against the new one.
 	local oldreserve = reserves[guid];
@@ -353,7 +355,7 @@ local function UpdateSoftReserveInternal(guid, itemID, timeStamp, isCurrentPlaye
 	end
 end
 UpdateSoftReserve = function(guid, itemID, timeStamp, silentMode, isCurrentPlayer)
-	if IsInGroup() and app.GetDataMember("SoftReserves")[guid] and not IsPrimaryLooter() and app.Settings:GetTooltipSetting("SoftReservesLocked") then
+	if IsInGroup() and SoftReserves[guid] and not IsPrimaryLooter() and app.Settings:GetTooltipSetting("SoftReservesLocked") then
 		if not silentMode then
 			SendGUIDWhisper("The Soft Reserve is currently locked by your Master Looter. Please make sure to update your Soft Reserve before raid next time!", guid);
 		end
@@ -420,7 +422,7 @@ local function CHAT_MSG_ADDON_HANDLER(prefix, text, channel, sender, target)
 					if target == UnitName("player") then
 						return false;
 					else
-						local softReserve = app.GetDataMember("SoftReserves")[app.GUID];
+						local softReserve = SoftReserves[app.GUID];
 						response = "sr" .. "\t" .. app.GUID .. "\t" .. (softReserve and ((softReserve[1] or 0) .. "\t" .. (softReserve[2] or 0)) or "0\t0");
 					end
 				elseif a == "srml" then -- Soft Reserve (Master Looter) Command
@@ -556,8 +558,30 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 	end,
 	OnLoad = function(self, settings)
 		-- Check the format of the Soft Reserve Cache
-		local reserves = app.GetDataMember("SoftReserves", {});
-		local persistence = app.GetDataMember("SoftReservePersistence", {});
+		local reserves = settings.SoftReserves;
+		if not reserves then
+			reserves = AllTheThingsAD.SoftReserves;
+			if reserves then
+				AllTheThingsAD.SoftReserves = nil;
+			else
+				reserves = {};
+			end
+			settings.SoftReserves = reserves;
+		end
+		SoftReserves = reserves;	-- Now store it in the module variable.
+		local persistence = settings.SoftReservePersistence;
+		if not persistence then
+			persistence = AllTheThingsAD.SoftReservePersistence;
+			if persistence then
+				AllTheThingsAD.SoftReservePersistence = nil;
+			else
+				persistence = {};
+			end
+			settings.SoftReservePersistence = persistence;
+		end
+		AllTheThingsAD.SoftReserves = nil;
+		AllTheThingsAD.SoftReservePersistence = nil;
+		SoftReservePersistence = persistence;	-- Now store it in the module variable.
 		for guid,reserve in pairs(reserves) do
 			if type(reserve) == 'number' then
 				reserve = { reserve, time() };
@@ -589,6 +613,10 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 				app.WipeSearchCache();
 			end
 		end
+	end,
+	OnSave = function(self, settings)
+		if SoftReserves then settings.SoftReserves = SoftReserves; end
+		if SoftReservePersistence then settings.SoftReservePersistence = SoftReservePersistence; end
 	end,
 	OnRebuild = function(self)
 		if self.data then return true; end
@@ -762,7 +790,7 @@ SoftReserveWindow = app:CreateWindow("SoftReserves", {
 						if #g > 2 and not g[1]:match("FORMAT: ") then tinsert(pers, g); end
 						if #pers > 0 then
 							local success = 0;
-							local allpersistence, allsrs = app.GetDataMember("SoftReservePersistence"), app.GetDataMember("SoftReserves");
+							local allpersistence, allsrs = SoftReservePersistence, SoftReserves;
 							for i,g in ipairs(pers) do
 								local guid, itemID = PlayerGUIDFromInfo[g[1]], app.ParseItemID(g[2]);
 								if guid and itemID then
@@ -1200,7 +1228,7 @@ app.CreateSoftReserveUnit = app.ExtendClass("Unit", "SoftReserveUnit", "unit", {
 	["itemID"] = function(t)
 		local guid = t.guid;
 		if guid then
-			local reserve = rawget(app.GetDataMember("SoftReserves"), guid);
+			local reserve = rawget(SoftReserves, guid);
 			if reserve then
 				return type(reserve) == 'number' and reserve or reserve[1];
 			end
@@ -1209,11 +1237,11 @@ app.CreateSoftReserveUnit = app.ExtendClass("Unit", "SoftReserveUnit", "unit", {
 	["persistence"] = function(t)
 		local guid = t.guid;
 		if guid then
-			local reserve = rawget(app.GetDataMember("SoftReserves"), guid);
+			local reserve = rawget(SoftReserves, guid);
 			if reserve then
 				local itemID = type(reserve) == 'number' and reserve or reserve[1];
 				if itemID then
-					local persistence = rawget(app.GetDataMember("SoftReservePersistence"), guid);
+					local persistence = rawget(SoftReservePersistence, guid);
 					if persistence then return persistence[itemID]; end
 					return 0;
 				end
