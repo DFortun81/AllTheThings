@@ -1619,7 +1619,9 @@ end
 app.UpdateRawID = UpdateRawID;
 -- Temporary functions to update the cache without breaking ATT.
 local function UpdateRawIDs(field, ids)
-	app:RefreshDataQuietly("UpdateRawIDs", true);
+	if ids and #ids > 0 then
+		app:RefreshDataQuietly("UpdateRawIDs", true);
+	end
 end
 app.UpdateRawIDs = UpdateRawIDs;
 
@@ -3389,200 +3391,6 @@ app.CreateCurrencyClass = app.CreateClass("Currency", "currencyID", {
 });
 end)();
 
--- Flight Path Lib
-(function()
-local function distance( x1, y1, x2, y2 )
-	return math.sqrt( (x2-x1)^2 + (y2-y1)^2 )
-end
-local arrOfNodes = app.FlightPathMapIDs;
-app.AddEventHandler("OnReady", function()
-	-- Cache Flight Path Data once the addon is ready.
-	local newNodes, anyNew = {}, false;
-	for i,mapID in ipairs(arrOfNodes) do
-		local allNodeData = C_TaxiMap.GetTaxiNodesForMap(mapID);
-		if allNodeData and #allNodeData > 0 then
-			for j,nodeData in ipairs(allNodeData) do
-				if nodeData.name then
-					AllTheThingsAD.LocalizedFlightPathNames[nodeData.nodeID] = nodeData.name;
-					if #SearchForField("flightpathID", nodeData.nodeID) < 1 then
-						newNodes[nodeData.nodeID] = nodeData.name;
-						anyNew = true;
-					end
-				end
-			end
-		end
-	end
-	if anyNew then
-		print("Found new flight path data:");
-		for i,name in pairs(newNodes) do
-			print(i, name);
-		end
-		SetDataMember("NewFlightPathData", newNodes);
-	end
-end);
-app.CacheFlightPathDataForMap = function(mapID, nodes)
-	local count = 0;
-	local temp = {};
-	for nodeID,_ in pairs(SearchForFieldContainer("flightpathID")) do
-		for i,node in ipairs(_) do
-			if not node.u and node.coords and node.coords[1][3] == mapID then
-				if not node.r or node.r == app.FactionID then
-					temp[nodeID] = node;
-					count = count + 1;
-				end
-			end
-		end
-	end
-	if count > 0 then
-		if count > 1 then
-			count = 0;
-			local mapID = app.CurrentMapID;
-			if mapID then
-				local pos = C_Map_GetPlayerMapPosition(mapID, "player");
-				if pos then
-					local px, py = pos:GetXY();
-					px, py = px * 100, py * 100;
-
-					-- Select the best flight path node.
-					for nodeID,node in pairs(temp) do
-						local coord = node.coords and node.coords[1];
-						if coord then
-							-- Allow for a little bit of leeway.
-							if distance(px, py, coord[1], coord[2]) < 0.6 then
-								nodes[nodeID] = true;
-							end
-						end
-					end
-				end
-			end
-		else
-			for nodeID,_ in pairs(temp) do
-				nodes[nodeID] = true;
-			end
-		end
-	end
-	return count;
-end
-app.CacheFlightPathDataForTarget = function(nodes)
-	local guid = UnitGUID("npc") or UnitGUID("target");
-	if guid then
-		---@diagnostic disable-next-line: undefined-field
-		local type, _, _, _, _, npcID = ("-"):split(guid);
-		if type == "Creature" and npcID then
-			npcID = tonumber(npcID);
-			local count = 0;
-			local searchResults = SearchForField("creatureID", npcID);
-			if searchResults and #searchResults > 0 then
-				for i,group in ipairs(searchResults) do
-					if group.flightpathID and not group.nmr and not group.nmc and (not group.u or group.u > 1) then
-						nodes[group.flightpathID] = true;
-						count = count + 1;
-					end
-				end
-			end
-			return count;
-		end
-	end
-	return 0;
-end
-app.CreateFlightPath = app.CreateClass("FlightPath", "flightpathID", {
-	["text"] = function(t)
-		return t.name;
-	end,
-	["name"] = function(t)
-		return AllTheThingsAD.LocalizedFlightPathNames[t.flightpathID] or "Visit the Flight Master to cache.";
-	end,
-	["icon"] = function(t)
-		local r = t.r;
-		if r then
-			if r == HORDE_FACTION_ID then
-				return app.asset("fp_horde");
-			else
-				return app.asset("fp_alliance");
-			end
-		end
-		return app.asset("fp_neutral");
-	end,
-	["description"] = function(t)
-		return "Flight paths are cached when you look at the flight master at each location.\n  - Crieve";
-	end,
-	["collectible"] = function(t)
-		return app.Settings.Collectibles.FlightPaths;
-	end,
-	["collected"] = function(t)
-		if app.CurrentCharacter.FlightPaths[t.flightpathID] then return 1; end
-		if app.Settings.AccountWide.FlightPaths and ATTAccountWideData.FlightPaths[t.flightpathID] then return 2; end
-		if t.altQuests then
-			for i,questID in ipairs(t.altQuests) do
-				if IsQuestFlaggedCompleted(questID) then
-					return 2;
-				end
-			end
-		end
-	end,
-	["nmc"] = function(t)
-		local c = t.c;
-		if c and not contains(c, app.ClassIndex) then
-			rawset(t, "nmc", true); -- "Not My Class"
-			return true;
-		end
-		rawset(t, "nmc", false); -- "My Class"
-		return false;
-	end,
-	["nmr"] = function(t)
-		local r = t.r;
-		return r and r ~= app.FactionID;
-	end,
-});
-app.events.GOSSIP_SHOW = function()
-	local knownNodeIDs = {};
-	if app.CacheFlightPathDataForTarget(knownNodeIDs) > 0 then
-		local any = false;
-		for nodeID,_ in pairs(knownNodeIDs) do
-			nodeID = tonumber(nodeID);
-			if not app.CurrentCharacter.FlightPaths[nodeID] then
-				local searchResults = SearchForField("flightpathID", nodeID);
-				app.SetCollected(#searchResults > 0 and searchResults[1], "FlightPaths", nodeID, true);
-				any = true;
-			end
-		end
-		if any then
-			app:RefreshDataQuietly("GOSSIP_SHOW", true);
-		end
-	end
-end
-app.events.TAXIMAP_OPENED = function()
-	local knownNodeIDs = {};
-	app.CacheFlightPathDataForTarget(knownNodeIDs);
-	app.CacheFlightPathDataForMap(app.CurrentMapID, knownNodeIDs);
-
-	-- apparently this can be nil somehow
-	if not app.CurrentMapID then return end
-
-	local allNodeData = C_TaxiMap.GetAllTaxiNodes(app.CurrentMapID);
-	if allNodeData then
-		for j,nodeData in ipairs(allNodeData) do
-			if nodeData.state and nodeData.state < 2 then
-				knownNodeIDs[nodeData.nodeID] = true;
-			end
-		end
-	end
-
-	local any = false;
-	for nodeID,_ in pairs(knownNodeIDs) do
-		nodeID = tonumber(nodeID);
-		if not app.CurrentCharacter.FlightPaths[nodeID] then
-			local searchResults = SearchForField("flightpathID", nodeID);
-			app.SetCollected(#searchResults > 0 and searchResults[1], "FlightPaths", nodeID, true);
-			any = true;
-		end
-	end
-	if any then
-		app:RefreshDataQuietly("TAXIMAP_OPENED", true);
-	end
-end
-end)();
-
 -- NPC Lib
 (function()
 -- NPC Model Harvester (also acquires the displayID)
@@ -4937,6 +4745,9 @@ local ADDON_LOADED_HANDLERS = {
 
 		-- Account Wide Settings
 		local accountWideSettings = app.Settings.AccountWide;
+		local function IsCached(field, id)
+			return currentCharacter[field][id] or nil
+		end
 		local function IsAccountCached(field, id)
 			return accountWideData[field][id] or nil
 		end
@@ -5074,6 +4885,7 @@ local ADDON_LOADED_HANDLERS = {
 				container[id] = state
 			end
 		end
+		app.IsCached = IsCached;
 		app.IsAccountCached = IsAccountCached;
 		app.SetAccountCollected = SetAccountCollected;
 		app.SetAccountCollectedForSubType = SetAccountCollectedForSubType;

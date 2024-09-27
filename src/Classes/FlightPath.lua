@@ -1,114 +1,160 @@
-
+do
 local _, app = ...
 local L = app.L
 
 -- Globals
-local setmetatable, ipairs, pairs
-	= setmetatable, ipairs, pairs
-
--- WoW API Cache
+local ipairs, pairs, tonumber
+	= ipairs, pairs, tonumber
+local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes, GetTaxiMapID, UnitGUID
+	= C_TaxiMap.GetTaxiNodesForMap, C_TaxiMap.GetAllTaxiNodes, GetTaxiMapID, UnitGUID
 
 -- Module
 local contains = app.contains
-
--- App
-local localizedFlightPathNames
-local FlightPathMapIDs = app.FlightPathMapIDs
-local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes, GetTaxiMapID
-	= C_TaxiMap.GetTaxiNodesForMap, C_TaxiMap.GetAllTaxiNodes, GetTaxiMapID
-local HarvestFlightPaths = function(requestID)
-	-- app.PrintDebug("HarvestFlightPaths")
-
-	local allNodeData
-	for _,mapID in ipairs(FlightPathMapIDs) do
-		allNodeData = C_TaxiMap_GetTaxiNodesForMap(mapID)
-		if allNodeData and #allNodeData > 0 then
-			for _,nodeData in ipairs(allNodeData) do
-				localizedFlightPathNames[nodeData.nodeID] = nodeData.name
-			end
-		else
-			print("No taxi nodes found for map", mapID);
-		end
-	end
-
-	-- app.PrintDebugPrior("done",requestID,localizedFlightPathNames[requestID])
-	return requestID and localizedFlightPathNames[requestID]
-end
+local SearchForField = app.SearchForField
+local IsQuestFlaggedCompleted = app.IsQuestFlaggedCompleted
 
 -- Flight Path Lib
-do
-	local KEY, CACHE = "flightpathID", "FlightPaths"
-	app.CreateFlightPath = app.CreateClass("FlightPath", KEY, {
-		name = function(t)
-			local id = t[KEY]
-			return localizedFlightPathNames[id] or HarvestFlightPaths(id) or L.VISIT_FLIGHT_MASTER
-		end,
-		icon = function(t)
-			local r = t.r
-			if r then
-				return r == Enum.FlightPathFaction.Horde and app.asset("fp_horde") or app.asset("fp_alliance")
+local localizedFlightPathNames;
+local KEY, CACHE = "flightpathID", "FlightPaths"
+app.CreateFlightPath = app.CreateClass("FlightPath", KEY, {
+	name = function(t)
+		return localizedFlightPathNames[t[KEY]] or L.VISIT_FLIGHT_MASTER
+	end,
+	icon = function(t)
+		local r = t.r
+		if r then
+			return app.asset(r == Enum.FlightPathFaction.Horde and "fp_horde" or "fp_alliance")
+		end
+		return app.asset("fp_neutral")
+	end,
+	collectible = function(t) return app.Settings.Collectibles[CACHE] end,
+	collected = function(t)
+		local id = t[KEY]
+		-- character collected
+		if app.IsCached(CACHE, id) then return 1 end
+		-- account-wide collected
+		if app.Settings.AccountWide[CACHE] and app.IsAccountCached(CACHE, id) then return 2 end
+		if t.altQuests then
+			for i,questID in ipairs(t.altQuests) do
+				if IsQuestFlaggedCompleted(questID) then
+					return 2;
+				end
 			end
-			return app.asset("fp_neutral")
-		end,
-		collectible = function(t) return app.Settings.Collectibles[CACHE] end,
-		collected = function(t)
-			local id = t[KEY]
-			-- character collected
-			if app.IsCached(CACHE, id) then return 1 end
-			-- account-wide collected
-			if app.IsAccountCached(CACHE, id) then return 2 end
-		end,
-		trackable = app.ReturnTrue,
-		saved = function(t)
-			return app.IsCached(CACHE, t[KEY])
+		end
+	end,
+})
+
+local function CacheFlightPathDataForTarget(nodes)
+	local guid = UnitGUID("npc") or UnitGUID("target");
+	if guid then
+		---@diagnostic disable-next-line: undefined-field
+		local type, _, _, _, _, npcID = ("-"):split(guid);
+		if type == "Creature" and npcID then
+			local searchResults = SearchForField("creatureID", tonumber(npcID));
+			if searchResults and #searchResults > 0 then
+				local count = 0;
+				for i,group in ipairs(searchResults) do
+					if group.flightpathID and not group.nmr and not group.nmc and (not group.u or group.u > 1) then
+						nodes[group.flightpathID] = true;
+						count = count + 1;
+					end
+				end
+				return count;
+			end
+		end
+	end
+	return 0;
+end
+app.AddEventRegistration("GOSSIP_SHOW", function()
+	local knownNodeIDs = {};
+	if CacheFlightPathDataForTarget(knownNodeIDs) > 0 then
+		local newFPs
+		for nodeID,_ in pairs(knownNodeIDs) do
+			if not app.IsCached(CACHE, nodeID) then
+				local searchResults = SearchForField(KEY, nodeID);
+				if searchResults and #searchResults > 0 then
+					app.SetCollected(searchResults[1], CACHE, nodeID, true);
+					if not newFPs then newFPs = { nodeID }
+					else newFPs[#newFPs + 1] = nodeID end
+				end
+			end
+		end
+		app.UpdateRawIDs(KEY, newFPs)
+	end
+end)
+app.AddEventRegistration("TAXIMAP_OPENED", function()
+	local mapID = GetTaxiMapID() or -1
+	-- app.PrintDebug("TAXIMAP_OPENED",mapID)
+	if mapID < 0 then return end
+	if app.Contributor and not contains(FlightPathMapIDs, mapID) then
+		app.print("Missing FlightPath Map:",app.GetMapName(mapID) or UNKNOWN,mapID)
+	end
+	local allNodeData = C_TaxiMap_GetAllTaxiNodes(mapID)
+	if allNodeData then
+		local newFPs, nodeID
+		for _,nodeData in ipairs(allNodeData) do
+			nodeID = nodeData.nodeID
+			localizedFlightPathNames[nodeID] = nodeData.name
+			-- app.PrintDebug("FP",nodeID,nodeData.name,nodeData.state)
+			local fp = app.SearchForObject(KEY, nodeID, "key")
+			if nodeData.state and nodeData.state < 2 then
+				if not app.IsCached(CACHE, nodeID) then
+					app.SetCollected(fp, CACHE, nodeID, true)
+					if not newFPs then newFPs = { nodeID }
+					else newFPs[#newFPs + 1] = nodeID end
+				end
+			end
+			if app.Contributor and (not fp or not app.Modules.Filter.Filters.InGame(fp)) then
+				app.print("FlightPath",nodeData.name,"#",nodeID,"is available on the Map but is not found in game for ATT!")
+				app.Audio:PlayReportSound();
+			end
+		end
+		app.UpdateRawIDs(KEY, newFPs)
+	end
+end)
+app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
+	if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
+	
+	-- Create the Localization table for Flight Paths.
+	localizedFlightPathNames = AllTheThingsAD.LocalizedFlightPathNames;
+	if not localizedFlightPathNames then
+		-- Convert the old nested table into an appropriately named one without any nesting.
+		local UserLocale = AllTheThingsAD.UserLocale
+		if UserLocale then
+			localizedFlightPathNames = UserLocale.FLIGHTPATH_NAMES or {};
+			AllTheThingsAD.UserLocale = nil;
+		else
+			localizedFlightPathNames = {};
+		end
+		AllTheThingsAD.LocalizedFlightPathNames = localizedFlightPathNames;
+	end
+	
+	-- Push the default flight path names to the index.
+	local flightPathNames = app.FlightPathNames
+	app.FlightPathNames = nil;
+	setmetatable(localizedFlightPathNames, {
+		__index = function(t, id)
+			local allNodeData
+			for _,mapID in ipairs(app.FlightPathMapIDs) do
+				allNodeData = C_TaxiMap_GetTaxiNodesForMap(mapID)
+				if allNodeData and #allNodeData > 0 then
+					for _,nodeData in ipairs(allNodeData) do
+						t[nodeData.nodeID] = nodeData.name
+					end
+				else
+					print("No taxi nodes found for map", mapID);
+				end
+			end
+			
+			-- Now that we've run this once, reassign the default names as the fallback.
+			if flightPathNames then
+				setmetatable(t, { __index = flightPathNames })
+			else
+				setmetatable(t, nil)
+			end
+			return t[id]
 		end,
 	})
-	app.AddEventRegistration("TAXIMAP_OPENED", function()
-		local mapID = GetTaxiMapID() or -1
-		-- app.PrintDebug("TAXIMAP_OPENED",mapID)
-		if mapID < 0 then return end
-		if app.Contributor then
-			if not contains(FlightPathMapIDs, mapID) then
-				app.print("Missing FlightPath Map:",app.GetMapName(mapID) or UNKNOWN,mapID)
-			end
-		end
-		local InGame = app.Modules.Filter.Filters.InGame
-		local allNodeData = C_TaxiMap_GetAllTaxiNodes(mapID)
-		if allNodeData then
-			local newFPs, nodeID
-			for _,nodeData in ipairs(allNodeData) do
-				nodeID = nodeData.nodeID
-				localizedFlightPathNames[nodeID] = nodeData.name
-				-- app.PrintDebug("FP",nodeID,nodeData.name,nodeData.state)
-				local fp = app.SearchForObject(KEY, nodeID, "key")
-				if nodeData.state and nodeData.state < 2 then
-					app.SetCollected(fp, CACHE, nodeID, true)
-					-- TODO: remove once SetCollected handles Updates also
-					if not app.IsAccountCached(CACHE, nodeID) then
-						if not newFPs then newFPs = { nodeID }
-						else newFPs[#newFPs + 1] = nodeID end
-					end
-				end
-				if app.Contributor then
-					if not fp or not InGame(fp) then
-						app.print("FlightPath",nodeData.name,"#",nodeID,"is available on the Map but is not found in game for ATT!")
-						app.Audio:PlayReportSound();
-					end
-				end
-			end
-			app.UpdateRawIDs(KEY, newFPs)
-		end
-	end)
-	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
-		if not currentCharacter[CACHE] then currentCharacter[CACHE] = {} end
-		if not accountWideData[CACHE] then accountWideData[CACHE] = {} end
-		local UserLocale = AllTheThingsAD.UserLocale
-		if not UserLocale.FLIGHTPATH_NAMES then UserLocale.FLIGHTPATH_NAMES = {} end
-		localizedFlightPathNames = UserLocale.FLIGHTPATH_NAMES
-		local flightPathNames = app.FlightPathNames
-		if flightPathNames then
-			app.FlightPathNames = nil
-			setmetatable(localizedFlightPathNames, { __index = flightPathNames })
-		end
-	end)
+end)
 end

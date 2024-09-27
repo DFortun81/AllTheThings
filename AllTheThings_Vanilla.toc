@@ -87,6 +87,7 @@ src\Classes\Quests.lua
 src\Classes\Item.Classic.lua
 src\Classes\Encounter.lua
 src\Classes\Expansion.lua
+src\Classes\FlightPath.lua
 src\Classes\Maps.lua
 src\Classes\Objects.lua
 src\Classes\Category.lua

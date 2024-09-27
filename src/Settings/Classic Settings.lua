@@ -1189,13 +1189,6 @@ settings.UpdateMode = function(self, doRefresh)
 	end
 	self.Collectibles.Loot = self:Get("LootMode");
 
-	app:UnregisterEvent("GOSSIP_SHOW");
-	app:UnregisterEvent("TAXIMAP_OPENED");
-	if self:Get("Thing:FlightPaths") or self:Get("DebugMode") then
-		app:RegisterEvent("GOSSIP_SHOW");
-		app:RegisterEvent("TAXIMAP_OPENED");
-	end
-
 	-- FORCE = Force Update
 	-- 1 = Force Update IF NOT Skip
 	-- not = Soft Update

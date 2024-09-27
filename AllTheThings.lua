@@ -13033,12 +13033,6 @@ app.Startup = function()
 	AllTheThingsAD = LocalizeGlobalIfAllowed("AllTheThingsAD", true);	-- For account-wide data.
 	-- Cache the Localized Category Data
 	AllTheThingsAD.LocalizedCategoryNames = setmetatable(AllTheThingsAD.LocalizedCategoryNames or {}, { __index = app.CategoryNames });
-	-- Add User Locale data as a fallback for Global Locale data
-	if not AllTheThingsAD.UserLocale then
-		AllTheThingsAD.UserLocale = {};
-	end
-	L = setmetatable(app.L, { __index = AllTheThingsAD.UserLocale });
-	app.L = L;
 	app.CategoryNames = nil;
 
 	-- Character Data Storage
@@ -13124,7 +13118,7 @@ app.Startup = function()
 	local validKeys = {
 		"LinkedAccounts",
 		"LocalizedCategoryNames",
-		"UserLocale",
+		"LocalizedFlightPathNames",
 		"RandomSearchFilter"
 	};
 	local removeKeys = {};
