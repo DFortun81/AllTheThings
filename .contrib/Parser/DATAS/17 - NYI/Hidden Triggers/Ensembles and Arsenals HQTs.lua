@@ -394,7 +394,11 @@ q(75449),	-- Ensemble: Waveborne Diplomat's Regalia
 q(77569),	-- High Scholar's Arcana
 q(78218),	-- Sky-Captain's Masquerade Attire
 
------- Zul'Gurub (10.0.7) ------
+------ Dungeons ------
+-- Deadmines
+q(42778),	-- Ensemble: Blackened Defias Armor
+
+-- Zul'Gurub (10.0.7)
 q(74720),	-- Ensemble: Zandalar Haruspec
 q(74721),	-- Ensemble: Zandalar Predator
 q(74722),	-- Ensemble: Zandalar Illusionist
@@ -408,8 +412,8 @@ q(74730),	-- Ensemble: Bloodtinged Cloth
 q(74732),	-- Ensemble: Blooddrenched Leather
 q(74733),	-- Ensemble: Bloodstained Mail
 q(74734),	-- Ensemble: Bloodsoaked Plate
-
------- Trial of Valor ------
+------ Raids ------
+--Trial of Valor
 q(45208),	-- Ensemble: Vestment of the Chosen Dead [Normal]
 q(45223),	-- Ensemble: Vestment of the Chosen Dead [Heroic]
 q(45224),	-- Ensemble: Vestment of the Chosen Dead [Mythic]
@@ -426,4 +430,101 @@ q(45234),	-- Ensemble: Funerary Plate of the Chosen Dead [Normal]
 q(45235),	-- Ensemble: Funerary Plate of the Chosen Dead [Heroic]
 q(45236),	-- Ensemble: Funerary Plate of the Chosen Dead [Mythic]
 q(45237),	-- Ensemble: Funerary Plate of the Chosen Dead [LFR]
+
+------ Trading Post Arsenals ------
+q(77336),	-- Armaments of the Light Avenger
+q(65568),	-- Arsenal: Blades of Elune
+q(82247),	-- Arsenal: Blazing Felfire Armaments
+
+q(79314),	-- Arsenal: Skyborn Blades
+q(81997),	-- Arsenal: Stormrider's Bronze Stormhammers
+q(81996),	-- Arsenal: Stormrider's Dark Stormhammers
+q(81998),	-- Arsenal: Stormrider's Silver Stormhammers
+q(78822),	-- Arsenal: Stormrider's Stormhammers
+q(77707),	-- Ashamane's Blessings of Rebirth
+q(77741),	-- Battle Magisters Enchantments
+q(77338),	-- Blood Onyx Blades
+q(77750),	-- Hornstrider Hunters Preference
+q(77709),	-- Instruments of the Alluring Call
+q(77706),	-- Nathreza Blasphemer's Glaives
+q(77708),	-- Possessed Watcher Arsenal
+q(77710),	-- Savage Champion’s Aggression
+q(77337),	-- Secrets of the Unnamed Cult
+q(77752),	-- Tools of Krag'wa's Executor
+q(77749),	-- Treasure of the Silver Hoarder
+q(77705),	-- Webbed Saronite Weaponry
+
+------ Trading Post Ensembles ------
+q(77699),	-- Ashamane's Vestment of Rebirth
+q(77740),	-- Battle Magisters Regalia
+q(77567),	-- Blood Onyx Uniform
+q(65696),	-- Ensemble: Battlewraps of the Honored Valarjar
+q(65719),	-- Ensemble: Bones of the Bloodhunter
+q(78712),	-- Ensemble: Burden of Unrelenting Justice
+q(72080),	-- Ensemble: Corrupted Runelord's Regalia
+q(65671),	-- Ensemble: Darkmoon Harlequin's Bells
+q(82267),	-- Ensemble: Deepest Depths Diver Suit
+q(80335),	-- Ensemble: Fearless Buccaneer's Slops
+q(65502),	-- Ensemble: Fel-Automaton Exoplate
+q(79708),	-- Ensemble: Gleaming Burden of Unrelenting Justice
+q(72070),	-- Ensemble: Glorious Dragonrider's Mail
+q(72133),	-- Ensemble: Helarjar Berserker Warplate
+q(72132),	-- Ensemble: Kvaldir Scout Leathers
+q(79209),	-- Ensemble: Love Witch's Attire
+q(79709),	-- Ensemble: Moonlit Burden of Unrelenting Justice
+q(83712),	-- Ensemble: Plunderlord's Radiant Finery
+q(83989),	-- Ensemble: Ragged Harvest Golem
+q(79468),	-- Ensemble: Spring Reveler's Lavender Apparel
+q(79467),	-- Ensemble: Spring Reveler's Lavender Collection
+q(78644),	-- Ensemble: Scarlet Zealots Trappings
+q(82140),	-- Ensemble: Sunny Tropical Beachwear
+q(82233),	-- Ensemble: Sunny Tropical Swimwear
+q(65720),	-- Ensemble: Swashbuckling Buccaneer's Slops
+q(72082),	-- Ensemble: Sylvan Stalker’s Leathers
+q(65675),	-- Ensemble: Trapper's Munitions
+q(76230),	-- Ensemble: Vagabond's Aquatic Threads
+q(65678),	-- Ensemble: Vagabond's Azure Threads
+q(76233),	-- Ensemble: Vagabond's Brick Threads
+q(76234),	-- Ensemble: Vagabond's Camo Threads
+q(72829),	-- Ensemble: Vagabond's Carrot Threads
+q(65723),	-- Ensemble: Vagabond's Crimson Threads
+q(76235),	-- Ensemble: Vagabond's Deep Threads
+q(76232),	-- Ensemble: Vagabond's Faded Threads
+q(76238),	-- Ensemble: Vagabond's Lively Threads
+q(65570),	-- Ensemble: Vagabond's Midnight Threads
+q(72812),	-- Ensemble: Vagabond's Rosy Threads
+q(76239),	-- Ensemble: Vagabond’s Sepia Threads
+q(65737),	-- Ensemble: Vagabond's Snowy Threads
+q(76229),	-- Ensemble: Vagabond's Sunny Threads
+q(65672),	-- Ensemble: Vagabond's Violet Threads
+q(65533),	-- Ensemble: Vestment of the Honored Valarjar
+q(76219),	-- Ensemble: Wanderer's Aquatic Trappings
+q(65677),	-- Ensemble: Wanderer's Azure Trappings
+q(76222),	-- Ensemble: Wanderer's Brick Trappings
+q(76223),	-- Ensemble: Wanderer's Camo Trappings
+q(72830),	-- Ensemble: Wanderer's Carrot Trappings
+q(65721),	-- Ensemble: Wanderer's Crimson Trappings
+q(76224),	-- Ensemble: Wanderer's Deep Trappings
+q(76221),	-- Ensemble: Wanderer's Faded Trappings
+q(76227),	-- Ensemble: Wanderer's Lively Trappings
+q(65648),	-- Ensemble: Wanderer's Midnight Trappings
+q(72811),	-- Ensemble: Wanderer's Rosy Trappings
+q(76228),	-- Ensemble: Wanderer’s Sepia Trappings
+q(65736),	-- Ensemble: Wanderer's Snowy Trappings
+q(76218),	-- Ensemble: Wanderers Sunny Trappings
+q(65673),	-- Ensemble: Wanderer's Violet Trappings
+q(78725),	-- Ensemble: Wastewander Tracker's Kit
+q(77751),	-- Hornstrider Hunters Camouflage
+q(77753),	-- Imminence of Krag'wa's Executor
+q(77704),	-- Jewels of the Alluring Call
+q(77701),	-- Nathreza Blasphemer's Flames
+q(77333),	-- Plate of the Light Avenger
+q(77702),	-- Possessed Watcher Guise
+q(77703),	-- Savage Champion’s Trophies
+q(77748),	-- Scales of the Silver Hoarder
+q(77506),	-- Silk of the Unnamed Cult
+q(78217),	-- Sky-Captain's Formal Attire
+q(77700),	-- SWebbed Saronite Exoskeleton
+
+
 --]]

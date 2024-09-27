@@ -267,7 +267,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(79748),	-- Ensemble: Chronomancer Regalia
 		q(79749),	-- Ensemble: Chronomancer Regalia
 		q(79750),	-- Ensemble: Chronomancer Regalia
-		q(82267),	-- Ensemble: Dark Diver Suit
 		q(79829),	-- Ensemble: Dawnwatcher's Scale Armor
 		q(79830),	-- Ensemble: Dawnwatcher's Scale Armor
 		q(79831),	-- Ensemble: Dawnwatcher's Scale Armor
@@ -420,14 +419,11 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(79835),	-- Ensemble: Yaungol Slayer Battlegear
 		q(79836),	-- Ensemble: Yaungol Slayer Battlegear
 		q(79837),	-- Ensemble: Yaungol Slayer Battlegear
-		q(82140),	-- Ensemble: Yellow Tropical
-		q(82233),	-- Ensemble: Yellow Tropical Swimwear
 		q(84258),	-- Tusks of Mannoroth (itemID 227550)
 
 		-- Arsenals
 		q(80467),	-- Arsenal: Aldrachi Blasphemer's Glaives
 		q(80459),	-- Arsenal: Armaments of the Holy Avenger
-		q(82247),	-- Arsenal: Blazing Felfire Armaments
 		q(80481),	-- Arsenal: Dreadsquall Hunter's Preference
 		q(80465),	-- Arsenal: Ela'lothen's Blessings of Rebirth (same ID as Ensemble?)
 		--q(),	-- Arsenal: Exodar Peacekeeper's Armaments
@@ -444,7 +440,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		-- Exists only as spellID now
 		--q(82319),	-- Arsenal: Quel'Serrar Fireborn Blades
 		--q(82318),	-- Arsenal: Quel'Serrar Seaborn Blades
-		--q(79314),	-- Arsenal: Quel'Serrar Skyborn Blades
 		--q(78844),	-- Ensemble: Additional Tokens of Lost Embaari
 		--q(78845),	-- Ensemble: Additional Tokens of Telhamat
 		--q(81991),	-- Ensemble: Champion Stormrider's Attire

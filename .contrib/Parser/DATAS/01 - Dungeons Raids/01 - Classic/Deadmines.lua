@@ -60,23 +60,6 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 					iensemble(142273, {	-- Ensemble: Blackened Defias Armor
 						["timeline"] = { ADDED_7_1_0 },
 						["classes"] = { ROGUE },
-						["_groups"] = { -- TODO: Strip
-							i(10399, {	-- Blackened Defias Armor
-								["timeline"] = { ADDED_7_1_0 },
-							}),
-							i(10401, {	-- Blackened Defias Gloves
-								["timeline"] = { ADDED_7_1_0 },
-							}),
-							i(10403, {	-- Blackened Defias Belt
-								["timeline"] = { ADDED_7_1_0 },
-							}),
-							i(10400, {	-- Blackened Defias Leggings
-								["timeline"] = { ADDED_7_1_0 },
-							}),
-							i(10402, {	-- Blackened Defias Boots
-								["timeline"] = { ADDED_7_1_0 },
-							}),
-						},
 					}),
 				},
 			}),
@@ -877,11 +860,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		inst(63, {	-- Deadmines
 			q(35586),	-- Deadmines Reward Quest - Normal completion
 			q(35587),	-- Deadmines Reward Quest - Heroic completion
-		}),
-	}),
-	expansion(EXPANSION.LEGION, {
-		inst(63, {	-- Deadmines
-			q(42778),	-- [Scarlet Crusader] When completing 44930/using Ensemble: Blackened Defias Armor
 		}),
 	}),
 });

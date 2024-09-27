@@ -7560,8 +7560,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(69840),	-- Enraged Sapphire
 			q(69849),	-- Enraged Steamburst Elemental
 			q(65569),	-- Ensemble: Twisted Arcanum Regalia
-			q(65671),	-- Ensemble: Darkmoon Harlequin's Bells
-			q(65675),	-- Ensemble: Trapper's Munitions
 			q(65676),	-- Ensemble: Chains of the Honored Valarjar
 			q(65716),	-- Ensemble: Vestments of the Nightmare Forest
 			q(65734),	-- Ensemble: Battleplate of the Honored Valarjar
@@ -7688,7 +7686,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(65710),	--
 			q(65712),	--
 			q(65714),	--
-			q(65719),	--
 			q(65722),	--
 			q(65740),	--
 			q(65759),	--
@@ -8343,8 +8340,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(66925),	-- [DNT] Boar-B-Q
 			q(72384),	-- Valdrakken Tour
 			q(72085),	--
-			q(72829),	--
-			q(72830),	--
 			q(74898),	--
 		})),
 
@@ -8566,28 +8561,12 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75536),	--
 			q(75605),	--
 			q(76198),	--
-			q(76218),	--
-			q(76219),	--
 			q(76220),	--
-			q(76221),	--
-			q(76222),	--
-			q(76223),	--
-			q(76224),	--
 			q(76225),	--
 			q(76226),	--
-			q(76227),	--
-			q(76228),	--
-			q(76229),	--
-			q(76230),	--
 			q(76231),	--
-			q(76232),	--
-			q(76233),	--
-			q(76234),	--
-			q(76235),	--
 			q(76236),	--
 			q(76237),	--
-			q(76238),	--
-			q(76239),	--
 			q(76245),	--
 			q(76289),	--
 			q(76360),	--
@@ -8625,14 +8604,8 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(77418),	--
 			q(77419),	--
 			q(77435),	--
-			q(77506),	--
-			q(77567),	--
 			q(77691),	--
 			q(77883),	--
-			q(77333),	--
-			q(77336),	--
-			q(77337),	--
-			q(77338),	--
 		})),
 
 		-- 10.1.7
@@ -8643,18 +8616,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(75938),	-- Test
 			q(75369),	-- Use Your Coin!
 			q(77615),	--
-			q(77699),	--
-			q(77700),	--
-			q(77701),	--
-			q(77702),	--
-			q(77703),	--
-			q(77704),	--
-			q(77705),	--
-			q(77706),	--
-			q(77707),	--
-			q(77708),	--
-			q(77709),	--
-			q(77710),	--
 			q(77790),	--
 			q(77861),	--
 			q(78161),	--
@@ -8737,15 +8698,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(77694),	--
 			q(77695),	--
 			q(77738),	--
-			q(77740),	--
-			q(77741),	--
 			q(77742),	--
-			q(77748),	--
-			q(77749),	--
-			q(77750),	--
-			q(77751),	--
-			q(77752),	--
-			q(77753),	--
 			q(77758),	--
 			q(77773),	--
 			q(77803),	--
@@ -8761,7 +8714,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(78067),	--
 			q(78087),	--
 			q(78209),	--
-			q(78217),	--
 			q(78247),	--
 			q(78252),	--
 			q(78331),	--
@@ -8778,15 +8730,11 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(78577),	--
 			q(78578),	--
 			q(78617),	--
-			q(78644),	--
 			q(78711),	--
-			q(78712),	--
 			q(78720),	--
-			q(78725),	--
 			q(78731),	--
 			q(78732),	--
 			q(78789),	--
-			q(78822),	--
 			q(78825),	--
 			q(78829),	--
 			q(78891),	--
@@ -8807,7 +8755,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 
 		-- 10.2.5
 		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
-			q(79314),	-- Arsenal: Quel'Serrar Skyborn Blades
 			q(77764),	-- Curious Find: Apprentice Astrologist Homework
 			q(79517),	-- Ensemble: Dark Ranger General's Kit
 			q(79210),	-- Ensemble: Sky Witch's Attire
