@@ -794,3 +794,17 @@ L.TOOLTIP_MODULE = {
 		XX_THE_HUGGLER = "%s the Huggler";
 	},
 };
+
+-- Icon Selectors based on Collection State
+app.GetCollectionIcon = function(state)
+	return L[(state and (state == 2 and "COLLECTED_APPEARANCE_ICON" or "COLLECTED_ICON")) or "NOT_COLLECTED_ICON"];
+end
+app.GetCollectionText = function(state)
+	return L[(state and (state == 2 and "COLLECTED_APPEARANCE" or "COLLECTED")) or "NOT_COLLECTED"];
+end
+app.GetCompletionIcon = function(state)
+	return L[state and "COMPLETE_ICON" or "INCOMPLETE_ICON"];
+end
+app.GetCompletionText = function(state)
+	return L[(state == 2 and "COMPLETE_OTHER") or (state and "COMPLETE") or "INCOMPLETE"];
+end
