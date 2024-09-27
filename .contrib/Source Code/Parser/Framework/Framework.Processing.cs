@@ -18,7 +18,8 @@ namespace ATT
         /// </summary>
         internal static readonly HashSet<long> Ensemble_IgnoredFilterIDs = new HashSet<long>
         {
-            (long)Objects.Filters.Cosmetic
+            (long)Objects.Filters.Cosmetic,
+            (long)Objects.Filters.Cloak
         };
 
         /// <summary>
@@ -1188,7 +1189,7 @@ namespace ATT
 
             List<object> removedSymlinked = new List<object>();
             List<object> removedSourced = new List<object>();
-            bool CheckRemoval(IDictionary<string, object> s)
+            bool CheckRemoval(IDictionary<string, object> s, List<object> removed)
             {
                 // Some Filter Type Items are still granted when contained in a different-Filtered Ensemble
                 if (s.TryGetValue("f", out long filterID)
@@ -1197,19 +1198,19 @@ namespace ATT
                 {
                     if (s.TryGetValue("itemID", out long itemID))
                     {
-                        removedSymlinked.Add(itemID);
+                        removed.Add(itemID);
                     }
                     else
                     {
-                        removedSymlinked.Add("s:" + s["sourceID"]);
+                        removed.Add("s:" + s["sourceID"]);
                     }
                     return true;
                 }
                 return false;
             };
 
-            int removedSymlinks = symlinkSources.RemoveAll(s => CheckRemoval(s));
-            int removedRawSources = rawSources.RemoveAll(s => CheckRemoval(s));
+            int removedSymlinks = symlinkSources.RemoveAll(s => CheckRemoval(s, removedSymlinked));
+            int removedRawSources = rawSources.RemoveAll(s => CheckRemoval(s, removedSourced));
 
             if (removedSymlinks > 0 || removedRawSources > 0)
             {
@@ -1704,11 +1705,15 @@ namespace ATT
             // Not quite able to have this as a normal warning yet, some situations are still quite uncertain
             if (!data.ContainsKey("objectID") && !data.ContainsKey("itemID") && !data.ContainsKey("npcID"))
             {
-                if (CurrentParentGroup.HasValue &&
-                    (CurrentParentGroup.Value.Key == "itemID" ||
-                    CurrentParentGroup.Value.Key == "objectID"))
+                // don't warn this for HQTs
+                if (!data.TryGetValue("type", out string type) || type != "hqt")
                 {
-                    LogDebugWarn($"Raw Quest {questID} should not be listed inside of an Item/Object group.", data);
+                    if (CurrentParentGroup.HasValue &&
+                        (CurrentParentGroup.Value.Key == "itemID" ||
+                        CurrentParentGroup.Value.Key == "objectID"))
+                    {
+                        LogDebugWarn($"Raw Quest {questID} should not be listed inside of an Item/Object group.", data);
+                    }
                 }
             }
         }
