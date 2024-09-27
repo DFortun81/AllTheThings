@@ -105,10 +105,6 @@ app:CreateWindow("Auctions", {
 			-- If we have left over auction data from previous, then use it.
 			if AllTheThingsAuctionData and not AllTheThingsAuctionData[1] then
 				auctionData = AllTheThingsAuctionData;
-			elseif ATTClassicAuctionData and not ATTClassicAuctionData[1] then
-				auctionData = ATTClassicAuctionData;
-				AllTheThingsAuctionData = auctionData;
-				ATTClassicAuctionData = nil;
 			end
 			self.data = {
 				text = "Auction Module",
