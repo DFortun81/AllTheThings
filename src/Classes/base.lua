@@ -633,10 +633,10 @@ app.SwapClassDefinitionMethod = function(className, classField, newFunc)
 	end
 
 	if newFunc then
-		app.PrintDebug("SwapClassNew",className,classField,newFunc)
+		-- app.PrintDebug("SwapClassNew",className,classField,newFunc)
 		class[classField] = newFunc
 	else
-		app.PrintDebug("SwapClassDef",className,classField,swapdefaults[classField])
+		-- app.PrintDebug("SwapClassDef",className,classField,swapdefaults[classField])
 		class[classField] = swapdefaults[classField]
 	end
 end
