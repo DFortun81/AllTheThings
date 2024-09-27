@@ -3061,6 +3061,10 @@ local function DetermineRecipeOutputGroups(group, FillData)
 		craftedItems[craftedItemID + recipeMod] = true
 		local search = SearchForObject("itemID",craftedItemID,"field")
 		search = (search and CreateObject(search)) or app.CreateItem(craftedItemID)
+		-- force the hash of the output crafted item of this Recipe to be unique based on the Recipe
+		-- this way, multiple Recipes for different professions crafting the same output
+		-- will all be filled properly
+		search.hash = search.hash.."_"..group.hash
 		-- app.PrintDebug("DetermineRecipeOutput",app:SearchLink(group),"=>",app:SearchLink(search))
 		return {search}
 	end
@@ -3242,6 +3246,7 @@ local function SkipFillingGroup(group, FillData)
 	-- do not fill 'saved' groups in ATT tooltips
 	-- or groups directly under saved groups unless in Acct or Debug mode
 	if not app.MODE_DEBUG_OR_ACCOUNT then
+		-- TODO: properly account for account-wide quests
 		-- only ignored filling saved 'quest' groups (unless it's an Item, which we ignore the ignore... :D)
 		if group.saved and group.questID and not group.itemID then return true; end
 		-- root fills of a thing from a saved parent should still show their contains, so don't use .parent
