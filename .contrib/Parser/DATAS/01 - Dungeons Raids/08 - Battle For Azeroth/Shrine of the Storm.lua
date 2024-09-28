@@ -178,10 +178,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 							134058,	-- Galecaller Faye
 						},
 						["g"] = {
-							i(162598, {	-- Ensemble: Vestments of the Tidesages
-								["ignoreBonus"] = true,
-								["sym"] = {{"fill"}},
-							}),
+							iensemble(162598), 	-- Ensemble: Vestments of the Tidesages
 							i(158371),	-- Seabreeze
 							i(159426),	-- Belt of the Unrelenting Gale
 							i(159419),	-- Ironhull's Reinforced Legplates
@@ -197,18 +194,7 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 						},
 						["g"] = {
 							ach(12601),	-- The Void Lies Sleeping
-							i(162598, {	-- Ensemble: Vestments of the Tidesages
-								["ignoreBonus"] = true,
-								["g"] = {
-									i(162592),	-- Hood of the Tidesages
-									i(162595),	-- Mantle of the Tidesages
-									i(162594),	-- Robe of the Tidesages
-									i(162597),	-- Bracers of the Tidesages
-									i(162591),	-- Gloves of the Tidesages
-									i(162593),	-- Pantaloons of the Tidesages
-									i(162590),	-- Sandals of the Tidesages
-								},
-							}),
+							iensemble(162598), 	-- Ensemble: Vestments of the Tidesages
 							i(159646),	-- Aq'mar, the Tidecaller
 							i(159289),	-- Void-Drenched Cape
 							i(159364),	-- Bindings of the Calling Depths
@@ -241,7 +227,4 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, {
 			}),
 		},
 	}),
-}));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.BFA, {
-	q(52868),	-- Ensemble: Vestments of the Tidesages
 }));

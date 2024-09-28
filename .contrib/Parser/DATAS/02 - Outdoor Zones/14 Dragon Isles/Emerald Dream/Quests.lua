@@ -525,16 +525,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					["races"] = { NIGHTELF },
 					["coord"] = { 50.8, 61.4, AMIRDRASSIL },
 					["g"] = {
-						i(209604, {	-- Ensemble: Raiment of Amirdrassi
-							i(209591),	-- Wristbands of Chosen Renewal
-							i(209592),	-- Belt of Chosen Renewal
-							i(209593),	-- Shoulders of Chosen Renewal
-							i(209594),	-- Legguards of Chosen Renewal
-							i(209595),	-- Crown of Chosen Renewal
-							i(209596),	-- Grips of Chosen Renewal
-							i(209597),	-- Anklets of Chosen Renewal
-							i(209598),	-- Wraps of Chosen Renewal
-						}),
+						iensemble(209604),	-- Ensemble: Raiment of Amirdrassi
 					},
 				}),
 				q(77200, {	-- Offerings for the Well
@@ -1185,7 +1176,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 				q(77759),	-- after turn in qID 77711 (And a Pinch of Magic), when animation start pop around flower (spellID 420720)
 				--
 				q(78707),	-- Moonberry's Many Mischief Makers (itemID 210996)
-				q(78086),	-- Ensemble: Raiment of Amirdrassi (itemID 209604)
 			}),
 		}),
 	}),

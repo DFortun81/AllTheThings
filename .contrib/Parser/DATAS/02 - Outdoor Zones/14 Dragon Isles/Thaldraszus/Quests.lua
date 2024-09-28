@@ -1184,7 +1184,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(210024, {	-- Ensemble: Temporal Burdens
 								i(208207),	-- Morchie's Timeworn Shoulderpads
 								i(208600),	-- Chromie's Timespun Shoulderpads
-							}),
+							}), 	-- TODO: iensemble does not include Morchie's shoulders
 						},
 					}),
 				},

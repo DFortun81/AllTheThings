@@ -2107,18 +2107,9 @@ root(ROOTS.Zones, {
 									["questID"] = 39561,
 									["cost"] = 12000000,	-- 1,200g
 								}),
-								i(128472, {	-- Ensemble: Battlegear of the Frostwolves
+								iensemble(128472, {	-- Ensemble: Battlegear of the Frostwolves
 									["classes"] = LEATHER_CLASSES,
 									["cost"] = 5000000,	-- 500g
-									["g"] = {
-										i(128455),	-- Frostwolf Spaulders
-										i(128456),	-- Frostwolf Tunic
-										i(128461),	-- Frostwolf Bracers
-										i(128457),	-- Frostwolf Mitts
-										i(128458),	-- Frostwolf Belt
-										i(128459),	-- Frostwolf Leggings
-										i(128460),	-- Frostwolf Snowstalkers
-									},
 								}),
 								i(128489, {	-- Equipment Blueprint: Unsinkable
 									["questID"] = 39358,	-- Equipment Blueprint: Unsinkable
@@ -2176,19 +2167,9 @@ root(ROOTS.Zones, {
 									["questID"] = 39561,
 									["cost"] = 12000000,	-- 1,200g
 								}),
-								i(128473, {	-- Ensemble: Ceremonial Karabor Finery
+								iensemble(128473, {	-- Ensemble: Ceremonial Karabor Finery
 									["classes"] = CLOTH_CLASSES,
 									["cost"] = 5000000,	-- 500g
-									["g"] = {
-										i(128469),	-- Ceremonial Bracers of Karabor
-										i(128468),	-- Ceremonial Crown of Karabor
-										i(128466),	-- Ceremonial Gloves of Karabor
-										i(128470),	-- Ceremonial Leggings of Karabor
-										i(128464),	-- Ceremonial Robe of Karabor
-										i(128467),	-- Ceremonial Sash of Karabor
-										i(128463),	-- Ceremonial Shoulderpads of Karabor
-										i(128465),	-- Ceremonial Slippers of Karabor
-									},
 								}),
 								i(128250, {	-- Equipment Blueprint: Unsinkable
 									["questID"] = 39358,	-- Equipment Blueprint: Unsinkable
@@ -2405,9 +2386,5 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 	expansion(EXPANSION.LEGION, {
 		q(47285),	-- Triggers together with obtaining Equipment Blueprint: Tuskarr Fishing Net
-	}),
-	expansion(EXPANSION.BFA, {
-		q(50678),	-- learning Ensemble: Battlegear of the Frostwolves
-		q(50680),	-- learning Ensemble: Ceremonial Karabor Finery
 	}),
 });

@@ -398,6 +398,15 @@ q(78218),	-- Sky-Captain's Masquerade Attire
 -- Deadmines
 q(42778),	-- Ensemble: Blackened Defias Armor
 
+-- Seat of the Triumvirate
+q(48568),	-- Ensemble: Burnished Triumvirate Armor
+q(48569),	-- Ensemble: Light-Woven Triumvirate Regalia
+q(48567),	-- Ensemble: Sterling Triumvirate Chainmail
+q(48566),	-- Ensemble: Venerated Triumvirate Battleplate
+
+-- Shrine of the Storms
+q(52868),	-- Ensemble: Vestments of the Tidesages
+
 -- Zul'Gurub (10.0.7)
 q(74720),	-- Ensemble: Zandalar Haruspec
 q(74721),	-- Ensemble: Zandalar Predator
@@ -526,5 +535,15 @@ q(77506),	-- Silk of the Unnamed Cult
 q(78217),	-- Sky-Captain's Formal Attire
 q(77700),	-- SWebbed Saronite Exoskeleton
 
+------ Reputation Rewards ------
+
+-- Frostwolf Orcs & Hand of the Prophet
+q(50678),	-- Ensemble: Battlegear of the Frostwolves
+q(50680),	-- Ensemble: Ceremonial Karabor Finery
+
+------ Quest Rewards ------
+
+-- Dragonflight
+q(78086),	-- Ensemble: Raiment of Amirdrassi
 
 --]]
