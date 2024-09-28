@@ -63,14 +63,17 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 				}),
 				q(29682, {	-- Magisters' Terrace
 					["qg"] = 24967,	-- Captain Theris Dawnhearth
-					["sourceQuest"] = 11481,	-- Crisis at the Sunwell
+					["sourceQuests"] = {
+						11481,	-- Crisis at the Sunwell
+						11482,	-- Duty Calls
+					},
 					["coord"] = { 47.4, 30.4, ISLE_OF_QUELDANAS },
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 25),
 				}),
 				q(29684, {	-- Severed Communications
 					["qg"] = 55007,	-- Exarch Larethor
-					["sourceQuest"] = 11482,	-- Duty Calls
+					["sourceQuest"] = 29682,	-- Magisters' Terrace
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(68, 68, 25),
 				}),
