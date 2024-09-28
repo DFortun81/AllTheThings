@@ -412,8 +412,9 @@ q(74730),	-- Ensemble: Bloodtinged Cloth
 q(74732),	-- Ensemble: Blooddrenched Leather
 q(74733),	-- Ensemble: Bloodstained Mail
 q(74734),	-- Ensemble: Bloodsoaked Plate
+
 ------ Raids ------
---Trial of Valor
+-- Trial of Valor
 q(45208),	-- Ensemble: Vestment of the Chosen Dead [Normal]
 q(45223),	-- Ensemble: Vestment of the Chosen Dead [Heroic]
 q(45224),	-- Ensemble: Vestment of the Chosen Dead [Mythic]
