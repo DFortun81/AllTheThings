@@ -821,8 +821,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(84751),	-- Jewelcrafting
 			q(84752),	-- Engineering
 			q(84753),	-- Alchemy
-			-- Weaver Rat Treasure Map
-			q(83778),	-- N-220568 @ 55.0, 68.7
 		}),
 	}),
 })));
