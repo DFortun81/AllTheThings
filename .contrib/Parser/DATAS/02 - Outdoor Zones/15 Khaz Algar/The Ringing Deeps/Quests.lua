@@ -1156,9 +1156,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			------ Class Specific ------
 			q(78895, {	-- A Shadow Over Gundargaz
-				--["sourceQuests"] = { x },	-- ?
+				["sourceQuests"] = { 78838 },	-- Cogs in the Machine
 				["provider"] = { "n", 213869 },	-- Watcher Toki
-				["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
+				["coord"] = { 48.0, 34.8, THE_RINGING_DEEPS },
 				["classes"] = { DEMONHUNTER, WARLOCK },
 				["g"] = {
 					i(219919),	-- Blade of Hatred [Demon Hunter]
