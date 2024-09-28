@@ -789,22 +789,22 @@ root(ROOTS.Craftables, expansion(EXPANSION.MOP, applyclassicphase(MOP_PHASE_ONE,
 		filter(HELD_IN_OFF_HAND, {
 			i(79333),	-- Inscribed Fan
 			i(79334, {	-- Inscribed Jade Fan
-				["cost"] = { { "i", 79333, 1 }, },	-- Inscribed Fan
+				["cost"] = ClassicCost({ { "i", 79333, 1 }, }),	-- Inscribed Fan
 			}),
 			i(79335, {	-- Inscribed Red Fan
-				["cost"] = { { "i", 79333, 1 }, },	-- Inscribed Fan
+				["cost"] = ClassicCost({ { "i", 79333, 1 }, }),	-- Inscribed Fan
 			}),
 		}),
 		filter(STAVES, {
 			i(79342),	-- Ghost Iron Staff
 			i(79340, {	-- Inscribed Crane Staff
-				["cost"] = { { "i", 79339, 1 }, },	-- Rain Poppy Staff
+				["cost"] = ClassicCost({ { "i", 79339, 1 }, }),	-- Rain Poppy Staff
 			}),
 			i(79341, {	-- Inscribed Serpent Staff
-				["cost"] = { { "i", 79339, 1 }, },	-- Rain Poppy Staff
+				["cost"] = ClassicCost({ { "i", 79339, 1 }, }),	-- Rain Poppy Staff
 			}),
 			i(79343, {	-- Inscribed Tiger Staff
-				["cost"] = { { "i", 79342, 1 }, },	-- Ghost Iron Staff
+				["cost"] = ClassicCost({ { "i", 79342, 1 }, }),	-- Ghost Iron Staff
 			}),
 			i(79339),	-- Rain Poppy Staff
 		}),
