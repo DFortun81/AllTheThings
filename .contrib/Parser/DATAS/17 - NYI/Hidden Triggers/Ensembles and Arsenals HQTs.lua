@@ -435,7 +435,6 @@ q(45237),	-- Ensemble: Funerary Plate of the Chosen Dead [LFR]
 q(77336),	-- Armaments of the Light Avenger
 q(65568),	-- Arsenal: Blades of Elune
 q(82247),	-- Arsenal: Blazing Felfire Armaments
-
 q(79314),	-- Arsenal: Skyborn Blades
 q(81997),	-- Arsenal: Stormrider's Bronze Stormhammers
 q(81996),	-- Arsenal: Stormrider's Dark Stormhammers

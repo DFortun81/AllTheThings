@@ -276,6 +276,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 				}),
 			}, {	-- RENOWN 22 --
+				q(85543, {	-- More Shinies!
+					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+					["providers"] = {
+						{ "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+						{ "n", 223726 },	-- Waxmonger Quiwik <Keeper of Renown>
+					},
+					["coords"] = {
+						{ 47.5, 32.8, THE_RINGING_DEEPS },
+						{ 39.2, 24.0, DORNOGAL },
+					},
+				}),
 			}, {	-- RENOWN 23 --
 			}, {	-- RENOWN 24 --
 			}, {	-- RENOWN 25 --
