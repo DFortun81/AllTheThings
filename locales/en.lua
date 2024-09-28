@@ -581,14 +581,14 @@ for key, value in pairs({
 	-- ["PVP_RANK_DESCRIPTION"] = "There are a total of 14 ranks for both factions. Each rank requires a minimum amount of Rating Points to be calculated every week, then calculated in comparison to other players on your server.\n\nEach rank grants access to different rewards, from PvP consumables to Epic Mounts that do not require Epic Riding Skill and Epic pieces of gear at the highest ranks. Each rank is also applied to your character as a Title.";
 
 	-- Unobtainable Listing (for fellow 100%s out there)
-	["UNOBTAINABLE_ITEM_TEXTURES"] = {
-		[0] = "Interface\\FriendsFrame\\StatusIcon-Offline",	-- Available, but not due to Current Character filters
-		app.asset("status-unobtainable"),
-		app.asset("status-prerequisites"),
-		"",									-- 3, we want no icon for these
-		app.asset("status-seasonal-unavailable"),	-- Seasonal unavailable
-		app.asset("status-seasonal-available"),	-- Seasonal available
-	};
+	-- ["UNOBTAINABLE_ITEM_TEXTURES"] = {
+	-- 	[0] = "Interface\\FriendsFrame\\StatusIcon-Offline",	-- Available, but not due to Current Character filters
+	-- 	app.asset("status-unobtainable"),
+	-- 	app.asset("status-prerequisites"),
+	-- 	"",									-- 3, we want no icon for these
+	-- 	app.asset("status-seasonal-unavailable"),	-- Seasonal unavailable
+	-- 	app.asset("status-seasonal-available"),	-- Seasonal available
+	-- };
 	["AVAILABILITY_CONDITIONS"] = {
 		-- [id] = {header, description, name}, header: header id, 1-3 as above, 4 is legacy.
 		[1] = {1, "|CFFFF0000This was never available to players.|r", "Never Implemented"}, -- No Hope

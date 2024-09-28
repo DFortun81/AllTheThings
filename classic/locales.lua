@@ -427,13 +427,13 @@ for key,value in pairs({
 	-- };
 	
 	-- Unobtainable Listing
-	["UNOBTAINABLE_ITEM_TEXTURES"] = {
-		app.asset("status-unobtainable"),
-		app.asset("status-prerequisites"),
-		"",									-- 3, we want no icon for these
-		app.asset("status-seasonal-unavailable"),	-- Seasonal unavailable
-		app.asset("status-seasonal-available"),	-- Seasonal available
-	};
+	-- ["UNOBTAINABLE_ITEM_TEXTURES"] = {
+	-- 	app.asset("status-unobtainable"),
+	-- 	app.asset("status-prerequisites"),
+	-- 	"",									-- 3, we want no icon for these
+	-- 	app.asset("status-seasonal-unavailable"),	-- Seasonal unavailable
+	-- 	app.asset("status-seasonal-available"),	-- Seasonal available
+	-- };
 	["AVAILABILITY_CONDITIONS"] = {
 		[1] = {1, "|CFFFF0000This was never available to players.|r", "Never Implemented"},
 		[2] = {1, "|CFFFF0000This has been removed from the game.|r", "Removed From Game"},
