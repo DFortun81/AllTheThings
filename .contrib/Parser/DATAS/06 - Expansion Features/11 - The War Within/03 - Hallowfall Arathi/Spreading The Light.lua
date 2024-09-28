@@ -547,7 +547,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(212339),	-- A Small Bag of Seeds
 						},
 					}),
-					o(428472, {	-- Captain Lancekat's Discretionary Funds
+					o(428472, {	-- Captain Lancekat's Discretionary Funds (TODO likely weekly)
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 66.56, 15.14, HALLOWFALL },
 						["questID"] = 81612,
@@ -563,13 +563,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(212333),	-- Expedition Tinderbox (QS!/QI!)
 						},
 					}),
-					o(423959, {	-- Faded Supply Chest
+					o(423959, {	-- Faded Supply Chest (TODO likely weekly)
 						["description"] = "The key drops rarely from Drowned Arathi nearby.",
 						["coord"] = { 61.8, 17.5, HALLOWFALL },
 						["questID"] = 79964,
 						["cost"] = { { "i", 216528, 1 }, },	-- 1x Faded Supply Chest Key
 					}),
-					o(441723, {	-- Farm Satchel
+					o(441723, {	-- Farm Satchel (TODO likely weekly)
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coords"] = {
 							{ 64.36, 26.03, HALLOWFALL },
@@ -581,7 +581,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(224466),	-- Wilber The Chicken (QS!)
 						},
 					}),
-					o(435008, {	-- Farmhand Stash
+					o(435008, {	-- Farmhand Stash (TODO likely weekly)
 						["description"] = "Requires weekly quest with controlling Harvestbot Remy to spawn.",
 						["coord"] = { 61.6, 32.6, HALLOWFALL },
 						["questID"] = 80590,
@@ -589,7 +589,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
 						},
 					}),
-					o(457246, {	-- Fieldhand Stash
+					o(457246, {	-- Fieldhand Stash (TODO likely weekly)
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 64.5, 28.8, HALLOWFALL },
 						["questID"] = 84337,
@@ -622,15 +622,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(224548),	-- Nerubian Device (QS!)
 						},
 					}),
-					o(453186, {	-- Nightfarm Growthling
-						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure in any area of farmland.",
-						["coord"] = { 61.3, 31.8, HALLOWFALL },
-						["questID"] = 83272,
-						["g"] = {
-							i(221546),	-- Nightfarm Growthling (PET!)
-						},
-					}),
-					o(457251, {	-- Old Rotting Crate
+					o(457251, {	-- Old Rotting Crate (TODO likely weekly)
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 64.5, 31.6, HALLOWFALL },
 						["questID"] = 84339,
@@ -670,24 +662,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 66.4, 23.0, HALLOWFALL },
 						["questID"] = 80541,
-						["isWeekly"] = true,
 						["g"] = {
 							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
-						},
-					}),
-					o(437112, {	-- Clammer's Kit
-						--when you loot it - other treasure which require this item vanish, so cannot be looted on same week?
-						["coord"] = { 61.9, 6.0, HALLOWFALL },
-						["questID"] = 80687,
-						["isWeekly"] = true,
-						["g"] = {
-							i(218354),	-- Clammer's Pry Bar
 						},
 					}),
 					o(423971, {	-- Coral-Fused Clam
 						["coord"] = { 64.0, 6.2, HALLOWFALL },
 						--["questID"] = ,
-						["isWeekly"] = true,
 						["cost"] = { { "i", 218354, 1 }, },	-- 1x Clammer's Pry Bar
 						["g"] = {
 							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
@@ -696,30 +677,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					o(457271, {	-- Crabber Supplies
 						["coord"] = { 62.4, 16.2, HALLOWFALL },
 						["questID"] = 84342,
-						["isWeekly"] = true,
 						["g"] = {
 							i(226018),	-- Darkened Arathi Cape (COSMETIC!)
 							i(224466),	-- Wilber The Chicken (QS!)
-						},
-					}),
-					o(437302, {	-- Fisherman's Pouch
-						["coord"] = { 56.1, 14.6, HALLOWFALL },
-						["questID"] = 81518,
-						["isWeekly"] = true,
-					}),
-					o(417057, {	-- Hallowfall Farm Supply
-						["sourceQuests"] = { 79173 },	-- Supply the Effort
-						["coord"] = { 63.2, 29.5, HALLOWFALL },
-						["questID"] = 79191,
-						["isWeekly"] = true,
-					}),
-					o(451967, {	-- Hillhelm Lunchbox
-						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
-						["coord"] = { 62.0, 31.7, HALLOWFALL },
-						["questID"] = 82996,
-						["isWeekly"] = true,
-						["g"] = {
-							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 						},
 					}),
 					o(433377, {	-- Harvest Box
@@ -730,14 +690,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
 						},
 					}),
-					o(457260, {	-- Misplaced Supplies
-						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
-						["coord"] = { 68.2, 26.6, HALLOWFALL },
-						["questID"] = 84340,
-						["isWeekly"] = true,
+					o(453186, {	-- Nightfarm Growthling (may be daily)
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure in any area of farmland.",
+						["coord"] = { 61.3, 31.8, HALLOWFALL },
+						["questID"] = 83272,
 						["g"] = {
-							i(226018),	-- Darkened Arathi Cape (COSMETIC!)
-							i(224460),	-- The Lost Diary (QS!)
+							i(221546),	-- Nightfarm Growthling (PET!)
 						},
 					}),
 					o(457270, {	-- Surveyor's Box
@@ -754,6 +712,40 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				n(TREASURES, sharedData({
 					["isDaily"] = true,
 				},{
+					o(437112, {	-- Clammer's Kit
+						--when you loot it - other treasure which require this item vanish, so cannot be looted on same week?
+						["coord"] = { 61.9, 6.0, HALLOWFALL },
+						["questID"] = 80687,
+						["g"] = {
+							i(218354),	-- Clammer's Pry Bar
+						},
+					}),
+					o(437302, {	-- Fisherman's Pouch
+						["coord"] = { 56.1, 14.6, HALLOWFALL },
+						["questID"] = 81518,
+					}),
+					o(417057, {	-- Hallowfall Farm Supply
+						["sourceQuests"] = { 79173 },	-- Supply the Effort
+						["coord"] = { 63.2, 29.5, HALLOWFALL },
+						["questID"] = 79191,
+					}),
+					o(451967, {	-- Hillhelm Lunchbox
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+						["coord"] = { 62.0, 31.7, HALLOWFALL },
+						["questID"] = 82996,
+						["g"] = {
+							i(226019),	-- Darkened Arathi Shoulderguards (COSMETIC!)
+						},
+					}),
+					o(457260, {	-- Misplaced Supplies
+						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
+						["coord"] = { 68.2, 26.6, HALLOWFALL },
+						["questID"] = 84340,
+						["g"] = {
+							i(226018),	-- Darkened Arathi Cape (COSMETIC!)
+							i(224460),	-- The Lost Diary (QS!)
+						},
+					}),
 					o(434929, {	-- Radiant Remnant
 						["coord"] = { 62.1, 31.7, HALLOWFALL },
 						["questID"] = 80586,
