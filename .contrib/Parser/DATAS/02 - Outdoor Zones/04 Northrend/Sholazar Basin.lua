@@ -1286,31 +1286,39 @@ root(ROOTS.Zones, {
 				n(VENDORS, {
 					n(31910, {	-- Geen <Oracles Quartermaster>
 						["coord"] = { 54.6, 56.1, SHOLAZAR_BASIN },
-						["groups"] = {
-							i(41724),	-- Design: Misty Forest Emerald [CATA+] / Design: Sundered Forest Emerald [WRATH]
-							i(41567),	-- Design: Nimble Dark Jade [CATA+] / Design: Vivid Dark Jade [WRATH]
-							i(44104),	-- Fishy Cinch
-							i(44112),	-- Glimmershell Shoulder Protectors
-							i(44106),	-- Glitterscale Wrap
-							i(44111),	-- Gold Star Spaulders
-							i(39878, {	-- Mysterious Egg
-								["provider"] = { "i", 39883 },	-- Cracked Egg
-								["groups"] = {
-									i(44707),	-- Green Proto-Drake (MOUNT!)
-									i(39898, {	-- Cobra Hatchling (PET!)
-										["timeline"] = { ADDED_3_0_3 },
-									}),
-									i(44721),	-- Proto-Drake Whelp (PET!)
-									i(39896),	-- Tickbird Hatchling (PET!)
-									i(39899),	-- White Tickbird Hatchling (PET!)
-									i(44722),	-- Aged Yolk
-								},
-							}),
-							i(44074),	-- Oracle Talisman of Ablution
-							i(44110),	-- Sharkjaw Cap
-							i(44108),	-- Shinygem Rod
-							i(44109),	-- Toothslice Helm
-						},
+						["groups"] = bubbleDownClassicRep(FACTION_THE_ORACLES, {
+							{		-- Neutral
+							}, {	-- Friendly
+								i(41567),	-- Design: Nimble Dark Jade [CATA+] / Design: Vivid Dark Jade [WRATH]
+								i(44065),	-- Oracle Secret Solution
+							}, {	-- Honored
+								i(44071),	-- Slow-Roasted Eel
+							}, {	-- Revered
+								i(41724),	-- Design: Misty Forest Emerald [CATA+] / Design: Sundered Forest Emerald [WRATH] (RECIPE!)
+								i(44104),	-- Fishy Cinch
+								i(44112),	-- Glimmershell Shoulder Protectors
+								i(44106),	-- Glitterscale Wrap
+								i(44111),	-- Gold Star Spaulders
+								i(39878, {	-- Mysterious Egg
+									["provider"] = { "i", 39883 },	-- Cracked Egg
+									["groups"] = {
+										i(44707),	-- Green Proto-Drake (MOUNT!)
+										i(39898, {	-- Cobra Hatchling (PET!)
+											["timeline"] = { ADDED_3_0_3 },
+										}),
+										i(44721),	-- Proto-Drake Whelp (PET!)
+										i(39896),	-- Tickbird Hatchling (PET!)
+										i(39899),	-- White Tickbird Hatchling (PET!)
+										i(44722),	-- Aged Yolk
+									},
+								}),
+								i(44110),	-- Sharkjaw Cap
+								i(44108),	-- Shinygem Rod
+								i(44109),	-- Toothslice Helm
+							}, {	-- Exalted
+								i(44074),	-- Oracle Talisman of Ablution
+							},
+						}),
 					}),
 					n(29014, {	-- Grakjek <Bowyer>
 						["coord"] = { 55.8, 70.2, SHOLAZAR_BASIN },
@@ -1333,26 +1341,34 @@ root(ROOTS.Zones, {
 					}),
 					n(31911, {	-- Tanak <Frenzyheart Quartermaster>
 						["coord"] = { 55.1, 69.0, SHOLAZAR_BASIN },
-						["groups"] = {
-							i(44117),	-- Azure Strappy Pants
-							i(41723),	-- Design: Jagged Forest Emerald
-							i(41561),	-- Design: Reckless Huge Citrine
-							i(44123),	-- Discarded Titanium Legplates
-							i(44717, {	-- Disgusting Jar
-								["provider"] = { "i", 44718 },	-- Ripe Disgusting Jar
-								["groups"] = {
-									i(44719),	-- Frenzyheart Brew (TOY!)
-								},
-							}),
-							i(44073),	-- Frenzyheart Insignia of Fury
-							i(44120),	-- Giant-Sized Gauntlets
-							i(44116),	-- Muddied Crimson Gloves
-							i(44122),	-- Scavenged Feathery Leggings
-							i(44121),	-- Sparkly Shiny Gloves
-							i(44118, {	-- Stolen Vrykul Harpoon
-								["timeline"] = { REMOVED_5_0_4 },
-							}),
-						},
+						["groups"] = bubbleDownClassicRep(FACTION_FRENZYHEART_TRIBE, {
+							{		-- Neutral
+							}, {	-- Friendly
+								i(41561),	-- Design: Reckless Huge Citrine (RECIPE!)
+								i(44064),	-- Nepeta Leaf
+								i(44072),	-- Roasted Mystery Beast
+							}, {	-- Honored
+							}, {	-- Revered
+								i(44117),	-- Azure Strappy Pants
+								i(41723),	-- Design: Jagged Forest Emerald (RECIPE!)
+								i(44123),	-- Discarded Titanium Legplates
+								i(44717, {	-- Disgusting Jar
+									["provider"] = { "i", 44718 },	-- Ripe Disgusting Jar
+									["groups"] = {
+										i(44719),	-- Frenzyheart Brew (TOY!)
+									},
+								}),
+								i(44120),	-- Giant-Sized Gauntlets
+								i(44116),	-- Muddied Crimson Gloves
+								i(44122),	-- Scavenged Feathery Leggings
+								i(44121),	-- Sparkly Shiny Gloves
+								i(44118, {	-- Stolen Vrykul Harpoon
+									["timeline"] = { REMOVED_5_0_4 },
+								}),
+							}, {	-- Exalted
+								i(44073),	-- Frenzyheart Insignia of Fury
+							},
+						}),
 					}),
 				}),
 				n(ZONE_DROPS, {

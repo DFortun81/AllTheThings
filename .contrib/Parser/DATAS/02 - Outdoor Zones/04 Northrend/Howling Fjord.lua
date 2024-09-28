@@ -2321,27 +2321,11 @@ root(ROOTS.Zones, {
 							}),
 						},
 					}),
-					n(32773, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
+					n(32773, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY, }, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
 						["coord"] = { 59.6, 63.8, HOWLING_FJORD },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(50372, {	-- Arcanum of the Savage Gladiator
-								["timeline"] = { REMOVED_5_0_4 },
-								["filterID"] = CONSUMABLES,
-							}),
-							i(38464),	-- Gnomish Magician's Quill
-							i(38455),	-- Hammer of hte Alliance Vanguard
-							i(38463),	-- Lordaeron's Resolve
-							i(38459),	-- Orb of the Eastern Kingdons
-							i(44937, {	-- Plans: Titanium Plating [A] (RECIPE!)
-								["timeline"] = { ADDED_3_0_8 },
-							}),
-							i(38457),	-- Sawed-Off Hand Cannon
-							i(44503),	-- Schematic: Mekgineer's Chopper (RECIPE!)
-							i(38453),	-- Shield of the Lion-Hearted
-							i(38465),	-- Vanguard Soldier's Dagger
-						},
-					}),
+						["sym"] = {{"sub","common_vendor",32763}},	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
+					})),
 					n(24330, {	-- Orson Locke <Sharp Blades>
 						["coord"] = { 53.8, 66.8, HOWLING_FJORD },
 						["races"] = HORDE_ONLY,
@@ -2356,23 +2340,8 @@ root(ROOTS.Zones, {
 					}),
 					n(32774, bubbleDownSelf({ ["races"] = HORDE_ONLY, }, {	-- Sebastian Crane <Horde Expedition Quartermaster>
 						["coord"] = { 79.6, 30.6, HOWLING_FJORD },
-						["groups"] = {
-							i(50373, {	-- Arcanum of the Savage Gladiator
-								["timeline"] = { REMOVED_5_0_4 },
-								["filterID"] = CONSUMABLES,
-							}),
-							i(38452),	-- Bulwark of the Warchief
-							i(38460),	-- Charged Wand of the Cleft
-							i(38458),	-- Darkspear Orb
-							i(44938, {	-- Plans: Titanium Plating [H] (RECIPE!)
-								["timeline"] = { ADDED_3_0_8 },
-							}),
-							i(44502),	-- Schematic: Mechano-Hog (RECIPE!)
-							i(38456),	-- Sin'dorei Recurve Bow
-							i(38454),	-- Warsong Punisher
-							i(38461),	-- Warsong Shanker
-							i(38462),	-- Warsong Stormshield
-						},
+						["races"] = HORDE_ONLY,
+						["sym"] = {{"sub","common_vendor",32565}},	-- Gara Skullcrush <Horde Expedition Quartermaster>
 					})),
 					n(24028, {	-- Talu Frosthoof <Bowyer>
 						["coord"] = { 48.2, 11.0, HOWLING_FJORD },
@@ -2388,30 +2357,7 @@ root(ROOTS.Zones, {
 					}),
 					n(31916, {	-- Tanaika <Kalu'ak Quartermaster>
 						["coord"] = { 25.4, 58.6, HOWLING_FJORD },
-						["groups"] = {
-							i(44059),	-- Cuttlefish Scale Breastplate
-							i(44060),	-- Cuttlefish Tooth Ringmail
-							i(41574),	-- Design: Defender's Shadow Crystal
-							i(41568),	-- Design: Purified Shadow Crystal [CATA+] / Design: Seer's Dark Jade [WRATH]
-							i(44057),	-- Ivory-Reinforced Chestguard
-							i(44050),	-- Mastercraft Kalu'ak Fishing Pole
-							i(44723, {	-- Pengu (PET!)
-								["timeline"] = { ADDED_3_0_2 },
-							}),
-							i(44511, {	-- Pattern: Dragonscale Ammo Pouch (RECIPE!)
-								["timeline"] = { REMOVED_4_0_1 },
-							}),
-							i(45774),	-- Pattern: Emerald Bag
-							i(44509),	-- Pattern: Trapper's Traveling Pack (RECIPE!)
-							i(44061),	-- Pigment-Stained Robes
-							i(44052),	-- Totemic Purification Rod
-							i(44051),	-- Traditional Flensing Knife
-							i(44062),	-- Turtle-Minders Robe
-							i(44054),	-- Whale-Skin Breastplate
-							i(44055),	-- Whale-Skin Vest
-							i(44053),	-- Whale-Stick Harpoon
-							i(44058),	-- Whalebone Carapace
-						},
+						["sym"] = {{"sub","common_vendor",32763}},	-- Sairuk <Kalu'ak Quartermaster>
 					}),
 				}),
 				n(ZONE_DROPS, {

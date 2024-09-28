@@ -2548,23 +2548,29 @@ root(ROOTS.Zones, {
 					n(32565, bubbleDownSelf({ ["races"] = HORDE_ONLY, }, {	-- Gara Skullcrush <Horde Expedition Quartermaster>
 						["coord"] = { 41.4, 53.7, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
-							i(50373, {	-- Arcanum of the Savage Gladiator
-								["timeline"] = { REMOVED_5_0_4 },
-								["filterID"] = CONSUMABLES,
-							}),
-							i(38452),	-- Bulwark of the Warchief
-							i(38460),	-- Charged Wand of the Cleft
-							i(38458),	-- Darkspear Orb
-							i(44938, {	-- Plans: Titanium Plating [H] (RECIPE!)
-								["timeline"] = { ADDED_3_0_8 },
-							}),
-							i(44502),	-- Schematic: Mechano-Hog (RECIPE!)
-							i(38456),	-- Sin'dorei Recurve Bow
-							i(38454),	-- Warsong Punisher
-							i(38461),	-- Warsong Shanker
-							i(38462),	-- Warsong Stormshield
-						},
+						["g"] = bubbleDownClassicRep(FACTION_HORDE_EXPEDITION, {
+							{		-- Neutral
+							}, {	-- Friendly
+							}, {	-- Honored
+							}, {	-- Revered
+								i(38452),	-- Bulwark of the Warchief
+								i(38460),	-- Charged Wand of the Cleft
+								i(38458),	-- Darkspear Orb
+								i(38456),	-- Sin'dorei Recurve Bow
+								i(38454),	-- Warsong Punisher
+								i(38461),	-- Warsong Shanker
+								i(38462),	-- Warsong Stormshield
+							}, {	-- Exalted
+								i(50373, {	-- Arcanum of the Savage Gladiator
+									["timeline"] = { REMOVED_5_0_4 },
+									["filterID"] = CONSUMABLES,
+								}),
+								i(44938, {	-- Plans: Titanium Plating [H] (RECIPE!)
+									["timeline"] = { ADDED_3_0_8 },
+								}),
+								i(44502),	-- Schematic: Mechano-Hog (RECIPE!)
+							},
+						}),
 					})),
 					n(27147, {	-- Librarian Erickson <Enchanting Supplies>
 						["coord"] = { 46.7, 32.5, BOREAN_TUNDRA },
@@ -2584,27 +2590,33 @@ root(ROOTS.Zones, {
 							i(40018),	-- Wand of Onyx
 						},
 					}),
-					n(32564, {	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
+					n(32564, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY, }, {	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
 						["coord"] = { 57.7, 66.4, BOREAN_TUNDRA },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(50372, {	-- Arcanum of the Savage Gladiator
-								["timeline"] = { REMOVED_5_0_4 },
-								["filterID"] = CONSUMABLES,
-							}),
-							i(38464),	-- Gnomish Magician's Quill
-							i(38455),	-- Hammer of the Alliance Vanguard
-							i(38463),	-- Lordaeron's Resolve
-							i(38459),	-- Orb of the Eastern Kingdons
-							i(44937, {	-- Plans: Titanium Plating [A] (RECIPE!)
-								["timeline"] = { ADDED_3_0_8 },
-							}),
-							i(38457),	-- Sawed-Off Hand Cannon
-							i(44503),	-- Schematic: Mekgineer's Chopper (RECIPE!)
-							i(38453),	-- Shield of the Lion-Hearted
-							i(38465),	-- Vanguard Soldier's Dagger
-						},
-					}),
+						["groups"] = bubbleDownClassicRep(FACTION_ALLIANCE_VANGUARD, {
+							{		-- Neutral
+							}, {	-- Friendly
+							}, {	-- Honored
+							}, {	-- Revered
+								i(38464),	-- Gnomish Magician's Quill
+								i(38455),	-- Hammer of the Alliance Vanguard
+								i(38463),	-- Lordaeron's Resolve
+								i(38459),	-- Orb of the Eastern Kingdons
+								i(38457),	-- Sawed-Off Hand Cannon
+								i(38453),	-- Shield of the Lion-Hearted
+								i(38465),	-- Vanguard Soldier's Dagger
+							}, {	-- Exalted
+								i(50372, {	-- Arcanum of the Savage Gladiator
+									["timeline"] = { REMOVED_5_0_4 },
+									["filterID"] = CONSUMABLES,
+								}),
+								i(44937, {	-- Plans: Titanium Plating [A] (RECIPE!)
+									["timeline"] = { ADDED_3_0_8 },
+								}),
+								i(44503),	-- Schematic: Mekgineer's Chopper (RECIPE!)
+							},
+						}),
+					})),
 					n(26697, {	-- Tewah Chillmane <Leather Armor Merchant>
 						["coord"] = { 76.6, 37.2, BOREAN_TUNDRA },
 						["races"] = HORDE_ONLY,

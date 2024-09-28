@@ -2851,36 +2851,42 @@ root(ROOTS.Zones, {
 					})),
 					n(32287, {	-- Archmage Alvareaux <Kirin Tor Quartermaster>
 						["coord"] = { 25.2, 47.8, NORTHREND_DALARAN },
-						["groups"] = {
-							i(50368, {	-- Arcanum of Burning Mysteries
-								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
-								["timeline"] = { REMOVED_5_0_4 },
-								["filterID"] = CONSUMABLES,
-							}),
-							i(44159, {	-- Arcanum of Burning Mysteries
-								["timeline"] = { REMOVED_5_0_4 },
-								["filterID"] = CONSUMABLES,
-							}),
-							i(44141, {	-- Arcanum of the Flame's Soul
-								["timeline"] = { REMOVED_5_0_4 },
-								["filterID"] = CONSUMABLES,
-							}),
-							i(44182),	-- Boots of Twinkling Stars
-							i(41718),	-- Design: Brilliant Scarlet Ruby [CATA+] / Design: Runed Scarlet Ruby [WRATH]
-							i(44183),	-- Fireproven Gauntlets
-							i(44173),	-- Flameheart Spell Scalpel
-							i(44181),	-- Ghostflicker Waistband
-							i(44176),	-- Girdle of the Warrior Magi
-							i(44170),	-- Helm of the Majestic Stag
-							i(44166),	-- Lightblade Rivener
-							i(44179),	-- Mind-Expanding Leggings
-							i(42188),	-- Pattern: Sapphire Spellthread
-							i(44180),	-- Robes of Crackling Flame
-							i(44167),	-- Shroud of Dedicated Research
-							i(44171),	-- Spaulders of Grounded Lightning
-							i(44174),	-- Stave of Shrouded Mysteries
-							i(43157),	-- Tabard of the Kirin Tor
-						},
+						["groups"] = bubbleDownClassicRep(FACTION_KIRIN_TOR, {
+							{		-- Neutral
+							}, {	-- Friendly
+								i(43157),	-- Tabard of the Kirin Tor
+							}, {	-- Honored
+								i(44141, {	-- Arcanum of the Flame's Soul
+									["timeline"] = { REMOVED_5_0_4 },
+									["filterID"] = CONSUMABLES,
+								}),
+								i(44170),	-- Helm of the Majestic Stag
+								i(44166),	-- Lightblade Rivener
+								i(44167),	-- Shroud of Dedicated Research
+								i(44171),	-- Spaulders of Grounded Lightning
+							}, {	-- Revered
+								i(50368, {	-- Arcanum of Burning Mysteries
+									["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+									["timeline"] = { REMOVED_5_0_4 },
+									["filterID"] = CONSUMABLES,
+								}),
+								i(44159, {	-- Arcanum of Burning Mysteries
+									["timeline"] = { REMOVED_5_0_4 },
+									["filterID"] = CONSUMABLES,
+								}),
+								i(44173),	-- Flameheart Spell Scalpel
+								i(44176),	-- Girdle of the Warrior Magi
+								i(44179),	-- Mind-Expanding Leggings
+								i(44174),	-- Stave of Shrouded Mysteries
+							}, {	-- Exalted
+								i(44182),	-- Boots of Twinkling Stars
+								i(41718),	-- Design: Brilliant Scarlet Ruby [CATA+] / Design: Runed Scarlet Ruby [WRATH]
+								i(44183),	-- Fireproven Gauntlets
+								i(44181),	-- Ghostflicker Waistband
+								i(42188),	-- Pattern: Sapphire Spellthread
+								i(44180),	-- Robes of Crackling Flame
+							},
+						}),
 					}),
 					n(29499, {	-- Bartram Haller <Dagger & Fist Weapon Merchant>
 						["coord"] = { 53.5, 62.4, NORTHREND_DALARAN },

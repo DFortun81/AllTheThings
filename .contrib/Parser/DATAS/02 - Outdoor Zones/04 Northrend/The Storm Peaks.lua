@@ -1621,78 +1621,84 @@ root(ROOTS.Zones, {
 					}),
 					n(32540, {	-- Lillehoff <The Sons of Hodir Quartermaster>
 						["coord"] = { 66.1, 61.4, THE_STORM_PEAKS },
-						["groups"] = {
-							ach(2083, {	-- Grand Ice Mammoth
-								["providers"] = {
-									{ "i", 43961 },	-- Grand Ice Mammoth (A) (MOUNT!)
-									{ "i", 44086 },	-- Grand Ice Mammoth (H) (MOUNT!)
-								},
-							}),
-							ach(2082, {	-- Ice Mammoth
-								["providers"] = {
-									{ "i", 43958 },	-- Ice Mammoth (A) (MOUNT!)
-									{ "i", 44080 },	-- Ice Mammoth (H) (MOUNT!)
-								},
-							}),
-							i(43961),	-- Grand Ice Mammoth (A) (MOUNT!)
-							i(44086),	-- Grand Ice Mammoth (H) (MOUNT!)
-							i(43958),	-- Ice Mammoth (A) (MOUNT!)
-							i(44080),	-- Ice Mammoth (H) (MOUNT!)
-							i(44137, {	-- Arcanum of the Frosty Soul
-								["timeline"] = { REMOVED_5_0_4 },
-								["filterID"] = CONSUMABLES,
-							}),
-							i(44193),	-- Broken Stalactite
-							i(41720),	-- Design: Smooth Autumn's Glow
-							i(44189),	-- Giant Ring Belt
-							i(44194),	-- Giant-Friend Kilt
-							i(44133, {	-- Greater Inscription of the Axe
-								["filterID"] = CONSUMABLES,
-							}),
-							i(50335, {	-- Greater Inscription of the Axe
-								["filterID"] = CONSUMABLES,
-							}),
-							i(44134, {	-- Greater Inscription of the Crag
-								["filterID"] = CONSUMABLES,
-							}),
-							i(50336, {	-- Greater Inscription of the Crag
-								["filterID"] = CONSUMABLES,
-							}),
-							i(44136, {	-- Greater Inscription of the Pinnacle
-								["filterID"] = CONSUMABLES,
-							}),
-							i(50337, {	-- Greater Inscription of the Pinnacle
-								["filterID"] = CONSUMABLES,
-							}),
-							i(44135, {	-- Greater Inscription of the Storm
-								["filterID"] = CONSUMABLES,
-							}),
-							i(50338, {	-- Greater Inscription of the Storm
-								["filterID"] = CONSUMABLES,
-							}),
-							i(44131, {	-- Lesser Inscription of the Axe
-								["filterID"] = CONSUMABLES,
-							}),
-							i(44130, {	-- Lesser Inscription of the Crag
-								["filterID"] = CONSUMABLES,
-							}),
-							i(44132, {	-- Lesser Inscription of the Pinnacle
-								["filterID"] = CONSUMABLES,
-							}),
-							i(44129, {	-- Lesser Inscription of the Storm
-								["filterID"] = CONSUMABLES,
-							}),
-							i(42184),	-- Pattern: Glacial Bag
-							i(44510),	-- Pattern: Mammoth Mining Bag (RECIPE!)
-							i(44190),	-- Spaulders of Frozen Knives
-							i(44195),	-- Spaulders of the Giant Lords
-							i(44192),	-- Stalactite Chopper
+						["groups"] = bubbleDownClassicRep(FACTION_THE_SONS_OF_HODIR, {
+							{		-- Neutral
+							}, {	-- Friendly
 							-- #if ANYCLASSIC
-							i(206392, {	-- Tabard of the Sons of Hodir
-								["factionID"] = FACTION_THE_SONS_OF_HODIR,	-- The Sons of Hodir
-							}),
-							-- #endif
-						},
+								i(206392, {	-- Tabard of the Sons of Hodir
+									["factionID"] = FACTION_THE_SONS_OF_HODIR,	-- The Sons of Hodir
+								}),
+								-- #endif
+							}, {	-- Honored
+								i(44137, {	-- Arcanum of the Frosty Soul
+									["timeline"] = { REMOVED_5_0_4 },
+									["filterID"] = CONSUMABLES,
+								}),
+								i(44189),	-- Giant Ring Belt
+								i(44131, {	-- Lesser Inscription of the Axe
+									["filterID"] = CONSUMABLES,
+								}),
+								i(44130, {	-- Lesser Inscription of the Crag
+									["filterID"] = CONSUMABLES,
+								}),
+								i(44132, {	-- Lesser Inscription of the Pinnacle
+									["filterID"] = CONSUMABLES,
+								}),
+								i(44129, {	-- Lesser Inscription of the Storm
+									["filterID"] = CONSUMABLES,
+								}),
+								i(44510),	-- Pattern: Mammoth Mining Bag (RECIPE!)
+								i(44190),	-- Spaulders of Frozen Knives
+							}, {	-- Revered
+								i(44193),	-- Broken Stalactite
+								ach(2082, {	-- Ice Mammoth
+									["providers"] = {
+										{ "i", 43958 },	-- Ice Mammoth (A) (MOUNT!)
+										{ "i", 44080 },	-- Ice Mammoth (H) (MOUNT!)
+									},
+								}),
+								i(44195),	-- Spaulders of the Giant Lords
+								i(44192),	-- Stalactite Chopper
+							}, {	-- Exalted
+								i(41720),	-- Design: Smooth Autumn's Glow
+								i(44194),	-- Giant-Friend Kilt
+								ach(2083, {	-- Grand Ice Mammoth
+									["providers"] = {
+										{ "i", 43961 },	-- Reins of the Grand Ice Mammoth (A) (MOUNT!)
+										{ "i", 44086 },	-- Reins of the Grand Ice Mammoth (H) (MOUNT!)
+									},
+								}),
+								i(44133, {	-- Greater Inscription of the Axe
+									["filterID"] = CONSUMABLES,
+								}),
+								i(50335, {	-- Greater Inscription of the Axe
+									["filterID"] = CONSUMABLES,
+								}),
+								i(44134, {	-- Greater Inscription of the Crag
+									["filterID"] = CONSUMABLES,
+								}),
+								i(50336, {	-- Greater Inscription of the Crag
+									["filterID"] = CONSUMABLES,
+								}),
+								i(44136, {	-- Greater Inscription of the Pinnacle
+									["filterID"] = CONSUMABLES,
+								}),
+								i(50337, {	-- Greater Inscription of the Pinnacle
+									["filterID"] = CONSUMABLES,
+								}),
+								i(44135, {	-- Greater Inscription of the Storm
+									["filterID"] = CONSUMABLES,
+								}),
+								i(50338, {	-- Greater Inscription of the Storm
+									["filterID"] = CONSUMABLES,
+								}),
+								i(42184),	-- Pattern: Glacial Bag (RECIPE!)
+								i(43961),	-- Reins of the Grand Ice Mammoth (A) (MOUNT!)
+								i(44086),	-- Reins of the Grand Ice Mammoth (H) (MOUNT!)
+								i(43958),	-- Reins of the Ice Mammoth (A) (MOUNT!)
+								i(44080),	-- Reins of the Ice Mammoth (H) (MOUNT!)
+							},
+						}),
 					}),
 					n(30472, {	-- Olut Alegut
 						["coord"] = { 37.0, 49.6, THE_STORM_PEAKS },

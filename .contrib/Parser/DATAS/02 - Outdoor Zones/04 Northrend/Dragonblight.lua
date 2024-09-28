@@ -2370,37 +2370,43 @@ root(ROOTS.Zones, {
 					}),
 					n(32533, {	-- Cielstrasza <Wyrmrest Accord Quartermaster>
 						["coord"] = { 59.8, 53.0, DRAGONBLIGHT },
-						["groups"] = {
-							i(44200),	-- Ancestral Sinew Wristguards
-							i(50370, {	-- Arcanum of Blissful Mending
-								["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
-								["timeline"] = { REMOVED_5_0_4 },
-								["filterID"] = CONSUMABLES,
-							}),
-							i(44152, {	-- Arcanum of Blissful Mending
-								["timeline"] = { REMOVED_5_0_4 },
-								["filterID"] = CONSUMABLES,
-							}),
-							i(44140, {	-- Arcanum of the Eclipsed Moon
-								["timeline"] = { REMOVED_5_0_4 },
-								["filterID"] = CONSUMABLES,
-							}),
-							i(44197),	-- Bracers of Accorded Courtesy
-							i(44198),	-- Breastplate of the Solemn Council
-							i(44188),	-- Cloak of Peaceful Resolutions
-							i(41722),	-- Design: Stalwart Monarch Topaz [CATA+] / Design: Glimmering Monarch Topaz [WRATH]
-							i(44203),	-- Dragonfriend Bracers
-							i(44187),	-- Fang of Truth
-							i(44199),	-- Gavel of the Brewing Storm
-							i(44204),	-- Grips of Fierce Pronouncements
-							i(44205),	-- Legplates of Bloody Reprisal
-							i(42185),	-- Pattern: Mysterious Bag
-							i(43955),	-- Red Drake (MOUNT!)
-							i(44201),	-- Sabatons of Draconic Vigor
-							i(44202),	-- Sandals of Crimson Fury
-							i(44196),	-- Sash of the Wizened Wyrm
-							i(43156),	-- Tabard of the Wyrmrest Accord
-						},
+						["groups"] = bubbleDownClassicRep(FACTION_THE_WYRMREST_ACCORD, {
+							{		-- Neutral
+							}, {	-- Friendly
+								i(43156),	-- Tabard of the Wyrmrest Accord
+							}, {	-- Honored
+								i(44140, {	-- Arcanum of the Eclipsed Moon
+									["timeline"] = { REMOVED_5_0_4 },
+									["filterID"] = CONSUMABLES,
+								}),
+								i(44197),	-- Bracers of Accorded Courtesy
+								i(44188),	-- Cloak of Peaceful Resolutions
+								i(44187),	-- Fang of Truth
+								i(44196),	-- Sash of the Wizened Wyrm
+							}, {	-- Revered
+								i(44200),	-- Ancestral Sinew Wristguards
+								i(50370, {	-- Arcanum of Blissful Mending
+									["description"] = "This version is only visible on the vendor when you aren't at the required reputation to purchase it yet on your current character.",
+									["timeline"] = { REMOVED_5_0_4 },
+									["filterID"] = CONSUMABLES,
+								}),
+								i(44152, {	-- Arcanum of Blissful Mending
+									["timeline"] = { REMOVED_5_0_4 },
+									["filterID"] = CONSUMABLES,
+								}),
+								i(44198),	-- Breastplate of the Solemn Council
+								i(44199),	-- Gavel of the Brewing Storm
+								i(42185),	-- Pattern: Mysterious Bag (RECIPE!)
+								i(44201),	-- Sabatons of Draconic Vigor
+							}, {	-- Exalted
+								i(41722),	-- Design: Stalwart Monarch Topaz [CATA+] / Design: Glimmering Monarch Topaz [WRATH] (RECIPE!)
+								i(44203),	-- Dragonfriend Bracers
+								i(44204),	-- Grips of Fierce Pronouncements
+								i(44205),	-- Legplates of Bloody Reprisal
+								i(43955),	-- Reins of the Red Drake (MOUNT!)
+								i(44202),	-- Sandals of Crimson Fury
+							},
+						}),
 					}),
 					n(27185, {	-- Kuk'uq <Spearcrafter>
 						["coord"] = { 49.4, 75.2, DRAGONBLIGHT },
@@ -2423,30 +2429,37 @@ root(ROOTS.Zones, {
 					}),
 					n(32763, {	-- Sairuk <Kalu'ak Quartermaster>
 						["coord"] = { 48.6, 75.6, DRAGONBLIGHT },
-						["groups"] = {
-							i(44059),	-- Cuttlefish Scale Breastplate
-							i(44060),	-- Cuttlefish Tooth Ringmail
-							i(41574),	-- Design: Defender's Shadow Crystal
-							i(41568),	-- Design: Purified Shadow Crystal [CATA+] / Design: Seer's Dark Jade [WRATH]
-							i(44057),	-- Ivory-Reinforced Chestguard
-							i(44050),	-- Mastercraft Kalu'ak Fishing Pole
-							i(44723, {	-- Pengu (PET!)
-								["timeline"] = { ADDED_3_0_2 },
-							}),
-							i(44511, {	-- Pattern: Dragonscale Ammo Pouch (RECIPE!)
-								["timeline"] = { REMOVED_4_0_1 },
-							}),
-							i(45774),	-- Pattern: Emerald Bag
-							i(44509),	-- Pattern: Trapper's Traveling Pack (RECIPE!)
-							i(44061),	-- Pigment-Stained Robes
-							i(44052),	-- Totemic Purification Rod
-							i(44051),	-- Traditional Flensing Knife
-							i(44062),	-- Turtle-Minders Robe
-							i(44054),	-- Whale-Skin Breastplate
-							i(44055),	-- Whale-Skin Vest
-							i(44053),	-- Whale-Stick Harpoon
-							i(44058),	-- Whalebone Carapace
-						},
+						["groups"] = bubbleDownClassicRep(FACTION_THE_KALUAK, {
+							{		-- Neutral
+							}, {	-- Friendly
+								i(41568),	-- Design: Purified Shadow Crystal [CATA+] / Design: Seer's Dark Jade [WRATH] (RECIPE!)
+								i(44049),	-- Freshly-Speared Emperor Salmon
+							}, {	-- Honored
+								i(44059),	-- Cuttlefish Scale Breastplate
+								i(44060),	-- Cuttlefish Tooth Ringmail
+								i(41574),	-- Design: Defender's Shadow Crystal (RECIPE!)
+								i(44057),	-- Ivory-Reinforced Chestguard
+								i(44511, {	-- Pattern: Dragonscale Ammo Pouch (RECIPE!)
+									["timeline"] = { REMOVED_4_0_1 },
+								}),
+								i(44061),	-- Pigment-Stained Robes
+								i(44062),	-- Turtle-Minders Robe
+								i(44054),	-- Whale-Skin Breastplate
+								i(44055),	-- Whale-Skin Vest
+								i(44058),	-- Whalebone Carapace
+							}, {	-- Revered
+								i(45774),	-- Pattern: Emerald Bag
+								i(44509),	-- Pattern: Trapper's Traveling Pack (RECIPE!)
+								i(44052),	-- Totemic Purification Rod
+								i(44051),	-- Traditional Flensing Knife
+								i(44053),	-- Whale-Stick Harpoon
+							}, {	-- Exalted
+								i(44050),	-- Mastercraft Kalu'ak Fishing Pole
+								i(44723, {	-- Nurtured Penguin Egg (PET!)
+									["timeline"] = { ADDED_3_0_2 },
+								}),
+							},
+						}),
 					}),
 				}),
 				n(ZONE_DROPS, {
