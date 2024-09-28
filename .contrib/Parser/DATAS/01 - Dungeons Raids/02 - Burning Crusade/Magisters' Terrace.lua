@@ -86,6 +86,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 					["sourceQuest"] = 11488,	-- Magisters' Terrace
 					["lvl"] = lvlsquish(70, 70, 25),
 					-- #endif
+					["groups"] = {
+						objective(1, {	-- Scrying Orb Activated
+							["provider"] = { "o", 189292 },	-- Scrying Orb
+						}),
+					},
 				}),
 				q(29687, {	-- Twisted Associations
 					["qg"] = 55007,	-- Exarch Larethor

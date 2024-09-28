@@ -467,6 +467,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				})),
 				q(8791, {	-- The Fall of Ossirian
 					["provider"] = { "i", 21220 },	-- Head of Ossirian the Unscarred
+					["maps"] = { SILITHUS },
 					["lvl"] = 60,
 					["groups"] = {
 						i(21507),	-- Amulet of the Shifting Sands
