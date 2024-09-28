@@ -255,91 +255,91 @@ for key, value in pairs({
 	-- ["GARRISON_BUILDINGS_REQUIRE_GARRISON"] = "Due to a Blizzard API issue/restriction, this can only be properly cached as collected while within your Garrison",
 
 	-- Settings.lua
-		["AFTER_REFRESH"] = "After Refresh";
+		-- ["AFTER_REFRESH"] = "After Refresh";
 
 		-- General tab
 			-- Mode Title
-				["MODE"] = "Mode";
-				["TITLE_COMPLETIONIST"] = "Completionist ";
-				["TITLE_UNIQUE_APPEARANCE"] = "Unique ";
-				["TITLE_DEBUG"] = app.ccColors.Red .. "Debug|R ";
-				["TITLE_ACCOUNT"] = app.ccColors.Account .. "Account|R ";
-				["TITLE_ALLIANCE"] = app.ccColors.Alliance .. FACTION_ALLIANCE .. "|R";
-				["TITLE_HORDE"] = app.ccColors.Horde .. FACTION_HORDE .. "|R";
-				["TITLE_NEUTRAL"] = FACTION_NEUTRAL;
-				["TITLE_MAIN_ONLY"] = " (Main Only)";
-				["TITLE_NONE_THINGS"] = "None of the Things ";
-				["TITLE_ONLY"] = " Only ";
-				["TITLE_INSANE"] = app.ccColors.Insane .. "Insane|R ";
-				["TITLE_SOME_THINGS"] = "Some of the Things ";
-				["TITLE_LEVEL"] = "Level ";
-				["TITLE_SOLO"] = "Solo ";
-				["_BETA_LABEL"] = " |cff4AA7FF[Beta]|R";
+				-- ["MODE"] = "Mode";
+				-- ["TITLE_COMPLETIONIST"] = "Completionist ";
+				-- ["TITLE_UNIQUE_APPEARANCE"] = "Unique ";
+				-- ["TITLE_DEBUG"] = app.ccColors.Red .. "Debug|R ";
+				-- ["TITLE_ACCOUNT"] = app.ccColors.Account .. "Account|R ";
+				-- ["TITLE_ALLIANCE"] = app.ccColors.Alliance .. FACTION_ALLIANCE .. "|R";
+				-- ["TITLE_HORDE"] = app.ccColors.Horde .. FACTION_HORDE .. "|R";
+				-- ["TITLE_NEUTRAL"] = FACTION_NEUTRAL;
+				-- ["TITLE_MAIN_ONLY"] = " (Main Only)";
+				-- ["TITLE_NONE_THINGS"] = "None of the Things ";
+				-- ["TITLE_ONLY"] = " Only ";
+				-- ["TITLE_INSANE"] = app.ccColors.Insane .. "Insane|R ";
+				-- ["TITLE_SOME_THINGS"] = "Some of the Things ";
+				-- ["TITLE_LEVEL"] = "Level ";
+				-- ["TITLE_SOLO"] = "Solo ";
+				-- ["_BETA_LABEL"] = " |cff4AA7FF[Beta]|R";	-- unused
 
-	["EXTRA_THINGS_LABEL"] = "Additional Resources";
+	-- ["EXTRA_THINGS_LABEL"] = "Additional Resources";	-- unused
 
-	["CLICK_TO_CREATE_FORMAT"] = "Click to Create %s";
-	["LOADING_FORMAT"] = "%s "..LFG_LIST_LOADING;	-- %s Loading...
-	["READY_FORMAT"] = "%s "..READY;	-- %s Ready
+	-- ["CLICK_TO_CREATE_FORMAT"] = "Click to Create %s";
+	["LOADING_FORMAT"] = "%s "..LFG_LIST_LOADING;	-- %s Loading...	-- unused
+	["READY_FORMAT"] = "%s "..READY;	-- %s Ready	-- unused
 
 	-- Features tab
-	["AUTO_BOUNTY_CHECKBOX"] = "Automatically Open the Bounty List";
-	["AUTO_BOUNTY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty";
-	["AUTO_MAIN_LIST_CHECKBOX"] = "Automatically Open the Main List";
-	["AUTO_MAIN_LIST_CHECKBOX_TOOLTIP"] = "Enable this option if you want to automatically open the Main List when you login.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List\n\nShortcut Command: /att";
-	["AUTO_MINI_LIST_CHECKBOX"] = "Automatically Open the Mini List";
-	["AUTO_MINI_LIST_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones. Some people don't like this feature, but when you are solo farming, this feature is extremely useful.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Mini List\n\nShortcut Command: /att mini";
-	["FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX"] = "Filter Mini List for Timerunning";
-	["FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP"] = "Enable this option to filter Timerunning content appropriately (only from the mini list) when playing on either a Retail or Timerunning Character.\n\nNOTE: This option will only be available during Timerunning events!";
-	["AUTO_RAID_ASSISTANT_CHECKBOX"] = "Automatically Open the Raid Assistant";
-	["AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra";
-	["AUTO_WQ_LIST_CHECKBOX"] = "Automatically Open the World Quests List";
-	["AUTO_WQ_LIST_CHECKBOX_TOOLTIP"] = "Enable this option if you want the 'World Quests' list to appear automatically. The list will automatically update whenever you switch zones.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle World Quests List\n\nShortcut Command: /attwq";
-	["AUCTION_TAB_CHECKBOX"] = "Show the Auction House Module Tab";
-	["AUCTION_TAB_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.";
+	-- ["AUTO_BOUNTY_CHECKBOX"] = "Automatically Open the Bounty List";
+	-- ["AUTO_BOUNTY_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the items that have an outstanding collection bounty. If you manage to snag one of the items posted on this list, you could make a good sum of gold.\n\nShortcut Command: /attbounty";
+	-- ["AUTO_MAIN_LIST_CHECKBOX"] = "Automatically Open the Main List";
+	-- ["AUTO_MAIN_LIST_CHECKBOX_TOOLTIP"] = "Enable this option if you want to automatically open the Main List when you login.\n\nYou can also bind this setting to a Key:\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Main List\n\nShortcut Command: /att";
+	-- ["AUTO_MINI_LIST_CHECKBOX"] = "Automatically Open the Mini List";
+	-- ["AUTO_MINI_LIST_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see everything you can collect in your current zone. The list will automatically switch when you change zones. Some people don't like this feature, but when you are solo farming, this feature is extremely useful.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Mini List\n\nShortcut Command: /att mini";
+	-- ["FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX"] = "Filter Mini List for Timerunning";
+	-- ["FILTER_MINI_LIST_FOR_TIMERUNNING_CHECKBOX_TOOLTIP"] = "Enable this option to filter Timerunning content appropriately (only from the mini list) when playing on either a Retail or Timerunning Character.\n\nNOTE: This option will only be available during Timerunning events!";
+	-- ["AUTO_RAID_ASSISTANT_CHECKBOX"] = "Automatically Open the Raid Assistant";
+	-- ["AUTO_RAID_ASSISTANT_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see an alternative group/party/raid settings manager called the 'Raid Assistant'. The list will automatically update whenever group settings change.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle Raid Assistant\n\nShortcut Command: /attra";
+	-- ["AUTO_WQ_LIST_CHECKBOX"] = "Automatically Open the World Quests List";
+	-- ["AUTO_WQ_LIST_CHECKBOX_TOOLTIP"] = "Enable this option if you want the 'World Quests' list to appear automatically. The list will automatically update whenever you switch zones.\n\nYou can also bind this setting to a Key.\n\nKey Bindings -> Addons -> ALL THE THINGS -> Toggle World Quests List\n\nShortcut Command: /attwq";
+	-- ["AUCTION_TAB_CHECKBOX"] = "Show the Auction House Module Tab";
+	-- ["AUCTION_TAB_CHECKBOX_TOOLTIP"] = "Enable this option if you want to see the Auction House Module provided with ATT.\n\nSome addons are naughty and modify this frame extensively. ATT doesn't always play nice with those toys.";
 
 	-- Sync Window
-	["ACCOUNT_MANAGEMENT"] = "Account Management";
-	["ACCOUNT_MANAGEMENT_TOOLTIP"] = "This list shows you all of the functionality related to syncing account data.";
-	["ADD_LINKED_CHARACTER_ACCOUNT"] = "Add Linked Character / Account";
-	["ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP"] = "Click here to link a character or account to your account.";
-	["ADD_LINKED_POPUP"] = "Please type the name of the character or BNET account to link to.";
-	["CHARACTERS"] = CHARACTER;	-- Character
-	["SYNC_CHARACTERS_TOOLTIP"] = "This shows all of the characters on your account.";
-	["NO_CHARACTERS_FOUND"] = "No characters found.";
-	["LINKED_ACCOUNTS"] = "Linked Accounts";
-	["LINKED_ACCOUNTS_TOOLTIP"] = "This shows all of the linked accounts you have defined so far.";
-	["NO_LINKED_ACCOUNTS"] = "No linked accounts found.";
-	["LINKED_ACCOUNT_TOOLTIP"] = "This character's account will be synchronized with automatically when they log in. For optimal play, you should whitelist a bank character and probably not your main as to not affect your ability to play your character when syncing account data.";
-	["DELETE_LINKED_CHARACTER"] = "Right Click to Delete this Linked Character";
-	["DELETE_LINKED_ACCOUNT"] = "Right Click to Delete this Linked Account";
-	["DELETE_CHARACTER"] = "Right Click to Delete this Character";
-	["CONFIRM_DELETE"] = "\n \nAre you sure you want to delete this?";
+	-- ["ACCOUNT_MANAGEMENT"] = "Account Management";
+	-- ["ACCOUNT_MANAGEMENT_TOOLTIP"] = "This list shows you all of the functionality related to syncing account data.";
+	-- ["ADD_LINKED_CHARACTER_ACCOUNT"] = "Add Linked Character / Account";
+	-- ["ADD_LINKED_CHARACTER_ACCOUNT_TOOLTIP"] = "Click here to link a character or account to your account.";
+	-- ["ADD_LINKED_POPUP"] = "Please type the name of the character or BNET account to link to.";
+	-- ["CHARACTERS"] = CHARACTER;	-- Character
+	-- ["SYNC_CHARACTERS_TOOLTIP"] = "This shows all of the characters on your account.";
+	-- ["NO_CHARACTERS_FOUND"] = "No characters found.";
+	-- ["LINKED_ACCOUNTS"] = "Linked Accounts";
+	-- ["LINKED_ACCOUNTS_TOOLTIP"] = "This shows all of the linked accounts you have defined so far.";
+	-- ["NO_LINKED_ACCOUNTS"] = "No linked accounts found.";
+	-- ["LINKED_ACCOUNT_TOOLTIP"] = "This character's account will be synchronized with automatically when they log in. For optimal play, you should whitelist a bank character and probably not your main as to not affect your ability to play your character when syncing account data.";
+	-- ["DELETE_LINKED_CHARACTER"] = "Right Click to Delete this Linked Character";
+	-- ["DELETE_LINKED_ACCOUNT"] = "Right Click to Delete this Linked Account";
+	-- ["DELETE_CHARACTER"] = "Right Click to Delete this Character";
+	-- ["CONFIRM_DELETE"] = "\n \nAre you sure you want to delete this?";
 
 	-- Tooltip Text
-	["SECRETS_HEADER"] = "Secrets";
-	["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
+	-- ["SECRETS_HEADER"] = "Secrets";	-- unused
+	-- ["SOURCE_ID_MISSING"] = "Please report this Item and where it was acquired to the ATT Discord in #retail-errors!";
 
 	-- Artifact Relic Completion
-	["ARTIFACT_RELIC_CACHE"] = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
-	["ARTIFACT_RELIC_COMPLETION"] = "Artifact Relic Completion";
-	["NOT_TRADEABLE"] = "Not Tradeable";
-	["TRADEABLE"] = "Tradeable";
+	-- ["ARTIFACT_RELIC_CACHE"] = "Open your Artifact UI for all of your Artifact Weapons to cache whether this is an upgrade or not. This is useful for determining if you can trade this item to a Twink or not.";
+	-- ["ARTIFACT_RELIC_COMPLETION"] = "Artifact Relic Completion";
+	-- ["NOT_TRADEABLE"] = "Not Tradeable";
+	-- ["TRADEABLE"] = "Tradeable";
 
 	-- Keybind usage
-	["ENABLED"] = "enabled";
-	["DISABLED"] = "disabled";
+	-- ["ENABLED"] = "enabled";
+	-- ["DISABLED"] = "disabled";
 
 	-- Icons and Collection Text
-	["SAVED"] = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Saved|r";	-- Acquired the colors and icon from CanIMogIt.
-	["COST_ICON"] = "|T" .. app.asset("Currency") .. ":0|t";
-	["COST_TEXT"] = "|T" .. app.asset("Currency") .. ":0|t |cffdedade"..CURRENCY.."|r";
-	["COLLECTED_WARBAND_ICON"] = "|T" .. app.asset("known_circle_yellow") .. ":0|t";
-	["COLLECTED_WARBAND"] = "|T" .. app.asset("known_circle_yellow") .. ":0|t |cfff0e341Future Warband Collected|r";
-	["UPGRADE_ICON"] = "|T" .. app.asset("Interface_Upgrade") .. ":0|t";
-	["UPGRADE_TEXT"] = "|T" .. app.asset("Interface_Upgrade") .. ":0|t |cff62e37e"..UPGRADE.."|r";
-	["REAGENT_ICON"] = "|T" .. app.asset("Interface_Reagent") .. ":0|t";
-	["REAGENT_TEXT"] = "|T" .. app.asset("Interface_Reagent") .. ":0|t |cffdedade"..GetItemClassInfo(5).."|r";
+	-- ["SAVED"] = "|T" .. app.asset("known_green") .. ":0|t |cff6dce47Saved|r";	-- Acquired the colors and icon from CanIMogIt.
+	-- ["COST_ICON"] = "|T" .. app.asset("Currency") .. ":0|t";
+	-- ["COST_TEXT"] = "|T" .. app.asset("Currency") .. ":0|t |cffdedade"..CURRENCY.."|r";
+	-- ["COLLECTED_WARBAND_ICON"] = "|T" .. app.asset("known_circle_yellow") .. ":0|t";
+	-- ["COLLECTED_WARBAND"] = "|T" .. app.asset("known_circle_yellow") .. ":0|t |cfff0e341Future Warband Collected|r";
+	-- ["UPGRADE_ICON"] = "|T" .. app.asset("Interface_Upgrade") .. ":0|t";
+	-- ["UPGRADE_TEXT"] = "|T" .. app.asset("Interface_Upgrade") .. ":0|t |cff62e37e"..UPGRADE.."|r";
+	-- ["REAGENT_ICON"] = "|T" .. app.asset("Interface_Reagent") .. ":0|t";
+	-- ["REAGENT_TEXT"] = "|T" .. app.asset("Interface_Reagent") .. ":0|t |cffdedade"..GetItemClassInfo(5).."|r";
 
 	-- These need to be localized manually.
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
