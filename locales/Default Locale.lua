@@ -720,6 +720,7 @@ local L = setmetatable({
 		["Верховая езда"] = 33388,
 		["탈것 타기"] = 33388,
 		["骑术"] = 33388,
+		["騎術"] = 33388,
 
 		-- Herb Gathering
 		-- The skill name is "Herbalism", not "Herb Gathering"
