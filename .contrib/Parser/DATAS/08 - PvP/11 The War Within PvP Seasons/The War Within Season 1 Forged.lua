@@ -16,6 +16,18 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED
 			ach(40386),		-- Combatant II: The War Within Season 1
 			ach(40387),		-- Challenger I: The War Within Season 1
 			ach(40388),		-- Challenger II: The War Within Season 1
+			ach(41044, {	-- Forged Weapons of Conquest
+				i(232602, {	-- Forged Gladiator's Coin Pouch
+					i(232603, {	-- Forged Gladiator's Weapon Token
+						["sym"] = {
+							{"select", "npcID", 219222 },	-- Lalandi <Conquest Quartermaster>
+							{"pop"},
+							{"where", "headerID", WEAPONS},
+							{"pop"}
+						},
+					}),
+				}),
+			}),
 			ach(40389),		-- Rival I: The War Within Season 1
 			ach(40390, {	-- Rival II: The War Within Season 1
 				-- Illusion here
