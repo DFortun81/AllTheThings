@@ -810,11 +810,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["timeline"] = { ADDED_4_1_0 },
 					["isDaily"] = true,
 					["groups"] = {
-						objective(1, {	-- 0/4 Flame Ascendant slain
-							["provider"] = { "n", 40709 },	-- Flame Ascendant
-						}),
-						objective(2, {	-- 0/5 Twilight Subjugator slain
-							["provider"] = { "n", 40463 },	-- Twilight Subjugator
+						objective(1, {	-- 0/1 Pyrachnis slain
+							["providers"] = {
+								{ "n", 52749 },	-- Pyrachnis <Beth'tilac Lieutenant>
+								{ "i", 69232 },	-- Emerald of Aessina
+							},
 						}),
 						n(52749, {	-- Pyrachnis <Beth'tilac Lieutenant>
 							crit(17829, {	-- Infernal Ambassadors (Slay Pyrachnis without using the Emerald of Aessina)
