@@ -553,41 +553,6 @@ root(ROOTS.Unsorted, {
 				i(231017),	-- Wings of the Onyx Monarch
 			}),
 			n(PVP, {
-				i(230869),	-- Ensemble: Crimson Aspirant's Cloth Armor
-				i(230870),	-- Ensemble: Crimson Aspirant's Leather Armor
-				i(230871),	-- Ensemble: Crimson Aspirant's Mail Armor
-				i(230872),	-- Ensemble: Crimson Aspirant's Plate Armor
-				i(230873),	-- Ensemble: Crimson Gladiator's Death Knight Armor
-				i(230874),	-- Ensemble: Crimson Gladiator's Demon Hunter Armor
-				i(230875),	-- Ensemble: Crimson Gladiator's Druid Armor
-				i(230876),	-- Ensemble: Crimson Gladiator's Evoker Armor
-				i(230877),	-- Ensemble: Crimson Gladiator's Hunter Armor
-				i(230878),	-- Ensemble: Crimson Gladiator's Mage Armor
-				i(230879),	-- Ensemble: Crimson Gladiator's Monk Armor
-				i(230880),	-- Ensemble: Crimson Gladiator's Paladin Armor
-				i(230881),	-- Ensemble: Crimson Gladiator's Priest Armor
-				i(230882),	-- Ensemble: Crimson Gladiator's Rogue Armor
-				i(230883),	-- Ensemble: Crimson Gladiator's Shaman Armor
-				i(230884),	-- Ensemble: Crimson Gladiator's Warlock Armor
-				i(230885),	-- Ensemble: Crimson Gladiator's Warrior Armor
-				i(230886),	-- Ensemble: Elite Crimson Gladiator's Death Knight Armor
-				i(230887),	-- Ensemble: Elite Crimson Gladiator's Demon Hunter Armor
-				i(230888),	-- Ensemble: Elite Crimson Gladiator's Druid Armor
-				i(230889),	-- Ensemble: Elite Crimson Gladiator's Evoker Armor
-				i(230890),	-- Ensemble: Elite Crimson Gladiator's Hunter Armor
-				i(230891),	-- Ensemble: Elite Crimson Gladiator's Mage Armor
-				i(230892),	-- Ensemble: Elite Crimson Gladiator's Monk Armor
-				i(230893),	-- Ensemble: Elite Crimson Gladiator's Paladin Armor
-				i(230894),	-- Ensemble: Elite Crimson Gladiator's Priest Armor
-				i(230895),	-- Ensemble: Elite Crimson Gladiator's Rogue Armor
-				i(230896),	-- Ensemble: Elite Crimson Gladiator's Shaman Armor
-				i(230897),	-- Ensemble: Elite Crimson Gladiator's Warlock Armor
-				i(230898),	-- Ensemble: Elite Crimson Gladiator's Warrior Armor
-				i(230899),	-- Arsenal: Crimson Aspirant's Weapons
-				i(230900),	-- Arsenal: Crimson Gladiator's Weapons
-				i(230901),	-- Arsenal: Elite Crimson Gladiator's Weapons
-
-
 				i(230951),	-- Ensemble: Obsidian Aspirant's Cloth Armor
 				i(230952),	-- Ensemble: Obsidian Aspirant's Leather Armor
 				i(230953),	-- Ensemble: Obsidian Aspirant's Mail Armor

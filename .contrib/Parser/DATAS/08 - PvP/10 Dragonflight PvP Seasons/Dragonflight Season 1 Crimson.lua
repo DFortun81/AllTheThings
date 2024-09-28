@@ -176,10 +176,33 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				},
 			})),
 		}),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
+		n(PVP_ASPIRANT, {
 			n(199601, {	-- Seltherex
 				["coord"] = { 44.7, 37.0, VALDRAKKEN },
-				["g"] = {
+				["g"] = sharedData({
+					["cost"] = {{"i", MOH, 12}},
+					["timeline"] = { ADDED_11_0_5 },
+				}, {
+					iensemble(230899, {	-- Arsenal: Crimson Aspirant's Weapons
+						["cost"] = {{"i", MOH, 80}},
+					}),
+					iensemble(230869, {	-- Ensemble: Crimson Aspirant's Cloth Armor
+						["classes"] = CLOTH_CLASSES,
+					}),
+					iensemble(230870, {	-- Ensemble: Crimson Aspirant's Leather Armor
+						["classes"] = LEATHER_CLASSES,
+					}),
+					iensemble(230871, {	-- Ensemble: Crimson Aspirant's Mail Armor
+						["classes"] = MAIL_CLASSES,
+					}),
+					iensemble(230872, {	-- Ensemble: Crimson Aspirant's Plate Armor
+						["classes"] = PLATE_CLASSES,
+					}),
+				}),
+			}),
+			n(199601, {	-- Seltherex
+				["coord"] = { 44.7, 37.0, VALDRAKKEN },
+				["g"] = bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 					filter(BACK_F, {
 						honor(525, i(201752)),	-- Crimson Aspirant's Cape
 						honor(525, i(201750)),	-- Crimson Aspirant's Cloak
@@ -295,13 +318,63 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						honor(425, i(201766)),	-- Crimson Aspirant's Torch
 						honor(875, i(201767)),	-- Crimson Aspirant's Warglaive
 					}),
-				},
+				}),
 			}),
-		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
+		}),
+		n(PVP_GLADIATOR, {
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
-				["g"] = {
+				["g"] = sharedData({
+					["cost"] = {{"i", MOH, 12}},
+					["timeline"] = { ADDED_11_0_5 },
+				}, {
+					iensemble(230900, {	-- Arsenal: Crimson Gladiator's Weapons
+						["cost"] = {{"i", MOH, 80}},
+					}),
+					iensemble(230873, {	-- Ensemble: Crimson Gladiator's Death Knight Armor
+						["classes"] = { DEATHKNIGHT },
+					}),
+					iensemble(230874, {	-- Ensemble: Crimson Gladiator's Demon Hunter Armor
+						["classes"] = { DEMONHUNTER },
+					}),
+					iensemble(230875, {	-- Ensemble: Crimson Gladiator's Druid Armor
+						["classes"] = { DRUID },
+					}),
+					iensemble(230876, {	-- Ensemble: Crimson Gladiator's Evoker Armor
+						["classes"] = { EVOKER },
+					}),
+					iensemble(230877, {	-- Ensemble: Crimson Gladiator's Hunter Armor
+						["classes"] = { HUNTER },
+					}),
+					iensemble(230878, {	-- Ensemble: Crimson Gladiator's Mage Armor
+						["classes"] = { MAGE },
+					}),
+					iensemble(230879, {	-- Ensemble: Crimson Gladiator's Monk Armor
+						["classes"] = { MONK },
+					}),
+					iensemble(230880, {	-- Ensemble: Crimson Gladiator's Paladin Armor
+						["classes"] = { PALADIN },
+					}),
+					iensemble(230881, {	-- Ensemble: Crimson Gladiator's Priest Armor
+						["classes"] = { PRIEST },
+					}),
+					iensemble(230882, {	-- Ensemble: Crimson Gladiator's Rogue Armor
+						["classes"] = { ROGUE },
+					}),
+					iensemble(230883, {	-- Ensemble: Crimson Gladiator's Shaman Armor
+						["classes"] = { SHAMAN },
+					}),
+					iensemble(230884, {	-- Ensemble: Crimson Gladiator's Warlock Armor
+						["classes"] = { WARLOCK },
+					}),
+					iensemble(230885, {	-- Ensemble: Crimson Gladiator's Warrior Armor
+						["classes"] = { WARRIOR },
+					}),
+				}),
+			}),
+			n(199599, {	-- Calderax
+				["coord"] = { 44.3, 36.6, VALDRAKKEN },
+				["g"] = bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(525, i(201911)),	-- Crimson Gladiator's Cloak
@@ -612,9 +685,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						conquest(900, i(201974)),	-- Crimson Gladiator's Warglaive
 					}),
 
-				},
+				}),
 			}),
-		})),
+		}),
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }, ["bonusID"] = 7532 }, {
 			n(CLASSES, {
 				cl(DEATHKNIGHT, {
@@ -935,6 +1008,57 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					moh(5, i(202131)),	-- Crimson Gladiator's Sword
 					moh(5, i(202132)),	-- Crimson Gladiator's Warhammer
 				},
+			}),
+		})),
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+			n(199720, {	-- Glamora
+				["coord"] = { 45.9, 38.7, VALDRAKKEN },
+				["g"] = sharedData({
+					["cost"] = {{"i", MOH, 12}},
+				}, {
+					iensemble(230901, {	-- Arsenal: Elite Crimson Gladiator's Weapons
+						["cost"] = {{"i", MOH, 80}},
+					}),
+					iensemble(230886, {	-- Ensemble: Elite Crimson Gladiator's Death Knight Armor
+						["classes"] = { DEATHKNIGHT },
+					}),
+					iensemble(230887, {	-- Ensemble: Elite Crimson Gladiator's Demon Hunter Armor
+						["classes"] = { DEMONHUNTER },
+					}),
+					iensemble(230888, {	-- Ensemble: Elite Crimson Gladiator's Druid Armor
+						["classes"] = { DRUID },
+					}),
+					iensemble(230889, {	-- Ensemble: Elite Crimson Gladiator's Evoker Armor
+						["classes"] = { EVOKER },
+					}),
+					iensemble(230890, {	-- Ensemble: Elite Crimson Gladiator's Hunter Armor
+						["classes"] = { HUNTER },
+					}),
+					iensemble(230891, {	-- Ensemble: Elite Crimson Gladiator's Mage Armor
+						["classes"] = { MAGE },
+					}),
+					iensemble(230892, {	-- Ensemble: Elite Crimson Gladiator's Monk Armor
+						["classes"] = { MONK },
+					}),
+					iensemble(230893, {	-- Ensemble: Elite Crimson Gladiator's Paladin Armor
+						["classes"] = { PALADIN },
+					}),
+					iensemble(230894, {	-- Ensemble: Elite Crimson Gladiator's Priest Armor
+						["classes"] = { PRIEST },
+					}),
+					iensemble(230895, {	-- Ensemble: Elite Crimson Gladiator's Rogue Armor
+						["classes"] = { ROGUE },
+					}),
+					iensemble(230896, {	-- Ensemble: Elite Crimson Gladiator's Shaman Armor
+						["classes"] = { SHAMAN },
+					}),
+					iensemble(230897, {	-- Ensemble: Elite Crimson Gladiator's Warlock Armor
+						["classes"] = { WARLOCK },
+					}),
+					iensemble(230898, {	-- Ensemble: Elite Crimson Gladiator's Warrior Armor
+						["classes"] = { WARRIOR },
+					}),
+				}),
 			}),
 		})),
 		filter(RECIPES, {
