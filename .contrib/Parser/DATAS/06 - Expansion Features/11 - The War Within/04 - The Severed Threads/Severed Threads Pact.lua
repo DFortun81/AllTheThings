@@ -115,7 +115,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["minReputation"] = { FACTION_THE_WEAVER, 7 },
 						["coord"] = { 62.8, 22.9, NERUBAR },
 						["g"] = {
-							ach(40832),		-- Leave it to Weaver
+							ach(40832),	-- Leave it to Weaver
 							i(226103),	-- The Weaver's Trove
 						},
 					}),
@@ -154,7 +154,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["minReputation"] = { FACTION_THE_GENERAL, 7 },
 						["coord"] = { 46.0, 24.2, AZJ_KAHET },
 						["g"] = {
-							ach(40833),		-- The General's Salute
+							ach(40833),	-- The General's Salute
 							i(226045),	-- The General's Trove
 						},
 					}),
@@ -195,7 +195,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["minReputation"] = { FACTION_THE_VIZIER, 7 },
 						["coord"] = { 54.7, 33.2, NERUBAR },
 						["g"] = {
-							ach(40835),		-- Vizier than Ever
+							ach(40835),	-- Vizier than Ever
 							i(226100),	-- The Vizier's Trove
 						},
 					}),
@@ -235,6 +235,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["sourceQuest"] = 82616,
 					["provider"] = { "n", 224166 },	-- Eirzay
 					["coord"] = { 36.1, 50.2, NERUBAR },
+					["crs"] = { 220917 },	-- Chitinous Goliath
 				}),
 				q(81489, {	-- Bounty: Zorikal the Patron
 					["sourceQuest"] = 82581,
@@ -244,8 +245,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81475, {	-- Breaking the Phalanx: Royal Appointments
 					["sourceQuest"] = 82640,
 					["provider"] = { "n", 224161 },	-- Eirzay
-					["crs"] = { 220916 },	-- Royal Appointee
 					["coord"] = { 43.0, 47.1, NERUBAR },
+					["crs"] = { 220916 },	-- Royal Appointee
 				}),
 				q(81488, {	-- Breaking the Phalanx: Sages
 					["sourceQuest"] = 82642,
@@ -260,9 +261,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81494, {	-- Relics of War: Rak-Zakaz
 					["sourceQuest"] = 82649,
 					["provider"] = { "n", 224176 },	-- Eirzay
-					["coord"] = { 63.8, 26.3, NERUBAR_LOWER },
+					["coord"] = { 61.4, 24.1, NERUBAR_LOWER },
 					["g"] = {
-						i(225738),	-- Kaheti Warblade (QI!)
+						o(454176, {	-- Kaheti Armaments
+							i(225738),	-- Kaheti Warblade (QI!)
+						}),
 					},
 				}),
 				q(81478, {	-- Relics of War: The Ruptired Lake
@@ -295,7 +298,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81495, {	-- Requisitions: Brightblooms
 					["sourceQuest"] = 82641,
 					["provider"] = { "n", 224178 },	-- Ghos'opp
-					["coord"] = { 64.2, 21.4, NERUBAR },
+					["coord"] = { 64.2, 21.2, NERUBAR },
 					["g"] = {
 						o(437767, {	-- Crate of Hallowfall Herbs
 							i(219225),	-- Crystalline Brightbloom (QI!)
@@ -474,8 +477,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(81500, {	-- Wet Work: Step Into Their Parlor
 					["sourceQuest"] = 82642,
-					--["provider"] = { "n",  },	-- Ru'murh TODO
-					["coord"] = { 79.6, 56.5, NERUBAR },
+					["provider"] = { "n", 224192 },	-- Ru'murh
+					["coord"] = { 79.6, 56.6, NERUBAR },
+					["crs"] = { 221063 },	-- Sureki Shadowstalker
 					["g"] = {
 						i(219293),	-- Sureki Intelligence (QI!)
 					},
@@ -483,8 +487,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81555, {	-- Wet Work: Tithe to Kill
 					["sourceQuest"] = 82640,
 					["provider"] = { "n", 224190 },	-- Ru'murh
-					["crs"] = { 220315 },	-- Sureki Strongarm
 					["coord"] = { 41.5, 22.4, NERUBAR },
+					["crs"] = { 220315 },	-- Sureki Strongarm
 					["g"] = {
 						i(217996),	-- Sureki Tithe (QI!)
 					},
@@ -774,12 +778,14 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			-- Using Rumor Map Bundle (ItemID 228950) triggers all quests as completed and reveals all the NPCs with "rumors" on the map
 			-- 3 different rumors from all 3 'Agents' can trigger a same HQT
 			-- Observation: QuestIDs of the rumors are the same as the above 'Push Quests' however, you don't get the quests until you talk to the NPC that gives you the rumor	//Exodius (23-09-24)
-			q(82581, {	-- Ru'murh (n: 224199 @ 45.6, 51.0), starts questID 81483 (Infiltration: Production Blocker), (23-09-24, Exo)
+			q(82581, {	-- Ru'murh  (n: 224199 @ 45.6, 51.0), starts questID 81483 (Infiltration: Production Blocker), (23-09-24, Exo)
+					-- Ru'murh  (n: 224192 @ 79.6, 56.6), starts questID 81500 (Wet Work: Step Into Their Parlor), (29-09-24, Exo)
 					-- Ghos'opp (n: 224183 @ 64.5, 87.3), starts questID 81481 (Sabotage: Transformatory Vessels), (27-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82640, {	-- Ru'murh  (n: 224190 @ 41.5, 22.4), starts questID 81555 (Wet Work: Tithe to Kill), (23-09-24, Exo)
 					-- Ghos'opp (n: 224186 @ 54.5, 15.5), starts questID 81506 (Sabotage: Alchemical Instruments), (27-09-24, Exo)
+					-- Ghos'opp (n: 224178 @ 64.2, 21.2), starts questID 81495 (Requisitions: Brightblooms), (29-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82642, {	-- Eirzay   (n: 224161 @ 43.0, 47.2), starts questID 81475 (Breaking the Phalanx: Royal Appointments), (27-09-24, Exo)
@@ -787,22 +793,22 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			}),
 			q(82644, {	-- Ru'murh  (n: 224197 @ 55.7, 47.8), starts questID 81472 (Information Control: Ansurek's Truth), (23-09-24, Exo)
 					-- Ghos'opp (n: 224179 @ 49.2, 51.8), starts questID 81496 (Requisitions: Fangpetals), (27-09-24, Exo)
+					-- Eirzay   (n: 224166 @ 50.4, 74.0), starts questID 81476 (Bounty: Chitinous Goliath), (29-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82646, {	-- Eirzay   (n: 224172 @ 54.5, 63.6), starts questID 81492 (Armaments: Smithing Tools), (23-09-24, Exo)
+					-- Eirzay   (n: 224176 @ 61.4, 24.1), starts questID 81494 (Relics of War: Rak-Zakaz), (28-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
-			q(82648, {	-- Ru'murh (n: 224200 @ 64.2, 75.3), starts questID 81503 (Infiltration: Terror Made Manifest), (23-09-24, Exo)
+			q(82648, {	-- Ru'murh  (n: 224200 @ 64.2, 75.3), starts questID 81503 (Infiltration: Terror Made Manifest), (23-09-24, Exo)
 					-- Ghos'opp (n: 224180 @ 65.1, 78.8), starts questID 81480 (Wild Reagents: Maddening Deep), (27-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224191 @ 68.5, 51.1), start questID 81484 (Wet Work: Death of a Salesman)
 			--q(82645),	-- 'Listen to the rumor' from Eirzay (n: 224171 @ 63.0, 38.1, 2216), start questID 81491 (Armaments: Arbalests)
 			--q(82643),	-- 'Listen to the rumor' from Eirzay (n: 224168 @ 48.6, 50.5, 2216), start questID 81490 (Bounty: Balaxir the Bully)
-			--q(82616),	-- 'Listen to the rumor' from Eirzay (n: 224166 @ 36.1, 50.2, 2213), start questID 81476 (Bounty: Goliath)
 			--q(82581),	-- 'Listen to the rumor' from Eirzay (n: 224167 @ 15.6, 45.9, 2213), start questID 81489 (Bounty: Zorikal the Patron)
 			--q(82641),	-- 'Listen to the rumor' from Eirzay (n: 224162 @ 30.6, 42.6, 2213), start questID 81487 (Breaking the Phalanx: Venomblades)
-			--q(82649),	-- 'Listen to the rumor' from Eirzay (n: 224176 @ 63.8, 26.3, 2216), start questID 81494 (Relics of War: Rak-Ahat)
 			--q(82647),	-- 'Listen to the rumor' from Eirzay (n: 224173 @ 39.5, 53.0), start questID 81478 (Relics of War: The Ruptired Lake)
 			q(79698),	-- after turn in questID 79627 (Wine and Die)
 			--q(82643),	-- 'Investiage the scene' from Ru'murh (n: 224195 @ 73.3, 50.9, 2213), start questID 81471 (Dropping Eaves: Saving the Past)
