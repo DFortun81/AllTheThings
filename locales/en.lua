@@ -279,8 +279,8 @@ for key, value in pairs({
 	-- ["EXTRA_THINGS_LABEL"] = "Additional Resources";	-- unused
 
 	-- ["CLICK_TO_CREATE_FORMAT"] = "Click to Create %s";
-	["LOADING_FORMAT"] = "%s "..LFG_LIST_LOADING;	-- %s Loading...	-- unused
-	["READY_FORMAT"] = "%s "..READY;	-- %s Ready	-- unused
+	-- ["LOADING_FORMAT"] = "%s "..LFG_LIST_LOADING;	-- %s Loading...	-- unused
+	-- ["READY_FORMAT"] = "%s "..READY;	-- %s Ready	-- unused
 
 	-- Features tab
 	-- ["AUTO_BOUNTY_CHECKBOX"] = "Automatically Open the Bounty List";
