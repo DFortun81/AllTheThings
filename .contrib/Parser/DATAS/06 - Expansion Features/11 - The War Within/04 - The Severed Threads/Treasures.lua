@@ -5,13 +5,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 	n(THE_SEVERED_THREADS, {
 		n(TREASURES, {
 			-- I'll remove signature when I "catch them all". They are here so I know what I verified and what needs to be verified.	//Exo
-			o(454334, {	-- Thimble's Cache, (28-09-24, Exo)
+			o(434527, {	-- Thimble's Cache
 				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
-				["provider"] = { "n", 224890 },	-- Thimble // Weave-Rat Cache (vignette)
-				["questID"] = 82857,
+				-- ["provider"] = { "n", xxxx },	-- Thimble // Weave-Rat Cache (vignette)
+				-- ["questID"] = xxxx,
 				["coords"] = {
-					{ 65.9, 88.1, AZJ_KAHET },    -- Thimble
-					{ 67.5, 83.4, AZJ_KAHET },    -- Thimble's Cache
+				-- 	{ X, Y, AZJ_KAHET },	-- Thimble
+					{ 53.0, 53.1, AZJ_KAHET },	-- Thimble's Cache
 				},
 			}),
 			o(454318, {	-- Thimble's Cache, (23-09-24, Exo)
@@ -32,6 +32,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					{ 41.9, 21.5, AZJ_KAHET },	-- Thimble's Cache
 				},
 			}),
+			o(454323, {	-- Thimble's Cache
+				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
+				-- ["provider"] = { "n", xxxx },	-- Thimble // Weave-Rat Cache (vignette)
+				-- ["questID"] = xxxx,
+				["coords"] = {
+				-- 	{ X, Y, AZJ_KAHET },	-- Thimble
+					{ 65.9, 52.0, AZJ_KAHET },	-- Thimble's Cache
+				},
+			}),
+			o(454327, {	-- Thimble's Cache
+				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
+				-- ["provider"] = { "n", xxxx },	-- Thimble // Weave-Rat Cache (vignette)
+				-- ["questID"] = xxxx,
+				["coords"] = {
+				-- 	{ X, Y, AZJ_KAHET },	-- Thimble
+					{ 44.4, 26.2, AZJ_KAHET },	-- Thimble's Cache
+				},
+			}),
 			o(454331, {	-- Thimble's Cache
 				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
 				["provider"] = { "n", 224888 },	-- Thimble // Weave-Rat Cache (vignette)
@@ -41,6 +59,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					{ 74.5, 43.0, AZJ_KAHET },	-- cache spot
 				},
 			}),
+			o(454334, {	-- Thimble's Cache, (28-09-24, Exo)
+				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
+				["provider"] = { "n", 224890 },	-- Thimble // Weave-Rat Cache (vignette)
+				["questID"] = 82857,
+				["coords"] = {
+					{ 65.9, 88.1, AZJ_KAHET },    -- Thimble
+					{ 67.5, 83.4, AZJ_KAHET },    -- Thimble's Cache
+				},
+			}),
 			o(454337, {	-- Thimble's Cache, (28-09-24, Exo)
 				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
 				["provider"] = { "n", 224891 },	-- Thimble // Weave-Rat Cache (vignette)
@@ -48,6 +75,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				["coords"] = {
 					{ 69.9, 82.8, NERUBAR },	-- Thimble
 					{ 63.9, 85.7, NERUBAR },	-- cache spot
+				},
+			}),
+			o(454339, {	-- Thimble's Cache
+				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
+				-- ["provider"] = { "n", xxxx },	-- Thimble // Weave-Rat Cache (vignette)
+				-- ["questID"] = xxxx,
+				["coords"] = {
+				-- 	{ X, Y, NERUBAR },	-- Thimble
+					{ 29.6, 65.6, NERUBAR },	-- Thimble's Cache
 				},
 			}),
 			o(454340, {	-- Thimble's Cache
