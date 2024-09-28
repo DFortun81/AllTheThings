@@ -97,14 +97,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 			}, {	-- RENOWN 15 --
 			}, {	-- RENOWN 16 --
 			}, {	-- RENOWN 17 --
-				-- TODO: check Renown Requirement!
-				q(82443, {	-- Tokens of Her Favor
-					["providers"] = {
-						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
-						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
-					},
-					["coord"] = { 55.3, 41.2, AZJ_KAHET },
-				}),
 			}, {	-- RENOWN 18 --
 				q(82440, {	-- Crests
 					["providers"] = {
@@ -130,6 +122,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 			}, {	-- RENOWN 21 --
+				q(82443, {	-- Tokens of Her Favor
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+				}),
 			}, {	-- RENOWN 22 --
 			}, {	-- RENOWN 23 --
 				q(82444, {	-- The Weaver's Cache
