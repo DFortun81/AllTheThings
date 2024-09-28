@@ -524,15 +524,11 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		-- 11.0.0
 		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			n(ARMOR, {
-				i(225414),	-- Cave Topographer's Drape
 				i(224165),	-- Dornogal Tabard
 				i(224869),	-- Earthen Drape
 				i(224169),	-- Freywold Tabard
 				i(224167),	-- Gundargaz Tabard
-				i(225411),	-- Secret-Dredger's Cloak
 				i(224168),	-- Stonebound Tabard
-				i(225412),	-- Torchbearer's Greatcloak
-				i(225413),	-- Treasure-Seeker's Shawl
 			}),
 			n(SETS, {
 				i(226000),	-- Ensemble: Earthen Adventurer's Copper Drapery

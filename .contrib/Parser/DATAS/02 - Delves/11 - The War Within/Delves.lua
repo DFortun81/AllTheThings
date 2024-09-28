@@ -1597,6 +1597,20 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 				}),
 				n(ARMOR, {
+					filter(BACK_F, {
+						i(225414, {	-- Cave Topographer's Drape
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+						}),
+						i(225411, {	-- Secret-Dredger's Cloak
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+						}),
+						i(225413, {	-- Treasure-Seeker's Shawl
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+						}),
+						i(225412, {	-- Torchbearer's Greatcloak
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 1300}},
+						}),
+					}),
 					filter(CLOTH, {
 						i(225393, {	-- Cave Topographer's Cord
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 750}},
