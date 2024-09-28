@@ -2592,7 +2592,6 @@ root(ROOTS.Zones, {
 					}),
 					n(32564, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY, }, {	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
 						["coord"] = { 57.7, 66.4, BOREAN_TUNDRA },
-						["races"] = ALLIANCE_ONLY,
 						["groups"] = bubbleDownClassicRep(FACTION_ALLIANCE_VANGUARD, {
 							{		-- Neutral
 							}, {	-- Friendly

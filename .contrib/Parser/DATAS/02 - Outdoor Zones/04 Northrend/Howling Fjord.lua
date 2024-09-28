@@ -2323,7 +2323,6 @@ root(ROOTS.Zones, {
 					}),
 					n(32773, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY, }, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
 						["coord"] = { 59.6, 63.8, HOWLING_FJORD },
-						["races"] = ALLIANCE_ONLY,
 						["sym"] = {{"sub","common_vendor",32763}},	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
 					})),
 					n(24330, {	-- Orson Locke <Sharp Blades>
@@ -2340,7 +2339,6 @@ root(ROOTS.Zones, {
 					}),
 					n(32774, bubbleDownSelf({ ["races"] = HORDE_ONLY, }, {	-- Sebastian Crane <Horde Expedition Quartermaster>
 						["coord"] = { 79.6, 30.6, HOWLING_FJORD },
-						["races"] = HORDE_ONLY,
 						["sym"] = {{"sub","common_vendor",32565}},	-- Gara Skullcrush <Horde Expedition Quartermaster>
 					})),
 					n(24028, {	-- Talu Frosthoof <Bowyer>
