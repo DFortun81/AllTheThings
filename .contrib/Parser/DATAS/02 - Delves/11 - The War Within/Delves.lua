@@ -296,7 +296,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 		}),
 		q(81595, {	-- Seasonal Start
-			["sourceQuests"] = { 81510 },	-- Ship It!
+			["sourceQuests"] = {
+				{ 81510 },	-- Ship It!
+				{ 84365 },	-- Something on the Horizon
+			},
+			["sourceQuestNumRequired"] = 1,
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 			["coord"] = { 47.4, 44.4, DORNOGAL },
 		}),
