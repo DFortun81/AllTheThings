@@ -180,22 +180,25 @@ do
 	end
 
 	app.AddEventHandler("OnRefreshCollections", function()
-		local state
+		local me, completed
 		-- app.PrintDebug("OnRefreshCollections.Achievement")
-		local saved, none = {}, {}
+		local mine, acct, none = {}, {}, {}
 		for _,id in ipairs(CollectionCache.RealAchievementIDs) do
-			state = select(13, GetAchievementInfo(id))
-			if state then
-				saved[id] = true
+			completed, _, _, _, _, _, _, _, _, me = select(4, GetAchievementInfo(id))
+			if me then
+				mine[id] = true
+			elseif completed then	-- any character has completed it, we can cache for account directly
+				acct[id] = true
 			else
 				none[id] = true
 			end
 		end
 		-- Character Cache
-		app.SetBatchCached(CACHE, saved, 1)
+		app.SetBatchCached(CACHE, mine, 1)
 		app.SetBatchCached(CACHE, none)
 		-- Account Cache (removals handled by Sync)
-		app.SetBatchAccountCached(CACHE, saved, 1)
+		app.SetBatchAccountCached(CACHE, mine, 1)
+		app.SetBatchAccountCached(CACHE, acct, 1)
 		-- app.PrintDebugPrior("OnRefreshCollections.Achievement")
 	end);
 	app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
