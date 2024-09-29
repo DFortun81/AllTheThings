@@ -10697,6 +10697,8 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 	if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
 		return;
 	end
+	local C_TradeSkillUI_GetSalvagableItemIDs
+		= C_TradeSkillUI.GetSalvagableItemIDs
 	if not self.initialized then
 		self.initialized = true;
 		self.SkillsInit = {};
@@ -10718,7 +10720,6 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 			['g'] = { },
 		});
 
-		AllTheThingsAD.Reagents = nil;
 		local MissingRecipes = {}
 		-- Adds the pertinent information about a given recipeID to the reagentcache
 		local function CacheRecipeSchematic(recipeID)
@@ -10726,13 +10727,13 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 			local craftedItemID = schematic.outputItemID;
 			if not craftedItemID then return end
 			local cachedRecipe = SearchForObject("recipeID",recipeID,"key")
+			local recipeInfo = C_TradeSkillUI_GetRecipeInfo(recipeID)
 			if not cachedRecipe then
 				local tradeSkillID, skillLineName, parentTradeSkillID = C_TradeSkillUI_GetTradeSkillLineForRecipe(recipeID)
 				local missing = app.TableConcat({"Missing Recipe:",recipeID,skillLineName,tradeSkillID,"=>",parentTradeSkillID}, nil, nil, " ")
 				-- app.PrintDebug(missing)
 				MissingRecipes[#MissingRecipes + 1] = missing
 			elseif cachedRecipe.u == 1 then
-				local recipeInfo = C_TradeSkillUI_GetRecipeInfo(recipeID)
 				-- learned NYI recipe?
 				if recipeInfo and recipeInfo.learned then
 					-- known NYI recipes
@@ -10743,17 +10744,53 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 					return
 				end
 			end
-			-- app.PrintDebug("Recipe",recipeID,"==>",craftedItemID)
-			-- Recipes now have Slots for available Regeants...
-			-- TODO: schematic.reagentSlotSchematics is often EMPTY on first query??
-			if #schematic.reagentSlotSchematics == 0 then
-				-- Milling Recipes...
-				app.PrintDebug("EMPTY SCHEMATICS",app:SearchLink(cachedRecipe))
-				return;
-			end
 
 			local reagentCache = app.ReagentsDB
 			local itemRecipes, reagentCount, reagentItemID;
+
+			-- handle other types of recipes maybe
+			if recipeInfo then
+				if recipeInfo.craftable then
+					-- Salvage Recipe harvest
+					if recipeInfo.isSalvageRecipe then
+						-- craftedItemID from salvage...
+						-- in some cases this is the 'actual' ouput of the salvage (TWW Cooking)
+						-- but in many other cases this is a 'fake item' representing 'multiple possible item outputs'
+						-- theoretically we could list this 'fake item' under Profession > Crafted > with all possible outputs
+						-- to allow driving crafting chains
+
+						-- Not really a great way to utilize this output currently, since typically the input drives the output through
+						-- the same Recipe, and it can be variable depending on skill or reagent qualities
+						-- local salvageItems = C_TradeSkillUI_GetSalvagableItemIDs(recipeID)
+						-- for _,salvageItemID in ipairs(salvageItems) do
+						-- 	reagentItemID = salvageItemID
+						-- 	-- only requirement is Reagent -> Recipe -> Crafted | Reagent Count
+						-- 	-- Minimum Structure
+						-- 	-- reagentCache[reagentItemID][<recipeID>] = { craftedItemID, reagentCount }
+						-- 	if reagentItemID then
+						-- 		itemRecipes = reagentCache[reagentItemID];
+						-- 		if not itemRecipes then
+						-- 			itemRecipes = { };
+						-- 			reagentCache[reagentItemID] = itemRecipes;
+						-- 		end
+						-- 		-- app.PrintDebug("Reagent",reagentItemID,"x 5 =>",craftedItemID,"via",app:SearchLink(cachedRecipe))
+						-- 		-- Salvage recipes are always '5' per
+						-- 		itemRecipes[recipeID] = { craftedItemID, 5 };
+						-- 	end
+						-- end
+						return
+					end
+				end
+			end
+			-- app.PrintDebug("Recipe",recipeID,"==>",craftedItemID)
+			-- Recipes now have Slots for available Regeants...
+			if #schematic.reagentSlotSchematics == 0 and schematic.hasCraftingOperationInfo then
+				-- Milling Recipes...
+				app.PrintDebug("EMPTY SCHEMATICS",app:SearchLink(cachedRecipe or CreateObject({recipeID=recipeID})))
+				return;
+			end
+
+			-- Typical Recipe harvest
 			for _,reagentSlot in ipairs(schematic.reagentSlotSchematics) do
 				-- reagentType: 0 = sparks?, 1 = required, 2 = optional
 				if reagentSlot.required then
@@ -12596,7 +12633,7 @@ app.Startup = function()
 		end
 	end
 	accountWideData.Deaths = deaths;
-	
+
 	-- CRIEVE NOTE: Once the Sync Window is moved over from Classic, this can be removed.
 	if not AllTheThingsAD.LinkedAccounts then
 		AllTheThingsAD.LinkedAccounts = {};
