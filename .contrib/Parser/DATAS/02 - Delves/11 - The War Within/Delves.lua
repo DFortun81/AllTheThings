@@ -297,8 +297,8 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		q(81595, {	-- Seasonal Start
 			["sourceQuests"] = {
-				{ 81510 },	-- Ship It!
-				{ 84365 },	-- Something on the Horizon
+				81510,	-- Ship It!
+				84365,	-- Something on the Horizon
 			},
 			["sourceQuestNumRequired"] = 1,
 			["provider"] = { "n", 206017 },	-- Brann Bronzebeard

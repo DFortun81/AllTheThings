@@ -26,9 +26,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["isWeekly"] = true,
 						["g"] = {
 							i(226273, {	-- Awakened Mechanical Cache
-								i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength (RECIPE!)
-								i(224426),	-- Pattern: Ignition Satchel (RECIPE!)
-								i(223040),	-- Plans: Charged Crusher (RECIPE!)
+								["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Zone Rewards content]
+								["g"] = {
+									i(223128),	-- Formula: Enchant Chest - Oathsworn's Strength (RECIPE!)
+									i(224426),	-- Pattern: Ignition Satchel (RECIPE!)
+									i(223040),	-- Plans: Charged Crusher (RECIPE!)
+								},
 							}),
 						},
 					}),

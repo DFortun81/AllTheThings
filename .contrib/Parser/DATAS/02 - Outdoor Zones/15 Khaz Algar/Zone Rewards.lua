@@ -88,13 +88,84 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			i(224706),	-- Ancient Forged Warhammer
 		}),
 		--
-		i(229354),	-- Algari Adventurer's Cache
-		i(224784, {	-- Pinnacle Cache
-			i(224172),	-- Restored Coffer Key
+		i(229354, {	-- Algari Adventurer's Cache
+			["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Zone Rewards content]
 		}),
-		i(228361),	-- Seasoned Adventurer's Cache
+		i(224784, {	-- Pinnacle Cache
+			["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Zone Rewards content]
+		}),
+		i(228361, {	-- Seasoned Adventurer's Cache
+			["sym"] = {{"select","itemID", -- [Zone Rewards content]
+				224664,	-- Gem-Woven Cloak
+				224663,	-- Gem-Woven Shawl
+				224672,	-- Alighted Cord
+				224669,	-- Alighted Cowl
+				224673,	-- Alighted Cuffs
+				224668,	-- Alighted Handwraps
+				224670,	-- Alighted Leggings
+				224666,	-- Alighted Robes
+				224667,	-- Alighted Sandals
+				224671,	-- Alighted Shoulderpads
+				224660,	-- Gem-Studded Band
+				224662,	-- Gem-Studded Ring
+				224661,	-- Gem-Studded Signet
+				224593,	-- Spinner's Circlet
+				224681,	-- Lockstitch Bindings
+				224678,	-- Lockstitch Breeches
+				224679,	-- Lockstitch Epaulets
+				224676,	-- Lockstitch Grips
+				224677,	-- Lockstitch Headgear
+				224680,	-- Lockstitch Sash
+				224674,	-- Lockstitch Vest
+				224675,	-- Lockstitch Waders
+				224688,	-- Chitinoid Belt
+				224689,	-- Chitinoid Bracers
+				224682,	-- Chitinoid Chainmail
+				224685,	-- Chitinoid Coif
+				224686,	-- Chitinoid Greaves
+				224684,	-- Chitinoid Grips
+				224687,	-- Chitinoid Shoulderguards
+				224683,	-- Chitinoid Striders
+				224665,	-- Gem-Studded Pendant
+				224594,	-- Spinner's Amulet
+				224697,	-- Sedimentary Armplates
+				224690,	-- Sedimentary Breastplate
+				224692,	-- Sedimentary Gauntlets
+				224696,	-- Sedimentary Girdle
+				224693,	-- Sedimentary Helm
+				224694,	-- Sedimentary Legguards
+				224695,	-- Sedimentary Mantle
+				224691,	-- Sedimentary Sabatons
+				225648,	-- Candle Confidant
+				225657,	-- Detachable Fang
+				225656,	-- Goldenglow Censer
+				225654,	-- Imperfect Ascendancy Serum
+				225651,	-- Kaheti Shadeweaver's Emblem
+				225649,	-- Quickwick Candlestick
+				226521,	-- Reinforced-Wax Plating
+				226539,	-- Scroll of Momentum
+				225647,	-- Shining Arathor Insignia
+				225638,	-- Spelunker's Waning Candle
+				224702,	-- Ancient Forged Blade
+				224700,	-- Ancient Forged Cudgel
+				224711,	-- Ancient Forged Curio
+				224713,	-- Ancient Forged Glaive
+				224701,	-- Ancient Forged Hammer
+				224705,	-- Ancient Forged Mace
+				224708,	-- Ancient Forged Polearm
+				224699,	-- Ancient Forged Ritual Knife
+				224698,	-- Ancient Forged Shank
+				224712,	-- Ancient Forged Shield
+				224704,	-- Ancient Forged Slugthrower
+				224707,	-- Ancient Forged Spear
+				224710,	-- Ancient Forged Spellstaff
+				224709,	-- Ancient Forged Staff
+				224703,	-- Ancient Forged Sword
+				224706,	-- Ancient Forged Warhammer
+			}},
+		}),
 		n(WEEKLY_PROFESSION_KNOWLEDGE, {
-			["description"] = "Rewarded from many different treasures and activities.",
+			["sharedDescription"] = "Rewarded from many different treasures and activities.",
 			["g"] = {
 				-- Alchemy
 				i(225234),	-- Alchemical Sediment

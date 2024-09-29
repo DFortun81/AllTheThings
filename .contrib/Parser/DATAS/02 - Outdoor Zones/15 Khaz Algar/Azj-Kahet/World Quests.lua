@@ -130,9 +130,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(82531, {	-- Special Assignment: Bombs from Behind
 						-- ["coord"] = { XX, YY, AZJ_KAHET }
 						["sourceQuests"] = { 82161 },	-- Special Assignment: Bombs from Behind [Trigger]
-						["g"] = {
-							i(228361, {["skipFill"]=true,["sym"]={{"groupfill"}}}),	-- Seasoned Adventurer's Cache
-						},
 					}),
 				}),
 			}),

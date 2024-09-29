@@ -891,9 +891,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["coord"] = { 55.3, 14.5, HALLOWFALL },
 						["g"] = {
 							i(226264, {	-- Radiant Cache
-								i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
-								i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
-								i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
+								["sym"] = {{"select","itemID",228361},{"pop"}},	-- Seasoned Adventurer's Cache [Zone Rewards content]
+								["g"] = {
+									i(223134),	-- Formula: Illusory Adornment: Radiance (RECIPE!)
+									i(223099),	-- Pattern: Sanctified Torchbearer's Grips (RECIPE!)
+									i(227283),	-- Recipe: Feast of the Divine Day (RECIPE!)
+								},
 							}),
 						},
 					}),
