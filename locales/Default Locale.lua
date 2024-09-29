@@ -8,6 +8,10 @@ local appName, app = ...;
 -- WoW API Cache
 local GetSpellName = app.WOWAPI.GetSpellName;
 
+-- Temporary Helper functions
+local GetItemClassInfo = GetItemClassInfo;
+if not GetItemClassInfo then GetItemClassInfo = C_Item.GetItemClassInfo; end
+
 local L = setmetatable({
 	-- General Text
 	TITLE = "|c" .. app.Colors.ATT .. "ALL THE THINGS|r";
