@@ -13,10 +13,7 @@ local GetAchievementInfo, select, sformat = GetAchievementInfo, select, string.f
 
 -- WoW API Cache
 local GetSpellName = app.WOWAPI.GetSpellName;
-
--- Temporary Helper functions
-local GetItemClassInfo = GetItemClassInfo;
-if not GetItemClassInfo then GetItemClassInfo = C_Item.GetItemClassInfo; end
+local GetItemClassInfo = app.WOWAPI.GetItemClassInfo;
 
 for key, value in pairs({
 	-- These need to be localized manually.
