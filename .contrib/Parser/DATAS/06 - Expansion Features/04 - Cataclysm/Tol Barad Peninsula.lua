@@ -1,6 +1,22 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
+local function TolBaradDailyQuest(questID, t)
+	local quest = q(questID, t);
+	quest.isDaily = true;
+	
+	-- Each daily quest awards a commendation
+	local g = quest.g or quest.groups;
+	if not g then
+		g = {};
+		quest.groups = g;
+	end
+	table.insert(g, currency(391));	-- Tol Barad Commendation
+	
+	-- Assign the Reputation Requirements
+	t.maxReputation = { t.races == ALLIANCE_ONLY and FACTION_BARADINS_WARDENS or FACTION_HELLSCREAMS_REACH, EXALTED };
+	return t;
+end
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	m(TOL_BARAD_PENINSULA, {
 		["description"] = "Tol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.",
@@ -34,16 +50,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 					["races"] = HORDE_ONLY,
 				}),
 			}),
-			-- Daily Quests
-			n(QUESTS, sharedData({
-				["isDaily"] = true,
-				["description"] = "This quest is in rotation and other daily quests can appear in it's place.",
-			},{
-				q(27948, {	-- A Sticky Task [A]
+			n(QUESTS, {
+				TolBaradDailyQuest(27948, {	-- A Sticky Task [A]
 					["qg"] = 48255, -- Camp Coordinator Brack
+					["coord"] = { 73.75, 57.6, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 73.75, 57.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/4 Sticky Silk Gland
 							["provider"] = { "i", 62803 },	-- Sticky Silk Gland
@@ -51,11 +63,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(28684, {	-- A Sticky Task [H]
+				TolBaradDailyQuest(28684, {	-- A Sticky Task [H]
 					["qg"] = 48360, -- 3rd Officer Kronkar
+					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/4 Sticky Silk Gland
 							["provider"] = { "i", 62803 },	-- Sticky Silk Gland
@@ -63,23 +75,23 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(28275, {	-- Bombs Away! [A]
+				TolBaradDailyQuest(28275, {	-- Bombs Away! [A]
 					["qg"] = 48254, -- Sergeant Gray
+					["coord"] = { 72.95, 60.95, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 72.95, 60.95, TOL_BARAD_PENINSULA },
 				}),
-				q(28696, {	-- Bombs Away! [H]
+				TolBaradDailyQuest(28696, {	-- Bombs Away! [H]
 					["qg"] = 48361, -- Private Sarlosk
+					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
 				}),
-				q(27972, {	-- Boosting Morale [A]
+				TolBaradDailyQuest(27972, {	-- Boosting Morale [A]
 					["qg"] = 48255, -- Camp Coordinator Brack
+					["coord"] = { 73.75, 57.6, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 73.75, 57.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/6 Barrel of Southsea Rum
 							["providers"] = {
@@ -89,11 +101,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(28680, {	-- Boosting Morale [H]
+				TolBaradDailyQuest(28680, {	-- Boosting Morale [H]
 					["qg"] = 48360, -- 3rd Officer Kronkar
+					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/6 Barrel of Southsea Rum
 							["providers"] = {
@@ -103,11 +115,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(27987, {	-- Cannonball! [A]
+				TolBaradDailyQuest(27987, {	-- Cannonball! [A]
 					["qg"] = 48254, -- Sergeant Gray
-					["timeline"] = { ADDED_4_0_1 },
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 72.95, 60.95, TOL_BARAD_PENINSULA },
+					["timeline"] = { ADDED_4_0_1 },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/4 Stack of Cannonballs
 							["providers"] = {
@@ -117,11 +129,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(28698, {	-- Cannonball! [H]
+				TolBaradDailyQuest(28698, {	-- Cannonball! [H]
 					["qg"] = 48361, -- Private Sarlosk
+					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/4 Stack of Cannonballs
 							["providers"] = {
@@ -131,99 +143,99 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(27970, {	-- Captain P. Harris [A]
+				TolBaradDailyQuest(27970, {	-- Captain P. Harris [A]
 					["qg"] = 48255, -- Camp Coordinator Brack
+					["coord"] = { 73.75, 57.6, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 73.75, 57.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Captain P. Harris slain
 							["provider"] = { "n", 47287 },	-- Captain P. Harris
 						}),
 					},
 				}),
-				q(28678, {	-- Captain P. Harris [H]
+				TolBaradDailyQuest(28678, {	-- Captain P. Harris [H]
 					["qg"] = 48360, -- 3rd Officer Kronkar
+					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Captain P. Harris slain
 							["provider"] = { "n", 47287 },	-- Captain P. Harris
 						}),
 					},
 				}),
-				q(28059, {	-- Claiming The Keep [A]
+				TolBaradDailyQuest(28059, {	-- Claiming The Keep [A]
 					["qg"] = 47240, -- Commander Marcus Johnson
+					["coord"] = { 73.4, 59.2, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 73.4, 59.2, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Keep Lord Farson slain
 							["provider"] = { "n", 47447 },	-- Keep Lord Farson
 						}),
 					},
 				}),
-				q(28682, {	-- Claiming The Keep [H]
+				TolBaradDailyQuest(28682, {	-- Claiming The Keep [H]
 					["qg"] = 48358, -- Commander Larmash
+					["coord"] = { 53.55, 80.6, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 53.55, 80.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Keep Lord Farson slain
 							["provider"] = { "n", 47447 },	-- Keep Lord Farson
 						}),
 					},
 				}),
-				q(28046, {	-- Finish The Job [A]
+				TolBaradDailyQuest(28046, {	-- Finish The Job [A]
 					["qg"] = 48250, -- Lieutenant Farnsworth
+					["coord"] = { 74.8, 59.6, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 74.8, 59.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/5 Restless Infantry slain
 							["provider"] = { "n", 46823 },	-- Restless Infantry
 						}),
 					},
 				}),
-				q(28693, {	-- Finish The Job [H]
+				TolBaradDailyQuest(28693, {	-- Finish The Job [H]
 					["qg"] = 48363, -- Captain Prug
+					["coord"] = { 54.9, 79.3, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 54.9, 79.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/5 Restless Soldier slain
 							["provider"] = { "n", 46825 },	-- Restless Soldier
 						}),
 					},
 				}),
-				q(27967, {	-- First Lieutenant Connor [A]
+				TolBaradDailyQuest(27967, {	-- First Lieutenant Connor [A]
 					["qg"] = 48250, -- Lieutenant Farnsworth
+					["coord"] = { 74.8, 59.6, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 74.8, 59.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 First Lieutenant Connor slain
 							["provider"] = { "n", 46571 },	-- First Lieutenant Connor
 						}),
 					},
 				}),
-				q(28691, {	-- First Lieutenant Connor [H]
+				TolBaradDailyQuest(28691, {	-- First Lieutenant Connor [H]
 					["qg"] = 48363, -- Captain Prug
+					["coord"] = { 54.9, 79.3, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 54.9, 79.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 First Lieutenant Connor slain
 							["provider"] = { "n", 46571 },	-- First Lieutenant Connor
 						}),
 					},
 				}),
-				q(27978, {	-- Ghostbuster [A]
+				TolBaradDailyQuest(27978, {	-- Ghostbuster [A]
 					["qg"] = 48254, -- Sergeant Gray
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 72.95, 60.95, TOL_BARAD_PENINSULA },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/14 Largo's Overlook Ghosts Slain
 							["providers"] = {
@@ -234,11 +246,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(28697, {	-- Ghostbuster [H]
+				TolBaradDailyQuest(28697, {	-- Ghostbuster [H]
 					["qg"] = 48361, -- Private Sarlosk
+					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/14 Largo's Overlook Ghosts Slain
 							["providers"] = {
@@ -249,11 +261,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(28063, {	-- Leave No Weapon Behind [A]
+				TolBaradDailyQuest(28063, {	-- Leave No Weapon Behind [A]
 					["qg"] = 47240, -- Commander Marcus Johnson
+					["coord"] = { 73.4, 59.2, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 73.4, 59.2, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/12 Rusty Rifle
 							["provider"] = { "i", 62921 },	-- Rusty Rifle
@@ -261,11 +273,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(28685, {	-- Leave No Weapon Behind [H]
+				TolBaradDailyQuest(28685, {	-- Leave No Weapon Behind [H]
 					["qg"] = 48358, -- Commander Larmash
+					["coord"] = { 53.55, 80.6, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 53.55, 80.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/12 Rusty Rifle
 							["provider"] = { "i", 62921 },	-- Rusty Rifle
@@ -273,11 +285,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(27992, {	-- Magnets, How Do They Work? [A]
+				TolBaradDailyQuest(27992, {	-- Magnets, How Do They Work? [A]
 					["qg"] = 48250, -- Lieutenant Farnsworth
+					["coord"] = { 74.8, 59.6, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 74.8, 59.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/7 Siege Engine Scrap
 							["providers"] = {
@@ -289,11 +301,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(28692, {	-- Magnets, How Do They Work? [H]
+				TolBaradDailyQuest(28692, {	-- Magnets, How Do They Work? [H]
 					["qg"] = 48363, -- Captain Prug
+					["coord"] = { 54.9, 79.3, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 54.9, 79.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/7 Siege Engine Scrap
 							["providers"] = {
@@ -305,11 +317,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(28130, {	-- Not The Friendliest Town [A]
+				TolBaradDailyQuest(28130, {	-- Not The Friendliest Town [A]
 					["qg"] = 47240, -- Commander Marcus Johnson
-					["timeline"] = { ADDED_4_0_1 },
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 73.4, 59.2, TOL_BARAD_PENINSULA },
+					["timeline"] = { ADDED_4_0_1 },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/14 Rustberg Village Residents
 							["providers"] = {
@@ -321,11 +333,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(28686, {	-- Not The Friendliest Town [H]
+				TolBaradDailyQuest(28686, {	-- Not The Friendliest Town [H]
 					["qg"] = 48358, -- Commander Larmash
+					["coord"] = { 53.55, 80.6, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 53.55, 80.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/14 Rustberg Village Residents
 							["providers"] = {
@@ -337,33 +349,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(27971, {	-- Rattling Their Cages [A]
+				TolBaradDailyQuest(27971, {	-- Rattling Their Cages [A]
 					["qg"] = 48255, -- Camp Coordinator Brack
+					["coord"] = { 73.75, 57.6, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 73.75, 57.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/8 Shipwrecked Sailor slain
 							["provider"] = { "n", 46605 },	-- Shipwrecked Sailor
 						}),
 					},
 				}),
-				q(28679, {	-- Rattling Their Cages [H]
+				TolBaradDailyQuest(28679, {	-- Rattling Their Cages [H]
 					["qg"] = 48360, -- 3rd Officer Kronkar
+					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/8 Shipwrecked Sailor slain
 							["provider"] = { "n", 46605 },	-- Shipwrecked Sailor
 						}),
 					},
 				}),
-				q(27966, {	-- Salvaging the Remains [A]
+				TolBaradDailyQuest(27966, {	-- Salvaging the Remains [A]
 					["qg"] = 48250, -- Lieutenant Farnsworth
+					["coord"] = { 74.8, 59.6, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 74.8, 59.6, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/9 Cursed Femur
 							["provider"] = { "i", 62808 },	-- Cursed Femur
@@ -376,11 +388,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(28690, {	-- Salvaging the Remains [H]
+				TolBaradDailyQuest(28690, {	-- Salvaging the Remains [H]
 					["qg"] = 48363, -- Captain Prug
+					["coord"] = { 54.9, 79.3, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 54.9, 79.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/9 Cursed Femur
 							["provider"] = { "i", 62808 },	-- Cursed Femur
@@ -393,67 +405,55 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(28050, {	-- Shark Tank [A]
+				TolBaradDailyQuest(28050, {	-- Shark Tank [A]
 					["qg"] = 48255, -- Camp Coordinator Brack
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 73.75, 57.6, TOL_BARAD_PENINSULA },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Tank slain
 							["provider"] = { "n", 46608 },	-- Tank
 						}),
 					},
 				}),
-				q(28681, {	-- Shark Tank [H]
+				TolBaradDailyQuest(28681, {	-- Shark Tank [H]
 					["qg"] = 48360, -- 3rd Officer Kronkar
+					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Tank slain
 							["provider"] = { "n", 46608 },	-- Tank
 						}),
 					},
 				}),
-				q(27991, {	-- Taking the Overlook Back [A]
+				TolBaradDailyQuest(27991, {	-- Taking the Overlook Back [A]
 					["qg"] = 48254, -- Sergeant Gray
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 72.95, 60.95, TOL_BARAD_PENINSULA },
-					["groups"] = {
-						objective(1, {	-- 0/1 Commander Largo slain
-							["provider"] = { "n", 47304 },	-- Commander Largo
-						}),
-					},
-				}),
-				q(28700, {	-- Taking the Overlook Back [H]
-					["qg"] = 48361, -- Private Sarlosk
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = HORDE_ONLY,
-					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
-					["groups"] = {
-						objective(1, {	-- 0/1 Commander Largo slain
-							["provider"] = { "n", 47304 },	-- Commander Largo
-						}),
-					},
-				}),
-				q(28137, {	-- Teach A Man To Fish.... Or Steal [A]
-					["qg"] = 47240, -- Commander Marcus Johnson
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 73.4, 59.2, TOL_BARAD_PENINSULA },
 					["groups"] = {
-						objective(1, {	-- 0/22 Rustberg Seabass
-							["provider"] = { "i", 63047 },	-- Rustberg Seabass
-							["cr"] = 47642,	-- Rustberg Fisherman
+						objective(1, {	-- 0/1 Commander Largo slain
+							["provider"] = { "n", 47304 },	-- Commander Largo
 						}),
 					},
 				}),
-				q(28687, {	-- Teach A Man To Fish.... Or Steal [H]
-					["qg"] = 48358, -- Commander Larmash
+				TolBaradDailyQuest(28700, {	-- Taking the Overlook Back [H]
+					["qg"] = 48361, -- Private Sarlosk
+					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 53.55, 80.6, TOL_BARAD_PENINSULA },
+					["groups"] = {
+						objective(1, {	-- 0/1 Commander Largo slain
+							["provider"] = { "n", 47304 },	-- Commander Largo
+						}),
+					},
+				}),
+				TolBaradDailyQuest(28137, {	-- Teach A Man To Fish.... Or Steal [A]
+					["qg"] = 47240, -- Commander Marcus Johnson
+					["coord"] = { 73.4, 59.2, TOL_BARAD_PENINSULA },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/22 Rustberg Seabass
 							["provider"] = { "i", 63047 },	-- Rustberg Seabass
@@ -461,89 +461,101 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(27949, {	-- The Forgotten [A]
+				TolBaradDailyQuest(28687, {	-- Teach A Man To Fish.... Or Steal [H]
+					["qg"] = 48358, -- Commander Larmash
+					["coord"] = { 53.55, 80.6, TOL_BARAD_PENINSULA },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- 0/22 Rustberg Seabass
+							["provider"] = { "i", 63047 },	-- Rustberg Seabass
+							["cr"] = 47642,	-- Rustberg Fisherman
+						}),
+					},
+				}),
+				TolBaradDailyQuest(27949, {	-- The Forgotten [A]
 					["qg"] = 48250, -- Lieutenant Farnsworth
-					["timeline"] = { ADDED_4_0_3 },
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 74.8, 59.6, TOL_BARAD_PENINSULA },
+					["timeline"] = { ADDED_4_0_3 },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/6 Forgotten Soldier's Tombstone
 							["provider"] = { "o", 206570 },	-- Forgotten Soldier's Tombstone
 						}),
 					},
 				}),
-				q(28689, {	-- The Forgotten [H]
+				TolBaradDailyQuest(28689, {	-- The Forgotten [H]
 					["qg"] = 48363, -- Captain Prug
+					["coord"] = { 54.9, 79.3, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 54.9, 79.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/6 Forgotten Soldier's Tombstone
 							["provider"] = { "o", 206570 },	-- Forgotten Soldier's Tombstone
 						}),
 					},
 				}),
-				q(27944, {	-- Thinning the Brood [A]
+				TolBaradDailyQuest(27944, {	-- Thinning the Brood [A]
 					["qg"] = 48255, -- Camp Coordinator Brack
-					["timeline"] = { ADDED_4_0_1 },
-					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 73.75, 57.6, TOL_BARAD_PENINSULA },
+					["timeline"] = { ADDED_4_0_1 },
+					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/12 Darkwood Lurker slain
 							["provider"] = { "n", 46508 },	-- Darkwood Lurker
 						}),
 					},
 				}),
-				q(28683, {	-- Thinning the Brood [H]
+				TolBaradDailyQuest(28683, {	-- Thinning the Brood [H]
 					["qg"] = 48360, -- 3rd Officer Kronkar
+					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 55.2, 81.3, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/12 Darkwood Lurker slain
 							["provider"] = { "n", 46508 },	-- Darkwood Lurker
 						}),
 					},
 				}),
-				q(27975, {	-- WANTED: Foreman Wellson [A]
+				TolBaradDailyQuest(27975, {	-- WANTED: Foreman Wellson [A]
 					["qg"] = 48254, -- Sergeant Gray
+					["coord"] = { 72.95, 60.95, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 72.95, 60.95, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Foreman Wellson slain
 							["provider"] = { "n", 46648 },	-- Foreman Wellson
 						}),
 					},
 				}),
-				q(28695, {	-- WANTED: Foreman Wellson [H]
+				TolBaradDailyQuest(28695, {	-- WANTED: Foreman Wellson [H]
 					["qg"] = 48361, -- Private Sarlosk
+					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_1 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/1 Foreman Wellson slain
 							["provider"] = { "n", 46648 },	-- Foreman Wellson
 						}),
 					},
 				}),
-				q(28065, {	-- Walk A Mile In Their Shoes [A]
+				TolBaradDailyQuest(28065, {	-- Walk A Mile In Their Shoes [A]
 					["qg"] = 47240, -- Commander Marcus Johnson
-					["timeline"] = { ADDED_4_0_3 },
 					["coord"] = { 73.4, 59.2, TOL_BARAD_PENINSULA },
+					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 				}),
-				q(28721, {	-- Walk A Mile In Their Shoes [H]
+				TolBaradDailyQuest(28721, {	-- Walk A Mile In Their Shoes [H]
 					["qg"] = 48358, -- Commander Larmash
+					["coord"] = { 53.55, 80.6, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 53.55, 80.6, TOL_BARAD_PENINSULA },
 				}),
-				q(27973, {	-- Watch Out For Splinters! [A]
+				TolBaradDailyQuest(27973, {	-- Watch Out For Splinters! [A]
 					["qg"] = 48254, -- Sergeant Gray
+					["coord"] = { 72.95, 60.95, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
-					["coord"] = { 72.95, 60.95, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/15 Shipyard Lumber
 							["provider"] = { "i", 62811 },	-- Shipyard Lumber
@@ -556,11 +568,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-				q(28694, {	-- Watch Out For Splinters! [H]
+				TolBaradDailyQuest(28694, {	-- Watch Out For Splinters! [H]
 					["qg"] = 48361, -- Private Sarlosk
+					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
-					["coord"] = { 55.8, 78.45, TOL_BARAD_PENINSULA },
 					["groups"] = {
 						objective(1, {	-- 0/15 Shipyard Lumber
 							["provider"] = { "i", 62811 },	-- Shipyard Lumber
@@ -573,11 +585,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 						}),
 					},
 				}),
-			})),
+			}),
+			-- #if AFTER 8.0.3
+			-- CRIEVE NOTE: Not sure we need to describe this.
 			n(QUESTS, sharedData({ -- Questgivers in Tol Barad Peninsula with rotating quests
-				-- #if AFTER 8.0.3
 				["description"] = "Due to how sharding works, you will usually only get the same eight daily quests from the camp in Tol Barad Peninsula. The trick for having a chance at getting offered some of the other quests in rotation is to have zoned into Tol Barad Peninsula a few minutes before the daily reset occurs. Then you can wait for the daily reset, or leave the zone for up to 15 minutes before returning. Protip: Do the same with Warmode on, which zones you to a different shard. Quests picked up in Warmode can be completed and turned in outside Warmode.",
-				-- #endif
 			},{
 				n(47240), -- Commander Marcus Johnson
 				n(48250), -- Lieutenant Farnsworth
@@ -588,6 +600,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 				n(48361), -- Private Sarlosk
 				n(48363), -- Captain Prug
 			})),
+			-- #endif
 			n(PROFESSIONS, {
 				prof(FISHING, {
 					i(22739, {	-- Tome of Polymorph: Turtle (CI!)
@@ -598,15 +611,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 					}),
 				}),
 				prof(MINING, {
+					-- CRIEVE NOTE: Move this to Crafted Items and link via Elementium Ore nodes.
 					i(67282),	-- Elementium Geode (PET!)
 				}),
-			}),
-			n(REWARDS, {
-				["description"] = "These are rewarded by completing the daily quests.",
-				["maps"] = { TOL_BARAD },
-				["groups"] = {
-					currency(391),	-- Tol Barad Commendation
-				},
 			}),
 			n(VENDORS, {
 				n(48531, {	-- Pogg <Hellscream's Reach Quartermaster>
