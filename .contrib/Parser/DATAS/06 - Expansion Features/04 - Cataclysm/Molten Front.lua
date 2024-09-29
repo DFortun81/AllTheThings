@@ -610,7 +610,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 								{ "n", 53479 },	-- Cinderweb Matriarch
 							},
 						}),
-						objective(1, {	-- 0/3 Molten Lords slain
+						objective(3, {	-- 0/3 Molten Lords slain
 							["provider"] = { "n", 53310 },	-- Molten Lord
 						}),
 						currency(416),	-- Mark of the World Tree (x2)
