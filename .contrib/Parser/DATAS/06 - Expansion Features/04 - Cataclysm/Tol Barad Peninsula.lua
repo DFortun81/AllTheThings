@@ -268,7 +268,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/12 Rusty Rifle
-							["provider"] = { "i", 62921 },	-- Rusty Rifle
+							["providers"] = {
+								{ "i",  62921 },	-- Rusty Rifle
+								{ "o", 206664 },	-- Rack of Rifles
+							},
 							["cr"] = 47130,	-- Crazed Guard
 						}),
 					},
@@ -280,7 +283,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/12 Rusty Rifle
-							["provider"] = { "i", 62921 },	-- Rusty Rifle
+							["providers"] = {
+								{ "i",  62921 },	-- Rusty Rifle
+								{ "o", 206664 },	-- Rack of Rifles
+							},
 							["cr"] = 47130,	-- Crazed Guard
 						}),
 					},
