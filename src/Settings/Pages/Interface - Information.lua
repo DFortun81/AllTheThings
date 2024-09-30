@@ -943,7 +943,7 @@ local InformationTypes = {
 						itemID == 117393 or		-- Keg-Shaped Treasure Chest [Brewfest]
 						itemID == 117394 or		-- Satchel of Chilled Goods [Midsummer Fire Festival]
 						itemID == 209024 or		-- Loot-Filled Pumpkin [Hallow's End]
-						itemID == 216874  	-- Loot-Filled Basket [Noblegarden]
+						itemID == 216874	-- Loot-Filled Basket [Noblegarden]
 					then
 						tinsert(tooltipInfo, 1, { left = L.HOLIDAY_DROP, wrap = true, color = app.Colors.TooltipDescription });
 					end

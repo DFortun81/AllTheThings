@@ -108,31 +108,31 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 								26419,	-- Shadra the Venom Queen
 							},
 						}),
-						crit(38385, {	-- 	Jintha'Alor
+						crit(38385, {	-- Jintha'Alor
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = {
 								26308,	-- It's Ours Now
 							},
 						}),
-						crit(38386, {	-- 	Jintha'Alor
+						crit(38386, {	-- Jintha'Alor
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = {
 								26369,	-- Hunt the Keeper
 							},
 						}),
-						crit(38387, {	-- 	Jintha'Alor
+						crit(38387, {	-- Jintha'Alor
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = {
 								26357,	-- Faces of Evil
 							},
 						}),
-						crit(38388, {	-- 	Jintha'Alor
+						crit(38388, {	--	Jintha'Alor
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = {
 								26368,	-- Venomous Secrets
 							},
 						}),
-						crit(45292, {	-- 	Jintha'Alor
+						crit(45292, {	-- Jintha'Alor
 							["races"] = HORDE_ONLY,
 							["sourceQuests"] = {
 								26309,	-- Dark Vessels
@@ -1273,7 +1273,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/7 Trained Razorbeak fed
-							["provider"] = { "i", 58935 },	-- 	Gryphon Chow
+							["provider"] = { "i", 58935 },	-- Gryphon Chow
 							["cr"] = 2657,	-- Trained Razorbeak
 						}),
 						i(59236, {	-- Gryphon-Down Scarf

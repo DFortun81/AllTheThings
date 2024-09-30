@@ -2093,7 +2093,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								4705,	-- Burning Blade Invoker
 							},
 						}),
-						objective(2, {	-- 	Find someone who can tell you about the hammer
+						objective(2, {	-- Find someone who can tell you about the hammer
 							["provider"] = { "n", 5492 },	-- Katherine the Pure <Paladin Trainer>
 							["coord"] = { 37.8, 31.6, STORMWIND_CITY },
 						}),

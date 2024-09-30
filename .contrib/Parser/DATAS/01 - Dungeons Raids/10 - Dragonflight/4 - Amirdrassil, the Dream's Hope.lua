@@ -22,8 +22,8 @@ end
 local EncounterToCRS = {
 	[GNARLROOT] = { 209333 },	-- Gnarlroot
 	[IGIRA] = {
-		206689, 	-- Igira the Cruel <Zaqali Elder>
-		200926, 	-- Igira the Cruel <Zaqali Elder>
+		206689,	-- Igira the Cruel <Zaqali Elder>
+		200926,	-- Igira the Cruel <Zaqali Elder>
 	},
 	[VOLCOROSS] = { 208478 },	-- Volcoross
 	[COUNCIL_OF_DREAMS] = {
@@ -36,8 +36,8 @@ local EncounterToCRS = {
 	[NYMUE] = { 206172 },	-- Nymue <Weaver of the Cycle>
 	[SMOLDERON] = { 200927 },	-- Smolderon <The Firelord>
 	[TINDRAL] = {
-		210601, 	-- Tindral Sageswift <Seer of Flame>
-		209090,		-- Tindral Sageswift <Seer of Flame> (You fight this ID)
+		210601,	-- Tindral Sageswift <Seer of Flame>
+		209090,	-- Tindral Sageswift <Seer of Flame> (You fight this ID)
 	},
 	[FYRAKK] = { 204931 },	-- Fyrakk <The Blazing>
 };

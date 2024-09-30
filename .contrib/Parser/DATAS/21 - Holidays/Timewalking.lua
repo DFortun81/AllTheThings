@@ -2916,10 +2916,10 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CATACLY
 					i(208095, sharedDataSelf({ ["timeline"] = { ADDED_10_1_5 } }, {	-- Cache of Timewarped Treasures (Cata)
 						["description"] = "This bag contains an item from Firelands or an item from the WoW's 15th Birthday Event Bosses Chogath or Nefarian.\nThe droprate for the mounts seems rather high (5-10%).",
 						["sym"] = {{"select","itemID",
-							152978, 	-- Infernal Pyreclaw (PET!)
-							152966, 	-- Tinytron (PET!)
-							152969, 	-- Twilight Clutch-Sister (PET!)
-							152973, 	-- Zephyrian Prince (PET!)
+							152978,		-- Infernal Pyreclaw (PET!)
+							152966,		-- Tinytron (PET!)
+							152969,		-- Twilight Clutch-Sister (PET!)
+							152973,		-- Zephyrian Prince (PET!)
 						}},
 						["groups"] = {
 						-- Can also contain any item from Firelands

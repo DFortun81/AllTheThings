@@ -411,10 +411,10 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["races"] = ALLIANCE_ONLY,
 				["sym"] = {{"select","itemID",
 					2143,	-- Cuirboulli Boots
-					238, 	-- Cured Leather Boots
+					238,	-- Cured Leather Boots
 					2438,	-- Embroidered Boots
 					792,	-- Knitted Sandals
-					2156, 	-- Padded Boots
+					2156,	-- Padded Boots
 					2473,	-- Reinforced Leather Boots
 					843,	-- Tanned Leather Boots
 				}},

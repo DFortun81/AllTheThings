@@ -4,7 +4,7 @@
 root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDED_4_0_3 }, {
 	applyclassicphase(CATA_PHASE_ONE, inst(70, {	-- Halls of Origination
 		["mapID"] = 297,
- 		["maps"] = { 298, 299 },
+		["maps"] = { 298, 299 },
 		["coord"] = { 71.81, 52.16, ULDUM },	-- Halls of Origination
 		["groups"] = {
 			n(QUESTS, {

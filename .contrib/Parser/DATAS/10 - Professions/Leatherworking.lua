@@ -19,8 +19,8 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 			crit(61204, {	-- Stitch a Magnificent Hide Pack
 				["provider"] = { "i", 95536 },	-- Stitch a Magnificent Hide Pack
 			}),
-			crit(61207, {	-- 	Eat Dirge's Kickin' Chimaerok Chops
-				["provider"] = { "i", 21023 },	-- 	Eat Dirge's Kickin' Chimaerok Chops
+			crit(61207, {	-- Eat Dirge's Kickin' Chimaerok Chops
+				["provider"] = { "i", 21023 },	-- Eat Dirge's Kickin' Chimaerok Chops
 			}),
 			crit(61205),	-- Fish in any school of fish
 			crit(61206, {	-- Take a S.E.L.F.I.E.
@@ -87,7 +87,7 @@ root(ROOTS.Professions, prof(LEATHERWORKING, bubbleDownSelf({ ["requireSkill"] =
 				crit(61658, {	-- Gordok Ogre Suit shamelessly crafted
 					["provider"] = { "i", 18258 },	-- Gordok Ogre Suit
 				}),
-				crit(61659, {	-- 	Gordok Ogre Suit donned
+				crit(61659, {	-- Gordok Ogre Suit donned
 					["provider"] = { "i", 18258 },	-- Gordok Ogre Suit
 				}),
 			})),

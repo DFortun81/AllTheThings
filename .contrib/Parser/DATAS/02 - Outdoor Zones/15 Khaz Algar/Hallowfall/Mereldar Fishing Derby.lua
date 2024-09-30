@@ -60,64 +60,64 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["collectible"] = false,
 					["isWeekly"] = true,
 				},{
-					q(82928, { 	-- Arathor Hammerfish
+					q(82928, {	-- Arathor Hammerfish
 						["name"] = "Arathor Hammerfish Derby Bonus Mark",
 					}),
-					q(82936, { 	-- Awoken Coelacanth
+					q(82936, {	-- Awoken Coelacanth
 						["name"] = "Awoken Coelacanth Derby Bonus Mark",
 					}),
-					q(82920, { 	-- Bismuth Bitterling
+					q(82920, {	-- Bismuth Bitterling
 						["name"] = "Bismuth Bitterling Derby Bonus Mark",
 					}),
-					q(82918, { 	-- Bloody Perch
+					q(82918, {	-- Bloody Perch
 						["name"] = "Bloody Perch Derby Bonus Mark",
 					}),
-					q(82919, { 	-- Crystalline Sturgeon
+					q(82919, {	-- Crystalline Sturgeon
 						["name"] = "Crystalline Sturgeon Derby Bonus Mark",
 					}),
-					q(82935, { 	-- Cursed Ghoulfish
+					q(82935, {	-- Cursed Ghoulfish
 						["name"] = "Cursed Ghoulfish Derby Bonus Mark",
 					}),
-					q(82947, { 	-- Dilly-Dally Dace
+					q(82947, {	-- Dilly-Dally Dace
 						["name"] = "Dilly-Dally Dace Derby Bonus Mark",
 					}),
-					q(82926, { 	-- Dornish Pike
+					q(82926, {	-- Dornish Pike
 						["name"] = "Dornish Pike Derby Bonus Mark",
 					}),
-					q(82923, { 	-- Goldengill Trout
+					q(82923, {	-- Goldengill Trout
 						["name"] = "Goldengill Trout Derby Bonus Mark",
 					}),
-					q(82930, { 	-- Kaheti Slum Shark
+					q(82930, {	-- Kaheti Slum Shark
 						["name"] = "Kaheti Slum Shark Derby Bonus Mark",
 					}),
-					q(82921, { 	-- Nibbling Minnow
+					q(82921, {	-- Nibbling Minnow
 						["name"] = "Nibbling Minnow Derby Bonus Mark",
 					}),
-					q(82931, { 	-- Pale Huskfish
+					q(82931, {	-- Pale Huskfish
 						["name"] = "Pale Huskfish Derby Bonus Mark",
 					}),
-					q(82934, { 	-- Queen's Lurefish
+					q(82934, {	-- Queen's Lurefish
 						["name"] = "Queen's Lurefish Derby Bonus Mark",
 					}),
-					q(82925, { 	-- Quiet River Bass
+					q(82925, {	-- Quiet River Bass
 						["name"] = "Quiet River Bass Derby Bonus Mark",
 					}),
-					q(82929, { 	-- Regal Dottyback
+					q(82929, {	-- Regal Dottyback
 						["name"] = "Regal Dottyback Derby Bonus Mark",
 					}),
-					q(82927, { 	-- Roaring Anglerseeker
+					q(82927, {	-- Roaring Anglerseeker
 						["name"] = "Roaring Anglerseeker Derby Bonus Mark",
 					}),
-					q(82932, { 	-- Sanguine Dogfish
+					q(82932, {	-- Sanguine Dogfish
 						["name"] = "Sanguine Dogfish Derby Bonus Mark",
 					}),
-					q(82924, { 	-- Specular Rainbowfish
+					q(82924, {	-- Specular Rainbowfish
 						["name"] = "Specular Rainbowfish Derby Bonus Mark",
 					}),
-					q(82933, { 	-- Spiked Sea Raven
+					q(82933, {	-- Spiked Sea Raven
 						["name"] = "Spiked Sea Raven Derby Bonus Mark",
 					}),
-					q(82922, { 	-- Whispering Stargazer
+					q(82922, {	-- Whispering Stargazer
 						["name"] = "Whispering Stargazer Derby Bonus Mark",
 					}),
 				})),

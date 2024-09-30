@@ -133,7 +133,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					}),
 				})),
 				-- #if ANYCLASSIC
-				applyclassicphase(WRATH_PHASE_THREE, bubbleDownFiltered({ ["races"] = ALLIANCE_ONLY }, 	-- Defense Protocol Beta: Trial of the Champion (A)
+				applyclassicphase(WRATH_PHASE_THREE, bubbleDownFiltered({ ["races"] = ALLIANCE_ONLY },	-- Defense Protocol Beta: Trial of the Champion (A)
 					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(18677, {
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed these from Wrath Classic.
@@ -163,7 +163,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						["_encounter"] = { 637, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}))),
-				applyclassicphase(WRATH_PHASE_THREE, bubbleDownFiltered({ ["races"] = HORDE_ONLY }, 	-- Defense Protocol Beta: Trial of the Champion (H)
+				applyclassicphase(WRATH_PHASE_THREE, bubbleDownFiltered({ ["races"] = HORDE_ONLY },	-- Defense Protocol Beta: Trial of the Champion (H)
 					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(18678, {
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed these from Wrath Classic.
@@ -193,7 +193,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						["_encounter"] = { 637, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}))),
-				applyclassicphase(WRATH_PHASE_FOUR, bubbleDownFiltered({ ["races"] = ALLIANCE_ONLY }, 	-- Defense Protocol Gamma: Trial of the Champion (A)
+				applyclassicphase(WRATH_PHASE_FOUR, bubbleDownFiltered({ ["races"] = ALLIANCE_ONLY },	-- Defense Protocol Gamma: Trial of the Champion (A)
 					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(19426, {
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed these from Wrath Classic.
@@ -223,7 +223,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						["_encounter"] = { 637, DIFFICULTY.DUNGEON.HEROIC },
 					}),
 				}))),
-				applyclassicphase(WRATH_PHASE_FOUR, bubbleDownFiltered({ ["races"] = HORDE_ONLY }, 	-- Defense Protocol Gamma: Trial of the Champion (H)
+				applyclassicphase(WRATH_PHASE_FOUR, bubbleDownFiltered({ ["races"] = HORDE_ONLY },	-- Defense Protocol Gamma: Trial of the Champion (H)
 					(function(t) return t.criteriaID or t.achID or t.achievementID; end), ach(19425, {
 					-- #if NOT ANYCLASSIC
 					-- Blizzard removed these from Wrath Classic.

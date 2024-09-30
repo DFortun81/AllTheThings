@@ -8821,7 +8821,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(82200),	-- TWW Alpha/Beta Questauren Ringing Deeps skip
 			q(82201),	-- TWW Alpha/Beta Questauren Hallowfall skip
 			q(82202),	-- TWW Alpha/Beta Questauren Azj-Kahet skip
-			q(82366, {	-- DO NOT USE @Darkal probably move this to NYI
+			q(82366, {	-- DO NOT USE
 			-- 	["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 			-- 	["coord"] = { 47.5, 32.8, THE_RINGING_DEEPS },
 				-- ["g"] = {

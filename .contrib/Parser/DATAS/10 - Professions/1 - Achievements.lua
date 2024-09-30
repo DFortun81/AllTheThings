@@ -346,7 +346,7 @@ root(ROOTS.Professions, n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_
 			},
 			["maps"] = { BLACKWING_LAIR },
 		}),
-		crit(61657, {	-- 	Nefarian Defeated (Again)
+		crit(61657, {	-- Nefarian Defeated (Again)
 			["providers"] = {
 				{ "i", 15138 },	-- Onyxia Scale Cloak
 				{ "n", 41376 },	-- Nefarian

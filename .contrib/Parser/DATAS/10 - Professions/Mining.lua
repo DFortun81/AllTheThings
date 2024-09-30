@@ -474,28 +474,28 @@ root(ROOTS.Professions, prof(MINING, bubbleDownSelf({ ["requireSkill"] = MINING 
 	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18840, {	-- Fourth War Mining Techniques
-				crit(61525, {	-- 	Monelite Deposit
+				crit(61525, {	-- Monelite Deposit
 					["sourceQuests"] = {
 						48761,	-- Spiderphobia
 						51964,	-- Insufferable Bloodsuckers
 					},
 					["sourceQuestNumRequired"] = 1,
 				}),
-				crit(61526, {	-- 	Storm Silver Deposit
+				crit(61526, {	-- Storm Silver Deposit
 					["sourceQuests"] = {
 						48768,	-- Brined Justice [A]
 						52015,	-- Brined Justice [H]
 					},
 					["sourceQuestNumRequired"] = 1,
 				}),
-				crit(61527, {	-- 	Platinum Deposit
+				crit(61527, {	-- Platinum Deposit
 					["sourceQuests"] = {
 						52050,	-- A More Challenging Career
 						52055,	-- An Ore for an Eye
 					},
 					["sourceQuestNumRequired"] = 1,
 				}),
-				crit(61528, {	-- 	Monelite Seam
+				crit(61528, {	-- Monelite Seam
 					["sourceQuests"] = {
 						48767,	-- Seams Familiar
 						51971,	-- An Exquisite Brooch

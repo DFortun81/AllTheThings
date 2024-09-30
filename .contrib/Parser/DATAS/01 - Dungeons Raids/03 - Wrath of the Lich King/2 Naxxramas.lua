@@ -1238,7 +1238,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 							["description"] = "Includes a wide range of Bind on Equip (BoE) Leggings from Classic, including those found in dungeons. We specifically feature items where Dented Tokens serve as the exclusive or optimal source.",
 							["g"] = {
 							--	i(1943),	-- Goblin Mail Leggings				Added to original Source in 10.1.7
-							--	i(2978),	-- Veteran Leggings 				-- Likely added back. Add when confirmed
+							--	i(2978),	-- Veteran Leggings					-- Likely added back. Add when confirmed
 								i(206610),	-- Lamented Crusader's Leggings
 							},
 						}),

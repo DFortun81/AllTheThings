@@ -21,7 +21,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						{ 50.6, 50.4, STORMSONG_VALLEY },
 					},
 				}),
- 				pet(2373, {	-- River Frog (PET!)
+				pet(2373, {	-- River Frog (PET!)
 					["description"] = "Best found along the waterways above Sagehold. Coords are a route.",
 					["coords"] = {
 						{ 64.6, 44.6, STORMSONG_VALLEY },

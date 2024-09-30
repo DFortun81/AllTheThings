@@ -2685,7 +2685,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				i(4191, {	-- Owlbeast Leggings
 					["timeline"] = { ADDED_10_1_7 },	-- ATT Discord 10.09.2023
 					["crs"] = {
-						50788, 	-- Quetzl (Rare)
+						50788,	-- Quetzl (Rare)
 						7452,	-- Crazed Owlbeast
 						7453,	-- Moontouched Owlbeast
 					},

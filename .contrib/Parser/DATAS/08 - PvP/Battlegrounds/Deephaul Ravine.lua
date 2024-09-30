@@ -7,7 +7,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 		["timeline"] = { ADDED_11_0_2 },
 		["g"] = {
 			n(ACHIEVEMENTS, {
-				ach(40617,{ 	-- Deepholla
+				ach(40617,{	-- Deepholla
 					-- Meta Achievement
 					["sym"] = {{"meta_achievement",
 						40216,	-- Deephaul Ravine Expedience

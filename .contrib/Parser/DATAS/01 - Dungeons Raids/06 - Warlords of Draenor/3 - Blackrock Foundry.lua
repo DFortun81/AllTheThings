@@ -36,7 +36,7 @@ local EncounterToCRS = {
 };
 
 ------ Common Symlinks -----
-local SYM_CONQ_HELM = 	{{"select","itemID",
+local SYM_CONQ_HELM =	{{"select","itemID",
 						115568,	-- Helmet of Guiding Light
 						115586,	-- Shadow Council's Hood
 						115563,	-- Soul Priest's Hood
@@ -61,7 +61,7 @@ local SYM_CONQ_LEGS =	{{"select","itemID",
 						115587,	-- Shadow Council's Leggings
 						115564,	-- Soul Priest's Leggings
 						},{"whereMyModID"}}
-local SYM_PROT_HELM = 	{{"select","itemID",
+local SYM_PROT_HELM =	{{"select","itemID",
 						115584,	-- Blackhand's Faceguard
 						115556,	-- Helm of the Somber Gaze
 						115545,	-- Rylakstalker's Headguard

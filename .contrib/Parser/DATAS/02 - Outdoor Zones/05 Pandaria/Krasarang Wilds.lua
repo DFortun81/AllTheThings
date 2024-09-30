@@ -168,7 +168,7 @@ root(ROOTS.Zones, {
 									["sourceQuest"] = 32412,	-- One Last Grasp
 									["description"] = "To be able to pick up this quest, head to Domination Point in Krasarang Wilds and take the flightpath back to Dalaran.",
 									["timeline"] = { ADDED_5_1_0 },
-									["maps"] = { 501, 502 },	-- Dalaran (Scenario)
+									["maps"] = { 501 },	-- Dalaran (Scenario)
 									["isBreadcrumb"] = true,
 									["coord"] = { 50.4, 48.4, 502 },
 									["races"] = HORDE_ONLY,
@@ -837,7 +837,7 @@ root(ROOTS.Zones, {
 								ach(7932, {	-- I'm In Your Base, Killing Your Dudes
 									crit(22455, {	-- Champion of Arms slain
 										["coord"] = { 13.5, 54.8, KRASARANG_WILDS },	-- Kar Warmaker
-										["provider"] = { "n", 68321 }, 	-- Kar Warmaker
+										["provider"] = { "n", 68321 },	-- Kar Warmaker
 									}),
 									crit(22457, {	-- Champion of the Shadows slain
 										["coord"] = { 12.8, 64.7, KRASARANG_WILDS },	-- Ubunti the Shade

@@ -30,7 +30,7 @@ end
 local SearchFilter;
 local excludedZones = {
 	[12] = 1,	-- Kalimdor
-	[13] = 1, 	-- Eastern Kingdoms
+	[13] = 1,	-- Eastern Kingdoms
 	[101] = 1,	-- Outland
 	[113] = 1,	-- Northrend
 	[424] = 1,	-- Pandaria
@@ -176,15 +176,15 @@ app:CreateWindow("Random", {
 	end,
 	OnRebuild = function(self, ...)
 		if self.data then return; end
-		
+
 		-- For this window's options to work, Prime needs to be fully initialized.
 		local prime = app:GetWindow("Prime");
 		if not prime then return; end
 		if not prime.data then prime:ForceUpdate(); end
-	
+
 		self.defaultHeader = {
 			text = "Random - Go Get 'Em!",
-			icon = app.asset("WindowIcon_Random"), 
+			icon = app.asset("WindowIcon_Random"),
 			description = "This window allows you to randomly select a place or item to get. Go get 'em!",
 			expanded = true,
 			visible = true,
@@ -194,7 +194,7 @@ app:CreateWindow("Random", {
 			options = {
 				{
 					text = "Change Search Filter",
-					icon = app.asset("Button_Search"), 
+					icon = app.asset("Button_Search"),
 					description = "Click this to change your search filter.",
 					OnUpdate = app.AlwaysShowUpdate,
 					OnClick = function(row, button)
@@ -221,7 +221,7 @@ app:CreateWindow("Random", {
 		};
 		self.filterOptions = {
 			text = "Apply a Search Filter",
-			icon = app.asset("Button_Search"), 
+			icon = app.asset("Button_Search"),
 			description = "Please select a search filter option.",
 			expanded = true,
 			visible = true,
@@ -295,7 +295,7 @@ app:CreateWindow("Random", {
 				},
 			},
 		};
-		
+
 		self.data = self.defaultHeader;
 		Reroll(self);
 	end,

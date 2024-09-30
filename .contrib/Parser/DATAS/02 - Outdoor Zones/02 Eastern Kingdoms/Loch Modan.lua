@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",
-					441, 	-- Alpine Hare (PET!)
+					441,	-- Alpine Hare (PET!)
 					417,	-- Rat (PET!)
 					419,	-- Small Frog (PET!)
 					387,	-- Snake (PET!)

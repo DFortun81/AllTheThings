@@ -170944,9 +170944,9 @@ for i,itemID in ipairs({
 	--7719,	-- Raging Berserker's Helm (SM)
 	--7688,	-- Ironspine's Ribcage (SM)
 	--3228,	-- Jimmied Handcuffs (Stockade)
-	
+
 	-- These are pretty silly Blizzard things, Warrior Exclusive items that should be learnable by Warriors.
-	7130, 	-- Brutal Helm (Thunder Bluff - Warrior Only)
+	7130,	-- Brutal Helm (Thunder Bluff - Warrior Only)
 	7129,	-- Brutal Gauntlets (Durotar - Warrior Only)
 	7133,	-- Brutal Hauberk (The Barrens - Warrior Only)
 	7132,	-- Brutal Legguards (Undercity - Warrior Only)

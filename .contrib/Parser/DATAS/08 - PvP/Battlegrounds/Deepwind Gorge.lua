@@ -18,10 +18,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 						8333,	-- Deepwind Gorge Perfection
 						8350,	-- Mine! Mine! Mine!
 						8351,	-- Other People's Property
-						8354,  	-- Puddle Jumper
+						8354,	-- Puddle Jumper
 						8355,   -- Weighed Down
-						8359, 	-- Capping Spree
-						8358, 	-- Deepwind Gorge All-Star
+						8359,	-- Capping Spree
+						8358,	-- Deepwind Gorge All-Star
 					}},
 					["timeline"] = { ADDED_5_3_0, REMOVED_8_3_0 },
 					["g"] = {

@@ -47,8 +47,8 @@ local QUANTUM_GROUP = sharedData({
 			}),
 			ig(121509),	-- Runesworn Crown					(NYI)
 
-			ig(134621),	-- Incendiary Helm 					(Removed)
-			ig(134794),	-- Ruinous Helm 					(Removed)
+			ig(134621),	-- Incendiary Helm					(Removed)
+			ig(134794),	-- Ruinous Helm						(Removed)
 		}),
 		filter(MAIL, {
 			q(77627, {	-- when you learn everything from Quantum Headpiece (Mail)
@@ -166,13 +166,13 @@ local QUANTUM_GROUP = sharedData({
 				["name"] = "Quantum Chestpiece (Leather) completed.",
 				["collectible"] = false,
 			}),
-			ig(114251),	-- Bloodthorn Chestguard 			(NYI)
+			ig(114251),	-- Bloodthorn Chestguard			(NYI)
 			ig(189917),	-- Constellation Master's Smock		(NYI)
 			ig(114314),	-- Shadow-Gorged Chestguard			(NYI)
 			ig(3984),	-- Strapped Armor					(NYI)
 
-			ig(134729),	-- Frosthide Tunic 					(Removed)
-			ig(10781),	-- Hakkari Breastplate 				(Removed)
+			ig(134729),	-- Frosthide Tunic					(Removed)
+			ig(10781),	-- Hakkari Breastplate				(Removed)
 			ig(134759),	-- Masked Tunic						(Removed)
 			ig(113718),	-- Ravaged Leather Chestguard		(Removed)
 			ig(113716),	-- Ravaged Leather Tunic			(Removed)
@@ -263,7 +263,7 @@ local QUANTUM_GROUP = sharedData({
 				["collectible"] = false,
 			}),
 			ig(114385),	-- Element-Binder Gauntlets			(NYI)
-			i(113222, {	-- Keengrip Arrowpullers 			(NYI)
+			i(113222, {	-- Keengrip Arrowpullers			(NYI)
 				["modID"] = 4,
 			}),
 			ig(114261),	-- Leafscale Gauntlets				(NYI)
@@ -330,12 +330,12 @@ local QUANTUM_GROUP = sharedData({
 				["name"] = "Quantum Legs (Leather) completed.",
 				["collectible"] = false,
 			}),
-			ig(114268),	-- Bloodthorn Legguards 			(NYI)
-			ig(114392),	-- Legguards of Falling Leaves 		(NYI)
-			ig(121513),	-- Runesworn Breeches 				(NYI)
-			ig(3982),	-- Strapped Pants 					(NYI)
+			ig(114268),	-- Bloodthorn Legguards				(NYI)
+			ig(114392),	-- Legguards of Falling Leaves		(NYI)
+			ig(121513),	-- Runesworn Breeches				(NYI)
+			ig(3982),	-- Strapped Pants					(NYI)
 
-			ig(134760),	-- Masked Leggings 					(Removed)
+			ig(134760),	-- Masked Leggings					(Removed)
 			ig(134701),	-- Swarming Legguards				(Removed)
 		}),
 		filter(MAIL, {
@@ -582,7 +582,7 @@ local QUANTUM_GROUP = sharedData({
 			["name"] = "Quantum Polearm completed.",
 			["collectible"] = false,
 		}),
-		ig(115297),	-- Spectral Polearm 					(NYI)
+		ig(115297),	-- Spectral Polearm						(NYI)
 
 		ig(6679),	-- Armor Piercer						(Removed)
 		ig(134750),	-- Covert Pike							(Removed)
@@ -604,23 +604,23 @@ local QUANTUM_GROUP = sharedData({
 		ig(3988),	-- Plate Wall Shield					(NYI)
 		ig(3991),	-- Plated Buckler						(NYI)
 
-		ig(134741),	-- Cold-Touched Barrier 				(Removed)
-		ig(134774),	-- Covert Barrier 						(Removed)
-		ig(134757),	-- Covert Reprieve 						(Removed)
+		ig(134741),	-- Cold-Touched Barrier					(Removed)
+		ig(134774),	-- Covert Barrier						(Removed)
+		ig(134757),	-- Covert Reprieve						(Removed)
 		ig(22336),	-- Draconian Aegis of the Legion		(Removed)
-		ig(134632),	-- Scorching Redoubt 					(Removed)
-		ig(134803),	-- Seasoned Redoubt 					(Removed)
-		ig(134603),	-- Vanguard Redoubt 					(Removed)
-		ig(134589),	-- Vanguard Reprieve 					(Removed)
+		ig(134632),	-- Scorching Redoubt					(Removed)
+		ig(134803),	-- Seasoned Redoubt						(Removed)
+		ig(134603),	-- Vanguard Redoubt						(Removed)
+		ig(134589),	-- Vanguard Reprieve					(Removed)
 	}),
 	i(208115, {	-- Quantum Staff
 		q(77601, {	-- when you learn everything from Quantum Staff
 			["name"] = "Quantum Staff completed.",
 			["collectible"] = false,
 		}),
-		ig(115298),	-- Spectral Spire 						(NYI)
+		ig(115298),	-- Spectral Spire						(NYI)
 
-		ig(134721),	-- Cold-Touched Staff 					(Removed)
+		ig(134721),	-- Cold-Touched Staff					(Removed)
 		ig(1388),	-- Crooked Staff						(Removed)
 		ig(119409),	-- Icebound Bloodmaul Spire				(Removed)
 		ig(2280),	-- Kam's Walking Stick					(Removed)
@@ -639,12 +639,12 @@ local QUANTUM_GROUP = sharedData({
 		ig(155074),	-- Toll Enforcer						(NYI)
 
 		ig(68195),	-- Bazzalan's Blade						(Removed)
-		ig(19110),	-- Cold Forged Blade 					(Removed)
-		ig(134725),	-- Cold-Touched Mageblade 				(Removed)
-		ig(134726),	-- Cold-Touched Sword 					(Removed)
-		ig(134758),	-- Covert Mageblade 					(Removed)
+		ig(19110),	-- Cold Forged Blade					(Removed)
+		ig(134725),	-- Cold-Touched Mageblade				(Removed)
+		ig(134726),	-- Cold-Touched Sword					(Removed)
+		ig(134758),	-- Covert Mageblade						(Removed)
 		ig(14145),	-- Cursed Felblade						(Removed)
-		ig(134783),	-- Seasoned Quickblade 					(Removed)
+		ig(134783),	-- Seasoned Quickblade					(Removed)
 	}),
 	i(208123, {	-- Quantum Wand
 		q(77610, {	-- when you learn everything from Quantum Wand
@@ -1384,17 +1384,17 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 
 			ig(114264),	-- Bloodthorn Hood					(NYI)
 			ig(114388),	-- Hood of Falling Leaves			(NYI)
-			ig(93081),	-- Hozen-Stitched Hood 				(NYI)
-		--	ig(147516),	-- Legion Stalker's Hood 			(NYI)						Listed under CoEN (Legion Dungeon)
+			ig(93081),	-- Hozen-Stitched Hood				(NYI)
+		--	ig(147516),	-- Legion Stalker's Hood			(NYI)						Listed under CoEN (Legion Dungeon)
 			ig(121509),	-- Runesworn Crown					(NYI)
 
-			ig(134621),	-- Incendiary Helm 					(Removed)
-			ig(134794),	-- Ruinous Helm 					(Removed)
+			ig(134621),	-- Incendiary Helm					(Removed)
+			ig(134794),	-- Ruinous Helm						(Removed)
 			ig(89480),	-- Hozen-Crafted Hood				(Unsorted)
-		--	ig(1280),	-- Cloaked Hood 					(Removed)					Added in 10.1.7 to original Source
-		--	ig(4724),	-- Humbert's Helm 					(Removed)					Added in 10.1.7 to original Source
-		--	ig(3392),	-- Ringed Helm 						(Removed)					Added in 10.1.7 to original Source
-		--	ig(5753),	-- Ruffled Chaplet 					(Removed)(unique)			Added in 10.1.7 to original Source
+		--	ig(1280),	-- Cloaked Hood						(Removed)					Added in 10.1.7 to original Source
+		--	ig(4724),	-- Humbert's Helm					(Removed)					Added in 10.1.7 to original Source
+		--	ig(3392),	-- Ringed Helm						(Removed)					Added in 10.1.7 to original Source
+		--	ig(5753),	-- Ruffled Chaplet					(Removed)(unique)			Added in 10.1.7 to original Source
 		--	ig(6204),	-- Tribal Worg Helm					(Removed)(unique)			Added in 10.1.7 to original Source
 		}),
 		filter(MAIL, {
@@ -1479,18 +1479,18 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 				ig(3957),	-- Mesh Pants (NYI)
 		}),
 		filter(LEATHER, {
-			ig(114268),	-- Bloodthorn Legguards 		(NYI)
-			ig(93082),	-- Hozen-Stitched Britches 		(NYI)
-			ig(114392),	-- Legguards of Falling Leaves 	(NYI)
-			ig(121513),	-- Runesworn Breeches 			(NYI)
-			ig(3982),	-- Strapped Pants 				(NYI)
+			ig(114268),	-- Bloodthorn Legguards			(NYI)
+			ig(93082),	-- Hozen-Stitched Britches		(NYI)
+			ig(114392),	-- Legguards of Falling Leaves	(NYI)
+			ig(121513),	-- Runesworn Breeches			(NYI)
+			ig(3982),	-- Strapped Pants				(NYI)
 
-			ig(134760),	-- Masked Leggings 				(Removed)
+			ig(134760),	-- Masked Leggings				(Removed)
 
-			ig(89478),	-- Hozen-Crafted Britches 		(Unsorted)
-		--	ig(3022),	-- Bluegill Breeches 			(Removed)(unique)	Added in 10.1.7 to original Source
-		--	ig(18611),	-- Gnarlpine Leggings 			(Removed)			Added in 10.1.7 to original Source
-		--	ig(2233),	-- Shadow Weaver Leggings 		(Removed)			Added in 10.1.7 to original Source
+			ig(89478),	-- Hozen-Crafted Britches		(Unsorted)
+		--	ig(3022),	-- Bluegill Breeches			(Removed)(unique)	Added in 10.1.7 to original Source
+		--	ig(18611),	-- Gnarlpine Leggings			(Removed)			Added in 10.1.7 to original Source
+		--	ig(2233),	-- Shadow Weaver Leggings		(Removed)			Added in 10.1.7 to original Source
 		}),
 		filter(MAIL, {
 		}),
@@ -1527,11 +1527,11 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 
 		ig(9425),	-- Pendumlum of Doom				(Very Rare BoE)
 	--	ig(2015),	-- Black Metal War Axe				(Removed)			Added in 10.1.7 to original Source
-	--	ig(2227),	-- Heavy Ogre War Axe 				(Removed)			Added in 10.1.7 to original Source
+	--	ig(2227),	-- Heavy Ogre War Axe				(Removed)			Added in 10.1.7 to original Source
 	--	ig(1220),	-- Lupine Axe						(Removed)			Added in 10.1.7 to original Source
-	--	ig(2823),	-- Mo'grosh Can Opener 				(Removed)			Added in 10.1.7 to original Source
-	--	ig(5749),	-- Scythe Axe 						(Removed)(Unique)	Added in 10.1.7 to original Source
-	--	ig(756),	-- Tunnel Pick 						(Removed)			Added in 10.1.7 to original Source
+	--	ig(2823),	-- Mo'grosh Can Opener				(Removed)			Added in 10.1.7 to original Source
+	--	ig(5749),	-- Scythe Axe						(Removed)(Unique)	Added in 10.1.7 to original Source
+	--	ig(756),	-- Tunnel Pick						(Removed)			Added in 10.1.7 to original Source
 	--	ig(3325),	-- Vile Fin Battle Axe				(Removed)			Added in 10.1.7 to original Source
 	}),
 	i(208114, {	-- Quantum Greathammer	(Two-Handed)(Mace)
@@ -1541,12 +1541,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 	}),
 	i(208112, {	-- Quantum Greatsword	(Two-Handed)
 		-- CA IS NOT POSSIBLE -- Gold 13.07.2023
-		ig(134746),	-- Covert Greatsword 				(NYI)
-		ig(134606),	-- Scorching Greatsword 			(NYI)
-	--	ig(2014),	-- Black Metal Greatsword 			(Removed)(Unique)	Added in 10.1.7 to original Source
-	--	ig(2204),	-- Brashclaws Skewer 				(Removed)(Unique)	Added in 10.1.7 to original Source
-	--	ig(3188),	-- Coral Claymore 					(Removed)			Added in 10.1.7 to original Source
-	--	ig(2084),	-- Darksteel Bastard Sword 			(Removed)			Added in 10.1.7 to original Source
+		ig(134746),	-- Covert Greatsword				(NYI)
+		ig(134606),	-- Scorching Greatsword				(NYI)
+	--	ig(2014),	-- Black Metal Greatsword			(Removed)(Unique)	Added in 10.1.7 to original Source
+	--	ig(2204),	-- Brashclaws Skewer				(Removed)(Unique)	Added in 10.1.7 to original Source
+	--	ig(3188),	-- Coral Claymore					(Removed)			Added in 10.1.7 to original Source
+	--	ig(2084),	-- Darksteel Bastard Sword			(Removed)			Added in 10.1.7 to original Source
 	--	ig(1387),	-- Ghoulfang						(Removed)			Added in 10.1.7 to original Source
 	--	ig(16039),	-- Ta'Kierthan Songblade			(Removed)			Added in 10.1.7 to original Source
 	--	ig(2754),	-- Tarnished Bastard Sword			(Removed)(Unique)	Added in 10.1.7 to original Source
@@ -1561,30 +1561,30 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 	--	ig(3223),	-- Frostmane Scepter				(Removed)			Added in 10.1.7 to original Source
 	}),
 	i(208116, {	-- Quantum Polearm
-		ig(115297),	-- Spectral Polearm 				(NYI)
+		ig(115297),	-- Spectral Polearm					(NYI)
 	}),
 	i(208126, {	-- Quantum Shield
-		ig(134803),	-- Seasoned Redoubt 				(Removed)
+		ig(134803),	-- Seasoned Redoubt					(Removed)
 	}),
 	i(208115, {	-- Quantum Staff
-		ig(115298),	-- Spectral Spire 					(NYI)
+		ig(115298),	-- Spectral Spire					(NYI)
 
 		ig(6679),	-- Armor Piercer					(Removed)
-		ig(134721),	-- Cold-Touched Staff 				(Removed)
+		ig(134721),	-- Cold-Touched Staff				(Removed)
 	--	ig(1388),	-- Crooked Staff					(Removed)			Added in 10.1.7 to original Source
 	--	ig(1539),	-- Gnarled Hermit's staff			(Removed)(Unique)	Added in 10.1.7 to original Source
 		ig(2280),	-- Kam's Walking Stick				(Removed)
-	--	ig(2013),	-- Cryptbone Staff 					(Removed)			Added in 10.1.7 to original Source
-	--	ig(1928),	-- Defias Mage Staff 				(Removed)(Unique)	Added in 10.1.7 to original Source
+	--	ig(2013),	-- Cryptbone Staff					(Removed)			Added in 10.1.7 to original Source
+	--	ig(1928),	-- Defias Mage Staff				(Removed)(Unique)	Added in 10.1.7 to original Source
 	--	ig(7094),	-- Driftwood Branch					(Removed)			Added in 10.1.7 to original Source
-	--	ig(1300),	-- Lesser Staff of the Spire Staff 	(Removed)(Unique)	Added in 10.1.7 to original Source
-	--	ig(3227),	-- Nightbane Staff 					(Removed)(Unique)	Added in 10.1.7 to original Source
-	--	ig(2226),	-- Ogremage Staff 					(Removed)(Unique)	Added in 10.1.7 to original Source
+	--	ig(1300),	-- Lesser Staff of the Spire Staff	(Removed)(Unique)	Added in 10.1.7 to original Source
+	--	ig(3227),	-- Nightbane Staff					(Removed)(Unique)	Added in 10.1.7 to original Source
+	--	ig(2226),	-- Ogremage Staff					(Removed)(Unique)	Added in 10.1.7 to original Source
 	--	ig(1473),	-- Riverside Staff					(Removed)			Added in 10.1.7 to original Source
 	--	ig(880),	-- Staff of Horrors					(Removed)			Added in 10.1.7 to original Source
 	}),
 	i(208109, {	-- Quantum Sword		(One-Handed)
-	--	ig(8223),	-- Blade of the Basilisk 			(Removed)			Added in 10.1.7 to original Source
+	--	ig(8223),	-- Blade of the Basilisk			(Removed)			Added in 10.1.7 to original Source
 	--	ig(2065),	-- Rockjaw Blade					(Removed)(Unique)	Added in 10.1.7 to original Source
 	}),
 	i(208122, {	-- Quantum Warglaives

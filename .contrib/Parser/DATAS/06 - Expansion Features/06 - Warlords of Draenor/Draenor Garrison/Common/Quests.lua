@@ -1365,7 +1365,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 						}),
 					}),
 				}),
-				header(HEADERS.NPC, 89753, { 	-- High Overlord Saurfang
+				header(HEADERS.NPC, 89753, {	-- High Overlord Saurfang
 					["description"] = "High Overlord Saurfang has a chance to spawn in your garrison daily, or you can find someone with him spawned and join their garrison. He starts a weekly raid quest which will either have Greater Bounty Spoils or Apexis Crystals as a reward.",
 					["crs"] = { 91195 },	-- High Overlord Saurfang
 					["races"] = HORDE_ONLY,

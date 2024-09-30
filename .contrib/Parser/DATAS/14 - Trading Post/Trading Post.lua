@@ -446,7 +446,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		})),
 		n(AUGUST, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5, REMOVED_10_1_7 } }, {
 			n(FILLED_TRAVELERS_LOG, {
-				iensemble(190797), 	-- Ensemble: Bones of the Bloodhunter
+				iensemble(190797),	-- Ensemble: Bones of the Bloodhunter
 			}),
 			filter(BATTLE_PETS, {
 				i(207962, {	-- Spirit of Competition (PET!)
@@ -999,7 +999,7 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5, REMOVED_10_2_5} }, {
 			-- removed 10.2.5.53495
 			n(FILLED_TRAVELERS_LOG, {
-				iensemble(212220), 	-- Ensemble: Love Witch's Attire
+				iensemble(212220),	-- Ensemble: Love Witch's Attire
 			}),
 			filter(BATTLE_PETS, {
 				i(212700, {	-- Nelle (PET!)

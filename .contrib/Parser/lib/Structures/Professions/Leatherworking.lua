@@ -59,7 +59,7 @@ APPRENTICE_JOURNEYMAN_LEATHERWORKING = {
 		r(9074),	-- Nimble Leather Gloves
 		r(19102, {["timeline"] = {ADDED_2_1_0}}),	-- Runic Leather Armor
 		r(19072, {["timeline"] = {ADDED_2_1_0}}),	-- Runic Leather Belt
-		r(19065, {["timeline"] = {ADDED_2_1_0}}), 	-- Runic Leather Bracers
+		r(19065, {["timeline"] = {ADDED_2_1_0}}),	-- Runic Leather Bracers
 		r(19055, {["timeline"] = {ADDED_2_1_0}}),	-- Runic Leather Gauntlets
 		r(19082, {["timeline"] = {ADDED_2_1_0}}),	-- Runic Leather Headband
 		r(19091, {["timeline"] = {ADDED_2_1_0}}),	-- Runic Leather Pants

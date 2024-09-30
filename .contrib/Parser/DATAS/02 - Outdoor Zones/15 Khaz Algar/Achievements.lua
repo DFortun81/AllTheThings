@@ -234,15 +234,15 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["_quests"] = { 82292 },
 			}),
 			crit(67136, {	-- Friendhaver Grem
-				["_noautomation"] = true, 	-- Doesn't nest properly
+				["_noautomation"] = true,	-- Doesn't nest properly
 				["_quests"] = { 82293 },
 			}),
 			crit(67137, {	-- Kyrie
-				["_noautomation"] = true, 	-- Doesn't nest properly
+				["_noautomation"] = true,	-- Doesn't nest properly
 				["_quests"] = { 82294 },
 			}),
 			crit(67138, {	-- Ziriak
-				["_noautomation"] = true, 	-- Doesn't nest properly
+				["_noautomation"] = true,	-- Doesn't nest properly
 				["_quests"] = { 82295 },
 			}),
 		})),
@@ -315,10 +315,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 		ach(40702, {	-- Khaz Algar Glyph Hunter
 			-- Meta Achievement
 			["sym"] = {{"meta_achievement",
-				40705, 	-- Azj-Kahet Glyph Hunter
-				40704, 	-- Hallowfall Glyph Hunter
-				40166, 	-- Isle of Dorn Glyph Hunter
-				40703, 	-- The Ringing Deeps Glyph Hunter
+				40705,	-- Azj-Kahet Glyph Hunter
+				40704,	-- Hallowfall Glyph Hunter
+				40166,	-- Isle of Dorn Glyph Hunter
+				40703,	-- The Ringing Deeps Glyph Hunter
 			}},
 			["g"] = {
 				i(223267),	-- Swarmite Skyhunter (MOUNT!)

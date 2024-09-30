@@ -7,13 +7,13 @@ local MAPS = {
 	453,	-- The Crimson Assembly Hall
 	454,	-- Vaults of Kings Past
 	455,	-- Throne of Ancient Conquerors
-	431, 	-- Scarlet Halls
-	432, 	-- Scarlet Halls
+	431,	-- Scarlet Halls
+	432,	-- Scarlet Halls
 	SCARLET_MONASTERY,	-- Scarlet Monastery: Forlorn Cloister (First Boss)
 	436,	-- Scarlet Monasatery: Crusader's Chapel (Last two bosses)
 	SCHOLOMANCE,
-	477, 	-- Scholomance
-	478, 	-- Scholomance
+	477,	-- Scholomance
+	478,	-- Scholomance
 	479,	-- Scholomance
 	443,	-- Shado-Pan Monastery
 	444,	-- Cloudstrike Dojo

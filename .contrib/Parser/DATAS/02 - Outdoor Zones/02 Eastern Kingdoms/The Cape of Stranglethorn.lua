@@ -362,7 +362,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						objective(1, {	-- 	Place incense in front of Totem of Hir'eek
+						objective(1, {	-- Place incense in front of Totem of Hir'eek
 							["providers"] = {
 								{ "i",  58963 },	-- Gurubashi Incense
 								{ "o", 204361 },	-- Totem of Hir'eek
@@ -393,7 +393,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,
 					["groups"] = {
-						objective(1, {	-- 	Place incense in front of Totem of Hir'eek
+						objective(1, {	-- Place incense in front of Totem of Hir'eek
 							["providers"] = {
 								{ "i",  58963 },	-- Gurubashi Incense
 								{ "o", 204361 },	-- Totem of Hir'eek
@@ -2038,8 +2038,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["provider"] = { "n", 43659 },	-- Long John Copper <The Brashtide Crew>
 							["coord"] = { 51.2, 91.4, THE_CAPE_OF_STRANGLETHORN },
 						}),
-						objective(2, {	-- 	Speak with Enormous Shawn Stooker
-							["provider"] = { "n", 43660 },	-- 	Enormous Shawn Stooker <The Brashtide Crew>
+						objective(2, {	-- Speak with Enormous Shawn Stooker
+							["provider"] = { "n", 43660 },	-- Enormous Shawn Stooker <The Brashtide Crew>
 							["coord"] = { 46.8, 94.2, THE_CAPE_OF_STRANGLETHORN },
 						}),
 						objective(3, {	-- Speak with Wailing Mary Smitts

@@ -1079,7 +1079,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
-						objective(1, {	-- 	Foreman Oslow Saved
+						objective(1, {	-- Foreman Oslow Saved
 							["providers"] = {
 								{ "n", 341 },	-- Foreman Oslow
 								{ "i", 58895 },	-- Ettin Control Orb

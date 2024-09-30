@@ -340,7 +340,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				i(224080),	-- Timerunner's Sword
 			}),
 			n(220895, {	-- Grandmaster Jakkus <Class Apparel>
-				["crs"] = { 220618 }, 	-- Grandmaster Jakkus <Class Apparel>
+				["crs"] = { 220618 },	-- Grandmaster Jakkus <Class Apparel>
 			}),
 			n(220895, {	-- Grandmaster Jakkus <Class Apparel>
 				clWithoutLock(DEATHKNIGHT, {
@@ -475,7 +475,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(219032, {	-- Hemet Nesingwary XVII <Beastmaster>
-				["crs"] = { 219331 }, 	-- Hemet Nesingwary XVII <Beastmaster>
+				["crs"] = { 219331 },	-- Hemet Nesingwary XVII <Beastmaster>
 			}),
 			n(219032, {	-- Hemet Nesingwary XVII <Beastmaster>
 				i(218111, {	-- Amber Pterrordax (MOUNT!)
@@ -611,7 +611,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 				}),
 			}),
 			n(219013, {	-- Horos <Rare Collections>
-				["crs"] = { 217051 }, 	-- Horos <Rare Collections>
+				["crs"] = { 217051 },	-- Horos <Rare Collections>
 			}),
 			n(219013, {	-- Horos <Rare Collections>
 				------ Unobtainables ------

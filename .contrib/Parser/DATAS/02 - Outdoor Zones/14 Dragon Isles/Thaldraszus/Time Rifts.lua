@@ -336,7 +336,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					q(76404, {	-- Cogs in a Machine
 						["provider"] = { "i", 206602 },	-- Mechanical Cog (QI!)
-						["coord"] = { 57.7, 64.2, 2199 }, 	-- Tyrhold Reservoir (Scenario Map)
+						["coord"] = { 57.7, 64.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 					}),
 					q(76533, {	-- Dangerous Documentation
 						["provider"] = { "n", 207525 },	-- Watcher's Log
@@ -436,7 +436,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					}),
 					o(403919,{	-- Mechanical Cog
 						["coords"] = {
-							{ 57.7, 64.2, 2199 }, 	-- Tyrhold Reservoir (Scenario Map)
+							{ 57.7, 64.2, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 							{ 58.1, 63.9, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 							{ 38.1, 52.3, 2199 },	-- Tyrhold Reservoir (Scenario Map)
 						},

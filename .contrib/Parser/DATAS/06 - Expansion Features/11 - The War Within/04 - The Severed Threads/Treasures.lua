@@ -82,7 +82,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				-- ["provider"] = { "n", 224892 },	-- Thimble // Weave-Rat Cache (vignette)
 				-- ["questID"] = xxxx,
 				["coords"] = {
-				-- 	{ 26.2, 51.2, NERUBAR },	-- Thimble
+				--	{ 26.2, 51.2, NERUBAR },	-- Thimble
 					{ 29.6, 65.6, NERUBAR },	-- Thimble's Cache
 				},
 			}),

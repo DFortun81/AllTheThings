@@ -377,7 +377,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				}),
 				q(9460, {	-- Combining Forces
 					["qg"] = 17224,	-- Keltus Darkleaf
-					["sourceQuest"] = 9532, 	-- Find Keltus Darkleaf
+					["sourceQuest"] = 9532,	-- Find Keltus Darkleaf
 					["coord"] = { 33, 11.2, GHOSTLANDS },
 					["timeline"] = { ADDED_3_3_0, REMOVED_4_0_3 },
 					["classes"] = { ROGUE },

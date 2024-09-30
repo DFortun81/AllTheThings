@@ -42,7 +42,7 @@ APPRENTICE_JOURNEYMAN_ALCHEMY = {
 		r(3170),	-- Weak Troll's Blood Elixir / Weak Troll's Blood Potion
 	}),
 	filter(REAGENTS, {
-		r(7836), 	-- Blackmouth Oil
+		r(7836),	-- Blackmouth Oil
 		r(7837),	-- Fire Oil
 	}),
 };

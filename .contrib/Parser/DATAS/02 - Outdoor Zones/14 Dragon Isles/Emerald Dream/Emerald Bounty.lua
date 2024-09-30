@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }
 					crit(62037, {	-- Dreamer's Daisy (n: 208615)
 						["coord"] = { 46.4, 40.5, EMERALD_DREAM },
 					}),
-					crit(62189, {	-- 	Flourishing Scurfpea (n: 210725)
+					crit(62189, {	-- Flourishing Scurfpea (n: 210725)
 						["coord"] = { 48.7, 80.5, EMERALD_DREAM },
 					}),
 					crit(62032, {	-- Fuzzy Licorice (n: 208605)

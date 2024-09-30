@@ -97,7 +97,7 @@ i(141015);	-- Scroll of Town Portal: Kal'delar
 i(141013);	-- Scroll of Town Portal: Shala'nir
 i(119449);	-- Shadowberry
 i(141655);	-- Shimmering Ancient Mana Cluster
-i(114846); 	-- Sigil of Death Grip
+i(114846);	-- Sigil of Death Grip
 i(118905);	-- Sinister Spores
 i(169856);	-- Spark-1351
 i(168271);	-- Stolen Ramkahen Banner

@@ -2769,7 +2769,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/5 Talonbranch Wisp captured
 							["provider"] = { "i", 63698 },	-- Darla's Wisp Magnet
-							["cr"] = 48454, 	-- Talonbranch Wisp
+							["cr"] = 48454,	-- Talonbranch Wisp
 						}),
 					},
 				}),
@@ -2781,7 +2781,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/5 Talonbranch Wisp captured
 							["provider"] = { "i", 64300 },	-- Swiftwind Switch
-							["cr"] = 48454, 	-- Talonbranch Wisp
+							["cr"] = 48454,	-- Talonbranch Wisp
 						}),
 					},
 				}),

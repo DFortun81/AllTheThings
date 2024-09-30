@@ -90,14 +90,14 @@ root(ROOTS.Secrets, n(SECRETS_OF_AZEROTH_HEADER, bubbleDownSelf({ ["timeline"] =
 			}),
 			ach(18645, {	-- Tools of the Trade
 				i(208149),	-- Brown Tweed Cap
-				crit(60754, {	-- 	Tricked-Out Thinking Cap
-					["provider"] = { "i", 206696 },	-- 	Tricked-Out Thinking Cap
+				crit(60754, {	-- Tricked-Out Thinking Cap
+					["provider"] = { "i", 206696 },	-- Tricked-Out Thinking Cap
 				}),
-				crit(60755, {	-- 	Torch of Pyrreth
-					["provider"] = { "i", 208092 },	-- 	Torch of Pyrreth
+				crit(60755, {	-- Torch of Pyrreth
+					["provider"] = { "i", 208092 },	-- Torch of Pyrreth
 				}),
-				crit(60756, {	-- 	Idol of Ohn'ara
-					["provider"] = { "i", 207730 },	-- 	Idol of Ohn'ara
+				crit(60756, {	-- Idol of Ohn'ara
+					["provider"] = { "i", 207730 },	-- Idol of Ohn'ara
 				}),
 			}),
 			ach(18646, {	-- Whodunnit?

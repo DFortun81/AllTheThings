@@ -29,8 +29,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				}),
 				q(78837, {	-- Pomp and Dire Circumstance
 					["sourceQuests"] = {
-						78557,	-- 	-- Getting Off Track
-						78555,	-- 	-- Underground and Overhelmed
+						78557,	-- Getting Off Track
+						78555,	-- Underground and Overhelmed
 					},
 					["provider"] = { "n", 212592 },	-- Speaker Brinthe
 					["coord"] = { 42.1, 28.3, THE_RINGING_DEEPS },
@@ -401,7 +401,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(80407, {	-- Glintwick the Gem Grabber
 					["sourceQuests"] = {
 						80406,	-- Seeking Ausgazur's Gems
-						80405, 	-- Too Much Drip
+						80405,	-- Too Much Drip
 					},
 					["provider"] = { "n", 220784 },	-- Batzvara
 					["coord"] = { 44.1, 40.2, THE_RINGING_DEEPS },

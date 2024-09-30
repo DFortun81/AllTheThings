@@ -3530,7 +3530,7 @@ root(ROOTS.Professions, prof(INSCRIPTION, bubbleDownSelf({ ["requireSkill"] = IN
 			crit(60914, {	-- Swarm of Origami Beetles released in Eastern Plaguelands
 				["provider"] = { "i", 63246 },	-- Origami Beetle
 			}),
-			crit(60917, {	-- 	Swarm of Origami Slimes released in Felwood
+			crit(60917, {	-- Swarm of Origami Slimes released in Felwood
 				["provider"] = { "i", 62239 },	-- Origami Slime
 			}),
 			crit(60918, {	-- Swarm of Origami Slimes released in Maldraxxus

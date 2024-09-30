@@ -79,7 +79,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}),
 					i(224545, {	-- Plowhead
 						["crs"] = {
-							206067, 	-- Dark-Crazed Harvester
+							206067,		-- Dark-Crazed Harvester
 							214389,		-- Kobyss Harvester
 						},
 					}),

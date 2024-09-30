@@ -27,7 +27,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 						{ 64.2, 58.8, THE_MAW },
 					},
 				}),
-				pet(3119, { 	-- Lost Limb (PET!)
+				pet(3119, {		-- Lost Limb (PET!)
 					["coords"] = {
 						{ 39.2, 28.8, THE_MAW },
 						{ 28.8, 33.6, THE_MAW },

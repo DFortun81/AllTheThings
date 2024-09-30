@@ -384,24 +384,24 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
 		n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 			ach(18838, {	-- Fourth War Herbalism Techniques
-				crit(61510, {	-- 	Akunda's Bite
+				crit(61510, {	-- Akunda's Bite
 					["sourceQuests"] = { 51404 },	-- What Happens Next
 				}),
-				crit(61514, {	-- 	Anchor Weed
+				crit(61514, {	-- Anchor Weed
 					["sourceQuests"] = {
 						51361,	-- More Anchor Pods [A]
 						51481,	-- More Anchor Pods [H]
 					},
 					["sourceQuestNumRequired"] = 1,
 				}),
-				crit(61508, {	-- 	Riverbud
+				crit(61508, {	-- Riverbud
 					["sourceQuests"] = {
 						48754,	-- Breaking the Food Chain [A]
 						51243,	-- Breaking the Food Chain [H]
 					},
 					["sourceQuestNumRequired"] = 1,
 				}),
-				crit(61513, {	-- 	Sea Stalk
+				crit(61513, {	-- Sea Stalk
 					["sourceQuests"] = {
 						48769,	-- Gathering Mementos [A]
 						51503,	-- Gathering Mementos [H]
@@ -421,7 +421,7 @@ root(ROOTS.Professions, prof(HERBALISM, bubbleDownSelf({ ["requireSkill"] = HERB
 					},
 					["sourceQuestNumRequired"] = 1,
 				}),
-				crit(61511, {	-- 	Winter's Kiss
+				crit(61511, {	-- Winter's Kiss
 					["sourceQuests"] = { 48763 },	-- The Frigid Boon
 				}),
 				crit(61515, {	-- Zin'anthid

@@ -776,21 +776,21 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					["groups"] = {
 						ach(5765),	-- Here, Kitty Kitty...
 						i(68824),	-- Swift Zulian Panther (MOUNT!)
-						i(69610), 	-- Arlokk's Signet
-						i(69612), 	-- Claw-Fringe Mantle
-						i(69613), 	-- Leggings of the Pride
-						i(69614), 	-- Roaring Mask of Bethekk
-						i(69611), 	-- Sash of Anguish
+						i(69610),	-- Arlokk's Signet
+						i(69612),	-- Claw-Fringe Mantle
+						i(69613),	-- Leggings of the Pride
+						i(69614),	-- Roaring Mask of Bethekk
+						i(69611),	-- Sash of Anguish
 					},
 				}),
 				e(184, {	-- Zanzil
 					["crs"] = { 52053 },	-- Zanzil
 					["groups"] = {
-						i(69619), 	-- Bone Plate Handguards
-						i(69617), 	-- Plumed Medicine Helm
-						i(69616), 	-- Spiritbinder Spaulders
-						i(69615), 	-- Zombie Walker Legguards
-						i(69618), 	-- Zulian Slicer
+						i(69619),	-- Bone Plate Handguards
+						i(69617),	-- Plumed Medicine Helm
+						i(69616),	-- Spiritbinder Spaulders
+						i(69615),	-- Zombie Walker Legguards
+						i(69618),	-- Zulian Slicer
 					},
 				}),
 				e(185, {	-- Jin'do the Godbreaker
@@ -799,16 +799,16 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 						ach(5768),	-- Heroic: Zul'Gurub
 						ach(5770),	-- Heroic: Zul'Gurub Guild Run
 						ach(5759),	-- Spirit Twister
-						i(69628), 	-- Jeklik's Smasher
-						i(69626), 	-- Jin'do's Verdict
-						i(69624), 	-- Legacy of Arlokk
-						i(69625), 	-- Mandokir's Tribute
-						i(69629), 	-- Shield of the Blood God
-						i(69622), 	-- The Hexxer's Mask
+						i(69628),	-- Jeklik's Smasher
+						i(69626),	-- Jin'do's Verdict
+						i(69624),	-- Legacy of Arlokk
+						i(69625),	-- Mandokir's Tribute
+						i(69629),	-- Shield of the Blood God
+						i(69622),	-- The Hexxer's Mask
 						i(69620),	-- Twinblade of the Hakkari
-						i(69621), 	-- Twinblade of the Hakkari
-						i(69623), 	-- Vestments of the Soulflayer
-						i(69627), 	-- Zulian Ward
+						i(69621),	-- Twinblade of the Hakkari
+						i(69623),	-- Vestments of the Soulflayer
+						i(69627),	-- Zulian Ward
 						h(i(122215, {	-- Music Roll: Zul'Gurub Voodoo
 							["timeline"] = { ADDED_6_1_0 },
 						})),

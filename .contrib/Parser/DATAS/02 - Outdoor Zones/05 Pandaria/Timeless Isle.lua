@@ -120,7 +120,7 @@ root(ROOTS.Zones, {
 					ach(8715),	-- Emperor Shaohao
 					ach(8726),	-- Extreme Treasure Hunter
 					ach(8725, {	-- Eyes On The Ground
-						crit(24011, { 	-- Giant Clam
+						crit(24011, {	-- Giant Clam
 							["provider"] = {"o",223193},
 							["coords"] = {
 								{ 16.8, 62.4, TIMELESS_ISLE },
