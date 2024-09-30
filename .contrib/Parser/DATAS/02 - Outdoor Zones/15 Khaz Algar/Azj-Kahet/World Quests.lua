@@ -126,6 +126,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					q(82414, {	-- Special Assignment: A Pound of Cure
 						["coord"] = { 63.9, 17.3, AZJ_KAHET },
 					}),
+					q(82159, {	-- Special Assignment: A Pound of Cure
+						--["coord"] = { x, y, AZJ_KAHET },
+					}),
 					q(82161),	-- Special Assignment: Bombs from Behind [Trigger]
 					q(82531, {	-- Special Assignment: Bombs from Behind
 						-- ["coord"] = { XX, YY, AZJ_KAHET }

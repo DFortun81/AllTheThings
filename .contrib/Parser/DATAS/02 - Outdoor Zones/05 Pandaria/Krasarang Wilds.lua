@@ -160,7 +160,7 @@ root(ROOTS.Zones, {
 								q(32352, {	-- A Gathering Storm
 									["sourceQuests"] = { 32351 },	-- Echoes of Thunder
 									["provider"] = { "n", 68287 },	-- Baine Bloodhoof
-									["coord"] = { 68.9, 45.8, 392 },
+									["coord"] = { 68.3, 44.9, 392 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32413, {	-- A Return to Krasarang
@@ -170,6 +170,7 @@ root(ROOTS.Zones, {
 									["timeline"] = { ADDED_5_1_0 },
 									["maps"] = { 501, 502 },	-- Dalaran (Scenario)
 									["isBreadcrumb"] = true,
+									["coord"] = { 50.4, 48.4, 502 },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32406, {	-- A Tactical Assault
@@ -295,7 +296,7 @@ root(ROOTS.Zones, {
 								q(32251, {	-- Dagger in the Dark
 									["sourceQuests"] = { 32108 },	-- Domination Point
 									["provider"] = { "n", 67939 },	-- General Nazgrim
-									["coord"] = { 9.30, 51.2, KRASARANG_WILDS },
+									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 									["maps"] = { 488, 489 },	-- Dagger in the Dark
 								}),
@@ -324,7 +325,7 @@ root(ROOTS.Zones, {
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, HONORED+10750 },
 									["sourceQuests"] = { 32384 },	-- Trapping the Leader
 									["provider"] = { "n", 67939 },	-- General Nazgrim
-									["coord"] = { 9.29, 51.2, KRASARANG_WILDS },
+									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32168, {	-- End of an Elder
@@ -358,7 +359,7 @@ root(ROOTS.Zones, {
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, REVERED+2700 },
 									["sourceQuests"] = { 32352 },	-- A Gathering Storm
 									["provider"] = { "n", 67939 },	-- General Nazgrim
-									["coord"] = { 9.30, 51.1, KRASARANG_WILDS },
+									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32130, {	-- Good Luck, Have Fun
@@ -385,7 +386,7 @@ root(ROOTS.Zones, {
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, REVERED+14540 },	-- possibly 14530
 									["sourceQuests"] = { 32392 },	-- The Divine Bell
 									["provider"] = { "n", 67939 },	-- General Nazgrim
-									["coord"] = { 9.3, 51.1, KRASARANG_WILDS },
+									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32344, {	-- It Is A Mystery
@@ -495,7 +496,7 @@ root(ROOTS.Zones, {
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, FRIENDLY+950 },
 									["sourceQuests"] = { 32108 },	-- Domination Point
 									["provider"] = { "n", 67939 },	-- General Nazgrim
-									["coord"] = { 9.3, 51.1, KRASARANG_WILDS },
+									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32137, {	-- Runnin' On Empty
@@ -540,7 +541,7 @@ root(ROOTS.Zones, {
 										32413,	-- A Return to Krasarang
 									},
 									["provider"] = { "n", 67939 },	-- General Nazgrim
-									["coord"] = { 9.30, 51.2, KRASARANG_WILDS },
+									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32327, {	-- The Darnassus Mission
@@ -580,7 +581,7 @@ root(ROOTS.Zones, {
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, REVERED+6650 },
 									["sourceQuests"] = { 32330 },	-- What's in the Box?
 									["provider"] = { "n", 67939 },	-- General Nazgrim
-									["coord"] = { 9.30, 51.2, KRASARANG_WILDS },
+									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32250, {	-- The Might of the Warchief
@@ -596,7 +597,7 @@ root(ROOTS.Zones, {
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, REVERED+10515 },	-- possibly up to 10755?  it didn't show up for me until turning in a quest that took me from 10455 to 11145
 									["sourceQuests"] = { 32368 },	-- Memory Wine
 									["provider"] = { "n", 67939 },	-- General Nazgrim
-									["coord"] = { 9.30, 51.2, KRASARANG_WILDS },
+									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32449, {	-- The Ruins of Ogudei
@@ -635,7 +636,7 @@ root(ROOTS.Zones, {
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, REVERED+18500 },
 									["sourceQuests"] = { 32328 },	-- Victorious Return
 									["provider"] = { "n", 67939 },	-- General Nazgrim
-									["coord"] = { 9.30, 51.2, KRASARANG_WILDS },
+									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32342, {	-- The Spirit Trap

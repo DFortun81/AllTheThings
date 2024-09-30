@@ -2698,6 +2698,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(83111),	-- 10/40 Everburning Forge
 			q(83112),	-- 20/40 Everburning Forge
 			q(83131),	-- 30/40 Everburning Forge
+			q(83132),	-- 40/40 Everburning Forge
 		}),
 		prof(FISHING, {
 			q(82767),	-- Extra HQT for Bloody Perch
@@ -2716,6 +2717,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		}),
 		prof(SKINNING, {
 			q(81440),	-- Refine Hides+++ (Triggered when learned via specialization)
+			q(81441),	-- 40/40 Tanning
 		}),
 		n(PROFESSIONS, {	-- double header on purpose - Darkal
 			-- Using Contracts
