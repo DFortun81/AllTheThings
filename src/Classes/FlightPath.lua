@@ -27,6 +27,12 @@ app.CreateFlightPath = app.CreateClass(CLASSNAME, KEY, {
 		end
 		return app.asset("fp_neutral")
 	end,
+	trackable = app.ReturnTrue,
+	saved = function(t)
+		local id = t[KEY]
+		-- character collected
+		if app.IsCached(CACHE, id) then return 1 end
+	end,
 	collectible = function(t) return app.Settings.Collectibles[CACHE] end,
 	collected = function(t)
 		local id = t[KEY]
@@ -105,11 +111,14 @@ app.AddEventRegistration("TAXIMAP_OPENED", function()
 			-- app.PrintDebug("FP",nodeID,nodeData.name,nodeData.state)
 			local fp = app.SearchForObject(KEY, nodeID, "key")
 			if nodeData.state and nodeData.state < 2 then
-				if not app.IsCached(CACHE, nodeID) then
+				-- Retail FPs are account-wide (mostly) so don't play a noise for literally every time any alt touches a FP
+				if fp.collectible and not fp.collected then
 					app.SetCollected(fp, CACHE, nodeID, true)
 					-- TODO: remove once SetCollected handles UpdateRawID
 					if not newFPs then newFPs = { nodeID }
 					else newFPs[#newFPs + 1] = nodeID end
+				else
+					app.SetCached(CACHE, nodeID, 1)
 				end
 			end
 			if app.Contributor and (not fp or not app.Modules.Filter.Filters.InGame(fp)) then
