@@ -32,6 +32,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(82285, {	-- Worldsoul Memory: A Wounded Soul
 					["coord"] = { 65.2, 56.1, AZJ_KAHET },
+					["repeatable"] = true,
 					["g"] = {
 						n(222670),	-- Azerite Manifistation
 						n(222658, {	-- Dregblood and Soulboil (Dregbile)
@@ -45,6 +46,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(82321, {	-- Worldsoul Memory: Ancient Explorers
 					["coord"] = { 55.6, 77.7, ISLE_OF_DORN },
+					["repeatable"] = true,
 					["g"] = {
 						n(222733),	-- Stormlord Kao'dor
 						n(222723),	-- Conqueror Or'sosh
@@ -55,6 +57,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(82207, {	-- Worldsoul Memory: Descendants of Distant Waters
 					["coord"] = { 46.8, 23.4, HALLOWFALL },
+					["repeatable"] = true,
 					["g"] = {
 						n(222637),	-- Ankoan Champion Utaari
 						n(222655),	-- Gurl The Feaster
@@ -66,6 +69,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(82263, {	-- Worldsoul Memory: Elemental Fury
 					["coord"] = { 43.6, 10.7, THE_RINGING_DEEPS },
+					["repeatable"] = true,
 					["g"] = {
 						n(222756),	-- Deepwalker Cavelord
 						n(222743),	-- Oremex Flamebreaker
@@ -75,6 +79,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(82286, {	-- Worldsoul Memory: Old Gods Forsaken
 					["coord"] = { 21.1, 45.5, NERUBAR },
+					["repeatable"] = true,
 					["g"] = {
 						n(222654),	-- Spiz'na the Traitor
 						n(222616),	-- The Rebellious Queen
@@ -86,6 +91,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(82260, {	-- Worldsoul Memory: Primal Predators
 					["coord"] = { 59.5, 69.8, THE_RINGING_DEEPS },
+					["repeatable"] = true,
 					["g"] = {
 						n(222682),	-- Clawmother Tengi
 						n(222720),	-- Kiji the Stomper
@@ -97,6 +103,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(82164, {	-- Worldsoul Memory: Reign of The Old Gods
 					["coord"] = { 60.7, 67.5, HALLOWFALL },
+					["repeatable"] = true,
 					["g"] = {
 						n(222605),	-- Aqu'yinra
 						n(222611),	-- Bor'zal the Lurking
@@ -109,6 +116,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(81985, {	-- Worldsoul Memory: The Worldcarvers
 					["coord"] = { 51.2, 29.2, ISLE_OF_DORN },
+					["repeatable"] = true,
 					["g"] = {
 						n(221970),	-- First Blade Grimskarn
 						n(221972),	-- Talinhet

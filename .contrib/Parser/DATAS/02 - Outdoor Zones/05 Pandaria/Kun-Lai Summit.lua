@@ -29,6 +29,7 @@ root(ROOTS.Zones, {
 						n(QUESTS, {
 							q(31834, {	-- Begin Your Training: Master Cheng
 								["sourceQuest"] = 31856,	-- The Peak of Serenity - Begin Your Training
+								["coord"] = { 48.6, 42.7, KUN_LAI_SUMMIT },
 								["g"] = {
 									i(89551),	-- Aspirant's Staff of Harmony
 									i(89553),	-- Aspirant's Staff of Grace

@@ -1961,6 +1961,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(84737, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 2nd
 		q(84738, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 3rd
 		q(84739, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 4th
+		-- Restored Coffer Key (from vendor, weekly?, account wide - locked for other characters after you buy them once)
+		q(85743),	-- itemID 232496 (Restored Coffer Key)
+		q(85746),	-- itemID 232497 (Restored Coffer Key)
+		q(85747),	-- itemID 232498 (Restored Coffer Key)
 		-- Seasonal Rewards
 		q(83235),	-- Airship: Wings 05 - Lantern Wing (spellID 454473)
 		q(83236),	-- Airship: Top 03 - Zeppelin (spellID 454476)

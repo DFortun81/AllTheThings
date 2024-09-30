@@ -392,8 +392,14 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				}),
 				q(58016, {	-- Spores Galore
 					["sourceQuests"] = { 59130 },	-- The House of Plagues
-					["provider"] = { "n", 168381 },	-- Baroness Draka
-					["coord"] = { 50.3, 67.7, MALDRAXXUS },
+					["providers"] = {
+						{ "n", 168381 },	-- Baroness Draka
+						{ "n", 159930 },	-- Plague Deviser Marileth
+					},
+					["coords"] = {
+						{ 50.3, 67.7, MALDRAXXUS },
+						{ 56.5, 57.3, MALDRAXXUS },
+					},
 				}),
 				q(58027, {	-- Slime, Anyone?
 					["sourceQuests"] = {

@@ -14,7 +14,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 211752 },	-- Alleria Windrunner
-					["coord"] = { 32.0, 47.1, AZJ_KAHET },
+					["coord"] = { 29.3, 42.6, AZJ_KAHET },
 					["g"] = {
 						o(411104, {	-- Well-Bleached Bones
 							i(211775),	-- Bleached Bones (QI!)
@@ -34,7 +34,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 					["sourceQuestNumRequired"] = 1,
 					["provider"] = { "n", 211699 },	-- Faerin
-					["coord"] = { 32.1, 46.6, AZJ_KAHET },
+					["coord"] = { 29.4, 42.2, AZJ_KAHET },
 					["g"] = {
 						i(225524),	-- Rescued Aeroknight's Gloves
 						i(225530),	-- Rescued Aeroknight's Helmet
@@ -1077,8 +1077,8 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coords"] = {
 					{ 31.6, 63.2, DORNOGAL },
 					{ 57, 41.7, AZJ_KAHET },
+					{ 39.4, 65.4, NERUBAR },
 				},
-				["isBreadcrumb"] = true,
 			}),
 			q(82124, {	-- The Beginning of the End
 				["sourceQuests"] = { 83587 },	-- Our Chance to Strike

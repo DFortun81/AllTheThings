@@ -558,6 +558,7 @@ iq(227427, 81391);					-- Exceptional Miner's Notes
 iq(227419, 80750);					-- Exceptional Scribe's Runic Drawings
 iq(227428, 84233);					-- Exceptional Skinner's Notes
 iq(227421, 80872);					-- Exceptional Tailor's Diagrams
+iq(228945, 84691);					-- Executor's Severed Thread
 iq(227409, 81146);					-- Faded Alchemist's Research
 iq(227407, 84226);					-- Faded Blacksmith's Diagrams
 iq(227411, 81076);					-- Faded Enchanter's Research

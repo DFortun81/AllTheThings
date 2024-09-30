@@ -189,7 +189,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 				q(60429, {	-- Troubles at Home
 				--	["provider"] = { "n",  },	--
-				--	["coord"] = { , MALDRAXXUS },
+					["coord"] = { 59.7, 43.7, SEAT_OF_THE_PRIMUS },
 					["g"] = {
 						i(181733),	-- Tribute of the Duty-Bound
 					},
