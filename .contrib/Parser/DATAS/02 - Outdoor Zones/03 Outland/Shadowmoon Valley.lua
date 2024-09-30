@@ -423,10 +423,18 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							i(31380),	-- Acrobat's Mark of the Sha'tar
 							i(31381),	-- Aggressor's Mark of the Sha'tar
-							i(31404),	-- Green Trophy Tabard of the Illidari
 							i(31382),	-- Mage's Mark of the Sha'tar
-							i(31405),	-- Purple Trophy Tabard of the Illidari
 							i(31383),	-- Spiritualist's Mark of the Sha'tar
+							-- #if AFTER 7.0.3
+							-- CRIEVE NOTE: With 7.0.3 the offering container is no longer a reward, you get the tabards directly.
+							i(31404),	-- Green Trophy Tabard of the Illidari
+							i(31405),	-- Purple Trophy Tabard of the Illidari
+							-- #else
+							i(31408, {	-- Offering of the Sha'tar
+								i(31404),	-- Green Trophy Tabard of the Illidari
+								i(31405),	-- Purple Trophy Tabard of the Illidari
+							}),
+							-- #endif
 						},
 					}),
 					q(10562, {	-- Besieged! (A)
