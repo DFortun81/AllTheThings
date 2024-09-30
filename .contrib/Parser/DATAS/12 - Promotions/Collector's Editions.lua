@@ -857,6 +857,15 @@ root(ROOTS.HiddenQuestTriggers, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = B
 			q(81991),	-- triggered when completing "The Stormrider's Bond" (81993)
 			q(81992),	-- triggered when completing "A Sacred Connection" (81994)
 			q(84824),	-- triggered when accepting "The Stormrider's Bond" (81993)
+
+		--TWW Collector's Edition Armor
+		--q(81991),	-- Ensemble: Champion Stormrider's Attire
+		--q(81991),	-- Ensemble: Deep Stormrider's Attire
+		--q(78843),	-- Ensemble: Endurance of Temple Telhamat
+		--q(81992),	-- Ensemble: Frenzied Stormrider's Attire
+		--q(81991),	-- Ensemble: Shining Stormrider's Attire
+		--q(81992),	-- Ensemble: Shocking Stormrider's Attire
+		--q(81992),	-- Ensemble: Sparking Stormrider's Attire
 		}),
 	})),
 })))

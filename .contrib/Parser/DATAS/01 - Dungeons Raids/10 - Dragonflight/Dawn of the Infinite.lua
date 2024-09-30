@@ -1079,7 +1079,7 @@ root(ROOTS.Instances, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDE
 							i(208504),	-- Infinite Zealot's Sash
 							i(208499),	-- Infinite Zealot's Slippers
 							i(208498),	-- Infinite Zealot's Wrap
-						}),
+						}), --TODO: iensenble returns much fewer items, only 13 instead of 36
 					})),
 				}),
 				n(COMMON_BOSS_DROPS, {

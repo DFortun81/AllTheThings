@@ -822,7 +822,7 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					iensemble(215283, { -- Ensemble: Dawnwatcher's Scale Armor (Purple)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
-					iensemble(215284, { -- Ensemble: Dawnwatcher's Scale Armor (Blue)
+					iensemble(215284, { -- Ensemble: Dawnwatcher's Scale Armor (Red)
 						["cost"] = {{"c", BRONZE, 750}},
 					}),
 					iensemble(215306, { -- Ensemble: Jade Guardian's Regalia (Blue)
@@ -1032,15 +1032,12 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					},
 					["timeline"] = { "removed 10.2.7.55142" },
 				}),
-				i(227550, {	-- Tusks of Mannoroth
+				iensemble(227550, {	-- Tusks of Mannoroth
 					["cost"] = {
 						{ "c", BRONZE, 38500 },
 						{ "i", BONES_OF_MANNOROTH, 20 }
 					},
 					["timeline"] = { "added 10.2.7.55142" },
-					["g"] = {
-						i(224459),	-- Tusks of Mannoroth
-					},
 				}),
 				-- Classes
 				clWithoutLock(DEATHKNIGHT, {

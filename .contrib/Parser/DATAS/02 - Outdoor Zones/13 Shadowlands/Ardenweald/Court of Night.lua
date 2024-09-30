@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			n(VENDORS, {
 				n(162447, {	-- Spindlenose <Court of Night Quartermaster>
 					["coord"] = { 59.6, 52.9, ARDENWEALD },
-					["g"] = bubbleDownClassicRep(FACTION_COURT_OF_NIGHT, {
+					["g"] = bubbleDownRep(FACTION_COURT_OF_NIGHT, {
 						{		-- Neutral
 							i(184665, {	-- Chronicle of Lost Memories
 								["sym"] = {
@@ -115,87 +115,33 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 							})),
 						}, {	-- Exalted
 							n(NIGHT_FAE, sharedData({["customCollect"] = "SL_COV_NFA" }, {
-								i(184116, {	-- Ensemble: Winterborn Guise
+								iensemble(184116, {	-- Ensemble: Winterborn Guise
 									["cost"] = {
 										{ "c", ANIMA, 25000 },
 										{ "c", GRATEFUL, 5 },
 									},
-									["classes"] = { HUNTER, SHAMAN },
-									["g"] = {
-										i(181917),	-- Winterborn Armbands
-										i(181918),	-- Winterborn Buckle
-										i(181923),	-- Winterborn Footguards
-										i(181922),	-- Winterborn Gloves
-										i(181878, {	-- Winterborn Greatcloak
-											["description"] = "This cloak is awarded from the Ensemble: Winterborn Guise Set if purchased by a Mail Character.",
-										}),
-										i(181921),	-- Winterborn Guise
-										i(181924),	-- Winterborn Hauberk
-										i(181920),	-- Winterborn Legguards
-										i(181977),	-- Winterborn Raiment
-										i(181919),	-- Winterborn Spaulders
-									},
+									["classes"] = MAIL_CLASSES,
 								}),
-								i(184115, {	-- Ensemble: Winterborn Raiment
+								iensemble(184115, {	-- Ensemble: Winterborn Raiment
 									["cost"] = {
 										{ "c", ANIMA, 25000 },
 										{ "c", GRATEFUL, 5 },
 									},
-									["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
-									["g"] = {
-										i(179783),	-- Winterborn Anklewraps
-										i(179786),	-- Winterborn Armguards
-										i(179801),	-- Winterborn Belt
-										i(179804),	-- Winterborn Bracers
-										i(179792),	-- Winterborn Britches
-										i(179780, {	-- Winterborn Cape
-											["description"] = "This cloak is awarded from the Ensemble: Winterborn Raiment Set if purchased by a Leather Character.",
-										}),
-										i(179777),	-- Winterborn Chestguard
-										i(179789),	-- Winterborn Crest
-										i(179798),	-- Winterborn Mantle
-										i(179795),	-- Winterborn Vestment
-									},
+									["classes"] = LEATHER_CLASSES,
 								}),
-								i(184114, {	-- Ensemble: Winterborn Regalia
+								iensemble(184114, {	-- Ensemble: Winterborn Regalia
 									["cost"] = {
 										{ "c", ANIMA, 25000 },
 										{ "c", GRATEFUL, 5 },
 									},
-									["classes"] = { PRIEST, MAGE, WARLOCK },
-									["g"] = {
-										i(179676),	-- Winterborn Amice
-										i(179670),	-- Winterborn Cowl
-										i(179682),	-- Winterborn Cuffs
-										i(179626, {	-- Winterborn Drape
-											["description"] = "This cloak is awarded from the Ensemble: Winterborn Regalia Set if purchased by a Cloth Character.",
-										}),
-										i(179667),	-- Winterborn Handwraps
-										i(179673),	-- Winterborn Leggings
-										i(179656),	-- Winterborn Robes
-										i(179663),	-- Winterborn Sandals
-										i(179679),	-- Winterborn Sash
-									},
+									["classes"] = CLOTH_CLASSES,
 								}),
-								i(184117, {	-- Ensemble: Winterborn Warbark
+								iensemble(184117, {	-- Ensemble: Winterborn Warbark
 									["cost"] = {
 										{ "c", ANIMA, 25000 },
 										{ "c", GRATEFUL, 5 },
 									},
-									["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
-									["g"] = {
-										i(179918),	-- Winterborn Chestplate
-										i(179635, {	-- Winterborn Cloak
-											["description"] = "This cloak is awarded from the Ensemble: Winterborn Warbark Set if purchased by a Plate Character.",
-										}),
-										i(179916),	-- Winterborn Gauntlets
-										i(179912),	-- Winterborn Girdle
-										i(179915),	-- Winterborn Greathelm
-										i(179914),	-- Winterborn Greaves
-										i(179913),	-- Winterborn Pauldrons
-										i(179917),	-- Winterborn Sabatons
-										i(179911),	-- Winterborn Vambraces
-									},
+									["classes"] = PLATE_CLASSES,
 								}),
 							})),
 						},

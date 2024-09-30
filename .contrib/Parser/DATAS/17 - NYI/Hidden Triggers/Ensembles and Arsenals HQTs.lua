@@ -445,6 +445,8 @@ q(45237),	-- Ensemble: Funerary Plate of the Chosen Dead [LFR]
 q(77336),	-- Armaments of the Light Avenger
 q(65568),	-- Arsenal: Blades of Elune
 q(82247),	-- Arsenal: Blazing Felfire Armaments
+q(82319),	-- Arsenal: Fireborn Blades
+q(82318),	-- Arsenal: Seaborn Blades
 q(79314),	-- Arsenal: Skyborn Blades
 q(81997),	-- Arsenal: Stormrider's Bronze Stormhammers
 q(81996),	-- Arsenal: Stormrider's Dark Stormhammers
@@ -533,17 +535,265 @@ q(77703),	-- Savage Champion’s Trophies
 q(77748),	-- Scales of the Silver Hoarder
 q(77506),	-- Silk of the Unnamed Cult
 q(78217),	-- Sky-Captain's Formal Attire
-q(77700),	-- SWebbed Saronite Exoskeleton
+q(77700),	-- Webbed Saronite Exoskeleton
 
+------ MoP Remix Arsenals ------
+
+q(80475),	-- Arsenal: Webbed Soulforged Weaponry
+q(80467),	-- Arsenal: Aldrachi Blasphemer's Glaives
+q(80465),	-- Arsenal: Ela'lothen's Blessings of Rebirth
+q(80479),	-- Arsenal: Treasure of the Gold Hoarder
+q(80481),	-- Arsenal: Dreadsquall Hunter's Preference
+q(80477),	-- Arsenal: Sin'dorei Magister's Enchantment
+q(80469),	-- Arsenal: Shado-Pan Watcher Arsenal
+q(80459),	-- Arsenal: Armaments of the Holy Avenger
+q(80460),	-- Arsenal: Secrets of the Abyssal Cult
+q(80461),	-- Arsenal: Igneous Onyx Blades
+q(80483),	-- Arsenal: Tools of Krag'wa's Disciple
+q(80471),	-- Arsenal: Instruments of Temptation's Call
+q(80473),	-- Arsenal: Fanatical Champion's Aggression
+
+------ MoP Remix Ensembles ------
+q(79867),	-- Ensemble: Plate of the Lost Catacomb (LFR)
+q(79868),	-- Ensemble: Plate of the Lost Catacomb (N)
+q(79869),	-- Ensemble: Plate of the Lost Catacomb (H)
+q(79871),	-- Ensemble: Battleplate of the All-Consuming Maw (LFR)
+q(79872),	-- Ensemble: Battleplate of the All-Consuming Maw (N)
+q(79870),	-- Ensemble: Battleplate of the All-Consuming Maw (H)
+q(79874),	-- Ensemble: Battleplate of Cyclopean Dread (LFR)
+q(79873),	-- Ensemble: Battleplate of Cyclopean Dread (N)
+q(79875),	-- Ensemble: Battleplate of Cyclopean Dread (M)
+
+q(79789),	-- Ensemble: Vestments of the Eternal Blossom (LFR)
+q(79791),	-- Ensemble: Vestments of the Eternal Blossom (N)
+q(79790),	-- Ensemble: Vestments of the Eternal Blossom (H)
+q(79793),	-- Ensemble: Vestments of the Haunted Forest (LFR)
+q(79794),	-- Ensemble: Vestments of the Haunted Forest (N)
+q(79792),	-- Ensemble: Vestments of the Haunted Forest (H)
+q(79795),	-- Ensemble: Vestments of the Shattered Vale (LFR)
+q(79797),	-- Ensemble: Vestments of the Shattered Vale (N)
+q(79796),	-- Ensemble: Vestments of the Shattered Vale (M)
+
+q(79836),	-- Ensemble: Yaungol Slayer Battlegear (LFR)
+q(79835),	-- Ensemble: Yaungol Slayer Battlegear (N)
+q(79837),	-- Ensemble: Yaungol Slayer Battlegear (H)
+q(79840),	-- Ensemble: Battlegear of the Saurok Stalker (LFR)
+q(79839),	-- Ensemble: Battlegear of the Saurok Stalker (N)
+q(79838),	-- Ensemble: Battlegear of the Saurok Stalker (H)
+q(79842),	-- Ensemble: Battlegear of the Unblinking Vigil (LFR)
+q(79841),	-- Ensemble: Battlegear of the Unblinking Vigil (N)
+q(79843),	-- Ensemble: Battlegear of the Unblinking Vigil (M)
+
+q(79742),	-- Ensemble: Regalia of the Burning Scroll (LFR)
+q(79744),	-- Ensemble: Regalia of the Burning Scroll (N)
+q(79743),	-- Ensemble: Regalia of the Burning Scroll (H)
+q(79746),	-- Ensemble: Regalia of the Chromatic Hydra (LFR)
+q(79747),	-- Ensemble: Regalia of the Chromatic Hydra (N)
+q(79745),	-- Ensemble: Regalia of the Chromatic Hydra (H)
+q(79749),	-- Ensemble: Chronomancer Regalia (LFR)
+q(79750),	-- Ensemble: Chronomancer Regalia (N)
+q(79748),	-- Ensemble: Chronomancer Regalia (M)
+
+q(79800),	-- Ensemble: Vestments of the Red Crane (LFR)
+q(79799),	-- Ensemble: Vestments of the Red Crane (N)
+q(79798),	-- Ensemble: Vestments of the Red Crane (H)
+q(79803),	-- Ensemble: Fire-Charm Vestments (LFR)
+q(79801),	-- Ensemble: Fire-Charm Vestments (N)
+q(79802),	-- Ensemble: Fire-Charm Vestments (H)
+q(79804),	-- Ensemble: Vestments of the Seven Sacred Seals (LFR)
+q(79805),	-- Ensemble: Vestments of the Seven Sacred Seals (N)
+q(79806),	-- Ensemble: Vestments of the Seven Sacred Seals (M)
+
+q(79877),	-- Ensemble: White Tiger Battlegear (LFR)
+q(79876),	-- Ensemble: White Tiger Battlegear (N)
+q(79878),	-- Ensemble: White Tiger Battlegear (H)
+q(79881),	-- Ensemble: Battlegear of the Lightning Emperor (LFR)
+q(79879),	-- Ensemble: Battlegear of the Lightning Emperor (N)
+q(79880),	-- Ensemble: Battlegear of the Lightning Emperor (H)
+q(79882),	-- Ensemble: Vestments of Winged Triumph (LFR)
+q(79884),	-- Ensemble: Vestments of Winged Triumph (N)
+q(79883),	-- Ensemble: Vestments of Winged Triumph (M)
+
+q(79752),	-- Ensemble: Guardian Serpent Regalia (LFR)
+q(79751),	-- Ensemble: Guardian Serpent Regalia (N)
+q(79753),	-- Ensemble: Guardian Serpent Regalia (H)
+q(79754),	-- Ensemble: Regalia of the Exorcist (LFR)
+q(79755),	-- Ensemble: Regalia of the Exorcist (N)
+q(79756),	-- Ensemble: Regalia of the Exorcist (H)
+q(79757),	-- Ensemble: Regalia of Ternion Glory (LFR)
+q(79759),	-- Ensemble: Regalia of Ternion Glory (N)
+q(79758),	-- Ensemble: Regalia of Ternion Glory (M)
+
+q(79808),	-- Ensemble: Battlegear of the Thousandfold Blades (LFR)
+q(79807),	-- Ensemble: Battlegear of the Thousandfold Blades (N)
+q(79809),	-- Ensemble: Battlegear of the Thousandfold Blades (H)
+q(79811),	-- Ensemble: Nine-Tail Battlegear (LFR)
+q(79810),	-- Ensemble: Nine-Tail Battlegear (N)
+q(79812),	-- Ensemble: Nine-Tail Battlegear (H)
+q(79814),	-- Ensemble: Barbed Assassin Battlegear (LFR)
+q(79813),	-- Ensemble: Barbed Assassin Battlegear (N)
+q(79815),	-- Ensemble: Barbed Assassin Battlegear (M)
+
+q(79845),	-- Ensemble: Regalia of the Firebird (LFR)
+q(79844),	-- Ensemble: Regalia of the Firebird (N)
+q(79846),	-- Ensemble: Regalia of the Firebird (H)
+q(79849),	-- Ensemble: Regalia of the Witch Doctor (LFR)
+q(79847),	-- Ensemble: Regalia of the Witch Doctor (N)
+q(79848),	-- Ensemble: Regalia of the Witch Doctor (H)
+q(79851),	-- Ensemble: Regalia of Celestial Harmony (LFR)
+q(79850),	-- Ensemble: Regalia of Celestial Harmony (N)
+q(79852),	-- Ensemble: Regalia of Celestial Harmony (M)
+
+q(79761),	-- Ensemble: Sha Skin Regalia (LFR)
+q(79762),	-- Ensemble: Sha Skin Regalia (N)
+q(79760),	-- Ensemble: Sha Skin Regalia (H)
+q(79763),	-- Ensemble: Regalia of the Thousandfold Hells (LFR)
+q(79765),	-- Ensemble: Regalia of the Thousandfold Hells (N)
+q(79764),	-- Ensemble: Regalia of the Thousandfold Hells (H)
+q(79767),	-- Ensemble: Regalia of the Horned Nightmare (LFR)
+q(79768),	-- Ensemble: Regalia of the Horned Nightmare (N)
+q(79766),	-- Ensemble: Regalia of the Horned Nightmare (M)
+
+q(79885),	-- Ensemble: Battleplate of Resounding Rings (LFR)
+q(79886),	-- Ensemble: Battleplate of Resounding Rings (N)
+q(79887),	-- Ensemble: Battleplate of Resounding Rings (H)
+q(79732),	-- Ensemble: Battleplate of Resounding Rings (Alt)
+q(79889),	-- Ensemble: Battleplate of the Last Mogu (LFR)
+q(79890),	-- Ensemble: Battleplate of the Last Mogu (N)
+q(79888),	-- Ensemble: Battleplate of the Last Mogu (H)
+q(79892),	-- Ensemble: Battleplate of the Prehistoric Marauder (LFR)
+q(79893),	-- Ensemble: Battleplate of the Prehistoric Marauder (N)
+q(79891),	-- Ensemble: Battleplate of the Prehistoric Marauder (M)
+
+q(80474),	-- Ensemble: Webbed Soulforged Exoskeleton
+q(80466),	-- Ensemble: Aldrachi Blasphemer's Flames
+q(80464),	-- Ensemble: Ela'lothen's Vestment of Rebirth
+q(80478),	-- Ensemble: Scales of the Gold Hoarder
+q(80480),	-- Ensemble: Dreadsquall Hunter's Camouflage
+q(80476),	-- Ensemble: Sin'dorei Magister's Regalia
+q(80468),	-- Ensemble: Shado-Pan Watcher Guise
+q(80458),	-- Ensemble: Plate of the Holy Avenger
+q(80462),	-- Ensemble: Silks of the Abyssal Cult
+q(80463),	-- Ensemble: Igneous Onyx Uniform
+q(80482),	-- Ensemble: Imminence of Krag'wa's Disciple
+q(80470),	-- Ensemble: Jewels of Temptation's Call
+q(80472),	-- Ensemble: Fanatical Champion's Trophies
+
+q(79733),	-- Ensemble: Breezebinder's Vestments (Original)
+q(79734),	-- Ensemble: Breezebinder's Vestments (Purple)
+q(79735),	-- Ensemble: Breezebinder's Vestments (Red)
+q(79774),	-- Ensemble: Mogubreaker Battlegear (Black)
+q(79775),	-- Ensemble: Mogubreaker Battlegear (Original)
+q(79776),	-- Ensemble: Mogubreaker Battlegear (Red)
+q(79777),	-- Ensemble: Mogubreaker Battlegear (Yellow)
+q(79819),	-- Ensemble: Mogu Lord's Regalia (Black)
+q(79820),	-- Ensemble: Mogu Lord's Regalia (Gold)
+q(79821),	-- Ensemble: Mogu Lord's Regalia (Jade)
+q(79857),	-- Ensemble: Swarmbreaker's Battleplate (Dark)
+q(79858),	-- Ensemble: Swarmbreaker's Battleplate (Light)
+q(79859),	-- Ensemble: Swarmbreaker's Battleplate (Original)
+q(79772),	-- Ensemble: Guise of the Shado-Pan (Dark)
+q(79773),	-- Ensemble: Guise of the Shado-Pan (Original)
+q(79822),	-- Ensemble: Kor'kron Shaman Vestments (Cool)
+q(79823),	-- Ensemble: Kor'kron Shaman Vestments (Warm)
+q(79824),	-- Ensemble: Kor'kron Shaman Vestments (Yellow)
+q(79898),	-- Ensemble: Robes of Quiet Reflection (Brown)
+q(79899),	-- Ensemble: Robes of Quiet Reflection (Green)
+q(79900),	-- Ensemble: Robes of Quiet Reflection (Red)
+q(79901),	-- Ensemble: Robes of Quiet Reflection (Yellow)
+q(79786),	-- Ensemble: Tian Monastery Clothing (Blue)
+q(79787),	-- Ensemble: Tian Monastery Clothing (Red)
+q(79788),	-- Ensemble: Tian Monastery Clothing (White)
+q(79832),	-- Ensemble: Sun Pearl Clothing (Green)
+q(79833),	-- Ensemble: Sun Pearl Clothing (Red)
+q(79834),	-- Ensemble: Sun Pearl Clothing (Yellow)
+q(79902),	-- Ensemble: Vestments of Serenity (Blue)
+q(79903),	-- Ensemble: Vestments of Serenity (Green)
+q(79904),	-- Ensemble: Vestments of Serenity (White)
+
+q(79736),	-- Ensemble: Spirit-Waker's Vestments (Blue)
+q(79737),	-- Ensemble: Spirit-Waker's Vestments (Green)
+q(79738),	-- Ensemble: Spirit-Waker's Vestments (Red)
+q(79739),	-- Ensemble: Mistwalker's Vestments (Blue)
+q(79740),	-- Ensemble: Mistwalker's Vestments (Original)
+q(79741),	-- Ensemble: Mistwalker's Vestments (White)
+q(79769),	-- Ensemble: Vestments of the Eternal Dynasty (Black)
+q(79770),	-- Ensemble: Vestments of the Eternal Dynasty (Blue)
+q(79771),	-- Ensemble: Vestments of the Eternal Dynasty (Yellow)
+
+q(79778),	-- Ensemble: Thunderpaw Battlegear (Dark)
+q(79779),	-- Ensemble: Thunderpaw Battlegear (light)
+q(79780),	-- Ensemble: Thunderpaw Battlegear (Original)
+q(79781),	-- Ensemble: Thunderpaw Battlegear (Red)
+q(79782),	-- Ensemble: Mistveil Leathers (Black)
+q(79783),	-- Ensemble: Mistveil Leathers (Brown)
+q(79784),	-- Ensemble: Mistveil Leathers (Crimson)
+q(79785),	-- Ensemble: Mistveil Leathers (Indigo)
+q(79816),	-- Ensemble: Snowdrift Battlegear (Blue)
+q(79817),	-- Ensemble: Snowdrift Battlegear (Brown)
+q(79818),	-- Ensemble: Snowdrift Battlegear (Red)
+
+q(79829),	-- Ensemble: Dawnwatcher's Scale Armor (Blue)
+q(79830),	-- Ensemble: Dawnwatcher's Scale Armor (Purple)
+q(79831),	-- Ensemble: Dawnwatcher's Scale Armor (Red)
+q(79853),	-- Ensemble: Jade Guardian's Regalia (Blue)
+q(79854),	-- Ensemble: Jade Guardian's Regalia (Brown)
+q(79855),	-- Ensemble: Jade Guardian's Regalia (Red)
+q(79856),	-- Ensemble: Jade Guardian's Regalia (yellow)
+q(79825),	-- Ensemble: Trailseeker's Laminar Armor (Black)
+q(79826),	-- Ensemble: Trailseeker's Laminar Armor (Gold)
+q(79827),	-- Ensemble: Trailseeker's Laminar Armor (Green)
+q(79828),	-- Ensemble: Trailseeker's Laminar Armor (White)
+
+q(79894),	-- Ensemble: Gatecrasher's Battleplate (Black)
+q(79895),	-- Ensemble: Gatecrasher's Battleplate (Blue)
+q(79896),	-- Ensemble: Gatecrasher's Battleplate (Green)
+q(79897),	-- Ensemble: Gatecrasher's Battleplate (Red)
+q(79863),	-- Ensemble: Shan'ze Warplate (Green)
+q(79864),	-- Ensemble: Shan'ze Warplate (Purple)
+q(79865),	-- Ensemble: Shan'ze Warplate (Red)
+q(79866),	-- Ensemble: Shan'ze Warplate (Yellow)
+q(79860),	-- Ensemble: Spiritguard's Warplate (Blue)
+q(79861),	-- Ensemble: Spiritguard's Warplate (Gold)
+q(79862),	-- Ensemble: Spiritguard's Warplate (Silver)
+
+q(84258),	-- Tusks of Mannoroth (itemID 227550)
 ------ Reputation Rewards ------
+
+--- Warlords of Draenor
 
 -- Frostwolf Orcs & Hand of the Prophet
 q(50678),	-- Ensemble: Battlegear of the Frostwolves
 q(50680),	-- Ensemble: Ceremonial Karabor Finery
 
------- Quest Rewards ------
+--- Shadowlands
 
--- Dragonflight
+-- Court of Night
+q(61913),	-- Ensemble: Winterborn Guise
+q(61914),	-- Ensemble: Winterborn Raiment
+q(61915),	-- Ensemble: Winterborn Regalia
+q(61912),	-- Ensemble: Winterborn Warbark
+
+-- Death's Advance
+q(63599),	-- Ensemble: Battlefield Messenger's Regalia
+q(63626),	-- Ensemble: Frontline Necromancer's Vestments
+q(63597),	-- Ensemble: Garb of Fall's Promise
+q(63631),	-- Ensemble: Renathal's Battlefield Attire
+q(63635),	-- Ensemble: Renathal's Field Inquisitor's Vestments
+
+------ Misc Rewards ------
+
+--- Dragonflight
+
+-- Time Rifts
+q(76583),	-- Ensemble: Decorous Garments
+q(76585),	-- Ensemble: Hauberk of Discipline
+q(76584),	-- Ensemble: Lifegiver's Garms
+q(76581),	-- Ensemble: Rift-Mender's Vestments
+q(76582),	-- Ensemble: Valhalas Ceremonial Armor
 q(78086),	-- Ensemble: Raiment of Amirdrassi
+
+--- The War Within
+q(82261),	-- Ensemble: Cerulean Dredger
 
 --]]

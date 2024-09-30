@@ -457,86 +457,32 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 							i(186480, {	-- Battle-Hardened Aquilon (MOUNT!)
 								["cost"] = { { "c", STYGIA, 1000 } },
 							}),
-							i(186517, {	-- Ensemble: Battlefield Messenger's Regalia
+							iensemble(186517, {	-- Ensemble: Battlefield Messenger's Regalia
 								["cost"] = { { "c", STYGIA, 6000 } },
-								["g"] = {
-									i(184982),	-- Battlefield Messenger's Drape
-									i(184977),	-- Battlefield Messenger's Handwraps
-									i(184978),	-- Battlefield Messenger's Hood
-									i(184979),	-- Battlefield Messenger's Leggings
-									i(185010),	-- Battlefield Messenger's Robes
-									i(184980),	-- Battlefield Messenger's Sash
-									i(184976),	-- Battlefield Messenger's Slippers
-									i(184975),	-- Battlefield Messenger's Vestments
-									i(184981),	-- Battlefield Messenger's Wraps
-								},
 							}),
 						})),
 						n(NECROLORD, sharedData({["customCollect"] = { "SL_COV_NEC" }},{
 							i(186490, {	-- Battlefield Swarmer Harness (MOUNT!)
 								["cost"] = { { "c", STYGIA, 1000 } },
 							}),
-							i(186504, {	-- Ensemble: Frontline Necromancer's Vestments
+							iensemble(186504, {	-- Ensemble: Frontline Necromancer's Vestments
 								["cost"] = { { "c", STYGIA, 6000 } },
-								["g"] = {
-									i(185046),	-- Frontline Necromancer's Drape
-									i(185040),	-- Frontline Necromancer's Handwraps
-									i(185041),	-- Frontline Necromancer's Hood
-									i(185042),	-- Frontline Necromancer's Leggings
-									i(185043),	-- Frontline Necromancer's Mantle
-									i(185044),	-- Frontline Necromancer's Sash
-									i(185039),	-- Frontline Necromancer's Slippers
-									i(185038),	-- Frontline Necromancer's Vestments
-									i(185045),	-- Frontline Necromancer's Wraps
-								},
 							}),
 						})),
 						n(NIGHT_FAE, sharedData({["customCollect"] = { "SL_COV_NFA" }},{
-							i(186499, {	-- Ensemble: Garb of Fall's Promise
+							iensemble(186499, {	-- Ensemble: Garb of Fall's Promise
 								["cost"] = { { "c", STYGIA, 6000 } },
-								["g"] = {
-									i(184965),	-- Drape of Fall's Promise
-									i(184959),	-- Handwraps of Fall's Promise
-									i(184960),	-- Hood of Fall's Promise
-									i(184961),	-- Leggings of Fall's Promise
-									i(184962),	-- Mantle of Fall's Promise
-									i(184963),	-- Sash of Fall's Promise
-									i(184958),	-- Slippers of Fall's Promise
-									i(184957),	-- Vestments of Fall's Promise
-									i(184964),	-- Wraps of Fall's Promise
-								},
 							}),
 							i(186495, {	-- Winter Wilderling (MOUNT!)
 								["cost"] = { { "c", STYGIA, 1000 } },
 							}),
 						})),
 						n(VENTHYR, sharedData({["customCollect"] = { "SL_COV_VEN" }},{
-							i(186511, {	-- Ensemble: Renathal's Battlefield Attire
+							iensemble(186511, {	-- Ensemble: Renathal's Battlefield Attire
 								["cost"] = { { "c", STYGIA, 6000 } },
-								["g"] = {
-									i(185072),	-- Renathal's Battlefield Drape
-									i(185067),	-- Renathal's Battlefield Handwraps
-									i(185068),	-- Renathal's Battlefield Hood
-									i(185069),	-- Renathal's Battlefield Leggings
-									i(185070),	-- Renathal's Battlefield Sash
-									i(185066),	-- Renathal's Battlefield Slippers
-									i(185065),	-- Renathal's Battlefield Vestments
-									i(185071),	-- Renathal's Battlefield Wraps
-								},
 							}),
-							i(186512, {	-- Ensemble: Renathal's Field Inquisitor's Vestments
+							iensemble(186512, {	-- Ensemble: Renathal's Field Inquisitor's Vestments
 								["cost"] = { { "c", STYGIA, 6000 } },
-								["g"] = {
-									i(185098),	-- Renathal's Field Inquisitor's Cloak
-									i(185104),	-- Renathal's Field Inquisitor's Handwraps
-									i(185103),	-- Renathal's Field Inquisitor's Hood
-									i(185102),	-- Renathal's Field Inquisitor's Leggings
-									i(185101),	-- Renathal's Field Inquisitor's Mantle
-									i(185106),	-- Renathal's Field Inquisitor's Robes
-									i(185100),	-- Renathal's Field Inquisitor's Sash
-									i(185105),	-- Renathal's Field Inquisitor's Slippers
-									i(185099),	-- Renathal's Field Inquisitor's Wraps
-								},
 							}),
 							i(186477, {	-- Pale Gravewing (MOUNT!)
 								["cost"] = { { "c", STYGIA, 1000 } },
@@ -551,11 +497,3 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_1_0 } }, 
 		}),
 	}),
 })));
-
-root(ROOTS.HiddenQuestTriggers, {
-	q(63599),	-- learning Ensemble: Battlefield Messenger's Regalia
-	q(63626),	-- learning Ensemble: Frontline Necromancer's Vestments
-	q(63597),	-- learning Ensemble: Garb of Fall's Promise
-	q(63631),	-- learning Ensemble: Renathal's Battlefield Attire
-	q(63635),	-- learning Ensemble: Renathal's Field Inquisitor's Vestments
-});

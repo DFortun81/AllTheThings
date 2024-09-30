@@ -1320,10 +1320,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	q(61910),	-- Ensemble: Conservator's Raiment
 	q(61911),	-- Ensemble: Conservator's Regalia
 	q(63595),	-- Ensemble: Garb of the Azure Dusk
-	q(61912),	-- Ensemble: Winterborn Warbark
-	q(61913),	-- Ensemble: Winterborn Guise
-	q(61914),	-- Ensemble: Winterborn Raiment
-	q(61915),	-- Ensemble: Winterborn Regalia
 	q(61901),	-- unlocking Faewoven Regalia/Oakheart Raiment sets (TransmogSetID 2047/2051, Faewoven/Oakheart items)
 	q(61907),	-- unlocking Night Courtier's Regalia set (TransmogSetID 2048, Night Courtier's cloth items)
 	q(61906),	-- unlocking Night Courtier's Raiment set (TransmogSetID 2054, Night Courtier's leather items)

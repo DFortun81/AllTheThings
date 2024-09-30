@@ -268,14 +268,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 								["coord"] = { 51.0, 57.0, THALDRASZUS },
 								["minReputation"] = { FACTION_SORIDORMI, 3 },
 								["g"] = {
-									i(207020, {	-- Ensemble: Rift-Mender's Vestments
-										--["questID"] = 76581,
-										["g"] = {
-											i(207017),	-- Rift-Mender's Cape
-											i(207018),	-- Rift-Mender's Spaulders
-											i(207016),	-- Rift-Mender's Tabard
-										},
-									}),
+									iensemble(207020),	-- Ensemble: Rift-Mender's Vestments
 								},
 							}),
 							q(77249, {	-- One of Us
@@ -715,71 +708,21 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							i(208012, {	-- Briarhorn Hatchling (PET!)
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2750 }},
 							}),
-							i(207049, {	-- Ensemble: Decorous Garments
-							--	["questID"] = 76583,
+							iensemble(207049, {	-- Ensemble: Decorous Garments
 								["classes"] = CLOTH_CLASSES,
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2500 }},
-								["g"] = {
-									i(206891),	-- Decorous Guise
-									i(206890),	-- Decorous Handwraps
-									i(206893),	-- Decorous Mantle
-									i(206896),	-- Decorous Robe
-									i(206894),	-- Decorous Sash
-									i(206888),	-- Decorous Shawl
-									i(206889),	-- Decorous Slippers
-									i(206892),	-- Decorous Trousers
-									i(206895),	-- Decorous Wraps
-								},
 							}),
-							i(207048, {	-- Ensemble: Lifegiver's Garms
-							--	["questID"] = 76584,
+							iensemble(207048, {	-- Ensemble: Lifegiver's Garms
 								["classes"] = LEATHER_CLASSES,
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2500 }},
-								["g"] = {
-									i(206905),	-- Lifegiver's Bindings
-									i(206897),	-- Lifegiver's Drape
-									i(206904),	-- Lifegiver's Girdle
-									i(206899),	-- Lifegiver's Grips
-									i(206906),	-- Lifegiver's Jerkin
-									i(206901),	-- Lifegiver's Legwraps
-									i(206902),	-- Lifegiver's Robe
-									i(206898),	-- Lifegiver's Sollerets
-									i(206903),	-- Lifegiver's Spaulders
-									i(206900),	-- Lifegiver's Vision
-								},
 							}),
-							i(207047, {	-- Ensemble: Hauberk of Discipline
-							--	["questID"] = 76585,
+							iensemble(207047, {	-- Ensemble: Hauberk of Discipline
 								["classes"] = MAIL_CLASSES,
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2500 }},
-								["g"] = {
-									i(206916),	-- Chain Vest of Discipline
-									i(206912),	-- Chausses of Discipline
-									i(206914),	-- Cinch of Discipline
-									i(206907),	-- Cloak of Discipline
-									i(206915),	-- Cuffs of Discipline
-									i(206910),	-- Gloves of Discipline
-									i(206911),	-- Horns of Discipline
-									i(206908),	-- Robe of Discipline
-									i(206913),	-- Shoulderguards of Discipline
-									i(206909),	-- Stompers of Discipline
-								},
 							}),
-							i(207046, {	-- Ensemble: Valhalas Ceremonial Armor
-							--	["questID"] = 76582,
+							iensemble(207046, {	-- Ensemble: Valhalas Ceremonial Armor
 								["classes"] = PLATE_CLASSES,
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 2500 }},
-								["g"] = {
-									i(206924),	-- Valhalas Bracelets
-									i(206917),	-- Valhalas Cape
-									i(206925),	-- Valhalas Chestguard
-									i(206921),	-- Valhalas Greaves
-									i(206919),	-- Valhalas Handguards
-									i(206920),	-- Valhalas Helm
-									i(206922),	-- Valhalas Pauldrons
-									i(206918),	-- Valhalas Sabatons
-									i(206923),	-- Valhalas Waistguard
-								},
 							}),
 							i(206794, {	-- Hand of Order
 								["cost"] = {{ "c", PARACAUSAL_FLAKES, 1000 }},
@@ -1125,13 +1068,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 
 				q(77836),	-- 1st weekly rift (itemID 207030 as reward)
 				q(76986),	-- some kind of unlock for time rift on alts (start popup on login after participate in time rift event at least once on account)
-
-
-				q(76582),	-- Ensemble: Valhalas Ceremonial Armor
-				q(76585),	-- Ensemble: Hauberk of Discipline
-				q(76584),	-- Ensemble: Lifegiver's Garms
-				q(76583),	-- Ensemble: Decorous Garments
-				q(76581),	-- Ensemble: Rift-Mender's Vestments
 
 				q(76695),	-- after buying/loot 'Blighted Greatbow' (itemID 206784) (spellID 418958)
 				q(76691),	-- after buying/loot 'Bonegale Greataxe' (itemID 206783) (spellID 418957)

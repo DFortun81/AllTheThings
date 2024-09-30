@@ -412,11 +412,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 										{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
 										{ "i", ORANGE_HAKKARI_BIJOU, 6 },
 									},
-									["_groups"] = {
-										i(19840),	-- Zandalar Haruspexs Bracers
-										i(19839),	-- Zandalar Haruspexs Belt
-										i(19838),	-- Zandalar Haruspexs Tunic
-									},
 								}),
 							}),
 							cl(HUNTER, {
@@ -424,11 +419,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 									["cost"] = {
 										{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
 										{ "i", GREEN_HAKKARI_BIJOU, 6 },
-									},
-									["_groups"] = {
-										i(19832),	-- Zandalar Predator Belt
-										i(19833),	-- Zandalar Predator Bracer
-										i(19831),	-- Zandalar Predator Mantle
 									},
 								}),
 							}),
@@ -438,11 +428,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 										{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
 										{ "i", RED_HAKKARI_BIJOU, 6 },
 									},
-									["_groups"] = {
-										i(19845),	-- Zandalar Illusionist Mantle
-										i(20034),	-- Zandalar Illusionist Robe
-										i(19846),	-- Zandalar Illusionist Wraps
-									},
 								}),
 							}),
 							cl(PALADIN, {
@@ -450,11 +435,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 									["cost"] = {
 										{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
 										{ "i", GOLD_HAKKARI_BIJOU, 6 },
-									},
-									["_groups"] = {
-										i(19827),	-- Zandalar Freethinker Armguards
-										i(19826),	-- Zandalar Freethinker Belt
-										i(19825),	-- Zandalar Freethinker Breastplate
 									},
 								}),
 							}),
@@ -464,11 +444,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 										{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
 										{ "i", SILVER_HAKKARI_BIJOU, 6 },
 									},
-									["_groups"] = {
-										i(19842),	-- Zandalar Confessor Binding
-										i(19841),	-- Zandalar Confessor Mantle
-										i(19843),	-- Zandalar Confessor Wraps
-									},
 								}),
 							}),
 							cl(ROGUE, {
@@ -476,11 +451,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 									["cost"] = {
 										{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
 										{ "i", YELLOW_HAKKARI_BIJOU, 6 },
-									},
-									["_groups"] = {
-										i(19835),	-- Zandalar Madcap Mantle
-										i(19834),	-- Zandalar Madcap Tunic
-										i(19836),	-- Zandalar Madcap Wraps
 									},
 								}),
 							}),
@@ -490,11 +460,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 										{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
 										{ "i", BLUE_HAKKARI_BIJOU, 6 },
 									},
-									["_groups"] = {
-										i(19829),	-- Zandalar Augur Belt
-										i(19830),	-- Zandalar Augur Bracers
-										i(19828),	-- Zandalar Augur Hauberk
-									},
 								}),
 							}),
 							cl(WARLOCK, {
@@ -502,11 +467,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 									["cost"] = {
 										{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
 										{ "i", PURPLE_HAKKARI_BIJOU, 6 },
-									},
-									["_groups"] = {
-										i(19849),	-- Zandalar Demoniac Mantle
-										i(20033),	-- Zandalar Demoniac Robe
-										i(19848),	-- Zandalar Demoniac Wraps
 									},
 								}),
 							}),
@@ -516,11 +476,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 										{ "i", ZANDALAR_BARGAINING_TOKEN, 4 },
 										{ "i", BRONZE_HAKKARI_BIJOU, 6 },
 									},
-									["_groups"] = {
-										i(19824),	-- Zandalar Vindicator Armguards
-										i(19823),	-- Zandalar Vindicator Belt
-										i(19822),	-- Zandalar Vindicator Breastplate
-									},
 								}),
 							}),
 							iensemble(203983, {	-- Ensemble: Bloodtinged Cloth
@@ -528,23 +483,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
 									{ "i", BLUE_HAKKARI_BIJOU, 4 },
 								},
-								["_groups"] = {
-									i(19929),	-- Bloodtinged Gloves
-									i(203970),	-- Bloodtinged Hat
-									i(19895),	-- Bloodtinged Kilt
-									i(203971),	-- Bloodtinged Shoulders
-								},
 							}),
 							iensemble(203984, {	-- Ensemble: Blooddrenched Leather
 								["cost"] = {
 									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
 									{ "i", YELLOW_HAKKARI_BIJOU, 4 },
-								},
-								["_groups"] = {
-									i(19906),	-- Blooddrenched Footpads
-									i(19869),	-- Blooddrenched Grips
-									i(19889),	-- Blooddrenched Leggings
-									i(22718),	-- Blooddrenched Mask
 								},
 							}),
 							iensemble(203985, {	-- Ensemble: Bloodstained Mail
@@ -552,23 +495,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
 									{ "i", GREEN_HAKKARI_BIJOU, 4 },
 								},
-								["_groups"] = {
-									i(19875),	-- Bloodstained Coif
-									i(19919),	-- Bloodstained Greaves
-									i(19887),	-- Bloodstained Legplates
-									i(19904),	-- Runed Bloodstained Hauberk
-								},
 							}),
 							iensemble(203986, {	-- Ensemble: Bloodsoaked Plate
 								["cost"] = {
 									{ "i", ZANDALAR_BARGAINING_TOKEN, 6 },
 									{ "i", RED_HAKKARI_BIJOU, 4 },
-								},
-								["_groups"] = {
-									i(19894),	-- Bloodsoaked Gauntlets
-									i(19913),	-- Bloodsoaked Greaves
-									i(19855),	-- Bloodsoaked Legplates
-									i(19878),	-- Bloodsoaked Pauldrons
 								},
 							}),
 							i(20757, {	-- Formula: Brilliant Mana Oil (RECIPE!)
