@@ -519,9 +519,9 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				}),
 				n(121589, {	-- Thaumaturge Vashreen <Purveyor of Exquisite Furnishings>
 					["coords"] = {
-						{ 67.6, 55.8, THE_VINDICAAR_KROKUUN_UPPER },
-						{ 66.2, 57.8, THE_VINDICAAR_EREDATH_UPPER },
-						{ 56.6, 30.2, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
+						{ 46.4, 71.8, THE_VINDICAAR_KROKUUN_UPPER },
+						{ 46.1, 65.9, THE_VINDICAAR_EREDATH_UPPER },
+						{ 61.6, 59.1, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
 					},
 					["g"] = sharedData({ ["cost"] = { { "c", VEILED_ARGUNITE, 650 } } }, {
 						i(153211, {	-- Relinquished Hood
