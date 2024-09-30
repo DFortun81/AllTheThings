@@ -102,7 +102,15 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						["description"] = "Found in the southeastern area of Desolace. It only spawns during the night between 6:30pm to 6:30am PST(US)/CEST(EU)/AEST(OCE).",
 						-- #endif
 					}),
-					pet(480),	-- Topaz Shale Hatchling (PET!)
+					pet(480, {	-- Topaz Shale Hatchling (PET!)
+						["description"] = "The biggest concentration can be found in Desolace, the orange section of open world Maraudon. Can also be found in Deepholm around Therazane's Throne, beneath Silvermarsh, as well as inside Fungal Deep.",
+						["coord"] = {
+							{ 26.8, 43.5, DESOLACE }, -- Maraudon entrance
+							{ 69.4, 68.2, DEEPHOLM }, -- Cavern beneath Silvermarsh
+							{ 68.65, 28.5, DEEPHOLM }, -- Fungal Deep cavern entrance
+							{ 57.0, 13.2, DEEPHOLM }, -- Therazane's Throne
+						},
+					}),
 				},
 			}),
 			explorationHeader({
