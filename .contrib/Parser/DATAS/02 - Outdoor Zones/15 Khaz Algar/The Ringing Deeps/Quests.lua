@@ -1116,12 +1116,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 64.9, 41.5, THE_RINGING_DEEPS },
 				}),
 			}),
-			header(HEADERS.Item, 221765, {	-- Stonevault Mechsuit
-				q(84020, {	-- A Mech in Need
-					["provider"] = { "i", 226683 },	-- Malfunctioning Mechsuit
-				}),
-				i(221765),	-- Stonevault Mechsuit (MOUNT!)
-			}),
 			-- Area where Janky quest leads (New Home, New Candle)
 			q(82952, {	-- An Opportunity to Relax
 				--["sourceQuests"] = { x },	-- ?

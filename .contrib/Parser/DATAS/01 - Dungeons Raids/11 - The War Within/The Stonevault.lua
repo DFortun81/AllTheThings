@@ -79,7 +79,15 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 					["crs"] = { 213119 },	-- High Speaker Eirich
 					["g"] = {
 						ach(40648),	-- Mythic: The Stonevault
-						i(226683),	-- Malfunctioning Mechsuit (QS!)
+						i(226683, {	-- Malfunctioning Mechsuit (QS!)
+							q(84020, {	-- A Mech in Need
+								["provider"] = { "i", 226683 },	-- Malfunctioning Mechsuit
+								["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
+								["groups"] = {
+									i(221765),	-- Stonevault Mechsuit (MOUNT!)
+								},
+							}),
+						}),
 					},
 				}),
 			}),
