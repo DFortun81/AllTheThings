@@ -212,7 +212,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81132, 433087);	-- Formulated Courage
 			--FirstCraft(QuestID, 430345);	-- Meticulous Experimentation
 			FirstCraft(81090, 430315);	-- Thaumaturgy
-			--FirstCraft(QuestID, 427174);	-- Wild Experimentation
+			FirstCraft(78604, 427174);	-- Wild Experimentation
 			-- Reagents
 			FirstCraft(84492, 462121);	-- Bubbling Mycobloom Culture
 			FirstCraft(81129, 432204);	-- Harmonious Horticulture

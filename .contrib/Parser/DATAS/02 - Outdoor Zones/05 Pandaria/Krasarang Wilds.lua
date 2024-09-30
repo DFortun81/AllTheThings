@@ -558,7 +558,10 @@ root(ROOTS.Zones, {
 								q(32320, {	-- The Horde Is Family
 									["sourceQuests"] = { 32319 },	-- Find Thrall!
 									["provider"] = { "n", 68025 },	-- Thrall
-									["coord"] = { 38.4, 46.6, VALLEY_OF_TRIALS },
+									["coords"] = {
+										{ 38.4, 46.6, ECHO_ISLES },
+										{ 44.6, 66.9, VALLEY_OF_TRIALS },
+									},
 									["races"] = HORDE_ONLY,
 									["groups"] = {
 										i(92510),	-- Vol'jin's Hearthstone (QI!)
@@ -662,7 +665,7 @@ root(ROOTS.Zones, {
 									["minReputation"] = { FACTION_DOMINANCE_OFFENSIVE, HONORED+2850 },
 									["sourceQuests"] = { 32372 },	-- De-Subjugation
 									["provider"] = { "n", 67939 },	-- General Nazgrim
-									["coord"] = { 9.30, 51.2, KRASARANG_WILDS },
+									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32376, {	-- To the Valley!
@@ -673,7 +676,7 @@ root(ROOTS.Zones, {
 										32244,	-- The Korune
 									},
 									["provider"] = { "n", 67939 },	-- General Nazgrim
-									["coord"] = { 9.29, 51.2, KRASARANG_WILDS },
+									["coord"] = { 10.4, 53.7, KRASARANG_WILDS },
 									["races"] = HORDE_ONLY,
 								}),
 								q(32384, {	-- Trapping the Leader
