@@ -53,9 +53,14 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(221269),	-- Crimson Valorstone
 				},
 			}),
-			------ Alts ------
+		}),
+		------ Alts ------
+		n(QUESTS, sharedData({
+			["lockCriteria"] = { 1, "questID", 79197 },	-- Surface Bound (final quest of pre-lvl 80 Campaign / Acct story unlock)
+		},{
 			q(84367, {	-- A Time to Come Together
 				--["sourceQuests"] = {  },	-- Auto-accepted after reaching 80 on an alt who has not done the leveling campaign?
+				-- breadcrumb to the lvl 80 campaign, test if locked when skipped
 				["provider"] = { "n", 206017 },	-- Brann Bronzebeard
 				["coord"] = { 47.4, 44.4, DORNOGAL },
 			}),
@@ -93,7 +98,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["coord"] = { 48.2, 43.7, DORNOGAL },
 				--["isBreadcrumb"] = true,	-- ?
 			}),
-		}),
+		})),
 		n(QUESTS, sharedData({
 			["isWeekly"] = true,
 		}, {

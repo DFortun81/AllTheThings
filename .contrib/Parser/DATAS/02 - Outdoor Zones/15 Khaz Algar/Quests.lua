@@ -144,6 +144,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_0 } }, 
 					["sourceQuests"] = { 83315 },	-- Preparing for the Unknown (Completed)
 					["provider"] = { "n", 233267 },	-- Magni Bronzebeard
 					["coord"] = { 31.7, 59.3, DORNOGAL },
+					-- TODO needs lockCriteria, who wanna test
 				}),
 				--
 				q(79344, {	-- Urban Odyssey
