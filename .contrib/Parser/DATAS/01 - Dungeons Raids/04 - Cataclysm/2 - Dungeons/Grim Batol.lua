@@ -78,16 +78,27 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 		["groups"] = {
 			n(QUESTS, {
 				q(28854, {	-- Closing A Dark Chapter
-					i(66933),	-- Breastplate of the Witness
-					i(66935),	-- Eradicator's Bracers
-					i(66934),	-- Gloves of Baleflame
+					["provider"] = { "n", 50387 },	-- Baleflame
+					["coord"] = { 50, 50, 293 },	-- Grim Batol
+					["groups"] = {
+						i(66933),	-- Breastplate of the Witness
+						i(66935),	-- Eradicator's Bracers
+						i(66934),	-- Gloves of Baleflame
+					},
 				}),
 				q(28853, {	-- Kill the Courier
-					i(66936),	-- Helm of Secret Knowledge
-					i(66937),	-- Sandals of the Courier
-					i(66938),	-- Tooranu's Spaulders
+					["provider"] = { "n", 50385 },	-- Farseer Tooranu
+					["coord"] = { 50, 50, 293 },	-- Grim Batol
+					["groups"] = {
+						i(66936),	-- Helm of Secret Knowledge
+						i(66937),	-- Sandals of the Courier
+						i(66938),	-- Tooranu's Spaulders
+					},
 				}),
-				q(28852),	-- Soften them Up
+				q(28852, {	-- Soften them Up
+					["provider"] = { "n", 50390 },	-- Velastrasza
+					["coord"] = { 50, 50, 293 },	-- Grim Batol
+				}),
 				q(28803, {	-- Vengeance of the Wildhammer
 					["provider"] = { "o", 207411 },	-- Dwarven Bone Pile
 					["requireSkill"] = ARCHAEOLOGY,

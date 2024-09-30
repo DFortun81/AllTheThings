@@ -803,7 +803,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 			n(QUESTS, {
 				q(83768, {	-- Delver's Call: The Skittering Breach
 					["provider"] = { "o", 455694 },	-- Delver's Call: The Skittering Breach
-					["coord"] = { 67.8, 45.7, HALLOWFALL },
+					["coords"] = {
+						{ 67.8, 45.7, HALLOWFALL },
+						{ 72.6, 54.9, SKITTERING_BREACH },
+					},
 				}),
 			}),
 			n(TREASURES, {
