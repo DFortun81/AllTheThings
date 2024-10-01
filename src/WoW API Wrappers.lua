@@ -11,6 +11,7 @@ app.IsClassic = not app.IsRetail;
 -- These restructuring alters function names, parameters, and adds prefixes, resulting in significant maintenance work for addons across different operational versions.
 -- This file was created to alleviate the burden of API conversion and to provide a stable abstraction layer. Unless there are significant performance impacts, this API will strive to maintain backward compatibility and incorporate the latest Blizzard APIs.
 -- In the event of API changes, it is expected that a transition period of three to six months will be provided to allow developers to transition to the new API.
+-- Unless Blizzard disables a specific API during an update, making it impossible to implement in any way, API changes will not take effect immediately.
 
 local lib = setmetatable({}, {
 	__index = function(t, key)
