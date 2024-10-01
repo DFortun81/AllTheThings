@@ -52,6 +52,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["questID"] = 81756,
 				["g"] = {
 					i(221207),	-- Den Mother's Chestpiece
+					i(221246),	-- Fierce Beast Staff
 				},
 			}),
 			n(221786, {	-- Pride of Beledar

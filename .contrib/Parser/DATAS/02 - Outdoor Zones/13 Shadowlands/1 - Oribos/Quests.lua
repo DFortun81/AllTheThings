@@ -729,7 +729,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60256, {	-- A Valuable Find: Halls of Atonement
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+				["providers"] = {
+					{ "n", 167881 },	-- Ta'lan the Antiquary
+					{ "n", 205782 },	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
+				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
 				["g"] = {
@@ -744,8 +747,8 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(60253, {	-- A Valuable Find: Necrotic Wake
 				["sourceQuests"] = { 60274 },	-- Trading Favors
 				["providers"] = {
-					{ "n", 167881 },	-- Ta'lan the Antiquary (in Oribos)
-					{ "n", 205782 },	-- Ta'lan the Antiquary (in The Necrotic Wake)
+					{ "n", 167881 },	-- Ta'lan the Antiquary
+					{ "n", 205782 },	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
 				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
@@ -755,7 +758,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60251, {	-- A Valuable Find: Plaguefall
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+				["providers"] = {
+					{ "n", 167881 },	-- Ta'lan the Antiquary
+					{ "n", 205782 },	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
+				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
 				["g"] = {
@@ -764,7 +770,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60257, {	-- A Valuable Find: Sanguine Depths
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+				["providers"] = {
+					{ "n", 167881 },	-- Ta'lan the Antiquary
+					{ "n", 205782 },	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
+				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
 				["g"] = {
@@ -773,7 +782,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60252, {	-- A Valuable Find: Spires of Ascension
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+				["providers"] = {
+					{ "n", 167881 },	-- Ta'lan the Antiquary
+					{ "n", 205782 },	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
+				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
 				["g"] = {
@@ -782,7 +794,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60255, {	-- A Valuable Find: The Other Side
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+				["providers"] = {
+					{ "n", 167881 },	-- Ta'lan the Antiquary
+					{ "n", 205782 },	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
+				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
 				["groups"] = {
@@ -791,7 +806,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60250, {	-- A Valuable Find: Theater of Pain
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+				["providers"] = {
+					{ "n", 167881 },	-- Ta'lan the Antiquary
+					{ "n", 205782 },	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
+				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
 				["groups"] = {
@@ -800,7 +818,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60254, {	-- A Valuable Find: Tirna Scithe
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+				["providers"] = {
+					{ "n", 167881 },	-- Ta'lan the Antiquary
+					{ "n", 205782 },	-- Ta'lan the Antiquary (Inside SL dungeons by entrance)
+				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
 				["groups"] = {

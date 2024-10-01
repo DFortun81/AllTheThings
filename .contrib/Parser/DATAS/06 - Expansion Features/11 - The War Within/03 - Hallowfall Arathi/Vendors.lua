@@ -85,9 +85,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(228707, {	-- Trial of Burning Light (TOY!)
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 5000}},
 						}),
-						i(223317, {	-- Vermillion Imperial Lynx (MOUNT!)
-							["cost"] = {{"c", RESONANCE_CRYSTALS, 8125}},
-						}),
 					}, {	-- RENOWN 18 --
 						i(223311, {	-- Armguards of Dimming Fluorescence
 							["cost"] = {{"c", RESONANCE_CRYSTALS, 2600}},
@@ -104,6 +101,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					}, {	-- RENOWN 19 --
 					}, {	-- RENOWN 20 --
 					}, {	-- RENOWN 21 --
+						i(223317, {	-- Vermillion Imperial Lynx (MOUNT!)
+							["cost"] = {{"c", RESONANCE_CRYSTALS, 8125}},
+						}),
 					}, {	-- RENOWN 22 --
 					}, {	-- RENOWN 23 --
 						i(223314, {	-- Shackled Shadow (MOUNT!)

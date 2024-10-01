@@ -435,15 +435,3 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 		}),
 	}),
 })));
-
--- TODO: someone go out to mechagon and test stuff :P
--- root(ROOTS.HiddenQuestTriggers, {
--- 	m(KUL_TIRAS, {
--- 		m(MECHAGON, {
--- 			n(RARES, {
--- 				q(55907),	-- killing scrapclaw on Alliance?
--- 				q(56307),	-- killing scrapclaw on Horde?
--- 			}),
--- 		}),
--- 	}),
--- });

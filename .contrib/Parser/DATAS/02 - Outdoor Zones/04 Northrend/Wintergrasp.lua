@@ -31,47 +31,47 @@ local ARCANUM_ITEMS = pvp({
 })
 local JEWELCRAFTING_RECIPES = pvp({
 	-- #if BEFORE CATA
-	moh(1, sks(12, i(41730))),	-- Design: Durable Monarch Topaz [WRATH] / Design: Willful Monarch Topaz [CATA+]
-	sks(12, i(41732, {	-- Design: Empowered Monarch Topaz [WRATH] / Design: Lucent Monarch Topaz [CATA+]
+	moh(1, sks(12, i(41730))),	-- Design: Durable Monarch Topaz [WRATH] / Design: Willful Monarch Topaz [CATA+] (RECIPE!)
+	sks(12, i(41732, {	-- Design: Empowered Monarch Topaz [WRATH] / Design: Lucent Monarch Topaz [CATA+] (RECIPE!)
 		["timeline"] = { REMOVED_4_0_1 },
 	})),
 	-- #endif
-	moh(1, sks(24, i(41742))),	-- Design: Enigmatic Skyflare Diamond
-	moh(1, sks(24, i(41743))),	-- Design: Forlorn Skyflare Diamond
-	moh(1, sks(24, i(41744))),	-- Design: Impassive Skyflare Diamond
-	moh(1, sks(12, i(41733))),	-- Design: Lucent Monarch Topaz
+	moh(1, sks(24, i(41742))),	-- Design: Enigmatic Skyflare Diamond (RECIPE!)
+	moh(1, sks(24, i(41743))),	-- Design: Forlorn Skyflare Diamond (RECIPE!)
+	moh(1, sks(24, i(41744))),	-- Design: Impassive Skyflare Diamond (RECIPE!)
+	moh(1, sks(12, i(41733))),	-- Design: Lucent Monarch Topaz (RECIPE!)
 	-- #if AFTER CATA
 	sks(12, i(41732, {	-- Design: Lucent Monarch Topaz [CATA+] / Design: Empowered Monarch Topaz [WRATH]
 		["timeline"] = { REMOVED_4_0_1 },
 	})),
 	-- #endif
-	moh(1, sks(12, i(41740))),	-- Design: Mysterious Twilight Opal
-	moh(1, sks(12, i(41727))),	-- Design: Mystic Autumn's Glow
+	moh(1, sks(12, i(41740))),	-- Design: Mysterious Twilight Opal (RECIPE!)
+	moh(1, sks(12, i(41727))),	-- Design: Mystic Autumn's Glow (RECIPE!)
 	-- #if BEFORE CATA
-	sks(12, i(41739, {	-- Design: Opaque Forest Emerald [WRATH] / Design: Turbid Forest Emerald [CATA+]
+	sks(12, i(41739, {	-- Design: Opaque Forest Emerald [WRATH] / Design: Turbid Forest Emerald [CATA+] (RECIPE!)
 		["timeline"] = { REMOVED_4_0_1 },
 	})),
 	-- #endif
 	-- #if AFTER CATA
-	sks(12, i(41736, {	-- Design: Radiant Forest Emerald [CATA+] / Design: Tense Forest Emerald [WRATH]
+	sks(12, i(41736, {	-- Design: Radiant Forest Emerald [CATA+] / Design: Tense Forest Emerald [WRATH] (RECIPE!)
 		["timeline"] = { REMOVED_4_0_1 },
 	})),
 	-- #endif
-	moh(1, sks(12, i(41734))),	-- Design: Resplendent Monarch Topaz
-	moh(1, sks(12, i(41735))),	-- Design: Shattered Forest Emerald
-	moh(1, sks(12, i(41738))),	-- Design: Steady Forest Emerald
-	moh(1, sks(12, i(41728))),	-- Design: Stormy Sky Sapphire
+	moh(1, sks(12, i(41734))),	-- Design: Resplendent Monarch Topaz (RECIPE!)
+	moh(1, sks(12, i(41735))),	-- Design: Shattered Forest Emerald (RECIPE!)
+	moh(1, sks(12, i(41738))),	-- Design: Steady Forest Emerald (RECIPE!)
+	moh(1, sks(12, i(41728))),	-- Design: Stormy Sky Sapphire (RECIPE!)
 	-- #if BEFORE CATA
-	sks(12, i(41736, {	-- Design: Tense Forest Emerald [WRATH] / Design: Radiant Forest Emerald [CATA+]
+	sks(12, i(41736, {	-- Design: Tense Forest Emerald [WRATH] / Design: Radiant Forest Emerald [CATA+] (RECIPE!)
 		["timeline"] = { REMOVED_4_0_1 },
 	})),
 	-- #endif
-	moh(1, sks(12, i(41737))),	-- Design: Turbid Forest Emerald
+	moh(1, sks(12, i(41737))),	-- Design: Turbid Forest Emerald (RECIPE!)
 	-- #if AFTER CATA
-	sks(12, i(41739, {	-- Design: Turbid Forest Emerald [CATA+] / Design: Opaque Forest Emerald [WRATH]
+	sks(12, i(41739, {	-- Design: Turbid Forest Emerald [CATA+] / Design: Opaque Forest Emerald [WRATH] (RECIPE!)
 		["timeline"] = { REMOVED_4_0_1 },
 	})),
-	moh(1, sks(12, i(41730))),	-- Design: Willful Monarch Topaz [CATA+] / Design: Durable Monarch Topaz [WRATH]
+	moh(1, sks(12, i(41730))),	-- Design: Willful Monarch Topaz [CATA+] / Design: Durable Monarch Topaz [WRATH] (RECIPE!)
 	-- #endif
 	moh(1, sks(15, i(44081))),	-- Enigmatic Starflare Diamond
 	moh(1, sks(15, i(44084))),	-- Forlorn Starflare Diamond
