@@ -646,10 +646,6 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 			mount(356802, {	-- Holy Lightstrider (MOUNT!)
 				["displayID"] = 101577,
 			}),
-			-- With MountID Attached
-			i(187674, {	-- Depthstalker (MOUNT!)
-				-- ["displayID"] = ,
-			}),
 		})),
 
 		-- 9.2.5

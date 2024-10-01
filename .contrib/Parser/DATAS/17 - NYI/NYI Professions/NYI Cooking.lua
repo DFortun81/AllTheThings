@@ -234,7 +234,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(219721),	-- Prepared Algari Filet
 					i(219722),	-- Prepared Algari Poultry
 					i(219720),	-- Prepared Algari Steak
-					i(225937),	-- Putrid Goop
 					i(220403),	-- Rib Stickers
 					i(222271),	-- Rib Stickers
 					i(220397),	-- Roasted Mycobloom

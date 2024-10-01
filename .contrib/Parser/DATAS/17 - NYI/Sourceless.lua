@@ -351,6 +351,15 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			})),
 		}),
 	}),
+	n(MISC, {
+		expansion(EXPANSION.TWW, {
+			-- 11.0.2
+			expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+				i(225937),	-- Putrid Goop //biproduct of Fine Egg Powder salvage
+				i(220770),	-- Void-Scarred Stormhammer // For Isle of Dorn hunter pet unlock
+			})),
+		}),
+	}),
 	n(MOUNT_MODS, {
 		expansion(EXPANSION.DF, {
 			-- 10.2.0

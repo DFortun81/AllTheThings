@@ -19,6 +19,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}, {
 				q(83363),					-- A Burning Path Through Time
 				pvp(q(83345)),				-- A Call to Battle
+				q(84776),					-- A A Call to Delves
 				--q(TODO),					-- A Fel Path Through Time
 				q(83365),					-- A Frozen Path Through Time
 				q(83364),					-- A Savage Path Through Time

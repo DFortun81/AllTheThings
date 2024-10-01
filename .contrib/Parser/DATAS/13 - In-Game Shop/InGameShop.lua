@@ -79,6 +79,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
 		mount(307932, {	-- Ensorcelled Everwyrm (MOUNT!)
 			["timeline"] = { ADDED_10_2_0 },
 		}),
+		i(208598, {	-- Eve's Ghastly Rider (MOUNT!)
+			["timeline"] = { ADDED_11_0_2 }, -- 1st October 2024 until 5st November 2024
+		}),
 		mount(457485, {	-- Grizzly Hills Packmaster (MOUNT!)
 			["timeline"] = { ADDED_11_0_2 },
 		}),
