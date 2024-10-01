@@ -14,12 +14,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					{ 53.0, 53.2, AZJ_KAHET },	-- Thimble's Cache
 				},
 			}),
-			o(454318, {	-- Thimble's Cache, (29-09-24, Exo)
+			o(454318, {	-- Thimble's Cache, (30-09-24, Exo)
 				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
 				["provider"] = { "n", 220568 },	-- Thimble // Weave-Rat Cache (vignette)
 				["questID"] = 80559,
 				["coords"] = {
-					{ 55.1, 68.8, AZJ_KAHET },	-- Thimble (went invisible at gossip interraction, but his vignette could be followed on a minimap)
+					{ 55.1, 68.8, AZJ_KAHET },	-- Thimble
 					{ 56.5, 71.8, AZJ_KAHET },	-- Thimble's Cache
 				},
 			}),
@@ -50,13 +50,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					{ 44.3, 26.2, AZJ_KAHET },	-- Thimble's Cache
 				},
 			}),
-			o(454331, {	-- Thimble's Cache, (unverified as of 29-09-24, Exo)
+			o(454331, {	-- Thimble's Cache, (30-09-24, Exo)
 				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
 				["provider"] = { "n", 224888 },	-- Thimble // Weave-Rat Cache (vignette)
 				["questID"] = 82855,
 				["coords"] = {
-					{ 72.9, 43.9, AZJ_KAHET },	-- Thimble
-					{ 74.5, 43.0, AZJ_KAHET },	-- cache spot
+					{ 73.9, 39.2, AZJ_KAHET },	-- Thimble
+					{ 75.7, 38.2, AZJ_KAHET },	-- Thimble's Cache
 				},
 			}),
 			o(454334, {	-- Thimble's Cache, (29-09-24, Exo)
@@ -74,7 +74,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				["questID"] = 82858,
 				["coords"] = {
 					{ 69.9, 82.7, NERUBAR },	-- Thimble
-					{ 63.9, 85.7, NERUBAR },	-- cache spot
+					{ 63.9, 85.7, NERUBAR },	-- Thimble's Cache
 				},
 			}),
 			o(454339, {	-- Thimble's Cache, (unverified as of 29-09-24, WoWhead data, Exo)
@@ -86,12 +86,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					{ 29.6, 65.6, NERUBAR },	-- Thimble's Cache
 				},
 			}),
-			o(454340, {	-- Thimble's Cache, (unverified as of 29-09-24, Exo)
+			o(454340, {	-- Thimble's Cache, (30-09-24, Exo)
 				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
 				["provider"] = { "n", 224893 },	-- Thimble // Weave-Rat Cache (vignette)
 				["questID"] = 82859,
 				["coords"] = {
-					{ 29.0, 42.7, AZJ_KAHET },	-- Thimble (a bit bugged player can see vignette/different version of him during his pathway but they are uninteractable)
+					{ 29.0, 42.7, AZJ_KAHET },	-- Thimble
 					{ 29.4, 38.7, AZJ_KAHET },	-- Thimble's Cache
 				},
 			}),

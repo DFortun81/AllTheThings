@@ -229,7 +229,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81490, {	-- Bounty: Balaxir the Bully
 					["sourceQuest"] = 82643,
 					["provider"] = { "n", 224168 },	-- Eirzay
-					["coord"] = { 48.6, 50.5, NERUBAR_LOWER },
+					["coord"] = { 49.7, 44.3, NERUBAR_LOWER },
+					["crs"] = { 221203 },	-- Balaxir the Bully
 				}),
 				q(81476, {	-- Bounty: Goliath
 					["sourceQuest"] = 82616,
@@ -352,6 +353,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["sourceQuest"] = 82649,
 					["provider"] = { "n", 224189 },	-- Ghos'opp
 					["coord"] = { 30.9, 23.0, NERUBAR },
+					["crs"] = { 226580 },	-- Unwitting Skeinsguard
 					["g"] = {
 						i(219322),	-- Malodorous Philter (QI!)
 					},
@@ -359,7 +361,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81501, {	-- Testing Formulae: Roiling Elixir
 					["sourceQuest"] = 82648,
 					["provider"] = { "n", 224188 },	-- Ghos'opp
-					["coord"] = { 47.8, 9.6, NERUBAR },
+					["coord"] = { 47.9, 9.7, NERUBAR },
+					["crs"] = { 226579 },	-- Unwitting Umbraguard
 					["g"] = {
 						i(219324),	-- Roiling Elixir (QI!)
 					},
@@ -382,8 +385,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(81498, {	-- Wild Reagents: Twitching Gorge
 					["sourceQuest"] = 82643,
-					--["provider"] = { "n", 224181 },	-- Ghos'opp TODO
-					["coord"] = { 47.1, 58.7, AZJ_KAHET },
+					["provider"] = { "n", 224180 },	-- Ghos'opp
+					["coord"] = { 47.2, 58.8, AZJ_KAHET },
+					["crs"] = {
+						220764,	-- Unsettled Snail
+						220765,	-- Juvenile Snail
+					},
 					["g"] = {
 						i(219254),	-- Writhing Antennae (QI!)
 					},
@@ -469,8 +476,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(81484, {	-- Wet Work: Death of a Salesman
 					["sourceQuest"] = 82641,
-					["provider"] = { "n", 224201 },	-- Ru'murh
-					["coord"] = { 68.5, 51, NERUBAR },
+					["provider"] = { "n", 224191 },	-- Ru'murh
+					["coord"] = { 68.6, 51.1, NERUBAR },
+					["crs"] = { 221055 },	-- Ascended Trafficker
 					["g"] = {
 						i(219292),	-- Perplexing Contraband (QI!)
 					},
@@ -761,18 +769,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			}),
 			--'Push quest', should be probably be weekly, since you can 'normaly' choose dude once per week (TODO: re-format it)
 			--These quests are related to rumors. Each of them triggers when 1 of 3 rumors is heard. This section can be removed as soon as the quests are properly sourced in-game.	//Exodius (23-09-24)
-			q(82645),	-- pop questIDs: 81491 (General), 81505 (Vizier), 81472 (Weaver)
-			--q(82646),	-- pop questIDs: 81492 (General), 81499 (Weaver), 81506 (Vizier)
-			--q(82644),	-- pop questIDs: 81477 (General), 81473 (Weaver), 81481 (Vizier)
-			q(82643),	-- pop questIDs: 81490 (General), 81498 (Vizier), 81471 (Weaver)
-			q(82616),	-- pop questIDs: 81476 (General), 81480 (Vizier), 80573 (Weaver)
-			--q(82581),	-- pop questIDs: 81489 (General), 81497 (Vizier), 81470 (Weaver)
-			--q(82640),	-- pop questIDs: 81475 (General), 81555 (Weaver), 81496 (Vizier)
-			--q(82642),	-- pop questIDs: 81488 (General), 81500 (Weaver), 81479 (Vizier)
-			q(82641),	-- pop questIDs: 81487 (General), 81484 (Weaver), 81495 (Vizier)
-			q(82649),	-- pop questIDs: 81494 (General), 81502 (Vizier), 81504 (Weaver)
-			q(82647),	-- pop questIDs: 81478 (General), 81482 (Vizier), 81483 (Weaver)
-			--q(82648),	-- pop questIDs: 81493 (General), 81503 (Weaver), 81501 (Vizier)
+			q(82616),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
+			q(82641),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
+			q(82643),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
+			q(82645),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
+			q(82647),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
+			q(82649),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
 			-- City Rumors (SpellID: 463344), events available after unlocking Level 1 (Acquaintance) with the General, Vizier and Weaver
 			-- Ru'murh <Agent of the Weaver>, Eirzay <Agent of the General>, Ghos'opp <Agent of the Vizier>
 			-- Using Rumor Map Bundle (ItemID 228950) triggers all quests as completed and reveals all the NPCs with "rumors" on the map
@@ -781,19 +783,23 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(82581, {	-- Ru'murh  (n: 224199 @ 45.6, 51.0), starts questID 81483 (Infiltration: Production Blocker), (23-09-24, Exo)
 					-- Ru'murh  (n: 224192 @ 79.6, 56.6), starts questID 81500 (Wet Work: Step Into Their Parlor), (29-09-24, Exo)
 					-- Ghos'opp (n: 224183 @ 64.5, 87.3), starts questID 81481 (Sabotage: Transformatory Vessels), (27-09-24, Exo)
+					-- Ru'murh  (n: 224191 @ 68.6, 51.1), starts questID 81484 (Wet Work: Death of a Salesman), (30-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82640, {	-- Ru'murh  (n: 224190 @ 41.5, 22.4), starts questID 81555 (Wet Work: Tithe to Kill), (23-09-24, Exo)
 					-- Ghos'opp (n: 224186 @ 54.5, 15.5), starts questID 81506 (Sabotage: Alchemical Instruments), (27-09-24, Exo)
 					-- Ghos'opp (n: 224178 @ 64.2, 21.2), starts questID 81495 (Requisitions: Brightblooms), (29-09-24, Exo)
+					-- Ghos'opp (n: 224188 @ 47.9, 9.7), starts questID 81501 (Testing Formulae: Roiling Elixir), (30-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82642, {	-- Eirzay   (n: 224161 @ 43.0, 47.2), starts questID 81475 (Breaking the Phalanx: Royal Appointments), (27-09-24, Exo)
+					-- Ghos'opp (n: 224189 @ 30.9, 23.0), starts questID 81502 (Testing Formulae: Malodorous Philter), (30-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82644, {	-- Ru'murh  (n: 224197 @ 55.7, 47.8), starts questID 81472 (Information Control: Ansurek's Truth), (23-09-24, Exo)
 					-- Ghos'opp (n: 224179 @ 49.2, 51.8), starts questID 81496 (Requisitions: Fangpetals), (27-09-24, Exo)
 					-- Eirzay   (n: 224166 @ 50.4, 74.0), starts questID 81476 (Bounty: Chitinous Goliath), (29-09-24, Exo)
+					-- Eirzay   (n: 224168 @ 49.7, 44.3), starts questID 81490 (Bounty: Balaxir the Bully), (30-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82646, {	-- Eirzay   (n: 224172 @ 54.5, 63.6), starts questID 81492 (Armaments: Smithing Tools), (23-09-24, Exo)
@@ -802,11 +808,10 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			}),
 			q(82648, {	-- Ru'murh  (n: 224200 @ 64.2, 75.3), starts questID 81503 (Infiltration: Terror Made Manifest), (23-09-24, Exo)
 					-- Ghos'opp (n: 224180 @ 65.1, 78.8), starts questID 81480 (Wild Reagents: Maddening Deep), (27-09-24, Exo)
+					-- Ghos'opp (n: 224180 @ 47.2, 58.8), starts questID 81498 (Wild Reagents: Twitching Gorge), (30-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
-			--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224191 @ 68.5, 51.1), start questID 81484 (Wet Work: Death of a Salesman)
 			--q(82645),	-- 'Listen to the rumor' from Eirzay (n: 224171 @ 63.0, 38.1, 2216), start questID 81491 (Armaments: Arbalests)
-			--q(82643),	-- 'Listen to the rumor' from Eirzay (n: 224168 @ 48.6, 50.5, 2216), start questID 81490 (Bounty: Balaxir the Bully)
 			--q(82581),	-- 'Listen to the rumor' from Eirzay (n: 224167 @ 15.6, 45.9, 2213), start questID 81489 (Bounty: Zorikal the Patron)
 			--q(82641),	-- 'Listen to the rumor' from Eirzay (n: 224162 @ 30.6, 42.6, 2213), start questID 81487 (Breaking the Phalanx: Venomblades)
 			--q(82647),	-- 'Listen to the rumor' from Eirzay (n: 224173 @ 39.5, 53.0), start questID 81478 (Relics of War: The Ruptired Lake)
@@ -815,7 +820,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224201 @ 76.2, 47.4), start questID 81504 (Infiltration: Hidden Figures)
 			-- Missing 5 more quest data/givers
 			--q(82616),	-- 'Gather some reagent' from Ghos-opp (n: 224180 @ 48.4, 61.9), start questID ()
-			-- Missing 11 total quest data/givers, 81505 81498 81497 81502 81482 (and 5 more)
+			-- Missing 11 total quest data/givers, 81505 81497 81482 (and 5 more)
 
 			-- q(80688), -- triggered after completing task for a 'Rumor' (re-capture and narrow down)
 			-- Weaver's Lair Profession Table

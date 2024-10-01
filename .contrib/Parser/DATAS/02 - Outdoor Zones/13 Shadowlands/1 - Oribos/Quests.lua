@@ -743,7 +743,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60253, {	-- A Valuable Find: Necrotic Wake
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["provider"] = { "n", 167881 },	-- Ta'lan the Antiquary
+				["providers"] = {
+					{ "n", 167881 },	-- Ta'lan the Antiquary (in Oribos)
+					{ "n", 205782 },	-- Ta'lan the Antiquary (in The Necrotic Wake)
+				},
 				["coord"] = { 51.4, 43.7, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
 				["groups"] = {
