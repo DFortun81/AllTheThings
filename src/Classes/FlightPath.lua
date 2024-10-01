@@ -111,7 +111,7 @@ app.AddEventRegistration("TAXIMAP_OPENED", function()
 			local fp = app.SearchForObject(KEY, nodeID, "key")
 			if nodeData.state and nodeData.state < 2 then
 				-- Retail FPs are account-wide (mostly) so don't play a noise for literally every time any alt touches a FP
-				if fp.collectible and not fp.collected then
+				if fp and fp.collectible and not fp.collected then
 					app.SetCollected(fp, CACHE, nodeID, true)
 					-- TODO: remove once SetCollected handles UpdateRawID
 					if not newFPs then newFPs = { nodeID }
