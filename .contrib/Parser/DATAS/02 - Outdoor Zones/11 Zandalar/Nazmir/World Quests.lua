@@ -195,9 +195,9 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["provider"] = { "n", 135446 },	-- Vindicator Jaelaana <7th Legion Emissary>
 				["races"] = ALLIANCE_ONLY,
 			}),
-			q(52754, {	-- Marshdwellers
+			petbattle(q(52754, {	-- Marshdwellers
 				["provider"] = { "n", 141529 },	-- Lozu
-			}),
+			})),
 			q(54267, {	-- Naga Attack!
 				i(165605),  -- Azsharan Medallion
 			}),
