@@ -886,19 +886,6 @@ local function RefreshSavesCallback()
 		return;
 	end
 
-	-- Make sure there's info available to check save data
-	local saves = GetNumSavedInstances();
-	if saves and saves < 1 then
-		-- While the player is still waiting for information, wait.
-		app.refreshingSaves = (app.refreshingSaves or 30) - 1;
-		if app.refreshingSaves <= 0 then
-			app.refreshingSaves = nil;
-			return;
-		end
-		AfterCombatCallback(RefreshSavesCallback);
-		return;
-	end
-
 	-- Cache the lockouts across your account.
 	local serverTime = GetServerTime();
 
@@ -922,6 +909,14 @@ local function RefreshSavesCallback()
 				end
 			end
 		end
+	end
+
+	-- Make sure there's info available to check save data
+	local saves = GetNumSavedInstances();
+	if not saves then
+		-- While the player is still waiting for information, wait.
+		AfterCombatCallback(RefreshSavesCallback);
+		return;
 	end
 
 	-- Update Saved Instances
