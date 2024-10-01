@@ -119,18 +119,20 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(THE_SEVERED_THREADS, {
 		n(TREASURES, {
-			q(83778),	-- All of these triggered when 'Treasure Map Bundle' (item 228952) is used.	//Exo
-			q(83779),
-			q(83780),
-			q(83781),
-			q(83782),
-			q(83783),
-			q(83784),
-			q(83785),
-			q(83786),
-			q(83787),
-			q(83788),
-			q(83789),
+			-- Following 12 HQTs are triggered when 'Treasure Map Bundle' (item 228952) is used.
+			-- There are 12 Thimble's Caches in total however, only 4 are revealed on the map.
+			q(83778),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
+			q(83779),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
+			q(83780),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
+			q(83781),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
+			q(83782),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
+			q(83783),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
+			q(83784),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
+			q(83785),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
+			q(83786),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
+			q(83787),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
+			q(83788),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
+			q(83789),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
 		}),
 	}),
 })));
