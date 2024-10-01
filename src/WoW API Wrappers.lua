@@ -68,6 +68,10 @@ if C_Item then
 ---@diagnostic disable-next-line: deprecated
 	elseif GetItemCount then lib.GetItemCount = GetItemCount;
 	else lib.GetItemCount = nil; end
+else
+---@diagnostic disable-next-line: deprecated
+	if GetItemCount then lib.GetItemCount = GetItemCount;
+	else lib.GetItemCount = nil; end
 end
 
 ---@diagnostic disable-next-line: deprecated
