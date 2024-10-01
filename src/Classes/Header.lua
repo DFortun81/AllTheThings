@@ -120,7 +120,7 @@ do
 	"WithQuest", {
 		trackable = function(t)
 			-- raw repeatable quests can't really be tracked since they immediately unflag
-			return not rawget(t, "repeatable")
+			return not rawget(t, "repeatable") and t.repeatable
 		end,
 		saved = function(t)
 			return IsQuestFlaggedCompleted(t.questID)

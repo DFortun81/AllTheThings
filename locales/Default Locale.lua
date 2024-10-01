@@ -227,7 +227,7 @@ local L = setmetatable({
 	TOM_TOM_NOT_FOUND = "You must have TomTom installed to plot coordinates.";
 	FLIGHT_PATHS = "Flight Paths";
 	BOUND_ON = "Bound on %s |T" .. app.asset("known_circle_yellow") .. ":0|t";
-	
+
 	NOT_AVAILABLE_IN_PL = "Not available in Personal Loot.";
 	MARKS_OF_HONOR_DESC = "Marks of Honor must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.." click to link the item)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
 	MOP_REMIX_BRONZE_DESC = "Bronze must be viewed in a Popout window to see all of the normal 'Contains' content.\n(Type '/att ' in chat then "..SHIFT_KEY_TEXT.." click to link the currency)\n\n|cFFfe040fAfter purchasing and using an ensemble, relogging & a forced ATT refresh (in this order)\nmay be required to register all the items correctly.|r";
@@ -247,7 +247,7 @@ local L = setmetatable({
 	OPPOSITE_FACTION_EQ = "Opposite faction equivalent: ";
 	SELFIE_DESC = "Take a selfie using your ";
 	SELFIE_DESC_2 = " with |cffff8000";
-	
+
 	UPON_COMPLETION = "Upon Completion";
 	UPON_COMPLETION_DESC = "The above quests need to be completed before being able to complete the things listed below.";
 	QUEST_CHAIN_REQ = "Quest Chain Requirements";
@@ -262,7 +262,7 @@ local L = setmetatable({
 	AUCTIONATOR_GROUPS = "Group-based searches are only supported using Auctionator.";
 	TSM4_ERROR = "TSM4 is not compatible with ATT yet. If you know how to create Presets like we used to do in TSM3, please whisper Crieve on Discord!";
 	QUEST_MAY_BE_REMOVED = "Failed to acquire information. This quest may have been removed from the game. ";
-	
+
 	DURING_WQ_ONLY = "Can be completed when the World Quest is active";
 	COMPLETED_DAILY = "Can be completed daily";
 	COMPLETED_WEEKLY = "Can be completed weekly";
@@ -496,7 +496,7 @@ local L = setmetatable({
 		["Pet Journal"] = PETS,
 		["Toy Box"] = TOY,
 	};
-	
+
 	-- These are populated by the LocalizationDB.
 	EVENT_REMAPPING = {};
 	EVENT_TIMERUNNING_SEASONS = {};
@@ -637,7 +637,7 @@ local L = setmetatable({
 
 	EXTRA_THINGS_LABEL = "Additional Resources";	-- unused
 
-	CLICK_TO_CREATE_FORMAT = "Click to Create %s";	
+	CLICK_TO_CREATE_FORMAT = "Click to Create %s";
 	LOADING_FORMAT = "%s "..LFG_LIST_LOADING;	-- %s Loading...	-- unused
 	READY_FORMAT = "%s "..READY;	-- %s Ready	-- unused
 
@@ -800,8 +800,8 @@ L.SETTINGS_MENU = {
 
 		-- General Content
 		GENERAL_CONTENT = "General Content";
-		SHOW_INCOMPLETE_THINGS_CHECKBOX = "Show All Trackable Things";
-		SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see items, objects, NPCs, and headers which can be tracked within the game without necessarily being considered 'collectible'.\n\nNOTE: Rare Spawns and Vignettes also appear in the listing with this setting turned on.";
+		SHOW_INCOMPLETE_THINGS_CHECKBOX = "Show Repeatable/Trackable Things";
+		SHOW_INCOMPLETE_THINGS_CHECKBOX_TOOLTIP = "Enable this option if you want to see incomplete repeatable content without forcing it to be considered 'collectible'.\n\nNOTE: Non-saved Rare Spawns, Treasures, and Vignettes also appear in the listing with this setting turned on.";
 		SHOW_COMPLETED_GROUPS_CHECKBOX = "Show Completed Groups";
 		SHOW_COMPLETED_GROUPS_CHECKBOX_TOOLTIP = "Enable this option if you want to see completed groups as a header with a completion percentage. If a group has nothing relevant for your class, this setting will also make those groups appear in the listing.\n\nWe recommend you turn this setting off as it will conserve the space in the mini list and allow you to quickly see what you are missing from the zone.";
 		SHOW_COLLECTED_THINGS_CHECKBOX = "Show Collected Things";

@@ -140,9 +140,12 @@ function(t) return t.type == "AsGenericObjectContainer" end,
 	-- Retail: typical object collectibility matches Lockable Quest collectibility
 	or app.GlobalVariants.AndLockCriteria.collectible,
 	collected = IsQuestFlaggedCompletedForObject,
-	trackable = app.ReturnTrue,
+	trackable = function(t)
+		-- raw repeatable quests can't really be tracked since they immediately unflag
+		return not rawget(t, "repeatable") and t.repeatable
+	end,
 	saved = function(t)
-		return t.collected == 1;
+		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
 	variants = {
 		AndLockCriteria = app.GlobalVariants.AndLockCriteria,
@@ -164,9 +167,12 @@ function(t) return t.type == "AsSubGenericObject" end,
 	-- Retail: typical object collectibility matches Lockable Quest collectibility
 	or app.GlobalVariants.AndLockCriteria.collectible,
 	collected = IsQuestFlaggedCompletedForObject,
-	trackable = app.ReturnTrue,
+	trackable = function(t)
+		-- raw repeatable quests can't really be tracked since they immediately unflag
+		return not rawget(t, "repeatable") and t.repeatable
+	end,
 	saved = function(t)
-		return t.collected == 1;
+		return IsQuestFlaggedCompletedForObject(t) == 1;
 	end,
 	variants = {
 		AndLockCriteria = app.GlobalVariants.AndLockCriteria,

@@ -142,7 +142,6 @@ do
 			-- account-wide collected
 			if app.IsAccountCached(CACHE, id) then return 2; end
 		end,
-		trackable = app.ReturnTrue,
 		saved = function(t)
 			return app.IsCached(CACHE, t.spellID)
 		end,

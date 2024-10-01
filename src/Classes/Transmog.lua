@@ -676,10 +676,6 @@ do
 		collected = function(t)
 			return AccountSources[t.sourceID];
 		end,
-		trackable = app.ReturnTrue,
-		saved = function(t)
-			return app.IsAccountCached("Sources", t.sourceID) == 1
-		end,
 		collectedwarband = app.IsClassic and app.EmptyFunction or
 		function(t)
 			return app.IsAccountCached("SourceItemsOnCharacter", t.sourceID)

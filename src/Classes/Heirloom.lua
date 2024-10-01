@@ -75,7 +75,6 @@ do
 		saved = function(t)
 			return C_Heirloom_PlayerHasHeirloom(t.heirloomUnlockID);
 		end,
-		trackable = app.ReturnTrue,
 	});
 
 	local armorTextures = {
@@ -124,7 +123,6 @@ do
 				end
 			end
 		end,
-		["trackable"] = app.ReturnTrue,
 		["isWeapon"] = function(t)
 			local isWeapon = t.f and contains(weaponFilterIDs, t.f);
 			t.isWeapon = isWeapon;
@@ -165,10 +163,6 @@ do
 		collectible = function(t) return app.Settings.Collectibles.Transmog end,
 		collected = function(t)
 			return app.IsAccountCached("Sources", t.sourceID)
-		end,
-		trackable = app.ReturnTrue,
-		saved = function(t)
-			return t.collected == 1
 		end,
 		isWeapon = hierloomLevelFields.isWeapon,
 	}, function(t) return t.sourceID end,

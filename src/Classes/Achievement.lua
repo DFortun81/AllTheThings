@@ -131,7 +131,6 @@ do
 			-- account-wide collected
 			if app.IsAccountTracked(CACHE, id) then return 2; end
 		end,
-		trackable = app.ReturnTrue,
 		saved = function(t)
 			local id = t[KEY];
 			-- character collected
@@ -421,7 +420,6 @@ do
 			-- account-wide collected achievement
 			if app.IsAccountTracked("Achievements", id) then return 2 end
 		end,
-		trackable = app.ReturnTrue,
 		saved = function(t)
 			local id = t.achievementID
 			-- character collected achievement

@@ -27,9 +27,6 @@ app.CreateEnsemble = app.ExtendClass("Item", "EnsembleItem", "itemID", {
 			return Colorize(L.RELOG_REQUIRED, app.Colors.TooltipWarning)
 		end
 	end,
-	trackable = function(t)
-		return t.questID and true
-	end,
 	saved = function(t)
 		local id = t.questID;
 		if app.IsQuestFlaggedCompleted(id) then return true end

@@ -27,7 +27,6 @@ app.CreateFlightPath = app.CreateClass(CLASSNAME, KEY, {
 		end
 		return app.asset("fp_neutral")
 	end,
-	trackable = app.ReturnTrue,
 	saved = function(t)
 		local id = t[KEY]
 		-- character collected

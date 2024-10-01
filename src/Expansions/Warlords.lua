@@ -150,7 +150,6 @@ do
 		description = function(t)
 			return t.info.description;
 		end,
-		trackable = app.ReturnTrue,
 		saved = function(t)
 			return C_Garrison_GetTalentInfo(t.garrisonTalentID).researched;
 		end,
@@ -208,7 +207,6 @@ do
 			-- account-wide collected
 			if app.IsAccountTracked(CACHE, id) then return 2; end
 		end,
-		trackable = app.ReturnTrue,
 		saved = function(t)
 			local id = t[KEY];
 			-- character collected

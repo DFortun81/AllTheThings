@@ -153,7 +153,6 @@ do
 		icon = function(t)
 			return cache.GetCachedField(t, "icon", CacheInfo) or 136243;	-- Trade_engineering
 		end,
-		trackable = app.ReturnTrue,
 		saved = function(t)
 			local id = t[KEY];
 			-- character known
