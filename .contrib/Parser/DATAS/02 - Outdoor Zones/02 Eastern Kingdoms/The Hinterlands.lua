@@ -874,15 +874,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["lvl"] = { 29, 33 },
 					-- #endif
 				})),
-				heroscall(q(38931, {	-- Hero's Call: The Hinterlands!
-					["timeline"] = { CREATED_6_2_0 },
-					["isBreadcrumb"] = true,
-					-- #if BEFORE 7.3.5
-					-- Cataclysm: Minimum is level 29. (TODO: Confirm this.)
-					-- Cataclysm: Maximum is level 33 (TODO: Test max level between 32 and 39)
-					["lvl"] = { 29, 33 },
-					-- #endif
-				})),
 				q(26526, {	-- Hunt the Keeper (A)
 					["qg"] = 43156,	-- Fraggar Thundermantle
 					["sourceQuest"] = 26517,	-- Summit of Fate

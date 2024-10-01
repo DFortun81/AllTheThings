@@ -1877,6 +1877,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			q(38008),	-- The Road of Glory - completed with quest 36125 & 36227
 			q(38305),	-- Cenarius, Keeper of the Grove - completed with quest 40122
 			q(38713),	-- The Crusade Calls - completed with quest 38710
+			q(38931),	-- Hero's Call: The Hinterlands! - completed with quest 26542
 			q(39058),	-- Critters of Draenor - completed with quest 38299 & 38300
 			q(39127),	-- Beyond the Wall - completed with quest 31386 & 31388
 			q(39189),	-- Warchief's Command: Nagrand! - completed with quest 9957 & 9960 & 9961 & 39182 & 39188
