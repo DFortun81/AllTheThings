@@ -564,7 +564,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/15 Shipyard Lumber
-							["provider"] = { "i", 62811 },	-- Shipyard Lumber
+							["providers"] = {
+								{ "i",  62811 },	-- Shipyard Lumber
+								{ "o", 206583 },	-- Shipyard Lumber
+							},
 							["crs"] = {
 								46630,	-- Accursed Longshoreman
 								46641,	-- Ghastly Dockhand
@@ -581,7 +584,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/15 Shipyard Lumber
-							["provider"] = { "i", 62811 },	-- Shipyard Lumber
+							["providers"] = {
+								{ "i",  62811 },	-- Shipyard Lumber
+								{ "o", 206583 },	-- Shipyard Lumber
+							},
 							["crs"] = {
 								46630,	-- Accursed Longshoreman
 								46641,	-- Ghastly Dockhand
