@@ -212,7 +212,7 @@ app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
 		return collectedAsTransmog(t);
 	end,
 	["description"] = app.GameBuildVersion > 40000 and function(t)
-		return "Blizzard isn't detecting white/grey quality transmogs as collectible, so for the meantime, send this item to an alt to hold on to until they fix it. If its soulbound and from a quest, you're probably okay to vendor it.";
+		return t.collectible and "Blizzard isn't detecting white/grey quality transmogs as collectible, so for the meantime, send this item to an alt to hold on to until they fix it. If its soulbound and from a quest, you're probably okay to vendor it.";
 	end or nil,
 }, isCollectibleTransmog,
 "WithQuest", {
