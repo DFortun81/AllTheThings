@@ -390,11 +390,19 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				ach(40256),	-- Nerub-ar Palace Guild Run
 				ach(40257),	-- Heroic: Nerub-ar Palace Guild Run
 			}),
-			n(FLIGHT_PATHS, {
+			n(FLIGHT_PATHS, sharedData({
+				["collectible"] = false,	-- these are not collectible since they change/reset with difficulty-based lockout and progress
+			},{
 				fp(2933, {	-- Grand Rampart
 					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
 				}),
 				fp(2934, {	-- The Pulsing Pit
+					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
+				}),
+				fp(2971, {	-- The Pulsing Pit (One Way)
+					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
+				}),
+				fp(2936, {	-- The Swaying Span (One Way)
 					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
 				}),
 				fp(2935, {	-- Terrace of Majesty
@@ -406,7 +414,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADD
 				fp(2984, {	-- The Ascending Reach
 					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
 				}),
-			}),
+				fp(3003, {	-- The Crown of Shadows
+					["crs"] = { 207469 },	-- Nerubian Swarmite Taxi
+				}),
+			})),
 			n(SPECIAL, {
 				n(228081, {	-- Ethereum Void Reaper
 					["description"] = "This rare has a chance to spawn while using the Trinket, Treacherous Transmitter. This rare can spawn outside the raid also.",
