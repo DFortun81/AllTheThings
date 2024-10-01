@@ -219,20 +219,3 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 		}),
 	}),
 }))));
-
-root(ROOTS.HiddenQuestTriggers, {
-	n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
-		--TODO - Sort everything here out of this file.
-
-		--NYI
-		q(82137),	-- Ensemble: Black Tropical
-		q(82198),	-- Ensemble: Black Tropical Swimwear
-		q(82138),	-- Ensemble: Blue Tropical
-		q(82231),	-- Ensemble: Blue Tropical Swimwear
-		q(82269),	-- Ensemble: Green Diver Suit
-		q(82139),	-- Ensemble: Pink Tropical
-		q(82232),	-- Ensemble: Pink Tropical Swimwear
-		q(82270),	-- Ensemble: Tan Diver Suit
-		--q(),	-- Arsenal: Exodar Peacekeeper's Armaments
-	})),
-});

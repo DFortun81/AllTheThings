@@ -458,11 +458,16 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 			n(SETS, {
 				i(223243),	-- Ensemble: Blue Diver Suit
 				i(221541),	-- Ensemble: Blue Tropical
+				q(82138),	-- Ensemble: Blue Tropical
 				i(223246),	-- Ensemble: Copper Diver Suit
+				q(82270),	-- Ensemble: Copper Diver Suit
 				i(222959),	-- Ensemble: Tropical Sunrise Swimwear
+				q(82231),	-- Ensemble: Tropical Sunrise Swimwear
 				------ Black Tropical Set ------
 				i(221540),	-- Ensemble: Black Tropical
+				q(82137),	-- Ensemble: Black Tropical
 				i(221847),	-- Ensemble: Black Tropical Swimwear
+				q(82198),	-- Ensemble: Black Tropical Swimwear
 				i(221826),	-- Black Tropical Airy Sandals
 				i(221825),	-- Black Tropical Beads
 				i(221524),	-- Black Tropical Floater
@@ -477,6 +482,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ Green Diver Set ------
 				i(223245),	-- Ensemble: Green Diver Suit
+				q(82269),	-- Ensemble: Green Diver Suit
 				i(223226),	-- Green Diver's Belt
 				i(223223),	-- Green Diver's Bonnet
 				i(223228),	-- Green Diver's Boots
@@ -489,7 +495,9 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 
 				------ Pink Tropical Set ------
 				i(221543),	-- Ensemble: Pink Tropical
+				q(82139),	-- Ensemble: Pink Tropical
 				i(222960),	-- Ensemble: Pink Tropical Swimwear
+				q(82232),	-- Ensemble: Pink Tropical Swimwear
 				i(221838),	-- Pink Tropical Airy Sandals
 				i(221837),	-- Pink Tropical Beads
 				i(221534),	-- Pink Tropical Floater
