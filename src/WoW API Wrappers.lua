@@ -61,11 +61,19 @@ else
 end
 
 -- Item APIs
+if C_Item then
+	local C_Item = C_Item;
+
+	if C_Item.GetItemCount then lib.GetItemCount = C_Item.GetItemCount;
+---@diagnostic disable-next-line: deprecated
+	elseif GetItemCount then lib.GetItemCount = GetItemCount;
+	else lib.GetItemCount = nil; end
+end
+
 ---@diagnostic disable-next-line: deprecated
 if not GetItemInfo then
 	local C_Item = C_Item;
 	local GetItemInfo = C_Item.GetItemInfo;
-	lib.GetItemCount = C_Item.GetItemCount;
 	lib.GetItemInfo = GetItemInfo;
 	lib.GetItemInfoInstant = function(item)
 		local _, _, _, _, _, itemType, itemSubType, _, itemEquipLoc, itemTexture, _, classID, subclassID = GetItemInfo(item);
@@ -80,8 +88,6 @@ else
 	local GetItemInfoInstant = GetItemInfoInstant;
 	---@diagnostic disable-next-line: deprecated
 	lib.GetItemInfo = GetItemInfo;
-	---@diagnostic disable-next-line: deprecated
-	lib.GetItemCount = GetItemCount;
 	---@diagnostic disable-next-line: deprecated
 	lib.GetItemInfoInstant = GetItemInfoInstant;
 	---@diagnostic disable-next-line: deprecated
