@@ -909,7 +909,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB, group)
 			if #listing > 0 then
 				tooltipInfo.hasSourceLocations = true;
 				for _,text in ipairs(listing) do
-					if not working and IsRetrieving(text) then working = true; end
+					if not group.working and IsRetrieving(text) then group.working = true; end
 					local left, right = DESCRIPTION_SEPARATOR:split(text);
 					tinsert(tooltipInfo, { left = left, right = right, wrap = wrap });
 				end
@@ -969,7 +969,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	end
 
 	-- Determine if this tooltip needs more work the next time it refreshes.
-	local working, tooltipInfo, mostAccessibleSource = false, {}, nil;
+	local tooltipInfo, mostAccessibleSource = {}, nil;
 
 	-- Call to the method to search the database.
 	local group, a, b = method(paramA, paramB);
@@ -1277,7 +1277,6 @@ local function GetSearchResults(method, paramA, paramB, ...)
 		-- Add various extra field info if enabled in settings
 		group.itemString = itemString
 		app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group);
-		if group.working then working = true; end
 	end
 
 
@@ -1293,7 +1292,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				if #entries < 25 then
 					for i,item in ipairs(entries) do
 						left = item.group.text or RETRIEVING_DATA;
-						if IsRetrieving(left) then working = true; end
+						if not group.working and IsRetrieving(left) then group.working = true; end
 						local mapID = app.GetBestMapForGroup(item.group, currentMapID);
 						if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 						if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
@@ -1303,7 +1302,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 					for i=1,math.min(25, #entries) do
 						local item = entries[i];
 						left = item.group.text or RETRIEVING_DATA;
-						if IsRetrieving(left) then working = true; end
+						if not group.working and IsRetrieving(left) then group.working = true; end
 						local mapID = app.GetBestMapForGroup(item.group, currentMapID);
 						if mapID and mapID ~= currentMapID then left = left .. " (" .. app.GetMapName(mapID) .. ")"; end
 						if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
@@ -1349,7 +1348,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 								end);
 								for i,item in ipairs(entries) do
 									left = item.group.text or RETRIEVING_DATA;
-									if IsRetrieving(left) then working = true; end
+									if not group.working and IsRetrieving(left) then group.working = true; end
 									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 									tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 								end
@@ -1357,7 +1356,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 								for i=1,math.min(25, #entries) do
 									local item = entries[i];
 									left = item.group.text or RETRIEVING_DATA;
-									if IsRetrieving(left) then working = true; end
+									if not group.working and IsRetrieving(left) then group.working = true; end
 									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 									tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 								end
@@ -1395,7 +1394,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 							if #entries < 25 then
 								for i,item in ipairs(entries) do
 									left = item.group.craftText or item.group.text or RETRIEVING_DATA;
-									if IsRetrieving(left) then working = true; end
+									if not group.working and IsRetrieving(left) then group.working = true; end
 									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 									tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 								end
@@ -1403,7 +1402,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 								for i=1,math.min(25, #entries) do
 									local item = entries[i];
 									left = item.group.craftText or item.group.text or RETRIEVING_DATA;
-									if IsRetrieving(left) then working = true; end
+									if not group.working and IsRetrieving(left) then group.working = true; end
 									if item.group.icon then item.prefix = item.prefix .. "|T" .. item.group.icon .. ":0|t "; end
 									tinsert(tooltipInfo, { left = item.prefix .. left, right = item.right });
 								end
@@ -1427,7 +1426,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 
 	-- Cache the result depending on if there is more work to be done.
 	if isTopLevelSearch then InitialCachedSearch = nil; end
-	return group, working;
+	return group, group.working;
 end
 app.GetCachedSearchResults = function(method, paramA, paramB, ...)
 	return app.GetCachedData((paramB and table.concat({ paramA, paramB, ...}, ":")) or paramA, GetSearchResults, method, paramA, paramB, ...);
