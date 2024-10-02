@@ -87,17 +87,17 @@ if C_Item then
 	elseif GetItemIcon then lib.GetItemIcon = GetItemIcon;
 	else lib.GetItemIcon = nil; end
 else
----@diagnostic disable-next-line: deprecated
-if GetItemCount then lib.GetItemCount = GetItemCount;
-else lib.GetItemCount = nil; end
+	---@diagnostic disable-next-line: deprecated
+	if GetItemCount then lib.GetItemCount = GetItemCount;
+	else lib.GetItemCount = nil; end
 
----@diagnostic disable-next-line: deprecated
-if GetItemClassInfo then lib.GetItemClassInfo = GetItemClassInfo;
-else lib.GetItemClassInfo = nil; end
+	---@diagnostic disable-next-line: deprecated
+	if GetItemClassInfo then lib.GetItemClassInfo = GetItemClassInfo;
+	else lib.GetItemClassInfo = nil; end
 
----@diagnostic disable-next-line: deprecated
-if GetItemIcon then lib.GetItemIcon = GetItemIcon;
-else lib.GetItemIcon = nil; end
+	---@diagnostic disable-next-line: deprecated
+	if GetItemIcon then lib.GetItemIcon = GetItemIcon;
+	else lib.GetItemIcon = nil; end
 end
 
 ---@diagnostic disable-next-line: deprecated
