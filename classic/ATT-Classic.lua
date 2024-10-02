@@ -49,8 +49,6 @@ local GetAchievementNumCriteria = _G["GetAchievementNumCriteria"];
 local GetAchievementCriteriaInfo = _G["GetAchievementCriteriaInfo"];
 local GetAchievementCriteriaInfoByID = _G["GetAchievementCriteriaInfoByID"];
 local GetCategoryInfo = _G["GetCategoryInfo"];
----@diagnostic disable-next-line: deprecated
-local GetItemCount = _G["GetItemCount"];
 local InCombatLockdown = _G["InCombatLockdown"];
 local IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown =
 	  IsPlayerSpell, IsSpellKnown, IsSpellKnownOrOverridesKnown;
@@ -61,6 +59,7 @@ local HORDE_FACTION_ID = Enum.FlightPathFaction.Horde;
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemIcon = app.WOWAPI.GetItemIcon;
 local GetItemInfoInstant = app.WOWAPI.GetItemInfoInstant;
+local GetItemCount = app.WOWAPI.GetItemCount;
 local GetFactionCurrentReputation = app.WOWAPI.GetFactionCurrentReputation;
 local GetSpellCooldown = app.WOWAPI.GetSpellCooldown;
 local GetSpellLink = app.WOWAPI.GetSpellLink;
