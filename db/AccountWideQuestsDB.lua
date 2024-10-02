@@ -1413,6 +1413,7 @@ select(2, ...).AccountWideQuestsDB = {
 	[84117] = true,
 	[84118] = true,
 	[84119] = true,
+	[84370] = true,	-- The Key to Success
 	[84520] = true,	-- Ancient Curiosity: Utility
 	[85531] = true,	-- Earth-Encrusted Gem
 	[85535] = true,	-- Kej
