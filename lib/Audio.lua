@@ -190,3 +190,8 @@ function app.ClearSounds(tableName)
 		wipe(soundTable);
 	end
 end
+
+app.AddEventHandler("OnReady", function()
+	-- Prepare the Sound Pack!
+	api:ReloadSoundPack();
+end);

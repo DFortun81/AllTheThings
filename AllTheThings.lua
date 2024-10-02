@@ -12758,9 +12758,6 @@ local function InitDataCoroutine()
 	-- app.PrintDebug("Yield prior to Refresh")
 	yield();
 
-	-- Prepare the Sound Pack!
-	app.Audio:ReloadSoundPack();
-
 	-- Setup the use of profiles after a short delay to ensure that the layout window positions are collected
 	if not AllTheThingsProfiles then DelayedCallback(app.SetupProfiles, 5); end
 

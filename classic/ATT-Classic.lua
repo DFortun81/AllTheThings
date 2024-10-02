@@ -4524,9 +4524,6 @@ app.events.ADDON_LOADED = function(addonName)
 end
 
 app.AddEventHandler("OnStartupDone", function()
-	-- Prepare the Sound Pack!
-	app.Audio:ReloadSoundPack();
-
 	-- Execute the OnReady handlers.
 	app.HandleEvent("OnReady");
 
