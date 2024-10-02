@@ -80,7 +80,7 @@ if C_Item then
 	if C_Item.GetItemClassInfo then lib.GetItemClassInfo = C_Item.GetItemClassInfo;
 	---@diagnostic disable-next-line: deprecated
 	elseif GetItemClassInfo then lib.GetItemClassInfo = GetItemClassInfo;
-	else GetItemClassInfo = nil; end
+	else lib.GetItemClassInfo = nil; end
 else
 ---@diagnostic disable-next-line: deprecated
 	if GetItemCount then lib.GetItemCount = GetItemCount;
