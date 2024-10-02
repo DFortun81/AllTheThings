@@ -130,7 +130,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
 			}, {	-- RENOWN 22 --
-			}, {	-- RENOWN 23 --
 				q(82444, {	-- The Weaver's Cache
 					["providers"] = {
 						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
@@ -138,6 +137,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					},
 					["coord"] = { 55.3, 41.2, AZJ_KAHET },
 				}),
+				q(85534, {	-- The General's Cache
+					["providers"] = {
+						{ "n", 223750 },	-- Lady Vinazian <Severed Threads Quartermaster>
+						{ "n", 220867 },	-- Y'tekhi <Renown Quartermaster>
+					},
+					["coord"] = { 55.3, 41.2, AZJ_KAHET },
+				}),
+			}, {	-- RENOWN 23 --
 			}, {	-- RENOWN 24 --
 				q(82446, {	-- For What Glimmers in Shadow
 					["providers"] = {
