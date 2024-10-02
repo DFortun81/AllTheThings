@@ -976,6 +976,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 			}),
 			e(1562, {	-- Chess Event
 				["creatureID"] = 16816,	-- Echo of Medivh
+				["provider"] = { "o", 185119 },	-- Dust Covered Chest
 				["groups"] = {
 					i(28749),	-- King's Defender
 					i(28754),	-- Triptych Shield of the Ancients
