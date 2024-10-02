@@ -576,7 +576,7 @@ app.ShouldFillPurchases = function(group, FillData)
 		if val then
 			val = values[val]
 			if not val then return true end
-			if CurrentSkipLevel < val - (group == FillData.Root and 0.5 or 0) then
+			if (FillData.SkipLevel or CurrentSkipLevel) < val - (group == FillData.Root and 0.5 or 0) then
 				return false;
 			end
 		end
@@ -978,20 +978,15 @@ if TooltipDataProcessor and app.GameBuildVersion > 50000 then
 		-- Does the tooltip have an itemlink?
 		if self.AllTheThingsProcessing and link then
 			-- app.PrintDebug("Search Item",link,id,ttId);
-			if id == 137642 then -- skip Mark of Honor for now
-				AttachTooltipSearchResults(self, 1, app.EmptyFunction, "itemID", 137642);
-				return true;
+			local itemID = GetItemID(link);
+			-- TODO: review if Blizzard ever fixes their tooltips returning the wrong Item link when using TooltipUtil.GetDisplayedItem
+			-- on Auction House tooltips (i.e. Recipes) where one Item is nested inside another Item
+			if itemID ~= ttId then
+				-- app.PrintDebug("Mismatch TT data!",link,itemID,ttId)
+				-- fallout to the generalized Item search below
 			else
-				local itemID = GetItemID(link);
-				-- TODO: review if Blizzard ever fixes their tooltips returning the wrong Item link when using TooltipUtil.GetDisplayedItem
-				-- on Auction House tooltips (i.e. Recipes) where one Item is nested inside another Item
-				if itemID ~= ttId then
-					-- app.PrintDebug("Mismatch TT data!",link,itemID,ttId)
-					-- fallout to the generalized Item search below
-				else
-					AttachTooltipSearchResults(self, 1, SearchForLink, link);
-					return true;
-				end
+				AttachTooltipSearchResults(self, 1, SearchForLink, link);
+				return true;
 			end
 		end
 

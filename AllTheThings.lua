@@ -2020,7 +2020,6 @@ local TooltipSourceFields = {
 	"npcID",
 	"questID"
 };
-local InitialCachedSearch;
 local SourceLocationSettingsKey = setmetatable({
 	creatureID = "SourceLocations:Creatures",
 	npcID = "SourceLocations:Creatures",
@@ -2416,7 +2415,8 @@ app.AddEventHandler("OnLoad", function()
 	})
 end)
 
-local function GetSearchResults(method, paramA, paramB, ...)
+local searching
+local function GetSearchResults(method, paramA, paramB, options)
 	-- app.PrintDebug("GetSearchResults",method,paramA,paramB,...)
 	if not method then
 		print("GetSearchResults: Invalid method: nil");
@@ -2432,12 +2432,11 @@ local function GetSearchResults(method, paramA, paramB, ...)
 	if paramB then paramB = tonumber(paramB);
 	else rawlink = paramA; end
 
-	-- This method can be called nested, and some logic should only process for the initial call
-	local isTopLevelSearch;
-	if not InitialCachedSearch then
-		InitialCachedSearch = true;
-		isTopLevelSearch = true;
+	-- This method used to be called nested but that complication should no longer be necessary to support
+	if searching then
+		app.PrintDebug("NESTED SEARCH",paramA,paramB)
 	end
+	searching = true
 
 	-- Call to the method to search the database.
 	local group, a, b = method(paramA, paramB);
@@ -2465,7 +2464,7 @@ local function GetSearchResults(method, paramA, paramB, ...)
 				end
 			elseif paramA == "azeriteessenceID" then
 				local regroup = {};
-				local rank = ...;
+				local rank = options and options.Rank
 				if app.MODE_ACCOUNT then
 					for i,j in ipairs(group) do
 						if j.rank == rank and app.RecursiveUnobtainableFilter(j) then
@@ -2765,35 +2764,29 @@ local function GetSearchResults(method, paramA, paramB, ...)
 			-- print("achieve nocrits",#group.g)
 		end
 
-		-- Resolve Cost, but not if the search itself was skipped (Mark of Honor)
-		if method ~= app.EmptyFunction then
+		-- Fill the search result but not if the search itself was skipped (Mark of Honor) or indicated to skip
+		if not options or not options.SkipFill then
 			-- Fill up the group
-			app.FillGroups(group);
+			app.FillGroups(group)
 		end
 
-		-- Only need to build/update groups from the top level
-		if isTopLevelSearch then
-			AssignChildren(group);
-			app.TopLevelUpdateGroup(group);
-		end
+		-- Only need to build groups from the top level
+		AssignChildren(group);
 	-- delete sub-groups if there are none
 	elseif #group.g == 0 then
 		group.g = nil;
 	end
 
+	app.TopLevelUpdateGroup(group);
+
 	group.itemString = itemString
+	group.isBaseSearchResult = true;
 
-	if isTopLevelSearch then
-
-		group.isBaseSearchResult = true;
-
-		if isTopLevelSearch then InitialCachedSearch = nil; end
-	end
-
+	searching = nil
 	return group
 end
-app.GetCachedSearchResults = function(method, paramA, paramB, ...)
-	return app.GetCachedData((paramB and table.concat({ paramA, paramB, ...}, ":")) or paramA, GetSearchResults, method, paramA, paramB, ...);
+app.GetCachedSearchResults = function(method, paramA, paramB, options)
+	return app.GetCachedData(paramB and paramA..":"..paramB or paramA, GetSearchResults, method, paramA, paramB, options);
 end
 
 local IsComplete = app.IsComplete
@@ -2860,7 +2853,7 @@ local function DeterminePurchaseGroups(group, FillData)
 		-- 	NestObject(group, sourceGroup, nil, 1)
 		-- end
 		local groupHash = group.hash;
-		-- app.PrintDebug("DeterminePurchaseGroups",groupHash,"-collectibles",collectibles and #collectibles);
+		-- app.PrintDebug("DeterminePurchaseGroups",app:SearchLink(group),"-collectibles",collectibles and #collectibles);
 		local groups = {};
 		local clone;
 		for _,o in ipairs(collectibles) do
@@ -3245,6 +3238,7 @@ local function RunGroupsLayeredAsync(FillData)
 end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
 app.FillGroups = function(group)
+	group.__FillGroups = true
 	-- Sometimes entire sub-groups should be preventing from even allowing filling (i.e. Dynamic groups)
 	local skipFull = app.GetRelativeRawWithField(group, "skipFull");
 	if skipFull then return end
@@ -5842,7 +5836,6 @@ function app:CreateMiniListForGroup(group)
 			-- clone/search initially so as to not let popout operations modify the source data
 			group = CreateObject(group);
 			popout:SetData(group);
-			group.isPopout = true
 			group.skipFull = skipFull
 
 			-- app.PrintDebug(Colorize("clone",app.Colors.ChatLink))
@@ -5855,7 +5848,7 @@ function app:CreateMiniListForGroup(group)
 			if not group.g and not group.criteriaID and app.ThingKeys[key] then
 				local cmd = group.link or key .. ":" .. group[key];
 				app.SetSkipLevel(2);
-				local groupSearch = app.GetCachedSearchResults(app.SearchForLink, cmd);
+				local groupSearch = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {SkipFill=true});
 				app.SetSkipLevel(0);
 
 				-- app.PrintDebug(Colorize("search",app.Colors.ChatLink))
@@ -5883,14 +5876,19 @@ function app:CreateMiniListForGroup(group)
 				-- app.PrintTable(group)
 				-- app.PrintDebug(Colorize(".g",app.Colors.ChatLink))
 				-- app.PrintTable(group.g)
-			else
-				app.SetSkipLevel(2);
-				app.FillGroups(group);
-				app.SetSkipLevel(0);
 			end
 		else
 			popout:SetData(group);
-			group.isPopout = true
+		end
+
+		group.isPopout = true
+
+		-- If the group specifically needs to be filled, do that now that it's in the window
+		if not group.__FillGroups then
+			app.PrintDebug("DoFillGroups",app:SearchLink(group))
+			app.SetSkipLevel(2)
+			app.FillGroups(group)
+			app.SetSkipLevel(0)
 		end
 
 		-- Insert the data group into the Raw Data table.
@@ -12845,7 +12843,7 @@ SlashCmdList.AllTheThings = function(cmd)
 
 		-- Search for the Link in the database
 		app.SetSkipLevel(2);
-		local group = app.GetCachedSearchResults(app.SearchForLink, cmd);
+		local group = app.GetCachedSearchResults(app.SearchForLink, cmd, nil, {SkipFill = true});
 		app.SetSkipLevel(0);
 		-- make sure it's 'something' returned from the search before throwing it into a window
 		if group and (group.link or group.name or group.text or group.key) then
