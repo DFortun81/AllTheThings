@@ -9,7 +9,7 @@ local _, app = ...;
 -- Encapsulates the functionality for determining whether a value is to be considered 'retrieving'
 
 -- Global locals
-local RETRIEVING_DATA = RETRIEVING_DATA
+local wipe, RETRIEVING_DATA = wipe, RETRIEVING_DATA
 
 -- App locals
 
@@ -29,7 +29,7 @@ local RetrievingTexts = {
 local api = {};
 app.Modules.RetrievingData = api;
 -- Returns whether the provided string matches a string which indicates the data is not yet loaded in the Client
-api.IsRetrieving = function(text)
+local function IsRetrieving(text)
 	return (not text
 		or RetrievingTexts[text]
 		or text:find(RETRIEVING_DATA)
@@ -37,9 +37,35 @@ api.IsRetrieving = function(text)
 		-- make sure regardless of conditional return we return a true here for consistency
 		and true;
 end
+api.IsRetrieving = IsRetrieving;
 -- Returns whether the provided string is empty or equals RETRIEVING_DATA which indicates the data is not yet loaded in the Client (not used for Items or in general)
 api.IsRetrievingData = function(text)
 	return (not text or RetrievingTexts[text])
 		-- make sure regardless of conditional return we return a true here for consistency
 		and true;
 end
+
+-- Search Results Lib
+local searchCache, working = {}, nil;
+app.GetCachedData = function(cacheKey, method, ...)
+	if IsRetrieving(cacheKey) then return; end
+	local cache = searchCache[cacheKey];
+	if not cache then
+		cache, working = method(...);
+		if not working then
+			-- Only cache if the tooltip if no additional work is needed.
+			searchCache[cacheKey] = cache;
+		end
+		return cache, working;
+	end
+	return cache;
+end
+local function WipeSearchCache()
+	wipe(searchCache);
+end
+app.WipeSearchCache = WipeSearchCache;
+app.AddEventRegistration("PLAYER_DIFFICULTY_CHANGED", WipeSearchCache);
+app.AddEventHandler("OnRefreshComplete", WipeSearchCache);
+app.AddEventHandler("OnThingCollected", WipeSearchCache);
+app.AddEventHandler("OnThingRemoved", WipeSearchCache);
+app.AddEventHandler("OnSettingsRefreshed", WipeSearchCache);

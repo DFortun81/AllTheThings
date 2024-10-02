@@ -1974,33 +1974,6 @@ app.FillAchievementCriteriaAsync = function(o)
 end
 end	-- Symlink Lib
 
-
--- Search Results Lib
-do
-local searchCache, working = {}, nil;
-app.GetCachedData = function(cacheKey, method, ...)
-	if IsRetrieving(cacheKey) then return; end
-	local cache = searchCache[cacheKey];
-	if not cache then
-		cache, working = method(...);
-		if not working then
-			-- Only cache if the tooltip if no additional work is needed.
-			searchCache[cacheKey] = cache;
-		end
-		return cache, working;
-	end
-	return cache;
-end
-app.WipeSearchCache = function()
-	wipe(searchCache);
-end
-app.AddEventRegistration("PLAYER_DIFFICULTY_CHANGED", app.WipeSearchCache);
-app.AddEventHandler("OnRefreshComplete", app.WipeSearchCache);
-app.AddEventHandler("OnThingCollected", app.WipeSearchCache);
-app.AddEventHandler("OnThingRemoved", app.WipeSearchCache);
-app.AddEventHandler("OnSettingsRefreshed", app.WipeSearchCache);
-end
-
 do
 local ContainsLimit, ContainsExceeded;
 local Indicator = app.GetIndicatorIcon;
