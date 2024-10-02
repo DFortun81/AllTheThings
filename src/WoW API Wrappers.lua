@@ -136,14 +136,6 @@ else
 	else lib.GetItemSpecInfo = nil; end
 end
 
----@diagnostic disable-next-line: deprecated
-if not GetItemInfo then
-	local C_Item = C_Item;
-else
-	---@diagnostic disable-next-line: deprecated
-	local GetItemInfoInstant = GetItemInfoInstant;
-end
-
 -- Spell APIs
 ---@diagnostic disable-next-line: deprecated
 if not GetSpellInfo then
