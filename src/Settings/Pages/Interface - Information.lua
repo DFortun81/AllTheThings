@@ -948,6 +948,8 @@ local InformationTypes = {
 						tinsert(tooltipInfo, 1, { left = L.HOLIDAY_DROP, wrap = true, color = app.Colors.TooltipDescription });
 					end
 				end
+				-- TODO: maybe access 'SkipPurchases' directly via Module access to check
+				-- all items/currencies which exclude filling in tooltips
 				-- Mark of Honor
 				if itemID == 137642 then
 					if app.Settings:GetTooltipSetting("SummarizeThings") then

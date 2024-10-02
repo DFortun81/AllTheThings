@@ -3175,34 +3175,34 @@ local function FillGroupsLayered(group, FillData)
 end
 -- Iterates through all groups of the group, filling them with appropriate data, then queueing itself on the FillData.Runner to recursively follow the next layer of groups
 -- over multiple frames to reduce stutter
-local function FillGroupsRecursiveAsync(group, FillData)
-	if SkipFillingGroup(group, FillData) then
-		-- if FillData.Debug then
-		-- 	app.print(Colorize("FGRA-SKIP",app.Colors.ChatLinkError),group.skipFill,FillData.Included[group.hash],app:SearchLink(group))
-		-- end
-		-- app.PrintDebug(Colorize("FGRA-SKIP",app.Colors.ChatLinkError),group.skipFill,FillData.Included[group.hash],app:SearchLink(group))
-		return;
-	end
+-- local function FillGroupsRecursiveAsync(group, FillData)
+-- 	if SkipFillingGroup(group, FillData) then
+-- 		-- if FillData.Debug then
+-- 		-- 	app.print(Colorize("FGRA-SKIP",app.Colors.ChatLinkError),group.skipFill,FillData.Included[group.hash],app:SearchLink(group))
+-- 		-- end
+-- 		-- app.PrintDebug(Colorize("FGRA-SKIP",app.Colors.ChatLinkError),group.skipFill,FillData.Included[group.hash],app:SearchLink(group))
+-- 		return;
+-- 	end
 
-	-- if group.questID == 78663 then
-	-- 	FillData.Debug = true
-	-- 	app.print("FGRA",app:SearchLink(group))
-	-- end
+-- 	-- if group.questID == 78663 then
+-- 	-- 	FillData.Debug = true
+-- 	-- 	app.print("FGRA",app:SearchLink(group))
+-- 	-- end
 
-	FillGroupDirect(group, FillData, true)
+-- 	FillGroupDirect(group, FillData, true)
 
-	local g = group.g;
-	if g then
-		-- if FillData.Debug then
-		-- 	app.print(".g",#g,app:SearchLink(group))
-		-- end
-		local Run = FillData.Runner.Run;
-		-- Then nest anything further
-		for _,o in ipairs(g) do
-			Run(FillGroupsRecursiveAsync, o, FillData);
-		end
-	end
-end
+-- 	local g = group.g;
+-- 	if g then
+-- 		-- if FillData.Debug then
+-- 		-- 	app.print(".g",#g,app:SearchLink(group))
+-- 		-- end
+-- 		local Run = FillData.Runner.Run;
+-- 		-- Then nest anything further
+-- 		for _,o in ipairs(g) do
+-- 			Run(FillGroupsRecursiveAsync, o, FillData);
+-- 		end
+-- 	end
+-- end
 -- Fills the group and returns an array of the next layer of groups to fill
 -- Run an entire layer, run a function to run the next layer
 -- Capture next layer
@@ -3221,7 +3221,7 @@ local function FillGroupsLayeredAsync(group, FillData)
 	local g = group.g;
 	if g then
 		-- if FillData.CurrentLayer then
-		-- 	app.PrintDebug("AddLayered.g",#g,app:SearchLink(group))
+		-- 	app.PrintDebug("AddLayered.g",FillData.CurrentLayer,#g,app:SearchLink(group))
 		-- end
 		app.ArrayAppend(FillData.NextLayer, g)
 	end
@@ -3263,7 +3263,8 @@ app.FillGroups = function(group)
 		FillRecipes = group.recipeID or app.ReagentsDB[group.itemID or 0]
 	};
 
-	-- app.PrintDebug("FillGroups",app:SearchLink(group),group.__type,"window?",groupWindow)
+	-- app.PrintDebug("FillGroups",app:SearchLink(group),group.__type)
+	-- app.PrintTable(FillData)
 
 	-- Fill the group with all nestable content
 	if groupWindow then
