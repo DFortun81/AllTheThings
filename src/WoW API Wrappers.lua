@@ -144,7 +144,6 @@ if not GetSpellInfo then
 		return spell and C_Spell_GetSpellName(spell);
 	end;
 	lib.GetSpellIcon = C_Spell.GetSpellTexture;
-	--lib.GetSpellLink = C_Spell.GetSpellLink;
 
 	local C_Spell_GetSpellCooldown = C_Spell.GetSpellCooldown;
 	lib.GetSpellCooldown = function(spellID)
@@ -160,7 +159,6 @@ else
 		lib.GetSpellName = function(spellID, rank) return rank and select(1, GetSpellInfo(spellID, rank)) or select(1, GetSpellInfo(spellID)); end;
 	end
 	lib.GetSpellIcon = function(spellID) return select(3, GetSpellInfo(spellID)); end;
-	--lib.GetSpellLink = GetSpellLink;
 ---@diagnostic disable-next-line: deprecated
 	lib.GetSpellCooldown = GetSpellCooldown;
 end
@@ -181,8 +179,20 @@ else
 	lib.GetTradeSkillTexture = function() return end
 end
 
-if not GetSpellLink then
-	lib.GetSpellLink = C_Spell.GetSpellLink;
+if C_Spell then
+	local C_Spell = C_Spell;
+	
+	-- Warning: The API Wrapper for GetSpellLink is not completely equivalent.
+	-- GetSpellLink accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
+	-- Currently, only the first type is implemented.
+	if C_Spell.GetSpellLink then lib.GetSpellLink = function(SpellIdentifier)
+		return C_Spell.GetSpellLink(SpellIdentifier), C_Spell.GetSpellIDForSpellIdentifier(SpellIdentifier);
+	end
+	---@diagnostic disable-next-line: deprecated
+	elseif GetSpellLink then lib.GetSpellLink = GetSpellLink;
+	else lib.GetSpellLink = nil; end
 else
-	lib.GetSpellLink = GetSpellLink;
+	---@diagnostic disable-next-line: deprecated
+	if GetSpellLink then lib.GetSpellLink = GetSpellLink;
+	else lib.GetSpellLink = nil; end
 end
