@@ -101,6 +101,11 @@ if C_Item then
 	---@diagnostic disable-next-line: deprecated
 	elseif GetItemInfo then lib.GetItemInfo = GetItemInfo;
 	else lib.GetItemInfo = nil; end
+
+	if C_Item.GetItemSpecInfo then lib.GetItemSpecInfo = C_Item.GetItemSpecInfo;
+	---@diagnostic disable-next-line: deprecated
+	elseif GetItemSpecInfo then lib.GetItemSpecInfo = GetItemSpecInfo;
+	else lib.GetItemSpecInfo = nil; end
 else
 	---@diagnostic disable-next-line: deprecated
 	if GetItemCount then lib.GetItemCount = GetItemCount;
@@ -125,17 +130,18 @@ else
 	---@diagnostic disable-next-line: deprecated
 	if GetItemInfo then lib.GetItemInfo = GetItemInfo;
 	else lib.GetItemInfo = nil; end
+
+	---@diagnostic disable-next-line: deprecated
+	if GetItemSpecInfo then lib.GetItemSpecInfo = GetItemSpecInfo;
+	else lib.GetItemSpecInfo = nil; end
 end
 
 ---@diagnostic disable-next-line: deprecated
 if not GetItemInfo then
 	local C_Item = C_Item;
-	lib.GetItemSpecInfo = C_Item.GetItemSpecInfo;
 else
 	---@diagnostic disable-next-line: deprecated
 	local GetItemInfoInstant = GetItemInfoInstant;
-	---@diagnostic disable-next-line: deprecated
-	lib.GetItemSpecInfo = GetItemSpecInfo;
 end
 
 -- Spell APIs
