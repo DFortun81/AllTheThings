@@ -883,7 +883,7 @@ DF_ENGINEERING = applyclassicphase(DF_PHASE_ONE, bubbleDown({ ["timeline"] = { A
 		r(382387),	-- P.E.W. x2
 	}),
 }));
-TWW_ENGINEERING = bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+TWW_ENGINEERING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423335),	-- Khaz Algar Engineering
 	r(425139),	-- Recraft Equipment
 	r(447311),	-- Pilfer Through Parts
