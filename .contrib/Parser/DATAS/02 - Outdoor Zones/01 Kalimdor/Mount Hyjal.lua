@@ -753,7 +753,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 28.4, 36.4, MOUNT_HYJAL },
 					["groups"] = {
 						objective(1, {	-- 0/8 Twilight Servitor Freed
-							["provider"] = { "n", 39719 },	-- Twilight Servitor Quest Credit
+							["providers"] = {
+								{ "n", 39644 },	-- Twilight Servitor
+								{ "i", 52730 },	-- Cleansing Draught
+							},
 						}),
 						i(57364),	-- Purifying Spaulders
 						i(57363),	-- Invidious Casque
