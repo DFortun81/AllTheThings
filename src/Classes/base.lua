@@ -832,10 +832,7 @@ local function NotInitialized(name)
 	app.print(name,"not initialized yet...");
 end
 app.SetAccountCollected = function() NotInitialized("SetAccountCollected") end;
-app.SetAccountCollectedForSubType = function() NotInitialized("SetAccountCollectedForSubType") end
 app.SetCollected = function() NotInitialized("SetCollected") end;
-app.SetCollectedForSubType = function() NotInitialized("SetCollectedForSubType") end
--- Classic needs to use modules/Collection.lua pls
 app.SetCached = function() NotInitialized("SetCached") end;
 app.IsCached = function() NotInitialized("IsCached") end;
 app.IsAccountCached = function() NotInitialized("IsAccountCached") end;

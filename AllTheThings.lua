@@ -12587,20 +12587,6 @@ app.Startup = function()
 	if not currentCharacter.Quests then currentCharacter.Quests = {}; end
 	if not currentCharacter.Spells then currentCharacter.Spells = {}; end
 	if not currentCharacter.Titles then currentCharacter.Titles = {}; end
-
-	-- Update timestamps.
-	local now = time();
-	local timeStamps = currentCharacter.TimeStamps;
-	if not timeStamps then
-		timeStamps = {};
-		currentCharacter.TimeStamps = timeStamps;
-	end
-	for key,value in pairs(currentCharacter) do
-		if type(value) == "table" and not timeStamps[key] then
-			timeStamps[key] = now;
-		end
-	end
-	currentCharacter.lastPlayed = now;
 	app.CurrentCharacter = currentCharacter;
 	app.AddEventHandler("OnPlayerLevelUp", function()
 		currentCharacter.lvl = app.Level;

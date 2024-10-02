@@ -82,101 +82,6 @@ local RGBToHex = app.Modules.Color.RGBToHex;
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 
--- Helper Functions
-app.AddEventHandler("OnThingCollected", function() app.Audio:PlayFanfare(); end);
-local pendingCollection, pendingRemovals, retrievingCollection, pendingCollectionCooldown = {},{},{},0;
-local function PendingCollectionCoroutine()
-	while not app.IsReady do coroutine.yield(); end
-	while pendingCollectionCooldown > 0 do
-		pendingCollectionCooldown = pendingCollectionCooldown - 1;
-		coroutine.yield();
-
-		-- If any of the collection objects is retrieving data, try again.
-		local anyRetrieving = false;
-		for hash,thing in pairs(retrievingCollection) do
-			local retries = thing[1];
-			if retries > 0 then
-				retries = retries - 1;
-				thing[1] = retries;
-				if IsRetrieving(thing[2].text) then
-					retrievingCollection[hash] = nil;
-					anyRetrieving = true;
-				end
-			end
-		end
-		if anyRetrieving then
-			pendingCollectionCooldown = pendingCollectionCooldown + 1;
-		end
-	end
-
-	-- Report new things to your collection!
-	local any,allTypes = false,{};
-	local reportCollected = app.Settings:GetTooltipSetting("Report:Collected");
-	for hash,t in pairs(pendingCollection) do
-		local f = t.f;
-		if f then allTypes[f] = true; end
-		if reportCollected then
-			print((t.text or RETRIEVING_DATA) .. " was added to your collection!");
-		end
-		any = true;
-	end
-	if any then
-		wipe(pendingCollection);
-
-		-- Check if there was a mount.
-		if allTypes[app.FilterConstants.MOUNTS] then
-			app.Audio:PlayMountFanfare();
-		else
-			app.Audio:PlayFanfare();
-		end
-	end
-
-	-- Report removed things from your collection...
-	any = false;
-	for hash,t in pairs(pendingRemovals) do
-		if reportCollected then
-			print((t.text or RETRIEVING_DATA) .. " was removed from your collection!");
-		end
-		any = true;
-	end
-	if any then
-		wipe(pendingRemovals);
-		app.Audio:PlayRemoveSound();
-	end
-end
-local function AddToCollection(group)
-	if not group then return; end
-	local hash = group.hash;
-	if IsRetrieving(group.text) then
-		retrievingCollection[hash] = { 5, group };
-	end
-
-	-- Do not add the item to the pending list if it was already in it.
-	if pendingRemovals[hash] then
-		pendingRemovals[hash] = nil;
-	else
-		pendingCollection[hash] = group;
-		pendingCollectionCooldown = 10;
-		app:StartATTCoroutine("Pending Collection", PendingCollectionCoroutine);
-	end
-end
-local function RemoveFromCollection(group)
-	if not group then return; end
-	local hash = group.hash;
-	if IsRetrieving(group.text) then
-		retrievingCollection[hash] = { 5, group };
-	end
-
-	-- Do not add the item to the pending list if it was already in it.
-	if pendingCollection[hash] then
-		pendingCollection[hash] = nil;
-	else
-		pendingRemovals[hash] = group;
-		pendingCollectionCooldown = 10;
-		app:StartATTCoroutine("Pending Collection", PendingCollectionCoroutine);
-	end
-end
-
 -- Data Lib
 local AllTheThingsAD = {};			-- For account-wide data.
 
@@ -3911,7 +3816,7 @@ end;
 recipeFields.collected = function(t)
 	if app.CurrentCharacter.Spells[t.spellID] then return 1; end
 	local isKnown = not t.nmc and app.IsSpellKnown(t.spellID, t.rank, GetRelativeValue(t, "requireSkill") == 261);
-	return app.SetCollectedForSubType(t, "Spells", "Recipes", t.spellID, isKnown);
+	return app.SetCollected(t, "Spells", t.spellID, isKnown);
 end;
 recipeFields.f = function(t)
 	return app.FilterConstants.RECIPES;
@@ -3962,7 +3867,7 @@ local SetBattlePetCollected = function(t, speciesID, collected)
 	return app.SetCollected(t, "BattlePets", speciesID, collected);
 end
 local SetMountCollected = function(t, spellID, collected)
-	return app.SetCollectedForSubType(t, "Spells", "Mounts", spellID, collected);
+	return app.SetCollected(t, "Spells", spellID, collected);
 end
 local speciesFields = {
 	["f"] = function(t)
@@ -4062,7 +3967,7 @@ if C_PetJournal and app.GameBuildVersion > 30000 then
 	if C_MountJournal then
 		-- Once the Mount Journal API is available, then all mounts become account wide.
 		SetMountCollected = function(t, spellID, collected)
-			return app.SetAccountCollectedForSubType(t, "Spells", "Mounts", spellID, collected);
+			return app.SetAccountCollected(t, "Spells", spellID, collected);
 		end
 		local SpellIDToMountID = setmetatable({}, { __index = function(t, id)
 			local allMountIDs = C_MountJournal.GetMountIDs();
@@ -4285,18 +4190,6 @@ local ADDON_LOADED_HANDLERS = {
 		if not currentCharacter.Transmog then currentCharacter.Transmog = {}; end
 
 		-- Update timestamps.
-		local now = time();
-		local timeStamps = currentCharacter.TimeStamps;
-		if not timeStamps then
-			timeStamps = {};
-			currentCharacter.TimeStamps = timeStamps;
-		end
-		for key,value in pairs(currentCharacter) do
-			if type(value) == "table" and not timeStamps[key] then
-				timeStamps[key] = now;
-			end
-		end
-		currentCharacter.lastPlayed = now;
 		app.CurrentCharacter = currentCharacter;
 		app.AddEventHandler("OnPlayerLevelUp", function()
 			currentCharacter.lvl = app.Level;
@@ -4322,154 +4215,6 @@ local ADDON_LOADED_HANDLERS = {
 
 		-- Account Wide Settings
 		local accountWideSettings = app.Settings.AccountWide;
-		local function IsCached(field, id)
-			return currentCharacter[field][id] or nil
-		end
-		local function IsAccountCached(field, id)
-			return accountWideData[field][id] or nil
-		end
-		local function SetAccountCollected(t, field, id, collected)
-			local container = accountWideData[field];
-			local oldstate = container[id];
-			if collected then
-				if not oldstate then
-					local now = time();
-					timeStamps[field] = now;
-					currentCharacter.lastPlayed = now;
-					AddToCollection(t);
-					container[id] = 1;
-				end
-				return 1;
-			elseif oldstate then
-				local now = time();
-				timeStamps[field] = now;
-				currentCharacter.lastPlayed = now;
-				RemoveFromCollection(t);
-				container[id] = nil;
-			end
-		end
-		local function SetAccountCollectedForSubType(t, field, subtype, id, collected)
-			local container = accountWideData[field];
-			local oldstate = container[id];
-			if collected then
-				if not oldstate then
-					local now = time();
-					timeStamps[field] = now;
-					currentCharacter.lastPlayed = now;
-					AddToCollection(t);
-					container[id] = 1;
-				end
-				return 1;
-			elseif oldstate then
-				local now = time();
-				timeStamps[field] = now;
-				currentCharacter.lastPlayed = now;
-				RemoveFromCollection(t);
-				container[id] = nil;
-			end
-		end
-		local function SetCollected(t, field, id, collected)
-			local container = currentCharacter[field];
-			local oldstate = container[id];
-			if collected then
-				if not oldstate then
-					if t and not (accountWideSettings[field] and accountWideData[field][id]) then
-						--print("SetCollected", field, id, accountWideSettings[field], accountWideData[field][id]);
-						AddToCollection(t);
-					end
-					container[id] = 1;
-					accountWideData[field][id] = 1;
-					local now = time();
-					timeStamps[field] = now;
-					currentCharacter.lastPlayed = now;
-				else
-					accountWideData[field][id] = 1;
-				end
-				return 1;
-			elseif oldstate then
-				container[id] = nil;
-				local now = time();
-				timeStamps[field] = now;
-				currentCharacter.lastPlayed = now;
-				for guid,other in pairs(characterData) do
-					local otherContainer = other[field];
-					if otherContainer and otherContainer[id] then
-						accountWideData[field][id] = 1;
-						return accountWideSettings[field] and 2;
-					end
-				end
-				if accountWideData[field][id] then
-					RemoveFromCollection(t);
-					accountWideData[field][id] = nil;
-				end
-			elseif accountWideSettings[field] and accountWideData[field][id] then
-				return 2;
-			end
-		end
-		local function SetCollectedForSubType(t, field, subtype, id, collected)
-			local container = currentCharacter[field];
-			local oldstate = container[id];
-			if collected then
-				if not oldstate then
-					if t and not (accountWideSettings[subtype] and accountWideData[field][id]) then
-						--print("SetCollectedForSubType", field, subtype, id, accountWideSettings[subtype], accountWideData[field][id]);
-						AddToCollection(t);
-					end
-					container[id] = 1;
-					accountWideData[field][id] = 1;
-					local now = time();
-					timeStamps[field] = now;
-					currentCharacter.lastPlayed = now;
-				else
-					accountWideData[field][id] = 1;
-				end
-				return 1;
-			elseif oldstate then
-				container[id] = nil;
-				local now = time();
-				timeStamps[field] = now;
-				currentCharacter.lastPlayed = now;
-				for guid,other in pairs(characterData) do
-					local otherContainer = other[field];
-					if otherContainer and otherContainer[id] then
-						accountWideData[field][id] = 1;
-						return accountWideSettings[subtype] and 2;
-					end
-				end
-				if accountWideData[field][id] then
-					RemoveFromCollection(t);
-					accountWideData[field][id] = nil;
-				end
-			elseif accountWideSettings[subtype] and accountWideData[field][id] then
-				return 2;
-			end
-		end
-		-- Allows directly saving a cached state for a table of ids for a given field at the Account level
-		-- Note: This does not include reporting of collected things. It should be used in situations where this is not desired (onstartup refresh, etc.)
-		local function SetBatchAccountCached(field, ids, state)
-			-- app.PrintDebug("SBAC:A",field,state)
-			local container = accountWideData[field]
-			for id,_ in pairs(ids) do
-				container[id] = state
-			end
-		end
-		-- Allows directly saving a cached state for a table of ids for a given field.
-		-- Note: This does not include reporting of collected things. It should be used in situations where this is not desired (onstartup refresh, etc.)
-		local function SetBatchCached(field, ids, state)
-			-- app.PrintDebug("SBC",field,state)
-			local container = currentCharacter[field]
-			for id,_ in pairs(ids) do
-				container[id] = state
-			end
-		end
-		app.IsCached = IsCached;
-		app.IsAccountCached = IsAccountCached;
-		app.SetAccountCollected = SetAccountCollected;
-		app.SetAccountCollectedForSubType = SetAccountCollectedForSubType;
-		app.SetCollected = SetCollected;
-		app.SetCollectedForSubType = SetCollectedForSubType;
-		app.SetBatchAccountCached = SetBatchAccountCached;
-		app.SetBatchCached = SetBatchCached;
 
 		-- Notify Event Handlers that Saved Variable Data is available.
 		app.HandleEvent("OnSavedVariablesAvailable", currentCharacter, accountWideData, accountWideSettings);

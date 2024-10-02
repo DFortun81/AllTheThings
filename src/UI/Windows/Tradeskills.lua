@@ -191,7 +191,7 @@ app:CreateWindow("Tradeskills", {
 								elseif spellID == 20583 then spellID = 24492; end 	-- Fix rank 1 Nature Resistance.
 								app.CurrentCharacter.SpellRanks[spellID] = shouldShowSpellRanks and app.CraftTypeToCraftTypeID(craftType) or nil;
 								if not app.CurrentCharacter.Spells[spellID] then
-									app.SetCollectedForSubType(nil, "Spells", "Recipes", spellID, true);
+									app.SetCollected(nil, "Spells", spellID, true);
 									learned = learned + 1;
 								end
 								if not skillCache[spellID] then
@@ -251,7 +251,7 @@ app:CreateWindow("Tradeskills", {
 								elseif spellID == 20583 then spellID = 24492; end 	-- Fix rank 1 Nature Resistance.
 								app.CurrentCharacter.SpellRanks[spellID] = shouldShowSpellRanks and app.CraftTypeToCraftTypeID(skillType) or nil;
 								if not app.CurrentCharacter.Spells[spellID] then
-									app.SetCollectedForSubType(nil, "Spells", "Recipes", spellID, true);
+									app.SetCollected(nil, "Spells", spellID, true);
 									learned = learned + 1;
 								end
 
@@ -480,11 +480,7 @@ app:CreateWindow("Tradeskills", {
 					else
 						spell = app.CreateSpell(spellID);
 					end
-					if spell.f == app.FilterConstants.RECIPES then
-						app.SetCollectedForSubType(spell, "Spells", "Recipes", spellID, true);
-					else
-						app.SetCollected(spell, "Spells", spellID, true);
-					end
+					app.SetCollected(spell, "Spells", spellID, true);
 					app:RefreshDataQuietly("NEW_SPELL_LEARNED", true);
 				else
 					self:RefreshRecipes();

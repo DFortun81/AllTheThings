@@ -133,6 +133,25 @@ local function RemoveFromCollection(group)
 end
 
 app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, accountWideData)
+	-- Update timestamps.
+	local now = time();
+	local timeStamps = currentCharacter.TimeStamps;
+	if not timeStamps then
+		timeStamps = {};
+		currentCharacter.TimeStamps = timeStamps;
+	end
+	for key,value in pairs(currentCharacter) do
+		if type(value) == "table" and not timeStamps[key] then
+			timeStamps[key] = now;
+		end
+	end
+	currentCharacter.lastPlayed = now;
+	local function UpdateTimestampForField(field)
+		local now = time();
+		timeStamps[field] = now;
+		currentCharacter.lastPlayed = now;
+	end
+	
 	local accountWide = app.Settings.AccountWide
 	-- Returns the cached status for this Account for a given field ID
 	local function IsAccountCached(field, id)
@@ -144,7 +163,10 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	end
 	-- Assigns the cached status for this Character for a given field ID without causing any related events
 	local function SetCached(field, id, state)
-		currentCharacter[field][id] = state
+		if currentCharacter[field][id] ~= state then
+			currentCharacter[field][id] = state
+			UpdateTimestampForField(field);
+		end
 	end
 	-- Assigns the cached status for this Account for a given field ID without causing any related events
 	local function SetAccountCached(field, id, state)
@@ -153,8 +175,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	-- Assigns the cached status for this Account for a given field by running a check function against a given cache container
 	local function SetAccountCachedByCheck(field, check)
 		-- app.PrintDebug("SACBC",field,check)
-		local container = accountWideData[field]
-		check(container)
+		check(accountWideData[field])
 	end
 	-- Returns the tracked status for this Account for a given field ID
 	local function IsAccountTracked(field, id, setting)
@@ -177,6 +198,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		for id,_ in pairs(ids) do
 			container[id] = state
 		end
+		UpdateTimestampForField(field);
 	end
 	local function SetAccountCollected(t, field, id, collected, settingKey)
 		-- app.PrintDebug("SC:A",t and t.hash,t and t.collectible,t and t.collected,field,id,collected)
@@ -184,7 +206,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		if collected then
 			if not oldstate then
 				-- if it's a known collectible thing not collected under current settings, then collect it
-				if t and t.collectible and not t.collected then
+				if t and t.collectible then
 					AddToCollection(t)
 				else
 					-- if t exists, then AddToCollection does some handling of collection stuff...
@@ -214,8 +236,9 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		local oldstate = IsCached(field, id)
 		if collected then
 			if not oldstate then
+				UpdateTimestampForField(field);
 				-- if it's a known collectible thing not collected under current settings, then collect it
-				if t and t.collectible and not t.collected then
+				if t and t.collectible then
 					AddToCollection(t)
 				else
 					-- if t exists, then AddToCollection does some handling of collection stuff...
@@ -230,6 +253,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 			-- basically have to recalculate account data to know if this thing is still technically collected
 			-- via another character data, so clear it anyway
 			if accountWideData[field][id] then
+				UpdateTimestampForField(field);
 				RemoveFromCollection(t)
 				accountWideData[field][id] = nil
 				-- if t exists, then RemoveFromCollection does some handling of collection stuff...
