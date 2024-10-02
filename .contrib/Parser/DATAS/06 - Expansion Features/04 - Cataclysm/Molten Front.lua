@@ -492,7 +492,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 				q(29210, {	-- Enduring the Heat
 					["qg"] = 52494,	-- Marin Bladewing
-					["sourceQuest"] = 29211,	-- Solar Core Destruction
+					["sourceQuests"] = {
+						29211,	-- Solar Core Destruction
+						29192,	-- The Wardens are Watching
+					},
+					["sourceQuestNumRequired"] = 1,
 					["coord"] = { 64.8, 66.8, THE_MOLTEN_FRONT },
 					["isDaily"] = true,
 					["groups"] = {
