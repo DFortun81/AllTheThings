@@ -96,6 +96,11 @@ if C_Item then
 	---@diagnostic disable-next-line: deprecated
 	elseif GetItemInfoInstant then lib.GetItemID = GetItemInfoInstant;
 	else lib.GetItemID = nil; end
+
+	if C_Item.GetItemInfo then lib.GetItemInfo = C_Item.GetItemInfo;
+	---@diagnostic disable-next-line: deprecated
+	elseif GetItemInfo then lib.GetItemInfo = GetItemInfo;
+	else lib.GetItemInfo = nil; end
 else
 	---@diagnostic disable-next-line: deprecated
 	if GetItemCount then lib.GetItemCount = GetItemCount;
@@ -116,19 +121,19 @@ else
 	---@diagnostic disable-next-line: deprecated
 	if GetItemInfoInstant then lib.GetItemID = GetItemInfoInstant;
 	else lib.GetItemID = nil; end
+
+	---@diagnostic disable-next-line: deprecated
+	if GetItemInfo then lib.GetItemInfo = GetItemInfo;
+	else lib.GetItemInfo = nil; end
 end
 
 ---@diagnostic disable-next-line: deprecated
 if not GetItemInfo then
 	local C_Item = C_Item;
-	local GetItemInfo = C_Item.GetItemInfo;
-	lib.GetItemInfo = GetItemInfo;
 	lib.GetItemSpecInfo = C_Item.GetItemSpecInfo;
 else
 	---@diagnostic disable-next-line: deprecated
 	local GetItemInfoInstant = GetItemInfoInstant;
-	---@diagnostic disable-next-line: deprecated
-	lib.GetItemInfo = GetItemInfo;
 	---@diagnostic disable-next-line: deprecated
 	lib.GetItemSpecInfo = GetItemSpecInfo;
 end
