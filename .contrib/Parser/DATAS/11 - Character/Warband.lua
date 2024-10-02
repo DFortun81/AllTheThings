@@ -8,14 +8,14 @@ WARBAND = createHeader({
 		en = "Warband",
 	},
 });
-root(ROOTS.Character, n(WARBAND, {
-	n(ACHIEVEMENTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+	n(ACHIEVEMENTS, {
 		ach(19470),	-- One Warband Mentor: The War Within
 		ach(19460),	-- Two Warband Mentors: The War Within
 		ach(19475),	-- Three Warband Mentors: The War Within
 		ach(19476),	-- Four Warband Mentors: The War Within
 		ach(19477),	-- Five Warband Mentors: The War Within
-	})),
+	}),
 	n(QUESTS, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 		q(83492, {	-- Warbanding Together
 			["g"] = {
@@ -53,4 +53,4 @@ root(ROOTS.Character, n(WARBAND, {
 			},
 		}),
 	})),
-}));
+})));

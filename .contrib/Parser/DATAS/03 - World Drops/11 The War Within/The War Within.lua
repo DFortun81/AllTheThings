@@ -93,7 +93,6 @@ root(ROOTS.WorldDrops, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { AD
 		}),
 	}),
 	n(WEAPONS, {
-		--TODO: uncomment & remove from unsorted if it drop
 		i(224627),	-- Arathi Arquebus
 		i(224628),	-- Arathi Claymore
 		i(224633),	-- Arathi Greataxe
