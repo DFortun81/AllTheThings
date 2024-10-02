@@ -725,7 +725,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["questID"] = 81518,
 					}),
 					o(417057, {	-- Hallowfall Farm Supply
-						["sourceQuests"] = { 79173 },	-- Supply the Effort
+						["sourceQuests"] = { 79173 },	-- Supply the Effort TODO: possibly 79180 hqt for any of 2 weekly?
 						["coord"] = { 63.2, 29.5, HALLOWFALL },
 						["questID"] = 79191,
 					}),

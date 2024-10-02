@@ -5,6 +5,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 	m(DORNOGAL, {
 		n(WEEKLY_HOLIDAYS, {
 			n(REWARDS, {
+				i(229129, {	-- Cache of Delver's Spoils
+					["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+				}),
 				i(226193, {	-- Cache of Nerubian Treasures (N)
 					["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 				}),

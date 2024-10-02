@@ -74,7 +74,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 				q(60396, {	-- Aiding Maldraxxus
 					["provider"] = { "n", 158339 },	-- Sergeant Romark
-					["coord"] = { 54.2, 68.8, MALDRAXXUS },
+					["coords"] = {
+						{ 54.2, 68.8, MALDRAXXUS },
+						{ 47.8, 29.1, SEAT_OF_THE_PRIMUS },
+					},
 					["g"] = {
 						i(181732),	-- Tribute of the Ambitious
 					},
@@ -188,7 +191,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(60429, {	-- Troubles at Home
-				--	["provider"] = { "n",  },	--
+					["provider"] = { "n", 167210 },	-- Tabulator Killham <Battle Reckoner>
 					["coord"] = { 59.7, 43.7, SEAT_OF_THE_PRIMUS },
 					["g"] = {
 						i(181733),	-- Tribute of the Duty-Bound

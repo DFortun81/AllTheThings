@@ -98,6 +98,10 @@ root(ROOTS.TradingPost, bubbleDown({ ["timeline"] = { ADDED_10_0_5 } }, {
 			["timeline"] = { ADDED_11_0_2 },
 			["maps"] = { DORNOGAL },
 		}),
+		q(81724, {	-- Report to the Trading Post -- October 2024
+			["timeline"] = { ADDED_11_0_2 },
+			["maps"] = { DORNOGAL },
+		}),
 	}),
 	n(YEAR2023, {
 		n(FEBRUARY, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5, REMOVED_10_0_5 } }, {

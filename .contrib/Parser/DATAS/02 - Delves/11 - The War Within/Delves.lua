@@ -1966,11 +1966,16 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(85746),	-- itemID 232497 (Restored Coffer Key)
 		q(85747),	-- itemID 232498 (Restored Coffer Key)
 		-- Seasonal Rewards
+		--q(83158),	-- Adventurer's Warbound Battlegear Drop (spellID 453929)
 		q(83235),	-- Airship: Wings 05 - Lantern Wing (spellID 454473)
 		q(83236),	-- Airship: Top 03 - Zeppelin (spellID 454476)
 		q(83237),	-- Airship: Front 05 - Lantern (spellID 454475)
 		q(83238),	-- Airship: Body Color 01 - Brown (spellID 454478)
 		q(83239),	-- Airship: Back 02 - Multi-Exhaust (spellID 454474)
+		--q(83157),	-- Discounted Restored Coffer Key (spellID 453934)
+		q(83180),	-- Hidden Stash from Deep Within (5k crystals)
+		q(83156),	-- Purchaseable Restored Coffer Key (spellID 453933)
+		q(83193),	-- Trusty Hat (spellID 454301)
 		-- Zekvir
 		q(84816),	-- Zekvir pop in Earthcrawl Mines (first time, unsure what tier it was)
 		q(84817),	-- Zekvir pop in Mycomancer Cavern (unsure, Tier 9)

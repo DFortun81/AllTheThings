@@ -364,6 +364,7 @@ root(ROOTS.Professions, prof(SKINNING, {
 			q(83100),	-- Cracking the Shell
 			q(82993),	-- From Shadows
 			q(83098),	-- Snap and Crackle
+			q(82992),	-- Stormcharged Goods
 		})),
 		filter(RECIPES, {
 			["description"] = "These are learned by specialization.",
