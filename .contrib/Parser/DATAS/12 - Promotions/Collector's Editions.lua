@@ -854,18 +854,15 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 root(ROOTS.HiddenQuestTriggers, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_BALANCE }, {
 	n(THE_WAR_WITHIN_TEMPORARY, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 		n(HEROIC_EDITION, {
-			q(81991),	-- triggered when completing "The Stormrider's Bond" (81993)
-			q(81992),	-- triggered when completing "A Sacred Connection" (81994)
+			q(81991),	-- 3 Ensembles tints tied to single HQT
+						-- Ensemble: Champion Stormrider's Attire
+						-- Ensemble: Deep Stormrider's Attire
+						-- Ensemble: Shining Stormrider's Attire
+			q(81992),	-- 3 Ensembles tints tied to single HQT
+						-- Ensemble: Frenzied Stormrider's Attire
+						-- Ensemble: Shocking Stormrider's Attire
+						-- Ensemble: Sparking Stormrider's Attire
 			q(84824),	-- triggered when accepting "The Stormrider's Bond" (81993)
-
-		--TWW Collector's Edition Armor TODO
-		--q(81991),	-- Ensemble: Champion Stormrider's Attire
-		--q(81991),	-- Ensemble: Deep Stormrider's Attire
-		--q(78843),	-- Ensemble: Endurance of Temple Telhamat
-		--q(81992),	-- Ensemble: Frenzied Stormrider's Attire
-		--q(81991),	-- Ensemble: Shining Stormrider's Attire
-		--q(81992),	-- Ensemble: Shocking Stormrider's Attire
-		--q(81992),	-- Ensemble: Sparking Stormrider's Attire
 		}),
 	})),
 })))

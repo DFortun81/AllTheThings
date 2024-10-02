@@ -82,6 +82,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 			}),
+			n(229184, {	-- Aspirant Kiipka
+				["coord"] = { 55.9, 42.1, AZJ_KAHET },
+				["sym"] = {{"sub","common_vendor",224729}},	-- Anub'okki <Disciple of Anub'azal>
+			}),
 			n(226211, {	-- Ax'ill <Alchemixologist>
 				--["coord"] = { 47.8, 18.7, NERUBAR },
 				["g"] = {

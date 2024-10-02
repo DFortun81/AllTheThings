@@ -443,11 +443,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				}),
 				q(28768, {	-- Winterspring!
 					["qg"] = 15395,	-- Nafien
-					["sourceQuest"] = 28368,	-- Fire in the Hole!	TODO: could be earlier, but was available at this point
+					--["sourceQuest"] = 28368,	-- Fire in the Hole!	TODO: could be earlier, but was available at this point //Fire in the Hole! is Horde only so cannot be the correct sourcequest
 					["coord"] = { 64.0, 10.4, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
-					--["description"] = "Only available between level 15 and XX.", TODO: before level squish it was available from level 15 till level 60, now min is 15 but max is unknown
+					["description"] = "Only available between level 40 and 60.",
 				}),
 			}),
 			n(VENDORS, {

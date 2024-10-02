@@ -579,6 +579,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 			},
 		})),
 		q(48002, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Limited Supplies
+			["sourceQuest"] = 46816,	-- Rendezvous
 			["provider"] = { "n", 125346 },	-- Alchemist Funen
 			["coord"] = { 56.2, 66.8, KROKUUN },
 			["groups"] = {
@@ -587,6 +588,7 @@ root(ROOTS.Professions, prof(ALCHEMY, bubbleDownSelf({ ["requireSkill"] = ALCHEM
 		})),
 		q(48013, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {	-- Tracking the Trackers
 			["provider"] = { "n", 125346 },	-- Alchemist Funen
+			["sourceQuest"] = 46816,	-- Rendezvous
 			["coord"] = { 56.2, 66.8, KROKUUN },
 			["groups"] = {
 				i(151703),	-- Recipe: Tears of the Naaru [Rank 1] (RECIPE!)

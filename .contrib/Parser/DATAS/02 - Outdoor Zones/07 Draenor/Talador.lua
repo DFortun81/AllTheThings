@@ -1667,6 +1667,7 @@ root(ROOTS.Zones, {
 					}),
 					q(36843, {	-- They Came From Above
 						["sourceQuests"] = { 34579 },	-- Gas Guzzlers
+						["lockCriteria"] = { 1, "questID", 33740 },	-- Burning Sky
 						["provider"] = { "n", 86522 },	-- Akhan
 						["coord"] = { 67.4, 42.2, TALADOR },
 						["isBreadcrumb"] = true,

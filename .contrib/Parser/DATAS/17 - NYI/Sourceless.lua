@@ -352,10 +352,16 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 		}),
 	}),
 	n(MISC, {
+		expansion(EXPANSION.DF, {
+			-- 10.1.7
+			expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+				i(208878),	-- Adventurer's Footlocker //Given to alts who used the TWW prepurchase boost
+			})),
+		}),
 		expansion(EXPANSION.TWW, {
 			-- 11.0.2
 			expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-				i(225937),	-- Putrid Goop //biproduct of Fine Egg Powder salvage
+				i(225937),	-- Putrid Goop //Biproduct of Fine Egg Powder salvage
 				i(220770),	-- Void-Scarred Stormhammer // For Isle of Dorn hunter pet unlock
 			})),
 		}),
@@ -680,6 +686,9 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(62377),	--
 				q(62381),	--
 				q(62578),	--
+				q(62681),	-- Encountered after using Focused Life Anima to create Stabilizing Lens of the Focusing Iris (168622)
+				q(62687),	--
+				q(62690),	-- Encountered after using Focused Life Anima to create the final possible azerite power available from it (according to ATT), which was Fetish of the Hidden Labyrinths (Anima of Life and Death, Rank 3)?? Maybe new HQT for tracking?
 				q(60693),	--
 			})),
 
@@ -718,6 +727,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(66034),	-- On Fail, Reset Player [DNT] (spellID 374750) / MDI Quest Trigger
 				q(67045),	--
 				q(71054),	--
+				q(77131),	-- Killed rares in Thladraszus during snowstorm (?)
 			})),
 
 			-- 10.0.2

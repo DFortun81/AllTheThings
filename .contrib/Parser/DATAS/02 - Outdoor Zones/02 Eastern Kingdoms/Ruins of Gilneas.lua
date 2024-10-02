@@ -411,5 +411,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 root(ROOTS.HiddenQuestTriggers, bubbleDown({ ["timeline"] = { ADDED_10_2_5 } }, {
 	m(RUINS_OF_GILNEAS, {
 		q(80080),	-- Ensemble: Gilnean Noble's Suit
+		q(78903, {	-- Ask Greymane Seneschal by Cathedral or Manor to leave for the day
+			["isDaily"] = true,
+		}),
 	}),
 }));
