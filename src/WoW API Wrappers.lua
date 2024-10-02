@@ -76,10 +76,19 @@ if C_Item then
 ---@diagnostic disable-next-line: deprecated
 	elseif GetItemCount then lib.GetItemCount = GetItemCount;
 	else lib.GetItemCount = nil; end
+
+	if C_Item.GetItemClassInfo then lib.GetItemClassInfo = C_Item.GetItemClassInfo;
+	---@diagnostic disable-next-line: deprecated
+	elseif GetItemClassInfo then lib.GetItemClassInfo = GetItemClassInfo;
+	else GetItemClassInfo = nil; end
 else
 ---@diagnostic disable-next-line: deprecated
 	if GetItemCount then lib.GetItemCount = GetItemCount;
 	else lib.GetItemCount = nil; end
+
+	---@diagnostic disable-next-line: deprecated
+	if GetItemClassInfo then lib.GetItemClassInfo = GetItemClassInfo;
+	else GetItemClassInfo = nil; end
 end
 
 ---@diagnostic disable-next-line: deprecated
@@ -93,7 +102,6 @@ if not GetItemInfo then
 	end
 	lib.GetItemID = C_Item.GetItemIDForItemInfo;
 	lib.GetItemIcon = C_Item.GetItemIconByID;
-	lib.GetItemClassInfo = C_Item.GetItemClassInfo;
 	lib.GetItemSpecInfo = C_Item.GetItemSpecInfo;
 else
 	---@diagnostic disable-next-line: deprecated
@@ -105,7 +113,6 @@ else
 	---@diagnostic disable-next-line: deprecated
 	lib.GetItemID = GetItemInfoInstant;
 	lib.GetItemIcon = function(item) return select(5, GetItemInfoInstant(item)); end
-	lib.GetItemClassInfo = GetItemClassInfo;
 	---@diagnostic disable-next-line: deprecated
 	lib.GetItemSpecInfo = GetItemSpecInfo;
 end
