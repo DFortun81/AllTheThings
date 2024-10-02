@@ -86,6 +86,11 @@ if C_Item then
 	---@diagnostic disable-next-line: deprecated
 	elseif GetItemIcon then lib.GetItemIcon = GetItemIcon;
 	else lib.GetItemIcon = nil; end
+
+	if C_Item.GetItemInfoInstant then lib.GetItemInfoInstant = C_Item.GetItemInfoInstant;
+	---@diagnostic disable-next-line: deprecated
+	elseif GetItemInfoInstant then lib.GetItemInfoInstant = GetItemInfoInstant;
+	else lib.GetItemInfoInstant = nil; end
 else
 	---@diagnostic disable-next-line: deprecated
 	if GetItemCount then lib.GetItemCount = GetItemCount;
@@ -98,6 +103,10 @@ else
 	---@diagnostic disable-next-line: deprecated
 	if GetItemIcon then lib.GetItemIcon = GetItemIcon;
 	else lib.GetItemIcon = nil; end
+
+	---@diagnostic disable-next-line: deprecated
+	if GetItemInfoInstant then lib.GetItemInfoInstant = GetItemInfoInstant;
+	else lib.GetItemInfoInstant = nil; end
 end
 
 ---@diagnostic disable-next-line: deprecated
@@ -105,10 +114,6 @@ if not GetItemInfo then
 	local C_Item = C_Item;
 	local GetItemInfo = C_Item.GetItemInfo;
 	lib.GetItemInfo = GetItemInfo;
-	lib.GetItemInfoInstant = function(item)
-		local _, _, _, _, _, itemType, itemSubType, _, itemEquipLoc, itemTexture, _, classID, subclassID = GetItemInfo(item);
-		return C_Item.GetItemIDForItemInfo(item), itemType, itemSubType, itemEquipLoc, itemTexture, classID, subclassID;
-	end
 	lib.GetItemID = C_Item.GetItemIDForItemInfo;
 	lib.GetItemSpecInfo = C_Item.GetItemSpecInfo;
 else
@@ -116,8 +121,6 @@ else
 	local GetItemInfoInstant = GetItemInfoInstant;
 	---@diagnostic disable-next-line: deprecated
 	lib.GetItemInfo = GetItemInfo;
-	---@diagnostic disable-next-line: deprecated
-	lib.GetItemInfoInstant = GetItemInfoInstant;
 	---@diagnostic disable-next-line: deprecated
 	lib.GetItemID = GetItemInfoInstant;
 	---@diagnostic disable-next-line: deprecated
