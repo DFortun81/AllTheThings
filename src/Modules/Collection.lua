@@ -18,7 +18,8 @@ local FanfareFunctions = setmetatable({
 end})
 
 local TooSpammyThings = {
-	Exploration = true
+	Exploration = true,
+	Quests = true,
 }
 app.AddEventHandler("OnThingCollected", function(type)
 	if type and not app.Settings:Get("Thing:"..type) then return end
