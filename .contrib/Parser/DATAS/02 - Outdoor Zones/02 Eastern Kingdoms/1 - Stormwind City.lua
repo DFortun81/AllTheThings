@@ -1362,6 +1362,14 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 					["isDaily"] = true,
 					["groups"] = {
+						objective(1, {	-- 0/1 Crystal Bass
+							["providers"] = {
+								{ "i",  58787 },	-- Crystal Bass
+								{ "i",  58788 },	-- Overgrown Earthworm
+								{ "o", 204281 },	-- Worm Mound
+							},
+							["coord"] = { 57.7, 14.1, STORMWIND_CITY },
+						}),
 						i(67414),	-- Bag of Shiny Things
 					},
 				}),
