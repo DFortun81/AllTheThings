@@ -34,6 +34,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"] = ADDE
 					["qg"] = 49444,	-- Pip Quickwit
 					["coord"] = { 42.6, 28.1, MOUNT_HYJAL },
 					["isBreadcrumb"] = true,
+					["groups"] = {
+						objective(1, {	-- Arrive at Blackrock Caverns.
+							["provider"] = { "o", 207327 },	-- Pip's Mole Machine
+						}),
+					},
 				}),
 				q(28735, {	-- To the Chamber of Incineration!
 					["qg"] = 49476,	-- Pip Quickwit
