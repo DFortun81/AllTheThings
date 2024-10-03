@@ -258,8 +258,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Ancient Feather
 							["providers"] = {
-								{ "i", 55210 },	-- Ancient Feather
-								{ "i", 55211 },	-- Enormous Bird Call
+								{ "i",  55210 },	-- Ancient Feather
+								{ "i",  55211 },	-- Enormous Bird Call
+								{ "o", 203169 },	-- Blaithe's Roost
 							},
 							["coords"] = {
 								{ 35.6, 42.2, MOUNT_HYJAL },
