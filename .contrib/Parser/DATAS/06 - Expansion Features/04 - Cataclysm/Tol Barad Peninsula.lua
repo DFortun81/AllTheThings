@@ -462,7 +462,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/22 Rustberg Seabass
-							["provider"] = { "i", 63047 },	-- Rustberg Seabass
+							["providers"] = {
+								{ "i",  63047 },	-- Rustberg Seabass
+								{ "o", 206754 },	-- String of Fish
+							},
 							["cr"] = 47642,	-- Rustberg Fisherman
 						}),
 					},
@@ -474,7 +477,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/22 Rustberg Seabass
-							["provider"] = { "i", 63047 },	-- Rustberg Seabass
+							["providers"] = {
+								{ "i",  63047 },	-- Rustberg Seabass
+								{ "o", 206754 },	-- String of Fish
+							},
 							["cr"] = 47642,	-- Rustberg Fisherman
 						}),
 					},
