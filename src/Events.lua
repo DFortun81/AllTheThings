@@ -123,10 +123,10 @@ local Runner = app.CreateRunner("events")
 -- Runner.SetPerFrameDefault(5)
 local Callback = app.CallbackHandlers.Callback
 local function DebugEventStart(eventName,...)
-	app.PrintDebug("HandleEvent:Start",app.Modules.Color.Colorize(eventName,app.Colors.Time),...)
+	app.PrintDebug(app.Modules.Color.Colorize(eventName,app.Colors.Time),...)
 end
 local function DebugEventDone(eventName,...)
-	app.PrintDebug("HandleEvent:Done",app.Modules.Color.Colorize(eventName,app.Colors.Horde),...)
+	app.PrintDebug(app.Modules.Color.Colorize(eventName,app.Colors.Horde),...)
 end
 
 app.HandleEvent = function(eventName, ...)
@@ -136,12 +136,12 @@ app.HandleEvent = function(eventName, ...)
 	-- additionally, since some events can process on a Runner, then following Events need to also be pushed onto
 	-- the Event Runner so that they execute in the expected sequence
 	if RunnerEvents[eventName] or Runner.IsRunning() then
-		-- app.PrintDebug("HandleEvent:",app.Modules.Color.Colorize(eventName,app.Colors.LockedWarning),...)
+		-- app.PrintDebug(app.Modules.Color.Colorize(eventName,app.Colors.LockedWarning),...)
 		-- Runner.Run(DebugEventStart, eventName, ...)
 		for i,handler in ipairs(EventHandlers[eventName]) do
-			-- Runner.Run(app.PrintDebug,"HandleEvent:",app.Modules.Color.Colorize(eventName,app.Colors.Time),"Handler #",i)
+			-- Runner.Run(app.PrintDebug,app.Modules.Color.Colorize(eventName,app.Colors.Time),"Handler #",i)
 			Runner.Run(handler, ...)
-			-- Runner.Run(app.PrintDebugPrior,"HandleEvent:",app.Modules.Color.Colorize(eventName,app.Colors.Horde),"Handler Done")
+			-- Runner.Run(app.PrintDebugPrior,app.Modules.Color.Colorize(eventName,app.Colors.Horde),"Handler Done")
 		end
 		-- Runner.Run(DebugEventDone, eventName)
 		if sequenceEvents then
@@ -151,14 +151,14 @@ app.HandleEvent = function(eventName, ...)
 			end
 		end
 	else
-		-- app.PrintDebug("HandleEvent:",app.Modules.Color.Colorize(eventName,app.Colors.Renown),...)
+		-- app.PrintDebug(app.Modules.Color.Colorize(eventName,app.Colors.Renown),...)
 		-- DebugEventStart(eventName, ...)
 		for i,handler in ipairs(EventHandlers[eventName]) do
 			handler(...);
 		end
 		-- DebugEventDone(eventName)
 		if sequenceEvents then
-			-- app.PrintDebug("HandleSequenceEvents:",app.Modules.Color.Colorize(eventName,app.Colors.Alliance),...)
+			-- app.PrintDebug(app.Modules.Color.Colorize(eventName,app.Colors.Alliance),...)
 			-- run the sequence events on the next frame when not in a Runner
 			for _,event in ipairs(sequenceEvents) do
 				app.CallbackEvent(event)
@@ -177,6 +177,6 @@ end})
 -- Allows performing an Event on the next frame instead of immediately.
 -- Also enforces that a single handle of that Event is performed that frame, thus for clarity, parameters are NOT supported
 app.CallbackEvent = function(eventName)
-	-- app.PrintDebug("CallbackEvent:",app.Modules.Color.Colorize(eventName,app.Colors.ChatLinkHQT))
+	-- app.PrintDebug(app.Modules.Color.Colorize(eventName,app.Colors.ChatLinkHQT))
 	Callback(CallbackEventFunctions[eventName], eventName)
 end
