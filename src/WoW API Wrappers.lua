@@ -20,8 +20,32 @@ local lib = setmetatable({}, {
 });
 
 -- Local cache
-local select = select;
+local select,type,rawget
+	= select,type,rawget
 app.WOWAPI = lib;
+
+-- Priority API assigner
+-- Can be used to one-line assign the most relevant API to the specified WOWAPI wrapper
+local function AssignApiWrapper(name, ...)
+	local vals = select("#", ...)
+	local api
+	-- print("WOWAPI",name,vals)
+	for i = 1,vals do
+		api = select(i, ...)
+		if api then
+			if type(api) ~= "function" then
+				print("Cannot use a non-function for an ATT.WOWAPI Wrapper!",name,"<=",api)
+			else
+				if rawget(lib, name) then
+					print("Warning, existing ATT.WOWAPI replaced!",name)
+				end
+				-- print("Assigned",name,"from prio",i)
+				lib[name] = api
+				break
+			end
+		end
+	end
+end
 
 -- Faction APIs
 if not GetFactionInfoByID then
@@ -69,72 +93,14 @@ else
 end
 
 -- Item APIs
-if C_Item then
-	local C_Item = C_Item;
-
-	if C_Item.GetItemCount then lib.GetItemCount = C_Item.GetItemCount;
-	---@diagnostic disable-next-line: deprecated
-	elseif GetItemCount then lib.GetItemCount = GetItemCount;
-	else lib.GetItemCount = nil; end
-
-	if C_Item.GetItemClassInfo then lib.GetItemClassInfo = C_Item.GetItemClassInfo;
-	---@diagnostic disable-next-line: deprecated
-	elseif GetItemClassInfo then lib.GetItemClassInfo = GetItemClassInfo;
-	else lib.GetItemClassInfo = nil; end
-
-	if C_Item.GetItemIconByID then lib.GetItemIcon = C_Item.GetItemIconByID;
-	---@diagnostic disable-next-line: deprecated
-	elseif GetItemIcon then lib.GetItemIcon = GetItemIcon;
-	else lib.GetItemIcon = nil; end
-
-	if C_Item.GetItemInfoInstant then lib.GetItemInfoInstant = C_Item.GetItemInfoInstant;
-	---@diagnostic disable-next-line: deprecated
-	elseif GetItemInfoInstant then lib.GetItemInfoInstant = GetItemInfoInstant;
-	else lib.GetItemInfoInstant = nil; end
-
-	if C_Item.GetItemIDForItemInfo then lib.GetItemID = C_Item.GetItemIDForItemInfo;
-	---@diagnostic disable-next-line: deprecated
-	elseif GetItemInfoInstant then lib.GetItemID = GetItemInfoInstant;
-	else lib.GetItemID = nil; end
-
-	if C_Item.GetItemInfo then lib.GetItemInfo = C_Item.GetItemInfo;
-	---@diagnostic disable-next-line: deprecated
-	elseif GetItemInfo then lib.GetItemInfo = GetItemInfo;
-	else lib.GetItemInfo = nil; end
-
-	if C_Item.GetItemSpecInfo then lib.GetItemSpecInfo = C_Item.GetItemSpecInfo;
-	---@diagnostic disable-next-line: deprecated
-	elseif GetItemSpecInfo then lib.GetItemSpecInfo = GetItemSpecInfo;
-	else lib.GetItemSpecInfo = nil; end
-else
-	---@diagnostic disable-next-line: deprecated
-	if GetItemCount then lib.GetItemCount = GetItemCount;
-	else lib.GetItemCount = nil; end
-
-	---@diagnostic disable-next-line: deprecated
-	if GetItemClassInfo then lib.GetItemClassInfo = GetItemClassInfo;
-	else lib.GetItemClassInfo = nil; end
-
-	---@diagnostic disable-next-line: deprecated
-	if GetItemIcon then lib.GetItemIcon = GetItemIcon;
-	else lib.GetItemIcon = nil; end
-
-	---@diagnostic disable-next-line: deprecated
-	if GetItemInfoInstant then lib.GetItemInfoInstant = GetItemInfoInstant;
-	else lib.GetItemInfoInstant = nil; end
-
-	---@diagnostic disable-next-line: deprecated
-	if GetItemInfoInstant then lib.GetItemID = GetItemInfoInstant;
-	else lib.GetItemID = nil; end
-
-	---@diagnostic disable-next-line: deprecated
-	if GetItemInfo then lib.GetItemInfo = GetItemInfo;
-	else lib.GetItemInfo = nil; end
-
-	---@diagnostic disable-next-line: deprecated
-	if GetItemSpecInfo then lib.GetItemSpecInfo = GetItemSpecInfo;
-	else lib.GetItemSpecInfo = nil; end
-end
+local C_Item = C_Item;
+AssignApiWrapper("GetItemCount", C_Item and C_Item.GetItemCount, GetItemCount)
+AssignApiWrapper("GetItemClassInfo", C_Item and C_Item.GetItemClassInfo, GetItemClassInfo)
+AssignApiWrapper("GetItemIcon", C_Item and C_Item.GetItemIconByID, GetItemIcon)
+AssignApiWrapper("GetItemInfoInstant", C_Item and C_Item.GetItemInfoInstant, GetItemInfoInstant)
+AssignApiWrapper("GetItemID", C_Item and C_Item.GetItemIDForItemInfo, GetItemInfoInstant)
+AssignApiWrapper("GetItemInfo", C_Item and C_Item.GetItemInfo, GetItemInfo)
+AssignApiWrapper("GetItemSpecInfo", C_Item and C_Item.GetItemSpecInfo, GetItemSpecInfo)
 
 -- Spell APIs
 ---@diagnostic disable-next-line: deprecated
@@ -162,20 +128,16 @@ else
 end
 
 -- Quest APIs
-if C_QuestLog and C_QuestLog.IsQuestFlaggedCompletedOnAccount then
-	lib.IsQuestFlaggedCompletedOnAccount = C_QuestLog.IsQuestFlaggedCompletedOnAccount
-else
-	lib.IsQuestFlaggedCompletedOnAccount = function(id)
-		return app.IsAccountCached("Quests",id)
-	end
-end
+AssignApiWrapper("IsQuestFlaggedCompletedOnAccount",
+	C_QuestLog and C_QuestLog.IsQuestFlaggedCompletedOnAccount,
+	function(id) return app.IsAccountCached("Quests",id) end)
 
 -- C_TradeSkillUI
 if C_TradeSkillUI then
 	local C_TradeSkillUI = C_TradeSkillUI;
 
-	-- Warning: Blizzard introduced C_TradeSkillUI.GetTradeSkillTexture in Patch 4.0.1, and I have not found any information on when GetTradeSkillTexture was deprecated or removed, as well as its parameters or return values. 
-	-- Therefore, lib.GetTradeSkillTexture will always use the implementation of C_TradeSkillUI.GetTradeSkillTexture in all cases. 
+	-- Warning: Blizzard introduced C_TradeSkillUI.GetTradeSkillTexture in Patch 4.0.1, and I have not found any information on when GetTradeSkillTexture was deprecated or removed, as well as its parameters or return values.
+	-- Therefore, lib.GetTradeSkillTexture will always use the implementation of C_TradeSkillUI.GetTradeSkillTexture in all cases.
 	-- As a result, the fallback to GetTradeSkillTexture has not been tested and is not guaranteed to work.
 	if C_TradeSkillUI.GetTradeSkillTexture then lib.GetTradeSkillTexture = C_TradeSkillUI.GetTradeSkillTexture;
 	---@diagnostic disable-next-line: deprecated
@@ -193,8 +155,8 @@ if C_Spell then
 	-- Warning: The API Wrapper for GetSpellLink is not completely equivalent.
 	-- GetSpellLink accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
 	-- Currently, only the first type is implemented.
-	-- The traditional GetSpellLink returns two values: SpellLink and SpellID, but all of usages only utilize SpellLink. 
-	-- The C_Spell.GetSpellLink only returns SpellLink. 
+	-- The traditional GetSpellLink returns two values: SpellLink and SpellID, but all of usages only utilize SpellLink.
+	-- The C_Spell.GetSpellLink only returns SpellLink.
 	-- For performance reasons, lib.GetSpellLink only returns SpellLink.
 	if C_Spell.GetSpellLink then lib.GetSpellLink = C_Spell.GetSpellLink;
 	---@diagnostic disable-next-line: deprecated, duplicate-set-field
@@ -206,8 +168,8 @@ if C_Spell then
 	-- Warning: The API Wrapper for GetSpellIcon is not completely equivalent.
 	-- GetSpellTexture accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
 	-- Currently, only the first type is implemented.
-	-- The C_Spell.GetSpellTexture returns two values: iconID and originalIconID, but all of usages only utilize iconID. 
-	-- The traditional GetSpellTexture only returns iconID. 
+	-- The C_Spell.GetSpellTexture returns two values: iconID and originalIconID, but all of usages only utilize iconID.
+	-- The traditional GetSpellTexture only returns iconID.
 	-- For performance reasons, lib.GetSpellIcon only returns iconID.
 	if C_Spell.GetSpellTexture then lib.GetSpellIcon = function(SpellIdentifier) return select(1, C_Spell.GetSpellTexture(SpellIdentifier)); end
 	---@diagnostic disable-next-line: deprecated
