@@ -2719,6 +2719,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			q(81440),	-- Refine Hides+++ (Triggered when learned via specialization)
 			q(81441),	-- 40/40 Tanning
 		}),
+		prof(TAILORING, {
+			q(84591),	-- 0/20 Dawnweaving
+		}),
 		n(PROFESSIONS, {	-- double header on purpose - Darkal
 			-- Using Contracts
 			q(84484),	-- Contract: Assembly of the Deeps [Rank 1] (spellID 454934)
