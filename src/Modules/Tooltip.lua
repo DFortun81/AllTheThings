@@ -560,13 +560,17 @@ local SkipPurchases = {
 	-- 2 	- (popout, skipped unless within popout)
 	-- 2.5 	- (popout root, skipped unless root of popout)
 	itemID = {
-		[137642] = 2,	-- Mark of Honor
+		[137642] = 2.5,	-- Mark of Honor
 		[21100] = 1,	-- Coin of Ancestry
 		[23247] = 1,	-- Burning Blossom
+		[33226] = 1,	-- Tricky Treat
+		[37829] = 1,	-- Brewfest Prize Token
 		[49927] = 1,	-- Love Token
 	},
 	currencyID = {
-		[2778] = 2,		-- Bronze
+		[515] = 1,		-- Darkmoon Prize Ticket
+		[1166] = 1,		-- Timewarped Badge
+		[2778] = 2.5,		-- Bronze
 	},
 }
 app.ShouldFillPurchases = function(group, FillData)
