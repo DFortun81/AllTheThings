@@ -938,15 +938,11 @@ root(ROOTS.Unsorted, {
 				i(228947),	-- Weaver's Lair Profession Table
 				---
 				i(228951),	-- Pact Treasure Map
-
 			}),
 			--
 			i(229005),	-- Cache of Earthen Treasures
 			i(229006),	-- Cache of Earthen Treasures
 			i(229130),	-- Cache of Delver's Spoils
-			i(229193),	-- Queen's Pheromone
-			i(229194),	-- Queen's Pheromone
-			i(229195),	-- Queen's Pheromone
 			i(229370),	-- Companion Experience
 			---
 			i(230202),	-- Add Keystone Affix: Xal'atath's Bargain: Ascendant

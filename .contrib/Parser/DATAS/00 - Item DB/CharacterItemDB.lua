@@ -541,6 +541,7 @@ iq(224055, 82614);					-- A Rocky Start
 iq(224036, 82634);					-- And That's A Web-Wrap!
 iq(224553, 82998);					-- Beledar's Attunement
 iq(224052, 82632);					-- Clocks, Gears, Sprockets, and Legs
+iq(228944, 84690);					-- Crypt Lord's Severed Thread
 iq(225237, 83254);					-- Echoing Fragment: Azj-Kahet
 iq(225218, 83249);					-- Echoing Fragment: Hallowfall
 iq(225236, 83252);					-- Echoing Fragment: Isle of Dorn
@@ -590,7 +591,10 @@ iq(227438, 81392);					-- Pristine Miner's Notes
 iq(227430, 80751);					-- Pristine Scribe's Runic Drawings
 iq(227439, 84234);					-- Pristine Skinner's Notes
 iq(227432, 80873);					-- Pristine Tailor's Diagrams
-iq(226520, 84006);					-- Queen's Pheromone
+iq(226520, 84006);					-- Queen's Pheromone (8.8 Million)
+iq(229193, 84006);					-- Queen's Pheromone (888 Thousand)
+iq(229194, 84006);					-- Queen's Pheromone (88 Thousand)
+iq(229195, 84006);					-- Queen's Pheromone (8.8 Thousand)
 iq(224038, 82631);					-- Smithing After Saronite
 iq(228943, 84689);					-- Spymaster's Severed Thread
 iq(224024, 82633);					-- Theories of Bodily Transmutation, Chapter 8
