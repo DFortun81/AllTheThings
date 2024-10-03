@@ -351,7 +351,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			})),
 		}),
 	}),
-	n(MISC, {
+	f(MISC, {
 		expansion(EXPANSION.DF, {
 			-- 10.1.7
 			expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
