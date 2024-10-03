@@ -3165,12 +3165,10 @@ app.CreateCurrencyClass = app.CreateClass("Currency", "currencyID", {
 		return GetCurrencyLink(t.currencyID, 1);
 	end,
 	["collectible"] = function(t)
-		local collectible = t.collectibleAsCost;
-		if t.currencyID == 416 then print("collectibleAsCost", collectible); end
-		return collectible;
+		return t.collectibleAsCost;
 	end,
 	["collectibleAsCost"] = function(t)
-		if not t.parent or t.parent.saved ~= 1 then
+		if not t.parent or not t.parent.saved then
 			if CurrencyCollectibleAsCost[t.currencyID] then
 				return true;
 			elseif t.simplemeta then
