@@ -67,9 +67,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						}),
 					},
 				}),
-				achWithRep(5827, FACTION_AVENGERS_OF_HYJAL, {	-- Avengers of Hyjal
-					title(188),	-- <Name>, Avenger of Hyjal
-				}),
 				ach(5874, {	-- Death From Above  (Mount Hyjal - The Molten Front)
 					crit(17857, {	-- Ragepyre
 						["cr"] = 54252,	-- Ragepyre <Firelord>
@@ -288,12 +285,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					crit(17821, {	-- Save Anren Shadowseeker
 						["_quests"] = { 29272 },	-- Need... Water... Badly...
 					}),
-				}),
-			}),
-			n(FACTIONS, {
-				faction(FACTION_AVENGERS_OF_HYJAL, {	-- Avengers of Hyjal
-					["maps"] = { 367, 368, 369 },
-					["icon"] = 512609,
 				}),
 			}),
 			n(QUESTS, {

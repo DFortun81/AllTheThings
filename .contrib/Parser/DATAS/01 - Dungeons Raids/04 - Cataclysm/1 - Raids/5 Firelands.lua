@@ -106,6 +106,9 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 						i(69230),	-- Corrupted Fire Hawk (MOUNT!)
 					},
 				}),
+				achWithRep(5827, FACTION_AVENGERS_OF_HYJAL, {	-- Avengers of Hyjal
+					title(188),	-- <Name>, Avenger of Hyjal
+				}),
 				ach(11755, {["timeline"] = {ADDED_7_2_0}}),	-- Hot Couture (Firelands)
 				ach(5802, {	-- Firelands
 					crit(17430, {	-- Beth'tilac
@@ -131,6 +134,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 					}),
 				}),
 				ach(5983),	-- Firelands Guild Run
+			}),
+			n(FACTIONS, {
+				faction(FACTION_AVENGERS_OF_HYJAL, {	-- Avengers of Hyjal
+					["icon"] = 512609,
+				}),
 			}),
 			n(QUALITY_LEGENDARY, {
 				["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER },
