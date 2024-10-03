@@ -47,9 +47,21 @@ setmetatable(ExpansionInfoByID, {
 		if expansionID ~= patchID then
 			local patch_decimal = PatchShift * (patchID - expansionID);
 			local patch = math_floor(patch_decimal + 0.0001);
-			local rev = math_floor(RevShift * (patch_decimal - patch) + 0.0001);
+			local rev_decimal = RevShift * (patch_decimal - patch)
+			local rev = math_floor(rev_decimal + 0.0001);
+			local name = tostring(expansionID).."."..tostring(patch).."."..tostring(rev)
+			-- not currently supoprting build for expansion headers
+			-- honestly might be easier just to tuck it into a new field if needed
+			-- local build_decimal = rev_decimal - rev
+			-- if build_decimal > 0 then
+			-- 	while (math_floor(build_decimal) ~= build_decimal) do
+			-- 		build_decimal = build_decimal * 10
+			-- 	end
+			-- 	local build = math_floor(build_decimal + 0.0001);
+			-- 	name = name.."."..tostring(build)
+			-- end
 			info = setmetatable({
-				name = tostring(expansionID).."."..tostring(patch).."."..tostring(rev),
+				name = name,
 			}, { __index = ExpansionInfoByID[expansionID] });
 		else
 			-- We want to use the same reference table from the locales if possible

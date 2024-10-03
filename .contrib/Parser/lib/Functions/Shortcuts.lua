@@ -991,12 +991,16 @@ elitepvp = function(t)									-- Flag all nested content as requiring Elite PvP
 		["u"] = ELITE_PVP_REQUIREMENT,					-- CRIEVE NOTE: This currently uses the same filter as our other filters. This should probably be changed to act like the PVP filter or make "pvp" a 2 or something.
 	}, t);
 end
+local PatchDecimals = 2
+local RevDecimals = 2
+local PatchShift = 10 ^ PatchDecimals
+local RevShift = 10 ^ RevDecimals
 expansion = function(id, patch, t)							-- Create an EXPANSION Object
 	-- patch is optional
 	if not t then
 		t = patch;
 	else
-		id = id + (patch / 100);
+		id = id + (patch / PatchShift);
 		t = togroups(t);
 	end
 	t = struct("expansionID", id, t);
@@ -1504,12 +1508,20 @@ name = function(type, id, t)
 	return t
 end
 -- Converts 3 separate patch values into a single patch decimal for use within expansion() groups
-local PatchDecimals = 2
-local RevDecimals = 2
-local PatchShift = 10 ^ PatchDecimals
-local RevShift = 10 ^ RevDecimals
 patch = function(major,minor,build)
-	return tonumber(major or 0) + tonumber(minor or 0) / PatchShift + tonumber(build or 0) / (PatchShift * RevShift)
+	major = math.floor(tonumber(major or 0))
+	minor = math.floor(tonumber(minor or 0))
+	build = math.floor(tonumber(build or 0))
+	if major >= PatchShift then
+		print("Using a Major Patch with too many digits! It will not be represented properly in-game",major)
+	end
+	if minor >= RevShift then
+		print("Using a Minor Patch with too many digits! It will not be represented properly in-game",minor)
+	end
+	if build > 0 then
+		print("WARN: Not currently supporting Build within a Patch",build)
+	end
+	return major + minor / RevShift
 end
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
 
