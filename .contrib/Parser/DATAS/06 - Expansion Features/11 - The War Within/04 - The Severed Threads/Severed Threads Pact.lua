@@ -670,9 +670,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						i(228940, {	-- Notorious Thread's Hearthstone
 							["cost"] = {{"c", KEJ, 3000}},
 						}),
-						i(226520, {	-- Queen's Pheromone (CI!)
-						-- The price is a Meme done by blizzard.
-						--	["cost"] = {{"c", KEJ, 8888888}},
+						i(226520, {	-- Queen's Pheromone (CI!)(8.8mil Cost)
+							["description"] = "The item costs 8.8mil Kej, however the price of the item decreases by one digit for each exalted (9/9) Severed Threads leader for a final price of 8.888.",
+						--	["cost"] = {{"c", KEJ, 8.888.888}},
+						}),
+						i(229193, {	-- Queen's Pheromone (CI!)(888k Cost)
+							["description"] = "The item costs 888.888 Kej, however the price of the item decreases by one digit for each exalted (9/9) Severed Threads leader for a final price of 8.888.",
+						--	["cost"] = {{"c", KEJ, 888.888}},
+						}),
+						i(229194, {	-- Queen's Pheromone (CI!)(88k Cost)
+							["description"] = "The item costs 88.888 Kej, however the price of the item decreases by one digit for each exalted (9/9) Severed Threads leader for a final price of 8.888.",
+						--	["cost"] = {{"c", KEJ, 88.888}},
+						}),
+						i(229195, {	-- Queen's Pheromone (CI!)(8.888 Cost)
+							["description"] = "This version for 8.888 Kej is only visible after you reached exalted (9/9) with all three (3) Severed Threads leaders.",
+							["cost"] = {{"c", KEJ, 8.888}},
 						}),
 						i(228949, {	-- Rumor Map
 							["cost"] = {{"c", KEJ, 25}},
