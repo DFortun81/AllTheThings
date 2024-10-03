@@ -258,12 +258,12 @@ AddEventFunc("QUEST_PROGRESS", OnQUEST_DETAIL)
 AddEventFunc("QUEST_COMPLETE", OnQUEST_DETAIL)
 
 -- Contribution setup
-app.Contribute = function(contrib)
+local function Contribute(contrib)
 	app.Contributor = contrib == 1 and true or nil
 	AllTheThingsSavedVariables.Contributor = app.Contributor and 1 or 0
 	local contribModule = app.Modules.Contributor or app.EmptyTable
 	if app.Contributor then
-		app.print("Thanks for helping to contribute to ATT! There will be additional chat and report sounds to help with finding additional discrepancies in ATT data.")
+		app.print("Thanks for helping to contribute to ATT! There may be additional chat and report sounds to help with finding additional discrepancies in ATT data.")
 		if contribModule.Events then
 			for event,func in pairs(contribModule.Events) do
 				-- app.PrintDebug("Contribute.RegisterFuncEvent",event)
@@ -280,6 +280,14 @@ app.Contribute = function(contrib)
 		end
 	end
 end
+-- Allows a user to use /att contribute
+-- to opt-in/out of seeing additional reporting/chat/sound functionality to help with refining ATT data
+app.ChatCommands.Add("contribute", function(args)
+	Contribute(not app.Contributor and 1)
+	return true
+end, {
+	"Usage : /att contribute"
+})
 app.AddEventHandler("OnReady", function()
-	app.Contribute(AllTheThingsSavedVariables.Contributor)
+	Contribute(AllTheThingsSavedVariables.Contributor)
 end)

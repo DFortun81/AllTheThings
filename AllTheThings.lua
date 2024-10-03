@@ -12752,10 +12752,10 @@ SLASH_AllTheThings2 = "/things";
 SLASH_AllTheThings3 = "/att";
 SlashCmdList.AllTheThings = function(cmd)
 	if cmd then
-		-- print(cmd)
+		-- app.PrintDebug(cmd)
 		local args = { (" "):split(cmd:lower()) };
 		cmd = args[1];
-		-- app.print(args)
+		-- app.PrintDebug(args)
 		-- first arg is always the window/command to execute
 		app.ResetCustomWindowParam(cmd);
 		for k=2,#args do
@@ -12828,9 +12828,6 @@ SlashCmdList.AllTheThings = function(cmd)
 		elseif cmd == "sourceless" then
 			app:GetWindow("Sourceless"):Toggle();
 			return true;
-		elseif cmd == "contribute" then
-			app.Contribute(not app.Contributor and 1)
-			return true
 		elseif cmd:sub(1, 4) == "mini" then
 			app:ToggleMiniListForCurrentZone();
 			return true;
