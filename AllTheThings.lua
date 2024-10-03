@@ -7903,11 +7903,11 @@ function app:GetDataCache()
 	end
 
 	-- Build all the hidden window's data
-	BuildHiddenWindowData(L.UNSORTED, "WindowIcon_Unsorted", L.UNSORTED_DESC, "Unsorted", { _missing = true, _unsorted = true })
-	BuildHiddenWindowData(L.NEVER_IMPLEMENTED, "status-unobtainable", L.NEVER_IMPLEMENTED_DESC, "NeverImplemented", { _nyi = true })
-	BuildHiddenWindowData(L.HIDDEN_ACHIEVEMENT_TRIGGERS, "Category_Achievements", L.HIDDEN_ACHIEVEMENT_TRIGGERS_DESC, "HiddenAchievementTriggers", { _hqt = true })
-	BuildHiddenWindowData(L.HIDDEN_QUEST_TRIGGERS, "Interface_Quest", L.HIDDEN_QUEST_TRIGGERS_DESC, "HiddenQuestTriggers", { _hqt = true })
-	BuildHiddenWindowData(L.SOURCELESS, "WindowIcon_Unsorted", L.SOURCELESS_DESC, "Sourceless", { _missing = true, _unsorted = true })
+	BuildHiddenWindowData(L.UNSORTED, "WindowIcon_Unsorted", L.UNSORTED_DESC, "Unsorted", { _missing = true, _unsorted = true, _nosearch = true })
+	BuildHiddenWindowData(L.NEVER_IMPLEMENTED, "status-unobtainable", L.NEVER_IMPLEMENTED_DESC, "NeverImplemented", { _nyi = true, _nosearch = true })
+	BuildHiddenWindowData(L.HIDDEN_ACHIEVEMENT_TRIGGERS, "Category_Achievements", L.HIDDEN_ACHIEVEMENT_TRIGGERS_DESC, "HiddenAchievementTriggers", { _hqt = true, _nosearch = true })
+	BuildHiddenWindowData(L.HIDDEN_QUEST_TRIGGERS, "Interface_Quest", L.HIDDEN_QUEST_TRIGGERS_DESC, "HiddenQuestTriggers", { _hqt = true, _nosearch = true })
+	BuildHiddenWindowData(L.SOURCELESS, "WindowIcon_Unsorted", L.SOURCELESS_DESC, "Sourceless", { _missing = true, _unsorted = true, _nosearch = true })
 
 	-- StartCoroutine("VerifyRecursionUnsorted", function() app.VerifyCache(); end, 5);
 	-- app.PrintDebug("Finished loading data cache")
@@ -7977,7 +7977,7 @@ local function SetRescursiveFilters()
 end
 -- If/when this section becomes a module, set Module.SearchResponse.SearchNil instead
 app.SearchNil = "zsxdcfawoidsajd"
-local MainRoot, UnsortedRoot
+local MainRoot
 local ClonedHierarchyGroups = {};
 local ClonedHierarachyMapping = {};
 local SearchGroups = {};
@@ -7998,7 +7998,7 @@ local function MatchOrCloneParentInHierarchy(group)
 
 		-- check the parent to see if this parent chain will be excluded
 		local parent = group.parent;
-		if not parent or parent == UnsortedRoot then
+		if not parent or GetRelativeValue(parent, "_nosearch") then
 			-- app.PrintDebug("Don't capture Unsorted",group.text)
 			return;
 		end
@@ -8098,8 +8098,9 @@ end
 function app:BuildSearchResponse(field, value, clear, keep)
 	MainRoot = app:GetDataCache();
 	if MainRoot then
-		UnsortedRoot = app:GetWindow("Unsorted").data;
-		wipe(ClonedHierarchyGroups);
+		-- make sure each set of search results goes into a new container
+		-- otherwise two searches within the same window will replace the first set
+		ClonedHierarchyGroups = {}
 		wipe(ClonedHierarachyMapping);
 		wipe(SearchGroups);
 		wipe(KeepFields)
