@@ -688,7 +688,6 @@ _.Modules.Events.SetEventInformation(141, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=3,["year"]=2025},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=6,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(479, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=4,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=11,["weekday"]=1,["year"]=2024},{["remappedID"]=376}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=1,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=8,["weekday"]=1,["year"]=2024},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=6,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=13,["weekday"]=1,["year"]=2024},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=3,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=10,["weekday"]=1,["year"]=2024},{["remappedID"]=376}),
@@ -698,7 +697,8 @@ _.Modules.Events.SetEventInformation(479, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=2,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=9,["weekday"]=1,["year"]=2025},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=6,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=13,["weekday"]=1,["year"]=2025},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=4,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=11,["weekday"]=1,["year"]=2025},{["remappedID"]=376}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=1,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=8,["weekday"]=1,["year"]=2025},{["remappedID"]=374})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=1,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=8,["weekday"]=1,["year"]=2025},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=6,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=13,["weekday"]=1,["year"]=2025},{["remappedID"]=375})
 });
 _.Modules.Events.SetEventInformation(201, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=2,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=1,["year"]=2023}),
@@ -1945,6 +1945,7 @@ _.ObjectNames = {
 	[184980] = "Felhound Poo",
 	[185033] = "Collection of Souls",
 	[185035] = "Wanted Poster",
+	[185119] = "Dust Covered Chest",
 	[185124] = "Fertile Volcanic Soil",
 	[185126] = "Crystal Prison",
 	[185147] = "Fertile Volcanic Soil",
@@ -3365,6 +3366,7 @@ _.ObjectModels = {
 	[184980] = 199028,
 	[185033] = 199742,
 	[185035] = 199473,
+	[185119] = 199748,
 	[185124] = 202606,
 	[185126] = 192011,
 	[185147] = 202606,
@@ -4334,6 +4336,7 @@ localize(_.ObjectNames, {
 	[184980] = "Excremento de can manáfago",
 	[185033] = "Colección de almas",
 	[185035] = "Cartel de Se busca",
+	[185119] = "Cofre cubierto de polvo",
 	[185124] = "Tierra volcánica fértil",
 	[185126] = "Prisión de cristal",
 	[185147] = "Tierra volcánica fértil",
@@ -5315,6 +5318,7 @@ localize(_.ObjectNames, {
 	[184980] = "Teufelshundehaufen",
 	[185033] = "Seelensammlung",
 	[185035] = "Steckbrief",
+	[185119] = "Staubbedeckte Truhe",
 	[185124] = "Fruchtbare Vulkanerde",
 	[185126] = "Kristallgefängnis",
 	[185147] = "Fruchtbare Vulkanerde",
@@ -6317,6 +6321,7 @@ localize(_.ObjectNames, {
 	[184980] = "Crotte de gangrechien",
 	[185033] = "Collection d'âmes",
 	[185035] = "Avis de recherche",
+	[185119] = "Coffre couvert de poussière",
 	[185124] = "Terre volcanique fertile",
 	[185126] = "Prison de cristal",
 	[185147] = "Terre volcanique fertile",
@@ -6948,6 +6953,7 @@ localize(_.ObjectNames, {
 	[184980] = "Sterco di Vilsegugio",
 	[185033] = "Collezione di Anime",
 	[185035] = "Manifesto dei Ricercati",
+	[185119] = "Cassa Impolverata",
 	[185124] = "Suolo Vulcanico Fertile",
 	[185126] = "Prigione di Cristallo",
 	[185147] = "Suolo Vulcanico Fertile",
@@ -7845,6 +7851,7 @@ localize(_.ObjectNames, {
 	[184980] = "Cocô de Canisvil",
 	[185033] = "Coleção de Almas",
 	[185035] = "Cartaz de Procura-se",
+	[185119] = "Baú Empoeirado",
 	[185124] = "Solo Vulcânico Fértil",
 	[185126] = "Prisão de Cristal",
 	[185147] = "Solo Vulcânico Fértil",
@@ -8856,6 +8863,7 @@ localize(_.ObjectNames, {
 	[184980] = "Экскременты гончей Скверны",
 	[185033] = "Коллекция Душ",
 	[185035] = "Плакат \"Разыскивается\"",
+	[185119] = "Пыльный сундук",
 	[185124] = "Плодородная вулканическая почва",
 	[185126] = "Кристаллическая тюрьма",
 	[185147] = "Плодородная вулканическая почва",
@@ -9896,6 +9904,7 @@ localize(_.ObjectNames, {
 	[184946] = "현상 수배 전단",
 	[185033] = "영혼의 전리품",
 	[185035] = "현상 수배 전단",
+	[185119] = "먼지투성이 궤짝",
 	[185124] = "기름진 화산 토양",
 	[185126] = "수정 감옥",
 	[185147] = "기름진 화산 토양",
@@ -10778,6 +10787,7 @@ localize(_.ObjectNames, {
 	[184946] = "通缉布告",
 	[184980] = "地狱犬的粪便",
 	[185035] = "通缉布告",
+	[185119] = "灰尘覆盖的箱子",
 	[185124] = "肥沃的火山灰",
 	[185126] = "水晶监牢",
 	[185147] = "肥沃的火山灰",

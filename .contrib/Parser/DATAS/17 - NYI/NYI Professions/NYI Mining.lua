@@ -6,7 +6,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		filter(PROFESSION_EQUIPMENT, {
 			expansion(EXPANSION.DF, {
 				-- 10.0.7
-				expansion(EXPANSION.DF, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+				expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
 					i(204677),	-- Ogre Mining Pick
 				})),
 			}),
@@ -14,7 +14,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		filter(MISC, {
 			expansion(EXPANSION.DF, {
 				-- 10.0.2
-				expansion(EXPANSION.DF, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
+				expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
 					i(194063),	-- Glowing Fragment
 					i(194064),	-- Intricate Geode
 					i(194078),	-- Perfect Draconium Scale
@@ -22,7 +22,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 10.0.7
-				expansion(EXPANSION.DF, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+				expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
 					i(204632),	-- Tectonic Rock Fragment
 				})),
 			}),
@@ -49,13 +49,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TBC, {
 				-- 2.0.1
-				expansion(EXPANSION.TBC, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_2_0_1 } }, {
+				expansion(EXPANSION.TBC, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_2_0_1 } }, {
 					r(32606),	-- Mining
 				})),
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(EXPANSION.WRATH, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
 					r(49253),	-- Unkown
 					r(49254),	-- Unkown
 					r(49255),	-- Unkown
@@ -65,7 +65,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.LEGION, {
 				-- 7.0.3
-				expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+				expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 					-- Without SpellID attached
 					i(124475),	-- Mining Technique: Felslate Deposit
 					i(124476),	-- Mining Technique: Felslate Deposit
@@ -91,7 +91,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					r(308153),	-- Elethium Ore
 					r(308130),	-- Laestrite Ore
 					r(308150),	-- Oxxein Ore
@@ -102,7 +102,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(382586),	-- Opening
 				})),
 			}),

@@ -9,7 +9,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 	n(ARMOR, {
 		expansion(EXPANSION.CATA, {
 			-- 4.0.3
-			expansion(EXPANSION.CATA, 0.3, bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 } }, {
+			expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ ["timeline"] = { ADDED_4_0_3 } }, {
 				i(53376),	-- Lockpicker's Glovelettes
 				i(57529),	-- Fur-Lined Slippers
 				i(57533),	-- Dwarven Iron Bracer
@@ -17,28 +17,28 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 		}),
 		expansion(EXPANSION.WOD, {
 			-- 6.0.2
-			expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+			expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 				i(113710),	-- Ravaged Leather Leggings
 			})),
 
 			-- 6.2.0
-			expansion(EXPANSION.WOD, 2.0, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_0 } }, {
+			expansion(EXPANSION.WOD, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_6_2_0 } }, {
 				i(127103),	-- Gladiator's Plate Shoulders
 			})),
 		}),
 		expansion(EXPANSION.LEGION, {
 			-- 7.0.3
-			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+			expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 				i(131203),	-- Chain Link Winter Bracers
 			})),
 			-- 7.2.5
-			expansion(EXPANSION.LEGION, 2.5, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {
+			expansion(EXPANSION.LEGION, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {
 				i(150472),	-- Grips of Silent Justice
 			})),
 		}),
 		expansion(EXPANSION.BFA, {	-- TODO: I really need to take a look at this one day and remove wrong itemIDs - Darkal
 			-- 8.0.1
-			expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
+			expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				n(BACK, {
 					i(155091),	-- Thovas-Explorer's Cape
 				}),
@@ -344,7 +344,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 		}),
 		expansion(EXPANSION.SL, {
 			-- 9.0.1
-			expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {
+			expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {
 				i(179775),	-- Conservator's Leather Tunic
 				i(179659),	-- Conservator's Silken Tunic
 				i(179660),	-- Winterborn Tunic
@@ -354,13 +354,13 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 	n(MISC, {
 		expansion(EXPANSION.DF, {
 			-- 10.1.7
-			expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 				i(208878),	-- Adventurer's Footlocker //Given to alts who used the TWW prepurchase boost
 			})),
 		}),
 		expansion(EXPANSION.TWW, {
 			-- 11.0.2
-			expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+			expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 				i(225937),	-- Putrid Goop //Biproduct of Fine Egg Powder salvage
 				i(220770),	-- Void-Scarred Stormhammer // For Isle of Dorn hunter pet unlock
 			})),
@@ -369,7 +369,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 	n(MOUNT_MODS, {
 		expansion(EXPANSION.DF, {
 			-- 10.2.0
-			expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+			expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 				i(207775),	-- Grotto Netherwing Drake: Teal Scales (MM!)
 			})),
 		}),
@@ -378,7 +378,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 	n(FOLLOWERS, {
 		expansion(EXPANSION.SL, {
 			-- 9.0.1
-			expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {
+			expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {
 				follower(1208),	-- Nadjia the Mistblade
 			})),
 		}),
@@ -386,13 +386,13 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 	n(WEAPONS, {
 		expansion(EXPANSION.WRATH, {
 			-- 3.0.2
-			expansion(EXPANSION.WRATH, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
+			expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {
 				i(42214),	-- Savage Gladiator's Waraxe
 			})),
 		}),
 		expansion(EXPANSION.MOP, {
 			-- 5.1.0
-			expansion(EXPANSION.MOP, 1.0, bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0 } }, {
+			expansion(EXPANSION.MOP, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_5_1_0 } }, {
 				i(91498),	-- Malevolent Gladiator's Heavy Crossbow
 				i(91496),	-- Malevolent Gladiator's Touch of Defeat
 				i(91755),	-- Malevolent Gladiator's Baton of Light
@@ -400,14 +400,14 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 		}),
 		expansion(EXPANSION.WOD, {
 			-- 6.0.2
-			expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+			expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 				i(118186),	-- Frostwolf Wisdom Stick
 				i(107644),	-- Napmaster's Sleep Mask
 			})),
 		}),
 		expansion(EXPANSION.BFA, {	-- TODO: I really need to take a look at this one day and remove wrong itemIDs - Darkal
 			-- 8.0.1
-			expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
+			expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				-- Drustvar items = Nazmir quest rewards
 				--i(161296),	-- Autumnvale Hunting Rifle
 
@@ -512,20 +512,20 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 		}),
 		expansion(EXPANSION.MOP, {
 			-- 5.0.4
-			expansion(EXPANSION.MOP, 0.4, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
+			expansion(EXPANSION.MOP, patch(0,4), bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 				q(30549),	-- [DNT] Rearm, Reuse, Recycle TRACKER
 				q(30982),	-- Animal Control
 				q(30997),	-- Animal Control
 			})),
 
 			-- 5.3.0
-			expansion(EXPANSION.MOP, 3.0, bubbleDownSelf({ ["timeline"] = { ADDED_5_3_0 } }, {
+			expansion(EXPANSION.MOP, patch(3,0), bubbleDownSelf({ ["timeline"] = { ADDED_5_3_0 } }, {
 				q(32832),	-- Taran Zhu and Dezco Scene
 			})),
 		}),
 		expansion(EXPANSION.WOD, {
 			-- 6.0.2
-			expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
+			expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_6_0_2 } }, {
 				q(33957, {	-- A Gift for Raa'la
 					["description"] = "Area: |cFFf09f26Frostfire Ridge|r",
 					["lvl"] = 10,
@@ -534,18 +534,18 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			})),
 
 			-- 6.1.0
-			expansion(EXPANSION.WOD, 1.0, bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0 } }, {
+			expansion(EXPANSION.WOD, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_6_1_0 } }, {
 				q(37805),	-- Goblin Looted
 			})),
 
 			-- 6.2.0
-			expansion(EXPANSION.WOD, 2.0, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_0 } }, {
+			expansion(EXPANSION.WOD, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_6_2_0 } }, {
 				q(39497),	-- Ogre Waygate
 			})),
 		}),
 		expansion(EXPANSION.LEGION, {
 			-- 7.0.3
-			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
+			expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3 } }, {
 				q(39842),	-- One Mage's Trash
 				q(39843),	-- The Muck Stops Here
 				q(42167),	-- Blood Gather Bit
@@ -553,34 +553,34 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			})),
 
 			-- 7.1.0
-			expansion(EXPANSION.LEGION, 1.0, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {
+			expansion(EXPANSION.LEGION, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_7_1_0 } }, {
 				q(45184),	-- 7.1 Class Hall - Special - PVP - PVP Repeated - Arena - Tracking Quest
 				q(45183),	-- 7.1 Class Hall - Special - PVP - PVP Repeated - Ashran - Tracking Quest
 				q(45181),	-- 7.1 Class Hall - Special - PVP - PVP Repeated - Battleground - Tracking Quest
 			})),
 
 			-- 7.2.0
-			expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {
+			expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_7_2_0 } }, {
 				q(46955),	-- Akazamzarak Silenced
 				q(47215),	-- Tracking Quest
 			})),
 
 			-- 7.3.0
-			expansion(EXPANSION.LEGION, 3.0, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {
+			expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ ["timeline"] = { ADDED_7_3_0 } }, {
 				q(48546),	-- Tracking Quest
 				q(49006),	--
 				q(49163),	--
 			})),
 
 			-- 7.3.2
-			expansion(EXPANSION.LEGION, 3.2, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2 } }, {
+			expansion(EXPANSION.LEGION, patch(3,2), bubbleDownSelf({ ["timeline"] = { ADDED_7_3_2 } }, {
 				q(49619),	--
 				q(49620),	-- completed some missions on the Legion Mission Board
 				q(49621),	--
 			})),
 
 			-- 7.3.5
-			expansion(EXPANSION.LEGION, 3.5, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {
+			expansion(EXPANSION.LEGION, patch(3,5), bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 } }, {
 				q(47957),	--
 				q(47958),	--
 				q(48602),	--
@@ -591,7 +591,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 		}),
 		expansion(EXPANSION.BFA, {
 			-- 8.0.1
-			expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
+			expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1 } }, {
 				q(50554),	--
 				q(50668, {
 					["description"] = "Area: |cFFf09f26Orgrimmar|r",
@@ -605,7 +605,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			})),
 
 			-- 8.1.0
-			expansion(EXPANSION.BFA, 1.0, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {
+			expansion(EXPANSION.BFA, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_8_1_0 } }, {
 				q(53723),	--
 				q(54215),	--
 				q(54216),	--
@@ -623,7 +623,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			})),
 
 			-- 8.1.5
-			expansion(EXPANSION.BFA, 1.5, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
+			expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 } }, {
 				q(55023, {	-- Bizmo's Brawlpub Awaits!
 					["description"] = "Category: |cFFf09f26Brawler's Guild|r",
 					["lvl"] = 60,
@@ -633,7 +633,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			})),
 
 			-- 8.2.0
-			expansion(EXPANSION.BFA, 2.0, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
+			expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } }, {
 				q(55660, { ["name"] = "Time Trials", ["_drop"] = { "g" }, }),	-- Time Trials (Tournament Realm Quest)
 				q(54966),	--
 				q(54967),	--
@@ -656,12 +656,12 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			})),
 
 			-- 8.2.5
-			expansion(EXPANSION.BFA, 2.5, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 } }, {
+			expansion(EXPANSION.BFA, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_8_2_5 } }, {
 				q(57550),	--
 			})),
 
 			-- 8.3.0
-			expansion(EXPANSION.BFA, 3.0, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {
+			expansion(EXPANSION.BFA, patch(3,0), bubbleDownSelf({ ["timeline"] = { ADDED_8_3_0 } }, {
 				q(58576),	--
 				q(59038),	--
 				q(59040),	--
@@ -669,13 +669,13 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			})),
 
 			-- 8.3.7
-			expansion(EXPANSION.BFA, 3.7, bubbleDownSelf({ ["timeline"] = { ADDED_8_3_7 } }, {
+			expansion(EXPANSION.BFA, patch(3,7), bubbleDownSelf({ ["timeline"] = { ADDED_8_3_7 } }, {
 				q(59553),	--
 			})),
 		}),
 		expansion(EXPANSION.SL, {
 			-- 9.0.1
-			expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {
+			expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { ADDED_9_0_1 } }, {
 				q(62684),	-- Encountered after using Focused Life Anima to create the final possible azerite power available from it (according to ATT), which was Fetish of the Hidden Labyrinths (Anima of Life and Death, Rank 3)?? Maybe new HQT for tracking?
 				q(56067),	--
 				q(56068),	--
@@ -693,13 +693,13 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			})),
 
 			-- 9.0.2
-			expansion(EXPANSION.SL, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2 } }, {
+			expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2 } }, {
 				q(57537),	-- Covering our Tracks
 				q(63219),	-- @ 73.5,91.6,STORMIND_CITY L6 NE Druid, 2022-07-30 // 52.5, 88.1 Orgrimmar 2023-07-03 Goblin Hunter L9
 			})),
 
 			-- 9.1.0
-			expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
+			expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {
 				q(63925),	--
 				q(64110),	--
 				q(64113),	--
@@ -716,13 +716,13 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			})),
 
 			-- 9.1.5
-			expansion(EXPANSION.SL, 1.5, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {
+			expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } }, {
 				q(64975),	--
 			})),
 		}),
 		expansion(EXPANSION.DF, {
 			-- 10.0.0
-			expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {
+			expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_0 } }, {
 				q(64764),	-- Flag Quest [DNT] (spellID 396726)
 				q(66034),	-- On Fail, Reset Player [DNT] (spellID 374750) / MDI Quest Trigger
 				q(67045),	--
@@ -731,48 +731,48 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			})),
 
 			-- 10.0.2
-			expansion(EXPANSION.DF, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2 } }, {
+			expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2 } }, {
 				q(72379),	--
 				q(74047),	--
 				q(74064),	--
 			})),
 
 			-- 10.0.5
-			expansion(EXPANSION.DF, 0.5, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
+			expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_10_0_5 } }, {
 				q(74897),	-- L70 Human Hunter Achieved Duelist and Clock Mog 2023-03-15
 				q(76157),	--
 			})),
 
 			-- 10.1.0
-			expansion(EXPANSION.DF, 1.0, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
+			expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 } }, {
 				q(75443),	-- Flag Tracking Quest (spellID 431951)
 			})),
 
 			-- 10.1.5
-			expansion(EXPANSION.DF, 1.5, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
+			expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ ["timeline"] = { ADDED_10_1_5 } }, {
 				q(76267),	--
 			})),
 
 			-- 10.1.7
-			expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
+			expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ ["timeline"] = { ADDED_10_1_7 } }, {
 				q(78300),	--
 			})),
 
 			-- 10.2.0
-			expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
+			expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 } }, {
 				q(78253),	--
 				q(78737),	--
 			})),
 
 			-- 10.2.5
-			expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
+			expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_5 } }, {
 				q(78976),	--
 				q(79353),	--
 				q(79474),	--
 			})),
 
 			-- 10.2.6
-			expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
+			expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_6 } }, {
 				q(79988),	--
 			})),
 		}),

@@ -10,25 +10,25 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 	}),
 	expansion(EXPANSION.CATA, {
 		-- 4.0.3
-		expansion(EXPANSION.CATA, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
+		expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
 			i(52488),	-- Jeweler's Sapphire Monocle
 		})),
 	}),
 	expansion(EXPANSION.MOP, {
 		-- 5.0.1
-		expansion(EXPANSION.MOP, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
+		expansion(EXPANSION.MOP, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_5_0_4 } }, {
 			i(73240),	-- Sedge Hat of the Enlightened
 		})),
 	}),
 	expansion(EXPANSION.WOD, {
 		-- 6.0.1
-		expansion(EXPANSION.WOD, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+		expansion(EXPANSION.WOD, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 			i(116399),	-- Emerald Sunglasses
 		})),
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 			i(92894),	-- Art Template Generic Head - Helm_Misc_StarPartyHat_A_01
 			i(81862),	-- Art Template Robe Dress_B_03 - Blue
 			i(133996),	-- Burgy Blackheart's Handsome Hat
@@ -37,7 +37,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 7.2.0
-		expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
+		expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_7_2_0 } }, {
 			i(147379),	-- Wooden Toy Axe [H] used to apply the mog
 			i(147378),	-- Wooden Toy Sword [A] (Visual usage for toy weapon set)
 			--
@@ -48,7 +48,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.0.1
-		expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 			i(162641),	-- Alliance Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			i(162640),	-- Horde Toy Cape (used from Winter Veil 2018 Toy, but its just used to attach the look to you, you actually never get the item)
 			i(163922),	-- Kobold Candle Helm
@@ -58,18 +58,18 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 8.1.5
-		expansion(EXPANSION.BFA, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_8_1_5 } }, {
+		expansion(EXPANSION.BFA, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_8_1_5 } }, {
 			i(168004),	-- Gift of N'Zoth
 		})),
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 			i(182306),	-- Monster Mantle
 		})),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
+		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
 			iensemble(186500),	-- Ensemble: Garb of the Twilight Grove (questID 63596)
 			iensemble(186518),	-- Ensemble: Forsworn Aspirant's Regalia (questID 63600)
 			iensemble(186505),	-- Ensemble: Rogue Necromancer's Vestments (questID 63629)
@@ -80,13 +80,13 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 9.1.5
-		expansion(EXPANSION.SL, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
+		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
 			i(187914),	-- Captain Noteo's Unused Eye Patch
 		})),
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			i(194318),	-- Book of Ancient Lore
 			i(193069),	-- Climber's Pack
 			i(198385),	-- Draconian Garden Pick
@@ -162,7 +162,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 10.0.5
-		expansion(EXPANSION.DF, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
+		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 				------ TRADING POST ------
 			n(ARMOR, {
 				i(190672),	-- Deathguard Acolyte's Cloak
@@ -266,7 +266,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 				------ TRADING POST ------
 			n(SETS, {
 				i(190796),	-- Ensemble: Slumbering Caldera Regalia
@@ -278,7 +278,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 10.1.5
-		expansion(EXPANSION.DF, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 			i(206800),	-- Arcane Detection Rod
 			i(206806),	-- Part Dislocator
 				------ TRADING POST ------
@@ -325,7 +325,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 				------ Trading Post ------
 			n(ARMOR, {
 				i(211069),	-- Azure Treads of the Kalu'ak
@@ -339,7 +339,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 			i(212338),	-- DNT - Hearthstone - Loot - Hat (Needs Art)
 			i(212532),	-- Reno's Hat
 			i(211926),	-- Riders of Azeroth Tabard
@@ -424,7 +424,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 10.2.6
-		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6 } }, {
+		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6 } }, {
 			i(217635),	-- Dream Raider's Azure Razor
 
 			------ Dragonriding Cup ------
@@ -454,7 +454,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 		})),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
 			n(SETS, {
 				i(223243),	-- Ensemble: Blue Diver Suit
 				i(221541),	-- Ensemble: Blue Tropical
@@ -530,7 +530,7 @@ root(ROOTS.NeverImplemented, filter(COSMETIC, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			n(ARMOR, {
 				i(224165),	-- Dornogal Tabard
 				i(224869),	-- Earthen Drape

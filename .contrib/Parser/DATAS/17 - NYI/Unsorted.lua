@@ -4,7 +4,7 @@
 -- Everything in this file hasn't been sorted yet.
 root(ROOTS.Unsorted, {
 	expansion(EXPANSION.TWW, {
-		expansion(EXPANSION.TWW, 0.5, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 			filter(BATTLE_PETS, {
 				i(229993),	-- Bluedoo (PET!) [Trading Post?]
 			}),
@@ -914,7 +914,7 @@ root(ROOTS.Unsorted, {
 			i(232525),	-- Dark Ranger General's Vest
 			i(232527),	-- Glyph of Traditional Ascendance
 		})),
-		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 			explorationHeader({
 				exploration(15667),	-- Delves
 				exploration(15552),	-- The Undersea
@@ -967,7 +967,7 @@ root(ROOTS.Unsorted, {
 			i(232494),	-- Restored Coffer Key
 			i(232495),	-- Restored Coffer Key
 		})),
-		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			n(ARMOR, {
 				--- Might Exist ---
 				i(226695),	-- Cunning Advisor's Favor
@@ -1318,7 +1318,7 @@ root(ROOTS.Unsorted, {
 		})),
 	}),
 	expansion(EXPANSION.DF, {
-		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { ADDED_10_2_7 } }, {
 			n(PVP, {
 				-- This is all broken as of 10.2.7. Currently added a placeholder data to the SL PvP vendor.
 				i(223769),	-- Eternal Aspirant's Cape

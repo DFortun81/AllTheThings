@@ -7,14 +7,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		n(CRAFTABLES, {
 			expansion(EXPANSION.MOP, {
 				-- 5.2.0
-				expansion(EXPANSION.MOP, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_5_2_0 } }, {
+				expansion(EXPANSION.MOP, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_5_2_0 } }, {
 					i(93440),	-- Crafted Dreadful Gladiator's Endgame
 					i(93450),	-- Crafted Dreadful Gladiator's Reprieve
 				})),
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 					i(161937),	-- Honorable Combatant's Inked Vessel [A]
 					i(159941),	-- Honorable Combatant's Inked Vessel [H]
 					i(161935),	-- Inked Vessel of Robust Regeneration [A]
@@ -25,7 +25,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					i(172910),	-- Darkmoon Card of Repose
 					i(173052),	-- Deathbound Codex
 					i(173055),	-- Redeemer's Column
@@ -33,13 +33,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 9.2.0
-				expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
+				expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
 					i(189721),	-- Glyph of the Sayaad
 				})),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(194843),	-- Explorer's Barding Manuscript
 					i(192464),	-- Darkmoon Deck: Ysera
 					i(191783),	-- Draconic Treatise on Blacksmithing
@@ -49,7 +49,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					i(222241),	-- Ace of Evolution
 					i(222223),	-- Ace of Shining
 					i(222214),	-- Ace of Symbiosis
@@ -386,7 +386,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 		filter(RECIPES, {
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 					r(269744),	-- Honorable Combatant's Inked Vessel [Rank 1]
 					r(256250),	-- Inked Vessel of Robust Regeneration [Rank 1]
 					r(256251),	-- Inked Vessel of Robust Regeneration [Rank 2]
@@ -399,7 +399,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 8.2.0
-				expansion(EXPANSION.BFA, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+				expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
 					r(299666),	-- Contract: Ankoan [Rank 2]
 					r(299667),	-- Contract: Ankoan [Rank 3]
 					r(299669),	-- Contract: Unshackled [Rank 2]
@@ -416,7 +416,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					r(343688),	-- Crafter's Mark III
 					r(343687),	-- Crafter's Mark IV
 					r(311407),	-- Deathbound Codex
@@ -428,7 +428,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(382583),	-- Opening
 					r(391783),	-- Wisp of Tyr
 					r(388458),	-- Unknown
@@ -500,14 +500,14 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 10.2.7
-				expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+				expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
 					-- Without SpellID attached
 					i(224270),	-- Tattered Technique: Certificate of Ownership
 				})),
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					r(445068),	-- Inquisitor's Greenwood Bow
 					r(441318),	-- Miner's Rune of Decyphering
 					r(445069),	-- Vagabond's Alacrity
@@ -526,20 +526,20 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 	prof(INSCRIPTION, {
 		expansion(EXPANSION.MOP, {
 			-- 5.0.1
-			expansion(EXPANSION.MOP, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_5_0_4} }, {
+			expansion(EXPANSION.MOP, patch(0,1), bubbleDownSelf({ ["timeline"] = {CREATED_5_0_4} }, {
 				i(87829),	-- Technique: Incarnadine Ink
 				i(87830),	-- Technique: Tigersblood Tincture
 			})),
 		}),
 		expansion(EXPANSION.WOD, {
 			-- 6.2.1
-			expansion(EXPANSION.WOD, 2.1, bubbleDownSelf({ ["timeline"] = {CREATED_6_2_2} }, {
+			expansion(EXPANSION.WOD, patch(2,1), bubbleDownSelf({ ["timeline"] = {CREATED_6_2_2} }, {
 				i(129139),	-- Tome of Rapid Pathfinding
 			})),
 		}),
 		expansion(EXPANSION.LEGION, {
 			-- 7.0.3
-			expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = {CREATED_7_0_3} }, {
+			expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = {CREATED_7_0_3} }, {
 				-- #if BEFORE 10.1.5
 				i(141061),	-- Technique: Grimoire of the Abyssal (Item never made it into the game)
 				-- #endif
@@ -548,7 +548,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			})),
 
 			-- 7.2.0
-			expansion(EXPANSION.LEGION, 2.0, bubbleDownSelf({ ["timeline"] = {CREATED_7_2_0} }, {
+			expansion(EXPANSION.LEGION, patch(2,0), bubbleDownSelf({ ["timeline"] = {CREATED_7_2_0} }, {
 				i(146335),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
 				i(146355),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)
 				i(146375),	-- Vantus Rune Technique: Black Rook Hold (likely PTR version)

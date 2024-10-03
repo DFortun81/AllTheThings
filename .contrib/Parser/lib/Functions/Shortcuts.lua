@@ -1492,7 +1492,7 @@ modItemId = function(itemID, modID, bonusID)
 	end
 	return i;
 end
--- Adds a 'type' field with proper formatting to set the 'name' of this object automatically in Retail
+-- Adds the 'autoname' field with proper formatting to set the 'name' of this object automatically in Retail
 -- NOTE: The base Type must support: GlobalVariant.WithAutoName as a Class Variant for the 'type' field to be recognized in the addon to generate a 'name'
 -- ref. Classes/Quest.lua
 name = function(type, id, t)
@@ -1502,6 +1502,14 @@ name = function(type, id, t)
 	end
 	t.autoname = type..":"..id
 	return t
+end
+-- Converts 3 separate patch values into a single patch decimal for use within expansion() groups
+local PatchDecimals = 2
+local RevDecimals = 2
+local PatchShift = 10 ^ PatchDecimals
+local RevShift = 10 ^ RevDecimals
+patch = function(major,minor,build)
+	return tonumber(major or 0) + tonumber(minor or 0) / PatchShift + tonumber(build or 0) / (PatchShift * RevShift)
 end
 un = function(u, t) t.u = u; return t; end						-- Mark an object unobtainable where u is the type.
 

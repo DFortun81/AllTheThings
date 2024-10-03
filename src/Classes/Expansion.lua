@@ -7,6 +7,12 @@ local function GetExpansionName(expansionID)
 	-- /script for key,value in pairs(_G) do if key:find("EXPANSION_NAME") then print(key, value); end end
 	return _G["EXPANSION_NAME" .. (expansionID - 1)] or (EXPANSION_FILTER_TEXT .. " " .. expansionID);
 end
+
+-- These should match the `patch()` function shifts for `expansion()` objects
+-- ref: .contrib\Parser\lib\Functions\Shortcuts.lua
+local PatchDecimals = 2
+local RevDecimals = 2
+
 --[[
 local EJ_GetTierInfo = EJ_GetTierInfo;
 if EJ_GetTierInfo then
@@ -30,6 +36,8 @@ local GetExpansionInfoMeta = function(t, key)
 	return rawget(t, key)
 end
 
+local PatchShift = 10 ^ PatchDecimals
+local RevShift = 10 ^ RevDecimals
 local ExpansionInfoByID = {};
 local EXPANSION_DATA = app.L.EXPANSION_DATA;
 setmetatable(ExpansionInfoByID, {
@@ -37,9 +45,9 @@ setmetatable(ExpansionInfoByID, {
 		local info;
 		local expansionID = math_floor(patchID);
 		if expansionID ~= patchID then
-			local patch_decimal = 100 * (patchID - expansionID);
+			local patch_decimal = PatchShift * (patchID - expansionID);
 			local patch = math_floor(patch_decimal + 0.0001);
-			local rev = math_floor(10 * (patch_decimal - patch) + 0.0001);
+			local rev = math_floor(RevShift * (patch_decimal - patch) + 0.0001);
 			info = setmetatable({
 				name = tostring(expansionID).."."..tostring(patch).."."..tostring(rev),
 			}, { __index = ExpansionInfoByID[expansionID] });

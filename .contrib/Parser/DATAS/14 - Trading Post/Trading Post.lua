@@ -2040,7 +2040,7 @@ root(ROOTS.NeverImplemented, {
 		}),
 		filter(COSMETIC, {
 			-- 10.0.0
-			expansion(EXPANSION.DF, 0.01, bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
+			expansion(EXPANSION.DF, patch(0,01), bubbleDown({ ["timeline"] = { CREATED_10_0_0 } }, {
 				n(SETS, {
 					------ Honored Valarjar Set [Mail] ------
 					i(190563),	-- Armbands of the Honored Valarjar
@@ -2100,7 +2100,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.0.5
-			expansion(EXPANSION.DF, 0.5, bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
+			expansion(EXPANSION.DF, patch(0,5), bubbleDown({ ["timeline"] = { CREATED_10_0_5 } }, {
 				n(ARMOR, {
 					i(190672),	-- Deathguard Acolyte's Cloak
 					i(189869),	-- Distinguished Warcloak
@@ -2203,7 +2203,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.1.0
-			expansion(EXPANSION.DF, 1.7, bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
+			expansion(EXPANSION.DF, patch(1,7), bubbleDown({ ["timeline"] = { CREATED_10_1_0 } }, {
 				n(SETS, {
 					i(190796),	-- Ensemble: Slumbering Caldera Regalia
 				}),
@@ -2214,7 +2214,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.1.5
-			expansion(EXPANSION.DF, 1.5, bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
+			expansion(EXPANSION.DF, patch(1,5), bubbleDown({ ["timeline"] = { CREATED_10_1_5 } }, {
 				n(ARMOR, {
 					i(190559),	-- Helm of the Swift
 				}),
@@ -2265,7 +2265,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.2.0
-			expansion(EXPANSION.DF, 2.0, bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
+			expansion(EXPANSION.DF, patch(2,0), bubbleDown({ ["timeline"] = { CREATED_10_2_0 } }, {
 				n(ARMOR, {
 					i(211069),	-- Azure Treads of the Kalu'ak
 					i(210849),	-- Trader's Azure Sarong
@@ -2279,7 +2279,7 @@ root(ROOTS.NeverImplemented, {
 			})),
 
 			-- 10.2.5
-			expansion(EXPANSION.DF, 2.5, bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
+			expansion(EXPANSION.DF, patch(2,5), bubbleDown({ ["timeline"] = { CREATED_10_2_5 } }, {
 				n(ARMOR, {
 					i(190807),	-- Artisan's Work Shirt
 					i(190669),	-- Burnished Helm of Righteousness

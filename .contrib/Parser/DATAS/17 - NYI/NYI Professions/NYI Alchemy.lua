@@ -13,13 +13,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(EXPANSION.WRATH, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
 					i(40248),	-- Eternal Might
 				})),
 			}),
 			expansion(EXPANSION.CATA, {
 				-- 4.0.3
-				expansion(EXPANSION.CATA, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
+				expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
 					i(61939),	-- Artisan Alchemist's Tarot
 					i(61938),	-- Expert Alchemist's Tarot
 					i(61941),	-- Grand Master Alchemist's Tarot
@@ -29,7 +29,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 					i(109227),	-- UNUSED
 					i(109146),	-- UNUSED
 					i(109149),	-- UNUSED
@@ -42,13 +42,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.2.0
-				expansion(EXPANSION.BFA, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+				expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
 					i(168502),	-- Potion of Reconstitution
 				})),
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					i(171295),	-- [DNT] REUSE ME \\ Bolstering Concoction
 					i(171296),	-- [DNT] REUSE ME \\ Brilliant Concoction
 					i(171297),	-- [DNT] REUSE ME \\ Culinary Concoction
@@ -66,7 +66,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					i(202116),	-- Alacritous Alchemist Stone
 					i(191535),	-- Alchemical Flavor Pocket+
 					i(191536),	-- Alchemical Flavor Pocket++
@@ -81,7 +81,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					i(212775),	-- zzOldFleeting Flask of Tempered Aggression
 					i(212776),	-- zzOldFleeting Flask of Tempered Aggression
 					i(212777),	-- zzOldFleeting Flask of Tempered Aggression
@@ -114,26 +114,26 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TBC, {
 				-- 2.3.0
-				expansion(EXPANSION.TBC, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_2_3_0 } }, {
+				expansion(EXPANSION.TBC, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_2_3_0 } }, {
 					-- Without SpellID attched
 					i(34481),	-- Recipe: Mad Alchemist's Potion
 				})),
 			}),
 			expansion(EXPANSION.WRATH, {
 				-- 3.0.2
-				expansion(EXPANSION.WRATH, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+				expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
 					r(54020),	-- Transmute: Eternal Might
 					r(53846),	-- Unknown
 				})),
 			}),
 			expansion(EXPANSION.CATA, {
 				-- 4.0.3
-				expansion(EXPANSION.CATA, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
+				expansion(EXPANSION.CATA, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_4_0_3 } }, {
 					r(85621),	-- Alchemy Tarot
 				})),
 
 				-- 4.3.0
-				expansion(EXPANSION.CATA, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_4_3_0 } }, {
+				expansion(EXPANSION.CATA, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_4_3_0 } }, {
 					-- With SpellID attched
 					i(71955),	-- Recipe: Transmute Deepholm Iolite
 					i(71956),	-- Recipe: Transmute Elven Peridot
@@ -145,7 +145,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.WOD, {
 				-- 6.0.2
-				expansion(EXPANSION.WOD, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
+				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 					r(168042),	-- Alchemical Catalyst
 					r(156586),	-- Alchemist's Cauldron
 					r(156567),	-- Draenor Armor Flask
@@ -172,7 +172,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.LEGION, {
 				-- 7.3.0
-				expansion(EXPANSION.LEGION, 3.0, bubbleDownSelf({ ["timeline"] = { CREATED_7_3_0 } }, {
+				expansion(EXPANSION.LEGION, patch(3,0), bubbleDownSelf({ ["timeline"] = { CREATED_7_3_0 } }, {
 					r(251660),	-- Unknown
 					r(251661),	-- Unknown
 					r(251662),	-- Unknown
@@ -180,7 +180,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.BFA, {
 				-- 8.0.1
-				expansion(EXPANSION.BFA, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
+				expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 					r(252365),	-- Unknown
 					r(252366),	-- Unknown
 					r(252367),	-- Unknown
@@ -190,7 +190,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 8.2.0
-				expansion(EXPANSION.BFA, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+				expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
 					r(298737),	-- Potion of Reconstitution [Rank 1]
 					r(298738),	-- Potion of Reconstitution [Rank 2]
 					-- With SpellID attched
@@ -200,7 +200,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.SL, {
 				-- 9.0.1
-				expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+				expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 					r(307106),	-- 9.0 Alchemy - Modified Crafting Reagent 02
 					r(307107),	-- 9.0 Alchemy - Modified Crafting Reagent 03
 					r(307108),	-- 9.0 Alchemy - Modified Crafting Reagent 04
@@ -220,13 +220,13 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				})),
 
 				-- 9.1.0
-				expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
+				expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_9_1_0 } }, {
 					r(354860),	-- Unknown
 				})),
 			}),
 			expansion(EXPANSION.DF, {
 				-- 10.0.0
-				expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+				expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 					r(371635),	-- Demonstration Item Recipe
 					r(370771),	-- Dragon Isles Alchemy Troubleshooting Test Recipe (DNT)
 					r(382571),	-- Opening
@@ -284,7 +284,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 			}),
 			expansion(EXPANSION.TWW, {
 				-- 11.0.0
-				expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+				expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 					r(430606),	-- Unknown
 					r(430613),	-- Unknown
 					r(433271),	-- Unknown

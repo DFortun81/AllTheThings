@@ -5,7 +5,7 @@
 root(ROOTS.NeverImplemented, filter(TITLES, {
 	expansion(EXPANSION.WRATH, {
 		-- 3.0.2
-		expansion(EXPANSION.WRATH, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
+		expansion(EXPANSION.WRATH, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_3_0_2 } }, {
 			title(69),	-- Doctor <Name>
 			title(64),	-- Grand Master Alchemist <Name>
 			title(70),	-- Grand Master Angler <Name>
@@ -40,19 +40,19 @@ root(ROOTS.NeverImplemented, filter(TITLES, {
 	}),
 	expansion(EXPANSION.LEGION, {
 		-- 7.0.3
-		expansion(EXPANSION.LEGION, 0.3, bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
+		expansion(EXPANSION.LEGION, patch(0,3), bubbleDownSelf({ ["timeline"] = { CREATED_7_0_3 } }, {
 			title(330),	-- Master Assassin <Name>
 		})),
 	}),
 	expansion(EXPANSION.BFA, {
 		-- 8.2.0
-		expansion(EXPANSION.BFA, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
+		expansion(EXPANSION.BFA, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_8_2_0 } }, {
 			title(406),	-- Sparking <Name>
 		})),
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
+		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_9_0_1 } }, {
 			title(436),	-- <Name> the Avowed
 			title(424),	-- Deathbringer <Name>
 			title(408),	-- Pilgrim <Name> the Mallet Bearer
@@ -60,19 +60,19 @@ root(ROOTS.NeverImplemented, filter(TITLES, {
 		})),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
+		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_9_2_0 } }, {
 			title(453),	-- <Name> the [PH] TBD Title
 		})),
 	}),
 	expansion(EXPANSION.DF, {
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			title(518),	-- <Name>, Honorary Historian
 		})),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
 			title(539),	-- Mistrunner (TITLE!)
 		})),
 	}),

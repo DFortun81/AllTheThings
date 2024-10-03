@@ -1879,7 +1879,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 	}),
 	expansion(EXPANSION.SL, {
 		-- 9.0.1
-		expansion(EXPANSION.SL, 0.1, bubbleDownSelf({ ["timeline"] = {CREATED_9_0_1} }, {
+		expansion(EXPANSION.SL, patch(0,1), bubbleDownSelf({ ["timeline"] = {CREATED_9_0_1} }, {
 			ach(14340),	-- The Path Towards Ascension 1
 			ach(14342),	-- The Path Towards Ascension 3
 			ach(14343),	-- The Path Towards Ascension 5
@@ -2021,7 +2021,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.0.2
-		expansion(EXPANSION.SL, 0.2, bubbleDownSelf({ ["timeline"] = {CREATED_9_0_2} }, {
+		expansion(EXPANSION.SL, patch(0,2), bubbleDownSelf({ ["timeline"] = {CREATED_9_0_2} }, {
 			-- 9.0.2.35854
 			ach(14807),	-- <Hidden> Completed Shadowlands Story (DNT) <Account>
 			ach(14811),	-- <Hidden> Shadowlands Alt - Launch Chromie if Shadowlands in Progress (DNT)
@@ -2068,7 +2068,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.0.5
-		expansion(EXPANSION.SL, 0.5, bubbleDownSelf({ ["timeline"] = {CREATED_9_0_5} }, {
+		expansion(EXPANSION.SL, patch(0,5), bubbleDownSelf({ ["timeline"] = {CREATED_9_0_5} }, {
 			ach(14933),	-- 9.0 - Covenant - Night Fae - Small Shape Selected
 			--
 			ach(15010),	-- Maw Tracking - Vendor - Items Unlocked - Apprehensive [DNT]
@@ -2092,7 +2092,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.1.0
-		expansion(EXPANSION.SL, 1.0, bubbleDownSelf({ ["timeline"] = {CREATED_9_1_0} }, {
+		expansion(EXPANSION.SL, patch(1,0), bubbleDownSelf({ ["timeline"] = {CREATED_9_1_0} }, {
 			ach(14934),	-- 9.1 Campaign - Quest Launch \\ 9.1 Campaign - Patch Quest Launch - Intro (RMV)
 			--
 			ach(14944),	-- Torghast Tracking 9.1 - Layer 9 Unlocked - Account [DNT]
@@ -2169,7 +2169,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.1.5
-		expansion(EXPANSION.SL, 1.5, bubbleDownSelf({ ["timeline"] = {CREATED_9_1_5} }, {
+		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ ["timeline"] = {CREATED_9_1_5} }, {
 			ach(15395),	-- Fae's Giving [DNT]
 			ach(15242),	-- Renowned - Kyrian
 			ach(15243),	-- Renowned - Necrolords
@@ -2189,7 +2189,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.2.0
-		expansion(EXPANSION.SL, 2.0, bubbleDownSelf({ ["timeline"] = {CREATED_9_2_0} }, {
+		expansion(EXPANSION.SL, patch(2,0), bubbleDownSelf({ ["timeline"] = {CREATED_9_2_0} }, {
 			ach(15559),	-- 9.2 ZM - Cypher System - Talent Unlocked - Aealic
 			ach(15560),	-- 9.2 ZM - Cypher System - Talent Unlocked - Dealic
 			ach(15561),	-- 9.2 ZM - Cypher System - Talent Unlocked - Trebalim
@@ -2281,13 +2281,13 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 9.2.5
-		expansion(EXPANSION.SL, 2.5, bubbleDownSelf({ ["timeline"] = {CREATED_9_2_5} }, {
+		expansion(EXPANSION.SL, patch(2,5), bubbleDownSelf({ ["timeline"] = {CREATED_9_2_5} }, {
 			ach(15596),	-- Return to Lordaeron (Hidden Character Achievement)
 		})),
 	}),
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			ach(15992),	-- <DNT> Dragonscale Expedition Rank 01
 			ach(16022),	-- <DNT> Dragonscale Expedition Rank 02
 			ach(16023),	-- <DNT> Dragonscale Expedition Rank 03
@@ -2544,7 +2544,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.0.2
-		expansion(EXPANSION.DF, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
+		expansion(EXPANSION.DF, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_2 } }, {
 			-- 10.0.2.45779
 			ach(16703),	-- 10.0 Thal - Raid Intro Quest Launch [DNT]
 			ach(16713),	-- <DNT> Wrathion - 1 - Trusted Champion
@@ -2835,7 +2835,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.0.5
-		expansion(EXPANSION.DF, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
+		expansion(EXPANSION.DF, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_5 } }, {
 			--10.0.5.47871
 			ach(16735),	-- 10.0.5 Trading Post - Tutorial Quest - Objective: Tenders Claimed - JZB <DND>
 			ach(16737),	-- 10.0.5 Trading Post - Tutorial Quest - Completed (Reward for Player) - JZB <DND>
@@ -2850,7 +2850,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.0.7
-		expansion(EXPANSION.DF, 0.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
+		expansion(EXPANSION.DF, patch(0,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_7 } }, {
 			--10.0.7.47910
 			ach(17306),	-- <DNT> Winterpelt Furbolg - 1 - Friendly
 			ach(17307),	-- <DNT> Winterpelt Furbolg - 1 - Honored
@@ -2870,7 +2870,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 			--10.1.0.48480
 			ach(17537),	-- Dragon Chase - WS01
 			ach(17538),	-- Dragon Chase - WS02
@@ -2989,7 +2989,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.1.5
-		expansion(EXPANSION.DF, 1.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
+		expansion(EXPANSION.DF, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_5 } }, {
 			--10.1.5.49516
 			ach(17732),	-- <Hidden>10.1.5 Chromie Time - Hit 60 While In Chromie Time (copy) (copy)
 			ach(17733),	-- <Hidden> 10.1.5 Chromie Time - Hit 61 While In Chromie Time (copy) (copy)
@@ -3009,7 +3009,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		--10.1.7
-		expansion(EXPANSION.DF, 1.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
+		expansion(EXPANSION.DF, patch(1,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_7 } }, {
 			--10.1.7.50442
 			ach(18860),	-- <Hidden> ACCOUNT: Renown Campaign Complete - Tyr 3
 			ach(18938),	-- Seeing Red (account)
@@ -3022,7 +3022,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			ach(19216),	-- <DNT> Dream Wardens Rank 1 (Account)
 			ach(19217),	-- <DNT> Dream Wardens Rank 2 (Account)
 			ach(19218),	-- <DNT> Dream Wardens Rank 3 (Account)
@@ -3115,14 +3115,14 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.2.5
-		expansion(EXPANSION.DF, 2.5, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
+		expansion(EXPANSION.DF, patch(2,5), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_5 } }, {
 			ach(19784),	-- Hearthstone Game Wins
 			--10.2.5.52968
 			ach(19720),	-- Reclamation of Gilneas (Hidden Character Achievement)
 		})),
 
 		-- 10.2.6
-		expansion(EXPANSION.DF, 2.6, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6 } }, {
+		expansion(EXPANSION.DF, patch(2,6), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_6 } }, {
 			ach(19579),	-- The Awakened Aspects
 			ach(19577),	-- The Awakened Drake
 			ach(19578),	-- The Awakened Wyrm
@@ -3179,7 +3179,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 10.2.7
-		expansion(EXPANSION.DF, 2.7, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
+		expansion(EXPANSION.DF, patch(2,7), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_7 } }, {
 			-- 10.2.7.54171
 			ach(20039),	-- [DNT] Damage - Humanoid
 			ach(20046),	-- [DNT] Damage - Beast
@@ -3210,7 +3210,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			-- 11.0.0.54311
 			ach(19467),	-- 1st level 80 on account (DNT)
 			ach(19469),	-- 2nd level 80 on account (DNT)
@@ -3587,7 +3587,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 11.0.2
-		expansion(EXPANSION.TWW, 0.2, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
+		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
 			-- 11.0.2.55399
 			ach(40857),	-- Warbands: Bank Quest Unlock
 			ach(40861),	-- Mislaid Curiosities looted
@@ -3605,7 +3605,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		})),
 
 		-- 11.0.5
-		expansion(EXPANSION.TWW, 0.5, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
+		expansion(EXPANSION.TWW, patch(0,5), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
 			-- 11.0.5.56487
 			ach(40886),	-- <Hidden> Is Dracthyr For Soar Wingman
 			ach(40910),	-- Successfully Stress Test CN Realms

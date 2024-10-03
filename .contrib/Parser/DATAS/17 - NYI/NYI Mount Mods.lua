@@ -5,7 +5,7 @@
 root(ROOTS.NeverImplemented, n(MOUNT_MODS, {
 	expansion(EXPANSION.DF, {
 		-- 10.0.0
-		expansion(EXPANSION.DF, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
+		expansion(EXPANSION.DF, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_10_0_0 } }, {
 			-- With QuestID attached
 			i(196984),	-- Cliffside Wylderdrake: Finned Jaw (MM!)
 			i(196993),	-- Cliffside Wylderdrake: Sleek Horns (MM!)
@@ -33,14 +33,14 @@ root(ROOTS.NeverImplemented, n(MOUNT_MODS, {
 		})),
 
 		-- 10.1.0
-		expansion(EXPANSION.DF, 1.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
+		expansion(EXPANSION.DF, patch(1,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_1_0 } }, {
 			i(203319),	-- Winding Slitherdrake: Finned Cheek (MM!)
 			i(203301),	-- Winding Slitherdrake: Light Blue and Copper Armor (MM!)
 			i(203302),	-- Winding Slitherdrake: Purple and Silver Armor (MM!)
 		})),
 
 		-- 10.2.0
-		expansion(EXPANSION.DF, 2.0, bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
+		expansion(EXPANSION.DF, patch(2,0), bubbleDownSelf({ ["timeline"] = { CREATED_10_2_0 } }, {
 			i(210478),	-- Flourishing Whimsydrake: Gold and Pink Armor (MM!)
 			i(207757),	-- Grotto Netherwing Drake: Purple and Silver Armor (MM!)
 			i(211381),	-- Grotto Netherwing Drake: Violet Scales (MM!)
@@ -49,7 +49,7 @@ root(ROOTS.NeverImplemented, n(MOUNT_MODS, {
 	}),
 	expansion(EXPANSION.TWW, {
 		-- 11.0.0
-		expansion(EXPANSION.TWW, 0.01, bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
+		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			i(223510),	-- Delver's Dirigible Schematic: Template (MM!)
 		})),
 	}),
