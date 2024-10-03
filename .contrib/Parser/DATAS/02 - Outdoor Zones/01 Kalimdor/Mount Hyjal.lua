@@ -366,12 +366,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 62.0, 24.8, MOUNT_HYJAL },
 					["isBreadcrumb"] = true,
 				}),
-				q(29125, {	-- Between the Trees
-					["qg"] = 52669,	-- Matoclaw
-					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-					["isDaily"] = true,
-				}),
 				q(25428, {	-- Black Heart of Flame
 					["qg"] = 39933,	-- Tyrus Blackhorn
 					["sourceQuests"] = {
@@ -430,12 +424,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							},
 						}),
 					},
-				}),
-				q(29147, {	-- Call the Flock
-					["qg"] = 52669,	-- Matoclaw
-					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-					["isDaily"] = true,
 				}),
 				q(25519, {	-- Children of Tortolla
 					["qg"] = 40341,	-- Tortolla
@@ -1212,12 +1200,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(57328),	-- Cloak of Cheerful Flowers
 					},
 				}),
-				q(29164, {	-- Perfecting Your Howl
-					["qg"] = 52669,	-- Matoclaw
-					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-					["isDaily"] = true,
-				}),
 				q(25509, {	-- Physical Training: Forced Labor
 					["qg"] = 39413,	-- Instructor Mylva
 					["sourceQuest"] = 25291,	-- Twilight Training
@@ -1265,141 +1247,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "If the NPC is not visible and Magni is there instead, you will need to complete the quest 'Do It the Azerite Way' [55521] to restore the proper phasing to pick up this quest.",
 					-- #endif
 				}),
-				q(29101, {	-- Punting Season
-					["qg"] = 52671,	-- Mylune
-					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-					["coord"] = { 27.1, 61.9, MOUNT_HYJAL },
-					["isDaily"] = true,
-					["lvl"] = 85,
-					["groups"] = {
-						objective(1, {	-- 0/5 Child of Tortolla punted into water
-							["providers"] = {
-								{ "n", 52177},	-- Child of Tortolla
-								{ "n", 52218},	-- Child of Tortolla
-							},
-						}),
-					},
-				}),
-				q(29123, {	-- Rage Against the Flames
-					["qg"] = 52669,	-- Matoclaw
-					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-					["isDaily"] = true,
-					["lvl"] = 85,
-					["groups"] = {
-						objective(1, {	-- 0/6 Invader from the Firelands slain
-							["providers"] = {
-								{ "n", 52816},	-- Charred Invader
-								{ "n", 52219},	-- Flame Terror
-								{ "n", 52300},	-- Seething Pyrelord
-								{ "n", 52383},	-- Nemesis
-								{ "n", 52399},	-- Galenges
-								{ "n", 52649},	-- Millagazor
-								{ "n", 52749},	-- Pyrachnis
-								{ "n", 52766},	-- Lylagar
-								{ "n", 52791},	-- Charred Flamewaker
-								{ "n", 52794},	-- Brimstone Destroyer
-								{ "n", 52795},	-- Brimstone Hound
-								{ "n", 53264},	-- Searris
-								{ "n", 53265},	-- Kelbnar
-								{ "n", 53267},	-- Andrazor
-								{ "n", 53271},	-- Fah Jarakk
-								{ "n", 54362},	-- Scarred Acolyte
-								{ "n", 52289},	-- Fiery Behemoth
-							},
-						}),
-					},
-				}),
-				q(29127, {	-- Rage Against the Flames
-					["qg"] = 52669,	-- Matoclaw
-					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-					["isDaily"] = true,
-					["lvl"] = 85,
-					["groups"] = {
-						objective(1, {	-- 0/8 Invader from the Firelands slain
-							["providers"] = {
-								{ "n", 52816},	-- Charred Invader
-								{ "n", 52219},	-- Flame Terror
-								{ "n", 52300},	-- Seething Pyrelord
-								{ "n", 52383},	-- Nemesis
-								{ "n", 52399},	-- Galenges
-								{ "n", 52649},	-- Millagazor
-								{ "n", 52749},	-- Pyrachnis
-								{ "n", 52766},	-- Lylagar
-								{ "n", 52791},	-- Charred Flamewaker
-								{ "n", 52794},	-- Brimstone Destroyer
-								{ "n", 52795},	-- Brimstone Hound
-								{ "n", 53264},	-- Searris
-								{ "n", 53265},	-- Kelbnar
-								{ "n", 53267},	-- Andrazor
-								{ "n", 53271},	-- Fah Jarakk
-								{ "n", 54362},	-- Scarred Acolyte
-								{ "n", 52289},	-- Fiery Behemoth
-							},
-						}),
-					},
-				}),
-				q(29149, {	-- Rage Against the Flames
-					["qg"] = 52669,	-- Matoclaw
-					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-					["isDaily"] = true,
-					["lvl"] = 85,
-					["groups"] = {
-						objective(1, {	-- 0/7 Invader from the Firelands slain
-							["providers"] = {
-								{ "n", 52816},	-- Charred Invader
-								{ "n", 52219},	-- Flame Terror
-								{ "n", 52300},	-- Seething Pyrelord
-								{ "n", 52383},	-- Nemesis
-								{ "n", 52399},	-- Galenges
-								{ "n", 52649},	-- Millagazor
-								{ "n", 52749},	-- Pyrachnis
-								{ "n", 52766},	-- Lylagar
-								{ "n", 52791},	-- Charred Flamewaker
-								{ "n", 52794},	-- Brimstone Destroyer
-								{ "n", 52795},	-- Brimstone Hound
-								{ "n", 53264},	-- Searris
-								{ "n", 53265},	-- Kelbnar
-								{ "n", 53267},	-- Andrazor
-								{ "n", 53271},	-- Fah Jarakk
-								{ "n", 54362},	-- Scarred Acolyte
-								{ "n", 52289},	-- Fiery Behemoth
-							},
-						}),
-					},
-				}),
-				q(29163, {	-- Rage Against the Flames
-					["qg"] = 52669,	-- Matoclaw
-					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-					["isDaily"] = true,
-					["lvl"] = 85,
-					["groups"] = {
-						objective(1, {	-- 0/9 Invader from the Firelands slain
-							["providers"] = {
-								{ "n", 52816},	-- Charred Invader
-								{ "n", 52219},	-- Flame Terror
-								{ "n", 52300},	-- Seething Pyrelord
-								{ "n", 52383},	-- Nemesis
-								{ "n", 52399},	-- Galenges
-								{ "n", 52649},	-- Millagazor
-								{ "n", 52749},	-- Pyrachnis
-								{ "n", 52766},	-- Lylagar
-								{ "n", 52791},	-- Charred Flamewaker
-								{ "n", 52794},	-- Brimstone Destroyer
-								{ "n", 52795},	-- Brimstone Hound
-								{ "n", 53264},	-- Searris
-								{ "n", 53265},	-- Kelbnar
-								{ "n", 53267},	-- Andrazor
-								{ "n", 53271},	-- Fah Jarakk
-								{ "n", 54362},	-- Scarred Acolyte
-								{ "n", 52289},	-- Fiery Behemoth
-							},
-						}),
-					},
-				}),
 				q(25576, {	-- Rage of the Wolf Ancient
 					["qg"] = 40837,	-- Yargra Blackscar
 					["sourceQuest"] = 25617,	-- Into the Maw!
@@ -1407,31 +1254,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/12 Dark Iron Laborer slain
 							["provider"] = { "n", 40838 },	-- Dark Iron Laborer
-						}),
-					},
-				}),
-				q(29248, {	-- Releasing the Pressure	-- todo: unknown source quest
-					["qg"] = 52986,	-- Dorda'en Nightweaver
-					["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
-					["isDaily"] = true,
-					["groups"] = {
-						objective(1, {	-- 0/100 Flamewaker Scale
-							["provider"] = { "i", 69679 },	-- Flamewaker Scale
-							["cr"] = 52791,	-- Charred Flamewaker
-						}),
-					},
-				}),
-				q(29246, {	-- Relieving the Pain	-- todo: unknown source quest
-					["qg"] = 52986,	-- Dorda'en Nightweaver
-					["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
-					["isDaily"] = true,
-					["groups"] = {
-						objective(1, {	-- 0/4 Flame-Wreathed Heart
-							["provider"] = { "i", 69678 },	-- Flame-Wreathed Heart
-							["crs"] = {
-								52300,	-- Seething Pyrelord
-								53264,	-- Searris
-							},
 						}),
 					},
 				}),
@@ -1666,20 +1488,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(57306),	-- Chestguard of Rapid Promotion
 					},
 				}),
-				q(29166, {	-- Supplies for the Other Side
-					["qg"] = 52669,	-- Matoclaw
-					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-					["isDaily"] = true,
-					["groups"] = {
-						objective(1, {	-- 0/7 Blueroot Vine
-							["providers"] = {
-								{ "i", 69236 },	-- Blueroot Vine
-								{ "o", 208442 },	-- Blueroot Vine
-							},
-						}),
-					},
-				}),
 				q(25352, {	-- Sweeping the Shelf
 					["qg"] = 39433,	-- Ian Duran
 					["sourceQuest"] = 25278,	-- Cleaning House
@@ -1744,12 +1552,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(57355),	-- Treegrip Pants
 						i(57354),	-- Wildlife Defender
 					},
-				}),
-				q(29165, {	-- The Call of the Pack
-					["qg"] = 52669,	-- Matoclaw
-					["sourceQuest"] = 29164,	-- Perfecting Your Howl
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-					["isDaily"] = true,
 				}),
 				q(25320, {	-- The Captured Scout
 					["qg"] = 38917,	-- Alysra
@@ -1915,36 +1717,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["description"] = "To get this quest DO NOT accept another version from Subjugated Inferno Lord after \"A New Master\", instead head back to Tyrus Blackhorn.",
 					["coord"] = { 22.2, 44.8, MOUNT_HYJAL },
 				}),
-				q(29126, {	-- The Power of Malorne
-					["qg"] = 52669,	-- Matoclaw
-					["sourceQuest"] = 29125,	-- Between the Trees
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-					["isDaily"] = true,
-					["groups"] = {
-						objective(1, {	-- 0/1 Galenges slain
-							["provider"] = { "n", 52399 },	-- Galenges
-						}),
-					},
-				}),
-				q(29128, {	-- The Protectors of Hyjal
-					["qg"] = 53073,	-- Captain Soren Moonclaw
-					["sourceQuest"] = 29201,	-- Through the Gates of Hell
-					["coord"] = { 27.1, 61.6, MOUNT_HYJAL },
-					["isDaily"] = true,
-					["lvl"] = 85,
-					["groups"] = {
-						objective(1, {	-- 0/6 Invader slain at Sethria's Roost
-							["providers"] = {
-								{ "n", 52300},	-- Seething Pyrelord
-								{ "n", 52289},	-- Fiery Behemoth
-								{ "n", 53264},	-- Searris
-								{ "n", 53265},	-- Kelbnar
-								{ "n", 53267},	-- Andrazor
-								{ "n", 53271},	-- Fah Jarakk
-							},
-						}),
-					},
-				}),
 				q(25464, {	-- The Return of Baron Geddon
 					["qg"] = 39857,	-- Malfurion Stormrage
 					["sourceQuest"] = 25323,	-- Flamebreaker
@@ -2059,13 +1831,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				q(29161, {	-- Those Bears Up There
-					["qg"] = 52671,	-- Mylune
-					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
-					["coord"] = { 27.1, 62.0, MOUNT_HYJAL },
-					["isDaily"] = true,
-					["lvl"] = 85,
-				}),
 				q(25325, {	-- Through the Dream
 					["qg"] = 40139,	-- Captain Saynna Stormrunner
 					["sourceQuest"] = 25324,	-- A Prisoner of Interest
@@ -2090,17 +1855,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 41498,	-- Garunda Mountainpeak
 					["sourceQuest"] = 25923,	-- Finish Nemesis
 					["coord"] = { 64.2, 53.5, MOUNT_HYJAL },
-				}),
-				q(29247, {	-- Treating the Wounds	-- todo: unknown source quest
-					["qg"] = 52986,	-- Dorda'en Nightweaver
-					["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
-					["isDaily"] = true,
-					["groups"] = {
-						objective(1, {	-- 0/4 Sulfur-Laced Wrapping
-							["provider"] = { "i", 69677 },	-- Sulfur-Laced Wrapping
-							["cr"] = 52289,	-- Fiery Behemoth
-						}),
-					},
 				}),
 				q(25223, {	-- Trial By Fire
 					["qg"] = 39442,	-- Condenna the Pitiless
@@ -2246,17 +2000,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/10 Twilight Lancer slain
 							["provider"] = { "n", 40660 },	-- Twilight Lancer
-						}),
-					},
-				}),
-				q(29148, {	-- Wings Aflame
-					["qg"] = 52669,	-- Matoclaw
-					["sourceQuest"] = 29147,	-- Call the Flock
-					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
-					["isDaily"] = true,
-					["groups"] = {
-						objective(1, {	-- 0/1 Millagazor slain
-							["provider"] = { "n", 52649 },	-- Millagazor
 						}),
 					},
 				}),

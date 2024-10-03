@@ -366,6 +366,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["sourceQuest"] = 29283,	-- Calling the Ancients
 					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
 				}),
+				q(29125, {	-- Between the Trees
+					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/3 Spirit of Malorne captured
+							["providers"] = {
+								{ "n", 52401 },	-- Spirit of Malorne
+								{ "i", 69645 },	-- Guardian's Staff
+							},
+							["coord"] = { 41.6, 56.0, MOUNT_HYJAL },
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
+				}),
 				q(29137, {	-- Breach in the Defenses
 					["qg"] = 52824,	-- General Taldris Moonfall
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
@@ -414,6 +430,33 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 							},
 						}),
 						currency(416),	-- Mark of the World Tree (x2)
+					},
+				}),
+				q(29147, {	-- Call the Flock
+					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/12 Alpine Songbird gathered
+							["providers"] = {
+								{ "n", 52595 },	-- Alpine Songbird
+								{ "i", 69234 },	-- Quill of the Bird-Queen
+							},
+						}),
+						objective(2, {	-- 0/5 Forest Owl gathered
+							["providers"] = {
+								{ "n", 52596 },	-- Forest Owl
+								{ "i", 69234 },	-- Quill of the Bird-Queen
+							},
+						}),
+						objective(3, {	-- 0/2 Goldwing Hawk gathered
+							["providers"] = {
+								{ "n", 52594 },	-- Goldwing Hawk
+								{ "i", 69234 },	-- Quill of the Bird-Queen
+							},
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29199, {	-- Calling for Reinforcements
@@ -465,13 +508,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["coord"] = { 27.1, 61.9, MOUNT_HYJAL },
 					["timeline"] = { ADDED_4_1_0 },
 					["isDaily"] = true,
-					["lvl"] = 85,
 					["groups"] = {
-						n(52383, {	-- Nemesis <Echo of the Usurper>
-							crit(17834, {	-- Infernal Ambassadors (Slay Nemesis at Ashen Lake without taking damage from Molten Fury)
-								["achievementID"] = 5869,
-							}),
+						objective(1, {	-- 0/1 Nemesis slain
+							["provider"] = { "n", 52383 },	-- Nemesis <Echo of the Usurper>
+							["coord"] = { 24.4, 55.6, MOUNT_HYJAL },
 						}),
+						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29255, {	-- Embergris
@@ -651,7 +693,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				heroscall(q(29391, {	-- Guardians of Hyjal: Call of the Ancients (A)
 					["description"] = "Only available to players who have not quested through Mount Hyjal.",
 					["isBreadcrumb"] = true,
-					["lvl"] = 85,
 					["u"] = REMOVED_FROM_GAME,
 				})),
 				warchiefscommand(q(29390, {	-- Guardians of Hyjal: Call of the Ancients (H)
@@ -820,11 +861,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 								{ "i", 69232 },	-- Emerald of Aessina
 							},
 						}),
-						n(52749, {	-- Pyrachnis <Beth'tilac Lieutenant>
-							crit(17829, {	-- Infernal Ambassadors (Slay Pyrachnis without using the Emerald of Aessina)
-								["achievementID"] = 5869,
-							}),
-						}),
+						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
 				q(29272, {	-- Need... Water... Badly...
@@ -874,6 +911,66 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
+				q(29164, {	-- Perfecting Your Howl
+					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/10 Howl atop an invader's corpse
+							["providers"] = {
+								{ "i", 69235 },	-- Fang of the Wolf
+								{ "n", 52816},	-- Charred Invader
+								{ "n", 52219},	-- Flame Terror
+								{ "n", 52300},	-- Seething Pyrelord
+								{ "n", 52383},	-- Nemesis
+								{ "n", 52399},	-- Galenges
+								{ "n", 52649},	-- Millagazor
+								{ "n", 52749},	-- Pyrachnis
+								{ "n", 52766},	-- Lylagar
+								{ "n", 52791},	-- Charred Flamewaker
+								{ "n", 52794},	-- Brimstone Destroyer
+								{ "n", 52795},	-- Brimstone Hound
+								{ "n", 53264},	-- Searris
+								{ "n", 53265},	-- Kelbnar
+								{ "n", 53267},	-- Andrazor
+								{ "n", 53271},	-- Fah Jarakk
+								{ "n", 54362},	-- Scarred Acolyte
+								{ "n", 52289},	-- Fiery Behemoth
+							},
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
+				}),
+				q(29249, {	-- Planting Season
+					["qg"] = 52489,	-- Avrilla
+					["sourceQuest"] = 29245,	-- The Mysterious Seed
+					["coord"] = { 50.6, 87.0, THE_MOLTEN_FRONT },
+					["groups"] = {
+						objective(1, {	-- Acorn Planted
+							["providers"] = {
+								{ "i",  69675 },	-- Dried Acorn
+								{ "o", 208537 },	-- Un'Goro Soil
+							},
+							["coord"] = { 53.5, 90.5, THE_MOLTEN_FRONT },
+						}),
+					},
+				}),
+				q(29101, {	-- Punting Season
+					["qg"] = 52671,	-- Mylune
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.1, 61.9, MOUNT_HYJAL },
+					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/5 Child of Tortolla punted into water
+							["providers"] = {
+								{ "n", 52177},	-- Child of Tortolla
+								{ "n", 52218},	-- Child of Tortolla
+							},
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
+				}),
 				q(29159, {	-- Pyrorachnophobia
 					["qg"] = 52921,	-- Deldren Ravenelm
 					["sourceQuest"] = 29205,	-- The Forlorn Spire
@@ -890,18 +987,153 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						currency(416),	-- Mark of the World Tree (x2)
 					},
 				}),
-				q(29249, {	-- Planting Season
-					["qg"] = 52489,	-- Avrilla
-					["sourceQuest"] = 29245,	-- The Mysterious Seed
-					["coord"] = { 50.6, 87.0, THE_MOLTEN_FRONT },
+				q(29123, {	-- Rage Against the Flames
+					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["isDaily"] = true,
 					["groups"] = {
-						objective(1, {	-- Acorn Planted
+						objective(1, {	-- 0/6 Invader from the Firelands slain
 							["providers"] = {
-								{ "i",  69675 },	-- Dried Acorn
-								{ "o", 208537 },	-- Un'Goro Soil
+								{ "n", 52816},	-- Charred Invader
+								{ "n", 52219},	-- Flame Terror
+								{ "n", 52300},	-- Seething Pyrelord
+								{ "n", 52383},	-- Nemesis
+								{ "n", 52399},	-- Galenges
+								{ "n", 52649},	-- Millagazor
+								{ "n", 52749},	-- Pyrachnis
+								{ "n", 52766},	-- Lylagar
+								{ "n", 52791},	-- Charred Flamewaker
+								{ "n", 52794},	-- Brimstone Destroyer
+								{ "n", 52795},	-- Brimstone Hound
+								{ "n", 53264},	-- Searris
+								{ "n", 53265},	-- Kelbnar
+								{ "n", 53267},	-- Andrazor
+								{ "n", 53271},	-- Fah Jarakk
+								{ "n", 54362},	-- Scarred Acolyte
+								{ "n", 52289},	-- Fiery Behemoth
 							},
-							["coord"] = { 53.5, 90.5, THE_MOLTEN_FRONT },
 						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
+				}),
+				q(29127, {	-- Rage Against the Flames
+					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/8 Invader from the Firelands slain
+							["providers"] = {
+								{ "n", 52816},	-- Charred Invader
+								{ "n", 52219},	-- Flame Terror
+								{ "n", 52300},	-- Seething Pyrelord
+								{ "n", 52383},	-- Nemesis
+								{ "n", 52399},	-- Galenges
+								{ "n", 52649},	-- Millagazor
+								{ "n", 52749},	-- Pyrachnis
+								{ "n", 52766},	-- Lylagar
+								{ "n", 52791},	-- Charred Flamewaker
+								{ "n", 52794},	-- Brimstone Destroyer
+								{ "n", 52795},	-- Brimstone Hound
+								{ "n", 53264},	-- Searris
+								{ "n", 53265},	-- Kelbnar
+								{ "n", 53267},	-- Andrazor
+								{ "n", 53271},	-- Fah Jarakk
+								{ "n", 54362},	-- Scarred Acolyte
+								{ "n", 52289},	-- Fiery Behemoth
+							},
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
+				}),
+				q(29149, {	-- Rage Against the Flames
+					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/7 Invader from the Firelands slain
+							["providers"] = {
+								{ "n", 52816},	-- Charred Invader
+								{ "n", 52219},	-- Flame Terror
+								{ "n", 52300},	-- Seething Pyrelord
+								{ "n", 52383},	-- Nemesis
+								{ "n", 52399},	-- Galenges
+								{ "n", 52649},	-- Millagazor
+								{ "n", 52749},	-- Pyrachnis
+								{ "n", 52766},	-- Lylagar
+								{ "n", 52791},	-- Charred Flamewaker
+								{ "n", 52794},	-- Brimstone Destroyer
+								{ "n", 52795},	-- Brimstone Hound
+								{ "n", 53264},	-- Searris
+								{ "n", 53265},	-- Kelbnar
+								{ "n", 53267},	-- Andrazor
+								{ "n", 53271},	-- Fah Jarakk
+								{ "n", 54362},	-- Scarred Acolyte
+								{ "n", 52289},	-- Fiery Behemoth
+							},
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
+				}),
+				q(29163, {	-- Rage Against the Flames
+					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/9 Invader from the Firelands slain
+							["providers"] = {
+								{ "n", 52816},	-- Charred Invader
+								{ "n", 52219},	-- Flame Terror
+								{ "n", 52300},	-- Seething Pyrelord
+								{ "n", 52383},	-- Nemesis
+								{ "n", 52399},	-- Galenges
+								{ "n", 52649},	-- Millagazor
+								{ "n", 52749},	-- Pyrachnis
+								{ "n", 52766},	-- Lylagar
+								{ "n", 52791},	-- Charred Flamewaker
+								{ "n", 52794},	-- Brimstone Destroyer
+								{ "n", 52795},	-- Brimstone Hound
+								{ "n", 53264},	-- Searris
+								{ "n", 53265},	-- Kelbnar
+								{ "n", 53267},	-- Andrazor
+								{ "n", 53271},	-- Fah Jarakk
+								{ "n", 54362},	-- Scarred Acolyte
+								{ "n", 52289},	-- Fiery Behemoth
+							},
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
+				}),
+				q(29248, {	-- Releasing the Pressure
+					["qg"] = 52986,	-- Dorda'en Nightweaver
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
+					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/100 Flamewaker Scale
+							["provider"] = { "i", 69679 },	-- Flamewaker Scale
+							["cr"] = 52791,	-- Charred Flamewaker
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
+				}),
+				q(29246, {	-- Relieving the Pain
+					["qg"] = 52986,	-- Dorda'en Nightweaver
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
+					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/4 Flame-Wreathed Heart
+							["provider"] = { "i", 69678 },	-- Flame-Wreathed Heart
+							["crs"] = {
+								52300,	-- Seething Pyrelord
+								53264,	-- Searris
+							},
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
 				q(29293, {	-- Singed Wings
@@ -1031,6 +1263,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						currency(416),	-- Mark of the World Tree (x3)
 					},
 				}),
+				q(29166, {	-- Supplies for the Other Side
+					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/7 Blueroot Vine
+							["providers"] = {
+								{ "i",  69236 },	-- Blueroot Vine
+								{ "o", 208442 },	-- Blueroot Vine
+							},
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
+				}),
 				q(29296, {	-- Territorial Birds
 					["qg"] = 53259,	-- Arthorn Windsong
 					["sourceQuest"] = 29206,	-- Into the Fire
@@ -1062,6 +1309,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 								{ "n", 52107 },	-- Obsidium Punisher
 							},
 							["coord"] = { 31.6, 47.8, THE_MOLTEN_FRONT },
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
+				}),
+				q(29165, {	-- The Call of the Pack
+					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29164,	-- Perfecting Your Howl
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Lylagar slain
+							["providers"] = {
+								{ "n", 52766 },	-- Lylagar
+								{ "i", 69225 },	-- Fang of the Wolf
+							},
+							["coord"] = { 41.6, 56.0, MOUNT_HYJAL },
 						}),
 						currency(416),	-- Mark of the World Tree (x2)
 					},
@@ -1153,6 +1416,41 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["sourceQuest"] = 29214,	-- The Shadow Wardens
 					["coord"] = { 70.1, 39.6, THE_MOLTEN_FRONT },
 				}),
+				q(29126, {	-- The Power of Malorne
+					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29125,	-- Between the Trees
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Galenges slain
+							["providers"] = {
+								{ "n", 52399 },	-- Galenges
+								{ "i", 68997 },	-- Guardian's Staff
+							},
+							["coord"] = { 41.4, 56.2, MOUNT_HYJAL },
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
+				}),
+				q(29128, {	-- The Protectors of Hyjal
+					["qg"] = 53073,	-- Captain Soren Moonclaw
+					["sourceQuest"] = 29201,	-- Through the Gates of Hell
+					["coord"] = { 27.1, 61.6, MOUNT_HYJAL },
+					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/6 Invader slain at Sethria's Roost
+							["providers"] = {
+								{ "n", 52300},	-- Seething Pyrelord
+								{ "n", 52289},	-- Fiery Behemoth
+								{ "n", 53264},	-- Searris
+								{ "n", 53265},	-- Kelbnar
+								{ "n", 53267},	-- Andrazor
+								{ "n", 53271},	-- Fah Jarakk
+							},
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
+				}),
 				q(29311, {	-- The Rest is History
 					["providers"] = {
 						{ "n", 11801 },	-- Rabine Saturna
@@ -1204,6 +1502,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["isDaily"] = true,
 					["u"] = REMOVED_FROM_GAME,
 				}),
+				q(29161, {	-- Those Bears Up There
+					["qg"] = 52671,	-- Mylune
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.1, 62.0, MOUNT_HYJAL },
+					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/6 Hyjal Bear Cubs chucked to safety
+							["providers"] = {
+								{ "n", 40240 },	-- Hyjal Bear Cub
+								{ "i", 69649 },	-- Inconspicuous Emerald
+							},
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
+				}),
 				q(29201, {	-- Through the Gates of Hell
 					["qg"] = 52845,	-- Malfurion Stormrage
 					["sourceQuest"] = 29200,	-- Leyara
@@ -1239,6 +1552,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["sourceQuest"] = 29302,	-- Unlocking the Secrets Within
 					["coord"] = { 51.6, 44.8, MOONGLADE },
 				}),
+				q(29247, {	-- Treating the Wounds
+					["qg"] = 52986,	-- Dorda'en Nightweaver
+					["sourceQuest"] = 29198,	-- The Sanctuary Must Not Fall
+					["coord"] = { 27.5, 62.5, MOUNT_HYJAL },
+					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/4 Sulfur-Laced Wrapping
+							["provider"] = { "i", 69677 },	-- Sulfur-Laced Wrapping
+							["cr"] = 52289,	-- Fiery Behemoth
+						}),
+						currency(416),	-- Mark of the World Tree (x1)
+					},
+				}),
 				q(29302, {	-- Unlocking the Secrets Within
 					["providers"] = {
 						{ "n", 11801 },	-- Rabine Saturna
@@ -1267,6 +1593,22 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 								{ "n", 52991 },	-- Cinderweb Cocoon
 								{ "n", 52992 },	-- Cinderweb Cocoon
 							},
+						}),
+						currency(416),	-- Mark of the World Tree (x2)
+					},
+				}),
+				q(29148, {	-- Wings Aflame
+					["qg"] = 52669,	-- Matoclaw
+					["sourceQuest"] = 29147,	-- Call the Flock
+					["coord"] = { 27.1, 62.5, MOUNT_HYJAL },
+					["isDaily"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Millagazor slain
+							["providers"] = {
+								{ "n", 52649 },	-- Millagazor
+								{ "i", 69212 },	-- Quill of the Bird-Queen
+							},
+							["coord"] = { 13.2, 44.6, MOUNT_HYJAL },
 						}),
 						currency(416),	-- Mark of the World Tree (x2)
 					},
