@@ -185,14 +185,19 @@ if C_Spell then
 	-- Warning: The API Wrapper for GetSpellLink is not completely equivalent.
 	-- GetSpellLink accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
 	-- Currently, only the first type is implemented.
-	if C_Spell.GetSpellLink then lib.GetSpellLink = function(SpellIdentifier)
-		return C_Spell.GetSpellLink(SpellIdentifier), C_Spell.GetSpellIDForSpellIdentifier(SpellIdentifier);
+	-- The traditional GetSpellLink returns two values: SpellLink and SpellID, but most usages only utilize SpellLink. 
+	-- The C_Spell.GetSpellLink only returns SpellLink. 
+	-- For performance reasons, lib.GetSpellLink only returns SpellLink.
+	if C_Spell.GetSpellLink then lib.GetSpellLink = C_Spell.GetSpellLink;
+	---@diagnostic disable-next-line: deprecated, duplicate-set-field
+	elseif GetSpellLink then lib.GetSpellLink = function(SpellIdentifier)
+		return select(1, GetSpellLink(SpellIdentifier));
 	end
-	---@diagnostic disable-next-line: deprecated
-	elseif GetSpellLink then lib.GetSpellLink = GetSpellLink;
 	else lib.GetSpellLink = nil; end
 else
-	---@diagnostic disable-next-line: deprecated
-	if GetSpellLink then lib.GetSpellLink = GetSpellLink;
+	---@diagnostic disable-next-line: deprecated, duplicate-set-field
+	if GetSpellLink then lib.GetSpellLink = function(SpellIdentifier)
+		return select(1, GetSpellLink(SpellIdentifier));
+	end
 	else lib.GetSpellLink = nil; end
 end
