@@ -185,7 +185,7 @@ if C_Spell then
 	-- Warning: The API Wrapper for GetSpellLink is not completely equivalent.
 	-- GetSpellLink accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
 	-- Currently, only the first type is implemented.
-	-- The traditional GetSpellLink returns two values: SpellLink and SpellID, but most usages only utilize SpellLink. 
+	-- The traditional GetSpellLink returns two values: SpellLink and SpellID, but all of usages only utilize SpellLink. 
 	-- The C_Spell.GetSpellLink only returns SpellLink. 
 	-- For performance reasons, lib.GetSpellLink only returns SpellLink.
 	if C_Spell.GetSpellLink then lib.GetSpellLink = C_Spell.GetSpellLink;
