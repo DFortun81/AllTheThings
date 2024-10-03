@@ -172,9 +172,19 @@ end
 
 -- C_TradeSkillUI
 if C_TradeSkillUI then
-	lib.GetTradeSkillTexture = C_TradeSkillUI.GetTradeSkillTexture
+	local C_TradeSkillUI = C_TradeSkillUI;
+
+	-- Warning: Blizzard introduced C_TradeSkillUI.GetTradeSkillTexture in Patch 4.0.1, and I have not found any information on when GetTradeSkillTexture was deprecated or removed, as well as its parameters or return values. 
+	-- Therefore, lib.GetTradeSkillTexture will always use the implementation of C_TradeSkillUI.GetTradeSkillTexture in all cases. 
+	-- As a result, the fallback to GetTradeSkillTexture has not been tested and is not guaranteed to work.
+	if C_TradeSkillUI.GetTradeSkillTexture then lib.GetTradeSkillTexture = C_TradeSkillUI.GetTradeSkillTexture;
+	---@diagnostic disable-next-line: deprecated
+	elseif GetTradeSkillTexture then lib.GetTradeSkillTexture = GetTradeSkillTexture;
+	else GetTradeSkillTexture = nil; end
 else
-	lib.GetTradeSkillTexture = function() return end
+	---@diagnostic disable-next-line: deprecated
+	if GetTradeSkillTexture then lib.GetTradeSkillTexture = GetTradeSkillTexture;
+	else GetTradeSkillTexture = nil; end
 end
 
 if C_Spell then
