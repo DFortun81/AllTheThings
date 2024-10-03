@@ -330,7 +330,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 44.4, 46.2, MOUNT_HYJAL },
 					["groups"] = {
 						objective(1, {	-- 0/1 Nectar Offered
-							["provider"] = { "i", 55208 },	-- Sacred Nectar
+							["providers"] = {
+								{ "i",  55208 },	-- Sacred Nectar
+								{ "o", 203147 },	-- Aviana's Burial Circle
+							},
 							["coord"] = { 40, 44, MOUNT_HYJAL },
 						}),
 					},
