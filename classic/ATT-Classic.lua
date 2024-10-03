@@ -3101,54 +3101,50 @@ local CurrencyCollectibleAsCost = setmetatable({}, { __index = function(t, id)
 	t[id] = false;
 	return false;
 end });
-local CurrencyCollectedAsCost = setmetatable({}, { __index = function(t, id)
-	local any, partial;
+local CurrencyRequirementTotals = setmetatable({}, { __index = function(t, id)
 	local results = SearchForField("currencyIDAsCost", id, true);
 	if #results > 0 then
-		local count = GetCurrencyCount(id);
+		local total = 0;
 		for _,ref in pairs(results) do
 			if ref.currencyID ~= id and app.RecursiveDefaultCharacterRequirementsFilter(ref) then
 				if ref.collectible and ref.collected ~= 1 then
 					if ref.cost then
 						for k,v in ipairs(ref.cost) do
 							if v[2] == id and v[1] == "c" then
-								if count >= (v[3] or 1) then
-									partial = true;
-								else
-									t[id] = false;
-									return false;
-								end
+								total = total + (v[3] or 1);
 							end
 						end
 					end
-				elseif (ref.total and ref.total > 0 and not GetRelativeField(t, "parent", ref) and ref.progress < ref.total) then
+				elseif (ref.total and ref.total > 0 and ref.progress < ref.total) then
 					if ref.cost then
 						for k,v in ipairs(ref.cost) do
 							if v[2] == id and v[1] == "c" then
-								if count >= (v[3] or 1) then
-									partial = true;
-								else
-									t[id] = false;
-									return false;
-								end
+								total = total + (v[3] or 1);
 							end
 						end
 					end
 				end
-				any = true;
 			end
 		end
-		if any then
-			t[id] = partial and 2 or 1;
-			return partial and 2 or 1;
-		end
+		t[id] = total;
+		return total;
 	end
-	t[id] = false;
-	return false;
+	t[id] = 0;
+	return 0;
+end });
+local CurrencyCollectedAsCost = setmetatable({}, { __index = function(t, id)
+	if CurrencyRequirementTotals[id] <= GetCurrencyCount(id) then
+		t[id] = true;
+		return true;
+	else
+		t[id] = false;
+		return false;
+	end
 end });
 app.AddEventHandler("OnRecalculate", function()
 	wipe(CurrencyCollectibleAsCost);
 	wipe(CurrencyCollectedAsCost);
+	wipe(CurrencyRequirementTotals);
 end);
 app.CreateCurrencyClass = app.CreateClass("Currency", "currencyID", {
 	["text"] = function(t)
@@ -3169,10 +3165,12 @@ app.CreateCurrencyClass = app.CreateClass("Currency", "currencyID", {
 		return GetCurrencyLink(t.currencyID, 1);
 	end,
 	["collectible"] = function(t)
-		return t.collectibleAsCost;
+		local collectible = t.collectibleAsCost;
+		if t.currencyID == 416 then print("collectibleAsCost", collectible); end
+		return collectible;
 	end,
 	["collectibleAsCost"] = function(t)
-		if not t.parent or not t.parent.saved then
+		if not t.parent or t.parent.saved ~= 1 then
 			if CurrencyCollectibleAsCost[t.currencyID] then
 				return true;
 			elseif t.simplemeta then
