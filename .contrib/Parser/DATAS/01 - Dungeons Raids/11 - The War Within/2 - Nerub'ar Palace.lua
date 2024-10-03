@@ -661,7 +661,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			-- Shared with LFR/Normal?
 		-- Mythic
 		q(84262),	-- Ulgrax the Devourer
-
+		q(84264),	-- The Bloodbound Horror
 		q(84266),	-- Sikran
 		q(84268),	-- Rasha'nan
 	})),
