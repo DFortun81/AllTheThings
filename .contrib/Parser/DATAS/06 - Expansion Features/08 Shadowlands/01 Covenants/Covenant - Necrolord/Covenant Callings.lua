@@ -37,7 +37,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 				q(60433, {	-- A Call to Revendreth
 					--["provider"] = { "n",  },	--
-					--["coord"] = { , MALDRAXXUS },
+					["coord"] = { 59.7, 43.6, SEAT_OF_THE_PRIMUS },
 					["g"] = {
 						i(181732),	-- Tribute of the Ambitious
 					},

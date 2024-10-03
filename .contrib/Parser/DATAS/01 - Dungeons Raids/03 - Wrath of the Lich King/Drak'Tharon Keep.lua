@@ -200,7 +200,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_O
 					},
 				}),
 				q(29828, {	-- What the Scourge Dred
-					["qg"] = 26664,	-- Kurzel
+					["qgs"] = {
+						26664,	-- Kurzel
+						29828,	-- Kurzel
+					},
 					["timeline"] = { ADDED_4_3_0 },
 					["lvl"] = lvlsquish(72, 72, 15),
 					["groups"] = {
