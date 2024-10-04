@@ -125,7 +125,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				},
 			}),
 		}),
-		pvp(achraw(13623, {	-- Fighting on Two Fronts
+		pvp(ach(13623, {	-- Fighting on Two Fronts
 			crit(45752, {	-- Acquire Nazjatar Battle Commendations
 				["cost"] = { { "i", 168802, 25 } },
 			}),
@@ -141,7 +141,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 		})),
 		pvp(a(ach(13402))),	-- Frontline Slayer (A)
 		pvp(h(ach(13403))),	-- Frontline Slayer (H)
-		pvp(achraw(13387, {	-- Frontline Veteran (A)
+		pvp(ach(13387, {	-- Frontline Veteran (A)
 			["races"] = ALLIANCE_ONLY,
 			["g"] = bubbleDown({["description"] = "Requires War Mode Active" }, {
 				crit(44016, {		-- A Sound Defense
@@ -164,7 +164,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				}),
 			}),
 		})),
-		pvp(achraw(13388, {	-- Frontline Veteran (H)
+		pvp(ach(13388, {	-- Frontline Veteran (H)
 			["races"] = HORDE_ONLY,
 			["g"] = bubbleDown({["description"] = "Requires War Mode Active" }, {
 				crit(44022, {		-- Breaching Boralus
@@ -199,7 +199,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 				ach(12738),	-- Holy Scrap!
 			},
 		}),
-		achraw(12482, {	-- Get Hek'd
+		ach(12482, {	-- Get Hek'd
 			["description"] = "Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",
 			["g"] = {
 				crit(40037,  {	-- Golden Ravasaur Egg

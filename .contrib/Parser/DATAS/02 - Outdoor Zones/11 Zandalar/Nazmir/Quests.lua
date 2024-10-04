@@ -1562,5 +1562,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 })));
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(54773),	-- Warmode version of March on the Marsh
+	expansion(EXPANSION.BFA, {
+		q(54773),	-- Warmode version of March on the Marsh
+	}),
 });

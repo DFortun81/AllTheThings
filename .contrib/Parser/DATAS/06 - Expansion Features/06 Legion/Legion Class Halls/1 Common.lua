@@ -100,22 +100,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 					["_quests"] = { 47137 },
 				}),
 			}),
-			achraw(10461, {	-- Fighting with Style: Classic
-				crit(31588, {	-- Recover one of the Pillars of Creation
-					["_quests"] = {
-						43349,
-						42213,
-						40890,
-						42454,
-					},
-				}),
-				crit(33167, {	-- Complete the quest, "Light's Charge"
-					["_quests"] = { 44153 },
-				}),
-				crit(33168, {	-- Complete the first order campaign effort
-					-- ["_quests"] = { 42116 },
-				}),
-			}),
+			ach(10461),	-- Fighting with Style: Classic (automated)
 			ach(10750, {	-- Fighting with Style: Hidden
 				["_noautomation"] = true,
 				["groups"] = {

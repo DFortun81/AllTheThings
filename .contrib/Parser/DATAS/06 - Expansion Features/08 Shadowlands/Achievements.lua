@@ -59,7 +59,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, {
 				i(217612),	-- Zovaal's Soul Eater (MOUNT!)
 			},
 		})),
-		achraw(14763, {	-- Crypt Couture
+		ach(14763, {	-- Crypt Couture
 			i(183693),	-- Plague Doctor's Mask
 			crit(49929, {	-- Ashen Ink
 				["provider"] = {"i",183690},

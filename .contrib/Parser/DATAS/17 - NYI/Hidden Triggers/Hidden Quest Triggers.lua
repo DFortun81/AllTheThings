@@ -636,6 +636,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(54769),	-- triggered when turning in #53939, "Breaching Boralus," tiragade sound assault.  had WM on
 		q(54322),	-- triggered when turning in #53885, "Isolated Victory," vol'dun assault.  had WM on
 		q(54778),	-- triggered when turning in #53885, "Isolated Victory," vol'dun assault.  had WM on
+		q(54772),	-- triggered when turning in #54137, "In Every Dark Corner".
 		q(57593),	-- triggered when talking to chromie in CoT during the 2019 anniversary event, before turning in #57249, "A Timely Invitation"
 		q(54035),	-- Blessing of the Night Warden unlock chain started
 		q(53956),	-- Triggered when turning in "We Are Coming" as alliance. Probably related to darkshore warfront unlock?
@@ -671,6 +672,7 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(54950),	-- when turning in "The Lord Admiral's Lament" and watching the Jaina cinematic
 		q(55610),	-- completing "Spy on Warfang Hold," part of "Spy Versus Spy," quest #55171
 		q(54326),	-- triggered when turning in #54135, "Romp in the Swamp," had WM off
+		q(54774),	-- triggered when turning in #54135, "Romp in the Swamp," had WM on
 		q(55241),	-- closing the second to last rift while on #55214, "Seam Stress"
 		q(55237),	-- closing the last rift while on #55214, "Seam Stress"
 		q(50657),	-- not sure if this is part of the Vulpera allied race questline?  i turned in #53907, picked up #53908, learned the "Nomi's Vintage" toy, refreshed (nothing), went and took the portal from the vineyard to shal'aran, and this popped.  it popped immediately when i clicked the portal
