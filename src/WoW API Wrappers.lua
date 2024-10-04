@@ -94,6 +94,7 @@ end
 
 -- Item APIs
 local C_Item = C_Item;
+---@diagnostic disable: deprecated
 AssignApiWrapper("GetItemCount", C_Item and C_Item.GetItemCount, GetItemCount)
 AssignApiWrapper("GetItemClassInfo", C_Item and C_Item.GetItemClassInfo, GetItemClassInfo)
 AssignApiWrapper("GetItemIcon", C_Item and C_Item.GetItemIconByID, GetItemIcon)
@@ -101,6 +102,7 @@ AssignApiWrapper("GetItemInfoInstant", C_Item and C_Item.GetItemInfoInstant, Get
 AssignApiWrapper("GetItemID", C_Item and C_Item.GetItemIDForItemInfo, GetItemInfoInstant)
 AssignApiWrapper("GetItemInfo", C_Item and C_Item.GetItemInfo, GetItemInfo)
 AssignApiWrapper("GetItemSpecInfo", C_Item and C_Item.GetItemSpecInfo, GetItemSpecInfo)
+---@diagnostic enable: deprecated
 
 -- Spell APIs
 ---@diagnostic disable-next-line: deprecated
