@@ -25,6 +25,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				ach(40215),	-- Deepwind Ravine Shutout
 				ach(40211),	-- Deephaul Ravine Veteran
 				ach(40210),	-- Deephaul Ravine Victory
+				-- INFO: Verified 2024-10-04, shows a criteria without achraw
 				achraw(40613),	-- Resilient Runner
 				ach(40608),	-- Running in the Ravine
 				ach(40612),	-- Sprinting in the Ravine

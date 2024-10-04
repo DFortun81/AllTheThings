@@ -22,6 +22,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				iensemble(219110),	-- Vermillion Patron's Elegance
 			},
 		}),
+        -- INFO: Verified 2024-10-04, only shows one criteria without achraw
 		achraw(40660, bubbleDownSelf({ ["timeline"] = { REMOVED_11_1_0 }, }, {	-- The War Within Season 1: Spelunker Supreme
 			crit(67375), -- Attained 1600+ Rated PVP rating
 			crit(66890), -- Attained 2000+ Mythic Plus rating

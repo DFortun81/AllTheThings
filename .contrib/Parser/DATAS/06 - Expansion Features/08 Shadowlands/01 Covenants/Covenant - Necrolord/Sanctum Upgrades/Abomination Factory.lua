@@ -191,7 +191,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							ach(14684, {	-- Abominable Lives
 								["sym"] = {{ "achievement_criteria" }},
 							}),
-							achraw(14833, {	-- Fashion Abomination
+							ach(14833, {	-- Fashion Abomination
 								crit(50541, {	-- Chef Hat
 									["cost"] = {
 										{ "i", 184039,  1 },	-- 1 Clean White Hat

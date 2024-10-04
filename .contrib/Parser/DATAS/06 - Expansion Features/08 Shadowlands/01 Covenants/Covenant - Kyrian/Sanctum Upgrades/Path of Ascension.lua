@@ -165,7 +165,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							ach(14851),	-- Bastion of Protection
 							ach(14856),	-- Charmed, I'm Sure
 							ach(14865),	-- Disciple of Humility
-							achraw(14862, {	-- It's How You Wear It
+							ach(14862, {	-- It's How You Wear It
 								crit(51087),	-- Herald's Footpads
 								crit(51088),	-- Deep Echo Trident
 								crit(51089),	-- Vial of Lichfrost
@@ -173,7 +173,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								crit(51091),	-- Ring of Warding
 								crit(51092),	-- Spiritforged Aegis
 							}),
-							achraw(14854, {	-- It's Not What You Wear
+							ach(14854, {	-- It's Not What You Wear
 								crit(51081),	-- Herald's Footpads
 								crit(51082),	-- Deep Echo Trident
 								crit(51083),	-- Vial of Lichfrost
@@ -190,7 +190,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 								crit(51101),	-- Defeat Athanos as Kleia
 								crit(51102),	-- Defeat Athanos as Mikanikos
 							}),
-							achraw(14866, {	-- Master of the Path
+							ach(14866, {	-- Master of the Path
 								crit(51134),	-- Kalisthene
 								crit(51135),	-- Echthra
 								crit(51136),	-- Alderyn and Myn'ir

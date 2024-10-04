@@ -145,7 +145,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					["maps"] = { 1644 },	-- Ember Court (Scenario Map)
 					["g"] = {
 						n(ACHIEVEMENTS, {
-							achraw(14723, {	-- Be Our Guest
+							ach(14723, {	-- Be Our Guest
 								crit(49730, {	-- Baroness Vashj
 									["_npcs"] = { 168444 },
 								}),
@@ -312,18 +312,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["_quests"] = { 62173 },	-- Long Sleeved Doublet
 								}),
 							}),
-							achraw(14726, {	-- It's Certainly Never Boring
-								crit(49770),	-- Messy
-								crit(49771),	-- Clean
-								crit(49772),	-- Safe
-								crit(49773),	-- Dangerous
-								crit(49774),	-- Humble
-								crit(49775),	-- Decadent
-								crit(49776),	-- Relaxing
-								crit(49777),	-- Exciting
-								crit(49778),	-- Casual
-								crit(49779),	-- Formal
-							}),
+							ach(14726),	-- It's Certainly Never Boring (automated)
 							ach(14727),		-- Master of Ceremonies
 							ach(14679, {	-- Party Palace
 								crit(49613, {	-- Building: Dredger Pool
@@ -378,7 +367,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["_quests"] = { 61506 },
 								}),
 							}),
-							achraw(14724, {	-- People Pleaser
+							ach(14724, {	-- People Pleaser
 								crit(49748, {	-- Baroness Vashj
 									["_npcs"] = { 168444 },
 								}),
@@ -428,7 +417,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									["_npcs"] = { 171856 },
 								}),
 							}),
-							achraw(14749, {	-- Rendle's Big Day
+							ach(14749, {	-- Rendle's Big Day
 								crit(49880, {	-- Crown of the Righteous
 									["_quests"] = { 62559 },	-- Sootible Hat: Crown of the Righteous
 								}),
@@ -2386,6 +2375,7 @@ for _,g in ipairs({ALEXANDROS_GROUP, VASHJ_GROUP, CHOOFA_GROUP, KASSIR_GROUP, DO
 end
 
 root(ROOTS.HiddenQuestTriggers, {
+	n(EMBER_COURT, {
 	-- Dredger Butler Appearance
 		q(61581),	-- Choosing Purple during "Shades of Muck" (questID 61851)
 		q(61584),	-- Choosing Blue during "Shades of Muck" (questID 61851)
@@ -2564,4 +2554,5 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(62031),	-- unlocking Court Death Shroud Armor set (TransmogSetID 2068, Court Death Shroud items)
 		q(62026),	-- unlocking Fearstalker's Court Battlegear set (TransmogSetID 2072, Fearstalker's Court items)
 		q(62018),	-- unlocking Dread Sentinel's Court Battleplate set (TransmogSetID 2077, Dread Sentinel's Court items)
+	}),
 });
