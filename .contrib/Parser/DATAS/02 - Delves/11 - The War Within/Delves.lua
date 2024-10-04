@@ -64,7 +64,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		}),
 		ach(40635, {	-- Branntastic
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
-			["sym"] = {{ "achievement_criteria" }},
 			["maps"] = ALL_THE_DELVES,
 		}),
 		ach(40461, {	-- Buddy System VI
@@ -202,7 +201,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_
 		ach(40523, {	-- On Brand
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 			["maps"] = ALL_THE_DELVES,
-			["sym"] = {{ "achievement_criteria" }},
 		}),
 		ach(40863, {	-- Perplexing Puzzle
 			["maps"] = ALL_REGULAR_DELVES,

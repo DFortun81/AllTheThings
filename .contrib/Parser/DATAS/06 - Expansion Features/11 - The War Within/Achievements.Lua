@@ -16,11 +16,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 		ach(40939, {	-- Harbinger of the Gilded
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 		}),
+        -- TODO: Unfun fact: Blizzard isn't currently showing these criteria ingame, and manually adding them doesn't properly fetch their names, I'm just gonna leave them here for reference for when they fix this. It can be either automated, or written out in full.
 		ach(40591, {	-- Khaz Algar Diplomat
-			["sym"] = {{ "achievement_criteria" }},
-			["g"] = {
-				iensemble(219110),	-- Vermillion Patron's Elegance
-			},
+            -- crit(68907),    -- Council of Dornogal
+            -- crit(68908),    -- The Assembly of the Deeps
+            -- crit(68909),    -- Hallowfall Arathi
+            -- crit(68910),    -- The Severed Threads
+			iensemble(219110),	-- Vermillion Patron's Elegance
 		}),
         -- INFO: Verified 2024-10-04, only shows one criteria without achraw
 		achraw(40660, bubbleDownSelf({ ["timeline"] = { REMOVED_11_1_0 }, }, {	-- The War Within Season 1: Spelunker Supreme
