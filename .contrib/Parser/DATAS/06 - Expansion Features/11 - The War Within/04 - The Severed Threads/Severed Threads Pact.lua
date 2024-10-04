@@ -106,7 +106,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["minReputation"] = { FACTION_THE_WEAVER, 7 },
 						["coord"] = { 62.9, 12.1, NERUBAR_LOWER },
 						["g"] = {
-							i(213538),	-- Wood-Worm Tonic (QI!)
+							o(453716, {	-- Cache of Expensive Libations
+								["coord"] = { 78.0, 53.0, NERUBAR },
+								["groups"] = {
+									i(213538),	-- Wood-Worm Tonic (QI!)
+								},
+							}),
 						},
 					}),
 					q(79633, {	-- The Weaver's Legacy
@@ -258,7 +263,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81488, {	-- Breaking the Phalanx: Sages
 					["sourceQuest"] = 82642,
 					["provider"] = { "n", 224163 },	-- Eirzay
-					["coord"] = { 27.7, 57.8, NERUBAR },
+					["coord"] = { 27.9, 56.7, NERUBAR },
+					["crs"] = {
+						221191,	-- Schismatic Acolyte
+						217027,	-- Schismatic Priest
+					},
 				}),
 				q(81487, {	-- Breaking the Phalanx: Threadblades
 					["sourceQuest"] = 82641,
@@ -279,9 +288,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81478, {	-- Relics of War: The Ruptired Lake
 					["sourceQuest"] = 82647,
 					["provider"] = { "n", 224173 },	-- Eirzay
-					["coord"] = { 39.5, 53.0, AZJ_KAHET },
+					["coord"] = { 36.4, 49.2, AZJ_KAHET },
 					["g"] = {
-						i(219415),	-- Bloodied Insignia (QI!)
+						o(439562, {	-- Fallen Aeroknight
+							i(219415),	-- Bloodied Insignia (QI!)
+						}),
 					},
 				}),
 				q(81493, {	-- Relics of War: The Salien Gutter Conflict
@@ -351,7 +362,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				q(81482, {	-- Testing Formulae: Gelatinous Unguent
 					["sourceQuest"] = 82647,
 					["provider"] = { "n", 224187 },	-- Ghos'opp
-					["coord"] = { 50.6, 46.8, NERUBAR },
+					["coord"] = { 50.6, 47.1, NERUBAR },
+					["crs"] = { 221072 },	-- Unwitting Hollowguard
 					["g"] = {
 						i(219323),	-- Gelatinous Unguent (QI!)
 					},
@@ -426,7 +438,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 								i(218456),	-- Precious Gems (QI!)
 								i(219017),	-- Silver Armor Clasps (QI!)
 							},
-						})
+						}),
 					},
 				}),
 				q(81471, {	-- Dropping Eaves: Saving the Past
@@ -442,7 +454,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 					["provider"] = { "n", 224194 },	-- Ru'murh
 					["coord"] = { 70.3, 31.8, NERUBAR },
 					["g"] = {
-						i(219344),	-- Immaculate Spidersilk (QI!)
+						o(439291, {	-- Repossessed Goods
+							["coord"] = { 72.1, 45.4, NERUBAR },
+							["groups"] = {
+								i(219344),	-- Immaculate Spidersilk (QI!)
+							},
+						}),
 					},
 				}),
 				q(81499, {	-- Information Control: Ascended Intrigue
@@ -801,17 +818,20 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 					-- Ru'murh  (n: 224192 @ 79.6, 56.6), starts questID 81500 (Wet Work: Step Into Their Parlor), (29-09-24, Exo)
 					-- Ru'murh  (n: 224191 @ 68.6, 51.1), starts questID 81484 (Wet Work: Death of a Salesman), (30-09-24, Exo)
 					-- Ru'murh  (n: 224193 @ 55.0, 26.6), starts questID 80573 (Dropping Eaves: Spoils of War), (01-10-24, Exo)
+					-- Ghos'opp (n: 224187 @ 50.6, 47.1), starts questID 81482 (Testing Formulae: Gelatinous Unguent), (04-10-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82640, {	-- Ru'murh  (n: 224190 @ 41.5, 22.4), starts questID 81555 (Wet Work: Tithe to Kill), (23-09-24, Exo)
 					-- Ghos'opp (n: 224186 @ 54.5, 15.5), starts questID 81506 (Sabotage: Alchemical Instruments), (27-09-24, Exo)
 					-- Ghos'opp (n: 224178 @ 64.2, 21.2), starts questID 81495 (Requisitions: Brightblooms), (29-09-24, Exo)
 					-- Ghos'opp (n: 224188 @ 47.9,  9.7), starts questID 81501 (Testing Formulae: Roiling Elixir), (30-09-24, Exo)
+					-- Ru'murh  (n: 224194 @ 70.3, 31.8), starts questID 81470 (Dropping Eaves: Thieving Weave), (04-10-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82642, {	-- Eirzay   (n: 224161 @ 43.0, 47.2), starts questID 81475 (Breaking the Phalanx: Royal Appointments), (27-09-24, Exo)
 					-- Ghos'opp (n: 224189 @ 30.9, 23.0), starts questID 81502 (Testing Formulae: Malodorous Philter), (30-09-24, Exo)
 					-- Eirzay   (n: 224162 @ 33.3, 49.1), starts questID 81487 (Breaking the Phalanx: Threadblades), (01-10-24, Exo)
+					-- Eirzay   (n: 224163 @ 27.9, 56.7), starts questID 81488 (Breaking the Phalanx: Schismatic Sages), (04-10-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82644, {	-- Ru'murh  (n: 224197 @ 55.7, 47.8), starts questID 81472 (Information Control: Ansurek's Truth), (23-09-24, Exo)
@@ -823,6 +843,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 			}),
 			q(82646, {	-- Eirzay   (n: 224172 @ 54.5, 63.6), starts questID 81492 (Armaments: Smithing Tools), (23-09-24, Exo)
 					-- Eirzay   (n: 224176 @ 61.4, 24.1), starts questID 81494 (Relics of War: Rak-Zakaz), (28-09-24, Exo)
+					-- Eirzay   (n: 224173 @ 36.4, 49.2), starts questID 81478 (Relics of War: The Ruptured Lake), (04-10-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82648, {	-- Ru'murh  (n: 224200 @ 64.2, 75.3), starts questID 81503 (Infiltration: Terror Made Manifest), (23-09-24, Exo)
@@ -831,14 +852,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			--q(82581),	-- 'Listen to the rumor' from Eirzay (n: 224167 @ 15.6, 45.9, 2213), start questID 81489 (Bounty: Zorikal the Patron)
-			--q(82647),	-- 'Listen to the rumor' from Eirzay (n: 224173 @ 39.5, 53.0), start questID 81478 (Relics of War: The Ruptired Lake)
-			q(79698),	-- after turn in questID 79627 (Wine and Die)
 			--q(82643),	-- 'Investiage the scene' from Ru'murh (n: 224195 @ 73.3, 50.9, 2213), start questID 81471 (Dropping Eaves: Saving the Past)
 			--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224201 @ 76.2, 47.4), start questID 81504 (Infiltration: Hidden Figures)
 			-- Missing 5 more quest data/givers
 			--q(82616),	-- 'Gather some reagent' from Ghos-opp (n: 224180 @ 48.4, 61.9), start questID ()
-			-- Missing 11 total quest data/givers, 81505 81497 81482 (and 5 more)
-
+			-- Missing 11 total quest data/givers, 81505 81497 (and 5 more)
+			q(79698),	-- Triggered after completing questID 79627 (Wine and Die)
 			-- q(80688), -- triggered after completing task for a 'Rumor' (re-capture and narrow down)
 			-- Weaver's Lair Profession Table
 			q(84746),	-- Blacksmithing
