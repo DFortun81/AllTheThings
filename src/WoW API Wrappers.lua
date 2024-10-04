@@ -6,10 +6,11 @@ app.IsClassic = not app.IsRetail;
 -- This file was created because Blizzard likes to give Crieve heart attacks with all their API changes.
 -- In the future, ATT will reference all its global APIs provided by Blizzard through out WOWAPI lib.
 
--- Currently, there are three versions of World of Warcraft in operation: the Retail version, the Cataclysm Classic version, and the Classic version.
--- Blizzard often restructures APIs in the retail version of World of Warcraft first, and then introduces these changes to other versions.
--- These restructuring alters function names, parameters, and adds prefixes, resulting in significant maintenance work for addons across different operational versions.
--- This file was created to alleviate the burden of API conversion and to provide a stable abstraction layer. Unless there are significant performance impacts, this API will strive to maintain backward compatibility and incorporate the latest Blizzard APIs.
+-- Currently, there are three flavors of World of Warcraft in operation: the Retail flavor, the Cataclysm Classic flavor, and the Classic flavor.
+-- Blizzard often restructures APIs in the Retail flavor of World of Warcraft first, and then introduces these changes to other flavors.
+-- These restructuring alters function names, parameters, and adds prefixes, resulting in significant maintenance work for addons across different flavors.
+-- This file was created to alleviate the burden of API conversion and to provide a stable abstraction layer.
+-- Unless there are significant performance impacts, this API will strive to maintain backward compatibility and incorporate the latest Blizzard APIs.
 -- In the event of API changes, it is expected that a transition period of three to six months will be provided to allow developers to transition to the new API.
 -- Unless Blizzard disables a specific API during an update, making it impossible to implement in any way, API changes will not take effect immediately.
 
