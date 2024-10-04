@@ -24,8 +24,10 @@ local select,type,rawget
 	= select,type,rawget
 app.WOWAPI = lib;
 
--- Priority API assigner
--- Can be used to one-line assign the most relevant API to the specified WOWAPI wrapper
+-- Priority API assigner.
+-- Can be used to one-line assign the most relevant API to the specified WOWAPI wrapper.
+---@param name string
+---@param ...? function
 local function AssignApiWrapper(name, ...)
 	local vals = select("#", ...)
 	local api
