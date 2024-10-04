@@ -591,9 +591,6 @@ iq(227438, 81392);					-- Pristine Miner's Notes
 iq(227430, 80751);					-- Pristine Scribe's Runic Drawings
 iq(227439, 84234);					-- Pristine Skinner's Notes
 iq(227432, 80873);					-- Pristine Tailor's Diagrams
-iq(226520, 84006);					-- Queen's Pheromone (8.8 Million)
-iq(229193, 84006);					-- Queen's Pheromone (888 Thousand)
-iq(229194, 84006);					-- Queen's Pheromone (88 Thousand)
 iq(229195, 84006);					-- Queen's Pheromone (8.8 Thousand)
 iq(224038, 82631);					-- Smithing After Saronite
 iq(228943, 84689);					-- Spymaster's Severed Thread

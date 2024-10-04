@@ -1079,8 +1079,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Charged Condenser Jar
 							["providers"] = {
-								{ "i", 52834 },	-- Charged Condenser Jar
+								{ "i",  52834 },	-- Charged Condenser Jar
 								{ "o", 202731 },	-- Lightning Channel
+								{ "i",  52853 },	-- Totem of Goldrinn
 							},
 						}),
 					},
@@ -1094,8 +1095,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["groups"] = {
 						objective(1, {	-- 0/1 Charged Condenser Jar
 							["providers"] = {
-								{ "i", 52834 },	-- Charged Condenser Jar
+								{ "i",  52834 },	-- Charged Condenser Jar
 								{ "o", 202731 },	-- Lightning Channel
+								{ "i",  52853 },	-- Totem of Goldrinn
 							},
 						}),
 					},
@@ -1117,7 +1119,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = ALLIANCE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Lycanthoth slain
-							["provider"] = { "n", 39446 },	-- Lycanthoth
+							["providers"] = {
+								{ "n", 39446 },	-- Lycanthoth
+								{ "i", 52682 },	-- Lycanthoth's Incense
+							},
 						}),
 						i(57379),	-- Clutches of the Worgen Spirit
 						i(57378),	-- Primal Force Girdle
@@ -1131,7 +1136,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["groups"] = {
 						objective(1, {	-- 0/1 Lycanthoth slain
-							["provider"] = { "n", 39446 },	-- Lycanthoth
+							["providers"] = {
+								{ "n", 39446 },	-- Lycanthoth
+								{ "i", 52682 },	-- Lycanthoth's Incense
+							},
 						}),
 						i(57376),	-- Handguards of Restrained Brutality
 						i(57375),	-- Wrap of Furious Pride
@@ -1847,7 +1855,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 27.1, 62.6, MOUNT_HYJAL },
 				}),
 				q(25843, {	-- Tortolla's Revenge
-					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
+					["qg"] = 41480,	-- Archdruid Hamuul Runetotem (Shrine of Aessina)
 					["sourceQuest"] = 25372,	-- Aessina's Miracle
 					["coord"] = { 19.5, 37.8, MOUNT_HYJAL },
 				}),
