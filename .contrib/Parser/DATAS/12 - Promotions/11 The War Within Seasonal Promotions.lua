@@ -6,6 +6,7 @@ THE_WAR_WITHIN_SEASONAL_PROMOTIONS = createHeader({
 	icon = [[~_.asset("Expansion_TWW")]],
 	text = {
 		en = "The War Within Seasonal Promotions",
+		cn = "地心之战季节性促销",
 	},
 	description = {
 		en = "These promotions happened during the time The War Within.\n\nThey are listed in the order of their first appearance.",

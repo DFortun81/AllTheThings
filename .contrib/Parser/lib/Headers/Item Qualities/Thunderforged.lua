@@ -4,5 +4,6 @@ THUNDERFORGED = createHeader({
 	text = {
 		en = "Thunderforged",
 		ru = "Создано в Кузне Грома",
+		cn = "雷霆",
 	},
 });

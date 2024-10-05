@@ -10,6 +10,6 @@ FIRST_CRAFTS_HEADER = createHeader({
 		-- pt = "First Crafts",	--TODO: pluralize
 		ru = "Первые Изделия",
 		-- ko = "First Crafts",	--TODO: pluralize
-		cn = "首次制造！",
+		cn = "首次制造",
 	},
 });

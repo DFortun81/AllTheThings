@@ -17,5 +17,6 @@ LEGENDARIES = createHeader({
 	text = {
 		en = [[~LOOT_JOURNAL_LEGENDARIES]],
 		ru = "Легендарные предметы",
+		cn = [[~ITEM_QUALITY5_DESC]],
 	},
 });

@@ -9,6 +9,7 @@ THE_GREAT_GNOMEREGAN_RUN_HEADER = createHeader({
 	text = {
 		en = "The Great Gnomeregan Run",
 		ru = "Великая гонка Гномрегана",
+		cn = "诺莫瑞根马拉松",
 	},
 });
 root(ROOTS.Holidays, applyevent(EVENTS.THE_GREAT_GNOMEREGAN_RUN, n(THE_GREAT_GNOMEREGAN_RUN_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } }, {

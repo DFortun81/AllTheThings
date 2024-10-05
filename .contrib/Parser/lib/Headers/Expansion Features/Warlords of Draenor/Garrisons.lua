@@ -15,6 +15,6 @@ GARRISONS = createHeader({
 		pt = "Guarnições",
 		ru = "Гарнизоны",
 		ko = "수비대",
-		cn = "驻军",
+		cn = "要塞",
 	},
 });

@@ -9,6 +9,7 @@ CALL_OF_THE_SCARAB_HEADER = createHeader({
 	text = {
 		en = "Call of the Scarab",
 		ru = "Зов скарабея",
+		cn = "甲虫的召唤",
 	},
 });
 root(ROOTS.Holidays, applyevent(EVENTS.CALL_OF_THE_SCARAB, n(CALL_OF_THE_SCARAB_HEADER, bubbleDownSelf({ ["timeline"] = { ADDED_7_1_5 } }, {

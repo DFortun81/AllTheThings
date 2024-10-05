@@ -5,5 +5,6 @@ DREAM_WARDENS = createHeader({
 		en = "Dream Wardens",
 		ru = "Стражи Сна",
 		-- en = WOWAPI_GetSpellName(370340),
+		cn = "梦境守望者",
 	},
 });

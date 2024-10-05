@@ -6,9 +6,11 @@ WARCRAFT_RUMBLE = createHeader({
 	icon = "4226119",
 	text = {
 		en = "Warcraft Rumble",
+		cn = "魔兽大作战",
 	},
 	description = {
 		en = "Promotion for mobile game Warcraft Rumble.",
+		cn = "魔兽大作战手游的促销活动。",
 	},
 });
 

@@ -3,5 +3,6 @@ COUNCIL_OF_DORNOGAL = createHeader({
 	icon = "Interface\\Icons\\ui_majorfactions_storm",
 	text = {
 		en = "Council of Dornogal",
+		cn = "多恩诺加尔议会",
 	},
 });

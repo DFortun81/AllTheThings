@@ -6,6 +6,7 @@ CRAFTING_ORDERS = createHeader({
 	icon = "Interface\\Icons\\inv_tabard_craftingorder_c_01",
 	text = {
 		en = "Crafting Orders",
+		cn = "制造订单",
 	},
 });
 PATRON_REWARDS = createHeader({
@@ -13,6 +14,7 @@ PATRON_REWARDS = createHeader({
 	icon = "Interface\\Icons\\inv_tabard_craftingorder_c_01",
 	text = {
 		en = "Patron Rewards",
+		cn = "客人订单奖励",
 	},
 });
 root(ROOTS.Professions, n(CRAFTING_ORDERS, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {

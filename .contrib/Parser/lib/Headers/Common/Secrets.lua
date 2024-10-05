@@ -9,12 +9,12 @@ SECRETS = createHeader({
 		en = "Secrets",
 		de = "Rätsel",
 		ru = "Секреты",
-		cn = "秘密",
+		cn = "解密",
 	},
 	description = {
 		en = "Naughty secrets...",
 		fr = "Vilains secrets...",
 		ru = "Секретики...",
-		cn = "淘气的秘密…",
+		cn = "淘气的解密……",
 	},
 });

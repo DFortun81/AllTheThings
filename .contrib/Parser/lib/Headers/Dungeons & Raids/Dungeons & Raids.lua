@@ -3,6 +3,7 @@ DUNGEONS_AND_RAIDS = createHeader({
 	icon = [[~_.asset("Category_D&R")]],
 	text = {
 		en = "Dungeons & Raids",
+		cn = "地下城和团队副本",
 	},
 });
 DUNGEONS = createHeader({
@@ -12,6 +13,7 @@ DUNGEONS = createHeader({
 	icon = [[~_.asset("Category_D&R")]],
 	text = {
 		en = "Dungeons",
+		cn = "地下城",
 	},
 });
 RAIDS = createHeader({
@@ -21,5 +23,6 @@ RAIDS = createHeader({
 	icon = [[~_.asset("Category_D&R")]],
 	text = {
 		en = "Raids",
+		cn = "团队副本",
 	},
 });

@@ -8,5 +8,6 @@ HONOR_TITLES = createHeader({
 		-- #else
 		en = [[~HONOR .. " " .. PAPERDOLL_SIDEBAR_TITLES]],
 		-- #endif
+		cn = "荣誉头衔",
 	},
 });

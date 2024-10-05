@@ -13,5 +13,6 @@ HEIRLOOMS = createHeader({
 	icon = [[~_.asset("Weapon_Type_Heirloom")]],
 	text = {
 		en = [[~HEIRLOOMS]],
+		cn = [[~ITEM_QUALITY7_DESC]],
 	},
 });
