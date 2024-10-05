@@ -4,6 +4,7 @@ EVENT_COMPLETION = createHeader({
 	icon = [[~_.asset("Interface_Rewards")]],
 	text = {
 		en = "Event Completion",
+		cn = "事件完成",
 	},
 	description = {
 		en = "Contains things that are rewarded upon completing that event.",

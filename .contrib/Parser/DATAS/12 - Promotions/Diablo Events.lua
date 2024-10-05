@@ -8,6 +8,7 @@ DIABLO_EVENTS = createHeader({
 	text = {
 		en = "Diablo Events",
 		ru = "События Diablo",
+		cn = "暗黑破坏神活动",
 	},
 });
 DIABLO_TWENTIETH_ANNIVERSARY = createHeader({

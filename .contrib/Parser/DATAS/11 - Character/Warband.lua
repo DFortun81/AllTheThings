@@ -6,6 +6,7 @@ WARBAND = createHeader({
 	icon = "Interface\\Icons\\inv_cape_special_treasure_c_01",
 	text = {
 		en = "Warband",
+		cn = "战团",
 	},
 });
 root(ROOTS.Character, n(WARBAND, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {

@@ -3,5 +3,6 @@ YEAR2024 = createHeader({
 	icon = "Interface\\Icons\\inv_misc_missilesmall_green",
 	text = {
 		en = "Year 2024",
+		cn = "2024年",
 	},
 });

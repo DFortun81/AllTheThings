@@ -6,6 +6,6 @@ DPS_ROLE = createHeader({
 		de = "DDs",
 		fr = "Dégâts",
 		ru = "Боец",
-		cn = "输出",
+		cn = "伤害输出",
 	},
 });

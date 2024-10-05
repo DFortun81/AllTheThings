@@ -4,5 +4,6 @@ DREAMSURGE = createHeader({
 	text = {
 		en = "Dreamsurge",
 		ru = "Приливы снов",
+		cn = "梦涌",
 	},
 });

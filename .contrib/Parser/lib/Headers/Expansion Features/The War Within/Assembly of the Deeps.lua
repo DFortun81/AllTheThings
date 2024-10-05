@@ -3,5 +3,6 @@ THE_ASSEMBLY_OF_THE_DEEPS = createHeader({
 	icon = "Interface\\Icons\\ui_majorfactions_candle",
 	text = {
 		en = "The Assembly of the Deeps",
+		cn = "邃渊协盟",
 	},
 });

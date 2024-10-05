@@ -6,5 +6,6 @@ RARES = createHeader({
 	text = {
 		en = [[~BATTLE_PET_BREED_QUALITY4]],
 		ru = "Редкие",
+		cn = "稀有",
 	},
 });

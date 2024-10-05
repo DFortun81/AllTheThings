@@ -16,6 +16,7 @@ HEROIC_EDITION = createHeader({
 	icon = [[~_.asset("Weapon_Type_Heirloom")]],
 	text = {
 		en = "Heroic Edition",
+		cn = "英雄礼包",
 	},
 });
 EPIC_EDITION = createHeader({
@@ -23,6 +24,7 @@ EPIC_EDITION = createHeader({
 	icon = [[~_.asset("Weapon_Type_Legendary")]],
 	text = {
 		en = "Epic Edition",
+		cn = "史诗礼包",
 	},
 });
 TBC_CLASSIC_DELUXE_EDITION = createHeader({
@@ -53,6 +55,7 @@ THE_WAR_WITHIN_TEMPORARY = createHeader({
 	icon = [[~_.asset("Expansion_TWW")]],
 	text = {
 		en = "The War Within",
+		cn = "地心之战",
 	},
 	description = {
 		en = "The War Within is the tenth expansion for World of Warcraft and the beginning of the Worldsoul Saga. Journey through never-before-seen subterranean worlds filled with hidden wonders and lurking perils, down to the dark depths of the nerubian empire, where the malicious Harbinger of the Void is gathering arachnid forces to bring Azeroth to its knees.",
@@ -63,6 +66,7 @@ WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION = createHeader({
 	icon = [[~_.asset("Expansion_CLASSIC")]],
 	text = {
 		en = "WoW 15th Anniversary Collector's Edition",
+		cn = "魔兽世界15周年典藏版",
 	},
 	description = {
 		en = "These rewards were made available to anyone who purchased a World of Warcraft 15th Anniversary Collector's Edition.",

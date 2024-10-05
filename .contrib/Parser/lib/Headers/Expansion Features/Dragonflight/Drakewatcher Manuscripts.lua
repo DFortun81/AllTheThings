@@ -10,5 +10,6 @@ DRAKEWATCHER_MANUSCRIPTS = createHeader({
 		pt = "Manuscrito de Vigia-dracos",
 		ru = "Манускрипты наблюдений за драконами",
 		ko = "비룡감시자 필사본",
+		cn = "观龙者手稿",
 	},
 });

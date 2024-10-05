@@ -3,5 +3,6 @@ THE_SEVERED_THREADS = createHeader({
 	icon = "Interface\\Icons\\ui_majorfactions_web",
 	text = {
 		en = "The Severed Threads",
+		cn = "斩离之丝",
 	},
 });

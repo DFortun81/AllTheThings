@@ -16,6 +16,7 @@ HARVEST_FESTIVAL_HEADER = createHeader({
 	text = {
 		en = "Harvest Festival",
 		ru = "Неделя урожая",
+		cn = "收获节",
 	},
 });
 local BLUE_FIREWORK = i(9312);	-- Blue Firework

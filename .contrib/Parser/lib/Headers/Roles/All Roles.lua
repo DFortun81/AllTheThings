@@ -10,6 +10,6 @@ ALL_ROLES = createHeader({
 		de = "Alle Rollen",
 		fr = "Tous les Rôles",
 		ru = "Все роли",
-		cn = "全部角色",
+		cn = "全部职责",
 	},
 });

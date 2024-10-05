@@ -4,5 +4,6 @@ TIER_THREE_SETS = createHeader({
 	text = {
 		en = [[~string.format(GARRISON_CURRENT_LEVEL.." "..WARDROBE_SETS, 3)]],
 		ru = "Комплект 3-го уровня",
+		cn = "T3套装",
 	},
 });

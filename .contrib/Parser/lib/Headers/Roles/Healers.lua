@@ -6,6 +6,6 @@ HEALER_ROLE = createHeader({
 		de = "Heiler",
 		fr = "Soigneurs",
 		ru = "Лекарь",
-		cn = "治疗",
+		cn = "治疗者",
 	},
 });

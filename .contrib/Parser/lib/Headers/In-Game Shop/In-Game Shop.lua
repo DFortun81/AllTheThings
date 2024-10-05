@@ -14,5 +14,6 @@ IN_GAME_SHOP = createHeader({
 		-- #else
 		en = "This section will show you things that you can buy in the In-Game Shop.",
 		-- #endif
+		cn = "此部分显示能在游戏内商城购买的东西。",
 	},
 });

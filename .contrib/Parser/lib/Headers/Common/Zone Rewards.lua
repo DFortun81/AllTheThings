@@ -9,7 +9,7 @@ ZONE_REWARDS = createHeader({
 		en = "Zone Rewards",
 		fr = "Récompenses de la zone",
 		ru = "Добыча локации",
-		cn = "区域奖励",
+		cn = "地区奖励",
 	},
 	description = {
 		en = "These items can drop from many many sources and are usually not difficult to obtain either.\n\nWhile not every source is possible in every Zone, here is a list of possible Sources:\nEmissary Quest (Legion&later)\nRare NPCs (MoP&later)\nRepeatable Treasure Chests (SL)\nTable missions (Legion&later)\nWish Crickets (SL)\nWorld Quests (Legion&later)\nZone Drops (MoP&later)",

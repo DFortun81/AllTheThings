@@ -6,6 +6,7 @@ FAITHFUL_DOG = createHeader({
     icon = "Interface\\Icons\\Inv_holiday_tow_spicebowl",
     text = {
         en = "Faithful Dog Secret",
+		cn = "忠诚的狗解密",
     },
 });
 

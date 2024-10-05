@@ -7,5 +7,6 @@ DELVES = createHeader({
 	-- #endif
 	text = {
 		en = "Delves",
+		cn = "地下堡",
 	},
 });

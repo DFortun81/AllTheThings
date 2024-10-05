@@ -8,7 +8,7 @@ EXPLORATION = createHeader({
 		de = "Erkundung",
 		fr = "Exploration",
 		ru = "Исследование",
-		cn = "勘探",
+		cn = "探索",
 	},
 });
 explorationHeader = function(g)
