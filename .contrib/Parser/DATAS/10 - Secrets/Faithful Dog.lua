@@ -2,12 +2,12 @@
 --     S E C R E T S     M O D U L E     --
 -------------------------------------------
 FAITHFUL_DOG = createHeader({
-    readable = "Faithful Dog Secret",
-    icon = "Interface\\Icons\\Inv_holiday_tow_spicebowl",
-    text = {
-        en = "Faithful Dog Secret",
+	readable = "Faithful Dog Secret",
+	icon = "Interface\\Icons\\Inv_holiday_tow_spicebowl",
+	text = {
+		en = "Faithful Dog Secret",
 		cn = "忠诚的狗解密",
-    },
+	},
 });
 
 root(ROOTS.Secrets, n(FAITHFUL_DOG, {
