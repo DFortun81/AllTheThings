@@ -324,8 +324,9 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(65840, {	-- Same as the Old Boss
 					["sourceQuest"] = 66362,	-- First Completion of 'Unlocking our Past' (Igys the Believer)
-					["provider"] = { "n", 191310 },	-- Doventhal the Chosen
+					["provider"] = { "n", 191304 },	-- Aizir the Inflamed
 					["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
+					["crs"] = { 191310 },	-- Doventhal the Chosen
 					["isWeekly"] = true,
 					["g"] = {
 						i(202173),	-- Magmote
@@ -333,16 +334,18 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				}),
 				q(66894, {	-- Same as the Old Boss
 					["sourceQuest"] = 66362,	-- First Completion of 'Unlocking our Past' (Igys the Believer)
-					["provider"] = { "n", 191310 },	-- Doventhal the Chosen
+					["provider"] = { "n", 191304 },	-- Aizir the Inflamed
 					["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
+					["crs"] = { 191310 },	-- Doventhal the Chosen
 					["isWeekly"] = true,
 					["g"] = {
 						i(202173),	-- Magmote
 					},
 				}),
 				q(66895, {	-- Same as the Old Boss
-					["provider"] = { "n", 191310 },	-- Doventhal the Chosen
+					["provider"] = { "n", 191304 },	-- Aizir the Inflamed
 					["coord"] = { 32.0, 52.4, THE_WAKING_SHORES },
+					["crs"] = { 191310 },	-- Doventhal the Chosen
 					["isWeekly"] = true,
 					["g"] = {
 						i(202173),	-- Magmote
