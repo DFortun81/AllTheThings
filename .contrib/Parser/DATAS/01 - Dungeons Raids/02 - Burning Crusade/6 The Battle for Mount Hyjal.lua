@@ -498,7 +498,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 									REMOVED_4_0_1, -- Renamed and not available after Cata
 								},
 							}),
-							-- endif
+							-- #endif
 							i(32277),	-- Design: Delicate Crimson Spinel
 							-- #if BEFORE CATA
 							i(32293, {	-- Design: Gleaming Lionseye [TBC] / Design: Smooth Lionseye [CATA+]
