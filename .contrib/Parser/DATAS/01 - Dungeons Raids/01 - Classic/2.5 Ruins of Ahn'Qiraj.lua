@@ -770,8 +770,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			n(15471, {	-- Lieutenant General Andorov
 				["description"] = "In order to interact with this vendor, you must first talk to him to start the encounter with General Rajaxx and allow him to get at least one hit on the boss after the waves have completed.",
 				["groups"] = {
-					i(22219),	-- Plans: Jagged Obsidian Shield (RECIPE!)
-					i(22221),	-- Plans: Obsidian Mail Tunic (RECIPE!)
+					i(22219, {	-- Plans: Jagged Obsidian Shield (RECIPE!)
+						["minReputation"] = { FACTION_CENARION_CIRCLE, REVERED },
+						["isLimited"] = true,
+					}),
+					i(22221, {	-- Plans: Obsidian Mail Tunic (RECIPE!)
+						["minReputation"] = { FACTION_CENARION_CIRCLE, EXALTED },
+						["isLimited"] = true,
+					}),
 				},
 			}),
 			e(1538, {	-- General Rajaxx

@@ -44,7 +44,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(226045),	-- The General's Trove
 						},
 					}),
-					q(64267, {	-- Notorious with The Vizier
+					q(83740, {	-- Notorious with The Vizier
 						["provider"] = { "n", 224733 },	-- Tulumun <Assistant to the Executor>
 						["coord"] = { 56.2, 42.2, AZJ_KAHET },
 						["isRepeatable"] = true,
