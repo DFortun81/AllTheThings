@@ -336,8 +336,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 				}),
 				q(81479, {	-- Requisitions: Umbrashrooms
 					["sourceQuest"] = 82642,
-					-- ["provider"] = { "n", 224178 },	-- Ghos'opp	-- TODO
-					["coord"] = { 51.8, 16.5, NERUBAR },
+					["provider"] = { "n", 224177 },	-- Ghos'opp
+					["coord"] = { 52.0, 16.6, NERUBAR },
 					["g"] = {
 						o(437726, {	-- Luminescent Umbrashroom
 							i(219212),	-- Luminescent Umbrashroom (QI!)
@@ -826,6 +826,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 					-- Ghos'opp (n: 224178 @ 64.2, 21.2), starts questID 81495 (Requisitions: Brightblooms), (29-09-24, Exo)
 					-- Ghos'opp (n: 224188 @ 47.9,  9.7), starts questID 81501 (Testing Formulae: Roiling Elixir), (30-09-24, Exo)
 					-- Ru'murh  (n: 224194 @ 70.3, 31.8), starts questID 81470 (Dropping Eaves: Thieving Weave), (04-10-24, Exo)
+					-- Ghos'opp (n: 224177 @ 52.0, 16.6), starts questID 81479 (Requisitions: Umbrashrooms), (05-10-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82642, {	-- Eirzay   (n: 224161 @ 43.0, 47.2), starts questID 81475 (Breaking the Phalanx: Royal Appointments), (27-09-24, Exo)
