@@ -1390,7 +1390,7 @@ root(ROOTS.Zones, {
 					}),
 					n(49822, {	-- Jadefang
 						["coord"] = { 61.2, 22.6, DEEPHOLM },
-						["description"] = "You will need the \"Ricket's Tickers\" bomb to reach the platform where Jadefang spawns.",
+						["description"] = "Found inside Crumbling Depths, requires the daily quest Underground Economy. Use the bomb \"Ricket's Tickers\" in the central cavern to reach the cave where Jadefang spawns.",
 						["groups"] = {
 							i(64494),	-- Tiny Shale Spider (PET!)
 						},
