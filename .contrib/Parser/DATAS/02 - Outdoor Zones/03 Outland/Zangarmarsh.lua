@@ -1986,96 +1986,102 @@ root(ROOTS.Zones, {
 					}),
 					n(17904, {	-- Fedryen Swiftspear <Cenarion Expedition Quartermaster>
 						["coord"] = { 79.3, 63.7, ZANGARMARSH },
-						["groups"] = {
-							i(31804),	-- Cenarion Expedition Tabard
-							ach(893, {	-- Cenarion War Hippogryph
-								["provider"] = { "i", 33999 },	-- Cenarion War Hippogryph
-								-- #if BEFORE WRATH
-								["description"] = "Obtain the Cenarion War Hippogryph from the Cenarion Expedition in Zangarmarsh.",
-								-- #endif
-								["filterID"] = MOUNTS,
-							}),
-							i(33999),	-- Cenarion War Hippogryph (MOUNT!)
-							i(30623, {	-- Reservoir Key [Revered]
-								["timeline"] = { REMOVED_4_2_0 },
-								-- #if ANYCLASSIC
-								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
-								["OnTooltip"] = [[function(t, tooltipInfo)
-									local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
-									if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
-										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
-									else
-										tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
-									end
-									tooltip:Show();
-								end]],
-								["OnInit"] = [[function(t)
-									t.otherItemID = 185690;
-									t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
-									return t;
-								end]],
-								-- #endif
-							}),
-							i(29192, {	-- Glyph of Ferocity
-								["timeline"] = { REMOVED_5_0_4 },
-							}),
-							i(29194, {	-- Glyph of Nature Warding
-								["timeline"] = { REMOVED_5_0_4 },
-							}),
-							i(24417, {	-- Scout's Arrow
-								["timeline"] = { REMOVED_4_0_1 },
-							}),
-							i(31949, {	-- Warden's Arrow
-								["timeline"] = { REMOVED_4_0_1 },
-							}),
-							i(29172),	-- Ashyen's Gift
-							applyclassicphase(TBC_PHASE_TWO, i(35403)),	-- Crusader's Ornamented Gloves
-							applyclassicphase(TBC_PHASE_TWO, i(35415)),	-- Crusader's Scaled Legguards
-							i(24183),	-- Design: Nightseye Panther
-							i(31402),	-- Design: The Natural Ward
-							applyclassicphase(TBC_PHASE_TWO, i(35358)),	-- Dragonhide Legguards
-							applyclassicphase(TBC_PHASE_TWO, i(35329)),	-- Dreadweave Hood
-							i(29171),	-- Earthwarden
-							applyclassicphase(TBC_PHASE_TWO, i(35347)),	-- Evoker's Silk Trousers
-							i(24429),	-- Expedition Flare
-							i(25835),	-- Explorer's Walking Stick
-							i(33149, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Cloak - Stealth (RECIPE!)
-							i(28271),	-- Formula: Enchant Gloves - Precise Strikes / TBC: Formula: Enchant Gloves - Spell Strike (RECIPE!)
-							applyclassicphase(TBC_PHASE_TWO, i(35365)),	-- Kodohide Robe
-							applyclassicphase(TBC_PHASE_TWO, i(35336)),	-- Mooncloth Shoulderpads
-							applyclassicphase(TBC_PHASE_TWO, i(35367)),	-- Opportunist's Leather Helm
-							i(29720),	-- Pattern: Clefthide Leg Armor (RECIPE!)
-							i(25737),	-- Pattern: Heavy Clefthoof Boots (RECIPE!)
-							i(25736),	-- Pattern: Heavy Clefthoof Leggings (RECIPE!)
-							i(25735),	-- Pattern: Heavy Clefthoof Vest (RECIPE!)
-							i(29721),	-- Pattern: Nethercleft Leg Armor (RECIPE!)
-							i(23618),	-- Plans: Adamantite Sharpening Stone (RECIPE!)
-							i(28632),	-- Plans: Adamantite Weightstone (RECIPE!)
-							i(25526),	-- Plans: Greater Rune of Warding (RECIPE!)
-							i(31390),	-- Plans: Wildguard Breastplate (RECIPE!)
-							i(31392),	-- Plans: Wildguard Helm (RECIPE!)
-							i(31391),	-- Plans: Wildguard Leggings (RECIPE!)
-							i(25836),	-- Preserver's Cudgel
-							i(32070, {	-- Recipe: Earthen Elixir (RECIPE!)
-								["timeline"] = { ADDED_2_1_0 },
-							}),
-							i(31356),	-- Recipe: Flask of Distilled Wisdom (RECIPE!)
-							i(22922),	-- Recipe: Major Nature Protection Potion (RECIPE!)
-							i(25869),	-- Recipe: Transmute Earthstorm Diamond (RECIPE!)
-							i(22918),	-- Recipe: Transmute Primal Water to Air (RECIPE!)
-							applyclassicphase(TBC_PHASE_TWO, i(35342)),	-- Satin Robe
-							applyclassicphase(TBC_PHASE_TWO, i(35408)),	-- Savage Plate Gauntlets
-							i(23814),	-- Schematic: Green Smoke Flare (RECIPE!)
-							applyclassicphase(TBC_PHASE_TWO, i(35385)),	-- Seer's Linked Spaulders
-							applyclassicphase(TBC_PHASE_TWO, i(35387)),	-- Seer's Mail Gauntlets
-							applyclassicphase(TBC_PHASE_TWO, i(35394)),	-- Seer's Ringmail Legguards
-							applyclassicphase(TBC_PHASE_TWO, i(35379)),	-- Stalker's Chain Leggings
-							i(29173),	-- Strength of the Untamed
-							i(25838),	-- Warden's Hauberk
-							i(29174),	-- Watcher's Cowl
-							i(29170),	-- Windcaller's Orb
-							applyclassicphase(TBC_PHASE_TWO, i(35374)),	-- Wyrmhide Spaulders
-						},
+						["groups"] = bubbleDownClassicRep(FACTION_CENARION_EXPEDITION, {
+							{		-- Neutral
+							}, {	-- Friendly
+								i(24429),	-- Expedition Flare
+								i(23814),	-- Schematic: Green Smoke Flare (RECIPE!)
+								i(24417, {	-- Scout's Arrow
+									["timeline"] = { REMOVED_4_0_1 },
+								}),
+								i(25737),	-- Pattern: Heavy Clefthoof Boots (RECIPE!)
+							}, {	-- Honored
+								applyclassicphase(TBC_PHASE_TWO, i(35403)),	-- Crusader's Ornamented Gloves
+								applyclassicphase(TBC_PHASE_TWO, i(35415)),	-- Crusader's Scaled Legguards
+								i(29194, {	-- Glyph of Nature Warding
+									["timeline"] = { REMOVED_5_0_4 },
+								}),
+								applyclassicphase(TBC_PHASE_TWO, i(35358)),	-- Dragonhide Legguards
+								applyclassicphase(TBC_PHASE_TWO, i(35329)),	-- Dreadweave Hood
+								applyclassicphase(TBC_PHASE_TWO, i(35347)),	-- Evoker's Silk Trousers
+								i(25835),	-- Explorer's Walking Stick
+								applyclassicphase(TBC_PHASE_TWO, i(35365)),	-- Kodohide Robe
+								applyclassicphase(TBC_PHASE_TWO, i(35336)),	-- Mooncloth Shoulderpads
+								applyclassicphase(TBC_PHASE_TWO, i(35367)),	-- Opportunist's Leather Helm
+								i(29720),	-- Pattern: Clefthide Leg Armor (RECIPE!)
+								i(25736),	-- Pattern: Heavy Clefthoof Leggings (RECIPE!)
+								i(25735),	-- Pattern: Heavy Clefthoof Vest (RECIPE!)
+								i(23618),	-- Plans: Adamantite Sharpening Stone (RECIPE!)
+								i(28632),	-- Plans: Adamantite Weightstone (RECIPE!)
+								i(25526),	-- Plans: Greater Rune of Warding (RECIPE!)
+								i(25836),	-- Preserver's Cudgel
+								i(32070, {	-- Recipe: Earthen Elixir (RECIPE!)
+									["timeline"] = { ADDED_2_1_0 },
+								}),
+								i(25869),	-- Recipe: Transmute Earthstorm Diamond (RECIPE!)
+								applyclassicphase(TBC_PHASE_TWO, i(35342)),	-- Satin Robe
+								applyclassicphase(TBC_PHASE_TWO, i(35408)),	-- Savage Plate Gauntlets
+								applyclassicphase(TBC_PHASE_TWO, i(35385)),	-- Seer's Linked Spaulders
+								applyclassicphase(TBC_PHASE_TWO, i(35387)),	-- Seer's Mail Gauntlets
+								applyclassicphase(TBC_PHASE_TWO, i(35394)),	-- Seer's Ringmail Legguards
+								applyclassicphase(TBC_PHASE_TWO, i(35379)),	-- Stalker's Chain Leggings
+								i(25838),	-- Warden's Hauberk
+								applyclassicphase(TBC_PHASE_TWO, i(35374)),	-- Wyrmhide Spaulders
+							}, {	-- Revered
+								i(30623, {	-- Reservoir Key [Revered]
+									["timeline"] = { REMOVED_4_2_0 },
+									-- #if ANYCLASSIC
+									-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
+									["OnTooltip"] = [[function(t, tooltipInfo)
+										local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
+										if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
+											tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
+										else
+											tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
+										end
+										tooltip:Show();
+									end]],
+									["OnInit"] = [[function(t)
+										t.otherItemID = 185690;
+										t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
+										return t;
+									end]],
+									-- #endif
+								}),
+								i(29192, {	-- Glyph of Ferocity
+									["timeline"] = { REMOVED_5_0_4 },
+								}),
+								i(31949, {	-- Warden's Arrow
+									["timeline"] = { REMOVED_4_0_1 },
+								}),
+								i(24183),	-- Design: Nightseye Panther (RECIPE!)
+								i(28271),	-- Formula: Enchant Gloves - Precise Strikes / TBC: Formula: Enchant Gloves - Spell Strike (RECIPE!)
+								i(31392),	-- Plans: Wildguard Helm (RECIPE!)
+								i(31391),	-- Plans: Wildguard Leggings (RECIPE!)
+								i(22918),	-- Recipe: Transmute Primal Water to Air (RECIPE!)
+								i(29173),	-- Strength of the Untamed
+								i(29174),	-- Watcher's Cowl
+							}, {	-- Exalted
+								i(29172),	-- Ashyen's Gift
+								i(31804),	-- Cenarion Expedition Tabard
+								ach(893, {	-- Cenarion War Hippogryph
+									["provider"] = { "i", 33999 },	-- Cenarion War Hippogryph
+									-- #if BEFORE WRATH
+									["description"] = "Obtain the Cenarion War Hippogryph from the Cenarion Expedition in Zangarmarsh.",
+									-- #endif
+									["filterID"] = MOUNTS,
+								}),
+								i(33999),	-- Cenarion War Hippogryph (MOUNT!)
+								i(31402),	-- Design: The Natural Ward (RECIPE!)
+								i(29171),	-- Earthwarden
+								i(33149, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Cloak - Stealth (RECIPE!)
+								i(29721),	-- Pattern: Nethercleft Leg Armor (RECIPE!)
+								i(31390),	-- Plans: Wildguard Breastplate (RECIPE!)
+								i(31356),	-- Recipe: Flask of Distilled Wisdom (RECIPE!)
+								i(22922),	-- Recipe: Major Nature Protection Potion (RECIPE!)
+								i(29170),	-- Windcaller's Orb
+							},
+						}),
 					}),
 					n(18015, {	-- Gambarinka <Tradesman>
 						["coord"] = { 31.6, 49.2, ZANGARMARSH },
@@ -2179,51 +2185,73 @@ root(ROOTS.Zones, {
 					}),
 					n(18382, {	-- Mycah <Sporeggar Quartermaster>
 						["coord"] = { 18.27, 51.12, ZANGARMARSH },
-						["groups"] = {
-							i(34478, {	-- Tiny Sporebat (PET!)
-								["cost"] = { { "i", 24245, 30 }, },	-- 30x Glowcap
-							}),
-							i(31775, {	-- Sporeggar Tabard
-								["cost"] = { { "i", 24245, 10 }, },	-- 10x Glowcap
-							}),
-							i(38229, {	-- Pattern: Mycah's Botanical Bag
-								["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
-							}),
-							i(30156, {	-- Recipe: Clam Bar (RECIPE!)
-								["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
-							}),
-							i(22906, {	-- Recipe: Shrouding Potion (RECIPE!)
-								["cost"] = { { "i", 24245, 30 }, },	-- 30x Glowcap
-							}),
-							i(27689, {	-- Recipe: Sporeling Snack (RECIPE!)
-								["cost"] = { { "i", 24245, 2 }, },	-- 2x Glowcap
-								["timeline"] = { REMOVED_4_2_0 },
-							}),
-							i(22916, {	-- Recipe: Transmute Primal Earth to Water (RECIPE!)
-								["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
-							}),
-							i(29150, {	-- Hardened Stone Shard
-								["cost"] = { { "i", 24245, 45 }, },	-- 45x Glowcap
-							}),
-							i(25828, {	-- Petrified Lichen Guard
-								["cost"] = { { "i", 24245, 15 }, },	-- 15x Glowcap
-							}),
-							i(29149, {	-- Sporeling's Firestick
-								["cost"] = { { "i", 24245, 20 }, },	-- 20x Glowcap
-							}),
-							i(25827, {	-- Muck-Covered Drape
-								["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
-							}),
-							i(24539, {	-- Marsh Lichen
-								["cost"] = { { "i", 24245, 2 }, },	-- 2x Glowcap
-							}),
-							i(25550, {	-- Redcap Toadstool
-								["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
-							}),
-							i(25548, {	-- Tallstalk Mushroom
-								["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
-							}),
-						},
+						["groups"] = bubbleDownClassicRep(FACTION_SPOREGGAR, {
+							{		-- Neutral
+								i(144262, {	-- Fungal Lifestalk
+									["cost"] = { { "i", 24245, 20 }, },	-- 20x Glowcap
+									["timeline"] = { ADDED_7_2_0 },
+								}),
+								i(24539, {	-- Marsh Lichen
+									["cost"] = { { "i", 24245, 2 }, },	-- 2x Glowcap
+								}),
+								i(30156, {	-- Recipe: Clam Bar (RECIPE!)
+									["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
+								}),
+								i(27689, {	-- Recipe: Sporeling Snack (RECIPE!)
+									["cost"] = { { "i", 24245, 2 }, },	-- 2x Glowcap
+									["timeline"] = { REMOVED_4_2_0 },
+								}),
+								i(144265, {	-- Rimecap
+									["cost"] = { { "i", 24245, 20 }, },	-- 20x Glowcap
+									["timeline"] = { ADDED_7_2_0 },
+								}),
+								i(144276, {	-- Sack of Healing Spores
+									["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
+									["timeline"] = { ADDED_7_2_0 },
+								}),
+								i(144261, {	-- Sporeggium
+									["cost"] = { { "i", 24245, 10 }, },	-- 10x Glowcap
+									["timeline"] = { ADDED_7_2_0 },
+								}),
+							}, {	-- Friendly
+								i(25548, {	-- Tallstalk Mushroom
+									["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
+								}),
+							}, {	-- Honored
+								i(25827, {	-- Muck-Covered Drape
+									["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
+								}),
+								i(25828, {	-- Petrified Lichen Guard
+									["cost"] = { { "i", 24245, 15 }, },	-- 15x Glowcap
+								}),
+								i(25550, {	-- Redcap Toadstool
+									["cost"] = { { "i", 24245, 1 }, },	-- 1x Glowcap
+								}),
+							}, {	-- Revered
+								i(29150, {	-- Hardened Stone Shard
+									["cost"] = { { "i", 24245, 45 }, },	-- 45x Glowcap
+								}),
+								i(38229, {	-- Pattern: Mycah's Botanical Bag
+									["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
+								}),
+								i(22916, {	-- Recipe: Transmute Primal Earth to Water (RECIPE!)
+									["cost"] = { { "i", 24245, 25 }, },	-- 25x Glowcap
+								}),
+								i(29149, {	-- Sporeling's Firestick
+									["cost"] = { { "i", 24245, 20 }, },	-- 20x Glowcap
+								}),
+							}, {	-- Exalted
+								i(31775, {	-- Sporeggar Tabard
+									["cost"] = { { "i", 24245, 10 }, },	-- 10x Glowcap
+								}),
+								i(34478, {	-- Tiny Sporebat (PET!)
+									["cost"] = { { "i", 24245, 30 }, },	-- 30x Glowcap
+								}),
+								i(22906, {	-- Recipe: Shrouding Potion (RECIPE!)
+									["cost"] = { { "i", 24245, 30 }, },	-- 30x Glowcap
+								}),
+							},
+						}),
 					}),
 					n(18993, {	-- Naka <Cooking Supplies>
 						["coord"] = { 78.5, 63.0, ZANGARMARSH },

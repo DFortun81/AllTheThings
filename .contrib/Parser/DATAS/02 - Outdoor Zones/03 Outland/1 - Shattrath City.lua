@@ -1694,72 +1694,77 @@ root(ROOTS.Zones, {
 					}),
 					n(21432, {	-- Almaador <Sha'tari Quartermaster>
 						["coord"] = { 51.6, 41.6, SHATTRATH_CITY },
-						["minReputation"] = { FACTION_THE_SHATAR, NEUTRAL },	-- The Sha'tar, Neutral.
-						["groups"] = {
-							i(29177),	-- Adal's Command
-							i(29180),	-- Blessed Scale Girdle
-							i(29176),	-- Crest of the Sha'tar
-							applyclassicphase(TBC_PHASE_TWO, i(35404)),	-- Crusader's Ornamented Headguard
-							applyclassicphase(TBC_PHASE_TWO, i(35416)),	-- Crusader's Scaled Shoulders
-							i(33159),	-- Design: Blood of Amber
-							i(25904),	-- Design: Insightful Earthstorm Diamond
-							i(33155),	-- Design: Kailee's Rose
-							i(30826),	-- Design: Ring of Arcane Shielding
-							i(24182),	-- Design: Talasite Owl
-							applyclassicphase(TBC_PHASE_TWO, i(35359)),	-- Dragonhide Spaulders
-							applyclassicphase(TBC_PHASE_TWO, i(35330)),	-- Dreadweave Leggings
-							applyclassicphase(TBC_PHASE_TWO, i(35345)),	-- Evoker's Silk Handguards
-							i(28273),	-- Formula: Enchant Gloves - Major Healing (RECIPE!)
-							i(33153, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Gloves - Threat (RECIPE!)
-							i(22537, {["timeline"]={ADDED_2_0_1,REMOVED_6_0_2}}),	-- Formula: Enchant Ring - Healing Power (RECIPE!)
-							i(28281),	-- Formula: Enchant Weapon - Major Healing (RECIPE!)
-							i(29175),	-- Gavel of Pure Light
-							i(29195, {	-- Glyph of Arcane Warding
-								["timeline"] = { REMOVED_5_0_4 },
-							}),
-							i(29191, {	-- Glyph of Power
-								["timeline"] = { REMOVED_5_0_4 },
-							}),
-							applyclassicphase(TBC_PHASE_TWO, i(35362)),	-- Kodohide Helm
-							applyclassicphase(TBC_PHASE_TWO, i(35333)),	-- Mooncloth Cowl
-							applyclassicphase(TBC_PHASE_TWO, i(35368)),	-- Opportunist's Leather Legguards
-							i(29717),	-- Pattern: Drums of Battle (RECIPE!)
-							-- #if ANYCLASSIC
-							applyclassicphase(TBC_PHASE_FOUR, i(185926)),	-- Pattern: Greater Drums of Battle (RECIPE!)
-							-- #endif
-							i(13517),	-- Recipe: Alchemist Stone (RECIPE!)
-							i(31354),	-- Recipe: Flask of the Titans (RECIPE!)
-							i(22915),	-- Recipe: Transmute Primal Air to Fire (RECIPE!)
-							applyclassicphase(TBC_PHASE_TWO, i(35341)),	-- Satin Mantle
-							applyclassicphase(TBC_PHASE_TWO, i(35407)),	-- Savage Plate Chestpiece
-							applyclassicphase(TBC_PHASE_TWO, i(35381)),	-- Seer's Linked Armor
-							applyclassicphase(TBC_PHASE_TWO, i(35388)),	-- Seer's Mail Helm
-							applyclassicphase(TBC_PHASE_TWO, i(35395)),	-- Seer's Ringmail Shoulderpads
-							i(31781),	-- Sha'tar Tabard
-							applyclassicphase(TBC_PHASE_TWO, i(35380)),	-- Stalker's Chain Spaulders
-							i(30634, {	-- Warpforged Key
-								["timeline"] = { REMOVED_4_2_0 },
+						["groups"] = bubbleDownClassicRep(FACTION_THE_SHATAR, {
+							{		-- Neutral
+							}, {	-- Friendly
+								i(25904),	-- Design: Insightful Earthstorm Diamond (RECIPE!)
+							}, {	-- Honored
+								applyclassicphase(TBC_PHASE_TWO, i(35404)),	-- Crusader's Ornamented Headguard
+								applyclassicphase(TBC_PHASE_TWO, i(35416)),	-- Crusader's Scaled Shoulders
+								i(33155),	-- Design: Kailee's Rose (RECIPE!)
+								i(30826),	-- Design: Ring of Arcane Shielding (RECIPE!)
+								i(29195, {	-- Glyph of Arcane Warding
+									["timeline"] = { REMOVED_5_0_4 },
+								}),
+								applyclassicphase(TBC_PHASE_TWO, i(35362)),	-- Kodohide Helm
+								applyclassicphase(TBC_PHASE_TWO, i(35333)),	-- Mooncloth Cowl
+								applyclassicphase(TBC_PHASE_TWO, i(35368)),	-- Opportunist's Leather Legguards
+								i(29717),	-- Pattern: Drums of Battle (RECIPE!)
 								-- #if ANYCLASSIC
-								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
-								["OnTooltip"] = [[function(t, tooltipInfo)
-									local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
-									if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
-										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
-									else
-										tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
-									end
-									tooltip:Show();
-								end]],
-								["OnInit"] = [[function(t)
-									t.otherItemID = 185692;
-									t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
-									return t;
-								end]],
+								applyclassicphase(TBC_PHASE_FOUR, i(185926)),	-- Pattern: Greater Drums of Battle (RECIPE!)
 								-- #endif
-							}),
-							applyclassicphase(TBC_PHASE_TWO, i(35375)),	-- Wyrmhide Robe
-							i(29179),	-- Xi'ri's Gift
-						},
+								applyclassicphase(TBC_PHASE_TWO, i(35341)),	-- Satin Mantle
+								applyclassicphase(TBC_PHASE_TWO, i(35407)),	-- Savage Plate Chestpiece
+								applyclassicphase(TBC_PHASE_TWO, i(35381)),	-- Seer's Linked Armor
+								applyclassicphase(TBC_PHASE_TWO, i(35388)),	-- Seer's Mail Helm
+								applyclassicphase(TBC_PHASE_TWO, i(35395)),	-- Seer's Ringmail Shoulderpads
+								applyclassicphase(TBC_PHASE_TWO, i(35380)),	-- Stalker's Chain Spaulders
+								applyclassicphase(TBC_PHASE_TWO, i(35375)),	-- Wyrmhide Robe
+							}, {	-- Revered
+								i(29180),	-- Blessed Scale Girdle
+								i(33159),	-- Design: Blood of Amber (RECIPE!)
+								i(24182),	-- Design: Talasite Owl (RECIPE!)
+								applyclassicphase(TBC_PHASE_TWO, i(35359)),	-- Dragonhide Spaulders
+								applyclassicphase(TBC_PHASE_TWO, i(35330)),	-- Dreadweave Leggings
+								applyclassicphase(TBC_PHASE_TWO, i(35345)),	-- Evoker's Silk Handguards
+								i(28273),	-- Formula: Enchant Gloves - Major Healing (RECIPE!)
+								i(22537, {["timeline"]={ADDED_2_0_1,REMOVED_6_0_2}}),	-- Formula: Enchant Ring - Healing Power (RECIPE!)
+								i(28281),	-- Formula: Enchant Weapon - Major Healing (RECIPE!)
+								i(29191, {	-- Glyph of Power
+									["timeline"] = { REMOVED_5_0_4 },
+								}),
+								i(13517),	-- Recipe: Alchemist Stone (RECIPE!)
+								i(22915),	-- Recipe: Transmute Primal Air to Fire (RECIPE!)
+								i(30634, {	-- Warpforged Key
+									["timeline"] = { REMOVED_4_2_0 },
+									-- #if ANYCLASSIC
+									-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
+									["OnTooltip"] = [[function(t, tooltipInfo)
+										local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
+										if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
+											tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
+										else
+											tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
+										end
+										tooltip:Show();
+									end]],
+									["OnInit"] = [[function(t)
+										t.otherItemID = 185692;
+										t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
+										return t;
+									end]],
+									-- #endif
+								}),
+								i(29179),	-- Xi'ri's Gift
+							}, {	-- Exalted
+								i(29177),	-- Adal's Command
+								i(29176),	-- Crest of the Sha'tar
+								i(33153, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Gloves - Threat (RECIPE!)
+								i(29175),	-- Gavel of Pure Light
+								i(31354),	-- Recipe: Flask of the Titans (RECIPE!)
+								i(31781),	-- Sha'tar Tabard
+							},
+						}),
 					}),
 					n(22212, {	-- Andrion Darkspinner <Shadoweave Tailoring Specialist>
 						["coord"] = { 66.6, 68.6, SHATTRATH_CITY },
@@ -2116,9 +2121,7 @@ root(ROOTS.Zones, {
 						i(27992),	-- Infallible Tikbalang Ward
 						i(27940),	-- Marvelous Madstone of Immortality
 						i(27976),	-- Polished Pendant of Edible Energy
-						i(74918, {
-
-						}),	-- Problem Solving Pendant
+						i(74918),	-- Problem Solving Pendant
 						i(27945),	-- Shark's Tooth of Bona Fide Fluidic Mobility
 						i(27978),	-- Soap on a Rope
 						i(27979),	-- Stone of Stupendous Springing Strides
@@ -2159,7 +2162,7 @@ root(ROOTS.Zones, {
 					n(18756, {	-- Haris Pilton <Socialite>
 						["coord"] = { 75.6, 30.6, SHATTRATH_CITY },
 						["groups"] = {
-							ach(1165, {	-- My Sack is "Gigantique"
+							ach(1165, {	-- My Storage is "Gigantique"
 								["provider"] = { "i", 38082 },	-- "Gigantique" Bag
 								-- #if BEFORE WRATH
 								["description"] = "Equip Haris Pilton's \"Gigantique\" Bag.",
@@ -2343,71 +2346,76 @@ root(ROOTS.Zones, {
 					}),
 					n(21655, {	-- Nakodu <Lower City Quartermaster>
 						["coord"] = { 62.6, 69.0, SHATTRATH_CITY },
-						["minReputation"] = { FACTION_LOWER_CITY, NEUTRAL },	-- Lower City, Neutral.
-						["groups"] = {
-							i(30633, {	-- Auchenai Key
-								["timeline"] = { REMOVED_4_2_0 },
-								-- #if ANYCLASSIC
-								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
-								["OnTooltip"] = [[function(t, tooltipInfo)
-									local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
-									if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
-										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
-									else
-										tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
-									end
-									tooltip:Show();
-								end]],
-								["OnInit"] = [[function(t)
-									t.otherItemID = 185691;
-									t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
-									return t;
-								end]],
-								-- #endif
-							}),
-							applyclassicphase(TBC_PHASE_TWO, i(35405)),	-- Crusader's Ornamented Leggings
-							applyclassicphase(TBC_PHASE_TWO, i(35412)),	-- Crusader's Scaled Chestpiece
-							i(33157),	-- Design: Falling Star
-							i(24179),	-- Design: Felsteel Boar
-							i(24175),	-- Design: Pendant of Thawing
-							i(23138),	-- Design: Potent Flame Spessarite
-							applyclassicphase(TBC_PHASE_TWO, i(35357)),	-- Dragonhide Helm
-							applyclassicphase(TBC_PHASE_TWO, i(35331)),	-- Dreadweave Mantle
-							applyclassicphase(TBC_PHASE_TWO, i(35344)),	-- Evoker's Silk Cowl
-							i(33148, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Cloak - Dodge (RECIPE!)
-							applyclassicphase(TBC_PHASE_THREE, i(22538, {["timeline"]={ADDED_2_0_1,REMOVED_6_0_2}})),	-- Formula: Enchant Ring - Stats (RECIPE!)
-							i(30832),	-- Gavel of Unearthed Secrets
-							i(29199, {	-- Glyph of Shadow Warding
-								["timeline"] = { REMOVED_5_0_4 },
-							}),
-							i(30846, {	-- Glyph of the Outcast
-								["timeline"] = { REMOVED_5_0_4 },
-							}),
-							applyclassicphase(TBC_PHASE_TWO, i(35361)),	-- Kodohide Gloves
-							i(30836),	-- Leggings of the Skettis Exile
-							i(30841),	-- Lower City Prayerbook
-							i(31778),	-- Lower City Tabard
-							applyclassicphase(TBC_PHASE_TWO, i(35335)),	-- Mooncloth Mitts
-							applyclassicphase(TBC_PHASE_TWO, i(35370)),	-- Opportunist's Leather Tunic
-							i(30833),	-- Pattern: Cloak of Arcane Evasion (RECIPE!)
-							applyclassicphase(TBC_PHASE_THREE, i(34200, {	-- Pattern: Quiver of a Thousand Feathers (RECIPE!)
-								["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },
-							})),
-							i(22910),	-- Recipe: Elixir of Major Shadow Power (RECIPE!)
-							i(31357, {	-- Recipe: Flask of Chromatic Resistance (RECIPE!)
-								["timeline"] = { REMOVED_5_0_4 },
-							}),
-							i(30835),	-- Salvager's Hauberk
-							applyclassicphase(TBC_PHASE_TWO, i(35340)),	-- Satin Leggings
-							applyclassicphase(TBC_PHASE_TWO, i(35411)),	-- Savage Plate Shoulders
-							applyclassicphase(TBC_PHASE_TWO, i(35382)),	-- Seer's Linked Gauntlets
-							applyclassicphase(TBC_PHASE_TWO, i(35389)),	-- Seer's Mail Leggings
-							applyclassicphase(TBC_PHASE_TWO, i(35391)),	-- Seer's Ringmail Chestguard
-							i(30834),	-- Shapeshifter's Signet
-							applyclassicphase(TBC_PHASE_TWO, i(35378)),	-- Stalker's Chain Helm
-							i(30830),	-- Trident of the Outcast Tribe
-							applyclassicphase(TBC_PHASE_TWO, i(35373)),	-- Wyrmhide Legguards
-						},
+						["groups"] = bubbleDownClassicRep(FACTION_LOWER_CITY, {
+							{		-- Neutral
+							}, {	-- Friendly
+								i(23138),	-- Design: Potent Flame Spessarite (RECIPE!)
+							}, {	-- Honored
+								applyclassicphase(TBC_PHASE_TWO, i(35405)),	-- Crusader's Ornamented Leggings
+								applyclassicphase(TBC_PHASE_TWO, i(35412)),	-- Crusader's Scaled Chestpiece
+								applyclassicphase(TBC_PHASE_TWO, i(35357)),	-- Dragonhide Helm
+								applyclassicphase(TBC_PHASE_TWO, i(35331)),	-- Dreadweave Mantle
+								applyclassicphase(TBC_PHASE_TWO, i(35344)),	-- Evoker's Silk Cowl
+								applyclassicphase(TBC_PHASE_THREE, i(22538, {["timeline"]={ADDED_2_0_1,REMOVED_6_0_2}})),	-- Formula: Enchant Ring - Stats (RECIPE!)
+								i(29199, {	-- Glyph of Shadow Warding
+									["timeline"] = { REMOVED_5_0_4 },
+								}),
+								applyclassicphase(TBC_PHASE_TWO, i(35361)),	-- Kodohide Gloves
+								applyclassicphase(TBC_PHASE_TWO, i(35335)),	-- Mooncloth Mitts
+								applyclassicphase(TBC_PHASE_TWO, i(35370)),	-- Opportunist's Leather Tunic
+								i(30833),	-- Pattern: Cloak of Arcane Evasion (RECIPE!)
+								applyclassicphase(TBC_PHASE_TWO, i(35340)),	-- Satin Leggings
+								applyclassicphase(TBC_PHASE_TWO, i(35411)),	-- Savage Plate Shoulders
+								applyclassicphase(TBC_PHASE_TWO, i(35382)),	-- Seer's Linked Gauntlets
+								applyclassicphase(TBC_PHASE_TWO, i(35389)),	-- Seer's Mail Leggings
+								applyclassicphase(TBC_PHASE_TWO, i(35391)),	-- Seer's Ringmail Chestguard
+								applyclassicphase(TBC_PHASE_TWO, i(35378)),	-- Stalker's Chain Helm
+								applyclassicphase(TBC_PHASE_TWO, i(35373)),	-- Wyrmhide Legguards
+							}, {	-- Revered
+								i(30633, {	-- Auchenai Key
+									["timeline"] = { REMOVED_4_2_0 },
+									-- #if ANYCLASSIC
+									-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
+									["OnTooltip"] = [[function(t, tooltipInfo)
+										local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
+										if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
+											tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
+										else
+											tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
+										end
+										tooltip:Show();
+									end]],
+									["OnInit"] = [[function(t)
+										t.otherItemID = 185691;
+										t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
+										return t;
+									end]],
+									-- #endif
+								}),
+								i(33157),	-- Design: Falling Star (RECIPE!)
+								i(24179),	-- Design: Felsteel Boar (RECIPE!)
+								i(24175),	-- Design: Pendant of Thawing (RECIPE!)
+								i(30846, {	-- Glyph of the Outcast
+									["timeline"] = { REMOVED_5_0_4 },
+								}),
+								i(30836),	-- Leggings of the Skettis Exile
+								i(30841),	-- Lower City Prayerbook
+								applyclassicphase(TBC_PHASE_THREE, i(34200, {	-- Pattern: Quiver of a Thousand Feathers (RECIPE!)
+									["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },
+								})),
+								i(22910),	-- Recipe: Elixir of Major Shadow Power (RECIPE!)
+								i(30835),	-- Salvager's Hauberk
+							}, {	-- Exalted
+								i(33148, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Cloak - Dodge (RECIPE!)
+								i(30832),	-- Gavel of Unearthed Secrets
+								i(31778),	-- Lower City Tabard
+								i(31357, {	-- Recipe: Flask of Chromatic Resistance (RECIPE!)
+									["timeline"] = { REMOVED_5_0_4 },
+								}),
+								i(30834),	-- Shapeshifter's Signet
+								i(30830),	-- Trident of the Outcast Tribe
+							},
+						}),
 					}),
 					n(22208, {	-- Nasmara Moonsong <Mooncloth Tailoring Specialist>
 						["coord"] = { 66.4, 69.0, SHATTRATH_CITY },
@@ -2431,212 +2439,99 @@ root(ROOTS.Zones, {
 					-- #endif
 					applyclassicphase(TBC_PHASE_FIVE, n(27666, {	-- Ontuvo <Jewelcrafting Supplies>
 						["coord"] = { 48.8, 41.8, SHATTRATH_CITY },
-						["minReputation"] = { FACTION_SHATTERED_SUN_OFFENSIVE, NEUTRAL },	-- Shattered Sun Offensive, Neutral.
-						["groups"] = {
-							-- #if BEFORE CATA
-							i(35238),	-- Design: Balanced Shadowsong Amethyst [TBC] / Design: Shifting Shadowsong Amethyst [CATA+]
-							-- #endif
-							i(35244),	-- Design: Bold Crimson Spinel
-							-- #if BEFORE CATA
-							i(35245),	-- Design: Bright Crimson Spinel [TBC] / Design: Delicate Crimson Spinel [CATA+]
-							-- #endif
-							i(35255),	-- Design: Brilliant Lionseye [TBC] / Design: Brilliant Crimson Spinel [CATA+]
-							-- #if AFTER CATA
-							i(35248),	-- Design: Brilliant Crimson Spinel [CATA+] / Design: Runed Crimson Spinel [TBC]
-							i(35250),	-- Design: Brilliant Crimson Spinel [CATA+] / Design: Teardrop Crimson Spinel [TBC]
-							-- #endif
-							-- #if BEFORE CATA
-							i(35251),	-- Design: Dazzling Seaspray Emerald [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
-							-- #endif
-							-- #if AFTER CATA
-							i(35271),	-- Design: Deadly Pyrestone [CATA+] / Design: Wicked Pyrestone [TBC]
-							-- #endif
-							i(35246),	-- Design: Delicate Crimson Spinel
-							-- #if AFTER CATA
-							i(35245),	-- Design: Delicate Crimson Spinel [CATA+] / Design: Bright Crimson Spinel [TBC]
-							-- #endif
-							-- #if BEFORE CATA
-							i(35252),	-- Design: Enduring Seaspray Emerald [TBC] / Design: Regal Seaspray Emerald [CATA+]
-							-- #endif
-							i(35247),	-- Design: Flashing Crimson Spinel
-							i(35769),	-- Design: Forceful Seaspray Emerald
-							i(35325),	-- Design: Forceful Talasite
-							-- #if BEFORE CATA
-							i(35256),	-- Design: Gleaming Lionseye [TBC] / Design: Smooth Lionseye [CATA+]
-							i(35266),	-- Design: Glinting Pyrestone [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
-							-- #endif
-							-- #if AFTER CATA
-							i(35266),	-- Design: Glinting Shadowsong Amethyst [CATA+] / Design: Glinting Pyrestone [TBC]
-							i(35240),	-- Design: Glinting Shadowsong Amethyst [CATA+] / Design: Infused Shadowsong Amethyst [TBC]
-							-- #endif
-							-- #if BEFORE CATA
-							i(35239),	-- Design: Glowing Shadowsong Amethyst [TBC] / Design: Timeless Shadowsong Amethyst [CATA+]
-							i(35257),	-- Design: Great Lionseye [TBC] / Design: Rigid Empyrean Sapphire [CATA+]
-							i(35240),	-- Design: Infused Shadowsong Amethyst [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
-							-- #endif
-							i(35267),	-- Design: Inscribed Pyrestone
-							i(35253),	-- Design: Jagged Seaspray Emerald
-							-- #if BEFORE CATA
-							i(35268),	-- Design: Luminous Pyrestone [TBC] / Design: Reckless Pyrestone [CATA+]
-							i(35262),	-- Design: Lustrous Empyrean Sapphire [TBC] / Design: Sparkling Empyrean Sapphire [CATA+]
-							-- #endif
-							i(35258),	-- Design: Mystic Lionseye
-							i(35269),	-- Design: Potent Pyrestone
-							-- #if AFTER CATA
-							i(35251),	-- Design: Purified Shadowsong Amethyst [CATA+] / Design: Dazzling Seaspray Emerald [TBC]
-							i(35241),	-- Design: Purified Shadowsong Amethyst [CATA+] / Design: Royal Shadowsong Amethyst [TBC]
-							-- #endif
-							i(37504),	-- Design: Purified Shadowsong Amethyst
-							i(35322),	-- Design: Quick Dawnstone
-							i(35768),	-- Design: Quick Lionseye
-							i(35254),	-- Design: Radiant Seaspray Emerald
-							i(35323),	-- Design: Reckless Noble Topaz
-							i(35767),	-- Design: Reckless Pyrestone
-							-- #if AFTER CATA
-							i(35268),	-- Design: Reckless Pyrestone [CATA+] / Design: Luminous Pyrestone [TBC]
-							i(35252),	-- Design: Regal Seaspray Emerald [CATA+] / Design: Enduring Seaspray Emerald [TBC]
-							-- #endif
-							i(35259),	-- Design: Rigid Lionseye [TBC] / Design: Rigid Empyrean Sapphire [CATA+]
-							-- #if AFTER CATA
-							i(35257),	-- Design: Rigid Empyrean Sapphire [CATA+] / Design: Great Lionseye [TBC]
-							-- #endif
-							-- #if BEFORE CATA
-							i(35241),	-- Design: Royal Shadowsong Amethyst [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
-							i(35248),	-- Design: Runed Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+]
-							-- #endif
-							i(35242),	-- Design: Shifting Shadowsong Amethyst
-							-- #if AFTER CATA
-							i(35238),	-- Design: Shifting Shadowsong Amethyst [CATA+] / Design: Balanced Shadowsong Amethyst [TBC]
-							-- #endif
-							i(35260),	-- Design: Smooth Lionseye
-							-- #if AFTER CATA
-							i(35256),	-- Design: Smooth Lionseye [CATA+] / Design: Gleaming Lionseye [TBC]
-							-- #endif
-							i(35263),	-- Design: Solid Empyrean Sapphire
-							i(35243),	-- Design: Sovereign Shadowsong Amethyst
-							i(35264),	-- Design: Sparkling Empyrean Sapphire
-							-- #if AFTER CATA
-							i(35262),	-- Design: Sparkling Empyrean Sapphire [CATA+] / Design: Lustrous Empyrean Sapphire [TBC]
-							-- #endif
-							i(35766),	-- Design: Steady Seaspray Emerald
-							i(35265),	-- Design: Stormy Empyrean Sapphire
-							i(35249),	-- Design: Subtle Crimson Spinel [TBC] / Design: Subtle Lionseye [CATA+]
-							-- #if BEFORE CATA
-							i(35250),	-- Design: Teardrop Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+]
-							-- #endif
-							i(35261),	-- Design: Thick Lionseye [TBC] / Design: Subtle Lionseye [CATA+] (both)
-							-- #if AFTER CATA
-							i(35239),	-- Design: Timeless Shadowsong Amethyst [CATA+] / Design: Glowing Shadowsong Amethyst [TBC]
-							-- #endif
-							i(35270),	-- Design: Veiled Pyrestone [TBC] / Design: Veiled Shadowsong Amethyst [CATA+]
-							-- #if BEFORE CATA
-							i(35271),	-- Design: Wicked Pyrestone [TBC] / Design: Deadly Pyrestone [CATA+]
-							-- #endif
-
-							-- #if BEFORE 6.0.1
-							i(32227, {	-- Crimson Spinel
-								["cost"] = EPIC_GEM_COSTS,
-							}),
-							i(32228, {	-- Empyrean Sapphire
-								["cost"] = EPIC_GEM_COSTS,
-							}),
-							i(32229, {	-- Lionseye
-								["cost"] = EPIC_GEM_COSTS,
-							}),
-							i(32231, {	-- Pyrestone
-								["cost"] = EPIC_GEM_COSTS,
-							}),
-							i(32249, {	-- Seaspray Emerald
-								["cost"] = EPIC_GEM_COSTS,
-							}),
-							i(32230, {	-- Shadowsong Amethyst
-								["cost"] = EPIC_GEM_COSTS,
-							}),
-							-- #endif
-						},
+						["sym"] = {{"sub","common_vendor",25950}},	-- Shaani <Jewelcrafting Supplies>
 					})),
 					n(19321, {	-- Quartermaster Endarin <Aldor Quartermaster>
 						["coord"] = { 48.0, 26.6, SHATTRATH_CITY },
-						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
-						["groups"] = {
-							i(31779),	-- Aldor Tabard
-							i(29129),	-- Anchorite's Robes
-							i(29130),	-- Auchenai Staff
-							-- #if BEFORE CATA
-							i(23149),	-- Design: Gleaming Golden Draenite [TBC] / Design: Smooth Golden Draenite [CATA+]
-							-- #endif
-							i(24177),	-- Design: Pendant of Shadow's End
-							-- #if AFTER CATA
-							i(23145),	-- Design: Purified Shadow Draenite [CATA+] / Design: Royal Shadow Draenite [TBC]
-							-- #else
-							i(23145),	-- Design: Royal Shadow Draenite [TBC] / Design: Purified Shadow Draenite [CATA+]
-							-- #endif
-							-- #if AFTER CATA
-							i(23149),	-- Design: Smooth Golden Draenite [CATA+] / Design: Gleaming Golden Draenite [TBC]
-							-- #endif
-							i(29128),	-- Lightwarden's Band
-							i(29123),	-- Medallion of the Lightbearer
-							i(29704),	-- Pattern: Blastguard Belt (RECIPE!)
-							i(29703),	-- Pattern: Blastguard Boots (RECIPE!)
-							i(29702),	-- Pattern: Blastguard Pants (RECIPE!)
-							i(30842),	-- Pattern: Flameheart Bracers (RECIPE!)
-							i(30843),	-- Pattern: Flameheart Gloves (RECIPE!)
-							i(30844),	-- Pattern: Flameheart Vest (RECIPE!)
-							i(29693),	-- Pattern: Flamescale Belt (RECIPE!)
-							i(29691),	-- Pattern: Flamescale Boots (RECIPE!)
-							i(29689),	-- Pattern: Flamescale Leggings (RECIPE!)
-							i(24295),	-- Pattern: Golden Spellthread (RECIPE!)
-							i(24293),	-- Pattern: Silver Spellthread (RECIPE!)
-							i(25721),	-- Pattern: Vindicator's Armor Kit (RECIPE!)
-							i(23601),	-- Plans: Flamebane Bracers (RECIPE!)
-							i(23604),	-- Plans: Flamebane Breastplate (RECIPE!)
-							i(23603),	-- Plans: Flamebane Gloves (RECIPE!)
-							i(23602),	-- Plans: Flamebane Helm (RECIPE!)
-							i(29124),	-- Vindicator's Brand
-							i(29127),	-- Vindicator's Hauberk
-						},
+						["groups"] = bubbleDownClassicRep(FACTION_THE_ALDOR, {
+							{		-- Neutral
+							}, {	-- Friendly
+								-- #if BEFORE CATA
+								i(23149),	-- Design: Gleaming Golden Draenite [TBC] / Design: Smooth Golden Draenite [CATA+] (RECIPE!)
+								-- #else
+								i(23149),	-- Design: Smooth Golden Draenite [CATA+] / Design: Gleaming Golden Draenite [TBC] (RECIPE!)
+								-- #endif
+								i(30842),	-- Pattern: Flameheart Bracers (RECIPE!)
+								i(23601),	-- Plans: Flamebane Bracers (RECIPE!)
+							}, {	-- Honored
+								i(29129),	-- Anchorite's Robes
+								-- #if AFTER CATA
+								i(23145),	-- Design: Purified Shadow Draenite [CATA+] / Design: Royal Shadow Draenite [TBC] (RECIPE!)
+								-- #else
+								i(23145),	-- Design: Royal Shadow Draenite [TBC] / Design: Purified Shadow Draenite [CATA+] (RECIPE!)
+								-- #endif
+								i(29704),	-- Pattern: Blastguard Belt (RECIPE!)
+								i(30843),	-- Pattern: Flameheart Gloves (RECIPE!)
+								i(29693),	-- Pattern: Flamescale Belt (RECIPE!)
+								i(24293),	-- Pattern: Silver Spellthread (RECIPE!)
+								i(23603),	-- Plans: Flamebane Gloves (RECIPE!)
+							}, {	-- Revered
+								i(29130),	-- Auchenai Staff
+								i(24177),	-- Design: Pendant of Shadow's End (RECIPE!)
+								i(29128),	-- Lightwarden's Band
+								i(29703),	-- Pattern: Blastguard Boots (RECIPE!)
+								i(29691),	-- Pattern: Flamescale Boots (RECIPE!)
+								i(25721),	-- Pattern: Vindicator's Armor Kit (RECIPE!)
+								i(23604),	-- Plans: Flamebane Breastplate (RECIPE!)
+								i(29127),	-- Vindicator's Hauberk
+							}, {	-- Exalted
+								i(31779),	-- Aldor Tabard
+								i(29123),	-- Medallion of the Lightbearer
+								i(29702),	-- Pattern: Blastguard Pants (RECIPE!)
+								i(30844),	-- Pattern: Flameheart Vest (RECIPE!)
+								i(29689),	-- Pattern: Flamescale Leggings (RECIPE!)
+								i(24295),	-- Pattern: Golden Spellthread (RECIPE!)
+								i(23602),	-- Plans: Flamebane Helm (RECIPE!)
+								i(29124),	-- Vindicator's Brand
+							},
+						}),
 					}),
 					n(19331, {	-- Quartermaster Enuril <Scryer Quartermaster>
 						["coord"] = { 60.6, 64.2, SHATTRATH_CITY },
-						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
-						["groups"] = {
-							-- #if AFTER CATA
-							i(23133),	-- Design: Brilliant Blood Garnet [CATA+] / Design: Runed Blood Garnet [TBC]
-							-- #else
-							i(23143, {	-- Design: Dazzling Deep Peridot [TBC] / Design: Purified Shadow Draenite [CATA+]
-								["timeline"] = { REMOVED_4_0_1 },
-							}),
-							-- #endif
-							i(24176),	-- Design: Pendant of Withering
-							-- #if BEFORE CATA
-							i(23133),	-- Design: Runed Blood Garnet [TBC] / Design: Brilliant Blood Garnet [CATA+]
-							-- #else
-							i(23143, {	-- Design: Dazzling Deep Peridot [TBC] / Design: Purified Shadow Draenite [CATA+]
-								["timeline"] = { REMOVED_4_0_1 },
-							}),
-							-- #endif
-							i(29134),	-- Gauntlets of the Chosen
-							i(29701),	-- Pattern: Enchanted Clefthoof Boots (RECIPE!)
-							i(29700),	-- Pattern: Enchanted Clefthoof Gloves (RECIPE!)
-							i(29698),	-- Pattern: Enchanted Clefthoof Leggings (RECIPE!)
-							i(29684),	-- Pattern: Enchanted Felscale Boots (RECIPE!)
-							i(29682),	-- Pattern: Enchanted Felscale Gloves (RECIPE!)
-							i(29677),	-- Pattern: Enchanted Felscale Leggings (RECIPE!)
-							i(25722),	-- Pattern: Magister's Armor Kit (RECIPE!)
-							i(24292),	-- Pattern: Mystic Spellthread (RECIPE!)
-							i(24294),	-- Pattern: Runic Spellthread (RECIPE!)
-							i(23597),	-- Plans: Enchanted Adamantite Belt (RECIPE!)
-							i(23598),	-- Plans: Enchanted Adamantite Boots (RECIPE!)
-							i(23599),	-- Plans: Enchanted Adamantite Breastplate (RECIPE!)
-							i(23600),	-- Plans: Enchanted Adamantite Leggings (RECIPE!)
-							i(22908),	-- Recipe: Elixir of Major Firepower (RECIPE!)
-							i(29125),	-- Retainer's Blade
-							i(29131),	-- Retainer's Leggings
-							i(29132),	-- Scryer's Bloodgem
-							i(31780),	-- Scryers Tabard
-							i(29133),	-- Seer's Cane
-							i(29126),	-- Seer's Signet
-						},
+						["g"] = bubbleDownClassicRep(FACTION_THE_SCRYERS, {
+							{		-- Neutral
+							}, {	-- Friendly
+								-- #if BEFORE CATA
+								i(23133),	-- Design: Runed Blood Garnet [TBC] / Design: Brilliant Blood Garnet [CATA+] (RECIPE!)
+								-- #else
+								i(23133),	-- Design: Brilliant Blood Garnet [CATA+] / Design: Runed Blood Garnet [TBC] (RECIPE!)
+								-- #endif
+								i(23597),	-- Plans: Enchanted Adamantite Belt (RECIPE!)
+							}, {	-- Honored
+								-- #if BEFORE CATA
+								i(23143, {	-- Design: Dazzling Deep Peridot [TBC] / Design: Purified Shadow Draenite [CATA+] (RECIPE!)
+									["timeline"] = { REMOVED_4_0_1 },
+								}),
+								-- #else
+								i(23143, {	--Design: Purified Shadow Draenite [CATA+] / Design: Dazzling Deep Peridot [TBC] (RECIPE!)
+									["timeline"] = { REMOVED_4_0_1 },
+								}),
+								-- #endif
+								i(29701),	-- Pattern: Enchanted Clefthoof Boots (RECIPE!)
+								i(29682),	-- Pattern: Enchanted Felscale Gloves (RECIPE!)
+								i(24292),	-- Pattern: Mystic Spellthread (RECIPE!)
+								i(23598),	-- Plans: Enchanted Adamantite Boots (RECIPE!)
+							}, {	-- Revered
+								i(24176),	-- Design: Pendant of Withering
+								i(29134),	-- Gauntlets of the Chosen
+								i(29700),	-- Pattern: Enchanted Clefthoof Gloves (RECIPE!)
+								i(29684),	-- Pattern: Enchanted Felscale Boots (RECIPE!)
+								i(25722),	-- Pattern: Magister's Armor Kit (RECIPE!)
+								i(23599),	-- Plans: Enchanted Adamantite Breastplate (RECIPE!)
+								i(22908),	-- Recipe: Elixir of Major Firepower (RECIPE!)
+								i(29131),	-- Retainer's Leggings
+								i(29132),	-- Scryer's Bloodgem
+								i(29133),	-- Seer's Cane
+							}, {	-- Exalted
+								i(29698),	-- Pattern: Enchanted Clefthoof Leggings (RECIPE!)
+								i(29677),	-- Pattern: Enchanted Felscale Leggings (RECIPE!)
+								i(24294),	-- Pattern: Runic Spellthread (RECIPE!)
+								i(23600),	-- Plans: Enchanted Adamantite Leggings (RECIPE!)
+								i(29125),	-- Retainer's Blade
+								i(31780),	-- Scryers Tabard
+								i(29126),	-- Seer's Signet
+							},
+						}),
 					}),
 					n(19236, {	-- Quelama Lightblade
 						["coord"] = { 44.6, 76.0, SHATTRATH_CITY },
@@ -2653,63 +2548,73 @@ root(ROOTS.Zones, {
 					}),
 					n(20807, {	-- Scribe Saalyn <Aldor Inscriptions>
 						["coord"] = { 48.6, 26.6, SHATTRATH_CITY },
-						["minReputation"] = { FACTION_THE_ALDOR, NEUTRAL },	-- The Aldor, Neutral.
-						["groups"] = {
-							i(28886, {	-- Greater Inscription of Discipline
-								["cost"] = { { "i", 29735, 8 }, },	-- 8x Holy Dust
-							}),
-							i(28887, {	-- Greater Inscription of Faith
-								["cost"] = { { "i", 29735, 8 }, },	-- 8x Holy Dust
-							}),
-							i(28888, {	-- Greater Inscription of Vengeance
-								["cost"] = { { "i", 29735, 8 }, },	-- 8x Holy Dust
-							}),
-							i(28889, {	-- Greater Inscription of Warding
-								["cost"] = { { "i", 29735, 8 }, },	-- 8x Holy Dust
-							}),
-							i(28881, {	-- Inscription of Discipline
-								["cost"] = { { "i", 29735, 2 }, },	-- 2x Holy Dust
-							}),
-							i(28878, {	-- Inscription of Faith
-								["cost"] = { { "i", 29735, 2 }, },	-- 2x Holy Dust
-							}),
-							i(28885, {	-- Inscription of Vengeance
-								["cost"] = { { "i", 29735, 2 }, },	-- 2x Holy Dust
-							}),
-							i(28882, {	-- Inscription of Warding
-								["cost"] = { { "i", 29735, 2 }, },	-- 2x Holy Dust
-							}),
-						},
+						["groups"] = bubbleDownClassicRep(FACTION_THE_ALDOR, {
+							{		-- Neutral
+							}, {	-- Friendly
+							}, {	-- Honored
+								i(28881, {	-- Inscription of Discipline
+									["cost"] = { { "i", 29735, 2 }, },	-- 2x Holy Dust
+								}),
+								i(28878, {	-- Inscription of Faith
+									["cost"] = { { "i", 29735, 2 }, },	-- 2x Holy Dust
+								}),
+								i(28885, {	-- Inscription of Vengeance
+									["cost"] = { { "i", 29735, 2 }, },	-- 2x Holy Dust
+								}),
+								i(28882, {	-- Inscription of Warding
+									["cost"] = { { "i", 29735, 2 }, },	-- 2x Holy Dust
+								}),
+							}, {	-- Revered
+							}, {	-- Exalted
+								i(28886, {	-- Greater Inscription of Discipline
+									["cost"] = { { "i", 29735, 8 }, },	-- 8x Holy Dust
+								}),
+								i(28887, {	-- Greater Inscription of Faith
+									["cost"] = { { "i", 29735, 8 }, },	-- 8x Holy Dust
+								}),
+								i(28888, {	-- Greater Inscription of Vengeance
+									["cost"] = { { "i", 29735, 8 }, },	-- 8x Holy Dust
+								}),
+								i(28889, {	-- Greater Inscription of Warding
+									["cost"] = { { "i", 29735, 8 }, },	-- 8x Holy Dust
+								}),
+							},
+						}),
 					}),
 					n(20808, {	-- Scribe Veredis <Scryer Inscriptions>
 						["coord"] = { 60.0, 64.6, SHATTRATH_CITY },
-						["minReputation"] = { FACTION_THE_SCRYERS, NEUTRAL },	-- The Scryers, Neutral.
-						["groups"] = {
-							i(28910, {	-- Greater Inscription of the Blade
-								["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
-							}),
-							i(28911, {	-- Greater Inscription of the Knight
-								["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
-							}),
-							i(28912, {	-- Greater Inscription of the Oracle
-								["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
-							}),
-							i(28909, {	-- Greater Inscription of the Orb
-								["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
-							}),
-							i(28907, {	-- Inscription of the Blade
-								["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
-							}),
-							i(28908, {	-- Inscription of the Knight
-								["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
-							}),
-							i(28904, {	-- Inscription of the Oracle
-								["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
-							}),
-							i(28903, {	-- Inscription of the Orb
-								["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
-							}),
-						},
+						["groups"] = bubbleDownClassicRep(FACTION_THE_SCRYERS, {
+							{		-- Neutral
+							}, {	-- Friendly
+							}, {	-- Honored
+								i(28907, {	-- Inscription of the Blade
+									["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
+								}),
+								i(28908, {	-- Inscription of the Knight
+									["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
+								}),
+								i(28904, {	-- Inscription of the Oracle
+									["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
+								}),
+								i(28903, {	-- Inscription of the Orb
+									["cost"] = { { "i", 29736, 2 }, },	-- 2x Arcane Rune
+								}),
+							}, {	-- Revered
+							}, {	-- Exalted
+								i(28910, {	-- Greater Inscription of the Blade
+									["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
+								}),
+								i(28911, {	-- Greater Inscription of the Knight
+									["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
+								}),
+								i(28912, {	-- Greater Inscription of the Oracle
+									["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
+								}),
+								i(28909, {	-- Greater Inscription of the Orb
+									["cost"] = { { "i", 29736, 8 }, },	-- 8x Arcane Rune
+								}),
+							},
+						}),
 					}),
 					n(19240, {	-- Selanam the Blade
 						["coord"] = { 42.0, 75.2, SHATTRATH_CITY },

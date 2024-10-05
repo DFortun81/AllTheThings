@@ -1578,21 +1578,29 @@ root(ROOTS.Zones, {
 					}),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, n(23367, {	-- Grella <Skyguard Quartermaster>
 						["coord"] = { 64.3, 66.2, TEROKKAR_FOREST },
-						["groups"] = {
-							i(32771),	-- Airman's Ribbon Gallantry
-							i(32319),	-- Blue Riding Nether Ray (MOUNT!)
-							i(32314),	-- Green Riding Nether Ray (MOUNT!)
-							i(38628, {	-- Nether Ray Fry (PET!)
-								["timeline"] = { ADDED_2_4_2 },
-							}),
-							i(32316),	-- Purple Riding Nether Ray (MOUNT!)
-							i(32317),	-- Red Riding Nether Ray (MOUNT!)
-							i(32318),	-- Silver Riding Nether Ray (MOUNT!)
-							i(32770),	-- Skyguard Silver Cross
-							i(32445),	-- Skyguard Tabard
-							i(32539),	-- Skyguard's Drape
-							i(32538),	-- Skywitch's Drape
-						},
+						["groups"] = bubbleDownClassicRep(FACTION_SHATARI_SKYGUARD, {
+							{		-- Neutral
+							}, {	-- Friendly
+								i(32722),	-- Enriched Terocone Juice
+							}, {	-- Honored
+								i(32721),	-- Skyguard Rations
+							}, {	-- Revered
+								i(32539),	-- Skyguard's Drape
+								i(32538),	-- Skywitch's Drape
+							}, {	-- Exalted
+								i(32771),	-- Airman's Ribbon Gallantry
+								i(32319),	-- Blue Riding Nether Ray (MOUNT!)
+								i(32314),	-- Green Riding Nether Ray (MOUNT!)
+								i(38628, {	-- Nether Ray Fry (PET!)
+									["timeline"] = { ADDED_2_4_2 },
+								}),
+								i(32316),	-- Purple Riding Nether Ray (MOUNT!)
+								i(32317),	-- Red Riding Nether Ray (MOUNT!)
+								i(32318),	-- Silver Riding Nether Ray (MOUNT!)
+								i(32770),	-- Skyguard Silver Cross
+								i(32445),	-- Skyguard Tabard
+							},
+						}),
 					})),
 					n(19296, {	-- Innkeeper Biribi <Innkeeper>
 						["coord"] = { 56.6, 53.2, TEROKKAR_FOREST },

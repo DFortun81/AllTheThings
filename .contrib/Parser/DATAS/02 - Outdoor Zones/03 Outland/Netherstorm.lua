@@ -2302,51 +2302,53 @@ root(ROOTS.Zones, {
 					}),
 					n(20242, {	-- Karaaz <Consortium Quartermaster>
 						["coord"] = { 43.6, 34.4, NETHERSTORM },
-						["groups"] = {
-							i(29115),	-- Consortium Blaster
-							i(31776),	-- Consortium Tabard
-							i(33156),	-- Design: Crimson Sun
-							i(23134),	-- Design: Delicate Blood Garnet
-							i(33305),	-- Design: Don Julio's Heart
-							-- #if BEFORE CATA
-							i(23136),	-- Design: Luminous Flame Spessarite [TBC] / Design: Reckless Flame Spessarite [Cata+]
-							i(23155),	-- Design: Lustrous Azure Moonstone [TBC] / Design: Sparkling Azure Moonstone [Cata+]
-							-- #endif
-							i(24178),	-- Design: Pendant of the Null Rune
-							-- #if AFTER CATA
-							i(23136),	-- Design: Reckless Flame Spessarite [Cata+] / Design: Luminous Flame Spessarite [TBC]
-							-- #endif
-							i(33622),	-- Design: Relentless Earthstorm Diamond
-							i(23146),	-- Design: Shifting Shadow Draenite
-							-- #if AFTER CATA
-							i(23155),	-- Design: Sparkling Azure Moonstone [Cata+] / Design: Lustrous Azure Moonstone [TBC]
-							i(23150),	-- Design: Subtle Golden Draenite [Cata+] / Design: Thick Golden Draenite [TBC]
-							-- #endif
-							i(25908),	-- Design: Swift Skyfire Diamond
-							-- #if BEFORE CATA
-							i(23150),	-- Design: Thick Golden Draenite [TBC] / Design: Subtle Golden Draenite [Cata+]
-							-- #endif
-							i(28274),	-- Formula: Enchant Cloak - Spell Penetration [TBC] / Formula: Enchant Cloak - PvP Power [Cata+]
-							applyclassicphase(TBC_PHASE_THREE, i(22552, {["timeline"]={ADDED_2_1_0}})),	-- Formula: Enchant Weapon - Major Striking (RECIPE!)
-							i(29456),	-- Gift of the Ethereal
-							i(29121),	-- Guile of Khoraazi
-							i(29119),	-- Haramad's Bargain
-							i(138796, {	-- Illusion: Executioner (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
-							}),
-							i(29122),	-- Nether Runner's Cowl
-							i(29457),	-- Nethershard
-							i(29116),	-- Nomad's Leggings
-							i(24314),	-- Pattern: Bag of Jewels (RECIPE!)
-							i(25733),	-- Pattern: Fel Leather Boots (RECIPE!)
-							i(25732),	-- Pattern: Fel Leather Gloves (RECIPE!)
-							i(25734),	-- Pattern: Fel Leather Leggings (RECIPE!)
-							i(23874),	-- Schematic: Elemental Seaforium Charge (RECIPE!)
-							i(29118, {	-- Smuggler's Ammo Pouch
-								["timeline"] = { REMOVED_4_0_1 },
-							}),
-							i(29117),	-- Stormspire Vest
-						},
+						["groups"] = bubbleDownClassicRep(FACTION_THE_CONSORTIUM, {
+							{		-- Neutral
+							}, {	-- Friendly
+								i(23136),	-- Design: Luminous Flame Spessarite [TBC] / Design: Reckless Flame Spessarite [Cata+] (RECIPE!)
+								i(23146),	-- Design: Shifting Shadow Draenite (RECIPE!)
+								i(25732),	-- Pattern: Fel Leather Gloves (RECIPE!)
+							}, {	-- Honored
+								i(23134),	-- Design: Delicate Blood Garnet (RECIPE!)
+								-- #if BEFORE CATA
+								i(23155),	-- Design: Lustrous Azure Moonstone [TBC] / Design: Sparkling Azure Moonstone [Cata+] (RECIPE!)
+								-- #else
+								i(23155),	-- Design: Sparkling Azure Moonstone [Cata+] / Design: Lustrous Azure Moonstone [TBC] (RECIPE!)
+								i(23150),	-- Design: Subtle Golden Draenite [Cata+] / Design: Thick Golden Draenite [TBC] (RECIPE!)
+								-- #endif
+								i(25908),	-- Design: Swift Skyfire Diamond (RECIPE!)
+								-- #if BEFORE CATA
+								i(23150),	-- Design: Thick Golden Draenite [TBC] / Design: Subtle Golden Draenite [Cata+] (RECIPE!)
+								-- #endif
+								i(28274),	-- Formula: Enchant Cloak - Spell Penetration [TBC] / Formula: Enchant Cloak - PvP Power [Cata+] (RECIPE!)
+								applyclassicphase(TBC_PHASE_THREE, i(22552, {["timeline"]={ADDED_2_1_0}})),	-- Formula: Enchant Weapon - Major Striking (RECIPE!)
+								i(29456),	-- Gift of the Ethereal
+								i(24314),	-- Pattern: Bag of Jewels (RECIPE!)
+								i(25733),	-- Pattern: Fel Leather Boots (RECIPE!)
+								i(29118, {	-- Smuggler's Ammo Pouch
+									["timeline"] = { REMOVED_4_0_1 },
+								}),
+							}, {	-- Revered
+								i(29115),	-- Consortium Blaster
+								i(33156),	-- Design: Crimson Sun (RECIPE!)
+								i(33305),	-- Design: Don Julio's Heart (RECIPE!)
+								i(24178),	-- Design: Pendant of the Null Rune (RECIPE!)
+								i(138796, {	-- Illusion: Executioner (ILLUSION!)
+									["timeline"] = { ADDED_7_0_3 },
+								}),
+								i(29116),	-- Nomad's Leggings
+								i(25734),	-- Pattern: Fel Leather Leggings (RECIPE!)
+								i(23874),	-- Schematic: Elemental Seaforium Charge (RECIPE!)
+								i(29117),	-- Stormspire Vest
+							}, {	-- Exalted
+								i(31776),	-- Consortium Tabard
+								i(33622),	-- Design: Relentless Earthstorm Diamond (RECIPE!)
+								i(29121),	-- Guile of Khoraazi
+								i(29119),	-- Haramad's Bargain
+								i(29122),	-- Nether Runner's Cowl
+								i(29457),	-- Nethershard
+							},
+						}),
 					}),
 					n(54650, {	-- Kezzik the Striker <Gladiator and General's Gladiator> [Legion+] / Kezzik the Striker <Gladiator, Merciless, & Vengeful Gear>
 						["coord"] = { 33.0, 64.2, NETHERSTORM },

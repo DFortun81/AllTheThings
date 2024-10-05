@@ -1885,50 +1885,57 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 			n(VENDORS, {
 				n(25032, {	-- Eldara Dawnrunner <Shattered Sun Quartermaster>
 					["coord"] = { 47.2, 30.7, ISLE_OF_QUELDANAS },
-					["groups"] = {
-						i(34667),	-- Archmage's Guile
-						i(34665),	-- Bombardier's Blade
-						i(34676),	-- Dawnforged Defender
-						i(35505),	-- Design: Ember Skyfire Diamond
-						i(35502),	-- Design: Eternal Earthstorm Diamond
-						i(35697),	-- Design: Figurine - Crimson Serpent
-						i(35695),	-- Design: Figurine - Empyrean Tortoise
-						i(35696),	-- Design: Figurine - Khorium Boar
-						i(35699),	-- Design: Figurine - Seaspray Albatross
-						i(35698),	-- Design: Figurine - Shadowsong Panther
-						i(35769),	-- Design: Forceful Seaspray Emerald
-						-- #if BEFORE CATA
-						i(35268),	-- Design: Luminous Pyrestone [TBC] / Design: Reckless Pyrestone [CATA+]
-						-- #endif
-						i(35768),	-- Design: Quick Lionseye
-						i(35767),	-- Design: Reckless Pyrestone
-						-- #if AFTER CATA
-						i(35268),	-- Design: Reckless Pyrestone [CATA+] / Design: Luminous Pyrestone [TBC]
-						-- #endif
-						i(35708),	-- Design: Regal Talasite
-						i(35766),	-- Design: Steady Seaspray Emerald
-						i(35500),	-- Formula: Enchant Chest - Dodge / TBC: Formula: Enchant Chest - Defense (RECIPE!)
-						i(34872),	-- Formula: Void Shatter (RECIPE!)
-						i(29193, {	-- Glyph of the Gladiator
-							["timeline"] = { REMOVED_5_0_4 },
-						}),
-						i(34672),	-- Inuuro's Blade
-						i(34671),	-- K'iru's Presage
-						i(34673),	-- Legionfoe
-						i(35755),	-- Recipe: Assassin's Alchemist Stone (RECIPE!)
-						i(35752),	-- Recipe: Guardian's Alchemist Stone (RECIPE!)
-						i(35754),	-- Recipe: Redeemer's Alchemist Stone (RECIPE!)
-						i(35753),	-- Recipe: Sorcerer's Alchemist Stone (RECIPE!)
-						i(34670),	-- Seeker's Gavel
-						i(34678),	-- Shattered Sun Pendant of Acumen
-						i(34679),	-- Shattered Sun Pendant of Might
-						i(34680),	-- Shattered Sun Pendant of Resolve
-						i(34677),	-- Shattered Sun Pendant of Restoration
-						i(34675),	-- Sunward Crest
-						i(35221),	-- Tabard of the Shattered Sun
-						i(34666),	-- The Sunbreaker
-						i(34674),	-- Truestrike Crossbow
-					},
+					["groups"] = bubbleDownClassicRep(FACTION_SHATTERED_SUN_OFFENSIVE, {
+						{		-- Neutral
+						}, {	-- Friendly
+							i(35780),	-- Naaru Ration
+						}, {	-- Honored
+							i(35500),	-- Formula: Enchant Chest - Dodge / TBC: Formula: Enchant Chest - Defense (RECIPE!)
+							i(34872),	-- Formula: Void Shatter (RECIPE!)
+						}, {	-- Revered
+							i(34667),	-- Archmage's Guile
+							i(34665),	-- Bombardier's Blade
+							i(35505),	-- Design: Ember Skyfire Diamond (RECIPE!)
+							i(35502),	-- Design: Eternal Earthstorm Diamond (RECIPE!)
+							i(35697),	-- Design: Figurine - Crimson Serpent (RECIPE!)
+							i(35695),	-- Design: Figurine - Empyrean Tortoise (RECIPE!)
+							i(35696),	-- Design: Figurine - Khorium Boar (RECIPE!)
+							i(35699),	-- Design: Figurine - Seaspray Albatross (RECIPE!)
+							i(35698),	-- Design: Figurine - Shadowsong Panther (RECIPE!)
+							i(35769),	-- Design: Forceful Seaspray Emerald (RECIPE!)
+							-- #if BEFORE CATA
+							i(35268),	-- Design: Luminous Pyrestone [TBC] / Design: Reckless Pyrestone [CATA+]
+							-- #endif
+							i(35768),	-- Design: Quick Lionseye (RECIPE!)
+							i(35767),	-- Design: Reckless Pyrestone (RECIPE!)
+							-- #if AFTER CATA
+							i(35268),	-- Design: Reckless Pyrestone [CATA+] / Design: Luminous Pyrestone [TBC]
+							-- #endif
+							i(35708),	-- Design: Regal Talasite (RECIPE!)
+							i(35766),	-- Design: Steady Seaspray Emerald (RECIPE!)
+							i(29193, {	-- Glyph of the Gladiator
+								["timeline"] = { REMOVED_5_0_4 },
+							}),
+							i(34672),	-- Inuuro's Blade
+							i(34671),	-- K'iru's Presage
+							i(34673),	-- Legionfoe
+							i(34670),	-- Seeker's Gavel
+							i(34666),	-- The Sunbreaker
+							i(34674),	-- Truestrike Crossbow
+						}, {	-- Exalted
+							i(34676),	-- Dawnforged Defender
+							i(35755),	-- Recipe: Assassin's Alchemist Stone (RECIPE!)
+							i(35752),	-- Recipe: Guardian's Alchemist Stone (RECIPE!)
+							i(35754),	-- Recipe: Redeemer's Alchemist Stone (RECIPE!)
+							i(35753),	-- Recipe: Sorcerer's Alchemist Stone (RECIPE!)
+							i(34678),	-- Shattered Sun Pendant of Acumen
+							i(34679),	-- Shattered Sun Pendant of Might
+							i(34680),	-- Shattered Sun Pendant of Resolve
+							i(34677),	-- Shattered Sun Pendant of Restoration
+							i(34675),	-- Sunward Crest
+							i(35221),	-- Tabard of the Shattered Sun
+						},
+					}),
 				}),
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE, n(26090, {	-- Karynna <Exotic Gear Purveyor>
 					["coord"] = { 49.6, 40.5, ISLE_OF_QUELDANAS },
@@ -1942,130 +1949,127 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 					["coord"] = { 50.2, 40.1, ISLE_OF_QUELDANAS },
 					["groups"] = OLUS_GROUPS,
 				})),
-				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR, n(25950, {	-- Shaani
+				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR, n(25950, {	-- Shaani <Jewelcrafting Supplies>
 					["coord"] = { 51.5, 32.5, ISLE_OF_QUELDANAS },
-					["groups"] = {
-						-- #if BEFORE CATA
-						i(35238),	-- Design: Balanced Shadowsong Amethyst [TBC] / Design: Shifting Shadowsong Amethyst [CATA+]
-						-- #endif
-						i(35244),	-- Design: Bold Crimson Spinel
-						-- #if BEFORE CATA
-						i(35245),	-- Design: Bright Crimson Spinel [TBC] / Design: Delicate Crimson Spinel [CATA+]
-						-- #endif
-						i(35255),	-- Design: Brilliant Lionseye [TBC] / Design: Brilliant Crimson Spinel [CATA+]
-						-- #if AFTER CATA
-						i(35248),	-- Design: Brilliant Crimson Spinel [CATA+] / Design: Runed Crimson Spinel [TBC]
-						i(35250),	-- Design: Brilliant Crimson Spinel [CATA+] / Design: Teardrop Crimson Spinel [TBC]
-						-- #endif
-						-- #if BEFORE CATA
-						i(35251),	-- Design: Dazzling Seaspray Emerald [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
-						-- #endif
-						-- #if AFTER CATA
-						i(35271),	-- Design: Deadly Pyrestone [CATA+] / Design: Wicked Pyrestone [TBC]
-						-- #endif
-						i(35246),	-- Design: Delicate Crimson Spinel
-						-- #if AFTER CATA
-						i(35245),	-- Design: Delicate Crimson Spinel [CATA+] / Design: Bright Crimson Spinel [TBC]
-						-- #endif
-						-- #if BEFORE CATA
-						i(35252),	-- Design: Enduring Seaspray Emerald [TBC] / Design: Regal Seaspray Emerald [CATA+]
-						-- #endif
-						i(35247),	-- Design: Flashing Crimson Spinel
-						i(35769),	-- Design: Forceful Seaspray Emerald
-						i(35325),	-- Design: Forceful Talasite
-						-- #if BEFORE CATA
-						i(35256),	-- Design: Gleaming Lionseye [TBC] / Design: Smooth Lionseye [CATA+]
-						i(35266),	-- Design: Glinting Pyrestone [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
-						-- #endif
-						-- #if AFTER CATA
-						i(35266),	-- Design: Glinting Shadowsong Amethyst [CATA+] / Design: Glinting Pyrestone [TBC]
-						i(35240),	-- Design: Glinting Shadowsong Amethyst [CATA+] / Design: Infused Shadowsong Amethyst [TBC]
-						-- #endif
-						-- #if BEFORE CATA
-						i(35239),	-- Design: Glowing Shadowsong Amethyst [TBC] / Design: Timeless Shadowsong Amethyst [CATA+]
-						i(35257),	-- Design: Great Lionseye [TBC] / Design: Rigid Empyrean Sapphire [CATA+]
-						i(35240),	-- Design: Infused Shadowsong Amethyst [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
-						-- #endif
-						i(35267),	-- Design: Inscribed Pyrestone
-						i(35253),	-- Design: Jagged Seaspray Emerald
-						-- #if BEFORE CATA
-						i(35268),	-- Design: Luminous Pyrestone [TBC] / Design: Reckless Pyrestone [CATA+]
-						i(35262),	-- Design: Lustrous Empyrean Sapphire [TBC] / Design: Sparkling Empyrean Sapphire [CATA+]
-						-- #endif
-						i(35258),	-- Design: Mystic Lionseye
-						i(35269),	-- Design: Potent Pyrestone
-						-- #if AFTER CATA
-						i(35251),	-- Design: Purified Shadowsong Amethyst [CATA+] / Design: Dazzling Seaspray Emerald [TBC]
-						i(35241),	-- Design: Purified Shadowsong Amethyst [CATA+] / Design: Royal Shadowsong Amethyst [TBC]
-						-- #endif
-						i(37504),	-- Design: Purified Shadowsong Amethyst
-						i(35322),	-- Design: Quick Dawnstone
-						i(35768),	-- Design: Quick Lionseye
-						i(35254),	-- Design: Radiant Seaspray Emerald
-						i(35323),	-- Design: Reckless Noble Topaz
-						i(35767),	-- Design: Reckless Pyrestone
-						-- #if AFTER CATA
-						i(35268),	-- Design: Reckless Pyrestone [CATA+] / Design: Luminous Pyrestone [TBC]
-						i(35252),	-- Design: Regal Seaspray Emerald [CATA+] / Design: Enduring Seaspray Emerald [TBC]
-						-- #endif
-						i(35259),	-- Design: Rigid Lionseye [TBC] / Design: Rigid Empyrean Sapphire [CATA+]
-						-- #if AFTER CATA
-						i(35257),	-- Design: Rigid Empyrean Sapphire [CATA+] / Design: Great Lionseye [TBC]
-						-- #endif
-						-- #if BEFORE CATA
-						i(35241),	-- Design: Royal Shadowsong Amethyst [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
-						i(35248),	-- Design: Runed Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+]
-						-- #endif
-						i(35242),	-- Design: Shifting Shadowsong Amethyst
-						-- #if AFTER CATA
-						i(35238),	-- Design: Shifting Shadowsong Amethyst [CATA+] / Design: Balanced Shadowsong Amethyst [TBC]
-						-- #endif
-						i(35260),	-- Design: Smooth Lionseye
-						-- #if AFTER CATA
-						i(35256),	-- Design: Smooth Lionseye [CATA+] / Design: Gleaming Lionseye [TBC]
-						-- #endif
-						i(35263),	-- Design: Solid Empyrean Sapphire
-						i(35243),	-- Design: Sovereign Shadowsong Amethyst
-						i(35264),	-- Design: Sparkling Empyrean Sapphire
-						-- #if AFTER CATA
-						i(35262),	-- Design: Sparkling Empyrean Sapphire [CATA+] / Design: Lustrous Empyrean Sapphire [TBC]
-						-- #endif
-						i(35766),	-- Design: Steady Seaspray Emerald
-						i(35265),	-- Design: Stormy Empyrean Sapphire
-						i(35249),	-- Design: Subtle Crimson Spinel [TBC] / Design: Subtle Lionseye [CATA+]
-						-- #if BEFORE CATA
-						i(35250),	-- Design: Teardrop Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+]
-						-- #endif
-						i(35261),	-- Design: Thick Lionseye [TBC] / Design: Subtle Lionseye [CATA+] (both)
-						-- #if AFTER CATA
-						i(35239),	-- Design: Timeless Shadowsong Amethyst [CATA+] / Design: Glowing Shadowsong Amethyst [TBC]
-						-- #endif
-						i(35270),	-- Design: Veiled Pyrestone [TBC] / Design: Veiled Shadowsong Amethyst [CATA+]
-						-- #if BEFORE CATA
-						i(35271),	-- Design: Wicked Pyrestone [TBC] / Design: Deadly Pyrestone [CATA+]
-						-- #endif
-
-						-- #if BEFORE 6.0.1
-						i(32227, {	-- Crimson Spinel
-							["cost"] = EPIC_GEM_COSTS,
-						}),
-						i(32228, {	-- Empyrean Sapphire
-							["cost"] = EPIC_GEM_COSTS,
-						}),
-						i(32229, {	-- Lionseye
-							["cost"] = EPIC_GEM_COSTS,
-						}),
-						i(32231, {	-- Pyrestone
-							["cost"] = EPIC_GEM_COSTS,
-						}),
-						i(32249, {	-- Seaspray Emerald
-							["cost"] = EPIC_GEM_COSTS,
-						}),
-						i(32230, {	-- Shadowsong Amethyst
-							["cost"] = EPIC_GEM_COSTS,
-						}),
-						-- #endif
-					},
+					["groups"] = bubbleDownClassicRep(FACTION_SHATTERED_SUN_OFFENSIVE, {
+						{		-- Neutral
+							-- #if BEFORE 6.0.1
+							i(32227, {	-- Crimson Spinel
+								["cost"] = EPIC_GEM_COSTS,
+							}),
+							i(32228, {	-- Empyrean Sapphire
+								["cost"] = EPIC_GEM_COSTS,
+							}),
+							i(32229, {	-- Lionseye
+								["cost"] = EPIC_GEM_COSTS,
+							}),
+							i(32231, {	-- Pyrestone
+								["cost"] = EPIC_GEM_COSTS,
+							}),
+							i(32249, {	-- Seaspray Emerald
+								["cost"] = EPIC_GEM_COSTS,
+							}),
+							i(32230, {	-- Shadowsong Amethyst
+								["cost"] = EPIC_GEM_COSTS,
+							}),
+							-- #endif
+						}, {	-- Friendly
+							i(35244),	-- Design: Bold Crimson Spinel (RECIPE!)
+							-- #if BEFORE CATA
+							i(35245),	-- Design: Bright Crimson Spinel [TBC] / Design: Delicate Crimson Spinel [CATA+] (RECIPE!)
+							i(35255),	-- Design: Brilliant Lionseye [TBC] / Design: Brilliant Crimson Spinel [CATA+] (RECIPE!)
+							-- #else
+							i(35248),	-- Design: Brilliant Crimson Spinel [CATA+] / Design: Runed Crimson Spinel [TBC] (RECIPE!)
+							i(35250),	-- Design: Brilliant Crimson Spinel [CATA+] / Design: Teardrop Crimson Spinel [TBC] (RECIPE!)
+							i(35245),	-- Design: Delicate Crimson Spinel [CATA+] / Design: Bright Crimson Spinel [TBC] (RECIPE!)
+							-- #endif
+							i(35246),	-- Design: Delicate Crimson Spinel (RECIPE!)
+							-- #if BEFORE CATA
+							i(35256),	-- Design: Gleaming Lionseye [TBC] / Design: Smooth Lionseye [CATA+] (RECIPE!)
+							i(35262),	-- Design: Lustrous Empyrean Sapphire [TBC] / Design: Sparkling Empyrean Sapphire [CATA+] (RECIPE!)
+							-- #else
+							i(35256),	-- Design: Smooth Lionseye [CATA+] / Design: Gleaming Lionseye [TBC] (RECIPE!)
+							-- #endif
+							i(35260),	-- Design: Smooth Lionseye (RECIPE!)
+							i(35263),	-- Design: Solid Empyrean Sapphire (RECIPE!)
+							i(35264),	-- Design: Sparkling Empyrean Sapphire (RECIPE!)
+							-- #if BEFORE CATA
+							i(35249),	-- Design: Subtle Crimson Spinel [TBC] / Design: Subtle Lionseye [CATA+] (RECIPE!)
+							i(35250),	-- Design: Teardrop Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+] (RECIPE!)
+							i(35261),	-- Design: Thick Lionseye [TBC] / Design: Subtle Lionseye [CATA+] (both) (RECIPE!)
+							-- #endif
+						}, {	-- Honored
+							-- #if BEFORE CATA
+							i(35238),	-- Design: Balanced Shadowsong Amethyst [TBC] / Design: Shifting Shadowsong Amethyst [CATA+] (RECIPE!)
+							i(35251),	-- Design: Dazzling Seaspray Emerald [TBC] / Design: Purified Shadowsong Amethyst [CATA+] (RECIPE!)
+							i(35266),	-- Design: Glinting Pyrestone [TBC] / Design: Glinting Shadowsong Amethyst [CATA+] (RECIPE!)
+							i(35239),	-- Design: Glowing Shadowsong Amethyst [TBC] / Design: Timeless Shadowsong Amethyst [CATA+] (RECIPE!)
+							i(35240),	-- Design: Infused Shadowsong Amethyst [TBC] / Design: Glinting Shadowsong Amethyst [CATA+] (RECIPE!)
+							-- #else
+							i(35266),	-- Design: Glinting Shadowsong Amethyst [CATA+] / Design: Glinting Pyrestone [TBC] (RECIPE!)
+							i(35240),	-- Design: Glinting Shadowsong Amethyst [CATA+] / Design: Infused Shadowsong Amethyst [TBC] (RECIPE!)
+							-- #endif
+							i(35253),	-- Design: Jagged Seaspray Emerald (RECIPE!)
+							-- #if BEFORE CATA
+							i(35268),	-- Design: Luminous Pyrestone [TBC] / Design: Reckless Pyrestone [CATA+] (RECIPE!)
+							-- #endif
+							i(35269),	-- Design: Potent Pyrestone (RECIPE!)
+							-- #if AFTER CATA
+							i(35251),	-- Design: Purified Shadowsong Amethyst [CATA+] / Design: Dazzling Seaspray Emerald [TBC] (RECIPE!)
+							-- #endif
+							i(35254),	-- Design: Radiant Seaspray Emerald (RECIPE!)
+							-- #if BEFORE CATA
+							i(35248),	-- Design: Runed Crimson Spinel [TBC] / Design: Brilliant Crimson Spinel [CATA+] (RECIPE!)
+							-- #else
+							i(35268),	-- Design: Reckless Pyrestone [CATA+] / Design: Luminous Pyrestone [TBC] (RECIPE!)
+							i(35238),	-- Design: Shifting Shadowsong Amethyst [CATA+] / Design: Balanced Shadowsong Amethyst [TBC] (RECIPE!)
+							i(35262),	-- Design: Sparkling Empyrean Sapphire [CATA+] / Design: Lustrous Empyrean Sapphire [TBC] (RECIPE!)
+							i(35239),	-- Design: Timeless Shadowsong Amethyst [CATA+] / Design: Glowing Shadowsong Amethyst [TBC] (RECIPE!)
+							-- #endif
+						}, {	-- Revered
+							-- #if BEFORE CATA
+							i(35252),	-- Design: Enduring Seaspray Emerald [TBC] / Design: Regal Seaspray Emerald [CATA+] (RECIPE!)
+							-- #else
+							i(35271),	-- Design: Deadly Pyrestone [CATA+] / Design: Wicked Pyrestone [TBC] (RECIPE!)
+							-- #endif
+							i(35769),	-- Design: Forceful Seaspray Emerald (RECIPE!)
+							-- #if AFTER CATA
+							i(35241),	-- Design: Purified Shadowsong Amethyst [CATA+] / Design: Royal Shadowsong Amethyst [TBC] (RECIPE!)
+							-- #endif
+							i(35768),	-- Design: Quick Lionseye (RECIPE!)
+							i(35767),	-- Design: Reckless Pyrestone (RECIPE!)
+							-- #if BEFORE CATA
+							i(35259),	-- Design: Rigid Lionseye [TBC] / Design: Rigid Empyrean Sapphire [CATA+] (RECIPE!)
+							i(35241),	-- Design: Royal Shadowsong Amethyst [TBC] / Design: Purified Shadowsong Amethyst [CATA+] (RECIPE!)
+							-- #else
+							i(35252),	-- Design: Regal Seaspray Emerald [CATA+] / Design: Enduring Seaspray Emerald [TBC] (RECIPE!)
+							-- #endif
+							i(35766),	-- Design: Steady Seaspray Emerald (RECIPE!)
+							-- #if BEFORE CATA
+							i(35271),	-- Design: Wicked Pyrestone [TBC] / Design: Deadly Pyrestone [CATA+] (RECIPE!)
+							-- #endif
+						}, {	-- Exalted
+							i(35247),	-- Design: Flashing Crimson Spinel (RECIPE!)
+							i(35325),	-- Design: Forceful Talasite (RECIPE!)
+							-- #if BEFORE CATA
+							i(35257),	-- Design: Great Lionseye [TBC] / Design: Rigid Empyrean Sapphire [CATA+] (RECIPE!)
+							-- #endif
+							i(35267),	-- Design: Inscribed Pyrestone (RECIPE!)
+							i(35258),	-- Design: Mystic Lionseye (RECIPE!)
+							i(37504),	-- Design: Purified Shadowsong Amethyst (RECIPE!)
+							i(35322),	-- Design: Quick Dawnstone (RECIPE!)
+							i(35323),	-- Design: Reckless Noble Topaz (RECIPE!)
+							-- #if AFTER CATA
+							i(35257),	-- Design: Rigid Empyrean Sapphire [CATA+] / Design: Great Lionseye [TBC] (RECIPE!)
+							-- #endif
+							i(35242),	-- Design: Shifting Shadowsong Amethyst (RECIPE!)
+							i(35243),	-- Design: Sovereign Shadowsong Amethyst (RECIPE!)
+							i(35265),	-- Design: Stormy Empyrean Sapphire (RECIPE!)
+							-- #if BEFORE CATA
+							i(35270),	-- Design: Veiled Pyrestone [TBC] / Design: Veiled Shadowsong Amethyst [CATA+] (RECIPE!)
+							-- #endif
+						},
+					}),
 				})),
 				applyclassicphase(TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE_B, n(25046, {	-- Smith Hauthaa <Weapons & Armorsmith>
 					["coord"] = { 50.5, 40.7, ISLE_OF_QUELDANAS },

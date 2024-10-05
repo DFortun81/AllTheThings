@@ -2519,59 +2519,69 @@ root(ROOTS.Zones, {
 					}),
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, n(23428, {	-- Jho'nass <Ogri'la Quartermaster>
 						["coord"] = { 28.0, 58.6, BLADES_EDGE_MOUNTAINS },
-						["groups"] = {
-							i(32653, {	-- Apexis Cloak
-								["cost"] = {
-									{ "i", 32572, 1 },	-- 1x Apexis Crystal
-									{ "i", 32569, 50 },	-- 50x Apexis Shard
-								},
-							}),
-							i(32650, {	-- Cerulean Crystal Rod
-								["cost"] = {
-									{ "i", 32572, 1 },	-- 1x Apexis Crystal
-									{ "i", 32569, 50 },	-- 50x Apexis Shard
-								},
-							}),
-							i(32651, {	-- Crystal Orb of Enlightenment
-								["cost"] = {
-									{ "i", 32572, 4 },		-- 4x Apexis Crystal
-									{ "i", 32569, 100 },	-- 100x Apexis Shard
-								},
-							}),
-							i(32654, {	-- Crystalforged Trinket
-								["cost"] = {
-									{ "i", 32572, 1 },	-- 1x Apexis Crystal
-									{ "i", 32569, 50 },	-- 50x Apexis Shard
-								},
-							}),
-							i(32645, {	-- Crystalline Crossbow
-								["cost"] = {
-									{ "i", 32572, 4 },		-- 4x Apexis Crystal
-									{ "i", 32569, 100 },	-- 100x Apexis Shard
-								},
-							}),
-							i(32652, {	-- Ogri'la Aegis
-								["cost"] = {
-									{ "i", 32572, 1 },	-- 1x Apexis Crystal
-									{ "i", 32569, 50 },	-- 50x Apexis Shard
-								},
-							}),
-							i(32828, {	-- Ogri'la Tabard
-								["cost"] = { { "i", 32569, 10 }, },	-- 10x Apexis Shard
-							}),
-							i(32647, {	-- Shard-Bound Bracers
-								["cost"] = {
-									{ "i", 32572, 4 },		-- 4x Apexis Crystal
-									{ "i", 32569, 100 },	-- 100x Apexis Shard
-								},
-							}),
-							i(32648, {	-- Vortex Walking Boots
-								["cost"] = {
-									{ "i", 32572, 4 },		-- 4x Apexis Crystal
-									{ "i", 32569, 100 },	-- 100x Apexis Shard
-								},
-							}),
-						},
+						["groups"] = bubbleDownClassicRep(FACTION_ORGILA, {
+							{		-- Neutral
+								i(33934),	-- Crystal Healing Potion
+								i(33935),	-- Crystal Mana Potion
+							}, {	-- Friendly
+							}, {	-- Honored
+								i(32783),	-- Blue Ogre Brew
+								i(32784),	-- Red Ogre Brew
+							}, {	-- Revered
+								i(32653, {	-- Apexis Cloak
+									["cost"] = {
+										{ "i", 32572, 1 },	-- 1x Apexis Crystal
+										{ "i", 32569, 50 },	-- 50x Apexis Shard
+									},
+								}),
+								i(32650, {	-- Cerulean Crystal Rod
+									["cost"] = {
+										{ "i", 32572, 1 },	-- 1x Apexis Crystal
+										{ "i", 32569, 50 },	-- 50x Apexis Shard
+									},
+								}),
+								i(32654, {	-- Crystalforged Trinket
+									["cost"] = {
+										{ "i", 32572, 1 },	-- 1x Apexis Crystal
+										{ "i", 32569, 50 },	-- 50x Apexis Shard
+									},
+								}),
+								i(32652, {	-- Ogri'la Aegis
+									["cost"] = {
+										{ "i", 32572, 1 },	-- 1x Apexis Crystal
+										{ "i", 32569, 50 },	-- 50x Apexis Shard
+									},
+								}),
+							}, {	-- Exalted
+								i(32651, {	-- Crystal Orb of Enlightenment
+									["cost"] = {
+										{ "i", 32572, 4 },		-- 4x Apexis Crystal
+										{ "i", 32569, 100 },	-- 100x Apexis Shard
+									},
+								}),
+								i(32645, {	-- Crystalline Crossbow
+									["cost"] = {
+										{ "i", 32572, 4 },		-- 4x Apexis Crystal
+										{ "i", 32569, 100 },	-- 100x Apexis Shard
+									},
+								}),
+								i(32828, {	-- Ogri'la Tabard
+									["cost"] = { { "i", 32569, 10 }, },	-- 10x Apexis Shard
+								}),
+								i(32647, {	-- Shard-Bound Bracers
+									["cost"] = {
+										{ "i", 32572, 4 },		-- 4x Apexis Crystal
+										{ "i", 32569, 100 },	-- 100x Apexis Shard
+									},
+								}),
+								i(32648, {	-- Vortex Walking Boots
+									["cost"] = {
+										{ "i", 32572, 4 },		-- 4x Apexis Crystal
+										{ "i", 32569, 100 },	-- 100x Apexis Shard
+									},
+								}),
+							},
+						}),
 					})),
 					n(19473, {	-- Raiza
 						["coord"] = { 53.0, 59.0, BLADES_EDGE_MOUNTAINS },

@@ -116,51 +116,59 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 			}),
 			n(VENDORS, {
 				n(23159, {	-- Okuno <Ashtongue Deathsworn Quartermaster>
-					i(32429),	-- Pattern: Boots of Shackled Souls (RECIPE!)
-					i(32430, {	-- Pattern: Bracers of Shackled Souls (RECIPE!)
-						r(40000, {["timeline"] = {ADDED_2_1_0, REMOVED_3_0_3}}),
-					}),
-					i(32431),	-- Pattern: Greaves of Shackled Souls (RECIPE!)
-					i(32447),	-- Pattern: Night's End
-					i(32436),	-- Pattern: Redeemed Soul Cinch (RECIPE!)
-					i(32435),	-- Pattern: Redeemed Soul Legguards (RECIPE!)
-					i(32433),	-- Pattern: Redeemed Soul Moccasins (RECIPE!)
-					i(32434),	-- Pattern: Redeemed Soul Wristguards (RECIPE!)
-					i(32438),	-- Pattern: Soulguard Bracers
-					i(32440),	-- Pattern: Soulguard Girdle
-					i(32439),	-- Pattern: Soulguard Leggings
-					i(32437),	-- Pattern: Soulguard Slippers
-					i(32432),	-- Pattern: Waistguard of Shackled Souls (RECIPE!)
-					i(32442),	-- Plans: Shadesteel Bracers (RECIPE!)
-					i(32444),	-- Plans: Shadesteel Girdle (RECIPE!)
-					i(32443),	-- Plans: Shadesteel Greaves (RECIPE!)
-					i(32441),	-- Plans: Shadesteel Sabots (RECIPE!)
-					i(32490, {	-- Ashtongue Talisman of Acumen
-						["classes"] = { PRIEST },
-					}),
-					i(32486, {	-- Ashtongue Talisman of Equilibrium
-						["classes"] = { DRUID },
-					}),
-					i(32488, {	-- Ashtongue Talisman of Insight
-						["classes"] = { MAGE },
-					}),
-					i(32492, {	-- Ashtongue Talisman of Lethality
-						["classes"] = { ROGUE },
-					}),
-					i(32493, {	-- Ashtongue Talisman of Shadows
-						["classes"] = { WARLOCK },
-					}),
-					i(32487, {	-- Ashtongue Talisman of Swiftness
-						["classes"] = { HUNTER },
-					}),
-					i(32485, {	-- Ashtongue Talisman of Valor
-						["classes"] = { WARRIOR },
-					}),
-					i(32491, {	-- Ashtongue Talisman of Vision
-						["classes"] = { SHAMAN },
-					}),
-					i(32489, {	-- Ashtongue Talisman of Zeal
-						["classes"] = { PALADIN },
+					["groups"] = bubbleDownClassicRep(FACTION_ASHTONGUE_DEATHSWORN, {
+						{		-- Neutral
+						}, {	-- Friendly
+							i(32429),	-- Pattern: Boots of Shackled Souls (RECIPE!)
+							i(32430, {	-- Pattern: Bracers of Shackled Souls (RECIPE!)
+								r(40000, {["timeline"] = {ADDED_2_1_0, REMOVED_3_0_3}}),
+							}),
+							i(32436),	-- Pattern: Redeemed Soul Cinch (RECIPE!)
+							i(32435),	-- Pattern: Redeemed Soul Legguards (RECIPE!)
+							i(32438),	-- Pattern: Soulguard Bracers (RECIPE!)
+							i(32440),	-- Pattern: Soulguard Girdle (RECIPE!)
+							i(32442),	-- Plans: Shadesteel Bracers (RECIPE!)
+							i(32444),	-- Plans: Shadesteel Girdle (RECIPE!)
+						}, {	-- Honored
+							i(32431),	-- Pattern: Greaves of Shackled Souls (RECIPE!)
+							i(32447),	-- Pattern: Night's End (RECIPE!)
+							i(32433),	-- Pattern: Redeemed Soul Moccasins (RECIPE!)
+							i(32434),	-- Pattern: Redeemed Soul Wristguards (RECIPE!)
+							i(32439),	-- Pattern: Soulguard Leggings (RECIPE!)
+							i(32437),	-- Pattern: Soulguard Slippers (RECIPE!)
+							i(32432),	-- Pattern: Waistguard of Shackled Souls (RECIPE!)
+							i(32443),	-- Plans: Shadesteel Greaves (RECIPE!)
+							i(32441),	-- Plans: Shadesteel Sabots (RECIPE!)
+						}, {	-- Revered
+						}, {	-- Exalted
+							i(32490, {	-- Ashtongue Talisman of Acumen
+								["classes"] = { PRIEST },
+							}),
+							i(32486, {	-- Ashtongue Talisman of Equilibrium
+								["classes"] = { DRUID },
+							}),
+							i(32488, {	-- Ashtongue Talisman of Insight
+								["classes"] = { MAGE },
+							}),
+							i(32492, {	-- Ashtongue Talisman of Lethality
+								["classes"] = { ROGUE },
+							}),
+							i(32493, {	-- Ashtongue Talisman of Shadows
+								["classes"] = { WARLOCK },
+							}),
+							i(32487, {	-- Ashtongue Talisman of Swiftness
+								["classes"] = { HUNTER },
+							}),
+							i(32485, {	-- Ashtongue Talisman of Valor
+								["classes"] = { WARRIOR },
+							}),
+							i(32491, {	-- Ashtongue Talisman of Vision
+								["classes"] = { SHAMAN },
+							}),
+							i(32489, {	-- Ashtongue Talisman of Zeal
+								["classes"] = { PALADIN },
+							}),
+						},
 					}),
 				}),
 			}),

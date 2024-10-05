@@ -3350,79 +3350,85 @@ root(ROOTS.Zones, {
 					n(17657, {	-- Logistics Officer Ulrike <Honor Hold Quartermaster>
 						["coord"] = { 56.6, 62.6, HELLFIRE_PENINSULA },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(23999),	-- Honor Hold Tabard
-							i(30622, {	-- Flamewrought Key
-								["timeline"] = { REMOVED_4_2_0 },
-								["races"] = ALLIANCE_ONLY,
-								-- #if ANYCLASSIC
-								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
-								["OnTooltip"] = [[function(t, tooltipInfo)
-									local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
-									if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
-										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
-									else
-										tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
-									end
-									tooltip:Show();
-								end]],
-								["OnInit"] = [[function(t)
-									t.otherItemID = 185687;
-									t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
-									return t;
-								end]],
-								-- #endif
-							}),
-							i(32883, {	-- Felbane Slugs
-								["timeline"] = { REMOVED_4_0_1 },
-							}),
-							i(29196, {	-- Glyph of Fire Warding
-								["timeline"] = { REMOVED_5_0_4 },
-							}),
-							i(29189, {	-- Glyph of Renewal
-								["timeline"] = { REMOVED_5_0_4 },
-							}),
-							i(29153),	-- Blade of the Archmage
-							applyclassicphase(TBC_PHASE_TWO, i(35476)),	-- Crusader's Ornamented Spaulders
-							applyclassicphase(TBC_PHASE_TWO, i(35477)),	-- Crusader's Scaled Gauntlets
-							i(24180),	-- Design: Dawnstone Crab
-							i(23142),	-- Design: Regal Deep Peridot (Cata+) / Design: Enduring Deep Peridot (TBC)
-							applyclassicphase(TBC_PHASE_TWO, i(35469)),	-- Dragonhide Robe
-							applyclassicphase(TBC_PHASE_TWO, i(35464)),	-- Dreadweave Robe
-							applyclassicphase(TBC_PHASE_TWO, i(35465)),	-- Evoker's Silk Amice
-							i(25825),	-- Footman's Longsword
-							i(22531),	-- Formula: Enchant Bracer - Superior Healing (RECIPE!)
-							i(22547),	-- Formula: Enchant Chest - Exceptional Stats (RECIPE!)
-							i(33150, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Cloak - Subtlety (RECIPE!)
-							i(29166),	-- Hellforged Halberd
-							i(29156),	-- Honor's Call
-							applyclassicphase(TBC_PHASE_TWO, i(35470)),	-- Kodohide Spaulders
-							applyclassicphase(TBC_PHASE_TWO, i(35467)),	-- Mooncloth Vestments
-							applyclassicphase(TBC_PHASE_TWO, i(35468)),	-- Opportunist's Leather Gloves
-							i(29719),	-- Pattern: Cobrahide Leg Armor [A] (RECIPE!)
-							i(29213),	-- Pattern: Felstalker Belt [A] (RECIPE!)
-							i(29214),	-- Pattern: Felstalker Bracers [A] (RECIPE!)
-							i(29215),	-- Pattern: Felstalker Breastplate [A] (RECIPE!)
-							i(29722),	-- Pattern: Nethercobra Leg Armor [A] (RECIPE!)
-							applyclassicphase(TBC_PHASE_THREE, i(34218, {	-- Pattern: Netherscale Ammo Pouch [A] (RECIPE!)
-								["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },
-							})),
-							i(23619),	-- Plans: Felsteel Shield Spike (RECIPE!)
-							i(22905),	-- Recipe: Elixir of Major Agility (RECIPE!)
-							i(25870),	-- Recipe: Transmute Skyfire Diamond (RECIPE!)
-							i(29169),	-- Ring of Convalescence
-							i(25826),	-- Sage's Band
-							applyclassicphase(TBC_PHASE_TWO, i(35466)),	-- Satin Hood
-							applyclassicphase(TBC_PHASE_TWO, i(35478)),	-- Savage Plate Helm
-							applyclassicphase(TBC_PHASE_TWO, i(35474)),	-- Seer's Linked Helm
-							applyclassicphase(TBC_PHASE_TWO, i(35472)),	-- Seer's Mail Armor
-							applyclassicphase(TBC_PHASE_TWO, i(35473)),	-- Seer's Ringmail Gloves
-							applyclassicphase(TBC_PHASE_TWO, i(35475)),	-- Stalker's Chain Gauntlets
-							i(29151),	-- Veteran's Musket
-							applyclassicphase(TBC_PHASE_TWO, i(35471)),	-- Wyrmhide Gloves
-							i(24008),	-- Dried Mushroom Rations
-							i(24007),	-- Footman's Waterskin
-						},
+						["g"] = bubbleDownClassicRep(FACTION_HONOR_HOLD, {
+							{		-- Neutral
+							}, {	-- Friendly
+								i(23142),	-- Design: Regal Deep Peridot (Cata+) / Design: Enduring Deep Peridot (TBC) (RECIPE!)
+								i(24008),	-- Dried Mushroom Rations
+								i(22531),	-- Formula: Enchant Bracer - Superior Healing (RECIPE!)
+								i(29213),	-- Pattern: Felstalker Belt [A] (RECIPE!)
+							}, {	-- Honored
+								applyclassicphase(TBC_PHASE_TWO, i(35476)),	-- Crusader's Ornamented Spaulders
+								applyclassicphase(TBC_PHASE_TWO, i(35477)),	-- Crusader's Scaled Gauntlets
+								applyclassicphase(TBC_PHASE_TWO, i(35469)),	-- Dragonhide Robe
+								applyclassicphase(TBC_PHASE_TWO, i(35464)),	-- Dreadweave Robe
+								applyclassicphase(TBC_PHASE_TWO, i(35465)),	-- Evoker's Silk Amice
+								i(29196, {	-- Glyph of Fire Warding
+									["timeline"] = { REMOVED_5_0_4 },
+								}),
+								i(25825),	-- Footman's Longsword
+								i(24007),	-- Footman's Waterskin
+								applyclassicphase(TBC_PHASE_TWO, i(35470)),	-- Kodohide Spaulders
+								applyclassicphase(TBC_PHASE_TWO, i(35467)),	-- Mooncloth Vestments
+								applyclassicphase(TBC_PHASE_TWO, i(35468)),	-- Opportunist's Leather Gloves
+								i(29719),	-- Pattern: Cobrahide Leg Armor [A] (RECIPE!)
+								i(29214),	-- Pattern: Felstalker Bracers [A] (RECIPE!)
+								i(29215),	-- Pattern: Felstalker Breastplate [A] (RECIPE!)
+								i(22905),	-- Recipe: Elixir of Major Agility (RECIPE!)
+								i(25870),	-- Recipe: Transmute Skyfire Diamond (RECIPE!)
+								i(25826),	-- Sage's Band
+								applyclassicphase(TBC_PHASE_TWO, i(35466)),	-- Satin Hood
+								applyclassicphase(TBC_PHASE_TWO, i(35478)),	-- Savage Plate Helm
+								applyclassicphase(TBC_PHASE_TWO, i(35474)),	-- Seer's Linked Helm
+								applyclassicphase(TBC_PHASE_TWO, i(35472)),	-- Seer's Mail Armor
+								applyclassicphase(TBC_PHASE_TWO, i(35473)),	-- Seer's Ringmail Gloves
+								applyclassicphase(TBC_PHASE_TWO, i(35475)),	-- Stalker's Chain Gauntlets
+								applyclassicphase(TBC_PHASE_TWO, i(35471)),	-- Wyrmhide Gloves
+							}, {	-- Revered
+								i(24180),	-- Design: Dawnstone Crab (RECIPE!)
+								i(32883, {	-- Felbane Slugs
+									["timeline"] = { REMOVED_4_0_1 },
+								}),
+								i(30622, {	-- Flamewrought Key
+									["timeline"] = { REMOVED_4_2_0 },
+									["races"] = ALLIANCE_ONLY,
+									-- #if ANYCLASSIC
+									-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
+									["OnTooltip"] = [[function(t, tooltipInfo)
+										local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
+										if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
+											tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
+										else
+											tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
+										end
+										tooltip:Show();
+									end]],
+									["OnInit"] = [[function(t)
+										t.otherItemID = 185687;
+										t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
+										return t;
+									end]],
+									-- #endif
+								}),
+								i(22547),	-- Formula: Enchant Chest - Exceptional Stats (RECIPE!)
+								i(29189, {	-- Glyph of Renewal
+									["timeline"] = { REMOVED_5_0_4 },
+								}),
+								i(29166),	-- Hellforged Halberd
+								applyclassicphase(TBC_PHASE_THREE, i(34218, {	-- Pattern: Netherscale Ammo Pouch [A] (RECIPE!)
+									["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },
+								})),
+								i(29169),	-- Ring of Convalescence
+							}, {	-- Exalted
+								i(29153),	-- Blade of the Archmage
+								i(33150, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Cloak - Subtlety (RECIPE!)
+								i(23999),	-- Honor Hold Tabard
+								i(29156),	-- Honor's Call
+								i(29722),	-- Pattern: Nethercobra Leg Armor [A] (RECIPE!)
+								i(23619),	-- Plans: Felsteel Shield Spike (RECIPE!)
+								i(29151),	-- Veteran's Musket
+							},
+						}),
 					}),
 					n(22227, {	-- Markus Scylan <Gem Vendor>
 						["coord"] = { 54.67, 63.57, HELLFIRE_PENINSULA },
@@ -3444,79 +3450,85 @@ root(ROOTS.Zones, {
 					n(17585, {	-- Quartermaster Urgronn <Thrallmar Quartermaster>
 						["coord"] = { 54.9, 37.8, HELLFIRE_PENINSULA },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
-							i(24004),	-- Thrallmar Tabard
-							i(30637, {	-- Flamewrought Key
-								["timeline"] = { REMOVED_4_2_0 },
-								["races"] = HORDE_ONLY,
-								-- #if ANYCLASSIC
-								-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
-								["OnTooltip"] = [[function(t, tooltipInfo)
-									local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
-									if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
-										tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
-									else
-										tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
-									end
-									tooltip:Show();
-								end]],
-								["OnInit"] = [[function(t)
-									t.otherItemID = 185686;
-									t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
-									return t;
-								end]],
-								-- #endif
-							}),
-							i(29197, {	-- Glyph of Fire Warding
-								["timeline"] = { REMOVED_5_0_4 },
-							}),
-							i(29190, {	-- Glyph of Renewal
-								["timeline"] = { REMOVED_5_0_4 },
-							}),
-							i(32882, {	-- Hellfire Shot
-								["timeline"] = { REMOVED_4_0_1 },
-							}),
-							i(29168),	-- Ancestral Band
-							i(29167),	-- Blackened Spear
-							applyclassicphase(TBC_PHASE_TWO, i(35406)),	-- Crusader's Ornamented Spaulders
-							applyclassicphase(TBC_PHASE_TWO, i(35413)),	-- Crusader's Scaled Gauntlets
-							i(31358),	-- Design: Dawnstone Crab
-							i(31359),	-- Design: Regal Deep Peridot (Cata+) / Design: Enduring Deep Peridot (TBC)
-							applyclassicphase(TBC_PHASE_TWO, i(35360)),	-- Dragonhide Robe
-							applyclassicphase(TBC_PHASE_TWO, i(35332)),	-- Dreadweave Robe
-							applyclassicphase(TBC_PHASE_TWO, i(35343)),	-- Evoker's Silk Amice
-							i(25824),	-- Farseer's Band
-							i(24000),	-- Formula: Enchant Bracer - Superior Healing (RECIPE!)
-							i(24003),	-- Formula: Enchant Chest - Exceptional Stats (RECIPE!)
-							i(33151, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Cloak - Subtlety (RECIPE!)
-							i(25823),	-- Grunt's Waraxe
-							applyclassicphase(TBC_PHASE_TWO, i(35364)),	-- Kodohide Spaulders
-							i(29152),	-- Marksman's Bow
-							applyclassicphase(TBC_PHASE_TWO, i(35337)),	-- Mooncloth Vestments
-							applyclassicphase(TBC_PHASE_TWO, i(35366)),	-- Opportunist's Leather Gloves
-							i(31361),	-- Pattern: Cobrahide Leg Armor [H] (RECIPE!)
-							i(25738),	-- Pattern: Felstalker Belt [H] (RECIPE!)
-							i(25739),	-- Pattern: Felstalker Bracers [H] (RECIPE!)
-							i(25740),	-- Pattern: Felstalker Breastplate [H] (RECIPE!)
-							i(31362),	-- Pattern: Nethercobra Leg Armor [H] (RECIPE!)
-							applyclassicphase(TBC_PHASE_THREE, i(34201, {	-- Pattern: Netherscale Ammo Pouch [H] (RECIPE!)
-								["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },
-							})),
-							i(24002),	-- Plans: Felsteel Shield Spike (RECIPE!)
-							i(24001),	-- Recipe: Elixir of Major Agility (RECIPE!)
-							i(29232),	-- Recipe: Transmute Skyfire Diamond (RECIPE!)
-							applyclassicphase(TBC_PHASE_TWO, i(35339)),	-- Satin Hood
-							applyclassicphase(TBC_PHASE_TWO, i(35409)),	-- Savage Plate Helm
-							applyclassicphase(TBC_PHASE_TWO, i(35383)),	-- Seer's Linked Helm
-							applyclassicphase(TBC_PHASE_TWO, i(35386)),	-- Seer's Mail Armor
-							applyclassicphase(TBC_PHASE_TWO, i(35392)),	-- Seer's Ringmail Gloves
-							applyclassicphase(TBC_PHASE_TWO, i(35377)),	-- Stalker's Chain Gauntlets
-							i(29155),	-- Stormcaller
-							i(29165),	-- Warbringer
-							applyclassicphase(TBC_PHASE_TWO, i(35371)),	-- Wyrmhide Gloves
-							i(24009),	-- Dried Fruit Rations
-							i(24006),	-- Grunt's Waterskin
-						},
+						["groups"] = bubbleDownClassicRep(FACTION_THRALLMAR, {
+							{		-- Neutral
+							}, {	-- Friendly
+								i(31359),	-- Design: Regal Deep Peridot (Cata+) / Design: Enduring Deep Peridot (TBC) (RECIPE!)
+								i(24009),	-- Dried Fruit Rations
+								i(24000),	-- Formula: Enchant Bracer - Superior Healing (RECIPE!)
+								i(24006),	-- Grunt's Waterskin
+								i(25738),	-- Pattern: Felstalker Belt [H] (RECIPE!)
+							}, {	-- Honored
+								applyclassicphase(TBC_PHASE_TWO, i(35406)),	-- Crusader's Ornamented Spaulders
+								applyclassicphase(TBC_PHASE_TWO, i(35413)),	-- Crusader's Scaled Gauntlets
+								applyclassicphase(TBC_PHASE_TWO, i(35360)),	-- Dragonhide Robe
+								applyclassicphase(TBC_PHASE_TWO, i(35332)),	-- Dreadweave Robe
+								applyclassicphase(TBC_PHASE_TWO, i(35343)),	-- Evoker's Silk Amice
+								i(25824),	-- Farseer's Band
+								i(29197, {	-- Glyph of Fire Warding
+									["timeline"] = { REMOVED_5_0_4 },
+								}),
+								i(25823),	-- Grunt's Waraxe
+								applyclassicphase(TBC_PHASE_TWO, i(35364)),	-- Kodohide Spaulders
+								applyclassicphase(TBC_PHASE_TWO, i(35337)),	-- Mooncloth Vestments
+								applyclassicphase(TBC_PHASE_TWO, i(35366)),	-- Opportunist's Leather Gloves
+								i(31361),	-- Pattern: Cobrahide Leg Armor [H] (RECIPE!)
+								i(25739),	-- Pattern: Felstalker Bracers [H] (RECIPE!)
+								i(25740),	-- Pattern: Felstalker Breastplate [H] (RECIPE!)
+								i(24001),	-- Recipe: Elixir of Major Agility (RECIPE!)
+								i(29232),	-- Recipe: Transmute Skyfire Diamond (RECIPE!)
+								applyclassicphase(TBC_PHASE_TWO, i(35339)),	-- Satin Hood
+								applyclassicphase(TBC_PHASE_TWO, i(35409)),	-- Savage Plate Helm
+								applyclassicphase(TBC_PHASE_TWO, i(35383)),	-- Seer's Linked Helm
+								applyclassicphase(TBC_PHASE_TWO, i(35386)),	-- Seer's Mail Armor
+								applyclassicphase(TBC_PHASE_TWO, i(35392)),	-- Seer's Ringmail Gloves
+								applyclassicphase(TBC_PHASE_TWO, i(35377)),	-- Stalker's Chain Gauntlets
+								applyclassicphase(TBC_PHASE_TWO, i(35371)),	-- Wyrmhide Gloves
+							}, {	-- Revered
+								i(29168),	-- Ancestral Band
+								i(29167),	-- Blackened Spear
+								i(31358),	-- Design: Dawnstone Crab (RECIPE!)
+								i(30637, {	-- Flamewrought Key
+									["timeline"] = { REMOVED_4_2_0 },
+									["races"] = HORDE_ONLY,
+									-- #if ANYCLASSIC
+									-- Blizzard added "Honored" versions of this key for TBC Classic... BLIZZARD.
+									["OnTooltip"] = [[function(t, tooltipInfo)
+										local tooltip = _.ShowItemCompareTooltips(t.otherItemID);
+										if _.Settings:GetUnobtainableFilter(]] .. TBC_PHASE_FOUR .. [[) then
+											tooltip:AddLine("This is now available at Honored reputation.", 0.4, 0.8, 1, 1);
+										else
+											tooltip:AddLine("This will be available at Honored reputation after TBC Phase 4.", 0.4, 0.8, 1, 1);
+										end
+										tooltip:Show();
+									end]],
+									["OnInit"] = [[function(t)
+										t.otherItemID = 185686;
+										t.GetItemCount = function(t) return ]] .. WOWAPI_GetItemCount("t.itemID") .. [[ + ]] .. WOWAPI_GetItemCount("t.otherItemID") .. [[; end
+										return t;
+									end]],
+									-- #endif
+								}),
+								i(24003),	-- Formula: Enchant Chest - Exceptional Stats (RECIPE!)
+								i(29190, {	-- Glyph of Renewal
+									["timeline"] = { REMOVED_5_0_4 },
+								}),
+								i(32882, {	-- Hellfire Shot
+									["timeline"] = { REMOVED_4_0_1 },
+								}),
+								applyclassicphase(TBC_PHASE_THREE, i(34201, {	-- Pattern: Netherscale Ammo Pouch [H] (RECIPE!)
+									["timeline"] = { ADDED_2_3_0, REMOVED_4_0_1 },
+								})),
+							}, {	-- Exalted
+								i(33151, {["timeline"]={ADDED_2_2_0}}),	-- Formula: Enchant Cloak - Subtlety (RECIPE!)
+								i(29152),	-- Marksman's Bow
+								i(31362),	-- Pattern: Nethercobra Leg Armor [H] (RECIPE!)
+								i(24002),	-- Plans: Felsteel Shield Spike (RECIPE!)
+								i(29155),	-- Stormcaller
+								i(24004),	-- Thrallmar Tabard
+								i(29165),	-- Warbringer
+							},
+						}),
 					}),
 					n(22225, {	-- Reagan Mancuso <Gem Vendor>
 						["coord"] = { 45.82, 37.79, HELLFIRE_PENINSULA },

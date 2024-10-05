@@ -2242,90 +2242,52 @@ root(ROOTS.Zones, {
 					}),
 					n(23007, {	-- Paulsta'ats <Consortium Quartermaster>
 						["coord"] = { 30.5, 56.9, NAGRAND },
-						["groups"] = {
-							i(29115),	-- Consortium Blaster
-							i(31776),	-- Consortium Tabard
-							i(33156),	-- Design: Crimson Sun
-							i(23134),	-- Design: Delicate Blood Garnet
-							i(33305),	-- Design: Don Julio's Heart
-							-- #if BEFORE CATA
-							i(23136),	-- Design: Luminous Flame Spessarite [TBC] / Design: Reckless Flame Spessarite [Cata+]
-							i(23155),	-- Design: Lustrous Azure Moonstone [TBC] / Design: Sparkling Azure Moonstone [Cata+]
-							-- #endif
-							i(24178),	-- Design: Pendant of the Null Rune
-							-- #if AFTER CATA
-							i(23136),	-- Design: Reckless Flame Spessarite [Cata+] / Design: Luminous Flame Spessarite [TBC]
-							-- #endif
-							i(33622),	-- Design: Relentless Earthstorm Diamond
-							i(23146),	-- Design: Shifting Shadow Draenite
-							-- #if AFTER CATA
-							i(23155),	-- Design: Sparkling Azure Moonstone [Cata+] / Design: Lustrous Azure Moonstone [TBC]
-							i(23150),	-- Design: Subtle Golden Draenite [Cata+] / Design: Thick Golden Draenite [TBC]
-							-- #endif
-							i(25908),	-- Design: Swift Skyfire Diamond
-							-- #if BEFORE CATA
-							i(23150),	-- Design: Thick Golden Draenite [TBC] / Design: Subtle Golden Draenite [Cata+]
-							-- #endif
-							i(28274),	-- Formula: Enchant Cloak - PvP Power / TBC: Formula: Enchant Cloak - Spell Penetration (RECIPE!)
-							applyclassicphase(TBC_PHASE_THREE, i(22552, {["timeline"]={ADDED_2_1_0}})),	-- Formula: Enchant Weapon - Major Striking (RECIPE!)
-							i(29456),	-- Gift of the Ethereal
-							i(29121),	-- Guile of Khoraazi
-							i(29119),	-- Haramad's Bargain
-							i(138796, {	-- Illusion: Executioner (ILLUSION!)
-								["timeline"] = { ADDED_7_0_3 },
-							}),
-							i(29122),	-- Nether Runner's Cowl
-							i(29457),	-- Nethershard
-							i(29116),	-- Nomad's Leggings
-							i(24314),	-- Pattern: Bag of Jewels (RECIPE!)
-							i(25733),	-- Pattern: Fel Leather Boots (RECIPE!)
-							i(25732),	-- Pattern: Fel Leather Gloves (RECIPE!)
-							i(25734),	-- Pattern: Fel Leather Leggings (RECIPE!)
-							i(23874),	-- Schematic: Elemental Seaforium Charge (RECIPE!)
-							i(29118, {	-- Smuggler's Ammo Pouch
-								["timeline"] = { REMOVED_4_0_1 },
-							}),
-							i(29117),	-- Stormspire Vest
-						},
+						["sym"] = {{"sub","common_vendor",20242}},	-- Karaaz <Consortium Quartermaster>
 					}),
 					n(20241, {	-- Provisioner Nasela <Mag'har Quartermaster>
 						["coord"] = { 53.8, 36.8, NAGRAND },
 						["races"] = HORDE_ONLY,
-						["groups"] = {
-							i(29145),	-- Band of Ancestral Spirits
-							i(29139),	-- Ceremonial Cover
-							i(29143, {	-- Clefthoof Hide Quiver
-								["timeline"] = { REMOVED_4_0_1 },
-							}),
-							i(29135),	-- Earthcaller's Headdress
-							i(29137),	-- Hellscream's Will
-							i(31773),	-- Mag'har Tabard
-							i(34174, {	-- Pattern: Drums of Restoration [H] (RECIPE!)
-								["timeline"] = { ADDED_2_3_0 },
-							}),
-							i(34172, {	-- Pattern: Drums of Speed [H] (RECIPE!)
-								["timeline"] = { ADDED_2_3_0 },
-							}),
-							-- #if ANYCLASSIC
-							applyclassicphase(TBC_PHASE_FOUR, i(185924)),	-- Pattern: Greater Drums of Restoration (RECIPE!)
-							applyclassicphase(TBC_PHASE_FOUR, i(185923)),	-- Pattern: Greater Drums of Speed (RECIPE!)
-							-- #endif
-							i(25741),	-- Pattern: Netherfury Belt [H] (RECIPE!)
-							i(25743),	-- Pattern: Netherfury Boots [H] (RECIPE!)
-							i(25742),	-- Pattern: Netherfury Leggings [H] (RECIPE!)
-							i(29664),	-- Pattern: Reinforced Mining Bag
-							i(22917),	-- Recipe: Transmute Primal Fire to Earth (RECIPE!)
-							i(31829),	-- Cobalt Riding Talbuk (H) (MOUNT!)
-							i(29102),	-- Cobalt War Talbuk (H) (MOUNT!)
-							i(31831),	-- Silver Riding Talbuk (H) (MOUNT!)
-							i(29104),	-- Silver War Talbuk (H) (MOUNT!)
-							i(31833),	-- Tan Riding Talbuk (H) (MOUNT!)
-							i(29105),	-- Tan War Talbuk (H) (MOUNT!)
-							i(31835),	-- White Riding Talbuk (H) (MOUNT!)
-							i(29103),	-- White War Talbuk (H) (MOUNT!)
-							i(29147),	-- Talbuk Hide Spaulders
-							i(29141),	-- Tempest Leggings
-						},
+						["groups"] = bubbleDownClassicRep(FACTION_THE_MAGHAR, {
+							{		-- Neutral
+							}, {	-- Friendly
+								i(25741),	-- Pattern: Netherfury Belt [H] (RECIPE!)
+							}, {	-- Honored
+								i(29143, {	-- Clefthoof Hide Quiver
+									["timeline"] = { REMOVED_4_0_1 },
+								}),
+								i(34174, {	-- Pattern: Drums of Restoration [H] (RECIPE!)
+									["timeline"] = { ADDED_2_3_0 },
+								}),
+								i(34172, {	-- Pattern: Drums of Speed [H] (RECIPE!)
+									["timeline"] = { ADDED_2_3_0 },
+								}),
+								-- #if ANYCLASSIC
+								applyclassicphase(TBC_PHASE_FOUR, i(185924)),	-- Pattern: Greater Drums of Restoration (RECIPE!)
+								applyclassicphase(TBC_PHASE_FOUR, i(185923)),	-- Pattern: Greater Drums of Speed (RECIPE!)
+								-- #endif
+								i(25742),	-- Pattern: Netherfury Leggings [H] (RECIPE!)
+								i(29664),	-- Pattern: Reinforced Mining Bag
+							}, {	-- Revered
+								i(29145),	-- Band of Ancestral Spirits
+								i(25743),	-- Pattern: Netherfury Boots [H] (RECIPE!)
+								i(22917),	-- Recipe: Transmute Primal Fire to Earth (RECIPE!)
+								i(29147),	-- Talbuk Hide Spaulders
+								i(29141),	-- Tempest Leggings
+							}, {	-- Exalted
+								i(29139),	-- Ceremonial Cover
+								i(29135),	-- Earthcaller's Headdress
+								i(29137),	-- Hellscream's Will
+								i(31773),	-- Mag'har Tabard
+								i(31829),	-- Cobalt Riding Talbuk (H) (MOUNT!)
+								i(29102),	-- Cobalt War Talbuk (H) (MOUNT!)
+								i(31831),	-- Silver Riding Talbuk (H) (MOUNT!)
+								i(29104),	-- Silver War Talbuk (H) (MOUNT!)
+								i(31833),	-- Tan Riding Talbuk (H) (MOUNT!)
+								i(29105),	-- Tan War Talbuk (H) (MOUNT!)
+								i(31835),	-- White Riding Talbuk (H) (MOUNT!)
+								i(29103),	-- White War Talbuk (H) (MOUNT!)
+							},
+						}),
 					}),
 					n(18822, {	-- Quartermaster Davian Vaclav
 						["description"] = "This NPC is only accessible when the Alliance controls Halaa.",
@@ -2546,41 +2508,47 @@ root(ROOTS.Zones, {
 					n(20240, {	-- Trader Narasu <Kurenai Quartermaster>
 						["coord"] = { 54.5, 75.1, NAGRAND },
 						["races"] = ALLIANCE_ONLY,
-						["groups"] = {
-							i(29138),	-- Arechron's Gift
-							i(29146),	-- Band of Elemental Spirits
-							i(29148),	-- Blackened Leather Spaulders
-							i(29140),	-- Cloak of the Ancient Spirit
-							i(29136),	-- Far Seer's Helm
-							i(29142),	-- Kurenai Kilt
-							i(31774),	-- Kurenai Tabard
-							i(34175, {	-- Pattern: Drums of Restoration [A] (RECIPE!)
-								["timeline"] = { ADDED_2_3_0 },
-							}),
-							i(34173, {	-- Pattern: Drums of Speed [A] (RECIPE!)
-								["timeline"] = { ADDED_2_3_0 },
-							}),
-							-- #if ANYCLASSIC
-							applyclassicphase(TBC_PHASE_FOUR, i(187048)),	-- Pattern: Greater Drums of Restoration (RECIPE!)
-							applyclassicphase(TBC_PHASE_FOUR, i(187049)),	-- Pattern: Greater Drums of Speed (RECIPE!)
-							-- #endif
-							i(29217),	-- Pattern: Netherfury Belt [A] (RECIPE!)
-							i(29218),	-- Pattern: Netherfury Boots [A] (RECIPE!)
-							i(29219),	-- Pattern: Netherfury Leggings [A] (RECIPE!)
-							i(30444),	-- Pattern: Reinforced Mining Bag (RECIPE!)
-							i(30443),	-- Recipe: Transmute Primal Fire to Earth (RECIPE!)
-							i(31830),	-- Cobalt Riding Talbuk (A) (MOUNT!)
-							i(29227),	-- Cobalt War Talbuk (A) (MOUNT!)
-							i(31832),	-- Silver Riding Talbuk (A) (MOUNT!)
-							i(29229),	-- Silver War Talbuk (A) (MOUNT!)
-							i(31834),	-- Tan Riding Talbuk (A) (MOUNT!)
-							i(29230),	-- Tan War Talbuk (A) (MOUNT!)
-							i(31836),	-- White Riding Talbuk (A) (MOUNT!)
-							i(29231),	-- White War Talbuk (A) (MOUNT!)
-							i(29144, {	-- Worg Hide Quiver
-								["timeline"] = { REMOVED_4_0_1 },
-							}),
-						},
+						["groups"] = bubbleDownClassicRep(FACTION_KURENAI, {
+							{		-- Neutral
+							}, {	-- Friendly
+								i(29217),	-- Pattern: Netherfury Belt [A] (RECIPE!)
+							}, {	-- Honored
+								i(34175, {	-- Pattern: Drums of Restoration [A] (RECIPE!)
+									["timeline"] = { ADDED_2_3_0 },
+								}),
+								i(34173, {	-- Pattern: Drums of Speed [A] (RECIPE!)
+									["timeline"] = { ADDED_2_3_0 },
+								}),
+								-- #if ANYCLASSIC
+								applyclassicphase(TBC_PHASE_FOUR, i(187048)),	-- Pattern: Greater Drums of Restoration (RECIPE!)
+								applyclassicphase(TBC_PHASE_FOUR, i(187049)),	-- Pattern: Greater Drums of Speed (RECIPE!)
+								-- #endif
+								i(29219),	-- Pattern: Netherfury Leggings [A] (RECIPE!)
+								i(30444),	-- Pattern: Reinforced Mining Bag (RECIPE!)
+								i(29144, {	-- Worg Hide Quiver
+									["timeline"] = { REMOVED_4_0_1 },
+								}),
+							}, {	-- Revered
+								i(29146),	-- Band of Elemental Spirits
+								i(29148),	-- Blackened Leather Spaulders
+								i(29142),	-- Kurenai Kilt
+								i(29218),	-- Pattern: Netherfury Boots [A] (RECIPE!)
+								i(30443),	-- Recipe: Transmute Primal Fire to Earth (RECIPE!)
+							}, {	-- Exalted
+								i(29138),	-- Arechron's Gift
+								i(29140),	-- Cloak of the Ancient Spirit
+								i(29136),	-- Far Seer's Helm
+								i(31774),	-- Kurenai Tabard
+								i(31830),	-- Cobalt Riding Talbuk (A) (MOUNT!)
+								i(29227),	-- Cobalt War Talbuk (A) (MOUNT!)
+								i(31832),	-- Silver Riding Talbuk (A) (MOUNT!)
+								i(29229),	-- Silver War Talbuk (A) (MOUNT!)
+								i(31834),	-- Tan Riding Talbuk (A) (MOUNT!)
+								i(29230),	-- Tan War Talbuk (A) (MOUNT!)
+								i(31836),	-- White Riding Talbuk (A) (MOUNT!)
+								i(29231),	-- White War Talbuk (A) (MOUNT!)
+							},
+						}),
 					}),
 					n(20096, {	-- Uriku <Cooking Supplies>
 						["coord"] = { 56.2, 73.2, NAGRAND },
