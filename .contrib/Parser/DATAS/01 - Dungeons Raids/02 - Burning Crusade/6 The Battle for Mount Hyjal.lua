@@ -555,63 +555,63 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 							}),
 							-- #endif
 						}, {	-- Honored
-						-- #if BEFORE CATA
-						i(32299),	-- Design: Balanced Shadowsong Amethyst [TBC] / Design: Shifting Shadowsong Amethyst [CATA+]
-						i(32311),	-- Design: Dazzling Seaspray Emerald [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
-						-- #endif
-						applyclassicphase(TBC_PHASE_FIVE, i(35765)),	-- Design: Forceful Seaspray Emerald
-						-- #if BEFORE CATA
-						i(32306),	-- Design: Glinting Pyrestone [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
-						i(32301),	-- Design: Glowing Shadowsong Amethyst [TBC] / Design: Timeless Shadowsong Amethyst [CATA+]
-						i(32300, {	-- Design: Infused Shadowsong Amethyst [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
-							["timeline"] = {
-								ADDED_2_1_0,
-								REMOVED_4_0_1, -- Renamed and not available after Cata
-							},
-						}),
-						-- #else
-						i(32306),	-- Design: Glinting Shadowsong Amethyst [CATA+] / Design: Glinting Pyrestone [TBC]
-						i(32300, {	-- Design: Glinting Shadowsong Amethyst [CATA+] / Design: Infused Shadowsong Amethyst [TBC]
-							["timeline"] = {
-								ADDED_2_1_0,
-								REMOVED_4_0_1, -- Renamed and not available after Cata
-							},
-						}),
-						-- #endif
-						i(32312),	-- Design: Jagged Seaspray Emerald
-						-- #if BEFORE CATA
-						i(32305, {	-- Design: Luminous Pyrestone [TBC] / Design: Reckless Pyrestone [CATA+]
-							["timeline"] = {
-								ADDED_2_1_0,
-								REMOVED_4_0_1, -- Renamed and not available after Cata
-							},
-						}),
-						-- #endif
-						i(32304),	-- Design: Potent Pyrestone
-						-- #if AFTER CATA
-						i(32311),	-- Design: Purified Shadowsong Amethyst [CATA+] / Design: Dazzling Seaspray Emerald [TBC]
-						-- #endif
-						applyclassicphase(TBC_PHASE_FIVE, i(35763)),	-- Design: Quick Lionseye
-						i(32310),	-- Design: Radiant Seaspray Emerald
-						applyclassicphase(TBC_PHASE_FIVE, i(35762)),	-- Design: Reckless Pyrestone
-						-- #if AFTER CATA
-						i(32305, {	-- Design: Reckless Pyrestone [CATA+] / Design: Luminous Pyrestone [TBC]
-							["timeline"] = {
-								ADDED_2_1_0,
-								REMOVED_4_0_1, -- Renamed and not available after Cata
-							},
-						}),
-						i(32299, {	-- Design: Shifting Shadowsong Amethyst [CATA+] / Design: Balanced Shadowsong Amethyst [TBC]
-							["timeline"] = {
-								ADDED_2_1_0,
-								REMOVED_4_0_1, -- Renamed and available after Cata
-							},
-						}),
-						-- #endif
-						applyclassicphase(TBC_PHASE_FIVE, i(35764)),	-- Design: Steady Seaspray Emerald
-						-- #if AFTER CATA
-						i(32301),	-- Design: Timeless Shadowsong Amethyst [CATA+] / Design: Glowing Shadowsong Amethyst [TBC]
-						-- #endif
+							-- #if BEFORE CATA
+							i(32299),	-- Design: Balanced Shadowsong Amethyst [TBC] / Design: Shifting Shadowsong Amethyst [CATA+]
+							i(32311),	-- Design: Dazzling Seaspray Emerald [TBC] / Design: Purified Shadowsong Amethyst [CATA+]
+							-- #endif
+							applyclassicphase(TBC_PHASE_FIVE, i(35765)),	-- Design: Forceful Seaspray Emerald
+							-- #if BEFORE CATA
+							i(32306),	-- Design: Glinting Pyrestone [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
+							i(32301),	-- Design: Glowing Shadowsong Amethyst [TBC] / Design: Timeless Shadowsong Amethyst [CATA+]
+							i(32300, {	-- Design: Infused Shadowsong Amethyst [TBC] / Design: Glinting Shadowsong Amethyst [CATA+]
+								["timeline"] = {
+									ADDED_2_1_0,
+									REMOVED_4_0_1, -- Renamed and not available after Cata
+								},
+							}),
+							-- #else
+							i(32306),	-- Design: Glinting Shadowsong Amethyst [CATA+] / Design: Glinting Pyrestone [TBC]
+							i(32300, {	-- Design: Glinting Shadowsong Amethyst [CATA+] / Design: Infused Shadowsong Amethyst [TBC]
+								["timeline"] = {
+									ADDED_2_1_0,
+									REMOVED_4_0_1, -- Renamed and not available after Cata
+								},
+							}),
+							-- #endif
+							i(32312),	-- Design: Jagged Seaspray Emerald
+							-- #if BEFORE CATA
+							i(32305, {	-- Design: Luminous Pyrestone [TBC] / Design: Reckless Pyrestone [CATA+]
+								["timeline"] = {
+									ADDED_2_1_0,
+									REMOVED_4_0_1, -- Renamed and not available after Cata
+								},
+							}),
+							-- #endif
+							i(32304),	-- Design: Potent Pyrestone
+							-- #if AFTER CATA
+							i(32311),	-- Design: Purified Shadowsong Amethyst [CATA+] / Design: Dazzling Seaspray Emerald [TBC]
+							-- #endif
+							applyclassicphase(TBC_PHASE_FIVE, i(35763)),	-- Design: Quick Lionseye
+							i(32310),	-- Design: Radiant Seaspray Emerald
+							applyclassicphase(TBC_PHASE_FIVE, i(35762)),	-- Design: Reckless Pyrestone
+							-- #if AFTER CATA
+							i(32305, {	-- Design: Reckless Pyrestone [CATA+] / Design: Luminous Pyrestone [TBC]
+								["timeline"] = {
+									ADDED_2_1_0,
+									REMOVED_4_0_1, -- Renamed and not available after Cata
+								},
+							}),
+							i(32299, {	-- Design: Shifting Shadowsong Amethyst [CATA+] / Design: Balanced Shadowsong Amethyst [TBC]
+								["timeline"] = {
+									ADDED_2_1_0,
+									REMOVED_4_0_1, -- Renamed and available after Cata
+								},
+							}),
+							-- #endif
+							applyclassicphase(TBC_PHASE_FIVE, i(35764)),	-- Design: Steady Seaspray Emerald
+							-- #if AFTER CATA
+							i(32301),	-- Design: Timeless Shadowsong Amethyst [CATA+] / Design: Glowing Shadowsong Amethyst [TBC]
+							-- #endif
 						}, {	-- Revered
 							-- #if BEFORE CATA
 							i(32309),	-- Design: Enduring Seaspray Emerald [TBC] / Design: Regal Seaspray Emerald [CATA+]
