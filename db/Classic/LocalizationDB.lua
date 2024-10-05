@@ -501,7 +501,6 @@ _.Modules.Events.SetEventInformation(141, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=3,["year"]=2025},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=6,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(479, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=4,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=11,["weekday"]=1,["year"]=2024},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=1,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=8,["weekday"]=1,["year"]=2024},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=6,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=13,["weekday"]=1,["year"]=2024},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=3,["weekday"]=1,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=10,["weekday"]=1,["year"]=2024},{["remappedID"]=374}),
@@ -511,7 +510,8 @@ _.Modules.Events.SetEventInformation(479, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=2,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=3,["monthDay"]=9,["weekday"]=1,["year"]=2025},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=6,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=4,["monthDay"]=13,["weekday"]=1,["year"]=2025},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=4,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=11,["weekday"]=1,["year"]=2025},{["remappedID"]=374}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=1,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=8,["weekday"]=1,["year"]=2025},{["remappedID"]=375})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=1,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=6,["monthDay"]=8,["weekday"]=1,["year"]=2025},{["remappedID"]=375}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=6,["weekday"]=1,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=7,["monthDay"]=13,["weekday"]=1,["year"]=2025},{["remappedID"]=374})
 });
 _.Modules.Events.SetEventInformation(201, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=2,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=1,["year"]=2023}),
@@ -6918,14 +6918,20 @@ localize(_.ObjectNames, {
 end
 if simplifiedLocale == "zh" then
 localize(L.HEADER_NAMES, {
+	[-1000010] = "一般首领掉落",
 	[-1000013] = "常规商人物品",
 	[-1000015] = "恶魔训练师",
-	[-1000019] = "勘探",
+	[-1000019] = "探索",
+	[-1000032] = "稀有",
 	[-1000034] = "骑术训练师",
+	[-1000038] = "宝箱",
 	[-1000039] = "商人",
 	[-1000040] = "武器大师",
+	[-1000042] = "世界首领",
+	[-1000044] = "地区掉落",
 	[-1000048] = "梦魇之龙",
-	[-1000165] = "等级 0.5 套装",
+	[-1000142] = "荣誉头衔",
+	[-1000165] = "T0.5套装",
 	[-1000166] = "船长",
 	[-1000168] = "四骑士",
 	[-1000173] = DUNGEON_FLOOR_DIREMAUL5.." (东)",
@@ -6937,6 +6943,8 @@ localize(L.HEADER_NAMES, {
 	[-1000182] = "修道院",
 	[-1000185] = "阿塔莱防御者",
 	[-1000201] = "暗月马戏团",
+	[-1000215] = "冬幕节",
+	[-1000218] = "收获节",
 	[-1000223] = "仲夏火焰节",
 	[-1000227] = "荆棘谷钓鱼大赛",
 	[-1000234] = "安其拉之战捐献",
@@ -6953,6 +6961,7 @@ localize(L.HEADER_NAMES, {
 });
 localize(L.HEADER_DESCRIPTIONS, {
 	[-1000025] = "你可能需要在特定的节日活动中才能完成本节中的事物。",
+	[-1000030] = "此部分只会显示你当前角色的专业技能，除非处于账号模式或调试模式。",
 	[-1000033] = "包含有奖励或可从包含部分中的其他内容获得的事物。\n在此处合并以减少来自许多可能重复来源。",
 	[-1000040] = "武器大师是一个 NPC，为角色提供学习特定武器技能的机会，不同武器大师的可用性各不相同。所有武器技能都可以在 1 级进行训练，长柄武器除外，需要 20 级。\n\n在补丁 4.0.1 中，武器大师的训练已经过时，因为现在每个班级在创建时都会学习所有适合班级的武器熟练程度。不久之后，武器大师就被从游戏中删除了。",
 	[-1000380] = "此列表包含 ATT Discord 报告的无法获取的物品，这些物品是暴雪尚未修复的错误。\n\n注意：在此列表中忽略所有过滤器以获得可见性。此列表中仅显示因疏忽而从游戏中移除的物品。\n\n致暴雪开发者：请修复下面列出的物品和事件。",
