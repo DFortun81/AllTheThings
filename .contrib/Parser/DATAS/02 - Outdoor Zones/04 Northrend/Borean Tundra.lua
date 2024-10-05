@@ -2112,7 +2112,7 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11793,	-- Further Investigation
 						["groups"] = {
 							i(37405),	-- Marshwalker Pauldrons
-							i(37405),	-- Marshwalker Pauldrons
+							i(37415),	-- Tundrastrider Ringmail
 							i(37480),	-- Mightstone Helm
 							i(37204),	-- Transborean Leggings
 						},
