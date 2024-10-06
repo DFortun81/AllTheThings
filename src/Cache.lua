@@ -778,7 +778,6 @@ else
 		CacheField(group, "instanceID", value);
 		if group.headerID then
 			tinsert(runners, function()
-				print("Encountered Instance With HeaderID", value, group.headerID, group.text);
 				zoneTextHeaderIDRunner(group, group.headerID);
 			end);
 		end
