@@ -145,14 +145,15 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				}),
-				q(7785, {	-- Examine the Vessel
+				-- #if NOT SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_THREE, q(7785, {	-- Examine the Vessel
 					["qg"] = 14347,	-- Highlord Demitrian
 					["provider"] = { "i", 19016 },	-- Vessel of Rebirth
 					["description"] = "This quest becomes available once you have looted either of the two Bindings of the Windseeker.\n\nWARNING: You may want to immediately travel to Silithus when you do as the Essence of the Firelord only drops from Ragnaros if you are on this quest!",
 					-- #if ANYCLASSIC
 					-- Completable by any class in Retail... confirm for Classic
 					-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
-					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
+					["classes"] = SWORD_CLASSES,
 					-- #endif
 					["coords"] = {
 						-- #if AFTER LEGION
@@ -166,7 +167,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						{ "i", 18563, 1 },	-- Bindings of the Windseeker [Left]
 						{ "i", 18564, 1 },	-- Bindings of the Windseeker [Right]
 					},
-				}),
+				})),
+				-- #endif
 				q(6821, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_3_0_8 } }, {	-- Eye of the Emberseer
 					["qg"] = 13278,	-- Duke Hydraxis
 					["sourceQuests"] = {
@@ -236,6 +238,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
+				-- #if NOT SEASON_OF_DISCOVERY
 				applyclassicphase(PHASE_THREE, q(7787, {	-- Rise, Thunderfury!
 					["qg"] = 14347,	-- Highlord Demitrian
 					["provider"] = { "i", 19018 },	-- Dormant Wind Kissed Blade
@@ -243,7 +246,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if ANYCLASSIC
 					-- Completable by any class in Retail... confirm for Classic
 					-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
-					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
+					["classes"] = SWORD_CLASSES,
 					-- #endif
 					["coord"] = { 21.7, 8.6, SILITHUS },
 					["lvl"] = 60,
@@ -258,6 +261,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
 					},
 				})),
+				-- #endif
 				q(6805, bubbleDown({ ["timeline"] = { ADDED_1_0_1, REMOVED_4_0_3 } }, {	-- Stormers and Rumblers
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
@@ -302,7 +306,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						}),
 					},
 				})),
-				q(7786, {	-- Thunderaan the Windseeker
+				-- #if NOT SEASON_OF_DISCOVERY
+				applyclassicphase(PHASE_THREE, q(7786, {	-- Thunderaan the Windseeker
 					["qg"] = 14347,	-- Highlord Demitrian
 					["sourceQuest"] = 7785,	-- Examine the Vessel
 					["altQuests"] = { 7521 },	-- Thunderaan the Windseeker [Original?]
@@ -316,7 +321,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					-- #if ANYCLASSIC
 					-- Completable by any class in Retail... confirm for Classic
 					-- Crieve NOTE: Even if it were... Some of us aren't this crazy.
-					["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
+					["classes"] = SWORD_CLASSES,
 					-- #endif
 					-- #if NOT ANYCLASSIC
 					["cost"] = {
@@ -360,7 +365,8 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							},
 						}),
 					},
-				}),
+				})),
+				-- #endif
 			}),
 			n(REWARDS, {
 				i(17333, {	-- Aqual Quintessence
@@ -869,7 +875,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					i(19017, {	-- Essence of the Firelord
 						["b"] = 1,
 						["description"] = "For this to drop, you must be on the Thunderaan the Windseeker quest.",
-						["classes"] = { WARRIOR, PALADIN, ROGUE, HUNTER, DEATHKNIGHT, DEMONHUNTER, MAGE, MONK, WARLOCK },
+						["classes"] = SWORD_CLASSES,
 					}),
 					i(138018, {	-- Clothes Chest Pattern: Molten Core
 						["timeline"] = { ADDED_7_0_3 },

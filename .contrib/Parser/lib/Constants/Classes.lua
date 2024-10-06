@@ -154,3 +154,20 @@ EARTHEN_CLASSES = {
 	WARLOCK,
 	WARRIOR,
 };
+SWORD_CLASSES = {
+	WARRIOR,
+	PALADIN,
+	ROGUE,
+	HUNTER,
+	-- #if AFTER WRATH
+	DEATHKNIGHT,
+	-- #endif
+	-- #if AFTER LEGION
+	DEMONHUNTER,
+	-- #endif
+	MAGE,
+	-- #if AFTER MOP
+	MONK,
+	-- #endif
+	WARLOCK
+};
