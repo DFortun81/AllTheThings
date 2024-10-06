@@ -7,6 +7,13 @@
 local phases = {};
 local phasesByReadable, phasesByConstant = {}, {};
 Phases = phases;	-- This is global, so that it can be found by Parser!
+local defaultStateColors = {
+	"FFFF0000",
+	"FFFFAAAA",
+	"FFAAFFAA",
+	"FFAAFFAA",
+	"FFAAFFAA",
+};
 createPhase = function(data)
 	if not data then
 		print("INVALID PHASE: You must pass data into the createPhase function.");
@@ -27,7 +34,7 @@ createPhase = function(data)
 		else
 			phasesByReadable[data.readable] = data;
 		end
-
+		
 		-- Try to find the phaseID assignment from the readable table.
 		local phaseID = data.phaseID or PhaseAssignments[data.readable];
 		if not phaseID then
@@ -44,10 +51,33 @@ createPhase = function(data)
 		---@diagnostic disable-next-line: undefined-global
 		data.filepath = CurrentSubFileName or CurrentFileName;
 		--print("PHASE", phaseID .. ":", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
+		
+		-- We want our descriptions to be color coded by state if a color wasn't manually supplied.
+		local color = data.color or defaultStateColors[data.state];
+		if color then
+			local description = data.description;
+			if description then
+				for key,value in pairs(description) do
+					if string.sub(value, 1, 2):lower() ~= "|c" then
+						description[key] = "|c" .. color .. value .. "|r";
+					end
+				end
+			end
+		end
+		local lore = data.lore;
+		if lore then
+			for key,value in pairs(lore) do
+				if string.sub(value, 1, 2):lower() ~= "|c" then
+					lore[key] = "|cFFFFAAAA" .. value .. "|r";
+				end
+			end
+		end
 		return phaseID;
 	end
 end
 end)();
+
+
 
 -- Unobtainable Filters
 NEVER_IMPLEMENTED = createPhase({
@@ -71,7 +101,7 @@ NEVER_IMPLEMENTED = createPhase({
 		tw = "從未實裝",
 	},
 	description = {
-		en = "|CFFFF0000This was never available to players.|r",
+		en = "This was never available to players.",
 		--[[
 		es = "",
 		de = "",
@@ -79,10 +109,10 @@ NEVER_IMPLEMENTED = createPhase({
 		it = "",
 		pt = "",
 		]]--
-		ru = "|CFFFF0000Никогда не был доступен игрокам.|r",
+		ru = "Никогда не был доступен игрокам.",
 		--ko = "",
-		cn = "|CFFFF0000此项玩家永远无法获得。|r",
-		tw = "|CFFFF0000此項玩家永遠無法獲得。|r",
+		cn = "此项玩家永远无法获得。",
+		tw = "此項玩家永遠無法獲得。",
 	},
 });
 REMOVED_FROM_GAME = createPhase({
@@ -106,7 +136,7 @@ REMOVED_FROM_GAME = createPhase({
 		tw = "已從遊戲中移除",
 	},
 	description = {
-		en = "|CFFFF0000This has been removed from the game.|r",
+		en = "This has been removed from the game.",
 		--[[
 		es = "",
 		de = "",
@@ -114,10 +144,10 @@ REMOVED_FROM_GAME = createPhase({
 		it = "",
 		pt = "",
 		]]--
-		ru = "|CFFFF0000Был убран из игры.|r",
+		ru = "Был убран из игры.",
 		--ko = "",
-		cn = "|CFFFF0000此项已从游戏中删除。|r",
-		tw = "|CFFFF0000此項已從遊戲中刪除。|r",
+		cn = "此项已从游戏中删除。",
+		tw = "此項已從遊戲中刪除。",
 	},
 });
 BLIZZARD_BALANCE = createPhase({
@@ -143,7 +173,7 @@ BLIZZARD_BALANCE = createPhase({
 		]]--
 	},
 	description = {
-		en = "|CFFFF0000This is locked behind a paywall such as the in-game shop, another Blizzard product, or the Recruit-A-Friend service.|r",
+		en = "This is locked behind a paywall such as the in-game shop, another Blizzard product, or the Recruit-A-Friend service.",
 		--[[
 		es = "",
 		de = "",
@@ -151,7 +181,7 @@ BLIZZARD_BALANCE = createPhase({
 		it = "",
 		pt = "",
 		]]--
-		ru = "|CFFFF0000Может быть скрыто за вложением денег, возможно, игровой магазин, другая игра Blizzard и \"Пригласи Друга\".|r",
+		ru = "Может быть скрыто за вложением денег, возможно, игровой магазин, другая игра Blizzard и \"Пригласи Друга\".",
 		--[[
 		ko = "",
 		cn = "",
@@ -159,18 +189,7 @@ BLIZZARD_BALANCE = createPhase({
 		]]--
 	},
 	lore = {
-		en = "|CFFFFAAAAThe act of encouraging the use of real money in any version of the game is widely frowned upon. Participate in this content at your own risk.|r",
-		--[[
-		es = "",
-		de = "",
-		fr = "",
-		it = "",
-		pt = "",
-		ru = "",
-		ko = "",
-		cn = "",
-		tw = "",
-		]]--
+		en = "The act of encouraging the use of real money in any version of the game is widely frowned upon. Participate in this content at your own risk.",
 	},
 });
 -- #if ANYCLASSIC
@@ -201,7 +220,7 @@ BLACK_MARKET = createPhase({
 		tw = "黑市拍賣行 [BMAH]",
 	},
 	description = {
-		en = "|CFFFF0000This item is available on the Black Market Auction House. The original source may have been removed.|r",
+		en = "This item is available on the Black Market Auction House. The original source may have been removed.",
 		--[[
 		es = "",
 		de = "",
@@ -211,8 +230,8 @@ BLACK_MARKET = createPhase({
 		ru = "",
 		ko = "",
 		]]--
-		cn = "|CFFFF0000此物品可在黑市拍卖行购买。原始来源可能已被删除。|r",
-		tw = "|CFFFF0000此物品可在黑市拍賣行購買。原始來源可能已被刪除。|r",
+		cn = "此物品可在黑市拍卖行购买。原始来源可能已被删除。",
+		tw = "此物品可在黑市拍賣行購買。原始來源可能已被刪除。",
 	},
 });
 TCG = createPhase({
@@ -238,7 +257,7 @@ TCG = createPhase({
 		tw = "集換式卡牌遊戲 [TCG]",
 	},
 	description = {
-		en = "|CFFFF0000Originally obtained via a TCG card that is no longer in print, but may still be available via the Black Market, In-Game, or Real Life Auction House.|r",
+		en = "Originally obtained via a TCG card that is no longer in print, but may still be available via the Black Market, In-Game, or Real Life Auction House.",
 		--[[
 		es = "",
 		de = "",
@@ -246,12 +265,12 @@ TCG = createPhase({
 		it = "",
 		pt = "",
 		]]--
-		ru = "|CFFFF0000Первоначально доступно через карту TCG, которая больше не печатается, но все еще может быть доступна на черном рынке, в игре или на аукционах в реальной жизни.|r",
+		ru = "Первоначально доступно через карту TCG, которая больше не печатается, но все еще может быть доступна на черном рынке, в игре или на аукционах в реальной жизни.",
 		--[[
 		ko = "",
 		]]--
-		cn = "|CFFFF0000最初通过不再印刷的 TCG 卡获得，但仍可通过黑市、游戏内或现实中的拍卖行获得。|r",
-		tw = "|CFFFF0000最初通過不再印刷的 TCG 卡獲得，但仍可通過黑市、遊戲内或現實中的拍賣行獲得。|r",
+		cn = "最初通过不再印刷的 TCG 卡获得，但仍可通过黑市、游戏内或现实中的拍卖行获得。",
+		tw = "最初通過不再印刷的 TCG 卡獲得，但仍可通過黑市、遊戲内或現實中的拍賣行獲得。",
 	},
 });
 -- #endif
@@ -260,7 +279,7 @@ ELITE_PVP_REQUIREMENT = createPhase({
 	constant = "ELITE_PVP_REQUIREMENT",
 	export = true,
 	phaseID = 4,
-	state = 3,
+	state = 2,
 	text = {
 		en = "PvP Elite/Gladiator",
 		--[[
@@ -278,7 +297,7 @@ ELITE_PVP_REQUIREMENT = createPhase({
 		tw = "PvP 精良/角鬥士",
 	},
 	description = {
-		en = "|CFFFF0000This can no longer be purchased or unlocked as Transmog unless you have the required PvP Title, required PvP Rating or were in the Top % of that season.|r",
+		en = "This can no longer be purchased or unlocked as Transmog unless you have the required PvP Title, required PvP Rating or were in the Top % of that season.",
 		--[[
 		es = "",
 		de = "",
@@ -286,12 +305,12 @@ ELITE_PVP_REQUIREMENT = createPhase({
 		it = "",
 		pt = "",
 		]]--
-		ru = "|CFFFF0000Это больше нельзя будет купить или получить в коллекцию, если у вас нет необходимого PvP титула или если вы не входили в топ % лучших в этом сезоне.|r",
+		ru = "Это больше нельзя будет купить или получить в коллекцию, если у вас нет необходимого PvP титула или если вы не входили в топ % лучших в этом сезоне.",
 		--[[
 		ko = "",
 		]]--
-		cn = "|CFFFF0000除非您拥有所需的 PvP 头衔、所需的 PvP 等级或处于该赛季的前 %，否则无法再购买或解锁幻化。|r",
-		tw = "|CFFFF0000除非您擁有所需的 PvP 稱號、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖幻化。|r",
+		cn = "除非您拥有所需的 PvP 头衔、所需的 PvP 等级或处于该赛季的前 %，否则无法再购买或解锁幻化。",
+		tw = "除非您擁有所需的 PvP 稱號、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖幻化。",
 	},
 });
 UNLEARNABLE = createPhase({
@@ -317,7 +336,7 @@ UNLEARNABLE = createPhase({
 		tw = "不可學",
 	},
 	description = {
-		en = "|CFFFF0000This cannot be permanently collected, learned or used for transmog.|r",
+		en = "This cannot be permanently collected, learned or used for transmog.",
 		--[[
 		es = "",
 		de = "",
@@ -325,12 +344,12 @@ UNLEARNABLE = createPhase({
 		it = "",
 		pt = "",
 		]]--
-		ru = "|CFFFF0000Это нельзя собрать, выучить навсегда или использовать для трансмогрификации.|r",
+		ru = "Это нельзя собрать, выучить навсегда или использовать для трансмогрификации.",
 		--[[
 		ko = "",
 		]]--
-		cn = "|CFFFF0000这不能永久收集、学习或用于幻化。|r",
-		tw = "|CFFFF0000這不能永久收集、學習或用於幻化。|r",
+		cn = "这不能永久收集、学习或用于幻化。",
+		tw = "這不能永久收集、學習或用於幻化。",
 	},
 });
 TRAINING = UNLEARNABLE;
@@ -357,7 +376,7 @@ CONDITIONALLY_AVAILABLE = createPhase({
 		tw = "需要召唤物品",
 	},
 	description = {
-		en = "|CFFFF0000This is no longer available unless you know someone that has access to the items used to summon the boss.|r",
+		en = "This is no longer available unless you know someone that has access to the items used to summon the boss.",
 		--[[
 		es = "",
 		de = "",
@@ -365,12 +384,12 @@ CONDITIONALLY_AVAILABLE = createPhase({
 		it = "",
 		pt = "",
 		]]--
-		ru = "|CFFFF0000Это больше не доступно, если вы не знаете кого-то, у кого есть доступ к предметам, используемым для вызова босса.|r",
+		ru = "Это больше не доступно, если вы не знаете кого-то, у кого есть доступ к предметам, используемым для вызова босса.",
 		--[[
 		ko = "",
 		]]--
-		cn = "|CFFFF0000除非您认识可以使用用于召唤首领的物品的人，否则这将不再可用。|r",
-		tw = "|CFFFF0000除非您認識可以使用用於召唤首領的物品的人，否則這將不再可用。|r",
+		cn = "除非您认识可以使用用于召唤首领的物品的人，否则这将不再可用。",
+		tw = "除非您認識可以使用用於召唤首領的物品的人，否則這將不再可用。",
 	},
 	lore = {
 		en = "Note: Most Summoning Items can be reobtained if you had them in the past by talking to the respective NPC.",
@@ -412,7 +431,7 @@ TEMP_MOP_LEGENDARY_CLOAK_PHASE = createPhase({
 		tw = "決心罩氅，艾夏卡瑪斯",
 	},
 	description = {
-		en = "|CFFFF0000Only available to players that completed the Legendary Cloak quest chain during Mists of Pandaria, obtained the Legendary Cloak Appearance during MoP: Remix or via the BMAH.|r",
+		en = "Only available to players that completed the Legendary Cloak quest chain during Mists of Pandaria, obtained the Legendary Cloak Appearance during MoP: Remix or via the BMAH.",
 		--[[
 		es = "",
 		de = "",
@@ -420,14 +439,18 @@ TEMP_MOP_LEGENDARY_CLOAK_PHASE = createPhase({
 		it = "",
 		pt = "",
 		]]--
-		ru = "|CFFFF0000Это доступно только игрокам, которые выполнили цепочку квестов «Легендарный плащ» во время Mists of Pandaria или через BMAH.|r",
+		ru = "Это доступно только игрокам, которые выполнили цепочку квестов «Легендарный плащ» во время Mists of Pandaria или через BMAH.",
 		--[[
 		ko = "",
 		]]--
-		cn = "|CFFFF0000这仅适用于在《熊猫人之谜》或通过黑市拍卖行完成传奇披风任务链的玩家。|r",
-		tw = "|CFFFF0000這僅適用於在《潘達利亞之謎》或通過黑市拍賣行完成傳奇披風任務鏈的玩家。|r",
+		cn = "这仅适用于在《熊猫人之谜》或通过黑市拍卖行完成传奇披风任务链的玩家。",
+		tw = "這僅適用於在《潘達利亞之謎》或通過黑市拍賣行完成傳奇披風任務鏈的玩家。",
 	},
 });
+
+
+
+
 
 -- Classic Phases
 local defaultDescription = {
@@ -452,44 +475,35 @@ local function createClassicPhase(expansion, data)
 		end
 		data.description = description;
 	end
-	-- In Classic we want our phase descriptions to be color coded.
 	for key,value in pairs(description) do
-		local str = value:format(data.text[key] or data.text.en, expansion.text[key] or expansion.text.en);
-		if string.sub(str, 1, 2):lower() ~= "|c" then str = "|CFFAAFFAA" .. str .. "|r"; end
-		description[key] = str;
-	end
-	local lore = data.lore;
-	if lore then
-		for key,value in pairs(lore) do
-			if string.sub(value, 1, 2):lower() ~= "|c" then
-				lore[key] = "|CFFFFAAAA" .. value .. "|r";
-			end
-		end
+		description[key] = value:format(data.text[key] or data.text.en, expansion.text[key] or expansion.text.en);
 	end
 	if not data.state then
 		data.state = 2;
 	end
+	data.color = "FFAAFFAA";
 	data.export = true;
 	return createPhase(data);
 	-- #else
 	return data.phaseID;
 	-- #endif
 end
+-- If someone wants to translate this stuff at some point that'd be neat.
+--[[
+es = "",
+de = "",
+fr = "",
+it = "",
+pt = "",
+ru = "",
+ko = "",
+cn = "",
+tw = "",
+]]--
 local EXPANSIONS = {};
 EXPANSIONS.CLASSIC_WOW = {
 	text = {
 		en = "Classic WoW",
-		--[[
-		es = "",
-		de = "",
-		fr = "",
-		it = "",
-		pt = "",
-		ru = "",
-		ko = "",
-		cn = "",
-		tw = "",
-		]]--
 	},
 };
 PHASE_ONE = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
@@ -499,31 +513,9 @@ PHASE_ONE = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
 	phaseID = 11,
 	text = {
 		en = "Phase 1",
-		--[[
-		es = "",
-		de = "",
-		fr = "",
-		it = "",
-		pt = "",
-		ru = "",
-		ko = "",
-		cn = "",
-		tw = "",
-		]]--
 	},
 	lore = {
 		en = "Included Molten Core and Onyxia's Lair.",
-		--[[
-		es = "",
-		de = "",
-		fr = "",
-		it = "",
-		pt = "",
-		ru = "",
-		ko = "",
-		cn = "",
-		tw = "",
-		]]--
 	},
 });
 PHASE_ONE_DIREMAUL = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
@@ -533,45 +525,12 @@ PHASE_ONE_DIREMAUL = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
 	phaseID = 1101,
 	text = {
 		en = "Dire Maul",
-		--[[
-		es = "",
-		de = "",
-		fr = "",
-		it = "",
-		pt = "",
-		ru = "",
-		ko = "",
-		cn = "",
-		tw = "",
-		]]--
 	},
 	description = {
 		en = "This became available with the %s Phase Release of %s.",
-		--[[
-		es = "",
-		de = "",
-		fr = "",
-		it = "",
-		pt = "",
-		ru = "",
-		ko = "",
-		cn = "",
-		tw = "",
-		]]--
 	},
 	lore = {
 		en = "Included Dire Maul.",
-		--[[
-		es = "",
-		de = "",
-		fr = "",
-		it = "",
-		pt = "",
-		ru = "",
-		ko = "",
-		cn = "",
-		tw = "",
-		]]--
 	},
 });
 PHASE_TWO = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
@@ -581,31 +540,9 @@ PHASE_TWO = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
 	phaseID = 12,
 	text = {
 		en = "Phase 2",
-		--[[
-		es = "",
-		de = "",
-		fr = "",
-		it = "",
-		pt = "",
-		ru = "",
-		ko = "",
-		cn = "",
-		tw = "",
-		]]--
 	},
 	lore = {
 		en = "Included World PvP and PvP Honor Titles.",
-		--[[
-		es = "",
-		de = "",
-		fr = "",
-		it = "",
-		pt = "",
-		ru = "",
-		ko = "",
-		cn = "",
-		tw = "",
-		]]--
 	},
 });
 PHASE_THREE = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
@@ -615,31 +552,9 @@ PHASE_THREE = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
 	phaseID = 13,
 	text = {
 		en = "Phase 3",
-		--[[
-		es = "",
-		de = "",
-		fr = "",
-		it = "",
-		pt = "",
-		ru = "",
-		ko = "",
-		cn = "",
-		tw = "",
-		]]--
 	},
 	lore = {
 		en = "Included Blackwing Lair and the completion for Thunderfury.",
-		--[[
-		es = "",
-		de = "",
-		fr = "",
-		it = "",
-		pt = "",
-		ru = "",
-		ko = "",
-		cn = "",
-		tw = "",
-		]]--
 	},
 });
 PHASE_THREE_DMF_CARDS = PHASE_THREE;
@@ -653,31 +568,9 @@ PHASE_FOUR = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
 	phaseID = 14,
 	text = {
 		en = "Phase 4",
-		--[[
-		es = "",
-		de = "",
-		fr = "",
-		it = "",
-		pt = "",
-		ru = "",
-		ko = "",
-		cn = "",
-		tw = "",
-		]]--
 	},
 	lore = {
 		en = "Included Zul'Gurub and the World Dragons.",
-		--[[
-		es = "",
-		de = "",
-		fr = "",
-		it = "",
-		pt = "",
-		ru = "",
-		ko = "",
-		cn = "",
-		tw = "",
-		]]--
 	},
 });
 PHASE_FOUR_DARKIRON_RECIPES = PHASE_FOUR;
