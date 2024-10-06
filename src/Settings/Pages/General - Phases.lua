@@ -77,15 +77,17 @@ for i,o in ipairs({ { 11, 0, 0 }, {1101, spacing, -vspacing }, { 12, 0, -vspacin
 	local u = o[1];
 	yoffset = o[3] or 6;
 	local phase = phases[u];
-	local filter = child:CreateCheckBox(phase.name or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
-	local description = phase.description;
-	if phase.lore then description = description .. "\n \n" .. phase.lore; end
-	filter:SetATTTooltip(description .. "\n\nID: " .. u)
-	filter:SetPoint("LEFT", ClassicPhasesLabel, "LEFT", o[2], 0);
-	filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
-	filter:SetScale(o[2] > 0 and 0.6 or 0.8);
-	filter.u = u;
-	last = filter;
+	if phase then
+		local filter = child:CreateCheckBox(phase.name or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
+		local description = phase.description;
+		if phase.lore then description = description .. "\n \n" .. phase.lore; end
+		filter:SetATTTooltip(description .. "\n\nID: " .. u)
+		filter:SetPoint("LEFT", ClassicPhasesLabel, "LEFT", o[2], 0);
+		filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
+		filter:SetScale(o[2] > 0 and 0.6 or 0.8);
+		filter.u = u;
+		last = filter;
+	end
 end
 
 local TBCPhasesLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
@@ -96,19 +98,21 @@ TBCPhasesLabel:SetText("|CFFAAFFAATBC Phases|r");
 TBCPhasesLabel:Show();
 
 last, yoffset = TBCPhasesLabel, -4;
-for i,o in ipairs({ { 17, 0, 0 }, {1701, spacing, -vspacing }, { 18, 0, -vspacing }, {1801, spacing, -vspacing }, { 1802, spacing }, { 19, 0, -vspacing }, { 1901, spacing, -vspacing }, { 1902, spacing }, { 20, 0, -vspacing }, { 21, 0 }, {2101, spacing, -vspacing }, { 2102, spacing }, { 2103, spacing }, { 2104, spacing }, { 2105, spacing }, { 2106, spacing }, { 2107, spacing }, { 1601, spacing, -vspacing }, }) do
+for i,o in ipairs({ { 17, 0, 0 }, {1701, spacing, -vspacing }, { 18, 0, -vspacing }, {1801, spacing, -vspacing }, { 1802, spacing }, { 19, 0, -vspacing }, { 1901, spacing, -vspacing }, { 1902, spacing }, { 20, 0, -vspacing }, { 21, 0 }, {2101, spacing, -vspacing }, { 2102, spacing }, { 2103, spacing }, { 2104, spacing }, { 2105, spacing }, { 2106, spacing }, { 2107, spacing }, { 2108, spacing, -vspacing }, }) do
 	local u = o[1];
 	yoffset = o[3] or 6;
 	local phase = phases[u];
-	local filter = child:CreateCheckBox(phase.name or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
-	local description = phase.description;
-	if phase.lore then description = description .. "\n \n" .. phase.lore; end
-	filter:SetATTTooltip(description .. "\n\nID: " .. u)
-	filter:SetPoint("LEFT", TBCPhasesLabel, "LEFT", o[2], 0);
-	filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
-	filter:SetScale(o[2] > 0 and 0.6 or 0.8);
-	filter.u = u;
-	last = filter;
+	if phase then
+		local filter = child:CreateCheckBox(phase.name or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
+		local description = phase.description;
+		if phase.lore then description = description .. "\n \n" .. phase.lore; end
+		filter:SetATTTooltip(description .. "\n\nID: " .. u)
+		filter:SetPoint("LEFT", TBCPhasesLabel, "LEFT", o[2], 0);
+		filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
+		filter:SetScale(o[2] > 0 and 0.6 or 0.8);
+		filter.u = u;
+		last = filter;
+	end
 end
 
 local WrathPhasesLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
@@ -123,15 +127,17 @@ for i,o in ipairs({ { 30, 0, 0 }, {3001, spacing, -vspacing }, { 31, 0, -vspacin
 	local u = o[1];
 	yoffset = o[3] or 6;
 	local phase = phases[u];
-	local filter = child:CreateCheckBox(phase.name or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
-	local description = phase.description;
-	if phase.lore then description = description .. "\n \n" .. phase.lore; end
-	filter:SetATTTooltip(description .. "\n\nID: " .. u)
-	filter:SetPoint("LEFT", WrathPhasesLabel, "LEFT", o[2], 0);
-	filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
-	filter:SetScale(o[2] > 0 and 0.6 or 0.8);
-	filter.u = u;
-	last = filter;
+	if phase then
+		local filter = child:CreateCheckBox(phase.name or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
+		local description = phase.description;
+		if phase.lore then description = description .. "\n \n" .. phase.lore; end
+		filter:SetATTTooltip(description .. "\n\nID: " .. u)
+		filter:SetPoint("LEFT", WrathPhasesLabel, "LEFT", o[2], 0);
+		filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
+		filter:SetScale(o[2] > 0 and 0.6 or 0.8);
+		filter.u = u;
+		last = filter;
+	end
 end
 
 local CataclysmPhasesLabel = child:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
@@ -146,13 +152,15 @@ for i,o in ipairs({ { 40, 0, 0 }, {4001, spacing, -vspacing }, {4002, spacing },
 	local u = o[1];
 	yoffset = o[3] or 6;
 	local phase = phases[u];
-	local filter = child:CreateCheckBox(phase.name or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
-	local description = phase.description;
-	if phase.lore then description = description .. "\n \n" .. phase.lore; end
-	filter:SetATTTooltip(description .. "\n\nID: " .. u)
-	filter:SetPoint("LEFT", CataclysmPhasesLabel, "LEFT", o[2], 0);
-	filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
-	filter:SetScale(o[2] > 0 and 0.6 or 0.8);
-	filter.u = u;
-	last = filter;
+	if phase then
+		local filter = child:CreateCheckBox(phase.name or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
+		local description = phase.description;
+		if phase.lore then description = description .. "\n \n" .. phase.lore; end
+		filter:SetATTTooltip(description .. "\n\nID: " .. u)
+		filter:SetPoint("LEFT", CataclysmPhasesLabel, "LEFT", o[2], 0);
+		filter:SetPoint("TOP", last, "BOTTOMLEFT", 0, yoffset);
+		filter:SetScale(o[2] > 0 and 0.6 or 0.8);
+		filter.u = u;
+		last = filter;
+	end
 end

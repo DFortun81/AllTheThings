@@ -510,7 +510,7 @@ local function createClassicPhase(data)
 		data.readable = CurrentClassicExpansion.text.en .. " - " .. data.text.en;
 	end
 	data.color = "FFAAFFAA";
-	data.export = true;
+	--data.export = true;
 	return createPhase(data);
 	-- #else
 	return data.phaseID;

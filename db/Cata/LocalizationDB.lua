@@ -6491,27 +6491,6 @@ local phases = {
 		buildVersion = 11305,
 		state = 2,
 	},
-	[1501] = {
-		name = "AQ War Effort",
-		description = "|cFFAAFFAAThis was only available during the Ahn'Qiraj War Effort.|r",
-		lore = "|cFFFFAAAAIf the War Effort has been completed on your server, simply turn this off.|r",
-		minimumBuildVersion = 11301,
-		state = 2,
-	},
-	[1502] = {
-		name = "Gates Unopened",
-		description = "|cFFAAFFAAThis was only available up until the Scarab Lords on your server have rung the gong.|r",
-		lore = "|cFFFFAAAAIf the Gates of Anh'Qiraj have been opened on your server, simply turn this off.|r",
-		minimumBuildVersion = 11301,
-		state = 2,
-	},
-	[1503] = {
-		name = "10-Hour War",
-		description = "|cFFAAFFAAThis was only available during the 10 Hour War after the Scarab Lord(s) bang the gong.|r",
-		lore = "|cFFFFAAAAIf the Gates of Anh'Qiraj have been opened on your server, simply turn this off.|r",
-		minimumBuildVersion = 11301,
-		state = 2,
-	},
 	[1504] = {
 		name = "Catch-Up",
 		description = "|cFFAAFFAAThis became available near the end of Phase 5 in order to provide Catch-Up Nature Resist gear for those still working on AQ40.|r",
@@ -6531,7 +6510,7 @@ local phases = {
 	[1601] = {
 		name = "Scourge Invasion",
 		description = "|cFFAAFFAAThis was only available during the Scourge Invasion.|r",
-		lore = "|cFFFFAAAAIf both Scourge Invasions have been completed on your server, simply turn this off.|r",
+		lore = "|cFFFFAAAAIf the Scourge Invasion has ended on your server, simply turn this off.|r",
 		minimumBuildVersion = 11301,
 		state = 2,
 	},
@@ -6558,75 +6537,12 @@ local phases = {
 		minimumBuildVersion = 11301,
 		state = 2,
 	},
-	[1605] = {
-		name = "Season of Discovery",
-		description = "|cFFAAFFAAThis was not available until Phase 1 of Season of Discovery.|r",
-		lore = "|cFFFFAAAAIf Season of Discovery is active on your server, simply turn this on.|r",
-		minimumBuildVersion = 11500000,
-		state = 2,
-	},
-	[1606] = {
-		name = "Phase 2",
-		description = "|cFFAAFFAAThis was not available until Phase 2 of Season of Discovery.|r",
-		lore = "|cFFFFAAAAIf Phase 2 of Season of Discovery is active on your server, simply turn this on.|r",
-		minimumBuildVersion = 11501000,
-		state = 2,
-	},
-	[1607] = {
-		name = "Phase 3",
-		description = "|cFFAAFFAAThis was not available until Phase 3 of Season of Discovery.|r",
-		lore = "|cFFFFAAAAIf Phase 3 of Season of Discovery is active on your server, simply turn this on.|r",
-		minimumBuildVersion = 11502000,
-		state = 2,
-	},
-	[1608] = {
-		name = "Phase 4",
-		description = "|cFFAAFFAAThis was not available until Phase 4 of Season of Discovery.|r",
-		lore = "|cFFFFAAAAIf Phase 4 of Season of Discovery is active on your server, simply turn this on.|r",
-		minimumBuildVersion = 11503000,
-		state = 2,
-	},
-	[1609] = {
-		name = "Phase 5",
-		description = "|cFFAAFFAAThis was not available until Phase 5 of Season of Discovery.|r",
-		lore = "|cFFFFAAAAIf Phase 5 of Season of Discovery is active on your server, simply turn this on.|r",
-		minimumBuildVersion = 11504000,
-		state = 2,
-	},
-	[1610] = {
-		name = "Phase 6",
-		description = "|cFFAAFFAAThis was not available until Phase 6 of Season of Discovery.|r",
-		lore = "|cFFFFAAAAIf Phase 6 of Season of Discovery is active on your server, simply turn this on.|r",
-		minimumBuildVersion = 11505000,
-		state = 2,
-	},
-	[1611] = {
-		name = "Phase 7",
-		description = "|cFFAAFFAAThis was not available until Phase 7 of Season of Discovery.|r",
-		lore = "|cFFFFAAAAIf Phase 7 of Season of Discovery is active on your server, simply turn this on.|r",
-		minimumBuildVersion = 11506000,
-		state = 2,
-	},
-	[1612] = {
-		name = "Phase 8",
-		description = "|cFFAAFFAAThis was not available until Phase 8 of Season of Discovery.|r",
-		lore = "|cFFFFAAAAIf Phase 8 of Season of Discovery is active on your server, simply turn this on.|r",
-		minimumBuildVersion = 11507000,
-		state = 2,
-	},
 	[17] = {
 		name = "Phase 1",
 		description = "|cFFAAFFAAThis was not available until Phase 1 of TBC Classic.|r",
 		lore = "|cFFFFAAAAIncluded Karazhan, Magtheridon's Lair, and Gruul's Lair.|r",
 		minimumBuildVersion = 20501,
 		buildVersion = 20501,
-		state = 2,
-	},
-	[1701] = {
-		name = "Dark Portal Opens",
-		description = "|cFFAAFFAAThis was only available during the Opening of the Dark Portal event before the launch of TBC.|r",
-		lore = "|cFFFFAAAAIf the Dark Portal has been opened on your server, simply turn this off.|r",
-		minimumBuildVersion = 20501,
 		state = 2,
 	},
 	[18] = {
@@ -6757,13 +6673,6 @@ local phases = {
 		buildVersion = 30400,
 		state = 2,
 	},
-	[3001] = {
-		name = "Realm First",
-		description = "|cFFAAFFAAThis was only available for the first player to do the thing on your realm!|r",
-		lore = "|cFFFFAAAABut if you were realm first, good for you.|r",
-		minimumBuildVersion = 30400,
-		state = 2,
-	},
 	[31] = {
 		name = "Phase 2",
 		description = "|cFFAAFFAAThis was not available until Phase 2 of Wrath Classic.|r",
@@ -6810,22 +6719,6 @@ local phases = {
 		lore = "|cFFFFAAAAIncluded The Ruby Sanctum.|r",
 		minimumBuildVersion = 30400,
 		buildVersion = 30403,
-		state = 2,
-	},
-	[3303] = {
-		name = "Operation Zalazane",
-		description = "|cFFAAFFAAThis became available with the release of Operation Gnomeregan and Zalazane's Fall during Wrath Classic.|r",
-		lore = "|cFFFFAAAAIncluded Operation Gnomeregan and Zalazane's Fall|r",
-		minimumBuildVersion = 30400,
-		buildVersion = 30403,
-		state = 2,
-	},
-	[3304] = {
-		name = "Elemental Unrest",
-		description = "|cFFAAFFAAThis became available with the release of the Elemental Unrest Cataclysm Prepatch Event during Wrath Classic.|r",
-		lore = "|cFFFFAAAAThe Elemental Unrest Pre-Expansion Event?|r",
-		minimumBuildVersion = 30400,
-		buildVersion = 30404,
 		state = 2,
 	},
 	[40] = {
@@ -8656,13 +8549,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 4 de WoW Classic.|r",
 	[15] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 5 de WoW Classic.|r",
 	[16] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 6 de WoW Classic.|r",
-	[1606] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 2 de Season of Discovery.|r",
-	[1607] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 3 de Season of Discovery.|r",
-	[1608] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 4 de Season of Discovery.|r",
-	[1609] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 5 de Season of Discovery.|r",
-	[1610] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 6 de Season of Discovery.|r",
-	[1611] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 7 de Season of Discovery.|r",
-	[1612] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 8 de Season of Discovery.|r",
 	[17] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 1 de TBC Classic.|r",
 	[18] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 2 de TBC Classic.|r",
 	[19] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 3 de TBC Classic.|r",
@@ -8675,16 +8561,6 @@ for key,value in pairs({
 	[40] = "|cFFAAFFAAEsto no estuvo disponible hasta Phase 1 de Cataclysm Classic.|r",
 })
 do phases[key].description = value; end
-for key,value in pairs({
-	[1606] = "|cFFFFAAAASi Phase 2 de Season of Discovery está activo en su servidor, simplemente actívelo.|r",
-	[1607] = "|cFFFFAAAASi Phase 3 de Season of Discovery está activo en su servidor, simplemente actívelo.|r",
-	[1608] = "|cFFFFAAAASi Phase 4 de Season of Discovery está activo en su servidor, simplemente actívelo.|r",
-	[1609] = "|cFFFFAAAASi Phase 5 de Season of Discovery está activo en su servidor, simplemente actívelo.|r",
-	[1610] = "|cFFFFAAAASi Phase 6 de Season of Discovery está activo en su servidor, simplemente actívelo.|r",
-	[1611] = "|cFFFFAAAASi Phase 7 de Season of Discovery está activo en su servidor, simplemente actívelo.|r",
-	[1612] = "|cFFFFAAAASi Phase 8 de Season of Discovery está activo en su servidor, simplemente actívelo.|r",
-})
-do phases[key].lore = value; end
 end
 if simplifiedLocale == "de" then
 localize(L.HEADER_NAMES, {
@@ -10485,13 +10361,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAADies war erst Phase 4 von WoW Classic verfügbar.|r",
 	[15] = "|cFFAAFFAADies war erst Phase 5 von WoW Classic verfügbar.|r",
 	[16] = "|cFFAAFFAADies war erst Phase 6 von WoW Classic verfügbar.|r",
-	[1606] = "|cFFAAFFAADies war erst Phase 2 von Season of Discovery verfügbar.|r",
-	[1607] = "|cFFAAFFAADies war erst Phase 3 von Season of Discovery verfügbar.|r",
-	[1608] = "|cFFAAFFAADies war erst Phase 4 von Season of Discovery verfügbar.|r",
-	[1609] = "|cFFAAFFAADies war erst Phase 5 von Season of Discovery verfügbar.|r",
-	[1610] = "|cFFAAFFAADies war erst Phase 6 von Season of Discovery verfügbar.|r",
-	[1611] = "|cFFAAFFAADies war erst Phase 7 von Season of Discovery verfügbar.|r",
-	[1612] = "|cFFAAFFAADies war erst Phase 8 von Season of Discovery verfügbar.|r",
 	[17] = "|cFFAAFFAADies war erst Phase 1 von TBC Classic verfügbar.|r",
 	[18] = "|cFFAAFFAADies war erst Phase 2 von TBC Classic verfügbar.|r",
 	[19] = "|cFFAAFFAADies war erst Phase 3 von TBC Classic verfügbar.|r",
@@ -10504,16 +10373,6 @@ for key,value in pairs({
 	[40] = "|cFFAAFFAADies war erst Phase 1 von Cataclysm Classic verfügbar.|r",
 })
 do phases[key].description = value; end
-for key,value in pairs({
-	[1606] = "|cFFFFAAAAWenn Phase 2 von Season of Discovery auf Ihrem Server aktiv ist, schalten Sie dies einfach ein.|r",
-	[1607] = "|cFFFFAAAAWenn Phase 3 von Season of Discovery auf Ihrem Server aktiv ist, schalten Sie dies einfach ein.|r",
-	[1608] = "|cFFFFAAAAWenn Phase 4 von Season of Discovery auf Ihrem Server aktiv ist, schalten Sie dies einfach ein.|r",
-	[1609] = "|cFFFFAAAAWenn Phase 5 von Season of Discovery auf Ihrem Server aktiv ist, schalten Sie dies einfach ein.|r",
-	[1610] = "|cFFFFAAAAWenn Phase 6 von Season of Discovery auf Ihrem Server aktiv ist, schalten Sie dies einfach ein.|r",
-	[1611] = "|cFFFFAAAAWenn Phase 7 von Season of Discovery auf Ihrem Server aktiv ist, schalten Sie dies einfach ein.|r",
-	[1612] = "|cFFFFAAAAWenn Phase 8 von Season of Discovery auf Ihrem Server aktiv ist, schalten Sie dies einfach ein.|r",
-})
-do phases[key].lore = value; end
 end
 if simplifiedLocale == "fr" then
 localize(L.HEADER_NAMES, {
@@ -12343,13 +12202,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 4 du WoW Classic.|r",
 	[15] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 5 du WoW Classic.|r",
 	[16] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 6 du WoW Classic.|r",
-	[1606] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 2 du Season of Discovery.|r",
-	[1607] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 3 du Season of Discovery.|r",
-	[1608] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 4 du Season of Discovery.|r",
-	[1609] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 5 du Season of Discovery.|r",
-	[1610] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 6 du Season of Discovery.|r",
-	[1611] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 7 du Season of Discovery.|r",
-	[1612] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 8 du Season of Discovery.|r",
 	[17] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 1 du TBC Classic.|r",
 	[18] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 2 du TBC Classic.|r",
 	[19] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 3 du TBC Classic.|r",
@@ -12362,16 +12214,6 @@ for key,value in pairs({
 	[40] = "|cFFAAFFAACeci n'était pas disponible avant le Phase 1 du Cataclysm Classic.|r",
 })
 do phases[key].description = value; end
-for key,value in pairs({
-	[1606] = "|cFFFFAAAASi Phase 2 de Season of Discovery est actif sur votre serveur, activez-le simplement.|r",
-	[1607] = "|cFFFFAAAASi Phase 3 de Season of Discovery est actif sur votre serveur, activez-le simplement.|r",
-	[1608] = "|cFFFFAAAASi Phase 4 de Season of Discovery est actif sur votre serveur, activez-le simplement.|r",
-	[1609] = "|cFFFFAAAASi Phase 5 de Season of Discovery est actif sur votre serveur, activez-le simplement.|r",
-	[1610] = "|cFFFFAAAASi Phase 6 de Season of Discovery est actif sur votre serveur, activez-le simplement.|r",
-	[1611] = "|cFFFFAAAASi Phase 7 de Season of Discovery est actif sur votre serveur, activez-le simplement.|r",
-	[1612] = "|cFFFFAAAASi Phase 8 de Season of Discovery est actif sur votre serveur, activez-le simplement.|r",
-})
-do phases[key].lore = value; end
 end
 if simplifiedLocale == "it" then
 localize(L.HEADER_NAMES, {
@@ -13819,13 +13661,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 4 di WoW Classic.|r",
 	[15] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 5 di WoW Classic.|r",
 	[16] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 6 di WoW Classic.|r",
-	[1606] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 2 di Season of Discovery.|r",
-	[1607] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 3 di Season of Discovery.|r",
-	[1608] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 4 di Season of Discovery.|r",
-	[1609] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 5 di Season of Discovery.|r",
-	[1610] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 6 di Season of Discovery.|r",
-	[1611] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 7 di Season of Discovery.|r",
-	[1612] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 8 di Season of Discovery.|r",
 	[17] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 1 di TBC Classic.|r",
 	[18] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 2 di TBC Classic.|r",
 	[19] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 3 di TBC Classic.|r",
@@ -13838,16 +13673,6 @@ for key,value in pairs({
 	[40] = "|cFFAAFFAAQuesto non era disponibile fino al Phase 1 di Cataclysm Classic.|r",
 })
 do phases[key].description = value; end
-for key,value in pairs({
-	[1606] = "|cFFFFAAAASe Phase 2 di Season of Discovery è attivo sul tuo server, attivalo semplicemente.|r",
-	[1607] = "|cFFFFAAAASe Phase 3 di Season of Discovery è attivo sul tuo server, attivalo semplicemente.|r",
-	[1608] = "|cFFFFAAAASe Phase 4 di Season of Discovery è attivo sul tuo server, attivalo semplicemente.|r",
-	[1609] = "|cFFFFAAAASe Phase 5 di Season of Discovery è attivo sul tuo server, attivalo semplicemente.|r",
-	[1610] = "|cFFFFAAAASe Phase 6 di Season of Discovery è attivo sul tuo server, attivalo semplicemente.|r",
-	[1611] = "|cFFFFAAAASe Phase 7 di Season of Discovery è attivo sul tuo server, attivalo semplicemente.|r",
-	[1612] = "|cFFFFAAAASe Phase 8 di Season of Discovery è attivo sul tuo server, attivalo semplicemente.|r",
-})
-do phases[key].lore = value; end
 end
 if simplifiedLocale == "pt" then
 localize(L.HEADER_NAMES, {
@@ -15566,13 +15391,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAIsto não estava disponível até Phase 4 de WoW Classic.|r",
 	[15] = "|cFFAAFFAAIsto não estava disponível até Phase 5 de WoW Classic.|r",
 	[16] = "|cFFAAFFAAIsto não estava disponível até Phase 6 de WoW Classic.|r",
-	[1606] = "|cFFAAFFAAIsto não estava disponível até Phase 2 de Season of Discovery.|r",
-	[1607] = "|cFFAAFFAAIsto não estava disponível até Phase 3 de Season of Discovery.|r",
-	[1608] = "|cFFAAFFAAIsto não estava disponível até Phase 4 de Season of Discovery.|r",
-	[1609] = "|cFFAAFFAAIsto não estava disponível até Phase 5 de Season of Discovery.|r",
-	[1610] = "|cFFAAFFAAIsto não estava disponível até Phase 6 de Season of Discovery.|r",
-	[1611] = "|cFFAAFFAAIsto não estava disponível até Phase 7 de Season of Discovery.|r",
-	[1612] = "|cFFAAFFAAIsto não estava disponível até Phase 8 de Season of Discovery.|r",
 	[17] = "|cFFAAFFAAIsto não estava disponível até Phase 1 de TBC Classic.|r",
 	[18] = "|cFFAAFFAAIsto não estava disponível até Phase 2 de TBC Classic.|r",
 	[19] = "|cFFAAFFAAIsto não estava disponível até Phase 3 de TBC Classic.|r",
@@ -15585,16 +15403,6 @@ for key,value in pairs({
 	[40] = "|cFFAAFFAAIsto não estava disponível até Phase 1 de Cataclysm Classic.|r",
 })
 do phases[key].description = value; end
-for key,value in pairs({
-	[1606] = "|cFFFFAAAASe Phase 2 de Season of Discovery estiver ativo no seu servidor, basta ativar esta opção.|r",
-	[1607] = "|cFFFFAAAASe Phase 3 de Season of Discovery estiver ativo no seu servidor, basta ativar esta opção.|r",
-	[1608] = "|cFFFFAAAASe Phase 4 de Season of Discovery estiver ativo no seu servidor, basta ativar esta opção.|r",
-	[1609] = "|cFFFFAAAASe Phase 5 de Season of Discovery estiver ativo no seu servidor, basta ativar esta opção.|r",
-	[1610] = "|cFFFFAAAASe Phase 6 de Season of Discovery estiver ativo no seu servidor, basta ativar esta opção.|r",
-	[1611] = "|cFFFFAAAASe Phase 7 de Season of Discovery estiver ativo no seu servidor, basta ativar esta opção.|r",
-	[1612] = "|cFFFFAAAASe Phase 8 de Season of Discovery estiver ativo no seu servidor, basta ativar esta opção.|r",
-})
-do phases[key].lore = value; end
 end
 if simplifiedLocale == "ru" then
 localize(L.HEADER_NAMES, {
@@ -17462,13 +17270,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAЭто было недоступно до Phase 4 из WoW Classic.|r",
 	[15] = "|cFFAAFFAAЭто было недоступно до Phase 5 из WoW Classic.|r",
 	[16] = "|cFFAAFFAAЭто было недоступно до Phase 6 из WoW Classic.|r",
-	[1606] = "|cFFAAFFAAЭто было недоступно до Phase 2 из Season of Discovery.|r",
-	[1607] = "|cFFAAFFAAЭто было недоступно до Phase 3 из Season of Discovery.|r",
-	[1608] = "|cFFAAFFAAЭто было недоступно до Phase 4 из Season of Discovery.|r",
-	[1609] = "|cFFAAFFAAЭто было недоступно до Phase 5 из Season of Discovery.|r",
-	[1610] = "|cFFAAFFAAЭто было недоступно до Phase 6 из Season of Discovery.|r",
-	[1611] = "|cFFAAFFAAЭто было недоступно до Phase 7 из Season of Discovery.|r",
-	[1612] = "|cFFAAFFAAЭто было недоступно до Phase 8 из Season of Discovery.|r",
 	[17] = "|cFFAAFFAAЭто было недоступно до Phase 1 из TBC Classic.|r",
 	[18] = "|cFFAAFFAAЭто было недоступно до Phase 2 из TBC Classic.|r",
 	[19] = "|cFFAAFFAAЭто было недоступно до Phase 3 из TBC Classic.|r",
@@ -17483,13 +17284,6 @@ for key,value in pairs({
 do phases[key].description = value; end
 for key,value in pairs({
 	[6] = "|cFFFFAAAAПримечание: Большинство предметов призыва можно получить повторно, если они у Вас были раньше, поговорив с соответствующим NPC.|r",
-	[1606] = "|cFFFFAAAAЕсли Phase 2 из Season of Discovery активен на вашем сервере, просто включите это.|r",
-	[1607] = "|cFFFFAAAAЕсли Phase 3 из Season of Discovery активен на вашем сервере, просто включите это.|r",
-	[1608] = "|cFFFFAAAAЕсли Phase 4 из Season of Discovery активен на вашем сервере, просто включите это.|r",
-	[1609] = "|cFFFFAAAAЕсли Phase 5 из Season of Discovery активен на вашем сервере, просто включите это.|r",
-	[1610] = "|cFFFFAAAAЕсли Phase 6 из Season of Discovery активен на вашем сервере, просто включите это.|r",
-	[1611] = "|cFFFFAAAAЕсли Phase 7 из Season of Discovery активен на вашем сервере, просто включите это.|r",
-	[1612] = "|cFFFFAAAAЕсли Phase 8 из Season of Discovery активен на вашем сервере, просто включите это.|r",
 })
 do phases[key].lore = value; end
 end
@@ -19424,13 +19218,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAAPhase 4(WoW Classic)까지 사용할 수 없습니다.|r",
 	[15] = "|cFFAAFFAAPhase 5(WoW Classic)까지 사용할 수 없습니다.|r",
 	[16] = "|cFFAAFFAAPhase 6(WoW Classic)까지 사용할 수 없습니다.|r",
-	[1606] = "|cFFAAFFAAPhase 2(Season of Discovery)까지 사용할 수 없습니다.|r",
-	[1607] = "|cFFAAFFAAPhase 3(Season of Discovery)까지 사용할 수 없습니다.|r",
-	[1608] = "|cFFAAFFAAPhase 4(Season of Discovery)까지 사용할 수 없습니다.|r",
-	[1609] = "|cFFAAFFAAPhase 5(Season of Discovery)까지 사용할 수 없습니다.|r",
-	[1610] = "|cFFAAFFAAPhase 6(Season of Discovery)까지 사용할 수 없습니다.|r",
-	[1611] = "|cFFAAFFAAPhase 7(Season of Discovery)까지 사용할 수 없습니다.|r",
-	[1612] = "|cFFAAFFAAPhase 8(Season of Discovery)까지 사용할 수 없습니다.|r",
 	[17] = "|cFFAAFFAAPhase 1(TBC Classic)까지 사용할 수 없습니다.|r",
 	[18] = "|cFFAAFFAAPhase 2(TBC Classic)까지 사용할 수 없습니다.|r",
 	[19] = "|cFFAAFFAAPhase 3(TBC Classic)까지 사용할 수 없습니다.|r",
@@ -19443,16 +19230,6 @@ for key,value in pairs({
 	[40] = "|cFFAAFFAAPhase 1(Cataclysm Classic)까지 사용할 수 없습니다.|r",
 })
 do phases[key].description = value; end
-for key,value in pairs({
-	[1606] = "|cFFFFAAAAPhase 2(Season of Discovery)이 서버에서 활성화된 경우 이 기능을 켜기만 하면 됩니다.|r",
-	[1607] = "|cFFFFAAAAPhase 3(Season of Discovery)이 서버에서 활성화된 경우 이 기능을 켜기만 하면 됩니다.|r",
-	[1608] = "|cFFFFAAAAPhase 4(Season of Discovery)이 서버에서 활성화된 경우 이 기능을 켜기만 하면 됩니다.|r",
-	[1609] = "|cFFFFAAAAPhase 5(Season of Discovery)이 서버에서 활성화된 경우 이 기능을 켜기만 하면 됩니다.|r",
-	[1610] = "|cFFFFAAAAPhase 6(Season of Discovery)이 서버에서 활성화된 경우 이 기능을 켜기만 하면 됩니다.|r",
-	[1611] = "|cFFFFAAAAPhase 7(Season of Discovery)이 서버에서 활성화된 경우 이 기능을 켜기만 하면 됩니다.|r",
-	[1612] = "|cFFFFAAAAPhase 8(Season of Discovery)이 서버에서 활성화된 경우 이 기능을 켜기만 하면 됩니다.|r",
-})
-do phases[key].lore = value; end
 end
 if simplifiedLocale == "zh" then
 localize(L.HEADER_NAMES, {
@@ -21086,13 +20863,6 @@ for key,value in pairs({
 	[14] = "|cFFAAFFAA该功能直到 Phase 4 的 WoW Classic 才可用。|r",
 	[15] = "|cFFAAFFAA该功能直到 Phase 5 的 WoW Classic 才可用。|r",
 	[16] = "|cFFAAFFAA该功能直到 Phase 6 的 WoW Classic 才可用。|r",
-	[1606] = "|cFFAAFFAA该功能直到 Phase 2 的 Season of Discovery 才可用。|r",
-	[1607] = "|cFFAAFFAA该功能直到 Phase 3 的 Season of Discovery 才可用。|r",
-	[1608] = "|cFFAAFFAA该功能直到 Phase 4 的 Season of Discovery 才可用。|r",
-	[1609] = "|cFFAAFFAA该功能直到 Phase 5 的 Season of Discovery 才可用。|r",
-	[1610] = "|cFFAAFFAA该功能直到 Phase 6 的 Season of Discovery 才可用。|r",
-	[1611] = "|cFFAAFFAA该功能直到 Phase 7 的 Season of Discovery 才可用。|r",
-	[1612] = "|cFFAAFFAA该功能直到 Phase 8 的 Season of Discovery 才可用。|r",
 	[17] = "|cFFAAFFAA该功能直到 Phase 1 的 TBC Classic 才可用。|r",
 	[18] = "|cFFAAFFAA该功能直到 Phase 2 的 TBC Classic 才可用。|r",
 	[19] = "|cFFAAFFAA该功能直到 Phase 3 的 TBC Classic 才可用。|r",
@@ -21107,13 +20877,6 @@ for key,value in pairs({
 do phases[key].description = value; end
 for key,value in pairs({
 	[6] = "|cFFFFAAAA注意：如果过去拥有大多数召唤物品，则可以通过与相应的 NPC 交谈来重新获得它们。|r",
-	[1606] = "|cFFFFAAAA如果 Phase 2 中的 Season of Discovery 在您的服务器上处于活动状态，只需将其打开即可。|r",
-	[1607] = "|cFFFFAAAA如果 Phase 3 中的 Season of Discovery 在您的服务器上处于活动状态，只需将其打开即可。|r",
-	[1608] = "|cFFFFAAAA如果 Phase 4 中的 Season of Discovery 在您的服务器上处于活动状态，只需将其打开即可。|r",
-	[1609] = "|cFFFFAAAA如果 Phase 5 中的 Season of Discovery 在您的服务器上处于活动状态，只需将其打开即可。|r",
-	[1610] = "|cFFFFAAAA如果 Phase 6 中的 Season of Discovery 在您的服务器上处于活动状态，只需将其打开即可。|r",
-	[1611] = "|cFFFFAAAA如果 Phase 7 中的 Season of Discovery 在您的服务器上处于活动状态，只需将其打开即可。|r",
-	[1612] = "|cFFFFAAAA如果 Phase 8 中的 Season of Discovery 在您的服务器上处于活动状态，只需将其打开即可。|r",
 })
 do phases[key].lore = value; end
 if GetLocale():sub(3,4):lower() == "tw" then

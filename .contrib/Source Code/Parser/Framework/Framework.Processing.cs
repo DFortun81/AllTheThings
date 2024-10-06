@@ -640,7 +640,7 @@ namespace ATT
                 {
                     LogError($"Undefined Phase '{phase}', please make sure a phase definition exists in the .contrib/lib/Constants/Phases.lua file.");
                 }
-                MarkPhaseAsRequired(phase);
+                else MarkPhaseAsRequired(phase);
             }
 
             // Get the filter for this Item

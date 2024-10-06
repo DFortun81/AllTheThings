@@ -297,7 +297,7 @@ namespace ATT.FieldTypes
                     {
                         LogError($"Undefined Phase '{phase}', please make sure a phase definition exists in the .contrib/lib/Constants/Phases.lua file.");
                     }
-                    MarkPhaseAsRequired(phase);
+                    else MarkPhaseAsRequired(phase);
                 }
 
                 // add the cost data into the cost object
