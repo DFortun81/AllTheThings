@@ -795,7 +795,7 @@ local function GetUnobtainableTexture(group)
 	if u then
 		-- only b = 0 (BoE), not BoA/BoP
 		-- removed, elite, bmah, tcg, summon
-		if u > 1 and u < 12 and (group.b or 0) == 0 then
+		if u > 1 and u < 12 and group.itemID and (group.b or 0) == 0 then
 			filter = 2;
 		else
 			local phase = L.PHASES[u];
