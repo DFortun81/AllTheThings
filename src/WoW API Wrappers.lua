@@ -28,26 +28,19 @@ app.WOWAPI = lib;
 -- Priority API assigner.
 -- Can be used to one-line assign the most relevant API to the specified WOWAPI wrapper.
 ---@param name string
----@param ...? function
-local function AssignApiWrapper(name, ...)
-	local vals = select("#", ...)
-	local api
-	-- print("WOWAPI",name,vals)
-	for i = 1,vals do
-		api = select(i, ...)
-		if api then
-			if type(api) ~= "function" then
-				print("Cannot use a non-function for an ATT.WOWAPI Wrapper!",name,"<=",api)
-			else
-				if rawget(lib, name) then
-					print("Warning, existing ATT.WOWAPI replaced!",name)
-				end
-				-- print("Assigned",name,"from prio",i)
-				lib[name] = api
-				break
-			end
-		end
-	end
+---@param ... function
+local function AssignAPIWrapper(name, ...)
+    for i = 1, select("#", ...) do
+        local api = select(i, ...)  -- Get API Function
+        if type(api) == "function" then
+            if rawget(lib, name) then
+                print("Warning: existing ATT.WOWAPI replaced!", name)
+            end
+            lib[name] = api
+            return  -- Return immediately after successful assignment.
+        end
+    end
+    print("No valid function for", name)  -- If no valid function is found, print an error message.
 end
 
 -- Faction APIs
@@ -98,13 +91,13 @@ end
 -- Item APIs
 local C_Item = C_Item;
 ---@diagnostic disable: deprecated
-AssignApiWrapper("GetItemCount", C_Item and C_Item.GetItemCount, GetItemCount)
-AssignApiWrapper("GetItemClassInfo", C_Item and C_Item.GetItemClassInfo, GetItemClassInfo)
-AssignApiWrapper("GetItemIcon", C_Item and C_Item.GetItemIconByID, GetItemIcon)
-AssignApiWrapper("GetItemInfoInstant", C_Item and C_Item.GetItemInfoInstant, GetItemInfoInstant)
-AssignApiWrapper("GetItemID", C_Item and C_Item.GetItemIDForItemInfo, GetItemInfoInstant)
-AssignApiWrapper("GetItemInfo", C_Item and C_Item.GetItemInfo, GetItemInfo)
-AssignApiWrapper("GetItemSpecInfo", C_Item and C_Item.GetItemSpecInfo, GetItemSpecInfo)
+AssignAPIWrapper("GetItemCount", C_Item and C_Item.GetItemCount, GetItemCount)
+AssignAPIWrapper("GetItemClassInfo", C_Item and C_Item.GetItemClassInfo, GetItemClassInfo)
+AssignAPIWrapper("GetItemIcon", C_Item and C_Item.GetItemIconByID, GetItemIcon)
+AssignAPIWrapper("GetItemInfoInstant", C_Item and C_Item.GetItemInfoInstant, GetItemInfoInstant)
+AssignAPIWrapper("GetItemID", C_Item and C_Item.GetItemIDForItemInfo, GetItemInfoInstant)
+AssignAPIWrapper("GetItemInfo", C_Item and C_Item.GetItemInfo, GetItemInfo)
+AssignAPIWrapper("GetItemSpecInfo", C_Item and C_Item.GetItemSpecInfo, GetItemSpecInfo)
 ---@diagnostic enable: deprecated
 
 -- Spell APIs
@@ -133,7 +126,7 @@ else
 end
 
 -- Quest APIs
-AssignApiWrapper("IsQuestFlaggedCompletedOnAccount",
+AssignAPIWrapper("IsQuestFlaggedCompletedOnAccount",
 	C_QuestLog and C_QuestLog.IsQuestFlaggedCompletedOnAccount,
 	function(id) return app.IsAccountCached("Quests",id) end)
 
