@@ -409,6 +409,7 @@ HeaderAssignments = {
 	["The Blood Moon"] = -1000968,
 	["The Construct Quarter"] = -1000050,
 	["The Crimson Halls"] = -1000188,
+	["The Crystal Vale"] = -1001042,
 	["The Four Horsemen"] = -1000168,
 	["The Frostwing Halls"] = -1000189,
 	["The Great Gnomeregan Run"] = -1000228,
@@ -530,4 +531,4 @@ HeaderAssignments = {
 	["Zone Rewards"] = -1000045,
 	["Zskera Vaults"] = -1000937,
 };
-NextHeaderID = -1001042;
+NextHeaderID = -1001043;
