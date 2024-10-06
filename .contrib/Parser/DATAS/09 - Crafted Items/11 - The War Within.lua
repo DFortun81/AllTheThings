@@ -210,7 +210,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		},{
 			-- Alchemy Essentials
 			FirstCraft(81132, 433087);	-- Formulated Courage
-			--FirstCraft(QuestID, 430345);	-- Meticulous Experimentation
 			FirstCraft(81090, 430315);	-- Thaumaturgy
 			FirstCraft(78604, 427174);	-- Wild Experimentation
 			-- Reagents
@@ -1171,7 +1170,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Miscellaneous
 			FirstCraft(81356, 447367),	-- Algari Repair Bot 11O
 			FirstCraft(81347, 447358),	-- Blame Redirection Device
-			--FirstCraft(TODO, 447374),	-- Box o' Booms
+			FirstCraft(81363, 447374),	-- Box o' Booms
 			FirstCraft(81349, 447360),	-- Complicated Fuse Box
 			FirstCraft(81351, 447362),	-- Concealed Chaos Module
 			FirstCraft(81355, 447366),	-- Convincingly Realistic Jumper Cables
@@ -1186,7 +1185,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81346, 447357),	-- Recalibrated Safety Switch
 			FirstCraft(81357, 447368),	-- Portable Profession Possibility Projector
 			FirstCraft(81339, 447350),	-- Tinker: Earthen Delivery Drill
-			--FirstCraft(TODO, 447351),	-- Tinker: Heartseeking Health Injector
+			FirstCraft(81340, 447351),	-- Tinker: Heartseeking Health Injector
 			-- Reagents
 			FirstCraft(84019, 459299),	-- Bottled Brilliance
 			FirstCraft(81329, 447340),	-- Chaos Circuit
@@ -1387,21 +1386,16 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = FISHING,
 		},{
-			--FirstCraft(xxxxx, 456154),	-- Anglerthread
 			FirstCraft(82907, 444795),	-- Arathor Hammerfish
 			FirstCraft(82915, 444803),	-- Awoken Coelacanth
-			--FirstCraft(xxxxx, 456591),	-- Azj-Kahet
 			FirstCraft(82899, 444787),	-- Bismuth Bitterling
 			FirstCraft(82897, 444785),	-- Bloody Perch
 			FirstCraft(82898, 444786),	-- Crystalline Sturgeon
 			FirstCraft(82914, 444802),	-- Cursed Ghoulfish
 			FirstCraft(82896, 444792),	-- Dilly-Dally Dace
 			FirstCraft(82905, 444793),	-- Dornish Pike
-			--FirstCraft(xxxxx, 454442),	-- Fishing Skill and You
 			FirstCraft(82902, 444790),	-- Goldengill Trout
-			--FirstCraft(xxxxx, 456590),	-- Hallowfall
 			FirstCraft(82909, 444797),	-- Kaheti Slum Shark
-			--FirstCraft(xxxxx, 456180),	-- Mereldar Fishing Derby
 			FirstCraft(82900, 444788),	-- Nibbling Minnow
 			FirstCraft(82910, 444798),	-- Pale Huskfish
 			FirstCraft(82913, 444801),	-- Queen's Lurefish
@@ -1409,10 +1403,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(82908, 444796),	-- Regal Dottyback
 			FirstCraft(82906, 444794),	-- Roaring Anglerseeker
 			FirstCraft(82911, 444799),	-- Sanguine Dogfish
-			--FirstCraft(xxxxx, 456152),	-- Seekerthread
 			FirstCraft(82903, 444791),	-- Specular Rainbowfish
 			FirstCraft(82912, 444800),	-- Spiked Sea Raven
-			--FirstCraft(xxxxx, 456589),	-- The Ringing Deeps
 			FirstCraft(82901, 444789),	-- Whispering Stargazer
 		})),
 		i(225770),	-- Algari Anglerthread
@@ -1554,12 +1546,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(79924, 435865);	-- Irradiated Orbinid
 			FirstCraft(79921, 435830);	-- Lush Orbinid
 			FirstCraft(79926, 435867);	-- Sporefused Orbinid
-			-- Overload
-			--FirstCraft(XXXXX, 438953);	-- Overload Altered Herb
-			--FirstCraft(XXXXX, 438952);	-- Overload Crystallized Herb
-			--FirstCraft(XXXXX, 423395);	-- Overload Empowered Herb
-			--FirstCraft(XXXXX, 438955);	-- Overload Irradiated Herb
-			--FirstCraft(XXXXX, 438961);	-- Overload Sporefused Herb
 		})),
 	}),
 	prof(INSCRIPTION, {
@@ -2628,8 +2614,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(80855, 446991);	-- Dawnthread Lining
 			FirstCraft(80801, 446928);	-- Dawnweave Bolt
 			FirstCraft(80841, 446977);	-- Dawnweave Reagent Bag
-			--FirstCraft(XXXXX, 447001);	-- Daybreak Spellthread
-			--FirstCraft(XXXXX, 446992);	-- Duskthread Lining
+			FirstCraft(80865, 447001);	-- Daybreak Spellthread
+			FirstCraft(80856, 446992);	-- Duskthread Lining
 			FirstCraft(80843, 446979);	-- Duskweave Bag
 			FirstCraft(80800, 446927);	-- Duskweave Bolt
 			FirstCraft(80853, 446989);	-- Excavator's Haversack
