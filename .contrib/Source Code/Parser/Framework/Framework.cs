@@ -1902,7 +1902,6 @@ namespace ATT
                             var builder = new StringBuilder("-------------------------------------------------------\n--   C U S T O M   H E A D E R S   M O D U L E   --\n-------------------------------------------------------\n")
                                 .AppendLine("local headers = CustomHeaders or {};");
                             var subbuilder = new StringBuilder();
-                            var keys = new List<long>();
                             var icons = new Dictionary<long, string>();
                             var constants = new Dictionary<long, string>();
                             var localizationForText = new Dictionary<string, Dictionary<long, string>>();
@@ -1912,7 +1911,6 @@ namespace ATT
                             {
                                 if (CustomHeaders.TryGetValue(key, out object o) && o is IDictionary<string, object> header)
                                 {
-                                    keys.Add(key);
                                     subbuilder.Clear();
                                     string readable = null, filepath = null, icon = null, constant = null;
                                     if (header.TryGetValue("readable", out object value))
@@ -2047,8 +2045,7 @@ namespace ATT
                                     }
                                 }
                             }
-                            keys.Sort(new Comparison<long>((i1, i2) => i2.CompareTo(i1)));
-
+                            
                             WriteIfDifferent(Path.Combine(debugFolder.FullName, "Custom Headers.lua"), builder.ToString());
                         }
 
@@ -2211,7 +2208,111 @@ namespace ATT
                         }
 
                         // Export the Phases file.
-                        // TODO
+                        if (Phases != null && Phases.Any())
+                        {
+                            var builder = new StringBuilder("-----------------------------------------------------\n--   P H A S E   D A T A B A S E   M O D U L E   --\n-----------------------------------------------------\n");
+                            var keys = Phases.Keys.ToList();
+                            keys.Sort();
+                            builder.Append("local Phases = Phases; for phaseID,phaseData in pairs({").AppendLine();
+                            foreach (var key in keys)
+                            {
+                                if (Phases.TryGetValue(key, out object o) && o is IDictionary<string, object> phaseData)
+                                {
+                                    builder.Append("\t[").Append(key).AppendLine("] = {");
+
+                                    // Attempt to get the text locale data object.
+                                    phaseData.TryGetValue("text", out object textLocaleObject);
+                                    Dictionary<string, object> textLocales = textLocaleObject as Dictionary<string, object>;
+
+                                    // Export the "readable" field. (database only, not exported to game)
+                                    if (phaseData.TryGetValue("readable", out string treadable))
+                                    {
+                                        builder.Append("\t\treadable = ");
+                                        ExportStringValue(builder, treadable).AppendLine(",");
+                                    }
+                                    else if (textLocales != null && textLocales.TryGetValue("en", out string name))
+                                    {
+                                        builder.Append("\t\treadable = ");
+                                        ExportStringValue(builder, name).AppendLine(",");
+                                    }
+                                    if (phaseData.TryGetValue("minimumBuildVersion", out var minimumBuildVersion))
+                                    {
+                                        builder.Append("\t\tminimumBuildVersion = ").Append(minimumBuildVersion).AppendLine(",");
+                                    }
+                                    if (phaseData.TryGetValue("buildVersion", out var buildVersion))
+                                    {
+                                        builder.Append("\t\tbuildVersion = ").Append(buildVersion).AppendLine(",");
+                                    }
+                                    if (key >= 11) builder.Append("\t\tphaseID = ").Append(key).AppendLine(",");
+
+                                    // Export the "icon" field.
+                                    if (phaseData.TryGetValue("icon", out string icon))
+                                    {
+                                        builder.Append("\t\ticon = ");
+                                        ExportStringValue(builder, icon.Replace("\\", "/")).AppendLine(",");
+                                    }
+
+                                    // Export the "model" field.
+                                    if (phaseData.TryGetValue("model", out long model))
+                                    {
+                                        builder.Append("\t\tmodel = ").Append(model).AppendLine(",");
+                                    }
+
+                                    // Export the complex "text" locales field.
+                                    if (textLocales != null)
+                                    {
+                                        // Sort and then ensure es comes after en, to match previous convention.
+                                        var supportedLocales = textLocales.Keys.ToList();
+                                        SortSupportedLocales(supportedLocales);
+
+                                        builder.AppendLine("\t\ttext = {");
+                                        foreach (var localeKey in supportedLocales)
+                                        {
+                                            builder.Append("\t\t\t").Append(localeKey).Append(" = ");
+                                            ExportStringValue(builder, textLocales[localeKey].ToString()).AppendLine(",");
+                                        }
+                                        builder.AppendLine("\t\t},");
+                                    }
+
+                                    // Export the complex "description" locales field.
+                                    if (phaseData.TryGetValue("description", out object descriptionLocaleObject)
+                                        && descriptionLocaleObject is Dictionary<string, object> descriptionLocales)
+                                    {
+                                        // Sort and then ensure es comes after en, to match previous convention.
+                                        var supportedLocales = descriptionLocales.Keys.ToList();
+                                        SortSupportedLocales(supportedLocales);
+
+                                        builder.AppendLine("\t\tdescription = {");
+                                        foreach (var localeKey in supportedLocales)
+                                        {
+                                            builder.Append("\t\t\t").Append(localeKey).Append(" = ");
+                                            ExportStringValue(builder, descriptionLocales[localeKey].ToString()).AppendLine(",");
+                                        }
+                                        builder.AppendLine("\t\t},");
+                                    }
+
+                                    // Export the complex "lore" locales field.
+                                    if (phaseData.TryGetValue("lore", out object loreLocaleObject)
+                                        && loreLocaleObject is Dictionary<string, object> loreLocales)
+                                    {
+                                        // Sort and then ensure es comes after en, to match previous convention.
+                                        var supportedLocales = loreLocales.Keys.ToList();
+                                        SortSupportedLocales(supportedLocales);
+
+                                        builder.AppendLine("\t\tlore = {");
+                                        foreach (var localeKey in supportedLocales)
+                                        {
+                                            builder.Append("\t\t\t").Append(localeKey).Append(" = ");
+                                            ExportStringValue(builder, loreLocales[localeKey].ToString()).AppendLine(",");
+                                        }
+                                        builder.AppendLine("\t\t},");
+                                    }
+                                    builder.AppendLine("\t},");
+                                }
+                            }
+                            builder.AppendLine("})").AppendLine("do Phases[phaseID] = phaseData; end");
+                            File.WriteAllText(Path.Combine(debugFolder.FullName, "Phases.lua"), builder.ToString(), Encoding.UTF8);
+                        }
 
                         // Export the Mount DB file.
                         var mounts = Items.AllIDs;
@@ -3175,7 +3276,14 @@ namespace ATT
                     }
                     keys.Sort(delegate (long a, long b)
                     {
-                        return a.CompareTo(b);
+                        // Sort the Normal Phases by number.
+                        if (a < 11 || b < 11)
+                        {
+                            return a.CompareTo(b);
+                        }
+
+                        // Classic Phases should be sorted by the number alphabetically... for now.
+                        return a.ToString().CompareTo(b.ToString());
                     });
 
                     // Write the header constants!
