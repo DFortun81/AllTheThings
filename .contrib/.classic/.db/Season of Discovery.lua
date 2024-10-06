@@ -4389,11 +4389,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 	applyclassicphase(SOD_PHASE_FOUR, n(WORLD_BOSSES)),	-- World Bosses
 	applyclassicphase(SOD_PHASE_FOUR, inst(741)),	-- Molten Core
 	applyclassicphase(SOD_PHASE_FOUR, inst(760)),	-- Onyxia's Lair
-	applyclassicphase(SOD_PHASE_FIVE, inst(742)),	-- Blackwing Lair
-	applyclassicphase(SOD_PHASE_SIX, inst(76)),		-- Zul'Gurub
-	applyclassicphase(SOD_PHASE_SEVEN, inst(743)),	-- Ruins of Ahn'Qiraj
-	applyclassicphase(SOD_PHASE_SEVEN, inst(744)),	-- Temple of Ahn'Qiraj
-	applyclassicphase(SOD_PHASE_EIGHT, inst(754)),	-- Naxxramas
 }));
 
 -- World Drop Recipes

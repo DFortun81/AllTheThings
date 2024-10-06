@@ -804,86 +804,135 @@ SOD_PHASE_ONE = createClassicPhaseForSOD({
 		en = "This was not available until Phase 1 of Season of Discovery.",
 	},
 	lore = {
-		en = "If Season of Discovery is active on your server, simply turn this on.",
+		en = "Included the Blackfathom Deeps raid, Ashenvale World PvP, and had a level cap of 25.",
 	},
 });
 SOD_PHASE_TWO = createClassicPhaseForSOD({
 	readable = "Season of Discovery - Phase 2",
-	minimumBuildVersion = 11501,
+	minimumBuildVersion = 11500,
 	buildVersion = 11501,
 	phaseID = 1606,
 	text = {
 		en = "Phase 2",
 	},
+	lore = {
+		en = "Included the Gnomeregan raid, Stranglethorn Vale World PvP, and raised the level cap to 40.",
+	},
 });
 SOD_PHASE_THREE = createClassicPhaseForSOD({
 	readable = "Season of Discovery - Phase 3",
-	minimumBuildVersion = 11502,
+	minimumBuildVersion = 11500,
 	buildVersion = 11502,
 	phaseID = 1607,
 	text = {
 		en = "Phase 3",
 	},
+	lore = {
+		en = "Included the Sunken Temple raid and raised the level cap to 50.",
+	},
 });
 SOD_PHASE_FOUR = createClassicPhaseForSOD({
 	readable = "Season of Discovery - Phase 4",
-	minimumBuildVersion = 11503,
+	minimumBuildVersion = 11500,
 	buildVersion = 11503,
 	phaseID = 1608,
 	text = {
 		en = "Phase 4",
 	},
+	lore = {
+		en = "Included Molten Core, Onyxia's Lair, Demon Fall Canyon, the Storm Cliffs, the Tainted Scar, and raised the level cap to 60.",
+	},
 });
 SOD_PHASE_FIVE = createClassicPhaseForSOD({
 	readable = "Season of Discovery - Phase 5",
-	minimumBuildVersion = 11504,
+	minimumBuildVersion = 11500,
 	buildVersion = 11504,
 	phaseID = 1609,
 	text = {
 		en = "Phase 5",
 	},
+	lore = {
+		en = "Included Blackwing Lair, the new Crystal Vale raid, and Zul'Gurub.",
+	},
 });
 SOD_PHASE_SIX = createClassicPhaseForSOD({
 	readable = "Season of Discovery - Phase 6",
-	minimumBuildVersion = 11505,
+	minimumBuildVersion = 11500,
 	buildVersion = 11505,
 	phaseID = 1610,
 	text = {
 		en = "Phase 6",
 	},
+	lore = {
+		en = "Included Ahn'Qiraj.",
+	},
 });
 SOD_PHASE_SEVEN = createClassicPhaseForSOD({
 	readable = "Season of Discovery - Phase 7",
-	minimumBuildVersion = 11506,
+	minimumBuildVersion = 11500,
 	buildVersion = 11506,
 	phaseID = 1611,
 	text = {
 		en = "Phase 7",
 	},
+	lore = {
+		en = "Included Naxxramas.",
+	},
 });
 SOD_PHASE_EIGHT = createClassicPhaseForSOD({
 	readable = "Season of Discovery - Phase 8",
-	minimumBuildVersion = 11507,
+	minimumBuildVersion = 11500,
 	buildVersion = 11507,
 	phaseID = 1612,
 	text = {
 		en = "Phase 8",
 	},
+	lore = {
+		en = "Included Classic+?",
+	},
 });
 -- #if SEASON_OF_DISCOVERY
 PHASE_SIX_CLASSICERA = SOD_PHASE_ONE;	-- Chronoboons were available right away.
+
+-- Phase 3 Updates
+PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS = SOD_PHASE_THREE;	-- Sunken Temple Class Quests came out with Phase 3 of SOD.
+
+-- Phase 4 Updates
 PHASE_ONE_DIREMAUL = SOD_PHASE_FOUR;	-- Dire Maul actually came out with Phase 4 of SOD.
 PHASE_TWO = SOD_PHASE_FOUR;	-- Azuregos, Lord Kazzak, and PVP Battlegrounds were immediately available with Phase 4 of SOD.
 PHASE_THREE_ENCHANTS = SOD_PHASE_FOUR;	-- A number of these actually came out with Phase 4 of SOD. (CRIEVE NOTE: Not actually sure since I can't check the AH for these...)
 PHASE_THREE_RECIPES = SOD_PHASE_FOUR;	-- A number of these actually came out with Phase 4 of SOD.
 PHASE_FOUR_DARKIRON_RECIPES = SOD_PHASE_FOUR;	-- A number of these actually came out with Phase 4 of SOD.
-PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS = SOD_PHASE_THREE;	-- Sunken Temple Class Quests came out with Phase 3 of SOD.
 PHASE_FIVE_RECIPES = SOD_PHASE_FOUR;	-- A number of these actually came out with Phase 4 of SOD.
 PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS = SOD_PHASE_FOUR;	-- T0.5 Sets actually came out with Phase 4 of SOD.
 PHASE_SIX_CLASS_BOOKS = SOD_PHASE_FOUR;	-- A number of these actually came out with Phase 4 of SOD.
 PHASE_SIX_SILITHYST = SOD_PHASE_FOUR;	-- The Silithyst Quests actually came out with Phase 4 of SOD.
 PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS = SOD_PHASE_FOUR;
-PHASE_THREE_SILITHUS_EXPEDITION_QUESTS = SOD_PHASE_FIVE;	-- CRIEVE NOTE: On SOD Phase 4, none of these quests were available.
+
+-- Phase 5 Updates
+PHASE_THREE = SOD_PHASE_FIVE;	-- Blackwing Lair came out with Phase 5 of SOD.
+PHASE_THREE_DMF_CARDS = SOD_PHASE_FIVE;	-- TODO: Confirm this.
+PHASE_THREE_ENCHANTS = SOD_PHASE_FIVE;	-- TODO: Confirm this.
+PHASE_THREE_RECIPES = SOD_PHASE_FIVE;	-- TODO: Confirm this.
+PHASE_THREE_SILITHUS_EXPEDITION_QUESTS = SOD_PHASE_FIVE;	-- TODO: Confirm this. CRIEVE NOTE: On SOD Phase 4, none of these quests were available.
+PHASE_FOUR = SOD_PHASE_FIVE;	-- Zul'Gurub came out with Phase 5 of SOD.
+PHASE_FOUR_DARKIRON_RECIPES = SOD_PHASE_FIVE;	-- TODO: Confirm this.
+
+-- Phase 6 Updates
+PHASE_FIVE = SOD_PHASE_SIX;	-- TODO: Confirm this.
+PHASE_FIVE_RECIPES = SOD_PHASE_SIX;	-- TODO: Confirm this.
+PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS = SOD_PHASE_SIX;	-- TODO: Confirm this.
+PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS = SOD_PHASE_SIX;	-- TODO: Confirm this.
+PHASE_FIVE_WAR_EFFORT = SOD_PHASE_SIX;	-- TODO: Confirm this.
+PHASE_FIVE_GONG = SOD_PHASE_SIX;	-- TODO: Confirm this.
+PHASE_FIVE_WAR = SOD_PHASE_SIX;	-- TODO: Confirm this.
+PHASE_FIVE_CATCH_UP = SOD_PHASE_SIX;	-- TODO: Confirm this.
+
+-- Phase 7 Updates
+PHASE_SIX = SOD_PHASE_SEVEN;	-- TODO: Confirm this.
+PHASE_SIX_CLASS_BOOKS = SOD_PHASE_SEVEN;	-- TODO: Confirm this.
+PHASE_SIX_SCOURGE_INVASION = SOD_PHASE_SEVEN;	-- TODO: Confirm this.
+PHASE_SIX_SILITHYST = SOD_PHASE_SEVEN;	-- TODO: Confirm this.
 -- #endif
 
 
