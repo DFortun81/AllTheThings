@@ -1104,6 +1104,7 @@ root(ROOTS.Zones, {
 						["qg"] = 43806,	-- Terrath the Steady
 						["sourceQuest"] = 26709,	-- The Stone Throne
 						["coord"] = { 56.6, 14.0, DEEPHOLM },
+						["minReputation"] = { FACTION_THERAZANE, REVERED },	-- Therazane, Revered.
 						["maxReputation"] = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 82,
