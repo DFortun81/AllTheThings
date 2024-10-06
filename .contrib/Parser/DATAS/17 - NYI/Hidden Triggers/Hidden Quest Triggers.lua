@@ -1691,7 +1691,7 @@ root(ROOTS.HiddenQuestTriggers, {
 	------------------
 	--     TWW      --
 	------------------
-	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		--@Darkal: q(84255),	-- received item 212174 (The Warband Map to Everywhere All At Once)
 	})),
 

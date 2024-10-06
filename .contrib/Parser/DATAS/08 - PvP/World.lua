@@ -235,7 +235,7 @@ root(ROOTS.PVP, pvp(n(WORLD_PVP, {
 			i(202184),	-- Trophy of Strife
 		}),
 	})),
-	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(ACHIEVEMENTS, {
 			ach(40088, {	-- A Champion's Tour: The War Within (automated)
 				i(223802),	-- Ruby-Eyed Stagshell (PET!)
@@ -337,7 +337,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			}),
 		}),
 	})),
-	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(PVP, {
 			q(80415, {	-- after looting War Supply chest, first time per day
 				["name"] = "First War Supply Chest of the Day!",

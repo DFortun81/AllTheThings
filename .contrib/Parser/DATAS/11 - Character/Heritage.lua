@@ -1678,7 +1678,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			--q(78845),	-- Ensemble: Additional Tokens of Telhamat
 		}),
 	})),
-	expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 		n(HERITAGE, {
 			q(82770),	-- Ensemble: Earthen Copper Regalia
 			q(82788),	-- Arsenal: Earthen Weaponry

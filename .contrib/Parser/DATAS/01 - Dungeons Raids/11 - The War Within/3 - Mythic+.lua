@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --   D U N G E O N S  &  R A I D S  M O D U L E    --
 -----------------------------------------------------
-root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(MYTHIC_PLUS, {
 		header(HEADERS.Achievement, SEASON_TEMPERED, bubbleDownSelf({
 			["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 }
