@@ -348,6 +348,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					["sourceQuest"] = 82646,
 					["provider"] = { "n", 224186 },	-- Ghos'opp
 					["coord"] = { 54.5, 15.5, AZJ_KAHET },
+					["g"] = {
+						o(438039),	-- Alchemical Instruments
+					}),
 				}),
 				q(81481, {	-- Sabotage: Transformatory Vessels
 					["sourceQuest"] = 82644,
@@ -388,8 +391,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 				q(81480, {	-- Wild Reagents: Maddening Deep
 					["sourceQuest"] = 82616,
-					["provider"] = { "n", 224180 },	-- Ghos'opp
+					["provider"] = { "n", 224182 },	-- Ghos'opp
 					["coord"] = { 65.1, 78.8, AZJ_KAHET },
+					["crs"] = { 221060 },	-- Pustulant Feaster
 					["g"] = {
 						i(219228),	-- Fetid Slime Sac (QI!)
 					},
@@ -848,7 +852,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82648, {	-- Ru'murh  (n: 224200 @ 64.2, 75.3), starts questID 81503 (Infiltration: Terror Made Manifest), (23-09-24, Exo)
-					-- Ghos'opp (n: 224180 @ 65.1, 78.8), starts questID 81480 (Wild Reagents: Maddening Deep), (27-09-24, Exo)
+					-- Ghos'opp (n: 224182 @ 65.1, 78.8), starts questID 81480 (Wild Reagents: Maddening Deep), (27-09-24, Exo)
 					-- Ghos'opp (n: 224180 @ 47.2, 58.8), starts questID 81498 (Wild Reagents: Twitching Gorge), (30-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),

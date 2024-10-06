@@ -79,7 +79,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			o(454339, {	-- Thimble's Cache
 				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
 				["provider"] = { "n", 224892 },	-- Thimble // Weave-Rat Cache (vignette)
-				["questID"] = 82859,	-- Same questID as o454340?
+				["questID"] = 82859,	-- questID shared with o454340
 				["coords"] = {
 					{ 26.2, 51.2, NERUBAR },	-- Thimble
 					{ 29.5, 65.8, NERUBAR },	-- Thimble's Cache
@@ -88,7 +88,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			o(454340, {	-- Thimble's Cache
 				["description"] = "Interact with Thimble and follow him to reveal cache. Only available if your weekly pact is with The Weaver.",
 				["provider"] = { "n", 224893 },	-- Thimble // Weave-Rat Cache (vignette)
-				["questID"] = 82859,
+				["questID"] = 82859,	-- questID shared with o454339
 				["coords"] = {
 					{ 29.0, 42.7, AZJ_KAHET },	-- Thimble
 					{ 29.4, 38.7, AZJ_KAHET },	-- Thimble's Cache
