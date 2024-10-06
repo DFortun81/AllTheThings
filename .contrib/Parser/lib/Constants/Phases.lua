@@ -721,7 +721,7 @@ PHASE_SIX_SCOURGE_INVASION = createClassicPhase({
 		en = "This was only available during the Scourge Invasion.",
 	},
 	lore = {
-		en = "If both Scourge Invasions have been completed on your server, simply turn this off.",
+		en = "If the Scourge Invasion has ended on your server, simply turn this off.",
 	},
 });
 PHASE_SIX_SILITHYST = createClassicPhase({
@@ -871,6 +871,7 @@ SOD_PHASE_EIGHT = createClassicPhaseForSOD({
 	},
 });
 -- #if SEASON_OF_DISCOVERY
+PHASE_SIX_CLASSICERA = SOD_PHASE_ONE;	-- Chronoboons were available right away.
 PHASE_ONE_DIREMAUL = SOD_PHASE_FOUR;	-- Dire Maul actually came out with Phase 4 of SOD.
 PHASE_TWO = SOD_PHASE_FOUR;	-- Azuregos, Lord Kazzak, and PVP Battlegrounds were immediately available with Phase 4 of SOD.
 PHASE_THREE_ENCHANTS = SOD_PHASE_FOUR;	-- A number of these actually came out with Phase 4 of SOD. (CRIEVE NOTE: Not actually sure since I can't check the AH for these...)
@@ -1138,7 +1139,20 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C = createClassicPhase({
 		en = "If the Shattered Sun Offensive has already unlocked the Alch Lab on your server, simply turn this on.",
 	},
 });
-
+TBC_PHASE_FIVE_SCOURGE_INVASION = createClassicPhase({
+	readable = "TBC Classic - Scourge Invasion",
+	minimumBuildVersion = 20501,
+	phaseID = 2108,
+	text = {
+		en = "Scourge Invasion",
+	},
+	description = {
+		en = "This was only available during the Scourge Invasion.",
+	},
+	lore = {
+		en = "If the Scourge Invasion has ended on your server, simply turn this off.",
+	},
+});
 
 
 -- Wrath Classic Phases
