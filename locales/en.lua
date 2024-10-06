@@ -20,9 +20,6 @@ for key, value in pairs({
 	-- Can also use the direct IconID, i.e. wowhead.com/icon=###
 	-- https://www.wowhead.com/icons
 	["HEADER_ICONS"] = {
-	-- Class Trial
-		[-137] = 614740,									-- Level 90
-		[-138] = 1033987,									-- Level 100
 	-- WoD Dungeons(Fake npcid)
 		[-140] = select(6, EJ_GetInstanceInfo(547)),										-- Auchindoun
 		[-141] = select(6, EJ_GetInstanceInfo(385)),										-- Bloodmaul Slag Mines
@@ -33,16 +30,9 @@ for key, value in pairs({
 		[-146] = select(6, EJ_GetInstanceInfo(556)),										-- The Everbloom
 		[-147] = select(6, EJ_GetInstanceInfo(559)),										-- Upper Blackrock Spire
 	-- Class Trial
-		[-148] = 236566,																	-- Level 50 Class Trial
-		[-149] = 1408997,																	-- Level 110
-		[-150] = 2065613,																	-- Level 120
 		[-153] = 1103070,																	-- Work Orders
 	-- Class Trial
 		[-154] = "Interface\\Icons\\ability_bossmagistrix_timewarp1",						-- Level 48
-		[-155] = 236566,																	-- Level 50 Character Boost
-		[-156] = 236567,																	-- Level 60 Character Boost
-	-- Class Trial
-		[-160] = 236567,																	-- Level 60 Class Trial
 	-- PvP
 		[-216] = "Interface\\Icons\\ability_rogue_combatreadiness",							-- Prestige
 	-- War Campaign

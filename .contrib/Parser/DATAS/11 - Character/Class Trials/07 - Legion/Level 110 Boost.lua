@@ -8,6 +8,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 			-- Note: [As of August 18th, 2018 110 trials have been implemented and use same itemID's as boosting]
 			["description"] = "These are gained by boosting a character to Level 110.  Each class has one default spec except Shamans, Druids and Hunters.",
 			["lvl"] = 110,
+			["icon"] = 1408997,
 			["sourceIgnored"] = true,
 			["groups"] = {
 				n(RELICS, {
