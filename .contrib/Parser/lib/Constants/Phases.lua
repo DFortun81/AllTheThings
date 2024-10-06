@@ -613,6 +613,15 @@ PHASE_THREE_SILITHUS_EXPEDITION_QUESTS = SOD_PHASE_FIVE;	-- CRIEVE NOTE: On SOD 
 -- #endif
 
 -- TBC Classic Phases
+EXPANSIONS.TBC = {
+	text = {
+		-- #if ANYCLASSIC
+		en = "TBC Classic",
+		-- #else
+		en = "The Burning Crusade",
+		-- #endif
+	},
+};
 TBC_PHASE_ONE = 17;
 TBC_PHASE_ONE_DARKPORTAL = 1701;
 TBC_PHASE_TWO = 18;
@@ -634,6 +643,15 @@ TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B = 2106;
 TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C = 2107;
 
 -- Wrath Classic Phases
+EXPANSIONS.WRATH = {
+	text = {
+		-- #if ANYCLASSIC
+		en = "Wrath Classic",
+		-- #else
+		en = "Wrath of the Lich King",
+		-- #endif
+	},
+};
 WRATH_PHASE_ONE = 30;
 WRATH_PHASE_ONE_REALM_FIRST = 3001;
 WRATH_PHASE_TWO = 31;
@@ -647,6 +665,15 @@ WRATH_PHASE_FOUR_ELEMENTAL_INVASION = 3304;
 
 -- NOTE: Reason for this is to show when stuff is going away eventually.
 -- Cataclysm Classic Phases
+EXPANSIONS.CATA = {
+	text = {
+		-- #if ANYCLASSIC
+		en = "Cataclysm Classic",
+		-- #else
+		en = "Wrath of the Lich King",
+		-- #endif
+	},
+};
 CATA_PHASE_ONE = 40;
 CATA_PHASE_RISE_OF_THE_ZANDALARI = 4001;	-- ZA/ZG [Per Cata Dev, this phase wasn't a big enough release to justify incrementing the build number]
 CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT = 4001;	-- World Boss Loot was originally blue, they got upgraded to Epic later.
@@ -655,106 +682,170 @@ CATA_PHASE_RAGE_OF_THE_FIRELANDS = 41;	-- Firelands
 CATA_PHASE_HOUR_OF_TWILIGHT = 42;	-- Dragonsoul
 
 -- Mists of Pandaria Classic Phases
+EXPANSIONS.MOP = {
+	text = {
+		-- #if ANYCLASSIC
+		en = "Mists Classic",
+		-- #else
+		en = "Mists of Pandaria",
+		-- #endif
+	},
+};
 MOP_PHASE_ONE = 50;
 MOP_PHASE_TWO = 51;
 MOP_PHASE_THREE = 52;
 
 -- Warlords of Draenor Classic Phases
+EXPANSIONS.WOD = {
+	text = {
+		-- #if ANYCLASSIC
+		en = "WOD Classic",
+		-- #else
+		en = "Warlords of Draenor",
+		-- #endif
+	},
+};
 WOD_PHASE_ONE = 60;
 WOD_PHASE_TWO = 61;
 WOD_PHASE_THREE = 62;
 
 -- Legion Classic Phases
+EXPANSIONS.LEGION = {
+	text = {
+		-- #if ANYCLASSIC
+		en = "Legion Classic",
+		-- #else
+		en = "Legion",
+		-- #endif
+	},
+};
 LEGION_PHASE_ONE = 70;
 LEGION_PHASE_TWO = 71;
 LEGION_PHASE_THREE = 72;
 
 -- Battle for Azeroth Phases
+EXPANSIONS.BFA = {
+	text = {
+		-- #if ANYCLASSIC
+		en = "BFA Classic",
+		-- #else
+		en = "Battle for Azeroth",
+		-- #endif
+	},
+};
 BFA_PHASE_ONE = 80;
 BFA_PHASE_TWO = 81;
 BFA_PHASE_THREE = 82;
 
 -- Shadowlands Phases
+EXPANSIONS.SHADOWLANDS = {
+	text = {
+		-- #if ANYCLASSIC
+		en = "Shadowlands Classic",
+		-- #else
+		en = "Shadowlands",
+		-- #endif
+	},
+};
 SHADOWLANDS_PHASE_ONE = 90;
 SHADOWLANDS_PHASE_TWO = 91;
 SHADOWLANDS_PHASE_THREE = 92;
 
 -- Dragonflight Phases
+EXPANSIONS.DF = {
+	text = {
+		-- #if ANYCLASSIC
+		en = "Dragonflight Classic",
+		-- #else
+		en = "Dragonflight",
+		-- #endif
+	},
+};
 DF_PHASE_ONE = 100;
 DF_PHASE_TWO = 101;
 DF_PHASE_THREE = 102;
 
 -- The War Within Phases
+EXPANSIONS.TWW = {
+	text = {
+		-- #if ANYCLASSIC
+		en = "TWW Classic",
+		-- #else
+		en = "The War Within",
+		-- #endif
+	},
+};
 TWW_PHASE_ONE = 110;
 TWW_PHASE_TWO = 111;
 TWW_PHASE_THREE = 112;
 
+-- TODO: Convert this to the other format!
 local temp = {
 	-- Classic Phases
-	[15] = {2, "|CFFAAFFAAThis was not available until Phase 5 of WoW Classic.|r", "Phase 5", 11301, 11305, "|CFFFFAAAAIncluded Ahn'Qiraj, which was pre-faced by a unique opening event.|r" },
-	[1501] = {2, "|CFFAAFFAAThis was only available during the Ahn'Qiraj War Effort.|r", "AQ War Effort", 11301, nil, "|CFFFFAAAAIf the War Effort has been completed on your server, simply turn this off.|r" },
-	[1502] = {2, "|CFFAAFFAAThis was only available up until the Scarab Lords on your server have rung the gong.|r", "Gates Unopened", 11301, nil, "|CFFFFAAAAIf the Gates of Anh'Qiraj have been opened on your server, simply turn this off.|r" },
-	[1503] = {2, "|CFFAAFFAAThis was only available during the 10 Hour War after the Scarab Lord(s) bang the gong.|r", "10-Hour War", 11301, nil, "|CFFFFAAAAIf the Gates of Anh'Qiraj have been opened on your server, simply turn this off.|r" },
-	[1504] = {2, "|CFFAAFFAAThis became available near the end of Phase 5 in order to provide Catch-Up Nature Resist gear for those still working on AQ40.|r", "Catch-Up", 11301, 11306, "|CFFFFAAAAIf the Catch-Up Gear is available, simply turn this on.|r" },
-	[16] = {2, "|CFFAAFFAAThis was not available until Phase 6 of WoW Classic.|r", "Phase 6", 11301, 11306, "|CFFFFAAAAIncluded Naxxramas, which was heralded by the Scourge Invasion.|r" },
-	[1601] = {2, "|CFFAAFFAAThis was only available during the Scourge Invasions.|r", "Scourge Invasion", 11301, nil, "|CFFFFAAAAIf both Scourge Invasions have been completed on your server, simply turn this off.|r" },
-	[1602] = {2, "|CFFAAFFAAThis was only available during the Silithyst Must Flow World PVP Event.|r", "Silithyst", 11301, 11306, "|CFFFFAAAAIf the World PVP Event is available, simply turn this on.|r" },
-	[1603] = {2, "|CFFAAFFAAThis was only available after the start of Classic Era.|r", "Classic Era", 11301, 11307, "|CFFFFAAAAIf the Classic Era has begun, simply turn this on.|r" },
-	[1604] = {2, "|CFFAAFFAAThis was only available during Season of Mastery.|r", "Season of Mastery", 11301, nil, "|CFFFFAAAAIf Season of Mastery is active on your server, simply turn this on.|r" },
+	[15] = {2, "This was not available until Phase 5 of WoW Classic.", "Phase 5", 11301, 11305, "Included Ahn'Qiraj, which was pre-faced by a unique opening event." },
+	[1501] = {2, "This was only available during the Ahn'Qiraj War Effort.", "AQ War Effort", 11301, nil, "If the War Effort has been completed on your server, simply turn this off." },
+	[1502] = {2, "This was only available up until the Scarab Lords on your server have rung the gong.", "Gates Unopened", 11301, nil, "If the Gates of Anh'Qiraj have been opened on your server, simply turn this off." },
+	[1503] = {2, "This was only available during the 10 Hour War after the Scarab Lord(s) bang the gong.", "10-Hour War", 11301, nil, "If the Gates of Anh'Qiraj have been opened on your server, simply turn this off." },
+	[1504] = {2, "This became available near the end of Phase 5 in order to provide Catch-Up Nature Resist gear for those still working on AQ40.", "Catch-Up", 11301, 11306, "If the Catch-Up Gear is available, simply turn this on." },
+	[16] = {2, "This was not available until Phase 6 of WoW Classic.", "Phase 6", 11301, 11306, "Included Naxxramas, which was heralded by the Scourge Invasion." },
+	[1601] = {2, "This was only available during the Scourge Invasions.", "Scourge Invasion", 11301, nil, "If both Scourge Invasions have been completed on your server, simply turn this off." },
+	[1602] = {2, "This was only available during the Silithyst Must Flow World PVP Event.", "Silithyst", 11301, 11306, "If the World PVP Event is available, simply turn this on." },
+	[1603] = {2, "This was only available after the start of Classic Era.", "Classic Era", 11301, 11307, "If the Classic Era has begun, simply turn this on." },
+	[1604] = {2, "This was only available during Season of Mastery.", "Season of Mastery", 11301, nil, "If Season of Mastery is active on your server, simply turn this on." },
 	
 	-- Season of Discovery Phases
-	[1605] = {2, "|CFFAAFFAAThis was not available until Phase 1 of Season of Discovery.|r", "Season of Discovery", 11500, 11500, "|CFFFFAAAAIf Season of Discovery is active on your server, simply turn this on.|r" },
-	[1606] = {2, "|CFFAAFFAAThis was not available until Phase 2 of Season of Discovery.|r", "Phase 2", 11501, 11501, "|CFFFFAAAAIf Phase 2 of Season of Discovery is active on your server, simply turn this on.|r" },
-	[1607] = {2, "|CFFAAFFAAThis was not available until Phase 3 of Season of Discovery.|r", "Phase 3", 11502, 11502, "|CFFFFAAAAIf Phase 3 of Season of Discovery is active on your server, simply turn this on.|r" },
-	[1608] = {2, "|CFFAAFFAAThis was not available until Phase 4 of Season of Discovery.|r", "Phase 4", 11503, 11503, "|CFFFFAAAAIf Phase 4 of Season of Discovery is active on your server, simply turn this on.|r" },
-	[1609] = {2, "|CFFAAFFAAThis was not available until Phase 5 of Season of Discovery.|r", "Phase 5", 11504, 11504, "|CFFFFAAAAIf Phase 5 of Season of Discovery is active on your server, simply turn this on.|r" },
-	[1610] = {2, "|CFFAAFFAAThis was not available until Phase 6 of Season of Discovery.|r", "Phase 6", 11505, 11505, "|CFFFFAAAAIf Phase 6 of Season of Discovery is active on your server, simply turn this on.|r" },
-	[1611] = {2, "|CFFAAFFAAThis was not available until Phase 7 of Season of Discovery.|r", "Phase 7", 11506, 11506, "|CFFFFAAAAIf Phase 7 of Season of Discovery is active on your server, simply turn this on.|r" },
-	[1612] = {2, "|CFFAAFFAAThis was not available until Phase 8 of Season of Discovery.|r", "Phase 8", 11507, 11507, "|CFFFFAAAAIf Phase 8 of Season of Discovery is active on your server, simply turn this on.|r" },
+	[1605] = {2, "This was not available until Phase 1 of Season of Discovery.", "Season of Discovery", 11500, 11500, "If Season of Discovery is active on your server, simply turn this on." },
+	[1606] = {2, "This was not available until Phase 2 of Season of Discovery.", "Phase 2", 11501, 11501, "If Phase 2 of Season of Discovery is active on your server, simply turn this on." },
+	[1607] = {2, "This was not available until Phase 3 of Season of Discovery.", "Phase 3", 11502, 11502, "If Phase 3 of Season of Discovery is active on your server, simply turn this on." },
+	[1608] = {2, "This was not available until Phase 4 of Season of Discovery.", "Phase 4", 11503, 11503, "If Phase 4 of Season of Discovery is active on your server, simply turn this on." },
+	[1609] = {2, "This was not available until Phase 5 of Season of Discovery.", "Phase 5", 11504, 11504, "If Phase 5 of Season of Discovery is active on your server, simply turn this on." },
+	[1610] = {2, "This was not available until Phase 6 of Season of Discovery.", "Phase 6", 11505, 11505, "If Phase 6 of Season of Discovery is active on your server, simply turn this on." },
+	[1611] = {2, "This was not available until Phase 7 of Season of Discovery.", "Phase 7", 11506, 11506, "If Phase 7 of Season of Discovery is active on your server, simply turn this on." },
+	[1612] = {2, "This was not available until Phase 8 of Season of Discovery.", "Phase 8", 11507, 11507, "If Phase 8 of Season of Discovery is active on your server, simply turn this on." },
 	
 	-- TBC Classic Phases
-	[17] = {2, "|CFFAAFFAAThis was not available until Phase 1 of TBC Classic.|r", "Phase 1", 20501, 20501, "|CFFFFAAAAIncluded Karazhan, Magtheridon's Lair, and Gruul's Lair.|r" },
-	[1701] = {2, "|CFFAAFFAAThis was only available during the Opening of the Dark Portal event before the launch of TBC.|r", "Dark Portal Opens", 20501, nil, "|CFFFFAAAAIf the Dark Portal has been opened on your server, simply turn this off.|r" },
-	[18] = {2, "|CFFAAFFAAThis was not available until Phase 2 of TBC Classic.|r", "Phase 2", 20501, 20502, "|CFFFFAAAAIncluded Serpentshrine Cavern, Tempest Keep: The Eye, and Swift Druid Flight Forms.\n\nThe Great Herb/Mining Node War had officially begun.|r" },
-	[1801] = {2, "|CFFAAFFAAThis became available with the Ogri'la Faction during TBC Classic.|r", "Ogri'la", 20501, 20502, "|CFFFFAAAAIf the Ogri'la Faction is available on your server, simply turn this on.|r" },
-	[1802] = {2, "|CFFAAFFAAThis became available with the Skyguard Faction during TBC Classic.|r", "Skyguard", 20501, 20502, "|CFFFFAAAAIf the Skyguard Faction is available on your server, simply turn this on.|r" },
-	[19] = {2, "|CFFAAFFAAThis was not available until Phase 3 of TBC Classic.|r", "Phase 3", 20501, 20503, "|CFFFFAAAAIncluded Hyjal Summit and the Black Temple in addition to the vast majority of end game daily / faction content.|r" },
-	[1901] = {2, "|CFFAAFFAAThis became available with the Netherwing Faction during TBC Classic.|r", "Netherwing", 20501, 20503, "|CFFFFAAAAIf the Netherwing Faction is available on your server, simply turn this on.|r" },
-	[1902] = {2, "|CFFAAFFAAThe wielder of this Glaive was prepared!|r", "Glaive Prio", 20501, 30001, "|CFFFFAAAADue to the exclusivity of the Warglaives and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after wrath prepatch.\n\nIf you do actually have Glaive prio, simply turn this on.|r" },
-	[20] = {2, "|CFFAAFFAAThis was not available until Phase 4 of TBC Classic.|r", "Phase 4", 20501, 20504, "|CFFFFAAAAIncluded Zul'Aman.|r" },
-	[21] = {2, "|CFFAAFFAAThis was not available until Phase 5 of TBC Classic.|r", "Phase 5", 20501, 20504, "|CFFFFAAAAIncluded Sunwell Plateau and the Isle of Quel'Danas daily content.|r" },
-	[2101] = {2, "|CFFAAFFAAThis was not available until the Sanctum on the Isle of Quel'Danas was completed.|r", "Sanctum", 20501, 30400, "|CFFFFAAAAIf the Shattered Sun Offensive has already unlocked the Sanctum and has begun working on the Amory and Portal on your server, simply turn this on.|r" },
-	[2102] = {2, "|CFFAAFFAAThis was not available until the Portal on the Isle of Quel'Danas was completed.|r", "Portal", 20501, 30400, "|CFFFFAAAAIf the Shattered Sun Offensive has already unlocked the Portal on your server, simply turn this on.|r" },
-	[2103] = {2, "|CFFAAFFAAThis was not available until the Armory on the Isle of Quel'Danas was completed.|r", "Armory", 20501, 30400, "|CFFFFAAAAIf the Shattered Sun Offensive has already unlocked the Armory and has begun working on the Harbor and Anvil on your server, simply turn this on.|r" },
-	[2104] = {2, "|CFFAAFFAAThis was not available until the Anvil on the Isle of Quel'Danas was completed.|r", "Anvil", 20501, 30400, "|CFFFFAAAAIf the Shattered Sun Offensive has already unlocked the Anvil on your server, simply turn this on.|r" },
-	[2105] = {2, "|CFFAAFFAAThis was not available until the Harbor on the Isle of Quel'Danas was completed.|r", "Harbor", 20501, 30400, "|CFFFFAAAAIf the Shattered Sun Offensive has already unlocked the Harbor and has begun working on the Alch Lab and Monument on your server, simply turn this on.|r" },
-	[2106] = {2, "|CFFAAFFAAThis was not available until the Monument on the Isle of Quel'Danas was completed.|r", "Monument", 20501, 30400, "|CFFFFAAAAIf the Shattered Sun Offensive has already unlocked the Monument on your server, simply turn this on.|r" },
-	[2107] = {2, "|CFFAAFFAAThis was not available until the Alch Lab on the Isle of Quel'Danas was completed.|r", "Alch Lab", 20501, 30400, "|CFFFFAAAAIf the Shattered Sun Offensive has already unlocked the Alch Lab on your server, simply turn this on.|r" },
+	[17] = {2, "This was not available until Phase 1 of TBC Classic.", "Phase 1", 20501, 20501, "Included Karazhan, Magtheridon's Lair, and Gruul's Lair." },
+	[1701] = {2, "This was only available during the Opening of the Dark Portal event before the launch of TBC.", "Dark Portal Opens", 20501, nil, "If the Dark Portal has been opened on your server, simply turn this off." },
+	[18] = {2, "This was not available until Phase 2 of TBC Classic.", "Phase 2", 20501, 20502, "Included Serpentshrine Cavern, Tempest Keep: The Eye, and Swift Druid Flight Forms.\n\nThe Great Herb/Mining Node War had officially begun." },
+	[1801] = {2, "This became available with the Ogri'la Faction during TBC Classic.", "Ogri'la", 20501, 20502, "If the Ogri'la Faction is available on your server, simply turn this on." },
+	[1802] = {2, "This became available with the Skyguard Faction during TBC Classic.", "Skyguard", 20501, 20502, "If the Skyguard Faction is available on your server, simply turn this on." },
+	[19] = {2, "This was not available until Phase 3 of TBC Classic.", "Phase 3", 20501, 20503, "Included Hyjal Summit and the Black Temple in addition to the vast majority of end game daily / faction content." },
+	[1901] = {2, "This became available with the Netherwing Faction during TBC Classic.", "Netherwing", 20501, 20503, "If the Netherwing Faction is available on your server, simply turn this on." },
+	[1902] = {2, "The wielder of this Glaive was prepared!", "Glaive Prio", 20501, 30001, "Due to the exclusivity of the Warglaives and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after wrath prepatch.\n\nIf you do actually have Glaive prio, simply turn this on." },
+	[20] = {2, "This was not available until Phase 4 of TBC Classic.", "Phase 4", 20501, 20504, "Included Zul'Aman." },
+	[21] = {2, "This was not available until Phase 5 of TBC Classic.", "Phase 5", 20501, 20504, "Included Sunwell Plateau and the Isle of Quel'Danas daily content." },
+	[2101] = {2, "This was not available until the Sanctum on the Isle of Quel'Danas was completed.", "Sanctum", 20501, 30400, "If the Shattered Sun Offensive has already unlocked the Sanctum and has begun working on the Amory and Portal on your server, simply turn this on." },
+	[2102] = {2, "This was not available until the Portal on the Isle of Quel'Danas was completed.", "Portal", 20501, 30400, "If the Shattered Sun Offensive has already unlocked the Portal on your server, simply turn this on." },
+	[2103] = {2, "This was not available until the Armory on the Isle of Quel'Danas was completed.", "Armory", 20501, 30400, "If the Shattered Sun Offensive has already unlocked the Armory and has begun working on the Harbor and Anvil on your server, simply turn this on." },
+	[2104] = {2, "This was not available until the Anvil on the Isle of Quel'Danas was completed.", "Anvil", 20501, 30400, "If the Shattered Sun Offensive has already unlocked the Anvil on your server, simply turn this on." },
+	[2105] = {2, "This was not available until the Harbor on the Isle of Quel'Danas was completed.", "Harbor", 20501, 30400, "If the Shattered Sun Offensive has already unlocked the Harbor and has begun working on the Alch Lab and Monument on your server, simply turn this on." },
+	[2106] = {2, "This was not available until the Monument on the Isle of Quel'Danas was completed.", "Monument", 20501, 30400, "If the Shattered Sun Offensive has already unlocked the Monument on your server, simply turn this on." },
+	[2107] = {2, "This was not available until the Alch Lab on the Isle of Quel'Danas was completed.", "Alch Lab", 20501, 30400, "If the Shattered Sun Offensive has already unlocked the Alch Lab on your server, simply turn this on." },
 	
 	-- Wrath Classic Phases
-	[30] = {2, "|CFFAAFFAAThis was not available until Phase 1 of Wrath Classic.|r", "Phase 1", 30400, 30400, "|CFFFFAAAAIncluded Naxxramas, Obsidian Sanctum, and Eye of Eternity.|r" },
-	[3001] = {2, "|CFFAAFFAAThis was only available for the first player to do the thing on your realm!|r", "Realm First", 30400, nil, "|CFFFFAAAABut if you were realm first, good for you.|r" },
-	[31] = {2, "|CFFAAFFAAThis was not available until Phase 2 of Wrath Classic.|r", "Phase 2", 30400, 30401, "|CFFFFAAAAIncluded Ulduar.|r" },
-	[3101] = {2, "|CFFAAFFAAThe wielder of this Hammer was on time!|r", "Hammer Prio", 20501, 40001, "|CFFFFAAAADue to the exclusivity of the Hammer and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after cata prepatch.\n\nIf you do actually have Hammer prio, simply turn this on.|r" },
-	[32] = {2, "|CFFAAFFAAThis was not available until Phase 3 of Wrath Classic.|r", "Phase 3", 30400, 30402, "|CFFFFAAAAIncluded Trial of the Crusader.|r" },
-	[33] = {2, "|CFFAAFFAAThis was not available until Phase 4 of Wrath Classic.|r", "Phase 4", 30400, 30403, "|CFFFFAAAAIncluded Icecrown Citadel.|r" },
-	[3301] = {2, "|CFFAAFFAAThe wielder of Shadowmournes for all the people that don't have it.|r", "Shadowmourne Prio", 30400, 40001, "|CFFFFAAAADue to the exclusivity of Shadowmourne and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after cata prepatch.\n\nIf you do actually have Shadowmourne prio, simply turn this on.|r" },
-	[3302] = {2, "|CFFAAFFAAThis became available with the release of Ruby Sanctum during Wrath Classic.|r", "Ruby Sanctum", 30400, 30403, "|CFFFFAAAAIncluded The Ruby Sanctum.|r" },
-	[3303] = {2, "|CFFAAFFAAThis became available with the release of Operation Gnomeregan and Zalazane's Fall during Wrath Classic.|r", "Operation Zalazane", 30400, 30403, "|CFFFFAAAAIncluded Operation Gnomeregan and Zalazane's Fall|r" },
-	[3304] = {2, "|CFFAAFFAAThis became available with the release of the Elemental Unrest Cataclysm Prepatch Event during Wrath Classic.|r", "Elemental Unrest", 30400, 30404, "|CFFFFAAAAThe Elemental Unrest Pre-Expansion Event?|r" },
+	[30] = {2, "This was not available until Phase 1 of Wrath Classic.", "Phase 1", 30400, 30400, "Included Naxxramas, Obsidian Sanctum, and Eye of Eternity." },
+	[3001] = {2, "This was only available for the first player to do the thing on your realm!", "Realm First", 30400, nil, "But if you were realm first, good for you." },
+	[31] = {2, "This was not available until Phase 2 of Wrath Classic.", "Phase 2", 30400, 30401, "Included Ulduar." },
+	[3101] = {2, "The wielder of this Hammer was on time!", "Hammer Prio", 20501, 40001, "Due to the exclusivity of the Hammer and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after cata prepatch.\n\nIf you do actually have Hammer prio, simply turn this on." },
+	[32] = {2, "This was not available until Phase 3 of Wrath Classic.", "Phase 3", 30400, 30402, "Included Trial of the Crusader." },
+	[33] = {2, "This was not available until Phase 4 of Wrath Classic.", "Phase 4", 30400, 30403, "Included Icecrown Citadel." },
+	[3301] = {2, "The wielder of Shadowmournes for all the people that don't have it.", "Shadowmourne Prio", 30400, 40001, "Due to the exclusivity of Shadowmourne and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after cata prepatch.\n\nIf you do actually have Shadowmourne prio, simply turn this on." },
+	[3302] = {2, "This became available with the release of Ruby Sanctum during Wrath Classic.", "Ruby Sanctum", 30400, 30403, "Included The Ruby Sanctum." },
+	[3303] = {2, "This became available with the release of Operation Gnomeregan and Zalazane's Fall during Wrath Classic.", "Operation Zalazane", 30400, 30403, "Included Operation Gnomeregan and Zalazane's Fall" },
+	[3304] = {2, "This became available with the release of the Elemental Unrest Cataclysm Prepatch Event during Wrath Classic.", "Elemental Unrest", 30400, 30404, "The Elemental Unrest Pre-Expansion Event?" },
 	
 	-- Cataclysm Classic Phases
-	[40] = {2, "|CFFAAFFAAThis was not available until Phase 1 of Cataclysm Classic.|r", "Phase 1", 40400, 40400, "|CFFFFAAAAIncluded Bastion of Twilight, Throne of the Four Winds, and Blackwing Descent.|r" },
-	[4001] = {2, "|CFFAAFFAAThis was not available until the Rise of the Zandalari during Cataclysm Classic.|r", "Rise of the Zandalari", 40400, 40400, "|CFFFFAAAAIncluded Zul'Aman and Zul'Gurub Heroic Dungeons.|r" },
-	[4002] = {2, "|CFFAAFFAAThis was not available until the Molten Front became available during Cataclysm Classic.|r", "Molten Front", 40400, 40400, "|CFFFFAAAAIncluded the Molten Front Dailies.|r" },
-	[41] = {2, "|CFFAAFFAAThis was not available until the Rage of the Firelands during Cataclysm Classic.|r", "Rage of the Firelands", 40400, 40401, "|CFFFFAAAAIncluded Firelands.|r" },
+	[40] = {2, "This was not available until Phase 1 of Cataclysm Classic.", "Phase 1", 40400, 40400, "Included Bastion of Twilight, Throne of the Four Winds, and Blackwing Descent." },
+	[4001] = {2, "This was not available until the Rise of the Zandalari during Cataclysm Classic.", "Rise of the Zandalari", 40400, 40400, "Included Zul'Aman and Zul'Gurub Heroic Dungeons." },
+	[4002] = {2, "This was not available until the Molten Front became available during Cataclysm Classic.", "Molten Front", 40400, 40400, "Included the Molten Front Dailies." },
+	[41] = {2, "This was not available until the Rage of the Firelands during Cataclysm Classic.", "Rage of the Firelands", 40400, 40401, "Included Firelands." },
 	[42] = {
 		2,
-		"|CFFAAFFAAThis was not available until the Hour of Twilight during Cataclysm Classic.|r",
+		"This was not available until the Hour of Twilight during Cataclysm Classic.",
 		"Hour of Twilight",
 		40400,
 		40402,
-		"|CFFFFAAAAIncluded Dragon Soul.|r"
+		"Included Dragon Soul."
 	},
 };
 for phaseID,phaseData in pairs(temp) do
