@@ -29,15 +29,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					},
 				}),
 				q(60426, {	-- A Call to Bastion
-					--["provider"] = { "n",  },	--
-					--["coord"] = { , MALDRAXXUS },
+					["provider"] = { "n", 167210 },	-- Tabulator Killham
+					["coord"] = { 59.6, 43.5, SEAT_OF_THE_PRIMUS },
 					["g"] = {
 						i(181732),	-- Tribute of the Ambitious
 					},
 				}),
 				q(60433, {	-- A Call to Revendreth
-					--["provider"] = { "n",  },	--
-					["coord"] = { 59.7, 43.6, SEAT_OF_THE_PRIMUS },
+					["provider"] = { "n", 167210 },	-- Tabulator Killham
+					["coord"] = { 59.6, 43.5, SEAT_OF_THE_PRIMUS },
 					["g"] = {
 						i(181732),	-- Tribute of the Ambitious
 					},

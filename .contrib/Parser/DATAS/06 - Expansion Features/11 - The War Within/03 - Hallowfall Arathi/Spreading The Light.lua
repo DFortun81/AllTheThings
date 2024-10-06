@@ -581,14 +581,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 							i(224466),	-- Wilber The Chicken (QS!)
 						},
 					}),
-					o(435008, {	-- Farmhand Stash (TODO likely weekly)
-						["description"] = "Requires weekly quest with controlling Harvestbot Remy to spawn.",
-						["coord"] = { 61.6, 32.6, HALLOWFALL },
-						["questID"] = 80590,
-						["g"] = {
-							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
-						},
-					}),
 					o(457246, {	-- Fieldhand Stash (TODO likely weekly)
 						["description"] = "Requires any source of light (e.g. torch, candelabra) to reveal this treasure.",
 						["coord"] = { 64.5, 28.8, HALLOWFALL },
@@ -680,6 +672,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"]
 						["g"] = {
 							i(226018),	-- Darkened Arathi Cape (COSMETIC!)
 							i(224466),	-- Wilber The Chicken (QS!)
+						},
+					}),
+					o(435008, {	-- Farmhand Stash
+						["description"] = "Requires weekly quest with controlling Harvestbot Remy to spawn.",
+						["coord"] = { 61.6, 32.6, HALLOWFALL },
+						["questID"] = 80590,
+						["g"] = {
+							i(226016),	-- Darkened Tabard of the Arathi (COSMETIC!)
 						},
 					}),
 					o(433377, {	-- Harvest Box
