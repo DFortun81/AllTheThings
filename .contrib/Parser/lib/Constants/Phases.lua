@@ -17,11 +17,12 @@ local defaultStateColors = {
 createPhase = function(data)
 	if not data then
 		print("INVALID PHASE: You must pass data into the createPhase function.");
-	elseif not data.readable then
-		print("INVALID PHASE (missing 'readable')", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
+	--elseif not data.readable then
+	--	print("INVALID PHASE (missing 'readable')", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
 	elseif not (data.text and (type(data.text) == "string" or (type(data.text) == "table" and data.text.en))) then
 		print("INVALID PHASE", data.readable, data.text);
 	else
+		if not data.readable then data.readable = data.text.en; end
 		if data.constant then
 			if phasesByConstant[data.constant] then
 				error("ERROR: PHASE CONSTANT " .. data.constant .. " ALREADY ASSIGNED TO " .. phasesByConstant[data.constant].text.en .. ". Please double check that the definition is unique or reuse the same phase.");
@@ -30,7 +31,7 @@ createPhase = function(data)
 			end
 		end
 		if phasesByReadable[data.readable] then
-			error("ERROR: PHASE READABLE " .. data.readable .. " ALREADY ASSIGNED TO " .. phasesByReadable[data.readable].text.en .. ". Please double check that the definition is unique or reuse the same phase.");
+			--error("ERROR: PHASE READABLE " .. data.readable .. " ALREADY ASSIGNED TO " .. phasesByReadable[data.readable].text.en .. ". Please double check that the definition is unique or reuse the same phase.");
 		else
 			phasesByReadable[data.readable] = data;
 		end
@@ -453,6 +454,7 @@ TEMP_MOP_LEGENDARY_CLOAK_PHASE = createPhase({
 
 
 -- Classic Phases
+local CurrentClassicExpansion;
 local defaultDescription = {
 	en = "This was not available until %s of %s.",
 	es = "Esto no estuvo disponible hasta %s de %s.",
@@ -465,7 +467,19 @@ local defaultDescription = {
 	cn = "该功能直到 %s 的 %s 才可用。",
 	--tw = "",
 };
-local function createClassicPhase(expansion, data)
+local defaultLore = {
+	en = "If %s of %s is active on your server, simply turn this on.",
+	es = "Si %s de %s está activo en su servidor, simplemente actívelo.",
+	de = "Wenn %s von %s auf Ihrem Server aktiv ist, schalten Sie dies einfach ein.",
+	fr = "Si %s de %s est actif sur votre serveur, activez-le simplement.",
+	it = "Se %s di %s è attivo sul tuo server, attivalo semplicemente.",
+	pt = "Se %s de %s estiver ativo no seu servidor, basta ativar esta opção.",
+	ru = "Если %s из %s активен на вашем сервере, просто включите это.",
+	ko = "%s(%s)이 서버에서 활성화된 경우 이 기능을 켜기만 하면 됩니다.",
+	cn = "如果 %s 中的 %s 在您的服务器上处于活动状态，只需将其打开即可。",
+	--tw = "",
+};
+local function createClassicPhase(data)
 	-- #if ANYCLASSIC
 	local description = data.description;
 	if not description then
@@ -476,10 +490,24 @@ local function createClassicPhase(expansion, data)
 		data.description = description;
 	end
 	for key,value in pairs(description) do
-		description[key] = value:format(data.text[key] or data.text.en, expansion.text[key] or expansion.text.en);
+		description[key] = value:format(data.text[key] or data.text.en, CurrentClassicExpansion.text[key] or CurrentClassicExpansion.text.en);
+	end
+	local lore = data.lore;
+	if not lore then
+		lore = {};
+		for key,value in pairs(defaultLore) do
+			lore[key] = value;
+		end
+		data.lore = lore;
+	end
+	for key,value in pairs(lore) do
+		lore[key] = value:format(data.text[key] or data.text.en, CurrentClassicExpansion.text[key] or CurrentClassicExpansion.text.en);
 	end
 	if not data.state then
 		data.state = 2;
+	end
+	if not data.readable then
+		data.readable = CurrentClassicExpansion.text.en .. " - " .. data.text.en;
 	end
 	data.color = "FFAAFFAA";
 	data.export = true;
@@ -487,6 +515,23 @@ local function createClassicPhase(expansion, data)
 	-- #else
 	return data.phaseID;
 	-- #endif
+end
+local function convertClassicPhases(phases)
+	for phaseID,phaseData in pairs(phases) do
+		local data = {
+			minimumBuildVersion = phaseData[4],
+			buildVersion = phaseData[5],
+			phaseID = phaseID,
+			text = {
+				en = phaseData[3],
+			},
+		};
+		local description = phaseData[2];
+		if description then data.description = { en = description }; end
+		local lore = phaseData[6];
+		if lore then data.lore = { en = lore }; end
+		createClassicPhase(data);
+	end
 end
 -- If someone wants to translate this stuff at some point that'd be neat.
 --[[
@@ -500,14 +545,19 @@ ko = "",
 cn = "",
 tw = "",
 ]]--
-local EXPANSIONS = {};
-EXPANSIONS.CLASSIC_WOW = {
+
+-- Phases for WoW Classic
+CurrentClassicExpansion = {
 	text = {
-		en = "Classic WoW",
+		-- #if ANYCLASSIC
+		en = "WoW Classic",
+		-- #else
+		en = "Classic",
+		-- #endif
 	},
 };
-PHASE_ONE = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
-	readable = "Phase 1",
+PHASE_ONE = createClassicPhase({
+	readable = "WoW Classic - Phase 1",
 	minimumBuildVersion = 1130100,	-- This will prevent it from being turned off.
 	buildVersion = 11301,
 	phaseID = 11,
@@ -518,8 +568,8 @@ PHASE_ONE = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
 		en = "Included Molten Core and Onyxia's Lair.",
 	},
 });
-PHASE_ONE_DIREMAUL = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
-	readable = "Dire Maul",
+PHASE_ONE_DIREMAUL = createClassicPhase({
+	readable = "WoW Classic - Dire Maul",
 	minimumBuildVersion = 11301,
 	buildVersion = 11301,
 	phaseID = 1101,
@@ -533,8 +583,8 @@ PHASE_ONE_DIREMAUL = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
 		en = "Included Dire Maul.",
 	},
 });
-PHASE_TWO = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
-	readable = "Phase 2",
+PHASE_TWO = createClassicPhase({
+	readable = "WoW Classic - Phase 2",
 	minimumBuildVersion = 11301,
 	buildVersion = 11302,
 	phaseID = 12,
@@ -545,8 +595,8 @@ PHASE_TWO = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
 		en = "Included World PvP and PvP Honor Titles.",
 	},
 });
-PHASE_THREE = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
-	readable = "Phase 3",
+PHASE_THREE = createClassicPhase({
+	readable = "WoW Classic - Phase 3",
 	minimumBuildVersion = 11301,
 	buildVersion = 11303,
 	phaseID = 13,
@@ -561,8 +611,8 @@ PHASE_THREE_DMF_CARDS = PHASE_THREE;
 PHASE_THREE_ENCHANTS = PHASE_THREE;
 PHASE_THREE_RECIPES = PHASE_THREE;
 PHASE_THREE_SILITHUS_EXPEDITION_QUESTS = PHASE_THREE;
-PHASE_FOUR = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
-	readable = "Phase 4",
+PHASE_FOUR = createClassicPhase({
+	readable = "WoW Classic - Phase 4",
 	minimumBuildVersion = 11301,
 	buildVersion = 11304,
 	phaseID = 14,
@@ -574,29 +624,252 @@ PHASE_FOUR = createClassicPhase(EXPANSIONS.CLASSIC_WOW, {
 	},
 });
 PHASE_FOUR_DARKIRON_RECIPES = PHASE_FOUR;
-PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS = 14;
-PHASE_FIVE = 15;
+PHASE_FOUR_SUNKEN_TEMPLE_CLASS_QUESTS = PHASE_FOUR;
+PHASE_FIVE = createClassicPhase({
+	readable = "WoW Classic - Phase 5",
+	minimumBuildVersion = 11301,
+	buildVersion = 11305,
+	phaseID = 15,
+	text = {
+		en = "Phase 5",
+	},
+	lore = {
+		en = "Included Ahn'Qiraj, which was pre-faced by a unique opening event.",
+	},
+});
 PHASE_FIVE_RECIPES = PHASE_FIVE;
 PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS = PHASE_FIVE;
 PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS = PHASE_FIVE;
-PHASE_FIVE_WAR_EFFORT = 1501;
-PHASE_FIVE_GONG = 1502;
-PHASE_FIVE_WAR = 1503;
-PHASE_FIVE_CATCH_UP = 1504;
-PHASE_SIX = 16;
+PHASE_FIVE_WAR_EFFORT = createClassicPhase({
+	readable = "WoW Classic - AQ War Effort",
+	minimumBuildVersion = 11301,
+	phaseID = 1501,
+	text = {
+		en = "AQ War Effort",
+	},
+	description = {
+		en = "This was only available during the Ahn'Qiraj War Effort.",
+	},
+	lore = {
+		en = "If the War Effort has been completed on your server, simply turn this off.",
+	},
+});
+PHASE_FIVE_GONG = createClassicPhase({
+	readable = "WoW Classic - Gates Unopened",
+	minimumBuildVersion = 11301,
+	phaseID = 1502,
+	text = {
+		en = "Gates Unopened",
+	},
+	description = {
+		en = "This was only available up until the Scarab Lords on your server have rung the gong.",
+	},
+	lore = {
+		en = "If the Gates of Anh'Qiraj have been opened on your server, simply turn this off.",
+	},
+});
+PHASE_FIVE_WAR = createClassicPhase({
+	readable = "WoW Classic - 10-Hour War",
+	minimumBuildVersion = 11301,
+	phaseID = 1503,
+	text = {
+		en = "10-Hour War",
+	},
+	description = {
+		en = "This was only available during the 10 Hour War after the Scarab Lord(s) bang the gong.",
+	},
+	lore = {
+		en = "If the Gates of Anh'Qiraj have been opened on your server, simply turn this off.",
+	},
+});
+PHASE_FIVE_CATCH_UP = createClassicPhase({
+	readable = "WoW Classic - Catch-Up",
+	minimumBuildVersion = 11301,
+	buildVersion = 11306,
+	phaseID = 1504,
+	text = {
+		en = "Catch-Up",
+	},
+	description = {
+		en = "This became available near the end of Phase 5 in order to provide Catch-Up Nature Resist gear for those still working on AQ40.",
+	},
+	lore = {
+		en = "If the Catch-Up Gear is available, simply turn this on.",
+	},
+});
+PHASE_SIX = createClassicPhase({
+	readable = "WoW Classic - Phase 6",
+	minimumBuildVersion = 11301,
+	buildVersion = 11306,
+	phaseID = 16,
+	text = {
+		en = "Phase 6",
+	},
+	lore = {
+		en = "Included Naxxramas, which was heralded by the Scourge Invasion.",
+	},
+});
 PHASE_SIX_CLASS_BOOKS = PHASE_SIX;
-PHASE_SIX_SCOURGE_INVASION = 1601;
-PHASE_SIX_SILITHYST = 1602;
-PHASE_SIX_CLASSICERA = 1603;
-SOM_PHASE_ONE = 1604;
-SOD_PHASE_ONE = 1605;
-SOD_PHASE_TWO = 1606;
-SOD_PHASE_THREE = 1607;
-SOD_PHASE_FOUR = 1608;
-SOD_PHASE_FIVE = 1609;
-SOD_PHASE_SIX = 1610;
-SOD_PHASE_SEVEN = 1611;
-SOD_PHASE_EIGHT = 1612;
+PHASE_SIX_SCOURGE_INVASION = createClassicPhase({
+	readable = "WoW Classic - Scourge Invasion",
+	minimumBuildVersion = 11301,
+	phaseID = 1601,
+	text = {
+		en = "Scourge Invasion",
+	},
+	description = {
+		en = "This was only available during the Scourge Invasion.",
+	},
+	lore = {
+		en = "If both Scourge Invasions have been completed on your server, simply turn this off.",
+	},
+});
+PHASE_SIX_SILITHYST = createClassicPhase({
+	readable = "WoW Classic - Silithyst",
+	minimumBuildVersion = 11301,
+	buildVersion = 11306,
+	phaseID = 1602,
+	text = {
+		en = "Silithyst",
+	},
+	description = {
+		en = "This was only available during the Silithyst Must Flow World PVP Event.",
+	},
+	lore = {
+		en = "If the World PVP Event is available, simply turn this on.",
+	},
+});
+PHASE_SIX_CLASSICERA = createClassicPhase({
+	readable = "WoW Classic - Classic Era",
+	minimumBuildVersion = 11301,
+	buildVersion = 11307,
+	phaseID = 1603,
+	text = {
+		en = "Classic Era",
+	},
+	description = {
+		en = "This was only available after the start of Classic Era.",
+	},
+	lore = {
+		en = "If the Classic Era has begun, simply turn this on.",
+	},
+});
+
+
+
+CurrentClassicExpansion = {
+	text = {
+		en = "Season of Mastery",
+	},
+};
+SOM_PHASE_ONE = createClassicPhase({
+	readable = "Season of Mastery - Phase 1",
+	minimumBuildVersion = 11301,
+	phaseID = 1604,
+	text = {
+		en = "Season of Mastery",
+	},
+	description = {
+		en = "This was only available during Season of Mastery.",
+	},
+	lore = {
+		en = "If Season of Mastery is active on your server, simply turn this on.",
+	},
+});
+
+
+
+CurrentClassicExpansion = {
+	text = {
+		en = "Season of Discovery",
+	},
+};
+local function createClassicPhaseForSOD(data)
+	-- #if NOT SEASON_OF_DISCOVERY
+	-- If for some reason the du-*ehem* "smartest individuals" at Blizzard decide to copy this bloat to other versions, you'll want to remove this if statement and then burst into raging tears. Godspeed.  - Crieve
+	data.minimumBuildVersion = data.minimumBuildVersion * 1000;
+	data.buildVersion = nil;
+	-- #endif
+	return createClassicPhase(data);
+end
+SOD_PHASE_ONE = createClassicPhaseForSOD({
+	readable = "Season of Discovery - Phase 1",
+	minimumBuildVersion = 11500,
+	buildVersion = 11500,
+	phaseID = 1605,
+	text = {
+		en = "Season of Discovery",
+	},
+	description = {
+		en = "This was not available until Phase 1 of Season of Discovery.",
+	},
+	lore = {
+		en = "If Season of Discovery is active on your server, simply turn this on.",
+	},
+});
+SOD_PHASE_TWO = createClassicPhaseForSOD({
+	readable = "Season of Discovery - Phase 2",
+	minimumBuildVersion = 11501,
+	buildVersion = 11501,
+	phaseID = 1606,
+	text = {
+		en = "Phase 2",
+	},
+});
+SOD_PHASE_THREE = createClassicPhaseForSOD({
+	readable = "Season of Discovery - Phase 3",
+	minimumBuildVersion = 11502,
+	buildVersion = 11502,
+	phaseID = 1607,
+	text = {
+		en = "Phase 3",
+	},
+});
+SOD_PHASE_FOUR = createClassicPhaseForSOD({
+	readable = "Season of Discovery - Phase 4",
+	minimumBuildVersion = 11503,
+	buildVersion = 11503,
+	phaseID = 1608,
+	text = {
+		en = "Phase 4",
+	},
+});
+SOD_PHASE_FIVE = createClassicPhaseForSOD({
+	readable = "Season of Discovery - Phase 5",
+	minimumBuildVersion = 11504,
+	buildVersion = 11504,
+	phaseID = 1609,
+	text = {
+		en = "Phase 5",
+	},
+});
+SOD_PHASE_SIX = createClassicPhaseForSOD({
+	readable = "Season of Discovery - Phase 6",
+	minimumBuildVersion = 11505,
+	buildVersion = 11505,
+	phaseID = 1610,
+	text = {
+		en = "Phase 6",
+	},
+});
+SOD_PHASE_SEVEN = createClassicPhaseForSOD({
+	readable = "Season of Discovery - Phase 7",
+	minimumBuildVersion = 11506,
+	buildVersion = 11506,
+	phaseID = 1611,
+	text = {
+		en = "Phase 7",
+	},
+});
+SOD_PHASE_EIGHT = createClassicPhaseForSOD({
+	readable = "Season of Discovery - Phase 8",
+	minimumBuildVersion = 11507,
+	buildVersion = 11507,
+	phaseID = 1612,
+	text = {
+		en = "Phase 8",
+	},
+});
 -- #if SEASON_OF_DISCOVERY
 PHASE_ONE_DIREMAUL = SOD_PHASE_FOUR;	-- Dire Maul actually came out with Phase 4 of SOD.
 PHASE_TWO = SOD_PHASE_FOUR;	-- Azuregos, Lord Kazzak, and PVP Battlegrounds were immediately available with Phase 4 of SOD.
@@ -612,8 +885,10 @@ PHASE_FIVE_SILITHUS_FIELD_DUTY_QUESTS = SOD_PHASE_FOUR;
 PHASE_THREE_SILITHUS_EXPEDITION_QUESTS = SOD_PHASE_FIVE;	-- CRIEVE NOTE: On SOD Phase 4, none of these quests were available.
 -- #endif
 
+
+
 -- TBC Classic Phases
-EXPANSIONS.TBC = {
+CurrentClassicExpansion = {
 	text = {
 		-- #if ANYCLASSIC
 		en = "TBC Classic",
@@ -622,28 +897,252 @@ EXPANSIONS.TBC = {
 		-- #endif
 	},
 };
-TBC_PHASE_ONE = 17;
-TBC_PHASE_ONE_DARKPORTAL = 1701;
-TBC_PHASE_TWO = 18;
-TBC_PHASE_TWO_OGRILA = 1801;
-TBC_PHASE_TWO_SKYGUARD = 1802;
-TBC_PHASE_TWO_SWIFTFLIGHTFORM = 18;	-- Subcategory not necessary.
-TBC_PHASE_THREE = 19;
-TBC_PHASE_THREE_NETHERWING = 1901;
-TBC_PHASE_THREE_GLAIVEPRIO = 1902;
-TBC_PHASE_FOUR = 20;
-TBC_PHASE_FIVE = 21;
-TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE = 21;	-- Note: Same as above, distinction isn't necessary, but it helps keep timeline data streamlined.
-TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO = 2101;
-TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B = 2102;
-TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE = 2103;
-TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE_B = 2104;
-TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR = 2105;
-TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B = 2106;
-TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C = 2107;
+TBC_PHASE_ONE = createClassicPhase({
+	readable = "TBC Classic - Phase 1",
+	minimumBuildVersion = 20501,
+	buildVersion = 20501,
+	phaseID = 17,
+	text = {
+		en = "Phase 1",
+	},
+	lore = {
+		en = "Included Karazhan, Magtheridon's Lair, and Gruul's Lair.",
+	},
+});
+TBC_PHASE_ONE_DARKPORTAL = createClassicPhase({
+	readable = "TBC Classic - Dark Portal Opens",
+	minimumBuildVersion = 20501,
+	phaseID = 1701,
+	text = {
+		en = "Dark Portal Opens",
+	},
+	description = {
+		en = "This was only available during the Opening of the Dark Portal event before the launch of TBC.",
+	},
+	lore = {
+		en = "If the Dark Portal has been opened on your server, simply turn this off.",
+	},
+});
+TBC_PHASE_TWO = createClassicPhase({
+	readable = "TBC Classic - Phase 2",
+	minimumBuildVersion = 20501,
+	buildVersion = 20502,
+	phaseID = 18,
+	text = {
+		en = "Phase 2",
+	},
+	lore = {
+		en = "Included Serpentshrine Cavern, Tempest Keep: The Eye, and Swift Druid Flight Forms.",
+	},
+});
+TBC_PHASE_TWO_OGRILA = createClassicPhase({
+	readable = "TBC Classic - Ogri'la",
+	minimumBuildVersion = 20501,
+	buildVersion = 20502,
+	phaseID = 1801,
+	text = {
+		en = "Ogri'la",
+	},
+	description = {
+		en = "This became available with the Ogri'la Faction during TBC Classic.",
+	},
+	lore = {
+		en = "If the Ogri'la Faction is available on your server, simply turn this on.",
+	},
+});
+TBC_PHASE_TWO_SKYGUARD = createClassicPhase({
+	readable = "TBC Classic - Skyguard",
+	minimumBuildVersion = 20501,
+	buildVersion = 20502,
+	phaseID = 1802,
+	text = {
+		en = "Skyguard",
+	},
+	description = {
+		en = "This became available with the Skyguard Faction during TBC Classic.",
+	},
+	lore = {
+		en = "If the Skyguard Faction is available on your server, simply turn this on.",
+	},
+});
+TBC_PHASE_TWO_SWIFTFLIGHTFORM = TBC_PHASE_TWO;
+TBC_PHASE_THREE = createClassicPhase({
+	readable = "TBC Classic - Phase 3",
+	minimumBuildVersion = 20501,
+	buildVersion = 20503,
+	phaseID = 19,
+	text = {
+		en = "Phase 3",
+	},
+	lore = {
+		en = "Included Hyjal Summit and the Black Temple in addition to the vast majority of end game daily / faction content.",
+	},
+});
+TBC_PHASE_THREE_NETHERWING = createClassicPhase({
+	readable = "TBC Classic - Netherwing",
+	minimumBuildVersion = 20501,
+	buildVersion = 20503,
+	phaseID = 1901,
+	text = {
+		en = "Netherwing",
+	},
+	description = {
+		en = "This became available with the Netherwing Faction during TBC Classic.",
+	},
+	lore = {
+		en = "If the Netherwing Faction is available on your server, simply turn this on.",
+	},
+});
+TBC_PHASE_THREE_GLAIVEPRIO = createClassicPhase({
+	readable = "TBC Classic - Glaive Prio",
+	minimumBuildVersion = 20501,
+	buildVersion = 30001,
+	phaseID = 1902,
+	text = {
+		en = "Glaive Prio",
+	},
+	description = {
+		en = "The wielder of this Glaive was prepared!",
+	},
+	lore = {
+		en = "Due to the exclusivity of the Warglaives and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after wrath prepatch.\n\nIf you do actually have Glaive prio, simply turn this on.",
+	},
+});
+TBC_PHASE_FOUR = createClassicPhase({
+	readable = "TBC Classic - Phase 4",
+	minimumBuildVersion = 20501,
+	buildVersion = 20504,
+	phaseID = 20,
+	text = {
+		en = "Phase 4",
+	},
+	lore = {
+		en = "Included Zul'Aman.",
+	},
+});
+TBC_PHASE_FIVE = createClassicPhase({
+	readable = "TBC Classic - Phase 5",
+	minimumBuildVersion = 20501,
+	buildVersion = 20504,
+	phaseID = 21,
+	text = {
+		en = "Phase 5",
+	},
+	lore = {
+		en = "Included Sunwell Plateau and the Isle of Quel'Danas daily content.",
+	},
+});
+TBC_PHASE_FIVE_OFFENSIVE_PHASE_ONE = TBC_PHASE_FIVE;
+TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO = createClassicPhase({
+	readable = "TBC Classic - Sanctum",
+	minimumBuildVersion = 20501,
+	buildVersion = 30400,
+	phaseID = 2101,
+	text = {
+		en = "Sanctum",
+	},
+	description = {
+		en = "This was not available until the Sanctum on the Isle of Quel'Danas was completed.",
+	},
+	lore = {
+		en = "If the Shattered Sun Offensive has already unlocked the Sanctum and has begun working on the Amory and Portal on your server, simply turn this on.",
+	},
+});
+TBC_PHASE_FIVE_OFFENSIVE_PHASE_TWO_B = createClassicPhase({
+	readable = "TBC Classic - Portal",
+	minimumBuildVersion = 20501,
+	buildVersion = 30400,
+	phaseID = 2102,
+	text = {
+		en = "Portal",
+	},
+	description = {
+		en = "This was not available until the Portal on the Isle of Quel'Danas was completed.",
+	},
+	lore = {
+		en = "If the Shattered Sun Offensive has already unlocked the Portal on your server, simply turn this on.",
+	},
+});
+TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE = createClassicPhase({
+	readable = "TBC Classic - Armory",
+	minimumBuildVersion = 20501,
+	buildVersion = 30400,
+	phaseID = 2103,
+	text = {
+		en = "Armory",
+	},
+	description = {
+		en = "This was not available until the Armory on the Isle of Quel'Danas was completed.",
+	},
+	lore = {
+		en = "If the Shattered Sun Offensive has already unlocked the Armory and has begun working on the Harbor and Anvil on your server, simply turn this on.",
+	},
+});
+TBC_PHASE_FIVE_OFFENSIVE_PHASE_THREE_B = createClassicPhase({
+	readable = "TBC Classic - Anvil",
+	minimumBuildVersion = 20501,
+	buildVersion = 30400,
+	phaseID = 2104,
+	text = {
+		en = "Anvil",
+	},
+	description = {
+		en = "This was not available until the Anvil on the Isle of Quel'Danas was completed.",
+	},
+	lore = {
+		en = "If the Shattered Sun Offensive has already unlocked the Anvil on your server, simply turn this on.",
+	},
+});
+TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR = createClassicPhase({
+	readable = "TBC Classic - Harbor",
+	minimumBuildVersion = 20501,
+	buildVersion = 30400,
+	phaseID = 2105,
+	text = {
+		en = "Harbor",
+	},
+	description = {
+		en = "This was not available until the Harbor on the Isle of Quel'Danas was completed.",
+	},
+	lore = {
+		en = "If the Shattered Sun Offensive has already unlocked the Harbor and has begun working on the Alch Lab and Monument on your server, simply turn this on.",
+	},
+});
+TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_B = createClassicPhase({
+	readable = "TBC Classic - Monument",
+	minimumBuildVersion = 20501,
+	buildVersion = 30400,
+	phaseID = 2106,
+	text = {
+		en = "Monument",
+	},
+	description = {
+		en = "This was not available until the Monument on the Isle of Quel'Danas was completed.",
+	},
+	lore = {
+		en = "If the Shattered Sun Offensive has already unlocked the Monument on your server, simply turn this on.",
+	},
+});
+TBC_PHASE_FIVE_OFFENSIVE_PHASE_FOUR_C = createClassicPhase({
+	readable = "TBC Classic - Alch Lab",
+	minimumBuildVersion = 20501,
+	buildVersion = 30400,
+	phaseID = 2107,
+	text = {
+		en = "Alch Lab",
+	},
+	description = {
+		en = "This was not available until the Alch Lab on the Isle of Quel'Danas was completed.",
+	},
+	lore = {
+		en = "If the Shattered Sun Offensive has already unlocked the Alch Lab on your server, simply turn this on.",
+	},
+});
+
+
 
 -- Wrath Classic Phases
-EXPANSIONS.WRATH = {
+CurrentClassicExpansion = {
 	text = {
 		-- #if ANYCLASSIC
 		en = "Wrath Classic",
@@ -652,20 +1151,148 @@ EXPANSIONS.WRATH = {
 		-- #endif
 	},
 };
-WRATH_PHASE_ONE = 30;
-WRATH_PHASE_ONE_REALM_FIRST = 3001;
-WRATH_PHASE_TWO = 31;
-WRATH_PHASE_TWO_HAMMERPRIO = 3101;
-WRATH_PHASE_THREE = 32;
-WRATH_PHASE_FOUR = 33;
-WRATH_PHASE_FOUR_SHADOWMOURNE = 3301;
-WRATH_PHASE_FOUR_RUBYSANCTUM = 3302;
-WRATH_PHASE_FOUR_OPERATION_ZALAZANE = 3303;
-WRATH_PHASE_FOUR_ELEMENTAL_INVASION = 3304;
+WRATH_PHASE_ONE = createClassicPhase({
+	readable = "Wrath Classic - Phase 1",
+	minimumBuildVersion = 30400,
+	buildVersion = 30400,
+	phaseID = 30,
+	text = {
+		en = "Phase 1",
+	},
+	lore = {
+		en = "Included Naxxramas, Obsidian Sanctum, and Eye of Eternity.",
+	},
+});
+WRATH_PHASE_ONE_REALM_FIRST = createClassicPhase({
+	readable = "Wrath Classic - Realm First",
+	minimumBuildVersion = 30400,
+	phaseID = 3001,
+	text = {
+		en = "Realm First",
+	},
+	description = {
+		en = "This was only available for the first player to do the thing on your realm!",
+	},
+	lore = {
+		en = "But if you were realm first, good for you.",
+	},
+});
+WRATH_PHASE_TWO = createClassicPhase({
+	readable = "Wrath Classic - Phase 2",
+	minimumBuildVersion = 30400,
+	buildVersion = 30401,
+	phaseID = 31,
+	text = {
+		en = "Phase 2",
+	},
+	lore = {
+		en = "Included Ulduar.",
+	},
+});
+WRATH_PHASE_TWO_HAMMERPRIO = createClassicPhase({
+	readable = "Wrath Classic - Hammer Prio",
+	minimumBuildVersion = 20501,
+	buildVersion = 40001,
+	phaseID = 3101,
+	text = {
+		en = "Hammer Prio",
+	},
+	description = {
+		en = "The wielder of this Hammer was on time!",
+	},
+	lore = {
+		en = "Due to the exclusivity of the Hammer and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after cata prepatch.\n\nIf you do actually have Hammer prio, simply turn this on.",
+	},
+});
+WRATH_PHASE_THREE = createClassicPhase({
+	readable = "Wrath Classic - Phase 3",
+	minimumBuildVersion = 30400,
+	buildVersion = 30402,
+	phaseID = 32,
+	text = {
+		en = "Phase 3",
+	},
+	lore = {
+		en = "Included Trial of the Crusader.",
+	},
+});
+WRATH_PHASE_FOUR = createClassicPhase({
+	readable = "Wrath Classic - Phase 4",
+	minimumBuildVersion = 30400,
+	buildVersion = 30403,
+	phaseID = 33,
+	text = {
+		en = "Phase 4",
+	},
+	lore = {
+		en = "Included Icecrown Citadel.",
+	},
+});
+WRATH_PHASE_FOUR_SHADOWMOURNE = createClassicPhase({
+	readable = "Wrath Classic - Shadowmourne Prio",
+	minimumBuildVersion = 30400,
+	buildVersion = 40001,
+	phaseID = 3301,
+	text = {
+		en = "Shadowmourne Prio",
+	},
+	description = {
+		en = "The wielder of Shadowmournes for all the people that don't have it.",
+	},
+	lore = {
+		en = "Due to the exclusivity of Shadowmourne and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after cata prepatch.\n\nIf you do actually have Shadowmourne prio, simply turn this on.",
+	},
+});
+WRATH_PHASE_FOUR_RUBYSANCTUM = createClassicPhase({
+	readable = "Wrath Classic - Ruby Sanctum",
+	minimumBuildVersion = 30400,
+	buildVersion = 30403,
+	phaseID = 3302,
+	text = {
+		en = "Ruby Sanctum",
+	},
+	description = {
+		en = "This became available with the release of Ruby Sanctum during Wrath Classic.",
+	},
+	lore = {
+		en = "Included The Ruby Sanctum.",
+	},
+});
+WRATH_PHASE_FOUR_OPERATION_ZALAZANE = createClassicPhase({
+	readable = "Wrath Classic - Operation Zalazane",
+	minimumBuildVersion = 30400,
+	buildVersion = 30403,
+	phaseID = 3303,
+	text = {
+		en = "Operation Zalazane",
+	},
+	description = {
+		en = "This became available with the release of Operation Gnomeregan and Zalazane's Fall during Wrath Classic.",
+	},
+	lore = {
+		en = "Included Operation Gnomeregan and Zalazane's Fall",
+	},
+});
+WRATH_PHASE_FOUR_ELEMENTAL_INVASION = createClassicPhase({
+	readable = "Wrath Classic - Elemental Unrest",
+	minimumBuildVersion = 30400,
+	buildVersion = 30404,
+	phaseID = 3304,
+	text = {
+		en = "Elemental Unrest",
+	},
+	description = {
+		en = "This became available with the release of the Elemental Unrest Cataclysm Prepatch Event during Wrath Classic.",
+	},
+	lore = {
+		en = "The Elemental Unrest Pre-Expansion Event?",
+	},
+});
 
--- NOTE: Reason for this is to show when stuff is going away eventually.
+
+
 -- Cataclysm Classic Phases
-EXPANSIONS.CATA = {
+CurrentClassicExpansion = {
 	text = {
 		-- #if ANYCLASSIC
 		en = "Cataclysm Classic",
@@ -674,15 +1301,84 @@ EXPANSIONS.CATA = {
 		-- #endif
 	},
 };
-CATA_PHASE_ONE = 40;
-CATA_PHASE_RISE_OF_THE_ZANDALARI = 4001;	-- ZA/ZG [Per Cata Dev, this phase wasn't a big enough release to justify incrementing the build number]
-CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT = 4001;	-- World Boss Loot was originally blue, they got upgraded to Epic later.
-CATA_PHASE_MOLTEN_FRONT = 4002;	-- Molten Front dailies came out before Firelands did during Cata Classic.
-CATA_PHASE_RAGE_OF_THE_FIRELANDS = 41;	-- Firelands
-CATA_PHASE_HOUR_OF_TWILIGHT = 42;	-- Dragonsoul
+CATA_PHASE_ONE = createClassicPhase({
+	readable = "Cataclysm Classic - Phase 1",
+	minimumBuildVersion = 40400,
+	buildVersion = 40400,
+	phaseID = 40,
+	text = {
+		en = "Phase 1",
+	},
+	lore = {
+		en = "Included Bastion of Twilight, Throne of the Four Winds, and Blackwing Descent.",
+	},
+});
+CATA_PHASE_RISE_OF_THE_ZANDALARI = createClassicPhase({
+	readable = "Cataclysm Classic - Rise of the Zandalari",
+	minimumBuildVersion = 40400,
+	buildVersion = 40400,	-- ZA/ZG [Per Cata Dev, this phase wasn't a big enough release to justify incrementing the build number]
+	phaseID = 4001,
+	text = {
+		en = "Rise of the Zandalari",
+	},
+	description = {
+		en = "This was not available until the Rise of the Zandalari during Cataclysm Classic.",
+	},
+	lore = {
+		en = "Included Zul'Aman and Zul'Gurub Heroic Dungeons.",
+	},
+});
+CATA_PHASE_ADJUSTED_WORLD_BOSS_LOOT = CATA_PHASE_RISE_OF_THE_ZANDALARI;	-- World Boss Loot was originally blue, they got upgraded to Epic later.
+CATA_PHASE_MOLTEN_FRONT = createClassicPhase({
+	readable = "Cataclysm Classic - Molten Front",
+	minimumBuildVersion = 40400,
+	buildVersion = 40400,	-- Molten Front dailies came out before Firelands did during Cata Classic.
+	phaseID = 4002,
+	text = {
+		en = "Molten Front",
+	},
+	description = {
+		en = "This was not available until the Molten Front became available during Cataclysm Classic.",
+	},
+	lore = {
+		en = "Included the Molten Front Dailies.",
+	},
+});
+CATA_PHASE_RAGE_OF_THE_FIRELANDS = createClassicPhase({
+	readable = "Cataclysm Classic - Rage of the Firelands",
+	minimumBuildVersion = 40400,
+	buildVersion = 40401,
+	phaseID = 41,
+	text = {
+		en = "Rage of the Firelands",
+	},
+	description = {
+		en = "This was not available until the Rage of the Firelands during Cataclysm Classic.",
+	},
+	lore = {
+		en = "Included Firelands.",
+	},
+});
+CATA_PHASE_HOUR_OF_TWILIGHT = createClassicPhase({
+	readable = "Cataclysm Classic - Hour of Twilight",
+	minimumBuildVersion = 40400,
+	buildVersion = 40402,
+	phaseID = 42,
+	text = {
+		en = "Hour of Twilight",
+	},
+	description = {
+		en = "This was not available until the Hour of Twilight during Cataclysm Classic.",
+	},
+	lore = {
+		en = "Included Dragon Soul.",
+	},
+});
+
+
 
 -- Mists of Pandaria Classic Phases
-EXPANSIONS.MOP = {
+CurrentClassicExpansion = {
 	text = {
 		-- #if ANYCLASSIC
 		en = "Mists Classic",
@@ -695,8 +1391,10 @@ MOP_PHASE_ONE = 50;
 MOP_PHASE_TWO = 51;
 MOP_PHASE_THREE = 52;
 
+
+
 -- Warlords of Draenor Classic Phases
-EXPANSIONS.WOD = {
+CurrentClassicExpansion = {
 	text = {
 		-- #if ANYCLASSIC
 		en = "WOD Classic",
@@ -709,8 +1407,10 @@ WOD_PHASE_ONE = 60;
 WOD_PHASE_TWO = 61;
 WOD_PHASE_THREE = 62;
 
+
+
 -- Legion Classic Phases
-EXPANSIONS.LEGION = {
+CurrentClassicExpansion = {
 	text = {
 		-- #if ANYCLASSIC
 		en = "Legion Classic",
@@ -723,8 +1423,10 @@ LEGION_PHASE_ONE = 70;
 LEGION_PHASE_TWO = 71;
 LEGION_PHASE_THREE = 72;
 
+
+
 -- Battle for Azeroth Phases
-EXPANSIONS.BFA = {
+CurrentClassicExpansion = {
 	text = {
 		-- #if ANYCLASSIC
 		en = "BFA Classic",
@@ -737,8 +1439,10 @@ BFA_PHASE_ONE = 80;
 BFA_PHASE_TWO = 81;
 BFA_PHASE_THREE = 82;
 
+
+
 -- Shadowlands Phases
-EXPANSIONS.SHADOWLANDS = {
+CurrentClassicExpansion = {
 	text = {
 		-- #if ANYCLASSIC
 		en = "Shadowlands Classic",
@@ -751,8 +1455,10 @@ SHADOWLANDS_PHASE_ONE = 90;
 SHADOWLANDS_PHASE_TWO = 91;
 SHADOWLANDS_PHASE_THREE = 92;
 
+
+
 -- Dragonflight Phases
-EXPANSIONS.DF = {
+CurrentClassicExpansion = {
 	text = {
 		-- #if ANYCLASSIC
 		en = "Dragonflight Classic",
@@ -765,8 +1471,10 @@ DF_PHASE_ONE = 100;
 DF_PHASE_TWO = 101;
 DF_PHASE_THREE = 102;
 
+
+
 -- The War Within Phases
-EXPANSIONS.TWW = {
+CurrentClassicExpansion = {
 	text = {
 		-- #if ANYCLASSIC
 		en = "TWW Classic",
@@ -778,91 +1486,5 @@ EXPANSIONS.TWW = {
 TWW_PHASE_ONE = 110;
 TWW_PHASE_TWO = 111;
 TWW_PHASE_THREE = 112;
-
--- TODO: Convert this to the other format!
-local temp = {
-	-- Classic Phases
-	[15] = {2, "This was not available until Phase 5 of WoW Classic.", "Phase 5", 11301, 11305, "Included Ahn'Qiraj, which was pre-faced by a unique opening event." },
-	[1501] = {2, "This was only available during the Ahn'Qiraj War Effort.", "AQ War Effort", 11301, nil, "If the War Effort has been completed on your server, simply turn this off." },
-	[1502] = {2, "This was only available up until the Scarab Lords on your server have rung the gong.", "Gates Unopened", 11301, nil, "If the Gates of Anh'Qiraj have been opened on your server, simply turn this off." },
-	[1503] = {2, "This was only available during the 10 Hour War after the Scarab Lord(s) bang the gong.", "10-Hour War", 11301, nil, "If the Gates of Anh'Qiraj have been opened on your server, simply turn this off." },
-	[1504] = {2, "This became available near the end of Phase 5 in order to provide Catch-Up Nature Resist gear for those still working on AQ40.", "Catch-Up", 11301, 11306, "If the Catch-Up Gear is available, simply turn this on." },
-	[16] = {2, "This was not available until Phase 6 of WoW Classic.", "Phase 6", 11301, 11306, "Included Naxxramas, which was heralded by the Scourge Invasion." },
-	[1601] = {2, "This was only available during the Scourge Invasions.", "Scourge Invasion", 11301, nil, "If both Scourge Invasions have been completed on your server, simply turn this off." },
-	[1602] = {2, "This was only available during the Silithyst Must Flow World PVP Event.", "Silithyst", 11301, 11306, "If the World PVP Event is available, simply turn this on." },
-	[1603] = {2, "This was only available after the start of Classic Era.", "Classic Era", 11301, 11307, "If the Classic Era has begun, simply turn this on." },
-	[1604] = {2, "This was only available during Season of Mastery.", "Season of Mastery", 11301, nil, "If Season of Mastery is active on your server, simply turn this on." },
-	
-	-- Season of Discovery Phases
-	[1605] = {2, "This was not available until Phase 1 of Season of Discovery.", "Season of Discovery", 11500, 11500, "If Season of Discovery is active on your server, simply turn this on." },
-	[1606] = {2, "This was not available until Phase 2 of Season of Discovery.", "Phase 2", 11501, 11501, "If Phase 2 of Season of Discovery is active on your server, simply turn this on." },
-	[1607] = {2, "This was not available until Phase 3 of Season of Discovery.", "Phase 3", 11502, 11502, "If Phase 3 of Season of Discovery is active on your server, simply turn this on." },
-	[1608] = {2, "This was not available until Phase 4 of Season of Discovery.", "Phase 4", 11503, 11503, "If Phase 4 of Season of Discovery is active on your server, simply turn this on." },
-	[1609] = {2, "This was not available until Phase 5 of Season of Discovery.", "Phase 5", 11504, 11504, "If Phase 5 of Season of Discovery is active on your server, simply turn this on." },
-	[1610] = {2, "This was not available until Phase 6 of Season of Discovery.", "Phase 6", 11505, 11505, "If Phase 6 of Season of Discovery is active on your server, simply turn this on." },
-	[1611] = {2, "This was not available until Phase 7 of Season of Discovery.", "Phase 7", 11506, 11506, "If Phase 7 of Season of Discovery is active on your server, simply turn this on." },
-	[1612] = {2, "This was not available until Phase 8 of Season of Discovery.", "Phase 8", 11507, 11507, "If Phase 8 of Season of Discovery is active on your server, simply turn this on." },
-	
-	-- TBC Classic Phases
-	[17] = {2, "This was not available until Phase 1 of TBC Classic.", "Phase 1", 20501, 20501, "Included Karazhan, Magtheridon's Lair, and Gruul's Lair." },
-	[1701] = {2, "This was only available during the Opening of the Dark Portal event before the launch of TBC.", "Dark Portal Opens", 20501, nil, "If the Dark Portal has been opened on your server, simply turn this off." },
-	[18] = {2, "This was not available until Phase 2 of TBC Classic.", "Phase 2", 20501, 20502, "Included Serpentshrine Cavern, Tempest Keep: The Eye, and Swift Druid Flight Forms.\n\nThe Great Herb/Mining Node War had officially begun." },
-	[1801] = {2, "This became available with the Ogri'la Faction during TBC Classic.", "Ogri'la", 20501, 20502, "If the Ogri'la Faction is available on your server, simply turn this on." },
-	[1802] = {2, "This became available with the Skyguard Faction during TBC Classic.", "Skyguard", 20501, 20502, "If the Skyguard Faction is available on your server, simply turn this on." },
-	[19] = {2, "This was not available until Phase 3 of TBC Classic.", "Phase 3", 20501, 20503, "Included Hyjal Summit and the Black Temple in addition to the vast majority of end game daily / faction content." },
-	[1901] = {2, "This became available with the Netherwing Faction during TBC Classic.", "Netherwing", 20501, 20503, "If the Netherwing Faction is available on your server, simply turn this on." },
-	[1902] = {2, "The wielder of this Glaive was prepared!", "Glaive Prio", 20501, 30001, "Due to the exclusivity of the Warglaives and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after wrath prepatch.\n\nIf you do actually have Glaive prio, simply turn this on." },
-	[20] = {2, "This was not available until Phase 4 of TBC Classic.", "Phase 4", 20501, 20504, "Included Zul'Aman." },
-	[21] = {2, "This was not available until Phase 5 of TBC Classic.", "Phase 5", 20501, 20504, "Included Sunwell Plateau and the Isle of Quel'Danas daily content." },
-	[2101] = {2, "This was not available until the Sanctum on the Isle of Quel'Danas was completed.", "Sanctum", 20501, 30400, "If the Shattered Sun Offensive has already unlocked the Sanctum and has begun working on the Amory and Portal on your server, simply turn this on." },
-	[2102] = {2, "This was not available until the Portal on the Isle of Quel'Danas was completed.", "Portal", 20501, 30400, "If the Shattered Sun Offensive has already unlocked the Portal on your server, simply turn this on." },
-	[2103] = {2, "This was not available until the Armory on the Isle of Quel'Danas was completed.", "Armory", 20501, 30400, "If the Shattered Sun Offensive has already unlocked the Armory and has begun working on the Harbor and Anvil on your server, simply turn this on." },
-	[2104] = {2, "This was not available until the Anvil on the Isle of Quel'Danas was completed.", "Anvil", 20501, 30400, "If the Shattered Sun Offensive has already unlocked the Anvil on your server, simply turn this on." },
-	[2105] = {2, "This was not available until the Harbor on the Isle of Quel'Danas was completed.", "Harbor", 20501, 30400, "If the Shattered Sun Offensive has already unlocked the Harbor and has begun working on the Alch Lab and Monument on your server, simply turn this on." },
-	[2106] = {2, "This was not available until the Monument on the Isle of Quel'Danas was completed.", "Monument", 20501, 30400, "If the Shattered Sun Offensive has already unlocked the Monument on your server, simply turn this on." },
-	[2107] = {2, "This was not available until the Alch Lab on the Isle of Quel'Danas was completed.", "Alch Lab", 20501, 30400, "If the Shattered Sun Offensive has already unlocked the Alch Lab on your server, simply turn this on." },
-	
-	-- Wrath Classic Phases
-	[30] = {2, "This was not available until Phase 1 of Wrath Classic.", "Phase 1", 30400, 30400, "Included Naxxramas, Obsidian Sanctum, and Eye of Eternity." },
-	[3001] = {2, "This was only available for the first player to do the thing on your realm!", "Realm First", 30400, nil, "But if you were realm first, good for you." },
-	[31] = {2, "This was not available until Phase 2 of Wrath Classic.", "Phase 2", 30400, 30401, "Included Ulduar." },
-	[3101] = {2, "The wielder of this Hammer was on time!", "Hammer Prio", 20501, 40001, "Due to the exclusivity of the Hammer and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after cata prepatch.\n\nIf you do actually have Hammer prio, simply turn this on." },
-	[32] = {2, "This was not available until Phase 3 of Wrath Classic.", "Phase 3", 30400, 30402, "Included Trial of the Crusader." },
-	[33] = {2, "This was not available until Phase 4 of Wrath Classic.", "Phase 4", 30400, 30403, "Included Icecrown Citadel." },
-	[3301] = {2, "The wielder of Shadowmournes for all the people that don't have it.", "Shadowmourne Prio", 30400, 40001, "Due to the exclusivity of Shadowmourne and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after cata prepatch.\n\nIf you do actually have Shadowmourne prio, simply turn this on." },
-	[3302] = {2, "This became available with the release of Ruby Sanctum during Wrath Classic.", "Ruby Sanctum", 30400, 30403, "Included The Ruby Sanctum." },
-	[3303] = {2, "This became available with the release of Operation Gnomeregan and Zalazane's Fall during Wrath Classic.", "Operation Zalazane", 30400, 30403, "Included Operation Gnomeregan and Zalazane's Fall" },
-	[3304] = {2, "This became available with the release of the Elemental Unrest Cataclysm Prepatch Event during Wrath Classic.", "Elemental Unrest", 30400, 30404, "The Elemental Unrest Pre-Expansion Event?" },
-	
-	-- Cataclysm Classic Phases
-	[40] = {2, "This was not available until Phase 1 of Cataclysm Classic.", "Phase 1", 40400, 40400, "Included Bastion of Twilight, Throne of the Four Winds, and Blackwing Descent." },
-	[4001] = {2, "This was not available until the Rise of the Zandalari during Cataclysm Classic.", "Rise of the Zandalari", 40400, 40400, "Included Zul'Aman and Zul'Gurub Heroic Dungeons." },
-	[4002] = {2, "This was not available until the Molten Front became available during Cataclysm Classic.", "Molten Front", 40400, 40400, "Included the Molten Front Dailies." },
-	[41] = {2, "This was not available until the Rage of the Firelands during Cataclysm Classic.", "Rage of the Firelands", 40400, 40401, "Included Firelands." },
-	[42] = {
-		2,
-		"This was not available until the Hour of Twilight during Cataclysm Classic.",
-		"Hour of Twilight",
-		40400,
-		40402,
-		"Included Dragon Soul."
-	},
-};
-for phaseID,phaseData in pairs(temp) do
-	local data = {
-		readable = phaseData[2],
-		minimumBuildVersion = phaseData[4],
-		buildVersion = phaseData[5],
-		phaseID = phaseID,
-		text = {
-			en = phaseData[3],
-		},
-	};
-	local description = phaseData[2];
-	if description then data.description = { en = description }; end
-	local lore = phaseData[6];
-	if lore then data.lore = { en = lore }; end
-	createClassicPhase(EXPANSIONS.CLASSIC_WOW, data);
-end
 
 -- Done defining Phases for Classic
