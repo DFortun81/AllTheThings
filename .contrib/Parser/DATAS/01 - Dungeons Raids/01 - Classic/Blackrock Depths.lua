@@ -2802,7 +2802,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["cost"] = { { "i", 21986, 1 } },	-- Banner of Provocation
 					["timeline"] = { REMOVED_4_0_3 },
 					-- #if NOT ANYCLASSIC
-					["u"] = 11,
+					["u"] = CONDITIONALLY_AVAILABLE,
 					-- #endif
 					-- #if AFTER 4.0.3
 					-- This init function unmarks the removed from game flag for folks with the brazier.
@@ -2811,7 +2811,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = bubbleDown({
 						["timeline"] = { REMOVED_4_0_3 },
 						-- #if NOT ANYCLASSIC
-						["u"] = 11,
+						["u"] = CONDITIONALLY_AVAILABLE,
 						-- #endif
 					}, {
 						i(22047),	-- Top Piece of Lord Valthalak's Amulet

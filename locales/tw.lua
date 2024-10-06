@@ -844,24 +844,6 @@ for key,value in pairs({
 do a[key] = value; end
 
 if app.IsRetail then
-	local a = L.AVAILABILITY_CONDITIONS;
-	for key,value in pairs({
-		-- Arbitrary Filters
-		[1] = {1, "|CFFFF0000此項玩家永遠無法獲得。|r", "從未實裝"}, -- No Hope
-		[2] = {1, "|CFFFF0000此項已從遊戲中刪除。|r", "已從遊戲中移除"}, -- No Hope
-		[4] = {3, "|CFFFF0000除非您擁有所需的 PvP 稱號、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖幻化。|r", "PvP 精良/角鬥士"},
-		[9] = {3, "|CFFFF0000此物品可在黑市拍賣行購買。原始來源可能已被刪除。|r", "黑市拍賣行 [BMAH]"},
-		[10] = {3, "|CFFFF0000最初通過不再印刷的 TCG 卡獲得，但仍可通過黑市、遊戲内或現實中的拍賣行獲得。|r", "集換式卡牌遊戲 [TCG]"},
-		[11] = {3, "|CFFFF0000除非您認識可以使用用於召唤首領的物品的人，否則這將不再可用。\n注意：如果過去擁有大多數召唤物品，則可以通過與相應的 NPC 交談來重新獲得它們。|r", "需要召唤物品"},
-		[15] = {1, "|CFFFF0000這不能永久收集、學習或用於幻化。|r", "不可學"},
-		[35] = {3, "|CFFFF0000這被鎖定在付費牆後面，例如遊戲内商店、另一個暴雪產品或招兵買馬召集令。|r", "暴雪禮品卡"},
-		[38] = {1, "|CFFFF0000這僅適用於在《潘達利亞之謎》或通過黑市拍賣行完成傳奇披風任務鏈的玩家。|r", "決心罩氅，艾夏卡瑪斯"}, --TODO: 確認台版5.4傳奇披風名字 現在的是8.0的披風
-		[45] = {1, "|CFFFF0000暴雪的拾取更改損壞了幾件物品，使其無法獲得。\n“绞肉機”奥戈姆，和奥杜爾英雄模式物品目前已損壞，需要修復。|r", "拾取損壞"},	--TODO: |CFFFF0000Blizzard's loot changes broke several items and made them unobtainable.|r
-	})
-	do a[key] = value; end
-end
-
-if app.IsRetail then
 	local a = L.CUSTOM_COLLECTS_REASONS;
 	for key,value in pairs({
 		["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "新玩家體驗", desc = "只有新角色可以收藏這個。" },

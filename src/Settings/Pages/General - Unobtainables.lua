@@ -18,7 +18,7 @@ app.AddEventHandler("OnSettingsRefresh", function()
 	end
 end);
 
-local conditions = L.AVAILABILITY_CONDITIONS;
+local phases = L.PHASES;
 local UnobtainableFilterOnClick = function(self)
 	settings:SetUnobtainableFilter(self.u, self:GetChecked());
 end;
@@ -36,21 +36,15 @@ end;
 local AvailabilityConditions = {
 	1,	-- Never Implemented
 	2,	-- Removed From Game
+	6,	-- Conditionally Available
 	0,	-- Blank Space
+	3,	-- Blizzard Balance
 	9,	-- Black Market AH
-	35,	-- Blizzard Balance (3 in classic)
 	10,	-- Trading Card Game
 	0,	-- Blank Space
 	38,	-- Ordos
 	4,	-- PvP Elite / Gladiator
-	11,	-- Summon Items (TODO: Split up into a couple different ones
-	0,	-- Blank Space
-	45,	-- Broken Loot (not valid anymore?)
-
-	-- The following filter it not working properly, and only functions to connect items with conditional descriptions from locales. Would be nice if this could work as a toggle-able filter.
-	-- 15, -- Unlearnable (currently cannot be permanently collected)
 };
-
 
 if app.IsClassic then
 	-- Temporary stuff
@@ -85,13 +79,19 @@ local yoffset = -4;
 local last = headerUnobtainableContent
 for i,u in ipairs(AvailabilityConditions) do
 	if u > 0 then
-		local condition = conditions[u];
-		local filter = child:CreateCheckBox(condition[3], UnobtainableOnRefresh, UnobtainableFilterOnClick)
-		filter:SetATTTooltip(condition[2] .. "\n\nID: " .. u)
-		filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
-		filter.u = u;
-		last = filter
-		yoffset = 6;
+		local phase = phases[u];
+		if phase then
+			local filter = child:CreateCheckBox(phase.name, UnobtainableOnRefresh, UnobtainableFilterOnClick)
+			local description = phase.description;
+			if phase.lore then description = description .. "\n \n" .. phase.lore; end
+			filter:SetATTTooltip(description .. "\n\nID: " .. u)
+			filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+			filter.u = u;
+			last = filter
+			yoffset = 6;
+		else
+			print("Invalid phase ID", u);
+		end
 	else
 		yoffset = yoffset - 12;
 	end

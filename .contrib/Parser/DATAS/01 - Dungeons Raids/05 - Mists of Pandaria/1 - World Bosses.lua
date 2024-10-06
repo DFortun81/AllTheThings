@@ -419,7 +419,7 @@ root(ROOTS.Instances, expansion(EXPANSION.MOP, bubbleDown({ ["timeline"] = { ADD
 				},
 			})),
 			e(861, bubbleDownSelf({	-- Ordos, Fire-God of the Yaungol
-				["u"] = 38,	-- Legendary Cloak Filter
+				["u"] = TEMP_MOP_LEGENDARY_CLOAK_PHASE,	-- Legendary Cloak Filter
 				["timeline"] = { ADDED_5_4_0 },
 			}, {
 				["sourceQuests"] = { 33104 },	-- A Pandaren Legend

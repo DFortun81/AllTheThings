@@ -205,6 +205,16 @@ namespace ATT
         private static IDictionary<long, bool> OBJECTS_WITH_REFERENCES = new Dictionary<long, bool>();
 
         /// <summary>
+        /// All of thePhase Constants listed by their constant name and id value.
+        /// </summary>
+        private static Dictionary<string, long> PHASE_CONSTANTS = new Dictionary<string, long>();
+
+        /// <summary>
+        /// All of the Phase IDs that have been referenced somewhere in the database.
+        /// </summary>
+        private static Dictionary<long, bool> PHASES_WITH_REFERENCES = new Dictionary<long, bool>();
+
+        /// <summary>
         /// All of the Quest IDs that have been referenced somewhere in the database.
         /// </summary>
         private static IDictionary<long, bool> QUESTS_WITH_REFERENCES = new Dictionary<long, bool>();
@@ -360,6 +370,64 @@ namespace ATT
             if (CUSTOM_HEADER_CONSTANTS.TryGetValue(headerConstant, out long headerID))
             {
                 CUSTOM_HEADERS_WITH_REFERENCES[headerID] = true;
+            }
+        }
+
+        /// <summary>
+        /// Assign the phases to the Framework's internal reference.
+        /// </summary>
+        /// <param name="phases">The phases.</param>
+        public static void AssignPhases(Dictionary<long, object> phases)
+        {
+            Phases = phases;
+            Trace.WriteLine($"Found {phases.Count} Phases...");
+            foreach (var pair in phases)
+            {
+                if (pair.Value is IDictionary<string, object> phase)
+                {
+                    if (phase.TryGetValue("constant", out object value))
+                    {
+                        var constant = value.ToString();
+                        PHASE_CONSTANTS[constant] = pair.Key;
+                        if (phase.TryGetValue("export", out value) && (bool)value)
+                        {
+                            MarkPhaseAsRequired(constant);
+                        }
+                    }
+                    else if (phase.TryGetValue("export", out value) && (bool)value)
+                    {
+                        MarkPhaseAsRequired(pair.Key);
+                    }
+                    if (phase.TryGetValue("readable", out value) && !phase.ContainsKey("temporary"))
+                    {
+                        PhaseIDsByKey[value.ToString()] = pair.Key;
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Mark the Phase as Required.
+        /// This will force it to be included in the export if it exists as a constant.
+        /// NOTE: Only phases with a constant defined can be explicitly marked.
+        /// </summary>
+        /// <param name="phaseID">The phase ID.</param>
+        public static void MarkPhaseAsRequired(long phaseID)
+        {
+            PHASES_WITH_REFERENCES[phaseID] = true;
+        }
+
+        /// <summary>
+        /// Mark the Phase as Required.
+        /// This will force it to be included in the export if it exists as a constant.
+        /// NOTE: Only phases with a constant defined can be explicitly marked.
+        /// </summary>
+        /// <param name="phaseConstant">The phase constant.</param>
+        public static void MarkPhaseAsRequired(string phaseConstant)
+        {
+            if (PHASE_CONSTANTS.TryGetValue(phaseConstant, out long phaseID))
+            {
+                PHASES_WITH_REFERENCES[phaseID] = true;
             }
         }
 
@@ -552,6 +620,16 @@ namespace ATT
         /// All of the objects that have been loaded into the database.
         /// </summary>
         internal static Dictionary<long, Dictionary<string, object>> ObjectDB { get; private set; } = new Dictionary<long, Dictionary<string, object>>();
+
+        /// <summary>
+        /// The Phases table from main.lua that is used to generate custom headers.
+        /// </summary>
+        internal static Dictionary<long, object> Phases { get; private set; }
+
+        /// <summary>
+        /// This contains all of the explicitly assigned phaseIDs to readable
+        /// </summary>
+        internal static Dictionary<string, long> PhaseIDsByKey { get; } = new Dictionary<string, long>();
 
         /// <summary>
         /// Contains two Keys for sets of field names relating to a 'trackable' nature within ATT
@@ -2132,6 +2210,9 @@ namespace ATT
                             File.WriteAllText(Path.Combine(debugFolder.FullName, "ObjectDB.lua"), builder.ToString(), Encoding.UTF8);
                         }
 
+                        // Export the Phases file.
+                        // TODO
+
                         // Export the Mount DB file.
                         var mounts = Items.AllIDs;
                         if (mounts.Any())
@@ -2998,6 +3079,214 @@ namespace ATT
                         }
                     }
                     builder.AppendLine("}");
+
+                    // Append the file content to our localization database.
+                    localizationDatabase.AppendLine(builder.ToString());
+                }
+
+                // Export the Phases file.
+                if (Phases != null && Phases.Any())
+                {
+                    CurrentParseStage = ParseStage.ExportPhases;
+
+                    // Now export it based on what we know.
+                    var builder = new StringBuilder("-- Phase Database Module").AppendLine();
+                    var keys = new List<long>();
+                    var icons = new Dictionary<long, string>();
+                    var constants = new Dictionary<string, long>();
+                    var localizationForText = new Dictionary<string, Dictionary<long, string>>();
+                    var localizationForLore = new Dictionary<string, Dictionary<long, string>>();
+                    var localizationForDescriptions = new Dictionary<string, Dictionary<long, string>>();
+                    foreach (var key in Phases.Keys)
+                    {
+                        // Include Only Referenced Phases!
+                        if (PHASES_WITH_REFERENCES.ContainsKey(key))
+                        {
+                            if (Phases.TryGetValue(key, out object o) && o is IDictionary<string, object> phase)
+                            {
+                                keys.Add(key);
+                                if (phase.TryGetValue("icon", out object value))
+                                {
+                                    icons[key] = value.ToString().Replace("\\", "/");
+                                }
+                                if (phase.TryGetValue("constant", out value))
+                                {
+                                    constants[value.ToString()] = key;
+                                }
+                                if (phase.TryGetValue("text", out value))
+                                {
+                                    if (!(value is IDictionary<string, object> localeData))
+                                    {
+                                        localeData = new Dictionary<string, object>
+                                        {
+                                            ["en"] = value
+                                        };
+                                    }
+                                    TryColorizeDictionary(localeData);
+                                    foreach (var locale in localeData)
+                                    {
+                                        if (!localizationForText.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                        {
+                                            localizationForText[locale.Key] = sublocale = new Dictionary<long, string>();
+                                        }
+                                        sublocale[key] = locale.Value.ToString();
+                                    }
+                                }
+                                if (phase.TryGetValue("description", out value))
+                                {
+                                    if (!(value is IDictionary<string, object> localeData))
+                                    {
+                                        localeData = new Dictionary<string, object>
+                                        {
+                                            ["en"] = value
+                                        };
+                                    }
+                                    TryColorizeDictionary(localeData);
+                                    foreach (var locale in localeData)
+                                    {
+                                        if (!localizationForDescriptions.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                        {
+                                            localizationForDescriptions[locale.Key] = sublocale = new Dictionary<long, string>();
+                                        }
+                                        sublocale[key] = locale.Value.ToString();
+                                    }
+                                }
+                                if (phase.TryGetValue("lore", out value))
+                                {
+                                    if (!(value is IDictionary<string, object> localeData))
+                                    {
+                                        localeData = new Dictionary<string, object>
+                                        {
+                                            ["en"] = value
+                                        };
+                                    }
+                                    TryColorizeDictionary(localeData);
+                                    foreach (var locale in localeData)
+                                    {
+                                        if (!localizationForLore.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                        {
+                                            localizationForLore[locale.Key] = sublocale = new Dictionary<long, string>();
+                                        }
+                                        sublocale[key] = locale.Value.ToString();
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    keys.Sort(delegate (long a, long b)
+                    {
+                        return a.CompareTo(b);
+                    });
+
+                    // Write the header constants!
+                    builder.AppendLine("_.PhaseConstants = {");
+                    var phaseKeys = constants.Keys.ToList();
+                    phaseKeys.Sort(Framework.Compare);
+                    foreach (var key in phaseKeys)
+                    {
+                        builder.Append("\t").Append(key).Append(" = ").Append(constants[key]).AppendLine(",");
+                    }
+                    builder.AppendLine("};");
+
+                    // Get all of the english translations and always write them to the file.
+                    builder.AppendLine("local phases = {");
+                    localizationForText.TryGetValue("en", out var localizationForTextByKey);
+                    localizationForText.Remove("en");
+                    localizationForDescriptions.TryGetValue("en", out var localizationForDescriptionsByKey);
+                    localizationForDescriptions.Remove("en");
+                    localizationForLore.TryGetValue("en", out var localizationForLoreByKey);
+                    localizationForLore.Remove("en");
+                    foreach (var key in keys)
+                    {
+                        if (Phases.TryGetValue(key, out object o) && o is IDictionary<string, object> phase)
+                        {
+                            builder.Append("\t[").Append(key).AppendLine("] = {");
+                            if (localizationForTextByKey.TryGetValue(key, out string name))
+                            {
+                                builder.Append("\t\tname = ");
+                                ExportStringValue(builder, name).AppendLine(",");
+                            }
+                            if (localizationForDescriptionsByKey.TryGetValue(key, out name))
+                            {
+                                builder.Append("\t\tdescription = ");
+                                ExportStringValue(builder, name).AppendLine(",");
+                            }
+                            if (localizationForLoreByKey.TryGetValue(key, out name))
+                            {
+                                builder.Append("\t\tlore = ");
+                                ExportStringValue(builder, name).AppendLine(",");
+                            }
+
+                            if (phase.TryGetValue("minimumBuildVersion", out var minimumBuildVersion))
+                            {
+                                builder.Append("\t\tminimumBuildVersion = ").Append(minimumBuildVersion).AppendLine(",");
+                            }
+                            if (phase.TryGetValue("buildVersion", out var buildVersion))
+                            {
+                                builder.Append("\t\tbuildVersion = ").Append(buildVersion).AppendLine(",");
+                            }
+
+                            // Write the state last. [NOTE: This is an ID number from 1-4]
+                            builder.Append("\t\tstate = ");
+                            if (phase.TryGetValue("state", out var state))
+                            {
+                                builder.Append(state);
+                            }
+                            else builder.Append(2); // Default is 'Medium'
+                            builder.AppendLine(",").AppendLine("\t},");
+                        }
+                    }
+                    builder.AppendLine("};\nL.PHASES = phases;");
+
+                    // Now grab the non-english localizations and conditionally write them to the file.
+                    foreach (var localePair in localizationForText)
+                    {
+                        if (localePair.Value.Any())
+                        {
+                            var localeBuilder = localizationByLocale[localePair.Key];
+                            localeBuilder.AppendLine("for key,value in pairs({");
+                            foreach (var key in keys)
+                            {
+                                if (localePair.Value.TryGetValue(key, out string name) && !string.IsNullOrWhiteSpace(name))
+                                {
+                                    ExportStringKeyValue(localeBuilder, key, name).AppendLine();
+                                }
+                            }
+                            localeBuilder.AppendLine("})\ndo phases[key].name = value; end");
+                        }
+                    }
+                    foreach (var localePair in localizationForDescriptions)
+                    {
+                        if (localePair.Value.Any())
+                        {
+                            var localeBuilder = localizationByLocale[localePair.Key];
+                            localeBuilder.AppendLine("for key,value in pairs({");
+                            foreach (var key in keys)
+                            {
+                                if (localePair.Value.TryGetValue(key, out string name) && !string.IsNullOrWhiteSpace(name))
+                                {
+                                    ExportStringKeyValue(localeBuilder, key, name).AppendLine();
+                                }
+                            }
+                            localeBuilder.AppendLine("})\ndo phases[key].description = value; end");
+                        }
+                    }
+                    foreach (var localePair in localizationForLore)
+                    {
+                        if (localePair.Value.Any())
+                        {
+                            var localeBuilder = localizationByLocale[localePair.Key];
+                            localeBuilder.AppendLine("for key,value in pairs({");
+                            foreach (var key in keys)
+                            {
+                                if (localePair.Value.TryGetValue(key, out string name) && !string.IsNullOrWhiteSpace(name))
+                                {
+                                    ExportStringKeyValue(localeBuilder, key, name).AppendLine();
+                                }
+                            }
+                            localeBuilder.AppendLine("})\ndo phases[key].lore = value; end");
+                        }
+                    }
 
                     // Append the file content to our localization database.
                     localizationDatabase.AppendLine(builder.ToString());

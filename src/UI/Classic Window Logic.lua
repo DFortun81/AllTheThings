@@ -224,9 +224,9 @@ local function CalculateRowIndicatorTexture(group)
 	end
 	
 	if group.u then
-		local condition = L["AVAILABILITY_CONDITIONS"][group.u];
-		if condition and (not condition[5] or app.GameBuildVersion < condition[5]) then
-			return L["UNOBTAINABLE_ITEM_TEXTURES"][condition[1]];
+		local phase = L.PHASES[group.u];
+		if phase and (not phase.buildVersion or app.GameBuildVersion < phase.buildVersion) then
+			return L["UNOBTAINABLE_ITEM_TEXTURES"][phase.state];
 		end
 	end
 	return group.e and L["UNOBTAINABLE_ITEM_TEXTURES"][app.Modules.Events.FilterIsEventActive(group) and 5 or 4];

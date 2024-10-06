@@ -1304,7 +1304,7 @@ settings.UpdateMode = function(self, doRefresh)
 
 		-- Check for any inactive unobtainable filters.
 		local anyFiltered = false
-		for u,v in pairs(L.AVAILABILITY_CONDITIONS) do
+		for u,phase in pairs(L.PHASES) do
 			if not settings:GetUnobtainableFilter(u) then
 				anyFiltered = true;
 				break;

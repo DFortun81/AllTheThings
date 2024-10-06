@@ -240,4 +240,5 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 })));
 
 -- Remove the Phase from Coilfang Armaments
-COILFANG_ARMAMENTS.u = TBC_PHASE_ONE;
+COILFANG_ARMAMENTS.u = nil;
+applyclassicphase(TBC_PHASE_ONE, COILFANG_ARMAMENTS);

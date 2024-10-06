@@ -644,12 +644,12 @@ local InformationTypes = {
 		Process = function(t, reference, tooltipInfo)
 			local u = t.GetValue(t, reference);
 			if u then
-				local condition = L.AVAILABILITY_CONDITIONS[u];
-				if condition then
-					local buildVersion = condition[5];
+				local phase = L.PHASES[u];
+				if phase then
+					local buildVersion = phase.buildVersion;
 					if not buildVersion or app.GameBuildVersion < buildVersion then
 						tinsert(tooltipInfo, {
-							left = condition[2],
+							left = phase.description,
 							wrap = true,
 						});
 					end
@@ -970,11 +970,11 @@ local InformationTypes = {
 			-- Description for Unobtainable Things
 			if reference.u and (not reference.crs or reference.itemID or reference.sourceID) then
 				-- specifically-tagged NYI groups which are under 'Unsorted' should show a slightly different message
-				if reference.u == 1 and app.GetRelativeValue(reference, "_missing") then
+				if reference.u == app.PhaseConstants.NEVER_IMPLEMENTED and app.GetRelativeValue(reference, "_missing") then
 					tinsert(tooltipInfo, { left = L.UNSORTED_DESC, wrap = true, color = app.Colors.ChatLinkError });
 				else
 					-- removed BoE seen with a non-generic BonusID, potentially a level-scaled drop made re-obtainable
-					if reference.u == 2 and not app.IsBoP(reference) and (reference.bonusID or 3524) ~= 3524 then
+					if reference.u == app.PhaseConstants.REMOVED_FROM_GAME and not app.IsBoP(reference) and (reference.bonusID or 3524) ~= 3524 then
 						tinsert(tooltipInfo, { left = L.RECENTLY_MADE_OBTAINABLE });
 					end
 				end

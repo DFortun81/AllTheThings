@@ -212,12 +212,6 @@ if season > 0 then
 		UnobtainableSettingsBase.__index[1604] = true;
 	end
 	if season == 2 then	-- SOD
-		local reasons = L.AVAILABILITY_CONDITIONS;
-		reasons[1605][5] = 11500;
-		reasons[1606][5] = 11501;
-		reasons[1607][5] = 11502;
-		reasons[1608][5] = 11503;
-		reasons[1609][5] = 11504;
 		if app.GameBuildVersion >= 11502 then app.MaximumSkillLevel = 300;
 		elseif app.GameBuildVersion >= 11501 then app.MaximumSkillLevel = 225;
 		else app.MaximumSkillLevel = 150; end
@@ -1055,7 +1049,7 @@ settings.UpdateMode = function(self, doRefresh)
 
 		-- Check for any inactive unobtainable filters.
 		local anyFiltered = false
-		for u,v in pairs(L.AVAILABILITY_CONDITIONS) do
+		for u,phase in pairs(L.PHASES) do
 			if not settings:GetUnobtainableFilter(u) then
 				anyFiltered = true;
 				break;

@@ -1019,7 +1019,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_0 } }, {
 				["coord"] = { 71.2, 32.5, MECHAGON },
 				["minReputation"] = { FACTION_RUSTBOLT_RESISTANCE, HONORED },
 				["g"] = {
-					r(300122, {["u"]=15}),	-- Scrapmaster's Blowtorch
+					r(300122, {["u"]=TRAINING}),	-- Scrapmaster's Blowtorch
 				},
 			}),
 			q(55339, {	-- Tidying Up

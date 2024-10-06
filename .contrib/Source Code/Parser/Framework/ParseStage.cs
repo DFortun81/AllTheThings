@@ -25,6 +25,7 @@
         ExportFilterDB,
         ExportFlightPathDB,
         ExportObjectDB,
+        ExportPhases,
         ExportAddonData,
         ExportAutoSources,
         ExportAutoLocale,

@@ -126,9 +126,9 @@ local function GetUnobtainableTexture(group)
 		if u > 1 and u < 12 and (group.b or 0) == 0 then
 			filter = 2;
 		else
-			local record = L["AVAILABILITY_CONDITIONS"][u];
-			if record then
-				if not record[5] or app.GameBuildVersion < record[5] then
+			local phase = L.PHASES[u];
+			if phase then
+				if not phase.buildVersion or app.GameBuildVersion < phase.buildVersion then
 					filter = record[1] or 0;
 				else
 					-- This is a phase that's available. No icon.
@@ -697,9 +697,9 @@ local function BuildContainsInfo(groups, entries, paramA, paramB, indent, layer)
 				-- Insert into the display.
 				local o = { prefix = indent, group = group, right = right };
 				if group.u then
-					local condition = L["AVAILABILITY_CONDITIONS"][group.u];
-					if condition and (not condition[5] or app.GameBuildVersion < condition[5]) then
-						o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][condition[1]];
+					local phase = L.PHASES[group.u];
+					if phase and (not phase.buildVersion or app.GameBuildVersion < phase.buildVersion) then
+						o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][phase.state];
 					end
 				elseif group.e then
 					o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][4];
@@ -723,9 +723,9 @@ local function BuildReagentInfo(groups, entries, paramA, paramB, indent, layer)
 		if app.RecursiveGroupRequirementsFilter(group) then
 			local o = { prefix = indent, group = group };
 			if group.u then
-				local condition = L["AVAILABILITY_CONDITIONS"][group.u];
-				if condition and (not condition[5] or app.GameBuildVersion < condition[5]) then
-					o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][condition[1]];
+				local phase = L.PHASES[group.u];
+				if phase and (not phase.buildVersion or app.GameBuildVersion < phase.buildVersion) then
+					o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][phase.state];
 				end
 			elseif group.e then
 				o.texture = L["UNOBTAINABLE_ITEM_TEXTURES"][4];

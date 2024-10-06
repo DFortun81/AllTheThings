@@ -209,6 +209,13 @@ namespace ATT
                         Framework.AssignCustomHeaders(Framework.ParseAsDictionary<long>(customHeaders));
                     }
 
+                    // Try to grab the contents of the global variable "Phases".
+                    var phases = lua.GetTable("Phases");
+                    if (phases != null)
+                    {
+                        Framework.AssignPhases(Framework.ParseAsDictionary<long>(phases));
+                    }
+
                     Framework.Objects.SKILL_ID_CONVERSION_TABLE =
                         Framework.ParseAsDictionary<long>(lua.GetTable("SKILL_ID_CONVERSION_TABLE") ?? throw new InvalidDataException("Missing 'SKILL_ID_CONVERSION_TABLE' Global!"))
                         .ToDictionary(kvp => kvp.Key, kvp => (long)kvp.Value);

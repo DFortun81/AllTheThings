@@ -921,7 +921,6 @@ L.SETTINGS_MENU = {
 		CUSTOM_FILTERS_LABEL = "Automated Content";
 		CUSTOM_FILTERS_EXPLAIN_LABEL = "|cffFFFFFFThis content is always shown if it is available to your current character or if you are in "..app.ccColors.Account.."Account Mode|cffFFFFFF.|r";
 		CUSTOM_FILTERS_GENERIC_TOOLTIP_FORMAT = "Enable this setting to forcibly show %s content even if it is not available to the current character.";
-		-- AVAILABILITY_CONDITIONS [These are defined in a different section]
 		-- CUSTOM_COLLECTS_REASONS [These are defined in a different section]
 
 	-- Interface Page

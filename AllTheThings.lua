@@ -475,23 +475,23 @@ app.SourceSpecificFields = {
 	["u"] = function(...)
 		-- app.PrintDebug("GetMostObtainableValue:")
 		local max, check, new = -1, nil, nil;
-		local conditions = L.AVAILABILITY_CONDITIONS;
-		local condition, u;
+		local phases = L.PHASES;
+		local phase, u;
 		local vals = select("#", ...);
 		-- app.PrintDebug(...)
 		for i=1,vals do
 			u = select(i, ...);
 			-- missing u value means NOT unobtainable
 			if not u then return; end
-			condition = conditions[u];
-			if condition then
-				check = condition[1];
+			phase = phases[u];
+			if phase then
+				check = phase.state or 0;
 			else
 				-- otherwise it's an invalid unobtainable filter
 				app.print("Invalid Unobtainable Filter:",u);
 				return;
 			end
-			-- track the highest unobtainable value, which is the most obtainable (according to AVAILABILITY_CONDITIONS)
+			-- track the highest unobtainable value, which is the most obtainable (according to PHASES)
 			if check > max then
 				new = u;
 				max = check;
@@ -798,10 +798,10 @@ local function GetUnobtainableTexture(group)
 		if u > 1 and u < 12 and (group.b or 0) == 0 then
 			filter = 2;
 		else
-			local record = L.AVAILABILITY_CONDITIONS[u];
-			if record then
-				if not record[5] or app.GameBuildVersion < record[5] then
-					filter = record[1] or 0;
+			local phase = L.PHASES[u];
+			if phase then
+				if not phase.buildVersion or app.GameBuildVersion < phase.buildVersion then
+					filter = phase.state or 0;
 				else
 					-- This is a phase that's available. No icon.
 					return;
@@ -8390,8 +8390,8 @@ customWindowUpdates.AuctionData = function(self)
 					["OnClick"] = function()
 						local show = not app.Settings:GetValue("Unobtainable", 7);
 						app.Settings:SetValue("Unobtainable", 7, show);
-						for k,v in pairs(L.AVAILABILITY_CONDITIONS) do
-							if v[1] == 1 or v[1] == 2 or v[1] == 3 then
+						for k,v in pairs(L.PHASES) do
+							if v.state < 4 then
 								if k ~= 7 then
 									app.Settings:SetValue("Unobtainable", k, show);
 								end
@@ -10804,7 +10804,7 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 				local missing = app.TableConcat({"Missing Recipe:",recipeID,skillLineName,tradeSkillID,"=>",parentTradeSkillID}, nil, nil, " ")
 				-- app.PrintDebug(missing)
 				MissingRecipes[#MissingRecipes + 1] = missing
-			elseif cachedRecipe.u == 1 then
+			elseif cachedRecipe.u == app.PhaseConstants.NEVER_IMPLEMENTED then
 				-- learned NYI recipe?
 				if recipeInfo and recipeInfo.learned then
 					-- known NYI recipes

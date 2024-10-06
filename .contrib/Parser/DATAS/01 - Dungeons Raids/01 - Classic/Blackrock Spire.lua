@@ -1812,7 +1812,7 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 			bubbleDown({
 				["timeline"] = { REMOVED_4_0_3 },
 				-- #if NOT ANYCLASSIC
-				["u"] = 11,
+				["u"] = CONDITIONALLY_AVAILABLE,
 				-- #endif
 			},
 			-- #endif

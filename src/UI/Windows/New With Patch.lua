@@ -34,8 +34,8 @@ app:CreateWindow("New With Patch", {
 				if #g < 1 then
 					-- Build a dictionary of all conditions added with the latest patch.
 					local any, currentConditions, currentPatch = false, {}, app.GameBuildVersion;
-					for u,condition in pairs(L.AVAILABILITY_CONDITIONS) do
-						local requiredPatch = condition[5];
+					for u,phase in pairs(L.PHASES) do
+						local requiredPatch = phase.buildVersion;
 						if requiredPatch and requiredPatch == currentPatch then
 							currentConditions[u] = true;
 							any = true;

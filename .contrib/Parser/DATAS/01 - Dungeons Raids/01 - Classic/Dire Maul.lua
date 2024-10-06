@@ -1420,7 +1420,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 					bubbleDown({
 						["timeline"] = { REMOVED_4_0_3 },
 						-- #if NOT ANYCLASSIC
-						["u"] = 11,
+						["u"] = CONDITIONALLY_AVAILABLE,
 						-- #endif
 					},
 					-- #endif
@@ -2233,7 +2233,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 							-- #IF BEFORE 4.0.3
 							["timeline"] = { REMOVED_4_0_3 },
 							-- #ELSE
-							["u"] = 11,
+							["u"] = CONDITIONALLY_AVAILABLE,
 							-- #ENDIF
 						}, {
 						-- #if AFTER CATA

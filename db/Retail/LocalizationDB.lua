@@ -12277,6 +12277,67 @@ _.ObjectModels = {
 	[487855] = 5007022,
 }
 
+-- Phase Database Module
+_.PhaseConstants = {
+	BLACK_MARKET = 9,
+	BLIZZARD_BALANCE = 3,
+	ELITE_PVP_REQUIREMENT = 4,
+	NEVER_IMPLEMENTED = 1,
+	REMOVED_FROM_GAME = 2,
+	TCG = 10,
+	UNLEARNABLE = 5,
+};
+local phases = {
+	[1] = {
+		name = "Never Implemented",
+		description = "|CFFFF0000This was never available to players.|r",
+		state = 1,
+	},
+	[2] = {
+		name = "Removed From Game",
+		description = "|CFFFF0000This has been removed from the game.|r",
+		state = 1,
+	},
+	[3] = {
+		name = "Blizzard Balance",
+		description = "|CFFFF0000This is locked behind a paywall such as the in-game shop, another Blizzard product, or the Recruit-A-Friend service.|r",
+		lore = "|CFFFFAAAAThe act of encouraging the use of real money in any version of the game is widely frowned upon. Participate in this content at your own risk.|r",
+		state = 3,
+	},
+	[4] = {
+		name = "PvP Elite/Gladiator",
+		description = "|CFFFF0000This can no longer be purchased or unlocked as Transmog unless you have the required PvP Title, required PvP Rating or were in the Top % of that season.|r",
+		state = 3,
+	},
+	[5] = {
+		name = "Unlearnable",
+		description = "|CFFFF0000This cannot be permanently collected, learned or used for transmog.|r",
+		state = 2,
+	},
+	[6] = {
+		name = "Requires Summoning Items",
+		description = "|CFFFF0000This is no longer available unless you know someone that has access to the items used to summon the boss.|r",
+		lore = "Note: Most Summoning Items can be reobtained if you had them in the past by talking to the respective NPC.",
+		state = 2,
+	},
+	[9] = {
+		name = "Black Market AH [BMAH]",
+		description = "|CFFFF0000This item is available on the Black Market Auction House. The original source may have been removed.|r",
+		state = 3,
+	},
+	[10] = {
+		name = "Trading Card Game [TCG]",
+		description = "|CFFFF0000Originally obtained via a TCG card that is no longer in print, but may still be available via the Black Market, In-Game, or Real Life Auction House.|r",
+		state = 3,
+	},
+	[38] = {
+		name = "Ordos - Legendary Cloak",
+		description = "|CFFFF0000Only available to players that completed the Legendary Cloak quest chain during Mists of Pandaria, obtained the Legendary Cloak Appearance during MoP: Remix or via the BMAH.|r",
+		state = 2,
+	},
+};
+L.PHASES = phases;
+
 -- Automatic Types
 L.ITEM_NAMES = {
 	[20946] = "Tactical Task Briefing III",
@@ -39918,6 +39979,33 @@ localize(_.ObjectNames, {
 	[1278968767] = "Руна",
 	[1278968768] = "Руна",
 });
+for key,value in pairs({
+	[1] = "Никогда Не Доступны",
+	[2] = "Убраны Из Игры",
+	[3] = "Кошелек Blizzard",
+	[4] = "ПвП Элита / Гладиатор",
+	[5] = "Неизучаемые",
+	[6] = "Требуются предметы для призыва",
+	[9] = "Черный рынок AH [BMAH]",
+	[10] = "Коллекционная карточная игра [TCG]",
+	[38] = "Ордос - Легендарный плащ",
+})
+do phases[key].name = value; end
+for key,value in pairs({
+	[1] = "|CFFFF0000Никогда не был доступен игрокам.|r",
+	[2] = "|CFFFF0000Был убран из игры.|r",
+	[3] = "|CFFFF0000Может быть скрыто за вложением денег, возможно, игровой магазин, другая игра Blizzard и \"Пригласи Друга\".|r",
+	[4] = "|CFFFF0000Это больше нельзя будет купить или получить в коллекцию, если у вас нет необходимого PvP титула или если вы не входили в топ % лучших в этом сезоне.|r",
+	[5] = "|CFFFF0000Это нельзя собрать, выучить навсегда или использовать для трансмогрификации.|r",
+	[6] = "|CFFFF0000Это больше не доступно, если вы не знаете кого-то, у кого есть доступ к предметам, используемым для вызова босса.|r",
+	[10] = "|CFFFF0000Первоначально доступно через карту TCG, которая больше не печатается, но все еще может быть доступна на черном рынке, в игре или на аукционах в реальной жизни.|r",
+	[38] = "|CFFFF0000Это доступно только игрокам, которые выполнили цепочку квестов «Легендарный плащ» во время Mists of Pandaria или через BMAH.|r",
+})
+do phases[key].description = value; end
+for key,value in pairs({
+	[6] = "Примечание: Большинство предметов призыва можно получить повторно, если они у Вас были раньше, поговорив с соответствующим NPC.",
+})
+do phases[key].lore = value; end
 end
 if simplifiedLocale == "ko" then
 localize(_.CategoryNames, {
@@ -47380,4 +47468,58 @@ localize(_.ObjectNames, {
 	[1278968767] = "符文",
 	[1278968768] = "符文",
 });
+for key,value in pairs({
+	[1] = "从未实施",
+	[2] = "从游戏中移除",
+	[4] = "PvP 精良/角斗士",
+	[5] = "不可学",
+	[6] = "需要召唤物品",
+	[9] = "黑市拍卖行 [BMAH]",
+	[10] = "集换式卡牌游戏 [TCG]",
+	[38] = "斡耳朵斯 - 传奇披风",
+})
+do phases[key].name = value; end
+for key,value in pairs({
+	[1] = "|CFFFF0000此项玩家永远无法获得。|r",
+	[2] = "|CFFFF0000此项已从游戏中删除。|r",
+	[4] = "|CFFFF0000除非您拥有所需的 PvP 头衔、所需的 PvP 等级或处于该赛季的前 %，否则无法再购买或解锁幻化。|r",
+	[5] = "|CFFFF0000这不能永久收集、学习或用于幻化。|r",
+	[6] = "|CFFFF0000除非您认识可以使用用于召唤首领的物品的人，否则这将不再可用。|r",
+	[9] = "|CFFFF0000此物品可在黑市拍卖行购买。原始来源可能已被删除。|r",
+	[10] = "|CFFFF0000最初通过不再印刷的 TCG 卡获得，但仍可通过黑市、游戏内或现实中的拍卖行获得。|r",
+	[38] = "|CFFFF0000这仅适用于在《熊猫人之谜》或通过黑市拍卖行完成传奇披风任务链的玩家。|r",
+})
+do phases[key].description = value; end
+for key,value in pairs({
+	[6] = "注意：如果过去拥有大多数召唤物品，则可以通过与相应的 NPC 交谈来重新获得它们。",
+})
+do phases[key].lore = value; end
+if GetLocale():sub(3,4):lower() == "tw" then
+for key,value in pairs({
+	[1] = "從未實裝",
+	[2] = "已從遊戲中移除",
+	[4] = "PvP 精良/角鬥士",
+	[5] = "不可學",
+	[6] = "需要召唤物品",
+	[9] = "黑市拍賣行 [BMAH]",
+	[10] = "集換式卡牌遊戲 [TCG]",
+	[38] = "決心罩氅，艾夏卡瑪斯",
+})
+do phases[key].name = value; end
+for key,value in pairs({
+	[1] = "|CFFFF0000此項玩家永遠無法獲得。|r",
+	[2] = "|CFFFF0000此項已從遊戲中刪除。|r",
+	[4] = "|CFFFF0000除非您擁有所需的 PvP 稱號、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖幻化。|r",
+	[5] = "|CFFFF0000這不能永久收集、學習或用於幻化。|r",
+	[6] = "|CFFFF0000除非您認識可以使用用於召唤首領的物品的人，否則這將不再可用。|r",
+	[9] = "|CFFFF0000此物品可在黑市拍賣行購買。原始來源可能已被刪除。|r",
+	[10] = "|CFFFF0000最初通過不再印刷的 TCG 卡獲得，但仍可通過黑市、遊戲内或現實中的拍賣行獲得。|r",
+	[38] = "|CFFFF0000這僅適用於在《潘達利亞之謎》或通過黑市拍賣行完成傳奇披風任務鏈的玩家。|r",
+})
+do phases[key].description = value; end
+for key,value in pairs({
+	[6] = "注意：如果過去擁有大多數召唤物品，則可以通過與相應的 NPC 交談來重新獲得它們。",
+})
+do phases[key].lore = value; end
+end
 end

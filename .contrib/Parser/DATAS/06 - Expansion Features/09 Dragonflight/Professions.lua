@@ -72,17 +72,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 					i(194714),	-- Miguel's Gift
 					i(198084),	-- Miguel's Gift
 					-- Recipes
-					r(377978,{["u"]=15}),	-- Heart in a Bottle (ALCHEMY)
-					r(377981,{["u"]=15}),	-- Heart in a Bottle (BLACKSMITHING)
-					r(377982,{["u"]=15}),	-- Heart in a Bottle (ENCHANTING)
-					r(377983,{["u"]=15}),	-- Heart in a Bottle (ENGINEERING)
-					r(377984,{["u"]=15}),	-- Heart in a Bottle (HERBALISM)
-					r(377985,{["u"]=15}),	-- Heart in a Bottle (INSCRIPTION)
-					r(377915,{["u"]=15}),	-- Heart in a Bottle (JEWELCRAFTING)
-					r(377989,{["u"]=15}),	-- Heart in a Bottle (LEATHERWORKING)
-					r(377987,{["u"]=15}),	-- Heart in a Bottle (MINING)
-					r(377988,{["u"]=15}),	-- Heart in a Bottle (SKINNING)
-					r(377986,{["u"]=15}),	-- Heart in a Bottle (TAILORING)
+					r(377978,{["u"]=TRAINING}),	-- Heart in a Bottle (ALCHEMY)
+					r(377981,{["u"]=TRAINING}),	-- Heart in a Bottle (BLACKSMITHING)
+					r(377982,{["u"]=TRAINING}),	-- Heart in a Bottle (ENCHANTING)
+					r(377983,{["u"]=TRAINING}),	-- Heart in a Bottle (ENGINEERING)
+					r(377984,{["u"]=TRAINING}),	-- Heart in a Bottle (HERBALISM)
+					r(377985,{["u"]=TRAINING}),	-- Heart in a Bottle (INSCRIPTION)
+					r(377915,{["u"]=TRAINING}),	-- Heart in a Bottle (JEWELCRAFTING)
+					r(377989,{["u"]=TRAINING}),	-- Heart in a Bottle (LEATHERWORKING)
+					r(377987,{["u"]=TRAINING}),	-- Heart in a Bottle (MINING)
+					r(377988,{["u"]=TRAINING}),	-- Heart in a Bottle (SKINNING)
+					r(377986,{["u"]=TRAINING}),	-- Heart in a Bottle (TAILORING)
 				},
 			}),
 			q(67137, {	-- Professionally Equipped

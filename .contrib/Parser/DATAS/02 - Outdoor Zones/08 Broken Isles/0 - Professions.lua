@@ -294,8 +294,8 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["coord"] = { 60.0, 34.6, AZSUNA },
 						["g"] = {
-							r(186763, {["u"]=15}),	-- Rune-Threaded Silkweave Robe
-							r(186764, {["u"]=15}),	-- Rune-Threaded Silkweave Bracers
+							r(186763, {["u"]=TRAINING}),	-- Rune-Threaded Silkweave Robe
+							r(186764, {["u"]=TRAINING}),	-- Rune-Threaded Silkweave Bracers
 							r(185918),	-- Silkweave Bracers [Rank 1]
 							r(185925),	-- Silkweave Robe [Rank 1]
 						},
@@ -320,8 +320,8 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
 						["g"] = {
-							r(186799, {["u"]=15}),	-- Basic Slikweave Robe
-							r(186801, {["u"]=15}),	-- Embroidered Slikweave Robe
+							r(186799, {["u"]=TRAINING}),	-- Basic Slikweave Robe
+							r(186801, {["u"]=TRAINING}),	-- Embroidered Slikweave Robe
 							r(185935),	-- Silkweave Cinch [Rank 2]
 						},
 					}),
@@ -383,9 +383,9 @@ root(ROOTS.Zones, {
 						["provider"] = { "n", 93967 },	-- Lyndras
 						["coord"] = { 35.2, 34.2, LEGION_DALARAN },
 						["g"] = {
-							r(187058, {["u"]=15}),	-- Slikweave Hood Lining
-							r(187059, {["u"]=15}),	-- Slikweave Hood: Outer Layer
-							r(187060, {["u"]=15}),	-- Handcrafted Slikweave Hood
+							r(187058, {["u"]=TRAINING}),	-- Slikweave Hood Lining
+							r(187059, {["u"]=TRAINING}),	-- Slikweave Hood: Outer Layer
+							r(187060, {["u"]=TRAINING}),	-- Handcrafted Slikweave Hood
 							recipe(185922),	-- Silkweave Hood [Rank 1] (RECIPE!)
 						},
 					}),

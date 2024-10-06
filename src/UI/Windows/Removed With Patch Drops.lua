@@ -196,7 +196,7 @@ app:CreateWindow("Removed With Patch Drops", {
 							
 							-- We only want to include items from mobs that are available in the future.
 							local parent = group.parent;
-							if parent and (parent.rwp or parent.u == 1) and not parent.awp then
+							if parent and (parent.rwp or parent.u == app.PhaseConstants.NEVER_IMPLEMENTED) and not parent.awp then
 								if parent.npcID and parent.npcID > 0 then
 									if ExcludeRemovedRares then
 										return false;

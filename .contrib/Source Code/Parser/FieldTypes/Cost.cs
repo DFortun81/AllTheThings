@@ -292,6 +292,12 @@ namespace ATT.FieldTypes
                         LogDebug($"INFO: Excluding Cost {ToJSON(costObj)} due to Phase {phase} within Max Phase {MAX_PHASE_ID}", _data);
                         continue;
                     }
+
+                    if (Phases != null && !Phases.ContainsKey(phase))
+                    {
+                        LogError($"Undefined Phase '{phase}', please make sure a phase definition exists in the .contrib/lib/Constants/Phases.lua file.");
+                    }
+                    MarkPhaseAsRequired(phase);
                 }
 
                 // add the cost data into the cost object

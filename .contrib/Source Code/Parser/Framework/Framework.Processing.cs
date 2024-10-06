@@ -635,6 +635,12 @@ namespace ATT
                     //Log(ToJSON(data));
                     return false;
                 }
+
+                if (Phases != null && !Phases.ContainsKey(phase))
+                {
+                    LogError($"Undefined Phase '{phase}', please make sure a phase definition exists in the .contrib/lib/Constants/Phases.lua file.");
+                }
+                MarkPhaseAsRequired(phase);
             }
 
             // Get the filter for this Item

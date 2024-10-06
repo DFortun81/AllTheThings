@@ -4314,6 +4314,477 @@ _.ObjectModels = {
 	[100000001] = 201129,
 }
 
+-- Phase Database Module
+_.PhaseConstants = {
+	BLIZZARD_BALANCE = 3,
+	ELITE_PVP_REQUIREMENT = 4,
+	NEVER_IMPLEMENTED = 1,
+	REMOVED_FROM_GAME = 2,
+	UNLEARNABLE = 5,
+};
+local phases = {
+	[1] = {
+		name = "Never Implemented",
+		description = "|CFFFF0000This was never available to players.|r",
+		state = 1,
+	},
+	[2] = {
+		name = "Removed From Game",
+		description = "|CFFFF0000This has been removed from the game.|r",
+		state = 1,
+	},
+	[3] = {
+		name = "Blizzard Balance",
+		description = "|CFFFF0000This is locked behind a paywall such as the in-game shop, another Blizzard product, or the Recruit-A-Friend service.|r",
+		lore = "|CFFFFAAAAThe act of encouraging the use of real money in any version of the game is widely frowned upon. Participate in this content at your own risk.|r",
+		state = 3,
+	},
+	[4] = {
+		name = "PvP Elite/Gladiator",
+		description = "|CFFFF0000This can no longer be purchased or unlocked as Transmog unless you have the required PvP Title, required PvP Rating or were in the Top % of that season.|r",
+		state = 3,
+	},
+	[5] = {
+		name = "Unlearnable",
+		description = "|CFFFF0000This cannot be permanently collected, learned or used for transmog.|r",
+		state = 2,
+	},
+	[11] = {
+		name = "Phase 1",
+		description = "|CFFAAFFAAThis was not available until Phase 1 of Classic WoW.|r",
+		lore = "|CFFFFAAAAIncluded Molten Core and Onyxia's Lair.|r",
+		minimumBuildVersion = 1130100,
+		buildVersion = 11301,
+		state = 2,
+	},
+	[12] = {
+		name = "Phase 2",
+		description = "|CFFAAFFAAThis was not available until Phase 2 of Classic WoW.|r",
+		lore = "|CFFFFAAAAIncluded World PvP and PvP Honor Titles.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11302,
+		state = 2,
+	},
+	[13] = {
+		name = "Phase 3",
+		description = "|CFFAAFFAAThis was not available until Phase 3 of Classic WoW.|r",
+		lore = "|CFFFFAAAAIncluded Blackwing Lair and the completion for Thunderfury.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11303,
+		state = 2,
+	},
+	[14] = {
+		name = "Phase 4",
+		description = "|CFFAAFFAAThis was not available until Phase 4 of Classic WoW.|r",
+		lore = "|CFFFFAAAAIncluded Zul'Gurub and the World Dragons.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11304,
+		state = 2,
+	},
+	[15] = {
+		name = "Phase 5",
+		description = "|CFFAAFFAAThis was not available until Phase 5 of WoW Classic.|r",
+		lore = "|CFFFFAAAAIncluded Ahn'Qiraj, which was pre-faced by a unique opening event.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11305,
+		state = 2,
+	},
+	[16] = {
+		name = "Phase 6",
+		description = "|CFFAAFFAAThis was not available until Phase 6 of WoW Classic.|r",
+		lore = "|CFFFFAAAAIncluded Naxxramas, which was heralded by the Scourge Invasion.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11306,
+		state = 2,
+	},
+	[17] = {
+		name = "Phase 1",
+		description = "|CFFAAFFAAThis was not available until Phase 1 of TBC Classic.|r",
+		lore = "|CFFFFAAAAIncluded Karazhan, Magtheridon's Lair, and Gruul's Lair.|r",
+		minimumBuildVersion = 20501,
+		buildVersion = 20501,
+		state = 2,
+	},
+	[18] = {
+		name = "Phase 2",
+		description = "|CFFAAFFAAThis was not available until Phase 2 of TBC Classic.|r",
+		lore = "|CFFFFAAAAIncluded Serpentshrine Cavern, Tempest Keep: The Eye, and Swift Druid Flight Forms.\n\nThe Great Herb/Mining Node War had officially begun.|r",
+		minimumBuildVersion = 20501,
+		buildVersion = 20502,
+		state = 2,
+	},
+	[19] = {
+		name = "Phase 3",
+		description = "|CFFAAFFAAThis was not available until Phase 3 of TBC Classic.|r",
+		lore = "|CFFFFAAAAIncluded Hyjal Summit and the Black Temple in addition to the vast majority of end game daily / faction content.|r",
+		minimumBuildVersion = 20501,
+		buildVersion = 20503,
+		state = 2,
+	},
+	[20] = {
+		name = "Phase 4",
+		description = "|CFFAAFFAAThis was not available until Phase 4 of TBC Classic.|r",
+		lore = "|CFFFFAAAAIncluded Zul'Aman.|r",
+		minimumBuildVersion = 20501,
+		buildVersion = 20504,
+		state = 2,
+	},
+	[21] = {
+		name = "Phase 5",
+		description = "|CFFAAFFAAThis was not available until Phase 5 of TBC Classic.|r",
+		lore = "|CFFFFAAAAIncluded Sunwell Plateau and the Isle of Quel'Danas daily content.|r",
+		minimumBuildVersion = 20501,
+		buildVersion = 20504,
+		state = 2,
+	},
+	[30] = {
+		name = "Phase 1",
+		description = "|CFFAAFFAAThis was not available until Phase 1 of Wrath Classic.|r",
+		lore = "|CFFFFAAAAIncluded Naxxramas, Obsidian Sanctum, and Eye of Eternity.|r",
+		minimumBuildVersion = 30400,
+		buildVersion = 30400,
+		state = 2,
+	},
+	[31] = {
+		name = "Phase 2",
+		description = "|CFFAAFFAAThis was not available until Phase 2 of Wrath Classic.|r",
+		lore = "|CFFFFAAAAIncluded Ulduar.|r",
+		minimumBuildVersion = 30400,
+		buildVersion = 30401,
+		state = 2,
+	},
+	[32] = {
+		name = "Phase 3",
+		description = "|CFFAAFFAAThis was not available until Phase 3 of Wrath Classic.|r",
+		lore = "|CFFFFAAAAIncluded Trial of the Crusader.|r",
+		minimumBuildVersion = 30400,
+		buildVersion = 30402,
+		state = 2,
+	},
+	[33] = {
+		name = "Phase 4",
+		description = "|CFFAAFFAAThis was not available until Phase 4 of Wrath Classic.|r",
+		lore = "|CFFFFAAAAIncluded Icecrown Citadel.|r",
+		minimumBuildVersion = 30400,
+		buildVersion = 30403,
+		state = 2,
+	},
+	[40] = {
+		name = "Phase 1",
+		description = "|CFFAAFFAAThis was not available until Phase 1 of Cataclysm Classic.|r",
+		lore = "|CFFFFAAAAIncluded Bastion of Twilight, Throne of the Four Winds, and Blackwing Descent.|r",
+		minimumBuildVersion = 40400,
+		buildVersion = 40400,
+		state = 2,
+	},
+	[41] = {
+		name = "Rage of the Firelands",
+		description = "|CFFAAFFAAThis was not available until the Rage of the Firelands during Cataclysm Classic.|r",
+		lore = "|CFFFFAAAAIncluded Firelands.|r",
+		minimumBuildVersion = 40400,
+		buildVersion = 40401,
+		state = 2,
+	},
+	[42] = {
+		name = "Hour of Twilight",
+		description = "|CFFAAFFAAThis was not available until the Hour of Twilight during Cataclysm Classic.|r",
+		lore = "|CFFFFAAAAIncluded Dragon Soul.|r",
+		minimumBuildVersion = 40400,
+		buildVersion = 40402,
+		state = 2,
+	},
+	[1101] = {
+		name = "Dire Maul",
+		description = "|CFFAAFFAAThis became available with the Dire Maul Phase Release of Classic WoW.|r",
+		lore = "|CFFFFAAAAIncluded Dire Maul.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11301,
+		state = 2,
+	},
+	[1501] = {
+		name = "AQ War Effort",
+		description = "|CFFAAFFAAThis was only available during the Ahn'Qiraj War Effort.|r",
+		lore = "|CFFFFAAAAIf the War Effort has been completed on your server, simply turn this off.|r",
+		minimumBuildVersion = 11301,
+		state = 2,
+	},
+	[1502] = {
+		name = "Gates Unopened",
+		description = "|CFFAAFFAAThis was only available up until the Scarab Lords on your server have rung the gong.|r",
+		lore = "|CFFFFAAAAIf the Gates of Anh'Qiraj have been opened on your server, simply turn this off.|r",
+		minimumBuildVersion = 11301,
+		state = 2,
+	},
+	[1503] = {
+		name = "10-Hour War",
+		description = "|CFFAAFFAAThis was only available during the 10 Hour War after the Scarab Lord(s) bang the gong.|r",
+		lore = "|CFFFFAAAAIf the Gates of Anh'Qiraj have been opened on your server, simply turn this off.|r",
+		minimumBuildVersion = 11301,
+		state = 2,
+	},
+	[1504] = {
+		name = "Catch-Up",
+		description = "|CFFAAFFAAThis became available near the end of Phase 5 in order to provide Catch-Up Nature Resist gear for those still working on AQ40.|r",
+		lore = "|CFFFFAAAAIf the Catch-Up Gear is available, simply turn this on.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11306,
+		state = 2,
+	},
+	[1601] = {
+		name = "Scourge Invasion",
+		description = "|CFFAAFFAAThis was only available during the Scourge Invasions.|r",
+		lore = "|CFFFFAAAAIf both Scourge Invasions have been completed on your server, simply turn this off.|r",
+		minimumBuildVersion = 11301,
+		state = 2,
+	},
+	[1602] = {
+		name = "Silithyst",
+		description = "|CFFAAFFAAThis was only available during the Silithyst Must Flow World PVP Event.|r",
+		lore = "|CFFFFAAAAIf the World PVP Event is available, simply turn this on.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11306,
+		state = 2,
+	},
+	[1603] = {
+		name = "Classic Era",
+		description = "|CFFAAFFAAThis was only available after the start of Classic Era.|r",
+		lore = "|CFFFFAAAAIf the Classic Era has begun, simply turn this on.|r",
+		minimumBuildVersion = 11301,
+		buildVersion = 11307,
+		state = 2,
+	},
+	[1604] = {
+		name = "Season of Mastery",
+		description = "|CFFAAFFAAThis was only available during Season of Mastery.|r",
+		lore = "|CFFFFAAAAIf Season of Mastery is active on your server, simply turn this on.|r",
+		minimumBuildVersion = 11301,
+		state = 2,
+	},
+	[1605] = {
+		name = "Season of Discovery",
+		description = "|CFFAAFFAAThis was not available until Phase 1 of Season of Discovery.|r",
+		lore = "|CFFFFAAAAIf Season of Discovery is active on your server, simply turn this on.|r",
+		minimumBuildVersion = 11500,
+		buildVersion = 11500,
+		state = 2,
+	},
+	[1606] = {
+		name = "Phase 2",
+		description = "|CFFAAFFAAThis was not available until Phase 2 of Season of Discovery.|r",
+		lore = "|CFFFFAAAAIf Phase 2 of Season of Discovery is active on your server, simply turn this on.|r",
+		minimumBuildVersion = 11501,
+		buildVersion = 11501,
+		state = 2,
+	},
+	[1607] = {
+		name = "Phase 3",
+		description = "|CFFAAFFAAThis was not available until Phase 3 of Season of Discovery.|r",
+		lore = "|CFFFFAAAAIf Phase 3 of Season of Discovery is active on your server, simply turn this on.|r",
+		minimumBuildVersion = 11502,
+		buildVersion = 11502,
+		state = 2,
+	},
+	[1608] = {
+		name = "Phase 4",
+		description = "|CFFAAFFAAThis was not available until Phase 4 of Season of Discovery.|r",
+		lore = "|CFFFFAAAAIf Phase 4 of Season of Discovery is active on your server, simply turn this on.|r",
+		minimumBuildVersion = 11503,
+		buildVersion = 11503,
+		state = 2,
+	},
+	[1609] = {
+		name = "Phase 5",
+		description = "|CFFAAFFAAThis was not available until Phase 5 of Season of Discovery.|r",
+		lore = "|CFFFFAAAAIf Phase 5 of Season of Discovery is active on your server, simply turn this on.|r",
+		minimumBuildVersion = 11504,
+		buildVersion = 11504,
+		state = 2,
+	},
+	[1610] = {
+		name = "Phase 6",
+		description = "|CFFAAFFAAThis was not available until Phase 6 of Season of Discovery.|r",
+		lore = "|CFFFFAAAAIf Phase 6 of Season of Discovery is active on your server, simply turn this on.|r",
+		minimumBuildVersion = 11505,
+		buildVersion = 11505,
+		state = 2,
+	},
+	[1611] = {
+		name = "Phase 7",
+		description = "|CFFAAFFAAThis was not available until Phase 7 of Season of Discovery.|r",
+		lore = "|CFFFFAAAAIf Phase 7 of Season of Discovery is active on your server, simply turn this on.|r",
+		minimumBuildVersion = 11506,
+		buildVersion = 11506,
+		state = 2,
+	},
+	[1612] = {
+		name = "Phase 8",
+		description = "|CFFAAFFAAThis was not available until Phase 8 of Season of Discovery.|r",
+		lore = "|CFFFFAAAAIf Phase 8 of Season of Discovery is active on your server, simply turn this on.|r",
+		minimumBuildVersion = 11507,
+		buildVersion = 11507,
+		state = 2,
+	},
+	[1701] = {
+		name = "Dark Portal Opens",
+		description = "|CFFAAFFAAThis was only available during the Opening of the Dark Portal event before the launch of TBC.|r",
+		lore = "|CFFFFAAAAIf the Dark Portal has been opened on your server, simply turn this off.|r",
+		minimumBuildVersion = 20501,
+		state = 2,
+	},
+	[1801] = {
+		name = "Ogri'la",
+		description = "|CFFAAFFAAThis became available with the Ogri'la Faction during TBC Classic.|r",
+		lore = "|CFFFFAAAAIf the Ogri'la Faction is available on your server, simply turn this on.|r",
+		minimumBuildVersion = 20501,
+		buildVersion = 20502,
+		state = 2,
+	},
+	[1802] = {
+		name = "Skyguard",
+		description = "|CFFAAFFAAThis became available with the Skyguard Faction during TBC Classic.|r",
+		lore = "|CFFFFAAAAIf the Skyguard Faction is available on your server, simply turn this on.|r",
+		minimumBuildVersion = 20501,
+		buildVersion = 20502,
+		state = 2,
+	},
+	[1901] = {
+		name = "Netherwing",
+		description = "|CFFAAFFAAThis became available with the Netherwing Faction during TBC Classic.|r",
+		lore = "|CFFFFAAAAIf the Netherwing Faction is available on your server, simply turn this on.|r",
+		minimumBuildVersion = 20501,
+		buildVersion = 20503,
+		state = 2,
+	},
+	[1902] = {
+		name = "Glaive Prio",
+		description = "|CFFAAFFAAThe wielder of this Glaive was prepared!|r",
+		lore = "|CFFFFAAAADue to the exclusivity of the Warglaives and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after wrath prepatch.\n\nIf you do actually have Glaive prio, simply turn this on.|r",
+		minimumBuildVersion = 20501,
+		buildVersion = 30001,
+		state = 2,
+	},
+	[2101] = {
+		name = "Sanctum",
+		description = "|CFFAAFFAAThis was not available until the Sanctum on the Isle of Quel'Danas was completed.|r",
+		lore = "|CFFFFAAAAIf the Shattered Sun Offensive has already unlocked the Sanctum and has begun working on the Amory and Portal on your server, simply turn this on.|r",
+		minimumBuildVersion = 20501,
+		buildVersion = 30400,
+		state = 2,
+	},
+	[2102] = {
+		name = "Portal",
+		description = "|CFFAAFFAAThis was not available until the Portal on the Isle of Quel'Danas was completed.|r",
+		lore = "|CFFFFAAAAIf the Shattered Sun Offensive has already unlocked the Portal on your server, simply turn this on.|r",
+		minimumBuildVersion = 20501,
+		buildVersion = 30400,
+		state = 2,
+	},
+	[2103] = {
+		name = "Armory",
+		description = "|CFFAAFFAAThis was not available until the Armory on the Isle of Quel'Danas was completed.|r",
+		lore = "|CFFFFAAAAIf the Shattered Sun Offensive has already unlocked the Armory and has begun working on the Harbor and Anvil on your server, simply turn this on.|r",
+		minimumBuildVersion = 20501,
+		buildVersion = 30400,
+		state = 2,
+	},
+	[2104] = {
+		name = "Anvil",
+		description = "|CFFAAFFAAThis was not available until the Anvil on the Isle of Quel'Danas was completed.|r",
+		lore = "|CFFFFAAAAIf the Shattered Sun Offensive has already unlocked the Anvil on your server, simply turn this on.|r",
+		minimumBuildVersion = 20501,
+		buildVersion = 30400,
+		state = 2,
+	},
+	[2105] = {
+		name = "Harbor",
+		description = "|CFFAAFFAAThis was not available until the Harbor on the Isle of Quel'Danas was completed.|r",
+		lore = "|CFFFFAAAAIf the Shattered Sun Offensive has already unlocked the Harbor and has begun working on the Alch Lab and Monument on your server, simply turn this on.|r",
+		minimumBuildVersion = 20501,
+		buildVersion = 30400,
+		state = 2,
+	},
+	[2106] = {
+		name = "Monument",
+		description = "|CFFAAFFAAThis was not available until the Monument on the Isle of Quel'Danas was completed.|r",
+		lore = "|CFFFFAAAAIf the Shattered Sun Offensive has already unlocked the Monument on your server, simply turn this on.|r",
+		minimumBuildVersion = 20501,
+		buildVersion = 30400,
+		state = 2,
+	},
+	[2107] = {
+		name = "Alch Lab",
+		description = "|CFFAAFFAAThis was not available until the Alch Lab on the Isle of Quel'Danas was completed.|r",
+		lore = "|CFFFFAAAAIf the Shattered Sun Offensive has already unlocked the Alch Lab on your server, simply turn this on.|r",
+		minimumBuildVersion = 20501,
+		buildVersion = 30400,
+		state = 2,
+	},
+	[3001] = {
+		name = "Realm First",
+		description = "|CFFAAFFAAThis was only available for the first player to do the thing on your realm!|r",
+		lore = "|CFFFFAAAABut if you were realm first, good for you.|r",
+		minimumBuildVersion = 30400,
+		state = 2,
+	},
+	[3101] = {
+		name = "Hammer Prio",
+		description = "|CFFAAFFAAThe wielder of this Hammer was on time!|r",
+		lore = "|CFFFFAAAADue to the exclusivity of the Hammer and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after cata prepatch.\n\nIf you do actually have Hammer prio, simply turn this on.|r",
+		minimumBuildVersion = 20501,
+		buildVersion = 40001,
+		state = 2,
+	},
+	[3301] = {
+		name = "Shadowmourne Prio",
+		description = "|CFFAAFFAAThe wielder of Shadowmournes for all the people that don't have it.|r",
+		lore = "|CFFFFAAAADue to the exclusivity of Shadowmourne and how prio isn't always given to collectors over sweaties, Crieve decided it was appropriate for now to provide a filter to reduce guild drama.\n\nThis filter will be defaulted on after cata prepatch.\n\nIf you do actually have Shadowmourne prio, simply turn this on.|r",
+		minimumBuildVersion = 30400,
+		buildVersion = 40001,
+		state = 2,
+	},
+	[3302] = {
+		name = "Ruby Sanctum",
+		description = "|CFFAAFFAAThis became available with the release of Ruby Sanctum during Wrath Classic.|r",
+		lore = "|CFFFFAAAAIncluded The Ruby Sanctum.|r",
+		minimumBuildVersion = 30400,
+		buildVersion = 30403,
+		state = 2,
+	},
+	[3303] = {
+		name = "Operation Zalazane",
+		description = "|CFFAAFFAAThis became available with the release of Operation Gnomeregan and Zalazane's Fall during Wrath Classic.|r",
+		lore = "|CFFFFAAAAIncluded Operation Gnomeregan and Zalazane's Fall|r",
+		minimumBuildVersion = 30400,
+		buildVersion = 30403,
+		state = 2,
+	},
+	[3304] = {
+		name = "Elemental Unrest",
+		description = "|CFFAAFFAAThis became available with the release of the Elemental Unrest Cataclysm Prepatch Event during Wrath Classic.|r",
+		lore = "|CFFFFAAAAThe Elemental Unrest Pre-Expansion Event?|r",
+		minimumBuildVersion = 30400,
+		buildVersion = 30404,
+		state = 2,
+	},
+	[4001] = {
+		name = "Rise of the Zandalari",
+		description = "|CFFAAFFAAThis was not available until the Rise of the Zandalari during Cataclysm Classic.|r",
+		lore = "|CFFFFAAAAIncluded Zul'Aman and Zul'Gurub Heroic Dungeons.|r",
+		minimumBuildVersion = 40400,
+		buildVersion = 40400,
+		state = 2,
+	},
+	[4002] = {
+		name = "Molten Front",
+		description = "|CFFAAFFAAThis was not available until the Molten Front became available during Cataclysm Classic.|r",
+		lore = "|CFFFFAAAAIncluded the Molten Front Dailies.|r",
+		minimumBuildVersion = 40400,
+		buildVersion = 40400,
+		state = 2,
+	},
+};
+L.PHASES = phases;
+
 -- Supported Locales
 local simplifiedLocale = GetLocale():sub(1,2);
 if simplifiedLocale == "es" then
@@ -5465,6 +5936,13 @@ localize(_.ObjectNames, {
 	[375544] = "Figurilla de madera",
 	[100000001] = "Antorcha apagada",
 });
+for key,value in pairs({
+	[11] = "|CFFAAFFAAEsto no estuvo disponible hasta Phase 1 de Classic WoW.|r",
+	[12] = "|CFFAAFFAAEsto no estuvo disponible hasta Phase 2 de Classic WoW.|r",
+	[13] = "|CFFAAFFAAEsto no estuvo disponible hasta Phase 3 de Classic WoW.|r",
+	[14] = "|CFFAAFFAAEsto no estuvo disponible hasta Phase 4 de Classic WoW.|r",
+})
+do phases[key].description = value; end
 end
 if simplifiedLocale == "de" then
 localize(L.HEADER_NAMES, {
@@ -6632,6 +7110,13 @@ localize(_.ObjectNames, {
 	[375544] = "Holzstatuette",
 	[100000001] = "Nicht angezündete Fackel",
 });
+for key,value in pairs({
+	[11] = "|CFFAAFFAADies war erst Phase 1 von Classic WoW verfügbar.|r",
+	[12] = "|CFFAAFFAADies war erst Phase 2 von Classic WoW verfügbar.|r",
+	[13] = "|CFFAAFFAADies war erst Phase 3 von Classic WoW verfügbar.|r",
+	[14] = "|CFFAAFFAADies war erst Phase 4 von Classic WoW verfügbar.|r",
+})
+do phases[key].description = value; end
 end
 if simplifiedLocale == "fr" then
 localize(L.HEADER_NAMES, {
@@ -7827,6 +8312,13 @@ localize(_.ObjectNames, {
 	[375544] = "Figurine en bois",
 	[100000001] = "Torche éteinte",
 });
+for key,value in pairs({
+	[11] = "|CFFAAFFAACeci n'était pas disponible avant le Phase 1 du Classic WoW.|r",
+	[12] = "|CFFAAFFAACeci n'était pas disponible avant le Phase 2 du Classic WoW.|r",
+	[13] = "|CFFAAFFAACeci n'était pas disponible avant le Phase 3 du Classic WoW.|r",
+	[14] = "|CFFAAFFAACeci n'était pas disponible avant le Phase 4 du Classic WoW.|r",
+})
+do phases[key].description = value; end
 end
 if simplifiedLocale == "it" then
 localize(L.HEADER_NAMES, {
@@ -8634,6 +9126,13 @@ localize(_.ObjectNames, {
 	[202180] = "Armeria della Cannoniera",
 	[207724] = "Pezzi del Relitto",
 });
+for key,value in pairs({
+	[11] = "|CFFAAFFAAQuesto non era disponibile fino al Phase 1 di Classic WoW.|r",
+	[12] = "|CFFAAFFAAQuesto non era disponibile fino al Phase 2 di Classic WoW.|r",
+	[13] = "|CFFAAFFAAQuesto non era disponibile fino al Phase 3 di Classic WoW.|r",
+	[14] = "|CFFAAFFAAQuesto non era disponibile fino al Phase 4 di Classic WoW.|r",
+})
+do phases[key].description = value; end
 end
 if simplifiedLocale == "pt" then
 localize(L.HEADER_NAMES, {
@@ -9720,6 +10219,13 @@ localize(_.ObjectNames, {
 	[375544] = "Estatueta de Madeira",
 	[100000001] = "Tocha Apagada",
 });
+for key,value in pairs({
+	[11] = "|CFFAAFFAAIsto não estava disponível até Phase 1 de Classic WoW.|r",
+	[12] = "|CFFAAFFAAIsto não estava disponível até Phase 2 de Classic WoW.|r",
+	[13] = "|CFFAAFFAAIsto não estava disponível até Phase 3 de Classic WoW.|r",
+	[14] = "|CFFAAFFAAIsto não estava disponível até Phase 4 de Classic WoW.|r",
+})
+do phases[key].description = value; end
 end
 if simplifiedLocale == "ru" then
 localize(L.HEADER_NAMES, {
@@ -10932,6 +11438,26 @@ localize(_.ObjectNames, {
 	[375544] = "Деревянная статуэтка",
 	[100000001] = "Незажженный факел",
 });
+for key,value in pairs({
+	[1] = "Никогда Не Доступны",
+	[2] = "Убраны Из Игры",
+	[3] = "Кошелек Blizzard",
+	[4] = "ПвП Элита / Гладиатор",
+	[5] = "Неизучаемые",
+})
+do phases[key].name = value; end
+for key,value in pairs({
+	[1] = "|CFFFF0000Никогда не был доступен игрокам.|r",
+	[2] = "|CFFFF0000Был убран из игры.|r",
+	[3] = "|CFFFF0000Может быть скрыто за вложением денег, возможно, игровой магазин, другая игра Blizzard и \"Пригласи Друга\".|r",
+	[4] = "|CFFFF0000Это больше нельзя будет купить или получить в коллекцию, если у вас нет необходимого PvP титула или если вы не входили в топ % лучших в этом сезоне.|r",
+	[5] = "|CFFFF0000Это нельзя собрать, выучить навсегда или использовать для трансмогрификации.|r",
+	[11] = "|CFFAAFFAAЭто было недоступно до Phase 1 из Classic WoW.|r",
+	[12] = "|CFFAAFFAAЭто было недоступно до Phase 2 из Classic WoW.|r",
+	[13] = "|CFFAAFFAAЭто было недоступно до Phase 3 из Classic WoW.|r",
+	[14] = "|CFFAAFFAAЭто было недоступно до Phase 4 из Classic WoW.|r",
+})
+do phases[key].description = value; end
 end
 if simplifiedLocale == "ko" then
 localize(_.CategoryNames, {
@@ -12193,6 +12719,13 @@ localize(_.ObjectNames, {
 	[207724] = "난파선 파편",
 	[100000001] = "불을 붙이지 않은 횃불",
 });
+for key,value in pairs({
+	[11] = "|CFFAAFFAAPhase 1(Classic WoW)까지 사용할 수 없습니다.|r",
+	[12] = "|CFFAAFFAAPhase 2(Classic WoW)까지 사용할 수 없습니다.|r",
+	[13] = "|CFFAAFFAAPhase 3(Classic WoW)까지 사용할 수 없습니다.|r",
+	[14] = "|CFFAAFFAAPhase 4(Classic WoW)까지 사용할 수 없습니다.|r",
+})
+do phases[key].description = value; end
 end
 if simplifiedLocale == "zh" then
 localize(L.HEADER_NAMES, {
@@ -13265,4 +13798,38 @@ localize(_.ObjectNames, {
 	[207724] = "船只残骸",
 	[100000001] = "未点燃的火把",
 });
+for key,value in pairs({
+	[1] = "从未实施",
+	[2] = "从游戏中移除",
+	[4] = "PvP 精良/角斗士",
+	[5] = "不可学",
+})
+do phases[key].name = value; end
+for key,value in pairs({
+	[1] = "|CFFFF0000此项玩家永远无法获得。|r",
+	[2] = "|CFFFF0000此项已从游戏中删除。|r",
+	[4] = "|CFFFF0000除非您拥有所需的 PvP 头衔、所需的 PvP 等级或处于该赛季的前 %，否则无法再购买或解锁幻化。|r",
+	[5] = "|CFFFF0000这不能永久收集、学习或用于幻化。|r",
+	[11] = "|CFFAAFFAA该功能直到 Phase 1 的 Classic WoW 才可用。|r",
+	[12] = "|CFFAAFFAA该功能直到 Phase 2 的 Classic WoW 才可用。|r",
+	[13] = "|CFFAAFFAA该功能直到 Phase 3 的 Classic WoW 才可用。|r",
+	[14] = "|CFFAAFFAA该功能直到 Phase 4 的 Classic WoW 才可用。|r",
+})
+do phases[key].description = value; end
+if GetLocale():sub(3,4):lower() == "tw" then
+for key,value in pairs({
+	[1] = "從未實裝",
+	[2] = "已從遊戲中移除",
+	[4] = "PvP 精良/角鬥士",
+	[5] = "不可學",
+})
+do phases[key].name = value; end
+for key,value in pairs({
+	[1] = "|CFFFF0000此項玩家永遠無法獲得。|r",
+	[2] = "|CFFFF0000此項已從遊戲中刪除。|r",
+	[4] = "|CFFFF0000除非您擁有所需的 PvP 稱號、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖幻化。|r",
+	[5] = "|CFFFF0000這不能永久收集、學習或用於幻化。|r",
+})
+do phases[key].description = value; end
+end
 end
