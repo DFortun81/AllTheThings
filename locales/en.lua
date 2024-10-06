@@ -21,8 +21,8 @@ for key, value in pairs({
 	-- https://www.wowhead.com/icons
 	["HEADER_ICONS"] = {
 	-- Class Trial
-		[-137] = "Interface\\Icons\\achievement_level_90",									-- Level 90
-		[-138] = "Interface\\Icons\\achievement_level_100",									-- Level 100
+		[-137] = 614740,									-- Level 90
+		[-138] = 1033987,									-- Level 100
 	-- WoD Dungeons(Fake npcid)
 		[-140] = select(6, EJ_GetInstanceInfo(547)),										-- Auchindoun
 		[-141] = select(6, EJ_GetInstanceInfo(385)),										-- Bloodmaul Slag Mines
