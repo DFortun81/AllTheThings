@@ -1805,7 +1805,13 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					i(224172, {	-- Restored Coffer Key
 						["cost"] = {{"c", UNDERCOIN, 1000}},
 					}),
-					i(232496, {	-- Restored Coffer Key
+					i(232493, {	-- Restored Coffer Key
+						["cost"] = {{"c", UNDERCOIN, 1000}},
+					}),
+					i(232494, {	-- Restored Coffer Key
+						["cost"] = {{"c", UNDERCOIN, 1000}},
+					}),
+					i(232495, {	-- Restored Coffer Key
 						["cost"] = {{"c", UNDERCOIN, 2000}},
 					}),
 					i(232497, {	-- Restored Coffer Key
@@ -1963,6 +1969,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(85743),	-- itemID 232496 (Restored Coffer Key)
 		q(85746),	-- itemID 232497 (Restored Coffer Key)
 		q(85747),	-- itemID 232498 (Restored Coffer Key)
+		q(85752),	-- itemID 232493 (Restored Coffer Key)
+		q(85751),	-- itemID 232494 (Restored Coffer Key)
+		q(85750),	-- itemID 232495 (Restored Coffer Key)
 		-- Seasonal Rewards
 		q(83158),	-- Adventurer's Warbound Battlegear Drop (spellID 453929)
 		q(83235),	-- Airship: Wings 05 - Lantern Wing (spellID 454473)

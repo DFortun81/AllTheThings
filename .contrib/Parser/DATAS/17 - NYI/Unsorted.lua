@@ -963,9 +963,6 @@ root(ROOTS.Unsorted, {
 			i(226275),	-- Grizzly Hills Granola
 			i(231019),	-- Hearthstone Invitation Letter
 			i(232492),	-- Gleaming Shatter
-			i(232493),	-- Restored Coffer Key
-			i(232494),	-- Restored Coffer Key
-			i(232495),	-- Restored Coffer Key
 		})),
 		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			n(ARMOR, {
