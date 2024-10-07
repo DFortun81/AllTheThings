@@ -10,3 +10,6 @@ function FILTERFUNC_questID(t) return t.questID and true; end
 
 -- Only match groups with criteriaID
 function FILTERFUNC_criteriaID(t) return t.criteriaID and true; end
+
+-- Only match groups with objectID
+function FILTERFUNC_objectID(t) return t.objectID and true; end
