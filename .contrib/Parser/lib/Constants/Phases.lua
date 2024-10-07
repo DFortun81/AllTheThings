@@ -170,8 +170,8 @@ BLIZZARD_BALANCE = createPhase({
 		--[[
 		ko = "",
 		cn = "",
-		tw = "",
 		]]--
+		tw = "暴雪點數",
 	},
 	description = {
 		en = "This is locked behind a paywall such as the in-game shop, another Blizzard product, or the Recruit-A-Friend service.",
@@ -186,8 +186,8 @@ BLIZZARD_BALANCE = createPhase({
 		--[[
 		ko = "",
 		cn = "",
-		tw = "",
 		]]--
+		tw = "這被鎖定在付費牆後面，例如遊戲内商店、另一個暴雪產品或招兵買馬召集令。",
 	},
 	lore = {
 		en = "The act of encouraging the use of real money in any version of the game is widely frowned upon. Participate in this content at your own risk.",
@@ -429,7 +429,7 @@ TEMP_MOP_LEGENDARY_CLOAK_PHASE = createPhase({
 		ko = "",
 		]]--
 		cn = "斡耳朵斯 - 传奇披风",
-		tw = "決心罩氅，艾夏卡瑪斯",
+		tw = "歐朵斯 - 傳奇披風",
 	},
 	description = {
 		en = "Only available to players that completed the Legendary Cloak quest chain during Mists of Pandaria, obtained the Legendary Cloak Appearance during MoP: Remix or via the BMAH.",
@@ -445,7 +445,7 @@ TEMP_MOP_LEGENDARY_CLOAK_PHASE = createPhase({
 		ko = "",
 		]]--
 		cn = "这仅适用于在《熊猫人之谜》或通过黑市拍卖行完成传奇披风任务链的玩家。",
-		tw = "這僅適用於在《潘達利亞之謎》或通過黑市拍賣行完成傳奇披風任務鏈的玩家。",
+		tw = "這僅適用於在《潘達利亞之謎》完成傳奇披風任務鏈、《混搭再造：潘達利亞之謎》取得成就的玩家或通過黑市拍賣行獲得。",
 	},
 });
 
@@ -465,7 +465,7 @@ local defaultDescription = {
 	ru = "Это было недоступно до %s из %s.",
 	ko = "%s(%s)까지 사용할 수 없습니다.",
 	cn = "该功能直到 %s 的 %s 才可用。",
-	--tw = "",
+	tw = "該功能直到 %s 的 %s 才可用。",
 };
 local defaultLore = {
 	en = "If %s of %s is active on your server, simply turn this on.",
@@ -477,7 +477,7 @@ local defaultLore = {
 	ru = "Если %s из %s активен на вашем сервере, просто включите это.",
 	ko = "%s(%s)이 서버에서 활성화된 경우 이 기능을 켜기만 하면 됩니다.",
 	cn = "如果 %s 中的 %s 在您的服务器上处于活动状态，只需将其打开即可。",
-	--tw = "",
+	tw = "如果 %s 中的 %s 在您的伺服器上處於啟用狀態，只需將其打開即可。",
 };
 local function createClassicPhase(data)
 	-- #if ANYCLASSIC
