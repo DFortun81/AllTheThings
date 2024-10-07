@@ -104,6 +104,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 			}, {	-- RENOWN 23 --
 			}, {	-- RENOWN 24 --
+				q(82365, {	-- A Crafter's Delight
+					["provider"] = { "n", 223728 },	-- Auditor Balwurz <Keeper of Renown>
+					["coord"] = { 39.1, 24.0, DORNOGAL },
+					["g"] = {
+						i(224072),	-- Enchanted Runed Harbinger Crest
+					},
+				}),
+				q(85546, {	-- Resonance Crystals
+					["provider"] = { "n", 223728 },	-- Auditor Balwurz <Keeper of Renown>
+					["coord"] = { 39.1, 24.0, DORNOGAL },
+				}),
 			}, {	-- RENOWN 25 --
 				------ Paragon ------
 				q(79219, {	-- Renowned with the Council of Dornogal
