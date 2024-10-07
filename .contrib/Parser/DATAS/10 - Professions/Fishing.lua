@@ -56,7 +56,8 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			["timeline"] = { ADDED_3_0_2 },
 			-- #endif
 		}),
-		ach(878, {	-- One That Didn't Get Away
+		ach(878, {	-- One That Didn't Get Away (automated)
+			-- #IF ANYCLASSIC
 			["providers"] = {
 				{ "i", 6295 },	-- 15 Pound Mud Snapper
 				{ "i", 13913 },	-- 22 Pound Lobster
@@ -71,6 +72,7 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				{ "i", 19808 },	-- Rockhide Strongfish
 				{ "i", 6360 },	-- Steelscale Crushfish
 			},
+			-- #ENDIF
 			-- #if BEFORE WRATH
 			["description"] = "Catch one of the rare fish in the list below.\n\nKeep one in your inventory somewhere to keep credit for this.",
 			-- #endif

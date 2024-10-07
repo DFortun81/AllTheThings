@@ -459,14 +459,23 @@ local InformationTypes = {
 
 	-- Quest Fields
 	CreateInformationType("providers", { text = L.PROVIDERS, priority = 2.05, ShouldDisplayInExternalTooltips = false,
+		limit = 25,
 		Process = function(t, reference, tooltipInfo)
 			local providers = t.GetValue(t, reference);
 			if providers then
-				for i,provider in pairs(providers) do
+				local limit = t.limit
+				for i,provider in ipairs(providers) do
 					tinsert(tooltipInfo, {
 						left = (i == 1 and "Provider(s)"),
 						right = ConversionMethods.provider(provider, reference),
 					});
+					limit = limit - 1
+					if limit <= 0 then
+						tinsert(tooltipInfo, {
+							right =  LFG_LIST_AND_MORE:format(#reference.providers - t.limit),
+						});
+						break
+					end
 				end
 			end
 		end,
