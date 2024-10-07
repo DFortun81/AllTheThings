@@ -1812,6 +1812,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 						["cost"] = {{"c", UNDERCOIN, 1000}},
 					}),
 					i(232495, {	-- Restored Coffer Key
+						["cost"] = {{"c", UNDERCOIN, 1000}},
+					}),
+					i(232496, {	-- Restored Coffer Key
 						["cost"] = {{"c", UNDERCOIN, 2000}},
 					}),
 					i(232497, {	-- Restored Coffer Key
@@ -1966,12 +1969,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(84738, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 3rd
 		q(84739, name(HEADERS.Currency,3028,{["isWeekly"]=true})),	-- 4th
 		-- Restored Coffer Key (from vendor, weekly?, account wide - locked for other characters after you buy them once)
-		q(85743),	-- itemID 232496 (Restored Coffer Key)
-		q(85746),	-- itemID 232497 (Restored Coffer Key)
-		q(85747),	-- itemID 232498 (Restored Coffer Key)
 		q(85752),	-- itemID 232493 (Restored Coffer Key)
 		q(85751),	-- itemID 232494 (Restored Coffer Key)
 		q(85750),	-- itemID 232495 (Restored Coffer Key)
+		q(85743),	-- itemID 232496 (Restored Coffer Key)
+		q(85746),	-- itemID 232497 (Restored Coffer Key)
+		q(85747),	-- itemID 232498 (Restored Coffer Key)
 		-- Seasonal Rewards
 		q(83158),	-- Adventurer's Warbound Battlegear Drop (spellID 453929)
 		q(83235),	-- Airship: Wings 05 - Lantern Wing (spellID 454473)
