@@ -20,7 +20,9 @@ local EncounterToCRS = {
 	[OVINAX] = { 214506 },	-- Broodtwister Ovi'nax
 	[KYVEZA] = { 218425 },	-- Nexus-Princess Ky'veza
 	[SILKEN_COURT] = {
+		217489,	-- Anub'arash <The Thousand Scars>
 		223779,	-- Anub'arash <The Thousand Scars>
+		217491,	-- Skeinspinner Takazj
 		223781,	-- Skeinspinner Takazj
 	},
 	[ANSUREK] = { 227323, 218370 },	-- Queen Ansurek
