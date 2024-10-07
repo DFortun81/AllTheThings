@@ -27,6 +27,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(80186),	-- Preserving in War
 				q(80185),	-- Preserving Solo
 				q(80189),	-- Preserving Teamwork
+				q(47148),	-- Something Different
 				q(81796, {	-- Sparks of War: Azj-Kahet
 					i(219934),	-- Spark of War (QI!)
 				}),

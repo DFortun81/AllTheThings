@@ -29,7 +29,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(83359),					-- A Shattered Path Through Time
 				q(83362),					-- A Shrouded Path Through Time
 				q(83347),					-- Emissary of War
-				pvp(q(47148)),				-- Something Different
 				pvp(q(83358)),				-- The Arena Calls
 				petbattle(pvp(q(83357, {	-- The Very Best
 					["_drop"] = { "g" },	-- Drop Ultimate Battle-Training Stone

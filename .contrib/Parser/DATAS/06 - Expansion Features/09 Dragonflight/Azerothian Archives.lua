@@ -431,10 +431,15 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}),
 				--
 				q(79226, {	-- The Big Dig: Traitor's Rest
-					["coord"] = { 61.6, 31.3, THALDRASZUS },
-					["maps"] = { THE_AZURE_SPAN },
+					["providers"] = {
+						{ "n", 206107 },	-- Eadweard Dalyngrigge
+						{ "n", 209134 },	-- Eadweard Dalyngrigge
+					},
+					["coords"] = {
+						{ 61.6, 31.3, THALDRASZUS },
+						{ 55.3, 51.4, 2262 },	-- Traitor's Rest
+					},
 					["isWeekly"] = true,
-					["provider"] = { "n", 112802 },	-- Eadweard Dalyngrigge
 					["g"] = {
 						currency(2819),	-- Archivist Knowledge
 					},

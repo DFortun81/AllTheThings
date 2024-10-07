@@ -667,7 +667,8 @@ root(ROOTS.Promotions, n(COLLECTORS_EDITION, bubbleDownSelf({ ["u"] = BLIZZARD_B
 							},
 						})),
 						q(84908, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- The Stormrider's Honors [Khaz Algar Version]
-						-- Pops on login directs you to quest 83024
+							-- Pops on login directs you to quest 83024
+							["lockCriteria"] = { 1, "questID", 83024 },	-- The Stormrider's Bond [Khaz Algar Version]
 						})),
 						q(83024, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {	-- The Stormrider's Bond [Khaz Algar Version]
 							["provider"] = { "n", 225347 },	-- Stormrider Bruelda

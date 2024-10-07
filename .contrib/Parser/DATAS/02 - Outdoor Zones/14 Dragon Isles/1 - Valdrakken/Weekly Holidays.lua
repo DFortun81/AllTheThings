@@ -81,7 +81,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			}, {
 				-- #IF AFTER DF
 				pvp(q(47148, {	-- Something Different
-					["timeline"] = { ADDED_10_0_2_LAUNCH },
+					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_11_0_2 },
 				})),
 				-- #ENDIF
 				pvp(q(78128, {	-- Gotta Go Fast
