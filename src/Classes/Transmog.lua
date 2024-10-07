@@ -568,7 +568,6 @@ local function CollectUniqueAppearances()
 end
 local function RefreshAppearanceSources()
 	-- app.PrintDebug("RefreshAppearanceSources")
-	app.DoRefreshAppearanceSources = nil;
 	wipe(AccountSources);
 	-- C_TransmogCollection.PlayerKnowsSource is slower and provides less known sources...
 	-- Simply determine the max known SourceID from ATT cached sources
@@ -590,13 +589,14 @@ end
 -- for instance, Data.Sources would only change in refresh, with nil or 1 being stored
 -- and a separate storage for Unique-collected Sources, then adjusting Transmog class logic to allow referencing
 -- the Unique table when in Unique mode? maybe once events are all good it won't really matter
-app.AddEventHandler("OnSourceCollection", function()
-	if app.DoRefreshAppearanceSources then
+app.AddEventHandler("OnRecalculate", function()
+	if app.MODE_DEBUG or app.Settings:Get("Thing:Transmog") then
 		RefreshAppearanceSources();
+		app.HandleEvent("OnSourcesCollected")
 	end
 end)
-app.AddEventHandler("OnUniqueSourceCollection", function()
-	if app.Settings:Get("Thing:Transmog") and not app.Settings:Get("Completionist") then
+app.AddEventHandler("OnSourcesCollected", function()
+	if not app.Settings:Get("Completionist") then
 		CollectUniqueAppearances();
 	end
 end)

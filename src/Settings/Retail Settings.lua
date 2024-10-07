@@ -306,7 +306,6 @@ settings.Initialize = function(self)
 
 	app._SettingsRefresh = GetTimePreciseSec()
 	settings._Initialize = true
-	app.DoRefreshAppearanceSources = settings:Get("Thing:Transmog")
 
 	-- setup settings refresh functionality now that we're done initializing
 	settings.Refresh = function()
@@ -1141,7 +1140,6 @@ settings.ToggleAccountMode = function(self)
 end
 settings.SetCompletionistMode = function(self, completionistMode)
 	self:Set("Completionist", completionistMode)
-	app.DoRefreshAppearanceSources = true
 	self:UpdateMode(1)
 end
 settings.ToggleCompletionistMode = function(self)
@@ -1161,9 +1159,6 @@ settings.SetDebugMode = function(self, debugMode)
 		settings:Set("Cache:CollectedThings", settings:Get("Show:CollectedThings"))
 		settings:SetCompletedGroups(true, true)
 		settings:SetCollectedThings(true, true)
-		if not self:Get("Thing:Transmog") then
-			app.DoRefreshAppearanceSources = true
-		end
 	else
 		settings:SetCompletedGroups(settings:Get("Cache:CompletedGroups"), true)
 		settings:SetCollectedThings(settings:Get("Cache:CollectedThings"), true)
@@ -1411,6 +1406,7 @@ settings.UpdateMode = function(self, doRefresh)
 	end
 	-- if auto-refresh
 	if doRefresh then
+		app._SettingsRefresh = GetTimePreciseSec()
 		self.NeedsRefresh = true
 	end
 	-- app.PrintDebug("UpdateMode",doRefresh)
@@ -1420,15 +1416,21 @@ settings.UpdateMode = function(self, doRefresh)
 	doRefresh = doRefresh == "FORCE" or (doRefresh and not settings:Get("Skip:AutoRefresh"))
 	if doRefresh then
 		app.HandleEvent("OnSettingsNeedsRefresh")
+		app.HandleEvent("OnRecalculate")
 		self.NeedsRefresh = nil
 	end
-
-	app._SettingsRefresh = GetTimePreciseSec()
 
 	-- ensure the settings pane itself is refreshed
 	self:Refresh()
 end
+app.AddEventHandler("OnBeforeRecalculate", function()
+	if settings.NeedsRefresh then
+		-- Settings need to refresh before recalculate
+		app.HandleEvent("OnSettingsNeedsRefresh")
+	end
+end)
 app.AddEventHandler("OnRefreshCollectionsDone", function()
+	settings.NeedsRefresh = nil
 	-- Need to update the Settings window as well if User does not have auto-refresh for Settings
-	settings:UpdateMode("FORCE");
+	settings:UpdateMode()
 end)

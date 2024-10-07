@@ -208,9 +208,6 @@ function(self)
 end,
 function(self)
 	settings:Set("Thing:Transmog", self:GetChecked())
-	if self:GetChecked() then
-		app.DoRefreshAppearanceSources = true
-	end
 	settings:UpdateMode(1)
 end)
 local tooltip = L.APPEARANCES_CHECKBOX_TOOLTIP;

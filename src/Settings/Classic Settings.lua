@@ -287,8 +287,6 @@ settings.Initialize = function(self)
 		self:GetTooltipSetting("MinimapButton"),
 		self:GetTooltipSetting("MinimapSize"));
 
-	app.DoRefreshAppearanceSources = settings:Get("Thing:Transmog")
-
 	self:UpdateMode();
 end
 settings.Get = function(self, setting)
@@ -887,7 +885,6 @@ settings.ToggleAccountMode = function(self)
 end
 settings.SetCompletionistMode = function(self, completionistMode)
 	self:Set("Completionist", completionistMode)
-	app.DoRefreshAppearanceSources = true
 	self:UpdateMode(1)
 end
 settings.ToggleCompletionistMode = function(self)
@@ -907,9 +904,6 @@ settings.SetDebugMode = function(self, debugMode)
 		settings:Set("Cache:CollectedThings", settings:Get("Show:CollectedThings"))
 		settings:SetCompletedGroups(true, true)
 		settings:SetCollectedThings(true, true)
-		if not self:Get("Thing:Transmog") then
-			app.DoRefreshAppearanceSources = true
-		end
 	else
 		settings:SetCompletedGroups(settings:Get("Cache:CompletedGroups"), true)
 		settings:SetCollectedThings(settings:Get("Cache:CollectedThings"), true)

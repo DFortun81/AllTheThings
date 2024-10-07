@@ -7921,53 +7921,18 @@ function app:GetDataCache()
 	return rootData;
 end
 
-local LastSettingsChangeUpdate;
-local function RefreshData()
-	-- app.PrintDebug("RefreshData",app.refreshDataForce and "FORCE" or "LAZY", app.refreshDataGot and "COLLECTED" or "PASSIVE")
-
-	-- Send an Update to the Windows to Rebuild their Row Data
-	if app.refreshDataForce then
-		app.refreshDataForce = nil;
-
-		-- Execute the OnRecalculate handlers.
-		app.HandleEvent("OnRecalculate")
-
-		if LastSettingsChangeUpdate ~= app._SettingsRefresh then
-			LastSettingsChangeUpdate = app._SettingsRefresh;
-
-			app.HandleEvent("OnRecalculate_NewSettings")
-		end
-
-		-- Forcibly update the windows.
-		app.HandleEvent("OnUpdateWindows", true, app.refreshDataGot)
-	else
-		app.HandleEvent("OnUpdateWindows", nil, app.refreshDataGot)
-	end
-
-	-- Execute the OnRefreshComplete handlers.
-	app.HandleEvent("OnRefreshComplete");
-end
-function app:RefreshData(lazy, got, manual)
-	app.Processing_RefreshData = true;
-	-- app.PrintDebug("RefreshData:Async",lazy and "LAZY" or "FORCE", got and "COLLECTED" or "PASSIVE", manual and "MANUAL" or "AUTO")
-	app.refreshDataForce = app.refreshDataForce or not lazy;
-	app.refreshDataGot = app.refreshDataGot or got;
-
-	-- Don't refresh if not ready
-	if not app.IsReady then
-		-- app.PrintDebug("Not ready, .1sec self callback")
-		DelayedCallback(app.RefreshData, 0.1, self, lazy);
-	elseif manual then
-		-- app.PrintDebug("manual refresh after combat")
-		AfterCombatCallback(RefreshData);
-	else
-		-- app.PrintDebug(".5sec delay callback")
-		AfterCombatOrDelayedCallback(RefreshData, 0.5);
+local LastSettingsChangeUpdate
+local function CheckNewSettings()
+	if LastSettingsChangeUpdate ~= app._SettingsRefresh then
+		LastSettingsChangeUpdate = app._SettingsRefresh
+		app.HandleEvent("OnRecalculate_NewSettings")
 	end
 end
-app.AddEventHandler("OnSettingsNeedsRefresh", function()
-	app:RefreshData(nil,nil,true)
-end)
+app.AddEventHandler("OnRecalculateDone", CheckNewSettings)
+local function ForceUpdateWindows()
+	app.HandleEvent("OnUpdateWindows", true)
+end
+app.AddEventHandler("OnRecalculateDone", ForceUpdateWindows)
 end	-- Dynamic/Main Data
 
 do -- Search Response Logic
@@ -8398,7 +8363,8 @@ customWindowUpdates.AuctionData = function(self)
 							end
 						end
 						app.Settings:Refresh();
-						app:RefreshData();
+						-- TODO: use events
+						-- app:RefreshData();
 					end,
 					['OnUpdate'] = function(data)
 						data.visible = true;
