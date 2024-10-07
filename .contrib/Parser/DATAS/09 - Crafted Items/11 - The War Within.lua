@@ -2697,6 +2697,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(81844),	-- Looting a hidden herb via a light source near the Spreading the Light objectives
 			q(81800),	-- Looting a hidden herb via a light source near the Spreading the Light objectives
 			q(81814),	-- Looting a hidden herb via a light source near the Spreading the Light objectives
+			q(83226),	-- Looting a hidden herb via a light source near the Spreading the Light objectives
 		}),
 		prof(MINING, {
 			q(82317),	-- 45/45 Mastering the Mysterious

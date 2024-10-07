@@ -350,7 +350,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					["coord"] = { 54.5, 15.5, AZJ_KAHET },
 					["g"] = {
 						o(438039),	-- Alchemical Instruments
-					}),
+					},
 				}),
 				q(81481, {	-- Sabotage: Transformatory Vessels
 					["sourceQuest"] = 82644,
