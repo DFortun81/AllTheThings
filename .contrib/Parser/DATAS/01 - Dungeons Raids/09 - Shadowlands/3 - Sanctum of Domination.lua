@@ -57,7 +57,7 @@ for k,v in pairs(EncounterToCRS) do
 	ALL_BOSSES = appendGroups(v, ALL_BOSSES);
 end
 
------- EnconterToLoot ------
+------ EncounterToLoot ------
 local EncounterToLoot = {
 	[TARRAGRUE] = {
 		i(186311),	-- Cavalier Oathbreaker's Grasps

@@ -126,6 +126,19 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(83787),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
 			q(83788),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
 			q(83789),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
+			-- These 12 HQTs also can be triggered from the Treasure Map bundle (228952) Unsure what changes the set given.
+			q(83796),
+			q(83797),
+			q(83798),
+			q(83799),
+			q(83800),
+			q(83801),
+			q(83802),
+			q(83803),
+			q(83804),
+			q(83805),
+			q(83806),
+			q(83807),
 		}),
 	}),
 })));

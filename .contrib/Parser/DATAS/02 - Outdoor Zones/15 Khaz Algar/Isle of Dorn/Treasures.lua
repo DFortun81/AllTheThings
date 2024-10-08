@@ -221,6 +221,12 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 				},
 			}),
+			o(441797, {	-- Void-Scarred Stormhammer
+				["coord"] = { 29.0, 36.2, ISLE_OF_DORN },
+				["g"] = {
+					i(220770),	-- Void-Scarred Stormhammer
+				},
+			}),
 			o(441284, {	-- Watcher of the North
 				["coord"] = { 57.2, 20.0, ISLE_OF_DORN },
 				["questID"] = 82047,

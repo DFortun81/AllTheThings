@@ -42,7 +42,7 @@ local EncounterToCRS = {
 	[FYRAKK] = { 204931 },	-- Fyrakk <The Blazing>
 };
 
------- EnconterToLoot ------
+------ EncounterToLoot ------
 local EncounterToLoot = {
 	[GNARLROOT] = {
 		i(207142),	-- Ancient Haubark

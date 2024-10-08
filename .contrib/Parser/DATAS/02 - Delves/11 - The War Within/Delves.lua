@@ -528,6 +528,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 						i(225337),	-- Violet Sporbit (PET!)
 					}),
 					filter(COSMETIC, {
+						i(212172),	-- Ajul'Nerub Raptorial Spine
 						i(212162),	-- Bitter Shroom Cap
 						i(211801),	-- Poisonous Shroom Cap
 						i(212164),	-- Shallow Nautic Helm
@@ -1002,6 +1003,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				n(TREASURES, {
 					filter(BATTLE_PETS, {
 						i(222971),	-- Bouncer (PET!)
+						i(225337),	-- Violet Sporbit (PET!)
 					}),
 					filter(COSMETIC, {
 						i(212172),	-- Ajul'Nerub Raptorial Spine
@@ -1309,6 +1311,9 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					i(219157),	-- Sollerets of Hidden Stars
 					i(219155),	-- Visage of Hidden Stars
 				}),
+			}),
+			filter(TOYS, {
+				i(225910),	-- Pileus Delight (TOY!)
 			}),
 			n(WEAPONS, {
 				i(219203),	-- Arathi Holy Standard

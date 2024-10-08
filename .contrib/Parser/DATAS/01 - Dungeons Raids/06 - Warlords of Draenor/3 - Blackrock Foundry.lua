@@ -126,7 +126,7 @@ local function SymModID(sym, modID)
 	return symmodid
 end
 
------- EnconterToLoot ------
+------ EncounterToLoot ------
 local EncounterToLoot = {
 	[OREGORGER] = {
 		i(119448),	-- Head-Lopper Skullscythe

@@ -48,7 +48,7 @@ local EncounterToCRS = {
 	},
 };
 
------- EnconterToLoot ------
+------ EncounterToLoot ------
 local EncounterToLoot = {
 	[KAZZARA] = {
 		i(202594),	-- Bloodstench Skinguards

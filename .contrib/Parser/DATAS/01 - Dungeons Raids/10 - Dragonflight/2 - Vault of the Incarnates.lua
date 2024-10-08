@@ -35,7 +35,7 @@ local EncounterToCRS = {
 	},
 };
 
------- EnconterToLoot ------
+------ EncounterToLoot ------
 local EncounterToLoot = {
 	[ERANOG] = {
 		i(195482),	-- Decorated Commander's Cindercloak

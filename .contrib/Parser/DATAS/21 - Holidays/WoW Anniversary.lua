@@ -253,7 +253,7 @@ local EncounterToCRS = {
 	[DAGRAN] = { 9019 },	-- Emperor Dagran Thaurissan
 };
 
------- EnconterToLoot ------
+------ EncounterToLoot ------
 local EncounterToLoot = {
 	[ROCCOR] = {
 		i(231457),	-- Bottled Magma

@@ -13,22 +13,34 @@ local ANSUREK = 2602;
 
 ------ EncounterToCRS ------
 local EncounterToCRS = {
-	[ULGRAX] = { 228713 },	-- Ulgrax the Devourer
+	[ULGRAX] = {
+		228713,	-- Ulgrax the Devourer (?)
+		215657,	-- Ulgrax the Devourer (N)
+	},
 	[BLOODBOUND_HORROR] = { 214502 },	-- The Bloodbound Horror
 	[SIKRAN] = { 214503 },	-- Sikran <Captain of the Sureki>
-	[RASHANAN] = { 224552 },	-- Rasha'nan
-	[OVINAX] = { 214506 },	-- Broodtwister Ovi'nax
-	[KYVEZA] = { 218425 },	-- Nexus-Princess Ky'veza
-	[SILKEN_COURT] = {
-		217489,	-- Anub'arash <The Thousand Scars>
-		223779,	-- Anub'arash <The Thousand Scars>
-		217491,	-- Skeinspinner Takazj
-		223781,	-- Skeinspinner Takazj
+	[RASHANAN] = {
+		224552,	-- Rasha'nan (?)
+		214504,	-- Rasha'nan (N)
 	},
-	[ANSUREK] = { 227323, 218370 },	-- Queen Ansurek
+	[OVINAX] = { 214506 },	-- Broodtwister Ovi'nax
+	[KYVEZA] = {
+		218425,	-- Nexus-Princess Ky'veza (?)
+		217748,	-- Nexus-Princess Ky'veza (N)
+	},
+	[SILKEN_COURT] = {
+		223779,	-- Anub'arash <The Thousand Scars> (?)
+		217489,	-- Anub'arash <The Thousand Scars> (N)
+		223781,	-- Skeinspinner Takazj (?)
+		217491,	-- Skeinspinner Takazj (N)
+	},
+	[ANSUREK] = {
+		227323,	-- Queen Ansurek (?)
+		218370,	-- Queen Ansurek (?)
+	},
 };
 
------- EnconterToLoot ------
+------ EncounterToLoot ------
 local EncounterToLoot = {
 	[ULGRAX] = {
 		i(212419),	-- Bile-Soaked Harness

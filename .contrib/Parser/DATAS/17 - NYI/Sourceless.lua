@@ -362,7 +362,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 			-- 11.0.2
 			expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 				i(225937),	-- Putrid Goop //Biproduct of Fine Egg Powder salvage
-				i(220770),	-- Void-Scarred Stormhammer // For Isle of Dorn hunter pet unlock
 			})),
 		}),
 	}),
@@ -669,7 +668,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 
 			-- 8.3.7
 			expansion(EXPANSION.BFA, patch(3,7), bubbleDownSelf({ ["timeline"] = { ADDED_8_3_7 } }, {
-				q(59553),	--
+				q(59553),	--	On learning Finger-Bone Trophy of Battle (169902) ??
 			})),
 		}),
 		expansion(EXPANSION.SL, {
@@ -683,7 +682,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(62165),	-- Tal-Inara's Call
 				q(62166),	-- Tal-Inara's Call
 				q(62377),	--
-				q(62381),	--
+				q(62381),	-- Encountered after swapping covenant to necrolord ??
 				q(62578),	--
 				q(62681),	-- Encountered after using Focused Life Anima to create Stabilizing Lens of the Focusing Iris (168622)
 				q(62687),	--
