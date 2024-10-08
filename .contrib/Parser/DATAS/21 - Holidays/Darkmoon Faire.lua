@@ -3201,6 +3201,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 		pvp(n(PVP, {
 			o(209620, {	-- Darkmoon Treasure Chest
 				["coord"] = { 44.6, 78.9, DARKMOON_ISLAND },	-- Chest
+				-- Danny Donkey: The earliest report of the trinket being shareable is from 9.1.5.
+				-- #if AFTER 9.1.5
+				["description"] = "Protip: Disable autoloot before looting this chest, and do not empty it. Everyone can loot their trinket this way.",
+				-- #endif
 				["groups"] = {
 					i(74034, {	-- Pit Fighter
 						["timeline"] = { ADDED_4_3_0 },
