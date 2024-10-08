@@ -4197,7 +4197,7 @@ n(223094, 4538);	-- Cobalt Ramolith
 n(222584, 4499);	-- Common Ploughworm
 n(192363, 3361);	-- Diamond Crab
 n(222582, 4498);	-- Ebon Ploughworm
-n(219267, 4514);	-- Fallowspark Glowfly
+n(222613, 4514);	-- Fallowspark Glowfly
 n(222774, 4525);	-- Fragrant Stonelamb
 n(222877, 4535);	-- Ghostcap Menace
 n(223093, 4539);	-- Granite Ramolith
