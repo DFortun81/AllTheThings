@@ -767,6 +767,7 @@ TWW_ENCHANTING = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	}),
 	filter(MISC, {
 		r(445338),	-- Algari Mana Oil
+		r(470726),	-- Gleaming Shatter
 		r(445365),	-- Gleeful Glamour - Pandaren
 		r(445360),	-- Illusory Adornment: Runes
 	}),

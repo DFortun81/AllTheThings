@@ -1281,6 +1281,7 @@ i(0, 455970);		-- Disenchant [The War Within]
 i(0, 445338);		-- Algari Mana Oil
 i(0, 445379);		-- Council's Guile
 i(0, 445324);		-- Enchanted Spearwood Wand
+i(0, 470726);		-- Gleaming Shatter
 i(0, 445365);		-- Gleeful Glamour - Pandaren
 i(0, 445358);		-- Glimmering Critical Strike
 i(0, 445384);		-- Glimmering Haste
