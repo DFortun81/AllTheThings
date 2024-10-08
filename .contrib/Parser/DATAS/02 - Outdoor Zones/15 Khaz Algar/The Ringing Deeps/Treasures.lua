@@ -112,6 +112,22 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(224783),	-- Sovereign's Finery Chest (TOY!)
 				},
 			}),
+			o(444261, {	-- Purchase Bluesberry Blast 5 Silver
+				["description"] = "Purchase First, then Orange!.",
+				["coord"] = { 58.8, 64.2, THE_RINGING_DEEPS },
+			}),
+			o(444275, {	-- Purchase Mangoro Madness 5 Silver
+				["description"] = "Purchase Fourth.",
+				["coord"] = { 58.8, 64.2, THE_RINGING_DEEPS },
+			}),
+			o(444276, {	-- Purchase Orange O Pocalypse 5 Silver
+				["description"] = "Purchase Second, next is Oyster.",
+				["coord"] = { 58.8, 64.2, THE_RINGING_DEEPS },
+			}),
+			o(444277, {	-- Purchase Oyster Outbreak 5 Silver
+				["description"] = "Purchase Third, now lets get some Mangoro Madness.",
+				["coord"] = { 58.8, 64.2, THE_RINGING_DEEPS },
+			}),
 			o(444256, {	-- Kaja'Cola Machine
 				["description"] = "Bluesberry Blast > Orange O-pocalypse > Oyster Outburst > Mangoro Mania",
 				["coord"] = { 58.8, 64.2, THE_RINGING_DEEPS },
