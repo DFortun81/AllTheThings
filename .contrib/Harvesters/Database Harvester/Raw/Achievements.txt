@@ -15403,3 +15403,6 @@
 11.0.5.56572
 41013@@@Upgraded Apparel
 41015@@@A Dark Iron Past
+11.0.5.56749
+41033@@@Classy Dresser
+41038@@@Token Collector
