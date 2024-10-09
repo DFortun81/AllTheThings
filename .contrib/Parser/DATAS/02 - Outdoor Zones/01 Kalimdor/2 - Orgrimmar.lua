@@ -4327,7 +4327,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						i(18428),	-- Senior Sergeant's Insignia (45)
 						i(15200),	-- Senior Sergeant's Insignia (30)
 						i(16486, {	-- First Sergeant's Silk Cuffs (58)
-							["classes"] = { MAGE, PRIEST, WARLOCK },
+							["classes"] = CLOTH_CLASSES,
 						}),
 						i(18434, {	-- First Sergeant's Dragonhide Armguards (58)
 							["classes"] = { DRUID },
@@ -4336,19 +4336,19 @@ root(ROOTS.Zones, m(KALIMDOR, {
 							["classes"] = { WARRIOR },
 						}),
 						i(16532, {	-- First Sergeant's Mail Wristguards (58)
-							["classes"] = { HUNTER, SHAMAN },
+							["classes"] = MAIL_CLASSES,
 						}),
 						i(16497, {	-- First Sergeant's Leather Armguards (58)
 							["classes"] = { ROGUE },
 						}),
 						i(18437, {	-- First Sergeant's Silk Cuffs (45)
-							["classes"] = { MAGE, PRIEST, WARLOCK },
+							["classes"] = CLOTH_CLASSES,
 						}),
 						i(18430, {	-- First Sergeant's Plate Bracers (45)
 							["classes"] = { WARRIOR },
 						}),
 						i(18432, {	-- First Sergeant's Mail Wristguards (45)
-							["classes"] = { HUNTER, SHAMAN },
+							["classes"] = MAIL_CLASSES,
 						}),
 						i(18436, {	-- First Sergeant's Dragonhide Armguards (45)
 							["classes"] = { DRUID },

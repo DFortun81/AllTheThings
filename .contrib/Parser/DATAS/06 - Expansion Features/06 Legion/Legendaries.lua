@@ -257,39 +257,39 @@ root(ROOTS.ExpansionFeatures,
 				i(137054),	-- The Walls Fell
 			}),
 			i(132443, {	-- Aggramar's Stride
-				["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT }
+				["classes"] = PLATE_CLASSES,
 			}),
 			i(146666, {	-- Celumbra, the Night's Dichotomy
-				["classes"] = { MAGE, PRIEST, WARLOCK }
+				["classes"] = CLOTH_CLASSES,
 			}),
 			i(133976, {	-- Cinidaria, the Symbiote
-				["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER }
+				["classes"] = LEATHER_CLASSES,
 			}),
 			i(132455, {	-- Norgannon's Foresigh
-				["classes"] = { PRIEST, MAGE, WARLOCK }
+				["classes"] = CLOTH_CLASSES,
 			}),
 			i(146667, {	-- Rethu's Incessant Courage
-				["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT }
+				["classes"] = PLATE_CLASSES,
 			}),
 			i(132466, {	-- Roots of Shaladrassil
-				["classes"] = { HUNTER, SHAMAN }
+				["classes"] = MAIL_CLASSES,
 			}),
 			i(146669, {	-- The Sentinel's Eternal Refuge
-				["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER }
+				["classes"] = LEATHER_CLASSES,
 			}),
 			i(146668, {	-- Vigilance Perch
-				["classes"] = { HUNTER, SHAMAN }
+				["classes"] = MAIL_CLASSES,
 			}),
 			i(132444),	-- Prydaz, Xavric's Magnum Opus
 			i(152626),	-- Insignia of the Grand Army
 			i(132452),	-- Sephuz's Secret
 			i(144249, {	-- Archimonde's Hatred Reborn
-				["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT, MONK, DRUID, DEMONHUNTER }
+				["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT, MONK, DRUID, DEMONHUNTER },
 			}),
 			i(154172),	-- Aman'Thul's Vision
 			i(144259),  -- Kil'jaeden's Burning Wish
 			i(144258, {	-- Velen's Future Sight
-				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID }
+				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
 			}),
 		}),
 	})

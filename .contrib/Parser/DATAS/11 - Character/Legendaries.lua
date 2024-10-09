@@ -15,7 +15,7 @@ root(ROOTS.Character, n(LEGENDARIES, {
 		["classes"] = { WARLOCK }
 	})),
 	i(71086, {	-- Dragonwrath, Tarecgosa's Rest
-		["classes"] = { PRIEST, MAGE, WARLOCK, DRUID, SHAMAN }
+		["classes"] = { PRIEST, MAGE, WARLOCK, DRUID, SHAMAN, EVOKER }
 	}),
 	i(77949, {	-- Golad, Twilight of Aspects
 		["classes"] = { ROGUE }
@@ -37,7 +37,7 @@ root(ROOTS.Character, n(LEGENDARIES, {
 		["classes"] = { ROGUE }
 	}),
 	i(46017, {	-- Val'anyr, Hammer of Ancient Kings
-		["classes"] = { PRIEST, DRUID, MONK, SHAMAN, PALADIN }
+		["classes"] = { PRIEST, DRUID, MONK, SHAMAN, PALADIN, EVOKER }
 	}),
 	i(32837, {	-- Warglaive of Azzinoth
 		["classes"] = { WARRIOR, ROGUE, MONK, DEMONHUNTER, DEATHKNIGHT }

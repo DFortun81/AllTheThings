@@ -29,16 +29,16 @@ local ALLIANCE_WARFRONT_EQUIPMENT = {
 	i(163893),	-- 7th Legionnaire's Warglaive
 	i(163883),	-- 7th Legionnaire's Warhammer
 	i(163355, {	-- 7th Legionnaire's Bloody Drape
-		["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },	-- Plate
+		["classes"] = PLATE_CLASSES,
 	}),
 	i(163351, {	-- 7th Legionnaire's Chain Drape
-		["classes"] = { HUNTER, SHAMAN },	-- Mail
+		["classes"] = MAIL_CLASSES,
 	}),
 	i(163347, {	-- 7th Legionnaire's Long Cloak
-		["classes"] = { DEMONHUNTER, DRUID, MONK, ROGUE },	-- Leather
+		["classes"] = LEATHER_CLASSES,
 	}),
 	i(163246, {	-- 7th Legionnaire's Silk Cloak
-		["classes"] = { MAGE, PRIEST, WARLOCK },	-- Cloth
+		["classes"] = CLOTH_CLASSES,
 	}),
 	i(163339),	-- 7th Legionnaire's Hood
 	i(163337),	-- 7th Legionnaire's Amice
@@ -91,16 +91,16 @@ local HORDE_WARFRONT_EQUIPMENT = {
 	i(163877),	-- Honorbound Warglaive
 	i(166337),	-- Honorbound Warhammer
 	i(163357, {	-- Honorbound Artificer's Cloak
-		["classes"] = { MAGE, PRIEST, WARLOCK },	-- Cloth
+		["classes"] = CLOTH_CLASSES,
 	}),
 	i(163368, {	-- Honorbound Centurion's Long Cloak
-		["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },	-- Plate
+		["classes"] = PLATE_CLASSES,
 	}),
 	i(163360, {	-- Honorbound Outrider's Drape
-		["classes"] = { DEMONHUNTER, DRUID, MONK, ROGUE },	-- Leather
+		["classes"] = LEATHER_CLASSES,
 	}),
 	i(163366, {	-- Honorbound Vanguard's Cloak
-		["classes"] = { HUNTER, SHAMAN },	-- Mail
+		["classes"] = MAIL_CLASSES,
 	}),
 	i(163426),	-- Honorbound Artificer's Guise
 	i(163424),	-- Honorbound Artificer's Amice
@@ -1096,16 +1096,16 @@ root(ROOTS.ExpansionFeatures,
 												i(163893),	-- 7th Legionnaire's Warglaive
 												i(163883),	-- 7th Legionnaire's Warhammer
 												i(163246, {	-- 7th Legionnaire's Silk Cloak
-													["classes"] = { PRIEST, MAGE, WARLOCK },
+													["classes"] = CLOTH_CLASSES,
 												}),
 												i(163347, {	-- 7th Legionnaire's Long Cloak
-													["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
+													["classes"] = LEATHER_CLASSES,
 												}),
 												i(163351, {	-- 7th Legionnaire's Chain Drape
-													["classes"] = { HUNTER, SHAMAN },
+													["classes"] = MAIL_CLASSES,
 												}),
 												i(163355, {	-- 7th Legionnaire's Bloody Drape
-													["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
+													["classes"] = PLATE_CLASSES,
 												}),
 												i(163339),	-- 7th Legionnaire's Hood
 												i(163337),	-- 7th Legionnaire's Amice

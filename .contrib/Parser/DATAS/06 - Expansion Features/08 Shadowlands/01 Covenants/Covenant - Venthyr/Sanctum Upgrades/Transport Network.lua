@@ -313,7 +313,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										}),
 										filter(CLOTH, {
 											i(181129, {	-- Soulbreaker's Burnished Drape
-												["classes"] = { MAGE, PRIEST, WARLOCK },
+												["classes"] = CLOTH_CLASSES,
 												["description"] = "This cloak is only awarded to cloth characters.", -- Every class sees this cloak in the Appearance tab & can mog it, so we add a note.
 											}),
 											i(181123),	-- Soulbreaker's Burnished Handwraps
@@ -331,7 +331,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											i(181059),	-- Burnished Death Shroud Boots
 											i(181062),	-- Burnished Death Shroud Breeches
 											i(181066, {	-- Burnished Death Shroud Cloak
-												["classes"] = { DRUID, MONK, ROGUE, DEMONHUNTER },
+												["classes"] = LEATHER_CLASSES,
 												["description"] = "This cloak is only awarded to leather characters.", -- Every class sees this cloak in the Appearance tab & can mog it, so we add a note.
 											}),
 											i(181060),	-- Burnished Death Shroud Gloves
@@ -343,7 +343,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 											i(181091),	-- Fearstalker's Burnished Belt
 											i(181092),	-- Fearstalker's Burnished Bracers
 											i(181093, {	-- Fearstalker's Burnished Cloak
-												["classes"] = { HUNTER, SHAMAN },
+												["classes"] = MAIL_CLASSES,
 												["description"] = "This cloak is only awarded to mail characters.", -- Every class sees this cloak in the Appearance tab & can mog it, so we add a note.
 											}),
 											i(181087),	-- Fearstalker's Burnished Gauntlets
@@ -356,7 +356,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										filter(PLATE, {
 											i(181023),	-- Dread Sentinel's Burnished Chestplate
 											i(181030, {	-- Dread Sentinel's Burnished Cloak
-												["classes"] = { DEATHKNIGHT, WARRIOR, PALADIN },
+												["classes"] = PLATE_CLASSES,
 												["description"] = "This cloak is only awarded to Plate characters.", -- Every class sees this cloak in the Appearance tab & can mog it, so we add a note.
 											}),
 											i(181028),	-- Dread Sentinel's Burnished Girdle

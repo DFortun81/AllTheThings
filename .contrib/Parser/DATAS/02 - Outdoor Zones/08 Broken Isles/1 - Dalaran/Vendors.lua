@@ -111,7 +111,7 @@ root(ROOTS.Zones, {
 								i(132367),	-- Service of Gorefiend
 								i(144293),	-- Consort's Cold Core
 								i(132453),	-- Rattlegore Bone Legplates
-								i(132443),	-- Aggramar's Stride (Paladin, Warrior, Death Knight)
+								i(132443),	-- Aggramar's Stride (Plate classes)
 								i(133974),	-- Lana'thel's Lament
 								i(137037),	-- Uvanimor, the Unbeautiful
 								i(137223),	-- Seal of Necrofantasia
@@ -143,7 +143,7 @@ root(ROOTS.Zones, {
 								i(133800),	-- Cord of Maiev, Priestess of the Moon
 								i(132864),	-- Mangaza's Madness
 								i(132447),	-- Entrancing Trousers of An'juna
-								i(132455),	-- Norgannon's Foresight (Priest, Mage, Lock)
+								i(132455),	-- Norgannon's Foresight (Cloth classes)
 								i(132452),	-- Sephuz's Secret
 								i(144259),	-- Kil'jaeden's Burning Wish
 								i(132444),	-- Prydaz, Xavric's Magnum Opus
@@ -170,7 +170,7 @@ root(ROOTS.Zones, {
 								i(137082),	-- Hellbrine, Rope of the Mist Marauder
 								i(137080),	-- Roar of the Seven Lions
 								i(137081),	-- War Belt of the Sentinel Army
-								i(132466),	-- Roots of Shaladrassil (Hunter, Shaman)
+								i(132466),	-- Roots of Shaladrassil (Mail classes)
 								i(137034),	-- Nesingwary's Trapping Treads
 								i(137227),	-- Qa'pla, Eredun War Order
 								i(137033),	-- Ulr's Feather Snowshoes
@@ -197,7 +197,7 @@ root(ROOTS.Zones, {
 								i(137090),	-- Mo'arg Bionic Stabilizers
 								i(137091),	-- The Defiler's Lost Vambraces
 								i(144292),	-- Spirit of the Darkness Flame
-								i(133976),	-- Cinidaria, the Symbiote (Druid, Rogue, Monk, Demon Hunter)
+								i(133976),	-- Cinidaria, the Symbiote (Leather classes)
 								i(151799),	-- Obilivion's Embrace
 								i(138949),	-- Kirel Narak
 								i(137022),	-- Loramus Thalipedes' Sacrifice
@@ -225,7 +225,7 @@ root(ROOTS.Zones, {
 								i(137085),	-- Intact Nazjatar Molting
 								i(137083),	-- Pristine Prot-Scale Girdle
 								i(137103),	-- Storm Tempests
-								i(132466),	-- Roots of Shaladrassil (Hunter, Shaman)
+								i(132466),	-- Roots of Shaladrassil (Mail classes)
 								i(137036),	-- Elemental Rebalancers
 								i(138117),	-- Spiritual Journey
 								i(137035),	-- The Deceiver's Blood Pact
@@ -252,7 +252,7 @@ root(ROOTS.Zones, {
 								i(137097),	-- Drinking Horn Cover
 								i(137057),	-- Hidden Master's Forbidden Touch
 								i(137096),	-- Petrichor Lagniappe
-								i(133976),	-- Cinidaria, the Symbiote (Druid, Rogue, Monk, Demon Hunter)
+								i(133976),	-- Cinidaria, the Symbiote (Leather classes)
 								i(137079),	-- Gai Plin's Soothing Sash
 								i(138879),	-- Ovyd's Winter Wrap
 								i(137068),	-- Leggings of the Black Flame
@@ -286,7 +286,7 @@ root(ROOTS.Zones, {
 								i(137098),	-- Zoldyck Family Training Shackles
 								i(141321),	-- Shivarran Symmetry
 								i(151818),	-- The Fist of the Dead
-								i(133976),	-- Cinidaria, the Symbiote (Druid, Rogue, Monk, Demon Hunter)
+								i(133976),	-- Cinidaria, the Symbiote (Leather classes)
 								i(137069),	-- Will of Valeera
 								i(137030),	-- Duskwalker's Footpads
 								i(137032),	-- Shadow Satyr's Walk
@@ -317,7 +317,7 @@ root(ROOTS.Zones, {
 								i(137059),	-- Tyr's Hand of Faith
 								i(137086),	-- Chain of Thrayn
 								i(137070),	-- Tyelca, Ferren Marcus's Stature
-								i(132443),	-- Aggramar's Stride (Paladin, Warrior, Death Knight)
+								i(132443),	-- Aggramar's Stride (Plate classes)
 								i(132452),	-- Sephuz's Secret
 								i(144249),	-- Archimonde's Hatred Reborn
 								i(144259),	-- Kil'jaeden's Burning Wish
@@ -347,7 +347,7 @@ root(ROOTS.Zones, {
 								i(137092),	-- Oneth's Intuition
 								i(137094),	-- The Wildshaper's Clutch
 								i(144242),	-- X'oni's Caress
-								i(133976),	-- Cinidaria, the Symbiote (Druid, Rogue, Monk, Demon Hunter)
+								i(133976),	-- Cinidaria, the Symbiote (Leather classes)
 								i(137078),	-- The Dark Titan's Advice
 								i(137067),	-- Elize's Everlasting Encasement
 								i(144354),	-- Fiery Red Maimers
@@ -385,7 +385,7 @@ root(ROOTS.Zones, {
 								i(132374),	-- Kazzak's Final Curse
 								i(132457),	-- Power Cord of Lethtendris
 								i(132357),	-- Pillars of the Dark Portal
-								i(132455),	-- Norgannon's Foresight (Priest, Mage, Lock)
+								i(132455),	-- Norgannon's Foresight (Cloth classes)
 								i(132452),	-- Sephuz's Secret
 								i(144259),	-- Kil'jaeden's Burning Wish
 								i(132444),	-- Prydaz, Xavric's Magnum Opus
@@ -415,7 +415,7 @@ root(ROOTS.Zones, {
 								i(132454),	-- Koralon's Burning Touch
 								i(133970),	-- Zann'esu Journey
 								i(132451),	-- Mystic Kilt of the Rune Master
-								i(132455),	-- Norgannon's Foresight (Priest, Mage, Lock)
+								i(132455),	-- Norgannon's Foresight (Cloth classes)
 								i(132452),	-- Sephuz's Secret
 								i(144259),	-- Kil'jaeden's Burning Wish
 								i(132444),	-- Prydaz, Xavric's Magnum Opus
@@ -440,7 +440,7 @@ root(ROOTS.Zones, {
 								i(151822),	-- Ararat's Bloodmirror
 								i(151824),	-- Valarjar Berserkers
 								i(137077),	-- Weight of the Earth
-								i(132443),	-- Aggramar's Stride (Paladin, Warrior, Death Knight)
+								i(132443),	-- Aggramar's Stride (Plate classes)
 								i(132452),	-- Sephuz's Secret
 								i(144249),	-- Archimonde's Hatred Reborn
 								i(144259),	-- Kil'jaeden's Burning Wish

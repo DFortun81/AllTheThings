@@ -75,7 +75,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			i(187430),	-- Harvester's Sinvyr Chalice
 			i(183420, {	-- Hopebreaker's Right Boot
-				["classes"] = { DEMONHUNTER, DRUID, MONK, ROGUE },
+				["classes"] = LEATHER_CLASSES,
 				["g"] = {
 					i(183418, {	-- Hopebreaker's Boots
 						["cost"] = {
@@ -85,7 +85,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			i(183417, {	-- Mail Courier's Right Runner
-				["classes"] = { HUNTER, SHAMAN },
+				["classes"] = MAIL_CLASSES,
 				["g"] = {
 					i(182719, {	-- Mail Courier's Runners
 						["cost"] = {
@@ -108,7 +108,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			}),
 			i(183430, {	-- Researcher's Right Slipper
-				["classes"] = { MAGE, PRIEST, WARLOCK },
+				["classes"] = CLOTH_CLASSES,
 				["g"] = {
 					i(183425, {	-- Researcher's Slippers
 						["cost"] = {
@@ -121,7 +121,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				["crs"] = { 165270 },	-- Royal Arcanist
 			}),
 			i(183423, {	-- Stone Legion Right Sabaton
-				["classes"] = { DEATHKNIGHT, PALADIN, WARRIOR },
+				["classes"] = PLATE_CLASSES,
 				["g"] = {
 					i(183421, {	-- Stone Legion Sabatons
 						["cost"] = {

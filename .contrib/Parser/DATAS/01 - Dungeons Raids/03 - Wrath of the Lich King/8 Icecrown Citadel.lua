@@ -328,7 +328,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 						}),
 						i(50377, {	-- Ashen Band of Destruction
-							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
 						}),
 						i(52569, {	-- Ashen Band of Might
 							["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
@@ -337,7 +337,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 							["classes"] = { DRUID, HUNTER, ROGUE, SHAMAN, MONK, DEMONHUNTER },
 						}),
 						i(50378, {	-- Ashen Band of Wisdom
-							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
 						}),
 					},
 				}),
@@ -380,10 +380,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24815,	-- Choose Your Path
 					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, HONORED },	-- The Ashen Verdict
-					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
 					["groups"] = {
 						i(50384, {	-- Ashen Band of Greater Destruction
-							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
 						}),
 					},
 				}),
@@ -391,10 +391,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24828,	-- Path of Destruction [Honored]
 					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, REVERED },	-- The Ashen Verdict
-					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
 					["groups"] = {
 						i(50397, {	-- Ashen Band of Unmatched Destruction
-							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
 						}),
 					},
 				}),
@@ -402,10 +402,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24823,	-- Path of Destruction (Revered)
 					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, EXALTED },	-- The Ashen Verdict
-					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
 					["groups"] = {
 						i(50398, {	-- Ashen Band of Endless Destruction
-							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
 						}),
 					},
 				}),
@@ -482,10 +482,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24815,	-- Choose Your Path
 					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, HONORED },	-- The Ashen Verdict
-					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
 					["groups"] = {
 						i(50386, {	-- Ashen Band of Greater Wisdom
-							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
 						}),
 					},
 				}),
@@ -493,10 +493,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24825,	-- Path of Wisdom [Honored]
 					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, REVERED },	-- The Ashen Verdict
-					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
 					["groups"] = {
 						i(50399, {	-- Ashen Band of Unmatched Wisdom
-							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
 						}),
 					},
 				}),
@@ -504,10 +504,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 					["qg"] = 38316,	-- Ormus the Penitent
 					["sourceQuest"] = 24830,	-- Path of Wisdom [Revered]
 					["minReputation"] = { FACTION_THE_ASHEN_VERDICT, EXALTED },	-- The Ashen Verdict
-					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+					["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
 					["groups"] = {
 						i(50400, {	-- Ashen Band of Endless Wisdom
-							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK },
+							["classes"] = { PALADIN, MAGE, DRUID, PRIEST, SHAMAN, WARLOCK, MONK, EVOKER },
 						}),
 					},
 				}),

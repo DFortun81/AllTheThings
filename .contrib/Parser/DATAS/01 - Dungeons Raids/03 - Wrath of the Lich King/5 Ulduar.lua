@@ -144,14 +144,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 			}),
 			applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, n(QUALITY_LEGENDARY, {
 				["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
-				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
+				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
 				["title"] = "Val'anyr, Hammer of Ancient Kings",
 				["icon"] = "Interface\\Icons\\inv_mace_99",
 				["isRaid"] = true,
 				["groups"] = {
 					ach(3142, {	-- Val'anyr, Hammer of Ancient Kings
 						["provider"] = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
-						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
+						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
 					}),
 					q(13622, {	-- Ancient History
 						["provider"] = { "i", 45039 },	-- Shattered Fragments of Val'anyr
@@ -1272,14 +1272,14 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 					}),
 					applyclassicphase(WRATH_PHASE_TWO_HAMMERPRIO, n(QUALITY_LEGENDARY, {
 						["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses in 25-Man Ulduar. Hard modes have higher drop chances.",
-						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
+						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
 						["title"] = "Val'anyr, Hammer of Ancient Kings",
 						["icon"] = "Interface\\Icons\\inv_mace_99",
 						["isRaid"] = true,
 						["groups"] = {
 							ach(3142, {	-- Val'anyr, Hammer of Ancient Kings
 								["provider"] = { "i", 46017 },	-- Val'anyr, Hammer of Ancient Kings
-								["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID },
+								["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
 							}),
 							q(13622, {	-- Ancient History
 								["provider"] = { "i", 45039 },	-- Shattered Fragments of Val'anyr
