@@ -731,7 +731,7 @@ if app.GameBuildVersion >= 60000 then
 			child:CreateTrackingCheckbox("RUNEFORGELEGENDARIES", "RuneforgeLegendaries", true)
 				:AlignAfter(accwideCheckboxRunecarvingPowers)
 
-			if app.GameBuildVersion >= 90000 then
+			if app.GameBuildVersion >= 100000 then
 				-- Mount Mods (Dragonflight+)
 				local accwideCheckboxMountMods =
 				child:CreateForcedAccountWideCheckbox()

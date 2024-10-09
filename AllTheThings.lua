@@ -7768,9 +7768,6 @@ function app:GetDataCache()
 				icon = app.asset("Interface_Vendor")
 			}),
 
-			-- Mount Mods (TODO)
-			-- app.CreateDynamicHeader("mmID", SimpleNPCGroup(app.HeaderConstants.DRA)),
-
 			-- Factions
 			app.CreateDynamicHeaderByValue("factionID", {
 				dynamic_withsubgroups = true,
@@ -7805,6 +7802,9 @@ function app:GetDataCache()
 				name = MOUNTS,
 				icon = app.asset("Category_Mounts")
 			}),
+
+			-- Mount Mods
+			app.CreateDynamicHeader("mountmodID", SimpleNPCGroup(app.HeaderConstants.MOUNT_MODS)),
 
 			-- Professions
 			app.CreateDynamicHeaderByValue("professionID", {
@@ -9164,7 +9164,7 @@ customWindowUpdates.awp = function(self, force)	-- TODO: Change this to remember
 
 	-- If no expansion was found, print an error message
 	if foundExpansion == false then
-		app.print("Unknown expansion shortcut")
+		app.print("Unknown expansion shortcut.")
 		self:Hide();
 	elseif not self.initialized then
 		if not app:GetDataCache() then	-- This module requires a valid data cache to function correctly.
