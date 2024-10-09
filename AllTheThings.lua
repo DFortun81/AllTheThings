@@ -12700,7 +12700,7 @@ local function InitDataCoroutine()
 	-- Wait for the Data Cache to return something.
 	while not app:GetDataCache() do yield(); end
 	-- Wait for the app to finish OnStartup event, somehow this can trigger out of order on some clients
-	while not app.OnStartupDone do yield(); end
+	while app.Wait_OnStartupDone do yield(); end
 
 	local accountWideData = LocalizeGlobalIfAllowed("ATTAccountWideData");
 	local characterData = LocalizeGlobalIfAllowed("ATTCharacterData");
@@ -13005,6 +13005,7 @@ app.AddEventRegistration("HEIRLOOMS_UPDATED", function(itemID, kind, ...)
 	end
 end)
 
-app.AddEventHandler("OnStartupDone", function() app.OnStartupDone = true end)
+app.Wait_OnStartupDone = true
+app.AddEventHandler("OnStartupDone", function() app.Wait_OnStartupDone = nil end)
 
 -- app.PrintMemoryUsage("AllTheThings.EOF");
