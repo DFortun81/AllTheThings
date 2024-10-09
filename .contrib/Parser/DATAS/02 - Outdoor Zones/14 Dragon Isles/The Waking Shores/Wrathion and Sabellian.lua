@@ -607,7 +607,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									i(191816),	-- Sandshaped Dracthyr Battlegear Leggings
 									i(191817),	-- Sandshaped Dracthyr Battlegear Monnion
 									i(200968),	-- Sandshaped Winglord's Drape
-								}, --TODO iensemble does not return any Sandshaped items
+								}, --TODO: iensemble does not return any Sandshaped items
 							}),
 						}, {	-- Ally --
 							i(200930, {	-- Obsidian Proto-Whelp (PET!)
@@ -771,7 +771,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 									i(191816),	-- Sandshaped Dracthyr Battlegear Leggings
 									i(191817),	-- Sandshaped Dracthyr Battlegear Monnion
 									i(200968),	-- Sandshaped Winglord's Drape
-								}, --TODO iensemble does not return any Sandshaped items
+								}, --TODO: iensemble does not return any Sandshaped items
 							}),
 							i(200640, {	-- Obsidian Egg Clutch (TOY!)
 								["cost"] = {
@@ -1028,6 +1028,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 				q(66802),	-- Triggered when choosing Wrathion in Allegiance To One (66419) -- triggered for Wrathion only
 				q(67168),	-- Triggered with completion of 'Dragon Eyes' (questID67051) (spellID 377997)
 				q(72378, {["timeline"] = {ADDED_10_0_5}}),	-- Triggered when refusing to activate the Wrathion and Sabellian skip for alts
+				q(72112),	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
 			}),
 		}),
 	}),

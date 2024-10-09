@@ -844,7 +844,6 @@ q(66309),	-- Ensemble: Dark Ranger's Attire
 
 q(76018),	-- Ensemble: Azure Renewal Finery
 q(76038),	-- Ensemble: Black Dragonflight's Vestments
-q(72112),	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
 q(72115),	-- Ensemble: Sabellian's Battlegear Cloth Armor
 
 -- Time Rifts

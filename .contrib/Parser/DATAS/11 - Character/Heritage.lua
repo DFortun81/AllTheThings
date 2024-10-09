@@ -254,7 +254,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 						i(211312),	-- True Iron Cleats of Lost Embaari
 						i(211310),	-- True Iron Helm of Lost Embaari
 					}),
-				}, --TODO iensemble returns fewer items than listed here
+				}, --TODO: iensemble returns fewer items than listed here
 			}),
 		},
 	}));
