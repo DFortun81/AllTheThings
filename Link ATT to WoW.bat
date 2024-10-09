@@ -32,6 +32,12 @@ if exist "%~1\" (
 		rmdir /s /q "%~1\Interface\AddOns\AllTheThings"
 	)
 	if NOT exist "%~1\Interface\AddOns\AllTheThings" (
+		if NOT exist "%~1\Interface" (
+			mkdir "%~1\Interface"
+		)
+		if NOT exist "%~1\Interface\AddOns" (
+			mkdir "%~1\Interface\AddOns"
+		)
 		mklink /J "%~1\Interface\AddOns\AllTheThings" "%cd%"
 	)
 )
