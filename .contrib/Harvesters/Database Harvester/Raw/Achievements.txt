@@ -15367,6 +15367,9 @@
 40118@@@Harbinger of the Runed
 40910@@@Successfully Stress Test CN Realms
 40939@@@Harbinger of the Gilded
+11.0.2.56819
+41044@@@Forged Weapons of Conquest
+41085@@@Worm Theory (copy)
 11.0.5.56487
 40235@@@Forged Marshal: The War Within Season 1
 40661@@@Zoomies!

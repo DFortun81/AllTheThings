@@ -963,6 +963,12 @@ root(ROOTS.Unsorted, {
 			i(226275),	-- Grizzly Hills Granola
 			i(231019),	-- Hearthstone Invitation Letter
 			i(232492),	-- Gleaming Shatter
+			--
+			i(223741),	-- Bluesberry Blast
+			i(223742),	-- Mangoro Madness
+			i(223743),	-- Orange O-pocalypse
+			i(223744),	-- Oyster Outbreak
+			i(232575),	-- Tome of Town Portal
 		})),
 		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_0 } }, {
 			n(ARMOR, {
