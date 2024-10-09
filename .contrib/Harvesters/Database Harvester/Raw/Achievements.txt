@@ -3759,11 +3759,12 @@
 4945@@@Guild Reputation: Honored
 4946@@@Guild Reputation: Revered
 5492@@@Guild Reputation: Exalted
-4.4.1.56464
+4.4.0.56713
 40968@@@Rival: Season 9
 40969@@@Gladiator: Season 9
 40970@@@Duelist: Season 9
 40971@@@Challenger: Season 9
+4.4.1.56464
 5.0.3.15882
 110@@@Lich King 5-player boss defeated the most
 131@@@Journeyman Medic
