@@ -513,16 +513,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					}),
 				},
 			}),
-			--Raid vendor gear for curio (move it if needed)
-			n(227003, {	-- Kir'xal
-				["coord"] = { 56.7, 46.1, NERUBAR_LOWER },
-				["g"] = {
-					--symlink?
-					--everything for 1x
-					i(225634),	-- Web-Wrapped Curio
-				},
-			}),
-			--Seasonal gear vendor for Mark of the Spelunker Supreme
+			--Seasonal gear vendor for Mark of the Spelunker Supreme (TODO: move & symlink to M+ category)
 			--raid, hero gear
 			n(224270, {	-- Ip'xal
 				["coord"] = { 57.0, 45.8, NERUBAR_LOWER },
