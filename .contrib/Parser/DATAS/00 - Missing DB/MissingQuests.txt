@@ -3,7 +3,6 @@ q(614),	-- The Captain's Chest	 CLASSIC:The Captain's Chest	 TBC:The Captain's C
 q(615),	-- The Captain's Cutlass	 CLASSIC:The Captain's Cutlass	 TBC:The Captain's Cutlass	 WOTLK:The Captain's Cutlass	 CATA:The Captain's Cutlass
 q(618),	-- Facing Negolash	 CLASSIC:Facing Negolash	 TBC:Facing Negolash	 WOTLK:Facing Negolash	 CATA:Facing Negolash
 q(620),	-- The Monogrammed Sash	 CLASSIC:The Monogrammed Sash	 TBC:The Monogrammed Sash	 WOTLK:The Monogrammed Sash	 CATA:The Monogrammed Sash
-q(5629),	-- Returning Home	 CLASSIC:Returning Home	 TBC:Returning Home	 WOTLK:Returning Home	 CATA:Returning Home
 q(7487),	-- Attunement to the Core	 CLASSIC:Attunement to the Core	 TBC:Attunement to the Core	 WOTLK:Attunement to the Core	 CATA:Attunement to the Core
 q(9378),	-- DND FLAG The Dread Citadel - Naxxramas
 1.13.2.30073
@@ -1433,7 +1432,6 @@ q(26853),	-- The Middle Fragment
 q(26859),	-- Searching for the Lost Satchel
 q(26877),	-- The Fragment's Inside
 q(26880),	-- Gilneas City Unphase Cheat
-q(26891),	-- Amongst the Ruins
 q(26900),	-- Agamaggan
 q(26904),	-- Corruption
 q(26940),	-- Frost Nova
@@ -2318,7 +2316,6 @@ q(78243),	--
 q(78351),	-- [DNT] DEPRECATED
 q(78556),	--
 q(78603),	--
-q(78604),	--
 q(78605),	--
 q(78673),	--
 q(78698),	--
@@ -2462,6 +2459,7 @@ q(80397),	--
 q(80400),	-- Item Collection [DNT]
 q(80403),	--
 q(80419),	--
+q(80486),	--
 q(80491),	--
 q(80493),	--
 q(80495),	--
@@ -2476,10 +2474,7 @@ q(80537),	--
 q(80549),	--
 q(80561),	--
 q(80575),	--
-q(80579),	--
-q(80580),	--
 q(80581),	--
-q(80584),	--
 q(80585),	--
 q(80588),	--
 q(80589),	--
@@ -2537,11 +2532,8 @@ q(80790),	--
 q(80809),	--
 q(80844),	--
 q(80845),	--
-q(80856),	--
 q(80857),	--
 q(80858),	--
-q(80864),	--
-q(80865),	--
 q(80874),	--
 q(80875),	--
 q(80876),	--
@@ -2674,11 +2666,8 @@ q(81335),	--
 q(81336),	--
 q(81337),	--
 q(81338),	--
-q(81339),	--
-q(81340),	--
 q(81348),	--
 q(81362),	--
-q(81363),	--
 q(81367),	--
 q(81368),	--
 q(81369),	--
@@ -2735,14 +2724,15 @@ q(81436),	--
 q(81437),	--
 q(81438),	--
 q(81439),	--
-q(81441),	--
 q(81442),	--
 q(81443),	--
 q(81444),	--
 q(81454),	--
+q(81455),	--
 q(81466),	--
 q(81474),	--
 q(81486),	-- The Upper Hand
+q(81515),	--
 q(81516),	--
 q(81538),	--
 q(81554),	--
@@ -2764,6 +2754,7 @@ q(81647),	--
 q(81671),	--
 q(81684),	--
 q(81696),	--
+q(81698),	--
 q(81711),	--
 q(81714),	--
 q(81715),	--
@@ -2772,7 +2763,6 @@ q(81718),	--
 q(81719),	--
 q(81720),	-- Report to the Trading Post (D 6)
 q(81721),	-- Report to the Trading Post
-q(81724),	--
 q(81725),	--
 q(81726),	--
 q(81760),	--
@@ -2823,16 +2813,10 @@ q(82350),	-- [DNT] Supplies Reward
 q(82351),	-- [DNT] Delve Key Reward
 q(82352),	-- [DNT] Supplies Reward
 q(82357),	-- [DNT] Supplies Reward
-q(82359),	-- A Shining Bundle of Goods
 q(82360),	-- [DNT] Delve Key Reward
-q(82361),	-- A Small Bundle of Goods
 q(82362),	-- For What Glimmers in Stone
-q(82365),	-- A Crafter's Delight
 q(82368),	-- DO NOT USE
 q(82380),	-- DO NOT USE
-q(82381),	-- A Scintillating Candle
-q(82382),	-- Take Really Big Candle!
-q(82384),	--
 q(82386),	-- [DNT] Valorstones Reward
 q(82388),	--
 q(82389),	-- [DNT] Delve Key Reward
@@ -2842,7 +2826,6 @@ q(82399),	-- [DNT] Delve Key Reward
 q(82401),	-- [DNT] Delve Key Reward
 q(82402),	-- [DNT] Supplies Reward
 q(82405),	-- DO NOT USE
-q(82407),	-- For What Glimmers in the Deep
 q(82408),	-- DO NOT USE
 q(82416),	--
 q(82419),	-- DO NOT USE
@@ -2901,8 +2884,6 @@ q(82725),	--
 q(82726),	--
 q(82734),	--
 q(82735),	--
-q(82739),	--
-q(82740),	-- Twilight Scheming
 q(82744),	--
 q(82745),	--
 q(82750),	--
@@ -2917,10 +2898,6 @@ q(82765),	--
 q(82766),	--
 11.0.0.54361
 q(82769),	--
-q(82770),	--
-q(82771),	-- Heritage of the Earthen
-q(82788),	--
-q(82789),	--
 q(82790),	--
 q(82791),	--
 q(82811),	--
@@ -2931,10 +2908,7 @@ q(82839),	--
 q(82840),	--
 q(82841),	--
 q(82842),	-- Test Quest - Combined First time Rewards (DNT)
-q(82854),	--
-q(82857),	--
 q(82860),	--
-q(82861),	--
 q(82863),	--
 q(82864),	--
 q(82865),	--
@@ -2958,8 +2932,6 @@ q(82891),	--
 q(82892),	--
 q(82893),	--
 q(82917),	--
-q(82958),	-- Little Blessings
-q(82992),	-- Stormcharged Goods
 q(82997),	--
 q(83029),	-- Read-Only Memories
 q(83031),	-- Survivor's Guilt
@@ -2974,21 +2946,14 @@ q(83041),	--
 q(83042),	--
 q(83044),	--
 q(83045),	--
-q(83046),	-- Carved Crests
 11.0.0.54521
 q(83085),	-- DEPRECATED
 q(83086),	-- [DNT] Local 1 - Q8 - Breadcrumb
 q(83095),	--
 q(83107),	--
-q(83132),	--
 q(83133),	--
 q(83135),	--
 q(83136),	--
-q(83156),	--
-q(83157),	--
-q(83158),	--
-q(83180),	--
-q(83193),	--
 11.0.0.54605
 q(83209),	--
 q(83210),	--
@@ -3013,9 +2978,7 @@ q(83250),	--
 q(83327),	--
 11.0.0.54675
 q(83340),	--
-q(83345),	-- A Call to Battle
 q(83360),	--
-q(83364),	-- A Savage Path Through Time
 q(83367),	--
 q(83368),	--
 q(83369),	--
@@ -3024,10 +2987,8 @@ q(83371),	--
 q(83372),	--
 q(83373),	--
 q(83374),	--
-q(83399),	--
 q(83461),	--
 q(83464),	--
-q(83468),	--
 q(83478),	--
 q(83498),	--
 q(83499),	--
@@ -3128,31 +3089,8 @@ q(83765),	--
 q(83772),	--
 q(83773),	--
 q(83774),	--
-q(83779),	--
-q(83780),	--
-q(83781),	--
-q(83782),	--
-q(83783),	--
-q(83784),	--
-q(83785),	--
-q(83786),	--
-q(83787),	--
-q(83788),	--
-q(83789),	--
 q(83791),	--
 q(83792),	--
-q(83796),	--
-q(83797),	--
-q(83798),	--
-q(83799),	--
-q(83800),	--
-q(83801),	--
-q(83802),	--
-q(83803),	--
-q(83804),	--
-q(83805),	--
-q(83806),	--
-q(83807),	--
 q(83810),	--
 q(83811),	--
 q(83812),	--
@@ -3167,8 +3105,6 @@ q(83820),	--
 q(83821),	--
 q(83826),	--
 11.0.0.55000
-q(83857),	--
-q(83989),	--
 q(84000),	--
 q(84002),	--
 q(84003),	--
@@ -3183,9 +3119,6 @@ q(84134),	-- Enchanting Services Requested
 q(84145),	--
 q(84253),	-- [depreciated] Blacksmithing Orders Requested
 q(84255),	--
-q(84264),	--
-q(84266),	--
-q(84268),	--
 q(84270),	--
 q(84272),	--
 q(84275),	--
@@ -3222,25 +3155,18 @@ q(84584),	--
 q(84586),	--
 q(84587),	--
 q(84589),	--
-q(84591),	--
 q(84592),	--
 q(84593),	--
-q(84594),	--
 q(84628),	--
 q(84686),	--
 q(84687),	--
 q(84688),	--
-q(84690),	--
-q(84691),	--
 q(84694),	--
 11.0.2.55665
-q(84776),	--
 q(84783),	--
 q(84785),	--
 11.0.2.55789
 q(84812),	--
-q(84817),	--
-q(84819),	--
 11.0.2.55959
 q(77416),	--
 11.0.2.56162
@@ -3249,12 +3175,6 @@ q(85158),	--
 q(85464),	--
 11.0.2.56380
 q(85530),	--
-11.0.2.56382
-q(85534),	-- The General's Cache	 PTR2:The General's Cache
-q(85542),	--
-q(85543),	--
-q(85544),	--
-q(85546),	--
 11.0.2.56421
 q(85584),	--
 q(85588),	--
@@ -3271,14 +3191,8 @@ q(85469),	--
 q(85719),	--
 q(85729),	--
 q(85731),	-- Tracking Quest	 PTR2:Tracking Quest
-q(85743),	--
-q(85746),	--
-q(85747),	--
 q(85748),	--
 q(85749),	--
-q(85750),	--
-q(85751),	--
-q(85752),	--
 11.0.5.56487
 q(82779),	--
 q(83161),	--
@@ -3472,7 +3386,6 @@ q(85591),	--
 q(85592),	--
 q(85593),	--
 q(85594),	--
-q(85661),	--
 11.0.5.56572
 q(80099),	--
 q(80100),	--
@@ -3503,3 +3416,28 @@ q(85723),	--
 11.0.5.56646
 q(85779),	--
 q(85791),	--
+11.0.5.56749
+q(85828),	--
+q(85833),	--
+q(85841),	--
+q(85842),	--
+q(85843),	--
+q(85844),	--
+q(85845),	--
+q(85846),	--
+q(85847),	--
+q(85848),	--
+q(85849),	--
+q(85850),	--
+q(85851),	--
+q(85852),	--
+q(85853),	--
+q(85870),	--
+q(85872),	--
+q(85912),	--
+11.0.5.56865
+q(85940),	--
+q(85947),	--
+q(85948),	--
+q(85949),	--
+q(86157),	--

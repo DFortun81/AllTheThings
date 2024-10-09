@@ -471,7 +471,6 @@ i(2673),	-- te Meat \\ Coyote Meat
 i(2674),	-- ler Meat \\ Crawler Meat
 i(2675),	-- ler Claw \\ Crawler Claw
 i(2677),	-- Ribs \\ Boar Ribs
-i(2678),	-- Spices \\ Mild Spices
 i(2688),	-- Squirrel Nut
 i(2692),	-- Spices \\ Hot Spices
 i(2693),	-- OLD Stormwind Seasoning Salts
@@ -2538,8 +2537,8 @@ i(13733),	-- [PH] Rising Dawn Fists
 i(13734),	-- [PH] Rising Dawn Gauntlets
 i(13735),	-- [PH] Shining Dawn Mitts
 i(13752),	-- bound Keepsake \\ Soulbound Keepsake
-i(13755),	-- er Squid \\ Winter Squid
 i(13757),	-- tning Eel \\ Lightning Eel
+i(13760),	-- Sunscale Salmon \\ Raw Sunscale Salmon
 i(13761),	-- en Eggs \\ Frozen Eggs
 i(13774),	-- [PH] Cloth Leggings of the Brilliant Dawn
 i(13786),	-- [PH] Brilliant Dawn Hat
@@ -5546,16 +5545,6 @@ i(229009),	-- Formula: Enchant Cloak - Greater Nature Resistance
 i(229055),	-- Frayed Aranasi Silk
 i(229056),	-- Pumice Chunk
 i(229057),	-- Impounded Goods
-i(229372),	-- Gutgore Ripper
-i(229373),	-- Faithbringer
-i(229374),	-- Fist of the Firesworn
-i(229376),	-- Sorcerous Dagger
-i(229377),	-- Magmadar's Left Claw
-i(229378),	-- Magmadar's Right Claw
-i(229379),	-- Eskhandar's Right Claw
-i(229380),	-- Shadowstrike
-i(229381),	-- Thunderstrike
-i(229382),	-- Hyperthermically Insulated Lava Dredger
 1.15.4.56400
 i(220610),	-- Rune of Mental Dexterity
 i(220612),	-- Rune of Tidal Waves
@@ -5564,11 +5553,6 @@ i(220614),	-- Rune of Static Shock
 i(220616),	-- Rune of Overcharged
 i(220617),	-- Rune of Pandemic
 i(220618),	-- Rune of Immolation Aura
-i(224122),	-- Dream Eater
-i(224279),	-- Terrestris
-i(224280),	-- Suzerain, Defender of the Dragonflights
-i(224281),	-- Gla'sir
-i(224282),	-- Rae'lar
 i(225686),	-- Rune of Decimation
 i(225687),	-- Rune of Infernal Armor
 i(225688),	-- Rune of Mark of Chaos
@@ -5579,144 +5563,49 @@ i(229352),	-- Intelligence Findings
 i(229362),	-- Storehouse Key
 i(229415),	-- Survival Supplies
 i(229416),	-- Warm Fur
-i(229749),	-- Truthbearer
-i(229806),	-- Truthbearer
 i(229894),	-- Dream Emerald
 i(229897),	-- Scroll: Create Signet of Beckoning
 i(229906),	-- Tarnished Bronze Scale
-i(229909),	-- Staff of Order
-i(229910),	-- Scythe of Chaos
 i(229911),	-- Caius' Dream Eater
 i(229964),	-- Demon Lord's Hoof
 i(229965),	-- The Eye of Az'olgothal
 i(229966),	-- Torque of the Silver Hand
-i(229971),	-- Staff of Inferno
-i(229972),	-- Staff of Rime
-i(230003),	-- Hammer of the Lightbringer
 i(230018),	-- Mannoroc Orb Fragments
-i(230224),	-- Thunderfury, Blessed Blade of the Windseeker
 i(230237),	-- Arcane Infused Gem
 i(230238),	-- The Black Book
-i(230239),	-- Gloves of Rapid Evolution
-i(230240),	-- Mantle of the Blackwing Cabal
-i(230241),	-- Spineshatter
-i(230242),	-- The Untamed Blade
 i(230243),	-- Mind Quickening Gem
 i(230244),	-- Shapeshifter's Sigil
 i(230245),	-- Pendant of the Fallen Dragon
-i(230246),	-- Helm of Endless Rage
-i(230247),	-- Dragonfang Blade
-i(230248),	-- Red Dragonscale Protector
 i(230249),	-- Lifegiving Gem
 i(230250),	-- Venomous Totem
-i(230251),	-- Black Brood Pauldrons
-i(230252),	-- Bracers of Arcane Accuracy
-i(230253),	-- Heartstriker
-i(230254),	-- Maladath, Runed Blade of the Black Flight
-i(230255),	-- Taut Dragonhide Belt
-i(230256),	-- Drake Talon Pauldrons
 i(230257),	-- Ring of Blackrock
 i(230269),	-- Rejuvenating Gem
-i(230270),	-- Shadow Wing Focus Staff
-i(230271),	-- Drake Talon Cleaver
 i(230272),	-- Scrolls of Blinding Light
 i(230273),	-- Natural Alignment Crystal
-i(230274),	-- Black Ash Robe
-i(230275),	-- Firemaw's Clutch
-i(230276),	-- Claw of the Black Drake
-i(230277),	-- Cloak of Firemaw
-i(230278),	-- Legguards of the Fallen Crusader
-i(230279),	-- Primalist's Linked Legguards
 i(230280),	-- Aegis of Preservation
 i(230281),	-- Band of Forced Concentration
 i(230282),	-- Drake Fang Talisman
-i(230723),	-- Ebony Flame Gloves
-i(230725),	-- Malfurion's Blessed Bulwark
-i(230726),	-- Dragonbreath Hand Cannon
-i(230733),	-- Shroud of Pure Thought
 i(230734),	-- Circle of Applied Force
-i(230735),	-- Emberweave Leggings
 i(230736),	-- Styleen's Impeding Scarab
-i(230737),	-- Dragon's Touch
-i(230738),	-- Herald of Woe
-i(230739),	-- Angelista's Grasp
-i(230740),	-- Taut Dragonhide Shoulderpads
-i(230741),	-- Chromatic Boots
-i(230742),	-- Taut Dragonhide Gloves
-i(230743),	-- Shimmering Geta
-i(230744),	-- Elementium Threaded Cloak
-i(230745),	-- Girdle of the Fallen Crusader
-i(230746),	-- Empowered Leggings
-i(230747),	-- Chromatically Tempered Sword
-i(230751),	-- Ninja Obi
-i(230794),	-- Claw of Chromaggus
-i(230800),	-- Primalist's Linked Waistguard
-i(230801),	-- Ashjre'thul, Crossbow of Smiting
-i(230802),	-- Elementium Reinforced Bulwark
-i(230804),	-- Cloak of the Brood Lord
-i(230805),	-- Boots of the Shadow Flame
-i(230806),	-- Therazane's Link
 i(230808),	-- Archimtiros' Ring of Reckoning
 i(230810),	-- Neltharion's Tear
 i(230811),	-- Pure Elementium Band
-i(230812),	-- Mish'undare, Circlet of the Mind Flayer
-i(230813),	-- Staff of the Shadow Flame
-i(230818),	-- Ashkandi, Greatsword of the Brotherhood
-i(230837),	-- Crul'shorukh, Edge of Chaos
-i(230838),	-- Lok'amir il Romathis
 i(230839),	-- Master Dragonslayer's Ring
 i(230840),	-- Master Dragonslayer's Medallion
-i(230841),	-- Master Dragonslayer's Orb
-i(230842),	-- Cloak of Draconic Might
-i(230843),	-- Boots of Pure Thought
-i(230844),	-- Draconic Maul
-i(230845),	-- Doom's Edge
 i(230846),	-- Band of Dark Dominion
-i(230847),	-- Essence Gatherer
-i(230848),	-- Interlaced Shadow Jerkin
-i(230849),	-- Ringo's Blizzard Boots
 i(230854),	-- Band of Servitude
 i(230855),	-- Seal of the Gurubashi Berserker
-i(230856),	-- Belt of Untapped Power
-i(230857),	-- Blooddrenched Mask
-i(230858),	-- Cloak of the Hakkari Worshipers
-i(230859),	-- Gloves of the Tormented
-i(230860),	-- Might of the Tribe
-i(230861),	-- Sacrificial Gauntlets
-i(230862),	-- Zulian Headdress
-i(230863),	-- Zulian Scepter of Rites
-i(230864),	-- Runed Bloodstained Hauberk
-i(230865),	-- Fang of Venoxis
-i(230866),	-- Blooddrenched Footpads
 i(230867),	-- Zanzil's Band
-i(230868),	-- Zulian Stone Axe
 i(230903),	-- Scroll: Essence of Fire
 i(230904),	-- Scroll: SEENECS FO RIEF
 i(230908),	-- Imbued Essence of Fire
 i(230909),	-- Depleted Essence of Fire
-i(230911),	-- Jeklik's Crusher
-i(230912),	-- Animist's Spaulders
 i(230913),	-- Jeklik's Opaline Talisman
-i(230914),	-- Peacekeeper Boots
 i(230915),	-- Primalist's Band
-i(230916),	-- Seafury Boots
-i(230917),	-- Flowing Ritual Robes
-i(230918),	-- Mar'li's Touch
-i(230919),	-- Bloodstained Greaves
 i(230920),	-- Mar'li's Eye
 i(230921),	-- Band of Jin
 i(230922),	-- Talisman of Protection
-i(230923),	-- Betrayer's Boots
-i(230925),	-- Thekal's Grasp
-i(230926),	-- Peacekeeper Leggings
-i(230927),	-- Ritualistic Legguards
-i(230928),	-- Seafury Leggings
 i(230929),	-- Seal of Jin
-i(230930),	-- Zulian Slicer
-i(230934),	-- Arlokk's Grasp
-i(230939),	-- Will of Arlokk
-i(230941),	-- Arlokk's Hoodoo Stick
-i(230942),	-- Bloodsoaked Greaves
 i(230943),	-- Overlord's Onyx Band
 i(230944),	-- Panther Hide Sack
 i(230946),	-- Scroll: SEENECS FO ROFTS
@@ -5724,226 +5613,11 @@ i(230947),	-- Scroll: Essence of Frost
 i(230948),	-- Imbued Essence of Frost
 i(230949),	-- Depleted Essence of Frost
 i(230984),	-- Incomplete Staff of Order
-i(230989),	-- Bloodlord's Defender
-i(230991),	-- Halberd of Smiting
-i(230992),	-- Warblade of the Hakkari
-i(230993),	-- Mandokir's Sting
-i(230994),	-- Animist's Leggings
-i(230995),	-- Blooddrenched Grips
-i(230996),	-- Bloodsoaked Pauldrons
-i(230997),	-- Bloodtinged Kilt
-i(230998),	-- Hakkari Loa Cloak
 i(230999),	-- Overlord's Crimson Band
 i(231000),	-- Primalist's Seal
 i(231001),	-- Zanzil's Seal
-i(231002),	-- Jin'do's Hexxer
 i(231003),	-- Jin'do's Evil Eye
-i(231004),	-- Jin'do's Judgement
-i(231005),	-- Jin'do's Bag of Whammies
-i(231006),	-- Animist's Boots
-i(231007),	-- Bloodstained Coif
-i(231008),	-- Bloodstained Legplates
-i(231009),	-- Blooddrenched Leggings
-i(231010),	-- Bloodsoaked Gauntlets
-i(231011),	-- Bloodtinged Gloves
-i(231012),	-- Overlord's Embrace
-i(231013),	-- The Hexxer's Cover
-i(231014),	-- Lizardscale Eyepatch
-i(231015),	-- Twill Mask
-i(231016),	-- Nat Pagle's Fish Terminator
-i(231023),	-- Wristguards of Wrath
-i(231024),	-- Waistguard of Wrath
-i(231025),	-- Pauldrons of Wrath
-i(231026),	-- Legguards of Wrath
-i(231027),	-- Faceguard of Wrath
-i(231028),	-- Handguards of Wrath
-i(231029),	-- Sabatons of Wrath
-i(231030),	-- Chestguard of Wrath
-i(231031),	-- Bracers of Wrath
-i(231032),	-- Belt of Wrath
-i(231033),	-- Shoulders of Wrath
-i(231034),	-- Legplates of Wrath
-i(231035),	-- Helm of Wrath
-i(231036),	-- Gauntlets of Wrath
-i(231037),	-- Greaves of Wrath
-i(231038),	-- Breastplate of Wrath
-i(231039),	-- Bloodfang Spaulders
-i(231040),	-- Bloodfang Chestpiece
-i(231041),	-- Bloodfang Boots
-i(231042),	-- Bloodfang Gloves
-i(231043),	-- Bloodfang Hood
-i(231044),	-- Bloodfang Pants
-i(231045),	-- Bloodfang Belt
-i(231046),	-- Bloodfang Bracers
-i(231047),	-- Bloodfang Shoulderpads
-i(231048),	-- Bloodfang Chestguard
-i(231049),	-- Bloodfang Footpads
-i(231050),	-- Bloodfang Handguards
-i(231051),	-- Bloodfang Cowl
-i(231052),	-- Bloodfang Legguards
-i(231053),	-- Bloodfang Waistguard
-i(231054),	-- Bloodfang Wristguards
-i(231055),	-- Dragonstalker's Bracers
-i(231056),	-- Dragonstalker's Belt
-i(231057),	-- Dragonstalker's Spaulders
-i(231058),	-- Dragonstalker's Legguards
-i(231059),	-- Dragonstalker's Helm
-i(231060),	-- Dragonstalker's Gauntlets
-i(231061),	-- Dragonstalker's Greaves
-i(231062),	-- Dragonstalker's Breastplate
-i(231063),	-- Dragonstalker's Vambraces
-i(231065),	-- Dragonstalker's Girdle
-i(231066),	-- Dragonstalker's Pauldrons
-i(231067),	-- Dragonstalker's Pants
-i(231068),	-- Dragonstalker's Skullcap
-i(231069),	-- Dragonstalker's Grips
-i(231070),	-- Dragonstalker's Sabatons
-i(231071),	-- Dragonstalker's Armor
-i(231072),	-- Nemesis Boots
-i(231073),	-- Nemesis Gloves
-i(231074),	-- Nemesis Skullcap
-i(231075),	-- Nemesis Leggings
-i(231076),	-- Nemesis Robes
-i(231077),	-- Nemesis Spaulders
-i(231078),	-- Nemesis Belt
-i(231079),	-- Nemesis Bracers
-i(231090),	-- Nemesis Treads
-i(231091),	-- Nemesis Handguards
-i(231092),	-- Nemesis Cowl
-i(231093),	-- Nemesis Pants
-i(231095),	-- Nemesis Garb
-i(231096),	-- Nemesis Shoulderpads
-i(231097),	-- Nemesis Cord
-i(231098),	-- Nemesis Wraps
-i(231100),	-- Netherwind Belt
-i(231101),	-- Netherwind Boots
-i(231102),	-- Netherwind Gloves
-i(231103),	-- Netherwind Crown
-i(231104),	-- Netherwind Pants
-i(231105),	-- Netherwind Robes
-i(231106),	-- Netherwind Mantle
-i(231107),	-- Netherwind Bindings
-i(231108),	-- Netherwind Sash
-i(231109),	-- Netherwind Slippers
-i(231110),	-- Netherwind Mitts
-i(231111),	-- Netherwind Mask
-i(231112),	-- Netherwind Leggings
-i(231113),	-- Netherwind Vestments
-i(231114),	-- Netherwind Shoulders
-i(231115),	-- Netherwind Wraps
-i(231155),	-- Boots of Transcendence
-i(231156),	-- Handguards of Transcendence
-i(231157),	-- Halo of Transcendence
-i(231158),	-- Leggings of Transcendence
-i(231159),	-- Robes of Transcendence
-i(231160),	-- Pauldrons of Transcendence
-i(231161),	-- Belt of Transcendence
-i(231162),	-- Bindings of Transcendence
-i(231165),	-- Treads of Transcendence
-i(231166),	-- Gloves of Transcendence
-i(231167),	-- Crown of Transcendence
-i(231168),	-- Pants of Transcendence
-i(231169),	-- Garb of Transcendence
-i(231170),	-- Mantle of Transcendence
-i(231171),	-- Cord of Transcendence
-i(231172),	-- Bracers of Transcendence
-i(231174),	-- Judgement Bindings
-i(231175),	-- Judgement Belt
-i(231176),	-- Judgement Spaulders
-i(231177),	-- Judgement Legplates
-i(231178),	-- Judgement Crown
-i(231179),	-- Judgement Gauntlets
-i(231180),	-- Judgement Sabatons
-i(231181),	-- Judgement Breastplate
-i(231182),	-- Judgement Vambraces
-i(231183),	-- Judgement Waistguard
-i(231184),	-- Judgement Pauldrons
-i(231185),	-- Judgement Legguards
-i(231186),	-- Judgement Great Helm
-i(231187),	-- Judgement Chestguard
-i(231188),	-- Judgement Handguards
-i(231189),	-- Judgement Greaves
-i(231190),	-- Judgement Bracers
-i(231191),	-- Judgement Girdle
-i(231192),	-- Judgement Mantle
-i(231193),	-- Judgement Plate Skirt
-i(231194),	-- Judgement Helm
-i(231195),	-- Judgement Gloves
-i(231196),	-- Judgement Treads
-i(231197),	-- Judgement Cuirass
-i(231198),	-- Gauntlets of Ten Storms
-i(231199),	-- Bracers of Ten Storms
-i(231200),	-- Belt of Ten Storms
-i(231201),	-- Epaulets of Ten Storms
-i(231202),	-- Legplates of Ten Storms
-i(231203),	-- Helmet of Ten Storms
-i(231204),	-- Greaves of Ten Storms
-i(231205),	-- Breastplate of Ten Storms
-i(231206),	-- Handguards of Ten Storms
-i(231207),	-- Wristguards of Ten Storms
-i(231208),	-- Waistguard of Ten Storms
-i(231209),	-- Pauldrons of Ten Storms
-i(231210),	-- Legguards of Ten Storms
-i(231211),	-- Faceguard of Ten Storms
-i(231212),	-- Sabatons of Ten Storms
-i(231213),	-- Chestguard of Ten Storms
-i(231214),	-- Gloves of Ten Storms
-i(231215),	-- Bindings of Ten Storms
-i(231216),	-- Cord of Ten Storms
-i(231217),	-- Mantle of Ten Storms
-i(231218),	-- Kilt of Ten Storms
-i(231219),	-- Headdress of Ten Storms
-i(231220),	-- Boots of Ten Storms
-i(231221),	-- Embrace of Ten Storms
-i(231222),	-- Grips of Ten Storms
-i(231223),	-- Vambraces of Ten Storms
-i(231224),	-- Girdle of Ten Storms
-i(231225),	-- Spaulders of Ten Storms
-i(231226),	-- Leggings of Ten Storms
-i(231227),	-- Crown of Ten Storms
-i(231228),	-- Treads of Ten Storms
-i(231229),	-- Armor of Ten Storms
-i(231230),	-- Stormrage Chestguard
-i(231231),	-- Stormrage Boots
-i(231232),	-- Stormrage Handguards
-i(231233),	-- Stormrage Cover
-i(231234),	-- Stormrage Legguards
-i(231235),	-- Stormrage Pauldrons
-i(231236),	-- Stormrage Belt
-i(231237),	-- Stormrage Bracers
-i(231238),	-- Stormrage Armor
-i(231239),	-- Stormrage Treads
-i(231240),	-- Stormrage Gauntlets
-i(231241),	-- Stormrage Headdress
-i(231242),	-- Stormrage Leggings
-i(231243),	-- Stormrage Spaulders
-i(231244),	-- Stormrage Waistguard
-i(231245),	-- Stormrage Wristguards
-i(231246),	-- Stormrage Leathers
-i(231247),	-- Stormrage Sandals
-i(231248),	-- Stormrage Mitts
-i(231249),	-- Stormrage Antlers
-i(231250),	-- Stormrage Kilt
-i(231251),	-- Stormrage Mantle
-i(231252),	-- Stormrage Cord
-i(231253),	-- Stormrage Bindings
-i(231254),	-- Stormrage Vest
-i(231255),	-- Stormrage Stompers
-i(231256),	-- Stormrage Grips
-i(231257),	-- Stormrage Cowl
-i(231258),	-- Stormrage Trousers
-i(231259),	-- Stormrage Shoulderpads
-i(231260),	-- Stormrage Sash
-i(231261),	-- Stormrage Wraps
 i(231271),	-- Nat Pagle's Broken Reel
-i(231272),	-- Tigule's Harpoon
-i(231273),	-- Gri'lek's Carver
-i(231274),	-- Gri'lek's Grinder
-i(231275),	-- Blazefury Retributer
-i(231276),	-- Thoughtblighter
-i(231277),	-- Pitchfork of Madness
-i(231278),	-- Hoodoo Hunting Bow
-i(231279),	-- Wushoolay's Poker
 i(231280),	-- Wushoolay's Charm of Nature
 i(231281),	-- Wushoolay's Charm of Spirits
 i(231282),	-- Hazza'rah's Charm of Chilled Magic
@@ -5953,58 +5627,19 @@ i(231285),	-- Gri'lek's Charm of Valor
 i(231286),	-- Gri'lek's Charm of Might
 i(231287),	-- Renataki's Charm of Trickery
 i(231288),	-- Renataki's Charm of Ravaging
-i(231289),	-- Aegis of the Blood God
-i(231293),	-- Ancient Hakkari Manslayer
-i(231296),	-- Bloodcaller
 i(231298),	-- Scroll of Lesser Spatial Mending
-i(231299),	-- Bloodsoaked Legplates
-i(231300),	-- Cloak of Consumption
-i(231301),	-- Fang of the Faceless
-i(231302),	-- Gurubashi Dwarf Destroyer
-i(231303),	-- Peacekeeper Gauntlets
 i(231304),	-- Scroll: SERELS PATALIS GNEMIND
-i(231305),	-- Seafury Gauntlets
 i(231306),	-- Soul Corrupter's Necklace
 i(231307),	-- The Eye of Hakkar
-i(231308),	-- Touch of Chaos
-i(231309),	-- Warblade of the Hakkari
-i(231315),	-- Zin'rokh, Destroyer of Worlds
 i(231316),	-- Pristine Enchanted South Seas Kelp
-i(231317),	-- Zandalar Haruspex's Tunic
-i(231318),	-- Zandalar Haruspex's Belt
-i(231319),	-- Zandalar Haruspex's Bracers
 i(231320),	-- Maelstrom's Wrath
-i(231321),	-- Zandalar Predator's Mantle
-i(231322),	-- Zandalar Predator's Belt
-i(231323),	-- Zandalar Predator's Bracers
 i(231324),	-- Jewel of Kajaro
-i(231325),	-- Zandalar Illusionist's Mantle
-i(231326),	-- Zandalar Illusionist's Wraps
-i(231327),	-- Zandalar Illusionist's Robe
 i(231328),	-- Hero's Brand
-i(231329),	-- Zandalar Freethinker's Breastplate
-i(231330),	-- Zandalar Freethinker's Belt
-i(231331),	-- Zandalar Freethinker's Armguards
 i(231332),	-- The All-Seeing Eye of Zuldazar
-i(231333),	-- Zandalar Confessor's Mantle
-i(231334),	-- Zandalar Confessor's Bindings
-i(231335),	-- Zandalar Confessor's Wraps
 i(231336),	-- Zandalarian Shadow Mastery Talisman
-i(231337),	-- Zandalar Madcap's Tunic
-i(231338),	-- Zandalar Madcap's Mantle
-i(231339),	-- Zandalar Madcap's Bracers
 i(231340),	-- Unmarred Vision of Voodress
-i(231341),	-- Zandalar Augur's Hauberk
-i(231342),	-- Zandalar Augur's Belt
-i(231343),	-- Zandalar Augur's Bracers
 i(231346),	-- Kezan's Unstoppable Taint
-i(231347),	-- Zandalar Demoniac's Wraps
-i(231348),	-- Zandalar Demoniac's Robe
-i(231349),	-- Zandalar Demoniac's Mantle
 i(231350),	-- Rage of Mugamba
-i(231351),	-- Zandalar Vindicator's Armguards
-i(231352),	-- Zandalar Vindicator's Belt
-i(231353),	-- Zandalar Vindicator's Breastplate
 i(231354),	-- Animist's Caress
 i(231355),	-- Animist's Balance
 i(231357),	-- Animist's Fury
@@ -6032,9 +5667,7 @@ i(231383),	-- Presence of Sight
 i(231384),	-- Falcon's Fury
 i(231385),	-- Simulacrum of the Dragon Soul
 i(231386),	-- Flawless Black Dragonscale
-i(231387),	-- Stormwrath, Sanctified Shortblade of the Galefinder
 i(231452),	-- Blood of the Lightbringer
-i(231460),	-- Planebreaker of Azgaloth
 i(231466),	-- Blackwing Warlock's Codex
 i(231509),	-- Cassandra's Tome
 i(231512),	-- Primal Hakkari Idol
@@ -6051,175 +5684,9 @@ i(231522),	-- Punctured Voodoo Doll
 i(231523),	-- Punctured Voodoo Doll
 i(231524),	-- Punctured Voodoo Doll
 i(231525),	-- Punctured Voodoo Doll
-i(231530),	-- Warlord's Plate Armor
-i(231531),	-- General's Plate Boots
-i(231532),	-- General's Plate Gauntlets
-i(231533),	-- General's Plate Leggings
-i(231534),	-- Warlord's Plate Shoulders
-i(231535),	-- Warlord's Plate Headpiece
-i(231536),	-- Field Marshal's Plate Armor
-i(231537),	-- Field Marshal's Plate Shoulderguards
-i(231538),	-- Field Marshal's Plate Helm
-i(231539),	-- Marshal's Plate Boots
-i(231540),	-- Marshal's Plate Legguards
-i(231541),	-- Marshal's Plate Gauntlets
-i(231543),	-- Field Marshal's Leather Chestpiece
-i(231544),	-- Marshal's Leather Handgrips
-i(231545),	-- Field Marshal's Leather Mask
-i(231546),	-- Marshal's Leather Footguards
-i(231547),	-- Field Marshal's Leather Epaulets
-i(231548),	-- Marshal's Leather Leggings
-i(231549),	-- Warlord's Leather Breastplate
-i(231551),	-- Warlord's Leather Spaulders
-i(231552),	-- General's Leather Treads
-i(231553),	-- Warlord's Leather Helm
-i(231554),	-- General's Leather Legguards
-i(231555),	-- General's Leather Mitts
-i(231557),	-- Field Marshal's Chain Pauldrons
-i(231558),	-- Marshal's Chain Legplates
-i(231560),	-- Marshal's Chain Grips
-i(231561),	-- Marshal's Chain Sabatons
-i(231562),	-- Field Marshal's Chain Greathelm
-i(231563),	-- Field Marshal's Chain Armor
-i(231564),	-- General's Chain Sabatons
-i(231565),	-- Warlord's Chain Pauldrons
-i(231566),	-- Warlord's Chain Armor
-i(231567),	-- General's Chain Legplates
-i(231568),	-- Warlord's Chain Greathelm
-i(231569),	-- General's Chain Grips
-i(231570),	-- General's Chain Greaves
-i(231571),	-- Warlord's Chain Helm
-i(231572),	-- Warlord's Chain Shoulders
-i(231573),	-- Warlord's Chain Hauberk
-i(231574),	-- General's Chain Legguards
-i(231575),	-- General's Chain Vices
-i(231576),	-- Field Marshal's Chain Shoulders
-i(231577),	-- Marshal's Chain Legguards
-i(231578),	-- Marshal's Chain Vices
-i(231579),	-- Marshal's Chain Greaves
-i(231580),	-- Field Marshal's Chain Helm
-i(231581),	-- Field Marshal's Chain Hauberk
-i(231582),	-- Field Marshal's Dreadweave Robe
-i(231583),	-- Field Marshal's Dreadweave Shoulders
-i(231584),	-- Field Marshal's Coronal
-i(231585),	-- Marshal's Dreadweave Boots
-i(231586),	-- Marshal's Dreadweave Gloves
-i(231587),	-- Marshal's Dreadweave Leggings
-i(231588),	-- General's Dreadweave Pants
-i(231589),	-- General's Dreadweave Gloves
-i(231590),	-- Warlord's Dreadweave Hood
-i(231591),	-- Warlord's Dreadweave Robe
-i(231592),	-- Warlord's Dreadweave Mantle
-i(231593),	-- General's Dreadweave Boots
-i(231594),	-- Warlord's Silk Amice
-i(231595),	-- General's Silk Trousers
-i(231596),	-- Warlord's Silk Raiment
-i(231597),	-- General's Silk Boots
-i(231598),	-- General's Silk Gloves
-i(231599),	-- General's Silk Gauntlets
-i(231600),	-- General's Silk Handwraps
-i(231601),	-- Warlord's Silk Cowl
-i(231602),	-- Field Marshal's Silk Spaulders
-i(231603),	-- Field Marshal's Silk Vestments
-i(231604),	-- Field Marshal's Coronet
-i(231605),	-- Marshal's Silk Leggings
-i(231606),	-- Marshal's Silk Footwraps
-i(231607),	-- Marshal's Silk Gloves
-i(231608),	-- Marshal's Silk Gauntlets
-i(231609),	-- Marshal's Silk Handwraps
-i(231610),	-- General's Satin Treads
-i(231611),	-- Warlord's Satin Epaulets
-i(231612),	-- Warlord's Satin Robes
-i(231613),	-- General's Satin Grips
-i(231614),	-- General's Satin Leggings
-i(231615),	-- Warlord's Satin Crown
-i(231616),	-- Field Marshal's Satin Crown
-i(231617),	-- Marshal's Satin Grips
-i(231618),	-- Field Marshal's Satin Robe
-i(231619),	-- Marshal's Satin Leggings
-i(231620),	-- Marshal's Satin Treads
-i(231621),	-- Field Marshal's Satin Epaulets
-i(231622),	-- Field Marshal's Satin Hood
-i(231623),	-- Marshal's Satin Handwraps
-i(231624),	-- Field Marshal's Satin Tunic
 i(231625),	-- Testament of Horn of Lordaeron
-i(231626),	-- Marshal's Satin Legguards
-i(231627),	-- Marshal's Satin Walkers
-i(231628),	-- Field Marshal's Satin Mantle
-i(231630),	-- General's Satin Walkers
-i(231631),	-- Warlord's Satin Mantle
-i(231632),	-- Warlord's Satin Tunic
-i(231633),	-- General's Satin Handwraps
-i(231634),	-- General's Satin Legguards
-i(231635),	-- Warlord's Satin Hood
-i(231639),	-- Marshal's Lamellar Legguards
-i(231640),	-- Field Marshal's Lamellar Helmet
-i(231641),	-- Field Marshal's Lamellar Chestplate
 i(231642),	-- Warden's Herb Bag
-i(231643),	-- Marshal's Lamellar Gloves
 i(231644),	-- Warden's Enchanting Bag
-i(231645),	-- Field Marshal's Lamellar Pauldrons
-i(231646),	-- Marshal's Lamellar Greaves
-i(231647),	-- Marshal's Lamellar Leggings
-i(231648),	-- Field Marshal's Lamellar Headguard
-i(231649),	-- Field Marshal's Lamellar Breastplate
-i(231650),	-- Marshal's Lamellar Gauntlets
-i(231651),	-- Field Marshal's Lamellar Shoulders
-i(231652),	-- Marshal's Lamellar Sabatons
-i(231653),	-- Warlord's Mail Hauberk
-i(231654),	-- Warlord's Mail Pauldrons
-i(231655),	-- General's Mail Vices
-i(231656),	-- General's Mail Greaves
-i(231657),	-- Warlord's Mail Headguard
-i(231658),	-- General's Mail Legguards
-i(231659),	-- Warlord's Mail Spaulders
-i(231660),	-- General's Mail Gauntlets
-i(231661),	-- General's Mail Sabatons
-i(231662),	-- Warlord's Mail Breastplate
-i(231663),	-- Warlord's Mail Helm
-i(231664),	-- General's Mail Leggings
-i(231665),	-- Warlord's Mail Epaulets
-i(231666),	-- General's Mail Gloves
-i(231667),	-- General's Mail Boots
-i(231668),	-- Warlord's Mail Chestguard
-i(231669),	-- Warlord's Mail Skullcap
-i(231670),	-- General's Mail Pants
-i(231671),	-- General's Dragonhide Greaves
-i(231672),	-- Warlord's Dragonhide Pauldrons
-i(231673),	-- General's Dragonhide Legguards
-i(231674),	-- Warlord's Dragonhide Tunic
-i(231675),	-- Warlord's Dragonhide Headdress
-i(231676),	-- General's Dragonhide Gauntlets
-i(231677),	-- General's Dragonhide Gloves
-i(231678),	-- Warlord's Dragonhide Helm
-i(231679),	-- Warlord's Dragonhide Armor
-i(231680),	-- General's Dragonhide Pants
-i(231681),	-- Warlord's Dragonhide Spaulders
-i(231682),	-- General's Dragonhide Boots
-i(231683),	-- General's Dragonhide Treads
-i(231684),	-- Warlord's Dragonhide Shoulders
-i(231685),	-- General's Dragonhide Leggings
-i(231686),	-- Warlord's Dragonhide Chestpiece
-i(231687),	-- Warlord's Dragonhide Headguard
-i(231688),	-- General's Dragonhide Grips
-i(231689),	-- Field Marshal's Dragonhide Headguard
-i(231690),	-- Field Marshal's Dragonhide Chestpiece
-i(231691),	-- Marshal's Dragonhide Leggings
-i(231692),	-- Marshal's Dragonhide Treads
-i(231693),	-- Field Marshal's Dragonhide Shoulders
-i(231694),	-- Marshal's Dragonhide Grips
-i(231695),	-- Field Marshal's Dragonhide Helm
-i(231696),	-- Field Marshal's Dragonhide Armor
-i(231697),	-- Marshal's Dragonhide Pants
-i(231698),	-- Marshal's Dragonhide Boots
-i(231699),	-- Field Marshal's Dragonhide Spaulders
-i(231700),	-- Marshal's Dragonhide Gloves
-i(231701),	-- Field Marshal's Dragonhide Headdress
-i(231702),	-- Field Marshal's Dragonhide Tunic
-i(231703),	-- Marshal's Dragonhide Legguards
-i(231704),	-- Marshal's Dragonhide Greaves
-i(231705),	-- Field Marshal's Dragonhide Pauldrons
-i(231706),	-- Marshal's Dragonhide Gauntlets
 i(231707),	-- Draconian Bindings
 i(231708),	-- Draconian Belt
 i(231709),	-- Draconian Shoulderpads
@@ -6246,17 +5713,10 @@ i(231729),	-- Ancient Gloves
 i(231730),	-- Ancient Boots
 i(231731),	-- Ancient Chest
 i(231732),	-- Suspicious Supplies
-i(231752),	-- S03 - Monster - Sword, 2H Alliance
-i(231753),	-- Skywall's Solace
-i(231754),	-- Kestrel
-i(231755),	-- Peregrine
-i(231777),	-- Crystallized Qiraji Limb
 i(231778),	-- Mountain Spring Water
 i(231779),	-- Wrath of Wray
 i(231780),	-- Tome of Conjure Water VIII
 i(231781),	-- Soul of Thunder
-i(231782),	-- Crown of the Successor
-i(231783),	-- Drape of the Windlord
 i(231784),	-- Lightning's Cell
 i(231785),	-- Echoes of Betrayal
 i(231789),	-- Sigil of the Keeper
@@ -6272,9 +5732,6 @@ i(231800),	-- Soul of Des'Altek
 i(231803),	-- Prestor's Talisman of Connivery
 i(231811),	-- Libram of Awe
 i(231814),	-- Chromatic Heart
-i(231815),	-- Flashrend
-i(231817),	-- Windstriker
-i(231823),	-- Geddon's Glaive
 i(231828),	-- Rune of Meditation Specialization
 i(231829),	-- Rune of Healing Specialization
 i(231836),	-- Glowing Scroll of Spatial Mending
@@ -6284,41 +5741,7 @@ i(231842),	-- Nandieb's Stave
 i(231843),	-- First Sigil Fragment
 i(231844),	-- Second Sigil Fragment
 i(231845),	-- Third Sigil Fragment
-i(231846),	-- Gri'lek's Carver
-i(231847),	-- Gri'lek's Grinder
-i(231848),	-- Nat Pagle's Fish Terminator
-i(231849),	-- Tigule's Harpoon
-i(231850),	-- Will of Arlokk
-i(231851),	-- Arlokk's Grasp
-i(231852),	-- Gurubashi Dwarf Destroyer
-i(231853),	-- Warblade of the Hakkari
-i(231854),	-- Zin'rokh, Destroyer of Worlds
-i(231855),	-- Fang of the Faceless
-i(231856),	-- Ancient Hakkari Manslayer
-i(231857),	-- Touch of Chaos
-i(231858),	-- Bloodcaller
-i(231859),	-- Jin'do's Hexxer
-i(231860),	-- Jin'do's Judgement
-i(231861),	-- Jeklik's Crusher
-i(231862),	-- Blazefury Retributer
-i(231863),	-- Thoughtblighter
-i(231864),	-- Pitchfork of Madness
-i(231865),	-- Zulian Scepter of Rites
-i(231866),	-- Mar'li's Touch
-i(231867),	-- Bloodlord's Defender
-i(231868),	-- Mandokir's Sting
-i(231869),	-- Warblade of the Hakkari
-i(231870),	-- Halberd of Smiting
-i(231871),	-- Wushoolay's Poker
-i(231872),	-- Hoodoo Hunting Bow
-i(231873),	-- Zulian Stone Axe
-i(231874),	-- Fang of Venoxis
-i(231875),	-- Thekal's Grasp
-i(231876),	-- Zulian Slicer
 i(231882),	-- Suppression Device Receipt
-i(231885),	-- Frostmourne
-i(231887),	-- Test Dagger
-i(231890),	-- Terrestris
 i(231891),	-- Treatise of the Falcon
 i(231901),	-- Truthbearer
 i(231902),	-- Ada's Amulet
@@ -6327,205 +5750,15 @@ i(231904),	-- Tarnished Horn
 i(231909),	-- Crystallized Starlight
 i(231910),	-- Heart of Azgaloth
 i(231911),	-- Signet of the Legion General
-i(231912),	-- Blade of the Pit
 i(231913),	-- Eye of the Observer
 i(231995),	-- Hardened Elementium Slag
 i(231996),	-- Supercharged Gobmogrifier
 i(232018),	-- Dormant Wind Kissed Blade
-i(232079),	-- Stormrage Bindings
-i(232080),	-- Stormrage Cord
-i(232081),	-- Stormrage Mantle
-i(232082),	-- Stormrage Kilt
-i(232083),	-- Stormrage Antlers
-i(232084),	-- Stormrage Mitts
-i(232085),	-- Stormrage Sandals
-i(232086),	-- Stormrage Leathers
-i(232087),	-- Stormrage Bracers
-i(232088),	-- Stormrage Belt
-i(232089),	-- Stormrage Pauldrons
-i(232090),	-- Stormrage Legguards
-i(232091),	-- Stormrage Cover
-i(232092),	-- Stormrage Handguards
-i(232093),	-- Stormrage Boots
-i(232094),	-- Stormrage Chestguard
-i(232095),	-- Stormrage Wraps
-i(232096),	-- Stormrage Sash
-i(232097),	-- Stormrage Shoulderpads
-i(232098),	-- Stormrage Trousers
-i(232099),	-- Stormrage Cowl
-i(232100),	-- Stormrage Grips
-i(232101),	-- Stormrage Stompers
-i(232102),	-- Stormrage Vest
-i(232103),	-- Stormrage Wristguards
-i(232104),	-- Stormrage Waistguard
-i(232105),	-- Stormrage Spaulders
-i(232106),	-- Stormrage Leggings
-i(232107),	-- Stormrage Headdress
-i(232108),	-- Stormrage Gauntlets
-i(232109),	-- Stormrage Treads
-i(232110),	-- Stormrage Armor
-i(232111),	-- Dragonstalker's Vambraces
-i(232112),	-- Dragonstalker's Girdle
-i(232113),	-- Dragonstalker's Pauldrons
-i(232114),	-- Dragonstalker's Pants
-i(232115),	-- Dragonstalker's Skullcap
-i(232116),	-- Dragonstalker's Grips
-i(232117),	-- Dragonstalker's Sabatons
-i(232118),	-- Dragonstalker's Armor
-i(232119),	-- Dragonstalker's Bracers
-i(232120),	-- Dragonstalker's Belt
-i(232121),	-- Dragonstalker's Spaulders
-i(232122),	-- Dragonstalker's Legguards
-i(232123),	-- Dragonstalker's Helm
-i(232124),	-- Dragonstalker's Gauntlets
-i(232125),	-- Dragonstalker's Greaves
-i(232126),	-- Dragonstalker's Breastplate
-i(232127),	-- Netherwind Bindings
-i(232128),	-- Netherwind Belt
-i(232129),	-- Netherwind Mantle
-i(232130),	-- Netherwind Pants
-i(232131),	-- Netherwind Crown
-i(232132),	-- Netherwind Gloves
-i(232133),	-- Netherwind Boots
-i(232134),	-- Netherwind Robes
-i(232135),	-- Netherwind Wraps
-i(232136),	-- Netherwind Sash
-i(232137),	-- Netherwind Shoulders
-i(232138),	-- Netherwind Leggings
-i(232139),	-- Netherwind Mask
-i(232140),	-- Netherwind Mitts
-i(232141),	-- Netherwind Slippers
-i(232142),	-- Netherwind Vestments
-i(232143),	-- Judgement Bindings
-i(232144),	-- Judgement Belt
-i(232145),	-- Judgement Spaulders
-i(232146),	-- Judgement Legplates
-i(232147),	-- Judgement Crown
-i(232148),	-- Judgement Gauntlets
-i(232149),	-- Judgement Sabatons
-i(232150),	-- Judgement Breastplate
-i(232151),	-- Judgement Bracers
-i(232152),	-- Judgement Girdle
-i(232153),	-- Judgement Mantle
-i(232154),	-- Judgement Plate Skirt
-i(232155),	-- Judgement Helm
-i(232156),	-- Judgement Gloves
-i(232157),	-- Judgement Treads
-i(232158),	-- Judgement Cuirass
-i(232159),	-- Judgement Vambraces
-i(232160),	-- Judgement Waistguard
-i(232161),	-- Judgement Pauldrons
-i(232162),	-- Judgement Legguards
-i(232163),	-- Judgement Great Helm
-i(232164),	-- Judgement Handguards
-i(232165),	-- Judgement Greaves
-i(232166),	-- Judgement Chestguard
-i(232167),	-- Bracers of Transcendence
-i(232168),	-- Cord of Transcendence
-i(232169),	-- Mantle of Transcendence
-i(232170),	-- Pants of Transcendence
-i(232171),	-- Crown of Transcendence
-i(232172),	-- Gloves of Transcendence
-i(232173),	-- Treads of Transcendence
-i(232174),	-- Garb of Transcendence
-i(232175),	-- Bindings of Transcendence
-i(232176),	-- Belt of Transcendence
-i(232177),	-- Pauldrons of Transcendence
-i(232178),	-- Leggings of Transcendence
-i(232179),	-- Halo of Transcendence
-i(232180),	-- Handguards of Transcendence
-i(232181),	-- Boots of Transcendence
-i(232182),	-- Robes of Transcendence
-i(232183),	-- Bloodfang Bracers
-i(232184),	-- Bloodfang Belt
-i(232185),	-- Bloodfang Spaulders
-i(232186),	-- Bloodfang Pants
-i(232187),	-- Bloodfang Hood
-i(232188),	-- Bloodfang Gloves
-i(232189),	-- Bloodfang Boots
-i(232190),	-- Bloodfang Chestpiece
-i(232191),	-- Bloodfang Wristguards
-i(232192),	-- Bloodfang Waistguard
-i(232193),	-- Bloodfang Shoulderpads
-i(232194),	-- Bloodfang Legguards
-i(232195),	-- Bloodfang Cowl
-i(232196),	-- Bloodfang Handguards
-i(232197),	-- Bloodfang Footpads
-i(232198),	-- Bloodfang Chestguard
-i(232199),	-- Bindings of Ten Storms
-i(232200),	-- Cord of Ten Storms
-i(232201),	-- Mantle of Ten Storms
-i(232202),	-- Kilt of Ten Storms
-i(232203),	-- Headdress of Ten Storms
-i(232204),	-- Gloves of Ten Storms
-i(232205),	-- Boots of Ten Storms
-i(232206),	-- Embrace of Ten Storms
-i(232207),	-- Bracers of Ten Storms
-i(232208),	-- Belt of Ten Storms
-i(232209),	-- Epaulets of Ten Storms
-i(232210),	-- Legplates of Ten Storms
-i(232211),	-- Helmet of Ten Storms
-i(232212),	-- Gauntlets of Ten Storms
-i(232213),	-- Greaves of Ten Storms
-i(232214),	-- Breastplate of Ten Storms
-i(232215),	-- Vambraces of Ten Storms
-i(232216),	-- Girdle of Ten Storms
-i(232217),	-- Spaulders of Ten Storms
-i(232218),	-- Leggings of Ten Storms
-i(232219),	-- Crown of Ten Storms
-i(232220),	-- Grips of Ten Storms
-i(232221),	-- Treads of Ten Storms
-i(232222),	-- Armor of Ten Storms
-i(232223),	-- Wristguards of Ten Storms
-i(232224),	-- Waistguard of Ten Storms
-i(232225),	-- Pauldrons of Ten Storms
-i(232226),	-- Legguards of Ten Storms
-i(232227),	-- Faceguard of Ten Storms
-i(232228),	-- Handguards of Ten Storms
-i(232229),	-- Sabatons of Ten Storms
-i(232230),	-- Chestguard of Ten Storms
-i(232231),	-- Nemesis Bracers
-i(232232),	-- Nemesis Belt
-i(232233),	-- Nemesis Spaulders
-i(232234),	-- Nemesis Leggings
-i(232235),	-- Nemesis Skullcap
-i(232236),	-- Nemesis Gloves
-i(232237),	-- Nemesis Boots
-i(232238),	-- Nemesis Robes
-i(232239),	-- Nemesis Wraps
-i(232240),	-- Nemesis Cord
-i(232241),	-- Nemesis Shoulderpads
-i(232242),	-- Nemesis Pants
-i(232243),	-- Nemesis Cowl
-i(232244),	-- Nemesis Handguards
-i(232245),	-- Nemesis Treads
-i(232246),	-- Nemesis Garb
-i(232247),	-- Bracers of Wrath
-i(232248),	-- Belt of Wrath
-i(232249),	-- Shoulders of Wrath
-i(232250),	-- Legplates of Wrath
-i(232251),	-- Helm of Wrath
-i(232252),	-- Gauntlets of Wrath
-i(232253),	-- Greaves of Wrath
-i(232254),	-- Breastplate of Wrath
-i(232255),	-- Wristguards of Wrath
-i(232256),	-- Waistguard of Wrath
-i(232257),	-- Pauldrons of Wrath
-i(232258),	-- Legguards of Wrath
-i(232259),	-- Faceguard of Wrath
-i(232260),	-- Handguards of Wrath
-i(232261),	-- Sabatons of Wrath
-i(232262),	-- Chestguard of Wrath
-i(232299),	-- Zulian Defender
-i(232309),	-- Renataki's Soul Conduit
-i(232310),	-- Renataki's Soul Conduit
-i(232311),	-- Zulian Tigerhide Cloak
 i(232312),	-- Blood of the Lightbringer
 i(232324),	-- Whistle
 1.15.4.56493
 i(232343),	-- QAEnchant Shield - Law of Nature
 i(232344),	-- Vick's VIP Pass
-i(232357),	-- Draconic Avenger
 i(232358),	-- Empty Reliquary
 i(232373),	-- Refined Eye of Sulfuras
 i(232389),	-- Libram of Plenty
@@ -8402,7 +7635,6 @@ i(31031),	-- mfury Totem \\ Stormfury Totem
 i(31033),	-- am of Righteous Power \\ Libram of Righteous Power
 i(31087),	-- Ata'mal Crystal
 i(31088),	-- ted Core \\ Tainted Core
-i(31108),	-- kron Flare Gun \\ Kor'kron Flare Gun
 i(31120),	-- ing Note \\ Meeting Note
 i(31123),	-- ning Nether-Weather Vane \\ Spinning Nether-Weather Vane \\ Spinning Nether-weather Vane
 i(31124),	-- er-Weather Vane \\ Nether-Weather Vane \\ Nether-weather Vane
@@ -8564,6 +7796,8 @@ i(32225),	-- fied Shadowsong Amethyst \\ Purified Shadowsong Amethyst \\ Dazzlin
 i(32226),	-- ed Seaspray Emerald \\ Jagged Seaspray Emerald
 i(32244),	-- 's Stone \\ Seer's Stone
 i(32257),	-- of the White Stag \\ Idol of the White Stag
+i(32288),	-- gn: Sparkling Empyrean Sapphire \\ Design: Sparkling Empyrean Sapphire \\ Design: Lustrous Empyrean Sapphire
+i(32294),	-- gn: Subtle Lionseye \\ Design: Subtle Lionseye \\ Design: Thick Lionseye
 i(32313),	-- n Stone \\ Raven Stone
 i(32315),	-- rion Sparrowhawk Whistle \\ Cenarion Sparrowhawk Whistle
 i(32320),	-- ive Sparrowhawk \\ Captive Sparrowhawk
@@ -8669,8 +7903,6 @@ i(32711),	-- dstained Fortune \\ Bloodstained Fortune
 i(32712),	-- dstained Fortune \\ Bloodstained Fortune
 i(32713),	-- dstained Fortune \\ Bloodstained Fortune
 i(32714),	-- ntered Spider Fang \\ Splintered Spider Fang
-i(32721),	-- uard Rations \\ Skyguard Rations
-i(32722),	-- ched Terocone Juice \\ Enriched Terocone Juice
 i(32723),	-- ermine Cargo \\ Nethermine Cargo
 i(32725),	-- blood Miner's Pick \\ Murkblood Miner's Pick
 i(32727),	-- of Tears \\ Vial of Tears
@@ -8690,8 +7922,6 @@ i(32765),	-- kataur's Tears \\ Flaskataur's Tears
 i(32766),	-- kataur's Flask of Flaskocity \\ Flaskataur's Flask of Flaskocity
 i(32767),	-- kataur's Flask of Pretty Good Power \\ Flaskataur's Flask of Pretty Good Power
 i(32775),	-- Deepdiving Pearl
-i(32783),	-- Ogre Brew \\ Blue Ogre Brew
-i(32784),	-- Ogre Brew \\ Red Ogre Brew
 i(32822),	-- less Arcane Essence \\ Flawless Arcane Essence
 i(32823),	-- dari Lord Balthas' Instructions \\ Illidari Lord Balthas' Instructions
 i(32824),	-- Tigole's Trashbringer \\ Trashbringer
@@ -8819,8 +8049,6 @@ i(33852),	-- ing Pot \\ Cooking Pot
 i(33854),	-- entified Eye \\ Unidentified Eye
 i(33856),	-- of Goods \\ List of Goods
 i(33929),	-- fest Brew \\ Brewfest Brew
-i(33934),	-- tal Healing Potion \\ Crystal Healing Potion
-i(33935),	-- tal Mana Potion \\ Crystal Mana Potion
 i(33955),	-- fest Stein Voucher \\ Brewfest Stein Voucher
 i(33956),	-- Isles Pale Ale \\ Echo Isles Pale Ale \\ Harkor's Home Brew
 i(33985),	-- ry Candle \\ Dreary Candle
@@ -8916,6 +8144,11 @@ i(34860),	-- ed Lock \\ Rusted Lock
 i(34861),	-- pened Fish Hook \\ Sharpened Fish Hook
 i(34907),	-- tered Gem Fragments \\ Shattered Gem Fragments
 i(34953),	-- hen Ring Magma Totem \\ Earthen Ring Magma Totem
+i(35249),	-- gn: Subtle Lionseye \\ Design: Subtle Lionseye \\ Design: Subtle Crimson Spinel
+i(35255),	-- gn: Brilliant Crimson Spinel \\ Design: Brilliant Crimson Spinel \\ Design: Brilliant Lionseye
+i(35259),	-- gn: Rigid Empyrean Sapphire \\ Design: Rigid Empyrean Sapphire \\ Design: Rigid Lionseye
+i(35261),	-- gn: Subtle Lionseye \\ Design: Subtle Lionseye \\ Design: Thick Lionseye
+i(35270),	-- gn: Veiled Shadowsong Amethyst \\ Design: Veiled Shadowsong Amethyst \\ Design: Veiled Pyrestone
 i(35287),	-- nous Bluetail \\ Luminous Bluetail
 i(35314),	-- ially Digested Weeds \\ Partially Digested Weeds
 i(35315),	-- k Dawnstone \\ Quick Dawnstone
@@ -11564,11 +10797,6 @@ i(44010),	-- ulant Spinal Fluid \\ Pustulant Spinal Fluid
 i(44012),	-- rbelly Elixir \\ Underbelly Elixir
 i(44047),	-- annon's Core \\ Norgannon's Core
 i(44048),	-- gled Solution \\ Smuggled Solution
-i(44049),	-- hly-Speared Emperor Salmon \\ Freshly-Speared Emperor Salmon
-i(44064),	-- ta Leaf \\ Nepeta Leaf
-i(44065),	-- le Secret Solution \\ Oracle Secret Solution
-i(44071),	-- -Roasted Eel \\ Slow-Roasted Eel
-i(44072),	-- ted Mystery Beast \\ Roasted Mystery Beast
 i(44090),	-- Test Mail Shoulder 2
 i(44119),	-- Recipe: Big Bear Steak [PH]
 i(44124),	-- zzzOLD Arcanum of Reputation Template - PH
@@ -11654,7 +10882,6 @@ i(44622),	-- of Dalaran White \\ Cask of Dalaran White
 i(44623),	-- le of Dalaran Red \\ Bottle of Dalaran Red
 i(44625),	-- le of Aged Dalaran Red \\ Bottle of Aged Dalaran Red
 i(44627),	-- le of Peaked Dalaran Red \\ Bottle of Peaked Dalaran Red
-i(44629),	-- of Peaked Dalaran Red \\ Cask of Peaked Dalaran Red
 i(44631),	-- p Bone Dust \\ Whelp Bone Dust
 i(44632),	-- of Dalaran Red \\ Cask of Dalaran Red
 i(44646),	-- ran Bandage \\ Dalaran Bandage
@@ -12521,7 +11748,6 @@ i(46694),	-- ylah's Stolen Beans \\ Dellylah's Stolen Beans
 i(46696),	-- her Figurine \\ Panther Figurine
 i(46697),	-- rged Venom Sac \\ Engorged Venom Sac
 i(46699),	-- ylah's Stolen Water \\ Dellylah's Stolen Water
-i(46700),	-- thar's Stolen Bags \\ Melithar's Stolen Bags
 i(46701),	-- dle's Improvised Explosive \\ Tweedle's Improvised Explosive
 i(46702),	-- ent Device Fragment \\ Ancient Device Fragment
 i(46703),	-- s Button \\ Brass Button
@@ -13086,8 +12312,6 @@ i(52581),	-- Emblem \\ SI:7 Emblem
 i(52582),	-- ed Package \\ Sealed Package
 i(52626),	-- Seashell Belt
 i(52678),	-- than's Fishing Pole \\ Jonathan's Fishing Pole
-i(52682),	-- nthoth's Incense \\ Lycanthoth's Incense
-i(52683),	-- kjack \\ Blackjack
 i(52693),	-- ed Recruitment Papers \\ Forged Recruitment Papers
 i(52694),	-- Cataclysm Gloves
 i(52695),	-- Cataclysm Chest
@@ -13105,16 +12329,11 @@ i(52711),	-- Cataclysm Gloves (NO LEVEL REQ)
 i(52712),	-- te Control Fireworks \\ Remote Control Fireworks
 i(52714),	-- ven Slug \\ Dwarven Slug
 i(52715),	-- herbot Control Gizmo \\ Butcherbot Control Gizmo
-i(52717),	-- y Leash \\ Fiery Leash
-i(52730),	-- nsing Draught \\ Cleansing Draught
 i(52734),	-- en Shard \\ Broken Shard
-i(52819),	-- tgale Crystal \\ Frostgale Crystal
-i(52828),	-- of Ascension \\ Orb of Ascension
 i(52829),	-- Luis Crash Test
 i(52831),	-- Gordunni Scroll
 i(52833),	-- fied Soul Orb \\ Modified Soul Orb
 i(52839),	-- Suspicious Red Drink
-i(52853),	-- m of Goldrinn \\ Totem of Goldrinn
 i(52854),	-- m of Lo'Gosh \\ Totem of Lo'Gosh
 i(52974),	-- 's Deep Sea Grog \\ Mack's Deep Sea Grog
 i(52975),	-- shell Sifter \\ Coilshell Sifter
@@ -13141,7 +12360,6 @@ i(53004),	-- Art Template Cloth Wrist - Robe_Common_B_02 - Blue
 i(53005),	-- Art Template Cloth Shoulder - Robe_Common_B_02 - Blue
 i(53006),	-- Art Template Cloth Boot - Robe_Common_B_02 - Blue
 i(53007),	-- Art Template Cloth Belt - Robe_Common_B_02 - Blue
-i(53009),	-- per Berries \\ Juniper Berries
 i(53010),	-- rsilk Cloth \\ Embersilk Cloth
 i(53011),	-- !Art Template Leather Belt
 i(53012),	-- !Art Template Leather Head
@@ -13181,7 +12399,6 @@ i(53051),	-- e Embersilk Bandage \\ Dense Embersilk Bandage
 i(53052),	-- ino's Modified Earthbind Totem \\ Sambino's Modified Earthbind Totem
 i(53053),	-- ered Treasure Map \\ Tattered Treasure Map
 i(53059),	-- Scrap Metal \\ Rent Scrap Metal
-i(53060),	-- htened Animal \\ Frightened Animal
 i(53061),	-- of Crabs \\ Crate of Crab Meat \\ Case of Crabs
 i(53075),	-- Adarrah's Diamond Ring
 i(53076),	-- Adarrah's Necklace
@@ -13195,7 +12412,6 @@ i(53155),	-- aggan's Thorn \\ Agamaggan's Thorn
 i(53156),	-- zzOLD Bloodshard Pendant
 i(53157),	-- lga's Cowl \\ Charlga's Cowl
 i(53158),	-- lder of the Matriarch \\ Spaulder of the Matriarch
-i(53464),	-- red Branch \\ Charred Branch
 i(53611),	-- Art Template Mail Belt - Mail_Common_B_01 - Red
 i(53612),	-- Art Template Mail Boot - Mail_Common_B_01 - Red
 i(53613),	-- Art Template Mail Chest - Mail_Common_B_01 - Red
@@ -13426,8 +12642,6 @@ i(54735),	-- Art Template Leather Legs - Leather_Common_A_02 - Black
 i(54741),	-- Art Template Leather Wrist - Leather_Common_A_02 - Black
 i(54742),	-- Art Template Leather Belt - Leather_Common_A_02 - Black
 i(54743),	-- Art Template Leather Hands - Leather_Common_A_02 - Black
-i(54744),	-- of Core Hound Innards \\ Heap of Core Hound Innards
-i(54745),	-- sis Shell Fragment \\ Nemesis Shell Fragment
 i(54746),	-- le of Grog \\ Bottle of Grog
 i(54747),	-- le of Grog \\ Bottle of Grog
 i(54748),	-- Siege Brigade Vest
@@ -13449,7 +12663,6 @@ i(54776),	-- Art Template Mail Shoulder - Mail_Common_A_03 - Black
 i(54777),	-- Polished Scale Vest
 i(54779),	-- Scalemail Bracers
 i(54782),	-- Scalemail Pants
-i(54788),	-- ight Pick \\ Twilight Pick
 i(54790),	-- Art Template Plate Boot  - Plate_Common_C_01 - Rust
 i(54791),	-- Art Template Plate Chest  - Plate_Common_C_01 - Rust
 i(54792),	-- Art Template Plate Hand  - Plate_Common_C_01 - Rust
@@ -13458,7 +12671,6 @@ i(54794),	-- Art Template Plate Legs  - Plate_Common_C_01 - Rust
 i(54795),	-- Art Template Plate Shoulder  - Plate_Common_C_01 - Rust
 i(54796),	-- Art Template Plate Wrist  - Plate_Common_C_01 - Rust
 i(54813),	-- [Deprecated]Speedbarge Diving Helm
-i(54814),	-- sman of Flame Ascendancy \\ Talisman of Flame Ascendancy
 i(54817),	-- ed Hardtack \\ Ruined Hardtack
 i(54818),	-- oded Copper Tubing \\ Corroded Copper Tubing
 i(54819),	-- ed Documents \\ Soaked Documents
@@ -13500,11 +12712,9 @@ i(55014),	-- zzOLD "Flying" Worgen Bracers
 i(55049),	-- of Goldrinn \\ Fang of Goldrinn
 i(55050),	-- of Lo'Gosh \\ Fang of Lo'Gosh
 i(55121),	-- r Boat \\ River Boat
-i(55137),	-- Disguise \\ Ogre Disguise
 i(55141),	-- alung \\ Spiralung
 i(55145),	-- er Entrails \\ Pincer Entrails
 i(55147),	-- Monster - Polearm 2h Icecrown Blue (Enchanted)
-i(55153),	-- of Cenarius \\ Horn of Cenarius
 i(55154),	-- Rough Approximation Nuker Robe
 i(55155),	-- Rough Approximation AGI DPS Robe
 i(55156),	-- Rough Approximation STR Tank Robe
@@ -13517,12 +12727,10 @@ i(55165),	-- anted Sea Snack \\ Enchanted Sea Snack
 i(55166),	-- tine Yeti Hide \\ Pristine Yeti Hide
 i(55167),	-- ect Yeti Hide \\ Perfect Yeti Hide
 i(55171),	-- e of the Naz'jar Battlemaiden \\ Blade of the Naz'jar Battlemaiden
-i(55173),	-- g Twilight Drake Skull \\ Young Twilight Drake Skull
 i(55175),	-- ogryph Muisek Vessel \\ Hippogryph Muisek Vessel
 i(55176),	-- TEST MASTETRY RING (1500)
 i(55177),	-- Entrails \\ Crab Entrails
 i(55178),	-- Twilight Egg \\ Pure Twilight Egg
-i(55179),	-- s of the Turtle God \\ Drums of the Turtle God
 i(55180),	-- mist Amulet \\ Darkmist Amulet
 i(55181),	-- gible Orc Letter \\ Illegible Orc Letter
 i(55182),	-- slated Orc Letter \\ Translated Orc Letter
@@ -13563,7 +12771,6 @@ i(55808),	-- e's Proposal \\ Horde's Proposal
 i(55821),	-- of Dark Prophecies \\ Book of Dark Prophecies
 i(55825),	-- test for lecraft
 i(55852),	-- ured Lightning \\ Captured Lightning
-i(55883),	-- alee's Shiv \\ Thisalee's Shiv
 i(55966),	-- e Rubbing Kit \\ Crude Rubbing Kit
 i(55967),	-- y Rubbing \\ Messy Rubbing
 i(55968),	-- Rubbing \\ Torn Rubbing
@@ -13582,7 +12789,6 @@ i(55984),	-- t Elemental Shard \\ Inert Elemental Shard
 i(55985),	-- t Elemental Piece \\ Inert Elemental Piece
 i(55987),	-- thoof Brand \\ Splithoof Brand
 i(56001),	-- hing Thorns \\ Slashing Thorns
-i(56003),	-- alee's Signal Rocket \\ Thisalee's Signal Rocket
 i(56005),	-- chisel Report \\ Slabchisel Report
 i(56006),	-- et of "Gold" \\ Pallet of "Gold"
 i(56008),	-- Shard \\ Rift Shard
@@ -13611,7 +12817,6 @@ i(56061),	-- ance Weapon Crates \\ Alliance Weapon Crates
 i(56081),	-- per's Key \\ Trapper's Key
 i(56134),	-- sed Floodlily \\ Blessed Floodlily
 i(56146),	-- Satchel \\ Toy Satchel
-i(56149),	-- y Town-In-A-Box \\ Empty Town-In-A-Box
 i(56150),	-- Material \\ Glue Material
 i(56151),	-- en Hoof Piece \\ Broken Hoof Piece
 i(56156),	-- Cartilage \\ Torn Cartilage
@@ -13639,7 +12844,6 @@ i(56203),	-- vary Gland Pair \\ Salivary Gland Pair
 i(56204),	-- less Vestigial Organ \\ Nameless Vestigial Organ
 i(56205),	-- omone Sample \\ Pheromone Sample
 i(56206),	-- ct Nociceptor Sample \\ Insect Nociceptor Sample
-i(56207),	-- m of Tortolla \\ Totem of Tortolla
 i(56208),	-- Art Template Plate Belt - Plate_Common_B_01 - Green
 i(56209),	-- Art Template Plate Boot - Plate_Common_B_01 - Green
 i(56210),	-- Art Template Plate Chest - Plate_Common_B_01 - Green
@@ -13719,7 +12923,6 @@ i(56831),	-- y Fuel Sample \\ Smoky Fuel Sample
 i(56832),	-- k-Burning Fuel Sample \\ Quick-Burning Fuel Sample
 i(56833),	-- ising Fuel Sample \\ Promising Fuel Sample
 i(56835),	-- orse Lasso \\ Seahorse Lasso
-i(56837),	-- dy Manacles \\ Sturdy Manacles
 i(56909),	-- hen Ring Unbinding Totem \\ Earthen Ring Unbinding Totem
 i(56968),	-- Juice \\ Bug Juice
 i(57002),	-- Frog \\ Dead Frog
@@ -14578,8 +13781,6 @@ i(58777),	-- QA Combat Test Healer Ring 5
 i(58778),	-- QA Combat Test Plate DPS Legs 3
 i(58783),	-- Crystal Composite \\ Jade Crystal Composite
 i(58784),	-- of Shadra \\ Idol of Shadra
-i(58787),	-- tal Bass \\ Crystal Bass
-i(58788),	-- grown Earthworm \\ Overgrown Earthworm
 i(58798),	-- le of Whiskey \\ Bottle of Whiskey
 i(58806),	-- l of Rope \\ Spool of Rope
 i(58810),	-- Test Soul Pouch
@@ -17796,7 +16997,6 @@ i(68977),	-- Art Template Leather Hand - PVPRogue_C_02 - Grey
 i(68978),	-- Art Template Leather Chest - PVPRogue_C_02 - Grey
 i(68979),	-- Art Template Leather Boot - PVPRogue_C_02 - Grey
 i(68980),	-- Art Template Leather Belt - PVPRogue_C_02 - Grey
-i(68997),	-- dian's Staff \\ Guardian's Staff
 i(68999),	-- Art Template - ZG Leather
 i(69009),	-- ul Female Mask Visual \\ Vrykul Female Mask Visual
 i(69010),	-- ul Male Mask Visual \\ Vrykul Male Mask Visual
@@ -17947,15 +17147,8 @@ i(69200),	-- nce of the Eternal Flame \\ Essence of the Eternal Flame
 i(69202),	-- Monster - Mace, 1H Zul'Aman D02 Purple
 i(69207),	-- Monster - Bow, Cataclysm B02 Red (Medium Speed)
 i(69208),	-- Monster - Staff (Cauldron-Tender)
-i(69212),	-- l of the Bird-Queen \\ Quill of the Bird-Queen
-i(69214),	-- erweb Egg \\ Cinderweb Egg
-i(69225),	-- of the Wolf \\ Fang of the Wolf
 i(69229),	-- Monster - Spear, Badass Red (Red Flame)
-i(69232),	-- ald of Aessina \\ Emerald of Aessina
-i(69234),	-- l of the Bird-Queen \\ Quill of the Bird-Queen
-i(69235),	-- of the Wolf \\ Fang of the Wolf
 i(69238),	-- less Eye \\ Timeless Eye
-i(69240),	-- anted Salve \\ Enchanted Salve
 i(69243),	-- Cream Cake Slice \\ Ice Cream Cake Slice
 i(69244),	-- Cream Bar \\ Ice Cream Bar
 i(69245),	-- less Eye \\ Timeless Eye
@@ -17968,53 +17161,31 @@ i(69263),	-- Socket Test Helm
 i(69264),	-- Hex Lord's Fetish \\ The Hex Lord's Fetish
 i(69597),	-- an Throwing Axe \\ Zulian Throwing Axe
 i(69642),	-- Monster - Staff, Outland Raid D06, Blue (yellow glow)
-i(69645),	-- dian's Staff \\ Guardian's Staff
 i(69647),	-- erious Gurubashi Bijou \\ Mysterious Gurubashi Bijou
-i(69649),	-- nspicuous Emerald \\ Inconspicuous Emerald
 i(69650),	-- m of Tortolla \\ Totem of Tortolla
-i(69675),	-- d Acorn \\ Dried Acorn
 i(69691),	-- Squad Leader's Medallion
-i(69722),	-- rgris \\ Embergris
 i(69723),	-- Worm Heart \\ Lava Worm Heart
 i(69724),	-- le Rat \\ Temple Rat
-i(69725),	-- olia \\ Magmolia
-i(69749),	-- hervine Seeds \\ Smothervine Seeds
 i(69750),	-- Spore Spray
 i(69755),	-- Monster - Flamewaker Pathfinder Spear
 i(69756),	-- Monster - Flamewaker Cauterizer Staff
 i(69757),	-- Monster - Flamewaker Forward Guard Sword
 i(69758),	-- Monster - Flamewaker Forward Guard Shield
-i(69759),	-- Bitter Pill \\ The Bitter Pill
 i(69762),	-- ature Voodoo Mask \\ Miniature Voodoo Mask
-i(69765),	-- fern \\ Lucifern
 i(69772),	-- ant Petals \\ Vibrant Petals
 i(69773),	-- Charred Glyph \\ red Glyph \\ Glyph of Frost Armor
 i(69804),	-- Monster - 1h Mace Sulfuras (New)
 i(69805),	-- Monster - Flamewaker Overseer Sword 2h
-i(69806),	-- o's Thermometer \\ Tholo's Thermometer
-i(69807),	-- dium Meteorite \\ Obsidium Meteorite
-i(69808),	-- e Venom \\ Flame Venom
-i(69809),	-- ing Web Fluid \\ Searing Web Fluid
-i(69810),	-- e Druid Staff \\ Flame Druid Staff
-i(69811),	-- e Druid Spellbook \\ Flame Druid Spellbook
-i(69812),	-- e Druid Reagent Pouch \\ Flame Druid Reagent Pouch
-i(69813),	-- e Druid Idol \\ Flame Druid Idol
 i(69814),	-- Bug Test Heirloom Weapon
-i(69816),	-- dbone Ash \\ Houndbone Ash
 i(69819),	-- ul Drinking Horn Helm \\ Vrykul Drinking Horn Helm
 i(69825),	-- nce Gatherer \\ Essence Gatherer
 i(69826),	-- Glacial Grenade
-i(69832),	-- Sticker \\ Burd Sticker
-i(69836),	-- Hawk Egg \\ Fire Hawk Egg
-i(69837),	-- orn's Injury Kit \\ Arthorn's Injury Kit
 i(69839),	-- 's Chewin' Stick \\ Eric's Chewin' Stick
 i(69840),	-- 's Amazing Handkerchief \\ Olaf's Amazing Handkerchief
 i(69841),	-- og's Big Book of Recipes \\ Baelog's Big Book of Recipes
-i(69845),	-- Hawk Hatchling \\ Fire Hawk Hatchling
 i(69849),	-- Monster - Sunwell Raid - Bow, D03 Silver
 i(69855),	-- e-Stained Locket \\ Smoke-Stained Locket
 i(69856),	-- Item \\ Test Item
-i(69860),	-- ng Obsidium Chip \\ Living Obsidium Chip
 i(69899),	-- r Cap \\ Sewer Cap
 i(69901),	-- red Abomination Head \\ Severed Abomination Head
 i(69902),	-- Mulberry Leaves
@@ -18028,24 +17199,14 @@ i(69920),	-- ce-Spiced Crunchy Stew \\ Thrice-Spiced Crunchy Stew
 i(69922),	-- liant Blazejewel \\ Brilliant Blazejewel
 i(69923),	-- cate Blazejewel \\ Delicate Blazejewel
 i(69930),	-- Blood Elf Disguise (TEST VERSION)
-i(69931),	-- ic Char \\ Arctic Char
-i(69932),	-- g Ironjaw \\ Young Ironjaw
-i(69933),	-- d Minnow \\ Blind Minnow
 i(69934),	-- ara Snakehead \\ Azshara Snakehead
 i(69935),	-- ken's Ring \\ Poshken's Ring
-i(69940),	-- nur's Bait \\ Grimnur's Bait
 i(69955),	-- y Locket \\ Slimy Locket
 i(69964),	-- y Smallfish \\ Randy Smallfish
 i(69967),	-- ous Mud Snapper \\ Amorous Mud Snapper
 i(69977),	-- ebull Crayfish \\ Stonebull Crayfish
-i(69978),	-- ish Bait-o-Matic \\ Gnomish Bait-o-Matic
-i(69979),	-- -o-Matic Blueprints \\ Bait-o-Matic Blueprints
 i(69980),	-- Trap \\ Rat Trap
-i(69981),	-- forge Rations \\ Ironforge Rations
-i(69982),	-- Morogh Chicken \\ Dun Morogh Chicken
 i(69983),	-- y Stone \\ Shiny Stone
-i(69984),	-- o' Sheep Innards \\ Bag o' Sheep Innards
-i(69985),	-- of Oatmeal \\ Sack of Oatmeal
 i(69986),	-- s First Toy \\ Cub's First Toy
 i(69988),	-- Nut \\ Pine Nut
 i(69989),	-- ted Fly \\ Bloated Fly
@@ -19524,6 +18685,15 @@ i(226462),	-- Greater Inscription of Jagged Stone
 i(226463),	-- Greater Inscription of Charged Lodestone
 4.4.0.56014
 i(224002),	-- Swoopy
+4.4.0.56713
+i(232012),	-- Coren's Chilled Chromium Coaster
+i(232013),	-- Mithril Stopwatch
+i(232014),	-- Petrified Pickled Egg
+i(232015),	-- Brawler's Trophy
+i(232016),	-- Bubblier Brightbrew Charm
+i(232017),	-- Bitterer Balebrew Charm
+i(232030),	-- Direbrew's Bloodied Shanker
+i(232031),	-- Tremendous Tankard O' Terror
 4.4.1.56464
 i(209528),	-- Secondhand Faceguard
 i(209529),	-- Secondhand Crown
@@ -19533,14 +18703,44 @@ i(209532),	-- Secondhand Cowl
 i(209533),	-- Secondhand Headguard
 i(231997),	-- Commendation of the World Tree
 i(231998),	-- Rock-Hard Biscuit
-i(232012),	-- Coren's Chilled Chromium Coaster
-i(232013),	-- Mithril Stopwatch
-i(232014),	-- Petrified Pickled Egg
-i(232015),	-- Brawler's Trophy
-i(232016),	-- Bubblier Brightbrew Charm
-i(232017),	-- Bitterer Balebrew Charm
-i(232030),	-- Direbrew's Bloodied Shanker
-i(232031),	-- Tremendous Tankard O' Terror
+4.4.1.56859
+i(232536),	-- Band of Ghoulish Glee
+i(232537),	-- The Horseman's Signet
+i(232538),	-- Seal of the Petrified Pumpkin
+i(232540),	-- Wicked Witch's Ring
+i(232544),	-- The Horseman's Horrific Helmet
+i(232548),	-- The Horseman's Sinister Saber
+i(232947),	-- Satchel of the Clouburst Cloak
+i(232948),	-- Satchel of the Cloudburst Necklace
+i(232949),	-- Satchel of the Cloudburst Ring
+i(232950),	-- Satchel of the Gale Rouser Belt
+i(232951),	-- Satchel of the Gale Rouser Leggings
+i(232952),	-- Satchel of the Lightning Well Belt
+i(232953),	-- Satchel of the Lightning Well Legguards
+i(232954),	-- Satchel of the Mistral Circle
+i(232955),	-- Satchel of the Mistral Drape
+i(232956),	-- Satchel of the Mistral Pendant
+i(232957),	-- Satchel of the Permafrost Cape
+i(232958),	-- Satchel of the Permafrost Choker
+i(232959),	-- Satchel of the Permafrost Signet
+i(232960),	-- Satchel of the Planetary Amulet
+i(232961),	-- Satchel of the Planetary Band
+i(232962),	-- Satchel of the Planetary Drape
+i(232963),	-- Satchel of the Sky Strider Belt
+i(232964),	-- Satchel of the Sky Strider Greaves
+i(232965),	-- Satchel of the Soul Breath Belt
+i(232966),	-- Satchel of the Soul Breath Leggings
+i(232967),	-- Satchel of the Star Chaser Belt
+i(232968),	-- Satchel of the Star Chaser Legguards
+i(232969),	-- Satchel of the Tempest Keeper Belt
+i(232970),	-- Satchel of the Tempest Keeper Leggings
+i(232971),	-- Satchel of the Thunder Wall Belt
+i(232972),	-- Satchel of the Thunder Wall Greaves
+i(232973),	-- Satchel of the Wind Stalker Belt
+i(232974),	-- Satchel of the Wind Stalker Leggings
+i(232975),	-- Satchel of the Stormwake, the Tempest's Reach
+i(232976),	-- Satchel of the Stormwake, the Tempest's Reach
+i(232977),	-- Satchel of the Stormwake, the Tempest's Reach
 7.3.0.24473
 i(71079),	-- Shimmering Lotus \\ mering Lotus
 i(72071),	-- Stolen Training Supplies \\ en Training Supplies
@@ -20409,8 +19609,6 @@ i(87470),	-- Scabripper Necklace \\ ripper Necklace
 i(87471),	-- Stitcher's Spare Needles \\ cher's Spare Needles
 i(87472),	-- Gaze of the Serpent \\ of the Serpent
 i(87530),	-- A Steamy Romance Novel: Hot and Misty \\ eamy Romance Novel: Hot and Misty
-i(87548),	-- Lorewalker's Lodestone \\ walker's Lodestone
-i(87549),	-- Lorewalker's Map \\ walker's Map
 i(87553),	-- Red Radish \\ Radish
 i(87554),	-- Sweet Lakemelon \\ t Lakemelon
 i(87555),	-- Fuzzy Peach \\ y Peach
@@ -20632,16 +19830,8 @@ i(89113),	-- Golden Honey \\ en Honey
 i(89123),	-- Wu Kao Explosive \\ ao Explosive
 i(89197),	-- Windshear Cactus Seed \\ shear Cactus Seed
 i(89202),	-- Raptorleaf Seed \\ orleaf Seed
-i(89223),	-- Racing Flag \\ ng Flag
-i(89224),	-- Floating Racing Flag \\ ting Racing Flag
-i(89225),	-- Finish Line \\ sh Line
-i(89227),	-- Floating Finish Line \\ ting Finish Line
-i(89230),	-- Restorative Amber \\ orative Amber
 i(89233),	-- Songbell Seed \\ bell Seed
 i(89297),	-- Shao-Tien Spirit Dagger \\ -Tien Spirit Dagger
-i(89301),	-- Stack of Wooden Boards \\ k of Wooden Boards
-i(89302),	-- Stack of Bamboo \\ k of Bamboo
-i(89303),	-- Stack of Stone Blocks \\ k of Stone Blocks
 i(89326),	-- Witchberry Seeds \\ hberry Seeds
 i(89328),	-- Jade Squash Seeds \\ Squash Seeds
 i(89329),	-- Striped Melon Seeds \\ ped Melon Seeds
@@ -21153,12 +20343,6 @@ i(94904),	-- Crown of Heaven \\ n of Heaven
 i(94905),	-- Case of Tactical Mana Bombs \\ of Tactical Mana Bombs
 i(95050),	-- The Brassiest Knuckle \\ Brassiest Knuckle
 i(95051),	-- The Brassiest Knuckle \\ Brassiest Knuckle
-i(95052),	-- Arcane Propellant \\ ne Propellant
-i(95053),	-- A Common Rock \\ mmon Rock
-i(95054),	-- Potion of Light Steps \\ on of Light Steps
-i(95055),	-- Frost Rune Trap \\ t Rune Trap
-i(95056),	-- Polymorphic Key \\ morphic Key
-i(95093),	-- Sleep Dust \\ p Dust
 i(95094),	-- Rommath's Book of Incantations \\ ath's Book of Incantations
 i(95340),	-- Jaina's Weathered Spellbook \\ a's Weathered Spellbook
 i(95342),	-- Handful of Stolen Gems \\ ful of Stolen Gems
@@ -21246,12 +20430,6 @@ i(97080),	-- Necklace of the Terra-Cotta Invoker \\ lace of the Terra-Cotta Invo
 i(97085),	-- Necklace of the Terra-Cotta Mender \\ lace of the Terra-Cotta Mender
 i(97093),	-- Necklace of the Terra-Cotta Vanquisher \\ lace of the Terra-Cotta Vanquisher
 i(97096),	-- Necklace of the Terra-Cotta Protector \\ lace of the Terra-Cotta Protector
-i(97154),	-- Sleep Dust \\ p Dust
-i(97155),	-- Polymorphic Key \\ morphic Key
-i(97156),	-- Frost Rune Trap \\ t Rune Trap
-i(97157),	-- Potion of Light Steps \\ on of Light Steps
-i(97158),	-- A Common Rock \\ mmon Rock
-i(97159),	-- Arcane Propellant \\ ne Propellant
 i(97160),	-- Pristine Snail Shell \\ tine Snail Shell
 i(97161),	-- Snail Shell \\ l Shell
 i(97278),	-- Challenge Card: Ahoo'ru \\ lenge Card: Ahoo'ru
@@ -21338,10 +20516,6 @@ i(98163),	-- Enchant Weapon - Bloody Dancing Steel \\ ant Weapon - Bloody Dancin
 i(98164),	-- Enchant Weapon - Spirit of Conquest \\ ant Weapon - Spirit of Conquest
 i(98549),	-- Iron Hitching Post (UNUSED) \\ Hitching Post (UNUSED)
 i(98551),	-- Darkspear Battle Standard \\ spear Battle Standard
-i(98558),	-- Empty Supply Crate \\ y Supply Crate
-i(98559),	-- Empty Supply Crate \\ y Supply Crate
-i(98560),	-- Arcane Trove \\ ne Trove
-i(98562),	-- Sunreaver Bounty \\ eaver Bounty
 i(98565),	-- Clefthoof Flesh \\ thoof Flesh
 i(98598),	-- Exile Wolf Bait \\ e Wolf Bait
 i(98617),	-- Hardened Magnificent Hide \\ ened Magnificent Hide
@@ -22117,7 +21291,6 @@ i(112378),	-- Glowing Red Pod \\ ing Red Pod
 i(112379),	-- Ink of the Clans \\ of the Clans
 i(112380),	-- Kil'uun's Beak \\ uun's Beak
 i(112381),	-- Pile of Riverbeast Meat \\ of Riverbeast Meat
-i(112384),	-- Reflecting Prism \\ ecting Prism
 i(112396),	-- Spirit Torch \\ it Torch
 i(112444),	-- Scuffed Bangle \\ fed Bangle
 i(112449),	-- Iron Horde Rations \\ Horde Rations
@@ -22515,7 +21688,6 @@ i(114116),	-- Bag of Salvaged Goods \\ of Salvaged Goods
 i(114119),	-- Crate of Salvage \\ e of Salvage
 i(114121),	-- Brokyo's Ring \\ yo's Ring
 i(114124),	-- Phantom Potion \\ tom Potion
-i(114129),	-- Striking Weapon Enhancement \\ king Weapon Enhancement
 i(114137),	-- Power Core \\ r Core
 i(114142),	-- Pristine Fang-Scarred Frostwolf Axe \\ tine Fang-Scarred Frostwolf Axe
 i(114144),	-- Pristine Frostwolf Ancestry Scrimshaw \\ tine Frostwolf Ancestry Scrimshaw
@@ -22993,7 +22165,6 @@ i(118197),	-- Auction Memory Socket \\ ion Memory Socket
 i(118225),	-- Highmaul Hops \\ maul Hops
 i(118226),	-- Pattern: Miniature Flying Carpet \\ ern: Miniature Flying Carpet
 i(118233),	-- Enormous Nagrand Pearl \\ mous Nagrand Pearl
-i(118236),	-- Counterfeit Coin \\ terfeit Coin
 i(118256),	-- Warsong Trophy Band \\ ong Trophy Band
 i(118257),	-- Warsong Trophy Signet \\ ong Trophy Signet
 i(118268),	-- Fuzzy Pear \\ y Pear
@@ -23143,13 +22314,11 @@ i(118880),	-- Everburning Candle \\ burning Candle
 i(118881),	-- Bajheric Bangle \\ eric Bangle
 i(118882),	-- Scabbard of Kyanos \\ bard of Kyanos
 i(118884),	-- Kyb's Foolish Perseverance \\ s Foolish Perseverance
-i(118897),	-- Miner's Coffee \\ r's Coffee
 i(118898),	-- Rusted Canary Cage \\ ed Canary Cage
 i(118899),	-- Crumbled Gem Shards \\ bled Gem Shards
 i(118900),	-- Hol'bruk's Brutal Brew \\ bruk's Brutal Brew
 i(118901),	-- Faded Note \\ d Note
 i(118902),	-- Weathered Mining Journal \\ hered Mining Journal
-i(118903),	-- Preserved Mining Pick \\ erved Mining Pick
 i(118904),	-- Unleashed Mania \\ ashed Mania
 i(118907),	-- Pit Fighter's Punching Ring \\ Fighter's Punching Ring
 i(118908),	-- Pit Fighter's Punching Ring \\ Fighter's Punching Ring
@@ -23914,10 +23083,6 @@ i(128436),	-- A Steamy Romance Novel: Got Milk? \\ eamy Romance Novel: Got Milk?
 i(128437),	-- Potion of Bubbling Pustules \\ on of Bubbling Pustules
 i(128438),	-- Tanaan Jungle Tooth \\ an Jungle Tooth
 i(128443),	-- Cleansed Moonthorn Bundle \\ nsed Moonthorn Bundle
-i(128446),	-- Saberstalker Teachings: Trailblazer \\ rstalker Teachings: Trailblazer
-i(128451),	-- Vol'jin's Headhunters Battle Standard \\ jin's Headhunters Battle Standard
-i(128452),	-- Hand of the Prophet Battle Standard \\ of the Prophet Battle Standard
-i(128453),	-- Saberstalkers Battle Standard \\ rstalkers Battle Standard
 i(128454),	-- Order of the Awakened Battle Standard \\ r of the Awakened Battle Standard
 i(128493),	-- Yotnar's Left Arm \\ ar's Left Arm
 i(128494),	-- Yotnar's Left Arm \\ ar's Left Arm
@@ -24232,6 +23397,7 @@ i(130149),	-- Carved Smolderhide Figurines \\ ed Smolderhide Figurines
 i(130150),	-- Carved Smolderhide Figurines \\ ed Smolderhide Figurines
 i(130152),	-- Condensed Light of Elune \\ ensed Light of Elune
 i(130153),	-- Godafoss Essence \\ foss Essence
+i(130157),	-- Syxsehnz Rod \\ ehnz Rod
 i(130159),	-- Ravencrest Shield \\ ncrest Shield
 i(130160),	-- Vial of Pure Moonrest Water \\ of Pure Moonrest Water
 i(130161),	-- Vial of Pure Moonrest Water \\ of Pure Moonrest Water
@@ -26018,7 +25184,6 @@ i(140685),	-- Enchanted Sunrunner Kidney \\ anted Sunrunner Kidney
 i(140729),	-- Red Blade Rum \\ Blade Rum
 i(140730),	-- SI:7 Orders \\ Orders
 i(140742),	-- Delightfully Wrapped Armaments \\ ghtfully Wrapped Armaments
-i(140743),	-- Treasure Map: Stormheim \\ sure Map: Stormheim
 i(140744),	-- Treasure Map: Azsuna \\ sure Map: Azsuna
 i(140749),	-- Horn of Winter \\ of Winter
 i(140750),	-- Conch \\ h
@@ -26667,11 +25832,8 @@ i(144240),	-- Ravaged Supplies \\ ged Supplies
 i(144241),	-- Fel-Infused Remains \\ Fel-infused Remains \\ infused Remains
 i(144255),	-- Depleted Fel Crystals \\ eted Fel Crystals
 i(144256),	-- Fel Crystals \\ Crystals
-i(144261),	-- Sporeggium \\ eggium
-i(144262),	-- Fungal Lifestalk \\ al Lifestalk
 i(144263),	-- Pungent Truffle \\ ent Truffle
 i(144264),	-- Pungent Truffle \\ ent Truffle
-i(144265),	-- Rimecap \\ cap
 i(144266),	-- Shattered Wrathguard Horn \\ tered Wrathguard Horn
 i(144267),	-- Bloodied Horde Axe Head \\ died Horde Axe Head
 i(144268),	-- Alliance Infantry Blade \\ ance Infantry Blade
@@ -26679,7 +25841,6 @@ i(144269),	-- Vacant Soul Shard \\ nt Soul Shard
 i(144270),	-- Fel-Scarred Tomb Stone \\ Scarred Tomb Stone
 i(144271),	-- Searing Hellion Claw \\ ing Hellion Claw
 i(144272),	-- Seal of Bravery \\ of Bravery
-i(144276),	-- Sack of Healing Spores \\ of Healing Spores
 i(144282),	-- Brute Harness \\ e Harness
 i(144283),	-- Clamshell Heart \\ shell Heart
 i(144284),	-- Gnawed Piece of Driftwood \\ ed Piece of Driftwood
@@ -30622,9 +29783,5 @@ i(210768),	-- Viridescent Bouquet of Aspect's Dreaming Crests \\ Bouquet of Aspe
 i(210923),	-- Clutch of Wyrm's Dreaming Crests
 10.2.6.53840
 i(220205),	-- Satchel of Drake's Dreaming Crests
-11.0.0.54311
-i(219934),	-- Spark of War
 11.0.2.55399
 i(228580),	-- Brute Force Idol
-11.0.5.56487
-i(228781),	-- Lil'Doomy's Hilt

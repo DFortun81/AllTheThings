@@ -3,5 +3,22 @@ ach(41008),	-- Rune Learned - Shared Acquisition - Illari Duskfeather (40)
 ach(41009),	-- Rune Learned - Shared Acquisition - Dark Riders (40)
 ach(41010),	-- Rune Learned - Shared Acquisition - Ley Lines (50)
 ach(41011),	-- Rune Learned - Shared Acquisition - Wild Gods (50)
+4.4.1.56859
+ach(41134),	-- [DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden)
+ach(41139),	-- Protocol Inferno: Blackrock Caverns
+ach(41140),	-- Protocol Inferno: Throne of the Tides
+ach(41141),	-- Protocol Inferno: The Stonecore
+ach(41142),	-- Protocol Inferno: The Vortex Pinnacle
+ach(41143),	-- Protocol Inferno: Grim Batol
+ach(41144),	-- Protocol Inferno: Halls of Origination
+ach(41145),	-- Protocol Inferno: Lost City of the Tol'vir
+ach(41146),	-- Protocol Inferno: Deadmines
+ach(41147),	-- Protocol Inferno: Shadowfang Keep
+ach(41148),	-- Protocol Inferno: Terminated
+11.0.2.56819
+ach(41085),	-- Worm Theory (copy)
 11.0.5.56487
 ach(40967),	-- Ratts' Revenge
+11.0.5.56749
+ach(41033),	-- Classy Dresser
+ach(41038),	-- Token Collector
