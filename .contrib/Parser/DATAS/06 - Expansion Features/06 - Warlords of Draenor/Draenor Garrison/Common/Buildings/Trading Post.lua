@@ -201,30 +201,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 										follower(458),	-- Vindicator Heluun
 									},
 								}),
-								i(158208, {	-- Ensemble: Sha'tari Defender's Plate [Confirmed]
+								iensemble(158208, {	-- Ensemble: Sha'tari Defender's Plate
 									["classes"] = PLATE_CLASSES,
 									["cost"] = 75000000,	-- 7,500g
-									["g"] = {
-										i(119425),  -- Belt of the Sha'tari Defense
-										i(119423),	-- Boots of the Sha'tari Defense
-										i(119429),	-- Bracers of the Sha'tari Defense
-										i(119422),	-- Breastplate of the Sha'tari Defense
-										i(119426),	-- Gauntlets of the Sha'tari Defense
-										i(119428),	-- Greathelm of the Sha'tari Defense
-										i(119424),	-- Legplates of the Sha'tari Defense
-										i(119427),	-- Shoulderguards of the Sha'tari Defense
-									},
 								}),
-								--[[ Note: Leaving this commented out as they removed the items from the vendor and ensembled. Leaving here in case they revert.
-								i(119428),	-- Greathelm of the Sha'tari Defense
-								i(119427),	-- Shoulderguards of the Sha'tari Defense
-								i(119422),	-- Breastplate of the Sha'tari Defense
-								i(119429),	-- Bracers of the Sha'tari Defense
-								i(119426),	-- Gauntlets of the Sha'tari Defense
-								i(119425),  -- Belt of the Sha'tari Defense
-								i(119424),	-- Legplates of the Sha'tari Defense
-								i(119423),	-- Boots of the Sha'tari Defense
-								--]]
 								i(119421),	-- Sha'tari Defender's Medallion (TOY!)
 								i(119150, {	-- Sky Fry (PET!)
 									["cost"] = {
@@ -247,10 +227,4 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 			}),
 		}),
 	})),
-}));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.WOD, {
-	n(GARRISONS, {
-		q(50681),	-- learning Ensemble: Sha'tari Defender's Plate
-	}),
 }));

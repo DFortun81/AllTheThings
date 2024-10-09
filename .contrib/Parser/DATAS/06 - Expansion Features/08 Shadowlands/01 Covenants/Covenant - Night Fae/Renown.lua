@@ -25,19 +25,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				title(428, {	-- Winter's Envoy (TITLE!)
 					["description"] = "Requires Renown 40.",
 				}),
-				i(186497, {	-- Ensemble: Garb of Pure Spirit
+				iensemble(186497, {	-- Ensemble: Garb of Pure Spirit
 					["description"] = "Requires Renown 60.",
-					["g"] = {
-						i(184974),	-- Pure Sight Drape
-						i(184968),	-- Pure Sight Handwraps
-						i(184969),	-- Pure Sight Hood
-						i(184970),	-- Pure Sight Leggings
-						i(184971),	-- Pure Sight Mantle
-						i(184972),	-- Pure Sight Sash
-						i(184967),	-- Pure Sight Slippers
-						i(184966),	-- Pure Sight Vestments
-						i(184973),	-- Pure Sight Wraps
-					},
 				}),
 				i(188000, {	-- Grovetender's Pack
 					["description"] = "Rewarded at 15 and 24 Renown.",
@@ -92,7 +81,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"
 			q(64088, {["timeline"] = {ADDED_9_1_0}}),	-- hitting Renown 59
 			q(64374, {["timeline"] = {ADDED_9_1_0}}),	-- hitting Renown 60
 			q(64450, {["timeline"] = {ADDED_9_1_0}}),	-- hitting Renown 67
-			q(63598, {["timeline"] = {ADDED_9_1_0}}),	-- learning Ensemble: Garb of Pure Spirit (Renown reward)
 			q(64451, {["timeline"] = {ADDED_9_1_0}}),	-- Renown 76
 			-- 9.1.5 New HQTS
 			q(65111, {["timeline"] = {ADDED_9_1_5}}),	-- hitting Renown 15 (Anima instead of Soulkeeper Upgrade)

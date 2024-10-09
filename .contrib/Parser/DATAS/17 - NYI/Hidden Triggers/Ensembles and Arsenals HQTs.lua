@@ -394,6 +394,21 @@ q(75449),	-- Ensemble: Waveborne Diplomat's Regalia
 q(77569),	-- High Scholar's Arcana
 q(78218),	-- Sky-Captain's Masquerade Attire
 
+------ WoW Anniversary ------ TODO
+q(),	-- Ensemble: Pale Rider's Eternal Armor
+q(),	-- Ensemble: Netherwalker's Eternal Armor
+q(),	-- Ensemble: Eternal Stormrage Armor
+q(),	-- Ensemble: Earth-Warder's Eternal Armor
+q(),	-- Ensemble: Dragonstalker's Eternal Armor
+q(),	-- Ensemble: Eternal Netherwind Regalia
+q(),	-- Ensemble: Eternal Battlegear of the August Acolyte
+q(),	-- Ensemble: Eternal Judgment Armor
+q(),	-- Ensemble: Eternal Vestments of Transcendence
+q(),	-- Ensemble: Eternal Bloodfang Armor
+q(),	-- Ensemble: Eternal Ten Storms
+q(),	-- Ensemble: Eternal Nemesis Raiment
+q(),	-- Ensemble: Eternal Battlegear of Wrath
+
 ------ Dungeons ------
 -- Deadmines
 q(42778),	-- Ensemble: Blackened Defias Armor
@@ -766,6 +781,17 @@ q(84258),	-- Tusks of Mannoroth (itemID 227550)
 q(50678),	-- Ensemble: Battlegear of the Frostwolves
 q(50680),	-- Ensemble: Ceremonial Karabor Finery
 
+-- Sha'Tari Defense
+q(50681),	-- learning Ensemble: Sha'tari Defender's Plate
+
+--- Legion
+
+-- Chromie
+q(47920),	-- Ensemble: Timewarden's Plate
+q(47921),	-- Ensemble: Chronoscryer's Finery
+q(47922),	-- Ensemble: Epoch Sentinel's Mail
+q(47923),	-- Ensemble: Riftscarred Vestments
+
 --- Shadowlands
 
 -- Court of Night
@@ -781,9 +807,45 @@ q(63597),	-- Ensemble: Garb of Fall's Promise
 q(63631),	-- Ensemble: Renathal's Battlefield Attire
 q(63635),	-- Ensemble: Renathal's Field Inquisitor's Vestments
 
+-- Kyrian
+q(62989),	-- Arsenal: Doubt's Weapon Cache
+q(62990),	-- Arsenal: Wisdom's Weapon Cache
+q(63601),	-- Ensemble: Aspiring Aspirant
+q(63602),	-- Ensemble: Devoted Aspirant's Regalia
+q(63019),	-- Ensemble: Garb of the Discordant
+q(63020),	-- Ensemble: Chain of the Discordant
+q(63018),	-- Ensemble: Vestments of the Discordant
+q(63021),	-- Ensemble: Warplate of the Discordant
+
+-- Necrolord
+q(62901),	-- Arsenal: Stitchmasters' Weapons
+q(63628),	-- Ensemble: Initiate's Necromantle Vestments
+q(63627),	-- Ensemble: Marileth's Assistant's Vestments
+
+-- Night Fae
+q(61909),	-- Ensemble: Conservator's Guise
+q(61910),	-- Ensemble: Conservator's Raiment
+q(61911),	-- Ensemble: Conservator's Regalia
+q(61908),	-- Ensemble: Conservator's Warbark
+q(63598),	-- Ensemble: Garb of Pure Spirit
+q(63595),	-- Ensemble: Garb of the Azure Dusk
+
+-- Venthyr
+q(63634),	-- Ensemble: Court Inquisitor's Vestments
+q(63630),	-- Ensemble: Harvester's Court Attire
+q(63637),	-- Ensemble: Sinful Inquisitor's Vestments
+q(63633),	-- Ensemble: Sinful Venthyr Attire
 ------ Misc Rewards ------
 
+--- Legion
+q(66309),	-- Ensemble: Dark Ranger's Attire
+
 --- Dragonflight
+
+q(76018),	-- Ensemble: Azure Renewal Finery
+q(76038),	-- Ensemble: Black Dragonflight's Vestments
+q(72112),	-- Ensemble: Obsidian Dracthyr Battlegear Mail Armor
+q(72115),	-- Ensemble: Sabellian's Battlegear Cloth Armor
 
 -- Time Rifts
 q(76583),	-- Ensemble: Decorous Garments
@@ -795,5 +857,38 @@ q(78086),	-- Ensemble: Raiment of Amirdrassi
 
 --- The War Within
 q(82261),	-- Ensemble: Cerulean Dredger
+
+-- Dornogal Ensemble Vendor
+q(81534),	-- Arcane Peddler's Trinkets
+q(81517),	-- Cardinal Educator's Knowledge
+q(81546),	-- Cast Artisan's Talent
+q(81531),	-- Celestial Patron's Elegance
+q(81521),	-- Cobalt Educator's Knowledge
+q(81532),	-- Court Patron's Elegance
+q(81535),	-- Curious Peddler's Trinkets
+q(81552),	-- Deep Cartographer's Orientation
+q(81525),	-- Earthy Quotidian Wear
+q(81520),	-- Leafy Educator's Knowledge
+q(81519),	-- Lilac Educator's Knowledge
+q(81524),	-- Maroon Quotidian Wear
+q(81522),	-- Midnight Educator's Knowledge
+q(81553),	-- Mossy Cartographer's Orientation
+q(81537),	-- Occult Peddler's Trinkets
+q(81550),	-- Oceanic Cartographer's Orientation
+q(81536),	-- Peculiar Peddler's Trinkets
+q(81529),	-- Royal Patron's Elegance
+q(81549),	-- Saffron Cartographer's Orientation
+q(81523),	-- Sandy Quotidian Wear
+q(81548),	-- Sooty Artisan's Talent
+q(81547),	-- Stained Artisan's Talent
+q(81527),	-- Taupe Quotidian Wear
+q(81452),	-- Toiler's Beige Uniform
+q(81541),	-- Toiler's Burgundy Uniform
+q(81539),	-- Toiler's Khaki Uniform
+q(81543),	-- Toiler's Navy Uniform
+q(81540),	-- Toiler's Ochre Uniform
+q(81526),	-- Umber Quotidian Wear
+q(81530),	-- Verdant Patron's Elegance
+q(81545),	-- Woven Artisan's Talent
 
 --]]

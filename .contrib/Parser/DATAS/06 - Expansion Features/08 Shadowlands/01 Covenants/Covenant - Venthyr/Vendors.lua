@@ -210,46 +210,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							{ "c", GRATEFUL, 15 },
 						},
 					}),
-					i(186508, {	-- Ensemble: Court Inquisitor's Vestments
+					iensemble(186508, {	-- Ensemble: Court Inquisitor's Vestments
 						["cost"] = { { "c", ANIMA, 10000 } },
-						["g"] = {
-							i(185097),	-- Court Inquisitor's Cape
-							i(185091),	-- Court Inquisitor's Handwraps
-							i(185092),	-- Court Inquisitor's Hood
-							i(185093),	-- Court Inquisitor's Leggings
-							i(185094),	-- Court Inquisitor's Mantle
-							i(185089),	-- Court Inquisitor's Robe
-							i(185095),	-- Court Inquisitor's Sash
-							i(185090),	-- Court Inquisitor's Slippers
-							i(185096),	-- Court Inquisitor's Wraps
-						},
 					}),
-					i(186510, {	-- Ensemble: Sinful Inquisitor's Vestments
+					iensemble(186510, {	-- Ensemble: Sinful Inquisitor's Vestments
 						["cost"] = { { "c", ANIMA, 10000 } },
-						["g"] = {
-							i(185118),	-- Sinful Inquisitor's Handwraps
-							i(185119),	-- Sinful Inquisitor's Hood
-							i(185120),	-- Sinful Inquisitor's Leggings
-							i(185121),	-- Sinful Inquisitor's Mantle
-							i(185116),	-- Sinful Inquisitor's Robes
-							i(185122),	-- Sinful Inquisitor's Sash
-							i(185124),	-- Sinful Inquisitor's Shawl
-							i(185117),	-- Sinful Inquisitor's Slippers
-							i(185123),	-- Sinful Inquisitor's Wraps
-						},
 					}),
-					i(186509, {	-- Ensemble: Sinful Venthyr Attire
+					iensemble(186509, {	-- Ensemble: Sinful Venthyr Attire
 						["cost"] = { { "c", ANIMA, 10000 } },
-						["g"] = {
-							i(185083),	-- Sinfall Venthyr Handwraps
-							i(185084),	-- Sinfall Venthyr Hood
-							i(185085),	-- Sinfall Venthyr Leggings
-							i(185086),	-- Sinfall Venthyr Sash
-							i(185088),	-- Sinfall Venthyr Shawl
-							i(185082),	-- Sinfall Venthyr Slippers
-							i(185081),	-- Sinfall Venthyr Vestments
-							i(185087),	-- Sinfall Venthyr Wraps
-						},
 					}),
 					i(181073, {	-- Fearstalker's Crimson Belt
 						["cost"] = {
@@ -1380,8 +1348,6 @@ for _,t in ipairs({CHRONICLE_OF_LOST_MEMORIES, MEMORY_OF_A_VITAL_SACRIFICE}) do
 end
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(63633),	-- learning Ensemble: Sinful Venthyr Attire
-	q(63634),	-- learning Ensemble: Court Inquisitor's Vestments
 	q(62021),	-- unlocking Dread Sentinel's Crimson Battleplate set (TransmogSetID 2078, Dread Sentinel's Crimson items)
 	q(62039),	-- unlocking Soulbreaker's Crimson Vestments set (TransmogSetID 2063, Soulbreaker's Crimson items)
 	q(62033),	-- unlocking Soulbreaker's Ebony Vestments set (TransmogSetID 2066, Soulbreaker's Ebony items)

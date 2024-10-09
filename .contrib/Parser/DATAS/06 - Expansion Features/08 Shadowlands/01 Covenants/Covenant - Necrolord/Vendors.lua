@@ -829,19 +829,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							{ "c", GRATEFUL, 50 },
 						},
 					}),
-					i(186502, {	-- Ensemble: Marileth's Assistant Vestments
+					iensemble(186502, {	-- Ensemble: Marileth's Assistant Vestments
 						["cost"] = { { "c", ANIMA, 10000 } },
-						["g"] = {
-							i(185037),	-- Marileth's Assistant's Drape
-							i(185031),	-- Marileth's Assistant's Handwraps
-							i(185032),	-- Marileth's Assistant's Hood
-							i(185033),	-- Marileth's Assistant's Leggings
-							i(185034),	-- Marileth's Assistant's Mantle
-							i(185035),	-- Marileth's Assistant's Sash
-							i(185030),	-- Marileth's Assistant's Slippers
-							i(185029),	-- Marileth's Assistant's Vestments
-							i(185036),	-- Marileth's Assistant's Wraps
-						},
 					}),
 					i(184068, {	-- Greatstaff of the Lichsworn
 						["cost"] = {
@@ -1326,8 +1315,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"
 			q(62003),	-- unlocking Alacrity of Maldraxxus set (TransmogSetID 2042, Prime Tactician's items)
 			q(62006),	-- unlocking Might of Maldraxxus set (TransmogSetID 2043, Bladesworn Harbinger's items)
 			q(62002),	-- unlocking Authority of Maldraxxus set (TransmogSetID 2044, Prime Harbinger's items)
-			q(62901),	-- learning Arsenal: Stitchmasters' Weapons
-			q(63627, {["timeline"] = {ADDED_9_1_0}}),	-- learning Ensemble: Marileth's Assistant's Vestments
 		}),
 	}),
 })));

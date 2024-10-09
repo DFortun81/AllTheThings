@@ -1232,9 +1232,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									n(172177, {	-- Echthra
 										n(WISDOM, {
 											ach(14857),	-- Itsy Bitsy Fighters
-											i(184474, {	-- Arsenal: Wisdom's Weapon Cache
-												["g"] = ECHTHRA_GROUP,
-											}),
+											iensemble(184474),	-- Arsenal: Wisdom's Weapon Cache
 										}),
 									}),
 									n(170654, {	-- Kalisthene
@@ -1304,20 +1302,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									n(172411, {	-- Thran'tiok
 										n(WISDOM, {
 											ach(14863),	-- Death Foursworn
-											i(184462, {	-- Arsenal: Doubt's Weapon Cache
-												["g"] = {
-													i(184466),	-- Doubt Tinged Bell
-													i(184463),	-- Doubt Tinged Crossbow
-													i(184472),	-- Doubt Tinged Gavel
-													i(184467),	-- Doubt Tinged Grip
-													i(184469),	-- Doubt Tinged Greatsword
-													i(184465),	-- Doubt Tinged Longspear
-													i(184470),	-- Doubt Tinged Mallet
-													i(184468),	-- Doubt Tinged Quickblade
-													i(184473),	-- Doubt Tinged Spellblade
-													i(184464),	-- Doubt Tinged Warglaive
-												},
-											}),
+											iensemble(184462),	-- Arsenal: Doubt's Weapon Cache
 										}),
 									}),
 								}),
@@ -1567,61 +1552,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 									i(181296, {	-- Discordant Wings of the Ascended
 										["cost"] = { { "c", ANIMA, 1750 } },
 									}),
-									i(184498, {	-- Ensemble: Chain of the Discordant
+									iensemble(184498, {	-- Ensemble: Chain of the Discordant
 										["cost"] = { { "c", ANIMA, 12500 } },
-										["g"] = {
-											i(179965),	-- Discordant Forgelite's Belt
-											i(179960),	-- Discordant Forgelite's Boots
-											i(179967),	-- Discordant Forgelite's Cloak
-											i(179963),	-- Discordant Forgelite's Breeches
-											i(179961),	-- Discordant Forgelite's Gloves
-											i(179962),	-- Discordant Forgelite's Helm
-											i(179964),	-- Discordant Forgelite's Spaulders
-											i(179959),	-- Discordant Forgelite's Vest
-											i(179966),	-- Discordant Forgelite's Wristwraps
-										},
 									}),
-									i(184497, {	-- Ensemble: Garb of the Discordant
+									iensemble(184497, {	-- Ensemble: Garb of the Discordant
 										["cost"] = { { "c", ANIMA, 12500 } },
-										["g"] = {
-											i(177213),	-- Discordant Bearer's Chestplate
-											i(177222),	-- Discordant Bearer's Cloak
-											i(177215),	-- Discordant Bearer's Gauntlets
-											i(177218),	-- Discordant Bearer's Girdle
-											i(177212),	-- Discordant Bearer's Helm
-											i(177216),	-- Discordant Bearer's Legguards
-											i(177217),	-- Discordant Bearer's Shoulders
-											i(177214),	-- Discordant Bearer's Warboots
-											i(177219),	-- Discordant Bearer's Wristwraps
-										},
 									}),
-									i(184496, {	-- Ensemble: Vestments of the Discordant
+									iensemble(184496, {	-- Ensemble: Vestments of the Discordant
 										["cost"] = { { "c", ANIMA, 12500 } },
-										["g"] = {
-											i(178198),	-- Discordant Watcher's Chest
-											i(178205),	-- Discordant Watcher's Cloak
-											i(178199),	-- Discordant Watcher's Feet
-											i(178200),	-- Discordant Watcher's Hands
-											i(178197),	-- Discordant Watcher's Head
-											i(178201),	-- Discordant Watcher's Legs
-											i(178202),	-- Discordant Watcher's Shoulders
-											i(178203),	-- Discordant Watcher's Waist
-											i(178204),	-- Discordant Watcher's Wrists
-										},
 									}),
-									i(184499, {	-- Ensemble: Warplate of the Discordant PLATE
+									iensemble(184499, {	-- Ensemble: Warplate of the Discordant PLATE
 										["cost"] = { { "c", ANIMA, 12500 } },
-										["g"] = {
-											i(177676),	-- Discordant Collector's Chestplate
-											i(177683),	-- Discordant Collector's Cloak
-											i(177678),	-- Discordant Collector's Gauntlets
-											i(177681),	-- Discordant Collector's Girdle
-											i(177675),	-- Discordant Collector's Helm
-											i(177679),	-- Discordant Collector's Legguards
-											i(177680),	-- Discordant Collector's Shoulders
-											i(177677),	-- Discordant Collector's Warboots
-											i(177682),	-- Discordant Collector's Wristwraps
-										},
 									}),
 									i(181289, {	-- Halo of the Discordant
 										["cost"] = { { "c", ANIMA, 1750 } },
@@ -1834,12 +1775,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"
 				q(65227, {["timeline"] = {ADDED_9_1_5}}),	-- Rightmost brazier (spellID 362556)
 
 				q(63165),	-- after earning "To the Moon" (achievementID 14887) (spellID 347027)
-				q(62989),	-- Arsenal: Doubt's Weapon Cache
-				q(62990),	-- Arsenal: Wisdom's Weapon Cache
-				q(63018),	-- Ensemble: Vestments of the Discordant
-				q(63019),	-- Ensemble: Garb of the Discordant
-				q(63020),	-- Ensemble: Chain of the Discordant
-				q(63021),	-- Ensemble: Warplate of the Discordant
 			}),
 		}),
 	}),

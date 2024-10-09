@@ -1519,24 +1519,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							n(164795, {	-- Clyde <Curios & Oddities>
 								["coord"] = { 55.2, 68.4, MALDRAXXUS },
 								["g"] = {
-									i(184303, {	-- Arsenal: Stitchmasters' Weapons
+									iensemble(184303, {	-- Arsenal: Stitchmasters' Weapons
 										["cost"] = {
 											{ "i", 184304, 750 },
 											{ "c", ANIMA, 30000 },
-										},
-										["g"] = {
-											i(184079),	-- Abominable Bulwark of Marz
-											i(184082),	-- Atticus's Anima Absolver
-											i(184085),	-- Flytrap's Life-Dividing Broadaxe
-											i(184081),	-- Gas Bag's Fetid Basher
-											i(184087),	-- Iron Phillip's Problem Solver
-											i(184078),	-- Naxx's Discarded Tooth
-											i(184086),	-- Neena's Fetch Stick
-											i(184083),	-- Professor's Beating Stick
-											i(184084),	-- Rathan's Bonespike Launcher
-											i(184080),	-- Roseboil's Molting Totem
-											i(184088),	-- Sabrina's Crooked Finger
-											i(184089),	-- Tomalin's Cleaver
 										},
 									}),
 									i(184047, {	-- Ascended Chest of Arms

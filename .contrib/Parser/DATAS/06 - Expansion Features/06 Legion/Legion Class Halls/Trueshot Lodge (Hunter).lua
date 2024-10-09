@@ -892,23 +892,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 							i(139713, {	-- Belt of the Unseen Path
 								["cost"] = 5000000,	-- 500g
 							}),
-							i(191658, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } }, {	-- Ensemble: Dark Ranger's Attire
+							iensemble(191658, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } }, {	-- Ensemble: Dark Ranger's Attire
 								["sourceQuests"] = {
 									65788,	-- A Walk with Ghosts
 									65669,	-- Report to Greymane
 								},
 								["cost"] = 10000000,	-- 1000g
-								["g"] = {
-									i(191654),	-- Dark Ranger's Belt
-									i(191649),	-- Dark Ranger's Boots
-									i(191657),	-- Dark Ranger's Cloak
-									i(191648),	-- Dark Ranger's Cowl
-									i(191651),	-- Dark Ranger's Gloves
-									i(191652),	-- Dark Ranger's Legguards
-									i(191653),	-- Dark Ranger's Shoulders
-									i(191650),	-- Dark Ranger's Vest
-									i(191655),	-- Dark Ranger's Wristbands
-								},
 							})),
 							i(139709, {	-- Grips of the Unseen Path
 								["cost"] = 5000000,	-- 500g
@@ -1002,8 +991,5 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(44393),	-- Tracking Quest: Unseen Protection 3 - completed the "Unseen Protection: Infernal Waves" mission
 		q(44394),	-- Tracking Quest: Unseen Protection 4 - completed the "Unseen Protection: Coastal Invasion" mission
 		q(44395),	-- Tracking Quest: Unseen Protection 5 - completed the "Unseen Protection: Drogbar Delicacy" mission
-	}),
-	expansion(EXPANSION.SL, {
-		q(66309),	-- Ensemble: Dark Ranger's Attire
 	}),
 });

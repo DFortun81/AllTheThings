@@ -1850,13 +1850,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 							ach(17773, {	-- A Blue Dawn
 								["timeline"] = { ADDED_10_1_7 },
 							}),
-							i(205958, {	-- Ensemble: Azure Renewal Finery
-								["groups"] = {
-									i(205956),	-- Azure Renewal Cape
-									i(205955),	-- Azure Renewal Mantle
-									i(205957),	-- Azure Renewal Tabard
-								},
-							}),
+							iensemble(205958), 	-- Ensemble: Azure Renewal Finery
 							i(205908, {	-- Inherited Wisdom of Senegos (TOY!)
 								["description"] = "You will find this in your mailbox upon completing this quest",
 							}),
@@ -2314,7 +2308,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 				q(74785, {["timeline"] = {ADDED_10_1_0}}),	-- triggers when Theramore is chosen (spellID 403046)
 				q(73403, {["timeline"] = {ADDED_10_1_0}}),	-- triggers when Winterspring is chosen
 				q(74353, {["timeline"] = {ADDED_10_1_0}}),	-- triggers when Winterspring is chosen (spellID 400338)
-				q(76018, {["timeline"] = {ADDED_10_1_0}}),	-- Ensemble: Azure Renewal Finery
 			}),
 		}),
 	}),

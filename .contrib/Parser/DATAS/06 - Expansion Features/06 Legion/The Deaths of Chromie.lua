@@ -310,57 +310,17 @@ root(ROOTS.ExpansionFeatures,
 						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["provider"] = { "n", 27856 },	-- Chromie
 						["g"] = {
-							i(151692, {	-- Ensemble: Chronoscryer's Finery
+							iensemble(151692, {	-- Ensemble: Chronoscryer's Finery
 								["ignoreBonus"] = true,
-								["g"] = {
-									i(151672),	-- Head
-									i(151682),	-- Shoulders
-									i(151679),	-- Chest
-									i(151688),	-- Bracers
-									i(151669),	-- Hands
-									i(151685),	-- Belt
-									i(151676),	-- Legs
-									i(151664),	-- Feet
-								},
 							}),
-							i(151693, {	-- Ensemble: Riftscarred Vestments
+							iensemble(151693, {	-- Ensemble: Riftscarred Vestments
 								["ignoreBonus"] = true,
-								["g"] = {
-									i(151674),	-- Head
-									i(151680),	-- Shoulders
-									i(151662),	-- Chest
-									i(151691),	-- Bracers
-									i(151667),	-- Hands
-									i(151687),	-- Belt
-									i(151678),	-- Legs
-									i(151666),	-- Feet
-								},
 							}),
-							i(151694, {	-- Ensemble: Epoch Sentinel's Mail
+							iensemble(151694, {	-- Ensemble: Epoch Sentinel's Mail
 								["ignoreBonus"] = true,
-								["g"] = {
-									i(151673),	-- Head
-									i(151683),	-- Shoulders
-									i(151661),	-- Chest
-									i(151690),	-- Bracers
-									i(151670),	-- Hands
-									i(151686),	-- Belt
-									i(151677),	-- Legs
-									i(151665),	-- Feet
-								},
 							}),
-							i(151695, {	-- Ensemble: Timewarden's Plate
+							iensemble(151695, {	-- Ensemble: Timewarden's Plate
 								["ignoreBonus"] = true,
-								["g"] = {
-									i(151671),	-- Head
-									i(151681),	-- Shoulders
-									i(151660),	-- Chest
-									i(151689),	-- Bracers
-									i(151668),	-- Hands
-									i(151684),	-- Belt
-									i(151675),	-- Legs
-									i(151663),	-- Feet
-								},
 							}),
 						},
 					}),
@@ -387,10 +347,6 @@ root(ROOTS.ExpansionFeatures,
 );
 root(ROOTS.HiddenQuestTriggers, {
 	expansion(EXPANSION.LEGION, {
-		q(47920),	-- Ensemble: Timewarden's Plate
-		q(47921),	-- Ensemble: Chronoscryer's Finery
-		q(47922),	-- Ensemble: Epoch Sentinel's Mail
-		q(47923),	-- Ensemble: Riftscarred Vestments
 		q(48032),	-- FLAG - Hyjal Scene Seen - immediately upon entering Hyjal
 		q(47829),	-- FLAG - Hyjal Complete - kill the fiery behemoth
 		q(47830),	-- FLAG - Andorhal Complete

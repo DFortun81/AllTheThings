@@ -69,19 +69,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						},
 					}),
 					MEMORY_OF_A_VITAL_SACRIFICE,
-					i(186516, {	-- Ensemble: Devoted Aspirant's Regalia
+					iensemble(186516, {	-- Ensemble: Devoted Aspirant's Regalia
 						["cost"] = { { "c", ANIMA, 10000 } },
-						["g"] = {
-							i(185006),	-- Devoted Aspirant's Drape
-							i(185001),	-- Devoted Aspirant's Handwraps
-							i(185002),	-- Devoted Aspirant's Hood
-							i(185003),	-- Devoted Aspirant's Leggings
-							i(185007),	-- Devoted Aspirant's Robes
-							i(184999),	-- Devoted Aspirant's Vestments
-							i(185004),	-- Devoted Aspirant's Sash
-							i(185000),	-- Devoted Aspirant's Slippers
-							i(185005),	-- Devoted Aspirant's Wraps
-						},
 					}),
 					i(181288, {	-- Halo of the Harmonious
 						["cost"] = { { "c", ANIMA, 3500 } },
@@ -1489,7 +1478,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"
 	n(KYRIAN, {
 		n(VENDORS, {
 			q(60595),	-- unlocking 12 Kyrian sets, no idea why they all have the same TrackingQuestID: https://wow.tools/dbc/?dbc=transmogset&build=9.1.5.40944#page=1&colFilter[3]=60595
-			q(63602, {["timeline"] = {ADDED_9_1_0}}),	-- learning Ensemble: Devoted Aspirant's Regalia
 		}),
 	}),
 })));

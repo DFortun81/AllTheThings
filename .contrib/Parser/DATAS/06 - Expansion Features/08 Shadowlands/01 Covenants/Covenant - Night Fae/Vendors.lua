@@ -248,19 +248,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 						["cost"] = { { "c", ANIMA, 2500 } },
 					}),
 					MEMORY_OF_A_VITAL_SACRIFICE,
-					i(186498, {	-- Ensemble: Garb of the Azure Dusk
+					iensemble(186498, {	-- Ensemble: Garb of the Azure Dusk
 						["cost"] = { { "c", ANIMA, 10000 } },
-						["g"] = {
-							i(184946),	-- Azure Dusk Bindings
-							i(184947),	-- Azure Dusk Drape
-							i(184941),	-- Azure Dusk Handwraps
-							i(184942),	-- Azure Dusk Hood
-							i(184943),	-- Azure Dusk Leggings
-							i(184944),	-- Azure Dusk Mantle
-							i(184945),	-- Azure Dusk Sash
-							i(184940),	-- Azure Dusk Slippers
-							i(184939),	-- Azure Dusk Vestments
-						},
 					}),
 					i(179674, {	-- Night Courtier's Amice
 						["cost"] = {
@@ -1315,11 +1304,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 MEMORY_OF_A_VITAL_SACRIFICE.customCollect = nil;
 
 root(ROOTS.HiddenQuestTriggers, {
-	q(61908),	-- Ensemble: Conservator's Warbark
-	q(61909),	-- Ensemble: Conservator's Guise
-	q(61910),	-- Ensemble: Conservator's Raiment
-	q(61911),	-- Ensemble: Conservator's Regalia
-	q(63595),	-- Ensemble: Garb of the Azure Dusk
 	q(61901),	-- unlocking Faewoven Regalia/Oakheart Raiment sets (TransmogSetID 2047/2051, Faewoven/Oakheart items)
 	q(61907),	-- unlocking Night Courtier's Regalia set (TransmogSetID 2048, Night Courtier's cloth items)
 	q(61906),	-- unlocking Night Courtier's Raiment set (TransmogSetID 2054, Night Courtier's leather items)

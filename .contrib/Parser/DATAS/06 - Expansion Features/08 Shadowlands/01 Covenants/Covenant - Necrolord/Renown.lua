@@ -33,19 +33,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 				title(443, {	-- Sword of the Primus (TITLE!)
 					["description"] = "Requires Renown 80.",
 				}),
-				i(186503,  {	-- Initiate's Necromantle Vestments
+				iensemble(186503,  {	-- Ensemble: Initiate's Necromantle Vestments
 					["description"] = "Requires Renown 60.",
-					["g"] = {
-						i(185028),	-- Initiate's Necromantle Drape
-						i(185022),	-- Initiate's Necromantle Handwraps
-						i(185023),	-- Initiate's Necromantle Hood
-						i(185024),	-- Initiate's Necromantle Leggings
-						i(185026),	-- Initiate's Necromantle Sash
-						i(185025),	-- Initiate's Necromantle Shoulders
-						i(185021),	-- Initiate's Necromantle Slippers
-						i(185020),	-- Initiate's Necromantle Vestments
-						i(185027),	-- Initiate's Necromantle Wraps
-					},
 				}),
 				i(188004, {	-- Crate of Anima-Infused Parts
 					["description"] = "Rewarded at 15 and 24 Renown.",
@@ -101,7 +90,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"
 			q(64373, {["timeline"] = {ADDED_9_1_0}}),	-- hitting Renown 60
 			q(64308, {["timeline"] = {ADDED_9_1_0}}),	-- hitting Renown 63
 			q(64447, {["timeline"] = {ADDED_9_1_0}}),	-- hitting Renown 67
-			q(63628, {["timeline"] = {ADDED_9_1_0}}),	-- learning Ensemble: Initiate's Necromantle Vestments (Renown reward)
 			q(64448, {["timeline"] = {ADDED_9_1_0}}),	-- Renown 76
 			-- 9.1.5 New HQTS
 			q(65109, {["timeline"] = {ADDED_9_1_5}}),	-- hitting Renown 15 (Anima instead of Soulkeeper Upgrade)

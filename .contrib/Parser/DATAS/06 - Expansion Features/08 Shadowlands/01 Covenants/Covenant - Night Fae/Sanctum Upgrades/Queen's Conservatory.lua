@@ -521,74 +521,21 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 									n(174403, {	-- Seed Merchant Daybreak <Queen's Conservatory>
 										["coord"] = { 34.6, 60.6, 1662 },
 										["g"] = {
-											i(184111, {	-- Ensemble: Conservator's Guise
+											iensemble(184111, {	-- Ensemble: Conservator's Guise
 												["cost"] = { { "c", ANIMA, 12500 } },
-												["classes"] = { HUNTER, SHAMAN },
-												["g"] = {
-													i(181933),	-- Conservator's Scale Armguards
-													i(181939),	-- Conservator's Scale Boots
-													i(181934),	-- Conservator's Scale Buckle
-													i(181938),	-- Conservator's Scale Gloves
-													i(181880, {	-- Conservator's Scale Greatcloak
-														["description"] = "This cloak is awarded from the Queen's Conservatory Rank 5 Set if purchased by a Mail Character.",
-													}),
-													i(181937),	-- Conservator's Scale Guise
-													i(181940),	-- Conservator's Scale Hauberk
-													i(181936),	-- Conservator's Scale Legguards
-													i(181935),	-- Conservator's Scale Spaulders
-													i(181978),	-- Conservator's Scale Vestments
-												},
+												["classes"] = MAIL_CLASSES,
 											}),
-											i(184112, {	-- Ensemble: Conservator's Raiment
+											iensemble(184112, {	-- Ensemble: Conservator's Raiment
 												["cost"] = { { "c", ANIMA, 12500 } },
-												["classes"] = { DRUID, ROGUE, MONK, DEMONHUNTER },
-												["g"] = {
-													i(179781),	-- Conservator's Leather Anklewraps
-													i(179784),	-- Conservator's Leather Armguards
-													i(179799),	-- Conservator's Leather Belt
-													i(179802),	-- Conservator's Leather Bracers
-													i(179790),	-- Conservator's Leather Britches
-													i(179778),	-- Conservator's Leather Cape
-													i(179787),	-- Conservator's Leather Crest
-													i(179796, {	-- Conservator's Leather Mantle
-														["description"] = "This cloak is awarded from the Queen's Conservatory Rank 5 Set if purchased by a Leather Character.",
-													}),
-													i(179793),	-- Conservator's Leather Vestment
-												},
+												["classes"] = LEATHER_CLASSES,
 											}),
-											i(184113, {	-- Ensemble: Conservator's Regalia
+											iensemble(184113, {	-- Ensemble: Conservator's Regalia
 												["cost"] = { { "c", ANIMA, 12500 } },
-												["classes"] = { PRIEST, MAGE, WARLOCK },
-												["g"] = {
-													i(179675),	-- Conservator's Silken Amice
-													i(179669),	-- Conservator's Silken Cowl
-													i(179681),	-- Conservator's Silken Cuffs
-													i(179625, {	-- Conservator's Silken Drape
-														["description"] = "This cloak is awarded from the Queen's Conservatory Rank 5 Set if purchased by a Cloth Character.",
-													}),
-													i(179666),	-- Conservator's Silken Handwraps
-													i(179672),	-- Conservator's Silken Leggings
-													i(179655),	-- Conservator's Silken Raiment
-													i(179662),	-- Conservator's Silken Sandals
-													i(179678),	-- Conservator's Silken Sash
-												},
+												["classes"] = CLOTH_CLASSES,
 											}),
-											i(184110, {	-- Ensemble: Conservator's Warbark
+											iensemble(184110, {	-- Ensemble: Conservator's Warbark
 												["cost"] = { { "c", ANIMA, 12500 } },
-												["classes"] = { PALADIN, WARRIOR, DEATHKNIGHT },
-												["g"] = {
-													i(179902),	-- Conservator's Ironwood Chestplate
-													i(179633, {	-- Conservator's Ironwood Cloak
-														["description"] = "This cloak is awarded from the Queen's Conservatory Rank 5 Set if purchased by a Plate Character.",
-													}),
-													i(179900),	-- Conservator's Ironwood Gauntlets
-													i(179896),	-- Conservator's Ironwood Girdle
-													i(179899),	-- Conservator's Ironwood Greathelm
-													i(179898),	-- Conservator's Ironwood Greaves
-													i(179897),	-- Conservator's Ironwood Pauldrons
-													i(179901),	-- Conservator's Ironwood Sabatons
-													i(179895),	-- Conservator's Ironwood Vambraces
-												},
+												["classes"] = PLATE_CLASSES,
 											}),
 										},
 									}),

@@ -25,21 +25,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				title(425, {	-- Hand of the Archon (TITLE!)
 					["description"] = "Requires Renown 40.",
 				}),
-				i(186515,  {	-- Ensemble: Aspiring Aspirant's Regalia
+				iensemble(186515,  {	-- Ensemble: Aspiring Aspirant's Regalia
 					["description"] = "Requires Renown 60.",
-					["g"] = {
-						i(184998),	-- Aspiring Aspirant's Drape
-						i(184993),	-- Aspiring Aspirant's Handwraps
-						i(184994),	-- Aspiring Aspirant's Hood
-						i(184995),	-- Aspiring Aspirant's Leggings
-						i(185008),	-- Aspiring Aspirant's Robes
-						i(184996),	-- Aspiring Aspirant's Sash
-						i(184992),	-- Aspiring Aspirant's Slippers
-						i(184991, {	-- Aspiring Aspirant's Vestments
-							["description"] = "If this piece shows as uncollected after learning the ensemble, relog and then SHIFT+CLICK anywhere in an ATT list to refresh your collection.",	-- if anyone reports this as missing, remind them that RELOGGING IS NECESSARY.  refreshing alone did not work for me, nor did relogging alone - it required the one-two punch combo
-						}),
-						i(184997),	-- Aspiring Aspirant's Wraps
-					},
 				}),
 				i(188005, {	-- Anima-Bathed Blade
 					["description"] = "Rewarded at 15 and 24 Renown.",
@@ -94,7 +81,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"
 			q(64146, {["timeline"] = {ADDED_9_1_0}}),	-- hitting Renown 59
 			q(64372, {["timeline"] = {ADDED_9_1_0}}),	-- hitting Renown 60
 			q(64444, {["timeline"] = {ADDED_9_1_0}}),	-- hitting Renown 67
-			q(63601, {["timeline"] = {ADDED_9_1_0}}),	-- learning Ensemble: Aspiring Aspirant
 			q(64445, {["timeline"] = {ADDED_9_1_0}}),	-- Renown 76
 			-- 9.1.5 New HQTS
 			q(65107, {["timeline"] = {ADDED_9_1_5}}),	-- hitting Renown 15 (Anima instead of Soulkeeper Upgrade)
