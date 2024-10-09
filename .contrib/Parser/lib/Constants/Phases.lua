@@ -311,7 +311,7 @@ ELITE_PVP_REQUIREMENT = createPhase({
 		ko = "",
 		]]--
 		cn = "除非您拥有所需的 PvP 头衔、所需的 PvP 等级或处于该赛季的前 %，否则无法再购买或解锁幻化。",
-		tw = "除非您擁有所需的 PvP 稱號、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖幻化。",
+		tw = "除非您擁有所需的 PvP 稱號、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖塑形。",
 	},
 });
 UNLEARNABLE = createPhase({
@@ -350,7 +350,7 @@ UNLEARNABLE = createPhase({
 		ko = "",
 		]]--
 		cn = "这不能永久收集、学习或用于幻化。",
-		tw = "這不能永久收集、學習或用於幻化。",
+		tw = "這不能永久收集、學習或用於塑形。",
 	},
 });
 TRAINING = UNLEARNABLE;
