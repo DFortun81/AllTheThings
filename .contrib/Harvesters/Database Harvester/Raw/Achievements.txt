@@ -3765,6 +3765,18 @@
 40970@@@Duelist: Season 9
 40971@@@Challenger: Season 9
 4.4.1.56464
+4.4.1.56859
+41134@@@[DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden)
+41139@@@Protocol Inferno: Blackrock Caverns
+41140@@@Protocol Inferno: Throne of the Tides
+41141@@@Protocol Inferno: The Stonecore
+41142@@@Protocol Inferno: The Vortex Pinnacle
+41143@@@Protocol Inferno: Grim Batol
+41144@@@Protocol Inferno: Halls of Origination
+41145@@@Protocol Inferno: Lost City of the Tol'vir
+41146@@@Protocol Inferno: Deadmines
+41147@@@Protocol Inferno: Shadowfang Keep
+41148@@@Protocol Inferno: Terminated
 5.0.3.15882
 110@@@Lich King 5-player boss defeated the most
 131@@@Journeyman Medic
