@@ -274,6 +274,68 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			["maps"] = ALL_REGULAR_DELVES,
 		}),
 	}),
+	n(HIDDEN_QUESTS, {
+		-- Brann Bronzebeard leveling quest
+		hqt(77716),	-- Level 2
+		hqt(77718),	-- Level 3
+		hqt(77719),	-- Level 4
+		hqt(77720),	-- Level 5
+		hqt(77721),	-- Level 6
+		hqt(77722),	-- Level 7
+		hqt(77723),	-- Level 8
+		hqt(77724),	-- Level 9
+		hqt(77727),	-- Level 10
+		hqt(77728),	-- Level 11
+		hqt(77729),	-- Level 12
+		hqt(77730),	-- Level 13
+		hqt(77731),	-- Level 14
+		hqt(77732),	-- Level 15
+		hqt(77733),	-- Level 16
+		hqt(77734),	-- Level 17
+		hqt(77735),	-- Level 18
+		hqt(77736),	-- Level 19
+		hqt(77737),	-- Level 20
+		hqt(81509),	-- Level 21
+		hqt(81508),	-- Level 22
+		hqt(81507),	-- Level 23
+		hqt(79352),	-- Level 24
+		hqt(79351),	-- Level 25
+		hqt(84087),	-- Level 26
+		hqt(84088),	-- Level 27
+		hqt(84089),	-- Level 28
+		hqt(84090),	-- Level 29
+		hqt(84091),	-- Level 30
+		hqt(84092),	-- Level 31
+		hqt(84093),	-- Level 32
+		hqt(84094),	-- Level 33
+		hqt(84095),	-- Level 34
+		hqt(84096),	-- Level 35
+		hqt(84097),	-- Level 36
+		hqt(84098),	-- Level 37
+		hqt(84099),	-- Level 38
+		hqt(84100),	-- Level 39
+		hqt(84101),	-- Level 40
+		hqt(84102),	-- Level 41
+		hqt(84103),	-- Level 42
+		hqt(84104),	-- Level 43
+		hqt(84105),	-- Level 44
+		hqt(84106),	-- Level 45
+		hqt(84107),	-- Level 46
+		hqt(84108),	-- Level 47
+		hqt(84109),	-- Level 48
+		hqt(84110),	-- Level 49
+		hqt(83329),	-- Level 50
+		hqt(84111),	-- Level 51
+		hqt(84112),	-- Level 52
+		hqt(84113),	-- Level 53
+		hqt(84114),	-- Level 54
+		hqt(84115),	-- Level 55
+		hqt(84116),	-- Level 56
+		hqt(84117),	-- Level 57
+		hqt(84118),	-- Level 58
+		hqt(84119),	-- Level 59
+		hqt(83330),	-- Level 60
+	}),
 	n(QUESTS, {
 		q(81514, {	-- Bountiful Delves
 			["sourceQuests"] = { 83315 },	-- Preparing for the Unknown
@@ -347,66 +409,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			["provider"] = { "i", 227794 },	-- Archaic Cipher Key
 			["repeatable"] = true,	-- TODO: weekly? seasonal?
 		}),
-		-- Brann Bronzebeard leveling quest,
-		q(77716),	-- Level 2
-		q(77718),	-- Level 3
-		q(77719),	-- Level 4
-		q(77720),	-- Level 5
-		q(77721),	-- Level 6
-		q(77722),	-- Level 7
-		q(77723),	-- Level 8
-		q(77724),	-- Level 9
-		q(77727),	-- Level 10
-		q(77728),	-- Level 11
-		q(77729),	-- Level 12
-		q(77730),	-- Level 13
-		q(77731),	-- Level 14
-		q(77732),	-- Level 15
-		q(77733),	-- Level 16
-		q(77734),	-- Level 17
-		q(77735),	-- Level 18
-		q(77736),	-- Level 19
-		q(77737),	-- Level 20
-		q(81509),	-- Level 21
-		q(81508),	-- Level 22
-		q(81507),	-- Level 23
-		q(79352),	-- Level 24
-		q(79351),	-- Level 25
-		q(84087),	-- Level 26
-		q(84088),	-- Level 27
-		q(84089),	-- Level 28
-		q(84090),	-- Level 29
-		q(84091),	-- Level 30
-		q(84092),	-- Level 31
-		q(84093),	-- Level 32
-		q(84094),	-- Level 33
-		q(84095),	-- Level 34
-		q(84096),	-- Level 35
-		q(84097),	-- Level 36
-		q(84098),	-- Level 37
-		q(84099),	-- Level 38
-		q(84100),	-- Level 39
-		q(84101),	-- Level 40
-		q(84102),	-- Level 41
-		q(84103),	-- Level 42
-		q(84104),	-- Level 43
-		q(84105),	-- Level 44
-		q(84106),	-- Level 45
-		q(84107),	-- Level 46
-		q(84108),	-- Level 47
-		q(84109),	-- Level 48
-		q(84110),	-- Level 49
-		q(83329),	-- Level 50
-		q(84111),	-- Level 51
-		q(84112),	-- Level 52
-		q(84113),	-- Level 53
-		q(84114),	-- Level 54
-		q(84115),	-- Level 55
-		q(84116),	-- Level 56
-		q(84117),	-- Level 57
-		q(84118),	-- Level 58
-		q(84119),	-- Level 59
-		q(83330),	-- Level 60
 	}),
 	n(QUESTS, sharedData({
 		["provider"] = { "n", 206017 },	-- Brann Bronzebeard
