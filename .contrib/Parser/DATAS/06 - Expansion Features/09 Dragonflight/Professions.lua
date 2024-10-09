@@ -216,6 +216,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				["coords"] = {
 					{ 60.2, 72.2, THE_WAKING_SHORES },
 					{ 71.7, 81.2, OHNAHRAN_PLAINS },
+					{ 39.4, 69.9, VALDRAKKEN },
 				},
 				["g"] = {
 					i(190456),	-- Artisan's Mettle

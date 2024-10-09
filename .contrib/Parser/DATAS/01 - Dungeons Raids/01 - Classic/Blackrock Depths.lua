@@ -1803,7 +1803,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["isBreadcrumb"] = true,
 					["lvl"] = 48,
 				}),
-
 				q(28393, {	-- A Dangerous Alliance [A]
 					["qgs"] = {
 						-- #if BEFORE SHADOWLANDS
@@ -3669,6 +3668,11 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(35902),	-- Blackrock Depths (Upper City) Reward Quest - Normal completion
 		q(35903),	-- Blackrock Depths (Detention Bonus) Reward Quest
 		q(35904),	-- Blackrock Depths (Everything) Reward Quest
+	}),
+	expansion(EXPANSION.TWW, {
+		-- Both of these keep getting reported completed on turnin of seemingly any BRD class quest regardless of race or faction
+		q(82739),	-- ???
+		q(82740),	-- Twilight Scheming (New 11.0 ID)
 	}),
 });
 -- #endif

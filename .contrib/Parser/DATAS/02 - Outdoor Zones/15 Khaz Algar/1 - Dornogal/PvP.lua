@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(83489, {	-- Gathering All Gladiators!
 					["provider"] = { "i", 225772 },	-- Artisan's Consortium Advertisement
 				}),
-				q(83711, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 } }, {	-- Weapons of Conquest
+				q(83711, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2, REMOVED_11_0_2 } }, {	-- Weapons of Conquest
 					["provider"] = { "n", 219222 },	-- Lalandi <Conquest Quartermaster>
 					["coord"] = { 55.0, 76.1, DORNOGAL },
 				})),

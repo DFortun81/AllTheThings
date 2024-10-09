@@ -236,7 +236,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			}, {	-- RENOWN 19 --
 			}, {	-- RENOWN 20 --
 				q(82381, {	-- A Scintillating Candle
-					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 					["providers"] = {
 						{ "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 						{ "n", 223726 },	-- Waxmonger Quiwik <Keeper of Renown>
@@ -251,7 +250,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 			}, {	-- RENOWN 21 --
 				q(82382, {	-- Crests
-					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 					["providers"] = {
 						{ "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 						{ "n", 223726 },	-- Waxmonger Quiwik <Keeper of Renown>
@@ -262,7 +260,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(85542, {	-- Take Really Big Candle!
-					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 					["providers"] = {
 						{ "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 						{ "n", 223726 },	-- Waxmonger Quiwik <Keeper of Renown>
@@ -277,7 +274,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 			}, {	-- RENOWN 22 --
 				q(82383, {	-- Brave Rocks
-					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 					["providers"] = {
 						{ "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 						{ "n", 223726 },	-- Waxmonger Quiwik <Keeper of Renown>
@@ -291,7 +287,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(85543, {	-- More Shinies!
-					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 					["providers"] = {
 						{ "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 						{ "n", 223726 },	-- Waxmonger Quiwik <Keeper of Renown>
@@ -303,7 +298,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 			}, {	-- RENOWN 23 --
 				q(83046, {	-- Carved Crests
-					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 					["providers"] = {
 						{ "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 						{ "n", 223726 },	-- Waxmonger Quiwik <Keeper of Renown>
@@ -315,7 +309,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 			}, {	-- RENOWN 24 --
 				q(82384, {	-- A Big, Big Shiny!
-					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 					["providers"] = {
 						{ "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 						{ "n", 223726 },	-- Waxmonger Quiwik <Keeper of Renown>
@@ -329,7 +322,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(85544, {	-- Many Little Shinies!
-					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 					["providers"] = {
 						{ "n", 221390 },	-- Waxmonger Squick <Quatermaster>
 						{ "n", 223726 },	-- Waxmonger Quiwik <Keeper of Renown>
@@ -343,6 +335,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 			}, {	-- RENOWN 25 --
+				q(82385, {	-- For What Glimmers in Candlelight
+					["providers"] = {
+						{ "n", 221390 },	-- Waxmonger Squick <Quatermaster>
+						{ "n", 223726 },	-- Waxmonger Quiwik <Keeper of Renown>
+					},
+					["coords"] = {
+						{ 47.5, 32.8, THE_RINGING_DEEPS },
+						{ 39.2, 24.0, DORNOGAL },
+					},
+					["g"] = {
+						i(226147),	-- Bunch of Rocks
+					},
+				}),
 				------ Paragon ------
 				q(79220, {	-- Renowned with the Assembly of the Deeps
 					["provider"] = { "n", 221390 },	-- Waxmonger Squick <Quatermaster>

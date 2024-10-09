@@ -464,6 +464,11 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 					i(224147),	-- Sureki Skyrazor (MOUNT!)
 					i(223144),	-- Formula: Enchant Weapon - Authority of the Depths (RECIPE!)
 				}),
+				n(QUESTS, {
+					q(84286, {	-- The Finer Things
+						["provider"] = { "n", 225184 },	-- Anub'azal
+					}),
+				}),
 			}),
 			Difficulty(DIFFICULTY.RAID.LFR).AddGroupsWithUpgrades({
 				ZoneDrops({

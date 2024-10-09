@@ -214,7 +214,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			q(66661, {	-- It's Just a Coin, What Could it Cost?
 				["description"] = "Automatically accepted when zoning into Oribos after completion of 'Crossing Fate'.",
 				["sourceQuests"] = { 66648 },	-- Crossing Fate
-				["timeline"] = { ADDED_9_2_5 },
+				["timeline"] = { ADDED_9_2_5, REMOVED_10_0_2_LAUNCH },
 			}),
 			q(51355, {	-- Secretest Fish
 				["description"] = "Can be found in Secret Fish Bubbles anywhere in Shadowlands zones. You must be wearing the Secret Fish Goggles to see/loot the bubbles.",

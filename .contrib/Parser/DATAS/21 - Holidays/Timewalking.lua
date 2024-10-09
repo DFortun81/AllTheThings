@@ -1361,6 +1361,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 		n(QUESTS, {
 			q(50316, {	-- Disturbance Detected: Ulduar
 				["provider"] = { "n", 130654 },	-- Vormu
+				["coord"] = { 49.5, 45.7, NORTHREND_DALARAN },
 				["isWeekly"] = true,
 				["timeline"] = { ADDED_7_3_5 },
 				["g"] = {

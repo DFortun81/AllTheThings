@@ -651,6 +651,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				q(56844),	--
 				q(56898),	--
 				q(57408),	--
+				q(54866),	--
 			})),
 
 			-- 8.2.5
