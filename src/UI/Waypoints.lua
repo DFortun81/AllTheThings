@@ -1,6 +1,7 @@
 -- Map Information Lib
 do
 local _, app = ...;
+local L = app.L
 local pairs, ipairs, math_floor, tinsert
 	= pairs, ipairs, math.floor, tinsert;
 local C_SuperTrack = C_SuperTrack;
@@ -379,7 +380,7 @@ app.AddEventHandler("OnReady", function()
 			-- If there are any persisted waypoints, recover their tooltips
 			local waypointsByMapID = tomTom.waypoints;
 			if not waypointsByMapID then return false; end
-			
+
 			for mapID,waypointsByMap in pairs(waypointsByMapID) do
 				for waypointUID,waypoint in pairs(waypointsByMap) do
 					if waypoint.from == "ATT" then
