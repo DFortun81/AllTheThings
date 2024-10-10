@@ -719,7 +719,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "n", 40065 },	-- Unbound Flame Spirit
 								{ "i", 53107 },	-- Flameseer's Staff
 							},
-							["cr"] = 25505,	-- Blazebound Elemental
+							["cr"] = 38896,	-- Blazebound Elemental
 						}),
 					},
 				}),
