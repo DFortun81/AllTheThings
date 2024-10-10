@@ -34,7 +34,10 @@ local function AddEventFunc(event, func)
 end
 
 local function GetReportPlayerLocation()
-	local mapID, px, py = app.GetPlayerPosition()
+	local mapID, px, py, fake = app.GetPlayerPosition()
+	if fake then
+		return UNKNOWN..", "..UNKNOWN..", "..tostring(mapID or UNKNOWN).." ("..(app.GetMapName(mapID) or "??")..")"
+	end
 	-- floor coords to nearest tenth
 	if px then px = round(px, 1) end
 	if py then py = round(py, 1) end
@@ -124,15 +127,25 @@ local function Check_coords(objRef, id, mapID, px, py)
 	return check or true
 end
 
+-- Temporary implementation until a better, global NPCDB provides similar data references
+-- These should be NPCs which are mobile in that they can have completely variable coordinates in game
+-- either by following the player or having player-based decisions that cause them to have any coordinates
+local MobileNPCDB = {
+	[221980] = true,	-- Faerin Lothar
+}
+
 local IgnoredQuestChecksByTypes = setmetatable({
 	Item = {
-		coord = 1,
-		provider = 1,
+		coord = app.ReturnTrue,
+		provider = app.ReturnTrue,
 	},
 	Player = {
-		coord = 1,
-		provider = 1
+		coord = app.ReturnTrue,
+		provider = app.ReturnTrue
 	},
+	Creature = {
+		coord = function(id) return MobileNPCDB[id] end,
+	}
 }, { __index = function() return app.EmptyTable end})
 
 local GuidTypeProviders = {
@@ -220,13 +233,15 @@ local function OnQUEST_DETAIL(...)
 	local guid = UnitGUID("questnpc") or UnitGUID("npc")
 	local providerid, guidtype, _
 	if guid then guidtype, _, _, _, _, providerid = ("-"):split(guid) end
+	providerid = tonumber(providerid)
 	app.PrintDebug(guidtype,providerid,app.NPCNameFromID[providerid] or app.ObjectNames[providerid]," => Quest #", questID)
 
 	-- check coord distance
-	local mapID, px, py = app.GetPlayerPosition()
+	local mapID, px, py, fake = app.GetPlayerPosition()
 
+	local ignoreCheckCoords = IgnoredQuestChecksByTypes[guidtype].coord
 	-- player position in some instances reports as 50,50 so don't check coords if it's this case
-	if not IgnoredQuestChecksByTypes[guidtype].coord and (px ~= 50 or py ~= 50) then
+	if not fake and not (ignoreCheckCoords and ignoreCheckCoords(providerid)) then
 		if not Check_coords(questRef, questRef[questRef.key], mapID, px, py) then
 			-- is this quest listed directly under an NPC which has coords instead? check that NPC for coords
 			-- e.g. Garrison NPCs Bronzebeard/Saurfang
@@ -249,7 +264,7 @@ local function OnQUEST_DETAIL(...)
 
 	-- check provider
 	if not IgnoredQuestChecksByTypes[guidtype].provider then
-		Check_providers(questID, questRef, GuidTypeProviders[guidtype], tonumber(providerid))
+		Check_providers(questID, questRef, GuidTypeProviders[guidtype], providerid)
 	end
 	-- app.PrintDebug("Contributor.OnQUEST_DETAIL.Done")
 end

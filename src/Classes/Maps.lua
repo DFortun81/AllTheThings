@@ -193,7 +193,7 @@ local function GetPlayerPosition()
 			return mapID, px * 100, py * 100;
 		end
 	end
-	return mapID, 50, 50;
+	return mapID, 50, 50, true
 end
 app.GetPlayerPosition = GetPlayerPosition
 local UpdateLocation
