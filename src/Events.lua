@@ -92,10 +92,6 @@ local EventSequence = {
 	OnStartup = {
 		"OnStartupDone"
 	},
-	-- TODO: probably remove, this is redundant now with current event sequencing
-	OnStartupDone = {
-		"OnRefreshSettings"
-	},
 	OnRefreshSettings = {
 		"OnSettingsRefreshed"
 	},
