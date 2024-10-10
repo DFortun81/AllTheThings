@@ -174,7 +174,7 @@ BLIZZARD_BALANCE = createPhase({
 		tw = "暴雪點數",
 	},
 	description = {
-		en = "This is locked behind a paywall such as the in-game shop, another Blizzard product, or the Recruit-A-Friend service.",
+		en = "This Thing is locked behind a paywall which requires Blizzard Balance or Real Money.",
 		--[[
 		es = "",
 		de = "",
