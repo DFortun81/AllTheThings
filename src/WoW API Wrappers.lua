@@ -128,7 +128,7 @@ end
 -- Quest APIs
 AssignAPIWrapper("IsQuestFlaggedCompletedOnAccount",
 	C_QuestLog and C_QuestLog.IsQuestFlaggedCompletedOnAccount,
-	function(id) return app.IsAccountCached("Quests",id) end)
+	function(questID) return app.IsAccountCached("Quests",questID) end)
 
 -- C_TradeSkillUI
 if C_TradeSkillUI then
