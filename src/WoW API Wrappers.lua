@@ -126,6 +126,7 @@ else
 end
 
 -- Quest APIs
+local C_QuestLog = C_QuestLog;
 AssignAPIWrapper("IsQuestFlaggedCompletedOnAccount",
 	C_QuestLog and C_QuestLog.IsQuestFlaggedCompletedOnAccount,
 	function(questID) return app.IsAccountCached("Quests",questID) end)
