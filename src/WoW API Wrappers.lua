@@ -44,49 +44,45 @@ local function AssignAPIWrapper(name, ...)
 end
 
 -- Faction APIs
-if not GetFactionInfoByID then
-	local C_Reputation = C_Reputation;
-	lib.GetFactionName = function(factionID)
-		local factionData = C_Reputation.GetFactionDataByID(factionID);
-		return factionData and factionData.name;
-	end
-	lib.GetFactionLore = function(factionID)
-		local factionData = C_Reputation.GetFactionDataByID(factionID);
-		return factionData and factionData.description;
-	end
-	lib.GetFactionBonusReputation = function(factionID)
-		return false;
-	end
-	lib.GetFactionCurrentReputation = function(factionID)
-		local factionData = C_Reputation.GetFactionDataByID(factionID);
-		return factionData and factionData.currentStanding or 0;
-	end
-	lib.GetFactionReputationCeiling = function(factionID)
-		local factionData = C_Reputation.GetFactionDataByID(factionID);
-		if factionData then return factionData.nextReactionThreshold - factionData.currentReactionThreshold; end
-	end
-	lib.GetFactionReaction = function(factionID)
-		local factionData = C_Reputation.GetFactionDataByID(factionID);
-		if factionData then return factionData.reaction; end
-	end
-else
-	local GetFactionInfoByID = GetFactionInfoByID;
-	lib.GetFactionName = function(factionID) return select(1, GetFactionInfoByID(factionID)); end
-	lib.GetFactionLore = function(factionID) return select(2, GetFactionInfoByID(factionID)); end
-	lib.GetFactionBonusReputation = function(factionID)
-		return select(15, GetFactionInfoByID(factionID));
-	end
-	lib.GetFactionCurrentReputation = function(factionID)
-		return select(6, GetFactionInfoByID(factionID)) or 0;
-	end
-	lib.GetFactionReputationCeiling = function(factionID)
-		local _, _, _, m, ma = GetFactionInfoByID(factionID);
-		return ma and m and (ma - m);
-	end
-	lib.GetFactionReaction = function(factionID)
-		return select(3, GetFactionInfoByID(factionID));
-	end
-end
+local C_Reputation = C_Reputation;
+---@diagnostic disable: deprecated
+AssignAPIWrapper("GetFactionName",
+	C_Reputation and C_Reputation.GetFactionDataByID and
+	function(factionID)	local factionData = C_Reputation.GetFactionDataByID(factionID)
+	return factionData and factionData.name end,
+	GetFactionInfoByID and
+	function(factionID) return select(1, GetFactionInfoByID(factionID)) end);
+AssignAPIWrapper("GetFactionLore",
+	C_Reputation and C_Reputation.GetFactionDataByID and
+	function(factionID)	local factionData = C_Reputation.GetFactionDataByID(factionID)
+	return factionData and factionData.description end,
+	GetFactionInfoByID and
+	function(factionID) return select(2, GetFactionInfoByID(factionID)) end);
+AssignAPIWrapper("GetFactionBonusReputation",
+	C_Reputation and C_Reputation.GetFactionDataByID and
+	function(factionID)	local factionData = C_Reputation.GetFactionDataByID(factionID)
+	return factionData and factionData.hasBonusRepGain end,
+	GetFactionInfoByID and
+	function(factionID) return select(15, GetFactionInfoByID(factionID)) end);
+AssignAPIWrapper("GetFactionCurrentReputation",
+	C_Reputation and C_Reputation.GetFactionDataByID and
+	function(factionID)	local factionData = C_Reputation.GetFactionDataByID(factionID)
+	return factionData and factionData.currentStanding or 0 end,
+	GetFactionInfoByID and
+	function(factionID) return select(6, GetFactionInfoByID(factionID)) or 0 end);
+AssignAPIWrapper("GetFactionReputationCeiling",
+	C_Reputation and C_Reputation.GetFactionDataByID and
+	function(factionID)	local factionData = C_Reputation.GetFactionDataByID(factionID)
+	return factionData and (factionData.nextReactionThreshold - factionData.currentReactionThreshold) end,
+	GetFactionInfoByID and
+	function(factionID) local _, _, _, m, ma = GetFactionInfoByID(factionID) return ma and m and (ma - m) end);
+AssignAPIWrapper("GetFactionReaction",
+	C_Reputation and C_Reputation.GetFactionDataByID and
+	function(factionID)	local factionData = C_Reputation.GetFactionDataByID(factionID)
+	return factionData and factionData.reaction end,
+	GetFactionInfoByID and
+	function(factionID) return select(3, GetFactionInfoByID(factionID)) end);
+---@diagnostic enable: deprecated
 
 -- Item APIs
 local C_Item = C_Item;
