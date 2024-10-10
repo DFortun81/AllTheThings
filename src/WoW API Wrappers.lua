@@ -131,21 +131,13 @@ AssignAPIWrapper("IsQuestFlaggedCompletedOnAccount",
 	function(questID) return app.IsAccountCached("Quests",questID) end)
 
 -- C_TradeSkillUI
-if C_TradeSkillUI then
-	local C_TradeSkillUI = C_TradeSkillUI;
+local C_TradeSkillUI = C_TradeSkillUI;
 
-	-- Warning: Blizzard introduced C_TradeSkillUI.GetTradeSkillTexture in Patch 4.0.1, and I have not found any information on when GetTradeSkillTexture was deprecated or removed, as well as its parameters or return values.
-	-- Therefore, lib.GetTradeSkillTexture will always use the implementation of C_TradeSkillUI.GetTradeSkillTexture in all cases.
-	-- As a result, the fallback to GetTradeSkillTexture has not been tested and is not guaranteed to work.
-	if C_TradeSkillUI.GetTradeSkillTexture then lib.GetTradeSkillTexture = C_TradeSkillUI.GetTradeSkillTexture;
-	---@diagnostic disable-next-line: deprecated
-	elseif GetTradeSkillTexture then lib.GetTradeSkillTexture = GetTradeSkillTexture;
-	else GetTradeSkillTexture = nil; end
-else
-	---@diagnostic disable-next-line: deprecated
-	if GetTradeSkillTexture then lib.GetTradeSkillTexture = GetTradeSkillTexture;
-	else GetTradeSkillTexture = nil; end
-end
+-- Warning: Blizzard introduced C_TradeSkillUI.GetTradeSkillTexture in Patch 4.0.1, and I have not found any information on when GetTradeSkillTexture was deprecated or removed, as well as its parameters or return values.
+-- Therefore, lib.GetTradeSkillTexture will always use the implementation of C_TradeSkillUI.GetTradeSkillTexture in all cases.
+-- As a result, the fallback to GetTradeSkillTexture has not been tested and is not guaranteed to work.
+---@diagnostic disable-next-line: deprecated, undefined-global
+AssignAPIWrapper("GetTradeSkillTexture", C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillTexture, GetTradeSkillTexture);
 
 if C_Spell then
 	local C_Spell = C_Spell;
