@@ -715,7 +715,11 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 47.7, 35.5, MOUNT_HYJAL },
 					["groups"] = {
 						objective(1, {	-- 0/30 Unbound Flame Spirit slain
-							["provider"] = { "n", 40065 },	-- Unbound Flame Spirit
+							["providers"] = {
+								{ "n", 40065 },	-- Unbound Flame Spirit
+								{ "i", 53107 },	-- Flameseer's Staff
+							},
+							["cr"] = 25505,	-- Blazebound Elemental
 						}),
 					},
 				}),
