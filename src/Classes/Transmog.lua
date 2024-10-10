@@ -941,16 +941,18 @@ app.BuildSourceInformationForPopout = function(group)
 			local appearanceGroup;
 			if #g > 0 then
 				appearanceGroup = app.CreateNPC(app.HeaderConstants.SHARED_APPEARANCES, {
-					["OnUpdate"] = app.AlwaysShowUpdate,
-					["sourceIgnored"] = true,
-					["skipFill"] = true,
-					["g"] = g,
+					OnUpdate = app.AlwaysShowUpdate,
+					OnClick = app.UI.OnClick.IgnoreRightClick,
+					sourceIgnored = true,
+					skipFill = true,
+					g = g,
 				});
 			else
 				appearanceGroup = app.CreateNPC(app.HeaderConstants.UNIQUE_APPEARANCE, {
-					["OnUpdate"] = app.AlwaysShowUpdate,
-					["sourceIgnored"] = true,
-					["skipFill"] = true,
+					OnUpdate = app.AlwaysShowUpdate,
+					OnClick = app.UI.OnClick.IgnoreRightClick,
+					sourceIgnored = true,
+					skipFill = true,
 				});
 			end
 			-- add the group showing the Appearance information for this popout

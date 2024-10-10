@@ -19,7 +19,7 @@ local ipairs, select, tinsert, tonumber, type, GetAchievementInfo, GetAchievemen
 	---@diagnostic disable-next-line: deprecated
 	= ipairs, select, tinsert, tonumber, type, GetAchievementInfo, GetAchievementLink,
 		C_TransmogCollection.GetSourceInfo, C_TransmogSets.GetSetInfo, C_TransmogSets.GetAllSourceIDs;
-	
+
 -- Gear Sets
 app.CreateGearSet = app.CreateClass("GearSet", "setID", {
 	["info"] = function(t)
@@ -169,15 +169,17 @@ app.BuildGearSetInformationForGroup = function(group)
 			end
 			-- add the group showing the related Set information for this popout
 			if not group.g then group.g = { app.CreateGearSet(setID, {
-				["OnUpdate"] = app.AlwaysShowUpdate,
-				["sourceIgnored"] = true,
-				["skipFill"] = true,
-				["g"] = g }) }
+				OnUpdate = app.AlwaysShowUpdate,
+				OnClick = app.UI.OnClick.IgnoreRightClick,
+				sourceIgnored = true,
+				skipFill = true,
+				g = g }) }
 			else tinsert(group.g, app.CreateGearSet(setID, {
-				["OnUpdate"] = app.AlwaysShowUpdate,
-				["sourceIgnored"] = true,
-				["skipFill"] = true,
-				["g"] = g })) end
+				OnUpdate = app.AlwaysShowUpdate,
+				OnClick = app.UI.OnClick.IgnoreRightClick,
+				sourceIgnored = true,
+				skipFill = true,
+				g = g })) end
 		end
 	end
 end
