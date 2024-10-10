@@ -12293,9 +12293,9 @@ _.ObjectModels = {
 -- Phase Database Module
 _.PhaseConstants = {
 	BLACK_MARKET = 9,
-	REAL_MONEY = 3,
 	ELITE_PVP_REQUIREMENT = 4,
 	NEVER_IMPLEMENTED = 1,
+	REAL_MONEY = 3,
 	REMOVED_FROM_GAME = 2,
 	TCG = 10,
 	UNLEARNABLE = 5,
