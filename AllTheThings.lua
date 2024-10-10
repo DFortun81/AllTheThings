@@ -1975,28 +1975,6 @@ local function HasCost(group, idType, id)
 	end
 	return false;
 end
-local function GetRelativeDifficulty(group, difficultyID)
-	if group then
-		if group.difficultyID then
-			if group.difficultyID == difficultyID then
-				return true;
-			end
-			if group.difficulties then
-				for i, difficulty in ipairs(group.difficulties) do
-					if difficulty == difficultyID then
-						return true;
-					end
-				end
-			end
-			return false;
-		end
-		if group.parent then
-			return GetRelativeDifficulty(group.sourceParent or group.parent, difficultyID);
-		else
-			return true;
-		end
-	end
-end
 local SummarizeShowForActiveRowKeys
 local function AddContainsData(group, tooltipInfo)
 	local key = group.key
@@ -2342,6 +2320,7 @@ app.AddEventHandler("OnLoad", function()
 end)
 
 local searching
+local GetRelativeDifficulty = app.GetRelativeDifficulty
 local function GetSearchResults(method, paramA, paramB, options)
 	-- app.PrintDebug("GetSearchResults",method,paramA,paramB,...)
 	if not method then
