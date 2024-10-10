@@ -7088,13 +7088,13 @@ local function UpdateWindow(self, force, got)
 				-- always a header row
 				-- print("any data",#self.Container,#self.rowData,#data)
 				if #self.rowData < 2 then
-					tinsert(self.rowData, {
-						["text"] = L.NO_ENTRIES,
-						["description"] = L.NO_ENTRIES_DESC,
-						["collectible"] = 1,
-						["collected"] = 1,
-						["back"] = 0.7
-					});
+					tinsert(self.rowData, app.CreateRawText(L.NO_ENTRIES, {
+						description = L.NO_ENTRIES_DESC,
+						collectible = 1,
+						collected = 1,
+						back = 0.7,
+						OnClick = app.UI.OnClick.IgnoreRightClick
+					}))
 				end
 			else
 				self.missingData = true;
