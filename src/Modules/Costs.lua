@@ -498,7 +498,7 @@ do
 end	-- Cost Collector Handling
 
 -- build a 'Cost' group which matches the "cost"/"providers (items)" tag of this group
-app.BuildCost = function(group)
+local function BuildCost(group)
 	local cost = group.cost;
 	cost = cost and type(cost) == "table" and cost;
 	local providers = group.providers;
@@ -506,12 +506,13 @@ app.BuildCost = function(group)
 
 	-- Pop out the cost objects into their own sub-groups for accessibility
 	local costGroup = app.CreateRawText(L.COST, {
-		["description"] = L.COST_DESC,
-		["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
-		["sourceIgnored"] = true,
-		["OnUpdate"] = app.AlwaysShowUpdate,
-		["skipFill"] = true,
-		["g"] = {},
+		description = L.COST_DESC,
+		icon = "Interface\\Icons\\INV_Misc_Coin_02",
+		sourceIgnored = true,
+		OnUpdate = app.AlwaysShowUpdate,
+		skipFill = true,
+		SortPriority = 1.0,
+		g = {},
 		OnClick = app.UI.OnClick.IgnoreRightClick,
 	});
 	-- Gold cost currently ignored
@@ -553,16 +554,17 @@ end
 -- Begins an async operation using a Runner to progressively accummulate the entirety of the 'cost'/'provider'
 -- information contained by all groups within the provided 'group'
 -- and captures the information into trackable Cost groups under a 'Total Costs' header
-app.BuildTotalCost = function(group)
+local function BuildTotalCost(group)
 	if not group.g then return end
 
 	-- Pop out the cost totals into their own sub-groups for accessibility
 	local costGroup = app.CreateRawText(L.COST_TOTAL, {
-		["description"] = L.COST_TOTAL_DESC,
-		["icon"] = "Interface\\Icons\\inv_misc_coinbag_special",
-		["sourceIgnored"] = true,
-		["skipFill"] = true,
-		["g"] = {},
+		description = L.COST_TOTAL_DESC,
+		icon = "Interface\\Icons\\inv_misc_coinbag_special",
+		sourceIgnored = true,
+		skipFill = true,
+		SortPriority = 1.1,
+		g = {},
 		OnClick = app.UI.OnClick.IgnoreRightClick,
 	});
 
@@ -590,3 +592,6 @@ app.BuildTotalCost = function(group)
 	-- Add the cost group to the popout
 	app.NestObject(group, costGroup, nil, 1);
 end
+
+app.AddEventHandler("OnNewPopoutGroup", BuildCost)
+app.AddEventHandler("OnNewPopoutGroup", BuildTotalCost)

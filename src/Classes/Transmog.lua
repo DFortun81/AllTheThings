@@ -15,7 +15,6 @@ if not C_TransmogCollection then
 
 	-- External Functionality
 	app.AddSourceInformation = app.EmptyFunction;
-	app.BuildSourceInformationForPopout = app.EmptyFunction;
 	app.GetGroupSourceID = app.EmptyFunction
 
 	-- Extend the Filter Module to include ItemSource
@@ -896,7 +895,7 @@ app.AddSourceInformation = function(sourceID, info, group)
 		return working;
 	end
 end
-app.BuildSourceInformationForPopout = function(group)
+local function BuildSourceInformationForPopout(group)
 	-- Create groups showing Appearance information
 	if group.sourceID then
 		-- print(group.__type)
@@ -945,6 +944,7 @@ app.BuildSourceInformationForPopout = function(group)
 					OnClick = app.UI.OnClick.IgnoreRightClick,
 					sourceIgnored = true,
 					skipFill = true,
+					SortPriority = 2.0,
 					g = g,
 				});
 			else
@@ -953,17 +953,16 @@ app.BuildSourceInformationForPopout = function(group)
 					OnClick = app.UI.OnClick.IgnoreRightClick,
 					sourceIgnored = true,
 					skipFill = true,
+					SortPriority = 2.0,
 				});
 			end
 			-- add the group showing the Appearance information for this popout
 			if group.g then tinsert(group.g, appearanceGroup)
 			else group.g = { appearanceGroup } end
 		end
-
-		-- Now apply Gear Sets, if relevant.
-		app.BuildGearSetInformationForGroup(group);
 	end
 end
+app.AddEventHandler("OnNewPopoutGroup", BuildSourceInformationForPopout)
 
 -- Event Handling
 app.AddEventRegistration("TRANSMOG_COLLECTION_SOURCE_ADDED", function(sourceID)

@@ -3196,6 +3196,16 @@ app.FillGroups = function(group)
 	-- if app.Debugging then app.PrintTable(included) end
 	-- app.PrintDebug("FillGroups Complete",group.hash,group.__type)
 end
+local function TryFillPopoutGroup(group)
+	-- If the group specifically needs to be filled, do that now that it's in the window
+	if not group.__FillGroups then
+		-- app.PrintDebug("DoFillGroups",app:SearchLink(group))
+		app.SetSkipLevel(2)
+		app.FillGroups(group)
+		app.SetSkipLevel(0)
+	end
+end
+app.AddEventHandler("OnNewPopoutGroup", TryFillPopoutGroup)
 end	-- Auto-Expansion Logic
 
 (function()
@@ -3263,7 +3273,7 @@ local function GetThingSources(field, value)
 end
 
 -- Builds a 'Source' group from the parent of the group (or other listings of this group) and lists it under the group itself for
-app.BuildSourceParent = function(group)
+local function BuildSourceParent(group)
 	-- only show sources for Things or specific of other types
 	if not group or not group.key then return; end
 	local groupKey, thingKeys = group.key, app.ThingKeys;
@@ -3403,11 +3413,12 @@ app.BuildSourceParent = function(group)
 		if #parents > 0 then
 			-- app.PrintDebug("Found parents",#parents)
 			local sourceGroup = app.CreateRawText(L.SOURCES, {
-				["description"] = L.SOURCES_DESC,
-				["icon"] = "Interface\\Icons\\inv_misc_spyglass_02",
-				["OnUpdate"] = app.AlwaysShowUpdate,
-				["skipFill"] = true,
-				["g"] = {},
+				description = L.SOURCES_DESC,
+				icon = "Interface\\Icons\\inv_misc_spyglass_02",
+				OnUpdate = app.AlwaysShowUpdate,
+				skipFill = true,
+				SortPriority = 0.5,
+				g = {},
 				OnClick = app.UI.OnClick.IgnoreRightClick,
 			})
 			local clonedParent, keepSource;
@@ -3431,6 +3442,7 @@ app.BuildSourceParent = function(group)
 		end
 	end
 end
+app.AddEventHandler("OnNewPopoutGroup", BuildSourceParent)
 end)();
 
 
@@ -5698,14 +5710,6 @@ function app:CreateMiniListForGroup(group)
 
 		group.isPopout = true
 
-		-- If the group specifically needs to be filled, do that now that it's in the window
-		if not group.__FillGroups then
-			app.PrintDebug("DoFillGroups",app:SearchLink(group))
-			app.SetSkipLevel(2)
-			app.FillGroups(group)
-			app.SetSkipLevel(0)
-		end
-
 		-- Insert the data group into the Raw Data table.
 		-- app.PrintDebug(Colorize("popout",app.Colors.ChatLink))
 		-- app.PrintTable(group)
@@ -5738,8 +5742,6 @@ function app:CreateMiniListForGroup(group)
 			self:BaseUpdate(force or got, got);
 		end
 
-		-- Create groups showing Appearance information
-		app.BuildSourceInformationForPopout(group);
 		if showing and ((group.key == "questID" and group.questID) or group.sourceQuests) then
 			-- if the group was created from a popout and thus contains its own pre-req quests already, then clean out direct quest entries from the group
 			if group.g then
@@ -5930,12 +5932,9 @@ function app:CreateMiniListForGroup(group)
 			end
 		end
 
-		-- if popping out a thing with a sourced parent, generate a Source group to allow referencing the Source of the thing directly
-		app.BuildSourceParent(popout.data);
-		-- if popping out a thing with a Cost, generate a Cost group to allow referencing the Cost things directly
-		app.BuildCost(popout.data);
-		-- sum up all the sub-group costs into a Total Costs group
-		app.BuildTotalCost(popout.data)
+		app.HandleEvent("OnNewPopoutGroup", popout.data)
+		-- Sort any content added to the Popout data by the Global sort
+		app.Sort(popout.data.g, app.SortDefaults.Global)
 
 		popout:BuildData();
 		-- always expand all groups on initial creation

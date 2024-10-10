@@ -5,7 +5,6 @@ if not C_TransmogSets then
 	app.CreateGearSet = app.CreateUnimplementedClass("GearSet", "setID");
 	app.CreateGearSetHeader = app.CreateUnimplementedClass("GearSetHeader", "gearSetHeaderID");
 	app.CreateGearSetSubHeader = app.CreateUnimplementedClass("GearSetSubHeader", "gearSetSubHeaderID");
-	app.BuildGearSetInformationForGroup = app.EmptyFunction;
 	return
 end
 
@@ -118,7 +117,7 @@ app.CreateGearSetSubHeader = app.CreateClass("GearSetSubHeader", "gearSetSubHead
 
 local C_TransmogSets_GetVariantSets, C_TransmogSets_GetAllSourceIDs, C_TransmogSets_GetAllSets
 	= C_TransmogSets.GetVariantSets, C_TransmogSets.GetAllSourceIDs, C_TransmogSets.GetAllSets;
-app.BuildGearSetInformationForGroup = function(group)
+local function BuildGearSetInformationForGroup(group)
 	-- Determine if this source is part of a set or two.
 	local allSets = {};
 	local sourceSets = {};
@@ -173,13 +172,16 @@ app.BuildGearSetInformationForGroup = function(group)
 				OnClick = app.UI.OnClick.IgnoreRightClick,
 				sourceIgnored = true,
 				skipFill = true,
+				SortPriority = 2.1,
 				g = g }) }
 			else tinsert(group.g, app.CreateGearSet(setID, {
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = app.UI.OnClick.IgnoreRightClick,
 				sourceIgnored = true,
 				skipFill = true,
+				SortPriority = 2.1,
 				g = g })) end
 		end
 	end
 end
+app.AddEventHandler("OnNewPopoutGroup", BuildGearSetInformationForGroup)
