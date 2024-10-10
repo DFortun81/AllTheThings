@@ -4798,7 +4798,7 @@ local function UpdateGroup(group, parent)
 	-- Determine if this user can enter the instance or acquire the item and item is equippable/usable
 	-- Things which are determined to be a cost for something else which meets user filters will
 	-- be shown anyway, so don't need to undergo a filtering pass
-	local valid = group.isCost
+	local valid = group.isCost or group.forceShow
 	-- if valid then
 		-- app.PrintDebug("Pre-valid group as from cost/upgrade",group.isCost,group.isUpgrade,app:SearchLink(group))
 	-- end
