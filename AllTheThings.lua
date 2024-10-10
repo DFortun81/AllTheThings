@@ -1096,7 +1096,7 @@ local ResolveFunctions = {
 		level = level or 1;
 		-- an search for the specific 'o' to retrieve the source parent since the parent is not always actually attached to the reference resolving the symlink
 		local parent
-		local searchedObject = app.SearchForMergedObject(o.key, o[o.key]);
+		local searchedObject = app.SearchForObject(o.key, o[o.key], "key");
 		if searchedObject then
 			parent = searchedObject.parent;
 			while level > 1 do
@@ -3771,32 +3771,6 @@ app.AddEventHandler("OnReady", function()
 	end
 end);
 end)();
-
--- NOTE: Don't use this for Items, because modIDs and bonusIDs are stupid
-app.SearchForMergedObject = function(field, id)
-	local fcache = SearchForField(field, id);
-	local count = #fcache;
-	if count > 0 then
-		-- quick escape for single cache results! hooray!
-		if count == 1 then
-			return fcache[1];
-		end
-		-- find a filter-match object first
-		local fcacheObj, merged;
-		for i=1,#fcache,1 do
-			fcacheObj = fcache[i];
-			if fcacheObj.key == field then
-				if not merged then
-					merged = CreateObject(fcacheObj);
-				else
-					MergeProperties(merged, fcacheObj);
-				end
-			end
-		end
-		-- return the merged object
-		return merged;
-	end
-end
 
 -- Item Information Lib
 -- Dynamically increments the progress for the parent heirarchy of each collectible search result

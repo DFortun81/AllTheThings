@@ -154,7 +154,7 @@ local function BuildGearSetInformationForGroup(group)
 			g = {};
 			setID = tonumber(setID);
 			for _,sourceID in ipairs(allSets[setID]) do
-				local search = app.SearchForMergedObject("sourceID", sourceID);
+				local search = app.SearchForObject("sourceID", sourceID, "key");
 				if search then
 					search = app.__CreateObject(search, true);
 					search.hideText = true;

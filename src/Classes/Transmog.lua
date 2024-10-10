@@ -917,7 +917,7 @@ local function BuildSourceInformationForPopout(group)
 			for _,otherSourceID in ipairs(C_TransmogCollection_GetAllAppearanceSources(sourceInfo.visualID)) do
 				-- If this isn't the source we already did work on and we haven't already completed it
 				if otherSourceID ~= group.sourceID then
-					local shared = app.SearchForMergedObject("sourceID", otherSourceID);
+					local shared = app.SearchForObject("sourceID", otherSourceID, "key");
 					if shared then
 						shared = app.__CreateObject(shared, true);
 						shared.hideText = true;
