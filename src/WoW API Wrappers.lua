@@ -140,40 +140,26 @@ local C_TradeSkillUI = C_TradeSkillUI;
 ---@diagnostic disable-next-line: deprecated, undefined-global
 AssignAPIWrapper("GetTradeSkillTexture", C_TradeSkillUI and C_TradeSkillUI.GetTradeSkillTexture, GetTradeSkillTexture);
 
-if C_Spell then
-	local C_Spell = C_Spell;
+-- Spell API
+local C_Spell = C_Spell;
 
-	-- Warning: The API Wrapper for GetSpellLink is not completely equivalent.
-	-- GetSpellLink accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
-	-- Currently, only the first type is implemented.
-	-- The traditional GetSpellLink returns two values: SpellLink and SpellID, but all of usages only utilize SpellLink.
-	-- The C_Spell.GetSpellLink only returns SpellLink.
-	-- For performance reasons, lib.GetSpellLink only returns SpellLink.
-	if C_Spell.GetSpellLink then lib.GetSpellLink = C_Spell.GetSpellLink;
-	---@diagnostic disable-next-line: deprecated, duplicate-set-field
-	elseif GetSpellLink then lib.GetSpellLink = function(SpellIdentifier)
-		return select(1, GetSpellLink(SpellIdentifier));
-	end
-	else lib.GetSpellLink = nil; end
+-- Warning: The API Wrapper for GetSpellLink is not completely equivalent.
+-- GetSpellLink accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
+-- Currently, only the first type is implemented.
+-- The traditional GetSpellLink returns two values: SpellLink and SpellID, but all of usages only utilize SpellLink.
+-- The C_Spell.GetSpellLink only returns SpellLink.
+-- For performance reasons, lib.GetSpellLink only returns SpellLink.
+---@diagnostic disable: deprecated
+AssignAPIWrapper("GetSpellLink", C_Spell and C_Spell.GetSpellLink,
+	function(SpellIdentifier) return select(1, GetSpellLink(SpellIdentifier)) end);
 
-	-- Warning: The API Wrapper for GetSpellIcon is not completely equivalent.
-	-- GetSpellTexture accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
-	-- Currently, only the first type is implemented.
-	-- The C_Spell.GetSpellTexture returns two values: iconID and originalIconID, but all of usages only utilize iconID.
-	-- The traditional GetSpellTexture only returns iconID.
-	-- For performance reasons, lib.GetSpellIcon only returns iconID.
-	if C_Spell.GetSpellTexture then lib.GetSpellIcon = function(SpellIdentifier) return select(1, C_Spell.GetSpellTexture(SpellIdentifier)); end
-	---@diagnostic disable-next-line: deprecated
-	elseif GetSpellTexture then lib.GetSpellIcon = GetSpellTexture;
-	else lib.GetSpellIcon = nil; end
-else
-	---@diagnostic disable-next-line: deprecated, duplicate-set-field
-	if GetSpellLink then lib.GetSpellLink = function(SpellIdentifier)
-		return select(1, GetSpellLink(SpellIdentifier));
-	end
-	else lib.GetSpellLink = nil; end
-
-	---@diagnostic disable-next-line: deprecated
-	if GetSpellTexture then lib.GetSpellIcon = GetSpellTexture;
-	else lib.GetSpellIcon = nil; end
-end
+-- Warning: The API Wrapper for GetSpellIcon is not completely equivalent.
+-- GetSpellTexture accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
+-- Currently, only the first type is implemented.
+-- The C_Spell.GetSpellTexture returns two values: iconID and originalIconID, but all of usages only utilize iconID.
+-- The traditional GetSpellTexture only returns iconID.
+-- For performance reasons, lib.GetSpellIcon only returns iconID.
+AssignAPIWrapper("GetSpellIcon",
+	C_Spell and C_Spell.GetSpellTexture and function(SpellIdentifier) return select(1, C_Spell.GetSpellTexture(SpellIdentifier)) end,
+	GetSpellTexture);
+---@diagnostic enable: deprecated
