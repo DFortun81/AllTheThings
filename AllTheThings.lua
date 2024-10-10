@@ -5302,6 +5302,7 @@ end
 
 app.Windows = {};
 local function ClearRowData(self)
+	self.__ref = self.ref
 	self.ref = nil;
 	self.Background:Hide();
 	self.Texture:Hide();
@@ -5480,6 +5481,9 @@ local function SetRowData(self, row, data)
 		row:Hide();
 	end
 end
+---@class ATTGameTooltip: GameTooltip
+local GameTooltip = GameTooltip;
+local RowOnEnter, RowOnLeave;
 local CreateRow;
 local function Refresh(self)
 	if not self:IsVisible() then return; end
@@ -5592,6 +5596,15 @@ local function Refresh(self)
 		self.processingLinks = nil;
 	end
 	-- app.PrintDebugPrior("Refreshed:",self.Suffix)
+	if GameTooltip and GameTooltip:IsVisible() then
+		local row = GameTooltip:GetOwner()
+		if row and row.__ref ~= row.ref then
+			-- app.PrintDebug("owner.ref",app:SearchLink(row.ref))
+			-- force tooltip to refresh since the scroll has changed for but the tooltip is still visible
+			RowOnLeave(row)
+			RowOnEnter(row)
+		end
+	end
 end
 local function IsSelfOrChild(self, focus)
 	-- This function helps validate that the focus is within the local hierarchy.
@@ -6161,7 +6174,6 @@ function app:CreateMiniListForGroup(group)
 	return popout;
 end
 
-local RowOnEnter, RowOnLeave;
 local function RowOnClick(self, button)
 	local reference = self.ref;
 	if reference then
@@ -6354,8 +6366,6 @@ local function RowOnClick(self, button)
 	end
 end
 
----@class ATTGameTooltip: GameTooltip
-local GameTooltip = GameTooltip;
 RowOnEnter = function (self)
 	local reference = self.ref;
 	if not reference then return; end
