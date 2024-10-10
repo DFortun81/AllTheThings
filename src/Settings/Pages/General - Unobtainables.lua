@@ -38,7 +38,7 @@ local AvailabilityConditions = {
 	2,	-- Removed From Game
 	6,	-- Conditionally Available
 	0,	-- Blank Space
-	3,	-- Blizzard Balance
+	3,	-- Real Money
 	9,	-- Black Market AH
 	10,	-- Trading Card Game
 	0,	-- Blank Space
@@ -70,7 +70,7 @@ if app.IsClassic then
 		1,	-- Never Implemented
 		2,	-- Removed From Game
 		0,	-- Blank Space
-		3,	-- Blizzard Balance
+		3,	-- Real Money
 		4	-- PvP Elite / Gladiator
 	};
 end

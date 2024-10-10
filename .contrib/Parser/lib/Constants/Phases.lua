@@ -152,13 +152,13 @@ REMOVED_FROM_GAME = createPhase({
 	},
 });
 REAL_MONEY = createPhase({
-	readable = "Blizzard Balance",
+	readable = "Real Money",
 	constant = "REAL_MONEY",
 	export = true,
 	phaseID = 3,
 	state = 3,
 	text = {
-		en = "Blizzard Balance",
+		en = "Real Money",
 		--[[
 		es = "",
 		de = "",

@@ -214,7 +214,7 @@ local UnobtainableSettingsBase = {
 	__index = {
 		[1] = false,	-- Never Implemented
 		[2] = false,	-- Removed From Game
-		[3] = false,	-- Blizzard Balance
+		[3] = false,	-- Real Money
 	},
 };
 

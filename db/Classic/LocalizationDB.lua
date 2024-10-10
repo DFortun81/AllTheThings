@@ -2448,7 +2448,7 @@ local phases = {
 		state = 1,
 	},
 	[3] = {
-		name = "Blizzard Balance",
+		name = "Real Money",
 		description = "|cFFAAFFAAThis Thing is locked behind a paywall which requires Blizzard Balance or Real Money.|r",
 		lore = "|cFFFFAAAAThe act of encouraging the use of real money in any version of the game is widely frowned upon. Participate in this content at your own risk.|r",
 		state = 3,
