@@ -2386,6 +2386,11 @@ local function OnInitForPopout(self, group)
 	self.data.indent = 0;
 	self.data.total = 0;
 	self.data.progress = 0;
+	app.HandleEvent("OnNewPopoutGroup", self.data);
+	if self.data.g then
+		-- Sort any content added to the Popout data by the Global sort
+		app.Sort(self.data.g, app.SortDefaults.Global)
+	end
 
 	-- If this is an achievement, build the criteria within it if possible.
 	local achievementID = group.achievementID;
