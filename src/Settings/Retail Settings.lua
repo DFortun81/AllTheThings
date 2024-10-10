@@ -306,11 +306,6 @@ settings.Initialize = function(self)
 
 	app._SettingsRefresh = GetTimePreciseSec()
 	settings._Initialize = true
-
-	-- setup settings refresh functionality now that we're done initializing
-	settings.Refresh = function()
-		app.CallbackEvent("OnRefreshSettings");
-	end
 	-- app.PrintDebug("settings.Initialize:Done")
 end
 -- dumb self-referencing...
@@ -712,6 +707,18 @@ local function Refresh()
 end
 app.AddEventHandler("OnRefreshSettings", Refresh)
 settings.Refresh = app.EmptyFunction	-- Refresh triggers when Initializing Settings, which we don't want to do anything yet
+-- setup settings refresh functionality once Startup is done
+-- there's some tooltip settings updates during quest refresh triggered during Onstartup
+-- that inadvertently trigger an unexpected settings refresh which delays the loading sequence
+-- by a micro-amount. Let's just avoid refreshing the settings until OnStartupDone
+app.AddEventHandler("OnStartupDone", function()
+	settings.Refresh = function(self, source)
+		-- app.PrintDebug("settings.Refresh",source)
+		app.CallbackEvent("OnRefreshSettings");
+	end
+	-- do an immediate Refresh as well
+	Refresh()
+end)
 
 local function Mixin(o, mixin)
 	for k,v in pairs(mixin) do
