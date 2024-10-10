@@ -944,7 +944,7 @@ local function BuildSourceInformationForPopout(group)
 					OnClick = app.UI.OnClick.IgnoreRightClick,
 					sourceIgnored = true,
 					skipFill = true,
-					SortPriority = 2.0,
+					SortPriority = -2.3,
 					g = g,
 				});
 			else
@@ -953,7 +953,7 @@ local function BuildSourceInformationForPopout(group)
 					OnClick = app.UI.OnClick.IgnoreRightClick,
 					sourceIgnored = true,
 					skipFill = true,
-					SortPriority = 2.0,
+					SortPriority = -2.3,
 				});
 			end
 			-- add the group showing the Appearance information for this popout
