@@ -1423,7 +1423,7 @@ settings.UpdateMode = function(self, doRefresh)
 	doRefresh = doRefresh == "FORCE" or (doRefresh and not settings:Get("Skip:AutoRefresh"))
 	if doRefresh then
 		app.HandleEvent("OnSettingsNeedsRefresh")
-		app.HandleEvent("OnRecalculate")
+		app.CallbackEvent("OnRecalculate")
 		self.NeedsRefresh = nil
 	end
 
