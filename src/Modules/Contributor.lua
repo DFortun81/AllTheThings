@@ -131,6 +131,13 @@ end
 -- These should be NPCs which are mobile in that they can have completely variable coordinates in game
 -- either by following the player or having player-based decisions that cause them to have any coordinates
 local MobileNPCDB = {
+	 [19644] = true,	-- Image of Archmage Vargoth
+	 [43929] = true,	-- Blingtron 4000
+	 [64337] = true,	-- Nomi
+	 [77789] = true,	-- Blingtron 5000
+	[101527] = true,	-- Blingtron 6000
+	[153897] = true,	-- Blingtron 7000
+	[221867] = true,	-- Mereldar Child
 	[221980] = true,	-- Faerin Lothar
 }
 
