@@ -373,12 +373,12 @@ local function CloneClassInstance(object, ignoreChildren)
 		end
 	end
 end
-local function CloneObject(object)
+local function CloneObject(object, ignoreChildren)
 	local clone = setmetatable({}, getmetatable(object));
 	for key,value in pairs(object) do
 		clone[key] = value;
 	end
-	if object.g then
+	if object.g and not ignoreChildren then
 		local g = {};
 		for i,object in ipairs(object.g) do
 			local child = CloneObject(object);
