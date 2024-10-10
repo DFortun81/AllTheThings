@@ -45,6 +45,10 @@ end
 
 -- Faction APIs
 local C_Reputation = C_Reputation;
+
+-- Here’s a small technique being used: (object1 and object2 and function).
+-- If object1 exists and object2 exists, then the function is passed.
+-- The object can be table, function, or anything as long as they are not nil or false, it will continue to the next evaluation.
 ---@diagnostic disable: deprecated
 AssignAPIWrapper("GetFactionName",
 	C_Reputation and C_Reputation.GetFactionDataByID and
