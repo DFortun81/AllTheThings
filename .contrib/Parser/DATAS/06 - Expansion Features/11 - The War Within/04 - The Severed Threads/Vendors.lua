@@ -5,18 +5,18 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 	n(THE_SEVERED_THREADS, {
 		n(VENDORS, {
 			n(226214, {	-- Ka'muko <Kej Currency Exchanger>
-				["coord"] = { 57.1, 47.4, AZJ_KAHET },
+				["coord"] = { 56.6, 43.0, AZJ_KAHET },
 				["g"] = {
 					i(226195, {	--Resonance Crystal Cluster
 						["cost"] = {{"c", KEJ, 200}},
 						["g"] = {
-							currency(RESONANCE_CRYSTALS),
+						--	currency(RESONANCE_CRYSTALS),
 						},
 					}),
 					i(226198, {	--Resonance Crystal Agglomeration
 						["cost"] = {{"c", KEJ, 2000}},
 						["g"] = {
-							currency(RESONANCE_CRYSTALS),
+						--	currency(RESONANCE_CRYSTALS),
 						},
 					}),
 					i(226196, {	--Silk Kej Pouch

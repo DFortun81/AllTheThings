@@ -87,7 +87,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				["sym"] = {{"sub","common_vendor",224729}},	-- Anub'okki <Disciple of Anub'azal>
 			}),
 			n(226211, {	-- Ax'ill <Alchemixologist>
-				--["coord"] = { 47.8, 18.7, NERUBAR },
+				["coord"] = { 60.80, 42.60, AZJ_KAHET },
 				["g"] = {
 					i(223961, {	-- Recipe: Azj-Kahet Special (RECIPE!)
 						["cost"] = {{"c", KEJ, 1500}},
