@@ -60,12 +60,14 @@ end
 -- Most of the time, there's no reason for ATT to try handling game events until it's even ready to do anything with it
 -- So instead of individually adding a bazillion OnReady event registrations, let's just have one method do that all for us
 local OnReadyEventRegistrations = {}
-app.AddEventRegistration = function(event, func)
+app.AddEventRegistration = function(event, func, doNotPreRegister)
 	if not event or not func then
 		app.print("AddEventRegistration invalid call",event,func)
 	end
-	-- app.PrintDebug("Event Func Registered",event,func)
-	OnReadyEventRegistrations[event] = func
+	if not doNotPreRegister then
+		-- app.PrintDebug("Event Func Registered",event,func)
+		OnReadyEventRegistrations[event] = func
+	end
 end
 app.AddEventHandler("OnReady", function()
 	local Register = app.RegisterFuncEvent

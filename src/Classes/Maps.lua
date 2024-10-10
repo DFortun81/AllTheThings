@@ -1013,8 +1013,8 @@ local function Event_UPDATE_INSTANCE_INFO()
 	app:UnregisterEvent("UPDATE_INSTANCE_INFO");
 	AfterCombatCallback(RefreshSavesCallback);
 end
-app.AddEventRegistration("UPDATE_INSTANCE_INFO", Event_UPDATE_INSTANCE_INFO)
-app.AddEventHandler("OnStartup", Event_UPDATE_INSTANCE_INFO);
+app.AddEventRegistration("UPDATE_INSTANCE_INFO", Event_UPDATE_INSTANCE_INFO, true)
+app.AddEventHandler("OnRefreshCollectionsDone", Event_UPDATE_INSTANCE_INFO);
 app.AddEventRegistration("BOSS_KILL", function(id, name, ...)
 	-- This is so that when you kill a boss, you can trigger
 	-- an automatic update of your saved instance cache.
