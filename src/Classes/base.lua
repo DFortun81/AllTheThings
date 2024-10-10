@@ -3,8 +3,8 @@
 local appName, app = ...;
 
 -- Global locals
-local type, ipairs, pairs, setmetatable, rawget, tinsert, unpack
-	= type, ipairs, pairs, setmetatable, rawget, tinsert, unpack;
+local type,ipairs,pairs,setmetatable,rawget,tinsert,unpack,rawset
+	= type,ipairs,pairs,setmetatable,rawget,tinsert,unpack,rawset
 
 -- App locals
 local GetRelativeValue = app.GetRelativeValue;
@@ -746,6 +746,66 @@ app.CreateCache = function(idField, className)
 		return app.__perf.AutoCaptureTable(cache, "ClassCache:"..(className or idField))
 	end
 	return cache;
+end
+
+-- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
+-- i.e. Create a data group which contains no information but will attempt to populate itself when [loadField] is referenced
+app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
+	local o;
+	local params = {...};
+	local loader = {
+		__index = function(t, key)
+			-- load the object if it matches the load field and not yet loaded
+			if not o and key == loadField then
+				o = objFunc(unpack(params))
+				if not o then
+					error("DLO failed to generate an Object when loading!",unpack(params))
+				end
+				-- parent of the underlying object should correspond to the hierarchical parent of t (dlo)
+				local dloParent = rawget(t, "parent");
+				rawset(o, "parent", dloParent);
+				rawset(t, "__o", o);
+				-- allow the object to reference the DLO if needed
+				o.__dlo = t;
+				-- app.PrintDebug("DLO:Loaded",o.hash,"parent:",dloParent,dloParent and dloParent.hash)
+				-- DLOs can now have an OnLoad function which runs here when loaded for the first time
+				if overrides.OnLoad then overrides.OnLoad(o); end
+			end
+
+			-- override for the object
+			local override = overrides and overrides[key];
+			if override ~= nil then
+				-- app.PrintDebug("DLO:override",key,":",override)
+				-- overrides can also be a function which will execute once the object has been created
+				if o and type(override) == "function" then
+					return override(o, key);
+				else
+					return override;
+				end
+			-- existing object, then reference the respective key
+			elseif o then
+				return o[key];
+			-- otherwise ensure visible
+			elseif key == "visible" then
+				-- app.PrintDebug("dlo.visible",unpack(params))
+				return true;
+			end
+		end,
+		-- transfer field sets to the underlying object if the field does not have an override for the object
+		__newindex = function(t, key, val)
+			if o then
+				if not overrides[key] then
+					-- app.PrintDebug("DLO:__newindex:",o.hash,key,val)
+					rawset(o, key, val);
+				end
+			elseif key == "parent" then
+				rawset(t, key, val);
+			end
+		end,
+	};
+	-- data is just an empty table with a loader metatable
+	local dlo = setmetatable({__dlo=true}, loader);
+	return dlo;
 end
 
 --[[

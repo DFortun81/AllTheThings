@@ -69,12 +69,12 @@ local function AssignFieldValue(group, field, value)
 		end
 	end
 end
-local function CloneArray(arr)
-	local clone = {};
-	for i,value in ipairs(arr) do
-		tinsert(clone, value);
+local function CloneArray(arr, clone)
+	local clone = clone or {}
+	for i=1,#arr do
+		clone[#clone + 1] = arr[i]
 	end
-	return clone;
+	return clone
 end
 local function CloneDictionary(data, clone)
 	local clone = clone or {};

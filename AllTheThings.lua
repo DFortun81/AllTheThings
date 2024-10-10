@@ -79,78 +79,17 @@ local StartCoroutine = app.StartCoroutine;
 local Callback = app.CallbackHandlers.Callback;
 local DelayedCallback = app.CallbackHandlers.DelayedCallback;
 local AfterCombatCallback = app.CallbackHandlers.AfterCombatCallback;
-local AfterCombatOrDelayedCallback = app.CallbackHandlers.AfterCombatOrDelayedCallback;
 app.UpdateRunner = app.CreateRunner("update");
 app.FillRunner = app.CreateRunner("fill");
 local LocalizeGlobal = app.LocalizeGlobal
 local LocalizeGlobalIfAllowed = app.LocalizeGlobalIfAllowed
 local contains = app.contains;
-local containsAny = app.containsAny;
 local containsValue = app.containsValue;
 local indexOf = app.indexOf;
+local CloneArray = app.CloneArray
 
 -- Data Lib
 local AllTheThingsAD = {};			-- For account-wide data.
-
--- Returns an object which contains no data, but can return values from an overrides table, and be loaded/created when a specific field is attempted to be referenced
--- i.e. Create a data group which contains no information but will attempt to populate itself when [loadField] is referenced
-app.DelayLoadedObject = function(objFunc, loadField, overrides, ...)
-	local o;
-	local params = {...};
-	local loader = {
-		__index = function(t, key)
-			-- load the object if it matches the load field and not yet loaded
-			if not o and key == loadField then
-				o = objFunc(unpack(params))
-				if not o then
-					error("DLO failed to generate an Object when loading!",unpack(params))
-				end
-				-- parent of the underlying object should correspond to the hierarchical parent of t (dlo)
-				local dloParent = rawget(t, "parent");
-				rawset(o, "parent", dloParent);
-				rawset(t, "__o", o);
-				-- allow the object to reference the DLO if needed
-				o.__dlo = t;
-				-- app.PrintDebug("DLO:Loaded",o.hash,"parent:",dloParent,dloParent and dloParent.hash)
-				-- DLOs can now have an OnLoad function which runs here when loaded for the first time
-				if overrides.OnLoad then overrides.OnLoad(o); end
-			end
-
-			-- override for the object
-			local override = overrides and overrides[key];
-			if override ~= nil then
-				-- app.PrintDebug("DLO:override",key,":",override)
-				-- overrides can also be a function which will execute once the object has been created
-				if o and type(override) == "function" then
-					return override(o, key);
-				else
-					return override;
-				end
-			-- existing object, then reference the respective key
-			elseif o then
-				return o[key];
-			-- otherwise ensure visible
-			elseif key == "visible" then
-				-- app.PrintDebug("dlo.visible",unpack(params))
-				return true;
-			end
-		end,
-		-- transfer field sets to the underlying object if the field does not have an override for the object
-		__newindex = function(t, key, val)
-			if o then
-				if not overrides[key] then
-					-- app.PrintDebug("DLO:__newindex:",o.hash,key,val)
-					rawset(o, key, val);
-				end
-			elseif key == "parent" then
-				rawset(t, key, val);
-			end
-		end,
-	};
-	-- data is just an empty table with a loader metatable
-	local dlo = setmetatable({__dlo=true}, loader);
-	return dlo;
-end
 
 local function formatNumericWithCommas(amount)
   local k
@@ -767,19 +706,6 @@ local function CreateObject(t, rootOnly)
 	return t;
 end
 app.__CreateObject = CreateObject;
-local function RawCloneData(data, clone)
-	clone = clone or {};
-	for key,value in pairs(data) do
-		if clone[key] == nil then
-			clone[key] = value
-		end
-	end
-	-- maybe better solution at another time?
-	clone.__type = nil;
-	clone.__index = nil;
-	return clone;
-end
-
 
 local function GetUnobtainableTexture(group)
 	if not group then return; end
@@ -1211,7 +1137,7 @@ local ResolveFunctions = {
 	["merge"] = function(finalized, searchResults)
 		local orig;
 		if #searchResults > 0 then
-			orig = RawCloneData(searchResults);
+			orig = CloneArray(searchResults);
 		end
 		wipe(searchResults);
 		-- finalized first
@@ -1224,7 +1150,7 @@ local ResolveFunctions = {
 	["push"] = function(finalized, searchResults, o, cmd, field, value)
 		local orig;
 		if #searchResults > 0 then
-			orig = RawCloneData(searchResults);
+			orig = CloneArray(searchResults);
 		end
 		wipe(searchResults);
 		local group = CreateObject({[field] = value });
@@ -1235,7 +1161,7 @@ local ResolveFunctions = {
 	["pop"] = function(finalized, searchResults)
 		local orig;
 		if #searchResults > 0 then
-			orig = RawCloneData(searchResults);
+			orig = CloneArray(searchResults);
 		end
 		wipe(searchResults);
 		if orig then
@@ -1271,7 +1197,7 @@ local ResolveFunctions = {
 	["extract"] = function(finalized, searchResults, o, cmd, field)
 		local orig;
 		if #searchResults > 0 then
-			orig = RawCloneData(searchResults);
+			orig = CloneArray(searchResults);
 		end
 		wipe(searchResults);
 		if orig then
@@ -1293,7 +1219,7 @@ local ResolveFunctions = {
 	["index"] = function(finalized, searchResults, o, cmd, index)
 		local orig;
 		if #searchResults > 0 then
-			orig = RawCloneData(searchResults);
+			orig = CloneArray(searchResults);
 		end
 		wipe(searchResults);
 		if orig then
@@ -1504,7 +1430,7 @@ local ResolveFunctions = {
 	["groupfill"] = function(finalized, searchResults, o, cmd, onCurrent)
 		if onCurrent then
 			if #searchResults == 0 then return end
-			local orig = RawCloneData(searchResults);
+			local orig = CloneArray(searchResults);
 			wipe(searchResults);
 			local Fill = app.FillGroups
 			local result
@@ -1732,7 +1658,7 @@ local SubroutineCache = {
 		local orig;
 		-- Pop out any actual Tier Tokens
 		if #searchResults > 0 then
-			orig = RawCloneData(searchResults);
+			orig = CloneArray(searchResults);
 		end
 		wipe(searchResults);
 		if orig then
@@ -1761,7 +1687,7 @@ local SubroutineCache = {
 		-- If there's a Class, filter by Class
 		if classID then
 			if #searchResults > 0 then
-				orig = RawCloneData(searchResults);
+				orig = CloneArray(searchResults);
 			end
 			wipe(searchResults);
 			local c;

@@ -460,6 +460,7 @@ end
 function ATTcheckawquests()
 
 	local isaw = C_QuestLog.IsAccountQuest
+	-- local load = app.RequestLoadQuestByID
 	local dc = app.CallbackHandlers.DelayedCallback
 	local aw, cur, step = {}, 1, 250
 	local lim = step
@@ -502,4 +503,39 @@ function ATTtestsort()
 	end
 
 	app.StartCoroutine("dosorts",dosorts)
+end
+
+function ATTclones(count)
+
+	local tinsert,ipairs
+		= tinsert,ipairs
+	local function CloneArray_ipairs(arr)
+		local clone = {};
+		for i,value in ipairs(arr) do
+			tinsert(clone, value);
+		end
+		return clone;
+	end
+	local function CloneArray_index(arr, clone)
+		local clone = clone or {}
+		for i=1,#arr do
+			clone[#clone + 1] = arr[i]
+		end
+		return clone
+	end
+
+	local test = {}
+	for i = 1, count, 1 do
+		test[#test + 1] = i
+	end
+
+	app.PrintDebug("CloneArray_ipairs",count)
+	-- 0.283 @ 1M
+	local new = CloneArray_ipairs(test)
+	app.PrintDebugPrior("---")
+
+	app.PrintDebug("CloneArray_index",count)
+	-- 0.101 @ 1M
+	local new = CloneArray_index(test)
+	app.PrintDebugPrior("---")
 end
