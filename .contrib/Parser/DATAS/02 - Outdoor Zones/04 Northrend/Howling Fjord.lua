@@ -2323,7 +2323,7 @@ root(ROOTS.Zones, {
 					}),
 					n(32773, bubbleDownSelf({ ["races"] = ALLIANCE_ONLY, }, {	-- Logistics Officer Brighton <Alliance Vanguard Quartermaster>
 						["coord"] = { 59.6, 63.8, HOWLING_FJORD },
-						["sym"] = {{"sub","common_vendor",32763}},	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
+						["sym"] = {{"sub","common_vendor",32564}},	-- Logistics Officer Silverstone <Alliance Vanguard Quartermaster>
 					})),
 					n(24330, {	-- Orson Locke <Sharp Blades>
 						["coord"] = { 53.8, 66.8, HOWLING_FJORD },
