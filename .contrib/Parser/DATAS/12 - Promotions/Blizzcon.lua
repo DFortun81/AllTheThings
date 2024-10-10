@@ -182,20 +182,20 @@ root(ROOTS.Promotions, n(BLIZZCON, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {
 	mount(358072, {	-- Bound Blizzard (MOUNT!)
 		["description"] = "Received after buying the Blizzcon 2023 Collection: Legendary Pack.",
 		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
-		["u"] = BLIZZARD_BALANCE,
+		["u"] = REAL_MONEY,
 	}),
 	i(210042, {		-- Chilling Celebration Banner (TOY!)
 		["description"] = "Received after buying the Blizzcon 2023 Collection: Epic Pack.",
 		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
-		["u"] = BLIZZARD_BALANCE,
+		["u"] = REAL_MONEY,
 	}),
 	pet(3579, {		-- Ysergle The Dreamurk (PET!)
 		["description"] = "Received after buying the Blizzcon 2023 Collection: Epic Pack.",
 		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
-		["u"] = BLIZZARD_BALANCE,
+		["u"] = REAL_MONEY,
 	}),
 	ach(18250, {	-- Ysergle The Dreamurk
 		["timeline"] = { ADDED_10_1_7, REMOVED_10_2_5 },
-		["u"] = BLIZZARD_BALANCE,
+		["u"] = REAL_MONEY,
 	}),
 })));

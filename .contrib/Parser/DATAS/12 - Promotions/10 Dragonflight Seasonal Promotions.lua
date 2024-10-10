@@ -49,7 +49,7 @@ root(ROOTS.Promotions, {
 					REMOVED_10_0_2_LAUNCH,
 				},
 				-- #if BEFORE 10.0.2
-				["u"] = BLIZZARD_BALANCE,
+				["u"] = REAL_MONEY,
 				-- #endif
 			}),
 			i(70099, {	-- Cenarion Hatchling (PET!)

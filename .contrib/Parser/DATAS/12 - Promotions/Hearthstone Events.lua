@@ -44,14 +44,14 @@ HEARTHSTONE_10TH_ANNIVERSARY = createHeader({
 	},
 });
 root(ROOTS.Promotions, {
-	n(HEARTHSTONE, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
+	n(HEARTHSTONE, bubbleDown({ ["u"] = REAL_MONEY }, {
 		["timeline"] = { ADDED_5_3_0 },
 		["groups"] = {
 			ach(8345),	-- Hearthstoned
 			i(98618), -- Hearthsteed (MOUNT!)
 		},
 	})),
-	n(HEARTHSTONE_MERCENARIES_MODE, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
+	n(HEARTHSTONE_MERCENARIES_MODE, bubbleDown({ ["u"] = REAL_MONEY }, {
 		["timeline"] = { ADDED_9_1_0 },
 		["groups"] = {
 			mount(356488),	-- Sarge's Tale (MOUNT!)

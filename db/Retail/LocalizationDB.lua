@@ -12293,7 +12293,7 @@ _.ObjectModels = {
 -- Phase Database Module
 _.PhaseConstants = {
 	BLACK_MARKET = 9,
-	BLIZZARD_BALANCE = 3,
+	REAL_MONEY = 3,
 	ELITE_PVP_REQUIREMENT = 4,
 	NEVER_IMPLEMENTED = 1,
 	REMOVED_FROM_GAME = 2,

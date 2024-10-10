@@ -117,7 +117,7 @@ root(ROOTS.Promotions, {
 	})),
 
 	-- Current Rewards
-	n(RECRUIT_A_FRIEND, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
+	n(RECRUIT_A_FRIEND, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(173301, {	-- Game Time
 			["timeline"] = { ADDED_8_2_5 },
 		}),

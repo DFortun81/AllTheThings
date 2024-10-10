@@ -151,9 +151,9 @@ REMOVED_FROM_GAME = createPhase({
 		tw = "此項已從遊戲中刪除。",
 	},
 });
-BLIZZARD_BALANCE = createPhase({
+REAL_MONEY = createPhase({
 	readable = "Blizzard Balance",
-	constant = "BLIZZARD_BALANCE",
+	constant = "REAL_MONEY",
 	export = true,
 	phaseID = 3,
 	state = 3,
@@ -195,8 +195,8 @@ BLIZZARD_BALANCE = createPhase({
 });
 -- #if ANYCLASSIC
 -- In classic we don't care about the distinction between these two pieces of content.
-BLACK_MARKET = BLIZZARD_BALANCE;
-TCG = BLIZZARD_BALANCE;
+BLACK_MARKET = REAL_MONEY;
+TCG = REAL_MONEY;
 -- #else
 BLACK_MARKET = createPhase({
 	readable = "Black Market",

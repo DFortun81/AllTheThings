@@ -16,7 +16,7 @@ root(ROOTS.Promotions, n(MISCELLANEOUS_PROMOTIONS, bubbleDown({ ["u"] = REMOVED_
 		["description"] = "This tabard was given to the people on each servers with the most honorable kills before the introduction of the original honor system.",
 		["timeline"] = { ADDED_1_11_1 },
 	}),
-	un(BLIZZARD_BALANCE, i(49646, {	-- Core Hound Pup
+	un(REAL_MONEY, i(49646, {	-- Core Hound Pup
 		["description"] = "Granted to players that attach an authenticator to their account.",
 		["timeline"] = { ADDED_3_3_0 },
 	})),

@@ -14,7 +14,7 @@ STEELSERIES = createHeader({
 
 root(ROOTS.Promotions, n(STEELSERIES, sharedDataSelf({
 	["timeline"] = { ADDED_11_0_2 },
-	["u"] = BLIZZARD_BALANCE,
+	["u"] = REAL_MONEY,
 }, {
 	i(112327, {	-- Grinning Reaver (MOUNT!)
 		["description"] = "Aquired alongside the purchase of a 200$ Arctis Nova 7 Headset as part of the World of Warcraft SteelSeries Limited Editon Collection.",

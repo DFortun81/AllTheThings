@@ -1,7 +1,7 @@
 -----------------------------------------------------
 --        P R O M O T I O N S   M O D U L E        --
 -----------------------------------------------------
-root(ROOTS.Promotions, bubbleDown({ ["u"] = BLIZZARD_BALANCE }, {
+root(ROOTS.Promotions, bubbleDown({ ["u"] = REAL_MONEY }, {
 	-- #if ANYCLASSIC
 	expansion(EXPANSION.TBC, {
 		["timeline"] = { ADDED_2_5_1 },
