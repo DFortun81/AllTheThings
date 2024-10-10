@@ -2293,7 +2293,6 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 		end
 	end
 end
-app.AddSourceLinesForTooltip = AddSourceLinesForTooltip
 app.AddEventHandler("OnLoad", function()
 	local SourceShowKeys = app.CloneDictionary(app.ThingKeys, {
 		-- Specific keys which we don't want to list Sources but are considered Things
@@ -2319,7 +2318,6 @@ app.AddEventHandler("OnLoad", function()
 	})
 end)
 
-local searching
 local GetRelativeDifficulty = app.GetRelativeDifficulty
 local function GetSearchResults(method, paramA, paramB, options)
 	-- app.PrintDebug("GetSearchResults",method,paramA,paramB,...)
@@ -2336,12 +2334,6 @@ local function GetSearchResults(method, paramA, paramB, options)
 	local rawlink;
 	if paramB then paramB = tonumber(paramB);
 	else rawlink = paramA; end
-
-	-- This method used to be called nested but that complication should no longer be necessary to support
-	if searching then
-		app.PrintDebug("NESTED SEARCH",paramA,paramB)
-	end
-	searching = true
 
 	-- Call to the method to search the database.
 	local group, a, b = method(paramA, paramB);
@@ -2687,7 +2679,6 @@ local function GetSearchResults(method, paramA, paramB, options)
 	group.itemString = itemString
 	group.isBaseSearchResult = true;
 
-	searching = nil
 	return group
 end
 app.GetCachedSearchResults = function(method, paramA, paramB, options)
@@ -3206,100 +3197,6 @@ app.FillGroups = function(group)
 	-- app.PrintDebug("FillGroups Complete",group.hash,group.__type)
 end
 end	-- Auto-Expansion Logic
-
--- build a 'Cost' group which matches the "cost"/"providers (items)" tag of this group
-app.BuildCost = function(group)
-	local cost = group.cost;
-	cost = cost and type(cost) == "table" and cost;
-	local providers = group.providers;
-	if not cost and not providers then return; end
-
-	-- Pop out the cost objects into their own sub-groups for accessibility
-	local costGroup = app.CreateRawText(L.COST, {
-		["description"] = L.COST_DESC,
-		["icon"] = "Interface\\Icons\\INV_Misc_Coin_02",
-		["sourceIgnored"] = true,
-		["OnUpdate"] = app.AlwaysShowUpdate,
-		["skipFill"] = true,
-		["g"] = {},
-		OnClick = app.UI.OnClick.IgnoreRightClick,
-	});
-	-- Gold cost currently ignored
-	-- print("BuildCost",group.hash)
-	if cost then
-		local costItem;
-		for _,c in ipairs(cost) do
-			-- print("Cost",c[1],c[2],c[3]);
-			costItem = nil;
-			if c[1] == "c" then
-				costItem = SearchForObject("currencyID", c[2], "field") or app.CreateCurrencyClass(c[2]);
-				costItem = app.CreateCostCurrency(costItem, c[3]);
-			elseif c[1] == "i" then
-				costItem = SearchForObject("itemID", c[2], "field") or app.CreateItem(c[2]);
-				costItem = app.CreateCostItem(costItem, c[3]);
-			end
-			if costItem then
-				NestObject(costGroup, costItem);
-			end
-		end
-	end
-	if providers then
-		local costItem;
-		for _,c in ipairs(providers) do
-			-- print("Cost",c[1],c[2],c[3]);
-			costItem = nil;
-			if c[1] == "i" then
-				costItem = SearchForObject("itemID", c[2], "field") or app.CreateItem(c[2]);
-				costItem = app.CreateCostItem(costItem, 1);
-			end
-			if costItem then
-				NestObject(costGroup, costItem);
-			end
-		end
-	end
-	NestObject(group, costGroup, nil, 1);
-end
-
--- Begins an async operation using a Runner to progressively accummulate the entirety of the 'cost'/'provider'
--- information contained by all groups within the provided 'group'
--- and captures the information into trackable Cost groups under a 'Total Costs' header
-app.BuildTotalCost = function(group)
-	if not group.g then return end
-
-	-- Pop out the cost totals into their own sub-groups for accessibility
-	local costGroup = app.CreateRawText(L.COST_TOTAL, {
-		["description"] = L.COST_TOTAL_DESC,
-		["icon"] = "Interface\\Icons\\inv_misc_coinbag_special",
-		["sourceIgnored"] = true,
-		["skipFill"] = true,
-		["g"] = {},
-		OnClick = app.UI.OnClick.IgnoreRightClick,
-	});
-
-	local Collector = app.Modules.Costs.GetCostCollector()
-
-	local function RefreshCollector()
-		wipe(costGroup.g)
-		-- app.DirectGroupUpdate(costGroup)
-		-- this triggers prior to the update in the window completing, and cost groups are determined by visibility
-		-- so delay the refresh
-		DelayedCallback(Collector.ScanGroups, 1, group, costGroup)
-	end
-
-	RefreshCollector()
-
-	-- we need to make sure we have a window reference for this group's Collector
-	-- so that when the window is expired, we know to remove the necessary Handler(s)
-	if group.window then
-		-- changing settings should refresh the Collector...
-		group.window:AddEventHandler("OnRecalculate_NewSettings", RefreshCollector)
-		-- force refresh should refresh collector...
-		group.window:AddEventHandler("OnRefreshCollections", RefreshCollector)
-	end
-
-	-- Add the cost group to the popout
-	NestObject(group, costGroup, nil, 1);
-end
 
 (function()
 -- Keys for groups which are in-game 'Things'
