@@ -156,8 +156,7 @@ local function BuildGearSetInformationForGroup(group)
 			for _,sourceID in ipairs(allSets[setID]) do
 				local search = app.SearchForObject("sourceID", sourceID, "key");
 				if search then
-					search = app.__CreateObject(search, true);
-					search.hideText = true;
+					search = app.CloneObject(search, true);
 					tinsert(g, search);
 				else
 					local otherSourceInfo = C_TransmogCollection_GetSourceInfo(sourceID);

@@ -919,8 +919,7 @@ local function BuildSourceInformationForPopout(group)
 				if otherSourceID ~= group.sourceID then
 					local shared = app.SearchForObject("sourceID", otherSourceID, "key");
 					if shared then
-						shared = app.__CreateObject(shared, true);
-						shared.hideText = true;
+						shared = app.CloneObject(shared, true);
 						tinsert(g, shared);
 						-- print("ATT Appearance:",shared.hash,shared.modItemID)
 					else
