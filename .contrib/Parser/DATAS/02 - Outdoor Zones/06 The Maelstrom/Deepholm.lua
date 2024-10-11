@@ -672,6 +672,20 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 27123,	-- Deepholm, Realm of Earth
 						["coord"] = { 49.6, 53.0, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- First Clue
+								["provider"] = { "n", 43048 },	-- Captain Skullshatter
+								["coord"] = { 53.6, 73.6, DEEPHOLM },
+							}),
+							objective(2, {	-- Second Clue
+								["provider"] = { "n", 43032 },	-- Slain Cannoneer
+								["coord"] = { 56.0, 74.2, DEEPHOLM },
+							}),
+							objective(3, {	-- Third Clue
+								["provider"] = { "n", 43044 },	-- Unexploded Artillery Shell
+								["coord"] = { 56.6, 76.4, DEEPHOLM },
+							}),
+						},
 					}),
 					q(26657, {	-- Hard Falls
 						["qg"] = 42466,	-- Terrath the Steady
@@ -797,6 +811,11 @@ root(ROOTS.Zones, {
 						["qg"] = 42684,	-- Stormcaller Mylra
 						["sourceQuest"] = 26248,	-- All Our Friends Are Dead
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/1 Mor'norokk the Hateful subdued
+								["provider"] = { "n", 42801 },	-- Mor'norokk the Hateful
+							}),
+						},
 					}),
 					q(27934, {	-- One With the Ground
 						["qg"] = 47195,	-- Slate Quicksand
@@ -981,6 +1000,12 @@ root(ROOTS.Zones, {
 						},
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- Mor'norokk interrogated
+								["providers"] = {
+									{ "n", 42964 },	-- Mor'norokk the Hateful
+									{ "n", 42716 },	-- Stormbeak
+								},
+							}),
 							i(61498),	-- Inquisitor's Girdle
 							i(61494),	-- Interrogator's Hood
 							i(61493),	-- Questioning Axe
@@ -1032,6 +1057,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 46.5, 57.3, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- Flint Oremantle introduced to Earthcaller Yevaa
+								["providers"] = {
+									{ "n", 43047 },	-- Flint Oremantle
+									{ "n", 42573 },	-- Earthcaller Yevaa
+								},
+							}),
 							i(61466),	-- Bell-Ringer's Skullcap
 							i(61467),	-- Flayer-Crush Boots
 							i(61468),	-- Legs of Ringing Echoes
@@ -1041,6 +1072,11 @@ root(ROOTS.Zones, {
 						["qg"] = 42684,	-- Stormcaller Mylra
 						["sourceQuest"] = 26248,	-- All Our Friends Are Dead
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/6 Twilight Saboteur
+								["provider"] = { "n", 42885 },	-- Twilight Saboteur
+							}),
+						},
 					}),
 					q(26771, {	-- Testing the Trap
 						["qg"] = 44010,	-- Stormcaller Mylra
@@ -1110,6 +1146,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.7, 53.0, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/5 Deepstone Elemental slain
+								["provider"] = { "n", 43026 },	-- Deepstone Elemental
+								["coord"] = { 57.0, 74.6, DEEPHOLM },
+							}),
 							i(61502),	-- Deepstone Treads
 							i(61504),	-- Furyquench Bracers
 							i(61503),	-- Stoneshatter Hauberk
@@ -1414,6 +1454,19 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26249,	-- The Admiral's Cabin
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/1 Bottle of Whiskey
+								["providers"] = {
+									{ "i",  58798 },	-- Bottle of Whiskey
+									{ "o", 204280 },	-- Bottle of Whiskey
+								},
+							}),
+							objective(2, {	-- 0/1 Spool of Rope
+								["providers"] = {
+									{ "i",  58806 },	-- Spool of Rope
+									{ "o", 204279 },	-- Spool of Rope
+									{ "o", 203138 },	-- Coil of Rope
+								},
+							}),
 							i(61495),	-- Gloves of Idle Hands
 							i(61484),	-- Midnight Service Treads
 							i(61500),	-- Press Gang Girdle
