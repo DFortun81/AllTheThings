@@ -1999,6 +1999,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(84818),	-- Zekvir pop in The Spiral Weave (2nd time in week, Tier 8)
 		q(84819),	-- Zekvir pop in Skittering Breach (2nd time in week, Tier 8), also in Nightfall Sanctum (unsure, Tier 3)
 		q(85757),	-- Triggered when looting second chest after defeating Zekvir solo on ? difficulty, also triggered on looting first bountiful heavy trunk in The Underkeep
-		q(86324),	-- First weekly Zekvir kill
+		q(86324),	-- First weekly Zekvir kill (also triggered off looting second Zekvir cache) 
+		q(86157),	-- Killed Zekvir (?) as a duo with someone who'd never killed him before
+		q(86325),	-- Looting first Zekvir cache from above kill
 	}),
 })));
