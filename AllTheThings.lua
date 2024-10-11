@@ -9714,6 +9714,10 @@ customWindowUpdates.list = function(self, force, got)
 		elseif dataType == "runeforgepower" then
 			dataType = "runeforgePower";
 		elseif dataType == "itemharvester" then
+			if not app.CreateItemHarvester then
+				app.print("'itemharvester' Requires 'Debugging' enabled when loading the game!")
+				return
+			end
 			ItemHarvester = app.CreateItemHarvester;
 		elseif dataType:find("cache") then
 			-- special data type to utilize an ATT cache instead of generating raw groups
