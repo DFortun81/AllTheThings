@@ -215,6 +215,11 @@ namespace ATT
 
         public static StringBuilder ExportPureStringValue(StringBuilder builder, string value)
         {
+            // even in 'pure Lua' situations we want to be able to output a verbatim string
+            if (value.StartsWith("~"))
+            {
+                return builder.Append(value.Substring(1));
+            }
             return builder.Append("\"").Append(value.Replace("\\", "\\\\")).Append("\"");
         }
     }
