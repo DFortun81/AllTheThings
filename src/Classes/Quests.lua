@@ -1587,6 +1587,7 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	CollectibleType = function() return "QuestsHidden" end,
 	variants = {
 		AndLockCriteria = AndLockCriteria,
+		WithAutoName = app.GlobalVariants.WithAutoName,
 	},
 }, (function(t) return t.type == "hqt" end),
 -- Both: Breadcrumbs
