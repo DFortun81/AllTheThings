@@ -26,29 +26,11 @@ namespace ATT
                 if (data.TryGetValue("f", out long f))
                 {
                     if (f <= 0 || f == 104 || f == 56 || f== 114) fields.Remove("f");  // Quest Items, Reagents, Keys, and Invalid Filters
-                    else if (f == 60)   // Selfies
-                    {
-                        WriteShortcut(builder, "selfie", "_.CreateSelfieFilter");
-                        ExportField(builder, data, fields, "questID");
-                        fields.Remove("f");
-                        return;
-                    }
                     else
                     {
                         if (data.TryGetValue("spellID", out object spellIDRef))   // Mounts
                         {
-                            if (Convert.ToInt32(spellIDRef) > 0)
-                            {
-                                // no, if we wanted it to be a Mount, we defined it in MountDB
-                                // can't trust Filter and SpellID
-                                //if (f == 100)   // Mounts
-                                //{
-                                //    WriteShortcut(builder, "mnt", "_.CreateMount");
-                                //    ExportField(builder, data, fields, "spellID");
-                                //    return;
-                                //}
-                            }
-                            else
+                            if (Convert.ToInt32(spellIDRef) <= 0)
                             {
                                 fields.Remove("spellID");
                                 fields.Remove("f");

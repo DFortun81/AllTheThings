@@ -63,10 +63,10 @@ namespace ATT
             ObjectData.Create("petTypeID",          "pt",           "_.CreatePetType", "f");
             ObjectData.Create("pvpRankID",          "pvprank",      "_.CreatePVPRank", "f");
             ObjectData.Create("professionID",       "prof",         "_.CreateProfession", "requireSkill", "modID", "f");
-            ObjectData.Create<NPCData>("npcID",     "n",            "_.CreateNPC", "f", "creatureID");
-            ObjectData.Create<SpellData>("spellID", "sp",           "_.CreateSpell", "f");
+            ObjectData.Create("npcID",              "n",            "_.CreateNPC", "f", "creatureID");
+            ObjectData.Create("spellID",            "sp",           "_.CreateSpell", "f");
             ObjectData.Create<FactionQuestData>("aqd", "aqd",       "_.CreateQuestWithFactionData", "f");
-            ObjectData.Create<QuestData>("questID", "q",            "_.CreateQuest", "f");
+            ObjectData.Create("questID",            "q",            "_.CreateQuest", "f");
             ObjectData.Create("f",                  "flt",          "_.CreateFilter");
         }
 

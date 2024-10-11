@@ -51,8 +51,8 @@ local GetSpellName = app.WOWAPI.GetSpellName;
 	L.HEIRLOOM_TEXT_DESC = "顯示你是否已經獲得或購買了傳家寶。";
 	L.FAILED_ITEM_INFO = "未能獲得物品資訊。該物品可能是無效的或者可能還沒有被快取在你的伺服器上。";
 	L.HEIRLOOMS_UPGRADES_DESC = "這表明你是否已經將傳家寶升級到了一定的級別。\n\n安息吧…金幣。\n - Crieve";
-	L.MUSIC_ROLLS_AND_SELFIE_DESC = "這些是按角色解鎖且目前尚未在戰隊中共享。如果暴雪有人在看，如果能把這些戰隊共享的話那就太好了。\n\n必須通過 "..SHIFT_KEY_TEXT.."點擊要檢測的標題手動刷新插件。";
-	L.MUSIC_ROLLS_AND_SELFIE_DESC_2 = "\n\n必須首先通過在要塞中完成動感低音任務來解鎖要塞點唱機以便掉落此物品。\n\n自拍需要自拍神器玩具。";
+	L.MUSIC_ROLLS_DESC = "這些是按角色解鎖且目前尚未在戰隊中共享。如果暴雪有人在看，如果能把這些戰隊共享的話那就太好了。\n\n必須通過 "..SHIFT_KEY_TEXT.."點擊要檢測的標題手動刷新插件。";
+	L.MUSIC_ROLLS_DESC_2 = "\n\n必須首先通過在要塞中完成動感低音任務來解鎖要塞點唱機以便掉落此物品。\n\n自拍需要自拍神器玩具。";
 	L.OPPOSITE_FACTION_EQ = "與敵對陣營對應：";
 	L.SELFIE_DESC = "使用您的自拍 ";
 	L.SELFIE_DESC_2 = " 和 |cffff8000";
@@ -617,8 +617,6 @@ for key,value in pairs({
 		DRAKEWATCHERMANUSCRIPTS_CHECKBOX_TOOLTIP = "啟用此選項追蹤 巨龍崛起 觀龍者手稿";
 		FOLLOWERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t 追隨者 & 伙伴";
 		FOLLOWERS_CHECKBOX_TOOLTIP = "啟用此選項可追蹤追隨者。\n\n即：要塞追隨者，軍團職業大廳追隨者，決戰艾澤拉斯追隨者，暗影之境追隨者。";
-		MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX = "|T"..app.asset("Expansion_WOD")..":0|t 樂譜&自拍濾鏡";
-		MUSIC_ROLLS_SELFIE_FILTERS_CHECKBOX_TOOLTIP = "啟用此選項以追蹤樂譜和自拍濾鏡。\n\n你可以用你的點唱機播放遊戲中的音樂並且你的自拍相機玩具為你的自拍收藏特定地點的濾鏡。";
 		RUNEFORGELEGENDARIES_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 符文銘刻之力";
 		RUNEFORGELEGENDARIES_CHECKBOX_TOOLTIP = "啟用此選項以追蹤暗影之境的符文銘刻之力。";
 		SOULBINDCONDUITS_CHECKBOX = "|T"..app.asset("Expansion_SL")..":0|t 導靈器";
@@ -637,7 +635,6 @@ for key,value in pairs({
 		ACCOUNT_WIDE_EXPLORATION_TOOLTIP = "地圖探索追蹤僅對每個角色都非常有用，但你真的想在所有50個角色上收藏它們嗎？";
 		ACCOUNT_WIDE_FLIGHT_PATHS_TOOLTIP = "飛行路線追蹤對每個角色都非常有用，但是你真的想要在所有50個角色上收藏它們嗎？";
 		ACCOUNT_WIDE_FOLLOWERS_TOOLTIP = "追隨者通常是每個角色的，但是你真的想以每周1個的速度在一個角色上收藏243個追隨者嗎？\n\n我想不行，好好先生。";
-		ACCOUNT_WIDE_MUSIC_ROLLS_SELFIE_FILTERS_TOOLTIP = "在暴雪的資料庫中通常不會在帳號通用内追蹤“樂譜和自拍濾鏡”，但是我們可以做到這一點。\n\n注意：你只能使用自動點唱機玩具播放音樂或使用你在當前角色上收藏的自拍相機玩具自拍。";
 		ACCOUNT_WIDE_QUESTS_TOOLTIP = "任務完成通常是每個角色的，但是如果任何一個角色完成了特定的任務，這個任務就會被認為是已完成。";
 		ACCOUNT_WIDE_RECIPES_TOOLTIP = "在暴雪的資料庫中，配方通常不會被帳號通用追蹤，但我們可以這樣做。\n\n在一個角色上不可能收藏到所有的東西，所以有了這個，你就可以赋予你的小號和他們的專業以意義。";
 		ACCOUNT_WIDE_REPUTATIONS_TOOLTIP = "聲望的成就現在會在暴雪的資料庫中追蹤帳號通用，所以開啟這個功能可能是個好主意。";

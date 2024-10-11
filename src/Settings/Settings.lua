@@ -90,7 +90,6 @@ settings.RequiredForInsaneMode = {
 	HeirloomUpgrades = app.GameBuildVersion >= 60000,
 	Illusions = app.GameBuildVersion >= 70000,
 	Mounts = true,
-	MusicRollsAndSelfieFilters = app.GameBuildVersion >= 60000,
 	Quests = true,
 	Recipes = true,
 	Reputations = true,

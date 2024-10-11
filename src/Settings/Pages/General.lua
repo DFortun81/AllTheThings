@@ -701,18 +701,11 @@ if app.GameBuildVersion >= 60000 then
 	child:CreateTrackingCheckbox("FOLLOWERS", "Followers", true)
 		:AlignAfter(accwideCheckboxFollowers)
 
-	-- Music Rolls & Selfie Filters (Warlords+) [TODO: Do we want to split these up?]
-	local accwideCheckboxMusicRollsAndSelfieFilters =
-	child:CreateAccountWideCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters")
-		:AlignBelow(accwideCheckboxFollowers)
-	child:CreateTrackingCheckbox("MUSIC_ROLLS_SELFIE_FILTERS", "MusicRollsAndSelfieFilters", true)
-		:AlignAfter(accwideCheckboxMusicRollsAndSelfieFilters)
-
 	if app.GameBuildVersion >= 80000 then
 		-- Azerite Essences (BFA+)
 		local accwideCheckboxAzeriteEssences =
 		child:CreateAccountWideCheckbox("AZERITE_ESSENCES", "AzeriteEssences")
-			:AlignBelow(accwideCheckboxMusicRollsAndSelfieFilters)
+			:AlignBelow(accwideCheckboxFollowers)
 		child:CreateTrackingCheckbox("AZERITE_ESSENCES", "AzeriteEssences", true)
 			:AlignAfter(accwideCheckboxAzeriteEssences)
 
