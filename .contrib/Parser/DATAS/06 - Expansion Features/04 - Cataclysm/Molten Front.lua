@@ -1,8 +1,8 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_MOLTEN_FRONT, bubbleDown({ ["timeline"] = { ADDED_4_2_0 } }, {
-	m(THE_MOLTEN_FRONT, {
+root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
+	applyclassicphase(CATA_PHASE_MOLTEN_FRONT, m(THE_MOLTEN_FRONT, bubbleDownSelf({ ["timeline"] = { ADDED_4_2_0 } }, {
 		["provider"] = { "o", 208900 },	-- Portal to the Firelands
 		["description"] = "The Molten Front is a volcanic daily quest hub added before the release of Firelands with Patch 4.2. It can be accessed via the Portal to the Firelands in Mount Hyjal. As players complete more daily quests, phasing will occur that shows how the Avengers of Hyjal are making progress against the fire elementals and agents of the Firelord.",
 		["icon"] = 514278,	-- Achievement_zone_firelands
@@ -1961,5 +1961,5 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				}),
 			}),
 		},
-	}),
-}))));
+	}))),
+}));

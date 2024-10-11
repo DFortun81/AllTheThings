@@ -3464,6 +3464,7 @@ profession(TAILORING, {
 			["groups"] = {
 				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, {
 					["name"] = "Bracers of Unconquered Power",
+					["timeline"] = { ADDED_4_3_0 },
 					["recipeID"] = 101923
 				}),
 				{
@@ -3472,6 +3473,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, {
 					["name"] = "Dreamwraps of the Light",
+					["timeline"] = { ADDED_4_3_0 },
 					["recipeID"] = 101922
 				}),
 				{
@@ -3568,6 +3570,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, {
 					["name"] = "Lavaquake Legwraps",
+					["timeline"] = { ADDED_4_3_0 },
 					["recipeID"] = 101921
 				}),
 				{
@@ -3584,6 +3587,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, {
 					["name"] = "World Mender's Pants",
+					["timeline"] = { ADDED_4_3_0 },
 					["recipeID"] = 101920
 				}),
 			}

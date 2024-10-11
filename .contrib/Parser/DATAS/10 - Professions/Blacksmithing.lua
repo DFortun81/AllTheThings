@@ -4203,10 +4203,11 @@ profession(BLACKSMITHING, {
 			["name"] = "Armor",
 			["categoryID"] = 570,
 			["groups"] = {
-				{
+				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, {
 					["name"] = "Bracers of Destructive Strength",
+					["timeline"] = { ADDED_4_3_0 },
 					["recipeID"] = 101931,
-				},
+				}),
 				{
 					["name"] = "Elementium Deathplate",
 					["recipeID"] = 76445,
@@ -4215,22 +4216,26 @@ profession(BLACKSMITHING, {
 					["name"] = "Elementium Girdle of Pain",
 					["recipeID"] = 76446,
 				},
-				{
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
 					["name"] = "Emberforged Elementium Boots",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99454,
-				},
-				{
+				}),
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
 					["name"] = "Eternal Elementium Handguards",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99440,
-				},
-				{
+				}),
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
 					["name"] = "Fists of Fury",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99439,
-				},
-				{
+				}),
+				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, {
 					["name"] = "Foundations of Courage",
+					["timeline"] = { ADDED_4_3_0 },
 					["recipeID"] = 101928,
-				},
+				}),
 				{
 					["name"] = "Hardened Elementium Girdle",
 					["recipeID"] = 76444,
@@ -4271,10 +4276,11 @@ profession(BLACKSMITHING, {
 					["name"] = "Hardened Obsidium Shoulders",
 					["recipeID"] = 76258,
 				},
-				{
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
 					["name"] = "Holy Flame Gauntlets",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99441,
-				},
+				}),
 				{
 					["name"] = "Light Elementium Belt",
 					["recipeID"] = 76448,
@@ -4283,14 +4289,16 @@ profession(BLACKSMITHING, {
 					["name"] = "Light Elementium Chestguard",
 					["recipeID"] = 76447,
 				},
-				{
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
 					["name"] = "Mirrored Boots",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99453,
-				},
-				{
+				}),
+				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, {
 					["name"] = "Pyrium Legplates of Purified Evil",
+					["timeline"] = { ADDED_4_3_0 },
 					["recipeID"] = 101924,
-				},
+				}),
 				{
 					["name"] = "Redsteel Belt",
 					["recipeID"] = 76264,
@@ -4323,10 +4331,11 @@ profession(BLACKSMITHING, {
 					["name"] = "Redsteel Shoulders",
 					["recipeID"] = 76266,
 				},
-				{
+				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, {
 					["name"] = "Soul Redeemer Bracers",
+					["timeline"] = { ADDED_4_3_0 },
 					["recipeID"] = 101929,
-				},
+				}),
 				{
 					["name"] = "Stormforged Belt",
 					["recipeID"] = 76283,
@@ -4359,14 +4368,16 @@ profession(BLACKSMITHING, {
 					["name"] = "Stormforged Shoulders",
 					["recipeID"] = 76286,
 				},
-				{
+				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, {
 					["name"] = "Titanguard Wristplates",
+					["timeline"] = { ADDED_4_3_0 },
 					["recipeID"] = 101932,
-				},
-				{
+				}),
+				applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, {
 					["name"] = "Unstoppable Destroyer's Legplates",
+					["timeline"] = { ADDED_4_3_0 },
 					["recipeID"] = 101925,
-				},
+				}),
 				{
 					["name"] = "Vicious Ornate Pyrium Belt",
 					["recipeID"] = 76467,
@@ -4431,10 +4442,11 @@ profession(BLACKSMITHING, {
 					["name"] = "Vicious Pyrium Shoulders",
 					["recipeID"] = 76461,
 				},
-				{
+				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
 					["name"] = "Warboots of Mighty Lords",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99452,
-				},
+				}),
 			},
 		},
 		{
@@ -4463,10 +4475,11 @@ profession(BLACKSMITHING, {
 			["name"] = "Weapons",
 			["categoryID"] = 571,
 			["groups"] = {
-				{
+				applyclassicphase(CATA_PHASE_MOLTEN_FRONT, {
 					["name"] = "Brainsplinter",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99652,
-				},
+				}),
 				{
 					["name"] = "Cold-Forged Shank",
 					["recipeID"] = 76434,
@@ -4499,10 +4512,11 @@ profession(BLACKSMITHING, {
 					["name"] = "Elementium Spellblade",
 					["recipeID"] = 76449,
 				},
-				{
+				applyclassicphase(CATA_PHASE_MOLTEN_FRONT, {
 					["name"] = "Elementium-Edged Scalper",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99655,
-				},
+				}),
 				{
 					["name"] = "Fire-Etched Dagger",
 					["recipeID"] = 76435,
@@ -4515,18 +4529,21 @@ profession(BLACKSMITHING, {
 					["name"] = "Lifeforce Hammer",
 					["recipeID"] = 76436,
 				},
-				{
+				applyclassicphase(CATA_PHASE_MOLTEN_FRONT, {
 					["name"] = "Lightforged Elementium Hammer",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99654,
-				},
-				{
+				}),
+				applyclassicphase(CATA_PHASE_MOLTEN_FRONT, {
 					["name"] = "Masterwork Elementium Deathblade",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99658,
-				},
-				{
+				}),
+				applyclassicphase(CATA_PHASE_MOLTEN_FRONT, {
 					["name"] = "Masterwork Elementium Spellblade",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99653,
-				},
+				}),
 				{
 					["name"] = "Obsidium Bladespear",
 					["recipeID"] = 76474,
@@ -4535,18 +4552,21 @@ profession(BLACKSMITHING, {
 					["name"] = "Obsidium Executioner",
 					["recipeID"] = 76437,
 				},
-				{
+				applyclassicphase(CATA_PHASE_MOLTEN_FRONT, {
 					["name"] = "Pyrium Spellward",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99656,
-				},
-				{
+				}),
+				applyclassicphase(CATA_PHASE_MOLTEN_FRONT, {
 					["name"] = "Unbreakable Guardian",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99657,
-				},
-				{
+				}),
+				applyclassicphase(CATA_PHASE_MOLTEN_FRONT, {
 					["name"] = "Witch-Hunter's Harvester",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99660,
-				},
+				}),
 			},
 		},
 		{

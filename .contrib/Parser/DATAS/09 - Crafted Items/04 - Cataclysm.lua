@@ -49,6 +49,10 @@ local function bloodthirsty(t)
 	return applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, t);
 end
 
+local function moltenfront(t)
+	t.timeline = { ADDED_4_2_0 };
+	return applyclassicphase(CATA_PHASE_MOLTEN_FRONT, t);
+end
 local function firelands(t)
 	t.timeline = { ADDED_4_2_0 };
 	return applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, t);
@@ -254,7 +258,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(55057),	-- Pyrium Weapon Chain
 		}),
 		n(WEAPONS, {
-			firelands(i(70155)),	-- Brainsplinter
+			moltenfront(i(70155)),	-- Brainsplinter
 			i(55044),	-- Cold-Forged Shank
 			i(55043),	-- Decapitator's Razor
 			i(55067),	-- Elementium Bonesplitter
@@ -265,20 +269,20 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(55068),	-- Elementium Shank
 			i(55064),	-- Elementium Spellblade
 			i(55070),	-- Elementium Stormshield
-			firelands(i(70158)),	-- Elementium-Edged Scalper
+			moltenfront(i(70158)),	-- Elementium-Edged Scalper
 			i(55045),	-- Fire-Etched Dagger
 			i(67605),	-- Forged Elementium Mindcrusher
 			i(55041),	-- Hardened Obsidium Shield
 			i(55046),	-- Lifeforce Hammer
-			firelands(i(70157)),	-- Lightforged Elementium Hammer
-			firelands(i(70164)),	-- Masterwork Elementium Deathblade
-			firelands(i(70156)),	-- Masterwork Elementium Spellblade
+			moltenfront(i(70157)),	-- Lightforged Elementium Hammer
+			moltenfront(i(70164)),	-- Masterwork Elementium Deathblade
+			moltenfront(i(70156)),	-- Masterwork Elementium Spellblade
 			i(55246),	-- Obsidium Bladespear
 			i(55052),	-- Obsidium Executioner
-			firelands(i(70162)),	-- Pyrium Spellward
+			moltenfront(i(70162)),	-- Pyrium Spellward
 			i(55042),	-- Stormforged Shield
-			firelands(i(70163)),	-- Unbreakable Guardian
-			firelands(i(70165)),	-- Witch-Hunter's Harvester
+			moltenfront(i(70163)),	-- Unbreakable Guardian
+			moltenfront(i(70165)),	-- Witch-Hunter's Harvester
 		}),
 	}),
 	prof(COOKING, {
@@ -1039,9 +1043,7 @@ Fire and Water - Damage against Elementals increased by 15%.
 			i(54443),	-- Embersilk Bag
 			i(54446),	-- Hyjal Expedition Bag
 			i(54444),	-- Illusionary Bag
-			applyclassicphase(CATA_PHASE_MOLTEN_FRONT, i(70138, {	-- Luxurious Silk Gem Bag
-				["timeline"] = { ADDED_4_2_0 },
-			})),
+			moltenfront(i(70138)),	-- Luxurious Silk Gem Bag
 			i(54445),	-- Otherworldly Bag
 		}),
 		filter(CONSUMABLES, {
