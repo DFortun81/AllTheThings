@@ -166,9 +166,9 @@ profession(ENGINEERING, {
 				q(3644, {	-- Membership Card Renewal
 					["qg"] = 8126,	-- Nixx Sprocketspring <Master Goblin Engineer>
 					["sourceQuest"] = 3639,	-- Show Your Work
-					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 54.4, 27.2, TANARIS },
 					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
 					["cost"] = { { "g", 20000 } },	-- 2g
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -180,9 +180,9 @@ profession(ENGINEERING, {
 				q(3646, {	-- Membership Card Renewal
 					["qg"] = 8738,	-- Vazario Linkgrease <Goblin Engineering Trainer>
 					["sourceQuest"] = 3639,	-- Show Your Work
-					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 62.6, 36.2, THE_BARRENS },
 					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
 					["cost"] = { { "g", 20000 } },	-- 2g
 					["timeline"] = { REMOVED_4_0_3 },
 					["repeatable"] = true,
@@ -206,22 +206,4 @@ profession(ENGINEERING, {
 		},
 	}),
 });
-
--- Goblin Engineering Recipes
-local itemDB = ItemDBConditional;
-local itemrecipe = function(itemID, spellID)
-	local o = { ["itemID"] = itemID, ["spellID"] = spellID };
-	itemDB[itemID] = o;
-	return o;
-end
-
--- Classic Recipes
-itemrecipe(18653, 23078);	-- Schematic: Goblin Jumper Cables XL
-itemrecipe(7192, 8895);		-- Schematic: Goblin Rocket Boots
-
--- #if AFTER WRATH
--- #if BEFORE 4.0.1
-itemrecipe(52022, 72952);	-- Plans: Shatter Rounds
--- #endif
--- #endif
 -- #endif
