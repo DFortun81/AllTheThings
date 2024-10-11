@@ -13,8 +13,8 @@ local C_CurrencyInfo_GetCurrencyInfo,C_CurrencyInfo_GetCurrencyLink
 -- Module
 
 -- App
-local SearchForField,constructor
-	= app.SearchForField,app.constructor
+local SearchForField
+	= app.SearchForField
 
 local cache = app.CreateCache("currencyID");
 local function default_info(t)
@@ -74,7 +74,8 @@ app.CreateCurrencyClass = app.CreateClass(CLASS, KEY, {
 	-- end,
 })
 
-local BaseCostCurrency = app.BaseObjectFields({
+local CreateCostCurrency = app.CreateClass("CostCurrency", KEY, {
+	IsClassIsolated = true,
 	-- total is the count of the cost currency required
 	total = function(t)
 		return t.count or 1;
@@ -94,13 +95,10 @@ local BaseCostCurrency = app.BaseObjectFields({
 	costCollectibles = app.EmptyFunction,
 	collectibleAsCost = app.EmptyFunction,
 	costsCount = app.EmptyFunction,
-	key = function()
-		return "currencyID";
-	end
-}, "BaseCostCurrency")
+})
 -- Wraps the given Type Object as a Cost Currency, allowing altered functionality representing this being a calculable 'cost'
 app.CreateCostCurrency = function(t, total)
-	local c = app.WrapObject(setmetatable(constructor(t[KEY], nil, KEY), BaseCostCurrency), t);
+	local c = app.WrapObject(CreateCostCurrency(t[KEY]), t)
 	c.count = total;
 	-- cost currency should always be visible for clarity
 	c.OnUpdate = app.AlwaysShowUpdate;

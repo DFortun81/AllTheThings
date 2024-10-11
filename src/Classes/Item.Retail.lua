@@ -239,6 +239,8 @@ app.ImportRawLink = function(group, rawlink, ignoreSource)
 end
 
 -- TODO: Once Item information is stored in a single source table, this mechanism can reference that instead of using a cache table here
+local CLASS = "Item"
+local KEY = "itemID"
 local cache = app.CreateCache("modItemID");
 -- Consolidated function to handle how many retries for information an Item may have
 local function HandleItemRetries(t)
@@ -452,7 +454,7 @@ local ItemWithFactionBonus = {
 		return not t.repeatable;
 	end,
 }
-app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
+app.CreateItem = app.CreateClass(CLASS, KEY, itemFields,
 "WithQuest", {
 	CollectibleType = app.IsClassic and function() return "Quests" end
 	-- Retail: items tracked as HQT
@@ -490,11 +492,9 @@ app.CreateItem = app.CreateClass("Item", "itemID", itemFields,
 	},
 }, (function(t) return t.factionID; end));
 
-local setmetatable = setmetatable
-local constructor = app.constructor
 -- Wraps the given Type Object as a Cost Item, allowing altered functionality representing this being a calculable 'cost'
--- TODO: perhaps theres a way to make this use CreateClass... but dont think that really supports as is what this class is designed to do
-local BaseCostItem = app.BaseObjectFields({
+local CreateCostItem = app.CreateClass("CostItem", KEY, {
+	IsClassIsolated = true,
 	-- total is the count of the cost item required
 	["total"] = function(t)
 		return t.count or 1;
@@ -513,9 +513,9 @@ local BaseCostItem = app.BaseObjectFields({
 	["costCollectibles"] = app.EmptyFunction,
 	["collectibleAsCost"] = app.EmptyFunction,
 	["costsCount"] = app.EmptyFunction,
-}, "BaseCostItem");
+})
 app.CreateCostItem = function(t, total)
-	local c = app.WrapObject(setmetatable(constructor(t.itemID, nil, "itemID"), BaseCostItem), t);
+	local c = app.WrapObject(CreateCostItem(t[KEY]), t);
 	c.count = total;
 	-- cost items should always be visible for clarity
 	c.OnUpdate = app.AlwaysShowUpdate;
