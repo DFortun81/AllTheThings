@@ -200,7 +200,10 @@ root(ROOTS.Zones, {
 						["lvl"] = 82,
 					}),
 					q(26871, {	-- A Rock Amongst Many
-						["provider"] = { "o", 204959 },	-- Gigantic Painite Cluster
+						["providers"] = {
+							{ "o", 204959 },	-- Gigantic Painite Cluster
+							{ "i",  60504 },	-- Painite Chunk
+						},
 						["sourceQuest"] = 26869,	-- Depth of the Depths
 						["coord"] = { 66.3, 20.7, DEEPHOLM },
 						["modelScale"] = 4,
@@ -225,11 +228,31 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26771,	-- Testing the Trap
 						["coord"] = { 64.4, 82.2, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/8 Abyssion's underlings defeated slain
+								["providers"] = {
+									{ "n", 43966 },	-- Twilight Dragonspawn
+									{ "n", 43967 },	-- Twilight Scalesister
+									{ "n", 44221 },	-- Scalesworn Cultist
+								},
+								["coord"] = { 70.2, 76.8, DEEPHOLM },
+							}),
+						},
 					}),
 					q(26248, {	-- All Our Friends Are Dead
 						["qg"] = 42684,	-- Stormcaller Mylra
 						["sourceQuest"] = 26247,	-- Diplomacy First
 						["groups"] = {
+							objective(1, {	-- 0/6 Slain Crew Member information
+								["providers"] = {
+									{ "i", 58167 },	-- Spirit Totem
+									{ "n", 42681 },	-- Slain Crew Member
+									{ "n", 42682 },	-- Slain Crew Member
+									{ "n", 42747 },	-- Slain Crew Member's Spirit
+									{ "n", 42757 },	-- Slain Crew Member's Spirit
+								},
+								["coord"] = { 61.8, 45.8, DEEPHOLM },
+							}),
 							i(61501),	-- Incorporeal Sandals
 							i(61497),	-- Skyrend Bracers
 							i(61499),	-- Totem-Caller Hood
@@ -244,6 +267,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 46.5, 57.3, DEEPHOLM },
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/1 Explosive Bonding Compound applied
+								["providers"] = {
+									{ "i", 58502 },	-- Explosive Bonding Compound
+									{ "n", 43036 },	-- Flint Oremantle <Son of the Stonefather>
+								},
+								["coord"] = { 46.6, 57.2, DEEPHOLM },
+							}),
 							i(61470),	-- Burning Bind Bracers
 							i(61469),	-- Flashburn Girdle
 							i(61471),	-- Wound-Cauterizing Spaulders
@@ -278,6 +308,15 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 24.6, 62.1, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/10 Injured Earthen patched up
+								["providers"] = {
+									{ "i", 58965 },	-- Deepvein's Patch Kit
+									{ "n", 43229 },	-- Injured Earthen
+								},
+								["coord"] = { 23.2, 59.8, DEEPHOLM },
+							}),
+						},
 					}),
 					q(28488, {	-- Beneath the Surface
 						["qg"] = 43805,	-- Felsen the Enduring
@@ -286,6 +325,23 @@ root(ROOTS.Zones, {
 						["maxReputation"] = { FACTION_THERAZANE, EXALTED },	-- Therazane, Exalted.
 						["isDaily"] = true,
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/1 Ruby Crystal Cluster
+								["providers"] = {
+									{ "i", 64404 },	-- Ruby Crystal Cluster
+									{ "n", 48639 },	-- Ruby Gemstone Cluster
+								},
+								["coords"] = {
+									{ 59.8, 23.6, DEEPHOLM },
+									{ 61.6, 29.2, DEEPHOLM },
+									{ 66.0, 28.0, DEEPHOLM },
+									{ 67.0, 24.6, DEEPHOLM },
+									{ 68.2, 21.4, DEEPHOLM },
+									{ 64.2, 15.2, DEEPHOLM },
+								},
+								["cr"] = 48533,	-- Enormous Gyreworm
+							}),
+						},
 					}),
 					q(26766, {	-- Big Game, Big Bait
 						["qg"] = 44010,	-- Stormcaller Mylra
@@ -458,6 +514,13 @@ root(ROOTS.Zones, {
 						["description"] = "This quest must be completed before unlocking the Therazane dailies (The Binding). Seer Kormo will not be present in the Temple of Earth once the fight is done.",
 						["lvl"] = 82,
 						["groups"] = {
+							objective(1, {	-- 0/8 Totem energized
+								["provider"] = { "i", 60835 },	-- Depleted Totem
+								["crs"] = {
+									43254,	-- Energized Geode
+									43258,	-- Lodestone Elemental
+								},
+							}),
 							i(61478),	-- Energon Greatmace
 							i(61496),	-- Groundshort Leggings
 							i(61480),	-- Sparklight Robes
@@ -480,6 +543,15 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26409,	-- Where's Goldmine?
 						["coord"] = { 46.5, 57.3, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/5 Quartzite Resin
+								["provider"] = { "i", 58501 },	-- Quartzite Resin
+								["crs"] = {
+									42606,	-- Rockslice Flayer
+									42607,	-- Rockslice Ripper
+								},
+							}),
+						},
 					}),
 					q(26580, {	-- Familiar Intruders
 						["qg"] = 42472,	-- Gorsik the Tumultuous
@@ -919,6 +991,16 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 26409,	-- Where's Goldmine?
 						["coord"] = { 46.5, 57.3, DEEPHOLM },
 						["lvl"] = 82,
+						["groups"] = {
+							objective(1, {	-- 0/1 The Burning Heart
+								["providers"] = {
+									{ "i", 60837 },	-- The Burning Heart
+									{ "i", 60834 },	-- Goldmine's Fire Totem
+									{ "n", 45099 },	-- Magmatooth <Initiate Goldmine's Fire Elemental>
+								},
+								["coord"] = { 54.0, 59.4, DEEPHOLM },
+							}),
+						},
 					}),
 					q(26791, {	-- Sprout No More
 						["qg"] = 44143,	-- Slate Quicksand
