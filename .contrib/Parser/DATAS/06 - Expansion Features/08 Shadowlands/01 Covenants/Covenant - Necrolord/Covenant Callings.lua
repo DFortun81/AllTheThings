@@ -42,22 +42,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(181732),	-- Tribute of the Ambitious
 					},
 				}),
-				q(60379, {	-- A Source of Sorrowvine
-					--["provider"] = { "n",  },	--
-					--["coord"] = { , MALDRAXXUS },
-					["g"] = {
-						i(179318),	-- Sorrowvine (QI!)
-						i(181732),	-- Tribute of the Ambitious
-					},
-				}),
-				q(60371, {	-- A Wealth of Wealdwood
-					--["provider"] = { "n",  },	--
-					--["coord"] = { , MALDRAXXUS },
-					["g"] = {
-						i(179320),	-- Wealdwood (QI!)
-						i(181732),	-- Tribute of the Ambitious
-					},
-				}),
 				q(60390, {	-- Aiding Ardenweald
 					["provider"] = { "n", 158339 },	-- Sergeant Romark
 					["coord"] = { 54.2, 68.8, MALDRAXXUS },
@@ -89,25 +73,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(181732),	-- Tribute of the Ambitious
 					},
 				}),
-				q(60464, {	-- Anima Appeal
-					["provider"] = { "n", 167205 },	-- Yondare Hex
-					--["coord"] = { , MALDRAXXUS },
-					["g"] = {
-						i(181732),	-- Tribute of the Ambitious
-					},
-				}),
 				q(60459, {	-- Anima Salvage
 					["provider"] = { "n", 167207 },	-- Sabbath Nightshade
 					["coord"] = { 43.2, 47.8, SEAT_OF_THE_PRIMUS },
 					["g"] = {
 						i(184561),	-- Anima Embers (QI!)
-						i(181732),	-- Tribute of the Ambitious
-					},
-				}),
-				q(60376, {	-- Bonemetal Bonanza
-					--["provider"] = { "n",  },	--
-					--["coord"] = { , MALDRAXXUS },
-					["g"] = {
 						i(181732),	-- Tribute of the Ambitious
 					},
 				}),
@@ -139,14 +109,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(181733),	-- Tribute of the Duty-Bound
 					},
 				}),
-				q(60363, {	-- Gildenite Grab
-					--["provider"] = { "n",  },	--
-					--["coord"] = { , MALDRAXXUS },
-					["g"] = {
-						i(179321),	-- Gildenite (QI!)
-						i(181732),	-- Tribute of the Ambitious
-					},
-				}),
 				q(60416, {	-- Rare Resources
 					["provider"] = { "n", 167201 },	-- Gatherer Zaya
 					["coord"] = { 46.8, 38.6, SEAT_OF_THE_PRIMUS },
@@ -164,7 +126,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 				q(60408, {	-- Training Our Forces
 					["provider"] = { "n", 167209 },	-- Niall Kugal
-					--["coord"] = { 54.4, 67.8,  }, this had Bastion map, should be fixed
+					["coord"] = { 51.8, 28.8, SEAT_OF_THE_PRIMUS },
 					["g"] = {
 						i(181732),	-- Tribute of the Ambitious [Live Reward]
 					},
@@ -178,14 +140,14 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 				}),
 				q(60405, {	-- Training in Bastion
 					["provider"] = { "n", 167209 },	-- Niall Kugal
-					--["coord"] = { 54.4, 67.8,  }, this had Bastion map, should be fixed
+					["coord"] = { 51.8, 28.8, SEAT_OF_THE_PRIMUS },
 					["g"] = {
 						i(181732),	-- Tribute of the Ambitious
 					},
 				}),
 				q(60411, {	-- Training in Revendreth
 					["provider"] = { "n", 167209 },	-- Niall Kugal
-					--["coord"] = { 54.4, 67.8,  }, this had Bastion map, should be fixed
+					["coord"] = { 51.8, 28.8, SEAT_OF_THE_PRIMUS },
 					["g"] = {
 						i(181556),	-- Tribute of the Court
 					},

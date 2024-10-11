@@ -176,6 +176,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(174775),	-- Fix-It-Stick
 			i(176814),	-- Fleshcrafter's Maldracite
 			i(171106),	-- Gathered Necrotic Shards
+			i(179321),	-- Gildenite
 			i(174331),	-- Goliath Gauntlet
 			i(183961),	-- Gorm "Juice"
 			i(172951),	-- Gormherd Branch
@@ -266,6 +267,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(171369),	-- Singing Wood
 			i(173894),	-- Sludge-Camouflaged Pants
 			i(173893),	-- Sludge-Covered Belt
+			i(179318),	-- Sorrowvine
 			i(175131),	-- Soulmending Patches
 			i(174329),	-- Soulshatter Arrow
 			i(173901),	-- Specialized Gutting Knife
@@ -304,6 +306,7 @@ root(ROOTS.NeverImplemented, filter(QUEST_ITEMS, {
 			i(177948),	-- Vulca's Lost Toolkit
 			i(168811),	-- Wand of Absorption
 			i(177895),	-- Warm Earthen Jar
+			i(179320),	-- Wealdwood
 			i(178466),	-- Wicked Spirit Shard
 			i(172458),	-- Worn Legion Chit
 		})),

@@ -42,22 +42,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(181732),	-- Tribute of the Ambitious
 					},
 				}),
-				q(60380, {	-- A Source of Sorrowvine
-					--["provider"] = { "n",  },	--
-					--["coord"] = { , BASTION },
-					["g"] = {
-						i(179318),	-- Sorrowvine (QI!)
-						i(181372),	-- Tribute of the Ascended
-					},
-				}),
-				q(60372, {	-- A Wealth of Wealdwood
-					--["provider"] = { "n",  },	--
-					--["coord"] = { , BASTION },
-					["g"] = {
-						i(179320),	-- Wealdwood (QI!)
-						i(181372),	-- Tribute of the Ascended
-					},
-				}),
 				q(60391, {	-- Aiding Ardenweald
 					["provider"] = { "n", 160387 },	-- Hermestes
 					["coord"] = { 41.0, 41.2, ARCHONS_RISE },
@@ -86,25 +70,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(181556),	-- Tribute of the Court
 					},
 				}),
-				q(60465, {	-- Anima Appeal
-					["provider"] = { "n", 158773 },	-- Capheus
-					["coord"] = { 64.0, 20.0, BASTION },
-					["g"] = {
-						i(181372),	-- Tribute of the Ascended
-					},
-				}),
 				q(60458, {	-- Anima Salvage
 					["provider"] = { "n", 160212 },	-- Soulguide Daelia
 					["coord"] = { 59.4, 34.7, SANCTUM_OF_BINDING },
 					["g"] = {
 						i(184561),	-- Anima Embers (QI!)
-						i(181372),	-- Tribute of the Ascended
-					},
-				}),
-				q(60377, {	-- Bonemetal Bonanza
-					--["provider"] = { "n",  },	--
-					--["coord"] = { , BASTION },
-					["g"] = {
 						i(181372),	-- Tribute of the Ascended
 					},
 				}),
@@ -134,14 +104,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					["coord"] = { 62.0, 37.3, ARCHONS_RISE },
 					["g"] = {
 						i(181557),	-- Favor of the Court
-					},
-				}),
-				q(60358, {	-- Gildenite Grab
-					--["provider"] = { "n",  },	--
-					--["coord"] = { , BASTION },
-					["g"] = {
-						i(179321),	-- Gildenite (QI!)
-						i(181372),	-- Tribute of the Ascended
 					},
 				}),
 				q(60415, {	-- Rare Resources

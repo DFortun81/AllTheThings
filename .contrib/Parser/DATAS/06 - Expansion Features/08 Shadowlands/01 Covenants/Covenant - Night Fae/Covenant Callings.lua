@@ -46,22 +46,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(181732),	-- Tribute of the Ambitious
 					},
 				}),
-				q(60373, {	-- A Source of Sorrowvine
-					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-					["coord"] = { 16.5, 52.4, ARDENWEALD },
-					["g"] = {
-						i(179318),	-- Sorrowvine (QI!)
-						i(181475),	-- Bounty of the Grove Wardens
-					},
-				}),
-				q(60369, {	-- A Wealth of Wealdwood
-					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-					["coord"] = { 16.5, 52.4, ARDENWEALD },
-					["g"] = {
-						i(179320),	-- Wealdwood (QI!)
-						i(181475),	-- Bounty of the Grove Wardens
-					},
-				}),
 				q(60381, {	-- Aiding Ardenweald
 					["provider"] = { "n", 167195 },	-- Blodwyn
 					["coord"] = { 53.7, 6.20, THE_TRUNK },
@@ -90,26 +74,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(181556),	-- Tribute of the Court
 					},
 				}),
-				q(60462, {	-- Anima Appeal
-					["provider"] = { "n", 167196 },	-- Sesselie
-					["coord"] = { 48.9, 39.3, ARDENWEALD },
-					["g"] = {
-						i(181475),	-- Bounty of the Grove Wardens
-					},
-				}),
 				q(60457, {	-- Anima Salvage
 					["provider"] = { "n", 158553 },	-- Flutterby
 					["coord"] = { 33.9, 43.5, ARDENWEALD },
 					["g"] = {
 						i(184561),	-- Anima Embers (QI!)
 						i(181476),	-- Tribute of the Wild Hunt
-					},
-				}),
-				q(60374, {	-- Bonemetal Bonanza
-					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-					["coord"] = { 16.5, 52.4, ARDENWEALD },
-					["g"] = {
-						i(181475),	-- Bounty of the Grove Wardens
 					},
 				}),
 				q(60438, {	-- Challenges in Ardenweald
@@ -138,14 +108,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					--["coord"] = { 36.8, 24.8,  }, this had Bastion map, should be fixed
 					["g"] = {
 						i(181476),	-- Tribute of the Wild Hunt
-					},
-				}),
-				q(60364, {	-- Gildenite Grab
-					["provider"] = { "n", 168513 },	-- Elder Shaper An'wyn
-					["coord"] = { 16.5, 52.4, ARDENWEALD },
-					["g"] = {
-						i(179321),	-- Gildenite (QI!)
-						i(181475),	-- Bounty of the Grove Wardens
 					},
 				}),
 				q(60414, {	-- Rare Resources

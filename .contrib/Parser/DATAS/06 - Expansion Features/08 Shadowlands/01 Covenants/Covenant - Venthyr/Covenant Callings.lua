@@ -48,22 +48,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(181732),	-- Tribute of the Ambitious
 					},
 				}),
-				q(60378, {	-- A Source of Sorrowvine
-					--["provider"] = { "n",  },	--
-					--["coord"] = { ,  },
-					["g"] = {
-						i(179318),	-- Sorrowvine (QI!)
-						i(181556),	-- Tribute of the Court
-					},
-				}),
-				q(60370, {	-- A Wealth of Wealdwood
-					--["provider"] = { "n",  },	--
-					--["coord"] = { ,  },
-					["g"] = {
-						i(179320),	-- Wealdwood (QI!)
-						i(181556),	-- Tribute of the Court
-					},
-				}),
 				q(60389, {	-- Aiding Ardenweald
 					["provider"] = { "n", 165302 },	-- Rendle
 					["coord"] = { 62.2, 76.3, SINFALL_DEPTHS },
@@ -100,13 +84,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(181556),	-- Tribute of the Court
 					},
 				}),
-				q(60375, {	-- Bonemetal Bonanza
-					--["provider"] = { "n",  },	--
-					--["coord"] = { ,  },
-					["g"] = {
-						i(181556),	-- Tribute of the Court
-					},
-				}),
 				q(60441, {	-- Challenges in Ardenweald
 					["provider"] = { "n", 165291 },	-- The Accuser
 					["coord"] = { 55.6, 76.6, SINFALL_DEPTHS },
@@ -133,14 +110,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 					["coord"] = { 55.6, 76.6, SINFALL_DEPTHS },
 					["g"] = {
 						i(181557),	-- Favor of the Court
-					},
-				}),
-				q(60365, {	-- Gildenite Grab
-					["provider"] = { "n", 158713 },	-- The Curator
-					--["coord"] = { ,  },
-					["g"] = {
-						i(179321),	-- Gildenite (QI!)
-						i(181556),	-- Tribute of the Court
 					},
 				}),
 				q(60417, {	-- Rare Resources

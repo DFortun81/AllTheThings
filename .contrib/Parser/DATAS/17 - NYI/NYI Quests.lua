@@ -6007,9 +6007,28 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(62011),	-- Ensemble: Stitched Authority of Maldraxxus
 			q(62013),	-- Ensemble: Stitched Guile of Maldraxxus
 			q(62014),	-- Ensemble: Stitched Rationale of Maldraxxus
+			q(60380),	-- A Source of Sorrowvine (Kyrian)
+			q(60379),	-- A Source of Sorrowvine (Necrolords)
+			q(60373),	-- A Source of Sorrowvine (Night Fae)
+			q(60378),	-- A Source of Sorrowvine (Venthyr)
+			q(60372),	-- A Wealth of Wealdwood (Kyrian)
+			q(60371),	-- A Wealth of Wealdwood (Necrolords)
+			q(60369),	-- A Wealth of Wealdwood (Night Fae)
+			q(60370),	-- A Wealth of Wealdwood (Venthyr)
+			q(60377),	-- Bonemetal Bonanza (Kyrian)
+			q(60376),	-- Bonemetal Bonanza (Necrolords)
+			q(60374),	-- Bonemetal Bonanza (Night Fae)
+			q(60375),	-- Bonemetal Bonanza (Venthyr)
+			q(60358),	-- Gildenite Grab (Kyrian)
+			q(60363),	-- Gildenite Grab (Necrolords)
+			q(60364),	-- Gildenite Grab (Night Fae)
+			q(60365),	-- Gildenite Grab (Venthyr)
 			-- Quest from Unsorted
 			q(60286, { ["name"] = "A Token of Our Admiration", }),	-- A Token of Our Admiration
-			q(60463, { ["name"] = "Anima Appeal", }),	-- Anima Appeal
+			q(60465, { ["name"] = "Anima Appeal", }),	-- Anima Appeal (Kyrian)
+			q(60464, { ["name"] = "Anima Appeal", }),	-- Anima Appeal (Necrolords)
+			q(60462, { ["name"] = "Anima Appeal", }),	-- Anima Appeal (Night Fae)
+			q(60463, { ["name"] = "Anima Appeal", }),	-- Anima Appeal (Venthyr)
 			q(60157, { ["name"] = "Answers from the Ascended", }),	-- Answers from the Ascended
 			q(55424, { ["name"] = "Aspirant Elynna", }),	-- Aspirant Elynna
 			q(62168, { ["name"] = "Bonescript Dispatches", }),	-- Bonescript Dispatches
