@@ -533,7 +533,76 @@ local C_Item_GetItemInventoryTypeByID = C_Item.GetItemInventoryTypeByID;
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
 ---@class ATTItemHarvesterForRetail: GameTooltip
 local ItemHarvester = CreateFrame("GameTooltip", "ATTItemHarvester", UIParent, "GameTooltipTemplate");
-local CreateItemTooltipHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "itemID", {
+local CreateItemTooltipHarvester
+app.CreateItemHarvester = app.ExtendClass("Item", "ItemHarvester", "itemID", {
+	IsClassIsolated = true,
+	visible = app.ReturnTrue,
+	collectible = app.ReturnTrue,
+	collected = app.ReturnFalse,
+	text = function(t)
+		-- delayed localization since ATT's globals don't exist when this logic is processed on load
+		if not HarvestedItemDatabase then
+			HarvestedItemDatabase = app.LocalizeGlobal("AllTheThingsHarvestItems", true);
+		end
+		local link = t.link;
+		if link then
+			app.ImportRawLink(t, link);
+			local itemName, _, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, _,
+			itemEquipLoc, _, _, classID, subclassID, bindType
+				= GetItemInfo(link);
+			if itemName then
+				local spellName, spellID;
+				-- Recipe or Mount, grab the spellID if possible
+				if classID == LE_ITEM_CLASS_RECIPE or (classID == LE_ITEM_CLASS_MISCELLANEOUS and subclassID == LE_ITEM_MISCELLANEOUS_MOUNT) then
+					spellName, spellID = GetItemSpell(t.itemID);
+					-- print("Recipe/Mount",classID,subclassID,spellName,spellID);
+					if spellName == "Learning" then spellID = nil; end	-- RIP.
+				end
+				CreateItemTooltipHarvester(t.itemID, t);
+				local info = {
+					["name"] = itemName,
+					["itemID"] = t.itemID,
+					["equippable"] = itemEquipLoc and itemEquipLoc ~= "" and true or false,
+					["class"] = classID,
+					["subclass"] = subclassID,
+					["inventoryType"] = C_Item_GetItemInventoryTypeByID(t.itemID),
+					["b"] = bindType,
+					["q"] = itemQuality,
+					["iLvl"] = itemLevel,
+					["spellID"] = spellID,
+				};
+				if itemMinLevel and itemMinLevel > 0 then
+					info.lvl = itemMinLevel;
+				end
+				if info.inventoryType == 0 then
+					info.inventoryType = nil;
+				end
+				if not app.IsBoP(info) then
+					info.b = nil;
+				end
+				if info.iLvl and info.iLvl < 2 then
+					info.iLvl = nil;
+				end
+				-- can debug output for tooltip harvesting
+				-- if t.itemID == 141038 then
+				-- 	info._debug = true;
+				-- end
+				t.itemType = itemType;
+				t.itemSubType = itemSubType;
+				t.info = info;
+				t.retries = nil;
+				HarvestedItemDatabase[t.itemID] = info;
+				return link;
+			end
+		end
+
+		local name = t.name;
+		-- retries exceeded, so check the raw .name on the group (gets assigned when retries exceeded during cache attempt)
+		if name then t.collected = true; end
+		return name;
+	end
+});
+CreateItemTooltipHarvester = app.ExtendClass("ItemHarvester", "ItemTooltipHarvester", "itemID", {
 	IsClassIsolated = true,
 	text = function(t)
 		local link = t.link;
@@ -764,73 +833,5 @@ local CreateItemTooltipHarvester = app.ExtendClass("ItemHarvester", "ItemTooltip
 			ItemHarvester:Hide();
 			return link;
 		end
-	end
-});
-app.CreateItemHarvester = app.ExtendClass("Item", "ItemHarvester", "itemID", {
-	IsClassIsolated = true,
-	visible = app.ReturnTrue,
-	collectible = app.ReturnTrue,
-	collected = app.ReturnFalse,
-	text = function(t)
-		-- delayed localization since ATT's globals don't exist when this logic is processed on load
-		if not HarvestedItemDatabase then
-			HarvestedItemDatabase = app.LocalizeGlobal("AllTheThingsHarvestItems", true);
-		end
-		local link = t.link;
-		if link then
-			app.ImportRawLink(t, link);
-			local itemName, _, itemQuality, itemLevel, itemMinLevel, itemType, itemSubType, _,
-			itemEquipLoc, _, _, classID, subclassID, bindType
-				= GetItemInfo(link);
-			if itemName then
-				local spellName, spellID;
-				-- Recipe or Mount, grab the spellID if possible
-				if classID == LE_ITEM_CLASS_RECIPE or (classID == LE_ITEM_CLASS_MISCELLANEOUS and subclassID == LE_ITEM_MISCELLANEOUS_MOUNT) then
-					spellName, spellID = GetItemSpell(t.itemID);
-					-- print("Recipe/Mount",classID,subclassID,spellName,spellID);
-					if spellName == "Learning" then spellID = nil; end	-- RIP.
-				end
-				CreateItemTooltipHarvester(t.itemID, t);
-				local info = {
-					["name"] = itemName,
-					["itemID"] = t.itemID,
-					["equippable"] = itemEquipLoc and itemEquipLoc ~= "" and true or false,
-					["class"] = classID,
-					["subclass"] = subclassID,
-					["inventoryType"] = C_Item_GetItemInventoryTypeByID(t.itemID),
-					["b"] = bindType,
-					["q"] = itemQuality,
-					["iLvl"] = itemLevel,
-					["spellID"] = spellID,
-				};
-				if itemMinLevel and itemMinLevel > 0 then
-					info.lvl = itemMinLevel;
-				end
-				if info.inventoryType == 0 then
-					info.inventoryType = nil;
-				end
-				if not app.IsBoP(info) then
-					info.b = nil;
-				end
-				if info.iLvl and info.iLvl < 2 then
-					info.iLvl = nil;
-				end
-				-- can debug output for tooltip harvesting
-				-- if t.itemID == 141038 then
-				-- 	info._debug = true;
-				-- end
-				t.itemType = itemType;
-				t.itemSubType = itemSubType;
-				t.info = info;
-				t.retries = nil;
-				HarvestedItemDatabase[t.itemID] = info;
-				return link;
-			end
-		end
-
-		local name = t.name;
-		-- retries exceeded, so check the raw .name on the group (gets assigned when retries exceeded during cache attempt)
-		if name then t.collected = true; end
-		return name;
 	end
 });
