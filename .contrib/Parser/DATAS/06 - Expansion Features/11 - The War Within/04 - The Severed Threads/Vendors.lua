@@ -4,6 +4,80 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(THE_SEVERED_THREADS, {
 		n(VENDORS, {
+			n(224729, {	-- Anub'okki <Disciple of Anub'azal>
+				["coord"] = { 55.9, 42.1, AZJ_KAHET },
+				["sourceQuests"] = { 78256 },	-- The General Consensus
+				["sym"] = {{"select","itemID",
+					226519,	-- General's Expertise (TOY!)
+					228949,	-- Rumor Map
+					228950,	-- Rumor Map Bundle
+					228952,	-- Treasure Map Bundle
+				}},
+				["g"] = bubbleDownRep(FACTION_THE_GENERAL, {
+					{		-- Stranger
+					}, {	-- Acquaintance
+					}, {	-- Crony
+						i(226512, {	-- Treasure Map: Forgotten Memorial
+							["cost"] = {{"c", KEJ, 25}},
+						}),
+						i(226507, {	-- Venom Dahn's Webscrub
+							["cost"] = {{"c", KEJ, 25}},
+						}),
+					}, {	-- Accomplice
+						i(226509, {	-- General's Insight
+							["cost"] = {{"c", KEJ, 50}},
+						}),
+					}, {	-- Collaborator
+					}, {	-- Accessory
+					}, {	-- Abettor
+					}, {	-- Conspirator
+						i(223278, {	-- Heritage Undercrawler (MOUNT!)
+							["cost"] = {{"c", KEJ, 2020}},
+						}),
+					}, {	-- Mastermind
+						i(228944, {	-- Crypt Lord's Severed Thread (CI!)
+							["cost"] = {{"c", KEJ, 250}},
+						}),
+					},
+				}),
+			}),
+			n(229184, {	-- Aspirant Kiipka
+				["coord"] = { 55.9, 42.1, AZJ_KAHET },
+				["sym"] = {{"sub","common_vendor",224729}},	-- Anub'okki <Disciple of Anub'azal>
+			}),
+			n(224734, {	-- Bobbin <Eye of the Weaver>
+				["coord"] = { 56.4, 43.3, AZJ_KAHET },
+				["sym"] = {{"select","itemID",
+					226511,	-- Nerubimorph Poultice
+					228949,	-- Rumor Map
+					228950,	-- Rumor Map Bundle
+					228952,	-- Treasure Map Bundle
+				}},
+				["g"] = bubbleDownRep(FACTION_THE_WEAVER, {
+					{		-- Stranger
+					}, {	-- Acquaintance
+					}, {	-- Crony
+						i(226514, {	-- Treasure Map: Weave-Rat Cache
+							["cost"] = {{"c", KEJ, 25}},
+						}),
+					}, {	-- Accomplice
+						i(226510, {	-- Weaver's Facade
+							["cost"] = {{"c", KEJ, 50}},
+						}),
+					}, {	-- Collaborator
+					}, {	-- Accessory
+					}, {	-- Abettor
+					}, {	-- Conspirator
+						i(223276, {	-- Widow's Undercrawler (MOUNT!)
+							["cost"] = {{"c", KEJ, 2020}},
+						}),
+					}, {	-- Mastermind
+						i(228943, {	-- Spymaster's Severed Thread (CI!)
+							["cost"] = {{"c", KEJ, 250}},
+						}),
+					},
+				}),
+			}),
 			n(226214, {	-- Ka'muko <Kej Currency Exchanger>
 				["coord"] = { 56.6, 43.0, AZJ_KAHET },
 				["g"] = {
@@ -96,6 +170,43 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						}),
 					}, {	-- RENOWN 24 --
 					}, {	-- RENOWN 25 --
+					},
+				}),
+			}),
+			n(224733, {	-- Tulumun <Assistant to the Executor>
+				["coord"] = { 45.0, 16.7, AZJ_KAHET },
+				["sourceQuests"] = { 78248 },	-- What We Still Have
+				["sym"] = {{"select","itemID",
+					226511,	-- Nerubimorph Poultice
+					228949,	-- Rumor Map
+					228950,	-- Rumor Map Bundle
+					228952,	-- Treasure Map Bundle
+				}},
+				["g"] = bubbleDownRep(FACTION_THE_VIZIER, {
+					{		-- Stranger
+					}, {	-- Acquaintance
+					}, {	-- Crony
+						i(226518, {	-- Phero-Escape
+							["cost"] = {{"c", KEJ, 25}},
+						}),
+						i(226513, {	-- Treasure Map: Kaheti Excavation
+							["cost"] = {{"c", KEJ, 25}},
+						}),
+					}, {	-- Accomplice
+						i(226508, {	-- Vizier's Influence
+							["cost"] = {{"c", KEJ, 50}},
+						}),
+					}, {	-- Collaborator
+					}, {	-- Accessory
+					}, {	-- Abettor
+					}, {	-- Conspirator
+						i(223279, {	-- Royal Court Undercrawler (MOUNT!)
+							["cost"] = {{"c", KEJ, 2020}},
+						}),
+					}, {	-- Mastermind
+						i(228945, {	-- Executor's Severed Thread (CI!)
+							["cost"] = {{"c", KEJ, 250}},
+						}),
 					},
 				}),
 			}),

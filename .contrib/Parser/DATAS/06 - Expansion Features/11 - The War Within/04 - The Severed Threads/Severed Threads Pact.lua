@@ -252,7 +252,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				q(81489, {	-- Bounty: Zorikal the Patron
 					["sourceQuest"] = 82581,
 					["provider"] = { "n", 224167 },	-- Eirzay
-					["coord"] = { 15.6, 45.9, NERUBAR },
+					["coord"] = { 15.6, 45.7, NERUBAR },
+					["crs"] = { 221202 },	-- Zorikal the Patron
 				}),
 				q(81475, {	-- Breaking the Phalanx: Royal Appointments
 					["sourceQuest"] = 82640,
@@ -356,6 +357,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					["sourceQuest"] = 82644,
 					["provider"] = { "n", 224183 },	-- Ghos'opp
 					["coord"] = { 64.5, 87.3, AZJ_KAHET },
+					["g"] = {
+						o(438037),	-- Black Blood Vessel
+					},
 				}),
 				q(81505, {	-- Sabotage: Venomancers
 					["sourceQuest"] = 82645,
@@ -469,17 +473,26 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				q(81499, {	-- Information Control: Ascended Intrigue
 					["sourceQuest"] = 82646,
 					["provider"] = { "n", 224198 },	-- Ru'murh
-					["coord"] = { 54.8, 34.7, NERUBAR },
+					["coord"] = { 54.8, 34.5, NERUBAR },
+					["g"] = {
+						o(439334),	-- Sureki Shadecaster
+					},
 				}),
 				q(81472, {	-- Information Control: Ansurek's Truth
 					["sourceQuest"] = 82645,
 					["provider"] = { "n", 224197 },	-- Ru'murh
 					["coord"] = { 39.8, 26.6, NERUBAR },
+					["g"] = {
+						o(439339),	-- Sureki Shadecaster
+					},
 				}),
 				q(81473, {	-- Information Control: The Right Side of History
 					["sourceQuest"] = 82644,
 					["provider"] = { "n", 224196 },	-- Ru'murh
-					["coord"] = { 77.8, 53.9, NERUBAR },
+					["coord"] = { 77.8, 53.7, NERUBAR },
+					["g"] = {
+						o(437216),	-- Sureki Shadecaster
+					},
 				}),
 				q(81504, {	-- Infiltration: Hidden Figures
 					["sourceQuest"] = 82649,
@@ -823,6 +836,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 					-- Ru'murh  (n: 224191 @ 68.6, 51.1), starts questID 81484 (Wet Work: Death of a Salesman), (30-09-24, Exo)
 					-- Ru'murh  (n: 224193 @ 55.0, 26.6), starts questID 80573 (Dropping Eaves: Spoils of War), (01-10-24, Exo)
 					-- Ghos'opp (n: 224187 @ 50.6, 47.1), starts questID 81482 (Testing Formulae: Gelatinous Unguent), (04-10-24, Exo)
+					-- Ru'murh  (n: 224196 @ 77.8, 53.7), starts questID 81473 (Information Control: The Right Side of History), (11-10-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82640, {	-- Ru'murh  (n: 224190 @ 41.5, 22.4), starts questID 81555 (Wet Work: Tithe to Kill), (23-09-24, Exo)
@@ -831,12 +845,14 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 					-- Ghos'opp (n: 224188 @ 47.9,  9.7), starts questID 81501 (Testing Formulae: Roiling Elixir), (30-09-24, Exo)
 					-- Ru'murh  (n: 224194 @ 70.3, 31.8), starts questID 81470 (Dropping Eaves: Thieving Weave), (04-10-24, Exo)
 					-- Ghos'opp (n: 224177 @ 52.0, 16.6), starts questID 81479 (Requisitions: Umbrashrooms), (05-10-24, Exo)
+					-- Ru'murh  (n: 224198 @ 54.8, 34.5), starts questID 81499 (Information Control: Ascended Intrigue), (11-10-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82642, {	-- Eirzay   (n: 224161 @ 43.0, 47.2), starts questID 81475 (Breaking the Phalanx: Royal Appointments), (27-09-24, Exo)
 					-- Ghos'opp (n: 224189 @ 30.9, 23.0), starts questID 81502 (Testing Formulae: Malodorous Philter), (30-09-24, Exo)
 					-- Eirzay   (n: 224162 @ 33.3, 49.1), starts questID 81487 (Breaking the Phalanx: Threadblades), (01-10-24, Exo)
 					-- Eirzay   (n: 224163 @ 27.9, 56.7), starts questID 81488 (Breaking the Phalanx: Schismatic Sages), (04-10-24, Exo)
+					-- Eirzay   (n: 224167 @ 15.6, 45.7), starts questID 81489 (Bounty: Zorikal the Patron), (09-10-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82644, {	-- Ru'murh  (n: 224197 @ 55.7, 47.8), starts questID 81472 (Information Control: Ansurek's Truth), (23-09-24, Exo)
@@ -856,7 +872,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 					-- Ghos'opp (n: 224180 @ 47.2, 58.8), starts questID 81498 (Wild Reagents: Twitching Gorge), (30-09-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
-			--q(82581),	-- 'Listen to the rumor' from Eirzay (n: 224167 @ 15.6, 45.9, 2213), start questID 81489 (Bounty: Zorikal the Patron)
 			--q(82643),	-- 'Investiage the scene' from Ru'murh (n: 224195 @ 73.3, 50.9, 2213), start questID 81471 (Dropping Eaves: Saving the Past)
 			--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224201 @ 76.2, 47.4), start questID 81504 (Infiltration: Hidden Figures)
 			-- Missing 5 more quest data/givers
