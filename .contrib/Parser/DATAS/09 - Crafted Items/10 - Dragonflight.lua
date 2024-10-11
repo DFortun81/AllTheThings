@@ -1,10 +1,10 @@
 ---------------------------------------------
 --    C R A F T A B L E S   M O D U L E    --
 ---------------------------------------------
--- Simple function for First Craft tracking Quests
+-- Simple function for First Craft HQTs
 -- ex. FirstCraft(QUESTID, RECIPEID);	-- RECIPE_NAME
 local function FirstCraft(questID, recipeID, added, removed)
-	local t = name(HEADERS.Spell, recipeID, { ["questID"] = questID })
+	local t = hqt(questID, name(HEADERS.Spell, recipeID))
 	if added then
 		t.timeline = { added };
 	end
@@ -17,7 +17,7 @@ local function FirstCraft(questID, recipeID, added, removed)
 	return t;
 end
 local function FirstSkin(questID, creatureID, added, group)
-	local t = name(HEADERS.NPC, creatureID, { ["questID"] = questID })
+	local t = hqt(questID, name(HEADERS.NPC, creatureID))
 	if added then
 		t.timeline = { added };
 	end
@@ -3055,11 +3055,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 	prof(SKINNING, {
 		n(FIRST_CRAFTS_HEADER, sharedData({
 			["requireSkill"] = SKINNING,
-			["collectible"] = false,
 		},{
-		-- To do:
-		-- Needs Achievements attached (roughly 1/3 should be attached to achievement criteria)
-		-- Remove collectible tag=false tag for those that can be collected due achievement
+			-- TODO: Needs Achievements attached (roughly 1/3 should be attached to achievement criteria)
 			FirstSkin(74204, 193243),	-- Skinning Acrosoth
 			FirstSkin(78824, 210288, ADDED_10_2_0),	-- Skinning Ancient Core Hound
 			FirstSkin(74219, 187111),	-- Skinning Ancient Hornswog
