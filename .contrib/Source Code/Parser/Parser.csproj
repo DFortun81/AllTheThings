@@ -97,10 +97,7 @@
     <Compile Include="Export\Object Data\AchievementData.cs" />
     <Compile Include="Export\Object Data\RecipeData.cs" />
     <Compile Include="Export\Object Data\MountData.cs" />
-    <Compile Include="Export\Object Data\NPCData.cs" />
     <Compile Include="Export\Object Data\ObjectData.cs" />
-    <Compile Include="Export\Object Data\QuestData.cs" />
-    <Compile Include="Export\Object Data\SpellData.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="FieldTypes\Cost.cs" />
     <Compile Include="FieldTypes\IExportableField.cs" />
