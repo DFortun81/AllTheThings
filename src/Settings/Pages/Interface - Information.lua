@@ -656,7 +656,7 @@ local InformationTypes = {
 				local phase = L.PHASES[u];
 				if phase then
 					local buildVersion = phase.buildVersion;
-					if not buildVersion or app.GameBuildVersion < buildVersion then
+					if not buildVersion or app.GameBuildVersion < buildVersion or app.MODE_DEBUG then
 						tinsert(tooltipInfo, {
 							left = phase.description,
 							wrap = true,

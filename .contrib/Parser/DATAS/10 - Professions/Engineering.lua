@@ -191,7 +191,7 @@ root(ROOTS.Professions, prof(ENGINEERING, bubbleDownSelf({ ["requireSkill"] = EN
 			}),
 		})),
 		n(QUESTS, sharedData({
-			["description"] = "Requires 200 Engineering (Classic) to start this quest.",
+			["learnedAt"] = 200,
 		}, {
 			q(3634, {	-- Gnome Engineering [A]
 				["providers"] = {

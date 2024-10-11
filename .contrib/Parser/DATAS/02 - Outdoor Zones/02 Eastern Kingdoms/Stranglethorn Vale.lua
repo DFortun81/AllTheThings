@@ -1611,10 +1611,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["qg"] = 7406,	-- Oglethorpe Obnoticus <Master Gnome Engineer>
 					["sourceQuest"] = 3642,	-- The Pledge of Secrecy
 					["altQuests"] = { 3639, 3641 },	-- The Pledge of Secrecy
-					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
 					["races"] = HORDE_ONLY,
 					["cost"] = {
 						{ "i", 4392, 2 },	-- Advanced Target Dummy
@@ -2157,10 +2157,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						3637,	-- Gnome Engineering
 					},
 					["altQuests"] = { 3638, 3640 },	-- The Pledge of Secrecy
-					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 28.2, 76.2, STRANGLETHORN_VALE },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
 					["races"] = HORDE_ONLY,
 					["lvl"] = 30,
 					["groups"] = {

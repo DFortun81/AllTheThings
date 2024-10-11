@@ -4510,10 +4510,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3643,	-- Show Your Work
 					},
 					["sourceQuest"] = 3638,	-- The Pledge of Secrecy
-					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 54.4, 27.2, TANARIS },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
 					["cost"] = {
 						{ "i", 4392, 2 },	-- Advanced Target Dummy
 						{ "i", 4407, 1 },	-- Accurate Scope
@@ -4823,10 +4823,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						3633,	-- Goblin Engineering
 						4181,	-- Goblin Engineering
 					},
-					["description"] = "Requires 200 Engineering to start this quest.",
 					["coord"] = { 54.4, 27.2, TANARIS },
 					["timeline"] = { REMOVED_3_0_2 },	-- Originally supposed to be removed in 4.0.3, but Wrath Classic was weird.
 					["requireSkill"] = ENGINEERING,
+					["learnedAt"] = 200,
 					["lvl"] = 30,
 					["groups"] = {
 						objective(1, {	-- 0/1 Nixx's Pledge of Secrecy
