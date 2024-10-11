@@ -2430,9 +2430,9 @@ _.ObjectModels = {
 
 -- Phase Database Module
 _.PhaseConstants = {
-	REAL_MONEY = 3,
 	ELITE_PVP_REQUIREMENT = 4,
 	NEVER_IMPLEMENTED = 1,
+	REAL_MONEY = 3,
 	REMOVED_FROM_GAME = 2,
 	UNLEARNABLE = 5,
 };
@@ -7794,6 +7794,7 @@ if GetLocale():sub(3,4):lower() == "tw" then
 for key,value in pairs({
 	[1] = "從未實裝",
 	[2] = "已從遊戲中移除",
+	[3] = "暴雪點數",
 	[4] = "PvP 精良/角鬥士",
 	[5] = "不可學",
 })
@@ -7801,8 +7802,15 @@ do phases[key].name = value; end
 for key,value in pairs({
 	[1] = "|cFFFF0000此項玩家永遠無法獲得。|r",
 	[2] = "|cFFFF0000此項已從遊戲中刪除。|r",
-	[4] = "|cFFFFAAAA除非您擁有所需的 PvP 稱號、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖幻化。|r",
-	[5] = "|cFFFFAAAA這不能永久收集、學習或用於幻化。|r",
+	[3] = "|cFFAAFFAA這被鎖定在付費牆後面，例如遊戲内商店、另一個暴雪產品或招兵買馬召集令。|r",
+	[4] = "|cFFFFAAAA除非您擁有所需的 PvP 稱號、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖塑形。|r",
+	[5] = "|cFFFFAAAA這不能永久收集、學習或用於塑形。|r",
+	[11] = "|cFFAAFFAA該功能直到 Phase 1 的 WoW Classic 才可用。|r",
+	[12] = "|cFFAAFFAA該功能直到 Phase 2 的 WoW Classic 才可用。|r",
+	[13] = "|cFFAAFFAA該功能直到 Phase 3 的 WoW Classic 才可用。|r",
+	[14] = "|cFFAAFFAA該功能直到 Phase 4 的 WoW Classic 才可用。|r",
+	[15] = "|cFFAAFFAA該功能直到 Phase 5 的 WoW Classic 才可用。|r",
+	[16] = "|cFFAAFFAA該功能直到 Phase 6 的 WoW Classic 才可用。|r",
 })
 do phases[key].description = value; end
 end

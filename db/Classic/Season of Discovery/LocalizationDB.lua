@@ -585,7 +585,6 @@ _.Modules.Events.SetEventInformation(141, {
 	_.Modules.Events.CreateSchedule({["hour"]=10,["minute"]=0,["month"]=12,["monthDay"]=16,["weekday"]=3,["year"]=2025},{["hour"]=6,["minute"]=0,["month"]=1,["monthDay"]=2,["weekday"]=6,["year"]=2026})
 });
 _.Modules.Events.SetEventInformation(479, {
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=23,["weekday"]=2,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=30,["weekday"]=2,["year"]=2024},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=7,["weekday"]=2,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=14,["weekday"]=2,["year"]=2024},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=21,["weekday"]=2,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=28,["weekday"]=2,["year"]=2024},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=4,["weekday"]=2,["year"]=2024},{["hour"]=0,["minute"]=0,["month"]=11,["monthDay"]=11,["weekday"]=2,["year"]=2024},{["remappedID"]=375}),
@@ -611,7 +610,8 @@ _.Modules.Events.SetEventInformation(479, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=11,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=18,["weekday"]=2,["year"]=2025},{["remappedID"]=375}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=8,["monthDay"]=25,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=1,["weekday"]=2,["year"]=2025},{["remappedID"]=374}),
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=8,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=15,["weekday"]=2,["year"]=2025},{["remappedID"]=375}),
-	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=29,["weekday"]=2,["year"]=2025},{["remappedID"]=374})
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=22,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=9,["monthDay"]=29,["weekday"]=2,["year"]=2025},{["remappedID"]=374}),
+	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=6,["weekday"]=2,["year"]=2025},{["hour"]=0,["minute"]=0,["month"]=10,["monthDay"]=13,["weekday"]=2,["year"]=2025},{["remappedID"]=375})
 });
 _.Modules.Events.SetEventInformation(201, {
 	_.Modules.Events.CreateSchedule({["hour"]=0,["minute"]=0,["month"]=5,["monthDay"]=1,["weekday"]=2,["year"]=2023},{["hour"]=23,["minute"]=59,["month"]=5,["monthDay"]=7,["weekday"]=1,["year"]=2023}),
@@ -2837,9 +2837,9 @@ _.ObjectModels = {
 
 -- Phase Database Module
 _.PhaseConstants = {
-	REAL_MONEY = 3,
 	ELITE_PVP_REQUIREMENT = 4,
 	NEVER_IMPLEMENTED = 1,
+	REAL_MONEY = 3,
 	REMOVED_FROM_GAME = 2,
 	UNLEARNABLE = 5,
 };
@@ -9096,6 +9096,7 @@ if GetLocale():sub(3,4):lower() == "tw" then
 for key,value in pairs({
 	[1] = "從未實裝",
 	[2] = "已從遊戲中移除",
+	[3] = "暴雪點數",
 	[4] = "PvP 精良/角鬥士",
 	[5] = "不可學",
 })
@@ -9103,8 +9104,16 @@ do phases[key].name = value; end
 for key,value in pairs({
 	[1] = "|cFFFF0000此項玩家永遠無法獲得。|r",
 	[2] = "|cFFFF0000此項已從遊戲中刪除。|r",
-	[4] = "|cFFFFAAAA除非您擁有所需的 PvP 稱號、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖幻化。|r",
-	[5] = "|cFFFFAAAA這不能永久收集、學習或用於幻化。|r",
+	[3] = "|cFFAAFFAA這被鎖定在付費牆後面，例如遊戲内商店、另一個暴雪產品或招兵買馬召集令。|r",
+	[4] = "|cFFFFAAAA除非您擁有所需的 PvP 稱號、所需的 PvP 等級或處於該賽季的前 %，否則無法再購買或解鎖塑形。|r",
+	[5] = "|cFFFFAAAA這不能永久收集、學習或用於塑形。|r",
+	[11] = "|cFFAAFFAA該功能直到 Phase 1 的 WoW Classic 才可用。|r",
+	[1606] = "|cFFAAFFAA該功能直到 Phase 2 的 Season of Discovery 才可用。|r",
+	[1607] = "|cFFAAFFAA該功能直到 Phase 3 的 Season of Discovery 才可用。|r",
+	[1608] = "|cFFAAFFAA該功能直到 Phase 4 的 Season of Discovery 才可用。|r",
+	[1609] = "|cFFAAFFAA該功能直到 Phase 5 的 Season of Discovery 才可用。|r",
+	[1610] = "|cFFAAFFAA該功能直到 Phase 6 的 Season of Discovery 才可用。|r",
+	[1611] = "|cFFAAFFAA該功能直到 Phase 7 的 Season of Discovery 才可用。|r",
 })
 do phases[key].description = value; end
 end
