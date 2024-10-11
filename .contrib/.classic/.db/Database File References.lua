@@ -3,6 +3,7 @@
 -- #IMPORT: 00 - DB\\Wago\\
 -- #IMPORT: 00 - DB\\Dynamic\\
 -- #IMPORT: 00 - DB\\AchievementDB\\
+-- #IMPORT: 00 - DB\\AccountWideQuestsDB.lua
 -- #IMPORT: 00 - DB\\CategoryDB.lua
 -- #IMPORT: 00 - DB\\ClassInfoDB.lua
 -- #IMPORT: 00 - DB\\FilterDB.lua

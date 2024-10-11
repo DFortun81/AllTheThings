@@ -2,31 +2,29 @@
 --   A C C O U N T W I D E  Q U E S T S   D A T A B A S E   M O D U L E   --
 ----------------------------------------------------------------------------
 -- Contains a set of Quests which are known to be saved Account-Wide
-select(2, ...).AccountWideQuestsDB = {
+-- Discrepancies per WoW Version can be toggled using a custom function which returns the flag status for that version
+-- Or entire ranges of quests can simply be excluded using preprocessors in the main assignment table
+-- ex. [###] = AfterMOP(), -- a quest which wasn't account-wide until after MOP
+-- local function AfterMOP()
+-- 	local a
+-- 	-- #IF AFTER MOP
+-- 	a = true
+-- 	-- #ENDIF
+-- 	return a
+-- end
+ExportDB.AccountWideQuestsDB = {
 
-	-- Secrets of Azeroth Locks
-	[77578] = true,	-- Banner Stand
-	[76987] = true,	-- completed 'The Inquisitive' (achievementID 18642) (account-wide completion)
-	[78202] = true,	-- completed 'Unfinished Thinking Cap' (questID 77237) (account-wide completion)
-	[77513] = true,	-- completed 'The Tricked-Out Thinking Cap' (questID 76504) (account-wide completion)
-	[77521] = true,	-- completed 'Preservationist Cleared' (questID 77277) (account-wide completion)
-	[78201] = true,	-- completed 'Artifact Secured' (questID 77282) (account-wide completion)
-	[77522] = true,	-- completed 'The Torch of Pyrreth' (questID 77263) (account-wide completion)
-	[77523] = true,	-- completed 'A Knowledgeable Descent' (questID 77286) (account-wide completion)
-	[78200] = true,	-- completed 'An Idol in Hand' (questID 77304) / finished 'Tools of the Trade' (achievementID 18645) (account-wide completion)
-	[77524] = true,	-- completed 'Using the Idol' (questID 76456) (account-wide completion)
-	[77854] = true,	-- Upon completion of Into the Sands (questID 76509) (account-wide completion)
-	[76508] = true,	-- Upon completion of Out of the Sands (questID 77305) (account-wide completion)
-	[77576] = true,	-- Upon completion of A Titanic Mold (QuestID 77822) (account-wide completion)
-	[77577] = true,	-- Upon completion of A Key To Reforging (QuestID 77831) (account-wide completion)
-	[77307] = true,	-- Community Rumors (Achievement 18643) (account-wide completion)
-	[78973] = true,	-- Community Rumor Mill (Achievement 18644) (account-wide completion)
-	[77579] = true,	-- Upon completion of (QuestID 77908) (account-wide completion)
-	[77580] = true,	-- Upon completion of (QuestID 77934) (account-wide completion)
-	[77520] = true,	-- Upon completion of (QuestID 77954) (account-wide completion)
-	[77308] = true,	-- Upon completion of (QuestID 77977) (account-wide completion)
+	------------------------------------------------------------------------------
+	-- PUT NEW QUESTIDS HERE vv IF YOU DONT WANT TO CHECK WHERE YOU ARE PUTTING IT
+	------------------------------------------------------------------------------
+
+
+	------------------------------------------------------------------------------
+	-- PUT NEW QUESTIDS HERE ^^ IF YOU DONT WANT TO CHECK WHERE YOU ARE PUTTING IT
+	------------------------------------------------------------------------------
 
 	-- Drakewatcher Manuscripts
+	-- #IF AFTER DF
 	[69184] = true,	-- Cliffside Wylderdrake: Finned Jaw
 	[69193] = true,	-- Cliffside Wylderdrake: Sleek Horns
 	[69590] = true,	-- Renewed Proto-Drake: Green Scales
@@ -409,8 +407,34 @@ select(2, ...).AccountWideQuestsDB = {
 	[78401] = true,	-- Flourishing Whimsydrake: Body Armor
 	[77131] = true,	-- Grotto Netherwing Drake: Armor
 	[79690] = true,	-- Winding Slitherdrake: Void Scales
+	-- #ENDIF
+
+	-- Secrets of Azeroth Locks
+	-- #IF AFTER DF
+	[77578] = true,	-- Banner Stand
+	[76987] = true,	-- completed 'The Inquisitive' (achievementID 18642) (account-wide completion)
+	[78202] = true,	-- completed 'Unfinished Thinking Cap' (questID 77237) (account-wide completion)
+	[77513] = true,	-- completed 'The Tricked-Out Thinking Cap' (questID 76504) (account-wide completion)
+	[77521] = true,	-- completed 'Preservationist Cleared' (questID 77277) (account-wide completion)
+	[78201] = true,	-- completed 'Artifact Secured' (questID 77282) (account-wide completion)
+	[77522] = true,	-- completed 'The Torch of Pyrreth' (questID 77263) (account-wide completion)
+	[77523] = true,	-- completed 'A Knowledgeable Descent' (questID 77286) (account-wide completion)
+	[78200] = true,	-- completed 'An Idol in Hand' (questID 77304) / finished 'Tools of the Trade' (achievementID 18645) (account-wide completion)
+	[77524] = true,	-- completed 'Using the Idol' (questID 76456) (account-wide completion)
+	[77854] = true,	-- Upon completion of Into the Sands (questID 76509) (account-wide completion)
+	[76508] = true,	-- Upon completion of Out of the Sands (questID 77305) (account-wide completion)
+	[77576] = true,	-- Upon completion of A Titanic Mold (QuestID 77822) (account-wide completion)
+	[77577] = true,	-- Upon completion of A Key To Reforging (QuestID 77831) (account-wide completion)
+	[77307] = true,	-- Community Rumors (Achievement 18643) (account-wide completion)
+	[78973] = true,	-- Community Rumor Mill (Achievement 18644) (account-wide completion)
+	[77579] = true,	-- Upon completion of (QuestID 77908) (account-wide completion)
+	[77580] = true,	-- Upon completion of (QuestID 77934) (account-wide completion)
+	[77520] = true,	-- Upon completion of (QuestID 77954) (account-wide completion)
+	[77308] = true,	-- Upon completion of (QuestID 77977) (account-wide completion)
+	-- #ENDIF
 
 	-- Delver's Dirigible Schematics
+	-- #IF AFTER TWW
 	[82177] = true,	-- Delver's Dirigible Schematic: Template
 	[82187] = true,	-- Delver's Dirigible Schematic: Brown Paint
 	[82181] = true,	-- Delver's Dirigible Schematic: Empennage
@@ -422,8 +446,11 @@ select(2, ...).AccountWideQuestsDB = {
 	[83308] = true,	-- Delver's Dirigible Schematic: Void
 	[82171] = true,	-- Delver's Dirigible Schematic: Wing-Mounted Propeller
 	[82185] = true,	-- Delver's Dirigible Schematic: Zeppelin
+	-- #ENDIF
 
 	-- Manual scrape from a brand new character & 86000 scan of C_QuestLog.IsAccountQuest
+	-- Nothing in this section was in the game prior to MOP that I can tell
+	-- #IF AFTER MOP
 	[8237] = true,
 	[31308] = true,
 	[31309] = true,
@@ -1514,4 +1541,5 @@ select(2, ...).AccountWideQuestsDB = {
 	[85531] = true,	-- Earth-Encrusted Gem
 	[85535] = true,	-- Kej
 	[85538] = true,	-- Shinies
+	-- #ENDIF
 }

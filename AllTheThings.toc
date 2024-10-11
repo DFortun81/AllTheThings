@@ -21,8 +21,6 @@ src\WoW API Wrappers.lua
 
 # Raw DBs
 db\Retail\ReferenceDB.lua
-db\ReagentsDB.lua
-db\AccountWideQuestsDB.lua
 
 # Libs (no dependencies, only app assignment)
 lib\Debugging.lua
