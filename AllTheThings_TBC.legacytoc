@@ -17,7 +17,9 @@ lib\LibStub\LibStub.lua
 lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
 src\WoW API Wrappers.lua
-db\RaceDB.lua
+
+# Raw DBs
+db\Classic\ReferenceDB.lua
 
 # Libs (no dependencies, only app assignment)
 lib\Debugging.lua
@@ -51,6 +53,7 @@ locales\ko.lua
 locales\pt.lua
 locales\ru.lua
 locales\cn.lua
+locales\tw.lua
 
 # Search Cache
 src\Cache.lua
@@ -74,7 +77,7 @@ db\TBC\ExplorationDB.lua
 db\TBC\LocalizationDB.lua
 # db\TBC\en_auto.lua
 # db\TBC\ReagentsDB.lua
-db\Presets.lu
+db\Presets.lua
 db\AccountWideQuestsDB.lua
 
 # Load object class templates
