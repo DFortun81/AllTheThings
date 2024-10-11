@@ -18,6 +18,7 @@ lib\CallbackHandler-1.0\CallbackHandler-1.0.lua
 lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
 src\WoW API Wrappers.lua
 db\Classic\RaceDB.lua
+db\Classic\FlightPathDB.lua
 
 # Libs (no dependencies, only app assignment)
 lib\Debugging.lua

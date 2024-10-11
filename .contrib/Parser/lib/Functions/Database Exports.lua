@@ -171,7 +171,7 @@ RaceIDs[BLOODELF].faction = horde
 -- Represents the mapID used by the game to show FlightPaths at a Flight Master
 -- Missing ones will be reported in chat by ATT when 'Debugging' is set
 local FlightPathMapIDs = {};
-GlobalDBs.FlightPathMapIDs = FlightPathMapIDs;
+ExportDB.FlightPathDB = {FlightPathMapIDs = FlightPathMapIDs}
 for i,mapID in ipairs({
 	-- #if ANYCLASSIC
 	KALIMDOR,

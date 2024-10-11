@@ -7,6 +7,9 @@ local ipairs, pairs, tonumber
 local C_TaxiMap_GetTaxiNodesForMap, C_TaxiMap_GetAllTaxiNodes, GetTaxiMapID, UnitGUID
 	= C_TaxiMap.GetTaxiNodesForMap, C_TaxiMap.GetAllTaxiNodes, GetTaxiMapID, UnitGUID
 
+-- DB Data
+local FlightPathDB = app.FlightPathDB
+
 -- Module
 local contains = app.contains
 local SearchForField = app.SearchForField
@@ -98,7 +101,7 @@ app.AddEventRegistration("TAXIMAP_OPENED", function()
 	local mapID = GetTaxiMapID() or -1
 	-- app.PrintDebug("TAXIMAP_OPENED",mapID)
 	if mapID < 0 then return end
-	if app.Contributor and not contains(app.FlightPathMapIDs, mapID) then
+	if app.Contributor and not contains(FlightPathDB.FlightPathMapIDs, mapID) then
 		app.print("Missing FlightPath Map:",app.GetMapName(mapID) or UNKNOWN,mapID)
 	end
 	local allNodeData = C_TaxiMap_GetAllTaxiNodes(mapID)
@@ -152,7 +155,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	setmetatable(localizedFlightPathNames, {
 		__index = function(t, id)
 			local allNodeData
-			for _,mapID in ipairs(app.FlightPathMapIDs) do
+			for _,mapID in ipairs(FlightPathDB.FlightPathMapIDs) do
 				allNodeData = C_TaxiMap_GetTaxiNodesForMap(mapID)
 				if allNodeData and #allNodeData > 0 then
 					for _,nodeData in ipairs(allNodeData) do
