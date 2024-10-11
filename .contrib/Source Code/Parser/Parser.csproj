@@ -55,6 +55,9 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ATT.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Csv, Version=2.0.93.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Csv.2.0.93\lib\net40\Csv.dll</HintPath>
