@@ -1165,8 +1165,6 @@ L.FILTER_ID_ICONS = {
 }
 
 -- Flight Path Database Module
-_.FlightPathMapIDs = {
-}
 _.FlightPathNames = {
 	[1] = "Northshire Abbey",
 	[2] = "Stormwind, Elwynn",

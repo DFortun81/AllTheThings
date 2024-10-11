@@ -20,10 +20,8 @@ lib\LibDataBroker-1.1\LibDataBroker-1.1.lua
 src\WoW API Wrappers.lua
 
 # Raw DBs
-db\Retail\RaceDB.lua
-db\Retail\FlightPathDB.lua
+db\Retail\ReferenceDB.lua
 db\ReagentsDB.lua
-db\Retail\SkillDB.lua
 db\AccountWideQuestsDB.lua
 
 # Libs (no dependencies, only app assignment)
