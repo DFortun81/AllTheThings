@@ -225,10 +225,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						["provider"] = { "i", 224548 },	-- Nerubian Device
 						["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 16 },
 					}),
-					q(76600, {	-- RIght Between the Gyro-Optics
+					q(76600, {	-- Right Between the Gyro-Optics
 						["sourceQuests"] = { 76599 },	-- Right Between the Gyro-Optics - Activate
 						["provider"] = { "n", 208019 },	-- Auebry Irongear
-						["coord"] = { 64.6, 30.7, HALLOWFALL },
+						["coord"] = { 65.2, 28.1, HALLOWFALL },
 						["g"] = {
 							i(207084),	-- Auebry's Marker Pistol
 						},
