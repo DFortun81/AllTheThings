@@ -75,6 +75,9 @@ local CreateCharacterUnlockQuest = app.ExtendClass("Quest", "CharacterUnlockQues
 	saved = SavedAsQuest,
 	characterUnlock = app.ReturnTrue,
 	IsClassIsolated = true,
+	variants = {
+		app.GlobalVariants.WithAutoName
+	}
 })
 local CreateCharacterUnlockSpell = app.ExtendClass("Spell", "CharacterUnlockSpell", "spellID", {
 	collectible = Collectible,

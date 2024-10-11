@@ -1546,6 +1546,9 @@ local createQuest = app.CreateClass("Quest", "questID", {
 		end
 	end,
 	indicatorIcon = GetQuestIndicator,
+	variants = {
+		app.GlobalVariants.WithAutoName
+	}
 },
 "WithReputation", {
 	-- Classic: Quests which give Reputation are always collectible if tracking Quests & Reputations
@@ -1633,8 +1636,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 --]]
 -- Both: Locked Quest support (no way to make a variant on the base Class at this time)
 ,"WithLockCriteria", app.CloneDictionary(AndLockCriteria), AndLockCriteria.__condition
--- Retail: Quests with a 'type' field can derive their name from other in-game data automatically
-,app.IsRetail and "WithAutoName" or false, app.CloneDictionary(app.GlobalVariants.WithAutoName), app.GlobalVariants.WithAutoName.__condition
 );
 
 app.CreateQuest = createQuest;

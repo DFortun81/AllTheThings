@@ -418,27 +418,42 @@ end
 local function AppendVariantConditionals(conditionals, class)
 	local subcassCondition = class.__class.__condition
 	local variants = class.__class.variants
-	if variants then
-		conditionals[#conditionals + 1] = function(t)
-			if subcassCondition(t) then
-				-- check any variants for this subclass
-				for variantName,variant in pairs(variants) do
-					if variant.__class.__condition(t) then
-						setmetatable(t, variant);
-						-- app.PrintDebug("Create Variant",t.hash,class.__class.__type()..variantName)
-						return true
+	if subcassCondition then
+		if variants then
+			conditionals[#conditionals + 1] = function(t)
+				if subcassCondition(t) then
+					-- check any variants for this subclass
+					for variantName,variant in pairs(variants) do
+						if variant.__class.__condition(t) then
+							setmetatable(t, variant);
+							-- app.PrintDebug("Create Variant",t.hash,class.__class.__type()..variantName)
+							return true
+						end
 					end
+					setmetatable(t, class);
+					return true;
 				end
-				setmetatable(t, class);
-				return true;
+			end
+		else
+			conditionals[#conditionals + 1] = function(t)
+				if subcassCondition(t) then
+					setmetatable(t, class);
+					return true;
+				end
 			end
 		end
-	else
+	elseif variants then
 		conditionals[#conditionals + 1] = function(t)
-			if subcassCondition(t) then
-				setmetatable(t, class);
-				return true;
+			-- check any variants for this class
+			for variantName,variant in pairs(variants) do
+				if variant.__class.__condition(t) then
+					setmetatable(t, variant);
+					-- app.PrintDebug("Create Variant",t.hash,class.__class.__type()..variantName)
+					return true
+				end
 			end
+			setmetatable(t, class);
+			return true;
 		end
 	end
 end
@@ -477,9 +492,10 @@ app.CreateClass = function(className, classKey, fields, ...)
 
 	local args = { ... };
 	local total = #args;
+	local Class = BaseObjectFields(fields, className);
+	local conditionals = {};
+	GenerateVariantClasses(Class)
 	if total > 0 then
-		local conditionals = {};
-		local Class;
 		local base = function(t, key) return Class.__index; end
 		for i=1,total,3 do
 			local subclassName = args[i];
@@ -499,39 +515,27 @@ app.CreateClass = function(className, classKey, fields, ...)
 				end
 			end
 		end
-		total = #conditionals;
-		-- Not sure the use case for this assignment...
-		fields.conditionals = conditionals;
-		Class = BaseObjectFields(fields, className);
-		local classConstructor = total > 0 and function(id, t)
-			t = constructor(id, t, classKey);
-			for i=1,total,1 do
-				if conditionals[i](t) then
-					return t;
-				end
-			end
-			return setmetatable(t, Class);
-		end or function(id, t)
-			return setmetatable(constructor(id, t, classKey), Class);
-		end
-		if not classesByKey[classKey] then
-			classesByKey[classKey] = classConstructor;
-		elseif not fields.IsClassIsolated then
-			print(className, "does not have a unique class Key", classKey, "and will have trouble with instance creation without a direct reference to an existing object or a direct integration using parser!");
-		end
-		return classConstructor, Class;
-	else
-		local Class = BaseObjectFields(fields, className);
-		local classConstructor = function(id, t)
-			return setmetatable(constructor(id, t, classKey), Class);
-		end;
-		if not classesByKey[classKey] then
-			classesByKey[classKey] = classConstructor;
-		elseif not fields.IsClassIsolated then
-			print(className, "does not have a unique class Key", classKey, "and will have trouble with instance creation without a direct reference to an existing object or a direct integration using parser!");
-		end
-		return classConstructor, Class;
 	end
+	-- Class variants must be added following other subclasses/variants
+	AppendVariantConditionals(conditionals, Class)
+	total = #conditionals;
+	local classConstructor = total > 0 and function(id, t)
+		t = constructor(id, t, classKey);
+		for i=1,total,1 do
+			if conditionals[i](t) then
+				return t;
+			end
+		end
+		return setmetatable(t, Class);
+	end or function(id, t)
+		return setmetatable(constructor(id, t, classKey), Class);
+	end
+	if not classesByKey[classKey] then
+		classesByKey[classKey] = classConstructor;
+	elseif not fields.IsClassIsolated then
+		print(className, "does not have a unique class Key", classKey, "and will have trouble with instance creation without a direct reference to an existing object or a direct integration using parser!");
+	end
+	return classConstructor, Class;
 end
 app.CreateClassFromArray = function(arr)
 	return app.CreateClass(unpack(arr));
