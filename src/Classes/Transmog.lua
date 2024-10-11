@@ -1021,7 +1021,6 @@ app.AddEventRegistration("TRANSMOG_COLLECTION_SOURCE_REMOVED", function(sourceID
 		-- Refresh the Data and Cry!
 		app.UpdateRawIDs("sourceID", unlearnedSourceIDs);
 		app.HandleEvent("OnThingRemoved", "Transmog")
-		app.WipeSearchCache();
 	end
 end)
 

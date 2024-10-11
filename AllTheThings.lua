@@ -12591,7 +12591,6 @@ app.AddEventRegistration("HEIRLOOMS_UPDATED", function(itemID, kind, ...)
 	if itemID then
 		UpdateRawID("itemID", itemID);
 		app.HandleEvent("OnThingCollected", "Heirlooms")
-		app.WipeSearchCache();
 
 		if app.Settings:GetTooltipSetting("Report:Collected") then
 			local _, link = GetItemInfo(itemID);
