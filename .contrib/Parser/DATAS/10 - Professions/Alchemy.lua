@@ -2794,4 +2794,228 @@ root(ROOTS.Professions, prof(ALCHEMY, {
 		}
 	})),
 }));
+
+-- Alchemy Item Database
+local itemDB = ItemDBConditional;
+
+-- Recipe Cache (for Validation)
+local recipeCache, recipeCacheU = {}, {};
+local function cacheRecipes(g)
+	if g and type(g) == "table" then
+		if g.groups then cacheRecipes(g.groups); end
+		if g.g then cacheRecipes(g.g); end
+		local spellID = g.spellID or g.recipeID;
+		if spellID then
+			recipeCache[spellID] = true;
+			if g.u then recipeCacheU[spellID] = g.u; end
+		end
+		for i,o in ipairs(g) do
+			cacheRecipes(o);
+		end
+	end
+end
+cacheRecipes(_.Professions);
+
+-- Item Recipe Database
+local itemrecipe = function(name, itemID, spellID, phase, timeline)
+	local o = { ["itemID"] = itemID, ["spellID"] = spellID };
+	if type(phase) == "string" then
+		timeline = phase;
+		phase = nil;
+	end
+	if timeline then
+		-- Ensure that the timeline is in a table format.
+		if type(timeline) == "string" then timeline = { timeline }; end
+		if type(timeline) == "table" then o.timeline = timeline; end
+	end
+	if name then
+		-- Ensure that the name is in a string format.
+		if type(name) == "table" then
+			-- #if AFTER CATA
+			name = name[2];
+			-- #else
+			name = name[1];
+			-- #endif
+		end
+		o.name = name;
+	end
+	itemDB[itemID] = phase and applyclassicphase(phase, o) or o;
+
+	-- Ensure that this recipe's spellID exists in the profession database.
+	if recipeCache and type(timeline) ~= "boolean" then
+		if recipeCache[o.spellID] then
+			-- Grab the phase from the cache.
+			local u = recipeCacheU[o.spellID];
+			if u then
+				if o.u ~= u and u ~= phase then
+					print("ITEM RECIPE MISSING U: ", name, o.spellID, u, o.u);
+					o.u = u;
+				end
+			elseif o.u ~= u then
+				print("RECIPE MISSING U: ", name, o.spellID, o.u);
+			end
+		else
+			print("MISSING RECIPE", name, o.spellID);
+		end
+	end
+	return o;
+end
+
+-- Classic Recipes
+itemrecipe("Recipe: Elixir of Minor Agility", 2553, 3230);
+itemrecipe("Recipe: Swiftness Potion", 2555, 2335);
+itemrecipe("Recipe: Minor Magic Resistance Potion", 3393, 3172);
+itemrecipe("Recipe: Potion of Curing", 3394, 3174);
+itemrecipe("Recipe: Limited Invulnerability Potion", 3395, 3175);
+itemrecipe("Recipe: Elixir of Lesser Agility", 3396, 2333);
+itemrecipe("Recipe: Elixir of Fortitude", 3830, 3450);
+itemrecipe("Recipe: Mighty Troll's Blood Potion", 3831, 3451);
+itemrecipe("Recipe: Elixir of Detect Lesser Invisibility", 3832, 3453);
+itemrecipe("Recipe: Discolored Healing Potion", 4597, 4508);
+itemrecipe("Recipe: Lesser Stoneshield Potion", 4624, 4942);
+itemrecipe("Recipe: Rage Potion", 5640, 6617);
+itemrecipe("Recipe: Free Action Potion", 5642, 6624);
+itemrecipe("Recipe: Great Rage Potion", 5643, 6618);
+itemrecipe("Recipe: Holy Protection Potion", 6053, 7255);
+itemrecipe("Recipe: Shadow Protection Potion", 6054, 7256);
+itemrecipe("Recipe: Fire Protection Potion", 6055, 7257);
+itemrecipe("Recipe: Frost Protection Potion", 6056, 7258);
+itemrecipe("Recipe: Nature Protection Potion", 6057, 7259);
+itemrecipe("Recipe: Shadow Oil", 6068, 3449);
+itemrecipe("Recipe: Elixir of Ogre's Strength", 6211, 3188);
+itemrecipe("Recipe: Elixir of Giant Growth", 6663, 8240);
+itemrecipe("Recipe: Magic Resistance Potion", 9293, 11453);
+itemrecipe("Recipe: Wildvine Potion", 9294, 11458);
+itemrecipe("Recipe: Invisibility Potion", 9295, 11464);
+itemrecipe("Recipe: Gift of Arthas", 9296, 11466);
+itemrecipe("Recipe: Elixir of Dream Vision", 9297, 11468);
+itemrecipe("Recipe: Elixir of Giants", 9298, 11472);
+itemrecipe("Recipe: Elixir of Demonslaying", 9300, 11477);
+itemrecipe("Recipe: Elixir of Shadow Power", 9301, 11476);
+itemrecipe("Recipe: Ghost Dye", 9302, 11473);
+itemrecipe("Recipe: Philosopher's Stone", 9303, 11459);
+itemrecipe("Recipe: Transmute Iron to Gold", 9304, 11479);
+itemrecipe("Recipe: Transmute Mithril to Truesilver", 9305, 11480);
+itemrecipe("Recipe: Goblin Rocket Fuel", 10644, 11456);
+itemrecipe("Recipe: Transmute Arcanite", 12958, 17187);
+itemrecipe("Recipe: Mighty Rage Potion", 13476, 17552);
+itemrecipe("Recipe: Superior Mana Potion", 13477, 17553);
+itemrecipe("Recipe: Elixir of Superior Defense", 13478, 17554);
+itemrecipe("Recipe: Elixir of the Sages", 13479, 17555);
+itemrecipe("Recipe: Major Healing Potion", 13480, 17556);
+itemrecipe("Recipe: Elixir of Brute Force", 13481, 17557);
+itemrecipe("Recipe: Transmute Air to Fire", 13482, 17559);
+itemrecipe("Recipe: Transmute Fire to Earth", 13483, 17560);
+itemrecipe("Recipe: Transmute Earth to Water", 13484, 17561);
+itemrecipe("Recipe: Transmute Water to Air", 13485, 17562);
+itemrecipe("Recipe: Transmute Undeath to Water", 13486, 17563);
+itemrecipe("Recipe: Transmute Water to Undeath", 13487, 17564);
+itemrecipe("Recipe: Transmute Life to Earth", 13488, 17565);
+itemrecipe("Recipe: Transmute Earth to Life", 13489, 17566);
+itemrecipe("Recipe: Greater Stoneshield Potion", 13490, 17570);
+itemrecipe("Recipe: Elixir of the Mongoose", 13491, 17571);
+itemrecipe("Recipe: Purification Potion", 13492, 17572);
+itemrecipe("Recipe: Greater Arcane Elixir", 13493, 17573);
+itemrecipe("Recipe: Greater Fire Protection Potion", 13494, 17574);
+itemrecipe("Recipe: Greater Frost Protection Potion", 13495, 17575);
+itemrecipe("Recipe: Greater Nature Protection Potion", 13496, 17576);
+itemrecipe("Recipe: Greater Arcane Protection Potion", 13497, 17577);
+itemrecipe("Recipe: Greater Shadow Protection Potion", 13499, 17578);
+itemrecipe("Recipe: Major Mana Potion", 13501, 17580);
+itemrecipe("Recipe: Flask of Petrification", 13518, 17634);
+itemrecipe("Recipe: Flask of the Titans", 13519, 17635);
+itemrecipe("Recipe: Flask of Distilled Wisdom", 13520, 17636);
+itemrecipe("Recipe: Flask of Supreme Power", 13521, 17637);
+itemrecipe("Recipe: Flask of Chromatic Resistance", 13522, 17638);
+itemrecipe("Recipe: Frost Oil", 14634, 3454);
+itemrecipe("Recipe: Major Rejuvenation Potion", 18257, 22732);
+applyevent(EVENTS.FEAST_OF_WINTER_VEIL, itemrecipe("Recipe: Elixir of Frost Power", 17709, 21923));
+itemrecipe("Recipe: Mageblood Potion", 20011, 24365, PHASE_FOUR);
+itemrecipe("Recipe: Greater Dreamless Sleep Potion", 20012, 24366, PHASE_FOUR, REMOVED_4_0_3);
+itemrecipe("Recipe: Living Action Potion", 20013, 24367, PHASE_FOUR);
+itemrecipe("Recipe: Major Troll's Blood Potion", 20014, 24368, PHASE_FOUR);
+itemrecipe("Recipe: Transmute Elemental Fire", 20761, 25146, PHASE_FIVE);
+itemrecipe("Recipe: Elixir of Greater Firepower", 21547, 26277, PHASE_FIVE_RECIPES);
+
+-- #if AFTER TBC
+-- TBC Recipes
+itemrecipe("Recipe: Alchemist's Stone", 13517, 17632, TBC_PHASE_ONE);
+itemrecipe("Recipe: Elixir of Camouflage", 22900, 28543, TBC_PHASE_ONE);
+itemrecipe("Recipe: Sneaking Potion", 22901, 28546, TBC_PHASE_ONE);
+itemrecipe("Recipe: Elixir of Major Frost Power", 22902, 28549, TBC_PHASE_ONE);
+itemrecipe("Recipe: Insane Strength Potion", 22903, 28550, TBC_PHASE_ONE);
+itemrecipe("Recipe: Elixir of the Searching Eye", 22904, 28552, TBC_PHASE_ONE);
+itemrecipe("Recipe: Elixir of Major Agility", 22905, 28553, TBC_PHASE_ONE);
+itemrecipe("Recipe: Shrouding Potion", 22906, 28554, TBC_PHASE_ONE);
+itemrecipe("Recipe: Super Mana Potion", 22907, 28555, TBC_PHASE_ONE);
+itemrecipe("Recipe: Elixir of Major Firepower", 22908, 28556, TBC_PHASE_ONE);
+itemrecipe("Recipe: Elixir of Major Defense", 22909, 28557, TBC_PHASE_ONE);
+itemrecipe("Recipe: Elixir of Major Shadow Power", 22910, 28558, TBC_PHASE_ONE);
+itemrecipe("Recipe: Major Dreamless Sleep Potion", 22911, 28562, TBC_PHASE_ONE);
+itemrecipe("Recipe: Heroic Potion", 22912, 28563, TBC_PHASE_ONE);
+itemrecipe("Recipe: Haste Potion", 22913, 28564, TBC_PHASE_ONE);
+itemrecipe("Recipe: Destruction Potion", 22914, 28565, TBC_PHASE_ONE);
+itemrecipe("Recipe: Transmute Primal Air to Fire", 22915, 28566, TBC_PHASE_ONE);
+itemrecipe("Recipe: Transmute Primal Earth to Water", 22916, 28567, TBC_PHASE_ONE);
+itemrecipe("Recipe: Transmute Primal Fire to Earth", 22917, 28568, TBC_PHASE_ONE);
+itemrecipe("Recipe: Transmute Primal Water to Air", 22918, 28569, TBC_PHASE_ONE);
+itemrecipe("Recipe: Elixir of Major Mageblood", 22919, 28570, TBC_PHASE_ONE);
+itemrecipe("Recipe: Major Fire Protection Potion", 22920, 28571, TBC_PHASE_ONE);
+itemrecipe("Recipe: Major Frost Protection Potion", 22921, 28572, TBC_PHASE_ONE);
+itemrecipe("Recipe: Major Nature Protection Potion", 22922, 28573, TBC_PHASE_ONE);
+itemrecipe("Recipe: Major Arcane Protection Potion", 22923, 28575, TBC_PHASE_ONE);
+itemrecipe("Recipe: Major Shadow Protection Potion", 22924, 28576, TBC_PHASE_ONE);
+itemrecipe("Recipe: Major Holy Protection Potion", 22925, 28577, TBC_PHASE_ONE);
+itemrecipe("Recipe: Elixir of Empowerment", 22926, 28578, TBC_PHASE_ONE);
+itemrecipe("Recipe: Ironshield Potion", 22927, 28579, TBC_PHASE_ONE);
+itemrecipe("Recipe: Transmute Primal Might", 23574, 29688, TBC_PHASE_ONE);
+itemrecipe("Recipe: Elixir of Major Agility", 24001, 28553, TBC_PHASE_ONE);
+itemrecipe("Recipe: Transmute Earthstorm Diamond", 25869, 32765, TBC_PHASE_ONE);
+itemrecipe("Recipe: Transmute Skyfire Diamond", 25870, 32766, TBC_PHASE_ONE);
+itemrecipe("Recipe: Transmute Skyfire Diamond", 29232, 32766, TBC_PHASE_ONE);
+itemrecipe("Recipe: Transmute Primal Fire to Earth", 30443, 28568, TBC_PHASE_ONE);
+itemrecipe("Recipe: Flask of the Titans", 31354, 17635, TBC_PHASE_ONE, true);
+itemrecipe("Recipe: Flask of Supreme Power", 31355, 17637, TBC_PHASE_ONE, true);
+itemrecipe("Recipe: Flask of Distilled Wisdom", 31356, 17636, TBC_PHASE_ONE, true);
+itemrecipe("Recipe: Flask of Chromatic Resistance", 31357, 17638, TBC_PHASE_ONE, true);
+itemrecipe("Recipe: Fel Strength Elixir", 31680, 38960, TBC_PHASE_ONE);
+itemrecipe("Recipe: Fel Regeneration Potion", 31681, 38962, TBC_PHASE_ONE);
+itemrecipe("Recipe: Fel Mana Potion", 31682, 38961, TBC_PHASE_ONE);
+itemrecipe("Recipe: Earthen Elixir", 32070, 39637, TBC_PHASE_ONE);
+itemrecipe("Recipe: Elixir of Ironskin", 32071, 39639, TBC_PHASE_ONE);
+itemrecipe("Recipe: Flask of Chromatic Wonder", 33209, 42736, TBC_PHASE_THREE, REMOVED_5_0_4);
+
+itemrecipe("Recipe: Elixir of Empowerment", 35294, 28578, TBC_PHASE_FIVE, true);
+itemrecipe("Recipe: Haste Potion", 35295, 28564, TBC_PHASE_FIVE, true);
+itemrecipe("Recipe: Guardian's Alchemist Stone", 35752, 47046, TBC_PHASE_FIVE);
+itemrecipe("Recipe: Sorcerer's Alchemist Stone", 35753, 47048, TBC_PHASE_FIVE);
+itemrecipe("Recipe: Redeemer's Alchemist Stone", 35754, 47049, TBC_PHASE_FIVE);
+itemrecipe("Recipe: Assassin's Alchemist Stone", 35755, 47050, TBC_PHASE_FIVE);
+-- #endif
+
+-- #if AFTER WRATH
+-- Wrath Recipes
+itemrecipe("Recipe: Flask of the North", 47507, 67025, WRATH_PHASE_ONE);	-- NYI, taught by trainers
+itemrecipe("Recipe: Mighty Arcane Protection Potion", 44564, 53936, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Mighty Fire Protection Potion", 44565, 53939, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Mighty Frost Protection Potion", 44566, 53937, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Mighty Nature Protection Potion", 44567, 53942, WRATH_PHASE_ONE);
+itemrecipe("Recipe: Mighty Shadow Protection Potion", 44568, 53938, WRATH_PHASE_ONE);
+-- #endif
+
+-- These items never made it in.
+recipeCache = nil;	-- Invalidate the cache.
+root(ROOTS.NeverImplemented, {
+	filter(RECIPES, {
+		itemrecipe("Recipe: Elixir of Tongues", 2556, 2336);
+		itemrecipe("Deprecated Recipe: Elixir of Fortitude", 2554);
+		itemrecipe("Recipe: Cowardly Flight Potion", 5641);
+		itemrecipe("Recipe: Greater Holy Protection Potion", 13500);
+		itemrecipe("Recipe: Mad Alchemist's Potion", 34481);
+
+		-- #if BEFORE TBC
+		itemrecipe("Recipe: Alchemist's Stone", 13517, 17632);
+		-- #endif
+	}),
+});
 -- #endif
