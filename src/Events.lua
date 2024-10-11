@@ -64,7 +64,9 @@ app.AddEventRegistration = function(event, func, doNotPreRegister)
 	if not event or not func then
 		app.print("AddEventRegistration invalid call",event,func)
 	end
-	if not doNotPreRegister then
+	if doNotPreRegister then
+		app.events[event] = func
+	else
 		-- app.PrintDebug("Event Func Registered",event,func)
 		OnReadyEventRegistrations[event] = func
 	end
