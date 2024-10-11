@@ -155,7 +155,7 @@ i("Runed Stygian Leggings", 20546, 24901);
 i("Runed Stygian Boots", 20547, 24903);
 i("Runed Stygian Belt", 20548, 24902);
 
-i("Enchanted Runecloth Bag", 22308, 27659);
+i("Enchanted Runecloth Bag", 22308, 27659, PHASE_FIVE);
 i("Big Bag of Enchantment", 22309, 27660);
 i("Cenarion Herb Bag", 22310, 27724);
 i("Satchel of Cenarius", 22312, 27725);

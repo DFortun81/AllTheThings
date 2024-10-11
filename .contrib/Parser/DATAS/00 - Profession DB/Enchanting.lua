@@ -157,7 +157,7 @@ i(11163, 13646);	-- Lesser Dodge / CLASSIC: Lesser Deflection
 i(11165, 13655);	-- Lesser Elemental Slayer
 i(6349, 7793);		-- Lesser Intellect [Weapon]
 i(6346, 7776);		-- Lesser Mana
-i(20754, 25127);	-- Lesser Mana Oil
+i(20754, 25127, PHASE_FIVE);	-- Lesser Mana Oil
 i(11168, 13689);	-- Lesser Parry / CLASSIC: Lesser Block
 i(11081, 13464);	-- Lesser Protection [Shield]
 i(11098, 13522);	-- Lesser Shadow Resistance [REMOVED: 5.0.4]
@@ -165,7 +165,7 @@ i(11101, 13536);	-- Lesser Strength
 i(11167, 13687);	-- Lesser Versatility / CLASSIC: Lesser Spirit [Boots]
 i(6375, 7859);		-- Lesser Versatility / CLASSIC: Lesser Spirit [Bracers]
 i(11038, 13380);	-- Lesser Versatility / CLASSIC: Lesser Spirit [Weapon]
-i(20753, 25126);	-- Lesser Wizard Oil
+i(20753, 25126, PHASE_FIVE);	-- Lesser Wizard Oil
 i(16254, 20032);	-- Lifestealing [REMOVED: 4.0.3]
 i(16221, 20026);	-- Major Health
 i(16249, 20036);	-- Major Intellect [Weapon]
@@ -178,10 +178,10 @@ i(6377, 7867);		-- Minor Agility [Boots]
 i(11039, 13419);	-- Minor Agility [Cloak]
 i(6348, 7786);		-- Minor Beastslayer
 i(6342, 7443);		-- Minor Mana
-i(20752, 25125);	-- Minor Mana Oil
+i(20752, 25125, PHASE_FIVE);	-- Minor Mana Oil
 i(6347, 7782);		-- Minor Strength
 i(6344, 7766);		-- Minor Versatility / CLASSIC: Minor Spirit
-i(20758, 25124);	-- Minor Wizard Oil
+i(20758, 25124, PHASE_FIVE);	-- Minor Wizard Oil
 i(11226, 13947);	-- Riding Skill
 i(16243, 20051);	-- Runed Arcanite Rod [REMOVED: 5.0.4]
 i(20727, 25073);	-- Shadow Power
@@ -204,7 +204,7 @@ i(16248, 20033);	-- Unholy
 i(16220, 20024);	-- Versatility / CLASSIC: Spirit [Boots]
 i(16222, 20016);	-- Vitality / CLASSIC: Superior Spirit [Shield]
 i(17725, 21931);	-- Winter's Might
-i(20755, 25128);	-- Wizard Oil
+i(20755, 25128, PHASE_FIVE);	-- Wizard Oil
 --- NYI ---
 -- Blizzard reused spellIDs
 -- #if BEFORE TBC
