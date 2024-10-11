@@ -299,10 +299,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 					["groups"] = {
 						objective(1, {	-- 0/7 Siege Engine Scrap
 							["providers"] = {
-								{ "i", 62830 },	-- Siege Engine Scrap
+								{ "i",  62830 },	-- Siege Engine Scrap
 								{ "o", 206644 },	-- Siege Scrap
 								{ "o", 206651 },	-- Siege Scrap
 								{ "o", 206652 },	-- Siege Scrap
+								{ "i",  62829 },	-- Magnetized Scrap Collector
 							},
 						}),
 					},
@@ -315,10 +316,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, bubbleDown({ ["timeline"
 					["groups"] = {
 						objective(1, {	-- 0/7 Siege Engine Scrap
 							["providers"] = {
-								{ "i", 62830 },	-- Siege Engine Scrap
+								{ "i",  62830 },	-- Siege Engine Scrap
 								{ "o", 206644 },	-- Siege Scrap
 								{ "o", 206651 },	-- Siege Scrap
 								{ "o", 206652 },	-- Siege Scrap
+								{ "i",  62829 },	-- Magnetized Scrap Collector
 							},
 						}),
 					},
