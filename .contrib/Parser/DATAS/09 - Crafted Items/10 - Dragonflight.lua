@@ -1627,12 +1627,10 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			r(391415),	-- Lush Hochenblume
 			r(391502),	-- Lush Saxifrage
 			r(391512),	-- Lush Writhebark
-			m(EMERALD_DREAM, {
-				r(421176, {["timeline"] = {ADDED_10_2_0}}),	-- Overgrown Bubble Poppy
-				r(421224, {["timeline"] = {ADDED_10_2_0}}),	-- Overgrown Hochenblume
-				r(421226, {["timeline"] = {ADDED_10_2_0}}),	-- Overgrown Saxifrage
-				r(421227, {["timeline"] = {ADDED_10_2_0}}),	-- Overgrown Writhebark
-			}),
+			r(421176, {["timeline"] = {ADDED_10_2_0},["maps"]={EMERALD_DREAM}}),	-- Overgrown Bubble Poppy
+			r(421224, {["timeline"] = {ADDED_10_2_0},["maps"]={EMERALD_DREAM}}),	-- Overgrown Hochenblume
+			r(421226, {["timeline"] = {ADDED_10_2_0},["maps"]={EMERALD_DREAM}}),	-- Overgrown Saxifrage
+			r(421227, {["timeline"] = {ADDED_10_2_0},["maps"]={EMERALD_DREAM}}),	-- Overgrown Writhebark
 			r(391564),	-- Overload Decayed Herb
 			r(391562),	-- Overload Frigid Herb
 			r(391558),	-- Overload Infurious Herb
