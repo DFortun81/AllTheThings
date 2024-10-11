@@ -280,7 +280,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 48.4, 18.9, MOUNT_HYJAL },
 				}),
 				q(25372, {	-- Aessina's Miracle
-					["qg"] = 41381,	-- Nordu
+					["providers"] = {
+						{ "n", 41381 },	-- Nordu
+						{ "i", 56057 },	-- Heart of the Forest
+					},
 					["sourceQuests"] = {
 						25381,	-- Fighting Fire With ... Anything
 						25842,	-- Firefight
@@ -1349,18 +1352,21 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								{ "i", 54907 },	-- Ascendant's Codex
 								{ "o", 203048 },	-- Ascendant's Codex
 							},
+							["coord"] = { 56.9, 83.8, MOUNT_HYJAL },
 						}),
 						objective(2, {	-- 0/1 The Burning Litanies
 							["providers"] = {
 								{ "i", 54906 },	-- The Burning Litanies
 								{ "o", 203047 },	-- Burning Litanies
 							},
+							["coord"] = { 59.6, 80.8, MOUNT_HYJAL },
 						}),
 						objective(3, {	-- 0/1 Tome of Flame
 							["providers"] = {
 								{ "i", 54905 },	-- Tome of Flame
 								{ "o", 203046 },	-- Tome of Flame
 							},
+							["coord"] = { 58.1, 78.8, MOUNT_HYJAL },
 						}),
 					},
 				}),
