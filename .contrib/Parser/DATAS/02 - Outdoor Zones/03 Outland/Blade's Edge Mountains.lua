@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local OnTooltipForOgrila = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ForOgrila = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		tinsert(tooltipInfo, { left = "Daily Quests:" });
@@ -196,7 +196,7 @@ root(ROOTS.Zones, {
 				}),
 				n(FACTIONS, {
 					applyclassicphase(TBC_PHASE_TWO_OGRILA, faction(FACTION_ORGILA, {	-- Ogri'la
-						["OnTooltip"] = OnTooltipForOgrila,
+						["OnTooltip"] = [[_.OnTooltipDB.ForOgrila]],
 					})),
 				}),
 				n(FLIGHT_PATHS, {

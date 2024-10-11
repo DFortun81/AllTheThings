@@ -76,9 +76,6 @@ local SUNREAVERS_DAILY_OnUpdate = [[function(t)
 		end
 	end
 end]];
-local FACTION_DAILY_OnTooltip = [[function(t, tooltipInfo)
-	if t.ach then tinsert(tooltipInfo, { left = _.L.REQUIRES, right = t.ach.text }); end
-end]];
 local VALIANT_DAILY_OnUpdate = function(valiantQuestID)
 	-- #if ANYCLASSIC
 	-- Forcibly changing visibility on groups is bad. These quests are impossible to see even in Debug unless actually being on the respective quest.
@@ -839,7 +836,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
-						["OnTooltip"] = FACTION_DAILY_OnTooltip,
+						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["hordeQuestData"] = q(14143, {	-- A Leg Up (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
@@ -847,7 +844,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
-						["OnTooltip"] = FACTION_DAILY_OnTooltip,
+						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["isDaily"] = true,
 					["groups"] = {
@@ -1768,7 +1765,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["provider"] = { "i", 49676 },	-- Kvaldir Attack Plans
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
-					["OnTooltip"] = FACTION_DAILY_OnTooltip,
+					["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					["crs"] = {
 						34839,	-- Kvaldir Mist Binder
 						34838,	-- Kvaldir Reaver
@@ -1791,7 +1788,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
-						["OnTooltip"] = FACTION_DAILY_OnTooltip,
+						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["hordeQuestData"] = q(14092, {	-- Breakfast Of Champions (H)
 						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
@@ -1799,7 +1796,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
-						["OnTooltip"] = FACTION_DAILY_OnTooltip,
+						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["maps"] = { THE_STORM_PEAKS },
 					["isDaily"] = true,
@@ -1840,7 +1837,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
-					["OnTooltip"] = FACTION_DAILY_OnTooltip,
+					["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Deathspeaker Kharos slain
@@ -1855,7 +1852,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
-					["OnTooltip"] = FACTION_DAILY_OnTooltip,
+					["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/1 Drottinn Hrothgar slain
@@ -1891,7 +1888,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
-					["OnTooltip"] = FACTION_DAILY_OnTooltip,
+					["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/8 Hurl Spears at North Sea Kraken
@@ -1914,7 +1911,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
-						["OnTooltip"] = FACTION_DAILY_OnTooltip,
+						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["hordeQuestData"] = q(14141, {	-- Gormok Wants His Snobolds (H)
 						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
@@ -1922,7 +1919,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
-						["OnTooltip"] = FACTION_DAILY_OnTooltip,
+						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["maps"] = { THE_STORM_PEAKS },
 					["isDaily"] = true,
@@ -1943,7 +1940,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["description"] = "Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
-					["OnTooltip"] = FACTION_DAILY_OnTooltip,
+					["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					["cr"] = 34925,	-- North Sea Kraken
 					["isDaily"] = true,
 				})),
@@ -2101,7 +2098,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
-					["OnTooltip"] = FACTION_DAILY_OnTooltip,
+					["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- Mistcaller Yngvar slain
@@ -2119,7 +2116,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
-					["OnTooltip"] = FACTION_DAILY_OnTooltip,
+					["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- Ornolf the Scarred slain
@@ -2139,7 +2136,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
-						["OnTooltip"] = FACTION_DAILY_OnTooltip,
+						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["hordeQuestData"] = q(14136, {	-- Rescue at Sea (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
@@ -2147,7 +2144,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
-						["OnTooltip"] = FACTION_DAILY_OnTooltip,
+						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["isDaily"] = true,
 					["groups"] = {
@@ -2167,7 +2164,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
-						["OnTooltip"] = FACTION_DAILY_OnTooltip,
+						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["hordeQuestData"] = q(14140, {	-- Stop The Aggressors (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
@@ -2175,7 +2172,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
-						["OnTooltip"] = FACTION_DAILY_OnTooltip,
+						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["isDaily"] = true,
 					["groups"] = {
@@ -2645,7 +2642,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
 					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
-					["OnTooltip"] = FACTION_DAILY_OnTooltip,
+					["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					["isDaily"] = true,
 					["groups"] = {
 						objective(1, {	-- 0/6 Fallen Hero's Spirit blessed
@@ -2955,7 +2952,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
-						["OnTooltip"] = FACTION_DAILY_OnTooltip,
+						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["hordeQuestData"] = q(14144, {	-- The Light's Mercy (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
@@ -2963,7 +2960,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
-						["OnTooltip"] = FACTION_DAILY_OnTooltip,
+						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["isDaily"] = true,
 					["groups"] = {
@@ -3593,7 +3590,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
-						["OnTooltip"] = FACTION_DAILY_OnTooltip,
+						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["hordeQuestData"] = q(14145, {	-- What Do You Feed a Yeti, Anyway? (H)
 						["qg"] = 34914,	-- Tylos Dawnrunner <The Sunreavers>
@@ -3601,7 +3598,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
-						["OnTooltip"] = FACTION_DAILY_OnTooltip,
+						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["isDaily"] = true,
 					["groups"] = {
@@ -3623,7 +3620,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
 						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
-						["OnTooltip"] = FACTION_DAILY_OnTooltip,
+						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["hordeQuestData"] = q(14142, {	-- You've Really Done It This Time, Kul (H)
 						["qg"] = 34771,	-- Girana the Blooded <The Sunreavers>
@@ -3631,7 +3628,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
 						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
-						["OnTooltip"] = FACTION_DAILY_OnTooltip,
+						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["isDaily"] = true,
 					["groups"] = {

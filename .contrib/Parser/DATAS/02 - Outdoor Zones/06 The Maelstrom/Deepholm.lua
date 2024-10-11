@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local OnTooltipForTherazane = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ForTherazane = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		tinsert(tooltipInfo, { left = "Daily Quests:" });
@@ -16,7 +16,7 @@ local OnTooltipForTherazane = [[function(t, tooltipInfo)
 			total = total + _.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo,
 				" %s", _.SearchForField("questID", questData[1])[1], questData[2]);
 		end
-		
+
 		local AddQuestsWithReputation = _.Modules.FactionData.AddQuestsTooltipWithReputation;
 		if reputation >= ]] .. REVERED .. [[ then
 			local glopmother = t.glopmother;
@@ -33,7 +33,7 @@ local OnTooltipForTherazane = [[function(t, tooltipInfo)
 			end
 			total = total + AddQuestsWithReputation(tooltipInfo, "Complete 1 of 2 quests:", glopmother, 350);
 		end
-		
+
 		local randomQuests = t.randomQuests;
 		if not randomQuests then
 			randomQuests = {};
@@ -139,7 +139,7 @@ root(ROOTS.Zones, {
 						pet(756, {	-- Fungal Moth (PET!)
 							["description"] = "Found scattered around Silvermarsh, Needlerock Slag and Chasm, as well as Verlok Stand.",
 							["coords"] = {
-								{ 23.7, 44.7, DEEPHOLM }, -- Needlerock 
+								{ 23.7, 44.7, DEEPHOLM }, -- Needlerock
 								{ 70.9, 25.4, DEEPHOLM }, -- Verlok Stand
 								{ 72.0, 62.7, DEEPHOLM }, -- Silvermarsh
 							},
@@ -171,7 +171,7 @@ root(ROOTS.Zones, {
 				n(FACTIONS, {
 					faction(FACTION_THERAZANE, {	-- Therazane
 						["icon"] = "Interface\\Icons\\inv_misc_tabard_therazane",
-						["OnTooltip"] = OnTooltipForTherazane,
+						["OnTooltip"] = [[_.OnTooltipDB.ForTherazane]],
 					}),
 				}),
 				petbattles({

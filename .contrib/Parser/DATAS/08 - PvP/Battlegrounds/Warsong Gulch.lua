@@ -33,7 +33,7 @@ local HORDE_BATTLE_FOR_WSG_TIER_2 = {	-- Repeatables
 	8434,	-- Battle of Warsong Gulch
 	8435,	-- Battle of Warsong Gulch
 };
-local OnTooltipForWarsongGulch = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ForWarsongGulch = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation >= 0 and reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
@@ -201,13 +201,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			n(FACTIONS, {
 				faction(FACTION_SILVERWING_SENTINELS, {	-- Silverwing Sentinels
 					["icon"] = "Interface\\Icons\\ability_racial_shadowmeld",
-					["OnTooltip"] = OnTooltipForWarsongGulch,
+					["OnTooltip"] = [[_.OnTooltipDB.ForWarsongGulch]],
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				faction(FACTION_WARSONG_OUTRIDERS, {	-- Warsong Outriders
 					["icon"] = "Interface\\Icons\\Ability_Warrior_WarCry",
-					["OnTooltip"] = OnTooltipForWarsongGulch,
+					["OnTooltip"] = [[_.OnTooltipDB.ForWarsongGulch]],
 					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
 				}),

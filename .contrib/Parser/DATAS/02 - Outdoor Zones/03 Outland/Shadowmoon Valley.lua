@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local OnTooltipForNetherwing = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ForNetherwing = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Turn in Netherwing Eggs.", 250, 42000);
@@ -163,7 +163,7 @@ root(ROOTS.Zones, {
 				}),
 				n(FACTIONS, {
 					applyclassicphase(TBC_PHASE_THREE_NETHERWING, faction(FACTION_NETHERWING, {	-- Netherwing
-						["OnTooltip"] = OnTooltipForNetherwing,
+						["OnTooltip"] = [[_.OnTooltipDB.ForNetherwing]],
 					})),
 				}),
 				n(FLIGHT_PATHS, {

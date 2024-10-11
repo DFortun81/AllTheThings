@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local OnTooltipForConsortium = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ForConsortium = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
@@ -19,7 +19,7 @@ local OnTooltipForConsortium = [[function(t, tooltipInfo)
 		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Obsidian Warbeads", 500, 42000, 10);
 	end
 end]];
-local OnTooltipForKurenai = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ForKurenai = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 0 then
 		tinsert(tooltipInfo, { left = "Complete Quests in Orebor Harborage, Zangarmarsh.", r = 1, g = 1, b = 1 });
@@ -30,7 +30,7 @@ local OnTooltipForKurenai = [[function(t, tooltipInfo)
 		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Obsidian Warbeads", 500, 42000, 10);
 	end
 end]];
-local OnTooltipForMaghar = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ForMaghar = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 0 then
 		tinsert(tooltipInfo, { left = "Complete Quests in Mag'har Post, Hellfire Peninsula.", r = 1, g = 1, b = 1 });
@@ -323,15 +323,15 @@ root(ROOTS.Zones, {
 				}),
 				n(FACTIONS, {
 					faction(FACTION_KURENAI, {	-- Kurenai
-						["OnTooltip"] = OnTooltipForKurenai,
+						["OnTooltip"] = [[_.OnTooltipDB.ForKurenai]],
 						["races"] = ALLIANCE_ONLY,
 					}),
 					faction(FACTION_THE_CONSORTIUM, {	-- The Consortium
 						["maps"] = { NETHERSTORM, AUCHINDOUN_MANA_TOMBS },
-						["OnTooltip"] = OnTooltipForConsortium,
+						["OnTooltip"] = [[_.OnTooltipDB.ForConsortium]],
 					}),
 					faction(FACTION_THE_MAGHAR, {	-- The Mag'har
-						["OnTooltip"] = OnTooltipForMaghar,
+						["OnTooltip"] = [[_.OnTooltipDB.ForMaghar]],
 						["races"] = HORDE_ONLY,
 					}),
 				}),

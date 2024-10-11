@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 -- CRIEVE NOTE: Dredgers at Honored in Retail? They go to Exalted in TBC Classic. (someone test this on Retail)
-local OnTooltipForSporeggar = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ForSporeggar = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
@@ -264,7 +264,7 @@ root(ROOTS.Zones, {
 						["maps"] = { COILFANG_RESERVOIR_SLAVE_PENS, COILFANG_RESERVOIR_STEAMVAULT, COILFANG_RESERVOIR_UNDERBOG },
 					}),
 					faction(FACTION_SPOREGGAR, {	-- Sporeggar
-						["OnTooltip"] = OnTooltipForSporeggar,
+						["OnTooltip"] = [[_.OnTooltipDB.ForSporeggar]],
 						["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
 					}),
 				}),

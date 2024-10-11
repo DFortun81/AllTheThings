@@ -1,7 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-local OnTooltipForAlteracValley = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ForAlteracValley = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation >= 0 and reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
@@ -241,12 +241,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			n(FACTIONS, {
 				faction(FACTION_FROSTWOLF_CLAN, {	-- Frostwolf Clan
 					["icon"] = "Interface\\Icons\\inv_jewelry_frostwolftrinket_05",
-					["OnTooltip"] = OnTooltipForAlteracValley,
+					["OnTooltip"] = [[_.OnTooltipDB.ForAlteracValley]],
 					["races"] = HORDE_ONLY,
 				}),
 				faction(FACTION_STORMPIKE_GUARD, {	-- Stormpike Guard
 					["icon"] = "Interface\\Icons\\INV_Jewelry_StormPikeTrinket_05",
-					["OnTooltip"] = OnTooltipForAlteracValley,
+					["OnTooltip"] = [[_.OnTooltipDB.ForAlteracValley]],
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),

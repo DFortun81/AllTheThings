@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local OnTooltipForFrenzyheart = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ForFrenzyheart = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 0 then
 		local champion = t.champion;
@@ -50,7 +50,7 @@ local OnTooltipForFrenzyheart = [[function(t, tooltipInfo)
 		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", chickenRep + rejekRep + vekgarRep, 42000);
 	end
 end]];
-local OnTooltipForOracles = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ForOracles = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 0 then
 		local hand = t.hand;
@@ -270,11 +270,11 @@ root(ROOTS.Zones, {
 					}),
 					faction(FACTION_FRENZYHEART_TRIBE, {	-- Frenzyheart Tribe
 						["maxReputation"] = { FACTION_THE_ORACLES, NEUTRAL },	-- The Oracles, Neutral.
-						["OnTooltip"] = OnTooltipForFrenzyheart,
+						["OnTooltip"] = [[_.OnTooltipDB.ForFrenzyheart]],
 					}),
 					faction(FACTION_THE_ORACLES, {	-- The Oracles
 						["maxReputation"] = { FACTION_FRENZYHEART_TRIBE, NEUTRAL },	-- Frenzyheart Tribe, Neutral.
-						["OnTooltip"] = OnTooltipForOracles,
+						["OnTooltip"] = [[_.OnTooltipDB.ForOracles]],
 					}),
 				}),
 				prof(FISHING, {

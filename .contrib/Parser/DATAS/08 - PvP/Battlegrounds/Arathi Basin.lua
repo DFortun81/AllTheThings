@@ -1,7 +1,7 @@
 -----------------------------------------------
 --      P L A Y E R   V S   P L A Y E R      --
 -----------------------------------------------
-local OnTooltipForArathiBasin = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ForArathiBasin = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation >= 0 and reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
@@ -149,7 +149,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["icon"] = "Interface\\Icons\\Ability_Sap",
 					-- #endif
-					["OnTooltip"] = OnTooltipForArathiBasin,
+					["OnTooltip"] = [[_.OnTooltipDB.ForArathiBasin]],
 					["races"] = HORDE_ONLY,
 				}),
 				faction(FACTION_THE_LEAGUE_OF_ARATHOR, {	-- The League of Arathor
@@ -158,7 +158,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					-- #else
 					["icon"] = "Interface\\Icons\\Ability_warrior_battleshout",
 					-- #endif
-					["OnTooltip"] = OnTooltipForArathiBasin,
+					["OnTooltip"] = [[_.OnTooltipDB.ForArathiBasin]],
 					["races"] = ALLIANCE_ONLY,
 				}),
 			}),

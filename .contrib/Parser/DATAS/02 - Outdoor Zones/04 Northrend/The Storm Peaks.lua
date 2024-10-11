@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local OnTooltipForSonsOfHodir = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ForSonsOfHodir = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 0 then
 		local AddQuestTooltip = _.Modules.FactionData.AddQuestTooltip;
@@ -288,7 +288,7 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 					}),
 					faction(FACTION_THE_SONS_OF_HODIR, {	-- The Sons of Hodir
-						["OnTooltip"] = OnTooltipForSonsOfHodir,
+						["OnTooltip"] = [[_.OnTooltipDB.ForSonsOfHodir]],
 					}),
 				}),
 				n(FLIGHT_PATHS, {

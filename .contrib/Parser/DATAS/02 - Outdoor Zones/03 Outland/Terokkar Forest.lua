@@ -10,7 +10,7 @@ local HUNGRY_NETHER_RAYS_GROUPS = {
 local UNHOLY_ENCHANT = i(16248, {	-- Formula: Enchant Weapon - Unholy (RECIPE!)
 	["cr"] = 16810,	-- Bonechewer Backbreaker
 });
-local OnTooltipForSkyguard = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ForSkyguard = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
@@ -335,7 +335,7 @@ root(ROOTS.Zones, {
 				n(FACTIONS, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, faction(FACTION_SHATARI_SKYGUARD, {	-- Sha'tari Skyguard
 						["icon"] = "Interface\\Icons\\ability_hunter_pet_netherray",
-						["OnTooltip"] = OnTooltipForSkyguard,
+						["OnTooltip"] = [[_.OnTooltipDB.ForSkyguard]],
 					})),
 				}),
 				prof(FISHING, {

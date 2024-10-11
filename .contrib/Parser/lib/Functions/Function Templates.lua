@@ -135,4 +135,7 @@ ExportDB.OnTooltipDB = {
 			end
 		end
 	end]],
+	WithRequiredAchievement = [[~function(t, tooltipInfo)
+		if t.ach then tinsert(tooltipInfo, { left = _.L.REQUIRES, right = t.ach.text }); end
+	end]]
 };

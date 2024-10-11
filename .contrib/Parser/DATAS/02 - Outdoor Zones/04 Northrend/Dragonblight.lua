@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local OnTooltipForTheKaluak = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.TheKaluak = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		tinsert(tooltipInfo, { left = "Daily Quests:" });
@@ -256,7 +256,7 @@ root(ROOTS.Zones, {
 				n(FACTIONS, {
 					faction(FACTION_THE_KALUAK, {	-- The Kalu'ak
 						["maps"] = { BOREAN_TUNDRA, HOWLING_FJORD },
-						["OnTooltip"] = OnTooltipForTheKaluak,
+						["OnTooltip"] = [[_.OnTooltipDB.TheKaluak]],
 					}),
 					faction(FACTION_THE_WYRMREST_ACCORD, {	-- The Wyrmrest Accord
 						["provider"] = { "i", 43156 },	-- Tabard of the Wyrmrest Accord
