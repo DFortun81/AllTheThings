@@ -35,7 +35,7 @@ createPhase = function(data)
 		else
 			phasesByReadable[data.readable] = data;
 		end
-		
+
 		-- Try to find the phaseID assignment from the readable table.
 		local phaseID = data.phaseID or PhaseAssignments[data.readable];
 		if not phaseID then
@@ -52,7 +52,7 @@ createPhase = function(data)
 		---@diagnostic disable-next-line: undefined-global
 		data.filepath = CurrentSubFileName or CurrentFileName;
 		--print("PHASE", phaseID .. ":", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
-		
+
 		-- We want our descriptions to be color coded by state if a color wasn't manually supplied.
 		local color = data.color or defaultStateColors[data.state];
 		if color then
@@ -479,8 +479,8 @@ local defaultLore = {
 	cn = "如果 %s 中的 %s 在您的服务器上处于活动状态，只需将其打开即可。",
 	tw = "如果 %s 中的 %s 在您的伺服器上處於啟用狀態，只需將其打開即可。",
 };
+-- #if ANYCLASSIC
 local function createClassicPhase(data)
-	-- #if ANYCLASSIC
 	local description = data.description;
 	if not description then
 		description = {};
@@ -512,10 +512,12 @@ local function createClassicPhase(data)
 	data.color = "FFAAFFAA";
 	--data.export = true;
 	return createPhase(data);
-	-- #else
-	return data.phaseID;
-	-- #endif
 end
+-- #else
+local function createClassicPhase(data)
+	return data.phaseID;
+end
+-- #endif
 local function convertClassicPhases(phases)
 	for phaseID,phaseData in pairs(phases) do
 		local data = {

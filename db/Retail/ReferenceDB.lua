@@ -478,16 +478,6 @@ end,
 		tinsert(tooltipInfo, { left = " Each capture is worth " .. repPerFlagCapture .. " rep, +100 if you win or 35 if you lose 0-3.", r = 1, g = 1, b = 1 });
 	end
 end,
-	["IsSpellOnCooldown"] = function(t,tooltipInfo)
-		local s = t.spellID
-		if _.CurrentCharacter.Spells[s]then
-			if _.WOWAPI.GetSpellCooldown(s)>0 then
-				tinsert(tooltipInfo, { left = "Your "..t.name.." cooldown is unavailable." });
-			else
-				tinsert(tooltipInfo, { left = "Your "..t.name.." cooldown is available." });
-			end
-		end
-	end,
 	["IsSpellOnCooldown_55208"] = function(t,tooltipInfo)
 			if _.CurrentCharacter.Spells[55208]then
 				if _.WOWAPI.GetSpellCooldown(55208)>0 then

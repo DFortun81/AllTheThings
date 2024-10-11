@@ -2962,6 +2962,21 @@ namespace ATT
                     LogError($"'criteriaID' {criteriaID} missing 'achID' [{CurrentParentGroup.Value.Key}:{CurrentParentGroup.Value.Value}]", data);
                 }
             }
+
+            // OnTooltip references should be stored in ExportDB.OnTooltipDB, so remove any which are not referenced
+            if (data.TryGetValue("OnTooltip", out string ontooltipRef))
+            {
+                var ontooltipName = ontooltipRef.Replace("_.OnTooltipDB.", string.Empty);
+                if (!EXPORTDATA_WITH_REFERENCES.TryGetValue("OnTooltip", out List<string> names))
+                {
+                    EXPORTDATA_WITH_REFERENCES["OnTooltip"] = names = new List<string>();
+                }
+
+                if (!names.Contains(ontooltipName))
+                {
+                    names.Add(ontooltipName);
+                }
+            }
         }
 
         private static void CheckTrackableFields(IDictionary<string, object> data)

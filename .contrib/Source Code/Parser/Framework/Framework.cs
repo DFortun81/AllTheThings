@@ -220,6 +220,11 @@ namespace ATT
         private static IDictionary<long, bool> QUESTS_WITH_REFERENCES = new Dictionary<long, bool>();
 
         /// <summary>
+        /// All of the Quest IDs that have been referenced somewhere in the database.
+        /// </summary>
+        private static IDictionary<string, List<string>> EXPORTDATA_WITH_REFERENCES = new Dictionary<string, List<string>>();
+
+        /// <summary>
         /// All of the species that have been parsed sorted by Species ID.
         /// </summary>
         private static IDictionary<long, IDictionary<string, object>> SPECIES = new Dictionary<long, IDictionary<string, object>>();
@@ -3471,7 +3476,31 @@ namespace ATT
                 var referenceDBFilename = Path.Combine(addonRootFolder, $"db/{dbRootFolder}ReferenceDB.lua");
                 foreach (var exportDB in new SortedDictionary<string,object>(Exports))
                 {
-                    referenceDB.Append(ExportPureLua(exportDB.Value).Insert(0, $"_.{exportDB.Key}=\n").AppendLine());
+                    // some export DBs can filter unreferenced keys from data
+                    switch (exportDB.Key)
+                    {
+                        case "OnTooltipDB":
+                            {
+                                if (EXPORTDATA_WITH_REFERENCES.TryGetValue("OnTooltip", out List<string> names))
+                                {
+                                    Dictionary<string, object> exports = exportDB.Value as Dictionary<string, object>;
+                                    string[] allKeys = exports.Keys.ToArray();
+
+                                    foreach(string key in allKeys)
+                                    {
+                                        if (!names.Contains(key))
+                                        {
+                                            exports.Remove(key);
+                                        }
+                                    }
+                                    referenceDB.Append(ExportPureLua(exports).Insert(0, $"_.{exportDB.Key}=\n").AppendLine());
+                                }
+                            }
+                            break;
+                        default:
+                            referenceDB.Append(ExportPureLua(exportDB.Value).Insert(0, $"_.{exportDB.Key}=\n").AppendLine());
+                            break;
+                    }
                 }
                 WriteIfDifferent(referenceDBFilename, referenceDB.ToString());
 
