@@ -3417,7 +3417,7 @@ local function BuildSourceParent(group)
 				icon = "Interface\\Icons\\inv_misc_spyglass_02",
 				OnUpdate = app.AlwaysShowUpdate,
 				skipFill = true,
-				SortPriority = 0.5,
+				SortPriority = -3.0,
 				g = {},
 				OnClick = app.UI.OnClick.IgnoreRightClick,
 			})
