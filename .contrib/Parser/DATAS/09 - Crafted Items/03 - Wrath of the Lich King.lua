@@ -1046,15 +1046,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 					{ "i", 36860, 1 },	-- Eternal Fire
 					{ "i", 35627, 1 },	-- Eternal Shadow
 				}),
-				["OnTooltip"] = [[function(t, tooltipInfo)
-					if _.CurrentCharacter.Spells[55208] then
-						if ]] .. WOWAPI_GetSpellCooldown(55208) .. [[ > 0 then
-							tinsert(tooltipInfo, { left = "Your Titansteel cooldown is unavailable." });
-						else
-							tinsert(tooltipInfo, { left = "Your Titansteel cooldown is available." });
-						end
-					end
-				end]]
+				["OnTooltip"] = FUNCTION_TEMPLATES.GenerateOnTooltipSpellOnCooldown(55208)
 			}),
 		}),
 	}),

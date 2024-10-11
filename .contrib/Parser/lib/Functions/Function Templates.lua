@@ -66,7 +66,23 @@ FUNCTION_TEMPLATES = {
 			end
 			return t;
 		end]],
-	};
+	},
+	-- TODO: use _.IsSpellKnownHelper once Classic uses Classes/Spell.lua
+	-- Generates an OnTooltip function into ExportDB.OnTooltipDB to return the cooldown status of a
+	-- custom SpellID
+	GenerateOnTooltipSpellOnCooldown = function(spellID)
+		local OnTooltipName = "IsSpellOnCooldown_"..spellID
+		ExportDB.OnTooltipDB[OnTooltipName] = [[~function(t,tooltipInfo)
+			if _.CurrentCharacter.Spells[]]..spellID..[[]then
+				if _.WOWAPI.GetSpellCooldown(]]..spellID..[[)>0 then
+					tinsert(tooltipInfo, { left = "Your "..t.name.." cooldown is unavailable." });
+				else
+					tinsert(tooltipInfo, { left = "Your "..t.name.." cooldown is available." });
+				end
+			end
+		end]]
+		return [[_.OnTooltipDB.]]..OnTooltipName..[[]]
+	end,
 };
 ExportDB.OnTooltipDB = {
 	-- #if BEFORE CATA
@@ -108,4 +124,15 @@ ExportDB.OnTooltipDB = {
 		end
 	end]],
 	-- #endif
+	-- TODO: use _.IsSpellKnownHelper once Classic uses Classes/Spell.lua
+	IsSpellOnCooldown = [[~function(t,tooltipInfo)
+		local s = t.spellID
+		if _.CurrentCharacter.Spells[s]then
+			if _.WOWAPI.GetSpellCooldown(s)>0 then
+				tinsert(tooltipInfo, { left = "Your "..t.name.." cooldown is unavailable." });
+			else
+				tinsert(tooltipInfo, { left = "Your "..t.name.." cooldown is available." });
+			end
+		end
+	end]],
 };
