@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["icon"] = [[~_.asset("Achievement_Character_Tauren_Male")]],
 					-- #endif
-					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.RuneclothTurnIns,
+					["OnTooltip"] = [[_.OnTooltipDB.RuneclothTurnIns]],
 					["races"] = HORDE_ONLY,
 				}),
 			}),

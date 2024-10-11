@@ -74,7 +74,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["icon"] = [[~_.asset("Achievement_Character_Nightelf_Female")]],
 					-- #endif
-					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.RuneclothTurnIns,
+					["OnTooltip"] = [[_.OnTooltipDB.RuneclothTurnIns]],
 					["races"] = ALLIANCE_ONLY,
 				}),
 				applyclassicphase(CATA_PHASE_ONE, faction(FACTION_GILNEAS, {	-- Gilneas

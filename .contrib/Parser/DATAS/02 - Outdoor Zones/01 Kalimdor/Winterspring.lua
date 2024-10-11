@@ -1,7 +1,7 @@
 ---------------------------------------------------
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
-local OnTooltipForEverlook = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ForEverlook = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
@@ -242,7 +242,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(FACTIONS, {
 				faction(FACTION_EVERLOOK, {	-- Everlook
 					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
-					["OnTooltip"] = OnTooltipForEverlook,
+					["OnTooltip"] = [[_.OnTooltipDB.ForEverlook]],
 					["maps"] = { TANARIS, THE_BARRENS },
 				}),
 				faction(FACTION_WINTERSABER_TRAINERS, {	-- Wintersaber Trainers

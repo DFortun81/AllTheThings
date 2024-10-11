@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["minReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, must be Honored.
 					["maxReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, must be lower than Honored.
-					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.DesolaceCentaurs,
+					["OnTooltip"] = [[_.OnTooltipDB.DesolaceCentaurs]],
 					-- #endif
 				}),
 				faction(FACTION_MAGRAM_CLAN_CENTAUR, {	-- Magram Clan Centaur
@@ -190,7 +190,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #else
 					["minReputation"] = { FACTION_MAGRAM_CLAN_CENTAUR, HONORED },	-- Magram Clan Centaur, must be Honored.
 					["maxReputation"] = { FACTION_GELKIS_CLAN_CENTAUR, HONORED },	-- Gelkis Clan Centaur, must be lower than Honored.
-					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.DesolaceCentaurs,
+					["OnTooltip"] = [[_.OnTooltipDB.DesolaceCentaurs]],
 					-- #endif
 				}),
 			}),

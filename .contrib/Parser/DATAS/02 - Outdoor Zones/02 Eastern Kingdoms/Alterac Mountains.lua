@@ -40,7 +40,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(FACTIONS, {
 				faction(FACTION_RAVENHOLDT, {	-- Ravenholdt
 					["icon"] = "Interface\\Icons\\Ability_Rogue_Eviscerate",
-					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.Ravenholdt,
+					["OnTooltip"] = [[_.OnTooltipDB.Ravenholdt]],
 				}),
 				faction(FACTION_SYNDICATE, {	-- Syndicate
 					["description"] = "Neutral is the highest you can currently reach with the Syndicate.\n\nDoing this on will tank your Ravenholdt rep, they're mutually exclusive. Get this done on an alt if you want to.",

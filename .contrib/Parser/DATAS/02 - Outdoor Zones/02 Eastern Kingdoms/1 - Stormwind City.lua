@@ -88,7 +88,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #else
 					["icon"] = [[~_.asset("Achievement_Character_Human_Female")]],
 					-- #endif
-					["OnTooltip"] = FUNCTION_TEMPLATES.OnTooltip.RuneclothTurnIns,
+					["OnTooltip"] = [[_.OnTooltipDB.RuneclothTurnIns]],
 					["races"] = ALLIANCE_ONLY,
 				}),
 				faction(FACTION_TUSHUI_PANDAREN, {	-- Tushui Pandaren

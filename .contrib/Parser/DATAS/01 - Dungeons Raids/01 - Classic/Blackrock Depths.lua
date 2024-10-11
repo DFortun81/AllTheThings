@@ -23,7 +23,7 @@ SHADOWFORGE_CITY = createHeader({
 		en = [[~DUNGEON_FLOOR_BLACKROCKDEPTHS2]],
 	},
 });
-local OnTooltipForThoriumBrotherhood = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ThoriumBrotherhood = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
@@ -68,7 +68,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			n(FACTIONS, {
 				faction(FACTION_THORIUM_BROTHERHOOD, {	-- Thorium Brotherhood
 					["maps"] = { SEARING_GORGE },
-					["OnTooltip"] = OnTooltipForThoriumBrotherhood,
+					["OnTooltip"] = [[_.OnTooltipDB.ThoriumBrotherhood]],
 				}),
 			}),
 			n(QUESTS, {

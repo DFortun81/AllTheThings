@@ -28,8 +28,70 @@ _.FlightPathDB=
 }
 _.OnTooltipDB=
 {
+	["ForEverlook"] = function(t, tooltipInfo)
+	local reputation = t.reputation;
+	if reputation < 42000 then
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
+		addRepInfo(tooltipInfo, reputation, "Kill Pirates in Ratchet*", 2.5, 42000);
+		addRepInfo(tooltipInfo, reputation, "Kill Pirates in Tanaris", 2.5, 42000);
+		tinsert(tooltipInfo, { left = " * PROTIP: Ratchet is faster.", r = 1, g = 0.5, b = 0.5 });
+	end
+end,
+	["ForRatchet"] = function(t, tooltipInfo)
+	local reputation = t.reputation;
+	if reputation < 42000 then
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
+		if reputation < 20999 then
+			addRepInfo(tooltipInfo, reputation, "Kill Pirates in Ratchet (To 11999 Honored)", 5, 20999);
+		end
+		addRepInfo(tooltipInfo, reputation, "Kill Pirates in Tanaris", 2.5, 42000);
+	end
+end,
+	["ForTimbermawHold"] = function(t, tooltipInfo)
+	local reputation = t.reputation;
+	if reputation < 42000 then
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
+		addRepInfo(tooltipInfo, reputation, "Kill Deadwood or Winterfall Furbolgs", 20, 42000, -3000);
+		local repPerTurnIn = 2000;
+		addRepInfo(tooltipInfo, reputation, "Turn in Deadwood Feathers (x5) in Felwood", repPerTurnIn, 42000);
+		local repPer, remainingTurnIns = addRepInfo(tooltipInfo, reputation, "Turn in Winterfall Beads (x5) in Winterspring", repPerTurnIn, 42000);
+		local remaining = ((remainingTurnIns * 5) - C_Item.GetItemCount(21383, true) - C_Item.GetItemCount(21377, true));
+		if remaining > 0 then
+			tinsert(tooltipInfo, { left = "You need " .. remaining .. " more feathers/beads for Exalted.", r = 1, g = 1, b = 0 });
+		end
+	end
+end,
 	["MusicRollItem"] = function(t,tooltipInfo)tinsert(tooltipInfo,{left=not(_.IsQuestFlaggedCompleted(38356)or _.IsQuestFlaggedCompleted(37961))and _.L.MUSIC_ROLLS_DESC.._.L.MUSIC_ROLLS_DESC_2 or _.L.MUSIC_ROLLS_DESC})end,
+	["Ravenholdt"] = function(t, tooltipInfo)
+		local reputation = t.reputation;
+		if reputation < 42000 then
+			if reputation < 20999 then
+				tinsert(tooltipInfo, { left = " * PROTIP: Do NOT turn in Heavy Lockboxes until max Honored!", r = 1, g = 0.5, b = 0.5 });
+				_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Kill Arathi Syndicate", 5, 20999);
+			else
+				tinsert(tooltipInfo, { left = " * PROTIP: Bring a stack of Repair Bots with you.", r = 0.5, g = 1, b = 0.5 });
+				_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Turn in Heavy Junkboxes.", 75, 42000, 5);
+			end
+		end
+	end,
 	["SelfieFilter"] = function(t,tooltipInfo)tinsert(tooltipInfo,{left=_.L.SELFIE_DESC..(select(2,_.WOWAPI.GetItemInfo(122674))or"Selfie Camera MkII").._.L.SELFIE_DESC_2..(_.NPCNameFromID[t.crs[1] ]or"???").."|r"..(t.maps and(" in |cffff8000".._.GetMapName(t.maps[1]).."|r.")or".")})end,
+	["ThoriumBrotherhood"] = function(t, tooltipInfo)
+	local reputation = t.reputation;
+	if reputation < 42000 then
+		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
+		addRepInfo(tooltipInfo, reputation, "Turn In Blood & Cores (1x each)",
+		500,
+		42000);
+
+		addRepInfo(tooltipInfo, reputation, "Turn In Core Leather (2x each)",
+		350,
+		42000);
+
+		addRepInfo(tooltipInfo, reputation, "Turn In Dark Iron Ore (10x each)",
+		75,
+		42000);
+	end
+end,
 }
 _.RaceDB=
 {

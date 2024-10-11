@@ -2,7 +2,7 @@
 --          Z O N E S        M O D U L E         --
 ---------------------------------------------------
 -- #if BEFORE 4.0.3
-local OnTooltipForRatchet = [[function(t, tooltipInfo)
+ExportDB.OnTooltipDB.ForRatchet = [[~function(t, tooltipInfo)
 	local reputation = t.reputation;
 	if reputation < 42000 then
 		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
@@ -56,7 +56,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			n(FACTIONS, {
 				faction(FACTION_RATCHET, {	-- Ratchet
 					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
-					["OnTooltip"] = OnTooltipForRatchet,
+					["OnTooltip"] = [[_.OnTooltipDB.ForRatchet]],
 					["maps"] = { TANARIS },
 				}),
 			}),
