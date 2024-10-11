@@ -692,7 +692,8 @@ local function AttachTooltipInformationEntry(tooltip, entry)
 end
 local function AttachTooltipInformation(tooltip, tooltipInfo)
 	if tooltipInfo and #tooltipInfo > 0 then
-		-- if app.Debugging then app.PrintDebug("ATI") app.PrintTable(tooltipInfo) end
+		-- app.PrintDebug("ATI",#tooltipInfo)
+		-- app.PrintTable(tooltipInfo)
 		for _,entry in ipairs(tooltipInfo) do
 			AttachTooltipInformationEntry(tooltip, entry);
 		end
@@ -710,6 +711,44 @@ local function ClearTooltip(tooltip)
 	tooltip.AllTheThingsProcessing = nil;
 	tooltip.ATT_AttachComplete = nil;
 end
+
+-- Stores a cache of the 'tooltipInfo' for a given group
+-- TODO: this isnt too effective right now since we have to clear the search cache as well
+-- basically constantly. some tooltip information types rely on the 'Update' outcome of a group
+-- which is cached with the cached group
+-- perhaps will need to link the Update logic separately from the Search logic and use that
+-- when needing to re-render a tooltip for an existing Group
+-- but otherwise, Search cache would only need to be cleared when changing something that affects Search
+-- outcome, and Tooltip cache cleared when changing Tooltip-related settings
+local TooltipInfoCache = setmetatable({}, { __mode = "kv", __index = function(t,group)
+	-- We need to generate tooltip-only content for this group since it hasn't been cached
+	-- Classic still has some tooltipInfo generated into the group directly
+	local tooltipInfo = group.tooltipInfo
+	if tooltipInfo then
+		t[group] = tooltipInfo
+		return tooltipInfo
+	end
+	tooltipInfo = {}
+	group.working = nil
+	-- app.PrintDebug("TIC.__index",app:SearchLink(group))
+	app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group)
+	-- only save the cached tooltip info for this group if it is not working
+	if not group.working then
+		-- app.PrintDebug("TIC.__index.cached")
+		t[group] = tooltipInfo
+	end
+	return tooltipInfo
+end})
+local function WipeTooltipInfoCache()
+	wipe(TooltipInfoCache)
+	-- app.PrintDebug("WipeTooltipInfoCache")
+end
+app.WipeTooltipInfoCache = WipeTooltipInfoCache
+-- app.AddEventRegistration("PLAYER_DIFFICULTY_CHANGED", WipeTooltipInfoCache);
+-- app.AddEventHandler("OnRefreshComplete", WipeTooltipInfoCache);
+-- app.AddEventHandler("OnThingCollected", WipeTooltipInfoCache);
+-- app.AddEventHandler("OnThingRemoved", WipeTooltipInfoCache);
+-- app.AddEventHandler("OnSettingsRefreshed", WipeTooltipInfoCache);
 -- TODO: remove second unused param...
 local function AttachTooltipSearchResults(tooltip, _, method, ...)
 	-- app.PrintDebug("AttachTooltipSearchResults",...)
@@ -723,17 +762,7 @@ local function AttachTooltipSearchResults(tooltip, _, method, ...)
 				tooltip:AddDoubleLine(group.text, " ", 1, 1, 1, 1);
 			end
 
-			local tooltipInfo = group.tooltipInfo
-			-- If we need to generate tooltip-only content for this group then do that now
-			if not tooltipInfo then
-				tooltipInfo = {}
-				group.working = nil
-				app.ProcessInformationTypesForExternalTooltips(tooltipInfo, group)
-				-- only save the cached tooltip info for this group if it is not working
-				if not group.working then
-					group.tooltipInfo = tooltipInfo
-				end
-			end
+			local tooltipInfo = TooltipInfoCache[group]
 
 			-- If there was info text generated for this search result, then display that first.
 			AttachTooltipInformation(tooltip, tooltipInfo);

@@ -62,6 +62,7 @@ app.GetCachedData = function(cacheKey, method, ...)
 end
 local function WipeSearchCache()
 	wipe(searchCache);
+	app.WipeTooltipInfoCache()
 end
 app.WipeSearchCache = WipeSearchCache;
 app.AddEventRegistration("PLAYER_DIFFICULTY_CHANGED", WipeSearchCache);
