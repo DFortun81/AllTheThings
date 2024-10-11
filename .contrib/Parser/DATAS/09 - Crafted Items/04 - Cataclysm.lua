@@ -1039,7 +1039,9 @@ Fire and Water - Damage against Elementals increased by 15%.
 			i(54443),	-- Embersilk Bag
 			i(54446),	-- Hyjal Expedition Bag
 			i(54444),	-- Illusionary Bag
-			firelands(i(70138)),	-- Luxurious Silk Gem Bag
+			applyclassicphase(CATA_PHASE_MOLTEN_FRONT, i(70138, {	-- Luxurious Silk Gem Bag
+				["timeline"] = { ADDED_4_2_0 },
+			})),
 			i(54445),	-- Otherworldly Bag
 		}),
 		filter(CONSUMABLES, {

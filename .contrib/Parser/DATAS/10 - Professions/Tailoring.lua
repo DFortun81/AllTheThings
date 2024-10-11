@@ -3373,8 +3373,9 @@ profession(TAILORING, {
 					["name"] = "Illusionary Bag",
 					["recipeID"] = 75308
 				},
-				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
+				applyclassicphase(CATA_PHASE_MOLTEN_FRONT, {
 					["name"] = "Luxurious Silk Gem Bag",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 100585
 				}),
 				{
@@ -3527,10 +3528,12 @@ profession(TAILORING, {
 				},
 				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
 					["name"] = "Don Tayo's Inferno Mittens",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99449
 				}),
 				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
 					["name"] = "Grips of Altered Reality",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99448
 				}),
 				{
@@ -3591,6 +3594,7 @@ profession(TAILORING, {
 			["groups"] = {
 				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
 					["name"] = "Boots of the Black Flame",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99460
 				}),
 				{
@@ -3599,6 +3603,7 @@ profession(TAILORING, {
 				},
 				applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, {
 					["name"] = "Endless Dream Walkers",
+					["timeline"] = { ADDED_4_2_0 },
 					["recipeID"] = 99459
 				}),
 				{
@@ -6657,7 +6662,7 @@ itemrecipe("Pattern: Grips of Altered Reality", 69965, 99448, CATA_PHASE_RAGE_OF
 itemrecipe("Pattern: High Society Top Hat", 67541, 75289, CATA_PHASE_ONE);
 itemrecipe("Pattern: Illusionary Bag", 54605, 75308, CATA_PHASE_ONE);
 itemrecipe("Pattern: Lavaquake Legwraps", 72002, 101921, CATA_PHASE_HOUR_OF_TWILIGHT);
-itemrecipe("Pattern: Luxurious Silk Gem Bag", 70176, 100585, CATA_PHASE_RAGE_OF_THE_FIRELANDS);
+itemrecipe("Pattern: Luxurious Silk Gem Bag", 70176, 100585, CATA_PHASE_MOLTEN_FRONT);
 itemrecipe("Pattern: Powerful Enchanted Spellthread", 54599, 75309, CATA_PHASE_ONE);
 itemrecipe("Pattern: Powerful Ghostly Spellthread", 54600, 75310, CATA_PHASE_ONE);
 itemrecipe("Pattern: Vicious Embersilk Cowl", 54593, 75306, CATA_PHASE_ONE);
