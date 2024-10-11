@@ -1355,32 +1355,27 @@ local AndBreadcrumbWithLockCriteria = {
 		return t.lc or t.altQuests
 	end,
 }
-if app.IsRetail then
-	local WithAutoName = {
-		name = function(t)
-			local type, id = (":"):split(t.an)
-			local data = app.GetAutomaticHeaderData(id,type)
-			for key,value in pairs(data) do
-				t[key] = value;
-			end
-			return data.name
-		end,
-		icon = function(t)
-			local type, id = (":"):split(t.an)
-			local data = app.GetAutomaticHeaderData(id,type)
-			for key,value in pairs(data) do
-				t[key] = value;
-			end
-			return data.icon
-		end,
-		__condition = function(t)
-			return t.an
-		end,
-	}
-	app.GlobalVariants.WithAutoName = WithAutoName
-else
-	app.GlobalVariants.WithAutoName = {}
-end
+app.GlobalVariants.WithAutoName = {
+	name = function(t)
+		local type, id = (":"):split(t.an)
+		local data = app.GetAutomaticHeaderData(id,type)
+		for key,value in pairs(data) do
+			t[key] = value;
+		end
+		return data.name
+	end,
+	icon = function(t)
+		local type, id = (":"):split(t.an)
+		local data = app.GetAutomaticHeaderData(id,type)
+		for key,value in pairs(data) do
+			t[key] = value;
+		end
+		return data.icon
+	end,
+	__condition = function(t)
+		return t.an
+	end,
+}
 
 -- Party Sync Support
 local IsQuestReplayable = C_QuestLog.IsQuestReplayable
@@ -1547,7 +1542,8 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	end,
 	indicatorIcon = GetQuestIndicator,
 	variants = {
-		app.GlobalVariants.WithAutoName
+		AndLockCriteria = app.GlobalVariants.AndLockCriteria,
+		WithAutoName = app.GlobalVariants.WithAutoName,
 	}
 },
 "WithReputation", {
@@ -1634,8 +1630,6 @@ local createQuest = app.CreateClass("Quest", "questID", {
 	end,
 }, (function(t) return (t.isWorldQuest or IsWorldQuest(t)); end)
 --]]
--- Both: Locked Quest support (no way to make a variant on the base Class at this time)
-,"WithLockCriteria", app.CloneDictionary(AndLockCriteria), AndLockCriteria.__condition
 );
 
 app.CreateQuest = createQuest;
