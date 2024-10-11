@@ -3135,14 +3135,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.CLASSIC, {
 				["cost"] = ClassicCost({ { "i", 11370, 8 } }),    -- Dark Iron Ore
 				["description"] = "Learning how to melt Dark Iron Ore from Gloom'rel costs 2 Star Ruby, 20 Gold Bars, and 10 Truesilver Bars.\n\nThe Black Forge can be found in Blackrock Depths, just past the Summoner's Tomb. Head right into The Molten Bridge, and the forge will be on the left side.\nThe Black Anvil can be found by Lord Incendius in the same dungeon.",
 			}),
-			i(17771, {    -- Enchanted / Elementium Bar
+			applyclassicphase(PHASE_THREE, i(17771, {    -- Enchanted / Elementium Bar
 				["cost"] = ClassicCost({
 					{ "i", 18562, 1 },    -- Elementium Ore
 					{ "i", 12360, 10 },    -- Arcanite Bar
 					{ "i", 17010, 1 },    -- Fiery Core
 					{ "i", 18567, 3 },    -- Elemental Flux
 				}),
-			}),
+			})),
 			-- #if AFTER 3.3.0
 			i(12655, {    -- Enchanted Thorium Bar
 				["timeline"] = { ADDED_3_3_3 },
