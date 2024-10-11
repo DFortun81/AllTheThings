@@ -206,7 +206,11 @@ i(0, 12718, nil, GOBLIN_ENGINEERING);	-- Goblin Construction Helmet
 i(0, 12908, nil, GOBLIN_ENGINEERING);	-- Goblin Dragon Gun
 i(0, 12717, nil, GOBLIN_ENGINEERING);	-- Goblin Mining Helmet
 i(0, 12716, nil, GOBLIN_ENGINEERING);	-- Goblin Mortar
+-- #if BEFORE 3.0.2
+i(7192, 8895, nil, GOBLIN_ENGINEERING);	-- Goblin Rocket Boots
+-- #else
 i(0, 8895, nil, GOBLIN_ENGINEERING);	-- Goblin Rocket Boots
+-- #endif
 i(0, 12715, nil, GOBLIN_ENGINEERING);	-- Goblin Rocket Fuel Recipe
 i(0, 12758, nil, GOBLIN_ENGINEERING);	-- Goblin Rocket Helmet
 i(0, 12760, nil, GOBLIN_ENGINEERING);	-- Goblin Sapper Charge
