@@ -3967,128 +3967,8 @@ end
 app.SearchForLink = SearchForLink;
 end
 
--- Returns an Object based on a QuestID a lot of Quest information for displaying in a row
----@return table?
-local function GetPopulatedQuestObject(questID)
-	-- cannot do anything on a missing object or questID
-	if not questID then return; end
-	-- either want to duplicate the existing data for this quest, or create new data for a missing quest
-	local questObject = CreateObject(SearchForObject("questID", questID, "field") or { questID = questID, _missing = true }, true);
-	-- if questID == 78663 then
-	-- 	local debug = app.Debugging
-	-- 	app.Debugging = true
-	-- 	app.PrintTable(questObject)
-	-- 	app.Debugging = debug
-	-- end
-	-- Try populating quest rewards
-	app.TryPopulateQuestRewards(questObject);
-	return questObject;
-end
-
--- Currency Lib
-(function()
-local C_CurrencyInfo_GetCurrencyInfo, C_CurrencyInfo_GetCurrencyLink
-	= C_CurrencyInfo.GetCurrencyInfo, C_CurrencyInfo.GetCurrencyLink;
-local cache = app.CreateCache("currencyID");
-local function default_info(t)
-	return C_CurrencyInfo_GetCurrencyInfo(t.currencyID);
-end
-local function default_link(t)
-	return C_CurrencyInfo_GetCurrencyLink(t.currencyID, 1);
-end
-local function default_costCollectibles(t)
-	local id = t.currencyID;
-	if id then
-		local results = SearchForField("currencyIDAsCost", id);
-		if #results > 0 then
-			-- app.PrintDebug("default_costCollectibles",t.hash,#results)
-			return results;
-		end
-	end
-	return app.EmptyTable;
-end
-local fields = {
-	["key"] = function(t)
-		return "currencyID";
-	end,
-	["_cache"] = function(t)
-		return cache;
-	end,
-	["info"] = function(t)
-		return cache.GetCachedField(t, "info", default_info);
-	end,
-	["link"] = function(t)
-		return cache.GetCachedField(t, "link", default_link);
-	end,
-	["icon"] = function(t)
-		local info = t.info;
-		return info and info.iconFileID;
-	end,
-	["name"] = function(t)
-		local info = t.info;
-		return info and info.name or ("Currency #" .. t.currencyID);
-	end,
-	["costCollectibles"] = function(t)
-		return cache.GetCachedField(t, "costCollectibles", default_costCollectibles);
-	end,
-	["collectibleAsCost"] = app.CollectibleAsCost,
-	-- some calculated properties can let fall-through to the merge source of a group instead of needing to re-calculate in every copy
-	isCost = function(t)
-		local merge = t.__merge
-		if not merge then return end
-		return merge.isCost
-	end,
-	-- ["trackable"] = function(t)
-	-- 	return #t.costCollectibles > 0;
-	-- end,
-	-- ["saved"] = function(t)
-	-- 	return not t.filledCost and not t.collectibleAsCost;
-	-- end,
-};
-local BaseCurrencyClass = app.BaseObjectFields(fields, "BaseCurrencyClass");
-
-local fields_BaseCostCurrency = {
-	-- total is the count of the cost currency required
-	["total"] = function(t)
-		return t.count or 1;
-	end,
-	-- progress is how much you have
-	["progress"] = function(t)
-		return C_CurrencyInfo_GetCurrencyInfo(t.currencyID).quantity or 0;
-	end,
-	["collectible"] = app.ReturnFalse,
-	["trackable"] = app.ReturnTrue,
-	-- saved is whether you have enough
-	["saved"] = function(t)
-		return t.progress >= t.total;
-	end,
-	-- hide any irrelevant wrapped fields of a cost item
-	["g"] = app.EmptyFunction,
-	["costCollectibles"] = app.EmptyFunction,
-	["collectibleAsCost"] = app.EmptyFunction,
-	["costsCount"] = app.EmptyFunction,
-	["key"] = function()
-		return "currencyID";
-	end
-};
-local BaseCostCurrency = app.BaseObjectFields(fields_BaseCostCurrency, "BaseCostCurrency");
-
-app.CreateCurrencyClass = function(id, t)
-	return setmetatable(constructor(id, t, "currencyID"), BaseCurrencyClass);
-end
--- Wraps the given Type Object as a Cost Currency, allowing altered functionality representing this being a calculable 'cost'
-app.CreateCostCurrency = function(t, total)
-	local c = app.WrapObject(setmetatable(constructor(t.currencyID, nil, "currencyID"), BaseCostCurrency), t);
-	c.count = total;
-	-- cost currency should always be visible for clarity
-	c.OnUpdate = app.AlwaysShowUpdate;
-	return c;
-end
-end)();
-
 -- Item Lib
 (function()
-
 local HarvestedItemDatabase;
 local C_Item_GetItemInventoryTypeByID = C_Item.GetItemInventoryTypeByID;
 ---@class ATTItemHarvesterForRetail: GameTooltip
@@ -10022,6 +9902,24 @@ customWindowUpdates.Sync = function(self)
 		self:BaseUpdate(true);
 	end
 end;
+
+-- Returns an Object based on a QuestID a lot of Quest information for displaying in a row
+---@return table?
+local function GetPopulatedQuestObject(questID)
+	-- cannot do anything on a missing object or questID
+	if not questID then return; end
+	-- either want to duplicate the existing data for this quest, or create new data for a missing quest
+	local questObject = CreateObject(SearchForObject("questID", questID, "field") or { questID = questID, _missing = true }, true);
+	-- if questID == 78663 then
+	-- 	local debug = app.Debugging
+	-- 	app.Debugging = true
+	-- 	app.PrintTable(questObject)
+	-- 	app.Debugging = debug
+	-- end
+	-- Try populating quest rewards
+	app.TryPopulateQuestRewards(questObject);
+	return questObject;
+end
 customWindowUpdates.list = function(self, force, got)
 	if not self.initialized then
 		self.VerifyGroupSourceID = function(data)

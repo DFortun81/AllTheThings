@@ -87,6 +87,7 @@ src\Classes\base.lua
 src\Classes\Achievement.lua
 src\Classes\BattlePet.lua
 src\Classes\CharacterClass.lua
+src\Classes\Currency.lua
 src\Classes\Difficulty.lua
 src\Classes\Factions.lua
 src\Classes\Quests.lua
