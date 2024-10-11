@@ -1497,12 +1497,12 @@ modItemId = function(itemID, modID, bonusID)
 	return i;
 end
 -- Adds the 'autoname' field with proper formatting to set the 'name' of this object automatically in Retail
--- NOTE: The base Type must support: GlobalVariant.WithAutoName as a Class Variant for the 'type' field to be recognized in the addon to generate a 'name'
+-- NOTE: The base Type must support: GlobalVariants.WithAutoName as a Class Variant for the 'autoname' field to be recognized in the addon to generate a 'name'
 -- ref. Classes/Quest.lua
 name = function(type, id, t)
 	t = t or {}
 	if t.autoname then
-		error("Cannot use name() when the contained data includes 'type' field! "..type..":"..id)
+		error("Cannot use name() when the contained data includes 'autoname' field! "..type..":"..id)
 	end
 	t.autoname = type..":"..id
 	return t
