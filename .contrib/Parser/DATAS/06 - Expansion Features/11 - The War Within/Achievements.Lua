@@ -34,7 +34,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 		ach(40723, {	-- Web-Wrapped in the Finest Silks (automated)
 			["timeline"] = { REMOVED_11_1_0 },
 			["g"] = {
-				i(226224, {	-- -- Luminous Nerubian Catalyst Stone
+				i(226224, {	-- Luminous Nerubian Catalyst Stone
 					d(DIFFICULTY.RAID.LFR, bubbleDown({ ["bonusID"] = 6894, ["modID"] = 0, }, {
 						cl(DEATHKNIGHT, {
 							i(211997),	-- Exhumed Centurion's Drape
@@ -908,5 +908,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 			},
 		}),
+	}),
+})));
+root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
+	n(ACHIEVEMENTS, {
+		q(83826),	-- Triggered when using 'Luminous Nerubian Catalyst Stone' (itemID 226224) (spellID 458517)
 	}),
 })));

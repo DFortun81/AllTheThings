@@ -132,11 +132,21 @@ end
 -- either by following the player or having player-based decisions that cause them to have any coordinates
 local MobileNPCDB = {
 	 [19644] = true,	-- Image of Archmage Vargoth
+	 [23870] = true,	-- Ember Clutch Ancient
+	 [26206] = true,	-- Keristrasza
 	 [43929] = true,	-- Blingtron 4000
+	 [52234] = true,	-- Bwemba
+	 [55497] = true,	-- Zin'Jun
+	 [67153] = true,	-- Zin'Jun
 	 [64337] = true,	-- Nomi
 	 [77789] = true,	-- Blingtron 5000
 	[101527] = true,	-- Blingtron 6000
 	[153897] = true,	-- Blingtron 7000
+	[158635] = true,	-- Xolartios <Eternal Traveler>
+	[185749] = true,	-- Gnoll Mon-Ark
+	[191494] = true,	-- Khanam Matra Sarest
+	[193985] = true,	-- Initiate Zorig
+	[209681] = true,	-- Squally
 	[221867] = true,	-- Mereldar Child
 	[221980] = true,	-- Faerin Lothar
 }

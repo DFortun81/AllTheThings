@@ -329,7 +329,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				q(29233, {	-- Warn Grom'gol
 					["qg"] = 52234,	-- Bwemba
 					["sourceQuest"] = 29232,	-- Bury Me With Me Boots...
-					--["coord"] = {},	-- can be picked up anywhere since Bwemba follows you
 					["races"] = HORDE_ONLY,
 				}),
 				q(29124, {	-- Warn the Rebel Camp

@@ -76,8 +76,14 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["u"] = REMOVED_FROM_GAME,
 				}),
 				q(31034, {	-- Enemies Below [Orgrimmar]
-					["qg"] = 14720,	-- High Overlord Saurfang
-					["coord"] = { 48.6, 71.0, ORGRIMMAR },
+					["qgs"] = {
+						14720,	-- High Overlord Saurfang
+						3144,	-- Eitrigg
+					},
+					["coords"] = {
+						{ 48.6, 71.0, ORGRIMMAR },
+						{ 14.1, 73.8, ORGRIMMAR },
+					},
 					["timeline"] = { ADDED_5_0_4 },
 					["races"] = HORDE_ONLY,
 				}),

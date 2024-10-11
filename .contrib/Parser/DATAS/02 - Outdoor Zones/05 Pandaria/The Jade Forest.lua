@@ -2064,7 +2064,7 @@ root(ROOTS.Zones, {
 							{ "n", 55497 },	-- Zin'Jun
 							{ "n", 67153 },	-- Zin'Jun
 						},
-						["coord"] = { 31.1, 17.5, THE_JADE_FOREST },	-- zin'jun follows you around, but if you abandon the quest then you can find him here
+						["coord"] = { 31.1, 17.5, THE_JADE_FOREST },	-- Zin'jun follows you around, but if you abandon the quest then you can find him here
 						["races"] = HORDE_ONLY,
 						["g"] = {
 							i(90302),	-- Armored Chestpiece of Eminent Domain

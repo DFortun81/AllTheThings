@@ -84,6 +84,7 @@ root(ROOTS.ExpansionFeatures,
 							["coords"] = {
 								{ 28.4, 39.9, LUNARFALL },
 								{ 29.2, 40.4, LUNARFALL },
+								{ 29.2, 39.0, LUNARFALL },
 							},
 							["races"] = ALLIANCE_ONLY,
 							["g"] = {

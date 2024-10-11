@@ -116,6 +116,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					["coord"] = { 39.1, 24.0, DORNOGAL },
 				}),
 			}, {	-- RENOWN 25 --
+				q(82362, {	-- For What Glimmers in Stone
+					["provider"] = { "n", 223728 },	-- Auditor Balwurz <Keeper of Renown>
+					["coord"] = { 39.1, 24.0, DORNOGAL },
+				}),
 				------ Paragon ------
 				q(79219, {	-- Renowned with the Council of Dornogal
 					["provider"] = { "n", 223728 },	-- Auditor Balwurz <Keeper of Renown>

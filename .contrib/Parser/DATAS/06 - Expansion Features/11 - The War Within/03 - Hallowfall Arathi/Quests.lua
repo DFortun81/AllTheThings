@@ -208,8 +208,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81906, {	-- Whispers from the Web
-					["provider"] = { "n", 221867 },
-					--["coord"] = {  }, NPC follows you
+					["provider"] = { "n", 221867 },	-- Mereldar Child
 				}),
 				q(81908, {	-- A Flame in the Dark
 					["sourceQuests"] = { 81906 },	-- Whispers from the Web

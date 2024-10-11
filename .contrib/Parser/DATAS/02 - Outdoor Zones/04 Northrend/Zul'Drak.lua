@@ -235,7 +235,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12647,	-- An End to the Suffering
 					}),
 					q(12713, {	-- Betrayal
-						["coord"] = { 28.4, 44.9, ZULDRAK },	-- technically, this can be done any at the Reliquary of Pain
+						["coords"] = {
+							{ 28.4, 44.9, ZULDRAK },
+							{ 14.0, 73.8, ZULDRAK },
+							{ 27.6, 53.8, ZULDRAK },
+						},
 						["qg"] = 28518,	-- Stefan Vadu
 						["sourceQuests"] = {
 							12652,	-- Feedin' Da Goolz
@@ -450,7 +454,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12912,	-- A Great Storm Approaches
 					}),
 					q(12677, {	-- Hazardous Materials
-						["coord"] = { 28.4, 44.9, ZULDRAK },	-- technically, this can be done any at the Reliquary of Pain
+						["coords"] = {
+							{ 28.4, 44.9, ZULDRAK },
+							{ 14.0, 73.8, ZULDRAK },
+							{ 27.6, 53.8, ZULDRAK },
+						},
 						["qg"] = 28518,	-- Stefan Vadu
 						["sourceQuest"] = 12669,	-- So Far, So Bad
 					}),
@@ -689,7 +697,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12649,	-- Suit Up!
 					}),
 					q(12676, {	-- Sabotage
-						["coord"] = { 28.4, 44.9, ZULDRAK },	-- technically, this can be done any at the Reliquary of Pain
+						["coords"] = {
+							{ 28.4, 44.9, ZULDRAK },
+							{ 14.0, 73.8, ZULDRAK },
+							{ 27.6, 53.8, ZULDRAK },
+						},
 						["qg"] = 28518,	-- Stefan Vadu
 						["sourceQuest"] = 12677,	-- Hazardous Materials
 						["groups"] = {
@@ -740,7 +752,11 @@ root(ROOTS.Zones, {
 					q(12793, {	-- Smoke on the Horizon -- completes along with 12763, 12770, 12789, 12792 (probably a breadcrumb)
 					}),
 					q(12669, {	-- So Far, So Bad
-						["coord"] = { 28.4, 44.9, ZULDRAK },	-- technically, this can be done any at the Reliquary of Pain
+						["coords"] = {
+							{ 28.4, 44.9, ZULDRAK },
+							{ 14.0, 73.8, ZULDRAK },
+							{ 27.6, 53.8, ZULDRAK },
+						},
 						["qg"] = 28518,	-- Stefan Vadu
 						["sourceQuest"] = 12661,	-- Infiltrating Voltarus
 						["groups"] = {
