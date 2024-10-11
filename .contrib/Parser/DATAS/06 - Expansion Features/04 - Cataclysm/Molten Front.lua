@@ -1448,7 +1448,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 						{ "i", 69855 },	-- Smoke-Stained Locket
 					},
 					["sourceQuest"] = 29310,	-- The Tipping Point
-					["maps"] = { MOONGLADE, MOUNT_HYJAL },
+					["coord"] = { 7.6, 34.6, MOUNT_HYJAL },
 					["groups"] = {
 						i(71259),	-- Leyara's Locket (TOY!)
 					},
@@ -1466,12 +1466,19 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["maps"] = { MOUNT_HYJAL },
 				}),
 				q(29310, {	-- The Tipping Point
-					["providers"] = {
-						{ "n", 11801 },	-- Rabine Saturna
-						{ "i", 69855 },	-- Smoke-Stained Locket
-					},
+					["qg"] = 11801,	-- Rabine Saturna
 					["sourceQuest"] = 29303,	-- Tragedy and Family
-					["maps"] = { MOONGLADE },
+					["coord"] = { 40.5, 53.5, ASHENVALE },
+					["maps"] = { MOUNT_HYJAL },
+					["groups"] = {
+						objective(1, {	-- Look deeper into Leyara's memories
+							["providers"] = {
+								{ "o", 208791 },	-- Small Gravestone
+								{ "i",  69855 },	-- Smoke-Stained Locket
+							},
+							["coord"] = { 7.6, 34.6, MOUNT_HYJAL },
+						}),
+					},
 				}),
 				q(29192, {	-- The Wardens are Watching
 					["qg"] = 52494,	-- Marin Bladewing
@@ -1542,6 +1549,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["qg"] = 11801,	-- Rabine Saturna
 					["sourceQuest"] = 29302,	-- Unlocking the Secrets Within
 					["coord"] = { 51.6, 44.8, MOONGLADE },
+					["maps"] = { ASHENVALE },
+					["groups"] = {
+						objective(1, {	-- Look deeper into Leyara's memories
+							["providers"] = {
+								{ "o", 208790 },	-- Night Elf Grave
+								{ "i",  69855 },	-- Smoke-Stained Locket
+							},
+							["coord"] = { 40.5, 53.5, ASHENVALE },
+						}),
+					},
 				}),
 				q(29247, {	-- Treating the Wounds
 					["qg"] = 52986,	-- Dorda'en Nightweaver
