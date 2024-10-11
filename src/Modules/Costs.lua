@@ -511,7 +511,7 @@ local function BuildCost(group)
 		sourceIgnored = true,
 		OnUpdate = app.AlwaysShowUpdate,
 		skipFill = true,
-		SortPriority = -1.5,
+		SortPriority = -2.5,
 		g = {},
 		OnClick = app.UI.OnClick.IgnoreRightClick,
 	});
@@ -563,7 +563,7 @@ local function BuildTotalCost(group)
 		icon = "Interface\\Icons\\inv_misc_coinbag_special",
 		sourceIgnored = true,
 		skipFill = true,
-		SortPriority = -1.4,
+		SortPriority = -2.4,
 		g = {},
 		OnClick = app.UI.OnClick.IgnoreRightClick,
 	});
