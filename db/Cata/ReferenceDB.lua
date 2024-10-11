@@ -11,6 +11,10 @@ _.FlightPathDB=
 		118
 	},
 }
+_.OnTooltipDB=
+{
+	["MusicRollItem"] = function(t,tooltipInfo)tinsert(tooltipInfo,{left=not(_.IsQuestFlaggedCompleted(38356)or _.IsQuestFlaggedCompleted(37961))and _.L.MUSIC_ROLLS_DESC.._.L.MUSIC_ROLLS_DESC_2 or _.L.MUSIC_ROLLS_DESC})end,
+}
 _.RaceDB=
 {
 	["Blood Elf"] = 10,

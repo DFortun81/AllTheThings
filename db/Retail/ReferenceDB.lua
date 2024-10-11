@@ -26,6 +26,11 @@ _.FlightPathDB=
 		2298
 	},
 }
+_.OnTooltipDB=
+{
+	["MusicRollItem"] = function(t,tooltipInfo)tinsert(tooltipInfo,{left=not(_.IsQuestFlaggedCompleted(38356)or _.IsQuestFlaggedCompleted(37961))and _.L.MUSIC_ROLLS_DESC.._.L.MUSIC_ROLLS_DESC_2 or _.L.MUSIC_ROLLS_DESC})end,
+	["SelfieFilter"] = function(t,tooltipInfo)tinsert(tooltipInfo,{left=_.L.SELFIE_DESC..(select(2,_.WOWAPI.GetItemInfo(122674))or"Selfie Camera MkII").._.L.SELFIE_DESC_2..(_.NPCNameFromID[t.crs[1] ]or"???").."|r"..(t.maps and(" in |cffff8000".._.GetMapName(t.maps[1]).."|r.")or".")})end,
+}
 _.RaceDB=
 {
 	["Blood Elf"] = 10,
