@@ -819,9 +819,9 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			FirstCraft(81045, 445373);	-- Whisper of Silken Speed
 			-- Reagents
 			FirstCraft(81067, 445395);	-- Concentration Concentrate
-			FirstCraft(81027, 445354);	-- Enchanted Gilded Harbinger Crest
-			FirstCraft(81020, 445347);	-- Enchanted Runed Harbinger Crest
-			FirstCraft(81071, 445399);	-- Enchanted Weathered Harbinger Crest
+			FirstCraft(81027, 445354, ADDED_11_0_2, REMOVED_11_1_0);	-- Enchanted Gilded Harbinger Crest
+			FirstCraft(81020, 445347, ADDED_11_0_2, REMOVED_11_1_0);	-- Enchanted Runed Harbinger Crest
+			FirstCraft(81071, 445399, ADDED_11_0_2, REMOVED_11_1_0);	-- Enchanted Weathered Harbinger Crest
 			FirstCraft(81043, 445371);	-- Mirror Powder
 			-- Rods and Wants
 			FirstCraft(80997, 445324);	-- Enchanted Spearwood Wand

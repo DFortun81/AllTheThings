@@ -15989,6 +15989,8 @@ L.SOURCE_NAMES = {
 	[100028] = "Honorable Combatant's Plate Waistguard",
 	[100029] = "Honorable Combatant's Plate Armguards",
 	[100030] = "Honorable Combatant's Plate Armguards",
+	[500000] = "Forged Champion's Prestigious Banner (TOY!)(PVP)",
+	[500001] = "Tempered Banner of the Algari (TOY!)(PVE)",
 }
 
 -- Supported Locales
