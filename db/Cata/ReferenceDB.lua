@@ -13,6 +13,10 @@ _.FlightPathDB=
 		118
 	},
 }
+_.OnClickDB=
+{
+	["PopoutLinkedAchievement"] = function(row,button)if button=="RightButton" and row.ref.ach then	_:CreateMiniListForGroup(row.ref.ach);return true;end	end,
+}
 _.OnTooltipDB=
 {
 	["ForAlteracValley"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation>=0 and reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill the General",389,42000);addRepInfo(tooltipInfo,reputation,"Kill a Captain",125,42000);addRepInfo(tooltipInfo,reputation,"Kill a Commander",12,42000);addRepInfo(tooltipInfo,reputation,"Kill an Air Master",5,42000);if reputation<21000 then	addRepInfo(tooltipInfo,reputation,"Kill a Guard (To Revered)",5,21000);end	end	end,
@@ -37,6 +41,22 @@ _.OnTooltipDB=
 	["TheKaluak"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	tinsert(tooltipInfo,{left="Daily Quests:"});if not t.preparing then	local f=_.SearchForField("questID",11945);if f and #f>0 then t.preparing=f[1];end	end	local AddQuestTooltipWithReputation=_.Modules.FactionData.AddQuestTooltipWithReputation;local preparingRep=AddQuestTooltipWithReputation(tooltipInfo,"%s (" .. _.GetMapName(114).. ")",t.preparing,500);if not t.puppy then	local f=_.SearchForField("questID",11960);if f and #f>0 then t.puppy=f[1];end	end	local puppyRep=AddQuestTooltipWithReputation(tooltipInfo,"%s (" .. _.GetMapName(115).. ")",t.puppy,500);if not t.heart then	local f=_.SearchForField("questID",11472);if f and #f>0 then t.heart=f[1];end	end	local heartRep=AddQuestTooltipWithReputation(tooltipInfo,"%s (" .. _.GetMapName(117).. ")",t.heart,500);_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Complete Dailies Everyday",preparingRep + puppyRep + heartRep,42000);end	end,
 	["ThoriumBrotherhood"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Turn In Blood & Cores (1x each)",500,42000);addRepInfo(tooltipInfo,reputation,"Turn In Core Leather (2x each)",350,42000);addRepInfo(tooltipInfo,reputation,"Turn In Dark Iron Ore (10x each)",75,42000);end	end,
 	["WithRequiredAchievement"] = function(t,tooltipInfo)if t.ach then tinsert(tooltipInfo,{left=_.L.REQUIRES,right=t.ach.text});end	end,
+}
+_.OnUpdateDB=
+{
+	["CRUSADER_DAILY"] = function(t)if not t.ach then	local f=_.SearchForField("achievementID",_.Faction=="Horde" and 2771 or 2817);if f and #f>0 then	for _,o in pairs(f)do	if o.key=="achievementID" then	t.ach=o;return;end	end	end	end	end,
+	["IsOnQuestVisibleOverride13697"] = function(t)if not C_QuestLog.IsOnQuest(13697)then t.visible=false;return true;end end,
+	["IsOnQuestVisibleOverride13714"] = function(t)if not C_QuestLog.IsOnQuest(13714)then t.visible=false;return true;end end,
+	["IsOnQuestVisibleOverride13715"] = function(t)if not C_QuestLog.IsOnQuest(13715)then t.visible=false;return true;end end,
+	["IsOnQuestVisibleOverride13716"] = function(t)if not C_QuestLog.IsOnQuest(13716)then t.visible=false;return true;end end,
+	["IsOnQuestVisibleOverride13717"] = function(t)if not C_QuestLog.IsOnQuest(13717)then t.visible=false;return true;end end,
+	["IsOnQuestVisibleOverride13718"] = function(t)if not C_QuestLog.IsOnQuest(13718)then t.visible=false;return true;end end,
+	["IsOnQuestVisibleOverride13719"] = function(t)if not C_QuestLog.IsOnQuest(13719)then t.visible=false;return true;end end,
+	["IsOnQuestVisibleOverride13720"] = function(t)if not C_QuestLog.IsOnQuest(13720)then t.visible=false;return true;end end,
+	["IsOnQuestVisibleOverride13721"] = function(t)if not C_QuestLog.IsOnQuest(13721)then t.visible=false;return true;end end,
+	["IsOnQuestVisibleOverride13722"] = function(t)if not C_QuestLog.IsOnQuest(13722)then t.visible=false;return true;end end,
+	["SILVER_COVENTANT_DAILY"] = function(t)if not t.ach then	local f=_.SearchForField("achievementID",3676);if f and #f>0 then	for _,o in pairs(f)do	if o.key=="achievementID" then	t.ach=o;return;end	end	end	end	end,
+	["SUNREAVERS_DAILY"] = function(t)if not t.ach then	local f=_.SearchForField("achievementID",3677);if f and #f>0 then	for _,o in pairs(f)do	if o.key=="achievementID" then	t.ach=o;return;end	end	end	end	end,
 }
 _.RaceDB=
 {
