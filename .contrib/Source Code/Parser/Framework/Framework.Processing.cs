@@ -2963,13 +2963,24 @@ namespace ATT
                 }
             }
 
-            // OnTooltip references should be stored in ExportDB.OnTooltipDB, so remove any which are not referenced
-            if (data.TryGetValue("OnTooltip", out string ontooltipRef))
+            // OnTooltip references should be stored in ExportDB.OnTooltipDB, so mark those which are referenced
+            CheckExportDataRefs(data, "OnTooltip");
+
+            // OnUpdate references should be stored in ExportDB.OnUpdateDB, so mark those which are referenced
+            CheckExportDataRefs(data, "OnUpdate");
+
+            // OnInit references should be stored in ExportDB.OnInitDB, so mark those which are referenced
+            CheckExportDataRefs(data, "OnInit");
+        }
+
+        private static void CheckExportDataRefs(IDictionary<string, object> data, string field)
+        {
+            if (data.TryGetValue(field, out string fieldRef))
             {
-                var ontooltipName = ontooltipRef.Replace("_.OnTooltipDB.", string.Empty);
-                if (!EXPORTDATA_WITH_REFERENCES.TryGetValue("OnTooltip", out List<string> names))
+                var ontooltipName = fieldRef.Replace($"_.{field}DB.", string.Empty);
+                if (!EXPORTDATA_WITH_REFERENCES.TryGetValue(field, out List<string> names))
                 {
-                    EXPORTDATA_WITH_REFERENCES["OnTooltip"] = names = new List<string>();
+                    EXPORTDATA_WITH_REFERENCES[field] = names = new List<string>();
                 }
 
                 if (!names.Contains(ontooltipName))
