@@ -1725,6 +1725,22 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = lvlsquish(120, 120, 50),
 				}),
+				q(75519, {	-- The Long Hunt
+					["sourceQuests"] = {
+						57376,	-- The Hidden Need
+						72867,	-- I Am Forsaken
+						57152,	-- Most Loyal
+					},
+					["sourceQuestNumRequired"] = 1,
+					["provider"] = { "n", 204250 },	-- Lilian Voss / Dori'thur
+					["coords"] = {
+						{ 63.0, 68.4, TIRISFAL_GLADES },
+						{ 48.6, 48.6, ORGRIMMAR },
+					},
+					["timeline"] = { ADDED_10_1_7 },
+					["races"] = HORDE_ONLY,
+					["description"] = "Probably, Undead need to complete The Hidden Need and I Am Forsaken, while non-Undead only need to complete Most Loyal. Undead are offered this quest in Undercity, while non-Undead are offered this quest in Orgrimmar.",
+				}),
 				q(2756, {	-- The Old Ways
 					["qg"] = 7792,	-- Aturk the Anvil
 					["coord"] = { 80.6, 23.2, ORGRIMMAR },
@@ -2134,22 +2150,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["races"] = HORDE_ONLY,
 					["lvl"] = 16,
 				}),
-			}),
-			q(75519, {	-- The Long Hunt
-				["sourceQuests"] = {
-					57376,	-- The Hidden Need
-					72867,	-- I Am Forsaken
-					57152,	-- Most Loyal
-				},
-				["sourceQuestNumRequired"] = 1,
-				["provider"] = { "n", 204250 },	-- Lilian Voss / Dori'thur
-				["coords"] = {
-					{ 63.0, 68.4, TIRISFAL_GLADES },
-					{ 48.6, 48.6, ORGRIMMAR },
-				},
-				["timeline"] = { ADDED_10_1_7 },
-				["races"] = HORDE_ONLY,
-				["description"] = "Probably, Undead need to complete The Hidden Need and I Am Forsaken, while non-Undead only need to complete Most Loyal. Undead are offered this quest in Undercity, while non-Undead are offered this quest in Orgrimmar.",
 			}),
 			-- #if AFTER 7.0.3.22248
 			n(RARES, {
