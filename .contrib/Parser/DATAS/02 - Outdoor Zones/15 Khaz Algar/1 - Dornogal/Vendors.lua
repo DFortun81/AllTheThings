@@ -380,14 +380,17 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					-- Season 1
 					-- Trade Down
 					i(221268, {	-- Pouch of Weathered Harbinger Crests
+						["description"] = "Cost: Normal Crest\nReceive: LFR Crest",
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 						["cost"] = {{"c", CARVED_HARBINGER_CREST, 15}},
 					}),
 					i(221373, {	-- Satchel of Carved Harbinger Crests
+						["description"] = "Cost: Heroic Crest\nReceive: Normal Crest",
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 						["cost"] = {{"c", RUNED_HARBINGER_CREST, 15}},
 					}),
 					i(221375, {	-- Pack of Runed Harbinger Crests
+						["description"] = "Cost: Mythic Crest\nReceive: Heroic Crest",
 						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
 						["cost"] = {{"c", GILDED_HARBINGER_CREST, 15}},
 					}),
