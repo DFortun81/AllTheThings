@@ -462,6 +462,21 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11029,	-- A Shabby Disguise
 						["coord"] = { 64.2, 66.9, TEROKKAR_FOREST },
 						["groups"] = {
+							objective(1, {	-- 0/1 Darkscreecher Akkarai slain
+								["provider"] = { "n", 23161 },	-- Darkscreecher Akkarai
+							}),
+							objective(2, {	-- 0/1 Karrog slain
+								["provider"] = { "n", 23165 },	-- Karrog
+							}),
+							objective(3, {	-- 0/1 Gezzarak the Huntress slain
+								["provider"] = { "n", 23163 },	-- Gezzarak the Huntress
+							}),
+							objective(4, {	-- 0/1 Vakkiz the Windrager slain
+								["providers"] = {
+									{ "n", 23162},	-- Vakkiz the Windrager
+									{ "n", 23204},	-- Vakkiz the Windrager
+								},
+							}),
 							i(32720),	-- Time-Lost Offering
 						},
 					})),
@@ -556,6 +571,17 @@ root(ROOTS.Zones, {
 						["qg"] = 23038,	-- Sky Commander Adaris
 						["sourceQuest"] = 11004,	-- World of Shadows
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
+						["groups"] = {
+							objective(1, {	-- 0/1 Talonpriest Ishaal slain
+								["provider"] = { "n", 23066 },	-- Talonpriest Ishaal
+							}),
+							objective(2, {	-- 0/1 Talonpriest Skizzik slain
+								["provider"] = { "n", 23067 },	-- Talonpriest Skizzik
+							}),
+							objective(3, {	-- 0/1 Talonpriest Zellek slain
+								["provider"] = { "n", 23068 },	-- Talonpriest Zellek
+							}),
+						},
 					})),
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, q(11074, {	-- Tokens of the Descendants
 						["qg"] = 23306,	-- Hazzik
@@ -579,6 +605,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 64.1, 66.9, TEROKKAR_FOREST },
 						["cr"] = 21838,	-- Terokk
 						["groups"] = {
+							objective(1, {	-- 0/1 Terokk slain
+								["provider"] = { "n", 21838 },	-- Terokk
+							}),
 							i(32831),	-- Jeweled Rod
 							-- #if BEFORE MOP
 							i(32832, {	-- Scout's Throwing Knives
@@ -601,12 +630,27 @@ root(ROOTS.Zones, {
 						["qg"] = 22446,	-- Commander Ra'vaj
 						["coord"] = { 31.0, 76.1, TEROKKAR_FOREST },
 						["sourceQuest"] = 10913,	-- An Improper Burial
+						["groups"] = {
+							objective(1, {	-- 0/12 Auchenai Initiate slain
+								["provider"] = { "n", 21284 },	-- Auchenai Initiate
+							}),
+							objective(2, {	-- 0/5 Auchenai Doomsayer slain
+								["provider"] = { "n", 21285 },	-- Auchenai Doomsayer
+							}),
+						},
 					}),
 					q(10112, {	-- A Personal Favor
 						["qg"] = 18484,	-- Wind Trader Lathrai
 						["coord"] = { 72.2, 30.7, SHATTRATH_CITY },
 						["sourceQuest"] = 9979,	-- Wind Trader Lathrai
 						["groups"] = {
+							objective(1, {	-- 0/5 Lathrai's Stolen Goods
+								["provider"] = { "i", 27861 },	-- Lathrai's Stolen Goods
+								["crs"] = {
+									18452,	-- Skithian Dreadhawk
+									18453,	-- Skithian Windripper
+								},
+							}),
 							i(31724),	-- Arakkoa Divining Rod
 							i(25927),	-- Consortium Cloak of the Quick
 							i(25928),	-- Ethereal Healing Pendant
@@ -627,33 +671,84 @@ root(ROOTS.Zones, {
 						["qg"] = 18383,	-- Kurgatok
 						["coord"] = { 48.8, 45.7, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/12 Warped Peon slain
+								["provider"] = { "n", 18595 },	-- Warped Peon
+							}),
+						},
 					}),
 					q(10201, {	-- And Now, the Moment of Truth
 						["qg"] = 18385,	-- Rakoria
 						["coord"] = { 50.1, 44.9, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 9993,	-- Olemba Seed Oil
+						["groups"] = {
+							objective(1, {	-- 0/1 Have Grek Test Olemba Oil
+								["provider"] = { "n", 19606 },	-- Grek
+							}),
+						},
 					}),
 					q(10868, {	-- Arakkoa War Path
 						["qg"] = 18712,	-- Advisor Faila
 						["coord"] = { 48.9, 44.6, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/14 Shienor Talonite slain
+								["provider"] = { "n", 18449 },	-- Shienor Talonite
+							}),
+							objective(2, {	-- 0/6 Shienor Sorcerer slain
+								["provider"] = { "n", 18450 },	-- Shienor Sorcerer
+							}),
+						},
 					}),
 					q(9996, {	-- Attack on Firewing Point (A)
 						["qg"] = 21006,	-- Lieutenant Meridian
 						["coord"] = { 69.6, 44.6, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 10444,	-- Report to the Allerian Post
+						["groups"] = {
+							objective(1, {	-- 0/10 Firewing Defender slain
+								["provider"] = { "n", 5355 },	-- Firewing Defender
+							}),
+							objective(2, {	-- 0/10 Firewing Bloodwarder slain
+								["provider"] = { "n", 1410 },	-- Firewing Bloodwarder
+							}),
+							objective(3, {	-- 0/10 Firewing Warlock slain
+								["provider"] = { "n", 16769 },	-- Firewing Warlock
+							}),
+						},
 					}),
 					q(9997, {	-- Attack on Firewing Point (H)
 						["qg"] = 21007,	-- Sergeant Chawni
 						["coord"] = { 63.2, 42.3, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10448,	-- Report to Stonebreaker Camp
+						["groups"] = {
+							objective(1, {	-- 0/10 Firewing Defender slain
+								["provider"] = { "n", 5355 },	-- Firewing Defender
+							}),
+							objective(2, {	-- 0/10 Firewing Bloodwarder slain
+								["provider"] = { "n", 1410 },	-- Firewing Bloodwarder
+							}),
+							objective(3, {	-- 0/10 Firewing Warlock slain
+								["provider"] = { "n", 16769 },	-- Firewing Warlock
+							}),
+						},
 					}),
 					q(10878, {	-- Before Darkness Falls -- aa
 						["qg"] = 22370,	-- Mekeda
 						["coord"] = { 37.6, 50.8, TEROKKAR_FOREST },
+						["groups"] = {
+							objective(1, {	-- 0/8 Cabal Skirmisher slain
+								["provider"] = { "n", 21661 },	-- Cabal Skirmisher
+							}),
+							objective(2, {	-- 0/4 Cabal Spell-weaver slain
+								["provider"] = { "n", 21902 },	-- Cabal Spell-weaver
+							}),
+							objective(3, {	-- 0/2 Cabal Initiate slain
+								["provider"] = { "n", 21907 },	-- Cabal Initiate
+							}),
+						},
 					}),
 					q(9978, {	-- By Any Means Necessary
 						["qg"] = 18446,	-- Earthbinder Tavgren
@@ -674,6 +769,11 @@ root(ROOTS.Zones, {
 					q(9971, {	-- Clues in the Thicket
 						["qg"] = 18446,	-- Earthbinder Tavgren
 						["coord"] = { 44.3, 26.3, TEROKKAR_FOREST },
+						["groups"] = {
+							objective(1, {	-- 0/1 Strange Object examined
+								["provider"] = { "o", 183789 },	-- Strange Object
+							}),
+						},
 					}),
 					q(10104, {	-- Concerns About Tuurem
 						["qg"] = 18008,	-- Ikuti
@@ -722,6 +822,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.0, 76.5, TEROKKAR_FOREST },
 						["sourceQuest"] = 10877,	-- The Dread Relic
 						["groups"] = {
+							objective(1, {	-- 0/1 Teribus the Cursed slain
+								["provider"] = { "n", 22441 },	-- Teribus the Cursed
+							}),
 							i(31816),	-- Dragonbone Greatsword
 							i(31817),	-- Dragonbone Shoulders
 							i(31818),	-- Dragonbone Talisman
@@ -741,17 +844,34 @@ root(ROOTS.Zones, {
 					q(10920, {	-- For the Fallen
 						["qg"] = 22462,	-- Vindicator Haylen
 						["coord"] = { 49.7, 76.1, TEROKKAR_FOREST },
+						["groups"] = {
+							objective(1, {	-- 0/20 Dreadfang Widow slain
+								["provider"] = { "n", 18467 },	-- Dreadfang Widow
+							}),
+						},
 					}),
 					q(10929, {	-- Fumping
 						["qg"] = 22481,	-- Dwarfowitz
 						["coord"] = { 30.9, 76.1, TEROKKAR_FOREST },
 						["sourceQuest"] = 10922,	-- Digging Through Bones
+						["groups"] = {
+							objective(1, {	-- 0/8 Mature Bone Sifter Carcass
+								["provider"] = { "i", 31814 },	-- Mature Bone Sifter Carcass
+								["cr"] = 22482,	-- Mature Bone Sifter
+							}),
+						},
 					}),
 					q(10031, {	-- Helping the Lost Find Their Way
 						["qg"] = 19417,	-- Ramdor the Mad
 						["coord"] = { 35.1, 66.2, TEROKKAR_FOREST },
 						["sourceQuest"] = 10030,	-- Recover the Bones
 						["groups"] = {
+							objective(1, {	-- 0/10 Lost Spirit slain
+								["provider"] = { "n", 18460 },	-- Lost Spirit
+							}),
+							objective(2, {	-- 0/10 Broken Skeleton slain
+								["provider"] = { "n", 16805 },	-- Broken Skeleton
+							}),
 							i(31725),	-- Cilice of Suffering
 							i(25951),	-- Fleet Refugee's Boots
 							i(25948),	-- Girdle of the Penitent
@@ -771,6 +891,14 @@ root(ROOTS.Zones, {
 						["qg"] = 18484,	-- Wind Trader Lathrai
 						["coord"] = { 72.2, 30.7, SHATTRATH_CITY },
 						["sourceQuest"] = 10112,	-- A Personal Favor
+						["groups"] = {
+							objective(1, {	-- 0/1 Sealed Box
+								["providers"] = {
+									{ "i", 25727 },	-- Sealed Box
+									{ "o", 182542 },	-- Sealed Box
+								},
+							}),
+						},
 					}),
 					q(9951, {	-- It's Watching You! -- aa
 						["qg"] = 18424,	-- Warden Treelos
@@ -784,6 +912,9 @@ root(ROOTS.Zones, {
 							{ 45.1, 20.8, TEROKKAR_FOREST },
 						},
 						["groups"] = {
+							objective(1, {	-- 0/1 Naphthal'ar slain
+								["provider"] = { "n", 18438 },	-- Naphthal'ar
+							}),
 							i(28026),	-- Crazy Cenarion Cloak
 							i(25542),	-- Lucky Circle of the Fool
 							i(28027),	-- Lunatic's Choker
@@ -797,6 +928,15 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 10040,	-- Who Are They? (A)
 						["groups"] = {
+							objective(1, {	-- 0/10 Shadowy Executioner slain
+								["provider"] = { "n", 16519 },	-- Shadowy Executioner
+							}),
+							objective(2, {	-- 0/10 Shadowy Summoner slain
+								["provider"] = { "n", 17088 },	-- Shadowy Summoner
+							}),
+							objective(3, {	-- 0/1 Shadowmaster Grieve slain
+								["provider"] = { "n", 18720 },	-- Shadowmaster Grieve
+							}),
 							i(25933),	-- Extra Sharp Blade
 							i(25935),	-- Invincible Stave
 							i(25934),	-- Spiked Destroyer
@@ -808,6 +948,15 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10041,	-- Who Are They?
 						["groups"] = {
+							objective(1, {	-- 0/10 Shadowy Executioner slain
+								["provider"] = { "n", 16519 },	-- Shadowy Executioner
+							}),
+							objective(2, {	-- 0/10 Shadowy Summoner slain
+								["provider"] = { "n", 17088 },	-- Shadowy Summoner
+							}),
+							objective(3, {	-- 0/1 Shadowmaster Grieve slain
+								["provider"] = { "n", 18720 },	-- Shadowmaster Grieve
+							}),
 							i(25933),	-- Extra Sharp Blade
 							i(25935),	-- Invincible Stave
 							i(25934),	-- Spiked Destroyer
@@ -845,11 +994,21 @@ root(ROOTS.Zones, {
 							9793,	-- The Fate of Tuurem
 							10104,	-- Concerns About Tuurem
 						},
+						["groups"] = {
+							objective(1, {	-- 0/10 Warp Stalker slain
+								["provider"] = { "n", 18464 },	-- Warp Stalker
+							}),
+						},
 					}),
 					q(10027, {	-- Magical Disturbances
 						["qg"] = 18383,	-- Kurgatok
 						["coord"] = { 48.8, 45.7, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/10 Warp Stalker slain
+								["provider"] = { "n", 18464 },	-- Warp Stalker
+							}),
+						},
 					}),
 					q(10852, {	-- Missing Friends
 						["qg"] = 22365,	-- Ethan
@@ -864,22 +1023,52 @@ root(ROOTS.Zones, {
 							10105,	-- News for Rakoria
 							9796,	-- News from Zangarmarsh
 						},
+						["groups"] = {
+							objective(1, {	-- 0/30 Olemba Seed
+								["providers"] = {
+									{ "i", 25745 },	-- Olemba Seed
+									{ "o", 182541 },	-- Olemba Cone
+								},
+							}),
+						},
 					}),
 					q(9992, {	-- Olemba Seeds
 						["qg"] = 18390,	-- Ros'eleth
 						["coord"] = { 57.4, 55.4, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/30 Olemba Seed
+								["providers"] = {
+									{ "i", 25745 },	-- Olemba Seed
+									{ "o", 182541 },	-- Olemba Cone
+								},
+							}),
+						},
 					}),
 					q(10023, {	-- Patriarch Ironjaw
 						["qg"] = 18384,	-- Malukaz
 						["coord"] = { 50.2, 46.4, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10018,	-- Vestments of the Wolf Spirit
+						["groups"] = {
+							objective(1, {	-- 0/1 Ironjaw's Pelt
+								["provider"] = { "i", 25837 },	-- Ironjaw's Pelt
+								["cr"] = 18670,	-- Ironjaw
+							}),
+						},
 					}),
 					q(10030, {	-- Recover the Bones
 						["qg"] = 18675,	-- Soolaveen
 						["coord"] = { 37.1, 49.5, TEROKKAR_FOREST },
 						["sourceQuest"] = 10840,	-- The Tomb of Lights
+						["groups"] = {
+							objective(1, {	-- 0/10 Restless Bones
+								["providers"] = {
+									{ "i", 25842 },	-- Restless Bones
+									{ "o", 182584 },	-- Restless Bones
+								},
+							}),
+						},
 					}),
 					q(10448, {	-- Report to Stonebreaker Camp
 						["qg"] = 18447,	-- Tooki
@@ -964,16 +1153,48 @@ root(ROOTS.Zones, {
 							39188,	-- Hero's Call: Terokkar Forest!
 							-- #endif
 						},
+						["groups"] = {
+							objective(1, {	-- 0/4 Teromoth Sample
+								["provider"] = { "i", 25672 },	-- Teromoth Sample
+								["cr"] = 18468,	-- Teromoth
+							}),
+							objective(2, {	-- 0/4 Vicious Teromoth Sample
+								["provider"] = { "i", 24279 },	-- Vicious Teromoth Sample
+								["cr"] = 18437,	-- Vicious Teromoth
+							}),
+						},
 					}),
 					q(9986, {	-- Stymying the Arakkoa (A)
 						["qg"] = 18389,	-- Thander
 						["coord"] = { 57.8, 54.2, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Ashkaz slain
+								["provider"] = { "n", 18539 },	-- Ashkaz
+							}),
+							objective(2, {	-- 0/1 Ayit slain
+								["provider"] = { "n", 18540 },	-- Ayit
+							}),
+							objective(3, {	-- 0/1 Urdak slain
+								["provider"] = { "n", 18541 },	-- Urdak
+							}),
+						},
 					}),
 					q(9987, {	-- Stymying the Arakkoa (H)
 						["qg"] = 18386,	-- Rokag
 						["coord"] = { 49.0, 44.6, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Ashkaz slain
+								["provider"] = { "n", 18539 },	-- Ashkaz
+							}),
+							objective(2, {	-- 0/1 Ayit slain
+								["provider"] = { "n", 18540 },	-- Ayit
+							}),
+							objective(3, {	-- 0/1 Urdak slain
+								["provider"] = { "n", 18541 },	-- Urdak
+							}),
+						},
 					}),
 					q(10862, {	-- Surrender to the Horde
 						["qg"] = 18386,	-- Rokag
@@ -991,6 +1212,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 49.7, 76.2, TEROKKAR_FOREST },
 						["sourceQuest"] = 10920,	-- For the Fallen
 						["groups"] = {
+							objective(1, {	-- 0/1 Terokkarantula slain
+								["provider"] = { "n", 20682 },	-- Terokkarantula
+							}),
 							i(31821),	-- Blade of Retribution
 							i(31820),	-- Blessed Signet Ring
 							i(31819),	-- Noble Plate Pauldrons
@@ -1002,6 +1226,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 30.9, 76.1, TEROKKAR_FOREST },
 						["sourceQuest"] = 10929,	-- Fumping
 						["groups"] = {
+							objective(1, {	-- 0/1 Enormous Bone Worm Organs
+								["provider"] = { "i", 31826 },	-- Enormous Bone Worm Organs
+								["cr"] = 22038,	-- Hai'shulud
+							}),
 							i(31756),	-- Dib'Muad's Crysknife
 							i(31758),	-- Revered Mother's Crysknife
 							i(31759),	-- Shani's Crysknife
@@ -1010,6 +1238,14 @@ root(ROOTS.Zones, {
 					q(10877, {	-- The Dread Relic -- aa
 						["qg"] = 22456,	-- Oakun
 						["coord"] = { 31.0, 76.5, TEROKKAR_FOREST },
+						["groups"] = {
+							objective(1, {	-- 0/1 Dread Relic
+								["providers"] = {
+									{ "i", 31697 },	-- Dread Relic
+									{ "o", 185220 },	-- Massive Treasure Chest
+								},
+							}),
+						},
 					}),
 					q(10022, {	-- The Elusive Ironjaw
 						["qg"] = 18387,	-- Bertelm
@@ -1017,6 +1253,10 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 10016,	-- Timber Worg Tails
 						["groups"] = {
+							objective(1, {	-- 0/1 Ironjaw's Pelt
+								["provider"] = { "i", 25837 },	-- Ironjaw's Pelt
+								["cr"] = 18670,	-- Ironjaw
+							}),
 							i(25974),	-- Helm of Lupine Cunning
 							i(25976),	-- Helm of Lupine Grace
 							i(25977),	-- Helm of Lupine Ferocity
@@ -1030,6 +1270,20 @@ root(ROOTS.Zones, {
 							10863,	-- Secrets of the Arakkoa
 							10908,	-- Speak with Rilak the Redeemed
 							10862,	-- Surrender to the Horde
+						},
+						["groups"] = {
+							objective(1, {	-- 0/1 Eye of Veil Reskk
+								["providers"] = {
+									{ "i", 25638 },	-- Eye of Veil Reskk
+									{ "o", 185200 },	-- Eye of Veil Reskk
+								},
+							}),
+							objective(2, {	-- 0/1 Eye of Veil Shienor
+								["providers"] = {
+									{ "i", 25642 },	-- Eye of Veil Shienor
+									{ "o", 185201 },	-- Eye of Veil Shienor
+								},
+							}),
 						},
 					}),
 					q(10915, {	-- The Fallen Exarch
@@ -1083,22 +1337,55 @@ root(ROOTS.Zones, {
 						["coord"] = { 69.6, 44.2, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9998,	-- Unruly Neighbors
+						["groups"] = {
+							objective(1, {	-- 0/1 Lisaile Fireweaver slain
+								["provider"] = { "n", 18583 },	-- Lisaile Fireweaver
+							}),
+						},
 					}),
 					q(10003, {	-- The Firewing Liaison (H)
 						["qg"] = 18566,	-- Shadowstalker Kaide
 						["coord"] = { 63.4, 42.7, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10000,	-- An Unwelcome Presence
+						["groups"] = {
+							objective(1, {	-- 0/1 Lisaile Fireweaver slain
+								["provider"] = { "n", 18583 },	-- Lisaile Fireweaver
+							}),
+						},
 					}),
 					q(10896, {	-- The Infested Protectors -- aa
 						["qg"] = 22420,	-- Lakotae
 						["coord"] = { 37.9, 51.7, TEROKKAR_FOREST },
+						["groups"] = {
+							objective(1, {	-- 0/25 Wood Mite slain
+								["provider"] = { "n", 22419 },	-- Wood Mite
+							}),
+						},
 					}),
 					q(10881, {	-- The Shadow Tomb
 						["qg"] = 22370,	-- Mekeda
 						["coord"] = { 37.6, 50.8, TEROKKAR_FOREST },
 						["sourceQuest"] = 10880,	-- Cabal Orders
 						["groups"] = {
+							objective(1, {	-- 0/1 Drape of Arunen
+								["providers"] = {
+									{ "i", 31709 },	-- Drape of Arunen
+									{ "o", 185224 },	-- Cabal Chest
+								},
+							}),
+							objective(2, {	-- 0/1 Gavel of K'alen
+								["providers"] = {
+									{ "i", 31710 },	-- Gavel of K'alen
+									{ "o", 185225 },	-- Cabal Chest
+								},
+							}),
+							objective(3, {	-- 0/1 Scroll of Atalor
+								["providers"] = {
+									{ "i", 31708 },	-- Scroll of Atalor
+									{ "o", 185226 },	-- Cabal Chest
+								},
+							}),
 							i(31730, {	-- Heirloom Signet of Convalescence
 								["timeline"] = { REMOVED_3_2_0 },
 							}),
@@ -1120,11 +1407,27 @@ root(ROOTS.Zones, {
 						["coord"] = { 37.5, 50.8, TEROKKAR_FOREST },
 						-- TODO: verify sourceQuest. I was able to pick it up without doing Missing Friends as of 8.Dec.2019. Friendly with lower city, "Sha'tari Base Camp" quests completed
 						["sourceQuest"] = 10852,	-- Missing Friends
+						["groups"] = {
+							objective(1, {	-- 0/10 Ethereal Nethermancer slain
+								["provider"] = { "n", 21370 },	-- Ethereal Nethermancer
+							}),
+							objective(2, {	-- 0/10 Ethereal Plunderer slain
+								["provider"] = { "n", 21368 },	-- Ethereal Plunderer
+							}),
+						},
 					}),
 					q(10869, {	-- Thin the Flock
 						["qg"] = 18713,	-- Lieutenant Gravelhammer
 						["coord"] = { 57.6, 55.6, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/14 Shienor Talonite slain
+								["provider"] = { "n", 18449 },	-- Shienor Talonite
+							}),
+							objective(2, {	-- 0/6 Shienor Sorcerer slain
+								["provider"] = { "n", 18450 },	-- Shienor Sorcerer
+							}),
+						},
 					}),
 					q(10007, {	-- Thinning the Ranks
 						["qg"] = 18565,	-- Theloria Shadecloak
@@ -1132,6 +1435,12 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9998,	-- Unruly Neighbors
 						["groups"] = {
+							objective(1, {	-- 0/10 Bonechewer Devastator slain
+								["provider"] = { "n", 16772 },	-- Bonechewer Devastator
+							}),
+							objective(2, {	-- 0/6 Bonechewer Backbreaker slain
+								["provider"] = { "n", 16810 },	-- Bonechewer Backbreaker
+							}),
 							i(25973),	-- Dark Augur's Wand
 							i(25972),	-- Deadeye's Piece
 							i(25971),	-- Stout Oak Longbow
@@ -1141,6 +1450,17 @@ root(ROOTS.Zones, {
 						["qg"] = 18387,	-- Bertelm
 						["races"] = ALLIANCE_ONLY,
 						["coord"] = { 58.2, 54.8, TEROKKAR_FOREST },
+						["groups"] = {
+							objective(1, {	-- 0/12 Timber Worg Tail
+								["provider"] = { "i", 25807 },	-- Timber Worg Tail
+								["crs"] = {
+									18476,	-- Timber Worg
+									18477,	-- Timber Worg Alpha
+									18670,	-- Ironjaw
+									18706,	-- Bonechewer Riding Wolf
+								},
+							}),
+						},
 					}),
 					q(10035, {	-- Torgos! (A)
 						["qg"] = 18704,	-- Taela Everstride
@@ -1148,6 +1468,10 @@ root(ROOTS.Zones, {
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 10033,	-- WANTED: Bonelashers Dead!
 						["groups"] = {
+							objective(1, {	-- 0/1 Tail Feather of Torgos
+								["provider"] = { "i", 25852 },	-- Tail Feather of Torgos
+								["cr"] = 18707,	-- Torgos
+							}),
 							i(25937),	-- Terokkar Tablet of Precision
 							i(25936),	-- Terokkar Tablet of Vim
 						},
@@ -1158,6 +1482,10 @@ root(ROOTS.Zones, {
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 10034,	-- WANTED: Bonelashers Dead!
 						["groups"] = {
+							objective(1, {	-- 0/1 Tail Feather of Torgos
+								["provider"] = { "i", 25852 },	-- Tail Feather of Torgos
+								["cr"] = 18707,	-- Torgos
+							}),
 							i(25937),	-- Terokkar Tablet of Precision
 							i(25936),	-- Terokkar Tablet of Vim
 						},
@@ -1166,12 +1494,23 @@ root(ROOTS.Zones, {
 						["qg"] = 18387,	-- Bertelm
 						["coord"] = { 58.2, 54.8, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/12 Warped Peon slain
+								["provider"] = { "n", 18595 },	-- Warped Peon
+							}),
+						},
 					}),
 					q(10861, {	-- Veil Lithic: Preemptive Strike
 						["qg"] = 22272,	-- Kirrik the Awakened
 						["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
 						["sourceQuest"] = 10848,	-- Veil Rhaze: Unliving Evil
 						["groups"] = {
+							objective(1, {	-- 0/3 Hatchlings Redeemed
+								["provider"] = { "o", 185211 },	-- Cursed Egg
+							}),
+							objective(2, {	-- 0/3 Malevolent Hatchling slain
+								["provider"] = { "n", 22337 },	-- Malevolent Hatchling
+							}),
 							i(25958),	-- Eagle Engraved Bracers
 							i(25959),	-- Feathered Armbands
 							i(25961),	-- Feathered Wrist Cuffs
@@ -1183,6 +1522,15 @@ root(ROOTS.Zones, {
 						["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
 						["sourceQuest"] = 10839,	-- Veil Skith: Darkstone of Terokk
 						["groups"] = {
+							objective(1, {	-- 0/4 Deathtalon Spirit slain
+								["provider"] = { "n", 21198 },	-- Deathtalon Spirit
+							}),
+							objective(2, {	-- 0/4 Screeching Spirit slain
+								["provider"] = { "n", 21200 },	-- Screeching Spirit
+							}),
+							objective(3, {	-- 0/2 Spirit Raven slain
+								["provider"] = { "n", 21324 },	-- Spirit Raven
+							}),
 							i(31762),	-- Feather-Wrapped Bow
 							i(31761),	-- Talonbranch Wand
 						},
@@ -1192,6 +1540,18 @@ root(ROOTS.Zones, {
 						["coord"] = { 37.6, 51.6, TEROKKAR_FOREST },
 						["sourceQuest"] = 10861,	-- Veil Lithic: Preemptive Strike
 						["groups"] = {
+							objective(1, {	-- 0/1 Sapphire Fire Extinguished
+								["provider"] = { "o", 185216 },	-- Sapphire Signal Fire
+							}),
+							objective(2, {	-- 0/1 Emerald Fire Extinguished
+								["provider"] = { "o", 185217 },	-- Emerald Signal Fire
+							}),
+							objective(3, {	-- 0/1 Violet Fire Extinguished
+								["provider"] = { "o", 185218 },	-- Violet Signal Fire
+							}),
+							objective(4, {	-- 0/1 Bloodstone Fire Extinguished
+								["provider"] = { "o", 185219 },	-- Bloodstone Signal Fire
+							}),
 							i(25966),	-- Arakkoa Sage's Shawl
 							i(25965),	-- Cloak of Grasping Talons
 							i(25963),	-- Kokorek's Signet
@@ -1208,6 +1568,9 @@ root(ROOTS.Zones, {
 						-- TODO: verify sourceQuest. I was able to pick it up without doing Missing Friends as of 8.Dec.2019. Friendly with lower city, "Sha'tari Base Camp" quests completed
 						--["sourceQuest"] = 10852,	-- Missing Friends
 						["groups"] = {
+							objective(1, {	-- 0/5 Vengeful Draenei Slain
+								["provider"] = { "n", 21636 },	-- Vengeful Draenei
+							}),
 							i(31615),	-- Ancient Draenei Arcane Relic
 							i(31617),	-- Ancient Draenei War Talisman
 						},
@@ -1217,16 +1580,39 @@ root(ROOTS.Zones, {
 						["coord"] = { 57.4, 55.4, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 9992,	-- Olemba Seeds
+						["groups"] = {
+							objective(1, {	-- 0/8 Draenei Vessel
+								["providers"] = {
+									{ "i", 25841 },	-- Draenei Vessel
+									{ "o", 182581 },	-- Draenei Vessel
+								},
+							}),
+						},
 					}),
 					q(10018, {	-- Vestments of the Wolf Spirit
 						["qg"] = 18384,	-- Malukaz
 						["coord"] = { 50.2, 46.4, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/12 Timber Worg Pelt
+								["provider"] = { "i", 25812 },	-- Timber Worg Pelt
+								["crs"] = {
+									18476,	-- Timber Worg
+									18477,	-- Timber Worg Alpha
+									18706,	-- Bonechewer Riding Wolf
+								},
+							}),
+						},
 					}),
 					q(10033, {	-- WANTED: Bonelashers Dead! (A)
 						["provider"] = { "o", 182587 },	-- Wanted Poster
 						["coord"] = { 57.6, 54.7, TEROKKAR_FOREST },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/20 Bonelasher slain
+								["provider"] = { "n", 18470 },	-- Bonelasher
+							}),
+						},
 					}),
 					q(10034, {	-- WANTED: Bonelashers Dead! (H)
 						["provider"] = { "o", 182588 },	-- Wanted Poster
@@ -1267,6 +1653,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 63.3, 42.7, TEROKKAR_FOREST },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/10 Bonechewer Devastator slain
+								["provider"] = { "n", 16772 },	-- Bonechewer Devastator
+							}),
+							objective(2, {	-- 0/6 Bonechewer Backbreaker slain
+								["provider"] = { "n", 16810 },	-- Bonechewer Backbreaker
+							}),
 							i(25973),	-- Dark Augur's Wand
 							i(25972),	-- Deadeye's Piece
 							i(25971),	-- Stout Oak Longbow
