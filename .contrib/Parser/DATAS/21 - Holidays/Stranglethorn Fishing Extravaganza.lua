@@ -102,8 +102,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 				["groups"] = {
 					i(19970),	-- Arcanite Fishing Pole
 					i(19979),	-- Hook of the Master Angler
+					-- #if AFTER 5.1.0
 					BOOTS_OF_THE_BAY,
+					i(50255, {	-- Dread Pirate Ring
+						["timeline"] = { ADDED_3_3_0, REMOVED_6_1_0 },
+					}),
 					DREAD_PIRATE_RING,
+					-- #endif
 				},
 			}),
 			q(8225, {	-- Rare Fish - Brownell's Blue Striped Racer
