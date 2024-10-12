@@ -8254,7 +8254,7 @@ customWindowUpdates.awp = function(self, force)	-- TODO: Change this to remember
 					majorVersion = patchString:sub(1, 2)  -- "10"	-- Patch 10.x.x
 					middleDigits = patchString:sub(3, 4)  -- "02"	-- Patch x.2.x
 				end
-				lastDigits = patchString:sub(-2)  -- "2"	-- Patch x.x.2 ("02")
+				lastDigits = patchString:sub(-2)  -- "02"	-- Patch x.x.2
 				formattedPatch = majorVersion .. "." .. middleDigits .. lastDigits
 				-- Add the sub-expansion to the list
 				table.insert(patchBuild, app.CreateExpansion(formattedPatch, {
@@ -8277,7 +8277,6 @@ customWindowUpdates.awp = function(self, force)	-- TODO: Change this to remember
 		};
 		self:SetData(AWPwindow);
 		self:BuildData();
-		self.ExpandInfo = { Expand = true, Manual = true };
 	end
 	if self:IsVisible() then
 		self:BaseUpdate(force);
