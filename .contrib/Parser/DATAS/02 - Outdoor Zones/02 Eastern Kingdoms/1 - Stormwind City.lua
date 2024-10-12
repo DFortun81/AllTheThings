@@ -3387,7 +3387,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["races"] = ALLIANCE_ONLY,
 				}),
 				q(27072, {	-- The Old Barracks
-					["qg"] = 50049,	-- Jack Bauden <SI:7 Agent>
+					["qg"] = 332,	-- Master Mathias Shaw <Leader of SI:7>
 					["sourceQuest"] = 28807,	-- Expert Opinion
 					["coord"] = { 81.2, 63.2, STORMWIND_CITY },
 					["timeline"] = { ADDED_4_0_3, REMOVED_7_0_3 },
