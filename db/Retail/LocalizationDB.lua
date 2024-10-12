@@ -15188,10 +15188,6 @@ L.QUEST_NAMES = {
 	[60172] = "This Quest is Temporary",
 	[60216] = "Construct Body: Mama Tomalin",
 	[60286] = "A Token of Our Admiration",
-	[60462] = "Anima Appeal",
-	[60463] = "Anima Appeal",
-	[60464] = "Anima Appeal",
-	[60465] = "Anima Appeal",
 	[60474] = "Spawn Tracking Unit-Specified World Effect in a WMO Bug",
 	[60499] = "The Light's Retribution",
 	[60559] = "Unused",
@@ -47545,6 +47541,13 @@ for key,value in pairs({
 })
 do phases[key].lore = value; end
 if GetLocale():sub(3,4):lower() == "tw" then
+localize(L.HEADER_NAMES, {
+	[-1000907] = "探究",
+	[-1001041] = "探究完成",
+});
+localize(L.HEADER_DESCRIPTIONS, {
+	[-1001041] = "包含完成探究時獎勵的東西。",
+});
 for key,value in pairs({
 	[1] = "從未實裝",
 	[2] = "已從遊戲中移除",

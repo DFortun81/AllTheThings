@@ -2,6 +2,7 @@
 using KeraLua;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -19,6 +20,8 @@ namespace ATT
 
         private static readonly List<string[]> RegexLuaReplacements = new List<string[]>
         {
+            new [] { @"\n|\r", "\t" },
+            new [] { @"\t[\t]+", "\t" },
             new [] { @";[\s]*", @";" },
             new [] { @",[\s]*", @"," },
             new [] { @"[\s]+=[\s]+", @"=" },
@@ -27,7 +30,6 @@ namespace ATT
             new [] { @"[\s]+<=[\s]+", @"<=" },
             new [] { @"[\s]+>[\s]+", @">" },
             new [] { @"[\s]+<[\s]+", @"<" },
-            new [] { @"\t[\t]+", "\t" },
             new [] { @",\}", "}" },
             new [] { @"[\s]*=[\s]*", "=" },
             new [] { @"[\s]*\{[\s]*", "{" },
@@ -484,7 +486,28 @@ namespace ATT
         /// <returns>The simplified body of the function.</returns>
         public static string SimplifyLuaBody(object value)
         {
-            string functionBody = Convert.ToString(value).Replace("\n", "\t").Replace("\r", "\t");
+            string functionBody = Convert.ToString(value);
+            // extract any verbatim strings so they are not impacted by Lua regex compression
+            Dictionary<string, string> verbatimStringReplacements = new Dictionary<string, string>();
+            const string VerbatimStringReplacment = @"""(?:[^""]|[\w\s])*""";
+            int replacementID = 1;
+            bool tryReplace = true;
+            while (tryReplace)
+            {
+                Match verbatimMatch = Regex.Match(functionBody, VerbatimStringReplacment);
+                if (verbatimMatch.Success)
+                {
+                    string verbatimReplacement = $@"[=[{replacementID}]=]";
+                    verbatimStringReplacements.Add(verbatimReplacement, verbatimMatch.Value);
+                    functionBody = functionBody.Replace(verbatimMatch.Value, verbatimReplacement);
+                    replacementID++;
+                }
+                else
+                {
+                    tryReplace = false;
+                }
+            }
+
             int functionBodyLength = functionBody.Length;
             while (true)
             {
@@ -507,6 +530,13 @@ namespace ATT
                 // Remove any sort of silly string escape used to encapsulate the function body.
                 functionBody = functionBody.Substring(1, functionBody.Length - 2);
             }
+
+            // replace the extract verbatim strings
+            foreach(var verbatimSwap in verbatimStringReplacements)
+            {
+                functionBody = functionBody.Replace(verbatimSwap.Key, verbatimSwap.Value);
+            }
+
             return functionBody;
         }
     }
