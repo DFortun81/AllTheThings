@@ -2971,6 +2971,9 @@ namespace ATT
 
             // OnInit references should be stored in ExportDB.OnInitDB, so mark those which are referenced
             CheckExportDataRefs(data, "OnInit");
+
+            // OnInit references should be stored in ExportDB.OnClickDB, so mark those which are referenced
+            CheckExportDataRefs(data, "OnClick");
         }
 
         private static void CheckExportDataRefs(IDictionary<string, object> data, string field)

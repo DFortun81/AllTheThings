@@ -3507,6 +3507,16 @@ namespace ATT
                                 }
                             }
                             break;
+                        case "OnClickDB":
+                            {
+                                if (EXPORTDATA_WITH_REFERENCES.TryGetValue("OnClick", out List<string> names))
+                                {
+                                    Dictionary<string, object> exports = exportDB.Value as Dictionary<string, object>;
+                                    CleanupExportDictionaryValue(exports, names);
+                                    referenceDB.Append(ExportPureLua(exports).Insert(0, $"_.{exportDB.Key}=\n").ToString()).AppendLine();
+                                }
+                            }
+                            break;
                         default:
                             {
                                 if (exportDB.Value is Dictionary<string, object> exports)
