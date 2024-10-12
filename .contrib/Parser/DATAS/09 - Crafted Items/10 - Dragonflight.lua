@@ -1606,6 +1606,28 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			i(191472),	-- Writhebark+++
 		}),
 		n(DISCOVERY, {
+			header(HEADERS.Map, EMERALD_DREAM, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0 }, }, {
+				["g"] = sharedData({
+					["maps"] = { EMERALD_DREAM }
+				},{
+					r(422293),	-- Overload Overgrown Herb
+					r(421176),	-- Overgrown Bubble Poppy
+					r(421224),	-- Overgrown Hochenblume
+					r(421226),	-- Overgrown Saxifrage
+					r(421227),	-- Overgrown Writhebark
+				}),
+			})),
+			header(HEADERS.Map, ZARALEK_CAVERN, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0 }, }, {
+				["g"] = sharedData({
+					["maps"] = { ZARALEK_CAVERN }
+				},{
+					r(405124),	-- Lambent Bubble Poppy
+					r(405123),	-- Lambent Hochenblume
+					r(405126),	-- Lambent Saxifrage
+					r(405127),	-- Lambent Writhebark
+					r(405134),	-- Overload Lambent Herb
+				}),
+			})),
 			r(391444),	-- Bubble Poppy
 			r(391507),	-- Decayed Bubble Poppy
 			r(391492),	-- Decayed Hochenblume
@@ -1619,27 +1641,13 @@ root(ROOTS.Craftables, expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = {
 			r(391498),	-- Infurious Hochenblume
 			r(391499),	-- Infurious Saxifrage
 			r(391506),	-- Infurious Writhebark
-			header(HEADERS.Map, ZARALEK_CAVERN, {
-				r(405124, {["timeline"] = {ADDED_10_1_0},["maps"]={ZARALEK_CAVERN}}),	-- Lambent Bubble Poppy
-				r(405123, {["timeline"] = {ADDED_10_1_0},["maps"]={ZARALEK_CAVERN}}),	-- Lambent Hochenblume
-				r(405126, {["timeline"] = {ADDED_10_1_0},["maps"]={ZARALEK_CAVERN}}),	-- Lambent Saxifrage
-				r(405127, {["timeline"] = {ADDED_10_1_0},["maps"]={ZARALEK_CAVERN}}),	-- Lambent Writhebark
-			}),
 			r(391511),	-- Lush Bubble Poppy
 			r(391415),	-- Lush Hochenblume
 			r(391502),	-- Lush Saxifrage
 			r(391512),	-- Lush Writhebark
-			header(HEADERS.Map, EMERALD_DREAM, {
-				r(421176, {["timeline"] = {ADDED_10_2_0},["maps"]={EMERALD_DREAM}}),	-- Overgrown Bubble Poppy
-				r(421224, {["timeline"] = {ADDED_10_2_0},["maps"]={EMERALD_DREAM}}),	-- Overgrown Hochenblume
-				r(421226, {["timeline"] = {ADDED_10_2_0},["maps"]={EMERALD_DREAM}}),	-- Overgrown Saxifrage
-				r(421227, {["timeline"] = {ADDED_10_2_0},["maps"]={EMERALD_DREAM}}),	-- Overgrown Writhebark
-			}),
 			r(391564),	-- Overload Decayed Herb
 			r(391562),	-- Overload Frigid Herb
 			r(391558),	-- Overload Infurious Herb
-			r(405134, {["timeline"] = {ADDED_10_1_0}}),	-- Overload Lambent Herb
-			r(422293, {["timeline"] = {ADDED_10_2_0}}),	-- Overload Overgrown Herb
 			r(391557),	-- Overload Titan-Touched Herb
 			r(391560),	-- Overload Windswept Herb
 			r(391441),	-- Saxifrage
