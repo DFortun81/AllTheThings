@@ -282,6 +282,13 @@ root(ROOTS.Zones, {
 						["coord"] = { 22.0, 65.1, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/6 Grizzly Hide
+								["provider"] = { "i", 37020 },	-- Grizzly Hide
+								["crs"] = {
+									26644,	-- Ursus Mauler
+									27131,	-- Grizzly Bear
+								},
+							}),
 							i(39034),	-- Bearskin Helm
 							i(39099),	-- Carapace of the Fallen
 							i(39064),	-- Hide-Lined Chestguard
@@ -303,6 +310,16 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.1, 59.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/8 Crazed Furbolg Blood
+								["provider"] = { "i", 37251 },	-- Crazed Furbolg Blood
+								["crs"] = {
+									26356,	-- Redfang Hunter
+									26357,	-- Frostpaw Warrior
+									26428,	-- Frostpaw Shaman
+									26434,	-- Frostpaw Trapper
+									26436,	-- Redfang Elder
+								},
+							}),
 							i(39091),	-- Blood-Spattered Spaulders
 							i(39053),	-- Helm of the Furbolg Purifier
 							i(38726),	-- Instigator's Gloves
@@ -318,6 +335,16 @@ root(ROOTS.Zones, {
 						["coord"] = { 22.5, 62.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/8 Crazed Furbolg Blood
+								["provider"] = { "i", 37251 },	-- Crazed Furbolg Blood
+								["crs"] = {
+									26356,	-- Redfang Hunter
+									26357,	-- Frostpaw Warrior
+									26428,	-- Frostpaw Shaman
+									26434,	-- Frostpaw Trapper
+									26436,	-- Redfang Elder
+								},
+							}),
 							i(39091),	-- Blood-Spattered Spaulders
 							i(39053),	-- Helm of the Furbolg Purifier
 							i(38726),	-- Instigator's Gloves
@@ -329,6 +356,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12468,	-- The Conqueror's Task
 						["coord"] = { 21.0, 64.0, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/12 Dragonflayer Huscarl slain
+								["provider"] = { "n", 27260 },	-- Dragonflayer Huscarl
+							}),
+						},
 					}),
 					q(12411, {	-- A Sister's Pledge
 						["qg"] = 26935,	-- Sasha
@@ -340,6 +372,14 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12308,	-- Escape from Silverbrook
 						["coord"] = { 31.8, 60.1, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/7 Silverbrook Hunter slain
+								["provider"] = { "n", 27546 },	-- Silverbrook Hunter
+							}),
+							objective(2, {	-- 0/1 Vladek slain
+								["provider"] = { "n", 27547 },	-- Vladek
+							}),
+						},
 					}),
 					q(12294, {	-- A Tentative Pact
 						["qg"] = 27469,	-- Ivan
@@ -399,6 +439,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 20.6, 64.1, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/8 Silverbrook Defender slain
+								["provider"] = { "n", 27676 },	-- Silverbrook Defender
+							}),
 							i(39031),	-- Boots of Internal Strife
 							i(38733),	-- Raiment of the Caged Beast
 							i(39097),	-- Sabatons of Crushed Humanity
@@ -445,6 +488,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 65.1, 47.2, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/1 Iron Thane Furyhammer slain
+								["provider"] = { "n", 26405 },	-- Iron Thane Furyhammer
+							}),
 							i(39015),	-- Crackpot Spaulders
 							i(39076),	-- Golem-Rider's Greaves
 							i(38711),	-- Grounded Gloves
@@ -456,6 +502,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11998,	-- Softening the Blow
 						["coord"] = { 59.8, 27.5, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/10 Runic Battle Golem slain
+								["provider"] = { "n", 26284 },	-- Runic Battle Golem
+							}),
+						},
 					}),
 					q(12128, {	-- Check Up on Raegar
 						["qg"] = 26226,	-- Brugar Stoneshear
@@ -476,6 +527,20 @@ root(ROOTS.Zones, {
 						["qg"] = 26924,	-- Gan'jo
 						["sourceQuest"] = 12121,	-- See You on the Other Side
 						["coord"] = { 69.4, 19.4, GRIZZLY_HILLS },
+						["groups"] = {
+							objective(1, {	-- 0/1 Snow of Eternal Slumber
+								["providers"] = {
+									{ "i", 36859 },	-- Snow of Eternal Slumber
+									{ "o", 188518 },	-- Gan'jo's Chest
+								},
+							}),
+							objective(2, {	-- 0/5 Drakkari Spirit Particles
+								["providers"] = {
+									{ "i", 36868 },	-- Drakkari Spirit Particles
+									{ "o", 188525 },	-- Drakkari Spirit Particles
+								},
+							}),
+						},
 					}),
 					q(12293, {	-- Close the Deal
 						["qg"] = 26875,	-- Lieutenant Dumont
@@ -511,6 +576,12 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12026,	-- The Damaged Journal
 						["coord"] = { 65.2, 47.7, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Spiritsbreath
+								["provider"] = { "i", 36740 },	-- Spiritsbreath
+								["cr"] = 26681,	-- Grumbald One-Eye
+							}),
+						},
 					}),
 					q(12178, {	-- Delivery to Krenna
 						["qg"] = 27037,	-- Hidetrader Jun'ik
@@ -565,6 +636,10 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12116,	-- It Takes Guts...
 						["coord"] = { 73.9, 34.1, GRIZZLY_HILLS },
 						["groups"] = {
+							objective(1, {	-- 0/1 Drakil'jin Mallet
+								["provider"] = { "i", 36826 },	-- Drakil'jin Mallet
+								["cr"] = 26919,	-- Drak'aguul
+							}),
 							i(38730),	-- Bell-Ringer's Shoulderpads
 							i(39095),	-- Hammer-Holder's Gauntlets
 							i(39057),	-- Polished Staghorn Helm
@@ -586,6 +661,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12215,	-- Them or Us!
 						["coord"] = { 32.0, 59.9, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/5 Imperial Eagle slain
+								["provider"] = { "n", 26369 },	-- Imperial Eagle
+							}),
+						},
 					}),
 					q(12308, {	-- Escape from Silverbrook
 						["qg"] = 27499,	-- Caged Prisoner
@@ -654,6 +734,16 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12165,	-- An Intriguing Plan
 						["coord"] = { 65.1, 47.2, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/8 War Golem Part
+								["providers"] = {
+									{ "i", 36852 },	-- War Golem Part
+									{ "o", 188501 },	-- War Golem Part
+									{ "o", 188502 },	-- War Golem Part
+									{ "o", 188503 },	-- War Golem Part
+								},
+							}),
+						},
 					}),
 					q(12081, {	-- Gavrock
 						["qg"] = 26260,	-- Kurun
@@ -678,6 +768,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 22.0, 65.1, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/3 Gray Worg Hide
+								["provider"] = { "i", 37010 },	-- Gray Worg Hide
+								["cr"] = 26592,	-- Graymist Hunter
+							}),
 							i(38734),	-- Abandoned Hood
 							i(39033),	-- Discarded Miner's Jerkin
 							i(39060),	-- Patched Trapper Pauldrons
@@ -710,6 +804,18 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12411,	-- A Sister's Pledge
 						["coord"] = { 57.5, 41.3, GRIZZLY_HILLS },
 						["groups"] = {
+							objective(1, {	-- 0/1 Varlam slain
+								["provider"] = { "n", 27579 },	-- Varlam
+							}),
+							objective(2, {	-- 0/1 Selas slain
+								["provider"] = { "n", 27580 },	-- Selas
+							}),
+							objective(3, {	-- 0/1 Goremaw slain
+								["provider"] = { "n", 27578 },	-- Goremaw
+							}),
+							objective(4, {	-- 0/1 Shade of Arugal defeated
+								["provider"] = { "n", 27018 },	-- Shade of Arugal
+							}),
 							i(39172),	-- Bone-Polished Iceplate Shoulders
 							i(39171),	-- Fangsever Shoulderguards
 							i(39170),	-- Furred Worgslayer Spaulders
@@ -722,12 +828,23 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12099,	-- Free at Last -- TODO: verify
 						["coord"] = { 65.1, 47.6, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Hugh Glass Questioned
+								["provider"] = { "n", 26484 },	-- Hugh Glass
+							}),
+							objective(2, {	-- 0/1 Gavrock Questioned
+								["provider"] = { "n", 26420 },	-- Gavrock
+							}),
+						},
 					}),
 					q(11985, {	-- Into the Breach
 						["qg"] = 26260,	-- Kurun
 						["sourceQuest"] = 12070,	-- Rallying the Troops
 						["coord"] = { 65.7, 17.7, GRIZZLY_HILLS },
 						["groups"] = {
+							objective(1, {	-- 0/1 Iron Thane Argrum slain
+								["provider"] = { "n", 26348 },	-- Iron Thane Argrum
+							}),
 							i(39048),	-- Flame-Tested Chestguard
 							i(38715),	-- Forge-Scarred Sandals
 							i(39080),	-- Grips of Flawed Temper
@@ -737,12 +854,23 @@ root(ROOTS.Zones, {
 					q(12116, {	-- It Takes Guts....
 						["qg"] = 26886,	-- Kraz
 						["coord"] = { 73.9, 34.1, GRIZZLY_HILLS },
+						["groups"] = {
+							objective(1, {	-- 0/5 Drakkari Canopic Jar
+								["providers"] = {
+									{ "i", 36825 },	-- Drakkari Canopic Jar
+									{ "o", 188499 },	-- Drakkari Canopic Jar
+								},
+							}),
+						},
 					}),
 					q(12152, {	-- Jin'arrak's End
 						["qg"] = 26886,	-- Kraz
 						["sourceQuest"] = 12137,	-- Chill Out, Mon
 						["coord"] = { 73.9, 34.1, GRIZZLY_HILLS },
 						["groups"] = {
+							objective(1, {	-- 0/1 Warlord Jin'arrak Destroyed
+								["provider"] = { "n", 27199 },	-- Warlord Jin'arrak
+							}),
 							i(39114),	-- Axe of the Warlord's Demise
 							i(39125),	-- Beaked Dagger
 							i(39124),	-- Branch of Insightful Dreams
@@ -762,6 +890,14 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12225,	-- Mmm... Amberseeds!
 						["coord"] = { 32.0, 59.9, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/5 Blackroot Stalk
+								["providers"] = {
+									{ "i", 37246 },	-- Blackroot Stalk
+									{ "o", 188670 },	-- Blackroot
+								},
+							}),
+						},
 					}),
 					pvp(q(12284, {	-- Keep 'Em on Their Heels
 						["qg"] = 27451,	-- Commander Bargok
@@ -822,6 +958,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.8, 60.1, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/1 Cedar Chest
+								["providers"] = {
+									{ "i", 37572 },	-- Cedar Chest
+									{ "o", 189298 },	-- Cedar Chest
+								},
+							}),
 							i(38732),	-- Bramble-Proof Leggings
 							i(38759),	-- Injured Trapper's Cloak
 							i(39058),	-- Legguards of Swift Pursuit
@@ -840,6 +982,12 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12180,	-- The Captive Prospectors
 						["coord"] = { 76.9, 48.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Overseer's Uniform
+								["provider"] = { "i", 37035 },	-- Overseer's Uniform
+								["cr"] = 27177,	-- Iron Rune Overseer
+							}),
+						},
 					}),
 					pvp(q(12280, {	-- Making Repairs
 						["qg"] = 27422,	-- Lurz
@@ -885,6 +1033,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 20.7, 64.1, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/8 Silverbrook Hunter slain
+								["provider"] = { "n", 27546 },	-- Silverbrook Hunter
+							}),
+							objective(2, {	-- 0/1 Vladek slain
+								["provider"] = { "n", 27547 },	-- Vladek
+							}),
 							i(38732),	-- Bramble-Proof Leggings
 							i(38759),	-- Injured Trapper's Cloak
 							i(39058),	-- Legguards of Swift Pursuit
@@ -900,6 +1054,16 @@ root(ROOTS.Zones, {
 					q(12113, {	-- Nice to Meat You
 						["qg"] = 26884,	-- Harkor
 						["coord"] = { 73.7, 34.0, GRIZZLY_HILLS },
+						["groups"] = {
+							objective(1, {	-- 0/10 Fibrous Worg Meat
+								["provider"] = { "i", 36819 },	-- Fibrous Worg Meat
+								["cr"] = 27408,	-- Duskhowl Prowler
+							}),
+							objective(2, {	-- 0/10 Shovelhorn Steak
+								["provider"] = { "i", 36875 },	-- Shovelhorn Steak
+								["cr"] = 26418,	-- Longhoof Grazer
+							}),
+						},
 					}),
 					q(12299, {	-- Northern Hospitality
 						["qg"] = 27486,	-- Sergei
@@ -907,6 +1071,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 26.4, 35.7, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/8 Conquest Hold Marauder slain
+								["provider"] = { "n", 27424 },	-- Conquest Hold Marauder
+							}),
 							i(38762),	-- Insignia of Bloody Fire
 							i(38760),	-- Mendicant's Charm
 							i(38761),	-- Talon of Hatred
@@ -941,6 +1108,14 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12054,	-- Deciphering the Journal
 						["coord"] = { 65.1, 47.6, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/10 Iron Dwarf Defenders Killed
+								["providers"] = {
+									{ "n", 26270},	-- Iron Rune-Shaper
+									{ "n", 26268},	-- Rune Reaver
+								},
+							}),
+						},
 					}),
 					q(12185, {	-- Put on Your Best Face for Loken
 						["qg"] = 26885,	-- Mountaineer Kilian
@@ -978,6 +1153,12 @@ root(ROOTS.Zones, {
 						["qg"] = 27277,	-- Master Woodsman Anderhol
 						["coord"] = { 32.0, 59.9, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/8 Succulent Venison
+								["provider"] = { "i", 37185 },	-- Succulent Venison
+								["cr"] = 26363,	-- Tallhorn Stag
+							}),
+						},
 					}),
 					q(12109, {	-- Report to Gryan Stoutmantle... Again
 						["qg"] = 26875,	-- Lieutenant Dumont
@@ -1002,6 +1183,20 @@ root(ROOTS.Zones, {
 						["qg"] = 26420,	-- Gavrock
 						["sourceQuest"] = 12081,	-- Gavrock
 						["coord"] = { 79.7, 33.6, GRIZZLY_HILLS },
+						["groups"] = {
+							objective(1, {	-- 0/1 Overseer Durval slain
+								["provider"] = { "n", 26920 },	-- Overseer Durval
+							}),
+							objective(2, {	-- 0/1 Overseer Korgan slain
+								["provider"] = { "n", 26921 },	-- Overseer Korgan
+							}),
+							objective(3, {	-- 0/1 Overseer Lochli slain
+								["provider"] = { "n", 26922 },	-- Overseer Lochli
+							}),
+							objective(4, {	-- 0/1 Overseer Brunon slain
+								["provider"] = { "n", 26923 },	-- Overseer Brunon
+							}),
+						},
 					}),
 					q(12161, {	-- Ruuna the Blind (A)
 						["qg"] = 27582,	-- Private Arun
@@ -1023,6 +1218,10 @@ root(ROOTS.Zones, {
 						},
 						["coord"] = { 44.0, 47.9, GRIZZLY_HILLS },
 						["groups"] = {
+							objective(1, {	-- 0/4 Gossamer Dust
+								["provider"] = { "i", 37662 },	-- Gossamer Dust
+								["cr"] = 27421,	-- Fern Feeder Moth
+							}),
 							i(38727),	-- Foreseer's Girdle
 							i(39054),	-- Gossamer-Stained Grips
 							i(39026),	-- Pauldrons of the Prophet
@@ -1039,6 +1238,9 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12329,	-- Fate and Coincidence
 						["coord"] = { 57.5, 41.2, GRIZZLY_HILLS },
 						["groups"] = {
+							objective(1, {	-- 0/12 Solstice Hunter slain
+								["provider"] = { "n", 26389 },	-- Solstice Hunter
+							}),
 							i(39011),	-- Bloody Bulwark
 							i(38755),	-- Scepter of Passionate Reprisal
 							i(39110),	-- Staff of Righteous Vengeance
@@ -1116,6 +1318,27 @@ root(ROOTS.Zones, {
 						["qg"] = 26519,	-- Prigmon
 						["sourceQuest"] = 12484,	-- Scourgekabob
 						["coord"] = { 15.7, 46.6, GRIZZLY_HILLS },
+						["groups"] = {
+							objective(1, {	-- 0/5 Ice Serpent Eye
+								["provider"] = { "i", 35798 },	-- Ice Serpent Eye
+								["crs"] = {
+									26446,	-- Ice Serpent
+									29693,	-- Serpent Defender
+								},
+							}),
+							objective(2, {	-- 0/5 Shimmering Snowcap
+								["providers"] = {
+									{ "i", 35782 },	-- Shimmering Snowcap
+									{ "o", 188345 },	-- Shimmering Snowcaps
+								},
+							}),
+							objective(3, {	-- 0/5 Sweetroot
+								["providers"] = {
+									{ "i", 37087 },	-- Sweetroot
+									{ "o", 188601 },	-- Sweetroot
+								},
+							}),
+						},
 					}),
 					pvp(q(12270, {	-- Shred the Alliance
 						["qg"] = 27423,	-- Grekk
@@ -1175,9 +1398,29 @@ root(ROOTS.Zones, {
 						["coord"] = { 67.4, 15.2, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/1 Thor Modan Stability Profile
+								["providers"] = {
+									{ "i", 35819 },	-- Thor Modan Stability Profile
+									{ "o", 188367 },	-- Portable Seismograph
+								},
+							}),
+							objective(2, {	-- 0/1 Portable Seismograph
+								["provider"] = { "i", 35837 },	-- Portable Seismograph
+								["cr"] = 26522,	-- Subterranean Thresher
+							}),
 							i(35837),	-- Portable Seismograph (QI!)
 							o(188367, {	-- Portable Seismograph
 								["groups"] = {
+							objective(1, {	-- 0/1 Thor Modan Stability Profile
+								["providers"] = {
+									{ "i", 35819 },	-- Thor Modan Stability Profile
+									{ "o", 188367 },	-- Portable Seismograph
+								},
+							}),
+							objective(2, {	-- 0/1 Portable Seismograph
+								["provider"] = { "i", 35837 },	-- Portable Seismograph
+								["cr"] = 26522,	-- Subterranean Thresher
+							}),
 									i(35819),	-- Thor Modan Stability Profile (QI!)
 								},
 							}),
@@ -1202,6 +1445,12 @@ root(ROOTS.Zones, {
 						["qg"] = 26868,	-- Provisioner Lorkran
 						["coord"] = { 22.6, 66.1, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/5 Succulent Venison
+								["provider"] = { "i", 37185 },	-- Succulent Venison
+								["cr"] = 26363,	-- Tallhorn Stag
+							}),
+						},
 					}),
 					q(12422, {	-- Tactical Clemency
 						["qg"] = 27102,	-- Gorgonna
@@ -1214,6 +1463,15 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12212,	-- Replenishing the Storehouse
 						["coord"] = { 32.0, 59.9, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/8 Grizzly Flank
+								["provider"] = { "i", 37200 },	-- Grizzly Flank
+								["crs"] = {
+									26644,	-- Ursus Mauler
+									27131,	-- Grizzly Bear
+								},
+							}),
+						},
 					}),
 					q(12300, {	-- Test of Mettle
 						["qg"] = 27486,	-- Sergei
@@ -1320,6 +1578,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.1, 59.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/6 Slime Sample
+								["provider"] = { "i", 37199 },	-- Slime Sample
+								["cr"] = 26366,	-- Entropic Ooze
+							}),
 							i(39052),	-- Acid-Resistant Hauberk
 							i(39090),	-- Chestplate of Untimely Rewards
 							i(38719),	-- Robe of Expurgation
@@ -1331,6 +1593,12 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12468,	-- The Conqueror's Task
 						["coord"] = { 21.0, 64.0, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/3 Flame-Imbued Talisman
+								["provider"] = { "i", 37229 },	-- Flame-Imbued Talisman
+								["cr"] = 27259,	-- Dragonflayer Flamebinder
+							}),
+						},
 					}),
 					q(12511, {	-- The Hills Have Us
 						["qg"] = 27317,	-- Gryphon Commander Urik
@@ -1352,6 +1620,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/1 Iron Thane Furyhammer slain
+								["provider"] = { "n", 26405 },	-- Iron Thane Furyhammer
+							}),
 							i(36865),	-- Golem Control Unit (QI!)
 							i(39015),	-- Crackpot Spaulders
 							i(39076),	-- Golem-Rider's Greaves
@@ -1364,6 +1635,12 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12204,	-- in the Name of Loken
 						["coord"] = { 65.1, 47.6, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Overseer's Uniform
+								["provider"] = { "i", 37035 },	-- Overseer's Uniform
+								["cr"] = 27177,	-- Iron Rune Overseer
+							}),
+						},
 					}),
 					q(12129, {	-- The Perfect Plan
 						["qg"] = 26883,	-- Raegar Breakbrow
@@ -1382,6 +1659,16 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 11986,	-- The Damaged Journal
 						["coord"] = { 59.7, 27.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/5 Runic Keystone Fragment
+								["provider"] = { "i", 35747 },	-- Runic Keystone Fragment
+								["crs"] = {
+									26268,	-- Rune Reaver
+									26270,	-- Iron Rune-Shaper
+									26334,	-- Forgemaster Damrath
+								},
+							}),
+						},
 					}),
 					q(11993, {	-- The Runic Prophecies (A)
 						["qg"] = 26361,	-- Torthen Deepdig
@@ -1389,6 +1676,15 @@ root(ROOTS.Zones, {
 						["coord"] = { 59.7, 27.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/1 First Prophecy Deciphered
+								["provider"] = { "o", 188264 },	-- First Rune Plate
+							}),
+							objective(2, {	-- 0/1 Second Prophecy Deciphered
+								["provider"] = { "o", 188288 },	-- Second Rune Plate
+							}),
+							objective(3, {	-- 0/1 Third Prophecy Deciphered
+								["provider"] = { "o", 188289 },	-- Third Rune Plate
+							}),
 							i(39013),	-- Discoverer's Mitts
 							i(39043),	-- Trailbreaker's Spaulders
 							i(38710),	-- Wayfinder's Bracers
@@ -1401,6 +1697,15 @@ root(ROOTS.Zones, {
 						["coord"] = { 65.1, 47.7, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/1 First Prophecy Deciphered
+								["provider"] = { "o", 188264 },	-- First Rune Plate
+							}),
+							objective(2, {	-- 0/1 Second Prophecy Deciphered
+								["provider"] = { "o", 188288 },	-- Second Rune Plate
+							}),
+							objective(3, {	-- 0/1 Third Prophecy Deciphered
+								["provider"] = { "o", 188289 },	-- Third Rune Plate
+							}),
 							i(39013),	-- Discoverer's Mitts
 							i(39043),	-- Trailbreaker's Spaulders
 							i(38710),	-- Wayfinder's Bracers
@@ -1416,6 +1721,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 32.4, 59.9, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/1 Thane Torvald Eriksson slain
+								["provider"] = { "n", 27377 },	-- Thane Torvald Eriksson
+							}),
 							i(38712),	-- Headbinder's Crown
 							i(39045),	-- Legguards of Refuted Feudalism
 							i(39077),	-- Skull-Reshaper's Helm
@@ -1432,6 +1740,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 21.0, 64.0, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/1 Thane Torvald Eriksson slain
+								["provider"] = { "n", 27377 },	-- Thane Torvald Eriksson
+							}),
 							i(38712),	-- Headbinder's Crown
 							i(39045),	-- Legguards of Refuted Feudalism
 							i(39077),	-- Skull-Reshaper's Helm
@@ -1443,16 +1754,33 @@ root(ROOTS.Zones, {
 						["qg"] = 27221,	-- Tormak the Scarred
 						["coord"] = { 65.2, 47.5, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/5 Mature Stag Horn
+								["provider"] = { "i", 37104 },	-- Mature Stag Horn
+								["cr"] = 27230,	-- Silvercoat Stag
+							}),
+						},
 					}),
 					q(12215, {	-- Them or Us!
 						["qg"] = 27277,	-- Master Woodsman Anderhol
 						["coord"] = { 32.0, 59.9, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/6 Graymist Hunter slain
+								["provider"] = { "n", 26592 },	-- Graymist Hunter
+							}),
+						},
 					}),
 					q(12114, {	-- Therapy
 						["qg"] = 26884,	-- Harkor
 						["coord"] = { 73.7, 34.0, GRIZZLY_HILLS },
 						["groups"] = {
+							objective(1, {	-- 0/10 Drakkari Protector slain
+								["provider"] = { "n", 26797 },	-- Drakkari Protector
+							}),
+							objective(2, {	-- 0/10 Drakkari Oracle slain
+								["provider"] = { "n", 26795 },	-- Drakkari Oracle
+							}),
 							i(39093),	-- Chestguard of Expressed Fury
 							i(39055),	-- Handguards of Extermination
 							i(38728),	-- Kilt of Peaceful Reclamation
@@ -1465,6 +1793,11 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12294,	-- A Tentative Pact
 						["coord"] = { 32.4, 59.9, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/12 Dragonflayer Huscarl slain
+								["provider"] = { "n", 27260 },	-- Dragonflayer Huscarl
+							}),
+						},
 					}),
 					q(12210, {	-- Troll Season!
 						["qg"] = 26875,	-- Lieutenant Dumont
@@ -1521,12 +1854,32 @@ root(ROOTS.Zones, {
 						["qg"] = 26423,	-- Drakuru
 						["sourceQuest"] = 11989,	-- Truce?
 						["coord"] = { 16.4, 47.8, GRIZZLY_HILLS },
+						["groups"] = {
+							objective(1, {	-- 0/3 Haze Leaf
+								["providers"] = {
+									{ "i", 37085 },	-- Haze Leaf
+									{ "o", 188600 },	-- Hazewood Bush
+								},
+							}),
+							objective(2, {	-- 0/1 Waterweed Frond
+								["providers"] = {
+									{ "i", 35795 },	-- Waterweed Frond
+									{ "o", 188351 },	-- Waterweed
+								},
+							}),
+						},
 					}),
 					q(12068, {	-- Voices From the Dust
 						["qg"] = 26701,	-- Image of Drakuru
 						["sourceQuest"] = 12802,	-- My Heart is in Your Hands
 						["coord"] = { 44.9, 28.3, GRIZZLY_HILLS },
 						["groups"] = {
+							objective(1, {	-- 0/1 Drakkari Tablets
+								["providers"] = {
+									{ "i", 36757 },	-- Drakkari Tablets
+									{ "o", 188461 },	-- Drakkari Tablets
+								},
+							}),
 							i(39022),	-- Helm of Rising Smoke
 							i(39051),	-- Plane-Shifted Boots
 							i(39089),	-- Spiritforged Legguards
@@ -1540,6 +1893,10 @@ root(ROOTS.Zones, {
 						["coord"] = { 22.5, 62.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/6 Slime Sample
+								["provider"] = { "i", 37199 },	-- Slime Sample
+								["cr"] = 26366,	-- Entropic Ooze
+							}),
 							i(39052),	-- Acid-Resistant Hauberk
 							i(39090),	-- Chestplate of Untimely Rewards
 							i(38719),	-- Robe of Expurgation
@@ -1564,6 +1921,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 31.1, 59.4, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/8 Vordrassil's Seed
+								["providers"] = {
+									{ "i", 37302 },	-- Vordrassil's Seed
+									{ "o", 188691 },	-- Vordrassil's Seed
+								},
+							}),
 							i(38757),	-- Drape of the Possessive Soul
 							i(38753),	-- Hoarder's Necklace
 							i(38743),	-- Ring of the Tender
@@ -1578,6 +1941,12 @@ root(ROOTS.Zones, {
 						["coord"] = { 22.5, 62.8, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/8 Vordrassil's Seed
+								["providers"] = {
+									{ "i", 37302 },	-- Vordrassil's Seed
+									{ "o", 188691 },	-- Vordrassil's Seed
+								},
+							}),
 							i(38743),	-- Band of the Tender
 							i(38757),	-- Drape of the Possessive Soul
 							i(38753),	-- Hoarder's Necklace
@@ -1594,15 +1963,39 @@ root(ROOTS.Zones, {
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/1 Durar's Power Cell
+								["provider"] = { "i", 36857 },	-- Durar's Power Cell
+								["cr"] = 26409,	-- Rune-Smith Durar
+							}),
+							objective(2, {	-- 0/1 Kathorn's Power Cell
+								["provider"] = { "i", 36858 },	-- Kathorn's Power Cell
+								["cr"] = 26410,	-- Rune-Smith Kathorn
+							}),
 							n(26409, {	-- Rune-Smith Durar
 								["coord"] = { 74.9, 57.0, GRIZZLY_HILLS },
 								["groups"] = {
+							objective(1, {	-- 0/1 Durar's Power Cell
+								["provider"] = { "i", 36857 },	-- Durar's Power Cell
+								["cr"] = 26409,	-- Rune-Smith Durar
+							}),
+							objective(2, {	-- 0/1 Kathorn's Power Cell
+								["provider"] = { "i", 36858 },	-- Kathorn's Power Cell
+								["cr"] = 26410,	-- Rune-Smith Kathorn
+							}),
 									i(36857),	-- Durar's Power Cell
 								},
 							}),
 							n(26410, {	-- Rune-Smith Kathorn
 								["coord"] = { 76.8, 59.3, GRIZZLY_HILLS },
 								["groups"] = {
+							objective(1, {	-- 0/1 Durar's Power Cell
+								["provider"] = { "i", 36857 },	-- Durar's Power Cell
+								["cr"] = 26409,	-- Rune-Smith Durar
+							}),
+							objective(2, {	-- 0/1 Kathorn's Power Cell
+								["provider"] = { "i", 36858 },	-- Kathorn's Power Cell
+								["cr"] = 26410,	-- Rune-Smith Kathorn
+							}),
 									i(36858),	-- Kathorn's Power Cell
 								},
 							}),
@@ -1613,6 +2006,16 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 12196,	-- From the Ground Up
 						["coord"] = { 65.1, 47.2, GRIZZLY_HILLS },
 						["races"] = HORDE_ONLY,
+						["groups"] = {
+							objective(1, {	-- 0/1 Durar's Power Cell
+								["provider"] = { "i", 36857 },	-- Durar's Power Cell
+								["cr"] = 26409,	-- Rune-Smith Durar
+							}),
+							objective(2, {	-- 0/1 Kathorn's Power Cell
+								["provider"] = { "i", 36858 },	-- Kathorn's Power Cell
+								["cr"] = 26410,	-- Rune-Smith Kathorn
+							}),
+						},
 					}),
 					q(12130, {	-- Why Fabricate When You Can Appropriate?
 						["qg"] = 26883,	-- Raegar Breakbrow
@@ -1620,6 +2023,14 @@ root(ROOTS.Zones, {
 						["coord"] = { 77.0, 48.6, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/8 War Golem Part
+								["providers"] = {
+									{ "i", 36852 },	-- War Golem Part
+									{ "o", 188501 },	-- War Golem Part
+									{ "o", 188502 },	-- War Golem Part
+									{ "o", 188503 },	-- War Golem Part
+								},
+							}),
 							o_repeated({
 								i(36852),	-- War Golem Part (QI!)
 								o(188501),	-- War Golem Part
@@ -1633,6 +2044,9 @@ root(ROOTS.Zones, {
 						["coord"] = { 25.6, 33.3, GRIZZLY_HILLS },
 						["races"] = ALLIANCE_ONLY,
 						["groups"] = {
+							objective(1, {	-- 0/8 Wolfsbane Root
+								["provider"] = { "o", 189313 },	-- Wolfsbane Root
+							}),
 							i(38756),	-- Drape of Horticultural Sanitization
 							i(39105),	-- Girdle of Growing Vines
 							i(39062),	-- Herbalist's Pauldrons
