@@ -7,8 +7,6 @@ using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading;
 using static ATT.Export;
@@ -3484,21 +3482,43 @@ namespace ATT
                                 if (EXPORTDATA_WITH_REFERENCES.TryGetValue("OnTooltip", out List<string> names))
                                 {
                                     Dictionary<string, object> exports = exportDB.Value as Dictionary<string, object>;
-                                    string[] allKeys = exports.Keys.ToArray();
-
-                                    foreach(string key in allKeys)
-                                    {
-                                        if (!names.Contains(key))
-                                        {
-                                            exports.Remove(key);
-                                        }
-                                    }
-                                    referenceDB.Append(ExportPureLua(exports).Insert(0, $"_.{exportDB.Key}=\n").AppendLine());
+                                    CleanupExportDictionaryValue(exports, names);
+                                    referenceDB.Append(ExportPureLua(exports).Insert(0, $"_.{exportDB.Key}=\n").ToString()).AppendLine();
+                                }
+                            }
+                            break;
+                        case "OnUpdateDB":
+                            {
+                                if (EXPORTDATA_WITH_REFERENCES.TryGetValue("OnUpdate", out List<string> names))
+                                {
+                                    Dictionary<string, object> exports = exportDB.Value as Dictionary<string, object>;
+                                    CleanupExportDictionaryValue(exports, names);
+                                    referenceDB.Append(ExportPureLua(exports).Insert(0, $"_.{exportDB.Key}=\n").ToString()).AppendLine();
+                                }
+                            }
+                            break;
+                        case "OnInitDB":
+                            {
+                                if (EXPORTDATA_WITH_REFERENCES.TryGetValue("OnInit", out List<string> names))
+                                {
+                                    Dictionary<string, object> exports = exportDB.Value as Dictionary<string, object>;
+                                    CleanupExportDictionaryValue(exports, names);
+                                    referenceDB.Append(ExportPureLua(exports).Insert(0, $"_.{exportDB.Key}=\n").ToString()).AppendLine();
                                 }
                             }
                             break;
                         default:
-                            referenceDB.Append(ExportPureLua(exportDB.Value).Insert(0, $"_.{exportDB.Key}=\n").AppendLine());
+                            {
+                                if (exportDB.Value is Dictionary<string, object> exports)
+                                {
+                                    CleanupExportDictionaryValue(exports);
+                                    referenceDB.Append(ExportPureLua(exports).Insert(0, $"_.{exportDB.Key}=\n").ToString()).AppendLine();
+                                }
+                                else
+                                {
+                                    referenceDB.Append(ExportPureLua(exportDB.Value).Insert(0, $"_.{exportDB.Key}=\n").ToString()).AppendLine();
+                                }
+                            }
                             break;
                     }
                 }
@@ -3532,6 +3552,36 @@ namespace ATT
 
                 // Check to see if we need to export any dirty objects.
                 ObjectHarvester.ExportDirtyObjectsToFilePath(dirtyObjectsFilePath);
+            }
+        }
+
+        private static void CleanupExportDictionaryValue(Dictionary<string, object> exports, IEnumerable<string> allowedKeys = null)
+        {
+            string[] allKeys = exports.Keys.ToArray();
+            // remove unreferenced keys
+            if (allowedKeys != null)
+            {
+                foreach (string key in allKeys)
+                {
+                    if (!allowedKeys.Contains(key))
+                    {
+                        exports.Remove(key);
+                    }
+                }
+                allKeys = exports.Keys.ToArray();
+            }
+
+            // convert each individual key to simplified Lua
+            foreach (string key in allKeys)
+            {
+                if (exports[key] is Dictionary<string, object> subTable)
+                {
+                    CleanupExportDictionaryValue(subTable);
+                }
+                else if (exports[key] is string exportedString)
+                {
+                    exports[key] = SimplifyLuaBody(exportedString);
+                }
             }
         }
 

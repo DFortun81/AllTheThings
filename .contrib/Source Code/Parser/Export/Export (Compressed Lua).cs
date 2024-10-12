@@ -17,7 +17,7 @@ namespace ATT
         /// </summary>
         public static bool AddTableNewLines { get; set; } = false;
 
-        private static List<string[]> RegexFunctionReplacements = new List<string[]>
+        private static readonly List<string[]> RegexLuaReplacements = new List<string[]>
         {
             new [] { @";[\s]*", @";" },
             new [] { @",[\s]*", @"," },
@@ -29,6 +29,11 @@ namespace ATT
             new [] { @"[\s]+<[\s]+", @"<" },
             new [] { @"\t[\t]+", "\t" },
             new [] { @",\}", "}" },
+            new [] { @"[\s]*=[\s]*", "=" },
+            new [] { @"[\s]*\{[\s]*", "{" },
+            new [] { @"[\s]*\}[\s]*", "}" },
+            new [] { @"[\s]*\([\s]*", "(" },
+            new [] { @"[\s]*\)[\s]*", ")" },
         };
 
         /// <summary>
@@ -177,7 +182,7 @@ namespace ATT
             {
                 fields.Remove("OnInit");
                 fields.Remove("OnSourceInit");
-                var onInitBody = SimplifyFunctionBody(OnInitRef);
+                var onInitBody = SimplifyLuaBody(OnInitRef);
                 if (!onInitBody.Contains("return"))
                 {
                     Console.WriteLine("Missing a return within an OnInit function body.");
@@ -229,7 +234,7 @@ namespace ATT
                         }
                         else if (field == "OnClick" || field == "OnUpdate" || field == "OnTooltip")
                         {
-                            var functionBody = SimplifyFunctionBody(data[field]);
+                            var functionBody = SimplifyLuaBody(data[field]);
                             if (functionBody.StartsWith("function("))
                             {
                                 // Attempt to validate the format of the function.
@@ -477,14 +482,14 @@ namespace ATT
         /// </summary>
         /// <param name="value">The body of the function.</param>
         /// <returns>The simplified body of the function.</returns>
-        public static string SimplifyFunctionBody(object value)
+        public static string SimplifyLuaBody(object value)
         {
             string functionBody = Convert.ToString(value).Replace("\n", "\t").Replace("\r", "\t");
             int functionBodyLength = functionBody.Length;
             while (true)
             {
                 string shortenedFunctionBody = null;
-                foreach (string[] replacements in RegexFunctionReplacements)
+                foreach (string[] replacements in RegexLuaReplacements)
                 {
                     shortenedFunctionBody = Regex.Replace(shortenedFunctionBody ?? functionBody, replacements[0], replacements[1]);
                 }

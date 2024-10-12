@@ -1534,530 +1534,31 @@ _.FlightPathDB=
 }
 _.OnTooltipDB=
 {
-	["ForAlteracValley"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation >= 0 and reputation < 42000 then
-		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		addRepInfo(tooltipInfo, reputation, "Kill the General", 389, 42000);
-		addRepInfo(tooltipInfo, reputation, "Kill a Captain", 125, 42000);
-		addRepInfo(tooltipInfo, reputation, "Kill a Commander", 12, 42000);
-		addRepInfo(tooltipInfo, reputation, "Kill an Air Master", 5, 42000);
-		if reputation < 21000 then
-			addRepInfo(tooltipInfo, reputation, "Kill a Guard (To Revered)", 5, 21000);
-		end
-	end
-end,
-	["ForArathiBasin"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation >= 0 and reputation < 42000 then
-		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Resources", 10, 42000, 200);
-		addRepInfo(tooltipInfo, reputation, "Resource Ticks", 10, 42000);
-		tinsert(tooltipInfo, { left = " Every 200 or 150 Resources during AB Weekend.", r = 1, g = 1, b = 1 });
-	end
-end,
-	["ForConsortium"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation < 42000 then
-		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		if not t.secrets then
-			local f = _.SearchForField("questID", 10971);
-			if f and #f > 0 then t.secrets = f[1]; end
-		end
-		if not t.secrets.saved then
-			_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete '%s' in Netherstorm.", t.secrets);
-		else
-			addRepInfo(tooltipInfo, reputation, "Turn in Ethereum Prisoner I.D. Tags in Netherstorm.", 250, 42000);
-		end
-
-		addRepInfo(tooltipInfo, reputation, "Turn in Obsidian Warbeads.", 500, 42000);
-		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Obsidian Warbeads", 500, 42000, 10);
-	end
-end,
-	["ForEverlook"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation < 42000 then
-		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		addRepInfo(tooltipInfo, reputation, "Kill Pirates in Ratchet*", 2.5, 42000);
-		addRepInfo(tooltipInfo, reputation, "Kill Pirates in Tanaris", 2.5, 42000);
-		tinsert(tooltipInfo, { left = " * PROTIP: Ratchet is faster.", r = 1, g = 0.5, b = 0.5 });
-	end
-end,
-	["ForFrenzyheart"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation < 0 then
-		local champion = t.champion;
-		if not champion then
-			champion = _.SearchForField("questID", 12582)[1];
-			t.champion = champion;
-		end
-		_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete %s", champion);
-	elseif reputation < 42000 then
-		tinsert(tooltipInfo, { left = "Daily Quests:" });
-		local chicken = t.chicken;
-		if not chicken then
-			chicken = _.SearchForField("questID", 12702)[1];
-			t.chicken = chicken;
-		end
-		local chickenRep = _.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo, " %s", chicken, 250);
-
-		local rejek = t.rejek;
-		if not rejek then
-			rejek = {};
-			for i,questID in ipairs({ 12758, 12734, 12741, 12732 }) do
-				for j,quest in ipairs(_.SearchForField("questID", questID)) do
-					if quest.questID == questID then
-						tinsert(rejek, quest);
-					end
-				end
-			end
-			t.rejek = rejek;
-		end
-		local AddQuestsWithReputation = _.Modules.FactionData.AddQuestsTooltipWithReputation;
-		local rejekRep = AddQuestsWithReputation(tooltipInfo, "Complete 1 of 4 quests offered by Rejek:", rejek, 250);
-
-		local vekgar = t.vekgar;
-		if not vekgar then
-			vekgar = {};
-			for i,questID in ipairs({ 12703, 12760, 12759 }) do
-				for j,quest in ipairs(_.SearchForField("questID", questID)) do
-					if quest.questID == questID then
-						tinsert(vekgar, quest);
-					end
-				end
-			end
-			t.vekgar = vekgar;
-		end
-		local vekgarRep = AddQuestsWithReputation(tooltipInfo, "Complete 1 of 3 quests offered by Vekgar:", vekgar, 350);
-		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", chickenRep + rejekRep + vekgarRep, 42000);
-	end
-end,
-	["ForKurenai"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation < 0 then
-		tinsert(tooltipInfo, { left = "Complete Quests in Orebor Harborage, Zangarmarsh.", r = 1, g = 1, b = 1 });
-	elseif reputation < 42000 then
-		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		addRepInfo(tooltipInfo, reputation, "Kill Bolderfist Ogres.", 10, 42000);
-		addRepInfo(tooltipInfo, reputation, "Turn in Obsidian Warbeads.", 500, 42000);
-		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Obsidian Warbeads", 500, 42000, 10);
-	end
-end,
-	["ForMaghar"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation < 0 then
-		tinsert(tooltipInfo, { left = "Complete Quests in Mag'har Post, Hellfire Peninsula.", r = 1, g = 1, b = 1 });
-	elseif reputation < 42000 then
-		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		addRepInfo(tooltipInfo, reputation, "Kill Bolderfist Ogres.", 10, 42000);
-		addRepInfo(tooltipInfo, reputation, "Turn in Obsidian Warbeads.", 500, 42000);
-		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Obsidian Warbeads", 500, 42000, 10);
-	end
-end,
-	["ForNetherwing"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation < 42000 then
-		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Turn in Netherwing Eggs.", 250, 42000);
-	end
-end,
-	["ForOgrila"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation < 42000 then
-		tinsert(tooltipInfo, { left = "Daily Quests:" });
-		if not t.banished then
-			local f = _.SearchForField("questID", 11051);
-			if f and #f > 0 then t.banished = f[1]; end
-		end
-		local AddQuestTooltipWithReputation = _.Modules.FactionData.AddQuestTooltipWithReputation;
-		local banishedRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.banished, 350);
-
-		if not t.bombed then
-			local f = _.SearchForField("questID", 11023);
-			if f and #f > 0 then t.bombed = f[1]; end
-		end
-		local bombedRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.bombed, 500);
-
-		if not t.relic then
-			local f = _.SearchForField("questID", 11080);
-			if f and #f > 0 then t.relic = f[1]; end
-		end
-		local relicRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.relic, 350);
-
-		if not t.wrangled then
-			local f = _.SearchForField("questID", 11066);
-			if f and #f > 0 then t.wrangled = f[1]; end
-		end
-		local wrangledRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.wrangled, 350);
-
-		local repPerDay = banishedRep + bombedRep + relicRep + wrangledRep;
-		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", repPerDay, 42000);
-	end
-end,
-	["ForOracles"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation < 0 then
-		local hand = t.hand;
-		if not hand then
-			hand = _.SearchForField("questID", 12689)[1];
-			t.hand = hand;
-		end
-		_.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete %s", hand);
-	elseif reputation < 42000 then
-		tinsert(tooltipInfo, { left = "Daily Quests:" });
-		local appeasing = t.appeasing;
-		if not appeasing then
-			appeasing = _.SearchForField("questID", 12704)[1];
-			t.appeasing = appeasing;
-		end
-		local appeasingRep = _.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo, " %s", appeasing, 250);
-
-		local soodow = t.soodow;
-		if not soodow then
-			soodow = {};
-			for i,questID in ipairs({ 12761, 12762, 12705 }) do
-				for j,quest in ipairs(_.SearchForField("questID", questID)) do
-					if quest.questID == questID then
-						tinsert(soodow, quest);
-					end
-				end
-			end
-			t.soodow = soodow;
-		end
-		local AddQuestsWithReputation = _.Modules.FactionData.AddQuestsTooltipWithReputation;
-		local soodowRep = AddQuestsWithReputation(tooltipInfo, "Complete 1 of 3 quests offered by Oracle Soo-dow:", soodow, 350);
-
-		local soonee = t.soonee;
-		if not soonee then
-			soonee = {};
-			for i,questID in ipairs({ 12735, 12737, 12736, 12726 }) do
-				for j,quest in ipairs(_.SearchForField("questID", questID)) do
-					if quest.questID == questID then
-						tinsert(soonee, quest);
-					end
-				end
-			end
-			t.soonee = soonee;
-		end
-		local sooneeRep = AddQuestsWithReputation(tooltipInfo, "Complete 1 of 4 quests offered by Oracle Soo-nee:", soonee, 250);
-		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", appeasingRep + soodowRep + sooneeRep, 42000);
-	end
-end,
-	["ForRatchet"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation < 42000 then
-		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		if reputation < 20999 then
-			addRepInfo(tooltipInfo, reputation, "Kill Pirates in Ratchet (To 11999 Honored)", 5, 20999);
-		end
-		addRepInfo(tooltipInfo, reputation, "Kill Pirates in Tanaris", 2.5, 42000);
-	end
-end,
-	["ForSkyguard"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation < 42000 then
-		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		tinsert(tooltipInfo, { left = "Protip: Join a rep farming group.", r = 1, g = 0.5, b = 0.5 });
-		addRepInfo(tooltipInfo, reputation, "Kill Arokkoa.", 5, 42000);
-		addRepInfo(tooltipInfo, reputation, "Summon Bosses.", 100, 42000);
-		addRepInfo(tooltipInfo, reputation, "Turn in Shadow Dust.", 150, 42000);
-		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Dust", 150, 42000, 6);
-	end
-end,
-	["ForSonsOfHodir"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation < 0 then
-		local AddQuestTooltip = _.Modules.FactionData.AddQuestTooltip;
-		if not t.mending then
-			local f = _.SearchForField("questID", 12915);
-			if f and #f > 0 then t.mending = f[1]; end
-		end
-		AddQuestTooltip(tooltipInfo, "Complete %s", t.mending);
-		if not t.spark then
-			local f = _.SearchForField("questID", 12956);
-			if f and #f > 0 then t.spark = f[1]; end
-		end
-		AddQuestTooltip(tooltipInfo, "Complete %s", t.spark);
-	elseif reputation < 42000 then
-		local AddQuestTooltip = _.Modules.FactionData.AddQuestTooltip;
-		local viscousRep, callRep, coldRep, dragonRep = 0, 0, 0, 0;
-		if not t.helm then
-			local f = _.SearchForField("questID", 12987);
-			if f and #f > 0 then t.helm = f[1]; end
-		end
-		if t.helm.saved then
-			viscousRep = 350;
-		else
-			AddQuestTooltip(tooltipInfo, "Complete %s", t.helm);
-		end
-
-		if not t.monument then
-			local f = _.SearchForField("questID", 12976);
-			if f and #f > 0 then t.monument = f[1]; end
-		end
-		if t.monument.saved then
-			callRep = 350;
-		else
-			AddQuestTooltip(tooltipInfo, "Complete %s", t.monument);
-		end
-
-		if not t.elements then
-			local f = _.SearchForField("questID", 12967);
-			if f and #f > 0 then t.elements = f[1]; end
-		end
-		if t.elements.saved then
-			coldRep = 350;
-		else
-			AddQuestTooltip(tooltipInfo, "Complete %s", t.elements);
-		end
-
-		if not t.spear then
-			local f = _.SearchForField("questID", 13001);
-			if f and #f > 0 then t.spear = f[1]; end
-		end
-		if t.spear.saved then
-			dragonRep = 500;
-		else
-			AddQuestTooltip(tooltipInfo, "Complete %s", t.spear);
-		end
-
-		local AddQuestTooltipWithReputation = _.Modules.FactionData.AddQuestTooltipWithReputation;
-		tinsert(tooltipInfo, { left = "Daily Quests:" });
-		if viscousRep > 0 then
-			if not t.viscous then
-				local f = _.SearchForField("questID", 13006);
-				if f and #f > 0 then t.viscous = f[1]; end
-			end
-			viscousRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.viscous, viscousRep);
-		end
-		local feedingRep = 0;
-		if reputation >= 21000 then
-			if not t.feeding then
-				local f = _.SearchForField("questID", 13046);
-				if f and #f > 0 then t.feeding = f[1]; end
-			end
-			feedingRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.feeding, 350);
-		end
-		if callRep > 0 then
-			if not t.call then
-				local f = _.SearchForField("questID", 12977);
-				if f and #f > 0 then t.call = f[1]; end
-			end
-			callRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.call, callRep);
-		end
-		if coldRep > 0 then
-			if not t.cold then
-				local f = _.SearchForField("questID", 12981);
-				if f and #f > 0 then t.cold = f[1]; end
-			end
-			coldRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.cold, coldRep);
-		end
-		if dragonRep > 0 then
-			if not t.dragon then
-				local f = _.SearchForField("questID", 13003);
-				if f and #f > 0 then t.dragon = f[1]; end
-			end
-			dragonRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.dragon, dragonRep);
-		end
-		local spyRep = 0;
-		if reputation >= 9000 then
-			if not t.spy then
-				local f = _.SearchForField("questID", 12994);
-				if f and #f > 0 then t.spy = f[1]; end
-			end
-			spyRep = AddQuestTooltipWithReputation(tooltipInfo, " %s", t.spy, 350);
-		end
-
-		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		local repPerDay = viscousRep + callRep + coldRep + dragonRep + feedingRep + spyRep;
-		addRepInfo(tooltipInfo, reputation, "Complete Dailies Everyday", repPerDay, 42000);
-		addRepInfo(tooltipInfo, reputation, "Turn in Everfrost.", 350, 42000);
-		local repPerTurnIn = 325;
-		addRepInfo(tooltipInfo, reputation, "Turn in Relics of Ulduar.", repPerTurnIn, 42000);
-		_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Total Relics", repPerTurnIn, 42000, 10);
-	end
-end,
-	["ForSporeggar"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation < 42000 then
-		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		if not t.plight then
-			local f = _.SearchForField("questID", 9739);
-			if f and #f > 0 then t.plight = f[1]; end
-		end
-		if not t.natenemies then
-			local f = _.SearchForField("questID", 9743);
-			if f and #f > 0 then t.natenemies = f[1]; end
-		end
-		if not t.plight.saved then _.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete %s", t.plight); end
-		if not t.natenemies.saved then _.Modules.FactionData.AddQuestTooltip(tooltipInfo, "Complete %s", t.natenemies); end
-
-		if reputation < 21000 then
-			addRepInfo(tooltipInfo, reputation, "Kill Bog Lords. (To Revered)", 15, 21000);
-		end
-
-		addRepInfo(tooltipInfo, reputation, "Kill Dredgers & Lurkers.", 15, 42000);
-
-		if reputation < 3000 then
-			addRepInfo(tooltipInfo, reputation, "Turn in Spore Sacs (x10) (To Friendly)", 250, 3000);
-			addRepInfo(tooltipInfo, reputation, "Turn in Tendrils (x6) (To Friendly)", 750, 3000);
-		end
-
-		if reputation >= 0 then
-			if reputation < 3000 then
-				addRepInfo(tooltipInfo, reputation, "Turn in Glowcap (x10) (To Friendly)", 250, 3000);
-			end
-			addRepInfo(tooltipInfo, reputation, "Turn in Fertile Spores (x6)", 750, 42000);
-			addRepInfo(tooltipInfo, reputation, "Turn in Sanguine Hibiscus (x5)", 750, 42000);
-		end
-	end
-end,
-	["ForTherazane"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation < 42000 then
-		tinsert(tooltipInfo, { left = "Daily Quests:" });
-		local total = 0;
-		for i,questData in ipairs({
-			{ 27046, 250 },
-			{ 27050, 250 },
-			{ 27047, 250 },
-			{ 27049, 250 },
-			{ 27051, 250 },
-		}) do
-			total = total + _.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo,
-				" %s", _.SearchForField("questID", questData[1])[1], questData[2]);
-		end
-
-		local AddQuestsWithReputation = _.Modules.FactionData.AddQuestsTooltipWithReputation;
-		if reputation >= 21000 then
-			local glopmother = t.glopmother;
-			if not glopmother then
-				glopmother = {};
-				for i,questID in ipairs({ 28390, 28391 }) do
-					for j,quest in ipairs(_.SearchForField("questID", questID)) do
-						if quest.questID == questID then
-							tinsert(glopmother, quest);
-						end
-					end
-				end
-				t.glopmother = glopmother;
-			end
-			total = total + AddQuestsWithReputation(tooltipInfo, "Complete 1 of 2 quests:", glopmother, 350);
-		end
-
-		local randomQuests = t.randomQuests;
-		if not randomQuests then
-			randomQuests = {};
-			for i,questID in ipairs({ 28488, 26710, 27048 }) do
-				for j,quest in ipairs(_.SearchForField("questID", questID)) do
-					if quest.questID == questID then
-						tinsert(randomQuests, quest);
-					end
-				end
-			end
-			t.randomQuests = randomQuests;
-		end
-		total = total + AddQuestsWithReputation(tooltipInfo, "Complete 1 of 3 quests:", randomQuests, 250);
-		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", total, 42000);
-	end
-end,
-	["ForTimbermawHold"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation < 42000 then
-		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		addRepInfo(tooltipInfo, reputation, "Kill Deadwood or Winterfall Furbolgs", 20, 42000, -3000);
-		local repPerTurnIn = 2000;
-		addRepInfo(tooltipInfo, reputation, "Turn in Deadwood Feathers (x5) in Felwood", repPerTurnIn, 42000);
-		local repPer, remainingTurnIns = addRepInfo(tooltipInfo, reputation, "Turn in Winterfall Beads (x5) in Winterspring", repPerTurnIn, 42000);
-		local remaining = ((remainingTurnIns * 5) - C_Item.GetItemCount(21383, true) - C_Item.GetItemCount(21377, true));
-		if remaining > 0 then
-			tinsert(tooltipInfo, { left = "You need " .. remaining .. " more feathers/beads for Exalted.", r = 1, g = 1, b = 0 });
-		end
-	end
-end,
-	["ForWarsongGulch"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation >= 0 and reputation < 42000 then
-		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		local repPerFlagCapture = 35;
-		local repPerFlagCapture = 100;
-		addRepInfo(tooltipInfo, reputation, "Flags Captured", repPerFlagCapture, 42000);
-		tinsert(tooltipInfo, { left = " Each capture is worth " .. repPerFlagCapture .. " rep, +100 if you win or 35 if you lose 0-3.", r = 1, g = 1, b = 1 });
-	end
-end,
-	["IsSpellOnCooldown_55208"] = function(t,tooltipInfo)
-			if _.CurrentCharacter.Spells[55208]then
-				if _.WOWAPI.GetSpellCooldown(55208)>0 then
-					tinsert(tooltipInfo, { left = "Your "..t.name.." cooldown is unavailable." });
-				else
-					tinsert(tooltipInfo, { left = "Your "..t.name.." cooldown is available." });
-				end
-			end
-		end,
+	["ForAlteracValley"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation>=0 and reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill the General",389,42000);addRepInfo(tooltipInfo,reputation,"Kill a Captain",125,42000);addRepInfo(tooltipInfo,reputation,"Kill a Commander",12,42000);addRepInfo(tooltipInfo,reputation,"Kill an Air Master",5,42000);if reputation<21000 then	addRepInfo(tooltipInfo,reputation,"Kill a Guard(To Revered)",5,21000);end	end	end,
+	["ForArathiBasin"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation>=0 and reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo,reputation,"Total Resources",10,42000,200);addRepInfo(tooltipInfo,reputation,"Resource Ticks",10,42000);tinsert(tooltipInfo,{left=" Every 200 or 150 Resources during AB Weekend.",r=1,g=1,b=1});end	end,
+	["ForConsortium"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if not t.secrets then	local f=_.SearchForField("questID",10971);if f and #f>0 then t.secrets=f[1];end	end	if not t.secrets.saved then	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete '%s' in Netherstorm.",t.secrets);else	addRepInfo(tooltipInfo,reputation,"Turn in Ethereum Prisoner I.D. Tags in Netherstorm.",250,42000);end	addRepInfo(tooltipInfo,reputation,"Turn in Obsidian Warbeads.",500,42000);_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo,reputation,"Total Obsidian Warbeads",500,42000,10);end	end,
+	["ForEverlook"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet*",2.5,42000);addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000);tinsert(tooltipInfo,{left=" * PROTIP: Ratchet is faster.",r=1,g=0.5,b=0.5});end	end,
+	["ForFrenzyheart"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<0 then	local champion=t.champion;if not champion then	champion=_.SearchForField("questID",12582)[1];t.champion=champion;end	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",champion);elseif reputation<42000 then	tinsert(tooltipInfo,{left="Daily Quests:"});local chicken=t.chicken;if not chicken then	chicken=_.SearchForField("questID",12702)[1];t.chicken=chicken;end	local chickenRep=_.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo," %s",chicken,250);local rejek=t.rejek;if not rejek then	rejek={};for i,questID in ipairs({12758,12734,12741,12732})do	for j,quest in ipairs(_.SearchForField("questID",questID))do	if quest.questID==questID then	tinsert(rejek,quest);end	end	end	t.rejek=rejek;end	local AddQuestsWithReputation=_.Modules.FactionData.AddQuestsTooltipWithReputation;local rejekRep=AddQuestsWithReputation(tooltipInfo,"Complete 1 of 4 quests offered by Rejek:",rejek,250);local vekgar=t.vekgar;if not vekgar then	vekgar={};for i,questID in ipairs({12703,12760,12759})do	for j,quest in ipairs(_.SearchForField("questID",questID))do	if quest.questID==questID then	tinsert(vekgar,quest);end	end	end	t.vekgar=vekgar;end	local vekgarRep=AddQuestsWithReputation(tooltipInfo,"Complete 1 of 3 quests offered by Vekgar:",vekgar,350);_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Complete Dailies Everyday",chickenRep + rejekRep + vekgarRep,42000);end	end,
+	["ForKurenai"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<0 then	tinsert(tooltipInfo,{left="Complete Quests in Orebor Harborage,Zangarmarsh.",r=1,g=1,b=1});elseif reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Bolderfist Ogres.",10,42000);addRepInfo(tooltipInfo,reputation,"Turn in Obsidian Warbeads.",500,42000);_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo,reputation,"Total Obsidian Warbeads",500,42000,10);end	end,
+	["ForMaghar"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<0 then	tinsert(tooltipInfo,{left="Complete Quests in Mag'har Post,Hellfire Peninsula.",r=1,g=1,b=1});elseif reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Bolderfist Ogres.",10,42000);addRepInfo(tooltipInfo,reputation,"Turn in Obsidian Warbeads.",500,42000);_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo,reputation,"Total Obsidian Warbeads",500,42000,10);end	end,
+	["ForNetherwing"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Turn in Netherwing Eggs.",250,42000);end	end,
+	["ForOgrila"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	tinsert(tooltipInfo,{left="Daily Quests:"});if not t.banished then	local f=_.SearchForField("questID",11051);if f and #f>0 then t.banished=f[1];end	end	local AddQuestTooltipWithReputation=_.Modules.FactionData.AddQuestTooltipWithReputation;local banishedRep=AddQuestTooltipWithReputation(tooltipInfo," %s",t.banished,350);if not t.bombed then	local f=_.SearchForField("questID",11023);if f and #f>0 then t.bombed=f[1];end	end	local bombedRep=AddQuestTooltipWithReputation(tooltipInfo," %s",t.bombed,500);if not t.relic then	local f=_.SearchForField("questID",11080);if f and #f>0 then t.relic=f[1];end	end	local relicRep=AddQuestTooltipWithReputation(tooltipInfo," %s",t.relic,350);if not t.wrangled then	local f=_.SearchForField("questID",11066);if f and #f>0 then t.wrangled=f[1];end	end	local wrangledRep=AddQuestTooltipWithReputation(tooltipInfo," %s",t.wrangled,350);local repPerDay=banishedRep + bombedRep + relicRep + wrangledRep;_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Complete Dailies Everyday",repPerDay,42000);end	end,
+	["ForOracles"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<0 then	local hand=t.hand;if not hand then	hand=_.SearchForField("questID",12689)[1];t.hand=hand;end	_.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",hand);elseif reputation<42000 then	tinsert(tooltipInfo,{left="Daily Quests:"});local appeasing=t.appeasing;if not appeasing then	appeasing=_.SearchForField("questID",12704)[1];t.appeasing=appeasing;end	local appeasingRep=_.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo," %s",appeasing,250);local soodow=t.soodow;if not soodow then	soodow={};for i,questID in ipairs({12761,12762,12705})do	for j,quest in ipairs(_.SearchForField("questID",questID))do	if quest.questID==questID then	tinsert(soodow,quest);end	end	end	t.soodow=soodow;end	local AddQuestsWithReputation=_.Modules.FactionData.AddQuestsTooltipWithReputation;local soodowRep=AddQuestsWithReputation(tooltipInfo,"Complete 1 of 3 quests offered by Oracle Soo-dow:",soodow,350);local soonee=t.soonee;if not soonee then	soonee={};for i,questID in ipairs({12735,12737,12736,12726})do	for j,quest in ipairs(_.SearchForField("questID",questID))do	if quest.questID==questID then	tinsert(soonee,quest);end	end	end	t.soonee=soonee;end	local sooneeRep=AddQuestsWithReputation(tooltipInfo,"Complete 1 of 4 quests offered by Oracle Soo-nee:",soonee,250);_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Complete Dailies Everyday",appeasingRep + soodowRep + sooneeRep,42000);end	end,
+	["ForRatchet"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if reputation<20999 then	addRepInfo(tooltipInfo,reputation,"Kill Pirates in Ratchet(To 11999 Honored)",5,20999);end	addRepInfo(tooltipInfo,reputation,"Kill Pirates in Tanaris",2.5,42000);end	end,
+	["ForSkyguard"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;tinsert(tooltipInfo,{left="Protip: Join a rep farming group.",r=1,g=0.5,b=0.5});addRepInfo(tooltipInfo,reputation,"Kill Arokkoa.",5,42000);addRepInfo(tooltipInfo,reputation,"Summon Bosses.",100,42000);addRepInfo(tooltipInfo,reputation,"Turn in Shadow Dust.",150,42000);_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo,reputation,"Total Dust",150,42000,6);end	end,
+	["ForSonsOfHodir"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<0 then	local AddQuestTooltip=_.Modules.FactionData.AddQuestTooltip;if not t.mending then	local f=_.SearchForField("questID",12915);if f and #f>0 then t.mending=f[1];end	end	AddQuestTooltip(tooltipInfo,"Complete %s",t.mending);if not t.spark then	local f=_.SearchForField("questID",12956);if f and #f>0 then t.spark=f[1];end	end	AddQuestTooltip(tooltipInfo,"Complete %s",t.spark);elseif reputation<42000 then	local AddQuestTooltip=_.Modules.FactionData.AddQuestTooltip;local viscousRep,callRep,coldRep,dragonRep=0,0,0,0;if not t.helm then	local f=_.SearchForField("questID",12987);if f and #f>0 then t.helm=f[1];end	end	if t.helm.saved then	viscousRep=350;else	AddQuestTooltip(tooltipInfo,"Complete %s",t.helm);end	if not t.monument then	local f=_.SearchForField("questID",12976);if f and #f>0 then t.monument=f[1];end	end	if t.monument.saved then	callRep=350;else	AddQuestTooltip(tooltipInfo,"Complete %s",t.monument);end	if not t.elements then	local f=_.SearchForField("questID",12967);if f and #f>0 then t.elements=f[1];end	end	if t.elements.saved then	coldRep=350;else	AddQuestTooltip(tooltipInfo,"Complete %s",t.elements);end	if not t.spear then	local f=_.SearchForField("questID",13001);if f and #f>0 then t.spear=f[1];end	end	if t.spear.saved then	dragonRep=500;else	AddQuestTooltip(tooltipInfo,"Complete %s",t.spear);end	local AddQuestTooltipWithReputation=_.Modules.FactionData.AddQuestTooltipWithReputation;tinsert(tooltipInfo,{left="Daily Quests:"});if viscousRep>0 then	if not t.viscous then	local f=_.SearchForField("questID",13006);if f and #f>0 then t.viscous=f[1];end	end	viscousRep=AddQuestTooltipWithReputation(tooltipInfo," %s",t.viscous,viscousRep);end	local feedingRep=0;if reputation>=21000 then	if not t.feeding then	local f=_.SearchForField("questID",13046);if f and #f>0 then t.feeding=f[1];end	end	feedingRep=AddQuestTooltipWithReputation(tooltipInfo," %s",t.feeding,350);end	if callRep>0 then	if not t.call then	local f=_.SearchForField("questID",12977);if f and #f>0 then t.call=f[1];end	end	callRep=AddQuestTooltipWithReputation(tooltipInfo," %s",t.call,callRep);end	if coldRep>0 then	if not t.cold then	local f=_.SearchForField("questID",12981);if f and #f>0 then t.cold=f[1];end	end	coldRep=AddQuestTooltipWithReputation(tooltipInfo," %s",t.cold,coldRep);end	if dragonRep>0 then	if not t.dragon then	local f=_.SearchForField("questID",13003);if f and #f>0 then t.dragon=f[1];end	end	dragonRep=AddQuestTooltipWithReputation(tooltipInfo," %s",t.dragon,dragonRep);end	local spyRep=0;if reputation>=9000 then	if not t.spy then	local f=_.SearchForField("questID",12994);if f and #f>0 then t.spy=f[1];end	end	spyRep=AddQuestTooltipWithReputation(tooltipInfo," %s",t.spy,350);end	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;local repPerDay=viscousRep + callRep + coldRep + dragonRep + feedingRep + spyRep;addRepInfo(tooltipInfo,reputation,"Complete Dailies Everyday",repPerDay,42000);addRepInfo(tooltipInfo,reputation,"Turn in Everfrost.",350,42000);local repPerTurnIn=325;addRepInfo(tooltipInfo,reputation,"Turn in Relics of Ulduar.",repPerTurnIn,42000);_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo,reputation,"Total Relics",repPerTurnIn,42000,10);end	end,
+	["ForSporeggar"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;if not t.plight then	local f=_.SearchForField("questID",9739);if f and #f>0 then t.plight=f[1];end	end	if not t.natenemies then	local f=_.SearchForField("questID",9743);if f and #f>0 then t.natenemies=f[1];end	end	if not t.plight.saved then _.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.plight);end	if not t.natenemies.saved then _.Modules.FactionData.AddQuestTooltip(tooltipInfo,"Complete %s",t.natenemies);end	if reputation<21000 then	addRepInfo(tooltipInfo,reputation,"Kill Bog Lords.(To Revered)",15,21000);end	addRepInfo(tooltipInfo,reputation,"Kill Dredgers & Lurkers.",15,42000);if reputation<3000 then	addRepInfo(tooltipInfo,reputation,"Turn in Spore Sacs(x10)(To Friendly)",250,3000);addRepInfo(tooltipInfo,reputation,"Turn in Tendrils(x6)(To Friendly)",750,3000);end	if reputation>=0 then	if reputation<3000 then	addRepInfo(tooltipInfo,reputation,"Turn in Glowcap(x10)(To Friendly)",250,3000);end	addRepInfo(tooltipInfo,reputation,"Turn in Fertile Spores(x6)",750,42000);addRepInfo(tooltipInfo,reputation,"Turn in Sanguine Hibiscus(x5)",750,42000);end	end	end,
+	["ForTherazane"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	tinsert(tooltipInfo,{left="Daily Quests:"});local total=0;for i,questData in ipairs({{27046,250},{27050,250},{27047,250},{27049,250},{27051,250}})do	total=total + _.Modules.FactionData.AddQuestTooltipWithReputation(tooltipInfo," %s",_.SearchForField("questID",questData[1])[1],questData[2]);end	local AddQuestsWithReputation=_.Modules.FactionData.AddQuestsTooltipWithReputation;if reputation>=21000 then	local glopmother=t.glopmother;if not glopmother then	glopmother={};for i,questID in ipairs({28390,28391})do	for j,quest in ipairs(_.SearchForField("questID",questID))do	if quest.questID==questID then	tinsert(glopmother,quest);end	end	end	t.glopmother=glopmother;end	total=total + AddQuestsWithReputation(tooltipInfo,"Complete 1 of 2 quests:",glopmother,350);end	local randomQuests=t.randomQuests;if not randomQuests then	randomQuests={};for i,questID in ipairs({28488,26710,27048})do	for j,quest in ipairs(_.SearchForField("questID",questID))do	if quest.questID==questID then	tinsert(randomQuests,quest);end	end	end	t.randomQuests=randomQuests;end	total=total + AddQuestsWithReputation(tooltipInfo,"Complete 1 of 3 quests:",randomQuests,250);_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Complete Dailies Everyday",total,42000);end	end,
+	["ForTimbermawHold"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Kill Deadwood or Winterfall Furbolgs",20,42000,-3000);local repPerTurnIn=2000;addRepInfo(tooltipInfo,reputation,"Turn in Deadwood Feathers(x5)in Felwood",repPerTurnIn,42000);local repPer,remainingTurnIns=addRepInfo(tooltipInfo,reputation,"Turn in Winterfall Beads(x5)in Winterspring",repPerTurnIn,42000);local remaining=((remainingTurnIns * 5)- C_Item.GetItemCount(21383,true)- C_Item.GetItemCount(21377,true));if remaining>0 then	tinsert(tooltipInfo,{left="You need " .. remaining .. " more feathers/beads for Exalted.",r=1,g=1,b=0});end	end	end,
+	["ForWarsongGulch"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation>=0 and reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;local repPerFlagCapture=35;local repPerFlagCapture=100;addRepInfo(tooltipInfo,reputation,"Flags Captured",repPerFlagCapture,42000);tinsert(tooltipInfo,{left=" Each capture is worth " .. repPerFlagCapture .. " rep,+100 if you win or 35 if you lose 0-3.",r=1,g=1,b=1});end	end,
+	["IsSpellOnCooldown_55208"] = function(t,tooltipInfo)if _.CurrentCharacter.Spells[55208]then	if _.WOWAPI.GetSpellCooldown(55208)>0 then	tinsert(tooltipInfo,{left="Your "..t.name.." cooldown is unavailable."});else	tinsert(tooltipInfo,{left="Your "..t.name.." cooldown is available."});end	end	end,
 	["MusicRollItem"] = function(t,tooltipInfo)tinsert(tooltipInfo,{left=not(_.IsQuestFlaggedCompleted(38356)or _.IsQuestFlaggedCompleted(37961))and _.L.MUSIC_ROLLS_DESC.._.L.MUSIC_ROLLS_DESC_2 or _.L.MUSIC_ROLLS_DESC})end,
-	["Ravenholdt"] = function(t, tooltipInfo)
-		local reputation = t.reputation;
-		if reputation < 42000 then
-			if reputation < 20999 then
-				tinsert(tooltipInfo, { left = " * PROTIP: Do NOT turn in Heavy Lockboxes until max Honored!", r = 1, g = 0.5, b = 0.5 });
-				_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Kill Arathi Syndicate", 5, 20999);
-			else
-				tinsert(tooltipInfo, { left = " * PROTIP: Bring a stack of Repair Bots with you.", r = 0.5, g = 1, b = 0.5 });
-				_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo, reputation, "Turn in Heavy Junkboxes.", 75, 42000, 5);
-			end
-		end
-	end,
+	["Ravenholdt"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	if reputation<20999 then	tinsert(tooltipInfo,{left=" * PROTIP: Do NOT turn in Heavy Lockboxes until max Honored!",r=1,g=0.5,b=0.5});_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Kill Arathi Syndicate",5,20999);else	tinsert(tooltipInfo,{left=" * PROTIP: Bring a stack of Repair Bots with you.",r=0.5,g=1,b=0.5});_.Modules.FactionData.AddReputationTooltipInfoWithMultiplier(tooltipInfo,reputation,"Turn in Heavy Junkboxes.",75,42000,5);end	end	end,
 	["SelfieFilter"] = function(t,tooltipInfo)tinsert(tooltipInfo,{left=_.L.SELFIE_DESC..(select(2,_.WOWAPI.GetItemInfo(122674))or"Selfie Camera MkII").._.L.SELFIE_DESC_2..(_.NPCNameFromID[t.crs[1] ]or"???").."|r"..(t.maps and(" in |cffff8000".._.GetMapName(t.maps[1]).."|r.")or".")})end,
-	["TheKaluak"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation < 42000 then
-		tinsert(tooltipInfo, { left = "Daily Quests:" });
-		if not t.preparing then
-			local f = _.SearchForField("questID", 11945);
-			if f and #f > 0 then t.preparing = f[1]; end
-		end
-		local AddQuestTooltipWithReputation = _.Modules.FactionData.AddQuestTooltipWithReputation;
-		local preparingRep = AddQuestTooltipWithReputation(tooltipInfo, "%s (" .. _.GetMapName(114) .. ")", t.preparing, 500);
-
-		if not t.puppy then
-			local f = _.SearchForField("questID", 11960);
-			if f and #f > 0 then t.puppy = f[1]; end
-		end
-		local puppyRep = AddQuestTooltipWithReputation(tooltipInfo, "%s (" .. _.GetMapName(115) .. ")", t.puppy, 500);
-
-		if not t.heart then
-			local f = _.SearchForField("questID", 11472);
-			if f and #f > 0 then t.heart = f[1]; end
-		end
-		local heartRep = AddQuestTooltipWithReputation(tooltipInfo, "%s (" .. _.GetMapName(117) .. ")", t.heart, 500);
-
-		_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo, reputation, "Complete Dailies Everyday", preparingRep + puppyRep + heartRep, 42000);
-	end
-end,
-	["ThoriumBrotherhood"] = function(t, tooltipInfo)
-	local reputation = t.reputation;
-	if reputation < 42000 then
-		local addRepInfo = _.Modules.FactionData.AddReputationTooltipInfo;
-		addRepInfo(tooltipInfo, reputation, "Turn In Blood & Cores (1x each)",
-		500,
-		42000);
-
-		addRepInfo(tooltipInfo, reputation, "Turn In Core Leather (2x each)",
-		350,
-		42000);
-
-		addRepInfo(tooltipInfo, reputation, "Turn In Dark Iron Ore (10x each)",
-		75,
-		42000);
-	end
-end,
-	["WithRequiredAchievement"] = function(t, tooltipInfo)
-		if t.ach then tinsert(tooltipInfo, { left = _.L.REQUIRES, right = t.ach.text }); end
-	end,
-	["ZidormiTravelArtID1136"] = function(t, tooltipInfo)
-					if t.parent.artID == 1136 then
-						tinsert(tooltipInfo, { left = "You need to speak to Zidormi to travel back to the past in order to collect these." });
-					end
-				end,
+	["TheKaluak"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	tinsert(tooltipInfo,{left="Daily Quests:"});if not t.preparing then	local f=_.SearchForField("questID",11945);if f and #f>0 then t.preparing=f[1];end	end	local AddQuestTooltipWithReputation=_.Modules.FactionData.AddQuestTooltipWithReputation;local preparingRep=AddQuestTooltipWithReputation(tooltipInfo,"%s(" .. _.GetMapName(114).. ")",t.preparing,500);if not t.puppy then	local f=_.SearchForField("questID",11960);if f and #f>0 then t.puppy=f[1];end	end	local puppyRep=AddQuestTooltipWithReputation(tooltipInfo,"%s(" .. _.GetMapName(115).. ")",t.puppy,500);if not t.heart then	local f=_.SearchForField("questID",11472);if f and #f>0 then t.heart=f[1];end	end	local heartRep=AddQuestTooltipWithReputation(tooltipInfo,"%s(" .. _.GetMapName(117).. ")",t.heart,500);_.Modules.FactionData.AddReputationTooltipInfo(tooltipInfo,reputation,"Complete Dailies Everyday",preparingRep + puppyRep + heartRep,42000);end	end,
+	["ThoriumBrotherhood"] = function(t,tooltipInfo)local reputation=t.reputation;if reputation<42000 then	local addRepInfo=_.Modules.FactionData.AddReputationTooltipInfo;addRepInfo(tooltipInfo,reputation,"Turn In Blood & Cores(1x each)",500,42000);addRepInfo(tooltipInfo,reputation,"Turn In Core Leather(2x each)",350,42000);addRepInfo(tooltipInfo,reputation,"Turn In Dark Iron Ore(10x each)",75,42000);end	end,
+	["WithRequiredAchievement"] = function(t,tooltipInfo)if t.ach then tinsert(tooltipInfo,{left=_.L.REQUIRES,right=t.ach.text});end	end,
+	["ZidormiTravelArtID1136"] = function(t,tooltipInfo)if t.parent.artID==1136 then	tinsert(tooltipInfo,{left="You need to speak to Zidormi to travel back to the past in order to collect these."});end	end,
 }
 _.RaceDB=
 {
@@ -2700,6 +2201,10 @@ _.ReagentsDB=
 			7954,
 			5
 		},
+		[12092] = {
+			10041,
+			1
+		},
 		[12622] = {
 			10504,
 			3
@@ -2830,6 +2335,18 @@ _.ReagentsDB=
 			2312,
 			4
 		},
+		[2386] = {
+			2569,
+			1
+		},
+		[2395] = {
+			2578,
+			1
+		},
+		[2401] = {
+			2583,
+			2
+		},
 		[3293] = {
 			3488,
 			2
@@ -2857,6 +2374,10 @@ _.ReagentsDB=
 		[3763] = {
 			4246,
 			6
+		},
+		[3845] = {
+			4312,
+			2
 		},
 		[3847] = {
 			4313,
@@ -2916,6 +2437,10 @@ _.ReagentsDB=
 		},
 		[9983] = {
 			7955,
+			1
+		},
+		[12045] = {
+			10046,
 			1
 		},
 		[20648] = {
@@ -3035,6 +2560,10 @@ _.ReagentsDB=
 		[3849] = {
 			4315,
 			2
+		},
+		[3855] = {
+			4320,
+			4
 		},
 		[3940] = {
 			4373,
@@ -3214,13 +2743,45 @@ _.ReagentsDB=
 			2313,
 			1
 		},
+		[2385] = {
+			2568,
+			1
+		},
+		[2386] = {
+			2569,
+			1
+		},
+		[2387] = {
+			2570,
+			1
+		},
 		[2389] = {
 			2572,
 			2
 		},
+		[2392] = {
+			2575,
+			1
+		},
+		[2393] = {
+			2576,
+			1
+		},
+		[2394] = {
+			2577,
+			1
+		},
+		[2397] = {
+			2580,
+			3
+		},
 		[3753] = {
 			4237,
 			1
+		},
+		[3755] = {
+			4238,
+			3
 		},
 		[3756] = {
 			4239,
@@ -3242,12 +2803,36 @@ _.ReagentsDB=
 			4246,
 			2
 		},
+		[3840] = {
+			4307,
+			1
+		},
+		[3841] = {
+			4308,
+			2
+		},
+		[3914] = {
+			4343,
+			1
+		},
+		[3915] = {
+			4344,
+			1
+		},
 		[5244] = {
 			5081,
 			1
 		},
 		[7126] = {
 			5957,
+			1
+		},
+		[7623] = {
+			6238,
+			1
+		},
+		[7624] = {
+			6241,
 			1
 		},
 		[7629] = {
@@ -3266,6 +2851,14 @@ _.ReagentsDB=
 			6709,
 			4
 		},
+		[8465] = {
+			6786,
+			1
+		},
+		[8776] = {
+			7026,
+			1
+		},
 		[9058] = {
 			7276,
 			1
@@ -3281,6 +2874,14 @@ _.ReagentsDB=
 		[9065] = {
 			7281,
 			4
+		},
+		[12044] = {
+			10045,
+			1
+		},
+		[12045] = {
+			10046,
+			1
 		},
 		[226105] = {
 			132490,
@@ -3332,13 +2933,41 @@ _.ReagentsDB=
 			2317,
 			1
 		},
+		[2395] = {
+			2578,
+			1
+		},
+		[2396] = {
+			2579,
+			1
+		},
+		[2399] = {
+			2582,
+			2
+		},
+		[2401] = {
+			2583,
+			2
+		},
+		[2402] = {
+			2584,
+			1
+		},
 		[2403] = {
 			2585,
 			3
 		},
+		[2406] = {
+			2587,
+			1
+		},
 		[3324] = {
 			3473,
 			2
+		},
+		[3757] = {
+			4240,
+			1
 		},
 		[3758] = {
 			4241,
@@ -3408,20 +3037,48 @@ _.ReagentsDB=
 			4265,
 			1
 		},
+		[3813] = {
+			4245,
+			3
+		},
+		[3842] = {
+			4309,
+			2
+		},
+		[3843] = {
+			4310,
+			1
+		},
 		[3844] = {
 			4311,
 			2
+		},
+		[3845] = {
+			4312,
+			1
 		},
 		[3847] = {
 			4313,
 			1
 		},
+		[3848] = {
+			4314,
+			2
+		},
 		[3849] = {
 			4315,
 			2
 		},
+		[3850] = {
+			4316,
+			4
+		},
 		[3851] = {
 			4317,
+			3
+		},
+		[3852] = {
+			4318,
 			3
 		},
 		[3854] = {
@@ -3436,6 +3093,10 @@ _.ReagentsDB=
 			4322,
 			2
 		},
+		[3866] = {
+			4330,
+			1
+		},
 		[3868] = {
 			4331,
 			4
@@ -3448,12 +3109,20 @@ _.ReagentsDB=
 			4333,
 			1
 		},
+		[3871] = {
+			4334,
+			1
+		},
 		[4096] = {
 			4455,
 			2
 		},
 		[4097] = {
 			4456,
+			2
+		},
+		[6521] = {
+			5542,
 			2
 		},
 		[6661] = {
@@ -3467,6 +3136,10 @@ _.ReagentsDB=
 		[6688] = {
 			5763,
 			1
+		},
+		[6690] = {
+			5766,
+			2
 		},
 		[6692] = {
 			5770,
@@ -3544,6 +3217,30 @@ _.ReagentsDB=
 			6468,
 			2
 		},
+		[8467] = {
+			6787,
+			1
+		},
+		[8758] = {
+			7046,
+			3
+		},
+		[8760] = {
+			7048,
+			1
+		},
+		[8762] = {
+			7050,
+			2
+		},
+		[8764] = {
+			7051,
+			2
+		},
+		[8766] = {
+			7052,
+			2
+		},
 		[8778] = {
 			7027,
 			2
@@ -3558,6 +3255,10 @@ _.ReagentsDB=
 		},
 		[8786] = {
 			7053,
+			2
+		},
+		[8791] = {
+			7058,
 			2
 		},
 		[9068] = {
@@ -3612,6 +3313,10 @@ _.ReagentsDB=
 			7377,
 			2
 		},
+		[12046] = {
+			10047,
+			1
+		},
 		[12047] = {
 			10048,
 			1
@@ -3622,6 +3327,10 @@ _.ReagentsDB=
 		},
 		[24940] = {
 			20575,
+			2
+		},
+		[63742] = {
+			45626,
 			2
 		},
 		[75289] = {
@@ -3706,12 +3415,40 @@ _.ReagentsDB=
 			2311,
 			1
 		},
+		[2393] = {
+			2576,
+			1
+		},
 		[3868] = {
 			4331,
 			2
 		},
+		[3871] = {
+			4334,
+			2
+		},
+		[7624] = {
+			6241,
+			1
+		},
+		[8465] = {
+			6786,
+			1
+		},
+		[8467] = {
+			6787,
+			4
+		},
+		[8483] = {
+			6795,
+			2
+		},
 		[12059] = {
 			10008,
+			1
+		},
+		[12077] = {
+			10053,
 			1
 		},
 		[12091] = {
@@ -3739,6 +3476,10 @@ _.ReagentsDB=
 		[9206] = {
 			7387,
 			2
+		},
+		[12077] = {
+			10053,
+			1
 		},
 		[19049] = {
 			15083,
@@ -3948,6 +3689,10 @@ _.ReagentsDB=
 			2847,
 			2
 		},
+		[2963] = {
+			2996,
+			2
+		},
 		[3115] = {
 			3239,
 			1
@@ -3968,8 +3713,16 @@ _.ReagentsDB=
 			4365,
 			1
 		},
+		[330222] = {
+			180055,
+			5
+		},
 	},
 	[2592] = {
+		[2964] = {
+			2997,
+			3
+		},
 		[3116] = {
 			3240,
 			1
@@ -4014,6 +3767,10 @@ _.ReagentsDB=
 			6714,
 			1
 		},
+		[330223] = {
+			180057,
+			5
+		},
 	},
 	[2593] = {
 		[43779] = {
@@ -4052,8 +3809,16 @@ _.ReagentsDB=
 			2572,
 			2
 		},
+		[2392] = {
+			2575,
+			1
+		},
 		[3847] = {
 			4313,
+			2
+		},
+		[3866] = {
+			4330,
 			2
 		},
 		[6686] = {
@@ -4072,16 +3837,36 @@ _.ReagentsDB=
 			6264,
 			3
 		},
+		[8489] = {
+			6796,
+			2
+		},
+		[8772] = {
+			7055,
+			2
+		},
 		[8789] = {
 			7056,
+			2
+		},
+		[8791] = {
+			7058,
 			2
 		},
 		[8793] = {
 			7059,
 			2
 		},
+		[8799] = {
+			7062,
+			2
+		},
 		[8802] = {
 			7063,
+			4
+		},
+		[8804] = {
+			7064,
 			4
 		},
 		[9072] = {
@@ -4106,6 +3891,10 @@ _.ReagentsDB=
 		},
 		[12078] = {
 			10029,
+			2
+		},
+		[12079] = {
+			10051,
 			2
 		},
 		[12084] = {
@@ -4144,6 +3933,10 @@ _.ReagentsDB=
 			41252,
 			1
 		},
+		[60971] = {
+			44558,
+			4
+		},
 		[402155] = {
 			203820,
 			2
@@ -4158,6 +3951,14 @@ _.ReagentsDB=
 		},
 	},
 	[2605] = {
+		[2396] = {
+			2579,
+			1
+		},
+		[2399] = {
+			2582,
+			1
+		},
 		[3334] = {
 			3484,
 			1
@@ -4198,6 +3999,10 @@ _.ReagentsDB=
 			4259,
 			1
 		},
+		[3841] = {
+			4308,
+			1
+		},
 		[6693] = {
 			5764,
 			1
@@ -4233,6 +4038,10 @@ _.ReagentsDB=
 		[56000] = {
 			41255,
 			1
+		},
+		[60969] = {
+			44554,
+			4
 		},
 		[75289] = {
 			54451,
@@ -4812,13 +4621,85 @@ _.ReagentsDB=
 		},
 	},
 	[2996] = {
+		[2385] = {
+			2568,
+			1
+		},
+		[2386] = {
+			2569,
+			3
+		},
+		[2387] = {
+			2570,
+			1
+		},
 		[2389] = {
 			2572,
 			3
 		},
+		[2392] = {
+			2575,
+			2
+		},
+		[2393] = {
+			2576,
+			1
+		},
+		[2394] = {
+			2577,
+			2
+		},
+		[2395] = {
+			2578,
+			4
+		},
+		[2396] = {
+			2579,
+			3
+		},
+		[2397] = {
+			2580,
+			2
+		},
+		[3755] = {
+			4238,
+			3
+		},
+		[3840] = {
+			4307,
+			2
+		},
+		[3841] = {
+			4308,
+			3
+		},
+		[3842] = {
+			4309,
+			4
+		},
+		[3845] = {
+			4312,
+			5
+		},
+		[3914] = {
+			4343,
+			2
+		},
+		[3915] = {
+			4344,
+			1
+		},
 		[6686] = {
 			5762,
 			4
+		},
+		[7623] = {
+			6238,
+			3
+		},
+		[7624] = {
+			6241,
+			3
 		},
 		[7629] = {
 			6239,
@@ -4832,15 +4713,59 @@ _.ReagentsDB=
 			6242,
 			4
 		},
+		[8465] = {
+			6786,
+			2
+		},
+		[8776] = {
+			7026,
+			1
+		},
+		[12044] = {
+			10045,
+			1
+		},
+		[12045] = {
+			10046,
+			2
+		},
+		[12046] = {
+			10047,
+			4
+		},
 	},
 	[2997] = {
+		[2399] = {
+			2582,
+			2
+		},
+		[2401] = {
+			2583,
+			4
+		},
+		[2402] = {
+			2584,
+			1
+		},
 		[2403] = {
 			2585,
 			4
 		},
+		[2406] = {
+			2587,
+			2
+		},
+		[3757] = {
+			4240,
+			3
+		},
 		[3758] = {
 			4241,
 			4
+		},
+		[3843] = {
+			4310,
+			3
 		},
 		[3844] = {
 			4311,
@@ -4850,17 +4775,37 @@ _.ReagentsDB=
 			4313,
 			4
 		},
+		[3848] = {
+			4314,
+			3
+		},
 		[3849] = {
 			4315,
 			6
+		},
+		[3850] = {
+			4316,
+			5
 		},
 		[3851] = {
 			4317,
 			6
 		},
+		[3852] = {
+			4318,
+			4
+		},
+		[3866] = {
+			4330,
+			3
+		},
 		[3868] = {
 			4331,
 			4
+		},
+		[6521] = {
+			5542,
+			3
 		},
 		[6688] = {
 			5763,
@@ -4889,6 +4834,10 @@ _.ReagentsDB=
 		[7893] = {
 			6385,
 			4
+		},
+		[8467] = {
+			6787,
+			3
 		},
 		[9149] = {
 			7359,
@@ -4940,13 +4889,25 @@ _.ReagentsDB=
 			4253,
 			2
 		},
+		[3855] = {
+			4320,
+			4
+		},
 		[3856] = {
 			4321,
 			1
 		},
+		[6690] = {
+			5766,
+			2
+		},
 		[6692] = {
 			5770,
 			2
+		},
+		[63742] = {
+			45626,
+			6
 		},
 	},
 	[3355] = {
@@ -6654,6 +6615,10 @@ _.ReagentsDB=
 			4250,
 			1
 		},
+		[3852] = {
+			4318,
+			1
+		},
 	},
 	[3389] = {
 		[3770] = {
@@ -7458,6 +7423,10 @@ _.ReagentsDB=
 		},
 	},
 	[3827] = {
+		[3861] = {
+			4326,
+			1
+		},
 		[8802] = {
 			7063,
 			2
@@ -8100,6 +8069,10 @@ _.ReagentsDB=
 			4265,
 			5
 		},
+		[3813] = {
+			4245,
+			2
+		},
 		[3854] = {
 			4319,
 			2
@@ -8518,6 +8491,10 @@ _.ReagentsDB=
 			4325,
 			1
 		},
+		[3861] = {
+			4326,
+			1
+		},
 		[3862] = {
 			4327,
 			2
@@ -8546,6 +8523,26 @@ _.ReagentsDB=
 			5966,
 			1
 		},
+		[8483] = {
+			6795,
+			1
+		},
+		[8489] = {
+			6796,
+			1
+		},
+		[8770] = {
+			7054,
+			2
+		},
+		[8772] = {
+			7055,
+			1
+		},
+		[8774] = {
+			7057,
+			2
+		},
 		[8784] = {
 			7065,
 			1
@@ -8566,9 +8563,17 @@ _.ReagentsDB=
 			7061,
 			2
 		},
+		[8799] = {
+			7062,
+			2
+		},
 		[8802] = {
 			7063,
 			1
+		},
+		[8804] = {
+			7064,
+			2
 		},
 		[9201] = {
 			7378,
@@ -8630,6 +8635,18 @@ _.ReagentsDB=
 			8209,
 			6
 		},
+		[12048] = {
+			9998,
+			3
+		},
+		[12049] = {
+			9999,
+			3
+		},
+		[12065] = {
+			10050,
+			2
+		},
 		[21943] = {
 			17721,
 			1
@@ -8668,6 +8685,10 @@ _.ReagentsDB=
 		},
 	},
 	[4304] = {
+		[8804] = {
+			7064,
+			2
+		},
 		[9952] = {
 			7928,
 			6
@@ -8860,6 +8881,14 @@ _.ReagentsDB=
 			8367,
 			40
 		},
+		[12073] = {
+			10026,
+			2
+		},
+		[12082] = {
+			10031,
+			2
+		},
 		[12090] = {
 			10039,
 			2
@@ -8914,9 +8943,17 @@ _.ReagentsDB=
 		},
 	},
 	[4305] = {
+		[3813] = {
+			4245,
+			3
+		},
 		[3854] = {
 			4319,
 			3
+		},
+		[3855] = {
+			4320,
+			2
 		},
 		[3856] = {
 			4321,
@@ -8930,8 +8967,16 @@ _.ReagentsDB=
 			4323,
 			4
 		},
+		[3859] = {
+			4324,
+			5
+		},
 		[3860] = {
 			4325,
+			4
+		},
+		[3861] = {
+			4326,
 			4
 		},
 		[3863] = {
@@ -8946,6 +8991,10 @@ _.ReagentsDB=
 			4333,
 			2
 		},
+		[3871] = {
+			4334,
+			3
+		},
 		[3872] = {
 			4335,
 			4
@@ -8953,6 +9002,10 @@ _.ReagentsDB=
 		[3873] = {
 			4336,
 			5
+		},
+		[6690] = {
+			5766,
+			2
 		},
 		[6692] = {
 			5770,
@@ -8973,6 +9026,42 @@ _.ReagentsDB=
 		[7153] = {
 			5965,
 			2
+		},
+		[8483] = {
+			6795,
+			3
+		},
+		[8489] = {
+			6796,
+			3
+		},
+		[8758] = {
+			7046,
+			4
+		},
+		[8760] = {
+			7048,
+			2
+		},
+		[8762] = {
+			7050,
+			3
+		},
+		[8764] = {
+			7051,
+			3
+		},
+		[8766] = {
+			7052,
+			4
+		},
+		[8772] = {
+			7055,
+			4
+		},
+		[8774] = {
+			7057,
+			5
 		},
 		[8778] = {
 			7027,
@@ -8998,6 +9087,10 @@ _.ReagentsDB=
 			7056,
 			5
 		},
+		[8791] = {
+			7058,
+			4
+		},
 		[8793] = {
 			7059,
 			5
@@ -9010,9 +9103,17 @@ _.ReagentsDB=
 			7061,
 			5
 		},
+		[8799] = {
+			7062,
+			4
+		},
 		[8802] = {
 			7063,
 			8
+		},
+		[8804] = {
+			7064,
+			6
 		},
 		[9206] = {
 			7387,
@@ -9021,6 +9122,10 @@ _.ReagentsDB=
 		[21945] = {
 			17723,
 			5
+		},
+		[63742] = {
+			45626,
+			3
 		},
 		[226125] = {
 			132542,
@@ -9032,6 +9137,10 @@ _.ReagentsDB=
 		},
 	},
 	[4306] = {
+		[3839] = {
+			4305,
+			4
+		},
 		[3959] = {
 			4388,
 			2
@@ -9063,6 +9172,10 @@ _.ReagentsDB=
 		[12586] = {
 			10507,
 			1
+		},
+		[330224] = {
+			180058,
+			5
 		},
 	},
 	[4337] = {
@@ -9096,6 +9209,10 @@ _.ReagentsDB=
 		},
 	},
 	[4338] = {
+		[3865] = {
+			4339,
+			4
+		},
 		[9928] = {
 			7919,
 			4
@@ -9148,6 +9265,10 @@ _.ReagentsDB=
 			18588,
 			2
 		},
+		[330225] = {
+			180059,
+			5
+		},
 	},
 	[4339] = {
 		[3862] = {
@@ -9157,6 +9278,34 @@ _.ReagentsDB=
 		[3864] = {
 			4329,
 			4
+		},
+		[8770] = {
+			7054,
+			2
+		},
+		[12048] = {
+			9998,
+			2
+		},
+		[12049] = {
+			9999,
+			2
+		},
+		[12050] = {
+			10001,
+			3
+		},
+		[12052] = {
+			10002,
+			3
+		},
+		[12053] = {
+			10003,
+			2
+		},
+		[12055] = {
+			10004,
+			3
 		},
 		[12056] = {
 			10007,
@@ -9170,6 +9319,10 @@ _.ReagentsDB=
 			10009,
 			3
 		},
+		[12061] = {
+			10056,
+			1
+		},
 		[12062] = {
 			10010,
 			4
@@ -9182,20 +9335,64 @@ _.ReagentsDB=
 			10052,
 			2
 		},
+		[12065] = {
+			10050,
+			4
+		},
 		[12066] = {
 			10018,
 			3
+		},
+		[12067] = {
+			10019,
+			4
 		},
 		[12068] = {
 			10020,
 			5
 		},
+		[12069] = {
+			10042,
+			5
+		},
+		[12070] = {
+			10021,
+			6
+		},
+		[12071] = {
+			10023,
+			5
+		},
+		[12072] = {
+			10024,
+			3
+		},
+		[12073] = {
+			10026,
+			3
+		},
+		[12074] = {
+			10027,
+			3
+		},
 		[12075] = {
 			10054,
 			2
 		},
+		[12076] = {
+			10028,
+			5
+		},
+		[12077] = {
+			10053,
+			3
+		},
 		[12078] = {
 			10029,
+			4
+		},
+		[12079] = {
+			10051,
 			4
 		},
 		[12080] = {
@@ -9205,6 +9402,10 @@ _.ReagentsDB=
 		[12081] = {
 			10030,
 			5
+		},
+		[12082] = {
+			10031,
+			6
 		},
 		[12083] = {
 			10032,
@@ -9226,6 +9427,10 @@ _.ReagentsDB=
 			10038,
 			5
 		},
+		[12088] = {
+			10044,
+			5
+		},
 		[12089] = {
 			10035,
 			4
@@ -9237,6 +9442,10 @@ _.ReagentsDB=
 		[12091] = {
 			10040,
 			5
+		},
+		[12092] = {
+			10041,
+			8
 		},
 		[12093] = {
 			10036,
@@ -9278,6 +9487,10 @@ _.ReagentsDB=
 		},
 		[2403] = {
 			2585,
+			1
+		},
+		[2406] = {
+			2587,
 			1
 		},
 		[3765] = {
@@ -9345,6 +9558,10 @@ _.ReagentsDB=
 		[55999] = {
 			41254,
 			1
+		},
+		[60971] = {
+			44558,
+			2
 		},
 	},
 	[4342] = {
@@ -9994,6 +10211,10 @@ _.ReagentsDB=
 			5540,
 			2
 		},
+		[6521] = {
+			5542,
+			1
+		},
 		[8322] = {
 			6709,
 			1
@@ -10019,6 +10240,10 @@ _.ReagentsDB=
 		[3851] = {
 			4317,
 			1
+		},
+		[3855] = {
+			4320,
+			2
 		},
 		[3868] = {
 			4331,
@@ -10204,6 +10429,10 @@ _.ReagentsDB=
 		},
 		[11454] = {
 			9060,
+			1
+		},
+		[12092] = {
+			10041,
 			1
 		},
 		[12617] = {
@@ -10414,9 +10643,17 @@ _.ReagentsDB=
 		},
 	},
 	[6260] = {
+		[2394] = {
+			2577,
+			1
+		},
 		[3854] = {
 			4319,
 			2
+		},
+		[3859] = {
+			4324,
+			4
 		},
 		[7630] = {
 			6240,
@@ -10432,6 +10669,22 @@ _.ReagentsDB=
 		},
 		[7892] = {
 			6384,
+			2
+		},
+		[8465] = {
+			6786,
+			1
+		},
+		[8758] = {
+			7046,
+			2
+		},
+		[8760] = {
+			7048,
+			2
+		},
+		[8766] = {
+			7052,
 			2
 		},
 		[8786] = {
@@ -10472,6 +10725,10 @@ _.ReagentsDB=
 		},
 	},
 	[6261] = {
+		[12061] = {
+			10056,
+			1
+		},
 		[12064] = {
 			10052,
 			2
@@ -10562,6 +10819,10 @@ _.ReagentsDB=
 			7059,
 			2
 		},
+		[8804] = {
+			7064,
+			2
+		},
 		[26277] = {
 			21546,
 			3
@@ -10632,6 +10893,14 @@ _.ReagentsDB=
 		},
 	},
 	[7067] = {
+		[8764] = {
+			7051,
+			1
+		},
+		[8770] = {
+			7054,
+			2
+		},
 		[8797] = {
 			7061,
 			4
@@ -10690,9 +10959,17 @@ _.ReagentsDB=
 		},
 	},
 	[7068] = {
+		[8770] = {
+			7054,
+			2
+		},
 		[8802] = {
 			7063,
 			4
+		},
+		[8804] = {
+			7064,
+			2
 		},
 		[11923] = {
 			9718,
@@ -10728,6 +11005,10 @@ _.ReagentsDB=
 		},
 	},
 	[7069] = {
+		[8770] = {
+			7054,
+			2
+		},
 		[17579] = {
 			13460,
 			1
@@ -10754,6 +11035,14 @@ _.ReagentsDB=
 		},
 	},
 	[7070] = {
+		[8766] = {
+			7052,
+			1
+		},
+		[8770] = {
+			7054,
+			2
+		},
 		[9198] = {
 			7377,
 			2
@@ -10794,6 +11083,14 @@ _.ReagentsDB=
 		},
 		[6661] = {
 			5739,
+			1
+		},
+		[8766] = {
+			7052,
+			1
+		},
+		[8772] = {
+			7055,
 			1
 		},
 		[8797] = {
@@ -10955,6 +11252,10 @@ _.ReagentsDB=
 		[10632] = {
 			8348,
 			8
+		},
+		[12069] = {
+			10042,
+			2
 		},
 		[12624] = {
 			10576,
@@ -12030,6 +12331,18 @@ _.ReagentsDB=
 			9144,
 			1
 		},
+		[12067] = {
+			10019,
+			4
+		},
+		[12070] = {
+			10021,
+			6
+		},
+		[12092] = {
+			10041,
+			4
+		},
 		[12622] = {
 			10504,
 			2
@@ -12722,6 +13035,22 @@ _.ReagentsDB=
 			8367,
 			4
 		},
+		[12050] = {
+			10001,
+			1
+		},
+		[12052] = {
+			10002,
+			1
+		},
+		[12053] = {
+			10003,
+			2
+		},
+		[12055] = {
+			10004,
+			1
+		},
 		[12056] = {
 			10007,
 			1
@@ -12732,6 +13061,10 @@ _.ReagentsDB=
 		},
 		[12060] = {
 			10009,
+			1
+		},
+		[12061] = {
+			10056,
 			1
 		},
 		[12062] = {
@@ -12750,17 +13083,57 @@ _.ReagentsDB=
 			10018,
 			2
 		},
+		[12067] = {
+			10019,
+			2
+		},
 		[12068] = {
 			10020,
+			2
+		},
+		[12069] = {
+			10042,
+			2
+		},
+		[12070] = {
+			10021,
+			2
+		},
+		[12071] = {
+			10023,
+			2
+		},
+		[12072] = {
+			10024,
+			2
+		},
+		[12073] = {
+			10026,
+			2
+		},
+		[12074] = {
+			10027,
 			2
 		},
 		[12075] = {
 			10054,
 			2
 		},
+		[12076] = {
+			10028,
+			2
+		},
+		[12077] = {
+			10053,
+			1
+		},
 		[12078] = {
 			10029,
 			3
+		},
+		[12079] = {
+			10051,
+			2
 		},
 		[12080] = {
 			10055,
@@ -12769,6 +13142,10 @@ _.ReagentsDB=
 		[12081] = {
 			10030,
 			2
+		},
+		[12082] = {
+			10031,
+			3
 		},
 		[12083] = {
 			10032,
@@ -12790,6 +13167,10 @@ _.ReagentsDB=
 			10038,
 			3
 		},
+		[12088] = {
+			10044,
+			3
+		},
 		[12089] = {
 			10035,
 			3
@@ -12800,6 +13181,10 @@ _.ReagentsDB=
 		},
 		[12091] = {
 			10040,
+			3
+		},
+		[12092] = {
+			10041,
 			3
 		},
 		[12093] = {
@@ -12821,6 +13206,10 @@ _.ReagentsDB=
 		[50647] = {
 			38278,
 			3
+		},
+		[60969] = {
+			44554,
+			5
 		},
 	},
 	[8365] = {
@@ -13134,6 +13523,26 @@ _.ReagentsDB=
 			7390,
 			2
 		},
+		[12052] = {
+			10002,
+			2
+		},
+		[12055] = {
+			10004,
+			2
+		},
+		[12071] = {
+			10023,
+			5
+		},
+		[12076] = {
+			10028,
+			4
+		},
+		[12082] = {
+			10031,
+			6
+		},
 		[12086] = {
 			10025,
 			8
@@ -13156,6 +13565,18 @@ _.ReagentsDB=
 		},
 	},
 	[10286] = {
+		[12067] = {
+			10019,
+			2
+		},
+		[12070] = {
+			10021,
+			2
+		},
+		[12092] = {
+			10041,
+			2
+		},
 		[12622] = {
 			10504,
 			2
@@ -16636,6 +17057,10 @@ _.ReagentsDB=
 			12643,
 			1
 		},
+		[18401] = {
+			14048,
+			4
+		},
 		[18629] = {
 			14529,
 			1
@@ -16704,8 +17129,16 @@ _.ReagentsDB=
 			19026,
 			2
 		},
+		[330226] = {
+			180060,
+			5
+		},
 	},
 	[14048] = {
+		[18402] = {
+			13856,
+			3
+		},
 		[18403] = {
 			13869,
 			5
@@ -17424,6 +17857,10 @@ _.ReagentsDB=
 		},
 	},
 	[14341] = {
+		[18402] = {
+			13856,
+			1
+		},
 		[18403] = {
 			13869,
 			1
@@ -17918,6 +18355,30 @@ _.ReagentsDB=
 		},
 		[26407] = {
 			151772,
+			1
+		},
+		[26746] = {
+			21841,
+			1
+		},
+		[26764] = {
+			21849,
+			1
+		},
+		[26765] = {
+			21850,
+			1
+		},
+		[26770] = {
+			21851,
+			1
+		},
+		[26771] = {
+			21852,
+			1
+		},
+		[26772] = {
+			21853,
 			1
 		},
 		[26773] = {
@@ -20686,6 +21147,10 @@ _.ReagentsDB=
 		},
 	},
 	[21840] = {
+		[26746] = {
+			21841,
+			4
+		},
 		[26747] = {
 			21842,
 			3
@@ -20693,6 +21158,26 @@ _.ReagentsDB=
 		[26750] = {
 			21844,
 			1
+		},
+		[26764] = {
+			21849,
+			3
+		},
+		[26765] = {
+			21850,
+			3
+		},
+		[26770] = {
+			21851,
+			4
+		},
+		[26771] = {
+			21852,
+			6
+		},
+		[26772] = {
+			21853,
+			6
 		},
 		[26773] = {
 			21854,
@@ -20962,6 +21447,10 @@ _.ReagentsDB=
 		},
 	},
 	[21877] = {
+		[26745] = {
+			21840,
+			5
+		},
 		[27032] = {
 			21990,
 			1
@@ -20990,6 +21479,10 @@ _.ReagentsDB=
 			23827,
 			4
 		},
+		[31460] = {
+			24268,
+			3
+		},
 		[31461] = {
 			24269,
 			6
@@ -21009,6 +21502,26 @@ _.ReagentsDB=
 		[39971] = {
 			32423,
 			2
+		},
+		[330227] = {
+			180055,
+			5
+		},
+		[330228] = {
+			180057,
+			5
+		},
+		[330229] = {
+			180058,
+			6
+		},
+		[330230] = {
+			180059,
+			6
+		},
+		[330231] = {
+			180060,
+			7
 		},
 	},
 	[21881] = {
@@ -21922,6 +22435,14 @@ _.ReagentsDB=
 		},
 	},
 	[21887] = {
+		[26770] = {
+			21851,
+			2
+		},
+		[26772] = {
+			21853,
+			2
+		},
 		[26776] = {
 			21860,
 			6
@@ -28488,9 +29009,29 @@ _.ReagentsDB=
 			34722,
 			2
 		},
+		[55898] = {
+			41509,
+			6
+		},
+		[55899] = {
+			41510,
+			5
+		},
 		[56463] = {
 			40536,
 			1
+		},
+		[330232] = {
+			180055,
+			5
+		},
+		[330233] = {
+			180057,
+			5
+		},
+		[330234] = {
+			180058,
+			6
 		},
 	},
 	[33567] = {
@@ -28724,6 +29265,10 @@ _.ReagentsDB=
 			47604,
 			8
 		},
+		[75265] = {
+			54445,
+			1
+		},
 		[217644] = {
 			138790,
 			5
@@ -28736,6 +29281,10 @@ _.ReagentsDB=
 		},
 	},
 	[34054] = {
+		[55900] = {
+			41511,
+			2
+		},
 		[63182] = {
 			45085,
 			6
@@ -28753,6 +29302,10 @@ _.ReagentsDB=
 		[67136] = {
 			47598,
 			8
+		},
+		[75265] = {
+			54445,
+			4
 		},
 		[217644] = {
 			138790,
@@ -29084,6 +29637,18 @@ _.ReagentsDB=
 			43502,
 			5
 		},
+		[60990] = {
+			43584,
+			2
+		},
+		[60993] = {
+			43583,
+			3
+		},
+		[60994] = {
+			43585,
+			2
+		},
 		[60996] = {
 			43590,
 			3
@@ -29408,6 +29973,10 @@ _.ReagentsDB=
 			44963,
 			4
 		},
+		[64729] = {
+			45811,
+			4
+		},
 		[70560] = {
 			49901,
 			16
@@ -29652,6 +30221,10 @@ _.ReagentsDB=
 			45854,
 			3
 		},
+		[64730] = {
+			45810,
+			4
+		},
 		[66658] = {
 			36931,
 			1
@@ -29716,6 +30289,26 @@ _.ReagentsDB=
 		},
 	},
 	[36783] = {
+		[55910] = {
+			41523,
+			1
+		},
+		[55911] = {
+			41525,
+			1
+		},
+		[55913] = {
+			41528,
+			2
+		},
+		[56014] = {
+			41607,
+			1
+		},
+		[56015] = {
+			41608,
+			1
+		},
 		[58150] = {
 			43253,
 			4
@@ -29845,6 +30438,18 @@ _.ReagentsDB=
 		[60874] = {
 			44504,
 			12
+		},
+		[60990] = {
+			43584,
+			2
+		},
+		[60993] = {
+			43583,
+			3
+		},
+		[60994] = {
+			43585,
+			2
 		},
 		[60996] = {
 			43590,
@@ -31138,6 +31743,10 @@ _.ReagentsDB=
 			42552,
 			2
 		},
+		[60971] = {
+			44558,
+			4
+		},
 		[66658] = {
 			36931,
 			1
@@ -31626,6 +32235,38 @@ _.ReagentsDB=
 			39682,
 			1
 		},
+		[59582] = {
+			43969,
+			3
+		},
+		[59583] = {
+			43974,
+			3
+		},
+		[59584] = {
+			43973,
+			4
+		},
+		[59585] = {
+			43970,
+			4
+		},
+		[59586] = {
+			41516,
+			4
+		},
+		[59587] = {
+			43972,
+			5
+		},
+		[59588] = {
+			43975,
+			5
+		},
+		[59589] = {
+			43971,
+			5
+		},
 	},
 	[37702] = {
 		[53937] = {
@@ -31652,9 +32293,45 @@ _.ReagentsDB=
 			41188,
 			2
 		},
+		[56010] = {
+			41603,
+			2
+		},
 		[59442] = {
 			43871,
 			2
+		},
+		[59582] = {
+			43969,
+			3
+		},
+		[59583] = {
+			43974,
+			3
+		},
+		[59584] = {
+			43973,
+			4
+		},
+		[59585] = {
+			43970,
+			4
+		},
+		[59586] = {
+			41516,
+			4
+		},
+		[59587] = {
+			43972,
+			5
+		},
+		[59588] = {
+			43975,
+			5
+		},
+		[59589] = {
+			43971,
+			5
 		},
 		[67326] = {
 			47828,
@@ -31702,6 +32379,10 @@ _.ReagentsDB=
 		},
 		[53938] = {
 			40217,
+			2
+		},
+		[56008] = {
+			41601,
 			2
 		},
 		[60356] = {
@@ -32188,6 +32869,86 @@ _.ReagentsDB=
 		},
 	},
 	[38426] = {
+		[55901] = {
+			41548,
+			1
+		},
+		[55902] = {
+			41513,
+			1
+		},
+		[55903] = {
+			41515,
+			1
+		},
+		[55904] = {
+			44211,
+			1
+		},
+		[55906] = {
+			41520,
+			1
+		},
+		[55907] = {
+			41521,
+			1
+		},
+		[55908] = {
+			41522,
+			1
+		},
+		[55910] = {
+			41523,
+			4
+		},
+		[55911] = {
+			41525,
+			4
+		},
+		[55913] = {
+			41528,
+			4
+		},
+		[55914] = {
+			41543,
+			1
+		},
+		[55919] = {
+			41546,
+			1
+		},
+		[55920] = {
+			41551,
+			1
+		},
+		[55921] = {
+			41549,
+			1
+		},
+		[55922] = {
+			41545,
+			1
+		},
+		[55923] = {
+			41550,
+			1
+		},
+		[55924] = {
+			41544,
+			1
+		},
+		[55925] = {
+			41553,
+			2
+		},
+		[55941] = {
+			41554,
+			2
+		},
+		[55943] = {
+			41555,
+			2
+		},
 		[56004] = {
 			41597,
 			1
@@ -32210,6 +32971,10 @@ _.ReagentsDB=
 		},
 		[56019] = {
 			41985,
+			1
+		},
+		[56020] = {
+			41986,
 			1
 		},
 		[56021] = {
@@ -32247,6 +33012,106 @@ _.ReagentsDB=
 		[56029] = {
 			42113,
 			1
+		},
+		[56030] = {
+			41519,
+			1
+		},
+		[56031] = {
+			41512,
+			1
+		},
+		[59582] = {
+			43969,
+			2
+		},
+		[59583] = {
+			43974,
+			2
+		},
+		[59584] = {
+			43973,
+			2
+		},
+		[59585] = {
+			43970,
+			2
+		},
+		[59586] = {
+			41516,
+			2
+		},
+		[59587] = {
+			43972,
+			2
+		},
+		[59588] = {
+			43975,
+			2
+		},
+		[59589] = {
+			43971,
+			2
+		},
+		[60990] = {
+			43584,
+			2
+		},
+		[60993] = {
+			43583,
+			3
+		},
+		[60994] = {
+			43585,
+			2
+		},
+		[75248] = {
+			54471,
+			2
+		},
+		[75249] = {
+			54473,
+			2
+		},
+		[75251] = {
+			54474,
+			2
+		},
+		[75252] = {
+			54477,
+			2
+		},
+		[75254] = {
+			54472,
+			2
+		},
+		[75256] = {
+			54476,
+			2
+		},
+		[75258] = {
+			54481,
+			2
+		},
+		[75259] = {
+			54480,
+			2
+		},
+		[75261] = {
+			54482,
+			2
+		},
+		[75262] = {
+			54484,
+			2
+		},
+		[75263] = {
+			54483,
+			2
+		},
+		[75267] = {
+			54486,
+			2
 		},
 		[75288] = {
 			54441,
@@ -34078,6 +34943,78 @@ _.ReagentsDB=
 		},
 	},
 	[41510] = {
+		[55900] = {
+			41511,
+			2
+		},
+		[55901] = {
+			41548,
+			8
+		},
+		[55902] = {
+			41513,
+			3
+		},
+		[55903] = {
+			41515,
+			4
+		},
+		[55904] = {
+			44211,
+			3
+		},
+		[55906] = {
+			41520,
+			4
+		},
+		[55907] = {
+			41521,
+			5
+		},
+		[55908] = {
+			41522,
+			3
+		},
+		[55910] = {
+			41523,
+			7
+		},
+		[55911] = {
+			41525,
+			8
+		},
+		[55913] = {
+			41528,
+			5
+		},
+		[55914] = {
+			41543,
+			7
+		},
+		[55919] = {
+			41546,
+			8
+		},
+		[55920] = {
+			41551,
+			8
+		},
+		[55921] = {
+			41549,
+			10
+		},
+		[55922] = {
+			41545,
+			9
+		},
+		[55923] = {
+			41550,
+			10
+		},
+		[55924] = {
+			41544,
+			10
+		},
 		[55993] = {
 			41248,
 			4
@@ -34110,8 +35047,36 @@ _.ReagentsDB=
 			41255,
 			4
 		},
+		[56014] = {
+			41607,
+			7
+		},
+		[56015] = {
+			41608,
+			8
+		},
+		[56030] = {
+			41519,
+			5
+		},
+		[56031] = {
+			41512,
+			3
+		},
 	},
 	[41511] = {
+		[55925] = {
+			41553,
+			5
+		},
+		[55941] = {
+			41554,
+			5
+		},
+		[55943] = {
+			41555,
+			4
+		},
 		[56001] = {
 			41594,
 			1
@@ -34143,6 +35108,10 @@ _.ReagentsDB=
 		[56019] = {
 			41985,
 			5
+		},
+		[56020] = {
+			41986,
+			4
 		},
 		[56021] = {
 			42093,
@@ -34179,6 +35148,74 @@ _.ReagentsDB=
 		[56029] = {
 			42113,
 			4
+		},
+		[59582] = {
+			43969,
+			3
+		},
+		[59583] = {
+			43974,
+			3
+		},
+		[59584] = {
+			43973,
+			3
+		},
+		[59585] = {
+			43970,
+			3
+		},
+		[59586] = {
+			41516,
+			3
+		},
+		[59587] = {
+			43972,
+			4
+		},
+		[59588] = {
+			43975,
+			4
+		},
+		[59589] = {
+			43971,
+			4
+		},
+		[60969] = {
+			44554,
+			6
+		},
+		[60971] = {
+			44558,
+			12
+		},
+		[60990] = {
+			43584,
+			4
+		},
+		[60993] = {
+			43583,
+			6
+		},
+		[60994] = {
+			43585,
+			4
+		},
+		[64729] = {
+			45811,
+			4
+		},
+		[64730] = {
+			45810,
+			4
+		},
+		[330235] = {
+			180059,
+			6
+		},
+		[330236] = {
+			180060,
+			7
 		},
 	},
 	[41593] = {
@@ -34312,6 +35349,10 @@ _.ReagentsDB=
 		},
 		[56019] = {
 			41985,
+			1
+		},
+		[56020] = {
+			41986,
 			1
 		},
 		[56028] = {
@@ -34576,9 +35617,29 @@ _.ReagentsDB=
 		},
 	},
 	[42253] = {
+		[55925] = {
+			41553,
+			2
+		},
+		[55941] = {
+			41554,
+			2
+		},
+		[55943] = {
+			41555,
+			2
+		},
+		[56008] = {
+			41601,
+			2
+		},
 		[56009] = {
 			41602,
 			4
+		},
+		[56010] = {
+			41603,
+			2
 		},
 		[56011] = {
 			41604,
@@ -34592,6 +35653,10 @@ _.ReagentsDB=
 			41985,
 			4
 		},
+		[56020] = {
+			41986,
+			4
+		},
 		[56021] = {
 			42093,
 			4
@@ -34602,6 +35667,22 @@ _.ReagentsDB=
 		},
 		[56023] = {
 			42096,
+			4
+		},
+		[60969] = {
+			44554,
+			4
+		},
+		[60971] = {
+			44558,
+			4
+		},
+		[64729] = {
+			45811,
+			4
+		},
+		[64730] = {
+			45810,
 			4
 		},
 	},
@@ -35234,6 +36315,18 @@ _.ReagentsDB=
 		},
 		[60874] = {
 			44504,
+			1
+		},
+		[60990] = {
+			43584,
+			1
+		},
+		[60993] = {
+			43583,
+			1
+		},
+		[60994] = {
+			43585,
 			1
 		},
 		[60996] = {
@@ -36708,6 +37801,10 @@ _.ReagentsDB=
 			67605,
 			3
 		},
+		[94743] = {
+			54440,
+			4
+		},
 		[99439] = {
 			69936,
 			3
@@ -37790,9 +38887,65 @@ _.ReagentsDB=
 			52485,
 			50
 		},
+		[75145] = {
+			54440,
+			30
+		},
+		[75250] = {
+			54447,
+			6
+		},
+		[75253] = {
+			54478,
+			4
+		},
+		[75257] = {
+			54475,
+			5
+		},
+		[75269] = {
+			75086,
+			3
+		},
+		[75270] = {
+			75098,
+			4
+		},
 		[75288] = {
 			54441,
 			8
+		},
+		[75290] = {
+			75089,
+			3
+		},
+		[75291] = {
+			75064,
+			3
+		},
+		[75292] = {
+			75091,
+			4
+		},
+		[75293] = {
+			75096,
+			4
+		},
+		[75294] = {
+			75087,
+			4
+		},
+		[75295] = {
+			75070,
+			4
+		},
+		[75296] = {
+			75063,
+			4
+		},
+		[75297] = {
+			75095,
+			4
 		},
 		[75302] = {
 			75082,
@@ -38022,6 +39175,10 @@ _.ReagentsDB=
 			75077,
 			4
 		},
+		[99537] = {
+			75065,
+			6
+		},
 		[99655] = {
 			70158,
 			8
@@ -38046,6 +39203,10 @@ _.ReagentsDB=
 			71994,
 			20
 		},
+		[134585] = {
+			92726,
+			4
+		},
 		[217649] = {
 			138792,
 			3
@@ -38063,6 +39224,46 @@ _.ReagentsDB=
 		[73626] = {
 			52486,
 			50
+		},
+		[75146] = {
+			54440,
+			30
+		},
+		[75255] = {
+			54449,
+			6
+		},
+		[75260] = {
+			54479,
+			5
+		},
+		[75266] = {
+			54485,
+			6
+		},
+		[75270] = {
+			75098,
+			4
+		},
+		[75291] = {
+			75064,
+			3
+		},
+		[75293] = {
+			75096,
+			4
+		},
+		[75294] = {
+			75087,
+			4
+		},
+		[75295] = {
+			75070,
+			4
+		},
+		[75297] = {
+			75095,
+			4
 		},
 		[75305] = {
 			75093,
@@ -38204,6 +39405,10 @@ _.ReagentsDB=
 			69952,
 			40
 		},
+		[99537] = {
+			75065,
+			6
+		},
 		[99654] = {
 			70157,
 			30
@@ -38211,6 +39416,10 @@ _.ReagentsDB=
 		[101937] = {
 			71995,
 			10
+		},
+		[134585] = {
+			92726,
+			4
 		},
 		[217649] = {
 			138792,
@@ -38225,6 +39434,10 @@ _.ReagentsDB=
 		[74537] = {
 			53039,
 			4
+		},
+		[75142] = {
+			54440,
+			30
 		},
 		[76181] = {
 			54853,
@@ -38360,6 +39573,26 @@ _.ReagentsDB=
 			52348,
 			75
 		},
+		[75141] = {
+			54440,
+			30
+		},
+		[75269] = {
+			75086,
+			3
+		},
+		[75290] = {
+			75089,
+			3
+		},
+		[75292] = {
+			75091,
+			4
+		},
+		[75296] = {
+			75063,
+			4
+		},
 		[75302] = {
 			75082,
 			4
@@ -38445,6 +39678,14 @@ _.ReagentsDB=
 		[73627] = {
 			52487,
 			50
+		},
+		[75144] = {
+			54440,
+			30
+		},
+		[75268] = {
+			54446,
+			40
 		},
 		[78463] = {
 			56539,
@@ -38570,6 +39811,14 @@ _.ReagentsDB=
 	[52555] = {
 		[73623] = {
 			52489,
+			8
+		},
+		[75264] = {
+			54443,
+			15
+		},
+		[75265] = {
+			54445,
 			8
 		},
 		[93841] = {
@@ -39352,6 +40601,14 @@ _.ReagentsDB=
 			53050,
 			2
 		},
+		[74964] = {
+			53643,
+			5
+		},
+		[75247] = {
+			54442,
+			6
+		},
 		[84418] = {
 			60403,
 			20
@@ -39359,6 +40616,18 @@ _.ReagentsDB=
 		[88893] = {
 			53051,
 			3
+		},
+		[330237] = {
+			180055,
+			5
+		},
+		[330238] = {
+			180057,
+			5
+		},
+		[330239] = {
+			180058,
+			6
 		},
 	},
 	[53038] = {
@@ -39662,9 +40931,153 @@ _.ReagentsDB=
 		},
 	},
 	[53643] = {
+		[75141] = {
+			54440,
+			8
+		},
+		[75142] = {
+			54440,
+			8
+		},
+		[75144] = {
+			54440,
+			8
+		},
+		[75145] = {
+			54440,
+			8
+		},
+		[75146] = {
+			54440,
+			8
+		},
+		[75248] = {
+			54471,
+			2
+		},
+		[75249] = {
+			54473,
+			2
+		},
+		[75250] = {
+			54447,
+			3
+		},
+		[75251] = {
+			54474,
+			3
+		},
+		[75252] = {
+			54477,
+			3
+		},
+		[75253] = {
+			54478,
+			7
+		},
+		[75254] = {
+			54472,
+			3
+		},
+		[75255] = {
+			54449,
+			3
+		},
+		[75256] = {
+			54476,
+			3
+		},
+		[75257] = {
+			54475,
+			8
+		},
+		[75258] = {
+			54481,
+			4
+		},
+		[75259] = {
+			54480,
+			4
+		},
+		[75260] = {
+			54479,
+			9
+		},
+		[75261] = {
+			54482,
+			4
+		},
+		[75262] = {
+			54484,
+			4
+		},
+		[75263] = {
+			54483,
+			4
+		},
+		[75264] = {
+			54443,
+			15
+		},
+		[75265] = {
+			54445,
+			9
+		},
+		[75266] = {
+			54485,
+			15
+		},
+		[75267] = {
+			54486,
+			6
+		},
+		[75268] = {
+			54446,
+			20
+		},
+		[75269] = {
+			75086,
+			6
+		},
+		[75270] = {
+			75098,
+			6
+		},
 		[75288] = {
 			54441,
 			8
+		},
+		[75290] = {
+			75089,
+			6
+		},
+		[75291] = {
+			75064,
+			6
+		},
+		[75292] = {
+			75091,
+			10
+		},
+		[75293] = {
+			75096,
+			10
+		},
+		[75294] = {
+			75087,
+			10
+		},
+		[75295] = {
+			75070,
+			10
+		},
+		[75296] = {
+			75063,
+			10
+		},
+		[75297] = {
+			75095,
+			10
 		},
 		[75302] = {
 			75082,
@@ -39689,6 +41102,26 @@ _.ReagentsDB=
 		[75307] = {
 			75072,
 			10
+		},
+		[94743] = {
+			54440,
+			8
+		},
+		[99537] = {
+			75065,
+			10
+		},
+		[134585] = {
+			92726,
+			10
+		},
+		[330240] = {
+			180059,
+			6
+		},
+		[330241] = {
+			180060,
+			7
 		},
 	},
 	[54440] = {
@@ -43430,6 +44863,10 @@ _.ReagentsDB=
 			72986,
 			2
 		},
+		[125551] = {
+			82441,
+			5
+		},
 		[127134] = {
 			77530,
 			12
@@ -43437,6 +44874,18 @@ _.ReagentsDB=
 		[131563] = {
 			90146,
 			2
+		},
+		[330242] = {
+			180055,
+			5
+		},
+		[330243] = {
+			180057,
+			5
+		},
+		[330244] = {
+			180058,
+			6
 		},
 	},
 	[74247] = {
@@ -44484,6 +45933,10 @@ _.ReagentsDB=
 			88806,
 			5
 		},
+		[130325] = {
+			82447,
+			3
+		},
 		[130326] = {
 			72104,
 			3
@@ -45492,6 +46945,38 @@ _.ReagentsDB=
 		},
 	},
 	[82441] = {
+		[125523] = {
+			82397,
+			5
+		},
+		[125524] = {
+			82398,
+			4
+		},
+		[125525] = {
+			82399,
+			5
+		},
+		[125526] = {
+			82400,
+			4
+		},
+		[125527] = {
+			82401,
+			5
+		},
+		[125528] = {
+			82402,
+			3
+		},
+		[125529] = {
+			82403,
+			4
+		},
+		[125530] = {
+			82404,
+			4
+		},
 		[125531] = {
 			82421,
 			5
@@ -45556,9 +47041,325 @@ _.ReagentsDB=
 			82436,
 			4
 		},
+		[125552] = {
+			82442,
+			4
+		},
+		[125553] = {
+			82443,
+			4
+		},
+		[125557] = {
+			92960,
+			8
+		},
+		[130325] = {
+			82447,
+			5
+		},
+		[137907] = {
+			93420,
+			4
+		},
+		[137908] = {
+			93421,
+			4
+		},
+		[137909] = {
+			93428,
+			5
+		},
+		[137910] = {
+			93429,
+			5
+		},
+		[137911] = {
+			93430,
+			5
+		},
+		[137912] = {
+			93431,
+			5
+		},
+		[137913] = {
+			93432,
+			5
+		},
+		[137914] = {
+			93433,
+			5
+		},
+		[137915] = {
+			93434,
+			4
+		},
+		[137916] = {
+			93435,
+			4
+		},
+		[137917] = {
+			93436,
+			4
+		},
+		[137918] = {
+			93437,
+			4
+		},
+		[137919] = {
+			93438,
+			4
+		},
+		[137920] = {
+			93439,
+			4
+		},
+		[137921] = {
+			93499,
+			5
+		},
+		[137922] = {
+			93500,
+			6
+		},
+		[137923] = {
+			93501,
+			6
+		},
+		[137924] = {
+			93502,
+			6
+		},
+		[137925] = {
+			93503,
+			5
+		},
+		[137926] = {
+			93550,
+			5
+		},
+		[137927] = {
+			93551,
+			6
+		},
+		[137928] = {
+			93552,
+			6
+		},
+		[137929] = {
+			93553,
+			6
+		},
+		[137930] = {
+			93554,
+			5
+		},
+		[137931] = {
+			93555,
+			5
+		},
+		[137932] = {
+			93556,
+			6
+		},
+		[137933] = {
+			93557,
+			6
+		},
+		[137934] = {
+			93558,
+			6
+		},
+		[137935] = {
+			93559,
+			5
+		},
+		[137936] = {
+			93607,
+			4
+		},
+		[137937] = {
+			93608,
+			4
+		},
+		[137938] = {
+			93615,
+			5
+		},
+		[137939] = {
+			93616,
+			6
+		},
+		[137940] = {
+			93617,
+			6
+		},
+		[137941] = {
+			93618,
+			6
+		},
+		[137942] = {
+			93619,
+			5
+		},
 		[143011] = {
 			98619,
 			10
+		},
+		[143053] = {
+			98756,
+			6
+		},
+		[143054] = {
+			98757,
+			6
+		},
+		[143055] = {
+			98763,
+			7
+		},
+		[143056] = {
+			98764,
+			7
+		},
+		[143057] = {
+			98765,
+			7
+		},
+		[143058] = {
+			98766,
+			7
+		},
+		[143059] = {
+			98767,
+			7
+		},
+		[143060] = {
+			98768,
+			7
+		},
+		[143061] = {
+			98769,
+			6
+		},
+		[143062] = {
+			98770,
+			6
+		},
+		[143063] = {
+			98771,
+			6
+		},
+		[143064] = {
+			98772,
+			6
+		},
+		[143065] = {
+			98773,
+			6
+		},
+		[143066] = {
+			98774,
+			6
+		},
+		[143067] = {
+			98825,
+			7
+		},
+		[143068] = {
+			98826,
+			8
+		},
+		[143069] = {
+			98827,
+			8
+		},
+		[143070] = {
+			98828,
+			8
+		},
+		[143071] = {
+			98829,
+			7
+		},
+		[143072] = {
+			98865,
+			7
+		},
+		[143073] = {
+			98866,
+			8
+		},
+		[143074] = {
+			98867,
+			8
+		},
+		[143075] = {
+			98868,
+			8
+		},
+		[143076] = {
+			98869,
+			7
+		},
+		[143077] = {
+			98870,
+			7
+		},
+		[143078] = {
+			98871,
+			8
+		},
+		[143079] = {
+			98872,
+			8
+		},
+		[143080] = {
+			98873,
+			8
+		},
+		[143081] = {
+			98874,
+			7
+		},
+		[143082] = {
+			98913,
+			6
+		},
+		[143083] = {
+			98914,
+			6
+		},
+		[143084] = {
+			98921,
+			7
+		},
+		[143085] = {
+			98922,
+			8
+		},
+		[143086] = {
+			98923,
+			8
+		},
+		[143087] = {
+			98924,
+			8
+		},
+		[143088] = {
+			98925,
+			7
+		},
+		[146925] = {
+			98619,
+			10
+		},
+		[330245] = {
+			180059,
+			6
+		},
+		[330246] = {
+			180060,
+			7
 		},
 	},
 	[82447] = {
@@ -45605,6 +47406,22 @@ _.ReagentsDB=
 		[125561] = {
 			86314,
 			4
+		},
+		[138597] = {
+			94277,
+			4
+		},
+		[138598] = {
+			94278,
+			6
+		},
+		[138599] = {
+			94279,
+			4
+		},
+		[138600] = {
+			94280,
+			6
 		},
 	},
 	[83064] = {
@@ -45942,6 +47759,22 @@ _.ReagentsDB=
 			94276,
 			8
 		},
+		[138597] = {
+			94277,
+			6
+		},
+		[138598] = {
+			94278,
+			8
+		},
+		[138599] = {
+			94279,
+			6
+		},
+		[138600] = {
+			94280,
+			8
+		},
 	},
 	[94575] = {
 		[138878] = {
@@ -46097,6 +47930,24 @@ _.ReagentsDB=
 			21
 		},
 	},
+	[98619] = {
+		[142951] = {
+			98599,
+			28
+		},
+		[142955] = {
+			98603,
+			28
+		},
+		[142960] = {
+			98608,
+			21
+		},
+		[142964] = {
+			98612,
+			21
+		},
+	},
 	[98717] = {
 		[142954] = {
 			98602,
@@ -46130,6 +47981,10 @@ _.ReagentsDB=
 		},
 		[146923] = {
 			98617,
+			1
+		},
+		[146925] = {
+			98619,
 			1
 		},
 	},
@@ -48647,6 +50502,26 @@ _.ReagentsDB=
 		[182123] = {
 			111556,
 			10
+		},
+		[330247] = {
+			180055,
+			5
+		},
+		[330248] = {
+			180057,
+			5
+		},
+		[330249] = {
+			180058,
+			6
+		},
+		[330250] = {
+			180059,
+			6
+		},
+		[330251] = {
+			180060,
+			7
 		},
 		[397864] = {
 			202218,
@@ -52454,6 +54329,10 @@ _.ReagentsDB=
 			144341,
 			15
 		},
+		[239412] = {
+			146666,
+			65
+		},
 		[239413] = {
 			146669,
 			65
@@ -52902,6 +54781,10 @@ _.ReagentsDB=
 			127359,
 			20
 		},
+		[186803] = {
+			127361,
+			20
+		},
 		[187058] = {
 			127364,
 			10
@@ -52909,6 +54792,10 @@ _.ReagentsDB=
 		[187059] = {
 			127363,
 			5
+		},
+		[187064] = {
+			127372,
+			10
 		},
 		[194722] = {
 			128888,
@@ -52985,6 +54872,18 @@ _.ReagentsDB=
 		[220511] = {
 			139503,
 			25
+		},
+		[330252] = {
+			180055,
+			5
+		},
+		[330253] = {
+			180057,
+			5
+		},
+		[330254] = {
+			180058,
+			6
 		},
 	},
 	[124438] = {
@@ -53892,6 +55791,18 @@ _.ReagentsDB=
 			144331,
 			100
 		},
+		[239412] = {
+			146666,
+			125
+		},
+		[330255] = {
+			180059,
+			6
+		},
+		[330256] = {
+			180060,
+			7
+		},
 	},
 	[127037] = {
 		[185918] = {
@@ -54094,6 +56005,10 @@ _.ReagentsDB=
 			127360,
 			1
 		},
+		[186803] = {
+			127361,
+			1
+		},
 		[187058] = {
 			127364,
 			1
@@ -54105,6 +56020,18 @@ _.ReagentsDB=
 		[187060] = {
 			127367,
 			1
+		},
+		[187064] = {
+			127372,
+			1
+		},
+		[187065] = {
+			127370,
+			1
+		},
+		[187066] = {
+			127373,
+			2
 		},
 		[208350] = {
 			126989,
@@ -54134,6 +56061,10 @@ _.ReagentsDB=
 			142075,
 			10
 		},
+		[239412] = {
+			146666,
+			1
+		},
 		[247807] = {
 			151571,
 			8
@@ -54147,13 +56078,41 @@ _.ReagentsDB=
 			8
 		},
 	},
+	[127286] = {
+		[186738] = {
+			127294,
+			20
+		},
+	},
+	[127287] = {
+		[186738] = {
+			127294,
+			1
+		},
+	},
+	[127289] = {
+		[186738] = {
+			127294,
+			1
+		},
+	},
 	[127290] = {
 		[186799] = {
 			127359,
 			1
 		},
+		[186803] = {
+			127361,
+			1
+		},
 		[187058] = {
 			127364,
+			1
+		},
+	},
+	[127291] = {
+		[186738] = {
+			127294,
 			1
 		},
 	},
@@ -54191,9 +56150,31 @@ _.ReagentsDB=
 			1
 		},
 	},
+	[127368] = {
+		[187065] = {
+			127370,
+			1
+		},
+	},
+	[127370] = {
+		[187066] = {
+			127373,
+			1
+		},
+	},
+	[127372] = {
+		[187066] = {
+			127373,
+			2
+		},
+	},
 	[127382] = {
 		[186801] = {
 			127360,
+			1
+		},
+		[187065] = {
+			127370,
 			1
 		},
 	},
@@ -54302,6 +56283,10 @@ _.ReagentsDB=
 			127020,
 			1
 		},
+		[186803] = {
+			127361,
+			1
+		},
 		[187059] = {
 			127363,
 			1
@@ -54312,6 +56297,10 @@ _.ReagentsDB=
 		},
 		[208353] = {
 			126991,
+			1
+		},
+		[239412] = {
+			146666,
 			1
 		},
 		[247807] = {
@@ -58484,6 +60473,10 @@ _.ReagentsDB=
 		},
 	},
 	[146659] = {
+		[239412] = {
+			146666,
+			1
+		},
 		[239413] = {
 			146669,
 			1
@@ -58494,6 +60487,18 @@ _.ReagentsDB=
 		},
 		[239415] = {
 			146667,
+			1
+		},
+	},
+	[146710] = {
+		[239412] = {
+			146666,
+			1
+		},
+	},
+	[146711] = {
+		[239412] = {
+			146666,
 			1
 		},
 	},
@@ -61488,31 +63493,135 @@ _.ReagentsDB=
 			152582,
 			10
 		},
+		[257095] = {
+			154686,
+			12
+		},
+		[257096] = {
+			154687,
+			13
+		},
+		[257097] = {
+			154688,
+			16
+		},
+		[257099] = {
+			154689,
+			17
+		},
+		[257101] = {
+			154690,
+			13
+		},
+		[257102] = {
+			154691,
+			13
+		},
+		[257103] = {
+			154692,
+			10
+		},
+		[257104] = {
+			154685,
+			16
+		},
+		[257107] = {
+			154697,
+			13
+		},
+		[257125] = {
+			154695,
+			15
+		},
+		[257126] = {
+			154695,
+			14
+		},
 		[257127] = {
 			154695,
+			12
+		},
+		[257131] = {
+			154707,
+			15
+		},
+		[257132] = {
+			154707,
 			12
 		},
 		[257133] = {
 			154707,
 			8
 		},
+		[257134] = {
+			154706,
+			15
+		},
+		[257135] = {
+			154706,
+			12
+		},
 		[257136] = {
 			154706,
 			8
+		},
+		[257137] = {
+			154705,
+			15
+		},
+		[257138] = {
+			154705,
+			12
 		},
 		[257139] = {
 			154705,
 			8
 		},
+		[267201] = {
+			158381,
+			2
+		},
+		[268982] = {
+			159791,
+			10
+		},
+		[272440] = {
+			158378,
+			1
+		},
+		[278414] = {
+			165739,
+			75
+		},
 		[292946] = {
 			164733,
 			75
+		},
+		[330257] = {
+			180055,
+			5
+		},
+		[330258] = {
+			180057,
+			5
+		},
+		[330259] = {
+			180058,
+			6
 		},
 	},
 	[152577] = {
 		[251314] = {
 			152582,
 			5
+		},
+		[257114] = {
+			154700,
+			12
+		},
+		[257115] = {
+			154700,
+			8
 		},
 		[257116] = {
 			154700,
@@ -61542,9 +63651,29 @@ _.ReagentsDB=
 			162478,
 			65
 		},
+		[257125] = {
+			154695,
+			30
+		},
+		[257126] = {
+			154695,
+			28
+		},
 		[257127] = {
 			154695,
 			25
+		},
+		[267202] = {
+			158382,
+			2
+		},
+		[268983] = {
+			159792,
+			10
+		},
+		[269596] = {
+			159917,
+			35
 		},
 		[269597] = {
 			159917,
@@ -61554,6 +63683,10 @@ _.ReagentsDB=
 			159917,
 			30
 		},
+		[269599] = {
+			159912,
+			35
+		},
 		[269600] = {
 			159912,
 			33
@@ -61561,6 +63694,10 @@ _.ReagentsDB=
 		[269601] = {
 			159912,
 			30
+		},
+		[269602] = {
+			159913,
+			35
 		},
 		[269603] = {
 			159913,
@@ -61570,12 +63707,20 @@ _.ReagentsDB=
 			159913,
 			30
 		},
+		[269605] = {
+			159914,
+			45
+		},
 		[269606] = {
 			159914,
 			40
 		},
 		[269607] = {
 			159914,
+			35
+		},
+		[269608] = {
+			159915,
 			35
 		},
 		[269609] = {
@@ -61586,6 +63731,10 @@ _.ReagentsDB=
 			159915,
 			30
 		},
+		[269611] = {
+			159916,
+			28
+		},
 		[269612] = {
 			159916,
 			25
@@ -61593,6 +63742,14 @@ _.ReagentsDB=
 		[269613] = {
 			159916,
 			22
+		},
+		[272440] = {
+			158378,
+			1
+		},
+		[282164] = {
+			164675,
+			15
 		},
 		[282165] = {
 			164675,
@@ -61602,6 +63759,10 @@ _.ReagentsDB=
 			164675,
 			8
 		},
+		[282168] = {
+			164674,
+			20
+		},
 		[282169] = {
 			164674,
 			18
@@ -61610,12 +63771,20 @@ _.ReagentsDB=
 			164674,
 			15
 		},
+		[282175] = {
+			164673,
+			25
+		},
 		[282176] = {
 			164673,
 			22
 		},
 		[282177] = {
 			164673,
+			20
+		},
+		[282191] = {
+			164672,
 			20
 		},
 		[282192] = {
@@ -61626,6 +63795,10 @@ _.ReagentsDB=
 			164672,
 			15
 		},
+		[282194] = {
+			164671,
+			20
+		},
 		[282195] = {
 			164671,
 			18
@@ -61633,6 +63806,10 @@ _.ReagentsDB=
 		[282196] = {
 			164671,
 			15
+		},
+		[282204] = {
+			164676,
+			20
 		},
 		[282275] = {
 			164676,
@@ -61666,6 +63843,10 @@ _.ReagentsDB=
 			165418,
 			50
 		},
+		[294829] = {
+			167983,
+			8
+		},
 		[294830] = {
 			167983,
 			6
@@ -61673,6 +63854,10 @@ _.ReagentsDB=
 		[294831] = {
 			167983,
 			5
+		},
+		[294832] = {
+			167979,
+			8
 		},
 		[294833] = {
 			167979,
@@ -61682,6 +63867,10 @@ _.ReagentsDB=
 			167979,
 			5
 		},
+		[294835] = {
+			167985,
+			8
+		},
 		[294836] = {
 			167985,
 			6
@@ -61689,6 +63878,10 @@ _.ReagentsDB=
 		[294837] = {
 			167985,
 			5
+		},
+		[294838] = {
+			167987,
+			15
 		},
 		[294839] = {
 			167987,
@@ -61698,6 +63891,10 @@ _.ReagentsDB=
 			167987,
 			10
 		},
+		[294841] = {
+			167977,
+			8
+		},
 		[294842] = {
 			167977,
 			6
@@ -61705,6 +63902,10 @@ _.ReagentsDB=
 		[294843] = {
 			167977,
 			5
+		},
+		[294844] = {
+			167981,
+			6
 		},
 		[294845] = {
 			167981,
@@ -61714,6 +63915,10 @@ _.ReagentsDB=
 			167981,
 			4
 		},
+		[304565] = {
+			170320,
+			10
+		},
 		[304566] = {
 			170320,
 			8
@@ -61721,6 +63926,10 @@ _.ReagentsDB=
 		[304567] = {
 			170320,
 			7
+		},
+		[304568] = {
+			170327,
+			10
 		},
 		[304569] = {
 			170327,
@@ -61730,6 +63939,10 @@ _.ReagentsDB=
 			170327,
 			7
 		},
+		[304571] = {
+			170340,
+			10
+		},
 		[304572] = {
 			170340,
 			8
@@ -61737,6 +63950,10 @@ _.ReagentsDB=
 		[304573] = {
 			170340,
 			7
+		},
+		[304574] = {
+			170325,
+			20
 		},
 		[304575] = {
 			170325,
@@ -61746,6 +63963,10 @@ _.ReagentsDB=
 			170325,
 			15
 		},
+		[304577] = {
+			170324,
+			10
+		},
 		[304578] = {
 			170324,
 			8
@@ -61754,6 +63975,10 @@ _.ReagentsDB=
 			170324,
 			7
 		},
+		[304580] = {
+			170323,
+			8
+		},
 		[304581] = {
 			170323,
 			7
@@ -61761,6 +63986,14 @@ _.ReagentsDB=
 		[304582] = {
 			170323,
 			6
+		},
+		[330260] = {
+			180059,
+			6
+		},
+		[330261] = {
+			180060,
+			7
 		},
 	},
 	[152579] = {
@@ -63464,6 +65697,14 @@ _.ReagentsDB=
 			154159,
 			3
 		},
+		[257114] = {
+			154700,
+			3
+		},
+		[257115] = {
+			154700,
+			2
+		},
 		[257116] = {
 			154700,
 			1
@@ -63652,6 +65893,10 @@ _.ReagentsDB=
 			159896,
 			3
 		},
+		[269596] = {
+			159917,
+			3
+		},
 		[269597] = {
 			159917,
 			2
@@ -63659,6 +65904,10 @@ _.ReagentsDB=
 		[269598] = {
 			159917,
 			1
+		},
+		[269599] = {
+			159912,
+			3
 		},
 		[269600] = {
 			159912,
@@ -63668,6 +65917,10 @@ _.ReagentsDB=
 			159912,
 			1
 		},
+		[269602] = {
+			159913,
+			3
+		},
 		[269603] = {
 			159913,
 			2
@@ -63675,6 +65928,10 @@ _.ReagentsDB=
 		[269604] = {
 			159913,
 			1
+		},
+		[269605] = {
+			159914,
+			6
 		},
 		[269606] = {
 			159914,
@@ -63684,6 +65941,10 @@ _.ReagentsDB=
 			159914,
 			4
 		},
+		[269608] = {
+			159915,
+			3
+		},
 		[269609] = {
 			159915,
 			2
@@ -63691,6 +65952,10 @@ _.ReagentsDB=
 		[269610] = {
 			159915,
 			1
+		},
+		[269611] = {
+			159916,
+			2
 		},
 		[269612] = {
 			159916,
@@ -63836,6 +66101,10 @@ _.ReagentsDB=
 			165742,
 			10
 		},
+		[278414] = {
+			165739,
+			30
+		},
 		[278415] = {
 			165740,
 			20
@@ -63872,6 +66141,10 @@ _.ReagentsDB=
 			153598,
 			1
 		},
+		[282164] = {
+			164675,
+			2
+		},
 		[282165] = {
 			164675,
 			1
@@ -63879,6 +66152,10 @@ _.ReagentsDB=
 		[282166] = {
 			164675,
 			1
+		},
+		[282168] = {
+			164674,
+			3
 		},
 		[282169] = {
 			164674,
@@ -63888,12 +66165,20 @@ _.ReagentsDB=
 			164674,
 			1
 		},
+		[282175] = {
+			164673,
+			5
+		},
 		[282176] = {
 			164673,
 			4
 		},
 		[282177] = {
 			164673,
+			3
+		},
+		[282191] = {
+			164672,
 			3
 		},
 		[282192] = {
@@ -63904,6 +66189,10 @@ _.ReagentsDB=
 			164672,
 			1
 		},
+		[282194] = {
+			164671,
+			3
+		},
 		[282195] = {
 			164671,
 			2
@@ -63911,6 +66200,10 @@ _.ReagentsDB=
 		[282196] = {
 			164671,
 			1
+		},
+		[282204] = {
+			164676,
+			3
 		},
 		[282275] = {
 			164676,
@@ -64812,6 +67105,10 @@ _.ReagentsDB=
 			167935,
 			3
 		},
+		[294829] = {
+			167983,
+			3
+		},
 		[294830] = {
 			167983,
 			2
@@ -64819,6 +67116,10 @@ _.ReagentsDB=
 		[294831] = {
 			167983,
 			1
+		},
+		[294832] = {
+			167979,
+			3
 		},
 		[294833] = {
 			167979,
@@ -64828,6 +67129,10 @@ _.ReagentsDB=
 			167979,
 			1
 		},
+		[294835] = {
+			167985,
+			3
+		},
 		[294836] = {
 			167985,
 			2
@@ -64835,6 +67140,10 @@ _.ReagentsDB=
 		[294837] = {
 			167985,
 			1
+		},
+		[294838] = {
+			167987,
+			5
 		},
 		[294839] = {
 			167987,
@@ -64844,6 +67153,10 @@ _.ReagentsDB=
 			167987,
 			3
 		},
+		[294841] = {
+			167977,
+			3
+		},
 		[294842] = {
 			167977,
 			2
@@ -64851,6 +67164,10 @@ _.ReagentsDB=
 		[294843] = {
 			167977,
 			1
+		},
+		[294844] = {
+			167981,
+			2
 		},
 		[294845] = {
 			167981,
@@ -65016,12 +67333,20 @@ _.ReagentsDB=
 			168721,
 			40
 		},
+		[299031] = {
+			168728,
+			20
+		},
 		[299032] = {
 			168729,
 			25
 		},
 		[299033] = {
 			168730,
+			30
+		},
+		[299034] = {
+			168731,
 			30
 		},
 		[299035] = {
@@ -65248,6 +67573,10 @@ _.ReagentsDB=
 			170461,
 			60
 		},
+		[304565] = {
+			170320,
+			5
+		},
 		[304566] = {
 			170320,
 			4
@@ -65255,6 +67584,10 @@ _.ReagentsDB=
 		[304567] = {
 			170320,
 			3
+		},
+		[304568] = {
+			170327,
+			5
 		},
 		[304569] = {
 			170327,
@@ -65264,6 +67597,10 @@ _.ReagentsDB=
 			170327,
 			3
 		},
+		[304571] = {
+			170340,
+			5
+		},
 		[304572] = {
 			170340,
 			4
@@ -65271,6 +67608,10 @@ _.ReagentsDB=
 		[304573] = {
 			170340,
 			3
+		},
+		[304574] = {
+			170325,
+			7
 		},
 		[304575] = {
 			170325,
@@ -65280,6 +67621,10 @@ _.ReagentsDB=
 			170325,
 			5
 		},
+		[304577] = {
+			170324,
+			5
+		},
 		[304578] = {
 			170324,
 			4
@@ -65287,6 +67632,10 @@ _.ReagentsDB=
 		[304579] = {
 			170324,
 			3
+		},
+		[304580] = {
+			170323,
+			4
 		},
 		[304581] = {
 			170323,
@@ -68846,6 +71195,14 @@ _.ReagentsDB=
 		},
 	},
 	[158378] = {
+		[257114] = {
+			154700,
+			15
+		},
+		[257115] = {
+			154700,
+			13
+		},
 		[257116] = {
 			154700,
 			10
@@ -68886,17 +71243,45 @@ _.ReagentsDB=
 			154696,
 			65
 		},
+		[257131] = {
+			154707,
+			10
+		},
+		[257132] = {
+			154707,
+			8
+		},
 		[257133] = {
 			154707,
 			5
+		},
+		[257134] = {
+			154706,
+			10
+		},
+		[257135] = {
+			154706,
+			8
 		},
 		[257136] = {
 			154706,
 			5
 		},
+		[257137] = {
+			154705,
+			10
+		},
+		[257138] = {
+			154705,
+			8
+		},
 		[257139] = {
 			154705,
 			5
+		},
+		[282164] = {
+			164675,
+			20
 		},
 		[282165] = {
 			164675,
@@ -68906,6 +71291,10 @@ _.ReagentsDB=
 			164675,
 			10
 		},
+		[282168] = {
+			164674,
+			25
+		},
 		[282169] = {
 			164674,
 			22
@@ -68914,12 +71303,20 @@ _.ReagentsDB=
 			164674,
 			20
 		},
+		[282175] = {
+			164673,
+			35
+		},
 		[282176] = {
 			164673,
 			30
 		},
 		[282177] = {
 			164673,
+			25
+		},
+		[282191] = {
+			164672,
 			25
 		},
 		[282192] = {
@@ -68930,6 +71327,10 @@ _.ReagentsDB=
 			164672,
 			20
 		},
+		[282194] = {
+			164671,
+			25
+		},
 		[282195] = {
 			164671,
 			22
@@ -68937,6 +71338,10 @@ _.ReagentsDB=
 		[282196] = {
 			164671,
 			20
+		},
+		[282204] = {
+			164676,
+			25
 		},
 		[282275] = {
 			164676,
@@ -68970,6 +71375,10 @@ _.ReagentsDB=
 			165418,
 			45
 		},
+		[299031] = {
+			168728,
+			15
+		},
 		[299032] = {
 			168729,
 			20
@@ -68978,6 +71387,10 @@ _.ReagentsDB=
 			168730,
 			25
 		},
+		[299034] = {
+			168731,
+			20
+		},
 		[299035] = {
 			168732,
 			25
@@ -68985,6 +71398,14 @@ _.ReagentsDB=
 		[299036] = {
 			168733,
 			30
+		},
+		[301403] = {
+			169456,
+			3
+		},
+		[301409] = {
+			168427,
+			10
 		},
 		[304559] = {
 			170456,
@@ -69024,6 +71445,50 @@ _.ReagentsDB=
 		},
 	},
 	[159959] = {
+		[257095] = {
+			154686,
+			20
+		},
+		[257096] = {
+			154687,
+			10
+		},
+		[257097] = {
+			154688,
+			20
+		},
+		[257099] = {
+			154689,
+			10
+		},
+		[257101] = {
+			154690,
+			10
+		},
+		[257102] = {
+			154691,
+			10
+		},
+		[257103] = {
+			154692,
+			5
+		},
+		[257104] = {
+			154685,
+			20
+		},
+		[257107] = {
+			154697,
+			10
+		},
+		[257114] = {
+			154700,
+			12
+		},
+		[257115] = {
+			154700,
+			10
+		},
 		[257116] = {
 			154700,
 			8
@@ -69052,21 +71517,65 @@ _.ReagentsDB=
 			162478,
 			75
 		},
+		[257125] = {
+			154695,
+			15
+		},
+		[257126] = {
+			154695,
+			14
+		},
 		[257127] = {
 			154695,
 			12
+		},
+		[257131] = {
+			154707,
+			20
+		},
+		[257132] = {
+			154707,
+			18
 		},
 		[257133] = {
 			154707,
 			16
 		},
+		[257134] = {
+			154706,
+			20
+		},
+		[257135] = {
+			154706,
+			18
+		},
 		[257136] = {
 			154706,
 			16
 		},
+		[257137] = {
+			154705,
+			20
+		},
+		[257138] = {
+			154705,
+			18
+		},
 		[257139] = {
 			154705,
 			16
+		},
+		[268982] = {
+			159791,
+			15
+		},
+		[268983] = {
+			159792,
+			15
+		},
+		[269596] = {
+			159917,
+			25
 		},
 		[269597] = {
 			159917,
@@ -69076,6 +71585,10 @@ _.ReagentsDB=
 			159917,
 			15
 		},
+		[269599] = {
+			159912,
+			25
+		},
 		[269600] = {
 			159912,
 			20
@@ -69083,6 +71596,10 @@ _.ReagentsDB=
 		[269601] = {
 			159912,
 			15
+		},
+		[269602] = {
+			159913,
+			25
 		},
 		[269603] = {
 			159913,
@@ -69092,6 +71609,10 @@ _.ReagentsDB=
 			159913,
 			15
 		},
+		[269605] = {
+			159914,
+			25
+		},
 		[269606] = {
 			159914,
 			20
@@ -69099,6 +71620,10 @@ _.ReagentsDB=
 		[269607] = {
 			159914,
 			15
+		},
+		[269608] = {
+			159915,
+			25
 		},
 		[269609] = {
 			159915,
@@ -69108,6 +71633,10 @@ _.ReagentsDB=
 			159915,
 			15
 		},
+		[269611] = {
+			159916,
+			12
+		},
 		[269612] = {
 			159916,
 			10
@@ -69115,6 +71644,18 @@ _.ReagentsDB=
 		[269613] = {
 			159916,
 			8
+		},
+		[272440] = {
+			158378,
+			5
+		},
+		[278414] = {
+			165739,
+			20
+		},
+		[282164] = {
+			164675,
+			12
 		},
 		[282165] = {
 			164675,
@@ -69124,6 +71665,10 @@ _.ReagentsDB=
 			164675,
 			8
 		},
+		[282168] = {
+			164674,
+			25
+		},
 		[282169] = {
 			164674,
 			20
@@ -69131,6 +71676,10 @@ _.ReagentsDB=
 		[282170] = {
 			164674,
 			15
+		},
+		[282175] = {
+			164673,
+			25
 		},
 		[282176] = {
 			164673,
@@ -69140,6 +71689,10 @@ _.ReagentsDB=
 			164673,
 			15
 		},
+		[282191] = {
+			164672,
+			25
+		},
 		[282192] = {
 			164672,
 			20
@@ -69148,6 +71701,10 @@ _.ReagentsDB=
 			164672,
 			15
 		},
+		[282194] = {
+			164671,
+			25
+		},
 		[282195] = {
 			164671,
 			20
@@ -69155,6 +71712,10 @@ _.ReagentsDB=
 		[282196] = {
 			164671,
 			15
+		},
+		[282204] = {
+			164676,
+			25
 		},
 		[282275] = {
 			164676,
@@ -69188,9 +71749,21 @@ _.ReagentsDB=
 			165418,
 			50
 		},
+		[286654] = {
+			162461,
+			10
+		},
+		[287274] = {
+			162460,
+			5
+		},
 		[292946] = {
 			164733,
 			75
+		},
+		[294829] = {
+			167983,
+			25
 		},
 		[294830] = {
 			167983,
@@ -69200,6 +71773,10 @@ _.ReagentsDB=
 			167983,
 			20
 		},
+		[294832] = {
+			167979,
+			25
+		},
 		[294833] = {
 			167979,
 			23
@@ -69207,6 +71784,10 @@ _.ReagentsDB=
 		[294834] = {
 			167979,
 			20
+		},
+		[294835] = {
+			167985,
+			25
 		},
 		[294836] = {
 			167985,
@@ -69216,6 +71797,10 @@ _.ReagentsDB=
 			167985,
 			20
 		},
+		[294838] = {
+			167987,
+			40
+		},
 		[294839] = {
 			167987,
 			35
@@ -69223,6 +71808,10 @@ _.ReagentsDB=
 		[294840] = {
 			167987,
 			30
+		},
+		[294841] = {
+			167977,
+			25
 		},
 		[294842] = {
 			167977,
@@ -69232,6 +71821,10 @@ _.ReagentsDB=
 			167977,
 			20
 		},
+		[294844] = {
+			167981,
+			8
+		},
 		[294845] = {
 			167981,
 			6
@@ -69240,12 +71833,20 @@ _.ReagentsDB=
 			167981,
 			5
 		},
+		[299031] = {
+			168728,
+			40
+		},
 		[299032] = {
 			168729,
 			45
 		},
 		[299033] = {
 			168730,
+			50
+		},
+		[299034] = {
+			168731,
 			50
 		},
 		[299035] = {
@@ -69256,9 +71857,17 @@ _.ReagentsDB=
 			168733,
 			60
 		},
+		[301403] = {
+			169456,
+			5
+		},
 		[301405] = {
 			169445,
 			5
+		},
+		[301409] = {
+			168427,
+			20
 		},
 		[304559] = {
 			170456,
@@ -69284,6 +71893,10 @@ _.ReagentsDB=
 			170461,
 			90
 		},
+		[304565] = {
+			170320,
+			35
+		},
 		[304566] = {
 			170320,
 			30
@@ -69291,6 +71904,10 @@ _.ReagentsDB=
 		[304567] = {
 			170320,
 			25
+		},
+		[304568] = {
+			170327,
+			35
 		},
 		[304569] = {
 			170327,
@@ -69300,6 +71917,10 @@ _.ReagentsDB=
 			170327,
 			25
 		},
+		[304571] = {
+			170340,
+			35
+		},
 		[304572] = {
 			170340,
 			30
@@ -69307,6 +71928,10 @@ _.ReagentsDB=
 		[304573] = {
 			170340,
 			25
+		},
+		[304574] = {
+			170325,
+			60
 		},
 		[304575] = {
 			170325,
@@ -69316,6 +71941,10 @@ _.ReagentsDB=
 			170325,
 			40
 		},
+		[304577] = {
+			170324,
+			35
+		},
 		[304578] = {
 			170324,
 			30
@@ -69323,6 +71952,10 @@ _.ReagentsDB=
 		[304579] = {
 			170324,
 			25
+		},
+		[304580] = {
+			170323,
+			10
 		},
 		[304581] = {
 			170323,
@@ -70688,6 +73321,10 @@ _.ReagentsDB=
 			165742,
 			1
 		},
+		[278414] = {
+			165739,
+			1
+		},
 		[278415] = {
 			165740,
 			1
@@ -71486,6 +74123,10 @@ _.ReagentsDB=
 			162461,
 			1
 		},
+		[286654] = {
+			162461,
+			1
+		},
 		[286865] = {
 			165892,
 			20
@@ -71609,6 +74250,10 @@ _.ReagentsDB=
 			1
 		},
 		[287273] = {
+			162460,
+			1
+		},
+		[287274] = {
 			162460,
 			1
 		},
@@ -72014,6 +74659,10 @@ _.ReagentsDB=
 		},
 	},
 	[167738] = {
+		[294829] = {
+			167983,
+			20
+		},
 		[294830] = {
 			167983,
 			18
@@ -72021,6 +74670,10 @@ _.ReagentsDB=
 		[294831] = {
 			167983,
 			15
+		},
+		[294832] = {
+			167979,
+			20
 		},
 		[294833] = {
 			167979,
@@ -72030,6 +74683,10 @@ _.ReagentsDB=
 			167979,
 			15
 		},
+		[294835] = {
+			167985,
+			20
+		},
 		[294836] = {
 			167985,
 			18
@@ -72037,6 +74694,10 @@ _.ReagentsDB=
 		[294837] = {
 			167985,
 			15
+		},
+		[294838] = {
+			167987,
+			30
 		},
 		[294839] = {
 			167987,
@@ -72046,6 +74707,10 @@ _.ReagentsDB=
 			167987,
 			25
 		},
+		[294841] = {
+			167977,
+			20
+		},
 		[294842] = {
 			167977,
 			18
@@ -72053,6 +74718,10 @@ _.ReagentsDB=
 		[294843] = {
 			167977,
 			15
+		},
+		[294844] = {
+			167981,
+			10
 		},
 		[294845] = {
 			167981,
@@ -72062,6 +74731,10 @@ _.ReagentsDB=
 			167981,
 			7
 		},
+		[299031] = {
+			168728,
+			75
+		},
 		[299032] = {
 			168729,
 			85
@@ -72070,6 +74743,10 @@ _.ReagentsDB=
 			168730,
 			100
 		},
+		[299034] = {
+			168731,
+			85
+		},
 		[299035] = {
 			168732,
 			100
@@ -72077,6 +74754,14 @@ _.ReagentsDB=
 		[299036] = {
 			168733,
 			115
+		},
+		[301403] = {
+			169456,
+			25
+		},
+		[301409] = {
+			168427,
+			50
 		},
 		[304559] = {
 			170456,
@@ -72102,6 +74787,10 @@ _.ReagentsDB=
 			170461,
 			250
 		},
+		[304565] = {
+			170320,
+			25
+		},
 		[304566] = {
 			170320,
 			23
@@ -72109,6 +74798,10 @@ _.ReagentsDB=
 		[304567] = {
 			170320,
 			20
+		},
+		[304568] = {
+			170327,
+			25
 		},
 		[304569] = {
 			170327,
@@ -72118,6 +74811,10 @@ _.ReagentsDB=
 			170327,
 			20
 		},
+		[304571] = {
+			170340,
+			25
+		},
 		[304572] = {
 			170340,
 			23
@@ -72125,6 +74822,10 @@ _.ReagentsDB=
 		[304573] = {
 			170340,
 			20
+		},
+		[304574] = {
+			170325,
+			40
 		},
 		[304575] = {
 			170325,
@@ -72134,6 +74835,10 @@ _.ReagentsDB=
 			170325,
 			35
 		},
+		[304577] = {
+			170324,
+			25
+		},
 		[304578] = {
 			170324,
 			23
@@ -72141,6 +74846,10 @@ _.ReagentsDB=
 		[304579] = {
 			170324,
 			20
+		},
+		[304580] = {
+			170323,
+			13
 		},
 		[304581] = {
 			170323,
@@ -73564,6 +76273,10 @@ _.ReagentsDB=
 			169445,
 			10
 		},
+		[301409] = {
+			168427,
+			15
+		},
 		[304412] = {
 			170345,
 			20
@@ -74304,6 +77017,10 @@ _.ReagentsDB=
 			171320,
 			10
 		},
+		[307175] = {
+			171320,
+			10
+		},
 		[307176] = {
 			171320,
 			10
@@ -74530,7 +77247,7 @@ _.ReagentsDB=
 		},
 		[307706] = {
 			171418,
-			105
+			25
 		},
 		[307707] = {
 			171417,
@@ -74602,7 +77319,7 @@ _.ReagentsDB=
 		},
 		[332007] = {
 			171418,
-			105
+			40
 		},
 		[332008] = {
 			171417,
@@ -74642,7 +77359,7 @@ _.ReagentsDB=
 		},
 		[332042] = {
 			171418,
-			105
+			65
 		},
 		[332043] = {
 			171417,
@@ -76764,7 +79481,7 @@ _.ReagentsDB=
 		},
 		[307706] = {
 			171418,
-			40
+			10
 		},
 		[307707] = {
 			171417,
@@ -76796,7 +79513,7 @@ _.ReagentsDB=
 		},
 		[332007] = {
 			171418,
-			40
+			15
 		},
 		[332008] = {
 			171417,
@@ -76828,7 +79545,7 @@ _.ReagentsDB=
 		},
 		[332042] = {
 			171418,
-			40
+			25
 		},
 		[332043] = {
 			171417,
@@ -79536,6 +82253,166 @@ _.ReagentsDB=
 			168419,
 			5
 		},
+		[330222] = {
+			180055,
+			1
+		},
+		[330223] = {
+			180057,
+			2
+		},
+		[330224] = {
+			180058,
+			3
+		},
+		[330225] = {
+			180059,
+			8
+		},
+		[330226] = {
+			180060,
+			12
+		},
+		[330227] = {
+			180055,
+			1
+		},
+		[330228] = {
+			180057,
+			2
+		},
+		[330229] = {
+			180058,
+			3
+		},
+		[330230] = {
+			180059,
+			8
+		},
+		[330231] = {
+			180060,
+			12
+		},
+		[330232] = {
+			180055,
+			1
+		},
+		[330233] = {
+			180057,
+			2
+		},
+		[330234] = {
+			180058,
+			3
+		},
+		[330235] = {
+			180059,
+			8
+		},
+		[330236] = {
+			180060,
+			12
+		},
+		[330237] = {
+			180055,
+			1
+		},
+		[330238] = {
+			180057,
+			2
+		},
+		[330239] = {
+			180058,
+			3
+		},
+		[330240] = {
+			180059,
+			8
+		},
+		[330241] = {
+			180060,
+			12
+		},
+		[330242] = {
+			180055,
+			1
+		},
+		[330243] = {
+			180057,
+			2
+		},
+		[330244] = {
+			180058,
+			3
+		},
+		[330245] = {
+			180059,
+			8
+		},
+		[330246] = {
+			180060,
+			12
+		},
+		[330247] = {
+			180055,
+			1
+		},
+		[330248] = {
+			180057,
+			2
+		},
+		[330249] = {
+			180058,
+			3
+		},
+		[330250] = {
+			180059,
+			8
+		},
+		[330251] = {
+			180060,
+			12
+		},
+		[330252] = {
+			180055,
+			1
+		},
+		[330253] = {
+			180057,
+			2
+		},
+		[330254] = {
+			180058,
+			3
+		},
+		[330255] = {
+			180059,
+			8
+		},
+		[330256] = {
+			180060,
+			12
+		},
+		[330257] = {
+			180055,
+			1
+		},
+		[330258] = {
+			180057,
+			2
+		},
+		[330259] = {
+			180058,
+			3
+		},
+		[330260] = {
+			180059,
+			8
+		},
+		[330261] = {
+			180060,
+			12
+		},
 		[334499] = {
 			180752,
 			2
@@ -79764,7 +82641,7 @@ _.ReagentsDB=
 		},
 		[307706] = {
 			171418,
-			40
+			10
 		},
 		[307707] = {
 			171417,
@@ -79904,7 +82781,7 @@ _.ReagentsDB=
 		},
 		[332007] = {
 			171418,
-			40
+			15
 		},
 		[332008] = {
 			171417,
@@ -80044,7 +82921,7 @@ _.ReagentsDB=
 		},
 		[332042] = {
 			171418,
-			40
+			25
 		},
 		[332043] = {
 			171417,
@@ -81028,7 +83905,7 @@ _.ReagentsDB=
 		},
 		[307706] = {
 			171418,
-			105
+			25
 		},
 		[307707] = {
 			171417,
@@ -81260,7 +84137,7 @@ _.ReagentsDB=
 		},
 		[332007] = {
 			171418,
-			105
+			40
 		},
 		[332008] = {
 			171417,
@@ -81292,7 +84169,7 @@ _.ReagentsDB=
 		},
 		[332042] = {
 			171418,
-			105
+			65
 		},
 		[332043] = {
 			171417,
