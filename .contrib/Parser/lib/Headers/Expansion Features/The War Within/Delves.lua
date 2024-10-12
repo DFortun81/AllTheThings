@@ -8,5 +8,6 @@ DELVES = createHeader({
 	text = {
 		en = "Delves",
 		cn = "地下堡",
+		tw = "探究",
 	},
 });
