@@ -6025,10 +6025,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(60365),	-- Gildenite Grab (Venthyr)
 			-- Quest from Unsorted
 			q(60286, { ["name"] = "A Token of Our Admiration", }),	-- A Token of Our Admiration
-			q(60465, { ["name"] = "Anima Appeal", }),	-- Anima Appeal (Kyrian)
-			q(60464, { ["name"] = "Anima Appeal", }),	-- Anima Appeal (Necrolords)
-			q(60462, { ["name"] = "Anima Appeal", }),	-- Anima Appeal (Night Fae)
-			q(60463, { ["name"] = "Anima Appeal", }),	-- Anima Appeal (Venthyr)
 			q(60157, { ["name"] = "Answers from the Ascended", }),	-- Answers from the Ascended
 			q(55424, { ["name"] = "Aspirant Elynna", }),	-- Aspirant Elynna
 			q(62168, { ["name"] = "Bonescript Dispatches", }),	-- Bonescript Dispatches

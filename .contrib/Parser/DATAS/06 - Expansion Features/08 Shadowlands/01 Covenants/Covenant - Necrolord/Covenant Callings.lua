@@ -73,6 +73,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(181732),	-- Tribute of the Ambitious
 					},
 				}),
+				q(60464, {	-- Anima Appeal
+					["provider"] = { "n", 167205 },	-- Yondare Hex
+					--["coord"] = { , MALDRAXXUS },
+					["g"] = {
+						i(181732),	-- Tribute of the Ambitious
+					},
+				}),
 				q(60459, {	-- Anima Salvage
 					["provider"] = { "n", 167207 },	-- Sabbath Nightshade
 					["coord"] = { 43.2, 47.8, SEAT_OF_THE_PRIMUS },

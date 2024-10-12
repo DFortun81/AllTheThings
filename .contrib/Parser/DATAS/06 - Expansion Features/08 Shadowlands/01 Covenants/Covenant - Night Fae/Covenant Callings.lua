@@ -74,6 +74,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(181556),	-- Tribute of the Court
 					},
 				}),
+				q(60462, {	-- Anima Appeal
+					["provider"] = { "n", 167196 },	-- Sesselie
+					["coord"] = { 48.9, 39.3, ARDENWEALD },
+					["g"] = {
+						i(181475),	-- Bounty of the Grove Wardens
+					},
+				}),
 				q(60457, {	-- Anima Salvage
 					["provider"] = { "n", 158553 },	-- Flutterby
 					["coord"] = { 33.9, 43.5, ARDENWEALD },

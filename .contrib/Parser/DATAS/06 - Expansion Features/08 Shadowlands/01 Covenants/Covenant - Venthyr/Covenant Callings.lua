@@ -48,6 +48,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(181732),	-- Tribute of the Ambitious
 					},
 				}),
+				q(60463, {	-- Anima Appeal
+					--["provider"] = { "n",  },	--
+					--["coord"] = { X, Y, SINFALL_DEPTHS },
+					["g"] = {
+						i(181556),	-- Tribute of the Court
+					},
+				}),
 				q(60389, {	-- Aiding Ardenweald
 					["provider"] = { "n", 165302 },	-- Rendle
 					["coord"] = { 62.2, 76.3, SINFALL_DEPTHS },

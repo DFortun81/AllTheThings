@@ -70,6 +70,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 						i(181556),	-- Tribute of the Court
 					},
 				}),
+				q(60465, {	-- Anima Appeal
+					["provider"] = { "n", 158773 },	-- Capheus
+					["coord"] = { 64.0, 20.0, BASTION },
+					["g"] = {
+						i(181372),	-- Tribute of the Ascended
+					},
+				}),
 				q(60458, {	-- Anima Salvage
 					["provider"] = { "n", 160212 },	-- Soulguide Daelia
 					["coord"] = { 59.4, 34.7, SANCTUM_OF_BINDING },
