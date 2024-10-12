@@ -83,6 +83,14 @@ FUNCTION_TEMPLATES = {
 		end]]
 		return [[_.OnTooltipDB.]]..OnTooltipName..[[]]
 	end,
+	-- Generates an OnUpdate function into ExportDB.OnUpdateDB to assign the 'visible' field of the group to true based
+	-- on whether the player is currently on the related QuestID
+	-- Note: This is bad, don't use this! It overrides Filter logic.
+	GenerateOnUpdateIsOnQuestVisibleOverride = function(questID)
+		local OnUpdateName = "IsOnQuestVisibleOverride"..questID
+		ExportDB.OnUpdateDB[OnUpdateName] = [[~function(t) if not C_QuestLog.IsOnQuest(]]..questID..[[) then t.visible = false; return true; end end]]
+		return [[_.OnUpdateDB.]]..OnUpdateName..[[]]
+	end,
 };
 ExportDB.OnTooltipDB = {
 	-- #if BEFORE CATA
@@ -137,5 +145,19 @@ ExportDB.OnTooltipDB = {
 	end]],
 	WithRequiredAchievement = [[~function(t, tooltipInfo)
 		if t.ach then tinsert(tooltipInfo, { left = _.L.REQUIRES, right = t.ach.text }); end
+	end]],
+}
+ExportDB.OnClickDB = {
+	-- Turns the normal right-click popout of a Thing into a popout of the 'ach' data instead
+	-- NOTE: This is very misleading to the typical user as it's completely unclear as to why the popout
+	-- is showing something completely different from what they expected
+	-- TODO: I believe with the expected intent for this, it probably isn't necessary to use this function and instead
+	-- have the 'Source(s)' group within the popout include this Achievement data as a 'pre-requisite'...
+	-- or maybe just use 'sourceAchievements' instead of this manual handler?
+	PopoutLinkedAchievement = [[~function(row, button)
+		if button == "RightButton" and row.ref.ach then
+			_:CreateMiniListForGroup(row.ref.ach);
+			return true;
+		end
 	end]]
-};
+}

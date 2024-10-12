@@ -19,13 +19,17 @@ local VALIANTS_SEAL = i(44987);	-- Valiant's Seal
 
 -- TODO: Finish setting this up, intent is to right click and show the achievement that's required.
 -- The dailies are locked until they're unlocked by completing A Silver Confidant for Alliance or The Sunreavers for Horde
-local CRUSADER_DAILY_OnClick = [[function(row, button)
-	if button == "RightButton" and row.ref.ach then
-		_:CreateMiniListForGroup(row.ref.ach);
-		return true;
-	end
-end]];
-local CRUSADER_DAILY_OnUpdate = [[function(t)
+local CRUSADER_DAILY_OnClick = [[_.OnClickDB.PopoutLinkedAchievement]]
+local SILVER_COVENTANT_DAILY_OnClick = [[_.OnClickDB.PopoutLinkedAchievement]]
+local SUNREAVERS_DAILY_OnClick = [[_.OnClickDB.PopoutLinkedAchievement]]
+-- Very misleading to change what is popped out, I think we will find an alternate solution for this eventually,
+-- but for now I'd like Retail to not perform this swap -- Runaway
+-- #IF NOT ANYCLASSIC
+CRUSADER_DAILY_OnClick = nil
+SILVER_COVENTANT_DAILY_OnClick = nil
+SUNREAVERS_DAILY_OnClick = nil
+-- #ENDIF
+ExportDB.OnUpdateDB.CRUSADER_DAILY = [[~function(t)
 	if not t.ach then
 		local f = _.SearchForField("achievementID", _.Faction == "Horde" and 2771 or 2817);
 		if f and #f > 0 then
@@ -38,13 +42,7 @@ local CRUSADER_DAILY_OnUpdate = [[function(t)
 		end
 	end
 end]];
-local SILVER_COVENTANT_DAILY_OnClick = [[function(row, button)
-	if button == "RightButton" and row.ref.ach then
-		_:CreateMiniListForGroup(row.ref.ach);
-		return true;
-	end
-end]];
-local SILVER_COVENTANT_DAILY_OnUpdate = [[function(t)
+ExportDB.OnUpdateDB.SILVER_COVENTANT_DAILY = [[~function(t)
 	if not t.ach then
 		local f = _.SearchForField("achievementID", 3676);
 		if f and #f > 0 then
@@ -57,13 +55,7 @@ local SILVER_COVENTANT_DAILY_OnUpdate = [[function(t)
 		end
 	end
 end]];
-local SUNREAVERS_DAILY_OnClick = [[function(row, button)
-	if button == "RightButton" and row.ref.ach then
-		_:CreateMiniListForGroup(row.ref.ach);
-		return true;
-	end
-end]];
-local SUNREAVERS_DAILY_OnUpdate = [[function(t)
+ExportDB.OnUpdateDB.SUNREAVERS_DAILY = [[~function(t)
 	if not t.ach then
 		local f = _.SearchForField("achievementID", 3677);
 		if f and #f > 0 then
@@ -79,7 +71,7 @@ end]];
 local VALIANT_DAILY_OnUpdate = function(valiantQuestID)
 	-- #if ANYCLASSIC
 	-- Forcibly changing visibility on groups is bad. These quests are impossible to see even in Debug unless actually being on the respective quest.
-	return [[function(t) if not C_QuestLog.IsOnQuest(]] .. valiantQuestID .. [[) then t.visible = false; return true; end end]];
+	return FUNCTION_TEMPLATES.GenerateOnUpdateIsOnQuestVisibleOverride(valiantQuestID)
 	-- #endif
 end
 
@@ -835,7 +827,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
-						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
+						["OnUpdate"] = [[_.OnUpdateDB.SILVER_COVENTANT_DAILY]],
 						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["hordeQuestData"] = q(14143, {	-- A Leg Up (H)
@@ -843,7 +835,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
-						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
+						["OnUpdate"] = [[_.OnUpdateDB.SUNREAVERS_DAILY]],
 						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["isDaily"] = true,
@@ -1764,7 +1756,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 				applyclassicphase(WRATH_PHASE_THREE, q(24442, {	-- Battle Plans Of The Kvaldir
 					["provider"] = { "i", 49676 },	-- Kvaldir Attack Plans
 					["OnClick"] = CRUSADER_DAILY_OnClick,
-					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
+					["OnUpdate"] = [[_.OnUpdateDB.CRUSADER_DAILY]],
 					["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					["crs"] = {
 						34839,	-- Kvaldir Mist Binder
@@ -1787,7 +1779,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
-						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
+						["OnUpdate"] = [[_.OnUpdateDB.SILVER_COVENTANT_DAILY]],
 						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["hordeQuestData"] = q(14092, {	-- Breakfast Of Champions (H)
@@ -1795,7 +1787,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
-						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
+						["OnUpdate"] = [[_.OnUpdateDB.SUNREAVERS_DAILY]],
 						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["maps"] = { THE_STORM_PEAKS },
@@ -1836,7 +1828,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["qg"] = 34882,	-- High Crusader Adelard
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
-					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
+					["OnUpdate"] = [[_.OnUpdateDB.CRUSADER_DAILY]],
 					["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					["isDaily"] = true,
 					["groups"] = {
@@ -1851,7 +1843,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["qg"] = 34882,	-- High Crusader Adelard
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
-					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
+					["OnUpdate"] = [[_.OnUpdateDB.CRUSADER_DAILY]],
 					["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					["isDaily"] = true,
 					["groups"] = {
@@ -1887,7 +1879,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["qg"] = 35094,	-- Crusader Silverdawn
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
-					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
+					["OnUpdate"] = [[_.OnUpdateDB.CRUSADER_DAILY]],
 					["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					["isDaily"] = true,
 					["groups"] = {
@@ -1910,7 +1902,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
-						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
+						["OnUpdate"] = [[_.OnUpdateDB.SILVER_COVENTANT_DAILY]],
 						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["hordeQuestData"] = q(14141, {	-- Gormok Wants His Snobolds (H)
@@ -1918,7 +1910,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
-						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
+						["OnUpdate"] = [[_.OnUpdateDB.SUNREAVERS_DAILY]],
 						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["maps"] = { THE_STORM_PEAKS },
@@ -1939,7 +1931,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["provider"] = { "i", 46955 },	-- Kraken Tooth
 					["description"] = "Defeating the Kraken during |cFFFFD700Get Kraken|r rewards this item.",
 					["OnClick"] = CRUSADER_DAILY_OnClick,
-					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
+					["OnUpdate"] = [[_.OnUpdateDB.CRUSADER_DAILY]],
 					["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					["cr"] = 34925,	-- North Sea Kraken
 					["isDaily"] = true,
@@ -2097,7 +2089,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["qg"] = 34882,	-- High Crusader Adelard
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
-					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
+					["OnUpdate"] = [[_.OnUpdateDB.CRUSADER_DAILY]],
 					["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					["isDaily"] = true,
 					["groups"] = {
@@ -2115,7 +2107,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["qg"] = 34882,	-- High Crusader Adelard
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
-					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
+					["OnUpdate"] = [[_.OnUpdateDB.CRUSADER_DAILY]],
 					["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					["isDaily"] = true,
 					["groups"] = {
@@ -2135,7 +2127,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
-						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
+						["OnUpdate"] = [[_.OnUpdateDB.SILVER_COVENTANT_DAILY]],
 						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["hordeQuestData"] = q(14136, {	-- Rescue at Sea (H)
@@ -2143,7 +2135,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
-						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
+						["OnUpdate"] = [[_.OnUpdateDB.SUNREAVERS_DAILY]],
 						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["isDaily"] = true,
@@ -2163,7 +2155,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
-						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
+						["OnUpdate"] = [[_.OnUpdateDB.SILVER_COVENTANT_DAILY]],
 						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["hordeQuestData"] = q(14140, {	-- Stop The Aggressors (H)
@@ -2171,7 +2163,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
-						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
+						["OnUpdate"] = [[_.OnUpdateDB.SUNREAVERS_DAILY]],
 						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["isDaily"] = true,
@@ -2641,7 +2633,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 					["qg"] = 35094,	-- Crusader Silverdawn
 					["coord"] = { 69.4, 23.1, ICECROWN },
 					["OnClick"] = CRUSADER_DAILY_OnClick,
-					["OnUpdate"] = CRUSADER_DAILY_OnUpdate,
+					["OnUpdate"] = [[_.OnUpdateDB.CRUSADER_DAILY]],
 					["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					["isDaily"] = true,
 					["groups"] = {
@@ -2951,7 +2943,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
-						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
+						["OnUpdate"] = [[_.OnUpdateDB.SILVER_COVENTANT_DAILY]],
 						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["hordeQuestData"] = q(14144, {	-- The Light's Mercy (H)
@@ -2959,7 +2951,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
-						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
+						["OnUpdate"] = [[_.OnUpdateDB.SUNREAVERS_DAILY]],
 						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["isDaily"] = true,
@@ -3589,7 +3581,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
-						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
+						["OnUpdate"] = [[_.OnUpdateDB.SILVER_COVENTANT_DAILY]],
 						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["hordeQuestData"] = q(14145, {	-- What Do You Feed a Yeti, Anyway? (H)
@@ -3597,7 +3589,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
-						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
+						["OnUpdate"] = [[_.OnUpdateDB.SUNREAVERS_DAILY]],
 						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["isDaily"] = true,
@@ -3619,7 +3611,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["coord"] = { 76.2, 19.6, ICECROWN },
 						["minReputation"] = { FACTION_THE_SILVER_COVENANT, EXALTED },	-- The Silver Covenant, Exalted.
 						["OnClick"] = SILVER_COVENTANT_DAILY_OnClick,
-						["OnUpdate"] = SILVER_COVENTANT_DAILY_OnUpdate,
+						["OnUpdate"] = [[_.OnUpdateDB.SILVER_COVENTANT_DAILY]],
 						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["hordeQuestData"] = q(14142, {	-- You've Really Done It This Time, Kul (H)
@@ -3627,7 +3619,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WRATH, applyclassicphase(WRATH
 						["coord"] = { 76.1, 24.0, ICECROWN },
 						["minReputation"] = { FACTION_THE_SUNREAVERS, EXALTED },	-- The Sunreavers, Exalted.
 						["OnClick"] = SUNREAVERS_DAILY_OnClick,
-						["OnUpdate"] = SUNREAVERS_DAILY_OnUpdate,
+						["OnUpdate"] = [[_.OnUpdateDB.SUNREAVERS_DAILY]],
 						["OnTooltip"] = [[_.OnTooltipDB.WithRequiredAchievement]],
 					}),
 					["isDaily"] = true,
