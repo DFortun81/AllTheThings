@@ -54,8 +54,7 @@ AssignAPIWrapper("GetFactionName",
 	C_Reputation and C_Reputation.GetFactionDataByID and
 	function(factionID)	local factionData = C_Reputation.GetFactionDataByID(factionID)
 	return factionData and factionData.name end,
-	GetFactionInfoByID and
-	function(factionID) return select(1, GetFactionInfoByID(factionID)) end);
+	GetFactionInfoByID);
 AssignAPIWrapper("GetFactionLore",
 	C_Reputation and C_Reputation.GetFactionDataByID and
 	function(factionID)	local factionData = C_Reputation.GetFactionDataByID(factionID)
@@ -95,24 +94,10 @@ AssignAPIWrapper("GetItemCount", C_Item and C_Item.GetItemCount, GetItemCount)
 AssignAPIWrapper("GetItemClassInfo", C_Item and C_Item.GetItemClassInfo, GetItemClassInfo)
 AssignAPIWrapper("GetItemIcon", C_Item and C_Item.GetItemIconByID, GetItemIcon)
 AssignAPIWrapper("GetItemInfoInstant", C_Item and C_Item.GetItemInfoInstant, GetItemInfoInstant)
-AssignAPIWrapper("GetItemID", C_Item and C_Item.GetItemIDForItemInfo, GetItemInfoInstant and function(itemInfo) return select(1,GetItemInfoInstant(itemInfo)) end)
+AssignAPIWrapper("GetItemID", C_Item and C_Item.GetItemIDForItemInfo, GetItemInfoInstant)
 AssignAPIWrapper("GetItemInfo", C_Item and C_Item.GetItemInfo, GetItemInfo)
 AssignAPIWrapper("GetItemSpecInfo", C_Item and C_Item.GetItemSpecInfo, GetItemSpecInfo)
 ---@diagnostic enable: deprecated
-
--- Spell APIs
----@diagnostic disable-next-line: deprecated
--- if not GetSpellInfo then
--- 	lib.GetSpellName = C_Spell.GetSpellName;
--- else
--- ---@diagnostic disable-next-line: deprecated
--- 	local GetSpellInfo = GetSpellInfo;
--- 	if app.GameBuildVersion >= 40000 then
--- 		lib.GetSpellName = function(spellIdentifier) return select(1, GetSpellInfo(spellIdentifier)); end;
--- 	else
--- 		lib.GetSpellName = function(spellIdentifier, rank) return rank and select(1, GetSpellInfo(spellIdentifier, rank)) or select(1, GetSpellInfo(spellIdentifier)); end;
--- 	end
--- end
 
 -- Quest APIs
 local C_QuestLog = C_QuestLog;
@@ -139,8 +124,7 @@ local C_Spell = C_Spell;
 -- The C_Spell.GetSpellLink only returns SpellLink.
 -- For performance reasons, lib.GetSpellLink only returns SpellLink.
 ---@diagnostic disable: deprecated
-AssignAPIWrapper("GetSpellLink", C_Spell and C_Spell.GetSpellLink,
-	function(SpellIdentifier) return select(1, GetSpellLink(SpellIdentifier)) end);
+AssignAPIWrapper("GetSpellLink", C_Spell and C_Spell.GetSpellLink, GetSpellLink);
 
 -- Warning: The API Wrapper for GetSpellIcon is not completely equivalent.
 -- GetSpellTexture accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
@@ -149,15 +133,14 @@ AssignAPIWrapper("GetSpellLink", C_Spell and C_Spell.GetSpellLink,
 -- The traditional GetSpellTexture only returns iconID.
 -- For performance reasons, lib.GetSpellIcon only returns iconID.
 AssignAPIWrapper("GetSpellIcon",
-	C_Spell and C_Spell.GetSpellTexture and function(SpellIdentifier) return select(1, C_Spell.GetSpellTexture(SpellIdentifier)) end,
+	C_Spell and C_Spell.GetSpellTexture,
 	GetSpellTexture);
 
 AssignAPIWrapper("GetSpellCooldown",
 C_Spell and C_Spell.GetSpellCooldown and
 	function(spellIdentifier) local t = C_Spell.GetSpellCooldown(spellIdentifier)
 	return t and t.startTime or 0 end,
-	GetSpellCooldown and
-	function(spellIdentifier) return select (1,GetSpellCooldown(spellIdentifier)) end);
+	GetSpellCooldown);
 
 -- Warning: The API Wrapper for GetSpellName is not completely equivalent.
 -- GetSpellInfo accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
