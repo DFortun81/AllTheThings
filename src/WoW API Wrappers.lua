@@ -107,12 +107,6 @@ if not GetSpellInfo then
 	lib.GetSpellName = function(spell)
 		return spell and C_Spell_GetSpellName(spell);
 	end;
-
-	local C_Spell_GetSpellCooldown = C_Spell.GetSpellCooldown;
-	lib.GetSpellCooldown = function(spellID)
-		local t = C_Spell_GetSpellCooldown(spellID);
-		return t and t.startTime or 0;
-	end
 else
 ---@diagnostic disable-next-line: deprecated
 	local GetSpellInfo = GetSpellInfo;
@@ -121,8 +115,6 @@ else
 	else
 		lib.GetSpellName = function(spellID, rank) return rank and select(1, GetSpellInfo(spellID, rank)) or select(1, GetSpellInfo(spellID)); end;
 	end
----@diagnostic disable-next-line: deprecated
-	lib.GetSpellCooldown = GetSpellCooldown;
 end
 
 -- Quest APIs
@@ -162,4 +154,11 @@ AssignAPIWrapper("GetSpellLink", C_Spell and C_Spell.GetSpellLink,
 AssignAPIWrapper("GetSpellIcon",
 	C_Spell and C_Spell.GetSpellTexture and function(SpellIdentifier) return select(1, C_Spell.GetSpellTexture(SpellIdentifier)) end,
 	GetSpellTexture);
+
+AssignAPIWrapper("GetSpellCooldown",
+C_Spell and C_Spell.GetSpellCooldown and
+	function(spellIdentifier) local t = C_Spell.GetSpellCooldown(spellIdentifier)
+	return t and t.startTime or 0 end,
+	GetSpellCooldown and 
+	function(spellIdentifier) return select (1,GetSpellCooldown(spellIdentifier)) end);
 ---@diagnostic enable: deprecated
