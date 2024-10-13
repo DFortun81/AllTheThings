@@ -102,20 +102,17 @@ AssignAPIWrapper("GetItemSpecInfo", C_Item and C_Item.GetItemSpecInfo, GetItemSp
 
 -- Spell APIs
 ---@diagnostic disable-next-line: deprecated
-if not GetSpellInfo then
-	local C_Spell_GetSpellName = C_Spell.GetSpellName;
-	lib.GetSpellName = function(spell)
-		return spell and C_Spell_GetSpellName(spell);
-	end;
-else
----@diagnostic disable-next-line: deprecated
-	local GetSpellInfo = GetSpellInfo;
-	if app.GameBuildVersion >= 40000 then
-		lib.GetSpellName = function(spellID) return select(1, GetSpellInfo(spellID)); end;
-	else
-		lib.GetSpellName = function(spellID, rank) return rank and select(1, GetSpellInfo(spellID, rank)) or select(1, GetSpellInfo(spellID)); end;
-	end
-end
+-- if not GetSpellInfo then
+-- 	lib.GetSpellName = C_Spell.GetSpellName;
+-- else
+-- ---@diagnostic disable-next-line: deprecated
+-- 	local GetSpellInfo = GetSpellInfo;
+-- 	if app.GameBuildVersion >= 40000 then
+-- 		lib.GetSpellName = function(spellIdentifier) return select(1, GetSpellInfo(spellIdentifier)); end;
+-- 	else
+-- 		lib.GetSpellName = function(spellIdentifier, rank) return rank and select(1, GetSpellInfo(spellIdentifier, rank)) or select(1, GetSpellInfo(spellIdentifier)); end;
+-- 	end
+-- end
 
 -- Quest APIs
 local C_QuestLog = C_QuestLog;
@@ -159,6 +156,16 @@ AssignAPIWrapper("GetSpellCooldown",
 C_Spell and C_Spell.GetSpellCooldown and
 	function(spellIdentifier) local t = C_Spell.GetSpellCooldown(spellIdentifier)
 	return t and t.startTime or 0 end,
-	GetSpellCooldown and 
+	GetSpellCooldown and
 	function(spellIdentifier) return select (1,GetSpellCooldown(spellIdentifier)) end);
+
+-- Warning: The API Wrapper for GetSpellName is not completely equivalent.
+-- GetSpellInfo accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
+-- Currently, only the first type is implemented in C_Spell.
+-- GetSpellInfo accpet both of parameters for compatibility reasons.
+AssignAPIWrapper("GetSpellName",
+	C_Spell and C_Spell.GetSpellName,
+	GetSpellInfo and
+	function(spellIdentifier, rank)
+	return rank and GetSpellInfo(spellIdentifier, rank) or GetSpellInfo(spellIdentifier) end);
 ---@diagnostic enable: deprecated
