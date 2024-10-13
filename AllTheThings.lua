@@ -3987,7 +3987,12 @@ local fields = {
 	end,
 	]]--
 	["name"] = function(t)
-		return t.spellID ~= 2366 and GetSpellName(t.spellID) or C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID);
+		local spellID = t.spellID
+		local name
+		if spellID and spellID ~= 2366 then
+			name = GetSpellName(spellID)
+		end
+		return name or C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID)
 	end,
 	["icon"] = function(t)
 		local icon
