@@ -505,6 +505,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 47202,	-- Diseased Vulture
 					["sourceQuest"] = 27926,	-- Eastern Hospitality
 					["description"] = "This quest is auto-accepted when you kill a Diseased Vulture after accepting The Desert Fox or A Favor for the Furrier.",
+					["coord"] = { 43.5, 70.5, ULDUM }, -- Cradle of the Ancients
 					["groups"] = {
 						objective(1, {	-- 0/8 Diseased Vultures Slain
 							["provider"] = { "n", 47202 },	-- Diseased Vulture
@@ -529,6 +530,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 45202,	-- Mangy Hyena
 					["sourceQuest"] = 27141,	-- Harrison Jones
 					["description"] = "This quest is auto-accepted when you kill a Mangy Hyena after accepting A Strange Disc or Field Work.",
+					["coord"] = { 64.0, 30.0, ULDUM }, -- Obelisk of the Stars
 					["groups"] = {
 						objective(1, {	-- 0/12 Mangy Hyenas Eradicated
 							["providers"] = {
