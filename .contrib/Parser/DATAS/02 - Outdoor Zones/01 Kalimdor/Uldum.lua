@@ -86,13 +86,79 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					631,	-- Emerald Boa (PET!)
 				}},
 				["groups"] = {
-					pet(851),	-- Horned Lizard (PET!)
-					pet(545),	-- Leopard Scorpid (PET!)
-					pet(543),	-- Locust (PET!)
-					pet(542),	-- Mac Frog (PET!)
-					pet(544),	-- Oasis Moth (PET!)
-					pet(511),	-- Sidewinder (PET!)
-					pet(546),	-- Tol'vir Scarab (PET!)
+					pet(851, {	-- Horned Lizard (PET!)
+						["description"] = "Can be found in most places around Uldum, the listed coordinates indicates the wider areas where the pet is most common.",
+						["coords"] = {
+							{ 30.6, 15.0, ULDUM }, -- Oasis of Vir'sar
+							{ 50.4, 21.8, ULDUM }, -- Sahket Wastes
+							{ 65.5, 33.4, ULDUM }, -- Obelisk of the Stars
+							{ 76.0, 55.7, ULDUM }, -- The Steps of Fate
+							{ 60.8, 72.7, ULDUM }, -- Lost City ofthe Tol'vir
+						},
+					}),
+					pet(545, {	-- Leopard Scorpid (PET!)
+						["description"] = "Can be found in most places around Uldum, the listed coordinates indicates the wider areas where the pet is most common.",
+						["coords"] = {
+							{ 30.6, 15.0, ULDUM }, -- Oasis of Vir'sar
+							{ 50.4, 21.8, ULDUM }, -- Sahket Wastes
+							{ 65.5, 33.4, ULDUM }, -- Obelisk of the Stars
+							{ 76.0, 55.7, ULDUM }, -- The Steps of Fate
+							{ 32.0, 62.7, ULDUM }, -- Ruins of Ammon
+						},
+					}),
+					pet(543, {	-- Locust (PET!)
+						["description"] = "Found around Vir'naal river.",
+						["coords"] = {
+							{ 58.0, 76.8, ULDUM }, -- Western Vir'naal River Delta
+							{ 57.3, 50.8, ULDUM }, -- Vir'naal River
+							{ 48.5, 34.15, ULDUM }, -- Vir'naal Oasis west
+							{ 59.2, 31.5, ULDUM }, -- Vir'naal Oasis east
+						},
+					}),
+					pet(542, {	-- Mac Frog (PET!)
+						["description"] = "Found around Vir'nal river.",
+						["coords"] = {
+							{ 66.0, 72.4, ULDUM }, -- Eastern Vir'naal River Delta
+							{ 58.0, 76.8, ULDUM }, -- Western Vir'naal River Delta
+							{ 57.3, 50.8, ULDUM }, -- Vir'naal River
+							{ 48.5, 34.15, ULDUM }, -- Vir'naal Oasis west
+							{ 59.2, 31.5, ULDUM }, -- Vir'naal Oasis east
+						},
+					}),
+					pet(544, {	-- Oasis Moth (PET!)
+						["description"] = "Found around Vir'nal river.",
+						["coords"] = {
+							{ 58.0, 76.8, ULDUM }, -- Western Vir'naal River Delta
+							{ 57.3, 50.8, ULDUM }, -- Vir'naal River
+							{ 48.5, 34.15, ULDUM }, -- Vir'naal Oasis west
+							{ 59.2, 31.5, ULDUM }, -- Vir'naal Oasis east
+						},
+					}),
+					pet(511, {	-- Sidewinder (PET!)
+						["description"] = "Can be found in most places around Uldum and Silithus, the listed coordinates indicates the wider areas where the pet is most common.",
+						["coords"] = {
+							{ 48.0, 37.0, SILITHUS }, -- West of Cenarion Hold
+							{ 36.7, 77.7, SILITHUS }, -- The Scarab Wall
+							{ 30.6, 15.0, ULDUM }, -- Oasis of Vir'sar
+							{ 50.4, 21.8, ULDUM }, -- Sahket Wastes
+							{ 65.5, 33.4, ULDUM }, -- Obelisk of the Stars
+							{ 76.0, 55.7, ULDUM }, -- The Steps of Fate
+							{ 32.0, 62.7, ULDUM }, -- Ruins of Ammon
+						},
+					}),
+					pet(546, {	-- Tol'vir Scarab (PET!)
+						["description"] = "Can be found in most places around Uldum, the listed coordinates indicates the wider areas where the pet is most common.",
+						["coords"] = {
+							{ 32.0, 62.7, ULDUM }, -- Ruins of Ammon
+							{ 39.45, 41.45, ULDUM }, -- Orsis
+							{ 34.0, 23.85, ULDUM }, -- Temple of Uldum
+							{ 35.9, 15.75, ULDUM }, -- Ruins of Khintaset
+							{ 46.0, 15.0, ULDUM }, -- Ruins of Ahmtul
+							{ 53.2, 27.7, ULDUM }, -- Seal of the Sun King
+							{ 63.65, 26.7, ULDUM }, -- Obelisk of the Stars
+							{ 76.0, 55.7, ULDUM }, -- The Steps of Fate
+						},
+					}),
 				},
 			}),
 			explorationHeader({
