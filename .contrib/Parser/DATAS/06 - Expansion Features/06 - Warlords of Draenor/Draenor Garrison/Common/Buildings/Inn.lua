@@ -637,7 +637,7 @@ root(ROOTS.ExpansionFeatures,
 							},
 						}),
 						q(37230, {	-- Bloody Expensive
-							["provider"] = { "n", 87994 },	--  Moroes
+							["provider"] = { "n", 87994 },	--  Moroes <Tower Steward>
 							["sourceQuests"] = { 37157 },	-- Feeling A Bit Morose
 							["repeatable"] = true,
 							["g"] = {
