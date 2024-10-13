@@ -694,10 +694,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 				heroscall(q(29387, {	-- Guardians of Hyjal: Firelands Invasion! (A)
 					["races"] = ALLIANCE_ONLY,
 					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(85, 85, 32),
 				})),
 				warchiefscommand(q(29388, {	-- Guardians of Hyjal: Firelands Invasion! (H)
 					["races"] = HORDE_ONLY,
 					["isBreadcrumb"] = true,
+					["lvl"] = lvlsquish(85, 85, 32),
 				})),
 				q(29389, {	-- Guardians of Hyjal: Firelands Invasion!
 					["qg"] = 52838,	-- Archdruid Hamuul Runetotem
