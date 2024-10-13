@@ -1560,6 +1560,12 @@ _.OnTooltipDB=
 	["WithRequiredAchievement"] = function(t,tooltipInfo)if t.ach then tinsert(tooltipInfo,{left=_.L.REQUIRES,right=t.ach.text});end	end,
 	["ZidormiTravelArtID1136"] = function(t,tooltipInfo)if t.parent.artID==1136 then	tinsert(tooltipInfo,{left="You need to speak to Zidormi to travel back to the past in order to collect these."});end	end,
 }
+_.OnUpdateDB=
+{
+	["CRUSADER_DAILY"] = function(t)if not t.ach then	local f=_.SearchForField("achievementID",_.Faction=="Horde" and 2771 or 2817);if f and #f>0 then	for _,o in pairs(f)do	if o.key=="achievementID" then	t.ach=o;return;end	end	end	end	end,
+	["SILVER_COVENTANT_DAILY"] = function(t)if not t.ach then	local f=_.SearchForField("achievementID",3676);if f and #f>0 then	for _,o in pairs(f)do	if o.key=="achievementID" then	t.ach=o;return;end	end	end	end	end,
+	["SUNREAVERS_DAILY"] = function(t)if not t.ach then	local f=_.SearchForField("achievementID",3677);if f and #f>0 then	for _,o in pairs(f)do	if o.key=="achievementID" then	t.ach=o;return;end	end	end	end	end,
+}
 _.RaceDB=
 {
 	["Blood Elf"] = 10,
