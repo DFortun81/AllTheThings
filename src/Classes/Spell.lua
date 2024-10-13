@@ -215,7 +215,7 @@ do
 		local state
 		local saved, none = {}, {}
 		for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
-			state = id and IsSpellKnownHelper(id) or CheckRecipeLearned(id)
+			state = IsSpellKnownHelper(id) or CheckRecipeLearned(id)
 			if state ~= nil then
 				saved[id] = true
 			else
