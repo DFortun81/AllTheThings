@@ -14,8 +14,8 @@ local c_create, c_yield, c_resume, c_status
 	= coroutine.create, coroutine.yield, coroutine.resume, coroutine.status;
 
 local function PrintError(err, source, co)
-	print("ERROR:",source,":",err)
-	if co and app.Debugging then
+	app.print(app.Modules.Color.Colorize("ERROR:",app.Colors.ChatLinkError),source,":",err)
+	if co then
 		local instanceTrace = debugstack(co);
 		print(instanceTrace)
 	end
@@ -214,11 +214,11 @@ local function CreateRunner(name)
 					if params then
 						-- app.PrintDebug("FRC.Run.N."..name,RunIndex,unpack(params))
 						local ok, err = pcall(func, unpack(params));
-						if not ok then PrintError(err, "Run."..Name) end
+						if not ok then PrintError(err, "Run."..Name, RunnerCoroutine) end
 					else
 						-- app.PrintDebug("FRC.Run.1."..name,RunIndex,ParameterSingleQueue[RunIndex])
 						local ok, err = pcall(func, ParameterSingleQueue[RunIndex]);
-						if not ok then PrintError(err, "Run."..Name) end
+						if not ok then PrintError(err, "Run."..Name, RunnerCoroutine) end
 					end
 					-- app.PrintDebug("FRC.Done."..name,RunIndex)
 					if perFrame <= 0 then
