@@ -19,6 +19,10 @@ local IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnow
 	= IsSpellKnown, IsPlayerSpell, GetNumSpellTabs, GetSpellTabInfo, IsSpellKnownOrOverridesKnown
 
 -- Consolidates some spell checking
+---@param spellID number
+---@param rank? number
+---@param ignoreHigherRanks? boolean
+---@return boolean isKnown
 local IsSpellKnownHelper = function(spellID, rank, ignoreHigherRanks)
 	if IsPlayerSpell(spellID) or IsSpellKnown(spellID) or IsSpellKnown(spellID, true)
 		or IsSpellKnownOrOverridesKnown(spellID) or IsSpellKnownOrOverridesKnown(spellID, true) then
@@ -211,7 +215,7 @@ do
 		local state
 		local saved, none = {}, {}
 		for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
-			state = IsSpellKnownHelper(id) or CheckRecipeLearned(id)
+			state = id and IsSpellKnownHelper(id) or CheckRecipeLearned(id)
 			if state ~= nil then
 				saved[id] = true
 			else
