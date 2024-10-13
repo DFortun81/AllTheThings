@@ -1097,9 +1097,6 @@ root(ROOTS.Unsorted, {
 					r(447001),	-- Daybreak Spellthread
 					r(447000),	-- Sunset Spellthread
 				}),
-				--- Notes
-				-- Prof Knowledge
-				i(224782),	-- Razor Talon
 			}),
 			n(PVP, {
 				--- Typical Seasonal PvP Stuff ---

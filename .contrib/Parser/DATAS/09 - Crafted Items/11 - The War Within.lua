@@ -2458,6 +2458,8 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 		i(219011),	-- Sporefused Creature Lure
 		i(219008),	-- Supreme Beast Lure
 		i(219010),	-- Writhing Creature Lure
+		--
+		i(224782),	-- Razor Talon
 	}),
 	prof(TAILORING, {
 		n(ARMOR, {
@@ -2708,7 +2710,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(82317),	-- 45/45 Mastering the Mysterious
 		}),
 		prof(SKINNING, {
-			q(81440),	-- Refine Hides+++ (Triggered when learned via specialization)
+			q(81440),	-- 20/40 Tanning
 			q(81441),	-- 40/40 Tanning
 		}),
 		prof(TAILORING, {

@@ -38,7 +38,10 @@ local EncounterToCRS = {
 		181399,	-- Kin'tessa <The Beguiler>
 	},
 	[RYGELON] = { 182777 },	-- Rygelon
-	[THE_JAILER] = { 185421 },	-- Zovaal <The Jailer>
+	[THE_JAILER] = {
+		185421,	-- Zovaal <The Jailer>
+		180990,	-- The Jailer
+	},
 };
 
 ------ All Bosses crs ------
