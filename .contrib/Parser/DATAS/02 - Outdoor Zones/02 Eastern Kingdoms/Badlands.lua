@@ -48,11 +48,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					-- #endif
 				}),
-				explorationAch(765, {	-- Explore Badlands
-					-- #if BEFORE WRATH
-					["description"] = "Explore Badlands, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(765),	-- Explore Badlands
 				ach(5444, {	-- Ready, Set, Goat!
 					["timeline"] = { ADDED_4_0_3 },
 					["cr"] = 46393,	-- Billy Goat

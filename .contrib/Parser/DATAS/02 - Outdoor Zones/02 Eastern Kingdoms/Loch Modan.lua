@@ -9,11 +9,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(779, {	-- Explore Loch Modan
-					-- #if BEFORE WRATH
-					["description"] = "Explore Loch Modan, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(779),	-- Explore Loch Modan
 				ach(4899, {	-- Loch Modan Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

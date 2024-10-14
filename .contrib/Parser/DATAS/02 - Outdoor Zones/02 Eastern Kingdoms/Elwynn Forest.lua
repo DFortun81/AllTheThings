@@ -1938,11 +1938,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				},
 			}),
 			n(ACHIEVEMENTS, {
-				explorationAch(776, {	-- Explore Elwynn Forest
-					-- #if BEFORE WRATH
-					["description"] = "Explore Elwynn Forest, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(776),	-- Explore Elwynn Forest
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",

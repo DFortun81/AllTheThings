@@ -214,10 +214,8 @@ root(ROOTS.Zones, {
 					-- #else
 					-- #if BEFORE WRATH
 					-- #if AFTER TBC
-					["description"] = "Complete 700 quests in Kalimdor.",
 					["rank"] = 700,
 					-- #else
-					["description"] = "Complete 625 quests in Kalimdor.",
 					["rank"] = 625,
 					-- #endif
 					-- #endif
@@ -250,10 +248,8 @@ root(ROOTS.Zones, {
 					-- #else
 					-- #if BEFORE WRATH
 					-- #if AFTER TBC
-					["description"] = "Complete 685 quests in Kalimdor.",
 					["rank"] = 685,
 					-- #else
-					["description"] = "Complete 625 quests in Kalimdor.",
 					["rank"] = 625,
 					-- #endif
 					-- #endif

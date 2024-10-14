@@ -218,7 +218,6 @@ root(ROOTS.Zones, {
 					}},
 					-- #else
 					-- #if BEFORE WRATH
-					["description"] = "Complete 700 quests in Eastern Kingdoms.",
 					["rank"] = 700,
 					-- #endif
 					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],
@@ -249,7 +248,6 @@ root(ROOTS.Zones, {
 					}},
 					-- #else
 					-- #if BEFORE WRATH
-					["description"] = "Complete 550 quests in Eastern Kingdoms.",
 					["rank"] = 550,
 					-- #endif
 					["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_CONTINENT_OnClick]],

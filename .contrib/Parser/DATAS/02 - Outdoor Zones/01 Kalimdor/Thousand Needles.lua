@@ -13,11 +13,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(846, {	-- Explore Thousand Needles
-					-- #if BEFORE WRATH
-					["description"] = "Explore Thousand Needles, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(846),	-- Explore Thousand Needles
 				ach(4938, {	-- Thousand Needles Quests
 					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC

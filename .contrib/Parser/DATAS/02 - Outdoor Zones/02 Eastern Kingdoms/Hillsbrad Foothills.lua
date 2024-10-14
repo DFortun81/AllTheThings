@@ -18,17 +18,10 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ACHIEVEMENTS, {
 				-- #if AFTER CATA
 				explorationAch(760, {	-- Explore Alterac Mountains
-					-- #if BEFORE WRATH
-					["description"] = "Explore Alterac Mountains, revealing the covered areas of the world map.",
-					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 				-- #endif
-				explorationAch(772, {	-- Explore Hillsbrad Foothills
-					-- #if BEFORE WRATH
-					["description"] = "Explore Hillsbrad Foothills, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(772),	-- Explore Hillsbrad Foothills
 				ach(4895, {	-- Hillsbrad Foothills Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = HORDE_ONLY,

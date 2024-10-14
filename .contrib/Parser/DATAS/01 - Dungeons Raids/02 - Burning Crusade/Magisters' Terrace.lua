@@ -342,9 +342,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_FIVE,
 							}),
 							ach(884, {	-- Swift White Hawkstrider
 								["provider"] = { "i", 35513 },	-- Swift White Hawkstrider
-								-- #if BEFORE WRATH
-								["description"] = "Obtain the Swift White Hawkstrider from Kael'thas in Magister's Terrace.",
-								-- #endif
 								["filterID"] = MOUNTS,
 							}),
 							i(35513),	-- Swift White Hawkstrider (MOUNT!)

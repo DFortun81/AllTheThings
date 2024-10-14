@@ -68,11 +68,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					-- #endif
 				}),
-				explorationAch(852, {	-- Explore Azshara
-					-- #if BEFORE WRATH
-					["description"] = "Explore Azshara, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(852),	-- Explore Azshara
 				ach(5448, {	-- Glutton for Fiery Punishment
 					["timeline"] = { ADDED_4_0_3 },
 				}),

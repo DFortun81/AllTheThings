@@ -127,17 +127,10 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						}),
 					},
 				}),
-				explorationAch(857, {	-- Explore Winterspring
-					-- #if BEFORE WRATH
-					["description"] = "Explore Winterspring, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(857),	-- Explore Winterspring
 				-- #if AFTER CATA
 				ach(3356, {	-- Winterspring Frostsaber
 					["provider"] = { "i", 13086 },	-- Reins of the Winterspring Frostsaber
-					-- #if BEFORE WRATH
-					["description"] = "Obtain a Winterspring Frosaber.",
-					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["f"] = MOUNTS,
 				}),
@@ -2527,9 +2520,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						-- #if BEFORE CATA
 						ach(3356, {	-- Winterspring Frostsaber
 							["provider"] = { "i", 13086 },	-- Reins of the Winterspring Frostsaber
-							-- #if BEFORE WRATH
-							["description"] = "Obtain a Winterspring Frosaber.",
-							-- #endif
 							["races"] = ALLIANCE_ONLY,
 							["f"] = MOUNTS,
 						}),

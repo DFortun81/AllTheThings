@@ -87,9 +87,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
 							["provider"] = { "i", 230224 },	-- Thunderfury, Blessed Blade of the Windseeker
-							-- #if BEFORE WRATH
-							["description"] = "Wielder of Thunderfury, Blessed Blade of the Windseeker.",
-							-- #endif
 							["classes"] = SWORD_CLASSES,
 						}),
 						i(230224),	-- Thunderfury, Blessed Blade of the Windseeker

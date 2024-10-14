@@ -63,9 +63,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				})),
 				applyclassicphase(TBC_PHASE_ONE, ach(1837, {	-- Old Ironjaw
 					["provider"] = { "i", 34484 },	-- Old Ironjaw
-					-- #if BEFORE WRATH
-					["description"] = "Fish up Old Ironjaw in Ironforge.",
-					-- #endif
 					["timeline"] = { ADDED_2_0_1 },
 					["requireSkill"] = FISHING,
 				})),

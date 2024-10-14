@@ -23,9 +23,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				achWithRep(957, FACTION_ZANDALAR_TRIBE, {	-- Hero of the Zandalar Tribe
-					-- #if BEFORE WRATH
-					["description"] = "Raise your reputation with the Zandalar Tribe to Exalted.",
-					-- #endif
 					["maps"] = { STRANGLETHORN_VALE },
 				}),
 			}),
@@ -1286,9 +1283,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 			n(11382, {	-- Bloodlord Mandokir
 				ach(881, {	-- Swift Razzashi Raptor
 					["provider"] = { "i", 19872 },	-- Swift Razzashi Raptor
-					-- #if BEFORE WRATH
-					["description"] = "Obtain the Swift Razzashi Raptor from Bloodlord Mandokir in Zul'Gurub.",
-					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 					["filterID"] = MOUNTS,
 				}),
@@ -1433,9 +1427,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 			n(14509, {	-- High Priest Thekal
 				ach(880, {	-- Swift Zulian Tiger
 					["provider"] = { "i", 19902 },	-- Swift Zulian Tiger
-					-- #if BEFORE WRATH
-					["description"] = "Obtain the Swift Zulian Tiger from High Priest Thekal in Zul'Gurub.",
-					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 					["filterID"] = MOUNTS,
 				}),
@@ -1470,9 +1461,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 				},
 				["groups"] = {
 					ach(560, {	-- Deadliest Catch
-						-- #if BEFORE WRATH
-						["description"] = "Fish up Gahz'ranka in Zul'Gurub using the Mudskunk Lure.",
-						-- #endif
 						["timeline"] = { ADDED_3_0_2, REMOVED_4_1_0 },
 					}),
 					i(19944),	-- Nat Pagle's Fish Terminator
@@ -1511,7 +1499,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 			n(14834, {	-- Hakkar the Soulflayer
 				ach(688, {	-- Zul'Gurub
 					-- #if BEFORE WRATH
-					["description"] = "Defeat Hakkar and deliver his Heart to the Zandalari.",
 					["sourceQuest"] = 8183,	-- The Heart of Hakkar
 					-- #endif
 				}),

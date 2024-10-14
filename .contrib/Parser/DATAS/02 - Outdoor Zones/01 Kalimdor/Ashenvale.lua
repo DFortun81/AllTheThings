@@ -127,11 +127,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					-- #endif
 				}),
-				explorationAch(845, {	-- Explore Ashenvale
-					-- #if BEFORE WRATH
-					["description"] = "Explore Ashenvale, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(845),	-- Explore Ashenvale
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",

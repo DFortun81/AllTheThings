@@ -2124,11 +2124,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			n(ACHIEVEMENTS, {
-				explorationAch(627, {	-- Explore Dun Morogh
-					-- #if BEFORE WRATH
-					["description"] = "Explore Dun Morogh, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(627),	-- Explore Dun Morogh
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",

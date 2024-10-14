@@ -9,11 +9,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(782, {	-- Explore Swamp of Sorrows
-					-- #if BEFORE WRATH
-					["description"] = "Explore Swamp of Sorrows, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(782),	-- Explore Swamp of Sorrows
 				ach(4904, {	-- Swamp of Sorrows Quests
 					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC

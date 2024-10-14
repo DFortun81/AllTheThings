@@ -922,11 +922,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 				},
 			}),
 			n(ACHIEVEMENTS, {
-				explorationAch(859, {	-- Explore Eversong Woods
-					-- #if BEFORE WRATH
-					["description"] = "Explore Eversong Woods, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(859),	-- Explore Eversong Woods
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",

@@ -1332,16 +1332,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_FIVE, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(868, {	-- Explore Isle of Quel'Danas
-					-- #if BEFORE WRATH
-					["description"] = "Explore Isle of Quel'Danas, revealing the covered areas of the world map.",
-					-- #endif
-				}),
-				achWithRep(897, FACTION_SHATTERED_SUN_OFFENSIVE, {	-- You're So Offensive
-					-- #if BEFORE WRATH
-					["description"] = "Raise your reputation with the Shattered Sun Offensive to Exalted.",
-					-- #endif
-				}),
+				explorationAch(868),	-- Explore Isle of Quel'Danas
+				achWithRep(897, FACTION_SHATTERED_SUN_OFFENSIVE),	-- You're So Offensive
 			}),
 			explorationHeader({
 				exploration(4089),	-- Dawnstar Village

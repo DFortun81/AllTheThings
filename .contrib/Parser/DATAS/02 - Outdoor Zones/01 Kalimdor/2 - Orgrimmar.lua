@@ -76,9 +76,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(TBC_PHASE_ONE, ach(1836, {	-- Old Crafty
 					["provider"] = { "i", 34486 },	-- Old Crafty
-					-- #if BEFORE WRATH
-					["description"] = "Fish up Old Crafty in Orgrimmar.",
-					-- #endif
 					["requireSkill"] = FISHING,
 				})),
 			}),

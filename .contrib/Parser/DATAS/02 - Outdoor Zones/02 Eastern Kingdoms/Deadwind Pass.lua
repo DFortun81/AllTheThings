@@ -21,11 +21,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(777, {	-- Explore Deadwind Pass
-					-- #if BEFORE WRATH
-					["description"] = "Explore Deadwind Pass, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(777),	-- Explore Deadwind Pass
 			}),
 			battlepets({
 				pet(1160, {	-- Arcane Eye (PET!)

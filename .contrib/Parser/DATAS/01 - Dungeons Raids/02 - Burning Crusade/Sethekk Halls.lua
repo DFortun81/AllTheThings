@@ -136,9 +136,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						}),
 						ach(2359, {	-- Swift Flight Form
 							["sourceQuest"] = 11001,	-- Vanquish the Raven God
-							-- #if BEFORE WRATH
-							["description"] = "Completed the druid quest to obtain Swift Flight Form.",
-							-- #endif
 							["timeline"] = { REMOVED_4_0_1 },
 							["classes"] = { DRUID },
 							["filterID"] = MOUNTS,
@@ -295,9 +292,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 						["groups"] = {
 							ach(883, {	-- Reins of the Raven Lord
 								["provider"] = { "i", 32768 },	-- Reins of the Raven Lord
-								-- #if BEFORE WRATH
-								["description"] = "Obtain the Reins of the Raven Lord from Anzu in Sethekk Halls.",
-								-- #endif
 								["filterID"] = MOUNTS,
 							}),
 							i(32768),	-- Raven Lord (MOUNT!)

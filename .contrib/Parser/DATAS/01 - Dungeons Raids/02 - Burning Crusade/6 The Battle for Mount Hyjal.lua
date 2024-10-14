@@ -21,9 +21,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				achWithRep(959, FACTION_THE_SCALE_OF_THE_SANDS, {	-- The Scale of the Sands
-					-- #if BEFORE WRATH
-					["description"] = "Raise your reputation with The Scale of the Sands to Exalted.",
-					-- #endif
 					["maps"] = { CAVERNS_OF_TIME },
 				}),
 			}),

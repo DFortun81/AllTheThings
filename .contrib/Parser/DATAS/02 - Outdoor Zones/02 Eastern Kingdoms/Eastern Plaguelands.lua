@@ -771,11 +771,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				explorationAch(771, {	-- Explore Eastern Plaguelands
-					-- #if BEFORE WRATH
-					["description"] = "Explore Eastern Plaguelands, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(771),	-- Explore Eastern Plaguelands
 				ach(5442, {	-- Full Caravan
 					["timeline"] = { ADDED_4_0_3 },
 					["groups"] = {
@@ -807,9 +803,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 				}),
 				achWithRep(946, FACTION_ARGENT_DAWN, {	-- The Argent Dawn
-					-- #if BEFORE WRATH
-					["description"] = "Raise your reputation with the Argent Dawn to Exalted.",
-					-- #endif
 					["maps"] = { WESTERN_PLAGUELANDS },
 				}),
 			}),

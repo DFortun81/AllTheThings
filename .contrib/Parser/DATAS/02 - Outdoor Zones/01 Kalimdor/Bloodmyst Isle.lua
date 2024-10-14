@@ -64,11 +64,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 					-- #endif
 					-- #endif
 				}),
-				explorationAch(861, {	-- Explore Bloodmyst Isle
-					-- #if BEFORE WRATH
-					["description"] = "Explore Bloodmyst Isle, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(861),	-- Explore Bloodmyst Isle
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",

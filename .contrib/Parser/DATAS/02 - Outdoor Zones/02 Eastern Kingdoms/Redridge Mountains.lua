@@ -13,11 +13,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(780, {	-- Explore Redridge Mountains
-					-- #if BEFORE WRATH
-					["description"] = "Explore Redridge Mountains, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(780),	-- Explore Redridge Mountains
 				ach(4902, {	-- Redridge Mountain Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

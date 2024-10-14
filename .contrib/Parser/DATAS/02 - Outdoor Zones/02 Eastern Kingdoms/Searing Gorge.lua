@@ -9,11 +9,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(774, {	-- Explore Searing Gorge
-					-- #if BEFORE WRATH
-					["description"] = "Explore Searing Gorge, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(774),	-- Explore Searing Gorge
 				ach(4910, {	-- Searing Gorge Quests
 					["timeline"] = { ADDED_4_0_1 },
 					-- #if AFTER MOP

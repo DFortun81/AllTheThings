@@ -73,9 +73,6 @@ applyclassicphase(PHASE_SIX,
 									{ "i", 22630 },	-- Atiesh, Greatstaff of the Guardian (Warlock)
 									{ "i", 22632 },	-- Atiesh, Greatstaff of the Guardian (Druid)
 								},
-								-- #if BEFORE WRATH
-								["description"] = "Wielder of Atiesh, Greatstaff of the Guardian.",
-								-- #endif
 								["classes"] = { PRIEST, MAGE, WARLOCK, DRUID },
 							}),
 							q(9251, {	-- Atiesh, the Befouled Greatstaff

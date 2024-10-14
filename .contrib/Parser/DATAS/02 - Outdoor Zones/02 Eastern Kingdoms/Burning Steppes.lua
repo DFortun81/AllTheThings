@@ -9,11 +9,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(775, {	-- Explore Burning Steppes
-					-- #if BEFORE WRATH
-					["description"] = "Explore Burning Steppes, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(775),	-- Explore Burning Steppes
 				ach(4901, {	-- Burning Steppes Quests
 					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC

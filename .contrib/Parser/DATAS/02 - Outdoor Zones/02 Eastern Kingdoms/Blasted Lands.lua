@@ -48,11 +48,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 					-- #endif
 				}),
-				explorationAch(766, {	-- Explore Blasted Lands
-					-- #if BEFORE WRATH
-					["description"] = "Explore Blasted Lands, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(766),	-- Explore Blasted Lands
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",

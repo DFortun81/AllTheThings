@@ -71,7 +71,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 					-- #if BEFORE WRATH
-					["description"] = "Complete all of Hemet Nesingwary quests in Stranglethorn Vale up to and including The Green Hills of Stranglethorn and Big Game Hunter.",
 					["AllSourceQuestsRequiredForAchievement"] = true,
 					-- #endif
 				}),

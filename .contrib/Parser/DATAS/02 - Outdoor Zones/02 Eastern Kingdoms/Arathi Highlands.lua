@@ -77,11 +77,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					},
 					-- #endif
 				}),
-				explorationAch(761, {	-- Explore Arathi Highlands
-					-- #if BEFORE WRATH
-					["description"] = "Explore Arathi Highlands, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(761),	-- Explore Arathi Highlands
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",

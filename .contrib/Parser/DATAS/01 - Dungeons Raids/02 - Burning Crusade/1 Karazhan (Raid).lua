@@ -38,11 +38,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 		["lvl"] = lvlsquish(70, 68, 30),	-- The attunement quests were originally level 70 required, but once removed, level 68s could zone in. TODO: Check this.
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				achWithRep(960, FACTION_THE_VIOLET_EYE, {	-- The Violet Eye
-					-- #if BEFORE WRATH
-					["description"] = "Raise your reputation with The Violet Eye to Exalted.",
-					-- #endif
-				}),
+				achWithRep(960, FACTION_THE_VIOLET_EYE),	-- The Violet Eye
 			}),
 			n(FACTIONS, {
 				faction(FACTION_THE_VIOLET_EYE),	-- The Violet Eye
@@ -694,9 +690,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					i(23809),	-- Schematic: Stabilized Eternium Scope (RECIPE!)
 					ach(882, {	-- Fiery Warhorse's Reins
 						["provider"] = { "i", 30480 },	-- Fiery Warhorse's Reins
-						-- #if BEFORE WRATH
-						["description"] = "Obtain the Fiery Warhorse's Reins from Attumen the Huntsman in Karazhan.",
-						-- #endif
 						["filterID"] = MOUNTS,
 					}),
 					i(30480),	-- Fiery Warhorse (MOUNT!)

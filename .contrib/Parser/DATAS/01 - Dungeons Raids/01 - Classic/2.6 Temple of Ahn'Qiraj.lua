@@ -35,10 +35,11 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			n(ACHIEVEMENTS, {
 				ach(11743, {["timeline"] = {ADDED_7_2_0}}),	-- Accessor-Eyes (Temple of Ahn'Qiraj)
 				achWithRep(956, FACTION_BROOD_OF_NOZDORMU, {	-- Brood of Nozdormu
-					-- #if BEFORE WRATH
-					["description"] = "Raise your reputation with the Brood of Nozdormu to Exalted.",
-					-- #endif
 					["maps"] = { CAVERNS_OF_TIME, SILITHUS },
+				}),
+				ach(424, {	-- Why? Because It's Red
+					["provider"] = { "i", 21321 },	-- Red Qiraji Resonating Crystal
+					["filterID"] = MOUNTS,
 				}),
 			}),
 			n(FACTIONS, {
@@ -1085,13 +1086,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 				},
 			}),
 			n(ZONE_DROPS, {
-				ach(424, {	-- Why? Because It's Red
-					["provider"] = { "i", 21321 },	-- Red Qiraji Resonating Crystal
-					-- #if BEFORE WRATH
-					["description"] = "Obtain a Red Qiraji Resonating Crystal.",
-					-- #endif
-					["filterID"] = MOUNTS,
-				}),
 				i(21218),	-- Blue Qiraji Battle Tank (MOUNT!)
 				i(21323),	-- Green Qiraji Battle Tank (MOUNT!)
 				i(21321),	-- Red Qiraji Battle Tank (MOUNT!)

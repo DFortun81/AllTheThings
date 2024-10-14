@@ -24,11 +24,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(11748, {["timeline"] = {ADDED_7_2_0}}),	-- Black is the New Black (Black Temple)
-				achWithRep(958, FACTION_ASHTONGUE_DEATHSWORN, {	-- Sworn to the Deathsworn
-					-- #if BEFORE WRATH
-					["description"] = "Raise your reputation with the Ashtongue Deathsworn to Exalted.",
-					-- #endif
-				}),
+				achWithRep(958, FACTION_ASHTONGUE_DEATHSWORN),	-- Sworn to the Deathsworn
 			}),
 			n(FACTIONS, {
 				faction(FACTION_ASHTONGUE_DEATHSWORN),	-- Ashtongue Deathsworn
@@ -422,7 +418,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 								},
 								["classes"] = { DEATHKNIGHT, DEMONHUNTER, MONK, ROGUE, WARRIOR },
 								-- #if BEFORE WRATH
-								["description"] = "Wielder of a set of Warglaives of Azzinoth.",
 								["OnUpdate"] = [[function(t)
 									local collected = true;
 									for i,provider in ipairs(t.providers) do

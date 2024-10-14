@@ -634,11 +634,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 				},
 			}),
 			n(ACHIEVEMENTS, {
-				explorationAch(860, {	-- Explore Azuremyst Isle
-					-- #if BEFORE WRATH
-					["description"] = "Explore Azuremyst Isle, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(860),	-- Explore Azuremyst Isle
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",

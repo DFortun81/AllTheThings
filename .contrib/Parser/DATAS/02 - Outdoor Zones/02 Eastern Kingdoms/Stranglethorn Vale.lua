@@ -134,20 +134,13 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			n(ACHIEVEMENTS, {
 				applyclassicphase(PHASE_ONE, ach(871, {	-- Avast Ye, Admiral!
 					["sourceQuest"] = 4621,	-- Avast Ye, Admiral!
-					-- #if BEFORE WRATH
-					["description"] = "Obtain the Bloodsail Admiral's Hat... and try to get some fresh air every now and then.",
-					-- #endif
 					["groups"] = {
 						title(111, {	-- Bloodsail Admiral <Name>
 							["timeline"] = { ADDED_3_0_2 },
 						}),
 					},
 				})),
-				explorationAch(781, {	-- Explore Stranglethorn Vale
-					-- #if BEFORE WRATH
-					["description"] = "Explore Stranglethorn Vale, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(781),	-- Explore Stranglethorn Vale
 				ach(940, {	-- The Green Hills of Stranglethorn
 					["sourceQuests"] = {
 						208,	-- Big Game Hunter
@@ -156,7 +149,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						-- #endif
 					},
 					-- #if BEFORE WRATH
-					["description"] = "Complete all of Hemet Nesingwary quests in Stranglethorn Vale up to and including The Green Hills of Stranglethorn and Big Game Hunter.",
 					["AllSourceQuestsRequiredForAchievement"] = true,
 					-- #endif
 				}),
@@ -174,7 +166,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					ach(389, {	-- Gurubashi Arena Master
 						["provider"] = { "i", 18706 },	-- Arena Master
 						-- #if BEFORE WRATH
-						["description"] = "Loot the Arena Master trinket from the Gurubashi Arena. Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
+						["lore"] = "Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
 						["OnUpdate"] = [[function(t) t:SetAchievementCollected(t.achievementID, ]] .. WOWAPI_GetItemCount(18706) .. [[ > 0 or ]] .. WOWAPI_GetItemCount(19024) .. [[ > 0); end]],
 						-- #endif
 					}),
@@ -456,7 +448,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						ach(396, {	-- Arena Grandmaster
 							["provider"] = { "i", 19024 },	-- Arena Grand Master
 							-- #if BEFORE WRATH
-							["description"] = "Complete Short John Mithril's quest to obtain the Arena Grand Master trinket. Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
+							["lore"] = "Keep it in your bank until achievements come out.\n\nProbably not a bad idea to knock this out before all the normies start farming for this.",
 							-- #endif
 						}),
 						i(19024),	-- Arena Grand Master

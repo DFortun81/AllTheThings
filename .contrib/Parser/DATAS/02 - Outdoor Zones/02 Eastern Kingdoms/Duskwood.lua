@@ -9,11 +9,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(778, {	-- Explore Duskwood
-					-- #if BEFORE WRATH
-					["description"] = "Explore Duskwood, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(778),	-- Explore Duskwood
 				ach(4907, {	-- Duskwood Quests
 					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
 					["races"] = ALLIANCE_ONLY,

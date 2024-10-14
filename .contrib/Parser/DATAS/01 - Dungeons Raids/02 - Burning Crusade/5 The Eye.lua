@@ -161,9 +161,6 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_TWO, 
 					}),
 					ach(885, {	-- Ashes of Al'ar
 						["provider"] = { "i", 32458 },	-- Ashes of Al'ar
-						-- #if BEFORE WRATH
-						["description"] = "Obtain the Ashes of Al'ar from Kael'thas Sunstrider in Tempest Keep.",
-						-- #endif
 						["filterID"] = MOUNTS,
 					}),
 					i(32458),	-- Ashes of Al'ar (MOUNT!)

@@ -1699,9 +1699,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							i(13251),	-- Head of Baron Rivendare
 							ach(729, {	-- Deathcharger's Reins
 								["provider"] = { "i", 13335 },	-- Rivendare's Deathcharger (MOUNT!)
-								-- #if BEFORE WRATH
-								["description"] = "Obtain the Deathcharger's Reins from Baron Rivendare in Stratholme.",
-								-- #endif
 								["f"] = MOUNTS,
 							}),
 							i(13335),	-- Rivendare's Deathcharger (MOUNT!)

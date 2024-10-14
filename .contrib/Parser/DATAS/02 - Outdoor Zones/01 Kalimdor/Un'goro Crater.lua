@@ -10,11 +10,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["maps"] = { 79 },	-- The Slithering Scar
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(854, {	-- Explore Un'Goro Crater
-					-- #if BEFORE WRATH
-					["description"] = "Explore Un'Goro Crater, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(854),	-- Explore Un'Goro Crater
 				ach(4939, {	-- Un'Goro Crater Quests
 					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC
@@ -1872,9 +1868,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 						ach(3357, {	-- Venomhide Ravasaur
 							["provider"] = { "i", 46102 },	-- Whistle of the Venomhide Ravasaur
 							["timeline"] = { ADDED_3_2_0 },
-							-- #if BEFORE WRATH
-							["description"] = "Obtain a Venomhide Ravasaur.",
-							-- #endif
 							["races"] = HORDE_ONLY,
 							["f"] = MOUNTS,
 						}),

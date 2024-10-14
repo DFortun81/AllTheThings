@@ -12,9 +12,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				explorationAch(760, {	-- Explore Alterac Mountains
-					-- #if BEFORE WRATH
-					["description"] = "Explore Alterac Mountains, revealing the covered areas of the world map.",
-					-- #endif
 					["timeline"] = { REMOVED_4_0_3 },
 				}),
 			}),

@@ -78,11 +78,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["maps"] = { FELWOOD, WINTERSPRING },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				achWithRep(944, FACTION_TIMBERMAW_HOLD, {	-- They Love Me In That Tunnel
-					-- #if BEFORE WRATH
-					["description"] = "Raise your reputation with Timbermaw Hold to Exalted.",
-					-- #endif
-				}),
+				achWithRep(944, FACTION_TIMBERMAW_HOLD),	-- They Love Me In That Tunnel
 			}),
 			n(FACTIONS, {
 				faction(FACTION_TIMBERMAW_HOLD, {	-- Timbermaw Hold

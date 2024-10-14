@@ -52,9 +52,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				achWithRep(955, FACTION_HYDRAXIAN_WATERLORDS, {	-- Hydraxian Waterlords
-					-- #if BEFORE WRATH
-					["description"] = "Raise your reputation with the Hydraxian Waterlords to Exalted.",
-					-- #endif
 					["maps"] = {
 						AZSHARA,
 						-- #if SEASON_OF_DISCOVERY
@@ -213,7 +210,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						ach(2496, {	-- The Fifth Element
 							-- #if BEFORE WRATH
 							["sourceQuest"] = 6824,	-- Hands of the Enemy
-							["description"] = "Obtain an Aqual Quintessence.",
 							-- #endif
 						}),
 					},
@@ -253,9 +249,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					["groups"] = {
 						ach(428, {	-- Thunderfury, Blessed Blade of the Windseeker
 							["provider"] = { "i", 19019 },	-- Thunderfury, Blessed Blade of the Windseeker
-							-- #if BEFORE WRATH
-							["description"] = "Wielder of Thunderfury, Blessed Blade of the Windseeker.",
-							-- #endif
 							["classes"] = { DEATHKNIGHT, DEMONHUNTER, HUNTER, MAGE, MONK, PALADIN, ROGUE, WARLOCK, WARRIOR },
 						}),
 						i(19019),	-- Thunderfury, Blessed Blade of the Windseeker
@@ -851,9 +844,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					ach(429, {	-- Sulfuras, Hand of Ragnaros
 						["provider"] = { "i", 17182 },	-- Sulfuras, Hand of Ragnaros
-						-- #if BEFORE WRATH
-						["description"] = "Wielder of Sulfuras, Hand of Ragnaros.",
-						-- #endif
 						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
 					}),
 					-- #endif
@@ -1441,9 +1431,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 					}),
 					ach(429, {	-- Sulfuras, Hand of Ragnaros
 						["provider"] = { "i", 227683 },	-- Sulfuras, Hand of Ragnaros
-						-- #if BEFORE WRATH
-						["description"] = "Wielder of Sulfuras, Hand of Ragnaros.",
-						-- #endif
 						["classes"] = { DEATHKNIGHT, DRUID, EVOKER, PALADIN, SHAMAN, WARRIOR },
 					}),
 					i(227683, {	-- Sulfuras, Hand of Ragnaros
