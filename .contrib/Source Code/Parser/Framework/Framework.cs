@@ -1970,9 +1970,7 @@ namespace ATT
                                     }
                                     else
                                     {
-                                        subbuilder.Append("headers");
-                                        ExportStringKeyFieldValue(subbuilder, key, ".icon", 134400);
-                                        subbuilder.Append(";");
+                                        subbuilder.Append("headers[").Append(key).Append("].icon = 134400;");
                                         ExportReadableConstantComment(subbuilder, readable, constant).AppendLine();
                                     }
                                     if (header.TryGetValue("text", out value))
