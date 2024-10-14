@@ -197,7 +197,7 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 		-- Account-Wide Quests
 		if app.AccountWideQuestsDB[id] then
 			if IsQuestFlaggedCompletedOnAccount(id) then
-				tinsert(tooltipInfo, {left=ACCOUNT_COMPLETED_QUEST_NOTICE or "Quest completed on your Account", wrap = true, color = app.Colors.TooltipDescription});
+				tinsert(knownBy, {text=ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE or "Account-Wide"});
 			end
 		else
 			for _,character in pairs(ATTCharacterData) do
@@ -205,11 +205,11 @@ local function ProcessForCompletedBy(t, reference, tooltipInfo)
 					tinsert(knownBy, character);
 				end
 			end
-			BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
 			if #knownBy == 0 and IsQuestFlaggedCompletedOnAccount(id) then
-				tinsert(tooltipInfo, {left=ACCOUNT_COMPLETED_QUEST_NOTICE or "Quest completed on your Account", wrap = true, color = app.Colors.TooltipDescription});
+				tinsert(knownBy, {text=ITEM_UPGRADE_DISCOUNT_TOOLTIP_ACCOUNT_WIDE or "Account-Wide"});
 			end
 		end
+		BuildKnownByInfoForKind(tooltipInfo, L.COMPLETED_BY);
 	end
 
 	-- Completed By for Exploration
