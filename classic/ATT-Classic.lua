@@ -827,7 +827,7 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB, group)
 						tinsert(unfiltered, { text, UnobtainableTexture });
 					-- from obtainable, different character source
 					elseif not FilterCharacter(parent) then
-						tinsert(unfiltered, { text, "|TInterface\\FriendsFrame\\StatusIcon-Away:0|t" });
+						tinsert(unfiltered, { text, "|T374223:0|t" });
 					else
 						-- check if this needs an unobtainable icon even though it's being shown
 						right = GetUnobtainableTexture(FirstParent(parent, "e") or FirstParent(parent, "u") or j) or (j.rwp and app.asset("status-prerequisites"));

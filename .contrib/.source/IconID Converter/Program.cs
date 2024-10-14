@@ -63,6 +63,17 @@ foreach (var file in Directory.EnumerateFiles("../..", "*.*", SearchOption.AllDi
 Console.WriteLine("DONE!");
 Console.ReadLine();
 
+string[] textureStarts = ["interface/", "interface\\", "world/", "world\\"];
+int FindTextureStart(string contents, int startIndex)
+{
+    int minIndex = -1;
+    foreach (var start in textureStarts)
+    {
+        var a = contents.IndexOf(start, startIndex, StringComparison.OrdinalIgnoreCase);
+        if (a >= 0 && a < minIndex) minIndex = a;
+    }
+    return minIndex;
+}
 
 static string[] LoadFromDatabase()
 {

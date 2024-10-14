@@ -1566,8 +1566,16 @@ namespace ATT
         static StringBuilder ExportIconValue(StringBuilder builder, object iconValue)
         {
             string icon = iconValue.ToString().ToLower().Replace("\\", "/");
-            if(long.TryParse(icon, out long iconID) && iconID.ToString() == icon) builder.Append(icon);
-            else ExportStringValue(builder, icon);
+            if (long.TryParse(icon, out long iconID) && iconID.ToString() == icon) builder.Append(icon);
+            else
+            {
+                if (!icon.StartsWith("_"))
+                {
+                    Console.WriteLine(icon);
+                    Console.ReadLine();
+                }
+                ExportStringValue(builder, icon);
+            }
             return builder;
         }
 

@@ -1909,7 +1909,7 @@ function app:CreateWindow(suffix, settings)
 		container:Show();
 
 		local topright = window:CreateTexture(nil, "OVERLAY")
-		topright:SetTexture(251963) -- Interface\\PaperDollInfoFrame\\UI-GearManager-Border
+		topright:SetTexture(251963)
 		topright:SetPoint("TOPRIGHT", window, "TOPRIGHT", -2, -2);
 		topright:SetTexCoord(0.7, 0.745, 0.04, 0.4)
 		topright:SetSize(20, 20);

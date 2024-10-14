@@ -633,7 +633,7 @@ local function StripColorAndTextureData(txt)
 end
 --[[
 app.StripColorAndTextureData = function()
-	return StripColorAndTextureData("|TInterface\\MONEYFRAME\\UI-GoldIcon:0|t2 |cffff0000GOLD|r Coins")
+	return StripColorAndTextureData("|T237618:0|t2 |cffff0000GOLD|r Coins")
 end;
 ]]--
 local HexToARGB = app.Modules.Color.HexToARGB;
