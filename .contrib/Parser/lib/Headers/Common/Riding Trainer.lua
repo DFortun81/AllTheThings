@@ -1,6 +1,6 @@
 RIDING_TRAINER = createHeader({
 	readable = "Riding Trainer",
-	icon = "Interface/Icons/ability_mount_ridinghorse",
+	icon = 132261,
 	text = {
 		en = "Riding Trainer",
 		es = "Instructora de equitación",

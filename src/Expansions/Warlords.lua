@@ -115,7 +115,7 @@ do
 			return C_Garrison_GetMissionName(t.missionID);
 		end,
 		icon = function(t)
-			return "Interface/ICONS/INV_Icon_Mission_Complete_Order";
+			return 1103070;
 		end,
 	});
 end
@@ -127,7 +127,7 @@ do
 		local info = C_Garrison_GetTalentInfo(t.garrisonTalentID);
 		if not info then return nil; end
 		t.name = info.name;
-		t.icon = info.icon or "Interface/ICONS/INV_Icon_Mission_Complete_Order";
+		t.icon = info.icon or 1103070;
 		t.description = info.description;
 		setmetatable(t, nil);
 		return t[key];

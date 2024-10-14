@@ -126,13 +126,13 @@ app:CreateWindow("Auctions", {
 					}),
 					["reagentID"] = {	-- Reagents
 						["text"] = "Reagents",
-						["icon"] = "Interface/ICONS/INV_Enchant_DustIllusion",
+						["icon"] = 132856,
 						["description"] = "All items that can be used to craft an item using a profession on your account.",
 						["priority"] = 5,
 					},
 					["itemID"] = {	-- Items
 						["text"] = "Items",
-						["icon"] = "Interface/ICONS/INV_Box_02",
+						["icon"] = 132595,
 						["description"] = "All items that could potentially be upgrades are listed here.",
 						["priority"] = 7,
 					},
@@ -147,7 +147,7 @@ app:CreateWindow("Auctions", {
 						clickDescription = "Click this button to perform a full scan of the auction house. This information will appear within this window and clear out the existing data.",
 						scanningText = "Full Scan on Cooldown";
 						scanningDescription = "Please wait while we wait for the server to respond.";
-						icon = "INTERFACE/ICONS/Ability_Ambush",
+						icon = 132089,
 						OnClick = function(row, button)
 							return row.ref:StartScan(row);
 						end,
@@ -218,7 +218,7 @@ app:CreateWindow("Auctions", {
 					{
 						text = "Clear Auction Data",
 						description = "Click this button to clear all of the cached auction data.",
-						icon = "INTERFACE/ICONS/Ability_Ambush",
+						icon = 132089,
 						OnClick = function(row, button)
 							wipe(self.data.g);
 							wipe(auctionData);
@@ -238,7 +238,7 @@ app:CreateWindow("Auctions", {
 					},
 					{
 						text = "Toggle Debug Mode",
-						icon = "INTERFACE/ICONS/INV_Scarab_Crystal",
+						icon = 134932,
 						description = "Click this button to toggle debug mode to show everything regardless of filters!",
 						OnClick = function() 
 							app.Settings:ToggleDebugMode();
@@ -258,7 +258,7 @@ app:CreateWindow("Auctions", {
 					},
 					{
 						text = "Toggle Account Mode",
-						icon = "INTERFACE/ICONS/INV_Misc_Book_01",
+						icon = 133733,
 						description = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.",
 						OnClick = function() 
 							app.Settings:ToggleAccountMode();
@@ -281,7 +281,7 @@ app:CreateWindow("Auctions", {
 					},
 					{
 						text = "Toggle Faction Mode",
-						icon = "INTERFACE/ICONS/INV_Scarab_Crystal",
+						icon = 134932,
 						description = "Click this button to toggle faction mode to show everything for your faction!",
 						OnClick = function() 
 							app.Settings:ToggleFactionMode();

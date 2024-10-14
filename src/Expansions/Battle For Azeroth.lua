@@ -39,7 +39,7 @@ app.CreateAzeriteEssence = app.CreateClass(CLASSNAME, KEY, {
 		return 50;
 	end,
 	icon = function(t)
-		return t.info.icon or "Interface/ICONS/INV_Glowing Azerite Spire";
+		return t.info.icon or 2065585;
 	end,
 	name = function(t)
 		return t.info.name;

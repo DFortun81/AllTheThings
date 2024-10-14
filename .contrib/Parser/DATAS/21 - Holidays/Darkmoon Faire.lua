@@ -3,7 +3,7 @@
 --------------------------------------------
 MINIGAMES_HEADER = createHeader({
 	readable = "Minigames",
-	icon = "Interface/Icons/inv_misc_ticket_darkmoon_01",
+	icon = 134481,
 	text = {
 		en = "Minigames",
 	},
@@ -13,7 +13,7 @@ MINIGAMES_HEADER = createHeader({
 });
 DARKMOON_DANCE_HEADER = createHeader({
 	readable = "Darkmoon Dance",
-	icon = "Interface/Icons/spell_lifegivingspeed",
+	icon = 348567,
 	text = {
 		en = "Darkmoon Dance",
 		es = "Feria de la Luna Negra Juego de Baile",
@@ -31,7 +31,7 @@ DARKMOON_DANCE_HEADER = createHeader({
 });
 FIREBIRDS_CHALLENGE_HEADER = createHeader({
 	readable = "Firebird's Challenge",
-	icon = "Interface/Icons/inv_shoulder_leather_firelandsdruid_d_01",
+	icon = 514340,
 	text = {
 		en = "Firebird's Challenge",
 		es = "El desafío del pájaro de fuego",
@@ -49,7 +49,7 @@ FIREBIRDS_CHALLENGE_HEADER = createHeader({
 });
 SHOOTING_GALLERY_HEADER = createHeader({
 	readable = "Shooting Gallery",
-	icon = "Interface/Icons/inv_weapon_rifle_01",
+	icon = 135610,
 	text = {
 		en = "Shooting Gallery",
 		es = "Galería de tiro",
@@ -67,7 +67,7 @@ SHOOTING_GALLERY_HEADER = createHeader({
 });
 WHACK_A_GNOLL_HEADER = createHeader({
 	readable = "Whack-a-Gnoll",
-	icon = "Interface/Icons/inv_hammer_32",
+	icon = 537060,
 	text = {
 		en = "Whack-a-Gnoll",
 		es = "Golpea al gnoll",

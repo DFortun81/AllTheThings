@@ -25,7 +25,7 @@ app:CreateWindow("Collected Sources", {
 		if not self.data then
 			self.data = {
 				text = "Collected Sources",
-				icon = "Interface/Icons/inv_scroll_05", 
+				icon = 134941, 
 				description = "This window shows you all of the collected sources (according to Blizzard) tracked by ATT. Go get 'em!",
 				visible = true, 
 				expanded = true,

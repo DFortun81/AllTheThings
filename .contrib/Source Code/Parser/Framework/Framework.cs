@@ -1,4 +1,4 @@
-﻿using ATT.DB;
+using ATT.DB;
 using ATT.FieldTypes;
 using System;
 using System.Collections.Concurrent;
@@ -1963,7 +1963,7 @@ namespace ATT
                                     else
                                     {
                                         subbuilder.Append("headers");
-                                        ExportStringKeyFieldValue(subbuilder, key, ".icon", "interface/icons/inv_misc_questionmark");
+                                        ExportStringKeyFieldValue(subbuilder, key, ".icon", 134400);
                                         subbuilder.Append(";");
                                         ExportReadableConstantComment(subbuilder, readable, constant).AppendLine();
                                     }

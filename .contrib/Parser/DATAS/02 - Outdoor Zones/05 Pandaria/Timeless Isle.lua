@@ -26,7 +26,7 @@ root(ROOTS.Zones, {
 			["timeline"] = { ADDED_5_4_0 },
 			["groups"] = {
 				petbattle(m(571, {	-- Celestial Tournament
-					["icon"] = "Interface/Icons/inv_misc_trinketpanda_07",
+					["icon"] = 645227,
 					["groups"] = {
 						n(PET_BATTLE, {
 							n(71933, {	-- Blingtron 4000

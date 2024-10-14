@@ -90,7 +90,7 @@ root(ROOTS.Secrets, {
 			}),
 			n(createHeader({
 				readable = "Uuna's World Tour",
-				icon = "Interface/Icons/inv_misc_toy_03",
+				icon = 134507,
 				text = {
 					en = "Uuna's World Tour",
 					fr = "Tour du monde d’Uuna",

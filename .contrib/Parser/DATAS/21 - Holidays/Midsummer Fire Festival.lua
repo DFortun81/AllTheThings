@@ -851,7 +851,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				WESTFALL,
 				WETLANDS
 			},
-			["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
+			["icon"] = 134467,
 			-- #endif
 			["timeline"] = { REMOVED_2_4_0 },
 			["isYearly"] = true,
@@ -890,7 +890,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 				DARKSHORE,
 				STONETALON_MOUNTAINS,
 			},
-			["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
+			["icon"] = 134467,
 			-- #endif
 			["timeline"] = { REMOVED_2_4_0 },
 			["isYearly"] = true,
@@ -1421,7 +1421,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["isYearly"] = true,
 			["lvl"] = 1,
 			-- #if BEFORE TBC
-			["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
+			["icon"] = 134467,
 			["groups"] = {
 				objective(1, {	-- Flame of Stormwind
 					["coord"] = { 38.9, 62.3, STORMWIND_CITY },
@@ -1447,7 +1447,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["isYearly"] = true,
 			["lvl"] = 1,
 			-- #if BEFORE TBC
-			["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
+			["icon"] = 134467,
 			["groups"] = {
 				objective(1, {	-- Flame of Orgrimmar
 					["coord"] = { 46.9, 38.7, ORGRIMMAR },
@@ -1635,7 +1635,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["isYearly"] = true,
 			["lvl"] = 1,
 			-- #if BEFORE TBC
-			["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
+			["icon"] = 134467,
 			-- #endif
 			["groups"] = {
 				-- #if BEFORE TBC
@@ -1675,7 +1675,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.MIDSUMMER_FIRE_FESTIVAL, n(MIDSUMMER_FIRE
 			["isYearly"] = true,
 			["lvl"] = 1,
 			-- #if BEFORE TBC
-			["icon"] = "Interface/Icons/Inv_Misc_SummerFest_BrazierGreen",
+			["icon"] = 134467,
 			["groups"] = {
 				objective(1, {	-- Flame of the Blasted Lands
 					["coord"] = { 54.4, 31.8, BLASTED_LANDS },

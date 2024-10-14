@@ -1,6 +1,6 @@
 WEAPON_MASTER = createHeader({
 	readable = "Weapon Master",
-	icon = "Interface/Icons/INV_Weapon_Halberd_10",
+	icon = 135580,
 	text = {
 		en = "Weapon Master",
 		es = "Maestro armero",

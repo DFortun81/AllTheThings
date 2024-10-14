@@ -72,7 +72,7 @@ app:CreateWindow("Removed With Patch Drops", {
 		local options = {
 			{	-- Exclude Added With Patch Button
 				text = "Exclude Items Added With Patch",
-				icon = "Interface/Icons/inv_scroll_05",
+				icon = 134941,
 				description = "Press this button to toggle excluding Items added back to the game after they are initially removed from the game.\n\nNOTE: This might be misleading: if an item has multiple sources and only one of the sources was added back, specific sources of that item that aren't currently marked with AWP will still be shown. The tooltip may show Added With Patch, but it might only apply to a different hidden source. (For example, Pattern: Black Silk Pack)",
 				visible = true,
 				priority = 6,
@@ -89,7 +89,7 @@ app:CreateWindow("Removed With Patch Drops", {
 			},
 			{	-- Exclude Recipes Button
 				text = "Exclude Recipes",
-				icon = "Interface/Icons/inv_scroll_05",
+				icon = 134941,
 				description = "Press this button to toggle excluding Recipes.",
 				visible = true,
 				priority = 6,

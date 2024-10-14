@@ -61,7 +61,7 @@ do
 			return L.HEIRLOOM_TEXT;
 		end,
 		icon = function(t)
-			return "Interface/ICONS/Achievement_GuildPerk_WorkingOvertime_Rank2";
+			return 648901;
 		end,
 		description = function(t)
 			return L.HEIRLOOM_TEXT_DESC;
@@ -78,20 +78,20 @@ do
 	});
 
 	local armorTextures = {
-		"Interface/ICONS/INV_Icon_HeirloomToken_Armor01",
-		"Interface/ICONS/INV_Icon_HeirloomToken_Armor02",
-		"Interface/ICONS/Inv_leather_draenordungeon_c_01shoulder",
-		"Interface/ICONS/inv_mail_draenorquest90_b_01shoulder",
-		"Interface/ICONS/inv_leather_warfrontsalliance_c_01_shoulder",
-		"Interface/ICONS/inv_shoulder_armor_dragonspawn_c_02",
+		1097737,
+		1097738,
+		960150,
+		929921,
+		1805932,
+		4673926,
 	};
 	local weaponTextures = {
-		"Interface/ICONS/INV_Icon_HeirloomToken_Weapon01",
-		"Interface/ICONS/INV_Icon_HeirloomToken_Weapon02",
-		"Interface/ICONS/inv_weapon_shortblade_112",
-		"Interface/ICONS/inv_weapon_shortblade_111",
-		"Interface/ICONS/inv_weapon_shortblade_102",
-		"Interface/ICONS/inv_weapon_shortblade_84",
+		1097739,
+		1097740,
+		353645,
+		353136,
+		314894,
+		135718,
 	};
 
 	local weaponFilterIDs = { 20, 29, 28, 21, 22, 23, 24, 25, 26, 50, 57, 34, 35, 27, 33, 32, 31 };

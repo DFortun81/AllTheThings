@@ -59,7 +59,7 @@ app.CreateDynamicCategory = app.CreateClass("DynamicCategory", "suffix", {
 		return t.dynamicWindowData.text or ("Dynamic Category: " .. t.suffix);
 	end,
 	["icon"] = function(t)
-		return t.dynamicWindowData.icon or "Interface/ICONS/INV_Misc_Gear_02";
+		return t.dynamicWindowData.icon or 134064;
 	end,
 	["description"] = function(t)
 		return t.dynamicWindowData.description;

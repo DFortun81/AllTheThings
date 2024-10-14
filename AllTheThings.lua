@@ -106,13 +106,13 @@ local function GetMoneyString(amount)
 		local formatted
 		local gold,silver,copper = math_floor(amount / 100 / 100), math_floor((amount / 100) % 100), math_floor(amount % 100)
 		if gold > 0 then
-			formatted = formatNumericWithCommas(gold) .. "|TInterface\\MONEYFRAME\\UI-GoldIcon:0|t"
+			formatted = formatNumericWithCommas(gold) .. "|T237618:0|t"
 		end
 		if silver > 0 then
-			formatted = (formatted or "") .. silver .. "|TInterface\\MONEYFRAME\\UI-SilverIcon:0|t"
+			formatted = (formatted or "") .. silver .. "|T237620:0|t"
 		end
 		if copper > 0 then
-			formatted = (formatted or "") .. copper .. "|TInterface\\MONEYFRAME\\UI-CopperIcon:0|t"
+			formatted = (formatted or "") .. copper .. "|T237617:0|t"
 		end
 		return formatted
 	end
@@ -3415,7 +3415,7 @@ local function BuildSourceParent(group)
 			-- app.PrintDebug("Found parents",#parents)
 			local sourceGroup = app.CreateRawText(L.SOURCES, {
 				description = L.SOURCES_DESC,
-				icon = "Interface\\Icons\\inv_misc_spyglass_02",
+				icon = 134441,
 				OnUpdate = app.AlwaysShowUpdate,
 				skipFill = true,
 				SortPriority = -3.0,
@@ -6114,7 +6114,7 @@ CreateRow = function(self)
 	end
 
 	-- Setup highlighting and event handling
-	row:SetHighlightTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight", "ADD");
+	row:SetHighlightTexture(136810, "ADD");
 	row:RegisterForClicks("LeftButtonDown","RightButtonDown");
 	row:SetScript("OnClick", RowOnClick);
 	row:SetScript("OnEnter", RowOnEnter);
@@ -6140,7 +6140,7 @@ CreateRow = function(self)
 	row.Background = row:CreateTexture(nil, "BACKGROUND");
 	row.Background:SetAllPoints();
 	row.Background:SetPoint("LEFT", 4, 0);
-	row.Background:SetTexture("Interface\\QuestFrame\\UI-QuestTitleHighlight");
+	row.Background:SetTexture(136810);
 
 	-- Indicator is used by the Instance Saves functionality.
 	row.Indicator = row:CreateTexture(nil, "ARTWORK");
@@ -6297,8 +6297,8 @@ local function BuildData(self)
 	end
 end
 local backdrop = {
-	bgFile = "Interface/Tooltips/UI-Tooltip-Background",
-	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+	bgFile = 137056,
+	edgeFile = 137057,
 	tile = true, tileSize = 16, edgeSize = 16,
 	insets = { left = 4, right = 4, top = 4, bottom = 4 }
 };
@@ -6390,7 +6390,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window:SetUserPlaced(true);
 	window.data = {
 		['text'] = suffix,
-		['icon'] = "Interface\\Icons\\Ability_Spy",
+		['icon'] = 132319,
 		['visible'] = true,
 		['g'] = {
 			{
@@ -7308,12 +7308,12 @@ customWindowUpdates.AuctionData = function(self)
 			["text"] = "Auction Module",
 			["visible"] = true,
 			["back"] = 1,
-			["icon"] = "INTERFACE/ICONS/INV_Misc_Coin_01",
+			["icon"] = 133784,
 			["description"] = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!",
 			["options"] = {
 				{
 					["text"] = "Wipe Scan Data",
-					["icon"] = "INTERFACE/ICONS/INV_FIRSTAID_SUN-BLEACHED LINEN",
+					["icon"] = 2065582,
 					["description"] = "Click this button to wipe out all of the previous scan data.",
 					["visible"] = true,
 					["priority"] = -4,
@@ -7336,7 +7336,7 @@ customWindowUpdates.AuctionData = function(self)
 				},
 				{
 					["text"] = "Scan or Load Last Save",
-					["icon"] = "INTERFACE/ICONS/INV_DARKMOON_EYE",
+					["icon"] = 1100023,
 					["description"] = "Click this button to perform a full scan of the auction house or load the last scan conducted within 15 minutes. The game may or may not freeze depending on the size of your auction house.\n\nData should populate automatically.",
 					["visible"] = true,
 					["priority"] = -3,
@@ -7359,7 +7359,7 @@ customWindowUpdates.AuctionData = function(self)
 				},
 				{
 					["text"] = "Toggle Debug Mode",
-					["icon"] = "INTERFACE/ICONS/INV_MISC_WRENCH_02",
+					["icon"] = 134521,
 					["description"] = "Click this button to toggle debug mode to show everything regardless of filters!",
 					["visible"] = true,
 					["priority"] = -2,
@@ -7381,7 +7381,7 @@ customWindowUpdates.AuctionData = function(self)
 				},
 				{
 					["text"] = "Toggle Account Mode",
-					["icon"] = "INTERFACE/ICONS/ACHIEVEMENT_GUILDPERK_HAVEGROUP WILLTRAVEL",
+					["icon"] = 413583,
 					["description"] = "Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.",
 					["visible"] = true,
 					["priority"] = -1,
@@ -7402,7 +7402,7 @@ customWindowUpdates.AuctionData = function(self)
 				},
 				{
 					["text"] = "Toggle Faction Mode",
-					["icon"] = "INTERFACE/ICONS/INV_Scarab_Crystal",
+					["icon"] = 134932,
 					["description"] = "Click this button to toggle faction mode to show everything for your faction!",
 					["visible"] = true,
 					["OnClick"] = function()
@@ -7426,7 +7426,7 @@ customWindowUpdates.AuctionData = function(self)
 				},
 				{
 					["text"] = "Toggle Unobtainable Items",
-					["icon"] = "INTERFACE/ICONS/SPELL_BROKENHEART",
+					["icon"] = 135767,
 					["description"] = "Click this button to see currently unobtainable items in the auction data.",
 					["visible"] = true,
 					["priority"] = 0,
@@ -7479,7 +7479,7 @@ customWindowUpdates.Bounty = function(self, force, got)
 		self.initialized = true;
 		local autoOpen = app.CreateToggle("openAuto", {
 			["text"] = L.OPEN_AUTOMATICALLY,
-			["icon"] = "Interface\\Icons\\INV_Misc_Note_01",
+			["icon"] = 134327,
 			["description"] = L.OPEN_AUTOMATICALLY_DESC,
 			["visible"] = true,
 			["OnUpdate"] = app.AlwaysShowUpdate,
@@ -8021,13 +8021,13 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 				end
 				self:SetData(app.CreateMap(mapID, {
 					["text"] = L.MINI_LIST .. " [" .. mapID .. "]",
-					["icon"] = "Interface\\Icons\\INV_Misc_Map06",
+					["icon"] = 237385,
 					["description"] = L.MINI_LIST_DESC,
 					["visible"] = true,
 					["g"] = {
 						{
 							["text"] = L.UPDATE_LOCATION_NOW,
-							["icon"] = "Interface\\Icons\\INV_Misc_Map_01",
+							["icon"] = 134269,
 							["description"] = L.UPDATE_LOCATION_NOW_DESC,
 							["OnClick"] = function(row, button)
 								Callback(app.LocationTrigger)
@@ -8111,7 +8111,7 @@ customWindowUpdates.ItemFilter = function(self, force)
 				['g'] = {
 					{
 						['text'] = L.ITEM_FILTER_BUTTON_TEXT,
-						['icon'] = "Interface\\Icons\\INV_MISC_KEY_12",
+						['icon'] = 134246,
 						['description'] = L.ITEM_FILTER_BUTTON_DESCRIPTION,
 						['visible'] = true,
 						['OnUpdate'] = app.AlwaysShowUpdate,
@@ -8271,7 +8271,7 @@ customWindowUpdates.awp = function(self, force)	-- TODO: Change this to remember
 		end
 		local AWPwindow = {
 			text = L.ADDED_WITH_PATCH,
-			icon = "Interface\\Icons\\spell_chargepositive",
+			icon = 135769,
 			description = L.ADDED_WITH_PATCH_TOOLTIP,
 			visible = true,
 			back = 1,
@@ -8505,7 +8505,7 @@ customWindowUpdates.RaidAssistant = function(self)
 					},
 					{
 						['text'] = L.TELEPORT_TO_FROM_DUNGEON,
-						['icon'] = "Interface\\Icons\\Spell_Shadow_Teleport",
+						['icon'] = 136222,
 						['description'] = L.TELEPORT_TO_FROM_DUNGEON_DESC,
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -8518,7 +8518,7 @@ customWindowUpdates.RaidAssistant = function(self)
 					},
 					{
 						['text'] = L.DELIST_GROUP,
-						['icon'] = "Interface\\Icons\\Ability_Vehicle_LaunchPlayer",
+						['icon'] = 252175,
 						['description'] = L.DELIST_GROUP_DESC,
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -8536,7 +8536,7 @@ customWindowUpdates.RaidAssistant = function(self)
 					},
 					{
 						['text'] = L.LEAVE_GROUP,
-						['icon'] = "Interface\\Icons\\Ability_Vanish",
+						['icon'] = 132331,
 						['description'] = L.LEAVE_GROUP_DESC,
 						['visible'] = true,
 						['OnClick'] = function(row, button)
@@ -8556,7 +8556,7 @@ customWindowUpdates.RaidAssistant = function(self)
 			};
 			lootspecialization = {
 				['text'] = L.LOOT_SPEC,
-				['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome02",
+				['icon'] = 1499566,
 				["description"] = L.LOOT_SPEC_DESC_2,
 				['OnClick'] = function(row, button)
 					self:SetData(raidassistant);
@@ -8570,7 +8570,7 @@ customWindowUpdates.RaidAssistant = function(self)
 						tinsert(data.g, {
 							['text'] = L.CURRENT_SPEC,
 							['title'] = select(2, GetSpecializationInfo(GetSpecialization())),
-							['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome01",
+							['icon'] = 1495827,
 							['id'] = 0,
 							["description"] = L.CURRENT_SPEC_DESC,
 							['visible'] = true,
@@ -8605,7 +8605,7 @@ customWindowUpdates.RaidAssistant = function(self)
 			};
 			dungeondifficulty = {
 				['text'] = L.DUNGEON_DIFF,
-				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man",
+				['icon'] = 236530,
 				["description"] = L.DUNGEON_DIFF_DESC_2,
 				['OnClick'] = function(row, button)
 					self:SetData(raidassistant);
@@ -8638,7 +8638,7 @@ customWindowUpdates.RaidAssistant = function(self)
 			};
 			raiddifficulty = {
 				['text'] = L.RAID_DIFF,
-				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man",
+				['icon'] = 236530,
 				["description"] = L.RAID_DIFF_DESC_2,
 				['OnClick'] = function(row, button)
 					self:SetData(raidassistant);
@@ -8671,7 +8671,7 @@ customWindowUpdates.RaidAssistant = function(self)
 			};
 			legacyraiddifficulty = {
 				['text'] = L.LEGACY_RAID_DIFF,
-				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man",
+				['icon'] = 236530,
 				["description"] = L.LEGACY_RAID_DIFF_DESC_2,
 				['OnClick'] = function(row, button)
 					self:SetData(raidassistant);
@@ -9381,7 +9381,7 @@ customWindowUpdates.Sync = function(self)
 					-- Characters Section
 					{
 						['text'] = L.CHARACTERS,
-						['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
+						['icon'] = 526421,
 						["description"] = L.SYNC_CHARACTERS_TOOLTIP,
 						['visible'] = true,
 						['expanded'] = true,
@@ -9406,7 +9406,7 @@ customWindowUpdates.Sync = function(self)
 							if #g < 1 then
 								tinsert(g, {
 									['text'] = L.NO_CHARACTERS_FOUND,
-									['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
+									['icon'] = 526421,
 									['visible'] = true,
 									OnClick = app.UI.OnClick.IgnoreRightClick,
 									["OnUpdate"] = app.AlwaysShowUpdate,
@@ -9423,7 +9423,7 @@ customWindowUpdates.Sync = function(self)
 					-- Linked Accounts Section
 					{
 						['text'] = L.LINKED_ACCOUNTS,
-						['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
+						['icon'] = 526421,
 						["description"] = L.LINKED_ACCOUNTS_TOOLTIP,
 						['visible'] = true,
 						['g'] = {},
@@ -9452,7 +9452,7 @@ customWindowUpdates.Sync = function(self)
 									tinsert(data.g, {
 										['text'] = playerName,
 										['datalink'] = playerName,
-										['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
+										['icon'] = 526421,
 										['OnClick'] = OnRightButtonDeleteLinkedAccount,
 										['OnTooltip'] = OnTooltipForLinkedAccount,
 										['OnUpdate'] = app.AlwaysShowUpdate,
@@ -9463,7 +9463,7 @@ customWindowUpdates.Sync = function(self)
 									tinsert(data.g, {
 										['text'] = playerName,
 										['datalink'] = playerName,
-										['icon'] = "Interface\\FriendsFrame\\Battlenet-WoWicon",
+										['icon'] = 374212,
 										['OnClick'] = OnRightButtonDeleteLinkedAccount,
 										['OnTooltip'] = OnTooltipForLinkedAccount,
 										['OnUpdate'] = app.AlwaysShowUpdate,
@@ -9475,7 +9475,7 @@ customWindowUpdates.Sync = function(self)
 							if #data.g < 1 then
 								tinsert(data.g, {
 									['text'] = L.NO_LINKED_ACCOUNTS,
-									['icon'] = "Interface\\FriendsFrame\\Battlenet-Portrait",
+									['icon'] = 526421,
 									['visible'] = true,
 									OnClick = app.UI.OnClick.IgnoreRightClick,
 									["OnUpdate"] = app.AlwaysShowUpdate,
@@ -9848,7 +9848,7 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 		self:RegisterEvent("GARRISON_TRADESKILL_NPC_CLOSED");
 		self:SetData({
 			['text'] = L.PROFESSION_LIST,
-			['icon'] = "Interface\\Icons\\INV_Scroll_04",
+			['icon'] = 134940,
 			["description"] = L.PROFESSION_LIST_DESC,
 			['visible'] = true,
 			["indent"] = 0,
@@ -10331,7 +10331,7 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 			self.initialized = true;
 			force = true;
 			local UpdateButton = app.CreateRawText(L.UPDATE_WORLD_QUESTS, {
-				["icon"] = "Interface\\Icons\\INV_Misc_Map_01",
+				["icon"] = 134269,
 				["description"] = L.UPDATE_WORLD_QUESTS_DESC,
 				["hash"] = "funUpdateWorldQuests",
 				["OnClick"] = function(data, button)
@@ -10341,7 +10341,7 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 				["OnUpdate"] = app.AlwaysShowUpdate,
 			})
 			local data = app.CreateRawText(L.WORLD_QUESTS, {
-				["icon"] = "Interface\\Icons\\INV_Misc_Map08",
+				["icon"] = 237387,
 				["description"] = L.WORLD_QUESTS_DESC,
 				["indent"] = 0,
 				["back"] = 1,
@@ -10599,7 +10599,7 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 				-- Put a 'Clear World Quests' click first in the list
 				local temp = {{
 					['text'] = L.CLEAR_WORLD_QUESTS,
-					['icon'] = "Interface\\Icons\\ability_racial_haymaker",
+					['icon'] = 2447782,
 					['description'] = L.CLEAR_WORLD_QUESTS_DESC,
 					['hash'] = "funClearWorldQuests",
 					['OnClick'] = function(data, button)
@@ -10884,7 +10884,7 @@ app.LoadDebugger = function()
 					{
 						["hash"] = "clearHistory",
 						['text'] = "Clear History",
-						['icon'] = "Interface\\Icons\\Ability_Rogue_FeignDeath",
+						['icon'] = 132293,
 						["description"] = "Click this to fully clear this window.\n\nNOTE: If you click this by accident, use the dynamic Restore Buttons that this generates to reapply the data that was cleared.\n\nWARNING: If you reload the UI, the data stored in the Reload Button will be lost forever!",
 						["OnUpdate"] = app.AlwaysShowUpdate,
 						['count'] = 0,
@@ -11456,13 +11456,13 @@ app.ProcessAuctionData = function()
 
 	local ObjectTypeMetas = {
 		["criteriaID"] = app.CreateFilter(105, {	-- Achievements
-			["icon"] = "INTERFACE/ICONS/ACHIEVEMENT_BOSS_LICHKING",
+			["icon"] = 341221,
 			["description"] = L.ITEMS_FOR_ACHIEVEMENTS_DESC,
 			["priority"] = 1,
 		}),
 		["sourceID"] = {	-- Appearances
 			["text"] = "Appearances",
-			["icon"] = "INTERFACE/ICONS/INV_SWORD_06",
+			["icon"] = 135276,
 			["description"] = L.ALL_APPEARANCES_DESC,
 			["priority"] = 2,
 		},
@@ -11475,23 +11475,23 @@ app.ProcessAuctionData = function()
 			["priority"] = 4,
 		}),
 		["questID"] = app.CreateNPC(app.HeaderConstants.QUESTS, {	-- Quests
-			["icon"] = "INTERFACE/ICONS/ACHIEVEMENT_GENERAL_100KQUESTS",
+			["icon"] = 464068,
 			["description"] = L.ALL_THE_QUESTS_DESC,
 			["priority"] = 5,
 		}),
 		["recipeID"] = app.CreateFilter(200, {	-- Recipes
-			["icon"] = "INTERFACE/ICONS/INV_SCROLL_06",
+			["icon"] = 134942,
 			["description"] = L.ALL_THE_RECIPES_DESC,
 			["priority"] = 6,
 		}),
 		["itemID"] = {					-- General
 			["text"] = "General",
-			["icon"] = "INTERFACE/ICONS/INV_MISC_FROSTEMBLEM_01",
+			["icon"] = 334365,
 			["description"] = L.ALL_THE_ILLUSIONS_DESC,
 			["priority"] = 7,
 		},
 		["reagentID"] = app.CreateFilter(56, {	-- Reagent
-			["icon"] = "INTERFACE/ICONS/SPELL_FROST_FROZENCORE",
+			["icon"] = 135851,
 			["description"] = L.ALL_THE_REAGENTS_DESC,
 			["priority"] = 8,
 		}),

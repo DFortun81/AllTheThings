@@ -1,4 +1,4 @@
-﻿-- #if NOT DEBUG
+-- #if NOT DEBUG
 -- PROGRAMMATIC OBJECT LOCALES
 -- Brightly Colored Egg
 local brightlyColoredEgg = ObjectDB[113768];
@@ -15,7 +15,7 @@ ObjectDB[226469].text.en = WOWAPI_GetSpellName(154259);
 -- #if BEFORE WRATH
 ObjectDB[176344] = {
 	readable = "Document Chest",
-	icon = "Interface/Icons/inv_scroll_07",
+	icon = 134943,
 	model = 196976,
 	text = {
 		en = "Document Chest",
@@ -31,7 +31,7 @@ ObjectDB[176344] = {
 };
 ObjectDB[190483] = {
 	readable = "Document Chest",
-	icon = "Interface/Icons/inv_scroll_07",
+	icon = 134943,
 	model = 196976,
 	text = {
 		en = "Document Chest",
@@ -47,7 +47,7 @@ ObjectDB[190483] = {
 };
 ObjectDB[190484] = {
 	readable = "Document Chest",
-	icon = "Interface/Icons/inv_scroll_07",
+	icon = 134943,
 	model = 196976,
 	text = {
 		en = "Document Chest",
@@ -98,7 +98,7 @@ ObjectDB[205158] = {
 -- #if BEFORE CATA
 ObjectDB[256] = {
 	readable = "WANTED",
-	icon = "Interface/Icons/inv_scroll_03",
+	icon = 134939,
 	model = 199424,
 	text = {
 		en = "WANTED",
@@ -186,7 +186,7 @@ ObjectDB[1673].model = 202013;	-- Fel Cone
 
 local plantBundle = ObjectDB[17282];
 plantBundle.readable = "Plant Bundle";
-plantBundle.icon = "Interface/Icons/inv_misc_herb_05";
+plantBundle.icon = 134185;
 plantBundle.model = 203748;
 plantBundle.text.en = "Plant Bundle";
 plantBundle.text.es = "Paquete de plantas";
@@ -200,7 +200,7 @@ plantBundle.text.cn = "草药";
 
 local elunesTear = ObjectDB[19015];
 elunesTear.readable = "Elune's Tear";
-elunesTear.icon = "Interface/Icons/inv_ore_arcanite_02";
+elunesTear.icon = 134564;
 elunesTear.model = 198719;
 elunesTear.text.en = "Elune's Tear";
 elunesTear.text.es = "Lágrima de Elune";
@@ -264,7 +264,7 @@ ObjectDB[176213].text.es = "Sangre de Héroes";	-- Blood of Heroes
 -- #endif
 
 -- #if BEFORE CATA
-ObjectDB[182947].icon = "Interface/Icons/inv_misc_book_06";	-- The Codex of Blood
+ObjectDB[182947].icon = 133738;	-- The Codex of Blood
 -- #endif
 -- #endif
 
@@ -283,11 +283,11 @@ for i,objectID in pairs({
 	281339,
 }) do
 	-- #if AFTER 7.3.5
-	ObjectDB[objectID].icon = "Interface/Icons/tracking_warboard";
+	ObjectDB[objectID].icon = 1863940;
 	-- #elseif AFTER 5.4.2
-	ObjectDB[objectID].icon = "Interface/Icons/Achievement_general_allianceslayer";
+	ObjectDB[objectID].icon = 464076;
 	-- #else
-	ObjectDB[objectID].icon = "Interface/Icons/Inv_misc_note_02";
+	ObjectDB[objectID].icon = 134328;
 	-- #endif
 end
 
@@ -305,10 +305,10 @@ for i,objectID in pairs({
 	281340,
 }) do
 	-- #if AFTER 7.3.5
-	ObjectDB[objectID].icon = "Interface/Icons/tracking_warboard";
+	ObjectDB[objectID].icon = 1863940;
 	-- #elseif AFTER 5.4.2
-	ObjectDB[objectID].icon = "Interface/Icons/Achievement_General_HordeSlayer";
+	ObjectDB[objectID].icon = 464078;
 	-- #else
-	ObjectDB[objectID].icon = "Interface/Icons/Inv_misc_note_02";
+	ObjectDB[objectID].icon = 134328;
 	-- #endif
 end

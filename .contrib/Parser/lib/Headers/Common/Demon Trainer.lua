@@ -1,6 +1,6 @@
 DEMON_TRAINER = createHeader({
 	readable = "Demon Trainer",
-	icon = "Interface/Icons/inv_misc_book_06",
+	icon = 133738,
 	text = {
 		en = "Demon Trainer",
 		es = "Instructor de demonios",

@@ -36,7 +36,7 @@ local illusionFields = {
 		return t.link;
 	end,
 	["icon"] = function(t)
-		return "Interface/ICONS/INV_Enchant_Disenchant";
+		return 132853;
 	end,
 	["collectible"] = function(t)
 		return app.Settings.Collectibles.Illusions;

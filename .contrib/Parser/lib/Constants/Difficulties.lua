@@ -146,21 +146,21 @@ DIFFICULTY.LEGACY_RAID.MULTI = {
 
 -- Helper Tables
 DifficultyDB = {
-	[DIFFICULTY.DUNGEON.NORMAL] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
-	[DIFFICULTY.DUNGEON.HEROIC] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 2 },
-	[DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
-	[DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },
-	[DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
-	[DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 1 },
-	[DIFFICULTY.RAID.FINDER] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 1 },
-	[DIFFICULTY.RAID.NORMAL] = { icon = "Interface/Worldmap/Skull_64Green", modID = 3 },
-	[DIFFICULTY.RAID.HEROIC] = { icon = "Interface/Worldmap/Skull_64Blue", modID = 5 },
-	[DIFFICULTY.RAID.MYTHIC] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 6 },
-	[DIFFICULTY.RAID.LFR] = { icon = "Interface/Worldmap/Skull_64Grey", modID = 4 },
-	[18] = { icon = "Interface/Worldmap/Skull_64Green", modID = 1 },	-- Event unused?
-	[DIFFICULTY.DUNGEON.MYTHIC] = { icon = "Interface/Worldmap/Skull_64Purple", modID = 23 },
-	[DIFFICULTY.DUNGEON.TIMEWALKING] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22 },
-	[33] = { icon = "Interface/Worldmap/Skull_64Red", modID = 22 },	-- unused?
+	[DIFFICULTY.DUNGEON.NORMAL] = { icon = 311236, modID = 1 },
+	[DIFFICULTY.DUNGEON.HEROIC] = { icon = 311235, modID = 2 },
+	[DIFFICULTY.LEGACY_RAID.PLAYER10_NORMAL] = { icon = 311236, modID = 1 },
+	[DIFFICULTY.LEGACY_RAID.PLAYER25_NORMAL] = { icon = 311236, modID = 1 },
+	[DIFFICULTY.LEGACY_RAID.PLAYER10_HEROIC] = { icon = 311235, modID = 1 },
+	[DIFFICULTY.LEGACY_RAID.PLAYER25_HEROIC] = { icon = 311235, modID = 1 },
+	[DIFFICULTY.RAID.FINDER] = { icon = 308480, modID = 1 },
+	[DIFFICULTY.RAID.NORMAL] = { icon = 311236, modID = 3 },
+	[DIFFICULTY.RAID.HEROIC] = { icon = 311235, modID = 5 },
+	[DIFFICULTY.RAID.MYTHIC] = { icon = 311237, modID = 6 },
+	[DIFFICULTY.RAID.LFR] = { icon = 308480, modID = 4 },
+	[18] = { icon = 311236, modID = 1 },	-- Event unused?
+	[DIFFICULTY.DUNGEON.MYTHIC] = { icon = 311237, modID = 23 },
+	[DIFFICULTY.DUNGEON.TIMEWALKING] = { icon = 311238, modID = 22 },
+	[33] = { icon = 311238, modID = 22 },	-- unused?
 
 	-- What this does is tell the shortcut to take the id from the first element and use the remaining elements as the difficulties list.
 	-- This will cause the display to appear as the original difficulty in the addon, but also provide the ability for it to encompass multiple. (Cata -> MOP raids)
