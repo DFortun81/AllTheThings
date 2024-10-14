@@ -184,16 +184,10 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["timeline"] = { ADDED_3_0_2 },
 				}),
 				applyclassicphase(PHASE_TWO, achWithRep(713, FACTION_SILVERWING_SENTINELS, {	-- Silverwing Sentinel (A)
-					-- #if BEFORE WRATH
-					["description"] = "Raise your reputation with the Silverwing Sentinels to Exalted.",
-					-- #endif
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(PHASE_TWO, achWithRep(712, FACTION_WARSONG_OUTRIDERS, {	-- Warsong Outrider (H)
-					-- #if BEFORE WRATH
-					["description"] = "Raise your reputation with the Warsong Outriders to Exalted.",
-					-- #endif
 					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,
 				})),

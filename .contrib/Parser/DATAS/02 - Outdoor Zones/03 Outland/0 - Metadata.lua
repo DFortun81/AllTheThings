@@ -75,7 +75,6 @@ root(ROOTS.Zones, {
 				})),
 				ach(1262, {	-- Loremaster of Outland (A)
 					-- #if BEFORE WRATH
-					["description"] = "Complete the Outland quest achievements listed below.",
 					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 1194, 1190, 1192, 1193, 1195, 1191, 1189); end]],
@@ -101,7 +100,6 @@ root(ROOTS.Zones, {
 				}),
 				ach(1274, {	-- Loremaster of Outland (H)
 					-- #if BEFORE WRATH
-					["description"] = "Complete the Outland quest achievements listed below.",
 					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 1194, 1190, 1273, 1193, 1195, 1272, 1271); end]],

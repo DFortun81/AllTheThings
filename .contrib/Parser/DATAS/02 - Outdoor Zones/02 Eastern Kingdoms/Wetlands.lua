@@ -13,11 +13,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(841, {	-- Explore Wetlands
-					-- #if BEFORE WRATH
-					["description"] = "Explore Wetlands, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(841),	-- Explore Wetlands
 				ach(4898, {	-- Wetlands Quests
 					-- In 5.0.4, this was merged into the Loch Modan quests achievement for some stupid reason no one knows the answer to.
 					["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },

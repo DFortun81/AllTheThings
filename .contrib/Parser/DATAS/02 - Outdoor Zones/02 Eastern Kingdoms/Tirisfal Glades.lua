@@ -819,11 +819,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			-- #endif
 			n(ACHIEVEMENTS, {
-				explorationAch(768, {	-- Explore Tirisfal Glades
-					-- #if BEFORE WRATH
-					["description"] = "Explore Tirisfal Glades, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(768),	-- Explore Tirisfal Glades
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",

@@ -68,7 +68,6 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 			ach(2116, {	-- Tabard of the Argent Dawn
 				["provider"] = { "i", 22999 },	-- Tabard of the Argent Dawn
 				-- #if BEFORE WRATH
-				["description"] = "Obtained a Tabard of the Argent Dawn from the Scourge Invasion event.",
 				["timeline"] = { REMOVED_3_0_2 },
 				-- #endif
 			}),
@@ -853,7 +852,6 @@ local invasion = n(THE_SCOURGE_INVASION, bubbleDownFiltered({
 				ach(2456, {	-- Vampire Hunter
 					["provider"] = { "i", 38658 },	-- Vampiric Batling Pet
 					-- #if BEFORE WRATH
-					["description"] = "Slew Prince Tenris Mirkblood and acquired his Vampiric Batling pet.",
 					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_3_0_2 },
 					-- #else
 					["timeline"] = { ADDED_WITH_WRATH_PREPATCH, REMOVED_AFTER_WRATH_PREPATCH },

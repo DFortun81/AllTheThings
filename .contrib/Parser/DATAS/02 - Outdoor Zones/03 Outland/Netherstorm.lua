@@ -11,11 +11,7 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(843, {	-- Explore Netherstorm
-						-- #if BEFORE WRATH
-						["description"] = "Explore Netherstorm, revealing the covered areas of the world map.",
-						-- #endif
-					}),
+					explorationAch(843),	-- Explore Netherstorm
 					ach(1194, {	-- Into the Nether
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -43,9 +39,6 @@ root(ROOTS.Zones, {
 							10439,	-- Dimensius the All-Devouring
 						},
 						-- #else
-						-- #if BEFORE WRATH
-						["description"] = "Complete 120 quests in Netherstorm.",
-						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],

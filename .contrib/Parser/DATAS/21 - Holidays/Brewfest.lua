@@ -361,9 +361,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					{ "i", 37828 },	-- Great Brewfest Kodo
 					{ "i", 33977 },	-- Swift Brewfest Ram
 				},
-				-- #if BEFORE WRATH
-				["description"] = "Obtain an epic Brewfest mount.",
-				-- #endif
 				["timeline"] = { ADDED_2_0_1 },
 			}),
 			-- #if AFTER MOP
@@ -458,9 +455,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.BREWFEST, n(BREWFEST_HEADER, {
 					{ "i", 39476 },	-- Fresh Goblin Brewfest Hops
 					{ "i", 37816 },	-- Preserved Brewfest Hops
 				},
-				-- #if BEFORE WRATH
-				["description"] = "Obtain a Brewfest mount, or transform yours into one using Brewfest Hops.",
-				-- #endif
 				["timeline"] = { ADDED_2_0_1 },
 			}),
 			ach(1184, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Strange Brew (A)

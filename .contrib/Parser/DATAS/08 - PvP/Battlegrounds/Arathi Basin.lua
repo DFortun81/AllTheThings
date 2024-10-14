@@ -130,15 +130,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["_noautomation"] = true,	-- Doesn't show any criteria ingame but they exist so we hide them ourselves
 				}),
 				applyclassicphase(PHASE_TWO, achWithRep(711, FACTION_THE_LEAGUE_OF_ARATHOR, {	-- Knight of Arathor
-					-- #if BEFORE WRATH
-					["description"] = "Raise your reputation with The League of Arathor to Exalted.",
-					-- #endif
 					["races"] = ALLIANCE_ONLY,
 				})),
 				applyclassicphase(PHASE_TWO, achWithRep(710, FACTION_THE_DEFILERS, {	-- The Defiler
-					-- #if BEFORE WRATH
-					["description"] = "Raise your reputation with The Defilers to Exalted.",
-					-- #endif
 					["races"] = HORDE_ONLY,
 				})),
 			}),

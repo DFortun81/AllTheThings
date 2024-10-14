@@ -38,9 +38,6 @@ root(ROOTS.WorldEvents, n(THE_OPENING_OF_THE_DARK_PORTAL,
 				["groups"] = {
 					ach(2079, {	-- Tabard of the Protector
 						["provider"] = { "i", 28788 },	-- Tabard of the Protector
-						-- #if BEFORE WRATH
-						["description"] = "Obtained a Tabard of the Protector from the Dark Portal event.",
-						-- #endif
 					}),
 					i(28788),	-- Tabard of the Protector
 				},

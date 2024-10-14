@@ -642,21 +642,11 @@ root(ROOTS.Zones, {
 						["description"] = "Gained exalted status with The Scryers and The Aldor.\n\nNOTE: This can be accomplished now by learning both faction's Exalted recipes, their tabards, or their equipment that require Exalted reputation to buy. For the sake of simplicity, just buy both tabards as this will also count toward the 25 tabard achievement later.\n\nWARNING: You must maintain at least one of these requirements in order to acquire the achievement with prepatch!",
 						-- #endif
 					})),
-					applyclassicphase(TBC_PHASE_ONE, achWithAnyReps(903, { FACTION_THE_ALDOR, FACTION_THE_SCRYERS }, {	-- Shattrath Divided
-						-- #if BEFORE WRATH
-						["description"] = "Raise your reputation with The Scryers or The Aldor to Exalted.",
-						-- #endif
-					})),
+					applyclassicphase(TBC_PHASE_ONE, achWithAnyReps(903, { FACTION_THE_ALDOR, FACTION_THE_SCRYERS })),	-- Shattrath Divided
 					applyclassicphase(TBC_PHASE_ONE, achWithReps(764, { FACTION_CENARION_EXPEDITION, FACTION_KEEPERS_OF_TIME, FACTION_LOWER_CITY, FACTION_THE_SHATAR, FACTION_HONOR_HOLD }, {	-- The Burning Crusader (A)
-						-- #if BEFORE WRATH
-						["description"] = "Raise all of The Burning Crusade dungeon reputations to exalted.",
-						-- #endif
 						["races"] = ALLIANCE_ONLY,
 					})),
 					applyclassicphase(TBC_PHASE_ONE, achWithReps(763, { FACTION_CENARION_EXPEDITION, FACTION_KEEPERS_OF_TIME, FACTION_LOWER_CITY, FACTION_THE_SHATAR, FACTION_THRALLMAR }, {	-- The Burning Crusader (H)
-						-- #if BEFORE WRATH
-						["description"] = "Raise all of The Burning Crusade dungeon reputations to exalted.",
-						-- #endif
 						["races"] = HORDE_ONLY,
 					})),
 				}),
@@ -2164,9 +2154,6 @@ root(ROOTS.Zones, {
 						["groups"] = {
 							ach(1165, {	-- My Storage is "Gigantique"
 								["provider"] = { "i", 38082 },	-- "Gigantique" Bag
-								-- #if BEFORE WRATH
-								["description"] = "Equip Haris Pilton's \"Gigantique\" Bag.",
-								-- #endif
 							}),
 							i(38082, {	-- "Gigantique" Bag
 								["cost"] = 12000000,	-- 1,200g

@@ -30,21 +30,12 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(867, {	-- Explore Terokkar Forest
-						-- #if BEFORE WRATH
-						["description"] = "Explore Terokkar Forest, revealing the covered areas of the world map.",
-						-- #endif
-					}),
+					explorationAch(867),	-- Explore Terokkar Forest
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, achWithRep(894, FACTION_SHATARI_SKYGUARD, {	-- Flying High Over Skettis
-						-- #if BEFORE WRATH
-						["description"] = "Raise your reputation with the Sha'tari Skyguard to Exalted.",
-						-- #endif
+						
 					})),
 					ach(726, {	-- Mr. Pinchy's Magical Crawdad Box
 						["provider"] = { "i", 27445 },	-- Magical Crawdad Box
-						-- #if BEFORE WRATH
-						["description"] = "Fish your way to Mr. Pinchy's Magical Crawdad Box.",
-						-- #endif
 						["requireSkill"] = FISHING,
 					}),
 					ach(905, {	-- Old Man Barlowned
@@ -113,9 +104,6 @@ root(ROOTS.Zones, {
 							10028,	-- Vessels of Power
 						},
 						-- #else
-						-- #if BEFORE WRATH
-						["description"] = "Complete 63 quests in Terokkar Forest.",
-						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
@@ -207,9 +195,6 @@ root(ROOTS.Zones, {
 							10036,	-- Torgos!
 						},
 						-- #else
-						-- #if BEFORE WRATH
-						["description"] = "Complete 68 quests in Terokkar Forest.",
-						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],

@@ -42,7 +42,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.STRANGLETHORN_FISHING_EXTRAVAGANZA, n(STR
 					{ "i", 19970 },	-- Arcanite Fishing Pole
 					{ "i", 19979 },	-- Hook of the Master Angler
 				},
-				["description"] = "Win the Booty Bay fishing contest.",
 				-- #endif
 				["requireSkill"] = FISHING,
 			}),

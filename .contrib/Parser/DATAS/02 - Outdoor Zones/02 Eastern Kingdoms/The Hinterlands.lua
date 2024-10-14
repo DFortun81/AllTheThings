@@ -9,11 +9,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(773, {	-- Explore The Hinterlands
-					-- #if BEFORE WRATH
-					["description"] = "Explore The Hinterlands, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(773),	-- Explore The Hinterlands
 				ach(4897, {	-- Hinterlands Quests
 					["timeline"] = { ADDED_4_0_3 },
 					-- #if AFTER MOP

@@ -72,15 +72,9 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 					["timeline"] = { ADDED_8_2_5 },
 				})),
 				applyclassicphase(PHASE_TWO, achWithRep(708, FACTION_FROSTWOLF_CLAN, {	-- Hero of the Frostwolf Clan
-					-- #if BEFORE WRATH
-					["description"] = "Raise your reputation with the Frostwolf Clan to Exalted.",
-					-- #endif
 					["races"] = HORDE_ONLY,
 				})),
 				applyclassicphase(PHASE_TWO, achWithRep(709, FACTION_STORMPIKE_GUARD, {	-- Hero of the Stormpike Guard
-					-- #if BEFORE WRATH
-					["description"] = "Raise your reputation with the Stormpike Guard to Exalted.",
-					-- #endif
 					["races"] = ALLIANCE_ONLY,
 				})),
 				ach(1167, {	-- Master of Alterac Valley (Alliance - before 4.3.0)
@@ -206,17 +200,11 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 				}),
 				ach(706, {	-- Frostwolf Howler
 					["provider"] = { "i", 19029 },	-- Horn of the Frostwolf Howler
-					-- #if BEFORE WRATH
-					["description"] = "Obtain a Frostwolf Howler from Alterac Valley.",
-					-- #endif
 					["races"] = HORDE_ONLY,
 					["filterID"] = MOUNTS,
 				}),
 				ach(707, {	-- Stormpike Battle Charger
 					["provider"] = { "i", 19030 },	-- Stormpike Battle Charger
-					-- #if BEFORE WRATH
-					["description"] = "Obtain a Stormpike Battle Charger from Alterac Valley.",
-					-- #endif
 					["races"] = ALLIANCE_ONLY,
 					["filterID"] = MOUNTS,
 				}),

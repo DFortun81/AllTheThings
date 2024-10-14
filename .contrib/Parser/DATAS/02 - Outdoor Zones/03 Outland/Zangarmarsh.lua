@@ -46,11 +46,7 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(863, {	-- Explore Zangarmarsh
-						-- #if BEFORE WRATH
-						["description"] = "Explore Zangarmarsh, revealing the covered areas of the world map.",
-						-- #endif
-					}),
+					explorationAch(863),	-- Explore Zangarmarsh
 					ach(1190, {	-- Mysteries of the Marsh
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -111,9 +107,6 @@ root(ROOTS.Zones, {
 							9729,	-- Fhwoor Smash!
 						},
 						-- #else
-						-- #if BEFORE WRATH
-						["description"] = "Complete 54 quests in Zangarmarsh.",
-						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
@@ -198,18 +191,11 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					applyclassicphase(TBC_PHASE_ONE, achWithReps(953, { FACTION_CENARION_CIRCLE, FACTION_CENARION_EXPEDITION }, {	-- Guardian of Cenarius
-						-- #if BEFORE WRATH
-						["description"] = "Raise your reputation with the Cenarion Circle and Cenarion Expedition to Exalted.",
-						-- #endif
-						["groups"] = {
-							-- NOTE: Achievement says it awards 132, but that's wrong.
-							applyclassicphase(WRATH_PHASE_ONE, title(100)),	-- %, Guardian of Cenarius
-						},
+						-- NOTE: Achievement says it awards 132, but that's wrong.
+						applyclassicphase(WRATH_PHASE_ONE, title(100)),	-- %, Guardian of Cenarius
 					})),
 					achWithRep(900, FACTION_SPOREGGAR, {	-- The Czar of Sporeggar
-						-- #if BEFORE WRATH
-						["description"] = "Raise your reputation with Sporeggar to Exalted.",
-						-- #endif
+						["maps"] = { COILFANG_RESERVOIR_UNDERBOG },
 					}),
 				}),
 				battlepets({
@@ -2066,9 +2052,6 @@ root(ROOTS.Zones, {
 								i(31804),	-- Cenarion Expedition Tabard
 								ach(893, {	-- Cenarion War Hippogryph
 									["provider"] = { "i", 33999 },	-- Cenarion War Hippogryph
-									-- #if BEFORE WRATH
-									["description"] = "Obtain the Cenarion War Hippogryph from the Cenarion Expedition in Zangarmarsh.",
-									-- #endif
 									["filterID"] = MOUNTS,
 								}),
 								i(33999),	-- Cenarion War Hippogryph (MOUNT!)

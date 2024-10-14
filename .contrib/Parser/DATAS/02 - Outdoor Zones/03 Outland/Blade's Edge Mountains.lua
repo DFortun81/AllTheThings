@@ -43,16 +43,8 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					applyclassicphase(TBC_PHASE_TWO_OGRILA, achWithRep(896, FACTION_ORGILA, {	-- A Quest a Day Keeps the Ogres at Bay
-						-- #if BEFORE WRATH
-						["description"] = "Raise your reputation with Ogri'la to Exalted.",
-						-- #endif
-					})),
-					explorationAch(865, {	-- Explore Blade's Edge Mountains
-						-- #if BEFORE WRATH
-						["description"] = "Explore Blade's Edge Mountains, revealing the covered areas of the world map.",
-						-- #endif
-					}),
+					applyclassicphase(TBC_PHASE_TWO_OGRILA, achWithRep(896, FACTION_ORGILA)),	-- A Quest a Day Keeps the Ogres at Bay
+					explorationAch(865),	-- Explore Blade's Edge Mountains
 					ach(1193, {	-- On the Blade's Edge
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -82,9 +74,6 @@ root(ROOTS.Zones, {
 							10748,	-- Maxnar Must Die!
 						},
 						-- #else
-						-- #if BEFORE WRATH
-						["description"] = "Complete 86 quests in Blade's Edge Mountains.",
-						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],

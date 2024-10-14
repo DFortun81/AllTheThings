@@ -52,9 +52,6 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				}),
 				explorationAch(4866, {	-- Explore Twilight Highlands
 					["timeline"] = { ADDED_4_0_3 },
-					-- #if BEFORE WRATH
-					["description"] = "Explore Twilight Highlands, revealing the covered areas of the world map.",
-					-- #endif
 				}),
 				ach(4873, {	-- Fading into Twilight (Alliance)
 					["timeline"] = { ADDED_4_0_3 },

@@ -18,11 +18,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(802, {	-- Explore Westfall
-					-- #if BEFORE WRATH
-					["description"] = "Explore Westfall, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(802),	-- Explore Westfall
 				ach(4903, {	-- Westfall Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

@@ -653,7 +653,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				{ "i", 33292 },	-- Hallowed Helm
 			},
 			["AllProvidersRequiredForAchievement"] = true,
-			["description"] = "Obtain a Sinister Squashling pet and Hallowed Helm.",
 			["timeline"] = { ADDED_2_0_1 },
 			-- #else
 			crit(5783, {	-- Sinister Squashling
@@ -2081,9 +2080,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					-- #if BEFORE 10.1.7
 					ach(980, {	-- The Horseman's Reins
 						["provider"] = { "i", 37012 },	-- The Horseman's Reins
-						-- #if BEFORE WRATH
-						["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
-						-- #endif
 						["timeline"] = { ADDED_2_0_1 },
 						["filterID"] = MOUNTS,
 					}),
@@ -2122,9 +2118,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				["groups"] = {
 					ach(980, {	-- The Horseman's Reins
 						["provider"] = { "i", 37012 },	-- The Horseman's Reins
-						-- #if BEFORE WRATH
-						["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
-						-- #endif
 						["timeline"] = { ADDED_2_0_1 },
 						["filterID"] = MOUNTS,
 					}),
@@ -2242,9 +2235,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					-- #if BEFORE 6.0.1
 					ach(980, {	-- The Horseman's Reins
 						["provider"] = { "i", 37012 },	-- The Horseman's Reins
-						-- #if BEFORE WRATH
-						["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
-						-- #endif
 						["timeline"] = { ADDED_2_0_1 },
 						["filterID"] = MOUNTS,
 					}),
@@ -2303,9 +2293,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			-- #if BEFORE WRATH
 			ach(980, {	-- The Horseman's Reins
 				["provider"] = { "i", 37012 },	-- The Horseman's Reins
-				-- #if BEFORE WRATH
-				["description"] = "Obtain The Horseman's Reins from The Headless Horseman in the Scarlet Monastery during Hallow's End.",
-				-- #endif
 				["timeline"] = { ADDED_2_0_1 },
 				["filterID"] = MOUNTS,
 			}),

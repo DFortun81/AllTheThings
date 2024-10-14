@@ -13,11 +13,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(770, {	-- Explore Western Plaguelands
-					-- #if BEFORE WRATH
-					["description"] = "Explore Western Plaguelands, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(770),	-- Explore Western Plaguelands
 				ach(4893, {	-- Western Plaguelands Quests
 					["timeline"] = { ADDED_4_0_3 },
 					-- #if ANYCLASSIC

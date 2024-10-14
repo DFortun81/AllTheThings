@@ -50,7 +50,6 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 		ach(1243, {	-- Fish Don't Leave Footprints
 			-- #if BEFORE WRATH
 			["timeline"] = { ADDED_2_3_0 },
-			["description"] = "Learn the ability to find fish.",
 			["spellID"] = 43308,	-- Find Fish
 			-- #else
 			["timeline"] = { ADDED_3_0_2 },
@@ -73,9 +72,6 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				{ "i", 6360 },	-- Steelscale Crushfish
 			},
 			-- #ENDIF
-			-- #if BEFORE WRATH
-			["description"] = "Catch one of the rare fish in the list below.\n\nKeep one in your inventory somewhere to keep credit for this.",
-			-- #endif
 			["timeline"] = { ADDED_3_0_2 },	-- NOTE: Players didn't actually get credit for this... Sigh.
 		}),
 		ach(5478, {	-- The Limnologist

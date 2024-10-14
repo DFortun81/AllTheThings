@@ -16,16 +16,8 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					explorationAch(864, {	-- Explore Shadowmoon Valley
-						-- #if BEFORE WRATH
-						["description"] = "Explore Shadowmoon Valley, revealing the covered areas of the world map.",
-						-- #endif
-					}),
-					applyclassicphase(TBC_PHASE_THREE_NETHERWING, achWithRep(898, FACTION_NETHERWING, {	-- On Wings of Nether
-						-- #if BEFORE WRATH
-						["description"] = "Raise your reputation with the Netherwing to Exalted.",
-						-- #endif
-					})),
+					explorationAch(864),	-- Explore Shadowmoon Valley
+					applyclassicphase(TBC_PHASE_THREE_NETHERWING, achWithRep(898, FACTION_NETHERWING)),	-- On Wings of Nether
 					ach(1195, {	-- Shadow of the Betrayer
 						-- #if ANYCLASSIC
 						-- #if AFTER CATA
@@ -64,9 +56,6 @@ root(ROOTS.Zones, {
 							10808,	-- Thwart the Dark Conclave
 						},
 						-- #else
-						-- #if BEFORE WRATH
-						["description"] = "Complete 90 quests in Shadowmoon Valley.",
-						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],

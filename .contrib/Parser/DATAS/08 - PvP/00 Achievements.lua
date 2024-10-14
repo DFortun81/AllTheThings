@@ -332,9 +332,6 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			{ "i", 29472 },	-- Whistle of the Black War Raptor
 			-- #endif
 		},
-		-- #if BEFORE WRATH
-		["description"] = "Obtain one of the war mounts through the honor system.",
-		-- #endif
 	})),
 	applyclassicphase(WRATH_PHASE_ONE, ach(908, {	-- Call to Arms! (Alliance)
 		["timeline"] = { ADDED_3_0_2 },

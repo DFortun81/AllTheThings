@@ -50,26 +50,12 @@ root(ROOTS.Zones, {
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
-					achWithRep(902, FACTION_THE_CONSORTIUM, {	-- Chief Exalted Officer
-						-- #if BEFORE WRATH
-						["description"] = "Raise your reputation with The Consortium to Exalted.",
-						-- #endif
-					}),
-					explorationAch(866, {	-- Explore Nagrand
-						-- #if BEFORE WRATH
-						["description"] = "Explore Nagrand, revealing the covered areas of the world map.",
-						-- #endif
-					}),
+					achWithRep(902, FACTION_THE_CONSORTIUM),	-- Chief Exalted Officer
+					explorationAch(866),	-- Explore Nagrand
 					ach(939, {	-- Hills Like White Elekk
 						["sourceQuest"] = 9852,	-- The Ultimate Bloodsport
-						-- #if BEFORE WRATH
-						["description"] = "Complete all of Hemet Nesingwary quests in Nagrand up to and including The Ultimate Bloodsport.",
-						-- #endif
 					}),
 					achWithRep(901, FACTION_THE_MAGHAR, {	-- Mag'har of Draenor
-						-- #if BEFORE WRATH
-						["description"] = "Raise your reputation with the Mag'har to Exalted.",
-						-- #endif
 						["races"] = HORDE_ONLY,
 					}),
 					ach(1273, {	-- Nagrand Slam (Horde)
@@ -114,9 +100,6 @@ root(ROOTS.Zones, {
 							9925,	-- Matters of Security
 						},
 						-- #else
-						-- #if BEFORE WRATH
-						["description"] = "Complete 87 quests in Nagrand.",
-						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
@@ -212,9 +195,6 @@ root(ROOTS.Zones, {
 							9925,	-- Matters of Security
 						},
 						-- #else
-						-- #if BEFORE WRATH
-						["description"] = "Complete 75 quests in Nagrand.",
-						-- #endif
 						["OnClick"] = [[_.CommonAchievementHandlers.LOREMASTER_OnClick]],
 						["OnTooltip"] = [[_.CommonAchievementHandlers.LOREMASTER_OnTooltip]],
 						["OnUpdate"] = [[_.CommonAchievementHandlers.LOREMASTER_OnUpdate]],
@@ -267,9 +247,6 @@ root(ROOTS.Zones, {
 						-- #endif
 					}),
 					achWithRep(899, FACTION_KURENAI, {	-- Oh My, Kurenai
-						-- #if BEFORE WRATH
-						["description"] = "Raise your reputation with the Kurenai to Exalted.",
-						-- #endif
 						["races"] = ALLIANCE_ONLY,
 					}),
 				}),
