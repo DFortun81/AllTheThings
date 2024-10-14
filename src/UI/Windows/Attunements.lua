@@ -20,10 +20,9 @@ local function GetAttunementRequirement(t)
 					break;
 				end
 			end
-			return CloneReference(bestMatch);
-		else
-			return app.CreateQuest(questID);
+			if bestMatch then return CloneReference(bestMatch); end
 		end
+		return app.CreateQuest(questID);
 	else
 		local keys = t.attunementKeys;
 		if keys then
@@ -50,10 +49,11 @@ local function GetAttunementRequirement(t)
 					end
 				end
 			end
-			
-			return CloneReference(bestMatch or anyMatch);
+			if not bestMatch then bestMatch = anyMatch; end
+			return bestMatch and CloneReference(bestMatch) or app.CreateItem(itemID);
 		end
 	end
+
 end
 
 -- Implementation
@@ -68,37 +68,41 @@ app:CreateWindow("Attunements", {
 			local attunements = {
 				app.CreateMap(435, {	-- Scarlet Monastery
 					attunementKeys = { 7146 },	-- Scarlet Key
+					icon = 133154,
 				}),
 				app.CreateMap(234, {	-- Dire Maul
 					attunementKeys = { 18249 },	-- Crescent Key
+					icon = 132340,
 				}),
 				app.CreateMap(476, {	-- Scholomance
 					attunementKeys = { 13704 },	-- Skeleton Key
+					icon = 135974,
 				}),
 				app.CreateMap(317, {	-- Stratholme
 					attunementKeys = { 12382 },	-- Key to the City
+					icon = 237511,
 				}),
 				app.CreateMap(250, {	-- Upper Blackrock Spire
-					icon = 236429,
 					attunementQuestID = 4743,
+					icon = 254648,
 				}),
 				app.CreateMap(232, {	-- Molten Core
-					icon = "Interface\\Icons\\Spell_Fire_Immolation",
 					attunementQuestID = 7848,
+					icon = 254652,
 					isRaid = true,
 				}),
 				app.CreateMap(248, {	-- Onyxia's Lair
-					icon = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
 					attunementQuestID = app.FactionID == HORDE_FACTION_ID and 6602 or 6502,
+					icon = 254650,
 					isRaid = true,
 				}),
 				app.CreateMap(287, {	-- Blackwing Lair
-					icon = "Interface\\Icons\\inv_misc_head_dragon_black",
 					attunementQuestID = 7761,
+					icon = 254649,
 					isRaid = true,
 				}),
 				app.CreateMap(162, {	-- Naxxramas
-					icon = "Interface\\Icons\\INV_Trinket_Naxxramas03",
+					icon = 135441,
 					GetAttunementRequirement = function(t)
 						-- Naxx Attunement needs to be handled different, display-wise.
 						-- Based on current Argent Dawn rep, show a different quest. (still querying for the hidden attunement quest)
@@ -114,9 +118,9 @@ app:CreateWindow("Attunements", {
 									break;
 								end
 							end
-							return CloneReference(bestMatch);
+							return bestMatch and CloneReference(bestMatch);
 						else
-							return CloneReference(app.CreateQuest(specificQuestID));
+							return app.CreateQuest(specificQuestID);
 						end
 					end,
 					isRaid = true,
@@ -153,28 +157,28 @@ app:CreateWindow("Attunements", {
 						attunementKeys = { 30623 },	-- Reservoir Key
 					}),
 					app.CreateMap(350, {	-- Karazhan
-						icon = "Interface\\Icons\\Ability_mount_dreadsteed",
 						attunementQuestID = 9837,	-- Return to Khadgar [The Master's Key]
+						icon = 254651,
 						isRaid = true,
 					}),
 					app.CreateMap(332, {	-- SSC
-						icon = "Interface\\Icons\\inv_weapon_shortblade_42",
 						attunementQuestID = 10901,	-- The Cudgel of Kar'desh
+						icon = 236422,
 						isRaid = true,
 					}),
 					app.CreateMap(334, {	-- The Eye
-						icon = "Interface\\Icons\\inv_misc_summerfest_brazierorange",
 						attunementQuestID = 10888,	-- Trial of the Naaru: Magtheridon
+						icon = 236440,
 						isRaid = true,
 					}),
 					app.CreateMap(329, {	-- Hyjal Summit
-						icon = "Interface\\Icons\\inv_weapon_bow_30",
 						attunementQuestID = 10445,	-- The Vials of Eternity
+						icon = 236402,
 						isRaid = true,
 					}),
 					app.CreateMap(340, {	-- Black Temple
-						icon = "Interface\\Icons\\inv_helmet_98",
 						attunementQuestID = 10985,	-- A Distraction for Akama
+						icon = 236415,
 						isRaid = true,
 					}),
 				};
@@ -224,7 +228,7 @@ app:CreateWindow("Attunements", {
 			end
 			local attunementsHeader = {
 				text = "Attunements",
-				icon = "Interface\\Icons\\Spell_Fire_Immolation",
+				icon = 135817,
 				description = "This window shows you your current character's attunement progress.",
 				visible = true,
 				expanded = true,

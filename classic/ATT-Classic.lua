@@ -2136,13 +2136,15 @@ local categoryFields = {
 if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil) then
 	-- Achievements are in. We can use the API.
 	local GetAchievementCategory = _G["GetAchievementCategory"];
+	local achievementData = rawget(L, "ACHIEVEMENT_DATA") or {};
+	local achievementCategoryData = rawget(L, "ACHIEVEMENT_CATEGORY_DATA") or {};
 	fields.text = function(t)
 		return t.link or ("|cffffff00[" .. (t.name or ("@CRIEVE: INVALID ACHIEVEMENT " .. t.achievementID)) .. "]|r");
 	end
 	fields.name = function(t)
 		local name = select(2, GetAchievementInfo(t.achievementID));
 		if name then return name; end
-		local data = L.ACHIEVEMENT_DATA[t.achievementID];
+		local data = achievementData[t.achievementID];
 		return (data and data.name) or app.GetNameFromProviders(t)
 			or (t.spellID and GetSpellName(t.spellID));
 	end
@@ -2152,7 +2154,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 	fields.icon = function(t)
 		local name = select(10, GetAchievementInfo(t.achievementID));
 		if name then return name; end
-		local data = L.ACHIEVEMENT_DATA[t.achievementID];
+		local data = achievementData[t.achievementID];
 		return (data and data.icon) or app.GetIconFromProviders(t)
 			or (t.spellID and GetSpellIcon(t.spellID))
 			or t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
@@ -2160,7 +2162,7 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 	fields.parentCategoryID = function(t)
 		local data = GetAchievementCategory(t.achievementID);
 		if data then return data; end
-		data = L.ACHIEVEMENT_DATA[t.achievementID];
+		data = achievementData[t.achievementID];
 		return data and data.category or -1;
 	end
 	fields.SetAchievementCollected = function(t)
@@ -2249,13 +2251,13 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 	categoryFields.text = function(t)
 		local data = GetCategoryInfo(t.achievementCategoryID);
 		if data then return data; end
-		data = L.ACHIEVEMENT_CATEGORY_DATA[t.achievementCategoryID];
+		data = achievementCategoryData[t.achievementCategoryID];
 		return (data and data.name) or (RETRIEVING_DATA .. " achcat:" .. t.achievementCategoryID);
 	end
 	categoryFields.parentCategoryID = function(t)
 		local data = select(2, GetCategoryInfo(t.achievementCategoryID));
 		if data then return data; end
-		data = L.ACHIEVEMENT_CATEGORY_DATA[t.achievementCategoryID];
+		data = achievementCategoryData[t.achievementCategoryID];
 		return (data and data.parent) or -1;
 	end
 	app.CreateAchievement = app.CreateClass("Achievement", "achievementID", fields);
@@ -2446,36 +2448,38 @@ if GetCategoryInfo and (GetCategoryInfo(92) ~= "" and GetCategoryInfo(92) ~= nil
 	end
 else
 	-- Achievements are NOT in. We can't use the API.
+	local achievementData = L.ACHIEVEMENT_DATA or {};
+	local achievementCategoryData = L.ACHIEVEMENT_CATEGORY_DATA or {};
 	fields.text = function(t)
 		return "|cffffff00[" .. t.name .. "]|r";
 	end
 	fields.name = function(t)
-		local data = L.ACHIEVEMENT_DATA[t.achievementID];
+		local data = achievementData[t.achievementID];
 		return (data and data.name) or app.GetNameFromProviders(t) or (t.spellID or GetSpellName(t.spellID)) or RETRIEVING_DATA;
 	end
 	fields.description = function(t)
-		local data = L.ACHIEVEMENT_DATA[t.achievementID];
+		local data = achievementData[t.achievementID];
 		return data and data.description;
 	end
 	fields.icon = function(t)
-		local data = L.ACHIEVEMENT_DATA[t.achievementID];
+		local data = achievementData[t.achievementID];
 		return (data and data.icon) or app.GetIconFromProviders(t)
 			or (t.spellID and GetSpellIcon(t.spellID))
 			or t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
 	end
 	fields.parentCategoryID = function(t)
-		local data = L.ACHIEVEMENT_DATA[t.achievementID];
+		local data = achievementData[t.achievementID];
 		return data and data.category or -1;
 	end
 	fields.SetAchievementCollected = function(t)
 		return SetAchievementCollected;
 	end
 	categoryFields.text = function(t)
-		local data = L.ACHIEVEMENT_CATEGORY_DATA[t.achievementCategoryID];
+		local data = achievementCategoryData[t.achievementCategoryID];
 		return (data and data.name) or (RETRIEVING_DATA .. " achcat:" .. t.achievementCategoryID);
 	end
 	categoryFields.parentCategoryID = function(t)
-		local data = L.ACHIEVEMENT_CATEGORY_DATA[t.achievementCategoryID];
+		local data = achievementCategoryData[t.achievementCategoryID];
 		return data and data.parent or -1;
 	end
 
