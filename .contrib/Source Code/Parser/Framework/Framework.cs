@@ -1563,6 +1563,21 @@ namespace ATT
         }
         #endregion
         #region Lua Conversion
+        static StringBuilder ExportIconValue(StringBuilder builder, object iconValue)
+        {
+            string icon = iconValue.ToString().Replace("\\", "/");
+            if(long.TryParse(icon, out long iconID) && iconID.ToString() == icon) builder.Append(icon);
+            else ExportStringValue(builder, icon);
+            return builder;
+        }
+
+        static StringBuilder ExportIconKeyValue(StringBuilder builder, object key, object iconValue)
+        {
+            builder.Append("\t[").Append(key).Append("] = ");
+            ExportIconValue(builder, iconValue);
+            return builder.Append(",");
+        }
+
 
         static StringBuilder ExportObjectKeyValue(StringBuilder builder, object key, object value)
         {
@@ -2093,7 +2108,7 @@ namespace ATT
                                 if (filterData.TryGetValue("icon", out string icon))
                                 {
                                     builder.Append("\t\ticon = ");
-                                    ExportStringValue(builder, icon.Replace("\\", "/")).AppendLine(",");
+                                    ExportIconValue(builder, icon).AppendLine(",");
                                 }
 
                                 // Export the complex "text" locales field.
@@ -2188,7 +2203,7 @@ namespace ATT
                                 if (objectData.TryGetValue("icon", out string icon))
                                 {
                                     builder.Append("\t\ticon = ");
-                                    ExportStringValue(builder, icon.Replace("\\", "/")).AppendLine(",");
+                                    ExportIconValue(builder, icon).AppendLine(",");
                                 }
 
                                 // Export the "model" field.
@@ -2260,7 +2275,7 @@ namespace ATT
                                     if (phaseData.TryGetValue("icon", out string icon))
                                     {
                                         builder.Append("\t\ticon = ");
-                                        ExportStringValue(builder, icon.Replace("\\", "/")).AppendLine(",");
+                                        ExportIconValue(builder, icon).AppendLine(",");
                                     }
 
                                     // Export the "model" field.
@@ -2479,7 +2494,7 @@ namespace ATT
                     {
                         if (icons.TryGetValue(key, out string icon))
                         {
-                            ExportStringKeyValue(builder, key, icon).AppendLine();
+                            ExportIconKeyValue(builder, key, icon).AppendLine();
                         }
                     }
                     builder.AppendLine("}");
@@ -2708,7 +2723,7 @@ namespace ATT
                     {
                         if (icons.TryGetValue(key, out string icon))
                         {
-                            ExportStringKeyValue(builder, key, icon).AppendLine();
+                            ExportIconKeyValue(builder, key, icon).AppendLine();
                         }
                     }
                     builder.AppendLine("});");
@@ -2928,7 +2943,7 @@ namespace ATT
                         {
                             if (icons.TryGetValue(key, out string icon))
                             {
-                                ExportStringKeyValue(builder, key, icon).AppendLine();
+                                ExportIconKeyValue(builder, key, icon).AppendLine();
                             }
                         }
                         builder.AppendLine("}");
@@ -3173,7 +3188,7 @@ namespace ATT
                     {
                         if (icons.TryGetValue(key, out string icon))
                         {
-                            ExportStringKeyValue(builder, key, icon).AppendLine();
+                            ExportIconKeyValue(builder, key, icon).AppendLine();
                         }
                     }
                     builder.AppendLine("}");
