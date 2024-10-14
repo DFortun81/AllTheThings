@@ -7,7 +7,7 @@ root(ROOTS.Zones, {
 		m(LEGION_DALARAN, {
 			m(LEGION_THE_UNDERBELLY, {
 				["zone-text-areaID"] = 7594,	-- The Underbelly
-				["icon"] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",
+				["icon"] = 460862,
 				["groups"] = {
 					n(ACHIEVEMENTS, {
 						ach(1958, {	-- I Smell A Giant Rat

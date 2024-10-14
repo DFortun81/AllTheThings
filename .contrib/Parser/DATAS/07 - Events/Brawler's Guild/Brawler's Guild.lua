@@ -10,7 +10,7 @@ root(ROOTS.WorldEvents, n(-78,	-- Brawler's Guild
 	-- bubbleDown({ ["u"] = REMOVED_FROM_GAME },
 	{
 	["description"] = "Fight queueing currently only available to Horde.\n2022-11-14",
-	["icon"] = "Interface\\Icons\\INV_MISC_HEAD_ORC2_BRN",
+	["icon"] = 970888,
 	["maps"] = {
 		500,	-- Bizmo's Brawlpub
 		503,	-- Brawlgar Arena

@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(PANDARIA, {
 		["lore"] = "The Shrine of Two Moons is an ancient mogu structure located north of Mogu'shan Palace in the eastern part of the Vale of Eternal Blossoms. The Golden Lotus have allowed use of the shrine by the Horde, and it serves as the main hub for the faction in the continent of Pandaria, as opposed to the sanctuary cities serving as main hubs for both factions in previous expansions.",
 		["isRaid"] = true,
 		["races"] = HORDE_ONLY,
-		["icon"] = "Interface\\Icons\\achievement_doublejeopardyhorde",
+		["icon"] = 462674,
 		["maps"] = { 392 },	-- upper level
 		["lvl"] = 78,
 		["g"] = {

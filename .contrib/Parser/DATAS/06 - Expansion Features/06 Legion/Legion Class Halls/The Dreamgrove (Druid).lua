@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 DAILY_DREAMWAY_EVENT_ROLL = createHeader({
 	readable = "Daily Dreamway Event Roll",
-	icon = "Interface\\Icons\\inv_misc_druidstone04",
+	icon = 1128042,
 	text = {
 		en = "Event Roll",
 		es = "Rollo de eventos",
@@ -21,7 +21,7 @@ DAILY_DREAMWAY_EVENT_ROLL = createHeader({
 });
 DUSKWOOD_ACTIVE = createHeader({
 	readable = "Duskwood Active",
-	icon = "Interface\\Icons\\achievement_zone_duskwood",
+	icon = 236757,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..]] .. WOWAPI_GetSpellName(133137),
 		ru = "Сумеречный лес - активен",
@@ -32,7 +32,7 @@ DUSKWOOD_ACTIVE = createHeader({
 });
 FERALAS_ACTIVE = createHeader({
 	readable = "Feralas Active",
-	icon = "Interface\\Icons\\achievement_zone_feralas",
+	icon = 236764,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID9.." "..]] .. WOWAPI_GetSpellName(133137),
 		ru = "Фералас - активен",
@@ -43,7 +43,7 @@ FERALAS_ACTIVE = createHeader({
 });
 THE_HINTERLANDS_ACTIVE = createHeader({
 	readable = "The Hinterlands Active",
-	icon = "Interface\\Icons\\achievement_zone_hinterlands_01",
+	icon = 236780,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID7.." "..]] .. WOWAPI_GetSpellName(133137),
 		ru = "Внутренние земли - активен",
@@ -54,7 +54,7 @@ THE_HINTERLANDS_ACTIVE = createHeader({
 });
 DUSKWOOD_ACTIVATED = createHeader({
 	readable = "Duskwood Activated",
-	icon = "Interface\\Icons\\achievement_zone_duskwood",
+	icon = 236757,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID8.." "..]] .. WOWAPI_GetSpellName(78741),
 		ru = "Сумеречный лес - активирован",
@@ -65,7 +65,7 @@ DUSKWOOD_ACTIVATED = createHeader({
 });
 FERALAS_ACTIVATED = createHeader({
 	readable = "Feralas Activated",
-	icon = "Interface\\Icons\\achievement_zone_feralas",
+	icon = 236764,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID9.." "..]] .. WOWAPI_GetSpellName(78741),
 		ru = "Фералас - активирован",
@@ -76,7 +76,7 @@ FERALAS_ACTIVATED = createHeader({
 });
 THE_HINTERLANDS_ACTIVATED = createHeader({
 	readable = "The Hinterlands Activated",
-	icon = "Interface\\Icons\\achievement_zone_hinterlands_01",
+	icon = 236780,
 	text = {
 		en = [[~DUNGEON_FLOOR_NIGHTMARERAID7.." "..]] .. WOWAPI_GetSpellName(78741),
 		ru = "Внутренние земли - активирован",
@@ -955,7 +955,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 					}),
 				}),
 				m(715, bubbleDown({["classes"] = { DRUID }},{	-- Emerald Dreamway
-					["icon"] = "Interface\\Icons\\spell_arcane_portalshattrath",	-- Dream Portal Icon
+					["icon"] = 135745,	-- Dream Portal Icon
 					["g"] = {
 						n(DAILY_DREAMWAY_EVENT_ROLL, {
 							["questID"] = 44326,	-- "daily dreamway event roll" on WoWHead

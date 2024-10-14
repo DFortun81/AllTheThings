@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 GARRISON_INVASIONS = createHeader({
 	readable = "Garrison Invasions",
-	icon = "Interface\\Icons\\achievement_bg_defendxtowers_av",
+	icon = 236351,
 	text = {
 		en = [[~GARRISON_LANDING_INVASION]],
 	},

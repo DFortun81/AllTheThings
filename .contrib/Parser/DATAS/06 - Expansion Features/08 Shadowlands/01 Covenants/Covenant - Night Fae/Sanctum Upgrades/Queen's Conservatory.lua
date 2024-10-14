@@ -121,7 +121,7 @@ local T5_PRIDEFUL_GROUP = {
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\Inv_misc_sigil_ardenweald01",
+			["icon"] = 3641394,
 			["g"] = {
 				n(QUEENS_CONSERVATORY, {
 					["maps"] = { 1662 },	-- Queen's Conservatory
@@ -171,7 +171,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							}),
 						}),
 						n(TIER_ONE, {
-							["icon"] = "Interface\\Icons\\Ability_ardenweald_shaman",
+							["icon"] = 3636849,
 							["g"] = {
 								n(QUESTS, {
 									q(62624, {	-- The Queen's Conservatory
@@ -222,7 +222,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							},
 						}),
 						n(TIER_TWO, {
-							["icon"] = "Interface\\Icons\\Ability_ardenweald_deathknight",
+							["icon"] = 3636837,
 							["g"] = {
 								n(ACHIEVEMENTS, {
 									ach(14677),	-- Spiritual Observations
@@ -371,7 +371,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							},
 						}),
 						n(TIER_THREE, {
-							["icon"] = "Interface\\Icons\\Ability_ardenweald_mage",
+							["icon"] = 3636841,
 							["g"] = {
 								n(ACHIEVEMENTS, {
 									ach(14780),	-- Meditation Master
@@ -445,7 +445,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							},
 						}),
 						n(TIER_FOUR, {
-							["icon"] = "Interface\\Icons\\Ability_ardenweald_priest",
+							["icon"] = 3636847,
 							["g"] = {
 								n(ACHIEVEMENTS, {
 									ach(14789),	-- All Spirits Great and Small
@@ -493,7 +493,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							},
 						}),
 						n(TIER_FIVE, {
-							["icon"] = "Interface\\Icons\\Ability_ardenweald_paladin_winter",
+							["icon"] = 3636846,
 							["g"] = {
 								o(350978, {	-- Queen's Conservatory Cache
 									header(HEADERS.Item, 178879, {	-- Divine Dutiful Spirit

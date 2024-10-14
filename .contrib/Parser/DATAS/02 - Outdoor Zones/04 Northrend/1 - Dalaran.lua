@@ -772,7 +772,7 @@ root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(NORTHREND_DALARAN, {
 			["lore"] = "Dalaran is a magocratic city-state and was once located within the Alterac Mountains in the Eastern Kingdoms. Now, the city, including the Violet Citadel, resides above the Crystalsong Forest in Northrend. The top part of the city is sparkling and airy, while the sewers underground show the darker side of magic addiction and luxury.",
-			["icon"] = "Interface\\Icons\\spell_arcane_teleportdalaran",
+			["icon"] = 237509,
 			["maps"] = {
 				501,	-- Dalaran (operation shieldwall)
 				502,	-- Dalaran (sewers, operation shieldwall)
@@ -782,7 +782,7 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				m(NORTHREND_THE_UNDERBELLY, {
 					["zone-text-areaID"] = 4560,	-- The Underbelly
-					["icon"] = "Interface\\LFGFRAME\\LFGICON-DALARANSEWERS",
+					["icon"] = 460862,
 					["groups"] = {
 						n(ACHIEVEMENTS, {
 							ach(1958, {	-- I Smell A Giant Rat
@@ -1347,15 +1347,15 @@ root(ROOTS.Zones, {
 				n(FACTIONS, {
 					faction(FACTION_KIRIN_TOR, {	-- Kirin Tor
 						["provider"] = { "i", 43157 },	-- Tabard of the Kirin Tor
-						["icon"] = "Interface\\Icons\\spell_holy_mindsooth",
+						["icon"] = 135933,
 					}),
 					faction(FACTION_THE_SILVER_COVENANT, {	-- The Silver Covenant
-						["icon"] = "Interface\\Icons\\inv_banner_02",
+						["icon"] = 132483,
 						["maps"] = { ICECROWN },
 						["races"] = ALLIANCE_ONLY,
 					}),
 					faction(FACTION_THE_SUNREAVERS, {	-- The Sunreavers
-						["icon"] = "Interface\\Icons\\inv_elemental_primal_nether",
+						["icon"] = 132850,
 						["maps"] = { ICECROWN },
 						["races"] = HORDE_ONLY,
 					}),

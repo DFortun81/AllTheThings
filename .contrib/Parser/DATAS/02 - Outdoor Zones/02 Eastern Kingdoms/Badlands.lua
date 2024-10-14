@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["lore"] = "The Badlands is a region in Khaz Modan accessed via the Searing Gorge to the west and Loch Modan to the north.\n\nThe Badlands are a cracked desert of dry earth, scattered boulders, and winding canyons. Dark Iron dwarves clash with ogres and drakes, while Horde orcs man a fortress to keep watch on their renegade brethren in the eastern lands. Ironforge prospectors search this desolate land for Titan artifacts, inspired by the recently unearthed Uldaman — an immense ruin that held the first clues to the dwarves' lofty origins. Stonevault troggs, released after millennia of slumber, slaughtered the explorers and viciously defend their stolen city.",
 		-- #endif
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_badlands_01",
+		["icon"] = 236716,
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {

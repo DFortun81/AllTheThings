@@ -64,7 +64,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(WARSONG_GULCH, {
 		["lore"] = "Warsong Gulch is a 10v10 capture-the-flag style battleground that traces the conflict between the Silverwing Sentinels seeking revenge on the orcs that chopped down the Ashenvale forest during the Third War.",
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_bg_captureflag_wsg",
+		["icon"] = 236350,
 		["maps"] = {
 			859,	-- Warsong Gulch
 			1339,	-- Warsong Gulch
@@ -194,13 +194,13 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_SILVERWING_SENTINELS, {	-- Silverwing Sentinels
-					["icon"] = "Interface\\Icons\\ability_racial_shadowmeld",
+					["icon"] = 132279,
 					["OnTooltip"] = [[_.OnTooltipDB.ForWarsongGulch]],
 					["maps"] = { ASHENVALE },
 					["races"] = ALLIANCE_ONLY,
 				}),
 				faction(FACTION_WARSONG_OUTRIDERS, {	-- Warsong Outriders
-					["icon"] = "Interface\\Icons\\Ability_Warrior_WarCry",
+					["icon"] = 132366,
 					["OnTooltip"] = [[_.OnTooltipDB.ForWarsongGulch]],
 					["maps"] = { ASHENVALE },
 					["races"] = HORDE_ONLY,

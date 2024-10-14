@@ -1,6 +1,6 @@
 DREAM_WARDENS = createHeader({
 	readable = "Dream Wardens",
-	icon = "Interface\\Icons\\ui_majorfaction_denizens",
+	icon = 5244643,
 	text = {
 		en = "Dream Wardens",
 		ru = "Стражи Сна",

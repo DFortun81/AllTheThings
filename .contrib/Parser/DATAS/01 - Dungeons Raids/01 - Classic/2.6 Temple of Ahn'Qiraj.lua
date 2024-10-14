@@ -11,7 +11,7 @@ local SILITHID_ROYALTY_SHARED_DROPS = COMMON_BOSS_DROPS;
 -- #if ANYCLASSIC
 SILITHID_ROYALTY_SHARED_DROPS = createHeader({
 	readable = "Silithid Royalty",
-	icon = "Interface\\Icons\\Inv_misc_ahnqirajtrinket_06",
+	icon = 133575,
 	text = {
 		en = "Silithid Royalty",
 	},
@@ -44,7 +44,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 			}),
 			n(FACTIONS, {
 				faction(FACTION_BROOD_OF_NOZDORMU, {	-- Brood of Nozdormu
-					["icon"] = "Interface\\Icons\\INV_Misc_Head_Dragon_Bronze",
+					["icon"] = 134156,
 					["maps"] = { CAVERNS_OF_TIME, SILITHUS },
 				}),
 			}),

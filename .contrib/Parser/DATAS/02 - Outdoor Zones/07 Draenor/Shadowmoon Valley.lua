@@ -68,7 +68,7 @@ root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(DRAENOR_SHADOWMOON_VALLEY, {
 			["lore"] = "Shadowmoon Valley is a zone in south-eastern Draenor. A lush valley engulfed in eternal night, the Pale Lady shines so brightly here that it even replaced the sun as the valley's primary light source during the day. Shadowmoon serves as one of the key centers of draenei civilization on the world of Draenor, its heart being the sacred temple of Karabor. Lately, the Iron Horde began advancing on the draenei settlements through the Shadowmoon clan and naval attacks targeting Karabor itself.",
-			["icon"] = "Interface\\Icons\\achievement_zone_newshadowmoonvalley",
+			["icon"] = 1048304,
 			["maps"] = {
 				540,	-- Bloodthorn Cave
 				541,	-- Den of Secrets
@@ -404,7 +404,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 34780 },	-- Invisible Ramparts
 						["coord"] = { 56.9, 34.6, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
-						["icon"] = "Interface\\Icons\\INV_DataCrystal11",
+						["icon"] = 132785,
 						["provider"] = {"o",230933},	-- Defense Pylon Central Control Console
 					}),
 					q(34786, {	-- Engorged Goren
@@ -1102,7 +1102,7 @@ root(ROOTS.Zones, {
 						["provider"] = {"o",237021},	-- Wanted: Kliaa's Stinger
 						["coord"] = { 26.4, 32.7, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
-						["icon"] = "Interface\\Icons\\INV_Misc_ScrollRolled02c",
+						["icon"] = 1500867,
 						["g"] = {
 							i(113163),	-- Kliaa's Venomclaws
 							i(113159),	-- Probiscus of the Swampfly Queen
@@ -1112,13 +1112,13 @@ root(ROOTS.Zones, {
 					q(33833, {	-- WANTED: Kuu'rat's Tusks
 						["coord"] = { 33.2, 30.7, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
-						["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+						["icon"] = 632821,
 						["provider"] = {"o",237016},	-- Wanted: Kuu'rat
 					}),
 					q(33836, {	-- WANTED: Maa'run's Hoof
 						["coord"] = { 57.5, 57.2, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
-						["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+						["icon"] = 632821,
 						["provider"] = {"o",232405},	-- Wanted Poster
 						["g"] = {
 							i(117989),	-- Maa'run's Baleful Eye
@@ -1130,7 +1130,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 35552 },	-- Trust No One
 						["coord"] = { 60.9, 24.4, DRAENOR_SHADOWMOON_VALLEY },
 						["races"] = ALLIANCE_ONLY,
-						["icon"] = "Interface\\Icons\\INV_Artifact_tome01",
+						["icon"] = 1411833,
 						["provider"] = {"o",233229},	-- Shadow Council Tome of Curses
 					}),
 					q(33786, {	-- Crippled Caravan

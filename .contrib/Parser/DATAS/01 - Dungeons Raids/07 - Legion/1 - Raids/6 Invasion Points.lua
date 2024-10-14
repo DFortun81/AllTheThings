@@ -309,7 +309,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			q(48982, {	-- Invasion Point: Aurinor
 				["crs"] = { 125849 },	-- Invasion Point: Aurinor
-				["icon"] = "Interface\\Icons\\inv_legionadventure",
+				["icon"] = 1450455,
 				["repeatable"] = true,
 				["maps"] = {
 					921,	-- Invasion Point: Aurinor
@@ -329,7 +329,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			q(49099, {	-- Invasion Point: Bonich
 				["crs"] = { 126547 },	-- Invasion Point: Bonich
-				["icon"] = "Interface\\Icons\\inv_legionadventure",
+				["icon"] = 1450455,
 				["repeatable"] = true,
 				["maps"] = {
 					922,	-- Invasion Point: Bonich
@@ -349,7 +349,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			q(49098, {	-- Invasion Point: Cen'gar
 				["crs"] = { 126120 },	-- Invasion Point: Cen'gar
-				["icon"] = "Interface\\Icons\\inv_legionadventure",
+				["icon"] = 1450455,
 				["repeatable"] = true,
 				["maps"] = {
 					923,	-- Invasion Point: Cen'gar
@@ -369,7 +369,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			q(49096, {	-- Invasion Point: Naigtal
 				["crs"] = { 126593 },	-- Invasion Point: Naigtal
-				["icon"] = "Interface\\Icons\\inv_legionadventure",
+				["icon"] = 1450455,
 				["repeatable"] = true,
 				["maps"] = {
 					924,	-- Invasion Point: Naigtal
@@ -389,7 +389,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			q(49097, {	-- Invasion Point: Sangua
 				["crs"] = { 125863 },	-- Invasion Point: Sangua
-				["icon"] = "Interface\\Icons\\inv_legionadventure",
+				["icon"] = 1450455,
 				["repeatable"] = true,
 				["maps"] = {
 					925,	-- Invasion Point: Sangua
@@ -409,7 +409,7 @@ root(ROOTS.Instances, expansion(EXPANSION.LEGION, {
 			}),
 			q(49091, {	-- Invasion Point: Val
 				["crs"] = { 126499 },	-- Invasion Point: Val
-				["icon"] = "Interface\\Icons\\inv_legionadventure",
+				["icon"] = 1450455,
 				["repeatable"] = true,
 				["maps"] = {
 					926,	-- Invasion Point: Val

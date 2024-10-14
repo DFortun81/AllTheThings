@@ -4,7 +4,7 @@ PVP_COMBATANT = createHeader({
 	-- #if NOT ANYCLASSIC
 	export = true,	-- Referenced in AllTheThings.lua, in a symlink. TODO: Move it.
 	-- #endif
-	icon = "Interface\\Worldmap\\GlowSkull_64Blue",
+	icon = 311228,
 	text = {
 		en = "Combatant Gear",
 		de = "Kämpfer Rüstung",

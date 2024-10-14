@@ -843,10 +843,10 @@ do a[key] = value; end
 if app.IsRetail then
 	local a = L.CUSTOM_COLLECTS_REASONS;
 	for key,value in pairs({
-		["NPE"] = { icon = "|T"..("Interface\\Icons\\achievement_newplayerexperience")..":0|t", color = "ff5bc41d", text = "新玩家體驗", desc = "只有新角色可以收藏這個。" },
+		["NPE"] = { icon = "|T"..(3567434)..":0|t", color = "ff5bc41d", text = "新玩家體驗", desc = "只有新角色可以收藏這個。" },
 		["SL_SKIP"] = { icon = "|T"..app.asset("Expansion_SL")..":0|t", color = "ff76879c", text = "命運絲線", desc = "只有選擇跳過暗影之境故事線的角色才能收集這個。" },
-		["HOA"] = { icon = "|T"..("Interface\\Icons\\inv_heartofazeroth")..":0|t", color = "ffe6cc80", text = GetSpellName(275825), desc = "只有角色獲得 |cffe6cc80"..GetSpellName(275825).."|r 可以收集。" },
-		["!HOA"] = { icon = "|T"..("Interface\\Icons\\mystery_azerite_chest_normal")..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellName(275825), desc = "只有角色 |cffff0000沒有|r 獲得 |cffe6cc80"..GetSpellName(275825).."|r 可以收集。" },
+		["HOA"] = { icon = "|T"..(1869493)..":0|t", color = "ffe6cc80", text = GetSpellName(275825), desc = "只有角色獲得 |cffe6cc80"..GetSpellName(275825).."|r 可以收集。" },
+		["!HOA"] = { icon = "|T"..(2480886)..":0|t", color = "ffe6cc80", text = "|cffff0000"..NO.."|r "..GetSpellName(275825), desc = "只有角色 |cffff0000沒有|r 獲得 |cffe6cc80"..GetSpellName(275825).."|r 可以收集。" },
 	})
 	do a[key] = value; end
 end

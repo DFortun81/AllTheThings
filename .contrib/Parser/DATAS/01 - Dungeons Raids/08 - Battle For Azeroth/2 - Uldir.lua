@@ -94,67 +94,67 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 					["g"] = {
 						q(53568, {	-- Kill Credit 1
 							["name"] = "Kill Credit 1",
-							["icon"] = "Interface\\Icons\\70_inscription_deck_Hellfire",
+							["icon"] = 1392920,
 							["isWeekly"] = true,
 						}),
 						q(53569, {	-- Kill Credit 2
 							["name"] = "Kill Credit 2",
-							["icon"] = "Interface\\Icons\\70_inscription_deck_Hellfire_2",
+							["icon"] = "1392920_2",
 							["isWeekly"] = true,
 						}),
 						q(53570, {	-- Kill Credit 3
 							["name"] = "Kill Credit 3",
-							["icon"] = "Interface\\Icons\\70_inscription_deck_Hellfire_3",
+							["icon"] = "1392920_3",
 							["isWeekly"] = true,
 						}),
 						q(53571, {	-- Power Increased to Level 1
 							["name"] = "Power Increased to Level 1",
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
+							["icon"] = 2000859,
 						}),
 						q(53572, {	-- Power Increased to Level 2
 							["sourceQuests"] = { 53571 },	-- Power Increased to Level 1
 							["name"] = "Power Increased to Level 2",
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
+							["icon"] = 2000859,
 						}),
 						q(53573, {	-- Power Increased to Level 3
 							["sourceQuests"] = { 53572 },	-- Power Increased to Level 2
 							["name"] = "Power Increased to Level 3",
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
+							["icon"] = 2000859,
 						}),
 						q(53574, {	-- Power Increased to Level 4
 							["sourceQuests"] = { 53573 },	-- Power Increased to Level 3
 							["name"] = "Power Increased to Level 4",
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
+							["icon"] = 2000859,
 						}),
 						q(53575, {	-- Power Increased to Level 5
 							["sourceQuests"] = { 53574 },	-- Power Increased to Level 4
 							["name"] = "Power Increased to Level 5",
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
+							["icon"] = 2000859,
 						}),
 						q(53576, {	-- Power Increased to Level 6
 							["sourceQuests"] = { 53575 },	-- Power Increased to Level 5
 							["name"] = "Power Increased to Level 6",
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
+							["icon"] = 2000859,
 						}),
 						q(53577, {	-- Power Increased to Level 7
 							["sourceQuests"] = { 53576 },	-- Power Increased to Level 6
 							["name"] = "Power Increased to Level 7",
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
+							["icon"] = 2000859,
 						}),
 						q(53578, {	-- Power Increased to Level 8
 							["sourceQuests"] = { 53577 },	-- Power Increased to Level 7
 							["name"] = "Power Increased to Level 8",
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
+							["icon"] = 2000859,
 						}),
 						q(53579, {	-- Power Increased to Level 9
 							["sourceQuests"] = { 53578 },	-- Power Increased to Level 8
 							["name"] = "Power Increased to Level 9",
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
+							["icon"] = 2000859,
 						}),
 						q(53580, {	-- Power Increased to Level 10
 							["sourceQuests"] = { 53579 },	-- Power Increased to Level 9
 							["name"] = "Power Increased to Level 10",
-							["icon"] = "Interface\\Icons\\inv_trinket_80_titan02c",
+							["icon"] = 2000859,
 						}),
 					},
 				}),

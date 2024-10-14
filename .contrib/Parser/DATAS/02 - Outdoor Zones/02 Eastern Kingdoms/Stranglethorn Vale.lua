@@ -128,7 +128,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(STRANGLETHORN_VALE, {
 		["lore"] = "The Stranglethorn Vale is a vast jungle south of Duskwood.\n\nJungle trolls patrol this steaming rainforest. Ancient Gurubashi trolls once ruled the region, and the ruins of their great cities crumble in the jungle's heat and growth. Naga hunt along the coast and vicious animals and plants, including the eponymous strangle-thorns, make travel dangerous. The Arena, a center for gladiatorial games set in a ruined Gurubashi fighting stadium, draws shady characters of all races. The Blackwater Raiders, a vile group of pirates, make their home in Booty Bay, on the Stranglethorn's southern coast.",
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_stranglethorn_01",
+		["icon"] = 236844,
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -217,7 +217,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_BLOODSAIL_BUCCANEERS, {	-- Bloodsail Buccaneers
-					["icon"] = "Interface\\Icons\\INV_Misc_Bandana_03",
+					["icon"] = 133694,
 					-- #if BEFORE WRATH
 					["minReputation"] = { FACTION_BLOODSAIL_BUCCANEERS, EXALTED - 1 },	-- Bloodsail Buccaneers, must be 20999 into Revered.
 					-- #endif
@@ -229,7 +229,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					-- #endif
 				}),
 				faction(FACTION_BOOTY_BAY, {	-- Booty Bay
-					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
+					["icon"] = 133784,
 					["OnTooltip"] = OnTooltipForBootyBay,
 					["maps"] = {
 						TANARIS,

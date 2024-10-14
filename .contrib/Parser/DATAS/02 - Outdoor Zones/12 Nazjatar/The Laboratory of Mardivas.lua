@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(NAZJATAR, bubbleDownSelf({ ["timeline"] = { ADDED_8_2_0 } },
 		["isWeekly"] = true,
 		["provider"] = { "o", 322533 },	-- Mardivas's Tome of the Elements
 		["coord"] = { 60.7, 32.4, NAZJATAR },
-		["icon"] = "Interface\\Icons\\inv_crystallized_water",	-- icon for Strange Mineralized Water
+		["icon"] = 132774,	-- icon for Strange Mineralized Water
 		["g"] = {
 			currency(1721),	-- Prismatic Manapearl x5
 			n(155139, {	-- Arcane Amalgamation

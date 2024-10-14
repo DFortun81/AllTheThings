@@ -1659,7 +1659,7 @@ app.CreateQuestObjective = app.CreateClass("Objective", "objectiveID", {
 	icon = function(t)
 		return app.GetIconFromProviders(t)
 			or (t.spellID and GetSpellIcon(t.spellID))
-			or t.parent.icon or "Interface\\Worldmap\\Gear_64Grey";
+			or t.parent.icon or 311226;
 	end,
 	model = function(t)
 		if t.providers then
@@ -2076,7 +2076,7 @@ if app.IsRetail then
 				tinsert(prereqs, {
 					text = L.UPON_COMPLETION,
 					description = L.UPON_COMPLETION_DESC,
-					icon = "Interface\\Icons\\Spell_Holy_MagicalSentry",
+					icon = 135932,
 					visible = true,
 					expanded = true,
 					g = g,
@@ -2225,7 +2225,7 @@ if app.IsRetail then
 			local useNested = app.Settings:GetTooltipSetting("QuestChain:Nested");
 			local questChainHeader = app.CreateRawText(useNested and L.NESTED_QUEST_REQUIREMENTS or L.QUEST_CHAIN_REQ, {
 				description = L.QUEST_CHAIN_REQ_DESC,
-				icon = "Interface\\Icons\\Spell_Holy_MagicalSentry",
+				icon = 135932,
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = app.UI.OnClick.IgnoreRightClick,
 				sourceIgnored = true,

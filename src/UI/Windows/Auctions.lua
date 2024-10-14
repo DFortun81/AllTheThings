@@ -108,7 +108,7 @@ app:CreateWindow("Auctions", {
 			end
 			self.data = {
 				text = "Auction Module",
-				icon = "INTERFACE\\ICONS\\INV_Misc_Coin_01", 
+				icon = 133784, 
 				description = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!",
 				visible = true, 
 				expanded = true,

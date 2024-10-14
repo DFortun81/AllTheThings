@@ -1,6 +1,6 @@
 SEASON_FURIOUS = createHeader({
 	readable = "Furious Gladiator",
-	icon = "Interface\\Icons\\ability_mount_redfrostwyrm_01",
+	icon = 303868,
 	text = {
 		en = WOWAPI_GetAchievementName(3436).. [[..": Season 6"]],
 		fr = WOWAPI_GetAchievementName(3436).. [[..": Saison 6"]],

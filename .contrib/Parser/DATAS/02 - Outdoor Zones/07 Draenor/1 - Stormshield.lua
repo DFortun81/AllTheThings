@@ -4,7 +4,7 @@
 root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(STORMSHIELD, {
-			["icon"] = "Interface\\FriendsFrame\\PlusManz-Alliance",
+			["icon"] = 374217,
 			["isRaid"] = true,
 			["races"] = ALLIANCE_ONLY,
 			["g"] = {

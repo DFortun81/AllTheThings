@@ -1,6 +1,6 @@
 SEASON_CORRUPTED = createHeader({
 	readable = "Corrupted Gladiator: Battle for Azeroth Season 4",
-	icon = "Interface\\Icons\\inv_protodrakegladiatormount_black",
+	icon = 2406659,
 	text = {
 		en = WOWAPI_GetAchievementName(13957),
 	},

@@ -1,6 +1,6 @@
 RANK_THREE = createHeader({
 	readable = "Rank 3",
-	icon = "Interface\\Icons\\inv_smallazeriteshard",
+	icon = 2065624,
 	text = {
 		en = [[~string.format(AZERITE_ESSENCE_RANK, 3)]],
 		de = "Rang 3",

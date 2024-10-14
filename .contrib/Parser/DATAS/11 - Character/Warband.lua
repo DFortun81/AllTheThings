@@ -3,7 +3,7 @@
 -------------------------------------------
 WARBAND = createHeader({
 	readable = "Warband",
-	icon = "Interface\\Icons\\inv_cape_special_treasure_c_01",
+	icon = 4203076,
 	text = {
 		en = "Warband",
 		cn = "战团",

@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["lore"] = "Azshara was taken over by the goblins post-Shattering. It used to be the night elves' greatest center before the Sundering, but was destroyed due to the reckless magic of the Highborne. Known for being a beautiful and tranquil autumnal zone pre-Shattering, the Goblins have marred the landscape with their pollution and quarries, carving the land into the shape of a Horde symbol.",
 		-- #endif
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_azshara_01",
+		["icon"] = 236714,
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {

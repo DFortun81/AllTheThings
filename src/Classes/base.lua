@@ -591,7 +591,7 @@ app.CreateUnimplementedClass = function(className, classKey)
 			return className;
 		end,
 		icon = function(t)
-			return "Interface\\Icons\\INV_Misc_QuestionMark";
+			return 134400;
 		end,
 		title = function(t)
 			return app.L.DATA_TYPE_NOT_SUPPORTED;

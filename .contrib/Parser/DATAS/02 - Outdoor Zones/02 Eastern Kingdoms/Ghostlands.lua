@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 		["lore"] = "Ghostlands is a low-level zone focusing on the alliance between the Blood Elves and Forsaken in pushing back the Scourge's presence. It is dark and shadowy with corruption throughout the land, culminating in Deathholme. It is also the site of the ancient Amani troll empire and the low-level reputation hub of Tranquillien.",
 		["maps"] = { 96 },	-- Amani Catacombs
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_ghostlands",
+		["icon"] = 236765,
 		-- #endif
 		["timeline"] = { ADDED_2_0_1 },
 		["lvl"] = lvlsquish(10, 10, 1),

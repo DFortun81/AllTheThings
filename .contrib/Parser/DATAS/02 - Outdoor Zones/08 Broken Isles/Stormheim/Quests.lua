@@ -298,7 +298,7 @@ root(ROOTS.Zones, {
 					["sourceQuests"] = { 39855 },	-- Paid in Lifeblood
 					["races"] = ALLIANCE_ONLY,
 					["coord"] = { 72.3, 61.0, STORMHEIM },
-					["icon"] = "Interface\\Icons\\inv_misc_map_01",
+					["icon"] = 134269,
 					["g"] = {
 						i(129252),	-- Lorna's Bracelet
 						i(129255),	-- Worgen Kings Wraps
@@ -801,7 +801,7 @@ root(ROOTS.Zones, {
 						39791,	-- Lay Them to Rest
 					},
 					["coord"] = { 69.8, 45.6, STORMHEIM },
-					["icon"] = "Interface\\Icons\\INV_Archaeology_Ogres_Pictogram_Tablet",
+					["icon"] = 1017867,
 				}),
 				q(39788, {	-- The Runewood's Revenge
 					["sourceQuests"] = { 39796 },	-- To Haustvald

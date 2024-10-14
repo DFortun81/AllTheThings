@@ -1,6 +1,6 @@
 DPS_ROLE = createHeader({
 	readable = "DPS",
-	icon = "Interface\\Icons\\Spell_fire_firebolt02",
+	icon = 135810,
 	text = {
 		en = "DPS",
 		de = "DDs",

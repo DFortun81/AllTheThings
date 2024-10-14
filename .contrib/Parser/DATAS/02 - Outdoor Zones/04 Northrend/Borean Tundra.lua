@@ -5,7 +5,7 @@ root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(BOREAN_TUNDRA, {
 			["lore"] = "Borean Tundra is one of the two initial zones players are expected to quest in when first reaching Northrend. It is located in western Northrend with the frigid island of Coldarra off the coast. Borean Tundra is mostly ice, punctuated by grasslands. It is occupied by many factions: the Alliance (based in Valiance Keep), the Horde (based in Warsong Hold), D.E.H.T.A protesting the slaughter of animals, the peaceful Tuskarr driven away from their coastal lands, nerubians and Prince Valanar to the North, the Kirin Tor assisting the dragonflights in Coldarra, and the mysterious taunka, an ancient branch of the Tauren.",
-			["icon"] = "Interface\\Icons\\achievement_zone_boreantundra_01",
+			["icon"] = 236722,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					explorationAch(1264),	-- Explore Borean Tundra

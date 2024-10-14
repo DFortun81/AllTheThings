@@ -6,7 +6,7 @@ root(ROOTS.WorldEvents, m(500, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Bi
 	["races"] = ALLIANCE_ONLY,
 	["lvl"] = 120,
 	["maps"] = { DEEPRUN_TRAM },
-	["icon"] = "Interface\\Icons\\ability_warrior_secondwind",
+	["icon"] = 132356,
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(7944, {		-- Bottle Service (Season 2)

@@ -1,7 +1,7 @@
 PVP_WARMODE = createHeader({
 	readable = "War Mode Gear",
 	constant = "PVP_WARMODE",
-	icon = "Interface\\Worldmap\\GlowSkull_64Grey",
+	icon = 311230,
 	text = {
 		en = "War Mode Gear",
 	},

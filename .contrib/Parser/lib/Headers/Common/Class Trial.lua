@@ -1,9 +1,9 @@
 CLASS_TRIAL = createHeader({
 	readable = "Class Trial",
 	-- #if AFTER LEGION
-	icon = "Interface\\Icons\\ability_bossmagistrix_timewarp1",
+	icon = 1391675,
 	-- #else
-	icon = "Interface\\Icons\\Inv_misc_head_elf_02",
+	icon = 134162,
 	-- #endif
 	text = {
 		en = "Class Trial",

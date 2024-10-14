@@ -87,7 +87,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			}),
 			n(QUALITY_LEGENDARY, {
 				["title"] = "Fangs of the Father",
-				["icon"] = "Interface\\Icons\\ability_backstab",
+				["icon"] = 132090,
 				["classes"] = { ROGUE },
 				["isRaid"] = true,
 				["lvl"] = 85,

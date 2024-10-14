@@ -3,7 +3,7 @@
 ---------------------------------------------------
 ASSAULT_ON_THE_DARK_PORTAL = createHeader({
 	readable = "Assault on the Dark Portal",
-	icon = "Interface\\Icons\\achievement_dungeon_outland_dungeonmaster",
+	icon = 255348,
 	text = {
 		en = "Assault on the Dark Portal",
 		es = "Asalto en el Portal Oscuro",

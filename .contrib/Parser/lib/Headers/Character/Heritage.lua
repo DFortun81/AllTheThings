@@ -1,6 +1,6 @@
 HERITAGE = createHeader({
 	readable = "Heritage",
-	icon = "Interface\\Icons\\vas_guildfactionchange",
+	icon = 2437241,
 	text = {
 		en = "Heritage",
 		es = "Armadura dinástica",

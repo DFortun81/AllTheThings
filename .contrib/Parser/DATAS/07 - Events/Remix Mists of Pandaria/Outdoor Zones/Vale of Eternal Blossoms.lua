@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(VALE_OF_ETERNAL_BLOSSOMS, {
-		["icon"] = "Interface\\Icons\\achievement_zone_valeofeternalblossoms",
+		["icon"] = 618798,
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(20069),		-- Elusive Foes: Vale of Eternal Blossoms (automated)

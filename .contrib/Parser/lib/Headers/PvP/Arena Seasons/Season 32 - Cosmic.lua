@@ -1,6 +1,6 @@
 SEASON_COSMIC = createHeader({
 	readable = "Cosmic Gladiator: Shadowlands Season 3",
-	icon = "Interface\\Icons\\inv_shadebeastmount_red",
+	icon = 3593822,
 	text = {
 		en = WOWAPI_GetAchievementName(15353),
 	},

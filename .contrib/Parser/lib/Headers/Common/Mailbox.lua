@@ -1,6 +1,6 @@
 MAILBOX = createHeader({
 	readable = "Mailbox",
-	icon = "Interface\\Icons\\inv_letter_17",
+	icon = 133473,
 	text = {
 		en = [[~MINIMAP_TRACKING_MAILBOX]],
 	},

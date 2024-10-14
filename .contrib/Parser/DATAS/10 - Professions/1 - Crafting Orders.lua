@@ -3,7 +3,7 @@
 -----------------------------------------------------
 CRAFTING_ORDERS = createHeader({
 	readable = "Crafting Orders",
-	icon = "Interface\\Icons\\inv_tabard_craftingorder_c_01",
+	icon = 4557373,
 	text = {
 		en = "Crafting Orders",
 		cn = "制造订单",
@@ -11,7 +11,7 @@ CRAFTING_ORDERS = createHeader({
 });
 PATRON_REWARDS = createHeader({
 	readable = "Patron Rewards",
-	icon = "Interface\\Icons\\inv_tabard_craftingorder_c_01",
+	icon = 4557373,
 	text = {
 		en = "Patron Rewards",
 		cn = "客人订单奖励",

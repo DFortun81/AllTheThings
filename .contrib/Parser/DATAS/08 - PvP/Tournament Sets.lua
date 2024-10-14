@@ -3,7 +3,7 @@
 -----------------------------------------------
 TOURNAMENT_GEAR = createHeader({
 	readable = "Tournament Gear",
-	icon = "Interface\\Icons\\Achievement_PVP_Legion08",
+	icon = 1582146,
 	text = {
 		en = [[~ITEM_TOURNAMENT_GEAR]],
 	},

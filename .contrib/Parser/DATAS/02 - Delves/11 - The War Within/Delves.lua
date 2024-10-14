@@ -1,13 +1,13 @@
 BOUNTIFUL = createHeader({
 	readable = "Bountiful",
-	icon = "Interface\\Icons\\inv_10_blacksmithing_consumable_key_color2",
+	icon = 4622271,
 	text = {
 		en = WOWAPI_GetSpellName(430253),
 	},
 });
 CURIO = createHeader({
 	readable = "Curio",
-	icon = "Interface\\Icons\\inv_misc_curiouscoin",
+	icon = 1604168,
 	text = {
 		en = WOWAPI_GetSpellName(456522),
 	},

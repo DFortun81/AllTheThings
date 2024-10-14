@@ -1,6 +1,6 @@
 SEASON_VICIOUS = createHeader({
 	readable = "Vicious Gladiator",
-	icon = "Interface\\Icons\\ability_mount_drake_twilight",
+	icon = 236235,
 	text = {
 		en = WOWAPI_GetAchievementName(6002).. [[..": Season 9"]],
 		fr = WOWAPI_GetAchievementName(6002).. [[..": Saison 9"]],

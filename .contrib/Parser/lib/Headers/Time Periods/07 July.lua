@@ -1,6 +1,6 @@
 JULY = createHeader({
 	readable = "July",
-	icon = "Interface\\Icons\\ability_ardenweald_paladin_summer",
+	icon = 3636845,
 	text = {
 		en = [[~MONTH_JULY]],
 	},

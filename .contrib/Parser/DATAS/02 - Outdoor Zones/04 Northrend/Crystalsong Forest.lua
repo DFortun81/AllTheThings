@@ -5,7 +5,7 @@ root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(CRYSTALSONG_FOREST, {
 			["lore"] = "Crystalsong Forest is a tranquil forest in the center of Northrend, from which Dalaran floats above. Originally intended to be the site of the Argent Tournament, it is a peaceful zone with hardly any quests.",
-			["icon"] = "Interface\\Icons\\achievement_zone_crystalsong_01",
+			["icon"] = 236735,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					explorationAch(1457),	-- Explore Crystalsong Forest

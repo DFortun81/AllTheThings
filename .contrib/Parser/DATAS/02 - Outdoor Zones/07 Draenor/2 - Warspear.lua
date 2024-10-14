@@ -4,7 +4,7 @@
 root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(WARSPEAR, {
-			["icon"] = "Interface\\FriendsFrame\\PlusManz-Horde",
+			["icon"] = 374221,
 			["isRaid"] = true,
 			["races"] = HORDE_ONLY,
 			["g"] = {

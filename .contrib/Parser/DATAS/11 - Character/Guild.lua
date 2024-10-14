@@ -4,7 +4,7 @@
 local FACTION_GUILD = 1168;
 root(ROOTS.Character, n(createHeader({
 	readable = "Guild",
-	icon = "Interface\\Icons\\achievement_guildperk_everybodysfriend",
+	icon = 442272,
 	text = {
 		en = [[~GUILD]],
 	},

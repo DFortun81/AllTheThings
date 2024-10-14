@@ -41,7 +41,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	m(WINTERSPRING, {
 		["lore"] = "Winterspring is a frosty valley in northern Kalimdor. This frigid zone is littered with night elven ruins, and serves as the primary home of the Blue Dragonflight in Kalimdor. The only settlement in Winterspring is Everlook, a Steamwheedle Cartel town that is neutral to both Horde and Alliance.",
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\Achievement_zone_winterspring",
+		["icon"] = 236854,
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -234,12 +234,12 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_EVERLOOK, {	-- Everlook
-					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
+					["icon"] = 133784,
 					["OnTooltip"] = [[_.OnTooltipDB.ForEverlook]],
 					["maps"] = { TANARIS, THE_BARRENS },
 				}),
 				faction(FACTION_WINTERSABER_TRAINERS, {	-- Wintersaber Trainers
-					["icon"] = "Interface\\Icons\\ability_mount_pinktiger",
+					["icon"] = 132252,
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForWintersaberTrainers,
 					-- #endif

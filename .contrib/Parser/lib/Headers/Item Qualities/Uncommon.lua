@@ -1,6 +1,6 @@
 QUALITY_UNCOMMON = createHeader({
 	readable = "Unommon",
-	icon = "Interface\\Icons\\Inv_shirt_green_01",
+	icon = 135024,
 	text = {
 		en = [[~ITEM_QUALITY2_DESC]],
 	},

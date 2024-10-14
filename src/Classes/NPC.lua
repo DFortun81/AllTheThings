@@ -103,7 +103,7 @@ do
 		icon = function(t)
 			local vendorParent = t.parent and t.parent.headerID == app.HeaderConstants.VENDORS
 			if vendorParent then
-				return "Interface\\Icons\\INV_Misc_Coin_01"
+				return 133784
 			end
 			return app.GetRelativeDifficultyIcon(t)
 		end,

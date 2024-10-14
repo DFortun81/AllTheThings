@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, {
 	n(CLASS_HALL, {
-		["icon"] = "Interface\\Icons\\achievement_level_110",
+		["icon"] = 1408997,
 	}),
 	n(CLASS_HALL, sharedData({
 		["maps"] = CLASS_HALL_MAPS,

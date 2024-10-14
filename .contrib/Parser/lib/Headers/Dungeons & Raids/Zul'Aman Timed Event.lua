@@ -1,6 +1,6 @@
 ZULAMAN_TIMED_EVENT = createHeader({
 	readable = "Timed Event",
-	icon = "Interface\\Icons\\INV_Misc_Bag_08",
+	icon = 133633,
 	text = {
 		en = "Timed Event",
 		fr = "Événement chronométré",
@@ -10,7 +10,7 @@ ZULAMAN_TIMED_EVENT = createHeader({
 });
 ZULAMAN_CHEST_1 = createHeader({
 	readable = "First Chest",
-	icon = "Interface\\Icons\\INV_Misc_Bag_09",
+	icon = 133634,
 	text = {
 		en = "First Chest",
 		fr = "Premier coffre",
@@ -20,7 +20,7 @@ ZULAMAN_CHEST_1 = createHeader({
 });
 ZULAMAN_CHEST_2 = createHeader({
 	readable = "Second Chest",
-	icon = "Interface\\Icons\\INV_Misc_Bag_10",
+	icon = 133639,
 	text = {
 		en = "Second Chest",
 		fr = "Second coffre",
@@ -30,7 +30,7 @@ ZULAMAN_CHEST_2 = createHeader({
 });
 ZULAMAN_CHEST_3 = createHeader({
 	readable = "Third Chest",
-	icon = "Interface\\Icons\\INV_Misc_Bag_11",
+	icon = 133644,
 	text = {
 		en = "Third Chest",
 		fr = "Troisième coffre",
@@ -46,7 +46,7 @@ ZULAMAN_CHEST_4 = createHeader({
 	export = true,
 	-- #endif
 	-- #endif
-	icon = "Interface\\Icons\\INV_Box_01",
+	icon = 132594,
 	text = {
 		en = "Final Chest",
 		fr = "Coffre final",

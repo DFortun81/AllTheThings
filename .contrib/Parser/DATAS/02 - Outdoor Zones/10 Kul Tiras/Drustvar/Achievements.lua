@@ -313,7 +313,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				o(297879, {	-- Bespelled Chest
 					["description"] = "Click the inactive torches.",
 					["questID"] = 53472,
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["coord"] = { 55.60, 51.80, DRUSTVAR },
 					["g"] = {
 						i(163790),	-- Spooky Incantation
@@ -322,7 +322,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				o(297881, {	-- Enchanted Chest
 					["description"] = "Click the inactive torches.",
 					["questID"] = 53474,
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["coord"] = { 25.50, 24.20, DRUSTVAR },
 					["g"] = {
 						i(163796),	-- Wolf Pup Spine
@@ -330,7 +330,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				o(297880, {	-- Ensorcelled Chest
 					["questID"] = 53473,
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["coord"] = { 67.70, 73.70, DRUSTVAR },
 					["g"] = {
 						i(163791),	-- Miniature Stag Skull
@@ -339,7 +339,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				o(297878, {	-- Hexed Chest
 					["description"] = "Click the inactive torches.",
 					["questID"] = 53471,
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["coord"] = { 18.50, 51.30, DRUSTVAR },
 					["g"] = {
 						i(163789),	-- Bundle of Wicker Stick
@@ -348,7 +348,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				o(297828, {	-- Merchant's Chest
 					["questID"] = 53357,
 					["coord"] = { 25.69, 20.03, DRUSTVAR },
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["description"] = "Look for the Gorging Raven flying above with the 'Holding Keys' buff, and kill it to get the key to open this chest.",
 					["g"] = {
 						n(137468, {	-- Gorging Raven
@@ -362,7 +362,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				o(297891, {	-- Runebound Cache
 					["questID"] = 53385,
 					["coord"] = { 63.3, 65.8, DRUSTVAR },
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["description"] = "Left. Down. Up. Right.",
 					["g"] = {
 						i(163743),	-- Drust Soulcatcher
@@ -371,7 +371,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				o(297892, {	-- Runebound Chest
 					["questID"] = 53386,
 					["coord"] = { 44.2, 27.8, DRUSTVAR },
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["description"] = "Left. Right. Down. Up.",
 					["g"] = {
 						i(163742),	-- Heartsbane Grimoire (TOY!)
@@ -380,7 +380,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				o(297893, {	-- Runebound Coffer
 					["questID"] = 53387,
 					["coord"] = { 33.68, 71.74, DRUSTVAR },
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["description"] = "Right. Up. Left. Down.",
 					["g"] = {
 						i(163740),	-- Drust Ritual Knife (TOY!)
@@ -389,7 +389,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				o(298920, {	-- Stolen Thornspeaker Cache
 					["questID"] = 53475,
 					["coord"] = { 24.3, 48.5, DRUSTVAR },
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["description"] = "Enter the cave at 24.70, 48.95.",
 					["sym"] = {{"select","itemID",
 						POLISHED_PET_CHARM,
@@ -398,7 +398,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				o(297825, {	-- Web-Covered Chest
 					["questID"] = 53356,
 					["coord"] = { 33.7, 30.1, DRUSTVAR },
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["g"] = {
 						i(160053),	-- Battle-Scarred Augment Rune
 					},

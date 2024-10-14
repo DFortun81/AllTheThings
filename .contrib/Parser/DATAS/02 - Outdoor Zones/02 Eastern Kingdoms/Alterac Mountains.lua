@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(ALTERAC_MOUNTAINS, {
 		["lore"] = "Alterac Mountains is the location of the former nation of Alterac and the city-state of Dalaran, and its chief settlements included Alterac City, Dalaran and Strahnbrad. The central mountains have been overrun by ogres, while the organization called the Syndicate controls Strahnbrad and other areas. Dalaran was enclosed within an impregnable magic shell before the city was lifted in the air and moved to Northrend. A high, wooded region, the Alterac Mountains see much rainfall and its skies are constantly overcast. Crushridge ogres and the Syndicate, a wicked group of rogues led by fallen human nobles, clash repeatedly for control of this land.",
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_alteracmountains_01",
+		["icon"] = 236711,
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -36,7 +36,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_RAVENHOLDT, {	-- Ravenholdt
-					["icon"] = "Interface\\Icons\\Ability_Rogue_Eviscerate",
+					["icon"] = 132292,
 					["OnTooltip"] = [[_.OnTooltipDB.Ravenholdt]],
 				}),
 				faction(FACTION_SYNDICATE, {	-- Syndicate

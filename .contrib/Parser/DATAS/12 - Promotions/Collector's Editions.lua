@@ -74,7 +74,7 @@ WOW_FIFTEENTH_ANNIVERSARY_COLLECTORS_EDITION = createHeader({
 });
 DIABLO_III = createHeader({
 	readable = "Diablo III",
-	icon = "Interface\\Icons\\DiabloAnniversary_HoradricCube",
+	icon = 1529348,
 	text = {
 		en = "Diablo III",
 		cn = "暗黑破坏神III",
@@ -85,7 +85,7 @@ DIABLO_III = createHeader({
 });
 DIABLO_III_REAPER_OF_SOULS = createHeader({
 	readable = "Diablo III: Reaper of Souls",
-	icon = "Interface\\Icons\\DiabloAnniversary_HoradricCube",
+	icon = 1529348,
 	text = {
 		en = "Diablo III: Reaper of Souls",
 		cn = "暗黑破坏神III：夺魂之镰",
@@ -96,7 +96,7 @@ DIABLO_III_REAPER_OF_SOULS = createHeader({
 });
 DIABLO_IV = createHeader({
 	readable = "Diablo IV",
-	icon = "Interface\\Icons\\DiabloAnniversary_HoradricCube",
+	icon = 1529348,
 	text = {
 		en = "Diablo IV",
 		cn = "暗黑破坏神IV",
@@ -107,7 +107,7 @@ DIABLO_IV = createHeader({
 });
 OVERWATCH_ORIGINS = createHeader({
 	readable = "Overwatch: Origins",
-	icon = "Interface\\Icons\\inv_pet_babywinston",
+	icon = 1303199,
 	text = {
 		en = "Overwatch: Origins",
 		cn = "守望先锋：起源",
@@ -118,7 +118,7 @@ OVERWATCH_ORIGINS = createHeader({
 });
 STARCRAFT_II_WINGS_OF_LIBERTY = createHeader({
 	readable = "Starcraft II: Wings of Liberty",
-	icon = "Interface\\Icons\\Inv_sigil_thorim",
+	icon = 254885,
 	text = {
 		en = "Starcraft II: Wings of Liberty",
 		cn = "星际争霸II：自由之翼",
@@ -129,7 +129,7 @@ STARCRAFT_II_WINGS_OF_LIBERTY = createHeader({
 });
 STARCRAFT_II_HEART_OF_THE_SWARM = createHeader({
 	readable = "Starcraft II: Heart of the Swarm",
-	icon = "Interface\\Icons\\Ability_pet_baneling",
+	icon = 656595,
 	text = {
 		en = "Starcraft II: Heart of the Swarm",
 		cn= "星际争霸II：虫群之心",
@@ -140,7 +140,7 @@ STARCRAFT_II_HEART_OF_THE_SWARM = createHeader({
 });
 STARCRAFT_II_LEGACY_OF_THE_VOID = createHeader({
 	readable = "Starcraft II: Legacy of the Void",
-	icon = "Interface\\Icons\\inv_archonpet",
+	icon = 1125916,
 	text = {
 		en = "Starcraft II: Legacy of the Void",
 		cn = "星际争霸II：虚空之遗",
@@ -151,7 +151,7 @@ STARCRAFT_II_LEGACY_OF_THE_VOID = createHeader({
 });
 WARCRAFT_III_REFORGED_SPOILS_OF_WAR = createHeader({
 	readable = "Warcraft III Spoils of War Edition",
-	icon = "Interface\\Icons\\INV_Mace_1H_Doomhammer",
+	icon = 1041991,
 	text = {
 		en = "Warcraft III Spoils of War Edition",
 		cn = "魔兽争霸III战争嘉奖版",

@@ -3,7 +3,7 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(907, {	-- Seething Shore
-		["icon"] = "Interface\\Icons\\Ability_warrior_intensifyrage",
+		["icon"] = 236310,
 		["timeline"] = { ADDED_7_3_5 },
 		["maps"] = {
 			904,	-- Silithus Brawl

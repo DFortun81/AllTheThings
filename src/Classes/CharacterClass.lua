@@ -56,7 +56,7 @@ if GetSpecializationInfoByID then
 		end
 
 		local info = {
-			icon = ClassIcons[key] or "Interface\\Icons\\INV_Misc_QuestionMark",
+			icon = ClassIcons[key] or 134400,
 			file = "WARRIOR",
 			name = UNKNOWN,
 			classID = key,
@@ -78,7 +78,7 @@ else
 		end
 		if not info then
 			info = {
-				icon = ClassIcons[key] or "Interface\\Icons\\INV_Misc_QuestionMark",
+				icon = ClassIcons[key] or 134400,
 				file = "WARRIOR",
 				name = UNKNOWN,
 				classID = specID,
@@ -94,7 +94,7 @@ else
 end
 local ClassInfoMetatableAfterCache = { __index = function(t, key)
 	local info = {
-		icon = "Interface\\Icons\\INV_Misc_QuestionMark",
+		icon = 134400,
 		file = WARRIOR,
 		name = UNKNOWN,
 		classID = 0,

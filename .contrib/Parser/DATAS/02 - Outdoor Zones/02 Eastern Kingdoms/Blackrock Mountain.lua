@@ -8,7 +8,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["zone-text-areaID"] = 25,	-- Blackrock Mountain (mapID doesn't exist for a couple expansions)
 		-- #endif
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\Achievement_Boss_Nefarion",
+		["icon"] = 254649,
 		-- #endif
 		["maps"] = {
 			BLACKROCK_MOUNTAIN_LEVEL2,	-- Blackrock Caverns

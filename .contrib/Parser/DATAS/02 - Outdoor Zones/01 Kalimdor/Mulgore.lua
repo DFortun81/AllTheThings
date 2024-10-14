@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			9,	-- The Venture Co. Mine
 		},
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_mulgore_01",
+		["icon"] = 236809,
 		-- #endif
 		["groups"] = {
 			m(CAMP_NARACHE, {

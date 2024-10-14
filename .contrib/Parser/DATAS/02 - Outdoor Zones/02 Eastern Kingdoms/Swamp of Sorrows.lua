@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(SWAMP_OF_SORROWS, {
 		["lore"] = "The Swamp of Sorrows is a marshland in southern Eastern Kingdoms filled with green dragons serving Ysera. When the Dark Portal imploded during the Second War, The Black Morass was split in half--the northern part became the Swamp, while the southern half became the barren Blasted Lands.",
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_swampsorrows_01",
+		["icon"] = 236845,
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {

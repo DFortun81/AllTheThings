@@ -3,7 +3,7 @@
 ---------------------------------------------------
 EON_FRINGE = createHeader({
 	readable = "Eon's Fringe",
-	icon = "Interface\\Icons\\inv_belt_armor_waistoftime_d_01",
+	icon = 2026009,
 	text = {
 		en = "Eon's Fringe",
 		de = "Grenze des Äons",

@@ -3,7 +3,7 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	applyclassicphase(WRATH_PHASE_ONE, m(128, bubbleDown({ ["timeline"] = { ADDED_3_0_2, REMOVED_8_0_1 }, }, {	-- Strand of the Ancients
-		["icon"] = "Interface\\Icons\\achievement_bg_winsoa",
+		["icon"] = 236394,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(2194, {	-- Master of Strand of the Ancients (Alliance - before 4.3.0)

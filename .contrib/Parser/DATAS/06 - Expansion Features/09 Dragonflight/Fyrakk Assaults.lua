@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 FYRAKK_ASSAULTS = createHeader({
 	readable = "Fyrakk Assaults",
-	icon = "Interface\\Icons\\inv_fyrakk_dragonbreath",
+	icon = 4914672,
 	text = {
 		en = "Fyrakk Assaults",
 		es = "Asaltos de Fyrakk",

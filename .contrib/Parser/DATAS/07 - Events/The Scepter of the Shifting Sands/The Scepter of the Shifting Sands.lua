@@ -3,7 +3,7 @@
 --------------------------------------------
 THE_SCEPTER_OF_THE_SHIFTING_SANDS = createHeader({
 	readable = "The Scepter of the Shifting Sands",
-	icon = "Interface\\Icons\\Inv_hammer_25",
+	icon = 133062,
 	text = {
 		en = "The Scepter of the Shifting Sands",
 		es = "El cetro del Mar de Dunas",

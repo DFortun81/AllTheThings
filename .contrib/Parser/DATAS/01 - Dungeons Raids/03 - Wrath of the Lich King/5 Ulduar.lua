@@ -146,7 +146,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses of Ulduar. Hard modes have higher drop chances.",
 				["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
 				["title"] = "Val'anyr, Hammer of Ancient Kings",
-				["icon"] = "Interface\\Icons\\inv_mace_99",
+				["icon"] = 253399,
 				["isRaid"] = true,
 				["groups"] = {
 					ach(3142, {	-- Val'anyr, Hammer of Ancient Kings
@@ -1274,7 +1274,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 						["description"] = "Collect 30 x |cFFFF8000Fragment of Val'anyr|r from the bosses in 25-Man Ulduar. Hard modes have higher drop chances.",
 						["classes"] = { PALADIN, PRIEST, SHAMAN, MONK, DRUID, EVOKER },
 						["title"] = "Val'anyr, Hammer of Ancient Kings",
-						["icon"] = "Interface\\Icons\\inv_mace_99",
+						["icon"] = 253399,
 						["isRaid"] = true,
 						["groups"] = {
 							ach(3142, {	-- Val'anyr, Hammer of Ancient Kings

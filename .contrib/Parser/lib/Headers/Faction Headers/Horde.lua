@@ -1,6 +1,6 @@
 FACTION_HEADER_HORDE = createHeader({
 	readable = "Horde",
-	icon = "Interface\\FriendsFrame\\PlusManz-Horde",
+	icon = 374221,
 	text = {
 		en = [[~FACTION_HORDE]],
 	},

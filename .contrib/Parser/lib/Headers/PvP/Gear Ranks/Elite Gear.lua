@@ -1,6 +1,6 @@
 PVP_ELITE = createHeader({
 	readable = "Elite Gear",
-	icon = "Interface\\Worldmap\\GlowSkull_64Red",
+	icon = 311232,
 	text = {
 		en = "Elite Gear",
 		de = "Elite Rüstung",

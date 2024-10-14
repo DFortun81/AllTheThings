@@ -26,7 +26,7 @@ root(ROOTS.Zones, {
 		m(TEROKKAR_FOREST, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 			["lore"] = "Terokkar Forest is a zone in central Outland that is home to Shattrath City, as well as quest hubs for level 15-30 players. The northern half of Terokkar is lush and the quests cover the threat of the Arakoaa and magic-addicted elves. The souther half is a wasteland known as the Bone Wastes, created when the Shadow Council blew up Auchindoun. There is also a daily quest hub, Skettis, for players with flying mounts--rewards include vanity items.",
 			-- #if AFTER WRATH
-			["icon"] = "Interface\\Icons\\achievement_zone_terrokar",
+			["icon"] = 236847,
 			-- #endif
 			["groups"] = {
 				n(ACHIEVEMENTS, {
@@ -319,7 +319,7 @@ root(ROOTS.Zones, {
 				}),
 				n(FACTIONS, {
 					applyclassicphase(TBC_PHASE_TWO_SKYGUARD, faction(FACTION_SHATARI_SKYGUARD, {	-- Sha'tari Skyguard
-						["icon"] = "Interface\\Icons\\ability_hunter_pet_netherray",
+						["icon"] = 132191,
 						["OnTooltip"] = [[_.OnTooltipDB.ForSkyguard]],
 					})),
 				}),

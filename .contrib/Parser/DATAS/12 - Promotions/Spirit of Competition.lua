@@ -3,7 +3,7 @@
 -----------------------------------------------------
 SPIRIT_OF_COMPETITION = createHeader({
 	readable = "Spirit of Competition",
-	icon = "Interface\\Icons\\inv_jewelry_amulet_03",
+	icon = 133278,
 	text = {
 		-- #if AFTER MOP
 		en = [[~C_PetJournal.GetPetInfoBySpeciesID(179)]],

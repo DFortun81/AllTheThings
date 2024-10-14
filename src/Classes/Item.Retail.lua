@@ -334,7 +334,7 @@ local function default_link(t)
 	return UNKNOWN;
 end
 local function default_icon(t)
-	return t.itemID and GetItemIcon(t.itemID) or "Interface\\Icons\\INV_Misc_QuestionMark";
+	return t.itemID and GetItemIcon(t.itemID) or 134400;
 end
 local function default_specs(t)
 	return GetFixedItemSpecInfo(t.itemID);

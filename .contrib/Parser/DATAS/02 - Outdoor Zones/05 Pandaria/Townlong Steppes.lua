@@ -6,7 +6,7 @@ root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(TOWNLONG_STEPPES, {
 			["lore"] = "Townlong Steppes is relatively small zone located in northwestern Pandaria. The main story that is played out here involves aiding the Shado-Pan on their pursuit against the Sha of Hatred, and aiding them in fending off the Osul yaungol and the aggressive mantid coming from the south.",
-			["icon"] = "Interface\\Icons\\achievement_zone_townlongsteppes",
+			["icon"] = 618796,
 			["maps"] = { 389 },	-- Niuzao Catacombs
 			["groups"] = {
 				n(ACHIEVEMENTS, {
@@ -114,7 +114,7 @@ root(ROOTS.Zones, {
 					faction(FACTION_THE_AUGUST_CELESTIALS, {	-- The August Celestials
 						["description"] = "Each day, the August Celestials require your aid at one of their temples.  Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",
 						["collectible"] = false,
-						["icon"] = "Interface\\Icons\\achievement_faction_celestials",
+						["icon"] = 645203,
 						["g"] = {
 							n(QUESTS, {
 								q(30954, {	-- A Blade is a Blade

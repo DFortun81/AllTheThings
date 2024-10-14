@@ -29,11 +29,11 @@ local ORSTUS_AND_SOTIROS = n(156340, {	-- Larionrider Orstus
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\Inv_misc_sigil_bastion01",
+			["icon"] = 3641395,
 			["g"] = {
 				n(ANIMA_CONDUCTOR, {
-					["icon"] = "Interface\\Icons\\Sanctum_features_animadiversion_bastion",
-					["g"] = sharedData({ ["icon"] = "Interface\\Icons\\Sanctum_features_animadiversion_bastion" }, {
+					["icon"] = 3854014,
+					["g"] = sharedData({ ["icon"] = 3854014 }, {
 						n(REWARDS, {
 							["description"] = "Every Activity within Anima Conductor Rewards this.",
 							["g"] = {

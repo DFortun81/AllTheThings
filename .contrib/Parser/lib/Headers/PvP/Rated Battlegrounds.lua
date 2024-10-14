@@ -3,7 +3,7 @@ RATED_BATTLEGROUNDS = createHeader({
 	-- #if AFTER 7.0.3
 	icon = 1455894,
 	-- #else
-	icon = "Interface\\Icons\\INV_BannerPVP_03",
+	icon = 132487,
 	-- #endif
 	text = {
 		en = [[~PVP_RATED_BATTLEGROUND]],

@@ -1056,7 +1056,7 @@ app:CreateWindow("Synchronization", {
 				end}),
 				{	-- Characters
 					text = "Characters",
-					icon = "Interface\\FriendsFrame\\Battlenet-Portrait",
+					icon = 526421,
 					description = "This shows all of the characters on your account.",
 					expanded = true,
 					characters = {},
@@ -1088,7 +1088,7 @@ app:CreateWindow("Synchronization", {
 						if #g < 1 then
 							tinsert(g, {
 								text = "No characters found.",
-								icon = "Interface\\FriendsFrame\\Battlenet-Portrait",
+								icon = 526421,
 								visible = true,
 								parent = data,
 							});
@@ -1100,7 +1100,7 @@ app:CreateWindow("Synchronization", {
 				},
 				{	-- Linked Characters
 					text = "Linked Characters",
-					icon = "Interface\\FriendsFrame\\Battlenet-Portrait",
+					icon = 526421,
 					description = "This shows all of the linked characters you have defined so far.\n\nClick on a Linked Character in the list below to initiate a sync with that character. The character on your other account must also assign this character as a Linked Character.\n\nNOTE: Your character must be on the same faction and server as your current character to sync.",
 					expanded = true,
 					g = {},
@@ -1121,7 +1121,7 @@ app:CreateWindow("Synchronization", {
 						if #g < 1 then
 							tinsert(g, {
 								text = "No linked accounts found.",
-								icon = "Interface\\FriendsFrame\\Battlenet-Portrait",
+								icon = 526421,
 								visible = true,
 								parent = data,
 							});

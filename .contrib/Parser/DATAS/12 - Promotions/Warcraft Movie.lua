@@ -3,7 +3,7 @@
 -----------------------------------------------------
 WARCRAFT_MOVIE = createHeader({
 	readable = "Warcraft Movie",
-	icon = "Interface\\Icons\\INV_MISC_FILM_01",
+	icon = 133885,
 	text = {
 		en = "Warcraft Movie",
 		cn = "魔兽电影",

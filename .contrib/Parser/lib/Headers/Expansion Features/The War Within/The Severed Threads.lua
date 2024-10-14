@@ -1,6 +1,6 @@
 THE_SEVERED_THREADS = createHeader({
 	readable = "The Severed Threads",
-	icon = "Interface\\Icons\\ui_majorfactions_web",
+	icon = 5891370,
 	text = {
 		en = "The Severed Threads",
 		cn = "斩离之丝",

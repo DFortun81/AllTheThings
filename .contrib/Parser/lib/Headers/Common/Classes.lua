@@ -1,6 +1,6 @@
 CLASSES = createHeader({
 	readable = "Classes",
-	icon = "Interface\\MINIMAP\\TRACKING\\Class",
+	icon = 136455,
 	text = {
 		en = [[~CLASS]],
 	},

@@ -28,7 +28,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["lore"] = "Eastern Plaguelands is heavily-ravaged from the Scourge. The Argent Dawn has made some progress after The Lich King's defeat, but the zone is still full of Undead. Players explore Eastern Plaguelands primarily through escorting a Worgen merchant, Fiona, and her band of merry travelers she picks up along the way. The Plaguelands are the site for some of the most gripping storylines, including the Battle for Darrowshire and the fate of the Stratholme residents.",
 		-- #endif
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_easternplaguelands",
+		["icon"] = 236760,
 		-- #endif
 		-- #if AFTER CATA
 		["maps"] = { LIGHTS_HOPE_CHAPEL },
@@ -37,7 +37,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER WRATH
 			m(THE_SCARLET_ENCLAVE, {
 				["lore"] = "The Scarlet Enclave is the name of the starting area for all Death Knight players in World of Warcraft: Wrath of the Lich King.",
-				["icon"] = "Interface\\Icons\\Spell_Deathknight_ClassIcon",
+				["icon"] = 135771,
 				["groups"] = {
 					n(QUESTS, {
 						-- #IF AFTER DF
@@ -855,7 +855,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_ARGENT_DAWN, {	-- Argent Dawn
-					["icon"] = "Interface\\Icons\\INV_Misc_Token_ArgentDawn3",
+					["icon"] = 134501,
 					["maps"] = {
 						WESTERN_PLAGUELANDS,
 						SCHOLOMANCE,

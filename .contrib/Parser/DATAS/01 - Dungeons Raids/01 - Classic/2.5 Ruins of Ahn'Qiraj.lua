@@ -3,7 +3,7 @@
 -----------------------------------------------------
 CAPTAINS = createHeader({
 	readable = "Captains",
-	icon = "Interface\\Icons\\achievement_pvp_h_12",
+	icon = 236623,
 	text = {
 		en = "Captains",
 		fr = "Capitaines",
@@ -37,7 +37,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FIVE,
 		["groups"] = {
 			n(FACTIONS, {
 				faction(FACTION_CENARION_CIRCLE, {	-- Cenarion Circle
-					["icon"] = "Interface\\Icons\\Ability_Druid_Maul",
+					["icon"] = 132136,
 					["maps"] = { SILITHUS },
 				}),
 			}),

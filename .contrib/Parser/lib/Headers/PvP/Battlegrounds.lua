@@ -1,9 +1,9 @@
 BATTLEGROUNDS = createHeader({
 	readable = "Battlegrounds",
 	-- #if AFTER TBC
-	icon = "Interface\\Icons\\INV_BannerPVP_03",
+	icon = 132487,
 	-- #else
-	icon = "Interface\\Icons\\INV_BannerPVP_02",
+	icon = 132486,
 	-- #endif
 	text = {
 		en = [[~BATTLEGROUNDS]],

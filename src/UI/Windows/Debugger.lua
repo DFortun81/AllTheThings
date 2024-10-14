@@ -46,7 +46,7 @@ app:CreateWindow("Debugger", {
 			['options'] = {
 				{
 					['text'] = "Clear History",
-					['icon'] = "Interface\\Icons\\Ability_Rogue_FeignDeath",
+					['icon'] = 132293,
 					["description"] = "Click this to fully clear this window.\n\nNOTE: If you click this by accident, use the dynamic Restore Buttons that this generates to reapply the data that was cleared.\n\nWARNING: If you reload the UI, the data stored in the Reload Button will be lost forever!",
 					['visible'] = true,
 					['count'] = 0,

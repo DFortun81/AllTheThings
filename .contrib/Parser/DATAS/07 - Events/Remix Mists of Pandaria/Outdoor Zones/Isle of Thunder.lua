@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(ISLE_OF_THUNDER, {
-		["icon"] = "Interface\\Icons\\spell_nature_callstorm",
+		["icon"] = 136014,
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				-- INFO: Verified 2024-10-04, criteria don't work without achraw

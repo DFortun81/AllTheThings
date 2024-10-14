@@ -1,6 +1,6 @@
 WARFRONT_BATTLE_FOR_DARKSHORE = createHeader({
 	readable = "Warfront: The Battle for Darkshore",
-	icon = "Interface\\Icons\\achievement_zone_darkshore_01",
+	icon = 236739,
 	text = {
 		en = WOWAPI_GetSpellName(290253),
 	},

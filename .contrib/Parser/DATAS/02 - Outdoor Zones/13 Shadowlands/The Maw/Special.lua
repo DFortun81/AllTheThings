@@ -46,7 +46,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			header(HEADERS.Quest, 64305, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_0 } }, {	-- The Tormentors of Torghast
 				["description"] = "You can only get the cache once a week, but you can continue to participate in the events for achievement credit individual boss loot.",
-				["icon"] = "Interface\\Icons\\ui_torghast",
+				["icon"] = 3257863,
 				["questID"] = 63854,
 				["isWeekly"] = true,
 				["g"] = {
@@ -260,7 +260,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				},
 			})),
 			header(HEADERS.Spell, 347208, {
-				["icon"] = "Interface\\Icons\\ui_torghast",
+				["icon"] = 3257863,
 				["description"] = "The Weekly lockout pertains only to Epic Gear Loot, Rare Gear loot can be farmed regardless.",
 				["questID"] = 63414,
 				["isWeekly"] = true,

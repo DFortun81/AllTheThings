@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 SILITHUS_THE_WOUND = createHeader({
 	readable = "Silithus (The Wound)",
-	icon = "Interface\\Icons\\Achievement_zone_silithus_01",
+	icon = 236829,
 	text = {
 		en = [[~C_Map.GetAreaInfo(9310)]],
 	},
@@ -19,7 +19,7 @@ root(ROOTS.Zones, m(KALIMDOR, bubbleDown({ ["timeline"] = { ADDED_7_3_5 } }, {
 			m(CHAMBER_OF_HEART, {
 				["provider"] = { "o", 289521 },	-- Titan Translocator
 				["lore"] = "The Chamber of Heart is a titan chamber at the heart of the world. It is accessed via the Titan Translocator in Silithus. Like the Hall of Communion, it is possible here to communicate with Azeroth, the world-soul of the planet. Magni brings a hero here at Azeroth's request to obtain the [Heart of Azeroth], a necklace that can gather the  [Azerite] - the planet's lifeblood - necessary to heal Azeroth's wounds. The seal on the chamber protects Azeroth's world-soul.",
-				["icon"] = "Interface\\Icons\\inv_heartofazeroth",
+				["icon"] = 1869493,
 				["coord"] = { 43.2, 44.5, SILITHUS },
 				["timeline"] = { ADDED_8_0_1 },
 				["maps"] = {

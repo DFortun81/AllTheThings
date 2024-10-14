@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 CARTOGRAPHERS_FLAG = createHeader({
 	readable = "Cartographer's Flag",
-	icon = "Interface\\Icons\\ability_racial_mountaineer",
+	icon = 1723999,
 	text = {
 		en = WOWAPI_GetSpellName(382288),
 	},

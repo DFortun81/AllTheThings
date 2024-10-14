@@ -6,7 +6,7 @@ root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(378, {	-- The Wandering Isle Starter Zones
 			["races"] = { PANDAREN_NEUTRAL, PANDAREN_ALLIANCE, PANDAREN_HORDE },	-- [Adding faction just to be safe]
-			["icon"] = "Interface\\Icons\\INV_Misc_Fish_Turtle_03",
+			["icon"] = 133937,
 			["g"] = {
 				n(FACTIONS, {
 					faction(1216, {	-- Shang Xi's Academy

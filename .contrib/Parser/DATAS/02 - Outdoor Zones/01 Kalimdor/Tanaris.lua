@@ -2780,7 +2780,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	m(TANARIS, {
 		["lore"] = "The Tanaris Desert is vast and unexplored. It is a land of endless sands and cloudless skies. The southern Tanaris Desert is more mountainous than the north, boasting canyons and high bluffs. Numerous tunnels run beneath the sands, purportedly infested with the mysterious silithid. Other creatures in the desert include tallstriders, lions, kodo beasts, drakes and dragons — many the offspring of mighty Nozdormu, who is said to make this land his home.\n\nThe only bit of civilization is Gadgetzhan, a goblin trading post. Many Ironforge prospectors stock up on supplies here before heading out in search of the lost Titan city of Uldum.",
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_tanaris_01",
+		["icon"] = 236846,
 		-- #endif
 		["maps"] = {
 			72,	-- The Noxious Lair
@@ -2895,7 +2895,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_GADGETZAN, {	-- Gadgetzan
-					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
+					["icon"] = 133784,
 					-- #if BEFORE CATA
 					["OnTooltip"] = OnTooltipForGadgetzhan,
 					-- #endif

@@ -6,7 +6,7 @@ root(ROOTS.Zones, {
 	m(PANDARIA, {
 		applyclassicphase(MOP_PHASE_ONE, m(THE_JADE_FOREST, bubbleDownSelf({ ["timeline"] = { ADDED_5_0_4 } }, {
 			["lore"] = "The Jade Forest is a zone located in eastern Pandaria, bordering the Valley of the Four Winds at the southwest and Kun-Lai Summit at the northwest. The heart of the Pandaren Empire, it is a lush rainforest with statuesque stone spires, prominent with the pandaren architecture.",
-			["icon"] = "Interface\\Icons\\achievement_zone_jadeforest",
+			["icon"] = 617824,
 			["maps"] = {
 				372,	-- Greenstone Quarry
 				373,	-- Greenstone Quarry #2
@@ -110,7 +110,7 @@ root(ROOTS.Zones, {
 				n(FACTIONS, {
 					faction(FACTION_ORDER_OF_THE_CLOUD_SERPENT, {	-- Order of the Cloud Serpent
 						["description"] = "Gain reputation with this faction by training a cloud serpent hatchling, and eventually you will earn either an Azure, Golden, or Jade Cloud Serpent mount.  More rewards are unlocked by reaching Revered and Exalted with the faction, including a toy, more mounts, and Jewelcrafting designs.\n\nThe quest chain begins with |cFFefc400Wild Things|r.\n\n",
-						["icon"] = "Interface\\Icons\\achievement_faction_serpentriders",
+						["icon"] = 646324,
 						["g"] = {
 						--	TODO:
 							-- verify if the following dailies exist independent of completion of other dailies:
@@ -650,7 +650,7 @@ root(ROOTS.Zones, {
 					faction(FACTION_THE_AUGUST_CELESTIALS, {	-- The August Celestials
 						["description"] = "Each day, the August Celestials require your aid at one of their temples.  Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",
 						["collectible"] = false,
-						["icon"] = "Interface\\Icons\\achievement_faction_celestials",
+						["icon"] = 645203,
 						["g"] = {
 							q(30063, {	-- Behind the Masks
 								["provider"] = { "n", 57319 },	-- Elder Sage Storm-Sing
@@ -2820,7 +2820,7 @@ root(ROOTS.Zones, {
 							i(88563, {	-- Nat's Fishing Journal
 								--["questID"] = 31664,	-- An Angler's Quest
 								["repeatable"] = true,
-								["icon"] = "Interface\\Icons\\inv_misc_book_11",
+								["icon"] = 133743,
 								["collectible"] = false,
 							}),
 						},

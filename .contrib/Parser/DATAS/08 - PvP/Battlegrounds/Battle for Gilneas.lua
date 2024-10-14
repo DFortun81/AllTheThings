@@ -3,7 +3,7 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(275, {	-- Battle for Gilneas
-		["icon"] = "Interface\\Icons\\achievement_battleground_battleforgilneas",
+		["icon"] = 462671,
 		["timeline"] = { ADDED_4_0_3 },
 		["g"] = {
 			n(ACHIEVEMENTS, {

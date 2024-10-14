@@ -1,6 +1,6 @@
 RANK_ONE = createHeader({
 	readable = "Rank 1",
-	icon = "Interface\\Icons\\inv_smallazeritefragment",
+	icon = 2065623,
 	text = {
 		en = [[~string.format(AZERITE_ESSENCE_RANK, 1)]],
 		de = "Rang 1",

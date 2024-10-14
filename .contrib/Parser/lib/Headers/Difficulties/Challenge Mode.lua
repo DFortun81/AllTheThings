@@ -1,6 +1,6 @@
 CHALLENGE_MODE = createHeader({
 	readable = "Challenge Mode",
-	icon = "Interface\\Icons\\achievement_challengemode_gold",
+	icon = 618858,
 	text = {
 		en = [[~CHALLENGE_MODE]],
 	},

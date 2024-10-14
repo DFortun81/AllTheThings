@@ -3,7 +3,7 @@
 --------------------------------------------
 OPERATION_GNOMEREGAN = createHeader({
 	readable = "Operation: Gnomeregan",
-	icon = "Interface\\Icons\\inv_misc_tournaments_symbol_gnome",
+	icon = 255139,
 	text = {
 		en = WOWAPI_GetAchievementName(4786),
 	},

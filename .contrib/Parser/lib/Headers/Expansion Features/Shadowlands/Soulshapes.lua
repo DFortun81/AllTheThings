@@ -1,6 +1,6 @@
 SOULSHAPES = createHeader({
 	readable = "Soulshape Forms",
-	icon = "Interface\\Icons\\pandarenracial_innerpeace",
+	icon = 572034,
 	text = {
 		en = "Soulshape Forms",
 		de = "Seelengestalt Formen",

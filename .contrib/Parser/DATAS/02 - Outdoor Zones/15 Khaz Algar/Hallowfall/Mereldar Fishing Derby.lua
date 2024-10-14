@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 	m(HALLOWFALL, {
 		header(HEADERS.Quest, 82778, {	-- Hallowfall Fishing Derby
 			["description"] = "This event is available every Saturday.",
-			["icon"] = "Interface\\Icons\\inv_11_0_misc_darkmoonfaresigil_color5",
+			["icon"] = 6012052,
 			["requireSkill"] = FISHING,
 			["g"] = {
 				n(ACHIEVEMENTS, {

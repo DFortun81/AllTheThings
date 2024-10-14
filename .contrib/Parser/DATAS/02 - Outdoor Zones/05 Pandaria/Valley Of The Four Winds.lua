@@ -6,7 +6,7 @@ root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(VALLEY_OF_THE_FOUR_WINDS, {
 			["lore"] = "Valley of the Four Winds is a tranquil plain of lush farmland, bordered by dense mysterious jungles along the south and impassible mountains to the north. The valley is considered the breadbasket of Pandaria, but the year's harvest is in jeopardy and a terrible malaise has overcome the pandaren that live along the coast. The valley is also the home of the legendary Stormstout Brewery, where Chen Stormstout and his niece Li Li hope to journey to discover the whereabouts of their long-lost ancestors.",
-			["icon"] = "Interface\\Icons\\achievement_zone_valleyoffourwinds",
+			["icon"] = 618317,
 			["maps"] = {
 				377,	-- Cavern of Endless Echoes
 			},
@@ -74,7 +74,7 @@ root(ROOTS.Zones, {
 				}),
 				n(FACTIONS, {
 					faction(FACTION_THE_TILLERS, {	-- The Tillers
-						["icon"] = "Interface\\Icons\\achievement_faction_tillers",
+						["icon"] = 645198,
 						["g"] = {
 							n(ACHIEVEMENTS, {
 								ach(6551, {	-- Friend on the Farm

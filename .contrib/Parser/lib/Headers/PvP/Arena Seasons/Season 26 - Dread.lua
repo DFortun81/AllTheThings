@@ -1,6 +1,6 @@
 SEASON_DREAD = createHeader({
 	readable = "Dread Gladiator: Battle for Azeroth Season 1",
-	icon = "Interface\\Icons\\inv_protodrakegladiatormount_gold",
+	icon = 2406661,
 	text = {
 		en = WOWAPI_GetAchievementName(12945),
 	},

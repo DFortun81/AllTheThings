@@ -10,7 +10,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["zone-text-areaID"] = 2257,	-- Deeprun Tram's mapID doesn't exist until later as well, maybe Cataclysm?
 		-- #endif
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\INV_Misc_EngGizmos_03",
+		["icon"] = 133861,
 		-- #endif
 		["groups"] = {
 			n(QUESTS, {

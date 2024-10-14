@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	m(THE_BARRENS, {
 		["lore"] = "The Barrens is a vast, arid savannah. Dust devils swirl across the dry land and canyons cut the earth. Despite its inhospitable nature, numerous trade routes, including the major Gold Road, cross the Barrens. Centaur raiding parties are a constant threat, as are lions and thunder lizards. The orcs and tauren drove the quilboar tribes out of their lands, and the creatures now lair in the Barrens.\n\nIronforge dwarves have discovered a great Titan ruin in this region, and an enormous dig site and settlement has sprung up around it. Called Bael Modan, this fortified city is a common stop for the caravans that trundle across the dusty landscape. The goblin city of Ratchet, full of clanging coins, shining lights and debauchery, sprawls on the Barrens' eastern coast.",
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_barrens_01",
+		["icon"] = 236717,
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -51,7 +51,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_RATCHET, {	-- Ratchet
-					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
+					["icon"] = 133784,
 					["OnTooltip"] = [[_.OnTooltipDB.ForRatchet]],
 					["maps"] = { TANARIS },
 				}),
@@ -2542,7 +2542,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Speak to Grizzby
 					readable = "Speak to Grizzby",
-					icon = "Interface\\CURSOR\\Speak",
+					icon = 131038,
 					text = {
 						en = "Speak to Grizzby",
 						es = "Habla con el Grizzby",
@@ -2563,7 +2563,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				})),
 				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Speak to N'ora
 					readable = "Speak to N'ora",
-					icon = "Interface\\CURSOR\\Speak",
+					icon = 131038,
 					text = {
 						en = "Speak to N'ora",
 						es = "Habla con el N'ora",

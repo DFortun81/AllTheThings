@@ -72,7 +72,7 @@ root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(TALADOR, {
 			["lore"] = "Talador is the sanctuary of the draenei people. At its heart rests Shattrath City, the great metropolis, and the spiritual well of Auchindoun, where the souls of departed draenei reside. Bathed in a perpetual autumn hue, its beautiful olemba forests, gardens and settlements are at risk of decimation by the Iron Horde and the Burning Legion.",
-			["icon"] = "Interface\\Icons\\achievement_zone_talador",
+			["icon"] = 1060985,
 			["maps"] = {
 				536,	-- Tomb of Lights
 				537,	-- Tomb of Souls
@@ -731,7 +731,7 @@ root(ROOTS.Zones, {
 					}),
 					q(33944, {	-- And the Elekk Too?!
 						["coord"] = { 30.9, 70.8, TALADOR },
-						["icon"] = "Interface\\Icons\\inv_pet_baby_elekk_blue",
+						["icon"] = 656597,
 					}),
 					q(33967, {	-- Antivenin
 						["provider"] = { "n", 78028 },	-- Soulbinder Tuulani
@@ -810,7 +810,7 @@ root(ROOTS.Zones, {
 					}),
 					q(33761, {	-- Barum's Notes
 						["provider"] = {"o",225778},	-- Barum's Notes
-						["icon"] = "Interface\\Icons\\trade_archaeology_draenei_tome",
+						["icon"] = 442732,
 						["coord"] = { 76.2, 42.7, TALADOR },
 						["sourceQuests"] = {
 							34566,	-- At Your Command
@@ -896,7 +896,7 @@ root(ROOTS.Zones, {
 					q(34091, {	-- Decommissioned Mission
 						["coord"] = { 61.7, 27.5, TALADOR },
 						["races"] = ALLIANCE_ONLY,
-						["icon"] = "Interface\\Icons\\ability_mount_shreddermount",
+						["icon"] = 894222,
 						["provider"] = {"o",225726},	-- Iron Shredder Decommission Orders
 						["sourceQuests"] = {
 							34947,	-- Shredder Manual
@@ -906,7 +906,7 @@ root(ROOTS.Zones, {
 					q(33720, {	-- Decommissioned Mission
 						["coord"] = { 59.9, 16.4, TALADOR },
 						["races"] = HORDE_ONLY,
-						["icon"] = "Interface\\Icons\\ability_mount_shreddermount",
+						["icon"] = 894222,
 						["provider"] = {"o",225726},	-- Iron Shredder Decommission Orders
 						["sourceQuests"] = {
 							34948,	-- Shredder Manual
@@ -1141,7 +1141,7 @@ root(ROOTS.Zones, {
 					}),
 					q(33988, {	-- Invasion of the Soul Eaters
 						["provider"] = {"o",227069},	-- Hastily Written Note
-						["icon"] = "Interface\\Icons\\trade_archaeology_silverscrollcase",
+						["icon"] = 454060,
 						["coord"] = { 49.1, 88.0, TALADOR },
 						["sourceQuests"] = {
 							34240,	-- Scheduled Pickup (Alliance)
@@ -1233,7 +1233,7 @@ root(ROOTS.Zones, {
 					}),
 					q(34465, {	-- Mystical Hat
 						["coord"] = { 45.2, 37.0, TALADOR },
-						["icon"] = "Interface\\Icons\\inv_helmet_65",
+						["icon"] = 133167,
 						["provider"] = {"o",229331},	-- A Mystical hat
 					}),
 					q(34013, {	-- Never Forget

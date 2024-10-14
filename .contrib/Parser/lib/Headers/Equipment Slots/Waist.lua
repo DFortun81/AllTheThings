@@ -1,6 +1,6 @@
 WAIST = createHeader({
 	readable = "Waist",
-	icon = "Interface\\Icons\\inv_belt_24",
+	icon = 132513,
 	text = {
 		en = [[~INVTYPE_WAIST]],
 	},

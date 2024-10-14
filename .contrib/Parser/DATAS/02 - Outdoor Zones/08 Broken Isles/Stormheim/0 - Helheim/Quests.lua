@@ -45,7 +45,7 @@ root(ROOTS.Zones, {
 					q(39857, {	-- The Eternal Nemesis
 						["sourceQuests"] = { 39848 },	-- A Desperate Bargain
 						["coord"] = { 34.2, 28.1, HELHEIM },
-						["icon"] = "Interface\\Icons\\spell_priest_finalprayer",
+						["icon"] = 537227,
 					}),
 					q(39849, {	-- To Light the Way
 						["sourceQuests"] = { 39857 },	-- The Eternal Nemesis

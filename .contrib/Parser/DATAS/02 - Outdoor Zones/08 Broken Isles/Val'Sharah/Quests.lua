@@ -415,7 +415,7 @@ root(ROOTS.Zones, m(BROKEN_ISLES, bubbleDown({ ["timeline"] = { ADDED_7_0_3_LAUN
 					["provider"] = { "o", 248534 },	-- The Tears of Elune
 					["sourceQuests"] = { 38743 },	-- The Fate of Val'Sharah
 					["coord"] = { 53.7, 55.8, VALSHARAH },
-					["icon"] = "Interface\\Icons\\inv_jewelcrafting_gem_42",
+					["icon"] = 237230,
 					["g"] = {
 						i(130001),	-- Shaladrassil Cuirass
 						i(129993),	-- Shaladrassil Tunic

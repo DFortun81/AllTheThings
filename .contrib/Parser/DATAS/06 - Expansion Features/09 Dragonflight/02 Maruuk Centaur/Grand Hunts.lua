@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 GRAND_HUNTS = createHeader({
 	readable = "Grand Hunts",
-	icon = "Interface\\Icons\\ability_evoker_masterygiantkiller",
+	icon = 4622465,
 	text = {
 		en = "Grand Hunts",
 		fr = "Grandes Chasses",

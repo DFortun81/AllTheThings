@@ -5,7 +5,7 @@ root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(ICECROWN, {
 			["lore"] = "Icecrown is a zone intended for level 25+ players to quest in, as well as return to at max level for the Argent Tournament, a daily quest hub that has many vanity rewards. Icecrown, composed literally of solid ice, is home to the Frozen Throne and Icecrown Citadel. The Lich King's presence can be felt across the zone, with the Argent Crusade and Ebon Blade battling all sorts of Scourge horrors. There are also quest chains covering the Scarlet Onslaught's final outpost, as well as the presence of the corrupted Vrykul.",
-			["icon"] = "Interface\\Icons\\achievement_zone_icecrown_01",
+			["icon"] = 236793,
 			["maps"] = { 170 },	-- Hrothgar's Landing
 			["groups"] = {
 				n(ACHIEVEMENTS, {

@@ -31,11 +31,11 @@ local SABRIEL = n(168147, {	-- Sabriel the Bonecleaver
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\Inv_misc_sigil_maldraxxus01",
+			["icon"] = 3641396,
 			["g"] = {
 				n(ANIMA_CONDUCTOR, {
-					["icon"] = "Interface\\Icons\\Sanctum_features_animadiversion_maldraxxus",
-					["g"] = sharedData({ ["icon"] = "Interface\\Icons\\Sanctum_features_animadiversion_maldraxxus" }, {
+					["icon"] = 3854015,
+					["g"] = sharedData({ ["icon"] = 3854015 }, {
 						n(REWARDS, {
 							["description"] = "Every Activity within Anima Conductor Rewards this.",
 							["g"] = {

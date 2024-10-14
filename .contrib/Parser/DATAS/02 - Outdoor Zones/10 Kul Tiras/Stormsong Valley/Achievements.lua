@@ -109,7 +109,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				-- }),
 				o(293350, {	-- Carved Wooden Chest
 					["questID"] = 52429,
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["coord"] = { 44.44, 73.53, STORMSONG_VALLEY },
 					["g"] = {
 						i(162000),	-- Pig Nose
@@ -117,7 +117,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				o(293349, {	-- Discarded Lunchbox
 					["questID"] = 52326,
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["coord"] = { 58.2, 63.7, STORMSONG_VALLEY },
 					["g"] = {
 						i(160485),	-- An Unforgettable Luncheon
@@ -125,42 +125,42 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				}),
 				o(294174, {	-- Forgotten Chest
 					["questID"] = 52980,
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["coord"] = { 46.00, 30.69, STORMSONG_VALLEY },
 				}),
 				o(281494, {	-- Frosty Treasure Chest
 					["questID"] = 50526,
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["coord"] = { 48.96, 84.07, STORMSONG_VALLEY },
 				}),
 				o(284448, {	-- Hidden Scholar's Chest
 					["questID"] = 50937,
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["coord"] = { 59.9, 39.1, STORMSONG_VALLEY },
 				}),
 				o(280619, {	-- Old Ironbound Chest
 					["questID"] = 50089,
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["coord"] = { 42.8, 47.2, STORMSONG_VALLEY },
 				}),
 				o(279042, {	-- Smuggler's Stash
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["coord"] = { 58.6, 83.8, STORMSONG_VALLEY },
 					["questID"] = 49811,
 				}),
 				o(282153, {	-- Sunken Strongbox
 					["questID"] = 50734,
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["coord"] = { 67.22, 43.2, STORMSONG_VALLEY },
 				}),
 				o(294173, {	-- Venture Co. Supply Chest
 					["questID"] = 52976,
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["coord"] = { 36.69, 23.23, STORMSONG_VALLEY },
 				}),
 				o(289647, {	-- Weathered Treasure Chest
 					["questID"] = 51449,
-					["icon"] = "Interface\\Icons\\garrison_bronzechest",
+					["icon"] = 1001977,
 					["coord"] = { 66.92, 12.03, STORMSONG_VALLEY },
 				}),
 			}),

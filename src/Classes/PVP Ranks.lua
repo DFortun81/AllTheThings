@@ -25,7 +25,7 @@ local Create, Class = app.CreateClass("PVPRank", "pvpRankID", {
 		return _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. (t.inverseR or 0)];
 	end,
 	["icon"] = function(t)
-		return ("%s%02d"):format("Interface\\PvPRankBadges\\PvPRank", t.pvpRankID);
+		return ("%s%02d"):format("interface/PvPRankBadges\\PvPRank", t.pvpRankID);
 	end,
 	["title"] = function(t)
 		return RANK .. " " .. t.pvpRankID .. "`" ..  _G["PVP_RANK_" .. (t.pvpRankID + 4) .. "_" .. ((t.inverseR == 1 and 0 or 1))] .. " (" .. (t.r == ALLIANCE_FACTION_ID and FACTION_HORDE or FACTION_ALLIANCE) .. ")";

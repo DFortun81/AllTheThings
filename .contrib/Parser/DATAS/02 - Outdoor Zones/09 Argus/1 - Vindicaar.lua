@@ -4,7 +4,7 @@
 local VEILED_ARGUNITE = 1508;
 root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 	m(THE_VINDICAAR_ANTORAN_WASTES_UPPER, {
-		["icon"] = "Interface\\Icons\\inv_lightforgedmechsuit",
+		["icon"] = 1586383,
 		["lore"] = "For untold millennia, the Army of the Light waged war against the Burning Legion throughout the Twisting Nether. The draenei most committed to their long crusade would undergo a ritual to become Lightforged, infusing their bodies with the very essence of the Holy Light. After finally achieving victory on Argus, the Lightforged draenei have undertaken a new mission: protecting Azeroth from rising threats and helping the Alliance push back against Horde aggression.",
 		["maps"] = {
 			THE_VINDICAAR_KROKUUN_UPPER,

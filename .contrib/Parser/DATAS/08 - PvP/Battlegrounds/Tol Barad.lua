@@ -20,7 +20,7 @@ end
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_0_3_LAUNCH } }, {
 	m(TOL_BARAD, {
 		["description"] = "Tol Barad is a world PvP zone very similar to Wintergrasp. A battle starts on even intervals of time, and the winner of the match gains access to the Baradin Hold raid, as well as a number of special daily quests that grant reputation and currency. In addition to this, both winner and loser gain access to the standard quests in the zone.",
-		["icon"] = "Interface\\Icons\\achievement_bg_winwsg",
+		["icon"] = 236396,
 		-- #if ANYCLASSIC
 		["maps"] = { 244 },
 		-- #endif

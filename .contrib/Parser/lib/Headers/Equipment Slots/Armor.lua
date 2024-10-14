@@ -1,9 +1,9 @@
 ARMOR = createHeader({
 	readable = "Armor",
 	-- #if AFTER WOD
-	icon = "Interface\\Icons\\garrison_purplearmor",
+	icon = 1030912,
 	-- #else
-	icon = "Interface\\Icons\\INV_Chest_Plate03",
+	icon = 132738,
 	-- #endif
 	text = {
 		en = [[~ARMOR]],

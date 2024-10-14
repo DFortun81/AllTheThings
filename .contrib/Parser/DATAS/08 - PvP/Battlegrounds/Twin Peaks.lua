@@ -3,7 +3,7 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(206, {	-- Twin Peaks
-		["icon"] = "Interface\\Icons\\spell_nature_earthshock",
+		["icon"] = 136026,
 		["timeline"] = { ADDED_4_0_3 },
 		["g"] = {
 			n(ACHIEVEMENTS, {

@@ -6,7 +6,7 @@ root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(KRASARANG_WILDS, {
 			["lore"] = "The Krasarang Wilds along Pandaria's southern coast conceal many ancient secrets of a lost dynasty that have drawn the attention of prophecy-seekers among the Alliance and Horde. The Wilds are also home to the vicious, domineering mogu, and a more insidious danger still: the Sha of Despair is believed to have escaped from its bindings in the Temple of the Red Crane, and stifling gloom has begun to blanket the land in its path.",
-			["icon"] = "Interface\\Icons\\achievement_zone_krasarangwilds",
+			["icon"] = 623769,
 			["maps"] = {
 				419,	-- Ruins of Ogudei, Alliance Excavation
 				420,	-- Ruins of Ogudei (the map is weird here, and this ID only shows up when you're headed towards the objective for Ogudei's Lieutenants.  for the rest of this floor, when you hit M it registers you on the incorrect level, and displays the wrong floor on the map)
@@ -83,7 +83,7 @@ root(ROOTS.Zones, {
 				n(FACTIONS, {
 					faction(FACTION_DOMINANCE_OFFENSIVE, {	-- Dominance Offensive
 						["races"] = HORDE_ONLY,
-						["icon"] = "Interface\\Icons\\achievement_general_hordeslayer",
+						["icon"] = 464078,
 						["g"] = {
 							n(ACHIEVEMENTS, {
 								ach(8206, {		-- Dominance Offensive
@@ -831,7 +831,7 @@ root(ROOTS.Zones, {
 					}),
 					faction(FACTION_OPERATION_SHIELDWALL, {	-- Operation: Shieldwall
 						["races"] = ALLIANCE_ONLY,
-						["icon"] = "Interface\\Icons\\achievement_general_allianceslayer",
+						["icon"] = 464076,
 						["g"] = {
 							n(ACHIEVEMENTS, {
 								ach(7932, {	-- I'm In Your Base, Killing Your Dudes
@@ -1541,7 +1541,7 @@ root(ROOTS.Zones, {
 					}),
 					faction(FACTION_THE_ANGLERS, {	-- The Anglers
 						["requireSkill"] = FISHING,	-- doesn't seem like you can even get access to the faction on a non-fisher.  flew/walked all around the area on a character with no professions and nothing, and as soon as i flew up on a character with fishing the faction unlocked and all the NPCs appeared
-						["icon"] = "Interface\\Icons\\achievement_faction_anglers",
+						["icon"] = 643874,
 						["g"] = {
 							n(ACHIEVEMENTS, {
 								ach(6547),		-- The Anglers
@@ -1697,7 +1697,7 @@ root(ROOTS.Zones, {
 					faction(FACTION_THE_AUGUST_CELESTIALS, {	-- The August Celestials
 						["description"] = "Each day, the August Celestials require your aid at one of their temples.  Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",
 						["collectible"] = false,
-						["icon"] = "Interface\\Icons\\achievement_faction_celestials",
+						["icon"] = 645203,
 						["g"] = {
 							n(ACHIEVEMENTS, {
 								ach(7287, {	-- Champion of Chi-Ji (Cradle of Chi-Ji)
@@ -2866,7 +2866,7 @@ root(ROOTS.Zones, {
 							["collectible"] = false,
 							["repeatable"] = true,
 						--	["questID"] = 31664,	-- An Angler's Quest
-							["icon"] = "Interface\\Icons\\inv_misc_book_11",
+							["icon"] = 133743,
 						}),
 					}),
 					n(50352, {	-- Qu'nas

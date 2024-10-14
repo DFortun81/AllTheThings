@@ -40,11 +40,11 @@ local FORGEMASTER_MADALAV = n(159496, {	-- Forgemaster Madalav
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\Inv_misc_sigil_revendreth01",
+			["icon"] = 3641397,
 			["g"] = {
 				n(ANIMA_CONDUCTOR, {
-					["icon"] = "Interface\\Icons\\Sanctum_features_animadiversion_revendreth",
-					["g"] = sharedData({ ["icon"] = "Interface\\Icons\\Sanctum_features_animadiversion_revendreth" }, {
+					["icon"] = 3854016,
+					["g"] = sharedData({ ["icon"] = 3854016 }, {
 						n(REWARDS, {
 							["description"] = "Every Activity within Anima Conductor Rewards this.",
 							["g"] = {

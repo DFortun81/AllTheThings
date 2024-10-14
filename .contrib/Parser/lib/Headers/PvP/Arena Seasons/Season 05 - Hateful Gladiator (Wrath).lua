@@ -1,6 +1,6 @@
 PRE_SEASON_HATEFUL = createHeader({
 	readable = "Hateful Gladiator",
-	icon = "Interface\\Icons\\ability_mount_redfrostwyrm_01",
+	icon = 303868,
 	text = {
 		en = "Hateful Gladiator",
 		es = "Gladiador Odioso",

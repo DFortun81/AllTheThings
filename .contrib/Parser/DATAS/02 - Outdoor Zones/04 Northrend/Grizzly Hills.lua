@@ -5,7 +5,7 @@ root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(GRIZZLY_HILLS, {
 			["lore"] = "Grizzly Hills is a stunning but sinister pine forest in eastern Northrend. Players investigate Arugal and the curse of the Worgen, PvP for control of the Blackriver Logging Camp and Venture Bay, escort Harrison Jones and the rest of the Zul'Aman crew through troll ruins, and heal Vordrassil, a defective World Tree. Grizzly Hills is home to trappers, ice trolls, iron dwarves, and furbolgs.",
-			["icon"] = "Interface\\Icons\\achievement_zone_grizzlyhills_01",
+			["icon"] = 236766,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					explorationAch(1266),	-- Explore Grizzly Hills

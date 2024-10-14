@@ -5,7 +5,7 @@ local RADIANT_REMNANT = 206350;
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	n(HALLOWFALL_ARATHI, {
 		header(HEADERS.Quest, 76586, bubbleDownSelf({ ["minReputation"] = { FACTION_HALLOWFALL_ARATHI, 3 } }, {	-- Spreading The Light
-			["icon"] = "Interface\\Icons\\spell_holy_holynova",
+			["icon"] = 135922,
 			["coord"] = { 65.4, 32.2, HALLOWFALL },
 			["g"] = {
 				n(ACHIEVEMENTS, {

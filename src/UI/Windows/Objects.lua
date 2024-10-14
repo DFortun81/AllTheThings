@@ -162,7 +162,7 @@ app:CreateWindow("Objects", {
 			local g = {
 				{	-- Check Icons
 					text = "Check Icons",
-					icon = "Interface\\Icons\\INV_Wand_06",
+					icon = 135468,
 					description = "Click this row to toggle icon checking",
 					collectible = true,
 					visible = true,
@@ -181,7 +181,7 @@ app:CreateWindow("Objects", {
 				},
 				{	-- Check Models
 					text = "Check Models",
-					icon = "Interface\\Icons\\INV_Wand_06",
+					icon = 135468,
 					description = "Click this row to toggle model checking",
 					collectible = true,
 					visible = true,

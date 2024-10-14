@@ -3,7 +3,7 @@
 --------------------------------------------
 THE_SCOURGE_INVASION = createHeader({
 	readable = "The Scourge Invasion",
-	icon = "Interface\\Icons\\inv_stone_02",
+	icon = 135228,
 	text = {
 		en = "The Scourge Invasion",
 		ru = "Вторжение Плети",

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 local ATALAI_DEFENDERS = createHeader({
 	readable = "Atal'ai Defenders",
-	icon = "Interface\\Icons\\Inv_misc_head_troll_01",
+	icon = 134177,
 	text = {
 		en = "Atal'ai Defenders",
 		fr = "Défenseurs Atal'ai",

@@ -9,7 +9,7 @@ app:CreateWindow("Quests", {
 		if not self.data then
 			self.data = {
 				text = "Quests",
-				icon = "Interface\\GossipFrame\\AvailableQuestIcon",
+				icon = 132049,
 				description = "This window shows you all of the quests (based on filters) that you can complete. Go get 'em!\n\nNOTE: This window will not include quest items used to complete quests, but will show all of the associated quest rewards.",
 				visible = true, 
 				expanded = true,

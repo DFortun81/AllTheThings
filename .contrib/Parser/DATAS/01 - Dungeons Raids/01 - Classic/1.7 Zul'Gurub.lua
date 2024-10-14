@@ -28,7 +28,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_FOUR,
 			}),
 			n(FACTIONS, {
 				faction(FACTION_ZANDALAR_TRIBE, {	-- Zandalar Tribe
-					["icon"] = "Interface\\Icons\\RACIAL_TROLL_BERSERK",
+					["icon"] = 135727,
 					["maps"] = { STRANGLETHORN_VALE },
 				}),
 			}),

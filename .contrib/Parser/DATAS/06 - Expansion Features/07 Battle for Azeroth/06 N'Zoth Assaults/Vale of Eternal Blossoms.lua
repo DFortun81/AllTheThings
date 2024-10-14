@@ -4,7 +4,7 @@
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	m(NZOTH_ASSAULT_VALE_OF_ETERNAL_BLOSSOMS, {	-- Vale of Eternal Blossoms
-		["icon"] = "Interface\\Icons\\INV_FACTION_83_RAJANI",
+		["icon"] = 3196265,
 		["lvl"] = { 50 },
 		["maps"] = {
 			1579,	-- Vale of Eternal Blossoms - Pools Of Power - underground area

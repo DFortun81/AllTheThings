@@ -3,7 +3,7 @@
 -----------------------------------------------------
 MISCELLANEOUS_PROMOTIONS = createHeader({
 	readable = "Miscellaneous",
-	icon = "Interface\\Icons\\Spell_Misc_Drink",
+	icon = 135999,
 	text = {
 		en = [[~ AUCTION_CATEGORY_MISCELLANEOUS]],
 	},

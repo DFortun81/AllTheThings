@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						{ 30.1, 39.7, NAZMIR },
 						{ 47.5, 35.1, NAZMIR },
 					},
-					["icon"] = "Interface\\Icons\\inv_misc_herb_whiptail",
+					["icon"] = 459041,
 				}),
 				crit(40543, {	-- Bwonsamdi's Tears
 					["provider"] = {"o",291238},	-- Bwonsamdi's Tears
@@ -25,7 +25,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						{ 55.6, 74.7, NAZMIR },
 						{ 46.1, 71.9, NAZMIR },
 					},
-					["icon"] = "Interface\\Icons\\inv_misc_herb_riverbud",
+					["icon"] = 1785788,
 				}),
 				crit(40544, {	-- Gnarl Root
 					["provider"] = {"o",291241},	-- Gnarl Root
@@ -34,7 +34,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						{ 35.2, 66.4, NAZMIR },
 						{ 48.7, 74.9, NAZMIR },
 					},
-					["icon"] = "Interface\\Icons\\inv_misc_herb_07",
+					["icon"] = 134187,
 				}),
 				crit(40546, {	-- Sapphire Amaraina
 					["provider"] = {"o",292812},	-- Sapphire Amaraina
@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						{ 73.7, 39.7, NAZMIR },
 						{ 81.9, 55.9, NAZMIR },
 					},
-					["icon"] = "Interface\\Icons\\inv_misc_herb_taladororchid",
+					["icon"] = 959805,
 				}),
 				crit(40549, {	-- Krag'wa's Ire
 					["provider"] = {"o",292823},	-- Krag'wa's Ire
@@ -50,7 +50,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						{ 52.6, 35.8, NAZMIR },
 						{ 50.4, 39.7, NAZMIR },
 					},
-					["icon"] = "Interface\\Icons\\inv_misc_herb_talandrasrose_petal",
+					["icon"] = 960694,
 				}),
 				crit(40550, {	-- Stonebloom
 					["provider"] = {"o",292825},	-- Stonebloom
@@ -60,7 +60,7 @@ root(ROOTS.Zones, m(ZANDALAR, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 						{ 76.3, 61.0, NAZMIR },
 						{ 49.4, 48.9, NAZMIR },
 					},
-					["icon"] = "Interface\\Icons\\INV_Misc_SpineLeaf _01",
+					["icon"] = 134439,
 				}),
 			}),
 			explorationAch(12561),	-- Explore Nazmir

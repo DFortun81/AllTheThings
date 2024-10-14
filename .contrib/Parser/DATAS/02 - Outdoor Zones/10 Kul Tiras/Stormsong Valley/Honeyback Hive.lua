@@ -7,7 +7,7 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_2_5 } }, {
 		n(FACTIONS, {
 			faction(FACTION_HONEYBACK_HIVE, {	-- Honeyback Hive
 				["races"] = ALLIANCE_ONLY,
-				["icon"] = "Interface\\Icons\\inv_cooking_80_choralhoney3",
+				["icon"] = 3066348,
 				-- Possible to use HQT's to track unlock
 				["description"] = "How to unlock the faction:\n\nStep1: Own either a Seabreeze Bumblebee or Bumbles.\nStep2: Go to Barry in Stormsong Valley at 69.64 with your Bee summoned.\nStep3: Follow the green clouds to 62.26 & watch the interaction between Barry and the Honeyback Hivemother.\nStep4: Loot the Thin Jelly just outside the Cave at 63.28, try to give it to the Hivemother & then talk to Barry again.\nStep5: Follow Barry inside, talk to him for the million'th time & then feed your first Jelly to the Nascent Harvester, which is in the honey pool in front of him. This gives you your first 20 reputation, allowing you to now see Jelly Deposits and earn reputation.\n\nAll Coordinates can be placed via rightclicking the Honeyback Hive Header.",
 				["coords"] = {

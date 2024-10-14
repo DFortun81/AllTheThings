@@ -1,6 +1,6 @@
 MAY = createHeader({
 	readable = "May",
-	icon = "Interface\\Icons\\inv_misc_flower_01",
+	icon = 133938,
 	text = {
 		en = [[~MONTH_MAY]],
 	},

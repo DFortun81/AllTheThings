@@ -5,11 +5,11 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\Inv_misc_sigil_maldraxxus01",
+			["icon"] = 3641396,
 			["g"] = {
 				n(COMMAND_TABLE, {
 					n(TIER_ONE, {
-						["icon"] = "Interface\\Icons\\Sanctum_features_missiontable",
+						["icon"] = 3675495,
 						["g"] = {
 							n(FOLLOWERS, bubbleDownSelf({
 								["collectible"] = false,

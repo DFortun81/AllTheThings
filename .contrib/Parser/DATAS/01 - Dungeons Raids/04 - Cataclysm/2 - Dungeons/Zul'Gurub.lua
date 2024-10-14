@@ -3,7 +3,7 @@
 -----------------------------------------------------
 CACHE_OF_MADNESS = createHeader({
 	readable = "Cache of Madness",
-	icon = "Interface\\Icons\\TRADE_ARCHAEOLOGY",
+	icon = 441139,
 	text = {
 		en = "Cache of Madness",
 		fr = "L'antre de la Folie",

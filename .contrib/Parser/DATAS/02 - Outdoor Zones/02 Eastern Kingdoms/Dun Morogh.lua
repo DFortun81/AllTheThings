@@ -13,7 +13,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #endif
 		},
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_dunmorogh",
+		["icon"] = 236755,
 		-- #endif
 		["groups"] = {
 			m(COLDRIDGE_VALLEY, {

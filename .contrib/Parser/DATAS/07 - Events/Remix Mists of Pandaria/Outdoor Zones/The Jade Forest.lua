@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(THE_JADE_FOREST, {
-		["icon"] = "Interface\\Icons\\achievement_zone_jadeforest",
+		["icon"] = 617824,
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(19882, {	-- Campaign: The Jade Forest [A]

@@ -67,12 +67,12 @@ if GetLootMethod and SetLootMethod then
 		end
 	end
 	local lootMethodIcons = {
-		personalloot = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
-		freeforall = "Interface\\Icons\\Ability_Rogue_Sprint",
-		group = "Interface\\Icons\\INV_Misc_Coin_01",
-		master = "Interface\\Icons\\Ability_Warrior_BattleShout",
-		needbeforegreed = "Interface\\Icons\\Ability_Rogue_Eviscerate",
-		roundrobin = "Interface\\Icons\\INV_Misc_Coin_01",
+		personalloot = 134153,
+		freeforall = 132307,
+		group = 133784,
+		master = 132333,
+		needbeforegreed = 132292,
+		roundrobin = 133784,
 	};
 	local setLootMethod = function(self, button)
 		if IsInGroup() then
@@ -107,12 +107,12 @@ end
 -- Loot Threshold
 if GetLootThreshold and SetLootThreshold then
 	local lootThresholdIcons = {
-		"Interface\\Icons\\inv_sword_04",	-- Common
-		"Interface\\Icons\\inv_sword_24",	-- Uncommon
-		"Interface\\Icons\\inv_sword_42",	-- Rare
-		"Interface\\Icons\\inv_sword_62",	-- Epic
-		"Interface\\Icons\\inv_hammer_unique_sulfuras",	-- Legendary
-		[0] = "Interface\\Icons\\inv_sword_04",	-- Poor
+		135274,	-- Common
+		135325,	-- Uncommon
+		135352,	-- Rare
+		135372,	-- Epic
+		133066,	-- Legendary
+		[0] = 135274,	-- Poor
 	};
 	local setLootThreshold = function(self, button)
 		if IsInGroup() then
@@ -196,7 +196,7 @@ app:CreateWindow("RaidAssistant", {
 			local options = {
 				{	-- Create a Group
 					text = "Create a Group",
-					icon = "Interface\\Icons\\Ability_Vanish",
+					icon = 132331,
 					description = "Click here to attempt to create a group.\n\nNOTE: This will invite a fake character and you can use this to force teleport out of dungeons when used in conjection with Leave Group option.",
 					priority = 20,
 					OnClick = function(row, button)
@@ -211,7 +211,7 @@ app:CreateWindow("RaidAssistant", {
 				},
 				{	-- Create a Raid
 					text = "Create a Raid",
-					icon = "Interface\\Icons\\Ability_Vanish",
+					icon = 132331,
 					description = "Click here to attempt to create a raid group.\n\nNOTE: This will invite a fake character and you can use this to force enter a raid without actually needing to be in a raid group. You need to run into the instance the moment you see 'Party converted to Raid'. It may take a couple of attempts.",
 					priority = 20,
 					OnClick = function(row, button)
@@ -227,7 +227,7 @@ app:CreateWindow("RaidAssistant", {
 				},
 				{	-- Leave Group
 					text = "Leave Group",
-					icon = "Interface\\Icons\\Ability_Vanish",
+					icon = 132331,
 					description = "Click here to leave the group. In most instances, this will also port you to the nearest graveyard after 60 seconds or so.\n\nNOTE: Only works if you're in a group or if the game thinks you're in a group.",
 					priority = 19,
 					OnClick = function(row, button)
@@ -536,7 +536,7 @@ app:CreateWindow("RaidAssistant", {
 				-- Allow the user to change the Loot Method
 				local lootmethod = {
 					text = LOOT_METHOD,
-					icon = "Interface\\Icons\\INV_Misc_Coin_01",
+					icon = 133784,
 					description = "This setting allows you to customize what kind of loot will drop and how much.\n\nThis only works while in a party - If you're by yourself, you can create a Premade Group (just don't invite anyone) and then change it.\n\nClick this row to go back to the Raid Assistant.",
 					expanded = true,
 					back = 1,
@@ -580,7 +580,7 @@ app:CreateWindow("RaidAssistant", {
 				-- Allow the user to select a Loot Master
 				local lootmasters = {
 					text = MASTER_LOOTER,
-					icon = "Interface\\Icons\\INV_Misc_Coin_01",
+					icon = 133784,
 					description = "This setting allows you to select a new Master Looter.",
 					expanded = true,
 					members = {},
@@ -672,7 +672,7 @@ app:CreateWindow("RaidAssistant", {
 			if app.CreateLootThreshold then
 				local lootthreshold = {
 					text = "Loot Threshold",
-					icon = "Interface\\Icons\\INV_Misc_Coin_01",
+					icon = 133784,
 					description = "Select a new loot threshold.",
 					expanded = true,
 					maximum = 5,
@@ -726,7 +726,7 @@ app:CreateWindow("RaidAssistant", {
 				if GetLootSpecialization and SetLootSpecialization then
 					local lootspecialization = {
 						text = "Loot Specialization",
-						icon = "Interface\\Icons\\INV_7XP_Inscription_TalentTome02",
+						icon = 1499566,
 						description = "In Personal Loot dungeons, raids, and outdoor encounters, this setting will dictate which items are available for you.\n\nClick this row to go back to the Raid Assistant.",
 						visible = true,
 						back = 1,
@@ -742,7 +742,7 @@ app:CreateWindow("RaidAssistant", {
 								if numSpecializations and numSpecializations > 0 then
 									tinsert(data.g, {
 										text = "Current Specialization",
-										icon = "Interface\\Icons\\INV_7XP_Inscription_TalentTome01",
+										icon = 1495827,
 										description = "If you switch your talents, your loot specialization changes with you.",
 										OnClick = function(row, button)
 											SetLootSpecialization(0);
@@ -829,7 +829,7 @@ app:CreateWindow("RaidAssistant", {
 						outDescription = "Click here to teleport out of your current instance if using LFG.",
 						toText = "Teleport to Dungeon",
 						toDescription = "Click here to teleport to the instance if using LFG.",
-						icon = "Interface\\Icons\\Spell_Shadow_Teleport",
+						icon = 136222,
 						priority = 17,
 						OnClick = function(row, button)
 							LFGTeleport(not not IsInLFGDungeon());
@@ -858,7 +858,7 @@ app:CreateWindow("RaidAssistant", {
 				if C_LFGList_RemoveListing then
 					tinsert(options, {
 						text = "Delist Group",
-						icon = "Interface\\Icons\\Ability_Vehicle_LaunchPlayer",
+						icon = 252175,
 						description = "Click here to delist the group. If you are by yourself, it will softly leave the group without porting you out of any instance you are in.",
 						priority = 18,
 						OnClick = function(row, button)

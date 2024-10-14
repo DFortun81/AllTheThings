@@ -3,7 +3,7 @@
 ---------------------------------------------------
 TIME_RIFTS = createHeader({
 	readable = "Time Rift",
-	icon = "Interface\\Icons\\inv_belt_armor_waistoftime_d_01",
+	icon = 2026009,
 	text = {
 		en = WOWAPI_GetSpellName(408633),
 	},

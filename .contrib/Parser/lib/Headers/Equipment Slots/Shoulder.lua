@@ -2,7 +2,7 @@ SHOULDER = createHeader({
 	readable = "Shoulder",
 	constant = "SHOULDER",
 	npcfill = true,
-	icon = "Interface\\Icons\\inv_shoulder_05",
+	icon = 135036,
 	text = {
 		en = [[~INVTYPE_SHOULDER]],
 	},

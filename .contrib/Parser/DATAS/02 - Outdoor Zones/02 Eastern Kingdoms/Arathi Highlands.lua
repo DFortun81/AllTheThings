@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(ARATHI_HIGHLANDS, {
 		["lore"] = "The Arathi Highlands are located in southeastern Lordaeron, east of Hillsbrad Foothills and south of the Hinterlands. It is a flat but craggy region that has traditionally been the home of the humans of Arathor, who gave the region its name. The main hubs of activity are now Refuge Pointe and Hammerfall, which houses bases for Alliance and Horde, respectively. The large city of Stromgarde lies in ruins to the southwest, and pockets of Syndicate resistance dot the land. The Boulderfist Orges also infest Arathor, and prove to be a constant threat to the Alliance, Horde, and Syndicate factions vying for supremacy.",
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_arathihighlands_01",
+		["icon"] = 236712,
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {

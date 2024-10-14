@@ -415,7 +415,7 @@ root(ROOTS.Zones, {
 	m(NORTHREND, applyclassicphase(WRATH_PHASE_ONE, {
 		m(WINTERGRASP, {
 			["lore"] = "Wintergrasp is a World PvP zone, similar to Tol Barad. It emphasizes siege weapon warfare--walls and towers are destroyed not by player damage, but by siege damage. Your siege engine amount is controlled by which workshops in the zone your faction owns.",
-			["icon"] = "Interface\\Icons\\Spell_frost_chillingblast",
+			["icon"] = 135836,
 			["groups"] = {
 				prof(FISHING, {
 					i(45904),	-- Terrorfish

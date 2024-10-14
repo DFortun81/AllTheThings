@@ -5,7 +5,7 @@
 root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 	m(TOL_DAGOR, {
 		["lore"] = "A prison located on an island east of Tiragarde Sound.  Before the Ashvane Trading Company bought it, Tol Dagor used to be a real prison — now it is Priscilla Ashvane's own fortress, with scumbags on both sides of the bar.",
-		["icon"] = "Interface\\Icons\\ability_demonhunter_imprison",
+		["icon"] = 1380368,
 		["groups"] = {
 			n(FLIGHT_PATHS, {
 				fp(2096, {	-- Tol Dagor, Tiragarde Sound [Alliance]

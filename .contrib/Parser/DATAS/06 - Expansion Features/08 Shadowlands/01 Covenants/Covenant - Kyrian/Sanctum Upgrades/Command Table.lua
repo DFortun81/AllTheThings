@@ -4,11 +4,11 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\Inv_misc_sigil_bastion01",
+			["icon"] = 3641395,
 			["g"] = {
 				n(COMMAND_TABLE, {
 					n(TIER_ONE, {
-						["icon"] = "Interface\\Icons\\Sanctum_features_missiontable",
+						["icon"] = 3675495,
 						["g"] = {
 							n(FOLLOWERS, bubbleDownSelf({
 								["u"] = TRAINING,	-- Temporary troops

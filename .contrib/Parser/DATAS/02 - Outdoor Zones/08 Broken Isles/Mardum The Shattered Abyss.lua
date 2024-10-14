@@ -7,7 +7,7 @@ root(ROOTS.Zones, {
 		m(672, {	-- Mardum, the Shattered Abyss
 			["lore"] = "Mardum, the Shattered Abyss, colloquially known simply as Mardum and originally called the Plane of Banishment, is a prison world that was created by Sargeras prior to his becoming the Fallen Titan to hold all the demons he killed in the Great Dark Beyond. After his decision to destroy all world-souls in the universe, Sargeras shattered Mardum to free the demons that would become his Burning Legion. This is the starting scenario for Demon Hunters.",
 			["classes"] = { DEMONHUNTER },
-			["icon"] = "Interface\\Icons\\Achievement_boss_illidan",	-- Illidan
+			["icon"] = 236415,	-- Illidan
 			["maps"] = {
 				673,	-- Cryptic Hollow
 				674,	-- Soul Engine
@@ -221,17 +221,17 @@ root(ROOTS.Zones, {
 					o(246309, {	-- Small Treasure Chest
 						["questID"] = 40797,
 						["coord"] = { 23.1, 53.9, 672 },
-						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+						["icon"] = 308482,	-- Grey Treasure Chest
 					}),
 					o(244689, {	-- Small Treasure Chest
 						["questID"] = 39970,
 						["coord"] = { 34.9, 70.2, 672 },
-						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+						["icon"] = 308482,	-- Grey Treasure Chest
 					}),
 					o(244691, {	-- Small Treasure Chest
 						["questID"] = 39971,	-- Inquisitor's Menacing Eye
 						["coord"] = { 45.0, 77.9, 672 },
-						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+						["icon"] = 308482,	-- Grey Treasure Chest
 						["g"] = {
 							i(129192),	-- Inquisitor's Menacing Eye
 						},
@@ -239,17 +239,17 @@ root(ROOTS.Zones, {
 					o(245316, {	-- Small Treasure Chest
 						["questID"] = 40223,
 						["coord"] = { 42.2, 49.2, 672 },
-						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+						["icon"] = 308482,	-- Grey Treasure Chest
 					}),
 					o(246249, {	-- Small Treasure Chest
 						["questID"] = 40759,
 						["coord"] = { 41.8, 37.6, 672 },
-						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+						["icon"] = 308482,	-- Grey Treasure Chest
 					}),
 					o(246147, {	-- Small Treasure Chest
 						["questID"] = 40743,
 						["coord"] = { 51.2, 50.8, 672 },
-						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+						["icon"] = 308482,	-- Grey Treasure Chest
 					}),
 					o(244694, {	-- Small Treasure Chest
 						["questID"] = 39973,	-- Mardum Lord Signet
@@ -257,7 +257,7 @@ root(ROOTS.Zones, {
 							{ 64.1, 58.4, 672 },
 							{ 54.9, 58.7, 673 },
 						},
-						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+						["icon"] = 308482,	-- Grey Treasure Chest
 						["g"] = {
 							i(128946),	-- Mardum Lord Signet
 						},
@@ -268,17 +268,17 @@ root(ROOTS.Zones, {
 							{ 48.8, 15.6, 673 },
 							{ 63.7, 54.3, 672 },
 						},
-						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+						["icon"] = 308482,	-- Grey Treasure Chest
 					}),
 					o(244698, {	-- Small Treasure Chest
 						["questID"] = 39974,
 						["coord"] = { 66.9, 24.0, 672 },
-						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+						["icon"] = 308482,	-- Grey Treasure Chest
 					}),
 					o(245345, {	-- Small Treasure Chest
 						["questID"] = 40338,
 						["coord"] = { 76.3, 39.1, 672 },
-						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+						["icon"] = 308482,	-- Grey Treasure Chest
 					}),
 					o(246269, {	-- Small Treasure Chest
 						["questID"] = 40772,
@@ -286,18 +286,18 @@ root(ROOTS.Zones, {
 							{ 63.0, 21.0, 672 },
 							{ 50.2, 49.8, 675 },
 						},
-						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+						["icon"] = 308482,	-- Grey Treasure Chest
 					}),
 					o(244701, {	-- Small Treasure Chest
 						["questID"] = 39977,
 						["description"] = "Cave entrance is located at 71.0 54.2.",
 						["coord"] = { 74.3, 54.5, 672 },
-						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",
+						["icon"] = 308482,
 					}),
 					o(244699, {	-- Small Treasure Chest
 						["questID"] = 39975,	-- Vile Stalkerskin Pouch [28 Slot Bag]
 						["coord"] = { 73.5, 48.9, 672 },
-						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+						["icon"] = 308482,	-- Grey Treasure Chest
 						["g"] = {
 							i(129195),	-- Vile Stalkerskin Pouch
 						},
@@ -305,21 +305,21 @@ root(ROOTS.Zones, {
 					o(245996, {	-- Small Treasure Chest
 						["questID"] = 40274,
 						["coord"] = { 78.7, 50.5, 672 },
-						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+						["icon"] = 308482,	-- Grey Treasure Chest
 					}),
 					o(246353, {	-- Small Treasure Chest
 						["questID"] = 40820,	-- Legion Healthstone
 						["coord"] = { 82.1, 50.4, 672 },
-						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+						["icon"] = 308482,	-- Grey Treasure Chest
 					}),
 					o(244700, {	-- Small Treasure Chest
 						["questID"] = 39976,
 						["coord"] = { 69.6, 42.3, 672 },
-						["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+						["icon"] = 308482,	-- Grey Treasure Chest
 					}),
 				}),
 				m(677,  {	-- Vault of the Wardens: Vault of Silence
-					["icon"] = "Interface\\Icons\\inv_pet_wardenowl",	-- Wardens Owl
+					["icon"] = 1387709,	-- Wardens Owl
 					["maps"] = {
 						678,	-- Second Floor
 						679,	-- Third Floor
@@ -495,42 +495,42 @@ root(ROOTS.Zones, {
 							o(246555, {	-- Small Treasure Chest
 								["questID"] = 40909,
 								["coord"] = { 58.7, 34.7, 677 },
-								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+								["icon"] = 308482,	-- Grey Treasure Chest
 							}),
 							o(246556, {	-- Small Treasure Chest
 								["questID"] = 40910,
 								["coord"] = { 47.3, 54.6, 677 },
-								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+								["icon"] = 308482,	-- Grey Treasure Chest
 							}),
 							o(246557, {	-- Small Treasure Chest
 								["questID"] = 40911,
 								["coord"] = { 32.1, 48.2, 678 },
-								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+								["icon"] = 308482,	-- Grey Treasure Chest
 							}),
 							o(246558, {	-- Small Treasure Chest
 								["questID"] = 40912,
 								["coord"] = { 41.4, 32.9, 678 },
-								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+								["icon"] = 308482,	-- Grey Treasure Chest
 							}),
 							o(246560, {	-- Small Treasure Chest
 								["questID"] = 40914,
 								["coord"] = { 41.5, 63.6, 678 },
-								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+								["icon"] = 308482,	-- Grey Treasure Chest
 							}),
 							o(246559, {	-- Small Treasure Chest
 								["questID"] = 40913,
 								["coord"] = { 57.0, 40.2, 678 },
-								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+								["icon"] = 308482,	-- Grey Treasure Chest
 							}),
 							o(246561, {	-- Small Treasure Chest
 								["questID"] = 40915,
 								["coord"] = { 24.4, 9.9, 679 },
-								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+								["icon"] = 308482,	-- Grey Treasure Chest
 							}),
 							o(246562, {	-- Small Treasure Chest
 								["questID"] = 40916,
 								["coord"] = { 23.2, 81.6, 679 },
-								["icon"] = "Interface\\Worldmap\\TreasureChest_64Grey",	-- Grey Treasure Chest
+								["icon"] = 308482,	-- Grey Treasure Chest
 							}),
 						}),
 					},

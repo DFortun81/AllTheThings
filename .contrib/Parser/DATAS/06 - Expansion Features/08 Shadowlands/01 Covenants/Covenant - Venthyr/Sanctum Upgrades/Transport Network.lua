@@ -43,11 +43,11 @@ BROKEN_MIRROR_D3 = breakAnotherMirror( "D3" );
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\Inv_misc_sigil_revendreth01",
+			["icon"] = 3641397,
 			["g"] = {
 				n(TRANSPORT_NETWORK, {
-					["icon"] = "Interface\\Icons\\Sanctum_features_transportationnetwork_revendreth",
-					["g"] = sharedData({ ["icon"] = "Interface\\Icons\\Sanctum_features_transportationnetwork_revendreth" }, {
+					["icon"] = 3854020,
+					["g"] = sharedData({ ["icon"] = 3854020 }, {
 						n(TIER_ONE, {
 							n(QUESTS, {
 								q(60051,{	-- A Master of Their Craft

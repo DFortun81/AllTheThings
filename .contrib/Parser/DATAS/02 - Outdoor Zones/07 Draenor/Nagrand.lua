@@ -75,7 +75,7 @@ root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(DRAENOR_NAGRAND, {
 			["lore"] = "Nagrand is a zone in western Draenor. It lies west of Talador. It is home to the Burning Blade and Warsong orcish clans, as well as a seat of the ogre empire situated on the continent of Draenor, with Highmaul as its capital.",
-			["icon"] = "Interface\\Icons\\achievement_zone_nagrand_02",
+			["icon"] = 1032150,
 			["maps"] = {
 				551,	-- The Master's Cavern
 				552,	-- Stonecrag Gorge
@@ -940,7 +940,7 @@ root(ROOTS.Zones, {
 					}),
 					q(34466, {	-- Mysterious Staff
 						["coord"] = { 46.3, 16.0, DRAENOR_NAGRAND },
-						["icon"] = "Interface\\Icons\\inv_staff_52",
+						["icon"] = 135188,
 						["provider"] = {"o",229344},	-- Buried Timewarped Staff
 					}),
 					q(34900, {	-- New Babies
@@ -1092,14 +1092,14 @@ root(ROOTS.Zones, {
 					}),
 					q(34597, {	-- Removing the Paper Trail
 						["coord"] = { 81.3, 70.3, DRAENOR_NAGRAND },
-						["icon"] = "Interface\\Icons\\trade_archaeology_silverscrollcase",
+						["icon"] = 454060,
 						["races"] = ALLIANCE_ONLY,
 						["sourceQuest"] = 34769,	-- A Choice to Make (alliance)
 						["provider"] = {"o",231901},	-- Ogre Scrolls
 					}),
 					q(35156, {	-- Removing the Paper Trail
 						["coord"] = { 81.3, 70.3, DRAENOR_NAGRAND },
-						["icon"] = "Interface\\Icons\\trade_archaeology_silverscrollcase",
+						["icon"] = 454060,
 						["races"] = HORDE_ONLY,
 						["sourceQuest"] = 34899,	-- A Choice to Make (horde)
 						["provider"] = {"o",231901},	-- Ogre Scrolls

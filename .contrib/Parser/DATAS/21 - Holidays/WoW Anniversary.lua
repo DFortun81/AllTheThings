@@ -4,7 +4,7 @@
 -- #if AFTER 3.0.2
 WOW_ANNIVERSARY_ROOT = createHeader({
 	readable = "WoW's Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	eventID = EVENTS.WOW_ANNIVERSARY,
 	eventSchedule = {
 		1, -- Recurring, note that this changes every year.
@@ -22,7 +22,7 @@ WOW_ANNIVERSARY_ROOT = createHeader({
 });
 WOW_ANNIVERSARY_FOUR = createHeader({
 	readable = "WoW's 4th Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	--eventID = ,	--
 	text = {
 		en = WOWAPI_GetAchievementName(2398),
@@ -30,7 +30,7 @@ WOW_ANNIVERSARY_FOUR = createHeader({
 });
 WOW_ANNIVERSARY_FIVE = createHeader({
 	readable = "WoW's 5th Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	--eventID = ,	--
 	text = {
 		en = WOWAPI_GetAchievementName(4400),
@@ -38,7 +38,7 @@ WOW_ANNIVERSARY_FIVE = createHeader({
 });
 WOW_ANNIVERSARY_SIX = createHeader({
 	readable = "WoW's 6th Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	--eventID = ,	--
 	text = {
 		en = WOWAPI_GetAchievementName(5512),
@@ -46,7 +46,7 @@ WOW_ANNIVERSARY_SIX = createHeader({
 });
 WOW_ANNIVERSARY_SEVEN = createHeader({
 	readable = "WoW's 7th Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	--eventID = ,	--
 	text = {
 		en = WOWAPI_GetAchievementName(5863),
@@ -54,7 +54,7 @@ WOW_ANNIVERSARY_SEVEN = createHeader({
 });
 WOW_ANNIVERSARY_EIGHT = createHeader({
 	readable = "WoW's 8th Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	--eventID = ,	--
 	text = {
 		en = WOWAPI_GetAchievementName(6131),
@@ -62,7 +62,7 @@ WOW_ANNIVERSARY_EIGHT = createHeader({
 });
 WOW_ANNIVERSARY_NINE = createHeader({
 	readable = "WoW's 9th Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	--eventID = ,	--
 	text = {
 		en = WOWAPI_GetAchievementName(7853),
@@ -70,7 +70,7 @@ WOW_ANNIVERSARY_NINE = createHeader({
 });
 WOW_ANNIVERSARY_TEN = createHeader({
 	readable = "WoW's 10th Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	eventID = 514,
 	eventSchedule = {
 		0, -- November 21st to January 5th 2015
@@ -83,7 +83,7 @@ WOW_ANNIVERSARY_TEN = createHeader({
 });
 WOW_ANNIVERSARY_ELEVEN = createHeader({
 	readable = "WoW's 11th Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	eventID = 566,
 	eventSchedule = {
 		0, -- 2015/11/16 to 2015/11/30
@@ -96,7 +96,7 @@ WOW_ANNIVERSARY_ELEVEN = createHeader({
 });
 WOW_ANNIVERSARY_TWELVE = createHeader({
 	readable = "WoW's 12th Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	eventID = 589,
 	eventSchedule = {
 		0, -- 2016/11/16 to 2016/11/30
@@ -109,7 +109,7 @@ WOW_ANNIVERSARY_TWELVE = createHeader({
 });
 WOW_ANNIVERSARY_THIRTEEN = createHeader({
 	readable = "WoW's 13th Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	eventID = 693,
 	eventSchedule = {
 		0, -- November 16, 2017 to November 30, 2017
@@ -122,7 +122,7 @@ WOW_ANNIVERSARY_THIRTEEN = createHeader({
 });
 WOW_ANNIVERSARY_FOURTEEN = createHeader({
 	readable = "WoW's 14th Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	eventID = 807,
 	eventSchedule = {
 		0, -- 2018/11/16 to 2018/11/30
@@ -135,7 +135,7 @@ WOW_ANNIVERSARY_FOURTEEN = createHeader({
 });
 WOW_ANNIVERSARY_FIFTEEN = createHeader({
 	readable = "WoW's 15th Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	eventID = 808,
 	eventSchedule = {
 		0, -- November 5th, 2019 to January 7th, 2020
@@ -148,7 +148,7 @@ WOW_ANNIVERSARY_FIFTEEN = createHeader({
 });
 WOW_ANNIVERSARY_SIXTEEN = createHeader({
 	readable = "WoW's 16th Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	eventID = 1181,
 	eventSchedule = {
 		0, -- November 1st, 2020 to November 22nd, 2020
@@ -161,7 +161,7 @@ WOW_ANNIVERSARY_SIXTEEN = createHeader({
 });
 WOW_ANNIVERSARY_SEVENTEEN = createHeader({
 	readable = "WoW's 17th Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	eventID = 1225,
 	eventSchedule = {
 		0, -- 2021/11/15 to 2021/12/06
@@ -174,7 +174,7 @@ WOW_ANNIVERSARY_SEVENTEEN = createHeader({
 });
 WOW_ANNIVERSARY_EIGHTEEN = createHeader({
 	readable = "WoW's 18th Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	eventID = 1262,
 	eventSchedule = {
 		0, -- November 6th through November 27th
@@ -187,7 +187,7 @@ WOW_ANNIVERSARY_EIGHTEEN = createHeader({
 });
 WOW_ANNIVERSARY_NINETEEN = createHeader({
 	readable = "WoW's 19th Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	eventID = 1397,
 	eventSchedule = {
 		0, -- November 16th through December 7th
@@ -200,7 +200,7 @@ WOW_ANNIVERSARY_NINETEEN = createHeader({
 });
 WOW_ANNIVERSARY_TWENTY = createHeader({
 	readable = "WoW's 20th Anniversary",
-	icon = "Interface\\Icons\\inv_misc_celebrationcake_01",
+	icon = 133783,
 	-- eventID = 1397,
 	-- eventSchedule = {
 	-- 	0, -- November 16th through December 7th

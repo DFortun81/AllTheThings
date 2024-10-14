@@ -5,11 +5,11 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\Inv_misc_sigil_maldraxxus01",
+			["icon"] = 3641396,
 			["g"] = {
 				n(TRANSPORT_NETWORK, {
-					["icon"] = "Interface\\Icons\\Sanctum_features_transportationnetwork_maldraxxus",
-					["g"] = sharedData({ ["icon"] = "Interface\\Icons\\Sanctum_features_transportationnetwork_maldraxxus" }, {
+					["icon"] = 3854019,
+					["g"] = sharedData({ ["icon"] = 3854019 }, {
 						n(TIER_ONE, {
 							n(QUESTS, {
 								q(63059, {	-- Blink of an Eye

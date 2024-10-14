@@ -106,7 +106,7 @@ app:CreateWindow("Removed With Patch Drops", {
 			},
 			{	-- Exclude Removed Maps Button
 				text = "Exclude Removed Maps",
-				icon = "Interface\\Icons\\Inv_misc_map02",
+				icon = 237381,
 				description = "Press this button to toggle excluding Maps that get Removed in the future.",
 				visible = true,
 				priority = 6,
@@ -140,7 +140,7 @@ app:CreateWindow("Removed With Patch Drops", {
 			},
 			{	-- Export Data Button
 				text = "Export Data",
-				icon = "Interface\\Icons\\Spell_Shadow_LifeDrain02",
+				icon = 136169,
 				description = "Press this button to open an edit box containing the full content of the list.",
 				visible = true,
 				priority = 6,

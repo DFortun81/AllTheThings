@@ -157,7 +157,7 @@ local itemFields = {
 		return t.link;
 	end,
 	["icon"] = function(t)
-		return GetItemIcon(t.itemID) or "Interface\\Icons\\INV_Misc_QuestionMark";
+		return GetItemIcon(t.itemID) or 134400;
 	end,
 	["link"] = function(t)
 		return BestItemLinkPerItemID[t.itemID];

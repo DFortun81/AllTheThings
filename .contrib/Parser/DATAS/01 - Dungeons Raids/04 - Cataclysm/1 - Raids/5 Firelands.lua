@@ -143,7 +143,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CATA, {
 			n(QUALITY_LEGENDARY, {
 				["classes"] = { PRIEST, SHAMAN, MAGE, WARLOCK, DRUID, EVOKER },
 				["title"] = "Dragonwrath, Tarecgosa's Rest",
-				["icon"] = "Interface\\Icons\\Stave_2H_Tarecgosa_E_01StageFinal",
+				["icon"] = 523897,
 				["isRaid"] = true,
 				["lvl"] = 85,
 				-- TODO: coords for all these quests

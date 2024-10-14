@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["lore"] = "Centaur control this rugged wilderness. Desolace is a land of craggy rock faces and stormy skies, and the rampaging centaur let no other race survive. Five centaur tribes strike from individual strongholds, but the great fortress of Maraudon occasionally plays host to them all.",
 		-- #endif
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_desolace",
+		["icon"] = 236742,
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -154,7 +154,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_GELKIS_CLAN_CENTAUR, {	-- Gelkis Clan Centaur
-					["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
+					["icon"] = 134151,
 					-- #if AFTER CATA
 					-- #if ANYCLASSIC
 					-- CRIEVE NOTE: Blizzard included the rep update with Cata instead of making us wait until 8.0.1. :)
@@ -172,7 +172,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 				}),
 				faction(FACTION_MAGRAM_CLAN_CENTAUR, {	-- Magram Clan Centaur
-					["icon"] = "Interface\\Icons\\INV_Misc_Head_Centaur_01",
+					["icon"] = 134151,
 					-- #if AFTER CATA
 					-- #if ANYCLASSIC
 					-- CRIEVE NOTE: Blizzard included the rep update with Cata instead of making us wait until 8.0.1. :)

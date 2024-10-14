@@ -3,7 +3,7 @@
 -----------------------------------------------------
 STORMING_THE_CITADEL = createHeader({
 	readable = "Storming the Citadel",
-	icon = "Interface\\Icons\\achievement_dungeon_icecrown_icecrownentrance",
+	icon = 343640,
 	text = {
 		en = "Storming the Citadel",
 		es = "Asaltar la Ciudadela",
@@ -18,7 +18,7 @@ STORMING_THE_CITADEL = createHeader({
 });
 THE_PLAGUEWORKS = createHeader({
 	readable = "The Plagueworks",
-	icon = "Interface\\Icons\\achievement_dungeon_plaguewing",
+	icon = 342919,
 	text = {
 		en = "The Plagueworks",
 		es = "Los Talleres de la Peste",
@@ -33,14 +33,14 @@ THE_PLAGUEWORKS = createHeader({
 });
 THE_CRIMSON_HALLS = createHeader({
 	readable = "The Crimson Halls",
-	icon = "Interface\\Icons\\achievement_dungeon_crimsonhall",
+	icon = 341981,
 	text = {
 		en = [[~C_Map.GetAreaInfo(4892)]],
 	},
 });
 THE_FROSTWING_HALLS = createHeader({
 	readable = "The Frostwing Halls",
-	icon = "Interface\\Icons\\achievement_dungeon_icecrown_frostwinghalls",
+	icon = 343638,
 	text = {
 		-- #if AFTER BFA
 		en = [[~C_Map.GetAreaInfo(7932)]],
@@ -181,7 +181,7 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_F
 				["description"] = "These quests can only be completed on 25-Man Normal or Heroic difficulty.",
 				["classes"] = { WARRIOR, PALADIN, DEATHKNIGHT },
 				["title"] = "Shadowmourne",
-				["icon"] = "Interface\\Icons\\INV_Axe_113",
+				["icon"] = 313914,
 				["isRaid"] = true,
 				["lvl"] = 80,
 				["groups"] = {

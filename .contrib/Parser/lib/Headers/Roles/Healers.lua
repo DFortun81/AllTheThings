@@ -1,6 +1,6 @@
 HEALER_ROLE = createHeader({
 	readable = "Healers",
-	icon = "Interface\\Icons\\spell_nature_healingwavegreater",
+	icon = 136042,
 	text = {
 		en = "Healers",
 		de = "Heiler",

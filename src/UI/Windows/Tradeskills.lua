@@ -89,7 +89,7 @@ app:CreateWindow("Tradeskills", {
 		self.cache = {};
 		self.header = {
 			['text'] = "Profession List",
-			['icon'] = "Interface\\Icons\\INV_Scroll_04",
+			['icon'] = 134940,
 			["description"] = "Open your professions to cache them.",
 			['visible'] = true,
 			['expanded'] = true,

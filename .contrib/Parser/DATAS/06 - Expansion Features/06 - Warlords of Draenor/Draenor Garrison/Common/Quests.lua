@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 local GARRISON_CAMPAIGN = createHeader({
 	readable = "Garrison Campaign",
-	icon = "Interface\\Icons\\achievement_zone_draenor_01",
+	icon = 1032149,
 	text = {
 		en = "Garrison Campaign",
 		cn = "要塞战役",
@@ -2590,7 +2590,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.WOD, {
 					{ "o", 230865 },	-- List of Ingredients
 					{ "n", 79966 },	-- Lost Packmule
 				},
-				-- ["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+				-- ["icon"] = 632821,
 				["sourceQuests"] = {
 					33081,	-- Escape from Shaz'gul
 					33059,	-- The Fate of Karabor

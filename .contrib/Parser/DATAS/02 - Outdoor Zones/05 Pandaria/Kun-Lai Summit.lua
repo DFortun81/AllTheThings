@@ -6,7 +6,7 @@ root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(KUN_LAI_SUMMIT, {
 			["lore"] = "Kun-Lai Summit is a zone in northern Pandaria, surrounded by the Vale of Eternal Blossoms to the south, the Townlong Steppes to the west, and the Jade Forest to the east. It is a vast area with majestic mountains, autumnal plains, and a lush coastal area. High atop the frigid northern peaks looms the Temple of the White Tiger, an ancient training ground protected by an elite force of martial priests, along with the spirit of the White Tiger itself, Xuen. Deeper into the mountains is the hideout of the Shado-pan clan: a mysterious order charged with protecting Pandaria from the dark things buried beneath its surface. When the isolated people of Kun-Lai are threatened by marauders from the west and a Zandalari troll menace invading its northern shores, they turn to the Alliance and Horde for help.",
-			["icon"] = "Interface\\Icons\\achievement_zone_kunlaisummit",
+			["icon"] = 617832,
 			["timeline"] = { ADDED_5_0_4 },
 			["maps"] = {
 				380,	-- Howlingwind Cavern
@@ -328,7 +328,7 @@ root(ROOTS.Zones, {
 					faction(FACTION_THE_AUGUST_CELESTIALS, {	-- The August Celestials
 						["description"] = "Each day, the August Celestials require your aid at one of their temples.  Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",
 						["collectible"] = false,
-						["icon"] = "Interface\\Icons\\achievement_faction_celestials",
+						["icon"] = 645203,
 						["g"] = {
 							n(QUESTS, {
 								q(31394, {	-- A Celestial Experience (A)
@@ -2148,7 +2148,7 @@ root(ROOTS.Zones, {
 					}),
 					n(70323, {	-- Krakkanon
 						q(31664, {	-- An Angler's Quest
-							["icon"] = "Interface\\Icons\\inv_misc_book_11",
+							["icon"] = 133743,
 							["provider"] = { "i", 88563 },	-- Nat's Fishing Journal
 							["repeatable"] = true,
 							["collectible"] = false,

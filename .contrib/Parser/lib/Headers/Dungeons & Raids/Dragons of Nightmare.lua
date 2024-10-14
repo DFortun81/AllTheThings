@@ -1,6 +1,6 @@
 DRAGONS_OF_NIGHTMARE = createHeader({
 	readable = "Dragons of Nightmare",
-	icon = "Interface\\Icons\\INV_Misc_Head_Dragon_Green",
+	icon = 134157,
 	text = {
 		en = "Dragons of Nightmare",
 		de = "Drachen des Alptraums",

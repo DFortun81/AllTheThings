@@ -3,7 +3,7 @@
 -----------------------------------------------------
 GEAR_CONVERSION = createHeader({
 	readable = "Gear Conversion",
-	icon = "Interface\\Icons\\ability_bossmagistrix_timewarp1",
+	icon = 1391675,
 	text = {
 		en = "Gear Conversion",
 	},

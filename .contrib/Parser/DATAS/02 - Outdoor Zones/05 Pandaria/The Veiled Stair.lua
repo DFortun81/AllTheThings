@@ -5,7 +5,7 @@
 root(ROOTS.Zones, {
 	m(PANDARIA, {
 		m(THE_VEILED_STAIR, {
-			["icon"] = "Interface\\Icons\\inv_legendary_theblackprince",
+			["icon"] = 656543,
 			["groups"] = {
 				battlepets({
 					["sym"] = {{"select","speciesID",

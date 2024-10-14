@@ -1,6 +1,6 @@
 MAGE_TOWER = createHeader({
 	readable = "Mage Tower",
-	icon = "Interface\\Icons\\spell_mage_overpowered",
+	icon = 1033914,
 	text = {
 		en = [[~BROKENSHORE_BUILDING_MAGETOWER]],
 	},

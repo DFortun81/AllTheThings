@@ -241,7 +241,7 @@ app:CreateWindow("Random", {
 				end}),
 				{
 					text = "Item",
-					icon = "Interface\\Icons\\INV_Box_02",
+					icon = 132595,
 					description = "Click this button to select a random item based on what you're missing.",
 					OnUpdate = app.AlwaysShowUpdate,
 					OnClick = function(row, button)
@@ -250,7 +250,7 @@ app:CreateWindow("Random", {
 				},
 				{
 					text = "Quest",
-					icon = "Interface\\GossipFrame\\AvailableQuestIcon",
+					icon = 132049,
 					description = "Click this button to select a random quest based on what you're missing.",
 					OnUpdate = app.AlwaysShowUpdate,
 					OnClick = function(row, button)
@@ -286,7 +286,7 @@ app:CreateWindow("Random", {
 				},
 				{
 					text = "Zone",
-					icon = "Interface\\Icons\\INV_Misc_Map_01",
+					icon = 134269,
 					description = "Click this button to select a random zone based on what you're missing.",
 					OnUpdate = app.AlwaysShowUpdate,
 					OnClick = function(row, button)

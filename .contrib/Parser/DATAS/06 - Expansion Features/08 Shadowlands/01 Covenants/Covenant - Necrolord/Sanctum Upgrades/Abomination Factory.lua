@@ -96,7 +96,7 @@ local WEAPON_SATCHEL_OF_THE_WILD_HUNT = {
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NEC" }, {
 	n(NECROLORD, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\Inv_misc_sigil_maldraxxus01",
+			["icon"] = 3641396,
 			["g"] = {
 				n(ABOMINATION_FACTORY, {
 					["maps"] = {
@@ -461,7 +461,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							}),
 						}),
 						n(TIER_ONE, {
-							["icon"] = "Interface\\Icons\\Tradeskill_abominationstitching_abominations_lesser",
+							["icon"] = 3622121,
 							["g"] = {
 								n(167042, {	-- Abominable Stitching Table
 									["coord"] = { 55.0, 68.8, MALDRAXXUS },
@@ -876,7 +876,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							},
 						}),
 						n(TIER_TWO, {
-							["icon"] = "Interface\\Icons\\Inv_leatherworking_craftedleather_maldraxxus",
+							["icon"] = 3528451,
 							["g"] = {
 								n(167042, {	-- Abominable Stitching Table
 									["coord"] = { 55.0, 68.8, MALDRAXXUS },
@@ -1114,7 +1114,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							},
 						}),
 						n(TIER_THREE, {
-							["icon"] = "Interface\\Icons\\Tradeskill_abominationstitching_abominations_mid",
+							["icon"] = 3622122,
 							["g"] = {
 								n(167042, {	-- Abominable Stitching Table
 									["coord"] = { 55.0, 68.8, MALDRAXXUS },
@@ -1296,7 +1296,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							},
 						}),
 						n(TIER_FOUR, {
-							["icon"] = "Interface\\Icons\\Achievement_dungeon_theatreofpain_gorechop",
+							["icon"] = 3601552,
 							["g"] = {
 								n(167042, {	-- Abominable Stitching Table
 									["coord"] = { 55.0, 68.8, MALDRAXXUS },
@@ -1377,7 +1377,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 							},
 						}),
 						n(TIER_FIVE, {
-							["icon"] = "Interface\\Icons\\Spell_animamaldraxxus_buff",
+							["icon"] = 3528291,
 							["g"] = {
 								n(167042, {	-- Abominable Stitching Table
 									["coord"] = { 55.0, 68.8, MALDRAXXUS },

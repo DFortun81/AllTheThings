@@ -5,7 +5,7 @@ SCENARIOS = createHeader({
 	readable = "Scenarios",
 	constant = "SCENARIOS",
 	minilist_ignore = true,
-	icon = "Interface\\Icons\\Achievement_scenario_arenaofannihilation",
+	icon = 647976,
 	text = {
 		en = [[~SCENARIOS]],
 	},

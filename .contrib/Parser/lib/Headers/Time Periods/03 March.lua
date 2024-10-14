@@ -1,6 +1,6 @@
 MARCH = createHeader({
 	readable = "March",
-	icon = "Interface\\Icons\\ability_ardenweald_paladin_spring",
+	icon = 3636844,
 	text = {
 		en = [[~MONTH_MARCH]],
 	},

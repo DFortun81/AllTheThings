@@ -13,7 +13,7 @@ app:CreateWindow("Breadcrumbs", {
 		if not self.data then
 			self.data = {
 				text = "Follow the Breadcrumbs",
-				icon = "Interface\\Icons\\INV_Misc_Food_12", 
+				icon = 133968, 
 				description = "This window shows you all of the breadcrumbs tracked by ATT. Go get 'em!",
 				visible = true, 
 				expanded = true,

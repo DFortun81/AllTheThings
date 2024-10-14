@@ -1,6 +1,6 @@
 JANUARY = createHeader({
 	readable = "January",
-	icon = "Interface\\Icons\\inv_ammo_snowball",
+	icon = 132387,
 	text = {
 		en = [[~MONTH_JANUARY]],
 	},

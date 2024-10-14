@@ -1,6 +1,6 @@
 SEASON_UNCHAINED = createHeader({
 	readable = "Unchained Gladiator: Shadowlands Season 2",
-	icon = "Interface\\Icons\\inv_shadebeastmount_blue",
+	icon = 3593819,
 	text = {
 		en = WOWAPI_GetAchievementName(14973),
 	},

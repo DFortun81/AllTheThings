@@ -1,6 +1,6 @@
 WARFORGED = createHeader({
 	readable = "Warforged",
-	icon = "Interface\\Icons\\misc_arrowlup",
+	icon = 450907,
 	text = {
 		en = "Warforged",
 	},

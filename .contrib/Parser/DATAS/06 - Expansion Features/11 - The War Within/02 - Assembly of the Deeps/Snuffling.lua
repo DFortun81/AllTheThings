@@ -4,7 +4,7 @@
 local FIRELIGHT_RUBY = 224642;
 SNUFFLING = createHeader({
 	readable = "Snuffling",
-	icon = "Interface\\Icons\\inv_pet_mole",
+	icon = 648644,
 	text = {
 		en = "Snuffling",
 	},

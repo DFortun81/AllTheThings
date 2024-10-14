@@ -3,7 +3,7 @@
 --------------------------------------------
 KALUAK_FISHING_DERBY_HEADER = createHeader({
 	readable = "Kalu'ak Fishing Derby",
-	icon = "Interface\\Icons\\inv_fishingpole_03",
+	icon = 132933,
 	eventID = EVENTS.KALUAK_FISHING_DERBY,
 	text = {
 		en = "Kalu'ak Fishing Derby",

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 MECHAGON_JUNKYARD = createHeader({
 	readable = "Junkyard",
-	icon = "Interface\\Icons\\inv_misc_blizzcon09_graphicscard",
+	icon = 321487,
 	text = {
 		en = "Junkyard",
 		de = "Schrottplatz",
@@ -18,7 +18,7 @@ MECHAGON_JUNKYARD = createHeader({
 });
 MECHAGON_WORKSHOP = createHeader({
 	readable = "Workshop",
-	icon = "Interface\\Icons\\inv_misc_key_06",
+	icon = 134240,
 	text = {
 		en = WOWAPI_GetSpellName(251998),
 	},

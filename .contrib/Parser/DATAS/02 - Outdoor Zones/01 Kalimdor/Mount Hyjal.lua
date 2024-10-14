@@ -4,7 +4,7 @@
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(MOUNT_HYJAL, {
 		["lore"] = "Mount Hyjal is the zone most players quest in when starting Cataclysm zones. Between Ragnaros attacking Hyjal with the help of the Twilight Cultists and Malfurion Stormrage back from the Emerald Dream, this zone is filled with familiar faces and epic quests from the start. The scenery alternates between lush forests and scorched earth, as the player attempts to heal the land and regrow the forests.",
-		["icon"] = 409547,	-- "Interface\\Icons\\Achievement_zone_mount-hyjal",	-- NOTE: Icon path didn't work. Check again in Cata Classic.
+		["icon"] = 409547,	-- "interface/Icons\\Achievement_zone_mount-hyjal",	-- NOTE: Icon path didn't work. Check again in Cata Classic.
 		["timeline"] = { ADDED_4_0_3 },
 		["maps"] = {
 			738,	-- Firelands

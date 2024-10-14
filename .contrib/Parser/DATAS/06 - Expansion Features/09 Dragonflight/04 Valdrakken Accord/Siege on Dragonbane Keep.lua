@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 SIEGE_ON_DRAGONBANE_KEEP = createHeader({
 	readable = "Siege on Dragonbane Keep",
-	icon = "Interface\\Icons\\inv_artifact_dragonscales",
+	icon = 1394891,
 	text = {
 		en = WOWAPI_GetSpellName(388945),
 	},

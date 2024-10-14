@@ -1,6 +1,6 @@
 PRIMAL_STORMS = createHeader({
 	readable = "Primal Storms",
-	icon = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_trinket_1ragingelement_air",
+	icon = 4638591,
 	text = {
 		en = "Primal Storms",
 		es = "Tormentas Primigenias",

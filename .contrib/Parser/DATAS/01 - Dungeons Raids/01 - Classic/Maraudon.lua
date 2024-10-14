@@ -3,14 +3,14 @@
 -----------------------------------------------------
 MARAUDON_PORTAL = createHeader({
 	readable = "Maraudon Portal",
-	icon = "Interface\\Icons\\spell_arcane_portalironforge",
+	icon = 135743,
 	text = {
 		en = WOWAPI_GetSpellName(21127),
 	},
 });
 FOULSPORE_CAVERN = createHeader({
 	readable = "Foulspore Cavern",
-	icon = "Interface\\Icons\\INV_Misc_Gem_Opal_01",
+	icon = 134116,
 	text = {
 		-- #if AFTER 7.3.0
 		en = [[~DUNGEON_FLOOR_DESOLACE22.." ("..]] .. WOWAPI_GetSpellName(251097) .. [[..")"]],
@@ -21,7 +21,7 @@ FOULSPORE_CAVERN = createHeader({
 });
 WICKED_GROTTO = createHeader({
 	readable = "The Wicked Grotto",
-	icon = "Interface\\Icons\\INV_Misc_Gem_Amethyst_02",
+	icon = 134075,
 	text = {
 		-- #if AFTER 7.3.0
 		en = [[~DUNGEON_FLOOR_DESOLACE21.." ("..]] .. WOWAPI_GetSpellName(251095) .. [[..")"]],

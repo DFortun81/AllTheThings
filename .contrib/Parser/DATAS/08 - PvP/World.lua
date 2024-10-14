@@ -3,7 +3,7 @@
 -----------------------------------------------
 BOUNTY = createHeader({
 	readable = "Bounty",
-	icon = "Interface\\Icons\\Inv_bountyhunting",
+	icon = 2125377,
 	text = {
 		en = "Bounty",
 		es = "Prima",

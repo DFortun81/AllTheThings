@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 GREAT_ODYN_AND_THE_FIRELORD = createHeader({
 	readable = "Great Odyn and the Firelord",
-	icon = "Interface\\Icons\\inv_scroll_11",
+	icon = 237446,
 	text = {
 		en = "Great Odyn and the Firelord",
 		es = "El gran Odyn y el Señor del Fuego",
@@ -16,7 +16,7 @@ GREAT_ODYN_AND_THE_FIRELORD = createHeader({
 });
 THE_WANDERER_AND_THE_SERPENT = createHeader({
 	readable = "The Wanderer and the Serpent",
-	icon = "Interface\\Icons\\inv_scroll_11",
+	icon = 237446,
 	text = {
 		en = "The Wanderer and the Serpent",
 		es = "El nómada y la serpiente",
@@ -28,7 +28,7 @@ THE_WANDERER_AND_THE_SERPENT = createHeader({
 });
 HALLS_OF_GOLD_AND_GLORY = createHeader({
 	readable = "Halls of Gold and Glory",
-	icon = "Interface\\Icons\\inv_scroll_11",
+	icon = 237446,
 	text = {
 		en = "Halls of Gold and Glory",
 		es = "Cámaras de oro y gloria",
@@ -40,7 +40,7 @@ HALLS_OF_GOLD_AND_GLORY = createHeader({
 });
 THE_KEEPERS_EYE = createHeader({
 	readable = "The Keeper's Eye",
-	icon = "Interface\\Icons\\inv_scroll_11",
+	icon = 237446,
 	text = {
 		en = "The Keeper's Eye",
 		es = "El ojo del guardián",
@@ -52,7 +52,7 @@ THE_KEEPERS_EYE = createHeader({
 });
 FIRST_OF_THE_VALKYR = createHeader({
 	readable = "First of the Val'kyr",
-	icon = "Interface\\Icons\\inv_scroll_11",
+	icon = 237446,
 	text = {
 		en = "First of the Val'kyr",
 		es = "La primera Val'kyr",
@@ -64,7 +64,7 @@ FIRST_OF_THE_VALKYR = createHeader({
 });
 THE_SEALING_OF_THE_HALLS_OF_VALOR = createHeader({
 	readable = "The Sealing of the Halls of Valor",
-	icon = "Interface\\Icons\\inv_scroll_11",
+	icon = 237446,
 	text = {
 		en = "The Sealing of the Halls of Valor",
 		es = "El sello de las Cámaras del Valor",
@@ -76,7 +76,7 @@ THE_SEALING_OF_THE_HALLS_OF_VALOR = createHeader({
 });
 HIS_NAME_IS_DRAGONBLOOD = createHeader({
 	readable = "His Name Is Dragonblood",
-	icon = "Interface\\Icons\\inv_scroll_11",
+	icon = 237446,
 	text = {
 		en = "His Name Is Dragonblood",
 		es = "Se llama Sangredragón",
@@ -88,7 +88,7 @@ HIS_NAME_IS_DRAGONBLOOD = createHeader({
 });
 THE_LAST_WORDS_OF_ASGRIM_THE_DREADKILLER = createHeader({
 	readable = "The Last Words of Asgrim the Dreadkiller",
-	icon = "Interface\\Icons\\inv_scroll_11",
+	icon = 237446,
 	text = {
 		en = "The Last Words of Asgrim the Dreadkiller",
 		es = "Las últimas palabras de Asgrim el Mataterrador",
@@ -100,7 +100,7 @@ THE_LAST_WORDS_OF_ASGRIM_THE_DREADKILLER = createHeader({
 });
 A_SHIELDMAIDENS_CREED = createHeader({
 	readable = "A Shieldmaiden's Creed",
-	icon = "Interface\\Icons\\inv_scroll_11",
+	icon = 237446,
 	text = {
 		en = "A Shieldmaiden's Creed",
 		es = "El credo de una doncella escudera",
@@ -112,7 +112,7 @@ A_SHIELDMAIDENS_CREED = createHeader({
 });
 THE_PROPHECY_OF_RYTHAS_THE_ORACLE = createHeader({
 	readable = "The Prophecy of Rythas the Oracle",
-	icon = "Interface\\Icons\\inv_scroll_11",
+	icon = 237446,
 	text = {
 		en = "The Prophecy of Rythas the Oracle",
 		es = "La profecía de Rythas el Oráculo",
@@ -124,7 +124,7 @@ THE_PROPHECY_OF_RYTHAS_THE_ORACLE = createHeader({
 });
 THE_LESSONS_OF_THE_BLACKFIST = createHeader({
 	readable = "The Lessons of the Blackfist",
-	icon = "Interface\\Icons\\inv_scroll_11",
+	icon = 237446,
 	text = {
 		en = "The Lessons of the Blackfist",
 		es = "Las lecciones de Puño Opaco",
@@ -136,7 +136,7 @@ THE_LESSONS_OF_THE_BLACKFIST = createHeader({
 });
 VOLUNDS_FOLLY = createHeader({
 	readable = "Volund's Folly",
-	icon = "Interface\\Icons\\inv_scroll_11",
+	icon = 237446,
 	text = {
 		en = "Volund's Folly",
 		es = "La locura de Volund",

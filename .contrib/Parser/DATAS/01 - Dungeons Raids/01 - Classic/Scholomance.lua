@@ -1993,7 +1993,7 @@ table.insert(SCHOLOMANCE_GROUPS, header(HEADERS.Achievement, 18368, {	-- Memory 
 -- #else
 table.insert(SCHOLOMANCE_GROUPS, n(createHeader({
 	readable = "Memory of Scholomance",
-	icon = "Interface\\Icons\\inv_misc_book_11",
+	icon = 133743,
 	text = {
 		en = "Memory of Scholomance",
 		es = "Recuerdo de Scholomance",

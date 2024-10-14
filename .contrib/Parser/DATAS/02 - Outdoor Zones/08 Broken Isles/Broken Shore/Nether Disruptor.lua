@@ -3,7 +3,7 @@
 ---------------------------------------------------
 NETHER_DISRUPTOR = createHeader({
 	readable = "Nether Disruptor",
-	icon = "Interface\\Icons\\buff_epichunter",
+	icon = 1604164,
 	text = {
 		en = [[~BROKENSHORE_BUILDING_NETHERDISRUPTOR]],
 	},

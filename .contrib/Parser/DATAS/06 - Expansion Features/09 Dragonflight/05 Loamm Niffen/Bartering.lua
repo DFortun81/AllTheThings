@@ -15,7 +15,7 @@ local function BarterCost(bricks, boulders)
 end
 BARTERING = createHeader({
 	readable = "Bartering",
-	icon = "Interface\\Icons\\achievement_guildperk_bartering",
+	icon = 413570,
 	text = {
 		en = "Bartering",
 		es = "Comercio",

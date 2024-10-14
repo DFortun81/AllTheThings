@@ -5,11 +5,11 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\Inv_misc_sigil_revendreth01",
+			["icon"] = 3641397,
 			["g"] = {
 				n(COMMAND_TABLE, {
 					n(TIER_ONE, {
-						["icon"] = "Interface\\Icons\\Sanctum_features_missiontable",
+						["icon"] = 3675495,
 						["g"] = {
 							n(FOLLOWERS, bubbleDownSelf({
 								["collectible"] = false,

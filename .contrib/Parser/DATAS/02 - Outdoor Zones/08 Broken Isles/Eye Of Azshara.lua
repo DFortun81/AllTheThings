@@ -6,7 +6,7 @@ root(ROOTS.Zones, {
 	m(BROKEN_ISLES, {
 		m(EYE_OF_AZSHARA, {
 			["description"] = "The Eye of Azshara is zone south of Dalaran in the Broken Isles. It is an elite zone that is a replica of the dungeon of the same name. A flight master can be found here, you need to unlock it by visiting the flight point.",
-			["icon"] = "Interface\\Icons\\achievement_dungeon_eyeofazshara",
+			["icon"] = 1417426,
 			["g"] = {
 				petbattle(filter(BATTLE_PETS, {
 					["sym"] = {{"select","speciesID",

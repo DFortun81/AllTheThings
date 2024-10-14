@@ -1,6 +1,6 @@
 ALLIED_RACES = createHeader({
 	readable = "Allied Races",
-	icon = "Interface\\Icons\\FactionChange",
+	icon = 939373,
 	text = {
 		en = "Allied Races",
 		es = "Razas aliadas",

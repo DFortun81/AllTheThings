@@ -5,7 +5,7 @@
 root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Brawlgar Arena
 	["races"] = HORDE_ONLY,
 	["lvl"] = 120,
-	["icon"] = "Interface\\Icons\\INV_MISC_HEAD_ORC2_BRN",
+	["icon"] = 970888,
 	["groups"] = {
 		n(ACHIEVEMENTS, {
 			ach(7944, {		-- Bottle Service (Season 2)

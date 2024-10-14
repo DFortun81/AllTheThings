@@ -27,7 +27,7 @@ SLASH_RELOADUI1 = "/reloadui";
 SLASH_RELOADUI2 = "/rl";
 SlashCmdList.RELOADUI = ReloadUI;
 
-local assetRootPath = "Interface\\Addons\\" .. appName .. "\\assets\\";
+local assetRootPath = "interface/Addons\\" .. appName .. "\\assets\\";
 app.asset = function(path)
 	return assetRootPath .. path;
 end
@@ -546,9 +546,9 @@ function app:ShowPopupDialogWithMultiLineEditBox(text, onclick, label)
 		rb:SetPoint("BOTTOMRIGHT", -6, 7)
 		rb:SetSize(16, 16)
 
-		rb:SetNormalTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Up")
-		rb:SetHighlightTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Highlight")
-		rb:SetPushedTexture("Interface\\ChatFrame\\UI-ChatIM-SizeGrabber-Down")
+		rb:SetNormalTexture(386864)
+		rb:SetHighlightTexture(386863)
+		rb:SetPushedTexture(386862)
 
 		rb:SetScript("OnMouseDown", function(self, button)
 			if button == "LeftButton" then

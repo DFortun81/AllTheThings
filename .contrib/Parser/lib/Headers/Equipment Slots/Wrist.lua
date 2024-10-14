@@ -1,6 +1,6 @@
 WRIST = createHeader({
 	readable = "Wrist",
-	icon = "Interface\\Icons\\inv_bracer_07",
+	icon = 132606,
 	text = {
 		en = [[~INVTYPE_WRIST]],
 	},

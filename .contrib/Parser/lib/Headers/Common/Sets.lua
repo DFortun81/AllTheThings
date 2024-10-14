@@ -1,6 +1,6 @@
 SETS = createHeader({
 	readable = "Sets",
-	icon = "Interface\\Icons\\achievement_transmog_collections",
+	icon = 1602705,
 	text = {
 		en = [[~WARDROBE_SETS]],
 	},

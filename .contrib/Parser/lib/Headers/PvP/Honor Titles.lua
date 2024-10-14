@@ -1,7 +1,7 @@
 HONOR_TITLES = createHeader({
 	readable = "Honor Titles",
 	constant = "HONOR_TITLES",
-	icon = "Interface\\Icons\\inv_sword_48",
+	icon = 135358,
 	text = {
 		-- #if ANYCLASSIC
 		en = "Honor Titles",

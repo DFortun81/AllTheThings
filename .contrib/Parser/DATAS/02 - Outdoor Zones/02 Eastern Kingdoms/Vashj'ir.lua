@@ -5,7 +5,7 @@
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(VASHJIR, {
 		["lore"] = "Vashj'ir is an underwater zone. Players receive underwater breathing, swim speed buffs, and eventually a sea horse mount early on in questing to make transportation easier. Players learn about the history of the Highborne, as this city was home to Lady Vashj before the Sundering. Players learn about the threat of Ozumat, culminating in a battle between Neptulon and the naga.",
-		["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
+		["icon"] = 409551,
 		["timeline"] = { ADDED_4_0_3 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -174,7 +174,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			m(VASHJIR_ABYSSAL_DEPTHS, {
 				["lore"] = "Abyssal Depths is the last, and darkest zone, players reach when questing in Vash'jir. They are home to the ancient god L'ghorek, which the Twilight Hammer is siphoning energy from to be prepared when fighting Neptulon in the future.",
-				["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
+				["icon"] = 409551,
 				["groups"] = {
 					explorationHeader({
 						exploration(5135),	-- Abandoned Reef
@@ -918,7 +918,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			m(VASHJIR_KELPTHAR_FOREST, {
 				["lore"] = "Kelp'thar Forest is the first subzone players reach when questing in Vash'jir. It has tropical underwater life and is closer to the surface than other subzones. Quests introduce the threat of the naga while also reacquainting the player with stranded members of the Zul'Aman exploratory crew.",
-				["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
+				["icon"] = 409551,
 				["groups"] = {
 					explorationHeader({
 						exploration(5055),	-- Gnaws' Boneyard
@@ -1322,7 +1322,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["isBreadcrumb"] = true,
 						}),
 						q(25946, {	-- Helm's Deep
-							["icon"] = "Interface\\Icons\\inv_helmet_49",
+							["icon"] = 133151,
 							["sourceQuests"] = {
 								25942,	-- Buy Us Some Time
 								27668,	-- Pay Attention
@@ -1757,7 +1757,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			}),
 			m(VASHJIR_SHIMMERING_EXPANSE, {
 				["lore"] = "The Shimmering Expanse is a subzone of Vash'jir. It contains The Earthen Ring quartermaster in Silver Tide Hollow, the only flight points in the zone, and tons of  Azshara's Veil. In this section, players learn about the highborne's past and the threat of the naga through the eyes of Battlemaidens.",
-				["icon"] = "Interface\\Icons\\achievement_zone_vashjir",
+				["icon"] = 409551,
 				["groups"] = {
 					explorationHeader({
 						exploration(4966),	-- Biel'aran Ridge

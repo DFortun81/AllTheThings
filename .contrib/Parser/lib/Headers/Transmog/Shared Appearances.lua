@@ -5,10 +5,10 @@ SHARED_APPEARANCES = createHeader({
 	export = true,
 	-- #endif
 	-- #if ANYCLASSIC
-	icon = "Interface\\Icons\\INV_Enchant_ShardBrilliantSmall",
+	icon = 132874,
 	-- #else
 	-- This icon became available in WOD, technically
-	icon = "Interface\\Icons\\Achievement_GarrisonFollower_ItemLevel650",
+	icon = 1033585,
 	-- #endif
 	text = {
 		en = "Shared Appearances",

@@ -3,14 +3,14 @@
 -------------------------------------------------------------------
 HORRIFIC_VISIONS = createHeader({
 	readable = "Horrific Visions",
-	icon = "Interface\\Icons\\trade_alchemy_potiond2",
+	icon = 609893,
 	text = {
 		en = [[~SPLASH_BATTLEFORAZEROTH_8_3_0_FEATURE1_TITLE]],
 	},
 });
 LOST_AREA = createHeader({
 	readable = "Lost Area",
-	icon = "Interface\\Icons\\spell_priest_psyfiend",
+	icon = 537021,
 	text = {
 		en = "Lost Area",
 		fr = "Zone Perdue",
@@ -20,7 +20,7 @@ LOST_AREA = createHeader({
 });
 CORRUPTED_AREA = createHeader({
 	readable = "Corrupted Area",
-	icon = "Interface\\Icons\\spell_shadow_shadowmend",
+	icon = 136202,
 	text = {
 		en = "Corrupted Area",
 		fr = "Zone Corrompue",

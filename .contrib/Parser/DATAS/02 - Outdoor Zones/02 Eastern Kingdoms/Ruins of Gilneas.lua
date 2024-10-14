@@ -6,7 +6,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #if AFTER 8.3.0
 		["icon"] = 462338,
 		-- #else
-		["icon"] = "Interface\\Icons\\achievement_battleground_battleforgilneas",
+		["icon"] = 462671,
 		-- #endif
 		["timeline"] = { ADDED_4_0_3 },
 		["groups"] = {

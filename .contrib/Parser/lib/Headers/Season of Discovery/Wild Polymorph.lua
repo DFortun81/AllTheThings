@@ -1,6 +1,6 @@
 WILD_POLYMORPH = createHeader({	-- Wild Polymorph
 	readable = "SOD - Wild Polymorph",
-	icon = "Interface\\ICONS\\Spell_Nature_Polymorph",
+	icon = 136071,
 	text = {
 		en = "Wild Polymorph",
 		es = "Polimorfo Salvaje",

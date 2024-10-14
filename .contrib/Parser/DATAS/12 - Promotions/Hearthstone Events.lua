@@ -3,7 +3,7 @@
 -----------------------------------------------------
 HEARTHSTONE = createHeader({
 	readable = "Hearthstone",
-	icon = "Interface\\Icons\\Inv_misc_rune_01",
+	icon = 134414,
 	text = {
 		en = "Hearthstone",
 		cn = "炉石传说",
@@ -14,7 +14,7 @@ HEARTHSTONE = createHeader({
 });
 HEARTHSTONE_MERCENARIES_MODE = createHeader({
 	readable = "Hearthstone Mercenaries",
-	icon = "Interface\\Icons\\Inv_misc_rune_01",
+	icon = 134414,
 	text = {
 		en = "Hearthstone Mercenaries",
 		es = "Hearthstone Mercenarios",
@@ -31,7 +31,7 @@ HEARTHSTONE_MERCENARIES_MODE = createHeader({
 });
 HEARTHSTONE_10TH_ANNIVERSARY = createHeader({
 	readable = "Hearthstone's 10th Anniversary",
-	icon = "Interface\\Icons\\Inv_misc_rune_01",
+	icon = 134414,
 	text = {
 		en = "Hearthstone's 10th Anniversary",
 		es = "10.º aniversario de Hearthstone",

@@ -1,6 +1,6 @@
 SEPTEMBER = createHeader({
 	readable = "September",
-	icon = "Interface\\Icons\\inv_holiday_summerfest_petals",
+	icon = 133208,
 	text = {
 		en = [[~MONTH_SEPTEMBER]],
 	},

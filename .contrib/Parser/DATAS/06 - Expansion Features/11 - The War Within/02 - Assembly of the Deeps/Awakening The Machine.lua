@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 AWAKENING_THE_MACHINE = createHeader({
 	readable = "Awakening The Machine",
-	icon = "Interface\\Icons\\inv_dwarvenmechboss_bronze",
+	icon = 5768149,
 	text = {
 		en = "Awakening The Machine",
 	},

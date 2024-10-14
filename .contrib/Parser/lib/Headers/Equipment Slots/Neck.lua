@@ -1,6 +1,6 @@
 NECK = createHeader({
 	readable = "Neck",
-	icon = "Interface\\Icons\\Inv_jewelry_necklace_02",
+	icon = 133289,
 	text = {
 		en = [[~INVTYPE_NECK]],
 	},

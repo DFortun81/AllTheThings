@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 AZEROTHIAN_ARCHIVES = createHeader({
 	readable = "Azerothian Archives",
-	icon = "Interface\\Icons\\trade_archaeology",
+	icon = 441139,
 	text = {
 		en = WOWAPI_GetSpellName(419242),
 	},

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 HEROES_OF_THE_STORM = createHeader({
 	readable = "Heroes of the Storm",
-	icon = "Interface\\Icons\\ability_shaman_stormstrike",
+	icon = 132314,
 	text = {
 		en = "Heroes of the Storm",
 		cn = "风暴英雄",

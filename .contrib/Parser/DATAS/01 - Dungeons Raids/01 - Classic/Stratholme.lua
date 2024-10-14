@@ -3,7 +3,7 @@
 -----------------------------------------------------
 MAIN_GATE = createHeader({
 	readable = "Main Gate",
-	icon = "Interface\\Icons\\INV_Misc_Token_ScarletCrusade",
+	icon = 134503,
 	text = {
 		-- #if ANYCLASSIC
 		en = "Main Gate",
@@ -17,7 +17,7 @@ MAIN_GATE = createHeader({
 });
 SERVICE_ENTRANCE = createHeader({
 	readable = "Service Entrance",
-	icon = "Interface\\Icons\\INV_MISC_KEY_13",
+	icon = 134247,
 	text = {
 		-- #if ANYCLASSIC
 		en = "Service Entrance",

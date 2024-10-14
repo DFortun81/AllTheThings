@@ -32,7 +32,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	m(SILITHUS, {
 		["lore"] = "Silithus is a rough desert in the southwest end of Kalimdor. While Silithus today acts as the main working place of the Cenarion Circle, it was once the seat of the Aqiri Empire, known to the world as Ahn'Qiraj. Its gates were sealed off millennia ago by the Night Elves, but the silithid managed to regain some footage over Kalimdor. Today, the Cenarion Circle enlists both the Horde and the Alliance to help with their vigil.",
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_silithus_01",
+		["icon"] = 236829,
 		-- #endif
 		["maps"] = { 82 },		-- Twilight's Run
 		-- #if AFTER 7.3.5
@@ -42,7 +42,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			-- #if AFTER 5.2.0.16634
 			m(AHNQIRAJ_THE_FALLEN_KINGDOM, {
 				["description"] = "This is an outdoor zone, a non-instanced version of Temple of Ahn'Qiraj and Ruins of Ahn'Qiraj.",
-				["icon"] = "Interface\\Icons\\achievement_zone_silithus_01",
+				["icon"] = 236829,
 				["groups"] = {
 					battlepets({
 						["sym"] = {{"select","speciesID",

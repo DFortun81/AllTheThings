@@ -3,7 +3,7 @@ TIER_ZERO_POINT_FIVE_SETS = createHeader({
 	-- #if ANYCLASSIC
 	constant = "TIER_ZERO_POINT_FIVE_SETS",
 	-- #endif
-	icon = "Interface\\Icons\\INV_Chest_Plate03",
+	icon = 132738,
 	text = {
 		en = "Tier 0.5 Sets",
 		fr = "Ensembles Tier 0.5",

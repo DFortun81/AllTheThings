@@ -16,7 +16,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	m(NORTHERN_BARRENS, {
 		["lore"] = "Northern Barrens is a dry grassy zone, dotted with farms and few lush oasis. It is primarily a low-level zone for Horde players, but Alliance players can travel to the Steamwheedle Cartel city of Ratchet.",
 		["maps"] = { 11 },	-- Wailing Caverns (Outside instance)
-		["icon"] = "Interface\\Icons\\achievement_zone_barrens_01",
+		["icon"] = 236717,
 		["timeline"] = { ADDED_4_0_3 },
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -141,7 +141,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_RATCHET, {	-- Ratchet
-					["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
+					["icon"] = 133784,
 					["OnTooltip"] = [[_.OnTooltipDB.ForRatchet]],
 					["maps"] = { TANARIS },
 				}),

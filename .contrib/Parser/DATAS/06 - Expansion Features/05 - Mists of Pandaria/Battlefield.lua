@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 BATTLEFIELD_BARRENS = createHeader({
 	readable = "Battlefield: Barrens",
-	icon = "Interface\\Icons\\ability_vehicle_oiljets",
+	icon = 252178,
 	text = {
 		en = "Battlefield: Barrens",
 		es = "Campo de batalla: Los Baldíos",

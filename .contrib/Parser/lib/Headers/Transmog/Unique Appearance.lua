@@ -5,10 +5,10 @@ UNIQUE_APPEARANCE = createHeader({
 	export = true,
 	-- #endif
 	-- #if ANYCLASSIC
-	icon = "Interface\\Icons\\INV_Enchant_ShardBrilliantLarge",
+	icon = 132873,
 	-- #else
 	-- This icon became available in 5.4.2, technically
-	icon = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_EVERYONES A HERO",
+	icon = 413576,
 	-- #endif
 	text = {
 		en = "Unique Appearance",

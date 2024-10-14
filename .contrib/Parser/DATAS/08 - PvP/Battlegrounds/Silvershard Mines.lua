@@ -3,7 +3,7 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(423, {	-- Silvershard Mines
-		["icon"] = "Interface\\Icons\\achievement_battleground_silvershardmines",
+		["icon"] = 622094,
 		["timeline"] = { ADDED_5_0_4 },
 		["g"] = {
 			n(ACHIEVEMENTS, {

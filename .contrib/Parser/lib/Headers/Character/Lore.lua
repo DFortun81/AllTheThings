@@ -1,6 +1,6 @@
 LORE = createHeader({
 	readable = "Lore",
-	icon = "Interface\\Icons\\vas_guildfactionchange",
+	icon = 2437241,
 	text = {
 		en = "Lore",
 		--	es = "TODO",

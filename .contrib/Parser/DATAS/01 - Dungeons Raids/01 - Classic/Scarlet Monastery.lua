@@ -3,7 +3,7 @@
 -----------------------------------------------------
 SCARLET_MONASTERY_GRAVEYARD = createHeader({
 	readable = "Graveyard",
-	icon = "Interface\\Icons\\Inv_misc_bone_humanskull_01",
+	icon = 133730,
 	text = {
 		en = "Graveyard",
 		de = "Friedhof",
@@ -14,7 +14,7 @@ SCARLET_MONASTERY_GRAVEYARD = createHeader({
 });
 SCARLET_MONASTERY_LIBRARY = createHeader({
 	readable = "Library",
-	icon = "Interface\\Icons\\INV_Misc_Book_13",
+	icon = 133745,
 	text = {
 		en = "Library",
 		de = "Bibliothek",
@@ -25,7 +25,7 @@ SCARLET_MONASTERY_LIBRARY = createHeader({
 });
 SCARLET_MONASTERY_ARMORY = createHeader({
 	readable = "Armory",
-	icon = "Interface\\Icons\\inv_helmet_25",
+	icon = 133127,
 	text = {
 		en = "Armory",
 		de = "Waffenkammer",
@@ -36,7 +36,7 @@ SCARLET_MONASTERY_ARMORY = createHeader({
 });
 SCARLET_MONASTERY_CATHEDRAL = createHeader({
 	readable = "Cathedral",
-	icon = "Interface\\Icons\\inv_helmet_12",
+	icon = 133101,
 	text = {
 		en = "Cathedral",
 		de = "Kathedrale",

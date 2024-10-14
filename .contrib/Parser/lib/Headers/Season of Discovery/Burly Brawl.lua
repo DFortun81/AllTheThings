@@ -1,6 +1,6 @@
 BURLY_BRAWL = createHeader({	-- Burly Brawl
 	readable = "Burly Brawl",
-	icon = "Interface\\CURSOR\\Attack",
+	icon = 131013,
 	text = {
 		en = "Burly Brawl",
 		es = "Pelea Corpulenta",

@@ -4,7 +4,7 @@
 -- #if AFTER 7.1.0.22908
 DIABLO_EVENTS = createHeader({
 	readable = "Diablo Events",
-	icon = "Interface\\Icons\\DiabloAnniversary_HoradricCube",
+	icon = 1529348,
 	text = {
 		en = "Diablo Events",
 		ru = "События Diablo",
@@ -13,7 +13,7 @@ DIABLO_EVENTS = createHeader({
 });
 DIABLO_TWENTIETH_ANNIVERSARY = createHeader({
 	readable = "Diablo 20th Anniversary",
-	icon = "Interface\\Icons\\diabloanniversary_achievement",
+	icon = 1529344,
 	text = {
 		en = "Diablo 20th Anniversary",
 		de = "20. Geburtstag von Diablo",
@@ -26,7 +26,7 @@ A_GREEDY_EMISSARY = 1382;
 GREEDY_EMISSARY_EVENT = createHeader({
 	-- https://www.wowhead.com/event=1382/a-greedy-emissary
 	readable = "A Greedy Emissary",
-	icon = "Interface\\Icons\\inv_misc_bag_horadricsatchel",
+	icon = 5160585,
 	eventID = A_GREEDY_EMISSARY,
 	text = {
 		en = "A Greedy Emissary",

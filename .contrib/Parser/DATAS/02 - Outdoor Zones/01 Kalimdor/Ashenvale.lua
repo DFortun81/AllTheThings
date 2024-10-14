@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 	m(ASHENVALE, {
 		["lore"] = "Ashenvale is a beautiful forest and ancestral home of the Night Elves that has recently come under attack by the Horde. The capital city of Astranaar is under attack, as well as the forest from the Warsong Lumber Camp.",
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_ashenvale_01",
+		["icon"] = 236713,
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
@@ -269,7 +269,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			pvp(n(PVP, {
 				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Defeat a Lieutenant
 					readable = "Defeat a Lieutenant",
-					icon = "Interface\\CURSOR\\Attack",
+					icon = 131013,
 					text = {
 						en = "Defeat a Lieutenant",
 						es = "Derrota a un Teniente",
@@ -2816,7 +2816,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				-- #if SEASON_OF_DISCOVERY
 				applyclassicphase(SOD_PHASE_ONE, n(createHeader({	-- Speak to the Dead
 					readable = "Speak to the Dead",
-					icon = "Interface\\CURSOR\\Speak",
+					icon = 131038,
 					text = {
 						en = "Speak to the Dead",
 						es = "Hablar con los Muertos",

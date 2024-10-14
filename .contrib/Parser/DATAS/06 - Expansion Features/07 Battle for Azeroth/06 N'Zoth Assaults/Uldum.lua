@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 VISIONS_OF_NZOTH = createHeader({
 	readable = "Visions of Nzoth",
-	icon = "Interface\\Icons\\Paladin_Protection",
+	icon = 535594,
 	text = {
 		-- #if AFTER 10.1.5
 		en = WOWAPI_GetSpellName(417520),
@@ -19,7 +19,7 @@ VISIONS_OF_NZOTH = createHeader({
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.BFA, {
 	m(NZOTH_ASSAULT_ULDUM, {	-- Uldum (under assault)
-		["icon"] = "Interface\\Icons\\INV_FACTION_83_ULDUMACCORD",
+		["icon"] = 3196264,
 		["crs"] = {
 			162419,	-- Zidormi
 		},

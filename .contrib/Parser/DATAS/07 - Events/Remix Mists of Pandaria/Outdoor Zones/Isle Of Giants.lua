@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(ISLE_OF_GIANTS, {
-		["icon"] = "Interface\\Icons\\ability_hunter_pet_devilsaur",
+		["icon"] = 236192,
 		["g"] = {
 			n(ZONE_REWARDS, {
 				filter(CLOTH, {

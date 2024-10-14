@@ -48,7 +48,7 @@ root(ROOTS.Promotions, {
 				["sourceID"] = 500000,
 				["description"] = "Arena World Championship: TWW Season 1. Sign up on Raider.io for any of the 4 Cups, available until October 13th, and play in atleast two game series (best of 5). Winning not required, for more details & requirements checkout: Raider.io/tournaments/AWC",
 				["timeline"] = { ADDED_11_0_2 },
-				["icon"] = "Interface\\Icons\\Inv_mdi_awc_bannerreward_icons_blue",
+				["icon"] = 4731630,
 				["name"] = "Forged Champion's Prestigious Banner (TOY!)(PVP)"
 			}),
 			i(232301, {	-- Tempered Banner of the Algari (TOY!)
@@ -59,7 +59,7 @@ root(ROOTS.Promotions, {
 				["sourceID"] = 500001,
 				["description"] = "Mythic Dungeon International: TWW Season 1\n\nThe Mythic Dungeon International (MDI) returns with its global competitions, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Tempered Banner of the Algari to use in-game!\nSign-ups close 14 October 2024 1PM PDT and The Time Trials are on 16 October 1PM PDT - 21 October (US) 1PM PDT.",
 				["timeline"] = { ADDED_11_0_2 },
-				["icon"] = "Interface\\Icons\\Inv_mdi_awc_bannerreward_icons_blue",
+				["icon"] = 4731630,
 				["name"] = "Tempered Banner of the Algari (TOY!)(PVE)"
 			}),
 			i(228765, {	-- Gummi (PET!)

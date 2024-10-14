@@ -3,7 +3,7 @@
 -----------------------------------------------------
 THE_FOUR_HORSEMEN = createHeader({
 	readable = "The Four Horsemen",
-	icon = "Interface\\Icons\\Ability_mount_undeadhorse",
+	icon = 132264,
 	text = {
 		en = "The Four Horsemen",
 		es = "Los Cuatro Jinetes",
@@ -58,7 +58,7 @@ applyclassicphase(PHASE_SIX,
 					-- #endif
 					n(QUALITY_LEGENDARY, {
 						["title"] = "Atiesh, Greatstaff of the Guardian",
-						["icon"] = "Interface\\Icons\\INV_Staff_Medivh",
+						["icon"] = 135226,
 						-- #if BEFORE WRATH
 						["lore"] = "Atiesh is one of the most coveted legendaries in the game. In addition to being Best-In-Slot for some specs, it also provides a Unique Party-Wide Bufff:\n\nWarlock: 33 Spell Power and Healing\nMage: 2% Crit\nPriest: 62 Healing\nDruid: 11 Mp5",
 						-- #endif
@@ -1839,7 +1839,7 @@ applyclassicphase(PHASE_SIX,
 						}),
 					}),
 					n(NAXX_ARACHNID_QUARTER, {
-						["icon"] = "Interface\\Icons\\inv_trinket_naxxramas04",
+						["icon"] = 135442,
 						["groups"] = {
 							n(15956, {	-- Anub'Rekhan
 								i(22937),	-- Gem of Nerubis
@@ -1868,7 +1868,7 @@ applyclassicphase(PHASE_SIX,
 						},
 					}),
 					n(NAXX_PLAGUE_QUARTER, {
-						["icon"] = "Interface\\Icons\\Spell_Shadow_PlagueCloud",
+						["icon"] = 136182,
 						["groups"] = {
 							n(15954, {	-- Noth the Plaguebringer
 								i(22816),	-- Hatchet of Sundered Bone
@@ -1899,7 +1899,7 @@ applyclassicphase(PHASE_SIX,
 						},
 					}),
 					n(NAXX_MILITARY_QUARTER, {
-						["icon"] = "Interface\\Icons\\Spell_Shadow_UnholyStrength",
+						["icon"] = 136225,
 						["groups"] = {
 							n(16365, {	-- Master Craftsman Omarion <Brotherhood of the Light>
 								["lore"] = "Omarion is an artisan blacksmithing, leatherworking, and tailoring craftsman. Unfortunately he was gravely injured inside Naxxramas and doesn't have much time left. He is willing to teach other master crafters his knowledge so it doesn't die with him.\n\nOmarion can teach the following plans and patterns to master craftsmen who have the required reputation with the Argent Dawn.",
@@ -2007,7 +2007,7 @@ applyclassicphase(PHASE_SIX,
 						},
 					}),
 					n(NAXX_CONSTRUCT_QUARTER, {
-						["icon"] = "Interface\\Icons\\Spell_Shadow_AbominationExplosion",
+						["icon"] = 136118,
 						["groups"] = {
 							n(16028, {	-- Patchwerk
 								["modelScale"] = 2,
@@ -2049,7 +2049,7 @@ applyclassicphase(PHASE_SIX,
 						},
 					}),
 					n(NAXX_UPPER_NECROPOLIS, {
-						["icon"] = "Interface\\Icons\\inv_misc_head_dragon_blue",
+						["icon"] = 134155,
 						["groups"] = {
 							n(15989, {	-- Sapphiron
 								["modelScale"] = 2,

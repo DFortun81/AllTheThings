@@ -61,7 +61,7 @@ app.CreateObject = app.CreateClass("Object", "objectID", {
 		return app.GetNameFromProviders(t) or ("Object ID #" .. t.objectID);
 	end,
 	icon = function(t)
-		return app.ObjectIcons[t.objectID] or app.GetIconFromProviders(t) or "Interface\\Icons\\INV_Misc_Bag_10";
+		return app.ObjectIcons[t.objectID] or app.GetIconFromProviders(t) or 133639;
 	end,
 	model = function(t)
 		return app.ObjectModels[t.objectID];

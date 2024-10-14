@@ -1,6 +1,6 @@
 SEASON_SINISTER = createHeader({
 	readable = "Sinister Gladiator: Battle for Azeroth Season 2",
-	icon = "Interface\\Icons\\inv_protodrakegladiatormount_blue",
+	icon = 2406660,
 	text = {
 		en = WOWAPI_GetAchievementName(13200),
 	},

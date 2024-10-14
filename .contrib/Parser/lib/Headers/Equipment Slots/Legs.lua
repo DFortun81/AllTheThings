@@ -2,7 +2,7 @@ LEGS = createHeader({
 	readable = "Legs",
 	constant = "LEGS",
 	npcfill = true,
-	icon = "Interface\\Icons\\inv_pants_09",
+	icon = 134589,
 	text = {
 		en = [[~INVTYPE_LEGS]],
 	},

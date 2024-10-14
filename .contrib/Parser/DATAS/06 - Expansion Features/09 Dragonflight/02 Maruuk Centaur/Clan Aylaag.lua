@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 CLAN_AYLAAG = createHeader({
 	readable = "Clan Aylaag",
-	icon = "Interface\\Icons\\ability_racial_returntocamp",
+	icon = 3193420,
 	text = {
 		en = "Clan Aylaag",
 		de = "Klan Aylaag",

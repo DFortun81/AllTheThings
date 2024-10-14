@@ -3,7 +3,7 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(417, {	-- Temple of Kotmogu
-		["icon"] = "Interface\\Icons\\Achievement_battleground_templeofkotmogu",
+		["icon"] = 623704,
 		["timeline"] = { ADDED_5_0_4 },
 		["g"] = {
 			n(ACHIEVEMENTS, {

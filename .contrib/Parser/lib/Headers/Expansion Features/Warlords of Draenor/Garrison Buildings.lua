@@ -4,7 +4,7 @@ BUILDINGS = createHeader({
 	-- #if NOT ANYCLASSIC
 	export = true,	-- This is referenced in topHeaders
 	-- #endif
-	icon = "Interface\\Icons\\inv_garrison_resource",
+	icon = 1005027,
 	text = {
 		en = "Buildings",
 		de = "Gebäude",

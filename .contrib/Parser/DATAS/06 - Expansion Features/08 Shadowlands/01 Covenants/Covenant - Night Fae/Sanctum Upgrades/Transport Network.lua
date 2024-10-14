@@ -5,11 +5,11 @@
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\Inv_misc_sigil_ardenweald01",
+			["icon"] = 3641394,
 			["g"] = {
 				n(TRANSPORT_NETWORK, {
-					["icon"] = "Interface\\Icons\\Sanctum_features_transportationnetwork_ardenweald",
-					["g"] = sharedData({ ["icon"] = "Interface\\Icons\\Sanctum_features_transportationnetwork_ardenweald" }, {
+					["icon"] = 3854017,
+					["g"] = sharedData({ ["icon"] = 3854017 }, {
 						n(ACHIEVEMENTS, {
 							ach(14775, {	-- Mush Appreciated
 								["maps"] = { 1819 },	-- Fungal Terminus

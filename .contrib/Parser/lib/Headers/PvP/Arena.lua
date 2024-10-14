@@ -1,6 +1,6 @@
 ARENA = createHeader({
 	readable = "Arena",
-	icon = "Interface\\Icons\\achievement_arena_2v2_7",
+	icon = 236329,
 	text = {
 		en = [[~ARENA]],
 	},

@@ -151,7 +151,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["sourceQuests"] = { 40604 },	-- Disturbing the Past
 							["provider"] = { "o", 245793 },	-- Battered Journal
 							["coord"] = { 52.3, 33.9, DEADWIND_PASS },
-							["icon"] = "Interface\\Icons\\inv_offhand_1h_draenorcrafted_d_02a",
+							["icon"] = 953644,
 						}),
 						q(40611, {	-- The Fate of Deadwind
 							["sourceQuests"] = { 40606 },	-- To Point the Way

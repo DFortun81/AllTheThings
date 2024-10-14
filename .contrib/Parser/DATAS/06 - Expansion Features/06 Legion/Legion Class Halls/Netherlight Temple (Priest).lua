@@ -30,7 +30,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							q(44341, {	-- Volume III
 								["name"] = "|cFFFFFFFFVolume III|r | New Hearthglen in Northrend.",
 								["description"] = "Book is on top of a bookshelf on the left side of the cloister, on the ground floor.\n\nWorld Spawn - might be on cooldown (60-minute respawn).",
-								["icon"] = "Interface\\Icons\\INV_Misc_Token_ScarletCrusade",
+								["icon"] = 134503,
 								["coords"] = {
 									{ 72.2, 73.4, DRAGONBLIGHT },	-- Entrance to cloister
 									{ 73.2, 72.9, DRAGONBLIGHT },	-- Actual book

@@ -7,7 +7,7 @@ SPECIAL = createHeader({
 	-- #if AFTER LEGION
 	icon = [[~_.asset("Interface_Special")]],
 	-- #else
-	icon = "Interface\\Icons\\inv_sword_40",
+	icon = 135350,
 	-- #endif
 	text = {
 		en = [[~SPECIAL]],

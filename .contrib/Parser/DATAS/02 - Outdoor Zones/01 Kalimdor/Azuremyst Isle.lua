@@ -10,13 +10,13 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 			99,		-- Stillpine Hold
 		},
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_azuremystisle_01",
+		["icon"] = 236715,
 		-- #endif
 		["timeline"] = { ADDED_2_0_1 },
 		["groups"] = {
 			m(AMMEN_VALE, {
 				["lore"] = "Ammen Vale is a small island and subzone off the coast of Azuremyst Isle. It is a lightly forested valley with escape pods, crystals, and smoking bits of the crashed planar ship scattered about the landscape.",
-				["icon"] = "Interface\\Icons\\Spell_Arcane_TeleportExodar",
+				["icon"] = 135756,
 				-- #if BEFORE MOP
 				["zone-text-areas"] = {
 					3526,	-- Ammen Vale

@@ -2,7 +2,7 @@ HEAD = createHeader({
 	readable = "Head",
 	constant = "HEAD",
 	npcfill = true,
-	icon = "Interface\\Icons\\inv_helmet_03",
+	icon = 133071,
 	text = {
 		en = [[~INVTYPE_HEAD]],
 	},

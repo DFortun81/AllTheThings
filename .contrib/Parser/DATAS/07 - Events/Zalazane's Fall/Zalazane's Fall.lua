@@ -3,7 +3,7 @@
 --------------------------------------------
 ZALAZANES_FALL = createHeader({
 	readable = "Zalazane's Fall",
-	icon = "Interface\\Icons\\inv_misc_tournaments_banner_troll",
+	icon = 255135,
 	text = {
 		en = WOWAPI_GetAchievementName(4790),
 	},

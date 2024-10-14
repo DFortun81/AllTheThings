@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 ANCIENT_WAYGATES = createHeader({
 	readable = "Ancient Waygates",
-	icon = "Interface\\Icons\\inv_misc_ancient_mana",
+	icon = 1377394,
 	text = {
 		en = WOWAPI_GetSpellName(386485),
 	},

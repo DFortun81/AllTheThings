@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(KUN_LAI_SUMMIT, {
-		["icon"] = "Interface\\Icons\\achievement_zone_kunlaisummit",
+		["icon"] = 617832,
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(19887, {	-- Campaign: Kun-Lai Summit [A]

@@ -1,6 +1,6 @@
 SOUTH = createHeader({
 	readable = "South",
-	icon = "Interface\\Icons\\misc_arrowdown",
+	icon = 450905,
 	text = {
 		en = "South",
 		fr = "Sud",

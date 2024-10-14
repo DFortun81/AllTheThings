@@ -1,6 +1,6 @@
 FEET = createHeader({
 	readable = "Feet",
-	icon = "Interface\\Icons\\inv_boots_09",
+	icon = 132543,
 	text = {
 		en = [[~INVTYPE_FEET]],
 	},

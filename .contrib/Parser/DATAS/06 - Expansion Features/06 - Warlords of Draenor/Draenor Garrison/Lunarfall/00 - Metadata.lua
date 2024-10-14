@@ -13,7 +13,7 @@ root(ROOTS.ExpansionFeatures,
 					581,	-- Lunarfall Excavation [Level 3]
 				},
 				["isRaid"] = true,
-				["icon"] = "Interface\\Icons\\achievement_garrison_tier01_alliance",
+				["icon"] = 1046782,
 				["description"] = "Lunarfall is the Alliance Garrison, located in Shadowmoon Valley. Several Shadowmoon clan ruins dotted the area before the garrison was built. A fully-upgraded Lunarfall garrison is considered to be a castle.",
 			}),
 		}),

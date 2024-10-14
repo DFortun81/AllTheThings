@@ -22,7 +22,7 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	m(ALTERAC_VALLEY, {
 		["lore"] = "Alterac Valley is a battleground players fight in frosty Alterac between the Frostwolf Clan (Horde) and Stormpike Guard (Alliance). Alterac Valley is notable both for how many people can queue per side (40) as well as how much honor each game rewards.",
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\Achievement_bg_winav",
+		["icon"] = 236388,
 		-- #endif
 		-- #if AFTER 6.0.2
 		["lvl"] = 20,
@@ -228,12 +228,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			-- #endif
 			n(FACTIONS, {
 				faction(FACTION_FROSTWOLF_CLAN, {	-- Frostwolf Clan
-					["icon"] = "Interface\\Icons\\inv_jewelry_frostwolftrinket_05",
+					["icon"] = 133287,
 					["OnTooltip"] = [[_.OnTooltipDB.ForAlteracValley]],
 					["races"] = HORDE_ONLY,
 				}),
 				faction(FACTION_STORMPIKE_GUARD, {	-- Stormpike Guard
-					["icon"] = "Interface\\Icons\\INV_Jewelry_StormPikeTrinket_05",
+					["icon"] = 133433,
 					["OnTooltip"] = [[_.OnTooltipDB.ForAlteracValley]],
 					["races"] = ALLIANCE_ONLY,
 				}),

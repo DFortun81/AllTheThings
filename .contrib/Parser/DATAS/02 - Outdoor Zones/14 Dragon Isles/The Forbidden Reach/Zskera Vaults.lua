@@ -3,7 +3,7 @@
 ---------------------------------------------------
 ZSKERA_VAULTS = createHeader({
 	readable = "Zskera Vaults",
-	icon = "Interface\\Icons\\inv_10_dungeonjewelry_primalist_ring_4_omni",
+	icon = 4638590,
 	text = {
 		en = "Zskera Vaults",
 		es = "Cámaras de Zskera",
@@ -321,7 +321,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				n(TIER_ONE, sharedData({
 					["isWeekly"] = true,
 				},{
-					["icon"] = "Interface\\Icons\\Inv_10_specialreagentfoozles_primalistrune_white",
+					["icon"] = 4643990,
 					["g"] = {
 						o(387507, {	-- Azerite Powder Barrel
 							["g"] = {
@@ -554,7 +554,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				n(TIER_TWO, sharedData({
 					["isWeekly"] = true,
 				},{
-					["icon"] = "Interface\\Icons\\Inv_10_specialreagentfoozles_primalistrune_wind",
+					["icon"] = 4643991,
 					["g"] = {
 						o(386687, {	-- Aged Journal
 							["questID"] = 74610,
@@ -856,7 +856,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				n(TIER_THREE, sharedData({
 					["isWeekly"] = true,
 				},{
-					["icon"] = "Interface\\Icons\\Inv_10_specialreagentfoozles_primalistrune_frost",
+					["icon"] = 4643989,
 					["g"] = {
 						o(392030, {	-- Blacksteel Hammer
 							["g"] = {
@@ -1020,7 +1020,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 				n(TIER_FOUR, sharedData({
 					["isWeekly"] = true,
 				},{
-					["icon"] = "Interface\\Icons\\Inv_10_specialreagentfoozles_primalistrune_fire",
+					["icon"] = 4643988,
 					["g"] = {
 						o(387749, {	-- Animate Crystalspine
 							["coord"] = { 24.5, 51.0, THE_FORBIDDEN_REACH },

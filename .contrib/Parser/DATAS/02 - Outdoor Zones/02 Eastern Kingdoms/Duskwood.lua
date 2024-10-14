@@ -5,7 +5,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(DUSKWOOD, {
 		["lore"] = "Duskwood is a zone in Southern Eastern Kingdoms, warped and cursed due to the Scythe of Elune. Beneath the eternal blanket of darkness which gave Duskwood its current name, the Scythe's effects have transformed what was once a beautiful part of Elwynn Forest into a land covered in gnarled trees and inhabited by the hideous undead and extradimensional Worgen, brought along with the black fog hanging over the woods. Ogres moving in from Deadwind Pass have brought up even more problems.",
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\Achievement_zone_duskwood",
+		["icon"] = 236757,
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {

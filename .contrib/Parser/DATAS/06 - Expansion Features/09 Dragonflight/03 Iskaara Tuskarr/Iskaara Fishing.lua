@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 ISKAARA_FISHING = createHeader({
 	readable = "Iskaara Fishing",
-	icon = "Interface\\Icons\\inv_polearm_2h_kultirasharpoon_a_01",
+	icon = 1911518,
 	text = {
 		en = "Iskaara Fishing",
 		ru = "Искарское рыболовство",

@@ -139,7 +139,7 @@ local SILVERTIP_DREDWING = i(181316, {	-- -- Silvertip Dredwing (MOUNT!)
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2 }, ["customCollect"] = "SL_COV_VEN" }, {
 	n(VENTHYR, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\Inv_misc_sigil_revendreth01",
+			["icon"] = 3641397,
 			["g"] = {
 				n(EMBER_COURT, {
 					["maps"] = { 1644 },	-- Ember Court (Scenario Map)
@@ -926,7 +926,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							},
 						}),
 						n(TIER_ONE, {
-							["icon"] = "Interface\\Icons\\Ui_embercourt-emoji-miserable",
+							["icon"] = 3750312,
 							["g"] = {
 								-- TODO: i tipped the scales toward "formal" as hard as i could in the initial scenario, and got quests for 'formal refreshments' and 'formal entertainment.'  if you tip them towards casual (or land in the middle) what happens?
 								q(59660, {	-- A New Court
@@ -1666,7 +1666,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							},
 						}),
 						n(TIER_TWO, {
-							["icon"] = "Interface\\Icons\\Ui_embercourt-emoji-uncomfortable",
+							["icon"] = 3750313,
 							["g"] = {
 								q(62177, {	-- A Memorable Look
 									["sourceQuests"] = { 61763 },	-- Dredging Up an Assistant
@@ -1830,7 +1830,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							},
 						}),
 						n(TIER_THREE, {
-							["icon"] = "Interface\\Icons\\Ui_embercourt-emoji-happy",
+							["icon"] = 3750311,
 							["g"] = {
 								q(63690, {	-- Alexandros Mograine's Best Friend
 									-- ["minReputation"] = { ,  }, -- TODO, Best Friend w/ Alexandros Mograine?
@@ -1982,7 +1982,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							},
 						}),
 						n(TIER_FOUR, {
-							["icon"] = "Interface\\Icons\\Ui_embercourt-emoji-veryhappy",
+							["icon"] = 3750314,
 							["g"] = {
 								q(60825, {	-- Amateur Spies
 									["isDaily"] = true,
@@ -2065,7 +2065,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							},
 						}),
 						n(TIER_FIVE, {
-							["icon"] = "Interface\\Icons\\Ui_embercourt-emoji-elated",
+							["icon"] = 3750310,
 							["g"] = {
 								q(61945, {	-- The Professionals
 									-- ["sourceQuests"] = {  },	-- TODO

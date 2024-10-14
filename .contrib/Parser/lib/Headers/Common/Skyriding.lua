@@ -1,13 +1,13 @@
 DRAGONRIDING_RACING = createHeader({
 	readable = "Dragonriding Racing",
-	icon = "Interface\\Icons\\inv_checkered_flag",
+	icon = 1100022,
 	text = {
 		en = WOWAPI_GetSpellName(400433),
 	},
 });
 SKYRIDING = createHeader({
 	readable = "Skyriding",
-	icon = "Interface\\Icons\\ability_dragonriding_dragonridinggliding01",
+	icon = 4640486,
 	text = {
 		en = WOWAPI_GetSpellName(415581),
 	},

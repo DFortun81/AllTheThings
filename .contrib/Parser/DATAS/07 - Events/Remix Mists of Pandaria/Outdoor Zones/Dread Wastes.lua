@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(DREAD_WASTES, {
-		["icon"] = "Interface\\Icons\\achievement_zone_dreadwastes",
+		["icon"] = 624970,
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(19890, {	-- Campaign: Dread Wastes

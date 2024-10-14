@@ -1,6 +1,6 @@
 WEST = createHeader({
 	readable = "West",
-	icon = "Interface\\Icons\\misc_arrowleft",
+	icon = 450906,
 	text = {
 		en = "West",
 		fr = "Ouest",

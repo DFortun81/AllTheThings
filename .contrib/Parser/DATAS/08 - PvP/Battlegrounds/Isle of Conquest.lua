@@ -3,7 +3,7 @@
 -----------------------------------------------
 root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 	applyclassicphase(WRATH_PHASE_THREE, m(169, bubbleDown({ ["timeline"] = { ADDED_3_0_2 }, }, {	-- Isle of Conquest
-		["icon"] = "Interface\\Icons\\Achievement_bg_winwsg",
+		["icon"] = 236396,
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(3857, {	-- Master of Isle of Conquest (A)

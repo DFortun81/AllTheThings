@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 WORLDSOUL_MEMORY = createHeader({
 	readable = "Worldsoul Memory",
-	icon = "Interface\\Icons\\spell_azerite_essence08",
+	icon = 2967107,
 	text = {
 		en = WOWAPI_GetSpellName(445256),
 	},

@@ -4,9 +4,9 @@
 TRADING_CARD_GAME = createHeader({
 	readable = "Trading Card Game",
 	-- #if AFTER CATA
-	icon = "Interface\\Icons\\ACHIEVEMENT_GUILDPERK_LADYLUCK",
+	icon = 418250,
 	-- #else
-	icon = "Interface\\Icons\\inv_misc_ticket_tarot_stack_01",
+	icon = 134493,
 	-- #endif
 	text = {
 		en = [[~BATTLE_PET_SOURCE_9]],

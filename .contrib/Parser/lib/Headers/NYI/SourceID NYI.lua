@@ -1,6 +1,6 @@
 SOURCEID_NYI = createHeader({
 	readable = "Source IDs",
-	icon = "Interface\\Icons\\Inv_misc_questionmark",
+	icon = 134400,
 	text = {
 		en = "Source IDs",
 	},

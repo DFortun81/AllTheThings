@@ -3,7 +3,7 @@
 ---------------------------------------------------
 SNIFFENSEEKING = createHeader({
 	readable = "Sniffenseeking",
-	icon = "Interface\\Icons\\inv_pet_mole",
+	icon = 648644,
 	text = {
 		en = "Sniffenseeking",
 		es = "Olfatobúsqueda",

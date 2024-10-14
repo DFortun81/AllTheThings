@@ -19,7 +19,7 @@ app:CreateWindow("Exploration", {
 					if g and #g > 0 then
 						tinsert(g, 1, {	-- Harvest Exploration
 							text = "Harvest Exploration",
-							icon = "Interface\\Icons\\Ability_Vanish",
+							icon = 132331,
 							description = "Click here to attempt to harvest and collect all exploration credit.\n\nNOTE: This will likely take a while, but may correct some exploration issues you may be having.",
 							OnClick = function(row, button)
 								app.HarvestExploration();

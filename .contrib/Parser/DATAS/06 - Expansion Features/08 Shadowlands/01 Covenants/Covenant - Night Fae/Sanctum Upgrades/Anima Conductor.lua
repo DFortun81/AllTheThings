@@ -19,7 +19,7 @@ local STAR_LAKE_AMPHITHEATER = n(-934,   {	-- Star Lake Amphitheater
 	["questID"] = 61633,
 	["isDaily"] = true,
 	["coord"] = { 41.5, 44.8, ARDENWEALD },
-	["icon"] = "Interface\\Icons\\inv_helm_mask_fittedalpha_b_01_nightborne_02",
+	["icon"] = 1354190,
 	["crs"] = { 171743 },	-- Dapperdew
 	["g"] = {
 		n(166135, {	-- Astra, As Azshara <An Infamous Queen>
@@ -78,11 +78,11 @@ local VALFIR = n(168647, {	-- Valfir the Unrelenting
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customCollect"] = "SL_COV_NFA" }, {
 	n(NIGHT_FAE, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\Inv_misc_sigil_ardenweald01",
+			["icon"] = 3641394,
 			["g"] = {
 				n(ANIMA_CONDUCTOR, {
-					["icon"] = "Interface\\Icons\\Sanctum_features_animadiversion_ardenweald",
-					["g"] = sharedData({ ["icon"] = "Interface\\Icons\\Sanctum_features_animadiversion_ardenweald" }, {
+					["icon"] = 3854013,
+					["g"] = sharedData({ ["icon"] = 3854013 }, {
 						n(REWARDS, {
 							["description"] = "Every Activity within Anima Conductor Rewards this.",
 							["g"] = {

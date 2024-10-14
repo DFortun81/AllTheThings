@@ -77,7 +77,7 @@ root(ROOTS.Zones, {
 	m(DRAENOR, {
 		m(SPIRES_OF_ARAK, {
 			["lore"] = "Spires of Arak is a zone in southern Draenor. Previously known only as Arak, it once contained a single massive spire that dominated the forested landscape, before it was sundered by the destruction of the Apexis' Breath of Rukhmar. It is the homeland of arakkoa, who rule over the land from the Skyreach, a majestic palace situated atop the largest spire in the area. Their society, however underwent a great schism between the winged arakkoa and the wingless, who are considered lesser beings by their winged brethren. Many of the wingless arakkoa flee the Spires and pour into Talador, while the Iron Horde's Shattered Hand clan strengthens their presence. Many Azerothians also have built their bases along the coast, such as the Steamwheedle Cartel or the Alliance expedition led by Admiral Taylor.",
-			["icon"] = "Interface\\Icons\\achievement_zone_spiresofarak",
+			["icon"] = 1060981,
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(9605,  {	-- Arak Star
@@ -857,7 +857,7 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 35261 },	-- Shot Caller
 						["provider"] = {"o",232353},	-- Overseer's Chair
 						["coord"] = { 35.5, 32.1, SPIRES_OF_ARAK },
-						["icon"] = "Interface\\Icons\\ability_skyreach_shielded",
+						["icon"] = 1029590,
 						["g"] = {
 							i(114727),	-- Cragplate Legguards
 							i(114729),	-- Ravenchain Leggings
@@ -1396,37 +1396,37 @@ root(ROOTS.Zones, {
 						["sourceQuests"] = { 35286 },	-- Orders, Commander?
 						["coord"] = { 39.6, 61.3, SPIRES_OF_ARAK },
 						["races"] = ALLIANCE_ONLY,
-						["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+						["icon"] = 632821,
 					}),
 					q(35669, {	-- Wanted: Keeho's Severed Paw (Horde)
 						["sourceQuests"] = { 35277 },	-- Orders, Commander?
 						["coord"] = { 40.1, 43.0, SPIRES_OF_ARAK },
 						["races"] = HORDE_ONLY,
-						["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+						["icon"] = 632821,
 					}),
 					q(35675, {	-- Wanted: Spineslicer's Husk (Alliance)
 						["sourceQuests"] = { 35286 },	-- Orders, Commander?
 						["coord"] = { 39.6, 61.3, SPIRES_OF_ARAK },
 						["races"] = ALLIANCE_ONLY,
-						["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+						["icon"] = 632821,
 					}),
 					q(35670, {	-- Wanted: Spineslicer's Husk (Horde)
 						["sourceQuests"] = { 35277 },	-- Orders, Commander?
 						["coord"] = { 40.1, 43.0, SPIRES_OF_ARAK },
 						["races"] = HORDE_ONLY,
-						["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+						["icon"] = 632821,
 					}),
 					q(35676, {	-- Wanted: Venombarb (Alliance)
 						["sourceQuests"] = { 35286 },	-- Orders, Commander?
 						["coord"] = { 39.6, 61.3, SPIRES_OF_ARAK },
 						["races"] = ALLIANCE_ONLY,
-						["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+						["icon"] = 632821,
 					}),
 					q(35672, {	-- Wanted: Venombarb (Horde)
 						["sourceQuests"] = { 35277 },	-- Orders, Commander?
 						["coord"] = { 40.1, 43.0, SPIRES_OF_ARAK },
 						["races"] = HORDE_ONLY,
-						["icon"] = "Interface\\Icons\\INV_Inscription_ScrollOfWisdom_01",
+						["icon"] = 632821,
 					}),
 					warchiefscommand(q(49548, {	-- Warchief's Command: Spires of Arak!
 						["timeline"] = { ADDED_7_3_5 },
@@ -1809,7 +1809,7 @@ root(ROOTS.Zones, {
 						["repeatable"] = true,
 						["questID"] = 36397,
 						["coord"] = { 43.8, 24.7, SPIRES_OF_ARAK },
-						["icon"] = "Interface\\Icons\\inv_potion_122",
+						["icon"] = 134746,
 						["g"] = {
 							i(115463),	-- Elixir of Shadow Sight
 						},
@@ -1818,7 +1818,7 @@ root(ROOTS.Zones, {
 						["repeatable"] = true,
 						["questID"] = 36401,
 						["coord"] = { 53.1, 84.5, SPIRES_OF_ARAK },
-						["icon"] = "Interface\\Icons\\inv_potion_122",
+						["icon"] = 134746,
 						["g"] = {
 							i(115463),	-- Elixir of Shadow Sight
 						},
@@ -1827,7 +1827,7 @@ root(ROOTS.Zones, {
 						["repeatable"] = true,
 						["questID"] = 36398,
 						["coord"] = { 69.2, 43.5, SPIRES_OF_ARAK },
-						["icon"] = "Interface\\Icons\\inv_potion_122",
+						["icon"] = 134746,
 						["g"] = {
 							i(115463),	-- Elixir of Shadow Sight
 						},
@@ -1836,7 +1836,7 @@ root(ROOTS.Zones, {
 						["repeatable"] = true,
 						["questID"] = 36395,
 						["coord"] = { 43.9, 15.0, SPIRES_OF_ARAK },
-						["icon"] = "Interface\\Icons\\inv_potion_122",
+						["icon"] = 134746,
 						["g"] = {
 							i(115463),	-- Elixir of Shadow Sight
 						},
@@ -1845,7 +1845,7 @@ root(ROOTS.Zones, {
 						["repeatable"] = true,
 						["questID"] = 36400,
 						["coord"] = { 55.6, 22.1, SPIRES_OF_ARAK },
-						["icon"] = "Interface\\Icons\\inv_potion_122",
+						["icon"] = 134746,
 						["g"] = {
 							i(115463),	-- Elixir of Shadow Sight
 						},
@@ -1854,7 +1854,7 @@ root(ROOTS.Zones, {
 						["repeatable"] = true,
 						["questID"] = 36399,
 						["coord"] = { 48.9, 62.5, SPIRES_OF_ARAK },
-						["icon"] = "Interface\\Icons\\inv_potion_122",
+						["icon"] = 134746,
 						["g"] = {
 							i(115463),	-- Elixir of Shadow Sight
 						},
@@ -1862,7 +1862,7 @@ root(ROOTS.Zones, {
 					o(235097, {	-- Ephial's Dark Grimoire
 						["questID"] = 36418,
 						["coord"] = { 36.5, 57.9, SPIRES_OF_ARAK },
-						["icon"] = "Interface\\Icons\\inv_potion_122",
+						["icon"] = 134746,
 						["g"] = {
 							i(116914),	-- Ephial's Grimoire
 						},
@@ -1904,7 +1904,7 @@ root(ROOTS.Zones, {
 						["cost"] = {{"i",115463,1}},	-- Elixir of Shadow Sight
 						["questID"] = 36386,
 						["coord"] = { 48.6, 44.4, SPIRES_OF_ARAK },
-						["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
+						["icon"] = 132372,	-- TODO: not working
 						["g"] = {
 							i(118237),	-- Anzu's Malice
 						},
@@ -1914,7 +1914,7 @@ root(ROOTS.Zones, {
 						["cost"] = {{"i",115463,1}},	-- Elixir of Shadow Sight
 						["questID"] = 36388,
 						["coord"] = { 42.42, 26.69, SPIRES_OF_ARAK },
-						["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
+						["icon"] = 132372,	-- TODO: not working
 						["g"] = {
 							i(118242),	-- Anzu's Scorn
 						},
@@ -1924,7 +1924,7 @@ root(ROOTS.Zones, {
 						["cost"] = {{"i",115463,1}},	-- Elixir of Shadow Sight
 						["questID"] = 36389,
 						["coord"] = { 46.9, 40.46, SPIRES_OF_ARAK },
-						["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
+						["icon"] = 132372,	-- TODO: not working
 						["g"] = {
 							i(118238),	-- Anzu's Reach
 						},
@@ -1934,7 +1934,7 @@ root(ROOTS.Zones, {
 						["cost"] = {{"i",115463,1}},	-- Elixir of Shadow Sight
 						["questID"] = 36390,
 						["coord"] = { 57.01, 78.93, SPIRES_OF_ARAK },
-						["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
+						["icon"] = 132372,	-- TODO: not working
 						["g"] = {
 							i(118241),	-- Anzu's Piercing Talon
 						},
@@ -1944,7 +1944,7 @@ root(ROOTS.Zones, {
 						["cost"] = {{"i",115463,1}},	-- Elixir of Shadow Sight
 						["questID"] = 36392,
 						["coord"] = { 52.0, 19.7, SPIRES_OF_ARAK },
-						["icon"] = "Interface\\Icons\\inv-mount_raven_54",	-- TODO: not working
+						["icon"] = 132372,	-- TODO: not working
 						["g"] = {
 							i(118239),	-- Anzu's Stoicism
 						},
@@ -1976,7 +1976,7 @@ root(ROOTS.Zones, {
 					}),
 					o(234154, {	-- Misplaced Scrolls
 						["questID"] = 36244,
-						["icon"] = "Interface\\Icons\\trade_archaeology_silverscrollcase",
+						["icon"] = 454060,
 						["coord"] = { 42.7, 18.3, SPIRES_OF_ARAK },
 						["g"] = {
 							i(109585),	-- Arakkoa Cipher
@@ -2059,37 +2059,37 @@ root(ROOTS.Zones, {
 					}),
 					o(234449, {	-- Relics of the Outcasts
 						["questID"] = 36355,
-						["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+						["icon"] = 1002596,
 						["coord"] = { 43.2, 27.2, SPIRES_OF_ARAK },
 						["description"] = "Must have archaeology.",
 					}),
 					o(234454, {	-- Relics of the Outcasts
 						["questID"] = 36359,
-						["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+						["icon"] = 1002596,
 						["coord"] = { 60.2, 53.8, SPIRES_OF_ARAK },
 						["description"] = "Requires archaeology.",
 					}),
 					o(234446, {	-- Relics of the Outcasts
 						["questID"] = 36354,
-						["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+						["icon"] = 1002596,
 						["coord"] = { 45.9, 44.2, SPIRES_OF_ARAK },
 						["description"] = "Requires archaeology.",
 					}),
 					o(234451, {	-- Relics of the Outcasts
 						["questID"] = 36356,
-						["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+						["icon"] = 1002596,
 						["coord"] = { 67.5, 39.9, SPIRES_OF_ARAK },
 						["description"] = "Requires archaeology.",
 					}),
 					o(234455, {	-- Relics of the Outcasts
 						["questID"] = 36360,
-						["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+						["icon"] = 1002596,
 						["coord"] = { 51.8, 48.9, SPIRES_OF_ARAK },
 						["description"] = "Requires archaeology.",
 					}),
 					o(234155, {	-- Relics of the Outcasts
 						["questID"] = 36245,
-						["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+						["icon"] = 1002596,
 						["coord"] = { 43.0, 16.5, SPIRES_OF_ARAK },
 						["description"] = "Requires archaeology.",
 					}),
@@ -2159,7 +2159,7 @@ root(ROOTS.Zones, {
 					}),
 					o(235135, {	-- Smuggled Apexis Artifacts
 						["questID"] = 36433,
-						["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+						["icon"] = 1002596,
 						["coord"] = { 56.3, 45.3, SPIRES_OF_ARAK },
 						["description"] = "Requires archaeology.",
 					}),
@@ -2176,13 +2176,13 @@ root(ROOTS.Zones, {
 					}),
 					o(235104, {	-- Sun-Touched Cache
 						["questID"] = 36421,
-						["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+						["icon"] = 1002596,
 						["coord"] = { 34.1, 27.5, SPIRES_OF_ARAK },
 						["description"] = "Requires archaeology.",
 					}),
 					o(235105, {	-- Sun-Touched Cache
 						["questID"] = 36422,
-						["icon"] = "Interface\\Icons\\achievement_dungeon_arakkoaspires",
+						["icon"] = 1002596,
 						["coord"] = { 33.3, 27.3, SPIRES_OF_ARAK },
 						["description"] = "Requires archaeology.",
 					}),

@@ -1,6 +1,6 @@
 FACTION_HEADER_ALLIANCE = createHeader({
 	readable = "Alliance",
-	icon = "Interface\\FriendsFrame\\PlusManz-Alliance",
+	icon = 374217,
 	text = {
 		en = [[~FACTION_ALLIANCE]],
 	},

@@ -4,7 +4,7 @@ WAR_EFFORT = createHeader({
 	-- #if AFTER BFA
 	export = true,
 	-- #endif
-	icon = "Interface\\Icons\\Ability_Warrior_OffensiveStance",
+	icon = 132349,
 	text = {
 		en = WOWAPI_GetCategoryName(15308),
 	},

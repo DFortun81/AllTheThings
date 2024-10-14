@@ -3,7 +3,7 @@
 -----------------------------------------------------
 root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ ["timeline"] = { ADDED_10_2_7, REMOVED_MOP_REMIX_END } }, {
 	m(TIMELESS_ISLE, {
-		["icon"] = "Interface\\Icons\\inv_pet_scorchedstone",
+		["icon"] = 294481,
 		["g"] = {
 			n(ACHIEVEMENTS, {
 				ach(20001),		-- Elusive Foes: Timeless Isle (automated)

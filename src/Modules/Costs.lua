@@ -507,7 +507,7 @@ local function BuildCost(group)
 	-- Pop out the cost objects into their own sub-groups for accessibility
 	local costGroup = app.CreateRawText(L.COST, {
 		description = L.COST_DESC,
-		icon = "Interface\\Icons\\INV_Misc_Coin_02",
+		icon = 133785,
 		sourceIgnored = true,
 		OnUpdate = app.AlwaysShowUpdate,
 		skipFill = true,
@@ -560,7 +560,7 @@ local function BuildTotalCost(group)
 	-- Pop out the cost totals into their own sub-groups for accessibility
 	local costGroup = app.CreateRawText(L.COST_TOTAL, {
 		description = L.COST_TOTAL_DESC,
-		icon = "Interface\\Icons\\inv_misc_coinbag_special",
+		icon = 901746,
 		sourceIgnored = true,
 		skipFill = true,
 		SortPriority = -2.4,

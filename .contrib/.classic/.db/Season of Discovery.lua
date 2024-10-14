@@ -163,7 +163,7 @@ end]];
 
 local SEASON_OF_DISCOVERY_HEADER = createHeader({	-- Season of Discovery
 	readable = "Season of Discovery",
-	icon = "Interface\\Icons\\inv_misc_map_01",
+	icon = 134269,
 	constant = "SEASON_OF_DISCOVERY",
 	text = {
 		en = "Season of Discovery",
@@ -440,7 +440,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 	}),
 	n(createHeader({	-- Comprehension
 		readable = "Comprehension",
-		icon = "Interface\\ICONS\\spell_holy_mindsooth",
+		icon = 135933,
 		text = {
 			en = "Comprehension",
 			es = "Comprensión",
@@ -458,7 +458,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			n(REWARDS, {
 				n(createHeader({	-- Tier 1
 					readable = "Comprehension - Tier 1",
-					icon = "Interface\\ICONS\\inv_scroll_01",
+					icon = 134937,
 					text = {
 						en = "Tier 1",
 						es = "Nivel 1",
@@ -493,7 +493,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				}),
 				n(createHeader({	-- Tier 2
 					readable = "Comprehension - Tier 2",
-					icon = "Interface\\ICONS\\inv_scroll_14",
+					icon = 237449,
 					text = {
 						en = "Tier 2",
 						es = "Nivel 2",
@@ -539,7 +539,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 				}),
 				applyclassicphase(SOD_PHASE_TWO, n(createHeader({	-- Tier 3
 					readable = "Comprehension - Tier 3",
-					icon = "Interface\\ICONS\\inv_scroll_11",
+					icon = 237446,
 					text = {
 						en = "Tier 3",
 						es = "Nivel 3",
@@ -930,7 +930,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 	}),
 	n(createHeader({	-- Monster Hunting
 		readable = "Monster Hunting",
-		icon = "Interface\\CURSOR\\Attack",
+		icon = 131013,
 		text = {
 			en = "Monster Hunting",
 			es = "Caza de Monstruos",
@@ -2782,7 +2782,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 	})),
 	n(createHeader({	-- Rune Engraving
 		readable = "Rune Engraving",
-		icon = "Interface\\Icons\\trade_engraving",
+		icon = 136244,
 		text = {
 			en = "Rune Engraving",
 			es = "Grabado",
@@ -3198,7 +3198,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 	}),
 	n(createHeader({	-- Soul Brokers
 		readable = "SOD - Soul Brokers",
-		icon = "Interface\\ICONS\\spell_shadow_lifedrain02",
+		icon = 136169,
 		text = {
 			en = "Soul Brokers",
 			es = "Corredores de Almas",
@@ -3296,7 +3296,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 		["groups"] = {
 			n(createHeader({	-- Inspiration Rank One
 				readable = "SOD - PALADIN - Squire Training - Inspiration Rank One",
-				icon = "Interface\\CURSOR\\Attack",
+				icon = 131013,
 				text = {
 					en = "Inspiration Rank One",
 				},
@@ -3323,7 +3323,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			}),
 			n(createHeader({	-- Inspiration Rank Two
 				readable = "SOD - PALADIN - Squire Training - Inspiration Rank Two",
-				icon = "Interface\\CURSOR\\Attack",
+				icon = 131013,
 				text = {
 					en = "Inspiration Rank Two",
 				},
@@ -3403,7 +3403,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 	})),
 	n(createHeader({	-- Waylaid Supplies
 		readable = "Waylaid Supplies",
-		icon = "Interface\\Icons\\inv_crate_03",
+		icon = 132763,
 		text = {
 			en = "Waylaid Supplies",
 			es = "Suministros asaltados",
@@ -3573,7 +3573,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			}),
 			n(createHeader({	-- Crafted
 				readable = "Crafted",
-				icon = "Interface\\CURSOR\\REPAIRNPC",
+				icon = 131034,
 				text = {
 					en = "Crafted",
 					--[[
@@ -3963,7 +3963,7 @@ root(ROOTS.SeasonOfDiscovery, applyclassicphase(SOD_PHASE_ONE, n(SEASON_OF_DISCO
 			}),
 			n(createHeader({	-- Gathering
 				readable = "Gathering",
-				icon = "Interface\\CURSOR\\Mine",
+				icon = 131025,
 				text = {
 					en = "Gathering",
 					--[[

@@ -152,7 +152,7 @@ local SOUL_MIRROR = 179378;
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH }, ["customCollect"] = "SL_COV_KYR" }, {
 	n(KYRIAN, {
 		n(SANCTUM_UPGRADES, {
-			["icon"] = "Interface\\Icons\\Inv_misc_sigil_bastion01",
+			["icon"] = 3641395,
 			["g"] = {
 				n(PATH_OF_ASCENSION, {
 					["maps"] = { 1711 },	-- Path of Ascension Coliseum
@@ -583,7 +583,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							},
 						}),
 						n(TIER_ONE, {
-							["icon"] = "Interface\\Icons\\Inv_trinket_bastion_02_light",
+							["icon"] = 3536186,
 							["g"] = {
 								n(QUESTS, {
 									q(62218, {	-- A Fountain for Fae
@@ -849,7 +849,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							},
 						}),
 						n(TIER_TWO, {
-							["icon"] = "Interface\\Icons\\Inv_cape_special_bastion_d_03",
+							["icon"] = 3196822,
 							["g"] = {
 								n(QUESTS, {
 									q(61371, {	-- Athanos
@@ -1111,7 +1111,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							},
 						}),
 						n(TIER_THREE, {
-							["icon"] = "Interface\\Icons\\Ability_bastion_rogue",
+							["icon"] = 3565450,
 							["g"] = {
 								n(QUESTS, {
 									q(63181, {	-- Path of Ascension: Artemede's Challenge
@@ -1258,7 +1258,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							},
 						}),
 						n(TIER_FOUR, {
-							["icon"] = "Interface\\Icons\\Ability_bastion_monk",
+							["icon"] = 3565447,
 							["g"] = {
 								n(REWARDS, {
 									n(171873, {	-- Athanos
@@ -1309,7 +1309,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] 
 							},
 						}),
 						n(TIER_FIVE, {
-							["icon"] = "Interface\\Icons\\Ability_bastion_priest",
+							["icon"] = 3565449,
 							["g"] = {
 								n(REWARDS, {
 									title(439,	{	-- <Name> the Ascended (TITLE!)

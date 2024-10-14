@@ -5,7 +5,7 @@ COMMON_DUNGEON_DROP = createHeader({
 	-- #if AFTER WOD
 	export = true,
 	-- #endif
-	icon = "Interface\\Icons\\item_maldraxxus_paragonchest_01",
+	icon = 3753263,
 	text = {
 		en = "Common Dungeon Drop",
 		fr = "Objet commun de donjon",

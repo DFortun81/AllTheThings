@@ -1,6 +1,6 @@
 TANK_ROLE = createHeader({
 	readable = "Tanks",
-	icon = "Interface\\Icons\\ability_warrior_shieldwall",
+	icon = 132362,
 	text = {
 		en = "Tanks",
 		ru = "Танк",

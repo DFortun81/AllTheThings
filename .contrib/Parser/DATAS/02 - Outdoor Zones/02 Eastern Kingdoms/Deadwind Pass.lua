@@ -17,7 +17,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		},
 		-- #endif
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_deadwindpass",
+		["icon"] = 236741,
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {

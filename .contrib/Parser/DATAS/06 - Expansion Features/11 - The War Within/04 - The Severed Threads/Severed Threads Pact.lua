@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 SEVERED_THREADS_PACT = createHeader({
 	readable = "Severed Threads Pact",
-	icon = "Interface\\Icons\\inv_axe_2h_nerubianraid_d_01",
+	icon = 5409320,
 	text = {
 		en = "Severed Threads Pact",
 	},

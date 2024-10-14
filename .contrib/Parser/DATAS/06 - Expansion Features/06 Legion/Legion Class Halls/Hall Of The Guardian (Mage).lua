@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 DAILY_EVENT_ROLL = createHeader({
 	readable = "Daily Event Roll",
-	icon = "Interface\\Icons\\Achievement_Zone_Frostfire",
+	icon = 1031536,
 	text = {
 		en = "Event Roll",
 		es = "Rollo de eventos",
@@ -67,7 +67,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.LEGION, bubbleDown({ ["timelin
 							["isDaily"] = true,
 							["provider"] = { "n", 111704 },	-- Cote "Shepherd" Metcalf
 							["description"] = "If the event roll was successful, you'll see an emote from Cote \"Shepherd\" Metcalf saying \"Success!\".\n\nYou should find a Volatile Sheep on the stairs at the entrance to the class hall. Spam click it.\n\nIf this quest has a checkmark next to it and you didn't see Cote's dialogue emote, then that means that you should come back tomorrow.",
-							["icon"] = "Interface\\Icons\\INV_Staff_2h_SheepStick_D_01",
+							["icon"] = 1384069,
 							["sourceQuests"] = {
 								43787,	-- Cliffwing Hippogryph [Azsuna]
 								43791,	-- Heartwood Doe [Suramar]

@@ -3,7 +3,7 @@
 -----------------------------------------------------
 DIVERGENT = createHeader({
 	readable = "Divergent",
-	icon = "Interface\\Icons\\ability_evoker_reversion2",
+	icon = 4630469,
 	text = {
 		en = "Divergent",
 	},

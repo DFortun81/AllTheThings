@@ -1,6 +1,6 @@
 QUALITY_RARE = createHeader({
 	readable = "Rare",
-	icon = "Interface\\Icons\\Inv_shirt_blue_01",
+	icon = 135023,
 	text = {
 		en = [[~ITEM_QUALITY3_DESC]],
 	},

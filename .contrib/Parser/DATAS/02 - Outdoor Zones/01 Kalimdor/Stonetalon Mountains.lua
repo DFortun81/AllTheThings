@@ -9,7 +9,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["lore"] = "The Stonetalon Mountains are craggy and forbidding. The air is usually hot, though violent rainstorms and severe winds cool the slopes and endanger travelers. The mountains are home to many fierce creatures, including hippogryphs, harpies, drakes, wyverns and kobolds. This region is inhospitable and extreme.",
 		-- #endif
 		-- #if AFTER WRATH
-		["icon"] = "Interface\\Icons\\achievement_zone_stonetalon_01",
+		["icon"] = 236831,
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
