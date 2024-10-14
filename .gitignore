@@ -45,3 +45,4 @@ __pycache__
 .sync.ffs_db
 .DS_Store
 .contrib/.source/Achievement Database Consolidator/bin/
+.contrib/.tools/Wago/
