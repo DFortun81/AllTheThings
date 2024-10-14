@@ -2686,16 +2686,17 @@ app.GetCachedSearchResults = function(method, paramA, paramB, options)
 end
 
 local IsComplete = app.IsComplete
-local function CalculateGroupsCostAmount(g, costID)
+local function CalculateGroupsCostAmount(g, costID, includedHashes)
 	local o, subg, subcost, c
 	local cost = 0
 	for i=1,#g do
 		o = g[i]
 		subcost = o.visible and not IsComplete(o) and o.cost or nil
-		if subcost and type(subcost) == "table" then
+		if not includedHashes[o.hash] and subcost and type(subcost) == "table" then
 			for j=1,#subcost do
 				c = subcost[j]
 				if c[2] == costID then
+					includedHashes[o.hash] = true
 					cost = cost + c[3];
 					break
 				end
@@ -2703,7 +2704,7 @@ local function CalculateGroupsCostAmount(g, costID)
 		end
 		subg = o.g
 		if subg then
-			cost = cost + CalculateGroupsCostAmount(subg, costID)
+			cost = cost + CalculateGroupsCostAmount(subg, costID, includedHashes)
 		end
 	end
 	return cost
@@ -2712,7 +2713,7 @@ end
 app.CalculateTotalCosts = function(group, costID)
 	-- app.PrintDebug("CalculateTotalCosts",group.hash,costID)
 	local g = group and group.g
-	local cost = g and CalculateGroupsCostAmount(g, costID) or 0
+	local cost = g and CalculateGroupsCostAmount(g, costID, {}) or 0
 	-- app.PrintDebug("CalculateTotalCosts",group.hash,costID,"=>",cost)
 	return cost
 end
