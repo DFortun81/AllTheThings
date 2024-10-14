@@ -99,6 +99,20 @@ AssignAPIWrapper("GetItemInfo", C_Item and C_Item.GetItemInfo, GetItemInfo)
 AssignAPIWrapper("GetItemSpecInfo", C_Item and C_Item.GetItemSpecInfo, GetItemSpecInfo)
 ---@diagnostic enable: deprecated
 
+-- Spell APIs
+---@diagnostic disable-next-line: deprecated
+if not GetSpellInfo then
+	lib.GetSpellName = C_Spell.GetSpellName;
+else
+---@diagnostic disable-next-line: deprecated
+	local GetSpellInfo = GetSpellInfo;
+	if app.GameBuildVersion >= 40000 then
+		lib.GetSpellName = function(spellIdentifier) return select(1, GetSpellInfo(spellIdentifier)); end;
+	else
+		lib.GetSpellName = function(spellIdentifier, rank) return rank and select(1, GetSpellInfo(spellIdentifier, rank)) or select(1, GetSpellInfo(spellIdentifier)); end;
+	end
+end
+
 -- Quest APIs
 local C_QuestLog = C_QuestLog;
 AssignAPIWrapper("IsQuestFlaggedCompletedOnAccount",
@@ -146,9 +160,11 @@ C_Spell and C_Spell.GetSpellCooldown and
 -- GetSpellInfo accepts two types of parameters: one is a single parameter "SpellIdentifier", and the other is two parameters "index" and "bookType".
 -- Currently, only the first type is implemented in C_Spell.
 -- GetSpellInfo accpet both of parameters for compatibility reasons.
+--[[
 AssignAPIWrapper("GetSpellName",
 	C_Spell and C_Spell.GetSpellName,
 	GetSpellInfo and
 	function(spellIdentifier, rank)
 	return rank and GetSpellInfo(spellIdentifier, rank) or GetSpellInfo(spellIdentifier) end);
+	]]--
 ---@diagnostic enable: deprecated
