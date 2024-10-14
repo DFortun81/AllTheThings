@@ -69,10 +69,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				faction(FACTION_THUNDER_BLUFF, {	-- Thunder Bluff
 					-- #if AFTER CATA
 					["provider"] = { "i", 45584 },	-- Thunder Bluff Tabard
-					-- #elseif AFTER WRATH
-					["icon"] = "Interface\\Icons\\Achievement_Character_Tauren_Male",
 					-- #else
-					["icon"] = [[~_.asset("Achievement_Character_Tauren_Male")]],
+					["icon"] = 236454,
 					-- #endif
 					["OnTooltip"] = [[_.OnTooltipDB.RuneclothTurnIns]],
 					["races"] = HORDE_ONLY,

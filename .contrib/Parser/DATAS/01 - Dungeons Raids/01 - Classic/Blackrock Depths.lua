@@ -3,22 +3,14 @@
 -----------------------------------------------------
 DETENTION_BLOCK = createHeader({
 	readable = "Detention Block",
-	-- #if AFTER WRATH
-	icon = "Interface\\Icons\\Achievement_Zone_Blackrock_01",
-	-- #else
-	icon = [[~_.asset("Achievement_Zone_Blackrock_01")]],
-	-- #endif
+	icon = 236718,
 	text = {
 		en = [[~DUNGEON_FLOOR_BLACKROCKDEPTHS1]],
 	},
 });
 SHADOWFORGE_CITY = createHeader({
 	readable = "Shadowforge City",
-	-- #if AFTER WRATH
-	icon = "Interface\\Icons\\Achievement_Zone_Blackrock_01",
-	-- #else
-	icon = [[~_.asset("Achievement_Zone_Blackrock_01")]],
-	-- #endif
+	icon = 236718,
 	text = {
 		en = [[~DUNGEON_FLOOR_BLACKROCKDEPTHS2]],
 	},

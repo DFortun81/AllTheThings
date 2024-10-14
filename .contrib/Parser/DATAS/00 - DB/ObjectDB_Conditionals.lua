@@ -235,10 +235,6 @@ ObjectDB[141832].text.de = "Gong von Zul’Farrak";	-- Gong of Zul'Farrak
 ObjectDB[156561].text.ko = "현상수배 전단";	-- Wanted Poster
 -- #endif
 
--- #if BEFORE WRATH
-ObjectDB[164820].icon = [[~_.asset("Achievement_Character_Dwarf_Male")]];	-- Dark Keeper Nameplate
--- #endif
-
 -- #if BEFORE TBC
 ObjectDB[175329].text.es = "Provisiones de nueces del Bosque Negro";	-- Blackwood Nut Stores
 ObjectDB[175330].text.es = "Provisiones de fruta del Bosque Negro";	-- Blackwood Fruit Stores

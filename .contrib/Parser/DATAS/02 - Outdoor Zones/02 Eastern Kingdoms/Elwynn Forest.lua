@@ -17,11 +17,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			m(NORTHSHIRE_VALLEY, {
 				["lore"] = "Northshire was the pride of Stormwind's vineyards until recently when Defias bandits drove off the farmers and occupied the farm and fields. This is where the human starting area is located, though the serene valley is visited by adventurers from all over the world.",
-				-- #if AFTER WRATH
-				["icon"] = "Interface\\Icons\\Achievement_Character_Human_Female",
-				-- #else
-				["icon"] = [[~_.asset("Achievement_Character_Human_Female")]],
-				-- #endif
+				["icon"] = 236447,
 				-- #if BEFORE MOP
 				["zone-text-areas"] = {
 					9,	-- Northshire Valley

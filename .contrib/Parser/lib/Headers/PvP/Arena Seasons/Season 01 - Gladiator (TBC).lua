@@ -1,10 +1,6 @@
 SEASON_GLADIATOR = createHeader({
 	readable = "Gladiator",
-	-- #if BEFORE WRATH
-	icon = [[~_.asset("achievement_featsofstrength_gladiator_01")]],
-	-- #else
-	icon = "Interface\\Icons\\achievement_featsofstrength_gladiator_01",
-	-- #endif
+	icon = 236534,
 	text = {
 		-- #if BEFORE WRATH
 		en = "Gladiator: Season 1",

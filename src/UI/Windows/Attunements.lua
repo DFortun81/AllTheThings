@@ -79,7 +79,7 @@ app:CreateWindow("Attunements", {
 					attunementKeys = { 12382 },	-- Key to the City
 				}),
 				app.CreateMap(250, {	-- Upper Blackrock Spire
-					icon = app.asset("Achievement_Boss_Overlord_Wyrmthalak"),
+					icon = 236429,
 					attunementQuestID = 4743,
 				}),
 				app.CreateMap(232, {	-- Molten Core

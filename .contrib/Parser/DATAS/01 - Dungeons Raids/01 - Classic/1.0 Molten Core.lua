@@ -66,7 +66,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_HYDRAXIAN_WATERLORDS, {	-- Hydraxian Waterlords
-					["icon"] = "Interface\\Icons\\Spell_frost_summonwaterelemental",
+					["icon"] = 135861,
 					["qg"] = 13278,	-- Duke Hydraxis
 					["coord"] = { 79.2, 73.6, AZSHARA },
 					-- #if SEASON_OF_DISCOVERY

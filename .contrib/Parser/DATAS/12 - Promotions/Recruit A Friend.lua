@@ -4,11 +4,7 @@
 -- #if AFTER 2.3.0
 RECRUIT_A_FRIEND = createHeader({
 	readable = "Recruit A Friend",
-	-- #if AFTER WRATH
-	icon = "Interface\\Icons\\achievement_reputation_08",
-	-- #else
-	icon = [[~_.asset("achievement_reputation_08")]],
-	-- #endif
+	icon = 236688,
 	text = {
 		en = [[~REFER_A_FRIEND]],
 	},

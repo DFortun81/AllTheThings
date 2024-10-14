@@ -69,10 +69,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				faction(FACTION_DARNASSUS, {	-- Darnassus
 					-- #if AFTER CATA
 					["provider"] = { "i", 45579 },	-- Darnassus Tabard
-					-- #elseif AFTER WRATH
-					["icon"] = "Interface\\Icons\\Achievement_Character_Nightelf_Female",
 					-- #else
-					["icon"] = [[~_.asset("Achievement_Character_Nightelf_Female")]],
+					["icon"] = 236449,
 					-- #endif
 					["OnTooltip"] = [[_.OnTooltipDB.RuneclothTurnIns]],
 					["races"] = ALLIANCE_ONLY,

@@ -83,10 +83,8 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				faction(FACTION_STORMWIND, {	-- Stormwind
 					-- #if AFTER CATA
 					["provider"] = { "i", 45574 },	-- Stormwind Tabard
-					-- #elseif AFTER WRATH
-					["icon"] = "Interface\\Icons\\Achievement_Character_Human_Female",
 					-- #else
-					["icon"] = [[~_.asset("Achievement_Character_Human_Female")]],
+					["icon"] = 236447,
 					-- #endif
 					["OnTooltip"] = [[_.OnTooltipDB.RuneclothTurnIns]],
 					["races"] = ALLIANCE_ONLY,

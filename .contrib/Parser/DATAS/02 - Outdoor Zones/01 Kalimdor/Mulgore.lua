@@ -14,11 +14,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		["groups"] = {
 			m(CAMP_NARACHE, {
 				["lore"] = "Camp Narache is the starting area and town for the Tauren, which is located in southern Mulgore at the northern edge of the Red Cloud Mesa. Tauren Shamans will find their first totem quest here for the Earth Totem. Camp Narache is the main village of the Hawkwind Tribe, and its Chief is a member of that Tribe.",
-				-- #if AFTER WRATH
-				["icon"] = "Interface\\Icons\\Achievement_Character_Tauren_Male",
-				-- #else
-				["icon"] = [[~_.asset("Achievement_Character_Tauren_Male")]],
-				-- #endif
+				["icon"] = 236454,
 				-- #if BEFORE MOP
 				["zone-text-areas"] = {
 					221,	-- Camp Narache

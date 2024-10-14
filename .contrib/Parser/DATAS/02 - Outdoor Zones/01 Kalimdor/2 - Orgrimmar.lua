@@ -100,10 +100,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				faction(FACTION_DARKSPEAR_TROLLS, {	-- Darkspear Trolls
 					-- #if AFTER CATA
 					["provider"] = { "i", 45582 },	-- Darkspear Tabard
-					-- #elseif AFTER WRATH
-					["icon"] = "Interface\\Icons\\Achievement_Character_Troll_Male",
 					-- #else
-					["icon"] = [[~_.asset("Achievement_Character_Troll_Male")]],
+					["icon"] = 236456,
 					-- #endif
 					["OnTooltip"] = [[_.OnTooltipDB.RuneclothTurnIns]],
 					["races"] = HORDE_ONLY,
@@ -116,10 +114,8 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				faction(FACTION_ORGRIMMAR, {
 					-- #if AFTER CATA
 					["provider"] = { "i", 45581 },	-- Orgrimmar Tabard
-					-- #elseif AFTER WRATH
-					["icon"] = "Interface\\Icons\\Achievement_Character_Orc_Male",
 					-- #else
-					["icon"] = [[~_.asset("Achievement_Character_Orc_Male")]],
+					["icon"] = 236452,
 					-- #endif
 					["OnTooltip"] = [[_.OnTooltipDB.RuneclothTurnIns]],
 					["races"] = HORDE_ONLY,

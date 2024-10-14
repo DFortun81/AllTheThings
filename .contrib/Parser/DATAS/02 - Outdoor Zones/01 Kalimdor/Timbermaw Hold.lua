@@ -3,9 +3,7 @@
 ---------------------------------------------------
 TIMBERMAW_HOLD = createHeader({
 	readable = "Timbermaw Hold",
-	-- #if AFTER WRATH
-	icon = [[~_.asset("achievement_reputation_timbermaw")]],
-	-- #endif
+	icon = 236696,
 	text = {
 		en = [[~C_Map.GetAreaInfo(1769)]],
 	},
@@ -88,9 +86,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_TIMBERMAW_HOLD, {	-- Timbermaw Hold
-					-- #if AFTER WRATH
-					["icon"] = [[~_.asset("achievement_reputation_timbermaw")]],
-					-- #endif
+					["icon"] = 236696,
 					["OnTooltip"] = [[_.OnTooltipDB.ForTimbermawHold]],
 				}),
 			}),

@@ -3,11 +3,7 @@
 -----------------------------------------------------
 LOWER_BLACKROCK_SPIRE = createHeader({
 	readable = "Hordemar City (Lower)",
-	-- #if ANYCLASSIC
-	icon = [[~_.asset("Achievement_Boss_Overlord_Wyrmthalak")]],
-	-- #else
-	icon = "Interface\\Icons\\Achievement_Boss_Overlord_Wyrmthalak",
-	-- #endif
+	icon = 236429,
 	text = {
 		en = [[~DUNGEON_FLOOR_BLACKROCKSPIRE3]],
 	},
@@ -17,7 +13,7 @@ LOWER_BLACKROCK_SPIRE = createHeader({
 });
 UPPER_BLACKROCK_SPIRE = createHeader({
 	readable = "Dragonspire Hall (Upper)",
-	icon = "Interface\\Icons\\INV_Misc_Head_Dragon_01",
+	icon = 134153,
 	text = {
 		en = [[~DUNGEON_FLOOR_UPPERBLACKROCKSPIRE1]],
 	},

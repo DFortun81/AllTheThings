@@ -18,11 +18,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		["groups"] = {
 			m(COLDRIDGE_VALLEY, {
 				["lore"] = "Coldridge Valley is the starting area for young dwarven recruits, and contains the base camp of Anvilmar. It is located in the southwestern corner of Dun Morogh, and is linked to the greater area by Coldridge Pass to the northeast.",
-				-- #if AFTER WRATH
-				["icon"] = "Interface\\Icons\\Achievement_Character_Dwarf_Male",
-				-- #else
-				["icon"] = [[~_.asset("Achievement_Character_Dwarf_Male")]],
-				-- #endif
+				["icon"] = 236444,
 				-- #if BEFORE MOP
 				["zone-text-areas"] = {
 					132,	-- Coldridge Valley
@@ -1314,11 +1310,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			-- #if AFTER 4.0.3
 			m(NEW_TINKERTOWN, {
 				["lore"] = "New Tinkertown is a small town built just outside of Gnomeregan. It is here surviving gnomes teleport to after having escaped their radiated city.",
-				-- #if AFTER WRATH
-				["icon"] = "Interface\\Icons\\Achievement_Character_Gnome_Female",
-				-- #else
-				["icon"] = [[~_.asset("Achievement_Character_Gnome_Female")]],
-				-- #endif
+				["icon"] = 236445,
 				-- #if BEFORE MOP
 				["zone-text-areas"] = {
 					133,	-- New Tinkertown
