@@ -3,7 +3,7 @@
 -----------------------------------------------------
 DISCORD_PROMOTION = createHeader({
 	readable = "Discord Promotion",
-	icon = "133014",
+	icon = 133014,
 	text = {
 		en = "Discord Promotion",
 		cn = "Discord推广",

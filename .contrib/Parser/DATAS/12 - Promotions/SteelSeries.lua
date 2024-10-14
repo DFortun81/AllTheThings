@@ -3,7 +3,7 @@
 -----------------------------------------------------
 STEELSERIES = createHeader({
 	readable = "SteelSeries",
-	icon = "133015",
+	icon = 133015,
 	text = {
 		en = "SteelSeries",
 	},

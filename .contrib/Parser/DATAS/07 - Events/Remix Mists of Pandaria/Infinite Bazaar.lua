@@ -5,7 +5,7 @@ local BRONZE = 2778;
 local BONES_OF_MANNOROTH = 224461;
 INFINITE_BAZARR = createHeader({
 	readable = "Infinite Bazaar",
-	icon = "298656",
+	icon = 298656,
 	text = {
 		en = "Infinite Bazaar",
 	},

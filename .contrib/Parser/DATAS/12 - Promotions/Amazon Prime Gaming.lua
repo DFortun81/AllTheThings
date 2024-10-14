@@ -3,7 +3,7 @@
 -----------------------------------------------------
 AMAZON_PRIME_GAMING = createHeader({
 	readable = "Amazon Prime Gaming",
-	icon = "136101",
+	icon = 136101,
 	text = {
 		en = "Amazon Prime Gaming",
 	},

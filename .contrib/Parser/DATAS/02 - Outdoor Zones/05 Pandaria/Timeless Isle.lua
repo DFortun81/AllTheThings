@@ -3,7 +3,7 @@
 ---------------------------------------------------
 BURDEN_OF_ETERNITY = createHeader({
 	readable = "Burden of Eternity",
-	icon = "775461",
+	icon = 775461,
 	text = {
 		en = WOWAPI_GetSpellName(147343),
 	},
@@ -1952,7 +1952,7 @@ root(ROOTS.Zones, {
 					o(221747),	-- Huge Yak Roast
 					n(createHeader({	-- Kukuru's Cache
 						readable = "Kukuru's Cache",
-						icon = "348554",
+						icon = 348554,
 						text = {
 							en = "Kukuru's Cache",
 							es = "Alijo de Kukuru",

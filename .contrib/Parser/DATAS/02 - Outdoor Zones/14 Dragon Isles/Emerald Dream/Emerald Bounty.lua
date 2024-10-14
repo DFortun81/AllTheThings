@@ -4,7 +4,7 @@
 local SEEDBLOOM = 211376;
 EMERALD_BOUNTY = createHeader({
 	readable = "Emerald Bounty",
-	icon = "464030",
+	icon = 464030,
 	text = {
 		en = "Emerald Bounty",
 		ru = "Изумрудный дар",

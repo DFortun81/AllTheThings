@@ -3,7 +3,7 @@
 -----------------------------------------------------
 WARCRAFT_RUMBLE = createHeader({
 	readable = "Warcraft Rumble",
-	icon = "4226119",
+	icon = 4226119,
 	text = {
 		en = "Warcraft Rumble",
 		cn = "魔兽大作战",

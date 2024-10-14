@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 local BROKEN_MIRROR_INFO = {
 	readable = "Broken Mirror",
-	icon = "3854020",
+	icon = 3854020,
 	text = {
 		en = "Broken Mirror",
 		es = "Espejo roto",

@@ -1,6 +1,6 @@
 FIRST_CRAFTS_HEADER = createHeader({
 	readable = "First Crafts",
-	icon = "4622272",
+	icon = 4622272,
 	text = {
 		en = "First Crafts",
 		-- es = "First Crafts",	--TODO: pluralize
