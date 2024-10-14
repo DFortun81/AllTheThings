@@ -54,7 +54,6 @@ root(ROOTS.Zones, {
 						841,	-- Explore Wetlands
 					}},
 					-- #else
-					["description"] = "Explore the regions of Eastern Kingdoms.",
 					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_EASTERN_KINGDOMS_EXP .. [[); end]],

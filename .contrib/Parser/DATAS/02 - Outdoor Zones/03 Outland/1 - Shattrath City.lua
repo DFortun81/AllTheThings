@@ -608,7 +608,7 @@ root(ROOTS.Zones, {
 			["groups"] = {
 				n(ACHIEVEMENTS, {
 					ach(964, {	-- Going Down?
-						["description"] = "This achievement can be easily earned by riding your epic mount directly off the Scryer elevator when it's at its highest point on to the flat ground below without hitting the bridge. (so jump at an angle)\n\nAdditionally paladins and mages can make themselves immune to get this achievement.",
+						["lore"] = "This achievement can be easily earned by riding your epic mount directly off the Scryer elevator when it's at its highest point on to the flat ground below without hitting the bridge. (so jump at an angle)\n\nAdditionally paladins and mages can make themselves immune to get this achievement.",
 						["timeline"] = { ADDED_3_0_2 },
 					}),
 					ach(906, {	-- Kickin' It Up a Notch
@@ -639,7 +639,7 @@ root(ROOTS.Zones, {
 							{ "i", 31779 },	-- Aldor Tabard
 							{ "i", 31780 },	-- Scryers Tabard
 						},
-						["description"] = "Gained exalted status with The Scryers and The Aldor.\n\nNOTE: This can be accomplished now by learning both faction's Exalted recipes, their tabards, or their equipment that require Exalted reputation to buy. For the sake of simplicity, just buy both tabards as this will also count toward the 25 tabard achievement later.\n\nWARNING: You must maintain at least one of these requirements in order to acquire the achievement with prepatch!",
+						["lore"] = "NOTE: This can be accomplished now by learning both faction's Exalted recipes, their tabards, or their equipment that require Exalted reputation to buy. For the sake of simplicity, just buy both tabards as this will also count toward the 25 tabard achievement later.\n\nWARNING: You must maintain at least one of these requirements in order to acquire the achievement with prepatch!",
 						-- #endif
 					})),
 					applyclassicphase(TBC_PHASE_ONE, achWithAnyReps(903, { FACTION_THE_ALDOR, FACTION_THE_SCRYERS })),	-- Shattrath Divided

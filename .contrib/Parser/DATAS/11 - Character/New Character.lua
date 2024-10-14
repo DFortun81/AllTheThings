@@ -142,7 +142,6 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			["spellID"] = 33388,	-- Apprentice Riding
 			["rank"] = 1,
 			-- #else
-			["description"] = "Learn any of the riding skills.",
 			["OnClick"] = [[_.CommonAchievementHandlers.KNOW_SPELLS_OnClick]],
 			["OnTooltip"] = [[_.CommonAchievementHandlers.KNOW_SPELLS_OnTooltip]],
 			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.KNOW_SPELLS_ANY_OnUpdate(t, 824, 18995, 10907, 826, 10861, 828, 10906, 825); end]],
@@ -181,10 +180,8 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		}),
 		ach(546, {	-- Safe Deposit
 			-- #if BEFORE TBC
-			["description"] = "Buy 6 additional bank slots.",
 			["OnUpdate"] = [[function(t) t:SetAchievementCollected(t.achievementID, GetNumBankSlots() >= 6); end]],
 			-- #elseif BEFORE WRATH
-			["description"] = "Buy 7 additional bank slots.",
 			["OnUpdate"] = [[function(t) t:SetAchievementCollected(t.achievementID, GetNumBankSlots() >= 7); end]],
 			-- #endif
 		}),

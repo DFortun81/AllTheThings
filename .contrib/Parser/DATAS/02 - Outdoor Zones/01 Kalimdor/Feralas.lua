@@ -9,11 +9,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(849, {	-- Explore Feralas
-					-- #if BEFORE WRATH
-					["description"] = "Explore Feralas, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(849),	-- Explore Feralas
 				ach(4932, {	-- Feralas Quests
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

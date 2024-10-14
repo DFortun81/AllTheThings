@@ -1861,11 +1861,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			n(ACHIEVEMENTS, {
-				explorationAch(728, {	-- Explore Durotar
-					-- #if BEFORE WRATH
-					["description"] = "Explore Durotar, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(728),	-- Explore Durotar
 			}),
 			battlepets({
 				pet(635),	-- Adder (PET!)

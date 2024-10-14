@@ -9,11 +9,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(853, {	-- Explore Felwood
-					-- #if BEFORE WRATH
-					["description"] = "Explore Felwood, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(853),	-- Explore Felwood
 				ach(4931, {	-- Felwood Quests
 					["timeline"] = { ADDED_4_0_3},
 					-- #if ANYCLASSIC

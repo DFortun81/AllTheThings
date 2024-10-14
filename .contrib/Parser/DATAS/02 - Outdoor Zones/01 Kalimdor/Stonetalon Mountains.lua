@@ -13,11 +13,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(847, {	-- Explore Stonetalon Mountains
-					-- #if BEFORE WRATH
-					["description"] = "Explore Stonetalon Mountains, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(847),	-- Explore Stonetalon Mountains
 				ach(4936, {	-- Stonetalon Mountains Quests (A)
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,

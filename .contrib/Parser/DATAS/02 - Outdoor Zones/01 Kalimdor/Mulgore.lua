@@ -643,11 +643,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			n(ACHIEVEMENTS, {
-				explorationAch(736, {	-- Explore Mulgore
-					-- #if BEFORE WRATH
-					["description"] = "Explore Mulgore, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(736),	-- Explore Mulgore
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",

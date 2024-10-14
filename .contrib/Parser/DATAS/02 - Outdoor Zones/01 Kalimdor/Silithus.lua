@@ -76,11 +76,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 			}),
 			-- #endif
 			n(ACHIEVEMENTS, {
-				explorationAch(856, {	-- Explore Silithus
-					-- #if BEFORE WRATH
-					["description"] = "Explore Silithus, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(856),	-- Explore Silithus
 				ach(4934, {	-- Silithus Quests
 					["timeline"] = { ADDED_4_0_3 },
 					-- #if AFTER MOP

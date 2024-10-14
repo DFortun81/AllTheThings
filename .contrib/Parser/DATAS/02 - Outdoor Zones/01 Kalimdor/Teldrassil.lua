@@ -851,11 +851,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				},
 			}),
 			n(ACHIEVEMENTS, {
-				explorationAch(842, {	-- Explore Teldrassil
-					-- #if BEFORE WRATH
-					["description"] = "Explore Teldrassil, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(842),	-- Explore Teldrassil
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",

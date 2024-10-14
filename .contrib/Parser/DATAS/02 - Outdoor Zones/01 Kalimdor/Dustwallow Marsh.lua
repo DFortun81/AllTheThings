@@ -131,11 +131,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					-- #endif
 				}),
-				explorationAch(850, {	-- Explore Dustwallow Marsh
-					-- #if BEFORE WRATH
-					["description"] = "Explore Dustwallow Marsh, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(850),	-- Explore Dustwallow Marsh
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",

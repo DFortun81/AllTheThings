@@ -131,7 +131,6 @@ root(ROOTS.Zones, {
 						863,	-- Explore Zangarmarsh
 					}},
 					-- #else
-					["description"] = "Explore the regions of Outland.",
 					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_OUTLAND_EXP .. [[); end]],

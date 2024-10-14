@@ -9,11 +9,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(855, {	-- Explore Moonglade
-					-- #if BEFORE WRATH
-					["description"] = "Explore Moonglade, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(855),	-- Explore Moonglade
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",

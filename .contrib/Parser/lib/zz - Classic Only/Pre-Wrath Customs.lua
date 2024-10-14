@@ -90,7 +90,6 @@ root("Achievements", {
 				940,	-- The Green Hills of Stranglethorn
 			}},
 			-- #else
-			["description"] = "Complete the Green Hills of Stranglethorn, Hills Like White Elekk and Snows of Northrend achievements.",
 			["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
 			["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 939, 938, 940); end]],
@@ -244,7 +243,6 @@ root("Achievements", {
 				841,	-- Explore Wetlands
 			}},
 			-- #else
-			["description"] = "Explore the regions of Eastern Kingdoms.",
 			["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
 			["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_EASTERN_KINGDOMS_EXP .. [[); end]],
@@ -284,7 +282,6 @@ root("Achievements", {
 				857,	-- Explore Winterspring
 			}},
 			-- #else
-			["description"] = "Explore the regions of Kalimdor.",
 			["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
 			["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_KALIMDOR_EXP .. [[); end]],
@@ -321,7 +318,6 @@ root("Achievements", {
 				863,	-- Explore Zangarmarsh
 			}},
 			-- #else
-			["description"] = "Explore the regions of Outland.",
 			["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
 			["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 			["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_ACHCAT_OnUpdate(t, ]] .. ACHIEVEMENT_CATEGORY_OUTLAND_EXP .. [[); end]],

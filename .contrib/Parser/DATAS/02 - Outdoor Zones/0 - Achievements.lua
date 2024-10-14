@@ -94,11 +94,6 @@ root(ROOTS.Zones, {
 			FACTION_GILNEAS,	-- Exalted Gilnaes
 			-- #endif
 		}, {
-			-- #if BEFORE TBC
-			["description"] = "Earn exalted reputation with 4 home cities.",
-			-- #elseif BEFORE WRATH
-			["description"] = "Earn exalted reputation with 5 home cities.",
-			-- #endif
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = ALLIANCE_ONLY,
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {
@@ -114,11 +109,6 @@ root(ROOTS.Zones, {
 			FACTION_BILGEWATER_CARTEL,	-- Exalted Bilgewater Cartel
 			-- #endif
 		}, {
-			-- #if BEFORE TBC
-			["description"] = "Earn exalted reputation with 4 home cities.",
-			-- #elseif BEFORE WRATH
-			["description"] = "Earn exalted reputation with 5 home cities.",
-			-- #endif
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = HORDE_ONLY,
 			["groups"] = applyclassicphase(WRATH_PHASE_ONE, {

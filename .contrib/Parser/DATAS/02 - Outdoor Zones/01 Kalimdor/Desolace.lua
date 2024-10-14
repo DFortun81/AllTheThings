@@ -75,11 +75,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					-- #endif
 					-- #endif
 				}),
-				explorationAch(848, {	-- Explore Desolace
-					-- #if BEFORE WRATH
-					["description"] = "Explore Desolace, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(848),	-- Explore Desolace
 			}),
 			battlepets({
 				["sym"] = {{"select","speciesID",

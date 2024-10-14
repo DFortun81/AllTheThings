@@ -20,11 +20,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
-				explorationAch(750, {	-- Explore The Barrens
-					-- #if BEFORE WRATH
-					["description"] = "Explore The Barrens, revealing the covered areas of the world map.",
-					-- #endif
-				}),
+				explorationAch(750),	-- Explore The Barrens
 			}),
 			explorationHeader({
 				exploration(1700),	-- Agama'gor

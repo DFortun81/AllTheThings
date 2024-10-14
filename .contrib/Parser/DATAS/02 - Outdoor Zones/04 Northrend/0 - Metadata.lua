@@ -90,7 +90,6 @@ root(ROOTS.Zones, {
 						39, 34, 40
 					} },
 					-- #else
-					["description"] = "Complete the Northrend quest achievements listed below.",
 					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 33, 35, 36, 37, 38, 39, 34, 40); end]],
@@ -103,7 +102,6 @@ root(ROOTS.Zones, {
 					-- #if AFTER WRATH
 					["sym"] = { {"meta_achievement", 1358, 1356, 38, 1357, 1359, 39, 36, 40 } },
 					-- #else
-					["description"] = "Complete the Northrend quest achievements listed below.",
 					["OnClick"] = [[_.CommonAchievementHandlers.META_OnClick]],
 					["OnTooltip"] = [[_.CommonAchievementHandlers.META_OnTooltip]],
 					["OnUpdate"] = [[function(t) return _.CommonAchievementHandlers.META_OnUpdate(t, 1358, 1356, 38, 1357, 1359, 39, 36, 40); end]],
