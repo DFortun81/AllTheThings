@@ -672,7 +672,7 @@ app:CreateWindow("RaidAssistant", {
 			if app.CreateLootThreshold then
 				local lootthreshold = {
 					text = "Loot Threshold",
-					icon = "Interface\\Icons\\INV_Misc_Coin_01.blp",
+					icon = "Interface\\Icons\\INV_Misc_Coin_01",
 					description = "Select a new loot threshold.",
 					expanded = true,
 					maximum = 5,

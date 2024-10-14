@@ -2076,7 +2076,7 @@ if app.IsRetail then
 				tinsert(prereqs, {
 					text = L.UPON_COMPLETION,
 					description = L.UPON_COMPLETION_DESC,
-					icon = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
+					icon = "Interface\\Icons\\Spell_Holy_MagicalSentry",
 					visible = true,
 					expanded = true,
 					g = g,
@@ -2225,7 +2225,7 @@ if app.IsRetail then
 			local useNested = app.Settings:GetTooltipSetting("QuestChain:Nested");
 			local questChainHeader = app.CreateRawText(useNested and L.NESTED_QUEST_REQUIREMENTS or L.QUEST_CHAIN_REQ, {
 				description = L.QUEST_CHAIN_REQ_DESC,
-				icon = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
+				icon = "Interface\\Icons\\Spell_Holy_MagicalSentry",
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = app.UI.OnClick.IgnoreRightClick,
 				sourceIgnored = true,

@@ -2272,7 +2272,7 @@ local function OnInitForPopout(self, group)
 					tinsert(prereqs, {
 						["text"] = "Upon Completion",
 						["description"] = "The above quests need to be completed before being able to complete the quest(s) listed below.",
-						["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
+						["icon"] = "Interface\\Icons\\Spell_Holy_MagicalSentry",
 						["visible"] = true,
 						["expanded"] = true,
 						["hideText"] = true,
@@ -2341,7 +2341,7 @@ local function OnInitForPopout(self, group)
 		end
 		self.data = {
 			text = "Quest Chain Requirements",
-			icon = "Interface\\Icons\\Spell_Holy_MagicalSentry.blp",
+			icon = "Interface\\Icons\\Spell_Holy_MagicalSentry",
 			description = "The following quests need to be completed before being able to complete the final quest.",
 			hideText = true,
 			g = g,

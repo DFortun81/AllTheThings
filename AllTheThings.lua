@@ -6390,7 +6390,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window:SetUserPlaced(true);
 	window.data = {
 		['text'] = suffix,
-		['icon'] = "Interface\\Icons\\Ability_Spy.blp",
+		['icon'] = "Interface\\Icons\\Ability_Spy",
 		['visible'] = true,
 		['g'] = {
 			{
@@ -8021,7 +8021,7 @@ customWindowUpdates.CurrentInstance = function(self, force, got)
 				end
 				self:SetData(app.CreateMap(mapID, {
 					["text"] = L.MINI_LIST .. " [" .. mapID .. "]",
-					["icon"] = "Interface\\Icons\\INV_Misc_Map06.blp",
+					["icon"] = "Interface\\Icons\\INV_Misc_Map06",
 					["description"] = L.MINI_LIST_DESC,
 					["visible"] = true,
 					["g"] = {
@@ -8556,7 +8556,7 @@ customWindowUpdates.RaidAssistant = function(self)
 			};
 			lootspecialization = {
 				['text'] = L.LOOT_SPEC,
-				['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome02.blp",
+				['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome02",
 				["description"] = L.LOOT_SPEC_DESC_2,
 				['OnClick'] = function(row, button)
 					self:SetData(raidassistant);
@@ -8570,7 +8570,7 @@ customWindowUpdates.RaidAssistant = function(self)
 						tinsert(data.g, {
 							['text'] = L.CURRENT_SPEC,
 							['title'] = select(2, GetSpecializationInfo(GetSpecialization())),
-							['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome01.blp",
+							['icon'] = "Interface\\Icons\\INV_7XP_Inscription_TalentTome01",
 							['id'] = 0,
 							["description"] = L.CURRENT_SPEC_DESC,
 							['visible'] = true,
@@ -8605,7 +8605,7 @@ customWindowUpdates.RaidAssistant = function(self)
 			};
 			dungeondifficulty = {
 				['text'] = L.DUNGEON_DIFF,
-				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
+				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man",
 				["description"] = L.DUNGEON_DIFF_DESC_2,
 				['OnClick'] = function(row, button)
 					self:SetData(raidassistant);
@@ -8638,7 +8638,7 @@ customWindowUpdates.RaidAssistant = function(self)
 			};
 			raiddifficulty = {
 				['text'] = L.RAID_DIFF,
-				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
+				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man",
 				["description"] = L.RAID_DIFF_DESC_2,
 				['OnClick'] = function(row, button)
 					self:SetData(raidassistant);
@@ -8671,7 +8671,7 @@ customWindowUpdates.RaidAssistant = function(self)
 			};
 			legacyraiddifficulty = {
 				['text'] = L.LEGACY_RAID_DIFF,
-				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man.blp",
+				['icon'] = "Interface\\Icons\\Achievement_Dungeon_UtgardePinnacle_10man",
 				["description"] = L.LEGACY_RAID_DIFF_DESC_2,
 				['OnClick'] = function(row, button)
 					self:SetData(raidassistant);
@@ -9848,7 +9848,7 @@ customWindowUpdates.Tradeskills = function(self, force, got)
 		self:RegisterEvent("GARRISON_TRADESKILL_NPC_CLOSED");
 		self:SetData({
 			['text'] = L.PROFESSION_LIST,
-			['icon'] = "Interface\\Icons\\INV_Scroll_04.blp",
+			['icon'] = "Interface\\Icons\\INV_Scroll_04",
 			["description"] = L.PROFESSION_LIST_DESC,
 			['visible'] = true,
 			["indent"] = 0,
@@ -10341,7 +10341,7 @@ customWindowUpdates.WorldQuests = function(self, force, got)
 				["OnUpdate"] = app.AlwaysShowUpdate,
 			})
 			local data = app.CreateRawText(L.WORLD_QUESTS, {
-				["icon"] = "Interface\\Icons\\INV_Misc_Map08.blp",
+				["icon"] = "Interface\\Icons\\INV_Misc_Map08",
 				["description"] = L.WORLD_QUESTS_DESC,
 				["indent"] = 0,
 				["back"] = 1,
@@ -10884,7 +10884,7 @@ app.LoadDebugger = function()
 					{
 						["hash"] = "clearHistory",
 						['text'] = "Clear History",
-						['icon'] = "Interface\\Icons\\Ability_Rogue_FeignDeath.blp",
+						['icon'] = "Interface\\Icons\\Ability_Rogue_FeignDeath",
 						["description"] = "Click this to fully clear this window.\n\nNOTE: If you click this by accident, use the dynamic Restore Buttons that this generates to reapply the data that was cleared.\n\nWARNING: If you reload the UI, the data stored in the Reload Button will be lost forever!",
 						["OnUpdate"] = app.AlwaysShowUpdate,
 						['count'] = 0,

@@ -751,7 +751,7 @@ local SourceLocationSettingsKey = setmetatable({
 		return "SourceLocations:Things";
 	end
 });
-local UnobtainableTexture = "|T" .. app.asset("status-unobtainable.blp") .. ":0|t";
+local UnobtainableTexture = "|T" .. app.asset("status-unobtainable") .. ":0|t";
 local function HasCost(group, idType, id)
 	-- check if the group has a cost which includes the given parameters
 	if group.cost and type(group.cost) == "table" then
