@@ -2258,6 +2258,11 @@ root(ROOTS.Zones, {
 						},
 					}),
 				}),
+				n(TREASURES, {
+					o(191543, {	-- Scarlet Onslaught Trunk
+						i(40666),	-- Note from the Grand Admiral
+					}),
+				}),
 				n(VENDORS, {
 					n(32538, {	-- Duchess Mynx <Ebon Blade Quartermaster>
 						["coord"] = { 43.4, 20.6, ICECROWN },
