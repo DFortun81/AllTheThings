@@ -375,7 +375,7 @@ for filterID,filterData in pairs({
 	},
 	[60] = {
 		readable = "S.E.L.F.I.E. Camera",
-		icon = "interface/Icons/inv_misc_-selfiecamera_01",
+		icon = 1109100,
 		constant = "SELFIE_CAMERA",
 		text = {
 			en = "S.E.L.F.I.E. Camera",

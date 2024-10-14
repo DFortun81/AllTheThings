@@ -1879,7 +1879,7 @@ end
 CRIEVES_SUPER_COOL_HEADER = createHeader({
 	readable = "Crieve's Super Cool Header",
 	constant = "CRIEVES_SUPER_COOL_HEADER",	-- If you specify a constant, the identifier will become accessible in the addon code (app.HeaderConstants.CRIEVES_SUPER_COOL_HEADER)
-	icon = "interface/ICONS\\Interface_Icon_Lol",
+	icon = 12345,
 	text = {
 		en = "Crieve's Super Cool Header",
 		ru = "TODO: Russion Translation Here",
