@@ -18,9 +18,7 @@ local LYNA_GROUPS = {
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, applyclassicphase(TBC_PHASE_ONE, {
 	m(SILVERMOON_CITY, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 		["lore"] = "Silvermoon City is the capital city of the blood elves. It is located in Eversong Woods, next to the tainted Dead Scar.",
-		-- #if AFTER WRATH
 		["icon"] = 255136,
-		-- #endif
 		["isRaid"] = true,
 		["groups"] = {
 			battlepets({

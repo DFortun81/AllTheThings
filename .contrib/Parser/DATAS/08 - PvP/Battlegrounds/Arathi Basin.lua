@@ -20,7 +20,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 		-- #else
 		["lore"] = "Arathi Basin is a 15v15 battleground located in Arathi Highlands. Players fight over five bases (Stables, Mines, Blacksmith, Lumber Mill, and Farm) which reward teams with resources. The more bases a team controls, the faster they accumulate resources. A team with all five bases captured will gain 30 resources per second.\n\nThe game is won when one team reaches 2000 resources. The most common way of winning is to hold three bases and defend, with the Blacksmith being a key base.",
 		-- #endif
-		-- #if AFTER WRATH
 		["icon"] = 236385,
 		["maps"] = {
 			837,	-- Arathi Basin
@@ -28,7 +27,6 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			1383,	-- Arathi Basin
 			1366,	-- Arathi Basin (BG)
 		},
-		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(1169, {	-- Master of Arathi Basin (Alliance - before 4.3.0)
@@ -138,20 +136,12 @@ root(ROOTS.PVP, pvp(n(BATTLEGROUNDS, {
 			}),
 			n(FACTIONS, {
 				faction(FACTION_THE_DEFILERS, {	-- The Defilers
-					-- #if AFTER WRATH
 					["icon"] = 237568,
-					-- #else
-					["icon"] = 132310,
-					-- #endif
 					["OnTooltip"] = [[_.OnTooltipDB.ForArathiBasin]],
 					["races"] = HORDE_ONLY,
 				}),
 				faction(FACTION_THE_LEAGUE_OF_ARATHOR, {	-- The League of Arathor
-					-- #if AFTER TBC
 					["icon"] = 132351,
-					-- #else
-					["icon"] = 132333,
-					-- #endif
 					["OnTooltip"] = [[_.OnTooltipDB.ForArathiBasin]],
 					["races"] = ALLIANCE_ONLY,
 				}),

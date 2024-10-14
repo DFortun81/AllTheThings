@@ -4,9 +4,7 @@
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(ELWYNN_FOREST, {
 		["lore"] = "Elwynn Forest is the starting zone for Human characters. It is a lush valley with farmers and loggers, with Stormwind City at its center. The mines are infested by kobolds and the farmlands have been taken over by the Defias.",
-		-- #if AFTER WRATH
 		["icon"] = 236761,
-		-- #endif
 		-- #if AFTER CATA
 		["maps"] = {
 			38,	-- Fargodeep Mine Lv1

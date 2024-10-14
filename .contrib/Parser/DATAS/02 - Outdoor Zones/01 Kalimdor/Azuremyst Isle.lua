@@ -9,9 +9,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 			98,		-- Tides' Hollow
 			99,		-- Stillpine Hold
 		},
-		-- #if AFTER WRATH
 		["icon"] = 236715,
-		-- #endif
 		["timeline"] = { ADDED_2_0_1 },
 		["groups"] = {
 			m(AMMEN_VALE, {

@@ -7,9 +7,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 25,	-- Blackrock Mountain (mapID doesn't exist for a couple expansions)
 		-- #endif
-		-- #if AFTER WRATH
 		["icon"] = 254649,
-		-- #endif
 		["maps"] = {
 			BLACKROCK_MOUNTAIN_LEVEL2,	-- Blackrock Caverns
 			BLACKROCK_MOUNTAIN_LEVEL3,	-- Blackrock Depths

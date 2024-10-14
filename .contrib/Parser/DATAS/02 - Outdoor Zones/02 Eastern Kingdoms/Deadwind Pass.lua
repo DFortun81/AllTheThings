@@ -16,9 +16,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 			46,	-- Karazhan Catacombs
 		},
 		-- #endif
-		-- #if AFTER WRATH
 		["icon"] = 236741,
-		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				explorationAch(777),	-- Explore Deadwind Pass

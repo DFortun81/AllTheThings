@@ -321,11 +321,7 @@ for filterID,filterData in pairs({
 	},
 	[55] = {
 		readable = "Consumables (Artifact Power, etc)",
-		-- #if AFTER WRATH
 		icon = 132812,
-		-- #else
-		icon = 132794,
-		-- #endif
 		constant = "CONSUMABLES",
 		text = {
 			en = [[~AUCTION_CATEGORY_CONSUMABLES]],

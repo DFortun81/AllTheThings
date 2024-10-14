@@ -4,9 +4,7 @@
 root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 	m(LOCH_MODAN, {
 		["lore"] = "Loch Modan is a large area east of Dun Morogh, situated in eastern Khaz Modan. It is known for its temperate climate, abandoned archaeological dig site and, until the cataclysm, the huge lake from which the region takes its name. The gray and rugged Khaz Modan mountains rise up on all sides around the loch, and the hills are lightly wooded with pine and birch.\n\nLoch Modan is heavily populated by hostile troggs, unearthed from caves below ground by the dwarven digs. They have since settled in the surrounding mountainous area and built crude camps and caves from which to strike at passing travelers. Other dangers include dangerous wildlife, aggressive kobolds, and the powerful ogres of the Mo'grosh Stronghold.",
-		-- #if AFTER WRATH
 		["icon"] = 236808,
-		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				explorationAch(779),	-- Explore Loch Modan

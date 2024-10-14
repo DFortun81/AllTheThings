@@ -9,9 +9,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 		-- #if BEFORE MOP
 		["zone-text-areaID"] = 2257,	-- Deeprun Tram's mapID doesn't exist until later as well, maybe Cataclysm?
 		-- #endif
-		-- #if AFTER WRATH
 		["icon"] = 133861,
-		-- #endif
 		["groups"] = {
 			n(QUESTS, {
 				q(6661, {	-- Deeprun Rat Roundup

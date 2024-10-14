@@ -8,9 +8,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 		-- #else
 		["lore"] = "Centaur control this rugged wilderness. Desolace is a land of craggy rock faces and stormy skies, and the rampaging centaur let no other race survive. Five centaur tribes strike from individual strongholds, but the great fortress of Maraudon occasionally plays host to them all.",
 		-- #endif
-		-- #if AFTER WRATH
 		["icon"] = 236742,
-		-- #endif
 		["groups"] = {
 			n(ACHIEVEMENTS, {
 				ach(4930, {	-- Desolace Quests

@@ -17,9 +17,7 @@ local REDEMPTION = recipe(7328);	-- Redemption
 root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 	m(THE_EXODAR, bubbleDownSelf({ ["timeline"] = { ADDED_2_0_1 } }, {
 		["lore"] = "The Exodar is the capital city of the Draenei. It is located in the westernmost part of Azuremyst Isle. The Exodar's faction leader is Prophet Velen, who is located near the battlemasters in the Vault of Lights.",
-		-- #if AFTER WRATH
 		["icon"] = 255137,
-		-- #endif
 		["isRaid"] = true,
 		["groups"] = {
 			battlepets({

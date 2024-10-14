@@ -3,11 +3,7 @@
 -----------------------------------------------------
 WARPWOOD_QUARTER = createHeader({
 	readable = "Warpwood Quarter",
-	-- #if AFTER WRATH
 	icon = 236292,
-	-- #else
-	icon = 136218,
-	-- #endif
 	text = {
 		en = [[~DUNGEON_FLOOR_DIREMAUL5.." (East)"]],
 		fr = [[~DUNGEON_FLOOR_DIREMAUL5.." (Est)"]],
@@ -20,11 +16,7 @@ WARPWOOD_QUARTER = createHeader({
 });
 GORDOK_COMMONS = createHeader({
 	readable = "Gordok Commons",
-	-- #if AFTER WRATH
 	icon = 236695,
-	-- #else
-	icon = 132401,
-	-- #endif
 	text = {
 		en = [[~DUNGEON_FLOOR_DIREMAUL1.." (North)"]],
 		fr = [[~DUNGEON_FLOOR_DIREMAUL1.." (Nord)"]],
