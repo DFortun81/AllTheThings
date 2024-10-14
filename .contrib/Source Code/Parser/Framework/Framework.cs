@@ -2358,9 +2358,9 @@ namespace ATT
                 Dictionary<string, StringBuilder> localizationByLocale = new Dictionary<string, StringBuilder>();
                 foreach (var language in new List<string>
                 {
-                    // 8 non-english locales, 9 supported in all. (English is written right away and acts as the default)
-                    "es", "de", "fr", "it",
-                    "pt", "ru", "ko", "cn", "tw",
+                    // 10 non-english locales, 11 supported in all. (English is written right away and acts as the default)
+                    "es", "mx", "de", "fr", "it",
+                    "pt", "ru", "ko", "cn", "tw"
                 })
                 {
                     // Generate a string builder for each language. (an empty builder at the end will not be exported)
@@ -3437,6 +3437,9 @@ namespace ATT
                 SortSupportedLocales(localeKeys);
                 localizationDatabase.AppendLine("-- Supported Locales")
                     .AppendLine("local simplifiedLocale = GetLocale():sub(1,2);");
+                bool containsES = localizationByLocale.TryGetValue("es", out StringBuilder esBuilder) && esBuilder.Length > 0;
+                bool containsMX = localizationByLocale.TryGetValue("mx", out StringBuilder mxBuilder) && mxBuilder.Length > 0;
+                localeKeys.Remove("es"); localeKeys.Remove("mx");
                 bool containsCN = localizationByLocale.TryGetValue("cn", out StringBuilder cnBuilder) && cnBuilder.Length > 0;
                 bool containsTW = localizationByLocale.TryGetValue("tw", out StringBuilder twBuilder) && twBuilder.Length > 0;
                 localeKeys.Remove("cn"); localeKeys.Remove("tw");
@@ -3448,6 +3451,19 @@ namespace ATT
                         localizationDatabase.Append(builder.ToString());
                         localizationDatabase.AppendLine("end");
                     }
+                }
+                if (containsES || containsMX)
+                {
+                    // If both are supported, we need to export it nested so that MX inherits the values from ES, but can still override the exported localization data.
+                    localizationDatabase.AppendLine("if simplifiedLocale == \"es\" then");
+                    if (containsES) localizationDatabase.Append(esBuilder.ToString());
+                    if (containsMX)
+                    {
+                        localizationDatabase.AppendLine("if GetLocale():sub(3,4):lower() == \"mx\" then");
+                        localizationDatabase.Append(mxBuilder.ToString());
+                        localizationDatabase.AppendLine("end");
+                    }
+                    localizationDatabase.AppendLine("end");
                 }
                 if (containsCN || containsTW)
                 {
