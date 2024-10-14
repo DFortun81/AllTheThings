@@ -1565,7 +1565,7 @@ namespace ATT
         #region Lua Conversion
         static StringBuilder ExportIconValue(StringBuilder builder, object iconValue)
         {
-            string icon = iconValue.ToString().Replace("\\", "/");
+            string icon = iconValue.ToString().ToLower().Replace("\\", "/");
             if(long.TryParse(icon, out long iconID) && iconID.ToString() == icon) builder.Append(icon);
             else ExportStringValue(builder, icon);
             return builder;
@@ -1963,7 +1963,7 @@ namespace ATT
                                     else
                                     {
                                         subbuilder.Append("headers");
-                                        ExportStringKeyFieldValue(subbuilder, key, ".icon", "Interface/Icons/inv_misc_questionmark");
+                                        ExportStringKeyFieldValue(subbuilder, key, ".icon", "interface/icons/inv_misc_questionmark");
                                         subbuilder.Append(";");
                                         ExportReadableConstantComment(subbuilder, readable, constant).AppendLine();
                                     }
