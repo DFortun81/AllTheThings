@@ -576,6 +576,19 @@ namespace ATT
         };
 
         /// <summary>
+        /// All of the achievement data that has been loaded into the database.
+        /// NOTE: This is used only for Pre-Wrath Builds of LocalizationDB.
+        /// </summary>
+        internal static Dictionary<long, Dictionary<string, object>> AchievementData { get; private set; } = new Dictionary<long, Dictionary<string, object>>();
+
+
+        /// <summary>
+        /// All of the achievement category data that has been loaded into the database.
+        /// NOTE: This is used only for Pre-Wrath Builds of LocalizationDB.
+        /// </summary>
+        internal static Dictionary<long, Dictionary<string, object>> AchievementCategoryData { get; private set; } = new Dictionary<long, Dictionary<string, object>>();
+
+        /// <summary>
         /// All of the categories that have been loaded into the database.
         /// </summary>
         internal static Dictionary<long, Dictionary<string, object>> CategoryDB { get; private set; } = new Dictionary<long, Dictionary<string, object>>();
@@ -3393,6 +3406,248 @@ namespace ATT
 
                     // Append the file content to our localization database.
                     localizationDatabase.AppendLine(builder.ToString());
+                }
+
+
+
+                // Export the Achievement Data and Criteria DB file.
+                if (SOURCED.TryGetValue("achID", out var referencedAchievementData) && referencedAchievementData.Any())
+                {
+                    CurrentParseStage = ParseStage.ExportAchievementData;
+                    var allAchievementKeys = AchievementData.Keys.ToList();
+                    if (allAchievementKeys.Any())
+                    {
+                        var builder = new StringBuilder("-- Achievement Data Module").AppendLine();
+                        var keys = new List<long>();
+                        var localizationForText = new Dictionary<string, Dictionary<long, string>>();
+                        var localizationForDescriptions = new Dictionary<string, Dictionary<long, string>>();
+                        var referencedCategoryIDs = new Dictionary<long, bool>();
+                        allAchievementKeys.Sort();
+                        foreach (var key in allAchievementKeys)
+                        {
+                            // Include Only Referenced Achievements!
+                            if (referencedAchievementData.ContainsKey(key))
+                            {
+                                if (AchievementData.TryGetValue(key, out var achievement))
+                                {
+                                    keys.Add(key);
+                                    if (achievement.TryGetValue("text", out var value))
+                                    {
+                                        if (!(value is IDictionary<string, object> localeData))
+                                        {
+                                            localeData = new Dictionary<string, object>
+                                            {
+                                                ["en"] = value
+                                            };
+                                        }
+                                        TryColorizeDictionary(localeData);
+                                        foreach (var locale in localeData)
+                                        {
+                                            if (!localizationForText.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                            {
+                                                localizationForText[locale.Key] = sublocale = new Dictionary<long, string>();
+                                            }
+                                            sublocale[key] = locale.Value.ToString();
+                                        }
+                                    }
+                                    if (achievement.TryGetValue("description", out value))
+                                    {
+                                        if (!(value is IDictionary<string, object> localeData))
+                                        {
+                                            localeData = new Dictionary<string, object>
+                                            {
+                                                ["en"] = value
+                                            };
+                                        }
+                                        TryColorizeDictionary(localeData);
+                                        foreach (var locale in localeData)
+                                        {
+                                            if (!localizationForDescriptions.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                            {
+                                                localizationForDescriptions[locale.Key] = sublocale = new Dictionary<long, string>();
+                                            }
+                                            sublocale[key] = locale.Value.ToString();
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        // Get all of the english translations and always write them to the file.
+                        builder.AppendLine("local achievements = {");
+                        localizationForText.TryGetValue("en", out var localizationForTextByKey);
+                        localizationForText.Remove("en");
+                        localizationForDescriptions.TryGetValue("en", out var localizationForDescriptionsByKey);
+                        localizationForDescriptions.Remove("en");
+                        foreach (var key in keys)
+                        {
+                            if (AchievementData.TryGetValue(key, out var achievement))
+                            {
+                                builder.Append("\t[").Append(key).AppendLine("] = {");
+                                if (localizationForTextByKey.TryGetValue(key, out string name))
+                                {
+                                    builder.Append("\t\tname = ");
+                                    ExportStringValue(builder, name).AppendLine(",");
+                                }
+                                if (localizationForDescriptionsByKey.TryGetValue(key, out name))
+                                {
+                                    builder.Append("\t\tdescription = ");
+                                    ExportStringValue(builder, name).AppendLine(",");
+                                }
+                                if (achievement.TryGetValue("icon", out var icon))
+                                {
+                                    builder.Append("\t\ticon = ");
+                                    if (icon is string iconString) ExportStringValue(builder, iconString);
+                                    else builder.Append(icon);
+                                    builder.AppendLine(",");
+                                }
+                                builder.Append("\t\tcategory = ");
+                                if (achievement.TryGetValue("category", out var category))
+                                {
+                                    referencedCategoryIDs[(long)category] = true;
+                                    builder.Append(category);
+                                }
+                                else builder.Append(-1);
+                                builder.AppendLine(",").AppendLine("\t},");
+                            }
+                        }
+                        builder.AppendLine("};\nL.ACHIEVEMENT_DATA = achievements;");
+
+                        // Now grab the non-english localizations and conditionally write them to the file.
+                        foreach (var localePair in localizationForText)
+                        {
+                            if (localePair.Value.Any())
+                            {
+                                var localeBuilder = localizationByLocale[localePair.Key];
+                                localeBuilder.AppendLine("for key,value in pairs({");
+                                foreach (var key in keys)
+                                {
+                                    if (localePair.Value.TryGetValue(key, out string name) && !string.IsNullOrWhiteSpace(name))
+                                    {
+                                        ExportStringKeyValue(localeBuilder, key, name).AppendLine();
+                                    }
+                                }
+                                localeBuilder.AppendLine("})\ndo achievements[key].name = value; end");
+                            }
+                        }
+                        foreach (var localePair in localizationForDescriptions)
+                        {
+                            if (localePair.Value.Any())
+                            {
+                                var localeBuilder = localizationByLocale[localePair.Key];
+                                localeBuilder.AppendLine("for key,value in pairs({");
+                                foreach (var key in keys)
+                                {
+                                    if (localePair.Value.TryGetValue(key, out string name) && !string.IsNullOrWhiteSpace(name))
+                                    {
+                                        ExportStringKeyValue(localeBuilder, key, name).AppendLine();
+                                    }
+                                }
+                                localeBuilder.AppendLine("})\ndo achievements[key].description = value; end");
+                            }
+                        }
+
+                        // Append the file content to our localization database.
+                        localizationDatabase.AppendLine(builder.ToString());
+
+
+                        // Achievement Criteria
+                        builder.Clear();
+                        keys.Clear();
+                        localizationForText.Clear();
+                        localizationForDescriptions.Clear();
+                        allAchievementKeys = AchievementCategoryData.Keys.ToList();
+                        allAchievementKeys.Sort();
+                        foreach (var categoryID in referencedCategoryIDs.Keys.ToList())
+                        {
+                            var parentCategoryID = categoryID;
+                            while (AchievementCategoryData.TryGetValue(parentCategoryID, out var critData))
+                            {
+                                if (critData.TryGetValue("parent", out var parentCriteria))
+                                {
+                                    parentCategoryID = (long)parentCriteria;
+                                    referencedCategoryIDs[parentCategoryID] = true;
+                                    if (parentCategoryID == -1) break;
+                                }
+                            }
+                        }
+                        foreach (var key in allAchievementKeys)
+                        {
+                            // Include Only Referenced Achievements!
+                            if (referencedCategoryIDs.ContainsKey(key))
+                            {
+                                if (AchievementCategoryData.TryGetValue(key, out var achievement))
+                                {
+                                    keys.Add(key);
+                                    if (achievement.TryGetValue("text", out var value))
+                                    {
+                                        if (!(value is IDictionary<string, object> localeData))
+                                        {
+                                            localeData = new Dictionary<string, object>
+                                            {
+                                                ["en"] = value
+                                            };
+                                        }
+                                        TryColorizeDictionary(localeData);
+                                        foreach (var locale in localeData)
+                                        {
+                                            if (!localizationForText.TryGetValue(locale.Key, out Dictionary<long, string> sublocale))
+                                            {
+                                                localizationForText[locale.Key] = sublocale = new Dictionary<long, string>();
+                                            }
+                                            sublocale[key] = locale.Value.ToString();
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        // Get all of the english translations and always write them to the file.
+                        builder.AppendLine("local achievementCategories = {");
+                        localizationForText.TryGetValue("en", out localizationForTextByKey);
+                        localizationForText.Remove("en");
+                        foreach (var key in keys)
+                        {
+                            if (AchievementCategoryData.TryGetValue(key, out var achievement))
+                            {
+                                builder.Append("\t[").Append(key).AppendLine("] = {");
+                                if (localizationForTextByKey.TryGetValue(key, out string name))
+                                {
+                                    builder.Append("\t\tname = ");
+                                    ExportStringValue(builder, name).AppendLine(",");
+                                }
+                                builder.Append("\t\tparent = ");
+                                if (achievement.TryGetValue("parent", out var parent))
+                                {
+                                    builder.Append(parent);
+                                }
+                                else builder.Append(-1);
+                                builder.AppendLine(",").AppendLine("\t},");
+                            }
+                        }
+                        builder.AppendLine("};\nL.ACHIEVEMENT_CATEGORY_DATA = achievementCategories;");
+
+                        // Now grab the non-english localizations and conditionally write them to the file.
+                        foreach (var localePair in localizationForText)
+                        {
+                            if (localePair.Value.Any())
+                            {
+                                var localeBuilder = localizationByLocale[localePair.Key];
+                                localeBuilder.AppendLine("for key,value in pairs({");
+                                foreach (var key in keys)
+                                {
+                                    if (localePair.Value.TryGetValue(key, out string name) && !string.IsNullOrWhiteSpace(name))
+                                    {
+                                        ExportStringKeyValue(localeBuilder, key, name).AppendLine();
+                                    }
+                                }
+                                localeBuilder.AppendLine("})\ndo achievementCategories[key].name = value; end");
+                            }
+                        }
+
+                        // Append the file content to our localization database.
+                        localizationDatabase.AppendLine(builder.ToString());
+                    }
                 }
 
                 // Export the Automatic Localizations (previously en_auto.lua)

@@ -26,6 +26,7 @@
         ExportFlightPathDB,
         ExportObjectDB,
         ExportPhases,
+        ExportAchievementData,
         ExportAddonData,
         ExportAutoSources,
         ExportAutoLocale,

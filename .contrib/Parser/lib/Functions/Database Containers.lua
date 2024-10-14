@@ -59,6 +59,8 @@ end
 end
 
 -- Create the Database Containers.
+AchievementData = CreateDatabaseContainer("AchievementData");
+AchievementCategoryData = CreateDatabaseContainer("AchievementCategoryData");
 CategoryDB = CreateDatabaseContainer("CategoryDB");
 FilterDB = CreateDatabaseContainer("FilterDB");
 FlightPathDB = CreateDatabaseContainer("FlightPathDB");

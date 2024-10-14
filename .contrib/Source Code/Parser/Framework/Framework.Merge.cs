@@ -186,6 +186,134 @@ namespace ATT
                             Log(CurrentFileName);
                             break;
                         }
+                    case "AchievementData":
+                        {
+                            // The format of the Achievement Data DB is a dictionary of Achievement Data ID <-> Achievement pairs.
+                            if (pair.Value is Dictionary<long, object> db)
+                            {
+                                foreach (var keyValuePair in db)
+                                {
+                                    if (keyValuePair.Value is Dictionary<string, object> data)
+                                    {
+                                        if (!AchievementData.TryGetValue(keyValuePair.Key, out Dictionary<string, object> dataEntry))
+                                        {
+                                            AchievementData[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
+                                        }
+
+                                        // Merge over the complex text data.
+                                        if (data.TryGetValue("text", out object textObject))
+                                        {
+                                            data.Remove("text");
+                                            if (textObject is Dictionary<string, object> textLocales)
+                                            {
+                                                if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
+                                                {
+                                                    foreach (var textObjectPair in textLocales)
+                                                    {
+                                                        currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
+                                                    }
+                                                }
+                                                else dataEntry["text"] = textLocales;
+                                            }
+                                            else
+                                            {
+                                                dataEntry["text"] = new Dictionary<string, object>
+                                                {
+                                                    { "en", textObject }
+                                                };
+                                            }
+                                        }
+
+                                        // Merge over the complex text data.
+                                        if (data.TryGetValue("description", out textObject))
+                                        {
+                                            data.Remove("description");
+                                            if (textObject is Dictionary<string, object> textLocales)
+                                            {
+                                                if (dataEntry.TryGetValue("description", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
+                                                {
+                                                    foreach (var textObjectPair in textLocales)
+                                                    {
+                                                        currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
+                                                    }
+                                                }
+                                                else dataEntry["description"] = textLocales;
+                                            }
+                                            else
+                                            {
+                                                dataEntry["description"] = new Dictionary<string, object>
+                                                {
+                                                    { "en", textObject }
+                                                };
+                                            }
+                                        }
+
+                                        // Merge over simple data. (a simple replace is fine)
+                                        foreach (var dataPair in data)
+                                        {
+                                            dataEntry[dataPair.Key] = dataPair.Value;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        ThrowBadFormatDB("AchievementData", keyValuePair);
+                                    }
+                                }
+                            }
+                            break;
+                        }
+                    case "AchievementCategoryData":
+                        {
+                            // The format of the Achievement Category Data DB is a dictionary of Achievement Category Data ID <-> Achievement Category pairs.
+                            if (pair.Value is Dictionary<long, object> db)
+                            {
+                                foreach (var keyValuePair in db)
+                                {
+                                    if (keyValuePair.Value is Dictionary<string, object> data)
+                                    {
+                                        if (!AchievementCategoryData.TryGetValue(keyValuePair.Key, out Dictionary<string, object> dataEntry))
+                                        {
+                                            AchievementCategoryData[keyValuePair.Key] = dataEntry = new Dictionary<string, object>();
+                                        }
+
+                                        // Merge over the complex text data.
+                                        if (data.TryGetValue("text", out object textObject))
+                                        {
+                                            data.Remove("text");
+                                            if (textObject is Dictionary<string, object> textLocales)
+                                            {
+                                                if (dataEntry.TryGetValue("text", out textObject) && textObject is Dictionary<string, object> currentTextLocales)
+                                                {
+                                                    foreach (var textObjectPair in textLocales)
+                                                    {
+                                                        currentTextLocales[textObjectPair.Key] = textObjectPair.Value;
+                                                    }
+                                                }
+                                                else dataEntry["text"] = textLocales;
+                                            }
+                                            else
+                                            {
+                                                dataEntry["text"] = new Dictionary<string, object>
+                                                {
+                                                    { "en", textObject }
+                                                };
+                                            }
+                                        }
+
+                                        // Merge over simple data. (a simple replace is fine)
+                                        foreach (var dataPair in data)
+                                        {
+                                            dataEntry[dataPair.Key] = dataPair.Value;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        ThrowBadFormatDB("AchievementCategoryData", keyValuePair);
+                                    }
+                                }
+                            }
+                            break;
+                        }
                     case "Artifacts":
                         {
                             if (pair.Value is Dictionary<long, object> artifactDB)
