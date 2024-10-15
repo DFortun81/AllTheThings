@@ -3,8 +3,8 @@
 local _, app = ...
 
 -- Globals
-local setmetatable, rawget, select
-	= setmetatable, rawget, select
+local setmetatable, rawget, select,tostring
+	= setmetatable, rawget, select,tostring
 local C_CurrencyInfo_GetCurrencyInfo,C_CurrencyInfo_GetCurrencyLink
 	= C_CurrencyInfo.GetCurrencyInfo,C_CurrencyInfo.GetCurrencyLink;
 
@@ -66,12 +66,16 @@ app.CreateCurrencyClass = app.CreateClass(CLASS, KEY, {
 		if not merge then return end
 		return merge.isCost
 	end,
-	-- trackable = function(t)
-	-- 	return #t.costCollectibles > 0;
-	-- end,
-	-- saved = function(t)
-	-- 	return not t.filledCost and not t.collectibleAsCost;
-	-- end,
+	statistic = function(t)
+		local info = t.info
+		if not info then return end
+		local quantity, maxQuantity = t.info.quantity, t.info.maxQuantity
+		if maxQuantity and maxQuantity > 0 then
+			return tostring(quantity) .. " / " .. tostring(maxQuantity)
+		elseif quantity and quantity > 0 then
+			return tostring(quantity)
+		end
+	end,
 })
 
 local CreateCostCurrency = app.CreateClass("CostCurrency", KEY, {
