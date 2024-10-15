@@ -309,9 +309,11 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(48442, {	-- Nath'raxas Hold: Preparations
 				["provider"] = { "n", 119388 },	-- Chieftain Hatuun
 				["sourceQuests"] = { 48441 },	-- Remnants of Darkfall Ridge
+				["coord"] = { 56.6, 67.6, KROKUUN },
 			}),
 			q(48910, {	-- Supplying Krokuun
 				["provider"] = { "n", 119388 },	-- Chieftain Hatuun
+				["coord"] = { 56.6, 67.6, KROKUUN },
 				["isWeekly"] = true,
 				["sourceQuests"] = { 48442 },	-- Nath'raxas Hold: Preparations
 				["groups"] = {
@@ -330,9 +332,11 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			q(48443, {	-- Nath'raxas Hold: Rescue Mission
 				["provider"] = { "n", 119388 },	-- Chieftain Hatuun
 				["sourceQuests"] = { 48910 },	-- Supplying Krokuun
+				["coord"] = { 56.6, 67.6, KROKUUN },
 			}),
 			q(48634, {	-- Further Supplying Krokuun
 				["provider"] = { "n", 119388 },	-- Chieftain Hatuun
+				["coord"] = { 56.6, 67.6, KROKUUN },
 				["repeatable"] = true,
 				["sourceQuests"] = {
 					48443,	-- Nath'raxas Hold: Rescue Mission

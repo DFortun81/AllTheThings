@@ -965,7 +965,7 @@ root(ROOTS.HiddenQuestTriggers, {
 			expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
 				q(40557),	-- FLAG: Clive Cozen Leave - Triggers after completing Hidden Intentions (40539)
 				q(40302),	-- FLAG - Prospecting 01 - triggered when completing a jewelcrafting world quest in Dalaran
-				q(40303),	-- FLAG - Prospecting 02 - triggered when completing a jewelcrafting world quest in Dalaran
+				q(40303),	-- FLAG - Prospecting 02 - triggered when completing a jewelcrafting world quest in Dalaran, triggered when openning 'Wyrmtongue Cache of Shiny Things' (itemID 153118)
 				q(40304),	-- FLAG - Prospecting 03 - triggered when completing a jewelcrafting world quest in Dalaran
 			})),
 		}),

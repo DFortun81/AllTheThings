@@ -248,9 +248,15 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 						47473,	-- Sizing Up the Opposition (Light's Purchase)
 						48929,	-- Sizing Up the Opposition (The Veiled Den)
 					},
-					["provider"] = { "n", 124312 },	-- High Exarch Turalyon
+					["providers"] = {
+						{ "n", 124312 },	-- High Exarch Turalyon @ Krokuun
+						{ "n", 126954 },	-- High Exarch Turalyon @ Antoran Wastes
+					},
 					["isWeekly"] = true,
-					["coord"] = { 46.7, 24.6, THE_VINDICAAR_KROKUUN_UPPER },
+					["coords"] = {
+						{ 46.7, 24.6, THE_VINDICAAR_KROKUUN_UPPER },
+						{ 33.5, 58.3, THE_VINDICAAR_ANTORAN_WASTES_UPPER },
+					},
 				}),
 				q(48636, {	-- Fueling the Antoran Campaign
 					["sourceQuests"] = { 48912 },	-- Supplying the Antoran Campaign
@@ -290,7 +296,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 				q(47182, {	-- Long Overdue
 					["sourceQuests"] = { 47134 },	-- Foiling the Legion's Jailbreak
 					["provider"] = { "n", 121263 },	-- Grand Artificer Romuul
-					["coord"] = { 43.2, 25.5, THE_VINDICAAR_KROKUUN_UPPER },
+					["coord"] = { 43.3, 23.2, THE_VINDICAAR_KROKUUN_UPPER },
 					["lvl"] = 110,
 				}),
 				q(48074, {	-- Looming Over Me

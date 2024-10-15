@@ -365,6 +365,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					["sourceQuest"] = 82645,
 					["provider"] = { "n", 224184 },	-- Ghos'opp
 					["coord"] = { 39.5, 51.4, AZJ_KAHET },
+					["g"] = {
+						o(438038),	-- Venomancy Flask
+					},
 				}),
 				q(81482, {	-- Testing Formulae: Gelatinous Unguent
 					["sourceQuest"] = 82647,
@@ -497,9 +500,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				q(81504, {	-- Infiltration: Hidden Figures
 					["sourceQuest"] = 82649,
 					["provider"] = { "n", 224201 },	-- Ru'murh
-					["coord"] = { 76.2, 47.4, AZJ_KAHET },
+					["coord"] = { 77.5, 42.9, AZJ_KAHET },
 					["g"] = {
-						i(219358),	-- Bundle of Coded Silks (QI!)
+						o(439382, {	-- Suspicious Shipment
+							i(219358),	-- Bundle of Coded Silks (QI!)
+						}),
 					},
 				}),
 				q(81483, {	-- Infiltration: Production Blocker
@@ -853,6 +858,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 					-- Eirzay   (n: 224162 @ 33.3, 49.1), starts questID 81487 (Breaking the Phalanx: Threadblades), (01-10-24, Exo)
 					-- Eirzay   (n: 224163 @ 27.9, 56.7), starts questID 81488 (Breaking the Phalanx: Schismatic Sages), (04-10-24, Exo)
 					-- Eirzay   (n: 224167 @ 15.6, 45.7), starts questID 81489 (Bounty: Zorikal the Patron), (09-10-24, Exo)
+					-- Ghos'opp (n: 224184 @ 39.5, 51.4), starts questID 81505 (Sabotage: Venomancers), (14-10-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82644, {	-- Ru'murh  (n: 224197 @ 55.7, 47.8), starts questID 81472 (Information Control: Ansurek's Truth), (23-09-24, Exo)
@@ -865,6 +871,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(82646, {	-- Eirzay   (n: 224172 @ 54.5, 63.6), starts questID 81492 (Armaments: Smithing Tools), (23-09-24, Exo)
 					-- Eirzay   (n: 224176 @ 61.4, 24.1), starts questID 81494 (Relics of War: Rak-Zakaz), (28-09-24, Exo)
 					-- Eirzay   (n: 224173 @ 36.4, 49.2), starts questID 81478 (Relics of War: The Ruptured Lake), (04-10-24, Exo)
+					-- Ru'murh  (n: 224201 @ 77.5, 42.9), starts questID 81504 (Infiltration: Hidden Figures), (12-10-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82648, {	-- Ru'murh  (n: 224200 @ 64.2, 75.3), starts questID 81503 (Infiltration: Terror Made Manifest), (23-09-24, Exo)
@@ -873,10 +880,9 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			--q(82643),	-- 'Investiage the scene' from Ru'murh (n: 224195 @ 73.3, 50.9, 2213), start questID 81471 (Dropping Eaves: Saving the Past)
-			--q(82649),	-- 'Consider the missive' from Ru'murh (n: 224201 @ 76.2, 47.4), start questID 81504 (Infiltration: Hidden Figures)
 			-- Missing 5 more quest data/givers
 			--q(82616),	-- 'Gather some reagent' from Ghos-opp (n: 224180 @ 48.4, 61.9), start questID ()
-			-- Missing 11 total quest data/givers, 81505 81497 (and 5 more)
+			-- Missing 11 total quest data/givers, 81497 (and 5 more)
 			q(79698),	-- Triggered after completing questID 79627 (Wine and Die)
 			-- q(80688), -- triggered after completing task for a 'Rumor' (re-capture and narrow down)
 			-- Weaver's Lair Profession Table
