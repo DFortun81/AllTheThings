@@ -702,5 +702,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(84264),	-- The Bloodbound Horror
 		q(84266),	-- Sikran
 		q(84268),	-- Rasha'nan
+
+		-- The Finer Things (Account-Wide Buff tracking) (maybe do something neat to show current level)
+		q(84562),	-- 1st Turn in of 'The Finer Things' (84286)
 	})),
 })))

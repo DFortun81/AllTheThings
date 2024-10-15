@@ -155,14 +155,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					}),
 					q(82960, {	-- Hillhelm Family: Lily's Locket
 						["provider"] = { "i", 224463 },	-- Lily's Locket (QS!/QI!)
-						["isWeekly"] = true,
 					}),
 					q(82959, {	-- Hillhelm Family: Lost Diary
 						["provider"] = { "i", 224460 },	-- The Lost Diary (QS!/QI!)
 					}),
 					q(82961, {	-- Hillhelm Family: The Chicken
 						["provider"] = { "i", 224466 },	-- Wilber The Chicken (QS!/QI!)
-						["isWeekly"] = true,
 					}),
 					q(82967, {	-- Hillhelm Family: The Ear
 						["provider"] = { "i", 224462 },	-- The Ear (QS!/QI!)
@@ -172,11 +170,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					}),
 					q(82964, {	-- Hillhelm Family: Uncle's Eye
 						["provider"] = { "i", 224486 },	-- Uncle's Eye (QS!/QI!)
-						["isWeekly"] = true,
 					}),
 					q(82966, {	-- Hillhelm Family: Unusual Potato
 						["provider"] = { "i", 224465 },	-- Unusual Potato (QS!/QI!)
-						["isWeekly"] = true,
 					}),
 					q(81632, {	-- Lizard Looters
 						["sourceQuests"] = { 78472 },	-- Keyflame: Attica Whiskervale

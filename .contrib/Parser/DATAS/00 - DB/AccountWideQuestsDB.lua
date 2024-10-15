@@ -1293,6 +1293,7 @@ ExportDB.AccountWideQuestsDB = {
 	[76747] = true,
 	[77179] = true,
 	[77181] = true,
+	[77213] = true,	-- Doan's Strongbox
 	[77221] = true,
 	[77236] = true,
 	[77241] = true,

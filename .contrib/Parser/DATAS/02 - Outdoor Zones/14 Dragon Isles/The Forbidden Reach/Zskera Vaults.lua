@@ -929,6 +929,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_7 } }
 						}),
 						o(386648, {	-- Mysterious Scroll
 							["questID"] = 74574,
+							["isWeekly"] = IGNORED_VALUE,
 							["g"] = {
 								i(204802),	-- Scroll of Teleport: Ziskara Vaults
 							},
