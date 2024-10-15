@@ -87,6 +87,14 @@ root(ROOTS.Promotions, {
 				["timeline"] = { ADDED_11_0_2 },
 				["u"] = REAL_MONEY,
 			}),
+			mount(454682, {	-- Startouched Furline (MOUNT!)
+				["description"] = "Obtained if you set up a 12-Month WoW Subscription.",
+				["timeline"] = { ADDED_11_0_2 },
+			}),
+			i(228751, {	-- Gigantic Grrloc (MOUNT!)
+				["description"] = "Obtained if you set up a 12-Month WoW Subscription.",
+				["timeline"] = { ADDED_11_0_2 },
+			}),
 		},
 	}),
 });

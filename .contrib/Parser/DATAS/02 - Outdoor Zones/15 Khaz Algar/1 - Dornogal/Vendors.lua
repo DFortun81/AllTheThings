@@ -395,18 +395,21 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						["cost"] = {{"c", GILDED_HARBINGER_CREST, 15}},
 					}),
 					-- Trade UP
-					-- i(, {	--
-					--	["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
-					-- 	["cost"] = { "c", xx, 90 },
-					-- }),
-					-- i(, {	--
-					--	["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
-					-- 	["cost"] = { "c", xx, 90 },
-					-- }),
-					-- i(, {	--
-					--	["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
-					-- 	["cost"] = { "c", xx, 90 },
-					-- }),
+					i(220767, {	-- Triumphant Satchel of Carved Harbinger Crests
+						["description"] = "Cost: LFR Crest\nReceive: Normal Crest",
+						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+						["cost"] = {{ "c", WEATHERED_HARBINGER_CREST, 90 }},
+					}),
+					i(220773, {	-- Celebratory Pack of Runed Harbinger Crests
+						["description"] = "Cost: Normal Crest\nReceive: Heroic Crest",
+						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+						["cost"] = {{ "c", CARVED_HARBINGER_CREST, 90 }},
+					}),
+					i(220776, {	-- Glorious Cluster of Gilded Harbinger Crests
+						["description"] = "Cost: Heroic Crest\nReceive: Mythic Crest",
+						["timeline"] = { ADDED_11_0_2, REMOVED_11_1_0 },
+						["cost"] = {{ "c", RUNED_HARBINGER_CREST, 90 }},
+					}),
 					-- Season 2
 					-- Season 3
 				},

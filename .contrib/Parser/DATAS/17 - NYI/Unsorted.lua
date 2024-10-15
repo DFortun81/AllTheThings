@@ -997,8 +997,6 @@ root(ROOTS.Unsorted, {
 				i(227294),	-- Ravencrest's Wrath
 			}),
 			f(MISC, {
-				--- Upgrade Crests? ---
-				i(220776),	-- Glorious Cluster of Gilded Harbinger Crests
 				--- Achievement: Gobblin' with Glublurp ---
 				i(225930),	-- Glimmering Crystal
 				--- Chest ---

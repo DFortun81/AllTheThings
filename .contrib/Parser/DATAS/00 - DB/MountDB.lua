@@ -1874,6 +1874,7 @@ i(219391, 446052);	-- Delver's Dirigible
 i(0, 453785);		-- Earthen Ordinant's Ramolith
 i(223274, 447957);	-- Ferocious Jawcrawler
 i(223586, 449466);	-- Forged Gladiator's Fel Bat
+i(228751, 463025);	-- Gigantic Grrloc
 i(0, 457485);		-- Grizzly Hills Packmaster
 i(223278, 448685);	-- Heritage Undercrawler
 i(224415, 452779);	-- Ivory Goliathus
@@ -1891,6 +1892,7 @@ i(224150, 451489);	-- Siesbarg
 i(223572, 449415);	-- Slatestone Ramolith
 i(221753, 447057);	-- Smoldering Cinderbee
 i(223153, 447151);	-- Soaring Meaderbee
+i(0, 454682);		-- Startouched Furline
 i(221765, 442358);	-- Stonevault Mechsuit
 i(224147, 451486);	-- Sureki Skyrazor
 i(223267, 447195);	-- Swarmite Skyhunter

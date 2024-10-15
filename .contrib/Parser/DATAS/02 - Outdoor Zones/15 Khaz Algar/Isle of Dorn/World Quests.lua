@@ -150,6 +150,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(83070, {	-- Special Assignment: Titanic Resurgence
 					--["coord"] = { x, y, ISLE_OF_DORN },
 				}),
+				q(81647, {	-- Special Assignment: Titanic Resurgence
+					["coord"] = { 31.8, 71.3, ISLE_OF_DORN },
+				}),
 			}),
 		}),
 	}),

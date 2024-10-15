@@ -975,13 +975,5 @@ root(ROOTS.NeverImplemented, filter(MOUNTS, {
 				["displayID"] = 119685,
 			}),
 		})),
-
-		-- 11.0.2
-		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_2 } }, {
-			-- Without mountID attached
-			i(228751, {	-- Gigantic Grrloc (MOUNT!) [In-Game Shop?]
-				["displayID"] = 122129,
-			}),
-		})),
 	}),
 }));
