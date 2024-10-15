@@ -1567,6 +1567,7 @@ ExportDB.AccountWideQuestsDB = {
 	[84519] = true,	-- Ancient Curiosity: Combat
 	[84520] = true,	-- Ancient Curiosity: Utility
 	[84542] = true,	-- A Radiant Echo
+	[84562] = true, -- The Finer Things: #1
 	[85531] = true,	-- Earth-Encrusted Gem
 	[85532] = true,	-- The Wealth of a Kingdom
 	[85533] = true,	-- Kej
