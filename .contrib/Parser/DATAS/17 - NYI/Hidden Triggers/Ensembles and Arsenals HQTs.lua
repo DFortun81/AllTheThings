@@ -856,6 +856,12 @@ q(78086),	-- Ensemble: Raiment of Amirdrassi
 
 --- The War Within
 q(82261),	-- Ensemble: Cerulean Dredger
+TODO
+q()	-- Ensemble: Brunnhildar Scout's Kit
+q()	-- Ensemble: Coldarra Spellbinder's Regalia
+q()	-- Ensemble: Drakkari Stalker's Trappings
+q()	-- Ensemble: Jotunheim Berserker's Battleplate
+q()	-- Ensemble: Ymirjar Deathbringer's Battleplate
 
 -- Dornogal Ensemble Vendor
 q(81534),	-- Arcane Peddler's Trinkets

@@ -1805,99 +1805,107 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 							["timeline"] = { ADDED_11_0_5 },
 						}),
 					})),
-					filter(COSMETIC, sharedDataSelf({ ["timeline"] = { ADDED_11_0_5 } }, {	-- All of These Needs Cost added later //Braghe
+					filter(COSMETIC, sharedDataSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 						i(232042, {	-- Azure Magus' Blade
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
 						}),
 						i(232291, {	-- Battered Bulwark of the Argent Crusade
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
 						}),
 						i(232058, {	-- Ceremonial Stratholme Shield
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
 						}),
 						i(232060, {	-- Coldarra Spellbinder's Stave
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
 						}),
 						i(232043, {	-- Crystal-Maw Basher
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
 						}),
 						i(232019, {	-- Dark Ritualists Spellblade
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
 						}),
 						i(231999, {	-- Dragonflayer's Heartpiercer
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
 						}),
 						i(232027, {	-- Dragonflayer's Iron Cleaver
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
 						}),
 						i(232052, {	-- Dragonflayer's Wing Splitter
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
 						}),
 						i(232063, {	-- Drakkari Head Splitter
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
 						}),
 						i(232026, {	-- Drakkari Voodoo Stick
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
 						}),
 						iensemble(232316, {	-- Ensemble: Brunnhildar Scout's Kit
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
 						}),
 						iensemble(232313, {	-- Ensemble: Coldarra Spellbinder's Regalia
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
 						}),
 						iensemble(232317, {	-- Ensemble: Drakkari Stalker's Trappings
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
 						}),
 						iensemble(232314, {	-- Ensemble: Jotunheim Berserker's Battleplate
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
 						}),
 						iensemble(232315, {	-- Ensemble: Ymirjar Deathbringer's Battleplate
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
+						}),
+						i(232476, {	-- Explorer's League Tabard
+							["cost"] = {{"c", TIMEWARPED_BADGE, 500}},
+							["races"] = ALLIANCE_ONLY,
 						}),
 						i(232025, {	-- Frost Giant's Claws
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
 						}),
 						i(232000, {	-- Frosted Ymirheim Battle Bow
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1500}},
 						}),
 						i(232078, {	-- Ghostly Titan Astrolabe
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
 						}),
 						i(232055, {	-- Griffon's Teeth Ripper
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+						}),
+						i(232477, {	-- Hand of Vengeance Tabard
+							["cost"] = {{"c", TIMEWARPED_BADGE, 500}},
+							["races"] = HORDE_ONLY,
 						}),
 						i(232066, {	-- Icefrost Focuser
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}}, TODO, still not on vendor?
 						}),
 						i(232004, {	-- Ironforge Hammerhead Rifle
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
 						}),
 						i(232064, {	-- Leviathan Mk II Crowd Control Blade
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
 						}),
 						i(232008, {	-- Magehunter's Ornate Dagger
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
 						}),
 						i(232020, {	-- Stormforged Short Blade
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
 						}),
 						i(232059, {	-- Tainted Keeper's Visage
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
 						}),
 						i(232041, {	-- Titan-Spark Longblade
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
 						}),
 						i(232010, {	-- Vrykul Gutripper
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
 						}),
 						i(232028, {	-- Warsong Coldweather Cleaver
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1200}},
 						}),
 						i(232003, {	-- Wolf-Eyed Sharpshooter
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
 						}),
 						i(232056, {	-- Ymirjar Battle Harpoon
-							--["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
+							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
 						}),
 					})),
 					filter(MISC, {
