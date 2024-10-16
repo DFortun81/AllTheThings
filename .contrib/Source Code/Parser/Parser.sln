@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "Parser.csproj", "{47D83200-8E21-487B-8F44-B08C7A1CBC82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Parser", "Parser.csproj", "{47D83200-8E21-487B-8F44-B08C7A1CBC82}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSVCleaner", "..\CSVCleaner\CSVCleaner.csproj", "{97F33281-E45C-4940-9275-987C16854C2C}"
 EndProject

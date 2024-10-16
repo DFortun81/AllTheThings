@@ -1,17 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{47D83200-8E21-487B-8F44-B08C7A1CBC82}</ProjectGuid>
+    <TargetFramework>net48</TargetFramework>
     <OutputType>Exe</OutputType>
     <RootNamespace>ATT</RootNamespace>
-    <AssemblyName>Parser</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile />
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
@@ -27,122 +18,34 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <NuGetPackageImportStamp>
-    </NuGetPackageImportStamp>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>lib\att_logo_128_new_jrX_icon.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>ATT.Program</StartupObject>
+    <BaseOutputPath>..\..\Parser</BaseOutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
-    <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE;RETAIL;TWW</DefineConstants>
-    <Optimize>true</Optimize>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
-    <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>TRACE;DEBUG;RETAIL;TWW</DefineConstants>
-    <DebugType>full</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
-    <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
-    <OutputPath>bin\x64\Release\</OutputPath>
     <DefineConstants>TRACE;RETAIL;TWW</DefineConstants>
-    <Optimize>true</Optimize>
-    <PlatformTarget>x64</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
-    <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
-    <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\x64\Debug\</OutputPath>
     <DefineConstants>TRACE;DEBUG;RETAIL;TWW</DefineConstants>
-    <DebugType>full</DebugType>
-    <PlatformTarget>x64</PlatformTarget>
-    <LangVersion>7.3</LangVersion>
-    <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Csv, Version=2.0.93.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Csv.2.0.93\lib\net40\Csv.dll</HintPath>
-    </Reference>
-    <Reference Include="KeraLua, Version=1.2.13.0, Culture=neutral, PublicKeyToken=6a194c04b9c89217, processorArchitecture=MSIL">
-      <HintPath>packages\KeraLua.1.2.13\lib\net46\KeraLua.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="NLua, Version=1.4.4.0, Culture=neutral, PublicKeyToken=6a194c04b9c89217, processorArchitecture=MSIL">
-      <HintPath>packages\NLua.1.4.4\lib\net45\NLua.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="CollectedStatus.cs" />
-    <Compile Include="CustomConfiguration.cs" />
-    <Compile Include="DataValidator.cs" />
-    <Compile Include="DB\Types\SpellEffect.cs" />
-    <Compile Include="DB\Types\TransmogSet.cs" />
-    <Compile Include="DB\Types\TransmogSetItem.cs" />
-    <Compile Include="DB\Types\TypeFlags.cs" />
-    <Compile Include="DB\Types\ModifierTree.cs" />
-    <Compile Include="Export\Export %28Compressed Lua%29.cs" />
-    <Compile Include="Export\Export %28Pure Lua%29.cs" />
-    <Compile Include="Export\Export %28Raw Lua%29.cs" />
-    <Compile Include="Export\Export %28Shortcuts%29.cs" />
-    <Compile Include="Export\Export %28Structures%29.cs" />
-    <Compile Include="Export\Export.cs" />
-    <Compile Include="Export\Object Data\CriteriaData.cs" />
-    <Compile Include="Export\Object Data\FactionQuestData.cs" />
-    <Compile Include="Export\Object Data\HeirloomData.cs" />
-    <Compile Include="Export\Object Data\ItemData.cs" />
-    <Compile Include="Export\Object Data\ItemSourceData.cs" />
-    <Compile Include="Export\Object Data\AchievementData.cs" />
-    <Compile Include="Export\Object Data\RecipeData.cs" />
-    <Compile Include="Export\Object Data\MountData.cs" />
-    <Compile Include="Export\Object Data\ObjectData.cs" />
-    <Compile Include="Extensions.cs" />
-    <Compile Include="FieldTypes\Cost.cs" />
-    <Compile Include="FieldTypes\IExportableField.cs" />
-    <Compile Include="FieldTypes\IProcessedField.cs" />
-    <Compile Include="FieldTypes\LockCriteria.cs" />
-    <Compile Include="FieldTypes\Timeline.cs" />
-    <Compile Include="FieldTypes\TimelineEntry.cs" />
-    <Compile Include="Framework\Framework.Objects.cs" />
-    <Compile Include="Framework\Framework.Items.cs" />
-    <Compile Include="Framework\Framework.cs" />
-    <Compile Include="Framework\Framework.Processing.cs" />
-    <Compile Include="Harvesters\ObjectHarvester.cs" />
-    <Compile Include="Framework\ParseStage.cs" />
-    <Compile Include="MiniJSON.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tracer.cs" />
-    <Compile Include="DB\IDBType.cs" />
-    <Compile Include="DB\Types\Achievement.cs" />
-    <Compile Include="DB\Types\Criteria.cs" />
-    <Compile Include="DB\Types\CriteriaTree.cs" />
-    <Compile Include="DB\Types\TypeCollection.cs" />
-    <Compile Include="DB\WagoTypes.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <Compile Include="Framework\Framework.Logging.cs" />
-    <Compile Include="Framework\Framework.Merge.cs" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\att_logo_128_new_jrX_icon.ico" />
@@ -154,13 +57,10 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="packages\KeraLua.1.2.13\build\net46\KeraLua.targets" Condition="Exists('packages\KeraLua.1.2.13\build\net46\KeraLua.targets')" />
-  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-    <PropertyGroup>
-      <ErrorText>此專案參考這部電腦上所缺少的 NuGet 套件。請啟用 NuGet 套件還原，以下載該套件。如需詳細資訊，請參閱 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的檔案是 {0}。</ErrorText>
-    </PropertyGroup>
-    <Error Condition="!Exists('packages\KeraLua.1.2.13\build\net46\KeraLua.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\KeraLua.1.2.13\build\net46\KeraLua.targets'))" />
-  </Target>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="Csv" Version="2.0.93" />
+    <PackageReference Include="KeraLua" Version="1.2.13" />
+    <PackageReference Include="NLua" Version="1.4.4" />
+  </ItemGroup>
 </Project>
