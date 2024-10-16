@@ -8,7 +8,6 @@ root(ROOTS.Secrets, {
 		["modelScale"] = .7,
 		["displayID"] = 74314,
 		["g"] = {
-			-- TODO: these should all be `hqt(questID, name(HEADERS.Object, objectID, {...}))
 			o(148502, {	-- Step 1: Page 9
 				["model"] = 305393,
 				["questID"] = 45470,

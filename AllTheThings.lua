@@ -2790,7 +2790,8 @@ local function DetermineRecipeOutputGroups(group, FillData)
 
 	local recipeMod = recipeID / 1000000
 	local craftedItemID = info[1];
-	if craftedItemID and (skipLevel > 1 or not craftedItems[craftedItemID + recipeMod]) then
+	if craftedItemID and not craftedItems[craftedItemID]
+		and not craftedItems[craftedItemID + recipeMod] and skipLevel > 1 then
 		craftedItems[craftedItemID + recipeMod] = true
 		local search = SearchForObject("itemID",craftedItemID,"field")
 		search = (search and CreateObject(search)) or app.CreateItem(craftedItemID)
@@ -2798,7 +2799,7 @@ local function DetermineRecipeOutputGroups(group, FillData)
 		-- this way, multiple Recipes for different professions crafting the same output
 		-- will all be filled properly
 		search.hash = search.hash.."_"..group.hash
-		-- app.PrintDebug("DetermineRecipeOutput",app:SearchLink(group),"=>",app:SearchLink(search))
+		-- app.PrintDebug("DetermineRecipeOutput",search.hash,app:SearchLink(group),"=>",app:SearchLink(search))
 		return {search}
 	end
 end
@@ -2820,6 +2821,9 @@ local function DetermineCraftedGroups(group, FillData)
 	local craftableItemIDs = {}
 	-- track crafted items which are filled across the entire fill sequence
 	local craftedItems = FillData.CraftedItems
+	if FillData.Root == group then
+		craftedItems[itemID] = true
+	end
 	local craftedItemID, recipe, skillID
 
 	-- If needing to filter by skill due to BoP reagent, then check via recipe cache instead of by crafted item
