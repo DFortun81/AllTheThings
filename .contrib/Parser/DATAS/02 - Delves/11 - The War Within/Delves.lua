@@ -1320,8 +1320,11 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			n(WEAPONS, {
 				i(219203),	-- Arathi Holy Standard
 				i(219381, {	-- Fate Weaver
-					i(219941),	-- Fateweaved Mallet
-					i(219382),	-- Fateweaved Needle
+					["description"] = "Fly to Fate Weaver's Spool in Azj-Kahet to perform the ritual, coords 64.2, 74.8",
+					["groups"] = {
+						i(219941),	-- Fateweaved Mallet
+						i(219382),	-- Fateweaved Needle
+					},
 				}),
 				i(219207),	-- Flame-Bearing Crozier
 				i(219206),	-- Hand of Piety
