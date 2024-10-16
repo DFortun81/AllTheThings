@@ -1083,6 +1083,15 @@ root(ROOTS.WorldDrops, applyclassicphase(TBC_PHASE_ONE, expansion(EXPANSION.TBC,
 		i(31896),	-- Seven of Storms
 		i(31893),	-- Eight of Storms
 	})),
+	filter(REAGENTS, {
+		i(22572),	-- Mote of Air
+		i(22573),	-- Mote of Earth
+		i(22574),	-- Mote of Fire
+		i(22575),	-- Mote of Life
+		i(22576),	-- Mote of Mana
+		i(22577),	-- Mote of Shadow
+		i(22578),	-- Mote of Water
+	}),
 	filter(RECIPES, {
 		-- #if BEFORE 4.0.1
 		cl(DRUID, {

@@ -2795,10 +2795,6 @@ local function DetermineRecipeOutputGroups(group, FillData)
 		craftedItems[craftedItemID + recipeMod] = true
 		local search = SearchForObject("itemID",craftedItemID,"field")
 		search = (search and CreateObject(search)) or app.CreateItem(craftedItemID)
-		-- force the hash of the output crafted item of this Recipe to be unique based on the Recipe
-		-- this way, multiple Recipes for different professions crafting the same output
-		-- will all be filled properly
-		search.hash = search.hash.."_"..group.hash
 		-- app.PrintDebug("DetermineRecipeOutput",search.hash,app:SearchLink(group),"=>",app:SearchLink(search))
 		return {search}
 	end

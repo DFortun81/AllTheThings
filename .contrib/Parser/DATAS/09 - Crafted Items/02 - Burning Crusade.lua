@@ -89,14 +89,14 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 		}),
 		filter(REAGENTS, {
 			i(25867),	-- Earthstorm Diamond
-			i(22451),	-- Primal Air
-			i(22452),	-- Primal Earth
-			i(21884),	-- Primal Fire
-			i(21886),	-- Primal Life
-			i(22457),	-- Primal Mana
+			convertItem(22451, 22572, 10),	-- Primal Air / Mote of Air
+			convertItem(22452, 22573, 10),	-- Primal Earth / Mote of Earth
+			convertItem(21884, 22574, 10),	-- Primal Fire / Mote of Fire
+			convertItem(21886, 22575, 10),	-- Primal Life / Mote of Life
+			convertItem(22457, 22576, 10),	-- Primal Mana / Mote of Mana
 			i(23571),	-- Primal Might
-			i(22456),	-- Primal Shadow
-			i(21885),	-- Primal Water
+			convertItem(22456, 22577, 10),	-- Primal Shadow / Mote of Shadow
+			convertItem(21885, 22578, 10),	-- Primal Water / Mote of Water
 			i(25868),	-- Skyfire Diamond
 		}),
 		filter(TRINKET_F, {
@@ -688,11 +688,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(22789),	-- Terocone
 			i(108347, {["timeline"] = {ADDED_6_0_2}}),	-- Terocone Leaf
 			i(24401),	-- Unidentified Plant Parts
-			-- Not Herb --
-			--[[	No need to list Tradegoods w/ many other sources
-			i(22575),	-- Mote of Life
-			i(22576),	-- Mote of Mana
-			--]]
 		}),
 	}),
 	-- #if AFTER WRATH
@@ -1049,8 +1044,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE,
 			i(23112),	-- Golden Draenite
 			i(32229, {["timeline"] = {ADDED_2_1_0}}),	-- Lionseye
 			i(23436),	-- Living Ruby
-			i(22573),	-- Mote of Earth
-			i(22574),	-- Mote of Fire
 			i(23441),	-- Nightseye
 			i(23439),	-- Noble Topaz
 			i(32231, {["timeline"] = {ADDED_2_1_0}}),	-- Pyrestone

@@ -91,12 +91,12 @@ root(ROOTS.Craftables, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_
 			applyclassicphase(WRATH_PHASE_THREE, i(36919, {["timeline"] = {ADDED_3_2_0}})),	-- Cardinal Ruby
 			applyclassicphase(WRATH_PHASE_THREE, i(36928, {["timeline"] = {ADDED_3_2_0}})),	-- Dreadstone
 			applyclassicphase(WRATH_PHASE_THREE, i(41334, {["timeline"] = {ADDED_3_2_0}})),	-- Earthsiege Diamond
-			i(35623),	-- Eternal Air
-			i(35624),	-- Eternal Earth
-			i(36860),	-- Eternal Fire
-			i(35625),	-- Eternal Life
-			i(35627),	-- Eternal Shadow
-			i(35622),	-- Eternal Water
+			convertItem(35623, 37700, 10, 1),	-- Eternal Air / Crystallized Air
+			convertItem(35624, 37701, 10, 1),	-- Eternal Earth / Crystallized Earth
+			convertItem(36860, 37702, 10, 1),	-- Eternal Fire / Crystallized Fire
+			convertItem(35625, 37704, 10, 1),	-- Eternal Life / Crystallized Life
+			convertItem(35627, 37703, 10, 1),	-- Eternal Shadow / Crystallized Shadow
+			convertItem(35622, 37705, 10, 1),	-- Eternal Water / Crystallized Water
 			i(44958, {["timeline"] = {ADDED_3_0_8}}),	-- Ethereal Oil
 			applyclassicphase(WRATH_PHASE_THREE, i(36934, {["timeline"] = {ADDED_3_2_0}})),	-- Eye of Zul
 			applyclassicphase(WRATH_PHASE_THREE, i(36922, {["timeline"] = {ADDED_3_2_0}})),	-- King's Amber
