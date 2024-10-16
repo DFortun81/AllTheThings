@@ -879,7 +879,6 @@ app.Settings.CreateInformationType("SourceLocations", {
 	text = "Source Locations",
 	HideCheckBox = true,
 	keys = {
-		["autoID"] = false,
 		["creatureID"] = true,
 		["expansionID"] = false,
 		["explorationID"] = true,
@@ -3161,100 +3160,6 @@ app.CreateCurrencyClass = app.CreateClass("Currency", "currencyID", {
 		return CurrencyCollectedAsCost[t.currencyID];
 	end,
 });
-end)();
-
--- Automatic Header Lib
-(function()
--- Automatic Headers
-local HeaderTypeAbbreviations = {
-	["a"] = "achievementID",
-	["c"] = "classID",
-	["m"] = "mapID",
-	["n"] = "npcID",
-	["i"] = "itemID",
-	["o"] = "objectID",
-	["q"] = "questID",
-	["s"] = "spellID",
-};
--- Alternate functions to attach data into a table based on an id for a given type code
-local AlternateDataTypes = {
-	["ac"] = function(id)
-		return { text = GetCategoryInfo(id) };
-	end,
-	["crit"] = function(id)
-		local ach = math_floor(id);
-		local crit = math_floor(100 * (id - ach) + 0.005);
-		return { text = GetAchievementCriteriaInfo(ach, crit) };
-	end,
-	["d"] = function(id)
-		local name, _, _, _, _, _, _, _, _, _, textureFilename = GetLFGDungeonInfo(id);
-		return { text = name, icon = textureFilename };
-	end,
-	["df"] = function(id)
-		local aid = math_floor(id);
-		local hid = math_floor(10000 * (id - aid) + 0.005);
-		id = app.FactionID == Enum.FlightPathFaction.Alliance and tonumber(aid) or tonumber(hid);
-		local name, _, _, _, _, _, _, _, _, _, textureFilename = GetLFGDungeonInfo(id);
-		return { text = name, icon = textureFilename };
-	end,
-	["_G"] = function(id)
-		return { ["text"] = _G[id] };
-	end,
-};
-app.CreateHeader = app.CreateClass("AutomaticHeader", "autoID", {
-	["text"] = function(t)
-		return t.isRaid and ("|c" .. app.Colors.Raid .. t.name .. "|r") or t.name;
-	end,
-	["name"] = function(t)
-		return t.result.name or t.result.text;
-	end,
-	["icon"] = function(t)
-		return t.result.icon;
-	end,
-	["result"] = function(t)
-		local typ = HeaderTypeAbbreviations[t.type];
-		if typ then
-			local cache = SearchForField(typ, t.autoID);
-			if #cache > 0 then
-				for i,o in ipairs(cache) do
-					if o.key == typ then
-						t.result = o;
-						return o;
-					end
-				end
-			end
-			cache = CloneClassInstance({[typ] = t.autoID,key = typ});
-			t.result = cache;
-			return cache;
-		else
-			local cache = AlternateDataTypes[t.type];
-			if cache then
-				cache = cache(t.autoID);
-				if cache then
-					t.result = cache;
-					return cache;
-				end
-			end
-		end
-		print("Unhandled Header Type", t.type, t.autoID, typ);
-		return app.EmptyTable;
-	end,
-	["ignoreSourceLookup"] = function(t)
-		return true;
-	end,
-},
-"WithQuest", {
-	collectible = function(t)
-		return app.Settings.Collectibles.Quests and (not t.repeatable and not t.isBreadcrumb or C_QuestLog_IsOnQuest(t.questID));
-	end,
-	collected = function(t)
-		return IsQuestFlaggedCompletedForObject(t);
-	end,
-	trackable = app.ReturnTrue,
-	saved = function(t)
-		return IsQuestFlaggedCompletedForObject(t) == 1;
-	end
-}, (function(t) return t.questID; end));
 end)();
 
 -- Profession Lib
