@@ -174,14 +174,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 					}, {	-- RENOWN 16 --
-						i(205363, {	-- Ensemble: Ornate Black Dragon Labwear
+						iensemble(205363, {	-- Ensemble: Ornate Black Dragon Labwear
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 250 },
-							},
-							["g"] = {
-								i(205416),	-- Ornate Black Dragon Labwear Cloak
-								i(205414),	-- Ornate Black Dragon Labwear Coat
-								i(205415),	-- Ornate Black Dragon Labwear Mantle
 							},
 						}),
 						i(203362, {	-- Winding Slitherdrake: Hairy Tail (MM!)

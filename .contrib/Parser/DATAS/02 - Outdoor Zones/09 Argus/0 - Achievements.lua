@@ -87,20 +87,7 @@ root(ROOTS.Zones, m(ARGUS, bubbleDown({ ["timeline"] = { ADDED_7_3_0 } }, {
 			}),
 		})),
 		ach(12078, {	-- Commander of Argus
-			i(152396, {	-- Arsenal: Weapons of the Lightforged
-				i(152332),	-- Brilliant Daybreak Aegis
-				i(152337),	-- Brilliant Daybreak Blade
-				i(152334),	-- Brilliant Eventide Aegis
-				i(152339),	-- Brilliant Eventide Blade
-				i(152333),	-- Lustrous Daybreak Aegis
-				i(152336),	-- Lustrous Daybreak Blade
-				i(152340),	-- Lustrous Daybreak Greatsword
-				i(152342),	-- Lustrous Daybreak Staff
-				i(152335),	-- Lustrous Eventide Aegis
-				i(152338),	-- Lustrous Eventide Blade
-				i(152341),	-- Lustrous Eventide Greatsword
-				i(152343),	-- Lustrous Eventide Staff
-			}),
+			iensemble(152396), 	-- Arsenal: Weapons of the Lightforged
 			crit(37665, {
 				["_npcs"] = { 127705 },	-- Mother Rosula
 			}),

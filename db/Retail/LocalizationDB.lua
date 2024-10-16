@@ -14947,7 +14947,6 @@ L.QUEST_NAMES = {
 	[48062] = "Scarlet Crusader",
 	[48068] = "A Cure for Ebonhorn",
 	[48278] = "Fate of the Life-Binder",
-	[48316] = "Tracking Quest",
 	[48340] = "Tracking Quest",
 	[48341] = "Tracking Quest",
 	[48342] = "Tracking Quest",

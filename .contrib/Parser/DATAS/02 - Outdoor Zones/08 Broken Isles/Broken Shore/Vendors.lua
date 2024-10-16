@@ -98,38 +98,13 @@ root(ROOTS.Zones, {
 							i(147451, {	-- Armorcrafter's Commendation
 								["cost"] = { { "c", 1226, 1000 }, },	-- 1,000x Nethershard
 							}),
-							i(141372, {	-- Arsenal: Armaments of the Ebon Blade
+							iensemble(141372, {	-- Arsenal: Armaments of the Ebon Blade
 								["ignoreBonus"] = true,
 								["cost"] = { { "c", 1226, 2000 }, },	-- 2,000x Nethershard
-								["g"] = {
-									i(141365),	-- Blood 2H Axe
-									i(141377),	-- Blood 1H Sword
-									i(141366),	-- Blood 2H Polearm
-									i(141379),	-- Blood 1H Warsword
-									i(141375),	-- Blood 2H Sword
-									i(141381),	-- Icy 2H Axe
-									i(141362),	-- Icy 1H Sword
-									i(141373),	-- Icy 2H Polearm
-									i(141363),	-- Icy 1H Warsword
-									i(141376),	-- Icy 2H Sword
-									i(141382),	-- Unholy 2H Axe
-									i(141378),	-- Unholy 1H Sword
-									i(141374),	-- Unholy 2H Polearm
-									i(141380),	-- Unholy 1H Warsword
-									i(141364),	-- Unholy 2H Sword
-								},
 							}),
-							i(141371, {	-- Arsenal: Armaments of the Silver Hand
+							iensemble(141371, {	-- Arsenal: Armaments of the Silver Hand
 								["ignoreBonus"] = true,
 								["cost"] = { { "c", 1226, 1000 }, },	-- 1,000x Nethershard
-								["g"] = {
-									i(141370),	-- Ardent Defender
-									i(150953),	-- Ardent Gavel
-									i(141367),	-- Ardent Hammer
-									i(141368),	-- Ardent Warhammer
-									i(141654),	-- Gilded Defender
-									i(141653),	-- Gilded Warhammer
-								},
 							}),
 							i(139879, {	-- Crate of Champion Equipment
 								["cost"] = { { "c", 1226, 250 }, },		-- 250x Nethershard
@@ -318,10 +293,5 @@ root(ROOTS.Zones, {
 				}),
 			}),
 		}),
-	}),
-});
-root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.LEGION, {
-		q(47256),	-- learning Arsenal: Armaments of the Silver Hand
 	}),
 });

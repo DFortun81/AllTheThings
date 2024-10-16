@@ -71,13 +71,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							["cost"] = { { "c", DRAGON_SUPPLIES, 375 } },
 						}),
 					}, {	-- RENOWN 16 --
-						i(210790, {	-- Ensemble: Elegant Green Dragon Outerwear
+						iensemble(210790, {	-- Ensemble: Elegant Green Dragon Outerwear
 							["cost"] = { { "c", DRAGON_SUPPLIES, 500 } },
-							["g"] = {
-								i(210789),	-- Elegant Green Dragon Epaulets
-								i(210788),	-- Elegant Green Dragon Shawl
-								i(210787),	-- Elegant Green Dragon Tabard
-							},
 						}),
 						i(210677, {	-- Survivalist's Shovel
 							["cost"] = { { "c", DRAGON_SUPPLIES, 300 } },

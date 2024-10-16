@@ -177,22 +177,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 										i(183801, {	-- Vibrant Flutterwing (MOUNT!)
 											["cost"] = { { "c", ANIMA, 5000 } },
 										}),
-										i(184118, {	-- Arsenal: Winterborn Weapons
+										iensemble(184118, {	-- Arsenal: Winterborn Weapons
 											["cost"] = { { "c", ANIMA, 30000 } },
-											["g"] = {
-												i(180075),	-- Winterborn Bow
-												i(179496),	-- Winterborn Fang
-												i(179571),	-- Winterborn Harp
-												i(179582),	-- Winterborn Jaws
-												i(179545),	-- Winterborn Maul
-												i(179556),	-- Winterborn Scepter
-												i(182353),	-- Winterborn Shillelagh
-												i(179525),	-- Winterborn Spear
-												i(180001),	-- Winterborn Staff
-												i(180018),	-- Winterborn Wand
-												i(180256),	-- Winterborn Warglaive
-												i(179607),	-- Winterborn Bulwark (According to Wowhead comments 9.0.5 hotfix this)
-											},
 										}),
 										i(181305, {	-- Faewoven Bulb
 											["cost"] = { { "c", ANIMA, 3500 } },
@@ -222,18 +208,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					}),
 				}),
 			},
-		}),
-	}),
-})));
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-	n(NIGHT_FAE, {
-		n(SANCTUM_UPGRADES, {
-			n(TRANSPORT_NETWORK, {
-				n(VENDORS, {
-					q(62806),	-- learning Arsenal: Winterborn Weapons
-				}),
-			}),
 		}),
 	}),
 })));

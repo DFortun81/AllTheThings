@@ -638,14 +638,8 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(189644, {	-- Ms. Xiulan <Madam Goya's Assistant>
 				["coord"] = { 19.0, 50.2, VALDRAKKEN },
 				["g"] = bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
-					i(211300, {	-- Arsenal: Whispering Temple Blades
+					iensemble(211300, {	-- Arsenal: Whispering Temple Blades
 						["cost"] = 2000000000, -- 200,000g
-						["groups"] = {
-							i(211299, {	-- Gleaming Whispering Temple Blade
-							}),
-							i(211298, {	-- Whispering Temple Blade
-							}),
-						},
 					}),
 					i(211097, {	-- Gilded Crown Splitter
 						["cost"] = 900000000, -- 90,000g
@@ -755,15 +749,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 					i(178221),	-- Torchberry Wine
 					i(200855),	-- Tuskarr Port Wine
 				},
-			}),
-		}),
-	}),
-})));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
-	m(DRAGON_ISLES, {
-		m(VALDRAKKEN, {
-			n(QUESTS, {
-				q(78840),	-- Arsenal: Whispering Temple Blades
 			}),
 		}),
 	}),

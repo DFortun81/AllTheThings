@@ -278,7 +278,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 			q(76574),	-- Pop right after renown 8 was reached (Blooming Proficiency II) (spellIDs 427685 & 425375)
 			q(76575),	-- Pop right after renown 12 was reached (Blooming Proficiency III) (spellIDs 427685 & 425375)
 			q(78710),	-- Pop right after renown 12 was reached (Blooming Expertise) (?)
-			q(78599),	-- Ensemble: Elegant Green Dragon Outerwear (itemID 210790)
 		}),
 	}),
 })));

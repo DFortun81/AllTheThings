@@ -823,6 +823,7 @@ q(63628),	-- Ensemble: Initiate's Necromantle Vestments
 q(63627),	-- Ensemble: Marileth's Assistant's Vestments
 
 -- Night Fae
+q(62806),	-- Arsenal: Winterborn Weapons
 q(61909),	-- Ensemble: Conservator's Guise
 q(61910),	-- Ensemble: Conservator's Raiment
 q(61911),	-- Ensemble: Conservator's Regalia
@@ -835,16 +836,57 @@ q(63634),	-- Ensemble: Court Inquisitor's Vestments
 q(63630),	-- Ensemble: Harvester's Court Attire
 q(63637),	-- Ensemble: Sinful Inquisitor's Vestments
 q(63633),	-- Ensemble: Sinful Venthyr Attire
------- Misc Rewards ------
-
---- Legion
-q(66309),	-- Ensemble: Dark Ranger's Attire
 
 --- Dragonflight
 
+-- Dragonscale Expedition
+q(70315),	-- Ensemble: Renowned Expeditioner's Cloth Armor
+q(70316),	-- Ensemble: Renowned Expeditioner's Leather Armor
+q(70317),	-- Ensemble: Renowned Expeditioner's Mail Armor
+q(70318),	-- Ensemble: Renowned Expeditioner's Plate Armor
+
+-- Dream Wardens
+q(78599),	-- Ensemble: Elegant Green Dragon Outerwear (itemID 210790)
+
+-- Iskaara Tuskarr
+q(70804),	-- Ensemble: Tuskarr Trader's Leather Armor
+
+-- Loamm Niffen
+q(75832),	-- Ensemble: Ornate Black Dragon Labwear
+
+-- Sabellion
+q(72115),	-- Ensemble: Sabellian's Battlegear Cloth Armor
+
+------ Misc Rewards ------
+
+--- Legion
+q(47255),	-- Arsenal: Armaments of the Ebon Blade
+q(47256),	-- Arsenal: Armaments of the Silver Hand
+q(48316),	-- Arsenal: Weapons of the Lightforged
+q(66309),	-- Ensemble: Dark Ranger's Attire
+
+--- BFA
+q(66302),	-- Arsenal: Lavaforge Armaments
+
+-- Brawler's Guild
+q(55492),	-- Ensemble: Brawler's Garb [A]
+q(55493),	-- Ensemble: Brawler's Garb [H]
+
+--- Shadowlands
+q(66280),	-- Ensemble: Blood Knight's Dedication
+
+--- Dragonflight
+q(78840),	-- Arsenal: Whispering Temple Blades
 q(76018),	-- Ensemble: Azure Renewal Finery
 q(76038),	-- Ensemble: Black Dragonflight's Vestments
-q(72115),	-- Ensemble: Sabellian's Battlegear Cloth Armor
+q(65738),	-- Ensemble: Dashing Buccaneer's Slops
+
+-- Engi Goggles
+q(78030),	-- Ensemble: Chromatically Calibrated Holo-Gogs
+q(78031),	-- Ensemble: Chromatically Calibrated Bio-Optic Killshades
+q(78032),	-- Ensemble: Chromatically Calibrated Retinal Armor
+q(78034),	-- Ensemble: Chromatically Calibrated Cranial Cannons
+q(78035),	-- Ensemble: Chromatically Calibrated Ectoplasmic Specs
 
 -- Time Rifts
 q(76583),	-- Ensemble: Decorous Garments

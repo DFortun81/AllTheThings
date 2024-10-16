@@ -264,21 +264,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						}),
 					}, {	-- RENOWN 11 --
 					}, {	-- RENOWN 12 --
-						i(199877, {	-- Ensemble: Tuskarr Trader's Leather Armor
+						iensemble(199877, {	-- Ensemble: Tuskarr Trader's Leather Armor
 							["cost"] = {
 								{ "i", TUFT_OF_PRIMAL_WOOL, 3 },
 								{ "i", MASTODON_TUSK, 2 },
 								{ "i", RESILIENT_LEATHER, 20 },
-							},
-							["g"] = {
-								i(199868),	-- Tuskarr Trader's Belt
-								i(199869),	-- Tuskarr Trader's Bindings
-								i(199865),	-- Tuskarr Trader's Gloves
-								i(199866),	-- Tuskarr Trader's Headgear
-								i(199867),	-- Tuskarr Trader's Leggings
-								i(199871),	-- Tuskarr Trader's Shoulderpads
-								i(199870),	-- Tuskarr Trader's Vest
-								i(199864),	-- Tuskarr Trader's Waders
 							},
 						}),
 						i(199872, {	-- Tuskarr Trader's Cloak
@@ -886,11 +876,5 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 				}},
 			}),
 		}),
-	}),
-})));
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
-	n(ISKAARA_TUSKARR, {
-		-- Ensembles
-		q(70804),	-- Ensemble: Tuskarr Trader's Leather Armor
 	}),
 })));

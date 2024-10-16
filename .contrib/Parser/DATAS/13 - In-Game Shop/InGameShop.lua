@@ -203,7 +203,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 				i(112324),	-- Nightmarish Hitching Post (TOY!)
 		})),
 		i(69846, {	-- Winged Guardian (MOUNT!)
-			["timeline"] = { ADDED_4_1_0, REMOVED_10_0_2_LAUNCH },	-- Removed from shop on Jan 2 2023, will be offered through Trading Post in 10.0.5
+			["timeline"] = { ADDED_4_1_0, REMOVED_10_0_2_LAUNCH },	-- Removed from shop on Jan 2 2023
 		}),
 	})),
 	filter(BATTLE_PETS, {	-- AVAILABLE --

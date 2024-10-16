@@ -110,20 +110,7 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 				["classes"] = { PALADIN },
 				["g"] = {
 					i(191566),	-- Elusive Emerald Hawkstrider (MOUNT!)
-					i(191565, {	-- Ensemble: Blood Knight's Dedication
-						i(191554),	-- Blood Knight's Dedication Belt
-						i(191560),	-- Blood Knight's Dedication Bracers
-						i(191556),	-- Blood Knight's Dedication Breastplate
-						i(191562),	-- Blood Knight's Dedication Cape
-						i(191558),	-- Blood Knight's Dedication Chausses
-						i(191561),	-- Blood Knight's Dedication Cloak
-						i(191563),	-- Blood Knight's Dedication Drape
-						i(191557),	-- Blood Knight's Dedication Gauntlets
-						i(191555),	-- Blood Knight's Dedication Greaves
-						i(191553),	-- Blood Knight's Dedication Helm
-						i(191564),	-- Blood Knight's Dedication Mantle
-						i(191559),	-- Blood Knight's Dedication Shoulderplates
-					}),
+					iensemble(191565),	-- Ensemble: Blood Knight's Dedication
 				},
 			}),
 			n(189038, {	-- Fallen Knight's Ranseur
@@ -167,12 +154,7 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 				["provider"] = { "n", 144154 },	-- Anvil-Thane Thurgaden
 				["coord"] = { 57.2, 31.9, 1186 },
 				["g"] = {
-					i(184922, {	-- Arsenal: Lavaforge Armaments
-						i(191631),	-- Lavaforge Bulwark
-						i(191626),	-- Lavaforge Hacker
-						i(191625),	-- Lavaforge Monolith (Staff)
-						i(192456),	-- Lavaforge Monolith (Mace)
-					}),
+					iensemble(184922),	-- Arsenal: Lavaforge Armaments
 				},
 			}),
 			q(65563, {	-- Delivery for Kasea
@@ -192,10 +174,3 @@ root(ROOTS.Character, n(LORE, bubbleDownSelf({ ["timeline"] = { ADDED_9_2_5 } },
 		},
 	})),
 })));
-
-root(ROOTS.HiddenQuestTriggers, {
-	expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_2_5 } }, {
-		q(66302),	-- Arsenal: Lavaforge Armaments (Triggered when learning the Arsenal)
-		q(66280),	-- Ensemble: Blood Knight's Dedication (Triggered when learning the Ensemble)
-	})),
-});

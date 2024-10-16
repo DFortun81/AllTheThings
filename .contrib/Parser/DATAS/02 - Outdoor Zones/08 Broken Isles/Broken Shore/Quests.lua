@@ -536,7 +536,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(47590),	-- Tier 3 Mob Daily Bonus (DNT) - Daily kill
 		q(46665),	-- Tracking Quest - triggers with "Spiders, Huh?"
 		q(46751),	-- Tracking Quest - triggers when turning in "A Found Memento" (#46268)
-		q(47255),	-- Tracking Quest - triggers after completing "Mark of the Sentinax" (questID 47139)
 		q(47092),	-- Working on Crafted Legendary
 	}),
 });

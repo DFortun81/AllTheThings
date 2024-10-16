@@ -3061,7 +3061,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(47385, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
 			q(47386, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
 			q(47859, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
-			q(48316, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
 			q(48340, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
 			q(48341, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
 			q(48342, { ["name"] = "Tracking Quest", }),	-- Tracking Quest
@@ -7573,7 +7572,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(65676),	-- Ensemble: Chains of the Honored Valarjar
 			q(65716),	-- Ensemble: Vestments of the Nightmare Forest
 			q(65734),	-- Ensemble: Battleplate of the Honored Valarjar
-			q(65738),	-- Ensemble: Dashing Buccaneer's Slops
 			q(70596),	-- Essence of Arcana
 			q(66496),	-- Expedition Task Accepted (spellID 372078)
 			q(66497),	-- Expedition Task Accepted (spellID 372095)

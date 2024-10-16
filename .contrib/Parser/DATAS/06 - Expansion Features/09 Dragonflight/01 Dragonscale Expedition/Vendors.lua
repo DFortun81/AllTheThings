@@ -271,68 +271,28 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 					}, {	-- RENOWN 14 --
-						i(198775, {	-- Ensemble: Renowned Expeditioner's Cloth Armor
+						iensemble(198775, {	-- Ensemble: Renowned Expeditioner's Cloth Armor
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 750 },
 								{ "i", WILDERCLOTH, 40 },
 							},
-							["g"] = {
-								i(198773),	-- Renowned Expeditioner's Amice
-								i(198747),	-- Renowned Expeditioner's Cord
-								i(198745),	-- Renowned Expeditioner's Cowl
-								i(198748),	-- Renowned Expeditioner's Cuffs
-								i(198744),	-- Renowned Expeditioner's Handwraps
-								i(198746),	-- Renowned Expeditioner's Leggings
-								i(198743),	-- Renowned Expeditioner's Sandals
-								i(198742),	-- Renowned Expeditioner's Vestment
-							},
 						}),
-						i(198776, {	-- Ensemble: Renowned Expeditioner's Leather Armor
+						iensemble(198776, {	-- Ensemble: Renowned Expeditioner's Leather Armor
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 750 },
 								{ "i", RESILIENT_LEATHER, 20 },
 							},
-							["g"] = {
-								i(198753),	-- Renowned Expeditioner's Belt
-								i(198754),	-- Renowned Expeditioner's Bindings
-								i(198752),	-- Renowned Expeditioner's Breeches
-								i(198772),	-- Renowned Expeditioner's Epaulets
-								i(198750),	-- Renowned Expeditioner's Gloves
-								i(198751),	-- Renowned Expeditioner's Headgear
-								i(198771),	-- Renowned Expeditioner's Vest
-								i(198749),	-- Renowned Expeditioner's Waders
-							},
 						}),
-						i(198777, {	-- Ensemble: Renowned Expeditioner's Mail Armor
+						iensemble(198777, {	-- Ensemble: Renowned Expeditioner's Mail Armor
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 750 },
 								{ "i", ADAMANT_SCALES, 20 },
 							},
-							["g"] = {
-								i(198762),	-- Renowned Expeditioner's Bracers
-								i(198755),	-- Renowned Expeditioner's Chainmail
-								i(198758),	-- Renowned Expeditioner's Coif
-								i(198761),	-- Renowned Expeditioner's Girdle
-								i(198759),	-- Renowned Expeditioner's Greaves
-								i(198757),	-- Renowned Expeditioner's Grips
-								i(198760),	-- Renowned Expeditioner's Shoulderguards
-								i(198756),	-- Renowned Expeditioner's Striders
-							},
 						}),
-						i(198778, {	-- Ensemble: Renowned Expeditioner's Plate Armor
+						iensemble(198778, {	-- Ensemble: Renowned Expeditioner's Plate Armor
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 750 },
 								{ "i", SEREVITE_ORE, 20 },
-							},
-							["g"] = {
-								i(198764),	-- Renowned Expeditioner's Breastplate
-								i(198766),	-- Renowned Expeditioner's Gauntlets
-								i(198769),	-- Renowned Expeditioner's Greatbelt
-								i(198763),	-- Renowned Expeditioner's Helmet
-								i(198767),	-- Renowned Expeditioner's Legguards
-								i(198765),	-- Renowned Expeditioner's Sabatons
-								i(198768),	-- Renowned Expeditioner's Shoulderplates
-								i(198770),	-- Renowned Expeditioner's Vambraces
 							},
 						}),
 					}, {	-- RENOWN 15 --

@@ -233,7 +233,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 			q(76209),	-- Triggered at Renown 3
 			q(76020),	-- Triggered at Renown 5
 			q(76019),	-- Triggered at Renown 13
-			q(75832),	-- Ensemble: Ornate Black Dragon Labwear
 		}),
 	}),
 })));

@@ -387,18 +387,8 @@ root(ROOTS.WorldEvents, m(503, bubbleDown({ ["u"] = REMOVED_FROM_GAME }, {	-- Br
 					i(98085),	-- Brucehide Jersey
 					i(93025),	-- Clock'em (PET!)
 					i(98092),	-- Digmaster's Bodysleeve
-					i(167892, {	-- Ensemble: Brawlers Garb
+					iensemble(167892, {	-- Ensemble: Brawlers Garb
 						["ignoreBonus"] = true,
-						["groups"] = {
-							i(167829),	-- Brawler's Bracer Chains
-							i(167823),	-- Brawler's Footpads
-							i(167824),	-- Brawler's Gloves
-							i(167822),	-- Brawler's Harness
-							i(167825),	-- Brawler's Headgear
-							i(167828),	-- Brawler's Heavy Belt
-							i(167826),	-- Brawler's Leggings
-							i(167827),	-- Brawler's Shoulderpads
-						},
 					}),
 					i(98079),	-- Floot-Tooter's Tunic
 					i(127773, {	-- Gemcutter Module: Mastery

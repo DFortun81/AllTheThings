@@ -457,10 +457,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 187700 },	-- Pathfinder Jeb
 						["coord"] = { 47.3, 83.4, THE_WAKING_SHORES },
 						["g"] = {
-							i(198775),	-- Ensemble: Renowned Expeditioner's Cloth Armor
-							i(198776),	-- Ensemble: Renowned Expeditioner's Leather Armor
-							i(198777),	-- Ensemble: Renowned Expeditioner's Mail Armor
-							i(198778),	-- Ensemble: Renowned Expeditioner's Plate Armor
+							iensemble(198775),	-- Ensemble: Renowned Expeditioner's Cloth Armor
+							iensemble(198776),	-- Ensemble: Renowned Expeditioner's Leather Armor
+							iensemble(198777),	-- Ensemble: Renowned Expeditioner's Mail Armor
+							iensemble(198778),	-- Ensemble: Renowned Expeditioner's Plate Armor
 						},
 					}),
 					q(72294, {	-- Expedition Crafting Knowledge
@@ -846,13 +846,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 			q(72402),	-- Triggered on reaching Renown 24 before accepting any quests
 			q(72752),	-- Triggered with 'It Belongs in a Museum... Eventually' (questID 66547) (spellID 397084 & 397397)
 			q(72822),	-- Triggered with 'It Belongs in a Museum... Eventually' (questID 66547) (spellID 397397)
-
-			-- Ensembles
-			q(70315),	-- Ensemble: Renowned Expeditioner's Cloth Armor
-			q(70316),	-- Ensemble: Renowned Expeditioner's Leather Armor
-			q(70317),	-- Ensemble: Renowned Expeditioner's Mail Armor
-			q(70318),	-- Ensemble: Renowned Expeditioner's Plate Armor
-
 			-- Quest sequences
 			q(70570),	-- triggered when speaking with Watcher Koranos during 'Speak with Koranos' (66673)
 		}),
