@@ -28,7 +28,10 @@ local NPCDisplayIDFromID = setmetatable({}, { __index = function(t, id)
 		local displayID = NPCHarvester:GetDisplayInfo()
 		if displayID and displayID ~= 0 then
 			t[id] = displayID
-			app.HandleEvent("OnRenderDirty")
+			-- I don't think this is actually necessary since the displayID is always
+			-- returned prior to a refresh taking place? But in any case it's definitely not necessary
+			-- N times per frame when loading the game due to however many NPCs load their displayID in an active list
+			app.CallbackEvent("OnRenderDirty")
 			return displayID
 		end
 	end
