@@ -561,10 +561,17 @@
         "BALANCE",
         "PROFESSION_EQUIPMENT",
         "ADD",
-        "GUILD"
+        "GUILD",
+        "MerchantFrame_Update",
+        "LE_LOOT_FILTER_ALL",
+        "AVAILABLE",
+        "UNAVAILABLE",
+        "FlagsUtil",
+        "LFG_LIST_AND_MORE"
     ],
     "Lua.diagnostics.disable": [
-        "duplicate-index"
+        "duplicate-index",
+        "undefined-global"
     ],
     "Lua.runtime.version": "Lua 5.1",
     "Lua.runtime.builtin": {
