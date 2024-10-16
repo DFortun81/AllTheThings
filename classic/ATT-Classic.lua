@@ -3773,6 +3773,7 @@ app.CreateMount = app.CreateClass("Mount", "spellID", mountFields,
 		link = mountFields.linkForItem;
 		tsm = mountFields.tsmForItem
 	}, function(t) return t.itemID; end);
+app.CreatePetAbility = app.CreateUnimplementedClass("PetAbility", "petAbilityID");
 app.CreatePetType = app.CreateClass("PetType", "petTypeID", {
 	["text"] = function(t)
 		return _G["BATTLE_PET_NAME_" .. t.petTypeID];
@@ -3782,13 +3783,6 @@ app.CreatePetType = app.CreateClass("PetType", "petTypeID", {
 	end,
 });
 app.CreateSpecies = app.CreateClass("Species", "speciesID", speciesFields);
-end)();
-
--- Unsupported Libs
-(function()
-app.CreateMusicRoll = app.CreateUnimplementedClass("MusicRoll", "questID");
-app.CreatePetAbility = app.CreateUnimplementedClass("PetAbility", "petAbilityID");
-app.CreateSelfieFilter = app.CreateUnimplementedClass("SelfieFilter", "questID");
 end)();
 
 -- Startup Event
