@@ -9,7 +9,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			["cost"] = {{"i",228949,1}},	-- Rumor Map
 		},{
 			["g"] = bubbleDownFiltered({
-				["sharedDescription"] = "Interact with Thimble and follow him to reveal his cache. Only available if your weekly pact is with The Weaver.\nAvailable when you strike a Pact with The Weaver.",
+				["sharedDescription"] = "Interact with Thimble and follow him to reveal his cache.\nOnly available if your weekly pact is with The Weaver.",
 			},FILTERFUNC_objectID,{
 				o(434527, {	-- Thimble's Cache
 					["provider"] = { "n", 224889 },	-- Thimble // Weave-Rat Cache (vignette)
@@ -115,7 +115,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			["cost"] = {{"i",228949,1}},	-- Rumor Map
 		},{
 			["g"] = bubbleDownFiltered({
-				["sharedDescription"] = "Interact with the Forgotten Memorial to challenge Aspirant Kiipka and then defeat him.\nAvailable when you strike a Pact with The General.",
+				["sharedDescription"] = "Interact with the Forgotten Memorial to challenge Aspirant Kiipka and then defeat him.\nOnly available if your weekly pact is with The General.",
 			},FILTERFUNC_objectID,{
 				o(437060, {	-- Aspirant's Tribute
 					["provider"] = { "o", 437058 },	-- Forgotten Memorial
