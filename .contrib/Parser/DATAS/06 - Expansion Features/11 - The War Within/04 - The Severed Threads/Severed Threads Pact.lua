@@ -408,7 +408,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				q(81497, {	-- Wild Reagents: Salien Gutters
 					["sourceQuest"] = 82581,
 					["provider"] = { "n", 224181 },	-- Ghos'opp
-					["coord"] = { 61.1, 74.7, AZJ_KAHET },
+					["coord"] = { 61.1, 74.4, AZJ_KAHET },
 					["g"] = {
 						i(219227),	-- Swollen Kobyss Eye (QI!)
 					},
@@ -511,6 +511,9 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					["sourceQuest"] = 82647,
 					["provider"] = { "n", 224199 },	-- Ru'murh
 					["coord"] = { 45.6, 51.0, NERUBAR_LOWER },
+					["g"] = {
+						o(439348),	-- Mutagen Cache
+					},
 				}),
 				q(81503, {	-- Infiltration: Terror Made Manifest
 					["sourceQuest"] = 82648,
@@ -817,12 +820,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(82648, {	-- Ru'murh  (n: 224200 @ 64.2, 75.3), starts questID 81503 (Infiltration: Terror Made Manifest), (23-09-24, Exo)
 					-- Ghos'opp (n: 224182 @ 65.1, 78.8), starts questID 81480 (Wild Reagents: Maddening Deep), (27-09-24, Exo)
 					-- Ghos'opp (n: 224180 @ 47.2, 58.8), starts questID 81498 (Wild Reagents: Twitching Gorge), (30-09-24, Exo)
+					-- Ghos'opp (n: 224181 @ 61.1, 74.4), starts questID 81497 (Wild Reagents: Salien Gutters), (16-10-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			--q(82643),	-- 'Investiage the scene' from Ru'murh (n: 224195 @ 73.3, 50.9, 2213), start questID 81471 (Dropping Eaves: Saving the Past)
 			-- Missing 5 more quest data/givers
-			--q(82616),	-- 'Gather some reagent' from Ghos-opp (n: 224180 @ 48.4, 61.9), start questID ()
-			-- Missing 11 total quest data/givers, 81497 (and 5 more)
+			-- Missing 11 total quest data/givers
 			q(79698),	-- Triggered after completing questID 79627 (Wine and Die)
 			-- q(80688), -- triggered after completing task for a 'Rumor' (re-capture and narrow down)
 			-- Weaver's Lair Profession Table

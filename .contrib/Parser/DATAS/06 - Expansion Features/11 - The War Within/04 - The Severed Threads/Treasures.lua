@@ -214,8 +214,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(83805),
 			q(83806),
 			q(83807),
-			-- 'Treasures: Kaheti Excavations', available when you forge a Pact with The Weaver.
-			-- There are 12 Forgotten Memorials in total, only 4 are revealed on the map at the time.
+			-- 'Treasures: Kaheti Excavations', available when you forge a Pact with The Vizier.
+			-- There are 12 Kaheti Excavations in total, only 4 are revealed on the map at the time.
 			-- Following 12 HQTs are triggered when 'Treasure Map Bundle' (item 228952) is used.
 			q(83810),
 			q(83811),
