@@ -97,7 +97,7 @@ src\Classes\FlightPath.lua
 src\Classes\Maps.lua
 # src\Classes\Mount.lua
 # src\Classes\Header.lua
-# src\Classes\NPC.lua
+src\Classes\NPC.lua
 src\Classes\Objects.lua
 src\Classes\Category.lua
 src\Classes\Deaths.lua

@@ -28,6 +28,7 @@ local NPCDisplayIDFromID = setmetatable({}, { __index = function(t, id)
 		local displayID = NPCHarvester:GetDisplayInfo()
 		if displayID and displayID ~= 0 then
 			t[id] = displayID
+			app.HandleEvent("OnRenderDirty")
 			return displayID
 		end
 	end
@@ -101,25 +102,12 @@ do
 			return NPCTitlesFromID[t[KEY]]
 		end,
 		icon = function(t)
-			local vendorParent = t.parent and t.parent.headerID == app.HeaderConstants.VENDORS
-			if vendorParent then
-				return 133784
-			end
-			return app.GetRelativeDifficultyIcon(t)
+			return (t.parent and t.parent.headerID and t.parent.headerID == app.HeaderConstants.VENDORS and 133784) or app.GetRelativeDifficultyIcon(t)
 		end,
 		indicatorIcon = function(t)
 			if app.ActiveVignettes.npc[t.npcID] then
 				return app.asset("Interface_Ping")
 			end
-		end,
-		-- use custom to track opposite faction questID collection in account/debug if the NPC is considered collectible
-		customTotal = function(t)
-			if app.MODE_DEBUG_OR_ACCOUNT and t.questIDA and t.collectible then
-				return 1
-			end
-		end,
-		customProgress = function(t)
-			return (t.otherFactionQuestID and IsQuestFlaggedCompleted(t.otherFactionQuestID)) and 1 or 0
 		end,
 	},
 	"WithQuest", {
@@ -182,22 +170,31 @@ do
 				end
 			end
 		end,
+		-- use custom to track opposite faction questID collection in account/debug if the NPC is considered collectible
+		customTotal = function(t)
+			if app.MODE_DEBUG_OR_ACCOUNT and t.questIDA and t.collectible then
+				return 1
+			end
+		end,
+		customProgress = function(t)
+			return (t.otherFactionQuestID and IsQuestFlaggedCompleted(t.otherFactionQuestID)) and 1 or 0
+		end,
 	}, (function(t) return t.questID or t.questIDA or t.questIDH end))
 end
 
 -- Header Lib
--- TODO: eventually maybe this can actually just be a CreateHeader from parser instead of fake NPC header
-local CreateHeader
+-- TODO: eventually maybe this can actually just be a CreateCustomHeader from parser instead of fake NPC header
+local CreateCustomHeader
 do
 	local HeaderEventIDs = L.HEADER_EVENTS
 	local KEY = "headerID"
-	CreateHeader = app.CreateClass("Header", KEY, {
+	CreateCustomHeader = app.CreateClass("Header", KEY, {
 		IsClassIsolated = true,
 		name = function(t)
 			return L.HEADER_NAMES[t[KEY]]
 		end,
 		icon = function(t)
-			return L.HEADER_ICONS[t[KEY]]
+			return L.HEADER_ICONS[t[KEY]] or app.asset("Category_Zones")
 		end,
 		description = function(t)
 			return L.HEADER_DESCRIPTIONS[t[KEY]]
@@ -230,11 +227,12 @@ do
 			return t.isDaily or t.isWeekly or t.isMonthly or t.isYearly
 		end,
 	}), (function(t) return HeaderEventIDs[t[KEY]] end))
+	app.CreateCustomHeader = CreateCustomHeader
 end
 
 app.CreateNPC = function(id, t)
 	if id < 1 then
-		return CreateHeader(id, t)
+		return CreateCustomHeader(id, t)
 	else
 		return CreateNPC(id, t)
 	end
