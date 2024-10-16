@@ -94,6 +94,17 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 				["races"] = HORDE_ONLY,
 				["isBreadcrumb"] = true,
 			}),
+			q(29437, {	-- The Fallen Guardian
+				["qg"] = 40289,	-- Ysera
+				["sourceQuest"] = 29326,	-- The Nordrassil Summit
+				["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
+				["groups"] = {
+					objective(1, {	-- 0/1 Alysra slain
+						["provider"] = { "n", 54314 },	-- Alysra
+						["coord"] = { 49, 19.4, MOUNT_HYJAL },
+					}),
+				},
+			}),
 			q(29326, {	-- The Nordrassil Summit
 				["qg"] = 54313,	-- Thrall
 				["sourceQuests"] = {

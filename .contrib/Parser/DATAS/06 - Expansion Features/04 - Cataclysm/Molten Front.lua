@@ -1338,11 +1338,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, {
 						currency(416),	-- Mark of the World Tree (x1)
 					},
 				}),
-				q(29437, {	-- The Fallen Guardian
-					["qg"] = 40289,	-- Ysera
-					["sourceQuest"] = 29326,	-- The Nordrassil Summit	-- verify
-					["coord"] = { 62.0, 24.9, MOUNT_HYJAL },
-				}),
 				q(29202, {	-- The Fate of Runetotem
 					["qg"] = 52669,	-- Matoclaw
 					["sourceQuest"] = 29201,	-- Through the Gates of Hell
