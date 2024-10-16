@@ -619,67 +619,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 			})),
-			n(TREASURES, sharedData({
-				["isDaily"] = true,
-				["sourceQuest"] = 80545,	-- The General Weekly pickup
-				["cost"] = {{"i",228949,1}},	-- Rumor Map
-			},{
-				o(437060, {	-- Aspirant's Tribute
-					["provider"] = { "o", 437058 },	-- Forgotten Memorial
-					["coord"] = { 69.2, 81.6, AZJ_KAHET },
-					["questID"] = 80688,
-				}),
-				o(455435, {	-- Aspirant's Tribute
-					["provider"] = { "o", 437191 },	-- Forgotten Memorial
-					["coord"] = { 60.1, 82.5, AZJ_KAHET },
-					["questID"] = 81467,
-				}),
-				o(455436, {	-- Aspirant's Tribute
-					["provider"] = { "o", 437389 },	-- Forgotten Memorial
-					["coord"] = { 65.2, 49.0, AZJ_KAHET },
-					["questID"] = 82876,
-				}),
-				o(455437, {	-- Aspirant's Tribute
-					["provider"] = { "o", 451595 },	-- Forgotten Memorial
-					["coord"] = { 33.7, 41.9, AZJ_KAHET },
-					["questID"] = 82873,
-				}),
-				o(455439, {	-- Aspirant's Tribute
-					["provider"] = { "o", 451596 },	-- Forgotten Memorial
-					["coord"] = { 39.3, 41.6, AZJ_KAHET },
-					["questID"] = 82874,
-				}),
-				o(455440, {	-- Aspirant's Tribute
-					["provider"] = { "o", 451597 },	-- Forgotten Memorial
-					["coord"] = { 63.2, 11.3, AZJ_KAHET },
-					["questID"] = 82875,
-				}),
-				o(455442, {	-- Aspirant's Tribute
-					["provider"] = { "o", 451599 },	-- Forgotten Memorial
-					["coord"] = { 76.2, 65.7, AZJ_KAHET },
-					["questID"] = 82877,
-				}),
-				o(455443, {	-- Aspirant's Tribute
-					["provider"] = { "o", 451600 },	-- Forgotten Memorial
-					["coord"] = { 75.7, 86.9, AZJ_KAHET },
-					["questID"] = 82878,
-				}),
-				o(455444, {	-- Aspirant's Tribute
-					["provider"] = { "o", 451601 },	-- Forgotten Memorial
-					["coord"] = { 48.5, 59.5, AZJ_KAHET },
-					["questID"] = 82879,
-				}),
-				o(455445, {	-- Aspirant's Tribute
-					["provider"] = { "o", 451602 },	-- Forgotten Memorial
-					["coord"] = { 41.0, 29.0, AZJ_KAHET },
-					["questID"] = 82880,	-- 81572 beta?
-				}),
-				o(455446, {	-- Aspirant's Tribute
-					["provider"] = { "o", 451603 },	-- Forgotten Memorial
-					["coord"] = { 7.5, 25.7, NERUBAR },
-					["questID"] = 82881,
-				}),
-			})),
 			n(VENDORS, {
 				n(228184, {	-- Yamas the Provider <Pact Information & Supplies>
 					["coord"] = { 55.4, 41.8, AZJ_KAHET },
@@ -826,7 +765,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				["name"] = [[~("The Weaver considers you a Mastermind. Congratulations, Silksinger %s."):format(UnitName("player"))]],
 			}),
 			-- City Rumors (SpellID: 463344), events are available after unlocking Level 1 (Acquaintance) with the General, Vizier and Weaver
-			-- Using Rumor Map Bundle (ItemID 228950) triggers following 6 quests as completed and reveals the NPCs with "rumors" on the map
+			-- Using Rumor Map Bundle (ItemID 228950) triggers following 6 quests as completed and reveals 6 NPCs with "rumors" on the map
 			q(82616),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
 			q(82641),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
 			q(82643),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
@@ -835,6 +774,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(82649),	-- Triggered when 'Rumor Map Bundle' (itemID 228590) is used
 			-- Quest Givers or "Rumor Givers" are Eirzay <Agent of the General>, Ghos'opp <Agent of the Vizier>, Ru'murh <Agent of the Weaver>
 			-- Different rumors can trigger the same HQTs as commented below. They are not triggered until you talk to the NPC that gives you the rumor
+			-- Dates at the end of the comments are notes as to when I completed the event the first time. They will be removed once all the events are confirmed. --Exo
 			q(82581, {	-- Ru'murh  (n: 224199 @ 45.6, 51.0), starts questID 81483 (Infiltration: Production Blocker), (23-09-24, Exo)
 					-- Ghos'opp (n: 224183 @ 64.5, 87.3), starts questID 81481 (Sabotage: Transformatory Vessels), (27-09-24, Exo)
 					-- Ru'murh  (n: 224192 @ 79.6, 56.6), starts questID 81500 (Wet Work: Step Into Their Parlor), (29-09-24, Exo)

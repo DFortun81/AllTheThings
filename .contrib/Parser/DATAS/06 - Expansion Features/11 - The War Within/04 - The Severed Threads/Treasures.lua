@@ -5,9 +5,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 	n(THE_SEVERED_THREADS, {
 		n(TREASURES, sharedData({
 			["isDaily"] = true,
+			["sourceQuest"] = 80544,	-- The Weaver Weekly pickup
+			["cost"] = {{"i",228949,1}},	-- Rumor Map
 		},{
 			["g"] = bubbleDownFiltered({
-				["sharedDescription"] = "Interact with Thimble and follow him to reveal his cache. Only available if your weekly pact is with The Weaver.",
+				["sharedDescription"] = "Interact with Thimble and follow him to reveal his cache. Only available if your weekly pact is with The Weaver.\nAvailable when you strike a Pact with The Weaver.",
 			},FILTERFUNC_objectID,{
 				o(434527, {	-- Thimble's Cache
 					["provider"] = { "n", 224889 },	-- Thimble // Weave-Rat Cache (vignette)
@@ -107,26 +109,99 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 			}),
 		})),
+		n(TREASURES, sharedData({
+			["isDaily"] = true,
+			["sourceQuest"] = 80545,	-- The General Weekly pickup
+			["cost"] = {{"i",228949,1}},	-- Rumor Map
+		},{
+			["g"] = bubbleDownFiltered({
+				["sharedDescription"] = "Interact with the Forgotten Memorial to challenge Aspirant Kiipka and then defeat him.\nAvailable when you strike a Pact with The General.",
+			},FILTERFUNC_objectID,{
+				o(437060, {	-- Aspirant's Tribute
+					["provider"] = { "o", 437058 },	-- Forgotten Memorial
+					["coord"] = { 69.1, 81.6, AZJ_KAHET },
+					["questID"] = 80688,
+				}),
+				o(455435, {	-- Aspirant's Tribute
+					["provider"] = { "o", 437191 },	-- Forgotten Memorial
+					["coord"] = { 60.0, 82.3, AZJ_KAHET },
+					["questID"] = 81467,
+				}),
+				o(455436, {	-- Aspirant's Tribute
+					["provider"] = { "o", 437389 },	-- Forgotten Memorial
+					["coord"] = { 65.2, 49.0, AZJ_KAHET },
+					["questID"] = 82876,
+				}),
+				o(455437, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451595 },	-- Forgotten Memorial
+					["coord"] = { 33.7, 41.9, AZJ_KAHET },
+					["questID"] = 82873,
+				}),
+				o(455439, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451596 },	-- Forgotten Memorial
+					["coord"] = { 39.3, 41.6, AZJ_KAHET },
+					["questID"] = 82874,
+				}),
+				o(455440, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451597 },	-- Forgotten Memorial
+					["coord"] = { 63.2, 11.3, AZJ_KAHET },
+					["questID"] = 82875,
+				}),
+				o(455441, {	-- Aspirant's Tribute (was missing, WoWhead Data)
+					["provider"] = { "o", 451598 },	-- Forgotten Memorial
+					["coord"] = { 78.1, 36.3, AZJ_KAHET },
+					-- ["questID"] = 82877,
+				}),
+				o(455442, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451599 },	-- Forgotten Memorial
+					["coord"] = { 76.3, 65.7, AZJ_KAHET },
+					["questID"] = 82877,
+				}),
+				o(455443, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451600 },	-- Forgotten Memorial
+					["coord"] = { 75.7, 86.9, AZJ_KAHET },
+					["questID"] = 82878,
+				}),
+				o(455444, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451601 },	-- Forgotten Memorial
+					["coord"] = { 48.5, 59.5, AZJ_KAHET },
+					["questID"] = 82879,
+				}),
+				o(455445, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451602 },	-- Forgotten Memorial
+					["coord"] = { 41.0, 29.0, AZJ_KAHET },
+					["questID"] = 82880,	-- 81572 beta?
+				}),
+				o(455446, {	-- Aspirant's Tribute
+					["provider"] = { "o", 451603 },	-- Forgotten Memorial
+					["coord"] = { 7.4, 26.1, NERUBAR },
+					["questID"] = 82881,
+				}),
+			}),
+		})),
 	}),
 })));
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
 	m(THE_SEVERED_THREADS, {
 		n(TREASURES, {
-			-- Following 12 HQTs are triggered when 'Treasure Map Bundle' (item 228952) is used.
+			-- 'Treasures: Weave Rat Caches', available when you forge a Pact with The Weaver.
 			-- There are 12 Thimble's Caches in total however, only 4 are revealed on the map.
-			q(83778),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
-			q(83779),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
-			q(83780),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
-			q(83781),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
-			q(83782),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
-			q(83783),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
-			q(83784),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
-			q(83785),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
-			q(83786),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
-			q(83787),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
-			q(83788),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
-			q(83789),	-- Triggered when 'Treasure Map Bundle' (item 228952) is used
-			-- These 12 HQTs also can be triggered from the Treasure Map bundle (228952) Unsure what changes the set given.
+			-- Following 12 HQTs are triggered when 'Treasure Map Bundle' (item 228952) is used.
+			q(83778),
+			q(83779),
+			q(83780),
+			q(83781),
+			q(83782),
+			q(83783),
+			q(83784),
+			q(83785),
+			q(83786),
+			q(83787),
+			q(83788),
+			q(83789),
+			-- 'Treasures: Forgotten Memorials', available when you forge a Pact with The General.
+			-- There are 12 Forgotten Memorials in total, only 4 are revealed on the map at the time.
+			-- Following 12 HQTs are triggered when 'Treasure Map Bundle' (item 228952) is used.
 			q(83796),
 			q(83797),
 			q(83798),
@@ -139,6 +214,21 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 			q(83805),
 			q(83806),
 			q(83807),
+			-- 'Treasures: Kaheti Excavations', available when you forge a Pact with The Weaver.
+			-- There are 12 Forgotten Memorials in total, only 4 are revealed on the map at the time.
+			-- Following 12 HQTs are triggered when 'Treasure Map Bundle' (item 228952) is used.
+			q(83810),
+			q(83811),
+			q(83812),
+			q(83813),
+			q(83814),
+			q(83815),
+			q(83816),
+			q(83817),
+			q(83818),
+			q(83819),
+			q(83820),
+			q(83821),
 		}),
 	}),
 })));
