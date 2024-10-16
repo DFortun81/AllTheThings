@@ -83,6 +83,29 @@ root(ROOTS.Instances, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = {
 							q(84020, {	-- A Mech in Need
 								["provider"] = { "i", 226683 },	-- Malfunctioning Mechsuit
 								["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
+							}),
+							q(84021, {	-- Machine Without Cogs
+								["sourceQuest"] = 84020,	-- A Mech in Need
+								["provider"] = { "n", 213875  },	-- Speaker Jurlax
+								["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
+								["cost"] = { { "i", 219301, 1 }, },	-- 1x Overclocked Gear-a-Rang Launcher
+							}),
+							q(84023, {	-- Orienting Ourselves
+								["sourceQuest"] = 84021,	-- Machine Without Cogs
+								["provider"] = { "n", 213875  },	-- Speaker Jurlax
+								["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
+								["cost"] = { { "i", 219299, 1 }, },	-- 1x Synergistic Brewterializer
+							}),
+							q(84024, {	-- Clutching Control
+								["sourceQuest"] = 84023,	-- Orienting Ourselves
+								["provider"] = { "n", 213875  },	-- Speaker Jurlax
+								["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
+								["cost"] = { { "i", 219306, 1 }, },	-- 1x Burin of the Candle King
+							}),
+							q(84025, {	-- Repurposed, Restored
+								["sourceQuest"] = 84024,	-- Clutching Control
+								["provider"] = { "n", 213875  },	-- Speaker Jurlax
+								["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
 								["groups"] = {
 									i(221765),	-- Stonevault Mechsuit (MOUNT!)
 								},

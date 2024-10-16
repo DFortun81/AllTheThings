@@ -492,9 +492,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40844.03, {	-- Striking Steel
 				q(82216, {	-- Economical Request
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = {
+						TEMPORARY_SOURCEQUEST,
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["provider"] = { "n", 213145 },	-- Auralia Steelstrike
 					["coord"] = { 41.3, 53.1, HALLOWFALL },
+					["sourceQuestNumRequired"] = 1,
 					["g"] = {
 						i(216694),	-- Letter of Recommendation (QI!)
 					},
@@ -583,9 +587,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40844.04, {	-- Lost in the Darkness
 				q(80382, {	-- Eggs In One Basket
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = {
+						TEMPORARY_SOURCEQUEST,
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["provider"] = { "o", 430581 },	-- Egg Basket
 					["coord"] = { 60.8, 27.9, HALLOWFALL },
+					["sourceQuestNumRequired"] = 1,
 					["g"] = {
 						i(217396),	-- Hillhelm Egg (QI!)
 					},
@@ -606,11 +614,9 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(212153),	-- Corrupted Shadowleaf Seed (QI!)
 					},
 				}),
-
 				q(50690, {	-- A Flickering of Hope (don't ask me about this questID, ask Blizzard, it is also currently in HQTs)
 					["sourceQuests"] = {
-						80382,	-- Eggs In One Basket
-						76247,	-- Keep The Home Fires Burning // either all 3 or only this one required
+						76247,	-- Keep The Home Fires Burning // either all 2 or only this one required
 						79108,	-- Seeds of Evil
 					},
 					["provider"] = { "n", 206528 },	-- Aliya Hillhelm
@@ -1222,7 +1228,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 			}),
-
 			------ Stay awhile and listen ------
 			hqt(81635, {	-- Stay awhile and listen: Nalina Ironsong
 				["name"] = "Stay awhile and listen: Nalina Ironsong",

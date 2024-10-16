@@ -1,0 +1,51 @@
+﻿local ObjectDB = ObjectDB; for objectID,objectData in pairs({
+	[439348] = {
+		readable = "Mutagen Cache",
+		model = 5264289,
+		text = {
+			en = "Mutagen Cache",
+			es = "Alijo de mutágenos",
+			de = "Mutagenvorrat",
+			fr = "Cache de mutagène",
+			it = "Cassa di Mutageno",
+			pt = "Depósito de Agente Mutagênico",
+			ru = "Тайник с мутагеном",
+			ko = "돌연변이 보관함",
+			cn = "Mutagen Cache",
+			tw = "Mutagen Cache",
+		},
+	},
+	[451598] = {
+		readable = "Forgotten Memorial",
+		model = 4996091,
+		text = {
+			en = "Forgotten Memorial",
+			es = "Monumento olvidado",
+			de = "Vergessenes Denkmal",
+			fr = "Mémorial oublié",
+			it = "Memoriale Dimenticato",
+			pt = "Memorial Abandonado",
+			ru = "Забытый памятник",
+			ko = "Forgotten Memorial",
+			cn = "Forgotten Memorial",
+			tw = "Forgotten Memorial",
+		},
+	},
+	[455441] = {
+		readable = "Aspirant's Tribute",
+		model = 5007034,
+		text = {
+			en = "Aspirant's Tribute",
+			es = "Aspirant's Tribute",
+			de = "Tribut des Aspiranten",
+			fr = "Tribut de l’aspirant",
+			it = "Tributo del Pretendente",
+			pt = "Tributo do Aspirante",
+			ru = "Дар претендента",
+			ko = "Aspirant's Tribute",
+			cn = "Aspirant's Tribute",
+			tw = "Aspirant's Tribute",
+		},
+	},
+})
+do ObjectDB[objectID] = objectData; end

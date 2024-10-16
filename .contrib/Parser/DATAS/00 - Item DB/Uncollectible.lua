@@ -7,6 +7,7 @@ local i = function(itemID)
 end
 -------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
 -- Put items between these two bars if you dont want to sort them /Braghe
+i(828);		-- Small Blue Pouch
 i(1725);	-- Large Knapsack
 i(5571);	-- Small Black Pouch
 i(3914);	-- neyman's Backpack \\ Journeyman's Backpack
