@@ -276,8 +276,16 @@ local function OnQUEST_DETAIL(...)
 
 	local guid = UnitGUID("questnpc") or UnitGUID("npc")
 	local providerid, guidtype, _
-	if guid then guidtype, _, _, _, _, providerid = ("-"):split(guid) end
+	if not guid then
+		app.print("No GUID for quest giver during Contribute check!",...)
+		return
+	end
+	guidtype, _, _, _, _, providerid = ("-"):split(guid)
 	providerid = tonumber(providerid)
+	if not providerid or not guidtype then
+		app.print("Unknown Quest Provider",guidtype,providerid,"during Contribute check!",...)
+		return
+	end
 	app.PrintDebug(guidtype,providerid,app.NPCNameFromID[providerid] or app.ObjectNames[providerid]," => Quest #", questID)
 
 	-- check coord distance
