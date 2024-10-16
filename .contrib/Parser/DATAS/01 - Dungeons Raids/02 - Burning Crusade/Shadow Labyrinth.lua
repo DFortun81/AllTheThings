@@ -111,7 +111,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["lvl"] = lvlsquish(68, 68, 20),
 					["groups"] = {
 						objective(1, {	-- 0/5 Soul Device
-							["provider"] = { "i", 27480 },	-- Soul Device
+							["providers"] = {
+								{ "i",  27480 },	-- Soul Device
+								{ "o", 182940 },	-- Soul Device
+							},
 						}),
 						i(28174),	-- Shattrath Wraps
 						i(28171),	-- Spymistress' Wristguards
@@ -126,7 +129,10 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_ONE, 
 					["lvl"] = lvlsquish(68, 68, 20),
 					["groups"] = {
 						objective(1, {	-- 0/5 Soul Device
-							["provider"] = { "i", 27480 },	-- Soul Device
+							["providers"] = {
+								{ "i",  27480 },	-- Soul Device
+								{ "o", 182940 },	-- Soul Device
+							},
 						}),
 						i(28174),	-- Shattrath Wraps
 						i(28171),	-- Spymistress' Wristguards
