@@ -402,7 +402,7 @@ local function SetRowData(self, row, data)
 		else
 			row.text = text;
 		end
-		row.Label:SetText(text);
+		row.Label:SetText(app.TryColorizeName(data, text));
 		row:SetHeight(select(2, row.Label:GetFont()) + 4);
 	end
 
