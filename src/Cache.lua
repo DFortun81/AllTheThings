@@ -12,29 +12,18 @@ local contains, classIndex, raceIndex, factionID =
 
 -- Module locals
 local AllCaches, AllGamePatches, postscripts, runners, QuestTriggers = {}, {}, {}, {}, {};
-local containerMeta = {
-	__index = function(t, id)
-		if id then
-			local container = {};
-			t[id] = container;
-			return container;
-		end
-	end,
-};
 local fieldMeta = {
 	__index = function(t, field)
-		if field then
-			local container = setmetatable({}, containerMeta);
-			t[field] = container;
-			return container;
-		end
+		if field == nil then return end
+		local container = setmetatable({}, app.MetaTable.AutoTable);
+		t[field] = container;
+		return container;
 	end,
 	__newindex = function(t, field, value)
-		if field then
-			local container = setmetatable(value, containerMeta);
-			rawset(t, field, container);
-			return container;
-		end
+		if field == nil then return end
+		local container = setmetatable(value, app.MetaTable.AutoTable);
+		rawset(t, field, container);
+		return container;
 	end,
 };
 local currentCache, CacheFields;

@@ -272,13 +272,7 @@ app.AddEventRegistration("PLAYER_INTERACTION_MANAGER_FRAME_HIDE", UpdateLocation
 app.GetMapName = GetMapName;
 
 -- Exploration
-local ExplorationDB = setmetatable(app.ExplorationDB or {}, {
-	__index = function(t, mapID)
-		local data = {};
-		t[mapID] = data;
-		return data;
-	end
-});
+local ExplorationDB = setmetatable(app.ExplorationDB or {}, app.MetaTable.AutoTable);
 local ExplorationAreaPositionDB = app.ExplorationAreaPositionDB or {};
 app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 	["name"] = function(t)
@@ -410,13 +404,6 @@ end)
 
 -- Harvesting
 local MAXIMUM_COORDS_PER_AREA = 5;
-local AreaExplorationMeta = {
-	__index = function(t, areaID)
-		local coords = {};
-		t[areaID] = coords;
-		return coords;
-	end
-};
 local MapDataMeta = {
 	__index = function(t, mapID)
 		local data = {
@@ -430,7 +417,7 @@ local MapDataMeta = {
 };
 local function GenerateHitsForMap(grid, mapID)
 	if mapID == 594 or mapID == 2091 then return nil, nil; end	-- Shattrath City messing up Talador, War of the Shifting Sands messing up Silithus
-	local any, hits = false, setmetatable({}, AreaExplorationMeta);
+	local any, hits = false, setmetatable({}, app.MetaTable.AutoTable);
 	for _,pos in ipairs(grid) do
 		local explored = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos);
 		if explored then
@@ -658,7 +645,7 @@ local function HarvestExploration(simplify)
 			"```lua",
 		};
 
-		local areasByMapID = setmetatable({}, AreaExplorationMeta);
+		local areasByMapID = setmetatable({}, app.MetaTable.AutoTable);
 		for i,o in ipairs(reportedAreas) do
 			tinsert(areasByMapID[o.mapID], o);
 		end

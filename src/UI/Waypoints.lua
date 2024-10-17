@@ -13,13 +13,8 @@ local ResolveSymbolicLink = app.ResolveSymbolicLink;
 local SearchForField = app.SearchForField
 local SearchForObject = app.SearchForObject;
 local WaypointRunner = app.CreateRunner("waypoint");
-local __TomTomWaypointCacheIndexY = { __index = function(t, y)
-	local o = {};
-	t[y] = o;
-	return o;
-end };
 local __TomTomWaypointCacheIndexX = { __index = function(t, x)
-	local o = setmetatable({}, __TomTomWaypointCacheIndexY);
+	local o = setmetatable({}, app.MetaTable.AutoTable);
 	t[x] = o;
 	return o;
 end };

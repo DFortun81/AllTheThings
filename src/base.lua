@@ -236,6 +236,7 @@ end;
 -- Common Metatable Functions
 app.MetaTable = {}
 app.MetaTable.AutoTable = { __index = function(t, key)
+	if key == nil then return end
 	local k = {}
 	t[key] = k
 	return k
