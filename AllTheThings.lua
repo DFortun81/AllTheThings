@@ -2835,13 +2835,12 @@ local function DetermineCraftedGroups(group, FillData)
 		-- app.PrintDebug(itemID,"x",info[2],"=>",craftedItemID,"via",recipeID,skipLevel);
 		if craftedItemID and not craftableItemIDs[craftedItemID] and (expandedNesting or not craftedItems[craftedItemID]) then
 			-- app.PrintDebug("recipeID",recipeID);
-			recipe = SearchForObject("recipeID",recipeID,"key");
+			recipe = SearchForObject("recipeID",recipeID,"key") or {recipeID=recipeID}
 			if recipe then
 				if expandedNesting then
 					recipe = CreateObject(recipe)
 					recipe.collectible = false
 					recipe.fillable = true
-					recipe.nomerge = true
 					groups[#groups + 1] = recipe
 				else
 					-- crafted items should be considered unique per recipe
