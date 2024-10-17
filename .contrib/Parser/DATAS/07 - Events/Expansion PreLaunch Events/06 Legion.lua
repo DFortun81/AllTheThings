@@ -298,47 +298,18 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 						i(138170),	-- Felstalker Spine
 						i(138171),	-- Inquisitor's Talisman
 						i(138161),	-- Mo'arg Clan Token
-						i(139170, {	-- Ensemble: Fel-Infused Cloth Armor
+						iensemble(139170, {	-- Ensemble: Fel-Infused Cloth Armor
 							["ignoreBonus"] = true,
-							["groups"] = {
-								i(138184),	-- Fel-Infused Helm
-								i(138186),	-- Fel-Infused Spaulders
-								i(138187),	-- Fel-Infused Hauberk
-								i(138181),	-- Fel-Infused Bracers
-								i(138182),	-- Fel-Infused Grips
-								i(138180),	-- Fel-Infused Cinch
-								i(138185),	-- Fel-Infused Leggings
-								i(138183),	-- Fel-Infused Boots
-							},
 						}),
-						i(139169, {	-- Ensemble: Felshroud Lather Armor
+						iensemble(139169, {	-- Ensemble: Felshroud Lather Armor
 							["ignoreBonus"] = true,
-							["groups"] = {
-								i(138167),	-- Felshroud Hood
-								i(138168),	-- Felshroud Shoulders
-								i(138192),	-- Felshroud Vest
-								i(138163),	-- Felshroud Bindings
-								i(138166),	-- Felshroud Gloves
-								i(138169),	-- Felshroud Belt
-								i(138165),	-- Felshroud Pants
-								i(138164),	-- Felshroud Boots
-							},
 						}),
-						i(139168, {	-- Ensemble: Fel-Chain Mail Armor
+						iensemble(139168, {	-- Ensemble: Fel-Chain Mail Armor
 							["ignoreBonus"] = true,
-							["groups"] = {
-								i(138176),	-- Fel-Chain Helm
-								i(138178),	-- Fel-Chain Spaulders
-								i(138179),	-- Fel-Chain Hauberk
-								i(138173),	-- Fel-Chain Bracers
-								i(138174),	-- Fel-Chain Grips
-								i(138172),	-- Fel-Chain Cinch
-								i(138177),	-- Fel-Chain Leggings
-								i(138175),	-- Fel-Chain Boots
-							},
 						}),
-						i(139167, {	-- Ensemble: Felforged Plate Armor
+						iensemble(139167, {	-- Ensemble: Felforged Plate Armor
 							["ignoreBonus"] = true,
+							--[[
 							["groups"] = {
 								i(138155),	-- Felforged Helmet
 								i(138157),	-- Felforged Pauldrons
@@ -349,7 +320,8 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 								i(138156),	-- Felforged Legplates
 								i(138158),	-- Felforged Warboots
 							},
-						}),
+							]]--
+						}), --TODO iensemble also includes i(144275)
 					},
 				}),
 			}),

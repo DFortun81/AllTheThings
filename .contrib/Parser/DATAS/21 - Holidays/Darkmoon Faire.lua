@@ -4208,28 +4208,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.DARKMOON_FAIRE, n(DARKMOON_FAIRE_HEADER, 
 					i(138429, {	-- Cropped Tabard of the Scarlet Crusade
 						["cost"] = 250000000,	-- 25,000g
 					}),
-					i(138430, {	-- Ensemble: Chain of the Scarlet Crusade
+					iensemble(138430, {	-- Ensemble: Chain of the Scarlet Crusade
 						["cost"] = 100000000,	-- 10,000g
-						["groups"] = {
-							i(10329),	-- Scarlet Belt
-							i(10332),	-- Scarlet Boots
-							i(10328),	-- Scarlet Chestpiece
-							i(10331),	-- Scarlet Gauntlets
-							i(10330),	-- Scarlet Leggings
-							i(10333),	-- Scarlet Wristguards
-						},
-					}),
-					i(138431, {	-- Ensemble: Scale of the Scarlet Crusade
+					}), --No questid attached to this ensemble
+					iensemble(138431, {	-- Ensemble: Scale of the Scarlet Crusade
 						["cost"] = 100000000,	-- 10,000g
-						["groups"] = {
-							i(138424),	-- Scarlet Belt
-							i(138427),	-- Scarlet Boots
-							i(138423),	-- Scarlet Chestpiece
-							i(138426),	-- Scarlet Gauntlets
-							i(138425),	-- Scarlet Leggings
-							i(138428),	-- Scarlet Wristguards
-						},
-					}),
+					}), --No questid attached to this ensemble
 				},
 			})),
 			n(14845, {	-- Stamp Thunderhorn <Food Vendor>

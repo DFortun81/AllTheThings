@@ -864,6 +864,10 @@ q(47255),	-- Arsenal: Armaments of the Ebon Blade
 q(47256),	-- Arsenal: Armaments of the Silver Hand
 q(48316),	-- Arsenal: Weapons of the Lightforged
 q(66309),	-- Ensemble: Dark Ranger's Attire
+q(43279),	-- Ensemble: Fel-Chain Mail Armor
+q(43281),	-- Ensemble: Fel-Infused Cloth Armor
+q(43278),	-- Ensemble: Felforged Plate Armor
+q(43280),	-- Ensemble: Felshroud Lather Armor
 
 --- BFA
 q(66302),	-- Arsenal: Lavaforge Armaments
@@ -878,8 +882,13 @@ q(66280),	-- Ensemble: Blood Knight's Dedication
 --- Dragonflight
 q(78840),	-- Arsenal: Whispering Temple Blades
 q(76018),	-- Ensemble: Azure Renewal Finery
+q(70757),	-- Ensemble: Azure Valdrakken Clothing
 q(76038),	-- Ensemble: Black Dragonflight's Vestments
+q(70756),	-- Ensemble: Black Valdrakken Clothing
+q(70758),	-- Ensemble: Bronze Valdrakken Clothing
+q(70755),	-- Ensemble: Crimson Valdrakken Clothing
 q(65738),	-- Ensemble: Dashing Buccaneer's Slops
+q(70759),	-- Ensemble: Green Valdrakken Clothing
 
 -- Engi Goggles
 q(78030),	-- Ensemble: Chromatically Calibrated Holo-Gogs

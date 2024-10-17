@@ -572,64 +572,39 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 							},
 						}),
 					}, {	-- RENOWN 20 --
-						i(199754, {	-- Ensemble: Azure Valdrakken Clothing
+						iensemble(199754, {	-- Ensemble: Azure Valdrakken Clothing
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 750 },
 								{ "i", WILDERCLOTH, 25 },
 								{ "i", MYSTIC_SAPPHIRE, 1 },
 							},
-							["g"] = {
-								i(198558),	-- Azure Valdrakken Boots
-								i(198557),	-- Azure Valdrakken Jacket
-								i(198559),	-- Azure Valdrakken Pants
-							},
 						}),
-						i(199753, {	-- Ensemble: Black Valdrakken Clothing
+						iensemble(199753, {	-- Ensemble: Black Valdrakken Clothing
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 750 },
 								{ "i", WILDERCLOTH, 25 },
 								{ "i", SUNDERED_ONYX, 1 },
 							},
-							["g"] = {
-								i(198561),	-- Black Valdrakken Boots
-								i(198560),	-- Black Valdrakken Jacket
-								i(198562),	-- Black Valdrakken Pants
-							},
 						}),
-						i(199756, {	-- Ensemble: Bronze Valdrakken Clothing
+						iensemble(199756, {	-- Ensemble: Bronze Valdrakken Clothing
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 750 },
 								{ "i", WILDERCLOTH, 25 },
 								{ "i", ETERNITY_AMBER, 1 },
 							},
-							["g"] = {
-								i(198546),	-- Bronze Valdrakken Boots
-								i(198545),	-- Bronze Valdrakken Jacket
-								i(198547),	-- Bronze Valdrakken Pants
-							},
 						}),
-						i(199752, {	-- Ensemble: Crimson Valdrakken Clothing
+						iensemble(199752, {	-- Ensemble: Crimson Valdrakken Clothing
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 750 },
 								{ "i", WILDERCLOTH, 25 },
 								{ "i", QUEENS_RUBY, 1 },
 							},
-							["g"] = {
-								i(198552),	-- Crimson Valdrakken Boots
-								i(198551),	-- Crimson Valdrakken Jacket
-								i(198553),	-- Crimson Valdrakken Pants
-							},
 						}),
-						i(199755, {	-- Ensemble: Green Valdrakken Clothing
+						iensemble(199755, {	-- Ensemble: Green Valdrakken Clothing
 							["cost"] = {
 								{ "c", DRAGON_SUPPLIES, 750 },
 								{ "i", WILDERCLOTH, 25 },
 								{ "i", VIBRANT_EMERALD, 1 },
-							},
-							["g"] = {
-								i(198555),	-- Green Valdrakken Boots
-								i(198554),	-- Green Valdrakken Jacket
-								i(198556),	-- Green Valdrakken Pants
 							},
 						}),
 					}, {	-- RENOWN 21 --

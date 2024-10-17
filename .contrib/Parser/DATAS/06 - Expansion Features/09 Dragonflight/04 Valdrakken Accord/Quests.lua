@@ -811,11 +811,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.DF, bubbleDown({ ["timeline"] 
 						["provider"] = { "n", 195782 },	-- Giera
 						["coord"] = { 31.6, 69.3, VALDRAKKEN },
 						["g"] = {
-							i(199754),	-- Ensemble: Azure Valdrakken Clothing
-							i(199753),	-- Ensemble: Black Valdrakken Clothing
-							i(199756),	-- Ensemble: Bronze Valdrakken Clothing
-							i(199752),	-- Ensemble: Crimson Valdrakken Clothing
-							i(199755),	-- Ensemble: Green Valdrakken Clothing
+							iensemble(199754),	-- Ensemble: Azure Valdrakken Clothing
+							iensemble(199753),	-- Ensemble: Black Valdrakken Clothing
+							iensemble(199756),	-- Ensemble: Bronze Valdrakken Clothing
+							iensemble(199752),	-- Ensemble: Crimson Valdrakken Clothing
+							iensemble(199755),	-- Ensemble: Green Valdrakken Clothing
 						},
 					}),
 					q(72689, {	-- Renown Supplies
@@ -1124,14 +1124,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.DF, bubbleDown({ ["timeline"
 				["timeline"] = { ADDED_10_1_0 },
 				["repeatable"] = true,
 			}),
-
-			-- Ensembles
-			q(70755),	-- Ensemble: Crimson Valdrakken Clothing
-			q(70756),	-- Ensemble: Black Valdrakken Clothing
-			q(70757),	-- Ensemble: Azure Valdrakken Clothing
-			q(70758),	-- Ensemble: Bronze Valdrakken Clothing
-			q(70759),	-- Ensemble: Green Valdrakken Clothing
-
 			q(76177, {["timeline"] = {ADDED_10_1_7}}),	-- RP after finishing `Dislocated Disc Located`(questID 75638)
 			q(78141, {["timeline"] = {ADDED_10_1_7}}),	-- RP after finishing `Dislocated Disc Located`(questID 75638) (for whatever reason this one pop now?)
 			q(77819, {["timeline"] = {ADDED_10_2_0}}),	-- After questID 77344 Receiving Achievement?
