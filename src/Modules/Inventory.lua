@@ -20,12 +20,7 @@ local ContainerCache
 local function ResetContainerCache()
 	ContainerCache = setmetatable({}, {
 		__index = function(t, key)
-			local bagCache = setmetatable({}, {
-				__index = function(t, key)
-					local slotCache = {}
-					t[key] = slotCache
-					return slotCache
-				end})
+			local bagCache = setmetatable({}, app.MetaTable.AutoTable)
 			t[key] = bagCache
 			return bagCache
 		end

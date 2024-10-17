@@ -9,13 +9,7 @@ local EventHandlers = setmetatable({
 	OnReady = {},
 	OnRecalculate = {},
 	OnRefreshCollections = {},
-}, {
-	__index = function(t, key)
-		local item = {};
-		rawset(t, key, item);
-		return item;
-	end,
-})
+}, app.MetaTable.AutoTable)
 app.AddEventHandler = function(eventName, handler, forceStart)
 	if type(handler) ~= "function" then
 		app.print("AddEventHandler was provided a non-function",handler)

@@ -7,13 +7,7 @@ app.ActiveVignettes = ActiveVignettes;
 -- This functionality is only available if the VignetteInfo api is available.
 if not C_VignetteInfo then
 	-- Fallback for if the Vignette class isn't supported.
-	setmetatable(ActiveVignettes, {
-		__index = function(t, key)
-			local data = {};
-			t[key] = data;
-			return data;
-		end
-	});
+	setmetatable(ActiveVignettes, app.MetaTable.AutoTable);
 	return
 end
 
