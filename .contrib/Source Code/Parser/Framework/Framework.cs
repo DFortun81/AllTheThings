@@ -1569,11 +1569,7 @@ namespace ATT
             if (long.TryParse(icon, out long iconID) && iconID.ToString() == icon) builder.Append(icon);
             else
             {
-                if (!icon.StartsWith("_"))
-                {
-                    Console.WriteLine(icon);
-                    Console.ReadLine();
-                }
+                if (!(icon.StartsWith("_") || icon.StartsWith("~"))) Trace.WriteLine(icon);
                 ExportStringValue(builder, icon);
             }
             return builder;
