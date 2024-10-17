@@ -978,7 +978,7 @@ root(ROOTS.Zones, {
 						["lvl"] = 82,
 					}),
 					q(28295, {	-- Meetup with the Caravan
-						["description"] = "This quest is part of a breadcrumb questline from Deepholm, and cannot be accepted if you have 'Hero's Call: Uldum!' in your quest log.",
+						["description"] = "This quest is part of a breadcrumb questline from Deepholm and cannot be accepted if you have accepted or completed 'Hero's Call: Uldum!', or any following quests in Uldum.",
 						["qg"] = 44238,	-- Harrison Jones
 						["sourceQuest"] = 28292,	-- That's No Pyramid!
 						["coord"] = { 85.6, 25.8, STORMWIND_CITY },
@@ -986,7 +986,7 @@ root(ROOTS.Zones, {
 						["isBreadcrumb"] = true,
 					}),
 					q(28296, {	-- Meetup with the Caravan
-						["description"] = "This quest is part of a breadcrumb questline from Deepholm, and cannot be accepted if you have 'Warchief's Command: Uldum!' in your quest log.",
+						["description"] = "This quest is part of a breadcrumb questline from Deepholm and cannot be accepted if you have accepted or completed 'Warchief's Command: Uldum!' or any following quests in Uldum.",
 						["sourceQuest"] = 28293,	-- That's No Pyramid!
 						["isBreadcrumb"] = true,
 						["qg"] = 47571,	-- Belloc Brightblade
