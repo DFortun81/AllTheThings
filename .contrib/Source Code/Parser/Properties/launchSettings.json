@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Parser": {
+      "commandName": "Project",
+      "commandLineArgs": "baseconfig=.config/retail/retail.config",
+      "workingDirectory": "C:\\Mac\\Home\\Documents\\GitHub\\AllTheThings\\.contrib\\Parser"
+    }
+  }
+}
