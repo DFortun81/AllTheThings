@@ -892,20 +892,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 23.5, 60.2, ULDUM },
 					["sourceQuest"] = 28267,	-- Firing Squad
 				}),
-				q(28295, {	-- Meetup with the Caravan
-					["qg"] = 44238,	-- Harrison Jones
-					["sourceQuest"] = 28292,	-- That's No Pyramid!
-					["coord"] = { 85.6, 25.8, STORMWIND_CITY },
-					["races"] = ALLIANCE_ONLY,
-					["isBreadcrumb"] = true,
-				}),
-				q(28296, {	-- Meetup with the Caravan
-					["sourceQuest"] = 28293,	-- That's No Pyramid!
-					["isBreadcrumb"] = true,
-					["qg"] = 47571,	-- Belloc Brightblade
-					["coord"] = { 49.1, 70.5, ORGRIMMAR },
-					["races"] = HORDE_ONLY,
-				}),
 				q(27520, {	-- Minions of Al'Akir
 					["qg"] = 45799,	-- Prince Nadun
 					["coord"] = { 45.2, 37.9, ULDUM },

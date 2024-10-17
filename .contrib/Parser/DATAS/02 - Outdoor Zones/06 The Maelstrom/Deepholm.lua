@@ -977,6 +977,22 @@ root(ROOTS.Zones, {
 						["sourceQuest"] = 27100,	-- Twilight Research
 						["lvl"] = 82,
 					}),
+					q(28295, {	-- Meetup with the Caravan
+						["description"] = "This quest is part of a breadcrumb questline from Deepholm, and cannot be accepted if you have 'Hero's Call: Uldum!' in your quest log.",
+						["qg"] = 44238,	-- Harrison Jones
+						["sourceQuest"] = 28292,	-- That's No Pyramid!
+						["coord"] = { 85.6, 25.8, STORMWIND_CITY },
+						["races"] = ALLIANCE_ONLY,
+						["isBreadcrumb"] = true,
+					}),
+					q(28296, {	-- Meetup with the Caravan
+						["description"] = "This quest is part of a breadcrumb questline from Deepholm, and cannot be accepted if you have 'Warchief's Command: Uldum!' in your quest log.",
+						["sourceQuest"] = 28293,	-- That's No Pyramid!
+						["isBreadcrumb"] = true,
+						["qg"] = 47571,	-- Belloc Brightblade
+						["coord"] = { 49.1, 70.5, ORGRIMMAR },
+						["races"] = HORDE_ONLY,
+					}),
 					q(27047, {	-- Motes
 						["qg"] = 43805,	-- Felsen the Enduring
 						["sourceQuest"] = 26709,	-- The Stone Throne
