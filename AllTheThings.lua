@@ -3132,6 +3132,10 @@ local function RunGroupsLayeredAsync(FillData)
 		Run(RunGroupsLayeredAsync, FillData)
 	end
 end
+local function HandleOnWindowFillComplete(window)
+	window.data._fillcomplete = true
+	app.HandleEvent("OnWindowFillComplete", window)
+end
 -- Appends sub-groups into the item group based on what is required to have this item (cost, source sub-group, reagents, symlinks)
 app.FillGroups = function(group)
 	group.__FillGroups = true
@@ -3160,8 +3164,14 @@ app.FillGroups = function(group)
 	if groupWindow then
 		local Runner = groupWindow:GetRunner();
 		FillData.Runner = Runner
-		Runner.OnEnd(groupWindow.StopProcessing);
-		groupWindow.StartProcessing();
+		if not groupWindow.SelfHandleOnWindowFillComplete then
+			-- capture a function closure which can handle the event for the window
+			-- since OnEnd does not handle parameters
+			groupWindow.SelfHandleOnWindowFillComplete = function()
+				HandleOnWindowFillComplete(groupWindow)
+			end
+		end
+		Runner.OnEnd(groupWindow.SelfHandleOnWindowFillComplete)
 		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
 		Runner.SetPerFrame(25);
 		-- Recursive Fill
@@ -3416,6 +3426,7 @@ local function BuildSourceParent(group)
 				description = L.SOURCES_DESC,
 				icon = 134441,
 				OnUpdate = app.AlwaysShowUpdate,
+				sourceIgnored = true,
 				skipFill = true,
 				SortPriority = -3.0,
 				g = {},
@@ -4356,6 +4367,7 @@ local function DirectGroupUpdate(group, got)
 		-- sometimes we may want to trigger a delayed fill operation on a group, but when attempting the fill originally,
 		-- the group may not yet be in a state for proper filling... so we can instead assign the group to trigger a fill
 		-- once it received a direct update within a window
+		-- TODO: use an Event for this check eventually
 		if group.DGU_Fill then
 			group.DGU_Fill = nil
 			-- app.PrintDebug("DGU_Fill",app:SearchLink(group))
@@ -6387,17 +6399,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window:SetScale(scale);
 
 	window:SetUserPlaced(true);
-	window.data = {
-		['text'] = suffix,
-		['icon'] = 132319,
-		['visible'] = true,
-		['g'] = {
-			{
-				['text'] = "No data linked to listing.",
-				['visible'] = true
-			}
-		}
-	};
+	window.data = app.EmptyTable
 
 	-- set whether this window lock is persistable between sessions
 	if suffix == "Prime" or suffix == "CurrentInstance" or suffix == "RaidAssistant" or suffix == "WorldQuests" then
@@ -6449,21 +6451,6 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window.Container = container;
 	container.rows = {};
 	container:Show();
-
-	-- Allows the window to toggle whether it shows it is currently processing changes/updates
-	-- Currently will do this by changing the texture of the CloseButton
-	-- local closeTexture = window.CloseButton:GetNormalTexture():GetTexture();
-	-- app.PrintDebug(closeTexture, window.CloseButton:GetHighlightTexture(), window.CloseButton:GetPushedTexture(), window.CloseButton:GetDisabledTexture())
-	-- Textures are a bit funky, maybe not good to try using that... maybe will come up with another idea sometime...
-	window.StartProcessing = function()
-		-- app.PrintDebug("StartProcessing",suffix)
-		-- window.CloseButton:SetNormalTexture(134376);	-- Inv_misc_pocketwatch_01
-	end
-	window.StopProcessing = function()
-		-- app.PrintDebug("StopProcessing",suffix)
-		-- window.CloseButton:SetNormalTexture(closeTexture);
-		window.data._fillcomplete = true
-	end
 
 	-- Setup the Event Handlers
 	-- TODO: review how necessary this actually is in Retail
