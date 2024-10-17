@@ -99,12 +99,12 @@ root(ROOTS.Instances, expansion(EXPANSION.BFA, bubbleDown({ ["timeline"] = { ADD
 						}),
 						q(53569, {	-- Kill Credit 2
 							["name"] = "Kill Credit 2",
-							["icon"] = "1392920_2",
+							["icon"] = 1392921,
 							["isWeekly"] = true,
 						}),
 						q(53570, {	-- Kill Credit 3
 							["name"] = "Kill Credit 3",
-							["icon"] = "1392920_3",
+							["icon"] = 1392922,
 							["isWeekly"] = true,
 						}),
 						q(53571, {	-- Power Increased to Level 1

@@ -78,8 +78,8 @@ for key, value in pairs({
 		[-678] = 838515,						-- Prideful Gladiator: Season 15
 	-- Warlords of Dreanor PvP Seasons
 		[-679] = 1127958,								-- Primal Gladiator: Warlords Season 1
-		[-680] = "1127958_pale",							-- Wild Gladiator: Warlords Season 2
-		[-681] = "1127958_dark",							-- Warmongering Gladiator: Warlords Season 3
+		[-680] = 1137556,							-- Wild Gladiator: Warlords Season 2
+		[-681] = 1137555,							-- Warmongering Gladiator: Warlords Season 3
 	-- SL Headers
 		[-901] = 3726261,																	-- Covenant Callings
 		[-902] = 3726261,																	-- Renown

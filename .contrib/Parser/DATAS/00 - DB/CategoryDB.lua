@@ -562,7 +562,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 	},
 	[253] = {
 		readable = "Chest",
-		icon = "132624_13",
+		icon = 132635,
 		text = {
 			en = "Chest",
 			ko = "가슴",
@@ -1587,7 +1587,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 	},
 	[559] = {
 		readable = "Chest",
-		icon = "132624_13",
+		icon = 132635,
 		text = {
 			en = "Chest",
 			ko = "가슴",
@@ -3599,7 +3599,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 	},
 	[893] = {
 		readable = "Chest",
-		icon = "132624_13",
+		icon = 132635,
 		text = {
 			en = "Chest",
 			ko = "가슴",
@@ -3708,7 +3708,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 	},
 	[907] = {
 		readable = "Chest",
-		icon = "132624_13",
+		icon = 132635,
 		text = {
 			en = "Chest",
 			ko = "가슴",
@@ -3904,7 +3904,7 @@ local CategoryDB = CategoryDB; for categoryID,categoryData in pairs({
 	},
 	[932] = {
 		readable = "Chest",
-		icon = "132624_13",
+		icon = 132635,
 		text = {
 			en = "Chest",
 			ko = "가슴",
