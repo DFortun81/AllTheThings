@@ -1,4 +1,4 @@
-﻿using NLua;
+using NLua;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -158,6 +158,10 @@ namespace ATT
             else if (firstValue is float _)
             {
                 AddValidation(fieldName, new Validation_match<float>(fieldName, set));
+            }
+            else if (firstValue is double _)
+            {
+                AddValidation(fieldName, new Validation_match<double>(fieldName, set));
             }
             else if (firstValue is string _)
             {
