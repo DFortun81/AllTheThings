@@ -545,7 +545,7 @@ settings.GetModeString = function(self)
 			else
 				mode = L.TITLE_INSANE .. mode
 			end
-		elseif not settings:Get("Thing:Transmog") and self.RequiredForInsaneMode["Transmog"] then
+		elseif not settings:Get("Thing:Transmog") and self.RequiredForInsaneMode.Transmog then
 			mode = L.TITLE_SOME_THINGS .. mode
 		end
 		if solo then
@@ -1137,9 +1137,9 @@ settings.ToggleAccountMode = function(self)
 	self:ForceRefreshFromToggle()
 	self:SetAccountMode(not self:Get("AccountMode"));
 	if self:Get("AccountMode") == true then
-		app.print(L["TITLE_ACCOUNT"]..L["MODE"].."|R "..L["ENABLED"]..".")
+		app.print(L.TITLE_ACCOUNT..L.MODE.."|R "..L.ENABLED..".")
 	else
-		app.print(L["TITLE_ACCOUNT"]..L["MODE"].."|R "..L["DISABLED"]..".")
+		app.print(L.TITLE_ACCOUNT..L.MODE.."|R "..L.DISABLED..".")
 	end
 end
 settings.SetCompletionistMode = function(self, completionistMode)
@@ -1150,9 +1150,9 @@ settings.ToggleCompletionistMode = function(self)
 	self:ForceRefreshFromToggle()
 	self:SetCompletionistMode(not self:Get("Completionist"))
 	if self:Get("Completionist") == true then
-		app.print(L["TITLE_COMPLETIONIST"]..L["MODE"].."|R "..L["ENABLED"]..".")
+		app.print(L.TITLE_COMPLETIONIST..L.MODE.."|R "..L.ENABLED..".")
 	else
-		app.print(L["TITLE_COMPLETIONIST"]..L["MODE"].."|R "..L["DISABLED"]..".")
+		app.print(L.TITLE_COMPLETIONIST..L.MODE.."|R "..L.DISABLED..".")
 	end
 end
 settings.SetDebugMode = function(self, debugMode)
@@ -1173,9 +1173,9 @@ settings.ToggleDebugMode = function(self)
 	self:ForceRefreshFromToggle()
 	self:SetDebugMode(not self:Get("DebugMode"));
 	if self:Get("DebugMode") == true then
-		app.print(L["TITLE_DEBUG"]..L["MODE"].."|R "..L["ENABLED"]..".")
+		app.print(L.TITLE_DEBUG..L.MODE.."|R "..L.ENABLED..".")
 	else
-		app.print(L["TITLE_DEBUG"]..L["MODE"].."|R "..L["DISABLED"]..".")
+		app.print(L.TITLE_DEBUG..L.MODE.."|R "..L.DISABLED..".")
 	end
 end
 settings.SetFactionMode = function(self, factionMode)

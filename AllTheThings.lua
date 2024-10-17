@@ -185,7 +185,7 @@ local function GetCollectibleIcon(data, iconOnly)
 	if data.collectible then
 		local collected = data.collected
 		if not collected and data.collectedwarband then
-			return iconOnly and L["COLLECTED_WARBAND_ICON"] or L["COLLECTED_WARBAND"];
+			return iconOnly and L.COLLECTED_WARBAND_ICON or L.COLLECTED_WARBAND;
 		end
 		return iconOnly and app.GetCollectionIcon(collected) or app.GetCollectionText(collected);
 	end
