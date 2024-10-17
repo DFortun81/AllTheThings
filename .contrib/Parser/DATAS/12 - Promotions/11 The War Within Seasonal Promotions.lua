@@ -90,10 +90,16 @@ root(ROOTS.Promotions, {
 			mount(454682, {	-- Startouched Furline (MOUNT!)
 				["description"] = "Obtained if you set up a 12-Month WoW Subscription.",
 				["timeline"] = { ADDED_11_0_2 },
+				["u"] = REAL_MONEY,
 			}),
 			i(228751, {	-- Gigantic Grrloc (MOUNT!)
 				["description"] = "Obtained if you set up a 12-Month WoW Subscription.",
 				["timeline"] = { ADDED_11_0_2 },
+				["u"] = REAL_MONEY,
+			}),
+			i(72153, {	-- Sand Scarab (PET!)
+				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between October 22nd, 10:00 a.m. & November 5th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
+				["timeline"] = { ADDED_11_0_5, },
 			}),
 		},
 	}),
