@@ -439,7 +439,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 64.0, 10.4, FELWOOD },
 					["timeline"] = { ADDED_4_0_3 },
 					["isBreadcrumb"] = true,
-					["description"] = "Only available between level 40 and 60.",
+					["description"] = "Only available above level 40.",
 				}),
 			}),
 			n(VENDORS, {

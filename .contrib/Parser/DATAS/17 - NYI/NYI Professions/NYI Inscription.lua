@@ -511,6 +511,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(445068),	-- Inquisitor's Greenwood Bow
 					r(441318),	-- Miner's Rune of Decyphering
 					r(445069),	-- Vagabond's Alacrity
+					r(444228),	-- Recraft Equipment
 					-- With SpellID attached
 					i(223072),	-- Technique: Colors of the Wind [DEPRECATED] (RECIPE!)
 					i(223059),	-- Technique: Lexicon of Mysteries (RECIPE!)

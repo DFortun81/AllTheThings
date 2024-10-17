@@ -347,7 +347,6 @@ TWW_INSCRIPTION = bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, {
 	r(423338),	-- Khaz Algar Inscription
 	r(444181),	-- Khaz Algar Milling
 	r(425140),	-- Recraft Equipment
-	r(444228),	-- Recraft Equipment
 	filter(MISC, {
 		r(444210),	-- Algari Missive of the Aurora
 		r(444211),	-- Algari Missive of the Feverflare
