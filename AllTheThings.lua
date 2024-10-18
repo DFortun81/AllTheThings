@@ -51,7 +51,6 @@ local GetFactionName = app.WOWAPI.GetFactionName;
 local GetItemInfo = app.WOWAPI.GetItemInfo;
 local GetItemID = app.WOWAPI.GetItemID;
 local GetSpellName = app.WOWAPI.GetSpellName;
-local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 local GetTradeSkillTexture = app.WOWAPI.GetTradeSkillTexture;
 
 local C_TradeSkillUI = C_TradeSkillUI;
@@ -59,7 +58,7 @@ local C_TradeSkillUI_GetCategories, C_TradeSkillUI_GetCategoryInfo, C_TradeSkill
 	= C_TradeSkillUI.GetCategories, C_TradeSkillUI.GetCategoryInfo, C_TradeSkillUI.GetRecipeInfo, C_TradeSkillUI.GetRecipeSchematic, C_TradeSkillUI.GetTradeSkillLineForRecipe;
 
 -- App & Module locals
-local ArrayAppend, constructor = app.ArrayAppend, app.constructor;
+local ArrayAppend = app.ArrayAppend
 local CacheFields, SearchForField, SearchForFieldContainer, SearchForObject
 	= app.CacheFields, app.SearchForField, app.SearchForFieldContainer, app.SearchForObject
 local IsRetrieving = app.Modules.RetrievingData.IsRetrieving;
@@ -3977,63 +3976,6 @@ local function SearchForLink(link)
 end
 app.SearchForLink = SearchForLink;
 end
-
--- Profession Lib
-(function()
-app.SpecializationSpellIDs = setmetatable(app.SkillDB.SpecializationSpells, {__index = function(t,k) return k; end})
-local fields = {
-	["key"] = function(t)
-		return "professionID";
-	end,
-	--[[
-	["name"] = function(t)
-		if app.GetSpecializationBaseTradeSkill(t.professionID) then return GetSpellName(t.professionID); end
-		if t.professionID == 129 then return GetSpellName(t.spellID); end
-		return C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID);
-	end,
-	["icon"] = function(t)
-		if app.GetSpecializationBaseTradeSkill(t.professionID) then return GetSpellIcon(t.professionID); end
-		if t.professionID == 129 then return GetSpellIcon(t.spellID); end
-		return GetTradeSkillTexture(t.professionID);
-	end,
-	]]--
-	["name"] = function(t)
-		local spellID = t.spellID
-		local name
-		if spellID and spellID ~= 2366 then
-			name = GetSpellName(spellID)
-		end
-		return name or C_TradeSkillUI.GetTradeSkillDisplayName(t.professionID)
-	end,
-	["icon"] = function(t)
-		local icon
-		local spellID = t.spellID
-		if spellID then
-			icon = GetSpellIcon(spellID)
-		end
-		return icon or GetTradeSkillTexture(t.professionID);
-	end,
-	["spellID"] = function(t)
-		return app.SkillDB.SkillToSpell[t.professionID];
-	end,
-	["skillID"] = function(t)
-		return t.professionID;
-	end,
-	["requireSkill"] = function(t)
-		return t.professionID;
-	end,
-	--[[
-	["sym"] = function(t)
-		return {{"selectprofession", t.professionID},
-				{"not","headerID",app.HeaderConstants.PROFESSIONS}};	-- Ignore the Main Professions header that will get pulled in
-	end,
-	--]]--
-};
-app.BaseProfession = app.BaseObjectFields(fields, "BaseProfession");
-app.CreateProfession = function(id, t)
-	return setmetatable(constructor(id, t, "professionID"), app.BaseProfession);
-end
-end)();
 
 -- Processing Functions
 do

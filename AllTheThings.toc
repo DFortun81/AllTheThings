@@ -99,6 +99,7 @@ src\Classes\Maps.lua
 src\Classes\Mount.lua
 src\Classes\NPC.lua
 src\Classes\Objects.lua
+src\Classes\Profession.lua
 src\Classes\Category.lua
 src\Classes\Deaths.lua
 # src\Classes\Dynamic Categories.lua
