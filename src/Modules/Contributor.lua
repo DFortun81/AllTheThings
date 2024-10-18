@@ -178,19 +178,22 @@ local MobileNPCDB = {
 	[221980] = true,	-- Faerin Lothar
 }
 
+local ReturnEmptyFunctionMeta = { __index = function() return app.ReturnFalse end}
+local EmptyFunctionTable = setmetatable({}, ReturnEmptyFunctionMeta)
+local ReturnEmptyTableMeta = { __index = function() return EmptyFunctionTable end}
 local IgnoredQuestChecksByTypes = setmetatable({
-	Item = {
+	Item = setmetatable({
 		coord = app.ReturnTrue,
 		provider = app.ReturnTrue,
-	},
-	Player = {
+	}, ReturnEmptyFunctionMeta),
+	Player = setmetatable({
 		coord = app.ReturnTrue,
 		provider = app.ReturnTrue
-	},
-	Creature = {
+	}, ReturnEmptyFunctionMeta),
+	Creature = setmetatable({
 		coord = function(id) return MobileNPCDB[id] end,
-	}
-}, { __index = function() return app.EmptyTable end})
+	}, ReturnEmptyFunctionMeta),
+}, ReturnEmptyTableMeta)
 
 local GuidTypeProviders = {
 	Item = "i",
@@ -277,13 +280,17 @@ local function OnQUEST_DETAIL(...)
 	local guid = UnitGUID("questnpc") or UnitGUID("npc")
 	local providerid, guidtype, _
 	if not guid then
-		app.print("No GUID for quest giver during Contribute check!",...)
+		app.print("No Quest check performed for Quest #", questID,"[GUID]")
 		return
 	end
+	-- TODO: would need to be fixed for Item type
 	guidtype, _, _, _, _, providerid = ("-"):split(guid)
 	providerid = tonumber(providerid)
 	if not providerid or not guidtype then
-		app.print("Unknown Quest Provider",guidtype,providerid,"during Contribute check!",...)
+		-- app.print("Unknown Quest Provider",guidtype,providerid,"during Contribute check!")
+		if guidtype ~= "Item" then
+			app.print("No Quest check performed for Quest #", questID,"[ProviderID]")
+		end
 		return
 	end
 	app.PrintDebug(guidtype,providerid,app.NPCNameFromID[providerid] or app.ObjectNames[providerid]," => Quest #", questID)
@@ -315,7 +322,7 @@ local function OnQUEST_DETAIL(...)
 	end
 
 	-- check provider
-	if not IgnoredQuestChecksByTypes[guidtype].provider then
+	if not IgnoredQuestChecksByTypes[guidtype].provider() then
 		Check_providers(questID, questRef, GuidTypeProviders[guidtype], providerid)
 	end
 	-- app.PrintDebug("Contributor.OnQUEST_DETAIL.Done")
