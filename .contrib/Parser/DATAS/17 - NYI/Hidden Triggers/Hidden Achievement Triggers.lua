@@ -68,6 +68,13 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(40135),	-- [DNT] Discoverer's Delight - Reach Level 50 in Phase 3.5 (hidden)
 		ach(40137),	-- [DNT] Discoverer's Delight - Reach Level 50 in Phase 4 - Update (hidden)
 		-- #endif
+		--1.15.4.56573
+		-- #if ANYCLASSIC
+		ach(41008),	-- Rune Learned - Shared Acquisition - Illari Duskfeather (40)
+		ach(41009),	-- Rune Learned - Shared Acquisition - Dark Riders (40)
+		ach(41010),	-- Rune Learned - Shared Acquisition - Ley Lines (50)
+		ach(41011),	-- Rune Learned - Shared Acquisition - Wild Gods (50)
+		-- #endif
 	}),
 	-- #endif
 	-- #if ANYCLASSIC
@@ -724,6 +731,12 @@ root(ROOTS.HiddenAchievementTriggers, {
 		ach(40969),	-- Gladiator: Season 9
 		ach(40970),	-- Duelist: Season 9
 		ach(40971),	-- Challenger: Season 9
+		-- #endif
+		-- #endif
+		-- 4.4.1.56859
+		-- #if ANYCLASSIC
+		-- #if AFTER 4.4.1
+		ach(41134),	-- [DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden)
 		-- #endif
 		-- #endif
 	}),

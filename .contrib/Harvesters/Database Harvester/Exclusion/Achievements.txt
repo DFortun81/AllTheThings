@@ -32,6 +32,11 @@
 40133@@@[DNT] Discoverer's Delight - Reach Level 40 in Phase 3.5 - Update (hidden)
 40135@@@[DNT] Discoverer's Delight - Reach Level 50 in Phase 3.5 (hidden)
 40137@@@[DNT] Discoverer's Delight - Reach Level 50 in Phase 4 - Update (hidden)
+1.15.4.56573
+41008@@@Rune Learned - Shared Acquisition - Illari Duskfeather (40)
+41009@@@Rune Learned - Shared Acquisition - Dark Riders (40)
+41010@@@Rune Learned - Shared Acquisition - Ley Lines (50)
+41011@@@Rune Learned - Shared Acquisition - Wild Gods (50)
 2.5.1.39399
 15018@@@Infernal Gladiator
 15019@@@Gladiator: Season 1
@@ -140,3 +145,15 @@
 40969@@@Gladiator: Season 9
 40970@@@ Duelist: Season 9
 40971@@@Challenger: Season 9
+4.4.1.56859
+41134@@@[DNT] Joyous Journeys - Hit 85 with Buff Joyous Journeys (hidden)
+41139@@@Protocol Inferno: Blackrock Caverns
+41140@@@Protocol Inferno: Throne of the Tides
+41141@@@Protocol Inferno: The Stonecore
+41142@@@Protocol Inferno: The Vortex Pinnacle
+41143@@@Protocol Inferno: Grim Batol
+41144@@@Protocol Inferno: Halls of Origination
+41145@@@Protocol Inferno: Lost City of the Tol'vir
+41146@@@Protocol Inferno: Deadmines
+41147@@@Protocol Inferno: Shadowfang Keep
+41148@@@Protocol Inferno: Terminated
