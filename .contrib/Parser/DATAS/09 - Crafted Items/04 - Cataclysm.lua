@@ -459,7 +459,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 				["collectible"] = false,
 			}),
 			i(60217),	-- Elementium Toolbox
-			firelands(i(70139)),	-- Flintlocke's Woodchucker
+			moltenfront(i(70139)),	-- Flintlocke's Woodchucker
 			i(60858),	-- Goblin Barbecue
 			i(68049),	-- Heat-Treated Spinning Lure
 			i(60223),	-- High-Powered Bolt Gun
@@ -477,7 +477,7 @@ root(ROOTS.Craftables, expansion(EXPANSION.CATA, applyclassicphase(CATA_PHASE_ON
 			i(60403),	-- Elementium Dragonling
 		}),
 		n(WEAPONS, {
-			firelands(i(71077)),	-- Extreme-Impact Hole Puncher
+			moltenfront(i(71077)),	-- Extreme-Impact Hole Puncher
 			i(59598),	-- Finely-Tuned Throat Needler
 			i(59367),	-- Kickback 5000
 			i(59364),	-- Overpowered Chicken Splitter
