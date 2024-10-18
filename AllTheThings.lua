@@ -6342,7 +6342,7 @@ function app:GetWindow(suffix, parent, onUpdate)
 	window:SetScale(scale);
 
 	window:SetUserPlaced(true);
-	window.data = app.EmptyTable
+	window.data = {}
 
 	-- set whether this window lock is persistable between sessions
 	if suffix == "Prime" or suffix == "CurrentInstance" or suffix == "RaidAssistant" or suffix == "WorldQuests" then
