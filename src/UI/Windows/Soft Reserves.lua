@@ -1312,8 +1312,8 @@ app.CreateSoftReserveUnit = app.ExtendClass("Unit", "SoftReserveUnit", "unit", {
 							if o.parent.npcID and o.parent.npcID > 0 then
 								return { o.parent.npcID };
 							end
-							if o.parent.cr then
-								return { o.parent.cr };
+							if o.parent.creatureID then
+								return { o.parent.creatureID };
 							end
 							if o.parent.crs then
 								return o.parent.crs;

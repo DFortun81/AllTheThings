@@ -2549,8 +2549,8 @@ local function OnInitForPopout(self, group)
 				end
 			end
 			if group.crs then
-				for _,cr in ipairs(group.crs) do
-					sourceItem = app.CreateNPC(cr);
+				for _,creatureID in ipairs(group.crs) do
+					sourceItem = app.CreateNPC(creatureID);
 					sourceItem.visible = true;
 					sourceItem.OnUpdate = app.AlwaysShowUpdate;
 					MergeObject(sourceGroup.g, sourceItem);

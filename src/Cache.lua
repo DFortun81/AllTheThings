@@ -1112,8 +1112,8 @@ local function GenerateSourcePath(group, l, skip)
 			if group.headerID then
 				if group.headerID == app.HeaderConstants.ZONE_DROPS then
 					if group.crs and #group.crs == 1 then
-						local cr = group.crs[1];
-						return GenerateSourcePath(parent, l + 1, skip) .. DESCRIPTION_SEPARATOR .. (app.NPCNameFromID[cr] or RETRIEVING_DATA) .. " (Drop)";
+						local creatureID = group.crs[1];
+						return GenerateSourcePath(parent, l + 1, skip) .. DESCRIPTION_SEPARATOR .. (app.NPCNameFromID[creatureID] or RETRIEVING_DATA) .. " (Drop)";
 					end
 					return GenerateSourcePath(parent, l + 1, skip) .. DESCRIPTION_SEPARATOR .. (group.text or RETRIEVING_DATA);
 				end
