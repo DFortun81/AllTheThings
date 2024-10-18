@@ -209,15 +209,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			-- The General
 			n(QUESTS, sharedData({
 				["isDaily"] = true,
-				["sourceQuests"] = {
-					80545,	-- The General Weekly pickup
-					80546,	-- The Vizier Weekly pickup
-					80544,	-- The Weaver Weekly pickup
-				},
-				["sourceQuestNumRequired"] = 1,
+				["sourceQuests"] = { 78256 },	-- The General's Consensus
+				["cost"] = {{"i",228949,1}},	-- Rumor Map
 			},{
 				q(81491, {	-- Armaments: Arbalests
-					["sourceQuest"] = 82645,
 					["provider"] = { "n", 224171 },	-- Eirzay
 					["coord"] = { 61.3, 36.2, NERUBAR_LOWER },
 					["g"] = {
@@ -225,7 +220,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81492, {	-- Armaments: Smithing Tools
-					["sourceQuest"] = 82646,
 					["provider"] = { "n", 224172 },	-- Eirzay
 					["coord"] = { 54.5, 63.6, AZJ_KAHET },
 					["g"] = {
@@ -233,36 +227,30 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81477, {	-- Armaments: Weaponry
-					["sourceQuest"] = 82644,
 					["provider"] = { "n", 224170 },	-- Eirzay
 					["coord"] = { 58.1, 39.3, NERUBAR_LOWER },
 				}),
 				q(81490, {	-- Bounty: Balaxir the Bully
-					["sourceQuest"] = 82643,
 					["provider"] = { "n", 224168 },	-- Eirzay
 					["coord"] = { 49.7, 44.3, NERUBAR_LOWER },
 					["crs"] = { 221203 },	-- Balaxir the Bully
 				}),
 				q(81476, {	-- Bounty: Goliath
-					["sourceQuest"] = 82616,
 					["provider"] = { "n", 224166 },	-- Eirzay
 					["coord"] = { 36.1, 50.2, NERUBAR },
 					["crs"] = { 220917 },	-- Chitinous Goliath
 				}),
 				q(81489, {	-- Bounty: Zorikal the Patron
-					["sourceQuest"] = 82581,
 					["provider"] = { "n", 224167 },	-- Eirzay
 					["coord"] = { 15.6, 45.7, NERUBAR },
 					["crs"] = { 221202 },	-- Zorikal the Patron
 				}),
 				q(81475, {	-- Breaking the Phalanx: Royal Appointments
-					["sourceQuest"] = 82640,
 					["provider"] = { "n", 224161 },	-- Eirzay
 					["coord"] = { 43.0, 47.1, NERUBAR },
 					["crs"] = { 220916 },	-- Royal Appointee
 				}),
 				q(81488, {	-- Breaking the Phalanx: Sages
-					["sourceQuest"] = 82642,
 					["provider"] = { "n", 224163 },	-- Eirzay
 					["coord"] = { 27.9, 56.7, NERUBAR },
 					["crs"] = {
@@ -271,13 +259,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81487, {	-- Breaking the Phalanx: Threadblades
-					["sourceQuest"] = 82641,
 					["provider"] = { "n", 224162 },	-- Eirzay
 					["coord"] = { 30.6, 42.6, NERUBAR },
 					["crs"] = { 221190 },	-- Loyalist Threadblade
 				}),
 				q(81494, {	-- Relics of War: Rak-Zakaz
-					["sourceQuest"] = 82649,
 					["provider"] = { "n", 224176 },	-- Eirzay
 					["coord"] = { 61.4, 24.1, NERUBAR_LOWER },
 					["g"] = {
@@ -287,7 +273,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81478, {	-- Relics of War: The Ruptired Lake
-					["sourceQuest"] = 82647,
 					["provider"] = { "n", 224173 },	-- Eirzay
 					["coord"] = { 36.4, 49.2, AZJ_KAHET },
 					["g"] = {
@@ -297,7 +282,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81493, {	-- Relics of War: The Salien Gutter Conflict
-					["sourceQuest"] = 82648,
 					["provider"] = { "n", 224174 },	-- Eirzay
 					["coord"] = { 63.8, 26.3, NERUBAR_LOWER },
 					["g"] = {
@@ -308,15 +292,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			-- The Vizier
 			n(QUESTS, sharedData({
 				["isDaily"] = true,
-				["sourceQuests"] = {
-					80545,	-- The General Weekly pickup
-					80546,	-- The Vizier Weekly pickup
-					80544,	-- The Weaver Weekly pickup
-				},
-				["sourceQuestNumRequired"] = 1,
+				["sourceQuests"] = { 78248 },	-- What We Still Have
+				["cost"] = {{"i",228949,1}},	-- Rumor Map
 			},{
 				q(81495, {	-- Requisitions: Brightblooms
-					["sourceQuest"] = 82641,
 					["provider"] = { "n", 224178 },	-- Ghos'opp
 					["coord"] = { 64.2, 21.2, NERUBAR },
 					["g"] = {
@@ -326,7 +305,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81496, {	-- Requisitions: Fangpetals
-					["sourceQuest"] = 82640,
 					["provider"] = { "n", 224179 },	-- Ghos'opp
 					["coord"] = { 49.2, 51.8, NERUBAR },
 					["g"] = {
@@ -336,7 +314,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81479, {	-- Requisitions: Umbrashrooms
-					["sourceQuest"] = 82642,
 					["provider"] = { "n", 224177 },	-- Ghos'opp
 					["coord"] = { 52.0, 16.6, NERUBAR },
 					["g"] = {
@@ -346,7 +323,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81506, {	-- Sabotage: Alchemical Instruments
-					["sourceQuest"] = 82646,
 					["provider"] = { "n", 224186 },	-- Ghos'opp
 					["coord"] = { 54.5, 15.5, AZJ_KAHET },
 					["g"] = {
@@ -354,7 +330,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81481, {	-- Sabotage: Transformatory Vessels
-					["sourceQuest"] = 82644,
 					["provider"] = { "n", 224183 },	-- Ghos'opp
 					["coord"] = { 64.5, 87.3, AZJ_KAHET },
 					["g"] = {
@@ -362,7 +337,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81505, {	-- Sabotage: Venomancers
-					["sourceQuest"] = 82645,
 					["provider"] = { "n", 224184 },	-- Ghos'opp
 					["coord"] = { 39.5, 51.4, AZJ_KAHET },
 					["g"] = {
@@ -370,7 +344,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81482, {	-- Testing Formulae: Gelatinous Unguent
-					["sourceQuest"] = 82647,
 					["provider"] = { "n", 224187 },	-- Ghos'opp
 					["coord"] = { 50.6, 47.1, NERUBAR },
 					["crs"] = { 221072 },	-- Unwitting Hollowguard
@@ -379,7 +352,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81502, {	-- Testing Formulae: Malodorous Philter
-					["sourceQuest"] = 82649,
 					["provider"] = { "n", 224189 },	-- Ghos'opp
 					["coord"] = { 30.9, 23.0, NERUBAR },
 					["crs"] = { 226580 },	-- Unwitting Skeinsguard
@@ -388,7 +360,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81501, {	-- Testing Formulae: Roiling Elixir
-					["sourceQuest"] = 82648,
 					["provider"] = { "n", 224188 },	-- Ghos'opp
 					["coord"] = { 47.9, 9.7, NERUBAR },
 					["crs"] = { 226579 },	-- Unwitting Umbraguard
@@ -397,7 +368,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81480, {	-- Wild Reagents: Maddening Deep
-					["sourceQuest"] = 82616,
 					["provider"] = { "n", 224182 },	-- Ghos'opp
 					["coord"] = { 65.1, 78.8, AZJ_KAHET },
 					["crs"] = { 221060 },	-- Pustulant Feaster
@@ -406,7 +376,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81497, {	-- Wild Reagents: Salien Gutters
-					["sourceQuest"] = 82581,
 					["provider"] = { "n", 224181 },	-- Ghos'opp
 					["coord"] = { 61.1, 74.4, AZJ_KAHET },
 					["g"] = {
@@ -414,7 +383,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81498, {	-- Wild Reagents: Twitching Gorge
-					["sourceQuest"] = 82643,
 					["provider"] = { "n", 224180 },	-- Ghos'opp
 					["coord"] = { 47.2, 58.8, AZJ_KAHET },
 					["crs"] = {
@@ -429,16 +397,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 			-- The Weaver
 			n(QUESTS, sharedData({
 				["isDaily"] = true,
-				["sourceQuests"] = {
-					80545,	-- The General Weekly pickup
-					80546,	-- The Vizier Weekly pickup
-					80544,	-- The Weaver Weekly pickup
-				},
-				["sourceQuestNumRequired"] = 1,
+				["sourceQuests"] = { 78393 },	-- A Seeming Respite
 				["cost"] = {{"i",228949,1}},	-- Rumor Map
 			},{
 				q(80573, {	-- Dropping Eaves: Spoils of War
-					["sourceQuest"] = 82616,
 					["provider"] = { "n", 224193 },	-- Ru'murh
 					["coord"] = { 55.0, 26.6, NERUBAR },
 					["g"] = {
@@ -453,7 +415,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81471, {	-- Dropping Eaves: Saving the Past
-					["sourceQuest"] = 82643,
 					["provider"] = { "n", 224195 },	-- Ru'murh
 					["coord"] = { 73.3, 50.9, NERUBAR },
 					["g"] = {
@@ -461,7 +422,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81470, {	-- Dropping Eaves: Thieving Weave
-					["sourceQuest"] = 82581,
 					["provider"] = { "n", 224194 },	-- Ru'murh
 					["coord"] = { 70.3, 31.8, NERUBAR },
 					["g"] = {
@@ -474,7 +434,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81499, {	-- Information Control: Ascended Intrigue
-					["sourceQuest"] = 82646,
 					["provider"] = { "n", 224198 },	-- Ru'murh
 					["coord"] = { 54.8, 34.5, NERUBAR },
 					["g"] = {
@@ -482,7 +441,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81472, {	-- Information Control: Ansurek's Truth
-					["sourceQuest"] = 82645,
 					["provider"] = { "n", 224197 },	-- Ru'murh
 					["coord"] = { 39.8, 26.6, NERUBAR },
 					["g"] = {
@@ -490,7 +448,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81473, {	-- Information Control: The Right Side of History
-					["sourceQuest"] = 82644,
 					["provider"] = { "n", 224196 },	-- Ru'murh
 					["coord"] = { 77.8, 53.7, NERUBAR },
 					["g"] = {
@@ -498,7 +455,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81504, {	-- Infiltration: Hidden Figures
-					["sourceQuest"] = 82649,
 					["provider"] = { "n", 224201 },	-- Ru'murh
 					["coord"] = { 77.5, 42.9, AZJ_KAHET },
 					["g"] = {
@@ -508,7 +464,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81483, {	-- Infiltration: Production Blocker
-					["sourceQuest"] = 82647,
 					["provider"] = { "n", 224199 },	-- Ru'murh
 					["coord"] = { 45.6, 51.0, NERUBAR_LOWER },
 					["g"] = {
@@ -516,7 +471,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81503, {	-- Infiltration: Terror Made Manifest
-					["sourceQuest"] = 82648,
 					["provider"] = { "n", 224200 },	-- Ru'murh
 					["coord"] = { 64.2, 75.3, AZJ_KAHET },
 					["g"] = {
@@ -524,7 +478,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81484, {	-- Wet Work: Death of a Salesman
-					["sourceQuest"] = 82641,
 					["provider"] = { "n", 224191 },	-- Ru'murh
 					["coord"] = { 68.6, 51.1, NERUBAR },
 					["crs"] = { 221055 },	-- Ascended Trafficker
@@ -533,7 +486,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81500, {	-- Wet Work: Step Into Their Parlor
-					["sourceQuest"] = 82642,
 					["provider"] = { "n", 224192 },	-- Ru'murh
 					["coord"] = { 79.6, 56.6, NERUBAR },
 					["crs"] = { 221063 },	-- Sureki Shadowstalker
@@ -542,7 +494,6 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					},
 				}),
 				q(81555, {	-- Wet Work: Tithe to Kill
-					["sourceQuest"] = 82640,
 					["provider"] = { "n", 224190 },	-- Ru'murh
 					["coord"] = { 41.5, 22.4, NERUBAR },
 					["crs"] = { 220315 },	-- Sureki Strongarm
