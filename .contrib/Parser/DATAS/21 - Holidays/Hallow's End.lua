@@ -2955,12 +2955,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(28981, {	-- Candy Bucket — Vashj'ir, Deepmist Grotto, Neutral
 					["provider"] = { "o", 208141 },	-- Candy Bucket, Kelp'thar Forest
-					["coord"] = { 63.4, 60.2, VASHJIR },
+					["coord"] = { 63.4, 60.2, VASHJIR_KELPTHAR_FOREST },
 					["timeline"] = { ADDED_4_1_0 },
 				}),
 				q(28982, {	-- Candy Bucket — Vashj'ir, Silver Tide Hollow, Neutral
 					["provider"] = { "o", 208142 },	-- Candy Bucket, Shimmering Expanse
-					["coord"] = { 49.2, 41.9, VASHJIR },
+					["coord"] = { 49.2, 41.9, VASHJIR_SHIMMERING_EXPANSE },
 					["timeline"] = { ADDED_4_1_0 },
 				}),
 				q(12400, {	-- Candy Bucket — Winterspring, Everlook, Neutral
@@ -3562,12 +3562,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(28985, {	-- Candy Bucket — Vashj'ir, Darkbreak Cove, Alliance
 					["provider"] = { "o", 208132 },	-- Candy Bucket, Abyssal Depths
-					["coord"] = { 54.7, 72.2, VASHJIR },
+					["coord"] = { 54.7, 72.2, VASHJIR_ABYSSAL_DEPTHS },
 					["timeline"] = { ADDED_4_1_0 },
 				}),
 				q(28983, {	-- Candy Bucket — Vashj'ir, Tranquil Wash, Alliance
 					["provider"] = { "o", 208133 },	-- Candy Bucket, Shimmering Expanse
-					["coord"] = { 49.7, 57.4, VASHJIR },
+					["coord"] = { 49.7, 57.4, VASHJIR_SHIMMERING_EXPANSE },
 					["timeline"] = { ADDED_4_1_0 },
 				}),
 				q(28988, {	-- Candy Bucket — Western Plaguelands, Chillwind Camp, Alliance
@@ -4006,12 +4006,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(28984, {	-- Candy Bucket — Vashj'ir, Legion's Rest, Horde
 					["provider"] = { "o", 208154 },	-- Candy Bucket, Shimmering Expanse
-					["coord"] = { 51.5, 62.5, VASHJIR },
+					["coord"] = { 51.5, 62.5, VASHJIR_SHIMMERING_EXPANSE },
 					["timeline"] = { ADDED_4_1_0 },
 				}),
 				q(28986, {	-- Candy Bucket — Vashj'ir, Tenebrous Cavern, Horde
 					["provider"] = { "o", 208155 },	-- Candy Bucket, Abyssal Depths
-					["coord"] = { 51.3, 60.6, VASHJIR },
+					["coord"] = { 51.3, 60.6, VASHJIR_ABYSSAL_DEPTHS },
 					["timeline"] = { ADDED_4_1_0 },
 				}),
 				q(28987, {	-- Candy Bucket — Western Plaguelands, Andorhal, Horde
