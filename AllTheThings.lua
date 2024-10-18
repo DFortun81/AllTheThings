@@ -9727,8 +9727,17 @@ customWindowUpdates.list = function(self, force, got)
 			end
 		end
 		if onlyCollected then
-			overrides.visible = function(o, key)
-				return o.collected;
+			app.SetDGUDelay(0);
+			if onlyMissing then
+				overrides.visible = function(o, key)
+					if o._missing and o.collected then
+						return o.collected;
+					end
+				end
+			else
+				overrides.visible = function(o, key)
+					return o.collected;
+				end
 			end
 		end
 		if harvesting then
