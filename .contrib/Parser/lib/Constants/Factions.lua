@@ -1,4 +1,4 @@
--- Factions
+--- Factions
 -- Classic
 
 FACTION_ARGENT_DAWN = 529;

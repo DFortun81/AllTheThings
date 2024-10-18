@@ -557,12 +557,16 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				hqt(80544, name(HEADERS.Faction, FACTION_THE_WEAVER)),	-- picked up 'The Weaver'
 
 				q(80592, {	-- Forge a Pact
-					["sourceQuests"] = { 84682 },	-- Of Pacts and Patrons
+					["sourceQuests"] = {
+						84682,	-- Of Pacts and Patrons
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["providers"] = {
 						{ "n", 223750 },	-- Lady Vinazian
 						{ "n", 220867 },	-- Y'tekhi
 					},
 					["coord"] = { 55.2, 41, AZJ_KAHET },
+					["sourceQuestNumRequired"] = 1,
 				}),
 				q(80671, {	-- Blade of the General
 					["sourceQuests"] = {

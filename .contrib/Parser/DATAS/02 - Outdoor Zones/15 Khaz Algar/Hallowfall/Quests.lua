@@ -599,17 +599,25 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				q(76247, {	-- Keep The Home Fires Burning
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = {
+						TEMPORARY_SOURCEQUEST,
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["provider"] = { "n", 206528 },	-- Aliya Hillhelm
 					["coord"] = { 61.2, 30.5, HALLOWFALL },
+					["sourceQuestNumRequired"] = 1,
 					["g"] = {
 						i(209854),	-- Hillhelm Remnant Supply (QI!)
 					},
 				}),
 				q(79108, {	-- Seeds of Evil
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = {
+						TEMPORARY_SOURCEQUEST,
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["provider"] = { "n", 206528 },	-- Aliya Hillhelm
 					["coord"] = { 61.2, 30.5, HALLOWFALL },
+					["sourceQuestNumRequired"] = 1,
 					["g"] = {
 						i(212153),	-- Corrupted Shadowleaf Seed (QI!)
 					},

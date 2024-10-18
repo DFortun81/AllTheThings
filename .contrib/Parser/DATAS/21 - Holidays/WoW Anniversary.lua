@@ -2548,16 +2548,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					}, {
 						i(224567),	-- Commendation of the Argent Dawn
 						i(224558),	-- Commendation of the Brood of Nozdormu
-						i(224569),	-- Commendation of the Defilers
-						i(224563),	-- Commendation of the Frostwolf Clan
+						--i(224569),	-- Commendation of the Defilers
+						--i(224563),	-- Commendation of the Frostwolf Clan
 						i(224561),	-- Commendation of the Hydraxian Waterlords
-						i(224568),	-- Commendation of the League of Arathor
+						--i(224568),	-- Commendation of the League of Arathor
 						i(224564),	-- Commendation of the Ravasaur Trainers [Unclear?!]
-						i(224559),	-- Commendation of the Silverwing Sentinels
-						i(224562),	-- Commendation of the Stormpike Guard
+						--i(224559),	-- Commendation of the Silverwing Sentinels
+						--i(224562),	-- Commendation of the Stormpike Guard
 						i(224571),	-- Commendation of the Thorium Brotherhood
 						i(224566),	-- Commendation of the Timbermaw Hold
-						i(224560),	-- Commendation of the Warsong Outriders
+						--i(224560),	-- Commendation of the Warsong Outriders
 						i(224565),	-- Commendation of the Wintersaber Trainers
 						i(224570),	-- Commendation of the Zandalar Tribe
 					})),

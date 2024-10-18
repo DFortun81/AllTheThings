@@ -905,7 +905,6 @@ root(ROOTS.Unsorted, {
 			i(232481),	-- Eternal Blouse of Transcendence
 			i(232482),	-- Eternal Greaves of Ten Storms
 			i(232483),	-- Eternal Stormrage Chestguard
-			i(232491),	-- Glyph of Jab
 			i(232510),	-- Electric Eel
 			i(232511),	-- Electric Eel
 			i(232484),	-- Eternal Judgment Greaves
@@ -1116,10 +1115,6 @@ root(ROOTS.Unsorted, {
 			filter(TOYS, {
 				--- Gonna check this! Make spellID able to be isToy to make it collectible from the quest // Braghe
 				i(216665),	-- Warband Bank Distance Inhibitor
-			}),
-			n(WEAPONS, {
-				-- These exist... Someone need to investigate and also see itemID: 218126 that Alex sourced//Braghe
-				i(218125),	-- Reactive Webbed Escutcheon
 			}),
 			explorationHeader({
 				exploration(14484),	-- 10.2 Devland

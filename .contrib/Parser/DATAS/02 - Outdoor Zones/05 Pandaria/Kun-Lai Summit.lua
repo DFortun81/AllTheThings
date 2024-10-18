@@ -239,6 +239,12 @@ root(ROOTS.Zones, {
 									i(89575),	-- Handwraps of Serenity
 								},
 							}),
+							n(64978, {	-- Number Nine Jia <Monk Trainer - Master Crane>
+								["coord"] = { 45.2, 43.2, KUN_LAI_SUMMIT },
+								["g"] = {
+									i(232491, { ["timeline"] = { ADDED_11_0_5 } }),	-- Glyph of Jab
+								},
+							}),
 						}),
 					},
 				})),

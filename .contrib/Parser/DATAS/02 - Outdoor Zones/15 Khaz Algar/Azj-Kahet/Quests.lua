@@ -322,12 +322,16 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40636.01, {	-- Rak-Ush Swarmery
 				q(83325, {	-- Bountiful Beetles
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = {
+						TEMPORARY_SOURCEQUEST,
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["providers"] = {
 						{ "n", 224729 },	-- Anub'okki
 						{ "n", 229184 },	-- Aspirant Kiipka
 					},
 					["coord"] = { 55.9, 42.4, AZJ_KAHET },
+					["sourceQuestNumRequired"] = 1,
 					["isBreadcrumb"] = true,
 				}),
 				q(79119, {	-- It's Rough to Be a Bug!
@@ -421,9 +425,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40636.03, {	-- Gutter Work
 				q(79710, {	-- A Fin of Every Kind
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = {
+						TEMPORARY_SOURCEQUEST,
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["provider"] = { "n", 217565 },	-- Al'kubian
 					["coord"] = { 60.0, 66.2, AZJ_KAHET },
+					["sourceQuestNumRequired"] = 1,
 					["g"] = {
 						i(222921),	-- Mangled Kobyss Innards (QI!)
 						i(224102),	-- Chunked Kobyss Innards (QI!)
@@ -432,9 +440,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					},
 				}),
 				q(79711, {	-- That's Pretty Gross
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = {
+						TEMPORARY_SOURCEQUEST,
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["provider"] = { "o", 443995 },	-- Familiar-Looking Appendage
 					["coord"] = { 55.6, 70.8, AZJ_KAHET },	-- TODO: probably have more spawns?
+					["sourceQuestNumRequired"] = 1,
 					["g"] = {
 						i(214504),	-- Familiar-Looking Appendage (QI!)
 					},
@@ -840,9 +852,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["isBreadcrumb"] = true
 				}),
 				q(81890, {	-- Unfulfilled Requests
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = {
+						TEMPORARY_SOURCEQUEST,
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["provider"] = { "n", 208782 },	-- Executor Nizrek
 					["coord"] = { 52.9, 46.1, NERUBAR },
+					["sourceQuestNumRequired"] = 1,
 					["isBreadcrumb"] = true
 				}),
 				q(81928, {	-- The Voice of the People

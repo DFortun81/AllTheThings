@@ -403,18 +403,19 @@ i(210423, FACTION_DREAM_WARDENS);			-- Dream Wardens Insignia [Epic 2.5k]
 ------------------
 -- PATCH 11.0.5 --
 ------------------
-i(224567, FACTION_ARGENT_DAWN);	-- Commendation of the Argent Dawn
-i(224558, FACTION_BROOD_OF_NOZDORMU);	-- Commendation of the Brood of Nozdormu
-i(224569, FACTION_THE_DEFILERS);	-- Commendation of the Defilers
-i(224563, FACTION_FROSTWOLF_CLAN);	-- Commendation of the Frostwolf Clan
+i(224567, FACTION_ARGENT_DAWN);				-- Commendation of the Argent Dawn
+i(224558, FACTION_BROOD_OF_NOZDORMU);		-- Commendation of the Brood of Nozdormu
 i(224561, FACTION_HYDRAXIAN_WATERLORDS);	-- Commendation of the Hydraxian Waterlords
-i(224568, FACTION_THE_LEAGUE_OF_ARATHOR);	-- Commendation of the League of Arathor
-i(224559, FACTION_SILVERWING_SENTINELS);	-- Commendation of the Silverwing Sentinels
-i(224562, FACTION_STORMPIKE_GUARD);	-- Commendation of the Stormpike Guard
-i(224571, FACTION_THORIUM_BROTHERHOOD);	-- Commendation of the Thorium Brotherhood
-i(224566, FACTION_TIMBERMAW_HOLD);	-- Commendation of the Timbermaw Hold
-i(224560, FACTION_WARSONG_OUTRIDERS);	-- Commendation of the Warsong Outriders
+i(224571, FACTION_THORIUM_BROTHERHOOD);		-- Commendation of the Thorium Brotherhood
+i(224566, FACTION_TIMBERMAW_HOLD);			-- Commendation of the Timbermaw Hold
 i(224565, FACTION_WINTERSABER_TRAINERS);	-- Commendation of the Wintersaber Trainers
-i(224570, FACTION_ZANDALAR_TRIBE);	-- Commendation of the Zandalar Tribe
+i(224570, FACTION_ZANDALAR_TRIBE);			-- Commendation of the Zandalar Tribe
 -- Might be NYI?
---i(224564),	-- Commendation of the Ravasaur Trainers
+i(224564, 630);								-- Commendation of the Ravasaur Trainers
+-- Blizz decided against adding these, boooo
+--i(224569, FACTION_THE_DEFILERS);			-- Commendation of the Defilers
+--i(224563, FACTION_FROSTWOLF_CLAN);		-- Commendation of the Frostwolf Clan
+--i(224568, FACTION_THE_LEAGUE_OF_ARATHOR);	-- Commendation of the League of Arathor
+--i(224559, FACTION_SILVERWING_SENTINELS);	-- Commendation of the Silverwing Sentinels
+--i(224562, FACTION_STORMPIKE_GUARD);		-- Commendation of the Stormpike Guard
+--i(224560, FACTION_WARSONG_OUTRIDERS);		-- Commendation of the Warsong Outriders

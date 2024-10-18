@@ -447,9 +447,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40799.03, {	-- Routine Maintenance
 				q(82773, {	-- A Functional Favor
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = {
+						TEMPORARY_SOURCEQUEST,
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["provider"] = { "n", 224602 },	-- Speaker Danagh
 					["coord"] = { 59.0, 64.2, THE_RINGING_DEEPS },
+					["sourceQuestNumRequired"] = 1,
 					["g"] = {
 						i(224271),	-- Galvanic Gland (QI!)
 					},
@@ -688,9 +692,13 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 			}),
 			header(HEADERS.AchCriteria, 40799.07, {	-- Into the Fog
 				q(81556, {	-- Foreign Fog
-					["sourceQuests"] = { TEMPORARY_SOURCEQUEST },
+					["sourceQuests"] = {
+						TEMPORARY_SOURCEQUEST,
+						TWW_ACCOUNT_CAMPAIGN_QUEST,
+					},
 					["provider"] = { "n", 221043 },	-- Noli Marlen
 					["coord"] = { 58.4, 62.3, THE_RINGING_DEEPS },
+					["sourceQuestNumRequired"] = 1,
 				}),
 				q(81557, {	-- Fog Tags
 					["sourceQuests"] = { 81556 },	-- Foreign Fog

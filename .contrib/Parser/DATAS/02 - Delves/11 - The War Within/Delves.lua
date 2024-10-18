@@ -457,6 +457,20 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 				i(232045),	-- Chunk of Companion Experience (Epic)
 			},
 		}),
+		o(455759, {	-- Hulking Raptorial Claw
+			["description"] = "Left behind by Zekvir when he invades a delve.",
+			["g"] = {
+				i(218126),	-- Befouler's Syringe
+				i(219381, {	-- Fate Weaver
+					["description"] = "Fly to Fate Weaver's Spool in Azj-Kahet to perform the ritual, coords 64.2, 74.8",
+					["groups"] = {
+						i(219941),	-- Fateweaved Mallet
+						i(219382),	-- Fateweaved Needle
+					},
+				}),
+				i(218125),	-- Reactive Webbed Escutcheon
+			},
+		}),
 	})),
 	m(EARTHCRAWL_MINES, {
 		["icon"] = [[~_.asset("Delves_Nerubian")]],
@@ -654,6 +668,7 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 					filter(COSMETIC, {
 						i(212162),	-- Bitter Shroom Cap
 						i(211801),	-- Poisonous Shroom Cap
+						i(212164),	-- Shallow Nautic Helm
 						i(212163),	-- Soporific Shroom Cap
 					}),
 				}),
@@ -1319,13 +1334,6 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			}),
 			n(WEAPONS, {
 				i(219203),	-- Arathi Holy Standard
-				i(219381, {	-- Fate Weaver
-					["description"] = "Fly to Fate Weaver's Spool in Azj-Kahet to perform the ritual, coords 64.2, 74.8",
-					["groups"] = {
-						i(219941),	-- Fateweaved Mallet
-						i(219382),	-- Fateweaved Needle
-					},
-				}),
 				i(219207),	-- Flame-Bearing Crozier
 				i(219206),	-- Hand of Piety
 				i(219204),	-- Imperial Flarebolt
@@ -2002,7 +2010,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(84818),	-- Zekvir pop in The Spiral Weave (2nd time in week, Tier 8)
 		q(84819),	-- Zekvir pop in Skittering Breach (2nd time in week, Tier 8), also in Nightfall Sanctum (unsure, Tier 3)
 		q(85757),	-- Triggered when looting second chest after defeating Zekvir solo on ? difficulty, also triggered on looting first bountiful heavy trunk in The Underkeep
-		q(86324),	-- First weekly Zekvir kill (also triggered off looting second Zekvir cache) 
+		q(86324),	-- First weekly Zekvir kill (also triggered off looting second Zekvir cache)
 		q(86157),	-- Killed Zekvir (?) as a duo with someone who'd never killed him before
 		q(86325),	-- Looting first Zekvir cache from above kill
 	}),

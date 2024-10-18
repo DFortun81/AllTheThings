@@ -782,7 +782,7 @@ q(50678),	-- Ensemble: Battlegear of the Frostwolves
 q(50680),	-- Ensemble: Ceremonial Karabor Finery
 
 -- Sha'Tari Defense
-q(50681),	-- learning Ensemble: Sha'tari Defender's Plate
+q(50681),	-- Ensemble: Sha'tari Defender's Plate
 
 --- Legion
 
