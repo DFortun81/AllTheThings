@@ -1633,26 +1633,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["lvl"] = 65,
 			-- #endif
 		}),
-		q(8353, {	-- Chicken Clucking for a Mint (Alliance)
-			["qg"] = 5111,	-- Innkeeper Firebrew <Innkeeper>
-			["coord"] = { 18.6, 51.4, IRONFORGE },
-			["races"] = ALLIANCE_ONLY,
-			["repeatable"] = true,
-			["lvl"] = lvlsquish(10, 10, 1),
-			["groups"] = {
-				i(20490),	-- Ironforge Mint
-			},
-		}),
-		q(8354, {	-- Chicken Clucking for a Mint (Horde)
-			["qg"] = 6741,	-- Innkeeper Norman <Innkeeper>
-			["coord"] = { 67.8, 38.6, UNDERCITY },
-			["races"] = HORDE_ONLY,
-			["repeatable"] = true,
-			["lvl"] = lvlsquish(10, 10, 1),
-			["groups"] = {
-				i(20491),	-- Undercity Mint
-			},
-		}),
 		q(29144, {	-- Clean Up in Stormwind
 			["qg"] = 51934,	-- Gretchen Fenlow
 			["coord"] = { 32.2, 50.8, ELWYNN_FOREST },
@@ -1758,32 +1738,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					},
 				}),
 				i(128658),	-- Spooky Supplies
-			},
-		}),
-		q(8357, {	-- Dancing for Marzipan (Alliance)
-			["qg"] = 6735,	-- Innkeeper Saelienne <Innkeeper>
-			["coords"] = {
-				-- #if AFTER CATA
-				{ 62.4, 32.8, DARNASSUS },
-				-- #else
-				{ 67.2, 15.8, DARNASSUS },
-				-- #endif
-			},
-			["races"] = ALLIANCE_ONLY,
-			["repeatable"] = true,
-			["lvl"] = lvlsquish(10, 10, 1),
-			["groups"] = {
-				i(20496),	-- Darnassus Marzipan
-			},
-		}),
-		q(8360, {	-- Dancing for Marzipan (Horde)
-			["qg"] = 6746,	-- Innkeeper Pala <Innkeeper>
-			["coord"] = { 45.8, 64.4, THUNDER_BLUFF },
-			["races"] = HORDE_ONLY,
-			["repeatable"] = true,
-			["lvl"] = lvlsquish(10, 10, 1),
-			["groups"] = {
-				i(20497),	-- Thunder Bluff Marzipan
 			},
 		}),
 		q(29398, {	-- Fencing the Goods (Alliance)
@@ -1929,40 +1883,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				-- #endif
 			},
 		}),
-		q(8356, {	-- Flexing for Nougat (Alliance)
-			["qg"] = 6740,	-- Innkeeper Allison <Innkeeper>
-			["coords"] = {
-				-- #if AFTER WRATH
-				{ 60.4, 75.3, STORMWIND_CITY },
-				-- #else
-				{ 52.6, 65.6, STORMWIND_CITY },
-				-- #endif
-			},
-			["races"] = ALLIANCE_ONLY,
-			["repeatable"] = true,
-			["lvl"] = lvlsquish(10, 10, 1),
-			["groups"] = {
-				i(20492),	-- Stormwind Nougat
-			},
-		}),
-		q(8359, {	-- Flexing for Nougat (Horde)
-			["qg"] = 6929,	-- Innkeeper Gryshka <Innkeeper>
-			["coords"] = {
-				-- #if AFTER LEGION
-				{ 53.6, 78.8, ORGRIMMAR },
-				-- #elseif AFTER CATA
-				{ 54.2, 68.4, ORGRIMMAR },
-				-- #else
-				{ 54.2, 68.4, ORGRIMMAR },
-				-- #endif
-			},
-			["races"] = HORDE_ONLY,
-			["repeatable"] = true,
-			["lvl"] = lvlsquish(10, 10, 1),
-			["groups"] = {
-				i(20493),	-- Orgrimmar Nougat
-			},
-		}),
 		q(39720, {	-- Foul Fertilizer
 			["qg"] = 96705,	-- Orukan
 			["timeline"] = { ADDED_6_0_2 },
@@ -2016,17 +1936,65 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
-				objective(1, {	-- 0/1 Stormwind Nougat
-					["provider"] = { "i", 20492 },	-- Stormwind Nougat
+				q(8356, {	-- Flexing for Nougat (Alliance)
+					["qg"] = 6740,	-- Innkeeper Allison <Innkeeper>
+					["coords"] = {
+						-- #if AFTER WRATH
+						{ 60.4, 75.3, STORMWIND_CITY },
+						-- #else
+						{ 52.6, 65.6, STORMWIND_CITY },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Stormwind Nougat
+							["questID"] = 8311,	-- Hallow's End Treats for Jesper!
+							["provider"] = { "i", 20492 },	-- Stormwind Nougat
+						}),
+					},
 				}),
-				objective(2, {	-- 0/1 Gnomeregan Gumdrop
-					["provider"] = { "i", 20494 },	-- Gnomeregan Gumdrop
+				q(8355, {	-- Incoming Gumdrop (Alliance)
+					["qg"] = 6826,	-- Talvash del Kissel
+					["coord"] = { 36, 4, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["groups"] = {
+						objective(2, {	-- 0/1 Gnomeregan Gumdrop
+							["questID"] = 8311,	-- Hallow's End Treats for Jesper!
+							["provider"] = { "i", 20494 },	-- Gnomeregan Gumdrop
+						}),
+					},
 				}),
-				objective(3, {	-- 0/1 Ironforge Mint
-					["provider"] = { "i", 20490 },	-- Ironforge Mint
+				q(8353, {	-- Chicken Clucking for a Mint (Alliance)
+					["qg"] = 5111,	-- Innkeeper Firebrew <Innkeeper>
+					["coord"] = { 18.6, 51.4, IRONFORGE },
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["groups"] = {
+						objective(3, {	-- 0/1 Ironforge Mint
+							["questID"] = 8311,	-- Hallow's End Treats for Jesper!
+							["provider"] = { "i", 20490 },	-- Ironforge Mint
+						}),
+					},
 				}),
-				objective(4, {	-- 0/1 Darnassus Marzipan
-					["provider"] = { "i", 20496 },	-- Darnassus Marzipan
+				q(8357, {	-- Dancing for Marzipan (Alliance)
+					["qg"] = 6735,	-- Innkeeper Saelienne <Innkeeper>
+					["coords"] = {
+						-- #if AFTER CATA
+						{ 62.4, 32.8, DARNASSUS },
+						-- #else
+						{ 67.2, 15.8, DARNASSUS },
+						-- #endif
+					},
+					["races"] = ALLIANCE_ONLY,
+					["repeatable"] = true,
+					["groups"] = {
+						objective(4, {	-- 0/1 Darnassus Marzipan
+							["questID"] = 8311,	-- Hallow's End Treats for Jesper!
+							["provider"] = { "i", 20496 },	-- Darnassus Marzipan
+						}),
+					},
 				}),
 				-- #if AFTER CATA
 				i(33226),	-- Tricky Treat
@@ -2050,51 +2018,75 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["isYearly"] = true,
 			["lvl"] = lvlsquish(10, 10, 1),
 			["groups"] = {
-				objective(1, {	-- 0/1 Orgrimmar Nougat
-					["provider"] = { "i", 20493 },	-- Orgrimmar Nougat
+				q(8359, {	-- Flexing for Nougat (Horde)
+					["qg"] = 6929,	-- Innkeeper Gryshka <Innkeeper>
+					["coords"] = {
+						-- #if AFTER LEGION
+						{ 53.6, 78.8, ORGRIMMAR },
+						-- #elseif AFTER CATA
+						{ 54.2, 68.4, ORGRIMMAR },
+						-- #else
+						{ 54.2, 68.4, ORGRIMMAR },
+						-- #endif
+					},
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["groups"] = {
+						objective(1, {	-- 0/1 Orgrimmar Nougat
+							["questID"] = 8312,	-- Hallow's End Treats for Spoops!
+							["provider"] = { "i", 20493 },	-- Orgrimmar Nougat
+						}),
+					},
 				}),
-				objective(2, {	-- 0/1 Darkspear Gumdrop
-					["provider"] = { "i", 20495 },	-- Darkspear Gumdrop
+				q(8358, {	-- Incoming Gumdrop (Horde)
+					["qg"] = 11814,	-- Kali Remik
+					["coords"] = {
+						-- #if AFTER LEGION
+						{ 32.6, 65, ORGRIMMAR },
+						-- #elseif AFTER CATA
+						{ 33.5, 64.9, ORGRIMMAR },
+						-- #else
+						{ 56.2, 74.2, DUROTAR },
+						-- #endif
+					},
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["groups"] = {
+						objective(2, {	-- 0/1 Darkspear Gumdrop
+							["questID"] = 8312,	-- Hallow's End Treats for Spoops!
+							["provider"] = { "i", 20495 },	-- Darkspear Gumdrop
+						}),
+					},
 				}),
-				objective(3, {	-- 0/1 Undercity Mint
-					["provider"] = { "i", 20491 },	-- Undercity Mint
+				q(8354, {	-- Chicken Clucking for a Mint (Horde)
+					["qg"] = 6741,	-- Innkeeper Norman <Innkeeper>
+					["coord"] = { 67.8, 38.6, UNDERCITY },
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["groups"] = {
+						objective(3, {	-- 0/1 Undercity Mint
+							["questID"] = 8312,	-- Hallow's End Treats for Spoops!
+							["provider"] = { "i", 20491 },	-- Undercity Mint
+						}),
+					},
 				}),
-				objective(4, {	-- 0/1 Thunder Bluff Marzipan
-					["provider"] = { "i", 20497 },	-- Thunder Bluff Marzipan
+				q(8360, {	-- Dancing for Marzipan (Horde)
+					["qg"] = 6746,	-- Innkeeper Pala <Innkeeper>
+					["coord"] = { 45.8, 64.4, THUNDER_BLUFF },
+					["races"] = HORDE_ONLY,
+					["repeatable"] = true,
+					["groups"] = {
+						objective(4, {	-- 0/1 Thunder Bluff Marzipan
+							["questID"] = 8312,	-- Hallow's End Treats for Spoops!
+							["provider"] = { "i", 20497 },	-- Thunder Bluff Marzipan
+						}),
+					},
 				}),
 				-- #if AFTER CATA
 				i(33226),	-- Tricky Treat
 				-- #else
 				i(20557),	-- Hallow's End Pumpkin Treat
 				-- #endif
-			},
-		}),
-		q(8355, {	-- Incoming Gumdrop (Alliance)
-			["qg"] = 6826,	-- Talvash del Kissel
-			["coord"] = { 36, 4, IRONFORGE },
-			["races"] = ALLIANCE_ONLY,
-			["repeatable"] = true,
-			["lvl"] = lvlsquish(10, 10, 1),
-			["groups"] = {
-				i(20494),	-- Gnomeregan Gumdrop
-			},
-		}),
-		q(8358, {	-- Incoming Gumdrop (Horde)
-			["qg"] = 11814,	-- Kali Remik
-			["coords"] = {
-				-- #if AFTER LEGION
-				{ 32.6, 65, ORGRIMMAR },
-				-- #elseif AFTER CATA
-				{ 33.5, 64.9, ORGRIMMAR },
-				-- #else
-				{ 56.2, 74.2, DUROTAR },
-				-- #endif
-			},
-			["races"] = HORDE_ONLY,
-			["repeatable"] = true,
-			["lvl"] = lvlsquish(10, 10, 1),
-			["groups"] = {
-				i(20495),	-- Darkspear Gumdrop
 			},
 		}),
 		q(11357, {	-- Masked Orphan Matron
