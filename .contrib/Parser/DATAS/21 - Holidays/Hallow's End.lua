@@ -733,7 +733,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		ach(5837, {	-- Tricks and Treats of Cataclysm (A)
 			["timeline"] = { ADDED_4_2_0 },
-			["sym"] = {{ "achievement_criteria" }},
+			--["sym"] = {{ "achievement_criteria" }},
 			["races"] = ALLIANCE_ONLY,
 			--[[
 			["groups"] = {
@@ -784,7 +784,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		ach(5838, {	-- Tricks and Treats of Cataclysm (H)
 			["timeline"] = { ADDED_4_2_0 },
-			["sym"] = {{ "achievement_criteria" }},
+			--["sym"] = {{ "achievement_criteria" }},
 			["races"] = HORDE_ONLY,
 			--[[
 			["groups"] = {
@@ -831,7 +831,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			]]--
 		}),
 		ach(966, {	-- Tricks and Treats of Eastern Kingdoms (A)
-			["sym"] = {{ "achievement_criteria" }},
+			--["sym"] = {{ "achievement_criteria" }},
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = ALLIANCE_ONLY,
 			--[[
@@ -966,7 +966,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			]]--
 		}),
 		ach(967, {	-- Tricks and Treats of Eastern Kingdoms (H)
-			["sym"] = {{ "achievement_criteria" }},
+			--["sym"] = {{ "achievement_criteria" }},
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = HORDE_ONLY,
 			--[[
@@ -1077,7 +1077,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			]]--
 		}),
 		ach(963, {	-- Tricks and Treats of Kalimdor (A)
-			["sym"] = {{ "achievement_criteria" }},
+			--["sym"] = {{ "achievement_criteria" }},
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = ALLIANCE_ONLY,
 			--[[
@@ -1228,7 +1228,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			]]--
 		}),
 		ach(965, {	-- Tricks and Treats of Kalimdor (H)
-			["sym"] = {{ "achievement_criteria" }},
+			--["sym"] = {{ "achievement_criteria" }},
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = HORDE_ONLY,
 			--[[
@@ -1387,7 +1387,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		ach(5836, {	-- Tricks and Treats of Northrend (A)
 			["timeline"] = { ADDED_4_2_0 },
-			["sym"] = {{ "achievement_criteria" }},
+			--["sym"] = {{ "achievement_criteria" }},
 			["races"] = ALLIANCE_ONLY,
 			--[[
 			["groups"] = {
@@ -1544,7 +1544,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			]]--
 		}),
 		ach(969, {	-- Tricks and Treats of Outlands (A)
-			["sym"] = {{ "achievement_criteria" }},
+			--["sym"] = {{ "achievement_criteria" }},
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = ALLIANCE_ONLY,
 			--[[
@@ -1604,7 +1604,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			]]--
 		}),
 		ach(968, {	-- Tricks and Treats of Outlands (H)
-			["sym"] = {{ "achievement_criteria" }},
+			--["sym"] = {{ "achievement_criteria" }},
 			["timeline"] = { ADDED_3_0_2 },
 			["races"] = HORDE_ONLY,
 			--[[
@@ -1662,7 +1662,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		ach(7601, {	-- Tricks and Treats of Pandaria (A)
 			["timeline"] = { ADDED_5_0_4 },
-			["sym"] = {{ "achievement_criteria" }},
+			--["sym"] = {{ "achievement_criteria" }},
 			["races"] = ALLIANCE_ONLY,
 			--[[
 			["groups"] = {
@@ -1737,7 +1737,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		}),
 		ach(7602, {	-- Tricks and Treats of Pandaria (H)
 			["timeline"] = { ADDED_5_0_4 },
-			["sym"] = {{ "achievement_criteria" }},
+			--["sym"] = {{ "achievement_criteria" }},
 			["races"] = HORDE_ONLY,
 			--[[
 			["groups"] = {

@@ -47,7 +47,7 @@ namespace ATT.DB
             {
                 if (!_typeProperties.TryGetValue(parseType, out PropertyInfo[] properties))
                 {
-                    _typeProperties[parseType] = properties = parseType.GetProperties();
+                    _typeProperties[parseType] = parseType.GetProperties();
                 }
             }
 
@@ -76,7 +76,10 @@ namespace ATT.DB
             {
                 try
                 {
-                    pi.SetValue(obj, Convert.ChangeType(csvline[pi.Name], pi.PropertyType));
+                    if (csvline.Headers.Contains(pi.Name))
+                    {
+                        pi.SetValue(obj, Convert.ChangeType(csvline[pi.Name], pi.PropertyType));
+                    }
                 }
                 catch (Exception ex)
                 {

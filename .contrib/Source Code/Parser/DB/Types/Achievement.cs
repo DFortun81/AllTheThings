@@ -9,25 +9,23 @@ namespace ATT.DB.Types
     /// </summary>
     public class Achievement : IDBType
     {
-        public string Description_lang;
-        public string Title_lang;
-        public string Reward_lang;
+        public string Description_lang { get; set; }
+        public string Title_lang { get; set; }
+        public string Reward_lang { get; set; }
         public long ID { get; set; }
-        public long Instance_ID;
-        public long Faction;
-        public long Supercedes;
-        public long Category;
-        public long Minimum_criteria;
-        public long Points;
-        public long Flags;
-        public long Ui_order;
-        public long IconFileID;
-        [OptionalField]
-        public long RewardItemID;
-        public long Criteria_tree;
-        public long Shares_criteria;
-        [OptionalField]
-        public long CovenantID;
+        public long Instance_ID { get; set; }
+        public long Faction { get; set; }
+        public long Supercedes { get; set; }
+        public long Category { get; set; }
+        public long Minimum_criteria { get; set; }
+        public long Points { get; set; }
+        public long Flags { get; set; }
+        public long Ui_order { get; set; }
+        public long IconFileID { get; set; }
+        public long RewardItemID { get; set; }
+        public long Criteria_tree { get; set; }
+        public long Shares_criteria { get; set; }
+        public long CovenantID { get; set; }
 
         public IDictionary<string, object> AsData()
         {
