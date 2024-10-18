@@ -177,7 +177,7 @@ if app.IsRetail then
 			-- so we need to know to search by 'itemID' but using the 'modItemID' here for base itemID lookups of missing
 			-- i.e. if searching 13544, we allow 13544.01 to count as a non-missing representation of the search... makes sense?
 			local val = key == "itemID" and t.modItemID or t[key];
-			local o = app.SearchForObject(key, val, "field") or (val == t.itemID and app.SearchForObject(key, val));
+			local o = app.SearchForObject(key, val, "field") or (val == t.itemID and app.SearchForObject("itemID", val));
 			local missing = true;
 			while o do
 				missing = rawget(o, "_missing");
