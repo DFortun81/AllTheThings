@@ -3170,7 +3170,10 @@ app.FillGroups = function(group)
 				HandleOnWindowFillComplete(groupWindow)
 			end
 		end
-		Runner.OnEnd(groupWindow.SelfHandleOnWindowFillComplete)
+		-- only trigger the OnWindowFillComplete event if we are filling the Root group of the window
+		if groupWindow.data == group then
+			Runner.OnEnd(groupWindow.SelfHandleOnWindowFillComplete)
+		end
 		-- 1 is way too low as it then takes 1 frame per individual row in the minilist... i.e. Valdrakken took 14,000 frames
 		Runner.SetPerFrame(25);
 		-- Recursive Fill
