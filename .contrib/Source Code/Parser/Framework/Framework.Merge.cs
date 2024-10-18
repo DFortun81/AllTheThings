@@ -1129,7 +1129,7 @@ namespace ATT
                 foreach (var achieveInfo in dataList)
                 {
                     // KEY: Achievement ID, VALUE: Dictionary
-                    if (achieveInfo is IDictionary<string, object> info && info.TryGetValue("achID", out long achID))
+                    if (achieveInfo is IDictionary<string, object> info && (info.TryGetValue("achID", out long achID) || info.TryGetValue("achievementID", out achID)))
                     {
                         if (ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> existingData))
                         {

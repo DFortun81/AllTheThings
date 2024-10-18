@@ -1784,13 +1784,25 @@ namespace ATT
             if (data.TryGetValue("_noautomation", out bool noautomation) && noautomation) return;
 
             // only incorporate achievement criteria which is under a header or another achievement
-            if (CurrentParentGroup.HasValue &&
-                CurrentParentGroup.Value.Key != "npcID" &&
-                CurrentParentGroup.Value.Key != "achID" &&
-                CurrentParentGroup.Value.Key != "headerID")
+            // CRIEVE NOTE: What is this and why does it prevent merging achievement data?
+            // It was excluding f, achievementCategoryID, expansion, speciesID, itemID, questID, encounterID
+            if (CurrentParentGroup.HasValue)
             {
-                LogDebug($"INFO: Achievement {achID} not being incorporated since it is listed under a specific Thing {CurrentParentGroup.Value.Key}:{CurrentParentGroup.Value.Value}");
-                return;
+                switch (CurrentParentGroup.Value.Key)
+                {
+                    case "achID":
+                    case "headerID":
+                    case "npcID":
+
+                    // Crieve added these
+                    case "f":
+                    case "achievementCategoryID":
+                    case "expansionID":
+                        break;
+                    default:
+                        LogDebug($"INFO: Achievement {achID} not being incorporated since it is listed under a specific Thing {CurrentParentGroup.Value.Key}:{CurrentParentGroup.Value.Value}");
+                        return;
+                }
             }
 
             // don't incorporate criteria if the achievement is listed under a real NPC
