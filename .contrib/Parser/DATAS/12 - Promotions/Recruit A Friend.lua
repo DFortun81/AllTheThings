@@ -82,7 +82,7 @@ root(ROOTS.Promotions, {
 				i(171330),	-- Renowned Explorer's Treasure-Snatchers
 				i(171326),	-- Renowned Explorer's Trousers
 				i(171331),	-- Renowned Explorer's Versatile Vest
-			},
+			}, -- TODO: iensemble also includes i(171333), i(171361)
 		})),
 		i(171363, {	-- Illusion: Stinging Sands (ILLUSION!)
 			["timeline"] = { ADDED_8_2_5, REMOVED_10_0_7 },

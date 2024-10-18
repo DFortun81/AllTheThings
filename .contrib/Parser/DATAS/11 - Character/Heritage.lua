@@ -913,21 +913,8 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 209140 },	-- Maiev Stormsong
 				["coord"] = { 52.7, 4.2, STORMWIND_CITY },
 				["g"] = {
-					i(208879, {	-- Ensemble: Kaldorei Protector's Adornment
-						i(208875),	-- Kaldorei Protector's Anklets
-						i(208824),	-- Kaldorei Protector's Band
-						i(208842),	-- Kaldorei Protector's Cinch
-						i(208876),	-- Kaldorei Protector's Coronet
-						i(208874),	-- Kaldorei Protector's Mantle
-						i(208877),	-- Kaldorei Protector's Talons
-						i(208882),	-- Kaldorei Protector's Wrap
-						i(208885),	-- Kaldorei Protector's Wristwraps
-					}),
-					i(208785, {	-- Traditionalist's Kaldorei Blades
-						i(208759),	-- Duskrune Glaive
-						i(208761),	-- Glaive of the Blood Moon
-						i(208762),	-- Moonlight Glaive
-					}),
+					iensemble(208879), 	-- Ensemble: Kaldorei Protector's Adornment
+					iensemble(208785), 	-- Traditionalist's Kaldorei Blades
 					title(511),	-- Ama'shan <Name>
 				},
 			}),
@@ -1344,7 +1331,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 						i(218118),	-- Lukou's Mask of Regeneration
 					}),
 					i(218105),	-- Loa's Blade-Blessing (COSMETIC!)
-				},
+				}, -- TODO: iensemble does not return masks or 'of the Horde' ids
 			}),
 		},
 	}));
@@ -1450,7 +1437,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["provider"] = { "n", 199893 },	-- Lilian Voss
 				["coord"] = { 61.8, 69.4, TIRISFAL_GLADES },
 				["g"] = {
-					i(208475, {	-- Forsaken Champion's Attire
+					i(208475, {	-- Ensemble: Forsaken Champion's Attire
 						i(208488),	-- Forsaken Champion's Backtomb
 						i(208477),	-- Forsaken Champion's Belt
 						i(208479),	-- Forsaken Champion's Boots
@@ -1464,7 +1451,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 						i(209065),	-- Forsaken Champion's Tabard
 						i(210054),	-- Forsaken Champion's Vest
 						i(209068),	-- Queen Loyalist's Tabard
-					}),
+					}), -- TODO: iensemble does not return Queen's Loyalist's tabard, Champion's Cowl, or Champion's Vest
 				},
 			}),
 		},
@@ -1645,8 +1632,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		n(HERITAGE, {
 			q(76556),	-- Triggers after handing in quest 'Ancient Curses' (questID 75891) (spellID 415206)
 			q(78022),	-- Triggers after talking to Maiev Stormsong during quest 'Stepping into the Shadows' (questID 76203) (spellID 422467)
-			q(77884),	-- Triggers after using 'Ensemble: Kaldorei Protector's Adornment' (itemID 208879) (spellID 421666)
-			q(77783),	-- Triggers after using 'Traditionalist's Kaldorei Blades' (itemID 208785) (spellID 421070)
 			q(78021),	-- Ensemble: Forsaken Champion's Additional Attire (itemID ?) (spellID 419716)
 			q(77654),	-- Ensemble: Forsaken Champion's Attire (itemID 208475) (spellID 422437)
 			q(77796),	-- Choosing Angellene during 'Fear is Our Weapon' (questID 72860) (spellID 421083)

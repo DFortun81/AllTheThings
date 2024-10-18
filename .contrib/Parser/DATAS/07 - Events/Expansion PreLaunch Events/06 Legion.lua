@@ -309,19 +309,7 @@ root(ROOTS.WorldEvents, n(EXPANSION_PRELAUNCH, bubbleDown({ ["timeline"] = { ADD
 						}),
 						iensemble(139167, {	-- Ensemble: Felforged Plate Armor
 							["ignoreBonus"] = true,
-							--[[
-							["groups"] = {
-								i(138155),	-- Felforged Helmet
-								i(138157),	-- Felforged Pauldrons
-								i(138152),	-- Felforged Chestplate
-								i(138159),	-- Felforged Vambracers
-								i(138153),	-- Felforged Gauntlets
-								i(138154),	-- Felforged Waistplate
-								i(138156),	-- Felforged Legplates
-								i(138158),	-- Felforged Warboots
-							},
-							]]--
-						}), --TODO iensemble also includes i(144275)
+						}),
 					},
 				}),
 			}),

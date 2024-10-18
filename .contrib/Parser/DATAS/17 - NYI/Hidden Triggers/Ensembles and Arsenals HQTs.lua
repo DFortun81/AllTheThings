@@ -456,6 +456,9 @@ q(45235),	-- Ensemble: Funerary Plate of the Chosen Dead [Heroic]
 q(45236),	-- Ensemble: Funerary Plate of the Chosen Dead [Mythic]
 q(45237),	-- Ensemble: Funerary Plate of the Chosen Dead [LFR]
 
+------ Trial of Style ------
+q(55566),	-- Ensemble: Chainmail of the Timeless Hunt
+
 ------ Trading Post Arsenals ------
 q(77336),	-- Armaments of the Light Avenger
 q(65568),	-- Arsenal: Blades of Elune
@@ -878,6 +881,7 @@ q(55493),	-- Ensemble: Brawler's Garb [H]
 
 --- Shadowlands
 q(66280),	-- Ensemble: Blood Knight's Dedication
+q(65176),	-- Ensemble: Ravencrest's Battleplate (188209)
 
 --- Dragonflight
 q(78840),	-- Arsenal: Whispering Temple Blades
@@ -889,6 +893,8 @@ q(70758),	-- Ensemble: Bronze Valdrakken Clothing
 q(70755),	-- Ensemble: Crimson Valdrakken Clothing
 q(65738),	-- Ensemble: Dashing Buccaneer's Slops
 q(70759),	-- Ensemble: Green Valdrakken Clothing
+q(77884),	-- Ensemble: Kaldorei Protector's Adornment
+q(77783),	-- Traditionalist's Kaldorei Blades
 
 -- Engi Goggles
 q(78030),	-- Ensemble: Chromatically Calibrated Holo-Gogs

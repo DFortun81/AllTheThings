@@ -48,7 +48,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 						i(151887),	-- Glyph-Lined Sash
 						i(151883),	-- Mana-Etched Pantaloons
 						i(151888),	-- Sigil-Laced Boots
-					},
+					}, -- TODO: iensemble includes many additional items, including removed
 				}),
 				i(151118, {	-- Ensemble: Obsidian Prowler's Garb
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
@@ -61,7 +61,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 						i(151894),	-- Epoch's Whispering Cinch
 						i(151893),	-- Mennu's Scaled Leggings
 						i(151890),	-- Silent-Strider Kneeboots
-					},
+					}, -- TODO: iensemble includes many additional items, including removed
 				}),
 				i(151119, {	-- Ensemble: Der'izu Armor
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
@@ -75,7 +75,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 						i(151903),	-- Der'izu Belt
 						i(151897),	-- Der'izu Legguards
 						i(151899),	-- Der'izu Greaves
-					},
+					}, -- TODO: iensemble includes many additional items
 				}),
 				i(151120, {	-- Ensemble: Righteous Battleplate
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
@@ -90,7 +90,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 						i(151905),	-- Legplates of the Righteous
 						i(151909),	-- Boots of the Righteous Path
 					},
-				}),
+				}), -- TODO: iensemble includes many additional items, including removed
 
 				-- SEASON 2 --
 				i(157573, {	-- Ensemble: Mindwrack Raiment
@@ -106,7 +106,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 						i(156919),	-- Mindwrack Cord
 						i(156913),	-- Mindwrack Leggings
 						i(156915),	-- Mindwrack Slippers
-					},
+					}, -- TODO: iensemble includes many additional items
 				}),
 				i(157574, {	-- Ensemble: Tundraspite Armor
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
@@ -121,7 +121,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 						i(156911),	-- Tundraspite Girdle
 						i(156905),	-- Tundraspite Legguards
 						i(156907),	-- Tundraspite Boots
-					},
+					}, -- TODO: iensemble includes many additional items
 				}),
 				i(157576, {	-- Ensemble: Crimson Sentinel Garb
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
@@ -136,7 +136,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 						i(156903),	-- Crimson Sentinel Waistguard
 						i(156897),	-- Crimson Sentinel Leggings
 						i(156899),	-- Crimson Sentinel Boots
-					},
+					}, -- TODO: iensemble includes many additional items
 				}),
 				i(157577, {	-- Ensemble: Goldspine Plate
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
@@ -151,7 +151,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 						i(156895),	-- Goldspine Belt
 						i(156889),	-- Goldspine Legguards
 						i(156891),	-- Goldspine Sabatons
-					},
+					}, -- TODO: iensemble includes many additional items
 				}),
 				i(156862, {	-- Trial of Style Dance Floor
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 100 }, },
@@ -186,7 +186,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 						i(168102),	-- Tranquil Spiritbind Sash
 						i(168108),	-- Tranquil Spiritbind Leggings
 						i(168106),	-- Tranquil Spiritbind Slippers
-					},
+					}, -- TODO: iensemble includes some additional items
 				}),
 				i(168059, {	-- Ensemble: Restless Dreambound Battlegear
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
@@ -201,22 +201,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 						i(168082),	-- Restless Dreambound Belt
 						i(168088),	-- Restless Dreambound Leggings
 						i(168086),	-- Restless Dreambound Boots
-					},
+					}, -- TODO: iensemble includes many additional items, including removed
 				}),
-				i(168060, {	-- Ensemble: Chainmail of the Timeless Hunt
+				iensemble(168060, {	-- Ensemble: Chainmail of the Timeless Hunt
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
 					["classes"] = MAIL_CLASSES,
 					["timeline"] = { ADDED_8_1_5 },
-					["g"] = {
-						i(168078),	-- Headguard of the Timeless Hunt
-						i(168080),	-- Mantle of the Timeless Hunt
-						i(168075),	-- Breastplate of the Timeless Hunt
-						i(168074),	-- Bracers of the Timeless Hunt
-						i(168076),	-- Gauntlets of the Timeless Hunt
-						i(168073),	-- Belt of the Timeless Hunt
-						i(168079),	-- Legguards of the Timeless Hunt
-						i(168077),	-- Boots of the Timeless Hunt
-					},
 				}),
 				i(168061, {	-- Ensemble: Amaranthine Path Armor
 					["cost"] = { { "i", TRIAL_OF_STYLE_TOKEN, 60 }, },
@@ -231,7 +221,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.TRIAL_OF_STYLE, n(TRIAL_OF_STYLE_HEADER, 
 						i(168065),	-- Amaranthine Path Belt
 						i(168071),	-- Amaranthine Path Legguards
 						i(168069),	-- Amaranthine Path Greaves
-					},
+					}, -- TODO: iensemble includes many additional items
 				}),
 
 				--
@@ -502,7 +492,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	}),
 	expansion(EXPANSION.BFA, {
 		q(55559),	-- Ensemble: Armor of the Amaranthine Path
-		q(55566),	-- Ensemble: Chainmail of the Timeless Hunt
 		q(55572),	-- Ensemble: Restless Dreambound Battlegear
 		q(55587),	-- Ensemble: Tranquil Spiritbind Regalia
 	}),

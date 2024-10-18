@@ -5293,18 +5293,8 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_LEGION_
 					i(187590, {	-- Black Rook Elite Shoulderplates
 						["cost"] = {{ "c", TIMEWARPED_BADGE, 35 }},
 					}),
-					i(188209, {	-- Ensemble: Ravencrest's Battleplate
+					iensemble(188209, {	-- Ensemble: Ravencrest's Battleplate
 						["cost"] = {{ "c", TIMEWARPED_BADGE, 500 }},
-						["g"] = {
-							i(187588),	-- Black Rook Elite Chestguard
-							i(187589),	-- Black Rook Elite Legguards
-							i(187590),	-- Black Rook Elite Shoulderplates
-							i(188204),	-- Black Rook Elite Greathelm
-							i(188205),	-- Black Rook Elite Waistguard
-							i(188206),	-- Black Rook Elite Sabatons
-							i(188207),	-- Black Rook Elite Gauntlets
-							i(188208),	-- Black Rook Elite Bracers
-						},
 					}),
 					i(187596, {	-- Broken Isles Meat Delivery
 						["cost"] = {{ "c", TIMEWARPED_BADGE, 25 }},
@@ -5787,10 +5777,6 @@ AddInstancesToRotation(EXPANSION.LEGION, {
 	767,	-- Neltharion's Lair
 	707,	-- Vault of the Wardens
 });
-
-root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.LEGION, {
-	q(65176),	-- learning Ensemble: Ravencrest's Battleplate (188209)
-}));
 --[[
 -- Post Processors
 table.insert(POST_PROCESSING_FUNCTIONS, function()
