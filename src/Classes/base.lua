@@ -214,6 +214,14 @@ if app.IsRetail then
 	}) do
 		DefaultFields[fieldName] = fieldMethod;
 	end
+else
+	for fieldName,fieldMethod in pairs({
+		["creatureID"] = function(t)	-- TODO: Do something about this, it's silly.
+			return t.npcID;
+		end,
+	}) do
+		DefaultFields[fieldName] = fieldMethod;
+	end
 end
 
 local CloneDictionary = app.CloneDictionary
