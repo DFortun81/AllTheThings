@@ -28,10 +28,6 @@ local NPCDisplayIDFromID = setmetatable({}, { __index = function(t, id)
 		local displayID = NPCHarvester:GetDisplayInfo()
 		if displayID and displayID ~= 0 then
 			t[id] = displayID
-			-- I don't think this is actually necessary since the displayID is always
-			-- returned prior to a refresh taking place? But in any case it's definitely not necessary
-			-- N times per frame when loading the game due to however many NPCs load their displayID in an active list
-			app.CallbackEvent("OnRenderDirty")
 			return displayID
 		end
 	end
@@ -239,4 +235,62 @@ app.CreateNPC = function(id, t)
 	else
 		return CreateNPC(id, t)
 	end
+end
+
+-- returns the input key unless it's blocked by being set to 0
+local BlockedDisplayID = {
+	[11686] = 0,	-- empty blue thing
+	[16925] = 0,	-- nothing
+	[21072] = 0,	-- empty blue thing
+	[23767] = 0,	-- empty blue thing
+	[27823] = 0,	-- empty blue thing
+	[28016] = 0,	-- empty blue thing
+	[52318] = 0,	-- generic bunny
+	[56187] = 0,	-- generic bunny
+	[64062] = 0,	-- generic bunny
+	[110046] = 0,	-- nothing
+	[112684] = 0,	-- nothing
+}
+local AllowedDisplayID = setmetatable({}, {
+	__index = function(t, key)
+		if BlockedDisplayID[key] then
+			return false
+		end
+		-- app.PrintDebug("DisplayID",key)
+		return key;
+	end
+});
+
+local function GetDisplayID(data)
+	-- don't create a displayID for groups with a sourceID/itemID/difficultyID/mapID
+	if data.sourceID or data.difficultyID or data.mapID or data.itemID then return false end
+
+	local npcID = data.npcID or data.creatureID
+	if npcID then return NPCDisplayIDFromID[npcID] end
+
+	local qgs = data.qgs
+	if qgs and #qgs > 0 then return NPCDisplayIDFromID[qgs[1]] end
+
+	local providers = data.providers
+	if providers and #providers > 0 then
+		for _,v in ipairs(providers) do
+			-- if one of the providers is an NPC, we should show its texture regardless of other providers
+			if v[1] == "n" then
+				return NPCDisplayIDFromID[v[2]]
+			end
+		end
+	end
+	return false
+end
+
+-- Determines an allowed DisplayID for the provided data group based on NPC data
+-- or returns an existing displayID of the group
+app.GetDisplayID = function(data)
+	local id = data.displayID
+	-- app.PrintDebug("old.displayID",id)
+	if id ~= nil then return id end
+	id = AllowedDisplayID[GetDisplayID(data)]
+	-- app.PrintDebug("new.displayID",id)
+	data.displayID = id
+	return id
 end
