@@ -9535,6 +9535,7 @@ customWindowUpdates.list = function(self, force, got)
 		local dataType = (app.GetCustomWindowParam("list", "type") or "quest");
 		local onlyMissing = app.GetCustomWindowParam("list", "missing");
 		local onlyCached = app.GetCustomWindowParam("list", "cached");
+		local onlyCollected = app.GetCustomWindowParam("list", "collected");
 		local harvesting = app.GetCustomWindowParam("list", "harvesting");
 		self.PartitionSize = tonumber(app.GetCustomWindowParam("list", "part")) or 1000;
 		self.Limit = tonumber(app.GetCustomWindowParam("list", "limit")) or 1000;
@@ -9723,6 +9724,11 @@ customWindowUpdates.list = function(self, force, got)
 				overrides.visible = function(o, key)
 					return o._missing;
 				end
+			end
+		end
+		if onlyCollected then
+			overrides.visible = function(o, key)
+				return o.collected;
 			end
 		end
 		if harvesting then
