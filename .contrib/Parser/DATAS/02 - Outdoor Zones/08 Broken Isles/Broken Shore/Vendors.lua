@@ -99,11 +99,9 @@ root(ROOTS.Zones, {
 								["cost"] = { { "c", 1226, 1000 }, },	-- 1,000x Nethershard
 							}),
 							iensemble(141372, {	-- Arsenal: Armaments of the Ebon Blade
-								["ignoreBonus"] = true,
 								["cost"] = { { "c", 1226, 2000 }, },	-- 2,000x Nethershard
 							}),
 							iensemble(141371, {	-- Arsenal: Armaments of the Silver Hand
-								["ignoreBonus"] = true,
 								["cost"] = { { "c", 1226, 1000 }, },	-- 1,000x Nethershard
 							}),
 							i(139879, {	-- Crate of Champion Equipment

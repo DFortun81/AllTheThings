@@ -310,18 +310,10 @@ root(ROOTS.ExpansionFeatures,
 						["coord"] = { 60.0, 54.5, DRAGONBLIGHT },
 						["provider"] = { "n", 27856 },	-- Chromie
 						["g"] = {
-							iensemble(151692, {	-- Ensemble: Chronoscryer's Finery
-								["ignoreBonus"] = true,
-							}),
-							iensemble(151693, {	-- Ensemble: Riftscarred Vestments
-								["ignoreBonus"] = true,
-							}),
-							iensemble(151694, {	-- Ensemble: Epoch Sentinel's Mail
-								["ignoreBonus"] = true,
-							}),
-							iensemble(151695, {	-- Ensemble: Timewarden's Plate
-								["ignoreBonus"] = true,
-							}),
+							iensemble(151692),	-- Ensemble: Chronoscryer's Finery
+							iensemble(151693),	-- Ensemble: Riftscarred Vestments
+							iensemble(151694),	-- Ensemble: Epoch Sentinel's Mail
+							iensemble(151695),	-- Ensemble: Timewarden's Plate
 						},
 					}),
 				}),
