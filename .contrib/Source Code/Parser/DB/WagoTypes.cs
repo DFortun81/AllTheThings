@@ -51,11 +51,16 @@ namespace ATT.DB
                 }
             }
 
-            return csvlines
-#if !DEBUG
-                .AsParallel()
-#endif
-                .Select(l => Parse(parseType, l)).Where(o => o != null).ToDictionary(t => t.ID, t => t);
+            var dictionary = new Dictionary<long, IDBType>();
+            foreach (var line in csvlines)
+            {
+                var parsedLine = Parse(parseType, line);
+                if (parsedLine != null)
+                {
+                    dictionary[parsedLine.ID] = parsedLine;
+                }
+            }
+            return dictionary;
         }
 
         private static IDBType Parse(Type parseType, ICsvLine csvline)
