@@ -3615,6 +3615,9 @@ root(ROOTS.HiddenAchievementTriggers, {
 
 			-- 11.0.2.56313
 			ach(40974),	-- [DNT] <Hidden> Mythic+ Rating > 0 (The War Within, any season)
+
+			-- 11.0.2.56819
+			ach(41085),	-- Worm Theory (copy)
 		})),
 
 		-- 11.0.5
