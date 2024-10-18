@@ -2290,6 +2290,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
 			["groups"] = {
+				objective(1, {	-- 0/25 Bombs Dropped
+					["provider"] = { "n", 52548 },	-- Gertrude Fenlow
+					["coord"] = { 32.2, 50.6, ELWYNN_FOREST },
+				}),
 				i(33226),	-- Tricky Treat
 			},
 		}),
@@ -2309,6 +2313,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["isDaily"] = true,
 			["lvl"] = lvlsquish(10, 10, 10),	-- TODO: Confirm level requirement.
 			["groups"] = {
+				objective(1, {	-- 0/25 Bombs Dropped
+					["provider"] = { "n", 53764 },	-- Crina Fenlow
+					["coord"] = { 62.2, 67.0, TIRISFAL_GLADES },
+				}),
 				i(33226),	-- Tricky Treat
 			},
 		}),
