@@ -282,6 +282,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(53837, {	-- Watch Yer Back
 				["sourceQuest"] = 53836,	-- Ancient Armor, Ancient Mystery
 				["provider"] = { "n", 145464 },	-- Advisor Belgrum
+				["coord"] = { 56.9, 47.9, 1361 },	-- OldIronforge
 			}),
 			q(53839, {	-- Aegrim's Study
 				["description"] = "The coords leads to the stair down",
@@ -303,6 +304,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 				["sourceQuest"] = 53840,	-- Interest Yah In A Pint?
 				["provider"] = { "n", 145462 },	-- Brann Bronzebeard
 				["coord"] = { 35.0, 48.8, LOCH_MODAN },
+				["maps"] = { 745 },	-- Ulduar
 			}),
 			q(53842, {	-- Earthen Blessing
 				["sourceQuest"] = 53844,	-- Recruiting the Furnace Master
@@ -826,6 +828,7 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 			q(58436, {    -- Heritage of the Mechagnome
 				["provider"] = { "n", 158145 },	-- Prince Erazmin
 				["coord"] = { 73.0, 33.4, MECHAGON },
+				["maps"] = { MECHAGON_CITY },
 				["lvl"] = 50,
 				["g"] = {
 					ach(14014),	-- Heritage of the Mechagnome
