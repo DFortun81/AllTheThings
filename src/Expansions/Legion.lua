@@ -43,11 +43,7 @@ app.CreateArtifact = app.CreateClass(CLASSNAME, KEY, {
 	f = function(t) return 11; end,
 	collectible = function(t) return app.Settings.Collectibles[SETTING]; end,
 	collected = function(t)
-		local id = t[KEY]
-		-- character collected
-		if app.IsCached(CACHE, id) then return 1 end
-		-- account-wide collected
-		if app.IsAccountTracked(CACHE, id, SETTING) then return 2; end
+		return app.TypicalCharacterCollected(CACHE, t[KEY], SETTING)
 	end,
 	name = function(t)
 		local id = t.parent;

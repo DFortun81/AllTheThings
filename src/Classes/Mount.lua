@@ -135,12 +135,7 @@ do
 		collectibleAsCost = app.CollectibleAsCost,
 		collectible = function(t) return app.Settings.Collectibles[SETTING]; end,
 		collected = function(t)
-			local id = t.spellID;
-			-- character collected
-			if app.IsCached(CACHE, id) then return 1; end
-			-- certain Mounts are per Character, so we can implicitly check for them as Account-Wide since Mounts have no toggle for that
-			-- account-wide collected
-			if app.IsAccountCached(CACHE, id) then return 2; end
+			return app.TypicalAccountCollected(CACHE, t.spellID)
 		end,
 		saved = function(t)
 			return app.IsCached(CACHE, t.spellID)

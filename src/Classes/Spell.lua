@@ -164,11 +164,7 @@ do
 		end,
 		collectible = app.ReturnFalse,
 		collected = function(t)
-			local id = t[KEY];
-			-- character collected
-			if app.IsCached(CACHE, id) then return 1; end
-			-- account-wide collected
-			if app.IsAccountTracked(CACHE, id) then return 2; end
+			return app.TypicalCharacterCollected(CACHE, t[KEY])
 		end,
 		skillID = function(t)
 			return t.requireSkill;
@@ -259,11 +255,7 @@ do
 			-- 	);
 		end,
 		collected = function(t)
-			local id = t[KEY];
-			-- character collected
-			if app.IsCached(CACHE, id) then return 1; end
-			-- account-wide collected
-			if app.Settings.AccountWide[SETTING] and app.IsAccountCached(CACHE, id) then return 2; end
+			return app.TypicalCharacterCollected(CACHE, t[KEY], SETTING)
 		end,
 		b = function(t)
 			-- If not tracking Recipes Account-Wide, then pretend that every Recipe is BoP

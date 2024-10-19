@@ -152,7 +152,7 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 		timeStamps[field] = now;
 		currentCharacter.lastPlayed = now;
 	end
-	
+
 	local accountWide = app.Settings.AccountWide
 	-- Returns the cached status for this Account for a given field ID
 	local function IsAccountCached(field, id)
@@ -276,4 +276,15 @@ app.AddEventHandler("OnSavedVariablesAvailable", function(currentCharacter, acco
 	app.IsAccountTracked = IsAccountTracked
 	app.SetBatchAccountCached = SetBatchAccountCached
 	app.SetBatchCached = SetBatchCached
+	-- Consolidated Functions
+	app.TypicalCharacterCollected = function(CACHE, id, SETTING)
+		-- character collected
+		if IsCached(CACHE, id) then return 1; end
+		-- account-wide collected
+		if IsAccountTracked(CACHE, id, SETTING) then return 2; end
+	end
+	app.TypicalAccountCollected = function(CACHE, id)
+		-- account-wide collected
+		if IsAccountCached(CACHE, id) then return 1; end
+	end
 end)
