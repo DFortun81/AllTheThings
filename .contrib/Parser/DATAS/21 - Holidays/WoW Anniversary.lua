@@ -2391,6 +2391,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			}),
 			ach(40990),		-- Balloonist
 			ach(40984),		-- Big Fan
+			ach(41033),		-- Classy Dresser
 			ach(40977),		-- Codex Editor: Ahn'Qiraj
 			ach(40873),		-- Crate Insurance Agent
 			ach(40987),		-- Fashion Critic
@@ -2411,6 +2412,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			ach(40988),		-- Photo Op!
 			ach(40997),		-- The Gatecrashers (automated)
 			ach(40995),		-- The Originals (automated)
+			ach(41038),		-- Token Collector
 			ach(41013),		-- Upgraded Apparel
 			ach(40661),		-- Zoomies!
 		}),
@@ -2934,6 +2936,7 @@ what is the highest rank that can be bestowed on a night elf watcher? Warden
 root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline"] = { ADDED_11_0_5 } }, {
 	n(WOW_ANNIVERSARY_TWENTY, {
 		q(85661),	-- Purchase one Tier 2 Set
+		q(85828),	-- Purchase a second Tier 2 Set
 	}),
 })));
 -- #endif

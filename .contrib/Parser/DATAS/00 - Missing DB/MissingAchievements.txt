@@ -1,5 +1,2 @@
 11.0.5.56487
 ach(40967),	-- Ratts' Revenge
-11.0.5.56749
-ach(41033),	-- Classy Dresser
-ach(41038),	-- Token Collector
