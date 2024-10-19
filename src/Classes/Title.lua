@@ -14,6 +14,7 @@ local Colorize = app.Modules.Color.Colorize
 
 -- Title Lib!
 local KEY, CACHE = "titleID", "Titles"
+local CLASSNAME = "Title"
 
 local function CalculateTitleStyle(name)
 	if name then
@@ -113,7 +114,6 @@ app.CreateTitle = app.CreateClass("Title", "titleID", {
 	collectible = function(t)
 		return app.Settings.Collectibles.Titles;
 	end,
-	trackable = app.ReturnTrue,
 	collected = app.IsClassic and function(t)
 		local titleID = t[KEY];
 		return app.SetCollected(t, "Titles", titleID, IsTitleKnown(titleID));
@@ -131,6 +131,7 @@ app.CreateTitle = app.CreateClass("Title", "titleID", {
 		return t.gender and OnUpdateForSpecificGender;
 	end
 });
+app.AddSimpleCollectibleSwap(CLASSNAME, CACHE)
 
 -- Title Refresh
 if app.IsRetail then
