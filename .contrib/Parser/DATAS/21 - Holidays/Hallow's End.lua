@@ -703,21 +703,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 		ach(971, {	-- Tricks and Treats of Azeroth (H) / Tricks and Treats of Azeroth [MOP+]
 			-- Meta Achievement should symlink the contained Achievements from Source
 			["sym"] = {{"meta_achievement",
-				-- #if AFTER 4.2.0
+				-- #if AFTER MOP
 				966,	-- Tricks and Treats of Eastern Kingdoms (A)
 				-- #endif
 				967,	-- Tricks and Treats of Eastern Kingdoms (H)
-				-- #if AFTER 4.2.0
+				-- #if AFTER MOP
 				963,	-- Tricks and Treats of Kalimdor (A)
 				-- #endif
 				965,	-- Tricks and Treats of Kalimdor (H)
-				-- #if AFTER 4.2.0
+				-- #if AFTER MOP
 				969,	-- Tricks and Treats of Outlands (A)
 				-- #endif
 				968,	-- Tricks and Treats of Outlands (H)
 			}},
 			["timeline"] = { ADDED_3_0_2 },
-			-- #if BEFORE 4.2.0
+			-- #if BEFORE MOP
 			["races"] = HORDE_ONLY,
 			-- #endif
 		}),
@@ -728,7 +728,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				963,	-- Tricks and Treats of Kalimdor (A)
 				969,	-- Tricks and Treats of Outlands (A)
 			}},
-			["timeline"] = { ADDED_3_0_2, REMOVED_4_2_0 },
+			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 			["races"] = ALLIANCE_ONLY,
 		}),
 		ach(5837, {	-- Tricks and Treats of Cataclysm (A)
