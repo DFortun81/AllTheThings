@@ -1084,7 +1084,7 @@ namespace ATT
 
         private static void EnsembleCleanup(IDictionary<string, object> data)
         {
-            if (!data.TryGetValue("ensembleID", out long ensembleID)) return;
+            if (!(data.TryGetValue("ensembleID", out long ensembleID) || data.TryGetValue("ensembleSpellID", out ensembleID))) return;
 
             if (!data.TryGetValue("_sourceIDs", out List<long> sourceIDs)) return;
 
@@ -1735,7 +1735,7 @@ namespace ATT
                 data.ContainsKey("criteriaID") ||
                 (data.TryGetValue("collectible", out bool collectible) && !collectible)) return;
 
-            //if (achID == 6674)
+            //if (achID == 9713)
             //{
 
             //}
@@ -1813,6 +1813,7 @@ namespace ATT
             }
 
             // Pull in any defined Achievement Criteria/Tree unless we've defined it a 'meta' Achievement
+            // TODO: include the WagoDB Achievement Data somehow...
             if (achInfo.TryGetValue("criteriaTreeID", out long criteriaTreeID) &&
                 TryGetTypeDBObject(criteriaTreeID, out CriteriaTree criteriaTree))
             {
@@ -2452,7 +2453,7 @@ namespace ATT
 
         private static void Incorporate_Ensemble(IDictionary<string, object> data)
         {
-            if (!data.TryGetValue("type", out string type) || type != "ensembleID") return;
+            if (!data.TryGetValue("type", out string type) || !(type == "ensembleID" || type == "ensembleSpellID")) return;
             if (data.ContainsKey("_noautomation")) return;
 
             if (!data.TryGetValue("spellID", out long spellID))
@@ -2460,6 +2461,11 @@ namespace ATT
                 LogWarn($"Ensemble Type Item missing linking SpellID", data);
                 return;
             }
+
+            //if (spellID == 428745)
+            //{
+
+            //}
 
             if (!TryGetTypeDBObjectCollection(spellID, out List<SpellEffect> spellEffects))
             {
@@ -2486,7 +2492,43 @@ namespace ATT
 
             if (data.TryGetValue("tmogSetID", out long tmogSetID) && TryGetTypeDBObject(tmogSetID, out TransmogSet tmogSet))
             {
-                Objects.Merge(data, "questID", tmogSet.TrackingQuestID);
+                if (tmogSet.TrackingQuestID > 0)
+                {
+                    Objects.Merge(data, "questID", tmogSet.TrackingQuestID);
+
+                    // check if other Ensembles have the same name as well. this could be a case where alternate Ensembles are auto-learned via server-side
+                    // spellID triggers which may need to be added into the 'real' Ensemble Item to pull in the proper set of learned Sources
+                    //IEnumerable<TransmogSet> matchingTmogSets = GetTypeDBObjects<TransmogSet>(i => i.Name_lang == tmogSet.Name_lang
+                    //                                                                            && i.TrackingQuestID > 0
+                    //                                                                            && i.TrackingQuestID != tmogSet.TrackingQuestID);
+                    //data.TryGetValue("itemID", out long ensembleID);
+                    //foreach (var matchingTmogSet in matchingTmogSets)
+                    //{
+                    //    long? matchingTmogSetSpellID = GetTypeDBObjects<SpellEffect>(i => i.EffectMiscValue_0 == matchingTmogSet.ID && i.IsLearnedTransmogSet()).FirstOrDefault()?.SpellID;
+                    //    if (matchingTmogSetSpellID != null)
+                    //    {
+                    //        LogDebugWarn($"Matching Transmog Set {matchingTmogSet.Name_lang}:{matchingTmogSet.ID} may need a manual SpellID {matchingTmogSetSpellID} added within existing iensemble({ensembleID}");
+                    //    }
+                    //}
+                }
+            }
+
+            // add additional ensemble spells as sub-groups of the Item Ensemble
+            if (data.TryGetValue("extraTransmogSetSpells", out List<object> tmogsetSpells))
+            {
+                foreach (long subtmogsetSpell in tmogsetSpells.AsTypedEnumerable<long>())
+                {
+                    // we will just use the SpellID as the EnsembleID since it's only used for logging if it's not an ItemID
+                    Dictionary<string, object> subEnsemble = new Dictionary<string, object>
+                    {
+                        { "ensembleSpellID", subtmogsetSpell },
+                        { "type", "ensembleSpellID" },
+                        { "spellID", subtmogsetSpell },
+                    };
+                    //Incorporate_Ensemble(subEnsemble);
+                    Objects.Merge(data, "g", subEnsemble);
+                    //AddPostProcessing(EnsembleCleanup, data);
+                }
             }
 
             AddPostProcessing(EnsembleCleanup, data);

@@ -228,33 +228,29 @@ root(ROOTS.Character, n(HERITAGE, bubbleDownSelf({ ["timeline"] = { ADDED_7_3_5 
 					i(210538),	-- Velen's Memory Stone (QI!)
 				},
 			}),
+			hqt(82162, {	-- Stay awhile and Listen: Prophet Velen
+				["name"] = "Stay awhile and listen: Prophet Velen",
+				["sourceQuests"] = {
+					78082,	-- A Burden Shared (Accepted)
+				},
+				["provider"] = { "n", 210670 },	-- Prophet Velen
+				["coord"] = { 53.8, 83.8, THE_EXODAR },
+				["lockCriteria"] = { 1, "questID", 78082 },	-- A Burden Shared (Completed)
+			}),
 			q(78083, {	-- Our Path Forward
 				["sourceQuests"] = { 78082 },	-- A Burden Shared
 				["provider"] = { "n", 212387 },	-- Grand Anchorite Almonen
 				["coord"] = { 64.4, 87.3, THE_EXODAR },
 				["g"] = {
 					i(210455),	-- Draenic Hologem (TOY!)
-					i(211313, {	-- Ensemble: Heritage of the Draenei
-						i(211333),	-- Amethyst Bands of Telhamat
-						i(211340),	-- Amethyst Chestplate of Telhamat
-						i(211338),	-- Amethyst Grips of Telhamat
-						i(211335),	-- Amethyst Sentinels of Telhamat
-						i(211334),	-- Dawnsteel Belt of Telhamat
-						i(211341),	-- Dawnsteel Casque of Telhamat
-						i(211339),	-- Dawnsteel Cleats of Telhamat
-						i(211337),	-- Dawnsteel Helm of Telhamat
-						i(211336),	-- Netherweave Legwraps of Telhamat
-						i(211309),	-- Sumptuous Legwraps of Lost Embaari
-						i(211306),	-- Taladite Bands of Lost Embaari
-						i(211305),	-- Taladite Chestplate of Lost Embaari
-						i(211311),	-- Taladite Grips of Lost Embaari
-						i(211308),	-- Taladite Sentinels of Lost Embaari
-						i(211307),	-- True Iron Belt of Lost Embaari
-						i(211342),	-- True Iron Casque of Lost Embaari
-						i(211312),	-- True Iron Cleats of Lost Embaari
-						i(211310),	-- True Iron Helm of Lost Embaari
+					iensemble(211313, {	-- Ensemble: Heritage of the Draenei
+						["extraTransmogSetSpells"] = {
+							428745,	-- Ensemble: Endurance of Temple Telhamat
+							428742,	-- Ensemble: Additional Tokens of Telhamat
+							428744,	-- Ensemble: Additional Tokens of Lost Embaari
+						},
 					}),
-				}, --TODO: iensemble returns fewer items than listed here
+				},
 			}),
 		},
 	}));
@@ -1648,7 +1644,6 @@ root(ROOTS.HiddenQuestTriggers, {
 	})),
 	expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_2_7 } }, {
 		n(HERITAGE, {
-			q(82162),	-- Stay a while and listen with Chieftain Hatuun / Prophet Velen during 'A Burden Shared' (questID 78082)
 			q(78841),	-- Ensemble: Heritage of the Draenei
 			q(78843),	-- Ensemble: Heritage of the Draenei
 			q(78844),	-- Ensemble: Heritage of the Draenei

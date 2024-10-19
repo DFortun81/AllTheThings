@@ -91,7 +91,6 @@ src\Classes\Quests.lua
 src\Classes\Item.Retail.lua
 # src\Classes\Item.Classic.lua
 src\Classes\Encounter.lua
-src\Classes\Ensemble.lua
 src\Classes\Expansion.lua
 src\Classes\FlightPath.lua
 src\Classes\Header.lua
@@ -113,6 +112,7 @@ src\Classes\Races.lua
 src\Classes\Title.lua
 src\Classes\Transmog.lua
 src\Classes\Spell.lua
+src\Classes\Ensemble.lua
 src\Classes\CharacterUnlock.lua
 
 # Item Sub-Classes

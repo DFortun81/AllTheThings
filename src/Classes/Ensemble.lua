@@ -41,4 +41,30 @@ app.CreateEnsemble = app.ExtendClass("Item", "EnsembleItem", "itemID", {
 	end,
 })
 
+-- Depends on Spell
+
+app.CreateEnsembleSpell = app.ExtendClass("Spell", "EnsembleSpell", "spellID", {
+	IsClassIsolated = true,
+	-- spellID = function(t) return t.ensembleSpellID end,
+	description = function(t)
+		if t.saved then
+			return Colorize(L.ENSEMBLE_LEARNED, app.Colors.TooltipWarning)
+		else
+			return Colorize(L.RELOG_REQUIRED, app.Colors.TooltipWarning)
+		end
+	end,
+	saved = function(t)
+		local id = t.questID;
+		if app.IsQuestFlaggedCompleted(id) then return true end
+
+		if id then
+			for _,character in pairs(CharacterData) do
+				if character.Quests and character.Quests[id] then
+					return true
+				end
+			end
+		end
+	end,
+})
+
 -- TODO: Information Type for Ensemble bricked info?

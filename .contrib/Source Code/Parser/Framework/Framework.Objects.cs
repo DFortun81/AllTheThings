@@ -1778,6 +1778,7 @@ end");
                     case "_objects":
                     case "_achievements":
                     case "_factions":
+                    case "extraTransmogSetSpells":
                         {
                             MergeIntegerArrayData(item, field, value);
                             break;
