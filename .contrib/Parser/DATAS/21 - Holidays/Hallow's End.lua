@@ -779,182 +779,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 			["timeline"] = { ADDED_5_0_4 },
 			["races"] = HORDE_ONLY,
 		}),
-		ach(18360, {	-- Tricks and Treats of the Dragon Isles
+		ach(18360, {	-- Tricks and Treats of the Dragon Isles (automated)
 			["timeline"] = { ADDED_10_1_5 },
-			["g"] = {
-				crit(59979, {	-- Ohn'ahran Plains, Broadhoof Outpost
-					["_quests"] = { 75684 },	-- Candy Bucket — Ohn'ahran Plains, Broadhoof Outpost
-				}),
-				crit(59988, {	-- Ohn'ahran Plains, Emberwatch
-					["_quests"] = { 75693 },	-- Candy Bucket — Ohn'ahran Plains, Emberwatch
-				}),
-				crit(59987, {	-- Ohn'ahran Plains, Forkriver Crossing
-					["_quests"] = { 75692 },	-- Candy Bucket — Ohn'ahran Plains, Forkriver Crossing
-				}),
-				crit(59980, {	-- Ohn'ahran Plains, Maruukai
-					["_quests"] = { 75685 },	-- Candy Bucket — Ohn'ahran Plains, Maruukai
-				}),
-				crit(59982, {	-- Ohn'ahran Plains, Ohn'iri Springs
-					["_quests"] = { 75687 },	-- Candy Bucket — Ohn'ahran Plains, Ohn'iri Springs
-				}),
-				crit(59983, {	-- Ohn'ahran Plains, Pinewood Post
-					["_quests"] = { 75688 },	-- Candy Bucket — Ohn'ahran Plains, Pinewood Post
-				}),
-				crit(59984, {	-- Ohn'ahran Plains, Rusza'thar Reach
-					["_quests"] = { 75689 },	-- Candy Bucket — Ohn'ahran Plains, Rusza'thar Reach
-				}),
-				crit(59981, {	-- Ohn'ahran Plains, Shady Sanctuary
-					["_quests"] = { 75686 },	-- Candy Bucket — Ohn'ahran Plains, Shady Sanctuary
-				}),
-				crit(59986, {	-- Ohn'ahran Plains, Teerakai
-					["_quests"] = { 75691 },	-- Candy Bucket — Ohn'ahran Plains, Teerakai
-				}),
-				crit(59985, {	-- Ohn'ahran Plains, Timberstep Outpost
-					["_quests"] = { 75690 },	-- Candy Bucket — Ohn'ahran Plains, Timberstep Outpost
-				}),
-				crit(59992, {	-- Thaldraszus, Algeth'era Court
-					["_quests"] = { 75698 },	-- Candy Bucket — Thaldraszus, Algeth'era Court
-				}),
-				crit(59990, {	-- Thaldraszus, Garden Shrine
-					["_quests"] = { 75696 },	-- Candy Bucket — Thaldraszus, Garden Shrine
-				}),
-				crit(59991, {	-- Thaldraszus, Gelikyr Post
-					["_quests"] = { 75697 },	-- Candy Bucket — Thaldraszus, Gelikyr Post
-				}),
-				crit(59989, {	-- Thaldraszus, Temporal Conflux
-					["_quests"] = { 75695 },	-- Candy Bucket — Thaldraszus, Temporal Conflux
-				}),
-				crit(59994, {	-- Thaldraszus, Valdrakken (The Parting Glass)
-					["_quests"] = { 75700 },	-- Candy Bucket — Thaldraszus, Valdrakken (The Parting Glass)
-				}),
-				crit(59993, {	-- Thaldraszus, Valdrakken (The Roasted Ram)
-					["_quests"] = { 75699 },	-- Candy Bucket — Thaldraszus, Valdrakken (The Roasted Ram)
-				}),
-				crit(59995, {	-- Thaldraszus, Valdrakken (Weyrnrest)
-					["_quests"] = { 75701 },	-- Candy Bucket — Thaldraszus, Valdrakken (Weyrnrest)
-				}),
-				crit(59963, {	-- The Azure Span, Camp Antonidas
-					["_quests"] = { 75667 },	-- Candy Bucket — The Azure Span, Camp Antonidas
-				}),
-				crit(59964, {	-- The Azure Span, Camp Nowhere
-					["_quests"] = { 75668 },	-- Candy Bucket — The Azure Span, Camp Nowhere
-				}),
-				crit(59965, {	-- The Azure Span, Iskaara
-					["_quests"] = { 75669 },	-- Candy Bucket — The Azure Span, Iskaara
-				}),
-				crit(59966, {	-- The Azure Span, Theron's Watch
-					["_quests"] = { 75670 },	-- Candy Bucket — The Azure Span, Theron's Watch
-				}),
-				crit(59967, {	-- The Azure Span, Three-Falls Lookout
-					["_quests"] = { 75671 },	-- Candy Bucket — The Azure Span, Three-Falls Lookout
-				}),
-				crit(59996, {	-- The Forbidden Reach, Morqut Village
-					["_quests"] = { 75702 },	-- Candy Bucket — The Forbidden Reach, Morqut Village
-				}),
-				crit(59968, {	-- The Waking Shores, Apex Observatory
-					["_quests"] = { 75672 },	-- Candy Bucket — The Waking Shores, Apex Observatory
-				}),
-				crit(59969, {	-- The Waking Shores, Dragonscale Basecamp
-					["_quests"] = { 75673 },	-- Candy Bucket — The Waking Shores, Dragonscale Basecamp
-				}),
-				crit(59971, {	-- The Waking Shores, Life Vault Ruins
-					["_quests"] = { 75675 },	-- Candy Bucket — The Waking Shores, Life Vault Ruins
-				}),
-				crit(61332, {	-- The Waking Shores, Obsidian Bulwark
-					["_quests"] = { 77698 },	-- Candy Bucket — The Waking Shores, Obsidian Bulwark
-				}),
-				crit(59972, {	-- The Waking Shores, Obsidian Throne
-					["_quests"] = { 75676 },	-- Candy Bucket — The Waking Shores, Obsidian Throne
-				}),
-				crit(59970, {	-- The Waking Shores, Ruby Lifeshrine
-					["_quests"] = { 75674 },	-- Candy Bucket —  The Waking Shores, Ruby Lifeshrine
-				}),
-				crit(59973, {	-- The Waking Shores, Skytop Observatory
-					["_quests"] = { 75677 },	-- Candy Bucket — The Waking Shores, Skytop Observatory
-				}),
-				crit(59974, {	-- The Waking Shores, Uktulut Backwater
-					["_quests"] = { 75678 },	-- Candy Bucket —  The Waking Shores, Uktulut Backwater
-				}),
-				crit(59975, {	-- The Waking Shores, Uktulut Pier
-					["_quests"] = { 75679 },	-- Candy Bucket —  The Waking Shores, Uktulut Pier
-				}),
-				crit(59976, {	-- The Waking Shores, Wild Coast (A)
-					["_quests"] = { 75681 },	-- Candy Bucket — The Waking Shores, Wild Coast (A)
-				}),
-				crit(59977, {	-- The Waking Shores, Wild Coast (H)
-					["_quests"] = { 75682 },	-- Candy Bucket — The Waking Shores, Wild Coast (H)
-				}),
-				crit(59978, {	-- The Waking Shores, Wingrest Embassy
-					["_quests"] = { 75683 },	-- Candy Bucket —  The Waking Shores, Wingrest Embassy
-				}),
-				crit(59998, {	-- Zaralek Cavern, Loamm
-					["_quests"] = { 75704 },	-- Candy Bucket — Zaralek Cavern, Loamm
-				}),
-				crit(59997, {	-- Zaralek Cavern, Obsidian Rest
-					["_quests"] = { 75703 },	-- Candy Bucket — Zaralek Cavern, Obsidian Rest
-				}),
-			}
 		}),
-		ach(40862, {	-- Tricks and Treats of Khaz Algar
+		ach(40862, {	-- Tricks and Treats of Khaz Algar (automated)
 			["timeline"] = { ADDED_11_0_2 },
-			["g"] = {
-				-- TODO: Uncomment _quests when quests are put in place (they already exist so someone can already source them).
-				-- INFO: Could technically also work via automation, these criteria don't need to be written out, but they do require the quests to be sourced for that + the Wago file to be updated.
-				crit(69826, {	-- Azj-Kahet, Faerin's Advance
-					--["_quests"] = { 84579 },	-- Candy Bucket — Azj-Kahet, Faerin's Advance
-				}),
-				crit(69827, {	-- Azj-Kahet, Mmarl
-					--["_quests"] = { 84580 },	-- Candy Bucket — Azj-Kahet, Mmarl
-				}),
-				crit(69829, {	-- Azj-Kahet, Weaver's Lair
-					--["_quests"] = { 84582 },	-- Candy Bucket — Azj-Kahet, Weaver's Lair
-				}),
-				crit(69828, {	-- Azj-Kahet, Wildcamp Ul'ar
-					--["_quests"] = { 84581 },	-- Candy Bucket — Azj-Kahet, Wildcamp Ul'ar
-				}),
-				crit(69823, {	-- City of Threads, High Hollows
-					--["_quests"] = { 84576 },	-- Candy Bucket — City of Threads, High Hollows
-				}),
-				crit(69825, {	-- City of Threads, Umbral Bazzar
-					--["_quests"] = { 84578 },	-- Candy Bucket — City of Threads, Umbral Bazzar
-				}),
-				crit(69824, {	-- City of Threads - Lower, The Burrows
-					--["_quests"] = { 84577 },	-- Candy Bucket — City of Threads - Lower, The Burrows
-				}),
-				crit(69819, {	-- Hallowfall, Dunelle's Kindness
-					--["_quests"] = { 84572 },	-- Candy Bucket — Hallowfall, Dunelle's Kindness
-				}),
-				crit(69821, {	-- Hallowfall, Light's Redoubt
-					--["_quests"] = { 84574 },	-- Candy Bucket — Hallowfall, Light's Redoubt
-				}),
-				crit(69820, {	-- Hallowfall, Lorel's Crossing
-					--["_quests"] = { 84573 },	-- Candy Bucket — Hallowfall, Lorel's Crossing
-				}),
-				crit(69822, {	-- Hallowfall, Mereldar
-					--["_quests"] = { 84575 },	-- Candy Bucket — Hallowfall, Mereldar
-				}),
-				crit(69812, {	-- Isle of Dorn, Dornogal
-					--["_quests"] = { 84564 },	-- Candy Bucket — Isle of Dorn, Dornogal
-				}),
-				crit(69813, {	-- Isle of Dorn, Freywold Village
-					--["_quests"] = { 84566 },	-- Candy Bucket — Isle of Dorn, Freywold Village
-				}),
-				crit(69814, {	-- Isle of Dorn, Rambleshire
-					--["_quests"] = { 84567 },	-- Candy Bucket — Isle of Dorn, Rambleshire
-				}),
-				crit(69815, {	-- The Ringing Deeps, Camp Murroch
-					--["_quests"] = { 84568 },	-- Candy Bucket — The Ringing Deeps, Camp Murroch
-				}),
-				crit(69816, {	-- The Ringing Deeps, Gundargaz
-					--["_quests"] = { 84569 },	-- Candy Bucket — The Ringing Deeps, Gundargaz
-				}),
-				crit(69817, {	-- The Ringing Deeps, Opportunity Point
-					--["_quests"] = { 84570 },	-- Candy Bucket — The Ringing Deeps, Opportunity Point
-				}),
-				crit(69818, {	-- The Ringing Deeps, Shadowvein Point
-					--["_quests"] = { 84571 },	-- Candy Bucket — The Ringing Deeps, Shadowvein Point
-				}),
-			},
 		}),
 	}),
 	-- #endif
@@ -3165,6 +2994,98 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 					["provider"] = { "o", 401756 },	-- Candy Bucket, Zaralek Cavern
 					["coord"] = { 52.1, 26.5, ZARALEK_CAVERN },
 					["timeline"] = { ADDED_10_1_5 },
+				}),
+
+				-- The War within
+				q(84579, {	-- Candy Bucket — Azj-Kahet, Faerin's Advance
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
+				}),
+				q(84580, {	-- Candy Bucket — Azj-Kahet, Mmarl
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
+				}),
+				q(84582, {	-- Candy Bucket — Azj-Kahet, Weaver's Lair
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
+				}),
+				q(84581, {	-- Candy Bucket — Azj-Kahet, Wildcamp Ul'ar
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
+				}),
+				q(84576, {	-- Candy Bucket — City of Threads, High Hollows
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
+				}),
+				q(84578, {	-- Candy Bucket — City of Threads, Umbral Bazzar
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
+				}),
+				q(84577, {	-- Candy Bucket — City of Threads - Lower, The Burrows
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
+				}),
+				q(84572, {	-- Candy Bucket — Hallowfall, Dunelle's Kindness
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
+				}),
+				q(84574, {	-- Candy Bucket — Hallowfall, Light's Redoubt
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
+				}),
+				q(84573, {	-- Candy Bucket — Hallowfall, Lorel's Crossing
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
+				}),
+				q(84575, {	-- Candy Bucket — Hallowfall, Mereldar
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
+				}),
+				q(84564, {	-- Candy Bucket — Isle of Dorn, Dornogal
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
+				}),
+				q(84566, {	-- Candy Bucket — Isle of Dorn, Freywold Village
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
+				}),
+				q(84567, {	-- Candy Bucket — Isle of Dorn, Rambleshire
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
+				}),
+				q(84568, {	-- Candy Bucket — The Ringing Deeps, Camp Murroch
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
+				}),
+				q(84569, {	-- Candy Bucket — The Ringing Deeps, Gundargaz
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
+				}),
+				q(84570, {	-- Candy Bucket — The Ringing Deeps, Opportunity Point
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
+				}),
+				q(84571, {	-- Candy Bucket — The Ringing Deeps, Shadowvein Point
+					--["provider"] = { "o", ??? },	-- ???
+					--["coord"] = { x, y, map },
+					["timeline"] = { ADDED_11_0_2 },
 				}),
 			}),
 		}),
