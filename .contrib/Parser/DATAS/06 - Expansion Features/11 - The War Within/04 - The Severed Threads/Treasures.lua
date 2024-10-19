@@ -129,8 +129,8 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 				o(455436, {	-- Aspirant's Tribute
 					["provider"] = { "o", 437389 },	-- Forgotten Memorial
-					["coord"] = { 65.2, 49.0, AZJ_KAHET },
-					["questID"] = 82876,
+					["coord"] = { 65.3, 49.1, AZJ_KAHET },
+					["questID"] = 81572,
 				}),
 				o(455437, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451595 },	-- Forgotten Memorial
@@ -150,7 +150,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				o(455441, {	-- Aspirant's Tribute (was missing, WoWhead Data)
 					["provider"] = { "o", 451598 },	-- Forgotten Memorial
 					["coord"] = { 78.1, 36.3, AZJ_KAHET },
-					-- ["questID"] = 82877,
+					-- ["questID"] = 82876,
 				}),
 				o(455442, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451599 },	-- Forgotten Memorial
@@ -170,7 +170,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				o(455445, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451602 },	-- Forgotten Memorial
 					["coord"] = { 41.0, 29.0, AZJ_KAHET },
-					["questID"] = 82880,	-- 81572 beta?
+					["questID"] = 82880,
 				}),
 				o(455446, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451603 },	-- Forgotten Memorial

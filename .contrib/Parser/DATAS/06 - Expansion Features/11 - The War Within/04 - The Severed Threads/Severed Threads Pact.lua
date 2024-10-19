@@ -418,7 +418,11 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					["provider"] = { "n", 224195 },	-- Ru'murh
 					["coord"] = { 73.3, 50.9, NERUBAR },
 					["g"] = {
-						i(219347),	-- Kaheti Etching (QI!)
+						n(221116),	-- Mug of Screamer Venom
+						o(439324, {	-- Discarded Artifacts
+							["coord"] = { 36.6, 28.1, NERUBAR },
+							["groups"] = { i(219347), },	-- Kaheti Etching (QI!)
+						}),
 					},
 				}),
 				q(81470, {	-- Dropping Eaves: Thieving Weave
@@ -757,6 +761,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 					-- Eirzay   (n: 224163 @ 27.9, 56.7), starts questID 81488 (Breaking the Phalanx: Schismatic Sages), (04-10-24, Exo)
 					-- Eirzay   (n: 224167 @ 15.6, 45.7), starts questID 81489 (Bounty: Zorikal the Patron), (09-10-24, Exo)
 					-- Ghos'opp (n: 224184 @ 39.5, 51.4), starts questID 81505 (Sabotage: Venomancers), (14-10-24, Exo)
+					-- Ru'murh  (n: 224195 @ 73.3, 50.9), starts questID 81471 (Dropping Eaves: Saving the Past), (19-10-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
 			q(82644, {	-- Ru'murh  (n: 224197 @ 55.7, 47.8), starts questID 81472 (Information Control: Ansurek's Truth), (23-09-24, Exo)
@@ -778,7 +783,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 					-- Ghos'opp (n: 224181 @ 61.1, 74.4), starts questID 81497 (Wild Reagents: Salien Gutters), (16-10-24, Exo)
 				["name"] = "You heard a rumor. Go and investigate.",
 			}),
-			--q(82643),	-- 'Investiage the scene' from Ru'murh (n: 224195 @ 73.3, 50.9, 2213), start questID 81471 (Dropping Eaves: Saving the Past)
 			-- Missing 5 more quest data/givers
 			-- Missing 11 total quest data/givers
 			q(79698),	-- Triggered after completing questID 79627 (Wine and Die)
