@@ -3,7 +3,7 @@
 ---------------------------------------------------
 root(ROOTS.Zones, m(KALIMDOR, {
 	m(ULDUM, {
-		["lore"] = "Uldum, a new zone added with Cataclysm, was known as the Land of the Titans. An ancient desert formerly inaccessible to the Alliance and the Horde, it is rich with Titan lore and an advanced civilization, the Tol'vir. This region draws aesthetic influences heavily from Ancient Egypt, with pyramids, obelisks, similar deities, and irrigation systems.",
+		["lore"] = "Uldum, a new zone added with Cataclysm, was known as the Land of the Titans. An ancient desert formerly inaccessible to the Alliance and the Horde, it is rich with Titan lore and an advanced civilization, the Tol'vir. This region draws aesthetic influences heavily from Ancient Egypt, with pyramids, obelisks, similar deities, and irrigation systems.\n\nThis zone requires the use of flying mounts.",
 		["icon"] = 409550,
 		["timeline"] = { ADDED_4_0_3 },
 		--["maps"] = {
@@ -939,6 +939,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27632,	-- Tanotep's Son
 				}),
 				q(27196, {	-- On to Something
+					["description"] = "Warning: Jumping after Harrison Jones DOES NOT give you any slow fall effects. Mount up and fly down after him.",
 					["qg"] = 45180,	-- Harrison Jones
 					["coord"] = { 64.5, 28.5, ULDUM },
 					["sourceQuests"] = {
@@ -1454,6 +1455,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 27549,	-- By the Light of the Stars
 				}),
 				q(27922, {	-- Traitors!
+					["description"] = "You are meant to get up on the roof by using your own flyng mount.",
 					["qg"] = 46872,	-- Prince Nadun
 					["coord"] = { 59.5, 72.0, ULDUM },
 					["sourceQuest"] = 27003,	-- Easy Money (tanaris)
