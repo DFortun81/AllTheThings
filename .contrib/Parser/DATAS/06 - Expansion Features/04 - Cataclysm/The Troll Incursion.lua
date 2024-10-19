@@ -258,12 +258,24 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					["sourceQuest"] = 29114,	-- Track the Tracker
 					["coord"] = { 50.3, 21.7, NORTHERN_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Bring Grent Direhammer to the body of Mauti
+							["provider"] = { "n", 52349 },	-- Mauti?
+							["coord"] = { 64.5, 21.1, NORTHERN_STRANGLETHORN },
+						}),
+					},
 				}),
 				q(29227, {	-- The Hunter's Revenge (H)
 					["qg"] = 52294,	-- Grent Direhammer
 					["sourceQuest"] = 29226,	-- Track the Tracker
 					["coord"] = { 50.3, 21.7, NORTHERN_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Bring Grent Direhammer to the body of Mauti
+							["provider"] = { "n", 52349 },	-- Mauti?
+							["coord"] = { 64.5, 21.1, NORTHERN_STRANGLETHORN },
+						}),
+					},
 				}),
 				heroscall(q(29156, {	-- The Troll Incursion
 					["timeline"] = { ADDED_4_1_0, REMOVED_7_0_3 },
