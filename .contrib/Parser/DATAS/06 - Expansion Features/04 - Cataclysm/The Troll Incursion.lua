@@ -164,6 +164,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 					["coord"] = { 77.9, 68.1, NORTHERN_STRANGLETHORN },
 					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Bwemba has inspected the Cat
+							["provider"] = { "n", 52372 },	-- Mauti
+							["coord"] = { 77.16, 69.04, NORTHERN_STRANGLETHORN },
+						}),
+					},
 				}),
 				q(29230, {	-- Mauti (H)
 					["qg"] = 52234,	-- Bwemba
@@ -173,6 +179,12 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.CATA, applyclassicphase(CATA_P
 					},
 					["coord"] = { 77.7, 68.3, NORTHERN_STRANGLETHORN },
 					["races"] = HORDE_ONLY,
+					["groups"] = {
+						objective(1, {	-- Bwemba has inspected the Cat
+							["provider"] = { "n", 52372 },	-- Mauti
+							["coord"] = { 77.16, 69.04, NORTHERN_STRANGLETHORN },
+						}),
+					},
 				}),
 				q(29105, {	-- Nesingwary Will Know (A)
 					["qg"] = 52281,	-- Livingston Marshal
