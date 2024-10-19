@@ -13,7 +13,7 @@ EVENTS = {
 	NOBLEGARDEN = 181,
 	PILGRIMS_BOUNTY = 404,
 	PIRATES_DAY = 398,
-	
+
 	-- Seasonal Fish
 	SEASONAL_FISH_SUMMER_BASS = 133889,	-- Generic Header [Crieve made this up, it's just supposed to be Unique!]
 	SEASONAL_FISH_WINTER_SQUID = 133899,	-- Generic Header [Crieve made this up, it's just supposed to be Unique!]
@@ -67,6 +67,7 @@ EVENTS = {
 
 	-- Timewalking
 	TIMEWALKING = 1271,	-- Generic, "any" timewalking event
+	TIMEWALKING_CLASSIC_DUNGEON_EVENT = 1508,
 	TIMEWALKING_OUTLAND_DUNGEON_EVENT = 559,
 	TIMEWALKING_NORTHREND_DUNGEON_EVENT = 562,
 	TIMEWALKING_CATACLYSM_DUNGEON_EVENT = 587,

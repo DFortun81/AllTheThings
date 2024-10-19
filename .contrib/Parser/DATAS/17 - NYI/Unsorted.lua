@@ -183,31 +183,6 @@ root(ROOTS.Unsorted, {
 				i(221485),	-- Defias Gunpowder
 			}),
 			n(DUNGEONS_AND_RAIDS, {	-- Timewalking Dungeon Gear
-				i(224731),	-- Ogre-Sized Belt
-				i(224732),	-- Foreman's Handwraps
-				i(224733),	-- Watchman's Boots
-				i(224734),	-- Defias Spiked Pauldrons
-				i(224735),	-- Blackened Bone Necklace
-				i(224736),	-- Shredder Teeth
-				i(224737),	-- Goblin Treekickers
-				i(224738),	-- Logger's Wristguards
-				i(224739),	-- Lumbermaster's Mantle
-				i(224740),	-- Forgemasters's Faceshield
-				i(224741),	-- Defias Scimitar
-				i(224742),	-- Smite's Pistol
-				i(224744),	-- Defias Cuirass
-				i(224745),	-- Blackguard Slippers
-				i(224746),	-- Thief's Gloves
-				i(224747),	-- Buccaneer's Bludgeon
-				i(224748),	-- Captain's Tricorne
-				i(224749),	-- Goblin Griptreads
-				i(224753),	-- Pirate Captain's Girdle
-				i(224754),	-- Guildmaster's Leggings
-				i(224755),	-- Defias Knifeguards
-				i(224756),	-- Cookie's Special Flavors
-				i(224757),	-- Master Chef's Gloves
-				i(224758),	-- Stolen Stormwind Helmet
-				i(224759),	-- Pirate's Bracers
 				i(225185),	-- [DNT UNUSED] Reforged 1 Ring
 			}),
 			n(SPECIAL, {	-- Que?!?! Codex maybe //Braghe?
@@ -920,8 +895,7 @@ root(ROOTS.Unsorted, {
 			i(226168),	-- Timely Tourist's Spellblade
 			i(228911),	-- Xal'atath's Rusty Coin
 			i(232877),	-- Timely Goodie Bag
-			i(232903),	-- Jang'thraze the Protector
-			i(232904),	-- Sul'thraze the Lasher
+
 			i(232905),	-- Malown's Slam
 		})),
 		expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {

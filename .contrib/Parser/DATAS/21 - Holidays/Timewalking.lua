@@ -159,7 +159,481 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 	},
 }))));
 
-
+-- Classic Timewalking
+root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC_DUNGEON_EVENT, {
+	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+		inst_tw(63, {	-- Deadmines
+			e(2613, {	-- Rhahk'Zor
+				["g"] = {
+					i(224735),	-- Blackened Bone Necklace
+					i(224731),	-- Ogre-Sized Belt
+					i(224732),	-- Foreman's Handwraps
+					i(224733),	-- Watchman's Boots
+					i(224734),	-- Defias Spiked Pauldrons
+					i(872),	-- Rockslicer
+				},
+			}),
+			e(2626, {	-- Sneed
+				--["crs"] = {}
+				["g"] = {
+					i(224736),	-- Shredder Teeth
+					i(224737),	-- Goblin Treekickers
+					i(224738),	-- Logger's Wristguards
+					i(224739),	-- Lumbermaster's Mantle
+					i(5194),	-- Taskmaster Axe
+					i(1937),	-- Buzz Saw
+					i(2169),	-- Buzzer Blade
+					i(5195),	-- Gold-flecked Gloves
+				},
+			}),
+			e(2628, {	-- Gilned
+				--["crs"] = {}
+				["g"] = {
+					i(224740),	-- Forgemasters's Faceshield
+					i(224741),	-- Defias Scimitar
+					i(5199),	-- Smelting Pants
+					i(1156),	-- Lavishly Jeweled Ring
+				},
+			}),
+			e(2629, {	-- Mr. Smite
+				--["crs"] = {}
+				["g"] = {
+					i(224742),	-- Smite's Pistol
+					i(224744),	-- Defias Cuirass
+					i(224745),	-- Blackguard Slippers
+					i(224746),	-- Thief's Gloves
+					i(224747),	-- Buccaneer's Bludgeon
+					i(7230),	-- Smite's Mighty Hammer
+					i(5196),	-- Smite's Reaver
+					i(5192),	-- Thief's Blade
+				},
+			}),
+			e(2630, {	-- Captain Greenskin
+				--["crs"] = {}
+				["g"] = {
+					i(224748),	-- Captain's Tricorne
+					i(224749),	-- Goblin Griptreads
+					i(224753),	-- Pirate Captain's Girdle
+					i(5201),	-- Emberstone Staff
+					i(5200),	-- Impaling Harpoon
+					i(10403),	-- Blackened Defias Belt
+				},
+			}),
+			e(2631, {	-- Edwin VanCleef
+				--["crs"] = {}
+				["g"] = {
+					i(224754),	-- Guildmaster's Leggings
+					i(224755),	-- Defias Knifeguards
+					i(5191),	-- Cruel Barb
+					i(5193),	-- Cape of the Brotherhood
+					i(5202),	-- Corsair's Overshirt
+					i(10399),	-- Blackened Defias Armor
+				},
+			}),
+			e(2632, {	-- Cookie
+				--["crs"] = {}
+				["g"] = {
+					i(5198),	-- Cookie's Stirring Rod
+					i(5197),	-- Cookie's Tenderizer
+					i(224756),	-- Cookie's Special Flavors
+					i(224757),	-- Master Chef's Gloves
+					i(224758),	-- Stolen Stormwind Helmet
+					i(224759),	-- Pirate's Bracers
+				},
+			}),
+		}),
+		inst_tw(230, {	-- Dire Maul - Capital Gardens
+			e(406, {	-- Tendris Warpwood
+				["crs"] = { 11489 },	-- Tendris Warpwood
+				["g"] = {
+					i(18353),	-- Stoneflower Staff
+					i(18352),	-- Petrified Bark Shield
+					i(18393),	-- Warpwood Bindings
+					i(18390),	-- Tanglemoss Leggings
+				},
+			}),
+			e(407, {	-- Illyanna Ravenoak
+				["crs"] = { 11488 },	-- Illyaana Ravenoak
+				["g"] = {
+					i(18347),	-- Well Balanced Axe
+					i(18383),	-- Force Imbued Gauntlets
+					i(18349),	-- Gauntlets of Accuracy
+					i(18377),	-- Quickdraw Gloves
+					i(18386),	-- Padre's Trousers
+				},
+			}),
+			e(408, {	-- Magister Kalendris
+				["crs"] = { 11487 },	-- Magister Kalendris
+				["g"] = {
+					i(18397),	-- Elder Magus Pendant
+					i(18374),	-- Flamescarred Shoulders
+					i(18350),	-- Amplifying Cloak
+					i(18351),	-- Magically Sealed Bracers
+					i(18371),	-- Mindtap Talisman
+				},
+			}),
+			e(409, {	-- Immol'thar
+				["crs"] = { 11496 },	-- Immol'thar
+				["g"] = {
+					i(18372),	-- Blade of the New Moon
+					i(18381),	-- Evil Eye Pendant
+					i(18384),	-- Bile-Etched Spaulders
+					i(18389),	-- Cloak of the Cosmos
+					i(18385),	-- Robe of Everlasting Night
+					i(18394),	-- Demon Howl Wristguards
+					i(18391),	-- Eyestalk Cord
+					i(18379),	-- Odious Greaves
+					i(18370),	-- Vigilance Charm
+				},
+			}),
+			e(410, {	-- Prince Tortheldrin
+				["crs"] = { 11486 },	-- Prince Tortheldrin
+				["g"] = {
+					i(18392),	-- Distracting Dagger
+					i(18396),	-- Mind Carver
+					i(18376),	-- Timeworn Mace
+					i(18388),	-- Stoneshatter
+					i(18382),	-- Fluctuating Cloak
+					i(18373),	-- Chestplate of Tranquility
+					i(18375),	-- Bracers of the Eclipse
+					i(18380),	-- Eldritch Reinforced Legplates
+					i(18378),	-- Silvermoon Leggings
+					i(18395),	-- Emerald Flame Ring
+				},
+			}),
+		}),
+		inst_tw(1277, {	-- Dire Maul - Gordok Commons
+			e(411, {	-- Guard Mol'dar
+				["crs"] = { 14326 },	-- Guard Mol'dar
+				["g"] = {
+					i(18493),	-- Bulky Iron Spaulders
+					i(18494),	-- Denwatcher's Shoulders
+					i(18498),	-- Hedgecutter
+					i(18496),	-- Heliotrope Cloak
+					i(18451),	-- Hyena Hide Belt
+					i(18462),	-- Jagged Bone Fist
+					i(18463),	-- Ogre Pocket Knife
+					i(18450),	-- Robe of Combustion
+					i(18497),	-- Sublime Wristguards
+					i(18460),	-- Unsophisticated Hand Cannon
+				},
+			}),
+			e(412, {	-- Stomper Kreeg
+				["crs"] = { 14322 },	-- Stomper Kreeg
+				["g"] = {
+					i(18464),	-- Gordok Nose Ring
+					i(18425),	-- Kreeg's Mug
+				},
+			}),
+			e(416, {	-- Cho'Rush the Observer
+				["crs"] = { 14324 },	-- Cho'Rush the Observer
+				["g"] = {
+					i(18484),	-- Cho'Rush's Blade
+					i(18459),	-- Gallant's Wristguards
+					i(18527),	-- Harmonious Gauntlets
+					i(18490),	-- Insightful Hood
+					i(18483),	-- Mana Channeling Wand
+					i(18485),	-- Observer's Shield
+				},
+			}),
+			e(417, {	-- King Gordok
+				["crs"] = { 11501 },	-- King Gordok
+				["g"] = {
+					i(18522),	-- Band of the Ogre King
+					i(18520),	-- Barbarous Blade
+					i(18525),	-- Bracers of Prosperity
+					i(18523),	-- Brightly Glowing Stone
+					i(18526),	-- Crown of the Ogre King
+					i(18521),	-- Grimy Metal Boots
+					i(18524),	-- Leggings of Destruction
+				},
+			}),
+		}),
+		inst_tw(1276, {	-- Dire Maul - Warpwood Quarter
+			e(404, {	-- Lethtendris
+				["crs"] = { 14327 },	-- Lethtendris
+				["g"] = {
+					i(18302),	-- Band of Vigor
+					i(18325),	-- Felhide Cap
+					i(18301),	-- Lethtendris' Wand
+					i(18311),	-- Quel'dorei Channeling Rod
+				},
+			}),
+			e(403, {	-- Hydrospawn
+				["crs"] = { 13280 },	-- Hydrospawn
+				["g"] = {
+					i(18305),	-- Breakwater Legguards
+					i(18307),	-- Riptide Shoes
+					i(18317),	-- Tempest Talisman
+					i(18322),	-- Waterspout Boots
+					i(18324),	-- Waveslicer
+				},
+			}),
+			e(402, {	-- Zevrim Thornhoof
+				["crs"] = { 11490 },	-- Zevrim Thornhoof
+				["g"] = {
+					i(18308),	-- Clever Hat
+					i(18319),	-- Fervent Helm
+					i(18306),	-- Gloves of Shadowy Mist
+					i(18313),	-- Helm of Awareness
+					i(18315),	-- Ring of Demonic Potency
+					i(18323),	-- Satyr's Bow
+				},
+			}),
+			e(405, {	-- Alzzin the Wildshaper
+				["crs"] = { 11492 },	-- Alzzin the Wildshaper
+				["g"] = {
+					i(18321),	-- Energetic Rod
+					i(18312),	-- Energized Chestplate
+					i(18310),	-- Fiendish Machete
+					i(18309),	-- Gloves of Restoration
+					i(18318),	-- Merciful Greaves
+					i(18326),	-- Razor Gauntlets
+					i(18314),	-- Ring of Demonic Guile
+					i(18328),	-- Shadewood Cloak
+					i(18327),	-- Whipvine Cord
+				},
+			}),
+		}),
+		inst_tw(236, {	-- Stratholme - Main Gate
+			e(443, {	-- Hearthsinger Forresten
+				["crs"] = { 10558 },	-- Hearthsinger Forresten
+				["g"] = {
+					i(13384),	-- Rainbow Girdle
+					i(13378),	-- Songbird Blouse
+					i(12103),	-- Star of Mystaria
+					i(13383),	-- Woollies of the Prancing Minstrel
+				},
+			}),
+			e(450, {	-- The Unforgiven
+				["crs"] = { 10516 },	-- The Unforgiven
+				["g"] = {
+					i(151404),	-- Gauntlets of Purged Sanity
+					i(13404),	-- Mask of the Unforgiven
+					i(22406),	-- Redemption
+					i(13408),	-- Soul Breaker
+					i(13409),	-- Tearfall Bracers
+					i(13405),	-- Wailing Nightbane Pauldrons
+				},
+			}),
+			e(2633, {	-- Postmaster Malown
+				["crs"] = { 11143 },	-- Postmaster Malown
+				["g"] = {
+					i(13393),	-- Malown's Slam
+					i(13390),	-- The Postmaster's Band
+					i(13392),	-- The Postmaster's Seal
+					i(13391),	-- The Postmaster's Treads
+					i(13389),	-- The Postmaster's Trousers
+					i(13388),	-- The Postmaster's Tunic
+				},
+			}),
+			e(445, {	-- Timmy the Cruel
+				["crs"] = { 10808 },	-- Timmy the Cruel
+				["g"] = {
+					i(151403),	-- Fetid Stranglers
+					i(13403),	-- Grimgore Noose
+					i(13401),	-- The Cruel Hand of Timmy
+					i(13402),	-- Timmy's Galoshes
+					i(13400),	-- Vambraces of the Sadist
+				},
+			}),
+			e(749, {	-- Commander Malor
+				["crs"] = { 11032 },	-- Commander Malor
+				["g"] = {
+					i(22403),	-- Nacreous Shell Necklace
+				},
+			}),
+			e(446, {	-- Willey Hopebreaker
+				["crs"] = { 10997 },	-- Willey Hopebreaker
+				["g"] = {
+					i(18721),	-- Barrage Girdle
+					i(13382),	-- Cannonball Runner
+					i(22407),	-- Helm of the New Moon
+					i(22405),	-- Mantle of the Scarlet Crusade
+					i(13381),	-- Master Cannoneer Boots
+					i(22404),	-- Willey's Back Scratcher
+					i(13380),	-- Willey's Portable Howitzer
+				},
+			}),
+			e(448, {	-- Instructor Galford
+				["crs"] = { 10811 },	-- Instructor Galford
+				["g"] = {
+					i(13386),	-- Archivist Cape
+					i(18716),	-- Ash Covered Boots
+					i(13387),	-- Foresight Girdle
+					i(13385),	-- Tome of Knowledge
+				},
+			}),
+			e(449, {	-- Balnazzar
+				["crs"] = {
+					10813,	-- Balnazzar
+					10812,	-- Grand Crusader Dathrohan
+				},
+				["g"] = {
+					i(13353),	-- Book of the Dead
+					i(13359),	-- Crown of Tyranny
+					i(13348),	-- Demonshear
+					i(13369),	-- Fire Striders
+					i(13360),	-- Gift of the Elven Magi
+					i(18718),	-- Grand Crusader's Helm
+					i(18717),	-- Hammer of the Grand Crusader
+					i(18720),	-- Shroud of the Nathrezim
+					i(13358),	-- Wyrmtongue Shoulders
+				},
+			}),
+		}),
+		inst_tw(1292, {	-- Stratholme - Service Entrance
+			e(451, {	-- Baroness Anastari
+				["crs"] = { 10436 },	-- Baroness Anastari
+				["g"] = {
+					i(18728),	-- Anastari Heirloom
+					i(13534),	-- Banshee Finger
+					i(13539),	-- Banshee's Touch
+					i(13537),	-- Chillhide Bracers
+					i(13535),	-- Coldtouch Phantom Wraps
+					i(18729),	-- Screeching Bow
+					i(18730),	-- Shadowy Laced Handwraps
+					i(13538),	-- Windshrieker Pauldrons
+				},
+			}),
+			e(452, {	-- Nerub'enkan
+				["crs"] = { 10437 },	-- Nerub'enkan
+				["g"] = {
+					i(13533),	-- Acid-Etched Pauldrons
+					i(18738),	-- Carapace Spine Crossbow
+					i(18739),	-- Chitinous Plate Legguards
+					i(13531),	-- Crypt Stalker Leggings
+					i(13532),	-- Darkspinner Claws
+					i(13530),	-- Fangdrip Runners
+					i(13529),	-- Husk of Nerub'enkan
+					i(18740),	-- Thuzadin Sash
+				},
+			}),
+			e(453, {	-- Maleki the Pallid
+				["crs"] = { 10438 },	-- Maleki the Pallid
+				["g"] = {
+					i(18737),	-- Bone Slicing Hatchet
+					i(13525),	-- Darkbind Fingers
+					i(13526),	-- Flamescarred Girdle
+					i(13527),	-- Lavawalker Greaves
+					i(18735),	-- Maleki's Footwraps
+					i(18734),	-- Pale Moon Cloak
+					i(13524),	-- Skull of Burning Shadows
+					i(13528),	-- Twilight Void Bracers
+				},
+			}),
+			e(454, {	-- Magistrate Barthilas
+				["crs"] = { 10435 },	-- Magistrate Barthilas
+				["g"] = {
+					i(18727),	-- Crimson Felt Hat
+					i(18722),	-- Death Grips
+					i(18726),	-- Magistrate's Cuffs
+					i(18725),	-- Peacemaker
+					i(13376),	-- Royal Tribunal Cloak
+				},
+			}),
+			e(455, {	-- Ramstein the Gorger
+				["crs"] = { 10439 },	-- Ramstein the Gorger
+				["g"] = {
+					i(18723),	-- Animated Chain Necklace
+					i(13373),	-- Band of Flesh
+					i(13375),	-- Crest of Retribution
+					i(13515),	-- Ramstein's Lightning Bolts
+					i(13372),	-- Slavedriver's Cane
+					i(13374),	-- Soulstealer Mantle
+				},
+			}),
+			e(456, {	-- Lord Aurius Rivendare
+				["crs"] = { 45412 },	-- Lord Aurius Rivendare
+				["g"] = {
+					i(13335),	-- Rivendare's Deathcharger (MOUNT!)
+					i(13368),	-- Bonescraper
+					i(13340),	-- Cape of the Black Baron
+					i(13344),	-- Dracorian Gauntlets
+					i(22410),	-- Gauntlets of Deftness
+					i(22411),	-- Helm of the Executioner
+					i(22408),	-- Ritssyn's Wand of Bad Mojo
+					i(13346),	-- Robes of the Exalted
+					i(13505),	-- Runeblade of Baron Rivendare
+					i(13349),	-- Scepter of the Unholy
+					i(13345),	-- Seal of Rivendare
+					i(13361),	-- Skullforge Reaver
+					i(22412),	-- Thuzadin Mantle
+					i(22409),	-- Tunic of the Crescent Moon
+				},
+			}),
+		}),
+		inst_tw(241, {	-- Zul'Farrak
+			e(485, {	-- Theka the Martyr
+				["crs"] = { 7272 },	-- Theka the Martyr
+				["g"] = {
+					i(151456),	-- Theka's Seal of Vigilance
+				},
+			}),
+			e(482, {	-- Hydromancer Velratha
+				["crs"] = { 7795 },	-- Hydromancer Velratha
+				["g"] = {
+					i(9243),	-- Shriveled Troll Heart
+				},
+			}),
+			e(484, {	-- Antu'sul
+				["crs"] = { 8127 },	-- Antu'sul
+				["g"] = {
+					i(9641),	-- Lifeblood Amulet
+					i(9379),	-- Sang'thraze the Deflector
+					i(9639),	-- The Hand of Antu'sul
+					i(9640),	-- Vice Grips
+				},
+			}),
+			e(486, {	-- Witch Doctor Zum'rah
+				["crs"] = { 7271 },
+				["g"] = {
+					i(18083),	-- Jumanza Grips
+					i(151457),	-- Witch Doctor's Ritual Collar
+					i(18082),	-- Zum'rah's Vexing Cane
+				},
+			}),
+			e(483, {	-- Gahz'rilla
+				["crs"] = { 7273 },	-- Gahz'rilla
+				["g"] = {
+					i(9467),	-- Gahz'rilla Fang
+					i(9469),	-- Gahz'rilla Scale Armor
+					i(151455),	-- Gahz'rilla Scale Cloak
+				},
+			}),
+			e(487, {	-- Nekrum & Sezzi'ziz
+				["crs"] = {
+					7796,	-- Nekrum Gutchewer
+					7275,	-- Shadowpriest Sezz'ziz
+				},
+				["g"] = {
+					i(9470),	-- Bad Mojo Mask
+					i(9475),	-- Diabolic Skiver
+					i(9474),	-- Jinxed Hoodoo Kilt
+					i(9473),	-- Jinxed Hoodoo Skin
+					i(151459),	-- Nekrum's Witherguard
+					i(151458),	-- Sezz'ziz's Captive Kickers
+				},
+			}),
+			e(489, {	-- Chief Ukorz Sandscalp
+				["crs"] = {
+					7267,	-- Chief Ukorz Sandscalp
+					7797,	-- Ruuzlu
+				},
+				["g"] = {
+					i(9476),	-- Big Bad Pauldrons
+					i(9479),	-- Embrace of the Lycan
+					i(151460),	-- Farraki Ceremonial Robes
+					i(232903),	-- Jang'thraze the Protector
+					i(9478),	-- Ripsaw
+					i(232904),	-- Sul'thraze the Lashe
+					i(9477),	-- The Chief's Enforcer
+					i(151461),	-- Ukorz's Chain Leggings
+				},
+			}),
+		}),
+	})),
+})));
 
 -- The Burning Crusade Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND_DUNGEON_EVENT, {
