@@ -6,5 +6,6 @@ COMMON_BOX_DROPS = createHeader({
 		en = "Common Box Drops",
 		ru = "Обычная добыча из Сундуков",
 		cn = "一般宝箱掉落",
+		tw = "一般寶箱掉落",
 	},
 });

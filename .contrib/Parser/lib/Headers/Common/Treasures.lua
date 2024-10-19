@@ -13,5 +13,6 @@ TREASURES = createHeader({
 		-- #endif
 		ru = "Сундук с сокровищами",
 		cn = "宝箱",
+		tw = "寶箱",
 	},
 });
