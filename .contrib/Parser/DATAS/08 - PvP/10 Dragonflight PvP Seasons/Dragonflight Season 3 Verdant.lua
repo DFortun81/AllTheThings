@@ -152,10 +152,35 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				}),
 			}),
 		}),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_11_0_5 } }, {
 			n(199601, {	-- Seltherex
 				["coord"] = { 44.7, 37.0, VALDRAKKEN },
-				["g"] = {
+				["g"] = sharedData({
+					["cost"] = {{"i", MOH, 12}},
+					["timeline"] = { ADDED_11_0_5 },
+				}, {
+					iensemble(231150, {	-- Arsenal: Verdant Aspirant's Weapons
+						["cost"] = {{"i", MOH, 80}},
+					}),
+					iensemble(231120, {	-- Ensemble: Verdant Aspirant's Cloth Armor
+						["classes"] = CLOTH_CLASSES,
+					}),
+					iensemble(231121, {	-- Ensemble: Verdant Aspirant's Leather Armor
+						["classes"] = LEATHER_CLASSES
+					}),
+					iensemble(231122, {	-- Ensemble: Verdant Aspirant's Mail Armor
+						["classes"] = MAIL_CLASSES,
+					}),
+					iensemble(231123, {	-- Ensemble: Verdant Aspirant's Plate Armor
+						["classes"] = PLATE_CLASSES,
+					}),
+				}),
+			}),
+			n(199601, {	-- Seltherex
+				["coord"] = { 44.7, 37.0, VALDRAKKEN },
+				["g"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+				},FILTERFUNC_itemID,{
 					filter(BACK_F, {
 						honor(525, i(209776)),	-- Verdant Aspirant's Cape
 						honor(525, i(209774)),	-- Verdant Aspirant's Cloak
@@ -270,13 +295,65 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						honor(1325, i(210317)),	-- Verdant Aspirant's Wand
 						honor(875, i(210156)),	-- Verdant Aspirant's Warglaive
 					}),
-				},
+				}),
 			}),
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR, ADDED_11_0_5 } }, {
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
-				["g"] = {
+				["g"] = sharedData({
+					["cost"] = {{"i", MOH, 12}},
+					["timeline"] = { ADDED_11_0_5 },
+				}, {
+					iensemble(231151, {	-- Arsenal: Verdant Gladiator's Weapons
+						["cost"] = {{"i", MOH, 80}},
+					}),
+					iensemble(231124, {	-- Ensemble: Verdant Gladiator's Death Knight Armor
+						["classes"] = { DEATHKNIGHT },
+					}),
+					iensemble(231125, {	-- Ensemble: Verdant Gladiator's Demon Hunter Armor
+						["classes"] = { DEMONHUNTER },
+					}),
+					iensemble(231126, {	-- Ensemble: Verdant Gladiator's Druid Armor
+						["classes"] = { DRUID },
+					}),
+					iensemble(231127, {	-- Ensemble: Verdant Gladiator's Evoker Armor
+						["classes"] = { EVOKER },
+					}),
+					iensemble(231128, {	-- Ensemble: Verdant Gladiator's Hunter Armor
+						["classes"] = { HUNTER },
+					}),
+					iensemble(231129, {	-- Ensemble: Verdant Gladiator's Mage Armor
+						["classes"] = { MAGE },
+					}),
+					iensemble(231130, {	-- Ensemble: Verdant Gladiator's Monk Armor
+						["classes"] = { MONK },
+					}),
+					iensemble(231131, {	-- Ensemble: Verdant Gladiator's Paladin Armor
+						["classes"] = { PALADIN },
+					}),
+					iensemble(231132, {	-- Ensemble: Verdant Gladiator's Priest Armor
+						["classes"] = { PRIEST },
+					}),
+					iensemble(231133, {	-- Ensemble: Verdant Gladiator's Rogue Armor
+						["classes"] = { ROGUE },
+					}),
+					iensemble(231134, {	-- Ensemble: Verdant Gladiator's Shaman Armor
+						["classes"] = { SHAMAN },
+					}),
+					iensemble(231135, {	-- Ensemble: Verdant Gladiator's Warlock Armor
+						["classes"] = { WARLOCK },
+					}),
+					iensemble(231136, {	-- Ensemble: Verdant Gladiator's Warrior Armor
+						["classes"] = { WARRIOR },
+					}),
+				}),
+			}),
+			n(199599, {	-- Calderax
+				["coord"] = { 44.3, 36.6, VALDRAKKEN },
+				["g"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR },
+				},FILTERFUNC_itemID,{
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(525, i(209275)),	-- Verdant Gladiator's Cloak
@@ -591,7 +668,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						conquest(900, i(209552)),	-- Verdant Gladiator's Sword
 						conquest(900, i(209537)),	-- Verdant Gladiator's Warglaive
 					}),
-				},
+				}),
 			}),
 		})),
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_2_0, REMOVED_10_2_6_SEASON_FOUR }, ["bonusID"] = 7532 }, {
@@ -914,6 +991,57 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					moh(5, i(210520)),	-- Verdant Gladiator's Sword
 					moh(5, i(210506)),	-- Verdant Gladiator's Warglaive
 				},
+			}),
+		})),
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+			n(199720, {	-- Glamora
+				["coord"] = { 45.9, 38.7, VALDRAKKEN },
+				["g"] = sharedData({
+					["cost"] = {{"i", MOH, 12}},
+				}, {
+					iensemble(231152, {	-- Arsenal: Elite Verdant Gladiator's Weapons
+						["cost"] = {{"i", MOH, 80}},
+					}),
+					iensemble(231137, {	-- Ensemble: Elite Verdant Gladiator's Death Knight Armor
+						["classes"] = { DEATHKNIGHT },
+					}),
+					iensemble(231138, {	-- Ensemble: Elite Verdant Gladiator's Demon Hunter Armor
+						["classes"] = { DEMONHUNTER },
+					}),
+					iensemble(231139, {	-- Ensemble: Elite Verdant Gladiator's Druid Armor
+						["classes"] = { DRUID },
+					}),
+					iensemble(231140, {	-- Ensemble: Elite Verdant Gladiator's Evoker Armor
+						["classes"] = { EVOKER },
+					}),
+					iensemble(231141, {	-- Ensemble: Elite Verdant Gladiator's Hunter Armor
+						["classes"] = { HUNTER },
+					}),
+					iensemble(231142, {	-- Ensemble: Elite Verdant Gladiator's Mage Armor
+						["classes"] = { MAGE },
+					}),
+					iensemble(231143, {	-- Ensemble: Elite Verdant Gladiator's Monk Armor
+						["classes"] = { MONK },
+					}),
+					iensemble(231144, {	-- Ensemble: Elite Verdant Gladiator's Paladin Armor
+						["classes"] = { PALADIN },
+					}),
+					iensemble(231145, {	-- Ensemble: Elite Verdant Gladiator's Priest Armor
+						["classes"] = { PRIEST },
+					}),
+					iensemble(231146, {	-- Ensemble: Elite Verdant Gladiator's Rogue Armor
+						["classes"] = { ROGUE },
+					}),
+					iensemble(231147, {	-- Ensemble: Elite Verdant Gladiator's Shaman Armor
+						["classes"] = { SHAMAN },
+					}),
+					iensemble(231148, {	-- Ensemble: Elite Verdant Gladiator's Warlock Armor
+						["classes"] = { WARLOCK },
+					}),
+					iensemble(231149, {	-- Ensemble: Elite Verdant Gladiator's Warrior Armor
+						["classes"] = { WARRIOR },
+					}),
+				}),
 			}),
 		})),
 		filter(RECIPES, {

@@ -176,7 +176,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				},
 			})),
 		}),
-		n(PVP_ASPIRANT, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_11_0_5 } }, {
 			n(199601, {	-- Seltherex
 				["coord"] = { 44.7, 37.0, VALDRAKKEN },
 				["g"] = sharedData({
@@ -202,7 +202,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(199601, {	-- Seltherex
 				["coord"] = { 44.7, 37.0, VALDRAKKEN },
-				["g"] = bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
+				["g"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
+				},FILTERFUNC_itemID,{
 					filter(BACK_F, {
 						honor(525, i(201752)),	-- Crimson Aspirant's Cape
 						honor(525, i(201750)),	-- Crimson Aspirant's Cloak
@@ -320,8 +322,8 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					}),
 				}),
 			}),
-		}),
-		n(PVP_GLADIATOR, {
+		})),
+		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0, ADDED_11_0_5 } }, {
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
 				["g"] = sharedData({
@@ -374,7 +376,9 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 			}),
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
-				["g"] = bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 } }, {
+				["g"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 },
+				},FILTERFUNC_itemID,{
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(525, i(201911)),	-- Crimson Gladiator's Cloak
@@ -687,7 +691,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 
 				}),
 			}),
-		}),
+		})),
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH, REMOVED_10_1_0 }, ["bonusID"] = 7532 }, {
 			n(CLASSES, {
 				cl(DEATHKNIGHT, {

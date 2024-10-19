@@ -184,10 +184,35 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				},
 			})),
 		}),
-		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
+		n(PVP_ASPIRANT, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0, ADDED_11_0_5 } }, {
 			n(199601, {	-- Seltherex
 				["coord"] = { 44.7, 37.0, VALDRAKKEN },
-				["g"] = {
+				["g"] = sharedData({
+					["cost"] = {{"i", MOH, 12}},
+					["timeline"] = { ADDED_11_0_5 },
+				}, {
+					iensemble(230981, {	-- Arsenal: Obsidian Aspirant's Weapons
+						["cost"] = {{"i", MOH, 80}},
+					}),
+					iensemble(230951, {	-- Ensemble: Obsidian Aspirant's Cloth Armor
+						["classes"] = CLOTH_CLASSES,
+					}),
+					iensemble(230952, {	-- Ensemble: Obsidian Aspirant's Leather Armor
+						["classes"] = LEATHER_CLASSES,
+					}),
+					iensemble(230953, {	-- Ensemble: Obsidian Aspirant's Mail Armor
+						["classes"] = MAIL_CLASSES,
+					}),
+					iensemble(230954, {	-- Ensemble: Obsidian Aspirant's Plate Armor
+						["classes"] = PLATE_CLASSES,
+					}),
+				}),
+			}),
+			n(199601, {	-- Seltherex
+				["coord"] = { 44.7, 37.0, VALDRAKKEN },
+				["g"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+				},FILTERFUNC_itemID,{
 					filter(BACK_F, {
 						honor(525, i(205791)),	-- Obsidian Aspirant's Cape
 						honor(525, i(205789)),	-- Obsidian Aspirant's Cloak
@@ -303,13 +328,65 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						honor(425, i(205885)),	-- Obsidian Aspirant's Torch
 						honor(875, i(205886)),	-- Obsidian Aspirant's Warglaive
 					}),
-				},
+				}),
 			}),
 		})),
-		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 } }, {
+		n(PVP_GLADIATOR, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0, ADDED_11_0_5 } }, {
 			n(199599, {	-- Calderax
 				["coord"] = { 44.3, 36.6, VALDRAKKEN },
-				["g"] = {
+				["g"] = sharedData({
+					["cost"] = {{"i", MOH, 12}},
+					["timeline"] = { ADDED_11_0_5 },
+				}, {
+					iensemble(230982, {	-- Arsenal: Obsidian Gladiator's Weapons
+						["cost"] = {{"i", MOH, 80}},
+					}),
+					iensemble(230955, {	-- Ensemble: Obsidian Gladiator's Death Knight Armor
+						["classes"] = { DEATHKNIGHT },
+					}),
+					iensemble(230956, {	-- Ensemble: Obsidian Gladiator's Demon Hunter Armor
+						["classes"] = { DEMONHUNTER },
+					}),
+					iensemble(230957, {	-- Ensemble: Obsidian Gladiator's Druid Armor
+						["classes"] = { DRUID },
+					}),
+					iensemble(230958, {	-- Ensemble: Obsidian Gladiator's Evoker Armor
+						["classes"] = { EVOKER },
+					}),
+					iensemble(230959, {	-- Ensemble: Obsidian Gladiator's Hunter Armor
+						["classes"] = { HUNTER },
+					}),
+					iensemble(230960, {	-- Ensemble: Obsidian Gladiator's Mage Armor
+						["classes"] = { MAGE },
+					}),
+					iensemble(230961, {	-- Ensemble: Obsidian Gladiator's Monk Armor
+						["classes"] = { MONK },
+					}),
+					iensemble(230962, {	-- Ensemble: Obsidian Gladiator's Paladin Armor
+						["classes"] = { PALADIN },
+					}),
+					iensemble(230963, {	-- Ensemble: Obsidian Gladiator's Priest Armor
+						["classes"] = { PRIEST },
+					}),
+					iensemble(230964, {	-- Ensemble: Obsidian Gladiator's Rogue Armor
+						["classes"] = { ROGUE },
+					}),
+					iensemble(230965, {	-- Ensemble: Obsidian Gladiator's Shaman Armor
+						["classes"] = { SHAMAN },
+					}),
+					iensemble(230966, {	-- Ensemble: Obsidian Gladiator's Warlock Armor
+						["classes"] = { WARLOCK },
+					}),
+					iensemble(230967, {	-- Ensemble: Obsidian Gladiator's Warrior Armor
+						["classes"] = { WARRIOR },
+					}),
+				}),
+			}),
+			n(199599, {	-- Calderax
+				["coord"] = { 44.3, 36.6, VALDRAKKEN },
+				["g"] = bubbleDownFiltered({
+					["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 },
+				},FILTERFUNC_itemID,{
 					n(CLASSES, {
 						cl(DEATHKNIGHT, {
 							conquest(525, i(205673)),	-- Obsidian Gladiator's Cloak
@@ -621,7 +698,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 						conquest(1350, i(205930)),	-- Obsidian Gladiator's Talons
 						conquest(900, i(205916)),	-- Obsidian Gladiator's Warglaive
 					}),
-				},
+				}),
 			}),
 		})),
 		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_10_1_0, REMOVED_10_2_0 }, ["bonusID"] = 7532 }, {
@@ -920,6 +997,57 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 					moh(10, i(206148)),	-- Obsidian Gladiator's Staff
 					moh(5, i(206146)),	-- Obsidian Gladiator's Warglaive
 				},
+			}),
+		})),
+		n(PVP_ELITE, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+			n(199720, {	-- Glamora
+				["coord"] = { 45.9, 38.7, VALDRAKKEN },
+				["g"] = sharedData({
+					["cost"] = {{"i", MOH, 12}},
+				}, {
+					iensemble(230983, {	-- Arsenal: Elite Obsidian Gladiator's Weapons
+						["cost"] = {{"i", MOH, 80}},
+					}),
+					iensemble(230968, {	-- Ensemble: Elite Obsidian Gladiator's Death Knight Armor
+						["classes"] = { DEATHKNIGHT },
+					}),
+					iensemble(230969, {	-- Ensemble: Elite Obsidian Gladiator's Demon Hunter Armor
+						["classes"] = { DEMONHUNTER },
+					}),
+					iensemble(230970, {	-- Ensemble: Elite Obsidian Gladiator's Druid Armor
+						["classes"] = { DRUID },
+					}),
+					iensemble(230971, {	-- Ensemble: Elite Obsidian Gladiator's Evoker Armor
+						["classes"] = { EVOKER },
+					}),
+					iensemble(230972, {	-- Ensemble: Elite Obsidian Gladiator's Hunter Armor
+						["classes"] = { HUNTER },
+					}),
+					iensemble(230973, {	-- Ensemble: Elite Obsidian Gladiator's Mage Armor
+						["classes"] = { MAGE },
+					}),
+					iensemble(230974, {	-- Ensemble: Elite Obsidian Gladiator's Monk Armor
+						["classes"] = { MONK },
+					}),
+					iensemble(230975, {	-- Ensemble: Elite Obsidian Gladiator's Paladin Armor
+						["classes"] = { PALADIN },
+					}),
+					iensemble(230976, {	-- Ensemble: Elite Obsidian Gladiator's Priest Armor
+						["classes"] = { PRIEST },
+					}),
+					iensemble(230977, {	-- Ensemble: Elite Obsidian Gladiator's Rogue Armor
+						["classes"] = { ROGUE },
+					}),
+					iensemble(230978, {	-- Ensemble: Elite Obsidian Gladiator's Shaman Armor
+						["classes"] = { SHAMAN },
+					}),
+					iensemble(230979, {	-- Ensemble: Elite Obsidian Gladiator's Warlock Armor
+						["classes"] = { WARLOCK },
+					}),
+					iensemble(230980, {	-- Ensemble: Elite Obsidian Gladiator's Warrior Armor
+						["classes"] = { WARRIOR },
+					}),
+				}),
 			}),
 		})),
 		filter(RECIPES, {
