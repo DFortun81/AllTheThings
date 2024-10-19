@@ -172,7 +172,7 @@ app.CreateFaction = app.CreateClass("Faction", KEY, {
 		if t.saved then return 1; end
 		if app.Settings.AccountWide.Reputations and ATTAccountWideData.Factions[t[KEY]] then return 2; end
 	end or function(t)
-		return app.TypicalCharacterCollected(CACHE, t[KEY])
+		return app.TypicalCharacterCollected(CACHE, t[KEY], SETTING)
 	end,
 	saved = app.IsClassic and function(t)
 		local factionID = t[KEY];
