@@ -103,7 +103,7 @@ class FlightPaths(Thing):
 
     @staticmethod
     def debugDB_prefix() -> str:
-        return "flightPath"
+        return "flightpath"
 
     @staticmethod
     def existing_prefixes() -> tuple[str, ...]:
