@@ -134,7 +134,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 				o(455437, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451595 },	-- Forgotten Memorial
-					["coord"] = { 33.7, 41.9, AZJ_KAHET },
+					["coord"] = { 33.7, 42.2, AZJ_KAHET },
 					["questID"] = 82873,
 				}),
 				o(455439, {	-- Aspirant's Tribute
@@ -144,7 +144,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 				o(455440, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451597 },	-- Forgotten Memorial
-					["coord"] = { 63.2, 11.3, AZJ_KAHET },
+					["coord"] = { 63.2, 11.2, AZJ_KAHET },
 					["questID"] = 82875,
 				}),
 				o(455441, {	-- Aspirant's Tribute (was missing, WoWhead Data)
