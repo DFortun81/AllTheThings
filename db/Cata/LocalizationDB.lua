@@ -24254,6 +24254,10 @@ for key,value in pairs({
 })
 do phases[key].lore = value; end
 if GetLocale():sub(3,4):lower() == "tw" then
+localize(L.HEADER_NAMES, {
+	[-1000038] = "寶箱",
+	[-1000044] = "地區掉落",
+});
 for key,value in pairs({
 	[1] = "從未實裝",
 	[2] = "已從遊戲中移除",

@@ -201,9 +201,15 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 		})),
 		ach(5755, {	-- Thirty Tabards
 			["timeline"] = { ADDED_4_1_0 },
+			-- #if BEFORE LEGION
+			["_noautomation"] = true,
+			-- #endif
 			["rank"] = 30,
 		}),
 		ach(1021, bubbleDownSelf({ ["timeline"] = { ADDED_3_0_2 } }, {	-- Twenty-Five Tabards
+			-- #if BEFORE LEGION
+			["_noautomation"] = true,
+			-- #endif
 			["rank"] = 25,
 			["groups"] = {
 				i(40643),	-- Tabard of the Achiever
