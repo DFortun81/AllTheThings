@@ -16187,6 +16187,7 @@ L.QUEST_NAMES = {
 	[82025] = "Talk with Sky-Captain Aerthin",
 	[82026] = "Talk with Sky-Captain Onaro",
 	[82033] = "Stay awhile and listen: Alleria Windrunner",
+	[82162] = "Stay awhile and listen: Prophet Velen",
 	[82459] = "Stay awhile and listen: Anduin Wrynn",
 	[82460] = "Stay awhile and listen: Magni Bronzebeard",
 	[82461] = "Stay awhile and listen: Dagran Thaurissan II",
@@ -49945,11 +49946,20 @@ for key,value in pairs({
 do phases[key].lore = value; end
 if GetLocale():sub(3,4):lower() == "tw" then
 localize(L.HEADER_NAMES, {
+	[-1000011] = "一般寶箱掉落",
+	[-1000038] = "寶箱",
+	[-1000044] = "地區掉落",
+	[-1000045] = "地區獎勵",
 	[-1000907] = "探究",
 	[-1001041] = "探究完成",
 });
 localize(L.HEADER_DESCRIPTIONS, {
+	[-1000045] = "這些物品可以從稀有菁英、可重複的寶箱、祈願蟋蟀、世界任務、指揮桌任務中取得。",
 	[-1001041] = "包含完成探究時獎勵的東西。",
+});
+localize(_.ObjectNames, {
+	[327407] = "珍貴的巨魔藏寶箱",
+	[329919] = "遭竊的補給品",
 });
 for key,value in pairs({
 	[1] = "從未實裝",
