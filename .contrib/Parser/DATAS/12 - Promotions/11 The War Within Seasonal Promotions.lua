@@ -41,12 +41,12 @@ root(ROOTS.Promotions, {
 			}),
 			-- Season 1
 			i(232305, {	-- Forged Champion's Prestigious Banner (TOY!)(PVP)
-				["description"] = "Arena World Championship: TWW Season 1. Sign up on Raider.io for any of the 4 Cups, available until October 13th, and play in atleast two game series (best of 5). Winning not required, for more details & requirements checkout: Raider.io/tournaments/AWC",
+				["description"] = "Arena World Championship: TWW Season 1\n\nSign up on Raider.io for any of the 4 Cups, available until October 13th 2024, and play in atleast two game series (best of 5)\n\nWinning not required, for more details & requirements checkout: Raider.io/tournaments/AWC",
 				["timeline"] = { ADDED_11_0_5 },
 			}),
 			i(500000, {    -- The PVP Banner temporary item -- TODO: Remove in 11.0.5
 				["sourceID"] = 500000,
-				["description"] = "Arena World Championship: TWW Season 1. Sign up on Raider.io for any of the 4 Cups, available until October 13th, and play in atleast two game series (best of 5). Winning not required, for more details & requirements checkout: Raider.io/tournaments/AWC",
+				["description"] = "Arena World Championship: TWW Season 1\n\nSign up on Raider.io for any of the 4 Cups, available until October 13th 2024, and play in atleast two game series (best of 5)\n\nWinning not required, for more details & requirements checkout: Raider.io/tournaments/AWC",
 				["timeline"] = { ADDED_11_0_2 },
 				["icon"] = 4731630,
 				["name"] = "Forged Champion's Prestigious Banner (TOY!)(PVP)"
