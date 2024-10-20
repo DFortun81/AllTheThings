@@ -457,7 +457,18 @@ q(45236),	-- Ensemble: Funerary Plate of the Chosen Dead [Mythic]
 q(45237),	-- Ensemble: Funerary Plate of the Chosen Dead [LFR]
 
 ------ Trial of Style ------
+q(55559),	-- Ensemble: Amaranthine Path Armor
 q(55566),	-- Ensemble: Chainmail of the Timeless Hunt
+q(50346),	-- Ensemble: Crimson Sentinel Garb
+q(48059),	-- Ensemble: Der'izu Armor
+q(50347),	-- Ensemble: Goldspine Plate
+q(48058),	-- Ensemble: Mana-Etched Regalia
+q(50344),	-- Ensemble: Mindwrack Raiment
+q(48061),	-- Ensemble: Obsidian Prowler's Garb
+q(55572),	-- Ensemble: Restless Dreambound Battlegear
+q(48060),	-- Ensemble: Righteous Battleplate
+q(55587),	-- Ensemble: Tranquil Spiritbind Regalia
+q(50345),	-- Ensemble: Tundraspite Armor
 
 ------ Trading Post Arsenals ------
 q(77336),	-- Armaments of the Light Avenger
