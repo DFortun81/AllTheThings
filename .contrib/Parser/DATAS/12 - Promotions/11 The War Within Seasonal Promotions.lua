@@ -42,25 +42,11 @@ root(ROOTS.Promotions, {
 			-- Season 1
 			i(232305, {	-- Forged Champion's Prestigious Banner (TOY!)(PVP)
 				["description"] = "Arena World Championship: TWW Season 1\n\nSign up on Raider.io for any of the 4 Cups, available until October 13th 2024, and play in atleast two game series (best of 5)\n\nWinning not required, for more details & requirements checkout: Raider.io/tournaments/AWC",
-				["timeline"] = { ADDED_11_0_5 },
-			}),
-			i(500000, {    -- The PVP Banner temporary item -- TODO: Remove in 11.0.5
-				["sourceID"] = 500000,
-				["description"] = "Arena World Championship: TWW Season 1\n\nSign up on Raider.io for any of the 4 Cups, available until October 13th 2024, and play in atleast two game series (best of 5)\n\nWinning not required, for more details & requirements checkout: Raider.io/tournaments/AWC",
-				["timeline"] = { ADDED_11_0_2 },
-				["icon"] = 4731630,
-				["name"] = "Forged Champion's Prestigious Banner (TOY!)(PVP)"
+				["timeline"] = { ADDED_11_0_5, REMOVED_11_0_5 },
 			}),
 			i(232301, {	-- Tempered Banner of the Algari (TOY!)
 				["description"] = "Mythic Dungeon International: TWW Season 1\n\nThe Mythic Dungeon International (MDI) returns with its global competitions, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Tempered Banner of the Algari to use in-game!\nSign-ups close 14 October 2024 1PM PDT and The Time Trials are on 16 October 1PM PDT - 21 October (US) 1PM PDT.",
-				["timeline"] = { ADDED_11_0_5 },
-			}),
-			i(500001, {    -- The PVE Banner temporary item -- TODO: Remove in 11.0.5
-				["sourceID"] = 500001,
-				["description"] = "Mythic Dungeon International: TWW Season 1\n\nThe Mythic Dungeon International (MDI) returns with its global competitions, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Tempered Banner of the Algari to use in-game!\nSign-ups close 14 October 2024 1PM PDT and The Time Trials are on 16 October 1PM PDT - 21 October (US) 1PM PDT.",
-				["timeline"] = { ADDED_11_0_2 },
-				["icon"] = 4731630,
-				["name"] = "Tempered Banner of the Algari (TOY!)(PVE)"
+				["timeline"] = { ADDED_11_0_5, REMOVED_11_0_5 },
 			}),
 			i(228765, {	-- Gummi (PET!)
 				["description"] = "Trolli + Xbox promotional item. Available between 9/1/24 - 2/28/25 by purchasing Trolli Candy products in any retail store, photoing your receipt and uploading it as confirmation to trolli.com/xbox. Once processed, you should receive a code to your email to redeem on battle.net or in the launcher.\n\nYou must have a U.S. address and phone number to participate.\n\nThe code is usable in any region.",
@@ -101,6 +87,14 @@ root(ROOTS.Promotions, {
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between October 22nd, 10:00 a.m. & November 5th, 10:00 a.m. PST.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
 				["timeline"] = { ADDED_11_0_5, },
 			}),
+			
+		--	i(500001, {    -- The PVE/PVP Banner temporary item -- TEMPLETE
+		--		["sourceID"] = 500001,
+		--		["description"] = "Mythic Dungeon International: TWW Season 1\n\nThe Mythic Dungeon International (MDI) returns with its global competitions, pitting the best Mythic Dungeon teams in a head-to-head race to the finish line.\n\nAll registered teams that complete under time the two dungeons within the Proving Grounds will receive the exclusive Tempered Banner of the Algari to use in-game!\nSign-ups close 14 October 2024 1PM PDT and The Time Trials are on 16 October 1PM PDT - 21 October (US) 1PM PDT.",
+		--		["timeline"] = { ADDED_11_0_2 },
+		--		["icon"] = 4731630,
+		--		["name"] = "Tempered Banner of the Algari (TOY!)(PVE)"
+		--	}),
 		},
 	}),
 });
