@@ -1124,6 +1124,41 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					["coord"] = { 64.9, 41.5, THE_RINGING_DEEPS },
 				}),
 			}),
+			header(HEADERS.Item, 221765, {	-- Stonevault Mechsuit
+				q(84020, {	-- A Mech in Need
+					["provider"] = { "i", 226683 },	-- Malfunctioning Mechsuit
+					["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
+				}),
+				q(84021, {	-- Machine Without Cogs
+					["sourceQuest"] = 84020,	-- A Mech in Need
+					["provider"] = { "n", 213875  },	-- Speaker Jurlax
+					["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
+					["cost"] = { { "i", 219301, 1 }, },	-- 1x Overclocked Gear-a-Rang Launcher
+				}),
+				q(84023, {	-- Orienting Ourselves
+					["sourceQuest"] = 84021,	-- Machine Without Cogs
+					["provider"] = { "n", 213875  },	-- Speaker Jurlax
+					["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
+					["cost"] = { { "i", 219299, 1 }, },	-- 1x Synergistic Brewterializer
+				}),
+				q(84024, {	-- Clutching Control
+					["sourceQuest"] = 84023,	-- Orienting Ourselves
+					["provider"] = { "n", 213875  },	-- Speaker Jurlax
+					["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
+					["cost"] = { { "i", 219306, 1 }, },	-- 1x Burin of the Candle King
+				}),
+				q(84025, {	-- Repurposed, Restored
+					["sourceQuest"] = 84024,	-- Clutching Control
+					["provider"] = { "n", 213875  },	-- Speaker Jurlax
+					["coord"] = { 47.0, 32.4, THE_RINGING_DEEPS },
+					["g"] = {
+						i(221765, {	-- Stonevault Mechsuit (MOUNT!)
+							-- tagged with cost here so that it shows under the start of the quest chain item as well
+							["cost"] = { { "i", 226683, 1 } },	-- Malfunctioning Mechsuit
+						}),
+					},
+				}),
+			}),
 			-- Area where Janky quest leads (New Home, New Candle)
 			q(82952, {	-- An Opportunity to Relax
 				--["sourceQuests"] = { x },	-- ?
