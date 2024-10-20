@@ -873,7 +873,10 @@ root(ROOTS.Delves, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { AD
 			n(QUESTS, {
 				q(83771, {	-- Delver's Call: Tak-Rethan Abyss
 					["provider"] = { "o", 455720 },	-- Delver's Call: Tak-Rethan Abyss
-					["coord"] = { 56.8, 40.7, AZJ_KAHET },
+					["coords"] = {
+						{ 56.8, 40.7, AZJ_KAHET },
+						{ 53.1, 20.2, TAK_RETHAN_ABYSS },
+					},
 				}),
 			}),
 			n(TREASURES, {

@@ -42,7 +42,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					q(79282, {	-- The Grand Debut
 						["sourceQuests"] = { 79150 },	-- Thespians at the Proscenium
 						["provider"] = { "n", 214296 },	-- Stage Manager Huberta
-						["coord"] = { 56.5, 52.8, ISLE_OF_DORN },
+						["coords"] = {
+							{ 56.5, 52.8, ISLE_OF_DORN },
+							{ 49.9, 65.7, THE_PROSCENIUM },
+						},
 					}),
 					q(83240, {	-- The Theater Troupe
 						["provider"] = { "n", 214296 },	-- Stage Manager Huberta
