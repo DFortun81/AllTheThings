@@ -1959,15 +1959,18 @@ if app.IsRetail then
 					if p[1] == "i" then
 						id = p[2];
 						-- print("Quest Item Provider",p[1], id);
-						local pRef = Search("itemID", id, "field");
+						local pRef = Search("itemID", id, "field")
 						if pRef then
+							pRef = app.CloneClassInstance(pRef, true)
+							-- Make sure to always show the Quest starting item
+							pRef.OnSetVisibility = app.ReturnTrue;
 							app.NestObject(questRef, pRef, true, 1);
 						else
 							pRef = app.CreateItem(id);
+							-- Make sure to always show the Quest starting item
+							pRef.OnSetVisibility = app.ReturnTrue;
 							app.NestObject(questRef, pRef, nil, 1);
 						end
-						-- Make sure to always show the Quest starting item
-						pRef.OnUpdate = app.AlwaysShowUpdate;
 						-- Quest started by this Item should be represented using any sourceQuests on the Item
 						if pRef.sourceQuests then
 							if not questRef.sourceQuests then questRef.sourceQuests = {}; end
@@ -2228,7 +2231,7 @@ if app.IsRetail then
 				icon = 135932,
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = app.UI.OnClick.IgnoreRightClick,
-				sourceIgnored = true,
+				-- sourceIgnored = true,
 				skipFill = true,
 				SortPriority = 1.0,	-- follow any raw content in group
 				-- copy any sourceQuests into the header incase the root is not actually a quest

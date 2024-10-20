@@ -399,9 +399,9 @@ do
 		local g = group.g
 		if not g then return end
 
-		-- don't scan groups inside groups which have a cost/provider (i.e. ensembles)
+		-- don't scan groups inside Item groups which have a cost/provider (i.e. ensembles)
 		-- this leads to wildly bloated totals
-		if group.cost or group.providers or group.filledCost then return end
+		if group.filledCost or (group.itemID and (group.cost or group.providers)) then return end
 
 		for _,o in ipairs(g) do
 			ScanGroups(o, Collector)
