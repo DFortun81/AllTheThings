@@ -2536,7 +2536,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				q(12398, {	-- Candy Bucket — Dustwallow Marsh, Mudsprocket, Neutral
 					["provider"] = { "o", 190104 },	-- Candy Bucket, Dustwallow Marsh
-					["coords"] = { 41.86, 74.1, DUSTWALLOW_MARSH },
+					["coord"] = { 41.86, 74.1, DUSTWALLOW_MARSH },
 					["timeline"] = { ADDED_2_0_1 },
 				}),
 				q(12402, {	-- Candy Bucket — Eastern Plaguelands, Light's Hope Chapel, Neutral
