@@ -635,6 +635,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					},
 				}),
 				q(28267, {	-- Firing Squad
+					-- #if AFTER 9.2.0
+					["description"] = "If Harrison Jones does not spawn after the cutscene, you have to zone out and back in again. Either log out and in again, or fly northwest to Ahn'Qiraj and back.",
+					-- #endif
 					["qg"] = 47972,	-- Commander Schnottz
 					["coord"] = { 22.5, 63.1, ULDUM },
 					["sourceQuests"] = {
@@ -1054,6 +1057,9 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["sourceQuest"] = 28210,	-- Shaping Up
 				}),
 				q(28402, {	-- Schnottz So Fast
+					-- #if AFTER 9.2.0
+					["description"] = "If Harrison Jones does not spawn after the cutscene, you have to zone out and back in again. Either log out and in again, or fly out of Chamber of the Moon and back.",
+					-- #endif
 					["qg"] = 48186,	-- Harrison Jones
 					["coord"] = { 27.0, 7.5, ULDUM },
 					["sourceQuest"] = 28367,	-- Shroud of the Makers
