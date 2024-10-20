@@ -49,9 +49,10 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["provider"] = { "n", 196191 },	-- Malicia
 				["coord"] = { 43.4, 42.5, VALDRAKKEN },
 				["isWeekly"] = true,
+				["timeline"] = { REMOVED_TWW_LAUNCH },
 				["g"] = {
 					i(206271, {	-- Malicia's Hoard
-						["timeline"] = { ADDED_10_1_0 },
+						["timeline"] = { ADDED_10_1_0, REMOVED_TWW_LAUNCH },
 						["g"] = {
 							i(204717),	-- Splintered Spark of Shadowflame
 						},
@@ -72,6 +73,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			n(QUESTS, sharedData({
 				["coord"] = { 42.2, 40.7, VALDRAKKEN },
 				["isWeekly"] = true,
+				["timeline"] = { REMOVED_TWW_LAUNCH },
 				["g"] = {
 					currency(2797, {	-- Trophy of Strife
 						["timeline"] = { ADDED_10_2_0 },

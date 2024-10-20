@@ -830,7 +830,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60244, {	-- Trading Favors: Halls of Atonement
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["provider"] = { "n", 167880 },	-- Finder Ta'sul
+				["providers"] = {
+					{ "n", 167880 },	-- Finder Ta'sul
+					{ "n", 205783 },	-- Finder Ta'sul (Inside SL dungeons by entrance)
+				},
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
 				["groups"] = {
@@ -839,7 +842,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60242, {	-- Trading Favors: Necrotic Wake
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["provider"] = { "n", 167880 },	-- Finder Ta'sul
+				["providers"] = {
+					{ "n", 167880 },	-- Finder Ta'sul
+					{ "n", 205783 },	-- Finder Ta'sul (Inside SL dungeons by entrance)
+				},
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
 				["groups"] = {
@@ -848,7 +854,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60248, {	-- Trading Favors: Plaguefall
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["provider"] = { "n", 167880 },	-- Finder Ta'sul
+				["providers"] = {
+					{ "n", 167880 },	-- Finder Ta'sul
+					{ "n", 205783 },	-- Finder Ta'sul (Inside SL dungeons by entrance)
+				},
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
 				["groups"] = {
@@ -857,7 +866,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60243, {	-- Trading Favors: Sanguine Depths
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["provider"] = { "n", 167880 },	-- Finder Ta'sul
+				["providers"] = {
+					{ "n", 167880 },	-- Finder Ta'sul
+					{ "n", 205783 },	-- Finder Ta'sul (Inside SL dungeons by entrance)
+				},
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
 				["groups"] = {
@@ -866,7 +878,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60249, {	-- Trading Favors: Spires of Ascension
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["provider"] = { "n", 167880 },	-- Finder Ta'sul
+				["providers"] = {
+					{ "n", 167880 },	-- Finder Ta'sul
+					{ "n", 205783 },	-- Finder Ta'sul (Inside SL dungeons by entrance)
+				},
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
 				["groups"] = {
@@ -875,7 +890,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60245, {	-- Trading Favors: The Other Side
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["provider"] = { "n", 167880 },	-- Finder Ta'sul
+				["providers"] = {
+					{ "n", 167880 },	-- Finder Ta'sul
+					{ "n", 205783 },	-- Finder Ta'sul (Inside SL dungeons by entrance)
+				},
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
 				["groups"] = {
@@ -884,7 +902,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60247, {	-- Trading Favors: Theater of Pain
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["provider"] = { "n", 167880 },	-- Finder Ta'sul
+				["providers"] = {
+					{ "n", 167880 },	-- Finder Ta'sul
+					{ "n", 205783 },	-- Finder Ta'sul (Inside SL dungeons by entrance)
+				},
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
 				["g"] = {
@@ -893,7 +914,10 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 			}),
 			q(60246, {	-- Trading Favors: Tirna Scithe
 				["sourceQuests"] = { 60274 },	-- Trading Favors
-				["provider"] = { "n", 167880 },	-- Finder Ta'sul
+				["providers"] = {
+					{ "n", 167880 },	-- Finder Ta'sul
+					{ "n", 205783 },	-- Finder Ta'sul (Inside SL dungeons by entrance)
+				},
 				["coord"] = { 52.4, 55.3, ORIBOS },
 				["_drop"] = { "g" },	-- Anima Trash
 				["groups"] = {
