@@ -786,6 +786,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 						["coord"] = { 66.1, 17.9, HALLOWFALL },
 						["questID"] = 80345,
 					}),
+					-- o(OBJECT, {	-- Radiant Remnant (someone get the ObjectID, I forgot debugger on)
+					-- 	["coord"] = { 70.7, 31.0, HALLOWFALL },
+					-- 	["questID"] = 83367,
+					-- }),
 				})),
 				n(VENDORS, {
 					n(212419, {	-- Attica Whiskervale
