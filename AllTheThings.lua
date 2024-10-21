@@ -2200,8 +2200,8 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 	local character, unavailable, unobtainable = {}, {}, {}
 	local showUnsorted = settings:GetTooltipSetting("SourceLocations:Unsorted");
 	local showCompleted = settings:GetTooltipSetting("SourceLocations:Completed");
-	local FilterSettings, FilterUnobtainable, FilterCharacter, FirstParent
-		= app.RecursiveGroupRequirementsFilter, app.RecursiveUnobtainableFilter, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
+	local FilterSettings, FilterInGame, FilterCharacter, FirstParent
+		= app.RecursiveGroupRequirementsFilter, app.Modules.Filter.Filters.InGame, app.RecursiveCharacterRequirementsFilter, app.GetRelativeGroup
 	local abbrevs = L.ABBREVIATIONS;
 	local sourcesToShow
 	-- paramB is the modItemID for itemID searches, so we may have to fallback to the base itemID if nothing sourced for the modItemID
@@ -2216,10 +2216,10 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 			and not HasCost(j, paramA, paramB)
 		then
 			text = app.GenerateSourcePathForTooltip(parent);
-			-- app.PrintDebug("SourceLocation",text,FilterUnobtainable(j),FilterSettings(parent),FilterCharacter(parent))
+			-- app.PrintDebug("SourceLocation",text,FilterInGame(j),FilterSettings(parent),FilterCharacter(parent))
 			if showUnsorted or (not text:match(L.UNSORTED) and not text:match(L.HIDDEN_QUEST_TRIGGERS)) then
 				-- doesn't meet current unobtainable filters from the Thing itself
-				if not FilterUnobtainable(j) then
+				if not FilterInGame(j) then
 					unobtainable[#unobtainable + 1] = text..UnobtainableTexture
 				else
 					-- something user would currently see in a list or not
