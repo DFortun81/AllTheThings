@@ -148,10 +148,10 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 					["coord"] = { 63.2, 11.2, AZJ_KAHET },
 					["questID"] = 82875,
 				}),
-				o(455441, {	-- Aspirant's Tribute (was missing, WoWhead Data)
+				o(455441, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451598 },	-- Forgotten Memorial
-					["coord"] = { 78.1, 36.3, AZJ_KAHET },
-					-- ["questID"] = 82876,
+					["coord"] = { 78.1, 36.2, AZJ_KAHET },
+					["questID"] = 82876,
 				}),
 				o(455442, {	-- Aspirant's Tribute
 					["provider"] = { "o", 451599 },	-- Forgotten Memorial

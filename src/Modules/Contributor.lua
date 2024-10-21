@@ -142,6 +142,7 @@ local MobileNPCDB = {
 	 [64337] = true,	-- Nomi
 	 [67153] = true,	-- Zin'Jun
 	 [77789] = true,	-- Blingtron 5000
+	 [83858] = true,	-- Khadgar's Servant
 	 [87991] = true,	-- Cro Threadstrong
 	 [87992] = true,	-- Olaf
 	 [87994] = true,	-- Moroes <Tower Steward>
