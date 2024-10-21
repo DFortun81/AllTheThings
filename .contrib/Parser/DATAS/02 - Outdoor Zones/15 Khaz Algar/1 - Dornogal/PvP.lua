@@ -93,7 +93,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						i(225489),	-- Plans: Algari Competitor's Sword (RECIPE!)
 						i(224018),	-- Recipe: Vicious Flask of Classical Spirits (RECIPE!)
 						i(224017),	-- Recipe: Vicious Flask of Honor (RECIPE!)
-						i(224019),	-- Recipe: Vicious Flask of Manifested Fury (RECIPE!)
 						i(224020),	-- Recipe: Vicious Flask of the Wrecking Ball (RECIPE!)
 						i(225471),	-- Schematic: Algari Competitor's Cloth Bracers (RECIPE!)
 						i(225467),	-- Schematic: Algari Competitor's Cloth Goggles (RECIPE!)

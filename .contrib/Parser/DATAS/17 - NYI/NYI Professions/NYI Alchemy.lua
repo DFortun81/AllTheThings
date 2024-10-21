@@ -97,6 +97,7 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					i(212321),	-- QA Slumbering Soul Serum
 					i(212327),	-- QA Tempered Potion
 					i(224577),	-- Sphere of Infinite Transmutations (PTR Only)
+					i(212295),	-- Vicious Flask of Manifested Fury
 				})),
 			}),
 		}),
@@ -293,6 +294,8 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 					r(433606),	-- Unknown
 					r(433607),	-- Unknown
 					r(433608),	-- Unknown
+					-- With SpellID attched
+					i(224019),	-- Recipe: Vicious Flask of Manifested Fury (RECIPE!)
 				})),
 			}),
 		}),

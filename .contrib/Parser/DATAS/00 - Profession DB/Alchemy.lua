@@ -1178,6 +1178,7 @@ i(0, 433605);		-- Unknown
 i(0, 433606);		-- Unknown
 i(0, 433607);		-- Unknown
 i(0, 433608);		-- Unknown
+i(224019, 430610);	-- Vicious Flask of Manifested Fury
 
 ------------------
 -- PATCH 11.0.2 --
@@ -1194,7 +1195,6 @@ i(0, 427174);		-- Wild Experimentation
 i(223080, 427185);	-- Algari Alchemist Stone
 i(224018, 430607);	-- Vicious Flask of Classical Spirits
 i(224017, 430608);	-- Vicious Flask of Honor
-i(224019, 430610);	-- Vicious Flask of Manifested Fury
 i(224020, 430611);	-- Vicious Flask of the Wrecking Ball
 --- DISCOVERY ---
 --- THAUMATURGY ---

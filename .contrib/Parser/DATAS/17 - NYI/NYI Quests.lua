@@ -8823,6 +8823,7 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		-- 11.0.0
 		expansion(EXPANSION.TWW, patch(0,01), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_0 } }, {
 			q(80950),	-- First Craft: Deepfury Hide
+			q(81114),	-- First Craft: Vicious Flask of Manifested Fury
 			q(81651),	-- Delver's Guide to Delves
 			q(82199),	-- TWW Alpha/Beta Questauren Isle of Dorn skip
 			q(82200),	-- TWW Alpha/Beta Questauren Ringing Deeps skip

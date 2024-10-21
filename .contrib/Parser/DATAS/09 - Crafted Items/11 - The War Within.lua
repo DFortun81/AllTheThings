@@ -208,7 +208,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			i(212265),	-- Tempered Potion+++
 			i(212289),	-- Vicious Flask of Classical Spirits
 			i(212292),	-- Vicious Flask of Honor
-			i(212295),	-- Vicious Flask of Manifested Fury
 			i(212298),	-- Vicious Flask of the Wrecking Ball
 		}),
 		n(FIRST_CRAFTS_HEADER, sharedData({
@@ -245,7 +244,6 @@ root(ROOTS.Craftables, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = 
 			-- Vicious Flasks
 			FirstCraft(81112, 430607);	-- Vicious Flask of Classical Spirits
 			FirstCraft(81113, 430608);	-- Vicious Flask of Honor
-			FirstCraft(81114, 430610);	-- Vicious Flask of Manifested Fury
 			FirstCraft(81115, 430611);	-- Vicious Flask of Wrecking Ball
 			-- Phials
 			FirstCraft(81121, 430617);	-- Phial of Bountiful Seasons
