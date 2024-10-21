@@ -3,6 +3,7 @@
 ---------------------------------------------------------------
 
 root(ROOTS.HiddenQuestTriggers, {
+
 	-- Note!! Here is where we can put all the hidden quest triggers in the game that don't exactly fit anywhere.
 	-- When adding a quest trigger be sure to put a description of how it triggered
 
@@ -397,92 +398,103 @@ root(ROOTS.HiddenQuestTriggers, {
 	----------------------
 	--      LEGION      --
 	----------------------
-	expansion(EXPANSION.LEGION, {
-		-- DUNGEONS & RAIDS
-		q(41710, { ["_drop"] = { "g" }, }),	-- Legion 110 A
-		q(41712, { ["_drop"] = { "g" },	}),	-- Legion 110 A
-		q(41714),	-- Legion 110 A
-		q(41716),	-- Legion 110 A
-		q(41718),	-- Legion 110 A
-		q(41720),	-- Legion 110 A
-		q(41721),	-- Legion 110 A
-		q(42457),	-- Legion 110 A
-		q(42458),	-- Legion 110 A
-		q(42462),	-- Legion 110 A
-		q(42464),	-- Legion 110 A
-		q(42466, { ["_drop"] = { "g" }, }),	-- Legion 110 A
-		q(42467, { ["_drop"] = { "g" }, }),	-- Legion 110 A
-		q(42468),	-- Legion 110 A
-		q(42469),	-- Legion 110 A
-		q(42470),	-- Legion 110 A
-		q(43497),	-- Legion 110 A
-		q(43498),	-- Legion 110 A
-		q(44435),	-- Legion 110 Dungeon Reward Quest
-		q(41711, { ["_drop"] = { "g" }, }),	-- Legion 110 H
-		q(41713, { ["_drop"] = { "g" }, }),	-- Legion 110 H
-		q(41715),	-- Legion 110 H
-		q(41717),	-- Legion 110 H
-		q(41719),	-- Legion 110 H
-		q(41722),	-- Legion 110 H
-		q(41723),	-- Legion 110 H
-		q(42459),	-- Legion 110 H
-		q(42460),	-- Legion 110 H
-		q(42463),	-- Legion 110 H
-		q(42465),	-- Legion 110 H
-		q(42471, { ["_drop"] = { "g" }, }),	-- Legion 110 H
-		q(42472, { ["_drop"] = { "g" }, }),	-- Legion 110 H
-		q(42473),	-- Legion 110 H
-		q(42474),	-- Legion 110 H
-		q(42475),	-- Legion 110 H
-		q(43499),	-- Legion 110 H
-		q(43500),	-- Legion 110 H
-		q(44437),	-- Legion Dungeon Reward Quest
-		q(45533),	-- Legion Dungeon Reward Quest
-		q(42915),	-- LFGDungeons - Legion - Dungeon Heroic - 1st
-		q(42916),	-- LFGDungeons - Legion - Dungeon Heroic - Nth
-		q(42912),	-- LFGDungeons - Legion - Dungeon Normal - 1st
-		q(42913),	-- LFGDungeons - Legion - Dungeon Normal - Nth
-		q(42897),	-- LFGDungeons - Legion - Heroic Random - 1st
-		q(42899),	-- LFGDungeons - Legion - Heroic Random - Nth
-		q(42901),	-- LFGDungeons - Legion - Normal Random - 1st
-		q(42903),	-- LFGDungeons - Legion - Normal Random - Nth
-		q(42904),	-- LFGDungeons - Legion - Raid Finder - 1st
-		q(42905),	-- LFGDungeons - Legion - Raid Finder - Nth
-		q(42554),	-- WOD 100 A
-		q(42555),	-- WOD 100 A
-		q(42561),	-- WOD 100 A
-		q(42562),	-- WOD 100 A
-		q(42563),	-- WOD 100 A
-		q(42564),	-- WOD 100 A
-		q(42565),	-- WOD 100 A
-		q(42552),	-- WOD 100 H
-		q(42553),	-- WOD 100 H
-		q(42556),	-- WOD 100 H
-		q(42557),	-- WOD 100 H
-		q(42558),	-- WOD 100 H
-		q(42559),	-- WOD 100 H
-		q(42560),	-- WOD 100 H
-
-		-- PVP
-		q(45538),	-- 10v10 Weekly Quest UI
-		q(42548),	-- 10v10 #1
-		q(42549),	-- 10v10 #2
-		q(42550),	-- 10v10 #3
-		q(42551),	-- 10v10 #4
-		q(44891),	-- 2v2 Weekly Quest
-		q(45536),	-- 2v2 Weekly Quest UI
-		q(42540),	-- 2v2 #1
-		q(42541),	-- 2v2 #2
-		q(42542),	-- 2v2 #3
-		q(42543),	-- 2v2 #4
-		q(44908),	-- 3v3 Weekly Quest
-		q(45537),	-- 3v3 Weekly Quest UI
-		q(42544),	-- 3v3 #1
-		q(42545),	-- 3v3 #2
-		q(42546),	-- 3v3 #3
-		q(42547),	-- 3v3 #4
-		q(44909),	-- RBG Weekly
-
+	expansion(EXPANSION.LEGION, bubbleDownSelf({ ["timeline"] = { ADDED_7_0_3_LAUNCH } }, {
+		n(GROUP_FINDER, bubbleDown({ ["_drop"] = { "g" }, }, {
+			q(41710),	-- Legion 110 A
+			q(41712),	-- Legion 110 A
+			q(41714),	-- Legion 110 A
+			q(41716),	-- Legion 110 A
+			q(41718),	-- Legion 110 A
+			q(41720),	-- Legion 110 A
+			q(41721),	-- Legion 110 A
+			q(42457),	-- Legion 110 A
+			q(42458),	-- Legion 110 A
+			q(42462),	-- Legion 110 A
+			q(42464),	-- Legion 110 A
+			q(42466),	-- Legion 110 A
+			q(42467),	-- Legion 110 A
+			q(42468),	-- Legion 110 A
+			q(42469),	-- Legion 110 A
+			q(42470),	-- Legion 110 A
+			q(43497),	-- Legion 110 A
+			q(43498),	-- Legion 110 A
+			q(44435),	-- Legion 110 Dungeon Reward Quest
+			q(41711),	-- Legion 110 H
+			q(41713),	-- Legion 110 H
+			q(41715),	-- Legion 110 H
+			q(41717),	-- Legion 110 H
+			q(41719),	-- Legion 110 H
+			q(41722),	-- Legion 110 H
+			q(41723),	-- Legion 110 H
+			q(42459),	-- Legion 110 H
+			q(42460),	-- Legion 110 H
+			q(42463),	-- Legion 110 H
+			q(42465),	-- Legion 110 H
+			q(42471),	-- Legion 110 H
+			q(42472),	-- Legion 110 H
+			q(42473),	-- Legion 110 H
+			q(42474),	-- Legion 110 H
+			q(42475),	-- Legion 110 H
+			q(43499),	-- Legion 110 H
+			q(43500),	-- Legion 110 H
+			q(44437),	-- Legion Dungeon Reward Quest
+			q(45533),	-- Legion Dungeon Reward Quest
+			q(42915),	-- LFGDungeons - Legion - Dungeon Heroic - 1st
+			q(42916),	-- LFGDungeons - Legion - Dungeon Heroic - Nth
+			q(42912),	-- LFGDungeons - Legion - Dungeon Normal - 1st
+			q(42913),	-- LFGDungeons - Legion - Dungeon Normal - Nth
+			q(42897),	-- LFGDungeons - Legion - Heroic Random - 1st
+			q(42899),	-- LFGDungeons - Legion - Heroic Random - Nth
+			q(42901),	-- LFGDungeons - Legion - Normal Random - 1st
+			q(42903),	-- LFGDungeons - Legion - Normal Random - Nth
+			q(42904),	-- LFGDungeons - Legion - Raid Finder - 1st
+			q(42905),	-- LFGDungeons - Legion - Raid Finder - Nth
+			q(42554),	-- WOD 100 A
+			q(42555),	-- WOD 100 A
+			q(42561),	-- WOD 100 A
+			q(42562),	-- WOD 100 A
+			q(42563),	-- WOD 100 A
+			q(42564),	-- WOD 100 A
+			q(42565),	-- WOD 100 A
+			q(42552),	-- WOD 100 H
+			q(42553),	-- WOD 100 H
+			q(42556),	-- WOD 100 H
+			q(42557),	-- WOD 100 H
+			q(42558),	-- WOD 100 H
+			q(42559),	-- WOD 100 H
+			q(42560),	-- WOD 100 H
+		})),
+		n(PVP, bubbleDown({ ["_drop"] = { "g" }, }, {
+			q(45538),	-- 10v10 Weekly Quest UI
+			q(42548),	-- 10v10 #1
+			q(42549),	-- 10v10 #2
+			q(42550),	-- 10v10 #3
+			q(42551),	-- 10v10 #4
+			q(44891),	-- 2v2 Weekly Quest
+			q(45536),	-- 2v2 Weekly Quest UI
+			q(42540),	-- 2v2 #1
+			q(42541),	-- 2v2 #2
+			q(42542),	-- 2v2 #3
+			q(42543),	-- 2v2 #4
+			q(44908),	-- 3v3 Weekly Quest
+			q(45537),	-- 3v3 Weekly Quest UI
+			q(42544),	-- 3v3 #1
+			q(42545),	-- 3v3 #2
+			q(42546),	-- 3v3 #3
+			q(42547),	-- 3v3 #4
+			q(44909),	-- RBG Weekly
+		})),
+		n(FACTIONS, {
+			q(46794),	-- Paragon of the Court
+			q(46796),	-- Paragon of Highmountain
+			q(46797),	-- Paragon of the Dreamweavers
+			q(46798),	-- Paragon of the Valarjar
+			q(46799),	-- Paragon of the Nightfallen
+			q(46800),	-- Paragon of the Wardens
+			q(46802),	-- Paragon of the Legionfall Armies
+			q(48973, {["timeline"] = {ADDED_7_3_0}}),	-- Paragon of Argussian Reach
+			q(48974, {["timeline"] = {ADDED_7_3_0}}),	-- Paragon of the Army of the Light
+		}),
 		-- Legion start
 		q(42741),	-- Legion Expansion Started Tracking Quest
 		q(46733),	-- Legion Expansion Started Tracking Quest
@@ -517,17 +529,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(44484),	-- Vendor Beckon Trigger - triggers all classes
 		q(45773),	-- 7.2 Class Hall - Maximillian of Northshire - Aqcuisition - Track Mail Sent
 		q(43510),	-- Seal of Fate: Class Hall - weekly quest, various sources
-
-		-- Paragon
-		q(46794),	-- Paragon of the Court
-		q(46796),	-- Paragon of Highmountain
-		q(46797),	-- Paragon of the Dreamweavers
-		q(46798),	-- Paragon of the Valarjar
-		q(46799),	-- Paragon of the Nightfallen
-		q(46800),	-- Paragon of the Wardens
-		q(46802),	-- Paragon of the Legionfall Armies
-		q(48973),	-- Paragon of Argussian Reach
-		q(48974),	-- Paragon of the Army of the Light
 
 		-- Random -- TODO -Darkal
 		q(43463),	-- Ashes of a Fallen Crusader Tracking Quest - Looting Charred Locket from Ashes of a Fallen Crusader
@@ -585,12 +586,69 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(48876),	-- jumping on the rubble in front of "Krokul Emergency Cache" (object id: 276490)
 		q(48877),	-- I'm guessing for clearing the rubble in front of "Legion Power Chest" (object id: 276489)
 		q(48878),	-- clearing rubble for "Lost Krokul Chest" (object id: 276491)
-	}),
+	})),
 
 	-------------------
 	--      BFA      --
 	-------------------
-	expansion(EXPANSION.BFA, {
+	expansion(EXPANSION.BFA, bubbleDownSelf({ ["timeline"] = { ADDED_8_0_1_LAUNCH } }, {
+		n(GROUP_FINDER, bubbleDown({ ["_drop"] = { "g" }, }, {
+			q(53379),	-- BFA 120 E
+			q(53380),	-- BFA 120 E
+			q(53381),	-- BFA 120 E
+			q(53382),	-- BFA 120 E
+			q(53383),	-- BFA 120 E
+			q(53391),	-- BFA 120 E
+			q(53392),	-- BFA 120 E
+			q(53393),	-- BFA 120 E
+			q(53394),	-- BFA 120 E
+			q(53395),	-- BFA 120 E
+			q(53396),	-- BFA 120 E
+			q(53397),	-- BFA 120 E
+			q(53398),	-- BFA 120 E
+			q(53399),	-- BFA 120 E
+			q(53400),	-- BFA 120 E
+			q(53401),	-- BFA 120 E
+			q(53402),	-- BFA 120 E
+			q(53403),	-- BFA 120 E
+			q(53404),	-- BFA 120 E
+			q(53554),	-- BFA 120 E
+			q(53555),	-- BFA 120 E
+			q(53556),	-- BFA 120 E
+			q(53557),	-- BFA 120 E
+			q(53558),	-- BFA 120 E
+			q(53731),	-- Legion 110 A
+			q(53732),	-- Legion 110 A
+			q(53733),	-- Legion 110 A
+			q(53727),	-- Legion 110 H
+			q(53728),	-- Legion 110 H
+			q(53729),	-- Legion 110 H
+			q(53730),	-- Legion 110 H
+			q(53374),	-- BFA 111-119 E
+			q(53375),	-- BFA 111-119 E
+			q(53376),	-- BFA 111-119 E
+			q(53377),	-- BFA 111-119 E
+			q(53378),	-- BFA 111-119 E
+			q(53388),	-- BFA 111-119 E
+			q(53389),	-- BFA 111-119 E
+			q(53390),	-- BFA 111-119 E
+			q(53559),	-- BFA 111-119 E
+			q(53560),	-- BFA 111-119 E
+			q(53561),	-- BFA 111-119 E
+			q(53562),	-- BFA 111-119 E
+			q(53563),	-- BFA 111-119 E
+			q(53339),	-- LFG - BFA - Island Expedition - Heroic Win - Nth
+			q(53340),	-- LFG - BFA - Island Expedition - Mythic Win - Nth
+			q(51838),	-- LFG - BFA - Island Expedition - Normal Win - Nth
+			q(53341),	-- LFG - BFA - Island Expedition - PvP Win - Nth
+			q(50627),	-- LFGDungeons - BFA - Heroic Random - 1st
+			q(50628),	-- LFGDungeons - BFA - Heroic Random - Nth
+			q(50626),	-- LFGDungeons - BFA - Normal Random - 1st
+			q(50625),	-- LFGDungeons - BFA - Normal Random - Nth
+			q(52051),	-- LFGDungeons - BFA - Raid Finder - 1st
+			q(52052),	-- LFGDungeons - BFA - Raid Finder - Nth
+			q(53641),	-- LFGDungeons - BFA - Stromgarde (Arathi)
+		})),
 		--	VARIOUS
 		q(52758),	-- Silverpine Forest - triggered when taking the bat during "Iterating Upon Success" (spellID 388051)
 		q(47703),	-- triggered while on #47631, "Rendezvous with the Libation"
@@ -1427,24 +1485,78 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(58514),	-- Vuk'laz the Earthbreaker bonus roll
 		q(58508),	-- Grand Empress Shek'zara first kill??
 		--q(58770),	-- Grand Empress Shek'zara bonus roll
-	}),
+	})),
 
 	------------------
 	--      SL      --
 	------------------
-	expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-		n(PVP, {
-			q(62298, { ["_drop"] = { "g" },	}),	-- Classic 20-49
-			q(62299, { ["_drop"] = { "g" },	}),	-- Classic 20-49
-			q(62347, { ["_drop"] = { "g" },	}),	-- Shadowlands (51-59) E
-			q(62353, { ["_drop"] = { "g" },	}),	-- Shadowlands (51-59) E
-			q(62357, { ["_drop"] = { "g" },	}),	-- Shadowlands (51-59) E
-			q(62348, { ["_drop"] = { "g" },	}),	-- Shadowlands (51-59) E
+	expansion(EXPANSION.SL, bubbleDownSelf({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
+		n(GROUP_FINDER, bubbleDown({ ["_drop"] = { "g" }, }, {
+			q(62642),	-- LFGDungeons - SL - Heroic Random - 1st
+			q(62643),	-- LFGDungeons - SL - Heroic Random - Nth
+			q(62644),	-- LFGDungeons - SL - Normal Random - 1st
+			q(62645),	-- LFGDungeons - SL - Normal Random - Nth
+			q(62646),	-- LFGDungeons - SL - Raid Finder - 1st
+			q(62647),	-- LFGDungeons - SL - Raid Finder - Nth
+			q(62079),	-- Received weekly Mythic+ Keystone
+			q(62658),	-- Shadowlands Dungeon Reward Quest
+			q(62346),	-- Shadowlands (50-59) E
+			q(62347),	-- Shadowlands (50-59) E
+			q(62348),	-- Shadowlands (50-59) E
+			q(62349),	-- Shadowlands (50-59) E
+			q(62350),	-- Shadowlands (50-59) E
+			q(62353),	-- Shadowlands (50-59) E
+			q(62354),	-- Shadowlands (50-59) E
+			q(62355),	-- Shadowlands (50-59) E
+			q(62356),	-- Shadowlands (50-59) E
+			q(62357),	-- Shadowlands (50-59) E
+			q(62358),	-- Shadowlands (50-59) E
+			q(62359),	-- Shadowlands (50-59) E
+			q(62360),	-- Shadowlands (50-59) E
+			q(60023),	-- Shadowlands (60) E
+			q(60024),	-- Shadowlands (60) E
+			q(60025),	-- Shadowlands (60) E
+			q(60031),	-- Shadowlands (60) E
+			q(60032),	-- Shadowlands (60) E
+			q(60033),	-- Shadowlands (60) E
+			q(60034),	-- Shadowlands (60) E
+			q(60035),	-- Shadowlands (60) E
+			q(60036),	-- Shadowlands (60) E
+			q(60037),	-- Shadowlands (60) E
+			q(60038),	-- Shadowlands (60) E
+			q(60039),	-- Shadowlands (60) E
+			q(60040),	-- Shadowlands (60) E
+			q(64996, {["timeline"] = {ADDED_9_1_5}}),	-- Shadowlands (60) E
+			q(64997, {["timeline"] = {ADDED_9_1_5}}),	-- Shadowlands (60) E
+			q(64998, {["timeline"] = {ADDED_9_1_5}}),	-- Shadowlands (60) E
+			q(64999, {["timeline"] = {ADDED_9_1_5}}),	-- Shadowlands (60) E
+			q(65000, {["timeline"] = {ADDED_9_1_5}}),	-- Shadowlands (60) E
+			q(65001, {["timeline"] = {ADDED_9_1_5}}),	-- Shadowlands (60) E
+			q(65002, {["timeline"] = {ADDED_9_1_5}}),	-- Shadowlands (60) E
+			q(65003, {["timeline"] = {ADDED_9_1_5}}),	-- Shadowlands (60) E
+			q(65703, {["timeline"] = {ADDED_9_2_0}}),	-- Shadowlands (60) E
+			q(65704, {["timeline"] = {ADDED_9_2_0}}),	-- Shadowlands (60) E
+			q(65705, {["timeline"] = {ADDED_9_2_0}}),	-- Shadowlands (60) E
+			q(60014),	-- Shadowlands 60 E
+			q(60015),	-- Shadowlands 60 E
+			q(60016),	-- Shadowlands 60 E
+			q(60017),	-- Shadowlands 60 E
+			q(60018),	-- Shadowlands 60 E
+			q(60019),	-- Shadowlands 60 E
+			q(60026),	-- Shadowlands 60 E
+			q(60027),	-- Shadowlands 60 E
+			q(60028),	-- Shadowlands 60 E
+			q(60029),	-- Shadowlands 60 E
+			q(60030),	-- Shadowlands 60 E
+		})),
+		n(PVP, bubbleDown({ ["_drop"] = { "g" }, }, {
+			q(62298),	-- Classic 20-49
+			q(62299),	-- Classic 20-49
 			-- PvP Assassin
 			q(63389),	-- Killed and looted Horde Assasin (as Alliance obviously)
 			q(63390),	-- Killed and looted Horde Assasin (as Alliance obviously)
 			q(63391),	-- Killed and looted Horde Assasin (as Alliance obviously)
-		}),
+		})),
 		n(PROFESSIONS, {
 			-- Profession crafting world quests
 			q(62940),	-- Triggers when opening the box during "Alchemy: Elixir of Humility" (questID 61619) (spellID 345470)
@@ -1642,10 +1754,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		q(62532),	-- think this was from doing the Sootible Hat: Pink Party Hat quest
 		q(63355),	-- think this was from doing the Sootible Hat: Fae Revel Mask quest (these 2 may be swapped/opposite, they both popped at once)
 
-		-- Dungeons
-		q(62658),	-- Shadowlands Dungeon Reward Quest
-		q(62079),	-- received weekly Mythic+ keystone
-
 		-- 9.1 PTR
 		q(64274),	-- triggered when logging in on 4/30/21 - ptr.wowhead.com says this is a tracking quest for "NPC #179868 slain (5)" and "Dusklight Matriarch [id #179871] slain."  i couldn't see anything on the map that was attached to this quest ID so idk!!  there IS a WQ up in the maw, but it's 64273, not 64274.  but possibly this is tied to the active status of a maw wq, not sure
 		q(64376),	-- tracking quest that automatically accepted when i flew in to Korthia on 5/11/21 - supposedly related to the Darkmaul mount
@@ -1659,28 +1767,80 @@ root(ROOTS.HiddenQuestTriggers, {
 	------------------
 	--      DF      --
 	------------------
-	expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
-		n(GROUP_FINDER, {
-			q(72539, {["_drop"] = {"g"}}),	-- Dragonflight (61-69) E
+	expansion(EXPANSION.DF, bubbleDownSelf({ ["timeline"] = { ADDED_10_0_2_LAUNCH } }, {
+		n(GROUP_FINDER, bubbleDown({ ["_drop"] = { "g" }, }, {
+			q(72187),	-- LFGDungeons - DF - Heroic Random - 1st
+			q(72188),	-- LFGDungeons - DF - Heroic Random - Nth
+			q(72181),	-- LFGDungeons - DF - Normal Random - 1st
+			q(72182),	-- LFGDungeons - DF - Normal Random - Nth
+			q(72184),	-- LFGDungeons - DF - Raid Finder - 1st
+			q(72185),	-- LFGDungeons - DF - Raid Finder - Nth
+			q(72535),	-- Dragonflight (61-69) E
+			q(72536),	-- Dragonflight (61-69) E
+			q(72537),	-- Dragonflight (61-69) E
+			q(72538),	-- Dragonflight (61-69) E
+			q(72539),	-- Dragonflight (61-69) E
+			q(72548),	-- Dragonflight (61-69) E
+			q(72549),	-- Dragonflight (61-69) E
 			q(72550),	-- Dragonflight (61-69) E
-			q(72623, {["_drop"] = {"g"}}),	-- Dragonflight (61-69) E
+			q(72619),	-- Dragonflight (61-69) E
+			q(72620),	-- Dragonflight (61-69) E
+			q(72621),	-- Dragonflight (61-69) E
+			q(72622),	-- Dragonflight (61-69) E
+			q(72623),	-- Dragonflight (61-69) E
 			q(70715),	-- Dragonflight (70) E
+			q(70716),	-- Dragonflight (70) E
+			q(70717),	-- Dragonflight (70) E
+			q(72540),	-- Dragonflight (70) E
+			q(72541),	-- Dragonflight (70) E
+			q(72542),	-- Dragonflight (70) E
+			q(72543),	-- Dragonflight (70) E
 			q(72544),	-- Dragonflight (70) E
+			q(72555),	-- Dragonflight (70) E
+			q(72556),	-- Dragonflight (70) E
 			q(72557),	-- Dragonflight (70) E
+			q(72563),	-- Dragonflight (70) E
+			q(72564),	-- Dragonflight (70) E
+			q(72565),	-- Dragonflight (70) E
+			q(72566),	-- Dragonflight (70) E
 			q(72567),	-- Dragonflight (70) E
+			q(72570),	-- Dragonflight (70) E
+			q(72571),	-- Dragonflight (70) E
 			q(72572),	-- Dragonflight (70) E
+			q(72573),	-- Dragonflight (70) E
+			q(72574),	-- Dragonflight (70) E
 			q(72575),	-- Dragonflight (70) E
+			q(72576),	-- Dragonflight (70) E
+			q(72577),	-- Dragonflight (70) E
+			q(72578),	-- Dragonflight (70) E
+			q(72579),	-- Dragonflight (70) E
 			q(72580),	-- Dragonflight (70) E
+			q(72581),	-- Dragonflight (70) E
+			q(72582),	-- Dragonflight (70) E
 			q(72583),	-- Dragonflight (70) E
+			q(72624),	-- Dragonflight (70) E
+			q(72625),	-- Dragonflight (70) E
+			q(72626),	-- Dragonflight (70) E
+			q(72627),	-- Dragonflight (70) E
 			q(72628),	-- Dragonflight (70) E
+			q(72629),	-- Dragonflight (70) E
+			q(72630),	-- Dragonflight (70) E
 			q(72631),	-- Dragonflight (70) E
+			q(72816),	-- Dragonflight (70) E
 			q(72817),	-- Dragonflight (70) E
-			q(78763),	-- Dragonflight (70) E
+			q(72818),	-- Dragonflight (70) E
+			q(78763, {["timeline"] = {ADDED_10_2_0}}),	-- Dragonflight (70) E
+			q(78764, {["timeline"] = {ADDED_10_2_0}}),	-- Dragonflight (70) E
+			q(78765, {["timeline"] = {ADDED_10_2_0}}),	-- Dragonflight (70) E
+			q(78766, {["timeline"] = {ADDED_10_2_0}}),	-- Dragonflight (70) E
+			q(78767, {["timeline"] = {ADDED_10_2_0}}),	-- Dragonflight (70) E
 			q(72819),	-- Shadowlands (60) E
-		}),
-		n(PVP, {
+			q(72820),	-- Shadowlands (60) E
+			q(72821),	-- Shadowlands (60) E
+		})),
+		n(PVP, bubbleDown({ ["_drop"] = { "g" }, }, {
 			q(79332, {["timeline"] = {ADDED_10_2_0}}, {["repeatable"]=true}),	-- Triggers after winning a Brawl: Battleground Blitz (possibly only when theres an elistment bonus?)
-		}),
+		})),
 		applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, {
 			q(78204, {["timeline"] = {ADDED_10_1_7}}),	-- Master of Timeways - First Week Trigger (spellID 423861)
 		})),
@@ -1690,7 +1850,71 @@ root(ROOTS.HiddenQuestTriggers, {
 	--     TWW      --
 	------------------
 	expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-		--@Darkal: q(84255),	-- received item 212174 (The Warband Map to Everywhere All At Once)
+		n(GROUP_FINDER, bubbleDown({ ["_drop"] = { "g" }, }, {
+			q(83707),	-- LFGDungeons - 11.0 The War Within - Raid Finder - 1st
+			q(83708),	-- LFGDungeons - 11.0 The War Within - Raid Finder - Nth
+			q(78169),	-- LFGDungeons - Timewalking "Heroic" Random - 1st
+			q(83021),	-- LFGDungeons - TWW - Normal Random - 1st
+			q(83022),	-- LFGDungeons - TWW - Normal Random - Nth
+			q(83027),	-- LFGDungeons - TWW - Heroic Random - 1st
+			q(83026),	-- LFGDungeons - TWW - Heroic Random - Nth
+			q(82549),	-- The War Within (71-79) E
+			q(82550),	-- The War Within (71-79) E
+			q(82551),	-- The War Within (71-79) E
+			q(82553),	-- The War Within (71-79) E
+			q(82554),	-- The War Within (71-79) E
+			q(82598),	-- The War Within (71-79) E
+			q(82599),	-- The War Within (71-79) E
+			q(82600),	-- The War Within (71-79) E
+			q(82606),	-- The War Within (71-79) E
+			q(82607),	-- The War Within (71-79) E
+			q(82608),	-- The War Within (71-79) E
+			q(82609),	-- The War Within (71-79) E
+			q(82610),	-- The War Within (71-79) E
+			q(82544),	-- The War Within (80) E
+			q(82545),	-- The War Within (80) E
+			q(82546),	-- The War Within (80) E
+			q(82547),	-- The War Within (80) E
+			q(82548),	-- The War Within (80) E
+			q(82555),	-- The War Within (80) E
+			q(82556),	-- The War Within (80) E
+			q(82567),	-- The War Within (80) E
+			q(82568),	-- The War Within (80) E
+			q(82569),	-- The War Within (80) E
+			q(82570),	-- The War Within (80) E
+			q(82573),	-- The War Within (80) E
+			q(82574),	-- The War Within (80) E
+			q(82575),	-- The War Within (80) E
+			q(82576),	-- The War Within (80) E
+			q(82577),	-- The War Within (80) E
+			q(82578),	-- The War Within (80) E
+			q(82587),	-- The War Within (80) E
+			q(82588),	-- The War Within (80) E
+			q(82589),	-- The War Within (80) E
+			q(82590),	-- The War Within (80) E
+			q(82591),	-- The War Within (80) E
+			q(82592),	-- The War Within (80) E
+			q(82593),	-- The War Within (80) E
+			q(82594),	-- The War Within (80) E
+			q(82595),	-- The War Within (80) E
+			q(82597),	-- The War Within (80) E
+			q(82601),	-- The War Within (80) E
+			q(82602),	-- The War Within (80) E
+			q(82603),	-- The War Within (80) E
+			q(82604),	-- The War Within (80) E
+			q(82605),	-- The War Within (80) E
+			q(82611),	-- The War Within (80) E
+			q(82612),	-- The War Within (80) E
+			q(82613),	-- The War Within (80) E
+			q(82618),	-- The War Within (80) E
+			q(82619),	-- The War Within (80) E
+			q(82620),	-- The War Within (80) E
+			q(82621),	-- The War Within (80) E
+			q(82622),	-- The War Within (80) E
+			q(82623),	-- The War Within (80) E
+			q(82624),	-- The War Within (80) E
+			q(82625),	-- The War Within (80) E
+		})),
 	})),
 
 	--------------------

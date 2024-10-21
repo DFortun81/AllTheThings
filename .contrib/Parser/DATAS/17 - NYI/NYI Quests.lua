@@ -3223,83 +3223,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 		expansion(EXPANSION.BFA, patch(0,1), bubbleDownSelf({ ["timeline"] = { CREATED_8_0_1 } }, {
 			q(50882,{ ["_drop"] = { "g" },}),	-- All to Ash
 			q(52220),	-- Dragon Attack
-			q(53339),	-- LFG - BFA - Island Expedition - Heroic Win - Nth
-			q(53340),	-- LFG - BFA - Island Expedition - Mythic Win - Nth
-			q(51838),	-- LFG - BFA - Island Expedition - Normal Win - Nth
-			q(53341),	-- LFG - BFA - Island Expedition - PvP Win - Nth
-			q(50627),	-- LFGDungeons - BFA - Heroic Random - 1st
-			q(50628),	-- LFGDungeons - BFA - Heroic Random - Nth
-			q(50626),	-- LFGDungeons - BFA - Normal Random - 1st
-			q(50625),	-- LFGDungeons - BFA - Normal Random - Nth
-			q(52051),	-- LFGDungeons - BFA - Raid Finder - 1st
-			q(52052),	-- LFGDungeons - BFA - Raid Finder - Nth
-			q(53641),	-- LFGDungeons - BFA - Stromgarde (Arathi)
-			q(53374),	-- BFA 111-119 E
-			q(53375),	-- BFA 111-119 E
-			q(53376),	-- BFA 111-119 E
-			q(53377),	-- BFA 111-119 E
-			q(53378),	-- BFA 111-119 E
-			q(53388),	-- BFA 111-119 E
-			q(53389),	-- BFA 111-119 E
-			q(53390),	-- BFA 111-119 E
-			q(53559),	-- BFA 111-119 E
-			q(53560),	-- BFA 111-119 E
-			q(53561),	-- BFA 111-119 E
-			q(53562),	-- BFA 111-119 E
-			q(53563),	-- BFA 111-119 E
-			q(53379, {	-- BFA 120 E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(53380),	-- BFA 120 E
-			q(53381),	-- BFA 120 E
-			q(53382, {	-- BFA 120 E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(53383),	-- BFA 120 E
-			q(53391),	-- BFA 120 E
-			q(53392),	-- BFA 120 E
-			q(53393),	-- BFA 120 E
-			q(53394, {	-- BFA 120 E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(53395),	-- BFA 120 E
-			q(53396),	-- BFA 120 E
-			q(53397),	-- BFA 120 E
-			q(53398, {	-- BFA 120 E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(53399),	-- BFA 120 E
-			q(53400),	-- BFA 120 E
-			q(53401),	-- BFA 120 E
-			q(53402),	-- BFA 120 E
-			q(53403),	-- BFA 120 E
-			q(53404),	-- BFA 120 E
-			q(53554, {	-- BFA 120 E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(53555, {	-- BFA 120 E
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(53556),	-- BFA 120 E
-			q(53557),	-- BFA 120 E
-			q(53558),	-- BFA 120 E
-			q(53731, {	-- Legion 110 A
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(53732, {	-- Legion 110 A
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(53733),	-- Legion 110 A
-			q(53727, {	-- Legion 110 H
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(53728, {	-- Legion 110 H
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(53729, {	-- Legion 110 H
-				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
-			}),
-			q(53730),	-- Legion 110 H
 			q(49675),	--
 			q(47860),	-- A Rude Awakening
 			q(48994),	-- Akunda the Liar
@@ -6041,22 +5964,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(59079, { ["name"] = "Portal to Paradise", }),	-- Portal to Paradise
 			q(62071, { ["name"] = "RRP Test Quest", }),	-- RRP Test Quest
 			q(59081, { ["name"] = "Scum Scrape", }),	-- Scum Scrape
-			q(60014, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
-			q(60015, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
-			q(60016, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
-			q(60017, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
-			q(60018, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
-			q(60019, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
-			q(60026, { ["name"] = "Shadowlands 60 E", ["_drop"] = { "g" }, }),	-- Shadowlands 60 E
-			q(60027, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
-			q(60028, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
-			q(60029, { ["name"] = "Shadowlands 60 E", }),	-- Shadowlands 60 E
-			q(60030, { ["name"] = "Shadowlands 60 E", ["_drop"] = { "g" }, }),	-- Shadowlands 60 E
-			q(62346, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
-			q(62349, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
-			q(62350, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
-			q(60036, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
-			q(60040, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
 			q(60105, { ["name"] = "Sineater Belfry", }),	-- Sineater Belfry
 			q(60092, { ["name"] = "Skoldus Hall", }),	-- Skoldus Hall
 			q(60474, { ["name"] = "Spawn Tracking Unit-Specified World Effect in a WMO Bug", }),	-- Spawn Tracking Unit-Specified World Effect in a WMO Bug
@@ -6940,29 +6847,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(61554),	-- The Play's The Thing
 			q(63101),	-- XX REUSEME
 			-- Quest from Unsorted
-			q(62642, { ["name"] = "LFGDungeons - SL - Heroic Random - 1st", }),	-- LFGDungeons - SL - Heroic Random - 1st
-			q(62643, { ["name"] = "LFGDungeons - SL - Heroic Random - Nth", }),	-- LFGDungeons - SL - Heroic Random - Nth
-			q(62644, { ["name"] = "LFGDungeons - SL - Normal Random - 1st", }),	-- LFGDungeons - SL - Normal Random - 1st
-			q(62645, { ["name"] = "LFGDungeons - SL - Normal Random - Nth", }),	-- LFGDungeons - SL - Normal Random - Nth
-			q(62646, { ["name"] = "LFGDungeons - SL - Raid Finder - 1st", }),	-- LFGDungeons - SL - Raid Finder - 1st
-			q(62647, { ["name"] = "LFGDungeons - SL - Raid Finder - Nth", }),	-- LFGDungeons - SL - Raid Finder - Nth
-			q(60023, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(60024, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(60025, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(60031, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
-			q(60032, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(60033, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(60034, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(60035, { ["name"] = "Shadowlands (60) E", ["_drop"] = { "g" }, }),	-- Shadowlands (60) E
-			q(60037, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(60038, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(60039, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(62354, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
-			q(62355, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
-			q(62356, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
-			q(62358, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
-			q(62359, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
-			q(62360, { ["name"] = "Shadowlands (51-59) E", }),	-- Shadowlands (51-59) E
 			q(63041, { ["name"] = "Short-Supply Reward", ["_drop"] = {"g"} }),	-- Short-Supply Reward
 			-- Quest from WoW.Tools
 			-- 9.0.2.35854
@@ -7197,15 +7081,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 
 		-- 9.1.5
 		expansion(EXPANSION.SL, patch(1,5), bubbleDownSelf({ ["timeline"] = { CREATED_9_1_5 } }, {
-			-- Quest from Unsorted
-			q(64996, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(64997, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(64998, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(64999, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(65000, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(65001, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(65002, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(65003, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
 			-- Quest from WoW.Tools
 			-- 9.1.5.39977
 			q(64711),	--
@@ -7283,9 +7158,6 @@ root(ROOTS.NeverImplemented, n(QUESTS, {
 			q(64649, { ["name"] = "A Mountain of Work to Do", }),	-- A Mountain of Work to Do
 			-- Quest from Unsorted
 			q(64006, { ["name"] = "Nav Test: Zereth Mortis", }),	-- Nav Test: Zereth Mortis
-			q(65703, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(65704, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
-			q(65705, { ["name"] = "Shadowlands (60) E", }),	-- Shadowlands (60) E
 			q(64582, { ["name"] = "Yuni-Test", }),	-- Yuni-Test
 
 			q(65375),	-- Schematic Reassimilation: Pale Regal Cervid
