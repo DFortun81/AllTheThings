@@ -358,12 +358,6 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 				i(208878),	-- Adventurer's Footlocker //Given to alts who used the TWW prepurchase boost
 			})),
 		}),
-		expansion(EXPANSION.TWW, {
-			-- 11.0.2
-			expansion(EXPANSION.TWW, patch(0,2), bubbleDownSelf({ ["timeline"] = { ADDED_11_0_2 } }, {
-				i(225937),	-- Putrid Goop //Biproduct of Fine Egg Powder salvage
-			})),
-		}),
 	}),
 	n(MOUNT_MODS, {
 		expansion(EXPANSION.DF, {

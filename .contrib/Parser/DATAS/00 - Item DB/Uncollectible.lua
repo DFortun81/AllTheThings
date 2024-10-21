@@ -2034,6 +2034,7 @@ i(225816);	-- Profaned Pendant
 i(220257);	-- Pulsing Pustules
 i(220230);	-- Punctured Intestine
 i(220261);	-- Pungent Mushroom
+i(225937);	-- Putrid Goop
 i(220228);	-- Quartz Growth
 i(227318);	-- Quicksilver Sipper
 i(220288);	-- Quivering Tail
