@@ -411,7 +411,7 @@ i(224566, FACTION_TIMBERMAW_HOLD);			-- Commendation of the Timbermaw Hold
 i(224565, FACTION_WINTERSABER_TRAINERS);	-- Commendation of the Wintersaber Trainers
 i(224570, FACTION_ZANDALAR_TRIBE);			-- Commendation of the Zandalar Tribe
 -- Might be NYI?
-i(224564, 630);								-- Commendation of the Ravasaur Trainers
+-- i(224564, 630);								-- Commendation of the Ravasaur Trainers
 -- Blizz decided against adding these, boooo
 --i(224569, FACTION_THE_DEFILERS);			-- Commendation of the Defilers
 --i(224563, FACTION_FROSTWOLF_CLAN);		-- Commendation of the Frostwolf Clan
