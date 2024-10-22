@@ -157,13 +157,13 @@ root(ROOTS.ExpansionFeatures,
 								["provider"] = { "i", 127989 },	-- Waterlogged Manifest
 							}),
 							q(39665, {	-- A True Naval Commander
-								["provider"] = { "n", 93812 },	-- Salty Jorren
+								["provider"] = { "n", 93812 },	-- Salty Jorren <Naval Equipment Specialist>
 								["coord"] = { 28.6, 10.8, DRAENOR_SHADOWMOON_VALLEY },
 								["races"] = ALLIANCE_ONLY,
 								["sourceQuest"] = 39666,	-- Equipping Our Fleet
 							}),
 							q(39676, {	-- A True Naval Commander
-								["provider"] = { "n", 94801 },	-- Kronk Rustspark
+								["provider"] = { "n", 94801 },	-- Kronk Rustspark <Naval Equipment Specialist>
 								["coord"] = { 40.0, 72.2, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 39675,	-- Equipping Our Fleet
@@ -311,6 +311,46 @@ root(ROOTS.ExpansionFeatures,
 								["coord"] = { 42.1, 71.0, FROSTFIRE_RIDGE },
 								["races"] = HORDE_ONLY,
 								["sourceQuest"] = 39676,	-- A True Naval Commander
+							}),
+						}),
+						n(VENDORS, {
+							n(94801, {	-- Kronk Rustspark <Naval Equipment Specialist>
+								["coord"] = { 40.0, 72.2, FROSTFIRE_RIDGE },
+								["races"] = HORDE_ONLY,
+								["g"] = sharedData({ ["cost"] = {{ "c", 824, 500 }} }, {	-- Garrison Resources
+									i(125787),	-- Bilge Pump
+									i(127882),	-- Blast Furnace
+									i(127884),	-- Felsmoke Launcher
+									i(127895, {	-- Ghostly Spyglass
+										["cost"] = {{ "c", 824, 1000 }},
+									}),
+									i(127881),	-- Gyroscopic Internal Stabilizer
+									i(127662),	-- High Intensity Fog Lights
+									i(127880),	-- Ice Cutter
+									i(127663),	-- Trained Shark Tank
+									i(127883),	-- True Iron Rudder
+									i(127894),	-- Tuskarr Fishing Net
+									i(127886),	-- Unsinkable
+								}),
+							}),
+							n(93812, {	-- Salty Jorren <Naval Equipment Specialist>
+								["coord"] = { 28.6, 10.8, DRAENOR_SHADOWMOON_VALLEY },
+								["races"] = ALLIANCE_ONLY,
+								["g"] = sharedData({ ["cost"] = {{ "c", 824, 500 }} }, {	-- Garrison Resources
+									i(125787),	-- Bilge Pump
+									i(127882),	-- Blast Furnace
+									i(127884),	-- Felsmoke Launcher
+									i(127895, {	-- Ghostly Spyglass
+										["cost"] = {{ "c", 824, 1000 }},
+									}),
+									i(127881),	-- Gyroscopic Internal Stabilizer
+									i(127662),	-- High Intensity Fog Lights
+									i(127880),	-- Ice Cutter
+									i(127663),	-- Trained Shark Tank
+									i(127883),	-- True Iron Rudder
+									i(127894),	-- Tuskarr Fishing Net
+									i(127886),	-- Unsinkable
+								}),
 							}),
 						}),
 					},

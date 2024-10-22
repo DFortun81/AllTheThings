@@ -78,6 +78,45 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 							["coord"] = { 44.66, 72.87, HIGHMOUNTAIN },
 						}),
 					}),
+					expansion(EXPANSION.BFA, sharedDataSelf({ ["timeline"] = ADDED_11_0_5 }, {
+						molemachine(80102, "Tidebreak Summit", {
+							["coord"] = { 64.21, 29.44, STORMSONG_VALLEY },
+						}),
+						molemachine(80101, "Wailing Tideways", {
+							["coord"] = { 88.22, 71.53, TIRAGARDE_SOUND },
+						}),
+						molemachine(80100, "Xibala Incursion", {
+							["coord"] = { 38.24, 72.38, ZULDAZAR },
+						}),
+						molemachine(80099, "Zalamar Invasion", {
+							["coord"] = { 38.24, 45.15, NAZMIR },
+						}),
+					})),
+					expansion(EXPANSION.SL, sharedDataSelf({ ["timeline"] = ADDED_11_0_5 }, {
+						molemachine(80104, "Scorched Crypt", {
+							["coord"] = { 38.79, 19.92, REVENDRETH },
+						}),
+						molemachine(80106, "Soryn's Meadow", {
+							["coord"] = { 66.47, 50.55, ARDENWEALD },
+						}),
+						molemachine(80105, "The Eternal Forge", {
+							["coord"] = { 51.75, 13.14, BASTION },
+						}),
+						molemachine(80103, "Valley of a Thousand Legs", {
+							["coord"] = { 53.49, 59.79, MALDRAXXUS },
+						}),
+					})),
+					expansion(EXPANSION.DF, sharedDataSelf({ ["timeline"] = ADDED_11_0_5 }, {
+						molemachine(80107, "The Slagmire", {
+							["coord"] = { 32.36, 54.90, THE_WAKING_SHORES },
+						}),
+						molemachine(80108, "Vakthros Summit", {
+							["coord"] = { 80.09, 38.96, THE_AZURE_SPAN },
+						}),
+						molemachine(80109, "Obsidian Rest", {
+							["coord"] = { 52.73, 27.67, ZARALEK_CAVERN },
+						}),
+					})),
 				},
 			}),
 		},

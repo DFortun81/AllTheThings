@@ -208,7 +208,7 @@ root(ROOTS.Instances, expansion(EXPANSION.TBC, applyclassicphase(TBC_PHASE_THREE
 			-- #if AFTER 7.2.5.23910
 			d(DIFFICULTY.RAID.NORMAL, {
 				["lvl"] = 68,
-				["ignoreBonus"] = 1,
+				["ignoreBonus"] = true,
 				["groups"] = {
 			-- #endif
 					e(1582, {	-- High Warlord Naj'entus
