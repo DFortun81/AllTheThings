@@ -2729,7 +2729,7 @@ namespace ATT
                         // Mounts with Items can set 'provider' on the Criteria instead of nesting
                         if (TryGetSOURCED("mountID", id, out var mountSources))
                         {
-                            foreach(var mount in mountSources)
+                            foreach (var mount in mountSources)
                             {
                                 if (mount.TryGetValue("itemID", out long mountItemID))
                                 {
@@ -2740,7 +2740,8 @@ namespace ATT
                                 }
                             }
                         }
-                        else if (
+
+                        if (cloned &
                             //!SOURCED["spellID"].ContainsKey(id) &&
                             !SOURCED["recipeID"].ContainsKey(id))
                         {
@@ -2758,9 +2759,14 @@ namespace ATT
                                 data.TryGetValue("achID", out long achID);
                                 LogDebugWarn($"Criteria {achID}:{criteriaID} not nested to Unsourced Spell/Recipe {id}. Consider Sourcing Spell/Recipe");
                             }
-                            Objects.TrackPostProcessMergeKey("spellID", id);
-                            Objects.TrackPostProcessMergeKey("recipeID", id);
                             cloned = false;
+                        }
+
+                        if (!cloned)
+                        {
+                            Objects.TrackPostProcessMergeKey("spellID", id);
+                            Objects.TrackPostProcessMergeKey("mountID", id);
+                            Objects.TrackPostProcessMergeKey("recipeID", id);
                         }
                     }
                 }
