@@ -1183,17 +1183,35 @@ root(ROOTS.Zones, {
 		ach(5752, {	-- Justly Rewarded
 			["timeline"] = { ADDED_4_1_0 },
 		}),
-		applyclassicphase(CATA_PHASE_ONE, ach(4875, {	-- Loremaster of Cataclysm
+		applyclassicphase(CATA_PHASE_ONE, ach(4875, {	-- Loremaster of Cataclysm (A)
 			["sym"] = {{"meta_achievement",
 				4870,	-- Coming Down the Mountain
 				4871,	-- Deep into Deepholm
 				4873,	-- Fading into Twilight [A]
+				-- #if AFTER 5.0.4
 				5501,	-- Fading into Twilight [H]
+				-- #endif
 				4869,	-- Sinking into Vashj'ir [A]
+				-- #if AFTER 5.0.4
 				4982,	-- Sinking into Vashj'ir [H]
+				-- #endif
 				4872,	-- Unearthing Uldum
 			}},
 			["timeline"] = { ADDED_4_0_3 },
+			-- #if BEFORE 5.0.4
+			["races"] = ALLIANCE_ONLY,
+			-- #endif
+		})),
+		applyclassicphase(CATA_PHASE_ONE, ach(4983, {	-- Loremaster of Cataclysm (H)
+			["sym"] = {{"meta_achievement",
+				4870,	-- Coming Down the Mountain
+				4871,	-- Deep into Deepholm
+				5501,	-- Fading into Twilight [H]
+				4982,	-- Sinking into Vashj'ir [H]
+				4872,	-- Unearthing Uldum
+			}},
+			["timeline"] = { ADDED_4_0_3, REMOVED_5_0_4 },
+			["races"] = HORDE_ONLY,
 		})),
 		ach(13512, bubbleDownSelf({ ["timeline"] = { ADDED_8_1_5 }, }, {	-- Master Calligrapher
 			crit(44853, {	-- Master of Calligraphy - Circle
@@ -1345,6 +1363,9 @@ root(ROOTS.Zones, {
 				1676,	-- Loremaster of Eastern Kingdoms (A)
 				1262,	-- Loremaster of Outland (A)
 				41,		-- Loremaster of Northrend (A)
+				-- #if AFTER CATA
+				4875,	-- Loremaster of Cataclysm (A)
+				-- #endif
 			}},
 			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 			["races"] = ALLIANCE_ONLY,
@@ -1359,6 +1380,9 @@ root(ROOTS.Zones, {
 				1677,	-- Loremaster of Eastern Kingdoms (H)
 				1274,	-- Loremaster of Outland (H)
 				1360,	-- Loremaster of Northrend (H)
+				-- #if AFTER CATA
+				4983,	-- Loremaster of Cataclysm (H)
+				-- #endif
 			}},
 			["timeline"] = { ADDED_3_0_2, REMOVED_5_0_4 },
 			["races"] = HORDE_ONLY,

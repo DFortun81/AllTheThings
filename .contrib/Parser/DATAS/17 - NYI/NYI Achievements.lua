@@ -329,7 +329,6 @@ root(ROOTS.NeverImplemented, n(ACHIEVEMENTS, {
 			ach(4867),	-- Explore Tol Barad NYI
 			ach(4953),	-- Guild Gladiator
 			ach(4877),	-- Kalimdor Dungeon Explorer
-			ach(4983),	-- Loremaster of Cataclysm
 			ach(4880),	-- Master of Battle for Gilneas
 			ach(5259),	-- Master of Twin Peaks
 			ach(4879),	-- Northrend Dungeon Explorer
