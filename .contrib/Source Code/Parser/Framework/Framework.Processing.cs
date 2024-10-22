@@ -892,6 +892,11 @@ namespace ATT
 
             Objects.PerformWipes(data);
 
+            // if (data.TryGetValue("itemID", out long itemID) && itemID == 43951)
+            // {
+
+            // }
+
             // Finally post-merge anything which is supposed to merge into this group now that it (and its children) have been fully validated
             Objects.PostProcessMergeInto(data);
 
@@ -1735,10 +1740,10 @@ namespace ATT
                 data.ContainsKey("criteriaID") ||
                 (data.TryGetValue("collectible", out bool collectible) && !collectible)) return;
 
-            //if (achID == 9713)
-            //{
+            // if (achID == 9713)
+            // {
 
-            //}
+            // }
 
             // Grab AchievementDB info
             ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> achInfo);
@@ -2612,8 +2617,10 @@ namespace ATT
             }
             if (data.TryGetValue("_spells", out object spells))
             {
+                // Spells are split into multiple "useful" types
                 //DuplicateDataIntoGroups(data, spells, "spellID");
                 DuplicateDataIntoGroups(data, spells, "recipeID");
+                //DuplicateDataIntoGroups(data, spells, "mountID");
                 cloned = true;
             }
             if (data.TryGetValue("_achievements", out object achievements))
@@ -2719,7 +2726,21 @@ namespace ATT
                 {
                     foreach (long id in spellObjs.AsTypedEnumerable<long>())
                     {
-                        if (
+                        // Mounts with Items can set 'provider' on the Criteria instead of nesting
+                        if (TryGetSOURCED("mountID", id, out var mountSources))
+                        {
+                            foreach(var mount in mountSources)
+                            {
+                                if (mount.TryGetValue("itemID", out long mountItemID))
+                                {
+                                    data.TryGetValue("achID", out long achID);
+                                    LogDebug($"Criteria {achID}:{criteriaID} using Provider for a MountItem {mountItemID} due to Spell {id} requirement");
+                                    Objects.Merge(data, "provider", new List<object> { "i", mountItemID });
+                                    cloned = false;
+                                }
+                            }
+                        }
+                        else if (
                             //!SOURCED["spellID"].ContainsKey(id) &&
                             !SOURCED["recipeID"].ContainsKey(id))
                         {

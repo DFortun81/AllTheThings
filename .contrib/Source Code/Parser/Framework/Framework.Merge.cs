@@ -32,7 +32,7 @@ namespace ATT
                         {
                             if (pair.Value is IDictionary<string, object> exportDB)
                             {
-                                foreach(var kvp in exportDB)
+                                foreach (var kvp in exportDB)
                                 {
                                     Exports[kvp.Key] = kvp.Value;
                                 }
@@ -1123,27 +1123,30 @@ namespace ATT
             if (dataList == null)
             {
                 ThrowBadFormatDB("AchievementDB");
+                return;
             }
-            else
+
+            foreach (var achieveInfo in dataList)
             {
-                foreach (var achieveInfo in dataList)
+                // KEY: Achievement ID, VALUE: Dictionary
+                if (achieveInfo is IDictionary<string, object> info && (info.TryGetValue("achID", out long achID) || info.TryGetValue("achievementID", out achID)))
                 {
-                    // KEY: Achievement ID, VALUE: Dictionary
-                    if (achieveInfo is IDictionary<string, object> info && (info.TryGetValue("achID", out long achID) || info.TryGetValue("achievementID", out achID)))
+                    // if (achID == 9713)
+                    // {
+
+                    // }
+                    if (ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> existingData))
                     {
-                        if (ACHIEVEMENTS.TryGetValue(achID, out IDictionary<string, object> existingData))
+                        if (onlyNew)
                         {
-                            if (onlyNew)
-                            {
-                                foreach (var pair2 in info) if (!existingData.ContainsKey(pair2.Key)) Objects.Merge(existingData, pair2.Key, pair2.Value);
-                            }
-                            else
-                            {
-                                foreach (var pair2 in info) Objects.Merge(existingData, pair2.Key, pair2.Value);
-                            }
+                            foreach (var pair2 in info) if (!existingData.ContainsKey(pair2.Key)) Objects.Merge(existingData, pair2.Key, pair2.Value);
                         }
-                        else ACHIEVEMENTS[achID] = info;
+                        else
+                        {
+                            foreach (var pair2 in info) Objects.Merge(existingData, pair2.Key, pair2.Value);
+                        }
                     }
+                    else ACHIEVEMENTS[achID] = info;
                 }
             }
         }

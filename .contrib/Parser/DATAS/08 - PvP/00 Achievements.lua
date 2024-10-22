@@ -309,7 +309,9 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 	ach(19417, {		-- Brawlroom Blitzer
 		["timeline"] = { ADDED_10_2_0 },
 	}),
-	applyclassicphase(PHASE_TWO, ach(727, {	-- Call in the Cavalry
+	applyclassicphase(PHASE_TWO, ach(727, {	-- Call in the Cavalry (automated)
+	-- #IF ANYCLASSIC
+	-- @Crieve: This should be automated now
 		["providers"] = {
 			{ "i", 18243 },	-- Black Battlestrider (Original)
 			{ "i", 18247 },	-- Black War Kodo (Original)
@@ -332,6 +334,7 @@ root(ROOTS.PVP, pvp(n(ACHIEVEMENTS, {
 			{ "i", 29472 },	-- Whistle of the Black War Raptor
 			-- #endif
 		},
+		-- #ENDIF
 	})),
 	applyclassicphase(WRATH_PHASE_ONE, ach(908, {	-- Call to Arms! (Alliance)
 		["timeline"] = { ADDED_3_0_2 },
