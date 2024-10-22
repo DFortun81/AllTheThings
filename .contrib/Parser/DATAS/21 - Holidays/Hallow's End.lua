@@ -2221,7 +2221,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				-- #endif
 				objective(3, {	-- 0/5 Blood Nettle
-					["provider"] = { "i", 71035 },	-- Blood Nettle
+					["providers"] = {
+						{ "i",  71035 },	-- Blood Nettle
+						{ "o", 209059 },	-- Blood Nettle
+					},
+					["coord"] = { 51.5, 10.0, STORMWIND_CITY },
 				}),
 			},
 		}),
@@ -2249,7 +2253,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.HALLOWS_END, n(HALLOWS_END_HEADER, {
 				}),
 				-- #endif
 				objective(3, {	-- 0/5 Blood Nettle
-					["provider"] = { "i", 71035 },	-- Blood Nettle
+					["providers"] = {
+						{ "i",  71035 },	-- Blood Nettle
+						{ "o", 209059 },	-- Blood Nettle
+					},
+					["coord"] = { 45.9, 49.5, ORGRIMMAR },
 				}),
 			},
 		}),
