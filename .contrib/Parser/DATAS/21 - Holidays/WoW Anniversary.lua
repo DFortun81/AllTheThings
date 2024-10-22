@@ -8,8 +8,8 @@ WOW_ANNIVERSARY_ROOT = createHeader({
 	eventID = EVENTS.WOW_ANNIVERSARY,
 	eventSchedule = {
 		1, -- Recurring, note that this changes every year.
-		11, 16, 10, 0,	-- 11/16 at 10:00 AM
-		12, 07, 10, 0	-- 12/07 at 10:00 AM
+		10, 22, 10, 0,	-- 10/22 at 10:00 AM
+		01, 07, 10, 0	-- 01/07 at 10:00 AM
 	},
 	text = {
 		en = "WoW's Anniversary",
@@ -191,8 +191,8 @@ WOW_ANNIVERSARY_NINETEEN = createHeader({
 	eventID = 1397,
 	eventSchedule = {
 		0, -- November 16th through December 7th
-		2022, 11, 16,	-- 11/16/2022
-		2022, 12, 7,	-- 12/07/2022
+		2023, 11, 16,	-- 11/16/2023
+		2023, 12, 7,	-- 12/07/2023
 	},
 	text = {
 		en = WOWAPI_GetAchievementName(18702),
@@ -201,12 +201,12 @@ WOW_ANNIVERSARY_NINETEEN = createHeader({
 WOW_ANNIVERSARY_TWENTY = createHeader({
 	readable = "WoW's 20th Anniversary",
 	icon = 133783,
-	-- eventID = 1397,
-	-- eventSchedule = {
-	-- 	0, -- November 16th through December 7th
-	-- 	2022, 11, 16,	-- 11/16/2022
-	-- 	2022, 12, 7,	-- 12/07/2022
-	-- },
+	eventID = 1509,
+	eventSchedule = {
+		0, -- October 22nd through Jan 7th
+		2024, 10, 22,	-- 10/22/2024
+		2025, 01, 07,	-- 01/07/2025
+	},
 	-- text = {
 	-- 	en = WOWAPI_GetAchievementName(18702),
 	-- },
