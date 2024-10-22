@@ -366,10 +366,13 @@ if app.IsRetail then
 		local saved, none = {}, {}
 		for id,_ in pairs(app.GetRawFieldContainer(KEY)) do
 			faction = app.SearchForObject(KEY, id, "key")
-			if faction.standing >= faction.maxstanding then
-				saved[id] = true
-			else
-				none[id] = true
+			if faction then
+				if faction.standing >= faction.maxstanding then
+					saved[id] = true
+				else
+					none[id] = true
+				end
+			else app.PrintDebug(Colorize("MISSING FACTION", app.Colors.ChatLinkError),app:Linkify("Faction "..id,app.Colors.ChatLinkError,"search:factionID:"..id))
 			end
 		end
 		-- Character Cache
@@ -386,10 +389,13 @@ if app.IsRetail then
 			if not IsCached(CACHE, id) then
 				-- app.PrintDebug("Check Uncached Faction",id)
 				faction = SearchForObject(KEY, id, "key")
-				-- factions can dynamically be during the 'UPDATE_FACTION' event (thanks Blizzard not telling us which Faction got rep...)
-				if faction.standing >= faction.maxstanding then
-					-- Character Cache
-					app.SetCollected(faction, CACHE, id, true, SETTING)
+				if faction then
+					-- factions can dynamically be during the 'UPDATE_FACTION' event (thanks Blizzard not telling us which Faction got rep...)
+					if faction.standing >= faction.maxstanding then
+						-- Character Cache
+						app.SetCollected(faction, CACHE, id, true, SETTING)
+					end
+				else app.PrintDebug(Colorize("MISSING FACTION", app.Colors.ChatLinkError),app:Linkify("Faction "..id,app.Colors.ChatLinkError,"search:factionID:"..id))
 				end
 			end
 		end
