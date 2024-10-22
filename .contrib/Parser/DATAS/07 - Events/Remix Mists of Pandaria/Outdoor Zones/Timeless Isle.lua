@@ -131,7 +131,17 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					["coord"] = { 26.4, 54.3, TIMELESS_ISLE },
 				}),
 			}),
-			n(REWARDS, {
+			n(VENDORS, {
+				n(73306, {	-- Mistweaver Ku <Lost Treasures of Shaohao>
+					["coord"] = { 42.6, 54.6, TIMELESS_ISLE },
+					["g"] = {
+						i(219222, {	-- Time-Lost Artifact
+							["cost"] = { { "c", 777, 7500 } },	-- 7,500x Timeless Coin
+						}),
+					},
+				}),
+			}),
+			n(ZONE_REWARDS, {
 				filter(CLOTH, {
 					i(214000),	-- Amaranthine Amice
 					i(214001),	-- Amaranthine Belt
@@ -271,16 +281,6 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 					i(216576),	-- Wasteland Deflector (wowhead)
 					i(215869),	-- Waterweaver's Staff (wowhead)
 					i(215776),	-- Zeeg's Ancient Kegbreaker (wowhead)
-				}),
-			}),
-			n(VENDORS, {
-				n(73306, {	-- Mistweaver Ku <Lost Treasures of Shaohao>
-					["coord"] = { 42.6, 54.6, TIMELESS_ISLE },
-					["g"] = {
-						i(219222, {	-- Time-Lost Artifact
-							["cost"] = { { "c", 777, 7500 } },	-- 7,500x Timeless Coin
-						}),
-					},
 				}),
 			}),
 		},
