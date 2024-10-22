@@ -46,7 +46,7 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				},
 			}),
 			n(226211, {	-- Ax'ill <Alchemixologist>
-				["coord"] = { 60.80, 42.60, AZJ_KAHET },
+				["coord"] = { 60.80, 42.60, NERUBAR },
 				["g"] = {
 					i(223961, {	-- Recipe: Azj-Kahet Special (RECIPE!)
 						["cost"] = {{"c", KEJ, 1500}},

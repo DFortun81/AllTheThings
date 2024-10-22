@@ -69,9 +69,12 @@ root(ROOTS.Promotions, {
 			n(ACHIEVEMENTS, {
 				ach(19866,	{	-- Hearthstoned: Fiery Edition
 					["provider"] = { "i", 163186 },	-- Fiery Hearthsteed (MOUNT!)
+					["u"] = REMOVED_FROM_GAME,	-- May 14, 2024
 				}),
 				ach(20033, {	-- Hearthstone Beginner
-					i(211946),	-- Hearthstone Game Table (TOY!)
+					i(211946, {	-- Hearthstone Game Table (TOY!)
+						i(212924),	-- Stolen Hearthstone Card
+					}),
 				}),
 				ach(19724),		-- Hearthstone Card Collection
 			}),
@@ -198,7 +201,8 @@ root(ROOTS.Promotions, {
 				},
 			}),
 			i(163186, {	-- Fiery Hearthsteed (MOUNT!)
-				["description"] = "Granted to Players who login to Hearthstone between March 11 2024 and May 14 2024.",
+				["description"] = "Granted to Players who logged in to Hearthstone between March 11th 2024 and May 14th 2024.",
+				["u"] = REMOVED_FROM_GAME,
 			}),
 			n(VENDORS, {
 				n(215385, {	-- Shady Dealer

@@ -85,10 +85,11 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 					i(221255),	-- Sharpened Scalepiercer
 				},
 			}),
-			n(221690, {	-- Strenght of Beledar
+			n(221690, {	-- Strength of Beledar
 				["coord"] = { 43.6, 29.9, HALLOWFALL },
 				["questID"] = 81849,
 				["g"] = {
+					i(221251),	-- Bestial Underground Cleaver
 					i(221216),	-- Bruin Strength Legplates
 					i(221246),	-- Fierce Beast Staff
 					i(221508),	-- Pelt of Beledar's Strength
@@ -198,8 +199,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 				q(84062, { -- Weekly reputation: Sloshmuck
 					["name"] = "Sloshmuck weekly reputation obtained.",
 				}),
-				q(84066, { -- Weekly reputation: Strenght of Beledar
-					["name"] = "Strenght of Beledar weekly reputation obtained.",
+				q(84066, { -- Weekly reputation: Strength of Beledar
+					["name"] = "Strength of Beledar weekly reputation obtained.",
 				}),
 				q(84064, { -- Weekly reputation: The Perchfather
 					["name"] = "The Perchfather weekly reputation obtained.",
