@@ -101,6 +101,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = HEROS_CALL_BOARD_SYMLINK,
 				["races"] = ALLIANCE_ONLY,
+				["skipFill"] = true,
 			}),
 			-- #endif
 			-- #if AFTER 4.0.1.12984

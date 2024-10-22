@@ -124,6 +124,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = HEROS_CALL_BOARD_SYMLINK,
 				["races"] = ALLIANCE_ONLY,
+				["skipFill"] = true,
 			}),
 			-- #endif
 			n(PROFESSIONS, {

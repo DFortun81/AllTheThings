@@ -2248,6 +2248,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 				["timeline"] = { ADDED_4_0_1 },
 				["sym"] = WARCHIEFS_COMMAND_BOARD_SYMLINK,
 				["races"] = HORDE_ONLY,
+				["skipFill"] = true,
 			}),
 			-- #endif
 		},
