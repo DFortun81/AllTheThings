@@ -2416,13 +2416,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			ach(41013),		-- Upgraded Apparel
 			ach(40661),		-- Zoomies!
 		}),
-		n(DUNGEONS_AND_RAIDS, {
-			-- INFO: It's here so the criteria can nest under him, as he's normally removed from game
-			n(639),	-- Edwin VanCleef <Defias Kingpin>
-
-
-			-- There is two raids Codex (Scenario?) and BRD
-		}),
 		n(QUESTS, {
 			q(82672),	-- Another Timely Invitation
 			q(84254, {	-- Meet and Greet

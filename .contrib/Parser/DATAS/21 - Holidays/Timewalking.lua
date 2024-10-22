@@ -164,6 +164,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
 		inst_tw(63, {	-- Deadmines
 			e(2613, {	-- Rhahk'Zor
+				["crs"] = { 644 },
 				["g"] = {
 					i(224735),	-- Blackened Bone Necklace
 					i(224731),	-- Ogre-Sized Belt
@@ -174,7 +175,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				},
 			}),
 			e(2626, {	-- Sneed
-				--["crs"] = {}
+				["crs"] = { 643 },
 				["g"] = {
 					i(224736),	-- Shredder Teeth
 					i(224737),	-- Goblin Treekickers
@@ -187,7 +188,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				},
 			}),
 			e(2628, {	-- Gilned
-				--["crs"] = {}
+				["crs"] = { 1763 },
 				["g"] = {
 					i(224740),	-- Forgemasters's Faceshield
 					i(224741),	-- Defias Scimitar
@@ -196,7 +197,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				},
 			}),
 			e(2629, {	-- Mr. Smite
-				--["crs"] = {}
+				["crs"] = { 646 },
 				["g"] = {
 					i(224742),	-- Smite's Pistol
 					i(224744),	-- Defias Cuirass
@@ -209,7 +210,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				},
 			}),
 			e(2630, {	-- Captain Greenskin
-				--["crs"] = {}
+				["crs"] = { 647 },
 				["g"] = {
 					i(224748),	-- Captain's Tricorne
 					i(224749),	-- Goblin Griptreads
@@ -220,7 +221,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				},
 			}),
 			e(2631, {	-- Edwin VanCleef
-				--["crs"] = {}
+				["crs"] = { 639 },
 				["g"] = {
 					i(224754),	-- Guildmaster's Leggings
 					i(224755),	-- Defias Knifeguards
@@ -231,7 +232,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				},
 			}),
 			e(2632, {	-- Cookie
-				--["crs"] = {}
+				["crs"] = { 645 },
 				["g"] = {
 					i(5198),	-- Cookie's Stirring Rod
 					i(5197),	-- Cookie's Tenderizer
