@@ -162,6 +162,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.TIMEWALKING, n(TIMEWALKING_HEADER, bubble
 -- Classic Timewalking
 root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC_DUNGEON_EVENT, {
 	expansion(EXPANSION.CLASSIC, bubbleDownSelf({ ["timeline"] = { ADDED_11_0_5 } }, {
+		n(GROUP_FINDER, {
+			i(225348, {	-- Ancient Timewarped Scroll
+				["description"] = "Drops from the last boss from any classic timewalking dungeon.",
+			}),
+		}),
+		n(QUESTS, {
+			q(83285, {	-- The Ancient Scroll
+				["provider"] = { "i", 225348 },	-- Ancient Timewarped Scroll
+				["isWeekly"] = true,
+				["groups"] = {
+					currency(TIMEWARPED_BADGE),
+				},
+			}),
+		}),
 		inst_tw(63, {	-- Deadmines
 			e(2613, {	-- Rhahk'Zor
 				["crs"] = { 644 },
@@ -630,20 +644,6 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 					i(232904),	-- Sul'thraze the Lashe
 					i(9477),	-- The Chief's Enforcer
 					i(151461),	-- Ukorz's Chain Leggings
-				},
-			}),
-		}),
-		n(GROUP_FINDER, {
-			i(225348, {	-- Ancient Timewarped Scroll
-				["description"] = "Drops from the last boss from any classic timewalking dungeon.",
-			}),
-		}),
-		n(QUESTS, {
-			q(83285, {	-- The Ancient Scroll
-				["provider"] = { "i", 225348 },	-- Ancient Timewarped Scroll
-				["isWeekly"] = true,
-				["groups"] = {
-					currency(TIMEWARPED_BADGE),
 				},
 			}),
 		}),

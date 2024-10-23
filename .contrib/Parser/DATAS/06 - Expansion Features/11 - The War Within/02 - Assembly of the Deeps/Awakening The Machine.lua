@@ -21,8 +21,13 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.TWW, bubbleDownSelf({ ["timeli
 				}),
 				n(QUESTS, {
 					q(83333, {	-- Gearing Up for Trouble
+						-- #if BEFORE 11.0.5
 						["provider"] = { "n", 216164 },	-- Gnawbles
 						["coord"] = { 47.7, 35.3, THE_RINGING_DEEPS },
+						-- #else
+						["provider"] = { "n", 217128 },	-- Speaker Kuldas
+						["coord"] = { 47.5, 32.0, THE_RINGING_DEEPS },
+						-- #endif
 						["isWeekly"] = true,
 						["g"] = {
 							i(226273, {	-- Awakened Mechanical Cache

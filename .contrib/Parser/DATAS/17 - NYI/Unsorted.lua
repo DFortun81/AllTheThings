@@ -146,7 +146,6 @@ root(ROOTS.Unsorted, {
 				i(224194),	-- Fashion Frenzy Ribbon
 				i(224278),	-- Timewarped Ironforge Blueprints
 				i(225252),	-- Bronze Celebration Token
-				i(225348),	-- Ancient Timewarped Scroll
 				-- Secret
 				i(228617),	-- Benatauk's Clue Book
 				i(228694),	-- Damp Ransom Note
@@ -189,7 +188,6 @@ root(ROOTS.Unsorted, {
 				i(226047),	-- Timely Tourist's Signet
 				i(226048),	-- Timely Tourist's Ring
 				i(226049),	-- Timely Tourist's Pendant
-				i(226050),	-- Timely Tourist's Shawl
 				i(226051),	-- Timely Tourist's Cloak
 				i(226052),	-- Timely Tourist's Shank
 				i(226053),	-- Timely Tourist's Ritual Knife
@@ -257,7 +255,6 @@ root(ROOTS.Unsorted, {
 				i(227220),	-- Hateful Gladiator's Silk Raiment
 				i(227221),	-- Hateful Gladiator's Felweave Raiment
 				i(227225),	-- Hateful Gladiator's Ringmail Gauntlets
-				i(227227),	-- Hateful Gladiator's Kodohide Gloves
 				i(227228),	-- Hateful Gladiator's Leather Gloves
 				i(227229),	-- Hateful Gladiator's Mooncloth Gloves
 				i(227230),	-- Hateful Gladiator's Silk Handguards
@@ -323,7 +320,6 @@ root(ROOTS.Unsorted, {
 				i(227584),	-- Guardian Serpent Legwraps
 				i(227585),	-- Guardian Serpent Handwraps
 				i(227586),	-- Guardian Serpent Gloves
-
 				i(227588),	-- Sha-Skin Gloves
 				i(227589),	-- Sha-Skin Leggings
 				i(227590),	-- Leggings of the Burning Scroll

@@ -2717,6 +2717,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		}),
 		prof(TAILORING, {
 			q(84591),	-- 0/20 Dawnweaving
+			q(84592),	-- 20/20 Dawnweaving
 			q(84593),	-- 0/20 Duskweaving
 			q(84594),	-- 30/30 Less is More
 		}),

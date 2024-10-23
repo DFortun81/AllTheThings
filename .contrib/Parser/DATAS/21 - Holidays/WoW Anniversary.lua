@@ -2245,7 +2245,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(186468),	-- Talon of the Tempest
 					i(186463),	-- Terrorweave Tunic
 					i(186484),	-- Voidforged Greaves
-					-- May be shared loot with other worldbosses
+					-- May be shared loot with other worldbosses or just wrongly reported
 					-- #if AFTER 11.0.5
 					i(227652),	-- Malevolent Gladiator's Girdle of Accuracy
 					i(227587),	-- Guardian Serpent Leggings
@@ -2551,6 +2551,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 								i(226082),	-- Timely Tourist's Belt
 								i(226089),	-- Timely Tourist's Epaulets
 								i(226086),	-- Timely Tourist's Gloves
+								i(226050),	-- Timely Tourist's Shawl
 								i(226168),	-- Timely Tourist's Spellblade
 							}),
 						},
@@ -3020,6 +3021,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(227226),	-- Hateful Gladiator's Chain Gauntlets
 					i(227236),	-- Hateful Gladiator's Chain Leggings
 					i(227223),	-- Hateful Gladiator's Dreadplate Gauntlets
+					i(227227),	-- Hateful Gladiator's Kodohide Gloves
 					i(227214),	-- Hateful Gladiator's Leather Tunic
 					i(227218),	-- Hateful Gladiator's Mooncloth Robe
 					i(227224),	-- Hateful Gladiator's Ornamented Gloves
