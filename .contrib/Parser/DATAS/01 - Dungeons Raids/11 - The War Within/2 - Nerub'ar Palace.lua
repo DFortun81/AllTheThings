@@ -702,6 +702,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDownSelf({ ["time
 		q(84264),	-- The Bloodbound Horror
 		q(84266),	-- Sikran
 		q(84268),	-- Rasha'nan
+
+		q(84597, {["timeline"] = { ADDED_11_0_5 }}),	-- Bronze Celebration Token (Queen Ansurek [H])
 	})),
 	-- One-Time flags
 	inst(1273, {
