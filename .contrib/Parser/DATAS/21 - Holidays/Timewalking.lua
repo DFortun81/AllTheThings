@@ -633,6 +633,20 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_CLASSIC
 				},
 			}),
 		}),
+		n(GROUP_FINDER, {
+			i(225348, {	-- Ancient Timewarped Scroll
+				["description"] = "Drops from the last boss from any classic timewalking dungeon.",
+			}),
+		}),
+		n(QUESTS, {
+			q(83285, {	-- The Ancient Scroll
+				["provider"] = { "i", 225348 },	-- Ancient Timewarped Scroll
+				["isWeekly"] = true,
+				["groups"] = {
+					currency(TIMEWARPED_BADGE),
+				},
+			}),
+		}),
 	})),
 })));
 
@@ -1826,7 +1840,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 	expansion(EXPANSION.WRATH, bubbleDownSelf({ ["timeline"] = { ADDED_6_2_2 } }, {
 		n(GROUP_FINDER, {
 			i(129928, {	-- Frigid Timewarped Prism
-				["description"] = "Drops from the last boss from any wotlk timewalking dungeon.",
+				["description"] = "Drops from the last boss from any WotLK timewalking dungeon.",
 			}),
 			i(187903, {	-- Jormungar Soul (SS!)
 				["timeline"] = { ADDED_9_1_5 },

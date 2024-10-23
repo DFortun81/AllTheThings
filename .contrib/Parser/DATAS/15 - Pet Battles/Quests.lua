@@ -1130,19 +1130,40 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 			}),
 			q(31974, {	-- Goz Banefury
 				["provider"] = { "n", 66822 },	-- Goz Banefury
+				-- #if BEFORE 11.0.5
 				["coord"] = { 56.5, 56.7, TWILIGHT_HIGHLANDS },
+				-- #else
+				["coords"] = {
+					{ 56.5, 56.7, TWILIGHT_HIGHLANDS },
+					{ 62.1, 49.6, TANARIS },
+				},
+				-- #endif
 			}),
 			q(31971, {	-- Grand Master Obalis
 				["sourceQuests"] = { 31970 },	-- Grand Master Obalis
 				["provider"] = { "n", 66824 },	-- Obalis
+				-- #if BEFORE 11.0.5
 				["coord"] = { 56.6, 41.8, ULDUM },
+				-- #else
+				["coords"] = {
+					{ 56.6, 41.8, ULDUM },
+					{ 61.9, 49.6, TANARIS },
+				},
+				-- #endif
 				["g"] = {
 					SACK_OF_PET_SUPPLIES
 				},
 			}),
 			q(31973, {	-- Bordin Steadyfist
 				["provider"] = { "n", 66815 },	-- Bordin Steadyfist
+				-- #if BEFORE 11.0.5
 				["coord"] = { 49.9, 57.1, DEEPHOLM },
+				-- #else
+				["coords"] = {
+					{ 49.9, 57.1, DEEPHOLM },
+					{ 61.9, 49.6, TANARIS },
+				},
+				-- #endif
 				["repeatable"] = true,
 			}),
 		}),

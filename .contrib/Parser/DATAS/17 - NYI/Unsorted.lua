@@ -163,7 +163,6 @@ root(ROOTS.Unsorted, {
 				i(228990),	-- Bottle of Steam
 				i(228991),	-- Stone of Prophecy
 				i(229165),	-- Quest Journal
-				i(229355),	-- Chromie's Premium Goodie Bag
 				i(229359),	-- Chromie's Goodie Bag
 				i(229375),	-- Neural Enlarger
 				i(229413),	-- "Dogg-Saron" Costume
@@ -229,7 +228,6 @@ root(ROOTS.Unsorted, {
 				i(226086),	-- Timely Tourist's Gloves
 				i(226087),	-- Timely Tourist's Headgear
 				i(226088),	-- Timely Tourist's Pants
-				i(226089),	-- Timely Tourist's Epaulets
 				i(226090),	-- Timely Tourist's Sash
 				i(226091),	-- Timely Tourist's Bindings
 				i(226092),	-- Timely Tourist's Robes
@@ -243,7 +241,6 @@ root(ROOTS.Unsorted, {
 				i(226101),	-- Chromie's Tour Goodie Bag
 				i(226102),	-- Chromie's Tour Goodie Bag
 				i(226167),	-- Timely Tourist's Bolthrower
-				i(226168),	-- Timely Tourist's Ritual Knife
 				i(226169),	-- Timely Tourist's Chisel
 				i(226170),	-- Timely Tourist's Hatchet
 				i(226171),	-- Timely Tourist's Cleaver
@@ -252,21 +249,14 @@ root(ROOTS.Unsorted, {
 				i(227209),	-- Hateful Gladiator's Dreadplate Chestpiece
 				i(227210),	-- Hateful Gladiator's Plate Chestpiece
 				i(227211),	-- Hateful Gladiator's Ornamented Chestguard
-				i(227212),	-- Hateful Gladiator's Ringmail Armor
 				i(227213),	-- Hateful Gladiator's Chain Armor
-				i(227214),	-- Hateful Gladiator's Leather Tunic
 				i(227215),	-- Hateful Gladiator's Kodohide Robes
 				i(227216),	-- Hateful Gladiator's Wyrmhide Robes
 				i(227217),	-- Hateful Gladiator's Dragonhide Robes
-				i(227218),	-- Hateful Gladiator's Mooncloth Robe
 				i(227219),	-- Hateful Gladiator's Satin Robe
 				i(227220),	-- Hateful Gladiator's Silk Raiment
 				i(227221),	-- Hateful Gladiator's Felweave Raiment
-				i(227222),	-- Hateful Gladiator's Plate Gauntlets
-				i(227223),	-- Hateful Gladiator's Dreadplate Gauntlets
-				i(227224),	-- Hateful Gladiator's Ornamented Gloves
 				i(227225),	-- Hateful Gladiator's Ringmail Gauntlets
-				i(227226),	-- Hateful Gladiator's Chain Gauntlets
 				i(227227),	-- Hateful Gladiator's Kodohide Gloves
 				i(227228),	-- Hateful Gladiator's Leather Gloves
 				i(227229),	-- Hateful Gladiator's Mooncloth Gloves
@@ -275,8 +265,6 @@ root(ROOTS.Unsorted, {
 				i(227232),	-- Hateful Gladiator's Plate Legguards
 				i(227233),	-- Hateful Gladiator's Dreadplate Legguards
 				i(227234),	-- Hateful Gladiator's Ornamented Legplates
-				i(227235),	-- Hateful Gladiator's Ringmail Leggings
-				i(227236),	-- Hateful Gladiator's Chain Leggings
 				i(227237),	-- Hateful Gladiator's Kodohide Legguards
 				i(227238),	-- Hateful Gladiator's Leather Legguards
 				i(227239),	-- Hateful Gladiator's Mooncloth Leggings
@@ -285,22 +273,15 @@ root(ROOTS.Unsorted, {
 				i(227242),	-- Heroes' Frostfire Gloves
 				i(227243),	-- Heroes' Plagueheart Gloves
 				i(227244),	-- Heroes' Gloves of Faith
-				i(227245),	-- Heroes' Dreamwalker Handgrips
 				i(227246),	-- Heroes' Bonescythe Gauntlets
-				i(227247),	-- Heroes' Cryptstalker Handguards
 				i(227248),	-- Heroes' Earthshatter Handguards
-				i(227249),	-- Heroes' Dreadnaught Gauntlets
 				i(227250),	-- Heroes' Scourgeborne Gauntlets
 				i(227251),	-- Heroes' Redemption Gloves
 				i(227252),	-- Heroes' Frostfire Leggings
 				i(227253),	-- Heroes' Plagueheart Leggings
-				i(227254),	-- Heroes' Leggings of Faith
-				i(227255),	-- Heroes' Dreamwalker Legguards
 				i(227256),	-- Heroes' Bonescythe Legplates
 				i(227257),	-- Heroes' Cryptstalker Legguards
-				i(227258),	-- Heroes' Earthshatter Legguards
 				i(227259),	-- Heroes' Dreadnaught Legplates
-				i(227260),	-- Heroes' Scourgeborne Legplates
 				i(227261),	-- Heroes' Redemption Greaves
 				i(227262),	-- Heroes' Frostfire Robe
 				i(227263),	-- Heroes' Plagueheart Robe
@@ -309,15 +290,12 @@ root(ROOTS.Unsorted, {
 				i(227266),	-- Heroes' Bonescythe Breastplate
 				i(227267),	-- Heroes' Cryptstalker Tunic
 				i(227268),	-- Heroes' Earthshatter Tunic
-				i(227269),	-- Heroes' Dreadnaught Battleplate
 				i(227270),	-- Heroes' Scourgeborne Battleplate
 				i(227271),	-- Heroes' Redemption Tunic
 				i(227554),	-- Firebird's Legguards
 				i(227555),	-- Firebird's Grips
 				i(227556),	-- Firebird's Gloves
 				i(227557),	-- Firebird's Kilt
-				i(227558),	-- Yaungol Slayer's Legguards
-				i(227559),	-- Yaungol Slayer's Gloves
 				i(227560),	-- Legguards of the Thousandfold Blades
 				i(227561),	-- Gloves of the Thousandfold Blades
 				i(227562),	-- Eternal Blossom Leggings
@@ -345,7 +323,7 @@ root(ROOTS.Unsorted, {
 				i(227584),	-- Guardian Serpent Legwraps
 				i(227585),	-- Guardian Serpent Handwraps
 				i(227586),	-- Guardian Serpent Gloves
-				i(227587),	-- Guardian Serpent Leggings
+
 				i(227588),	-- Sha-Skin Gloves
 				i(227589),	-- Sha-Skin Leggings
 				i(227590),	-- Leggings of the Burning Scroll
@@ -365,9 +343,7 @@ root(ROOTS.Unsorted, {
 				i(227604),	-- Malevolent Gladiator's Ironskin Gloves
 				i(227605),	-- Malevolent Gladiator's Wyrmhide Gloves
 				i(227606),	-- Malevolent Gladiator's Leather Legguards
-				i(227607),	-- Malevolent Gladiator's Ironskin Legguards
 				i(227608),	-- Malevolent Gladiator's Wyrmhide Legguards
-				i(227609),	-- Malevolent Gladiator's Waistband of Cruelty
 				i(227610),	-- Malevolent Gladiator's Waistband of Accuracy
 				i(227611),	-- Malevolent Gladiator's Belt of Cruelty
 				i(227612),	-- Malevolent Gladiator's Armwraps of Alacrity
@@ -381,7 +357,6 @@ root(ROOTS.Unsorted, {
 				i(227620),	-- Malevolent Gladiator's Ringmail Leggings
 				i(227621),	-- Malevolent Gladiator's Waistguard of Meditation
 				i(227622),	-- Malevolent Gladiator's Links of Cruelty
-				i(227623),	-- Malevolent Gladiator's Wristguards of Alacrity
 				i(227624),	-- Malevolent Gladiator's Armbands of Prowess
 				i(227625),	-- Malevolent Gladiator's Treads of Cruelty
 				i(227626),	-- Malevolent Gladiator's Treads of Alacrity
@@ -389,7 +364,6 @@ root(ROOTS.Unsorted, {
 				i(227628),	-- Malevolent Gladiator's Silk Handguards
 				i(227629),	-- Malevolent Gladiator's Felweave Handguards
 				i(227630),	-- Malevolent Gladiator's Mooncloth Gloves
-				i(227631),	-- Malevolent Gladiator's Silk Trousers
 				i(227632),	-- Malevolent Gladiator's Felweave Trousers
 				i(227633),	-- Malevolent Gladiator's Mooncloth Leggings
 				i(227634),	-- Malevolent Gladiator's Cord of Cruelty
@@ -400,9 +374,7 @@ root(ROOTS.Unsorted, {
 				i(227639),	-- Malevolent Gladiator's Cuffs of Meditation
 				i(227640),	-- Malevolent Gladiator's Drape of Prowess
 				i(227641),	-- Malevolent Gladiator's Cape of Cruelty
-				i(227642),	-- Malevolent Gladiator's Cloak of Alacrity
 				i(227643),	-- Malevolent Gladiator's Warboots of Cruelty
-				i(227644),	-- Malevolent Gladiator's Greaves of Alacrity
 				i(227645),	-- Malevolent Gladiator's Warboots of Alacrity
 				i(227646),	-- Malevolent Gladiator's Ornamented Gloves
 				i(227647),	-- Malevolent Gladiator's Dreadplate Gauntlets
@@ -410,7 +382,6 @@ root(ROOTS.Unsorted, {
 				i(227649),	-- Malevolent Gladiator's Ornamented Legplates
 				i(227650),	-- Malevolent Gladiator's Dreadplate Legguards
 				i(227651),	-- Malevolent Gladiator's Plate Legguards
-				i(227652),	-- Malevolent Gladiator's Girdle of Accuracy
 				i(227653),	-- Malevolent Gladiator's Girdle of Prowess
 				i(227654),	-- Malevolent Gladiator's Clasp of Cruelty
 				i(227655),	-- Malevolent Gladiator's Bracers of Prowess
@@ -532,10 +503,7 @@ root(ROOTS.Unsorted, {
 				i(231345),	-- Obsidian Gladiator's Greatsword
 			}),
 			n(DUNGEONS_AND_RAIDS, {	-- Raid
-				i(231510),	-- Timewarped Relic Coffer Key
 				i(231511),	-- Relic Coffer Key Fragment
-				i(232365),	-- Timewarped Relic Coffer Key
-				i(232366),	-- Timewarped Relic Coffer Key
 				i(225664),	-- Golem Lord Argelmach's Gun
 				i(225665),	-- Golem Lord Argelmach's Wrench
 				i(225666),	-- General Angerforge's Axe
@@ -803,7 +771,6 @@ root(ROOTS.Unsorted, {
 				i(231993),	-- Telhamat Anchorite's Bracelets
 				i(231994),	-- Telhamat Anchorite's Chestguard
 			}),
-			i(232471),	-- Cache of Dark Iron Treasures
 			i(232472),	-- Cache of Dark Iron Treasures
 			i(232473),	-- Cache of Dark Iron Treasures
 			i(232474),	-- Defias Cuirass
@@ -825,7 +792,6 @@ root(ROOTS.Unsorted, {
 			i(232622),	-- Glyph of Energetic Ascendance
 			i(232631),	-- Wrapped Spear
 			--
-			i(226168),	-- Timely Tourist's Spellblade
 			i(228911),	-- Xal'atath's Rusty Coin
 			i(232877),	-- Timely Goodie Bag
 

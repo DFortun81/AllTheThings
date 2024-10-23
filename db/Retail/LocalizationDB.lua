@@ -16332,6 +16332,7 @@ L.QUEST_NAMES = {
 	[84633] = "Awakening The Machine: Wave 15 Completed.",
 	[84634] = "Awakening The Machine: Wave 20 Completed. Congratulations.",
 	[84699] = "Stay awhile and listen: Moira Thaurissan",
+	[84743] = "Stay awhile and listen: Moira Thaurissan",
 	[84754] = "Stay awhile and listen: Alleria Windrunner",
 	[84813] = "Stay awhile and listen: Rooktender Lufsela",
 	[84814] = "Stay awhile and listen: Dagran Thaurissan II (Vault of Memory)",

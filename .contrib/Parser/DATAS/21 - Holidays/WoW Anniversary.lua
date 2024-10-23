@@ -1130,13 +1130,27 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			q(43461, {	-- A Time to Reflect
 				["qg"] = 110035,	-- Historian Jupa
 				["isDaily"] = true,
+				-- #if BEFORE 11.0.5
 				["coord"] = { 36.6, 74.6, ORGRIMMAR },
+				-- #else
+				["coords"] = {
+					{ 36.6, 74.6, ORGRIMMAR },
+					{ 62.8, 50.2, TANARIS },
+				},
+				-- #endif
 				["races"] = HORDE_ONLY,
 			}),
 			q(43323, {	-- A Time to Reflect
 				["qg"] = 110034,	-- Historian Llore
 				["isDaily"] = true,
+				-- #if BEFORE 11.0.5
 				["coord"] = { 84.6, 25.0, STORMWIND_CITY },
+				-- #else
+				["coords"] = {
+					{ 84.6, 25.0, STORMWIND_CITY },
+					{ 62.8, 50.2, TANARIS },
+				},
+				-- #endif
 				["races"] = ALLIANCE_ONLY,
 			}),
 		}),
@@ -2103,8 +2117,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["isYearly"] = true,
 			}),
 			q(57300, {	-- Soldier of Time
+				-- #if BEFORE 11.0.5
 				["qg"] = 157113,	-- Chromie
 				["coord"] = { 53.5, 54.7, CAVERNS_OF_TIME },
+				-- #else
+				["qg"] = 223882,	-- Izaik Kadarov
+				["coord"] = { 62.3, 51.8, TANARIS },
+				-- #endif
 				["isWeekly"] = true,
 				["_drop"] = { "g" },	-- drop MoH to remove this quest from the popout
 			}),
@@ -2164,11 +2183,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 	})),
 	n(WOW_ANNIVERSARY_SEVENTEEN, bubbleDownSelf({ ["timeline"] = { ADDED_9_1_5 } },{
 		n(QUESTS, {
+			-- #if BEFORE 11.0.5
 			q(60215, {	-- Doomwalkin' Has Come Knockin'
 				["qg"] = 157113,	-- Chromie
 				["coord"] = { 53.5, 54.7, CAVERNS_OF_TIME },
 				["isWeekly"] = true,
 			}),
+			-- #else
+			q(60215, {	-- Timely Gate Crashers
+				["qg"] = 223882,	-- Izaik Kadarov
+				["coord"] = { 62.3, 51.8, TANARIS },
+				["isWeekly"] = true,
+			}),
+			-- #endif
 		}),
 		n(VENDORS, {
 			n(158061, {	-- Historian Ma'di
@@ -2218,6 +2245,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(186468),	-- Talon of the Tempest
 					i(186463),	-- Terrorweave Tunic
 					i(186484),	-- Voidforged Greaves
+					-- May be shared loot with other worldbosses
+					-- #if AFTER 11.0.5
+					i(227652),	-- Malevolent Gladiator's Girdle of Accuracy
+					i(227587),	-- Guardian Serpent Leggings
+					-- #endif
 				},
 			}),
 		}),
@@ -2300,12 +2332,26 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					}),
 				}),
 				n(QUESTS, {
+					q(83274, {	-- An Original Path Through Time
+						["provider"] = { "n", 223884 },	-- Bobadormu
+						["coord"] = { 62.7, 50.3, TANARIS },
+						["isWeekly"] = true,
+						["lvl"] = 80,
+					}),
+					q(85947, {	-- An Original Path Through Time
+						["provider"] = { "n", 223884 },	-- Bobadormu
+						["coord"] = { 62.7, 50.3, TANARIS },
+						["isWeekly"] = true,
+					}),
 					q(82817, {	-- Disturbance Detected: Blackrock Depths
 						["provider"] = { "n", 229494 },	-- Moira Thaurissan <Queen of the Dark Iron>
 						["coord"] = { 63.0, 49.7, TANARIS },
 						["isWeekly"] = true,
 						["g"] = {
-							i(232471),	-- Cache of Dark Iron Treasures
+							i(232471, {	-- Cache of Dark Iron Treasures
+								i(231491),	-- Grebmar's Catch Pole
+								i(231390),	-- Spritecaster Cape
+							}),
 						},
 					}),
 					q(84735, {	-- Truth of the Dark Irons
@@ -2314,10 +2360,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					}),
 				}),
 				n(VENDORS, {
-					-- Seem you can get "Timewraped Relic Coffer Key" from all difficulties then you can trade for which ever loot you want. Not sure if loot will drop or this is the way loot will work //Braghe
-					n(223881),	-- Braggi Brazenbrass LFR Vendor
-					n(233209),	-- Kraegen Emberforge Normal Vendor
-					n(224322),	-- Hilda Hellforge Heroic Vendor
+					n(223881, {	-- Braggi Brazenbrass <Raidfinder Relic Coffer Key Exchanger>
+						["coord"] = { 63.0, 49.8, TANARIS},
+						["g"] = sharedData({ ["cost"] = {{ "i", 231510, 40 }} },{	-- Timewarped Relic Coffer Key
+							i(5263),	-- TODO
+						}),
+					}),
+					n(233209, {	-- Kraegan Emberforge <Normal Relic Coffer Key Exchanger>
+						["coord"] = { 63.0, 49.8, TANARIS},
+						["g"] = sharedData({ ["cost"] = {{ "i", 232365, 40 }} },{	-- Timewarped Relic Coffer Key
+							i(5263),	-- TODO
+						}),
+					}),
+					n(224322, {	-- Hilda Hellforge <Heroic Relic Coffer Key Exchanger>
+						["coord"] = { 63.0, 49.8, TANARIS},
+						["g"] = sharedData({ ["cost"] = {{ "i", 232366, 40 }} },{	-- Timewarped Relic Coffer Key
+							i(5263),	-- TODO
+						}),
+					}),
 				}),
 				Difficulty(DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC).AddGroups({
 					-- Unsure which Miniboss Drops These //Braghe
@@ -2367,6 +2427,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						i(231402),	-- Searingscale Leggings
 					}),
 					Boss(DAGRAN)
+				}),
+				Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
+					CommonBossDrops({
+						i(231510),	-- Timewarped Relic Coffer Key
+					}),
+				}),
+				Difficulty(DIFFICULTY.RAID.NORMAL).AddGroups({
+					CommonBossDrops({
+						i(232365),	-- Timewarped Relic Coffer Key
+					}),
+				}),
+				Difficulty(DIFFICULTY.RAID.HEROIC).AddGroups({
+					CommonBossDrops({
+						i(232366),	-- Timewarped Relic Coffer Key
+					}),
 				}),
 			},
 		}),
@@ -2463,11 +2538,20 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["maps"] = { 2354 },	-- Silithus
 				["isWeekly"] = true,
 				["g"] = {
+					i(233014, {	-- Bronze Celebration Cache of Treasures
+						i(231468),	-- Flamekeeper's Fire Blanket
+						i(231478),	-- Flamekeeper's Handwraps
+						i(231467),	-- Flamelord's Emberstaff
+						i(231439),	-- Hands of the Exalted Herald
+						i(231434),	-- Haunting Specter Leggings
+					}),
 					hqt(84878, name(HEADERS.Item, 229355, {	-- Chromie's Premium Goodie Bag (lockout?)
 						["g"] = {
 							i(229355, {	-- Chromie's Premium Goodie Bag
 								i(226082),	-- Timely Tourist's Belt
+								i(226089),	-- Timely Tourist's Epaulets
 								i(226086),	-- Timely Tourist's Gloves
+								i(226168),	-- Timely Tourist's Spellblade
 							}),
 						},
 					})),
@@ -2488,6 +2572,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			q(84469),	-- The Case of Pet Games
 			q(84912),	-- The Case of Staged Disaster
 			q(84595),	-- The Loud and Smelly Case
+			------ Stay awhile and listen ------
+			hqt(84743, {	-- Stay awhile and listen: Moira Thaurissan <Queen of the Dark Iron>
+				["name"] = "Stay awhile and listen: Moira Thaurissan",
+				["description"] = "Dialogue becomes available after completing 'Disturbance Detected: Blackrock Depths' (82817).",
+				["sourceQuests"] = { 82817 },	-- Disturbance Detected: Blackrock Depths (Completed)
+				["provider"] = { "n", 229494 },	-- Moira Thaurissan <Queen of the Dark Iron>
+				["coord"] = { 63.0, 49.7, TANARIS },
+			}),
 		}),
 		n(REWARDS, {
 			currency(BRONZE_TOKEN),
@@ -2904,6 +2996,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					74,	--	Caverns of Time Entrance
 					CAVERNS_OF_TIME,
 				},
+				["g"] = {
+					i(227642),	-- Malevolent Gladiator's Cloak of Alacrity
+					i(227644),	-- Malevolent Gladiator's Greaves of Alacrity
+					i(227607),	-- Malevolent Gladiator's Ironskin Legguards
+					i(227631),	-- Malevolent Gladiator's Silk Trousers
+					i(227609),	-- Malevolent Gladiator's Waistband of Cruelty
+					i(227623),	-- Malevolent Gladiator's Wristguards of Alacrity
+					i(227559),	-- Yaungol Slayer's Gloves
+					i(227558),	-- Yaungol Slayer's Legguards
+				},
 			}),
 			n(227257, {	-- Archavon the Stone Watcher
 				["isRaid"] = true,
@@ -2913,6 +3015,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["maps"] = {
 					74,	--	Caverns of Time Entrance
 					CAVERNS_OF_TIME,
+				},
+				["g"] = {
+					i(227226),	-- Hateful Gladiator's Chain Gauntlets
+					i(227236),	-- Hateful Gladiator's Chain Leggings
+					i(227223),	-- Hateful Gladiator's Dreadplate Gauntlets
+					i(227214),	-- Hateful Gladiator's Leather Tunic
+					i(227218),	-- Hateful Gladiator's Mooncloth Robe
+					i(227224),	-- Hateful Gladiator's Ornamented Gloves
+					i(227222),	-- Hateful Gladiator's Plate Gauntlets
+					i(227212),	-- Hateful Gladiator's Ringmail Armor
+					i(227235),	-- Hateful Gladiator's Ringmail Leggings
+					i(227247),	-- Heroes' Cryptstalker Handguards
+					i(227269),	-- Heroes' Dreadnaught Battleplate
+					i(227249),	-- Heroes' Dreadnaught Gauntlets
+					i(227245),	-- Heroes' Dreamwalker Handgrips
+					i(227255),	-- Heroes' Dreamwalker Legguards
+					i(227258),	-- Heroes' Earthshatter Legguards
+					i(227254),	-- Heroes' Leggings of Faith
+					i(227260),	-- Heroes' Scourgeborne Legplates
 				},
 			}),
 		}),
@@ -2969,10 +3090,14 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 	n(WOW_ANNIVERSARY_TWENTY, {
 		q(85661),	-- Purchase one Tier 2 Set
 		q(85828),	-- Purchase a second Tier 2 Set
-		q(85723),	-- first WB kill of day/event??
+		q(85723),	-- first WB kill of day/event or maybe Doomwalker
+		q(84282),	-- second WB kill of day/event or maybe Sha
+		q(84256),	-- third WB kill of day/event or maybe Archavon
+		q(85168),	-- fourth WB kill of day/event or mayba Kazzak
 		q(84629),	-- triggered with turnin of 'Meet and Greet' [84254] (Bronze Cel Token lockout?)
 		q(84630),	-- triggered with turnin of 'Shopping Spree!' [84489] (Bronze Cel Token lockout?)
 		q(84604),	-- triggered with turnin of 'Chromie's Codex' [82783] (Bronze Cel Token lockout?)
+		q(84878),	-- triggered with turnin of 'Chromie's Codex' [82783] (Bronze Cel Cache lockout?)
 		q(84606),	-- triggered with turnin of 'Timely Gate Crashers' [60215] (Bronze Cel Token lockout?)
 		q(84665),	-- triggered with turnin of 'Timely Gate Crashers' [60215] (Bronze Cel Cache lockout?)
 		q(86202, name(HEADERS.Item, 233014)),	-- opening first Bronze Celebration Cache of week
@@ -2983,6 +3108,18 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(84614),	-- WB (Azj-Kahet)
 		q(84598),	-- Wax weekly
 		q(85833),	-- Delve weekly
+		-- Blackrock Depths
+		q(86278),	-- High Interrogator Gerstahn (LFR)
+		q(86290),	-- High Interrogator Gerstahn (H)
+		q(86279),	-- Houndmaster Grebmar (LFR)
+		q(86291),	-- Houndmaster Grebmar (H)
+		q(86280),	-- Fineous Darkvire (LFR)
+		q(86292),	-- Fineous Darkvire (H)
+		q(86281),	-- Phalanx (LFR)
+		q(86293),	-- Phalanx (H)
+
+
+		q(86282),	-- Pyromancer Loregrain (LFR)
 	}),
 })));
 -- #endif
