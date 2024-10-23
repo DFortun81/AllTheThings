@@ -2457,11 +2457,21 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["coord"] = { 62.9, 50.7, TANARIS },
 				["isDaily"] = true
 			}),
-
 			q(82783, {	-- Chromie's Codex
 				["provider"] = { "n", 226368 },	-- Chromie
 				["coord"] = { 62.6, 50.0, TANARIS },
-				["isWeekly"] = true
+				["maps"] = { 2354 },	-- Silithus
+				["isWeekly"] = true,
+				["g"] = {
+					hqt(84878, name(HEADERS.Item, 229355, {	-- Chromie's Premium Goodie Bag (lockout?)
+						["g"] = {
+							i(229355, {	-- Chromie's Premium Goodie Bag
+								i(226082),	-- Timely Tourist's Belt
+								i(226086),	-- Timely Tourist's Gloves
+							}),
+						},
+					})),
+				},
 			}),
 
 			q(84336),	-- Chapter 1
@@ -2960,6 +2970,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(85661),	-- Purchase one Tier 2 Set
 		q(85828),	-- Purchase a second Tier 2 Set
 		q(85723),	-- first WB kill of day/event??
+		q(84629),	-- triggered with turnin of 'Meet and Greet' [84254] (Bronze Cel Token lockout?)
+		q(84630),	-- triggered with turnin of 'Shopping Spree!' [84489] (Bronze Cel Token lockout?)
+		q(84604),	-- triggered with turnin of 'Chromie's Codex' [82783] (Bronze Cel Token lockout?)
+		q(84606),	-- triggered with turnin of 'Timely Gate Crashers' [60215] (Bronze Cel Token lockout?)
+		q(84665),	-- triggered with turnin of 'Timely Gate Crashers' [60215] (Bronze Cel Cache lockout?)
+		q(86202, name(HEADERS.Item, 233014)),	-- opening first Bronze Celebration Cache of week
 	}),
 })));
 -- #endif
