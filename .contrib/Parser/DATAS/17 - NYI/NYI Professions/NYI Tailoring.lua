@@ -32,7 +32,6 @@ root(ROOTS.NeverImplemented, n(PROFESSIONS, {
 				-- 6.0.2
 				expansion(EXPANSION.WOD, patch(0,2), bubbleDownSelf({ ["timeline"] = { CREATED_6_0_2 } }, {
 					i(114833),	-- Miniature Flying Carpet
-					i(118052),	-- Murloc Chew Toy
 				})),
 			}),
 			expansion(EXPANSION.BFA, {

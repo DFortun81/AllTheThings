@@ -1189,6 +1189,19 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					}),
 				},
 			}),
+			n(231351, {	-- Kieule <Souvenirs>
+				["coord"] = { 62.38, 49.92, TANARIS },
+				["g"] = {
+					--[[ No use yet, potential pets/toys?
+					i(140670),	-- Souvenir Elekk
+					i(140671),	-- Souvenir Raptor
+					i(117052),	-- Murloc Chew Toy
+					--]]
+					i(130151, {	-- The "Devilsaur" Lunchbox (TOY!)
+						["cost"] = { { "c", 1155, 1000 }, },	-- 1,000x Ancient Mana
+					}),
+				},
+			}),
 		}),
 	})),
 	n(WOW_ANNIVERSARY_THIRTEEN, bubbleDownSelf({ ["timeline"] = { ADDED_7_2_5 } },{
@@ -2288,12 +2301,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				}),
 				n(QUESTS, {
 					q(82817, {	-- Disturbance Detected: Blackrock Depths
-						["provider"] = { "n", 229775 },	-- Moira Thaurissan <Queen of the Dark Iron>
+						["provider"] = { "n", 229494 },	-- Moira Thaurissan <Queen of the Dark Iron>
 						["coord"] = { 63.0, 49.7, TANARIS },
-						["isWeekly"] = true
+						["isWeekly"] = true,
+						["g"] = {
+							i(232471),	-- Cache of Dark Iron Treasures
+						},
 					}),
 					q(84735, {	-- Truth of the Dark Irons
-						["provider"] = { "n", 229775 },	-- Moira Thaurissan <Queen of the Dark Iron>
+						["provider"] = { "n", 229494 },	-- Moira Thaurissan <Queen of the Dark Iron>
 						["coord"] = { 63.0, 49.7, TANARIS },
 					}),
 				}),
@@ -2441,8 +2457,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["coord"] = { 62.9, 50.7, TANARIS },
 				["isDaily"] = true
 			}),
-
-
 
 			q(82783, {	-- Chromie's Codex
 				["provider"] = { "n", 226368 },	-- Chromie

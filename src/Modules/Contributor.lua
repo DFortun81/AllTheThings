@@ -176,7 +176,7 @@ local MobileNPCDB = {
 	[191494] = true,	-- Khanam Matra Sarest
 	[193985] = true,	-- Initiate Zorig
 	[209681] = true,	-- Squally
-	[220859] = true,	-- Amy enstone
+	[220859] = true,	-- Amy Lychenstone
 	[221867] = true,	-- Mereldar Child
 	[221980] = true,	-- Faerin Lothar
 }
