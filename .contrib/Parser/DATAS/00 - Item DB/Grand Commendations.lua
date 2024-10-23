@@ -410,12 +410,11 @@ i(224571, FACTION_THORIUM_BROTHERHOOD);		-- Commendation of the Thorium Brotherh
 i(224566, FACTION_TIMBERMAW_HOLD);			-- Commendation of the Timbermaw Hold
 i(224565, FACTION_WINTERSABER_TRAINERS);	-- Commendation of the Wintersaber Trainers
 i(224570, FACTION_ZANDALAR_TRIBE);			-- Commendation of the Zandalar Tribe
--- Might be NYI?
--- i(224564, 630);								-- Commendation of the Ravasaur Trainers
 -- Blizz decided against adding these, boooo
 --i(224569, FACTION_THE_DEFILERS);			-- Commendation of the Defilers
 --i(224563, FACTION_FROSTWOLF_CLAN);		-- Commendation of the Frostwolf Clan
 --i(224568, FACTION_THE_LEAGUE_OF_ARATHOR);	-- Commendation of the League of Arathor
+--i(224564, 630);							-- Commendation of the Ravasaur Trainers
 --i(224559, FACTION_SILVERWING_SENTINELS);	-- Commendation of the Silverwing Sentinels
 --i(224562, FACTION_STORMPIKE_GUARD);		-- Commendation of the Stormpike Guard
 --i(224560, FACTION_WARSONG_OUTRIDERS);		-- Commendation of the Warsong Outriders

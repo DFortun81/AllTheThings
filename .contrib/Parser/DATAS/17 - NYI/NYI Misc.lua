@@ -1701,5 +1701,15 @@ root(ROOTS.NeverImplemented, filter(MISC, {
 			i(226108),	-- [DNT] Debug Profession Stats
 			i(223804),	-- [DNT] Zone 1 Placeholder Treasure
 		})),
+		-- 11.0.5
+		expansion(EXPANSION.TWW, patch(0,05), bubbleDownSelf({ ["timeline"] = { CREATED_11_0_5 } }, {
+			i(224569),	-- Commendation of the Defilers
+			i(224563),	-- Commendation of the Frostwolf Clan
+			i(224568),	-- Commendation of the League of Arathor
+			i(224564),	-- Commendation of the Ravasaur Trainers
+			i(224559),	-- Commendation of the Silverwing Sentinels
+			i(224562),	-- Commendation of the Stormpike Guard
+			i(224560),	-- Commendation of the Warsong Outriders
+		})),
 	}),
 }));

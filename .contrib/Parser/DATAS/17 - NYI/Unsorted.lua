@@ -254,7 +254,6 @@ root(ROOTS.Unsorted, {
 				i(227219),	-- Hateful Gladiator's Satin Robe
 				i(227220),	-- Hateful Gladiator's Silk Raiment
 				i(227221),	-- Hateful Gladiator's Felweave Raiment
-				i(227225),	-- Hateful Gladiator's Ringmail Gauntlets
 				i(227228),	-- Hateful Gladiator's Leather Gloves
 				i(227229),	-- Hateful Gladiator's Mooncloth Gloves
 				i(227230),	-- Hateful Gladiator's Silk Handguards
@@ -276,7 +275,6 @@ root(ROOTS.Unsorted, {
 				i(227251),	-- Heroes' Redemption Gloves
 				i(227252),	-- Heroes' Frostfire Leggings
 				i(227253),	-- Heroes' Plagueheart Leggings
-				i(227256),	-- Heroes' Bonescythe Legplates
 				i(227257),	-- Heroes' Cryptstalker Legguards
 				i(227259),	-- Heroes' Dreadnaught Legplates
 				i(227261),	-- Heroes' Redemption Greaves
@@ -292,8 +290,6 @@ root(ROOTS.Unsorted, {
 				i(227554),	-- Firebird's Legguards
 				i(227555),	-- Firebird's Grips
 				i(227556),	-- Firebird's Gloves
-				i(227557),	-- Firebird's Kilt
-				i(227560),	-- Legguards of the Thousandfold Blades
 				i(227561),	-- Gloves of the Thousandfold Blades
 				i(227562),	-- Eternal Blossom Leggings
 				i(227563),	-- Eternal Blossom Gloves
@@ -368,14 +364,12 @@ root(ROOTS.Unsorted, {
 				i(227637),	-- Malevolent Gladiator's Cuffs of Accuracy
 				i(227638),	-- Malevolent Gladiator's Cuffs of Prowess
 				i(227639),	-- Malevolent Gladiator's Cuffs of Meditation
-				i(227640),	-- Malevolent Gladiator's Drape of Prowess
 				i(227641),	-- Malevolent Gladiator's Cape of Cruelty
 				i(227643),	-- Malevolent Gladiator's Warboots of Cruelty
 				i(227645),	-- Malevolent Gladiator's Warboots of Alacrity
 				i(227646),	-- Malevolent Gladiator's Ornamented Gloves
 				i(227647),	-- Malevolent Gladiator's Dreadplate Gauntlets
 				i(227648),	-- Malevolent Gladiator's Plate Gauntlets
-				i(227649),	-- Malevolent Gladiator's Ornamented Legplates
 				i(227650),	-- Malevolent Gladiator's Dreadplate Legguards
 				i(227651),	-- Malevolent Gladiator's Plate Legguards
 				i(227653),	-- Malevolent Gladiator's Girdle of Prowess

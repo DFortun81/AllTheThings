@@ -2245,11 +2245,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(186468),	-- Talon of the Tempest
 					i(186463),	-- Terrorweave Tunic
 					i(186484),	-- Voidforged Greaves
-					-- May be shared loot with other worldbosses or just wrongly reported
-					-- #if AFTER 11.0.5
-					i(227652),	-- Malevolent Gladiator's Girdle of Accuracy
-					i(227587),	-- Guardian Serpent Leggings
-					-- #endif
 				},
 			}),
 		}),
@@ -2499,6 +2494,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				crit(70548),	-- Gold Balloon
 				crit(70551),	-- Light Blue Balloon
 			}),
+			achWithRep(957, FACTION_ZANDALAR_TRIBE),	-- Hero of the Zandalar Tribe
 			ach(40985),		-- I Have That One!
 			ach(40872, {	-- I Saved the Party and All I Got Was This Lousy Hat (automated)
 				i(231906),	-- High-Alert Thinking Cap
@@ -2513,6 +2509,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			ach(41038),		-- Token Collector
 			ach(41013),		-- Upgraded Apparel
 			ach(40661),		-- Zoomies!
+		}),
+		n(FACTIONS, {
+			faction(FACTION_ZANDALAR_TRIBE, {	-- Zandalar Tribe
+				["icon"] = 135727,
+			}),
 		}),
 		n(QUESTS, {
 			q(82672),	-- Another Timely Invitation
@@ -2539,6 +2540,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["isWeekly"] = true,
 				["g"] = {
 					i(233014, {	-- Bronze Celebration Cache of Treasures
+						i(231395),	-- Earthslag Shoulders
 						i(231468),	-- Flamekeeper's Fire Blanket
 						i(231478),	-- Flamekeeper's Handwraps
 						i(231467),	-- Flamelord's Emberstaff
@@ -2667,16 +2669,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					}, {
 						i(224567),	-- Commendation of the Argent Dawn
 						i(224558),	-- Commendation of the Brood of Nozdormu
-						--i(224569),	-- Commendation of the Defilers
-						--i(224563),	-- Commendation of the Frostwolf Clan
 						i(224561),	-- Commendation of the Hydraxian Waterlords
-						--i(224568),	-- Commendation of the League of Arathor
-						i(224564),	-- Commendation of the Ravasaur Trainers [Unclear?!]
-						--i(224559),	-- Commendation of the Silverwing Sentinels
-						--i(224562),	-- Commendation of the Stormpike Guard
 						i(224571),	-- Commendation of the Thorium Brotherhood
 						i(224566),	-- Commendation of the Timbermaw Hold
-						--i(224560),	-- Commendation of the Warsong Outriders
 						i(224565),	-- Commendation of the Wintersaber Trainers
 						i(224570),	-- Commendation of the Zandalar Tribe
 					})),
@@ -2998,9 +2993,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					CAVERNS_OF_TIME,
 				},
 				["g"] = {
+					i(227557),	-- Firebird's Kilt
+					i(227587),	-- Guardian Serpent Leggings
+					i(227560),	-- Legguards of the Thousandfold Blades
 					i(227642),	-- Malevolent Gladiator's Cloak of Alacrity
+					i(227640),	-- Malevolent Gladiator's Drape of Prowess
+					i(227652),	-- Malevolent Gladiator's Girdle of Accuracy
 					i(227644),	-- Malevolent Gladiator's Greaves of Alacrity
 					i(227607),	-- Malevolent Gladiator's Ironskin Legguards
+					i(227649),	-- Malevolent Gladiator's Ornamented Legplates
 					i(227631),	-- Malevolent Gladiator's Silk Trousers
 					i(227609),	-- Malevolent Gladiator's Waistband of Cruelty
 					i(227623),	-- Malevolent Gladiator's Wristguards of Alacrity
@@ -3027,7 +3028,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(227224),	-- Hateful Gladiator's Ornamented Gloves
 					i(227222),	-- Hateful Gladiator's Plate Gauntlets
 					i(227212),	-- Hateful Gladiator's Ringmail Armor
+					i(227225),	-- Hateful Gladiator's Ringmail Gauntlets
 					i(227235),	-- Hateful Gladiator's Ringmail Leggings
+					i(227256),	-- Heroes' Bonescythe Legplates
 					i(227247),	-- Heroes' Cryptstalker Handguards
 					i(227269),	-- Heroes' Dreadnaught Battleplate
 					i(227249),	-- Heroes' Dreadnaught Gauntlets
