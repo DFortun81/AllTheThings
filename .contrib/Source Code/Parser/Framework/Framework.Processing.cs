@@ -1608,7 +1608,7 @@ namespace ATT
             {
                 long sqQuestID = questIDs.AsTypedEnumerable<long>().First();
 
-                LogDebugWarn($"Converted single 'sourceQuests' to '_quests' for Criteria {achID}:{criteriaID} with sourceQuest: {sqQuestID}");
+                LogDebug($"INFO: Converted single 'sourceQuests' to '_quests' for Criteria {achID}:{criteriaID} with sourceQuest: {sqQuestID}");
                 data["_quests"] = new List<long> { sqQuestID };
                 // can remove 'sourceQuests' from the criteria since it's going to be sourced under the required quest
                 data.Remove("sourceQuests");
@@ -1618,7 +1618,7 @@ namespace ATT
             if (data.TryGetValue("creatureID", out long creatureID))
             {
                 data.Remove("creatureID");
-                LogDebugWarn($"Converted 'creatureID' {creatureID} on Criteria {achID}:{criteriaID} into 'crs'");
+                LogDebug($"INFO: Converted 'creatureID' {creatureID} on Criteria {achID}:{criteriaID} into 'crs'");
                 Objects.Merge(data, "crs", new List<long> { creatureID });
             }
 
@@ -1626,7 +1626,7 @@ namespace ATT
             if (data.TryGetValue("npcID", out long npcID))
             {
                 data.Remove("npcID");
-                LogDebugWarn($"Converted 'npcID' {npcID} on Criteria {achID}:{criteriaID} into 'crs'");
+                LogDebug($"INFO: Converted 'npcID' {npcID} on Criteria {achID}:{criteriaID} into 'crs'");
                 Objects.Merge(data, "crs", new List<long> { npcID });
             }
 
