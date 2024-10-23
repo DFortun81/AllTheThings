@@ -2976,6 +2976,13 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(84606),	-- triggered with turnin of 'Timely Gate Crashers' [60215] (Bronze Cel Token lockout?)
 		q(84665),	-- triggered with turnin of 'Timely Gate Crashers' [60215] (Bronze Cel Cache lockout?)
 		q(86202, name(HEADERS.Item, 233014)),	-- opening first Bronze Celebration Cache of week
+		-- Bronze Celebration Tokens
+		q(84596),	-- Spreading The Lights
+		q(84609),	-- Forge the Pact weekly (general)
+		q(84610),	-- Theater
+		q(84614),	-- WB (Azj-Kahet)
+		q(84598),	-- Wax weekly
+		q(85833),	-- Delve weekly
 	}),
 })));
 -- #endif
