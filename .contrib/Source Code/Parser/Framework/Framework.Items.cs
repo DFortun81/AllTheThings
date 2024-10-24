@@ -705,6 +705,7 @@ namespace ATT
                         break;
 
                     case "_wipe":
+                    case "_defaulttimeline":
                     // Functions
                     case "OnInit":
                     case "OnClick":

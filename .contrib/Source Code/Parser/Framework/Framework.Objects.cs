@@ -1983,11 +1983,6 @@ end");
                             }
                             break;
                         }
-                    case "_wipe":
-                    case "_drop":
-                    case "_sitemID":
-                        item[field] = value;
-                        break;
 
                     // Report all other fields.
                     default:

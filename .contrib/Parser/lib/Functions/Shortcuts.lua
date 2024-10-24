@@ -880,6 +880,10 @@ crit = function(criteriaUID, t)							-- Create an Achievement Criteria Object (
 		error(table.concat({"Do not use 'creatureID' or 'npcID' in crit(",criteriaUID,") ==> [\"crs\"]={",t.creatureID or t.npcID,"}"}))
 	end
 	t.criteriaID = criteriaUID;
+	-- Apply a default timeline of 3.0.2 to Criteria
+	if not t.timeline then
+		t._defaulttimeline = { ADDED_3_0_2 }
+	end
 	return t;
 end
 currency = function(id, t)								-- Create a CURRENCY Object
@@ -1005,7 +1009,7 @@ expansion = function(id, patch, t)							-- Create an EXPANSION Object
 	end
 	t = struct("expansionID", id, t);
 	if t and not t.timeline then
-		t.timeline = { "added " .. math.floor(id) .. ".0" };
+		t._defaulttimeline = { "added " .. math.floor(id) .. ".0" };
 	end
 	return t;
 end
@@ -1159,7 +1163,7 @@ molemachine = function(questID, name, t)				-- Create a MOLE MACHINE Quest Objec
 			t.icon = 1786409;
 		end
 		if not t.timeline then
-			t.timeline = { ADDED_8_0_1 };
+			t._defaulttimeline = { ADDED_8_0_1 };
 		end
 		-- TODO: Do we really need the location as a description if its in each zone?
 		-- CRIEVE NOTE: Perhaps make an areaID-based class that can do header things?

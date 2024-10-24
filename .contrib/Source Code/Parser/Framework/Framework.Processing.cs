@@ -607,6 +607,17 @@ namespace ATT
             // Crieve wants objectives and doesn't agree with this, but will allow it outside of Classic Builds.
             if (data.ContainsKey("objectiveID") && !Program.PreProcessorTags.ContainsKey("OBJECTIVES")) return false;
 
+            // Some objects have a default timeline applied, but this prevents sharedData/bubbleDown from having effect...
+            // Instead let's wrap this in a '_defaulttimeline' field and switch it to the 'timeline' field here if there ends up being no 'timeline'
+            if (data.TryGetValue("_defaulttimeline", out object defTimeline))
+            {
+                if (!data.ContainsKey("timeline"))
+                {
+                    LogDebugWarn($"Default Timeline used! {ToJSON(defTimeline)} Consider adding an accurate 'timeline' field", data);
+                    Timeline.Merge(data, defTimeline);
+                }
+            }
+
             // verify the timeline data of Merged data (can prevent keeping the data in the data container)
             if (!CheckTimeline(data))
                 return false;
@@ -1636,13 +1647,6 @@ namespace ATT
             {
                 data.Remove("crs");
                 Objects.Merge(data, "_npcs", crs);
-            }
-
-            // If Criteria doesn't have any timeline, enforce a default of 3.0.1
-            if (!data.ContainsKey("timeline"))
-            {
-                data["timeline"] = new List<object> { "added 3.0.2" };
-                LogDebugWarn($"Added default timeline 3.0.1 on Criteria {achID}:{criteriaID}");
             }
         }
 
