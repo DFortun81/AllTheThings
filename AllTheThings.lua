@@ -795,7 +795,7 @@ MergeObject = function(g, t, index, newCreate)
 			if (o.hash or GetHash(o)) == hash then
 				MergeProperties(o, t, true);
 				NestObjects(o, t.g, newCreate);
-				return o;
+				return
 			end
 		end
 		if newCreate then t = CreateObject(t); end
@@ -2700,27 +2700,6 @@ end	-- Search results Lib
 
 -- Auto-Expansion logic
 do
-local function HasCost(group, idType, id)
-	-- check if the group has a cost which includes the given parameters
-	if group.cost and type(group.cost) == "table" then
-		if idType == "itemID" then
-			for i,c in ipairs(group.cost) do
-				if c[2] == id and c[1] == "i" then
-					-- app.PrintDebug("HasCost!",idType,id,app:SearchLink(group))
-					return true;
-				end
-			end
-		elseif idType == "currencyID" then
-			for i,c in ipairs(group.cost) do
-				if c[2] == id and c[1] == "c" then
-					-- app.PrintDebug("HasCost!",idType,id,app:SearchLink(group))
-					return true;
-				end
-			end
-		end
-	end
-	return false;
-end
 -- Determines searches required for upgrades using this group
 local function DetermineUpgradeGroups(group, FillData)
 	local nextUpgrade = group.nextUpgrade;
@@ -2820,8 +2799,6 @@ local function DetermineCraftedGroups(group, FillData)
 	if FillData.Root == group then
 		craftedItems[itemID] = true
 	end
-	local rootKey = FillData.Root.key
-	local rootID = FillData.Root[rootKey]
 	local craftedItemID, recipe, skillID
 
 	-- If needing to filter by skill due to BoP reagent, then check via recipe cache instead of by crafted item
@@ -2840,10 +2817,7 @@ local function DetermineCraftedGroups(group, FillData)
 			recipe = SearchForObject("recipeID",recipeID,"key") or {recipeID=recipeID}
 			if recipe then
 				if expandedNesting then
-					recipe = CreateObject(recipe)
-					if not HasCost(recipe, rootKey, rootID) then
-						recipe.collectible = false
-					end
+					recipe = app.CreateNonCollectibleWithGroups(recipe)
 					recipe.fillable = true
 					groups[#groups + 1] = recipe
 				else
