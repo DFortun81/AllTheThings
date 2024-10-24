@@ -2228,7 +2228,15 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						["timeline"] = { ADDED_10_2_0 }
 					}),
 					i(186469, {	-- Illidari Doomhawk (MOUNT!)
-						["timeline"] = { REMOVED_10_2_0 }
+						["timeline"] = { REMOVED_10_2_0, ADDED_11_0_5 }
+					}),
+					i(43959, {	-- Reins of the Grand Black War Mammoth (A) (MOUNT!)
+						["races"] = ALLIANCE_ONLY,
+						["timeline"] = { ADDED_11_0_5 },
+					}),
+					i(44083, {	-- Reins of the Grand Black War Mammoth (H) (MOUNT!)
+						["races"] = HORDE_ONLY,
+						["timeline"] = { ADDED_11_0_5 },
 					}),
 					i(186501);	-- Doomwalker Trophy Stand (TOY!)
 					i(186506),	-- Akama's Edge
@@ -3302,6 +3310,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					CAVERNS_OF_TIME,
 				},
 				["g"] = {
+					i(87771),	-- Reins of the Heavenly Onyx Cloud Serpent (MOUNT!)
 					i(227557),	-- Firebird's Kilt
 					i(227586),	-- Guardian Serpent Gloves
 					i(227587),	-- Guardian Serpent Leggings
@@ -3319,6 +3328,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(227652),	-- Malevolent Gladiator's Girdle of Accuracy
 					i(227644),	-- Malevolent Gladiator's Greaves of Alacrity
 					i(227607),	-- Malevolent Gladiator's Ironskin Legguards
+					i(227606),	-- Malevolent Gladiator's Leather Legguards
+					i(227646),	-- Malevolent Gladiator's Ornamented Gloves
 					i(227649),	-- Malevolent Gladiator's Ornamented Legplates
 					i(227648),	-- Malevolent Gladiator's Plate Gauntlets
 					i(227620),	-- Malevolent Gladiator's Ringmail Leggings
@@ -3347,6 +3358,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					CAVERNS_OF_TIME,
 				},
 				["g"] = {
+					a(i(43959)),	-- Reins of the Grand Black War Mammoth (A) (MOUNT!)
+					h(i(44083)),	-- Reins of the Grand Black War Mammoth (H) (MOUNT!)
 					i(227213),	-- Hateful Gladiator's Chain Armor
 					i(227226),	-- Hateful Gladiator's Chain Gauntlets
 					i(227236),	-- Hateful Gladiator's Chain Leggings
@@ -3355,12 +3368,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(227241),	-- Hateful Gladiator's Felweave Trousers
 					i(227227),	-- Hateful Gladiator's Kodohide Gloves
 					i(227214),	-- Hateful Gladiator's Leather Tunic
+					i(227239),	-- Hateful Gladiator's Mooncloth Leggings
 					i(227218),	-- Hateful Gladiator's Mooncloth Robe
 					i(227224),	-- Hateful Gladiator's Ornamented Gloves
 					i(227222),	-- Hateful Gladiator's Plate Gauntlets
 					i(227212),	-- Hateful Gladiator's Ringmail Armor
 					i(227225),	-- Hateful Gladiator's Ringmail Gauntlets
 					i(227235),	-- Hateful Gladiator's Ringmail Leggings
+					i(227230),	-- Hateful Gladiator's Silk Handguards
 					i(227246),	-- Heroes' Bonescythe Gauntlets
 					i(227256),	-- Heroes' Bonescythe Legplates
 					i(227247),	-- Heroes' Cryptstalker Handguards
@@ -3368,12 +3383,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(227267),	-- Heroes' Cryptstalker Tunic
 					i(227269),	-- Heroes' Dreadnaught Battleplate
 					i(227249),	-- Heroes' Dreadnaught Gauntlets
+					i(227259),	-- Heroes' Dreadnaught Legplates
 					i(227245),	-- Heroes' Dreamwalker Handgrips
 					i(227255),	-- Heroes' Dreamwalker Legguards
 					i(227265),	-- Heroes' Dreamwalker Raiments
 					i(227248),	-- Heroes' Earthshatter Handguards
 					i(227258),	-- Heroes' Earthshatter Legguards
 					i(227268),	-- Heroes' Earthshatter Tunic
+					i(227252),	-- Heroes' Frostfire Leggings
 					i(227262),	-- Heroes' Frostfire Robe
 					i(227244),	-- Heroes' Gloves of Faith
 					i(227254),	-- Heroes' Leggings of Faith

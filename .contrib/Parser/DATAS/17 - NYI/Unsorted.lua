@@ -251,19 +251,15 @@ root(ROOTS.Unsorted, {
 				i(227221),	-- Hateful Gladiator's Felweave Raiment
 				i(227228),	-- Hateful Gladiator's Leather Gloves
 				i(227229),	-- Hateful Gladiator's Mooncloth Gloves
-				i(227230),	-- Hateful Gladiator's Silk Handguards
 				i(227231),	-- Hateful Gladiator's Felweave Handguards
 				i(227232),	-- Hateful Gladiator's Plate Legguards
 				i(227234),	-- Hateful Gladiator's Ornamented Legplates
 				i(227237),	-- Hateful Gladiator's Kodohide Legguards
 				i(227238),	-- Hateful Gladiator's Leather Legguards
-				i(227239),	-- Hateful Gladiator's Mooncloth Leggings
 				i(227240),	-- Hateful Gladiator's Silk Trousers
 				i(227242),	-- Heroes' Frostfire Gloves
 				i(227243),	-- Heroes' Plagueheart Gloves
-				i(227252),	-- Heroes' Frostfire Leggings
 				i(227253),	-- Heroes' Plagueheart Leggings
-				i(227259),	-- Heroes' Dreadnaught Legplates
 				i(227261),	-- Heroes' Redemption Greaves
 				i(227263),	-- Heroes' Plagueheart Robe
 				i(227264),	-- Heroes' Robe of Faith
@@ -309,7 +305,6 @@ root(ROOTS.Unsorted, {
 				i(227602),	-- Malevolent Gladiator's Footguards of Alacrity
 				i(227603),	-- Malevolent Gladiator's Leather Gloves
 				i(227604),	-- Malevolent Gladiator's Ironskin Gloves
-				i(227606),	-- Malevolent Gladiator's Leather Legguards
 				i(227610),	-- Malevolent Gladiator's Waistband of Accuracy
 				i(227611),	-- Malevolent Gladiator's Belt of Cruelty
 				i(227612),	-- Malevolent Gladiator's Armwraps of Alacrity
@@ -331,7 +326,6 @@ root(ROOTS.Unsorted, {
 				i(227638),	-- Malevolent Gladiator's Cuffs of Prowess
 				i(227639),	-- Malevolent Gladiator's Cuffs of Meditation
 				i(227643),	-- Malevolent Gladiator's Warboots of Cruelty
-				i(227646),	-- Malevolent Gladiator's Ornamented Gloves
 				i(227647),	-- Malevolent Gladiator's Dreadplate Gauntlets
 				i(227650),	-- Malevolent Gladiator's Dreadplate Legguards
 				i(227651),	-- Malevolent Gladiator's Plate Legguards
