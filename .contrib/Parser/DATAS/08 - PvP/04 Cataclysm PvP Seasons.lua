@@ -22,7 +22,7 @@ local function MarkOfWHOOOWHATNow(t)
 end
 root(ROOTS.PVP, {
 	applyclassicphase(CATA_PHASE_ONE, run(MarkOfWHOOOWHATNow, pvp(expansion(EXPANSION.CATA, {
-		n(RATED_BATTLEGROUNDS, {
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(RATED_BATTLEGROUNDS, bubbleDown({ ["timeline"] = { ADDED_4_3_0 } }, {
 			n(FACTION_HEADER_ALLIANCE, {
 				["races"] = ALLIANCE_ONLY,
 				["groups"] = {
@@ -431,7 +431,7 @@ root(ROOTS.PVP, {
 					i(77825),	-- Replica Legionnaire's Mail Leggings
 				},
 			}),
-		}),
+		}))),
 		n(SEASON_VICIOUS, {
 			elitepvp(n(ACHIEVEMENTS, bubbleDown({
 				["timeline"] = { ADDED_4_0_3, REMOVED_4_2_0 },
