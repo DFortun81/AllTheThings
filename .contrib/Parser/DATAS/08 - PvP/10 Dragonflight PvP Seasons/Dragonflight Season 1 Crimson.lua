@@ -1019,6 +1019,7 @@ root(ROOTS.PVP, pvp(expansion(EXPANSION.DF, bubbleDown({ ["timeline"] = { ADDED_
 				["coord"] = { 45.9, 38.7, VALDRAKKEN },
 				["g"] = sharedData({
 					["cost"] = {{"i", MOH, 12}},
+					["u"] = ELITE_PVP_REQUIREMENT,
 				}, {
 					iensemble(230901, {	-- Arsenal: Elite Crimson Gladiator's Weapons
 						["cost"] = {{"i", MOH, 80}},
