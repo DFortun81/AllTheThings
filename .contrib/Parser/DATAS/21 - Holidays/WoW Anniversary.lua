@@ -212,6 +212,7 @@ WOW_ANNIVERSARY_TWENTY = createHeader({
 	-- },
 	text = {
 		en = "WoW's 20th Anniversary",
+		cn = "魔兽世界二十周年",
 	},
 });
 local BRONZE_TOKEN = 3100;
