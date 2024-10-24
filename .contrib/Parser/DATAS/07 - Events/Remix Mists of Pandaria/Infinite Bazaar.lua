@@ -345,131 +345,105 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 			n(220895, {	-- Grandmaster Jakkus <Class Apparel>
 				clWithoutLock(DEATHKNIGHT, {
 					iensemble(217824, { -- Arsenal: Webbed Soulforged Weaponry
-						["classes"] = DEATHKNIGHT,
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
 					iensemble(217837, { -- Ensemble: Webbed Soulforged Exoskeleton
-						["classes"] = DEATHKNIGHT,
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(DEMONHUNTER, {
 					iensemble(217828, { -- Arsenal: Aldrachi Blasphemer's Glaives
-						["classes"] = DEMONHUNTER,
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
 					iensemble(217842, { -- Ensemble: Aldrachi Blasphemer's Flames
-						["classes"] = DEMONHUNTER,
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(DRUID, {
 					iensemble(217829, { -- Arsenal: Ela'lothen's Blessings of Rebirth
-						["classes"] = DRUID,
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
 					iensemble(217843, { -- Ensemble: Ela'lothen's Vestment of Rebirth
-						["classes"] = DRUID,
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(EVOKER, {
 					iensemble(217821, { -- Arsenal: Treasure of the Gold Hoarder
-						["classes"] = EVOKER,
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
 					iensemble(217835, { -- Ensemble: Scales of the Gold Hoarder
-						["classes"] = EVOKER,
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(HUNTER, {
 					iensemble(217820, { -- Arsenal: Dreadsquall Hunter's Preference
-						["classes"] = HUNTER,
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
 					iensemble(217834, {	--  Ensemble: Dreadsquall Hunter's Camouflage
-						["classes"] = HUNTER,
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(MAGE, {
 					iensemble(217823, { -- Arsenal: Sin'dorei Magister's Enchantment
-						["classes"] = MAGE,
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
 					iensemble(217836, { -- Ensemble: Sin'dorei Magister's Regalia
-						["classes"] = MAGE,
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(MONK, {
 					iensemble(217827, { -- Arsenal: Shado-Pan Watcher Arsenal
-						["classes"] = MONK,
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
 					iensemble(217841, { -- Ensemble: Shado-Pan Watcher Guise
-						["classes"] = MONK,
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(PALADIN, {
 					iensemble(217832, { -- Arsenal: Armaments of the Holy Avenger
-						["classes"] = PALADIN,
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
 					iensemble(217846, { -- Ensemble: Plate of the Holy Avenger
-						["classes"] = PALADIN,
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(PRIEST, {
 					iensemble(217831, { -- Arsenal: Secrets of the Abyssal Cult
-						["classes"] = PRIEST,
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
 					iensemble(217845, { -- Ensemble: Silks of the Abyssal Cult
-						["classes"] = PRIEST,
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(ROGUE, {
 					iensemble(217830, { -- Arsenal: Igneous Onyx Blades
-						["classes"] = ROGUE,
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
 					iensemble(217844, { -- Ensemble: Igneous Onyx Uniform
-						["classes"] = ROGUE,
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(SHAMAN, {
 					iensemble(217819, { -- Arsenal: Tools of Krag'wa's Disciple
-						["classes"] = SHAMAN,
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
 					iensemble(217833, { -- Ensemble: Imminence of Krag'wa's Disciple
-						["classes"] = SHAMAN,
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(WARLOCK, {
 					iensemble(217826, { -- Arsenal: Instruments of Temptation's Call
-						["classes"] = WARLOCK,
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
 					iensemble(217839, { -- Ensemble: Jewels of Temptation's Call
-						["classes"] = WARLOCK,
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),
 				clWithoutLock(WARRIOR, {
 					iensemble(217825, { -- Arsenal: Fanatical Champion's Aggression
-						["classes"] = WARRIOR,
 						["cost"] = {{"c", BRONZE, 3000}},
 					}),
 					iensemble(217838, { -- Ensemble: Fanatical Champion's Trophies
-						["classes"] = WARRIOR,
 						["cost"] = {{"c", BRONZE, 4000}},
 					}),
 				}),

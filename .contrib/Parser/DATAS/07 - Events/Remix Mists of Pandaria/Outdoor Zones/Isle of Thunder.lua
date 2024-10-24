@@ -54,70 +54,44 @@ root(ROOTS.WorldEvents, applyevent(EVENTS.REMIX_MOP, n(REMIX_MOP, bubbleDown({ [
 						20015,	-- Looking For Group: Isle of Thunder
 					}},
 					["g"] = {
-						cl(DEATHKNIGHT, {
-							iensemble(217824, {	-- Arsenal: Webbed Soulforged Weaponry
-								["classes"] = DEATHKNIGHT,
-							}),
+						clWithoutLock(DEATHKNIGHT, {
+							iensemble(217824),	-- Arsenal: Webbed Soulforged Weaponry
 						}),
-						cl(DEMONHUNTER, {
-							iensemble(217828, {	-- Arsenal: Aldrachi Blasphemer's Glaives
-								["classes"] = DEMONHUNTER,
-							}),
+						clWithoutLock(DEMONHUNTER, {
+							iensemble(217828),	-- Arsenal: Aldrachi Blasphemer's Glaives
 						}),
-						cl(DRUID, {
-							iensemble(217829, {	-- Arsenal: Ela'lothen's Blessings of Rebirth
-								["classes"] = DRUID,
-							}),
+						clWithoutLock(DRUID, {
+							iensemble(217829),	-- Arsenal: Ela'lothen's Blessings of Rebirth
 						}),
-						cl(EVOKER, {
-							iensemble(217821, {	-- Arsenal: Treasure of the Gold Hoarder
-								["classes"] = EVOKER,
-							}),
+						clWithoutLock(EVOKER, {
+							iensemble(217821),	-- Arsenal: Treasure of the Gold Hoarder
 						}),
-						cl(HUNTER, {
-							iensemble(217820, {	-- Arsenal: Dreadsquall Hunter's Preference
-								["classes"] = HUNTER,
-							}),
+						clWithoutLock(HUNTER, {
+							iensemble(217820),	-- Arsenal: Dreadsquall Hunter's Preference
 						}),
-						cl(MAGE, {
-							iensemble(217823, {	-- Arsenal: Sin'dorei Magister's Enchantment
-								["classes"] = MAGE,
-							}),
+						clWithoutLock(MAGE, {
+							iensemble(217823),	-- Arsenal: Sin'dorei Magister's Enchantment
 						}),
-						cl(MONK, {
-							iensemble(217827, {	-- Arsenal: Shado-Pan Watcher Arsenal
-								["classes"] = MONK,
-							}),
+						clWithoutLock(MONK, {
+							iensemble(217827),	-- Arsenal: Shado-Pan Watcher Arsenal
 						}),
-						cl(PALADIN, {
-							iensemble(217832, {	-- Arsenal: Armaments of the Holy Avenger
-								["classes"] = PALADIN,
-							}),
+						clWithoutLock(PALADIN, {
+							iensemble(217832),	-- Arsenal: Armaments of the Holy Avenger
 						}),
-						cl(PRIEST, {
-							iensemble(217831, {	-- Arsenal: Secrets of the Abyssal Cult
-								["classes"] = PRIEST,
-							}),
+						clWithoutLock(PRIEST, {
+							iensemble(217831),	-- Arsenal: Secrets of the Abyssal Cult
 						}),
-						cl(ROGUE, {
-							iensemble(217830, {	-- Arsenal: Igneous Onyx Blades
-								["classes"] = ROGUE,
-							}),
+						clWithoutLock(ROGUE, {
+							iensemble(217830),	-- Arsenal: Igneous Onyx Blades
 						}),
-						cl(SHAMAN, {
-							iensemble(217819, {	-- Arsenal: Tools of Krag'wa's Disciple
-								["classes"] = SHAMAN,
-							}),
+						clWithoutLock(SHAMAN, {
+							iensemble(217819),	-- Arsenal: Tools of Krag'wa's Disciple
 						}),
-						cl(WARLOCK, {
-							iensemble(217826, {	-- Arsenal: Instruments of Temptation's Call
-								["classes"] = WARLOCK,
-							}),
+						clWithoutLock(WARLOCK, {
+							iensemble(217826)	-- Arsenal: Instruments of Temptation's Call
 						}),
-						cl(WARRIOR, {
-							iensemble(217825, {	-- Arsenal: Fanatical Champion's Aggression
-								["classes"] = WARRIOR,
-							}),
+						clWithoutLock(WARRIOR, {
+							iensemble(217825),	-- Arsenal: Fanatical Champion's Aggression
 						}),
 					},
 				}),
