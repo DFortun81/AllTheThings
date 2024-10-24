@@ -21,6 +21,7 @@ WORLD_PVP = createHeader({
 	icon = [[~_.asset("Category_Zones")]],
 	text = {
 		en = "World PvP",
+		cn = "世界PvP",
 	},
 });
 root(ROOTS.PVP, pvp(n(WORLD_PVP, {
