@@ -246,12 +246,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78701,	-- The Truth in Chalk
 					},
 					["provider"] = { "n", 214892 },	-- Dagran Thaurissan II
-					--["maps"] = { THE_RINGING_DEEPS },	-- follow player
 				}),
 				q(78704, {	-- Find the Foreman
 					["sourceQuests"] = { 78703 },	-- Buried in Stone
 					["provider"] = { "n", 214890 },	-- Magni Bronzebeard
-					--["maps"] = { THE_RINGING_DEEPS },	-- follow player
 					["g"] = {
 						i(219362),	-- Earthen Traveler's Cuffs
 						i(219366),	-- Earthen Traveler's Bindings
@@ -262,7 +260,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(78705, {	-- What She Saw
 					["sourceQuests"] = { 78704 },	-- Find the Foreman
 					["provider"] = { "n", 214892 },	-- Dagran Thaurissan II
-					--["maps"] = { THE_RINGING_DEEPS },	-- follow player
 				}),
 				q(78706, {	-- The High Speaker's Secret
 					["sourceQuests"] = { 78705 },	-- What She Saw
@@ -495,7 +492,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						82969,	-- Stone Tracing
 					},
 					["provider"] = { "n", 224618 },	-- Danagh's Cogwalker
-					--["coord"] = { 58.9, 64.1, THE_RINGING_DEEPS },	-- follow player
 					["g"] = {
 						i(224555),	-- Arbauch's Memory Gem (QI!)
 					},
@@ -531,12 +527,10 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 				q(80512, {	-- Beat the Best
 					["sourceQuests"] = { 80511 },	-- Casing the Camp
 					["provider"] = { "n", 222239 },	-- Scrit
-					--["coord"] = { x, y, THE_RINGING_DEEPS }, -- follow player
 				}),
 				q(80513, {	-- Snouty Sabotage
 					["sourceQuests"] = { 80511 },	-- Casing the Camp
 					["provider"] = { "n", 222239 },	-- Scrit
-					--["coord"] = { x, y, THE_RINGING_DEEPS }, -- follow player
 				}),
 				q(80514, {	-- Break out Berrund!
 					["sourceQuests"] = {
@@ -544,7 +538,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						80513,	-- Snouty Sabotage
 					},
 					["provider"] = { "n", 222239 },	-- Scrit
-					--["coord"] = { x, y, THE_RINGING_DEEPS }, -- follow player
 				}),
 				q(80515, {	-- Put the Shine On
 					["sourceQuests"] = { 80514 },	-- Break out Berrund!

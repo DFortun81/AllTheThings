@@ -2354,6 +2354,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						["provider"] = { "n", 223884 },	-- Bobadormu
 						["coord"] = { 62.7, 50.3, TANARIS },
 						["isWeekly"] = true,
+						["g"] = {
+							i(232877),	-- Timely Goodie Bag
+						},
 					}),
 					q(82817, {	-- Disturbance Detected: Blackrock Depths
 						["provider"] = { "n", 229494 },	-- Moira Thaurissan <Queen of the Dark Iron>
@@ -2361,8 +2364,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						["isWeekly"] = true,
 						["g"] = {
 							i(232471, {	-- Cache of Dark Iron Treasures
-								i(231491),	-- Grebmar's Catch Pole
-								i(231390),	-- Spritecaster Cape
+								["sym"] = SYM_ALL_BRD_DROPS,
 							}),
 						},
 					}),
@@ -2581,13 +2583,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["g"] = {
 					ach(40977),	-- Codex Editor: Ahn'Qiraj
 					i(233014, {	-- Bronze Celebration Cache of Treasures
-						i(231395),	-- Earthslag Shoulders
-						i(231468),	-- Flamekeeper's Fire Blanket
-						i(231478),	-- Flamekeeper's Handwraps
-						i(231467),	-- Flamelord's Emberstaff
-						i(231439),	-- Hands of the Exalted Herald
-						i(231434),	-- Haunting Specter Leggings
-						i(231423),	-- Omnicast Boots
+						["sym"] = SYM_ALL_BRD_DROPS,
 					}),
 				},
 			}),
@@ -2865,7 +2861,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			n(231352, {	-- Notary Grably <Titles of Olde>
 				["coord"] = { 63.3, 50.7, TANARIS },
 				["g"] = {
-					-- This might have further requirements such as achievements //Braghe
 					i(230264, {	-- Bronze Celebration Titles: Broken Isles Enthusiast
 						["cost"] = {{"c", TIMEWARPED_BADGE, 100}},
 						["g"] = {
@@ -3030,34 +3025,54 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				},
 				["g"] = {
 					i(87771),	-- Reins of the Heavenly Onyx Cloud Serpent (MOUNT!)
+					i(227565),	-- Eternal Blossom Grips
+					i(227564),	-- Eternal Blossom Legguards
+					i(227556),	-- Firebird's Gloves
 					i(227557),	-- Firebird's Kilt
+					i(227574),	-- Greaves of the Lost Catacomb
 					i(227586),	-- Guardian Serpent Gloves
 					i(227587),	-- Guardian Serpent Leggings
 					i(227590),	-- Leggings of the Burning Scroll
 					i(227560),	-- Legguards of the Thousandfold Blades
+					i(227572),	-- Legplates of Resounding Rings
+					i(227624),	-- Malevolent Gladiator's Armbands of Prowess
+					i(227656),	-- Malevolent Gladiator's Armplates of Proficiency
+					i(227613),	-- Malevolent Gladiator's Armwraps of Accuracy
+					i(227612),	-- Malevolent Gladiator's Armwraps of Alacrity
 					i(227614),	-- Malevolent Gladiator's Bindings of Prowess
 					i(227601),	-- Malevolent Gladiator's Boots of Alacrity
 					i(227600),	-- Malevolent Gladiator's Boots of Cruelty
+					i(227655),	-- Malevolent Gladiator's Bracers of Prowess
 					i(227641),	-- Malevolent Gladiator's Cape of Cruelty
 					i(227617),	-- Malevolent Gladiator's Chain Gauntlets
 					i(227642),	-- Malevolent Gladiator's Cloak of Alacrity
+					i(227635),	-- Malevolent Gladiator's Cord of Accuracy
 					i(227634),	-- Malevolent Gladiator's Cord of Cruelty
 					i(227640),	-- Malevolent Gladiator's Drape of Prowess
 					i(227629),	-- Malevolent Gladiator's Felweave Handguards
+					i(227616),	-- Malevolent Gladiator's Footguards of Alacrity
 					i(227652),	-- Malevolent Gladiator's Girdle of Accuracy
+					i(227653),	-- Malevolent Gladiator's Girdle of Prowess
 					i(227644),	-- Malevolent Gladiator's Greaves of Alacrity
+					i(227604),	-- Malevolent Gladiator's Ironskin Gloves
 					i(227607),	-- Malevolent Gladiator's Ironskin Legguards
 					i(227606),	-- Malevolent Gladiator's Leather Legguards
+					i(227622),	-- Malevolent Gladiator's Links of Cruelty
 					i(227646),	-- Malevolent Gladiator's Ornamented Gloves
 					i(227649),	-- Malevolent Gladiator's Ornamented Legplates
 					i(227648),	-- Malevolent Gladiator's Plate Gauntlets
+					i(227618),	-- Malevolent Gladiator's Ringmail Gauntlets
 					i(227620),	-- Malevolent Gladiator's Ringmail Leggings
 					i(227615),	-- Malevolent Gladiator's Sabatons of Cruelty
+					i(227628),	-- Malevolent Gladiator's Silk Handguards
 					i(227631),	-- Malevolent Gladiator's Silk Trousers
 					i(227626),	-- Malevolent Gladiator's Treads of Alacrity
+					i(227625),	-- Malevolent Gladiator's Treads of Cruelty
 					i(227609),	-- Malevolent Gladiator's Waistband of Cruelty
 					i(227621),	-- Malevolent Gladiator's Waistguard of Meditation
 					i(227645),	-- Malevolent Gladiator's Warboots of Alacrity
+					i(227643),	-- Malevolent Gladiator's Warboots of Cruelty
+					i(227610),	-- Malevolent Gladiator's Waistband of Accuracy
 					i(227623),	-- Malevolent Gladiator's Wristguards of Alacrity
 					i(227605),	-- Malevolent Gladiator's Wyrmhide Gloves
 					i(227608),	-- Malevolent Gladiator's Wyrmhide Legguards
@@ -3084,17 +3099,29 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(227236),	-- Hateful Gladiator's Chain Leggings
 					i(227223),	-- Hateful Gladiator's Dreadplate Gauntlets
 					i(227233),	-- Hateful Gladiator's Dreadplate Legguards
+					i(227231),	-- Hateful Gladiator's Felweave Handguards
 					i(227241),	-- Hateful Gladiator's Felweave Trousers
 					i(227227),	-- Hateful Gladiator's Kodohide Gloves
+					i(227237),	-- Hateful Gladiator's Kodohide Legguards
+					i(227215),	-- Hateful Gladiator's Kodohide Robes
+					i(227228),	-- Hateful Gladiator's Leather Gloves
+					i(227238),	-- Hateful Gladiator's Leather Legguards
 					i(227214),	-- Hateful Gladiator's Leather Tunic
+					i(227229),	-- Hateful Gladiator's Mooncloth Gloves
 					i(227239),	-- Hateful Gladiator's Mooncloth Leggings
 					i(227218),	-- Hateful Gladiator's Mooncloth Robe
+					i(227211),	-- Hateful Gladiator's Ornamented Chestguard
 					i(227224),	-- Hateful Gladiator's Ornamented Gloves
+					i(227234),	-- Hateful Gladiator's Ornamented Legplates
 					i(227222),	-- Hateful Gladiator's Plate Gauntlets
+					i(227232),	-- Hateful Gladiator's Plate Legguards
 					i(227212),	-- Hateful Gladiator's Ringmail Armor
 					i(227225),	-- Hateful Gladiator's Ringmail Gauntlets
 					i(227235),	-- Hateful Gladiator's Ringmail Leggings
 					i(227230),	-- Hateful Gladiator's Silk Handguards
+					i(227220),	-- Hateful Gladiator's Silk Raiment
+					i(227240),	-- Hateful Gladiator's Silk Trousers
+					i(227266),	-- Heroes' Bonescythe Breastplate
 					i(227246),	-- Heroes' Bonescythe Gauntlets
 					i(227256),	-- Heroes' Bonescythe Legplates
 					i(227247),	-- Heroes' Cryptstalker Handguards
@@ -3109,12 +3136,16 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(227248),	-- Heroes' Earthshatter Handguards
 					i(227258),	-- Heroes' Earthshatter Legguards
 					i(227268),	-- Heroes' Earthshatter Tunic
+					i(227242),	-- Heroes' Frostfire Gloves
 					i(227252),	-- Heroes' Frostfire Leggings
 					i(227262),	-- Heroes' Frostfire Robe
 					i(227244),	-- Heroes' Gloves of Faith
 					i(227254),	-- Heroes' Leggings of Faith
+					i(227263),	-- Heroes' Plagueheart Robe
 					i(227251),	-- Heroes' Redemption Gloves
+					i(227261),	-- Heroes' Redemption Greaves
 					i(227271),	-- Heroes' Redemption Tunic
+					i(227270),	-- Heroes' Scourgeborne Battleplate
 					i(227250),	-- Heroes' Scourgeborne Gauntlets
 					i(227260),	-- Heroes' Scourgeborne Legplates
 				},

@@ -176,9 +176,15 @@ local MobileNPCDB = {
 	[191494] = true,	-- Khanam Matra Sarest
 	[193985] = true,	-- Initiate Zorig
 	[209681] = true,	-- Squally
+	[214890] = true,	-- Magni Bronzebeard
+	[214892] = true,	-- Dagran Thaurissan II
 	[220859] = true,	-- Amy Lychenstone
+	[221492] = true,	-- Baron Sybaestan Braunpyke
 	[221867] = true,	-- Mereldar Child
 	[221980] = true,	-- Faerin Lothar
+	[222239] = true,	-- Scrit
+	[224618] = true,	-- Danagh's Cogwalker
+	[211444] = true,	-- Flynn Fairwind
 }
 
 local ReturnEmptyFunctionMeta = { __index = function() return app.ReturnFalse end}

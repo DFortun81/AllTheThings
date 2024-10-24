@@ -432,7 +432,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						79641,	-- Wipe Away Their Smiles
 					},
 					["provider"] = { "n", 221492 },	-- Baron Sybaestan Braunpyke
-					--["coord"] = { x, y, HALLOWFALL },	-- follow player
 				}),
 				q(79644, {	-- Go to The Priory
 					["sourceQuests"] = { 79643 },	-- Dreaded Dreadfang

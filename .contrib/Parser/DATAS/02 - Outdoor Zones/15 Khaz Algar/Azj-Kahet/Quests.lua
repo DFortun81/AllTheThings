@@ -164,7 +164,6 @@ root(ROOTS.Zones, m(KHAZ_ALGAR, bubbleDown({ ["timeline"] = { ADDED_11_0_2 } }, 
 						78383,	-- Strategic Edge
 					},
 					["provider"] = { "n", 211444 },	-- Flynn Fairwind
-					--["coord"] = { x, y, AZJ_KAHET },	-- follow player
 				}),
 				q(79625, {	-- Not Quite Dead
 					["sourceQuests"] = { 78237 },	-- Let Fly!
