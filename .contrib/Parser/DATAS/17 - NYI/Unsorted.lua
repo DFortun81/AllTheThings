@@ -143,7 +143,6 @@ root(ROOTS.Unsorted, {
 				i(223621),	-- 20th Anniversary Cache
 				i(223622),	-- 20th Anniversary Cache
 				i(224194),	-- Fashion Frenzy Ribbon
-				i(224278),	-- Timewarped Ironforge Blueprints
 				i(225252),	-- Bronze Celebration Token
 				-- Secret
 				i(228617),	-- Benatauk's Clue Book

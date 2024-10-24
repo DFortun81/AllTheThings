@@ -2437,7 +2437,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						i(231403),	-- Kindling Stave
 						i(231402),	-- Searingscale Leggings
 					}),
-					Boss(DAGRAN)
+					Boss(DAGRAN, {
+						i(224278),	-- Timewarped Ironforge Blueprints (QI!)
+					}),
 				}),
 				Difficulty(DIFFICULTY.RAID.LFR).AddGroups({
 					CommonBossDrops({
