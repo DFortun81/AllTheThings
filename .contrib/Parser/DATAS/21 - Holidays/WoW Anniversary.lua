@@ -2796,7 +2796,6 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			ach(40990),		-- Balloonist
 			ach(40984),		-- Big Fan
 			ach(41033),		-- Classy Dresser
-			ach(40977),		-- Codex Editor: Ahn'Qiraj
 			ach(40873),		-- Crate Insurance Agent
 			ach(40987),		-- Fashion Critic
 			ach(40991, {	-- Frequent Flyer
@@ -2813,13 +2812,24 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			ach(40986),		-- Mount Master
 			ach(40979),		-- No Crate Left Behind
 			ach(40992),		-- Peanut Gallery
-			ach(40989),		-- Pet Mischief
+			ach(40989, {	-- Pet Mischief
+				["provider"] = { "i", 224157 },	-- Pet Mirror
+			}),
 			ach(40988),		-- Photo Op!
 			ach(40997),		-- The Gatecrashers (automated)
 			ach(40995),		-- The Originals (automated)
 			ach(41038),		-- Token Collector
 			ach(41013),		-- Upgraded Apparel
-			ach(40661),		-- Zoomies!
+			ach(40661, {		-- Zoomies!
+				["provider"] = { "i", 224157 },	-- Pet Mirror
+				["crs"] = { 227559 },	-- Zoomy Treat
+				["coords"] = {
+					{ 62.0, 50.1, TANARIS },
+					{ 61.9, 50.1, TANARIS },
+					{ 61.8, 49.9, TANARIS },
+					{ 61.7, 50.0, TANARIS },
+				},
+			}),
 		}),
 		n(FACTIONS, {
 			faction(FACTION_ZANDALAR_TRIBE, {	-- Zandalar Tribe
@@ -2866,6 +2876,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["maps"] = { 2354 },	-- Silithus
 				["isWeekly"] = true,
 				["g"] = {
+					ach(40977),	-- Codex Editor: Ahn'Qiraj
 					i(233014, {	-- Bronze Celebration Cache of Treasures
 						i(231395),	-- Earthslag Shoulders
 						i(231468),	-- Flamekeeper's Fire Blanket
@@ -2903,6 +2914,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 		}),
 		n(REWARDS, {
 			currency(BRONZE_TOKEN),
+		}),
+		n(TREASURES, {
+			o(455795, {	-- Pet Box
+				i(224157),	-- Pet Mirror
+			})
 		}),
 		n(VENDORS, {
 			n(223884, {	--  Bobadormu
