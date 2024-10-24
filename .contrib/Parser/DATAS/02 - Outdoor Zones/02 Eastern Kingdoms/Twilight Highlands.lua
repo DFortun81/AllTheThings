@@ -3235,6 +3235,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"sub", "common_recipes_vendor", 3356}, -- Sumi <Blacksmithing Supplies>
 					},
 				}),
+				-- #if BEFORE 6.0.2
+				n(49703, {	-- Casandra Downs <Alchemy & Inscription Supplies>
+					["coord"] = { 78.6, 76.2, TWILIGHT_HIGHLANDS },
+					["races"] = ALLIANCE_ONLY,
+					["groups"] = {
+						i(68810, {	-- Technique: Glyph of Colossus Smash
+							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+						}),
+					},
+				}),
+				-- #endif
 				n(49386, {	-- Craw MacGraw <Wildhammer Clan Quartermaster>
 					["coord"] = { 48.6, 30.6, TWILIGHT_HIGHLANDS },
 					["races"] = ALLIANCE_ONLY,
@@ -3352,6 +3363,17 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 						{"sub", "common_recipes_vendor", 3366}, -- Tamar <Leatherworking Supplies>
 					},
 				}),
+				-- #if BEFORE 6.0.2
+				n(50248, {	-- Una Kobuna <Alchemy and Inscription Supplies>
+					["coord"] = { 76.6, 49.4, TWILIGHT_HIGHLANDS },
+					["races"] = HORDE_ONLY,
+					["groups"] = {
+						i(68810, {	-- Technique: Glyph of Colossus Smash
+							["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+						}),
+					},
+				}),
+				-- #endif
 			}),
 			n(ZONE_DROPS, {
 				i(169346, {	-- Young Twilight Scale

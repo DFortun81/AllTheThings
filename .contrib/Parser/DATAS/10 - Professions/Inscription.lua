@@ -391,6 +391,10 @@ GLYPH_OF_COLD_WAVES = r(304036, {	-- Glyph of the Cold Waves
 	["name"] = "Glyph of the Cold Waves",
 	["timeline"] = { ADDED_8_2_0 },
 });
+GLYPH_OF_COLLOSUS_SMASH = r(89815, {	-- Glyph of Colossus Smash
+	["name"] = "Glyph of Colossus Smash",
+	["timeline"] = { ADDED_4_0_3, REMOVED_6_0_2 },
+});
 GLYPH_OF_COMMAND_AND_THUNDER_STRIKE = r(68166, {	-- Glyph of Command / Glyph of Thunder Strike [CATA+]
 	-- #if AFTER CATA
 	["name"] = "Glyph of Thunder Strike",
@@ -3391,6 +3395,7 @@ local CLASS_GLYPHS = cat(1126, {	-- Glyphs
 		GLYPH_OF_BURNING_ANGER,
 		GLYPH_OF_CHARGE_AND_LONG_CHARGE,
 		GLYPH_OF_CLEAVING_AND_HINDERING_STRIKES,
+		GLYPH_OF_COLLOSUS_SMASH,
 		GLYPH_OF_COMMAND_AND_THUNDER_STRIKE,
 		GLYPH_OF_CROW_FEAST_AND_HAWK_FEAST,
 		GLYPH_OF_DEATH_WISH_AND_RECKLESSNESS,
