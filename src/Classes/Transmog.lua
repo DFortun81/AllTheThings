@@ -403,6 +403,10 @@ local VisualIDSourceIDsCache = setmetatable({}, { __index = function(t, visualID
 	t[visualID] = sourceIDs or app.EmptyTable
 	return sourceIDs
 end})
+local CurrentCharacterFilterIDSet
+local function MainOnlyCanTransmogAppearanceItem(knownItem)
+	return not knownItem.nmr and not knownItem.nmc and CurrentCharacterFilterIDSet[knownItem.f]
+end
 -- Given a known SourceID, will mark all Shared Visual SourceID's which meet the filter criteria of the known SourceID as 'collected'
 local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacterOnly)
 	-- Find this source in ATT
@@ -434,12 +438,10 @@ local function MarkUniqueCollectedSourcesBySource(knownSourceID, currentCharacte
 		end
 		-- cannot mog the known SourceID or have no unknown shared SourceIDs to verify, then leave
 		if not canMog or not verifySourceIDs then return; end
-		currentCharacterOnly = currentCharacterOnly or app.Settings:Get("MainOnly")
 		-- this source unlocks a visual that the current character may tmog, so all shared visuals should be considered 'collected' regardless of restriction
-		local currentCharacterUsable = currentCharacterOnly and not knownItem.nmc and not knownItem.nmr;
-		-- for current character only, all we care is that the knownItem is not exclusive to another
+		-- for current character only, all we care is that the knownItem is equippable and is not exclusive to another
 		-- race/class to consider all shared appearances as 'collected' for the current character
-		if currentCharacterUsable then
+		if currentCharacterOnly and MainOnlyCanTransmogAppearanceItem(knownItem) then
 			for _,sourceID in ipairs(verifySourceIDs) do
 				AccountSources[sourceID] = 2;
 			end
@@ -541,6 +543,7 @@ local function CollectUniqueAppearances()
 	local ItemSourceFilter = app.ItemSourceFilter;
 	-- Simply determine the max known SourceID from ATT cached sources
 	if not app.MaxSourceID then DetermineMaxATTSourceID() end
+	CurrentCharacterFilterIDSet = app.Presets[app.Class]
 	for sourceID=1,app.MaxSourceID do
 		-- for each known source
 		if AccountSources[sourceID] == 1 then
