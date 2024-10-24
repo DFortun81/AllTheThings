@@ -374,7 +374,23 @@ InstanceHelper.Boss, InstanceHelper.BossOnly, InstanceHelper.Difficulty, Instanc
 -- Common Symlink Drops
 local SYM_ALL_BRD_DROPS = {{"select","instanceID",1301},{"extract","itemID"},
 {"exclude","itemID",
+231490,	-- Arbiter's Blade
+231501,	-- Aristocratic Cuffs
+231507,	-- Battlechaser's Greaves
+231506,	-- Blisterbane Wrap
+231503,	-- Braincage
 232471,	-- Cache of Dark Iron Treasures
+231499,	-- Doomforged Straightedge
+231500,	-- Funeral Pyre Vestment
+231502,	-- Mar Alom's Grip
+231495,	-- Ribsplitter
+231504,	-- Runed Golem Shackles
+231497,	-- Searing Needle
+231498,	-- Spire of the Stoneshaper
+231505,	-- Stoneshield Cloak
+231496,	-- The Judge's Gavel
+232877,	-- Timely Goody Bag
+224278,	-- Timewarped Ironforge Blueprints
 231510,	-- Timewarped Relic Coffer Key [L]
 232365,	-- Timewarped Relic Coffer Key [N]
 232366,	-- Timewarped Relic Coffer Key [H]
@@ -2557,8 +2573,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["g"] = {
 					i(229355, {	-- Chromie's Premium Goodie Bag
 						i(226082),	-- Timely Tourist's Belt
+						i(226091),	-- Timely Tourist's Bindings
 						i(226089),	-- Timely Tourist's Epaulets
 						i(226086),	-- Timely Tourist's Gloves
+						i(226088),	-- Timely Tourist's Pants
+						i(226048),	-- Timely Tourist's Ring
 						i(226069),	-- Timely Tourist's Sabatons
 						i(226050),	-- Timely Tourist's Shawl
 						i(226168),	-- Timely Tourist's Spellblade
@@ -2567,6 +2586,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			})),
 			i(226102),	-- Chromie's Tour Goodie Bag
 			i(229359),	-- Chromie's Goodie Bag
+			i(232877),	-- Timely Goodie Bag
 		}),
 		n(QUESTS, {
 			q(82672),	-- Another Timely Invitation

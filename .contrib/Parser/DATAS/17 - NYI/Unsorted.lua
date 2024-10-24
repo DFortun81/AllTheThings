@@ -182,7 +182,6 @@ root(ROOTS.Unsorted, {
 			n(SPECIAL, {	-- Que?!?! Codex maybe //Braghe?
 				i(226046),	-- Timely Tourist's Band
 				i(226047),	-- Timely Tourist's Signet
-				i(226048),	-- Timely Tourist's Ring
 				i(226049),	-- Timely Tourist's Pendant
 				i(226051),	-- Timely Tourist's Cloak
 				i(226052),	-- Timely Tourist's Shank
@@ -214,15 +213,11 @@ root(ROOTS.Unsorted, {
 				i(226079),	-- Timely Tourist's Coif
 				i(226080),	-- Timely Tourist's Greaves
 				i(226081),	-- Timely Tourist's Shoulderguards
-				i(226082),	-- Timely Tourist's Belt
 				i(226083),	-- Timely Tourist's Bracers
 				i(226084),	-- Timely Tourist's Vest
 				i(226085),	-- Timely Tourist's Boots
-				i(226086),	-- Timely Tourist's Gloves
 				i(226087),	-- Timely Tourist's Headgear
-				i(226088),	-- Timely Tourist's Pants
 				i(226090),	-- Timely Tourist's Sash
-				i(226091),	-- Timely Tourist's Bindings
 				i(226092),	-- Timely Tourist's Robes
 				i(226093),	-- Timely Tourist's Sandals
 				i(226094),	-- Timely Tourist's Handwraps
