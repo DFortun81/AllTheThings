@@ -31,12 +31,8 @@ for key, value in pairs({
 		[-147] = select(6, EJ_GetInstanceInfo(559)),										-- Upper Blackrock Spire
 	-- Class Trial
 		[-153] = 1103070,																	-- Work Orders
-	-- Class Trial
-		[-154] = 1391675,						-- Level 48
 	-- PvP
 		[-216] = 458725,							-- Prestige
-	-- War Campaign
-		[-236] = 2565243,								-- Alliance War Campaign
 	-- PvP
 		[-240] = 2022761,								-- Rated
 		[-242] = 236368,				-- Unrated
@@ -144,8 +140,6 @@ for key, value in pairs({
 		[-160] = sformat(SPELLBOOK_AVAILABLE_AT, 60).." Class Trial",	-- Level 60 Class Trial
 	-- PvP
 		[-216] = PVP_PRESTIGE_RANK_UP_TITLE,									-- Prestige
-	-- War Campaign
-		[-236] = C_Map.GetAreaInfo(9663),										-- War Campaign - Alliance
 	-- PvP
 		[-240] = PVP_TAB_CONQUEST,												-- Rated
 		[-242] = "Unrated",														-- Unrated

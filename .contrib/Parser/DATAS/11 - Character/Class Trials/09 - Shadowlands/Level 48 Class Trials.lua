@@ -10,6 +10,7 @@ root(ROOTS.Character, n(CLASS_TRIAL, {
 			-- Note: [As of November 11th, 2021 48 Trials became 50 Trials with a mix of ids from 48 Trials and 50 (SL Char Boost)]
 			["description"] = "These are gained by creating a Level 48 Trial of that particular class.  Each class has one default spec except Shamans, Druids and Hunters.",
 			["lvl"] = 48,
+			["icon"] = 1391675,
 			["groups"] = {
 				cl(DEATHKNIGHT, {
 					i(160439, {	-- Adventurer's Footlocker

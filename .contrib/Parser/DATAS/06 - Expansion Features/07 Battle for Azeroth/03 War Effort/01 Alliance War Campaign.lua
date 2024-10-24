@@ -7,6 +7,8 @@ root(ROOTS.ExpansionFeatures,
 		n(WAR_EFFORT, {
 			n(-236, {	-- Alliance War Campaign
 				["races"] = ALLIANCE_ONLY,
+				["icon"] = 2565243,
+				["name"] = C_Map.GetAreaInfo(9663),
 				["g"] = {
 					ach(12510, {	-- Ready for War
 						["races"] = ALLIANCE_ONLY,
