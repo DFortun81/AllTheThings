@@ -2506,10 +2506,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			ach(40873),		-- Crate Insurance Agent
 			ach(40987),		-- Fashion Critic
 			ach(40991, {	-- Frequent Flyer
-				crit(70549),	-- Bronze Balloon
-				crit(70550),	-- Dark Blue Balloon
-				crit(70548),	-- Gold Balloon
-				crit(70551),	-- Light Blue Balloon
+				crit(70549, {["crs"]={225017}}),	-- Bronze Balloon
+				crit(70550, {["crs"]={228529}}),	-- Dark Blue Balloon
+				crit(70548, {["crs"]={225252}}),	-- Gold Balloon
+				crit(70551, {["crs"]={228530}}),	-- Light Blue Balloon
 			}),
 			achWithRep(957, FACTION_ZANDALAR_TRIBE),	-- Hero of the Zandalar Tribe
 			ach(40985),		-- I Have That One!
@@ -2522,7 +2522,13 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			ach(40989, {	-- Pet Mischief
 				["provider"] = { "i", 224157 },	-- Pet Mirror
 			}),
-			ach(40988),		-- Photo Op!
+			ach(40988, {	-- Photo Op!
+				-- TODO: not sure if we can automate this, haven't checked
+				-- otheriwse list criteria with portal [crs]
+				-- Twilight Highlands 226156
+				-- Uldum 226155
+				-- Mount Hyjal 226154
+			}),
 			ach(40997),		-- The Gatecrashers (automated)
 			ach(40995),		-- The Originals (automated)
 			ach(41038),		-- Token Collector
@@ -2535,6 +2541,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					{ 61.9, 50.1, TANARIS },
 					{ 61.8, 49.9, TANARIS },
 					{ 61.7, 50.0, TANARIS },
+					{ 62.2, 49.6, TANARIS },
+					{ 62.3, 49.3, TANARIS },
+					-- there's quite a many more it seems, not worth for more coords, only need 3 to get achieve
 				},
 			}),
 		}),
