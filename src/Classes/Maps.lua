@@ -301,7 +301,7 @@ app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 	["collectible"] = function(t)
 		return app.Settings.Collectibles.Exploration and t.coords and #t.coords > 0;
 	end,
-	["collected"] = function(t)
+	["collected"] = app.IsClassic and function(t)
 		if app.CurrentCharacter.Exploration[t.explorationID] then return 1; end
 
 		local coords = t.coords;
@@ -318,6 +318,10 @@ app.CreateExploration = app.CreateClass("Exploration", "explorationID", {
 			end
 		end
 		if app.Settings.AccountWide.Exploration and ATTAccountWideData.Exploration[t.explorationID] then return 2; end
+	end
+	-- Retail: only check cached data on collected checks
+	or function(t)
+		return app.TypicalCharacterCollected("Exploration", t.explorationID)
 	end,
 	["coords"] = function(t)
 		return ExplorationAreaPositionDB[t.explorationID];
@@ -363,7 +367,7 @@ end
 local RefreshExplorationData = app.IsClassic and (function(data)
 	app:RefreshDataQuietly("RefreshExploration", true);
 end) or (function(data) app.UpdateRawIDs("explorationID", data); end)
-local function CheckExplorationForMapID(mapID)
+local function CheckExplorationForPlayerPosition()
 	local mapID = C_Map_GetBestMapForUnit("player");
 	if not mapID then return; end
 	local pos = C_Map_GetPlayerMapPosition(mapID, "player");
@@ -371,10 +375,12 @@ local function CheckExplorationForMapID(mapID)
 	local areaIDs = C_MapExplorationInfo_GetExploredAreaIDsAtPosition(mapID, pos);
 	if not areaIDs then return end;
 
+	local ExplorationDB = app.CurrentCharacter.Exploration
 	local newAreas = {};
+	local saved = {}
 	for _,areaID in ipairs(areaIDs) do
-		if not app.CurrentCharacter.Exploration[areaID] then
-			app.SetCollected(nil, "Exploration", areaID, true);
+		if not ExplorationDB[areaID] then
+			saved[areaID] = true
 			tinsert(newAreas, areaID);
 		end
 		if not ReportedAreas[areaID] then
@@ -383,20 +389,27 @@ local function CheckExplorationForMapID(mapID)
 			end
 		end
 	end
-	if #newAreas > 0 then RefreshExplorationData(newAreas); end
+	if #newAreas > 0 then
+		app.SetBatchCached("Exploration", saved, 1)
+		RefreshExplorationData(newAreas);
+	end
 end
 local function CheckExplorationForCurrentLocation()
 	app:StartATTCoroutine("Check Exploration", function()
 		while not CurrentMapID do
 			coroutine.yield();
 		end
-		CheckExplorationForMapID(CurrentMapID);
+		CheckExplorationForPlayerPosition();
 	end);
 end
 app.CheckExplorationForCurrentLocation = CheckExplorationForCurrentLocation;
 
 -- Event Handling
-app.AddEventHandler("OnRecalculate", CheckExplorationForCurrentLocation);
+if app.IsClassic then
+	app.AddEventHandler("OnRecalculate", CheckExplorationForCurrentLocation);
+else
+	app.AddEventHandler("OnRefreshCollections", CheckExplorationForPlayerPosition)
+end
 app.AddEventRegistration("MAP_EXPLORATION_UPDATED", CheckExplorationForCurrentLocation)
 app.AddEventRegistration("UI_INFO_MESSAGE", function(messageID)
 	if messageID == 372 then CheckExplorationForCurrentLocation(); end
