@@ -2876,10 +2876,6 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["coord"] = { 36.6, 74.6, ORGRIMMAR },
 					["timeline"] = { ADDED_7_1_0 },
 					["races"] = HORDE_ONLY,
-					["sym"] = {
-						{"select", "npcID", 158061},					-- Select Historian Ma'di
-						{"pop"},										-- Discard Header and aquire their children
-					},
 				})),
 				n(46556, {	-- Jamus'Vaz <Valor Quartermaster>
 					["coord"] = { 48.6, 71.4, ORGRIMMAR },
