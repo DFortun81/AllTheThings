@@ -101,9 +101,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		--[[mount(315132, {	-- Gargantuan Grrloc (MOUNT!)
 			["timeline"] = { ADDED_10_0_0 },
 		}),--]]
-		i(78924, {	-- Heart of the Aspects (MOUNT!)
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(78924, {	-- Heart of the Aspects (MOUNT!)
 			["timeline"] = { ADDED_4_3_0 },
-		}),
+		})),
 		i(166774, {	-- Hogrus, Swine of Good Fortune (MOUNT!)
 			["timeline"] = { ADDED_8_1_0 },
 		}),
@@ -252,9 +252,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(109014, {	-- Dread Hatchling (PET!)
 			["timeline"] = { ADDED_5_4_7, REMOVED_8_3_0, ADDED_10_1_0 },
 		}),
-		i(68385, {	-- Lil' Ragnaros (PET!)
+		applyclassicphase(CATA_PHASE_RAGE_OF_THE_FIRELANDS, i(68385, {	-- Lil' Ragnaros (PET!)
 			["timeline"] = { ADDED_4_0_3 },
-		}),
+		})),
 		i(190586, {	-- Lil' Ursoc (PET!)
 			["timeline"] = { ADDED_9_2_5 },
 		}),
@@ -267,9 +267,9 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 		i(151234, {	-- Shadow (PET!)
 			["timeline"] = { ADDED_7_3_0 },
 		}),
-		i(78916, {	-- Soul of the Aspects (PET!)
+		applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, i(78916, {	-- Soul of the Aspects (PET!)
 			["timeline"] = { ADDED_4_3_0 },
-		}),
+		})),
 		i(147900, {	-- Twilight (PET!)
 			["timeline"] = { ADDED_7_3_0 },
 		}),
