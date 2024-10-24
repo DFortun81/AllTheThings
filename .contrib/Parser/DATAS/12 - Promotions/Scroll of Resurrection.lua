@@ -11,7 +11,7 @@ SCROLL_OF_RESURRECTION = createHeader({
 		en = "The following item sets were implemented as boosted character rewards for recipients of the Scroll of Resurrection.\n\nThey were later added to vendors in Mount Hyjal and Vash'jir once the Scroll of Resurrection Service was retired.",
 	},
 });
-root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
+root(ROOTS.Promotions, applyclassicphase(CATA_PHASE_HOUR_OF_TWILIGHT, n(SCROLL_OF_RESURRECTION, {
 	["timeline"] = { ADDED_4_3_0, REMOVED_5_3_0 },
 	["groups"] = {
 		cl(DEATHKNIGHT, {
@@ -435,4 +435,4 @@ root(ROOTS.Promotions, n(SCROLL_OF_RESURRECTION, {
 			},
 		}))),
 	},
-}));
+})));
