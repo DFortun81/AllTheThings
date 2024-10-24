@@ -1955,25 +1955,6 @@ local SourceLocationSettingsKey = setmetatable({
 });
 local UnobtainableTexture = " |T"..L.UNOBTAINABLE_ITEM_TEXTURES[1]..":0|t"
 local NotCurrentCharacterTexture = " |T"..L.UNOBTAINABLE_ITEM_TEXTURES[0]..":0|t"
-local function HasCost(group, idType, id)
-	-- check if the group has a cost which includes the given parameters
-	if group.cost and type(group.cost) == "table" then
-		if idType == "itemID" then
-			for i,c in ipairs(group.cost) do
-				if c[2] == id and c[1] == "i" then
-					return true;
-				end
-			end
-		elseif idType == "currencyID" then
-			for i,c in ipairs(group.cost) do
-				if c[2] == id and c[1] == "c" then
-					return true;
-				end
-			end
-		end
-	end
-	return false;
-end
 local SummarizeShowForActiveRowKeys
 local function AddContainsData(group, tooltipInfo)
 	local key = group.key
@@ -2210,10 +2191,9 @@ local function AddSourceLinesForTooltip(tooltipInfo, paramA, paramB)
 	-- app.PrintDebug("Sources count",#allReferences,paramA,paramB,GetItemIDAndModID(paramB))
 	for _,j in ipairs(allReferences) do
 		parent = j.parent;
-		-- app.PrintDebug("source:",app:SearchLink(j),parent and parent.parent,showCompleted or not app.IsComplete(j),not HasCost(j, paramA, paramB))
+		-- app.PrintDebug("source:",app:SearchLink(j),parent and parent.parent,showCompleted or not app.IsComplete(j))
 		if parent and parent.parent
 			and (showCompleted or not app.IsComplete(j))
-			and not HasCost(j, paramA, paramB)
 		then
 			text = app.GenerateSourcePathForTooltip(parent);
 			-- app.PrintDebug("SourceLocation",text,FilterInGame(j),FilterSettings(parent),FilterCharacter(parent))
@@ -2720,6 +2700,27 @@ end	-- Search results Lib
 
 -- Auto-Expansion logic
 do
+local function HasCost(group, idType, id)
+	-- check if the group has a cost which includes the given parameters
+	if group.cost and type(group.cost) == "table" then
+		if idType == "itemID" then
+			for i,c in ipairs(group.cost) do
+				if c[2] == id and c[1] == "i" then
+					-- app.PrintDebug("HasCost!",idType,id,app:SearchLink(group))
+					return true;
+				end
+			end
+		elseif idType == "currencyID" then
+			for i,c in ipairs(group.cost) do
+				if c[2] == id and c[1] == "c" then
+					-- app.PrintDebug("HasCost!",idType,id,app:SearchLink(group))
+					return true;
+				end
+			end
+		end
+	end
+	return false;
+end
 -- Determines searches required for upgrades using this group
 local function DetermineUpgradeGroups(group, FillData)
 	local nextUpgrade = group.nextUpgrade;
@@ -2819,6 +2820,8 @@ local function DetermineCraftedGroups(group, FillData)
 	if FillData.Root == group then
 		craftedItems[itemID] = true
 	end
+	local rootKey = FillData.Root.key
+	local rootID = FillData.Root[rootKey]
 	local craftedItemID, recipe, skillID
 
 	-- If needing to filter by skill due to BoP reagent, then check via recipe cache instead of by crafted item
@@ -2838,7 +2841,9 @@ local function DetermineCraftedGroups(group, FillData)
 			if recipe then
 				if expandedNesting then
 					recipe = CreateObject(recipe)
-					recipe.collectible = false
+					if not HasCost(recipe, rootKey, rootID) then
+						recipe.collectible = false
+					end
 					recipe.fillable = true
 					groups[#groups + 1] = recipe
 				else
