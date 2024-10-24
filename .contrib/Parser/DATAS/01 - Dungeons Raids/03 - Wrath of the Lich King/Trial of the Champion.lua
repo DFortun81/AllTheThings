@@ -260,6 +260,10 @@ root(ROOTS.Instances, expansion(EXPANSION.WRATH, applyclassicphase(WRATH_PHASE_T
 				q(29851, {	-- Champion of the Tournament
 					["qg"] = 34996,	-- Highlord Tirion Fordring
 					["timeline"] = { ADDED_4_3_0 },
+					-- #if ANYCLASSIC
+					["description"] = "Blizzard broke auto complete quests, so until they fix that system, this can't be turned in.",
+					["isBounty"] = true,
+					-- #endif
 				}),
 			}),
 			-- #endif
