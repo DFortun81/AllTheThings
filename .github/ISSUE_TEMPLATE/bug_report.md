@@ -8,7 +8,7 @@ assignees: ''
 ---
 
 **Game Flavor (please complete the following information):**
- - Flavor: [e.g. Dragonflight, Cataclysm, Classic Era]
+ - Flavor: [e.g. The War Within, Cataclysm, Classic Era, Season of Discover]
 
 **Describe the bug**
 A clear and concise description of what the bug is.
