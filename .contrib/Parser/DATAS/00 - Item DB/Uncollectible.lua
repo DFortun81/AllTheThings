@@ -11,6 +11,7 @@ i(805);		-- Small Red Pouch
 i(828);		-- Small Blue Pouch
 i(1725);	-- Large Knapsack
 i(5571);	-- Small Black Pouch
+i(5572);	-- Small Green Pouch
 i(3914);	-- neyman's Backpack \\ Journeyman's Backpack
 i(102144);	-- Kor'kron Cage Key
 i(180786);	-- Empty Binding

@@ -916,16 +916,16 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_OUTLAND
 						}),
 						iensemble(232321, {	-- Ensemble: Boulderfist Mystic's Battlegear
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
-						}),
-						iensemble(232322, {	-- Ensemble: Cenarion Mender's
+						}),	--TODO: iensemble includes i(44675), verify
+						iensemble(232322, {	-- Ensemble: Cenarion Mender's Battlegear
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
-						}),
+						}),	--TODO: iensemble includes i(33466), i(34602), i(44732), verify
 						iensemble(232318, {	-- Ensemble: Shadowmoon Warlock's Vestments
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
-						}),
+						}),	--TODO: iensemble does not include i(43070) but ctrl+click does, accurate?
 						iensemble(232320, {	-- Ensemble: Telhamat Anchorite's Raiment
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
-						}),
+						}),	--TODO: iensemble includes i(44112), verify?
 						i(232048, {	-- Felguard Sentinel's Polearm
 							["cost"] = {{"c", TIMEWARPED_BADGE, 1800}},
 						}),
@@ -2336,7 +2336,7 @@ root(ROOTS.Holidays, n(TIMEWALKING_HEADER, applyevent(EVENTS.TIMEWALKING_NORTHRE
 						}),
 						iensemble(232317, {	-- Ensemble: Drakkari Stalker's Trappings
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
-						}),
+						}),	--TODO: iensemble says this includes i(116883) which doesn't look like a real item, verify
 						iensemble(232314, {	-- Ensemble: Jotunheim Berserker's Battleplate
 							["cost"] = {{"c", TIMEWARPED_BADGE, 2500}},
 						}),

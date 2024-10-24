@@ -394,20 +394,20 @@ q(75449),	-- Ensemble: Waveborne Diplomat's Regalia
 q(77569),	-- High Scholar's Arcana
 q(78218),	-- Sky-Captain's Masquerade Attire
 
------- WoW Anniversary ------ TODO
-q(),	-- Ensemble: Pale Rider's Eternal Armor
-q(),	-- Ensemble: Netherwalker's Eternal Armor
-q(),	-- Ensemble: Eternal Stormrage Armor
-q(),	-- Ensemble: Earth-Warder's Eternal Armor
-q(),	-- Ensemble: Dragonstalker's Eternal Armor
-q(),	-- Ensemble: Eternal Netherwind Regalia
-q(),	-- Ensemble: Eternal Battlegear of the August Acolyte
-q(),	-- Ensemble: Eternal Judgment Armor
-q(),	-- Ensemble: Eternal Vestments of Transcendence
-q(),	-- Ensemble: Eternal Bloodfang Armor
-q(),	-- Ensemble: Eternal Ten Storms
-q(),	-- Ensemble: Eternal Nemesis Raiment
-q(),	-- Ensemble: Eternal Battlegear of Wrath
+------ WoW Anniversary ------
+q(84841),	-- Ensemble: Pale Rider's Eternal Armor
+q(85842),	-- Ensemble: Netherwalker's Eternal Armor
+q(85843),	-- Ensemble: Eternal Stormrage Armor
+q(85844),	-- Ensemble: Earth-Warder's Eternal Armor
+q(85845),	-- Ensemble: Dragonstalker's Eternal Armor
+q(85846),	-- Ensemble: Eternal Netherwind Regalia
+q(85847),	-- Ensemble: Eternal Battlegear of the August Acolyte
+q(85848),	-- Ensemble: Eternal Judgment Armor
+q(85849),	-- Ensemble: Eternal Vestments of Transcendence
+q(85850),	-- Ensemble: Eternal Bloodfang Armor
+q(85851),	-- Ensemble: Eternal Ten Storms
+q(85852),	-- Ensemble: Eternal Nemesis Raiment
+q(85853),	-- Ensemble: Eternal Battlegear of Wrath
 
 ------ Dungeons ------
 -- Deadmines
@@ -923,13 +923,17 @@ q(76582),	-- Ensemble: Valhalas Ceremonial Armor
 q(78086),	-- Ensemble: Raiment of Amirdrassi
 
 --- The War Within
+q(85586)	-- Ensemble: Auchenai Priest's Raiment
+q(85580)	-- Ensemble: Boulderfist Mystic's Battlegear
+q(85575)	-- Ensemble: Cenarion Mender's Battlegear
 q(82261),	-- Ensemble: Cerulean Dredger
-TODO
-q()	-- Ensemble: Brunnhildar Scout's Kit
-q()	-- Ensemble: Coldarra Spellbinder's Regalia
-q()	-- Ensemble: Drakkari Stalker's Trappings
-q()	-- Ensemble: Jotunheim Berserker's Battleplate
-q()	-- Ensemble: Ymirjar Deathbringer's Battleplate
+q(85591)	-- Ensemble: Brunnhildar Scout's Kit
+q(85594)	-- Ensemble: Coldarra Spellbinder's Regalia
+q(85590)	-- Ensemble: Drakkari Stalker's Trappings
+q(85592)	-- Ensemble: Jotunheim Berserker's Battleplate
+q(85587)	-- Ensemble: Shadowmoon Warlock's Vestments
+q(85585)	-- Ensemble: Telhamat Anchorite's Raiment
+q(85593)	-- Ensemble: Ymirjar Deathbringer's Battleplate
 
 -- Dornogal Ensemble Vendor
 q(81534),	-- Arcane Peddler's Trinkets
