@@ -368,3 +368,20 @@ for _,field in ipairs({
 }) do
 	CreateVisualHeader__class[field] = Empty
 end
+
+local CreateNonCollectible, CreateNonCollectible__class = app.CreateClass("NonCollectible", "noKey", {
+	back = function(t)
+		return 0.3;	-- visibility of which rows are cloned
+	end,
+	__type = function() return "NonCollectible" end,
+	collectible = app.EmptyFunction,
+});
+-- manually remove the 'key' field since it isn't in BaseClass
+CreateNonCollectible__class.__class.key = nil
+app.CreateNonCollectibleWithGroups = function(base, groups)
+	if groups and #groups > 0 then
+		return Wrap(CreateNonCollectible(nil, {g=groups}), base)
+	else
+		return Wrap(CreateNonCollectible(), base)
+	end
+end
