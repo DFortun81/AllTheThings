@@ -947,12 +947,12 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 				["cost"] = {{"i", 224752, 20}},	-- 20x Soaked Journal Entry
 			}),
 		}),
-		n(REWARDS, { --shared loot table?
-			-- Floating Deep Treasure
+		--o(451676, {		-- Floating Deep Treasure
 			i(225761),	-- Jeweler's Careful Crusher (COSMETIC!)
 			i(226385),	-- Oxidized Wrench	(COSMETIC!)
 			i(225758),  -- Hallowfall Harvester's Pitchfork (COSMETIC!)
-			-- Shore Treasure
+		--}),
+		--o(451673, {	--  Shore Treasure
 			i(225768),	-- Crusty Darkmoon Card
 			i(225759),	-- Coreway Engineer's Forceps (COSMETIC!)
 			i(225762),	-- Coreway Engineer's Screwdriver (COSMETIC!)
@@ -963,11 +963,9 @@ root(ROOTS.Professions, prof(FISHING, bubbleDownSelf({ ["requireSkill"] = FISHIN
 			i(225753),	-- Dornogal Guard's Splitter (COSMETIC!)
 			i(225760),	-- Dornogal Spear (COSMETIC!)
 			i(225884),	-- Extra Large Leek (COSMETIC!)
-			-- Whispers of the Deep
-			i(226392),	-- Careless Dasher's Treasure
-			---
-			i(225755),	-- Coreway Sledgehammer
-			i(225763),	-- Fallen Dalaran Defender
-		}),
+		--}),
+		i(226392),	-- Careless Dasher's Treasure
+		i(225755),	-- Coreway Sledgehammer
+		i(225763),	-- Fallen Dalaran Defender
 	})),
 })));
