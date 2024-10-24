@@ -370,10 +370,9 @@ for _,field in ipairs({
 end
 
 local CreateNonCollectible, CreateNonCollectible__class = app.CreateClass("NonCollectible", "noKey", {
-	back = function(t)
-		return 0.3;	-- visibility of which rows are cloned
-	end,
-	__type = function() return "NonCollectible" end,
+	-- back = function(t)
+	-- 	return 0.3;	-- visibility of which rows are cloned
+	-- end,
 	collectible = app.EmptyFunction,
 });
 -- manually remove the 'key' field since it isn't in BaseClass

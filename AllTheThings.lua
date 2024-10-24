@@ -2814,7 +2814,7 @@ local function DetermineCraftedGroups(group, FillData)
 		-- app.PrintDebug(itemID,"x",info[2],"=>",craftedItemID,"via",recipeID,skipLevel);
 		if craftedItemID and not craftableItemIDs[craftedItemID] and (expandedNesting or not craftedItems[craftedItemID]) then
 			-- app.PrintDebug("recipeID",recipeID);
-			recipe = SearchForObject("recipeID",recipeID,"key") or {recipeID=recipeID}
+			recipe = SearchForObject("recipeID",recipeID,"key") or app.CreateRecipe(recipeID)
 			if recipe then
 				if expandedNesting then
 					recipe = app.CreateNonCollectibleWithGroups(recipe)
