@@ -219,7 +219,6 @@ root(ROOTS.Unsorted, {
 				i(226087),	-- Timely Tourist's Headgear
 				i(226090),	-- Timely Tourist's Sash
 				i(226092),	-- Timely Tourist's Robes
-				i(226093),	-- Timely Tourist's Sandals
 				i(226094),	-- Timely Tourist's Handwraps
 				i(226095),	-- Timely Tourist's Cowl
 				i(226096),	-- Timely Tourist's Leggings
@@ -233,18 +232,11 @@ root(ROOTS.Unsorted, {
 				i(226171),	-- Timely Tourist's Cleaver
 			}),
 			n(ARMOR, {	-- Cursed Data!?? Wrath/MoP new itemIDs of PvP and Tier Sets...
-				i(227209),	-- Hateful Gladiator's Dreadplate Chestpiece
-				i(227210),	-- Hateful Gladiator's Plate Chestpiece
 				i(227216),	-- Hateful Gladiator's Wyrmhide Robes
 				i(227217),	-- Hateful Gladiator's Dragonhide Robes
 				i(227219),	-- Hateful Gladiator's Satin Robe
-				i(227221),	-- Hateful Gladiator's Felweave Raiment
-				i(227243),	-- Heroes' Plagueheart Gloves
-				i(227253),	-- Heroes' Plagueheart Leggings
-				i(227264),	-- Heroes' Robe of Faith
 				i(227554),	-- Firebird's Legguards
 				i(227555),	-- Firebird's Grips
-				i(227561),	-- Gloves of the Thousandfold Blades
 				i(227562),	-- Eternal Blossom Leggings
 				i(227563),	-- Eternal Blossom Gloves
 				i(227566),	-- Legguards of the Lost Catacomb
@@ -253,10 +245,7 @@ root(ROOTS.Unsorted, {
 				i(227569),	-- White Tiger Handguards
 				i(227570),	-- Legguards of Resounding Rings
 				i(227571),	-- Handguards of Resounding Rings
-				i(227573),	-- Gauntlets of Resounding Rings
-				i(227575),	-- Gauntlets of the Lost Catacomb
 				i(227576),	-- White Tiger Legplates
-				i(227577),	-- White Tiger Gauntlets
 				i(227578),	-- White Tiger Greaves
 				i(227579),	-- White Tiger Gloves
 				i(227580),	-- Firebird's Legwraps
@@ -266,31 +255,16 @@ root(ROOTS.Unsorted, {
 				i(227584),	-- Guardian Serpent Legwraps
 				i(227585),	-- Guardian Serpent Handwraps
 				i(227588),	-- Sha-Skin Gloves
-				i(227591),	-- Gloves of the Burning Scroll
 				i(227592),	-- Eternal Blossom Handguards
 				i(227593),	-- Eternal Blossom Breeches
 				i(227594),	-- Red Crane Legguards
 				i(227595),	-- Red Crane Gauntlets
 				i(227596),	-- Red Crane Handwraps
 				i(227597),	-- Red Crane Legwraps
-				i(227599),	-- Red Crane Leggings
-				i(227602),	-- Malevolent Gladiator's Footguards of Alacrity
-				i(227603),	-- Malevolent Gladiator's Leather Gloves
-				i(227611),	-- Malevolent Gladiator's Belt of Cruelty
-				i(227619),	-- Malevolent Gladiator's Chain Leggings
-				i(227627),	-- Malevolent Gladiator's Treads of Meditation
-				i(227630),	-- Malevolent Gladiator's Mooncloth Gloves
-				i(227632),	-- Malevolent Gladiator's Felweave Trousers
 				i(227633),	-- Malevolent Gladiator's Mooncloth Leggings
 				i(227636),	-- Malevolent Gladiator's Cord of Meditation
-				i(227637),	-- Malevolent Gladiator's Cuffs of Accuracy
 				i(227638),	-- Malevolent Gladiator's Cuffs of Prowess
-				i(227639),	-- Malevolent Gladiator's Cuffs of Meditation
-				i(227647),	-- Malevolent Gladiator's Dreadplate Gauntlets
-				i(227650),	-- Malevolent Gladiator's Dreadplate Legguards
-				i(227651),	-- Malevolent Gladiator's Plate Legguards
 				i(227654),	-- Malevolent Gladiator's Clasp of Cruelty
-				i(227657),	-- Malevolent Gladiator's Armplates of Alacrity
 			}),
 			filter(COSMETIC, {
 				i(229047),	-- Night Elf Crest
