@@ -7,6 +7,7 @@
 local phases = {};
 local phasesByReadable, phasesByConstant = {}, {};
 Phases = phases;	-- This is global, so that it can be found by Parser!
+VALID_PHASES = {}	-- This is global, so that it can be found by Parser!
 local defaultStateColors = {
 	"FFFF0000",
 	"FFFFAAAA",
@@ -49,6 +50,7 @@ createPhase = function(data)
 			return;
 		end
 		phases[phaseID] = data;
+		VALID_PHASES[#VALID_PHASES + 1] = phaseID
 		---@diagnostic disable-next-line: undefined-global
 		data.filepath = CurrentSubFileName or CurrentFileName;
 		--print("PHASE", phaseID .. ":", data.readable or (type(data.text) == "table" and data.text.en) or data.text);
