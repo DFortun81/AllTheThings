@@ -637,7 +637,7 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 			})),
 			n(189644, {	-- Ms. Xiulan <Madam Goya's Assistant>
 				["coord"] = { 19.0, 50.2, VALDRAKKEN },
-				["g"] = bubbleDown({ ["timeline"] = { ADDED_10_2_0 } }, {
+				["g"] = bubbleDown({ ["timeline"] = { ADDED_10_2_0, REMOVED_11_0_2 } }, { 	-- Think it was technically 1 week after 11.0.2 released but who cares
 					iensemble(211300, {	-- Arsenal: Whispering Temple Blades
 						["cost"] = 2000000000, -- 200,000g
 					}),
