@@ -1906,6 +1906,11 @@ i(223276, 448680);	-- Widow's Undercrawler
 -- PATCH 11.0.5 --
 ------------------
 i(224399, 452645);	-- Amani Hunting Bear
+i(0, 466838);		-- Chaos-Forged Dreadwing
+i(0, 466811);		-- Chaos-Forged Gryphon
+i(0, 466812);		-- Chaos-Forged Hippogryph
+i(0, 466845);		-- Chaos-Forged Wind Rider
 i(228760, 463133);	-- Coldflame Tempest
 i(231374, 468353);	-- Enchanted Spellweave Carpet
 i(224398, 452643);	-- Frayfeather Hippogryph
+i(0, 465235);		-- Trader's Gilded Brutosaur
