@@ -524,6 +524,7 @@ root(ROOTS.Sourceless, bubbleDownFiltered({
 					["lvl"] = 10,
 				}),
 				q(36903),	-- Ogre Waygate
+				q(39751),	-- Tracking Quest 2x reports being completed in 11.0.5 classic strat, popped after killing Postmaster Malown but also after killing Magistrate Barthilas
 			})),
 
 			-- 6.1.0

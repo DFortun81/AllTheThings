@@ -27,6 +27,7 @@ i(187603);	-- The Mad Duke's Tea
 i(195572);	-- Empty Elixir
 i(194742);	-- Worn Book
 -- TWW
+i(221485);	-- Defias Gunpowder
 i(229371);	-- Companion Experience
 i(228392);	-- Corroded Pocket Watch [Fishing]
 i(228390);	-- Left Boot [Fishing]

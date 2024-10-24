@@ -2358,19 +2358,322 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					n(223881, {	-- Braggi Brazenbrass <Raidfinder Relic Coffer Key Exchanger>
 						["coord"] = { 63.0, 49.8, TANARIS},
 						["g"] = sharedData({ ["cost"] = {{ "i", 231510, 40 }} },{	-- Timewarped Relic Coffer Key
-							i(5263),	-- TODO
+							i(231418),	-- Angerforge's Battle Axe
+							i(231480),	-- Anvilrage Dragoon's Trousers
+							i(231477),	-- Anvilrage Medic's Boots
+							i(231479),	-- Anvilrage Rogue's Belt of Knives
+							i(231488),	-- Anvilrage, Warden's Breastplate
+							i(231463),	-- Arbiter's Blade
+							i(231472),	-- Argelmach's Breaking Bar
+							i(231492),	-- Barman Shanker
+							i(231450),	-- Belt of the Eminent Mason
+							i(231447),	-- Bloodclot Band
+							i(231399),	-- Bloodfist
+							i(231493),	-- Bottle-Popper Ring
+							i(231457),	-- Bottled Magma
+							i(231486),	-- Burning Spirit Tender's Mitts
+							i(231424),	-- Burst of Knowledge
+							i(231415),	-- Cape of the Fire Salamander
+							i(231425),	-- Chief Architect's Monocle
+							i(231404),	-- Cinderhide Armsplints
+							i(231412),	-- Circle of Flame
+							i(231489),	-- Dark Warder's Pauldrons
+							i(231431),	-- Deathdealer Breastplate
+							i(231476),	-- Dope'rel's Calling Rune
+							i(231474),	-- Dope'rel's Finger Gloves
+							i(231482),	-- Dragoon's Volley Gun
+							i(231395),	-- Earthslag Shoulders
+							i(231440),	-- Ebonsteel Spaulders
+							i(231407),	-- Emberplate Armguards
+							i(231455),	-- Embershard Pendant
+							i(231437),	-- Emperor's Seal
+							i(231392),	-- Enthralled Sphere
+							i(231448),	-- Entrenching Boots
+							i(231451),	-- Ferrous Cord
+							i(231484),	-- Fireguard's Lava-Dipped Cleaver
+							i(231400),	-- Fists of Phalanx
+							i(231413),	-- Flame Wrath
+							i(231464),	-- Flame-Tempered Skinner
+							i(231468),	-- Flamekeeper's Fire Blanket
+							i(231478),	-- Flamekeeper's Handwraps
+							i(231483),	-- Flamelash's Fiery Spike
+							i(231467),	-- Flamelord's Emberstaff
+							i(231401),	-- Flamestrider Robes
+							i(231485),	-- Flamewalker Scale Spaulders
+							i(231406),	-- Flameweave Cuffs
+							i(231409),	-- Force of Magma
+							i(231414),	-- Force of Will
+							i(231444),	-- Foreman's Head Protector
+							i(231430),	-- Ghostshroud
+							i(231494),	-- Golem Carapace Opener
+							i(231443),	-- Golem Fitted Pauldrons
+							i(231471),	-- Golem Gearbox
+							i(231446),	-- Greaves of Withering Despair
+							i(231491),	-- Grebmar's Catch Pole
+							i(231465),	-- Grizzle's Skinne
+							i(231435),	-- Guiding Stave of Wisdom
+							i(231417),	-- Hand of Justice
+							i(231439),	-- Hands of the Exalted Herald
+							i(231434),	-- Haunting Specter Leggings
+							i(231456),	-- Heart of Roccor
+							i(231487),	-- Helm of the Molten Avatar
+							i(231393),	-- Houndmaster's Bow
+							i(231436),	-- Imperial Jewel
+							i(231427),	-- Impervious Giant
+							i(231458),	-- Insolent Dark Iron's Vest
+							i(231391),	-- Kentic Amice
+							i(231403),	-- Kindling Stave
+							i(231408),	-- Lavacrest Leggings
+							i(231388),	-- Lead Surveyor's Belt
+							i(231449),	-- Leggings of Frenzied Magic
+							i(231432),	-- Legplates of the Eternal Guardian
+							i(231419),	-- Lord General's Sword
+							i(231389),	-- Luminary Robe
+							i(231461),	-- Magma Giant's Crown
+							i(231454),	-- Magma-Shot Boomstick
+							i(231445),	-- Mantle of Lost Hope
+							i(231416),	-- Molten Fists
+							i(231462),	-- Molten Furnace
+							i(231398),	-- Molten Ironfoe
+							i(231396),	-- Naglering
+							i(231423),	-- Omnicast Boots
+							i(231405),	-- Pyremail Wristguards
+							i(231429),	-- Robes of the Royal Crown
+							i(231421),	-- Royal Decorated Armor
+							i(231397),	-- Rubicund Armguards
+							i(231410),	-- Rubidium Hammer
+							i(231475),	-- Sabaton's of Anger'rel
+							i(231481),	-- Sapper's Waistplate
+							i(231411),	-- Sash of the Burning Heart
+							i(231442),	-- Sash of the Grand Hunt
+							i(231402),	-- Searingscale Leggings
+							i(231420),	-- Second Wind
+							i(231426),	-- Senior Designer's Pantaloons
+							i(231453),	-- Shard Splinter
+							i(231470),	-- Spare Golem Frame
+							i(231469),	-- Spare Golem Pauldrons
+							i(231390),	-- Spritecaster Cape
+							i(231394),	-- Stoneshell Guard
+							i(231438),	-- Swiftwalker Boots
+							i(231433),	-- Thaurissan's Royal Scepter
+							i(231473),	-- The Fifth's Linked Treads
+							i(231428),	-- The Hammer of Grace
+							i(231422),	-- Warstrife Leggings
+							i(231441),	-- Wristguards of Renown
 						}),
 					}),
 					n(233209, {	-- Kraegan Emberforge <Normal Relic Coffer Key Exchanger>
 						["coord"] = { 63.0, 49.8, TANARIS},
 						["g"] = sharedData({ ["cost"] = {{ "i", 232365, 40 }} },{	-- Timewarped Relic Coffer Key
-							i(5263),	-- TODO
+							i(231418),	-- Angerforge's Battle Axe
+							i(231480),	-- Anvilrage Dragoon's Trousers
+							i(231477),	-- Anvilrage Medic's Boots
+							i(231479),	-- Anvilrage Rogue's Belt of Knives
+							i(231488),	-- Anvilrage, Warden's Breastplate
+							i(231463),	-- Arbiter's Blade
+							i(231472),	-- Argelmach's Breaking Bar
+							i(231492),	-- Barman Shanker
+							i(231450),	-- Belt of the Eminent Mason
+							i(231447),	-- Bloodclot Band
+							i(231399),	-- Bloodfist
+							i(231493),	-- Bottle-Popper Ring
+							i(231457),	-- Bottled Magma
+							i(231486),	-- Burning Spirit Tender's Mitts
+							i(231424),	-- Burst of Knowledge
+							i(231415),	-- Cape of the Fire Salamander
+							i(231425),	-- Chief Architect's Monocle
+							i(231404),	-- Cinderhide Armsplints
+							i(231412),	-- Circle of Flame
+							i(231489),	-- Dark Warder's Pauldrons
+							i(231431),	-- Deathdealer Breastplate
+							i(231476),	-- Dope'rel's Calling Rune
+							i(231474),	-- Dope'rel's Finger Gloves
+							i(231482),	-- Dragoon's Volley Gun
+							i(231395),	-- Earthslag Shoulders
+							i(231440),	-- Ebonsteel Spaulders
+							i(231407),	-- Emberplate Armguards
+							i(231455),	-- Embershard Pendant
+							i(231437),	-- Emperor's Seal
+							i(231392),	-- Enthralled Sphere
+							i(231448),	-- Entrenching Boots
+							i(231451),	-- Ferrous Cord
+							i(231484),	-- Fireguard's Lava-Dipped Cleaver
+							i(231400),	-- Fists of Phalanx
+							i(231413),	-- Flame Wrath
+							i(231464),	-- Flame-Tempered Skinner
+							i(231468),	-- Flamekeeper's Fire Blanket
+							i(231478),	-- Flamekeeper's Handwraps
+							i(231483),	-- Flamelash's Fiery Spike
+							i(231467),	-- Flamelord's Emberstaff
+							i(231401),	-- Flamestrider Robes
+							i(231485),	-- Flamewalker Scale Spaulders
+							i(231406),	-- Flameweave Cuffs
+							i(231409),	-- Force of Magma
+							i(231414),	-- Force of Will
+							i(231444),	-- Foreman's Head Protector
+							i(231430),	-- Ghostshroud
+							i(231494),	-- Golem Carapace Opener
+							i(231443),	-- Golem Fitted Pauldrons
+							i(231471),	-- Golem Gearbox
+							i(231446),	-- Greaves of Withering Despair
+							i(231491),	-- Grebmar's Catch Pole
+							i(231465),	-- Grizzle's Skinne
+							i(231435),	-- Guiding Stave of Wisdom
+							i(231417),	-- Hand of Justice
+							i(231439),	-- Hands of the Exalted Herald
+							i(231434),	-- Haunting Specter Leggings
+							i(231456),	-- Heart of Roccor
+							i(231487),	-- Helm of the Molten Avatar
+							i(231393),	-- Houndmaster's Bow
+							i(231436),	-- Imperial Jewel
+							i(231427),	-- Impervious Giant
+							i(231458),	-- Insolent Dark Iron's Vest
+							i(231391),	-- Kentic Amice
+							i(231403),	-- Kindling Stave
+							i(231408),	-- Lavacrest Leggings
+							i(231388),	-- Lead Surveyor's Belt
+							i(231449),	-- Leggings of Frenzied Magic
+							i(231432),	-- Legplates of the Eternal Guardian
+							i(231419),	-- Lord General's Sword
+							i(231389),	-- Luminary Robe
+							i(231461),	-- Magma Giant's Crown
+							i(231454),	-- Magma-Shot Boomstick
+							i(231445),	-- Mantle of Lost Hope
+							i(231416),	-- Molten Fists
+							i(231462),	-- Molten Furnace
+							i(231398),	-- Molten Ironfoe
+							i(231396),	-- Naglering
+							i(231423),	-- Omnicast Boots
+							i(231405),	-- Pyremail Wristguards
+							i(231429),	-- Robes of the Royal Crown
+							i(231421),	-- Royal Decorated Armor
+							i(231397),	-- Rubicund Armguards
+							i(231410),	-- Rubidium Hammer
+							i(231475),	-- Sabaton's of Anger'rel
+							i(231481),	-- Sapper's Waistplate
+							i(231411),	-- Sash of the Burning Heart
+							i(231442),	-- Sash of the Grand Hunt
+							i(231402),	-- Searingscale Leggings
+							i(231420),	-- Second Wind
+							i(231426),	-- Senior Designer's Pantaloons
+							i(231453),	-- Shard Splinter
+							i(231470),	-- Spare Golem Frame
+							i(231469),	-- Spare Golem Pauldrons
+							i(231390),	-- Spritecaster Cape
+							i(231394),	-- Stoneshell Guard
+							i(231438),	-- Swiftwalker Boots
+							i(231433),	-- Thaurissan's Royal Scepter
+							i(231473),	-- The Fifth's Linked Treads
+							i(231428),	-- The Hammer of Grace
+							i(231422),	-- Warstrife Leggings
+							i(231441),	-- Wristguards of Renown
 						}),
 					}),
 					n(224322, {	-- Hilda Hellforge <Heroic Relic Coffer Key Exchanger>
 						["coord"] = { 63.0, 49.8, TANARIS},
 						["g"] = sharedData({ ["cost"] = {{ "i", 232366, 40 }} },{	-- Timewarped Relic Coffer Key
-							i(5263),	-- TODO
+							i(231418),	-- Angerforge's Battle Axe
+							i(231480),	-- Anvilrage Dragoon's Trousers
+							i(231477),	-- Anvilrage Medic's Boots
+							i(231479),	-- Anvilrage Rogue's Belt of Knives
+							i(231488),	-- Anvilrage, Warden's Breastplate
+							i(231463),	-- Arbiter's Blade
+							i(231472),	-- Argelmach's Breaking Bar
+							i(231492),	-- Barman Shanker
+							i(231450),	-- Belt of the Eminent Mason
+							i(231447),	-- Bloodclot Band
+							i(231399),	-- Bloodfist
+							i(231493),	-- Bottle-Popper Ring
+							i(231457),	-- Bottled Magma
+							i(231486),	-- Burning Spirit Tender's Mitts
+							i(231424),	-- Burst of Knowledge
+							i(231415),	-- Cape of the Fire Salamander
+							i(231425),	-- Chief Architect's Monocle
+							i(231404),	-- Cinderhide Armsplints
+							i(231412),	-- Circle of Flame
+							i(231489),	-- Dark Warder's Pauldrons
+							i(231431),	-- Deathdealer Breastplate
+							i(231476),	-- Dope'rel's Calling Rune
+							i(231474),	-- Dope'rel's Finger Gloves
+							i(231482),	-- Dragoon's Volley Gun
+							i(231395),	-- Earthslag Shoulders
+							i(231440),	-- Ebonsteel Spaulders
+							i(231407),	-- Emberplate Armguards
+							i(231455),	-- Embershard Pendant
+							i(231437),	-- Emperor's Seal
+							i(231392),	-- Enthralled Sphere
+							i(231448),	-- Entrenching Boots
+							i(231451),	-- Ferrous Cord
+							i(231484),	-- Fireguard's Lava-Dipped Cleaver
+							i(231400),	-- Fists of Phalanx
+							i(231413),	-- Flame Wrath
+							i(231464),	-- Flame-Tempered Skinner
+							i(231468),	-- Flamekeeper's Fire Blanket
+							i(231478),	-- Flamekeeper's Handwraps
+							i(231483),	-- Flamelash's Fiery Spike
+							i(231467),	-- Flamelord's Emberstaff
+							i(231401),	-- Flamestrider Robes
+							i(231485),	-- Flamewalker Scale Spaulders
+							i(231406),	-- Flameweave Cuffs
+							i(231409),	-- Force of Magma
+							i(231414),	-- Force of Will
+							i(231444),	-- Foreman's Head Protector
+							i(231430),	-- Ghostshroud
+							i(231494),	-- Golem Carapace Opener
+							i(231443),	-- Golem Fitted Pauldrons
+							i(231471),	-- Golem Gearbox
+							i(231446),	-- Greaves of Withering Despair
+							i(231491),	-- Grebmar's Catch Pole
+							i(231465),	-- Grizzle's Skinne
+							i(231435),	-- Guiding Stave of Wisdom
+							i(231417),	-- Hand of Justice
+							i(231439),	-- Hands of the Exalted Herald
+							i(231434),	-- Haunting Specter Leggings
+							i(231456),	-- Heart of Roccor
+							i(231487),	-- Helm of the Molten Avatar
+							i(231393),	-- Houndmaster's Bow
+							i(231436),	-- Imperial Jewel
+							i(231427),	-- Impervious Giant
+							i(231458),	-- Insolent Dark Iron's Vest
+							i(231391),	-- Kentic Amice
+							i(231403),	-- Kindling Stave
+							i(231408),	-- Lavacrest Leggings
+							i(231388),	-- Lead Surveyor's Belt
+							i(231449),	-- Leggings of Frenzied Magic
+							i(231432),	-- Legplates of the Eternal Guardian
+							i(231419),	-- Lord General's Sword
+							i(231389),	-- Luminary Robe
+							i(231461),	-- Magma Giant's Crown
+							i(231454),	-- Magma-Shot Boomstick
+							i(231445),	-- Mantle of Lost Hope
+							i(231416),	-- Molten Fists
+							i(231462),	-- Molten Furnace
+							i(231398),	-- Molten Ironfoe
+							i(231396),	-- Naglering
+							i(231423),	-- Omnicast Boots
+							i(231405),	-- Pyremail Wristguards
+							i(231429),	-- Robes of the Royal Crown
+							i(231421),	-- Royal Decorated Armor
+							i(231397),	-- Rubicund Armguards
+							i(231410),	-- Rubidium Hammer
+							i(231475),	-- Sabaton's of Anger'rel
+							i(231481),	-- Sapper's Waistplate
+							i(231411),	-- Sash of the Burning Heart
+							i(231442),	-- Sash of the Grand Hunt
+							i(231402),	-- Searingscale Leggings
+							i(231420),	-- Second Wind
+							i(231426),	-- Senior Designer's Pantaloons
+							i(231453),	-- Shard Splinter
+							i(231470),	-- Spare Golem Frame
+							i(231469),	-- Spare Golem Pauldrons
+							i(231390),	-- Spritecaster Cape
+							i(231394),	-- Stoneshell Guard
+							i(231438),	-- Swiftwalker Boots
+							i(231433),	-- Thaurissan's Royal Scepter
+							i(231473),	-- The Fifth's Linked Treads
+							i(231428),	-- The Hammer of Grace
+							i(231422),	-- Warstrife Leggings
+							i(231441),	-- Wristguards of Renown
 						}),
 					}),
 				}),
@@ -2515,6 +2818,22 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				["icon"] = 135727,
 			}),
 		}),
+		n(GROUP_FINDER, {
+			hqt(84878, name(HEADERS.Item, 229355, {	-- Chromie's Premium Goodie Bag (lockout?)
+				["g"] = {
+					i(229355, {	-- Chromie's Premium Goodie Bag
+						i(226082),	-- Timely Tourist's Belt
+						i(226089),	-- Timely Tourist's Epaulets
+						i(226086),	-- Timely Tourist's Gloves
+						i(226069),	-- Timely Tourist's Sabatons
+						i(226050),	-- Timely Tourist's Shawl
+						i(226168),	-- Timely Tourist's Spellblade
+					}),
+				},
+			})),
+			i(226102),	-- Chromie's Tour Goodie Bag
+			i(229359),	-- Chromie's Goodie Bag
+		}),
 		n(QUESTS, {
 			q(82672),	-- Another Timely Invitation
 			q(84254, {	-- Meet and Greet
@@ -2546,18 +2865,8 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						i(231467),	-- Flamelord's Emberstaff
 						i(231439),	-- Hands of the Exalted Herald
 						i(231434),	-- Haunting Specter Leggings
+						i(231423),	-- Omnicast Boots
 					}),
-					hqt(84878, name(HEADERS.Item, 229355, {	-- Chromie's Premium Goodie Bag (lockout?)
-						["g"] = {
-							i(229355, {	-- Chromie's Premium Goodie Bag
-								i(226082),	-- Timely Tourist's Belt
-								i(226089),	-- Timely Tourist's Epaulets
-								i(226086),	-- Timely Tourist's Gloves
-								i(226050),	-- Timely Tourist's Shawl
-								i(226168),	-- Timely Tourist's Spellblade
-							}),
-						},
-					})),
 				},
 			}),
 
@@ -2994,17 +3303,36 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 				},
 				["g"] = {
 					i(227557),	-- Firebird's Kilt
+					i(227586),	-- Guardian Serpent Gloves
 					i(227587),	-- Guardian Serpent Leggings
+					i(227590),	-- Leggings of the Burning Scroll
 					i(227560),	-- Legguards of the Thousandfold Blades
+					i(227614),	-- Malevolent Gladiator's Bindings of Prowess
+					i(227601),	-- Malevolent Gladiator's Boots of Alacrity
+					i(227600),	-- Malevolent Gladiator's Boots of Cruelty
+					i(227641),	-- Malevolent Gladiator's Cape of Cruelty
+					i(227617),	-- Malevolent Gladiator's Chain Gauntlets
 					i(227642),	-- Malevolent Gladiator's Cloak of Alacrity
+					i(227634),	-- Malevolent Gladiator's Cord of Cruelty
 					i(227640),	-- Malevolent Gladiator's Drape of Prowess
+					i(227629),	-- Malevolent Gladiator's Felweave Handguards
 					i(227652),	-- Malevolent Gladiator's Girdle of Accuracy
 					i(227644),	-- Malevolent Gladiator's Greaves of Alacrity
 					i(227607),	-- Malevolent Gladiator's Ironskin Legguards
 					i(227649),	-- Malevolent Gladiator's Ornamented Legplates
+					i(227648),	-- Malevolent Gladiator's Plate Gauntlets
+					i(227620),	-- Malevolent Gladiator's Ringmail Leggings
+					i(227615),	-- Malevolent Gladiator's Sabatons of Cruelty
 					i(227631),	-- Malevolent Gladiator's Silk Trousers
+					i(227626),	-- Malevolent Gladiator's Treads of Alacrity
 					i(227609),	-- Malevolent Gladiator's Waistband of Cruelty
+					i(227621),	-- Malevolent Gladiator's Waistguard of Meditation
+					i(227645),	-- Malevolent Gladiator's Warboots of Alacrity
 					i(227623),	-- Malevolent Gladiator's Wristguards of Alacrity
+					i(227605),	-- Malevolent Gladiator's Wyrmhide Gloves
+					i(227608),	-- Malevolent Gladiator's Wyrmhide Legguards
+					i(227598),	-- Red Crane Grips
+					i(227589),	-- Sha-Skin Leggings
 					i(227559),	-- Yaungol Slayer's Gloves
 					i(227558),	-- Yaungol Slayer's Legguards
 				},
@@ -3019,9 +3347,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					CAVERNS_OF_TIME,
 				},
 				["g"] = {
+					i(227213),	-- Hateful Gladiator's Chain Armor
 					i(227226),	-- Hateful Gladiator's Chain Gauntlets
 					i(227236),	-- Hateful Gladiator's Chain Leggings
 					i(227223),	-- Hateful Gladiator's Dreadplate Gauntlets
+					i(227233),	-- Hateful Gladiator's Dreadplate Legguards
+					i(227241),	-- Hateful Gladiator's Felweave Trousers
 					i(227227),	-- Hateful Gladiator's Kodohide Gloves
 					i(227214),	-- Hateful Gladiator's Leather Tunic
 					i(227218),	-- Hateful Gladiator's Mooncloth Robe
@@ -3030,14 +3361,25 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(227212),	-- Hateful Gladiator's Ringmail Armor
 					i(227225),	-- Hateful Gladiator's Ringmail Gauntlets
 					i(227235),	-- Hateful Gladiator's Ringmail Leggings
+					i(227246),	-- Heroes' Bonescythe Gauntlets
 					i(227256),	-- Heroes' Bonescythe Legplates
 					i(227247),	-- Heroes' Cryptstalker Handguards
+					i(227257),	-- Heroes' Cryptstalker Legguards
+					i(227267),	-- Heroes' Cryptstalker Tunic
 					i(227269),	-- Heroes' Dreadnaught Battleplate
 					i(227249),	-- Heroes' Dreadnaught Gauntlets
 					i(227245),	-- Heroes' Dreamwalker Handgrips
 					i(227255),	-- Heroes' Dreamwalker Legguards
+					i(227265),	-- Heroes' Dreamwalker Raiments
+					i(227248),	-- Heroes' Earthshatter Handguards
 					i(227258),	-- Heroes' Earthshatter Legguards
+					i(227268),	-- Heroes' Earthshatter Tunic
+					i(227262),	-- Heroes' Frostfire Robe
+					i(227244),	-- Heroes' Gloves of Faith
 					i(227254),	-- Heroes' Leggings of Faith
+					i(227251),	-- Heroes' Redemption Gloves
+					i(227271),	-- Heroes' Redemption Tunic
+					i(227250),	-- Heroes' Scourgeborne Gauntlets
 					i(227260),	-- Heroes' Scourgeborne Legplates
 				},
 			}),
@@ -3108,7 +3450,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(86202, name(HEADERS.Item, 233014)),	-- opening first Bronze Celebration Cache of week
 		-- Bronze Celebration Tokens
 		q(84596),	-- Spreading The Lights
-		q(84609),	-- Forge the Pact weekly (general)
+		q(84609),	-- Forge the Pact weekly (All Pacts)
 		q(84610),	-- Theater
 		q(84614),	-- WB (Azj-Kahet)
 		q(84598),	-- Wax weekly
@@ -3122,8 +3464,6 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(86292),	-- Fineous Darkvire (H)
 		q(86281),	-- Phalanx (LFR)
 		q(86293),	-- Phalanx (H)
-
-
 		q(86282),	-- Pyromancer Loregrain (LFR)
 	}),
 })));

@@ -358,7 +358,6 @@ root(ROOTS.HiddenQuestTriggers, {
 		qNYI(39738),	-- Tracking Quest
 		qNYI(39739),	-- Tracking Quest
 		qNYI(39740),	-- Tracking Quest
-		qNYI(39751),	-- Tracking Quest
 		qNYI(39752),	-- Tracking Quest
 		qNYI(39753),	-- Tracking Quest
 		qNYI(40416),	-- Tracking Quest

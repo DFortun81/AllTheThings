@@ -162,7 +162,6 @@ root(ROOTS.Unsorted, {
 				i(228990),	-- Bottle of Steam
 				i(228991),	-- Stone of Prophecy
 				i(229165),	-- Quest Journal
-				i(229359),	-- Chromie's Goodie Bag
 				i(229375),	-- Neural Enlarger
 				i(229413),	-- "Dogg-Saron" Costume
 				i(229414),	-- Moira Thaurissan's Hammer
@@ -178,7 +177,6 @@ root(ROOTS.Unsorted, {
 				i(232378),	-- Jenkins' No Nonsense Fried Chicken
 				i(232380),	-- Brivelthwerp's Sassafras Float
 				i(232385),	-- Elekk Ear
-				i(221485),	-- Defias Gunpowder
 			}),
 			n(DUNGEONS_AND_RAIDS, {	-- Timewalking Dungeon Gear
 				i(225185),	-- [DNT UNUSED] Reforged 1 Ring
@@ -206,7 +204,6 @@ root(ROOTS.Unsorted, {
 				i(226066),	-- Timely Tourist's Shield
 				i(226067),	-- Timely Tourist's Glaive
 				i(226068),	-- Timely Tourist's Breastplate
-				i(226069),	-- Timely Tourist's Sabatons
 				i(226070),	-- Timely Tourist's Gauntlets
 				i(226071),	-- Timely Tourist's Helm
 				i(226072),	-- Timely Tourist's Legguards
@@ -237,7 +234,6 @@ root(ROOTS.Unsorted, {
 				i(226098),	-- Timely Tourist's Cord
 				i(226099),	-- Timely Tourist's Cuffs
 				i(226101),	-- Chromie's Tour Goodie Bag
-				i(226102),	-- Chromie's Tour Goodie Bag
 				i(226167),	-- Timely Tourist's Bolthrower
 				i(226169),	-- Timely Tourist's Chisel
 				i(226170),	-- Timely Tourist's Hatchet
@@ -247,7 +243,6 @@ root(ROOTS.Unsorted, {
 				i(227209),	-- Hateful Gladiator's Dreadplate Chestpiece
 				i(227210),	-- Hateful Gladiator's Plate Chestpiece
 				i(227211),	-- Hateful Gladiator's Ornamented Chestguard
-				i(227213),	-- Hateful Gladiator's Chain Armor
 				i(227215),	-- Hateful Gladiator's Kodohide Robes
 				i(227216),	-- Hateful Gladiator's Wyrmhide Robes
 				i(227217),	-- Hateful Gladiator's Dragonhide Robes
@@ -259,34 +254,21 @@ root(ROOTS.Unsorted, {
 				i(227230),	-- Hateful Gladiator's Silk Handguards
 				i(227231),	-- Hateful Gladiator's Felweave Handguards
 				i(227232),	-- Hateful Gladiator's Plate Legguards
-				i(227233),	-- Hateful Gladiator's Dreadplate Legguards
 				i(227234),	-- Hateful Gladiator's Ornamented Legplates
 				i(227237),	-- Hateful Gladiator's Kodohide Legguards
 				i(227238),	-- Hateful Gladiator's Leather Legguards
 				i(227239),	-- Hateful Gladiator's Mooncloth Leggings
 				i(227240),	-- Hateful Gladiator's Silk Trousers
-				i(227241),	-- Hateful Gladiator's Felweave Trousers
 				i(227242),	-- Heroes' Frostfire Gloves
 				i(227243),	-- Heroes' Plagueheart Gloves
-				i(227244),	-- Heroes' Gloves of Faith
-				i(227246),	-- Heroes' Bonescythe Gauntlets
-				i(227248),	-- Heroes' Earthshatter Handguards
-				i(227250),	-- Heroes' Scourgeborne Gauntlets
-				i(227251),	-- Heroes' Redemption Gloves
 				i(227252),	-- Heroes' Frostfire Leggings
 				i(227253),	-- Heroes' Plagueheart Leggings
-				i(227257),	-- Heroes' Cryptstalker Legguards
 				i(227259),	-- Heroes' Dreadnaught Legplates
 				i(227261),	-- Heroes' Redemption Greaves
-				i(227262),	-- Heroes' Frostfire Robe
 				i(227263),	-- Heroes' Plagueheart Robe
 				i(227264),	-- Heroes' Robe of Faith
-				i(227265),	-- Heroes' Dreamwalker Raiments
 				i(227266),	-- Heroes' Bonescythe Breastplate
-				i(227267),	-- Heroes' Cryptstalker Tunic
-				i(227268),	-- Heroes' Earthshatter Tunic
 				i(227270),	-- Heroes' Scourgeborne Battleplate
-				i(227271),	-- Heroes' Redemption Tunic
 				i(227554),	-- Firebird's Legguards
 				i(227555),	-- Firebird's Grips
 				i(227556),	-- Firebird's Gloves
@@ -315,10 +297,7 @@ root(ROOTS.Unsorted, {
 				i(227583),	-- Eternal Blossom Handwraps
 				i(227584),	-- Guardian Serpent Legwraps
 				i(227585),	-- Guardian Serpent Handwraps
-				i(227586),	-- Guardian Serpent Gloves
 				i(227588),	-- Sha-Skin Gloves
-				i(227589),	-- Sha-Skin Leggings
-				i(227590),	-- Leggings of the Burning Scroll
 				i(227591),	-- Gloves of the Burning Scroll
 				i(227592),	-- Eternal Blossom Handguards
 				i(227593),	-- Eternal Blossom Breeches
@@ -326,50 +305,34 @@ root(ROOTS.Unsorted, {
 				i(227595),	-- Red Crane Gauntlets
 				i(227596),	-- Red Crane Handwraps
 				i(227597),	-- Red Crane Legwraps
-				i(227598),	-- Red Crane Grips
 				i(227599),	-- Red Crane Leggings
-				i(227600),	-- Malevolent Gladiator's Boots of Cruelty
-				i(227601),	-- Malevolent Gladiator's Boots of Alacrity
 				i(227602),	-- Malevolent Gladiator's Footguards of Alacrity
 				i(227603),	-- Malevolent Gladiator's Leather Gloves
 				i(227604),	-- Malevolent Gladiator's Ironskin Gloves
-				i(227605),	-- Malevolent Gladiator's Wyrmhide Gloves
 				i(227606),	-- Malevolent Gladiator's Leather Legguards
-				i(227608),	-- Malevolent Gladiator's Wyrmhide Legguards
 				i(227610),	-- Malevolent Gladiator's Waistband of Accuracy
 				i(227611),	-- Malevolent Gladiator's Belt of Cruelty
 				i(227612),	-- Malevolent Gladiator's Armwraps of Alacrity
 				i(227613),	-- Malevolent Gladiator's Armwraps of Accuracy
-				i(227614),	-- Malevolent Gladiator's Bindings of Prowess
-				i(227615),	-- Malevolent Gladiator's Sabatons of Cruelty
 				i(227616),	-- Malevolent Gladiator's Footguards of Alacrity
-				i(227617),	-- Malevolent Gladiator's Chain Gauntlets
 				i(227618),	-- Malevolent Gladiator's Ringmail Gauntlets
 				i(227619),	-- Malevolent Gladiator's Chain Leggings
-				i(227620),	-- Malevolent Gladiator's Ringmail Leggings
-				i(227621),	-- Malevolent Gladiator's Waistguard of Meditation
 				i(227622),	-- Malevolent Gladiator's Links of Cruelty
 				i(227624),	-- Malevolent Gladiator's Armbands of Prowess
 				i(227625),	-- Malevolent Gladiator's Treads of Cruelty
-				i(227626),	-- Malevolent Gladiator's Treads of Alacrity
 				i(227627),	-- Malevolent Gladiator's Treads of Meditation
 				i(227628),	-- Malevolent Gladiator's Silk Handguards
-				i(227629),	-- Malevolent Gladiator's Felweave Handguards
 				i(227630),	-- Malevolent Gladiator's Mooncloth Gloves
 				i(227632),	-- Malevolent Gladiator's Felweave Trousers
 				i(227633),	-- Malevolent Gladiator's Mooncloth Leggings
-				i(227634),	-- Malevolent Gladiator's Cord of Cruelty
 				i(227635),	-- Malevolent Gladiator's Cord of Accuracy
 				i(227636),	-- Malevolent Gladiator's Cord of Meditation
 				i(227637),	-- Malevolent Gladiator's Cuffs of Accuracy
 				i(227638),	-- Malevolent Gladiator's Cuffs of Prowess
 				i(227639),	-- Malevolent Gladiator's Cuffs of Meditation
-				i(227641),	-- Malevolent Gladiator's Cape of Cruelty
 				i(227643),	-- Malevolent Gladiator's Warboots of Cruelty
-				i(227645),	-- Malevolent Gladiator's Warboots of Alacrity
 				i(227646),	-- Malevolent Gladiator's Ornamented Gloves
 				i(227647),	-- Malevolent Gladiator's Dreadplate Gauntlets
-				i(227648),	-- Malevolent Gladiator's Plate Gauntlets
 				i(227650),	-- Malevolent Gladiator's Dreadplate Legguards
 				i(227651),	-- Malevolent Gladiator's Plate Legguards
 				i(227653),	-- Malevolent Gladiator's Girdle of Prowess
