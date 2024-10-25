@@ -163,24 +163,13 @@ root(ROOTS.Unsorted, {
 				i(229375),	-- Neural Enlarger
 				i(229413),	-- "Dogg-Saron" Costume
 				i(229414),	-- Moira Thaurissan's Hammer
-				i(229829),	-- Light Blue Balloon
-				i(229830),	-- Dark Blue Balloon
-				i(229831),	-- Gold Balloon
 				i(229958),	-- Decorated Feather
 				i(230283),	-- Weird Egg
-				i(232374),	-- Greasy Links
-				i(232375),	-- Moon Bread
-				i(232376),	-- Cherry Bombs
-				i(232377),	-- Pappy Thunderbrew's Cough Syrup
-				i(232378),	-- Jenkins' No Nonsense Fried Chicken
-				i(232380),	-- Brivelthwerp's Sassafras Float
-				i(232385),	-- Elekk Ear
 			}),
 			n(DUNGEONS_AND_RAIDS, {	-- Timewalking Dungeon Gear
 				i(225185),	-- [DNT UNUSED] Reforged 1 Ring
 			}),
 			n(SPECIAL, {	-- Que?!?! Codex maybe //Braghe?
-				i(226046),	-- Timely Tourist's Band
 				i(226047),	-- Timely Tourist's Signet
 				i(226049),	-- Timely Tourist's Pendant
 				i(226051),	-- Timely Tourist's Cloak
@@ -207,7 +196,6 @@ root(ROOTS.Unsorted, {
 				i(226073),	-- Timely Tourist's Pauldrons
 				i(226074),	-- Timely Tourist's Girdle
 				i(226075),	-- Timely Tourist's Vambraces
-				i(226076),	-- Timely Tourist's Chainmail
 				i(226077),	-- Timely Tourist's Striders
 				i(226078),	-- Timely Tourist's Grips
 				i(226079),	-- Timely Tourist's Coif
@@ -223,7 +211,6 @@ root(ROOTS.Unsorted, {
 				i(226095),	-- Timely Tourist's Cowl
 				i(226096),	-- Timely Tourist's Leggings
 				i(226097),	-- Timely Tourist's Shoulderpads
-				i(226098),	-- Timely Tourist's Cord
 				i(226099),	-- Timely Tourist's Cuffs
 				i(226101),	-- Chromie's Tour Goodie Bag
 				i(226167),	-- Timely Tourist's Bolthrower
@@ -245,7 +232,6 @@ root(ROOTS.Unsorted, {
 				i(227569),	-- White Tiger Handguards
 				i(227570),	-- Legguards of Resounding Rings
 				i(227571),	-- Handguards of Resounding Rings
-				i(227576),	-- White Tiger Legplates
 				i(227578),	-- White Tiger Greaves
 				i(227579),	-- White Tiger Gloves
 				i(227580),	-- Firebird's Legwraps
@@ -254,7 +240,6 @@ root(ROOTS.Unsorted, {
 				i(227583),	-- Eternal Blossom Handwraps
 				i(227584),	-- Guardian Serpent Legwraps
 				i(227585),	-- Guardian Serpent Handwraps
-				i(227588),	-- Sha-Skin Gloves
 				i(227592),	-- Eternal Blossom Handguards
 				i(227593),	-- Eternal Blossom Breeches
 				i(227594),	-- Red Crane Legguards
@@ -262,9 +247,6 @@ root(ROOTS.Unsorted, {
 				i(227596),	-- Red Crane Handwraps
 				i(227597),	-- Red Crane Legwraps
 				i(227633),	-- Malevolent Gladiator's Mooncloth Leggings
-				i(227636),	-- Malevolent Gladiator's Cord of Meditation
-				i(227638),	-- Malevolent Gladiator's Cuffs of Prowess
-				i(227654),	-- Malevolent Gladiator's Clasp of Cruelty
 			}),
 			filter(COSMETIC, {
 				i(229047),	-- Night Elf Crest

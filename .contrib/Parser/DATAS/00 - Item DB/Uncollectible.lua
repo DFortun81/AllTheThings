@@ -36,6 +36,16 @@ i(228395);	-- Mud Clump [Fishing]
 i(228393);	-- Shattered Lantern [Fishing]
 i(225833);	-- Weathered Skipping Stone [Enormous Pile of Refuse]
 i(228756);	-- Bonus Snuffling Experience [Wax Contribution]
+i(229829);	-- Light Blue Balloon
+i(229830);	-- Dark Blue Balloon
+i(229831);	-- Gold Balloon
+i(232374);	-- Greasy Links
+i(232375);	-- Moon Bread
+i(232376);	-- Cherry Bombs
+i(232377);	-- Pappy Thunderbrew's Cough Syrup
+i(232378);	-- Jenkins' No Nonsense Fried Chicken
+i(232380);	-- Brivelthwerp's Sassafras Float
+i(232385);	-- Elekk Ear
 
 -------------------------------------------------------------------- LOADING DOCK --------------------------------------------------------------------
 

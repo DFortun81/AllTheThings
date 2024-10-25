@@ -71,16 +71,16 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_10_2_6_SEASON_FOUR },
 		}),
 		mount(466838, {	-- Chaos-Forged Dreadwing (MOUNT!)
-			["timeline"] = { ADDED_11_0_5 },
+			["timeline"] = { ADDED_11_0_5 },	-- Available through January 6, 2025
 		}),
 		mount(466811, {	-- Chaos-Forged Gryphon (MOUNT!)
-			["timeline"] = { ADDED_11_0_5 },
+			["timeline"] = { ADDED_11_0_5 },	-- Available through January 6, 2025
 		}),
 		mount(466812, {	-- Chaos-Forged Hippogryph (MOUNT!)
-			["timeline"] = { ADDED_11_0_5 },
+			["timeline"] = { ADDED_11_0_5 },	-- Available through January 6, 2025
 		}),
 		mount(466845, {	-- Chaos-Forged Wind Rider (MOUNT!)
-			["timeline"] = { ADDED_11_0_5 },
+			["timeline"] = { ADDED_11_0_5 },	-- Available through January 6, 2025
 		}),
 		i(109013, {	-- Dread Raven (MOUNT!)
 			["timeline"] = { ADDED_5_4_7, REMOVED_8_3_0, ADDED_10_1_0 },
@@ -151,7 +151,7 @@ root(ROOTS.InGameShop, bubbleDown({ ["u"] = REAL_MONEY }, {
 			["timeline"] = { ADDED_10_2_0 },
 		}),
 		mount(465235, {	-- Trader's Gilded Brutosaur (MOUNT!)
-			["timeline"] = { ADDED_11_0_5 },
+			["timeline"] = { ADDED_11_0_5 },	-- Available through January 6, 2025
 		}),
 		mount(346136, {	-- Viridian Phase-Hunter (MOUNT!)
 			["timeline"] = { ADDED_10_0_2 },	-- Not sure when exactly it got added to the shop.

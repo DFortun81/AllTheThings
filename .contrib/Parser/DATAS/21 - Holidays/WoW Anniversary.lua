@@ -2366,6 +2366,9 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						["coord"] = { 62.7, 50.3, TANARIS },
 						["isWeekly"] = true,
 						["lvl"] = 80,
+						["g"] = {
+							i(229359), 	-- Chromie's Goodie Bag
+						},
 					}),
 					q(85947, {	-- An Original Path Through Time
 						["provider"] = { "n", 223884 },	-- Bobadormu
@@ -2408,17 +2411,12 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					}),
 				}),
 				Difficulty(DIFFICULTY.RAID.MULTI.ALL_WITHOUT_MYTHIC).AddGroups({
-					-- Unsure which Miniboss Drops These //Braghe
-					i(231488),	-- Anvilrage, Warden's Breastplate
-					i(231490),	-- Arbiter's Blade
-					i(231492),	-- Barman Shanker
-					i(231493),	-- Bottle-Popper Ring
-					i(231489),	-- Dark Warder's Pauldrons
-					i(231494),	-- Golem Carapace Opener
-					i(231465),	-- Grizzle's Skinne
+					i(231490),	-- Arbiter's Blade	// I don't think this exists
 					ZoneDrops({}),
 					Boss(ROCCOR),
 					n(GERSTAHN, {
+						i(231488),	-- Anvilrage, Warden's Breastplate
+						i(231489),	-- Dark Warder's Pauldrons
 						i(231392),	-- Enthralled Sphere
 						i(231446),	-- Greaves of Withering Despair
 						i(231391),	-- Kentic Amice
@@ -2426,6 +2424,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					Boss(BAELGAR),
 					n(GREBMAR, {
 						i(231491),	-- Grebmar's Catch Pole
+						i(231465),	-- Grizzle's Skinne
 						i(231393),	-- Houndmaster's Bow
 						i(231390),	-- Spritecaster Cape
 					}),
@@ -2434,11 +2433,14 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 						i(231450),	-- Belt of the Eminent Mason
 						i(231425),	-- Chief Architect's Monocle
 						i(231444),	-- Foreman's Head Protector
+						i(231494),	-- Golem Carapace Opener
 						i(231388),	-- Lead Surveyor's Belt
 						i(231426),	-- Senior Designer's Pantaloons
 					}),
 					n(PHALANX, {
+						i(231492),	-- Barman Shanker
 						i(231399),	-- Bloodfist
+						i(231493),	-- Bottle-Popper Ring
 						i(231451),	-- Ferrous Cord
 						i(231400),	-- Fists of Phalanx
 						i(231443),	-- Golem Fitted Pauldrons
@@ -2573,8 +2575,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 			hqt(84878, name(HEADERS.Item, 229355, {	-- Chromie's Premium Goodie Bag (lockout?)
 				["g"] = {
 					i(229355, {	-- Chromie's Premium Goodie Bag
+						i(226046),	-- Timely Tourist's Band
 						i(226082),	-- Timely Tourist's Belt
 						i(226091),	-- Timely Tourist's Bindings
+						i(226076),	-- Timely Tourist's Chainmail
+						i(226098),	-- Timely Tourist's Cord
 						i(226089),	-- Timely Tourist's Epaulets
 						i(226086),	-- Timely Tourist's Gloves
 						i(226088),	-- Timely Tourist's Pants
@@ -3103,8 +3108,11 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(227642),	-- Malevolent Gladiator's Cloak of Alacrity
 					i(227635),	-- Malevolent Gladiator's Cord of Accuracy
 					i(227634),	-- Malevolent Gladiator's Cord of Cruelty
+					i(227636),	-- Malevolent Gladiator's Cord of Meditation
 					i(227637),	-- Malevolent Gladiator's Cuffs of Accuracy
+					i(227654),	-- Malevolent Gladiator's Clasp of Cruelty
 					i(227639),	-- Malevolent Gladiator's Cuffs of Meditation
+					i(227638),	-- Malevolent Gladiator's Cuffs of Prowess
 					i(227640),	-- Malevolent Gladiator's Drape of Prowess
 					i(227647),	-- Malevolent Gladiator's Dreadplate Gauntlets
 					i(227650),	-- Malevolent Gladiator's Dreadplate Legguards
@@ -3143,8 +3151,10 @@ root(ROOTS.Holidays, applyevent(EVENTS.WOW_ANNIVERSARY, n(WOW_ANNIVERSARY_ROOT, 
 					i(227608),	-- Malevolent Gladiator's Wyrmhide Legguards
 					i(227598),	-- Red Crane Grips
 					i(227599),	-- Red Crane Leggings
+					i(227588),	-- Sha-Skin Gloves
 					i(227589),	-- Sha-Skin Leggings
 					i(227577),	-- White Tiger Gauntlets
+					i(227576),	-- White Tiger Legplates
 					i(227559),	-- Yaungol Slayer's Gloves
 					i(227558),	-- Yaungol Slayer's Legguards
 				},
@@ -3288,13 +3298,15 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.TWW, bubbleDown({ ["timeline
 		q(84606),	-- triggered with turnin of 'Timely Gate Crashers' [60215] (Bronze Cel Token lockout?)
 		q(84665),	-- triggered with turnin of 'Timely Gate Crashers' [60215] (Bronze Cel Cache lockout?)
 		q(86202, name(HEADERS.Item, 233014)),	-- opening first Bronze Celebration Cache of week
-		-- Bronze Celebration Tokens
+		-- Warband weekly Bronze Celebration Tokens
 		q(84596),	-- Spreading The Lights
-		q(84609),	-- Forge the Pact weekly (All Pacts)
-		q(84610),	-- Theater
+		q(84609),	-- Forge the Pact (All Pacts)
+		q(84610),	-- Theater Troupe
+		q(86466),	-- Awakening The Machine
+		q(84599),	-- Sparks of War
 		q(84614),	-- WB (Azj-Kahet)
-		q(84598),	-- Wax weekly
-		q(85833),	-- Delve weekly
+		q(84598),	-- Wax weekly quest
+		q(85833),	-- Precussive Archaeology
 		-- Blackrock Depths
 		q(86278),	-- High Interrogator Gerstahn (LFR)
 		q(86290),	-- High Interrogator Gerstahn (H)

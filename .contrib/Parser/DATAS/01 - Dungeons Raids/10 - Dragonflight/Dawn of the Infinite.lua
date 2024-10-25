@@ -473,7 +473,6 @@ local QUANTUM_GROUP = sharedData({
 
 		ig(134717),	-- Cold-Touched Decapitator				(Removed)
 		ig(134776),	-- Seasoned Decapitator					(Removed)
-		ig(5194),	-- Taskmaster Axe						(Removed)(Unique)
 		ig(23171),	-- The Axe of Severing					(Removed)
 		ig(134577),	-- Vanguard Decapitator					(Removed)
 	}),

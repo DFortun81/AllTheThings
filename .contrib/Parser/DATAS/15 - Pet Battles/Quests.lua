@@ -1126,7 +1126,14 @@ root(ROOTS.PetBattles, petbattle(bubbleDown({ ["timeline"] = { ADDED_5_0_4 } }, 
 		expansion(EXPANSION.CATA, {
 			q(31972, {	-- Brok
 				["provider"] = { "n", 66819 },	-- Brok
+				-- #if BEFORE 11.0.5
 				["coord"] = { 61.4, 32.7, MOUNT_HYJAL },
+				-- #else
+				["coords"] = {
+					{ 61.4, 32.7, MOUNT_HYJAL },
+					{ 62.1, 49.6, TANARIS },
+				},
+				-- #endif
 			}),
 			q(31974, {	-- Goz Banefury
 				["provider"] = { "n", 66822 },	-- Goz Banefury
