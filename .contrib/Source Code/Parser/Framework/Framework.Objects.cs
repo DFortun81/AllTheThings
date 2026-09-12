@@ -2133,7 +2133,7 @@ end");
                             break;
                         }
                     case "timeline":
-                        Timeline.Merge(item, value, !DebugDBMergeInProgress && CurrentParseStage >= ParseStage.Incorporation);
+                        Timeline.Merge(item, value, !DebugDBMergeInProgress && CurrentParseStage > ParseStage.Consolidation && !item.ContainsKey("criteriaID"));
                         break;
 
                     // List O' List O' Objects Data Type Fields (stored as List<List<object>> for usability reasons)

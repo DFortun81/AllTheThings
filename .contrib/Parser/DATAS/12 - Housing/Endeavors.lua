@@ -98,6 +98,17 @@ local i_DecorCoupons = function(itemID, couponCost)
 		["cost"] = {{ "c", COMMUNITY_COUPONS, couponCost }},
 	})
 end
+-- hopefully temporary until we find another way to hook type 276 assets to NPCs or whatever
+local function criteria_asset_276_sequence(min, t)
+	local o
+	local id = min
+	for i=1,#t do
+		o = t[i]
+		o._assetType276ID = id
+		id = id + 1
+	end
+	return t
+end
 
 root(ROOTS.Housing, n(ENDEAVOR, {
 	["timeline"] = { ADDED_12_0_0 },
@@ -510,7 +521,8 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 			header(HEADERS.Achievement, 63441, {	-- Souvenir Seeker, Razorwind Shores
 				["sharedDescription"] = "Can only interact with the Souvenirs if your own House is in the Neighborhood where this Endeavor is active.",
 			}),
-			header(HEADERS.Achievement, 63605, {	-- Souvenir Seeker, Founder's Point
+			header(HEADERS.Achievement, 63605,
+			criteria_asset_276_sequence(308, {	-- Souvenir Seeker, Founder's Point
 				-- NOTE: This ties achCriteria to the coordinates. The Number next to the NPC Name is the number of the criterion. Automation works.
 				n(266674, {	-- Secret Souvenir (1)
 					["coord"] = { 52.7, 38.7, FOUNDERS_POINT },
@@ -718,8 +730,9 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["cost"] = { { "i", 276749, 1 } },	-- Scroll of the Salty Souvenir: South
 					["coords"] = { 55.8, 85.1, FOUNDERS_POINT },
 				}),
-			}),
-			header(HEADERS.Achievement, 63441, {	-- Souvenir Seeker, Razorwind Shores
+			})),
+			header(HEADERS.Achievement, 63441,
+			criteria_asset_276_sequence(368, {	-- Souvenir Seeker, Razorwind Shores
 				-- NOTE: This ties achCriteria to the coordinates. The Number next to the NPC Name is the number of the criterion. Automation works.
 				n(266613, {	-- Secret Souvenir (1)
 					["coord"] = { 54.2, 56.9, RAZORWIND_SHORES },
@@ -930,7 +943,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 					["cost"] = { { "i", 276749, 1 } },	-- Scroll of the Salty Souvenir: South
 					["coords"] = { 56.1, 95.0, RAZORWIND_SHORES },
 				}),
-			}),
+			})),
 			n(VENDORS, {
 				n(268115, {	-- Ataru <Inspirational Scroll Merchant>
 					["coords"] = {

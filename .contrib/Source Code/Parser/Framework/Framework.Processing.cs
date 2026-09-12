@@ -2964,6 +2964,12 @@ namespace ATT
                 IncorporateDataField(data, "races_disp", new List<object> { targetRaceID });
             }
 
+            long assetType276ID = criteriaData.GetAssetType276ID();
+            if (assetType276ID > 0)
+            {
+                IncorporateDataField(data, "_assetType276ID", assetType276ID);
+            }
+
             // This needs to be the last check performed since it will remove the Criteria group if nothing useful was added from the Criteria data
             long modifierTreeID = criteriaData.GetModifierTreeID();
             if (modifierTreeID > 0)
@@ -4144,6 +4150,11 @@ namespace ATT
                 DuplicateDataIntoGroups(data, mission, "missionID");
                 cloned = true;
             }
+            if (data.TryGetValue("_assetType276ID", out object assetType276ID))
+            {
+                DuplicateDataIntoGroups(data, assetType276ID, "_assetType276ID");
+                cloned = true;
+            }
 
             // Un-cloned Criteria which is marked as ignored should allow itself to be removed from the list
             if (data.ContainsKey("criteriaID") && !data.ContainsKey("_noautomation"))
@@ -5001,6 +5012,7 @@ namespace ATT
                     // ignore this thing being forcibly-obtainable due to an 'added' timeline when the parent group contains a 'rwp' beyond the 'awp' of this group
                     // if _forcetimeline is specified, then don't let parent's timeline override this timeline
                     if (!data.ContainsKey("_forcetimeline")
+                        && parentData != null
                         && parentData.TryGetValue("rwp", out long parentRwp)
                         && parentRwp >= addedPatch
                         && (parentRwp < removedPatch || removedPatch == 10000))

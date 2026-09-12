@@ -305,6 +305,8 @@ namespace ATT.FieldTypes
                 return;
             }
             _entries = _entries.Union(obj._entries).ToArray();
+            if (_entries.Length == 1)
+                _dirty = false;
         }
 
         public IEnumerator<TimelineEntry> GetEnumerator()

@@ -53,6 +53,7 @@ namespace ATT.DB.Types
             GetRequiredSkillID() > 0 ||
             GetTargetClassID() > 0 ||
             GetTargetRaceID() > 0 ||
+            GetAssetType276ID() > 0 ||
             // Currency gained
             Type == 12 ||
             // Designer Value{`Uses Record ID}
@@ -133,6 +134,9 @@ namespace ATT.DB.Types
 
         public long GetTargetRaceID() =>
             Type == 53 ? Asset : 0;
+
+        public long GetAssetType276ID() =>
+            Type == 276 ? Asset : 0;
 
         public long GetModifierTreeID() =>
             Modifier_tree_ID;
