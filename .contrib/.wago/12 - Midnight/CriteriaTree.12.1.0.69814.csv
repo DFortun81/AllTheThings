@@ -45421,8 +45421,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 59677,,58198,1,0,36096,1,2
 59678,,58211,1,0,36108,1,2
 59679,,58216,1,0,36120,1,2
-59681,Login,0,0,4,0,0,0
-59682,,59681,1,0,23250,0,0
+59681,"Login during the Winds of Mysterious Fortune event",0,7,4,0,0,1
+59682,"Mysterious Fortune - Day 1 Login",59681,1,0,117935,0,16
 59684,"Kill High Botanist Tel'arn",59683,1,0,36943,0,2
 59686,"Kill High Botanist Tel'arn",59685,1,0,36944,0,2
 59688,"Kill High Botanist Tel'arn",59687,1,0,36945,0,2
@@ -111819,7 +111819,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 221070,,221069,0,0,111290,0,32
 221071,,221069,0,0,111291,1,32
 221072,,221069,0,0,111293,2,32
-221073,"Defeat the Seasonal Nemesis",221069,1,8,0,3,32
+221073,"Defeat the Seasonal Nemesis",221069,1,8,0,3,8224
 221074,,221073,0,0,111292,0,0
 221075,"Hero of Murlocs",0,0,4,0,0,2
 221076,,221075,0,0,58681,0,0
@@ -114823,7 +114823,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 225313,"[DNT] Research Sites: Collection - Lynx Pet",0,1,8,0,0,0
 225314,"[DNT] Research Sites: Collection - Lynx Pet",225313,0,0,113668,0,2
 225315,Chick,225313,0,0,113669,1,2
-225323,"Bone Pile Investigated",225263,6,0,113679,0,0
+225323,"Bone Pile Investigated",225263,4,0,113679,0,0
 225325,"[DNT] <Hidden> Mythic+ Rating > 0 (Midnight, any season)",0,0,4,0,0,0
 225326,,225325,1,0,113678,0,0
 225329,"Dance while defending each of the Shrines in the Cache of Three event in the Vaults of Atal'Utek.",0,0,4,0,0,0
@@ -118828,6 +118828,138 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 233689,"12.1 Z1 - Delves - Season 2 Tutorial - 02 - Vehicle Quest - Slithering Spoils 3/6 (DTM)",0,0,4,0,0,4096
 233690,,233689,0,0,117541,0,0
 233753,,66554,5,0,42224,21,0
+234594,Login,0,0,4,0,0,0
+234595,"Log in during the Winds of Mysterious Fortune event.",234594,7,0,23250,0,0
+234718,"Secret Souvenir 1",234717,0,0,118034,0,0
+234719,"Secret Souvenir 2",234717,0,0,118035,1,0
+234720,"Secret Souvenir 3",234717,0,0,118036,2,0
+234721,"Secret Souvenir 4",234717,0,0,118037,3,0
+234722,"Secret Souvenir 5",234717,0,0,118038,4,0
+234723,"Secret Souvenir 6",234717,0,0,118039,5,0
+234724,"Secret Souvenir 7",234717,0,0,118040,6,0
+234725,"Secret Souvenir 8",234717,0,0,118041,7,0
+234726,"Secret Souvenir 9",234717,0,0,118042,8,0
+234727,"Secret Souvenir 10",234717,0,0,118043,9,0
+234728,"Secret Souvenir 11",234717,0,0,118044,10,0
+234729,"Secret Souvenir 12",234717,0,0,118045,11,0
+234730,"Secret Souvenir 13",234717,0,0,118046,12,0
+234731,"Secret Souvenir 14",234717,0,0,118047,13,0
+234732,"Secret Souvenir 15",234717,0,0,118048,14,0
+234733,"Secret Souvenir 16",234717,0,0,118049,15,0
+234734,"Secret Souvenir 17",234717,0,0,118050,16,0
+234735,"Secret Souvenir 18",234717,0,0,118051,17,0
+234736,"Secret Souvenir 19",234717,0,0,118052,18,0
+234737,"Secret Souvenir 20",234717,0,0,118053,19,0
+234738,"Secret Souvenir 21",234717,0,0,118054,20,0
+234739,"Secret Souvenir 22",234717,0,0,118055,21,0
+234740,"Secret Souvenir 23",234717,0,0,118056,22,0
+234741,"Secret Souvenir 24",234717,0,0,118057,23,0
+234742,"Secret Souvenir 25",234717,0,0,118058,24,0
+234743,"Secret Souvenir 26",234717,0,0,118059,25,0
+234744,"Secret Souvenir 27",234717,0,0,118060,26,0
+234745,"Secret Souvenir 28",234717,0,0,118061,27,0
+234746,"Secret Souvenir 29",234717,0,0,118062,28,0
+234747,"Secret Souvenir 30",234717,0,0,118063,29,0
+234748,"Secret Souvenir 31",234717,0,0,118064,30,0
+234749,"Secret Souvenir 32",234717,0,0,118065,31,0
+234750,"Secret Souvenir 33",234717,0,0,118066,32,0
+234751,"Secret Souvenir 34",234717,0,0,118067,33,0
+234752,"Secret Souvenir 35",234717,0,0,118068,34,0
+234753,"Secret Souvenir 36",234717,0,0,118069,35,0
+234754,"Secret Souvenir 37",234717,0,0,118070,36,0
+234755,"Secret Souvenir 38",234717,0,0,118071,37,0
+234756,"Secret Souvenir 39",234717,0,0,118072,38,0
+234757,"Secret Souvenir 40",234717,0,0,118073,39,0
+234758,"Secret Souvenir 41",234717,0,0,118074,40,0
+234759,"Secret Souvenir 42",234717,0,0,118075,41,0
+234760,"Secret Souvenir 43",234717,0,0,118076,42,0
+234761,"Secret Souvenir 44",234717,0,0,118077,43,0
+234762,"Secret Souvenir 45",234717,0,0,118078,44,0
+234763,"Secret Souvenir 46",234717,0,0,118079,45,0
+234764,"Secret Souvenir 47",234717,0,0,118080,46,0
+234765,"Secret Souvenir 48",234717,0,0,118081,47,0
+234766,"Secret Souvenir 49",234717,0,0,118082,48,0
+234767,"Secret Souvenir 50",234717,0,0,118083,49,0
+234768,"Secret Souvenir 51",234717,0,0,118084,50,0
+234769,"Secret Souvenir 52",234717,0,0,118085,51,0
+234770,"Secret Souvenir 53",234717,0,0,118086,52,0
+234771,"Secret Souvenir 54",234717,0,0,118087,53,0
+234772,"Secret Souvenir 55",234717,0,0,118088,54,0
+234773,"Secret Souvenir 56",234717,0,0,118089,55,0
+234774,"Secret Souvenir 57",234717,0,0,118090,56,0
+234775,"Secret Souvenir 58",234717,0,0,118091,57,0
+234776,"Secret Souvenir 59",234717,0,0,118092,58,0
+234777,"Secret Souvenir 60",234717,0,0,118093,59,0
+234778,"Sparks of War",218749,0,0,118094,4,0
+234779,"Sparks of War",218749,0,0,118095,5,0
+234780,"Sparks of War",218749,0,0,118096,6,0
+234781,"Sparks of War",218754,0,0,118094,4,0
+234782,"Sparks of War",218754,0,0,118095,5,0
+234783,"Sparks of War",218754,0,0,118096,6,0
+234785,"Secret Souvenir 1",234784,0,0,117974,0,0
+234786,"Secret Souvenir 2",234784,0,0,117975,1,0
+234787,"Secret Souvenir 3",234784,0,0,117976,2,0
+234788,"Secret Souvenir 4",234784,0,0,117977,3,0
+234789,"Secret Souvenir 5",234784,0,0,117978,4,0
+234790,"Secret Souvenir 6",234784,0,0,117979,5,0
+234791,"Secret Souvenir 7",234784,0,0,117980,6,0
+234792,"Secret Souvenir 8",234784,0,0,117981,7,0
+234793,"Secret Souvenir 9",234784,0,0,117982,8,0
+234794,"Secret Souvenir 10",234784,0,0,117983,9,0
+234795,"Secret Souvenir 11",234784,0,0,117984,10,0
+234796,"Secret Souvenir 12",234784,0,0,117985,11,0
+234797,"Secret Souvenir 13",234784,0,0,117986,12,0
+234798,"Secret Souvenir 14",234784,0,0,117987,13,0
+234799,"Secret Souvenir 15",234784,0,0,117988,14,0
+234800,"Secret Souvenir 16",234784,0,0,117989,15,0
+234801,"Secret Souvenir 17",234784,0,0,117990,16,0
+234802,"Secret Souvenir 18",234784,0,0,117991,17,0
+234803,"Secret Souvenir 19",234784,0,0,117992,18,0
+234804,"Secret Souvenir 20",234784,0,0,117993,19,0
+234805,"Secret Souvenir 21",234784,0,0,117994,20,0
+234806,"Secret Souvenir 22",234784,0,0,117995,21,0
+234807,"Secret Souvenir 23",234784,0,0,117996,22,0
+234808,"Secret Souvenir 24",234784,0,0,117997,23,0
+234809,"Secret Souvenir 25",234784,0,0,117998,24,0
+234810,"Secret Souvenir 26",234784,0,0,117999,25,0
+234811,"Secret Souvenir 27",234784,0,0,118000,26,0
+234812,"Secret Souvenir 28",234784,0,0,118001,27,0
+234813,"Secret Souvenir 29",234784,0,0,118002,28,0
+234814,"Secret Souvenir 30",234784,0,0,118003,29,0
+234815,"Secret Souvenir 31",234784,0,0,118004,30,0
+234816,"Secret Souvenir 32",234784,0,0,118005,31,0
+234817,"Secret Souvenir 33",234784,0,0,118006,32,0
+234818,"Secret Souvenir 34",234784,0,0,118007,33,0
+234819,"Secret Souvenir 35",234784,0,0,118008,34,0
+234820,"Secret Souvenir 36",234784,0,0,118009,35,0
+234821,"Secret Souvenir 37",234784,0,0,118010,36,0
+234822,"Secret Souvenir 38",234784,0,0,118011,37,0
+234823,"Secret Souvenir 39",234784,0,0,118012,38,0
+234824,"Secret Souvenir 40",234784,0,0,118013,39,0
+234825,"Secret Souvenir 41",234784,0,0,118014,40,0
+234826,"Secret Souvenir 42",234784,0,0,118015,41,0
+234827,"Secret Souvenir 43",234784,0,0,118016,42,0
+234828,"Secret Souvenir 44",234784,0,0,118017,43,0
+234829,"Secret Souvenir 45",234784,0,0,118018,44,0
+234830,"Secret Souvenir 46",234784,0,0,118019,45,0
+234831,"Secret Souvenir 47",234784,0,0,118020,46,0
+234832,"Secret Souvenir 48",234784,0,0,118021,47,0
+234833,"Secret Souvenir 49",234784,0,0,118022,48,0
+234834,"Secret Souvenir 50",234784,0,0,118023,49,0
+234835,"Secret Souvenir 51",234784,0,0,118024,50,0
+234836,"Secret Souvenir 52",234784,0,0,118025,51,0
+234837,"Secret Souvenir 53",234784,0,0,118026,52,0
+234838,"Secret Souvenir 54",234784,0,0,118027,53,0
+234839,"Secret Souvenir 55",234784,0,0,118028,54,0
+234840,"Secret Souvenir 56",234784,0,0,118029,55,0
+234841,"Secret Souvenir 57",234784,0,0,118030,56,0
+234842,"Secret Souvenir 58",234784,0,0,118031,57,0
+234843,"Secret Souvenir 59",234784,0,0,118032,58,0
+234844,"Secret Souvenir 60",234784,0,0,118033,59,0
+234858,"Mysterious Fortune - Day 2 Login",59681,2,0,117935,1,16
+234859,"Mysterious Fortune - Day 3 Login",59681,3,0,117935,2,16
+234860,"Mysterious Fortune - Day 4 Login",59681,4,0,117935,3,16
+234861,"Mysterious Fortune - Day 5 Login",59681,5,0,117935,4,16
 207626,"12.0 Max Campaign - Ch 5 - Battle of the Bridge - Army Assembly - Signal Attack (KCO)",0,0,4,0,0,0
 207627,"Unnamed Branch",207626,0,4,0,0,0
 207628,"Speak to Arator",207627,0,0,103514,0,0
@@ -119064,6 +119196,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 35949,"Explore Shadowmoon Valley, revealing the covered areas of the world map.",0,0,4,0,0,0
 10705,"Raise your reputation values in Warsong Gulch, Arathi Basin and Alterac Valley to Exalted.",0,0,4,0,0,0
 7516,"Fight Thorim with Sif involved.",0,0,4,0,0,0
+17706,"Earn a battleground rating of 1800.",0,0,4,0,0,0
 7510,"Win Isle of Conquest while controlling the Quarry, Oil Refinery, Shipyard, Siege Workshop and Hangar.",0,2,8,0,0,0
 7796,"Win Isle of Conquest while your team controls the Quarry and Oil Refinery.",0,0,4,0,0,0
 14932,"Defeat Heroic Faction Champions.",0,0,4,0,0,0
@@ -119123,7 +119256,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 18290,"Win a Twin Peaks battle after being behind by a score of 0 to 2.",0,0,4,0,0,0
 20564,"Win 25 battles for Tol Barad.",0,0,4,0,0,0
 19607,"Earn exalted reputation with the classic battlegrounds listed below.",0,0,4,0,0,0
-17706,"Earn a battleground rating of 1800.",0,0,4,0,0,0
 18100,"End PvP season 9 in the top .5% of the rated battleground ladder.",0,0,4,0,0,0
 20239,"Earn a battleground rating of 1600.",0,0,4,0,0,0
 18788,"Win 10 rated battlegrounds.",0,0,4,0,0,0
@@ -119187,6 +119319,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 157385,"Get a score of at least 30,000",0,0,4,0,0,0
 34564,"Obtain Legendary Cloak 5.0 (Hidden Tracking)",0,0,4,0,0,0
 34954,"Scenario - Talador - Iron Horde - Shattrath - Stage 3 Complete (RKS)",0,0,4,0,0,0
+89613,"Evade the Tarragrue",0,0,4,0,0,2
 35001,"The Battle for Shattrath",0,0,4,0,0,4096
 36529,"Defense of Karabor - Stage 1",0,0,4,0,0,0
 36264,"Wailing Caverns - Dungeon Scenario - Bonus - Defeat Kresh",0,0,4,0,0,0
@@ -119260,6 +119393,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 40235,"Earn Gold Invasion - Horde",0,0,4,0,0,4096
 41531,"Defeat Remaining Shadowmoon Forces",0,0,4,0,0,0
 42563,"Complete The Real Big Race within 30 tolls.",0,1,8,0,0,0
+89617,"Evade the Tarragrue",0,0,4,0,0,2
 43363,"Complete the Draenor quest achievements listed below.",0,1,4,0,0,0
 53063,"Black City razed",0,300,9,0,0,0
 43891,"Fel Invaders Defeated",0,0,4,0,0,0
@@ -119511,7 +119645,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 85342,"Complete 4 World Quests (Alliance War Campaign) on Zandalar",0,4,5,0,0,4096
 68942,"Complete 4 World Quests (Horde War Campaign) on Kul Tiras",0,4,5,0,0,4096
 66775,"""The Shadow War"" mission completed",0,0,4,0,0,4096
-89483,"Complete the dungeon",0,0,4,0,0,2
 66857,"8.0 Jaina Line - Thros - Scenario - Step 02 Complete - TSH",0,0,4,0,0,0
 69280,"8.0 Islands - Win AND PvP mode",0,0,4,0,0,2
 69282,"8.0 Islands - Win AND PvP mode",0,0,4,0,0,2
@@ -119582,6 +119715,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 89012,"Complete the dungeon",0,0,4,0,0,2
 89032,"Complete the dungeon",0,0,4,0,0,2
 89088,"Complete the dungeon",0,0,4,0,0,2
+89483,"Complete the dungeon",0,0,4,0,0,2
 89487,"Complete the dungeon",0,0,4,0,0,2
 89491,"Complete the dungeon",0,0,4,0,0,2
 89495,"Complete the dungeon",0,0,4,0,0,2
@@ -119829,8 +119963,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 89601,"Evade the Tarragrue",0,0,4,0,0,2
 89605,"Evade the Tarragrue",0,0,4,0,0,2
 89609,"Evade the Tarragrue",0,0,4,0,0,2
-89613,"Evade the Tarragrue",0,0,4,0,0,2
-89617,"Evade the Tarragrue",0,0,4,0,0,2
 89621,"Evade the Tarragrue",0,0,4,0,0,2
 89625,"Evade the Tarragrue",0,0,4,0,0,2
 89629,"Evade the Tarragrue",0,0,4,0,0,2
@@ -119976,6 +120108,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 85434,"Complete the Disloyal Denizens World Quest or the Spires of Ascension Dungeon.",0,1,8,0,0,4096
 85437,"Complete the Disloyal Denizens World Quest or the Spires of Ascension Dungeon.",0,1,8,0,0,4096
 85443,"Complete the Chosen Champions World Quest or the Theater of Pain Dungeon.",0,1,8,0,0,4096
+145554,"Creatures killed",0,0,4,0,0,1
 85446,"Complete the Chosen Champions World Quest or the Theater of Pain Dungeon.",0,1,8,0,0,4096
 85449,"Complete the Chosen Champions World Quest or the Theater of Pain Dungeon.",0,1,8,0,0,4096
 85455,"Complete the Destroy the Dominant World Quest or the Sanguine Depths Dungeon.",0,1,8,0,0,4096
@@ -120017,7 +120150,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 89094,"Sanctum Upgrade started",0,1,8,0,0,4096
 89103,"Sanctum Upgrade started",0,1,8,0,0,4096
 89132,"Sanctum Upgrade started",0,1,8,0,0,4096
-136102,"Hunt progress",0,100,9,0,0,0
 89179,"Sanctum Upgrade started",0,1,8,0,0,4096
 89110,"Conduit applied to Pelagos",0,0,4,0,0,4096
 89108,"Conduits added to Forge of Bonds",0,0,4,0,0,4096
@@ -120094,6 +120226,7 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 136096,"Hunt progress",0,100,9,0,0,0
 136098,"Hunt progress",0,100,9,0,0,0
 136100,"Hunt progress",0,100,9,0,0,0
+136102,"Hunt progress",0,100,9,0,0,0
 136104,"Hunt progress",0,100,9,0,0,0
 136108,"Hunt progress",0,100,9,0,0,0
 136112,"Hunt progress",0,100,9,0,0,0
@@ -120190,7 +120323,6 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 206884,"Brightly Colored Eggs collected",0,0,4,0,0,1
 145403,"Dragonriding courses completed",0,15,5,0,0,8193
 145550,"Creatures killed",0,0,4,0,0,1
-145554,"Creatures killed",0,0,4,0,0,1
 151658,"Creatures killed",0,0,4,0,0,1
 154172,"Use the /love emote on Trading Post Merchants and Merchandise",0,0,4,0,0,1
 156779,"Dragonflight dungeon completed",0,1,8,0,0,8193
@@ -120674,6 +120806,8 @@ ID,Description_lang,Parent,Amount,Operator,CriteriaID,OrderIndex,Flags
 229577,"12.0.7 Showdowns - Bonus Wrapper - WQs/Events - Val - Normal",0,5,5,0,0,12288
 229599,"12.0.7 Showdowns - Bonus Wrapper - WQs/Events - Naigtal - Normal",0,5,5,0,0,12288
 230484,"12.1 Ulatek - Fishing - N'Zoth Fish - Q02 - Kill - Complete a Curse Surge (EPR)",0,0,4,0,0,4096
+234784,"Secret Souvenirs Found in Razorwind Shores",0,0,4,0,0,0
+234717,"Secret Souvenirs Found in Founder's Point",0,0,4,0,0,0
 231724,"Arenas or Battlegrounds won",0,2,5,0,0,4096
 232093,"Cast a crowd control spell in training grounds",0,5,5,0,0,6144
 232095,"Cast a crowd control spell in training grounds",0,5,5,0,0,6144

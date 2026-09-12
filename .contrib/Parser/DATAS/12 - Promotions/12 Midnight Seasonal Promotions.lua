@@ -174,7 +174,7 @@ root(ROOTS.Promotions, {
 			}),
 			iensemble(257974, {	-- Ensemble: Sorcerer's Grassy Garb (COSMETIC!)
 				["description"] = "Obtained through watching Twitch Streamers with Drops enabled for at least 4 hours between August 11th, 10:00 a.m. & September 8th, 10:00 a.m. PDT.\n\nYour Twitch account has to be connected with your Battle.net Account & you have to redeem the drop on Twitch before receiving it in your in-game collection as gift.",
-				["timeline"] = { ADDED_12_1_0, "removed 12.1.0.99999" },
+				["timeline"] = { ADDED_12_1_0, "removed 12.1.0.69587" },
 			}),
 			-- Season 2
 			i(250293, {	-- Red Hot Portable Bakery (COSMETIC!)
