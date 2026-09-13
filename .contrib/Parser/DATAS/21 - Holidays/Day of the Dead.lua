@@ -221,6 +221,7 @@ root(ROOTS.Holidays, applyevent(EVENTS.DAY_OF_THE_DEAD, n(DAY_OF_THE_DEAD_HEADER
 					}),
 					i(208859, {	-- Cliffside Wylderdrake: Day of the Dead Armor (MM!)
 						["timeline"] = { ADDED_10_1_7 },
+						["cost"] = 500000000,	-- 50k
 					}),
 					i(246184, {	-- Heartblossom Crown of the Dead
 						["timeline"] = { ADDED_11_2_5 },
