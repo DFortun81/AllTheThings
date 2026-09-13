@@ -12,18 +12,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 		header(HEADERS.Achievement, 41805, {	-- Arator's Journey
 			header(HEADERS.AchCriteria, 41805.01, {	-- The Path of Light
 				q(89193, {	-- Arator
-					["sourceQuests"] = { 86650 },	-- Fractured
-					["provider"] = { "n", 240523 },	-- Scouting Map
+					["sourceQuest"] = 86650,	-- Fractured
+					["qg"] =240523,	-- Scouting Map
 					["coord"] = { 45.5, 70.4, MAP.MIDNIGHT.SILVERMOON_CITY },
 				}),
 				q(86837, {	-- Meet at the Sunwell
-					["sourceQuests"] = { 89193 },	-- Arator
-					["provider"] = { "n", 237565 },	-- Alonsus Faol
+					["sourceQuest"] = 89193,	-- Arator
+					["qg"] = 237565,	-- Alonsus Faol
 					["coord"] = { 45.8, 65.8, MAP.MIDNIGHT.SILVERMOON_CITY },
 				}),
 				q(86838, {	-- Renewal for the Weary
-					["sourceQuests"] = { 89193 },	-- Arator
-					["provider"] = { "n", 240240 },	-- Alonsus Faol
+					["sourceQuest"] = 89193,	-- Arator
+					["qg"] = 240240,	-- Alonsus Faol
 					["coord"] = { 52.9, 55.2, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 					["qi"] = 237811,	-- Faol's Benediction (QI!)
 					["groups"] = {
@@ -34,22 +34,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 				}),
 				q(86839, {	-- Relics of Light's Hope
-					["sourceQuests"] = { 86838 },	-- Renewal for the Weary
-					["provider"] = { "n", 240240 },	-- Alonsus Faol
+					["sourceQuest"] = 86838,	-- Renewal for the Weary
+					["qg"] = 240240,	-- Alonsus Faol
 					["coord"] = { 52.9, 55.2, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 				}),
 				------ Stay awhile and listen ------
 				--hqt(??, {	-- Stay awhile and listen: Alonsus Faol
 				--	["name"] = "Stay awhile and listen: Alonsus Faol",
 				--	["description"] = "Dialogue becomes available after accepting 'Relics of Light's Hope' (86839).",
-				--	["sourceQuests"] = { 86838 },	-- Renewal for the Weary
-				--	["provider"] = { "n", 240240 },	-- Alonsus Faol
+				--	["sourceQuest"] = 86838,	-- Renewal for the Weary
+				--	["qg"] = 240240,	-- Alonsus Faol
 				--	["coord"] = { 52.9, 55.2, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 				--}),
 				--
 				q(86840, {	-- Flickering Hope
-					["sourceQuests"] = { 86839 },	-- To Light's Hope
-					["provider"] = { "n", 237594 },	-- Lord Maxwell Tyrosus
+					["sourceQuest"] = 86839,	-- To Light's Hope
+					["qg"] = 237594,	-- Lord Maxwell Tyrosus
 					["coord"] = { 73.9, 53.6, EASTERN_PLAGUELANDS },
 					["groups"] = {
 						i(251720),	-- Light's Hope Epaulets
@@ -59,8 +59,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 				}),
 				q(86841, {	-- Relics of Paladins Past
-					["sourceQuests"] = { 86840 },	-- Flickering Hope
-					["provider"] = { "n", 237594 },	-- Lord Maxwell Tyrosus
+					["sourceQuest"] = 86840,	-- Flickering Hope
+					["qg"] = 237594,	-- Lord Maxwell Tyrosus
 					["coord"] = { 73.9, 53.6, EASTERN_PLAGUELANDS },
 					["groups"] = {
 						o(523388, {	-- Maraad's Meditation Crystal
@@ -86,8 +86,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 				}),
 				q(86842, {	-- Scarlet Power
-					["sourceQuests"] = { 86841 },	-- Relics of Paladins Past
-					["provider"] = { "n", 237601 },	-- Alonsus Faol
+					["sourceQuest"] = 86841,	-- Relics of Paladins Past
+					["qg"] = 237601,	-- Alonsus Faol
 					["coord"] = { 73.8, 53.5, EASTERN_PLAGUELANDS },
 					["maps"] = { 2438 },	-- Scarlet Halls
 				}),
@@ -95,19 +95,19 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				--hqt(??, {	-- Stay awhile and listen: Arator
 				--	["name"] = "Stay awhile and listen: Arator",
 				--	["description"] = "Dialogue becomes available during 'Scarlet Power' (86842).",
-				--	["sourceQuests"] = { 86841 },	-- Relics of Paladins Past
-				--	["provider"] = { "n", 241255 },	-- Arator
+				--	["sourceQuest"] = 86841,	-- Relics of Paladins Past
+				--	["qg"] = 241255,	-- Arator
 				--	["coord"] = { 73.9, 53.7, EASTERN_PLAGUELANDS },
 				--}),
 				--
 				q(86843, {	-- Light Miswielded
-					["sourceQuests"] = { 86842 },	-- Scarlet Power
-					["provider"] = { "n", 237602 },	-- Alonsus Faol
+					["sourceQuest"] = 86842,	-- Scarlet Power
+					["qg"] = 237602,	-- Alonsus Faol
 					["coord"] = { 47.3, 90.8, 2438 },	-- Scarlet Halls
 				}),
 				q(86844, {	-- Light Repurposed
-					["sourceQuests"] = { 86842 },	-- Scarlet Power
-					["provider"] = { "n", 237602 },	-- Alonsus Faol
+					["sourceQuest"] = 86842,	-- Scarlet Power
+					["qg"] = 237602,	-- Alonsus Faol
 					["coord"] = { 47.3, 90.8, 2438 },	-- Scarlet Halls
 					["qis"] = {
 						237761,	-- Aelyse's Gleaming Falchion (QI!)
@@ -133,26 +133,26 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						86843,	-- Light Miswielded
 						86844,	-- Light Repurposed
 					},
-					["provider"] = { "n", 237602 },	-- Alonsus Faol
+					["qg"] = 237602,	-- Alonsus Faol
 					["coords"] = {
 						{ 41.3, 28.8, 2438 },	-- Scarlet Halls
 						{ 47.3, 90.8, 2438 },	-- Scarlet Halls
 					},
 				}),
 				q(86902, {	-- Relinquishing Relics
-					["sourceQuests"] = { 92136 },	-- Relic Delivery
-					["provider"] = { "n", 251355 },	-- Alonsus Faol
+					["sourceQuest"] = 92136,	-- Relic Delivery
+					["qg"] = 251355,	-- Alonsus Faol
 					["coord"] = { 52.6, 55.9, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
-					["groups"] = { i(257240) };	-- Relinquished Scarlet Charger (MOUNT!)
+					["groups"] = { i(257240) },	-- Relinquished Scarlet Charger (MOUNT!)
 				}),
 				q(86845, {	-- The Sunwalker Path
-					["sourceQuests"] = { 86902 },	-- Relinquishing Relics
-					["provider"] = { "n", 251355 },	-- Alonsus Faol
+					["sourceQuest"] = 86902,	-- Relinquishing Relics
+					["qg"] = 251355,	-- Alonsus Faol
 					["coord"] = { 52.6, 55.9, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 				}),
 				q(91000, {	-- A Humble Servant
-					["sourceQuests"] = { 86845 },	-- The Sunwalker Path
-					["provider"] = { "n", 245186 },	-- Sunwalker Dezco
+					["sourceQuest"] = 86845,	-- The Sunwalker Path
+					["qg"] = 245186,	-- Sunwalker Dezco
 					["coord"] = { 68.9, 37.7, 2372 },	-- Arathi Highlands
 					["groups"] = {
 						i(251818),	-- Humble Servant's Briefs
@@ -162,8 +162,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 				}),
 				q(86846, {	-- Resupplying our Suppliers
-					["sourceQuests"] = { 86845 },	-- The Sunwalker Path
-					["provider"] = { "n", 245186 },	-- Sunwalker Dezco
+					["sourceQuest"] = 86845,	-- The Sunwalker Path
+					["qg"] = 245186,	-- Sunwalker Dezco
 					["coord"] = { 68.9, 37.7, 2372 },	-- Arathi Highlands
 				}),
 				q(89338, {	-- Gathering Plowshares
@@ -171,7 +171,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						91000,	-- A Humble Servant
 						86846,	-- Resupplying our Suppliers
 					},
-					["provider"] = { "n", 247299 },	-- Sunwalker Dezco
+					["qg"] = 247299,	-- Sunwalker Dezco
 					["coord"] = { 68.5, 32.2, 2372 },	-- Arathi Highlands
 					["groups"] = {
 						o(525492, {	-- Forgotten Skullcleaver
@@ -218,32 +218,32 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				--hqt(??, {	-- Stay awhile and listen: Sunwalker Dezco
 				--	["name"] = "Stay awhile and listen: Sunwalker Dezco",
 				--	["description"] = "Dialogue becomes available after accepting 'Gathering Plowshares' (89338).",
-				--	["sourceQuests"] = { 86846 },	-- Resupplying our Suppliers
-				--	["provider"] = { "n", 247299 },	-- Sunwalker Dezco
+				--	["sourceQuest"] = 86846,	-- Resupplying our Suppliers
+				--	["qg"] = 247299,	-- Sunwalker Dezco
 				--	["coord"] = { 68.9, 37.7, 2372 },	-- Arathi Highlands
 				--}),
 				--
 			}),
 			header(HEADERS.AchCriteria, 41805.02, {	-- Regrets of the Past
 				q(86822, {	-- One Final Relic
-					["sourceQuests"] = { 89338 },	-- Gathering Plowshares
-					["provider"] = { "n", 240747 },	-- Alonsus Faol
+					["sourceQuest"] = 89338,	-- Gathering Plowshares
+					["qg"] = 240747,	-- Alonsus Faol
 					["coord"] = { 68.6, 32.0, 2372 },	-- Arathi Highlands
 				}),
 				q(86823, {	-- The Dark Horde
-					["sourceQuests"] = { 86822 },	-- One Final Relic
-					["provider"] = { "n", 237224 },	-- Eitrigg
+					["sourceQuest"] = 86822,	-- One Final Relic
+					["qg"] = 237224,	-- Eitrigg
 					["coord"] = { 33.5, 48.6, BURNING_STEPPES },
 				}),
 				q(86824, {	-- None Left Standing
-					["sourceQuests"] = { 86822 },	-- One Final Relic
-					["provider"] = { "n", 237224 },	-- Eitrigg
+					["sourceQuest"] = 86822,	-- One Final Relic
+					["qg"] = 237224,	-- Eitrigg
 					["coord"] = { 33.5, 48.6, BURNING_STEPPES },
 					["qi"] = 239130,	-- Torch (PQI!)
 				}),
 				q(86825, {	-- Faithful Servant, Faithless Cause
-					["sourceQuests"] = { 86822 },	-- One Final Relic
-					["provider"] = { "n", 237224 },	-- Eitrigg
+					["sourceQuest"] = 86822,	-- One Final Relic
+					["qg"] = 237224,	-- Eitrigg
 					["coord"] = { 33.5, 48.6, BURNING_STEPPES },
 					["qi"] = 246704,	-- Mar'kag's Buckle (QI!)
 					["groups"] = {
@@ -259,18 +259,18 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						86824,	-- None Left Standing
 						86823,	-- The Dark Horde
 					},
-					["provider"] = { "n", 237224 },	-- Eitrigg
+					["qg"] = 237224,	-- Eitrigg
 					["coord"] = { 33.5, 48.6, BURNING_STEPPES },
 				}),
 				q(86827, {	-- Due Recognition
-					["sourceQuests"] = { 91391 },	-- Still Scouting
-					["provider"] = { "n", 237268 },	-- Kurdran Wildhammer
+					["sourceQuest"] = 91391,	-- Still Scouting
+					["qg"] = 237268,	-- Kurdran Wildhammer
 					["coord"] = { 21.1, 39.8, BURNING_STEPPES },
 					["qi"] = 247218,	-- Stone Guard's Badge (QI!)
 				}),
 				q(86826, {	-- Nagosh the Scarred
-					["sourceQuests"] = { 91391 },	-- Still Scouting
-					["provider"] = { "n", 237268 },	-- Kurdran Wildhammer
+					["sourceQuest"] = 91391,	-- Still Scouting
+					["qg"] = 237268,	-- Kurdran Wildhammer
 					["coord"] = { 21.1, 39.8, BURNING_STEPPES },
 					["qi"] = 246699,	-- Nagosh' Relic Fragment (QI!)
 					["groups"] = {
@@ -279,8 +279,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 				}),
 				q(91842, {	-- Disarm the Dark Horde
-					["sourceQuests"] = { 91391 },	-- Still Scouting
-					["provider"] = { "n", 237268 },	-- Kurdran Wildhammer
+					["sourceQuest"] = 91391,	-- Still Scouting
+					["qg"] = 237268,	-- Kurdran Wildhammer
 					["coord"] = { 21.1, 39.8, BURNING_STEPPES },
 				}),
 				q(86828, {	-- Not Just a Troll's Bane
@@ -289,12 +289,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						86827,	-- Due Recognition
 						86826,	-- Nagosh the Scarred
 					},
-					["provider"] = { "n", 237268 },	-- Kurdran Wildhammer
+					["qg"] = 237268,	-- Kurdran Wildhammer
 					["coord"] = { 21.1, 39.8, BURNING_STEPPES },
 				}),
 				q(86831, {	-- Warriors Without a Warlord
-					["sourceQuests"] = { 86828 },	-- Not Just a Troll's Bane
-					["provider"] = { "n", 242120 },	-- Danath Trollbane
+					["sourceQuest"] = 86828,	-- Not Just a Troll's Bane
+					["qg"] = 242120,	-- Danath Trollbane
 					["coord"] = { 31.6, 37.6, BURNING_STEPPES },
 					["qi"] = 235625,	-- Grazla's Relic Fragment (QI!)
 					["groups"] = {
@@ -305,8 +305,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 				}),
 				q(86830, {	-- A True Horde of Dark Horde
-					["sourceQuests"] = { 86828 },	-- Not Just a Troll's Bane
-					["provider"] = { "n", 242120 },	-- Danath Trollbane
+					["sourceQuest"] = 86828,	-- Not Just a Troll's Bane
+					["qg"] = 242120,	-- Danath Trollbane
 					["coord"] = { 31.6, 37.6, BURNING_STEPPES },
 				}),
 				q(86829, {	-- A Landmark Moment
@@ -314,27 +314,27 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						86830,	-- A True Horde of Dark Horde
 						86831,	-- Warriors without a Warlord
 					},
-					["provider"] = { "n", 242120 },	-- Danath Trollbane
+					["qg"] = 242120,	-- Danath Trollbane
 					["coord"] = { 31.6, 37.6, BURNING_STEPPES },
 				}),
 				q(91726, {	-- Unstoppable Force
-					["sourceQuests"] = { 86829 },	-- A Landmark Moment
-					["provider"] = { "n", 248250 },	-- Kurdran Wildhammer
+					["sourceQuest"] = 86829,	-- A Landmark Moment
+					["qg"] = 248250,	-- Kurdran Wildhammer
 					["coord"] = { 36.8, 51.0, BURNING_STEPPES },
 				}),
 				q(86832, {	-- A Worthy Forge
-					["sourceQuests"] = { 91726 },	-- Unstoppable Force
-					["provider"] = { "n", 237508 },	-- Arator
+					["sourceQuest"] = 91726,	-- Unstoppable Force
+					["qg"] = 237508,	-- Arator
 					["coord"] = { 36.7, 51.1, BURNING_STEPPES },
 				}),
 				q(86833, {	-- A Bulwark Remade
-					["sourceQuests"] = { 86832 },	-- To Silvermoon
-					["provider"] = { "n", 237511 },	-- Alonsus Faol
+					["sourceQuest"] = 86832,	-- To Silvermoon
+					["qg"] = 237511,	-- Alonsus Faol
 					["coord"] = { 45.8, 65.5, MAP.MIDNIGHT.SILVERMOON_CITY },
 				}),
 				q(86903, {	-- The Arcantina
-					["sourceQuests"] = { 86833 },	-- A Bulwark Remade
-					["provider"] = { "n", 253125 },	-- Kurdran Wildhammer
+					["sourceQuest"] = 86833,	-- A Bulwark Remade
+					["qg"] = 253125,	-- Kurdran Wildhammer
 					["coord"] = { 40.6, 66.1, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["maps"] = { ARCANTINA },
 					["qis"] = {
@@ -351,35 +351,35 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 		}),
 		q(91854, {	-- Deepening Shadows
 			["description"] = "Available after completing one of the optional zones after Eversong's campaign.",
-			["provider"] = { "n", 248631 },	-- Commander Koruth Mountainfist
+			["qg"] = 248631,	-- Commander Koruth Mountainfist
 			["coord"] = { 45.4, 70.2, MAP.MIDNIGHT.SILVERMOON_CITY },
 		}),
 		q(91787, {	-- The Journey Ends
-			["sourceQuests"] = { 86903 },	-- The Arcantina
-			["provider"] = { "n", 237502 },	-- Arator
+			["sourceQuest"] = 86903,	-- The Arcantina
+			["qg"] = 237502,	-- Arator
 			["coord"] = { 52.2, 60.6, ARCANTINA },
 		}),
 		header(HEADERS.Achievement, 60891, {	-- The Crimson Rogue
 			header(HEADERS.AchCriteria, 60891.01, {	-- The Regent's Request
 				q(91822, {	-- The Regent's Request
-					["sourceQuests"] = { 86636 },	-- Void Walk With Me
-					["provider"] = { "n", 242381 },	-- Valeera Sanguinar
+					["sourceQuest"] = 86636,	-- Void Walk With Me
+					["qg"] = 242381,	-- Valeera Sanguinar
 					["coord"] = { 52.5, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 				}),
 				q(91823, {	-- Lines Cut, Tongues Silenced
-					["sourceQuests"] = { 91822 },	-- The Regent's Request
-					["provider"] = { "n", 248750 },	-- Valeera Sanguinar
+					["sourceQuest"] = 91822,	-- The Regent's Request
+					["qg"] = 248750,	-- Valeera Sanguinar
 					["coord"] = { 61.9, 68.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 				}),
 				q(91824, {	-- The Thieves' Trail
-					["sourceQuests"] = { 91822 },	-- The Regent's Request
-					["provider"] = { "n", 248750 },	-- Valeera Sanguinar
+					["sourceQuest"] = 91822,	-- The Regent's Request
+					["qg"] = 248750,	-- Valeera Sanguinar
 					["coord"] = { 61.9, 68.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["qi"] = 248614,	-- Quel'dorel Artifact (QI!)
 				}),
 				q(91825, {	-- Dead Men Keep No Secrets
-					["sourceQuests"] = { 91822 },	-- The Regent's Request
-					["provider"] = { "n", 248750 },	-- Valeera Sanguinar
+					["sourceQuest"] = 91822,	-- The Regent's Request
+					["qg"] = 248750,	-- Valeera Sanguinar
 					["coord"] = { 61.9, 68.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 					["qi"] = 248615,	-- Infiltrator's Cache (QI!)
 				}),
@@ -402,8 +402,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 				}),
 				q(91827, {	-- No Loose Ends
-					["sourceQuests"] = { 91826 },	-- Tripwire Tango
-					["provider"] = { "n", 248874 },	-- Valeera Sanguinar
+					["sourceQuest"] = 91826,	-- Tripwire Tango
+					["qg"] = 248874,	-- Valeera Sanguinar
 					["coord"] = { 61.9, 68.3, MAP.MIDNIGHT.EVERSONG_WOODS },
 				}),
 			}),
@@ -413,20 +413,20 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						91827,	-- No Loose Ends
 						86522,	-- Daylight is Breaking
 					},
-					["provider"] = { "n", 242381 },	-- Valeera Sanguinar
+					["qg"] = 242381,	-- Valeera Sanguinar
 					["coord"] = { 52.5, 78.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 				}),
 				q(91829, {	-- One by One
-					["sourceQuests"] = { 91828 },	-- A Favor for the Lion
-					["qg"] = {
+					["sourceQuest"] = 91828,	-- A Favor for the Lion
+					["qgs"] = {
 						248982,	-- Valeera Sanguinar
 						250295,	-- Valeera Sanguinar (mobileNPC)
 					},
 					["coord"] = { 40.4, 71.7, MAP.MIDNIGHT.ZULAMAN },
 				}),
 				q(91830, {	-- Intercepted
-					["sourceQuests"] = { 91828 },	-- A Favor for the Lion
-					["qg"] = {
+					["sourceQuest"] = 91828,	-- A Favor for the Lion
+					["qgs"] = {
 						248982,	-- Valeera Sanguinar
 						250295,	-- Valeera Sanguinar (mobileNPC)
 					},
@@ -451,8 +451,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 				}),
 				q(91831, {	-- Keys Are Optional
-					["sourceQuests"] = { 91828 },	-- A Favor for the Lion
-					["qg"] = {
+					["sourceQuest"] = 91828,	-- A Favor for the Lion
+					["qgs"] = {
 						248982,	-- Valeera Sanguinar
 						250295,	-- Valeera Sanguinar (mobileNPC)
 					},
@@ -464,7 +464,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						91831,	-- Keys Are Optional
 						91829,	-- One by One
 					},
-					["provider"] = { "n", 250295 },	-- Valeera Sanguinar (mobileNPC)
+					["qg"] = 250295,	-- Valeera Sanguinar (mobileNPC)
 					["coord"] = { 40.4, 71.7, MAP.MIDNIGHT.ZULAMAN },	-- Vignette location on the map
 				}),
 			}),
@@ -472,23 +472,23 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 		header(HEADERS.Achievement, 42117, {	-- The War of Light and Shadow
 			header(HEADERS.AchCriteria, 42117.01, {	-- Foothold
 				q(90777, {	-- Feeding the Flame
-					["sourceQuests"] = { 86522 },	-- Daylight is Breaking
-					["provider"] = { "n", 235787 },	-- Lor'themar Theron
+					["sourceQuest"] = 86522,	-- Daylight is Breaking
+					["qg"] = 235787,	-- Lor'themar Theron
 					["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 				}),
 				q(88696, {	-- The Devouring Citadel
-					["sourceQuests"] = { 90777 },	-- Feeding the Flame
-					["provider"] = { "n", 247414 },	-- Lady Liadrin
+					["sourceQuest"] = 90777,	-- Feeding the Flame
+					["qg"] = 247414,	-- Lady Liadrin
 					["coord"] = { 53.1, 58.7, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
 				}),
 				q(88697, {	-- Clarity of Purpose
-					["sourceQuests"] = { 88696 },	-- The Devouring Citadel
-					["provider"] = { "n", 239810 },	-- High Exarch Turalyon
+					["sourceQuest"] = 88696,	-- The Devouring Citadel
+					["qg"] = 239810,	-- High Exarch Turalyon
 					["coord"] = { 45.4, 63.1, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(88698, {	-- Master of Mayhem
-					["sourceQuests"] = { 88697 },	-- Clarity of Purpose
-					["provider"] = { "n", 239828 },	-- Magister Umbric
+					["sourceQuest"] = 88697,	-- Clarity of Purpose
+					["qg"] = 239828,	-- Magister Umbric
 					["coord"] = { 45.4, 63.1, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
 						i(257165),	-- Voidbreaker's Casque
@@ -498,8 +498,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 				}),
 				q(88699, {	-- Powerless
-					["sourceQuests"] = { 88697 },	-- Clarity of Purpose
-					["provider"] = { "n", 239828 },	-- Magister Umbric
+					["sourceQuest"] = 88697,	-- Clarity of Purpose
+					["qg"] = 239828,	-- Magister Umbric
 					["coord"] = { 45.4, 63.1, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
 						i(257178),	-- Voidbreaker's Flames
@@ -513,7 +513,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						88698,	-- Master of Mayhem
 						88699,	-- Powerless
 					},
-					["provider"] = { "n", 239810 },	-- High Exarch Turalyon
+					["qg"] = 239810,	-- High Exarch Turalyon
 					["coord"] = { 45.4, 63.1, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
 						i(262610),	-- Swirling Ritual Pedestal (DECOR!)
@@ -524,13 +524,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 				}),
 				q(91417, {	-- Seek out Arator
-					["sourceQuests"] = { 88700 },	-- Two Tons of Metal and Holy Fire
-					["provider"] = { "n", 239810 },	-- High Exarch Turalyon
+					["sourceQuest"] = 88700,	-- Two Tons of Metal and Holy Fire
+					["qg"] = 239810,	-- High Exarch Turalyon
 					["coord"] = { 45.4, 63.1, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(88701, {	-- The Memory Remains
-					["sourceQuests"] = { 91417 },	-- Seek out Arator
-					["qg"] = {
+					["sourceQuest"] = 91417,	-- Seek out Arator
+					["qgs"] = {
 						239827,	-- Arator
 						244093,	-- Sunwell Defender / Arator (mobileNPC)
 					},
@@ -546,8 +546,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 				}),
 				q(88702, {	-- Aegis of the Redeemer
-					["sourceQuests"] = { 91417 },	-- Seek out Arator
-					["qg"] = {
+					["sourceQuest"] = 91417,	-- Seek out Arator
+					["qgs"] = {
 						239827,	-- Arator
 						244093,	-- Sunwell Defender / Arator (mobileNPC)
 					},
@@ -564,17 +564,17 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						88701,	-- The Memory Remains
 						88702,	-- Aegis of the Redeemer
 					},
-					["provider"] = { "n", 244093 },	-- Sunwell Defender / Arator (mobileNPC)
+					["qg"] = 244093,	-- Sunwell Defender / Arator (mobileNPC)
 					["coord"] = { 46.3, 63.2, MAP.MIDNIGHT.VOIDSTORM },	-- Vignette location on the map
 				}),
 				q(88703, {	-- The Night Before
-					["sourceQuests"] = { 91426 },	-- The People's Champion
-					["provider"] = { "n", 254884 },	-- Arator
+					["sourceQuest"] = 91426,	-- The People's Champion
+					["qg"] = 254884,	-- Arator
 					["coord"] = { 46.3, 63.2, MAP.MIDNIGHT.VOIDSTORM },
 				}),
 				q(88704, {	-- The Patient Hunter
-					["sourceQuests"] = { 88703 },	-- The Night Before
-					["provider"] = { "n", 239826 },	-- Alleria Windrunner
+					["sourceQuest"] = 88703,	-- The Night Before
+					["qg"] = 239826,	-- Alleria Windrunner
 					["coord"] = { 51.7, 65.0, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
 						i(257218),	-- Voidbreaker's Sabatons
@@ -584,8 +584,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 				}),
 				q(88705, {	-- Killing Blow
-					["sourceQuests"] = { 88704 },	-- The Patient Hunter
-					["provider"] = { "n", 243886 },	-- Nadia Brighton
+					["sourceQuest"] = 88704,	-- The Patient Hunter
+					["qg"] = 243886,	-- Nadia Brighton
 					["coord"] = { 56.3, 65.1, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
 						i(257203),	-- Voidbreaker's Gauntlets
@@ -595,8 +595,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 				}),
 				q(88706, {	-- Nothing Stands Forever
-					["sourceQuests"] = { 88705 },	-- Killing Blow
-					["provider"] = { "n", 239826 },	-- Alleria Windrunner
+					["sourceQuest"] = 88705,	-- Killing Blow
+					["qg"] = 239826,	-- Alleria Windrunner
 					["coord"] = { 55.9, 64.8, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
 						i(264660),	-- Ren'dorei Spired Tent (DECOR!)
@@ -610,21 +610,21 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				--hqt(XXXXX, {	-- Stay awhile and listen: High Exarch Turalyon
 				--	["name"] = "Stay awhile and listen: High Exarch Turalyon",
 				--	["description"] = "Dialogue becomes available before turning in 'Nothing Stands Forever' (88706).",
-				--	["sourceQuests"] = { 88705 },	-- Killing Blow
-				--	["provider"] = { "n", 239810 },	-- High Exarch Turalyon
+				--	["sourceQuest"] = 88705,	-- Killing Blow
+				--	["qg"] = 239810,	-- High Exarch Turalyon
 				--	["coord"] = { 45.2, 62.9, MAP.MIDNIGHT.VOIDSTORM },
 				--}),
 				--
 			}),
 			header(HEADERS.AchCriteria, 42117.02, {	-- The Voidspire
 				q(90690, {	-- Charge of the Vanguard
-					["sourceQuests"] = { 88706 },	-- Nothing Stands Forever
+					["sourceQuest"] = 88706,	-- Nothing Stands Forever
 					["qg"] = 235787,	-- Lor'themar Theron
 					["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["isBreadcrumb"] = true,
 				}),
 				q(88709, {	-- The Voidspire
-					["sourceQuests"] = { 90690 },	-- Charge of the Vanguard
+					["sourceQuest"] = 90690,	-- Charge of the Vanguard
 					["qg"] = 239810,	-- High Exarch Turalyon
 					["coord"] = { 45.4, 63.0, MAP.MIDNIGHT.VOIDSTORM },
 					["groups"] = {
@@ -635,7 +635,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 				}),
 				q(90724, {	-- The Broken Sky
-					["sourceQuests"] = { 88709 },	-- The Voidspire
+					["sourceQuest"] = 88709,	-- The Voidspire
 					["qgs"] = {
 						244297,	-- Arator
 						253603,	-- Arator
@@ -650,7 +650,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					},
 				}),
 				q(92520, {	-- Wake of the Darkwell
-					["sourceQuests"] = { 90724 },	-- The Broken Sky
+					["sourceQuest"] = 90724,	-- The Broken Sky
 					["qg"] = 235787,	-- Lor'themar Theron
 					["coord"] = { 45.4, 70.3, MAP.MIDNIGHT.SILVERMOON_CITY },
 				}),
