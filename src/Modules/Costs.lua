@@ -55,6 +55,7 @@ local CostDebugIDs = {
 	-- [9766] = true,	-- Coilfang Armaments (quest)
 	-- [3160] = true,	-- MID Tailoring Knowledge
 	-- [273000] = true,	-- Corrosive Soul
+	-- [167698] = true,	-- Secret Fish Goggles
 }
 local function PrintDebug(id, ...)
 	if CostDebugIDs.ALL then
@@ -373,6 +374,12 @@ local function FinishCostAssignmentsForItem(itemID, costs, refresh)
 			if spellID then
 				owned = item.saved and 1 or 0
 				-- PrintDebug(itemID, owned == 1 and "PROV IS KNOWN SPELL" or "PROV IS UNKNOWN SPELL")
+			end
+		else
+			-- provider-only Toy costs no longer show as a cost once you own the item as a toy
+			if PlayerHasToy(itemID) then
+				isCost = nil
+				isProv = nil
 			end
 		end
 		-- PrintDebug(itemID, app:SearchLink(costs[1]),owned == 1 and "PROV OWNED" or "PROV MISSING")
