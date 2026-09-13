@@ -98,14 +98,25 @@ end);
 
 -- Event Cache
 -- Determine if the Calendar is implemented or not.
-local isCalendarAvailable = C_Calendar and GetCategoryInfo and GetCategoryInfo(92) ~= "";
+-- Vanilla and TBC clients expose C_Calendar (guild events, lockouts) but it never contains HOLIDAY
+-- entries: Blizzard ships the calendar-less clock for [AllowLoadGameType vanilla, tbc] and the
+-- calendar UI only from Wrath (Blizzard_Minimap_Classic.toc). Measured on Classic Era 1.15.9 with
+-- the Darkmoon Faire active: 25 GUILD_EVENT rows in the month, 0 HOLIDAY. A scan there can never
+-- find anything, while each of its 33 SetMonth calls synchronously runs every other addon's
+-- CALENDAR_UPDATE_EVENT_LIST handler (measured: 8 s in one frame with a calendar addon loaded).
+local isCalendarAvailable = C_Calendar and GetCategoryInfo and GetCategoryInfo(92) ~= ""
+	and app.GameBuildVersion >= 30000;
 local function CreateTimeStamp(t)
+	-- os.time reads 'min', not 'minute' (Lua 5.1 manual, os.time): a 'minute' key is ignored and the
+	-- minute defaults to 0, so every timestamp built here snapped to the top of the hour. That made
+	-- the 5-second "no events yet, retry" lease in GetEventCache last until the realm clock crossed
+	-- the next hour, and shifted every event start/end by up to 59 minutes.
 	return time({
 		year=t.year,
 		month=t.month,
 		day=t.monthDay,
 		hour=t.hour,
-		minute=t.minute,
+		min=t.minute,
 	});
 end
 local function CreateSchedule(startTime, endTime, t)
@@ -124,7 +135,7 @@ local function CreateSchedule(startTime, endTime, t)
 	};
 end
 local SessionEventCache;
-local CacheVersion = 20250703;
+local CacheVersion = 20260912;	-- bumped: schedules cached before the CreateTimeStamp fix are hour-truncated
 local function GetEventCache()
 	-- app.PrintDebug("GetEventCache")
 	local now = CreateTimeStamp(C_DateAndTime_GetCurrentCalendarTime());
