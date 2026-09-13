@@ -152,7 +152,7 @@ app:CreateWindow("Import", {
 				OnUpdate = app.AlwaysShowUpdate,
 				OnClick = function()
 					app:ShowPopupDialogWithEditBox(
-						"Paste " .. label .. " IDs or Global Reference [ATTC.CurrentCharacter.Quests] etc.",
+						L.IMPORT_PASTE_HINT:format(label),
 						"",
 						function(input)
 							if not input or input:match("^%s*$") then
