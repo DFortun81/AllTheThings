@@ -1,7 +1,7 @@
 ﻿---@diagnostic disable: deprecated
 local appName, _ = ...
 _.AddEventHandler("OnBuildDataCache", function(categories)
-local ach,crit,en,flt,h,mnt,n,p,q,s,toy=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateToy;
+local ach,crit,en,flt,h,i,mnt,n,p,q,s,toy=_.CreateAchievement,_.CreateAchievementCriteria,_.CreateEnsemble,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateNPC,_.CreateSpecies,_.CreateQuest,_.CreateItemSource,_.CreateToy;
 categories.TradingPost=
 h(-230,{isMinilistHeader=1,SortPriority=95,g={
 h(-12,{awp=100005,u=7,g={
@@ -1692,7 +1692,9 @@ en(235228,{cost={{"c",2032,370}},questID=86727,spellID=1216150,tmogSetID=4263,u=
 s(266729,235216,{f=2,loc=45}),
 s(266672,235154,{f=2,loc=40}),
 s(266723,235210,{f=2,loc=41})}}),
-en(230169,{cost={{"c",2032,100}},spellID=466779,tmogSetID=0,u=2}),
+i(230169,{cost={{"c",2032,100}},f=55,spellID=466779,tmogSetID=0,u=2,g={
+s(227826,230059,{f=2,loc=40,u=2}),
+s(227846,230079,{f=2,loc=40,u=2})}}),
 en(212222,{b=1,cost={{"c",2032,750}},questID=79211,spellID=431331,tmogSetID=3358,u=2,g={
 s(194700,212211,{f=2,loc=42}),
 s(194701,212212,{f=2,loc=47}),

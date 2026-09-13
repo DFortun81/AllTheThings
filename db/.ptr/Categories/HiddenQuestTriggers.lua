@@ -17,14 +17,14 @@ hqt(236,{isDaily=1,r=2})}),
 x(2,{
 hqt(11116),
 hqt(11087),
-inst(255,{awp=20001,savedInstanceID=269,g={
+inst(255,{awp=20003,savedInstanceID=269,g={
 hqt(10737)}}),
-inst(260,{awp=20001,savedInstanceID=547,g={
+inst(260,{awp=20003,savedInstanceID=547,g={
 hqt(11115)}}),
-m(12,{awp=20001,g={
+m(12,{awp=20003,g={
 m(106,{petBattleLvl=3,g={
 hqt(9750)}})}}),
-m(101,{awp=20001,lvl=10,g={
+m(101,{awp=20003,lvl=10,g={
 m(100,{petBattleLvl=17,lvl=10,g={
 h(-45,{
 hqt(10454)})}}),
@@ -7442,7 +7442,8 @@ hqt(93821,{an="fa:2710",isWeekly=1}),
 hqt(93822,{an="fa:2704",isWeekly=1}),
 hqt(93935,{isWeekly=1}),
 hqt(93936,{isWeekly=1}),
-hqt(93937,{isWeekly=1})}}),
+hqt(93937,{isWeekly=1}),
+hqt(99222,{an="fa:2772",awp=120100,isWeekly=1})}}),
 m(2537,{lvl=80,g={
 m(2405,{maps={2444,2526,2527},lvl=88,g={
 h(-45,{
@@ -7844,6 +7845,7 @@ hqt(97498,{awp=120100}),
 hqt(97499,{awp=120100}),
 hqt(97500,{awp=120100}),
 hqt(97501,{awp=120100}),
+hqt(97502,{awp=120100}),
 hqt(97503,{awp=120100}),
 hqt(97504,{awp=120100}),
 hqt(97505,{awp=120100}),
