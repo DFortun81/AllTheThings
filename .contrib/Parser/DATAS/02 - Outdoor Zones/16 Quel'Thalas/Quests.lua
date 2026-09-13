@@ -25,9 +25,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["sourceQuests"] = { 89193 },	-- Arator
 					["provider"] = { "n", 240240 },	-- Alonsus Faol
 					["coord"] = { 52.9, 55.2, MAP.MIDNIGHT.ISLE_OF_QUELDANAS },
+					["qi"] = 237811,	-- Faol's Benediction (QI!)
 					["groups"] = {
-						i(237811),	-- Faol's Benediction (QI!)
-						--
 						i(251274),	-- Gloves of Renewal
 						i(251277),	-- Hands of Renewal
 						i(251276),	-- Touch of Renewal
@@ -110,11 +109,12 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["sourceQuests"] = { 86842 },	-- Scarlet Power
 					["provider"] = { "n", 237602 },	-- Alonsus Faol
 					["coord"] = { 47.3, 90.8, 2438 },	-- Scarlet Halls
+					["qis"] = {
+						237761,	-- Aelyse's Gleaming Falchion (QI!)
+						237576,	-- Benthar's Scarlet Spire (QI!)
+						237579,	-- Meyer's Rod of Castigation (QI!)
+					},
 					["groups"] = {
-						i(237761),	-- Aelyse's Gleaming Falchion (QI!)
-						i(237576),	-- Benthar's Scarlet Spire (QI!)
-						i(237579),	-- Meyer's Rod of Castigation (QI!)
-						--
 						i(251725),	-- Repurposed Scarlet Axe
 						i(251732),	-- Repurposed Scarlet Battlestaff
 						i(251728),	-- Repurposed Scarlet Blade
@@ -153,7 +153,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				q(91000, {	-- A Humble Servant
 					["sourceQuests"] = { 86845 },	-- The Sunwalker Path
 					["provider"] = { "n", 245186 },	-- Sunwalker Dezco
-					["coord"] = { 68.9, 37.7, ARATHI_HIGHLANDS },
+					["coord"] = { 68.9, 37.7, 2372 },	-- Arathi Highlands
 					["groups"] = {
 						i(251818),	-- Humble Servant's Briefs
 						i(251819),	-- Humble Servant's Leggings
@@ -164,7 +164,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				q(86846, {	-- Resupplying our Suppliers
 					["sourceQuests"] = { 86845 },	-- The Sunwalker Path
 					["provider"] = { "n", 245186 },	-- Sunwalker Dezco
-					["coord"] = { 68.9, 37.7, ARATHI_HIGHLANDS },
+					["coord"] = { 68.9, 37.7, 2372 },	-- Arathi Highlands
 				}),
 				q(89338, {	-- Gathering Plowshares
 					["sourceQuests"] = {
@@ -172,43 +172,43 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 						86846,	-- Resupplying our Suppliers
 					},
 					["provider"] = { "n", 247299 },	-- Sunwalker Dezco
-					["coord"] = { 68.5, 32.2, ARATHI_HIGHLANDS },	-- Arathi Highlands
+					["coord"] = { 68.5, 32.2, 2372 },	-- Arathi Highlands
 					["groups"] = {
 						o(525492, {	-- Forgotten Skullcleaver
 							["coords"] = {
-								{ 64.0, 37.0, ARATHI_HIGHLANDS },
-								{ 64.1, 39.2, ARATHI_HIGHLANDS },
-								{ 64.4, 42.7, ARATHI_HIGHLANDS },
-								{ 64.7, 34.8, ARATHI_HIGHLANDS },
-								{ 65.9, 33.9, ARATHI_HIGHLANDS },
-								{ 65.9, 36.8, ARATHI_HIGHLANDS },
-								{ 66.0, 40.4, ARATHI_HIGHLANDS },
-								{ 66.2, 45.2, ARATHI_HIGHLANDS },
-								{ 66.6, 47.7, ARATHI_HIGHLANDS },
-								{ 66.7, 39.3, ARATHI_HIGHLANDS },
-								{ 68.0, 40.2, ARATHI_HIGHLANDS },
-								{ 68.9, 42.0, ARATHI_HIGHLANDS },
-								{ 70.0, 44.4, ARATHI_HIGHLANDS },
-								{ 70.8, 41.2, ARATHI_HIGHLANDS },
+								{ 64.0, 37.0, 2372 },	-- Arathi Highlands
+								{ 64.1, 39.2, 2372 },
+								{ 64.4, 42.7, 2372 },
+								{ 64.7, 34.8, 2372 },
+								{ 65.9, 33.9, 2372 },
+								{ 65.9, 36.8, 2372 },
+								{ 66.0, 40.4, 2372 },
+								{ 66.2, 45.2, 2372 },
+								{ 66.6, 47.7, 2372 },
+								{ 66.7, 39.3, 2372 },
+								{ 68.0, 40.2, 2372 },
+								{ 68.9, 42.0, 2372 },
+								{ 70.0, 44.4, 2372 },
+								{ 70.8, 41.2, 2372 },
 							},
 							["groups"] = { i(238515) },	-- Forgotten Skullcleaver (QI!)
 						}),
 						o(525493, {	-- Fallen Longsword
 							["coord"] = {
-								{ 64.4, 36.0, ARATHI_HIGHLANDS },
-								{ 64.4, 40.7, ARATHI_HIGHLANDS },
-								{ 65.3, 39.5, ARATHI_HIGHLANDS },
-								{ 65.6, 34.0, ARATHI_HIGHLANDS },
-								{ 65.6, 41.6, ARATHI_HIGHLANDS },
-								{ 65.7, 37.9, ARATHI_HIGHLANDS },
-								{ 65.8, 40.9, ARATHI_HIGHLANDS },
-								{ 66.1, 35.4, ARATHI_HIGHLANDS },
-								{ 66.8, 42.6, ARATHI_HIGHLANDS },
-								{ 68.0, 46.2, ARATHI_HIGHLANDS },
-								{ 68.7, 40.3, ARATHI_HIGHLANDS },
-								{ 69.3, 45.4, ARATHI_HIGHLANDS },
-								{ 70.0, 40.9, ARATHI_HIGHLANDS },
-								{ 70.9, 43.0, ARATHI_HIGHLANDS },
+								{ 64.4, 36.0, 2372 },	-- Arathi Highlands
+								{ 64.4, 40.7, 2372 },
+								{ 65.3, 39.5, 2372 },
+								{ 65.6, 34.0, 2372 },
+								{ 65.6, 41.6, 2372 },
+								{ 65.7, 37.9, 2372 },
+								{ 65.8, 40.9, 2372 },
+								{ 66.1, 35.4, 2372 },
+								{ 66.8, 42.6, 2372 },
+								{ 68.0, 46.2, 2372 },
+								{ 68.7, 40.3, 2372 },
+								{ 69.3, 45.4, 2372 },
+								{ 70.0, 40.9, 2372 },
+								{ 70.9, 43.0, 2372 },
 							},
 							["groups"] = { i(238516) },	-- Forgotten Longsword (QI!)
 						}),
@@ -220,7 +220,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				--	["description"] = "Dialogue becomes available after accepting 'Gathering Plowshares' (89338).",
 				--	["sourceQuests"] = { 86846 },	-- Resupplying our Suppliers
 				--	["provider"] = { "n", 247299 },	-- Sunwalker Dezco
-				--	["coord"] = { 68.9, 37.7, ARATHI_HIGHLANDS },
+				--	["coord"] = { 68.9, 37.7, 2372 },	-- Arathi Highlands
 				--}),
 				--
 			}),
@@ -228,7 +228,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 				q(86822, {	-- One Final Relic
 					["sourceQuests"] = { 89338 },	-- Gathering Plowshares
 					["provider"] = { "n", 240747 },	-- Alonsus Faol
-					["coord"] = { 68.6, 32.0, ARATHI_HIGHLANDS },	-- Arathi Highlands
+					["coord"] = { 68.6, 32.0, 2372 },	-- Arathi Highlands
 				}),
 				q(86823, {	-- The Dark Horde
 					["sourceQuests"] = { 86822 },	-- One Final Relic
@@ -239,15 +239,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["sourceQuests"] = { 86822 },	-- One Final Relic
 					["provider"] = { "n", 237224 },	-- Eitrigg
 					["coord"] = { 33.5, 48.6, BURNING_STEPPES },
-					["groups"] = { i(239130) },	-- Torch (PQI!)
+					["qi"] = 239130,	-- Torch (PQI!)
 				}),
 				q(86825, {	-- Faithful Servant, Faithless Cause
 					["sourceQuests"] = { 86822 },	-- One Final Relic
 					["provider"] = { "n", 237224 },	-- Eitrigg
 					["coord"] = { 33.5, 48.6, BURNING_STEPPES },
+					["qi"] = 246704,	-- Mar'kag's Buckle (QI!)
 					["groups"] = {
-						i(246704),	-- Mar'kag's Buckle (QI!)
-						--
 						i(251832),	-- Mar'kag's Anklet
 						i(251831),	-- Mar'kag's Bracers
 						i(251829),	-- Mar'kag's Handless Gloves
@@ -267,15 +266,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["sourceQuests"] = { 91391 },	-- Still Scouting
 					["provider"] = { "n", 237268 },	-- Kurdran Wildhammer
 					["coord"] = { 21.1, 39.8, BURNING_STEPPES },
-					["groups"] = { i(247218) },	-- Stone Guard's Badge (QI!)
+					["qi"] = 247218,	-- Stone Guard's Badge (QI!)
 				}),
 				q(86826, {	-- Nagosh the Scarred
 					["sourceQuests"] = { 91391 },	-- Still Scouting
 					["provider"] = { "n", 237268 },	-- Kurdran Wildhammer
 					["coord"] = { 21.1, 39.8, BURNING_STEPPES },
+					["qi"] = 246699,	-- Nagosh' Relic Fragment (QI!)
 					["groups"] = {
-						i(246699),	-- Nagosh' Relic Fragment (QI!)
-						--
 						i(251826),	-- Medallion of the Dark Horde
 						i(251828),	-- Scarred Blackrock Choker
 					},
@@ -298,9 +296,8 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["sourceQuests"] = { 86828 },	-- Not Just a Troll's Bane
 					["provider"] = { "n", 242120 },	-- Danath Trollbane
 					["coord"] = { 31.6, 37.6, BURNING_STEPPES },
+					["qi"] = 235625,	-- Grazla's Relic Fragment (QI!)
 					["groups"] = {
-						i(235625),	-- Grazla's Relic Fragment (QI!)
-						--
 						i(251822),	-- Dark Horde Circle
 						i(251824),	-- Dark Horde Cowl
 						i(251823),	-- Dark Horde Helm
@@ -340,12 +337,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["provider"] = { "n", 253125 },	-- Kurdran Wildhammer
 					["coord"] = { 40.6, 66.1, MAP.MIDNIGHT.SILVERMOON_CITY },
 					["maps"] = { ARCANTINA },
-					["groups"] = {
-						i(254838),	-- A Round of Drinks (QI!)
-						i(248131),	-- Key to the Arcantina (PQI!)
-						--
-						i(253629),	-- Personal Key to the Arcantina (TOY!)
+					["qis"] = {
+						254838,	-- A Round of Drinks (QI!)
+						248131,	-- Key to the Arcantina (PQI!)
 					},
+					["groups"] = { i(253629) },	-- Personal Key to the Arcantina (TOY!)
 				}),
 			}),
 		}),
@@ -379,13 +375,13 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["sourceQuests"] = { 91822 },	-- The Regent's Request
 					["provider"] = { "n", 248750 },	-- Valeera Sanguinar
 					["coord"] = { 61.9, 68.3, MAP.MIDNIGHT.EVERSONG_WOODS },
-					["groups"] = { i(248614) },	-- Quel'dorel Artifact (QI!)
+					["qi"] = 248614,	-- Quel'dorel Artifact (QI!)
 				}),
 				q(91825, {	-- Dead Men Keep No Secrets
 					["sourceQuests"] = { 91822 },	-- The Regent's Request
 					["provider"] = { "n", 248750 },	-- Valeera Sanguinar
 					["coord"] = { 61.9, 68.3, MAP.MIDNIGHT.EVERSONG_WOODS },
-					["groups"] = { i(248615) },	-- Infiltrator's Cache (QI!)
+					["qi"] = 248615,	-- Infiltrator's Cache (QI!)
 				}),
 				q(91826, {	-- Tripwire Tango
 					["sourceQuests"] = {
@@ -450,9 +446,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 								{ 39.0, 72.2, MAP.MIDNIGHT.ZULAMAN },
 								{ 39.8, 71.4, MAP.MIDNIGHT.ZULAMAN },
 							},
-							["groups"] = {
-								i(248928),	-- Cult Orders (QI!)
-							},
+							["groups"] = { i(248928) },	-- Cult Orders (QI!)
 						}),
 					},
 				}),
@@ -741,14 +735,14 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["sourceQuest"] = 88922,	-- The Quel'dorei
 					["qg"] = 240295,	-- Vereesa Windrunner
 					["coord"] = { 31.2, 91.4, MAP.MIDNIGHT.EVERSONG_WOODS },
-					["groups"] = { i(258041) },	-- Remains of the Fallen (QI!)
+					["qi"] = 258041,	-- Remains of the Fallen (QI!)
 				}),
 				q(88938, {	-- Symbols of the Past
 					["sourceQuest"] = 88922,	-- The Quel'dorei
 					["qg"] = 240295,	-- Vereesa Windrunner
 					["coord"] = { 31.2, 91.4, MAP.MIDNIGHT.EVERSONG_WOODS },
+					["qi"] = 251899,	-- Anasterian's Book of Law (QI!)
 					["groups"] = {
-						i(251899),	-- Anasterian's Book of Law (QI!)
 						o(573743, {	-- Crown of the High King
 							["coord"] = { 30.2, 90.8, MAP.MIDNIGHT.EVERSONG_WOODS },
 							["groups"] = {
@@ -803,7 +797,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, bubbleDownSelf({ ["timeline"] = { A
 					["sourceQuest"] = 88928,	-- The Shal'dorei
 					["qg"] = 240302,	-- First Arcanist Thalyssra
 					["coord"] = { 70.6, 74.3, SURAMAR },
-					["groups"] = { i(248920) },	-- Nightwatch Mask (PQI!)
+					["qi"] = 248920,	-- Nightwatch Mask (PQI!)
 				}),
 				q(88919, {	-- Into the Darkway
 					["sourceQuests"] = {

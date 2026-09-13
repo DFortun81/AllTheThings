@@ -8,6 +8,7 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 			i(270248, {	-- Autumn Snapling (PET!)
 				["crs"] = { 262248 },	-- Autumn Snapling
 				["coords"] = {
+					{ 65.2, 70.9, MAP.MIDNIGHT.THE_COILED_ISLE },
 					{ 67.9, 81.5, MAP.MIDNIGHT.THE_COILED_ISLE },
 					{ 70.6, 78.7, MAP.MIDNIGHT.THE_COILED_ISLE },
 				},
