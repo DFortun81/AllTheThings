@@ -79,7 +79,7 @@ q(7933,{coords={
 [1412]={{37.3,37.7}},
 [1429]={{41.6,68.8}}},cost={{"i",19182,40}},e=1,qgs={14828},repeatable=1,rwp=40300,g={
 i(19296,{description="Contains a level 40-55 (usually uncommon quality) item.",e=1,lvl=45,q=2})}}),
-q(9249,{awp=20001,coords={
+q(9249,{awp=20003,coords={
 [1412]={{37.3,37.7}},
 [1429]={{41.6,68.8}}},cost={{"i",19182,40}},e=1,qgs={14828},repeatable=1,u=1,g={
 r(28327,{b=1,e=1,itemID=22729,learnedAt=275,q=1,requireSkill=202,u=1})}}),

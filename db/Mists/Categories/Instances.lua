@@ -3483,13 +3483,13 @@ n(9030,{
 s(124383,11665,{b=1,f=5,loc=44,lvl=47,q=3}),
 s(124380,11662,{b=1,f=4,loc=45,lvl=47,q=3}),
 s(124411,11728,{b=1,f=6,loc=46,lvl=47,q=3}),
-i(11824,{b=1,f=52,lvl=47,q=3})}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
+i(11824,{b=1,f=52,lvl=47,q=3})}),
 n(16059,{description="Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: Ring of Law.",providers={{"i",21986},{"o",181074}},rwp=40003,sourceQuests={9015},u=2,u_sqs=1,g={
 i(22047,{q=1,u=2}),
 s(132704,22305,{b=1,c={5,8,9},f=4,loc=41,lvl=56,q=3,u=2}),
 s(132716,22317,{b=1,f=34,lvl=51,q=3,u=2}),
 s(132717,22318,{b=1,f=32,lvl=51,q=3,u=2}),
-s(132729,22330,{b=1,f=3,lvl=51,q=3,u=2})}}))}}),
+s(132729,22330,{b=1,f=3,lvl=51,q=3,u=2})}})}}),
 e(377,{npcID=9016,g={
 s(124449,11803,{b=1,f=24,lvl=47,q=3}),
 s(124451,11805,{b=1,f=23,lvl=47,q=3}),
@@ -3936,7 +3936,7 @@ s(125502,13175,{awp=100107,b=1,description="This item appears to have been remov
 i(13177,{b=1,f=51,lvl=55,q=3}),
 s(125506,13179,{b=1,f=6,loc=43,lvl=55,q=3}),
 s(128385,16676,{f=6,loc=44,lvl=54,q=3,rwp=40003,u=2}),
-s(132630,22231,{b=1,f=4,loc=47,lvl=55,q=3})}}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
+s(132630,22231,{b=1,f=4,loc=47,lvl=55,q=3})}}),
 n(16080,{cost={{"i",22049,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",providers={{"i",22057}},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
 qo(2,{providers={{"i",21984}},questID=8966,u=2}),
 qo(2,{providers={{"i",22046}},questID=8989,u=2}),
@@ -3944,7 +3944,7 @@ s(132721,22322,{b=1,f=23,lvl=55,q=3,u=2}),
 s(132718,22319,{b=1,f=1,lvl=55,q=3,u=2}),
 s(132724,22325,{b=1,f=5,loc=45,lvl=55,q=3,u=2}),
 s(132705,22306,{b=1,c={5,8,9},f=4,loc=45,lvl=55,q=3,u=2}),
-i(22398,{b=1,rwp=50004,u=2})}})),
+i(22398,{b=1,rwp=50004,u=2})}}),
 n(9596,{coords={
 [250]={{49,55},{53,67}}},description="This is a Rare Creature and, as such, is not always present.",g={
 r(16994,{itemID=12838,learnedAt=300,q=3,requireSkill=164}),
@@ -4083,7 +4083,7 @@ s(125293,12964,{b=1,f=6,loc=46,lvl=55,q=3}),
 s(132710,22311,{b=1,c={5,8,9},f=4,loc=47,lvl=56,q=3,rwp=40003,u=2}),
 i(19227,{q=3,u=13}),
 prof(393,{
-i(12731,{q=4})})}}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
+i(12731,{q=4})})}}),
 n(16042,{cost={{"i",22056,1}},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",providers={{"i",22057}},rwp=40003,u=2,u_providers=1,g={
 s(132735,22336,{b=1,f=8,lvl=55,q=3,u=2}),
 s(132734,22335,{b=1,f=28,lvl=55,q=3,u=2}),
@@ -4092,7 +4092,7 @@ i(22340,{b=1,f=51,lvl=55,q=3,u=2}),
 s(132736,22337,{b=1,f=3,lvl=55,q=3,u=2}),
 s(132742,22343,{b=1,f=6,loc=44,lvl=55,q=3,u=2}),
 s(132741,22342,{b=1,f=4,loc=46,lvl=55,q=3,u=2}),
-i(22339,{b=1,f=52,lvl=55,q=3,u=2})}})),
+i(22339,{b=1,f=52,lvl=55,q=3,u=2})}}),
 n(10363,{rwp=60002,g={
 ach(1307),
 i(16663,{q=1,rwp=40003,u=2}),
@@ -4534,14 +4534,14 @@ s(129256,18308,{b=1,f=5,loc=40,lvl=36,q=3,u=1101}),
 s(129267,18319,{b=1,f=5,filterForRWP=5,loc=40,lvl=36,q=3,u=1101}),
 s(129261,18313,{b=1,f=6,filterForRWP=6,loc=40,lvl=36,q=3,u=1101}),
 s(129254,18306,{b=1,f=4,loc=44,lvl=36,q=3,u=1101})}}),
-n(11491,{description="Talk to him for him to break down the door.",u=1101}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
+n(11491,{description="Talk to him for him to break down the door.",u=1101}),
 n(16097,{cost={{"i",22050,1}},description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",providers={{"i",22057}},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
 qo(2,{providers={{"i",21984}},questID=8967,u=15}),
 qo(2,{providers={{"i",22046}},questID=8990,u=15}),
 s(132714,22315,{b=1,f=23,lvl=56,q=3,u=15}),
 s(132713,22314,{b=1,f=29,lvl=56,q=3,u=15}),
 s(132703,22304,{b=1,c={5,8,9},f=4,loc=44,lvl=56,q=3,u=15}),
-s(132871,22472,{b=1,f=5,loc=47,lvl=56,q=3,u=15})}})),
+s(132871,22472,{b=1,f=5,loc=47,lvl=56,q=3,u=15})}}),
 e(405,{npcID=11492,u=1101,g={
 i(18501,{b=1,description="Spawns under the vines near the last boss in Dire Maul East.",providers={{"o",179559}},q=1,u=1101}),
 s(129269,18321,{b=1,f=23,lvl=36,q=3,u=1101}),
@@ -7151,7 +7151,7 @@ s(203107,53561,{b=1,f=5,loc=42,q=2,u=1}),
 s(132671,22272,{b=1,f=5,loc=42,q=3,u=2}),
 s(203108,53562,{b=1,f=5,loc=42,q=2,u=1}),
 s(132673,22274,{b=1,f=5,loc=42,q=3,u=2})}}),
-q(10593,{awp=20001,c={2},coords={
+q(10593,{awp=20003,c={2},coords={
 [998]={{57.8,92}}},lvl=50,qgs={10181},r=1,rwp=40003,sourceQuests={10592},u=2,g={
 qo(1,{providers={{"i",22444}},u=2}),
 i(30696,{b=1,f=53,q=3,u=2})}}),
@@ -15618,7 +15618,7 @@ s(178477,50449,{f=4,loc=41,lvl=80,q=4,u=33}),
 i(50452,{f=51,lvl=80,q=4,u=33})}}),
 h(-19,{crs={36597,36612,36626,36627,36678,36789,36853,36855,36939,36948,37813,37955,37970},u=33,g={
 i(49908,{description="Can drop from all bosses in Icecrown Citadel except in 10 player raid size on Normal difficulty.",q=3,u=33})}}),
-d(116,{difficulties={1,2,3,4,5,6},u=33,g={
+d(119,{difficulties={1,2,3,4,5,6},u=33,g={
 h(-368,{u=33,g={
 e(1624,{npcID=36612,u=33}),
 e(1628,{npcID=37813,u=33}),
@@ -19557,7 +19557,7 @@ s(208707,63538,{f=34,lvl=85,q=4,u=40}),
 s(211973,68601,{f=20,lvl=85,q=4,u=40}),
 s(206524,59460,{f=27,lvl=85,q=4,u=40}),
 i(59461,{f=53,lvl=85,q=4,u=40})}}),
-d(116,{difficulties={1,2,3,4,5,6},u=40,g={
+d(119,{difficulties={1,2,3,4,5,6},u=40,g={
 e(170,{npcID=41570,u=40,g={
 ach(5306,{u=40,g={
 crit(15265,{achID=4853,id=14,u=40})}}),
@@ -19789,7 +19789,7 @@ s(206812,60201,{f=6,loc=46,lvl=85,q=4,u=40}),
 s(206563,59521,{f=25,lvl=85,q=4,u=40}),
 s(206813,60202,{f=5,loc=40,lvl=85,q=4,u=40}),
 i(59520,{f=53,lvl=85,q=4,u=40})}}),
-d(116,{difficulties={1,2,3,4,5,6},u=40,g={
+d(119,{difficulties={1,2,3,4,5,6},u=40,g={
 e(156,{npcID=44600,u=40,g={
 ach(5300,{u=40,g={
 crit(15271,{achID=4853,id=20,u=40})}}),
@@ -19959,7 +19959,7 @@ h(-12,{u=40,g={
 ach(4851,{u=40,g={
 crit(16060,{achID=5506,id=12,u=40})}}),
 gach(4987,{u=40})}}),
-d(116,{difficulties={1,2,3,4,5,6},u=40,g={
+d(119,{difficulties={1,2,3,4,5,6},u=40,g={
 e(154,{npcID=45871,u=40,g={
 ach(5304,{u=40,g={
 crit(15276,{achID=4853,id=24,u=40})}}),
@@ -20180,7 +20180,7 @@ s(213664,71640,{f=5,loc=45,lvl=85,q=4,u=41}),
 s(213455,71360,{f=28,lvl=85,q=4,u=41}),
 i(68915,{f=53,lvl=85,q=4,u=41}),
 i(71367,{f=52,lvl=85,q=4,u=41})}}),
-d(116,{difficulties={1,2,3,4,5,6},u=41,g={
+d(119,{difficulties={1,2,3,4,5,6},u=41,g={
 h(-19,{u=41,g={
 i(71141,{b=1,crs={52409,52498,52530,52558,52571,53494,53691},q=4,u=41}),
 i(69815,{b=1,crs={52409,52498,52530,52558,52571,53494,53691},q=5,u=41})}}),
@@ -20573,7 +20573,7 @@ i(71806,{q=4,u=42}),
 i(71805,{q=4,u=42}),
 i(71809,{q=4,u=42})}}),
 i(78891,{b=1,cost={{"c",615,1}},q=4,u=42})}})}}),
-d(115,{difficulties={7,1,2,3,4,5,6},u=42,g={
+d(118,{difficulties={7,1,2,3,4,5,6},u=42,g={
 e(311,{npcID=55265,u=42,g={
 crit(18445,{achID=6106,id=1,u=42})}}),
 e(324,{npcID=55308,u=42,g={
@@ -20590,7 +20590,7 @@ e(318,{npcID=53879,u=42,g={
 crit(18451,{achID=6107,id=4,u=42})}}),
 e(333,{npcID=56173,u=42,g={
 crit(18452,{achID=6107,id=5,u=42})}})}}),
-d(116,{difficulties={1,2,3,4,5,6},u=42,g={
+d(119,{difficulties={1,2,3,4,5,6},u=42,g={
 h(-19,{crs={55265,55294,55308,55312,55689,56427},u=42,g={
 i(71998,{description="Drops commonly from Dragon Soul bosses.",q=4,u=42}),
 i(77952,{b=1,c={4},q=5,u=42,g={
@@ -23081,7 +23081,7 @@ h(-12,{u=5001,g={
 ach(6458,{u=5001}),
 ach(6844,{u=5001}),
 gach(6668,{u=5001})}}),
-d(115,{difficulties={7,1,2,3,4,5,6},u=5001,g={
+d(118,{difficulties={7,1,2,3,4,5,6},u=5001,g={
 h(-63,{u=5001,g={
 r(124638,{itemID=86238,learnedAt=600,q=4,requireSkill=165,u=5001}),
 r(124643,{itemID=86272,learnedAt=600,q=4,requireSkill=165,u=5001}),
@@ -23113,7 +23113,7 @@ e(726,{npcID=60410,u=5001,g={
 crit(19767,{achID=6844,id=2,u=5001})}}),
 e(677,{crs={60399,60400},u=5001,g={
 crit(19115,{achID=6844,id=3,u=5001})}})}}),
-d(116,{difficulties={1,2,3,4,5,6},u=5001,g={
+d(119,{difficulties={1,2,3,4,5,6},u=5001,g={
 h(-12,{u=5001,g={
 ach(7933,{u=5001})}}),
 h(-63,{u=5001,g={
@@ -23514,7 +23514,7 @@ s(272032,86930,{b=1,c={11},cost={{"i",89252,1}},f=5,loc=46,lvl=90,q=4,u=5003}),
 s(272040,86938,{b=1,c={11},cost={{"i",89249,1}},f=5,loc=42,lvl=90,q=4,u=5003}),
 s(272041,86939,{b=1,c={11},cost={{"i",89255,1}},f=5,loc=44,lvl=90,q=4,u=5003}),
 s(272043,86941,{b=1,c={11},cost={{"i",89252,1}},f=5,loc=46,lvl=90,q=4,u=5003})}})}})}}),
-d(115,{difficulties={7,1,2,3,4,5,6},u=5003,g={
+d(118,{difficulties={7,1,2,3,4,5,6},u=5003,g={
 h(-63,{u=5003,g={
 r(124638,{itemID=86238,learnedAt=600,q=4,requireSkill=165,u=5003}),
 r(124643,{itemID=86272,learnedAt=600,q=4,requireSkill=165,u=5003}),
@@ -23546,7 +23546,7 @@ e(737,{npcID=62511,u=5003,g={
 crit(19633,{achID=6845,id=2,u=5003})}}),
 e(743,{npcID=62837,u=5003,g={
 crit(19634,{achID=6845,id=3,u=5003})}})}}),
-d(116,{difficulties={1,2,3,4,5,6},u=5003,g={
+d(119,{difficulties={1,2,3,4,5,6},u=5003,g={
 h(-63,{u=5003,g={
 s(271569,86192,{f=4,loc=43,lvl=90,q=4,u=5003}),
 s(271563,86186,{f=4,loc=43,lvl=90,q=4,u=5003}),
@@ -23879,7 +23879,7 @@ s(272031,86929,{b=1,c={11},cost={{"i",89258,1}},f=5,loc=40,lvl=90,q=4,u=5006}),
 s(272034,86932,{b=1,c={11},cost={{"i",89261,1}},f=5,loc=41,lvl=90,q=4,u=5006}),
 s(272042,86940,{b=1,c={11},cost={{"i",89258,1}},f=5,loc=40,lvl=90,q=4,u=5006}),
 s(272044,86942,{b=1,c={11},cost={{"i",89261,1}},f=5,loc=41,lvl=90,q=4,u=5006})}})}})}}),
-d(115,{difficulties={7,1,2,3,4,5,6},u=5006,g={
+d(118,{difficulties={7,1,2,3,4,5,6},u=5006,g={
 h(-63,{u=5006,g={
 r(124638,{itemID=86238,learnedAt=600,q=4,requireSkill=165,u=5006}),
 r(124643,{itemID=86272,learnedAt=600,q=4,requireSkill=165,u=5006}),
@@ -23908,7 +23908,7 @@ crit(19520,{achID=6689,id=3,u=5006})}}),
 e(709,{npcID=60999,u=5006,g={
 i(87210,{b=1,q=5,u=5006}),
 crit(19521,{achID=6689,id=4,u=5006})}})}}),
-d(116,{difficulties={1,2,3,4,5,6},u=5006,g={
+d(119,{difficulties={1,2,3,4,5,6},u=5006,g={
 e(683,{crs={60583,60585,60586},u=5006,g={
 ach(6717,{u=5006,g={
 crit(19624,{achID=6717,providers={{"n",60583}},u=5006}),
@@ -24383,7 +24383,7 @@ s(278224,96598,{b=1,c={11},cost={{"i",96699,1}},f=5,loc=41,lvl=90,q=4,u=52}),
 s(278220,96594,{b=1,c={11},cost={{"i",96566,1}},f=5,loc=42,lvl=90,q=4,u=52}),
 s(278221,96595,{b=1,c={11},cost={{"i",96599,1}},f=5,loc=44,lvl=90,q=4,u=52}),
 s(278223,96597,{b=1,c={11},cost={{"i",96631,1}},f=5,loc=46,lvl=90,q=4,u=52})}})}})}}),
-d(115,{difficulties={7,1,2,3,4,5,6},u=52,g={
+d(118,{difficulties={7,1,2,3,4,5,6},u=52,g={
 h(-19,{u=52,g={
 i(94593,{b=1,q=5,rwp=60002,u=52}),
 i(94594,{b=1,q=5,rwp=60002,u=52})}}),
@@ -24419,7 +24419,7 @@ crit(22965,{achID=8072,id=2,u=52})}}),
 e(832,{npcID=68397,u=52,g={
 i(94867,{b=1,q=5,u=52}),
 crit(23317,{achID=8072,id=3,u=52})}})}}),
-d(116,{difficulties={1,2,3,4,5,6},u=52,g={
+d(119,{difficulties={1,2,3,4,5,6},u=52,g={
 i(97153,{b=1,description="Awarded from completing the Weekly Raid Quest.\n\nThis bag contains gold, flasks, reagents, epic necklaces, and has chance to drop a Primal Egg.",q=3,u=52,g={
 s(277208,95215,{b=1,f=7,loc=45,lvl=90,q=4,u=52}),
 i(95202,{b=1,f=51,lvl=90,q=4,u=52}),
@@ -26077,7 +26077,7 @@ i(99726,{b=1,c={4,6,8,11},cost={{"i",105868,1}},lvl=90,q=4,u=54})}})),
 n(72157,{r=1,u=54,g={
 r(6618,{itemID=5643,learnedAt=175,q=1,requireSkill=171,u=54}),
 r(6617,{itemID=5640,learnedAt=60,q=1,requireSkill=171,u=54})}})}}),
-d(115,{difficulties={7,1,2,3,4,5,6},u=54,g={
+d(118,{difficulties={7,1,2,3,4,5,6},u=54,g={
 e(852,{npcID=71543,u=54,g={
 crit(23651,{achID=8458,id=1,u=54})}}),
 e(849,{crs={71475,71479,71480},u=54,g={
@@ -26119,7 +26119,7 @@ title(239,{collectible=false,u=54}),
 crit(23906,{achID=8462,id=2,u=54})}}),
 e(869,{npcID=71865,u=54,g={
 crit(23664,{achID=8462,id=3,u=54})}})}}),
-d(116,{difficulties={1,2,3,4,5,6},u=54,g={
+d(119,{difficulties={1,2,3,4,5,6},u=54,g={
 e(852,{npcID=71543,u=54,g={
 ach(8536,{u=54,g={
 crit(23779,{achID=8454,id=1,u=54})}})}}),
@@ -26767,11 +26767,11 @@ s(284234,105633,{b=1,f=25,lvl=90,q=4,u=54}),
 s(284228,105625,{b=1,f=21,lvl=90,q=4,u=54}),
 s(284230,105627,{b=1,f=20,lvl=90,q=4,u=54}),
 i(105632,{b=1,f=53,lvl=90,q=4,u=54})}})}})}}),
-d(121,{difficulties={3,5},rwp=60002,u=54,g={
+d(124,{difficulties={3,5},rwp=60002,u=54,g={
 e(869,{npcID=71865,u=54,g={
 ach(8398,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=54 t.rwp=60002 end	end,u=54,g={
 mnt(148396,{b=1,itemID=104246,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=54 t.rwp=60002 end	end,q=4,u=54})}})}})}}),
-d(122,{difficulties={4,6},rwp=60002,u=54,g={
+d(125,{difficulties={4,6},rwp=60002,u=54,g={
 e(869,{npcID=71865,u=54,g={
 ach(8399,{OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=54 t.rwp=60002 end	end,u=54,g={
 mnt(148396,{b=1,itemID=104246,lvl=90,OnUpdate=function(t)if settings:GetUnobtainableFilter(60)then	t.u=2 t.rwp=nil else	t.u=54 t.rwp=60002 end	end,q=4,u=54})}})}})}}),

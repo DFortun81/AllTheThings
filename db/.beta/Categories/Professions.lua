@@ -2759,7 +2759,7 @@ ach(123,{requireSkill=185}),
 ach(122,{requireSkill=185}),
 ach(121,{requireSkill=185})}}),
 x(2,{requireSkill=185,g={
-ach(124,{awp=20001,requireSkill=185}),
+ach(124,{awp=20003,requireSkill=185}),
 ach(1801,{awp=30002,providers={{"i",34832}},requireSkill=185,g={
 crit(6762,{achID=1563,id=10})}}),
 ach(877,{awp=30002,providers={{"i",33924}},requireSkill=185,g={

@@ -18,9 +18,9 @@ title(94,{pvp=1,r=2,u=12}),
 title(95,{pvp=1,r=1,u=12})}}),
 ach(5363,{awp=40003,pvp=1,u=40,g={
 title(184,{pvp=1,u=40})}}),
-ach(230,{awp=20001,pvp=1,r=2,u=17,g={
+ach(230,{awp=20003,pvp=1,r=2,u=17,g={
 title(210,{awp=30002,pvp=1,u=17})}}),
-ach(1175,{awp=20001,pvp=1,r=1,u=17,g={
+ach(1175,{awp=20003,pvp=1,r=1,u=17,g={
 title(210,{awp=30002,pvp=1,u=17})}}),
 ach(5542,{awp=40003,pvp=1,rwp=70003}),
 ach(5541,{awp=40003,pvp=1,rwp=70003}),
