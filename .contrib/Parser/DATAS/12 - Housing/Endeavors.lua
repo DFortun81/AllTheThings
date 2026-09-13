@@ -522,7 +522,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				["sharedDescription"] = "Can only interact with the Souvenirs if your own House is in the Neighborhood where this Endeavor is active.",
 			}),
 			header(HEADERS.Achievement, 63605,
-			criteria_asset_276_sequence(308, {	-- Souvenir Seeker, Founder's Point
+			criteria_asset_276_sequence(368, {	-- Souvenir Seeker, Founder's Point
 				-- NOTE: This ties achCriteria to the coordinates. The Number next to the NPC Name is the number of the criterion. Automation works.
 				n(266674, {	-- Secret Souvenir (1)
 					["coord"] = { 52.7, 38.7, FOUNDERS_POINT },
@@ -732,7 +732,7 @@ root(ROOTS.Housing, n(ENDEAVOR, {
 				}),
 			})),
 			header(HEADERS.Achievement, 63441,
-			criteria_asset_276_sequence(368, {	-- Souvenir Seeker, Razorwind Shores
+			criteria_asset_276_sequence(308, {	-- Souvenir Seeker, Razorwind Shores
 				-- NOTE: This ties achCriteria to the coordinates. The Number next to the NPC Name is the number of the criterion. Automation works.
 				n(266613, {	-- Secret Souvenir (1)
 					["coord"] = { 54.2, 56.9, RAZORWIND_SHORES },
