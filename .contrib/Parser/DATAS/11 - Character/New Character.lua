@@ -667,44 +667,44 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 	cl(PALADIN, {
 		filter(MOUNTS, {
 			mount(453785, {	-- Earthen Ordinant's Ramolith (MOUNT!)
-				["description"] = "Received on reaching Level 10 as an Earthen Paladin."
+				["description"] = "Received on reaching Level 10 as an Earthen Paladin.",
 				["races"] = { EARTHEN_ALLIANCE, EARTHEN_HORDE },
 				["classes"] = { PALADIN },
 				["timeline"] = { ADDED_11_0_2 }
 			}),
 			mount(270564, {	-- Dawnforge Ram (MOUNT!)
-				["description"] = "Received on reaching Level 10 as a Dwarf Paladin."
+				["description"] = "Received on reaching Level 10 as a Dwarf Paladin.",
 				["races"] = { DWARF },
 				["classes"] = { PALADIN },
 				["timeline"] = { ADDED_8_0_1 }
 			}),
 			mount(73629, {	-- Exarch's Elekk (MOUNT!)
-				["description"] = "Received on reaching Level 10 as a Draenei Paladin."
+				["description"] = "Received on reaching Level 10 as a Draenei Paladin.",
 				["races"] = { DRAENEI },
 				["classes"] = { PALADIN },
 				["timeline"] = { ADDED_4_0_3 }
 			}),
 			mount(73630, {	-- Great Exarch's Elekk (MOUNT!)
-				["description"] = "Received on reaching Level 17 as a Draenei Paladin."
+				["description"] = "Received on reaching Level 17 as a Draenei Paladin.",
 				["races"] = { DRAENEI },
 				["classes"] = { PALADIN },
 				["timeline"] = { ADDED_4_0_3 }
 			}),
 			mount(69826, {	-- Great Sunwalker Kodo (MOUNT!)
-				["description"] = "Received on reaching Level 17 as a Tauren Paladin."
+				["description"] = "Received on reaching Level 17 as a Tauren Paladin.",
 				["races"] = { TAUREN },
 				["classes"] = { PALADIN },
 				["timeline"] = { ADDED_4_0_3 }
 			}),
 			mount(69820, {	-- Sunwalker Kodo (MOUNT!)
-				["description"] = "Received on reaching Level 10 as a Tauren Paladin."
+				["description"] = "Received on reaching Level 10 as a Tauren Paladin.",
 				["races"] = { TAUREN },
 				["classes"] = { PALADIN },
 				["timeline"] = { ADDED_4_0_3 }
 			}),
 			mount(34767, {	-- Thalassian Charger (MOUNT!)
 				-- #if AFTER 9.0.1
-				["description"] = "Received on reaching Level 17 as a Blood Elf Paladin."
+				["description"] = "Received on reaching Level 17 as a Blood Elf Paladin.",
 				["lvl"] = 17,
 				-- #elseif AFTER 3.2.0
 				["lvl"] = 40,
@@ -717,7 +717,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			mount(34769, {	-- Thalassian Warhorse (MOUNT!)
 				-- #if AFTER 9.0.1
-				["description"] = "Received on reaching Level 10 as a Blood Elf Paladin."
+				["description"] = "Received on reaching Level 10 as a Blood Elf Paladin.",
 				["lvl"] = 10,
 				-- #elseif AFTER 3.2.0
 				["lvl"] = 20,
@@ -730,7 +730,7 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 			}),
 			mount(13819, {	-- Warhorse (MOUNT!)
 				-- #if AFTER 9.0.1
-				["description"] = "Received on reaching Level 10 as a Human or Dwarf Paladin."
+				["description"] = "Received on reaching Level 10 as a Human or Dwarf Paladin.",
 				["lvl"] = 10,
 				-- #elseif AFTER 3.2.0
 				["lvl"] = 20,
@@ -741,17 +741,17 @@ root(ROOTS.Character, n(NEW_CHARACTER, {
 				["classes"] = { PALADIN },
 			}),
 			mount(290608, {	-- Crusader's Direhorn (MOUNT!)
-				["description"] = "Received on reaching Level 10 as a Zandalari Paladin."
+				["description"] = "Received on reaching Level 10 as a Zandalari Paladin.",
 				["timeline"] = { ADDED_8_1_5 },
 				["races"] = { ZANDALARI },
 			}),
 			mount(270562, {	-- Darkforge Ram (MOUNT!)
-				["description"] = "Received on reaching Level 10 as a Dark Iron Dwarf Paladin."
+				["description"] = "Received on reaching Level 10 as a Dark Iron Dwarf Paladin.",
 				["timeline"] = { ADDED_8_0_1 },
 				["races"] = { DARKIRON },
 			}),
 			mount(363613, {	-- Lightforged Ruinstrider (MOUNT!)
-				["description"] = "Received on reaching Level 10 as a Lightforged Draenei Paladin."
+				["description"] = "Received on reaching Level 10 as a Lightforged Draenei Paladin.",
 				["timeline"] = { ADDED_9_1_5 },
 				["races"] = { LIGHTFORGED },
 			}),
