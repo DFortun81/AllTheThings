@@ -121,9 +121,9 @@ app:CreateWindow("Future Unobtainables", {
 	end,
 	OnInit = function(self, handlers)
 		local options = {
-			app.CreateRawText("Exclude Non-Collectibles", {
+			app.CreateRawText(L.FUTURE_UNOBTAINABLE_EXCLUDE_NONCOLLECTIBLES, {
 				icon = 134941,
-				description = "Press this button to toggle excluding non-collectible items such as Thrown weapons and Relic items.",
+				description = L.FUTURE_UNOBTAINABLE_NONCOLLECTIBLE_DESC,
 				visible = true,
 				priority = 6,
 				SortPriority = -1.1,
@@ -139,9 +139,9 @@ app:CreateWindow("Future Unobtainables", {
 					return true;
 				end,
 			}),
-			app.CreateRawText("Maximum Patch", {
+			app.CreateRawText(L.FUTURE_UNOBTAINABLE_MAXIMUM_PATCH, {
 				icon = 134941,
-				description = "Press this button to change the maximum removed with patch value.\n\nChanging this value will filter out items that get removed after the given patch.",
+				description = L.FUTURE_UNOBTAINABLE_MAX_PATCH_DESC,
 				visible = true,
 				priority = 6,
 				SortPriority = -1,

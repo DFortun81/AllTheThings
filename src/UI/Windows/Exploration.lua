@@ -15,9 +15,9 @@ app:CreateWindow("Exploration", {
 			OnUpdate = function(t)
 				local g = app:BuildSearchResponseForField(app:GetDatabaseRoot().g, "explorationID");
 				if g and #g > 0 then
-					tinsert(g, 1, app.CreateRawText("Harvest Exploration", {	-- Harvest Exploration
+					tinsert(g, 1, app.CreateRawText(L.EXPLORATION_HARVEST, {	-- Harvest Exploration
 						icon = 132331,
-						description = "Click here to attempt to harvest and collect all exploration credit.\n\nNOTE: This will likely take a while, but may correct some exploration issues you may be having.",
+						description = L.EXPLORATION_HARVEST_DESC,
 						OnClick = function(row, button)
 							app.HarvestExploration();
 							return true;

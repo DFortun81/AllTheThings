@@ -185,9 +185,9 @@ app:CreateWindow("ItemFinder", {
 			});
 			local ClearButton =
 			{
-				text = "Clear Harvested Item Database",
+				text = L.ITEM_FINDER_CLEAR_DB,
 				icon = 133733,
-				description = "Click this to clear the harvested item database.",
+				description = L.ITEM_FINDER_CLEAR_DB_DESC,
 				SortPriority = 1.3,
 				OnClick = function()
 					self.HarvestedItemDatabase = {};
@@ -199,9 +199,9 @@ app:CreateWindow("ItemFinder", {
 			};
 			local StartButton =
 			{
-				text = "Start Search",
+				text = L.ITEM_FINDER_START,
 				icon = 133733,
-				description = "Click this to start the search.",
+				description = L.ITEM_FINDER_START_DESC,
 				SortPriority = 1.3,
 				OnClick = function()
 					local data = self.data;

@@ -129,7 +129,7 @@ app:CreateWindow("Import", {
 			{ id = "campsiteID", name = WARBAND_SCENES, icon = app.asset("Category_Campsites") },
 			{ id = "currencyID", name = CURRENCY, icon = app.asset("Interface_Vendor") },
 			{ id = "decorID", name = CATALOG_SHOP_TYPE_DECOR, icon = app.asset("Category_Housing") },
-			{ id = "explorationID", name = "Exploration", icon = app.asset("Category_Exploration") },
+			{ id = "explorationID", name = L.EXPLORATION, icon = app.asset("Category_Exploration") },
 			{ id = "factionID", name = L.FACTIONS, icon = app.asset("Category_Factions") },
 			{ id = "flightpathID", name = L.FLIGHT_PATHS, icon = app.asset("Category_FlightPaths") },
 			{ id = "followerID", name = GARRISON_FOLLOWERS, icon = app.asset("Category_Followers") },
@@ -186,7 +186,7 @@ app:CreateWindow("Import", {
 			end
 			wipe(self.data.g)
 
-			local resetButton = app.CreateRawText("Reset Import", {
+			local resetButton = app.CreateRawText(L.IMPORT_RESET, {
 				icon = app.asset("unknown"),
 				visible = true,
 				isButton = true,

@@ -103,7 +103,7 @@ local function UpdateMissingAchievements(self)
 						local achievement = (isGuildAch and app.CreateGuildAchievement or app.CreateAchievement)(achievementID);
 						self.data.achievements[i] = achievement;
 						achievement.parent = getAchievementCategory(self.data.categories, -1);-- achievement.parentCategoryID);
-						achievement.description = "@CRIEVE: This achievement has not been sourced yet.";
+						achievement.description = L.ACHIEVEMENTS_NO_SOURCE;
 						if not achievement.u or achievement.u ~= 1 then
 							tinsert(achievement.parent.g, achievement);
 						end
@@ -146,8 +146,8 @@ app:CreateWindow("Achievements", {
 			g = {},
 			achievements = {},
 			categories = {},
-			CheckForMissingButton = app.CreateRawText("Check for Missing Achievements", {
-				description = "Click this button to check for missing achievements.\n\nWARNING: This is going to be REALLY SLOW!!",
+			CheckForMissingButton = app.CreateRawText(L.ACHIEVEMENTS_CHECK_MISSING, {
+				description = L.ACHIEVEMENTS_MISSING_DESC,
 				icon = 132089,
 				OnClick = function(row, button)
 					-- Only run this once per session.
