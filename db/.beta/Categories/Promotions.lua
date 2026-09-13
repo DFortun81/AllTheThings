@@ -216,9 +216,9 @@ ach(18250,{awp=100107,providers={{"n",205467}},rwp=100205,u=2})}),
 h(-521,{u=3,g={
 x(1,{description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
 h(-45,{rwp=40006,u=2,g={
-q(8547,{awp=20001,maps={94},providers={{"i",20938}},races={10},u=3}),
+q(8547,{awp=20003,maps={94},providers={{"i",20938}},races={10},u=3}),
 q(12781,{awp=30002,c={6},lvl=8,maps={23},providers={{"i",39713}},u=3}),
-q(9278,{awp=20001,c={11},maps={97},providers={{"i",22888}},r=2,u=3}),
+q(9278,{awp=20003,c={11},maps={97},providers={{"i",22888}},r=2,u=3}),
 q(5841,{maps={27},providers={{"i",14647}},races={3,7},u=2}),
 q(5805,{maps={37},providers={{"i",14646}},races={1},u=2}),
 q(5842,{maps={57},providers={{"i",14648}},races={4},u=2}),
@@ -268,7 +268,7 @@ ach(6849,{providers={{"i",85870}},rwp=50407,u=2}),
 ach(6848,{providers={{"i",85871}},rwp=50407,u=2}),
 mnt(124659,{b=1,itemID=85870,lvl=10,rwp=50407,u=2}),
 p(671,{itemID=85871,npcID=63832,rwp=50407,spellID=124660,u=2,g={
-crit(34637,{achID=6848,id=3,u=2})}})}}),
+crit(34637,{achID=6848,awp=80300,id=3,u=3})}})}}),
 h(-527,{awp=110007,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Sha-Infused Heroic Pack.",u=3,g={
 p(4733,{itemID=235358,npcID=236783,spellID=1216564,u=3}),
@@ -292,7 +292,7 @@ ach(10320,{providers={{"i",128425}},rwp=70305,u=2}),
 ach(10321,{rwp=70305,u=2}),
 mnt(189998,{b=1,itemID=128425,lvl=10,rwp=70305,u=2}),
 p(1691,{itemID=128426,npcID=95841,rwp=70305,spellID=190020,u=2,g={
-crit(28787,{achID=10321,id=1,u=2})}})}}),
+crit(28787,{achID=10321,awp=90100,id=1,rwp=100107,u=2})}})}}),
 x(8,{awp=70305,description="These rewards were made available to anyone who purchased a Collector's Edition of BFA.\n\nThe rewards can be purchased from the in-game shop.",u=3,g={
 ach(12230,{providers={{"i",153540}},r=1,rwp=80307,u=2}),
 ach(12229,{providers={{"i",153539}},r=2,rwp=80307,u=2}),
@@ -300,7 +300,7 @@ ach(12232,{rwp=80307,u=2}),
 mnt(255696,{b=1,itemID=153540,lvl=10,r=1,rwp=80307,u=2}),
 mnt(255695,{b=1,itemID=153539,lvl=10,r=2,rwp=80307,u=2}),
 p(2143,{itemID=153541,npcID=129049,rwp=80307,spellID=255702,u=2,g={
-crit(38154,{achID=12232,id=1,u=2})}})}}),
+crit(38154,{achID=12232,awp=90100,id=1,rwp=100107,u=2})}})}}),
 x(9,{awp=80307,u=3,g={
 h(-522,{description="These rewards were made available to anyone who purchased Shadowlands Heroic Edition.",rwp=90205,u=2,g={
 ach(14283,{providers={{"s",307932}},u=2}),

@@ -3386,13 +3386,13 @@ n(9030,{
 s(4214,11665,{b=1,f=5,loc=44,lvl=20}),
 s(4213,11662,{b=1,f=4,loc=45,lvl=20}),
 s(4226,11728,{b=1,f=6,loc=46,lvl=20}),
-i(11824,{b=1,f=52,lvl=20})}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
-n(16059,{description="Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: Ring of Law.",providers={{"i",21986},{"o",181074}},rwp=40003,sourceQuests={9015},u=2,u_sqs=1,g={
+i(11824,{b=1,f=52,lvl=20})}),
+n(16059,{description="Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: Ring of Law.",providers={{"i",21986},{"o",181074}},rwp=40003,sourceQuests={9015},u=6,u_sqs=1,g={
 i(22047,{spellID=27739,u=6}),
 s(8779,22305,{b=1,c={5,8,9},f=4,loc=41,lvl=23,u=6}),
 s(8785,22317,{b=1,f=34,lvl=22,u=6}),
 s(8786,22318,{b=1,f=32,lvl=22,u=6}),
-s(8792,22330,{b=1,f=3,lvl=22,u=6})}}))}}),
+s(8792,22330,{b=1,f=3,lvl=22,u=6})}})}}),
 e(377,{npcID=9016,g={
 s(4253,11803,{b=1,f=24,lvl=20,spellID=248168}),
 s(4254,11805,{b=1,f=23,lvl=20}),
@@ -3949,12 +3949,12 @@ s(7266,18319,{b=1,f=5,loc=40,lvl=15}),
 s(7263,18313,{b=1,f=6,loc=40,lvl=15}),
 s(7256,18306,{b=1,f=4,loc=44,lvl=15}),
 i(18315,{b=1,f=52,lvl=15})}}),
-n(11491,{description="Talk to him for him to break down the door."}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
-n(16097,{description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",providers={{"i",22057}},qis={21984,22046},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
+n(11491,{description="Talk to him for him to break down the door."}),
+n(16097,{description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",providers={{"i",22057}},qis={21984,22046},rwp=40003,sourceQuests={8996},u=6,u_sqs=1,g={
 s(8784,22315,{b=1,f=23,lvl=23,u=6}),
 s(8783,22314,{b=1,f=29,lvl=23,u=6}),
 s(8778,22304,{b=1,c={5,8,9},f=4,loc=44,lvl=23,u=6}),
-s(8855,22472,{b=1,f=5,loc=47,lvl=23,u=6})}})),
+s(8855,22472,{b=1,f=5,loc=47,lvl=23,u=6})}}),
 e(405,{npcID=11492,g={
 i(18501,{b=1,description="Spawns under the vines near the last boss in Dire Maul East.",providers={{"o",179559}}}),
 s(7268,18321,{b=1,f=23,lvl=15}),
@@ -4117,7 +4117,7 @@ s(7301,18379,{b=1,f=6,loc=47,lvl=17}),
 i(18370,{b=1,f=53,lvl=17,spellID=454679}),
 i(24345,{c={11},f=200,lvl=25,rank=4,rwp=40001,spellID=31709,u=2}),
 crit(546,{achID=644,id=3})}}),
-n(14506,{cost={{"i",18663,1},{"i",18629,1},{"i",18670,1}},description="|cff3399ffSTEP 1:|r Warlock with (Dreadsteed of Xoroth) FOS\n|cff3399ffSTEP 2:|r Warlock buys Xorothian Glyphs,  Black Lodestone & J'eevee's Jar from Gorzeeki Wildeyes. (Burning Steppes - 8.2,35.8)\n|cff3399ffSTEP 3:|r Kill Immol'thar.\n|cff3399ffSTEP 4:|r Warlock uses J'eevee's Jar while standing on platform summoning Wheel of the Black March, Doomsday Candle, & Bell of Dethmoora.\n|cff3399ffSTEP 5:|r Kill stuff & use Black Lodestone to keep 3 artifacts active, this requires soul shards to do.\n|cff3399ffSTEP 6:|r Once creatures stop spawning, use Xorothian Glyphs to summon the dreadsteed.\n|cff3399ffSTEP 7:|r Kill Lord Hel'nurath & collect loot.",rwp=40003,sourceQuests={7631},u=2,g={
+n(14506,{cost={{"i",18663,1},{"i",18629,1},{"i",18670,1}},description="|cff3399ffSTEP 1:|r Warlock with (Dreadsteed of Xoroth) FOS\n|cff3399ffSTEP 2:|r Warlock buys Xorothian Glyphs,  Black Lodestone & J'eevee's Jar from Gorzeeki Wildeyes. (Burning Steppes - 8.2,35.8)\n|cff3399ffSTEP 3:|r Kill Immol'thar.\n|cff3399ffSTEP 4:|r Warlock uses J'eevee's Jar while standing on platform summoning Wheel of the Black March, Doomsday Candle, & Bell of Dethmoora.\n|cff3399ffSTEP 5:|r Kill stuff & use Black Lodestone to keep 3 artifacts active, this requires soul shards to do.\n|cff3399ffSTEP 6:|r Once creatures stop spawning, use Xorothian Glyphs to summon the dreadsteed.\n|cff3399ffSTEP 7:|r Kill Lord Hel'nurath & collect loot.",rwp=40003,sourceQuests={7631},u=6,g={
 s(7477,18757,{b=1,f=4,loc=41,lvl=24,u=6}),
 s(7475,18755,{b=1,f=31,lvl=24,u=6}),
 s(7476,18756,{b=1,f=8,lvl=24,u=6}),
@@ -4602,13 +4602,13 @@ s(4783,13175,{awp=100107,b=1,f=32,lvl=23}),
 i(13177,{b=1,f=51,lvl=23}),
 s(4784,13179,{b=1,f=6,loc=43,lvl=23}),
 s(6807,16676,{f=6,loc=44,lvl=23,rwp=40003,u=2}),
-s(8748,22231,{b=1,f=4,loc=47,lvl=23})}}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
-n(16080,{description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",providers={{"i",22057}},qis={21984,22046},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
+s(8748,22231,{b=1,f=4,loc=47,lvl=23})}}),
+n(16080,{description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",providers={{"i",22057}},qis={21984,22046},rwp=40003,sourceQuests={8996},u=6,u_sqs=1,g={
 s(8788,22322,{b=1,f=23,lvl=23,u=6}),
 s(8787,22319,{b=1,f=1,lvl=23,u=6}),
 s(8789,22325,{b=1,f=5,loc=45,lvl=23,u=6}),
 s(8780,22306,{b=1,c={5,8,9},f=4,loc=45,lvl=23,u=6}),
-i(22398,{b=1,rwp=50004,u=2})}})),
+i(22398,{b=1,rwp=50004,u=2})}}),
 n(9596,{coords={
 [250]={{49,55},{53,67}}},description="This is a Rare Creature and, as such, is not always present.",g={
 r(16994,{itemID=12838,requireSkill=164,skillID=2477}),
@@ -4751,8 +4751,8 @@ s(4612,12965,{b=1,f=4,loc=46,lvl=23,u=2}),
 s(4611,12964,{b=1,f=6,loc=46,lvl=23,u=2}),
 s(8781,22311,{b=1,c={5,8,9},f=4,loc=47,lvl=23,rwp=40003,u=2}),
 prof(393,{u=2,g={
-i(12731,{u=2})}})}}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
-n(16042,{description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",providers={{"i",22057}},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
+i(12731,{u=2})}})}}),
+n(16042,{description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",providers={{"i",22057}},rwp=40003,sourceQuests={8996},u=6,u_sqs=1,g={
 s(8796,22336,{b=1,f=8,lvl=23,u=6}),
 s(8795,22335,{b=1,f=28,lvl=23,u=6}),
 s(8776,22302,{b=1,c={5,8,9},f=4,loc=40,lvl=24,u=6}),
@@ -4760,7 +4760,7 @@ i(22340,{b=1,f=51,lvl=23,u=6}),
 s(8797,22337,{b=1,f=3,lvl=23,u=6}),
 s(8800,22343,{b=1,f=6,loc=44,lvl=23,u=6}),
 s(8799,22342,{b=1,f=4,loc=46,lvl=23,u=6}),
-i(22339,{b=1,f=52,lvl=23,u=6})}})),
+i(22339,{b=1,f=52,lvl=23,u=6})}}),
 n(10363,{rwp=60002,u=2,g={
 ach(1307,{u=2}),
 i(16663,{rwp=40003,u=2}),
@@ -5905,13 +5905,13 @@ s(7435,18693,{b=1,f=4,loc=44,lvl=17,modID=1}),
 s(5348,14340,{b=1,f=4,loc=42,lvl=17,modID=1}),
 s(5437,14502,{b=1,f=5,loc=45,lvl=17,modID=1}),
 s(5439,14522,{b=1,f=6,loc=46,lvl=17,modID=1}),
-s(7436,18694,{b=1,f=6,loc=47,lvl=17,modID=1})}}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
-n(16118,{description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Ras Frostwhisper's room.",providers={{"i",22057}},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
+s(7436,18694,{b=1,f=6,loc=47,lvl=17,modID=1})}}),
+n(16118,{description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Ras Frostwhisper's room.",providers={{"i",22057}},rwp=40003,sourceQuests={8996},u=6,u_sqs=1,g={
 s(8793,22332,{awp=100105,b=1,f=25,lvl=17,modID=1,u=6}),
 s(8794,22333,{awp=100105,b=1,f=24,lvl=17,modID=1,u=6}),
 s(8777,22303,{b=1,c={5,8,9},f=4,loc=46,lvl=24,modID=1,u=2}),
 i(22326,{awp=100105,b=1,f=52,lvl=17,modID=1,u=6}),
-i(22331,{awp=100105,b=1,f=52,lvl=17,modID=1,u=6})}})),
+i(22331,{awp=100105,b=1,f=52,lvl=17,modID=1,u=6})}}),
 h(-19,{awp=100105,crs={10502,10504,10505,10507,10901,11261},description="The following items can drop from any of the mini-bosses in the crypt before fighting Darkmaster Gandling. The bosses other than Lady Illucia Barov have an item or two exclusive to their own drop tables.",g={
 s(7427,18680,{b=1,f=32,lvl=17,modID=1}),
 s(7430,18683,{b=1,f=23,lvl=17,modID=1}),
@@ -6705,13 +6705,13 @@ i(12103,{b=1,f=51,lvl=18}),
 s(7453,18720,{b=1,f=4,loc=41,lvl=18}),
 s(4847,13358,{b=1,f=5,loc=41,lvl=18}),
 s(4852,13369,{b=1,f=4,loc=47,lvl=18}),
-s(6856,16725,{b=1,f=7,loc=47,lvl=23,rwp=40003,u=2})}}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
-n(16102,{awp=11101,crs={16101},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Balnazzar's room.",providers={{"i",22057},{"o",181083}},qis={21984,22046},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
-s(8791,22329,{b=1,f=1,lvl=24,u=2}),
-i(22327,{b=1,f=51,lvl=24,u=2}),
-s(8775,22301,{b=1,c={5,8,9},f=4,loc=42,lvl=24,u=2}),
-s(8790,22328,{b=1,f=7,loc=46,lvl=24,u=2}),
-i(22334,{b=1,f=52,lvl=17,u=2})}})),
+s(6856,16725,{b=1,f=7,loc=47,lvl=23,rwp=40003,u=2})}}),
+n(16102,{awp=11101,crs={16101},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Balnazzar's room.",providers={{"i",22057},{"o",181083}},qis={21984,22046},rwp=40003,sourceQuests={8996},u=6,u_sqs=1,g={
+s(8791,22329,{b=1,f=1,lvl=24,u=6}),
+i(22327,{b=1,f=51,lvl=24,u=6}),
+s(8775,22301,{b=1,c={5,8,9},f=4,loc=42,lvl=24,u=6}),
+s(8790,22328,{b=1,f=7,loc=46,lvl=24,u=6}),
+i(22334,{b=1,f=52,lvl=17,u=6})}}),
 n(16387,{description="Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",rwp=30002,u=2,g={
 s(8942,22736,{b=1,collectible=false,f=25,spellID=28347,u=2})}}),
 d(24,{sym={{"sub","tw_instance",236}}})}}),
@@ -6899,7 +6899,7 @@ s(26227,53561,{b=1,f=5,loc=42,u=1}),
 s(8764,22272,{b=1,f=5,loc=42,u=2}),
 s(26228,53562,{b=1,f=5,loc=42,u=1}),
 s(8766,22274,{b=1,f=5,loc=42,u=2})}}),
-q(10593,{awp=20001,c={2},coords={
+q(10593,{awp=20003,c={2},coords={
 [90]={{57.8,92}}},qgs={10181},qis={22444},r=1,rwp=40003,sourceQuests={10592},u=2,g={
 i(30696,{b=1,f=53,spellID=37360,u=2})}}),
 q(8257,{c={5},coords={
@@ -7656,7 +7656,7 @@ n(17518,{description="This vendor is located in the Guardian's Library.",g={
 r(32867,{b=1,itemID=25903,requireSkill=755,skillID=2523}),
 r(32866,{b=1,itemID=25902,requireSkill=755,skillID=2523}),
 i(22535,{description="This grey item is now needed for the second half of the secret involving the battle pet Baa'l.",f=50}),
-r(27920,{awp=20001,requireSkill=333,rwp=60002,u=2})}})}),
+r(27920,{requireSkill=333,rwp=60002,u=2})}})}),
 h(-63,{
 r(27954,{b=1,crs={16472},itemID=22545,requireSkill=333,skillID=2493}),
 r(26780,{b=1,crs={16406},itemID=21903,requireSkill=197,skillID=2539}),
@@ -16038,7 +16038,7 @@ s(24726,50449,{f=4,loc=41,lvl=30}),
 i(50452,{f=51,lvl=30})}),
 h(-19,{crs={36597,36612,36626,36627,36678,36789,36853,36855,36939,36948,37813,37955,37970},g={
 i(49908,{description="Can drop from all bosses in Icecrown Citadel except in 10 player raid size on Normal difficulty."})}}),
-d(116,{difficulties={1,2,3,4,5,6},g={
+d(119,{difficulties={1,2,3,4,5,6},g={
 h(-368,{
 e(1624,{npcID=36612,g={
 p(1963,{awp=70100,b=1,itemID=142094,npcID=115146,spellID=229101,g={
@@ -19792,7 +19792,7 @@ s(31867,63538,{f=34,lvl=32}),
 s(35132,68601,{f=20,lvl=32}),
 s(29684,59460,{f=27,lvl=32}),
 i(59461,{f=53,lvl=32,spellID=91836})}),
-d(116,{difficulties={1,2,3,4,5,6},g={
+d(119,{difficulties={1,2,3,4,5,6},g={
 e(170,{npcID=41570,g={
 ach(5306,{
 crit(15265,{achID=4853,id=14})}),
@@ -20036,7 +20036,7 @@ s(29972,60201,{f=6,loc=46,lvl=32}),
 s(29723,59521,{f=25,lvl=32}),
 s(29973,60202,{f=5,loc=40,lvl=32}),
 i(59520,{f=53,lvl=32,spellID=92114})}),
-d(116,{difficulties={1,2,3,4,5,6},g={
+d(119,{difficulties={1,2,3,4,5,6},g={
 e(156,{npcID=44600,g={
 ach(5300,{
 crit(15271,{achID=4853,id=20})}),
@@ -20213,7 +20213,7 @@ h(-12,{
 ach(4851,{
 crit(16060,{achID=5506,id=12})}),
 gach(4987)}),
-d(116,{difficulties={1,2,3,4,5,6},g={
+d(119,{difficulties={1,2,3,4,5,6},g={
 e(154,{npcID=45871,g={
 ach(5304,{
 crit(15276,{achID=4853,id=24})}),
@@ -20427,7 +20427,7 @@ s(36824,71640,{f=5,loc=45,lvl=32}),
 s(36615,71360,{f=28,lvl=32}),
 i(68915,{f=53,lvl=32,spellID=96880}),
 i(71367,{f=52,lvl=32})}),
-d(111,{difficulties={14,15},g={
+d(114,{difficulties={14,15},g={
 h(-19,{
 i(71141,{b=1,crs={52409,52498,52530,52558,52571,53494,53691}}),
 i(69815,{b=1,crs={52409,52498,52530,52558,52571,53494,53691}})}),
@@ -20833,7 +20833,7 @@ i(71809)}}),
 i(78891,{b=1,cost={{"c",615,1}},spellID=109947})}),
 n(188112,{awp=90205,g={
 i(191734,{b=1,f=55,spellID=371050})}})}),
-d(115,{difficulties={7,1,2,3,4,5,6},g={
+d(118,{difficulties={7,1,2,3,4,5,6},g={
 e(311,{npcID=55265,g={
 crit(18445,{achID=6106,id=1})}}),
 e(324,{npcID=55308,g={
@@ -20975,7 +20975,7 @@ crit(37684,{achID=12079,id=15})}}),
 cq(38066,{awp=60100,b=1,itemID=122198,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollItem,spellID=181280,g={
 crit(27740,{achID=10015,id=4,r=2}),
 crit(27740,{achID=10016,id=4,r=1})}})}})}})}}),
-d(116,{difficulties={1,2,3,4,5,6},g={
+d(119,{difficulties={1,2,3,4,5,6},g={
 h(-19,{crs={55265,55294,55308,55312,55689,56427},g={
 i(71998,{description="Drops commonly from Dragon Soul bosses."}),
 i(77952,{b=1,c={4},spellID=109954,g={
@@ -23768,7 +23768,7 @@ h(-12,{
 ach(6458),
 ach(6844),
 gach(6668)}),
-d(115,{coords={
+d(118,{coords={
 [390]={{83,30.6}}},crs={80633},difficulties={7,1,2,3,4,5,6},g={
 h(-63,{
 r(124638,{itemID=86238,requireSkill=165,skillID=2528}),
@@ -23932,7 +23932,7 @@ i(86805,{b=1,f=53,lvl=35,spellID=126590}),
 s(44689,86807,{b=1,f=7,loc=41,lvl=35}),
 s(44688,86806,{b=1,f=23,lvl=35}),
 i(86810,{b=1,f=51,lvl=35})}})}})}}),
-d(116,{difficulties={1,2,3,4,5,6},g={
+d(119,{difficulties={1,2,3,4,5,6},g={
 h(-12,{
 ach(7933)}),
 h(-63,{
@@ -24413,7 +24413,7 @@ s(44792,86930,{b=1,c={11},cost={{"i",89252,1}},f=5,loc=46,lvl=35}),
 s(44800,86938,{b=1,c={11},cost={{"i",89249,1}},f=5,loc=42,lvl=35}),
 s(44801,86939,{b=1,c={11},cost={{"i",89255,1}},f=5,loc=44,lvl=35}),
 s(44803,86941,{b=1,c={11},cost={{"i",89252,1}},f=5,loc=46,lvl=35})})}})}),
-d(115,{difficulties={7,1,2,3,4,5,6},g={
+d(118,{difficulties={7,1,2,3,4,5,6},g={
 h(-63,{
 r(124638,{itemID=86238,requireSkill=165,skillID=2528}),
 r(124643,{itemID=86272,requireSkill=165,skillID=2528}),
@@ -24540,7 +24540,7 @@ s(44737,86865,{b=1,f=23,lvl=35,spellID=132602}),
 s(44739,86867,{b=1,f=4,loc=46,lvl=35}),
 s(46690,89963,{b=1,f=7,loc=46,lvl=35}),
 s(46688,89961,{b=1,f=5,loc=41,lvl=35})}})}})}}),
-d(116,{difficulties={1,2,3,4,5,6},g={
+d(119,{difficulties={1,2,3,4,5,6},g={
 h(-63,{
 s(44329,86192,{f=4,loc=43,lvl=35}),
 s(44323,86186,{f=4,loc=43,lvl=35}),
@@ -24935,7 +24935,7 @@ s(44791,86929,{b=1,c={11},cost={{"i",89258,1}},f=5,loc=40,lvl=35}),
 s(44794,86932,{b=1,c={11},cost={{"i",89261,1}},f=5,loc=41,lvl=35}),
 s(44802,86940,{b=1,c={11},cost={{"i",89258,1}},f=5,loc=40,lvl=35}),
 s(44804,86942,{b=1,c={11},cost={{"i",89261,1}},f=5,loc=41,lvl=35})})}})}),
-d(115,{coords={
+d(118,{coords={
 [390]={{83,30.6}}},crs={80633},difficulties={7,1,2,3,4,5,6},g={
 h(-63,{
 r(124638,{itemID=86238,requireSkill=165,skillID=2528}),
@@ -25051,7 +25051,7 @@ s(46708,89984,{b=1,f=4,loc=42,lvl=35}),
 s(46710,89986,{b=1,f=6,loc=45,lvl=35}),
 s(44768,86905,{b=1,f=22,lvl=35}),
 s(46709,89985,{b=1,f=5,loc=42,lvl=35})}})}})}}),
-d(116,{difficulties={1,2,3,4,5,6},g={
+d(119,{difficulties={1,2,3,4,5,6},g={
 e(683,{crs={60583,60585,60586},g={
 ach(6717,{
 crit(19624,{achID=6717,providers={{"n",60583}}}),
@@ -25656,7 +25656,7 @@ s(50973,96598,{b=1,c={11},cost={{"i",96699,1}},f=5,loc=41,lvl=35}),
 s(50969,96594,{b=1,c={11},cost={{"i",96566,1}},f=5,loc=42,lvl=35}),
 s(50970,96595,{b=1,c={11},cost={{"i",96599,1}},f=5,loc=44,lvl=35}),
 s(50972,96597,{b=1,c={11},cost={{"i",96631,1}},f=5,loc=46,lvl=35})})}})}),
-d(115,{coords={
+d(118,{coords={
 [390]={{83,30.6}}},crs={80633},difficulties={7,1,2,3,4,5,6},g={
 h(-19,{
 i(94593,{b=1,rwp=60002,u=2}),
@@ -25977,7 +25977,7 @@ s(50315,95815,{b=1,f=23,lvl=35,modID=1}),
 s(50312,95810,{b=1,f=8,lvl=35,modID=1}),
 i(95814,{b=1,f=53,lvl=35,modID=1,spellID=138964}),
 s(50311,95809,{b=1,f=22,lvl=35,modID=1})}})}})}}),
-d(116,{difficulties={1,2,3,4,5,6},g={
+d(119,{difficulties={1,2,3,4,5,6},g={
 i(97153,{b=1,description="Awarded from completing the Weekly Raid Quest.\n\nThis bag contains gold, flasks, reagents, epic necklaces, and has chance to drop a Primal Egg.",g={
 s(49957,95215,{b=1,f=7,loc=45,lvl=35}),
 i(95202,{b=1,f=51,lvl=35}),
@@ -27784,7 +27784,7 @@ i(99726,{b=2,c={4,6,8,11},cost={{"i",105868,1}},lvl=35,spellID=238232})}})),
 n(72157,{r=1,g={
 r(6618,{itemID=5643,requireSkill=171,skillID=2485}),
 r(6617,{itemID=5640,requireSkill=171,skillID=2485})}})}),
-d(109,{difficulties={17,14,15,16},g={
+d(112,{difficulties={17,14,15,16},g={
 e(852,{npcID=71543,g={
 crit(23651,{achID=8458,id=1})}}),
 e(849,{crs={71475,71479,71480},g={
@@ -28398,7 +28398,7 @@ s(61957,112941,{b=1,f=5,loc=45,lvl=35,modID=4}),
 s(61936,112933,{b=1,f=7,loc=46,lvl=35,modID=4}),
 i(112938,{b=1,f=53,lvl=35,modID=4,spellID=146183}),
 i(112924,{b=1,f=53,lvl=35,modID=4,spellID=146395})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 h(-63,{awp=60002,g={
 s(62185,113224,{b=1,f=3,lvl=35}),
 s(62200,113231,{b=1,f=3,lvl=35}),
@@ -29055,17 +29055,17 @@ s(61956,112941,{b=1,f=5,loc=45,lvl=35,modID=3}),
 s(61935,112933,{b=1,f=7,loc=46,lvl=35,modID=3}),
 i(112938,{b=1,f=53,lvl=35,modID=3,spellID=146183}),
 i(112924,{b=1,f=53,lvl=35,modID=3,spellID=146395})}})}}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(869,{npcID=71865,g={
 ach(8679,{r=2,g={
 title(211,{r=2})}}),
 ach(8680,{r=1,g={
 title(212,{r=1})}})}})}}),
-d(121,{difficulties={3,5},rwp=60002,u=2,g={
+d(124,{difficulties={3,5},rwp=60002,u=2,g={
 e(869,{npcID=71865,u=2,g={
 ach(8398,{u=2,g={
 mnt(148396,{b=1,itemID=104246,lvl=10,u=2})}})}})}}),
-d(122,{difficulties={4,6},rwp=60002,u=2,g={
+d(125,{difficulties={4,6},rwp=60002,u=2,g={
 e(869,{npcID=71865,u=2,g={
 ach(8399,{u=2,g={
 mnt(148396,{b=1,itemID=104246,lvl=10,u=2})}})}})}}),
@@ -31801,7 +31801,7 @@ ach(8986),
 ach(8987),
 ach(8988),
 gach(9416)}),
-d(109,{crs={94870},difficulties={17,14,15,16},g={
+d(112,{crs={94870},difficulties={17,14,15,16},g={
 e(1128,{npcID=78714,g={
 ill(5331,{awp=70003,b=1,itemID=138807,lvl=35,questID=42908}),
 crit(25010,{achID=8986})}}),
@@ -31888,7 +31888,7 @@ s(65238,116372,{b=1,f=28,lvl=40,modID=4}),
 s(65241,116373,{b=1,f=8,lvl=40,modID=4}),
 i(116280,{b=1,f=52,lvl=40,modID=4}),
 s(66896,116206,{b=1,f=5,loc=46,lvl=40,modID=4})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(1128,{npcID=78714,g={
 ach(8948,{crs={88123},g={
 crit(24658,{achID=8985,id=1})}})}}),
@@ -32129,7 +32129,7 @@ s(62642,113850,{b=1,f=4,loc=42,lvl=40,modID=5}),
 i(113860,{b=1,f=52,lvl=40,modID=5}),
 s(62651,113857,{b=1,f=28,lvl=40,modID=5}),
 s(62646,113855,{b=1,f=7,loc=41,lvl=40,modID=5})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(1197,{npcID=77428,g={
 ach(9441,{rwp=60200,u=2})}})}}),
 d(16,{
@@ -32276,7 +32276,7 @@ gach(9417)}),
 h(-19,{crs={76806,76814,76865,76877,76906,76973,76974,77182,77231,77325,77477,77557,77692},g={
 i(115510,{b=1,spellID=170470,u=2,g={
 i(115509,{b=1,u=2})}})}}),
-d(109,{crs={94870},difficulties={17,14,15,16},g={
+d(112,{crs={94870},difficulties={17,14,15,16},g={
 e(1154,{npcID=76806,g={
 i(115479,{u=2})}}),
 e(1123,{npcID=76814,g={
@@ -32443,7 +32443,7 @@ cq(38068,{awp=60100,b=1,itemID=122200,lvl=10,OnTooltip=_.OnTooltipDB.MusicRollIt
 crit(27742,{achID=10015,id=6,r=2}),
 crit(27742,{achID=10016,id=6,r=1})}}),
 crit(24982,{achID=8992})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(1202,{npcID=77182,g={
 ach(8979,{
 crit(24669,{achID=8985,id=9})})}}),
@@ -33362,7 +33362,7 @@ ach(10020),
 ach(10019)}),
 h(-19,{crs={89890,90199,90269,90284,90316,90378,90435,91331,91349,92146,92330,93068,95068},g={
 i(127115,{b=1,u=2})}}),
-d(109,{crs={94870},difficulties={17,14,15,16},g={
+d(112,{crs={94870},difficulties={17,14,15,16},g={
 e(1425,{npcID=90284}),
 e(1396,{npcID=90378}),
 e(1433,{npcID=90316}),
@@ -33571,7 +33571,7 @@ i(128151,{b=1,f=53,lvl=40,modID=4}),
 i(128150,{b=1,f=53,lvl=40,modID=4}),
 i(128153,{b=1,f=53,lvl=40,modID=4}),
 crit(28066,{achID=10019,providers={{"n",91331}}})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(1426,{npcID=95068,g={
 ach(10026,{crs={90018},g={
 crit(28495,{achID=10149,id=1})}}),
@@ -36270,7 +36270,7 @@ ach(42029,{awp=110107}),
 gach(10866)}),
 flt(101,{pb=1,g={
 p(1722,{description="Once you defeat Xavius these will spawn in the area after him.",npcID=97206,pb=1})}}),
-d(109,{coords={
+d(112,{coords={
 [627]={{63.7,55}}},crs={111246},difficulties={17,14,15,16},g={
 e(1703,{npcID=102672,g={
 r(192809,{b=1,itemID=139636,lvl=10,requireSkill=773,skillID=2508}),
@@ -36435,7 +36435,7 @@ s(81281,139232,{b=1,f=7,loc=41,lvl=45,modID=4}),
 i(139268,{b=1,f=54,lvl=45,modID=4}),
 s(81181,139203,{b=1,f=5,loc=46,lvl=45,modID=4}),
 i(139238,{b=1,f=52,lvl=45,modID=4})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(1703,{npcID=102672,g={
 ach(10555,{crs={105097},g={
 crit(32351,{achID=11180,id=1})}})}}),
@@ -36584,7 +36584,7 @@ s(80532,139232,{b=1,f=7,loc=41,lvl=45,modID=3}),
 i(139268,{b=1,f=54,lvl=45,modID=3}),
 s(80504,139203,{b=1,f=5,loc=46,lvl=45,modID=3}),
 i(139238,{b=1,f=52,lvl=45,modID=3})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(1726,{npcID=103769,g={
 ach(11194,{rwp=70100,u=2})}})}}),
 d(15,{
@@ -36931,7 +36931,7 @@ s(294638,247566,{b=1,f=4,loc=42,lvl={45}}),
 s(83969,143338,{f=4,loc=47,lvl={45}}),
 s(83990,143359,{f=4,loc=45,lvl={45}}),
 s(294654,247570,{b=1,f=4,loc=47,lvl={45}})}})}})}),
-d(109,{coords={
+d(112,{coords={
 [627]={{63.7,55}}},crs={111246},difficulties={17,14,15,16},g={
 h(-19,{crs={114263,114323,114344,114537},g={
 en(143517,{b=1,c={3,7,13},lvl=45,questID=45233,spellID=231681,tmogSetID=182,g={
@@ -37069,7 +37069,7 @@ s(83127,142418,{b=1,f=5,loc=46,lvl=45,modID=4}),
 i(142517,{b=1,f=54,lvl=45,modID=4}),
 i(142513,{b=1,f=54,lvl=45,modID=4}),
 s(83111,142414,{b=1,f=4,loc=47,lvl=45,modID=4})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(1819,{npcID=114263,g={
 ach(11337)}}),
 e(1830,{crs={114323,114344},g={
@@ -37124,7 +37124,7 @@ s(83124,142418,{b=1,f=5,loc=46,lvl=45,modID=3}),
 i(142517,{b=1,f=54,lvl=45,modID=3}),
 i(142513,{b=1,f=54,lvl=45,modID=3}),
 s(83108,142414,{b=1,f=4,loc=47,lvl=45,modID=3})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 h(-19,{crs={114263,114323,114344,114537},g={
 en(143507,{b=1,c={5,8,9},crs={116245},lvl=45,questID=45223,spellID=231671,tmogSetID=172,g={
 s(84130,143362,{f=4,loc=43,lvl={45},modID=5}),
@@ -37407,7 +37407,7 @@ q(45420,{lvl=45,qgs={106522},sourceQuests={45417},g={
 sp(233377),
 crit(36177,{achID=10877,id=3}),
 crit(106027,{achID=42593,awp=110205,e=447,id=3,rwp=110207,u=2})}})}),
-d(109,{coords={
+d(112,{coords={
 [627]={{63.7,55}}},crs={111246},difficulties={17,14,15,16},g={
 e(1706,{npcID=102263,g={
 r(192815,{b=1,itemID=139642,lvl=10,requireSkill=773,skillID=2508}),
@@ -37674,7 +37674,7 @@ i(140820,{b=1,f=54,lvl=45,modID=4}),
 i(140897,{b=1,f=52,lvl=45,modID=4}),
 i(140823,{b=1,f=54,lvl=45,modID=4}),
 i(140809,{b=1,f=53,lvl=45,modID=4,spellID=225142})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 h(-19,{crs={101002,102263,103685,103758,104154,104288,104415,104528,104881,106643,109038,109040,109041,111022},g={
 i(140199,{b=1}),
 i(140200,{b=1,g={
@@ -37946,7 +37946,7 @@ i(140820,{b=1,f=54,lvl=45,modID=3}),
 i(140897,{b=1,f=52,lvl=45,modID=3}),
 i(140823,{b=1,f=54,lvl=45,modID=3}),
 i(140809,{b=1,f=53,lvl=45,modID=3,spellID=225142})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(1737,{crs={104154,111022},g={
 ach(11195,{rwp=70200,u=2})}})}}),
 d(15,{
@@ -38460,7 +38460,7 @@ q(46507,{isWorldQuest=1})}),
 h(-55,{awp=100205,g={
 n(118930,{
 cq(79374,{b=1,c={9},description="Drops from the last Mob before Kil'Jaeden.\nQueue for Deceiver's Fall in Dalaran for very quick access to him.",itemID=212779,lvl=11,spellID=433077})})}}),
-d(109,{coords={
+d(112,{coords={
 [627]={{63.7,55}}},crs={111246},difficulties={17,14,15,16},g={
 h(-19,{crs={115767,115844,116407,116689,116691,116939,117264,117269,118289,118374,118460,118462,118518,118523,119072},g={
 r(238577,{b=1,itemID=146411,lvl=10,requireSkill=773,skillID=2508}),
@@ -38715,7 +38715,7 @@ i(147019,{b=1,f=53,lvl=45,modID=4,spellID=243941}),
 i(147079,{b=1,f=54,lvl=45,modID=4}),
 s(86711,147048,{b=1,f=6,loc=44,lvl=45,modID=4}),
 s(86527,147347,{b=1,f=5,loc=45,lvl=45,modID=4})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(1862,{npcID=115844,g={
 ach(11724,{
 crit(36460,{achID=11763,id=1})})}}),
@@ -38965,7 +38965,7 @@ i(147019,{b=1,f=53,lvl=45,modID=3,spellID=243941}),
 i(147079,{b=1,f=54,lvl=45,modID=3}),
 s(86712,147048,{b=1,f=6,loc=44,lvl=45,modID=3}),
 s(86528,147347,{b=1,f=5,loc=45,lvl=45,modID=3})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(1898,{npcID=117269,g={
 ach(11874,{rwp=70300,u=2})}})}}),
 d(15,{
@@ -39445,7 +39445,7 @@ h(-45,{
 q(48954,{awp=110205,lvl=45,providers={{"i",152900}},rwp=110207,u=2,g={
 mnt(253639,{b=1,itemID=152901,u=2})}}),
 q(49077,{lvl=45,qgs={129429},qis={153555}})}),
-d(109,{coords={
+d(112,{coords={
 [627]={{63.7,55}}},crs={111246},difficulties={17,14,15,16},g={
 h(-19,{crs={121975,122104,122135,122333,122366,122367,122369,122450,122467,122468,122469,122477,122500,122578,124158,124445,124828},g={
 r(247614,{b=1,itemID=151654,lvl=10,requireSkill=773,skillID=2508}),
@@ -39748,7 +39748,7 @@ i(155854,{b=1,f=54,lvl=45,modID=4}),
 i(151972,{b=1,f=52,lvl=45,modID=4}),
 s(89801,151982,{b=1,f=5,loc=42,lvl=45,modID=4}),
 i(155852,{b=1,f=54,lvl=45,modID=4})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(1992,{npcID=122450,g={
 ach(11930,{crs={124436},g={
 crit(37229,{achID=11987,id=3})}}),
@@ -40048,7 +40048,7 @@ i(155854,{b=1,f=54,lvl=45,modID=3}),
 i(151972,{b=1,f=52,lvl=45,modID=3}),
 s(89802,151982,{b=1,f=5,loc=42,lvl=45,modID=3}),
 i(155852,{b=1,f=54,lvl=45,modID=3})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(2031,{npcID=124828,g={
 ach(12110,{rwp=80001,u=2}),
 i(152900,{b=1,lvl=45,rwp=80001,u=2})}})}}),
@@ -43646,7 +43646,7 @@ q(53577,{icon=2000859,sourceQuests={53576}}),
 q(53578,{icon=2000859,sourceQuests={53577}}),
 q(53579,{icon=2000859,sourceQuests={53578}}),
 q(53580,{icon=2000859,sourceQuests={53579}})}})}),
-d(109,{coords={
+d(112,{coords={
 [1161]={{74,13.4}},
 [1163]={{68,33.6}}},crs={177193,177208},difficulties={17,14,15,16},g={
 h(-19,{crs={132998,133298,133492,134442,134445,134503,134546,135452,135824,136429,137022,137023,137119,138529,138530,138959,138967},g={
@@ -43782,7 +43782,7 @@ s(98867,160727,{b=1,f=4,loc=45,lvl=50,modID=4}),
 s(98997,160733,{b=1,f=7,loc=47,lvl=50,modID=4}),
 s(98915,160729,{b=1,f=5,loc=47,lvl=50,modID=4}),
 i(160654,{b=1,f=53,lvl=50,modID=4,spellID=278161})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(2168,{crs={137119,138530,138959},g={
 ach(12937,{
 crit(41317,{achID=12806,id=2})})}}),
@@ -43912,7 +43912,7 @@ s(96724,160727,{b=1,f=4,loc=45,lvl=50,modID=3}),
 s(96733,160733,{b=1,f=7,loc=47,lvl=50,modID=3}),
 s(96726,160729,{b=1,f=5,loc=47,lvl=50,modID=3}),
 i(160654,{b=1,f=53,lvl=50,modID=3,spellID=278161})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(2147,{crs={132998,138529},g={
 ach(12536,{rwp=80100,u=2})}})}}),
 d(15,{
@@ -44168,7 +44168,7 @@ i(165703,{b=1}),
 r(285639,{b=1,itemID=165693,lvl=10,requireSkill=773,skillID=2507}),
 r(285640,{b=1,itemID=165694,lvl=10,requireSkill=773,skillID=2507}),
 r(285641,{b=1,itemID=165695,lvl=10,requireSkill=773,skillID=2507})}),
-d(109,{coords={
+d(112,{coords={
 [1161]={{74,13.4}},
 [1163]={{68,33.6}}},crs={177193,177208},difficulties={17,14,15,16},g={
 e(2330,{crs={144747,144767,144941,144963},g={
@@ -44339,7 +44339,7 @@ s(101829,165527,{b=1,f=5,loc=47,lvl=50,modID=4}),
 i(165566,{b=1,f=52,lvl=50,modID=4}),
 i(165570,{b=1,f=53,lvl=50,modID=4,spellID=289525}),
 i(165576,{b=1,f=53,lvl=50,modID=4,spellID=289885})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(2344,{crs={144680,144683},g={
 ach(13316,{
 crit(43949,{achID=13315,id=1})})}}),
@@ -44796,7 +44796,7 @@ h(-12,{
 ach(13414,{
 crit(70194,{achID=40953,awp=110007,id=3})}),
 gach(13420)}),
-d(109,{coords={
+d(112,{coords={
 [1161]={{74,13.4}},
 [1163]={{68,33.6}}},crs={177193,177208},difficulties={17,14,15,16},g={
 h(-19,{crs={144754,144755,145371},g={
@@ -44832,7 +44832,7 @@ i(167866,{b=1,f=53,lvl=50,modID=4,spellID=295501}),
 s(104163,167835,{b=1,f=4,loc=46,lvl=50,modID=4,spellID=295174}),
 s(104159,167834,{b=1,f=5,loc=47,lvl=50,modID=4,spellID=295277}),
 i(167865,{b=1,f=53,lvl=50,modID=4,spellID=295271})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(2328,{crs={144754,144755},g={
 ach(13501)}}),
 e(2332,{npcID=145371,g={
@@ -44857,7 +44857,7 @@ i(167866,{b=1,f=53,lvl=50,modID=3,spellID=295501}),
 s(104162,167835,{b=1,f=4,loc=46,lvl=50,modID=3,spellID=295174}),
 s(104158,167834,{b=1,f=5,loc=47,lvl=50,modID=3,spellID=295277}),
 i(167865,{b=1,f=53,lvl=50,modID=3,spellID=295271})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(2332,{npcID=145371,g={
 ach(13418,{rwp=80200,u=2})}})}}),
 d(15,{
@@ -44939,7 +44939,7 @@ flt(101,{pb=1,g={
 p(2657,{npcID=154718,pb=1}),
 p(2658,{npcID=154720,pb=1}),
 p(2659,{npcID=154722,pb=1})}}),
-d(109,{coords={
+d(112,{coords={
 [1161]={{74,13.4}},
 [1163]={{68,33.6}}},crs={177193,177208},difficulties={17,14,15,16},g={
 h(-19,{crs={150653,150859,151881,152128,152236,152364,152852,152853,152910},g={
@@ -45109,7 +45109,7 @@ s(104727,168880,{b=1,f=4,loc=47,lvl=50,modID=4,spellID=303734}),
 s(104701,168873,{b=1,f=7,loc=46,lvl=50,modID=4,spellID=303735}),
 s(104721,168878,{b=1,f=6,loc=47,lvl=50,modID=4,spellID=303732}),
 i(168941,{b=1,f=55,lvl=50,modID=4,spellID=299550})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(2352,{npcID=151881,g={
 ach(13684,{
 crit(45503,{achID=13687,id=1})})}}),
@@ -45268,7 +45268,7 @@ s(104726,168880,{b=1,f=4,loc=47,lvl=50,modID=3,spellID=303734}),
 s(104698,168873,{b=1,f=7,loc=46,lvl=50,modID=3,spellID=303735}),
 s(104718,168878,{b=1,f=6,loc=47,lvl=50,modID=3,spellID=303732}),
 i(168941,{b=1,f=55,lvl=50,modID=3,spellID=299550})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(2349,{npcID=150859,g={
 s(104678,168868,{b=1,f=7,loc=41,lvl=50})}}),
 e(2361,{npcID=152910,g={
@@ -45583,7 +45583,7 @@ h(-141,{
 i(173883,{b=1,cost={{"i",174279,15}},f=55,spellID=312793}),
 i(173884,{b=1,cost={{"i",174279,30}},f=55,spellID=312794}),
 i(173885,{b=1,cost={{"i",174279,60}},f=55,spellID=312795})}),
-d(109,{coords={
+d(112,{coords={
 [1161]={{74,13.4}},
 [1163]={{68,33.6}}},crs={177193,177208},difficulties={17,14,15,16},g={
 h(-19,{crs={156523,156575,156818,156866,157231,157238,157253,157254,157354,157439,157602,157620,158041,158328,160229,162429},g={
@@ -45756,7 +45756,7 @@ i(174103,{b=1,f=53,lvl=50,modID=4,spellID=313948}),
 s(108124,174133,{b=1,f=5,loc=41,lvl=50,modID=4}),
 i(174533,{b=1,f=52,lvl=50,modID=4}),
 s(108064,174118,{b=1,f=4,loc=40,lvl=50,modID=4})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(2368,{npcID=156818,g={
 ach(14019,{
 crit(47177,{achID=14146,id=1})})}}),
@@ -45921,7 +45921,7 @@ i(174103,{b=1,f=53,lvl=50,modID=3,spellID=313948}),
 s(108121,174133,{b=1,f=5,loc=41,lvl=50,modID=3}),
 i(174533,{b=1,f=52,lvl=50,modID=3}),
 s(108061,174118,{b=1,f=4,loc=40,lvl=50,modID=3})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(2375,{npcID=158041,g={
 ach(14068,{rwp=90001,u=2}),
 i(174863,{b=1,rwp=90001,u=2})}})}}),
@@ -47171,6 +47171,14 @@ h(-62,{
 q(51378,{isWorldQuest=1}),
 q(51377,{isWorldQuest=1}),
 q(51379,{isWorldQuest=1})}),
+d(101,{difficulties={1,2,23},g={
+e(2142,{crs={133379,133944}}),
+e(2143,{npcID=133384}),
+e(2144,{npcID=133389,g={
+i(168154,{b=1})}}),
+e(2145,{npcID=133392,g={
+ach(12504),
+i(168131,{b=1})}})}}),
 d(1,{
 e(2142,{crs={133379,133944},g={
 s(95418,159636,{b=1,f=28,modID=1}),
@@ -47198,81 +47206,123 @@ s(95451,159664,{b=1,f=8,modID=1}),
 s(94987,159247,{b=1,f=4,loc=44,modID=1}),
 s(95249,159442,{b=1,f=7,loc=45,modID=1}),
 i(158366,{b=1,f=52,modID=1}),
-i(158374,{b=1,f=53,modID=1,spellID=267177}),
-i(168154,{b=1,modID=1})}}),
-e(2145,{npcID=133392,g={
-ach(12504),
+i(158374,{b=1,f=53,modID=1,spellID=267177})}}),
+e(2145,{npcID=133392,providers={{"o",288640}},g={
+s(95080,159318,{b=1,customCollect={"HOA"},f=5,loc=40,lvl=50,modID=1}),
+s(95153,159374,{b=1,customCollect={"HOA"},f=6,loc=40,lvl=50,modID=1}),
+s(94997,159254,{b=1,customCollect={"HOA"},f=4,loc=41,lvl=50,modID=1}),
+s(95244,159439,{b=1,customCollect={"HOA"},f=7,loc=41,lvl=50,modID=1}),
+s(95146,159370,{b=1,customCollect={"HOA"},f=6,loc=42,lvl=50,modID=1}),
+s(95221,159424,{b=1,customCollect={"HOA"},f=7,loc=42,lvl=50,modID=1}),
+s(95000,159257,{b=1,customCollect={"HOA"},f=4,loc=42,lvl=50,modID=1}),
+s(287915,239033,{b=1,f=5,loc=40,lvl=50,modID=1}),
+s(287921,239035,{b=1,f=6,loc=40,lvl=50,modID=1}),
+s(287909,239031,{b=1,f=4,loc=41,lvl=50,modID=1}),
+s(287927,239037,{b=1,f=7,loc=41,lvl=50,modID=1}),
+s(287918,239034,{b=1,f=6,loc=42,lvl=50,modID=1}),
+s(287924,239036,{b=1,f=7,loc=42,lvl=50,modID=1}),
+s(287912,239032,{b=1,f=4,loc=42,lvl=50,modID=1}),
 s(94389,158373,{b=1,f=25,modID=1}),
-s(95080,159318,{b=1,f=5,loc=40,lvl=50,modID=1}),
-s(95153,159374,{b=1,f=6,loc=40,lvl=50,modID=1}),
-s(94997,159254,{b=1,f=4,loc=41,lvl=50,modID=1}),
-s(95244,159439,{b=1,f=7,loc=41,lvl=50,modID=1}),
-s(95146,159370,{b=1,f=6,loc=42,lvl=50,modID=1}),
-s(95221,159424,{b=1,f=7,loc=42,lvl=50,modID=1}),
-s(95000,159257,{b=1,f=4,loc=42,lvl=50,modID=1}),
 s(95105,159337,{b=1,f=5,loc=44,modID=1}),
-i(158368,{b=1,f=53,modID=1,spellID=1294746}),
-i(168131,{b=1,modID=1})}})}),
-d(101,{difficulties={1,2,23},g={
-e(2142,{crs={133379,133944},g={
-s(95418,159636,{b=1,f=28}),
-s(94381,158370,{b=1,f=29}),
-s(95161,159380,{b=1,f=6,loc=43}),
-s(95009,159263,{b=1,f=4,loc=43}),
-s(95223,159425,{b=1,f=7,loc=43}),
-s(95078,159317,{b=1,f=5,loc=45}),
-s(95094,159329,{b=1,f=5,loc=46}),
-s(95239,159435,{b=1,f=7,loc=46}),
-s(95171,159388,{b=1,f=6,loc=47}),
-s(95004,159259,{b=1,f=4,loc=47})}}),
-e(2143,{npcID=133384,g={
-s(94671,158714,{b=1,f=25}),
-s(95419,159637,{b=1,f=32}),
-s(95242,159437,{b=1,f=7,loc=44}),
-s(94998,159255,{b=1,f=4,loc=45}),
-s(95154,159375,{b=1,f=6,loc=46}),
-s(95092,159327,{b=1,f=5,loc=47}),
-i(162544,{b=1,f=52}),
-i(158367,{b=1,f=53,spellID=267402})}}),
-e(2144,{npcID=133389,g={
-s(94379,158369,{b=1,f=23}),
-s(95451,159664,{b=1,f=8}),
-s(94987,159247,{b=1,f=4,loc=44}),
-s(95249,159442,{b=1,f=7,loc=45}),
-i(158366,{b=1,f=52}),
-i(158374,{b=1,f=53,spellID=267177}),
-i(168154,{b=1})}}),
-e(2145,{npcID=133392,g={
-ach(12504),
-s(94389,158373,{b=1,f=25}),
-s(95080,159318,{b=1,f=5,loc=40,lvl=50}),
-s(95153,159374,{b=1,f=6,loc=40,lvl=50}),
-s(94997,159254,{b=1,f=4,loc=41,lvl=50}),
-s(95244,159439,{b=1,f=7,loc=41,lvl=50}),
-s(95146,159370,{b=1,f=6,loc=42,lvl=50}),
-s(95221,159424,{b=1,f=7,loc=42,lvl=50}),
-s(95000,159257,{b=1,f=4,loc=42,lvl=50}),
-s(95105,159337,{b=1,f=5,loc=44}),
-i(158368,{b=1,f=53,spellID=1294746}),
-i(168131,{b=1})}})}}),
+i(158368,{b=1,f=53,modID=1,spellID=1294746})}})}),
 d(104,{difficulties={2,23},g={
 e(2145,{npcID=133392,g={
 ach(12505,{
 crit(40901,{achID=12807,id=1})})}})}}),
+d(2,{
+e(2142,{crs={133379,133944},g={
+s(95509,159636,{b=1,f=28,modID=2}),
+s(94382,158370,{b=1,f=29,modID=2}),
+s(95162,159380,{b=1,f=6,loc=43,modID=2}),
+s(95571,159263,{b=1,f=4,loc=43,modID=2}),
+s(95224,159425,{b=1,f=7,loc=43,modID=2}),
+s(95079,159317,{b=1,f=5,loc=45,modID=2}),
+s(95610,159329,{b=1,f=5,loc=46,modID=2}),
+s(95240,159435,{b=1,f=7,loc=46,modID=2}),
+s(95172,159388,{b=1,f=6,loc=47,modID=2}),
+s(95005,159259,{b=1,f=4,loc=47,modID=2})}}),
+e(2143,{npcID=133384,g={
+s(94673,158714,{b=1,f=25,modID=2}),
+s(95420,159637,{b=1,f=32,modID=2}),
+s(95648,159437,{b=1,f=7,loc=44,modID=2}),
+s(95566,159255,{b=1,f=4,loc=45,modID=2}),
+s(98411,159375,{b=1,f=6,loc=46,modID=2}),
+s(95608,159327,{b=1,f=5,loc=47,modID=2}),
+i(162544,{b=1,f=52,modID=2}),
+i(158367,{b=1,f=53,modID=2,spellID=267402})}}),
+e(2144,{npcID=133389,g={
+s(94380,158369,{b=1,f=23,modID=2}),
+s(95521,159664,{b=1,f=8,modID=2}),
+s(95562,159247,{b=1,f=4,loc=44,modID=2}),
+s(95250,159442,{b=1,f=7,loc=45,modID=2}),
+i(158366,{b=1,f=52,modID=2}),
+i(158374,{b=1,f=53,modID=2,spellID=267177})}}),
+e(2145,{npcID=133392,providers={{"o",288640}},g={
+s(95604,159318,{b=1,customCollect={"HOA"},f=5,loc=40,lvl=50,modID=2}),
+s(98409,159374,{b=1,customCollect={"HOA"},f=6,loc=40,lvl=50,modID=2}),
+s(95564,159254,{b=1,customCollect={"HOA"},f=4,loc=41,lvl=50,modID=2}),
+s(95650,159439,{b=1,customCollect={"HOA"},f=7,loc=41,lvl=50,modID=2}),
+s(95147,159370,{b=1,customCollect={"HOA"},f=6,loc=42,lvl=50,modID=2}),
+s(95222,159424,{b=1,customCollect={"HOA"},f=7,loc=42,lvl=50,modID=2}),
+s(95001,159257,{b=1,customCollect={"HOA"},f=4,loc=42,lvl=50,modID=2}),
+s(94390,158373,{b=1,f=25,modID=2}),
+s(95612,159337,{b=1,f=5,loc=44,modID=2}),
+i(158368,{b=1,f=53,modID=2,spellID=1294746})}})}),
 d(23,{difficulties={8,23},g={
 ach(12503,{rwp=120100,g={
 crit(41380,{achID=12812,id=16})}}),
+e(2142,{crs={133379,133944},g={
+s(95510,159636,{b=1,f=28,modID=23}),
+s(94383,158370,{b=1,f=29,modID=23}),
+s(98414,159380,{b=1,f=6,loc=43,modID=23}),
+s(95572,159263,{b=1,f=4,loc=43,modID=23}),
+s(95646,159425,{b=1,f=7,loc=43,modID=23}),
+s(95603,159317,{b=1,f=5,loc=45,modID=23}),
+s(95611,159329,{b=1,f=5,loc=46,modID=23}),
+s(95647,159435,{b=1,f=7,loc=46,modID=23}),
+s(98423,159388,{b=1,f=6,loc=47,modID=23}),
+s(95570,159259,{b=1,f=4,loc=47,modID=23})}}),
 e(2143,{npcID=133384,g={
 ach(12507,{rwp=120100,g={
 crit(41379,{achID=12812,id=17})}}),
 i(160832,{b=1,f=55,lvl=50,modID=23,g={
 i(160831,{b=1,f=55,lvl=50,modID=23,g={
-p(2186,{b=1,itemID=160702,npcID=138964,spellID=273159})}})}})}}),
-e(2145,{npcID=133392,g={
+p(2186,{b=1,itemID=160702,npcID=138964,spellID=273159})}})}}),
+s(96027,158714,{b=1,f=25,modID=23}),
+s(95421,159637,{b=1,f=32,modID=23}),
+s(95649,159437,{b=1,f=7,loc=44,modID=23}),
+s(95567,159255,{b=1,f=4,loc=45,modID=23}),
+s(98412,159375,{b=1,f=6,loc=46,modID=23}),
+s(95609,159327,{b=1,f=5,loc=47,modID=23}),
+i(162544,{b=1,f=52,modID=23}),
+i(158367,{b=1,f=53,modID=23,spellID=267402})}}),
+e(2144,{npcID=133389,g={
+s(94388,158369,{b=1,f=23,modID=23}),
+s(95522,159664,{b=1,f=8,modID=23}),
+s(95563,159247,{b=1,f=4,loc=44,modID=23}),
+s(95652,159442,{b=1,f=7,loc=45,modID=23}),
+i(158366,{b=1,f=52,modID=23}),
+i(158374,{b=1,f=53,modID=23,spellID=267177})}}),
+e(2145,{npcID=133392,providers={{"o",288640}},g={
 ach(12508,{rwp=120100,g={
 crit(41378,{achID=12812,id=18})}}),
 ach(12506),
-gach(13004)}})}}),
+gach(13004),
+s(95605,159318,{b=1,customCollect={"HOA"},f=5,loc=40,lvl=50,modID=23}),
+s(98410,159374,{b=1,customCollect={"HOA"},f=6,loc=40,lvl=50,modID=23}),
+s(95565,159254,{b=1,customCollect={"HOA"},f=4,loc=41,lvl=50,modID=23}),
+s(95651,159439,{b=1,customCollect={"HOA"},f=7,loc=41,lvl=50,modID=23}),
+s(98408,159370,{b=1,customCollect={"HOA"},f=6,loc=42,lvl=50,modID=23}),
+s(95645,159424,{b=1,customCollect={"HOA"},f=7,loc=42,lvl=50,modID=23}),
+s(95568,159257,{b=1,customCollect={"HOA"},f=4,loc=42,lvl=50,modID=23}),
+s(94391,158373,{b=1,f=25,modID=23}),
+s(95613,159337,{b=1,f=5,loc=44,modID=23}),
+i(158368,{b=1,f=53,modID=23,spellID=1294746})}})}}),
+d(8,{
+h(-792,{
+e(2145,{npcID=133392})}),
+h(-793,{
+e(2145,{npcID=133392})})}),
 d(24,{sym={{"sub","tw_instance",1030}}})}}),
 inst(1012,{awp=80001,coords={
 [862]={{39.2,71.5}},
@@ -48088,7 +48138,7 @@ gach(14720),
 gach(14652)}),
 h(-19,{crs={164261,164406,164407,165066,165067,165521,165759,165805,166644,166969,166970,166971,167406,168112,168113,168156,168973,169457,169458},g={
 r(311453,{b=1,itemID=173068,requireSkill=773,skillID=2756})}}),
-d(109,{coords={
+d(112,{coords={
 [1670]={{41.3,71}}},crs={205959},difficulties={17,14,15,16},g={
 h(-62,{
 q(66693,{awp=90205,isWorldQuest=1,rwp=100002,u=2})}),
@@ -48462,7 +48512,7 @@ s(115212,183003,{b=1,f=6,loc=41,lvl=60,modID=4}),
 s(115146,182980,{b=1,f=5,loc=40,lvl=60,modID=4}),
 i(184031,{b=1,f=53,lvl=60,modID=4,spellID=344231}),
 s(115119,183020,{b=1,f=4,loc=41,lvl=60,modID=4})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(2393,{npcID=164406,g={
 ach(14293,{
 crit(48723,{achID=14355,id=1})})}}),
@@ -48613,7 +48663,7 @@ s(114516,183003,{b=1,f=6,loc=41,lvl=60,modID=3}),
 s(114493,182980,{b=1,f=5,loc=40,lvl=60,modID=3}),
 i(184031,{b=1,f=53,lvl=60,modID=3,spellID=344231}),
 s(114533,183020,{b=1,f=4,loc=41,lvl=60,modID=3})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(2393,{npcID=164406,g={
 crit(53524,{achID=15664,awp=90205,rwp=100002,u=2})}}),
 e(2429,{crs={165066,165067,169457,169458},g={
@@ -48951,7 +49001,7 @@ gach(15184)}),
 h(-19,{crs={175559,175611,175725,175726,175727,175729,175730,175731,175732,176523,176531,177094,177095},g={
 r(354394,{b=1,itemID=186671,requireSkill=773,skillID=2756}),
 i(186599,{b=1,lvl=60})}}),
-d(109,{coords={
+d(112,{coords={
 [1670]={{41.3,71}}},crs={205959},difficulties={17,14,15,16},g={
 h(-62,{
 q(66694,{awp=90205,isWorldQuest=1,rwp=100002,u=2})}),
@@ -49255,7 +49305,7 @@ i(186377,{b=1,f=52,lvl=60,modID=4}),
 s(145753,186325,{b=1,f=4,loc=40,lvl=60,modID=4}),
 s(145773,186332,{b=1,f=5,loc=45,lvl=60,modID=4}),
 s(145781,186334,{b=1,f=5,loc=42,lvl=60,modID=4})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(2435,{npcID=175611,g={
 ach(14998,{
 crit(52364,{achID=15130,id=1})})}}),
@@ -49435,7 +49485,7 @@ i(186377,{b=1,f=52,lvl=60,modID=3}),
 s(145752,186325,{b=1,f=4,loc=40,lvl=60,modID=3}),
 s(145772,186332,{b=1,f=5,loc=45,lvl=60,modID=3}),
 s(145780,186334,{b=1,f=5,loc=42,lvl=60,modID=3})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(2435,{npcID=175611,g={
 crit(53558,{achID=15668,awp=90205,rwp=100002,u=2})}}),
 e(2442,{crs={175725,176531},g={
@@ -50101,7 +50151,7 @@ s(166425,188945,{b=1,c={1},f=3,lvl=60,modID=6}),
 s(168558,188944,{b=1,c={1},f=7,loc=45,lvl=60,modID=6}),
 s(166404,188939,{b=1,c={1},f=7,loc=47,lvl=60,modID=6}),
 s(166420,188943,{b=1,c={1},f=7,loc=43,lvl=60,modID=6})}})}})}}),
-d(109,{coords={
+d(112,{coords={
 [1670]={{41.3,71}}},crs={205959},difficulties={17,14,15,16},g={
 h(-62,{
 q(66695,{awp=90205,isWorldQuest=1,rwp=100002,u=2})}),
@@ -50511,7 +50561,7 @@ s(168025,189856,{b=1,f=5,loc=45,lvl=60,modID=4}),
 i(188253,{b=1,f=53,lvl=60,modID=4,spellID=367930}),
 i(189859,{b=1,f=51,lvl=60,modID=4}),
 s(168045,189861,{b=1,f=29,lvl=60,modID=4})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(2458,{crs={180773,184522},g={
 ach(15381,{
 crit(53247,{achID=15491,id=3})})}}),
@@ -50758,7 +50808,7 @@ s(168024,189856,{b=1,f=5,loc=45,lvl=60,modID=3}),
 i(188253,{b=1,f=53,lvl=60,modID=3,spellID=367930}),
 i(189859,{b=1,f=51,lvl=60,modID=3}),
 s(168044,189861,{b=1,f=29,lvl=60,modID=3})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 h(-45,{
 q(65717,{lvl=60,providers={{"i",190773}},rwp=100002,u=2,g={
 mnt(359545,{b=1,itemID=190771,u=2})}})}),
@@ -51369,8 +51419,8 @@ crit(53624,{achID=15693,id=1,u=2}),
 crit(53625,{achID=15693,id=2,u=2})}}),
 ach(15692,{awp=110205,maps={809},rwp=110207,u=2,g={
 cs(373262,{awp=90205,rwp=100000,u=2}),
-crit(53622,{achID=15692,id=1,rwp=100000,u=2}),
-crit(53623,{achID=15692,id=2,rwp=100000,u=2})}}),
+crit(53622,{achID=15692,id=1,u=2}),
+crit(53623,{achID=15692,id=2,u=2})}}),
 ach(15500,{u=2,g={
 cs(367416,{u=2}),
 crit(53264,{achID=15500,id=1,u=2}),
@@ -52328,7 +52378,7 @@ ach(11184,{
 crit(32165,{achID=10748,id=3})}),
 ach(11183)}}),
 h(-19,{awp=100206,g={
-d(109,{difficulties={17,14,15,16},g={
+d(112,{difficulties={17,14,15,16},g={
 i(213089,{b=1,description="Drops from Awakened Dragonflight Raid bosses.",rwp=110002,u=2}),
 i(211515,{b=1,description="Drops from Dragonflight Dungeon/Raid & certain Outdoor content.\n\nEnable 'Debug Mode' to see the drop limitations for this Item for your character.",spellID=429921,g={
 cu(2800)}})}})}}),
@@ -52709,7 +52759,7 @@ q(72260,{coords={
 h(-63,{
 i(201412,{b=1}),
 i(201411,{b=1})}),
-d(109,{difficulties={17,14,15,16},g={
+d(112,{difficulties={17,14,15,16},g={
 e(2480,{npcID=184972,g={
 crit(55109,{achID=16343}),
 crit(55109,{achID=17110})}}),
@@ -52915,7 +52965,7 @@ s(181618,195532,{b=1,f=4,loc=47,lvl=70,modID=4,u=2}),
 s(181600,195533,{b=1,f=7,loc=43,lvl=70,modID=4,u=2}),
 i(194309,{b=1,f=53,lvl=70,modID=4,spellID=377466,u=2}),
 s(183432,195529,{b=1,f=20,lvl=70,modID=4,u=2})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(2480,{npcID=184972,g={
 ach(16335,{
 crit(55145,{achID=16355,id=1})}),
@@ -53127,7 +53177,7 @@ s(181191,195532,{b=1,f=4,loc=47,lvl=70,modID=3}),
 s(181192,195533,{b=1,f=7,loc=43,lvl=70,modID=3}),
 i(194309,{b=1,f=53,lvl=70,modID=3,spellID=377466}),
 s(181188,195529,{b=1,f=20,lvl=70,modID=3})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 h(-19,{crs={181378,184972,187767,187768,187771,187772,187967,189492,189813,190245,190496,193909},g={
 i(201740,{f=50,requireSkill=171,spellID=394505,g={
 r(370543,{learnedAt=70,requireSkill=171,skillID=2823}),
@@ -53875,7 +53925,7 @@ s(186287,202439,{b=1,c={1},f=7,loc=43,lvl=70,modID=6})}})}})}}),
 h(-19,{crs={199659,200912,200913,200918,201261,201320,201579,201668,201754,201773,201774,201934,202375,202637,202791,203133,203284},g={
 i(204857,{b=1}),
 i(204464)}}),
-d(109,{difficulties={17,14,15,16},g={
+d(112,{difficulties={17,14,15,16},g={
 e(2522,{npcID=201261,g={
 r(408326,{itemID=205145,requireSkill=164,skillID=2822}),
 crit(58866,{achID=18160}),
@@ -53928,7 +53978,7 @@ e(2520,{crs={201754,203284},g={
 i(204255,{b=1,c={13}}),
 crit(58883,{achID=18160}),
 crit(58883,{achID=18167})}})}}),
-d(123,{difficulties={17,14,15},g={
+d(126,{difficulties={17,14,15},g={
 e(2520,{crs={201754,203284},g={
 mm(206955,{b=1,providers={{"i",205876}},questID=75967})}})}}),
 d(17,{awp=120005,rwp=110002,u=2,g={
@@ -54129,7 +54179,7 @@ s(186625,204399,{b=1,f=5,loc=45,lvl=70,modID=4,u=2}),
 s(186685,202599,{b=1,f=7,loc=42,lvl=70,modID=4,u=2}),
 s(186522,202584,{b=1,f=6,loc=46,lvl=70,modID=4,u=2}),
 i(217408,{awp=100206,b=1,lvl=70,modID=4,sym={{"usemyModID"},{"select","modItemID",217324,217325,217326,217327,217332,217333,217334,217335,217316,217317,217318,217319,217320,217321,217322,217323,217328,217329,217330,217331},{"groupfill",1},{"pop"}},u=2})}})}})}}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(2522,{npcID=201261,g={
 ach(18229,{crs={205674},g={
 crit(59802,{achID=18251,id=1})}}),
@@ -54363,7 +54413,7 @@ s(185562,204399,{b=1,f=5,loc=45,lvl=70,modID=3}),
 s(184572,202599,{b=1,f=7,loc=42,lvl=70,modID=3}),
 s(184557,202584,{b=1,f=6,loc=46,lvl=70,modID=3}),
 i(217408,{awp=100206,b=1,lvl=70,modID=3,rwp=110002,sym={{"usemyModID"},{"select","modItemID",217324,217325,217326,217327,217332,217333,217334,217335,217316,217317,217318,217319,217320,217321,217322,217323,217328,217329,217330,217331},{"groupfill",1},{"pop"}},u=2})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(2522,{npcID=201261,g={
 crit(59573,{achID=18161}),
 crit(64966,{achID=19568,awp=100206,rwp=110002,u=2})}}),
@@ -55181,7 +55231,7 @@ h(-55,{
 i(210783,{description="Fish in the lava pools of the Pit of Volcoross.",spellID=427134}),
 i(210782,{description="Fish in the waters of the Wellspring Atrium.",spellID=427130}),
 i(210784,{b=1,cost={{"i",210782,10},{"i",210783,10}},description="First get the Attuned Angler Buff by returing 10 Awakening Sunfish and 10 Slumbering Moonfish. Go back into the raid and fish in the biggest pool of water within the Wellspring Atrium.",spellID=427125})}),
-d(109,{difficulties={17,14,15,16},g={
+d(112,{difficulties={17,14,15,16},g={
 h(-19,{crs={200926,200927,204931,206172,206689,208363,208365,208367,208445,208478,208956,209090,209333,210601},g={
 i(210780,{b=1,spellID=427075})}}),
 h(-45,{
@@ -55474,7 +55524,7 @@ s(191092,207786,{b=1,f=21,lvl=70,modID=4,spellID=424320,u=2}),
 s(191098,207793,{b=1,f=29,lvl=70,modID=4,spellID=424320,u=2}),
 s(193560,207115,{b=1,f=4,loc=44,lvl=70,modID=4,u=2}),
 s(191095,207788,{b=1,f=23,lvl=70,modID=4,spellID=424320,u=2})}})}})}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(2564,{npcID=209333,g={
 ach(19322,{
 crit(63144,{achID=19349,id=1})}),
@@ -55730,7 +55780,7 @@ s(188888,207786,{b=1,f=21,lvl=70,modID=3,spellID=424320}),
 s(188895,207793,{b=1,f=29,lvl=70,modID=3,spellID=424320}),
 s(188670,207115,{b=1,f=4,loc=44,lvl=70,modID=3}),
 s(188890,207788,{b=1,f=23,lvl=70,modID=3,spellID=424320})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 h(-45,{
 q(78876,{lvl=10,qss={211375},rwp=110002,u=2,g={
 mm(210537,{b=1,questID=78453,u=2})}})}),
@@ -58281,7 +58331,7 @@ s(222710,211980,{b=1,c={1},f=7,loc=43,lvl=80,modID=6}),
 s(222717,211981,{b=1,c={1},f=7,loc=45,lvl=80,modID=6}),
 s(222752,211986,{b=1,c={1},f=7,loc=47,lvl=80,modID=6}),
 s(222703,211979,{b=1,c={1},f=3,lvl=80,modID=6})}})}})}}),
-d(109,{difficulties={17,14,15,16},g={
+d(112,{difficulties={17,14,15,16},g={
 h(-19,{crs={214502,214503,214504,214506,215657,217489,217491,217748,218370},g={
 cu(3093)}}),
 e(2607,{npcID=215657,g={
@@ -58513,7 +58563,7 @@ s(194784,212420,{b=1,f=7,loc=42,lvl=80,modID=4}),
 i(225578,{b=1,f=52,lvl=80,modID=4,spellID=457815}),
 s(221219,212394,{b=1,f=20,lvl=80,modID=4}),
 s(194840,212434,{b=1,f=4,loc=46,lvl=80,modID=4})}})}})}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(2607,{npcID=215657,g={
 ach(40261,{
 crit(67619,{achID=40232,id=1})})}}),
@@ -58734,7 +58784,7 @@ s(194783,212420,{b=1,f=7,loc=42,lvl=80,modID=3}),
 i(225578,{b=1,f=52,lvl=80,modID=3,spellID=457815}),
 s(194739,212394,{b=1,f=20,lvl=80,modID=3}),
 s(194839,212434,{b=1,f=4,loc=46,lvl=80,modID=3})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(2607,{npcID=215657,g={
 crit(67572,{achID=40245})}}),
 e(2611,{npcID=214502,g={
@@ -59567,7 +59617,7 @@ s(225180,229230,{b=1,c={1},f=3,lvl=80,modID=6}),
 s(225192,229231,{b=1,c={1},f=7,loc=43,lvl=80,modID=6}),
 s(225204,229232,{b=1,c={1},f=7,loc=45,lvl=80,modID=6}),
 s(225264,229237,{b=1,c={1},f=7,loc=47,lvl=80,modID=6})}})}})}}),
-d(109,{difficulties={17,14,15,16},g={
+d(112,{difficulties={17,14,15,16},g={
 e(2639,{crs={225821,225822},g={
 r(450250,{itemID=223048,requireSkill=164,skillID=2872}),
 crit(71696,{achID=41222}),
@@ -59801,7 +59851,7 @@ s(224944,228881,{b=1,f=4,loc=43,lvl=80,modID=4}),
 s(224840,228855,{b=1,f=7,loc=41,lvl=80,modID=4}),
 i(231265,{b=1,f=52,lvl=70,modID=4,spellID=1214161}),
 s(230466,228889,{b=1,f=8,lvl=80,modID=4,spellID=471316})}})}})}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(2639,{crs={225821,225822},g={
 ach(41208,{
 crit(71782,{achID=41286,id=1})})}}),
@@ -60032,7 +60082,7 @@ s(224943,228881,{b=1,f=4,loc=43,lvl=80,modID=3}),
 s(224839,228855,{b=1,f=7,loc=41,lvl=80,modID=3}),
 i(231265,{b=1,f=52,lvl=70,modID=3,spellID=1214161}),
 s(224975,228889,{b=1,f=8,lvl=80,modID=3,spellID=471316})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(2639,{crs={225821,225822},g={
 crit(71704,{achID=41223})}}),
 e(2640,{crs={229177,229181},g={
@@ -60910,7 +60960,7 @@ cl(1,{sym={{"sub","instance_tier",1302,16,1}},g={
 s(285549,237607,{b=1,c={1},f=7,loc=45,lvl=80,modID=6}),
 s(285537,237606,{b=1,c={1},f=7,loc=43,lvl=80,modID=6}),
 s(285609,237612,{b=1,c={1},f=7,loc=47,lvl=80,modID=6})}})}})}}),
-d(109,{difficulties={17,14,15,16},g={
+d(112,{difficulties={17,14,15,16},g={
 h(-45,{
 q(91140,{c={5},lvl=80,qss={245743}}),
 q(91138,{c={5},coords={
@@ -61173,7 +61223,7 @@ s(293182,237725,{b=1,f=24,lvl=80,modID=4}),
 s(285494,237562,{b=1,f=5,loc=43,lvl=80,modID=4}),
 s(285498,237563,{b=1,f=7,loc=45,lvl=80,modID=4}),
 s(285406,237540,{b=1,f=5,loc=44,lvl=80,modID=4})}})}})}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(2684,{crs={233814,243241},g={
 ach(42118,{
 crit(103306,{achID=41597,id=1})})}}),
@@ -61414,7 +61464,7 @@ s(286915,237725,{b=1,f=24,lvl=80,modID=3}),
 s(285493,237562,{b=1,f=5,loc=43,lvl=80,modID=3}),
 s(285497,237563,{b=1,f=7,loc=45,lvl=80,modID=3}),
 s(285405,237540,{b=1,f=5,loc=44,lvl=80,modID=3})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 h(-45,{
 q(91413,{lvl=80,qss={246446},g={
 mnt(1242272,{b=1,itemID=246445,lvl=10})}})}),
@@ -62616,7 +62666,7 @@ ach(61843,{
 crit(113785,{achID=11761,id=73})}),
 gach(61609),
 gach(61610)}),
-d(109,{difficulties={17,14,15,16},g={
+d(112,{difficulties={17,14,15,16},g={
 h(-45,{
 q(93924,{lvl=90,qgs={260421}})}),
 e(2739,{npcID=249637,g={
@@ -62658,7 +62708,7 @@ s(296345,249913,{b=1,f=5,loc=40,lvl=90,modID=4,up=3}),
 s(296349,249914,{b=1,f=6,loc=40,lvl=90,modID=4,up=3}),
 s(296341,249912,{b=1,f=4,loc=42,lvl=90,modID=4,up=3}),
 i(249810,{b=1,f=53,lvl=90,modID=4,spellID=1259518,up=3})}})}})}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(2739,{npcID=249637,g={
 ach(61381,{providers={{"n",255969}},g={
 crit(109386,{achID=61380,id=9})}})}}),
@@ -62694,7 +62744,7 @@ s(296344,249913,{b=1,f=5,loc=40,lvl=90,modID=3,up=5}),
 s(296348,249914,{b=1,f=6,loc=40,lvl=90,modID=3,up=5}),
 s(296340,249912,{b=1,f=4,loc=42,lvl=90,modID=3,up=5}),
 i(249810,{b=1,f=53,lvl=90,modID=3,spellID=1259518,up=5})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(2739,{npcID=249637,g={
 crit(109094,{achID=61369})}}),
 e(2740,{npcID=214650,g={
@@ -62774,7 +62824,7 @@ inst(1314,{coords={
 h(-12,{
 ach(61843,{
 crit(113785,{achID=11761,id=73})})}),
-d(109,{difficulties={17,14,15,16},g={
+d(112,{difficulties={17,14,15,16},g={
 h(-45,{
 q(93923,{lvl=90})}),
 e(2795,{npcID=256116,g={
@@ -62814,7 +62864,7 @@ s(296197,249374,{b=1,f=5,loc=45,lvl=90,modID=4,up=3}),
 s(296185,249371,{b=1,f=6,loc=45,lvl=90,modID=4,up=3}),
 s(303908,249922,{b=1,f=1,lvl=90,modID=4,up=3}),
 i(249805,{b=1,f=53,lvl=90,modID=4,spellID=1256790,up=3})}})}})}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(2795,{npcID=256116,g={
 ach(61454,{
 crit(109764,{achID=61380,id=8})})}})}}),
@@ -62847,7 +62897,7 @@ s(296196,249374,{b=1,f=5,loc=45,lvl=90,modID=3,up=5}),
 s(296184,249371,{b=1,f=6,loc=45,lvl=90,modID=3,up=5}),
 s(296358,249922,{b=1,f=1,lvl=90,modID=3,up=5}),
 i(249805,{b=1,f=53,lvl=90,modID=3,spellID=1256790,up=5})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(2795,{npcID=256116,g={
 ach(61488),
 ach(61491,{rwp=120100}),
@@ -63199,7 +63249,7 @@ s(296409,249949,{b=1,c={1},f=7,loc=45,lvl=90,modID=6}),
 s(296469,249954,{b=1,c={1},f=7,loc=47,lvl=90,modID=6}),
 s(296385,249947,{b=1,c={1},f=3,lvl=90,modID=6}),
 s(296397,249948,{b=1,c={1},f=7,loc=43,lvl=90,modID=6})}})}})}}),
-d(109,{difficulties={17,14,15,16},g={
+d(112,{difficulties={17,14,15,16},g={
 h(-45,{
 q(93922,{lvl=90})}),
 e(2733,{npcID=240435,g={
@@ -63399,7 +63449,7 @@ s(303953,249288,{b=1,f=32,lvl=90,modID=4,up=3}),
 s(296073,249309,{b=1,f=7,loc=42,lvl=90,modID=4,up=3}),
 s(303941,249295,{b=1,f=23,lvl=90,modID=4,up=3}),
 s(296137,249325,{b=1,f=6,loc=44,lvl=90,modID=4,up=3})}})}})}),
-d(110,{difficulties={14,15,16},g={
+d(113,{difficulties={14,15,16},g={
 e(2733,{npcID=240435,g={
 ach(62106,{
 crit(112427,{achID=61380,id=2})})}}),
@@ -63583,7 +63633,7 @@ s(296033,249288,{b=1,f=32,lvl=90,modID=3,up=5}),
 s(296072,249309,{b=1,f=7,loc=42,lvl=90,modID=3,up=5}),
 s(296040,249295,{b=1,f=23,lvl=90,modID=3,up=5}),
 s(296136,249325,{b=1,f=6,loc=44,lvl=90,modID=3,up=5})}})}),
-d(112,{difficulties={15,16},g={
+d(115,{difficulties={15,16},g={
 e(2733,{npcID=240435,g={
 crit(109071,{achID=61368})}}),
 e(2734,{npcID=240434,g={

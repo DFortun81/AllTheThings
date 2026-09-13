@@ -9,7 +9,7 @@ x(1,{
 ach(732),
 ach(731),
 ach(116)}),
-x(2,{awp=20001,g={
+x(2,{awp=20003,g={
 ach(733,{u=17})}}),
 x(3,{
 ach(734,{awp=30003}),
@@ -58,7 +58,7 @@ r(36122,{learnedAt=260,requireSkill=9788,u=17}),
 r(55187,{learnedAt=415,requireSkill=164,u=30}),
 r(36124,{learnedAt=260,requireSkill=9788,u=17})}})}}),
 prof(9787,{description="These items can only be crafted by Blacksmiths who have completed the Way of the Weaponsmith quest chain.\n\nNOTE: You may only have one of these specializations active per character. If you wish to finish your collection, you must level several Blacksmiths and complete the opposing specialization(s).",rwp=40001,sourceQuests={5284,5302},g={
-prof(17041,{awp=20001,description="These items can only be crafted by Master Axesmith specialized Weaponsmiths.",sourceQuests={5306},g={
+prof(17041,{awp=20003,description="These items can only be crafted by Master Axesmith specialized Weaponsmiths.",sourceQuests={5306},g={
 r(34542,{learnedAt=375,requireSkill=17041,u=17}),
 r(36261,{learnedAt=375,requireSkill=17041,u=17}),
 r(34543,{learnedAt=350,requireSkill=17041,u=17}),
@@ -67,7 +67,7 @@ r(36135,{learnedAt=330,requireSkill=17041,u=17}),
 r(36134,{learnedAt=330,requireSkill=17041,u=17}),
 r(34541,{learnedAt=350,requireSkill=17041,u=17}),
 r(36260,{learnedAt=375,requireSkill=17041,u=17})}}),
-prof(17040,{awp=20001,description="These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",sourceQuests={5305},g={
+prof(17040,{awp=20003,description="These items can only be crafted by Master Hammersmith specialized Weaponsmiths.",sourceQuests={5305},g={
 r(34548,{learnedAt=375,requireSkill=17040,u=17}),
 r(34546,{learnedAt=375,requireSkill=17040,u=17}),
 r(36262,{learnedAt=375,requireSkill=17040,u=17}),
@@ -77,14 +77,14 @@ r(36136,{learnedAt=330,requireSkill=17040,u=17}),
 r(36263,{learnedAt=375,requireSkill=17040,u=17}),
 r(34547,{learnedAt=350,requireSkill=17040,u=17})}}),
 prof(17039,{description="These items can only be crafted by Master Swordsmith specialized Weaponsmiths.",sourceQuests={5307},g={
-r(36258,{awp=20001,learnedAt=375,requireSkill=17039,u=17}),
-r(34537,{awp=20001,learnedAt=375,requireSkill=17039,u=17}),
-r(34535,{awp=20001,learnedAt=350,requireSkill=17039,u=17}),
-r(34538,{awp=20001,learnedAt=350,requireSkill=17039,u=17}),
-r(34540,{awp=20001,learnedAt=375,requireSkill=17039,u=17}),
-r(36259,{awp=20001,learnedAt=375,requireSkill=17039,u=17}),
+r(36258,{awp=20003,learnedAt=375,requireSkill=17039,u=17}),
+r(34537,{awp=20003,learnedAt=375,requireSkill=17039,u=17}),
+r(34535,{awp=20003,learnedAt=350,requireSkill=17039,u=17}),
+r(34538,{awp=20003,learnedAt=350,requireSkill=17039,u=17}),
+r(34540,{awp=20003,learnedAt=375,requireSkill=17039,u=17}),
+r(36259,{awp=20003,learnedAt=375,requireSkill=17039,u=17}),
 r(36133,{awp=20100,learnedAt=330,requireSkill=17039,u=17}),
-r(36131,{awp=20001,learnedAt=330,requireSkill=17039,u=17})}}),
+r(36131,{awp=20003,learnedAt=330,requireSkill=17039,u=17})}}),
 cat(227,{description="These can be crafted by any Weaponsmith.",requireSkill=164,g={
 r(55183,{learnedAt=415,requireSkill=164,u=30}),
 r(55184,{learnedAt=415,requireSkill=164,u=30}),
@@ -123,7 +123,7 @@ ach(123,{requireSkill=185}),
 ach(122,{requireSkill=185}),
 ach(121,{requireSkill=185})}}),
 x(2,{requireSkill=185,g={
-ach(124,{awp=20001,requireSkill=185,u=17}),
+ach(124,{awp=20003,requireSkill=185,u=17}),
 ach(1801,{awp=30002,providers={{"i",34832}},requireSkill=185,u=30}),
 ach(877,{awp=30002,providers={{"i",33924}},requireSkill=185,u=30}),
 ach(1800,{awp=30002,requireSkill=185,u=30,g={

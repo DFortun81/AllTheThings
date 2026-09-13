@@ -3386,13 +3386,13 @@ n(9030,{
 s(4214,11665,{b=1,f=5,loc=44,lvl=20}),
 s(4213,11662,{b=1,f=4,loc=45,lvl=20}),
 s(4226,11728,{b=1,f=6,loc=46,lvl=20}),
-i(11824,{b=1,f=52,lvl=20})}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
-n(16059,{description="Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: Ring of Law.",providers={{"i",21986},{"o",181074}},rwp=40003,sourceQuests={9015},u=2,u_sqs=1,g={
+i(11824,{b=1,f=52,lvl=20})}),
+n(16059,{description="Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: Ring of Law.",providers={{"i",21986},{"o",181074}},rwp=40003,sourceQuests={9015},u=6,u_sqs=1,g={
 i(22047,{spellID=27739,u=6}),
 s(8779,22305,{b=1,c={5,8,9},f=4,loc=41,lvl=23,u=6}),
 s(8785,22317,{b=1,f=34,lvl=22,u=6}),
 s(8786,22318,{b=1,f=32,lvl=22,u=6}),
-s(8792,22330,{b=1,f=3,lvl=22,u=6})}}))}}),
+s(8792,22330,{b=1,f=3,lvl=22,u=6})}})}}),
 e(377,{npcID=9016,g={
 s(4253,11803,{b=1,f=24,lvl=20,spellID=248168}),
 s(4254,11805,{b=1,f=23,lvl=20}),
@@ -3949,12 +3949,12 @@ s(7266,18319,{b=1,f=5,loc=40,lvl=15}),
 s(7263,18313,{b=1,f=6,loc=40,lvl=15}),
 s(7256,18306,{b=1,f=4,loc=44,lvl=15}),
 i(18315,{b=1,f=52,lvl=15})}}),
-n(11491,{description="Talk to him for him to break down the door."}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
-n(16097,{description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",providers={{"i",22057}},qis={21984,22046},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
+n(11491,{description="Talk to him for him to break down the door."}),
+n(16097,{description="This boss can be summoned using items from the |cff3399ff(Dungeon Set 2 questline)|r.\nSummon Location: Alzzin the Wildshaper's room.",providers={{"i",22057}},qis={21984,22046},rwp=40003,sourceQuests={8996},u=6,u_sqs=1,g={
 s(8784,22315,{b=1,f=23,lvl=23,u=6}),
 s(8783,22314,{b=1,f=29,lvl=23,u=6}),
 s(8778,22304,{b=1,c={5,8,9},f=4,loc=44,lvl=23,u=6}),
-s(8855,22472,{b=1,f=5,loc=47,lvl=23,u=6})}})),
+s(8855,22472,{b=1,f=5,loc=47,lvl=23,u=6})}}),
 e(405,{npcID=11492,g={
 i(18501,{b=1,description="Spawns under the vines near the last boss in Dire Maul East.",providers={{"o",179559}}}),
 s(7268,18321,{b=1,f=23,lvl=15}),
@@ -4117,7 +4117,7 @@ s(7301,18379,{b=1,f=6,loc=47,lvl=17}),
 i(18370,{b=1,f=53,lvl=17,spellID=454679}),
 i(24345,{c={11},f=200,lvl=25,rank=4,rwp=40001,spellID=31709,u=2}),
 crit(546,{achID=644,id=3})}}),
-n(14506,{cost={{"i",18663,1},{"i",18629,1},{"i",18670,1}},description="|cff3399ffSTEP 1:|r Warlock with (Dreadsteed of Xoroth) FOS\n|cff3399ffSTEP 2:|r Warlock buys Xorothian Glyphs,  Black Lodestone & J'eevee's Jar from Gorzeeki Wildeyes. (Burning Steppes - 8.2,35.8)\n|cff3399ffSTEP 3:|r Kill Immol'thar.\n|cff3399ffSTEP 4:|r Warlock uses J'eevee's Jar while standing on platform summoning Wheel of the Black March, Doomsday Candle, & Bell of Dethmoora.\n|cff3399ffSTEP 5:|r Kill stuff & use Black Lodestone to keep 3 artifacts active, this requires soul shards to do.\n|cff3399ffSTEP 6:|r Once creatures stop spawning, use Xorothian Glyphs to summon the dreadsteed.\n|cff3399ffSTEP 7:|r Kill Lord Hel'nurath & collect loot.",rwp=40003,sourceQuests={7631},u=2,g={
+n(14506,{cost={{"i",18663,1},{"i",18629,1},{"i",18670,1}},description="|cff3399ffSTEP 1:|r Warlock with (Dreadsteed of Xoroth) FOS\n|cff3399ffSTEP 2:|r Warlock buys Xorothian Glyphs,  Black Lodestone & J'eevee's Jar from Gorzeeki Wildeyes. (Burning Steppes - 8.2,35.8)\n|cff3399ffSTEP 3:|r Kill Immol'thar.\n|cff3399ffSTEP 4:|r Warlock uses J'eevee's Jar while standing on platform summoning Wheel of the Black March, Doomsday Candle, & Bell of Dethmoora.\n|cff3399ffSTEP 5:|r Kill stuff & use Black Lodestone to keep 3 artifacts active, this requires soul shards to do.\n|cff3399ffSTEP 6:|r Once creatures stop spawning, use Xorothian Glyphs to summon the dreadsteed.\n|cff3399ffSTEP 7:|r Kill Lord Hel'nurath & collect loot.",rwp=40003,sourceQuests={7631},u=6,g={
 s(7477,18757,{b=1,f=4,loc=41,lvl=24,u=6}),
 s(7475,18755,{b=1,f=31,lvl=24,u=6}),
 s(7476,18756,{b=1,f=8,lvl=24,u=6}),
@@ -4602,13 +4602,13 @@ s(4783,13175,{awp=100107,b=1,f=32,lvl=23}),
 i(13177,{b=1,f=51,lvl=23}),
 s(4784,13179,{b=1,f=6,loc=43,lvl=23}),
 s(6807,16676,{f=6,loc=44,lvl=23,rwp=40003,u=2}),
-s(8748,22231,{b=1,f=4,loc=47,lvl=23})}}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
-n(16080,{description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",providers={{"i",22057}},qis={21984,22046},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
+s(8748,22231,{b=1,f=4,loc=47,lvl=23})}}),
+n(16080,{description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: The Beast's room. (Requires parkour inside LBRS to the ledge above the entrance portal to access the old UBRS areas)",providers={{"i",22057}},qis={21984,22046},rwp=40003,sourceQuests={8996},u=6,u_sqs=1,g={
 s(8788,22322,{b=1,f=23,lvl=23,u=6}),
 s(8787,22319,{b=1,f=1,lvl=23,u=6}),
 s(8789,22325,{b=1,f=5,loc=45,lvl=23,u=6}),
 s(8780,22306,{b=1,c={5,8,9},f=4,loc=45,lvl=23,u=6}),
-i(22398,{b=1,rwp=50004,u=2})}})),
+i(22398,{b=1,rwp=50004,u=2})}}),
 n(9596,{coords={
 [250]={{49,55},{53,67}}},description="This is a Rare Creature and, as such, is not always present.",g={
 r(16994,{itemID=12838,requireSkill=164,skillID=2477}),
@@ -4751,8 +4751,8 @@ s(4612,12965,{b=1,f=4,loc=46,lvl=23,u=2}),
 s(4611,12964,{b=1,f=6,loc=46,lvl=23,u=2}),
 s(8781,22311,{b=1,c={5,8,9},f=4,loc=47,lvl=23,rwp=40003,u=2}),
 prof(393,{u=2,g={
-i(12731,{u=2})}})}}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
-n(16042,{description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",providers={{"i",22057}},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
+i(12731,{u=2})}})}}),
+n(16042,{description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: War Master Voone's room.",providers={{"i",22057}},rwp=40003,sourceQuests={8996},u=6,u_sqs=1,g={
 s(8796,22336,{b=1,f=8,lvl=23,u=6}),
 s(8795,22335,{b=1,f=28,lvl=23,u=6}),
 s(8776,22302,{b=1,c={5,8,9},f=4,loc=40,lvl=24,u=6}),
@@ -4760,7 +4760,7 @@ i(22340,{b=1,f=51,lvl=23,u=6}),
 s(8797,22337,{b=1,f=3,lvl=23,u=6}),
 s(8800,22343,{b=1,f=6,loc=44,lvl=23,u=6}),
 s(8799,22342,{b=1,f=4,loc=46,lvl=23,u=6}),
-i(22339,{b=1,f=52,lvl=23,u=6})}})),
+i(22339,{b=1,f=52,lvl=23,u=6})}}),
 n(10363,{rwp=60002,u=2,g={
 ach(1307,{u=2}),
 i(16663,{rwp=40003,u=2}),
@@ -5905,13 +5905,13 @@ s(7435,18693,{b=1,f=4,loc=44,lvl=17,modID=1}),
 s(5348,14340,{b=1,f=4,loc=42,lvl=17,modID=1}),
 s(5437,14502,{b=1,f=5,loc=45,lvl=17,modID=1}),
 s(5439,14522,{b=1,f=6,loc=46,lvl=17,modID=1}),
-s(7436,18694,{b=1,f=6,loc=47,lvl=17,modID=1})}}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
-n(16118,{description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Ras Frostwhisper's room.",providers={{"i",22057}},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
+s(7436,18694,{b=1,f=6,loc=47,lvl=17,modID=1})}}),
+n(16118,{description="This boss can be summoned in Ras Frostwhisper's room using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Ras Frostwhisper's room.",providers={{"i",22057}},rwp=40003,sourceQuests={8996},u=6,u_sqs=1,g={
 s(8793,22332,{awp=100105,b=1,f=25,lvl=17,modID=1,u=6}),
 s(8794,22333,{awp=100105,b=1,f=24,lvl=17,modID=1,u=6}),
 s(8777,22303,{b=1,c={5,8,9},f=4,loc=46,lvl=24,modID=1,u=2}),
 i(22326,{awp=100105,b=1,f=52,lvl=17,modID=1,u=6}),
-i(22331,{awp=100105,b=1,f=52,lvl=17,modID=1,u=6})}})),
+i(22331,{awp=100105,b=1,f=52,lvl=17,modID=1,u=6})}}),
 h(-19,{awp=100105,crs={10502,10504,10505,10507,10901,11261},description="The following items can drop from any of the mini-bosses in the crypt before fighting Darkmaster Gandling. The bosses other than Lady Illucia Barov have an item or two exclusive to their own drop tables.",g={
 s(7427,18680,{b=1,f=32,lvl=17,modID=1}),
 s(7430,18683,{b=1,f=23,lvl=17,modID=1}),
@@ -6705,13 +6705,13 @@ i(12103,{b=1,f=51,lvl=18}),
 s(7453,18720,{b=1,f=4,loc=41,lvl=18}),
 s(4847,13358,{b=1,f=5,loc=41,lvl=18}),
 s(4852,13369,{b=1,f=4,loc=47,lvl=18}),
-s(6856,16725,{b=1,f=7,loc=47,lvl=23,rwp=40003,u=2})}}),(function(t)_.AssignFieldValue(t,"u",6)return t end)(
-n(16102,{awp=11101,crs={16101},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Balnazzar's room.",providers={{"i",22057},{"o",181083}},qis={21984,22046},rwp=40003,sourceQuests={8996},u=2,u_sqs=1,g={
-s(8791,22329,{b=1,f=1,lvl=24,u=2}),
-i(22327,{b=1,f=51,lvl=24,u=2}),
-s(8775,22301,{b=1,c={5,8,9},f=4,loc=42,lvl=24,u=2}),
-s(8790,22328,{b=1,f=7,loc=46,lvl=24,u=2}),
-i(22334,{b=1,f=52,lvl=17,u=2})}})),
+s(6856,16725,{b=1,f=7,loc=47,lvl=23,rwp=40003,u=2})}}),
+n(16102,{awp=11101,crs={16101},description="This boss can be summoned using the Brazier of Beckoning or the Brazier of Invocation, which can summon any of the spirits.\nSummon Location: Balnazzar's room.",providers={{"i",22057},{"o",181083}},qis={21984,22046},rwp=40003,sourceQuests={8996},u=6,u_sqs=1,g={
+s(8791,22329,{b=1,f=1,lvl=24,u=6}),
+i(22327,{b=1,f=51,lvl=24,u=6}),
+s(8775,22301,{b=1,c={5,8,9},f=4,loc=42,lvl=24,u=6}),
+s(8790,22328,{b=1,f=7,loc=46,lvl=24,u=6}),
+i(22334,{b=1,f=52,lvl=17,u=6})}}),
 n(16387,{description="Summoned and defeated as part of the Atiesh quest chain to get the Greatstaff of the Guardian.",rwp=30002,u=2,g={
 s(8942,22736,{b=1,collectible=false,f=25,spellID=28347,u=2})}}),
 d(24,{sym={{"sub","tw_instance",236}}})}}),

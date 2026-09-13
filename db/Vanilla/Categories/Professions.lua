@@ -128,7 +128,7 @@ r(16728,{learnedAt=300,requireSkill=9788}),
 r(16729,{learnedAt=300,requireSkill=9788}),
 r(16724,{learnedAt=300,requireSkill=9788})}}),
 cat(219,{requireSkill=164,g={
-r(16660,{awp=20001,learnedAt=290,requireSkill=9788,u=1}),
+r(16660,{awp=20003,learnedAt=290,requireSkill=9788,u=1}),
 r(20873,{learnedAt=300,requireSkill=9788})}}),
 cat(222,{requireSkill=164,g={
 r(20874,{learnedAt=295,requireSkill=9788})}}),

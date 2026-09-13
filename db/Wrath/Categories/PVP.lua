@@ -16,9 +16,9 @@ ach(869,{pvp=1,u=12}),
 ach(870,{awp=30002,pvp=1,u=12,g={
 title(94,{pvp=1,r=2,u=12}),
 title(95,{pvp=1,r=1,u=12})}}),
-ach(230,{awp=20001,pvp=1,r=2,sym={{"meta_achievement",1167,1169,1172,1171}},u=17,g={
+ach(230,{awp=20003,pvp=1,r=2,sym={{"meta_achievement",1167,1169,1172,1171}},u=17,g={
 title(210,{awp=30002,pvp=1,u=17})}}),
-ach(1175,{awp=20001,pvp=1,r=1,sym={{"meta_achievement",1168,1170,1173,1171}},u=17,g={
+ach(1175,{awp=20003,pvp=1,r=1,sym={{"meta_achievement",1168,1170,1173,1171}},u=17,g={
 title(210,{awp=30002,pvp=1,u=17})}}),
 ach(611,{awp=30002,maps={1456},providers={{"n",3057}},pvp=1,r=2,rwp=90001}),
 ach(449,{awp=10400,pvp=1,r=1,rwp=20001,u=2,g={
