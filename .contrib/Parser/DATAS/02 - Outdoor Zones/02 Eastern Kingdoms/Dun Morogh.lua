@@ -2919,6 +2919,7 @@ root(ROOTS.Zones, m(EASTERN_KINGDOMS, {
 					["coord"] = { 49.9, 45.0, DUN_MOROGH },
 					["timeline"] = { ADDED_4_0_3 },
 					["races"] = ALLIANCE_ONLY,
+					["_drop"] = { "g" },	-- Refreshing Spring Water
 				}),
 				q(25667, {	-- Culling the Wendigos
 					["sourceQuest"] = 25724,	-- Frostmane Aggression

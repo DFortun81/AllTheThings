@@ -1391,6 +1391,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["requireSkill"] = ALCHEMY,
 					["races"] = ALLIANCE_ONLY,
 					["lvl"] = lvlsquish(4, 4, 1),
+					["_drop"] = { "g" },	-- Earthroot and Mageroyal
 				}),
 				q(2259, {	-- Erion Shadewhisper
 					["sourceQuest"] = 2241,	-- The Apple Falls

@@ -1320,6 +1320,7 @@ root(ROOTS.Zones, m(KALIMDOR, applyclassicphase(TBC_PHASE_ONE, {
 							["cost"] = { { "i", 23654, 1 } },	-- Draenei Fishing Net
 						}),
 					},
+					["_drop"] = { "g" },	-- Shiny Bauble
 				}),
 				q(9514, {	-- Rune Covered Tablet
 					["sourceQuest"] = 9506,	-- A Small Start
