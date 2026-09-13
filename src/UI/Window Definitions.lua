@@ -2268,7 +2268,7 @@ local function BuildWindow(suffix)
 
 	-- Create the window instance.
 	---@class ATTWindow: BackdropTemplate, ATTFrameClass
-	local window = CreateFrame("Frame", nil, UIParent, BackdropTemplateMixin and "BackdropTemplate");
+	local window = CreateFrame("Frame", "ATTWindow"..suffix, UIParent, BackdropTemplateMixin and "BackdropTemplate");
 	window:SetClampedToScreen(true);
 	window:SetToplevel(true);
 	window:EnableMouse(true);
