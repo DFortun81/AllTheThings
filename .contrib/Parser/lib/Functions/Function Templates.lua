@@ -47,8 +47,6 @@ end
 
 FUNCTION_TEMPLATES = {
 	OnInit = {
-		-- function applies the CONDITIONALLY_AVAILABLE phase to the group and nested content
-		ConditionallyAvailable = [[function(t) _.AssignFieldValue(t, "u", ]] .. CONDITIONALLY_AVAILABLE .. [[) return t end]],
 		GenerateShouldExcludeFromTooltipForBuffs = function(...)
 			local buffs = {...};
 			local OnInitName = "ShouldExcludeFromTooltipForBuffs_"..table.concat(buffs, "_")

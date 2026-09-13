@@ -1403,7 +1403,7 @@ n_conditional = function(id, t)							-- Create an NPC Object which is Condition
 	t = n(id, t);
 	-- #if NOT ANYCLASSIC
 	t.u = CONDITIONALLY_AVAILABLE
-	bubbleDown({u=CONDITIONALLY_AVAILABLE}, t)
+	bubbleDownFiltered({u=CONDITIONALLY_AVAILABLE},FILTERFUNC_NoTimeline,t)
 	-- #endif
 	return t;
 end

@@ -1499,7 +1499,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, applyclassicphase(PHASE_ONE_D
 						-- #endif
 						["provider"] = { "i", 22057 },	-- Brazier of Invocation
 						-- #if AFTER 4.0.3
-						["OnInit"] = FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
 						["sourceQuest"] = 8996,	-- Return to Bodley
 						["u_sqs"] = true,	-- remove the u flag if sourcequests are completed
 						-- #endif

@@ -1387,19 +1387,6 @@ local SCHOLOMANCE_LEGACY_DATA = bubbleDownSelf({ ["timeline"] = { ADDED_1_3_0, R
 			-- #endif
 		-- #endif
 
-		["OnInit"] =
-			-- #if AFTER 10.1.5
-			FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
-			-- #elseif AFTER 4.0.3
-				-- #if BEFORE 5.0.4
-				FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
-				-- #else
-				nil,
-				-- #endif
-			-- #else
-			nil,
-			-- #endif
-
 		["provider"] = { "i", 22057 },	-- Brazier of Invocation
 		["timeline"] = { REMOVED_4_0_3 },
 		["groups"] = {

@@ -4988,11 +4988,8 @@ namespace ATT
                     break;
                 case RemovedStatus.REMOVED_FROM_GAME:
                 case RemovedStatus.DELETED_FROM_GAME:
-                    // don't replace CONDITIONALLY_AVAILABLE since it needs to be overridden by OnInit funcs, but only when timeline is inherited!
-                    if (!data.TryGetValue("_inherited", out inheritedFields)
-                        || !inheritedFields.Contains("timeline")
-                        || !data.TryGetValue("u", out u)
-                        || u != 6)
+                    // don't replace CONDITIONALLY_AVAILABLE since it needs to be overridden by OnInit funcs!
+                    if (!data.TryGetValue("u", out u) || u != 6)
                     {
                         data["u"] = 2;
                     }

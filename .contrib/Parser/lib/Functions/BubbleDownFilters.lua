@@ -15,3 +15,6 @@ function FILTERFUNC_objectID(t) return t.objectID and true; end
 
 -- Only match groups with questID/encounterID
 function FILTERFUNC_questIDORencounterID(t) return t.questID or t.encounterID and true; end
+
+-- Only match groups without an explicit timeline
+function FILTERFUNC_NoTimeline(t) return not t.timeline and true; end

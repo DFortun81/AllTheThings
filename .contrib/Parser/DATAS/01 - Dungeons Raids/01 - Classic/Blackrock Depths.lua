@@ -2948,7 +2948,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							["description"] = "Requires Banner of Provocation (Dungeon Set 2 Questline) to summon this boss. Loot the grey chest on the grey grate after killing the mobs. You must use the banner before the non-elites are killed.\nSummon Location: Ring of Law.",
 							["timeline"] = { REMOVED_4_0_3 },
 							-- #if AFTER 4.0.3
-							["OnInit"] = FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
 							["sourceQuest"] = 9015,	-- The Challenge
 							["u_sqs"] = true,	-- remove the u flag if sourcequests are completed
 							-- #endif

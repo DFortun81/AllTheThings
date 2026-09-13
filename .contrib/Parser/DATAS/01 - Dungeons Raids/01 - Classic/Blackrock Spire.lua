@@ -1870,7 +1870,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 				-- #if AFTER 4.0.3
 				["sourceQuest"] = 8996,	-- Return to Bodley
 				["u_sqs"] = true,	-- remove the u flag if sourcequests are completed
-				["OnInit"] = FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
 				-- #endif
 
 				["provider"] = { "i", 22057 },	-- Brazier of Invocation
@@ -2957,19 +2956,6 @@ BLACKROCK_SPIRE_INSTANCE = inst(229, {	-- Blackrock Spire
 						["u_providers"] = true,	-- remove the u flag if providers are available
 						-- #endif
 					-- #endif
-
-					["OnInit"] =
-						-- #if AFTER 11.0.0
-						FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
-						-- #elseif AFTER 4.0.3
-							-- #if BEFORE 6.0.2
-							FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
-							-- #else
-							nil,
-							-- #endif
-						-- #else
-						nil,
-						-- #endif
 
 					["provider"] = { "i", 22057 },	-- Brazier of Invocation
 					["timeline"] = { REMOVED_4_0_3 },

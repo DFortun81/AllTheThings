@@ -1368,7 +1368,7 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 							}),
 						},
 					}),
-					applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n(16102, {	-- Sothos
+					applyclassicphase(PHASE_FIVE_TIER_ZERO_POINT_FIVE_SETS, n_conditional(16102, {	-- Sothos
 						["crs"] = {
 							16101,	-- Jarien
 						},
@@ -1387,7 +1387,6 @@ root(ROOTS.Instances, expansion(EXPANSION.CLASSIC, {
 						-- #if AFTER 10.1.5
 						["sourceQuest"] = 8996,	-- Return to Bodley
 						["u_sqs"] = true,	-- remove the u flag if sourcequests are completed
-						["OnInit"] = FUNCTION_TEMPLATES.OnInit.ConditionallyAvailable,
 						-- #endif
 
 						["providers"] = {
