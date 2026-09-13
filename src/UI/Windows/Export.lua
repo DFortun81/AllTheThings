@@ -71,9 +71,9 @@ app:CreateWindow("Export", {
 		-- "export",	-- TODO uncomment when fixing how commands are defined
 	},
 	OnInit = function(self, handlers)
-		local data = app.CreateRawText("Export", {
+		local data = app.CreateRawText(L.EXPORT, {
 			-- icon = app.asset("Interface_Vendor"),
-			description = "Allows exporting the data of an active window using a specified Style.",
+			description = L.EXPORT_TOOLTIP,
 			g = {},
 		})
 		local styleGroup = app.CreateRawText("Style", {

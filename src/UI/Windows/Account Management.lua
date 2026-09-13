@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 local GetProgressColorText = app.Modules.Color.GetProgressColorText;
 
 -- Global locals
@@ -2428,9 +2429,9 @@ app:CreateWindow("Account Management", {
 				end,
 			}),
 		};
-		self:SetData(app.CreateRawText("Account Management", {
+		self:SetData(app.CreateRawText(L.ACCOUNT_MANAGEMENT, {
 			icon = app.asset("WindowIcon_AccountManagement"),
-			description = "This list shows you all of the functionality related to managing your account data.",
+			description = L.ACCOUNT_MANAGEMENT_WINDOW_TOOLTIP,
 			visible = true,
 			expanded = true,
 			indent = 0,
@@ -2626,9 +2627,9 @@ app:CreateWindow("Character Unique Data", {
 		end
 
 		-- Initialize the window data object
-		self:SetData(app.CreateRawText("Character Unique Data", {
+		self:SetData(app.CreateRawText(L.CHARACTER_UNIQUE_DATA, {
 			icon = 134400,
-			description = "Unique Data for this character only. Do not remove this character if you don't want to lose these things.",
+			description = L.CHARACTER_UNIQUE_DATA_TOOLTIP,
 			visible = true,
 			back = 1,
 			g = {},

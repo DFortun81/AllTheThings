@@ -1,5 +1,6 @@
 -- App locals
 local appName, app = ...;
+local L = app.L;
 local type,wipe,ipairs,pairs,rawget,select,tinsert,tonumber, math_floor,setmetatable
 	= type,wipe,ipairs,pairs,rawget,select,tinsert,tonumber, math.floor,setmetatable
 
@@ -585,9 +586,9 @@ app:CreateWindow("Debugger", {
 		app.print("Debugger Data Saved");
 	end,
 	OnInit = function(self, handlers)
-		self:SetData(app.CreateRawText("Session History", {
+		self:SetData(app.CreateRawText(L.SESSION_HISTORY, {
 			icon = app.asset("WindowIcon_RaidAssistant"),
-			description = "This keeps a visual record of all of the quests, maps, loot, and vendors that you have come into contact with since the session was started.",
+			description = L.SESSION_HISTORY_DESC,
 			visible = true,
 			expanded = true,
 			back = 1,

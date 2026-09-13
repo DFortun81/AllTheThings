@@ -369,9 +369,9 @@ app:CreateWindow("Auctions", {
 			end
 		end
 		self:SetMovable(false);
-		self:SetData(app.CreateRawText("Auction Module", {
+		self:SetData(app.CreateRawText(L.AUCTION_MODULE, {
 			icon = 133784,
-			description = "This is a debug window for all of the auction data that was returned. Turn on 'Account Mode' to show items usable on any character on your account!",
+			description = L.AUCTIONS_TOOLTIP,
 			SortType = "name",
 			visible = true,
 			expanded = true,

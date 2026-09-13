@@ -202,9 +202,9 @@ app:CreateWindow("Import", {
 			self:Rebuild()
 		end
 
-		self:SetData(app.CreateRawText("Import", {
+		self:SetData(app.CreateRawText(L.IMPORT, {
 			icon = app.asset("logo_32x32"),
-			description = "Import objects using their IDs, separated by commas.",
+			description = L.IMPORT_TOOLTIP,
 			visible = true,
 			back = 1,
 			g = {}

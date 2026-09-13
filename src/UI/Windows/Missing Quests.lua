@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 -- This window has a dependency on Questie in Classic.
 if not app.IsClassic then return; end
 local SearchForField = app.SearchForField;
@@ -14,9 +15,9 @@ app:CreateWindow("Missing Quests", {
 	},
 	HideFromSettings = true,
 	OnInit = function(self, handlers)
-		self:SetData(app.CreateRawText("Missing Quests", {
+		self:SetData(app.CreateRawText(L.MISSING_QUESTS, {
 			icon = app.asset("Interface_Quest"),
-			description = "This window shows you all of the quests that are missing from ATT that exist in Questie or in your Saved Variables.",
+			description = L.MISSING_QUESTS_TOOLTIP,
 			visible = true,
 			expanded = true,
 			back = 1,

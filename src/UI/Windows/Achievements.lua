@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 local contains = app.contains
 
 -- Global locals
@@ -137,7 +138,7 @@ app:CreateWindow("Achievements", {
 	Commands = { "attachievements", "attach" },
 	OnInit = function(self, handlers)
 		self:SetData(app.CreateCustomHeader(app.HeaderConstants.ACHIEVEMENTS, {
-			description = "This list shows you all of the achievements that you can collect.",
+			description = L.ACHIEVEMENTS_TOOLTIP,
 			IgnoreBuildRequests = true,
 			visible = true,
 			expanded = true,
@@ -242,7 +243,7 @@ app:CreateWindow("Achievements", {
 			end
 		}));
 		if not (GetCategoryInfo and GetCategoryInfo(92) ~= "") then
-			self.data.description = "This section isn't a thing until Wrath, but by popular demand and my own insanity, I've added this section so you can track your progress for at least one of the big ticket achievements if you have the stomach for it.";
+			self.data.description = L.ACHIEVEMENTS_WRATH_SECTION_DESC;
 		end
 	end,
 });

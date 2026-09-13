@@ -1,5 +1,6 @@
 -- App locals
 local _, app = ...;
+local L = app.L;
 
 -- Implementation
 app:CreateWindow("Exploration", {
@@ -7,7 +8,7 @@ app:CreateWindow("Exploration", {
 	Commands = { "attexploration" },
 	OnInit = function(self, handlers)
 		self:SetData(app.CreateCustomHeader(app.HeaderConstants.EXPLORATION, {
-			description = "This window shows you all of the exploration locations that you can complete. You may need to Shift+Left Click any header in ATT and also relog for these to be detected perfectly.",
+			description = L.EXPLORATION_TOOLTIP,
 			visible = true,
 			expanded = true,
 			back = 1,
