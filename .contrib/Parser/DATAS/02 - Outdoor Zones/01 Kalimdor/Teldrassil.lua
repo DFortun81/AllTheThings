@@ -263,6 +263,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 								-- #endif
 							},
 							["races"] = ALLIANCE_ONLY,
+							["_drop"] = { "g" },	-- Refreshing Spring Water
 						}),
 						q(3118, {	-- Encrypted Sigil
 							["sourceQuests"] = {
