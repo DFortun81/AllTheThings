@@ -4507,6 +4507,18 @@ _.FlightPathNames = {
 	[3305] = "Labyrinth, Entrance to Halazzi's Lair",
 	[3306] = "Labyrinth, Halazzi's Lair",
 	[3307] = "Labyrinth, Entrance to The Central Chamber",
+	[3308] = "Labyrinth, Central Chamber",
+	[3309] = "Labyrinth, Entrance to The Catacombs",
+	[3310] = "Labyrinth, The Catacombs",
+	[3311] = "Labyrinth, Entrance to The Central Chamber",
+	[3312] = "Labyrinth, Entrance to The Cave Towers",
+	[3313] = "Labyrinth, The Cave Towers",
+	[3314] = "Labyrinth, Entrance to Jan'alai's Refuge",
+	[3315] = "Labyrinth, Jan'alai's Refuge",
+	[3316] = "Labyrinth, Entrance to Akil'zon's Roost",
+	[3318] = "Labyrinth, Entrance to Nalorakk's Den",
+	[3319] = "Labyrinth, Nalorakk's Den",
+	[3329] = "Labyrinth, Entrance to The Catacombs",
 }
 -- Glyphs Database Module
 _.GlyphDB = {

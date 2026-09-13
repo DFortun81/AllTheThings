@@ -124950,6 +124950,7 @@ ach(14281,{
 crit(48209,{achID=14280,id=1})}),
 ach(14514,{pvp=1}),
 ach(14311,{
+de(28569,{awp=120105,itemID=284546,spellID=1316247}),
 crit(48579,{achID=14825,id=12})}),
 ach(14768,{
 crit(49947,{achID=14768,coords={

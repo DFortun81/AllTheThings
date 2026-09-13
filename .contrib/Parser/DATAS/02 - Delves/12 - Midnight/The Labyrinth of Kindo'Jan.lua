@@ -15,7 +15,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				-- TODO: Timeline out correctly
 					--title(XXX),	-- <Name>, Fabled Vanquisher of Kindo'jan
 				})),
-				ach(63720),	-- Happy Hexmask Collector
+				ach(63720, {	-- Happy Hexmask Collector
+					["providers"] = {
+						{ "o", 672624 },	-- Fiery Hexmask
+						{ "o", 672785 },	-- Frozen Hexmask
+						{ "o", 672788 },	-- Thundering Hexmask
+					},
+					["coords"] = {	-- Coordinates are always the same, Hexmasks rotate
+						{ 18.4, 20.5, LABYRINTH_KINDOJAN },
+						{ 50.3, 85.3, LABYRINTH_KINDOJAN },
+						{ 88.4, 53.9, LABYRINTH_KINDOJAN },
+					},
+				}),
 				ach(63717, {	-- Kindo'jan's Labyrinth Discoveries
 					--title(XXX),	-- Treasure Hound <Name>
 				}),
@@ -23,9 +34,18 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 				ach(63715, {	-- Let Me Solo Him: Kindo'Jan
 					i(283363),	-- Loa-Blessed Wayfarer (MOUNT!)
 				}),
-				ach(63718),	-- Lock and Key
+				ach(63718, {	-- Lock and Key
+					["coords"] = {	-- Coordinates of Locked Doors
+						{ 59.3, 26.9, LABYRINTH_KINDOJAN },
+					},
+					["cost"] = { { "i", 282402, 1 } },	-- 1x Archaic Amani Key
+				}),
 				ach(63719, {	-- Lock and Key Master
-					--title(XXX),	-- Lockpickin' <Name>
+					["coords"] = {	-- Coordinates of Locked Doors
+						{ 59.3, 26.9, LABYRINTH_KINDOJAN },
+					},
+					["cost"] = { { "i", 282402, 20 } },	-- 20x Archaic Amani Key
+					--["groups"] = { title(XXX) },	-- Lockpickin' <Name>
 				}),
 				ach(63723),	-- My Labyrinth
 				ach(63716, {	-- The First Hash'ey
@@ -52,60 +72,143 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					--title(XXX),	-- Maze Runner <Name>
 				}),
 			}),
+			n(DELVE_COMPLETION, {
+				i(285807),	-- Heroic Soul Fragment
+				i(285875),	-- Kindo'jan
+			}),
 			n(FACTIONS, {
 				faction(2836),	-- Kindo'Jan's Labyrinth
 			}),
 			n(FLIGHT_PATHS, {
 				fp(3300, {	-- Chamber of Rites
 					["coord"] = { 44.4, 72.1, LABYRINTH_KINDOJAN },
-					--["cr"] = XXXXXX,	-- Kinduru <Herald of de Loa>
-				}),
-				fp(3301, {	-- Entrance to The Reliquary
-					["coord"] = { 35.6, 67.4, LABYRINTH_KINDOJAN },
+					["cr"] = 273261,	-- Kinduru <Herald of de Loa>
 				}),
 				fp(3304, {	-- The Reliquary
 					["coord"] = { 28.5, 67.4, LABYRINTH_KINDOJAN },
-					--["cr"] = XXXXXX,	-- Kinduru <Herald of de Loa>
-				}),
-				fp(3305, {	-- Entrance to Halazzi's Lair
-					["coord"] = { 26.0, 55.9, LABYRINTH_KINDOJAN },
+					["cr"] = 273515,	-- Kinduru <Herald of de Loa>
 				}),
 				fp(3306, {	-- Halazzi's Lair
 					["coord"] = { 20.2, 46.8, LABYRINTH_KINDOJAN },
 					--["cr"] = XXXXXX,	-- Kinduru <Herald of de Loa>
 				}),
-				fp(3307, {	-- Entrance to The Central Chamber
-					["coord"] = { 33.0, 54.9, LABYRINTH_KINDOJAN },
+				fp(3308, {	-- Central Chamber
+					["coord"] = { 44.1, 46.8, LABYRINTH_KINDOJAN },
+					["cr"] = 273569,	-- Kinduru <Herald of de Loa>
 				}),
+				fp(3310, {	-- The Catacombs
+					["coord"] = { 60.2, 68.7, LABYRINTH_KINDOJAN },
+					["cr"] = 273570,	-- Kinduru <Herald of de Loa>
+				}),
+				fp(3313, {	-- The Cave Towers
+					["coord"] = { 83.2, 93.8, LABYRINTH_KINDOJAN },
+					["cr"] = 273575,	-- Kinduru <Herald of de Loa>
+				}),
+				fp(3315, {	-- Jan'alai's Refuge
+					["coord"] = { 25.7, 26.8, LABYRINTH_KINDOJAN },
+					["cr"] = 273572,	-- Kinduru <Herald of de Loa>
+				}),
+				fp(3319, {	-- Nalorakk's Den
+					["coord"] = { 65.2, 32.2, LABYRINTH_KINDOJAN },
+					["cr"] = 273574,	-- Kinduru <Herald of de Loa>
+				}),
+				-- Exo Note: These show up on the Flight Map as places where you can land. They are not actual Flight Path collectibles.
+				fp(3301, { ["collectible"] = false } ),	-- Entrance to The Reliquary
+				fp(3305, { ["collectible"] = false } ),	-- Entrance to Halazzi's Lair
+				fp(3307, { ["collectible"] = false } ),	-- Entrance to The Central Chamber
+				fp(3309, { ["collectible"] = false } ),	-- Entrance to The Catacombs
+				fp(3311, { ["collectible"] = false } ),	-- Entrance to The Central Chamber
+				fp(3312, { ["collectible"] = false } ),	-- Entrance to The Cave Towers
+				fp(3314, { ["collectible"] = false } ),	-- Entrance to Jan'alai's Refuge
+				fp(3316, { ["collectible"] = false } ),	-- Entrance to Akil'zon's Roost
+				fp(3318, { ["collectible"] = false } ),	-- Entrance to Nalorakk's Den
+				fp(3329, { ["collectible"] = false } ),	-- Entrance to The Central Chamber
 			}),
 			--n(QUESTS, {
 			--}),
 			n(TREASURES, {
-				o(676585, {	-- Ancient Chest
-					["coord"] = { 36.9, 72.5, LABYRINTH_KINDOJAN },
-					["questID"] = 98602,
+				header(HEADERS.Achievement, 63717, {	-- Kindo'jan's Labyrinth Discoveries
+					o(659517, {	-- Ancient Chest
+						["coord"] = { 46.9, 67.0, LABYRINTH_KINDOJAN },
+						["questID"] = 97131,
+					}),
+					o(676585, {	-- Ancient Chest
+						["coord"] = { 36.9, 72.5, LABYRINTH_KINDOJAN },
+						["questID"] = 98602,
+					}),
+					o(676624, {	-- Ancient Chest
+						["coord"] = { 21.7, 71.3, LABYRINTH_KINDOJAN },
+						["questID"] = 98607,
+						["groups"] = {
+							i(263517),	-- Ancient Text (JUNK!)
+						},
+					}),
+					o(676625, {	-- Ancient Chest
+						["coord"] = { 29.9, 77.4, LABYRINTH_KINDOJAN },
+						["questID"] = 98608,
+					}),
+					o(676628, {	-- Ancient Chest
+						["coord"] = { 13.9, 37.8, LABYRINTH_KINDOJAN },
+						["questID"] = 98611,
+					}),
+					o(676629, {	-- Ancient Chest
+						["coord"] = { 26.5, 43.0, LABYRINTH_KINDOJAN },
+						["questID"] = 98612,
+					}),
+					o(676639, {	-- Ancient Chest
+						["coord"] = { 28.7, 25.8, LABYRINTH_KINDOJAN },
+						["questID"] = 98620,
+					}),
+					o(676640, {	-- Ancient Chest
+						["coord"] = { 22.1, 32.2, LABYRINTH_KINDOJAN },
+						["questID"] = 98621,
+					}),
+					o(676645, {	-- Ancient Chest
+						["coord"] = { 40.6, 23.0, LABYRINTH_KINDOJAN },
+						["questID"] = 98625,
+					}),
+					o(676648, {	-- Ancient Chest
+						["coord"] = { 68.2, 36.7, LABYRINTH_KINDOJAN },
+						["questID"] = 98628,
+					}),
+					o(676649, {	-- Ancient Chest
+						["coord"] = { 67.9, 30.3, LABYRINTH_KINDOJAN },
+						["questID"] = 98629,
+					}),
+					o(676653, {	-- Ancient Chest
+						["coord"] = { 81.3, 57.7, LABYRINTH_KINDOJAN },
+						["questID"] = 98633,
+					}),
+					o(676657, {	-- Ancient Chest
+						["coord"] = { 86.9, 65.9, LABYRINTH_KINDOJAN },
+						["questID"] = 98634,
+					}),
+					o(676661, {	-- Ancient Chest
+						["coord"] = { 72.4, 68.6, LABYRINTH_KINDOJAN },
+						["questID"] = 98637,
+						["groups"] = {
+							i(263519),	-- Snake Oil (JUNK!)
+						},
+					}),
+					o(676663, {	-- Ancient Chest
+						["coord"] = { 69.2, 73.7, LABYRINTH_KINDOJAN },
+						["questID"] = 98638,
+					}),
+					o(676760, {	-- Ancient Chest
+						["coord"] = { 47.7, 42.7, LABYRINTH_KINDOJAN },
+						["questID"] = 98649,
+					}),
 				}),
-				o(676624, {	-- Ancient Chest
-					["coord"] = { 21.7, 71.3, LABYRINTH_KINDOJAN },
-					["questID"] = 98607,
-					["groups"] = {
-						i(263517),	-- Ancient Text (JUNK!)
-					},
-				}),
-				o(676625, {	-- Ancient Chest
-					["coord"] = { 29.9, 77.4, LABYRINTH_KINDOJAN },
-					["questID"] = 98608,
-				}),
-				o(676628, {	-- Ancient Chest
-					["coord"] = { 13.9, 37.8, LABYRINTH_KINDOJAN },
-					["questID"] = 98611,
-				}),
-				o(676629, {	-- Ancient Chest
-					["coord"] = { 26.5, 43.0, LABYRINTH_KINDOJAN },
-					["questID"] = 98612,
+				o(676583, {	-- Ancient Keyper's Bag
+					["description"] = "Spawns next to the corpse of 'Keeper of the Key' after you defeat him.\n He has a chance to spawn anywhere in the Labyrinth.",
+					["cr"] = 273788,	-- Keeper of the Key
+					["groups"] = { i(282402) },	-- Archaic Amani Key
 				}),
 				o(676747, {	-- Mislaid Treasure
 					["description"] = "Spawns randomly throughout the Labyrinth.",
+				}),
+				o(677411, {	-- Mislaid Treasure
+					["description"] = "Can be found behind the 'Locked Doors' inside the Labyrinth.",
 				}),
 			}),
 			--n(VENDORS, {

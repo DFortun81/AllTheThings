@@ -303,6 +303,10 @@ for i,mapID in ipairs({
 	2623,	-- Naigtal
 	2622,	-- Val
 	-- #endif
+
+	-- #if AFTER 12.1.5
+	2671,	-- The Labyrinth of Kindo'Jan
+	-- #endif
 })
 do table.insert(FlightPathMapIDs, mapID); end
 ExportDB._Compressed.FlightPathDB = true

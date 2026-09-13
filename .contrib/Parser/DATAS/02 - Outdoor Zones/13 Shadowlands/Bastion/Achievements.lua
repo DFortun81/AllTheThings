@@ -455,6 +455,7 @@ root(ROOTS.Zones, m(SHADOWLANDS, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNC
 				crit(50062, {	-- Gift of Devos
 					["_quests"] = { 60895 },
 				}),
+				i(284546, { ["timeline"] = { ADDED_12_1_5 } }),	-- Runic Kyrian Reliquary (DECOR!)
 			}),
 			ach(14768, {	-- What is that Melody?
 				crit(49947, {		-- Hymn of Purity
