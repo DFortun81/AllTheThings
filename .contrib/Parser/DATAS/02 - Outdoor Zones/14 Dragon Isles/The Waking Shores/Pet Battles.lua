@@ -22,9 +22,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["coord"] = { 38.9, 83.3, THE_WAKING_SHORES },
 				["timeline"] = { ADDED_10_0_2_LAUNCH },
 				["_drop"] = { "g" },	-- Drop Polished Pet Charm
-				["sym"] = {{"select","itemID",
-					POLISHED_PET_CHARM,
-				}},
 			}),
 			q(70854, {	-- So How Did It Go?
 				["sourceQuest"] = 70853,	-- A Friend for Lubbins

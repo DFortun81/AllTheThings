@@ -27,7 +27,6 @@ root(ROOTS.Zones, m(DRAGON_ISLES, bubbleDown({ ["timeline"] = { ADDED_10_0_2_LAU
 				["_drop"] = { "g" },	-- Drop Polished Pet Charm
 				["sym"] = {{"select","itemID",
 					92683,	-- Flawless Dragonkin Battle-Stone
-					POLISHED_PET_CHARM,
 				}},
 			}),
 		}),

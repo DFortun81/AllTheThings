@@ -342,9 +342,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 58.5, 61.5, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["_drop"] = { "g" },	-- Drop Polished Pet Charm
-				["sym"] = {{"select","itemID",
-					POLISHED_PET_CHARM,
-				}},
 				["groups"] = {
 					i(155858),	-- Scratchy (QI!)
 				},
@@ -1074,9 +1071,6 @@ root(ROOTS.Zones, m(KUL_TIRAS, bubbleDown({ ["timeline"] = { ADDED_8_0_1 } }, {
 				["coord"] = { 77.0, 82.9, TIRAGARDE_SOUND },
 				["races"] = ALLIANCE_ONLY,
 				["_drop"] = { "g" },	-- Drop Polished Pet Charm
-				["sym"] = {{"select","itemID",
-					POLISHED_PET_CHARM,
-				}},
 			}),
 			q(49401, {	-- Rodrigo's Roost
 				["sourceQuests"] = { 49239 },	-- Dress to Impress
