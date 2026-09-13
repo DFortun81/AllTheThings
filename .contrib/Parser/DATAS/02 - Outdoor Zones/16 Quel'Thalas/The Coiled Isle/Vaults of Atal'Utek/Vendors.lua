@@ -40,22 +40,22 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							["cost"] = { { "c", CORROSIVE_COIN, 2500 } },
 						}),
 						i(275628, {	-- Cauldron of Ula'tek (DECOR!)
-							["cost"] = { { "c", CORROSIVE_COIN, 1000 } },
+							["cost"] = { { "c", CORROSIVE_COIN, 750 } },
 						}),
 						i(275654, {	-- Caustic Venomfang (MOUNT!)
 							["cost"] = { { "c", CORROSIVE_COIN, 10000 } },
 						}),
 						i(271358, {	-- Clutch of Ula'tek (DECOR!)
-							["cost"] = { { "c", CORROSIVE_COIN, 1000 } },
+							["cost"] = { { "c", CORROSIVE_COIN, 750 } },
 						}),
 						i(281620, {	-- Corrosive Cache (DECOR!)
-							["cost"] = { { "c", CORROSIVE_COIN, 2500 } },
+							["cost"] = { { "c", CORROSIVE_COIN, 1500 } },
 						}),
 						i(275631, {	-- Corrosive Writhling (PET!)
 							["cost"] = { { "c", CORROSIVE_COIN, 5000 } },
 						}),
 						i(271604, {	-- Egg of Ula'tek (DECOR!)
-							["cost"] = { { "c", CORROSIVE_COIN, 750 } },
+							["cost"] = { { "c", CORROSIVE_COIN, 500 } },
 						}),
 						i(271888, {	-- Recipe: Liquid Luster (RECIPE!)
 							["cost"] = {
@@ -64,43 +64,43 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 							},
 						}),
 						i(269637, {	-- Serpent-Caller Spike (DECOR!)
-							["cost"] = { { "c", CORROSIVE_COIN, 1000 } },
+							["cost"] = { { "c", CORROSIVE_COIN, 750 } },
 						}),
 						i(266169, {	-- Soulcoiler Canopy (DECOR!)
-							["cost"] = { { "c", CORROSIVE_COIN, 1000 } },
+							["cost"] = { { "c", CORROSIVE_COIN, 750 } },
 						}),
 						i(279919, {	-- Soulcoiler Jaw (DECOR!)
-							["cost"] = { { "c", CORROSIVE_COIN, 2500 } },
+							["cost"] = { { "c", CORROSIVE_COIN, 1500 } },
 						}),
 						i(275578, {	-- Soulcoiler Sconce (DECOR!)
-							["cost"] = { { "c", CORROSIVE_COIN, 750 } },
+							["cost"] = { { "c", CORROSIVE_COIN, 500 } },
 						}),
 						i(279917, {	-- Soulcoiler Skull (DECOR!)
-							["cost"] = { { "c", CORROSIVE_COIN, 2500 } },
+							["cost"] = { { "c", CORROSIVE_COIN, 1500 } },
 						}),
 						i(253473, {	-- Unearthed Amani Sarcophagus Base (DECOR!)
-							["cost"] = { { "c", CORROSIVE_COIN, 1000 } },
+							["cost"] = { { "c", CORROSIVE_COIN, 750 } },
 						}),
 						i(253455, {	-- Unearthed Amani Sarcophagus Lid (DECOR!)
-							["cost"] = { { "c", CORROSIVE_COIN, 750 } },
+							["cost"] = { { "c", CORROSIVE_COIN, 500 } },
 						}),
 						i(267378, {	-- Venom Scholar's Focus (DECOR!)
-							["cost"] = { { "c", CORROSIVE_COIN, 750 } },
+							["cost"] = { { "c", CORROSIVE_COIN, 500 } },
 						}),
 						i(272362, {	-- Venombound Ropes (DECOR!)
-							["cost"] = { { "c", CORROSIVE_COIN, 1000 } },
+							["cost"] = { { "c", CORROSIVE_COIN, 750 } },
 						}),
 						i(280764, {	-- Venomous Defender's Barricade (DECOR!)
-							["cost"] = { { "c", CORROSIVE_COIN, 1000 } },
+							["cost"] = { { "c", CORROSIVE_COIN, 750 } },
 						}),
 						i(281577, {	-- Venomous Globule (DECOR!)
-							["cost"] = { { "c", CORROSIVE_COIN, 750 } },
+							["cost"] = { { "c", CORROSIVE_COIN, 500 } },
 						}),
 						i(271850, {	-- Venomous Tendril (DECOR!)
-							["cost"] = { { "c", CORROSIVE_COIN, 750 } },
+							["cost"] = { { "c", CORROSIVE_COIN, 500 } },
 						}),
 						i(281573, {	-- Venomous Thread (DECOR!)
-							["cost"] = { { "c", CORROSIVE_COIN, 750 } },
+							["cost"] = { { "c", CORROSIVE_COIN, 500 } },
 						}),
 						i(275632, {	-- Volatile Venomfang (PET!)
 							["cost"] = { { "c", CORROSIVE_COIN, 5000 } },

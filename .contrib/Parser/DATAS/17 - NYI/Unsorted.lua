@@ -65,7 +65,6 @@ root(ROOTS.Unsorted, {
 			i(274465),	-- Aggitated Crate of Zandalari Fury
 			i(274467),	-- Crazy Carrot
 			i(274680),	-- Loa-Blessed Orb
-			i(274713),	-- Cache of Amani Treasures
 			i(274767),	-- Seaside Lounge Chair
 			i(274784),	-- Seaside Tiki Frondtree
 			i(274786),	-- Seaside Waterfall Basin

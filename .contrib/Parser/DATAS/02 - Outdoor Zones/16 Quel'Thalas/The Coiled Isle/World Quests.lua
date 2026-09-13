@@ -93,6 +93,9 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 					["coord"] = { 66.8, 32.6, MAP.MIDNIGHT.THE_COILED_ISLE },
 					["minReputation"] = { FACTION_CAPTAIN_TOKKA, 4 },
 				}),
+				q(95807, {	-- Over Easy
+					["coord"] = { 45.5, 29.8, MAP.MIDNIGHT.THE_COILED_ISLE },
+				}),
 				q(94611, {	-- Predators and Prey
 					["coord"] = { 64.7, 66.1, MAP.MIDNIGHT.THE_COILED_ISLE },
 				}),
