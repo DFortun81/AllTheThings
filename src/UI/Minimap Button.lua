@@ -11,7 +11,7 @@ local math_floor = math.floor;
 local GameTooltip = GameTooltip;
 
 -- Minimap Button
-local MinimapButton;
+local MinimapButton, LDI
 function AllTheThings_MinimapButtonOnClick(self, button)
 	if button == "RightButton" then
 		-- Right Button opens the Options menu.
@@ -145,6 +145,15 @@ app.SetMinimapButtonRadius = function(radius)
 	if MinimapButton then MinimapButton:update(); end
 end
 app.SetMinimapButtonSettings = function(visible, size)
+	if LDI then
+		if visible then
+			LDI:Show(L.TITLE)
+		else
+			LDI:Hide(L.TITLE)
+		end
+		MinimapButton:SetSize(size, size)
+		return
+	end
 	if visible then
 		(MinimapButton or CreateMinimapButton()):SetSize(size, size);
 		MinimapButton:Show();
@@ -154,17 +163,44 @@ app.SetMinimapButtonSettings = function(visible, size)
 end
 
 -- Register with the Data Broker
-app.AddEventHandler("OnStartup", function()
+app.AddEventHandler("OnLoad", function()
 	if not LibStub then return end
 
 	local LDB = LibStub:GetLibrary("LibDataBroker-1.1", true)
-	if not LDB then return end
+	if LDB then
+		local o = LDB:NewDataObject(L.TITLE, {
+			type = "launcher",
+			icon = app.asset("Discord_2_64"),
+			OnClick = AllTheThings_MinimapButtonOnClick,
+			OnEnter = AllTheThings_MinimapButtonOnEnter,
+			OnLeave = AllTheThings_MinimapButtonOnLeave,
+		});
 
-	LDB:NewDataObject(L["TITLE"], {
-		type = "launcher",
-		icon = app.asset("logo_32x32"),
-		OnClick = AllTheThings_MinimapButtonOnClick,
-		OnEnter = AllTheThings_MinimapButtonOnEnter,
-		OnLeave = AllTheThings_MinimapButtonOnLeave,
-	});
+		LDI = LibStub:GetLibrary("LibDBIcon-1.0", true)
+		if LDI then
+			local MinimapPos = AllTheThingsSavedVariables.MinimapButtonAngle or 193.47782
+			local function UpdateMinimapPosToSettings()
+				AllTheThingsSavedVariables.MinimapButtonAngle = MinimapPos
+			end
+			-- re-routing table to ATT settings instead of a static table
+			local db = setmetatable({}, {
+				__index = function(t,key)
+					if key == "hide" then return not app.Settings:GetTooltipSetting("MinimapButton") end
+					if key == "minimapPos" then return MinimapPos or 193.47782 end
+				end,
+				__newindex = function(t,key,val)
+					-- this is called every frame while you drag a minimap button
+					-- so let's just wrap all those calls into a 0.5 second callback while caching the new value
+					if key == "minimapPos" then MinimapPos = val; app.CallbackHandlers.DelayedCallback(UpdateMinimapPosToSettings, 0.5) end
+				end
+			})
+			LDI:Register(L.TITLE, o, db)
+			MinimapButton = LDI:GetMinimapButton(L.TITLE)
+			-- clean up the default button
+			MinimapButton.icon:SetAllPoints()
+			MinimapButton.border:Hide()
+			MinimapButton.border = nil
+			MinimapButton:SetHighlightTexture(app.asset("MinimapHighlight_64x64"));
+		end
+	end
 end);
