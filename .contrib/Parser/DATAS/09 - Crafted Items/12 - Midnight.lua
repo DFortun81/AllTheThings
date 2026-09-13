@@ -2453,7 +2453,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 			q(97499, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
 			q(97500, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
 			q(97501, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
-			--97502
+			q(97502, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
 			q(97503, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
 			q(97504, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
 			q(97505, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??

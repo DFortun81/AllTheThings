@@ -9,6 +9,11 @@ root(ROOTS.Zones, m(MAP.MIDNIGHT.QUELTHALAS, {
 				["icon"] = 7903180,
 				["groups"] = {
 					faction(FACTION_ZULJARRAS_FORCES),
+					n(ACHIEVEMENTS, {
+						ach(63838, {	-- Zul'jarra's Forces Champion
+							["minReputation"] = { FACTION_ZULJARRAS_FORCES, 20 },	-- Zul'Jarra's Forces, Renown 20
+						}),
+					}),
 					title(778, {	-- <Name>, Hash'ura of Zul'jarra
 						["minReputation"] = { FACTION_ZULJARRAS_FORCES, 20 },	-- Zul'Jarra's Forces, Renown 20
 					}),
