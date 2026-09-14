@@ -3983,13 +3983,13 @@ local function OnLOOT_READY()
 			end
 		end
 
-		-- make sure all the missing loot is actually Sourced somewhere before reporting it
+		-- make sure all the missing & collectible loot is actually Sourced somewhere before reporting it
 		if next(missingLootItems) then
 			local o
 			for itemID in pairs(missingLootItems) do
 				o = SearchForObject("itemID", itemID)
 				-- don't report missing items when verifying loot, we probably don't care about sourcing them
-				if o and o._missing then
+				if o and o._missing and o.collectible then
 					missingLootItems[itemID] = nil
 					app.PrintDebug("removed missing scanned loot",app:SearchLink(o))
 				end
