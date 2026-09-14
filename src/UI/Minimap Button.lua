@@ -11,7 +11,7 @@ local math_floor = math.floor;
 local GameTooltip = GameTooltip;
 
 -- Minimap Button
-local MinimapButton, LDI
+local MinimapButton, UseLDI
 function AllTheThings_MinimapButtonOnClick(self, button)
 	if button == "RightButton" then
 		-- Right Button opens the Options menu.
@@ -145,11 +145,11 @@ app.SetMinimapButtonRadius = function(radius)
 	if MinimapButton then MinimapButton:update(); end
 end
 app.SetMinimapButtonSettings = function(visible, size)
-	if LDI then
+	if UseLDI then
 		if visible then
-			LDI:Show(L.TITLE)
+			UseLDI:Show(L.TITLE)
 		else
-			LDI:Hide(L.TITLE)
+			UseLDI:Hide(L.TITLE)
 		end
 		MinimapButton:SetSize(size, size)
 		return
@@ -177,7 +177,7 @@ local function RegisterDataBrokers()
 			OnLeave = AllTheThings_MinimapButtonOnLeave,
 		});
 
-		LDI = LibStub:GetLibrary("LibDBIcon-1.0", true)
+		local LDI = LibStub:GetLibrary("LibDBIcon-1.0", true)
 		if LDI then
 			local MinimapPos = AllTheThingsSavedVariables.MinimapButtonAngle or 193.47782
 			local function UpdateMinimapPosToSettings()
@@ -204,10 +204,20 @@ local function RegisterDataBrokers()
 				MinimapButton.border = nil
 			end
 			MinimapButton:SetHighlightTexture(app.asset("MinimapHighlight_64x64"))
+			-- move the ATT button to highest level to match when created without LibDB smile
+			MinimapButton:SetFixedFrameStrata(false)
+			MinimapButton:SetFixedFrameLevel(false)
+			MinimapButton:SetFrameStrata("HIGH")
+			MinimapButton:Raise()
+			MinimapButton:SetFixedFrameLevel(true)
+			MinimapButton:SetFixedFrameStrata(true)
+			-- only assign if Minimap button was fully successful
+			UseLDI = LDI
 		end
 	end
 end
 app.AddEventHandler("OnLoad", function()
-	app.FunctionRunner.Run(RegisterDataBrokers)
+	-- use a callback so that any error in registration does not propagate to the event sequencing
+	app.CallbackHandlers.Callback(RegisterDataBrokers)
 end)
 end

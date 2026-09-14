@@ -1513,10 +1513,13 @@ settings.Helpers = {
 		SetScript_OnValueChanged = function(self)
 			self:SetScript("OnValueChanged", function(self, newValue)
 				if self.oldValue ~= newValue then
-					self.oldValue = newValue
 					local shortVal = self.__FORMAT:format(newValue)
+					if self.oldValue then
+						-- only trigger the settings update if a value had already been set
+						settings:SetTooltipSetting(self.__KEY, tonumber(shortVal))
+					end
+					self.oldValue = newValue
 					self.Label:SetText(shortVal)
-					settings:SetTooltipSetting(self.__KEY, tonumber(shortVal))
 					if self.__OnValueChanged then
 						self:__OnValueChanged()
 					end
