@@ -480,7 +480,9 @@ if season > 0 then
 	end
 end
 
-local RawSettings;
+local RawSettings = setmetatable({}, { __index = function(t,key)
+	app.report("Performed Settings lookup prior to load",key)
+end})
 local function SetupRawSettings()
 	if not RawSettings.General then RawSettings.General = {} end
 	if not RawSettings.Tooltips then RawSettings.Tooltips = {} end
