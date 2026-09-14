@@ -1591,8 +1591,8 @@ q(55138,{coords={
 flt(50,{
 i(157787,{b=1,f=113})})}}),
 h(-17,{
-x(5,{awp=50407,g={
-ah(6193,{description="These were obtained by creating a Level 90 Class Trial for each class and specialization.",rwp=60002,type="a",u=2,g={
+x(5,{awp=50004,g={
+ah(6193,{awp=50407,description="These were obtained by creating a Level 90 Class Trial for each class and specialization.",rwp=60002,type="a",u=2,g={
 cl(6,{u=2,g={
 cl(6.252,{u=2,g={
 s(53882,101006,{b=1,c={6},f=24,lvl=35,u=2}),
@@ -1959,7 +1959,7 @@ i(101304,{b=1,c={1},f=52,lvl=35,u=2}),
 i(101305,{b=1,c={1},f=52,lvl=35,u=2}),
 i(101303,{b=1,c={1},f=53,lvl=35,spellID=126237,u=2}),
 i(101306,{b=1,c={1},f=53,lvl=35,spellID=133631,u=2})}})}})}})}}),
-x(6,{
+x(6,{awp=70003,g={
 ah(9060,{awp=60200,description="These were obtained by boosting a character to Level 100 for each class and specialization.",rwp=70305,type="a",u=2,g={
 cl(6,{u=2,g={
 i(142023,{b=1,f=55,u=2,g={
@@ -2728,8 +2728,8 @@ s(65942,117341,{b=1,c={1},f=7,loc=47,lvl=35,u=2}),
 i(117347,{b=1,c={1},f=52,lvl=35,u=2}),
 i(117348,{b=1,c={1},f=52,lvl=35,u=2}),
 i(117346,{b=1,c={1},f=53,lvl=35,spellID=126237,u=2}),
-i(117349,{b=1,c={1},f=53,lvl=35,spellID=133631,u=2})}})}})}})}),
-x(7,{
+i(117349,{b=1,c={1},f=53,lvl=35,spellID=133631,u=2})}})}})}})}}),
+x(7,{awp=80001,g={
 ah(9060,{awp=70003,description="These were obtained by creating a Level 100 Class Trial for each class and specialization.",rwp=80001,type="a",u=2,g={
 cl(6,{u=2,g={
 i(142023,{b=1,f=55,u=2,g={
@@ -3437,9 +3437,9 @@ s(91230,154027,{b=1,c={1},f=7,loc=47,lvl=45,u=2}),
 i(154115,{b=1,c={1},f=52,lvl=45,u=2}),
 i(154114,{b=1,c={1},f=52,lvl=45,u=2}),
 i(154116,{b=1,c={1},f=53,lvl=45,u=2}),
-i(154117,{b=1,c={1},f=53,lvl=45,u=2})}})}})}})}),
-x(8,{
-ah(10671,{awp=80001,description="These are gained by boosting a character to Level 100. Each class has one default spec except Shamans, Druids and Hunters.",rwp=90001,type="a",u=2,g={
+i(154117,{b=1,c={1},f=53,lvl=45,u=2})}})}})}})}}),
+x(8,{awp=80001,g={
+ah(10671,{description="These are gained by boosting a character to Level 100. Each class has one default spec except Shamans, Druids and Hunters.",rwp=90001,type="a",u=2,g={
 h(-97,{u=2,g={
 i(156805,{b=1,f=54,lvl=40,u=2}),
 i(156804,{b=1,f=54,lvl=40,u=2}),
@@ -4091,8 +4091,8 @@ s(105849,170912,{b=1,c={1},f=7,loc=47,lvl=50,u=2}),
 i(170754,{b=1,c={1},f=52,lvl=50,u=2}),
 i(170753,{b=1,c={1},f=52,lvl=50,u=2}),
 i(170755,{b=1,c={1},f=53,lvl=50,u=2}),
-i(170756,{b=1,c={1},f=53,lvl=50,u=2})}})}})}})}),
-x(9,{
+i(170756,{b=1,c={1},f=53,lvl=50,u=2})}})}})}})}}),
+x(9,{awp=90002,g={
 h(-7,{awp=80001,description="These are gained by creating a Level 48 Trial of that particular class. Each class has one default spec except Shamans, Druids and Hunters.",rwp=90001,u=2,g={
 cl(6,{u=2,g={
 i(160439,{b=1,f=55,u=2,g={
@@ -5226,8 +5226,8 @@ s(91230,154027,{b=1,c={1},f=7,loc=47,lvl=45,u=2}),
 i(154115,{b=1,c={1},f=52,lvl=45,u=2}),
 i(154114,{b=1,c={1},f=52,lvl=45,u=2}),
 i(154116,{b=1,c={1},f=53,lvl=45,u=2}),
-i(154117,{b=1,c={1},f=53,lvl=45,u=2})}})}})}})}),
-x(10,{
+i(154117,{b=1,c={1},f=53,lvl=45,u=2})}})}})}})}}),
+x(10,{awp=100002,g={
 ah(14783,{awp=100000,description="These are gained by creating a Level 60 Trial of that particular class. Each class has one default spec except Shamans, Druids and Hunters.",type="a",g={
 i(185940,{b=1,spellID=351857}),
 cl(6,{
@@ -5801,8 +5801,8 @@ s(91230,154027,{b=1,c={1},f=7,loc=47,lvl=45,u=2}),
 i(154115,{b=1,c={1},f=52,lvl=45,u=2}),
 i(154114,{b=1,c={1},f=52,lvl=45,u=2}),
 i(154116,{b=1,c={1},f=53,lvl=45,u=2}),
-i(154117,{b=1,c={1},f=53,lvl=45,u=2})}})}})}})}),
-x(11,{
+i(154117,{b=1,c={1},f=53,lvl=45,u=2})}})}})}})}}),
+x(11,{awp=110002,g={
 i(243235,{awp=110200,b=1,f=55}),
 ah(15805,{awp=110000,description="These are gained by using a Level 70 Boost of that particular class.  Each class has one default spec.  Shamans and Druids have two specs available and both are needed to 100% each category.",type="a",g={
 i(185940,{b=1,spellID=351857}),
@@ -6090,7 +6090,7 @@ s(91230,154027,{b=1,c={1},f=7,loc=47,lvl=45}),
 i(154115,{b=1,c={1},f=52,lvl=45}),
 i(154114,{b=1,c={1},f=52,lvl=45}),
 i(154116,{b=1,c={1},f=53,lvl=45}),
-i(154117,{b=1,c={1},f=53,lvl=45})})})}})})}),
+i(154117,{b=1,c={1},f=53,lvl=45})})})}})}})}),
 h(-31,{sharedDescription="This is a hidden reputation. It might not count towards reputation achievements.",g={
 faction(469,{icon=374217,r=2}),
 faction(67,{icon=374221,r=1}),

@@ -3,7 +3,7 @@ local appName, _ = ...
 _.AddEventHandler("OnBuildHiddenDataCache", function(categories)
 local de,flt,h,i,mnt,p,prof,q,r,s,toy,x=_.CreateDecor,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateMount,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 categories.Unsorted={
-x(12,{
+x(12,{awp=120001,g={
 x(12.01,{awp=120100,g={
 i(169391,{requireSkill=356}),
 s(187300,205801,{b=1,c={1},f=7,loc=44,lvl=70}),
@@ -634,10 +634,10 @@ flt(104,{
 i(259473),
 i(259474),
 i(259475)})}}),
-x(12.0001,{awp=120001,g={
+x(12.0001,{
 h(-101,{
 s(304843,269972,{f=21}),
-s(304854,269988,{f=21})})}}),
+s(304854,269988,{f=21})})}),
 x(12.0000001,{awp=120000,g={
 h(-303,{
 i(263208,{b=1,f=55,lvl=90,spellID=1270075,tmogSetID=5469}),
@@ -677,9 +677,9 @@ i(263393,{b=1,c={4},f=55,lvl=90,spellID=1271255,tmogSetID=5594}),
 i(263394,{b=1,c={7},f=55,lvl=90,spellID=1271256,tmogSetID=5595}),
 i(263395,{b=1,c={9},f=55,lvl=90,spellID=1271257,tmogSetID=5596}),
 i(263396,{b=1,c={1},f=55,lvl=90,spellID=1271258,tmogSetID=5596}),
-i(263397,{b=1,f=55,lvl=90,spellID=1271259,tmogSetID=5599})})}})}),
-x(8,{
-x(8.0001,{awp=80001,g={
+i(263397,{b=1,f=55,lvl=90,spellID=1271259,tmogSetID=5599})})}})}}),
+x(8,{awp=80001,g={
+x(8.0001,{
 h(-88,{
 i(154158,{f=32}),
 i(153398,{b=1,f=52,lvl=40}),
@@ -2185,7 +2185,7 @@ i(159966),
 i(159967),
 i(159970),
 i(159971,{f=53}),
-s(98595,162654,{f=23})}}),
+s(98595,162654,{f=23})}),
 x(8.01,{awp=80100,g={
 i(164641,{spellID=281937}),
 i(164735),
@@ -2630,7 +2630,7 @@ i(169782,{b=1}),
 i(170156),
 i(169977,{b=1}),
 i(169978,{b=1}),
-i(169979,{b=1})}})}),
+i(169979,{b=1})}})}}),
 h(-45,{
 q(11621,{description="Area: |cFFf09f26Borean Tundra|r"}),
 q(11622,{description="Area: |cFFf09f26Borean Tundra|r"}),

@@ -237,7 +237,7 @@ toy(279590,{awp=120100,description="Watch any eligible World of Warcraft stream 
 ach(63685,{awp=120100,rwp=120100,g={
 de(28350,{itemID=281107,spellID=1310204})}})}),
 h(-521,{u=3,g={
-x(1,{description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
+x(1,{awp=10100,description="These rewards were made available to anyone who purchased an original Collector's Edition of World of Warcraft.\n\nThere may still be copies online, but expect to lose a sizable chunk of real world currency for it.",u=3,g={
 h(-45,{rwp=40006,u=2,g={
 q(8547,{awp=20003,maps={94},providers={{"i",20938}},races={10},u=3}),
 q(12781,{awp=30002,c={6},lvl=8,maps={23},providers={{"i",39713}},u=3}),
@@ -258,7 +258,7 @@ p(92,{awp=11101,itemID=13583,npcID=11325,spellID=17707,u=3,g={
 crit(34631,{achID=663,awp=30002,id=3,u=3})}}),
 p(94,{awp=11101,itemID=13582,npcID=11327,spellID=17709,u=3,g={
 crit(34632,{achID=664,awp=30002,id=3,u=3})}})}})}}),
-x(2,{description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",u=3,g={
+x(2,{awp=20010,description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",u=3,g={
 ach(665,{awp=30002,providers={{"i",25535}},u=3}),
 p(131,{awp=20003,itemID=25535,npcID=18381,rwp=30002,spellID=32298,u=2,g={
 crit(34633,{achID=665,awp=30002,id=3,u=3})}}),(function(t)if GetCVar("portal")~="EU" then	t.u=1 end	return t end)(
@@ -271,16 +271,16 @@ toy(254666,{b=1,u=3}),
 toy(263489,{b=1,u=3}),
 p(4903,{itemID=253699,npcID=252859,spellID=1257069,u=3}),
 mnt(1255246,{itemID=252950,u=3})}}),
-x(3,{awp=20403,description="These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
-ach(683,{providers={{"i",39286}},rwp=30305,u=2}),
-p(188,{itemID=39286,npcID=28883,rwp=30305,spellID=52615,u=2,g={
+x(3,{awp=30003,description="These rewards were made available to anyone who purchased a Collector's Edition of Wrath of the Lich King.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
+ach(683,{awp=20403,providers={{"i",39286}},rwp=30305,u=2}),
+p(188,{awp=20403,itemID=39286,npcID=28883,rwp=30305,spellID=52615,u=2,g={
 crit(34634,{achID=683,id=3,u=2})}})}}),
 h(-525,{awp=90205,rwp=100107,u=2,g={
 h(-523,{description="These rewards were made available to anyone who purchased a Epic Upgrade Edition of Wrath of the Lich King Classic.",u=2,g={
 mnt(370770,{b=1,itemID=258475,lvl=10,u=2})}})}}),
-x(4,{awp=40001,description="These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
-ach(5377,{providers={{"i",62540}},rwp=40302,u=2}),
-p(268,{itemID=62540,npcID=46896,rwp=40302,spellID=87344,u=2,g={
+x(4,{awp=40003,description="These rewards were made available to anyone who purchased a Collector's Edition of Cataclysm.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.",u=3,g={
+ach(5377,{awp=40001,providers={{"i",62540}},rwp=40302,u=2}),
+p(268,{awp=40001,itemID=62540,npcID=46896,rwp=40302,spellID=87344,u=2,g={
 crit(34636,{achID=5377,id=3,u=2})}})}}),
 h(-526,{awp=100200,rwp=110200,u=2,g={
 h(-522,{description="These rewards were made available to anyone who purchased Blazing Heroic Edition.",u=2,g={
@@ -306,26 +306,26 @@ s(287328,238035,{f=2,loc=40}),
 s(287329,238038,{f=2,loc=46}),
 s(287331,238047,{f=2,loc=41}),
 s(287294,238025,{f=2,loc=42})}})}})}}),
-x(6,{awp=50407,description="These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",u=3,g={
-p(1386,{itemID=109014,npcID=77137,rwp=60202,spellID=155748,u=2,g={
+x(6,{awp=70003,description="These rewards were made available to anyone who purchased a Collector's Edition of Warlords of Draenor.",u=3,g={
+p(1386,{awp=50407,itemID=109014,npcID=77137,rwp=60202,spellID=155748,u=2,g={
 crit(24600,{achID=8917,awp=100100,id=3,u=3})}}),
-mnt(155741,{b=1,itemID=109013,lvl=10,rwp=60202,u=2})}}),
-x(7,{awp=60202,description="These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",u=3,g={
-ach(10320,{providers={{"i",128425}},rwp=70305,u=2}),
-ach(10321,{rwp=70305,u=2}),
-mnt(189998,{b=1,itemID=128425,lvl=10,rwp=70305,u=2}),
-p(1691,{itemID=128426,npcID=95841,rwp=70305,spellID=190020,u=2,g={
+mnt(155741,{awp=50407,b=1,itemID=109013,lvl=10,rwp=60202,u=2})}}),
+x(7,{awp=80001,description="These rewards were made available to anyone who purchased a Collector's Edition of Legion.\n\nThe rewards can be purchased from the in-game shop.",u=3,g={
+ach(10320,{awp=60202,providers={{"i",128425}},rwp=70305,u=2}),
+ach(10321,{awp=60202,rwp=70305,u=2}),
+mnt(189998,{awp=60202,b=1,itemID=128425,lvl=10,rwp=70305,u=2}),
+p(1691,{awp=60202,itemID=128426,npcID=95841,rwp=70305,spellID=190020,u=2,g={
 crit(28787,{achID=10321,awp=90100,id=1,rwp=100107,u=2})}})}}),
-x(8,{awp=70305,description="These rewards were made available to anyone who purchased a Collector's Edition of BFA.\n\nThe rewards can be purchased from the in-game shop.",u=3,g={
-ach(12230,{providers={{"i",153540}},r=1,rwp=80307,u=2}),
-ach(12229,{providers={{"i",153539}},r=2,rwp=80307,u=2}),
-ach(12232,{rwp=80307,u=2}),
-mnt(255696,{b=1,itemID=153540,lvl=10,r=1,rwp=80307,u=2}),
-mnt(255695,{b=1,itemID=153539,lvl=10,r=2,rwp=80307,u=2}),
-p(2143,{itemID=153541,npcID=129049,rwp=80307,spellID=255702,u=2,g={
+x(8,{awp=80001,description="These rewards were made available to anyone who purchased a Collector's Edition of BFA.\n\nThe rewards can be purchased from the in-game shop.",u=3,g={
+ach(12230,{awp=70305,providers={{"i",153540}},r=1,rwp=80307,u=2}),
+ach(12229,{awp=70305,providers={{"i",153539}},r=2,rwp=80307,u=2}),
+ach(12232,{awp=70305,rwp=80307,u=2}),
+mnt(255696,{awp=70305,b=1,itemID=153540,lvl=10,r=1,rwp=80307,u=2}),
+mnt(255695,{awp=70305,b=1,itemID=153539,lvl=10,r=2,rwp=80307,u=2}),
+p(2143,{awp=70305,itemID=153541,npcID=129049,rwp=80307,spellID=255702,u=2,g={
 crit(38154,{achID=12232,awp=90100,id=1,rwp=100107,u=2})}})}}),
-x(9,{awp=80307,u=3,g={
-h(-522,{description="These rewards were made available to anyone who purchased Shadowlands Heroic Edition.",rwp=90205,u=2,g={
+x(9,{awp=90002,u=3,g={
+h(-522,{awp=80307,description="These rewards were made available to anyone who purchased Shadowlands Heroic Edition.",rwp=90205,u=2,g={
 ach(14283,{providers={{"s",307932}},u=2}),
 mnt(307932,{u=2}),
 h(-45,{u=2,g={
@@ -340,18 +340,18 @@ s(106489,172077,{f=2,loc=42,rwp=90205,u=2}),
 s(106488,172076,{f=2,loc=41,rwp=90205,u=2}),
 s(106495,172083,{f=2,loc=47,rwp=90205,u=2}),
 s(106493,172081,{f=2,loc=45,rwp=90205,u=2})}})}})}}),
-h(-523,{description="These rewards were made available to anyone who purchased Shadowlands Epic Edition.",rwp=90205,u=2,g={
+h(-523,{awp=80307,description="These rewards were made available to anyone who purchased Shadowlands Epic Edition.",rwp=90205,u=2,g={
 i(248091,{b=1,f=101,spellID=308067,u=2}),
 toy(172179,{b=1,u=2}),
 ill(6162,{b=1,itemID=172177,questID=57596,u=2})}})}}),
-x(10,{awp=90205,u=3,g={
-h(-522,{description="These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",rwp=100107,u=2,g={
+x(10,{awp=100002,u=3,g={
+h(-522,{awp=90205,description="These rewards were made available to anyone who purchased Dragonflight Heroic Edition.",rwp=100107,u=2,g={
 ach(17314,{providers={{"s",359843}},u=2}),
 ach(17305,{awp=100005,rwp=100200,u=2}),
 mnt(359843,{b=1,itemID=248089,lvl=10,u=2}),
 p(3177,{description="This is a pre-order bonus only available before the launch of Dragonflight.",itemID=258432,npcID=181575,rwp=100002,spellID=359855,u=2}),
 p(3175,{npcID=181535,u=2})}}),
-h(-523,{description="These rewards were made available to anyone who purchased Dragonflight Epic Edition.",rwp=100107,u=2,g={
+h(-523,{awp=90205,description="These rewards were made available to anyone who purchased Dragonflight Epic Edition.",rwp=100107,u=2,g={
 toy(193588,{b=1,u=2}),
 en(255827,{spellID=1259474,tmogSetID=2293,u=2,g={
 s(165611,188257,{f=3}),
@@ -360,8 +360,8 @@ s(165613,188259,{f=3}),
 s(165610,188256,{f=3}),
 s(165614,188260,{f=3})}}),
 s(180744,193610,{f=2,loc=40,u=2})}})}}),
-x(11,{awp=100107,u=3,g={
-h(-522,{description="These rewards were made available to anyone who purchased The War Within Heroic Edition.",rwp=110200,u=2,g={
+x(11,{awp=110002,u=3,g={
+h(-522,{awp=100107,description="These rewards were made available to anyone who purchased The War Within Heroic Edition.",rwp=110200,u=2,g={
 ach(19027,{providers={{"s",417888}},u=2}),
 en(209336,{questID=78048,spellID=422666,tmogSetID=3128,u=2,g={
 s(190677,209321,{f=2,loc=47}),
@@ -495,7 +495,7 @@ ach(18917,{sr=1,u=2,g={
 crit(61864,{achID=18929,id=3,u=2})}}),
 ach(18918,{sr=1,u=2,g={
 crit(61870,{achID=18931,id=3,u=2})}})}})}})}})}}),
-h(-523,{description="These rewards were made available to anyone who purchased The War Within Epic Edition.",rwp=110200,u=2,g={
+h(-523,{awp=100107,description="These rewards were made available to anyone who purchased The War Within Epic Edition.",rwp=110200,u=2,g={
 ach(19030,{providers={{"n",209681}},u=2}),
 toy(208704,{b=1,u=2}),
 toy(208883,{b=1,u=2}),

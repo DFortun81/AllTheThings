@@ -796,12 +796,12 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			q(97115),	-- First Preference Killing of the week
 
 			-- 12.1
-			-- q(98337),	-- Prey completed, Nightmare #1 / 1st per week
 			q(98547, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 1st per week
 			q(98548, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 2nd per week
 			q(98549, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 3rd per week
 			q(98550, { ["timeline"] = { ADDED_12_1_0 } }),	-- Prey completed, 4th per week
 			--q(98507),	-- prey completion, nightmare, 1st of week, eversong woods
+			--q(98508),	-- prey completion, nightmare, 1st of week, coiled isle
 		})),
 		-- One-Time
 		n(QUESTS, {
@@ -814,35 +814,8 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, {
 			--q(95539),	-- unflagged when looted some ore in zone (Zul'Aman) during prey (hard mode)
 			q(91414),	-- Flags and unflags after accepting and completing Random Prey contracts
 			q(91415),	-- After choosing a Preference Killing
-			q(98456, name(HEADERS.Item, 274422)),	-- Appears to be looting a specific Ossified relic object @ 58.4, 48.9 on Coiled Isle
+			q(98337, { ["timeline"] = { ADDED_12_1_0 } }),	-- First Prey completed in MID:S2
+			q(98456, name(HEADERS.Item, 274422, { ["timeline"] = { ADDED_12_1_0 } })),	-- Appears to be looting a specific Ossified relic object @ 58.4, 48.9 on Coiled Isle
 		}),
 	}),
-}));
-
---[[
-
-N Prey #1
-93168
-93875
-95003 - 4th per acct
-
-N Prey #2
-93853
-
-N Prey #3
-93855
-
-N Prey #4
-93856
-
-
-
-M Prey 1
-93170
-M Prey 2
-93861
-M Prey 3
-93863
-M Prey 4
-
-]]
+}))

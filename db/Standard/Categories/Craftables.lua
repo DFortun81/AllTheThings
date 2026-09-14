@@ -4,7 +4,7 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cat,cq,crit,cs,cu,de,fc,flt,h,hqt,i,ill,mm,mnt,n,o,p,prof,q,r,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCategory,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDecor,_.CreateFirstCraft,_.CreateFilter,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Craftables=
 h(-23,{DontEnforceSkillRequirements=1,SortPriority=20,g={
-x(1,{
+x(1,{awp=10100,g={
 i(180055,{awp=90001}),
 i(180057,{awp=90001}),
 i(180058,{awp=90001}),
@@ -1212,8 +1212,8 @@ i(21151,{f=55,providers={{"o",180655},{"o",180658},{"o",180662},{"o",180682},{"o
 i(20709,{f=55,maps_disp={10,21,47,49,52,62,76},providers={{"o",180655}},spellID=25037})}),
 flt(57,{
 s(2362,6366,{collectible=false,description="Can be caught in Ashenvale, Arathi Highlands, Hillsbrad Foothills, Northern Stranglethorn, Redridge Mountains and Wetlands.",f=57,lvl=7,maps_disp={14,25,49,50,56,63},requireSkill=356,spellID=124034})}),
-flt(200,{awp=20300,g={
-r(43308,{b=1,description="Can be fished from schools.",itemID=34109,requireSkill=356})}}),
+flt(200,{
+r(43308,{awp=20300,b=1,description="Can be fished from schools.",itemID=34109,requireSkill=356})}),
 i(13888,{description="Can be caught on the seaside.",lvl=20,maps_disp={17,51},spellID=1129}),
 i(6522,{coords={
 [10]={{37.3,45.9},{39.9,74.9},{56,80.6}}},f=55,providers={{"o",180658}},spellID=8063}),
@@ -1253,15 +1253,15 @@ o(216764,{awp=50100,description="Can be found in inland waters and waterways.",m
 o(180658,{coords={
 [10]={{37.3,45.9},{39.9,74.9},{56,80.6}}}}),
 o(180712,{description="Can be found on the seaside.",maps={17,51,71}}),
-o(180901,{awp=30002,description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={50,210},g={
-crit(3873,{achID=1257,id=3,maps={50,210},providers={{"o",180901}},requireSkill=356})}}),
+o(180901,{description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={50,210},g={
+crit(3873,{achID=1257,awp=30002,id=3,maps={50,210},providers={{"o",180901}},requireSkill=356})}}),
 o(180655,{description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={10,21,47,49,52,62,76}}),
-o(180751,{awp=30002,description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={17,23,51,64,71},g={
-crit(3876,{achID=1257,id=6,maps={17,23,51,64,71},providers={{"o",180751}},requireSkill=356})}}),
-o(180662,{awp=30002,description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={25,56,63,65},g={
-crit(3874,{achID=1257,id=4,maps={14,25,56,63,65},providers={{"o",180662}},requireSkill=356})}}),
-o(180685,{awp=30002,description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={22,66,69,70,71},g={
-crit(3875,{achID=1257,id=5,maps={22,66,69,70},providers={{"o",180685}},requireSkill=356})}})}}),
+o(180751,{description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={17,23,51,64,71},g={
+crit(3876,{achID=1257,awp=30002,id=6,maps={17,23,51,64,71},providers={{"o",180751}},requireSkill=356})}}),
+o(180662,{description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={25,56,63,65},g={
+crit(3874,{achID=1257,awp=30002,id=4,maps={14,25,56,63,65},providers={{"o",180662}},requireSkill=356})}}),
+o(180685,{description="Wreckages can be found on the seaside, as well as inland waters near humanoid structures. If you cannot find any, fish out nearby fishing schools as they share spawns.",maps={22,66,69,70,71},g={
+crit(3875,{achID=1257,awp=30002,id=5,maps={22,66,69,70},providers={{"o",180685}},requireSkill=356})}})}}),
 prof(182,{description="It is beneficial to gather all herbs in the area even if you only need specific herbs because the node spawns are often connected.",g={
 ah(2366,{type="s",g={
 o(142141,{maps={22,23,300,317},requireSkill=182,rwp=40003,u=2}),
@@ -1396,8 +1396,8 @@ flt(50,{
 i(11020,{b=1,cost={{"i",11022,1},{"i",11018,2}},rwp=40003,spellID=13399,u=2,g={
 i(11024,{b=1,u=2,g={
 i(11040,{u=2})}})}})}),
-h(-22,{awp=50004,g={
-s(43958,85663,{collectible=false,description="Can only be bought from Trade suppliers.",f=57,requireSkill=182,spellID=124353})}})}}),
+h(-22,{
+s(43958,85663,{awp=50004,collectible=false,description="Can only be bought from Trade suppliers.",f=57,requireSkill=182,spellID=124353})})}}),
 prof(773,{
 h(-22,{
 i(10648,{description="Can be bought from Inscription Suppliers, as well as some Trade vendors around the world.",rwp=50004,u=2}),
@@ -1601,8 +1601,8 @@ h(-88,{
 s(8609,21774,{f=4,loc=40,lvl=21}),
 s(8227,20832,{f=4,loc=40,lvl=12}),
 s(8271,20969,{f=4,loc=40,lvl=17})}),
-flt(2,{awp=100007,g={
-s(185565,204404,{f=2,loc=40})}}),
+flt(2,{
+s(185565,204404,{awp=100007,f=2,loc=40})}),
 h(-679,{awp=110207,g={
 de(2230,{itemID=246413,spellID=1242067}),
 de(2331,{itemID=246488,spellID=1242336})}}),
@@ -2448,8 +2448,8 @@ i(14342,{coords={
 [76]={{10.77,74.71}},
 [89]={{43.1,80.27},{48.05,18.54}},
 [95]={{13.13,26.23}},
-[108]={{45.02,23.54}}},description="Coordinates are for select Moonwells around the world."})})})}),
-x(2,{
+[108]={{45.02,23.54}}},description="Coordinates are for select Moonwells around the world."})})})}}),
+x(2,{awp=20010,g={
 i(180055,{awp=90001}),
 i(180057,{awp=90001}),
 i(180058,{awp=90001}),
@@ -3633,8 +3633,8 @@ i(21845,{coords={
 [108]={{45.02,23.54}}},description="Coordinates are for select Moonwells around the world."}),
 i(24272,{coords={
 [104]={{58.3,70.9}}}}),
-i(24271,{maps_disp={109}})})}})}),
-x(3,{
+i(24271,{maps_disp={109}})})}})}}),
+x(3,{awp=30003,g={
 i(180055,{awp=90001}),
 i(180057,{awp=90001}),
 i(180058,{awp=90001}),
@@ -3652,7 +3652,7 @@ o(570896,{type="AsSubGenericObject"}),
 o(569785,{type="AsSubGenericObject"}),
 o(570233,{type="AsSubGenericObject"}),
 i(251762,{b=2})}})}}),
-prof(171,{awp=30003,g={
+prof(171,{
 h(-22,{
 i(40411,{awp=30002,description="Can be bought from Alchemy Suppliers, as well as some Trade vendors around the world.",rwp=40001,u=2})}),
 h(-26,{
@@ -3754,7 +3754,7 @@ i(41266)}),
 flt(53,{
 i(44323,{b=1,f=53,lvl=28,requireSkill=171,spellID=17619}),
 i(44322,{b=1,f=53,lvl=28,requireSkill=171,spellID=17619}),
-i(44324,{b=1,f=53,lvl=28,requireSkill=171,spellID=17619})})}}),
+i(44324,{b=1,f=53,lvl=28,requireSkill=171,spellID=17619})})}),
 prof(794,{awp=40003,g={
 i(64396),
 i(64395),
@@ -3776,7 +3776,7 @@ s(32206,64460,{b=2,cost={{"c",399,130}},f=21,lvl=27}),
 i(64461,{b=1,cost={{"c",399,45}}}),
 i(64467,{b=1,cost={{"c",399,45}}}),
 toy(69775,{awp=40100,b=1,cost={{"c",399,100}}})}})}}),
-prof(164,{awp=30003,g={
+prof(164,{
 h(-88,{
 s(21986,45559,{awp=30100,f=7,loc=47,lvl=30}),
 s(21977,45550,{awp=30100,f=7,loc=45,lvl=30}),
@@ -3910,8 +3910,8 @@ s(20558,42508,{f=8,lvl=30}),
 s(21645,45085,{awp=30100,f=20,lvl=30}),
 s(19917,41186,{b=1,f=25,lvl=29,rwp=40003,u=2}),
 s(19918,41187,{b=1,f=25,lvl=29,rwp=40003,u=2}),
-s(19919,41188,{b=1,f=24,lvl=29})})}}),
-prof(185,{awp=30003,g={
+s(19919,41188,{b=1,f=24,lvl=29})})}),
+prof(185,{
 i(43491,{f=55,spellID=58500}),
 i(42942,{f=55,lvl=27,spellID=57101}),
 i(45932,{awp=30100,f=55,lvl=28,spellID=64354}),
@@ -3957,8 +3957,8 @@ i(34755,{f=55,lvl=27,spellID=57326}),
 i(43001,{f=55,lvl=27,spellID=57372}),
 i(34757,{f=55,lvl=27,spellID=57331}),
 i(44953,{awp=30008,f=55,lvl=27,spellID=57359}),
-i(34750,{f=55,lvl=27,spellID=57285})}}),
-prof(333,{awp=30003,g={
+i(34750,{f=55,lvl=27,spellID=57285})}),
+prof(333,{
 ah(13262,{type="s",g={
 i(34054,{description="Obtained from disenchanting uncommon (green) quality WotLK garments, amulets, rings, shields and off-hand frills."}),
 i(34055,{description="Obtained from disenchanting uncommon (green) quality WotLK weapons, except shields and off-hand frills.",spellID=44122}),
@@ -4046,8 +4046,8 @@ i(44453,{awp=30100,f=55}),
 i(38965,{f=55}),
 i(38972,{f=55}),
 i(44467,{awp=30100,f=55}),
-i(44466,{awp=30100,f=55})})}}),
-prof(202,{awp=30003,g={
+i(44466,{awp=30100,f=55})})}),
+prof(202,{
 h(-22,{
 i(39684,{description="Can be bought from Engineering Suppliers, as well as some Trade vendors around the world."}),
 i(40533,{description="Can be bought from Engineering Suppliers, as well as some Trade vendors around the world."})}),
@@ -4123,8 +4123,8 @@ n(32522,{coords={
 [119]={{45.65,24.6}},
 [123]={{84,71.5}}},description="Too few and far between to be reliably farmed on it's own.",requireSkill=202}),
 n(32544,{coords={
-[114]={{66,27}}},description="Too few and far between to be reliably farmed on it's own.",maps={119},requireSkill=202})}})}}),
-prof(356,{awp=30003,g={
+[114]={{66,27}}},description="Too few and far between to be reliably farmed on it's own.",maps={119},requireSkill=202})}})}),
+prof(356,{
 i(41812,{maps_disp={119}}),
 i(45905,{description="Kill an animal and then swim in a body of water to create a pool to fish from.",providers={{"o",194479}}}),
 i(41808,{maps_disp={114,115,116,117,118,119,120,121,123,127}}),
@@ -4199,8 +4199,8 @@ o(192057,{maps={119},g={
 crit(5287,{achID=1517,id=11})}}),
 o(194479,{maps={114}}),
 flt(200,{
-r(43308,{b=1,description="Can be fished from schools.",itemID=34109,requireSkill=356})})}}),
-prof(182,{awp=30003,g={
+r(43308,{b=1,description="Can be fished from schools.",itemID=34109,requireSkill=356})})}),
+prof(182,{
 ah(2366,{type="s",g={
 o(191019,{maps={119},requireSkill=182}),
 o(191303,{coords={
@@ -4241,8 +4241,8 @@ i(36907)}}),
 i(36904,{coords={
 [114]={{51.6,45}}},description="Found around inland waters and waterways.",maps_disp={116,117,119},providers={{"o",190169}}}),
 i(108354,{awp=60002,providers={{"o",190169}},spellID=153882,g={
-i(36904)}})}})}}),
-prof(773,{awp=30003,g={
+i(36904)}})}})}),
+prof(773,{
 ah(51005,{type="s",g={
 i(39343,{providers={{"i",36901},{"i",36903},{"i",36904},{"i",36905},{"i",36906},{"i",36907},{"i",37921},{"i",39970}}}),
 i(43109,{providers={{"i",36901},{"i",36903},{"i",36904},{"i",36905},{"i",36906},{"i",36907},{"i",37921},{"i",39970}}})}}),
@@ -4319,8 +4319,8 @@ i(44289,{spellID=60276}),
 i(44290,{spellID=60276}),
 i(44291,{spellID=60276}),
 i(44292,{spellID=60276}),
-i(44293,{spellID=60276})})})}}),
-prof(755,{awp=30003,g={
+i(44293,{spellID=60276})})})}),
+prof(755,{
 ah(31252,{type="s",g={
 i(46849,{awp=30200}),
 i(36917,{description="This gem is most reliably obtained from prospecting ore with Jewelcrafting.",providers={{"i",36909},{"i",36910},{"i",36912}}}),
@@ -4726,8 +4726,8 @@ i(42418,{b=1,f=53,lvl=28,requireSkill=755,spellID=56188}),
 i(44063,{b=1,f=53,lvl=28,requireSkill=755,spellID=59757}),
 i(42341,{b=1,f=53,lvl=28,requireSkill=755,spellID=56121}),
 i(42413,{b=1,f=53,lvl=28,requireSkill=755,spellID=56186}),
-i(42395,{b=1,f=53,lvl=28,requireSkill=755,spellID=56184})})}}),
-prof(165,{awp=30003,g={
+i(42395,{b=1,f=53,lvl=28,requireSkill=755,spellID=56184})})}),
+prof(165,{
 h(-88,{
 h(-89,{
 s(18422,38441,{f=3,lvl=28}),
@@ -4889,8 +4889,8 @@ i(38347,{f=113}),
 i(38372,{f=55,lvl=27,spellID=50902}),
 i(44448,{f=113,rwp=40001,u=2}),
 i(44446,{f=113}),
-i(38399,{f=113})})}}),
-prof(186,{awp=30003,g={
+i(38399,{f=113})})}),
+prof(186,{
 ah(2575,{type="s",g={
 o(189978,{maps={114,115,116,117,121},requireSkill=186}),
 o(189979,{maps={114,115,116,117,121},requireSkill=186}),
@@ -4910,8 +4910,8 @@ ah(2656,{type="s",g={
 i(36916),
 i(36913),
 i(41163),
-i(37663,{OnTooltip=_.OnTooltipDB.IsSpellOnCooldown_55208})}})}}),
-prof(393,{awp=30003,description="The following items can be gathered by skinning creatures on Northrend. Note that Borean Leather is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",g={
+i(37663,{OnTooltip=_.OnTooltipDB.IsSpellOnCooldown_55208})}})}),
+prof(393,{description="The following items can be gathered by skinning creatures on Northrend. Note that Borean Leather is the most common reagent to get from skinning. All other skinned reagents have a lower than 100% drop chance from skinning the respective mobs, thus you must expect having to skin multiple creatures to obtain the reagent.\n\nThis header will often not show everything uncollected it contains, even when enabling 'Debug Mode'. The best way to track specific reagents is to do /att item:[itemID] or pop out this header.",g={
 i(44128,{description="Arctic Fur is a rare skinned drop from any skinnable creatures."}),
 i(33568,{description="Can be skinned from any skinnable WotLK mobs."}),
 i(33567,{requireSkill=393,spellID=59926,g={
@@ -4929,7 +4929,7 @@ i(38558,{coords={
 [114]={{41.1,58.2},{54.9,70.4},{67.4,32}},
 [115]={{17.1,49.5},{26.2,49.5}},
 [118]={{53.4,76},{79.1,67.2}}},crs={24562,24563,24566,25294,25582,25619,25622,26402,26413,26445,26605,26606,30204,30205,30333,30541,30543,31037,31039,31747,31780},maps_disp={132,157}})}}),
-prof(197,{awp=30003,g={
+prof(197,{
 h(-88,{
 s(20374,42096,{f=4,loc=47,lvl=30}),
 s(22866,47585,{awp=30200,f=4,loc=43,lvl=30,r=2}),
@@ -5033,8 +5033,8 @@ i(41510),
 i(41511),
 i(41593),
 i(41594),
-i(41595)})}})}),
-x(4,{
+i(41595)})})}}),
+x(4,{awp=40003,g={
 i(180055,{awp=90001}),
 i(180057,{awp=90001}),
 i(180058,{awp=90001}),
@@ -5047,7 +5047,7 @@ o(573547,{type="AsSubGenericObject"}),
 o(574611,{type="AsSubGenericObject"}),
 o(586651,{type="AsSubGenericObject"}),
 i(251764,{b=2})}})}}),
-prof(171,{awp=40003,g={
+prof(171,{
 flt(55,{
 i(65460,{f=55,spellID=92712}),
 i(62288,{f=55,spellID=92649}),
@@ -5101,8 +5101,8 @@ flt(53,{
 i(58483,{b=1,f=53,lvl=30,requireSkill=171,spellID=17619}),
 i(68776,{awp=40006,b=1,f=53,lvl=30,requireSkill=171,spellID=17619}),
 i(68777,{awp=40006,b=1,f=53,lvl=30,requireSkill=171,spellID=17619}),
-i(68775,{awp=40006,b=1,f=53,lvl=30,requireSkill=171,spellID=17619})})}}),
-prof(794,{awp=40003,g={
+i(68775,{awp=40006,b=1,f=53,lvl=30,requireSkill=171,spellID=17619})})}),
+prof(794,{
 i(64397),
 ah(401,{maps={249},providers={{"o",207190}},type="cu",g={
 i(64657,{b=1,g={
@@ -5119,8 +5119,8 @@ i(64658,{b=1,cost={{"c",401,45}}}),
 i(64654,{b=1,cost={{"c",401,45}}}),
 s(32490,64880,{b=2,cost={{"c",401,150}},f=28,lvl=32}),
 i(64655,{b=1,cost={{"c",401,45}}}),
-mnt(92155,{b=1,cost={{"c",401,150}},itemID=64883,lvl=10})}})}}),
-prof(164,{awp=40003,g={
+mnt(92155,{b=1,cost={{"c",401,150}},itemID=64883,lvl=10})}})}),
+prof(164,{
 h(-88,{
 s(26831,55073,{f=7,loc=45,lvl=32,rwp=40200,u=2}),
 s(26832,55074,{f=7,loc=47,lvl=32,rwp=40200,u=2}),
@@ -5248,8 +5248,8 @@ s(26815,55052,{f=26,lvl=30}),
 s(35721,70162,{awp=40200,f=25,lvl=32}),
 s(26807,55042,{f=8,lvl=31}),
 s(35722,70163,{awp=40200,f=25,lvl=32}),
-s(35724,70165,{awp=40200,f=29,lvl=32})})}}),
-prof(185,{awp=40003,g={
+s(35724,70165,{awp=40200,f=29,lvl=32})})}),
+prof(185,{
 h(-22,{
 i(58265,{coords={
 [241]={{76.27,52.64},{79.37,78.53}},
@@ -5289,8 +5289,8 @@ i(62669,{f=55,lvl=30,spellID=87586}),
 i(62672,{f=55,lvl=30,spellID=94468}),
 i(62675,{f=55,lvl=30,spellID=87648}),
 i(62658,{f=55,lvl=30,spellID=87566}),
-i(62656,{f=55,lvl=30,spellID=87568})}}),
-prof(333,{awp=40003,g={
+i(62656,{f=55,lvl=30,spellID=87568})}),
+prof(333,{
 ah(13262,{type="s",g={
 i(52555,{description="Obtained from disenchanting uncommon (green) quality Cataclysm gear."}),
 i(52719,{description="Obtained from disenchanting uncommon (green) quality Cataclysm gear.",spellID=74187}),
@@ -5364,8 +5364,8 @@ i(52760,{f=55}),
 i(52776,{f=55}),
 i(52747,{f=55}),
 i(52774,{f=55}),
-i(52775,{f=55})})}}),
-prof(202,{awp=40003,g={
+i(52775,{f=55})})}),
+prof(202,{
 h(-22,{
 i(90146)}),
 prof(20219,{description="These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",g={
@@ -5420,8 +5420,8 @@ s(29789,59599,{f=31,lvl=31})}),
 h(-245,{
 i(59594,{f=55,lvl=30,spellID=81932}),
 i(59595,{f=55,lvl=30,spellID=81933}),
-i(59596,{f=55,lvl=30,spellID=81934})})}}),
-prof(356,{awp=40003,g={
+i(59596,{f=55,lvl=30,spellID=81934})})}),
+prof(356,{
 i(53065,{coords={
 [207]={{27.2,34.8},{68.3,69.9},{69.4,68.1},{71.8,63.1},{76.8,41.9}}},description="Schools can also spawn in the cavern beneath Upper Silvermarsh, with entrance from Lower Silvermarsh.",providers={{"o",202778}}}),
 i(53071,{description="Can be caught on the seaside, though might be more uncommon than other saltwater fish.",maps_disp={201,205,241,245},providers={{"i",69823}}}),
@@ -5455,8 +5455,8 @@ o(207734,{coords={
 o(207724,{maps={245},g={
 i(67597)}}),
 flt(200,{
-r(43308,{b=1,description="Can be fished from schools.",itemID=34109,requireSkill=356})})}}),
-prof(182,{awp=40003,g={
+r(43308,{b=1,description="Can be fished from schools.",itemID=34109,requireSkill=356})})}),
+prof(182,{
 ah(2366,{type="s",g={
 o(202749,{description="Can be found near and in waters.",maps={198,201,204,205,245},requireSkill=182}),
 o(202747,{description="Mount Hyjal is the better place to look for these.",maps={198,207,241,244,245,249},requireSkill=182}),
@@ -5490,8 +5490,8 @@ i(52988,{coords={
 [244]={{39.8,49.2}},
 [249]={{49.7,32.2},{56.2,22.6},{56.6,48.9},{62,77.9}}},providers={{"o",202752}}}),
 i(108365,{awp=60002,providers={{"o",202752}},spellID=153884,g={
-i(52988)}})}})}}),
-prof(773,{awp=40003,g={
+i(52988)}})}})}),
+prof(773,{
 h(-22,{
 i(67348,{coords={
 [241]={{76.6,49.4},{78.6,76.2}}},providers={{"n",49703},{"n",50248}}}),
@@ -5642,8 +5642,8 @@ i(62602),
 i(62603),
 i(62604),
 i(62605),
-i(62606)}})})}}),
-prof(755,{awp=40003,g={
+i(62606)}})})}),
+prof(755,{
 ah(31252,{type="s",g={
 i(52179),
 i(52195),
@@ -5949,8 +5949,8 @@ i(75078,{awp=40300,f=51,lvl=32}),
 i(75074,{awp=40300,f=51,lvl=32})}),
 h(-101,{
 s(25734,52492,{f=34,lvl=30}),
-s(25735,52493,{f=34,lvl=31})})}}),
-prof(165,{awp=40003,g={
+s(25735,52493,{f=34,lvl=31})})}),
+prof(165,{
 h(-88,{
 h(-89,{
 s(35683,70068,{awp=40200,f=3,lvl=32,rwp=40300,u=2}),
@@ -6116,8 +6116,8 @@ i(56477,{f=55,lvl=29,spellID=78165}),
 i(52976),
 i(56502,{f=55,lvl=30,spellID=78169}),
 i(70137,{awp=40200,f=113}),
-i(56503,{f=55,lvl=30,spellID=78170})})}}),
-prof(186,{awp=40003,g={
+i(56503,{f=55,lvl=30,spellID=78170})})}),
+prof(186,{
 flt(101,{
 p(293,{description="Elementium Veins (0.05% Drop Rate) and Rich Elementium Veins (0.08% Drop Rate) require a mining skill of 475-500.",itemID=67282,maps_disp={241,244,245,249},npcID=50722,providers={{"o",202738},{"o",202741}},requireSkill=186,spellID=93838})}),
 ah(2575,{type="s",g={
@@ -6140,10 +6140,10 @@ ah(2656,{type="s",g={
 i(52186),
 i(53039),
 i(54849),
-i(51950)}})}}),
-prof(393,{awp=40003,g={
-i(67495,{b=1})}}),
-prof(197,{awp=40003,g={
+i(51950)}})}),
+prof(393,{
+i(67495,{b=1})}),
+prof(197,{
 h(-88,{
 s(26480,54504,{f=4,loc=45,lvl=32}),
 s(26445,54441,{f=4,loc=42}),
@@ -6246,8 +6246,8 @@ i(54442,{f=55,requireSkill=197,spellID=75148}),
 i(53050,{f=55,lvl=28,spellID=74554})}),
 flt(56,{
 i(53643),
-i(54440,{b=1})})}})}),
-x(5,{
+i(54440,{b=1})})})}}),
+x(5,{awp=50004,g={
 i(180055,{awp=90001}),
 i(180057,{awp=90001}),
 i(180058,{awp=90001}),
@@ -6265,7 +6265,7 @@ o(568137,{type="AsSubGenericObject"}),
 o(567726,{type="AsSubGenericObject"}),
 o(567840,{type="AsSubGenericObject"}),
 i(251763,{b=2})}})}}),
-prof(171,{awp=50004,g={
+prof(171,{
 h(-26,{
 r(114774,{learnedAt=40,requireSkill=171,skillID=2481}),
 r(114761,{learnedAt=15,requireSkill=171,skillID=2481}),
@@ -6339,8 +6339,8 @@ i(72095),
 i(76140),
 i(76139)}),
 flt(53,{
-i(75274,{awp=50200,b=1,f=53,lvl=32,requireSkill=171,spellID=105574})})}}),
-prof(794,{awp=50004,g={
+i(75274,{awp=50200,b=1,f=53,lvl=32,requireSkill=171,spellID=105574})})}),
+prof(794,{
 i(95373,{awp=50200}),
 i(79869),
 i(79868),
@@ -6409,8 +6409,8 @@ s(46496,89685,{b=2,cost={{"c",676,180}},f=29,lvl=32}),
 i(79905,{b=1,cost={{"c",676,50}},spellID=126935}),
 i(79898,{b=1,cost={{"c",676,50}},spellID=126935}),
 s(46495,89684,{b=2,cost={{"c",676,180}},f=1,lvl=32}),
-i(79899,{b=1,cost={{"c",676,50}},spellID=126935})}})}}),
-prof(164,{awp=50004,g={
+i(79899,{b=1,cost={{"c",676,50}},spellID=126935})}})}),
+prof(164,{
 h(-26,{
 ah(143255,{awp=50400,type="s",g={
 r(142959,{learnedAt=75,providers={{"s",143255}},requireSkill=164,skillID=2473}),
@@ -6682,8 +6682,8 @@ s(42239,82962,{f=8,lvl=32}),
 s(49472,94586,{awp=50200,f=24,lvl=35}),
 s(49461,94575,{awp=50200,f=21,lvl=35}),
 s(49468,94582,{awp=50200,f=24,lvl=35}),
-s(49465,94579,{awp=50200,f=21,lvl=35})})}}),
-prof(185,{awp=50004,g={
+s(49465,94579,{awp=50200,f=21,lvl=35})})}),
+prof(185,{
 h(-679,{awp=110207,g={
 de(2591,{itemID=247220,spellID=1244573})}}),
 i(86432,{f=55,lvl=33,spellID=125686}),
@@ -6752,8 +6752,8 @@ i(74647,{f=55,lvl=33,spellID=104287}),
 i(85501,{f=55,lvl=32,spellID=105232}),
 i(86070,{f=55,lvl=33,spellID=125107}),
 i(74654,{f=55,lvl=32,spellID=104294}),
-i(81401,{f=55,lvl=10,spellID=124240})}}),
-prof(333,{awp=50004,g={
+i(81401,{f=55,lvl=10,spellID=124240})}),
+prof(333,{
 ah(13262,{type="s",g={
 i(80433,{description="Can be obtained by disenchanting epics from Mogu'shan Vaults, Heart of Fear, or Terrace of the Eternal Spring"}),
 i(74247),
@@ -6804,8 +6804,8 @@ i(74726,{f=55}),
 i(74725,{f=55}),
 i(74724,{f=55}),
 i(74728,{f=55}),
-i(74723,{f=55})})}}),
-prof(202,{awp=50004,g={
+i(74723,{f=55})})}),
+prof(202,{
 prof(20219,{description="These items can only be crafted by Engineers who have completed the Gnomish Engineering quest chain.",g={
 flt(100,{
 mnt(126508,{itemID=87251,lvl=10})})}}),
@@ -6871,8 +6871,8 @@ s(39120,77527,{f=31,lvl=32}),
 s(39121,77528,{f=31,lvl=35})}),
 h(-245,{
 i(77529,{f=55,lvl=32,spellID=109086}),
-i(77531,{f=55,lvl=32,spellID=109093})})}}),
-prof(356,{awp=50004,g={
+i(77531,{f=55,lvl=32,spellID=109093})})}),
+prof(356,{
 i(74859),
 i(86542,{b=1,requireSkill=356}),
 i(74857),
@@ -6891,8 +6891,8 @@ p(1208,{awp=50200,description="Can be fished from:\n\n|cFFFfffff— Schools:|r E
 p(1206,{awp=50200,description="Can be fished from:\n\n|cFFFfffff— Schools:|r Spinefish\n\n|cFFFfffff— Fish of the Day:|r Kun-Lai Summit\n\n|cFFFfffff— Sha-Touched water:|r Dread Wastes, Kun-Lai Summit & Townlong Steppes\n",itemID=94932,maps_disp={379,388,422},npcID=70257,spellID=139361}),
 p(1209,{awp=50200,description="Can be fished from:\n\n|cFFFfffff— Schools:|r Giant Mantis Shrimp, Reef Octopus, & Tiger Gourami\n\n|cFFFfffff— Fish of the Day:|r Dread Wastes, Jade Forest, & Kun-Lai Summit\n\n|cFFFfffff— Inland open water:|r Kun-Lai Summit & The Veiled Stair\n\nIt can also be caught in most coastal open water.\n",itemID=94935,maps_disp={371,379,388,418,422,433,504,507,554},npcID=70260,spellID=139365}),
 flt(200,{
-r(43308,{b=1,description="Can be fished from schools.",itemID=34109,requireSkill=356})})}}),
-prof(182,{awp=50004,g={
+r(43308,{b=1,description="Can be fished from schools.",itemID=34109,requireSkill=356})})}),
+prof(182,{
 ah(2366,{type="s",g={
 i(89639),
 i(97624,{awp=50300,spellID=141661}),
@@ -6906,8 +6906,8 @@ i(72235),
 i(97621,{awp=50300,spellID=141658}),
 i(79010),
 i(97622,{awp=50300,spellID=141659}),
-i(97619,{awp=50300,spellID=141656})}})}}),
-prof(773,{awp=50004,g={
+i(97619,{awp=50300,spellID=141656})}})}),
+prof(773,{
 sp(165467,{
 r(64258,{awp=30100,requireSkill=773,rwp=70003,u=2})}),
 flt(111,{
@@ -6973,8 +6973,8 @@ s(40217,79342,{f=28,lvl=32}),
 s(40215,79340,{f=28,lvl=35}),
 s(40216,79341,{f=28,lvl=35}),
 s(40218,79343,{f=28,lvl=35}),
-s(40214,79339,{f=28,lvl=32})})}}),
-prof(755,{awp=50004,g={
+s(40214,79339,{f=28,lvl=32})})}),
+prof(755,{
 ah(31252,{type="s",g={
 i(76137),
 i(76141),
@@ -7338,8 +7338,8 @@ i(83805,{f=51,lvl=35}),
 i(83806,{f=51,lvl=35}),
 i(83804,{f=51,lvl=35})}),
 flt(56,{
-i(76132,{awp=50200})})}}),
-prof(165,{awp=50004,g={
+i(76132,{awp=50200})})}),
+prof(165,{
 h(-26,{
 ah(142976,{awp=50400,type="s",g={
 r(143146,{learnedAt=75,providers={{"s",142976}},requireSkill=165,skillID=2528}),
@@ -7773,8 +7773,8 @@ i(95536,{awp=50200,f=113}),
 i(85559,{f=55,lvl=32,spellID=124091}),
 i(85569,{f=55,lvl=32,spellID=124118}),
 i(83764,{f=55,lvl=32,spellID=122387}),
-i(85570,{f=55,lvl=32,spellID=124116})})}}),
-prof(186,{awp=50004,g={
+i(85570,{f=55,lvl=32,spellID=124116})})}),
+prof(186,{
 ah(2575,{type="s",g={
 i(72094),
 i(97512,{awp=50300,spellID=141363}),
@@ -7784,8 +7784,8 @@ i(97546,{awp=50300,spellID=141406}),
 i(72103)}}),
 ah(2656,{type="s",g={
 i(72096),
-i(72095)}})}}),
-prof(197,{awp=50004,g={
+i(72095)}})}),
+prof(197,{
 h(-26,{
 ah(143011,{awp=50400,type="s",g={
 r(142964,{learnedAt=75,providers={{"s",143011}},requireSkill=197,skillID=2536}),
@@ -8010,14 +8010,14 @@ i(72986,{f=55,lvl=32,spellID=102695}),
 i(72985,{f=55,lvl=32,spellID=102694})}),
 flt(56,{
 i(82441),
-i(82447,{b=1})})}}),
-h(-45,{awp=50004,g={
+i(82447,{b=1})})}),
+h(-45,{
 q(31752,{isDaily=1,lvl=10,qgs={43929},g={
 i(86623,{b=1,sym={{"select","itemID",87250,87251,41508,44413,15996,11826,4401,11825,21277}},g={
 i(97985,{awp=50300,b=1,lvl=40,rwp=70003,u=2}),
 p(1320,{b=1,itemID=103670,npcID=73011,spellID=147124}),
-i(90561,{description="Can be turned in in Booty Bay for a bag of gold!"})}})}})}})}),
-x(6,{
+i(90561,{description="Can be turned in in Booty Bay for a bag of gold!"})}})}})})}}),
+x(6,{awp=70003,g={
 i(180055,{awp=90001}),
 i(180057,{awp=90001}),
 i(180058,{awp=90001}),
@@ -8810,8 +8810,8 @@ i(113997,{b=1}),
 i(113998,{b=1}),
 i(113999,{b=1}),
 i(114000,{b=1}),
-i(114001)}})}})}})}})}),
-x(7,{
+i(114001)}})}})}})}})}}),
+x(7,{awp=80001,g={
 i(180055,{awp=90001}),
 i(180057,{awp=90001}),
 i(180058,{awp=90001}),
@@ -9453,14 +9453,14 @@ i(127037)})}}),
 h(-45,{awp=70003,g={
 q(40753,{isDaily=1,lvl=45,qgs={101527},g={
 i(132892,{b=1,sym={{"select","itemID",113258},{"pop"},{"select","itemID",136631,136630,136629,136632}},g={
-p(1806,{b=1,itemID=136911,npcID=99505,spellID=210683})}})}})}})}),
-x(8,{
+p(1806,{b=1,itemID=136911,npcID=99505,spellID=210683})}})}})}})}}),
+x(8,{awp=80001,g={
 i(180055,{awp=90001}),
 i(180057,{awp=90001}),
 i(180058,{awp=90001}),
 i(180059,{awp=90001}),
 i(180060,{awp=90001}),
-i(152668,{awp=80001,b=1}),
+i(152668,{b=1}),
 i(162460,{awp=80100,b=1}),
 i(162461,{awp=80100,b=1}),
 i(171320,{awp=80300,b=1}),
@@ -9474,9 +9474,9 @@ o(556425,{type="AsSubGenericObject"}),
 o(556387,{type="AsSubGenericObject"}),
 o(555545,{type="AsSubGenericObject"}),
 i(251768,{b=2})}})}}),
-flt(100,{awp=80001,g={
-mnt(256123,{awp=80200,cost={{"i",158886,1},{"i",158887,1}},itemID=153594,lvl=10})}}),
-prof(171,{awp=80001,g={
+flt(100,{
+mnt(256123,{awp=80200,cost={{"i",158886,1},{"i",158887,1}},itemID=153594,lvl=10})}),
+prof(171,{
 h(-26,{
 r(298996,{awp=80200,b=1,itemID=168757,lvl=10,providers={{"s",298995}},requireSkill=171,skillID=2478}),
 r(305992,{awp=80300,b=1,itemID=171084,lvl=10,providers={{"s",305993}},requireSkill=171,skillID=2478}),
@@ -9560,8 +9560,8 @@ i(152637,{f=53,lvl=45,requireSkill=171,spellID=188026}),
 i(165927,{awp=80100,b=1,f=53,lvl=50,requireSkill=171,spellID=188026}),
 i(152632,{f=53,lvl=50,requireSkill=171,spellID=188026}),
 i(165926,{awp=80100,b=1,f=53,lvl=50,requireSkill=171,spellID=188026}),
-i(171088,{awp=80300,b=1,f=53,requireSkill=171,spellID=188026})})}}),
-prof(794,{awp=80001,g={
+i(171088,{awp=80300,b=1,f=53,requireSkill=171,spellID=188026})})}),
+prof(794,{
 i(154990),
 i(87399,{b=1}),
 i(154989),
@@ -9596,8 +9596,8 @@ i(154933,{b=1,cost={{"c",1534,50}},spellID=126935}),
 i(154932,{b=1,cost={{"c",1534,50}},spellID=126935}),
 i(154915,{b=1,cost={{"c",1534,50}},spellID=126935}),
 i(160753,{cost={{"c",1534,50}},f=53,lvl=45,spellID=273516}),
-i(154914,{b=1,cost={{"c",1534,50}},spellID=126935})}})}}),
-prof(164,{awp=80001,g={
+i(154914,{b=1,cost={{"c",1534,50}},spellID=126935})}})}),
+prof(164,{
 h(-26,{
 r(285089,{awp=80100,b=1,itemID=165642,lvl=10,providers={{"s",285081}},requireSkill=164,skillID=2437}),
 r(285090,{awp=80100,b=1,itemID=165640,lvl=10,providers={{"s",285082}},requireSkill=164,skillID=2437}),
@@ -9796,8 +9796,8 @@ s(105460,170310,{awp=80300,f=20,lvl=50,r=1}),
 s(105511,170364,{awp=80300,f=8,lvl=50,r=2}),
 s(105512,170365,{awp=80300,f=8,lvl=50,r=1}),
 s(105445,170292,{awp=80300,f=20,lvl=50,r=2}),
-s(105459,170309,{awp=80300,f=20,lvl=50,r=1})})}}),
-prof(185,{awp=80001,g={
+s(105459,170309,{awp=80300,f=20,lvl=50,r=1})})}),
+prof(185,{
 h(-679,{awp=110207,g={
 de(755,{itemID=245484,spellID=1238625})}}),
 i(168311,{awp=80200,f=55,spellID=297043}),
@@ -9830,8 +9830,8 @@ i(166344,{awp=80100,f=55,lvl=45,spellID=288076}),
 i(154886,{f=55,lvl=45,spellID=257425}),
 i(154884,{f=55,lvl=45,spellID=257417}),
 i(169280,{awp=80200,f=55,lvl=50,spellID=295402}),
-i(166343,{awp=80100,f=55,lvl=45,spellID=288073})}}),
-prof(333,{awp=80001,g={
+i(166343,{awp=80100,f=55,lvl=45,spellID=288073})}),
+prof(333,{
 ah(302695,{type="s",g={
 i(152875),
 i(152876),
@@ -9898,8 +9898,8 @@ s(104259,167992,{awp=80200,f=27,lvl=50,r=1}),
 s(100862,164694,{awp=80100,f=27,lvl=50,r=2}),
 s(100845,164677,{awp=80100,f=27,lvl=50,r=1}),
 s(105462,170312,{awp=80300,f=27,lvl=50,r=2}),
-s(105458,170307,{awp=80300,f=27,lvl=50,r=1})})}}),
-prof(202,{awp=80001,g={
+s(105458,170307,{awp=80300,f=27,lvl=50,r=1})})}),
+prof(202,{
 h(-26,{
 r(305950,{awp=80300,b=1,itemID=170408,providers={{"s",305951}},requireSkill=202,skillID=2499}),
 r(305941,{awp=80300,b=1,itemID=170406,providers={{"s",305942}},requireSkill=202,skillID=2499}),
@@ -10037,8 +10037,8 @@ h(-245,{
 i(158212,{f=55,lvl=45,spellID=264877}),
 i(158377,{f=55,lvl=45,spellID=265095}),
 i(158203,{f=55,lvl=45,spellID=264762}),
-i(158327,{f=55,lvl=45,spellID=264959})})}}),
-prof(356,{awp=80001,g={
+i(158327,{f=55,lvl=45,spellID=264959})})}),
+prof(356,{
 i(174328,{awp=80300,spellID=273293}),
 i(152545,{spellID=273293}),
 i(152547,{spellID=273293}),
@@ -10058,8 +10058,8 @@ i(168302,{awp=80200,spellID=273293}),
 ah(273293,{type="s",g={
 i(160711)}}),
 flt(200,{
-r(43308,{b=1,description="Can be fished from schools.",itemID=34109,requireSkill=356})})}}),
-prof(182,{awp=80001,g={
+r(43308,{b=1,description="Can be fished from schools.",itemID=34109,requireSkill=356})})}),
+prof(182,{
 ah(2366,{type="s",g={
 i(152507),
 i(152510),
@@ -10077,8 +10077,8 @@ i(152506),
 i(152508),
 i(168487,{awp=80200}),
 i(168919,{awp=80200,b=1}),
-i(169596,{awp=80200,b=1})}})}}),
-prof(773,{awp=80001,g={
+i(169596,{awp=80200,b=1})}})}),
+prof(773,{
 ah(382984,{type="s",g={
 i(153636),
 i(153635),
@@ -10195,8 +10195,8 @@ i(159127,{f=53,lvl=50,spellID=276135}),
 i(169302,{awp=80200,f=53,lvl=50,spellID=300813}),
 i(169328,{awp=80200,f=53,lvl=50,spellID=300913}),
 i(169321,{awp=80200,f=53,lvl=50,spellID=300830}),
-i(169301,{awp=80200,f=53,lvl=50,spellID=300805})})}}),
-prof(755,{awp=80001,g={
+i(169301,{awp=80200,f=53,lvl=50,spellID=300805})})}),
+prof(755,{
 h(-26,{
 r(299018,{awp=80200,b=1,itemID=168772,lvl=10,providers={{"s",299017}},requireSkill=755,skillID=2517}),
 r(305981,{awp=80300,b=1,itemID=171083,providers={{"s",305982}},requireSkill=755,skillID=2517}),
@@ -10284,8 +10284,8 @@ s(91014,153637,{f=28,lvl=45}),
 s(91017,153640,{f=28,lvl=50}),
 s(100849,164681,{awp=80100,f=28,lvl=50}),
 s(105468,170318,{awp=80300,f=28,lvl=50}),
-s(91015,153638,{f=28,lvl=45})})}}),
-prof(165,{awp=80001,g={
+s(91015,153638,{f=28,lvl=45})})}),
+prof(165,{
 h(-26,{
 r(299026,{awp=80200,b=1,itemID=168777,lvl=10,providers={{"s",299025}},requireSkill=165,skillID=2525}),
 r(299029,{awp=80200,b=1,itemID=168779,lvl=10,providers={{"s",299028}},requireSkill=165,skillID=2525}),
@@ -10552,8 +10552,8 @@ s(98223,154160,{f=34,lvl=45,r=1}),
 s(100877,164711,{awp=80100,f=32,lvl=50,r=2}),
 s(100838,164670,{awp=80100,f=32,lvl=50,r=1}),
 s(105509,170362,{awp=80300,f=32,lvl=50,r=2}),
-s(105510,170363,{awp=80300,f=32,lvl=50,r=1})})}}),
-prof(186,{awp=80001,g={
+s(105510,170363,{awp=80300,f=32,lvl=50,r=1})})}),
+prof(186,{
 i(160944,{b=1}),
 i(161078,{b=1}),
 i(161079,{b=1}),
@@ -10567,8 +10567,8 @@ i(169597,{awp=80200,b=1}),
 i(161088,{b=1}),
 i(152513),
 i(152579),
-i(161085,{b=1})}}),
-prof(393,{awp=80001,g={
+i(161085,{b=1})}),
+prof(393,{
 ah(265855,{type="s",g={
 i(154164),
 i(154165),
@@ -10577,8 +10577,8 @@ i(168650,{awp=80200}),
 i(168649,{awp=80200}),
 i(153051),
 i(153050),
-i(154722)}})}}),
-prof(197,{awp=80001,g={
+i(154722)}})}),
+prof(197,{
 h(-26,{
 r(257123,{b=1,itemID=162509,lvl=10,providers={{"s",257122}},requireSkill=197,skillID=2533}),
 r(257120,{b=1,itemID=162507,lvl=10,providers={{"s",257118}},requireSkill=197,skillID=2533}),
@@ -10726,7 +10726,7 @@ i(168427,{awp=80200,lvl=10,spellID=300031}),
 i(169456,{awp=80200,f=55,spellID=301367}),
 i(164733,{awp=80105,b=1,lvl=50,requireSkill=197,spellID=282473}),
 i(158381,{f=55,lvl=40,spellID=267198}),
-i(159791,{f=55,requireSkill=197,spellID=268965})})}}),
+i(159791,{f=55,requireSkill=197,spellID=268965})})}),
 h(-45,{awp=80200,g={
 q(56042,{isDaily=1,lvl=50,qgs={153897},g={
 i(168740,{b=1,sym={{"select","itemID",132892},{"pop"}},g={
@@ -10736,15 +10736,15 @@ i(170056,{b=1}),
 i(170057,{b=1}),
 i(170058,{b=1}),
 i(170059,{b=1})}}),
-i(168790)}})}})}})}),
-x(9,{
-i(173381,{awp=90002,b=1}),
-i(173382,{awp=90002,b=1}),
+i(168790)}})}})}})}}),
+x(9,{awp=90002,g={
+i(173381,{b=1}),
+i(173382,{b=1}),
 i(173383,{awp=90100,b=1}),
 i(187741,{awp=90200,b=1}),
 i(173384,{awp=90100,b=1}),
 i(187742,{awp=90200,b=1}),
-i(183942,{awp=90002,b=1}),
+i(183942,{b=1}),
 i(185960,{awp=90100,b=1}),
 i(187784,{awp=90200,b=1}),
 h(-679,{awp=110207,g={
@@ -10754,7 +10754,7 @@ o(553616,{type="AsSubGenericObject"}),
 o(553646,{type="AsSubGenericObject"}),
 o(553804,{type="AsSubGenericObject"}),
 i(251772,{b=2})}})}}),
-prof(171,{awp=90002,g={
+prof(171,{
 flt(55,{
 i(187802,{awp=90200,f=55,lvl=60,spellID=359867}),
 i(171286,{f=55,lvl=51,spellID=321389}),
@@ -10808,8 +10808,8 @@ i(171289),
 i(180457),
 i(171428)}),
 flt(53,{
-i(171323,{b=1,f=53,lvl=60,requireSkill=171,spellID=188026})})}}),
-prof(164,{awp=90002,g={
+i(171323,{b=1,f=53,lvl=60,requireSkill=171,spellID=188026})})}),
+prof(164,{
 h(-26,{
 r(332006,{learnedAt=100,providers={{"s",307705}},requireSkill=164,skillID=2751}),
 r(332041,{learnedAt=100,providers={{"s",332006}},requireSkill=164,skillID=2751}),
@@ -10882,8 +10882,8 @@ s(105971,171385,{f=20,lvl=50}),
 s(105977,171391,{f=8,lvl=50}),
 s(105970,171384,{f=24,lvl=50}),
 s(105972,171386,{f=29,lvl=50}),
-s(105978,171392,{f=35,lvl=50})})}}),
-prof(185,{awp=90002,g={
+s(105978,171392,{f=35,lvl=50})})}),
+prof(185,{
 h(-679,{awp=110207,g={
 de(2468,{itemID=246705,spellID=1243425})}}),
 i(172069,{f=55,lvl=55,spellID=308526}),
@@ -10906,8 +10906,8 @@ i(172051,{f=55,lvl=55,spellID=308515}),
 i(172042,{f=55,lvl=55,spellID=308458}),
 i(172050,{f=55,lvl=50,spellID=308510}),
 i(172045,{f=55,lvl=55,spellID=308489}),
-i(186704,{awp=90100,f=55,lvl=55,spellID=314646})}}),
-prof(333,{awp=90002,g={
+i(186704,{awp=90100,f=55,lvl=55,spellID=314646})}),
+prof(333,{
 ah(324750,{type="s",g={
 i(172232),
 i(172231,{spellID=323797}),
@@ -10959,8 +10959,8 @@ i(172367,{f=55,lvl=50}),
 i(172370,{f=55,lvl=50}),
 i(172368,{f=55,lvl=50})}),
 h(-101,{
-s(106711,172462,{f=27,lvl=50})})}}),
-prof(202,{awp=90002,g={
+s(106711,172462,{f=27,lvl=50})})}),
+prof(202,{
 h(-88,{
 s(107300,172907,{b=1,f=6,loc=40,lvl=60,requireSkill=202,spellID=321547}),
 s(107298,172905,{b=1,f=4,loc=40,lvl=60,requireSkill=202,spellID=321547}),
@@ -10990,8 +10990,8 @@ i(172937)}),
 flt(102,{
 toy(172924,{requireSkill=202})}),
 h(-101,{
-s(107304,172923,{f=31,lvl=50})})}}),
-prof(356,{awp=90002,g={
+s(107304,172923,{f=31,lvl=50})})}),
+prof(356,{
 i(187877,{awp=90105,b=1,customCollect={"SL_COV_NFA"},description="Fish anywhere in the Shadowlands to receive this soul.",lvl=50,maps={1525,1533,1536,1565}}),
 i(173037),
 i(173033),
@@ -11001,8 +11001,8 @@ i(187702,{awp=90200}),
 i(173034),
 i(173036),
 flt(200,{
-r(43308,{b=1,description="Can be fished from schools.",itemID=34109,requireSkill=356})})}}),
-prof(182,{awp=90002,g={
+r(43308,{b=1,description="Can be fished from schools.",itemID=34109,requireSkill=356})})}),
+prof(182,{
 ah(2366,{type="s",g={
 i(169701),
 i(169700,{spellID=305764}),
@@ -11016,8 +11016,8 @@ i(169550,{requireSkill=773,spellID=300692}),
 i(170554,{spellID=305580}),
 i(169699,{spellID=305761}),
 i(168583),
-i(169698,{spellID=305580})}})}}),
-prof(773,{awp=90002,g={
+i(169698,{spellID=305580})}})}),
+prof(773,{
 ah(311418,{type="s",g={
 i(173057),
 i(175788),
@@ -11107,8 +11107,8 @@ i(173078,{f=53,lvl=60,spellID=333734})}),
 h(-101,{
 s(109356,173050,{f=1,lvl=50}),
 s(115031,173428,{f=28,lvl=50}),
-s(115032,173054,{f=28,lvl=50})})}}),
-prof(755,{awp=90002,g={
+s(115032,173054,{f=28,lvl=50})})}),
+prof(755,{
 ah(325248,{type="s",g={
 i(173109),
 i(173170),
@@ -11164,8 +11164,8 @@ flt(50,{
 i(187829,{awp=90200}),
 i(187849,{awp=90200}),
 i(186981,{awp=90100,f=55,lvl=51,requireSkill=755,spellID=355159}),
-i(186982,{awp=90100,f=55,lvl=51,requireSkill=755,spellID=355175})})}}),
-prof(165,{awp=90002,g={
+i(186982,{awp=90100,f=55,lvl=51,requireSkill=755,spellID=355175})})}),
+prof(165,{
 h(-26,{
 r(332029,{learnedAt=110,providers={{"s",309213}},requireSkill=165,skillID=2758}),
 r(332064,{learnedAt=110,providers={{"s",332029}},requireSkill=165,skillID=2758}),
@@ -11286,8 +11286,8 @@ h(-101,{
 s(106718,172349,{f=34,lvl=50}),
 s(106715,172350,{f=32,lvl=50}),
 s(106714,172351,{f=33,lvl=50}),
-s(106717,172348,{f=34,lvl=50})})}}),
-prof(186,{awp=90002,g={
+s(106717,172348,{f=34,lvl=50})})}),
+prof(186,{
 ah(2575,{type="s",g={
 i(171839),
 i(171833),
@@ -11304,8 +11304,8 @@ i(171838),
 i(171832),
 i(171835),
 i(171829),
-i(177061)}})}}),
-prof(393,{awp=90002,g={
+i(177061)}})}),
+prof(393,{
 ah(308569,{type="s",g={
 i(172094),
 i(172095),
@@ -11314,8 +11314,8 @@ i(172093),
 i(172097),
 i(172096),
 i(172092),
-i(187701,{awp=90200})}})}}),
-prof(197,{awp=90002,g={
+i(187701,{awp=90200})}})}),
+prof(197,{
 h(-26,{
 r(332037,{learnedAt=100,providers={{"s",310885}},requireSkill=197,skillID=2759}),
 r(332072,{learnedAt=100,providers={{"s",332037}},requireSkill=197,skillID=2759}),
@@ -11383,24 +11383,24 @@ i(173191,{f=55,lvl=55,spellID=310944}),
 i(184480,{f=113}),
 i(184479,{f=113}),
 i(173192,{f=55,lvl=50,spellID=310945}),
-i(186975,{awp=90100,f=55,spellID=355046})})}})}),
-x(10,{
-i(190456,{awp=100002,b=1}),
-i(198046,{awp=100002,b=1}),
+i(186975,{awp=90100,f=55,spellID=355046})})})}}),
+x(10,{awp=100002,g={
+i(190456,{b=1}),
+i(198046,{b=1}),
 i(228368,{awp=110000}),
-i(198048,{awp=100002,b=1}),
-i(198056,{awp=100002,b=1}),
-i(198058,{awp=100002,b=1}),
-i(198059,{awp=100002,b=1}),
-i(190454,{awp=100002,b=1,rwp=100100,u=2}),
-i(197921,{awp=100002,b=1}),
-i(201832,{awp=100002}),
-i(190453,{awp=100002,b=1}),
+i(198048,{b=1}),
+i(198056,{b=1}),
+i(198058,{b=1}),
+i(198059,{b=1}),
+i(190454,{b=1,rwp=100100,u=2}),
+i(197921,{b=1}),
+i(201832),
+i(190453,{b=1}),
 i(204440,{awp=100100,b=1,cost={{"i",204717,2}}}),
 i(206959,{awp=100200,b=1}),
 i(211516,{awp=100206,b=1,cost={{"i",211515,2}}}),
-i(191529,{awp=100002,b=1,spellID=395662}),
-i(191526,{awp=100002,b=1,spellID=395663}),
+i(191529,{b=1,spellID=395662}),
+i(191526,{b=1,spellID=395663}),
 i(204462,{awp=100100,b=1,spellID=408595}),
 h(-679,{awp=110207,g={
 o(547740,{maps={2022,2023,2024,2025,2151,2200,2239},type="AsGenericObjectContainer",g={
@@ -11412,7 +11412,7 @@ o(549325,{type="AsSubGenericObject"}),
 o(546955,{type="AsSubGenericObject"}),
 o(547258,{type="AsSubGenericObject"}),
 i(251773,{b=2})}})}}),
-prof(171,{awp=100002,g={
+prof(171,{
 ah(370747,{sym={{"select","spellID",370746},{"extract","recipeID"}},type="s",g={
 i(193366,{f=200,g={
 r(370460,{learnedAt=55,requireSkill=171,skillID=2823}),
@@ -11698,8 +11698,8 @@ i(191497),
 i(191498)}),
 flt(53,{
 i(191492,{b=1,f=53,lvl=60,spellID=375626}),
-i(191491,{b=1,f=53,lvl=60,spellID=375844})})}}),
-prof(164,{awp=100002,g={
+i(191491,{b=1,f=53,lvl=60,spellID=375844})})}),
+prof(164,{
 h(-88,{
 s(168764,190519,{b=1,f=7,loc=42,lvl=70,spellID=378134}),
 s(168771,190526,{b=1,f=7,loc=43,lvl=70,spellID=395959}),
@@ -11965,8 +11965,8 @@ s(168751,190506,{b=1,f=20,lvl=70}),
 s(168753,190508,{b=1,f=35,lvl=70}),
 s(186240,205168,{awp=100100,b=1,f=8,lvl=70,spellID=408392}),
 s(185921,205046,{awp=100100,b=1,f=24,lvl=70,spellID=408711}),
-s(180026,192081,{b=1,f=8,lvl=70,spellID=372031})})}}),
-prof(185,{awp=100002,g={
+s(180026,192081,{b=1,f=8,lvl=70,spellID=372031})})}),
+prof(185,{
 h(-26,{
 r(381397,{learnedAt=90,requireSkill=185,skillID=2824}),
 r(381403,{learnedAt=45,requireSkill=185,skillID=2824}),
@@ -12028,8 +12028,8 @@ i(197776,{f=55,lvl=60,spellID=382240}),
 i(197778,{f=55,lvl=65,spellID=382218}),
 i(197758,{f=55,lvl=10,spellID=396917}),
 i(197793,{f=55,lvl=70,spellID=382423}),
-i(197770,{f=55,lvl=60,spellID=396919})}}),
-prof(333,{awp=100002,g={
+i(197770,{f=55,lvl=60,spellID=396919})}),
+prof(333,{
 h(-243,{
 i(199934,{f=55,lvl=60}),
 i(199976,{f=55,lvl=60}),
@@ -12340,8 +12340,8 @@ i(200059,{f=55,lvl=60})}),
 h(-101,{
 s(182989,200641,{f=27,lvl=62}),
 s(185564,204401,{awp=100100,b=1,f=27,lvl=70,spellID=405226}),
-s(182990,200642,{b=1,f=27,lvl=70})})}}),
-prof(202,{awp=100002,g={
+s(182990,200642,{b=1,f=27,lvl=70})})}),
+prof(202,{
 ah(382374,{cost={{"i",198651,5}},type="s",g={
 toy(202309,{awp=100005}),
 toy(202360,{awp=100007}),
@@ -12716,8 +12716,8 @@ toy(207092,{awp=100200}),
 toy(198156,{requireSkill=202})}),
 h(-101,{
 s(183303,198334,{f=31,lvl=70}),
-s(183302,198335,{b=1,f=31,lvl=58})})}}),
-prof(356,{awp=100002,g={
+s(183302,198335,{b=1,f=31,lvl=58})})}),
+prof(356,{
 ah(198438,{providers={{"i",198438}},sym={{"select","itemID",194298,194267,194507,194486,198908,201741,201738,198904}},type="i",g={
 r(375063,{itemID=194671,requireSkill=755,skillID=2829}),
 r(408299,{awp=100100,itemID=205161,requireSkill=164,skillID=2822}),
@@ -12764,8 +12764,8 @@ i(194730,{spellID=377850}),
 i(199339,{b=1}),
 i(198614,{f=55,spellID=383058}),
 i(194969),
-i(194966)}}),
-prof(182,{awp=100002,g={
+i(194966)}),
+prof(182,{
 h(-26,{
 ah(2200,{awp=100200,type="m",g={
 r(421176,{learnedAt=100,maps={2200},questID=77824,requireSkill=182,skillID=2832}),
@@ -12870,8 +12870,8 @@ i(191465),
 i(191466),
 i(191470),
 i(191471),
-i(191472)}})}}),
-prof(773,{awp=100002,g={
+i(191472)}})}),
+prof(773,{
 h(-26,{
 ah(383759,{type="s",g={
 r(383522,{learnedAt=35,requireSkill=773,skillID=2828}),
@@ -13365,8 +13365,8 @@ s(181832,194898,{b=1,f=28,lvl=70}),
 s(181831,194897,{b=1,f=28,lvl=70}),
 s(183308,194893,{f=28,lvl=62}),
 s(183307,194892,{f=28,lvl=62}),
-s(181830,194894,{b=1,f=28,lvl=70,spellID=386572})})}}),
-prof(755,{awp=100002,g={
+s(181830,194894,{b=1,f=28,lvl=70,spellID=386572})})}),
+prof(755,{
 h(-88,{
 i(194082,{f=52,lvl=70}),
 i(192998,{f=51}),
@@ -13713,8 +13713,8 @@ flt(102,{
 toy(205045,{awp=100100}),
 toy(193033),
 toy(193032,{
-i(193260,{b=1,spellID=374906})})})}}),
-prof(165,{awp=100002,g={
+i(193260,{b=1,spellID=374906})})})}),
+prof(165,{
 h(-88,{
 flt(5,{
 s(180636,193453,{b=1,f=5,loc=42,lvl=70,spellID=378134}),
@@ -14065,8 +14065,8 @@ toy(193478)}),
 h(-101,{
 s(180633,193449,{b=1,f=32,lvl=70}),
 s(180594,193383,{f=33,lvl=61}),
-s(180663,193496,{b=1,f=1,lvl=70,spellID=378391})})}}),
-prof(186,{awp=100002,g={
+s(180663,193496,{b=1,f=1,lvl=70,spellID=378391})})}),
+prof(186,{
 h(-26,{
 r(384688,{learnedAt=30,questID=71951,requireSkill=186,skillID=2833,g={
 crit(61370,{achID=18819,awp=100107,id=1,maps={2022,2023,2024,2025,2133},providers={{"o",379248},{"o",379252}},requireSkill=186})}}),
@@ -14134,8 +14134,8 @@ i(197754),
 i(190395),
 i(190396),
 i(190394),
-i(194062,{b=1,requireSkill=186,spellID=376061})}})}}),
-prof(393,{awp=100002,g={
+i(194062,{b=1,requireSkill=186,spellID=376061})}})}),
+prof(393,{
 ah(366259,{type="s",g={
 i(193213),
 i(193214),
@@ -14178,8 +14178,8 @@ i(198403,{f=55,lvl=10,spellID=383095}),
 i(193893,{f=55,lvl=10,spellID=375779}),
 i(193895,{f=55,lvl=10,spellID=375784}),
 i(198807,{b=1,f=55,lvl=10,spellID=382134}),
-i(193894,{f=55,lvl=10,spellID=375781})}}),
-prof(197,{awp=100002,g={
+i(193894,{f=55,lvl=10,spellID=375781})}),
+prof(197,{
 h(-88,{
 s(180696,193530,{b=1,f=4,loc=43,lvl=70,spellID=378134}),
 s(180692,193526,{b=1,f=4,loc=41,lvl=70,spellID=387144}),
@@ -14461,12 +14461,12 @@ h(-101,{
 s(180917,194070,{b=1,f=20,lvl=70,requireSkill=197}),
 s(180916,194069,{b=1,f=20,lvl=70,requireSkill=197}),
 s(181449,198041,{b=1,f=1,lvl=70}),
-s(180915,194065,{b=1,f=20,lvl=70,requireSkill=197})})}})}),
-x(11,{
-i(210814,{awp=110002,b=1}),
-i(228338,{awp=110002}),
-i(228339,{awp=110002}),
-i(211296,{awp=110002,b=1,cost={{"i",211297,2}}}),
+s(180915,194065,{b=1,f=20,lvl=70,requireSkill=197})})})}}),
+x(11,{awp=110002,g={
+i(210814,{b=1}),
+i(228338),
+i(228339),
+i(211296,{b=1,cost={{"i",211297,2}}}),
 i(230906,{awp=110100,b=1,cost={{"i",230905,2}}}),
 i(231756,{awp=110200,b=1,cost={{"i",231757,2}}}),
 h(-679,{awp=110207,g={
@@ -14477,7 +14477,7 @@ o(543723,{type="AsSubGenericObject"}),
 o(546928,{type="AsSubGenericObject"}),
 o(546738,{type="AsSubGenericObject"}),
 i(248012,{b=2})}})}}),
-prof(171,{awp=110002,g={
+prof(171,{
 flt(55,{
 i(212719,{f=55,lvl=71,spellID=432877,g={
 i(212739,{f=55,lvl=71,spellID=432021}),
@@ -14713,8 +14713,8 @@ i(228405),
 i(228406),
 i(211804,{b=1})}),
 flt(53,{
-i(210816,{b=1,f=53,lvl=70,spellID=432421})})}}),
-prof(164,{awp=110002,g={
+i(210816,{b=1,f=53,lvl=70,spellID=432421})})}),
+prof(164,{
 h(-88,{
 s(198896,217150,{f=7,loc=43,lvl=80}),
 s(198889,217143,{f=7,loc=42,lvl=80}),
@@ -14920,8 +14920,8 @@ s(219559,222468,{f=24,lvl=80}),
 s(219558,222467,{f=34,lvl=80}),
 s(219555,222464,{f=20,lvl=80}),
 s(219557,222466,{f=25,lvl=80}),
-s(219554,222463,{b=1,f=20,lvl=80,spellID=453573})})}}),
-prof(185,{awp=110002,g={
+s(219554,222463,{b=1,f=20,lvl=80,spellID=453573})})}),
+prof(185,{
 h(-26,{
 ah(447869,{type="s",g={
 r(447873,{learnedAt=15,requireSkill=185,skillID=2873})}})}),
@@ -15020,8 +15020,8 @@ i(222719,{f=55,lvl=68,spellID=457290}),
 i(222713,{f=55,lvl=68,spellID=457300}),
 i(222720,{f=55,lvl=68,spellID=457302}),
 i(222704,{f=55,lvl=68,spellID=454087}),
-i(222714,{f=55,lvl=68,spellID=457286})}}),
-prof(333,{awp=110002,g={
+i(222714,{f=55,lvl=68,spellID=457286})}),
+prof(333,{
 h(-243,{
 i(223618,{f=55,lvl=70}),
 i(223649,{f=55,lvl=70}),
@@ -15382,8 +15382,8 @@ i(223761,{f=55,lvl=70}),
 i(223762,{f=55,lvl=70})}),
 h(-101,{
 s(220367,224404,{f=27,lvl=72}),
-s(220368,224405,{b=1,f=27,lvl=70})})}}),
-prof(202,{awp=110002,g={
+s(220368,224405,{b=1,f=27,lvl=70})})}),
+prof(202,{
 h(-88,{
 s(221161,225642,{f=4,loc=40,lvl=58,requireSkill=202}),
 s(198901,217155,{f=4,loc=43,lvl=80}),
@@ -15666,8 +15666,8 @@ toy(221966,{lvl=68,requireSkill=202})}),
 h(-101,{
 s(221013,225370,{f=31,lvl=80}),
 s(221165,225646,{f=31,lvl=70}),
-s(219452,221969,{b=1,f=31,lvl=58})})}}),
-prof(356,{awp=110002,g={
+s(219452,221969,{b=1,f=31,lvl=58})})}),
+prof(356,{
 flt(2,{
 s(222805,225759,{f=1}),
 s(222808,225762,{f=23}),
@@ -15738,8 +15738,8 @@ i(220141,{spellID=464862}),
 i(220150,{spellID=451969}),
 i(235846,{awp=110100,spellID=1218567}),
 i(235845,{awp=110100}),
-i(220139,{spellID=456158})}}),
-prof(182,{awp=110002,g={
+i(220139,{spellID=456158})}),
+prof(182,{
 h(-26,{
 r(435858,{learnedAt=60,questID=79916,requireSkill=182,skillID=2877}),
 r(435840,{learnedAt=60,questID=79909,requireSkill=182,skillID=2877}),
@@ -15815,8 +15815,8 @@ i(239692,{awp=110200}),
 i(214595,{f=55,requireSkill=182,spellID=442889}),
 i(214561,{f=55,requireSkill=182,spellID=435343}),
 i(213612),
-i(213611)}})}}),
-prof(773,{awp=110002,g={
+i(213611)}})}),
+prof(773,{
 h(-679,{awp=110207,g={
 de(9238,{itemID=253164,spellID=1255716}),
 de(9239,{itemID=253165,spellID=1255717}),
@@ -16109,8 +16109,8 @@ s(219585,222569,{f=28,lvl=68}),
 s(219582,222565,{f=1,lvl=80}),
 s(219650,222568,{b=1,f=28,lvl=80}),
 s(219584,222567,{b=1,f=28,lvl=80}),
-s(219583,222566,{b=1,f=1,lvl=80})})}}),
-prof(755,{awp=110002,g={
+s(219583,222566,{b=1,f=1,lvl=80})})}),
+prof(755,{
 ah(194709,{providers={{"i",194709}},type="i",g={
 i(212498),
 i(212505),
@@ -16343,8 +16343,8 @@ i(213757),
 i(213758)}),
 flt(102,{
 toy(215147),
-toy(215145)})}}),
-prof(165,{awp=110002,g={
+toy(215145)})}),
+prof(165,{
 h(-88,{
 flt(5,{
 s(218387,219502,{b=1,f=5,loc=45,lvl=80,spellID=443762}),
@@ -16556,8 +16556,8 @@ i(219902),
 i(219903),
 i(219886),
 i(219887),
-i(219888)})}}),
-prof(186,{awp=110002,g={
+i(219888)})}),
+prof(186,{
 h(-26,{
 r(439707,{learnedAt=60,requireSkill=186,skillID=2881}),
 r(439713,{description="Best farmed in 'The Underkeep' Delve during a story that allows ores to spawn. The first room on the right can an Aqirite Seam.\n\nCan also be found very very rarely in Caves in Hallowfall & Ajzkahet as well as in the Sinkhole, Skittering Breach and Underkeep Delve.",learnedAt=90,maps={2215,2255,2299,2301,2310},questID=80357,requireSkill=186,skillID=2881}),
@@ -16611,8 +16611,8 @@ i(210939),
 i(224583,{b=1,requireSkill=186,spellID=453371}),
 i(224584,{b=1,requireSkill=186,spellID=453372}),
 i(213611)}}),
-o(413902,{description="Has a chance to spawn only in a few Delves.",maps={2259,2299,2310}})}}),
-prof(393,{awp=110002,g={
+o(413902,{description="Has a chance to spawn only in a few Delves.",maps={2259,2299,2310}})}),
+prof(393,{
 ah(423342,{type="s",g={
 i(224781,{b=1,spellID=458477}),
 i(218338),
@@ -16649,8 +16649,8 @@ i(219002,{f=55,lvl=70,spellID=451523}),
 i(219011,{b=1,f=55,lvl=70,spellID=442680}),
 i(219008,{b=1,f=55,lvl=70,requireSkill=393,spellID=460482}),
 i(219010,{b=1,f=55,lvl=70,spellID=442680}),
-i(224782,{b=1,spellID=453880})}}),
-prof(197,{awp=110002,g={
+i(224782,{b=1,spellID=453880})}),
+prof(197,{
 h(-88,{
 s(198867,217120,{f=4,loc=43,lvl=80}),
 s(198872,217125,{f=3,lvl=80}),
@@ -16857,18 +16857,18 @@ fc(446964,{providers={{"s",446964}},questID=80828,requireSkill=197}),
 fc(446978,{providers={{"s",446978}},questID=80842,requireSkill=197}),
 fc(446999,{providers={{"s",446999}},questID=80863,requireSkill=197}),
 fc(446967,{providers={{"s",446967}},questID=80831,requireSkill=197}),
-fc(446997,{providers={{"s",446997}},questID=80861,requireSkill=197})})}})}),
-x(12,{
+fc(446997,{providers={{"s",446997}},questID=80861,requireSkill=197})})})}}),
+x(12,{awp=120001,g={
 i(232875,{b=1,rwp=120100,spellID=1270579,u=2}),
 i(274476,{awp=120100,spellID=1294209}),
-h(-679,{awp=120001,g={
+h(-679,{
 o(618517,{maps={2393,2395,2405,2413,2437,2444,2536},type="AsGenericObjectContainer",g={
 o(618517,{type="AsSubGenericObject"}),
 o(618520,{type="AsSubGenericObject"}),
 o(618519,{type="AsSubGenericObject"}),
 o(618518,{type="AsSubGenericObject"}),
-i(256963)}})}}),
-prof(171,{awp=120001,g={
+i(256963)}})}),
+prof(171,{
 flt(55,{
 i(271889,{awp=120100,f=55,spellID=1295015}),
 i(271890,{awp=120100,f=55,spellID=1295015}),
@@ -17005,8 +17005,8 @@ i(241283),
 i(241282)}),
 flt(53,{
 i(241340,{b=1,f=53,lvl=80,spellID=1280591}),
-i(241291,{b=1,f=53,lvl=81,requireSkill=171})})}}),
-prof(164,{awp=120001,g={
+i(241291,{b=1,f=53,lvl=81,requireSkill=171})})}),
+prof(164,{
 h(-88,{
 s(301563,237921,{f=7,loc=40,lvl=90}),
 s(301565,237923,{f=7,loc=43,lvl=81}),
@@ -17213,8 +17213,8 @@ s(287151,237911,{f=23,lvl=90}),
 s(287149,237909,{f=21,lvl=90}),
 s(287154,237914,{f=20,lvl=90}),
 s(287153,237913,{f=21,lvl=90}),
-s(287156,237916,{f=25,lvl=90})})}}),
-prof(185,{awp=120001,g={
+s(287156,237916,{f=25,lvl=90})})}),
+prof(185,{
 i(275264,{awp=120100,f=55,spellID=1296432}),
 i(242287,{f=55,lvl=90,spellID=1232902}),
 i(242298,{f=55,lvl=80,spellID=1232926}),
@@ -17306,8 +17306,8 @@ i(242288,{f=55,lvl=90,spellID=1232489}),
 i(275258,{awp=120100,f=55,spellID=1232919}),
 i(242284,{f=55,lvl=90,spellID=1232906}),
 i(242285,{f=55,lvl=90,spellID=1232905}),
-i(242290,{f=55,lvl=90,spellID=1232487})}}),
-prof(333,{awp=120001,g={
+i(242290,{f=55,lvl=90,spellID=1232487})}),
+prof(333,{
 h(-243,{
 i(244008,{f=55,lvl=70}),
 i(244009,{f=55,lvl=70}),
@@ -17579,8 +17579,8 @@ i(244000,{f=55,lvl=70}),
 i(244001,{f=55,lvl=70})}),
 h(-101,{
 s(292010,244179,{b=1,f=27,lvl=70}),
-s(292009,244178,{f=27,lvl=72})})}}),
-prof(202,{awp=120001,g={
+s(292009,244178,{f=27,lvl=72})})}),
+prof(202,{
 h(-88,{
 s(292408,244748,{b=1,f=5,loc=43,lvl=80}),
 s(292409,244749,{b=1,f=6,loc=43,lvl=80}),
@@ -17840,8 +17840,8 @@ h(-245,{
 i(257745,{f=55,lvl=81,spellID=1262341}),
 i(257746,{f=55,lvl=81,spellID=1262344}),
 i(257747,{f=55,lvl=81,spellID=1262297}),
-i(257748,{f=55,lvl=81,spellID=1262300})})}}),
-prof(356,{awp=120001,g={
+i(257748,{f=55,lvl=81,spellID=1262300})})}),
+prof(356,{
 ah(278329,{awp=120100,providers={{"i",278329}},type="i",g={
 r(1297680,{itemID=275695,requireSkill=755,skillID=2914}),
 r(1296510,{itemID=275334,requireSkill=165,skillID=2915}),
@@ -17983,8 +17983,8 @@ i(238368,{spellID=1225292}),
 i(274589,{awp=120100,spellID=1225292}),
 i(277821,{awp=120100,f=55,spellID=1302820}),
 i(238379,{spellID=1235207}),
-i(262650,{awp=120005,f=55,spellID=1284999})}}),
-prof(182,{awp=120001,g={
+i(262650,{awp=120005,f=55,spellID=1284999})}),
+prof(182,{
 h(-26,{
 r(1223138,{learnedAt=30,questID=87747,requireSkill=182,skillID=2912}),
 r(1223137,{learnedAt=30,questID=87741,requireSkill=182,skillID=2912}),
@@ -18047,8 +18047,8 @@ i(238465,{b=1,requireSkill=182,spellID=1225342}),
 i(238466,{b=1,requireSkill=182,spellID=1225344}),
 i(236761),
 i(236767),
-i(237499,{f=55,requireSkill=182,spellID=1224759})}})}}),
-prof(773,{awp=120001,g={
+i(237499,{f=55,requireSkill=182,spellID=1224759})}})}),
+prof(773,{
 h(-26,{
 ah(1230032,{type="s",g={
 r(1230034,{learnedAt=80,requireSkill=773,skillID=2913}),
@@ -18305,8 +18305,8 @@ s(292889,245768,{f=1,lvl=80}),
 s(292902,245869,{f=32,lvl=80}),
 s(292903,245870,{f=1,lvl=80}),
 s(292901,245868,{f=29,lvl=80}),
-s(304558,268365,{f=28})})}}),
-prof(755,{awp=120001,g={
+s(304558,268365,{f=28})})}),
+prof(755,{
 h(-26,{
 r(1231132,{learnedAt=15,requireSkill=755,skillID=2914})}),
 h(-679,{
@@ -18538,8 +18538,8 @@ i(240973),
 i(251489),
 i(251490),
 i(240990),
-i(240991)})}}),
-prof(165,{awp=120001,g={
+i(240991)})}),
+prof(165,{
 h(-88,{
 flt(5,{
 s(292334,244606,{b=1,f=5,loc=45,lvl=80,spellID=1243883}),
@@ -18758,8 +18758,8 @@ i(244632),
 i(244637),
 i(244638),
 i(244635),
-i(244636)})}}),
-prof(186,{awp=120001,g={
+i(244636)})}),
+prof(186,{
 h(-26,{
 r(1225348,{learnedAt=60,questID=88471,requireSkill=186,skillID=2916}),
 r(1225357,{learnedAt=90,questID=88466,requireSkill=186,skillID=2916}),
@@ -18801,8 +18801,8 @@ i(237361),
 i(237506,{b=1,requireSkill=186,spellID=1223324}),
 i(237362),
 i(237363),
-r(1276109,{itemID=265530,requireSkill=164,skillID=2907})}})}}),
-prof(393,{awp=120001,g={
+r(1276109,{itemID=265530,requireSkill=164,skillID=2907})}})}),
+prof(393,{
 ah(471014,{type="s",g={
 i(238523),
 i(238525),
@@ -18831,8 +18831,8 @@ i(238655,{b=1,f=55,lvl=80,requireSkill=393,spellID=1226229}),
 i(238659,{b=1,f=55,lvl=80,requireSkill=393,spellID=1225835}),
 i(238531,{b=1,f=55}),
 i(238660,{b=1,f=55,lvl=80,requireSkill=393,spellID=1225836}),
-i(238658,{b=1,f=55,lvl=80,requireSkill=393,spellID=1225834})}}),
-prof(197,{awp=120001,g={
+i(238658,{b=1,f=55,lvl=80,requireSkill=393,spellID=1225834})}),
+prof(197,{
 h(-88,{
 s(288339,239656,{b=1,f=3,lvl=90}),
 s(291657,239660,{b=1,f=4,loc=43,lvl=90}),
@@ -19005,5 +19005,5 @@ i(270899,{awp=120100}),
 i(239201),
 i(239202),
 i(240164),
-i(240165)})}})})}})
+i(240165)})})}})}})
 end)

@@ -947,7 +947,7 @@ i(154989),
 crit(40836,{achID=12762,id=8,r=2,requireSkill=794}),
 crit(40836,{achID=12764,id=8,r=1,requireSkill=794})}})}})}})}})}}),
 h(-12,{
-x(1,{
+x(1,{awp=10100,g={
 ach(18720,{awp=100107,g={
 crit(40050,{achID=18720,id=1,learnedAt=300,requireSkill=171}),
 crit(40051,{achID=18720,id=2,learnedAt=300,requireSkill=164}),
@@ -977,8 +977,8 @@ crit(44877,{achID=18778,id=7,providers={{"i",168028}}}),
 crit(44878,{achID=18778,id=8,providers={{"i",168029}}})}}),
 ach(18898,{awp=100107,g={
 crit(61656,{achID=18898,maps={287},providers={{"i",15138},{"n",11583}}}),
-crit(61657,{achID=18898,maps={286},providers={{"i",15138},{"n",41376}}})}})}),
-x(2,{
+crit(61657,{achID=18898,maps={286},providers={{"i",15138},{"n",41376}}})}})}}),
+x(2,{awp=20010,g={
 ach(733,{awp=30002}),
 ach(18721,{awp=100107,g={
 crit(40060,{achID=18721,id=1,learnedAt=75,requireSkill=171}),
@@ -992,8 +992,8 @@ crit(40067,{achID=18721,id=8,learnedAt=75,requireSkill=165}),
 crit(40068,{achID=18721,id=9,learnedAt=75,requireSkill=186}),
 crit(40069,{achID=18721,id=10,learnedAt=75,requireSkill=393}),
 crit(40070,{achID=18721,id=11,learnedAt=75,requireSkill=197})}}),
-ach(18729,{awp=100107})}),
-x(3,{
+ach(18729,{awp=100107})}}),
+x(3,{awp=30003,g={
 ach(18722,{awp=100107,g={
 crit(40071,{achID=18722,id=1,learnedAt=75,requireSkill=171}),
 crit(40072,{achID=18722,id=2,learnedAt=75,requireSkill=164}),
@@ -1006,16 +1006,16 @@ crit(40078,{achID=18722,id=8,learnedAt=75,requireSkill=165}),
 crit(40079,{achID=18722,id=9,learnedAt=75,requireSkill=186}),
 crit(40080,{achID=18722,id=10,learnedAt=75,requireSkill=393}),
 crit(40081,{achID=18722,id=11,learnedAt=75,requireSkill=197})}}),
-ach(734,{awp=30003}),
-ach(732,{awp=30003}),
-ach(731,{awp=30003}),
-ach(116,{awp=30003}),
-ach(730,{awp=30003,rwp=80001,u=2,g={
+ach(734),
+ach(732),
+ach(731),
+ach(116),
+ach(730,{rwp=80001,u=2,g={
 crit(5592,{achID=730,id=2,learnedAt=450,requireSkill=129,u=2}),
 crit(5696,{achID=730,id=1,learnedAt=450,requireSkill=356,u=2}),
 crit(5701,{achID=730,id=3,learnedAt=450,requireSkill=185,u=2})}}),
-ach(735,{awp=30003})}),
-x(4,{
+ach(735)}}),
+x(4,{awp=40003,g={
 ach(18719,{awp=100107,g={
 crit(40082,{achID=18719,id=1,learnedAt=75,requireSkill=171}),
 crit(40083,{achID=18719,id=2,learnedAt=75,requireSkill=164}),
@@ -1028,13 +1028,13 @@ crit(40089,{achID=18719,id=8,learnedAt=75,requireSkill=165}),
 crit(40090,{achID=18719,id=9,learnedAt=75,requireSkill=186}),
 crit(40091,{achID=18719,id=10,learnedAt=75,requireSkill=393}),
 crit(40092,{achID=18719,id=11,learnedAt=75,requireSkill=197})}}),
-ach(4924,{awp=40003}),
-ach(4914,{awp=40003}),
-ach(4915,{awp=40003,rwp=80001,u=2,g={
+ach(4924),
+ach(4914),
+ach(4915,{rwp=80001,u=2,g={
 crit(5696,{achID=4915,id=1,learnedAt=525,requireSkill=356,u=2}),
 crit(5592,{achID=4915,id=2,learnedAt=525,requireSkill=129,u=2}),
 crit(5701,{achID=4915,id=3,learnedAt=525,requireSkill=185,u=2}),
-crit(13812,{achID=4915,id=4,learnedAt=525,requireSkill=794,u=2})}})}),
+crit(13812,{achID=4915,id=4,learnedAt=525,requireSkill=794,u=2})}})}}),
 x(5,{awp=50004,g={
 ach(7379,{
 crit(40093,{achID=7379,id=1,learnedAt=75,requireSkill=171}),
@@ -1056,11 +1056,11 @@ crit(5696,{achID=6836,id=1,learnedAt=600,requireSkill=356,u=2}),
 crit(5592,{achID=6836,id=2,learnedAt=600,requireSkill=129,u=2}),
 crit(5701,{achID=6836,id=3,learnedAt=600,requireSkill=185,u=2}),
 crit(13812,{achID=6836,id=4,learnedAt=600,requireSkill=794,u=2})}})}}),
-x(6,{awp=60003,g={
-ach(9464,{
-title(305)}),
-ach(9507),
-ach(9087,{
+x(6,{awp=70003,g={
+ach(9464,{awp=60003,g={
+title(305)}}),
+ach(9507,{awp=60003}),
+ach(9087,{awp=60003,g={
 crit(40104,{achID=9087,id=1,learnedAt=100,requireSkill=171}),
 crit(40105,{achID=9087,id=2,learnedAt=100,requireSkill=164}),
 crit(40106,{achID=9087,id=3,learnedAt=100,requireSkill=333}),
@@ -1071,16 +1071,16 @@ crit(40110,{achID=9087,id=7,learnedAt=100,requireSkill=755}),
 crit(40111,{achID=9087,id=8,learnedAt=100,requireSkill=165}),
 crit(40112,{achID=9087,id=9,learnedAt=100,requireSkill=186}),
 crit(40113,{achID=9087,id=10,learnedAt=100,requireSkill=393}),
-crit(40114,{achID=9087,id=11,learnedAt=100,requireSkill=197})}),
-ach(9506,{rwp=80001,u=2,g={
+crit(40114,{achID=9087,id=11,learnedAt=100,requireSkill=197})}}),
+ach(9506,{awp=60003,rwp=80001,u=2,g={
 crit(5696,{achID=9506,id=1,learnedAt=700,requireSkill=356,u=2}),
 crit(5592,{achID=9506,id=2,learnedAt=700,requireSkill=129,u=2}),
 crit(5701,{achID=9506,id=3,learnedAt=700,requireSkill=185,u=2}),
 crit(13812,{achID=9506,id=4,learnedAt=700,requireSkill=794,u=2})}})}}),
-x(7,{awp=70003,g={
-ach(10582),
-ach(10581),
-ach(10583,{
+x(7,{awp=80001,g={
+ach(10582,{awp=70003}),
+ach(10581,{awp=70003}),
+ach(10583,{awp=70003,g={
 crit(40115,{achID=10583,id=1,learnedAt=100,requireSkill=171}),
 crit(40116,{achID=10583,id=2,learnedAt=100,requireSkill=164}),
 crit(40117,{achID=10583,id=3,learnedAt=100,requireSkill=333}),
@@ -1091,15 +1091,15 @@ crit(40121,{achID=10583,id=7,learnedAt=100,requireSkill=755}),
 crit(40122,{achID=10583,id=8,learnedAt=100,requireSkill=165}),
 crit(40123,{achID=10583,id=9,learnedAt=100,requireSkill=186}),
 crit(40124,{achID=10583,id=10,learnedAt=100,requireSkill=393}),
-crit(40125,{achID=10583,id=11,learnedAt=100,requireSkill=197})}),
-ach(10580,{rwp=80001,u=2,g={
+crit(40125,{achID=10583,id=11,learnedAt=100,requireSkill=197})}}),
+ach(10580,{awp=70003,rwp=80001,u=2,g={
 crit(5592,{achID=10580,id=2,learnedAt=800,requireSkill=129,u=2}),
 crit(13812,{achID=10580,id=4,learnedAt=800,requireSkill=794,u=2}),
 crit(5701,{achID=10580,id=3,learnedAt=800,requireSkill=185,u=2}),
 crit(5696,{achID=10580,id=1,learnedAt=800,requireSkill=356,u=2})}}),
-ach(10588,{providers={{"i",132518}}}),
-ach(10587,{providers={{"i",130251}}}),
-ach(10761,{
+ach(10588,{awp=70003,providers={{"i",132518}}}),
+ach(10587,{awp=70003,providers={{"i",130251}}}),
+ach(10761,{awp=70003,g={
 crit(29869,{achID=10761,id=1,providers={{"i",127917}}}),
 crit(29871,{achID=10761,id=1,providers={{"i",127918}}}),
 crit(31074,{achID=10761,id=1,providers={{"i",127919}}}),
@@ -1272,14 +1272,14 @@ crit(31244,{achID=10761,id=11,providers={{"i",137968}}}),
 crit(31245,{achID=10761,id=11,providers={{"i",137969}}}),
 crit(31246,{achID=10761,id=11,providers={{"i",137970}}}),
 crit(31247,{achID=10761,id=11,providers={{"i",137971}}}),
-crit(31248,{achID=10761,id=11,providers={{"i",137972}}})})}}),
-x(8,{
-ach(12731,{awp=80001,r=2}),
-ach(12733,{awp=80001,r=1,g={
+crit(31248,{achID=10761,id=11,providers={{"i",137972}}})}})}}),
+x(8,{awp=80001,g={
+ach(12731,{r=2}),
+ach(12733,{r=1,g={
 de(1191,{awp=110207,itemID=245490,spellID=1238633})}}),
-ach(12734,{awp=80001,r=2}),
-ach(12735,{awp=80001,r=1}),
-ach(12736,{awp=80001,r=2,g={
+ach(12734,{r=2}),
+ach(12735,{r=1}),
+ach(12736,{r=2,g={
 crit(40753,{achID=12736,id=1,learnedAt=150,r=2,requireSkill=171}),
 crit(40754,{achID=12736,id=2,learnedAt=150,r=2,requireSkill=164}),
 crit(40755,{achID=12736,id=3,learnedAt=150,r=2,requireSkill=333}),
@@ -1291,7 +1291,7 @@ crit(40760,{achID=12736,id=8,learnedAt=150,r=2,requireSkill=165}),
 crit(40761,{achID=12736,id=9,learnedAt=150,r=2,requireSkill=186}),
 crit(40762,{achID=12736,id=10,learnedAt=150,r=2,requireSkill=393}),
 crit(40763,{achID=12736,id=11,learnedAt=150,r=2,requireSkill=197})}}),
-ach(12737,{awp=80001,r=1,g={
+ach(12737,{r=1,g={
 crit(40753,{achID=12737,id=1,learnedAt=150,r=1,requireSkill=171}),
 crit(40754,{achID=12737,id=2,learnedAt=150,r=1,requireSkill=164}),
 crit(40755,{achID=12737,id=3,learnedAt=150,r=1,requireSkill=333}),
@@ -1312,7 +1312,7 @@ crit(44874,{achID=18778,id=4,providers={{"s",282975}}}),
 crit(44875,{achID=18778,id=5,providers={{"s",256301}}}),
 crit(44876,{achID=18778,id=6,providers={{"i",168027}}}),
 crit(44877,{achID=18778,id=7,providers={{"i",168028}}}),
-crit(44878,{achID=18778,id=8,providers={{"i",168029}}})}})}),
+crit(44878,{achID=18778,id=8,providers={{"i",168029}}})}})}}),
 x(9,{awp=90002,g={
 ach(14328),
 ach(14329),
@@ -1524,11 +1524,11 @@ ach(18737,{requireSkill=171}),
 ach(18736,{requireSkill=171}),
 ach(18735,{requireSkill=171}),
 ach(18734,{requireSkill=171})}}),
-x(1,{requireSkill=171,g={
+x(1,{awp=10100,requireSkill=171,g={
 h(-12,{awp=100107,requireSkill=171,g={
 ach(18723,{requireSkill=171,sourceQuests={29067,29481,29482},sqreq=1})}}),
-h(-45,{awp=40300,requireSkill=171,sharedDescription="Requires 300 Classic Alchemy.",g={
-q(29481,{coords={
+h(-45,{requireSkill=171,sharedDescription="Requires 300 Classic Alchemy.",g={
+q(29481,{awp=40300,coords={
 [84]={{55.6,85.8}},
 [85]={{55.6,45.8}},
 [87]={{66.6,55}},
@@ -1536,7 +1536,7 @@ q(29481,{coords={
 [89]={{54,38.6}},
 [90]={{47.6,72.8}}},qgs={3009,3347,4160,4611,5177,5499},repeatable=1,requireSkill=171,g={
 r(28677,{collectible=false,requireSkill=171})}}),
-q(29067,{coords={
+q(29067,{awp=40300,coords={
 [84]={{55.6,85.8}},
 [85]={{55.6,45.8}},
 [87]={{66.6,55}},
@@ -1544,7 +1544,7 @@ q(29067,{coords={
 [89]={{54,38.6}},
 [90]={{47.6,72.8}}},qgs={3009,3347,4160,4611,5177,5499},repeatable=1,requireSkill=171,g={
 r(28675,{collectible=false,requireSkill=171})}}),
-q(29482,{coords={
+q(29482,{awp=40300,coords={
 [84]={{55.6,85.8}},
 [85]={{55.6,45.8}},
 [87]={{66.6,55}},
@@ -1552,31 +1552,31 @@ q(29482,{coords={
 [89]={{54,38.6}},
 [90]={{47.6,72.8}}},qgs={3009,3347,4160,4611,5177,5499},repeatable=1,requireSkill=171,g={
 r(28672,{collectible=false,requireSkill=171})}})}})}}),
-x(2,{awp=20005,requireSkill=171,g={
-q(10906,{altQuests={10905,10907},coords={
+x(2,{awp=20010,requireSkill=171,g={
+q(10906,{altQuests={10905,10907},awp=20005,coords={
 [100]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,learnedAt=325,nextQuests={10902},qgs={16588,18802},requireSkill=171,rwp=40300,u=2}),
-q(10902,{altQuests={10897,10899},coords={
+q(10902,{altQuests={10897,10899},awp=20005,coords={
 [111]={{45.8,20.4}}},cost={{"i",22831,5},{"i",28104,5},{"i",22834,5},{"i",31753,10}},description="Upon finishing this quest, you will become a Elixir Master and be locked out of becoming a Transmutation or Potion Master.",learnedAt=325,maps={273},qgs={19052},requireSkill=171,rwp=40300,sourceQuests={10906},u=2,g={
 r(28677,{collectible=false,requireSkill=171})}}),
-q(10905,{altQuests={10906,10907},coords={
+q(10905,{altQuests={10906,10907},awp=20005,coords={
 [100]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,learnedAt=325,nextQuests={10897},qgs={16588,18802},requireSkill=171,rwp=40300,u=2}),
-q(10897,{altQuests={10899,10902},coords={
+q(10897,{altQuests={10899,10902},awp=20005,coords={
 [102]={{44.1,36.6}}},cost={{"i",22836,5},{"i",22832,5},{"i",22829,5}},crs={17975},description="Upon finishing this quest, you will become a Potion Master and be locked out of becoming a Transmutation or Elixir Master.",learnedAt=325,maps={266},qgs={17909},qis={31744},requireSkill=171,rwp=40300,sourceQuests={10905},u=2,g={
 r(28675,{collectible=false,requireSkill=171})}}),
-q(10907,{altQuests={10905,10906},coords={
+q(10907,{altQuests={10905,10906},awp=20005,coords={
 [100]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,learnedAt=325,nextQuests={10899},qgs={16588,18802},requireSkill=171,rwp=40300,u=2}),
-q(10899,{altQuests={10897,10902},coords={
+q(10899,{altQuests={10897,10902},awp=20005,coords={
 [109]={{44.1,36.6}}},cost={{"i",23571,4}},description="Upon finishing this quest, you will become a Transmutation Master and be locked out of becoming a Potion or Elixir Master.",learnedAt=325,qgs={22427},requireSkill=171,rwp=40300,sourceQuests={10907},u=2,g={
 r(28672,{collectible=false,requireSkill=171})}})}}),
-x(3,{awp=30200,requireSkill=171,g={
-q(14151,{coords={
+x(3,{awp=30003,requireSkill=171,g={
+q(14151,{awp=30200,coords={
 [125]={{42.4,32}}},lvl=10,qgs={28703},repeatable=1,requireSkill=171,g={
 r(66659,{learnedAt=65,requireSkill=171,skillID=2483})}})}}),
 x(5,{awp=50004,requireSkill=171,g={
 q(30597,{cost={{"i",72238,3}},lvl=30,maps={424},providers={{"i",80240}},requireSkill=171,rwp=50200,u=2,g={
 i(80240,{b=1,lvl=30,requireSkill=171,u=2}),
 i(75274,{b=1,f=53,lvl=32,requireSkill=171,spellID=105574,u=2})}})}}),
-x(7,{requireSkill=171,g={
+x(7,{awp=80001,requireSkill=171,g={
 q(39325,{awp=70003,coords={
 [627]={{41.6,32.8}}},lvl=10,qgs={92458},requireSkill=171,g={
 r(195095,{collectible=false,requireSkill=171,rwp=80001,u=2}),
@@ -1671,10 +1671,10 @@ i(151845,{requireSkill=171})}}),
 q(48013,{awp=70300,coords={
 [830]={{56.2,66.8}}},lvl=45,qgs={125346},requireSkill=171,sourceQuests={46816},g={
 r(247688,{b=1,itemID=151703,lvl=10,requireSkill=171,skillID=2479})}})}}),
-x(8,{requireSkill=171,g={
+x(8,{awp=80001,requireSkill=171,g={
 h(-12,{awp=100107,requireSkill=171,g={
 ach(18770,{providers={{"i",156631}},requireSkill=171})}}),
-h(-45,{awp=80001,requireSkill=171,g={
+h(-45,{requireSkill=171,g={
 q(54463,{awp=80100,coords={
 [1161]={{74.2,6.6}}},lvl=10,qgs={132228},r=2,requireSkill=171,rwp=90001,u=2}),
 q(54464,{awp=80100,coords={
@@ -1737,7 +1737,7 @@ r(260403,{learnedAt=150,requireSkill=171,skillID=2478})}}),
 q(50120,{awp=80105,coords={
 [863]={{62.9,28.9}}},lvl=10,providers={{"o",280957}},r=1,requireSkill=171,sourceQuests={50119},g={
 r(260403,{learnedAt=150,requireSkill=171,skillID=2478})}})}})}}),
-x(10,{requireSkill=171,g={
+x(10,{awp=100002,requireSkill=171,g={
 h(-12,{awp=100107,requireSkill=171,g={
 ach(18805,{requireSkill=171,g={
 crit(61271,{achID=18805,id=1,providers={{"s",370465}},requireSkill=171}),
@@ -1750,7 +1750,7 @@ crit(61277,{achID=18805,id=7,providers={{"s",370456}},requireSkill=171}),
 crit(61278,{achID=18805,id=8,providers={{"s",370504}},requireSkill=171}),
 crit(61279,{achID=18805,id=9,providers={{"s",370457}},requireSkill=171}),
 crit(61280,{achID=18805,id=10,providers={{"s",370476}},requireSkill=171})}})}}),
-h(-746,{awp=100002,requireSkill=171,g={
+h(-746,{requireSkill=171,g={
 pn(22481,{cost={{"c",2024,1}},requireSkill=171}),
 pn(19485,{cost={{"c",2024,1}},requireSkill=171}),
 pn(19539,{cost={{"c",2024,1}},requireSkill=171}),
@@ -1769,7 +1769,7 @@ pn(19484,{cost={{"c",2024,1}},requireSkill=171}),
 pn(19487,{cost={{"c",2024,1}},requireSkill=171}),
 pn(19535,{cost={{"c",2024,1}},requireSkill=171}),
 pn(19538,{cost={{"c",2024,1}},requireSkill=171})}}),
-h(-45,{awp=100002,requireSkill=171,g={
+h(-45,{requireSkill=171,g={
 q(70355,{coords={
 [2022]={{60.3,72.2}}},description="This quest can only be picked up PRIOR to learning Dragon Isles Alchemy.",lc={1,"spellID",366261,"questID",72245},lvl=10,qgs={191893},requireSkill=171}),
 q(72245,{coords={
@@ -1824,7 +1824,7 @@ q(77932,{awp=100200,coords={
 [2112]={{36.8,63.1}}},isWeekly=1,lvl=10,maxReputation={2544,5},qgs={210162},requireSkill=171,g={
 i(198608,{awp=100002,b=1,isWeekly=1,requireSkill=171,spellID=384421}),
 i(208938,{awp=100002,requireSkill=171})}})}}),
-flt(200,{awp=100002,description="These are learned by specialization.",requireSkill=171,g={
+flt(200,{description="These are learned by specialization.",requireSkill=171,g={
 r(370747,{cost={{"c",2024,1}},learnedAt=85,requireSkill=171,skillID=2823}),
 r(370745,{cost={{"c",2024,1}},learnedAt=85,requireSkill=171,skillID=2823}),
 r(370730,{cost={{"c",2024,1}},learnedAt=25,requireSkill=171,skillID=2823}),
@@ -1832,7 +1832,7 @@ r(370735,{cost={{"c",2024,1}},learnedAt=40,requireSkill=171,skillID=2823}),
 r(370668,{cost={{"c",2024,1}},learnedAt=65,requireSkill=171,skillID=2823}),
 r(370715,{cost={{"c",2024,1}},learnedAt=20,requireSkill=171,skillID=2823}),
 r(370714,{cost={{"c",2024,1}},learnedAt=20,requireSkill=171,skillID=2823})}}),
-h(-56,{awp=100002,requireSkill=171,g={
+h(-56,{requireSkill=171,g={
 o(380611,{coords={
 [2023]={{79.2,83.8}}},description="Inside cave.",questID=70305,requireSkill=171,g={
 i(198710,{b=1,requireSkill=171,spellID=384364})}}),
@@ -1873,7 +1873,7 @@ i(210185,{b=1,requireSkill=171,spellID=393123})}}),
 o(380590,{coords={
 [2022]={{25.1,73.3}}},questID=70289,requireSkill=171,g={
 i(198685,{b=1,requireSkill=171,spellID=384364})}})}}),
-h(-246,{awp=100002,requireSkill=171,g={
+h(-246,{requireSkill=171,g={
 i(198608,{b=1,isWeekly=1,requireSkill=171,spellID=384421,g={
 cu(2024,{requireSkill=171})}}),
 q(74108,{description="Requires a crafting order from Inscription.",isWeekly=1,providers={{"i",194697}},requireSkill=171,g={
@@ -2073,7 +2073,7 @@ crit(61552,{achID=18851,id=8,providers={{"s",122633}}}),
 crit(61553,{achID=18851,id=9,providers={{"s",269064}}}),
 crit(61554,{achID=18851,id=10,providers={{"s",307721}}}),
 crit(61555,{achID=18851,id=11,providers={{"i",194507}}})}})}}),
-x(1,{requireSkill=164,g={
+x(1,{awp=10100,requireSkill=164,g={
 h(-12,{awp=100007,requireSkill=164,g={
 ach(18765,{awp=100107,providers={{"s",21161}},requireSkill=164}),
 ach(17497,{requireSkill=164,rwp=100007,sourceQuests={5283,5301},sqreq=1,u=2}),
@@ -2088,8 +2088,8 @@ q(5284,{altQuests={5283,5301,5302},coords={
 [87]={{49.8,45}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",qgs={11146},r=2,requireSkill=164,rwp=40003,u=2}),
 q(5302,{altQuests={5283,5284,5301},coords={
 [85]={{79.6,23.6}}},cost={{"i",7945,2},{"i",7941,2},{"i",3855,4},{"i",3853,4}},description="Upon finishing this quest, you will become a Weaponsmith and be locked out of becoming an Armorsmith.",qgs={11178},r=1,requireSkill=164,rwp=40003,u=2})}})}}),
-x(5,{awp=100107,requireSkill=164,g={
-h(-12,{requireSkill=164,g={
+x(5,{awp=50004,requireSkill=164,g={
+h(-12,{awp=100107,requireSkill=164,g={
 ach(18852,{requireSkill=164,g={
 crit(61556,{achID=18852,id=1,providers={{"s",138880}}}),
 crit(61557,{achID=18852,id=2,providers={{"s",138881}}}),
@@ -2097,7 +2097,7 @@ crit(61558,{achID=18852,id=3,providers={{"s",138886}}}),
 crit(61559,{achID=18852,id=4,providers={{"s",138887}}}),
 crit(61560,{achID=18852,id=5,providers={{"s",138892}}}),
 crit(61561,{achID=18852,id=6,providers={{"s",138893}}})}})}})}}),
-x(7,{requireSkill=164,g={
+x(7,{awp=80001,requireSkill=164,g={
 q(38499,{awp=70003,coords={
 [627]={{44.6,28.6}}},lvl=10,qgs={92183},requireSkill=164,g={
 r(195097,{collectible=false,requireSkill=164,rwp=80001,u=2}),
@@ -2325,10 +2325,10 @@ q(48054,{awp=70300,coords={
 [627]={{45,29.6}}},lvl=45,qgs={106655},r=1,requireSkill=164,sourceQuests={38499},g={
 r(247700,{learnedAt=20,requireSkill=164,skillID=2454}),
 i(151871,{requireSkill=164})}})}}),
-x(8,{requireSkill=164,g={
+x(8,{awp=80001,requireSkill=164,g={
 h(-12,{awp=100107,requireSkill=164,g={
 ach(18771,{providers={{"i",152839}},requireSkill=164})}}),
-h(-45,{awp=80001,requireSkill=164,g={
+h(-45,{requireSkill=164,g={
 q(54465,{awp=80100,coords={
 [1161]={{73.6,8.6}}},lvl=10,qgs={133536},r=2,requireSkill=164,rwp=90001,u=2}),
 q(54466,{awp=80100,coords={
@@ -2754,11 +2754,11 @@ ach(1999,{awp=30002,cost={{"c",402,10}},rank=10,requireSkill=185}),
 ach(2000,{awp=30002,cost={{"c",402,25}},rank=25,requireSkill=185}),
 ach(2001,{awp=30002,cost={{"c",402,50}},rank=50,requireSkill=185}),
 ach(2002,{awp=30002,cost={{"c",402,100}},rank=100,requireSkill=185})}}),
-x(1,{awp=30002,requireSkill=185,g={
-ach(123,{requireSkill=185}),
-ach(122,{requireSkill=185}),
-ach(121,{requireSkill=185})}}),
-x(2,{requireSkill=185,g={
+x(1,{awp=10100,requireSkill=185,g={
+ach(123,{awp=30002,requireSkill=185}),
+ach(122,{awp=30002,requireSkill=185}),
+ach(121,{awp=30002,requireSkill=185})}}),
+x(2,{awp=20010,requireSkill=185,g={
 ach(124,{awp=20003,requireSkill=185}),
 ach(1801,{awp=30002,providers={{"i",34832}},requireSkill=185,g={
 crit(6762,{achID=1563,id=10})}}),
@@ -2791,23 +2791,23 @@ crit(6766,{achID=1800,id=7,providers={{"i",27688}}}),
 crit(6772,{achID=1800,id=12,providers={{"i",27698}}}),
 crit(6782,{achID=1800,id=22,providers={{"s",42305}}}),
 crit(6788,{achID=1563,id=11})}})}}),
-x(3,{awp=30002,requireSkill=185,g={
-ach(125,{requireSkill=185,g={
+x(3,{awp=30003,requireSkill=185,g={
+ach(125,{awp=30002,requireSkill=185,g={
 crit(847,{achID=1563,id=1})}}),
-ach(1781,{cost={{"i",43004,10}},requireSkill=185,g={
+ach(1781,{awp=30002,cost={{"i",43004,10}},requireSkill=185,g={
 crit(6607,{achID=1563,id=6})}}),
-ach(1785,{requireSkill=185,g={
+ach(1785,{awp=30002,requireSkill=185,g={
 crit(6627,{achID=1785,id=2,maps={93},providers={{"i",34753}},requireSkill=185}),
 crit(6631,{achID=1563,id=8})}}),
-ach(1780,{requireSkill=185,g={
+ach(1780,{awp=30002,requireSkill=185,g={
 crit(6450,{achID=1780,id=2,providers={{"i",43491}},requireSkill=185}),
 crit(6715,{achID=1780,id=3,providers={{"i",43492}},requireSkill=185}),
 crit(6738,{achID=1780,id=4,providers={{"i",43488}},requireSkill=185}),
 crit(7093,{achID=1780,id=5,providers={{"i",43490}},requireSkill=185}),
 crit(6605,{achID=1563,id=5})}}),
-ach(1777,{requireSkill=185,sym={{"partial_achievement",1779}}}),
-ach(1778,{requireSkill=185,sym={{"partial_achievement",1779}}}),
-ach(1779,{requireSkill=185,g={
+ach(1777,{awp=30002,requireSkill=185,sym={{"partial_achievement",1779}}}),
+ach(1778,{awp=30002,requireSkill=185,sym={{"partial_achievement",1779}}}),
+ach(1779,{awp=30002,requireSkill=185,g={
 crit(6589,{achID=1779,id=35,providers={{"i",43023}}}),
 crit(6596,{achID=1779,id=42,providers={{"i",43027}}}),
 crit(6518,{achID=1779,id=32,providers={{"i",43026}}}),
@@ -2854,12 +2854,12 @@ crit(6502,{achID=1779,id=17,providers={{"s",45560}}}),
 crit(6509,{achID=1779,id=23,providers={{"i",43035}}}),
 crit(9421,{achID=1779,id=46,providers={{"i",44954}}}),
 crit(6604,{achID=1563,id=4})}})}}),
-x(4,{requireSkill=185,g={
-ach(4916,{awp=40003,requireSkill=185}),
+x(4,{awp=40003,requireSkill=185,g={
+ach(4916,{requireSkill=185}),
 ach(5845,{awp=40200,requireSkill=185}),
 ach(5779,{awp=40100,cost={{"i",62680,91}},providers={{"s",99041}},requireSkill=185}),
-ach(5472,{awp=40003,requireSkill=185,sym={{"partial_achievement",5473}}}),
-ach(5473,{awp=40003,requireSkill=185,g={
+ach(5472,{requireSkill=185,sym={{"partial_achievement",5473}}}),
+ach(5473,{requireSkill=185,g={
 crit(15728,{achID=5473,id=18,providers={{"i",65431}}}),
 crit(15720,{achID=5473,id=10,providers={{"i",65416}}}),
 crit(15717,{achID=5473,id=7,providers={{"i",65411}}}),
@@ -3083,9 +3083,9 @@ q(33026,{coords={
 q(33027,{coords={
 [376]={{53.6,51.2}}},lvl=35,qgs={64231},requireSkill=185,sourceQuests={33026},g={
 r(145062,{learnedAt=75,requireSkill=185,skillID=2544})}})}})}})}}),
-x(6,{awp=60003,requireSkill=185,g={
-ach(9500,{requireSkill=185}),
-ach(9502,{requireSkill=185,g={
+x(6,{awp=70003,requireSkill=185,g={
+ach(9500,{awp=60003,requireSkill=185}),
+ach(9502,{awp=60003,requireSkill=185,g={
 crit(25933,{achID=9502,id=1,providers={{"i",111449}}}),
 crit(25934,{achID=9502,id=2,providers={{"i",111433}}}),
 crit(25935,{achID=9502,id=3,providers={{"i",111436}}}),
@@ -3106,7 +3106,7 @@ crit(25949,{achID=9502,id=17,providers={{"i",111452}}}),
 crit(25950,{achID=9502,id=18,providers={{"i",111439}}}),
 crit(25951,{achID=9502,id=19,providers={{"i",111442}}}),
 crit(25952,{achID=9502,id=20,providers={{"i",111447}}})}}),
-ach(9501,{requireSkill=185,g={
+ach(9501,{awp=60003,requireSkill=185,g={
 crit(25923,{achID=9501,id=13,providers={{"s",161002}}}),
 crit(25924,{achID=9501,id=14,providers={{"i",118310}}}),
 crit(25925,{achID=9501,id=15,providers={{"i",118312}}}),
@@ -3129,8 +3129,8 @@ crit(25919,{achID=9501,id=9,providers={{"i",118320}}}),
 crit(25920,{achID=9501,id=10,providers={{"i",118324}}}),
 crit(25921,{achID=9501,id=11,providers={{"i",118327}}}),
 crit(25922,{achID=9501,id=12,providers={{"i",118317}}})}})}}),
-x(7,{awp=70003,requireSkill=185,g={
-h(-12,{requireSkill=185,g={
+x(7,{awp=80001,requireSkill=185,g={
+h(-12,{awp=70003,requireSkill=185,g={
 ach(10589,{requireSkill=185}),
 ach(10593,{cost={{"i",133681,6}},providers={{"s",210760}},requireSkill=185}),
 ach(10592,{coords={
@@ -3157,7 +3157,7 @@ crit(31270,{achID=10762,id=18,providers={{"i",133828}}}),
 crit(31271,{achID=10762,id=19,providers={{"i",133829}}}),
 crit(31272,{achID=10762,id=20,providers={{"i",133830}}}),
 crit(31273,{achID=10762,id=21,providers={{"i",133871}}})}})}}),
-h(-45,{requireSkill=185,g={
+h(-45,{awp=70003,requireSkill=185,g={
 q(40990,{coords={
 [627]={{69.8,38.8}}},lvl=10,qgs={101846},requireSkill=185,sourceQuests={40988,40989}}),
 q(40991,{lvl=10,qgs={101846},requireSkill=185,sourceQuests={40990},g={
@@ -3302,103 +3302,103 @@ crit(61137,{achID=18789,cost={{"i",12810,20}},id=2,providers={{"s",17181}},requi
 crit(61138,{achID=18789,cost={{"i",172437,20}},id=3,providers={{"s",309636}},requireSkill=333}),
 crit(61139,{achID=18789,cost={{"i",172438,20}},id=4,providers={{"s",309637}},requireSkill=333}),
 crit(61140,{achID=18789,cost={{"i",172439,20}},id=5,providers={{"s",309638}},requireSkill=333})}})}}),
-x(6,{awp=60003,requireSkill=333,g={
-q(36308,{altQuests={36255},description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},providers={{"i",115281}},r=2,requireSkill=333}),
-q(36255,{altQuests={36308},description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},providers={{"i",115008}},r=1,requireSkill=333})}}),
-x(7,{awp=70003,requireSkill=333,g={
-q(39874,{coords={
+x(6,{awp=70003,requireSkill=333,g={
+q(36308,{altQuests={36255},awp=60003,description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},providers={{"i",115281}},r=2,requireSkill=333}),
+q(36255,{altQuests={36308},awp=60003,description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},providers={{"i",115008}},r=1,requireSkill=333})}}),
+x(7,{awp=80001,requireSkill=333,g={
+q(39874,{awp=70003,coords={
 [627]={{38.6,40.8}}},lvl=10,qgs={93531},requireSkill=333,g={
 r(195096,{collectible=false,requireSkill=333,rwp=80001,u=2}),
 r(302694,{awp=80001,collectible=false,requireSkill=333,skillID=2487}),
 r(264471,{awp=80001,requireSkill=333}),
 r(190869,{learnedAt=20,requireSkill=333,skillID=2487})}}),
-q(39875,{coords={
+q(39875,{awp=70003,coords={
 [627]={{38.6,41.6}}},cost={{"i",128540,2}},lvl=10,qgs={93530},requireSkill=333,sourceQuests={39874}}),
-q(39876,{coords={
+q(39876,{awp=70003,coords={
 [627]={{38.6,41.6}}},lvl=10,qgs={93530},requireSkill=333,sourceQuests={39875}}),
-q(39877,{coords={
+q(39877,{awp=70003,coords={
 [630]={{43.2,43.6}}},lvl=10,qgs={90317},requireSkill=333,sourceQuests={39875}}),
-q(40048,{coords={
+q(40048,{awp=70003,coords={
 [630]={{43.2,43.6}}},lvl=10,qgs={90317},requireSkill=333,sourceQuests={39876}}),
-q(39905,{coords={
+q(39905,{awp=70003,coords={
 [630]={{43.2,43.6}}},lvl=10,qgs={90317},requireSkill=333,sourceQuests={39877,40048},g={
 r(190866,{learnedAt=20,requireSkill=333,skillID=2487}),
 r(190867,{learnedAt=20,requireSkill=333,skillID=2487}),
 r(190868,{learnedAt=20,requireSkill=333,skillID=2487})}}),
-q(39878,{coords={
+q(39878,{awp=70003,coords={
 [627]={{38.6,40.8}}},lvl=10,qgs={93531},requireSkill=333,sourceQuests={39905}}),
-q(39879,{coords={
+q(39879,{awp=70003,coords={
 [650]={{46.6,60.4}}},lvl=10,qgs={98017},requireSkill=333,sourceQuests={39878}}),
-q(39880,{coords={
+q(39880,{awp=70003,coords={
 [650]={{46.6,60.4}}},lvl=10,qgs={98017},requireSkill=333,sourceQuests={39878},g={
 i(137195,{b=1,requireSkill=333,spellID=103583})}}),
-q(39883,{coords={
+q(39883,{awp=70003,coords={
 [650]={{46.6,60.4}}},lvl=10,qgs={98017},requireSkill=333,sourceQuests={39879,39880},g={
 r(190875,{learnedAt=20,requireSkill=333,skillID=2487}),
 r(190876,{learnedAt=20,requireSkill=333,skillID=2487}),
 r(190874,{learnedAt=20,requireSkill=333,skillID=2487})}}),
-q(39881,{coords={
+q(39881,{awp=70003,coords={
 [627]={{38.6,40.8}}},lvl=10,qgs={93531},requireSkill=333,sourceQuests={39883}}),
-q(39884,{coords={
+q(39884,{awp=70003,coords={
 [641]={{54.4,57.6}}},lvl=10,qgs={98156},requireSkill=333,sourceQuests={39881}}),
-q(39889,{coords={
+q(39889,{awp=70003,coords={
 [641]={{54.4,57.6}}},lvl=10,qgs={98156},requireSkill=333,sourceQuests={39881}}),
-q(39882,{coords={
+q(39882,{awp=70003,coords={
 [641]={{54.4,57.6}}},lvl=10,maps={733},qgs={98156},requireSkill=333,sourceQuests={39884,39889},g={
 r(190954,{learnedAt=20,requireSkill=333,skillID=2487})}}),
-q(39903,{coords={
+q(39903,{awp=70003,coords={
 [627]={{38.6,40.8}}},lvl=10,qgs={93531},requireSkill=333,sourceQuests={39883}}),
-q(40265,{coords={
+q(40265,{awp=70003,coords={
 [634]={{39.4,42.6}}},lvl=10,qgs={98367},requireSkill=333,sourceQuests={39903}}),
-q(39904,{coords={
+q(39904,{awp=70003,coords={
 [634]={{39.4,42.6}}},lvl=10,maps={703,704,705},qgs={98367},requireSkill=333,sourceQuests={40265},g={
 r(191076,{learnedAt=20,requireSkill=333,skillID=2487})}}),
-q(39891,{coords={
+q(39891,{awp=70003,coords={
 [627]={{38.6,40.8}}},lvl=10,qgs={93531},requireSkill=333,sourceQuests={39904}}),
-q(40169,{coords={
+q(40169,{awp=70003,coords={
 [630]={{46.8,40.8}}},lvl=10,qgs={107139},requireSkill=333,sourceQuests={39891}}),
-q(39916,{coords={
+q(39916,{awp=70003,coords={
 [630]={{63.8,30.2}}},lvl=10,qgs={98675},requireSkill=333,sourceQuests={40169},g={
 i(129751,{requireSkill=333}),
 i(137286,{b=1,requireSkill=333,spellID=103583})}}),
-q(40130,{coords={
+q(40130,{awp=70003,coords={
 [630]={{63.8,30.2}}},lvl=10,qgs={98675},requireSkill=333,sourceQuests={39916}}),
-q(39918,{coords={
+q(39918,{awp=70003,coords={
 [630]={{36.4,34}}},lvl=10,qgs={98698},requireSkill=333,sourceQuests={40130},g={
 r(228408,{learnedAt=40,requireSkill=333,skillID=2487}),
 r(190894,{learnedAt=40,requireSkill=333,skillID=2487})}}),
-q(39910,{coords={
+q(39910,{awp=70003,coords={
 [630]={{46.8,40.8}}},lvl=10,qgs={98381},requireSkill=333,sourceQuests={39891},g={
 r(190892,{learnedAt=40,requireSkill=333,skillID=2487}),
 r(228402,{learnedAt=40,requireSkill=333,skillID=2487})}}),
-q(39906,{coords={
+q(39906,{awp=70003,coords={
 [630]={{46.8,40.8}}},cost={{"i",128539,1},{"i",128537,1},{"i",128545,1}},lvl=10,qgs={98159},requireSkill=333,sourceQuests={39891}}),
-q(39914,{coords={
+q(39914,{awp=70003,coords={
 [630]={{46.8,40.8}}},lvl=10,qgs={98159},requireSkill=333,sourceQuests={39906},g={
 r(190893,{learnedAt=40,requireSkill=333,skillID=2487}),
 r(228405,{learnedAt=40,requireSkill=333,skillID=2487})}}),
-q(39907,{coords={
+q(39907,{awp=70003,coords={
 [630]={{46.8,40.8}}},lvl=10,qgs={107139},requireSkill=333,sourceQuests={39910,39914,39918}}),
-q(39920,{coords={
+q(39920,{awp=70003,coords={
 [627]={{38.6,40.8}}},lvl=45,qgs={93531},requireSkill=333,sourceQuests={39907}}),
-q(39921,{coords={
+q(39921,{awp=70003,coords={
 [630]={{47.2,26.4}}},lvl=45,maps={324,477,478,479,731},qgs={99420},requireSkill=333,sourceQuests={39920},g={
 i(136617,{requireSkill=333}),
 i(136616,{requireSkill=333}),
 i(136615,{requireSkill=333})}}),
-q(39923,{coords={
+q(39923,{awp=70003,coords={
 [630]={{47.2,26.4}}},lvl=45,qgs={99420},requireSkill=333,sourceQuests={39921},g={
 r(190870,{learnedAt=60,requireSkill=333,skillID=2487}),
 r(190871,{learnedAt=60,requireSkill=333,skillID=2487}),
 r(190872,{learnedAt=60,requireSkill=333,skillID=2487}),
 r(190873,{learnedAt=60,requireSkill=333,skillID=2487})}}),
-q(42971,{coords={
+q(42971,{awp=70003,coords={
 [207]={{56.4,12.2}}},lvl=30,qgs={42465},requireSkill=333,g={
 r(217649,{learnedAt=70,requireSkill=333,skillID=2491})}})}}),
-x(8,{requireSkill=333,g={
+x(8,{awp=80001,requireSkill=333,g={
 h(-12,{awp=100107,requireSkill=333,g={
 ach(18775,{providers={{"s",287494}},requireSkill=333})}}),
-h(-45,{awp=80001,requireSkill=333,g={
+h(-45,{requireSkill=333,g={
 q(54473,{awp=80100,coords={
 [1161]={{74.1,11.4}}},lvl=10,qgs={136041},r=2,requireSkill=333,rwp=90001,u=2}),
 q(54474,{awp=80100,coords={
@@ -3431,7 +3431,7 @@ q(54001,{awp=80105,coords={
 q(54002,{awp=80105,coords={
 [896]={{57.8,80.8}}},lvl=10,qgs={152255},requireSkill=333,sourceQuests={54001},g={
 r(287494,{learnedAt=150,requireSkill=333,skillID=2486})}})}})}}),
-x(10,{requireSkill=333,g={
+x(10,{awp=100002,requireSkill=333,g={
 h(-12,{awp=100107,requireSkill=333,g={
 ach(18764,{providers={{"s",419851}},requireSkill=333}),
 ach(18763,{requireSkill=333,g={
@@ -3440,7 +3440,7 @@ crit(61080,{achID=18763,id=2,providers={{"i",163736},{"i",200535}},requireSkill=
 crit(61081,{achID=18763,id=3,providers={{"i",163736},{"i",201161}},requireSkill=333}),
 crit(61082,{achID=18763,id=4,providers={{"i",163736},{"i",201160}},requireSkill=333}),
 crit(61083,{achID=18763,id=5,providers={{"i",163736},{"i",201158}},requireSkill=333})}})}}),
-h(-746,{awp=100002,requireSkill=333,g={
+h(-746,{requireSkill=333,g={
 pn(64135,{cost={{"c",2030,1}},requireSkill=333}),
 pn(64134,{cost={{"c",2030,1}},requireSkill=333}),
 pn(64141,{cost={{"c",2030,1}},requireSkill=333}),
@@ -3460,7 +3460,7 @@ pn(68444,{cost={{"c",2030,1}},requireSkill=333}),
 pn(68445,{cost={{"c",2030,1}},requireSkill=333}),
 pn(64139,{cost={{"c",2030,1}},requireSkill=333}),
 pn(64137,{cost={{"c",2030,1}},requireSkill=333})}}),
-h(-45,{awp=100002,requireSkill=333,g={
+h(-45,{requireSkill=333,g={
 q(70360,{coords={
 [2022]={{75.8,33.2}}},description="This quest can only be picked up PRIOR to learning Dragon Isles Enchanting.",lc={1,"spellID",366255},lvl=10,qgs={192055},requireSkill=333}),
 q(70029,{coords={
@@ -3516,7 +3516,7 @@ q(77937,{awp=100200,coords={
 [2112]={{36.8,63.1}}},isWeekly=1,lvl=10,maxReputation={2544,5},qgs={210162},requireSkill=333,g={
 i(209018,{awp=100002,requireSkill=333}),
 i(198610,{b=1,isWeekly=1,requireSkill=333,spellID=384423})}})}}),
-flt(200,{awp=100002,description="These are learned by specialization.",requireSkill=333,g={
+flt(200,{description="These are learned by specialization.",requireSkill=333,g={
 r(389547,{cost={{"c",2030,1}},learnedAt=85,requireSkill=333,skillID=2825}),
 r(391302,{cost={{"c",2030,1}},requireSkill=333,skillID=2825}),
 r(389301,{cost={{"c",2030,1}},learnedAt=55,requireSkill=333,skillID=2825}),
@@ -3538,7 +3538,7 @@ r(389550,{cost={{"c",2030,1}},learnedAt=85,requireSkill=333,skillID=2825}),
 r(391179,{cost={{"c",2030,1}},learnedAt=100,requireSkill=333,skillID=2825}),
 r(389558,{cost={{"c",2030,1}},learnedAt=85,requireSkill=333,skillID=2825}),
 r(389410,{cost={{"c",2030,1}},learnedAt=40,requireSkill=333,skillID=2825})}}),
-h(-56,{awp=100002,requireSkill=333,g={
+h(-56,{requireSkill=333,g={
 o(380558,{coords={
 [2022]={{59.9,57}}},description="Interact with the Disenchanted Broom, then follow it to the location of the treasure.",questID=70272,requireSkill=333,g={
 i(201012,{b=1,requireSkill=333,spellID=384370})}}),
@@ -3581,7 +3581,7 @@ i(204999,{b=1,requireSkill=333})}}),
 o(380592,{coords={
 [2023]={{61.4,67.6}}},questID=70291,requireSkill=333,g={
 i(198689,{b=1,requireSkill=333})}})}}),
-h(-246,{awp=100002,requireSkill=333,g={
+h(-246,{requireSkill=333,g={
 i(198610,{b=1,isWeekly=1,requireSkill=333,spellID=384423,g={
 cu(2030,{requireSkill=333})}}),
 q(74110,{description="Requires a crafting order from Inscription.",isWeekly=1,providers={{"i",194702}},requireSkill=333,g={
@@ -3892,7 +3892,7 @@ crit(61590,{achID=18855,id=9,providers={{"i",168807}},requireSkill=202}),
 crit(61591,{achID=18855,id=10,providers={{"i",168808}},requireSkill=202}),
 crit(61592,{achID=18855,id=11,providers={{"i",172924}},requireSkill=202}),
 crit(61593,{achID=18855,id=12,providers={{"i",198156}},requireSkill=202})}})}}),
-x(1,{requireSkill=202,g={
+x(1,{awp=10100,requireSkill=202,g={
 h(-12,{awp=100107,requireSkill=202,g={
 ach(18730,{requireSkill=202,sourceQuests={3526,3629,3630,3632,3633,3634,3635,3637,4181,29475,29477},sqreq=1})}}),
 h(-45,{awp=40300,requireSkill=202,g={
@@ -3915,8 +3915,8 @@ i(11422,{b=1,description="If you destroy your Goblin Engineer Membership Card, y
 r(3968,{itemID=4416,requireSkill=202,skillID=2506,u=2}),
 r(3972,{itemID=4417,requireSkill=202,skillID=2506,u=2}),
 r(15628,{b=1,itemID=11828,requireSkill=202,skillID=2506,u=2})}})}})}}),
-x(4,{awp=100107,requireSkill=202,g={
-ach(18908,{requireSkill=202,g={
+x(4,{awp=40003,requireSkill=202,g={
+ach(18908,{awp=100107,requireSkill=202,g={
 en(209063,{b=1,questID=78031,requireSkill=202,spellID=422556,tmogSetID=3124,g={
 s(190141,208813,{f=2,loc=40,requireSkill=202}),
 s(190142,208814,{f=2,loc=40,requireSkill=202}),
@@ -3929,8 +3929,8 @@ crit(61823,{achID=18908,id=4,providers={{"s",81720}}}),
 crit(61824,{achID=18908,id=5,providers={{"s",81722}}}),
 crit(61825,{achID=18908,id=6,providers={{"s",81724}}}),
 crit(61826,{achID=18908,id=7,providers={{"s",81725}}})}})}}),
-x(5,{awp=100107,requireSkill=202,g={
-ach(18905,{requireSkill=202,g={
+x(5,{awp=50004,requireSkill=202,g={
+ach(18905,{awp=100107,requireSkill=202,g={
 en(209064,{b=1,questID=78032,requireSkill=202,spellID=422557,tmogSetID=3125,g={
 s(190130,208802,{f=2,loc=40,requireSkill=202}),
 s(190131,208803,{f=2,loc=40,requireSkill=202}),
@@ -3945,9 +3945,9 @@ crit(61784,{achID=18905,id=4,providers={{"s",127120}}}),
 crit(61785,{achID=18905,id=5,providers={{"s",127121}}}),
 crit(61786,{achID=18905,id=6,providers={{"s",127122}}}),
 crit(61787,{achID=18905,id=7,providers={{"s",127123}}})}})}}),
-x(6,{awp=100107,requireSkill=202,g={
-ach(18895,{providers={{"s",421011}},requireSkill=202})}}),
-x(7,{requireSkill=202,g={
+x(6,{awp=70003,requireSkill=202,g={
+ach(18895,{awp=100107,providers={{"s",421011}},requireSkill=202})}}),
+x(7,{awp=80001,requireSkill=202,g={
 ach(18906,{awp=100107,requireSkill=202,g={
 en(209066,{b=1,questID=78034,requireSkill=202,spellID=422579,tmogSetID=3126,g={
 s(190136,208808,{f=2,loc=40,requireSkill=202}),
@@ -4090,10 +4090,10 @@ q(48065,{awp=70300,coords={
 [627]={{38.8,25.6}}},lvl=45,qgs={93520},requireSkill=202,sourceQuests={48069},g={
 r(247744,{learnedAt=75,requireSkill=202,skillID=2500}),
 i(151926,{requireSkill=202,spellID=250734})}})}})}}),
-x(8,{requireSkill=202,g={
+x(8,{awp=80001,requireSkill=202,g={
 h(-12,{awp=100107,requireSkill=202,g={
 ach(18776,{providers={{"i",164740}},requireSkill=202})}}),
-h(-45,{awp=80001,requireSkill=202,g={
+h(-45,{requireSkill=202,g={
 q(54475,{awp=80100,coords={
 [1161]={{77.4,14.2}}},lvl=10,qgs={136059},r=2,requireSkill=202,rwp=90001,u=2}),
 q(54476,{awp=80100,coords={
@@ -4142,8 +4142,8 @@ r(282975,{learnedAt=150,requireSkill=202,skillID=2499}),
 r(283399,{learnedAt=150,requireSkill=202,skillID=2499}),
 r(283403,{learnedAt=150,requireSkill=202,skillID=2499}),
 r(283401,{learnedAt=150,requireSkill=202,skillID=2499})}})}})}}),
-x(9,{awp=100107,requireSkill=202,g={
-ach(18907,{requireSkill=202,g={
+x(9,{awp=90002,requireSkill=202,g={
+ach(18907,{awp=100107,requireSkill=202,g={
 en(209067,{b=1,questID=78035,requireSkill=202,spellID=422580,tmogSetID=3127,g={
 s(190144,208817,{f=2,loc=40,requireSkill=202}),
 s(190145,208818,{f=2,loc=40,requireSkill=202}),
@@ -4153,7 +4153,7 @@ crit(61816,{achID=18907,id=1,providers={{"s",310501}}}),
 crit(61817,{achID=18907,id=2,providers={{"s",310504}}}),
 crit(61818,{achID=18907,id=3,providers={{"s",310507}}}),
 crit(61819,{achID=18907,id=4,providers={{"s",310509}}})}})}}),
-x(10,{requireSkill=202,g={
+x(10,{awp=100002,requireSkill=202,g={
 h(-12,{awp=100107,requireSkill=202,g={
 ach(18856,{providers={{"s",423147}},requireSkill=202}),
 ach(18857,{requireSkill=202,g={
@@ -4161,7 +4161,7 @@ crit(61599,{achID=18857,id=1,providers={{"s",381925}},requireSkill=202}),
 crit(61600,{achID=18857,id=2,providers={{"s",381926}},requireSkill=202}),
 crit(61601,{achID=18857,id=3,providers={{"s",381927}},requireSkill=202}),
 crit(61602,{achID=18857,id=4,providers={{"s",381928}},requireSkill=202})}})}}),
-h(-746,{awp=100002,requireSkill=202,g={
+h(-746,{requireSkill=202,g={
 pn(50893,{cost={{"c",2027,1}},requireSkill=202}),
 pn(50891,{cost={{"c",2027,1}},requireSkill=202}),
 pn(50894,{cost={{"c",2027,1}},requireSkill=202}),
@@ -4177,7 +4177,7 @@ pn(50992,{cost={{"c",2027,1}},requireSkill=202}),
 pn(50991,{cost={{"c",2027,1}},requireSkill=202}),
 pn(50892,{cost={{"c",2027,1}},requireSkill=202}),
 pn(50926,{cost={{"c",2027,1}},requireSkill=202})}}),
-h(-45,{awp=100002,requireSkill=202,g={
+h(-45,{requireSkill=202,g={
 toy(198156,{description="You can collect additional portal options.\nRANDOM LOCATION = Carelessly leap into the portal...\nTHE WAKING SHORES = Pray return to the Waking Shores.\nOHN’AHRAN PLAINS = Clomp your hooves, imaginary or otherwise...\nTHE AZURE SPAN = Ensure your arrival at the Azure Span...\nTHALDRASZUS = Audibly spell out 'Thaldraszus'...\nTHE FORBIDDEN REACH = Disregard the word 'Forbidden' and venture...\nZARALEK CAVERN = Flip the portal horizontally...\nEMERALD DREAM = Close your eyes and snore loudly.",requireSkill=202,g={
 o(381964,{coords={
 [2022]={{74.6,25.5}}},questID=70573,requireSkill=202}),
@@ -4263,7 +4263,7 @@ q(77891,{awp=100200,coords={
 [2112]={{36.8,63.1}}},isWeekly=1,lvl=10,maxReputation={2544,5},qgs={210162},requireSkill=202,g={
 i(209017,{awp=100002,requireSkill=202,spellID=422059}),
 i(198611,{b=1,isWeekly=1,requireSkill=202,spellID=384424})}})}}),
-flt(200,{awp=100002,description="These are learned by specialization.",requireSkill=202,g={
+flt(200,{description="These are learned by specialization.",requireSkill=202,g={
 r(382345,{cost={{"c",2027,1}},learnedAt=35,requireSkill=202,skillID=2827}),
 r(382408,{cost={{"c",2027,1}},learnedAt=65,requireSkill=202,skillID=2827}),
 r(382368,{cost={{"c",2027,1}},learnedAt=65,requireSkill=202,skillID=2827}),
@@ -4284,7 +4284,7 @@ r(382359,{cost={{"c",2027,1}},learnedAt=65,requireSkill=202,skillID=2827}),
 r(393796,{cost={{"c",2027,1}},learnedAt=65,requireSkill=202,skillID=2827}),
 r(382367,{cost={{"c",2027,1}},learnedAt=50,requireSkill=202,skillID=2827}),
 r(387246,{cost={{"c",2027,1}},learnedAt=65,requireSkill=202,skillID=2827})}}),
-h(-56,{awp=100002,requireSkill=202,g={
+h(-56,{requireSkill=202,g={
 o(398133,{awp=100100,coords={
 [2133]={{57.7,73.9}}},questID=75430,requireSkill=202,g={
 i(204850,{b=1,requireSkill=202,spellID=393129}),
@@ -4331,7 +4331,7 @@ o(410469,{awp=100200,coords={
 [2200]={{62.6,36.2}}},questID=78281,requireSkill=202,g={
 i(210197,{b=1,requireSkill=202,spellID=393129,g={
 i(210198,{b=1,requireSkill=202,spellID=393129})}})}})}}),
-h(-246,{awp=100002,requireSkill=202,g={
+h(-246,{requireSkill=202,g={
 i(198611,{b=1,isWeekly=1,requireSkill=202,spellID=384424,g={
 cu(2027,{requireSkill=202})}}),
 q(74111,{description="Requires a crafting order from Inscription.",isWeekly=1,providers={{"i",198510}},requireSkill=202,g={
@@ -4646,14 +4646,14 @@ crit(5663,{achID=1516,awp=30003,id=3})}}),
 ach(1257,{awp=30002,requireSkill=356,g={
 crit(5664,{achID=1516,awp=30003,id=4})}}),
 ach(3218,{awp=30003,providers={{"i",46109}},requireSkill=356})}}),
-x(1,{awp=30002,requireSkill=356,g={
-ach(126,{requireSkill=356}),
-ach(127,{requireSkill=356}),
-ach(128,{requireSkill=356}),
-ach(150,{maps={84,85},requireSkill=356,g={
+x(1,{awp=10100,requireSkill=356,g={
+ach(126,{awp=30002,requireSkill=356}),
+ach(127,{awp=30002,requireSkill=356}),
+ach(128,{awp=30002,requireSkill=356}),
+ach(150,{awp=30002,maps={84,85},requireSkill=356,g={
 crit(5665,{achID=1516,awp=30003,id=5})}})}}),
-x(2,{requireSkill=356,g={
-ach(129,{awp=20000,requireSkill=356}),
+x(2,{awp=20010,requireSkill=356,g={
+ach(129,{requireSkill=356}),
 ach(1225,{awp=30002,maps={102,107,108},requireSkill=356,g={
 crit(5672,{achID=1516,awp=30003,id=11})}})}}),
 x(3,{awp=30003,requireSkill=356,g={
@@ -4661,8 +4661,8 @@ ach(130,{requireSkill=356,g={
 crit(845,{achID=1516,id=2})}}),
 ach(1517,{maps={114,115,116,117,119,127},requireSkill=356,g={
 crit(5690,{achID=1516,id=12})}})}}),
-x(4,{requireSkill=356,g={
-h(-12,{awp=40003,requireSkill=356,g={
+x(4,{awp=40003,requireSkill=356,g={
+h(-12,{requireSkill=356,g={
 ach(4917,{requireSkill=356}),
 ach(5851,{awp=40200,requireSkill=356})}}),
 ah(67414,{awp=40001,description="Fishing Daily Quest Reward",providers={{"i",67414},{"i",112623}},requireSkill=356,type="i",g={
@@ -4690,8 +4690,8 @@ crit(21984,{achID=7611,id=8,providers={{"i",86545}}}),
 crit(21985,{achID=7611,id=11,providers={{"i",86544}}})}})}}),
 h(-45,{requireSkill=356,g={
 i(97981,{awp=50300,b=1,lvl=40,requireSkill=356,rwp=70003,u=2})}})}}),
-x(6,{awp=60003,requireSkill=356,g={
-h(-12,{requireSkill=356,g={
+x(6,{awp=70003,requireSkill=356,g={
+h(-12,{awp=60003,requireSkill=356,g={
 ach(9503,{requireSkill=356}),
 ach(9462,{requireSkill=356}),
 ach(9456,{cost={{"i",111671,100}},requireSkill=356,g={
@@ -4709,8 +4709,8 @@ ach(9460,{cost={{"i",111676,100}},requireSkill=356,g={
 crit(25812,{achID=9462,id=2})}}),
 ach(9461,{cost={{"i",111672,100}},requireSkill=356,g={
 crit(25811,{achID=9462,id=1})}})}})}}),
-x(7,{awp=70003,requireSkill=356,g={
-h(-12,{requireSkill=356,g={
+x(7,{awp=80001,requireSkill=356,g={
+h(-12,{awp=70003,requireSkill=356,g={
 ach(10594,{requireSkill=356}),
 ach(10595,{maps={619,630,634,641,646,650,680},requireSkill=356,g={
 crit(29903,{achID=10595,id=1,providers={{"i",133725}}}),
@@ -4754,7 +4754,7 @@ ach(11725,{awp=70300,description="The Fishing Masters are on a daily rotation, s
 cq(48546,{b=1,itemID=152583,requireSkill=356,spellID=251315})}}),
 ach(10598,{requireSkill=356}),
 ach(10597,{requireSkill=356})}}),
-flt(50,{requireSkill=356,g={
+flt(50,{awp=70003,requireSkill=356,g={
 i(133715,{description="This item will give you a buff that will allow you to see and fish from Oodelfjisk schools.",f=55,lvl=39,maps={634},requireSkill=356,spellID=201818,g={
 i(133734,{b=1,lvl=39,requireSkill=356,spellID=201826}),
 i(139661,{b=1,lvl=39,requireSkill=356,spellID=221474})}}),
@@ -4820,14 +4820,14 @@ i(133711,{description="This item will spawn a Swamprock Tadpole that grants the 
 n(102339,{description="Casts the Blessing of the Murlocs buff on you, increasing your chance to fish up Mountain Puffer.",requireSkill=356,g={
 i(133731,{b=1,lvl=39,requireSkill=356,spellID=201826}),
 i(139658,{b=1,lvl=39,requireSkill=356,spellID=221474})}})}})}}),
-h(-45,{requireSkill=356,g={
+h(-45,{awp=70003,requireSkill=356,g={
 q(40960,{lvl=10,providers={{"i",133887}},requireSkill=356}),
 q(40961,{coords={
 [627]={{28.8,48.6}}},lvl=10,qgs={90417},requireSkill=356,sourceQuests={40960}}),
 q(41010,{description="If you can't find Nat Pagle to give you this quest, going into the bank just south of the fountain seems to force him to spawn right on you.",lvl=10,maps={627},qgs={102639},requireSkill=356,sourceQuests={40961},g={
 artifact(841,{requireSkill=356})}})}})}}),
-x(8,{requireSkill=356,g={
-h(-12,{awp=80001,requireSkill=356,g={
+x(8,{awp=80001,requireSkill=356,g={
+h(-12,{requireSkill=356,g={
 ach(12753,{r=2,requireSkill=356}),
 ach(12754,{r=1,requireSkill=356}),
 ach(12757,{requireSkill=356}),
@@ -4936,7 +4936,7 @@ r(55502,{rank=6,requireSkill=182,u=2}),
 r(55503,{awp=30003,rank=7,requireSkill=182,u=2}),
 r(74497,{awp=40003,rank=8,requireSkill=182,u=2}),
 r(121279,{awp=50004,rank=9,requireSkill=182,u=2})}}),
-x(7,{requireSkill=182,g={
+x(7,{awp=80001,requireSkill=182,g={
 h(-12,{awp=100107,requireSkill=182,g={
 ach(18837,{requireSkill=182})}}),
 ah(193294,{awp=70003,maps={630},providers={{"o",244774}},requireSkill=182,type="s",g={
@@ -5033,7 +5033,7 @@ q(40039,{coords={
 r(193306,{requireSkill=182,skillID=2550}),
 i(129209,{requireSkill=182}),
 crit(61505,{achID=18837,awp=100107,id=7,providers={{"s",193306}},requireSkill=182})}})}})}}),
-x(8,{requireSkill=182,g={
+x(8,{awp=80001,requireSkill=182,g={
 h(-12,{awp=100107,requireSkill=182,g={
 ach(18838,{requireSkill=182,g={
 crit(61514,{achID=18838,id=2,providers={{"s",252426}},requireSkill=182,sourceQuests={51361,51481},sqreq=1}),
@@ -5042,7 +5042,7 @@ crit(61513,{achID=18838,id=4,providers={{"s",252423}},requireSkill=182,sourceQue
 crit(61512,{achID=18838,id=5,providers={{"s",252420}},requireSkill=182,sourceQuests={48755,51452}}),
 crit(61509,{achID=18838,id=6,providers={{"s",252410}},requireSkill=182,sourceQuests={48757,51478},sqreq=1}),
 crit(61515,{achID=18838,id=8,providers={{"s",298144}},requireSkill=182,sourceQuests={56098,56430},sqreq=1})}})}}),
-ah(252413,{awp=80001,maps={864},providers={{"o",276237}},requireSkill=182,type="s",g={
+ah(252413,{maps={864},providers={{"o",276237}},requireSkill=182,type="s",g={
 q(51398,{coords={
 [1161]={{70.45,5.13}}},description="Requires 50 Kul Tiran Herbalism.",isBreadcrumb=1,lvl=10,nextQuests={51399},qgs={136096},r=2,requireSkill=182}),
 q(51432,{coords={
@@ -5057,7 +5057,7 @@ i(160187,{requireSkill=182,spellID=270585})}}),
 q(51404,{description="This can drop from |cFFFFD700Akunda's Bite|r at any herbalism level. You can only turn it in at Level 150 Kul Tiran / Zandalari Herbalism.",lvl=10,providers={{"i",160117}},requireSkill=182,sourceQuests={51408},g={
 r(252413,{requireSkill=182,skillID=2549}),
 crit(61510,{achID=18838,awp=100107,id=1,providers={{"s",252413}},requireSkill=182})}})}}),
-ah(252426,{awp=80001,maps={862,863,864,895,896,942,1462},providers={{"o",276242},{"o",294125}},requireSkill=182,type="s",g={
+ah(252426,{maps={862,863,864,895,896,942,1462},providers={{"o",276242},{"o",294125}},requireSkill=182,type="s",g={
 q(51016,{coords={
 [1161]={{70.45,5.13}}},description="Requires 100 Kul Tiran Herbalism.",lvl=10,maps={1015,1016,1017,1018,1029},qgs={136096},r=2,requireSkill=182,g={
 r(252425,{requireSkill=182,skillID=2549}),
@@ -5077,7 +5077,7 @@ q(51481,{coords={
 [1165]={{42.2,35.6}}},description="Requires 150 Zandalari Herbalism.",lvl=10,qgs={122704},r=1,requireSkill=182,sourceQuests={51480},g={
 r(252426,{requireSkill=182,skillID=2549}),
 i(160036,{requireSkill=182})}})}}),
-ah(252407,{awp=80001,maps={862,863,864,895,896,942,1462},providers={{"o",276234},{"o",281870}},requireSkill=182,type="s",g={
+ah(252407,{maps={862,863,864,895,896,942,1462},providers={{"o",276234},{"o",281870}},requireSkill=182,type="s",g={
 q(48753,{coords={
 [1161]={{70.45,5.13}}},description="Requires 50 Kul Tiran Herbalism.",lvl=10,qgs={136096},r=2,requireSkill=182,g={
 r(252406,{requireSkill=182,skillID=2549})}}),
@@ -5090,7 +5090,7 @@ r(252407,{requireSkill=182,skillID=2549})}}),
 q(51243,{coords={
 [1165]={{42.2,35.6}}},description="Requires 150 Zandalari Herbalism.",lvl=10,qgs={122704},r=1,requireSkill=182,sourceQuests={51230},g={
 r(252407,{requireSkill=182,skillID=2549})}})}}),
-ah(252423,{awp=80001,maps={862,863,864,895,896,942,1462},providers={{"o",276240},{"o",281872}},requireSkill=182,type="s",g={
+ah(252423,{maps={862,863,864,895,896,942,1462},providers={{"o",276240},{"o",281872}},requireSkill=182,type="s",g={
 q(51365,{coords={
 [1161]={{70.45,5.13}}},description="Requires 50 Kul Tiran Herbalism.",lvl=10,qgs={136096},r=2,requireSkill=182,g={
 r(252422,{requireSkill=182,skillID=2549})}}),
@@ -5105,7 +5105,7 @@ q(51503,{coords={
 [1165]={{42.2,35.6}}},description="Requires 150 Zandalari Herbalism.",lvl=10,qgs={122704},r=1,requireSkill=182,sourceQuests={51498},g={
 r(252423,{requireSkill=182,skillID=2549}),
 i(160314,{requireSkill=182})}})}}),
-ah(252420,{awp=80001,maps={862,863,864,895,896,942,1462},providers={{"o",276239},{"o",281869}},requireSkill=182,type="s",g={
+ah(252420,{maps={862,863,864,895,896,942,1462},providers={{"o",276239},{"o",281869}},requireSkill=182,type="s",g={
 q(51312,{description="This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Kul Tiran Herbalism.",lvl=10,providers={{"i",159877}},r=2,requireSkill=182}),
 q(51447,{description="This can drop from |cFFFFD700Siren's Pollen|r at any herbalism level. You can only turn it in at Level 50 Zandalari Herbalism.",lvl=10,providers={{"i",160250}},r=1,requireSkill=182}),
 q(51313,{coords={
@@ -5126,7 +5126,7 @@ q(51452,{coords={
 [1165]={{42.2,35.6}}},description="Requires 150 Zandalari Herbalism.",lvl=10,qgs={122704},r=1,requireSkill=182,sourceQuests={48758},g={
 r(252420,{requireSkill=182,skillID=2549}),
 i(159957,{requireSkill=182})}})}}),
-ah(252410,{awp=80001,maps={862,863,864,895,896,942},providers={{"o",276236},{"o",281079},{"o",281867},{"o",281868}},requireSkill=182,type="s",g={
+ah(252410,{maps={862,863,864,895,896,942},providers={{"o",276236},{"o",281079},{"o",281867},{"o",281868}},requireSkill=182,type="s",g={
 q(48756,{coords={
 [1161]={{70.45,5.13}}},description="Requires 50 Kul Tiran Herbalism.",lvl=10,qgs={136096},r=2,requireSkill=182,g={
 r(252409,{requireSkill=182,skillID=2549}),
@@ -5143,7 +5143,7 @@ q(51478,{coords={
 [1165]={{42.2,35.6}}},description="Requires 150 Zandalari Herbalism.",lvl=10,qgs={122704},r=1,requireSkill=182,sourceQuests={51464},g={
 r(252410,{requireSkill=182,skillID=2549}),
 i(160299,{requireSkill=182,spellID=271196})}})}}),
-ah(252417,{awp=80001,maps={896},providers={{"o",276238}},requireSkill=182,type="s",g={
+ah(252417,{maps={896},providers={{"o",276238}},requireSkill=182,type="s",g={
 q(48762,{coords={
 [1161]={{70.45,5.13}}},description="Requires 50 Kul Tiran Herbalism.",isBreadcrumb=1,lvl=10,nextQuests={51376},qgs={136096},r=2,requireSkill=182}),
 q(51446,{coords={
@@ -5159,7 +5159,7 @@ q(56098,{lvl=50,providers={{"i",168919}},r=2,requireSkill=182,g={
 r(298144,{requireSkill=182,skillID=2549})}}),
 q(56430,{lvl=50,providers={{"i",169596}},r=1,requireSkill=182,g={
 r(298144,{requireSkill=182,skillID=2549})}})}})}}),
-x(10,{requireSkill=182,g={
+x(10,{awp=100002,requireSkill=182,g={
 h(-12,{awp=100107,requireSkill=182,g={
 ach(18828,{requireSkill=182,g={
 crit(61434,{achID=18828,id=1,providers={{"i",202014}},requireSkill=182}),
@@ -5174,7 +5174,7 @@ ach(18823,{requireSkill=182,g={
 crit(61429,{achID=18828,id=4})}}),
 ach(18825,{requireSkill=182,g={
 crit(61431,{achID=18828,id=6})}})}}),
-h(-746,{awp=100002,requireSkill=182,g={
+h(-746,{requireSkill=182,g={
 pn(59699,{cost={{"c",2034,1}},requireSkill=182}),
 pn(59651,{cost={{"c",2034,1}},requireSkill=182}),
 pn(59701,{cost={{"c",2034,1}},requireSkill=182}),
@@ -5188,7 +5188,7 @@ pn(59700,{cost={{"c",2034,1}},requireSkill=182}),
 pn(59621,{cost={{"c",2034,1}},requireSkill=182}),
 pn(59618,{cost={{"c",2034,1}},requireSkill=182}),
 pn(59620,{cost={{"c",2034,1}},requireSkill=182})}}),
-h(-45,{awp=100002,requireSkill=182,g={
+h(-45,{requireSkill=182,g={
 q(70364,{coords={
 [2022]={{57.4,65.8}}},description="This quest can only be picked up PRIOR to learning Dragon Isles Herbalism.",lc={1,"spellID",366242,"questID",72243},lvl=10,qgs={192010},requireSkill=182}),
 q(72243,{coords={
@@ -5212,11 +5212,11 @@ i(199115,{b=1,isWeekly=1,requireSkill=182,spellID=386533})}}),
 q(70615,{coords={
 [2112]={{38.2,68.6}}},isDaily=1,isWeekly=1,lvl=10,maxReputation={2544,5},qgs={185549},requireSkill=182,sharedDescription="Requires 25 Skill.",g={
 i(199115,{b=1,isWeekly=1,requireSkill=182,spellID=386533})}})}}),
-flt(200,{awp=100002,description="These are learned by specialization.",requireSkill=182,g={
+flt(200,{description="These are learned by specialization.",requireSkill=182,g={
 r(391088,{cost={{"c",2034,1}},requireSkill=182,skillID=2832}),
 r(391089,{cost={{"c",2034,1}},requireSkill=182,skillID=2832}),
 r(390392,{awp=100005,cost={{"c",2034,1}},requireSkill=182})}}),
-h(-246,{awp=100002,requireSkill=182,g={
+h(-246,{requireSkill=182,g={
 i(199115,{b=1,isWeekly=1,requireSkill=182,spellID=386533,g={
 cu(2034,{requireSkill=182})}}),
 q(74107,{description="Requires a crafting order from Inscription.",isWeekly=1,providers={{"i",194704}},requireSkill=182,g={
@@ -6201,7 +6201,7 @@ crit(61852,{achID=18909,awp=100107,id=26})}}),
 q(28775,{lvl=10,providers={{"i",65896}},requireSkill=755,g={
 i(52353,{b=1,f=53,lvl=30,requireSkill=755,spellID=73551}),
 crit(61854,{achID=18909,awp=100107,id=28})}})}})}}),
-x(7,{requireSkill=755,g={
+x(7,{awp=80001,requireSkill=755,g={
 q(40523,{awp=70003,coords={
 [627]={{40.3,34.7}}},lvl=10,qgs={93526},requireSkill=755,g={
 r(195116,{collectible=false,requireSkill=755,rwp=80001,u=2}),
@@ -6353,10 +6353,10 @@ i(151931,{awp=70003,b=1,requireSkill=755}),
 i(151878,{awp=70003,requireSkill=755}),
 i(151933,{awp=70003,b=1,requireSkill=755}),
 i(151932,{awp=70003,b=1,requireSkill=755})}})}}),
-x(8,{requireSkill=755,g={
+x(8,{awp=80001,requireSkill=755,g={
 h(-12,{awp=100107,requireSkill=755,g={
 ach(18773,{providers={{"i",153716}},requireSkill=755})}}),
-h(-45,{awp=80001,requireSkill=755,g={
+h(-45,{requireSkill=755,g={
 q(54479,{awp=80100,coords={
 [1161]={{75.2,9.9}}},lvl=10,qgs={130368},r=2,requireSkill=755,rwp=90001,u=2}),
 q(54480,{awp=80100,coords={
@@ -6430,8 +6430,8 @@ q(49599,{awp=80105,coords={
 r(256703,{learnedAt=150,requireSkill=755,skillID=2517}),
 i(155668,{requireSkill=755}),
 i(155669,{requireSkill=755})}})}})}}),
-x(10,{requireSkill=755,g={
-h(-746,{awp=100002,requireSkill=755,g={
+x(10,{awp=100002,requireSkill=755,g={
+h(-746,{requireSkill=755,g={
 pn(28659,{cost={{"c",2029,1}},requireSkill=755}),
 pn(81118,{cost={{"c",2029,1}},requireSkill=755}),
 pn(28724,{cost={{"c",2029,1}},requireSkill=755}),
@@ -6453,7 +6453,7 @@ pn(28728,{cost={{"c",2029,1}},requireSkill=755}),
 pn(28722,{cost={{"c",2029,1}},requireSkill=755})}}),
 h(-12,{awp=100107,requireSkill=755,g={
 ach(18941,{requireSkill=755})}}),
-h(-45,{awp=100002,requireSkill=755,g={
+h(-45,{requireSkill=755,g={
 q(70365,{coords={
 [2022]={{25.4,54.2}}},description="This quest can only be picked up PRIOR to learning Dragon Isles Jewelcrafting.",lc={1,"spellID",366250,"questID",72247},lvl=10,qgs={192121},requireSkill=755}),
 q(72247,{coords={
@@ -6513,7 +6513,7 @@ q(77912,{awp=100200,coords={
 [2112]={{36.8,63.1}}},isWeekly=1,lvl=10,maxReputation={2544,5},qgs={210162},requireSkill=755,g={
 i(208928,{awp=100002,requireSkill=755}),
 i(198612,{b=1,isWeekly=1,requireSkill=755,spellID=384427})}})}}),
-flt(200,{awp=100002,description="These are learned by specialization.",requireSkill=755,g={
+flt(200,{description="These are learned by specialization.",requireSkill=755,g={
 r(374483,{cost={{"c",2029,1}},learnedAt=45,requireSkill=755,skillID=2829}),
 r(374442,{cost={{"c",2029,1}},learnedAt=70,requireSkill=755,skillID=2829}),
 r(374450,{cost={{"c",2029,1}},learnedAt=70,requireSkill=755,skillID=2829}),
@@ -6543,7 +6543,7 @@ r(374472,{cost={{"c",2029,1}},learnedAt=50,requireSkill=755,skillID=2829}),
 r(394621,{cost={{"c",2029,1}},learnedAt=100,requireSkill=755,skillID=2829}),
 r(374448,{cost={{"c",2029,1}},learnedAt=70,requireSkill=755,skillID=2829}),
 r(374458,{cost={{"c",2029,1}},learnedAt=70,requireSkill=755,skillID=2829})}}),
-h(-56,{awp=100002,requireSkill=755,g={
+h(-56,{requireSkill=755,g={
 o(401299,{awp=100100,coords={
 [2133]={{54.4,32.5}}},questID=75654,requireSkill=755,g={
 i(205219,{b=1,requireSkill=755,spellID=393135})}}),
@@ -6590,7 +6590,7 @@ i(205214,{b=1,requireSkill=755,spellID=393135})}}),
 o(410479,{awp=100200,coords={
 [2200]={{43.4,33.3}}},questID=78283,requireSkill=755,g={
 i(210201,{b=1,requireSkill=755,spellID=393135})}})}}),
-h(-246,{awp=100002,requireSkill=755,g={
+h(-246,{requireSkill=755,g={
 i(198612,{b=1,isWeekly=1,requireSkill=755,spellID=384427,g={
 cu(2029,{requireSkill=755})}}),
 q(74112,{description="Requires a crafting order from Inscription.",isWeekly=1,providers={{"i",194703}},requireSkill=755,g={
@@ -6829,7 +6829,7 @@ crit(61673,{achID=18900,id=12,providers={{"s",309173}}}),
 crit(61675,{achID=18900,id=13,providers={{"s",409555}}}),
 crit(61676,{achID=18900,id=13,providers={{"s",409557}}}),
 crit(61674,{achID=18900,id=13,providers={{"s",375168}}})}})}}),
-x(1,{requireSkill=165,g={
+x(1,{awp=10100,requireSkill=165,g={
 h(-12,{awp=100007,requireSkill=165,g={
 ach(17498,{altQuests={5141,5143,5144,5145,5146,5148},requireSkill=165,rwp=100007,sqreq=1,u=2}),
 ach(18899,{awp=100107,requireSkill=165,g={
@@ -6848,19 +6848,19 @@ q(5143,{altQuests={5141,5144},coords={
 [69]={{89.4,46.5}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,qgs={7870},r=2,requireSkill=165,sourceQuests={2853},u=2}),
 q(5148,{altQuests={5145,5146},coords={
 [224]={{36.6,34.2}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,qgs={7871},r=1,requireSkill=165,sourceQuests={2860},u=2})}})}}),
-x(2,{awp=100107,requireSkill=165,g={
-h(-12,{requireSkill=165,g={
+x(2,{awp=20010,requireSkill=165,g={
+h(-12,{awp=100107,requireSkill=165,g={
 ach(18894,{requireSkill=165,g={
 crit(61631,{achID=18894,id=1,providers={{"i",25728}}}),
 crit(61632,{achID=18894,id=2,providers={{"i",25729}}}),
 crit(61633,{achID=18894,id=3,providers={{"i",25731}}}),
 crit(61634,{achID=18894,id=4,providers={{"i",25730}}})}})}})}}),
-x(6,{awp=60003,requireSkill=165,g={
-h(-45,{requireSkill=165,g={
+x(6,{awp=70003,requireSkill=165,g={
+h(-45,{awp=60003,requireSkill=165,g={
 q(36176,{awp=60002,description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},providers={{"i",114877},{"n",75043}},r=2,requireSkill=165}),
 q(36505,{awp=60002,description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},providers={{"i",116173}},r=1,requireSkill=165})}})}}),
-x(7,{awp=70003,requireSkill=165,g={
-h(-45,{requireSkill=165,g={
+x(7,{awp=80001,requireSkill=165,g={
+h(-45,{awp=70003,requireSkill=165,g={
 q(39958,{coords={
 [627]={{35.4,29.6}}},cost={{"i",124115,5},{"i",124113,20}},lvl=10,qgs={93523},requireSkill=165,g={
 r(195119,{collectible=false,requireSkill=165,rwp=80001,u=2}),
@@ -7124,10 +7124,10 @@ i(151880,{requireSkill=165,spellID=248914}),
 r(247800,{b=1,itemID=151740,lvl=10,requireSkill=165,skillID=2526}),
 r(247803,{b=1,itemID=151743,lvl=10,requireSkill=165,skillID=2526}),
 i(151879,{requireSkill=165})}})}})}}),
-x(8,{requireSkill=165,g={
+x(8,{awp=80001,requireSkill=165,g={
 h(-12,{awp=100107,requireSkill=165,g={
 ach(18777,{providers={{"i",164978}},requireSkill=165})}}),
-h(-45,{awp=80001,requireSkill=165,g={
+h(-45,{requireSkill=165,g={
 q(54481,{awp=80100,coords={
 [1161]={{75.5,12.6}}},lvl=10,qgs={136063},r=2,requireSkill=165,rwp=90001,u=2}),
 q(54482,{awp=80100,coords={
@@ -7565,10 +7565,10 @@ r(53124,{awp=30002,rank=5,requireSkill=186,rwp=60002,u=2}),
 r(53040,{awp=30003,rank=6,requireSkill=186,rwp=60002,u=2}),
 r(74496,{awp=40003,rank=7,requireSkill=186,rwp=60002,u=2}),
 r(102163,{awp=50004,rank=8,requireSkill=186,rwp=60002,u=2})}}),
-x(1,{awp=100107,requireSkill=186,g={
-h(-12,{requireSkill=186,g={
+x(1,{awp=10100,requireSkill=186,g={
+h(-12,{awp=100107,requireSkill=186,g={
 ach(18841,{providers={{"s",22967}},requireSkill=186})}})}}),
-x(7,{requireSkill=186,g={
+x(7,{awp=80001,requireSkill=186,g={
 h(-12,{awp=100107,requireSkill=186,g={
 ach(18839,{requireSkill=186,g={
 crit(61516,{achID=18839,id=3,providers={{"s",184457}}}),
@@ -7678,7 +7678,7 @@ i(128769,{requireSkill=186}),
 i(128767,{requireSkill=186,spellID=191910})}}),
 q(38787,{coords={
 [650]={{55,84}}},lvl=10,qgs={93691},requireSkill=186,sourceQuests={38786}})}})}}),
-x(8,{requireSkill=186,g={
+x(8,{awp=80001,requireSkill=186,g={
 h(-12,{awp=100107,requireSkill=186,g={
 ach(18840,{requireSkill=186,g={
 crit(61525,{achID=18840,id=1,providers={{"s",253335}},requireSkill=186,sourceQuests={48761,51964},sqreq=1}),
@@ -7688,7 +7688,7 @@ crit(61528,{achID=18840,id=4,providers={{"s",253344}},requireSkill=186,sourceQue
 crit(61529,{achID=18840,id=5,providers={{"s",253347}},requireSkill=186,sourceQuests={51889,52043}}),
 crit(61530,{achID=18840,id=6,providers={{"s",296147}},requireSkill=186,sourceQuests={56103,56431},sqreq=1}),
 crit(61531,{achID=18840,id=7,providers={{"s",296143}},requireSkill=186,sourceQuests={56126,56432},sqreq=1})}})}}),
-ah(253335,{awp=80001,maps={862,863,864,895,896,942,1462},providers={{"o",276616},{"o",276621}},requireSkill=186,type="s",g={
+ah(253335,{maps={862,863,864,895,896,942,1462},providers={{"o",276616},{"o",276621}},requireSkill=186,type="s",g={
 q(48752,{coords={
 [1161]={{75.01,7.61}}},description="Requires 50 Kul'Tiran Mining.",lvl=10,qgs={136091},r=2,requireSkill=186,g={
 r(253334,{requireSkill=186}),
@@ -7705,7 +7705,7 @@ r(253335,{requireSkill=186})}}),
 q(51964,{coords={
 [1165]={{44,39}}},description="Requires 130 Zandalari Mining",lvl=10,qgs={122694},r=1,requireSkill=186,sourceQuests={51962},g={
 r(253335,{requireSkill=186})}})}}),
-ah(253344,{awp=80001,maps={862,863,864,895,896,942,1462},providers={{"o",276619}},requireSkill=186,type="s",g={
+ah(253344,{maps={862,863,864,895,896,942,1462},providers={{"o",276619}},requireSkill=186,type="s",g={
 q(48764,{coords={
 [1161]={{75.01,7.61}}},description="Requires 50 Kul'Tiran Mining.",lvl=10,qgs={136091},r=2,requireSkill=186,g={
 r(253343,{requireSkill=186}),
@@ -7729,7 +7729,7 @@ q(56126,{lvl=50,providers={{"i",168954}},r=2,requireSkill=186,g={
 r(296143,{requireSkill=186,skillID=2565})}}),
 q(56432,{lvl=50,providers={{"i",169598}},r=1,requireSkill=186,g={
 r(296143,{requireSkill=186,skillID=2565})}})}}),
-ah(253341,{awp=80001,maps={862,863,864,895,896,942,1462},providers={{"o",276618},{"o",276623}},requireSkill=186,type="s",g={
+ah(253341,{maps={862,863,864,895,896,942,1462},providers={{"o",276618},{"o",276623}},requireSkill=186,type="s",g={
 q(52044,{description="This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level. You can only turn it in at Level 150 Kul Tiran Mining.",lvl=10,providers={{"i",161078}},r=2,requireSkill=186,g={
 r(253340,{requireSkill=186})}}),
 q(52046,{description="This can drop from |cFFFFD700Platinum Deposits|r and |cFFFFD700Rich Platinum Deposits|r at any mining level. You can only turn it in at Level 150 Zandalari Mining.",lvl=10,providers={{"i",161079}},r=1,requireSkill=186,g={
@@ -7745,7 +7745,7 @@ q(52055,{coords={
 [864]={{27.6,69.8}}},lvl=10,qgs={139792},r=1,requireSkill=186,sourceQuests={52053},g={
 r(253341,{requireSkill=186}),
 i(161082,{requireSkill=186})}})}}),
-ah(253338,{awp=80001,maps={862,863,864,895,896,942,1462},providers={{"o",276617},{"o",276622}},requireSkill=186,type="s",g={
+ah(253338,{maps={862,863,864,895,896,942,1462},providers={{"o",276617},{"o",276622}},requireSkill=186,type="s",g={
 q(51568,{coords={
 [1161]={{41.8,30},{73.4,8.4},{75,7.6}}},description="Requires 50 Kul'Tiran Mining\n73.4, 8.4 in Boralus is location of the Forge\n41.8, 30.0 in Tiragarde Sound is the location to get the Blessing",lvl=10,qgs={136091},r=2,requireSkill=186,g={
 r(253337,{requireSkill=186}),
@@ -7766,7 +7766,7 @@ q(52015,{coords={
 [1165]={{44,39}}},description="Requires 135 Zandalari Mining",lvl=10,qgs={122694},r=1,requireSkill=186,sourceQuests={52014},g={
 r(253338,{requireSkill=186}),
 i(160453,{requireSkill=186})}})}}),
-ah(253347,{awp=80001,maps={862,863,864,895,896,942,1462},providers={{"o",276620}},requireSkill=186,type="s",g={
+ah(253347,{maps={862,863,864,895,896,942,1462},providers={{"o",276620}},requireSkill=186,type="s",g={
 q(48770,{coords={
 [1161]={{75,7.61},{75.2,14.3},{75.5,23.2}}},description="Requires 125 Kul'Tiran Mining\n75.25, 14.33 in Boralus is Harold Atkey Location\n75.51, 23.21 in Boralus is Franklin the Drunk Location\nWhen you visit Harold you want to buy \"Brennadam Apple Brand\".",lvl=10,qgs={136091},r=2,requireSkill=186,g={
 r(253346,{requireSkill=186})}}),
@@ -7791,7 +7791,7 @@ i(160998,{requireSkill=186}),
 i(160995,{requireSkill=186}),
 i(160996,{requireSkill=186}),
 i(160997,{requireSkill=186})}})}})}}),
-x(10,{requireSkill=186,g={
+x(10,{awp=100002,requireSkill=186,g={
 h(-12,{awp=100107,requireSkill=186,g={
 ach(18820,{requireSkill=186,g={
 crit(61388,{achID=18820,id=4,providers={{"i",201301}},requireSkill=186}),
@@ -7802,7 +7802,7 @@ ach(18818,{requireSkill=186,g={
 crit(61379,{achID=18820,id=1})}}),
 ach(18821,{requireSkill=186,g={
 crit(61381,{achID=18820,id=3})}})}}),
-h(-746,{awp=100002,requireSkill=186,g={
+h(-746,{requireSkill=186,g={
 pn(57291,{cost={{"c",2035,1}},requireSkill=186}),
 pn(57343,{cost={{"c",2035,1}},requireSkill=186}),
 pn(57261,{cost={{"c",2035,1}},requireSkill=186}),
@@ -7815,7 +7815,7 @@ pn(57292,{cost={{"c",2035,1}},requireSkill=186}),
 pn(57260,{cost={{"c",2035,1}},requireSkill=186}),
 pn(57262,{cost={{"c",2035,1}},requireSkill=186}),
 pn(57342,{cost={{"c",2035,1}},requireSkill=186})}}),
-h(-45,{awp=100002,requireSkill=186,g={
+h(-45,{requireSkill=186,g={
 q(70028,{coords={
 [2022]={{76.3,34.6}}},cost={{"i",197754,5}},lvl=10,qgs={187261},requireSkill=186}),
 q(70258,{coords={
@@ -7835,7 +7835,7 @@ i(199122,{b=1,isWeekly=1,requireSkill=186,spellID=386534})}}),
 q(72157,{coords={
 [2112]={{39,51.2}}},isDaily=1,isWeekly=1,lvl=10,maxReputation={2544,5},qgs={185553},requireSkill=186,sharedDescription="Requires 25 Skill.",g={
 i(199122,{b=1,isWeekly=1,requireSkill=186,spellID=386534})}})}}),
-flt(200,{awp=100002,description="These are learned by specialization.",requireSkill=186,g={
+flt(200,{description="These are learned by specialization.",requireSkill=186,g={
 r(388213,{awp=100005,cost={{"c",2035,1}},requireSkill=186}),
 r(383793,{cost={{"c",2035,1}},requireSkill=186,skillID=2833}),
 r(383795,{cost={{"c",2035,1}},requireSkill=186,skillID=2833}),
@@ -7843,7 +7843,7 @@ r(383796,{cost={{"c",2035,1}},requireSkill=186,skillID=2833}),
 r(383797,{cost={{"c",2035,1}},requireSkill=186,skillID=2833}),
 r(383649,{cost={{"c",2035,1}},requireSkill=186,skillID=2833}),
 r(383792,{cost={{"c",2035,1}},requireSkill=186,skillID=2833})}}),
-h(-246,{awp=100002,requireSkill=186,g={
+h(-246,{requireSkill=186,g={
 i(199122,{b=1,isWeekly=1,requireSkill=186,spellID=386534,g={
 cu(2035,{requireSkill=186})}}),
 q(74106,{description="Requires a crafting order from Inscription.",isWeekly=1,providers={{"i",194708}},requireSkill=186,g={
@@ -8019,7 +8019,7 @@ cu(3158,{requireSkill=186})}}),
 q(88678,{isWeekly=1,providers={{"i",237506}},requireSkill=186,g={
 cu(3158,{requireSkill=186})}})}})}})}),
 prof(393,{
-x(7,{requireSkill=393,g={
+x(7,{awp=80001,requireSkill=393,g={
 h(-12,{awp=100107,requireSkill=393,g={
 ach(18834,{requireSkill=393,g={
 crit(61487,{achID=18834,id=3,providers={{"i",139895}},requireSkill=393}),
@@ -8101,12 +8101,12 @@ ah(194169,{requireSkill=393,type="s",g={
 q(40159,{lvl=45,qgs={93541},requireSkill=393,sourceQuests={40158},g={
 r(194169,{requireSkill=393}),
 crit(61485,{achID=18834,awp=100107,id=1,providers={{"s",194169}},requireSkill=393})}})}})}})}}),
-x(8,{requireSkill=393,g={
+x(8,{awp=80001,requireSkill=393,g={
 h(-12,{awp=100107,requireSkill=393,g={
 ach(18835,{requireSkill=393,g={
 crit(61493,{achID=18835,id=1,providers={{"s",302016}},requireSkill=393,sourceQuests={56565,56566},sqreq=1}),
 crit(61494,{achID=18835,id=2,providers={{"s",302011}},requireSkill=393,sourceQuests={56562,56563},sqreq=1})}})}}),
-ah(257153,{awp=80001,requireSkill=393,type="s",g={
+ah(257153,{requireSkill=393,type="s",g={
 q(52227,{coords={
 [1161]={{75.8,13.1}}},description="Requires 50 Kul Tiran Skinning.",lvl=10,qgs={136061},r=2,requireSkill=393,g={
 r(257153,{requireSkill=393}),
@@ -8115,7 +8115,7 @@ q(52216,{coords={
 [1165]={{43.8,34.7}}},description="Requires 50 Zandalari Skinning",lvl=10,qgs={122699},r=1,requireSkill=393,g={
 r(257153,{requireSkill=393}),
 i(161434,{requireSkill=393})}})}}),
-ah(257154,{awp=80001,requireSkill=393,type="s",g={
+ah(257154,{requireSkill=393,type="s",g={
 q(52228,{coords={
 [1161]={{75.8,13.1}}},description="Requires 150 Kul Tiran Skinning.",lvl=10,qgs={136061},r=2,requireSkill=393,g={
 r(257154,{requireSkill=393}),
@@ -8135,7 +8135,7 @@ q(56562,{lvl=50,providers={{"i",169775}},r=2,requireSkill=393,g={
 r(302011,{requireSkill=393,skillID=2557})}}),
 q(56563,{lvl=50,providers={{"i",169772}},r=1,requireSkill=393,g={
 r(302011,{requireSkill=393,skillID=2557})}})}}),
-ah(257147,{awp=80001,requireSkill=393,type="s",g={
+ah(257147,{requireSkill=393,type="s",g={
 q(52223,{coords={
 [1161]={{75.8,13.1}}},description="Requires 50 Kul Tiran Skinning.",lvl=10,qgs={136061},r=2,requireSkill=393,g={
 r(257147,{requireSkill=393}),
@@ -8144,13 +8144,13 @@ q(51575,{coords={
 [1165]={{43.8,34.7}}},description="Requires 50 Zandalari Skinning",lvl=10,qgs={122699},r=1,requireSkill=393,g={
 r(257147,{requireSkill=393}),
 i(161430,{requireSkill=393})}})}}),
-ah(257148,{awp=80001,requireSkill=393,type="s",g={
+ah(257148,{requireSkill=393,type="s",g={
 q(52213,{description="Requires 150 Zandalari Skinning to get the item.",lvl=10,providers={{"i",161431}},r=1,requireSkill=393,sourceQuests={51575},g={
 r(257148,{requireSkill=393})}}),
 q(52224,{description="Requires 150 Kul Tiran Skinning to get the item.",lvl=10,providers={{"i",161424}},r=2,requireSkill=393,sourceQuests={52223},g={
 r(257148,{requireSkill=393}),
 crit(61496,{achID=18835,awp=100107,id=4,providers={{"s",257148}},requireSkill=393})}})}}),
-ah(257150,{awp=80001,requireSkill=393,type="s",g={
+ah(257150,{requireSkill=393,type="s",g={
 q(52225,{coords={
 [1161]={{75.8,13.1}}},description="Requires 50 Kul Tiran Skinning.",lvl=10,qgs={136061},r=2,requireSkill=393,g={
 r(257150,{requireSkill=393}),
@@ -8159,7 +8159,7 @@ q(52214,{coords={
 [1165]={{43.8,34.7}}},description="Requires 50 Zandalari Skinning",lvl=10,qgs={122699},r=1,requireSkill=393,g={
 r(257150,{requireSkill=393}),
 i(161432,{requireSkill=393})}})}}),
-ah(257151,{awp=80001,requireSkill=393,type="s",g={
+ah(257151,{requireSkill=393,type="s",g={
 q(52226,{coords={
 [1161]={{75.8,13.1}}},description="Requires 150 Kul Tiran Skinning.",lvl=10,qgs={136061},r=2,requireSkill=393,g={
 r(257151,{requireSkill=393}),
@@ -8169,7 +8169,7 @@ q(52215,{coords={
 [1165]={{43.8,34.7}}},description="Requires 150 Zandalari Skinning",lvl=10,qgs={122699},r=1,requireSkill=393,sourceQuests={52214},g={
 r(257151,{requireSkill=393}),
 i(161433,{requireSkill=393})}})}})}}),
-x(10,{requireSkill=393,g={
+x(10,{awp=100002,requireSkill=393,g={
 h(-12,{awp=100107,requireSkill=393,g={
 ach(18831,{requireSkill=393,g={
 crit(61435,{achID=18831,cost={{"i",193906,1}},id=1,providers={{"n",193854}},requireSkill=393}),
@@ -8234,7 +8234,7 @@ crit(61483,{achID=18833,coords={
 [2133]={{59.6,39.5}}},cost={{"i",193906,1}},id=11,providers={{"n",204821}},requireSkill=393}),
 crit(61484,{achID=18833,coords={
 [2133]={{43.8,48}}},cost={{"i",193906,1}},id=12,providers={{"n",204831}},requireSkill=393})}})}}),
-h(-746,{awp=100002,requireSkill=393,g={
+h(-746,{requireSkill=393,g={
 pn(34759,{cost={{"c",2033,1}},requireSkill=393}),
 pn(34757,{cost={{"c",2033,1}},requireSkill=393}),
 pn(34729,{cost={{"c",2033,1}},requireSkill=393}),
@@ -8245,7 +8245,7 @@ pn(34727,{cost={{"c",2033,1}},requireSkill=393}),
 pn(34687,{cost={{"c",2033,1}},requireSkill=393}),
 pn(34689,{cost={{"c",2033,1}},requireSkill=393}),
 pn(34726,{cost={{"c",2033,1}},requireSkill=393})}}),
-h(-45,{awp=100002,requireSkill=393,g={
+h(-45,{requireSkill=393,g={
 q(70363,{coords={
 [2022]={{76.7,34.8}}},description="Do NOT skin any Dragon Isles creatures. This quest can only be picked up PRIOR to learning Dragon Isles Skinning.",lc={1,"spellID",366263},lvl=10,qgs={192558},requireSkill=393}),
 q(70034,{coords={
@@ -8267,7 +8267,7 @@ i(199128,{b=1,isWeekly=1,requireSkill=393,spellID=386535})}}),
 q(70620,{coords={
 [2112]={{28.8,60.4}}},isDaily=1,isWeekly=1,lvl=10,maxReputation={2544,5},qgs={193846},requireSkill=393,sharedDescription="Requires 25 Skill.",g={
 i(199128,{b=1,isWeekly=1,requireSkill=393,spellID=386535})}})}}),
-flt(200,{awp=100002,description="These are learned by specialization.",requireSkill=393,g={
+flt(200,{description="These are learned by specialization.",requireSkill=393,g={
 r(383090,{cost={{"c",2033,1}},requireSkill=393,skillID=2834}),
 r(383128,{cost={{"c",2033,1}},requireSkill=393,skillID=2834}),
 r(375787,{cost={{"c",2033,1}},requireSkill=393,skillID=2834}),
@@ -8286,7 +8286,7 @@ r(376614,{cost={{"c",2033,1}},requireSkill=393,skillID=2834}),
 r(375773,{cost={{"c",2033,1}},requireSkill=393,skillID=2834}),
 r(375786,{cost={{"c",2033,1}},requireSkill=393,skillID=2834}),
 r(375782,{cost={{"c",2033,1}},requireSkill=393,skillID=2834})}}),
-h(-246,{awp=100002,requireSkill=393,g={
+h(-246,{requireSkill=393,g={
 i(199128,{b=1,isWeekly=1,requireSkill=393,spellID=386535,g={
 cu(2033,{requireSkill=393})}}),
 q(74114,{description="Requires a crafting order from Inscription.",isWeekly=1,providers={{"i",201023}},requireSkill=393,g={
@@ -8517,7 +8517,7 @@ crit(61742,{achID=18903,id=28,providers={{"i",42178}}}),
 crit(61743,{achID=18903,id=29,providers={{"s",56000}}}),
 crit(61734,{achID=18903,id=30,providers={{"i",10321}}}),
 crit(61744,{achID=18903,id=31,providers={{"i",10323}}})}})}}),
-x(2,{requireSkill=197,g={
+x(2,{awp=20010,requireSkill=197,g={
 h(-12,{awp=100007,requireSkill=197,g={
 ach(17499,{requireSkill=197,rwp=100007,sourceQuests={10831,10832,10833},sqreq=1,u=2})}}),
 h(-45,{awp=20005,requireSkill=197,rwp=40003,u=2,g={
@@ -8545,11 +8545,11 @@ crit(61334,{achID=18815,id=2,providers={{"s",75142}},requireSkill=197}),
 crit(61335,{achID=18815,id=3,providers={{"s",75144}},requireSkill=197}),
 crit(61336,{achID=18815,id=4,providers={{"s",75145}},requireSkill=197}),
 crit(61337,{achID=18815,id=5,providers={{"s",75146}},requireSkill=197})}})}})}}),
-x(6,{awp=60002,requireSkill=197,g={
-h(-45,{requireSkill=197,g={
+x(6,{awp=70003,requireSkill=197,g={
+h(-45,{awp=60002,requireSkill=197,g={
 q(36236,{description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},providers={{"i",114972}},r=2,requireSkill=197}),
 q(36301,{description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},providers={{"i",114973}},r=1,requireSkill=197})}})}}),
-x(7,{requireSkill=197,g={
+x(7,{awp=80001,requireSkill=197,g={
 q(38944,{awp=70003,coords={
 [627]={{35.2,34.2}}},cost={{"i",124437,10}},lvl=10,qgs={93542},requireSkill=197,g={
 r(195126,{collectible=false,requireSkill=197,rwp=80001,u=2}),
@@ -8736,11 +8736,11 @@ r(247807,{learnedAt=90,requireSkill=197,skillID=2534}),
 o(272745,{coords={
 [882]={{53.8,23.2}}},requireSkill=197,g={
 i(151874,{requireSkill=197})}})}})}}),
-x(8,{requireSkill=197,g={
+x(8,{awp=80001,requireSkill=197,g={
 h(-12,{awp=100107,requireSkill=197,g={
 ach(18774,{providers={{"s",292946}},requireSkill=197}),
 ach(18896,{providers={{"i",154705},{"i",154706},{"i",154707}},requireSkill=197})}}),
-h(-45,{awp=80001,requireSkill=197,g={
+h(-45,{requireSkill=197,g={
 q(54483,{awp=80100,coords={
 [1161]={{76.8,11.2}}},lvl=10,qgs={136071},r=2,requireSkill=197,rwp=90001,u=2}),
 q(54484,{awp=80100,coords={
@@ -8796,11 +8796,11 @@ r(22868,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167884,requireSkill=197,sk
 r(22869,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167885,requireSkill=197,skillID=2540}),
 r(18436,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167888,requireSkill=197,skillID=2540}),
 r(6692,{awp=80001,b=1,cost={{"i",158378,100}},itemID=167880,requireSkill=197,skillID=2540})}})}}),
-x(10,{requireSkill=197,g={
+x(10,{awp=100002,requireSkill=197,g={
 h(-12,{awp=100107,requireSkill=197,g={
 ach(18902,{providers={{"s",376530}},requireSkill=197,g={
 crit(61745,{achID=18902,providers={{"i",194048},{"i",194049},{"i",194050}},requireSkill=197})}})}}),
-h(-746,{awp=100002,requireSkill=197,g={
+h(-746,{requireSkill=197,g={
 pn(40215,{cost={{"c",2026,1}},requireSkill=197}),
 pn(40073,{cost={{"c",2026,1}},requireSkill=197}),
 pn(40072,{cost={{"c",2026,1}},requireSkill=197}),
@@ -8827,7 +8827,7 @@ pn(40008,{cost={{"c",2026,1}},requireSkill=197}),
 pn(40038,{cost={{"c",2026,1}},requireSkill=197}),
 pn(40070,{cost={{"c",2026,1}},requireSkill=197}),
 pn(40036,{cost={{"c",2026,1}},requireSkill=197})}}),
-h(-45,{awp=100002,requireSkill=197,g={
+h(-45,{requireSkill=197,g={
 q(72249,{coords={
 [2022]={{75.8,33.2}}},description="This quest can only be picked up PRIOR to learning Dragon Isles Tailoring.",lc={1,"spellID",366258,"questID",70366},lvl=10,qgs={192565},requireSkill=197}),
 q(70366,{coords={
@@ -8886,7 +8886,7 @@ q(77947,{awp=100200,coords={
 [2112]={{36.8,63.1}}},isWeekly=1,lvl=10,maxReputation={2544,5},qgs={210162},requireSkill=197,g={
 i(208956,{awp=100002,requireSkill=197}),
 i(198609,{b=1,isWeekly=1,requireSkill=197,spellID=384422})}})}}),
-flt(200,{awp=100002,description="These are learned by specialization.",requireSkill=197,g={
+flt(200,{description="These are learned by specialization.",requireSkill=197,g={
 r(376556,{cost={{"c",2026,1}},learnedAt=50,requireSkill=197,skillID=2831}),
 r(376502,{cost={{"c",2026,1}},learnedAt=100,requireSkill=197,skillID=2831}),
 r(376500,{cost={{"c",2026,1}},learnedAt=100,requireSkill=197,skillID=2831}),
@@ -8904,7 +8904,7 @@ r(376515,{cost={{"c",2026,1}},learnedAt=100,requireSkill=197,skillID=2831}),
 r(376516,{cost={{"c",2026,1}},learnedAt=100,requireSkill=197,skillID=2831}),
 r(376517,{cost={{"c",2026,1}},learnedAt=100,requireSkill=197,skillID=2831}),
 r(376518,{cost={{"c",2026,1}},learnedAt=100,requireSkill=197,skillID=2831})}}),
-h(-56,{awp=100002,requireSkill=197,g={
+h(-56,{requireSkill=197,g={
 o(402868,{awp=100100,coords={
 [2133]={{47.2,48.6}}},questID=76102,requireSkill=197,g={
 i(206019,{b=1,requireSkill=197,spellID=393144})}}),
@@ -8950,7 +8950,7 @@ i(210463,{b=1,requireSkill=197,spellID=393144})}}),
 o(402878,{awp=100100,coords={
 [2133]={{59.1,73.1}}},questID=76110,requireSkill=197,g={
 i(206025,{b=1,requireSkill=197,spellID=393144})}})}}),
-h(-246,{awp=100002,requireSkill=197,g={
+h(-246,{requireSkill=197,g={
 i(198609,{b=1,isWeekly=1,requireSkill=197,spellID=384422,g={
 cu(2026,{requireSkill=197})}}),
 q(74115,{description="Requires a crafting order from Inscription.",isWeekly=1,providers={{"i",194698}},requireSkill=197,g={

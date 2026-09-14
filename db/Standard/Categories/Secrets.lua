@@ -4,7 +4,7 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,cq,crit,de,en,h,hqt,i,m,mnt,n,o,p,prof,q,r,s,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateDecor,_.CreateEnsemble,_.CreateCustomHeader,_.CreateHQT,_.CreateItem,_.CreateMap,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.Secrets=
 h(-50,{SortPriority=65,g={
-x(7,{
+x(7,{awp=80001,g={
 ah(111573,{awp=70003,description="***Quest tracking enabled is required to see all the steps.***\n\nThis will show you how to unlock |cFFFFD700Kosumoth the Hungering|r, which has a world quest that awards the |cFFFFD700Hungering Claw|r pet or the |cFFFFD700Fathom Dweller|r mount.",displayID=71850,type="n",g={
 h(-56,{
 n(102695,{coords={
@@ -117,9 +117,9 @@ hqt(50146,{coords={
 [33]={{37.5,67.4}},
 [36]={{21.1,38.4}}},icon=134506,sourceQuests={50145}}),
 hqt(50147,{coords={
-[539]={{70.7,46.7}}},icon=134506,sourceQuests={50146}})})}})}),
-x(8,{
-ah(277461,{awp=80001,description="***Quest tracking enabled is required to see all the steps.*** \n\n***Before you can complete the last step of Baa'l, an upgraded Uuna is required, so it is recommended that you complete that secret first.***\n\nOther things you may want to have on hand for this secret:\n-Goblin Gliders (if you don't have flying)\n-Invisibility potions\n-Underlight Angler or potions to increase your swim speed\n",displayID=80456,modelScale=1.1,type="s",g={
+[539]={{70.7,46.7}}},icon=134506,sourceQuests={50146}})})}})}}),
+x(8,{awp=80001,g={
+ah(277461,{description="***Quest tracking enabled is required to see all the steps.*** \n\n***Before you can complete the last step of Baa'l, an upgraded Uuna is required, so it is recommended that you complete that secret first.***\n\nOther things you may want to have on hand for this secret:\n-Goblin Gliders (if you don't have flying)\n-Invisibility potions\n-Underlight Angler or potions to increase your swim speed\n",displayID=80456,modelScale=1.1,type="s",g={
 o(293849,{coords={
 [863]={{51.8,59}}},description="|cFFFFFFFFStep 1:|r Head to Nazmir. The note is high up on the side of the temple in the middle of the zone. If you don't have flying, you can access the top of the temple via a bridge that starts at |cFFFFFFFF46.3, 53.9|r.\n\nThe note reads: \"Begin at the beginning\"\n",questID=52819}),
 o(293837,{coords={
@@ -153,7 +153,7 @@ o(303016,{coords={
 n(141909,{coords={
 [525]={{62.3,22.9}}},description="|cFFFFFFFFStep 15:|r Head to Frostfire Ridge. You'll find Baa'l at the coordinates provided, in a volcano, just chilling, like you do.\n\nSummon your empowered Uuna to weaken him, and then attack!  Dragonkin pets are a wise choice, but he's very easy to beat post-Uuna Reckoning regardless.\n\nEnjoy your new pet!  Hail Satan!\n",questID=52828,sourceQuests={52827},g={
 p(2352,{b=1,itemID=162578,npcID=141941,spellID=277461})}})}}),
-ah(156798,{awp=80001,description="Below is a detailed explanation on how to obtain The Hivemind mount.\n\n***This secret requires you to have debug mode enabled to see the steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.***",displayID=88835,modelScale=1.1,type="i",g={
+ah(156798,{description="Below is a detailed explanation on how to obtain The Hivemind mount.\n\n***This secret requires you to have debug mode enabled to see the steps. To enable debug mode right click the ATT icon on the minimap, navigate to the general tab and check the \"|Cff15abffDebug Mode|r |cFFFFFFFF(Show Everything)|r\" box.***",displayID=88835,modelScale=1.1,type="i",g={
 o(13000000,{coords={
 [594]={{65.6,69.3}}},description="|cFFFFFFFFSTEP 1:|r Purchase |cFFFFD700Talisman of True Treasure Tracking|r. This can be bought from |cFFFFD700Griftah|r in |cFFFFD700Shattrath City|r at |cFFFFFFFF65.6, 69.3|r for 35g\n",g={
 i(27944,{f=51,spellID=260928})}}),
@@ -275,7 +275,7 @@ n(160372,{description="Can be found in Moroes' room, on the right side of the lo
 i(173777,{b=1,spellID=312275})}}),
 o(9999921,{description="After you have all the meats collected, head back to the audience area of the Opera Hall. To orient yourself in the room, you want to have your back to the stage.\n\nYou will be placing each meat relative to two very tiny piles of kibble on the left side of the room (again, while faced away from the stage). You will probably need to zoom in to see them. Each tile on the floor represents a box in a 12-by-12 grid.\n\n|cff413f43 00|r = Empty cell\n|cff4db62c 00|r = Pile of Kibble\n|cffeea016 00|r = Fishy Bits\n|cffeee116 00|r = Juicy Drumstick\n|cff16ceee 00|r = Meaty Morsel\n|cffce16ee 00|r = Marbled Steak\n|cff9e5ced 00|r = Slathered Rib\n\n|cff413f43 00 00 00 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00 00|r|cffeee116 00|r|cff413f43 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00|r|cff9e5ced 00|r|cff413f43 00|r|cffeea016 00|r|cff413f43 00 00|r\n|cff413f43 00|r|cff4db62c 00|r|cff413f43 00 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00|r|cffce16ee 00|r|cff413f43 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00|r|cff16ceee 00|r|cff413f43 00 00 00 00 00 00|r\n|cff413f43 00|r|cff4db62c 00|r|cff413f43 00 00|r|cffeea016 00|r|cff413f43 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00|r|cffce16ee 00|r|cff413f43 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00|r|cffeee116 00|r|cff413f43 00 00 00 00 00 00 00 00 00|r\n|cff413f43 00 00 00 00 00 00 00 00 00 00 00 00|r\n\nIf you have placed all the meats properly, Jenafur will spawn as soon as you finish. You can use |cFFFFFFFF/tar Jenafur|r to find her in the room, and then all you have to do is walk over and pet her for her to be added to your collection.\n"}),
 p(2795,{npcID=159783})}})}}),
-ah(161479,{awp=80001,type="i",g={
+ah(161479,{type="i",g={
 i(161344,{description="These are a World Drop in any zone and can be bought from the Auction House. Once you collect 20, combine them.",maps={862,863,864,895,896,942},spellID=275121}),
 i(161345,{b=1,coords={
 [942]={{73.5,23.6}}},cost={{"i",161344,20}},description="Use this on the \"Abyssal Icon\" located at 73.5, 23.6 in Stormsong Valley. The cave entrance is behind a waterfall.",lvl=50,questID=53428,spellID=277122}),
@@ -283,7 +283,7 @@ n(140474,{coords={
 [942]={{73.5,23.6}}},cost={{"i",161345,1}},g={
 mnt(275623,{b=1,itemID=161479,lvl=45,questID=53429}),
 i(163929,{b=1,questID=53477,spellID=280636})}})}}),
-ah(279213,{awp=80001,description="You must find each of the four parts from various treasures in the Zone and combine them to form this battle pet.",displayID=86805,modelScale=0.8,type="s",g={
+ah(279213,{description="You must find each of the four parts from various treasures in the Zone and combine them to form this battle pet.",displayID=86805,modelScale=0.8,type="s",g={
 h(-47,{maps={896},g={
 p(2411,{b=1,cost={{"i",163796,1},{"i",163790,1},{"i",163791,1},{"i",163789,1}},itemID=163497,npcID=143189,spellID=279213})}}),
 o(297879,{coords={
@@ -301,8 +301,8 @@ crit(41704,{achID=12995,id=8})}}),
 o(297878,{coords={
 [896]={{18.5,51.3}}},description="Click the inactive torches.",modelScale=1.5,questID=53471,g={
 i(163789,{b=1,spellID=280310}),
-crit(41702,{achID=12995,id=6})}})}})}),
-x(9,{
+crit(41702,{achID=12995,id=6})}})}})}}),
+x(9,{awp=90002,g={
 ah(344577,{awp=90005,cost={{"i",184870,1}},description="Requires |cFF006812Appreciative|r reputation with Ve'nari and a total of 3,500 Stygia.\n\nEnable quest tracking to see all the steps.\n\nPurchase a |cFF0070ddStygia Dowser|r from Ve'nari for 1,500 Stygia.Throughout the secret, harvest every Stygia Nexus you find, as you will eventually need 200 |cFF1eff00Stygia Dust|r and |cFF1eff00Stygia Slivers|r.",displayID=92632,maps={1543},modelScale=1.1,type="s",g={
 prof(2811,{
 r(350276,{requireSkill=2811,u=5}),
@@ -370,9 +370,9 @@ n(162804,{coords={
 n(185083,{coords={
 [1970]={{47.4,88.6}}},description="After talking to Ve'nari's echo in her hideout, head to the Creation Catalyst in Zereth Mortis. There, you will find Ve'nari's charred corpse in the center of the room. Interact with it, and select the dialogue option to take a closer look.",questID=65488,sourceQuests={65470}}),
 h(-39,{description="You should receive a letter from Ve'nari with the toy attached 5 days after interacting with her decoy corpse in Zereth Mortis.",sourceQuests={65488},g={
-toy(192485,{b=1})}})}})}),
-x(10,{
-ah(201933,{awp=100002,description="***Debugg Mode enabled is required to see all the steps.***\n\nFollow the steps as ordered in the descriptions.",displayID=110513,modelScale=1.6,type="i",g={
+toy(192485,{b=1})}})}})}}),
+x(10,{awp=100002,g={
+ah(201933,{description="***Debugg Mode enabled is required to see all the steps.***\n\nFollow the steps as ordered in the descriptions.",displayID=110513,modelScale=1.6,type="i",g={
 o(377485,{coords={
 [2022]={{43.7,71.7}}},description="Step 1: Get a Sour Apple.",modelScale=0.1,g={
 i(194122,{spellID=376662})}}),
@@ -420,7 +420,7 @@ n(205876,{coords={
 [2022]={{58.5,67.7}}},nomerge=1,questID=76186}),
 n(205876,{coords={
 [2022]={{63.9,44.8}}},nomerge=1,questID=76187})})}}),
-ah(376873,{awp=100002,cost={{"i",202042,1}},description="***Debugg Mode enabled is required to see all the steps. Fishing is required for this Secret!***\n\nYou need to buy an Immaculate Bag of Swog Treasures to get the Aquatic Shades, which costs 1 Gold Coin of the Isles. If you're unlucky, this means fishing up a total of 75 Copper Coins of the Isles to trade up!",displayID=102074,modelScale=0.8,type="s",g={
+ah(376873,{cost={{"i",202042,1}},description="***Debugg Mode enabled is required to see all the steps. Fishing is required for this Secret!***\n\nYou need to buy an Immaculate Bag of Swog Treasures to get the Aquatic Shades, which costs 1 Gold Coin of the Isles. If you're unlucky, this means fishing up a total of 75 Copper Coins of the Isles to trade up!",displayID=102074,modelScale=0.8,type="s",g={
 hqt(72676,{coords={
 [2022]={{19.6,36.5}}},description="Head to The Bubble Bath Dive Bar, off the coast of The Waking Shores. While wearing the Aquatic Shades, find an empty dance floor and walk onto it; you'll receive the debuff Dance Dance 'Til You're Dead. Stay on the dance floor until this debuff wears off."}),
 o(385001,{coords={
@@ -831,8 +831,8 @@ mnt(424082,{b=1,cost={{"i",209055,1},{"i",209781,1},{"i",208984,1}},description=
 h(-58,{
 n(206864,{coords={
 [2112]={{47.3,48.2}}},g={
-i(229375,{awp=110005,b=1,f=55,spellID=464886})}})})}})}),
-x(12,{
+i(229375,{awp=110005,b=1,f=55,spellID=464886})}})})}})}}),
+x(12,{awp=120001,g={
 ah(62189,{awp=120000,coords={
 [204]={{15,90}}},description="Swim out to the coordinates then further out south just until fatigue kicks in, then retreat.\nSwim down until fatigue kicks in again then mad dash towards the glowing orb by the skeleton.\n\nYou will want the Vash'jir seahorse and water breathing to make it in time.",type="a",g={
 n(256536,{description="Around the room are displays tracking various 'secret' activities you may or may not have completed. If you've completed enough (17+), speak to Anakron to become a Mind Seeker.",g={
@@ -856,7 +856,7 @@ o(656049,{coords={
 i(276465,{crs={265891}}),
 o(658801,{coords={
 [2600]={{71.5,45.3}}},cost={{"i",276465,1}},description="Currently only visible in Normal World Tier.",g={
-p(4860,{b=1,itemID=246723,npcID=247465,spellID=1243343})}})}})}),
+p(4860,{b=1,itemID=246723,npcID=247465,spellID=1243343})}})}})}}),
 h(-503,{awp=50004,description="Multi-expansion secret to obtaining Dog as a companion pet.",displayID=1100,g={
 q(30526,{coords={
 [376]={{42.4,50.2}}},lvl=15,minReputation={1272,21600},qgs={59533},g={

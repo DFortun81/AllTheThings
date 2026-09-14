@@ -4,7 +4,7 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ah,cat,cl,cu,flt,h,i,prof,q,r,s,toy,x=_.CreateHeader,_.CreateCategory,_.CreateCharacterClass,_.CreateCurrencyClass,_.CreateFilter,_.CreateCustomHeader,_.CreateItem,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateItemSource,_.CreateToy,_.CreateExpansion;
 categories.WorldDrops=
 h(-698,{SortPriority=15,g={
-x(1,{
+x(1,{awp=10100,g={
 flt(3,{
 s(3605,9938,{f=3,lvl=19}),
 s(5131,14116,{f=3,lvl=4}),
@@ -3640,9 +3640,9 @@ i(9260,{coords={
 i(12205,{coords={
 [70]={{34.1,22.5},{55.2,54.8}}},crs={4376,4378,4379,4415},description="Drops from spiders in previously higher intermediate to highlevel vanilla zones like spiders in Dustwallow Marsh."}),
 i(8153,{description="Cataclysm messed up with the drop sources for Wildvine. Supposed to drop from trolls in Hinterlands and Stranglethorn, farming Purple Lotus with herbalism is the most reliable source."}),
-i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={47,56,63,221,225}})})}),
-x(2,{awp=20003,g={
-flt(3,{
+i(2592,{description="Wool Cloth drops commonly from any humanoid and undead creatures within the given zones.",maps={47,56,63,221,225}})})}}),
+x(2,{awp=20010,g={
+flt(3,{awp=20003,g={
 s(10068,25043,{f=3,lvl=27}),
 s(10066,25041,{f=3,lvl=27}),
 s(10061,25036,{f=3,lvl=25}),
@@ -3660,8 +3660,8 @@ s(10058,25033,{f=3,lvl=25}),
 s(14167,31143,{f=3,lvl=25}),
 s(10055,25030,{f=3,lvl=24}),
 s(10060,25035,{f=3,lvl=25}),
-s(10056,25031,{f=3,lvl=24})}),
-flt(4,{
+s(10056,25031,{f=3,lvl=24})}}),
+flt(4,{awp=20003,g={
 s(14243,31230,{f=4,loc=47,lvl=26}),
 s(9702,24677,{f=4,loc=45,lvl=27}),
 s(9709,24684,{f=4,loc=43,lvl=27}),
@@ -3800,8 +3800,8 @@ s(9641,24616,{f=4,loc=44,lvl=25}),
 s(9643,24618,{f=4,loc=46,lvl=25}),
 s(9644,24619,{f=4,loc=41,lvl=25}),
 s(9640,24615,{f=4,loc=42,lvl=25}),
-s(14326,31340,{f=4,loc=42,lvl=27})}),
-flt(5,{
+s(14326,31340,{f=4,loc=42,lvl=27})}}),
+flt(5,{awp=20003,g={
 s(14192,31175,{f=5,loc=43,lvl=25}),
 s(9725,24700,{f=5,loc=43,lvl=24}),
 s(9720,24695,{f=5,loc=42,lvl=24}),
@@ -3943,8 +3943,8 @@ s(9736,24711,{f=5,loc=42,lvl=24}),
 s(9737,24712,{f=5,loc=44,lvl=24}),
 s(9738,24713,{f=5,loc=40,lvl=24}),
 s(9739,24714,{f=5,loc=46,lvl=24}),
-s(9740,24715,{f=5,loc=41,lvl=24})}),
-flt(6,{
+s(9740,24715,{f=5,loc=41,lvl=24})}}),
+flt(6,{awp=20003,g={
 s(9888,24863,{f=6,loc=47,lvl=26}),
 s(9894,24869,{f=6,loc=43,lvl=26}),
 s(9889,24864,{f=6,loc=42,lvl=26}),
@@ -4084,8 +4084,8 @@ s(9864,24839,{f=6,loc=47,lvl=25}),
 s(9867,24842,{f=6,loc=40,lvl=25}),
 s(9868,24843,{f=6,loc=46,lvl=25}),
 s(9869,24844,{f=6,loc=41,lvl=25}),
-s(9863,24838,{f=6,loc=45,lvl=25})}),
-flt(7,{
+s(9863,24838,{f=6,loc=45,lvl=25})}}),
+flt(7,{awp=20003,g={
 s(9951,24926,{f=7,loc=45,lvl=24}),
 s(9953,24928,{f=7,loc=42,lvl=24}),
 s(9954,24929,{f=7,loc=44,lvl=24}),
@@ -4224,8 +4224,8 @@ s(10018,24993,{f=7,loc=44,lvl=26}),
 s(10016,24991,{f=7,loc=47,lvl=26}),
 s(10019,24994,{f=7,loc=40,lvl=26}),
 s(10020,24995,{f=7,loc=46,lvl=26}),
-s(10022,24997,{f=7,loc=43,lvl=26})}),
-cat(227,{
+s(10022,24997,{f=7,loc=43,lvl=26})}}),
+cat(227,{awp=20003,g={
 flt(21,{
 s(10206,25209,{f=21,lvl=27}),
 s(14174,31153,{f=21,lvl=25}),
@@ -4508,8 +4508,8 @@ s(10289,25292,{f=27,lvl=26}),
 s(10288,25291,{f=27,lvl=26}),
 s(10281,25284,{f=27,lvl=24}),
 s(10287,25290,{f=27,lvl=26}),
-s(10283,25286,{f=27,lvl=25})})}),
-flt(8,{
+s(10283,25286,{f=27,lvl=25})})}}),
+flt(8,{awp=20003,g={
 s(10078,25081,{f=8,lvl=26}),
 s(14290,31292,{f=8,lvl=27}),
 s(14286,31287,{f=8,lvl=27}),
@@ -4526,8 +4526,8 @@ s(10080,25083,{f=8,lvl=27}),
 s(10077,25080,{f=8,lvl=26}),
 s(10071,25074,{f=8,lvl=24}),
 s(10075,25078,{f=8,lvl=25}),
-s(10081,25084,{f=8,lvl=27})}),
-flt(1,{
+s(10081,25084,{f=8,lvl=27})}}),
+flt(1,{awp=20003,g={
 s(10092,25095,{f=1,lvl=26}),
 s(10094,25097,{f=1,lvl=27}),
 s(10084,25087,{f=1,lvl=24}),
@@ -4541,8 +4541,8 @@ s(10088,25091,{f=1,lvl=25}),
 s(10090,25093,{f=1,lvl=26}),
 s(10087,25090,{f=1,lvl=25}),
 s(10086,25089,{f=1,lvl=25}),
-s(10095,25098,{f=1,lvl=27})}),
-flt(51,{
+s(10095,25098,{f=1,lvl=27})}}),
+flt(51,{awp=20003,g={
 i(25064,{f=51,lvl=25}),
 i(31196,{f=51,lvl=26}),
 i(31178,{f=51,lvl=25}),
@@ -4562,8 +4562,8 @@ i(25066,{f=51,lvl=26}),
 i(25060,{f=51,lvl=24}),
 i(25071,{f=51,lvl=27}),
 i(25065,{f=51,lvl=26}),
-i(25062,{f=51,lvl=25})}),
-flt(52,{
+i(25062,{f=51,lvl=25})}}),
+flt(52,{awp=20003,g={
 i(25055,{f=52,lvl=27}),
 i(25056,{f=52,lvl=27}),
 i(25057,{f=52,lvl=27}),
@@ -4583,8 +4583,8 @@ i(25048,{f=52,lvl=25}),
 i(25054,{f=52,lvl=26}),
 i(25046,{f=52,lvl=24}),
 i(25047,{f=52,lvl=25}),
-i(31326,{f=52,lvl=27})}),
-flt(50,{
+i(31326,{f=52,lvl=27})}}),
+flt(50,{awp=20003,g={
 i(29739,{coords={
 [104]={{47.2,65.7}},
 [109]={{25.3,70.4},{50.5,83.1},{55.9,79.2}},
@@ -4613,8 +4613,8 @@ i(30810,{coords={
 [122]={{42.7,37.4}}},maps={266,267}}),
 i(22153,{c={8},f=200,lvl=27}),
 i(31501,{c={8},f=200,lvl=27}),
-i(29550,{c={8},f=200,lvl=27})}),
-cat(106,{
+i(29550,{c={8},f=200,lvl=27})}}),
+cat(106,{awp=20003,g={
 i(31882,{spellID=39480}),
 i(31901,{spellID=39483}),
 i(31910,{spellID=39484}),
@@ -4646,8 +4646,8 @@ i(31899,{spellID=39481}),
 i(31889,{spellID=39480}),
 i(31909,{spellID=39483}),
 i(31918,{spellID=39484}),
-i(31900,{spellID=39481})}),
-flt(56,{
+i(31900,{spellID=39481})}}),
+flt(56,{awp=20003,g={
 i(27671,{coords={
 [100]={{20.6,52.5},{25,45.5},{29.4,54.8},{31.5,35.7},{61.6,67.7}},
 [108]={{34,54.8},{42.8,52.2},{45.7,62.5}}},crs={16972,16973,18470}}),
@@ -4730,8 +4730,8 @@ i(27682,{coords={
 [109]={{41.8,35.8}}},crs={17130,17131,18964,20610,20777},description="Talbuks can be found all over Nagrand.",maps={107}}),
 i(27681,{coords={
 [108]={{20.6,73.5},{60.3,38.7},{65.9,85}},
-[109]={{56.4,60},{66.3,61.8}}},crs={18464,18465,18884,23219}})}),
-flt(200,{
+[109]={{56.4,60},{66.3,61.8}}},crs={18464,18465,18884,23219}})}}),
+flt(200,{awp=20003,g={
 prof(171,{
 r(28565,{itemID=22914,requireSkill=171,skillID=2484}),
 r(28578,{itemID=22926,requireSkill=171,skillID=2484}),
@@ -4856,9 +4856,9 @@ r(31448,{itemID=24305,requireSkill=197,skillID=2539}),
 r(31434,{itemID=24296,requireSkill=197,skillID=2539}),
 r(31442,{itemID=24302,requireSkill=197,skillID=2539}),
 r(31449,{itemID=24306,requireSkill=197,skillID=2539}),
-r(31441,{itemID=24301,requireSkill=197,skillID=2539})})})}}),
-x(3,{awp=30002,g={
-flt(3,{
+r(31441,{itemID=24301,requireSkill=197,skillID=2539})})}})}}),
+x(3,{awp=30003,g={
+flt(3,{awp=30002,g={
 s(17176,36411,{f=3,lvl=28}),
 s(17175,36410,{f=3,lvl=28}),
 s(18028,37797,{f=3,lvl=29}),
@@ -4875,16 +4875,16 @@ s(17168,36403,{f=3,lvl=26}),
 s(17169,36404,{f=3,lvl=27}),
 s(17180,36415,{f=3,lvl=29}),
 s(17171,36406,{f=3,lvl=27}),
-s(17990,37756,{f=3,lvl=28})}),
-flt(102,{
-toy(37254,{b=1})}),
-flt(50,{
+s(17990,37756,{f=3,lvl=28})}}),
+flt(102,{awp=30002,g={
+toy(37254,{b=1})}}),
+flt(50,{awp=30002,g={
 i(44663,{crs={32357,32358,32361,32377,32386,32398,32400,32409,32417,32422,32429,32438,32447,32471,32475,32481,32485,32487,32491,32495,32500,32501,32517,32630,33776,35189,38453},description="Drops from any of the Northrend Rares. Contains some gold, Frostweave Cloth and crystallized motes."}),
 i(43297,{lvl=10,requireSkill=755}),
-i(36812,{description="Drops from mechs in Northrend for level 10-12 characters. Can also drop from Mimiron in Ulduar."})}),
-flt(53,{
-i(37835,{f=53,lvl=30,spellID=49622})}),
-flt(52,{
+i(36812,{description="Drops from mechs in Northrend for level 10-12 characters. Can also drop from Mimiron in Ulduar."})}}),
+flt(53,{awp=30002,g={
+i(37835,{f=53,lvl=30,spellID=49622})}}),
+flt(52,{awp=30002,g={
 i(36428,{f=52,lvl=29}),
 i(36424,{f=52,lvl=28}),
 i(36421,{f=52,lvl=27}),
@@ -4905,8 +4905,8 @@ i(36429,{f=52,lvl=29}),
 i(36426,{f=52,lvl=29}),
 i(37751,{f=52,lvl=27}),
 i(37822,{f=52,lvl=29}),
-i(37820,{f=52,lvl=28})}),
-flt(51,{
+i(37820,{f=52,lvl=28})}}),
+flt(51,{awp=30002,g={
 i(37823,{f=51,lvl=29}),
 i(36435,{f=51,lvl=27}),
 i(36437,{f=51,lvl=28}),
@@ -4924,8 +4924,8 @@ i(36442,{f=51,lvl=29}),
 i(36432,{f=51,lvl=27}),
 i(36433,{f=51,lvl=27}),
 i(37794,{f=51,lvl=29}),
-i(37748,{f=51,lvl=27})}),
-flt(1,{
+i(37748,{f=51,lvl=27})}}),
+flt(1,{awp=30002,g={
 s(18046,37817,{f=1,lvl=28}),
 s(17209,36472,{f=1,lvl=30}),
 s(17199,36462,{f=1,lvl=27}),
@@ -4940,8 +4940,8 @@ s(17196,36459,{f=1,lvl=26}),
 s(17206,36469,{f=1,lvl=29}),
 s(17197,36460,{f=1,lvl=27}),
 s(17200,36463,{f=1,lvl=27}),
-s(17204,36467,{f=1,lvl=28})}),
-flt(8,{
+s(17204,36467,{f=1,lvl=28})}}),
+flt(8,{awp=30002,g={
 s(17984,37747,{f=8,lvl=27}),
 s(18041,37810,{f=8,lvl=29}),
 s(17191,36454,{awp=60002,description="Dropped from Big Crate of Salvage during Warlords of Draenor.",f=8,lvl=29,rwp=70003,u=2}),
@@ -4958,8 +4958,8 @@ s(17185,36448,{f=8,lvl=27}),
 s(17189,36452,{f=8,lvl=28}),
 s(17187,36450,{f=8,lvl=28}),
 s(17186,36449,{f=8,lvl=27}),
-s(21432,44313,{f=8,lvl=30})}),
-cat(227,{
+s(21432,44313,{f=8,lvl=30})}}),
+cat(227,{awp=30002,g={
 flt(21,{
 s(17313,36576,{f=21,lvl=28}),
 s(17311,36574,{awp=100007,f=21,lvl=27}),
@@ -5236,12 +5236,12 @@ s(17396,36659,{awp=100007,f=27,lvl=27}),
 s(17404,36667,{f=27,lvl=29}),
 s(17394,36657,{f=27,lvl=27}),
 s(17399,36662,{f=27,lvl=28}),
-s(17402,36665,{f=27,lvl=29})})}),
-cat(258,{
+s(17402,36665,{f=27,lvl=29})})}}),
+cat(258,{awp=30002,g={
 s(17981,37744,{f=6,loc=47,lvl=27}),
 s(17986,37752,{f=4,loc=47,lvl=27}),
-s(17996,37763,{f=5,loc=47,lvl=27})}),
-flt(200,{
+s(17996,37763,{f=5,loc=47,lvl=27})}}),
+flt(200,{awp=30002,g={
 prof(185,{
 r(58523,{b=1,itemID=43509,requireSkill=185,skillID=2546}),
 r(58525,{b=1,itemID=43510,requireSkill=185,skillID=2546}),
@@ -5272,48 +5272,48 @@ r(55998,{itemID=42176,requireSkill=197,skillID=2538}),
 r(55996,{itemID=42175,requireSkill=197,skillID=2538}),
 r(55993,{itemID=42172,requireSkill=197,skillID=2538}),
 r(55997,{itemID=42177,requireSkill=197,skillID=2538}),
-r(55999,{itemID=42178,requireSkill=197,skillID=2538})})}),
-cat(257,{
+r(55999,{itemID=42178,requireSkill=197,skillID=2538})})}}),
+cat(257,{awp=30002,g={
 s(18007,37774,{f=6,loc=46,lvl=28}),
 s(17989,37755,{f=4,loc=46,lvl=28}),
 s(17998,37765,{f=5,loc=46,lvl=28}),
 s(18001,37768,{f=5,loc=46,lvl=29}),
 s(17980,37743,{f=7,loc=46,lvl=27}),
-s(18018,37786,{f=7,loc=46,lvl=28})}),
-cat(255,{
+s(18018,37786,{f=7,loc=46,lvl=28})}}),
+cat(255,{awp=30002,g={
 s(18021,37789,{f=7,loc=44,lvl=29}),
 s(18015,37782,{f=7,loc=44,lvl=27}),
 s(18026,37795,{f=7,loc=44,lvl=28}),
 s(18014,37781,{f=6,loc=44,lvl=29}),
-s(17992,37759,{f=4,loc=44,lvl=29})}),
-cat(254,{
+s(17992,37759,{f=4,loc=44,lvl=29})}}),
+cat(254,{awp=30002,g={
 s(18009,37776,{f=6,loc=43,lvl=28}),
 s(18010,37777,{f=6,loc=43,lvl=28}),
 s(17999,37766,{f=5,loc=43,lvl=28}),
 s(17993,37760,{f=4,loc=43,lvl=29}),
-s(18004,37771,{f=5,loc=43,lvl=29})}),
-cat(253,{
+s(18004,37771,{f=5,loc=43,lvl=29})}}),
+cat(253,{awp=30002,g={
 s(18024,37792,{f=7,loc=42,lvl=29}),
 s(18003,37770,{f=5,loc=42,lvl=29}),
 s(18013,37780,{f=6,loc=42,lvl=29}),
 s(17982,37745,{f=5,loc=42,lvl=27}),
-s(17987,37753,{f=4,loc=42,lvl=27})}),
-cat(252,{
+s(17987,37753,{f=4,loc=42,lvl=27})}}),
+cat(252,{awp=30002,g={
 s(18016,37783,{f=7,loc=41,lvl=27}),
 s(17991,37757,{f=4,loc=41,lvl=28}),
 s(17997,37764,{f=5,loc=41,lvl=28}),
 s(18002,37769,{f=5,loc=41,lvl=29}),
 s(18012,37779,{f=6,loc=41,lvl=29}),
 s(21431,44312,{f=7,loc=41,lvl=30}),
-s(18005,37772,{f=6,loc=41,lvl=27})}),
-cat(251,{
+s(18005,37772,{f=6,loc=41,lvl=27})}}),
+cat(251,{awp=30002,g={
 s(18019,37787,{f=7,loc=40,lvl=28}),
 s(18008,37775,{f=6,loc=40,lvl=28}),
 s(17983,37746,{f=4,loc=40,lvl=27}),
 s(18000,37767,{f=5,loc=40,lvl=29}),
 s(17988,37754,{f=4,loc=40,lvl=28}),
-s(18025,37793,{f=7,loc=40,lvl=29})}),
-flt(7,{
+s(18025,37793,{f=7,loc=40,lvl=29})}}),
+flt(7,{awp=30002,g={
 s(17074,36309,{f=7,loc=42,lvl=27}),
 s(17072,36307,{f=7,loc=45,lvl=27}),
 s(17078,36313,{f=7,loc=41,lvl=27}),
@@ -5441,8 +5441,8 @@ s(17083,36318,{f=7,loc=44,lvl=27}),
 s(17080,36315,{f=7,loc=45,lvl=27}),
 s(17084,36319,{f=7,loc=40,lvl=27}),
 s(17085,36320,{f=7,loc=46,lvl=27}),
-s(17081,36316,{f=7,loc=47,lvl=27})}),
-flt(6,{
+s(17081,36316,{f=7,loc=47,lvl=27})}}),
+flt(6,{awp=30002,g={
 s(16991,36226,{f=6,loc=43,lvl=28}),
 s(16986,36221,{f=6,loc=42,lvl=28}),
 s(16987,36222,{f=6,loc=44,lvl=28}),
@@ -5570,8 +5570,8 @@ s(17019,36254,{f=6,loc=44,lvl=29}),
 s(17017,36252,{f=6,loc=47,lvl=29}),
 s(17020,36255,{f=6,loc=40,lvl=29}),
 s(17021,36256,{f=6,loc=46,lvl=29}),
-s(17022,36257,{f=6,loc=41,lvl=29})}),
-flt(5,{
+s(17022,36257,{f=6,loc=41,lvl=29})}}),
+flt(5,{awp=30002,g={
 s(16871,36106,{f=5,loc=43,lvl=27}),
 s(16865,36100,{f=5,loc=47,lvl=27}),
 s(16869,36104,{f=5,loc=46,lvl=27}),
@@ -5699,8 +5699,8 @@ s(16896,36131,{f=5,loc=45,lvl=28}),
 s(16899,36134,{f=5,loc=44,lvl=28}),
 s(16898,36133,{f=5,loc=42,lvl=28}),
 s(16901,36136,{f=5,loc=46,lvl=28}),
-s(16902,36137,{f=5,loc=41,lvl=28})}),
-flt(4,{
+s(16902,36137,{f=5,loc=41,lvl=28})}}),
+flt(4,{awp=30002,g={
 s(16784,36019,{f=4,loc=45,lvl=28}),
 s(16785,36020,{f=4,loc=47,lvl=28}),
 s(16791,36026,{f=4,loc=43,lvl=28}),
@@ -5828,16 +5828,16 @@ s(16765,36000,{f=4,loc=46,lvl=28}),
 s(16766,36001,{f=4,loc=41,lvl=28}),
 s(16762,35997,{f=4,loc=42,lvl=28}),
 s(16760,35995,{f=4,loc=45,lvl=28}),
-s(16761,35996,{f=4,loc=47,lvl=28})}),
-cat(256,{
+s(16761,35996,{f=4,loc=47,lvl=28})}}),
+cat(256,{awp=30002,g={
 s(18022,37790,{f=7,loc=45,lvl=29}),
 s(18017,37785,{f=7,loc=45,lvl=28}),
 s(18011,37778,{f=6,loc=45,lvl=29}),
 s(17995,37762,{f=5,loc=45,lvl=27}),
 s(21428,44309,{f=4,loc=45,lvl=30}),
 s(17994,37761,{f=4,loc=45,lvl=29}),
-s(18006,37773,{f=6,loc=45,lvl=27})}),
-flt(56,{
+s(18006,37773,{f=6,loc=45,lvl=27})}}),
+flt(56,{awp=30002,g={
 i(44700,{coords={
 [114]={{40.2,19.2},{60.9,50.6},{66.6,40.7},{72.2,44.5},{79,41.8},{79.6,31.9}},
 [117]={{21.3,28.8}},
@@ -5949,7 +5949,7 @@ i(43011,{coords={
 i(43010,{coords={
 [114]={{82.2,31.3}},
 [115]={{51.3,23.9},{57.3,12.3}},
-[120]={{27.6,46.7},{47.1,54.9},{55.9,64.2}}},crs={25454,26293,26358,26359,26467,29390,30148,30291,30422}})})}}),
+[120]={{27.6,46.7},{47.1,54.9},{55.9,64.2}}},crs={25454,26293,26358,26359,26467,29390,30148,30291,30422}})}})}}),
 x(4,{awp=40003,g={
 flt(3,{
 s(26936,55315,{f=3,lvl=32}),
@@ -7315,8 +7315,8 @@ i(74844,{description="Drops from Jinyu, Sprites or Zandalari. Located in almost 
 i(76061),
 cu(395,{awp=40003,rwp=60002,u=2}),
 cu(396,{awp=40003,rwp=60002,u=2})})}}),
-x(6,{awp=60003,g={
-h(-51,{
+x(6,{awp=70003,g={
+h(-51,{awp=60003,g={
 s(57491,106440,{f=4,loc=45,lvl=35}),
 s(57492,106441,{f=4,loc=40,lvl=35}),
 s(57493,106442,{f=4,loc=44,lvl=35}),
@@ -7700,8 +7700,8 @@ s(57725,106674,{f=4,loc=46,lvl=39}),
 s(57726,106675,{f=4,loc=42,lvl=39}),
 s(57727,106676,{f=4,loc=47,lvl=39}),
 s(57728,106677,{f=4,loc=41,lvl=39}),
-s(57729,106678,{f=4,loc=43,lvl=39})}),
-h(-88,{
+s(57729,106678,{f=4,loc=43,lvl=39})}}),
+h(-88,{awp=60003,g={
 h(-94,{
 s(57356,106305,{f=7,loc=40,lvl=35}),
 s(67906,118857,{f=7,loc=40,lvl=37}),
@@ -7879,8 +7879,8 @@ i(118883,{f=53,lvl=39,spellID=176930}),
 i(118879,{f=53,lvl=38,spellID=176915}),
 i(118880,{f=53,lvl=40,spellID=177592}),
 i(118877,{f=53,lvl=35,spellID=176904}),
-i(118876,{f=53,lvl=40,spellID=177597})})}),
-h(-101,{
+i(118876,{f=53,lvl=40,spellID=177597})})}}),
+h(-101,{awp=60003,g={
 flt(21,{
 s(65404,116542,{f=21,lvl=37}),
 s(65455,116593,{f=21,lvl=39}),
@@ -8152,8 +8152,8 @@ s(65471,116609,{f=27,lvl=39}),
 s(65454,116592,{f=27,lvl=38}),
 s(65420,116558,{f=27,lvl=37}),
 s(65437,116575,{f=27,lvl=38}),
-s(65403,116541,{f=27,lvl=37})})}),
-flt(200,{
+s(65403,116541,{f=27,lvl=37})})}}),
+flt(200,{awp=60003,g={
 q(36239,{description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},providers={{"i",114984}},r=2,requireSkill=773}),
 q(36435,{description="This item can drop from any Draenor mob.",lvl=10,maps={525,535,539,542,543,550},providers={{"i",115593}},r=1,requireSkill=773}),
 i(116438,{b=1,lvl=10,requireSkill=202}),
@@ -8177,9 +8177,9 @@ i(111387,{b=1,description="This can drop from any Warlords of Draenor mob if you
 r(158765,{collectible=false,rank=9,requireSkill=185,rwp=80001,u=2}),
 r(264642,{awp=80001,requireSkill=185}),
 r(161002,{requireSkill=185,skillID=2543}),
-r(161001,{requireSkill=185,skillID=2543})}})})}}),
-x(7,{awp=70003,g={
-h(-88,{
+r(161001,{requireSkill=185,skillID=2543})}})}})}}),
+x(7,{awp=80001,g={
+h(-88,{awp=70003,g={
 flt(4,{
 s(68540,121390,{b=1,f=4,loc=43,lvl=40}),
 s(68536,121386,{b=1,f=4,loc=45,lvl=40}),
@@ -8284,8 +8284,8 @@ i(141584,{f=53,lvl=40,spellID=227388}),
 i(134379,{b=1,f=53,lvl=40}),
 i(134366,{b=1,f=53,lvl=40}),
 i(141586,{f=53,lvl=40,spellID=228141}),
-i(141585,{f=53,lvl=40,spellID=227868})})}),
-h(-101,{
+i(141585,{f=53,lvl=40,spellID=227868})})}}),
+h(-101,{awp=70003,g={
 s(68532,121382,{b=1,f=24,lvl=40}),
 s(76471,132921,{f=24,lvl=40}),
 s(68526,121376,{b=1,f=25,lvl=40}),
@@ -8306,13 +8306,13 @@ s(68487,121337,{f=31,lvl=40}),
 s(68483,121333,{f=23,lvl=40}),
 s(68491,121341,{f=28,lvl=40}),
 s(68528,121378,{b=1,f=32,lvl=40}),
-s(68525,121375,{b=1,f=23,lvl=40})}),
-flt(56,{
+s(68525,121375,{b=1,f=23,lvl=40})}}),
+flt(56,{awp=70003,g={
 i(151567,{awp=70300}),
 i(124437),
 i(124438),
-i(124439)}),
-flt(200,{
+i(124439)}}),
+flt(200,{awp=70003,g={
 prof(171,{
 r(188323,{b=1,itemID=127925,lvl=10,requireSkill=171,skillID=2479}),
 r(229217,{awp=70100,b=1,itemID=142119,lvl=10,requireSkill=171,skillID=2479})}),
@@ -8348,7 +8348,7 @@ r(186117,{itemID=138010,lvl=10,requireSkill=197,skillID=2534}),
 r(186110,{b=1,description="Drops from murlocs in any Broken Isles zone.",itemID=138003,lvl=10,requireSkill=197,skillID=2534}),
 r(186111,{itemID=138004,lvl=10,requireSkill=197,skillID=2534}),
 r(186107,{b=1,description="Drops from vrykul in any Broken Isles zone.",itemID=138000,lvl=10,requireSkill=197,skillID=2534}),
-r(186108,{itemID=138001,lvl=10,requireSkill=197,skillID=2534})})})}}),
+r(186108,{itemID=138001,lvl=10,requireSkill=197,skillID=2534})})}})}}),
 x(8,{awp=80001,g={
 h(-88,{
 flt(4,{
@@ -8957,7 +8957,7 @@ s(181402,197954,{b=1,f=8,lvl=60}),
 s(181877,199024,{f=21,lvl=60}),
 s(181897,199047,{f=34,lvl=60}),
 s(181890,199040,{f=23,lvl=60})}})}}),
-x(11,{
+x(11,{awp=110002,g={
 h(-88,{awp=110000,g={
 flt(4,{
 s(220459,224589,{awp=110002,f=4,loc=45,lvl=70}),
@@ -9031,7 +9031,7 @@ flt(3,{awp=110002,g={
 s(220491,224624,{f=3,lvl=70})}}),
 flt(52,{awp=110002,g={
 i(224592,{f=52,lvl=70})}})}}),
-h(-101,{awp=110002,g={
+h(-101,{
 s(220494,224627,{f=31,lvl=70}),
 s(220495,224628,{f=26,lvl=70}),
 s(220500,224633,{f=22,lvl=70}),
@@ -9048,13 +9048,13 @@ s(220502,224635,{f=8,lvl=70}),
 s(220506,224639,{f=21,lvl=70}),
 s(220492,224625,{f=29,lvl=70}),
 s(220505,224638,{f=35,lvl=70}),
-s(220499,224632,{f=20,lvl=70})}}),
-flt(50,{awp=110002,g={
-i(220376,{lvl=70})}}),
-flt(104,{awp=110002,g={
+s(220499,224632,{f=20,lvl=70})}),
+flt(50,{
+i(220376,{lvl=70})}),
+flt(104,{
 i(212493,{spellID=453108}),
-i(228228)}}),
-flt(56,{awp=110002,g={
+i(228228)}),
+flt(56,{
 i(223512),
 i(225567),
 i(225911),
@@ -9077,8 +9077,8 @@ i(221763),
 i(225566),
 i(224828),
 i(228231),
-i(228232)}}),
-flt(200,{awp=110002,g={
+i(228232)}),
+flt(200,{
 r(435391,{itemID=223093,requireSkill=755,skillID=2879}),
 r(435318,{itemID=223087,requireSkill=755,skillID=2879}),
 r(435319,{itemID=223088,requireSkill=755,skillID=2879}),
@@ -9088,8 +9088,8 @@ r(445354,{b=1,itemID=223123,requireSkill=333,skillID=2874}),
 r(445347,{b=1,itemID=223122,requireSkill=333,skillID=2874}),
 r(445399,{b=1,itemID=223121,requireSkill=333,skillID=2874}),
 r(444068,{itemID=223100,requireSkill=165,skillID=2880}),
-r(450245,{itemID=223043,requireSkill=164,skillID=2872})}})}),
-x(12,{
+r(450245,{itemID=223043,requireSkill=164,skillID=2872})})}}),
+x(12,{awp=120001,g={
 h(-88,{awp=120000,g={
 flt(3,{
 s(304103,266224,{f=3,lvl=78}),
@@ -9174,7 +9174,7 @@ i(258910,{f=52,lvl=80}),
 i(258909,{f=52,lvl=80})}}),
 flt(51,{awp=120001,g={
 i(258911,{f=51,lvl=80})}})}}),
-h(-101,{awp=120001,g={
+h(-101,{
 s(301779,258960,{f=1,lvl=80}),
 s(301778,258959,{f=26,lvl=80}),
 s(301764,258945,{f=21,lvl=80}),
@@ -9193,10 +9193,10 @@ s(301775,258956,{f=28,lvl=80}),
 s(301770,258951,{f=25,lvl=80}),
 s(301776,258957,{f=28,lvl=80}),
 s(301781,258962,{f=35,lvl=80}),
-s(301769,258950,{f=23,lvl=80})}}),
-flt(50,{awp=120001,g={
-i(264475,{lvl=80})}}),
-flt(56,{awp=120001,g={
+s(301769,258950,{f=23,lvl=80})}),
+flt(50,{
+i(264475,{lvl=80})}),
+flt(56,{
 i(275283,{awp=120100}),
 i(245856,{b=1,spellID=1253221}),
 i(245830,{b=1,spellID=1253219}),
@@ -9252,7 +9252,7 @@ i(245840,{b=1,spellID=1253220}),
 i(245857,{b=1,spellID=1253221}),
 i(245831,{b=1,spellID=1253219}),
 i(245848,{b=1,spellID=1253222}),
-i(245839,{b=1,spellID=1253220})}})}),
+i(245839,{b=1,spellID=1253220})})}}),
 h(-215,{awp=100005,sharedDescription="This item is currently in a temporary group of unsorted items under World Drops. It will be sorted soon.\nYou don't need to report this.",g={
 h(-88,{
 flt(3),
@@ -9307,21 +9307,21 @@ s(45574,88150,{f=25,lvl=35}),
 s(45573,88149,{f=20,lvl=35})}}),
 i(16883)}}),
 ah(921,{description="A Rogue can use their Pick Pocket skill to steal the following items from mobs of a specific area.",type="s",g={
-x(1,{
+x(1,{awp=10100,g={
 i(6150,{description="Can be pickpocketed from Classic humanoids."}),
-i(5373,{description="While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!"})}),
-x(3,{
+i(5373,{description="While there's no evidence to suggest that having this item will make the thing you want drop for you, Crieve totally got his second binding after only 97 weeks of Baron Geddon with this bad boy in his bags. Without it, it'd probably have been more than that!"})}}),
+x(3,{awp=30003,g={
 i(37674,{coords={
 [115]={{47.8,49.4}}},crs={27539},description="If only they would have read this."}),
 flt(55,{
 i(40202,{f=55,lvl=27,spellID=45548})}),
-flt(102,{awp=30002,g={
-toy(36863,{description="Can be pickpocketed from Northrend humanoids."}),
-toy(36862,{description="Can be pickpocketed from Northrend humanoids."})}})}),
-x(4,{awp=40001,g={
 flt(102,{
-toy(63269,{description="Can be pickpocketed from Cataclysm humanoids."})})}}),
-x(6,{
+toy(36863,{awp=30002,description="Can be pickpocketed from Northrend humanoids."}),
+toy(36862,{awp=30002,description="Can be pickpocketed from Northrend humanoids."})})}}),
+x(4,{awp=40003,g={
+flt(102,{
+toy(63269,{awp=40001,description="Can be pickpocketed from Cataclysm humanoids."})})}}),
+x(6,{awp=70003,g={
 q(39107,{c={4},isWeekly=1,lvl=10,qgs={83006}}),
 i(113005,{b=1}),
 i(113006,{b=1}),
@@ -9338,8 +9338,8 @@ i(112995,{b=1}),
 q(37285,{c={4},isWeekly=1,lvl=10,qgs={83006},repeatable=1}),
 q(37284,{c={4},isWeekly=1,lvl=10,qgs={83006}}),
 i(113000,{b=1}),
-i(113001,{b=1})}),
-x(7,{
+i(113001,{b=1})}}),
+x(7,{awp=80001,g={
 i(151146,{b=1,spellID=245616}),
 i(151150,{b=1,spellID=245616}),
 i(151148,{b=1,spellID=245616}),
@@ -9360,5 +9360,5 @@ i(151164,{b=1,spellID=245616}),
 i(151152,{b=1,spellID=245616}),
 i(151161,{b=1,spellID=248017}),
 i(151151,{b=1,spellID=245616}),
-i(151165,{b=1,spellID=245616})})}})}})
+i(151165,{b=1,spellID=245616})}})}})}})
 end)

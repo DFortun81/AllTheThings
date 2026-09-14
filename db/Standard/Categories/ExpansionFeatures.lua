@@ -4,8 +4,8 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,artifact,aze,cd,cl,cq,crit,cs,cu,d,de,e,en,exp,faction,flt,follower,fp,gb,gm,gt,h,heir,hqt,i,ill,m,mm,mnt,n,o,p,prof,q,r,rfl,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateAzeriteEssence,_.CreateConduit,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateDecor,_.CreateEncounter,_.CreateEnsemble,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateGarrisonMission,_.CreateGarrisonTalent,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateRuneforgeLegendary,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.ExpansionFeatures=
 h(-735,{SortPriority=35,g={
-x(2,{awp=20100,g={
-ah(1015,{description="The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",icon=132250,maps={104},type="fa",g={
+x(2,{awp=20010,g={
+ah(1015,{awp=20100,description="The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",icon=132250,maps={104},type="fa",g={
 h(-12,{
 ach(898,{minReputation={1015,42000}})}),
 h(-31,{
@@ -160,8 +160,8 @@ i(32621,{b=1,coords={
 i(32724,{b=1,coords={
 [104]={{69.4,86}}},crs={23286},sym={{"select","itemID",32506,32464,32468,32470}},g={
 i(32726,{b=1,lvl=10})}})})}})}}),
-x(3,{awp=30200,g={
-h(-413,{maps={118,170},g={
+x(3,{awp=30003,g={
+h(-413,{awp=30200,maps={118,170},g={
 h(-12,{
 ach(3676,{minReputation={1094,42000},r=2,sourceQuests={13702,13732,13733,13734,13735}}),
 ach(2756,{sourceQuests={13667,13668}}),
@@ -1370,7 +1370,7 @@ s(22466,46818,{b=1,cost={{"c",241,50}},f=9,minReputation={1124,42000},r=1}),
 mnt(66088,{b=1,cost={{"c",241,150}},itemID=46814,lvl=10}),
 mnt(66091,{b=1,cost={{"c",241,100}},itemID=46816,lvl=10,r=1}),
 p(229,{cost={{"c",241,40}},itemID=46821,npcID=34724,spellID=66096})}})})}})}}),
-x(4,{
+x(4,{awp=40003,g={
 h(-414,{awp=40200,g={
 q(29328,{coords={
 [204]={{69.8,34.2}}},lvl=35,qgs={53652},sourceQuests={29336}}),
@@ -2057,7 +2057,7 @@ q(29237,{coords={
 q(29233,{lvl=35,qgs={52234},r=1,sourceQuests={29232}}),
 q(29124,{coords={
 [50]={{76,66.6}}},lvl=35,qgs={52234},r=2,sourceQuests={29121}})})}}),
-m(245,{awp=40003,description="Tol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.\n\nDue to how sharding works, you will usually only get the same eight daily quests from the camp in Tol Barad Peninsula. The trick for having a chance at getting offered some of the other quests in rotation is to have zoned into Tol Barad Peninsula a few minutes before the daily reset occurs. Then you can wait for the daily reset, or leave the zone for up to 15 minutes before returning. Protip: Do the same with Warmode on, which zones you to a different shard. Quests picked up in Warmode can be completed and turned in outside Warmode.",icon=409548,petBattleLvl=23,lvl=30,g={
+m(245,{description="Tol Barad Peninsula is the northernmost region of the island of Tol Barad and is a major daily quest hub in World of Warcraft: Cataclysm.\n\nDue to how sharding works, you will usually only get the same eight daily quests from the camp in Tol Barad Peninsula. The trick for having a chance at getting offered some of the other quests in rotation is to have zoned into Tol Barad Peninsula a few minutes before the daily reset occurs. Then you can wait for the daily reset, or leave the zone for up to 15 minutes before returning. Protip: Do the same with Warmode on, which zones you to a different shard. Quests picked up in Warmode can be completed and turned in outside Warmode.",icon=409548,petBattleLvl=23,lvl=30,g={
 h(-12,{
 ach(5375,{minReputation={1177,42000},r=2}),
 ach(4874),
@@ -2321,8 +2321,8 @@ i(62471,{b=1,cost={{"c",391,125}},f=53,lvl=32,minReputation={1177,42000},spellID
 i(62470,{b=1,cost={{"c",391,125}},f=53,lvl=32,minReputation={1177,42000},spellID=91048}),
 i(62468,{b=1,cost={{"c",391,125}},f=53,lvl=32,minReputation={1177,42000},spellID=92123})}})}),
 h(-63,{
-p(278,{b=1,crs={47676},itemID=64403,npcID=48641,spellID=90637})})}})}),
-x(5,{
+p(278,{b=1,crs={47676},itemID=64403,npcID=48641,spellID=90637})})}})}}),
+x(5,{awp=50004,g={
 h(-416,{awp=50300,description="During 5.3 a big battle occured in Barrens.",maps={1,10,390},rwp=50400,u=2,g={
 h(-12,{u=2,g={
 ach(8307,{r=1,u=2,g={
@@ -3059,7 +3059,7 @@ s(48598,93268,{b=1,f=5,loc=47,lvl=35,minReputation={1375,21000},r=1}),
 s(48599,93269,{b=1,f=5,loc=47,lvl=35,minReputation={1375,21000},r=1}),
 i(93253,{b=1,f=53,lvl=35,minReputation={1375,21000},r=1,spellID=136086}),
 mnt(135418,{b=1,cost=20000000,itemID=93169,lvl=10,minReputation={1375,42000},r=1})}})})}})),
-h(-417,{awp=50004,isRaid=1,maps={433},rwp=60002,u=2,g={
+h(-417,{isRaid=1,maps={433},rwp=60002,u=2,g={
 q(31488,{c={1,2,3,5,6,7,8,9,10,11,12,13},coords={
 [391]={{59.6,75.8}},
 [393]={{36.6,76.6}}},qgs={64047,64144},u=2}),
@@ -3171,7 +3171,7 @@ s(54618,102247,{awp=50400,b=1,cost={{"i",102457,1},{"i",98149,1}},f=3,lvl=35,spe
 s(54616,102245,{awp=50400,b=1,cost={{"i",102457,1},{"i",98335,1}},f=3,lvl=35,spellID=146193,u=38}),
 s(54621,102250,{awp=50400,b=1,cost={{"i",102457,1},{"i",98146,1}},f=3,lvl=35,spellID=146193,u=38}),
 s(54617,102246,{awp=50400,b=1,cost={{"i",102457,1},{"i",98150,1}},f=3,lvl=35,spellID=146197,u=38})}}),
-ah(1271,{awp=50004,description="Gain reputation with this faction by training a cloud serpent hatchling, and eventually you will earn either an Azure, Golden, or Jade Cloud Serpent mount. More rewards are unlocked by reaching Revered and Exalted with the faction, including a toy, more mounts, and Jewelcrafting designs.\n\nThe quest chain begins with |cFFefc400Wild Things|r.\n\n",icon=646324,maps={371},type="fa",g={
+ah(1271,{description="Gain reputation with this faction by training a cloud serpent hatchling, and eventually you will earn either an Azure, Golden, or Jade Cloud Serpent mount. More rewards are unlocked by reaching Revered and Exalted with the faction, including a toy, more mounts, and Jewelcrafting designs.\n\nThe quest chain begins with |cFFefc400Wild Things|r.\n\n",icon=646324,maps={371},type="fa",g={
 h(-12,{
 ach(6550)}),
 flt(101,{description="The following pets require Exalted with Order of the Cloud Serpent and can be found around The Arboretum.",minReputation={1271,42000},pb=1,g={
@@ -3450,7 +3450,7 @@ s(46587,89796,{b=1,f=9,minReputation={1271,42000}}),
 mnt(123992,{b=1,cost=30000000,itemID=85430,lvl=10,minReputation={1271,42000}}),
 mnt(123993,{b=1,cost=30000000,itemID=85429,lvl=10,minReputation={1271,42000}}),
 mnt(113199,{b=1,cost=30000000,itemID=79802,lvl=10,minReputation={1271,42000}})}})})}}),
-h(-418,{awp=50004,c={10},description="This area phases once you have begun the Monk Class Hall Campaign and may not be accessible again until you complete it.",lore="The Peak of Serenity is a hidden monastery and sanctuary located high in the north-central reaches of Pandaria's Kun-Lai Summit. It served primarily as a training ground and place of refuge for monks, and was easily accessible to them through Zen Pilgrimage. In this way, it served a very similar function for monks as Moonglade did for druids and Acherus: The Ebon Hold did for death knights.",maps={379},g={
+h(-418,{c={10},description="This area phases once you have begun the Monk Class Hall Campaign and may not be accessible again until you complete it.",lore="The Peak of Serenity is a hidden monastery and sanctuary located high in the north-central reaches of Pandaria's Kun-Lai Summit. It served primarily as a training ground and place of refuge for monks, and was easily accessible to them through Zen Pilgrimage. In this way, it served a very similar function for monks as Moonglade did for druids and Acherus: The Ebon Hold did for death knights.",maps={379},g={
 h(-45,{
 q(31834,{coords={
 [379]={{48.6,42.8}}},lvl=10,qgs={66260},sourceQuests={31856},g={
@@ -3568,7 +3568,7 @@ s(46445,89575,{b=1,c={10},f=34,lvl=30})}}),
 n(64978,{coords={
 [379]={{45.2,43.2}}},g={
 i(232491,{awp=110005,b=1,c={10},f=111,lvl=10,spellID=470696})}})})}}),
-h(-419,{awp=50004,maps={480},g={
+h(-419,{maps={480},g={
 h(-12,{
 ach(8507,{awp=50400,rwp=60002,u=2,g={
 title(215)}}),
@@ -3592,7 +3592,7 @@ ach(8497,{awp=50400,rwp=60002,u=2}),
 ach(8492,{awp=50400,rwp=60002,u=2}),
 ach(8487,{awp=50400,rwp=60002,u=2}),
 ach(8697,{awp=50400,rwp=60002,u=2})})}}),
-h(-420,{awp=50004,crs={78709},g={
+h(-420,{crs={78709},g={
 h(-12,{
 ach(7385,{
 toy(87528,{b=1,lvl=10})}),
@@ -4184,7 +4184,7 @@ i(98134,{awp=50300,b=1,rwp=90001,spellID=142397,sym={{"select","itemID",98546},{
 flt(110,{
 title(224,{collectible=false}),
 title(226,{collectible=false})})}}),
-ah(1302,{awp=50004,description="The Anglers are a group of Pandaren fishermen that hope to feed their people and grow their knowledge of fishing.",icon=643874,maps={418},type="fa",g={
+ah(1302,{description="The Anglers are a group of Pandaren fishermen that hope to feed their people and grow their knowledge of fishing.",icon=643874,maps={418},type="fa",g={
 h(-12,{
 ach(7274,{
 toy(86596,{b=1})}),
@@ -4291,7 +4291,7 @@ r(271990,{awp=80001,requireSkill=356}),
 r(7738,{requireSkill=356}),
 toy(86596,{b=1,minReputation={1358,6}}),
 s(45953,88710,{f=2,loc=40,minReputation={1358,6},spellID=128587})}})})}}),
-ah(1341,{awp=50004,description="Each day, the August Celestials require your aid at one of their temples. Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",icon=645203,type="fa",g={
+ah(1341,{description="Each day, the August Celestials require your aid at one of their temples. Speak to the representative in your faction's Vale of Eternal Blossoms shrine to find out where your help is needed (|cff3f48ccSage Whiteheart for Alliance|r and |cff880015Sage Lotusbloom for Horde|r).\n\nThe dailies will be in one of these locations:\nJade Forest - Temple of the Jade Serpent\nKrasarang Wilds - Cradle of Chi-Ji\nKun-Lai Summit - Temple of the White Tiger\nTownlong Steppes - Niuzao Temple\n\n",icon=645203,type="fa",g={
 h(-12,{
 ach(7287,{maps={418},sourceQuests={30739}}),
 ach(6543)}),
@@ -4561,7 +4561,7 @@ i(93224,{b=2,f=55,minReputation={1341,21000},spellID=135716}),
 s(46590,89799,{b=1,f=9,minReputation={1341,42000}}),
 r(125556,{b=1,itemID=86377,minReputation={1341,42000},requireSkill=197,skillID=2536}),
 mnt(129918,{b=1,cost=100000000,itemID=89304,lvl=10,minReputation={1341,42000}})}})})}}),
-ah(1269,{awp=50004,description="The Golden Lotus are a mysterious society of pandaren who are guardians of the Vale of Eternal Blossoms. Members of the Golden Lotus are handpicked by the August Celestials to help them keep an eye on the vale, and the pandaren see it as a huge honor to be chosen as a member of the sacred order.",icon=645218,maps={390,395,396},type="fa",g={
+ah(1269,{description="The Golden Lotus are a mysterious society of pandaren who are guardians of the Vale of Eternal Blossoms. Members of the Golden Lotus are handpicked by the August Celestials to help them keep an eye on the vale, and the pandaren see it as a huge honor to be chosen as a member of the sacred order.",icon=645218,maps={390,395,396},type="fa",g={
 h(-12,{
 ach(7323,{coords={
 [390]={{24.4,28}}},providers={{"n",63447},{"n",65170}}}),
@@ -5015,7 +5015,7 @@ mnt(127176,{b=1,cost=25000000,itemID=87782,lvl=10,minReputation={1269,42000}}),
 mnt(127177,{b=1,cost=15000000,itemID=87783,lvl=10,minReputation={1269,42000}})}})}),
 h(-63,{
 i(103624,{awp=50400,b=1,crs={58474,58768,58769,58771,58778,58817,58949,62880,62881,63101,63240,63509,63691,63695,63977,63978},description="Contains a number of Pandarian crafting reagents, herbs, and ore."})})}}),
-ah(1345,{awp=50004,description="The Lorewalkers are a pandaren faction bent on exploring the world, finding stories, artifacts, and relics to fill out their libraries.",icon=645218,maps={390},type="fa",g={
+ah(1345,{description="The Lorewalkers are a pandaren faction bent on exploring the world, finding stories, artifacts, and relics to fill out their libraries.",icon=645218,maps={390},type="fa",g={
 h(-12,{
 ach(6856),
 ach(6716),
@@ -5123,7 +5123,7 @@ i(87548,{b=1,minReputation={1345,42000},spellID=126956}),
 i(87549,{b=1,minReputation={1345,42000},spellID=126957}),
 s(46586,89795,{b=1,f=9,minReputation={1345,42000}}),
 i(104198,{b=1,cost={{"i",87399,2}},minReputation={1345,42000}})}})})}}),
-ah(1272,{awp=50004,description="The Tillers are a group of pandaren farmers who harvest and produce crops to feed their people. They were seemingly founded by a man only referred to as \"the Tiller\".",icon=645198,maps={376},type="fa",g={
+ah(1272,{description="The Tillers are a group of pandaren farmers who harvest and produce crops to feed their people. They were seemingly founded by a man only referred to as \"the Tiller\".",icon=645198,maps={376},type="fa",g={
 h(-12,{
 ach(6551,{sym={{"partial_achievement",6552}}}),
 ach(6552),
@@ -5976,8 +5976,8 @@ crit(22942,{achID=8078})}),
 n(69769,{coords={
 [418]={{38.8,67.6}}},g={
 mnt(138425,{b=1,itemID=94229,lvl=10}),
-crit(22732,{achID=8078})}})}})}),
-x(6,{
+crit(22732,{achID=8078})}})}})}}),
+x(6,{awp=70003,g={
 h(-419,{awp=60002,maps={480},g={
 h(-12,{
 ach(9572),
@@ -11002,8 +11002,8 @@ i(118766,{b=1,f=51,lvl=35}),
 i(118776,{b=1,f=53,lvl=35,spellID=165825}),
 s(66660,118771,{b=1,f=3,lvl=35})}})}),
 h(-63,{
-p(1563,{description="Must be in the Iron Horde Invasion version of Blasted Lands. Drops from any Iron Horde enemy.",itemID=118675,npcID=7546,spellID=10699})})}})}),
-x(7,{
+p(1563,{description="Must be in the Iron Horde Invasion version of Blasted Lands. Drops from any Iron Horde enemy.",itemID=118675,npcID=7546,spellID=10699})})}})}}),
+x(7,{awp=80001,g={
 h(-214,{awp=70003,description="\nPressing |cFFFFD700CTRL + Left Click|r will allow you to preview the appropriate skin and tint.\n\n",g={
 cl(1,{
 ah(128910,{type="i",g={
@@ -18268,22 +18268,22 @@ n(103325,{c={3},coords={
 [739]={{58.9,50.1}}},g={
 s(4161,11304,{c={3},f=32,isLimited=1,lvl=7})}})}})}})}}),
 h(-139,{description="Complete 4 Legion Invasion World Quests, then complete the Scenario in the respective zone",isWorldQuest=1,maps={619,630,634,641,650,696,865,866,1642},poiIDs={5175,5177,5178,5210,5270,5271,5272,5273},questID=47063,g={
-h(-12,{awp=70000,g={
+h(-12,{
 ach(11544),
-ach(11240)}}),
+ach(11240)}),
 h(-45,{
 q(46205,{coords={
 [630]={{55.1,67.4}}},lvl=10,qgs={117774},repeatable=1,sourceQuests={45795}}),
-q(45838,{awp=70000,lvl=10,repeatable=1,g={
+q(45838,{lvl=10,repeatable=1,g={
 hqt(47193,{
 crit(36546,{achID=11544,id=1})})}}),
-q(45840,{awp=70000,lvl=10,repeatable=1,g={
+q(45840,{lvl=10,repeatable=1,g={
 hqt(47194,{
 crit(36547,{achID=11544,id=2})})}}),
-q(45839,{awp=70000,lvl=10,repeatable=1,g={
+q(45839,{lvl=10,repeatable=1,g={
 hqt(47195,{
 crit(36548,{achID=11544,id=3})})}}),
-q(45812,{awp=70000,lvl=10,repeatable=1,g={
+q(45812,{lvl=10,repeatable=1,g={
 hqt(47196,{
 crit(36549,{achID=11544,id=4})})}}),
 q(46199,{coords={
@@ -18706,63 +18706,63 @@ h(-63,{
 i(151368,{crs={124094,124100},spellID=246551}),
 i(151369,{crs={124095,124101},spellID=246554}),
 h(-216,{
-i(151370,{b=1,spellID=246556})})})})}})}),
-x(8,{
+i(151370,{b=1,spellID=246556})})})})}})}}),
+x(8,{awp=80001,g={
 h(-12,{
 ach(40953,{awp=110007,g={
 mnt(473472,{b=1,itemID=235515,lvl=10}),
 de(3837,{awp=110207,itemID=247667,spellID=1245024}),
 de(3838,{awp=110207,itemID=247668,spellID=1245026})}}),
-ach(13036,{awp=80000,g={
-crit(71375,{achID=41202,awp=110007,id=6})}}),
-ach(12573,{awp=80000,pvp=1,g={
+ach(13036,{
+crit(71375,{achID=41202,awp=110007,id=6})}),
+ach(12573,{pvp=1,g={
 crit(41008,{achID=12573,pvp=1}),
 crit(41009,{achID=12573,id=2,providers={{"s",278210}},pvp=1}),
 crit(41010,{achID=12573,pvp=1}),
 crit(41011,{achID=12573,id=4,providers={{"s",277923}},pvp=1}),
 crit(40599,{achID=12604,id=1,pvp=1,r=1}),
 crit(40599,{achID=12605,id=1,pvp=1,r=2})}}),
-ach(12989,{awp=80000,g={
-crit(45159,{achID=13250,id=1})}}),
-ach(13250,{awp=80000,g={
-mnt(290328,{b=1,itemID=169162,lvl=10})}}),
-ach(13701,{awp=80000}),
-ach(13702,{awp=80000}),
-ach(13703,{awp=80000}),
-ach(12571,{awp=80000,pvp=1,g={
+ach(12989,{
+crit(45159,{achID=13250,id=1})}),
+ach(13250,{
+mnt(290328,{b=1,itemID=169162,lvl=10})}),
+ach(13701),
+ach(13702),
+ach(13703),
+ach(12571,{pvp=1,g={
 crit(40600,{achID=12604,id=2,pvp=1,r=1}),
 crit(40600,{achID=12605,id=2,pvp=1,r=2})}}),
-ach(12605,{awp=80000,pvp=1,r=2,g={
+ach(12605,{pvp=1,r=2,g={
 mnt(279454,{b=1,itemID=163577,lvl=10,pvp=1}),
 title(377,{pvp=1})}}),
-ach(12604,{awp=80000,pvp=1,r=1,g={
+ach(12604,{pvp=1,r=1,g={
 mnt(279454,{b=1,itemID=163577,lvl=10,pvp=1}),
 title(377,{pvp=1})}}),
 ach(14183,{awp=80300,providers={{"i",163042}},u=9}),
 ach(41209,{awp=110007,g={
 crit(71298,{achID=40953,id=17})}}),
-ach(13029,{awp=80000,g={
+ach(13029,{
 crit(41575,{achID=13029,coords={
 [863]={{32.3,35.3}}},cost={{"i",163563,1}},description="Buy Primitive Watermelon from Blind Wunja inside the cave at 34.6, 54.9 and feed it to Goramor.",id=1,providers={{"n",143644},{"n",143683}}}),
 crit(41578,{achID=13029,coords={
 [864]={{62,9.2}}},cost={{"i",163567,1}},description="Buy Snake on a Stick from Rikati at 40.4, 55.4 and feed it to Ol' Stompy.",id=2,providers={{"n",143332},{"n",143684}}}),
 crit(41580,{achID=13029,coords={
 [862]={{64,39.2}}},cost={{"i",163564,1}},description="Buy Extra-Dry Fruitcake from Golkada at 71.2, 29.6 and feed it to Irritable Maka'fon.",id=3,providers={{"n",130922},{"n",143685}}}),
-crit(71376,{achID=41202,awp=110007,id=7})}}),
-ach(13623,{awp=80000,pvp=1,g={
+crit(71376,{achID=41202,awp=110007,id=7})}),
+ach(13623,{pvp=1,g={
 crit(45752,{achID=13623,cost={{"i",168802,25}},id=1,pvp=1})}}),
-ach(13402,{awp=80000,pvp=1,r=2}),
-ach(13403,{awp=80000,pvp=1,r=1}),
-ach(13387,{awp=80000,pvp=1,r=2}),
-ach(13388,{awp=80000,pvp=1,r=1}),
-ach(13283,{awp=80000,r=2,g={
+ach(13402,{pvp=1,r=2}),
+ach(13403,{pvp=1,r=1}),
+ach(13387,{pvp=1,r=2}),
+ach(13388,{pvp=1,r=1}),
+ach(13283,{r=2,g={
 crit(43637,{achID=13283,id=3,questID=54318,r=2}),
 crit(43680,{achID=13283,id=2,questID=54317,r=2}),
 crit(43681,{achID=13283,id=4,questID=54315,r=2}),
 crit(43682,{achID=13283,id=5,questID=54325,r=2}),
 crit(43683,{achID=13283,id=6,questID=54324,r=2}),
 crit(71347,{achID=40957,awp=110007,id=7})}}),
-ach(13284,{awp=80000,r=1,g={
+ach(13284,{r=1,g={
 de(937,{awp=110207,itemID=245476,spellID=1238615}),
 crit(43642,{achID=13284,id=1,questID=54314,r=1}),
 crit(43684,{achID=13284,id=2,questID=54326,r=1}),
@@ -18771,10 +18771,10 @@ crit(43686,{achID=13284,id=4,questID=54323,r=1}),
 crit(43687,{achID=13284,id=5,questID=54319,r=1}),
 crit(43688,{achID=13284,id=6,questID=54316,r=1}),
 crit(71346,{achID=40957,awp=110007,id=7})}}),
-ach(12738,{awp=80000,maps={1161,1165},providers={{"s",265742}}}),
-ach(12739,{awp=80000,maps={1161,1165},providers={{"s",265742}}}),
-ach(12740,{awp=80000,maps={1161,1165},providers={{"s",265742}}}),
-ach(12482,{awp=80000,description="Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",g={
+ach(12738,{maps={1161,1165},providers={{"s",265742}}}),
+ach(12739,{maps={1161,1165},providers={{"s",265742}}}),
+ach(12740,{maps={1161,1165},providers={{"s",265742}}}),
+ach(12482,{description="Make sure to loot the cache Jani leaves behind as you fulfill each requirement; that's what awards the actual achievement criteria.",g={
 crit(40037,{achID=12482,coords={
 [862]={{71.6,41.2}}},id=1,providers={{"i",156963}},questID=50308}),
 crit(40041,{achID=12482,coords={
@@ -18795,7 +18795,7 @@ crit(71374,{achID=41202,awp=110007,id=5})}}),
 ach(40956,{awp=110007,g={
 mnt(303767),
 crit(70199,{achID=40953,id=7})}}),
-ah(53075,{awp=80000,maps={862,1161},pvp=1,type="q",g={
+ah(53075,{maps={862,1161},pvp=1,type="q",g={
 ach(12856,{pvp=1}),
 ach(12857,{pvp=1}),
 ach(12858,{pvp=1}),
@@ -18822,25 +18822,25 @@ crit(43156,{achID=12862,c_disp={1},pvp=1}),
 crit(41094,{achID=12861,id=3,pvp=1})}}),
 ach(12861,{pvp=1,g={
 title(383,{pvp=1})}})}}),
-ach(13027,{awp=80000}),
-ach(13057,{awp=80000,g={
+ach(13027),
+ach(13057,{
 crit(41541,{achID=13057,id=1,providers={{"i",163714}}}),
 crit(41542,{achID=13057,id=2,providers={{"i",163715}}}),
 crit(41543,{achID=13057,id=3,providers={{"i",163716}}}),
 crit(41544,{achID=13057,id=4,providers={{"i",163717}}}),
 crit(41545,{achID=13057,id=5,providers={{"i",163718}}}),
 crit(41546,{achID=13057,id=6,providers={{"i",163719}}}),
-crit(71351,{achID=41205,awp=110007,id=4})}}),
-ach(13317,{awp=80000,maps={862,863,864,895,896,942},pvp=1,g={
+crit(71351,{achID=41205,awp=110007,id=4})}),
+ach(13317,{maps={862,863,864,895,896,942},pvp=1,g={
 crit(43931,{achID=13317,id=1,pvp=1,questID=54715}),
 crit(43932,{achID=13317,id=2,pvp=1,questID=54717}),
 crit(43933,{achID=13317,id=3,pvp=1,questID=54716}),
 crit(43934,{achID=13317,id=4,pvp=1,questID=54714}),
 crit(43935,{achID=13317,id=5,pvp=1,questID=54718}),
 crit(43936,{achID=13317,id=6,pvp=1,questID=54720})}}),
-ach(12872,{awp=80000,g={
-crit(71322,{achID=40957,awp=110007,id=3})}}),
-ach(13061,{awp=80000,g={
+ach(12872,{
+crit(71322,{achID=40957,awp=110007,id=3})}),
+ach(13061,{
 crit(41396,{achID=13061,id=1,providers={{"i",160484}}}),
 crit(41397,{achID=13061,id=2,providers={{"i",163103}}}),
 crit(41398,{achID=13061,id=3,providers={{"i",163639}}}),
@@ -18863,8 +18863,8 @@ crit(41414,{achID=13061,id=19,providers={{"i",163094}}}),
 crit(41415,{achID=13061,id=20,providers={{"i",163549}}}),
 crit(41416,{achID=13061,id=21,providers={{"i",163098}}}),
 crit(41417,{achID=13061,id=22,providers={{"i",159846}}}),
-crit(40567,{achID=41205,awp=110007,id=5})}}),
-ach(14730,{awp=80000,g={
+crit(40567,{achID=41205,awp=110007,id=5})}),
+ach(14730,{
 crit(50237,{achID=14730,coords={
 [942]={{25.83,70.26}}},id=2,providers={{"n",143220},{"n",143358}}}),
 crit(50238,{achID=14730,coords={
@@ -18885,74 +18885,74 @@ crit(50246,{achID=14730,coords={
 [1165]={{43.53,36.77}}},id=11,providers={{"n",130441}}}),
 crit(50247,{achID=14730,coords={
 [864]={{52.75,83.73}}},id=12,providers={{"n",134700}}}),
-crit(71299,{achID=40953,awp=110007,id=18})}}),
+crit(71299,{achID=40953,awp=110007,id=18})}),
 ach(40955,{awp=110007,g={
 crit(70200,{achID=40953,id=8})}}),
-ach(12572,{awp=80000,providers={{"s",271400}},pvp=1,g={
+ach(12572,{providers={{"s",271400}},pvp=1,g={
 crit(40601,{achID=12604,id=3,pvp=1,r=1}),
 crit(40601,{achID=12605,id=3,pvp=1,r=2})}})}),
 h(-56,{
 o(297495,{coords={
 [864]={{42.2,62.1}}},g={
 i(162628,{b=1}),
-crit(41564,{achID=13036,awp=80000,id=1})}}),
+crit(41564,{achID=13036,id=1})}}),
 o(297491,{coords={
 [863]={{39.1,38.6}}},g={
 i(163330,{b=1}),
-crit(41565,{achID=13036,awp=80000,id=2})}}),
+crit(41565,{achID=13036,id=2})}}),
 o(297521,{coords={
 [862]={{51.7,28.3}}},g={
 i(162657,{b=1}),
-crit(41566,{achID=13036,awp=80000,id=3})}}),
+crit(41566,{achID=13036,id=3})}}),
 o(297074,{coords={
 [862]={{75.5,67.6}}},g={
 i(163170,{b=1}),
-crit(41567,{achID=13036,awp=80000,id=4})}}),
+crit(41567,{achID=13036,id=4})}}),
 o(297522,{coords={
 [863]={{39.5,54.6}}},g={
 i(163199,{b=1}),
-crit(41568,{achID=13036,awp=80000,id=5})}}),
+crit(41568,{achID=13036,id=5})}}),
 o(297528,{coords={
 [862]={{48.5,54.6}}},g={
 i(162656,{b=1}),
-crit(41569,{achID=13036,awp=80000,id=6})}}),
+crit(41569,{achID=13036,id=6})}}),
 o(297494,{coords={
 [864]={{27.7,62.1}}},g={
 i(163198,{b=1}),
-crit(41570,{achID=13036,awp=80000,id=7})}}),
+crit(41570,{achID=13036,id=7})}}),
 o(297489,{coords={
 [863]={{58.9,48.6}}},g={
 i(163331,{b=1}),
-crit(41571,{achID=13036,awp=80000,id=8})}}),
+crit(41571,{achID=13036,id=8})}}),
 o(297524,{coords={
 [862]={{49,41.3}}},g={
 i(162658,{b=1}),
-crit(41572,{achID=13036,awp=80000,id=9})}}),
+crit(41572,{achID=13036,id=9})}}),
 o(297490,{coords={
 [862]={{43.8,76.7}}},g={
 i(163332,{b=1}),
-crit(41573,{achID=13036,awp=80000,id=10})}}),
+crit(41573,{achID=13036,id=10})}}),
 o(297485,{coords={
 [864]={{49.5,24.4}}},g={
 i(163333,{b=1}),
-crit(41574,{achID=13036,awp=80000,id=11})}}),
+crit(41574,{achID=13036,id=11})}}),
 o(297493,{coords={
 [862]={{47.7,28.9}}},g={
 i(163221,{b=1}),
-crit(41576,{achID=13036,awp=80000,id=12})}}),
+crit(41576,{achID=13036,id=12})}}),
 o(297885,{coords={
 [862]={{67.3,17.6}}},g={
 i(163739,{b=1}),
-crit(41577,{achID=13036,awp=80000,id=13})}}),
+crit(41577,{achID=13036,id=13})}}),
 o(297523,{coords={
 [863]={{72.8,7.6}}},g={
 i(163197,{b=1}),
-crit(41579,{achID=13036,awp=80000,id=14})}}),
+crit(41579,{achID=13036,id=14})}}),
 o(297700,{coords={
 [1165]={{53.2,9.3}}},g={
 i(163682,{b=1}),
-crit(41581,{achID=13036,awp=80000,id=15})}})}),
-h(-142,{awp=80001,crs={143967,143968},description="Island expeditions are a 3-player scenario. Each faction will sail across the waters where they will harvest and steal any Azerite they can find from these islands. Goblins and gnomes have been able to use their new technology to find islands which contain possible amounts of Azerite and will be providing maps for each of their respective factions. Ships and queueing will take place in Dazar'alor for Horde and Boralus for Alliance. These are unlocked Account-Wide once you have finished the introduction questline on one character.",maps={981,1032,1033,1034,1035,1036,1037,1336,1337,1501,1502},g={
+crit(41581,{achID=13036,id=15})}})}),
+h(-142,{crs={143967,143968},description="Island expeditions are a 3-player scenario. Each faction will sail across the waters where they will harvest and steal any Azerite they can find from these islands. Goblins and gnomes have been able to use their new technology to find islands which contain possible amounts of Azerite and will be providing maps for each of their respective factions. Ships and queueing will take place in Dazar'alor for Horde and Boralus for Alliance. These are unlocked Account-Wide once you have finished the introduction questline on one character.",maps={981,1032,1033,1034,1035,1036,1037,1336,1337,1501,1502},g={
 h(-12,{
 ach(13142),
 ach(13134,{pvp=1,g={
@@ -20070,7 +20070,7 @@ crit(41971,{achID=13128,id=14,providers={{"i",163810}}})}}),
 p(2559,{awp=80100,b=1,itemID=166495,npcID=148990,spellID=288910})}),
 h(-101,{
 s(99994,163928,{f=23,lvl=50})})}})}}),
-h(-148,{awp=80001,g={
+h(-148,{
 h(-12,{
 ach(40957,{awp=110007,g={
 crit(70202,{achID=40953,id=11})}})}),
@@ -22931,7 +22931,7 @@ s(99194,163460,{b=1,f=7,loc=47,lvl=50,modID=3,r=1})}),
 h(-101,{sym={{"select","symselector",6},{"find","headerID",-211},{"pop"},{"where","headerID",-101},{"extract","sourceID"},{"modID",6}}})}})}})}}),
 h(-43,{awp=50004,pb=1,g={
 crit(21419,{achID=6613,id=1,pb=1}),
-crit(21562,{achID=6560,id=36,pb=1})}})}})}}),
+crit(21562,{achID=6560,id=36,pb=1})}})}})}),
 h(-141,{awp=80200,description="The Heart of Azeroth, rewarded by Magni in the Heart of Chamber (Silithus), is required to learn Essences and maybe even to have them drop. Essences have two effects on them, one major and one minor power.\n\nPlayers may place an Essence in every unlocked Major or Minor slot in the Heart of Azeroth.\n\nThe major power will only be activated if the Essence is placed in the central Major slot.\n\nThe minor power will be activated if the Essence is placed in any Minor slot or the central Major slot.\n\nThe same Essence cannot be placed in multiple slots.",g={
 h(-12,{
 ach(13779,{rwp=90001,u=2,g={
@@ -24547,7 +24547,7 @@ q(54682,{coords={
 [1346]={{27,54}}},lvl=50,providers={{"o",316443}},r=2,sourceQuests={54438}}),
 q(54683,{coords={
 [1346]={{27,54}}},lvl=50,providers={{"o",316443}},r=1,sourceQuests={54439}})}}),
-ah(12719,{awp=80001,r=1,type="a",g={
+ah(12719,{r=1,type="a",g={
 ach(12719,{r=1,g={
 crit(71307,{achID=40955,awp=110007,id=7})}}),
 q(51513,{coords={
@@ -24662,9 +24662,9 @@ i(159846,{coords={
 [895]={{49.73,25.22},{77.38,83.97}},
 [896]={{21.04,66.14},{21.51,43.59},{21.51,43.71}},
 [942]={{44.59,55.49},{58.58,70.31}},
-[1161]={{47.61,47.36},{54.99,43.63},{66.28,61.58},{69.26,29.82},{72.6,82.6},{74.12,12.66},{75.37,14.48}}},crs={123639,126600,134729,134968,135153,135525,136138,136479,137040,137411,138221,139638,142189,144115},f=55,lvl=25,spellID=11008})})}),
-x(9,{
-h(-158,{awp=90002,description="These rewards are shared across Covenants.",maps={1698,1699,1700,1701,1702,1703,1707,1708},g={
+[1161]={{47.61,47.36},{54.99,43.63},{66.28,61.58},{69.26,29.82},{72.6,82.6},{74.12,12.66},{75.37,14.48}}},crs={123639,126600,134729,134968,135153,135525,136138,136479,137040,137411,138221,139638,142189,144115},f=55,lvl=25,spellID=11008})})}}),
+x(9,{awp=90002,g={
+h(-158,{description="These rewards are shared across Covenants.",maps={1698,1699,1700,1701,1702,1703,1707,1708},g={
 h(-12,{
 ach(14835),
 ach(14636,{
@@ -24833,7 +24833,7 @@ gm(2255,{
 crit(50890,{achID=14844,id=6})}),
 gm(2254,{
 crit(50889,{achID=14844,id=5})})})}}),
-h(-159,{awp=90002,customCollect={"SL_COV_KYR"},maps={1707,1708},g={
+h(-159,{customCollect={"SL_COV_KYR"},maps={1707,1708},g={
 h(-157,{
 q(62692,{coords={
 [1533]={{52.2,47}}},customCollect={"SL_COV_KYR"},description="Will only be offered as the initial 'Calling' during the Covenant introduction.",lvl=60,qgs={160470},repeatable=1,sourceQuests={62698},g={
@@ -26307,7 +26307,7 @@ n(175522,{coords={
 [1707]={{55,82.9}}},customCollect={"SL_COV_KYR"}}),
 n(175523,{coords={
 [1707]={{57,79.8}}},customCollect={"SL_COV_KYR"}})}})}}),
-h(-166,{awp=90002,customCollect={"SL_COV_NEC"},maps={1698},g={
+h(-166,{customCollect={"SL_COV_NEC"},maps={1698},g={
 h(-157,{
 q(62694,{coords={
 [1698]={{47.7,29.1}}},customCollect={"SL_COV_NEC"},description="Will only be offered as the initial 'Calling' during the Covenant introduction.",lvl=60,qgs={158339},repeatable=1,sourceQuests={62835},g={
@@ -27740,7 +27740,7 @@ s(113745,181801,{cost={{"c",1813,3500}},customCollect={"SL_COV_NEC"},f=3,lvl=50}
 s(115344,184066,{cost={{"c",1885,50},{"c",1813,3500}},customCollect={"SL_COV_NEC"},f=23,lvl=50})}}),
 n(175312,{coords={
 [1698]={{61.2,47.4}}},customCollect={"SL_COV_NEC"}})}})}}),
-h(-167,{awp=90002,customCollect={"SL_COV_NFA"},maps={1701,1702,1703},g={
+h(-167,{customCollect={"SL_COV_NFA"},maps={1701,1702,1703},g={
 h(-157,{
 q(62693,{coords={
 [1701]={{53.8,6.2}}},customCollect={"SL_COV_NFA"},description="Will only be offered as the initial 'Calling' during the Covenant introduction.",lvl=60,qgs={165702},repeatable=1,sourceQuests={62697},g={
@@ -28998,7 +28998,7 @@ s(115012,180000,{b=1,cost={{"i",183890.006,1},{"i",183891.006,1},{"i",183892.006
 s(115534,184241,{b=1,cost={{"i",183899.085,1},{"i",183898.085,1},{"i",183897.085,1},{"i",183896.085,1}},customCollect={"SL_COV_NFA"},f=23,lvl=50,modID=85}),
 s(115006,179577,{b=1,cost={{"i",183890.006,1},{"i",183891.006,1},{"i",183892.006,1},{"i",183893.006,1}},customCollect={"SL_COV_NFA"},f=34,lvl=50,modID=6}),
 s(115013,180023,{b=1,cost={{"i",183890.006,1},{"i",183891.006,1},{"i",183892.006,1},{"i",183893.006,1}},customCollect={"SL_COV_NFA"},f=27,lvl=50,modID=6})}})}})}}),
-h(-183,{awp=90002,customCollect={"SL_COV_VEN"},maps={1699,1700},g={
+h(-183,{customCollect={"SL_COV_VEN"},maps={1699,1700},g={
 h(-157,{
 q(62691,{coords={
 [1700]={{61.6,75.6}}},customCollect={"SL_COV_VEN"},description="Will only be offered as the initial 'Calling' during the Covenant introduction.",lvl=60,qgs={165302},repeatable=1,sourceQuests={62695},g={
@@ -30823,9 +30823,9 @@ title(463,{u=2})}}),
 ach(20501,{awp=100206,g={
 de(4181,{awp=110207,itemID=248125,spellID=1246289}),
 mnt(440444,{b=1,itemID=217612,lvl=10})}}),
-ach(14763,{awp=90000,g={
-cq(62409,{b=1,itemID=183693,spellID=341912})}}),
-ach(14315,{awp=90000})}),
+ach(14763,{
+cq(62409,{b=1,itemID=183693,spellID=341912})}),
+ach(14315)}),
 ah(15579,{awp=90205,type="a",g={
 q(65656,{coords={
 [85]={{50.6,75.5}},
@@ -30870,7 +30870,7 @@ q(65669,{coords={
 ach(15579,{
 title(460)}),
 i(191034)}})}}),
-h(-155,{awp=90002,symselector=1,g={
+h(-155,{symselector=1,g={
 cd(284,{awp=90100,b=1,c={1,2,6,10,11,12},itemID=187507,spellID=341427}),
 cd(283,{awp=90100,b=1,itemID=187506,spellID=341427}),
 cl(6,{
@@ -31170,7 +31170,7 @@ cd(154,{b=1,c={1},customCollect={"SL_COV_KYR"},itemID=182440,spellID=341427}),
 cd(158,{b=1,c={1},customCollect={"SL_COV_NEC"},itemID=182442,spellID=341427}),
 cd(190,{b=1,c={1},customCollect={"SL_COV_NFA"},itemID=182651,spellID=341427}),
 cd(165,{b=1,c={1},customCollect={"SL_COV_VEN"},itemID=182463,spellID=341427})})}}),
-h(-221,{awp=90002,symselector=8,g={
+h(-221,{symselector=8,g={
 rfl(203,{b=1,itemID=183247,spellID=342040}),
 rfl(205,{b=1,customCollect={"SL_COV_KYR","SL_COV_NEC","SL_COV_NFA","SL_COV_VEN"},itemID=183249,spellID=342040}),
 rfl(199,{b=1,itemID=183242,spellID=342040}),
@@ -31445,7 +31445,7 @@ rfl(214,{awp=90100,b=1,c={1},customCollect={"SL_COV_NEC"},itemID=186570,spellID=
 rfl(216,{awp=90100,b=1,c={1},customCollect={"SL_COV_NFA"},itemID=186576,spellID=342040}),
 rfl(215,{awp=90100,b=1,c={1},customCollect={"SL_COV_VEN"},itemID=186572,spellID=342040}),
 rfl(277,{awp=90200,b=1,c={1},itemID=190598,spellID=367716})})}}),
-m(1627,{awp=90002,coords={
+m(1627,{coords={
 [1543]={{48.2,39.4}}},icon=3642306,maps={1615,1618,1619,1620,1621,1623,1624,1628,1629,1630,1631,1632,1635,1641,1660,1705,1712,1721,1728,1736,1749,1751,1752,1753,1754,1756,1757,1758,1759,1760,1761,1762,1763,1764,1765,1766,1767,1768,1769,1770,1771,1772,1773,1774,1776,1777,1778,1779,1780,1781,1782,1783,1784,1785,1786,1787,1789,1791,1792,1793,1794,1795,1796,1797,1798,1799,1800,1801,1802,1803,1804,1805,1806,1807,1808,1809,1810,1811,1812,1911,1912,1913,1920,1962,1963,1964,1965,1966,1969,1974,1975,1976,1977,1979,1980,1981,1982,1983,1984,1985,1986,1987,1988},g={
 h(-12,{
 ach(15091,{awp=90100}),
@@ -32005,9 +32005,9 @@ p(3033,{b=1,crs={151331,159755,169859,171422},itemID=183194,npcID=173991,spellID
 p(3028,{b=1,crs={155945,157122,159190,170418,171422},itemID=183117,npcID=173851,spellID=340723}),
 i(178585,{b=1}),
 p(3034,{b=1,crs={152995,153011,153174,153382,170418},itemID=183195,npcID=173992,spellID=341298}),
-p(3026,{b=1,crs={155250,155251,156239},itemID=183115,npcID=173849,spellID=340721})})}})}),
-x(10,{
-ah(2507,{awp=100002,type="fa",g={
+p(3026,{b=1,crs={155250,155251,156239},itemID=183115,npcID=173849,spellID=340721})})}})}}),
+x(10,{awp=100002,g={
+ah(2507,{type="fa",g={
 faction(2507,{icon=4687628}),
 h(-12,{awp=100206,g={
 ach(16522,{minReputation={2507,25},rwp=110007,u=2}),
@@ -32833,7 +32833,7 @@ n(187700,{coords={
 [2022]={{47.3,83.4}}},sym={{"select","itemID",199873,199874,199875,199876,191294,198083,198737,198735,198734,198736,198775,198776,198777,198778,198727,198796,198739,198740,198738,198741}}}),
 n(188265,{coords={
 [2022]={{47.9,82.1}}},sym={{"select","itemID",198718,198387,198717,199746,245283,245288,245287,245286,245285,238975,194102,194325,194326,197369,197363,197360,197386,197358,197395,197402,197374,198721,198722,198720,197010,197144,197614,203353}}})})}}),
-ah(2503,{awp=100002,type="fa",g={
+ah(2503,{type="fa",g={
 faction(2503,{icon=4687627}),
 h(-12,{awp=100206,g={
 ach(19481,{
@@ -33415,7 +33415,7 @@ s(182935,200467,{b=1,cost={{"c",2003,150}},f=4,loc=42,lvl=70,minReputation={2503
 s(182932,200464,{b=1,cost={{"c",2003,150}},f=7,loc=42,lvl=70,minReputation={2503,24}})}}),
 n(195529,{coords={
 [2023]={{62.4,42.2}}},sym={{"select","itemID",200541,200540,200539,200520,200521,200522,200525,200518,200524,200517,200510,200523,200511,200512,200534}}})})}}),
-ah(2511,{awp=100002,type="fa",g={
+ah(2511,{type="fa",g={
 faction(2511,{icon=4687629}),
 h(-12,{awp=100206,g={
 ach(19482,{
@@ -34157,7 +34157,7 @@ n(186462,{coords={
 [2024]={{13.8,49.7}}},sym={{"select","itemID",198872,200118,201426,201425}}}),
 n(187869,{coords={
 [2024]={{12.7,50.3}}},sym={{"select","itemID",199855,199863,199859,199854,199862,199858,199852,199860,199856,199853,199861,199857}}})})}}),
-ah(2510,{awp=100002,type="fa",g={
+ah(2510,{type="fa",g={
 faction(2510,{icon=4687629}),
 h(-12,{awp=100206,g={
 ach(19483,{
@@ -35632,7 +35632,7 @@ q(78820,{coords={
 [2133]={{38.1,49.8}}},isWorldQuest=1,g={
 crit(65404,{achID=19791,coords={
 [2133]={{38.1,49.8}}},id=1,providers={{"n",207763}}})}})}})}}),
-h(-12,{awp=100002,g={
+h(-12,{
 ach(19458,{awp=100206,g={
 mnt(424607,{b=1,itemID=210142,lvl=10}),
 de(4180,{awp=110207,itemID=248124,spellID=1246288})}}),
@@ -36403,7 +36403,7 @@ ach(17977,{rwp=110002,u=2}),
 ach(17830,{rwp=110002,u=2,g={
 i(204195,{awp=100100,b=1,rwp=100200,u=2}),
 i(210770,{awp=100200,b=1,lvl=70,rwp=100206,spellID=426966,u=2}),
-i(211952,{awp=100206,b=1,lvl=70,spellID=433790,u=2})}})}}),
+i(211952,{awp=100206,b=1,lvl=70,spellID=433790,u=2})}})}),
 h(-187,{awp=100107,g={
 h(-45,{
 q(77423,{coords={
@@ -36763,7 +36763,7 @@ q(75280,{coords={
 h(-63,{
 i(203683,{b=1,cost={{"i",203430,5}},isWeekly=1,spellID=407054}),
 i(203430,{b=1,spellID=407051})})}}),
-h(-185,{awp=100002,g={
+h(-185,{
 h(-12,{awp=100005,g={
 ah(194521,{type="i",g={
 ach(16724),
@@ -37367,8 +37367,8 @@ mm(213561,{awp=100207,b=1,questID=79690}),
 mm(203324,{b=1,questID=73812}),
 mm(203328,{b=1,questID=73816}),
 mm(203304,{b=1,questID=73792}),
-mm(203355,{awp=100107,b=1,questID=73846})}})}}),
-h(-191,{awp=100002,maps={2112},g={
+mm(203355,{awp=100107,b=1,questID=73846})}})}),
+h(-191,{maps={2112},g={
 h(-12,{
 h(-192,{
 ach(16487,{maps={2025},providers={{"s",392142}},g={
@@ -37704,7 +37704,7 @@ mnt(374098,{b=1,cost={{"c",2118,2000}},itemID=192775,lvl=10})}),
 flt(101,{
 p(3287,{b=1,cost={{"c",2118,1000}},itemID=200173,npcID=189111,spellID=375035}),
 p(3382,{b=1,cost={{"c",2118,1000}},itemID=200114,npcID=196666,spellID=388913})})}})})}}),
-h(-44,{awp=100002,g={
+h(-44,{
 h(-12,{
 ach(16683,{
 crit(64497,{achID=19463,awp=100206,id=5})})}),
@@ -37885,7 +37885,7 @@ i(200934,{b=1,coords={
 [2024]={{58.2,66.6}}},cost={{"i",200938,1}},description="In order to capture a soul with Empty Soul Cage, the elite frost elemental must die while having the Zapthrottle Soul Inhaler debuff.\n\nOnce you receive the soul, do not open the item until the Encaged turns into Docile, which will happen once the 15-minute timer expires.",providers={{"i",199414}},g={
 i(201299,{b=1,g={
 i(193919,{b=1}),
-p(3409,{b=1,itemID=201265,npcID=198269,spellID=374751})}})}})})}}),
+p(3409,{b=1,itemID=201265,npcID=198269,spellID=374751})}})}})})}),
 o(382621,{awp=100005,coords={
 [2025]={{60.6,53.8}}},description="Help us gather information of what is/isn't available via doing reports in ATT Discord. Especially the alternative sets and if the PvP transmog is available somewhere else.",modelScale=4,sourceQuests={72360},g={
 ah(19785,{awp=100206,type="a",g={
@@ -38817,8 +38817,8 @@ i(204193,{awp=100100,b=1,cost={{"i",204075,15}},rwp=100200,u=2}),
 i(204195,{awp=100100,b=1,cost={{"i",204076,15}},rwp=100200,u=2}),
 i(204196,{awp=100100,b=1,cost={{"i",204077,15}},rwp=100200,u=2}),
 i(204194,{awp=100100,b=1,cost={{"i",204078,15}},rwp=100200,u=2}),
-i(202001,{rwp=100100,u=2})}})}),
-x(11,{
+i(202001,{rwp=100100,u=2})}})}}),
+x(11,{awp=110002,g={
 h(-471,{awp=110107,crs={230246},g={
 h(-12,{
 ach(42188,{sourceQuests={84789},g={
@@ -38932,7 +38932,7 @@ q(91871,{coords={
 i(254325,{b=1,description="Contains Equipment rewarded from various Quests available throughout Khaz Algar.",lvl=80})}}),
 q(93979,{coords={
 [2472]={{37.7,74.8}}},description="'Lingering Memories' is available only through Recap Experience. It replaces the quest 'What Is Left of Home' (85032).",lvl=80,qgs={231128},repeatable=1,sourceQuests={84967}})}})})}}),
-h(-12,{awp=110002,g={
+h(-12,{
 ach(61451,{awp=110207,g={
 de(11455,{itemID=257353,spellID=1261469}),
 mnt(1262886,{b=1,itemID=258188,lvl=10})}}),
@@ -39809,7 +39809,7 @@ s(221683,211984,{b=1,bonusID=8107,c={1},f=7,loc=40,lvl={80}}),
 s(221675,211982,{b=1,bonusID=8107,c={1},f=7,loc=41,lvl={80}})})})}})}),
 ach(41201,{awp=110007,g={
 mnt(448934,{b=1,itemID=223313,lvl=30}),
-crit(109694,{achID=61451,awp=110207,id=5})}})}}),
+crit(109694,{achID=61451,awp=110207,id=5})}})}),
 h(-45,{awp=110107,g={
 ah(41820,{type="a",g={
 q(91039,{isBreadcrumb=1,lvl=80,nextQuests={84638}}),
@@ -39932,7 +39932,7 @@ ach(41818,{r=2,g={
 title(630,{r=2})}}),
 ach(41820,{r=1,g={
 title(629,{r=1})}})}})}})}}),
-ah(219391,{awp=110002,type="i",g={
+ah(219391,{type="i",g={
 mm(235697,{awp=110200,b=1,questID=82192}),
 mm(238839,{awp=110105,b=1,questID=86199}),
 mm(235694,{awp=110200,b=1,questID=82117}),
@@ -40397,7 +40397,7 @@ o(343698,{coords={
 [2404]={{58.9,52.9}}},description="Behind the orphanage in Cathedral Square. It's on the ground next to some crates, is very small, and doesn't have the typical interactable sparkle.",g={
 toy(174921,{b=1,g={
 i(174922,{b=1,spellID=318407})}})}})})}})}}),
-h(-47,{awp=110002,g={
+h(-47,{
 cu(2914,{rwp=110100,u=2}),
 cu(2915,{rwp=110100,u=2}),
 cu(2916,{rwp=110100,u=2}),
@@ -40412,8 +40412,8 @@ cu(3284,{awp=110200,rwp=120000,u=2}),
 cu(3286,{awp=110200,rwp=120000,u=2}),
 cu(3288,{awp=110200,rwp=120000,u=2}),
 cu(3290,{awp=110200,rwp=120000,u=2}),
-i(231757,{awp=110200,b=1,spellID=468717})}}),
-h(-473,{awp=110002,providers={{"i",246771},{"n",222165}},g={
+i(231757,{awp=110200,b=1,spellID=468717})}),
+h(-473,{providers={{"i",246771},{"n",222165}},g={
 h(-12,{
 ach(40252),
 ach(40222,{
@@ -40584,9 +40584,9 @@ n(235112,{awp=110002,g={
 crit(71587,{achID=41215,awp=110100,id=7})}}),
 n(235117,{awp=110002,g={
 crit(71590,{achID=41215,awp=110100,id=10})}}),
-crit(71580,{achID=41214,id=2})}})}})})}})}),
-x(12,{
-h(-729,{awp=120001,coords={
+crit(71580,{achID=41214,id=2})}})}})})}})}}),
+x(12,{awp=120001,g={
+h(-729,{coords={
 [2395]={{56.6,65.8}},
 [2405]={{38.9,53.2}},
 [2413]={{66,61.4}},
@@ -40724,7 +40724,7 @@ i(241145,{cost={{"c",3377,200}},f=55,lvl=80,spellID=1237964})}),
 flt(102,{
 toy(251633,{b=1,cost={{"c",3377,6400}}}),
 toy(266370,{b=1,cost={{"c",3377,3200}}})})}})}}),
-h(-12,{awp=120001,g={
+h(-12,{
 ach(61809,{rwp=120100,u=2}),
 ach(42767,{rwp=120100,u=2}),
 ach(42768,{rwp=120100,u=2}),
@@ -41335,7 +41335,7 @@ s(306834,271474,{bonusID=6896,c={6},f=7,loc=40}),
 s(306818,271472,{bonusID=6896,c={6},f=7,loc=41})}),
 cl(2,{
 s(306746,271463,{bonusID=6896,c={2},f=7,loc=41}),
-s(306762,271465,{bonusID=6896,c={2},f=7,loc=40})})})}})}})}}),
+s(306762,271465,{bonusID=6896,c={2},f=7,loc=40})})})}})}})}),
 h(-758,{awp=120005,g={
 h(-742,{
 faction(2792),
@@ -42380,7 +42380,7 @@ q(96443,{coords={
 [2649]={{59.7,10.9}}},qgs={264070},qis={274580,274581,274582,274583,274584,274585},sourceQuests={96442,96831}}),
 q(96444,{coords={
 [2649]={{60.5,11.4}}},qgs={264069},qis={274620,274640},sourceQuests={96443,96831}})}})})}})}}),
-h(-671,{awp=120001,g={
+h(-671,{
 h(-765,{rwp=120100,u=2,g={
 h(-12,{u=2,g={
 ach(63164,{awp=120007,u=2})}}),
@@ -43335,7 +43335,7 @@ q(95989,{awp=120100,isWorldQuest=1}),
 q(96592,{awp=120100,isWorldQuest=1}),
 q(96593,{awp=120100,isWorldQuest=1}),
 q(96594,{awp=120100,isWorldQuest=1}),
-q(96595,{awp=120100,isWorldQuest=1})})}}),
+q(96595,{awp=120100,isWorldQuest=1})})}),
 h(-759,{awp=120007,g={
 h(-12,{maps={2599,2600},g={
 ach(62873),
@@ -44227,5 +44227,5 @@ s(309054,274876,{f=8}),
 s(309053,274875,{f=1}),
 s(309042,274864,{f=23}),
 s(309044,274866,{f=25}),
-s(309047,274869,{f=35})})}})}})})}})
+s(309047,274869,{f=35})})}})}})}})}})
 end)

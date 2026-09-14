@@ -81,7 +81,7 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						},
 					}),
 					n(265500, {	-- Azta'rec ??
-						["questID"] = 97913,
+						["questID"] = 97913,	-- one-time quest, determine weekly
 						["isWeekly"] = true,
 						["groups"] = {
 							ach(63334, {	-- Fabled Let Me Solo Him: Azta'rec
