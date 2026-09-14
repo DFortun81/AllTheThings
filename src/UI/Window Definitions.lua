@@ -372,23 +372,51 @@ app.WindowDefinitions = {};
 app.Windows = {};
 
 -- Window Color Management
-local function ApplyAllWindowColors(...)
+local function ApplyWindowColor(window)
 	-- Apply the user-set colours
 	local rBg, gBg, bBg, aBg, rBd, gBd, bBd, aBd = app.Settings.GetWindowColors()
 
-	for suffix, window in pairs(app.Windows) do
+	if window then
 		window:SetBackdropColor(rBg, gBg, bBg, aBg)
 		window:SetBackdropBorderColor(rBd, gBd, bBd, aBd)
+	else
+		for suffix, window in pairs(app.Windows) do
+			window:SetBackdropColor(rBg, gBg, bBg, aBg)
+			window:SetBackdropBorderColor(rBd, gBd, bBd, aBd)
+		end
 	end
 end
-app.AddEventHandler("Settings.OnSet", function(context, setting, value)
-	if (context == "General" and (setting == "Window:BackgroundColor" or setting == "Window:BorderColor"))
-		or (context == "Tooltips" and setting == "Window:UseClassForBorder") then
-		ApplyAllWindowColors();
+local function ToggleHideBorders()
+	local hideBorders = app.Settings:GetTooltipSetting("Window:HideBorders")
+	for suffix, window in pairs(app.Windows) do
+		window:SetContainerPoints(hideBorders)
+		window:SetCloseButtonPoints(hideBorders)
+		window:SetScrollBarPoints(hideBorders)
+		window:SetGripPoints(hideBorders)
 	end
+	ApplyWindowColor()
+end
+local OnSetHooks = {
+	General = {
+		["Window:BackgroundColor"] = ApplyWindowColor,
+		["Window:BorderColor"] = ApplyWindowColor,
+	},
+	Tooltips = {
+		["Window:UseClassForBorder"] = ApplyWindowColor,
+		["Window:HideBorders"] = ToggleHideBorders,
+	}
+}
+app.AddEventHandler("Settings.OnSet", function(context, setting, value)
+	context = OnSetHooks[context]
+	if not context then return end
+
+	context = context[setting]
+	if not context then return end
+
+	context()
 end)
 app.AddEventHandler("OnStartup", function()
-	ApplyAllWindowColors();
+	ApplyWindowColor();
 end)
 app.AddEventHandler("OnRefreshComplete", function()
 	app.HandleEvent("OnUpdateWindows", true)
@@ -1506,14 +1534,22 @@ local function ApplySettingsForWindow(self, windowSettings)
 	end
 	self.RecordSettings = oldRecordSettings;
 end
+local Backdrops = {
+	default = {
+		bgFile = 137056,
+		edgeFile = 137057,
+		tile = true, tileSize = 16, edgeSize = 16,
+		insets = { left = 4, right = 4, top = 4, bottom = 4 }
+	},
+	noborders = {
+		bgFile = 137056,
+		tile = true, tileSize = 16,
+		insets = { left = 0, right = 0, top = 0, bottom = 0 }
+	},
+}
 local function BuildDefaultsForWindow(self, fromSettings)
 	local defaults = {
-		backdrop = {
-			bgFile = 137056,
-			edgeFile = 137057,
-			tile = true, tileSize = 16, edgeSize = 16,
-			insets = { left = 4, right = 4, top = 4, bottom = 4 }
-		},
+		backdrop = app.CloneDictionary(Backdrops.default),
 		resizable = true,
 		visible = false,
 		movable = true,
@@ -1605,6 +1641,12 @@ local function LoadSettingsForWindow(self)
 	app.Settings.GetWindowSettingsFromProfile(name, settings)
 	self.Settings = settings;
 	self:Load(settings);
+	local hideBorders = app.Settings:GetTooltipSetting("Window:HideBorders")
+	self:SetContainerPoints(hideBorders)
+	self:SetCloseButtonPoints(hideBorders)
+	self:SetScrollBarPoints(hideBorders)
+	self:SetGripPoints(hideBorders)
+	self:SetBackgroundColor()
 end
 app.AddEventHandler("OnSavedVariablesAvailable", function()
 	if AllWindowSettings then
@@ -2162,6 +2204,48 @@ local FieldDefaults = {
 			self:SetScript("OnUpdate", ApplyAlphaForWindow);
 		end
 	end,
+	SetContainerPoints = function(self, hideBorders)
+		local container = self.Container
+		local scrollbar = self.ScrollBar
+		if hideBorders then
+			container:SetPoint("TOPLEFT")
+			container:SetPoint("BOTTOM")
+			self:SetBackdrop(Backdrops.noborders)
+		else
+			container:SetPoint("TOPLEFT", self, "TOPLEFT", 5, -5)
+			container:SetPoint("BOTTOM", self, "BOTTOM", 0, 5)
+			self:SetBackdrop(Backdrops.default)
+		end
+		container:SetPoint("RIGHT", scrollbar, "LEFT", -1, 0)
+		container:Show()
+	end,
+	SetCloseButtonPoints = function(self, hideBorders)
+		local closeButton = self.CloseButton
+		if hideBorders then
+			closeButton:SetPoint("TOPRIGHT", self, "TOPRIGHT", 1, 1)
+		else
+			closeButton:SetPoint("TOPRIGHT", self, "TOPRIGHT", -2, -2)
+		end
+	end,
+	SetScrollBarPoints = function(self, hideBorders)
+		local scrollbar = self.ScrollBar
+		local closeButton = self.CloseButton
+		if hideBorders then
+			scrollbar:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT", 0, 32)
+		else
+			scrollbar:SetPoint("BOTTOMRIGHT", self, "BOTTOMRIGHT", -4, 36)
+		end
+		scrollbar:SetPoint("TOP", closeButton, "BOTTOM", 0, -15)
+	end,
+	SetGripPoints = function(self, hideBorders)
+		local grip = self.Grip
+		if hideBorders then
+			grip:SetPoint("BOTTOMRIGHT")
+		else
+			grip:SetPoint("BOTTOMRIGHT", -5, 5)
+		end
+	end,
+	SetBackgroundColor = ApplyWindowColor,
 
 	-- Refresh Callbacks
 	RegisterRefreshCallback = function(self, ...)
@@ -2618,15 +2702,12 @@ local function BuildWindow(suffix)
 	-- The Close Button.
 	local closeButton = CreateFrame("Button", nil, window, "UIPanelCloseButton");
 	closeButton:SetScript("OnClick", OnCloseButtonPressed);
-	closeButton:SetPoint("TOPRIGHT", window, "TOPRIGHT", -2, -2);
 	closeButton:SetSize(20, 20);
 	window.CloseButton = closeButton;
 
 	-- The Scroll Bar.
 	---@class ATTWindowScrollBar: Slider
 	local scrollbar = CreateFrame("Slider", nil, window, "UIPanelScrollBarTemplate");
-	scrollbar:SetPoint("TOP", closeButton, "BOTTOM", 0, -15);
-	scrollbar:SetPoint("BOTTOMRIGHT", window, "BOTTOMRIGHT", -4, 36);
 	scrollbar:SetScript("OnValueChanged", OnScrollBarValueChanged);
 	scrollbar.back = scrollbar:CreateTexture(nil, "BACKGROUND");
 	scrollbar.back:SetColorTexture(0.1,0.1,0.1,1);
@@ -2647,22 +2728,17 @@ local function BuildWindow(suffix)
 	grip:SetTexture(app.asset("grip"));
 	grip:SetSize(16, 16);
 	grip:SetTexCoord(0,1,0,1);
-	grip:SetPoint("BOTTOMRIGHT", -5, 5);
 	window.Grip = grip;
 
 	-- The Row Container. This contains all of the row frames.
 	---@class ATTRowContainer: Frame
 	local container = CreateFrame("Frame", nil, window);
-	container:SetPoint("TOPLEFT", window, "TOPLEFT", 5, -5);
-	container:SetPoint("RIGHT", scrollbar, "LEFT", -1, 0);
-	container:SetPoint("BOTTOM", window, "BOTTOM", 0, 5);
 	window.Container = container;
 	container.rows = setmetatable({}, {
 		__index = function(rows, i)
 			return CreateRow(container, rows, i);
 		end,
 	});
-	container:Show();
 
 	if not definition.IgnoreQuestUpdates and app.IsClassic then
 		-- Delayed call starts two nested coroutines so that calls can chain, if necessary.
