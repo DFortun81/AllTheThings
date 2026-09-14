@@ -269,6 +269,7 @@ root(ROOTS.Housing, {
 				{ 52.9, 59.8, RAZORWIND_SHORES }
 			},
 			["isWeekly"] = true,
+			["timeline"] = { ADDED_12_0_1_LAUNCH },
 			["groups"] = {	-- All quests given by Vaeli offer 'Essence of Lumber' as a reward
 				i(280734, {	-- Warbound Pack of Champion Mistcrests
 					["timeline"] = { ADDED_12_1_0 },
@@ -312,7 +313,6 @@ root(ROOTS.Housing, {
 					}},
 				}),
 			},
-			["timeline"] = { ADDED_12_0_1_LAUNCH },
 		}, {
 			q(95413),	-- Community Engagement
 			q(95416),	-- Going Postal
