@@ -198,8 +198,10 @@ app.AddEventHandler("OnLoad", function()
 			MinimapButton = LDI:GetMinimapButton(L.TITLE)
 			-- clean up the default button
 			MinimapButton.icon:SetAllPoints()
-			MinimapButton.border:Hide()
-			MinimapButton.border = nil
+			if MinimapButton.border then
+				MinimapButton.border:Hide()
+				MinimapButton.border = nil
+			end
 			MinimapButton:SetHighlightTexture(app.asset("MinimapHighlight_64x64"));
 		end
 	end
