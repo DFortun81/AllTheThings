@@ -66,7 +66,7 @@ local VersionCache = setmetatable({
 local CurrentVersion = VersionCache[app.Version];
 local MaxReportedVersion = CurrentVersion
 
-app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, ...)
+local function CHAT_MSG_ADDON(prefix, text, channel, sender, target, ...)
 	if not target then target = sender; end
 	if prefix == "ATTC" then
 		-- app.PrintDebug(prefix, text, channel, sender, target, ...)
@@ -183,7 +183,7 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, ...)
 				local myName = UnitName("player");
 				local name,server = ("-"):split(a);
 				if myName == name and (not server or server == "" or GetRealmName() == server) then
-					app.events.CHAT_MSG_ADDON(prefix, text:sub(5 + a:len()), "WHISPER", sender);
+					CHAT_MSG_ADDON(prefix, text:sub(5 + a:len()), "WHISPER", sender);
 				end
 			elseif cmd == "A" then -- Version Command
 				local guid = args[6];
@@ -230,7 +230,7 @@ app.events.CHAT_MSG_ADDON = function(prefix, text, channel, sender, target, ...)
 				local myName = UnitName("player");
 				local name,server = ("-"):split(a);
 				if myName == name and (not server or server == "" or GetRealmName() == server) then
-					app.events.CHAT_MSG_ADDON(prefix, text:sub(5 + a:len()), "WHISPER", sender);
+					CHAT_MSG_ADDON(prefix, text:sub(5 + a:len()), "WHISPER", sender);
 				end
 			elseif cmd == "chks" then	-- Total Chunks Command [sender, uid, total]
 				app:AcknowledgeIncomingChunks(target, tonumber(a), tonumber(args[3]));
@@ -299,27 +299,27 @@ if app.IsClassic then
 end
 
 local lastProgressUpdateMessage;
-local function SendProgressAnnounce()
+local function SendProgressAnnounce(onlyGroup)
 	-- Send a message to your party members with your current Prime progress
 	local currentCharacter = app.CurrentCharacter and app.CurrentCharacter;
 	local data = currentCharacter.PrimeData or app:GetDatabaseRoot();
 	local msg = "A\t" .. app.Version .. "\t" .. (data.progress or 0) .. "\t" .. (data.total or 0) .. "\t" .. data.modeString .. "\t" .. currentCharacter.guid;
-	if lastProgressUpdateMessage ~= msg then
+	if lastProgressUpdateMessage ~= msg or onlyGroup then
 		lastProgressUpdateMessage = msg;
 		local anySent
 		anySent = SendGroupMessage(msg)
-		anySent = SendGuildMessage(msg) or anySent
+		anySent = not onlyGroup and SendGuildMessage(msg) or anySent
 		if not anySent then
 			-- self-call the chat function to refresh own data
-			app.events.CHAT_MSG_ADDON("ATTC", msg, "WHISPER", "player");
+			CHAT_MSG_ADDON("ATTC", msg, "WHISPER", "player");
 		end
 	end
 end
-local function SendVersionAnnounce()
+local function SendVersionAnnounce(onlyGroup)
 	-- Send a message to your party members with your current ATT version only
 	local msg = "A\t" .. app.Version
 	SendGroupMessage(msg)
-	SendGuildMessage(msg)
+	if not onlyGroup then SendGuildMessage(msg) end
 end
 app.AddEventHandler("OnWindowUpdated", function(window, suffix)
 	-- only the Prime window updates the 'PrimeData' cache
@@ -340,8 +340,12 @@ app.AddEventHandler("OnSavedVariablesAvailable", function()
 		AllTheThingsSavedVariables.PlayerProgressCacheByGUID = PlayerProgressCacheByGUID;
 	end
 end);
+app.AddEventRegistration("CHAT_MSG_ADDON", CHAT_MSG_ADDON)
 app.AddEventHandler("OnReady", function()
-	app:RegisterEvent("CHAT_MSG_ADDON");
 	C_ChatInfo.RegisterAddonMessagePrefix("ATTC");
 	SendVersionAnnounce()
 end);
+app.AddEventRegistration("GROUP_ROSTER_UPDATE", function(...)
+	app.CallbackHandlers.DelayedCallback(SendVersionAnnounce, 10, true)
+	app.CallbackHandlers.DelayedCallback(SendProgressAnnounce, 10, true)
+end)
