@@ -5027,21 +5027,37 @@ namespace ATT
 
             bool wasDefaulted = data.ContainsKey("_defaulttimeline");
             // Mark when this Thing was put into (or back into) the game
-            if (!wasDefaulted && addedPatch > 10000)
+            if (addedPatch > 10000)
             {
                 if (data.TryGetValue("awp", out long awp) && awp != addedPatch)
-                    LogDebugWarn($"Field replaced 'awp': {addedPatch} => {awp}", data);
-
-                data["awp"] = addedPatch; // "Added With Patch"
+                {
+                    if (!wasDefaulted)
+                    {
+                        LogDebugWarn($"Field replaced 'awp': {addedPatch} => {awp}", data);
+                        data["awp"] = addedPatch; // "Added With Patch"
+                    }
+                }
+                else
+                {
+                    data["awp"] = addedPatch; // "Added With Patch"
+                }
             }
 
             // Mark when this Thing was (or will be) removed from the game
-            if (!wasDefaulted && removedPatch > 10000)
+            if (removedPatch > 10000)
             {
                 if (data.TryGetValue("rwp", out long rwp) && rwp != removedPatch)
-                    LogDebugWarn($"Field replaced 'rwp': {removedPatch} => {rwp}", data);
-
-                data["rwp"] = removedPatch; // "Removed With Patch"
+                {
+                    if (!wasDefaulted)
+                    {
+                        LogDebugWarn($"Field replaced 'rwp': {removedPatch} => {rwp}", data);
+                        data["rwp"] = removedPatch; // "Removed With Patch"
+                    }
+                }
+                else
+                {
+                    data["rwp"] = removedPatch; // "Removed With Patch"
+                }
             }
 
             return true;

@@ -1118,7 +1118,8 @@ expansion = function(id, patch, t)						-- Create an EXPANSION Object
 			local patchstring = string.format("%.2f", patch)
 			t.timeline = { "added " .. math.floor(id) ..".".. patchstring }
 		else
-			t._defaulttimeline = { "added " .. math.floor(id) .. ".0" }
+			local deftimeline = EXPANSION_DEFAULT_TIMELINES[id]
+			t._defaulttimeline = { deftimeline } or { "added " .. math.floor(id) .. ".0" }
 		end
 	end
 	return t;

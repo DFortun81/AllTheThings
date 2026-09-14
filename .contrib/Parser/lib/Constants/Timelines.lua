@@ -722,3 +722,22 @@ REMOVED_12_2_7 = "removed 12.2.7";						-- Midnight 12.2.7 launch in spring 2027
 CREATED_13_0_0 = "created 13.0.0";						-- The Last Titan 13.0.0 launch in 2027
 ADDED_13_0_0 = "added 13.0.0";							-- The Last Titan 13.0.0 launch in 2027
 REMOVED_13_0_0 = "removed 13.0.0";						-- The Last Titan 13.0.0 launch in 2027
+
+--------------------
+-- HELPER  TABLES --
+--------------------
+EXPANSION_DEFAULT_TIMELINES = {
+	[EXPANSION.CLASSIC] = ADDED_1_1_0,
+	[EXPANSION.TBC] = ADDED_2_0_10,
+	[EXPANSION.WRATH] = ADDED_3_0_3,
+	[EXPANSION.CATA] = ADDED_4_0_3_LAUNCH,
+	[EXPANSION.MOP] = ADDED_5_0_4,
+	[EXPANSION.WOD] = ADDED_7_0_3_LAUNCH,
+	[EXPANSION.LEGION] = ADDED_8_0_1_LAUNCH,
+	[EXPANSION.BFA] = ADDED_8_0_1_LAUNCH,
+	[EXPANSION.SL] = ADDED_9_0_2_LAUNCH,
+	[EXPANSION.DF] = ADDED_10_0_2_LAUNCH,
+	[EXPANSION.TWW] = ADDED_11_0_2,
+	[EXPANSION.MID] = ADDED_12_0_1_LAUNCH,
+	[EXPANSION.TLT] = ADDED_13_0_0,
+}
