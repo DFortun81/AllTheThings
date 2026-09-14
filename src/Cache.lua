@@ -1003,7 +1003,6 @@ local function CheckGroupSourceQuestsForUnlock(group)
 	end
 	if req <= 0 then
 		app.AssignFieldValue(group, "u", nil)
-		app.DirectGroupUpdate(group)
 	end
 end
 local ProviderTypeUnlocks = {

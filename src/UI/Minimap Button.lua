@@ -162,8 +162,9 @@ app.SetMinimapButtonSettings = function(visible, size)
 	end
 end
 
+do
 -- Register with the Data Broker
-app.AddEventHandler("OnLoad", function()
+local function RegisterDataBrokers()
 	if not LibStub then return end
 
 	local LDB = LibStub:GetLibrary("LibDataBroker-1.1", true)
@@ -202,7 +203,11 @@ app.AddEventHandler("OnLoad", function()
 				MinimapButton.border:Hide()
 				MinimapButton.border = nil
 			end
-			MinimapButton:SetHighlightTexture(app.asset("MinimapHighlight_64x64"));
+			MinimapButton:SetHighlightTexture(app.asset("MinimapHighlight_64x64"))
 		end
 	end
-end);
+end
+app.AddEventHandler("OnLoad", function()
+	app.FunctionRunner.Run(RegisterDataBrokers)
+end)
+end
