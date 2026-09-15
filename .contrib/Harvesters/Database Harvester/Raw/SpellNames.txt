@@ -31582,6 +31582,8 @@
 17545@@@Holy Protection 
 17546@@@Nature Protection 
 17548@@@Shadow Protection 
+1.15.9.69109
+1314333@@@Make Friendly
 2.5.1.38043
 11@@@Frostbolt of Ages
 50@@@Show Dot Variable
