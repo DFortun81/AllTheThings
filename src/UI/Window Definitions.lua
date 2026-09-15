@@ -321,7 +321,7 @@ local function BuildDataSummary(data)
 			__Summary[#__Summary + 1] = app.GetClassesString(classes, false, false)
 		end
 	end
-	__Summary[#__Summary + 1] = app.GetProgressTextForRow(data) or ((data.g and not data.expanded and #data.g > 0 and "+++") or "---");
+	__Summary[#__Summary + 1] = GetProgressTextForRow(data) or ""
 	return app.TableConcat(__Summary, nil, "", "")
 end
 app.ExtendBaseClassHandler("summaryText", BuildDataSummary);
