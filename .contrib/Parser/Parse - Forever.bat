@@ -1,1 +1,1 @@
-"Parser.exe" baseconfig=.config/retail/retail.config config=".config/forever/01 - Forever.config"
+"Parser.exe" baseconfig=.config/retail/retail.config config=".config/forever/01 - Camelot.config"
