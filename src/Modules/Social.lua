@@ -276,6 +276,9 @@ local function SendProgressAnnounce(onlyGroup)
 end
 local function SendVersionAnnounce(onlyGroup)
 	-- Send a message to your party members with your current ATT version only
+	-- don't bother sending Git version
+	if app.IsGit then return end
+
 	local msg = "A\t" .. app.Version
 	SendGroupMessage(msg)
 	if not onlyGroup then SendGuildMessage(msg) end
