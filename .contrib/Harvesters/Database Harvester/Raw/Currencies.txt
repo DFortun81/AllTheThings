@@ -1,10 +1,14 @@
-12.1.0.68301
+5.5.4.69155
+1@@@Currency Token Test Token 4
+2@@@Currency Token Test Token 2
+4@@@Currency Token Test Token 5
 42@@@Badge of Justice
 61@@@Dalaran Jewelcrafter's Token
 81@@@Epicurean's Award
 101@@@Emblem of Heroism
 102@@@Emblem of Valor
-103@@@Arena Points
+103@@@
+104@@@Honor Points DEPRECATED
 121@@@Alterac Valley Mark of Honor
 122@@@Arathi Basin Mark of Honor
 123@@@Eye of the Storm Mark of Honor
@@ -12,6 +16,7 @@
 125@@@Warsong Gulch Mark of Honor
 126@@@Wintergrasp Mark of Honor
 161@@@Stone Keeper's Shard
+181@@@Honor Points DEPRECATED2
 201@@@Venture Coin
 221@@@Emblem of Conquest
 241@@@Champion's Seal
@@ -21,7 +26,9 @@
 361@@@Illustrious Jewelcrafter's Token
 384@@@Dwarf Archaeology Fragment
 385@@@Troll Archaeology Fragment
+390@@@Conquest Points
 391@@@Tol Barad Commendation
+392@@@Honor Deprecated 3
 393@@@Fossil Archaeology Fragment
 394@@@Night Elf Archaeology Fragment
 395@@@Justice Points
@@ -34,7 +41,7 @@
 402@@@Ironpaw Token
 416@@@Mark of the World Tree
 483@@@Conquest Arena Meta
-484@@@Conquest Rated BG Meta
+484@@@Conquest BG Meta
 515@@@Darkmoon Prize Ticket
 614@@@Mote of Darkness
 615@@@Essence of Corrupted Deathwing
@@ -49,6 +56,21 @@
 776@@@Warforged Seal
 777@@@Timeless Coin
 789@@@Bloody Coin
+1900@@@Arena Points
+1901@@@Honor Points
+2589@@@Sidereal Essence
+2711@@@Defiler's Scourgestone
+3097@@@Emblem of Homecoming
+3148@@@Fissure Stone Fragment
+3281@@@Obsidian Fragment
+3311@@@Emblem of Final Stand
+3350@@@August Stone Fragment
+3407@@@Platinum Coins
+3414@@@August Stone Shard
+3416@@@August Stone Cluster
+12.1.0.68301
+103@@@Arena Points
+484@@@Conquest Rated BG Meta
 810@@@Black Iron Fragment
 821@@@Draenor Clans Archaeology Fragment
 823@@@Apexis Crystal
@@ -1519,32 +1541,11 @@
 3569@@@Cleansing Multiplier
 3570@@@Wave Multiplier
 2.5.5.68575
-1900@@@Arena Points
-1901@@@Honor Points
 3.80.1.68318
-1@@@Currency Token Test Token 4
-2@@@Currency Token Test Token 2
-4@@@Currency Token Test Token 5
-103@@@
 104@@@
-181@@@Honor Points DEPRECATED2
-2589@@@Sidereal Essence
-2711@@@Defiler's Scourgestone
-3097@@@Emblem of Homecoming
-3311@@@Emblem of Final Stand
 3403@@@Titanic Ember
 3406@@@Titanic Fragment
 5.5.4.68317
-104@@@Honor Points DEPRECATED
-390@@@Conquest Points
-392@@@Honor Deprecated 3
-484@@@Conquest BG Meta
-3148@@@Fissure Stone Fragment
-3281@@@Obsidian Fragment
-3350@@@August Stone Fragment
-3407@@@Platinum Coins
-3414@@@August Stone Shard
-3416@@@August Stone Cluster
 12.1.0.68412
 3574@@@PMM Currency 1
 3575@@@PMM Currency 2
