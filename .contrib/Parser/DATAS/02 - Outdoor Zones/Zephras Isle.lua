@@ -3,6 +3,7 @@
 ---------------------------------------------------
 
 -- #if FOREVER
+--[[
 root(ROOTS.Zones, m(ZEPHRAS_ISLE, bubbleDownSelf({
 	["races"] = {SKYBORNE_NEUTRAL, SKYBORNE_ALLIANCE, SKYBORNE_HORDE},
 	["timeline"] = {ADDED_1_60_0},
@@ -159,5 +160,5 @@ root(ROOTS.HiddenQuestTriggers, expansion(nil, {
 		},
 	}),
 }))
-
+--]]
 -- #endif

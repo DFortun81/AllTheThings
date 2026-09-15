@@ -713,6 +713,7 @@ SHADOWMOON_VALLEY = 1948;
 -- #endif
 
 -- #if FOREVER
+-- TODO: Confirm mapIDs after Forever launch.
 -- New Outdoors
 ZEPHRAS_ISLE = 9999;
 -- New Dungeons
