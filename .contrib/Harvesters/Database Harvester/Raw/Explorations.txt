@@ -10921,3 +10921,49 @@
 12.1.0.68569
 17729@@@Northern Amani Bulwark
 17730@@@Eastern Amani Outpost
+12.1.5.69594
+16913@@@The Labyrinth of Kindo'Jan
+16944@@@Silvermoon City
+16947@@@The Great Sea
+16948@@@Silvermoon City
+16949@@@Eversong Woods
+16950@@@Court of Blood
+16951@@@Court of the Sun
+16952@@@Falconwing Square
+16953@@@Dawning Lane
+16954@@@The Royal Exchange
+16955@@@The Shepherd's Gate
+16956@@@Murder Row
+16957@@@Walk of Elders
+16958@@@The Shining Span
+16959@@@Silvermoon Harbor
+16960@@@Sunwing Rookery
+16961@@@Gardens of Remembrance
+16962@@@Thalassian University
+16963@@@Lithiel's Landing
+16964@@@Augurs' Terrace
+16965@@@Duskglow Gloriette
+16966@@@The Bazaar
+16967@@@North Sanctum
+16968@@@Sunsail Anchorage
+16969@@@West Sanctum
+16970@@@Path of Dawn
+16971@@@Tranquil Repose
+16972@@@Stillwhisper Pond
+16973@@@Farstrider Hold
+16974@@@Brightwing Estate
+16975@@@Sunstrider Isle
+16976@@@Thuron's Livery
+17025@@@Chamber of Rites
+17026@@@The Reliquary
+17027@@@Central Chamber
+17028@@@The Catacombs
+17029@@@Halazzi's Lair
+17030@@@Jan'alai's Refuge
+17031@@@Akil'zon's Roost
+17032@@@Nalorakk's Den
+17033@@@The Cave Towers
+17059@@@The Unbinding of Kith'ix
+17197@@@The Speaker's Chamber
+17778@@@Kith'ix' Prison
+17798@@@The Tomb of Ula'tek

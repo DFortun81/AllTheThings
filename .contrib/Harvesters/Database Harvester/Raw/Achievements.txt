@@ -18416,3 +18416,52 @@
 12.1.0.69814
 63685@@@BlizzCon 2026
 64140@@@Winds of Particularly Mysterious Fortune
+12.1.5.69594
+62500@@@Sweet Tooth
+62501@@@I Ain't Afraid of no Ghost
+62502@@@Master of Merry Mayhem
+63519@@@The Promise of Tomorrow
+63657@@@Aqir Research Associate
+63658@@@No Hives Left Standing
+63659@@@Bane of the Swarm
+63670@@@Comforting De Spirits
+63680@@@Driving Back the Swarm
+63689@@@[DNT]Midnight Keystone Myth: Season 2 Personal Achievement
+63690@@@Midnight Keystone Myth: Season 2
+63692@@@Kith'ix
+63693@@@Heroic: Kith'ix
+63694@@@Mythic: Kith'ix
+63700@@@[DNT] Hallow's End Pepe Decor
+63714@@@WoW's 22nd Anniversary
+63715@@@Let Me Solo Him: Kindo'Jan
+63716@@@The First Hash'ey
+63717@@@Kindo'jan's Labyrinth Discoveries
+63718@@@Lock and Key
+63719@@@Lock and Key Master
+63720@@@Happy Hexmask Collector
+63721@@@The Labyrinth of Kindo'jan
+63722@@@Who's Labyrinth?
+63723@@@My Labyrinth
+63724@@@Knock Knock
+63727@@@Treasures Upon Treasures
+63728@@@A Few More Can't Hurt
+63730@@@Total Kindo'jan's Labyrinth Chambers completed
+63731@@@Total Kindo'jan Kills
+63830@@@Fungal Not Frugal
+63839@@@Kith'ix (Raid Finder The Unbinding of Kith'ix)
+63840@@@Kith'ix (Normal The Unbinding of Kith'ix)
+63841@@@Kith'ix (Heroic The Unbinding of Kith'ix)
+63842@@@Kith'ix (Mythic The Unbinding of Kith'ix)
+63846@@@The Labyrinth of Kindo'jan: Tier 4
+63847@@@The Labyrinth of Kindo'jan: Tier 5
+63848@@@The Labyrinth of Kindo'jan: Tier 6
+63849@@@The Labyrinth of Kindo'jan: Tier 7
+63850@@@The Labyrinth of Kindo'jan: Tier 8
+63851@@@The Labyrinth of Kindo'jan: Tier 9
+63852@@@The Labyrinth of Kindo'jan: Tier 10
+63853@@@The Labyrinth of Kindo'jan: Tier 11
+63863@@@The Labyrinth of Kindo'jan: Tier 1
+63864@@@The Labyrinth of Kindo'jan: Tier 2
+63865@@@The Labyrinth of Kindo'jan: Tier 3
+64039@@@Fabled Let Me Solo Him: Kindo'jan
+64118@@@The Labyrinth of Kindo'jan: One-Champion Army

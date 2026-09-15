@@ -24638,3 +24638,68 @@
 273775@@@J'imothy
 12.1.0.69299
 265748@@@Delta
+12.1.5.69594
+260155@@@Lady Liadrin
+260160@@@Lor'themar Theron
+260161@@@Orweyna
+260164@@@Zul'jarra
+260165@@@Tak'lejo
+260185@@@Dak'zor
+261083@@@Scenario Controller
+261146@@@Shadow Barrier
+261243@@@Engorged Scarab
+261664@@@Disabled Construct
+261723@@@Scenario Finale Controller
+261971@@@Lady Liadrin
+261997@@@Arator
+262007@@@Lor'themar Theron
+262843@@@Scenario Boss Controller
+262899@@@Farstrider Defender
+262902@@@Aqir Venomcaster
+262946@@@Arator
+262966@@@Farstrider Defender
+262969@@@Lady Liadrin
+262970@@@Blood Knight
+262994@@@Xal'atath
+263478@@@Engorged Scarab
+263518@@@Lost Souls
+263630@@@Lost Souls
+263756@@@Aqir Scarab
+264029@@@Torundo the Grizzled
+264118@@@Lilaju
+265075@@@Lor'themar Theron
+265191@@@Grappling Hook Bunny
+265197@@@Cuddly Webspinner
+265531@@@Kith'ixi Drone
+265622@@@Farstrider Defender
+265740@@@Aqir Scuttler
+265755@@@Aqir Wingreaver
+266080@@@Invisible Bunny - Fireworks
+268181@@@Lady Liadrin
+268483@@@Aqir Razorwing
+269190@@@Soul Prison
+271137@@@Archmage Aethas Sunreaver
+271139@@@Keeta
+271142@@@Silvermoon Noble
+271146@@@Farstrider Trainee
+271149@@@Silvermoon Worker
+271155@@@Sleazy Barkeep
+271161@@@Lilaju
+271168@@@Grand Magister Rommath
+271214@@@Lord Solanar Bloodwrath
+272289@@@Aqir Scuttler
+272338@@@Silvermoon Guard
+272339@@@Silvermoon Guard
+272340@@@Silvermoon Guard
+272341@@@Silvermoon Guard
+273170@@@Lor'themar Theron
+273171@@@Lady Liadrin
+273172@@@Zul'jarra
+273173@@@Arator
+273174@@@Orweyna
+273175@@@Tak'lejo
+273176@@@Halduron Brightwing
+273418@@@Soul Shape
+274686@@@Verayn
+274915@@@Valeera Sanguinar
+275773@@@Orweyna

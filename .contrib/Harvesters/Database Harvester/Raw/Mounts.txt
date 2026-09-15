@@ -2642,3 +2642,14 @@
 12.1.0.69299
 142515@@@Hearthkeeper's Wandering Caravan
 1293028@@@Tuskarr Hermit Crab
+12.1.5.69594
+1250285@@@Whaletested Crest-Horn
+1251689@@@Aubergine Warturkey
+1297808@@@Living Heartsbane Cauldron
+1301331@@@Corrupted Swarmer
+1313788@@@Sporebearer Fungal Strider
+1314165@@@Hot Motocross Bunmover 4000
+1314166@@@Hot Motocross Bunmover 4200
+1314168@@@Hot Motocross Bunmover 4400
+1314169@@@Hot Motocross Bunmover 4600
+1314715@@@Loa-Blessed Wayfarer
