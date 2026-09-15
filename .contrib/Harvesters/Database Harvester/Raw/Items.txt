@@ -99685,6 +99685,13 @@
 282180@@@The Horseman's Ring
 282181@@@Wicked Witch's Signet
 282182@@@Wicked Witch's Signet
+5.5.4.69383
+244228@@@Sash of the Tipsy Sage
+244229@@@Angler's Mantle
+244230@@@Strawhat of Frosted Currents
+244231@@@Ensemble: Stillwater Fisher Attire
+244352@@@Cloak of the Veiled Paws
+281928@@@Visage of the Damned
 7.3.0.24473
 25@@@ Shortsword
 35@@@ Staff
@@ -321141,11 +321148,6 @@
 239076@@@Herald of Sa'bak
 239082@@@Sa'bak's Blessed
 242534@@@Azure Sea Skiff
-244228@@@Sash of the Tipsy Sage
-244229@@@Angler's Mantle
-244230@@@Strawhat of Frosted Currents
-244231@@@Ensemble: Stillwater Fisher Attire
-244352@@@Cloak of the Veiled Paws
 250240@@@Phase-Lost Slateback
 251529@@@Void-Scarred Striker's Cloak
 251530@@@Void-Scarred Captain's Cape
