@@ -1,23 +1,31 @@
-12.1.0.68301
+5.5.4.69155
+currency(1),	-- Currency Token Test Token 4
+currency(2),	-- Currency Token Test Token 2
+currency(4),	-- Currency Token Test Token 5
 currency(42),	-- Badge of Justice
 currency(101),	-- Emblem of Heroism
 currency(102),	-- Emblem of Valor
-currency(103),	--  \\ Arena Points
+currency(103),	-- Arena Points \\ 
+currency(104),	--  \\ Honor Points DEPRECATED
 currency(121),	-- Alterac Valley Mark of Honor
 currency(122),	-- Arathi Basin Mark of Honor
 currency(123),	-- Eye of the Storm Mark of Honor
 currency(124),	-- Strand of the Ancients Mark of Honor
 currency(125),	-- Warsong Gulch Mark of Honor
 currency(126),	-- Wintergrasp Mark of Honor
+currency(181),	-- Honor Points DEPRECATED2
 currency(201),	-- Venture Coin
 currency(221),	-- Emblem of Conquest
 currency(301),	-- Emblem of Triumph
 currency(321),	-- Isle of Conquest Mark of Honor
 currency(341),	-- Emblem of Frost
+currency(390),	-- Conquest Points
+currency(392),	-- Honor Deprecated 3
 currency(483),	-- Conquest Arena Meta
-currency(484),	-- Conquest BG Meta \\ Conquest Rated BG Meta
+currency(484),	-- Conquest Rated BG Meta \\ Conquest BG Meta
 currency(692),	-- Conquest Random BG Meta
 currency(698),	-- Zen Jewelcrafter's Token
+12.1.0.68301
 currency(810),	-- Black Iron Fragment
 currency(830),	-- n/a
 currency(897),	-- UNUSED
@@ -1249,18 +1257,15 @@ currency(3546),	-- Coiled Filament
 currency(3568),	-- Contained Corruption
 currency(3569),	-- Cleansing Multiplier
 currency(3570),	-- Wave Multiplier
-3.80.1.68318
-currency(1),	-- Currency Token Test Token 4
-currency(2),	-- Currency Token Test Token 2
-currency(4),	-- Currency Token Test Token 5
-currency(104),	-- Honor Points DEPRECATED \\ 
-currency(181),	-- Honor Points DEPRECATED2
-5.5.4.68317
-currency(390),	-- Conquest Points
-currency(392),	-- Honor Deprecated 3
 12.1.0.68412
 currency(3574),	-- PMM Currency 1
 currency(3575),	-- PMM Currency 2
 12.1.0.68675
 currency(3583),	-- Housing - Going Postal - Personal Best Record - Alliance - Rt1
 currency(3584),	-- Housing - Going Postal - Personal Best Record - Alliance - Rt1
+12.1.5.69594
+currency(3536),	-- Renown - Season 2 Labyrinth
+currency(3537),	-- Kindo'jan's Labyrinth Journey
+currency(3544),	-- Aqir Research Enclave
+currency(3592),	-- 12.1.5 Labyrinth - Personal Tracker - S2 Weekly Turn-In (Hidden)
+currency(3606),	-- Soul

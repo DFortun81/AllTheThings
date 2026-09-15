@@ -1358,3 +1358,26 @@ i(279021),	-- Forgotten Memento
 i(279052),	-- Ancient Amani Mask
 i(279054),	-- Idol of Blue Water and Blue Sky \\ Privateer's Dolphin Idol
 i(279590),	-- Venomous Champion's Illustrious Banner
+12.1.0.68301
+i(280201),	-- Book of Storytime
+i(280419),	-- Cursed Badge of the Soulcoilers
+12.1.5.69594
+i(275039),	-- Curse of the Aqir
+i(280820),	-- Loa-Blessed Victory
+i(280821),	-- Trail of Halazzi
+i(280822),	-- Nalorakk's Strength Charm
+i(280823),	-- Feathers of Akil'zon
+i(280825),	-- Rite of Jan'alai's Flame
+i(281615),	-- Shadeweaver's Hearthstone
+
+
+
+
+Missing in ToyDB.lua
+
+3.80.0.64393
+i(30448),	-- n of Al'ar \\ Embers of Al'ar \\ Talon of Al'ar
+3.80.0.65301
+i(46779),	-- of Cenarius \\ Path of Cenarius
+5.5.3.64308
+i(45047),	-- box Tiger \\ Sandbox Tiger

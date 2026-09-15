@@ -52,3 +52,21 @@ title(250),	-- Grievous Skirmisher %s
 title(980),	-- Skirmisher %s
 title(995),	-- Malevolent Skirmisher %s
 title(996),	-- Tyrannical Skirmisher %s
+5.5.3.64141
+title(736),	-- %s, the Mistborne
+title(737),	-- %s, Heir to the Mist
+5.5.3.64308
+title(738),	-- %s, the Thundering Stampede
+title(739),	-- %s, the Momentous Terror
+12.0.0.63534
+title(0),	-- Loa-speaker %s
+12.1.5.69594
+title(780),	-- %s, Light's Faithful
+title(793),	-- %s, Bane of the Swarm
+title(795),	-- %s the Venomous Contender
+title(796),	-- Loa-Blessed %s
+title(797),	-- Treasure Hound %s
+title(798),	-- Lockpickin' %s
+title(799),	-- Maze Runner %s
+title(801),	-- %s, Fabled Vanquisher of Kindo'jan
+title(802),	-- Lone Raider %s
