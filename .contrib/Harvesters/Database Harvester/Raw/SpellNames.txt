@@ -478953,3 +478953,8 @@
 1317906@@@Bloodthirsty Gaze
 1317955@@@Blight Vein
 1318116@@@[DNT] Fresh Meat Warning Aura
+12.1.0.69497
+1318266@@@[DNT] Backup Despawn
+1318267@@@[DNT] Backup Despawn Check Aura
+1318271@@@Generic Spell
+1318272@@@Generic Spell
