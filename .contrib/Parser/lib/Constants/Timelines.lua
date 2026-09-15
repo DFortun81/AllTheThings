@@ -198,6 +198,14 @@ REMOVED_1_15_9 = "removed 1.15.9.68808";					-- World of Warcraft Classic 1.15.9
 --- AFTER SEASON OF DISCOVERY ---
 REMOVED_SOD_END = "removed 1.16.0";
 
+-------------
+-- FOREVER --
+-------------
+CREATED_1_60_0 = "created 1.60.0.99999";					-- This is Beta..
+ADDED_1_60_0 = "added 1.60.0.99999";						-- This is Beta..
+REMOVED_1_60_0 = "removed 1.60.0.99999";					-- This is Beta..
+DELETE_1_60_0 = "deleted 1.60.0.99999";						-- This is Beta..
+
 -------------------------
 -- THE BURNING CRUSADE --
 -------------------------
