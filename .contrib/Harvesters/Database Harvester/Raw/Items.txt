@@ -338489,3 +338489,5 @@
 280527@@@Tuskarr Fishing Gear Rack
 12.1.0.69323
 266170@@@Flat Snakeskin Canopy
+12.1.0.69382
+284846@@@Venomous Gladiator's Smasher

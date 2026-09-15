@@ -478898,3 +478898,27 @@
 1316355@@@Volatile Purge
 1316716@@@Rolling Thunder
 1316746@@@Spirit Walk
+12.1.0.69382
+1315805@@@Call of the Serpent
+1316356@@@Volatile Purge
+1316357@@@Volatile Purge
+1316706@@@Generic Spell
+1316707@@@Generic Spell
+1316710@@@Spectral Coils
+1316728@@@March of the Damned
+1316739@@@Generic Spell
+1316793@@@Generic Spell
+1316795@@@Generic Spell
+1316796@@@Generic Spell
+1316797@@@March of the Damned
+1316798@@@Generic Spell
+1316834@@@Teleport (On Leave Combat)
+1316835@@@Teleport (On Leave Combat)
+1316938@@@Chiral Marrowgraft
+1316939@@@[DNT] Ping Taplist
+1316950@@@Greasy Egg
+1316952@@@Drop Egg
+1316982@@@Delver's Cosmetic Surprise Bag
+1317008@@@Generic Spell
+1317009@@@Generic Spell
+1317010@@@Generic Spell
