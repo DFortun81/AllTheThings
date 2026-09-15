@@ -204,7 +204,7 @@ REMOVED_SOD_END = "removed 1.16.0";
 CREATED_1_60_0 = "created 1.60.0.99999";					-- This is Beta..
 ADDED_1_60_0 = "added 1.60.0.99999";						-- This is Beta..
 REMOVED_1_60_0 = "removed 1.60.0.99999";					-- This is Beta..
-DELETE_1_60_0 = "deleted 1.60.0.99999";						-- This is Beta..
+DELETED_1_60_0 = "deleted 1.60.0.99999";						-- This is Beta..
 
 -------------------------
 -- THE BURNING CRUSADE --
