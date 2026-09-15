@@ -2447,7 +2447,7 @@ root(ROOTS.HiddenQuestTriggers, expansion(EXPANSION.MID, bubbleDownSelf({ ["time
 		prof(FISHING, {
 			-- Many 12.1 HQTs which flag and unflag for no discernable reason
 			q(97493, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
-			--97494
+			q(97494, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
 			q(97495, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
 			q(97496, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??
 			q(97497, { ["timeline"] = { ADDED_12_1_0 } }),	-- ??

@@ -40,6 +40,7 @@ local EncounterToCRS = {
 local EncounterToLoot = {
 	[NEKZALI] = {
 		i(268248),	-- Amani Summoning Shawl
+		i(268230),	-- Crown of the Eternal Fang
 		i(268216),	-- Cursed Reliquary Cincture
 		i(268245),	-- Entombed Cultist's Sabatons
 		i(268203),	-- Hexing Spiritrender
@@ -48,7 +49,6 @@ local EncounterToLoot = {
 		i(268240),	-- Restless Spirit Shackles
 		i(268229),	-- Skullguard of the Risen Sacrifice
 		i(270162),	-- Soulcoiler Ritual Vessel
-		i(268231),	-- Soulslither Spaulders
 		i(268208),	-- Strongblood's Ceremonial Cleaver
 		i(270930),	-- Tomb-Creeper's Claw
 		i(268235),	-- Vestment of the Awakening
@@ -77,7 +77,6 @@ local EncounterToLoot = {
 		}),
 		i(268204),	-- Ancient Construct's Venomshiv
 		i(268198),	-- Caustic Keeper-Crusher
-		i(268230),	-- Crown of the Eternal Fang
 		i(270165),	-- Keeper's Seething Core
 		i(268250),	-- Sentinel's Vitriolic Chain
 		i(268219),	-- Shadow Hunter's Warmask
@@ -223,6 +222,7 @@ local EncounterToLoot = {
 		i(268222),	-- Reckless Spirit Breastplate
 		i(268256),	-- Sash of the Forlorn Vessel
 		i(268253),	-- Silken Voodoo Drape
+		i(268231),	-- Soulslither Spaulders
 		i(270173),	-- Zul'jin's Guillotine Technique
 	};
 	[ULATEK] = {

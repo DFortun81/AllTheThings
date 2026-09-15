@@ -77,13 +77,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 							ach(63326, {	-- My Venomous Nemesis
 								i(276163),	-- Apophic Patagia (COSMETIC!)
 							}),
-							i(262391, {timeline={ADDED_12_1_0}}),	-- Ominous Dominus (PET)
 							i(264971, {	-- Annihilation Rod (COSMETIC!)
 								["description"] = "The first kill per week per character has a very high chance to grant you this item.",
 							}),
 							i(264970, {	-- Oblivion's Edge (COSMETIC!)
 								["description"] = "The first kill per week per character has a very high chance to grant you this item.",
 							}),
+							i(262391),	-- Ominous Dominus (PET)
 							i(265368, {	-- Twilight Destroyer (COSMETIC!)
 								["description"] = "The first kill per week per character has a very high chance to grant you this item.",
 							}),
@@ -100,17 +100,13 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 						["isWeekly"] = true,
 						["groups"] = {
 							ach(63334, {	-- Fabled Let Me Solo Him: Azta'rec
-								["description"] = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food Buff.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
+								["description"] = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food buffs.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
 								["timeline"] = { ADDED_12_1_0, REMOVED_12_1_0 },	-- 1 Week Later unobtainable
-								["groups"] = {
-									title(776),	-- <Name>, Fabled Vanquisher of Azta'rec
-								},
+								["groups"] = { title(776) },	-- <Name>, Fabled Vanquisher of Azta'rec
 							}),
 							ach(63333, {	-- Let Me Solo Him: Azta'rec
-								["description"] = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food Buff.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
-								["groups"] = {
-								 i(275657),	-- Apophic Soul Crusher (MOUNT!)
-								},
+								["description"] = "Random tips:\nClicking Valeera's Bonefire gives you 5% main stats for 10min, stacking with normal food buffs.\n\nThe completion buff you get at the end of a Delve carries over and works inside the special boss encounter.",
+								["groups"] = { i(275657) },	-- Apophic Soul Crusher (MOUNT!)
 							}),
 							ach(63332, {	-- Purging the Poison
 								title(775),	-- <Name> the Poisonous
@@ -338,16 +334,14 @@ root(ROOTS.Delves, expansion(EXPANSION.MID, {
 					["questID"] = 92887,
 					["isWeekly"] = true,
 					["cost"] = { { "i", 275910, 1 } },	-- Scalebound Herald's Flute
-					["groups"] = {
-					-- While the treasures CAN drop the pet&mog, I didnt get any in 100+ boss summons
-					-- However the S2 Boss seems to drop 1 per weekly quest at 100% chance -- Note by Goldenshacal Sep 2026
-					--	i(262391),	-- Ominous Dominus (PET!)
-					--	i(264971),	-- Annihilation Rod (COSMETIC!)
-					--	i(264970),	-- Oblivion's Edge (COSMETIC!)
-					--	i(265368),	-- Twilight Destroyer (COSMETIC!)
-					--	i(265366),	-- Twilight Executioner (COSMETIC!)
-					--	i(265367),	-- Twilight Fang (COSMETIC!)
-					},
+					["sym"] = {{"select","itemID",
+						262391,	-- Ominous Dominus (PET!)
+						264971,	-- Annihilation Rod (COSMETIC!)
+						264970,	-- Oblivion's Edge (COSMETIC!)
+						265368,	-- Twilight Destroyer (COSMETIC!)
+						265366,	-- Twilight Executioner (COSMETIC!)
+						265367,	-- Twilight Fang (COSMETIC!)
+					}},
 				}),
 			})),
 			n(VENDORS, {

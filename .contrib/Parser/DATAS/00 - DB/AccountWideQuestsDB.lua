@@ -2436,7 +2436,7 @@ local AccountWideQuestsDB = {
 	92666,	-- Quest #92666*
 	92680,	-- Ensemble: World-Defiler's Battle Armor
 	92681,	-- Ensemble: Zealous Felslingers Battle Armor
-	92710,  -- Hesta Forlath Paintings Unlock
+	92710,	-- Hesta Forlath Paintings Unlock
 	92712,	-- Quest #92712*
 	92714,	-- Tracking Quest
 	92733,	-- Triggered after entering house

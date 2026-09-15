@@ -228,8 +228,8 @@ root(ROOTS.Promotions, {
 				i(274967),	-- Varian's Dragon Spirit (TOY!)
 				i(274967),	-- Varian's Dragon Throne (TOY!)
 				-- Duplicate Reward Program (6 August to 31 October 2026)
-				i(85872),  -- Lashtail Hatchling (PET!) [Classic/Titan]
-				i(85870),  -- Reins of the Guardian Quilen (MOUNT!) [Classic/Titan]
+				i(85872),	-- Lashtail Hatchling (PET!) [Classic/Titan]
+				i(85870),	-- Reins of the Guardian Quilen (MOUNT!) [Classic/Titan]
 			},
 		})),
 		n(AZURESPAN_TREASURETROVE, sharedDataSelf({
