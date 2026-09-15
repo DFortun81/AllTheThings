@@ -338460,3 +338460,14 @@
 282340@@@Autumnal Westfall Barn Facade Plans
 282343@@@Springtime Westfall Barn Facade Plans
 282347@@@Old Moonbrook Nighttime Window
+12.1.0.69189
+272326@@@Varian's Azure Dragon Crown
+272327@@@Varian's Azure Dragon Sabatons
+272328@@@Varian's Azure Dragon Chestplate
+272329@@@Varian's Azure Dragon Claws
+272330@@@Varian's Azure Dragon Greaves
+272331@@@Varian's Azure Dragon Pauldron
+272332@@@Varian's Azure Dragon Cloak
+272333@@@Varian's Azure Dragon Belt
+272335@@@Ensemble: Varian's Azure Dragon Attire
+279345@@@Venom-Drenched Sack

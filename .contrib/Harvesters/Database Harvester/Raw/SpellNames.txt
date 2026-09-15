@@ -478745,3 +478745,107 @@
 1313802@@@Barrier Integrity
 1313803@@@Drain Barrier
 1313804@@@Drain Barrier
+12.1.0.69189
+1276710@@@Alluring Bubble
+1282505@@@Sit
+1282514@@@[DND] Throne - Enter - Summon Clone
+1282515@@@[DND] Clone Player
+1282524@@@cancel invis
+1282528@@@Ride Vehicle
+1287795@@@<DNT> Slow Fall
+1287800@@@<DNT> Remove Clone
+1287804@@@<DNT> Cancel Invis
+1287816@@@[DND] Invis Clone
+1288326@@@Stone Telekinesis
+1288331@@@Stone Telekinesis
+1288473@@@Genuflect
+1290952@@@Ensemble: Varian's Azure Dragon Attire
+1295724@@@Summon
+1313909@@@[DNT] Dread Bolt
+1313945@@@Caustic Waves
+1313965@@@Warden's Protection
+1313966@@@Generic Spell
+1314051@@@Thunder and Lightning
+1314061@@@Spreading Flames
+1314074@@@Burrow
+1314082@@@Addle Mind
+1314090@@@Unstable Corruption
+1314091@@@Unstable Corruption
+1314092@@@Unstable Corruption
+1314093@@@Unstable Corruption
+1314094@@@Cleansed Lifeforce
+1314095@@@Cleansed Lifeforce
+1314155@@@[DNT] Plague Froth
+1314158@@@Corruption Burst
+1314178@@@Thinned Blood
+1314193@@@Noxious Ground
+1314196@@@Defiled Ground
+1314214@@@Corrode Spirit
+1314273@@@Thinned Blood
+1314285@@@Warden's Protection
+1314286@@@Warden's Protection
+1314287@@@Warden's Protection
+1314288@@@Warden's Protection
+1314289@@@Warden's Protection
+1314290@@@Warden's Protection
+1314345@@@Malignant Empowerment
+1314381@@@Generic Spell
+1314387@@@Generic Spell
+1314394@@@Generic Spell
+1314397@@@Generic Spell
+1314434@@@Generic Spell
+1314435@@@Generic Spell
+1314439@@@Teleport To Current Target [DNT]
+1314443@@@Teleport To Current Target [DNT]
+1314451@@@Generic Spell
+1314455@@@Teleport to Stage 03 Start Point
+1314534@@@Generic Spell
+1314535@@@Generic Spell
+1314536@@@Generic Spell
+1314537@@@Generic Spell
+1314538@@@Generic Spell
+1314539@@@Generic Spell
+1314563@@@Toxin Cloud
+1314837@@@Hardened Venom
+1314844@@@Generic Spell
+1314845@@@Toxic Incubation
+1314846@@@Toxic Incubation
+1314883@@@Hunting Leap
+1314884@@@Hunting Leap
+1314885@@@Hunting Leap
+1314909@@@Generic Spell
+1315029@@@Cave Light
+1315030@@@Cave Light
+1315031@@@Cave Light
+1315104@@@Return to Form
+1315106@@@Return to Form
+1315157@@@[DNT] Gloombomb
+1315202@@@Consumed by Resentment
+1315205@@@[DNT] Energy Gain
+1315222@@@Generic Spell
+1315223@@@Generic Spell
+1315224@@@Generic Spell
+1315225@@@Generic Spell
+1315239@@@Gale Force
+1315270@@@Call of the Serpent
+1315298@@@Virulent Spit
+1315341@@@Circling Prey
+1315342@@@Boiling Venom
+1315343@@@Boiling Venom
+1315353@@@Call of the Serpent
+1315354@@@Blightscale Clutch
+1315369@@@Malefic Wave
+1315375@@@Seeing Red
+1315446@@@Sundering Blow
+1315525@@@Generic Spell
+1315541@@@Call of the Serpent
+1315542@@@Spectral Coils
+1315543@@@Spectral Coils
+1315544@@@Spectral Coils
+1315545@@@Spectral Coils
+1315546@@@Spectral Coils
+1315547@@@Spectral Coils
+1315548@@@Spectral Coils
+1315549@@@Spectral Coils
+1315732@@@Deadly Venom
+1315796@@@Tracking Quest Flag [DNT]

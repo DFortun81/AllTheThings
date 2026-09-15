@@ -24625,3 +24625,6 @@
 273123@@@Vulric Bloomborne
 12.1.0.68914
 273727@@@Sound Stalker - 12.1 Raid - Temple of Ula'Tek - Boss 8 - P2 - Right
+12.1.0.69189
+260083@@@Clone
+273805@@@Sound Stalker - 12.1 Raid - Temple of Ula'Tek - Boss 8 - P2 - Right
