@@ -478922,3 +478922,23 @@
 1317008@@@Generic Spell
 1317009@@@Generic Spell
 1317010@@@Generic Spell
+12.1.0.69404
+1281745@@@Crash Landing
+1316627@@@[DNT] Summon Mushroom Pad
+1316628@@@[DNT] Summon Mushroom Pad
+1316630@@@[DNT] Summon Mushroom Pad
+1316684@@@[DNT] Summon Mushroom Pad
+1316944@@@[DNT] Blood Rain
+1316958@@@Open Coffin
+1316960@@@Open Coffin
+1316988@@@Mark as Bad
+1317036@@@Venomcursed Critical Strike
+1317188@@@Gladiator's Distinction
+1317236@@@Side 01
+1317237@@@Mass Gestation
+1317434@@@Medal of Conquest
+1317528@@@Fixate
+1317558@@@Melee
+1317568@@@Generic Spell
+1317585@@@[DNT] Death Checker
+1317688@@@Heart Defense
