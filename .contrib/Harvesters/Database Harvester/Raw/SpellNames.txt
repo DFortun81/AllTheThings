@@ -478853,3 +478853,15 @@
 1315798@@@Unstable Corruption
 1315876@@@Burrow
 1315888@@@<DNT> 12.0.7 Skip
+12.1.0.69273
+1251934@@@Emerrrgl
+1288743@@@Collect Feathered Ula'tek Talisman
+1289118@@@Collect Destroyed Clutch of Ula'tek
+1291013@@@Collect Venomous Pyre
+1304105@@@Classic Clockwork Quacker
+1304106@@@Aquatic Clockwork Quacker
+1314949@@@[DNT] Burrowing Charge Overflow Cosmetics
+1315241@@@Venom Wave
+1315786@@@Generic Spell
+1315787@@@Generic Spell
+1316060@@@[DNT] Spawn Visuals - Murloc

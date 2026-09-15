@@ -338471,3 +338471,7 @@
 272333@@@Varian's Azure Dragon Belt
 272335@@@Ensemble: Varian's Azure Dragon Attire
 279345@@@Venom-Drenched Sack
+12.1.0.69273
+271176@@@Feathered Ula'tek Talisman
+271609@@@Destroyed Clutch of Ula'tek
+272361@@@Venomous Pyre
