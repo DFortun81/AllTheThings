@@ -711,3 +711,15 @@ BLADES_EDGE_MOUNTAINS = 1949;
 SHADOWMOON_VALLEY = 1948;
 -- #endif
 -- #endif
+
+-- #if FOREVER
+-- New Outdoors
+ZEPHRAS_ISLE = 9999;
+-- New Dungeons
+-- Phase 1?
+HALL_OF_THANES = 9998;
+RUINS_OF_LORDAERON = 9997;
+-- Phase 2?
+EXCAVATION_SITE = 9996;
+CITY_OF_DALARAN = 9995;
+-- #endif
