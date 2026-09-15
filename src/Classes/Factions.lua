@@ -448,7 +448,7 @@ app.AddEventHandler("OnLoad", function()
 			local mi, ma = reference.minReputation, reference.maxReputation;
 			if mi or ma then
 				if mi and (not ma or mi[1] ~= ma[1]) then
-					local faction = app.LookupFactionData(mi[1]);
+					local faction = app.CreateFaction(mi[1]);
 					faction.reputation = mi[2];
 					local threshold = faction.reputationThreshold;
 					local standingId, offset = threshold[1], threshold[2];
@@ -460,7 +460,7 @@ app.AddEventHandler("OnLoad", function()
 					});
 				end
 				if ma and (not mi or mi[1] ~= ma[1]) then
-					local faction = app.LookupFactionData(ma[1]);
+					local faction = app.CreateFaction(ma[1]);
 					faction.reputation = ma[2];
 					local threshold = faction.reputationThreshold;
 					local standingId, offset = threshold[1], threshold[2];
@@ -473,7 +473,7 @@ app.AddEventHandler("OnLoad", function()
 				end
 				if mi and ma and mi[1] == ma[1] then
 					-- Min Standing
-					local faction = app.LookupFactionData(mi[1]);
+					local faction = app.CreateFaction(mi[1]);
 					faction.reputation = mi[2];
 					local threshold = faction.reputationThreshold;
 					local standingId, offset = threshold[1], threshold[2];
@@ -482,7 +482,7 @@ app.AddEventHandler("OnLoad", function()
 					if offset ~= 0 then minRankText = offset .. " " .. minRankText; end
 
 					-- Max Standing
-					local maxFaction = app.LookupFactionData(ma[1]);
+					local maxFaction = app.CreateFaction(ma[1]);
 					maxFaction.reputation = ma[2];
 					local threshold = maxFaction.reputationThreshold;
 					local standingId, offset = threshold[1], threshold[2];
