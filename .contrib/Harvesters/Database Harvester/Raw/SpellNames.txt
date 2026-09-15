@@ -478942,3 +478942,14 @@
 1317568@@@Generic Spell
 1317585@@@[DNT] Death Checker
 1317688@@@Heart Defense
+12.1.0.69465
+1297217@@@Caustic Venomfang
+1317287@@@Generic Spell
+1317289@@@Generic Spell
+1317581@@@Venomcursed Ascendance
+1317582@@@Venomcursed Ascendance
+1317723@@@Toxic Incubation
+1317846@@@Make Inert
+1317906@@@Bloodthirsty Gaze
+1317955@@@Blight Vein
+1318116@@@[DNT] Fresh Meat Warning Aura
