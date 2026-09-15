@@ -1340,8 +1340,9 @@ local InformationTypes = {
 			if itemID then
 				-- an item used for a faction which is repeatable
 				if reference.factionID and reference.repeatable then
+					local faction = app.LookupFactionData(reference.factionID)
 					tinsert(tooltipInfo, {
-						left = L.ITEM_GIVES_REP .. (app.WOWAPI.GetFactionName(reference.factionID) or ("Faction #" .. tostring(reference.factionID))) .. "'",
+						left = L.ITEM_GIVES_REP .. faction.name.."'",
 						wrap = true,
 						color = app.Colors.TooltipDescription });
 				end

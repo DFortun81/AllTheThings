@@ -22,7 +22,6 @@ local GetQuestLogRewardInfo =
 	  GetQuestLogRewardInfo;
 
 -- WoW API Cache
-local GetFactionName = app.WOWAPI.GetFactionName;
 local GetSpellName = app.WOWAPI.GetSpellName;
 local GetSpellIcon = app.WOWAPI.GetSpellIcon;
 local GetQuestRewardCurrencies = app.WOWAPI.GetQuestRewardCurrencies;
@@ -1428,7 +1427,8 @@ app.QuestLockCriteriaFunctions = criteriaFuncs;
 local function QuestWithReputationDescription(t)
 	if app.Settings.Collectibles.Reputations then
 		local factionID = t.maxReputation[1];
-		return L.ITEM_GIVES_REP .. (GetFactionName(factionID) or ("Faction #" .. tostring(factionID))) .. "'";
+		local faction = app.LookupFactionData(factionID)
+		return L.ITEM_GIVES_REP .. faction.name.."'"
 	end
 end
 -- Basically anything in ATT which has QuestID needs to also support being Locked...
