@@ -45671,6 +45671,15 @@
 1312360@@@Summon the Black Brewmaiden
 1312361@@@Bitter Brew
 1312362@@@Summon the Black Brewmaiden
+2.5.6.69795
+96573@@@Pet Sit or Sleep
+96577@@@Sleepy Pet (No Zs)
+308853@@@Battle Pet Periodic
+1305392@@@Skipper
+1319329@@@Classic Clockwork Quacker
+1319330@@@Aquatic Clockwork Quacker
+1319333@@@Emerrrgl
+1319403@@@[DNT] Pet Sit
 3.4.0.43659
 49@@@Heal 1000 (TEST)
 124@@@Holy Hand Grenade of the Resistance
@@ -68971,7 +68980,6 @@
 56235@@@Glyph of Chaos Meteor
 56270@@@Glyph of Chaos Meteor
 57258@@@Glyph of Chaos Meteor
-308853@@@Battle Pet Periodic
 457485@@@Grizzly Hills Packmaster
 1266982@@@The Sire's Palanquin
 1267077@@@Scarlet Lady
@@ -69069,8 +69077,6 @@
 1301737@@@Sunflash Driftmoth
 1301783@@@Sunflutter Driftmoth
 3.80.2.68943
-96573@@@Pet Sit or Sleep
-96577@@@Sleepy Pet (No Zs)
 97779@@@Lashtail Hatchling
 97801@@@Lashtail Hatchling: Bone in Mouth Visual
 97803@@@Lashtail Hatchling: Throw Bone

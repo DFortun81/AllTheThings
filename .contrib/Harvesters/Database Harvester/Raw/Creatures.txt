@@ -2,6 +2,11 @@
 61544@@@Orphan Spell Visual Invisible Holder
 2.5.5.64508
 255994@@@Exodar Replica
+2.5.6.69795
+250776@@@Emerrrgl
+269373@@@Classic Clockwork Quacker
+269374@@@Aquatic Clockwork Quacker
+269780@@@Skipper
 3.4.3.51126
 2671@@@Mechanical Squirrel
 7380@@@Siamese Cat
