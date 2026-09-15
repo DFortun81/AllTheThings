@@ -1065,6 +1065,7 @@ is(0, 1286831);						-- Path of the Slumbering Conqueror
 is(0, 1286812);						-- Path of Venomous Evolution
 is(0, 1286807);						-- Path of Worthy Aspirant
 ihqt(278336, 97588);				-- Sinful Pearl
+iq(279289)							-- Well Urned Rest
 
 ------------------
 -- PATCH 12.1.5 --
