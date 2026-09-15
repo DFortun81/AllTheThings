@@ -3535,7 +3535,19 @@ CurrentClassicExpansion = {
 		-- TODO: ru = "",
 		cn = "永恒",
 		tw = "永恆",
-
+	},
+	lore = {
+		en = "Forever is a new flavor for World of Warcraft that takes place in a new world called Azeroth Forever. It features new zones, dungeons, raids, and a new storyline that continues the story of the original game.",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "永恒是《魔兽世界》的一个新版本，发生在名为“Azeroth Forever”的新世界中。它包含了新的区域、地下城、团本和一个新的故事情节，延续了原版游戏的故事。",
+		tw = "永恆是《魔獸世界》的一個新版本，發生在名為“Azeroth Forever”的新世界中。它包含新的區域、地下城、團隊副本和一個新的故事情節，延續了原版遊戲的故事。",
 	},
 };
 FOREVER_PHASE_ONE = createClassicPhase({
