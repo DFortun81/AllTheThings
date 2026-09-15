@@ -478958,3 +478958,16 @@
 1318267@@@[DNT] Backup Despawn Check Aura
 1318271@@@Generic Spell
 1318272@@@Generic Spell
+12.1.0.69587
+1317258@@@Venom Volley
+1318176@@@Forceful Slam
+1318291@@@[DNT] Fall Damage Preventer
+1318313@@@Generic Spell
+1318329@@@Calcified Corpse
+1318378@@@[DNT] March of the Damned
+1318382@@@Generic Spell
+1318387@@@[DNT] March of the Damned
+1318521@@@[DNT] Portal Visual
+1318523@@@Teleport
+1318543@@@Leave Vehicle - Teleport - Cancel Aura [DNT]
+1318608@@@Mother's Wrath
