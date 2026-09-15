@@ -284,7 +284,7 @@ TRADING_POST = createPhase({
 		ko = "교역소",
 		pt = "Posto Comercial",
 		ru = "Торговая лавка",
-		cn = "货栈",
+		cn = "商栈",
 		tw = "貿易站",
 		-- #endif
 	},
@@ -298,8 +298,8 @@ TRADING_POST = createPhase({
 		-- ko = "",
 		-- pt = "",
 		ru = "Эта Штучка доступна в Торговой лавке.",
-		cn = "该物品可在货栈购买。",
-		tw = "該物品可以在貿易戰購買",
+		cn = "该物品可在商栈购买。",
+		tw = "該物品可以在貿易站購買",
 	},
 });
 ELITE_PVP_REQUIREMENT = createPhase({
