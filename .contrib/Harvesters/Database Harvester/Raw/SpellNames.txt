@@ -69112,6 +69112,52 @@
 1312867@@@Sanctuary
 3.80.2.69077
 1314755@@@Zandalari Spiritflash
+3.80.2.69496
+1302110@@@Delta
+1314336@@@Frozen Wake
+1314540@@@Frozen Wake
+1314542@@@Obliterate
+1314543@@@Obliterate
+1314544@@@Obliterate
+1314545@@@Obliterate
+1314546@@@Obliterate
+1314547@@@Obliterate
+1314548@@@Obliterate
+1314549@@@Obliterate
+1314551@@@Frost Strike
+1314552@@@Frost Strike
+1314553@@@Frost Strike
+1314554@@@Frost Strike
+1314555@@@Frost Strike
+1314556@@@Frost Strike
+1314557@@@Frost Strike
+1314558@@@Frost Strike
+1314559@@@Frost Strike
+1314560@@@Frost Strike
+1314561@@@Frost Strike
+1314562@@@Frost Strike
+1314847@@@Death From Above
+1314848@@@Death From Above
+1314851@@@Death From Above
+1314852@@@Death From Above
+1314881@@@Death From Above
+1314882@@@Ice Tomb
+1314957@@@Death From Above
+1314963@@@Death From Above
+1314988@@@Death From Above
+1315032@@@Zul'Gurub
+1315033@@@Zul'Gurub
+1315034@@@Trial of the Crusader
+1315035@@@Trial of the Crusader
+1315036@@@Zul'Aman
+1315037@@@Zul'Aman
+1315038@@@Sunwell Plateau
+1315039@@@Sunwell Plateau
+1316343@@@Might of the Frozen Wastes
+1316344@@@Might of the Frozen Wastes
+1316345@@@Might of the Frozen Wastes
+1316371@@@Sanctuary Clear
+1316372@@@Sanctuary
 4.4.0.53627
 184@@@Fire Shield
 543@@@Mage Ward

@@ -267,6 +267,8 @@
 52894@@@Lashtail Hatchling
 189655@@@Backswimmer Timbertooth
 251819@@@Fishmonger May
+3.80.2.69496
+268678@@@Delta
 4.4.0.53627
 25706@@@Searing Scorchling
 40295@@@Blue Clockwork Rocket Bot
