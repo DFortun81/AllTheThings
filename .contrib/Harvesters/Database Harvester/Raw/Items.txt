@@ -338477,3 +338477,13 @@
 272361@@@Venomous Pyre
 12.1.0.69283
 282417@@@Stubby Whistle
+12.1.0.69299
+274164@@@Hearthkeeper's Wandering Caravan
+274797@@@Tidesworn Augment Rune
+274925@@@Delta
+276625@@@Puffin Pack
+279006@@@Fisher's Pack
+280457@@@Shark Attack Pack
+280523@@@Tuskarr Fire Pit
+280525@@@Tuskarr Hanging Grill
+280527@@@Tuskarr Fishing Gear Rack

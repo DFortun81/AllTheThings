@@ -2639,3 +2639,6 @@
 1266703@@@Lab-Grown Stormray
 12.1.0.68824
 1297216@@@Sea-Dwelling Isle Serpent
+12.1.0.69299
+142515@@@Hearthkeeper's Wandering Caravan
+1293028@@@Tuskarr Hermit Crab

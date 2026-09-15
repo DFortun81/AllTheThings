@@ -478874,3 +478874,22 @@
 1313818@@@Feedback
 1313819@@@Feedback
 1316611@@@Reevaluate Quest [DNT]
+12.1.0.69299
+142515@@@Hearthkeeper's Wandering Caravan
+1293028@@@Tuskarr Hermit Crab
+1293382@@@In the House
+1294420@@@Ice Hole
+1294446@@@Ice Hole
+1294463@@@Ice Hole Fishing
+1294465@@@[DNT] Ice Fishing Ride Vehicle
+1295126@@@Tuskarr Ice Fishing Tent
+1295329@@@Tidesworn Augment Rune
+1295330@@@Conjure Tidesworn Augment Rune
+1295341@@@[DND] Conjure Tidesworn Augment Rune
+1295658@@@Delta
+1309118@@@Collect Tuskarr Fire Pit
+1309123@@@Collect Tuskarr Hanging Grill
+1309127@@@Collect Tuskarr Fishing Gear Rack
+1316701@@@[DNT] Salute!
+1316719@@@[DNT] Evolution Ritual
+1316721@@@[DNT] Evolution Ritual
