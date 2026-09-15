@@ -197,7 +197,19 @@ local function RegisterDataBrokers()
 			})
 			LDI:Register(L.TITLE, o, db)
 			MinimapButton = LDI:GetMinimapButton(L.TITLE)
-			-- clean up the default button
+			-- clean up the extra regions created by LibDBIcon
+			local regions = { MinimapButton:GetRegions() }
+			for _, region in ipairs(regions) do
+				if region:IsObjectType("Texture") then
+					local tex = region:GetTexture()
+
+					-- Remove Blizzard’s default border/background
+					if tex == 136430 or tex == 136467 then
+						region:SetTexture(nil)
+						region:Hide()
+					end
+				end
+			end
 			MinimapButton.icon:SetAllPoints()
 			if MinimapButton.border then
 				MinimapButton.border:Hide()
