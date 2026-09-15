@@ -9,6 +9,7 @@ FIRST_EXPANSION_PATCH = {
 	["UNKNOWN"] = { 0, 0, 0, 0 },        -- Unknown, invalid data.
 	["CLASSIC"] = { 1, 0, 0, 22248 },    -- NOTE: Values for WoW-Classic
 	["SEASON_OF_DISCOVERY"] = { 1, 15, 0, 22248 },
+	["FOREVER"] = { 1, 60, 0, 22248 },
 	["TBC"] = { 2, 0, 1, 22248 },        -- NOTE: Values for TBC-Classic
 	["WRATH"] = { 3, 0, 2, 9056 },       -- NOTE: Values for Wrath-Classic
 	["CATA"] = { 4, 0, 1, 13164 },

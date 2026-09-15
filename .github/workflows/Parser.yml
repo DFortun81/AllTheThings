@@ -89,6 +89,15 @@ jobs:
             "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/classic/05 - Mists of Pandaria.config"
           shell: cmd
 
+        - name: Database Parser for Forever
+          id: Parse-FOREVER
+          timeout-minutes: 5
+          continue-on-error: true
+          run: |
+            cd .contrib/Parser
+            "Parser.exe" auto baseconfig=.config/retail/retail.config config=".config/forever/01 - Forever.config"
+          shell: cmd
+
       - name: Full Success Check
         shell: pwsh
         run: |
@@ -99,6 +108,7 @@ jobs:
           $wotlk = '${{ steps.Parse-WOTLK.outcome }}'
           $cata = '${{ steps.Parse-CATA.outcome }}'
           $mop = '${{ steps.Parse-MOP.outcome }}'
+          $forever = '${{ steps.Parse-FOREVER.outcome }}'
 
           Write-Host "Verify all Versions Parsed Successfully..."
           Write-Host "Retail: $retail"
@@ -108,6 +118,7 @@ jobs:
           Write-Host "WOTLK: $wotlk"
           Write-Host "CATA: $cata"
           Write-Host "MOP: $mop"
+          Write-Host "FOREVER: $forever"
 
           if (
             $retail -eq 'success' -and
@@ -116,7 +127,8 @@ jobs:
             $tbc -eq 'success' -and
             $wotlk -eq 'success' -and
             $cata -eq 'success' -and
-            $mop -eq 'success'
+            $mop -eq 'success' -and
+            $forever -eq 'success'
           ) {
             Write-Host "✅ All Versions Parsed Successfully"
           } else {

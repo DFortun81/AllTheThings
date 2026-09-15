@@ -3518,3 +3518,46 @@ TWW_PHASE_TWO = 111;
 TWW_PHASE_THREE = 112;
 
 -- Done defining Phases for Classic
+
+
+
+-- Defining Phases for Forever
+CurrentClassicExpansion = {
+	text = {
+		en = "Forever",
+	},
+};
+FOREVER_PHASE_ONE = createClassicPhase({
+	readable = "Forever - Phase 1",
+	originalTimelines = { "1.60.0" },
+	minimumBuildVersion = 16000,
+	buildVersion = 16000,
+	phaseID = 600,
+	text = {
+		en = "Phase 1",
+		-- TODO: de = "",
+		es = "Fase 1",
+		mx = "Fase 1",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		cn = "阶段1",
+		tw = "第1階段",
+	},
+	lore = {
+		en = "Included initial Forever release data.",
+		-- TODO: de = "",
+		-- TODO: es = "",
+		-- TODO: mx = "",
+		-- TODO: fr = "",
+		-- TODO: it = "",
+		-- TODO: ko = "",
+		-- TODO: pt = "",
+		-- TODO: ru = "",
+		-- TODO: cn = "",
+		-- TODO: tw = "",
+	},
+});
+-- Done defining Phases for Forever

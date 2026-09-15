@@ -75,6 +75,9 @@ namespace ATT
             { "TWW", 110 },     // TWW_PHASE_ONE
             { "MID", 120 },     // MID_PHASE_ONE
             { "TLT", 130 },     // TLT_PHASE_ONE
+
+            // Forever
+            { "FOREVER", 600 }, // FOREVER_PHASE_ONE
         };
 
         /// <summary>
@@ -99,6 +102,9 @@ namespace ATT
             { "TWW", 99 },      // TWW_PHASE_SIX?
             { "MID", 99 },      // MID_PHASE_SIX?
             { "TLT", 99 },      // TLT_PHASE_SIX?
+
+            // Forever
+            { "FOREVER", 699 }, // FOREVER_PHASE_INFINITE?
         };
 
         /// <summary>
