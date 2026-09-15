@@ -17,6 +17,7 @@ body:
         - "Hardcore"
         - "Season of Discovery"
         - "Anniversary Realms"
+        - "Forever beta"
     validations:
       required: true
 
