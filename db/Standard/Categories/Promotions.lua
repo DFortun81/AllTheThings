@@ -258,11 +258,11 @@ p(92,{awp=11101,itemID=13583,npcID=11325,spellID=17707,u=3,g={
 crit(34631,{achID=663,awp=30002,id=3,u=3})}}),
 p(94,{awp=11101,itemID=13582,npcID=11327,spellID=17709,u=3,g={
 crit(34632,{achID=664,awp=30002,id=3,u=3})}})}})}}),
-x(2,{awp=20010,description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",u=3,g={
+x(2,{awp=20003,description="These rewards were made available to anyone who purchased a Collector's Edition of The Burning Crusade.\n\nThere may still be copies online, but expect to a sizable chunk of real world currency for it.\n\nNOTE: Non-EU accounts will not receive Lurky's Egg if redeemed.",u=3,g={
 ach(665,{awp=30002,providers={{"i",25535}},u=3}),
-p(131,{awp=20003,itemID=25535,npcID=18381,rwp=30002,spellID=32298,u=2,g={
+p(131,{itemID=25535,npcID=18381,rwp=30002,spellID=32298,u=2,g={
 crit(34633,{achID=665,awp=30002,id=3,u=3})}}),(function(t)if GetCVar("portal")~="EU" then	t.u=1 end	return t end)(
-p(111,{awp=20003,description="This was only available in the EU.",itemID=30360,npcID=15358,rwp=30002,spellID=24988,u=2}))}}),
+p(111,{description="This was only available in the EU.",itemID=30360,npcID=15358,rwp=30002,spellID=24988,u=2}))}}),
 h(-524,{awp=110207,description="These rewards were made available to anyone who purchased a Deluxe Edition of The Burning Crusade Classic.",rwp=120007,u=2,g={
 mnt(346136,{b=1,itemID=248090,lvl=10,u=2})}}),
 h(-694,{awp=110205,description="These rewards were made available to anyone who purchased the Outland Heroic Pack of The Burning Crusade Classic Anniversary.",u=3,g={

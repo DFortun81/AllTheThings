@@ -5,7 +5,7 @@ local ach,ah,artifact,cl,cq,crit,cu,d,de,e,en,faction,flt,follower,h,heir,hqt,i,
 categories.WorldEvents=
 h(-734,{SortPriority=75,g={
 h(-103,{
-x(2,{awp=20010,g={
+x(2,{awp=20003,g={
 h(-482,{maps={17},rwp=20001,u=2,g={
 q(10259,{coords={
 [17]={{58.25,55.05}}},qgs={19942},u=2,g={

@@ -124788,15 +124788,15 @@ crit(48581,{achID=15388,awp=90105,id=4})}),
 ach(14735),
 ach(14734,{
 crit(49815,{achID=14734,coords={
-[1533]={{33.3,59.7}}}}),
+[1533]={{33.3,59.7}}},id=1}),
 crit(49819,{achID=14734,coords={
-[1533]={{39.1,20.4}}}}),
+[1533]={{39.1,20.4}}},id=2}),
 crit(49816,{achID=14734,coords={
-[1533]={{71.8,38.8}}}}),
+[1533]={{71.8,38.8}}},id=3}),
 crit(49817,{achID=14734,coords={
-[1533]={{32.1,17.8}}}}),
+[1533]={{32.1,17.8}}},id=4}),
 crit(49818,{achID=14734,coords={
-[1533]={{64.3,69.8}}}})}),
+[1533]={{64.3,69.8}}},id=5})}),
 ach(14339,{description="'Collect all trackable things' must be enabled to see the location of each shard in the list.\n\nShards are collected account-wide. There are shards to collect in Bastion, Necrotic Wake, and Spires of Ascension.",g={
 q(61295,{coords={
 [1533]={{24.3,18.2}}},description="On a bookshelf inside the room behind Rector Kalliope.",icon=3528288,g={

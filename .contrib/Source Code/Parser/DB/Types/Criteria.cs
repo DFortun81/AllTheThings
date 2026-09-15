@@ -68,6 +68,8 @@ namespace ATT.DB.Types
             Type == 49 ||
             // Gain aura "{Spell}"
             Type == 69 ||
+            // Player will Trigger game event "{GameEvents}"
+            Type == 73 ||
             // Land targeted spell "{Spell}" on a target
             Type == 110 ||
             // Mythic Plus Completed

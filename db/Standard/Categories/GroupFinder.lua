@@ -84,7 +84,7 @@ s(25682,51977,{b=1,f=6,loc=45,u=2}),
 s(25676,51971,{b=1,f=4,loc=45,u=2}),
 s(25690,51985,{b=1,f=7,loc=45,u=2}),
 s(25664,51959,{b=1,f=5,loc=45,u=2})}})}}),
-x(2,{awp=20010,g={
+x(2,{awp=20003,g={
 i(156682,{awp=70305,b=1,description="Rewarded for completing a random 'The Burning Crusade' dungeon during leveling or respective Timewalking event.",g={
 s(25687,51982,{b=1,f=6,loc=47}),
 s(25680,51975,{b=1,f=6,loc=41}),

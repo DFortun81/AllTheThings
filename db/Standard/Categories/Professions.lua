@@ -978,7 +978,7 @@ crit(44878,{achID=18778,id=8,providers={{"i",168029}}})}}),
 ach(18898,{awp=100107,g={
 crit(61656,{achID=18898,maps={287},providers={{"i",15138},{"n",11583}}}),
 crit(61657,{achID=18898,maps={286},providers={{"i",15138},{"n",41376}}})}})}}),
-x(2,{awp=20010,g={
+x(2,{awp=20003,g={
 ach(733,{awp=30002}),
 ach(18721,{awp=100107,g={
 crit(40060,{achID=18721,id=1,learnedAt=75,requireSkill=171}),
@@ -1552,7 +1552,7 @@ q(29482,{awp=40300,coords={
 [89]={{54,38.6}},
 [90]={{47.6,72.8}}},qgs={3009,3347,4160,4611,5177,5499},repeatable=1,requireSkill=171,g={
 r(28672,{collectible=false,requireSkill=171})}})}})}}),
-x(2,{awp=20010,requireSkill=171,g={
+x(2,{awp=20003,requireSkill=171,g={
 q(10906,{altQuests={10905,10907},awp=20005,coords={
 [100]={{52.2,36.4},{53.8,65.8}}},isBreadcrumb=1,learnedAt=325,nextQuests={10902},qgs={16588,18802},requireSkill=171,rwp=40300,u=2}),
 q(10902,{altQuests={10897,10899},awp=20005,coords={
@@ -2758,8 +2758,8 @@ x(1,{awp=10100,requireSkill=185,g={
 ach(123,{awp=30002,requireSkill=185}),
 ach(122,{awp=30002,requireSkill=185}),
 ach(121,{awp=30002,requireSkill=185})}}),
-x(2,{awp=20010,requireSkill=185,g={
-ach(124,{awp=20003,requireSkill=185}),
+x(2,{awp=20003,requireSkill=185,g={
+ach(124,{requireSkill=185}),
 ach(1801,{awp=30002,providers={{"i",34832}},requireSkill=185,g={
 crit(6762,{achID=1563,id=10})}}),
 ach(877,{awp=30002,providers={{"i",33924}},requireSkill=185,g={
@@ -4652,7 +4652,7 @@ ach(127,{awp=30002,requireSkill=356}),
 ach(128,{awp=30002,requireSkill=356}),
 ach(150,{awp=30002,maps={84,85},requireSkill=356,g={
 crit(5665,{achID=1516,awp=30003,id=5})}})}}),
-x(2,{awp=20010,requireSkill=356,g={
+x(2,{awp=20003,requireSkill=356,g={
 ach(129,{requireSkill=356}),
 ach(1225,{awp=30002,maps={102,107,108},requireSkill=356,g={
 crit(5672,{achID=1516,awp=30003,id=11})}})}}),
@@ -6848,7 +6848,7 @@ q(5143,{altQuests={5141,5144},coords={
 [69]={{89.4,46.5}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,qgs={7870},r=2,requireSkill=165,sourceQuests={2853},u=2}),
 q(5148,{altQuests={5145,5146},coords={
 [224]={{36.6,34.2}}},cost={{"i",8211,1},{"i",8214,1}},learnedAt=225,qgs={7871},r=1,requireSkill=165,sourceQuests={2860},u=2})}})}}),
-x(2,{awp=20010,requireSkill=165,g={
+x(2,{awp=20003,requireSkill=165,g={
 h(-12,{awp=100107,requireSkill=165,g={
 ach(18894,{requireSkill=165,g={
 crit(61631,{achID=18894,id=1,providers={{"i",25728}}}),
@@ -8517,7 +8517,7 @@ crit(61742,{achID=18903,id=28,providers={{"i",42178}}}),
 crit(61743,{achID=18903,id=29,providers={{"s",56000}}}),
 crit(61734,{achID=18903,id=30,providers={{"i",10321}}}),
 crit(61744,{achID=18903,id=31,providers={{"i",10323}}})}})}}),
-x(2,{awp=20010,requireSkill=197,g={
+x(2,{awp=20003,requireSkill=197,g={
 h(-12,{awp=100007,requireSkill=197,g={
 ach(17499,{requireSkill=197,rwp=100007,sourceQuests={10831,10832,10833},sqreq=1,u=2})}}),
 h(-45,{awp=20005,requireSkill=197,rwp=40003,u=2,g={

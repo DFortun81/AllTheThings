@@ -4,7 +4,7 @@ _.AddEventHandler("OnBuildDataCache", function(categories)
 local ach,ah,artifact,aze,cd,cl,cq,crit,cs,cu,d,de,e,en,exp,faction,flt,follower,fp,gb,gm,gt,h,heir,hqt,i,ill,m,mm,mnt,n,o,p,prof,q,r,rfl,s,sp,title,toy,x=_.CreateAchievement,_.CreateHeader,_.CreateArtifact,_.CreateAzeriteEssence,_.CreateConduit,_.CreateCharacterClass,_.CreateCharacterUnlockQuest,_.CreateAchievementCriteria,_.CreateCharacterUnlockSpell,_.CreateCurrencyClass,_.CreateDifficulty,_.CreateDecor,_.CreateEncounter,_.CreateEnsemble,_.CreateExploration,_.CreateFaction,_.CreateFilter,_.CreateFollower,_.CreateFlightPath,_.CreateGarrisonBuilding,_.CreateGarrisonMission,_.CreateGarrisonTalent,_.CreateCustomHeader,_.CreateHeirloom,_.CreateHQT,_.CreateItem,_.CreateIllusion,_.CreateMap,_.CreateMountMod,_.CreateMount,_.CreateNPC,_.CreateObject,_.CreateSpecies,_.CreateProfession,_.CreateQuest,_.CreateRecipe,_.CreateRuneforgeLegendary,_.CreateItemSource,_.CreateSpell,_.CreateTitle,_.CreateToy,_.CreateExpansion;
 categories.ExpansionFeatures=
 h(-735,{SortPriority=35,g={
-x(2,{awp=20010,g={
+x(2,{awp=20003,g={
 ah(1015,{awp=20100,description="The Netherwing, sometimes called the Netherwing dragonflight, are the main faction of the nether dragons in Outland.\nAlthough generally hostile to most humanoids based on their treatment by the Dragonmaw clan of orcs in Shadowmoon Valley, they can be swayed to change their attitude if tasks to aid them are completed.",icon=132250,maps={104},type="fa",g={
 h(-12,{
 ach(898,{minReputation={1015,42000}})}),
@@ -22527,22 +22527,22 @@ crit(41123,{achID=12878,id=4,providers={{"s",256063}},r=1}),
 crit(43403,{achID=12878,id=5,providers={{"s",314318}},r=1})}}),
 ach(12888,{r=2,sym={{"partial_achievement",12889}}}),
 ach(12889,{description="You must personally capture each flag.",r=2,g={
-crit(41130,{achID=12889}),
-crit(41131,{achID=12889}),
-crit(41132,{achID=12889}),
-crit(41133,{achID=12889}),
-crit(41134,{achID=12889}),
-crit(41135,{achID=12889}),
-crit(41136,{achID=12889})}}),
+crit(41130,{achID=12889,id=1,r=2}),
+crit(41131,{achID=12889,id=2,r=2}),
+crit(41132,{achID=12889,id=3,r=2}),
+crit(41133,{achID=12889,id=4,r=2}),
+crit(41134,{achID=12889,id=5,r=2}),
+crit(41135,{achID=12889,id=6,r=2}),
+crit(41136,{achID=12889,id=7,r=2})}}),
 ach(12877,{r=1,sym={{"partial_achievement",12876}}}),
 ach(12876,{description="You must personally capture each flag.",r=1,g={
-crit(41111,{achID=12876}),
-crit(41113,{achID=12876}),
-crit(41114,{achID=12876}),
-crit(41115,{achID=12876}),
-crit(41116,{achID=12876}),
-crit(41117,{achID=12876}),
-crit(41118,{achID=12876})}}),
+crit(41111,{achID=12876,id=1,r=1}),
+crit(41113,{achID=12876,id=2,r=1}),
+crit(41114,{achID=12876,id=3,r=1}),
+crit(41115,{achID=12876,id=4,r=1}),
+crit(41116,{achID=12876,id=5,r=1}),
+crit(41117,{achID=12876,id=6,r=1}),
+crit(41118,{achID=12876,id=7,r=1})}}),
 ach(12886,{description="Only one commander is up per warfront cycle.",r=2,g={
 crit(43480,{achID=12886}),
 crit(42134,{achID=12886}),
