@@ -42,7 +42,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["customColle
 					["description"] = "Rewarded at 15 and 24 Renown.",
 				}),
 				WISPS_OF_MEMORY,
-				LegionLegiondaries({
+				SL_Legendaries({
 					["description"] = "Requires Renown 48.",
 					["groups"] = {
 						i(186567),	-- Memory of Insatiable Hunger

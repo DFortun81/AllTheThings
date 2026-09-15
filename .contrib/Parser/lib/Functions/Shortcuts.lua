@@ -670,7 +670,7 @@ end
 Sym_PvPWeaponsArsenal = function(TIER, SEASON, PVPSET)
 	return {{"sub","pvp_weapons_ensemble",TIER,SEASON,PVPSET}}
 end
-LegionLegiondaries = function(t)
+SL_Legendaries = function(t)
 	t = n(LEGENDARIES, t)
 	t.symselector = SymSelector.LEGION_LEGENDARY_HEADERS
 	return t

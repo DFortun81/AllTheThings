@@ -3,7 +3,7 @@
 -------------------------------------------------------------------
 
 root(ROOTS.ExpansionFeatures, expansion(EXPANSION.SL, bubbleDown({ ["timeline"] = { ADDED_9_0_2_LAUNCH } }, {
-	LegionLegiondaries({
+	SL_Legendaries({
 		i(183247),	-- Memory of a Stable Phantasma Lure
 		i(183249),	-- Memory of a Vital Sacrifice
 		i(183242),	-- Memory of Eonar
