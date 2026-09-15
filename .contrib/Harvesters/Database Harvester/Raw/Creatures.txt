@@ -24628,3 +24628,11 @@
 12.1.0.69189
 260083@@@Clone
 273805@@@Sound Stalker - 12.1 Raid - Temple of Ula'Tek - Boss 8 - P2 - Right
+12.1.0.69283
+262018@@@Lady Liadrin
+262020@@@Zul'jan
+262022@@@Hex Lord Malacrass
+262028@@@Orweyna
+268567@@@Fang of Ula'tek
+272964@@@Orweyna
+273775@@@J'imothy

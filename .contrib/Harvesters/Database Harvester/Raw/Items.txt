@@ -338475,3 +338475,5 @@
 271176@@@Feathered Ula'tek Talisman
 271609@@@Destroyed Clutch of Ula'tek
 272361@@@Venomous Pyre
+12.1.0.69283
+282417@@@Stubby Whistle

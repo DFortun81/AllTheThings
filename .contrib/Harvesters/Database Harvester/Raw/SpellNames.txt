@@ -478865,3 +478865,12 @@
 1315786@@@Generic Spell
 1315787@@@Generic Spell
 1316060@@@[DNT] Spawn Visuals - Murloc
+12.1.0.69283
+1280315@@@Collect Venom Scholar's Focus
+1288742@@@Collect Venomjade Necklace
+1313800@@@Magical Trash
+1313809@@@Petting
+1313813@@@J'imothy
+1313818@@@Feedback
+1313819@@@Feedback
+1316611@@@Reevaluate Quest [DNT]
