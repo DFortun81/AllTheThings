@@ -452,6 +452,7 @@ root(ROOTS.ExpansionFeatures, expansion(EXPANSION.MID, bubbleDownSelf({ ["timeli
 				{ 68.4, 45.0, MAP.MIDNIGHT.THE_COILED_ISLE },
 			},
 			["questID"] = 98551,
+			["isWeekly"] = true,
 			["crs"] = { 265151 },	-- Haunted Brazier
 			["cost"] = { { "i", 274422, 1 } },	-- Ossified Relic
 			["timeline"] = { ADDED_12_1_0 },
