@@ -18413,3 +18413,6 @@
 63699@@@World Wide Trainer
 12.1.0.69382
 63838@@@Zul'jarra's Forces Champion
+12.1.0.69814
+63685@@@BlizzCon 2026
+64140@@@Winds of Particularly Mysterious Fortune

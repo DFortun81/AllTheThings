@@ -338494,3 +338494,5 @@
 12.1.0.69404
 284862@@@Varian's Azure Dragon Pauldron
 285062@@@Medal of Conquest
+12.1.0.69814
+281107@@@BlizzCon Doormat

@@ -478971,3 +478971,25 @@
 1318523@@@Teleport
 1318543@@@Leave Vehicle - Teleport - Cancel Aura [DNT]
 1318608@@@Mother's Wrath
+12.1.0.69814
+1310204@@@Collect BlizzCon Doormat
+1318413@@@Professions Sparks - Zone Aura: Data Cleanup [DNT]
+1318842@@@Professions Sparks - Zone Aura: Delete Spark [DNT]
+1319153@@@[DNT] Promoter Credit
+1319195@@@[DNT] Head Empty
+1319282@@@Caustic Waves
+1319312@@@12.1.0 Acquisition Event - Winds of Mysterious Fortune - Daily Login
+1319318@@@Eternal Venom
+1319361@@@Generic Spell
+1319417@@@Set Safe Loc
+1319865@@@[DNT] Tortollan Souvenirs Cleanup
+1319904@@@Kill Credit [DNT]
+1320142@@@Cosmetic Egg Finder
+1320143@@@Cosmetic Egg Finder
+1320150@@@Shadow Molt
+1320151@@@Generic Spell
+1320152@@@Generic Spell
+1320159@@@Cosmetic Egg Finder
+1320161@@@Cosmetic Egg Finder
+1320167@@@Generic Spell
+1320168@@@Generic Spell
