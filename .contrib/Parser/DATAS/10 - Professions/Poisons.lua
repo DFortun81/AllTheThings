@@ -21,7 +21,7 @@ profession(POISONS, {
 					["lvl"] = 60,
 				}),
 				-- #endif
-				-- #if CLASSIC
+				-- #if BEFORE TBC
 				{
 					["name"] = "Blinding Powder",
 					["recipeID"] = 6510,

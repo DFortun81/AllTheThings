@@ -602,7 +602,7 @@ DEADMINES_INSTANCE = inst(63, {	-- Deadmines
 				-- #if BEFORE 4.0.3
 				["groups"] = {
 					i(5187, {	-- Rhahk'Zor's Hammer [Classic] / Foe Reaper [TBC+]
-						-- #if CLASSIC
+						-- #if BEFORE TBC
 						["description"] = "This item was redesigned to a rare quality item called 'Foe Reaper' in Patch 2.3, so if you are making a twink, you may want to keep this item despite it being lower quality now.",
 						-- #endif
 					}),

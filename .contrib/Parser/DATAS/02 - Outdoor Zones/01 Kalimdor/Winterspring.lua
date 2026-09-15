@@ -554,7 +554,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10303,	-- Storm Shadowhoof
 					["coord"] = { 61.8, 38.4, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					-- #if CLASSIC
+					-- #if BEFORE TBC
 					["races"] = HORDE_ONLY,
 					-- #endif
 					["lvl"] = 53,
@@ -1224,7 +1224,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10303,	-- Storm Shadowhoof
 					["coord"] = { 61.8, 38.4, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					-- #if CLASSIC
+					-- #if BEFORE TBC
 					["races"] = HORDE_ONLY,
 					-- #endif
 					["lvl"] = 53,
@@ -1422,7 +1422,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10303,	-- Storm Shadowhoof
 					["coord"] = { 61.8, 38.4, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					-- #if CLASSIC
+					-- #if BEFORE TBC
 					["races"] = HORDE_ONLY,
 					-- #endif
 					["lvl"] = 53,
@@ -2011,7 +2011,7 @@ root(ROOTS.Zones, m(KALIMDOR, {
 					["qg"] = 10303,	-- Storm Shadowhoof
 					["coord"] = { 61.8, 38.4, WINTERSPRING },
 					["timeline"] = { REMOVED_4_0_3 },
-					-- #if CLASSIC
+					-- #if BEFORE TBC
 					["races"] = HORDE_ONLY,
 					-- #endif
 					["lvl"] = 53,

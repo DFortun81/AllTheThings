@@ -8,7 +8,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 	-- #if ANYCLASSIC
 	expansion(EXPANSION.CLASSIC, {
 		-- 1.14.1.40666
-		-- #if CLASSIC
+		-- #if ANYCLASSIC
 		ach(15329),	-- Has Died
 		-- #endif
 		-- 1.14.1.40688
@@ -25,7 +25,7 @@ root(ROOTS.HiddenAchievementTriggers, {
 		applyclassicphase(SOM_PHASE_ONE, ach(15335)),	-- Survivor of the Damned (Season of Mastery) \\ Survivor of the Damned
 		-- #endif
 		-- 1.14.2.42597
-		-- #if CLASSIC
+		-- #if ANYCLASSIC
 		ach(15578),	-- <Hidden> Adventure Awaits - Hit 60 with Buff Adventure Awaits
 		-- #endif
 		-- 1.14.3.42770
