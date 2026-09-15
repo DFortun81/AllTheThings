@@ -3567,8 +3567,8 @@ FOREVER_PHASE_ONE = createClassicPhase({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		cn = "《魔兽世界：永恒》Beta 测试内容1，开放至 20 级。",
-		tw = "《魔獸世界：永恆》Beta 測試內容1，開放至 20 級。",
+		cn = "《魔兽世界：永恒》Beta测试内容1，开放至20级。",
+		tw = "《魔獸世界：永恆》Beta測試內容1，開放至20級。",
 	},
 });
 FOREVER_PHASE_TWO = createClassicPhase({
@@ -3600,8 +3600,8 @@ FOREVER_PHASE_TWO = createClassicPhase({
 		-- TODO: ko = "",
 		-- TODO: pt = "",
 		-- TODO: ru = "",
-		cn = "《魔兽世界：永恒》Beta 测试内容2，开放至 30 级。",
-		tw = "《魔獸世界：永恆》Beta 測試內容2，開放至 30 級。",
+		cn = "《魔兽世界：永恒》Beta测试内容2，开放至30级。",
+		tw = "《魔獸世界：永恆》Beta測試內容2，開放至30級。",
 	},
 });
 -- Done defining Phases for Forever
